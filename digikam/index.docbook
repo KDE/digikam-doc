@@ -1216,8 +1216,10 @@
             The Histogram Viewer shows you information about the statistical distribution of color values 
             in the current image. The Histogram Viewer is purely informational: nothing you do with it will 
             cause any change to the image. If you want to perform a histogram-based color correction, use 
-            the Adjust Levels Image Editor plugin. This plugin come from 
+            the Adjust Levels Image Editor plugin. This plugin is part of the 
             <ulink url="http://extragear.kde.org/apps/digikamimageplugins.php">DigikamImagePlugins project</ulink>.
+            For more information about using Plugins in &digikam; see the 
+            <link linkend="using-kapp-setup">Configuration</link> section.
             </para>
                                             
             <figure>
@@ -1226,29 +1228,29 @@
             </figure>
             
             <para>
-            In Image Editor, an image can be decomposed into Red, Green, Blue, Alpha color channels. The alpha channel 
-            is a Layer for the image that support transparency (like PNG or GIF images). Each channel supports a range 
+            An image can be decomposed into Red, Green, Blue, Alpha color channels. The alpha channel 
+            is a Layer in the image that supports transparency (like PNG or GIF images). Each channel supports a range 
             of intensity levels from 0 to 255 (integer valued). Thus, a black pixel is encoded by 0 on all color channels;
             a white pixel by 255 on all color channels. A transparent pixel is encoded by 0 on the alpha channel; an 
             opaque pixel by 255.
             </para>
             
             <para>
-            The Histogram Viewer allows you to select which channel to use:
+            The Histogram Viewer allows you to view each channel separately:
             
             <itemizedlist>
             
                 <listitem><para>
-                    <emphasis>Intensity</emphasis>: this shows the distribution of brightness values.
+                    <emphasis>Intensity</emphasis>: shows the distribution of brightness values.
                 </para></listitem>
 
                 <listitem><para>
-                    <emphasis>Red, Green, Blue</emphasis>:  they show the distribution of intensity levels 
+                    <emphasis>Red, Green, Blue</emphasis>: show the distribution of intensity levels 
                     for the Red, Green, or Blue channels respectively.
                 </para></listitem>
                 
                 <listitem><para>
-                    <emphasis>Alpha</emphasis>: This shows the distribution of opacity levels. If the layer is 
+                    <emphasis>Alpha</emphasis>: shows the distribution of opacity levels. If the layer is 
                     completely opaque or completely transparent, the histogram will consist of a single bar on 
                     the left or right edge.
                 </para></listitem>
@@ -1263,10 +1265,10 @@
             </para>
             
             <para> 
-            The histogram Viewer allows you to determine whether the histogram will be displayed using a 
-            linear or logarithmic Y axis. For images taken from photographs, the linear mode is most commonly 
-            useful. For images that contain substantial areas of constant color, though, a linear histogram 
-            will often be dominated by a single bar, and a logarthmic histogram will often be more useful. 
+            You can change whether the histogram will be displayed using a linear or logarithmic Y axis. 
+            For images taken with a digital camera, the linear mode is usually the most useful. However, for 
+            images that contain substantial areas of constant color a linear histogram 
+            will often be dominated by a single bar. In this case a logarthmic histogram will often be more useful. 
             </para>
 
             <para> 
