@@ -212,10 +212,11 @@
             <title>Deleting an Album</title>
                 
                 <para>
-                When you delete an Album from &digikam; it will be moved into the KDE Trash Can. If you don't like this behaviour 
-                and would rather that delete really did remove the Album and all of the photographs in it completely you can 
-                change it by selecting Settings -> Configure &digikam; and selecting the Miscellaneous page. At the top of this 
-                page are the settings that control what happens when a photograph is deleted. To delete an Album right-click the 
+                When you delete an Album from &digikam; it will be moved into the KDE Trash Can. If you 
+                don't like this behaviour and would rather that delete really did remove the Album and 
+                all of the photographs in it completely you can change it by selecting Settings->Configure 
+                &digikam; and selecting the Miscellaneous page. At the top of this page are the settings 
+                that control what happens when a photograph is deleted. To delete an Album right-click the 
                 Album in the My Album tree and select Delete Album from HardDisk from the context menu.
                 </para>
         
@@ -853,7 +854,7 @@
             <para>
             The Image Editor provides a number tools that enable you to adjust a photograph. Some of 
             these tools are provided by plugins to Digikam so they may not be available by default on 
-            your distribution. See the <link linkend="setupeditor">Setup Image Editor Section</link>for 
+            your distribution. See the <link linkend="setupeditor">Setup Image Editor Section</link> for 
             more details about &digikam; Image Editor plugins.
             </para>
             
@@ -929,7 +930,7 @@
             
             <screenshot>
                 <mediaobject>
-                    <imageobject><imagedata fileref="editorredeyescoorection.png" format="PNG"/></imageobject>
+                    <imageobject><imagedata fileref="editorredeyescorrection.png" format="PNG"/></imageobject>
                     <textobject><phrase>The Red Eyes Correction Tool in Action</phrase></textobject>
                 </mediaobject>
             </screenshot>
@@ -937,37 +938,77 @@
         </sect2>
 
         <sect2>
-        <title>Changing the View</title>
+        <title>Correcting colour</title>
             
             <para>
+            Digital cameras often have problems with lighting conditions and it is not unusual 
+            to want to correct the colour, contrast and brightness of a photograph. You can 
+            experiment with altering the levels of different aspects of your photographs using 
+            the tools under the Fix->Colors menu.
             </para>
-                                            
+
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="editorcolorbalance.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Color Balance Tool in Action</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+                        
+            <para>
+            The Normalise, Equalise and Auto Levels functions under the Fix menu will attempt 
+            to work out the best levels. You will need to experiment with the effects of these 
+            functions to see what works best with your photograph. 
+            FIXME: a better explanation of the difference between these tools is needed.
+            </para>
+            
+            <para>
+            The results of any adjustments you make will not be remembered until you save your 
+            photograph.
+            </para>
+
+            <para>
+            If you have the Auto Adjust plugin installed (see the 
+            <link linkend="setupeditor">Setup Image Editor Section</link>) you will have an
+            additional entry in the Fix menu called Fix->Colors->Levels Adjust. This tools provides 
+            an integrated way of seeing the results of adjusting multiple levels and also enables you to 
+            save level settings for application to multiple photographs. This can be useful if your 
+            camera or scanner often makes the same mistakes and you want to apply the same corrections. 
+            The Levels Adjust plugin has its own detailed manual that you can access from the 
+            Help->ImagePlugin->Handbooks menu.
+            
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="editoradjustlevels.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Adjust Levels Image Editor Plugin in Action</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+
+            </para>                                            
         </sect2>
 
         <sect2>
-        <title>Changing the View</title>
+        <title>Special Effects and Filters</title>
             
             <para>
+            As default &digikam; provides a couple of simple filters that you can use on your 
+            photographs. Under the Filters menu you will find Convert to Black and White and Convert 
+            to Sepia.
             </para>
                                             
-        </sect2>
+            <para>
+             Many other filters are available if you have the additional Image Editor Plugins 
+             installed (see the <link linkend="setupeditor">Setup Image Editor Section</link>), 
+             like Film Grain, Rain Drops, Noise reduction, Unsharped Mask, etc.
+            </para>
 
-        <sect2>
-        <title>Changing the View</title>
-            
-            <para>
-            </para>
-                                            
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="editorraindropsplugin.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Rain Drops Image Editor Plugin in Action</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+        
         </sect2>
-
-        <sect2>
-        <title>Changing the View</title>
-            
-            <para>
-            </para>
-                                            
-        </sect2>
-                                        
                     
     </sect1>  
         
