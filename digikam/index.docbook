@@ -1780,7 +1780,7 @@
                 <shortcut><keycombo><keycap>F6</keycap></keycombo></shortcut>
                 <guimenu>Image</guimenu><guimenuitem>View Exif Information</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Display  Exif information of the currently selected 
+            <listitem><para><action>Display Exif information of the currently selected 
             image.</action></para></listitem>
         </varlistentry>
 
@@ -2248,12 +2248,36 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo><keycap>PgUp</keycap></keycombo></shortcut>
-                <guimenu>Image</guimenu><guimenuitem>Previous</guimenuitem>
+                <shortcut><keycombo><keycap>F3</keycap></keycombo></shortcut>
+                <guimenu>Image</guimenu><guimenuitem>Edit Image Comments</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
+            <listitem><para><action>Launch the edit comments dialog for the current image.</action></para></listitem>
         </varlistentry>
-    
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>F6</keycap></keycombo></shortcut>
+                <guimenu>Image</guimenu><guimenuitem>Exif Information</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display Exif information of the current image.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Alt</keycap><keycap>Return</keycap></keycombo></shortcut>
+                <guimenu>Image</guimenu><guimenuitem>File Properties</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>View General Properties, Permissions, and Meta info of 
+            the current image.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Histogram</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Launch the Histogram Viever for the current image.</action></para></listitem>
+        </varlistentry>
+                            
     </variablelist>
     </para>
 
@@ -2311,12 +2335,38 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo><keycap>PgUp</keycap></keycombo></shortcut>
-                <guimenu>View</guimenu><guimenuitem>Previous</guimenuitem>
+                <shortcut><keycombo><keycap>+</keycap></keycombo></shortcut>
+                <guimenu>View</guimenu><guimenuitem>Zoom In</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
+            <listitem><para><action>Increase the zoom factor on the current image.</action></para></listitem>
         </varlistentry>
-    
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>-</keycap></keycombo></shortcut>
+                <guimenu>View</guimenu><guimenuitem>Zoom Out</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Decrease the zoom factor on the current image.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>A</keycap></keycombo></shortcut>
+                <guimenu>View</guimenu><guimenuitem>Zoom AutoFit</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Set the zoom factor for adapt the current image size to the Image Editor 
+            window size.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>F</keycap></keycombo>
+                </shortcut>
+                <guimenu>View</guimenu><guimenuitem>Toggle Full Screen</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Toggles the graphic interface in full screen mode.</action></para></listitem>
+        </varlistentry>
+                    
     </variablelist>
     </para>
 
@@ -2332,10 +2382,64 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo><keycap>PgUp</keycap></keycombo></shortcut>
-                <guimenu>Filters</guimenu><guimenuitem>Previous</guimenuitem>
+                <guimenu>Filters</guimenu><guimenuitem>Raindrops</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
+            <listitem><para><action>Image Editor plugin for add Rain Drops on the current image. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Oil paint</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Image Editor plugin for simulate Oil Painting on the current image. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Emboss</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Image Editor plugin for Emboss the current image. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Solarize Image</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Image Editor plugin for Solarize the current image. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
+        </varlistentry>
+                
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Convert to Black-White</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Convert the current image in Black and White mode.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Convert to Sepia</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Convert the current image in Sepia mode.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Add Film Grain</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Image Editor plugin for to add Film Grain on the current image. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
+        </varlistentry>
+                                    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Charcoal Drawing</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Image Editor plugin for to simulate Charcoal Drawing on the current image. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
     
     </variablelist>
