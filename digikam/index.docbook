@@ -973,10 +973,36 @@
             </screenshot>
                         
             <para>
-            The Normalise, Equalise and Auto Levels functions under the Fix menu will attempt 
+            The Normalise, Equalize and Auto Levels functions under the Fix menu will attempt 
             to work out the best levels. You will need to experiment with the effects of these 
             functions to see what works best with your photograph. 
-            FIXME: a better explanation of the difference between these tools is needed.
+            
+            <itemizedlist>
+            
+                <listitem><para>
+                Normalize: this method scales brightness values across the active image so that the 
+                darkest point becomes black, and the brightest point becomes as bright as possible 
+                without altering its hue. This is often a "magic fix" for images that are dim or 
+                washed out.
+                </para></listitem>
+
+                <listitem><para>
+                Equalize: this method adjusts the brightness of colors across the active image 
+                so that the histogram for the Value channel is as nearly as possible flat, that is, 
+                so that each possible brightness value appears at about the same number of pixels 
+                as each other value. Sometimes Equalize works wonderfully at enhancing the contrasts 
+                in an image. Other times it gives garbage. It is a very powerful operation, which can 
+                either work miracles on an image or destroy it. 
+                </para></listitem>
+            
+                <listitem><para>
+                Auto-levels: this method maximizes the tonal range in the Red, Green, and Blue channels. 
+                It search the image shadow and highlight limit values and adjust the Red, Green, and Blue 
+                channels to a full histogram range.
+                </para></listitem>
+                            
+            </itemizedlist>
+            
             </para>
             
             <para>
