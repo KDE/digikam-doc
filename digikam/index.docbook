@@ -3,7 +3,7 @@
   <!ENTITY kappname "&digikam;"><!-- replace kapp here, do *not* replace kappname-->
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % English "INCLUDE"><!-- change language only here -->
-  <!ENTITY digikam '<application>Digikam</application>'>
+  <!ENTITY digikam '<application>digiKam</application>'>
 
   <!-- Do not define any other entities; instead, use the entities
        from kde-genent.entities and $LANG/user.entities. -->
@@ -86,6 +86,9 @@ Digital Cameras.
     &digikam; is an advanced digital photo management application, which makes
     importing and organizing digital photos a "snap". The photos can be
     organized in "albums" and "sub-albums" which are automatically sorted chronologically.
+    </para>
+    
+    <para>
     An easy to use interface is provided to connect to your camera and download and/or delete 
     them. &digikam; provide too an image editor who can be used for display and improve your 
     images.
@@ -119,7 +122,7 @@ Digital Cameras.
                 </mediaobject>
             </screenshot>
 
-            Digikam's main window has three areas. The My Album list in the top left, the My Tags list in the 
+            &digikam;'s main window has three areas. The My Album list in the top left, the My Tags list in the 
             bottom left and the main Image Window on the right-hand side. You can use these three views to 
             organise and find your photographs.
             </para>
@@ -173,10 +176,13 @@ Digital Cameras.
 
             <para>
             The My Albums list provides an organised view of your photograph albums. All photographs that are 
-            managed by Digikam are stored in a single Album. The albums can be sorted by their Folder (directory) 
+            managed by &digikam; are stored in a single Album. The albums can be sorted by their Folder (directory) 
             layout on the hard disk, by the Collection name that has been set in the Album Properties or by the 
-            Date that the Album was first created (this date can also be changed in the Album Properties). You 
-            can switch between these orderings using the drop down list in the Tool Bar at the top of the window.
+            Date that the Album was first created (this date can also be changed in the Album Properties).
+            </para>
+            
+            <para>
+            You can switch between these orderings using the drop down list in the Tool Bar at the top of the window.
             </para>
         
             <sect3 id="using-kapp-createnewalbum">
@@ -196,9 +202,9 @@ Digital Cameras.
             <title>"Deleting an Album</title>
                 
                 <para>
-                When you delete an Album from Digikam it will be moved into the KDE Trash Can. If you don't like this behaviour 
+                When you delete an Album from &digikam; it will be moved into the KDE Trash Can. If you don't like this behaviour 
                 and would rather that delete really did remove the Album and all of the photographs in it completely you can 
-                change it by selecting Settings -> Configure Digikam and selecting the Miscellaneous page. At the top of this 
+                change it by selecting Settings -> Configure &digikam; and selecting the Miscellaneous page. At the top of this 
                 page are the settings that control what happens when a photograph is deleted. To delete an Album right-click the 
                 Album in the My Album tree and select Delete Album from HardDisk from the context menu.
                 </para>
@@ -214,7 +220,10 @@ Digital Cameras.
                 an existing Album. To add a photograph to an Album, make sure that the Album is selected then either click the 
                 Add Images icon in the Tool Bar or select Album->Import->Add Images from the Menu Bar. Select the photographs 
                 that you want to add from the file dialog and click Open. The photographs will be copied into the Album. 
-                If you have a scanner configured you can also scan a photograph straight into an Album. 
+                If you have a scanner configured you can also scan a photograph straight into an Album.
+                </para>
+                
+                <para>
                 Select Album->Import->Scan Images... You can also take a screenshot and add this directly to an Album. 
                 Select Album->Import->Screenshot.
                 </para>
@@ -252,47 +261,312 @@ Digital Cameras.
                     </mediaobject>
                 </screenshot>
                 
+                <itemizedlist>
+            
+                    <listitem><para>The Album Title : this will be used in the My Albums list.</para></listitem>
+
+                    <listitem><para>The comment for the Album : this will be shown in the banner at the top of the main 
+                    Image Window.</para></listitem>
                 
+                    <listitem><para>The Album Date : this will be used when you order your Albums by date.</para></listitem>
+                
+                    <listitem><para>The Album Collection : this is a way of marking your Albums so that they can be grouped 
+                    together by a common label. You can add and delete Collection labels in the Album Properties dialog and 
+                    select which Album Collection this Album belongs to by selecting a Collection name. The Collection you 
+                    set will be used to order your photographs when you select By Collection from the drop down list in 
+                    the Tool Bar.</para></listitem>
+                            
+                </itemizedlist>
                 
                 </para>
             
             </sect3>                          
+
+            <sect3 id="using-kapp-setalbumicon">
+            <title>Setting the Album Icon</title>
+                
+                <para>
+                When you first view an Album &digikam; selects the first photograph in the Album as the icon to display in 
+                the My Album list. This helps you to remember what photographs are contained in an Album. Sometimes the 
+                first photograph in the Album is not the most representative and you will want to select a different 
+                photograph as the Album icon.
+                </para> 
+                
+                <para>
+                To select a different photograph as the Album icon, right-click on the photograph that you want to use 
+                as the Album icon and select Set as Album Thumbnail from the context menu.
+                </para>
+        
+            </sect3>            
             
+            <sect3 id="using-kapp-aboutcollections">
+            <title>Notes about Album Collections</title>
+                
+                <para>
+                An Album can only be in one Album Collection and Album Collections can not be nested. 
+                </para>
+                
+                <para>
+                &digikam; also supports Tagging individual photographs using the My Tags area at the bottom left of 
+                the main window. Album Collections are different to photograph Tagging because the Album Collection 
+                applies to all the photographs in an Album rather than to individual photographs. You can use both 
+                Album Collections and Tagging to organise your photographs.
+                </para>
+        
+            </sect3>   
+                                    
         </sect2>
         
         <sect2>
         <title>Images View</title>
 
             <para>
+            The Image Window provides the main view of your photographs. When you select an Album the photographs in that 
+            Album will be displayed in the Image Window. Each photograph is displayed as a thumbnail. You can alter the 
+            size of the thumbnails using the magnifier buttons in the Tool Bar.
             </para>
-        
+
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="thumbsizebuttons.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Thumbnail size buttons</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+                                
+            <para>
+            The first time you select an Album you may have to wait briefly while the thumbnails are generated. 
+            </para>            
+            
+            <para>
+            Information about each photograph is displayed below each thumbnail. You can control what information 
+            is display from the Settings->Configure &digikam; dialog. Select the Albums page and look for the Extra 
+            Information in Thumbnail View section. 
+            </para> 
+            
         </sect2>
 
+        <sect2>
+        <title>Images Management</title>
+
+            <para>
+            Photographs are what &digikam; is all about. The Albums and Tags allow you to organise and find your photographs 
+            in a way that suits you. The Image Viewer lets you view your photographs and make a number of adjustments to 
+            them.  You can access all of the functions that &digikam; can perform on a photograph by right-clicking the 
+            thumbnail or selecting from the Image menu in the Menu Bar.
+            </para>
+
+            <sect3 id="using-kapp-imageviewing">
+            <title>Images Viewing</title>
+             
+                <para>
+                You can open the Image Viewer on a photograph either by double-clicking the thumbnail or by right-clicking 
+                and selecting View/Edit from the context menu. See the section on the Image Viewer for instructions how to 
+                edit your photograph.
+                </para>
+        
+            </sect3>   
+            
+            <sect3 id="using-kapp-rotateimage">
+            <title>Rotating a photograph</title>
+             
+                <para>
+                Note: you will need to have the KIPI JPEG Lossless Plugin installed for these rotation features. If you do 
+                not have this plugin installed you can still rotate your photographs but you have to do so from inside the 
+                Image Viewer. The Image Viewer uses a different method of rotating an image, you may not notice any difference 
+                but the Image Viewer method can cause some loss of quality in the photograph. The rotation methods described 
+                here use the  JPEG Lossless Plugin and do not loose any quality in the original photograph.
+                </para>
+                             
+                <para>
+                &digikam; provides two ways to get your photographs the right way up. The simplest method is to right-click 
+                the thumbnail and select Rotate and then pick the correct amount of rotation needed.
+                </para>
+                
+                <para>
+                If you have a camera that knows which way up it was when you took the picture it may add this information 
+                into the EXIF meta-data that is embedded in the image. If this is the case &digikam; can use this information 
+                to rotate your photographs so that they are the correct way up. Right-click on the thumbnail and select 
+                Auto Rotate/Flip Using EXIF Information. The Camera Tool can perform this operation automatically when it 
+                uploads the photographs from your camera which will ensure that your photographs are always the right way 
+                up. If your camera does not include this information in to the photograph the rotate operation will do 
+                nothing.
+                </para>
+        
+            </sect3> 
+
+            <sect3 id="using-kapp-imagemetadata">
+            <title>Images Viewing</title>
+             
+                <para>
+                &digikam; maintains quite a lot of meta-data about your photographs. Meta-data is any information about a 
+                photograph that is not part of the image itself, for example, the date the photograph was taken is meta-data 
+                about the photograph. 
+                </para>
+
+                <para>
+                Some meta-data is attached to photographs by the camera that took the picture. This camera meta-data is 
+                stored inside the image file and is called EXIF data. To view this information right-click on a thumbnail 
+                and select View EXIF Information from the context menu.
+                </para>
+        
+                <para>
+                Other meta-data is associated with a photograph by &digikam; itself. Comments and Tags are meta-data that 
+                &digikam; manages for your photographs. You can edit the Comments and Tags for a photograph by right-clicking 
+                a thumbnail and selecting Edit Commands and Tags. 
+                </para>
+
+                <screenshot>
+                    <mediaobject>
+                        <imageobject><imagedata fileref="commentstags.png" format="PNG"/></imageobject>
+                        <textobject><phrase>The Item Comments and Tags Dialog</phrase></textobject>
+                    </mediaobject>
+                </screenshot>
+
+                <para>
+                Editing comments can be a tedious activity. The Comments/Tags dialog makes it easier by allowing you to 
+                move between photographs with out having to select each in turn. To use this feature, open the Commands/Tags 
+                dialog on the first photograph you want to comment on and then use the Forward and Back buttons to move 
+                between each photograph.  
+                </para>
+
+                <para>
+                There is one more set of meta-data that &digikam; can access about a photograph. This can be accessed by 
+                right-clicking on a photograph and selecting Properties from the context menu. This dialog will tell you 
+                information about how large the photograph is and were it is on the hard disk. This dialog will also give you 
+                access to another place to put comments. This Jpeg EXIF Comment is not used by &digikam; itself but some other 
+                image applications can access this comment and some digital cameras allow you set a comment while the 
+                photograph is still on the camara. In this case the comments will probably appear here. 
+                </para>
+                
+                <para>
+                Unless you have a good reason for placing comments in the EXIF field of your images it is probably best 
+                to use the main Comments/Tags dialog for adding comments to your photographs.
+                </para>
+                                                                                                            
+            </sect3> 
+
+            <sect3 id="using-kapp-renameimage">
+            <title>Renaming a photograph</title>
+             
+                <para>
+                You can change the filename for a photograph by right-clicking a thumbnail and selecting Rename. Remember 
+                to keep the file extension (.jpg, .tif, etc.).
+                </para>
+        
+            </sect3>             
+
+            <sect3 id="using-kapp-deleteimage">
+            <title>Deleting a photograph</title>
+             
+                <para>
+                When you delete a photograph from &digikam; it will be moved in the KDE Trash Can. If you don't like this 
+                behaviour and would rather that delete really did remove the photograph completely you can change it by 
+                selecting Settings -> Configure &digikam; and selecting the Miscellaneous page. At the top of this page 
+                are the settings that control what happens when a photograph is deleted.
+                </para>
+
+                <para>
+                To delete a photograph right-click the thumbnail and select Delete from the context menu.
+                </para>
+                                
+            </sect3> 
+                                                            
+        </sect2>
+        
         <sect2>
         <title>"My Tags" View</title>
 
             <para>
+            Photograph Tagging provides a flexible way to organise and catalogue your photographs. Tags are labels that 
+            can be applied to individual photographs. Once a Tag has been set on a photograph that photograph can be found 
+            again by selecting the Tag.
             </para>
-
-            <screenshot>
-                <mediaobject>
-                    <imageobject><imagedata fileref="commentstags.png" format="PNG"/></imageobject>
-                    <textobject><phrase>The Item Comments and Tags Dialog</phrase></textobject>
-                </mediaobject>
-            </screenshot>
-
-            <para>
-            </para>
-
-            <screenshot>
-                <mediaobject>
-                    <imageobject><imagedata fileref="assigntags.png" format="PNG"/></imageobject>
-                    <textobject><phrase>Tagging Image with Main Pop-up Menu</phrase></textobject>
-                </mediaobject>
-            </screenshot>
             
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="tagsview.png" format="PNG"/></imageobject>
+                    <textobject><phrase>Selecting a Tag</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+                        
             <para>
+            When a Tag is selected, all of the photographs that are marked with that Tag are displayed.
             </para>
+
+            <para>
+            Tags can be arranged into a hierarchical tree. This allows you to organise your Tags in a logical manner. 
+            It also allows you to collapse parts of the tree in the My Tags list so that you can easily find the Tags 
+            that you are looking for.
+            </para>
+
+            <para>
+            By default, when you select a Tag in the tree that contains other sub-Tags, &digikam; will not display 
+            photographs that are labelled with the sub-Tags. You can change this behaviour if you would prefer 
+            that all photographs marked with a sub-Tag of the current Tag be displayed. To set this option open 
+            Settings->Configure &digikam; from the main Menu Bar, select the Albums page and then select 
+            "Show Items in sub-Tags".
+            </para>
+
+            <sect3 id="using-kapp-managetags">
+            <title>Managing Tags</title>
+             
+                <para>
+                You can add new Tags by right-clicking on either the My Tags label or an existing Tag and selecting New Tag. 
+                If you add a new Tag by right-clicking on an existing Tag your new Tag will be created as a sub-Tag.
+                </para>
+
+                <para>
+                You can delete a Tag by right-clicking on the Tag you want to delete and selecting Delete Tag. When you delete 
+                a Tag the photographs that are marked with that Tag are not deleted. The Tag is simply removed from those 
+                photographs.
+                </para>
+
+                <para>
+                You can move the position of a Tag within the tree by dragging it into the position that you want and dropping 
+                it. A menu will appear that gives you the option to Move the Tag. A Tag can only be in one place in the tree at 
+                a time.
+                </para>
+                
+                <para>
+                You can set the Tag Properties by right-clicking on a Tab and selecting Edit Tag Properties. The Tag 
+                Properties allow you to change the name of the Tag and the icon used in the My Tag tree.
+                </para>
+                                                                                        
+            </sect3>    
+
+            <sect3 id="using-kapp-taggingimages">
+            <title>Tagging Photographs</title>
+             
+                <para>
+                Before you can get the most out of &digikam;'s Tagging capabilities you must first Tag your photographs. There 
+                are two methods of Tagging photographs. Once you have identified the photographs that you want to Tag you 
+                can either drag and drop them onto the Tag in the My Tags tree or, by right-clicking on the selected 
+                photographs in the Image Window, you can use the Assign Tag menu to select the Tags you wish to set.
+                </para>
+
+                <para>
+                You can label a photograph with as many Tags as you like. The photograph will appear  when you select any of 
+                the Tags that are set against it. This way you can set a Tag for each person in a photograph, as well as the 
+                place the photograph was taken, the event it was taken at etc.
+                </para>
+
+                <screenshot>
+                    <mediaobject>
+                        <imageobject><imagedata fileref="assigntags.png" format="PNG"/></imageobject>
+                        <textobject><phrase>Tagging Image with Main Pop-up Menu</phrase></textobject>
+                    </mediaobject>
+                </screenshot>
+                
+                <para>
+                Once you have Tagged a photograph the Tag name will appear under the thumbnail in the Image Window.
+                </para>
+                
+                <para>
+                You can remove a Tag from a photograph by right-clicking on the photograph and using the Remove Tag menu. 
+                This menu will only show those that Tags that have been set on this photograph. 
+                </para>
+                                                                                        
+            </sect3>  
                                 
         </sect2>
                 
@@ -301,6 +575,10 @@ Digital Cameras.
     <sect1 id="using-kapp-camera">
     <title>Using a Digital Camera with &digikam;</title>
 
+        <para>
+        FIXME
+        </para>
+    
         <para>
         To be able to use your digital camera with &digikam;, connect the camera
         to your computer, switch the camera to the image display mode and
@@ -341,6 +619,24 @@ Digital Cameras.
         </screenshot>
 
     </sect1>
+    
+    <sect1 id="using-kapp-imageeditor">
+    <title>&digikam; Image Editor</title>
+
+        <para>
+        TODO
+        </para>
+    
+    </sect1>  
+        
+    <sect1 id="using-kapp-setup">
+    <title>&digikam; Configuration</title>
+
+        <para>
+        TODO
+        </para>
+    
+    </sect1>    
 
 </chapter>
 
