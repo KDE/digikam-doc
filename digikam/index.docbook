@@ -1,0 +1,1781 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.0//EN" "dtd/kdex.dtd" [
+  <!ENTITY kappname "&digikam;"><!-- replace kapp here, do *not* replace kappname-->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE"><!-- change language only here -->
+  <!ENTITY digikam '<application>Digikam</application>'>
+
+  <!-- Do not define any other entities; instead, use the entities
+       from kde-genent.entities and $LANG/user.entities. -->
+]>
+
+<book lang="&language;">
+
+<bookinfo>
+
+<title>The &digikam; Handbook</title>
+
+<authorgroup>
+<author>
+<firstname>Renchi</firstname>
+<surname>Raju</surname>
+<affiliation>
+<address><email>renchi at pooh.tam.uiuc.edu</email></address>
+</affiliation>
+</author>
+</authorgroup>
+
+<authorgroup>
+<author>
+<firstname>Gilles</firstname>
+<surname>Caulier</surname>
+<affiliation>
+<address><email>caulier dot gilles at free.fr</email></address>
+</affiliation>
+</author>
+</authorgroup>
+
+<!-- TRANS:ROLES_OF_TRANSLATORS -->
+
+<copyright>
+<year>2001</year>
+<year>2004</year>
+<holder>The &digikam; developers team</holder>
+</copyright>
+<!-- Translators: put here the copyright notice of the translation -->
+<!-- Put here the FDL notice.  Read the explanation in fdl-notice.docbook
+     and in the FDL itself on how to use it. -->
+<legalnotice>&FDLNotice;</legalnotice>
+
+<date>xx/xx/2004</date>
+<releaseinfo>0.6.2</releaseinfo>
+
+<abstract>
+<para>
+&digikam; is a KDE Photo Management Application with support for
+Digital Cameras.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digital Camera</keyword>
+<keyword>digikam</keyword>
+<keyword>gphoto</keyword>
+<keyword>Graphics</keyword>
+</keywordset>
+
+</bookinfo>
+
+<chapter id="introduction">
+<title>Introduction</title>
+
+<para>
+&digikam; is a simple digital photo management application, which makes
+importing and organizing digital photos a "snap". The photos can be
+organized in "albums" which are automatically sorted chronologically.
+An easy to use interface is provided to connect to your camera and
+preview images and download and/or delete them.
+</para>
+
+<para>
+Please email bug reports, questions, comments and
+suggestions to <email>digikam-users@lists.sourceforge.net</email>.
+You find the &digikam; home page at
+<ulink url="http://digikam.sourceforge.net">http://digikam.sourceforge.net</ulink>.
+</para>
+</chapter>
+
+<chapter id="using-kapp">
+<title>Using &digikam;</title>
+
+<sect1 id="using-kapp-mainwindow">
+<title>The main &digikam; window</title>
+
+<para> &digikam; is a fairly easy to use application. When you load up
+&digikam; for the first time (or upgrade from 0.5), you will get a popup window
+that tells you that the way that &digikam; stores photos has changed. &digikam;
+uses now a folder on your filesystem as an album library, meaning that every subfolder
+of this folder will be considered as a photo album and displayed in the album
+list on the left side of the main window. Simply set a path to the album library
+using this popup window. Doing this, the &digikam; main window will be loaded
+with the album list on the left and the content of the selected album on the right
+side. You could see some albums in album list if you have choosen an album library
+with subfolders. If you have already folders where you keep your photos, you can copy
+them into the album library and they will be displayed as albums in &digikam;.
+As soon as you add an album, it will be sorted chronologically based on the
+month/year it was last modified. Lot of times these dates don't match with the
+month/year when the pictures were actually taken. You can right click on an
+album and it will give you an option to change the album date. The right click
+menu will also provide you more options to change the title of the album, add
+comments or remove it from the index or delete it entirely.
+</para>
+
+<para>
+Clicking on an album will start generating the thumbnails for the images in the
+album or if the thumbnails have already been generated, will load them from
+cache. You can change the iconsize to small, medium, large or huge from the
+magnify buttons in the toolbar (Also you can set the default iconsize you want
+when &digikam; starts up. More on this in the setupwindow). Right
+Clicking on an item will give you a popup menu, using which you can view,
+rename, delete, see the exif information, and add/edit comments of the images.
+When you add comments to an image, they are shown below the filename in the
+thumbnailview. Double clicking on an item will open it up in the imageviewer.
+</para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="mainwindow.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase>The main window</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+</sect1>
+
+<sect1 id="using-kapp-camera">
+<title>Using a Digital Camera with &digikam;</title>
+
+<para>
+To be able to use your digital camera with &digikam;, connect the camera
+to your computer, switch the camera to the image display mode and
+turn it on. Now you need to setup the camera model and port using the
+setup interface. Try and see if &digikam; can auto-detect the camera; if
+not, you can set the camera model and port manually. Once you have the
+camera setup, goto the "Cameras" menu in the main interface and you
+will see the camera listed in the menu (Note: You can choose any title
+you like for the camera in the setup and this title will be used in
+the "Cameras" menu). If you have more than one cameras, you can add
+them throught the setup interface. Clicking on the camera item in the menu will
+popup a new Camera Interface and this will connect to the camera, and
+thumbnails (if supported by the camera)  will be  downloaded and
+displayed. You can then select the images and download or delete them
+from the camera. Downloading can be done by using the menu/toolbar
+buttons or by dragging and dropping them onto an album folder.
+</para>
+
+<para> Digital cameras nowadays store images on either a CompactFlash
+card or SmartMedia card. The camera internally makes subfolders in
+these storage media which it uses to save  the images. &digikam;
+displays these internal folder tree and also provides a global
+virtual folder which shows all the images available in the
+camera. When you open the camera interface for the first time the
+folders are hidden and the contents of the global virtual folder are
+shown (i.e. all the pictures in the camera). You can choose to see the
+actual folders on the camera by unselecting "Hide Folders" in the
+"View" menu. This will show the folders on the camera, the topmost
+folder being the global virtual folder. Clicking on a folder will show
+the contents of the folder in the thumbnailview.
+</para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="cameraclient.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase>The camera client window</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+</sect1>
+
+</chapter>
+
+<chapter id="interface">
+<title>Menu Descriptions</title>
+
+<sect1>
+<title>The main &digikam; window</title>
+
+<!-- *********************************************************************** -->
+
+<sect2>
+<title>The Album Menu</title>
+
+<para>
+
+<anchor id="plugin-cdarchiving.anchor"/>
+<anchor id="plugin-imagesgallery.anchor"/>
+
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>N</keycap></keycombo>
+</shortcut>
+<guimenu>Album</guimenu>
+<guimenuitem>New Album</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Create a new album folder</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Albums</guimenu>
+<guimenuitem>Sort Albums</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Sort all &digikam; Albums by Collection, by Date, or by a flat method</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>I</keycap></keycombo>
+</shortcut>
+<guimenu>Album</guimenu>
+<guimenuitem>Add Images</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Select images to be added to the currently
+selected Album</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>F3</keycap></keycombo>
+</shortcut>
+<guimenu>Album</guimenu>
+<guimenuitem>Edit Album Properties</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Edit the currently selected album title and
+comments</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Album</guimenu>
+<guimenuitem>Archive to CD</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Archive &digikam; Albums in a CD/DVD media using K3b program.
+You can select easily the Albums to archive in the media. An HTML interface can be built
+for a confortable data navigation. For the Win32 platform, an 'AutoRun' option is available.
+</action></para>
+<para>
+K3b program is available at this
+<ulink url="http://www.k3b.org/">
+<citetitle>url.</citetitle>
+</ulink></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Album</guimenu>
+<guimenuitem>HTML Export</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Export &digikam; Albums in HTML page for a WEB publication.
+You can select easily the Albums to export in an HTML page. You can set a big parameters list
+the HTML rendering. The UTF-8 encoding is used for a best internationalization.
+</action></para>
+<para>
+You can see some samples building with this plugin at this
+<ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/index.htm">
+<citetitle>url.</citetitle>
+</ulink></para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Album</guimenu>
+<guimenuitem>Open Album in</guimenuitem>
+<guimenuitem>Konqueror</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Open the current Album in a the konqueror file manager.</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Album</guimenu>
+<guimenuitem>Open Album in</guimenuitem>
+<guimenuitem>Nautilus</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Open the current Album in the Nautilus file manager.</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Album</guimenu>
+<guimenuitem>Delete Album from HardDisk</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Delete selected Album and all items in it from the hard drive</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>Q</keycap></keycombo>
+</shortcut>
+<guimenu>Album</guimenu>
+<guimenuitem>Quit</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Quit &digikam;</action></para></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+
+</sect2>
+
+<!-- *********************************************************************** -->
+
+<sect2>
+<title>The Image Menu</title>
+
+<para>
+
+<anchor id="plugin-jpeglossless.anchor"/>
+<anchor id="plugin-printwizard.anchor"/>
+<anchor id="plugin-sendimages.anchor"/>
+
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>F4</keycap></keycombo>
+</shortcut>
+<guimenu>Image</guimenu>
+<guimenuitem>View/Edit</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Open the currently selected image in the
+imageviewer</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>F3</keycap></keycombo>
+</shortcut>
+<guimenu>Image</guimenu>
+<guimenuitem>Edit Image Comments</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Edit the image
+comments</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>F6</keycap></keycombo>
+</shortcut>
+<guimenu>Image</guimenu>
+<guimenuitem>View Exif Information</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>See the exif information stored in the image</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Alt</keycap><keycap>Enter</keycap></keycombo>
+</shortcut>
+<guimenu>Image</guimenu>
+<guimenuitem>Properties</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>View Image
+Properties</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Shift-1 </keycap></keycombo>
+<keycombo><keycap>Shift-2 </keycap></keycombo>
+<keycombo><keycap>Shift-3</keycap></keycombo>
+</shortcut><guimenu>Image</guimenu>
+<guimenuitem>Transform</guimenuitem>
+<guimenuitem>Rotate</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Do Lossless JPEG 90/180/270 Degree Rotation (this will rotate an
+image without losing any quality and any exif information)
+</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Image</guimenu>
+<guimenuitem>Transform</guimenuitem>
+<guimenuitem>Flip</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Do Lossless JPEG Horizontal or Vertical flip (this will flip an
+image without losing any quality and any exif information)</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Image</guimenu>
+<guimenuitem>Transform</guimenuitem>
+<guimenuitem>Convert to Black and White</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Do Lossless JPEG black and white convertion (this will convert an image to black and white without losing any exif information)</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>F2</keycap></keycombo>
+</shortcut>
+<guimenu>Image</guimenu>
+<guimenuitem>Rename</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Rename the current item</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Shift</keycap><keycap>Delete</keycap></keycombo>
+</shortcut>
+<guimenu>Image</guimenu>
+<guimenuitem>Delete</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Delete selected items</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Image</guimenu>
+<guimenuitem>E-mail Images</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>E-mail the selected items with your favorite mail agent. A resizing items operation is possible. You can use the drag and drop for to add more images in the list to send.</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Image</guimenu>
+<guimenuitem>Print Wizard</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>
+The print wizard allows multiple images to be combined into single
+sheets of paper in standard photo sizes for printing.  The combined
+images can also be automatically opened with the image editor Gimp for
+enhancement or for direct printing using the Gimp-Print plugin.  The
+combined images can also be output directly to jpeg files.
+</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Image</guimenu>
+<guimenuitem>Set as background</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>
+Place the current selected image in the KDE desktop in according with the menu sub-option selected:
+</action></para>
+<itemizedlist>
+<listitem><para>Centered.</para></listitem>
+<listitem><para>Tiled.</para></listitem>
+<listitem><para>Centered tiled.</para></listitem>
+<listitem><para>Centered max-aspect.</para></listitem>
+<listitem><para>Tiled max-aspect.</para></listitem>
+<listitem><para>Scaled.</para></listitem>
+<listitem><para>Centered auto fit.</para></listitem>
+</itemizedlist>
+</listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+
+</sect2>
+
+<!-- *********************************************************************** -->
+
+<sect2>
+<title>The Select Menu</title>
+
+<para>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>A</keycap></keycombo>
+</shortcut>
+<guimenu>Select</guimenu>
+<guimenuitem>Select All</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Select all images currently shown</action></para></listitem></varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>U</keycap></keycombo>
+</shortcut>
+<guimenu>Select</guimenu>
+<guimenuitem>Select None</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Unselect all items in the current view</action></para></listitem></varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>*</keycap></keycombo>
+</shortcut>
+<guimenu>Select</guimenu>
+<guimenuitem>Invert Selection</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Invert the current selection</action></para></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+
+</sect2>
+
+<!-- *********************************************************************** -->
+
+<sect2>
+<title>The View Menu</title>
+
+<para>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Alt</keycap><keycap>+</keycap></keycombo>
+</shortcut>
+<guimenu>View</guimenu>
+<guimenuitem>Increase Thumbnail Size</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Increase the thumbnail size</action></para></listitem>
+
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Alt</keycap><keycap>-</keycap></keycombo>
+</shortcut>
+<guimenu>View</guimenu>
+<guimenuitem>Decrease Thumbnail Size</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Decrease the thumbnail size</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>F</keycap></keycombo>
+</shortcut>
+<guimenu>View</guimenu>
+<guimenuitem>Toggle Full Screen</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Toggles the graphic interface in full screen mode</action></para></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+
+</sect2>
+
+<!-- *********************************************************************** -->
+
+<sect2>
+<title>The Camera Menu</title>
+
+<para>
+Any configured digital camera will be listed here. You can use the &digikam; setup dialog for add a
+new camera in the list.
+</para>
+
+</sect2>
+
+<!-- *********************************************************************** -->
+
+<sect2>
+<title>The Tools Menu</title>
+
+<para>
+
+<anchor id="plugin-calendar.anchor"/>
+<anchor id="plugin-mpegencoder.anchor"/>
+<anchor id="plugin-acquireimages.anchor"/>
+<anchor id="plugin-slideshow.anchor"/>
+<anchor id="plugin-findduplicateimages.anchor"/>
+
+<anchor id="plugin-rawconverter.anchor"/>
+<anchor id="plugin-commentseditor.anchor"/>
+<anchor id="plugin-borderimages.anchor"/>
+<anchor id="plugin-colorimages.anchor"/>
+<anchor id="plugin-convertimages.anchor"/>
+<anchor id="plugin-renameimages.anchor"/>
+<anchor id="plugin-effectimages.anchor"/>
+<anchor id="plugin-filterimages.anchor"/>
+<anchor id="plugin-recompressimages.anchor"/>
+<anchor id="plugin-resizeimages.anchor"/>
+
+Some installed tools &digikam; plugins will be listed here. More news about the &digikam; plugins can be found at this URL: <ulink url="http://digikam.sourceforge.net/plugins.html">http://digikam.sourceforge.net/plugins.html</ulink>
+
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Create calendar</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Used this wizard for create a calendar with some &digikam; Albums images.</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Batch</guimenuitem>
+<guimenuitem>Comments Editor</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Launch the Comments Editor plugin dialog box for editing Album images comments in bulk.
+ </action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Batch</guimenuitem>
+<guimenuitem>Border images</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>This plugin can be used for batch border images in an Album.
+ It use "convert" program from "ImageMagick" package. An image effect
+ preview is available. Actually, 4 border styles have been implemented:
+</action></para>
+<itemizedlist>
+<listitem><para><emphasis>Solid</emphasis> : simple line.</para></listitem>
+<listitem><para><emphasis>Niepce</emphasis> : old border style for black and white pictures.</para></listitem>
+<listitem><para><emphasis>Raise</emphasis> : a 3D effect arroud the pictures.</para></listitem>
+<listitem><para><emphasis>Frame</emphasis> : surrond the images with an ornamental border.</para></listitem>
+</itemizedlist>
+<para>
+You can see some samples building with this plugin at this
+<ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/BorderImages/index.html">
+<citetitle>url.</citetitle>
+</ulink></para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Batch</guimenuitem>
+<guimenuitem>Convert images</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>This plugin can be used for batch convert images in an Album.
+It use "convert" program from "ImageMagick" package. The image files formats supported are:
+</action></para>
+<itemizedlist>
+<listitem><para>JPEG.</para></listitem>
+<listitem><para>PNG.</para></listitem>
+<listitem><para>PPM.</para></listitem>
+<listitem><para>BMP.</para></listitem>
+<listitem><para>TIFF.</para></listitem>
+<listitem><para>TGA.</para></listitem>
+</itemizedlist>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Batch</guimenuitem>
+<guimenuitem>Color images</guimenuitem>
+</menuchoice></term>
+<listitem>
+<para><action>This plugin can be used for batch colors enhancement images in an Album.
+ It use "convert" program from "ImageMagick" package. An image effect
+ preview (partial or full) is available.
+ 10 colors filters types have been implemented:
+</action></para>
+<itemizedlist>
+<listitem><para><emphasis>Decrease contrast</emphasis> : reduce the image contrast.</para></listitem>
+<listitem><para><emphasis>Depth</emphasis> : change the color depth of the image.</para></listitem>
+<listitem><para><emphasis>Equalize</emphasis> : perform histogram equalization to the image.</para></listitem>
+<listitem><para><emphasis>Fuzz</emphasis> : merging colors within a distance are considered equal.</para></listitem>
+<listitem><para><emphasis>Gray scales</emphasis> : convert colors image to gray scales image.</para></listitem>
+<listitem><para><emphasis>Increase contrast</emphasis> : enhance the image contrast.</para></listitem>
+<listitem><para><emphasis>Monochrome</emphasis> : transform the image to black and white.</para></listitem>
+<listitem><para><emphasis>Negate</emphasis> : replace every pixel with its complementary color.</para></listitem>
+<listitem><para><emphasis>Normalize</emphasis> : transform image to span the full range of color values.</para></listitem>
+<listitem><para><emphasis>Segment</emphasis> : segment an image by analyzing the histograms of the color components.</para></listitem>
+<listitem><para><emphasis>Trim</emphasis> : trim an image (fuzz reverse technic).</para></listitem>
+</itemizedlist>
+<para>
+You can see some samples building with this plugin at this
+<ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/ColorImages/index.html">
+<citetitle>url.</citetitle>
+</ulink></para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Batch</guimenuitem>
+<guimenuitem>Effect images</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>This plugin can be used for batch FX transforming images in an Album.
+ It use "convert" program from "ImageMagick" package. An image effect
+ preview (partial or full) is also available.
+ 11 FX filters types have been implemented:
+</action></para>
+<itemizedlist>
+<listitem><para><emphasis>Adaptative threshold</emphasis> : perform local adaptive thresholding.</para></listitem>
+<listitem><para><emphasis>Charcoal</emphasis> : simulate a charcoal drawing.</para></listitem>
+<listitem><para><emphasis>Detect edges</emphasis> : detect edges within an image.</para></listitem>
+<listitem><para><emphasis>Emboss</emphasis> : returns a grayscale image with a three-dimensional effect.</para></listitem>
+<listitem><para><emphasis>Implode</emphasis> : implode image pixels about the center.</para></listitem>
+<listitem><para><emphasis>Paint</emphasis> : applies a special effect filter that simulates an oil painting.</para></listitem>
+<listitem><para><emphasis>Shade light</emphasis> : shines a distant light on an image to create a three-dimensional effect.</para></listitem>
+<listitem><para><emphasis>Solarize</emphasis> : negate all pixels above the threshold level.</para></listitem>
+<listitem><para><emphasis>Spread</emphasis> : this is a special effects method that randomly displaces each pixel in a block defined by the radius parameter.</para></listitem>
+<listitem><para><emphasis>Swirl</emphasis> : swirls the pixels about the center of the image.</para></listitem>
+<listitem><para><emphasis>Wave</emphasis> : creates a ripple effect in the image by shifting the pixels vertically along a sine wave.</para></listitem>
+</itemizedlist>
+<para>
+You can see some samples building with this plugin at this
+<ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/EffectImages/index.html">
+<citetitle>url.</citetitle>
+</ulink></para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Batch</guimenuitem>
+<guimenuitem>Filter images</guimenuitem>
+</menuchoice></term>
+<listitem><para><action> This plugin can be used for batch filter images in an Album.
+ It use "convert" program from "ImageMagick" package. An image effect
+ preview (partial or full) is available.
+ 9 filters types have been implemented:
+</action></para>
+<itemizedlist>
+<listitem><para><emphasis>Add noise</emphasis> : add noise in an image.</para></listitem>
+<listitem><para><emphasis>Antialias</emphasis> : remove pixel aliasing.</para></listitem>
+<listitem><para><emphasis>Blur</emphasis> : blur the image with a Gaussian operator.</para></listitem>
+<listitem><para><emphasis>Despeckle</emphasis> : reduce the speckles within an image.</para></listitem>
+<listitem><para><emphasis>Enhance</emphasis> : apply a digital filter to enhance a noisy image.</para></listitem>
+<listitem><para><emphasis>Median</emphasis> : apply a median filter to an image.</para></listitem>
+<listitem><para><emphasis>Noise reduction</emphasis> : reduce noise in an image.</para></listitem>
+<listitem><para><emphasis>Sharpen</emphasis> : sharpen the image with a Gaussian operator.</para></listitem>
+<listitem><para><emphasis>Unsharp</emphasis> : sharpen the image with an unsharp mask operator.</para></listitem>
+</itemizedlist>
+<para>
+You can see some samples building with this plugin at this
+<ulink url="http://digikamplugins.free.fr/ImagesGallerySamples/MultipleAlbums/FilterImages/index.html">
+<citetitle>url.</citetitle>
+</ulink></para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Batch</guimenuitem>
+<guimenuitem>Rename images</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>This plugin can be used for batch rename image files in an Album.
+</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Batch</guimenuitem>
+<guimenuitem>Recompress images</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>This plugin can be used for batch recompress images in an Album.
+It use "convert" program from "ImageMagick" package. The image files formats supported are:
+</action></para>
+<itemizedlist>
+<listitem><para>JPEG.</para></listitem>
+<listitem><para>PNG.</para></listitem>
+<listitem><para>TIFF.</para></listitem>
+<listitem><para>TGA.</para></listitem>
+</itemizedlist>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Batch</guimenuitem>
+<guimenuitem>Resize images</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>This plugin can be used for batch resize images in an Album.
+It use "convert" program from "ImageMagick" package. You can resize up or down the images size.
+3 resizing types have been implemented:
+</action></para>
+<itemizedlist>
+<listitem><para><emphasis>Proportional (1 dim.)</emphasis> : standard auto-resizing using one dimension.
+The width or the height of the images will be automatically selected in depending of the images
+orientation. The images aspect ratio are preserved.</para></listitem>
+<listitem><para><emphasis>Proportional (2 dim.)</emphasis> : auto-resizing using two dimensions.
+The images aspect ratio are preserved. For example, you can use that for to adapt your images size to your
+screen size. </para></listitem>
+<listitem><para><emphasis>Non proportional</emphasis> : non proportional resizing using two dimensions.
+The images aspect ratio aren't preserved.</para></listitem>
+<listitem><para><emphasis>Prepare to print</emphasis> : prepare the image for a photographic printing.
+The user can set the print resolution and the photographic paper size. The target image will be adapted
+to the good dimensions (included the background size, marging size, and background color).</para></listitem>
+</itemizedlist>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Batch</guimenuitem>
+<guimenuitem>Raw Images Converter</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Launch the batch Raw Converter plugin dialog box. This plugin can convert quite a few RAW file images from differents digital cameras (Canon, Nikon, Sigma, Olympus, Minolta, etc.). It uses the Dave Coffin RAW photo decoder program "dcraw".
+</action></para>
+<para>
+"dcraw" program is available at this
+<ulink url="http://www.cybercom.net/~dcoffin/dcraw/">
+<citetitle>url.</citetitle>
+</ulink></para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Raw Image Converter</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Launch the Raw Converter plugin dialog box. This plugin is for process an unique image.
+</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Acquire Images</guimenuitem>
+<guimenuitem>Scan Images</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Launch the Kooka interface dialog box for scan images with a scanner supported by Sane project.</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Acquire Images</guimenuitem>
+<guimenuitem>Screenshot</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Launch the &digikam; dialog for screenshots capture.</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>Find Images</guimenuitem>
+<guimenuitem>Find duplicate images</guimenuitem>
+</menuchoice></term>
+<listitem><para><action> This plugin can be used for find dupplicates images in Albums database.</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>MPEG Encoder</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Launch the MPEG Encoder plugin dialog box for convert the selected images on a MPEG sequence with a specific duration and merge all images on an single MPEG file. This plugin use the "MjpegTools" and "ImageMagick" packages. Between the images, you can insert a basic transition. You can also add an audio
+ track on the images sequence with a MP2 or WAV file. All images will be automatically
+ scaling to the good size for the video format. Also a specific background color
+ could be used. You can use this plugin for to build some DVD/XVCD/SVCD/VCD image
+ portfolios for your home DVD player. Use K3b program for create this media.
+ </action></para>
+<para>
+You can see some samples building with this plugin at this
+<ulink url="http://digikamplugins.free.fr/MPEGEncodeSamples/">
+<citetitle>url.</citetitle>
+</ulink></para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Tools</guimenu>
+<guimenuitem>SlideShow</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Launch the SlideShow plugin dialog box. This plugin is an album images slideshow with a large number of visual effects</action></para></listitem>
+</varlistentry>
+
+
+</variablelist>
+</para>
+
+</sect2>
+
+<!-- *********************************************************************** -->
+
+<sect2>
+<title>The Settings Menu</title>
+
+<para>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure Shortcuts</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Configure the &digikam; shortcuts</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure Toolbars</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Configure the &digikam; toolbars</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure &digikam;</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Configure the Camera and Album Settings</action></para></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+
+</sect2>
+
+<!-- *********************************************************************** -->
+
+<sect2>
+<title>The Help Menu</title>
+&help.menu.documentation;
+
+<para>Additionally &digikam; offers this item:</para>
+
+<variablelist>
+
+<varlistentry>
+<term>
+<menuchoice>
+<guimenu>Help</guimenu>
+<guimenuitem>Tip of the Day</guimenuitem>
+</menuchoice>
+</term>
+<listitem>
+<para>This displays a dialog with useful hints for using &digikam;.</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect2>
+
+</sect1>
+
+<!-- *********************************************************************** -->
+
+<sect1 id="kapp-setupwindow">
+<title>The &digikam; setup window</title>
+
+<para>
+The setup window has two tabs, one for the camera settings and the second for
+the album settings. The camera settings shows on the left the list of
+currently support cameras. On the right at the top there is an auto-detect
+button which tries to identify the camera connected to your computer (make
+sure that the camera is connected properly to the computer and turned on in
+the image display mode). Below this are the port settings; the currently
+supported being serial and usb.
+</para>
+<para>
+Clicking on a camera in the list on the left will display the supported ports
+which you can then select. If there is only one supported port it will be automatically
+selected. At the bottom on the right there is a box for setting the exact path in case of
+a serial port. Please note that usb interface does not need any paths to be
+set. At the very bottom is where you set the path for a USB MassStorage
+Camera. This box becomes active once you select USB MassStorage Camera
+in the camera list. You need to enter here the path where you mount
+the camera, usually "/mnt/camera".
+</para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="addcamera.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase>The add camera dialogbox</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para>
+In the album settings you can choose options as to how &digikam; will behave:
+
+<variablelist>
+
+<varlistentry>
+<term>Show Only Files With Extension</term>
+<listitem><para>Lets you choose the extensions of the files which will
+be shown in the thumbnailview. Some default values have been setup in
+the list already</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Set Default Icon Size</term>
+<listitem><para>Set the icon-size which you want to be default when
+showing both local and camera thumbnails. You can choose between
+Small, Medium, Large and Huge Options here</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Extra Information In Thumbnail View</term>
+<listitem><para>You can choose what extra information (apart from the
+filename should be shown in the ThumbnailView). You can choose to show
+filesize, mimetype, the date file was last modified and the comments
+for the file
+</para></listitem>
+</varlistentry>
+
+</variablelist>
+
+</para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="setupalbum.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase>The setup album dialogbox</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+</sect1>
+
+<!--
+***********************************************************************
+-->
+
+<sect1 id="kapp-camera">
+<title>The Camera window</title>
+
+<!-- *********************************************************************** -->
+
+<sect2>
+<title>The Camera Menu</title>
+
+<para>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>D</keycap></keycombo>
+</shortcut>
+<guimenu>Camera</guimenu>
+<guimenuitem>Connect</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Connect/Disconnect to/from the
+camera</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Camera</guimenu>
+<guimenuitem>Download</guimenuitem>
+<guimenuitem>Selected</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Download the selected
+images</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Camera</guimenu>
+<guimenuitem>Download</guimenuitem>
+<guimenuitem>All</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Download all images in the
+camera</action></para></listitem></varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Camera</guimenu>
+<guimenuitem>Delete</guimenuitem>
+<guimenuitem>Selected</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Delete the selected
+images</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Camera</guimenu>
+<guimenuitem>Delete</guimenuitem>
+<guimenuitem>All</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Delete all images from the
+camera</action></para></listitem></varlistentry>
+
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>U</keycap></keycombo>
+</shortcut>
+<guimenu>Camera</guimenu>
+<guimenuitem>Upload</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Upload images into the
+camera</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Esc</keycap></keycombo>
+</shortcut>
+<guimenu>Camera</guimenu>
+<guimenuitem>Stop</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Cancel any camera operations being
+performed</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>F3</keycap></keycombo>
+</shortcut>
+<guimenu>Camera</guimenu>
+<guimenuitem>Information</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Show information about the camera and the
+camera driver</action></para></listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>Q</keycap></keycombo>
+</shortcut>
+<guimenu>Camera</guimenu>
+<guimenuitem>Quit</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Quits the camera interface</action></para></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+
+</sect2>
+
+<!-- *********************************************************************** -->
+
+<sect2>
+<title>The Select Menu</title>
+
+<para>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>A</keycap></keycombo>
+</shortcut>
+<guimenu>Select</guimenu>
+<guimenuitem>Select All</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Select all images currently
+shown</action></para></listitem></varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>U</keycap></keycombo>
+</shortcut>
+<guimenu>Select</guimenu>
+<guimenuitem>Select None</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Unselect all items in the current
+view</action></para></listitem></varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>*</keycap></keycombo>
+</shortcut>
+<guimenu>Select</guimenu>
+<guimenuitem>Invert Selection</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Invert the current
+selection</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>/</keycap></keycombo>
+</shortcut>
+<guimenu>Select</guimenu>
+<guimenuitem>Select New Items</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Select only those items which haven't been
+downloaded yet</action></para></listitem></varlistentry>
+
+</variablelist>
+</para>
+
+</sect2>
+
+<!-- *********************************************************************** -->
+
+<sect2>
+<title>The View Menu</title>
+
+<para>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Alt</keycap><keycap>+</keycap></keycombo>
+</shortcut>
+<guimenu>View</guimenu>
+<guimenuitem>Increase Thumbnail Size</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Increase the thumbnail size</action></para></listitem>
+
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Alt</keycap><keycap>-</keycap></keycombo>
+</shortcut>
+<guimenu>View</guimenu>
+<guimenuitem>Decrease Thumbnail Size</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Decrease the thumbnail size</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>F</keycap></keycombo>
+</shortcut>
+<guimenu>View</guimenu>
+<guimenuitem>Toggle Full Screen</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Toggles the graphic interface in full screen mode</action></para></listitem></varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>View</guimenu>
+<guimenuitem>Hide Folders</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Toggles showing the camera
+folders</action></para></listitem></varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>View</guimenu>
+<guimenuitem>Hide StatusBar</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Toggles showing the statusbar</action></para></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+
+</sect2>
+
+<!-- *********************************************************************** -->
+
+<sect2>
+<title>The Settings Menu</title>
+
+<para>
+<variablelist>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure Shortcuts</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Configure the digital camera client shortcuts</action></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Configure Toolbars</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Configure the digital camera client toolbars</action></para></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+
+</sect2>
+
+</sect1>
+
+<!-- *********************************************************************** -->
+
+<sect1 id="kapp-imageviewer">
+<title>The Image Viewer</title>
+
+<para>
+&digikam; incorporates a fast imageviewer with a few basic image
+editing tools. The imageviewer has a toolbar at the top which shows
+the filename and the current filenumber at the extreme left. To the
+right of it is shown the current zoomlevel. A number of buttons are to
+the right of this which provide the functionality for the
+viewer/editor.
+</para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="imageviewer.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase>The image viewer window</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<sect2>
+<title>The Toolbar Buttons</title>
+
+<para>
+<variablelist>
+
+<varlistentry>
+<term>Previous Image</term>
+<listitem><para>
+Show previous image</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Next Image</term>
+<listitem><para>
+Show next image</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Zoom In</term>
+<listitem><para>
+Zoom into the image</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Zoom Out</term>
+<listitem><para>
+Zoom Out of the image</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Auto Zoom</term>
+<listitem><para>
+Toggle Auto Zooming (if selected image will fit in the
+window)</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Zoom Out</term>
+<listitem><para>
+Zoom to 1:1 scale the image</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Full Screen</term>
+<listitem><para>
+Toggle Full Screen (if selected image will be shown in full screen
+mode)</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Adjust Brightness/Contrast/Gamma</term>
+<listitem><para>
+Modify the brightness, the contrast, or the gamma of the current image</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Rotate</term>
+<listitem><para>
+Rotate the image (through 90, 180 or 270 degrees)</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Crop</term>
+<listitem><para>
+Crop the image to the selected region</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Save</term>
+<listitem><para>
+Save the modified image</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Restore</term>
+<listitem><para>
+If the image has been modified and not saved you can restore the
+original image using this button</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Remove from Album</term>
+<listitem><para>
+Remove the current image from the current Album</para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Close</term>
+<listitem><para>
+Close the imageviewer</para></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+
+</sect2>
+
+<!-- *********************************************************************** -->
+
+<sect2>
+<title>Shortcuts for the imageviewer</title>
+
+<para>
+
+<variablelist>
+
+<varlistentry>
+<term>Next Album Image</term>
+<listitem><para><interface><accel>PageDown</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Previous Album Image</term>
+<listitem><para><interface><accel>PageUp</accel></interface></para></listitem>
+</varlistentry>
+
+
+<varlistentry>
+<term>Zoom In</term>
+<listitem><para><interface><accel>+</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Zoom Out</term>
+<listitem><para><interface><accel>-</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Rotate Image through 90 degrees</term>
+<listitem><para><interface><accel>1</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Rotate Image through 180 degrees</term>
+<listitem><para><interface><accel>2</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Rotate Image through 270 degrees</term>
+<listitem><para><interface><accel>3</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Crop Image</term>
+<listitem><para><interface><accel>Ctrl-C</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Adjust Brightness/Contrast/Gamma</term>
+<listitem><para><interface><accel>Ctrl-E</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Increase Brightness</term>
+<listitem><para><interface><accel>B</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Decrease Brightness</term>
+<listitem><para><interface><accel>Shift-B</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Increase Gamma</term>
+<listitem><para><interface><accel>G</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Decrease Gamma</term>
+<listitem><para><interface><accel>Shift-G</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Increase Contrast</term>
+<listitem><para><interface><accel>C</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Decrease Contrast</term>
+<listitem><para><interface><accel>Shift-C</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Save</term>
+<listitem><para><interface><accel>Ctrl-S</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Restore</term>
+<listitem><para><interface><accel>Ctrl-R</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Remove from Album</term>
+<listitem><para><interface><accel>Shift-Del</accel></interface></para></listitem>
+</varlistentry>
+
+<varlistentry>
+<term>Close</term>
+<listitem><para><interface><accel>Esc</accel></interface></para></listitem>
+</varlistentry>
+
+</variablelist>
+</para>
+</sect2>
+</sect1>
+
+<!-- *********************************************************************** -->
+
+</chapter>
+
+<chapter id="credits">
+
+<title>Credits and License</title>
+
+<para>
+&digikam;
+</para>
+<para>
+Program copyright 2001-2003, &digikam; developers team
+</para>
+
+<para>
+Documentation copyright 2001-2003 Renchi Raju <email>renchi at pooh.tam.uiuc.edu</email>
+and Gilles Caulier <email>caulier dot gilles at free.fr</email></para>
+
+<para>Contributors:
+
+<itemizedlist>
+<listitem>
+<para>
+Caulier Gilles <email>caulier dot gilles at free.fr</email>: French Translations, Developer, and Translations Coordinator
+</para>
+</listitem>
+<listitem>
+<para>
+Todd Shoemaker <email>todd at theshoemakers.net</email>: Developer
+</para>
+</listitem>
+<listitem>
+<para>
+Gregory Kokanosky <email>gregory dot kokanosky at free.fr</email>: Developer
+</para>
+</listitem>
+<listitem>
+<para>
+Stefano Rivoir <email>s dot rivoir at gts.it</email>: Italian translations
+</para>
+</listitem>
+<listitem>
+<para>
+Rune Laursen <email>runerl at skjoldhoej.dk</email>: Danish translations
+</para>
+</listitem>
+<listitem>
+<para>
+Jan Toenjes <email>jan dot toenjes at web.de</email>: German translations
+</para>
+</listitem>
+<listitem>
+<para>
+Oliver Doerr <email>oliver at doerr-privat.de</email>: German translations and beta tester
+</para>
+</listitem>
+<listitem>
+<para>
+Quique <email>quique at sindominio.net</email>: Spanish translations
+</para>
+</listitem>
+<listitem>
+<para>
+Marcus Meissner <email>marcus at jet.franken.de</email>: Czech translations
+</para>
+</listitem>
+<listitem>
+<para>
+Janos Tamasi <email>janusz at vnet.hu</email>: Hungarian translations
+</para>
+</listitem>
+<listitem>
+<para>
+Jasper van der Marel <email>jasper dot van dot der dot marel at wanadoo.nl</email>: Dutch translations
+</para>
+</listitem>
+<listitem>
+<para>
+Anna Sawicka <email>ania at kajak.org.pl</email>: Polish translations
+</para>
+</listitem>
+<listitem>
+<para>
+Achim Bohnet <email>ach at mpe.mpg.de</email>: Bugs reports and patchs
+</para>
+</listitem>
+<listitem>
+<para>
+Charles Bouveyron <email>c dot bouveyron at tuxfamily.org</email>: Beta tester
+</para>
+</listitem>
+<listitem>
+<para>
+Richard Groult <email>Richard dot Groult at jalix.org</email>: Plugins contributor and beta tester
+</para>
+</listitem>
+</itemizedlist>
+</para>
+
+
+<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
+
+&underFDL;
+
+&underGPL;
+
+</chapter>
+
+<appendix id="installation">
+<title>Installation</title>
+
+<sect1 id="getting-kapp">
+<title>How to obtain &digikam;</title>
+
+<para>
+The website for &digikam; is at <ulink url="http://digikam.sourceforge.net">
+http://digikam.sourceforge.net</ulink>. Please check there regularly to obtain
+news about &digikam;.
+&digikam; can be obtained in binary and source format from
+<ulink url="http://www.sourceforge.net/projects/digikam">
+http://www.sourceforge.net/projects/digikam</ulink>.
+</para>
+
+<para>
+Also you can checkout the <emphasis>digikam3</emphasis> and <emphasis>digikamplugins</emphasis> source code modules
+from SourceForge.net CVS repository like this:
+<screen width="40">
+<prompt>%</prompt> <userinput>cvs -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/digikam login</userinput>
+<prompt>%</prompt> <userinput>cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/digikam co digikam3</userinput>
+<prompt>%</prompt> <userinput>cvs -z3 -d:pserver:anonymous@cvs.sourceforge.net:/cvsroot/digikam co digikamplugins</userinput>
+</screen>
+</para>
+
+<para>
+The last CVS snapshoots can be downloaded at this URL <ulink url="http://digikam.free.fr/Tarballs">
+http://digikam.free.fr/Tarballs</ulink>.
+</para>
+
+</sect1>
+
+<sect1 id="requirements">
+<title>Requirements</title>
+
+<para>
+In order to successfully use &digikam;, you need the following:
+<itemizedlist>
+<listitem><para>AutoConf >= 2.5</para></listitem>
+<listitem><para>AutoMake >= 1.7.0</para></listitem>
+<listitem><para>KDE 3.x</para></listitem>
+<listitem><para>gphoto2 2.x</para></listitem>
+<listitem><para>imlib1 >= 1.90</para></listitem>
+<listitem><para>libexif >= 0.5.7</para></listitem>
+<listitem><para>ImageMagick >= 5.5.4</para></listitem>
+<listitem><para>MJPEGTools >= 1.6.0</para></listitem>
+<listitem><para>dcRAW >= 5.02</para></listitem>
+</itemizedlist>
+</para>
+
+<para>
+KDE can be obtained from <ulink url="http://www.kde.org">KDE Home Page</ulink>,
+and Gphoto2 can be obtained from <ulink url="http://www.gphoto.org">Gphoto Home
+Page</ulink>. Most likely your distribution vendor might already have packaged
+and provided these packages.
+</para>
+</sect1>
+
+<sect1 id="compilation">
+<title>Compilation and Installation</title>
+
+<para>
+In order to compile and install &digikam; on your system, type the following in the
+basedirectorys of the <emphasis>digikam3</emphasis> and <emphasis>digikamplugins</emphasis> module distributions:
+<screen width="40">
+<prompt>%</prompt> <userinput>export WANT_AUTOCONF_2_5=1</userinput>
+<prompt>%</prompt> <userinput>export KDEDIR=KDE_installation_dir_on_your_system</userinput>
+<prompt>%</prompt> <userinput>make -f Makefile.cvs</userinput>
+<prompt>%</prompt> <userinput>./configure</userinput>
+<prompt>%</prompt> <userinput>make</userinput>
+<prompt>%</prompt> <userinput>su</userinput>
+<prompt>%</prompt> <userinput>make install</userinput>
+</screen>
+</para>
+
+<note><title>Important notices</title>
+<para>
+More specifics compilations and installations options can be used with <emphasis>.configure</emphasis> script.
+Check it with <userinput>./configure --help</userinput> command line.
+</para>
+
+<para>
+Because <emphasis>digikamplugins</emphasis> module depend of <emphasis>digikam3</emphasis> plugin interface, you must
+build <emphasis>digikamplugins</emphasis> module after the <emphasis>digikam3</emphasis> module compilation and installation.
+</para>
+
+<para>
+Some plugins can be disabled during the build process in <emphasis>digikamplugins</emphasis> module. Checked the end of 'configure.in.in' file and decomments the plugins lines corresponding. Then start the installation procedure.
+</para>
+</note>
+
+<para>
+Since &digikam; uses autoconf and automake you should have not trouble compiling
+it. Should you run into problems please report them to
+<email>digikam-users@lists.sourceforge.net</email>
+</para>
+</sect1>
+
+</appendix>
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->
