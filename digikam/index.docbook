@@ -45,6 +45,17 @@
 </author>
 </authorgroup>
 
+<authorgroup>
+<author>
+<firstname>Ralf</firstname>
+<surname>Hoelzer</surname>
+<affiliation>
+<address><email>kde at ralfhoelzer.com</email></address>
+</affiliation>
+</author>
+</authorgroup>
+
+
 <!-- TRANS:ROLES_OF_TRANSLATORS -->
 
 <copyright>
@@ -382,15 +393,18 @@
                 </para>
                 
                 <para>
-                If you have a camera that knows which way up it was when you took the picture it may add this information 
-                into the Exif meta-data that is embedded in the image. If this is the case &digikam; can use this information 
-                to rotate your photographs so that they are the correct way up. Right-click on the thumbnail and select 
-                Auto Rotate/Flip Using Exif Information. The Camera Tool can perform this operation automatically when it 
-                uploads the photographs from your camera which will ensure that your photographs are always the right way 
-                up. If your camera does not include this information in to the photograph the rotate operation will do 
-                nothing.
+                Many digital cameras now have an orientation sensor. This sensor can detect how you hold the camera while taking
+                a picture. It stores this orientation information inside the image. This meta data is stored in an embedded
+                meta-data section called Exif. The cameras could rotate the image themselves right away, but they have limited
+                processing power, so they leave this job to an application like digikam. If the camera is storing the
+                orientation, then &digikam; can use it to automatically rotate your photographs so that they are the correct way
+                up when you display them. Digikam will rotate the picture on disk according to this orientation information. The
+                photograph is rotated without loss of quality and the orientation information is set to normal, so that other
+                Exif-aware applications will handle it correctly. To use this feature, right-click on the thumbnail and select
+                Auto Rotate/Flip Using Exif Information. The Camera Tool can perform this operation automatically when it uploads
+                the photographs from your camera which will ensure that your photographs are always the right way up. If your
+                camera does not include this information in to the photograph the rotate operation will do nothing.  
                 </para>
-        
             </sect3> 
 
             <sect3 id="using-kapp-imagemetadata">
@@ -434,12 +448,16 @@
                 information about how large the photograph is and were it is on the hard disk. This dialog will also give you 
                 access to another place to put comments. This Jpeg Exif Comment is not used by &digikam; itself but some other 
                 image applications can access this comment and some digital cameras allow you set a comment while the 
-                photograph is still on the camara. In this case the comments will probably appear here. 
+                photograph is still on the camera. In this case the comments will probably appear here. 
                 </para>
                 
                 <para>
                 Unless you have a good reason for placing comments in the Exif field of your images it is probably best 
-                to use the main Comments/Tags dialog for adding comments to your photographs.
+                to use the main Comments/Tags dialog for adding comments to your photographs. Unfortunately there is no
+                standard where to place a comment. Some applications use the JPEG COM section, but this only works for
+                JPEG images. Other applications store comments in the Exif field, which is limited to JPEG and TIFF
+                images. Digikam stores comments in its internal database, so that all image and video formats can be
+                handled the same way.
                 </para>
                                                                                                             
             </sect3> 
@@ -743,7 +761,8 @@
             <para>
             Image files can have some meta-data embedded into the image file format. This meta-data can be 
             stored in a number of standard formats. Digikam can read meta-data in the Exif format if it is 
-            present in the file. &digikam; can also write comments into the Exif information. 
+            present in the file. &digikam; can also write comments into the Exif information. Writing comments
+            to the Exif section is limited to JPEG images.
             </para>
 
             <screenshot>
@@ -769,16 +788,20 @@
             Rotate Images and Thumbnails according to Exif tag : this will use any orientation information that 
             your camera has included in the Exif information to automatically rotate your photographs so that 
             they are the correct way up when displayed. It will not actually rotate the image file, only the 
-            display of the image on the screen. If your camera routinely gets this orientation information 
-            wrong you might like to switch this feature off.
+            display of the image on the screen. If you want to permanently rotate the image on file, you can
+            right-click on the thumbnail and select "Auto-rotate/flip according to Exif orentiaion". The image
+            will then be rotated on disk and the tag will be reset to "normal". If your camera 
+            routinely gets this orientation information wrong you might like to switch this feature off.
             </para> 
             
             <para>
             Set Exif Orientation Tag to Normal after rotate/flip : the Auto Rotate option automatically 
-            corrects the orientation of images taken with digital cameras. The camera adds an orientation 
-            tag to the image's metadata. &digikam; reads that tag and adjusts the image accordingly. This 
-            option set to "Normal" this Exif orientation tag after an adjustment. "Normal" orientation must 
-            be correct for human.
+            corrects the orientation of images taken with digital cameras that have an orientation sensor. The camera 
+            adds an orientation tag to the image's Exif meta-data. &digikam; can read this tag to adjust the image 
+            accordingly. If you manually rotate an image, this meta-data will be incorrect. This option will set the
+            orientation taq to "Normal" after an adjustment, assuming that you rotated it to the correct orientation. 
+            Switch this off if you don't want &digikam; to make changes to the orientation tag, when you rotate
+            or flip the image.
             </para> 
                         
         </sect2>
@@ -1166,7 +1189,7 @@
                 <shortcut><keycombo><keycap>F4</keycap></keycombo></shortcut>
                 <guimenu>Image</guimenu><guimenuitem>View/Edit</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Open the currently selected image in &digikam; 
+            <listitem><para><action>Open the currently selected image in the &digikam; 
             image editor.</action></para></listitem>
         </varlistentry>
 
@@ -1175,8 +1198,8 @@
                 <shortcut><keycombo><keycap>F3</keycap></keycombo></shortcut>
                 <guimenu>Image</guimenu><guimenuitem>Edit Image Comments and Tags</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Edit the currently selected image Comments and 
-            Tags.</action></para></listitem>
+            <listitem><para><action>Edit the comments and tags of the currently 
+            selected image.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -1184,13 +1207,13 @@
                 <shortcut><keycombo><keycap>F6</keycap></keycombo></shortcut>
                 <guimenu>Image</guimenu><guimenuitem>View Exif Information</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>See Exif information stored of the currently selected 
+            <listitem><para><action>Display  Exif information of the currently selected 
             image.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Image</guimenu><guimenuitem>Corrected Exif Orientation Tag</guimenuitem>
+                <guimenu>Image</guimenu><guimenuitem>Correct Exif Orientation Tag</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Manual Exif Orientation Tag adjustment options of the currently selected 
             image.</action></para></listitem>
@@ -1209,60 +1232,61 @@
             <term><menuchoice>
                 <guimenu>Image</guimenu><guimenuitem>Auto Rotate/Flip using Exif information</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Kipi plugin menu entry for activate manually the 
-            auto rotate/flip of the currently selected images using Exif information. 
-            See the dedicaced plugin manual for more informations.</action></para></listitem>
+            <listitem><para><action>Kipi plugin menu entry to manually activate the 
+            auto rotate/flip feature for the currently selected images using the Exif orientation tag. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Image</guimenu><guimenuitem>Rotate</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Kipi plugin menu entry for rotate the currently selected 
+            <listitem><para><action>Kipi plugin menu entry for rotating the currently selected 
             images to 90/180/270 degrees. 
-            See the dedicaced plugin manual for more informations.</action></para></listitem>
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Image</guimenu><guimenuitem>Flip</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Kipi plugin menu entry for flip the currently selected 
+            <listitem><para><action>Kipi plugin menu entry for flipping the currently selected 
             images horizontally or vertically. 
-            See the dedicaced plugin manual for more informations.</action></para></listitem>
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
         
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Image</guimenu><guimenuitem>Convert to Black and White</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Kipi plugin menu entry for convert to black and white the 
-            currently selected images. 
-            See the dedicaced plugin manual for more informations.</action></para></listitem>
+            <listitem><para><action>Kipi plugin menu entry for converting the currently selected images 
+            to black and white.  
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
         
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Image</guimenu><guimenuitem>Email images</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Kipi plugin for email images with your prefered mail agent. 
-            See the dedicaced plugin manual for more informations.</action></para></listitem>
+            <listitem><para><action>Kipi plugin for emailing images with your prefered mail agent. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
         
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Image</guimenu><guimenuitem>Adjust Time and Date</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Kipi plugin for adjust time and date of the currently selected images. 
-            See the dedicaced plugin manual for more informations.</action></para></listitem>
+            <listitem><para><action>Kipi plugin for adjusting time and date of the currently selected images. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
         
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Image</guimenu><guimenuitem>Set as Background</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Kipi plugin for to set as desktop backgroud the currently selected image. 
-            See the dedicaced plugin manual for more informations.</action></para></listitem>
+            <listitem><para><action>Kipi plugin for setting the currently selected image as the desktop
+            background. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
                 
         <varlistentry>
@@ -1278,7 +1302,7 @@
                 <shortcut><keycombo><keycap>Shift</keycap><keycap>Delete</keycap></keycombo></shortcut>
                 <guimenu>Image</guimenu><guimenuitem>Delete/Move to trash</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Delete/Move to trash the currently selected images.</action></para></listitem>
+            <listitem><para><action>Delete/Move the currently selected images to Trash.</action></para></listitem>
         </varlistentry>
 
     </variablelist>
@@ -1382,40 +1406,41 @@
             <term><menuchoice>
                 <guimenu>Tools</guimenu><guimenuitem>Create Calendar</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Kipi plugin for create calendar with Album items. 
-            See the dedicaced plugin manual for more informations.</action></para></listitem>
+            <listitem><para><action>Kipi plugin for creating a calendar with Album items. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Tools</guimenu><guimenuitem>Create MPEG Slideshow</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Kipi plugin for create MPEG Slideshow with Album items. 
-            See the dedicaced plugin manual for more informations.</action></para></listitem>
+            <listitem><para><action>Kipi plugin for creating an MPEG Slideshow with Album items. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
         
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Tools</guimenu><guimenuitem>Slideshow</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Kipi plugin for display Slideshow with Album items. 
-            See the dedicaced plugin manual for more informations.</action></para></listitem>
+            <listitem><para><action>Kipi plugin for displaying a Slideshow with Album items. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
     
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Tools</guimenu><guimenuitem>Raw Image Converter (single)</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Kipi plugin for convert a single RAW image. 
-            See the dedicaced plugin manual for more informations.</action></para></listitem>
+            <listitem><para><action>Kipi plugin for converting a single RAW image. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
     
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Tools</guimenu><guimenuitem>Batch Processes</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Kipi plugin menu entries for Batch Processes currently selected images. 
-            See the dedicaced plugin manual for more informations.</action></para></listitem>
+            <listitem><para><action>Kipi plugin menu entries for performing batch Processes on 
+            currently selected images. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
     
     </variablelist>
@@ -1443,7 +1468,7 @@
     <para>
     Any configured digital camera will be listed here. You can use the "Add Camera" menu entry 
     for add a new camera in the list. Please, read the <link linkend="setupcamera">Setup Camera Section</link> 
-    for more informations.
+    for more information.
     </para>
 
     </sect2>
@@ -1467,21 +1492,21 @@
             <term><menuchoice>
                 <guimenu>Settings</guimenu><guimenuitem>Configure Shortcuts</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Configure the &digikam; shortcuts</action></para></listitem>
+            <listitem><para><action>Configure the &digikam; shortcuts.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Settings</guimenu><guimenuitem>Configure Toolbars</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Configure the &digikam; toolbars</action></para></listitem>
+            <listitem><para><action>Configure the &digikam; toolbars.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Settings</guimenu><guimenuitem>Configure &digikam;</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Configure the Camera and Album Settings</action></para></listitem>
+            <listitem><para><action>Configure the Camera and Album Settings.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -1490,7 +1515,7 @@
                 </shortcut>
                 <guimenu>View</guimenu><guimenuitem>Toggle Full Screen</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Toggles the graphic interface in full screen mode</action></para></listitem>
+            <listitem><para><action>Toggles the graphic interface in full screen mode.</action></para></listitem>
         </varlistentry>
 
     </variablelist>
@@ -1732,6 +1757,11 @@ Program copyright 2001-2004, &digikam; developers team
         Joern Ahrens <email>kde at jokele.de</email>: Developer.
         </para>
     </listitem>
+    <listitem>
+        <para>
+        Ralf Hoelzer <email>kde at ralfhoelzer.com</email>: Developer.
+        </para>
+    </listitem>
 </itemizedlist>
 </para>
 
@@ -1753,7 +1783,8 @@ Documentation copyrighted by:
     <listitem>
         <para>
         2003-2004 Renchi Raju <email>renchi at pooh.tam.uiuc.edu</email>, Gilles Caulier <email>caulier dot gilles at 
-        free.fr</email>, and Richard Taylor <email>rjt-digicam at thegrindstone dot me dot uk</email>.
+        free.fr</email>, Richard Taylor <email>rjt-digicam at thegrindstone dot me dot uk</email> and Ralf Hoelzer
+        <email>kde@ralfhoelzer.com</email>.
         </para>
     </listitem>
 </itemizedlist>
@@ -1870,19 +1901,19 @@ let pkg-config know about their paths.
 </para>
 
 <para>
-More specifics compilations and installations options can be used with <emphasis>.configure</emphasis> script.
-Check it with <userinput>./configure --help</userinput> command line.
+More specific compilation and installation options can be passed to the <emphasis>configure</emphasis> script.
+Use <userinput>./configure --help</userinput> on the command line to view these options.
 </para>
 
 <para>
-Because &digikam; depend of <emphasis>libkipi</emphasis> and <emphasis>libkexif</emphasis>, you must
-build these libraries before to build &digikam;.
+Because &digikam; depends on <emphasis>libkipi</emphasis> and <emphasis>libkexif</emphasis>, you must
+build these libraries before you build &digikam;.
 </para>
 
 </note>
 
 <para>
-Since &digikam; uses autoconf and automake you should have not trouble compiling
+Since &digikam; uses autoconf and automake you should not have trouble compiling
 it. Should you run into problems please report them to <email>digikam-users@lists.sourceforge.net</email>.
 </para>
 
