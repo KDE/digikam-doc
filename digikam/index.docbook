@@ -1696,42 +1696,87 @@
 
             <sect3 id="using-kapp-croppingimage">
             <title>Cropping a Photograph</title>
-
-                <para>
-                Cropping a photograph is a common operation and the Image Editor makes it very easy. 
-                To crop a photograph simple drag a rectangle over the image by holding down the left 
-                mouse button and moving the mouse. You will see a wire frame rectangle appear as you move 
-                the mouse.
-                </para>
-            
-                <figure>
-                    <title>The Current Image Selection in Image Editor</title>
-                    <graphic srccredit="The Current Image Selection in Image Editor" 
-                    fileref="editorimageselection.png"/>
-                </figure>
              
-                <para>
-                When you release the button the area of the photograph that will be removed by 
-                a crop operation is darkened. This allows you to get a good view of how your photograph will 
-                look once you have cropped it. You can change the size if the cropped area by dragging the 
-                corners of the rectangle and you can create a new crop area simply by dragging out another 
-                rectangle.
-                </para>
-            
-                <para>
-                Once you are happy with the crop, click on the 
-                <inlinemediaobject>
-                    <imageobject><imagedata fileref="editorcropbutton.png" format="PNG"/></imageobject>
-                    <textobject> <phrase>The Image Editor Crop Button</phrase> </textobject>
-                </inlinemediaobject> 
-                button on the Tool Bar and the photograph will be cropped. Use the 
-                <menuchoice><guimenu>File</guimenu>
-                <guimenuitem>Save</guimenuitem></menuchoice> or 
-                <menuchoice><guimenu>File</guimenu>
-                <guimenuitem>Save As</guimenuitem></menuchoice> 
-                entries in the File menu to safe the newly cropped photograph.
-                </para>
+                <sect4 id="using-kapp-manualcrop">
+                <title>Manual Crop</title>
 
+                    <para>
+                    Cropping a photograph is a common operation and the Image Editor makes it very easy. 
+                    To crop a photograph simple drag a rectangle over the image by holding down the left 
+                    mouse button and moving the mouse. You will see a wire frame rectangle appear as you move 
+                    the mouse.
+                    </para>
+            
+                    <figure>
+                        <title>The Current Image Selection in Image Editor</title>
+                        <graphic srccredit="The Current Image Selection in Image Editor" 
+                        fileref="editorimageselection.png"/>
+                    </figure>
+             
+                    <para>
+                    When you release the button the area of the photograph that will be removed by 
+                    a crop operation is darkened. This allows you to get a good view of how your photograph will 
+                    look once you have cropped it. You can change the size if the cropped area by dragging the 
+                    corners of the rectangle and you can create a new crop area simply by dragging out another 
+                    rectangle.
+                    </para>
+            
+                    <para>
+                    Once you are happy with the crop, click on the 
+                    <inlinemediaobject>
+                        <imageobject><imagedata fileref="editorcropbutton.png" format="PNG"/></imageobject>
+                        <textobject> <phrase>The Image Editor Crop Button</phrase> </textobject>
+                    </inlinemediaobject> 
+                    button on the Tool Bar and the photograph will be cropped. Use the 
+                    <menuchoice><guimenu>File</guimenu>
+                    <guimenuitem>Save</guimenuitem></menuchoice> or 
+                    <menuchoice><guimenu>File</guimenu>
+                    <guimenuitem>Save As</guimenuitem></menuchoice> 
+                    entries in the File menu to safe the newly cropped photograph.
+                    </para>
+
+                </sect4>
+            
+                <sect4 id="using-kapp-proportionalcrop">
+                <title>Proportional Crop</title>
+
+                    <anchor id="ratiocroptool.anchor"/>                                
+                    
+                    <para>
+                    Aspect ratio Crop tool goes further. While you are editing digital images, it is often 
+                    necessary to create a compatible format with, for example, your photo-album. If you print 
+                    an image from your digital camera and then try to put it in your photo album, you may 
+                    notice that the camera has a different width or height ratio than a normal photographic 
+                    film format so you need to crop your digital images in a predefined ratio (for example 
+                    5:7 or 2:3 which is a standard photo ratio).
+                    </para>
+                
+                    <figure>
+                        <title>The Aspect Ratio Crop Tool in Action</title>
+                        <graphic srccredit="The Aspect Ratio Crop Tool in Action" 
+                        fileref="editorratiocroptool.png"/>
+                    </figure>
+                    
+                    <para>
+                    The preview area let you draw the cropping rectangle around the part you wish to use. 
+                    It will keep the ratio value set in the bottom of dialog. You can always resize and 
+                    move it with the mouse, it will keep the same ratio.
+                    </para>
+                    
+                    <para>
+                    In Aspect Ratio Crop tool settings, you specify the <guilabel>Orientation</guilabel> 
+                    as <guilabel>Portrait</guilabel> or <guilabel>Landscape</guilabel>. Portrait will 
+                    always have the larger number assigned to the <guilabel>Height</guilabel> and 
+                    Landscape to the <guilabel>Width</guilabel>.
+                    </para>
+                    
+                    <para>
+                    Aspect Ratio Crop tool uses a relative ratio. That means it is the same if you use 
+                    centimeters or inches and it doesn't specify the physical size!
+                    </para>
+                                        
+                </sect4>
+            
             </sect3>
 
             <sect3 id="using-kapp-resizingimage">
