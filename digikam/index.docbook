@@ -1380,32 +1380,11 @@
                     Meta-Data and Properties</link> section for more detail about information embedded data 
                     in your photographs.
                     </para>
-                
-                </sect4>
-                
-                <sect4>
-                <title>How to Use EXIF Viewer?</title>
-                    
-                    <para>             
-                    You can review embedded EXIF information for the image using 
-                    <menuchoice><guimenu>Image</guimenu>
-                    <guimenuitem>Properties</guimenuitem></menuchoice> and <guilabel>EXIF</guilabel> page. 
-                    The EXIF Viewer is purely informational: nothing you do with it will cause any 
-                    change to the EXIF sections. All data are available in the same page. Expanding 
-                    a main EXIF section to see the EXIF tags relevant. If you press with the right 
-                    mouse button under the EXIF thumbnail, you can corrected the EXIF orientation tag.
-                    </para>
-            
-                    <figure>
-                        <title>The EXIF Viewer in Action</title>
-                        <graphic srccredit="The EXIF Viewer in Action" fileref="exifviewer.png"/>
-                    </figure>
-            
-                    <para>             
-                    If the current photograph contains an EXIF marker section, the information contained in it
-                    will be displayed in the EXIF Viewer dialog with a treeview where each section corresponding 
-                    to the <emphasis>Image File Directories</emphasis> (IFD) EXIF sections. The sections likely 
-                    to be found in a normal EXIF file are as follows:
+
+                    <para>
+                    EXIF format contains differents marker sections named <emphasis>Image File 
+                    Directories</emphasis> (IFD). The sections likely to be found in a normal EXIF 
+                    file are as follows: 
                     
                     <itemizedlist>
             
@@ -1437,8 +1416,45 @@
                     
                     </itemizedlist>
                     
+                    </para>
+                
+                </sect4>
+                
+                <sect4>
+                <title>How to Use EXIF Viewer?</title>
+                    
+                    <para>             
+                    You can review embedded EXIF information for the image using 
+                    <menuchoice><guimenu>Image</guimenu>
+                    <guimenuitem>Properties</guimenuitem></menuchoice> and <guilabel>EXIF</guilabel> page. 
+                    The EXIF Viewer is purely informational: nothing you do with it will cause any 
+                    change to the EXIF sections.
+                    </para>
+            
+                    <figure>
+                        <title>The EXIF Viewer in Action</title>
+                        <graphic srccredit="The EXIF Viewer in Action" fileref="exifviewer.png"/>
+                    </figure>
+            
+                    <para>             
+                    
+                    You can use two differents levels to display EXIF marker sections:
+                    
+                    <itemizedlist>
+            
+                        <listitem><para>
+                            <guilabel>Simple</guilabel>: display only EXIF marker.
+                        </para></listitem>
+
+                        <listitem><para>
+                            <guilabel>Full</guilabel>: display all markers excepted thumnail.
+                        </para></listitem>
+
+                    </itemizedlist>
+
                     Some vendors add additional EXIF sections, such as Canon, Fujifilm, Nikon, and Sigma. 
-                    These sections contain vendor and model specific notes.
+                    These sections contain vendor and model specific notes. These will be displayed with 
+                    <guilabel>Full</guilabel> level.
                     </para>
                     
                     <para>
