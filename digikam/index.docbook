@@ -1003,14 +1003,18 @@
         </sect2>
 
         <sect2>
-        <title>Undoing Actions</title>
+        <title>Undoing/Redoing Actions</title>
             
             <para>
-            Almost anything you do to an image in Image Editor can be undone. You can undo the most recent action by choosing <menuchoice><guimenu>Edit</guimenu><guimenuitem>Cancel</guimenuitem></menuchoice>, but this is done so frequently that you really should memorize the keyboard shortcut, <guilabel>Ctrl-Z</guilabel>.
+            Almost anything you do to an image in Image Editor can be undone/redone. You can undo the most recent action by choosing <menuchoice><guimenu>Edit</guimenu><guimenuitem>Cancel</guimenuitem></menuchoice>, and redo by <menuchoice><guimenu>Edit</guimenu><guimenuitem>Redo</guimenuitem></menuchoice>
             </para>
             
             <para>
-            The undo-stack design is very simple: actions are either reversible (rotate,flip) or irreversible (rest of the actions and all of the plugin actions). The reversible undos are implemented by just saving the commands and for the irreversible undos image copies are stored in plain binary cache files.
+            If these are done so frequently that you really should memorize the keyboard shortcuts, <guilabel>Ctrl-Z</guilabel> to undoing action, and <guilabel>Ctrl-Shift-Z</guilabel> to redoing action.
+            </para>
+            
+            <para>
+            The undo/redo-stack design is very simple: actions are either reversible (rotate,flip) or irreversible (rest of the actions and all of the plugin actions). The reversible undos/redos are implemented by just saving the commands and for the irreversible undos/redos image copies are stored in plain binary cache files.
             </para>
             
         </sect2>
@@ -3003,6 +3007,14 @@
             <listitem><para><action>Cancel the last action applied to the current image using history.</action></para></listitem>
         </varlistentry>
 
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>Z</keycap></keycombo></shortcut>
+                <guimenu>Edit</guimenu><guimenuitem>Redo</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Redo the last action applied to the current image using history.</action></para></listitem>
+        </varlistentry>
+    
     </variablelist>
     </para>
 
