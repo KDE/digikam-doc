@@ -16,53 +16,48 @@
 <title>The &digikam; Handbook</title>
 
 <authorgroup>
-<author>
-<firstname>Renchi</firstname>
-<surname>Raju</surname>
-<affiliation>
-<address><email>renchi at pooh.tam.uiuc.edu</email></address>
-</affiliation>
-</author>
+    <author>
+    <firstname>Renchi</firstname><surname>Raju</surname>
+    <affiliation><address><email>renchi at pooh.tam.uiuc.edu</email></address></affiliation>
+    </author>
 </authorgroup>
 
 <authorgroup>
-<author>
-<firstname>Gilles</firstname>
-<surname>Caulier</surname>
-<affiliation>
-<address><email>caulier dot gilles at free.fr</email></address>
-</affiliation>
-</author>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier dot gilles at free.fr</email></address></affiliation>
+    </author>
 </authorgroup>
 
 <authorgroup>
-<author>
-<firstname>Richard</firstname>
-<surname>Taylor</surname>
-<affiliation>
-<address><email>rjt-digicam at thegrindstone dot me dot uk</email></address>
-</affiliation>
-</author>
+    <author>
+        <firstname>Richard</firstname><surname>Taylor</surname>
+        <affiliation><address><email>rjt-digicam at thegrindstone dot me dot uk</email></address></affiliation>
+    </author>
 </authorgroup>
 
 <authorgroup>
-<author>
-<firstname>Ralf</firstname>
-<surname>Hoelzer</surname>
-<affiliation>
-<address><email>kde at ralfhoelzer.com</email></address>
-</affiliation>
-</author>
+    <author>
+    <firstname>Ralf</firstname><surname>Hoelzer</surname>
+    <affiliation><address><email>kde at ralfhoelzer.com</email></address></affiliation>
+    </author>
 </authorgroup>
 
+<authorgroup>
+    <author>
+    <firstname>Joern</firstname><surname>Ahrens</surname>
+    <affiliation><address><email>kde at jokele.de</email></address></affiliation>
+    </author>
+</authorgroup>
 
 <!-- TRANS:ROLES_OF_TRANSLATORS -->
 
 <copyright>
-<year>2001</year>
-<year>2004</year>
-<holder>The &digikam; developers team</holder>
+    <year>2001</year>
+    <year>2004</year>
+    <holder>The &digikam; developers team</holder>
 </copyright>
+
 <!-- Translators: put here the copyright notice of the translation -->
 <!-- Put here the FDL notice.  Read the explanation in fdl-notice.docbook
      and in the FDL itself on how to use it. -->
@@ -89,11 +84,11 @@
 </abstract>
 
 <keywordset>
-<keyword>KDE</keyword>
-<keyword>Digital Camera</keyword>
-<keyword>digikam</keyword>
-<keyword>gphoto</keyword>
-<keyword>Graphics</keyword>
+    <keyword>KDE</keyword>
+    <keyword>Digital Camera</keyword>
+    <keyword>digikam</keyword>
+    <keyword>gphoto</keyword>
+    <keyword>Graphics</keyword>
 </keywordset>
 
 </bookinfo>
@@ -240,9 +235,9 @@
                 importing an existing folder (directory) of photographs from your hard disk, just select 
                 Album->Import->Import Folders... from the Menu Bar and select the folder that you want to 
                 import. A new Album will be created with the same name as the hard disk folder. Additionally
-				you can use drag and drop to import a folder. Drag a directory icon, for example from a 
-				konqueror window. Than drop it on the album list on the left. A menu will appear that gives 
-				you the option to move or copy the folder into &digikam;.
+                you can use drag and drop to import a folder. Drag a directory icon, for example from a 
+                konqueror window. Than drop it on the album list on the left. A menu will appear that gives 
+                you the option to move or copy the folder into &digikam;.
                 </para>
         
             </sect3>
@@ -271,8 +266,8 @@
                 make sure that the Album is selected then either click the Add Images icon in the Tool Bar or 
                 select Album->Import->Add Images from the Menu Bar. Select the photographs that you want to add 
                 from the file dialog and click Open. The photographs will be copied into the Album. 
-				Additionally you can use drag and drop to import photographs. Drag the photographs icon, for example 
-				from a konqueror window. Than drop it on the image list on the right hand side. 
+                Additionally you can use drag and drop to import photographs. Drag the photographs icon, for example 
+                from a konqueror window. Than drop it on the image list on the right hand side. 
                 If you have a scanner configured you can also scan a photograph straight into an Album.
                 </para>
                 
@@ -351,8 +346,8 @@
                 <para>
                 To select a different photograph as the Album icon, right-click on the photograph that 
                 you want to use as the Album icon and select Set as Album Thumbnail from the context menu.
-				Additionally you can use drag and drop to set the Album icon. Drag the photographs icon.
-				Than drop it on the currently selected Album in the Album list.
+                Additionally you can use drag and drop to set the Album icon. Drag the photographs icon.
+                Than drop it on the currently selected Album in the Album list.
                 </para>
         
             </sect3>            
@@ -2150,10 +2145,6 @@
 <sect1>
 <title>The Image Editor</title>
 
-    <para>
-    FIXME
-    </para>
-
     <sect2>
     <title>The File Menu</title>
 
@@ -2300,8 +2291,8 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo><keycap>PgUp</keycap></keycombo></shortcut>
-                <guimenu>Fix</guimenu><guimenuitem>Previous</guimenuitem>
+                <shortcut><keycombo><keycap>PgUp</keycap><keycap>1</keycap></keycombo></shortcut>
+                <guimenu>Fix</guimenu><guimenuitem>Rotate</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
         </varlistentry>
@@ -2321,10 +2312,61 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo><keycap>PgUp</keycap></keycombo></shortcut>
-                <guimenu>Transform</guimenu><guimenuitem>Previous</guimenuitem>
+                <shortcut><keycombo><keycap>Shift</keycap><keycap>1</keycap></keycombo></shortcut>
+                <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>90 degrees</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
+            <listitem><para><action>90 degrees rotation of the current image.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Shift</keycap><keycap>2</keycap></keycombo></shortcut>
+                <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>180 degrees</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>180 degrees rotation of the current image.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Shift</keycap><keycap>3</keycap></keycombo></shortcut>
+                <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>270 degrees</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>270 degrees rotation of the current image.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>Free Rotation</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Free rotation of the current image using an angle in degrees.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Transform</guimenu><guimenuitem>Flip</guimenuitem><guimenuitem>Horizontally</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Horizontal flip of the current image.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Transform</guimenu><guimenuitem>Flip</guimenuitem><guimenuitem>Vertically</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Vertical flip of the current image.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Transform</guimenu><guimenuitem>Crop</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Crop the current image to the current selection.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Transform</guimenu><guimenuitem>Resize</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Resize the current image to the appropriate factor or dimenssions.</action></para></listitem>
         </varlistentry>
     
     </variablelist>
@@ -2557,8 +2599,9 @@ Documentation copyrighted by:
             2003-2004 
             Renchi Raju <email>renchi at pooh.tam.uiuc.edu</email>, 
             Gilles Caulier <email>caulier dot gilles at free.fr</email>, 
-            Richard Taylor <email>rjt-digicam at thegrindstone dot me dot uk</email> and 
-            Ralf Hoelzer <email>kde@ralfhoelzer.com</email>.
+            Richard Taylor <email>rjt-digicam at thegrindstone dot me dot uk</email>,
+            Ralf Hoelzer <email>kde at ralfhoelzer.com</email> and 
+            Joern Ahrens <email>kde at jokele.de</email>.
             </para>
         </listitem>
         
