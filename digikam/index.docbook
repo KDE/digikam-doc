@@ -744,15 +744,24 @@
                     <para>
                     Some meta-data is attached to photographs by the camera that took the picture. This 
                     camera meta-data is stored inside the image file and is called Exif data. To view this 
-                    information right-click on a thumbnail and select <guilabel>View Exif Information</guilabel> 
-                    from the context menu.
+                    information right-click on a thumbnail and select <guilabel>Properties and 
+                    Meta-Data</guilabel> from the context menu.
                     </para>
         
                     <para>
                     Other meta-data is associated with a photograph by &digikam; itself. Comments and Tags are 
-                    meta-data that &digikam; manages for your photographs. You can edit the Comments and Tags for 
-                    a photograph by right-clicking a thumbnail and selecting <guilabel>Edit Comments and 
+                    meta-data that &digikam; manages for your photographs. You can edit the Comments and Tags 
+                    for a photograph by right-clicking a thumbnail and selecting <guilabel>Edit Comments and 
                     Tags</guilabel>.
+                    </para>
+
+                    <para>
+                    Unless you have a good reason for placing comments in the Exif field of your images it is 
+                    probably best to use the main Comments/Tags dialog for adding comments to your photographs. 
+                    Unfortunately there is no standard where to place a comment. Some applications use the JPEG 
+                    COM section, but this only works for JPEG images. Other applications store comments in the 
+                    Exif field, which is limited to JPEG and TIFF images. &digikam; stores comments in its 
+                    internal database, so that all image and video formats can be handled the same way.
                     </para>
 
                     <figure>
@@ -783,31 +792,20 @@
                 
                     <para>
                     This dialog will tell you information about how large the photograph is and were it is on 
-                    the hard disk. This dialog will also give you access to another place to put comments. 
-                    This JPEG Exif Comment is not used by &digikam; itself but some other image applications 
-                    can access this comment and some digital cameras allow you set a comment while the 
-                    photograph is still on the camera. In this case the comments will probably appear here.
+                    the hard disk. 
                     </para>
                 
                     <figure>
-                        <title>The Image Properties Dialog with Meta-Data Tab</title>
-                        <graphic srccredit="The Image Properties Dialog with Meta-Data Tab" 
+                        <title>The Image Properties Dialog General Tab</title>
+                        <graphic srccredit="The Image Properties Dialog General Tab" 
                         fileref="imageproperties3.png"/>
                     </figure>
                 
                     <para>
-                    Unless you have a good reason for placing comments in the Exif field of your images it is 
-                    probably best to use the main Comments/Tags dialog for adding comments to your photographs. 
-                    Unfortunately there is no standard where to place a comment. Some applications use the JPEG 
-                    COM section, but this only works for JPEG images. Other applications store comments in the 
-                    Exif field, which is limited to JPEG and TIFF images. &digikam; stores comments in its 
-                    internal database, so that all image and video formats can be handled the same way.
-                    </para>
-                
-                    <para>
                     This dialog will give you same Exif information provide in Exif Viewer dialog descripted 
-                    in this <link linkend="using-kapp-exifviewertool">section</link>. All data are available 
-                    in the same page. Expanding a main Exif section to see the Exif tags relevant.
+                    in the <link linkend="using-kapp-exifviewertool"> Exif Viewer section</link>. All data 
+                    are available in the same page. Expanding a main Exif section to see the Exif tags 
+                    relevant.
                     </para>
                     
                     <figure>
@@ -828,6 +826,12 @@
                         fileref="imageproperties.png"/>
                     </figure>
                 
+                    <para>
+                    Like with Edit Comments and Tags dialog, you can move between photographs with out 
+                    having to select each in turn. Use the <guilabel>Forward</guilabel> and 
+                    <guilabel>Back</guilabel> buttons to move between each photograph.
+                    </para>
+
                 </sect4>                    
                                                                                                             
             </sect3> 
