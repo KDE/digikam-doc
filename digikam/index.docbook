@@ -407,7 +407,8 @@
                 Album by clicking the New Album button on the Tool Bar. You can also create a new Album by 
                 importing an existing folder (directory) of photographs from your hard disk, just select 
                 <menuchoice><guimenu>Album</guimenu>
-                <guimenuitem>Import Folders...</guimenuitem></menuchoice> 
+                <guimenuitem>Import</guimenuitem>
+                <guimenuitem>Import Folders</guimenuitem></menuchoice> 
                 from the Menu Bar and select the folder that you want to import. 
                 A new Album will be created with the same name as the hard disk folder. Additionally
                 you can use drag and drop to import a folder. Drag a directory icon, for example from a 
@@ -437,10 +438,10 @@
             <title>Adding a photograph to an Album</title>
                 
                 <para>
-                Most of the time you will create new Albums and populate them with photographs directly 
-                from your camera using the Camera Tool. However, sometimes you may want to add a photograph 
-                that you already have on your computer to an existing Album. To add a photograph to an Album, 
-                make sure that the Album is selected then either click the Add Images icon in the Tool Bar or select 
+                Most of the time you will create new Albums and populate them with photographs directly from 
+                your camera using the Camera Tool. However, sometimes you may want to add a photograph that 
+                you already have on your computer to an existing Album. To add a photograph to an Album, make 
+                sure that the Album is selected then either click the Add Images icon in the Tool Bar or select 
                 <menuchoice><guimenu>Album</guimenu>
                 <guimenuitem>Import</guimenuitem>
                 <guimenuitem>Add Images</guimenuitem></menuchoice> 
@@ -1144,9 +1145,11 @@
             
             <para>
             At any time <emphasis>before</emphasis> you save your photograph you can restore 
-            the view to the original image by selecting File->Revert or clicking the Revert button 
-            on the Tool Bar. You will loose any changes that you have made to the photograph since 
-            it was last saved.
+            the view to the original image by selecting 
+            <menuchoice><guimenu>File</guimenu>
+            <guimenuitem>Revert</guimenuitem></menuchoice> 
+            or clicking the Revert button on the Tool Bar. You will loose any changes that you have 
+            made to the photograph since it was last saved.
             </para>
             
         </sect2>
@@ -1183,8 +1186,10 @@
             </para>
 
             <para>
-            View->Toggle Full Screen Mode will display the photograph using the full screen. You can move back 
-            to the normal view by pressing the Esc key. By default the Tool Bar is still displayed even in Full 
+            <menuchoice><guimenu>View</guimenu>
+            <guimenuitem>Toggle Full Screen</guimenuitem></menuchoice> will display 
+            the photograph using the full screen mode. You can move back to the normal view by 
+            pressing the Esc key. By default the Tool Bar is still displayed even in Full 
             Screen Mode. If you would prefer that the Tool Bar is not displayed you can turn it off in the 
             Configure &digikam; dialog accessed from the main &digikam; window, see the 
             <link linkend="setupeditor">Setup Image Editor Section</link>.
@@ -1203,7 +1208,9 @@
                 <para>
                 You can view some of the properties of your photograph by selecting the options in the 
                 Image menu. 
-                You can edit the comments set for this photograph using Image->Edit Image Comments, the 
+                You can edit the comments set for this photograph using 
+                <menuchoice><guimenu>Image</guimenu>
+                <guimenuitem>Edit Image Comments</guimenuitem></menuchoice>, the 
                 new comments  will be remembered when you close the photograph, even if you do not save 
                 the photograph first.
                 </para>
@@ -1222,7 +1229,9 @@
                 <anchor id="exifviewertool.anchor"/>
                 
                 <para>             
-                You can review embedded Exif information for the image using Image->Exif Information, for more 
+                You can review embedded Exif information for the image using 
+                <menuchoice><guimenu>Image</guimenu>
+                <guimenuitem>Exif Information</guimenuitem></menuchoice>, for more 
                 information about the Exif information embedded in images see the Image Meta-Data section. 
                 </para>
             
@@ -1239,8 +1248,10 @@
                 <anchor id="filepropertiestool.anchor"/>
                 
                 <para>
-                You can view the file properties using Image->File Properties, this dialog will also allow 
-                you to change the filename of the image.
+                You can view the file properties using 
+                <menuchoice><guimenu>Image</guimenu>
+                <guimenuitem>File Properties</guimenuitem></menuchoice>, this dialog 
+                will also allow you to see the file properties of the image.
                 </para>
             
             </sect3>
@@ -1252,9 +1263,11 @@
             
                 <para>
                 If you are interested in the detailed histogram of your photograph you can view it using 
-                Image->Histogram... The histogram for a image shows the amount of each colour that is present 
-                and their different amplitudes within the image. If your photograph has a colour cast you might 
-                be able to see what is wrong by looking at the histogram.
+                <menuchoice><guimenu>Image</guimenu>
+                <guimenuitem>Histogram</guimenuitem></menuchoice>. The histogram for a image shows the 
+                amount of each colour that is present and their different amplitudes within the image. 
+                If your photograph has a colour cast you might be able to see what is wrong by looking 
+                at the histogram.
                 </para>
             
                 <para>
@@ -1490,16 +1503,22 @@
                     <imageobject><imagedata fileref="editorcropbutton.png" format="PNG"/></imageobject>
                     <textobject> <phrase>The Image Editor Crop Button</phrase> </textobject>
                 </inlinemediaobject>
-            button on the Tool Bar and the photograph will be cropped. Use the File->Save or File->Save 
-            As entries in the File menu to safe the newly cropped photograph.
+            button on the Tool Bar and the photograph will be cropped. Use the 
+            <menuchoice><guimenu>File</guimenu>
+            <guimenuitem>Save</guimenuitem></menuchoice> or 
+            <menuchoice><guimenu>File</guimenu>
+            <guimenuitem>Save As</guimenuitem></menuchoice> 
+            entries in the File menu to safe the newly cropped photograph.
             </para>
 
             <anchor id="resizetool.anchor"/>
 
             <para>
             If the photograph is the wrong size you can scale it to the size you would like by using 
-            Transform Resize. Select Transform->Resize... and adjust the target values. The resize dialog 
-            tool is available below.
+            Transform Resize. Select 
+            <menuchoice><guimenu>Transform</guimenu>
+            <guimenuitem>Resize</guimenuitem></menuchoice> and adjust the target values. 
+            The resize dialog tool is available below.
             </para>
 
             <figure>
@@ -1517,10 +1536,12 @@
             <para>
             It is easy, when taking a picture, to hold the camera not quite perfectly vertical, resulting 
             in a picture where things are tilted at an angle. In Image Editor, the way to fix this is to 
-            use the Free Rotation tool. Select Transform->Rotate->Free Rotation... and adjust to the  
-            target angle. After you have rotated an image, there will be unpleasant triangular "holes" 
-            at the corners. One way to fix them is to crop the image. The Free Rotation dialog tool is 
-            available below.
+            use the Free Rotation tool. Select 
+            <menuchoice><guimenu>Transform</guimenu>
+            <guimenuitem>Rotate</guimenuitem>
+            <guimenuitem>Free Rotation</guimenuitem></menuchoice> and adjust to the target angle. 
+            After you have rotated an image, there will be unpleasant triangular "holes" at the corners. 
+            One way to fix them is to crop the image. The Free Rotation dialog tool is available below.
             </para>
 
             <figure>
@@ -1532,9 +1553,13 @@
             
             <para>
             The Sharpen and Blur tools allow you to make small correction cover up focus errors or 
-            your photographs or to add some atmosphere. Select Fix->Sharpen or Fix->Blur and 
-            experiment with the level. The detail windows on the right of the dialogs show the 
-            effect of the operation of your photograph.
+            your photographs or to add some atmosphere. Select 
+            <menuchoice><guimenu>Fix</guimenu>
+            <guimenuitem>Sharpen</guimenuitem></menuchoice> or 
+            <menuchoice><guimenu>Fix</guimenu>
+            <guimenuitem>Blur</guimenuitem></menuchoice> and experiment with the level. 
+            The detail windows on the right of the dialogs show the effect of the operation of 
+            your photograph.
             </para>
             
             <figure>
@@ -1549,7 +1574,9 @@
             the reflection from the back the eye which can be seen because the pupil can not react 
             quickly enough to the flash. You can correct some of the worst effect of Red Eye by 
             selecting the area of the eye on the photograph, in the same way as described for cropping 
-            above. Then select Fix->Red Eye Reduction.
+            above. Then select 
+            <menuchoice><guimenu>Fix</guimenu>
+            <guimenuitem>Red Eye Reduction</guimenuitem></menuchoice>.
             </para>
             
             <figure>
@@ -1569,7 +1596,9 @@
             Digital cameras often have problems with lighting conditions and it is not unusual 
             to want to correct the colour, contrast and brightness of a photograph. You can 
             experiment with altering the levels of different aspects of your photographs using 
-            the tools under the Fix->Colors menu.
+            the tools under the 
+            <menuchoice><guimenu>Fix</guimenu>
+            <guimenuitem>Colors</guimenuitem></menuchoice> menu.
             </para>
 
             <figure>
@@ -1660,12 +1689,16 @@
             <para>
             If you have the Adjust Levels plugin installed (see the 
             <link linkend="setupeditor">Setup Image Editor Section</link>) you will have an
-            additional entry in the Fix menu called Fix->Colors->Levels Adjust. This tools provides 
-            an integrated way of seeing the results of adjusting multiple levels and also enables you to 
-            save level settings for application to multiple photographs. This can be useful if your 
-            camera or scanner often makes the same mistakes and you want to apply the same corrections. 
+            additional entry in the Fix menu called 
+            <menuchoice><guimenu>Fix</guimenu>
+            <guimenuitem>Colors</guimenuitem>
+            <guimenuitem>Levels Adjust</guimenuitem></menuchoice>. This tools provides an integrated 
+            way of seeing the results of adjusting multiple levels and also enables you to save level 
+            settings for application to multiple photographs. This can be useful if your camera or 
+            scanner often makes the same mistakes and you want to apply the same corrections. 
             The Levels Adjust plugin has its own detailed manual that you can access from the 
-            Help->ImagePlugin->Handbooks menu.
+            <menuchoice><guimenu>Help</guimenu>
+            <guimenuitem>ImagePlugin Handbooks</guimenuitem></menuchoice> menu.
             
             <figure>
                 <title>The Adjust Levels Image Editor Plugin in Action</title>
@@ -1704,7 +1737,9 @@
         <title>Printing Image</title>
             
             <para>
-            When you want to print the current image, select File->Print... and you get the standard KDE 
+            When you want to print the current image, select 
+            <menuchoice><guimenu>File</guimenu>
+            <guimenuitem>Print</guimenuitem></menuchoice> and you get the standard KDE 
             Print dialog, from where you can directly print your image.
             </para>         
         
@@ -1724,9 +1759,10 @@
         <para>
         &digikam; tries to give you as much control over the way that it works as possible. There are 
         many options that change the behaviour of &digikam;. To access these settings select 
-        Setting-> Configure &digikam; from the Menu Bar. The configuration dialog is separated into 
-        eight pages. You can change between these pages by clicking on the icons on the left-hand side 
-        of the dialog.
+        <menuchoice><guimenu>Setting</guimenu>
+        <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> from the Menu Bar. The configuration 
+        dialog is separated into eight pages. You can change between these pages by clicking on the 
+        icons on the left-hand side of the dialog.
         </para>
 
         <sect2 id="setupalbum">
@@ -1915,7 +1951,8 @@
             
             <para>
             Keyboard shortcuts to actions that plugins perform can be set up in the 
-            Settings->Configure Shortcuts menu.
+            <menuchoice><guimenu>Setting</guimenu>
+            <guimenuitem>Configure Shortcuts</guimenuitem></menuchoice> menu.
             </para>
             
             <para>
@@ -2714,7 +2751,8 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Brightness/Contrast/Gamma</guimenuitem>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem>
+                <guimenuitem>Brightness/Contrast/Gamma</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Exposure correction of the current image by Brighness, Contrast, or Gamma 
             adjustments.</action></para></listitem>
@@ -2722,7 +2760,8 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Hue/Saturation/Ligthness</guimenuitem>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem>
+                <guimenuitem>Hue/Saturation/Ligthness</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Color correction of the current image by Hue, Saturation, or Lightness 
             adjustments.</action></para></listitem>
