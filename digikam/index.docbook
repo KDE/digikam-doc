@@ -1226,20 +1226,79 @@
             <sect3 id="using-kapp-exifviewertool">
             <title>Exif Viewer Tool</title>
             
-                <anchor id="exifviewertool.anchor"/>
+                <anchor id="kexif.anchor"/>
                 
-                <para>             
-                You can review embedded Exif information for the image using 
-                <menuchoice><guimenu>Image</guimenu>
-                <guimenuitem>Exif Information</guimenuitem></menuchoice>, for more 
-                information about the Exif information embedded in images see the Image Meta-Data section. 
-                </para>
+                <sect4>
+                <title>What is Exif?</title>
+                    
+                    <para>
+                    Exif stands for EXtended Interchange Format. It was designed specifically with digital 
+                    cameras. It allows for a large amount of information to be stored about the photograph, 
+                    describing the camera which took the image along with the settings (including date/time) 
+                    in use when the picture was taken. Also it allows for an inline thumbnail to be included.
+                    </para>
+                
+                </sect4>
+                
+                <sect4>
+                <title>How To Use Exif Viewer?</title>
+                    
+                    <para>             
+                    You can review embedded Exif information for the image using 
+                    <menuchoice><guimenu>Image</guimenu>
+                    <guimenuitem>Exif Information</guimenuitem></menuchoice>. 
+                    The Exif Viewer is purely informational: nothing you do with it will cause any 
+                    change to the Exif sections.
+                    </para>
             
-                <figure>
-                    <title>The Exif Viewer in Action</title>
-                    <graphic srccredit="The Exif Viewer in Action" fileref="exifviewer.png"/>
-                </figure>
+                    <figure>
+                        <title>The Exif Viewer in Action</title>
+                        <graphic srccredit="The Exif Viewer in Action" fileref="exifviewer.png"/>
+                    </figure>
             
+                    <para>             
+                    If the current photograph contains an Exif marker section, the information contained in 
+                    will be displayed in the Exif Viewer dialog in separate tabs corresponding to the "Image 
+                    File Directories" Exif sections. The sections likely to be found in a normal EXIF file 
+                    are as follows:
+                    
+                    <itemizedlist>
+            
+                        <listitem><para>
+                            <emphasis>0</emphasis>: contains general information about the photograph.
+                        </para></listitem>
+
+                        <listitem><para>
+                            <emphasis>1</emphasis>: contains information about the embedded thumbnail image.
+                        </para></listitem>
+
+                        <listitem><para>
+                            <emphasis>EXIF</emphasis>: contains extended information about the photograph.
+                        </para></listitem>
+
+                        <listitem><para>
+                            <emphasis>GPS</emphasis>: contains Global Positionning System information 
+                            provides by the camera during the capture.
+                        </para></listitem>
+
+                        <listitem><para>
+                            <emphasis>Interroperability</emphasis>: contains information to support 
+                            interoperability between different Exif implementations.
+                        </para></listitem>
+                                                                                                    
+                        <listitem><para>
+                            <emphasis>Thumnail</emphasis>: display the embedded thumbnail image.
+                        </para></listitem>
+                    
+                    </itemizedlist>
+            
+                    For each Exif data displayed on each dialog tabs, the Exif Viewer provide a contextual 
+                    help. Select an item on the top and the according help will be displayed on the bottom
+                    of the dialog.
+                    </para>
+                                
+                </sect4>
+                
             </sect3>
             
             <sect3 id="using-kapp-filepropertiestool">
@@ -1325,10 +1384,9 @@
             
                 <para> 
                 You can change whether the histogram will be displayed using a linear or logarithmic Y axis. 
-                For images taken with a digital camera, the linear mode is usually the most useful. However, for 
-                images that contain substantial areas of constant color a linear histogram 
-                will often be dominated by a single bar. In this case a logarithmic histogram will often be 
-                more useful. 
+                For images taken with a digital camera, the linear mode is usually the most useful. However, 
+                for images that contain substantial areas of constant color a linear histogram will often 
+                be dominated by a single bar. In this case a logarithmic histogram will often be more useful. 
                 </para>
 
                 <para> 
