@@ -132,12 +132,9 @@
 <title>Using &digikam;</title>
 
     <sect1 id="using-kapp-firstrun">
-    <title>First &digikam; Running</title>
+    <title>Getting Started</title>
 
         <anchor id="firstrundialog.anchor"/>
-        
-        <para>
-        TODO
         
         <screenshot>
             <mediaobject>
@@ -145,9 +142,48 @@
                 <textobject><phrase>The First Run Dialog</phrase></textobject>
                 <caption><para><emphasis>The First Run Dialog</emphasis></para></caption>                
             </mediaobject>
-        </screenshot>
-        
+        </screenshot>        
+
+        <para>
+        When you start &digikam; for the very first time it will ask you where you want to store your 
+        photographs. You can type in the path name of a folder or click the Folder icon  
+          <inlinemediaobject>
+            <imageobject><imagedata fileref="foldericon.png" format="PNG"/></imageobject>
+            <textobject> <phrase>Folder Icon</phrase> </textobject>
+          </inlinemediaobject>
+        to select a folder from the dialog. 
         </para>
+
+        <para>
+        If you already have a collection of photographs on your hard disk you can enter the top-level 
+        folder containing those photographs as the Albums Library folder. &digikam; will treat each 
+        sub-folder of the folder you enter as an Album. None of the photographs will be altered. 
+        </para>
+
+        <para>
+        When you use an existing folder of photographs as the Album Library folder you will notice that
+        the Albums in the My Album list do not have photographs as their icons. The first time you
+        view each Ablum &digikam; will create a thumbnail from the first photograph in the Album and 
+        use this as the Album icon. See the <link linkend="using-kapp-myalbumsview">My Album</link> 
+        section for details of how to change the Album icon.
+        </para>
+
+        <para>
+        If you have previously accessed your photograph collection with another application that has created
+        thumbnails in non-standard sub-folders &digikam; will show these thumbnail folders as separate 
+        Albums. &digikam; follows the <ulink url="http://www.freedesktop.org/">freedesktop.org</ulink> 
+        standards for thumbnail folders. There is no way of hiding non-standard thumbnail folders from the 
+        My Album list but if you want to keep them you could create a Album Collection that just contains 
+        all the thumbnail Folders and then view your Albums in By Collection order. See the 
+        <link linkend="using-kapp-myalbumsview">My Album</link> section for more about Album Collections.
+        </para>
+
+        <para>
+        Once you have configured the Album Library Folder you can setup &digikam; to work with your 
+        digital camera. Then learn how to use <link linkend="using-kapp-myalbumsview">My Albums</link>
+        and <link linkend="using-kapp-mytagsview">My Tags</link> to arrange your photograph Albums.
+        </para> 
+
                         
     </sect1>
 
@@ -433,24 +469,22 @@
                                     
         </sect2>
         
-        <sect2>
+        <sect2 id="using-kapp-imageview">
         <title>Image View</title>
 
             <sect3>
             <title>Introduction</title>
 
-                <para>
-                <inlinemediaobject>
-                    <imageobject><imagedata fileref="thumbsizebuttons.png" format="PNG"/></imageobject>
-                    <textobject> <phrase>The Thumbnail size buttons</phrase> </textobject>
-                </inlinemediaobject>
-                </para>
 
                 <para>
                 The Image Window provides the main view of your photographs. When you select an Album 
                 the photographs in that Album will be displayed in the Image Window. Each photograph is 
                 displayed as a thumbnail. You can alter the size of the thumbnails using the magnifier 
                 buttons in the Tool Bar.
+                 <inlinemediaobject>
+                    <imageobject><imagedata fileref="thumbsizebuttons.png" format="PNG"/></imageobject>
+                    <textobject> <phrase>The Thumbnail size buttons</phrase> </textobject>
+                 </inlinemediaobject>
                 </para>
                 
                 <para>
@@ -647,7 +681,7 @@
                                                             
         </sect2>
         
-        <sect2>
+        <sect2 id="using-kapp-mytagsview">
         <title>"My Tags" View</title>
 
             <para>
@@ -1057,16 +1091,20 @@
         <title>Changing the View</title>
             
             <para>
-                <inlinemediaobject>
-                    <imageobject><imagedata fileref="editorzoombuttons.png" format="PNG"/></imageobject>
-                    <textobject> <phrase>The Image Editor Zoom buttons</phrase> </textobject>
-                </inlinemediaobject>
             </para>
 
             <para>
-            You can zoom in and out of a photograph using the buttons on the Tool Bar or the entries 
-            in the View menu. 
-            To make a photograph fit into the window use the Zoom Autofit button on the Tool Bar.
+            You can zoom in and out of a photograph using the 
+             <inlinemediaobject>
+                <imageobject><imagedata fileref="editorzoombuttons.png" format="PNG"/></imageobject>
+                <textobject> <phrase>The Image Editor Zoom buttons</phrase> </textobject>
+             </inlinemediaobject> buttons on the Tool Bar or the entries in the View menu. 
+            To make a photograph fit into the window use the Zoom Autofit 
+             <inlinemediaobject>
+                <imageobject><imagedata fileref="editorautosizebutton.png" format="PNG"/></imageobject>
+                <textobject> <phrase>The Image Editor AutoFit button</phrase> </textobject>
+             </inlinemediaobject>
+            button on the Tool Bar.
             </para>
 
             <para>
@@ -1177,16 +1215,13 @@
             </para>
             
             <para>
+            Once you are happy with the crop, click on the 
                 <inlinemediaobject>
                     <imageobject><imagedata fileref="editorcropbutton.png" format="PNG"/></imageobject>
                     <textobject> <phrase>The Image Editor Crop Button</phrase> </textobject>
                 </inlinemediaobject>
-            </para>
-
-            <para>
-            Once you are happy with the crop, click on the button on the Tool Bar and the 
-            photograph will be cropped. Use the File->Save or File->Save As entries in the File 
-            menu to safe the newly cropped photograph.
+            button on the Tool Bar and the photograph will be cropped. Use the File->Save or File->Save 
+            As entries in the File menu to safe the newly cropped photograph.
             </para>
 
             <anchor id="resizetool.anchor"/>
@@ -1476,11 +1511,13 @@
             </para>            
             
             <para>
-            The Tag Settings are explained in the My Tags section. 
+            The Tag Settings are explained in the <link linkend="using-kapp-mytagsview">My Tags</link> 
+            section. 
             </para> 
 
             <para>
-            The Extra Information in Thumbnail View options are described in the Images section. 
+            The Extra Information in Thumbnail View options are described in the 
+            <link linkend="using-kapp-imageview">Images</link> section. 
             </para> 
             
             <para>
