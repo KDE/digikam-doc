@@ -730,92 +730,105 @@
             <sect3 id="using-kapp-imagemetadata">
             <title>Photograph Meta-Data and Properties</title>
 
-                <anchor id="tagscommentsedit.anchor"/>
+                <sect4 id="using-kapp-tagscommentsedit">
+                <title>Editing Tags and Comments</title>
+            
+                    <anchor id="tagscommentsedit.anchor"/>
                          
-                <para>
-                &digikam; maintains quite a lot of meta-data about your photographs. Meta-data is any 
-                information about a photograph that is not part of the image itself, for example, the 
-                date the photograph was taken is meta-data about the photograph. 
-                </para>
+                    <para>
+                    &digikam; maintains quite a lot of meta-data about your photographs. Meta-data is any 
+                    information about a photograph that is not part of the image itself, for example, the 
+                    date the photograph was taken is meta-data about the photograph. 
+                    </para>
 
-                <para>
-                Some meta-data is attached to photographs by the camera that took the picture. This 
-                camera meta-data is stored inside the image file and is called Exif data. To view this 
-                information right-click on a thumbnail and select <guilabel>View Exif Information</guilabel> 
-                from the context menu.
-                </para>
+                    <para>
+                    Some meta-data is attached to photographs by the camera that took the picture. This 
+                    camera meta-data is stored inside the image file and is called Exif data. To view this 
+                    information right-click on a thumbnail and select <guilabel>View Exif Information</guilabel> 
+                    from the context menu.
+                    </para>
         
-                <para>
-                Other meta-data is associated with a photograph by &digikam; itself. Comments and Tags are 
-                meta-data that &digikam; manages for your photographs. You can edit the Comments and Tags for 
-                a photograph by right-clicking a thumbnail and selecting <guilabel>Edit Commands and 
-                Tags</guilabel>.
-                </para>
+                    <para>
+                    Other meta-data is associated with a photograph by &digikam; itself. Comments and Tags are 
+                    meta-data that &digikam; manages for your photographs. You can edit the Comments and Tags for 
+                    a photograph by right-clicking a thumbnail and selecting <guilabel>Edit Comments and 
+                    Tags</guilabel>.
+                    </para>
 
-                <figure>
-                    <title>The Item Comments and Tags Dialog</title>
-                    <graphic srccredit="The Item Comments and Tags Dialog" fileref="commentstags.png"/>
-                </figure>
+                    <figure>
+                        <title>The Item Comments and Tags Dialog</title>
+                        <graphic srccredit="The Item Comments and Tags Dialog" fileref="commentstags.png"/>
+                    </figure>
 
-                <para>
-                Editing comments can be a tedious activity. The Comments/Tags dialog makes it easier by 
-                allowing you to move between photographs with out having to select each in turn. To use 
-                this feature, open the Commands/Tags dialog on the first photograph you want to comment 
-                on and then use the <guilabel>Forward</guilabel> and <guilabel>Back</guilabel> buttons 
-                to move between each photograph.  
-                </para>
+                    <para>
+                    Editing comments can be a tedious activity. The Comments/Tags dialog makes it easier by 
+                    allowing you to move between photographs with out having to select each in turn. To use 
+                    this feature, open the Commands/Tags dialog on the first photograph you want to comment 
+                    on and then use the <guilabel>Forward</guilabel> and <guilabel>Back</guilabel> buttons 
+                    to move between each photograph.  
+                    </para>
 
-                <para>
-                There is one more set of meta-data that &digikam; can access about a photograph. This can 
-                be accessed by right-clicking on a photograph and selecting <guilabel>Properties</guilabel> 
-                from the context menu. 
-                </para>
+                </sect4>                    
                 
-                <para>
-                This dialog will tell you information about how large the photograph is and were it is on 
-                the hard disk. This dialog will also give you access to another place to put comments. 
-                This JPEG Exif Comment is not used by &digikam; itself but some other image applications 
-                can access this comment and some digital cameras allow you set a comment while the 
-                photograph is still on the camera. In this case the comments will probably appear here.
-                </para>
+                <sect4 id="using-kapp-propertiesmetadatahistogram">
+                <title>Displaying Properties, Meta-Data, and Histogram</title>
+            
+                    <anchor id="propertiesmetadatahistogram.anchor"/>
                 
-                <figure>
-                    <title>The Image Properties Dialog with Meta-Data Tab</title>
-                    <graphic srccredit="The Image Properties Dialog with Meta-Data Tab" 
-                    fileref="imageproperties3.png"/>
-                </figure>
+                    <para>
+                    There is one more set of meta-data that &digikam; can access about a photograph. This can 
+                    be accessed by right-clicking on a photograph and selecting <guilabel>Properties 
+                    and Meta-Data</guilabel> from the context menu. 
+                    </para>
                 
-                <para>
-                Unless you have a good reason for placing comments in the Exif field of your images it is 
-                probably best to use the main Comments/Tags dialog for adding comments to your photographs. 
-                Unfortunately there is no standard where to place a comment. Some applications use the JPEG 
-                COM section, but this only works for JPEG images. Other applications store comments in the 
-                Exif field, which is limited to JPEG and TIFF images. &digikam; stores comments in its 
-                internal database, so that all image and video formats can be handled the same way.
-                </para>
+                    <para>
+                    This dialog will tell you information about how large the photograph is and were it is on 
+                    the hard disk. This dialog will also give you access to another place to put comments. 
+                    This JPEG Exif Comment is not used by &digikam; itself but some other image applications 
+                    can access this comment and some digital cameras allow you set a comment while the 
+                    photograph is still on the camera. In this case the comments will probably appear here.
+                    </para>
                 
-                <para>
-                This dialog will give you same Exif information provide in Exif Viewer dialog descripted 
-                in this <link linkend="using-kapp-exifviewertool">section</link>.
-                </para>
+                    <figure>
+                        <title>The Image Properties Dialog with Meta-Data Tab</title>
+                        <graphic srccredit="The Image Properties Dialog with Meta-Data Tab" 
+                        fileref="imageproperties3.png"/>
+                    </figure>
                 
-                <figure>
-                    <title>The Image Properties Dialog with Exif Viewer in Action</title>
-                    <graphic srccredit="The Image Properties Dialog with Exif Viewer in Action" 
-                    fileref="imageproperties2.png"/>
-                </figure>
+                    <para>
+                    Unless you have a good reason for placing comments in the Exif field of your images it is 
+                    probably best to use the main Comments/Tags dialog for adding comments to your photographs. 
+                    Unfortunately there is no standard where to place a comment. Some applications use the JPEG 
+                    COM section, but this only works for JPEG images. Other applications store comments in the 
+                    Exif field, which is limited to JPEG and TIFF images. &digikam; stores comments in its 
+                    internal database, so that all image and video formats can be handled the same way.
+                    </para>
                 
-                <para>
-                This dialog will give you too the full image histogram. You can found more informations 
-                about histogram in the <link linkend="using-kapp-histogramviewer">Histogram Viewer</link> 
-                section. 
-                </para>
+                    <para>
+                    This dialog will give you same Exif information provide in Exif Viewer dialog descripted 
+                    in this <link linkend="using-kapp-exifviewertool">section</link>. All data are available 
+                    in the same page. Expanding a main Exif section to see the Exif tags relevant.
+                    </para>
+                    
+                    <figure>
+                        <title>The Image Properties Dialog with Exif Viewer in Action</title>
+                        <graphic srccredit="The Image Properties Dialog with Exif Viewer in Action" 
+                        fileref="imageproperties2.png"/>
+                    </figure>
+                                    
+                    <para>
+                    This dialog will give you too the full image histogram. You can found more informations 
+                    about histogram in the <link linkend="using-kapp-histogramviewer">Histogram Viewer</link> 
+                    section. 
+                    </para>
                 
-                <figure>
-                    <title>The Image Properties Dialog with Histogram Viewer in Action</title>
-                    <graphic srccredit="The Image Properties Dialog with Histogram Viewer in Action" 
-                    fileref="imageproperties.png"/>
-                </figure>
+                    <figure>
+                        <title>The Image Properties Dialog with Histogram Viewer in Action</title>
+                        <graphic srccredit="The Image Properties Dialog with Histogram Viewer in Action" 
+                        fileref="imageproperties.png"/>
+                    </figure>
+                
+                </sect4>                    
                                                                                                             
             </sect3> 
 
