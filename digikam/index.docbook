@@ -16,9 +16,10 @@
 <title>The &digikam; Handbook</title>
 
 <authorgroup>
+
     <author>
-    <firstname>Renchi</firstname><surname>Raju</surname>
-    <affiliation><address><email>renchi_at_pooh.tam.uiuc.edu</email></address></affiliation>
+        <firstname>Renchi</firstname><surname>Raju</surname>
+        <affiliation><address><email>renchi_at_pooh.tam.uiuc.edu</email></address></affiliation>
     </author>
     
     <author>
@@ -405,8 +406,10 @@
                 upload new photographs from your Camera using the Camera Tool. You can create a new empty 
                 Album by clicking the New Album button on the Tool Bar. You can also create a new Album by 
                 importing an existing folder (directory) of photographs from your hard disk, just select 
-                Album->Import->Import Folders... from the Menu Bar and select the folder that you want to 
-                import. A new Album will be created with the same name as the hard disk folder. Additionally
+                <menuchoice><guimenu>Album</guimenu>
+                <guimenuitem>Import Folders...</guimenuitem></menuchoice> 
+                from the Menu Bar and select the folder that you want to import. 
+                A new Album will be created with the same name as the hard disk folder. Additionally
                 you can use drag and drop to import a folder. Drag a directory icon, for example from a 
                 konqueror window. Than drop it on the album list on the left. A menu will appear that gives 
                 you the option to move or copy the folder into &digikam;.
@@ -420,8 +423,10 @@
                 <para>
                 When you delete an Album from &digikam; it will be moved into the KDE Trash Can. If you 
                 don't like this behaviour and would rather that delete really did remove the Album and 
-                all of the photographs in it completely you can change it by selecting Settings->Configure 
-                &digikam; and selecting the Miscellaneous page. At the top of this page are the settings 
+                all of the photographs in it completely you can change it by selecting 
+                <menuchoice><guimenu>Settings</guimenu>
+                <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> 
+                and selecting the Miscellaneous page. At the top of this page are the settings 
                 that control what happens when a photograph is deleted. To delete an Album right-click the 
                 Album in the My Album tree and select Delete Album from HardDisk from the context menu.
                 </para>
@@ -435,18 +440,25 @@
                 Most of the time you will create new Albums and populate them with photographs directly 
                 from your camera using the Camera Tool. However, sometimes you may want to add a photograph 
                 that you already have on your computer to an existing Album. To add a photograph to an Album, 
-                make sure that the Album is selected then either click the Add Images icon in the Tool Bar or 
-                select Album->Import->Add Images from the Menu Bar. Select the photographs that you want to add 
+                make sure that the Album is selected then either click the Add Images icon in the Tool Bar or select 
+                <menuchoice><guimenu>Album</guimenu>
+                <guimenuitem>Import</guimenuitem>
+                <guimenuitem>Add Images</guimenuitem></menuchoice> 
+                from the Menu Bar. Select the photographs that you want to add 
                 from the file dialog and click Open. The photographs will be copied into the Album. 
                 Additionally you can use drag and drop to import photographs. Drag the photographs icon, 
                 for example from a konqueror window. Than drop it on the image list on the right hand side. 
-                If you have a scanner configured you can also scan a photograph straight into an Album.
                 </para>
                 
                 <para>
-                Select Album->Import->Scan Images... You can also take a screenshot and add this directly 
-                to an Album. 
-                Select Album->Import->Screenshot.
+                If you have a scanner configured you can also scan a photograph straight into an Album. Select 
+                <menuchoice><guimenu>Album</guimenu>
+                <guimenuitem>Import</guimenuitem>
+                <guimenuitem>Scan Images</guimenuitem></menuchoice>. 
+                You can also take a screenshot and add this directly to an Album. Select 
+                <menuchoice><guimenu>Album</guimenu>
+                <guimenuitem>Import</guimenuitem>
+                <guimenuitem>Screenshot</guimenuitem></menuchoice>.
                 </para>
         
             </sect3>
@@ -567,8 +579,10 @@
             
                 <para>
                 Information about each photograph is displayed below each thumbnail. You can control what 
-                information is display from the Settings->Configure &digikam; dialog. Select the Albums 
-                page and look for the Extra Information in Thumbnail View section.
+                information is display from the 
+                <menuchoice><guimenu>Settings</guimenu>
+                <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> 
+                dialog. Select the Albums page and look for the Extra Information in Thumbnail View section.
                 </para> 
 
                 <para>
@@ -738,9 +752,11 @@
                 <para>
                 When you delete a photograph from &digikam; it will be moved in the KDE Trash Can. If you 
                 don't like this behaviour and would rather that delete really did remove the photograph 
-                completely you can change it by selecting Settings->Configure &digikam; and selecting the 
-                Miscellaneous page. At the top of this page are the settings that control what happens 
-                when a photograph is deleted.
+                completely you can change it by selecting 
+                <menuchoice><guimenu>Settings</guimenu>
+                <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> 
+                and selecting the Miscellaneous page.
+                At the top of this page are the settings that control what happens when a photograph is deleted.
                 </para>
 
                 <para>
@@ -779,8 +795,10 @@
             By default, when you select a Tag in the tree that contains other sub-Tags, &digikam; 
             will not display photographs that are labelled with the sub-Tags. You can change this behaviour 
             if you would prefer that all photographs marked with a sub-Tag of the current Tag be displayed. 
-            To set this option open Settings->Configure &digikam; from the main Menu Bar, select the Albums 
-            page and then select "Show Items in sub-Tags".
+            To set this option open 
+            <menuchoice><guimenu>Settings</guimenu>
+            <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> 
+            from the main Menu Bar, select the Albums page and then select "Show Items in sub-Tags".
             </para>
 
             <sect3 id="using-kapp-managetags">
@@ -954,8 +972,13 @@
             <para>
             Once you are happy that you have downloaded all of the photographs that you want, you are ready 
             to delete photographs from the Camera. You can delete all of the photographs in one go by 
-            clicking the Delete->Delete All button. If you want to just delete a selection of the 
-            photographs, select those that you want to delete and click Delete->Delete Selected. 
+            clicking the 
+            <menuchoice><guimenu>Delete</guimenu>
+            <guimenuitem>Delete All</guimenuitem></menuchoice> 
+            button. If you want to just delete a selection of the 
+            photographs, select those that you want to delete and click 
+            <menuchoice><guimenu>Delete</guimenu>
+            <guimenuitem>Delete Selected</guimenuitem></menuchoice> 
             </para>
 
             <caution><para>
@@ -1105,14 +1128,18 @@
             
             <para>
             The editing functions of the Image Editor will make changes to your photograph. 
-            None of the editing functions will change the original photograph unless you select File->Save 
+            None of the editing functions will change the original photograph unless you select 
+            <menuchoice><guimenu>File</guimenu>
+            <guimenuitem>Save</guimenuitem></menuchoice> 
             or click the Save button in the Tool Bar. Note that once you have saved the changed version you 
             will not be able to recover the original photograph.
             </para>
         
             <para>
             You might prefer to take a copy of your photograph before you make any changes. You can use 
-            File->Save As to save a working copy.
+            <menuchoice><guimenu>File</guimenu>
+            <guimenuitem>Save As</guimenuitem></menuchoice> 
+            to save a working copy.
             </para>
             
             <para>
