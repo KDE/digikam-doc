@@ -35,6 +35,16 @@
 </author>
 </authorgroup>
 
+<authorgroup>
+<author>
+<firstname>Richard</firstname>
+<surname>Taylor</surname>
+<affiliation>
+<address><email>rjt-digicam at thegrindstone dot me dot uk</email></address>
+</affiliation>
+</author>
+</authorgroup>
+
 <!-- TRANS:ROLES_OF_TRANSLATORS -->
 
 <copyright>
@@ -47,8 +57,8 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>xx/xx/2004</date>
-<releaseinfo>0.6.2</releaseinfo>
+<date>xx/11/2004</date>
+<releaseinfo>0.7.0</releaseinfo>
 
 <abstract>
 <para>
@@ -67,132 +77,160 @@ Digital Cameras.
 
 </bookinfo>
 
+<!-- *********************************************************************** -->
+
 <chapter id="introduction">
 <title>Introduction</title>
 
-<para>
-&digikam; is a simple digital photo management application, which makes
-importing and organizing digital photos a "snap". The photos can be
-organized in "albums" which are automatically sorted chronologically.
-An easy to use interface is provided to connect to your camera and
-preview images and download and/or delete them.
-</para>
+    <para>
+    &digikam; is an advanced digital photo management application, which makes
+    importing and organizing digital photos a "snap". The photos can be
+    organized in "albums" and "sub-albums" which are automatically sorted chronologically.
+    An easy to use interface is provided to connect to your camera and download and/or delete 
+    them. &digikam; provide too an image editor who can be used for display and improve your 
+    images.
+    </para>
 
-<para>
-Please email bug reports, questions, comments and
-suggestions to <email>digikam-users@lists.sourceforge.net</email>.
-You find the &digikam; home page at
-<ulink url="http://digikam.sourceforge.net">http://digikam.sourceforge.net</ulink>.
-</para>
+    <para>
+    Please email questions and comments to <email>digikam-users@lists.sourceforge.net</email>.
+    You find the &digikam; home page at
+    <ulink url="http://digikam.sourceforge.net">http://digikam.sourceforge.net</ulink>.
+    </para>
+
 </chapter>
+
+<!-- *********************************************************************** -->
 
 <chapter id="using-kapp">
 <title>Using &digikam;</title>
 
-<sect1 id="using-kapp-mainwindow">
-<title>The main &digikam; window</title>
+    <sect1 id="using-kapp-mainwindow">
+    <title>The main &digikam; window</title>
 
-<para> &digikam; is a fairly easy to use application. When you load up
-&digikam; for the first time (or upgrade from 0.5), you will get a popup window
-that tells you that the way that &digikam; stores photos has changed. &digikam;
-uses now a folder on your filesystem as an album library, meaning that every subfolder
-of this folder will be considered as a photo album and displayed in the album
-list on the left side of the main window. Simply set a path to the album library
-using this popup window. Doing this, the &digikam; main window will be loaded
-with the album list on the left and the content of the selected album on the right
-side. You could see some albums in album list if you have chosen an album library
-with subfolders. If you have already folders where you keep your photos, you can copy
-them into the album library and they will be displayed as albums in &digikam;.
-As soon as you add an album, it will be sorted chronologically based on the
-month/year it was last modified. Lot of times these dates don't match with the
-month/year when the pictures were actually taken. You can right click on an
-album and it will give you an option to change the album date. The right click
-menu will also provide you more options to change the title of the album, add
-comments or remove it from the index or delete it entirely.
-</para>
+        <sect2>
+        <title>Introduction to the Main Window</title>
 
-<para>
-Clicking on an album will start generating the thumbnails for the images in the
-album or if the thumbnails have already been generated, will load them from
-cache. You can change the iconsize to small, medium, large or huge from the
-magnify buttons in the toolbar (Also you can set the default iconsize you want
-when &digikam; starts up. More on this in the setupwindow). Right
-Clicking on an item will give you a popup menu, using which you can view,
-rename, delete, see the exif information, and add/edit comments of the images.
-When you add comments to an image, they are shown below the filename in the
-thumbnailview. Double clicking on an item will open it up in the imageeditor.
-</para>
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="mainwindow.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The main window</phrase></textobject>
+                </mediaobject>
+            </screenshot>
 
-<screenshot>
-<mediaobject>
-<imageobject>
-<imagedata fileref="mainwindow.png" format="PNG"/>
-</imageobject>
-<textobject>
-<phrase>The main window</phrase>
-</textobject>
-</mediaobject>
-</screenshot>
+            <para>
+            </para>
 
-</sect1>
+        </sect2>
+        
+        <sect2>
+        <title>"My Albums" View</title>
 
-<sect1 id="using-kapp-camera">
-<title>Using a Digital Camera with &digikam;</title>
+            <para>
+            </para>
+        
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="albumproperties.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Album Properties Dialog</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+            
+            <para>
+            </para>
+        
+        </sect2>
+        
+        <sect2>
+        <title>Images View</title>
 
-<para>
-To be able to use your digital camera with &digikam;, connect the camera
-to your computer, switch the camera to the image display mode and
-turn it on. Now you need to setup the camera model and port using the
-setup interface. Try and see if &digikam; can auto-detect the camera; if
-not, you can set the camera model and port manually. Once you have the
-camera setup, goto the "Cameras" menu in the main interface and you
-will see the camera listed in the menu (Note: You can choose any title
-you like for the camera in the setup and this title will be used in
-the "Cameras" menu). If you have more than one cameras, you can add
-them through the setup interface. Clicking on the camera item in the menu will
-popup a new Camera Interface and this will connect to the camera, and
-thumbnails (if supported by the camera)  will be  downloaded and
-displayed. You can then select the images and download or delete them
-from the camera. Downloading can be done by using the menu/toolbar
-buttons or by dragging and dropping them onto an album folder.
-</para>
+            <para>
+            </para>
+        
+        </sect2>
 
-<para> Digital cameras nowadays store images on either a CompactFlash
-card or SmartMedia card. The camera internally makes subfolders in
-these storage media which it uses to save  the images. &digikam;
-displays these internal folder tree and also provides a global
-virtual folder which shows all the images available in the
-camera. When you open the camera interface for the first time the
-folders are hidden and the contents of the global virtual folder are
-shown (i.e. all the pictures in the camera). You can choose to see the
-actual folders on the camera by unselecting "Hide Folders" in the
-"View" menu. This will show the folders on the camera, the topmost
-folder being the global virtual folder. Clicking on a folder will show
-the contents of the folder in the thumbnailview.
-</para>
+        <sect2>
+        <title>"My Tags" View</title>
 
-<screenshot>
-<mediaobject>
-<imageobject>
-<imagedata fileref="cameraclient.png" format="PNG"/>
-</imageobject>
-<textobject>
-<phrase>The camera client window</phrase>
-</textobject>
-</mediaobject>
-</screenshot>
+            <para>
+            </para>
 
-</sect1>
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="commentstags.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Item Comments and Tags Dialog</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+
+            <para>
+            </para>
+
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="assigntags.png" format="PNG"/></imageobject>
+                    <textobject><phrase>Tagging Image with Main Pop-up Menu</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+            
+            <para>
+            </para>
+                                
+        </sect2>
+                
+    </sect1>
+
+    <sect1 id="using-kapp-camera">
+    <title>Using a Digital Camera with &digikam;</title>
+
+        <para>
+        To be able to use your digital camera with &digikam;, connect the camera
+        to your computer, switch the camera to the image display mode and
+        turn it on. Now you need to setup the camera model and port using the
+        setup interface. Try and see if &digikam; can auto-detect the camera; if
+        not, you can set the camera model and port manually. Once you have the
+        camera setup, goto the "Cameras" menu in the main interface and you
+        will see the camera listed in the menu (Note: You can choose any title
+        you like for the camera in the setup and this title will be used in
+        the "Cameras" menu). If you have more than one cameras, you can add
+        them through the setup interface. Clicking on the camera item in the menu will
+        popup a new Camera Interface and this will connect to the camera, and
+        thumbnails (if supported by the camera)  will be  downloaded and
+        displayed. You can then select the images and download or delete them
+        from the camera. Downloading can be done by using the menu/toolbar
+        buttons or by dragging and dropping them onto an album folder.
+        </para>
+
+        <para> Digital cameras nowadays store images on either a CompactFlash
+        card or SmartMedia card. The camera internally makes subfolders in
+        these storage media which it uses to save  the images. &digikam;
+        displays these internal folder tree and also provides a global
+        virtual folder which shows all the images available in the
+        camera. When you open the camera interface for the first time the
+        folders are hidden and the contents of the global virtual folder are
+        shown (i.e. all the pictures in the camera). You can choose to see the
+        actual folders on the camera by unselecting "Hide Folders" in the
+        "View" menu. This will show the folders on the camera, the topmost
+        folder being the global virtual folder. Clicking on a folder will show
+        the contents of the folder in the thumbnailview.
+        </para>
+
+        <screenshot>
+            <mediaobject>
+                <imageobject><imagedata fileref="cameraclient.png" format="PNG"/></imageobject>
+                <textobject><phrase>The camera client window</phrase></textobject>
+            </mediaobject>
+        </screenshot>
+
+    </sect1>
 
 </chapter>
+
+<!-- *********************************************************************** -->
 
 <chapter id="interface">
 <title>Menu Descriptions</title>
 
 <sect1>
 <title>The main &digikam; window</title>
-
-<!-- *********************************************************************** -->
 
 <sect2>
 <title>The Album Menu</title>
