@@ -18,15 +18,15 @@
 <authorgroup>
 
     <author>
-        <firstname>Renchi</firstname><surname>Raju</surname>
-        <affiliation><address><email>renchi_at_pooh.tam.uiuc.edu</email></address></affiliation>
-    </author>
-    
-    <author>
         <firstname>Gilles</firstname><surname>Caulier</surname>
         <affiliation><address><email>caulier_dot_gilles_at_free.fr</email></address></affiliation>
     </author>
 
+    <author>
+        <firstname>Renchi</firstname><surname>Raju</surname>
+        <affiliation><address><email>renchi_at_pooh.tam.uiuc.edu</email></address></affiliation>
+    </author>
+    
     <author>
         <firstname>Richard</firstname><surname>Taylor</surname>
         <affiliation><address><email>rjt-digicam_at_thegrindstone_dot_me_dot_uk</email></address></affiliation>
@@ -67,8 +67,8 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2005-02-26</date>
-<releaseinfo>0.7.2</releaseinfo>
+<date>2005-xx-xx</date>
+<releaseinfo>0.7.3</releaseinfo>
 
 <abstract>
     
@@ -1759,8 +1759,10 @@
         <sect2>
         <title>Special Effects and Filters</title>
             
+            <anchor id="blackandwhitetool.anchor"/>
+
             <para>
-            By default &digikam; provides a couple of simple toning filters that you can use on your photographs. Under the Filters menu you will find classic Black and White chemical toning used in analog photography. Color toning changes the monochromatic tint of a basically black and white photograph. When applied it gives the picture a warm, antique feeling. Colors toning types available in &digikam; are listed below:
+            By default &digikam; provides a couple of simple toning filters that you can use on your photographs. Under the Filters menu you will find classic Black and White chemical toning used in analog photography. Color toning changes the monochromatic tint of a basically black and white photograph. When applied it gives the picture a warm, antique feeling. Some examples of colors toning types available in &digikam; are listed below:
             </para>
 
             <informaltable><tgroup cols="2">
@@ -1777,7 +1779,7 @@
                     </entry>
                 
                     <entry>
-                    Neutral Black and White conversion
+                    Neutral Black and White: simulate black and white neutral film exposure.
                     </entry>
                 </row>
 
@@ -1787,7 +1789,7 @@
                     </entry>
                     
                     <entry>
-                    Sepia conversion (typical for your grandmothers photographs)
+                    Sepia Tone: gives a warm highlight and mid-tone while adding a bit of coolness to the shadows-very similar to the process of bleaching a print and re-developing in a sepia toner (typical for your grandmothers photographs).
                     </entry>
                 </row>
                                 
@@ -1797,7 +1799,7 @@
                     </entry>
                     
                     <entry>
-                    Brown conversion (more neutral than Sepia)
+                    Brown Tone: more neutral than Sepia Tone filter.
                     </entry>
                 </row>
             
@@ -1807,7 +1809,7 @@
                     </entry>
                     
                     <entry>
-                    Cold Tone conversion
+                    Cold Tone: start subtle and replicate printing on a cold tone black and white paper such as a bromide enlarging paper.
                     </entry>
                 </row>
             
@@ -1817,7 +1819,7 @@
                     </entry>
                     
                     <entry>
-                    Platinum conversion (ultra cool)
+                    Platinum Tone: effect that replicate traditional platinum chemical toning done in the darkroom.
                     </entry>
                 </row>
             
@@ -1827,7 +1829,7 @@
                     </entry>
                     
                     <entry>
-                    Selenium conversion
+                    Selenium Tone: effect that replicate traditional selenium chemical toning done in the darkroom.
                     </entry>
                 </row>
             
@@ -2227,6 +2229,22 @@
             </listitem>
         </varlistentry>
 
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Export to Remote Gallery</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to export current Album to remote Gallery server.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/galleryexport.html">Gallery Export manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Print 
@@ -2984,6 +3002,22 @@
 
         <varlistentry>
             <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Insert Text</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to insert text in the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/inserttext.html">Insert Text manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>      
+        
+        <varlistentry>
+            <term><menuchoice>
                 <guimenu>Image</guimenu><guimenuitem>Template Superimpose</guimenuitem>
             </menuchoice></term>
             <listitem>
@@ -3010,23 +3044,6 @@
 
     <para>
     <variablelist>
-
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Levels 
-                Adjust</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to adjust levels manually on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/adjustlevels.html">Adjust Levels manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
@@ -3096,6 +3113,23 @@
 
         <varlistentry>
             <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Levels 
+                Adjust</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to adjust levels manually on the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/adjustlevels.html">Adjust Levels manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
                 <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Curves 
                 Adjust</guimenuitem>
             </menuchoice></term>
@@ -3110,7 +3144,23 @@
                 </para>     
             </listitem>
         </varlistentry>
-                            
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Channel Mixer</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to mix color channels on the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/channelmixer.html">Channel Mixer manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+                    
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Fix</guimenu><guimenuitem>Blur</guimenuitem>
@@ -3385,44 +3435,9 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Filters</guimenu><guimenuitem>Convert to</guimenuitem><guimenuitem>Neutral Black-White</guimenuitem>
+                <guimenu>Filters</guimenu><guimenuitem>Black and White</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Convert the current image to Black and White mode.</action></para></listitem>
-        </varlistentry>
-
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Filters</guimenu><guimenuitem>Convert to</guimenuitem><guimenuitem>Brown</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>Convert the current image to Brown mode.</action></para></listitem>
-        </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Filters</guimenu><guimenuitem>Convert to</guimenuitem><guimenuitem>Sepia</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>Convert the current image to Sepia mode.</action></para></listitem>
-        </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Filters</guimenu><guimenuitem>Convert to</guimenuitem><guimenuitem>Cold Tone</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>Convert the current image to Cold Tone mode.</action></para></listitem>
-        </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Filters</guimenu><guimenuitem>Convert to</guimenuitem><guimenuitem>Platinum</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>Convert the current image to Platinum mode.</action></para></listitem>
-        </varlistentry>
-
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Filters</guimenu><guimenuitem>Convert to</guimenuitem><guimenuitem>Selenium</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>Convert the current image to Selenium mode.</action></para></listitem>
+            <listitem><para><action>Apply Black and White filter to the current image.</action></para></listitem>
         </varlistentry>
                 
         <varlistentry>
@@ -3436,6 +3451,22 @@
                 <para>
                     See the dedicated 
                     <ulink url="help:/digikamimageplugins/raindrops.html">Rain Drops manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>       
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Infrared Film</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to simulate infrared film on the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/infrared.html">Rain Drops manual</ulink> 
                     for more information.
                 </para>     
             </listitem>       
@@ -3491,6 +3522,22 @@
                 
         <varlistentry>
             <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Distortion Effects</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to apply distortion special effects on the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/distortionfx.html">Distortion Effects manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
                 <guimenu>Filters</guimenu><guimenuitem>Add Film Grain</guimenuitem>
             </menuchoice></term>
             <listitem>
@@ -3504,7 +3551,23 @@
                 </para>     
             </listitem>
         </varlistentry>
-                                    
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Blur Effects</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to apply blurring special effects on the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/blurfx.html">Blur Effects manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+                                            
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Filters</guimenu><guimenuitem>Charcoal Drawing</guimenuitem>
@@ -3620,8 +3683,8 @@ Documentation copyrighted by:
             <para>
             2002-2003 
             <itemizedlist>
-                <listitem><para>Renchi Raju <email>renchi_at_pooh.tam.uiuc.edu</email></para></listitem>
                 <listitem><para>Gilles Caulier <email>caulier_dot_gilles_at_free.fr</email></para></listitem>
+                <listitem><para>Renchi Raju <email>renchi_at_pooh.tam.uiuc.edu</email></para></listitem>
             </itemizedlist>
             </para>
         </listitem>
@@ -3630,8 +3693,8 @@ Documentation copyrighted by:
             <para>
             2003-2005 
             <itemizedlist>
-                <listitem><para>Renchi Raju <email>renchi_at_pooh.tam.uiuc.edu</email></para></listitem>
                 <listitem><para>Gilles Caulier <email>caulier_dot_gilles_at_free.fr</email></para></listitem>
+                <listitem><para>Renchi Raju <email>renchi_at_pooh.tam.uiuc.edu</email></para></listitem>
                 <listitem><para>Richard Taylor 
                 <email>rjt-digicam_at_thegrindstone_dot_me_dot_uk</email></para></listitem>
                 <listitem><para>Ralf Hoelzer <email>kde_at_ralfhoelzer.com</email></para></listitem>
