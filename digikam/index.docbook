@@ -1163,6 +1163,14 @@
             and their different amplitudes within the image. If your photograph has a colour cast you might 
             be able to see what is wrong by looking at the histogram.
             </para>
+            
+            <para>
+            The Histogram Viewer shows you information about the statistical distribution of color values 
+            in the current image. The Histogram Viewer is purely informational: nothing you do with it will 
+            cause any change to the image. If you want to perform a histogram-based color correction, use 
+            the Adjust Levels Image Editor plugin. This plugin come from 
+            <ulink url="http://extragear.kde.org/apps/digikamimageplugins.php">DigikamImagePlugins project</ulink>.
+            </para>
                                             
             <screenshot>
                 <mediaobject>
@@ -1173,10 +1181,73 @@
             </screenshot>
             
             <para>
-            An advanced plugin for the Image Editor enables you to alter the levels of different colours 
-            in your Image see the Correcting Colour section. This plugin come from <ulink 
-            url="http://extragear.kde.org/apps/digikamimageplugins.php">DigikamImagePlugins project</ulink>.
+            In Image Editor, an image can be decomposed into Red, Green, Blue, Alpha color channels. The alpha channel 
+            is a Layer for the image that support transparency (like PNG or GIF images). Each channel supports a range 
+            of intensity levels from 0 to 255 (integer valued). Thus, a black pixel is encoded by 0 on all color channels;
+            a white pixel by 255 on all color channels. A transparent pixel is encoded by 0 on the alpha channel; an 
+            opaque pixel by 255.
             </para>
+            
+            <para>
+            The Histogram Viewer allows you to select which channel to use:
+            
+            <itemizedlist>
+            
+                <listitem><para>
+                    <emphasis>Intensity</emphasis>: this shows the distribution of brightness values.
+                </para></listitem>
+
+                <listitem><para>
+                    <emphasis>Red, Green, Blue</emphasis>:  they show the distribution of intensity levels 
+                    for the Red, Green, or Blue channels respectively.
+                </para></listitem>
+                
+                <listitem><para>
+                    <emphasis>Alpha</emphasis>: This shows the distribution of opacity levels. If the layer is 
+                    completely opaque or completely transparent, the histogram will consist of a single bar on 
+                    the left or right edge.
+                </para></listitem>
+
+                <listitem><para>
+                    <emphasis>Colors</emphasis>: shows the Red, Green, and Blue histograms superimposed, so 
+                    that you can see all of the color distribution information in a single view. 
+                </para></listitem>
+                            
+            </itemizedlist>
+            
+            </para>
+            
+            <para> 
+            The histogram Viewer allows you to determine whether the histogram will be displayed using a 
+            linear or logarithmic Y axis. For images taken from photographs, the linear mode is most commonly 
+            useful. For images that contain substantial areas of constant color, though, a linear histogram 
+            will often be dominated by a single bar, and a logarthmic histogram will often be more useful. 
+            </para>
+
+            <para> 
+            You can restrict the analysis, for the statistics shown at the bottom of the dialog, to a 
+            limited range of values if you wish. You can set the range in one of two ways: 
+            
+            <itemizedlist>
+            
+                <listitem><para>
+                    Click and drag the pointer across the histogram display area, from the lowest level to the 
+                    highest level of the range you want.
+                </para></listitem>
+
+                <listitem><para>
+                    Use the spin button entries below the slider (left entry: bottom of range; right entry: top of range).  
+                </para></listitem>
+            
+            </itemizedlist>
+                            
+            </para> 
+            
+            <para> 
+            At the bottom of the Histogram Viewer are shown some basic statistics describing the distribution 
+            of channel values, restricted to the selected range. These are the mean, standard deviation, 
+            and median of the selected histogram portion; the number of pixels in the image; the number whose 
+            values fall within the selected range; and the percentage whose values fall within the selected range.
         
         </sect2>
 
