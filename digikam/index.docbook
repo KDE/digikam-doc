@@ -575,49 +575,46 @@ Digital Cameras.
     <sect1 id="using-kapp-camera">
     <title>Using a Digital Camera with &digikam;</title>
 
-        <para>
-        FIXME
-        </para>
-    
-        <para>
-        To be able to use your digital camera with &digikam;, connect the camera
-        to your computer, switch the camera to the image display mode and
-        turn it on. Now you need to setup the camera model and port using the
-        setup interface. Try and see if &digikam; can auto-detect the camera; if
-        not, you can set the camera model and port manually. Once you have the
-        camera setup, goto the "Cameras" menu in the main interface and you
-        will see the camera listed in the menu (Note: You can choose any title
-        you like for the camera in the setup and this title will be used in
-        the "Cameras" menu). If you have more than one cameras, you can add
-        them through the setup interface. Clicking on the camera item in the menu will
-        popup a new Camera Interface and this will connect to the camera, and
-        thumbnails (if supported by the camera)  will be  downloaded and
-        displayed. You can then select the images and download or delete them
-        from the camera. Downloading can be done by using the menu/toolbar
-        buttons or by dragging and dropping them onto an album folder.
-        </para>
+        <sect2>
+        <title>Introduction to Camera Interface</title>
+   
+            <para>
+            To be able to use your digital camera with &digikam;, connect the camera
+            to your computer, switch the camera to the image display mode and turn it on. 
+            </para>
+        
+            <para>
+            Before to try to use a digital camera with &digikam; you need to setup the 
+            camera model and port using the setup interface. Please, read the Setup camera 
+            section for more informations.
+            </para>
+        
+            <para>
+            You can access to the &digikam; Camera Interface by the main window "Camera" 
+            menu entry. Clicking on a camera item in this menu will popup a new Camera Interface 
+            and this will connect to the camera, and thumbnails (if supported by the camera) 
+            will be downloaded and displayed. You can then select the images and download 
+            or delete them from the camera. Downloading can be done by using the "Download" 
+            button or by dragging and dropping them onto an album folder.
+            </para>
 
-        <para> Digital cameras nowadays store images on either a CompactFlash
-        card or SmartMedia card. The camera internally makes subfolders in
-        these storage media which it uses to save  the images. &digikam;
-        displays these internal folder tree and also provides a global
-        virtual folder which shows all the images available in the
-        camera. When you open the camera interface for the first time the
-        folders are hidden and the contents of the global virtual folder are
-        shown (i.e. all the pictures in the camera). You can choose to see the
-        actual folders on the camera by unselecting "Hide Folders" in the
-        "View" menu. This will show the folders on the camera, the topmost
-        folder being the global virtual folder. Clicking on a folder will show
-        the contents of the folder in the thumbnailview.
-        </para>
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="cameraclient.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The camera client window</phrase></textobject>
+                </mediaobject>
+            </screenshot>
 
-        <screenshot>
-            <mediaobject>
-                <imageobject><imagedata fileref="cameraclient.png" format="PNG"/></imageobject>
-                <textobject><phrase>The camera client window</phrase></textobject>
-            </mediaobject>
-        </screenshot>
+        </sect2>
 
+        <sect2>
+        <title>TODO</title>
+            
+            <para>
+            </para>
+        
+        </sect2>
+                            
     </sect1>
     
     <sect1 id="using-kapp-imageeditor">
@@ -629,18 +626,18 @@ Digital Cameras.
 
             <para>
 
+            &digikam; incorporates a fast image editor with a few basic image
+            editing tools. The image editor has a Tool Bar at the top and a status 
+            at the bottom which shows the filename, the current filenumber, 
+            the current zoomlevel, and the current image size.
+            </para>
+
             <screenshot>
                 <mediaobject>
                     <imageobject><imagedata fileref="imageeditor.png" format="PNG"/></imageobject>
                     <textobject><phrase>The image editor window</phrase></textobject>
                 </mediaobject>
             </screenshot>
-
-            &digikam; incorporates a fast image editor with a few basic image
-            editing tools. The image editor has a Tool Bar at the top and a status 
-            at the bottom which shows the filename, the current filenumber, 
-            the current zoomlevel, and the current image size.
-            </para>
 
             <para>
             Below, you can see the Tool Bar description:
@@ -697,10 +694,11 @@ Digital Cameras.
     <title>&digikam; Configuration</title>
 
         <para>
-        &digikam; tries to give you as much control over the way that it works as possible. There are many options that 
-        change the behaviour of Digikam. To access these settings select Setting-> Configure &digikam; from the Menu Bar. 
-        The configuration dialog is separated into eight pages. You can change between these pages by clicking on the 
-        icons on the left-hand side of the dialog.
+        &digikam; tries to give you as much control over the way that it works as possible. There are 
+        many options that change the behaviour of Digikam. To access these settings select 
+        Setting-> Configure &digikam; from the Menu Bar. The configuration dialog is separated into 
+        eight pages. You can change between these pages by clicking on the icons on the left-hand side 
+        of the dialog.
         </para>
 
         <sect2>
@@ -718,11 +716,12 @@ Digital Cameras.
             </screenshot>
                                 
             <para>
-            The Album Library Path is the location in your hard disk where &digikam; will store all of the Albums. 
-            If you change this location, without manually moving all of the Albums on the hard disk, &digikam; will 
-            think that there are no existing Albums and will generate a new database at the new location. Your old 
-            Albums will not be altered but you will need to change the Album Library Path back to the old location 
-            to access them. If you are not sure of what you are doing it is best not to change this location.
+            The Album Library Path is the location in your hard disk where &digikam; will store all 
+            of the Albums. If you change this location, without manually moving all of the Albums on 
+            the hard disk, &digikam; will think that there are no existing Albums and will generate a 
+            new database at the new location. Your old Albums will not be altered but you will need to 
+            change the Album Library Path back to the old location to access them. If you are not sure 
+            of what you are doing it is best not to change this location.
             </para>            
             
             <para>
@@ -776,7 +775,11 @@ Digital Cameras.
             </para> 
             
             <para>
-            Set Exif Orientation Tag to Normal after rotate/flip : FIXME 
+            Set Exif Orientation Tag to Normal after rotate/flip : the Auto Rotate option automatically 
+            corrects the orientation of images taken with digital cameras. The camera adds an orientation 
+            tag to the image's metadata. &digikam; reads that tag and adjusts the image accordingly. This 
+            option set to "Normal" this Exif orientation tag after an adjustment. "Normal" orientation must 
+            be correct for human.
             </para> 
                         
         </sect2>
@@ -821,9 +824,9 @@ Digital Cameras.
         <title>Image Editor Settings</title>
 
             <para>
-            In the early versions of &digikam; the The Image Viewer/Editor was just a viewer for photographs but 
-            it is rapidly developing into a very useful photo manipulation tool. This dialog allows you to control 
-            how the Image Viewer/Editor will behave.
+            In the early versions of &digikam; the The Image Viewer/Editor was just a viewer for photographs 
+            but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you 
+            to control how the Image Editor will behave.
             </para>
 
             <screenshot>
@@ -834,25 +837,27 @@ Digital Cameras.
             </screenshot>
             
             <para>
-            When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. 
-            Each time a JPEG file is encoded a decision must be made on the level of compression that is to be applied. 
-            Unfortunately the level of compressions applied is not recorded in the image file. This means that the Image 
-            Viewer/Editor cannot use the same compression ratio when saving an altered image as was used for the original 
-            image. You can change the default level of compression that the Image Viewer/Editor will apply when it saves 
-            altered images by moving the JPEG compression slider.
+            When changes are made to JPEG files and they are saved back to the hard disk the JPEG file 
+            must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of 
+            compression that is to be applied. Unfortunately the level of compressions applied is not 
+            recorded in the image file. This means that the Image Editor cannot use the same compression 
+            ratio when saving an altered image as was used for the original image. You can change the 
+            default level of compression that the Image Viewer/Editor will apply when it saves altered 
+            images by moving the JPEG compression slider.
             </para>
             
             <para>
-            By default the Image Viewer/Editor will use a black background behind photographs when they are displayed. 
-            If you prefer a different background colour you can select one here. You can also turn off the Tool Bar 
-            when the Image Viewer/Editor is in full screen mode.
+            By default the Image Viewer/Editor will use a black background behind photographs when they 
+            are displayed. If you prefer a different background colour you can select one here. You can 
+            also turn off the Tool Bar when the Image Editor is in full screen mode.
             </para>
             
             <para>
-            The Image Viewer/Editor only implements some very simple photo manipulation tools in the core application. 
-            To enable more elaborate manipulation tools to be developed the Image Viewer/Editor supports a plugin 
-            interface. If you distribution as installed the additional Image Viewer/Editor plugins they will be listed 
-            in the Image Plugins list. You can enable or disable these plugins as you see fit.
+            The Image Editor only implements some very simple photo manipulation tools in the core 
+            application. To enable more elaborate manipulation tools to be developed the Image Editor 
+            supports a plugin interface. If you distribution as installed the additional Image Editor 
+            plugins they will be listed in the Image Plugins list. You can enable or disable these 
+            plugins as you see fit.
             </para>
             
         </sect2> 
@@ -861,9 +866,9 @@ Digital Cameras.
         <title>Kipi Plugins Settings</title>
 
             <para>
-            KIPI is the KDE Image Plugin Interface. It is an interface that is supported by a number of KDE image 
-            viewer/editor applications. By providing this interface Digikam can take advantage of many plugins 
-            that are written to work with any application that has the KIPI interface.
+            KIPI is the KDE Image Plugin Interface. It is an interface that is supported by a number of 
+            KDE image viewer/editor applications. By providing this interface Digikam can take advantage 
+            of many plugins that are written to work with any application that has the KIPI interface.
             </para>
 
             <screenshot>
@@ -874,27 +879,28 @@ Digital Cameras.
             </screenshot>
             
             <para>
-            If your distribution has the KIPI plugins package installed you will see a list of available plugins. 
-            Select those that you want to use and they will be loaded into Digikam. The plugins will appear as new 
-            menu entries in the main Menu Bar and in the context menu for thumbnails.
+            If your distribution has the KIPI plugins package installed you will see a list of available 
+            plugins. Select those that you want to use and they will be loaded into Digikam. The plugins 
+            will appear as new menu entries in the main Menu Bar and in the context menu for thumbnails.
             </para>
             
             <para>
-            Keyboard shortcuts to actions that plugins perform can be set up in the Settings -> Configure Shortcuts menu.
+            Keyboard shortcuts to actions that plugins perform can be set up in the 
+            Settings -> Configure Shortcuts menu.
             </para>
             
         </sect2>                
 
         <sect2>
         <title>Camera Settings</title>
-
+        
             <para>
             The camera settings shows on the left the list of
             currently support cameras. On the right at the top there is an auto-detect
             button which tries to identify the camera connected to your computer (make
             sure that the camera is connected properly to the computer and turned on in
             the image display mode). Below this are the port settings; the currently
-            supported being Serial, USB, and USB MassStorage.
+            supported being Serial, USB, USB MassStorage, and FireWire.
             </para>
             
             <screenshot>
@@ -921,7 +927,21 @@ Digital Cameras.
                     <textobject><phrase>The add camera dialogbox</phrase></textobject>
                 </mediaobject>
             </screenshot>
-            
+
+            <para>
+            To be able to use your digital camera with &digikam;, connect the camera
+            to your computer, switch the camera to the image display mode and turn it on. 
+            </para>
+        
+            <para>
+            Try and see if &digikam; can auto-detect the camera; if not, you can set the 
+            camera model and port manually. Once you have the camera setup, goto the "Cameras" 
+            menu in the main interface and you will see the camera listed in the menu 
+            (Note: you can choose any title you like for the camera in the setup and this 
+            title will be used in the main window "Cameras" menu). If you have more than one 
+            cameras, you can add them through this setup interface. 
+            </para>
+                        
         </sect2>
         
         <sect2>
