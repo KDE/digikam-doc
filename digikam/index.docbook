@@ -1175,155 +1175,193 @@
         <sect2>
         <title>Image Properties</title>
             
-            <anchor id="commentsedittool.anchor"/>
-
-            <para>
-            You can view some of the properties of your photograph by selecting the options in the Image menu. 
-            You can edit the comments set for this photograph using Image->Edit Image Comments, the new comments 
-            will be remembered when you close the photograph, even if you do not save the photograph first.
-            </para>
-            
-            <figure>
-                <title>The Comments Edit Dialog from Image Editor</title>
-                <graphic srccredit="The Comments Edit Dialog from Image Editor" fileref="imageeditorcomments.png"/>
-            </figure>
-
-            <para>             
-            You can review embedded Exif information for the image using Image->Exif Information, for more 
-            information about the Exif information embedded in images see the Image Meta-Data section. 
-            </para>
-            
-            <figure>
-                <title>The Exif Viewer in Action</title>
-                <graphic srccredit="The Exif Viewer in Action" fileref="exifviewer.png"/>
-            </figure>
-            
-            <para>
-            You can view the file properties using Image->File Properties, this dialog will also allow 
-            you to change the filename of the image.
-            </para>
-
-            <anchor id="histogramviewer.anchor"/>
-            
-            <para>
-            If you are interested in the detailed histogram of your photograph you can view it using 
-            Image->Histogram... The histogram for a image shows the amount of each colour that is present 
-            and their different amplitudes within the image. If your photograph has a colour cast you might 
-            be able to see what is wrong by looking at the histogram.
-            </para>
-            
-            <para>
-            The Histogram Viewer shows you information about the statistical distribution of color values 
-            in the current image. The Histogram Viewer is purely informational: nothing you do with it will 
-            cause any change to the image. If you want to perform a histogram-based color correction, use 
-            the Adjust Levels Image Editor plugin. This plugin is part of the 
-            <ulink url="http://extragear.kde.org/apps/digikamimageplugins.php">DigikamImagePlugins project</ulink>.
-            For more information about using Plugins in &digikam; see the 
-            <link linkend="using-kapp-setup">Configuration</link> section.
-            </para>
-                                            
-            <figure>
-                <title>The Histogram Viewer in Action</title>
-                <graphic srccredit="The Histogram Viewer in Action" fileref="histogramimageplugin.png"/>
-            </figure>
-            
-            <para>
-            An image can be decomposed into Red, Green, Blue, Alpha color channels. The alpha channel 
-            is a Layer in the image that supports transparency (like PNG or GIF images). Each channel supports a range 
-            of intensity levels from 0 to 255 (integer valued). Thus, a black pixel is encoded by 0 on all color channels;
-            a white pixel by 255 on all color channels. A transparent pixel is encoded by 0 on the alpha channel; an 
-            opaque pixel by 255.
-            </para>
-            
-            <para>
-            The Histogram Viewer allows you to view each channel separately:
-            
-            <itemizedlist>
-            
-                <listitem><para>
-                    <emphasis>Intensity</emphasis>: shows the distribution of brightness values.
-                </para></listitem>
-
-                <listitem><para>
-                    <emphasis>Red, Green, Blue</emphasis>: show the distribution of intensity levels 
-                    for the Red, Green, or Blue channels respectively.
-                </para></listitem>
+            <sect3 id="using-kapp-commentsedittool">
+            <title>Comments Editing Tool</title>
                 
-                <listitem><para>
-                    <emphasis>Alpha</emphasis>: shows the distribution of opacity levels. If the layer is 
-                    completely opaque or completely transparent, the histogram will consist of a single bar on 
-                    the left or right edge.
-                </para></listitem>
+                <anchor id="commentsedittool.anchor"/>
 
-                <listitem><para>
-                    <emphasis>Colors</emphasis>: shows the Red, Green, and Blue histograms superimposed, so 
-                    that you can see all of the color distribution information in a single view. 
-                </para></listitem>
+                <para>
+                You can view some of the properties of your photograph by selecting the options in the 
+                Image menu. 
+                You can edit the comments set for this photograph using Image->Edit Image Comments, the 
+                new comments  will be remembered when you close the photograph, even if you do not save 
+                the photograph first.
+                </para>
+            
+                <figure>
+                    <title>The Comments Edit Dialog from Image Editor</title>
+                    <graphic srccredit="The Comments Edit Dialog from Image Editor" 
+                    fileref="imageeditorcomments.png"/>
+                </figure>
+            
+            </sect3>
+    
+            <sect3 id="using-kapp-exifviewertool">
+            <title>Exif Viewer Tool</title>
+            
+                <anchor id="exifviewertool.anchor"/>
+                
+                <para>             
+                You can review embedded Exif information for the image using Image->Exif Information, for more 
+                information about the Exif information embedded in images see the Image Meta-Data section. 
+                </para>
+            
+                <figure>
+                    <title>The Exif Viewer in Action</title>
+                    <graphic srccredit="The Exif Viewer in Action" fileref="exifviewer.png"/>
+                </figure>
+            
+            </sect3>
+            
+            <sect3 id="using-kapp-filepropertiestool">
+            <title>File Properties Tool</title>
+            
+                <anchor id="filepropertiestool.anchor"/>
+                
+                <para>
+                You can view the file properties using Image->File Properties, this dialog will also allow 
+                you to change the filename of the image.
+                </para>
+            
+            </sect3>
+
+            <sect3 id="using-kapp-histogramviewer">
+            <title>Histogram Viewer</title>
+            
+                <anchor id="histogramviewer.anchor"/>
+            
+                <para>
+                If you are interested in the detailed histogram of your photograph you can view it using 
+                Image->Histogram... The histogram for a image shows the amount of each colour that is present 
+                and their different amplitudes within the image. If your photograph has a colour cast you might 
+                be able to see what is wrong by looking at the histogram.
+                </para>
+            
+                <para>
+                The Histogram Viewer shows you information about the statistical distribution of color values 
+                in the current image. The Histogram Viewer is purely informational: nothing you do with it will 
+                cause any change to the image. If you want to perform a histogram-based color correction, use 
+                the Adjust Levels Image Editor plugin. This plugin is part of the 
+                <ulink url="http://extragear.kde.org/apps/digikamimageplugins.php">DigikamImagePlugins 
+                project</ulink>.
+                For more information about using Plugins in &digikam; see the 
+                <link linkend="using-kapp-setup">Configuration</link> section.
+                </para>
+                                                
+                <figure>
+                    <title>The Histogram Viewer in Action</title>
+                    <graphic srccredit="The Histogram Viewer in Action" fileref="histogramimageplugin.png"/>
+                </figure>
+            
+                <para>
+                An image can be decomposed into Red, Green, Blue, Alpha color channels. The alpha channel 
+                is a Layer in the image that supports transparency (like PNG or GIF images). Each channel 
+                supports a range of intensity levels from 0 to 255 (integer valued). Thus, a black pixel 
+                is encoded by 0 on all color channels; a white pixel by 255 on all color channels. 
+                A transparent pixel is encoded by 0 on the alpha channel; an opaque pixel by 255.
+                </para>
+            
+                <para>
+                The Histogram Viewer allows you to view each channel separately:
+            
+                <itemizedlist>
+            
+                    <listitem><para>
+                        <emphasis>Intensity</emphasis>: shows the distribution of brightness values.
+                    </para></listitem>
+
+                    <listitem><para>
+                        <emphasis>Red, Green, Blue</emphasis>: show the distribution of intensity levels 
+                        for the Red, Green, or Blue channels respectively.
+                    </para></listitem>
+                
+                    <listitem><para>
+                        <emphasis>Alpha</emphasis>: shows the distribution of opacity levels. If the layer is 
+                        completely opaque or completely transparent, the histogram will consist of a single 
+                        bar on the left or right edge.
+                    </para></listitem>
+
+                    <listitem><para>
+                        <emphasis>Colors</emphasis>: shows the Red, Green, and Blue histograms superimposed, so 
+                        that you can see all of the color distribution information in a single view. 
+                    </para></listitem>
                             
-            </itemizedlist>
+                </itemizedlist>
             
-            </para>
+                </para>
             
-            <para> 
-            You can change whether the histogram will be displayed using a linear or logarithmic Y axis. 
-            For images taken with a digital camera, the linear mode is usually the most useful. However, for 
-            images that contain substantial areas of constant color a linear histogram 
-            will often be dominated by a single bar. In this case a logarthmic histogram will often be more useful. 
-            </para>
+                <para> 
+                You can change whether the histogram will be displayed using a linear or logarithmic Y axis. 
+                For images taken with a digital camera, the linear mode is usually the most useful. However, for 
+                images that contain substantial areas of constant color a linear histogram 
+                will often be dominated by a single bar. In this case a logarthmic histogram will often be 
+                more useful. 
+                </para>
 
-            <para> 
-            You can restrict the analysis, for the statistics shown at the bottom of the dialog, to a 
-            limited range of values if you wish. You can set the range in one of two ways: 
+                <para> 
+                You can restrict the analysis, for the statistics shown at the bottom of the dialog, to a 
+                limited range of values if you wish. You can set the range in one of two ways: 
             
-            <itemizedlist>
+                <itemizedlist>
             
-                <listitem><para>
-                    Click and drag the pointer across the histogram display area, from the lowest level to the 
-                    highest level of the range you want.
-                </para></listitem>
+                    <listitem><para>
+                        Click and drag the pointer across the histogram display area, from the lowest level 
+                        to the highest level of the range you want.
+                    </para></listitem>
 
-                <listitem><para>
-                    Use the spin button entries below the slider (left entry: bottom of range; right entry: top of range).  
-                </para></listitem>
+                    <listitem><para>
+                        Use the spin button entries below the slider (left entry: bottom of range; right 
+                        entry: top of range).  
+                    </para></listitem>
             
-            </itemizedlist>
+                </itemizedlist>
                             
-            </para> 
+                </para> 
             
-            <para> 
-            At the bottom of the Histogram Viewer are shown some basic statistics describing the distribution 
-            of channel values, restricted to the selected range. These are:
+                <para> 
+                At the bottom of the Histogram Viewer are shown some basic statistics describing the distribution 
+                of channel values, restricted to the selected range. These are:
             
-            <itemizedlist>
+                <itemizedlist>
             
-                <listitem><para>
-                     The mean.
-                </para></listitem>
+                    <listitem><para>
+                         The mean.
+                    </para></listitem>
 
-                <listitem><para>
-                     The standard deviation.
-                </para></listitem>
+                    <listitem><para>
+                         The standard deviation.
+                    </para></listitem>
             
-                <listitem><para>
-                     The median of the selected histogram portion.   
-                </para></listitem>
+                    <listitem><para>
+                         The median of the selected histogram portion.   
+                    </para></listitem>
 
-                <listitem><para>
-                     The number of pixels in the image.
-                </para></listitem>
+                    <listitem><para>
+                         The number of pixels in the image.
+                    </para></listitem>
 
-                <listitem><para>
-                     The number whose values fall within the selected range.
-                </para></listitem>
+                    <listitem><para>
+                         The number whose values fall within the selected range.
+                    </para></listitem>
 
-                <listitem><para>
-                     The percentage whose values fall within the selected range.
-                </para></listitem>      
+                    <listitem><para>
+                         The percentage whose values fall within the selected range.
+                    </para></listitem>      
                                                       
-            </itemizedlist>
+                </itemizedlist>
 
-            </para>
+                </para>
         
+            </sect3>
+
+            <sect3 id="using-kapp-usinghistogram">
+            <title>Using Histogram</title>
+                
+                <para>
+                </para>
+            
+            </sect3>
+                    
         </sect2>
 
         <sect2>
@@ -1345,7 +1383,8 @@
             
             <figure>
                 <title>The Current Image Selection in Image Editor</title>
-                <graphic srccredit="The Current Image Selection in Image Editor" fileref="editorimageselection.png"/>
+                <graphic srccredit="The Current Image Selection in Image Editor" 
+                fileref="editorimageselection.png"/>
             </figure>
              
             <para>
@@ -1426,7 +1465,8 @@
             
             <figure>
                 <title>The Red Eyes Correction Tool in Action</title>
-                <graphic srccredit="The Red Eyes Correction Tool in Action" fileref="editorredeyescorrection.png"/>
+                <graphic srccredit="The Red Eyes Correction Tool in Action" 
+                fileref="editorredeyescorrection.png"/>
             </figure>
             
         </sect2>
@@ -1540,7 +1580,8 @@
             
             <figure>
                 <title>The Adjust Levels Image Editor Plugin in Action</title>
-                <graphic srccredit="The Adjust Levels Image Editor Plugin in Action" fileref="editoradjustlevels.png"/>
+                <graphic srccredit="The Adjust Levels Image Editor Plugin in Action" 
+                fileref="editoradjustlevels.png"/>
             </figure>
 
             </para>                                            
@@ -1564,7 +1605,8 @@
 
             <figure>
                 <title>The Rain Drops Image Editor Plugin in Action</title>
-                <graphic srccredit="The Adjust Levels Image Editor Plugin in Action" fileref="editorraindropsplugin.png"/>
+                <graphic srccredit="The Adjust Levels Image Editor Plugin in Action" 
+                fileref="editorraindropsplugin.png"/>
             </figure>
         
         </sect2>
