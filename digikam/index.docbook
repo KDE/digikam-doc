@@ -664,21 +664,32 @@
 
             <para>
             &digikam; incorporates a fast image editor with a few basic image
-            editing tools. The image editor has a Tool Bar at the top and a status 
-            at the bottom which shows the filename, the current filenumber, 
-            the current zoomlevel, and the current image size.
+            editing tools. You can use the Image Editor to view your photographs 
+            and to make corrections and alterations. The Image Editor can be accessed 
+            either by double clicking on a thumbnail in the Image Window or by right-clicking 
+            on a thumbnail and selecting "View/Edit..." from the context menu.
             </para>
-
+            
             <screenshot>
                 <mediaobject>
                     <imageobject><imagedata fileref="imageeditor.png" format="PNG"/></imageobject>
                     <textobject><phrase>The image editor window</phrase></textobject>
                 </mediaobject>
             </screenshot>
-
-            <para>
-            Below, you can see the Tool Bar description:
             
+            <para>
+            The image editor has just one main window with:
+            
+            <itemizedlist>
+            
+                <listitem><para>A status at the bottom which shows the filename, the current filenumber, 
+                the current zoomlevel, and the current image size.</para></listitem>
+
+                <listitem><para>A Menu Bar across the top and below that a Tool Bar that provides quick 
+                access to some commonly used functions.</para></listitem>
+            
+            </itemizedlist>
+                        
             <screenshot>
                 <mediaobject>
                     <imageobject><imagedata fileref="imageeditortoolbar.png" format="PNG"/></imageobject>
@@ -718,13 +729,241 @@
         </sect2>
     
         <sect2>
-        <title>TODO</title>
+        <title>Restoring your original photograph</title>
             
             <para>
+            The editing functions of the Image Editor will make changes to your photograph. 
+            None of the editing functions will change the original photograph unless you select File->Save 
+            or click the Save button in the Tool Bar. Note that once you have saved the changed version you 
+            will not be able to recover the original photograph.
+            </para>
+        
+            <para>
+            You might prefer to take a copy of your photograph before you make any changes. You can use 
+            File->Save As to save a working copy.
+            </para>
+            
+            <para>
+            At any time <emphasis>before</emphasis> you save your photograph you can restore the view to the original image by 
+            selecting File->Revert or clicking the Revert button on the Tool Bar. You will loose any changes 
+            that you have made to the photograph since it was last saved.
+            </para>
+            
+        </sect2>
+
+        <sect2>
+        <title>Moving between photographs</title>
+            
+            <para>
+            Once you have started the Image Editor you can move between photographs in the same Album 
+            or Tag view by using the navigator buttons on the Tool Bar or the entries in the File menu. 
+            If you have made any changes to the current photograph you will be asked if you want to save them.
             </para>
         
         </sect2>
-    
+
+        <sect2>
+        <title>Changing the View</title>
+            
+            <para>
+            You can zoom in and out of a photograph using the buttons on the Tool Bar or the entries in the View menu. 
+            To make a photograph fit into the window use the Zoom Autofit button on the Tool Bar.
+            </para>
+
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="editorzoombuttons.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Image Editor Zoom buttons</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+
+            <para>
+            View->Toggle Full Screen Mode will display the photograph using the full screen. You can move back 
+            to the normal view by pressing the Esc key. By default the Tool Bar is still displayed even in Full 
+            Screen Mode. If you would prefer that the Tool Bar is not displayed you can turn it off in the 
+            Configure &digikam; dialog accessed from the main &digikam; window, see the 
+            <link linkend="setupeditor">Setup Image Editor Section</link>.
+            </para>
+        
+        </sect2>
+
+        <sect2>
+        <title>Image Properties</title>
+            
+            <para>
+            You can view some of the properties of your photograph by selecting the options in the Image menu. 
+            You can edit the comments set for this photograph using Image->Edit Image Comments, the new comments 
+            will be remembered when you close the photograph, even if you do not save the photograph first.
+            </para>
+            
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="imageeditorcomments.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Comments Edit Dialog from Image Editor</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+            
+            <para>             
+            You can review embedded Exif information for the image using Image->Exif Information, for more 
+            information about the Exif information embedded in images see the Image Meta-Data section. 
+            </para>
+            
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="exifviewer.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Exif Viewer in Action</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+            
+            <para>
+            You can view the file properties using Image->File Properties, this dialog will also allow 
+            you to change the filename of the image.
+            </para>
+
+            <para>
+            If you are interested in the detailed histogram of your photograph you can view it using 
+            Image->Histogram... The histogram for a image shows the amount of each colour that is present 
+            and their different amplitudes within the image. If your photograph has a colour cast you might 
+            be able to see what is wrong by looking at the histogram.
+            </para>
+                                            
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="histogramimageplugin.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Histogram Viewer in Action</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+            
+            <para>
+            An advanced plugin for the Image Editor enables you to alter the levels of different colours 
+            in your Image see the Correcting Colour section. This plugin come from <ulink 
+            url="http://extragear.kde.org/apps/digikamimageplugins.php">DigikamImagePlugins project</ulink>.
+            </para>
+        
+        </sect2>
+
+        <sect2>
+        <title>Adjusting a photograph</title>
+            
+            <para>
+            The Image Editor provides a number tools that enable you to adjust a photograph. Some of 
+            these tools are provided by plugins to Digikam so they may not be available by default on 
+            your distribution. See the <link linkend="setupeditor">Setup Image Editor Section</link>for 
+            more details about &digkam; Image Editor plugins.
+            </para>
+            
+            <para>
+            Cropping a photograph is a common operation and the Image Editor makes it very easy. 
+            To crop a photograph simple drag a rectangle over the image by holding down the left 
+            mouse button and moving the mouse. You will see a wire frame rectangle appear as you move 
+            the mouse.
+            </para>
+            
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="editorimageselection.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Current Image Selection in Image Editor</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+             
+            <para>
+            When you release the button the area of the photograph that will be removed by 
+            a crop operation is darkened. This allows you to get a good view of how your photograph will 
+            look once you have cropped it. You can change the size if the cropped area by dragging the 
+            corners of the rectangle and you can create a new crop area simply by dragging out another 
+            rectangle.
+            </para>
+            
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="editorcropbuttons.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Crop Button</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+            
+            <para>
+            Once you are happy with the crop, click on the button on the Tool Bar and the 
+            photograph will be cropped. Use the File->Save or File->Save As entries in the File 
+            menu to safe the newly cropped photograph.
+            </para>
+
+            <para>
+            If the photograph is the wrong size you can scale it to the size you would like by using 
+            Transform Resize. Select Transform->Resize... and adjust the target values. The resize dialog 
+            tool is available below.
+            </para>
+
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="editorresizetool.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Resize Tool Dialog</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+
+            <para>
+            The Sharpen and Blur tools allow you to make small correction cover up focus errors or 
+            your photographs or to add some atmosphere. Select Fix->Sharpen or Fix->Blur and 
+            experiment with the level. The detail windows on the right of the dialogs show the 
+            effect of the operation of your photograph.
+            </para>
+            
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="editorsharpenplugin.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Sharpen Tool in Action</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+            
+            <para>
+            Red Eye is caused when flash photography is used to take photographs of people. The red is 
+            the reflection from the back the eye which can be seen because the pupil can not react 
+            quickly enough to the flash. You can correct some of the worst effect of Red Eye by 
+            selecting the area of the eye on the photograph, in the same way as described for cropping 
+            above. Then select Fix->Red Eye Reduction.
+            </para>
+            
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="editorredeyescoorection.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Red Eyes Correction Tool in Action</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+                                                                                
+        </sect2>
+
+        <sect2>
+        <title>Changing the View</title>
+            
+            <para>
+            </para>
+                                            
+        </sect2>
+
+        <sect2>
+        <title>Changing the View</title>
+            
+            <para>
+            </para>
+                                            
+        </sect2>
+
+        <sect2>
+        <title>Changing the View</title>
+            
+            <para>
+            </para>
+                                            
+        </sect2>
+
+        <sect2>
+        <title>Changing the View</title>
+            
+            <para>
+            </para>
+                                            
+        </sect2>
+                                        
+                    
     </sect1>  
         
     <sect1 id="using-kapp-setup">
@@ -738,7 +977,7 @@
         of the dialog.
         </para>
 
-        <sect2>
+        <sect2 id="setupalbum">
         <title>Album Settings</title>
 
             <para>
@@ -775,7 +1014,7 @@
                         
         </sect2>
         
-        <sect2>
+        <sect2 id="setupembeddedinfo">
         <title>Embedded Information Settings</title>
 
             <para>
@@ -826,7 +1065,7 @@
                         
         </sect2>
         
-        <sect2>
+        <sect2 id="setupcollection">
         <title>Collection Settings</title>
 
             <para>
@@ -843,7 +1082,7 @@
                                 
         </sect2>
 
-        <sect2>
+        <sect2 id="setupmimetype">
         <title>Mime Type Settings</title>
 
             <para>
@@ -862,7 +1101,7 @@
                         
         </sect2>                
         
-        <sect2>
+        <sect2 id="setupeditor">
         <title>Image Editor Settings</title>
 
             <para>
@@ -910,7 +1149,7 @@
                         
         </sect2> 
         
-        <sect2>
+        <sect2 id="setupkipi">
         <title>Kipi Plugins Settings</title>
 
             <para>
