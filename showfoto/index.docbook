@@ -1,9 +1,12 @@
 <?xml version="1.0" ?>
 <!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
-  <!ENTITY showfoto "<application>ShowFoto</application>">
-  <!ENTITY kappname "&showfoto;">
+  <!ENTITY kappname "&showfoto;"><!-- replace kapp here, do *not* replace kappname-->
   <!ENTITY % addindex "IGNORE">
-  <!ENTITY % English "INCLUDE">
+  <!ENTITY % English "INCLUDE"><!-- change language only here -->
+  <!ENTITY showfoto "<application>Showfoto</application>">
+
+  <!-- Do not define any other entities; instead, use the entities
+       from kde-genent.entities and $LANG/user.entities. -->  
 ]>
 
 <book lang="&language;">
@@ -68,13 +71,16 @@ Please respect the format of the date (YYYY-MM-DD) and of the version
 
 
 <keywordset>
-<keyword>KDE</keyword>
-<keyword>showfoto</keyword>
-<keyword>image</keyword>
-<keyword>editor</keyword>
+    <keyword>KDE</keyword>
+    <keyword>showfoto</keyword>
+    <keyword>image</keyword>
+    <keyword>editor</keyword>
+    <keyword>Graphics</keyword>
 </keywordset>
 
 </bookinfo>
+
+<!-- *********************************************************************** -->
 
 <chapter id="introduction"> 
 <title>Introduction</title>
@@ -84,6 +90,19 @@ TODO
 </para>
 
 </chapter>
+
+<!-- *********************************************************************** -->
+
+<chapter id="using-kapp">
+<title>Using &showfoto;</title>
+
+<para>
+TODO
+</para>
+
+</chapter>
+
+<!-- *********************************************************************** -->
 
 <chapter id="credits">
 
