@@ -254,7 +254,7 @@
             </sect3>            
 
             <sect3 id="using-kapp-managealbums">
-            <title>Moving or copying photographs between Albums</title>
+            <title>Managing Albums</title>
                 
                 <para>
                 An Album contains a Collection of photographs and the Album Properties allows you to set information about 
@@ -1061,6 +1061,20 @@
                 <mediaobject>
                     <imageobject><imagedata fileref="editorresizetool.png" format="PNG"/></imageobject>
                     <textobject><phrase>The Resize Tool Dialog</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+
+            <para>
+            If the photograph is the wrong orientate you can flip or rotate it to the correct orientation you would like 
+            by using Transform Flip/Rotate. An advanced free rotation tools is also available for to fix the image 
+            horizontablilty. Select Transform->Rotate->Free Rotation... and adjust the target angle. The free rotation 
+            dialog tool is available below.
+            </para>
+
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="editorrotationtool.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Free Rotation Tool Dialog</phrase></textobject>
                 </mediaobject>
             </screenshot>
 
@@ -2047,172 +2061,226 @@
 <sect1>
 <title>The Image Editor</title>
 
-<sect2>
-<title>Shortcuts for the image editor</title>
+    <para>
+    FIXME
+    </para>
 
-<para>
+    <sect2>
+    <title>The File Menu</title>
 
-<variablelist>
+    <para>
+    <variablelist>
 
-<varlistentry>
-<term>Next Album Image</term>
-<listitem><para><interface><accel>PageDown</accel></interface></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>PgUp</keycap></keycombo></shortcut>
+                <guimenu>File</guimenu><guimenuitem>Previous</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term>Previous Album Image</term>
-<listitem><para><interface><accel>PageUp</accel></interface></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>PgDown</keycap></keycombo></shortcut>
+                <guimenu>File</guimenu><guimenuitem>Next</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display the next image of the current Album.</action></para></listitem>
+        </varlistentry>
 
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>Home</keycap></keycombo></shortcut>
+                <guimenu>File</guimenu><guimenuitem>First</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display the first image of current Album.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term>Zoom In</term>
-<listitem><para><interface><accel>+</accel></interface></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>End</keycap></keycombo></shortcut>
+                <guimenu>File</guimenu><guimenuitem>First</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display the first image of current Album.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term>Zoom Out</term>
-<listitem><para><interface><accel>-</accel></interface></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>S</keycap></keycombo></shortcut>
+                <guimenu>File</guimenu><guimenuitem>Save</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Save the current image if have been modified.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term>Zoom 1:1</term>
-<listitem><para><interface><accel>Shift-1</accel></interface></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>File</guimenu><guimenuitem>Save As</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Save the current image in a new file.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term>Toggle Auto Zoom</term>
-<listitem><para><interface><accel>A</accel></interface></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>File</guimenu><guimenuitem>Revert</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Restore the current image from the original file if have been 
+            modified.</action></para></listitem>
+        </varlistentry>
+                            
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Shift</keycap><keycap>Del</keycap></keycombo></shortcut>
+                <guimenu>File</guimenu><guimenuitem>Delete File/Move to trash</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Delete/Move to trash the current image from the current Album.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>P</keycap></keycombo></shortcut>
+                <guimenu>File</guimenu><guimenuitem>Print Image</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Print the current image.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term>Toggle Full Screen</term>
-<listitem><para><interface><accel>Ctrl-Shift-F</accel></interface></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>Q</keycap></keycombo></shortcut>
+                <guimenu>File</guimenu><guimenuitem>Quit</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Quit &digikam; Image Editor.</action></para></listitem>
+        </varlistentry>
+            
+    </variablelist>
+    </para>
 
-<varlistentry>
-<term>Rotate Image through 90 degrees</term>
-<listitem><para><interface><accel>1</accel></interface></para></listitem>
-</varlistentry>
+    </sect2>
 
-<varlistentry>
-<term>Rotate Image through 180 degrees</term>
-<listitem><para><interface><accel>2</accel></interface></para></listitem>
-</varlistentry>
+    <!-- *********************************************************************** -->
+    
+    <sect2>
+    <title>The Image Menu</title>
 
-<varlistentry>
-<term>Rotate Image through 270 degrees</term>
-<listitem><para><interface><accel>3</accel></interface></para></listitem>
-</varlistentry>
+    <para>
+    <variablelist>
 
-<varlistentry>
-<term>Flip Image Horizontally</term>
-<listitem><para><interface><accel>H</accel></interface></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>PgUp</keycap></keycombo></shortcut>
+                <guimenu>Image</guimenu><guimenuitem>Previous</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
+        </varlistentry>
+    
+    </variablelist>
+    </para>
 
-<varlistentry>
-<term>Flip Image Vertically</term>
-<listitem><para><interface><accel>V</accel></interface></para></listitem>
-</varlistentry>
+    </sect2>
 
-<varlistentry>
-<term>Crop Image</term>
-<listitem><para><interface><accel>Ctrl-C</accel></interface></para></listitem>
-</varlistentry>
+    <!-- *********************************************************************** -->
+    
+    <sect2>
+    <title>The Fix Menu</title>
 
-<varlistentry>
-<term>Adjust Image</term>
-<listitem><para><interface><accel>Ctrl-E</accel></interface></para></listitem>
-</varlistentry>
+    <para>
+    <variablelist>
 
-<varlistentry>
-<term>Increase Brightness</term>
-<listitem><para><interface><accel>B</accel></interface></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>PgUp</keycap></keycombo></shortcut>
+                <guimenu>Fix</guimenu><guimenuitem>Previous</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
+        </varlistentry>
+    
+    </variablelist>
+    </para>
 
-<varlistentry>
-<term>Decrease Brightness</term>
-<listitem><para><interface><accel>Shift-B</accel></interface></para></listitem>
-</varlistentry>
+    </sect2>
 
-<varlistentry>
-<term>Increase Gamma</term>
-<listitem><para><interface><accel>G</accel></interface></para></listitem>
-</varlistentry>
+    <!-- *********************************************************************** -->
+    
+    <sect2>
+    <title>The Transform Menu</title>
 
-<varlistentry>
-<term>Decrease Gamma</term>
-<listitem><para><interface><accel>Shift-G</accel></interface></para></listitem>
-</varlistentry>
+    <para>
+    <variablelist>
 
-<varlistentry>
-<term>Increase Contrast</term>
-<listitem><para><interface><accel>C</accel></interface></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>PgUp</keycap></keycombo></shortcut>
+                <guimenu>Transform</guimenu><guimenuitem>Previous</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
+        </varlistentry>
+    
+    </variablelist>
+    </para>
 
-<varlistentry>
-<term>Decrease Contrast</term>
-<listitem><para><interface><accel>Shift-C</accel></interface></para></listitem>
-</varlistentry>
+    </sect2>
+            
+    <!-- *********************************************************************** -->
+    
+    <sect2>
+    <title>The View Menu</title>
 
-<varlistentry>
-<term>Edit Image Comments</term>
-<listitem><para><interface><accel>F3</accel></interface></para></listitem>
-</varlistentry>
+    <para>
+    <variablelist>
 
-<varlistentry>
-<term>View Exif Information</term>
-<listitem><para><interface><accel>F6</accel></interface></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>PgUp</keycap></keycombo></shortcut>
+                <guimenu>View</guimenu><guimenuitem>Previous</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
+        </varlistentry>
+    
+    </variablelist>
+    </para>
 
-<varlistentry>
-<term>View Image properties</term>
-<listitem><para><interface><accel>Alt-Enter</accel></interface></para></listitem>
-</varlistentry>
+    </sect2>
 
-<varlistentry>
-<term>Print Image</term>
-<listitem><para><interface><accel>Ctrl-P</accel></interface></para></listitem>
-</varlistentry>
+    <!-- *********************************************************************** -->
+    
+    <sect2>
+    <title>The Filters Menu</title>
 
-<varlistentry>
-<term>Save</term>
-<listitem><para><interface><accel>Ctrl-S</accel></interface></para></listitem>
-</varlistentry>
+    <para>
+    <variablelist>
 
-<varlistentry>
-<term>Save as</term>
-<listitem><para><interface><accel>Ctrl-Shift-S</accel></interface></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>PgUp</keycap></keycombo></shortcut>
+                <guimenu>Filters</guimenu><guimenuitem>Previous</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
+        </varlistentry>
+    
+    </variablelist>
+    </para>
 
-<varlistentry>
-<term>Restore</term>
-<listitem><para><interface><accel>Ctrl-R</accel></interface></para></listitem>
-</varlistentry>
+    </sect2>
 
-<varlistentry>
-<term>Remove from Album</term>
-<listitem><para><interface><accel>Shift-Del</accel></interface></para></listitem>
-</varlistentry>
+    <!-- *********************************************************************** -->
 
-<varlistentry>
-<term>Help</term>
-<listitem><para><interface><accel>F1</accel></interface></para></listitem>
-</varlistentry>
+    <sect2>
+    <title>The Help Menu</title>
+    &help.menu.documentation;
 
-<varlistentry>
-<term>About</term>
-<listitem><para><interface><accel>Ctrl-Shift-A</accel></interface></para></listitem>
-</varlistentry>
+    <para>Additionally &digikam; Image Editor offers these items:</para>
 
-<varlistentry>
-<term>Close</term>
-<listitem><para><interface><accel>Esc</accel></interface></para></listitem>
-</varlistentry>
+    <variablelist>
 
-</variablelist>
-</para>
-</sect2>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Help</guimenu><guimenuitem>ImagePlugins' Handbooks</guimenuitem>
+            </menuchoice></term>
+            <listitem><para>Launch the KDE help interface with the &digikam; Image Editor plugins handbooks.</para></listitem>
+        </varlistentry>
+    
+    </variablelist>
+
+    </sect2>
+            
 </sect1>
 
 <!-- *********************************************************************** -->
