@@ -944,7 +944,7 @@
         <title>Introduction to Image Editor</title>
 
             <para>
-            &digikam; incorporates a fast image editor with a few basic image
+            &digikam; incorporates a fast Image Editor with a few basic image
             editing tools. You can use the Image Editor to view your photographs 
             and to make corrections and alterations. The Image Editor can be accessed 
             either by double clicking on a thumbnail in the Image Window or by right-clicking 
@@ -1583,7 +1583,7 @@
         <title>Image Editor Settings</title>
 
             <para>
-            In the early versions of &digikam; the The Image Viewer/Editor was just a viewer for photographs 
+            In the early versions of &digikam; the The Image Editor was just a viewer for photographs 
             but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you 
             to control how the Image Editor will behave.
             </para>
@@ -1607,7 +1607,7 @@
             </para>
             
             <para>
-            By default the Image Viewer/Editor will use a black background behind photographs when they 
+            By default the Image Editor will use a black background behind photographs when they 
             are displayed. If you prefer a different background colour you can select one here. You can 
             also turn off the Tool Bar when the Image Editor is in full screen mode.
             </para>
@@ -1653,7 +1653,7 @@
             
             <para>
             Keyboard shortcuts to actions that plugins perform can be set up in the 
-            Settings -> Configure Shortcuts menu.
+            Settings->Configure Shortcuts menu.
             </para>
             
             <para>
@@ -2445,13 +2445,101 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo><keycap>PgUp</keycap><keycap>1</keycap></keycombo></shortcut>
-                <guimenu>Fix</guimenu><guimenuitem>Rotate</guimenuitem>
+                <guimenu>Fix</guimenu><guimenuitem>Unsharped Mask</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
+            <listitem><para><action>Image Editor plugin for operate an unsharped mask on the current image. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
         </varlistentry>
     
-    </variablelist>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Levels Ajust</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Image Editor plugin for adjust levels manually on the current image. 
+            See the dedicated plugin manual for more information.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Brightness/Contrast/Gamma</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Exposure correction of the current image by Brighness, Contrast, or Gamma 
+            adjustments.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Hue/Saturation/Ligthness</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Color correction of the current image by Hue, Saturation, or Lightness 
+            adjustments.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Color Balance</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Color correction of the current image by Red, Green, or Blue 
+            adjustments.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Normalize</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Automatic color correction of the current image by an histogram 
+            normalization.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Equalize</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Automatic color correction of the current image by an histogram 
+            equalization.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Auto Levels</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Automatic color correction of the current image by an histogram auto-levels 
+            adjustment.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Blur</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Focus error correction of the current image by a bluring 
+            operation.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Sharpen</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Focus error correction of the current image by a sharping 
+            operation.</action></para></listitem>        
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Red Eye Reduction</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Red Eye coorection using the current selection of the current 
+            image.</action></para></listitem>        
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Noise Reduction</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Noise Reduction on the current image using a Despeckle 
+            filter.</action></para></listitem>        
+        </varlistentry>
+        
+</variablelist>
     </para>
 
     </sect2>
@@ -2524,7 +2612,8 @@
             <term><menuchoice>
                 <guimenu>Transform</guimenu><guimenuitem>Resize</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Resize the current image to the appropriate factor or dimenssions.</action></para></listitem>
+            <listitem><para><action>Resize the current image to the appropriate factor or 
+            dimenssions.</action></para></listitem>
         </varlistentry>
     
     </variablelist>
