@@ -266,8 +266,8 @@
                 make sure that the Album is selected then either click the Add Images icon in the Tool Bar or 
                 select Album->Import->Add Images from the Menu Bar. Select the photographs that you want to add 
                 from the file dialog and click Open. The photographs will be copied into the Album. 
-                Additionally you can use drag and drop to import photographs. Drag the photographs icon, for example 
-                from a konqueror window. Than drop it on the image list on the right hand side. 
+                Additionally you can use drag and drop to import photographs. Drag the photographs icon, 
+                for example from a konqueror window. Than drop it on the image list on the right hand side. 
                 If you have a scanner configured you can also scan a photograph straight into an Album.
                 </para>
                 
@@ -1137,9 +1137,16 @@
 
             <para>
             If the photograph is the wrong orientate you can flip or rotate it to the correct orientation 
-            you would like by using Transform Flip/Rotate. An advanced free rotation tools is also available 
-            for to fix the image horizontability. Select Transform->Rotate->Free Rotation... and adjust the 
-            target angle. The free rotation dialog tool is available below.
+            you would like by using Transform Flip/Rotate. 
+            </para>
+            
+            <para>
+            It is easy, when taking a picture, to hold the camera not quite perfectly vertical, resulting 
+            in a picture where things are tilted at an angle. In Image Editor, the way to fix this is to 
+            use the Free Rotation tool. Select Transform->Rotate->Free Rotation... and adjust to the  
+            target angle. After you have rotated an image, there will be unpleasant triangular "holes" 
+            at the corners. One way to fix them is to crop the image. The Free Rotation dialog tool is 
+            available below.
             </para>
 
             <screenshot>
@@ -1200,11 +1207,35 @@
                     <caption><para><emphasis>The Color Balance Tool in Action</emphasis></para></caption>
                 </mediaobject>
             </screenshot>
-                        
+
+            <para>
+            If your image is washed out (which can easily happen when you take pictures in bright light) 
+            try the Hue/Saturation/Lightness tool, which gives you three sliders to manipulate, for 
+            Hue, Saturation, and Lightness. Raising the saturation will probably make the image look better. 
+            In same cases it is useful to adjust the lightness at the same time. ("Lightness" here is similar 
+            to "Brightness" in the Brightness/Contrast/Gamma tool, except that they are formed from different 
+            combinations of the red, green, and blue channels).  
+            </para>
+            
+            <para>
+            When you take pictures in low light conditions, in some cases you have the opposite problem: 
+            too much saturation. In this case too the Hue/Saturation tool is a good one to use, only by 
+            reducing the saturation instead of increasing it.
+            </para>
+            
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="editorhsladjust.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Hue Saturation Lightness Tool in Action</phrase></textobject>
+                    <caption><para><emphasis>The Hue Saturation Lightness Tool in 
+                    Action</emphasis></para></caption>
+                </mediaobject>
+            </screenshot>
+                                    
             <para>
             The Normalise, Equalize and Auto Levels functions under the Fix menu will attempt 
-            to work out the best levels. You will need to experiment with the effects of these 
-            functions to see what works best with your photograph. 
+            to work out the best levels automaticly. You will need to experiment with the effects 
+            of these functions to see what works best with your photograph. 
             
             <itemizedlist>
             
@@ -1238,9 +1269,31 @@
             The results of any adjustments you make will not be remembered until you save your 
             photograph.
             </para>
+        </sect2>
 
+        <sect2>
+        <title>Correcting exposure</title>
+        
             <para>
-            If you have the Auto Adjust plugin installed (see the 
+            The simplest tool to use is the Brightness/Contrast/Gamma tool. It is also the least powerful, 
+            but in many cases it does everything you need. This tool is often useful for images that are 
+            overexposed or underexposed; it is not useful for correcting color casts. The tool gives you 
+            three sliders to adjust, for "Brightness", "Contrast" and "Gamma". You can see any adjustments 
+            you make reflected in the preview image. When you are happy with the results, press Okay and 
+            they will take effect. 
+            </para>
+            
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="editorbcgadjust.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Brigthness Contrast Gamma Tool in Action</phrase></textobject>
+                    <caption><para><emphasis>The Brigthness Contrast Gamma Tool in 
+                    Action</emphasis></para></caption>
+                </mediaobject>
+            </screenshot>
+                                
+            <para>
+            If you have the Adjust Levels plugin installed (see the 
             <link linkend="setupeditor">Setup Image Editor Section</link>) you will have an
             additional entry in the Fix menu called Fix->Colors->Levels Adjust. This tools provides 
             an integrated way of seeing the results of adjusting multiple levels and also enables you to 
