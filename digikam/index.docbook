@@ -998,6 +998,19 @@
         </sect2>
 
         <sect2>
+        <title>Undoing Actions</title>
+            
+            <para>
+            Almost anything you do to an image in Image Editor can be undone. You can undo the most recent action by choosing <menuchoice><guimenu>File</guimenu><guimenuitem>Cancel</guimenuitem></menuchoice>, but this is done so frequently that you really should memorize the keyboard shortcut, <guilabel>Ctrl-Z</guilabel>.
+            </para>
+            
+            <para>
+            The undo-stack design is very simple: actions are either reversible (rotate,flip) or irreversible (rest of the actions and all of the plugin actions). The reversible undos are implemented by just saving the commands and for the irreversible undos image copies are saved into a temporary database.
+            </para>
+            
+        </sect2>
+        
+        <sect2>
         <title>Moving Between Photographs</title>
             
             <para>
@@ -2856,6 +2869,14 @@
             <listitem><para><action>Save the current image in a new file.</action></para></listitem>
         </varlistentry>
 
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo></shortcut>
+                <guimenu>File</guimenu><guimenuitem>Cancel</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Cancel the last action applied to the current image using history.</action></para></listitem>
+        </varlistentry>
+        
         <varlistentry>
             <term><menuchoice>
                 <guimenu>File</guimenu><guimenuitem>Revert</guimenuitem>
