@@ -120,7 +120,7 @@
     <sect1 id="using-kapp-mainwindow">
     <title>The main &digikam; window</title>
 
-        <sect2>
+        <sect2 id="using-kapp-mainwindow-intro">
         <title>Introduction to the Main Window</title>
 
             <para>
@@ -181,7 +181,7 @@
             
         </sect2>
         
-        <sect2>
+        <sect2 id="using-kapp-myalbumsview">
         <title>"My Albums" View</title>
 
             <para>
@@ -356,6 +356,13 @@
                 is display from the Settings->Configure &digikam; dialog. Select the Albums page and look for the Extra 
                 Information in Thumbnail View section. 
                 </para> 
+
+                <para>
+                The thumbnails have ToolTips which will popup if you allow the mouse to dwell over a thumbnail for a 
+                moment. The ToolTip shows the most important properties of the photograph including any Tags that 
+                you have applied. The screenshot at the top of the <link linkend="using-kapp-mainwindow-intro">
+                Introduction to the Main Window</link> section shows a ToolTip being displayed.
+                </para>
 
             </sect3>
 
@@ -635,7 +642,7 @@
         <title>Introduction to Camera Interface</title>
 
             <para>
-            The Camera Tool allows you to download you photographs directly from your camera 
+            The Camera Tool allows you to download your photographs directly from your camera 
             into a &digikam; Album. You can access the Camera Tool by clicking on the Camera menu 
             and selecting from the list of configured Cameras. See the 
             <link linkend="setupcamera">Setup Camera Section</link> of the manual 
@@ -655,8 +662,8 @@
         
             <para>
             When you start the Camera Interface it will try to connect to the Camera. For some 
-            camera this connection phase can take a little while. When connected a "Ready" indicator 
-            will appear and thumbnails of any photographs on the camera will be displayed. Some camera 
+            cameras this connection phase can take a little while. When connected a "Ready" indicator 
+            will appear and thumbnails of any photographs on the camera will be displayed. Some cameras 
             cannot provide thumbnails of the photographs, if this is the case you will only see the 
             filenames and an icon for each photograph.
             </para>
@@ -694,10 +701,11 @@
         <title>Selecting a Target Album</title>
         
             <para>
-            When you use the Download buttons in the Camera Tool a dialog will appear that allows you to 
+            When you use the Download All or Download Selected buttons a dialog will appear that allows you to 
             select a target Album into which the photographs will be downloaded. The list of existing 
-            Albums is displayed, ordered by the Folder method (see the My Albums View for details of 
-            Album ordering). You can select the target Album from this list and then click OK.
+            Albums is displayed, ordered by the Folder method (see the <link linkend="using-kapp-myalbumsview">
+            My Albums View</link> for details of Album ordering). You can select the target Album from this list 
+            and then click OK.
             </para>
         
             <screenshot>
@@ -716,8 +724,8 @@
             </para>
             
             <para>
-            When you have selected the target Album, &digikam; process to download images from the 
-            camera.  
+            When you have selected the target Album, click OK and &digikam; will download the photographs 
+            from the camera.  
             </para>
             
             <screenshot>
@@ -739,12 +747,12 @@
             photographs, select those that you want to delete and click Delete->Delete Selected. 
             </para>
 
-            <para>
+            <caution><para>
             Please note that once you delete a photograph from the camera there is no way for it to be 
             retrieved. The photographs are not moved to the KDE Trash Can, they are removed completely. 
             It is best to double check that you have successfully downloaded a photograph into a &digikam; 
             Album before you delete it from the camera.
-            </para>
+            </para></caution>
 
         </sect2>
         
@@ -753,7 +761,7 @@
 
             <para>
             Cameras often do not use very meaningful filenames for photographs. The filenames are usually 
-            reused once the photographs are deleted from the camera. This can lead to filename clashes if 
+            reused once the photographs have been deleted from the camera. This can lead to filename clashes if 
             you download photographs from many shoots into the same Album. It can also be useful to include 
             the date and time that a photograph was taken in the filename.
             </para>
@@ -766,7 +774,7 @@
             </screenshot>
             
             <para>
-            &digikam; can automatically rename your photographs using the data and time information 
+            &digikam; can automatically rename your photographs using the date and time information 
             included by the camera in the photograph. To use this feature, click the Advance button 
             on the Camera Interface. The Camera Interface window will expand to reveal some extra 
             features. Select Customize Names and then enter any filename prefix you would like. 
@@ -789,7 +797,9 @@
             <para>
             If your camera embeds information about the orientation of the camera when a photograph 
             is taken &digikam; can use this to automatically rotate the photograph when it is downloaded. 
-            Not all cameras include this information.
+            Not all cameras include this information. See the <link linkend="using-kapp-imagemetadata">
+            Photograph Meta-Data</link> section for more detail about imformation your camera may have 
+            embedded in your photographs.
             </para>
 
             <para>
