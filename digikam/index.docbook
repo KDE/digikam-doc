@@ -1858,15 +1858,15 @@
             </figure>
             
             <para>
-            When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of compression that is to be applied. Unfortunately the level of compressions applied is not recorded in the image file. This means that the Image Editor cannot use the same compression ratio when saving an altered image as was used for the original image. You can change the default level of compression that the Image Editor will apply when it saves altered images by moving the <guilabel>JPEG compression</guilabel> slider.
+            When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the <guilabel>JPEG quality</guilabel> slider  (1: low quality / 100: high quality).
             </para>
 
             <para>
-            With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This have no image quality effect because PNG use a lossless algorithm. The only effect is that file needs more time to decompress. If you have a fast computer you can change this value for to use a hight compression factor. 
+            With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation don't reduce image quality because PNG use a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value for to use a high compression factor (1: low compression / 9: high compression).
             </para>
             
             <para>
-            With <guilabel>Using TIFF compression</guilabel> option, you can toogle to use Adobe Deflate compression algorithm with TIFF image files. This will reduce the TIFF image files size. This has no image quality effect because Adobe Deflate is a lossless algorithm. 
+            With <guilabel>Using TIFF compression</guilabel> option, you can toogle to use <emphasis>Adobe Deflate</emphasis> compression algorithm with TIFF image files. This will reduce the TIFF image files size. This has no image quality effect because Adobe Deflate is a lossless algorithm. 
             </para>
             
             <para>
@@ -2970,23 +2970,6 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Noise Reduction</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin for reduce the noise on the current image with using a Despeckle 
-                    filter.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/despeckle.html">Noise Reduction manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>            
-        </varlistentry>
-
-        <varlistentry>
-            <term><menuchoice>
                 <guimenu>Fix</guimenu><guimenuitem>Unsharped Mask</guimenuitem>
             </menuchoice></term>
             <listitem>
@@ -3016,6 +2999,23 @@
                 </para>     
             </listitem>
         </varlistentry>                
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Noise Reduction</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin for reduce the noise on the current image with using a Despeckle 
+                    filter.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/despeckle.html">Noise Reduction manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>            
+        </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
@@ -3096,20 +3096,18 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Transform</guimenu><guimenuitem>Aspect Ratio Crop</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>Crop the current image using an constrained aspect 
-            ratio.</action></para></listitem>
-        </varlistentry>
-                    
-        <varlistentry>
-            <term><menuchoice>
                 <guimenu>Transform</guimenu><guimenuitem>Resize</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Resize the current image to the appropriate factor or 
-            dimensions.</action></para></listitem>
+            <listitem><para><action>Resize the current image to the appropriate factor or dimensions.</action></para></listitem>
         </varlistentry>
 
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Transform</guimenu><guimenuitem>Aspect Ratio Crop</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Crop the current image using an constrained aspect ratio.</action></para></listitem>
+        </varlistentry>
+                
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Transform</guimenu><guimenuitem>Shear</guimenuitem>
