@@ -320,25 +320,31 @@
     <title>Supported Plugins</title>
 
         <para>
-        One of the nicest things about &digikam; is how easily its functionality can be extended, by using plugins. Two plugin architectures are available:
+        One of the nicest things about &digikam; is how easily its functionality can be extended, by 
+        using plugins. Two plugin architectures are available:
         
         <itemizedlist>
             
                 <listitem><para><emphasis>Kipi Plugins</emphasis>: the 
-                <ulink url="http://extragear.kde.org/apps/kipi.php">Kde Image Plugins Interface project</ulink> is an effort to develop a common plugin 
-                structure for &digikam;, <application>KimDaBa</application>, <application>Showimg</application> and 
-                <application>Gwenview</application>. Its aim is to share image plugins among graphic applications.
-                Kipi Plugins setup is descripted to this <link linkend="setupkipi">section</link>.</para></listitem>
+                <ulink url="http://extragear.kde.org/apps/kipi.php">Kde Image Plugins Interface project</ulink> 
+                is an effort to develop a common plugin structure for &digikam;, 
+                <application>KimDaBa</application>, <application>Showimg</application> and 
+                <application>Gwenview</application>. Its aim is to share image plugins among graphic 
+                applications. Kipi Plugins setup is descripted to this 
+                <link linkend="setupkipi">section</link>.</para></listitem>
 
-                <listitem><para><emphasis>Image Editor Plugins</emphasis>: this structure add new image manipulation options in &digikam; Image Editor. 
-                The <ulink url="http://extragear.kde.org/apps/digikamimageplugins.php">DigikamImagePlugins project</ulink> is dedicaced 
-                to provide a collection of tools using this architecture. Image Editor Plugins setup is descripted to this 
-                <link linkend="setupeditor">section</link>.</para></listitem>
+                <listitem><para><emphasis>Image Editor Plugins</emphasis>: this structure add new image 
+                manipulation options in &digikam; Image Editor. The 
+                <ulink url="http://extragear.kde.org/apps/digikamimageplugins.php">DigikamImagePlugins project</ulink> 
+                is dedicaced to provide a collection of tools using this architecture. Image Editor 
+                Plugins setup is descripted to this <link linkend="setupeditor">section</link>.
+                </para></listitem>
 
         </itemizedlist>
                                     
-         Plugins can manipulate images in almost any way that users can. Their advantage is that it is much easier to add a capability to &digikam; by writing 
-         a small plugin than by modifying the &digikam; core.
+         Plugins can manipulate images in almost any way that users can. Their advantage is that it is 
+         much easier to add a capability to &digikam; by writing a small plugin than by modifying the 
+         &digikam; core.
         </para>
                 
     </sect1>
@@ -684,12 +690,12 @@
             <title>Rotating a Photograph</title>
              
                 <note><para>
-                You will need to have the KIPI JPEG Lossless Plugin installed for these 
+                You will need to have the Kipi JPEG Lossless Plugin installed for these 
                 rotation features. If you do not have this plugin installed you can still rotate your 
                 photographs but you have to do so from inside the Image Editor. The Image Editor uses a 
                 different method of rotating an image, you may not notice any difference but the Image Editor 
                 method can cause some loss of quality in the photograph. The rotation methods described 
-                here use the KIPI JPEG Lossless Plugin and do not loose any quality in the original photograph.
+                here use the Kipi JPEG Lossless Plugin and do not loose any quality in the original photograph.
                 </para></note>
                              
                 <para>
@@ -762,11 +768,15 @@
                 <para>
                 There is one more set of meta-data that &digikam; can access about a photograph. This can 
                 be accessed by right-clicking on a photograph and selecting <guilabel>Properties</guilabel> 
-                from the context menu. This dialog will tell you information about how large the photograph 
-                is and were it is on the hard disk. This dialog will also give you access to another place 
-                to put comments. This JPEG Exif Comment is not used by &digikam; itself but some other image 
-                applications can access this comment and some digital cameras allow you set a comment while 
-                the photograph is still on the camera. In this case the comments will probably appear here.
+                from the context menu. 
+                </para>
+                
+                <para>
+                This dialog will tell you information about how large the photograph is and were it is on 
+                the hard disk. This dialog will also give you access to another place to put comments. 
+                This JPEG Exif Comment is not used by &digikam; itself but some other image applications 
+                can access this comment and some digital cameras allow you set a comment while the 
+                photograph is still on the camera. In this case the comments will probably appear here.
                 </para>
                 
                 <para>
@@ -777,6 +787,18 @@
                 Exif field, which is limited to JPEG and TIFF images. &digikam; stores comments in its 
                 internal database, so that all image and video formats can be handled the same way.
                 </para>
+                
+                <para>
+                This dialog will give you too the full image histogram. You can found more informations 
+                about histogram in the <link linkend="using-kapp-histogramviewer">Histogram Viewer</link> 
+                section. 
+                </para>
+                
+                <figure>
+                    <title>The Image Properties Dialog with the Histogram Viewer in Action</title>
+                    <graphic srccredit="The Image Properties Dialog with the Histogram Viewer in Action" 
+                    fileref="imageproperties.png"/>
+                </figure>
                                                                                                             
             </sect3> 
 
@@ -2151,9 +2173,9 @@
         <title>Kipi Plugins Settings</title>
 
             <para>
-            KIPI is the KDE Image Plugin Interface. It is an interface that is supported by a number of 
+            Kipi is the KDE Image Plugin Interface. It is an interface that is supported by a number of 
             KDE image viewer/editor applications. By providing this interface &digikam; can take advantage 
-            of many plugins that are written to work with any application that has the KIPI interface.
+            of many plugins that are written to work with any application that has the Kipi interface.
             </para>
 
             <figure>
@@ -2162,7 +2184,7 @@
             </figure>
 
             <para>
-            If your distribution has the KIPI plugins package installed you will see a list of available 
+            If your distribution has the Kipi plugins package installed you will see a list of available 
             plugins. Select those that you want to use and they will be loaded into &digikam;. The plugins 
             will appear as new menu entries in the main Menu Bar and in the context menu for thumbnails.
             </para>
@@ -2174,8 +2196,8 @@
             </para>
             
             <para>
-            For more informations about KIPI plugins, you can consult the 
-            KIPI project at <ulink url="http://extragear.kde.org/apps/kipi.php"> 
+            For more informations about Kipi plugins, you can consult the 
+            Kipi project at <ulink url="http://extragear.kde.org/apps/kipi.php"> 
             http://extragear.kde.org/apps/kipi.php</ulink>.
             </para>
             
