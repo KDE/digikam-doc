@@ -635,42 +635,172 @@
         <title>Introduction to Camera Interface</title>
 
             <para>
-            Before to try to use a digital camera with &digikam; you need to setup the 
-            camera model and port using the setup interface. Please, read the 
-            <link linkend="setupcamera">Setup Camera Section</link> for more informations.
+            The Camera Tool allows you to download you photographs directly from your camera 
+            into a &digikam; Album. You can access the Camera Tool by clicking on the Camera menu 
+            and selecting from the list of configured Cameras. See the 
+            <link linkend="setupcamera">Setup Camera Section</link> of the manual 
+            for instructions on how to setup &digikam; to work with your Camera. 
             </para>
-   
+
+            <para>
+            The Camera Interface is not the only way to get your photographs into &digikam;. See the 
+            <link linkend="using-kapp-addphototoalbum">Adding a photograph to an Album</link> section 
+            for a description of how to add photographs that are already in on your hard disk.
+            </para>
+            
             <para>
             To be able to use your digital camera with &digikam;, connect the camera
             to your computer, switch the camera to the image display mode and turn it on. 
             </para>
         
             <para>
-            You can access to the &digikam; Camera Interface by the main window "Camera" 
-            menu entry. Clicking on a camera item in this menu will popup a new Camera Interface 
-            and this will connect to the camera, and thumbnails (if supported by the camera) 
-            will be downloaded and displayed. You can then select the images and download 
-            or delete them from the camera. Downloading can be done by using the "Download" 
-            button or by dragging and dropping them onto an album folder.
+            When you start the Camera Interface it will try to connect to the Camera. For some 
+            camera this connection phase can take a little while. When connected a "Ready" indicator 
+            will appear and thumbnails of any photographs on the camera will be displayed. Some camera 
+            cannot provide thumbnails of the photographs, if this is the case you will only see the 
+            filenames and an icon for each photograph.
             </para>
-
+            
             <screenshot>
                 <mediaobject>
                     <imageobject><imagedata fileref="cameraclient.png" format="PNG"/></imageobject>
-                    <textobject><phrase>The camera client window</phrase></textobject>
+                    <textobject><phrase>The Camera Client Window</phrase></textobject>
                 </mediaobject>
             </screenshot>
 
         </sect2>
 
         <sect2>
-        <title>TODO</title>
+        <title>Downloading Photographs</title>
             
             <para>
+            The simplest way to download the photographs is to click the Download button and then click 
+            Download All. This will download all of the photographs on the camera to a single Album in 
+            &digikam;. The download process will not remove the photographs from the camera. It is always 
+            advisable to check that the photographs have downloaded safely into the Album you were expecting 
+            before deleting them from the camera.
             </para>
         
+            <para>
+            If you do not want to download all of the photographs you can select just those that you need 
+            using the standard KDE selection methods. Once you have the photographs selected click 
+            Download and then Download Selected. The Download Selected button will be greyed out until 
+            you have selected some photographs.
+            </para>
+            
         </sect2>
-                            
+        
+        <sect2>
+        <title>Selecting a Target Album</title>
+        
+            <para>
+            When you use the Download buttons in the Camera Tool a dialog will appear that allows you to 
+            select a target Album into which the photographs will be downloaded. The list of existing 
+            Albums is displayed, ordered by the Folder method (see the My Albums View for details of 
+            Album ordering). You can select the target Album from this list and then click OK.
+            </para>
+        
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="targetalbumdialog.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Target Album Selection Dialog</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+
+            <para>
+            If you want to create a new Album, into which to download the photographs, click the New 
+            Album button. The new Album will be created as a sub-Folder of the Album that is currently 
+            selected in the existing Album list. This means that if you do not want your new Album to be 
+            a sub-Folder of an existing Folder on the hard disk you must first select the My Albums 
+            entry from the very top of the existing Albums list before you click New Album.
+            </para>
+            
+            <para>
+            When you have selected the target Album, &digikam; process to download images from the 
+            camera.  
+            </para>
+            
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="cameraclientdownload.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Downloading From Camera in Progress</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+        
+        </sect2>
+        
+        <sect2>
+        <title>Deleting Photographs from the Cameras</title>
+
+            <para>
+            Once you are happy that you have downloaded all of the photographs that you want, you are ready 
+            to delete photographs from the Camera. You can delete all of the photographs in one go by 
+            clicking the Delete->Delete All button. If you want to just delete a selection of the 
+            photographs, select those that you want to delete and click Delete->Delete Selected. 
+            </para>
+
+            <para>
+            Please note that once you delete a photograph from the camera there is no way for it to be 
+            retrieved. The photographs are not moved to the KDE Trash Can, they are removed completely. 
+            It is best to double check that you have successfully downloaded a photograph into a &digikam; 
+            Album before you delete it from the camera.
+            </para>
+
+        </sect2>
+        
+        <sect2>
+        <title>Automatic Renaming </title>
+
+            <para>
+            Cameras often do not use very meaningful filenames for photographs. The filenames are usually 
+            reused once the photographs are deleted from the camera. This can lead to filename clashes if 
+            you download photographs from many shoots into the same Album. It can also be useful to include 
+            the date and time that a photograph was taken in the filename.
+            </para>
+
+            <screenshot>
+                <mediaobject>
+                    <imageobject><imagedata fileref="cameraclientadvanced.png" format="PNG"/></imageobject>
+                    <textobject><phrase>The Camera Interface Advanced Options</phrase></textobject>
+                </mediaobject>
+            </screenshot>
+            
+            <para>
+            &digikam; can automatically rename your photographs using the data and time information 
+            included by the camera in the photograph. To use this feature, click the Advance button 
+            on the Camera Interface. The Camera Interface window will expand to reveal some extra 
+            features. Select Customize Names and then enter any filename prefix you would like. 
+            Then optionally add the date and time and an a sequence number. The sequence number may 
+            be needed if you have a camera with a very fast multi-shot mode. With fast mulit-shot 
+            mode it is possible to get two photographs with exactly the same data and time.
+            </para>
+
+            <para>
+            The new filename that &digikam; will use for the photographs when they are downloaded is 
+            shown underneath the name provided by the camera in the thumbnail view. The renaming 
+            settings will be remembered next time you use the Camera Interface.
+            </para>
+                
+        </sect2>
+        
+        <sect2>
+        <title>Automatic Rotation</title>
+
+            <para>
+            If your camera embeds information about the orientation of the camera when a photograph 
+            is taken &digikam; can use this to automatically rotate the photograph when it is downloaded. 
+            Not all cameras include this information.
+            </para>
+
+            <para>
+            This automatic rotation is switched on by default and if your camera does not include the 
+            information &digikam; will leave the photograph in its original orientation. If you would 
+            like to switch off the automatic rotation click the Advanced button and deselect the Auto 
+            Orient option at the bottom of the window.
+            </para>
+
+        </sect2>
+                                    
     </sect1>
     
     <sect1 id="using-kapp-imageeditor">
