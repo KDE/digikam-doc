@@ -1005,7 +1005,7 @@
             </para>
             
             <para>
-            The undo-stack design is very simple: actions are either reversible (rotate,flip) or irreversible (rest of the actions and all of the plugin actions). The reversible undos are implemented by just saving the commands and for the irreversible undos image copies are saved into a temporary database.
+            The undo-stack design is very simple: actions are either reversible (rotate,flip) or irreversible (rest of the actions and all of the plugin actions). The reversible undos are implemented by just saving the commands and for the irreversible undos image copies are stored in plain binary cache files.
             </para>
             
         </sect2>
@@ -3387,9 +3387,9 @@
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Filters</guimenu><guimenuitem>Convert to</guimenuitem><guimenuitem>Platinium</guimenuitem>
+                <guimenu>Filters</guimenu><guimenuitem>Convert to</guimenuitem><guimenuitem>Platinum</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Convert the current image to Platinium mode.</action></para></listitem>
+            <listitem><para><action>Convert the current image to Platinum mode.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
