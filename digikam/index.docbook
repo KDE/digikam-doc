@@ -1286,7 +1286,7 @@
                     </figure>
             
                     <para>             
-                    If the current photograph contains an Exif marker section, the information contained in 
+                    If the current photograph contains an Exif marker section. The information contained in it
                     will be displayed in the Exif Viewer dialog in separate tabs corresponding to the 
                     <emphasis>Image File Directories</emphasis> (IFD) Exif sections. The sections likely to 
                     be found in a normal Exif file are as follows:
@@ -1316,14 +1316,19 @@
                         </para></listitem>
                                                                                                     
                         <listitem><para>
-                            <emphasis>Thumnail</emphasis>: display the embedded thumbnail image.
+                            <emphasis>Thumnail</emphasis>: displays the embedded thumbnail image.
                         </para></listitem>
                     
                     </itemizedlist>
+                    
+                    Some vendors add additional Exif sections, such as Canon, Fujifilm, Nikon, and Sigma. These sections
+                    contain vendor and model specific notes.
             
-                    For each Exif data displayed on each dialog tabs, the Exif Viewer provide a contextual 
-                    help. Select an item on the top and the according help will be displayed on the bottom
-                    of the dialog.
+                    For the Exif data displayed on each of the dialog tabs, the Exif Viewer provides a contextual 
+                    help. Select an item on the top and the corresponding help will be displayed at the bottom
+                    of the dialog. All fields are read-only. The comment editor can write to the Exif UserComment field, if
+                    it is present. The orientation tag is modified, if the image is rotated. 
+
                     </para>
                                 
                 </sect4>
