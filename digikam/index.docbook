@@ -62,8 +62,7 @@
 
 <abstract>
 <para>
-&digikam; is a KDE Photo Management Application with support for
-Digital Cameras.
+&digikam; is a KDE Photo Management Application with support for Digital Cameras.
 </para>
 </abstract>
 
@@ -384,9 +383,9 @@ Digital Cameras.
                 
                 <para>
                 If you have a camera that knows which way up it was when you took the picture it may add this information 
-                into the EXIF meta-data that is embedded in the image. If this is the case &digikam; can use this information 
+                into the Exif meta-data that is embedded in the image. If this is the case &digikam; can use this information 
                 to rotate your photographs so that they are the correct way up. Right-click on the thumbnail and select 
-                Auto Rotate/Flip Using EXIF Information. The Camera Tool can perform this operation automatically when it 
+                Auto Rotate/Flip Using Exif Information. The Camera Tool can perform this operation automatically when it 
                 uploads the photographs from your camera which will ensure that your photographs are always the right way 
                 up. If your camera does not include this information in to the photograph the rotate operation will do 
                 nothing.
@@ -405,8 +404,8 @@ Digital Cameras.
 
                 <para>
                 Some meta-data is attached to photographs by the camera that took the picture. This camera meta-data is 
-                stored inside the image file and is called EXIF data. To view this information right-click on a thumbnail 
-                and select View EXIF Information from the context menu.
+                stored inside the image file and is called Exif data. To view this information right-click on a thumbnail 
+                and select View Exif Information from the context menu.
                 </para>
         
                 <para>
@@ -433,13 +432,13 @@ Digital Cameras.
                 There is one more set of meta-data that &digikam; can access about a photograph. This can be accessed by 
                 right-clicking on a photograph and selecting Properties from the context menu. This dialog will tell you 
                 information about how large the photograph is and were it is on the hard disk. This dialog will also give you 
-                access to another place to put comments. This Jpeg EXIF Comment is not used by &digikam; itself but some other 
+                access to another place to put comments. This Jpeg Exif Comment is not used by &digikam; itself but some other 
                 image applications can access this comment and some digital cameras allow you set a comment while the 
                 photograph is still on the camara. In this case the comments will probably appear here. 
                 </para>
                 
                 <para>
-                Unless you have a good reason for placing comments in the EXIF field of your images it is probably best 
+                Unless you have a good reason for placing comments in the Exif field of your images it is probably best 
                 to use the main Comments/Tags dialog for adding comments to your photographs.
                 </para>
                                                                                                             
@@ -574,19 +573,20 @@ Digital Cameras.
 
     <sect1 id="using-kapp-camera">
     <title>Using a Digital Camera with &digikam;</title>
+    <anchor id="camerainterface.anchor"/>
 
         <sect2>
         <title>Introduction to Camera Interface</title>
+
+            <para>
+            Before to try to use a digital camera with &digikam; you need to setup the 
+            camera model and port using the setup interface. Please, read the 
+            <link linkend="setupcamera">Setup Camera Section</link> for more informations.
+            </para>
    
             <para>
             To be able to use your digital camera with &digikam;, connect the camera
             to your computer, switch the camera to the image display mode and turn it on. 
-            </para>
-        
-            <para>
-            Before to try to use a digital camera with &digikam; you need to setup the 
-            camera model and port using the setup interface. Please, read the Setup camera 
-            section for more informations.
             </para>
         
             <para>
@@ -625,7 +625,6 @@ Digital Cameras.
         <title>Introduction to Image Editor</title>
 
             <para>
-
             &digikam; incorporates a fast image editor with a few basic image
             editing tools. The image editor has a Tool Bar at the top and a status 
             at the bottom which shows the filename, the current filenumber, 
@@ -743,8 +742,8 @@ Digital Cameras.
 
             <para>
             Image files can have some meta-data embedded into the image file format. This meta-data can be 
-            stored in a number of standard formats. Digikam can read meta-data in the EXIF format if it is 
-            present in the file. &digikam; can also write comments into the EXIF information. 
+            stored in a number of standard formats. Digikam can read meta-data in the Exif format if it is 
+            present in the file. &digikam; can also write comments into the Exif information. 
             </para>
 
             <screenshot>
@@ -768,7 +767,7 @@ Digital Cameras.
 
             <para>
             Rotate Images and Thumbnails according to Exif tag : this will use any orientation information that 
-            your camera has included in the EXIF information to automatically rotate your photographs so that 
+            your camera has included in the Exif information to automatically rotate your photographs so that 
             they are the correct way up when displayed. It will not actually rotate the image file, only the 
             display of the image on the screen. If your camera routinely gets this orientation information 
             wrong you might like to switch this feature off.
@@ -903,7 +902,7 @@ Digital Cameras.
             
         </sect2>                
 
-        <sect2>
+        <sect2 id="setupcamera">
         <title>Camera Settings</title>
         
             <para>
@@ -912,7 +911,7 @@ Digital Cameras.
             button which tries to identify the camera connected to your computer (make
             sure that the camera is connected properly to the computer and turned on in
             the image display mode). Below this are the port settings; the currently
-            supported being Serial, USB, USB MassStorage, and FireWire.
+            supported being Serial, USB, and USB/FireWire MassStorage.
             </para>
             
             <screenshot>
@@ -956,7 +955,7 @@ Digital Cameras.
                         
         </sect2>
         
-        <sect2>
+        <sect2 id="setupmisc">
         <title>Miscellaneous Settings</title>
 
             <para>
@@ -984,620 +983,555 @@ Digital Cameras.
 
 <!-- *********************************************************************** -->
 
-<chapter id="interface">
+<chapter id="menudescriptions">
 <title>Menu Descriptions</title>
 
 <sect1>
 <title>The main &digikam; window</title>
 
-<sect2>
-<title>The Album Menu</title>
+    <sect2>
+    <title>The Album Menu</title>
 
-<para>
+        <para>
+        <variablelist>
 
-<variablelist>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>N</keycap></keycombo></shortcut>
+                <guimenu>Album</guimenu><guimenuitem>New Album</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Create a new album folder.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>N</keycap></keycombo>
-</shortcut>
-<guimenu>Album</guimenu>
-<guimenuitem>New Album</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Create a new album folder</action></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Albums</guimenu><guimenuitem>Sort Albums</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Sort all &digikam; Albums by Folder, by Collection, or by 
+            Date.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term><menuchoice>
-<guimenu>Albums</guimenu>
-<guimenuitem>Sort Albums</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Sort all &digikam; Albums by Collection, by Date, or by a flat method</action></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>F3</keycap></keycombo></shortcut>
+                <guimenu>Album</guimenu><guimenuitem>Edit Album Properties</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Edit the currently selected album title, comments and 
+            collection.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>I</keycap></keycombo>
-</shortcut>
-<guimenu>Album</guimenu>
-<guimenuitem>Add Images</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Select images to be added to the currently
-selected Album</action></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu>
+                <guimenuitem>Open in Konqueror</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Open Konqueror with the current Album path.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>F3</keycap></keycombo>
-</shortcut>
-<guimenu>Album</guimenu>
-<guimenuitem>Edit Album Properties</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Edit the currently selected album title and
-comments</action></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Find Duplicate Images</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin for find duplicate images in Albums Database. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
+        
+        <!-- Import sub menu -->
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>I</keycap></keycombo></shortcut>
+                <guimenu>Album</guimenu><guimenuitem>Import</guimenuitem><guimenuitem>Add Images</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Select images to be added to the currently selected 
+            Album.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term><menuchoice>
-<guimenu>Album</guimenu>
-<guimenuitem>Delete Album from HardDisk</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Delete selected Album and all items in it from the hard drive</action></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Import</guimenuitem><guimenuitem>Import Folders</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Select folders to be imported like Albums to the currently selected 
+            Album</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>Q</keycap></keycombo>
-</shortcut>
-<guimenu>Album</guimenu>
-<guimenuitem>Quit</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Quit &digikam;</action></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Import</guimenuitem><guimenuitem>Scan Images</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin for acquire images with a scanner. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
 
-</variablelist>
-</para>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Import</guimenuitem><guimenuitem>Screenshot</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin for take a screenshot. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
+                
+        <!-- Export sub menu -->
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Archive to 
+                CD/DVD</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin for archive Albums to CD or DVD. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>HTML export</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin for create HTML gallery with Albums. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
 
-</sect2>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Print Wizard</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin for print Album images. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
+                                
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu>
+                <guimenuitem>Delete Album/Move Album to trash</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Delete/Move to trash selected Album and all items 
+            in.</action></para></listitem> 
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>Q</keycap></keycombo></shortcut>
+                <guimenu>Album</guimenu><guimenuitem>Quit</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Quit &digikam;</action></para></listitem>
+        </varlistentry>
+        
+        </variablelist>
+        </para>
 
-<!-- *********************************************************************** -->
+    </sect2>
 
-<sect2>
-<title>The Image Menu</title>
+    <!-- *********************************************************************** -->
 
-<para>
+    <sect2>
+    <title>The Tag Menu</title>
 
-<variablelist>
+    <para>
+    <variablelist>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>F4</keycap></keycombo>
-</shortcut>
-<guimenu>Image</guimenu>
-<guimenuitem>View/Edit</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Open the currently selected image in the
-imageeditor</action></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tag</guimenu><guimenuitem>New Tag</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Create a new Tag entry in the Albums Database.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>F3</keycap></keycombo>
-</shortcut>
-<guimenu>Image</guimenu>
-<guimenuitem>Edit Image Comments</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Edit the image
-comments</action></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tag</guimenu><guimenuitem>Edit Tag Properties</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Edit the properties of the currently selected Tag.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>F6</keycap></keycombo>
-</shortcut>
-<guimenu>Image</guimenu>
-<guimenuitem>View Exif Information</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>See the exif information stored in the image</action></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tag</guimenu><guimenuitem>Delete Tag</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Remove the currently selected Tag from the Albums 
+            Database.</action></para></listitem>
+        </varlistentry>
+            
+    </variablelist>
+    </para>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Alt</keycap><keycap>Enter</keycap></keycombo>
-</shortcut>
-<guimenu>Image</guimenu>
-<guimenuitem>Properties</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>View Image
-Properties</action></para></listitem>
-</varlistentry>
+    </sect2>
+    
+    <!-- *********************************************************************** -->
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>F2</keycap></keycombo>
-</shortcut>
-<guimenu>Image</guimenu>
-<guimenuitem>Rename</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Rename the current item</action></para></listitem>
-</varlistentry>
+    <sect2>
+    <title>The Image Menu</title>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Shift</keycap><keycap>Delete</keycap></keycombo>
-</shortcut>
-<guimenu>Image</guimenu>
-<guimenuitem>Delete</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Delete selected items</action></para></listitem>
-</varlistentry>
+    <para>
+    <variablelist>
 
-</variablelist>
-</para>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>F4</keycap></keycombo></shortcut>
+                <guimenu>Image</guimenu><guimenuitem>View/Edit</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Open the currently selected image in &digikam; 
+            image editor.</action></para></listitem>
+        </varlistentry>
 
-</sect2>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>F3</keycap></keycombo></shortcut>
+                <guimenu>Image</guimenu><guimenuitem>Edit Image Comments and Tags</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Edit the currently selected image Comments and 
+            Tags.</action></para></listitem>
+        </varlistentry>
 
-<!-- *********************************************************************** -->
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>F6</keycap></keycombo></shortcut>
+                <guimenu>Image</guimenu><guimenuitem>View Exif Information</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>See Exif information stored of the currently selected 
+            image.</action></para></listitem>
+        </varlistentry>
 
-<sect2>
-<title>The Select Menu</title>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Corrected Exif Orientation Tag</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Manual Exif Orientation Tag adjustment options of the currently selected 
+            image.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Alt</keycap><keycap>Return</keycap></keycombo></shortcut>
+                <guimenu>Image</guimenu><guimenuitem>Properties</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>View General Properties, Permissions, Meta info, and Histogram of 
+            the currently selected image.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Auto Rotate/Flip using Exif information</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin menu entry for activate manually the 
+            auto rotate/flip of the currently selected images using Exif information. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
 
-<para>
-<variablelist>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Rotate</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin menu entry for rotate the currently selected 
+            images to 90/180/270 degrees. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>A</keycap></keycombo>
-</shortcut>
-<guimenu>Select</guimenu>
-<guimenuitem>Select All</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Select all images currently shown</action></para></listitem></varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Flip</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin menu entry for flip the currently selected 
+            images horizontally or vertically. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Convert to Black and White</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin menu entry for convert to black and white the 
+            currently selected images. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Email images</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin for email images with your prefered mail agent. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Adjust Time and Date</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin for adjust time and date of the currently selected images. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Set as Background</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin for to set as desktop backgroud the currently selected image. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
+                
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>F2</keycap></keycombo></shortcut>
+                <guimenu>Image</guimenu><guimenuitem>Rename</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Rename the currently selected image.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>U</keycap></keycombo>
-</shortcut>
-<guimenu>Select</guimenu>
-<guimenuitem>Select None</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Unselect all items in the current view</action></para></listitem></varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Shift</keycap><keycap>Delete</keycap></keycombo></shortcut>
+                <guimenu>Image</guimenu><guimenuitem>Delete/Move to trash</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Delete/Move to trash the currently selected images.</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>*</keycap></keycombo>
-</shortcut>
-<guimenu>Select</guimenu>
-<guimenuitem>Invert Selection</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Invert the current selection</action></para></listitem>
-</varlistentry>
+    </variablelist>
+    </para>
 
-</variablelist>
-</para>
+    </sect2>
 
-</sect2>
+    <!-- *********************************************************************** -->
 
-<!-- *********************************************************************** -->
+    <sect2>
+    <title>The Select Menu</title>
 
-<sect2>
-<title>The View Menu</title>
+    <para>
+    <variablelist>
 
-<para>
-<variablelist>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>A</keycap></keycombo></shortcut>
+                <guimenu>Select</guimenu><guimenuitem>Select All</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Select all images currently shown</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Alt</keycap><keycap>+</keycap></keycombo>
-</shortcut>
-<guimenu>View</guimenu>
-<guimenuitem>Increase Thumbnail Size</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Increase the thumbnail size</action></para></listitem>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>U</keycap></keycombo></shortcut>
+                <guimenu>Select</guimenu><guimenuitem>Select None</guimenuitem>
+            </menuchoice></term>
+        <listitem><para><action>Unselect all items in the current view</action></para></listitem>
+        </varlistentry>
 
-</varlistentry>
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Alt</keycap><keycap>-</keycap></keycombo>
-</shortcut>
-<guimenu>View</guimenu>
-<guimenuitem>Decrease Thumbnail Size</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Decrease the thumbnail size</action></para></listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>*</keycap></keycombo></shortcut>
+                <guimenu>Select</guimenu><guimenuitem>Invert Selection</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Invert the current selection</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>F</keycap></keycombo>
-</shortcut>
-<guimenu>View</guimenu>
-<guimenuitem>Toggle Full Screen</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Toggles the graphic interface in full screen mode</action></para></listitem>
-</varlistentry>
+    </variablelist>
+    </para>
 
-</variablelist>
-</para>
+    </sect2>
 
-</sect2>
+    <!-- *********************************************************************** -->
 
-<!-- *********************************************************************** -->
+    <sect2>
+    <title>The View Menu</title>
 
-<sect2>
-<title>The Camera Menu</title>
+    <para>
+    <variablelist>
 
-<para>
-Any configured digital camera will be listed here. You can use the &digikam; setup dialog for add a
-new camera in the list.
-</para>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>+</keycap></keycombo></shortcut>
+                <guimenu>View</guimenu><guimenuitem>Increase Thumbnail Size</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Increase the thumbnail size of the currently selected 
+            Album.</action></para></listitem>
+        </varlistentry>
 
-</sect2>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>-</keycap></keycombo></shortcut>
+                <guimenu>View</guimenu><guimenuitem>Decrease Thumbnail Size</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Decrease the thumbnail size of the currently selected 
+            Album.</action></para></listitem>
+        </varlistentry>
 
-<!-- *********************************************************************** -->
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>View</guimenu><guimenuitem>Sort Images</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Sort all images in current Album by Name, by Path, by Date, or by 
+            File Size.</action></para></listitem>
+        </varlistentry>
+        
+    </variablelist>
+    </para>
 
-<sect2>
-<title>The Tools Menu</title>
+    </sect2>
 
-<para>
+    <!-- *********************************************************************** -->
 
-Some installed Kipi tools plugins will be listed here. More news about the Kipi plugins can be found at this URL: <ulink url="http://digikam.sourceforge.net/plugins.html">http://digikam.sourceforge.net/plugins.html</ulink>
+    <sect2>
+    <title>The Tools Menu</title>
 
-</para>
+    <para>
+    <variablelist>
 
-</sect2>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Gamma adjustment</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Launch the Gamma Adjustment module from KDE Control 
+            Pannel.</action></para></listitem>
+        </varlistentry>
 
-<!-- *********************************************************************** -->
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Create Calendar</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin for create calendar with Album items. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
 
-<sect2>
-<title>The Settings Menu</title>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Create MPEG Slideshow</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin for create MPEG Slideshow with Album items. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Slideshow</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin for display Slideshow with Album items. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Raw Image Converter (single)</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin for convert a single RAW image. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Batch Processes</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Kipi plugin menu entries for Batch Processes currently selected images. 
+            See the dedicaced plugin manual for more informations.</action></para></listitem>
+        </varlistentry>
+    
+    </variablelist>
+    </para>
+    
+    </sect2>
+    
+    <!-- *********************************************************************** -->
 
-<para>
-<variablelist>
+    <sect2>
+    <title>The Themes Menu</title>
 
-<varlistentry>
-<term><menuchoice>
-<guimenu>Settings</guimenu>
-<guimenuitem>Configure Shortcuts</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Configure the &digikam; shortcuts</action></para></listitem>
-</varlistentry>
+    <para>
+    Any available gui themes for the main interface will be listed here. Select one item 
+    for change the current theme used by &digikam;.
+    </para>
 
-<varlistentry>
-<term><menuchoice>
-<guimenu>Settings</guimenu>
-<guimenuitem>Configure Toolbars</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Configure the &digikam; toolbars</action></para></listitem>
-</varlistentry>
+    </sect2>
+    
+    <!-- *********************************************************************** -->
 
-<varlistentry>
-<term><menuchoice>
-<guimenu>Settings</guimenu>
-<guimenuitem>Configure &digikam;</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Configure the Camera and Album Settings</action></para></listitem>
-</varlistentry>
+    <sect2>
+    <title>The Camera Menu</title>
 
-</variablelist>
-</para>
+    <para>
+    Any configured digital camera will be listed here. You can use the "Add Camera" menu entry 
+    for add a new camera in the list. Please, read the <link linkend="setupcamera">Setup Camera Section</link> 
+    for more informations.
+    </para>
 
-</sect2>
+    </sect2>
 
-<!-- *********************************************************************** -->
+    <!-- *********************************************************************** -->
 
-<sect2>
-<title>The Help Menu</title>
-&help.menu.documentation;
+    <sect2>
+    <title>The Settings Menu</title>
 
-<para>Additionally &digikam; offers this item:</para>
+    <para>
+    <variablelist>
 
-<variablelist>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Settings</guimenu><guimenuitem>Show Toolbar</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Enable or disable the main &digikam; tool bar.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Settings</guimenu><guimenuitem>Configure Shortcuts</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Configure the &digikam; shortcuts</action></para></listitem>
+        </varlistentry>
 
-<varlistentry>
-<term>
-<menuchoice>
-<guimenu>Help</guimenu>
-<guimenuitem>Tip of the Day</guimenuitem>
-</menuchoice>
-</term>
-<listitem>
-<para>This displays a dialog with useful hints for using &digikam;.</para>
-</listitem>
-</varlistentry>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Settings</guimenu><guimenuitem>Configure Toolbars</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Configure the &digikam; toolbars</action></para></listitem>
+        </varlistentry>
 
-</variablelist>
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Settings</guimenu><guimenuitem>Configure &digikam;</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Configure the Camera and Album Settings</action></para></listitem>
+        </varlistentry>
 
-</sect2>
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>F</keycap></keycombo>
+                </shortcut>
+                <guimenu>View</guimenu><guimenuitem>Toggle Full Screen</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Toggles the graphic interface in full screen mode</action></para></listitem>
+        </varlistentry>
+
+    </variablelist>
+    </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+
+    <sect2>
+    <title>The Help Menu</title>
+    &help.menu.documentation;
+
+    <para>Additionally &digikam; offers these items:</para>
+
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Help</guimenu><guimenuitem>Tip of the Day</guimenuitem>
+            </menuchoice></term>
+            <listitem><para>This displays a dialog with useful hints for using &digikam;.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Help</guimenu><guimenuitem>Kipi' Plugins Handbooks</guimenuitem>
+            </menuchoice></term>
+            <listitem><para>Launch the KDE help interface with the Kipi's plugins handbooks.</para></listitem>
+        </varlistentry>
+    
+    </variablelist>
+
+    </sect2>
 
 </sect1>
 
 <!-- *********************************************************************** -->
 
-<sect1 id="kapp-camera">
-<title>The Camera window</title>
-
-<sect2>
-<title>The Camera Menu</title>
-
-<para>
-<variablelist>
-
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>D</keycap></keycombo>
-</shortcut>
-<guimenu>Camera</guimenu>
-<guimenuitem>Connect</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Connect/Disconnect to/from the
-camera</action></para></listitem>
-</varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<guimenu>Camera</guimenu>
-<guimenuitem>Download</guimenuitem>
-<guimenuitem>Selected</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Download the selected
-images</action></para></listitem>
-</varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<guimenu>Camera</guimenu>
-<guimenuitem>Download</guimenuitem>
-<guimenuitem>All</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Download all images in the
-camera</action></para></listitem></varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<guimenu>Camera</guimenu>
-<guimenuitem>Delete</guimenuitem>
-<guimenuitem>Selected</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Delete the selected
-images</action></para></listitem>
-</varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<guimenu>Camera</guimenu>
-<guimenuitem>Delete</guimenuitem>
-<guimenuitem>All</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Delete all images from the
-camera</action></para></listitem></varlistentry>
-
-
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>U</keycap></keycombo>
-</shortcut>
-<guimenu>Camera</guimenu>
-<guimenuitem>Upload</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Upload images into the
-camera</action></para></listitem>
-</varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Esc</keycap></keycombo>
-</shortcut>
-<guimenu>Camera</guimenu>
-<guimenuitem>Stop</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Cancel any camera operations being
-performed</action></para></listitem>
-</varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>F3</keycap></keycombo>
-</shortcut>
-<guimenu>Camera</guimenu>
-<guimenuitem>Information</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Show information about the camera and the
-camera driver</action></para></listitem>
-</varlistentry>
-
-
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>Q</keycap></keycombo>
-</shortcut>
-<guimenu>Camera</guimenu>
-<guimenuitem>Quit</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Quits the camera interface</action></para></listitem>
-</varlistentry>
-
-</variablelist>
-</para>
-
-</sect2>
-
-<!-- *********************************************************************** -->
-
-<sect2>
-<title>The Select Menu</title>
-
-<para>
-<variablelist>
-
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>A</keycap></keycombo>
-</shortcut>
-<guimenu>Select</guimenu>
-<guimenuitem>Select All</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Select all images currently
-shown</action></para></listitem></varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>U</keycap></keycombo>
-</shortcut>
-<guimenu>Select</guimenu>
-<guimenuitem>Select None</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Unselect all items in the current
-view</action></para></listitem></varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>*</keycap></keycombo>
-</shortcut>
-<guimenu>Select</guimenu>
-<guimenuitem>Invert Selection</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Invert the current
-selection</action></para></listitem>
-</varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>/</keycap></keycombo>
-</shortcut>
-<guimenu>Select</guimenu>
-<guimenuitem>Select New Items</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Select only those items which haven't been
-downloaded yet</action></para></listitem></varlistentry>
-
-</variablelist>
-</para>
-
-</sect2>
-
-<!-- *********************************************************************** -->
-
-<sect2>
-<title>The View Menu</title>
-
-<para>
-<variablelist>
-
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Alt</keycap><keycap>+</keycap></keycombo>
-</shortcut>
-<guimenu>View</guimenu>
-<guimenuitem>Increase Thumbnail Size</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Increase the thumbnail size</action></para></listitem>
-
-</varlistentry>
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Alt</keycap><keycap>-</keycap></keycombo>
-</shortcut>
-<guimenu>View</guimenu>
-<guimenuitem>Decrease Thumbnail Size</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Decrease the thumbnail size</action></para></listitem>
-</varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<shortcut>
-<keycombo><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>F</keycap></keycombo>
-</shortcut>
-<guimenu>View</guimenu>
-<guimenuitem>Toggle Full Screen</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Toggles the graphic interface in full screen mode</action></para></listitem></varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<guimenu>View</guimenu>
-<guimenuitem>Hide Folders</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Toggles showing the camera
-folders</action></para></listitem></varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<guimenu>View</guimenu>
-<guimenuitem>Hide StatusBar</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Toggles showing the statusbar</action></para></listitem>
-</varlistentry>
-
-</variablelist>
-</para>
-
-</sect2>
-
-<!-- *********************************************************************** -->
-
-<sect2>
-<title>The Settings Menu</title>
-
-<para>
-<variablelist>
-
-<varlistentry>
-<term><menuchoice>
-<guimenu>Settings</guimenu>
-<guimenuitem>Configure Shortcuts</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Configure the digital camera client shortcuts</action></para></listitem>
-</varlistentry>
-
-<varlistentry>
-<term><menuchoice>
-<guimenu>Settings</guimenu>
-<guimenuitem>Configure Toolbars</guimenuitem>
-</menuchoice></term>
-<listitem><para><action>Configure the digital camera client toolbars</action></para></listitem>
-</varlistentry>
-
-</variablelist>
-</para>
-
-</sect2>
-
-</sect1>
-
-<!-- *********************************************************************** -->
-
-<sect1 id="kapp-imageeditor">
+<sect1>
 <title>The Image Editor</title>
-
-<!-- *********************************************************************** -->
 
 <sect2>
 <title>Shortcuts for the image editor</title>
