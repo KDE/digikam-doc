@@ -728,7 +728,7 @@
             </sect3> 
 
             <sect3 id="using-kapp-imagemetadata">
-            <title>Photograph Meta-Data and Properties</title>
+            <title>Photograph Meta-Data, Properties and Histogram</title>
 
                 <sect4 id="using-kapp-tagscommentsedit">
                 <title>Editing Tags and Comments</title>
@@ -744,8 +744,8 @@
                     <para>
                     Some meta-data is attached to photographs by the camera that took the picture. This 
                     camera meta-data is stored inside the image file and is called Exif data. To view this 
-                    information right-click on a thumbnail and select <guilabel>Properties and 
-                    Meta-Data</guilabel> from the context menu.
+                    information right-click on a thumbnail and select <guilabel>Properties</guilabel> from 
+                    the context menu.
                     </para>
         
                     <para>
@@ -780,14 +780,14 @@
                 </sect4>                    
                 
                 <sect4 id="using-kapp-propertiesmetadatahistogram">
-                <title>Displaying Properties, Meta-Data, and Histogram</title>
+                <title>Displaying Properties, embedded Meta-Data, and Histogram</title>
             
                     <anchor id="propertiesmetadatahistogram.anchor"/>
                 
                     <para>
-                    There is one more set of meta-data that &digikam; can access about a photograph. This can 
-                    be accessed by right-clicking on a photograph and selecting <guilabel>Properties 
-                    and Meta-Data</guilabel> from the context menu. 
+                    There is one more set of embeded meta-data that &digikam; can access about a photograph. 
+                    This can be accessed by right-clicking on a photograph and selecting 
+                    <guilabel>Properties</guilabel> from the context menu. 
                     </para>
                 
                     <para>
@@ -796,17 +796,14 @@
                     </para>
                 
                     <figure>
-                        <title>The Image Properties Dialog General Tab</title>
-                        <graphic srccredit="The Image Properties Dialog General Tab" 
+                        <title>The Image Properties Dialog with General Tab</title>
+                        <graphic srccredit="The Image Properties Dialog with General Tab" 
                         fileref="imageproperties3.png"/>
                     </figure>
                 
                     <para>
                     This dialog will give you same Exif information provide in Exif Viewer dialog descripted 
-                    in the <link linkend="using-kapp-exifviewertool"> Exif Viewer section</link>. All data 
-                    are available in the same page. Expanding a main Exif section to see the Exif tags 
-                    relevant. If you press with the right mouse button under the Exif thumbnail, you can
-                    corrected the Exif orientation tag.
+                    in the <link linkend="using-kapp-exifviewertool"> Exif Viewer section</link>.
                     </para>
                     
                     <figure>
@@ -1135,8 +1132,8 @@
             If your camera embeds information about the orientation of the camera when a photograph 
             is taken &digikam; can use this to automatically rotate the photograph when it is downloaded. 
             Not all cameras include this information. See the <link linkend="using-kapp-imagemetadata">
-            Photograph Meta-Data and Properties</link> section for more detail about information your 
-            camera may have embedded in your photographs.
+            Photograph Meta-Data, Properties and Histogram</link> section for more detail about 
+            information your camera may have embedded in your photographs.
             </para>
 
             <para>
@@ -1320,11 +1317,14 @@
                 <anchor id="commentsedittool.anchor"/>
 
                 <para>
+                
+                FIXME!
+                
                 You can view some of the properties of your photograph by selecting the options in the 
                 <guilabel>Image</guilabel> menu. 
                 You can edit the comments set for this photograph using 
                 <menuchoice><guimenu>Image</guimenu>
-                <guimenuitem>Edit Image Comments</guimenuitem></menuchoice>, the 
+                <guimenuitem>Edit Comments and Tags</guimenuitem></menuchoice>, the 
                 new comments  will be remembered when you close the photograph, even if you do not save 
                 the photograph first.
                 </para>
@@ -1363,9 +1363,11 @@
                     <para>             
                     You can review embedded Exif information for the image using 
                     <menuchoice><guimenu>Image</guimenu>
-                    <guimenuitem>Exif Information</guimenuitem></menuchoice>. 
+                    <guimenuitem>Properties</guimenuitem></menuchoice> and <guilabel>Exif</guilabel> page. 
                     The Exif Viewer is purely informational: nothing you do with it will cause any 
-                    change to the Exif sections.
+                    change to the Exif sections. All data are available in the same page. Expanding 
+                    a main Exif section to see the Exif tags relevant. If you press with the right 
+                    mouse button under the Exif thumbnail, you can corrected the Exif orientation tag.
                     </para>
             
                     <figure>
@@ -1375,9 +1377,9 @@
             
                     <para>             
                     If the current photograph contains an Exif marker section, the information contained in it
-                    will be displayed in the Exif Viewer dialog in separate tabs corresponding to the 
-                    <emphasis>Image File Directories</emphasis> (IFD) Exif sections. The sections likely to 
-                    be found in a normal Exif file are as follows:
+                    will be displayed in the Exif Viewer dialog with a treeview where each section corresponding 
+                    to the <emphasis>Image File Directories</emphasis> (IFD) Exif sections. The sections likely 
+                    to be found in a normal Exif file are as follows:
                     
                     <itemizedlist>
             
@@ -1414,11 +1416,9 @@
                     </para>
                     
                     <para>
-                    For the Exif data displayed on each of the dialog tabs, the Exif Viewer provides a contextual 
-                    help. Select an item on the top and the corresponding help will be displayed at the bottom
-                    of the dialog. All fields are read-only. The comment editor can write to the Exif 
-                    UserComment field, if it is present. The orientation tag is modified, if the image 
-                    is rotated.
+                    For the Exif data displayed, Exif Viewer provides a contextual help. Select an 
+                    item on the top and the corresponding help can be displayed with the "What's This?" 
+                    option of the dialog.
                     </para>
                                 
                 </sect4>
@@ -1433,11 +1433,15 @@
                 <para>
                 You can view the file properties using 
                 <menuchoice><guimenu>Image</guimenu>
-                <guimenuitem>File Properties</guimenuitem></menuchoice>. This option launch the 
+                <guimenuitem>Properties</guimenuitem></menuchoice> and <guilabel>General</guilabel> tab. 
+                
+                FIXME!
+                
+                This option launch the 
                 KDE standard File Properties dialog like in <application>Konqueror</application>. This dialog 
                 will also allow you to see non Exif Meta-Data embeded in the image. See the 
-                <link linkend="using-kapp-imagemetadata">Photograph Meta-Data and Properties</link> section for 
-                more detail about information embedded in your photographs.
+                <link linkend="using-kapp-imagemetadata">Photograph Meta-Data, Properties and Histogram</link> 
+                section for more detail about information embedded in your photographs.
                 </para>
             
             </sect3>
@@ -1450,10 +1454,10 @@
                 <para>
                 If you are interested in the detailed histogram of your photograph you can view it using 
                 <menuchoice><guimenu>Image</guimenu>
-                <guimenuitem>Histogram</guimenuitem></menuchoice>. The histogram for a image shows the 
-                amount of each colour that is present and their different amplitudes within the image. 
-                If your photograph has a colour cast you might be able to see what is wrong by looking 
-                at the histogram.
+                <guimenuitem>Properties</guimenuitem></menuchoice> and <guilabel>Histogram</guilabel> page. 
+                The histogram for a image shows the amount of each colour that is present and their different 
+                amplitudes within the image. If your photograph has a colour cast you might be able to see 
+                what is wrong by looking at the histogram.
                 </para>
             
                 <para>
@@ -1544,8 +1548,8 @@
                     </para></listitem>
 
                     <listitem><para>
-                        Use the spin button entries below the histogram area. Left entry is bottom of range and right 
-                        entry is top of range.  
+                        Use the spin button entries below the histogram area. Left entry is bottom of range 
+                        and right entry is top of range.  
                     </para></listitem>
             
                 </itemizedlist>
@@ -1584,8 +1588,8 @@
                                                       
                 </itemizedlist>
 
-                With <guilabel>Colors</guilabel> channel mode, this informations are updated with the foreground color 
-                selected with <guilabel>Color</guilabel> option.
+                With <guilabel>Colors</guilabel> channel mode, this informations are updated with the 
+                foreground color selected with <guilabel>Color</guilabel> option.
                 </para>
         
             </sect3>
@@ -2632,10 +2636,10 @@
         <varlistentry>
             <term><menuchoice>
                 <shortcut><keycombo><keycap>Alt</keycap><keycap>Return</keycap></keycombo></shortcut>
-                <guimenu>Image</guimenu><guimenuitem>Properties and Meta-Data</guimenuitem>
+                <guimenu>Image</guimenu><guimenuitem>Properties</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>View General Properties, Permissions, Meta-Data, Exif information, and 
-            Histogram of the currently selected image.</action></para></listitem>
+            <listitem><para><action>View General Properties, Permissions, embedded Meta-Data, Exif information, 
+            and Histogram of the currently selected image.</action></para></listitem>
         </varlistentry>
         
         <varlistentry>
@@ -3231,37 +3235,21 @@
         <varlistentry>
             <term><menuchoice>
                 <shortcut><keycombo><keycap>F3</keycap></keycombo></shortcut>
-                <guimenu>Image</guimenu><guimenuitem>Edit Image Comments</guimenuitem>
+                <guimenu>Image</guimenu><guimenuitem>Edit Comments and Tags</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Launch the edit comments dialog for the current 
-            image.</action></para></listitem>
-        </varlistentry>
-
-        <varlistentry>
-            <term><menuchoice>
-                <shortcut><keycombo><keycap>F6</keycap></keycombo></shortcut>
-                <guimenu>Image</guimenu><guimenuitem>Exif Information</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>Display Exif information of the current image.</action></para></listitem>
+            <listitem><para><action>Edit the comments and tags of the currently 
+            selected image.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
                 <shortcut><keycombo><keycap>Alt</keycap><keycap>Return</keycap></keycombo></shortcut>
-                <guimenu>Image</guimenu><guimenuitem>File Properties</guimenuitem>
+                <guimenu>Image</guimenu><guimenuitem>Properties</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>View General Properties, Permissions, and Meta info of 
-            the current image.</action></para></listitem>
+            <listitem><para><action>View General Properties, Permissions, embedded Meta-Data, Exif information, 
+            and Histogram of the currently selected image.</action></para></listitem>
         </varlistentry>
 
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Image</guimenu><guimenuitem>Histogram</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>Launch the Histogram Viever for the current 
-            image.</action></para></listitem>
-        </varlistentry>
-                            
     </variablelist>
     </para>
 
