@@ -759,7 +759,7 @@
             </para>
         
             <para>
-            When you start the Camera Interface, it will try to connect to the Camera. For some cameras this connection phase can take a little while. When connected a "Ready" indicator will appear and thumbnails of any photographs on the camera will be displayed. Some cameras cannot provide thumbnails of the photographs, if this is the case you will only see the filenames and an icon for each photograph.
+            When you start the Camera Interface, it will try to connect to the Camera. For some cameras this connection phase can take a little while. When connected a <guilabel>Ready</guilabel> indicator will appear and thumbnails of any photographs on the camera will be displayed. Some cameras cannot provide thumbnails of the photographs, if this is the case you will only see the filenames and an icon for each photograph.
             </para>
             
             <figure>
@@ -769,6 +769,25 @@
                 
         </sect2>
 
+        <sect2>
+        <title>Getting Informations About Photographs from the Cameras</title>
+
+            <para>
+            Before to download photographs on your computer, you can need to see camera item informations. Using the 
+            <menuchoice><guimenuitem>Properties</guimenuitem></menuchoice> from Camera Interface pop-up menu will launch camera item properties dialog.
+            </para>
+
+            <figure>
+                <title>The Camera Item Properties Dialog</title>
+                <graphic srccredit="The Camera Item Properties Dialog" fileref="cameraclientitemproperties.png"/>
+            </figure>
+
+            <para>
+            This dialog display file properties informations used internally by camera to store item. A flag indicate too if the item have already donwloaded to you computer. Note all these information can be unavailable with some digital cameras.
+            </para>            
+            
+        </sect2>
+        
         <sect2>
         <title>Downloading Photographs</title>
             
@@ -831,7 +850,7 @@
         </sect2>
         
         <sect2>
-        <title>Automatic Renaming </title>
+        <title>Automatic Renaming</title>
 
             <para>
             Cameras often do not use very meaningful filenames for photographs. The filenames are usually reused once the photographs have been deleted from the camera. This can lead to filename clashes if you download photographs from many shoots into the same Album. It can also be useful to include the date and time that a photograph was taken in the filename.
@@ -3048,6 +3067,22 @@
             and Histogram of the currently selected image.</action></para></listitem>
         </varlistentry>
 
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Apply Texture</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to apply decorative texture to the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/texture.html">Apply Texture manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>      
+        
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Image</guimenu><guimenuitem>Add Border</guimenuitem>
