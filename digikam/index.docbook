@@ -1027,17 +1027,17 @@
         <title>Undoing/Redoing Actions</title>
             
             <para>
-            Almost anything you do to an image in Image Editor can be undone/redone. You can undo the most recent action by choosing <menuchoice><guimenu>Edit</guimenu><guimenuitem>Cancel</guimenuitem></menuchoice>, and redo by <menuchoice><guimenu>Edit</guimenu><guimenuitem>Redo</guimenuitem></menuchoice>
+            Almost anything you do to an image in Image Editor can be undone/redone. You can undo the most recent action by choosing <menuchoice><guimenu>Edit</guimenu><guimenuitem>Undo</guimenuitem></menuchoice>, and redo by <menuchoice><guimenu>Edit</guimenu><guimenuitem>Redo</guimenuitem></menuchoice>
             </para>
             
             <para>
             If these are done so frequently that you really should memorize the keyboard shortcuts, <guilabel>Ctrl-Z</guilabel> to undoing action, and <guilabel>Ctrl-Shift-Z</guilabel> to redoing action.
             </para>
-            
+
             <para>
-            The undo/redo-stack design is very simple: actions are either reversible (rotate,flip) or irreversible (rest of the actions and all of the plugin actions). The reversible undos/redos are implemented by just saving the commands and for the irreversible undos/redos image copies are stored in plain binary cache files.
+            To  get a popup menu with the available undo/redo actions, you have to press the left mouse button at the undo or redo icon in the toolbar and hold it down for a moment. If you choose one of the menu items, all undo/redo actions until the choosen one are done.
             </para>
-            
+                        
         </sect2>
         
         <sect2>
