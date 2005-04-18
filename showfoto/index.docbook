@@ -465,7 +465,7 @@
                 </para>
             
                 <para>
-                The Histogram Viewer shows you informations about the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram-based color correction, use the Adjust Levels Image Editor plugin. This plugin is part of the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>. For more information about using Plugins in &showfoto; see the <link linkend="using-kapp-setup">Configuration</link> section.
+                The Histogram Viewer shows you informations about the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram-based color correction, use the Adjust Levels image plugin. This plugin is part of the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>. For more information about using Plugins in &showfoto; see the <link linkend="using-kapp-setup">Configuration</link> section.
                 </para>
                                                 
                 <figure>
@@ -1228,7 +1228,11 @@
             </para>
             
             <para>
-            By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background colour you can select one here. You can also turn off the ToolBar when &showfoto; is in full screen mode.
+            By default the editor will use a black background behind photographs when they are displayed. If you prefer a different background colour you can select one here.
+            </para>
+
+            <para>
+            Other options manage user interface rules. You can control how &showfoto; will behave when you delete a photograph. You can also turn off the ToolBar and Thumbar when &showfoto; is in full screen mode. Too, you can switch off the display of the splash screen when &showfoto; loads. This may speed up the start time very slightly.
             </para>
 
             <figure>
@@ -1431,7 +1435,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to apply decorative texture to the current image.
+                    digiKam image plugin to apply decorative texture to the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1447,7 +1451,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to add a decorative border around the current image.
+                    digiKam image plugin to add a decorative border around the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1463,7 +1467,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to insert text in the current image.
+                    digiKam image plugin to insert text in the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1479,7 +1483,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin for apply a template to the current image.
+                    digiKam image plugin for apply a template to the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1575,7 +1579,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to adjust levels manually on the current image.
+                    digiKam image plugin to adjust levels manually on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1592,7 +1596,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to adjust curves manually on the current image.
+                    digiKam image plugin to adjust curves manually on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1608,7 +1612,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to mix color channels on the current image.
+                    digiKam image plugin to mix color channels on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1624,7 +1628,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to adjust white color balance on the current image.
+                    digiKam image plugin to adjust white color balance on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1664,7 +1668,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to operate an Unsharp mask on the current image.
+                    digiKam image plugin to operate an Unsharp mask on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1680,7 +1684,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to correct lens distortion of the current image.
+                    digiKam image plugin to correct lens distortion of the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1696,7 +1700,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to reduce artefacts on the current image.
+                    digiKam image plugin to reduce artefacts on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1712,7 +1716,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to remove unwanted area on the current image.
+                    digiKam image plugin to remove unwanted area on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1728,7 +1732,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to reduce the noise on the current image with using a Despeckle
+                    digiKam image plugin to reduce the noise on the current image with using a Despeckle
                     filter.
                 </action></para>
                 <para>
@@ -1745,7 +1749,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to correct vignetting of the current image.
+                    digiKam image plugin to correct vignetting of the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1832,11 +1836,27 @@
                 
         <varlistentry>
             <term><menuchoice>
+                <guimenu>Transform</guimenu><guimenuitem>Blowup</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    digiKam image plugin to blow up a photograph without less image quality.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/blowup.html">Blowup manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>            
+        </varlistentry>        
+        
+        <varlistentry>
+            <term><menuchoice>
                 <guimenu>Transform</guimenu><guimenuitem>Shear</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to shear the current image.horizontally or vertically.
+                    digiKam image plugin to shear the current image.horizontally or vertically.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1852,7 +1872,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to rotate the current image by any angle in degrees.
+                    digiKam image plugin to rotate the current image by any angle in degrees.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1868,7 +1888,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to adjust perspective of the current image.
+                    digiKam image plugin to adjust perspective of the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1949,7 +1969,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to add Rain Drops on the current image.
+                    digiKam image plugin to add Rain Drops on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1965,7 +1985,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to simulate infrared film on the current image.
+                    digiKam image plugin to simulate infrared film on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1981,7 +2001,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to simulate Oil Painting on the current image.
+                    digiKam image plugin to simulate Oil Painting on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -1997,7 +2017,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to Emboss the current image.
+                    digiKam image plugin to Emboss the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -2013,7 +2033,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to Solarize the current image.
+                    digiKam image plugin to Solarize the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -2029,7 +2049,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to apply distortion special effects on the current image.
+                    digiKam image plugin to apply distortion special effects on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -2045,7 +2065,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin for to adding Film Grain on the current image.
+                    digiKam image plugin for to adding Film Grain on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -2061,7 +2081,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to apply blurring special effects on the current image.
+                    digiKam image plugin to apply blurring special effects on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -2077,7 +2097,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to simulate Charcoal Drawing on the current image.
+                    digiKam image plugin to simulate Charcoal Drawing on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
