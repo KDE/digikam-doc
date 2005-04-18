@@ -43,7 +43,7 @@
 <legalnotice>&FDLNotice;</legalnotice>
 
 <date>2005-xx-xx</date>
-<releaseinfo>0.7.3</releaseinfo>
+<releaseinfo>0.2.0</releaseinfo>
 
 <abstract>
     
@@ -83,9 +83,9 @@
        <title>About &showfoto;</title>
 
        <para>
-       TODO
+       &showfoto; is a fast Image Editor with a few basic image editing tools. You can use it to view your photographs, and make corrections and alterations.
        </para>
-      
+            
        </sect2>
 
        <sect2>
@@ -126,7 +126,7 @@
 
        <para>
        The best way to start getting involved with &showfoto; is to join the Developers Mailing List.
-       <ulink url="http://lists.sourceforge.net/lists/listinfo/digikam-devel">digiKam Developer Mailing 
+       <ulink url="http://lists.sourceforge.net/lists/listinfo/digikam-devel">&showfoto; Developer Mailing 
        List joining instructions.</ulink>
        </para>
        </sect2>
@@ -144,7 +144,7 @@
         </para>
 
         <para>
-        PNG is an image format that was developed as a replacement for a number of older, in the 1990's widely used, image file formats. It is a lossless format like TIFF but it is much more compact and can save you disk space. Although your camera is unlikely to support PNG, some people like to convert their photographs to PNG as soon as they get them on their computer. Unlike JPEG, PNG images do not loose quality every time you re-encode them after alteration. &showfoto; fully supports PNG images and the Batch Processing Images Plugin can convert a batch of images from any supported format to PNG in one step. See the <link linkend="using-kapp-setup">Configuration</link> section for information about using plugins with &showfoto;. For more information about the PNG format see the <ulink url="http://www.libpng.org/pub/png/">PNG homepage</ulink>.
+        PNG is an image format that was developed as a replacement for a number of older, in the 1990's widely used, image file formats. It is a lossless format like TIFF but it is much more compact and can save you disk space. Although your camera is unlikely to support PNG, some people like to convert their photographs to PNG as soon as they get them on their computer. Unlike JPEG, PNG images do not loose quality every time you re-encode them after alteration. For more information about the PNG format see the <ulink url="http://www.libpng.org/pub/png/">PNG homepage</ulink>.
         </para>
 
         </sect2>
@@ -157,7 +157,7 @@
         </para>
 
         <para>
-        This dependence on other libraries means that it is not possible to give a definitive list of all of the formats that will be available on your system. At the very least JPEG and TIFF will be available.
+        This dependence on other libraries means that it is not possible to give a definitive list of all of the formats that will be available on your system. At the very least JPEG, PNG, and TIFF will be available.
         </para>
 
         </sect2>
@@ -168,7 +168,7 @@
     <title>Supported Plugins</title>
 
         <para>
-        One of the nicest things about &showfoto; is how easily its functionality can be extended, by using <emphasis>digiKam Image Editor Plugins</emphasis>: these plugins add new image manipulation options. The <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink> is dedicated to providing a collection of tools using this architecture. Image Editor Plugins setup is described in this <link linkend="setupeditor">section</link>.
+        One of the nicest things about &showfoto; is how easily its functionality can be extended, by using <emphasis>digiKam Image Editor Plugins</emphasis>: these plugins add new image manipulation options. The <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink> is dedicated to providing a collection of tools using this architecture. Image Editor Plugins setup is described in this <link linkend="setupplugins">section</link>.
         </para>
 
                                     
@@ -193,20 +193,16 @@
         <title>Introduction to Image Editor</title>
 
             <para>
-            &showfoto; incorporates a fast Image Editor with a few basic image editing tools. You can use the Image Editor to view your photographs and to make corrections and alterations. The Image Editor can be accessed either by double clicking on a thumbnail in the Image Window or by right-clicking on a thumbnail and selecting <guilabel>View/Edit</guilabel> from the context menu.
-            </para>
-
-            <para>
-            The Image Editor provides a number of tools that enable you to adjust a photograph. Some of these tools are provided by plugins to &showfoto;. So they may not be available by default on your distribution. See the <link linkend="setupeditor">Setup Image Editor Section</link> for more details about &showfoto; Image Editor plugins.
+            &showfoto; provides a number of tools that enable you to adjust a photograph. Some of these tools are provided by plugins to &showfoto;. So they may not be available by default on your distribution. See the <link linkend="setupplugins">Setup Plugins Section</link> for more details about &showfoto; plugins.
             </para>
             
             <figure>
-                <title>The Image Editor Window</title>
-                <graphic srccredit="The image editor window" fileref="imageeditor.png"/>
+                <title>The main Window</title>
+                <graphic srccredit="The Main Window" fileref="imageeditor.png"/>
             </figure>
             
             <para>
-            The image editor has just one main window with:
+            &showfoto; has just one main window with:
             
             <itemizedlist>
             
@@ -217,7 +213,11 @@
                 <listitem><para>
                 A Menu Bar across the top and below that a Tool Bar that provides quick access to some commonly used functions.
                 </para></listitem>
-            
+                
+                <listitem><para>
+                A thumbs bar on the right shows the preview of currents image files loaded. Just right click with mouse to change the current image in editor.
+                </para></listitem>
+                            
             </itemizedlist>
             </para>
                         
@@ -340,7 +340,7 @@
 
             <para>
             <menuchoice><guimenu>View</guimenu>
-            <guimenuitem>Toggle Full Screen</guimenuitem></menuchoice> will display the photograph using the full screen mode. You can move back to the normal view by pressing the <keycombo><keycap>Esc</keycap></keycombo> key. By default the Tool Bar is still displayed even in Full Screen Mode. If you would prefer that the Tool Bar is not displayed you can turn it off in the Configure &showfoto; dialog accessed from the main &showfoto; window, see the <link linkend="setupeditor">Setup Image Editor Section</link>.
+            <guimenuitem>Toggle Full Screen</guimenuitem></menuchoice> will display the photograph using the full screen mode. You can move back to the normal view by pressing the <keycombo><keycap>Esc</keycap></keycombo> key. By default the Tool Bar is still displayed even in Full Screen Mode. If you would prefer that the Tool Bar is not displayed you can turn it off in the Configure &showfoto; dialog accessed from the main &showfoto; window, see the <link linkend="setupgeneral">Setup General Section</link>.
             </para>
         
         </sect2>
@@ -447,7 +447,7 @@
                 You can view the file properties using 
                 <menuchoice><guimenu>Image</guimenu>
                 <guimenuitem>Properties</guimenuitem></menuchoice> and <guilabel>General</guilabel> page. 
-                This page allow you to see a large image thumbnail, general image and file system informations, and the &showfoto; Meta-Data.
+                This page allow you to see a large image thumbnail, general image and file system informations.
                 </para>
             
             </sect3>
@@ -504,7 +504,7 @@
                 </para>
             
                 <para> 
-                With the <guilabel>Rendering</guilabel> option, you can determine whether the histogram will be displayed using the <guilabel>Full Image</guilabel> data or only with the current <guilabel>Image Selection</guilabel>. This option can only be enabled, if you have previously selected an image region with Image Editor.
+                With the <guilabel>Rendering</guilabel> option, you can determine whether the histogram will be displayed using the <guilabel>Full Image</guilabel> data or only with the current <guilabel>Image Selection</guilabel>. This option can only be enabled, if you have previously selected an image region with editor.
                 </para>
 
                 <para> 
@@ -643,7 +643,7 @@
                 <title>Manual Crop</title>
 
                     <para>
-                    Cropping a photograph is a common operation and the Image Editor makes it very easy. To crop a photograph simple drag a rectangle over the image by holding down the left mouse button and moving the mouse. You will see a wire frame rectangle appear as you move the mouse.
+                    Cropping a photograph is a common operation and the &showfoto; makes it very easy. To crop a photograph simple drag a rectangle over the image by holding down the left mouse button and moving the mouse. You will see a wire frame rectangle appear as you move the mouse.
                     </para>
             
                     <figure>
@@ -1012,7 +1012,7 @@
             </figure>
 
             <para>
-            If you have the Adjust Levels plugin installed (see the <link linkend="setupeditor">Setup Image Editor Section</link>) you will have additional entry in the Fix menu called 
+            If you have the Adjust Levels plugin installed (see the <link linkend="setupplugins">Setup Plugins Section</link>) you will have additional entry in the Fix menu called 
             <menuchoice><guimenu>Fix</guimenu>
             <guimenuitem>Colors</guimenuitem>
             <guimenuitem>Levels Adjust</guimenuitem></menuchoice>. This tools provides an integrated way of seeing the results of adjusting multiple levels and also enables you to save level settings for application to multiple photographs. This can be useful if your camera or scanner often makes the same mistakes and you want to apply the same corrections. See the dedicated <ulink url="help:/digikamimageplugins/adjustlevels.html">Adjust Levels manual</ulink> for more information.
@@ -1173,7 +1173,7 @@
             </tgroup></informaltable>
                                                         
             <para>
-             Many other filters and special effects are available if you have the additional Image Editor Plugins installed (see the <link linkend="setupeditor">Setup Image Editor Section</link>), like Film Grain, Rain Drops, Solarize, Charcoal Drawing, etc. 
+             Many other filters and special effects are available if you have the additional Image Editor Plugins installed (see the <link linkend="setupplugins">Setup Plugins Section</link>), like Film Grain, Rain Drops, Solarize, Charcoal Drawing, etc. 
             </para>
 
             <figure>
@@ -1212,32 +1212,9 @@
         <guimenuitem>Configure &showfoto;</guimenuitem></menuchoice> from the Menu Bar. The configuration dialog is separated into eight pages. You can change between these pages by clicking on the icons on the left-hand side of the dialog.
         </para>
 
-        <sect2 id="setupalbum">
+        <sect2 id="setupgeneral">
         <title>General Settings</title>
 
-            <para>
-            TODO
-            </para>
-
-            <figure>
-                <title>The General Settings</title>
-                <graphic srccredit="The general Settings" fileref="setupgeneral.png"/>
-            </figure>
-                        
-        </sect2>
-        
-        <sect2 id="setupeditor">
-        <title>Image Editor Settings</title>
-
-            <para>
-            In the early versions of &showfoto; the Image Editor was just a viewer for photographs, but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you to control how the Image Editor will behave.
-            </para>
-
-            <figure>
-                <title>The Image Editor Settings</title>
-                <graphic srccredit="The Image Editor Settings" fileref="setupimageeditor.png"/>
-            </figure>
-            
             <para>
             When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the <guilabel>JPEG quality</guilabel> slider  (1: low quality / 100: high quality and no compression).
             </para>
@@ -1253,6 +1230,25 @@
             <para>
             By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background colour you can select one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
             </para>
+
+            <figure>
+                <title>The General Settings</title>
+                <graphic srccredit="The general Settings" fileref="setupgeneral.png"/>
+            </figure>
+                        
+        </sect2>
+        
+        <sect2 id="setupplugins">
+        <title>Plugins Settings</title>
+
+            <para>
+            In the early versions of &showfoto; the Image Editor was just a viewer for photographs, but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you to control how the Image Editor will behave.
+            </para>
+
+            <figure>
+                <title>The Plugins Settings</title>
+                <graphic srccredit="The Plugins Settings" fileref="setupimageeditor.png"/>
+            </figure>
             
             <para>
             The Image Editor only implements some very simple photo manipulation tools in the core application. For an easy development of more manipulation tools the Image Editor supports a plugin interface. If your distribution has installed the additional Image Editor plugins they will be listed in the Image Plugins list. You can enable or disable these plugins that you see here.
