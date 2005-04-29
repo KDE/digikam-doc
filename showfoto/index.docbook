@@ -232,13 +232,13 @@
             
             <itemizedlist>
             
-                <listitem><para>(1) : First Current Album Image.</para></listitem>
+                <listitem><para>(1) : First Image in current list.</para></listitem>
 
                 <listitem><para>(2) : Previous Image.</para></listitem>
                    
                 <listitem><para>(3) : Next Image.</para></listitem>
                 
-                <listitem><para>(4) : Last Current Album Image.</para></listitem>
+                <listitem><para>(4) : Last Image in current list.</para></listitem>
                 
                 <listitem><para>(5) : Save the modified image.</para></listitem>
 
@@ -316,7 +316,7 @@
         <title>Moving Between Photographs</title>
             
             <para>
-            Once you have started the Image Editor you can move between photographs in the same Album or Tag view by using the navigator buttons on the Tool Bar or the entries in the <guilabel>File</guilabel> menu. If you have made any changes to the current photograph you will be asked if you want to save them.
+            Once you have started the Image Editor with several images at once you can move between photographs by using the navigator buttons on the Tool Bar or the entries in the <guilabel>File</guilabel> menu. If you show the thumbnail bar you can also navigate by clicking the thumbnails. When you have made any changes to the current photograph you will be asked if you want to save them.
             </para>
         
         </sect2>
@@ -1289,7 +1289,7 @@
                 <shortcut><keycombo><keycap>PgUp</keycap></keycombo></shortcut>
                 <guimenu>File</guimenu><guimenuitem>Previous</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
+            <listitem><para><action>Display the previous image of the current list.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -1297,7 +1297,7 @@
                 <shortcut><keycombo><keycap>PgDown</keycap></keycombo></shortcut>
                 <guimenu>File</guimenu><guimenuitem>Next</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Display the next image of the current Album.</action></para></listitem>
+            <listitem><para><action>Display the next image of the current list.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -1305,7 +1305,7 @@
                 <shortcut><keycombo><keycap>Ctrl</keycap><keycap>Home</keycap></keycombo></shortcut>
                 <guimenu>File</guimenu><guimenuitem>First</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Display the first image of current Album.</action></para></listitem>
+            <listitem><para><action>Display the first image of current list.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -1313,7 +1313,7 @@
                 <shortcut><keycombo><keycap>Ctrl</keycap><keycap>End</keycap></keycombo></shortcut>
                 <guimenu>File</guimenu><guimenuitem>Last</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Display the last image of current Album.</action></para></listitem>
+            <listitem><para><action>Display the last image of current list.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -1343,8 +1343,7 @@
                 <shortcut><keycombo><keycap>Shift</keycap><keycap>Del</keycap></keycombo></shortcut>
                 <guimenu>File</guimenu><guimenuitem>Delete File/Move to trash</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Delete/Move to trash the current image from the current 
-            Album.</action></para></listitem>
+            <listitem><para><action>Delete/Move to trash the current image from the current list.</action></para></listitem>
         </varlistentry>
     
         <varlistentry>
@@ -1387,9 +1386,9 @@
         <varlistentry>
             <term><menuchoice>
                 <shortcut><keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo></shortcut>
-                <guimenu>Edit</guimenu><guimenuitem>Cancel</guimenuitem>
+                <guimenu>Edit</guimenu><guimenuitem>Undo</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Cancel the last action applied to the current image using history.</action></para></listitem>
+            <listitem><para><action>Undo the last action applied to the current image using history.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -1513,8 +1512,7 @@
                 <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem>
                 <guimenuitem>Brightness/Contrast/Gamma</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Exposure correction of the current image by Brightness, Contrast, or Gamma 
-            adjustments.</action></para></listitem>
+            <listitem><para><action>Exposure correction of the current image by Brightness, Contrast, or Gamma adjustments.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -1556,8 +1554,7 @@
                 <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Auto 
                 Levels</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Automatic color correction of the current image by an histogram auto-levels 
-            adjustment.</action></para></listitem>
+            <listitem><para><action>Automatic color correction of the current image by an histogram auto-levels adjustment.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
