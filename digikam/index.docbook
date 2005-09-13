@@ -229,7 +229,7 @@
             <sect3>
             <title>TIFF</title>
                 <para>
-                TIFF has been widely accepted and widely supported as an image format. Commonly, TIFF may be stored by the camera in uncompressed form or using lossless compression algorithm. It maintains higher image quality but at the expense of much larger file sizes. Some cameras let you save your images in this format and its a popular format because it uses a lossless compression algorithm. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by programs.
+                TIFF has been widely accepted and widely supported as an image format. Commonly, TIFF may be stored by the camera in uncompressed form or using lossless compression algorithm (Adobe Deflate). It maintains higher image quality but at the expense of much larger file sizes. Some cameras let you save your images in this format and its a popular format because it uses a lossless compression algorithm. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by programs.
                 </para>
             
             </sect3>
@@ -2229,11 +2229,7 @@
             </para>            
             
             <para>
-            The <guilabel>Tag Settings</guilabel> are explained in the <link linkend="using-kapp-mytagsview">My Tags</link> section. 
-            </para> 
-
-            <para>
-            The <guilabel>Extra Information in Thumbnail View</guilabel> options are described in the <link linkend="using-kapp-imageview">Images</link> section. 
+            The <guilabel>Thumbnails</guilabel> options are described in the <link linkend="using-kapp-imageview">Images</link> section. 
             </para> 
             
             <para>
@@ -2246,7 +2242,7 @@
         <title>Embedded Information Settings</title>
 
             <para>
-            Image files can have some meta-data embedded into the image file format. This meta-data can be stored in a number of standard formats. &digikam; can read meta-data in the EXIF format if it is present in the file. &digikam; can also write comments into the EXIF information. Writing comments to the EXIF section is limited to JPEG images.
+            Image files can have some meta-data embedded into the image file format. This meta-data can be stored in a number of standard formats. &digikam; can read meta-data in the EXIF format if it is present in the file. &digikam; can also write comments into the <ulink url="http://www.exif.org">EXIF information</ulink>. Writing comments to the EXIF section is limited to JPEG images.
             </para>
 
             <figure>
@@ -2259,7 +2255,7 @@
             </para>            
             
             <para>
-            <guilabel>Save Album Items' comments as EXIF Comments in JPEG images</guilabel> : this will synchronise the comments that you add to your photographs with those in embedded in the image. This is useful because the comments embedded in the image can be read by other image viewers. Care should be taken if you have images that already have comments embedded in them because these comments will be overwritten by the comments made within &digikam;. 
+            <guilabel>Save image comments as embedded comments (JFIF) in JPEG images</guilabel> : this will synchronise the comments that you add to your photographs with those in embedded in the image. This is useful because the comments embedded in the image can be read by other image viewers. Care should be taken if you have images that already have comments embedded in them because these comments will be overwritten by the comments made within &digikam;. 
             </para> 
 
             <para>
@@ -2381,7 +2377,7 @@
             <anchor id="cameraselection.anchor"/>
             
             <para>
-            Clicking on a camera in the list on the left will display the supported ports which you can then select. If there is only one supported port it will be automatically selected. At the bottom on the right there is a box for setting the exact path in case of a serial port. Please note that USB interface does not need any paths to be set. At the very bottom is where you set the path for a USB MassStorage Camera. This box becomes active once you select USB MassStorage Camera in the camera list. You need to enter here the path where you mount the camera, usually "/mnt/camera" or "/mnt/removable".
+            Clicking on a camera in the list on the left will display the supported ports which you can then select. If there is only one supported port it will be automatically selected. At the bottom on the right there is a box for setting the exact path in case of a serial port. Please note that USB interface does not need any paths to be set. At the very bottom is where you set the path for a USB or IEEE1394 (FireWire) mass storage camera. This box becomes active once you select USB or IEEE1394 mass storage camera in the camera list. You need to enter here the path where you mount the camera, usually "/mnt/camera" or "/mnt/removable".
             </para>
                         
             <figure>
@@ -2400,10 +2396,9 @@
             <note><para>
             You can choose any title you like for the camera in the setup and this title will be used in the main window <guilabel>Cameras</guilabel> menu. If you have more than one cameras, you can add them through this setup interface.
 
-	    Yet another possibility - and a very convenient one - is provided by the script in <ulink url="http://digikam.free.fr/hotplug/">usbcam.tar.gz</ulink>. When this is installed, digiKam will open all by itself whenever a camera is plugged into the USB connector for download.
+            Yet another possibility - and a very convenient one - is provided by the script in <ulink url="http://digikam.free.fr/hotplug/">usbcam.tar.gz</ulink>. When this is installed, digiKam will open all by itself whenever a camera is plugged into the USB connector for download.
             </para></note>
-            
-                        
+                       
         </sect2>
         
         <sect2 id="setupmisc">
@@ -2417,6 +2412,10 @@
             You can also switch off the display of the splash screen when digiKam loads. This may speed up the start time of digiKam very slightly.
             </para>
 
+            <para>
+            <guilabel>Scan for new items at startup</guilabel> option force &digikam; to scan album library tree for new items added or removed between &digikam; sessions. This may slow down the start time of &digikam;. If any items have been removed from album library, &digikam; will ask you confirmation before to remove definitly the item references in database.
+            </para>
+            
             <figure>
                 <title>The Miscellaneous Settings</title>
                 <graphic srccredit="The Miscellaneous Settings" fileref="setupmisc.png"/>
@@ -2575,6 +2574,22 @@
                 <para>
                     See the dedicated 
                     <ulink url="help:/kipi-plugins/galleryexport.html">Gallery Export manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Export to Flickr</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to export current Album to Flickr web service.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/flickrexport.html">Flickr Export manual</ulink> 
                     for more information.
                 </para>     
             </listitem>
@@ -2887,7 +2902,7 @@
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Albums</guimenu><guimenuitem>Sort Albums</guimenuitem>
+                <guimenu>View</guimenu><guimenuitem>Sort Albums</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Sort all &digikam; Albums by Folder, by Collection, or by Date.</action></para></listitem>
         </varlistentry>
@@ -2914,7 +2929,29 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Album</guimenu><guimenuitem>Find Duplicate Images</guimenuitem>
+                <guimenu>Tools</guimenu><guimenuitem>Quick Search</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Launch the simple search items dialog tool.
+                </action></para>
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Avanced Search</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Launch the advanced search items side bar tab tool.
+                </action></para>
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Find Duplicate Images</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -2941,7 +2978,7 @@
                     <ulink url="help:/kgamma/index.html">KGamma manual</ulink> 
                     for more information.
 
-		    Another even better reference can be found here: <ulink url="http://www.ltlimagery.com/monitor_calibration.html#normankoren">Monitor Calibration</ulink> 
+                    Another even better reference can be found here: <ulink url="http://www.ltlimagery.com/monitor_calibration.html#normankoren">Monitor Calibration</ulink> 
                 </para>     
             </listitem>
         </varlistentry>
