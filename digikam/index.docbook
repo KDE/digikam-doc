@@ -229,7 +229,7 @@
             <sect3>
             <title>TIFF</title>
                 <para>
-                TIFF has been widely accepted and widely supported as an image format. Commonly, TIFF may be stored by the camera in uncompressed form or using lossless compression algorithm (Adobe Deflate). It maintains higher image quality but at the expense of much larger file sizes. Some cameras let you save your images in this format and its a popular format because it uses a lossless compression algorithm. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by programs.
+                TIFF has been widely accepted and widely supported as an image format. Commonly, TIFF may be stored by the camera in uncompressed form or using lossless compression algorithm (Adobe Deflate). It maintains higher image quality but at the expense of much larger file sizes. Some cameras let you save your images in this format and it is a popular format because of its lossless compression algorithm. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by programs.
                 </para>
             
             </sect3>
@@ -237,11 +237,11 @@
             <sect3>
             <title>PNG</title>
                 <para>
-                PNG is an image format that was developed as a replacement for a number of older, in the 1990's widely used, image file formats. It is a lossless format like TIFF but it is much more compact and can save you disk space. Although your camera is unlikely to support PNG, some people like to convert their photographs to PNG as soon as they get them on their computer. Unlike JPEG, PNG images do not loose quality every time you re-encode them after alteration. &digikam; fully supports PNG images and the Batch Processing Images Plugin can convert a batch of images from any supported format to PNG in one step. See the <link linkend="using-kapp-setup">Configuration</link> section for information about using plugins with &digikam;. 
+                PNG is an image format that was developed as a replacement for a number of older, in the 1990's widely used, image file formats. It is a lossless format like TIFF but it is much more compact and saves disk space. Although your camera is unlikely to support PNG, some people like to convert their photographs to PNG as soon as they get them on their computer. Unlike JPEG, PNG images do not loose quality every time you re-encode them after modification. &digikam; fully supports PNG images and the Batch Processing Images Plugin can convert a batch of images from any supported format to PNG in one step. See the <link linkend="using-kapp-setup">Configuration</link> section for information about using plugins with &digikam;.
                 </para>
     
                 <para>
-                PNG is an extensible file format for the lossless, portable, well-compressed storage of raster images. PNG provides a patent-free replacement for GIF and can also replace many common uses of TIFF. PNG is designed to work well in online viewing applications, such as the World Wide Web, so it is fully streamable with a progressive display option. Also, PNG can store gamma and chromaticity data for improved color matching on heterogeneous platforms. PNG support 8 and 16 bits / colors /pixels depth. It's the perfect file format to archive your photographs. For more information about the PNG format see the <ulink url="http://www.libpng.org/pub/png/">PNG homepage</ulink>.
+                PNG is an extensible file format for the lossless, portable, well-compressed storage of raster images. PNG provides a patent-free replacement for GIF and can also replace many common uses of TIFF. PNG is designed to work well in online viewing applications, such as the World Wide Web, so it is fully streamable with a progressive display option. Also, PNG can store gamma and chromaticity data for improved color matching on heterogeneous platforms. PNG supports 8 and 16 bits / colors /pixels depth. It's the perfect file format to archive your photographs. For more information about the PNG format see the <ulink url="http://www.libpng.org/pub/png/">PNG homepage</ulink>.
                 </para>
             
             </sect3>
@@ -258,7 +258,7 @@
                 </para>
 
                 <para>
-                &digikam; support only RAW image thumbnails creation on main interface using <ulink url="http://www.cybercom.net/~dcoffin/dcraw/"> DCRAW program</ulink>. RAW file support on image editor isn't yet implemented. Any RAW file formats supported by &digikam; are listed below:
+                &digikam; supports RAW image thumbnails creation only relying on the <ulink url="http://www.cybercom.net/~dcoffin/dcraw/"> DCRAW program</ulink> from the main window. RAW file support on image editor isn't yet implemented. The currently by &digikam; supported RAW file formats are listed below:
                                             
                 <informaltable><tgroup cols="2">
         
@@ -335,7 +335,7 @@
         <title>Moving Image Formats</title>
 
         <para>
-        Many digital cameras support taking of short movie clips. These clips are usually stored in AVI or MPEG format. &digikam; understands these formats and will generate thumbnails for the movie files. However, &digikam; is not a movie manipulation application and it does not have any built-in movie viewing or editing capabilities. If you double click on a movie file &digikam; will use your KDE settings to choose a viewing application to use.
+        Many digital cameras support taking of short movie clips. These clips are usually stored in AVI or MPEG format. &digikam; understands these formats and will generate thumbnails for the movie files. However, &digikam; is not a movie editing application and it does not have any built-in movie viewing or editing capabilities. If you double click on a movie file &digikam; will use your KDE settings to choose a viewing application to use.
         </para>
         </sect2>
 
@@ -406,7 +406,7 @@
                 <graphic srccredit="The Main Window" fileref="maininterfacepreview.png"/>
             </figure>
 
-            &digikam;'s main window has three areas. The <guilabel>My Albums</guilabel> list in the top left, the <guilabel>My Tags</guilabel> list in the bottom left and the main Image Window on the right-hand side. You can use these three views to organize and find your photographs.
+            &digikam;'s main window has four areas. The first one is a side bar in the left margin that lets you switch between 4 views: <guilabel>My Albums</guilabel>, <guilabel>My Dates</guilabel>, <guilabel>My Tags</guilabel> and <guilabel>My Searches</guilabel>. Then there is a tree area showing the selected view. The main Image Window is right in the center. And on the right hand side there's again a tag tree shown. This one can be used to filter the views from the left hand side. You can use these views to organize and find your photographs.
             </para>
 
             <para>
@@ -460,18 +460,18 @@
         <title>"My Albums" View</title>
 
             <para>
-            The "My Albums" list provides an organized view of your photograph albums. All photographs that are managed by &digikam; are stored in a single Album. These albums can be sorted by their Folder (directory) layout on the hard disk, by the Collection name that has been set in the Album Properties or by the Date that the Albums were first created (this date can also be changed in the Properties of each Album).
+            The "My Albums" list provides an organized view of your photograph albums. All photographs that are managed by &digikam; are stored in a single directory branch. The albums can be sorted by their folder (directory) layout on the hard disk, by the Collection name that has been set in the Album Properties or by the Date that the Albums were first created (this date can also be changed in the Properties of each Album).
             </para>
             
             <para>
-            You can switch between these orderings using the drop-down list in the Tool Bar at the top of the window.
+            You can switch between these orderings using the <guilabel>View</guilabel> drop-down list in the Tool Bar at the top of the window.
             </para>
         
             <sect3 id="using-kapp-createnewalbum">
             <title>Creating a New Album</title>
                 
                 <para>
-                There are a number of ways to create a new Album. You can create a new Album when you upload new photographs from the Camera using the Camera Tool. You can also create a new empty Album by clicking the <guilabel>New Album</guilabel> button on the Tool Bar. As an additional option, you can create a new Album by importing an existing folder (directory) of photographs from your hard disk, just select <menuchoice><guimenu>Album</guimenu> <guimenuitem>Import</guimenuitem> <guimenuitem>Import Folders</guimenuitem></menuchoice> from the Menu Bar and select the folder that you want to import. An Album will be created with the same name as the hard disk folder. You can use drag and drop to import a folder. Drag a directory icon, for example from a <application>Konqueror</application> window. Than drop it on the album list on the left. A menu will appear that gives you the option to move or copy the folder into &digikam;.
+                There are a number of ways to create a new Album. You can create a new Album when you upload new photographs from the Camera using the Camera Tool. You can also create a new empty Album by clicking the <menuchoice><guimenu>View</guimenu> </menuchoice> button on the Tool Bar. As an additional option, you can create a new Album by importing an existing folder (directory) of photographs from your hard disk, just select <menuchoice><guimenu>Album</guimenu> <guimenuitem>Import</guimenuitem> <guimenuitem>Import Folders</guimenuitem></menuchoice> from the Menu Bar and select the folder that you want to import. An Album will be created with the same name as the hard disk folder. You can use drag and drop to import a folder. Drag a directory icon, for example from a <application>Konqueror</application> window. Than drop it on the album list on the left. A menu will appear that gives you the option to move or copy the folder into &digikam;.
                 </para>
         
             </sect3>
@@ -575,7 +575,7 @@
                 </para>
                 
                 <para>
-                &digikam; also supports tagging individual photographs using the "My Tags" area at the bottom left of the main window. Album Collections are different to photograph tagging because the Album Collection applies to all the photographs in an Album rather than to individual photographs. You can use both Album Collections and tagging to organize your photographs.
+                &digikam; also supports tagging individual photographs using the "My Tags" area at the left of the main window. Album Collections are different to photograph tagging because the Album Collection applies to all the photographs in an Album rather than to individual photographs. You can use both Album Collections and tagging to organize your photographs.
                 </para>
         
             </sect3>   
@@ -628,7 +628,7 @@
             <title>Viewing a Photograph</title>
              
                 <para>
-                You can open the Image Editor on a photograph either by double-clicking the thumbnail or by right-clicking and selecting <guilabel>View/Edit</guilabel> from the context menu. See the <link linkend="using-kapp-imageeditor">&digikam; Image Editor</link> section for instructions on how to edit your photographs.
+                You can open the Image Editor on a photograph either by clicking the thumbnail or by right-clicking and selecting <guilabel>View/Edit</guilabel> from the context menu. See the <link linkend="using-kapp-imageeditor">&digikam; Image Editor</link> section for instructions on how to edit your photographs.
                 </para>
         
             </sect3>   
@@ -637,11 +637,11 @@
             <title>Viewing or Editing a Photograph With Another Application</title>
 
                 <para>
-                Sometimes &digikam; may not provide all of the capabilities that you need. You can open a photograph in another application by right-clicking on it and selecting from the <guilabel>Open With</guilabel> sub-menu. The list applications that appear in this menu is controlled by the standard KDE file associations for the image format type of this photograph. Look in the KDE manual for instructions on changing these file associations if the application that you need is not listed.
+                Sometimes &digikam; may not provide all of the capabilities you need. You can open a photograph in another application by right-clicking on it and selecting from the <guilabel>Open With</guilabel> sub-menu. The list applications that appear in this menu is controlled by the standard KDE file associations for the image format type of this photograph. Look into the KDE manual for instructions on changing these file associations if the application that you need is not listed.
                 </para>
 
                 <para>
-                Note that there can be a problem with meta-data embedded in photographs when they are edited by some image manipulation applications. Some applications do not retain the photograph's meta-data when you save a modified image. This means that if you modify a photograph using one of these programs you will loose information such as orientation, aperture etc. 
+                Note that there can be a problem with meta-data embedded in photographs when they are edited by other image manipulation applications. Some applications do not retain the photograph's meta-data when you save a modified image. This means that if you modify a photograph using one of these programs you will loose information such as orientation, aperture etc. that are stored in the exif fields.
                 </para>
 
             </sect3>
@@ -650,7 +650,7 @@
             <title>Rotating a Photograph</title>
              
                 <note><para>
-                You will need to have the Kipi JPEG Lossless Plugin installed for these rotation features. If you do not have this plugin installed you can still rotate your photographs, but you have to do so from the Image Editor inside. The Image Editor uses a different method of rotating an image, you may not notice any difference but the Image Editor method can cause some loss of quality in the photograph. The rotation methods described here use the Kipi JPEG Lossless Plugin and do not loose any quality in the original photograph.
+                You will need to have the Kipi JPEG Lossless Plugin installed for the rotation features. If you do not have this plugin installed you can still rotate your photographs, but you have to do so from the Image Editor inside. The Image Editor uses a different method of rotating an image, you may not notice any difference but the Image Editor method can cause some loss of quality in the photograph. The rotation methods described here use the Kipi JPEG Lossless Plugin and do not loose any quality in the original photograph.
                 </para></note>
                              
                 <para>
@@ -732,7 +732,7 @@
                     </figure>
                                     
                     <para>
-                    This dialog will show you the full image histograms. You can find more informations about histograms in the <link linkend="using-kapp-histogramviewer">Histogram Viewer</link> section. 
+                    This dialog shows the full set of image histograms. You can find more informations about histograms in the <link linkend="using-kapp-histogramviewer">Histogram Viewer</link> section.
                     </para>
                 
                     <figure>
@@ -793,7 +793,7 @@
             </para>
 
             <para>
-            Tags can be arranged into a hierarchical tree. This allows you to organize your Tags in a logical manner. It also allows you to collapse parts of the tree in the "My Tags" list so that you can easily find the Tags that you are looking for.
+            Tags can be arranged in a hierarchical tree. This allows you to organize your Tags in a logical manner. It also allows you to collapse parts of the tree in the "My Tags" list so that you can easily find the Tags that you are looking for.
             </para>
 
             <para>
@@ -812,7 +812,7 @@
                 </para>
 
                 <para>
-                You can delete a Tag by right-clicking on the Tag you want to delete and selecting                 <guilabel>Delete</guilabel> Tag. When you delete a Tag the photographs that are marked with that Tag are not deleted. Simply the Tag is removed from those photographs.
+                You can delete a Tag by right-clicking on the Tag you want to delete and selecting <guilabel>Delete</guilabel> Tag. When you delete a tag the photographs themselves are not deleted. Simply the tag is removed from those photographs.
                 </para>
 
                 <para>
@@ -876,7 +876,7 @@
             </para>
         
             <para>
-            When you start the Camera Interface, it will try to connect to the Camera. For some cameras this connection phase can take a little while. When connected a <guilabel>Ready</guilabel> indicator will appear and thumbnails of any photographs on the camera will be displayed. Some cameras cannot provide thumbnails of the photographs, if this is the case you will only see the filenames and an icon for each photograph.
+            When you start the Camera Interface, it will try to connect to the Camera. For some cameras this connection phase can take a little while. When connected, a <guilabel>Ready</guilabel> indicator will appear and thumbnails of any photographs on the camera will be displayed. Some cameras cannot provide thumbnails of the photographs, if this is the case you will only see the filenames and an icon for each photograph.
             </para>
             
             <figure>
@@ -900,7 +900,7 @@
             </figure>
 
             <para>
-            This dialog display file properties informations used internally by camera to store item. A flag indicate too if the item have already donwloaded to you computer. Note all these information can be unavailable with some digital cameras.
+            This dialog displays file properties informations used internally by the camera to store item. A flag indicates if the picture has not been downloaded yet to you computer. Note, all these information can be unavailable with some digital cameras.
             </para>            
             
         </sect2>
@@ -954,7 +954,7 @@
         <title>Deleting Photographs from the Cameras</title>
 
             <para>
-            Once you are happy, with the downloaded photographs that you wanted, you are ready to delete photographs from the Camera. You can delete all of the photographs in one go by clicking the 
+            Once you are happy with the downloaded photographs that you wanted, you are ready to delete photographs from the Camera. You can delete all of the photographs in one go by clicking the
             <menuchoice>
                    <guimenu>Delete</guimenu>
                    <guimenuitem>Delete All</guimenuitem>
@@ -965,7 +965,7 @@
             </para>
 
             <caution><para>
-            Please note that there is no way to restore a photo that you have deleted from the camera. The photographs are not moved to the KDE Trash Can, they are removed completely. It is best to double check that you have successfully downloaded a photograph into a &digikam; Album before you delete it from the camera.
+            Please note that there is no way to restore a photo that you have deleted from the camera. The photographs are not moved to the KDE Trash Can, they are removed completely. It is best to double check that you have successfully downloaded a photograph into a &digikam; Album before you delete it from the camera. Anyway, if you plan to empty the camera card, you better do that from the camera menu because it is much quicker.
             </para></caution>
 
         </sect2>
@@ -1012,7 +1012,7 @@
             <title>Automatic Destination Albums Creation</title>
                 
                 <para>
-                If your camera provide information about the date when a photograph is taken &digikam; can use 
+                If your camera provides information about the date of the photograph's taking, &digikam; can use
                 this to automatically create sub-albums in the destination Album when it is downloaded. 
                 Sub-albums names will be based on image dates. All images who have the same date will be 
                 downloaded on the same sub-album. Not all cameras include this information. 
@@ -1042,7 +1042,7 @@
         <title>Introduction to Image Editor</title>
 
             <para>
-            &digikam; incorporates a fast Image Editor with a few basic image editing tools. You can use the Image Editor to view your photographs and to make corrections and alterations. The Image Editor can be accessed either by double clicking on a thumbnail in the Image Window or by right-clicking on a thumbnail and selecting <guilabel>View/Edit</guilabel> from the context menu.
+            &digikam; incorporates a fast Image Editor with a few basic yet powerful image editing tools. You can use the Image Editor to view your photographs and to make corrections and alterations. The Image Editor can be accessed either by clicking on a thumbnail in the Image Window or by right-clicking on a thumbnail and selecting <guilabel>View/Edit</guilabel> from the context menu.
             </para>
 
             <para>
@@ -1292,7 +1292,7 @@
                     </para>
                     
                     <para>
-                    For the EXIF data displayed, EXIF Viewer provides a contextual help. Select an item on the top and the corresponding help can be displayed with the "What's This?" option of the dialog.
+                    For the displayed data, EXIF Viewer provides a contextual help. Select an item with right mouse button and the corresponding help can be displayed with the "What's This?" option of the dialog.
                     </para>
                                 
                 </sect4>
@@ -1308,7 +1308,7 @@
                 You can view the file properties using 
                 <menuchoice><guimenu>Image</guimenu>
                 <guimenuitem>Properties</guimenuitem></menuchoice> and <guilabel>General</guilabel> page. 
-                This page allow you to see a large image thumbnail, general image and file system informations, and the &digikam; Meta-Data.
+                This page shows a large image thumbnail, general image and file system informations, and the &digikam; Meta-Data.
                 </para>
             
             </sect3>
@@ -2518,13 +2518,10 @@
             </tbody>
             
             </tgroup></informaltable>
-
-            <note><para>
-            Theme settings is just a simple plain text file to implement. If you is interresed to create a new theme for &digikam;, you can found more informations about in this <ulink url="http://www.digikam.org/themeguide.html">tutorial</ulink>.
-            </para></note>                        
                     
         </sect2>    
-               
+       
+        
     </sect1>    
         
 </chapter>
@@ -4334,19 +4331,20 @@ The website for &digikam; is at <ulink url="http://www.digikam.org">http://www.d
 
 <para>
 Also you can checkout the <emphasis>digikam</emphasis> and <emphasis>kipi</emphasis> source code modules
-from KDE Extragear SVN repository like this:
+from KDE Extragear CVS repository like this:
 
 <screen width="40">
-    <prompt>%</prompt> <userinput>svn co -N svn://anonsvn.kde.org/home/kde/trunk/extragear/graphics</userinput>
-    <prompt>%</prompt> <userinput>cd graphics</userinput>
-    <prompt>%</prompt> <userinput>svn up digikam</userinput>
-    <prompt>%</prompt> <userinput>svn co svn://anonsvn.kde.org/home/kde/branches/KDE/3.5/kde-common/admin</userinput>
+    <prompt>%</prompt> <userinput>cvs -d:pserver:anonymous@anoncvs.kde.org:/home/kde login</userinput>
+    <prompt>%</prompt> <userinput>cvs -z3 -d:pserver:anonymous@anoncvs.kde.org:/home/kde co 
+    kdeextragear-libs-1</userinput>
+    <prompt>%</prompt> <userinput>cvs -z3 -d:pserver:anonymous@anoncvs.kde.org:/home/kde co 
+    kdeextragear-3</userinput>
 </screen>
 
 </para>
 
 <para>
-The last SVN snapshoots can be downloaded at this URL <ulink url="ftp://ftp.kde.org/pub/kde/unstable/snapshots/">
+The last CVS snapshoots can be downloaded at this URL <ulink url="ftp://ftp.kde.org/pub/kde/unstable/snapshots/">
 ftp://ftp.kde.org/pub/kde/unstable/snapshots/</ulink>.
 </para>
 
