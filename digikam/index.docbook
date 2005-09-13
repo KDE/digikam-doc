@@ -2204,227 +2204,326 @@
     <sect1 id="using-kapp-setup">
     <title>&digikam; Configuration</title>
 
-        <anchor id="setupdialog.anchor"/>
-        
-        <para>
-        &digikam; tries to give you as much control on how it works as possible. There are many options that change the behaviour of &digikam;. To access these settings select
-        <menuchoice><guimenu>Setting</guimenu>
-        <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> from the Menu Bar. The configuration dialog is separated into eight pages. You can change between these pages by clicking on the icons on the left-hand side of the dialog.
-        </para>
-
-        <sect2 id="setupalbum">
-        <title>Album Settings</title>
-
-            <para>
-            The Album settings control how the main application will behave. 
-            </para>
-
-            <figure>
-                <title>The Album Settings</title>
-                <graphic srccredit="The Album Settings" fileref="setupalbum.png"/>
-            </figure>
-                                
-            <para>
-            The <guilabel>Album Library Path</guilabel> is the location on your hard disk where &digikam; will store all of the Albums. If you change this location without manually moving all of the Albums on the hard disk, &digikam; will think that there are no existing Albums and will generate a new database at the new location. Your old Albums will not be altered but you will need to change the Album Library Path back to the old location to access them. If you are not sure of what you are doing it is best not to change this location.
-            </para>            
+        <sect2 id="setupdialog">
+        <title>The Setup Dialog</title>
+    
+            <anchor id="setupdialog.anchor"/>
             
             <para>
-            The <guilabel>Thumbnails</guilabel> options are described in the <link linkend="using-kapp-imageview">Images</link> section. 
-            </para> 
-            
-            <para>
-            The other settings of this dialog are self explanatory.
-            </para> 
-                        
-        </sect2>
-        
-        <sect2 id="setupembeddedinfo">
-        <title>Embedded Information Settings</title>
-
-            <para>
-            Image files can have some meta-data embedded into the image file format. This meta-data can be stored in a number of standard formats. &digikam; can read meta-data in the EXIF format if it is present in the file. &digikam; can also write comments into the <ulink url="http://www.exif.org">EXIF information</ulink>. Writing comments to the EXIF section is limited to JPEG images.
-            </para>
-
-            <figure>
-                <title>The Embedded Information Settings</title>
-                <graphic srccredit="The Embedded Information Settings" fileref="setupembededinfo.png"/>
-            </figure>
-                                
-            <para>
-            These settings allow you to control how &digikam; will deal with this embedded information.
-            </para>            
-            
-            <para>
-            <guilabel>Save image comments as embedded comments (JFIF) in JPEG images</guilabel> : this will synchronise the comments that you add to your photographs with those in embedded in the image. This is useful because the comments embedded in the image can be read by other image viewers. Care should be taken if you have images that already have comments embedded in them because these comments will be overwritten by the comments made within &digikam;. 
-            </para> 
-
-            <para>
-            <guilabel>Rotate Images and Thumbnails according to EXIF tag</guilabel> : this will use any orientation information that your camera has included in the EXIF information to automatically rotate your photographs so that they are the correct way up when displayed. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can right-click on the thumbnail and select <guilabel>Auto-rotate/flip according to EXIF orientation</guilabel>. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
-            </para> 
-            
-            <para>
-            <guilabel>Set EXIF Orientation Tag to Normal after rotate/flip</guilabel> : the Auto Rotate option automatically corrects the orientation of images taken with digital cameras that have an orientation sensor. The camera adds an orientation tag to the image's EXIF meta-data. &digikam; can read this tag to adjust the image accordingly. If you manually rotate an image, this meta-data will be incorrect. This option will set the orientation taq to "Normal" after an adjustment, assuming that you rotated it to the correct orientation. Switch this off if you don't want &digikam; to make changes to the orientation tag, when you rotate or flip the image.
-            </para> 
-                        
-        </sect2>
-        
-        <sect2 id="setupcollection">
-        <title>Collection Settings</title>
-
-            <para>
-            This dialog manage your Collection types. Album Collections are described in detail in the <link linkend="using-kapp-myalbumsview">My Albums</link> section. 
-            </para>
-
-            <figure>
-                <title>The Collection Settings</title>
-                <graphic srccredit="The Collection Settings" fileref="setupcollections.png"/>
-            </figure>
-
-        </sect2>
-
-        <sect2 id="setupmimetype">
-        <title>Mime Type Settings</title>
-
-            <para>
-            &digikam; can understand lots of different image file types as well as some video and audio formats. To control which types of files &digikam; will try to display you can add or remove file extensions from these lists. Any files that are in the &digikam; Album directories that do not match these extensions will be ignored by &digikam;.
-            </para>
-
-            <figure>
-                <title>The Mime Type Settings</title>
-                <graphic srccredit="The Mime Type Settings" fileref="setupmimetypes.png"/>
-            </figure>
-
-        </sect2>                
-        
-        <sect2 id="setupeditor">
-        <title>Image Editor Settings</title>
-
-            <para>
-            In the early versions of &digikam; the Image Editor was just a viewer for photographs, but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you to control how the Image Editor will behave.
-            </para>
-
-            <figure>
-                <title>The Image Editor Settings</title>
-                <graphic srccredit="The Image Editor Settings" fileref="setupimageeditor.png"/>
-            </figure>
-            
-            <para>
-            When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the <guilabel>JPEG quality</guilabel> slider  (1: low quality / 100: high quality and no compression).
-            </para>
-
-            <para>
-            With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation doesn't reduce image quality because PNG usees a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value for to use a high compression factor (1: low compression / 9: high compression).
-            </para>
-            
-            <para>
-            With <guilabel>Using TIFF compression</guilabel> option, you can toogle to use <emphasis>Adobe Deflate</emphasis> compression algorithm with TIFF image files. This will reduce the TIFF image files size. This has no image quality effect because Adobe Deflate is a lossless algorithm. 
-            </para>
-            
-            <para>
-            By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background colour you can select one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
-            </para>
-            
-            <para>
-            The Image Editor only implements some very simple photo manipulation tools in the core application. For an easy development of more manipulation tools the Image Editor supports a plugin interface. If your distribution has installed the additional Image Editor plugins they will be listed in the Image Plugins list. You can enable or disable these plugins that you see here.
-            </para>
-
-            <para>
-            For more informations about advanced Image Editor plugins, you can consult the 'DigikamImagePlugins' project at <ulink url="http://extragear.kde.org/apps/digikamimageplugins">http://extragear.kde.org/apps/digikamimageplugins</ulink>.
-            </para>
-                        
-        </sect2> 
-        
-        <sect2 id="setupkipi">
-        <title>Kipi Plugins Settings</title>
-
-            <para>
-            Kipi is the KDE Image Plugin Interface. It is an interface that is supported by a number of KDE image viewer/editor applications. By providing this interface &digikam; can take advantage of many plugins that are written to work with any application that implements the Kipi interface.
-            </para>
-
-            <figure>
-                <title>The Kipi Plugins Settings</title>
-                <graphic srccredit="The Kipi Plugins Settings" fileref="setupkipi.png"/>
-            </figure>
-
-            <para>
-            If your distribution has the Kipi plugins package installed you will see a list of available plugins. Select those that you want to use and they will be loaded into &digikam;. The plugins will appear as new menu entries in the main Menu Bar and in the context menu for thumbnails.
-            </para>
-            
-            <para>
-            Keyboard shortcuts to actions that plugins perform can be set up in the 
+            &digikam; tries to give you as much control on how it works as possible. There are many options that change the behaviour of &digikam;. To access these settings select
             <menuchoice><guimenu>Setting</guimenu>
-            <guimenuitem>Configure Shortcuts</guimenuitem></menuchoice> menu.
+            <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> from the Menu Bar. The configuration dialog is separated into eight pages. You can change between these pages by clicking on the icons on the left-hand side of the dialog.
             </para>
+    
+            <sect3 id="setupalbum">
+            <title>Album Settings</title>
+    
+                <para>
+                The Album settings control how the main application will behave. 
+                </para>
+    
+                <figure>
+                    <title>The Album Settings</title>
+                    <graphic srccredit="The Album Settings" fileref="setupalbum.png"/>
+                </figure>
+                                    
+                <para>
+                The <guilabel>Album Library Path</guilabel> is the location on your hard disk where &digikam; will store all of the Albums. If you change this location without manually moving all of the Albums on the hard disk, &digikam; will think that there are no existing Albums and will generate a new database at the new location. Your old Albums will not be altered but you will need to change the Album Library Path back to the old location to access them. If you are not sure of what you are doing it is best not to change this location.
+                </para>            
+                
+                <para>
+                The <guilabel>Thumbnails</guilabel> options are described in the <link linkend="using-kapp-imageview">Images</link> section. 
+                </para> 
+                
+                <para>
+                The other settings of this dialog are self explanatory.
+                </para> 
+                            
+            </sect3>
             
-            <para>
-            For more informations about Kipi plugins, you can consult the Kipi project at <ulink url="http://extragear.kde.org/apps/kipi">http://extragear.kde.org/apps/kipi</ulink>.
-            </para>
+            <sect3 id="setupembeddedinfo">
+            <title>Embedded Information Settings</title>
+    
+                <para>
+                Image files can have some meta-data embedded into the image file format. This meta-data can be stored in a number of standard formats. &digikam; can read meta-data in the EXIF format if it is present in the file. &digikam; can also write comments into the <ulink url="http://www.exif.org">EXIF information</ulink>. Writing comments to the EXIF section is limited to JPEG images.
+                </para>
+    
+                <figure>
+                    <title>The Embedded Information Settings</title>
+                    <graphic srccredit="The Embedded Information Settings" fileref="setupembededinfo.png"/>
+                </figure>
+                                    
+                <para>
+                These settings allow you to control how &digikam; will deal with this embedded information.
+                </para>            
+                
+                <para>
+                <guilabel>Save image comments as embedded comments (JFIF) in JPEG images</guilabel> : this will synchronise the comments that you add to your photographs with those in embedded in the image. This is useful because the comments embedded in the image can be read by other image viewers. Care should be taken if you have images that already have comments embedded in them because these comments will be overwritten by the comments made within &digikam;. 
+                </para> 
+    
+                <para>
+                <guilabel>Rotate Images and Thumbnails according to EXIF tag</guilabel> : this will use any orientation information that your camera has included in the EXIF information to automatically rotate your photographs so that they are the correct way up when displayed. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can right-click on the thumbnail and select <guilabel>Auto-rotate/flip according to EXIF orientation</guilabel>. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
+                </para> 
+                
+                <para>
+                <guilabel>Set EXIF Orientation Tag to Normal after rotate/flip</guilabel> : the Auto Rotate option automatically corrects the orientation of images taken with digital cameras that have an orientation sensor. The camera adds an orientation tag to the image's EXIF meta-data. &digikam; can read this tag to adjust the image accordingly. If you manually rotate an image, this meta-data will be incorrect. This option will set the orientation taq to "Normal" after an adjustment, assuming that you rotated it to the correct orientation. Switch this off if you don't want &digikam; to make changes to the orientation tag, when you rotate or flip the image.
+                </para> 
+                            
+            </sect3>
             
-        </sect2>                
-
-        <sect2 id="setupcamera">
-        <title>Camera Settings</title>
-        
-            <para>
-            The camera settings shows on the left the list of the currently supported cameras. On the right at the top there is an auto-detect button, which tries to identify the camera connected to your computer (make sure that the camera is connected properly to the computer and turned on in the image display mode). Below this are the port settings; the currently supported are Serial, USB, and USB/FireWire MassStorage.
-            </para>
+            <sect3 id="setupcollection">
+            <title>Collection Settings</title>
+    
+                <para>
+                This dialog manage your Collection types. Album Collections are described in detail in the <link linkend="using-kapp-myalbumsview">My Albums</link> section. 
+                </para>
+    
+                <figure>
+                    <title>The Collection Settings</title>
+                    <graphic srccredit="The Collection Settings" fileref="setupcollections.png"/>
+                </figure>
+    
+            </sect3>
+    
+            <sect3 id="setupmimetype">
+            <title>Mime Type Settings</title>
+    
+                <para>
+                &digikam; can understand lots of different image file types as well as some video and audio formats. To control which types of files &digikam; will try to display you can add or remove file extensions from these lists. Any files that are in the &digikam; Album directories that do not match these extensions will be ignored by &digikam;.
+                </para>
+    
+                <figure>
+                    <title>The Mime Type Settings</title>
+                    <graphic srccredit="The Mime Type Settings" fileref="setupmimetypes.png"/>
+                </figure>
+    
+            </sect3>                
             
-            <figure>
-                <title>The Camera Settings</title>
-                <graphic srccredit="The Camera Settings" fileref="setupcamera.png"/>
-            </figure>
+            <sect3 id="setupeditor">
+            <title>Image Editor Settings</title>
+    
+                <para>
+                In the early versions of &digikam; the Image Editor was just a viewer for photographs, but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you to control how the Image Editor will behave.
+                </para>
+    
+                <figure>
+                    <title>The Image Editor Settings</title>
+                    <graphic srccredit="The Image Editor Settings" fileref="setupimageeditor.png"/>
+                </figure>
+                
+                <para>
+                When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the <guilabel>JPEG quality</guilabel> slider  (1: low quality / 100: high quality and no compression).
+                </para>
+    
+                <para>
+                With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation doesn't reduce image quality because PNG usees a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value for to use a high compression factor (1: low compression / 9: high compression).
+                </para>
+                
+                <para>
+                With <guilabel>Using TIFF compression</guilabel> option, you can toogle to use <emphasis>Adobe Deflate</emphasis> compression algorithm with TIFF image files. This will reduce the TIFF image files size. This has no image quality effect because Adobe Deflate is a lossless algorithm. 
+                </para>
+                
+                <para>
+                By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background colour you can select one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
+                </para>
+                
+                <para>
+                The Image Editor only implements some very simple photo manipulation tools in the core application. For an easy development of more manipulation tools the Image Editor supports a plugin interface. If your distribution has installed the additional Image Editor plugins they will be listed in the Image Plugins list. You can enable or disable these plugins that you see here.
+                </para>
+    
+                <para>
+                For more informations about advanced Image Editor plugins, you can consult the 'DigikamImagePlugins' project at <ulink url="http://extragear.kde.org/apps/digikamimageplugins">http://extragear.kde.org/apps/digikamimageplugins</ulink>.
+                </para>
+                            
+            </sect3> 
             
-            <anchor id="cameraselection.anchor"/>
+            <sect3 id="setupkipi">
+            <title>Kipi Plugins Settings</title>
+    
+                <para>
+                Kipi is the KDE Image Plugin Interface. It is an interface that is supported by a number of KDE image viewer/editor applications. By providing this interface &digikam; can take advantage of many plugins that are written to work with any application that implements the Kipi interface.
+                </para>
+    
+                <figure>
+                    <title>The Kipi Plugins Settings</title>
+                    <graphic srccredit="The Kipi Plugins Settings" fileref="setupkipi.png"/>
+                </figure>
+    
+                <para>
+                If your distribution has the Kipi plugins package installed you will see a list of available plugins. Select those that you want to use and they will be loaded into &digikam;. The plugins will appear as new menu entries in the main Menu Bar and in the context menu for thumbnails.
+                </para>
+                
+                <para>
+                Keyboard shortcuts to actions that plugins perform can be set up in the 
+                <menuchoice><guimenu>Setting</guimenu>
+                <guimenuitem>Configure Shortcuts</guimenuitem></menuchoice> menu.
+                </para>
+                
+                <para>
+                For more informations about Kipi plugins, you can consult the Kipi project at <ulink url="http://extragear.kde.org/apps/kipi">http://extragear.kde.org/apps/kipi</ulink>.
+                </para>
+                
+            </sect3>                
+    
+            <sect3 id="setupcamera">
+            <title>Camera Settings</title>
             
-            <para>
-            Clicking on a camera in the list on the left will display the supported ports which you can then select. If there is only one supported port it will be automatically selected. At the bottom on the right there is a box for setting the exact path in case of a serial port. Please note that USB interface does not need any paths to be set. At the very bottom is where you set the path for a USB or IEEE1394 (FireWire) mass storage camera. This box becomes active once you select USB or IEEE1394 mass storage camera in the camera list. You need to enter here the path where you mount the camera, usually "/mnt/camera" or "/mnt/removable".
-            </para>
+                <para>
+                The camera settings shows on the left the list of the currently supported cameras. On the right at the top there is an auto-detect button, which tries to identify the camera connected to your computer (make sure that the camera is connected properly to the computer and turned on in the image display mode). Below this are the port settings; the currently supported are Serial, USB, and USB/FireWire MassStorage.
+                </para>
+                
+                <figure>
+                    <title>The Camera Settings</title>
+                    <graphic srccredit="The Camera Settings" fileref="setupcamera.png"/>
+                </figure>
+                
+                <anchor id="cameraselection.anchor"/>
+                
+                <para>
+                Clicking on a camera in the list on the left will display the supported ports which you can then select. If there is only one supported port it will be automatically selected. At the bottom on the right there is a box for setting the exact path in case of a serial port. Please note that USB interface does not need any paths to be set. At the very bottom is where you set the path for a USB or IEEE1394 (FireWire) mass storage camera. This box becomes active once you select USB or IEEE1394 mass storage camera in the camera list. You need to enter here the path where you mount the camera, usually "/mnt/camera" or "/mnt/removable".
+                </para>
+                            
+                <figure>
+                    <title>The Add Camera Dialog</title>
+                    <graphic srccredit="The Add Camera Dialog" fileref="setupaddcamera.png"/>
+                </figure>
+    
+                <para>
+                To be able to use your digital camera with &digikam;, connect the camera to your computer, switch the camera to the image display mode and turn it on. 
+                </para>
+            
+                <para>
+                Try and see if &digikam; can auto-detect the camera; if not, you can set the camera model and port manually. Once you have the camera setup, goto the "Cameras" menu in the main interface and you will see the camera listed in the menu.
+                </para>
+                
+                <note><para>
+                You can choose any title you like for the camera in the setup and this title will be used in the main window <guilabel>Cameras</guilabel> menu. If you have more than one cameras, you can add them through this setup interface.
+    
+                Yet another possibility - and a very convenient one - is provided by the script in <ulink url="http://digikam.free.fr/hotplug/">usbcam.tar.gz</ulink>. When this is installed, digiKam will open all by itself whenever a camera is plugged into the USB connector for download.
+                </para></note>
                         
-            <figure>
-                <title>The Add Camera Dialog</title>
-                <graphic srccredit="The Add Camera Dialog" fileref="setupaddcamera.png"/>
-            </figure>
+            </sect3>
+            
+            <sect3 id="setupmisc">
+            <title>Miscellaneous Settings</title>
+    
+                <para>
+                Here you can control how digiKam will behave when you delete a photograph or an Album. See <link linkend="using-kapp-deleteimage">Deleting a Photograph</link> and <link linkend="using-kapp-deletealbum">Deleting an Album</link> sections for more details.
+                </para>
+                
+                <para>
+                You can also switch off the display of the splash screen when digiKam loads. This may speed up the start time of digiKam very slightly.
+                </para>
+    
+                <para>
+                <guilabel>Scan for new items at startup</guilabel> option force &digikam; to scan album library tree for new items added or removed between &digikam; sessions. This may slow down the start time of &digikam;. If any items have been removed from album library, &digikam; will ask you confirmation before to remove definitly the item references in database.
+                </para>
+                
+                <figure>
+                    <title>The Miscellaneous Settings</title>
+                    <graphic srccredit="The Miscellaneous Settings" fileref="setupmisc.png"/>
+                </figure>
+                
+            </sect3>                   
+                            
+        </sect2>    
 
+        <sect2 id="setuptheme">
+        <title>The Theme Setup</title>
+    
             <para>
-            To be able to use your digital camera with &digikam;, connect the camera to your computer, switch the camera to the image display mode and turn it on. 
+            Color schemes are supplied like themes to personalize &digikam; main interface for you pleasure. To access these settings select
+            <menuchoice><guimenu>Setting</guimenu>
+            <guimenuitem>Themes</guimenuitem></menuchoice> from the Menu Bar and select your prefered theme to use. A preview of the available themes is listed below:
             </para>
+
+            <informaltable><tgroup cols="2">
+            
+            <thead><row>
+                <entry>Preview</entry>
+                <entry>Theme Name</entry>
+            </row></thead>
+
+            <tbody>
+                <row>
+                    <entry>
+                    <graphic srccredit="Default Theme" fileref="setupthemedefault.png"/>
+                    </entry>
+                
+                    <entry>
+                    Default
+                    </entry>
+                </row>
+
+                <row>
+                    <entry>
+                    <graphic srccredit="Clean Theme" fileref="setupthemeclean.png"/>
+                    </entry>
+                
+                    <entry>
+                    Cleanup
+                    </entry>
+                </row>
+
+                <row>
+                    <entry>
+                    <graphic srccredit="Default Theme" fileref="setupthemedark.png"/>
+                    </entry>
+                
+                    <entry>
+                    Dark
+                    </entry>
+                </row>
+
+                <row>
+                    <entry>
+                    <graphic srccredit="Default Theme" fileref="setupthemedreary.png"/>
+                    </entry>
+                
+                    <entry>
+                    Dreary
+                    </entry>
+                </row>
+
+                <row>
+                    <entry>
+                    <graphic srccredit="Default Theme" fileref="setupthememarine.png"/>
+                    </entry>
+                
+                    <entry>
+                    Marine
+                    </entry>
+                </row>
+
+                <row>
+                    <entry>
+                    <graphic srccredit="Default Theme" fileref="setupthemeorangecrush.png"/>
+                    </entry>
+                
+                    <entry>
+                    OrangeCrush
+                    </entry>
+                </row>
+                                                                
+                <row>
+                    <entry>
+                    <graphic srccredit="Default Theme" fileref="setupthemesandy.png"/>
+                    </entry>
+                    
+                    <entry>
+                    Sandy
+                    </entry>
+                </row>
+            
+            </tbody>
+            
+            </tgroup></informaltable>
+                    
+        </sect2>    
+       
         
-            <para>
-            Try and see if &digikam; can auto-detect the camera; if not, you can set the camera model and port manually. Once you have the camera setup, goto the "Cameras" menu in the main interface and you will see the camera listed in the menu.
-            </para>
-            
-            <note><para>
-            You can choose any title you like for the camera in the setup and this title will be used in the main window <guilabel>Cameras</guilabel> menu. If you have more than one cameras, you can add them through this setup interface.
-
-            Yet another possibility - and a very convenient one - is provided by the script in <ulink url="http://digikam.free.fr/hotplug/">usbcam.tar.gz</ulink>. When this is installed, digiKam will open all by itself whenever a camera is plugged into the USB connector for download.
-            </para></note>
-                       
-        </sect2>
-        
-        <sect2 id="setupmisc">
-        <title>Miscellaneous Settings</title>
-
-            <para>
-            Here you can control how digiKam will behave when you delete a photograph or an Album. See <link linkend="using-kapp-deleteimage">Deleting a Photograph</link> and <link linkend="using-kapp-deletealbum">Deleting an Album</link> sections for more details.
-            </para>
-            
-            <para>
-            You can also switch off the display of the splash screen when digiKam loads. This may speed up the start time of digiKam very slightly.
-            </para>
-
-            <para>
-            <guilabel>Scan for new items at startup</guilabel> option force &digikam; to scan album library tree for new items added or removed between &digikam; sessions. This may slow down the start time of &digikam;. If any items have been removed from album library, &digikam; will ask you confirmation before to remove definitly the item references in database.
-            </para>
-            
-            <figure>
-                <title>The Miscellaneous Settings</title>
-                <graphic srccredit="The Miscellaneous Settings" fileref="setupmisc.png"/>
-            </figure>
-            
-        </sect2>                   
-                           
     </sect1>    
-
+        
 </chapter>
 
 <!-- *********************************************************************** -->
