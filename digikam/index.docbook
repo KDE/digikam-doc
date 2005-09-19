@@ -397,7 +397,24 @@
         </para>
                 
     </sect1>
-    
+
+    <sect1 id="using-kapp-camerasupport">
+    <title>Supported Digital Still Cameras</title>
+
+        <para>
+        Formerly, a digital camera was characterized by the use of flash memory and USB or FireWire (IEEE-1394) for storage and transfer.        The actual transfers to a host computer are commonly carried out using the USB Mass Storage device class (so that the camera appear as a drive) or using the Picture Transfer Protocol and its derivatives. 
+        </para>
+
+        <para>
+        &digikam; using gPhoto2 program to communicate with digital still camera. gPhoto2 is a redistributable set of digital camera software applications with support for nearly 600 cameras. gPhoto2 has support for the Picture Transfer Protocol (PTP), which is a widely-supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers. You can find a complete list of supported digital cameras at this <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">url</ulink>.
+        </para>
+        
+        <para>
+        Many cameras are not supported by gPhoto2, but have support for the USB Mass Storage protocol, which is well-supported under GNU/Linux. USB Mass Storage protocol is a set of computing communications protocols defined by the USB Implementers Forum that run on the Universal Serial Bus. The standard provides an interface to a variety of storage devices, including digital still cameras.
+        </para>
+        
+    </sect1>
+            
 </chapter>
 
 <!-- *********************************************************************** -->
