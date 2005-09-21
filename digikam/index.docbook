@@ -432,19 +432,80 @@
 
     <sect1 id="using-kapp-camerasupport">
     <title>Supported Digital Still Cameras</title>
-
-        <para>
-        Formerly, a digital camera was characterized by the use of flash memory and USB or FireWire (IEEE-1394) for storage and transfer.        The actual transfers to a host computer are commonly carried out using the USB Mass Storage device class (so that the camera appear as a drive) or using the Picture Transfer Protocol and its derivatives. 
-        </para>
-
-        <para>
-        &digikam; using gPhoto2 program to communicate with digital still camera. gPhoto2 is a redistributable set of digital camera software applications with support for nearly 600 cameras. gPhoto2 has support for the Picture Transfer Protocol (PTP), which is a widely-supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers. You can find a complete list of supported digital cameras at this <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">url</ulink>.
-        </para>
         
-        <para>
-        Many cameras are not supported by gPhoto2, but have support for the USB Mass Storage protocol, which is well-supported under GNU/Linux. USB Mass Storage protocol is a set of computing communications protocols defined by the USB Implementers Forum that run on the Universal Serial Bus. The standard provides an interface to a variety of storage devices, including digital still cameras.
-        </para>
+        <sect2>
+        <title>Introduction</title>
+
+            <para>
+            Formerly, a recent digital camera was characterized by the use of <emphasis>Flash Memory</emphasis> and <emphasis>USB</emphasis> or <emphasis>FireWire (IEEE-1394)</emphasis> for storage and transfer. The actual transfers to a host computer are commonly carried out using the <emphasis>USB Mass Storage</emphasis> device class (so that the camera appear as a drive) or using the <emphasis>Picture Transfer Protocol (PTP)</emphasis> and its derivatives. Any old cameras can use <emphasis>Serial Port (RS-232)</emphasis> connection.
+            </para>
+            
+            <informaltable><tgroup cols="2">
+            
+            <thead><row>
+                <entry>Preview Example</entry>
+                <entry>Connector Type</entry>
+            </row></thead>
+
+            <tbody>
+                <row>
+                    <entry>
+                    <graphic srccredit="FireWire" fileref="introductionfirewireconnector.png"/>
+                    </entry>
+                
+                    <entry>
+                    FireWire (IEEE-1394) connector from a profesionnal digital still camera
+                    </entry>
+                </row>
+
+                <row>
+                    <entry>
+                    <graphic srccredit="USB" fileref="introductionusbconnector.png"/>
+                    </entry>
+                
+                    <entry>
+                    Universal Serial Bus (USB) connector from a standard digital still camera
+                    </entry>
+                </row>
+
+                <row>
+                    <entry>
+                    <graphic srccredit="Serial" fileref="introductionserialconnector.png"/>
+                    </entry>
+                
+                    <entry>
+                    Serial Port (RS-232) connector from an old digital still camera
+                    </entry>
+                </row>
+
+            </tbody>
+            
+            </tgroup></informaltable>
+            
+        </sect2>
+
+        <sect2>
+        <title>Transfers Using gPhoto2: PTP and Serial Port</title>
         
+            <para>
+            &digikam; using <emphasis>gPhoto2</emphasis> program to communicate with digital still camera. gPhoto2 is a redistributable set of digital camera software applications with support for nearly 600 cameras. gPhoto2 has support for the <emphasis>Picture Transfer Protocol</emphasis>, which is a widely-supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
+            </para>
+            
+            <para>
+            Many old digital still cameras used <emphasis>Serial Port</emphasis> to communicate with host computer. Because photographs are big files and serial port transferts are slow, this connection is now obsolete. &digikam; support these cameras and perform images transfers using gPhoto2 program. You can find a complete list of supported digital cameras at this <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">url</ulink>.
+            </para>
+        
+        </sect2>
+            
+        <sect2>
+        <title>Transfers Using USB Mass Storage Device</title>
+            
+            <para>
+            Many devices are not supported by gPhoto2, but have support for the <emphasis>USB Mass Storage</emphasis> protocol, which is well-supported under GNU/Linux. This includes any digital cameras and Memory Card Readers. USB Mass Storage protocol is a set of computing communications protocols defined by the USB Implementers Forum that run on the Universal Serial Bus. The standard provides an interface to a variety of storage devices, including digital still cameras. To use a generic USB Mass Storage device with &digikam;, select <guilabel>USB Mass Storage</guilabel> item in <link linkend="setupcamera">Camera Setup</link> list and set the properly mount point path.
+            </para>
+        
+        </sect2>
+            
     </sect1>
             
 </chapter>
@@ -1607,8 +1668,8 @@
                     </para>
                 
                     <figure>
-                        <title>The Aspect Ratio Crop Tool Image Selection Tab</title>
-                        <graphic srccredit="The Aspect Ratio Crop Tool Image Selection Tab" 
+                        <title>The Aspect Ratio Crop Tool Dialog</title>
+                        <graphic srccredit="The Aspect Ratio Crop Tool Dialog" 
                         fileref="editorratiocroptool.png"/>
                     </figure>
                     
@@ -2452,7 +2513,7 @@
                 <anchor id="cameraselection.anchor"/>
                 
                 <para>
-                Clicking on a camera in the list on the left will display the supported ports which you can then select. If there is only one supported port it will be automatically selected. At the bottom on the right there is a box for setting the exact path in case of a serial port. Please note that USB interface does not need any paths to be set. At the very bottom is where you set the path for a USB or IEEE1394 (FireWire) mass storage camera. This box becomes active once you select USB or IEEE1394 mass storage camera in the camera list. You need to enter here the path where you mount the camera, usually "/mnt/camera" or "/mnt/removable".
+                Clicking on a camera in the list on the left will display the supported ports which you can then select. If there is only one supported port it will be automatically selected. At the bottom on the right there is a box for setting the exact path in case of a serial port. Please note that USB interface does not need any paths to be set. At the very bottom is where you set the path for a USB or IEEE-1394 (FireWire) mass storage camera. This box becomes active once you select USB or IEEE-1394 Mass Storage camera in the camera list. You need to enter here the path where you mount the camera, usually "/mnt/camera" or "/mnt/removable".
                 </para>
                             
                 <figure>
