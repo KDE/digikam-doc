@@ -222,11 +222,11 @@
             <title>Still Image Compression</title>
     
                 <para>
-                Image compression is the application of data compression on digital images. In effect, the objective is to reduce redundancy of the image data in order to be able to store or transmit data in an efficient form.
+                Image compression is the application of data compression schemes on digital images. It is done through reducing redundancy of the image data in order to be able to store or transmit data in an efficient form.
                 </para>
             
                 <para>
-                Image compression can be lossy or lossless. Lossless compression methods is always be preferred for high value content for archival purposes before to apply transformations like croping, resizing, color corrections, etc. This is because lossy compression methods, especially when used at low bit rates, can introduce compression artifacts. Lossy methods are especially suitable for natural images such as photos in applications where minor (sometimes imperceptible) loss of fidelity is acceptable to achieve a substantial reduction in bit rate. Lossy compression is dedicaced to publish photographs on internet. 
+                Image compression can be lossy or lossless. Lossless compression methods are always preferred for their high preservation value for archival purposes before applying transformations like cropping, resizing, color corrections, etc. This is because lossy compression methods, especially when used at low bit rates, introduce compression artifacts. Lossy methods are suitable for natural images such as photos in applications where minor (sometimes imperceptible) loss of fidelity is acceptable to achieve a substantial reduction in bit rate. Lossy compression is good for photograph publishing on the internet.
                 </para>
             
             </sect3>
@@ -437,7 +437,7 @@
         <title>Introduction</title>
 
             <para>
-            Formerly, a recent digital camera was characterized by the use of <emphasis>Flash Memory</emphasis> and <emphasis>USB</emphasis> or <emphasis>FireWire (IEEE-1394)</emphasis> for storage and transfer. The actual transfers to a host computer are commonly carried out using the <emphasis>USB Mass Storage</emphasis> device class (so that the camera appear as a drive) or using the <emphasis>Picture Transfer Protocol (PTP)</emphasis> and its derivatives. Any old cameras can use <emphasis>Serial Port (RS-232)</emphasis> connection.
+            Current digital cameras are characterized by the use of <emphasis>Compact Flash Memory</emphasis> cards and <emphasis>USB</emphasis> or <emphasis>FireWire (IEEE-1394)</emphasis> for data transmission. The actual transfers to a host computer is commonly carried out using the <emphasis>USB Mass Storage</emphasis> device class (so that the camera appears as a disk drive) or using the <emphasis>Picture Transfer Protocol (PTP)</emphasis> and its derivatives. Older cameras may use the <emphasis>Serial Port (RS-232)</emphasis> connection.
             </para>
             
             <informaltable><tgroup cols="2">
@@ -454,7 +454,7 @@
                     </entry>
                 
                     <entry>
-                    FireWire (IEEE-1394) connector from a profesionnal digital still camera
+                    FireWire (IEEE-1394) connector from a professional digital still camera
                     </entry>
                 </row>
 
@@ -464,7 +464,7 @@
                     </entry>
                 
                     <entry>
-                    Universal Serial Bus (USB) connector from a standard digital still camera
+                    Universal Serial Bus (USB) connector from a consumer digital still camera
                     </entry>
                 </row>
 
@@ -488,11 +488,11 @@
         <title>Transfers Using gPhoto2: PTP and Serial Port</title>
         
             <para>
-            &digikam; using <emphasis>gPhoto2</emphasis> program to communicate with digital still camera. gPhoto2 is a redistributable set of digital camera software applications with support for nearly 600 cameras. gPhoto2 has support for the <emphasis>Picture Transfer Protocol</emphasis>, which is a widely-supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
+            &digikam; employs the <emphasis>gPhoto2</emphasis> program to communicate with digital still cameras. gPhoto2 is a free, redistributable set of digital camera software applications which supports a growing number of over 600 cameras. gPhoto2 has support for the <emphasis>Picture Transfer Protocol</emphasis>, which is a widely-supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
             </para>
             
             <para>
-            Many old digital still cameras used <emphasis>Serial Port</emphasis> to communicate with host computer. Because photographs are big files and serial port transferts are slow, this connection is now obsolete. &digikam; support these cameras and perform images transfers using gPhoto2 program. You can find a complete list of supported digital cameras at this <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">url</ulink>.
+            Many old digital still cameras used <emphasis>Serial Port</emphasis> to communicate with host computer. Because photographs are big files and serial port transfers are slow, this connection is now obsolete. &digikam; supports these cameras and performs image transfers using the gPhoto2 program. You can find a complete list of supported digital cameras at this <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">url</ulink>.
             </para>
         
         </sect2>
@@ -501,7 +501,7 @@
         <title>Transfers Using USB Mass Storage Device</title>
             
             <para>
-            Many devices are not supported by gPhoto2, but have support for the <emphasis>USB Mass Storage</emphasis> protocol, which is well-supported under GNU/Linux. This includes any digital cameras and Memory Card Readers. USB Mass Storage protocol is a set of computing communications protocols defined by the USB Implementers Forum that run on the Universal Serial Bus. The standard provides an interface to a variety of storage devices, including digital still cameras. To use a generic USB Mass Storage device with &digikam;, select <guilabel>USB Mass Storage</guilabel> item in <link linkend="setupcamera">Camera Setup</link> list and set the properly mount point path.
+            Of the devices that are not directly supported by gPhoto2, there is support for the <emphasis>USB Mass Storage</emphasis> protocol, which is well-supported under GNU/Linux. This includes any digital cameras and Memory Card Readers. USB Mass Storage protocol is a set of computing communications protocols defined by the USB Implementers Forum that run on the Universal Serial Bus. The standard provides an interface to a variety of storage devices, including digital still cameras. To use a generic USB Mass Storage device with &digikam;, select <guilabel>USB Mass Storage</guilabel> item in <link linkend="setupcamera">Camera Setup</link> list and set the correct mount point path.
             </para>
         
         </sect2>
@@ -603,7 +603,7 @@
             <title>Deleting an Album</title>
                 
                 <para>
-                When you delete an Album from &digikam; it will be moved into the KDE Trash Can. As an option you could change this behaviour, so that delete really did remove the Album and all of the photographs in it. This can be changed by selecting <menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure &digikam;</guimenuitem></menuchoice> and selecting the Miscellaneous page. At the top of this page are the settings that control what happens when a photograph is deleted. To delete an Album right-click the Album in the "My Album" tree and select Delete Album from Hard Disk from the context menu.
+                When you delete an Album from &digikam; it will be moved into the KDE Trash Can. As an option you could change this behavior, so that delete really did remove the Album and all of the photographs in it. This can be changed by selecting <menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure &digikam;</guimenuitem></menuchoice> and selecting the Miscellaneous page. At the top of this page are the settings that control what happens when a photograph is deleted. To delete an Album right-click the Album in the "My Album" tree and select Delete Album from Hard Disk from the context menu.
                 </para>
         
             </sect3>
@@ -733,7 +733,7 @@
                 </para> 
 
                 <para>
-                The thumbnails have ToolTips which will pop up if you allow the mouse to dwell over a thumbnail for a moment. The ToolTip shows the most important properties of the photograph including any Tags that you have applied. The screenshot at the top of the <link linkend="using-kapp-mainwindow-intro">Introduction to the Main Window</link> section shows a ToolTip being displayed.
+                The thumbnails have Tool Tips which will pop up if you allow the mouse to dwell over a thumbnail for a moment. The Tool Tip shows the most important properties of the photograph including any Tags that you have applied. The screenshot at the top of the <link linkend="using-kapp-mainwindow-intro">Introduction to the Main Window</link> section shows a Tool Tip being displayed.
                 </para>
 
             </sect3>
@@ -920,7 +920,7 @@
             </para>
 
             <para>
-            By default, when you select a Tag in the tree that contains other sub-Tags, &digikam; will not display photographs that are labeled with the sub-Tags. You can change this behaviour, if you prefer that all photographs marked with a sub-Tag of the current Tag should be displayed. To set this option open 
+            By default, when you select a Tag in the tree that contains other sub-Tags, &digikam; will not display photographs that are labeled with the sub-Tags. You can change this behavior, if you prefer that all photographs marked with a sub-Tag of the current Tag should be displayed. To set this option open
             <menuchoice><guimenu>Settings</guimenu>
             <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> 
             from the main Menu Bar, select the <guilabel>Albums</guilabel> page and then 
@@ -1111,10 +1111,10 @@
     
             <tip><para>If you want another date format then the default date format, you could fill in for example: <userinput>photo-%Y-%m-%d %H:%M:%S</userinput> in the prefix edit line (turn off <guilabel>Add camera provided date and time</guilabel>). For additional customization read the manpage of strftime.</para></tip> 
 
-            <tip><para>When you use <guilabel>Use camera provided names</guilabel>, you have the option to change the filenames to lowercase when downloading. Or user uppercase if you prefer that of course.</para></tip>
+            <tip><para>When you select <guilabel>Use camera provided names</guilabel>, you have the option to change the filenames to lowercase when downloading. Or use uppercase if you prefer.</para></tip>
 
             <para>
-            The new filename that &digikam; will use for the photographs, when they are downloaded, is shown underneath the name provided by the camera in the thumbnail view. The renaming settings will be remembered next time you use the Camera Interface.
+            The new filename that &digikam; will use for the photographs when they are downloaded is shown underneath the name provided by the camera in the thumbnail view. The renaming settings will be remembered next time you use the camera Interface.
             </para>
                 
         </sect2>
@@ -1283,7 +1283,7 @@
             </para>
 
             <para>
-            To  get a popup menu with the available undo/redo actions, you have to press the left mouse button at the undo or redo icon in the toolbar and hold it down for a moment. If you choose one of the menu items, all undo/redo actions until the choosen one are done.
+            To  get a popup menu with the available undo/redo actions, you have to press the left mouse button at the undo or redo icon in the toolbar and hold it down for a moment. If you choose one of the menu items, all undo/redo actions until the chosen ones are done.
             </para>
                         
         </sect2>
@@ -1449,7 +1449,7 @@
                 If you are interested in the detailed histogram of your photograph you can view it using 
                 <menuchoice><guimenu>Image</guimenu>
                 <guimenuitem>Properties</guimenuitem></menuchoice> and <guilabel>Histogram</guilabel> page. 
-                The histogram for a image shows the amount of each colour that is present and their different amplitudes within the image. If your photograph has a colour cast you might be able to see what is wrong by looking at the histogram.
+                The histogram for a image shows the amount of each color that is present and their different amplitudes within the image. If your photograph has a color cast you might be able to see what is wrong by looking at the histogram.
                 </para>
             
                 <para>
@@ -1483,7 +1483,7 @@
                     </para></listitem>
 
                     <listitem><para>
-                        <guilabel>Colors</guilabel>: shows the <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, and <guilabel>Blue</guilabel> histograms superposed, so that you can see all of the color distribution information in a single view. In this mode, the histogram foreground color can be choosen with the <guilabel>Color</guilabel> option.
+                        <guilabel>Colors</guilabel>: shows the <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, and <guilabel>Blue</guilabel> histograms superposed, so that you can see all of the color distribution information in a single view. In this mode, the histogram foreground color can be chosen with the <guilabel>Color</guilabel> option.
                     </para></listitem>
                             
                 </itemizedlist>
@@ -1591,7 +1591,7 @@
                     <graphic srccredit="An Over Exposed Photograph" fileref="editorhistogramsample3.png"/>
                 </figure>
                          
-                With a correctly exposed photograph, the histogram will have a distribution of brightness that will be most prominent near the centre part of the graph.
+                With a correctly exposed photograph, the histogram will have a distribution of brightness that will be most prominent near the center part of the graph.
                        
                 <figure>
                     <title>A Correctly Exposed Photograph</title>
@@ -1608,7 +1608,7 @@
                 </para>
 
                 <para>
-                Important: not all photographs have to exhibit this bulge in the centre part of their histogram. Much depends on the subject of the photograph. In some cases, it might be appropriate for the histogram to show a peak at one end or the other, or both.
+                Important: not all photographs have to exhibit this bulge in the center part of their histogram. Much depends on the subject of the photograph. In some cases, it might be appropriate for the histogram to show a peak at one end or the other, or both.
                 </para>
                         
                 <para>
@@ -1682,7 +1682,7 @@
                     </para>
                     
                     <para>
-                    Aspect Ratio Crop tool uses a relative ratio. That means it is the same if you use centimeters or inches and it doesn't specify the physical size. For example, you can see below a correspondance list of traditional photographic paper sizes and aspect ratio crop.
+                    Aspect Ratio Crop tool uses a relative ratio. That means it is the same if you use centimeters or inches and it doesn't specify the physical size. For example, you can see below a correspondence list of traditional photographic paper sizes and aspect ratio crop.
                     </para>
                     
                     <informaltable><tgroup cols="2">
@@ -1695,7 +1695,7 @@
                             <tbody>
                                 <row>
                                     <entry>
-                                    10x15cms&nbsp;20x30cms&nbsp;30x45cms
+                                    10x15cm&nbsp;20x30cm&nbsp;30x45cm
                                     3.5x5"&nbsp;4x6"&nbsp;8x12"&nbsp;12x18"&nbsp;16x24"&nbsp;20x30"
                                     </entry>
                 
@@ -1706,7 +1706,7 @@
 
                                 <row>
                                     <entry>
-                                    6x8cms&nbsp;15x20cms&nbsp;18x24cms&nbsp;30x40cms 
+                                    6x8cm&nbsp;15x20cm&nbsp;18x24cm&nbsp;30x40cm
                                     3.75x5"&nbsp;4.5x6"&nbsp;6x8"&nbsp;7.5x10"&nbsp;9x12"
                                     </entry>
                     
@@ -1717,7 +1717,7 @@
                                 
                                 <row>
                                     <entry>
-                                    20x25cms&nbsp;40x50cms 
+                                    20x25cm&nbsp;40x50cm
                                     8x10"&nbsp;16x20"
                                     </entry>
                     
@@ -1728,7 +1728,7 @@
 
                                 <row>
                                     <entry>
-                                    15x21cms&nbsp;30x42cms 
+                                    15x21cm&nbsp;30x42cm
                                     5x7"
                                     </entry>
                     
@@ -1739,7 +1739,7 @@
                                 
                                 <row>
                                     <entry>
-                                    21x30cms&nbsp;42x60cms 
+                                    21x30cm&nbsp;42x60cm
                                     </entry>
                     
                                     <entry>
@@ -1769,7 +1769,7 @@
                 <title>Composition Guide</title>
 
                     <para>
-                    When first looking at an image, the eye of the viewer rarely settles at the centre of the image, but moves instead from the top left to the right, and then from the lower left to the right again. This pattern is most unconscious but has been well-documented. It is probably associated with the western reading pattern. From the photographer's point of view, the goal then becomes to guide the gaze of the viewer to the subject, being aware of the way many people perceive an image.
+                    When first looking at an image, the eye of the viewer rarely settles at the center of the image, but moves instead from the top left to the right, and then from the lower left to the right again. This pattern is most unconscious but has been well-documented. It is probably associated with the western reading pattern. From the photographer's point of view, the goal then becomes to guide the gaze of the viewer to the subject, being aware of the way many people perceive an image.
                     </para>                                                                                
                     
                     <para>
@@ -1932,7 +1932,7 @@
             <title>Rotating or Flipping a Photograph</title>
                 
                 <para>
-                If the photograph shows a wrong orientaton you can <guilabel>Flip</guilabel> or <guilabel>Rotate</guilabel> it to the correct orientation you would like by using Transform Flip/Rotate tools available in
+                If the photograph shows a wrong orientation you can <guilabel>Flip</guilabel> or <guilabel>Rotate</guilabel> it to the correct orientation you would like by using Transform Flip/Rotate tools available in
                 <menuchoice><guimenu>Transform</guimenu>
                 <guimenuitem>Rotate</guimenuitem></menuchoice> 
                 and 
@@ -2057,7 +2057,7 @@
             <anchor id="colorbalancetool.anchor"/>
             
             <para>
-            Digital cameras often have problems with lighting conditions and it is not unusual to want to correct the colour, contrast and brightness of a photograph. You can experiment with altering the levels of different aspects of your photographs using the tools under the 
+            Digital cameras often have problems with lighting conditions and it is not unusual to want to correct the color contrast and brightness of a photograph. You can experiment with altering the levels of different aspects of your photographs using the tools under the
             <menuchoice><guimenu>Fix</guimenu>
             <guimenuitem>Colors</guimenuitem></menuchoice> menu.
             You can see any adjustments you make reflected in the preview. When you are happy with the results, press <guilabel>Ok</guilabel> and they will take effect.
@@ -2190,7 +2190,7 @@
             <tbody>
                 <row>
                     <entry>
-                    <graphic srccredit="Orignal in Color" fileref="editorconvert_original.png"/>
+                    <graphic srccredit="Original Color" fileref="editorconvert_original.png"/>
                     </entry>
                 
                     <entry>
@@ -2343,7 +2343,7 @@
             <anchor id="setupdialog.anchor"/>
             
             <para>
-            &digikam; tries to give you as much control on how it works as possible. There are many options that change the behaviour of &digikam;. To access these settings select
+            &digikam; tries to give you as much control on how it works as possible. There are many options that change the behavior of &digikam;. To access these settings select
             <menuchoice><guimenu>Setting</guimenu>
             <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> from the Menu Bar. The configuration dialog is separated into eight pages. You can change between these pages by clicking on the icons on the left-hand side of the dialog.
             </para>
@@ -2391,7 +2391,7 @@
                 </para>            
                 
                 <para>
-                <guilabel>Save image comments as embedded comments (JFIF) in JPEG images</guilabel> : this will synchronise the comments that you add to your photographs with those in embedded in the image. This is useful because the comments embedded in the image can be read by other image viewers. Care should be taken if you have images that already have comments embedded in them because these comments will be overwritten by the comments made within &digikam;. 
+                <guilabel>Save image comments as embedded comments (JFIF) in JPEG images</guilabel> : this will synchronize the comments that you add to your photographs with those in embedded in the image. This is useful because the comments embedded in the image can be read by other image viewers. Care should be taken if you have images that already have comments embedded in them because these comments will be overwritten by the comments made within &digikam;.
                 </para> 
     
                 <para>
@@ -2449,15 +2449,15 @@
                 </para>
     
                 <para>
-                With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation doesn't reduce image quality because PNG usees a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value for to use a high compression factor (1: low compression / 9: high compression).
+                With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation doesn't reduce image quality because PNG uses a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value for to use a high compression factor (1: low compression / 9: high compression).
                 </para>
                 
                 <para>
-                With <guilabel>Using TIFF compression</guilabel> option, you can toogle to use <emphasis>Adobe Deflate</emphasis> compression algorithm with TIFF image files. This will reduce the TIFF image files size. This has no image quality effect because Adobe Deflate is a lossless algorithm. 
+                With <guilabel>Using TIFF compression</guilabel> option, you can toggle to use <emphasis>Adobe Deflate</emphasis> compression algorithm with TIFF image files. This will reduce the TIFF image files size. This has no image quality effect because Adobe Deflate is a lossless algorithm.
                 </para>
                 
                 <para>
-                By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background colour you can select one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
+                By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background color can select one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
                 </para>
                 
                 <para>
@@ -2549,7 +2549,7 @@
                 </para>
     
                 <para>
-                <guilabel>Scan for new items at startup</guilabel> option force &digikam; to scan album library tree for new items added or removed between &digikam; sessions. This may slow down the start time of &digikam;. If any items have been removed from album library, &digikam; will ask you confirmation before to remove definitly the item references in database.
+                <guilabel>Scan for new items at startup</guilabel> option force &digikam; to scan album library tree for new items added or removed between &digikam; sessions. This may slow down the start time of &digikam;. If any items have been removed from album library, &digikam; will ask you confirmation before to remove definitely item references in database.
                 </para>
                 
                 <figure>
@@ -2567,7 +2567,7 @@
             <para>
             Color schemes are supplied like themes to personalize &digikam; main interface for you pleasure. To access these settings select
             <menuchoice><guimenu>Setting</guimenu>
-            <guimenuitem>Themes</guimenuitem></menuchoice> from the Menu Bar and select your prefered theme to use. A preview of the available themes is listed below:
+            <guimenuitem>Themes</guimenuitem></menuchoice> from the Menu Bar and select your preferred theme to use. A preview of the available themes is listed below:
             </para>
 
             <informaltable><tgroup cols="2">
@@ -2653,7 +2653,7 @@
             </tgroup></informaltable>
 
             <note><para>
-            Theme settings is just a simple plain text file to implement. If you is interested to create a new theme for &digikam;, you can find more informations about in this <ulink url="http://www.digikam.org/themeguide.html">tutorial</ulink>.
+            Theme settings is just a simple plain text file to implement. If you are interested to create a new theme for &digikam;, you can find more informations about it in this <ulink url="http://www.digikam.org/themeguide.html">tutorial</ulink>.
             </para></note>  
                                             
         </sect2>    
@@ -3011,7 +3011,7 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Kipi plugin for emailing images with your prefered mail agent. 
+                    Kipi plugin for emailing images with your preferred mail agent.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -3175,7 +3175,7 @@
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Tools</guimenu><guimenuitem>Avanced Search</guimenuitem>
+                <guimenu>Tools</guimenu><guimenuitem>Advanced Search</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -3213,7 +3213,7 @@
                     <ulink url="help:/kgamma/index.html">KGamma manual</ulink> 
                     for more information.
 
-                    Another even better reference can be found here: <ulink url="http://www.ltlimagery.com/monitor_calibration.html#normankoren">Monitor Calibration</ulink>  It is highly recomended.
+                    Another even better reference can be found here: <ulink url="http://www.ltlimagery.com/monitor_calibration.html#normankoren">Monitor Calibration</ulink>  It is highly recomrecommended
                 </para>     
             </listitem>
         </varlistentry>
@@ -4309,7 +4309,7 @@
     
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Settings</guimenu><guimenuitem>Configure Shorcuts</guimenuitem>
+                <guimenu>Settings</guimenu><guimenuitem>Configure Shortcuts</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Configure the &digikam; image editor shortcuts.</action></para></listitem>
         </varlistentry>
