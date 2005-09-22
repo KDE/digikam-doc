@@ -260,7 +260,7 @@
             </sect3>
 
             <sect3>
-            <title>CCD RAW</title>
+            <title>RAW</title>
                 
                 <para>
                 Some, typically more expensive, cameras allow you to store images in RAW format. RAW format is not really an image standard at all. It is different for every make of camera. RAW format images contain all the data that is taken directly from the camera's image sensor before the software in the camera applies things like white balance, sharpening etc. Storing  photographs in a camera's RAW format allows you to alter settings, such as white balance, after the photograph has been taken. Most professional photographers use RAW format, because it offers them maximum flexibility. The downside is that RAW image files can be very large indeed. 
@@ -437,7 +437,7 @@
         <title>Introduction</title>
 
             <para>
-            Current digital cameras are characterized by the use of <emphasis>Compact Flash Memory</emphasis> cards and <emphasis>USB</emphasis> or <emphasis>FireWire (IEEE-1394)</emphasis> for data transmission. The actual transfers to a host computer is commonly carried out using the <emphasis>USB Mass Storage</emphasis> device class (so that the camera appears as a disk drive) or using the <emphasis>Picture Transfer Protocol (PTP)</emphasis> and its derivatives. Older cameras may use the <emphasis>Serial Port (RS-232)</emphasis> connection.
+            Current digital cameras are characterized by the use of <emphasis>Compact Flash Memory</emphasis> cards and <emphasis>USB</emphasis> or <emphasis>FireWire (IEEE-1394 or i-link)</emphasis> for data transmission. The actual transfers to a host computer is commonly carried out using the <emphasis>USB Mass Storage</emphasis> device class (so that the camera appears as a disk drive) or using the <emphasis>Picture Transfer Protocol (PTP)</emphasis> and its derivatives. Older cameras may use the <emphasis>Serial Port (RS-232)</emphasis> connection.
             </para>
             
             <informaltable><tgroup cols="2">
@@ -454,7 +454,7 @@
                     </entry>
                 
                     <entry>
-                    FireWire (IEEE-1394) connector from a professional digital still camera
+                    FireWire (IEEE-1394 or i-link) connector from a professional digital still camera
                     </entry>
                 </row>
 
@@ -485,7 +485,7 @@
         </sect2>
 
         <sect2>
-        <title>Transfers Using gPhoto2: PTP and Serial Port</title>
+        <title>Transfers Using gPhoto2: PTP and RS-232 Serial Port</title>
         
             <para>
             &digikam; employs the <emphasis>gPhoto2</emphasis> program to communicate with digital still cameras. gPhoto2 is a free, redistributable set of digital camera software applications which supports a growing number of over 600 cameras. gPhoto2 has support for the <emphasis>Picture Transfer Protocol</emphasis>, which is a widely-supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
@@ -498,10 +498,21 @@
         </sect2>
             
         <sect2>
-        <title>Transfers Using USB Mass Storage Device</title>
+        <title>Transfers Using Mass Storage Device</title>
             
             <para>
-            Of the devices that are not directly supported by gPhoto2, there is support for the <emphasis>USB Mass Storage</emphasis> protocol, which is well-supported under GNU/Linux. This includes any digital cameras and Memory Card Readers. USB Mass Storage protocol is a set of computing communications protocols defined by the USB Implementers Forum that run on the Universal Serial Bus. The standard provides an interface to a variety of storage devices, including digital still cameras. To use a generic USB Mass Storage device with &digikam;, select <guilabel>USB Mass Storage</guilabel> item in <link linkend="setupcamera">Camera Setup</link> list and set the correct mount point path.
+            Of the devices that are not directly supported by gPhoto2, there is support for the <emphasis>Mass Storage</emphasis> protocol, which is well-supported under GNU/Linux. This includes any digital cameras and Memory Card Readers. Mass Storage interfaces are:
+             
+            <itemizedlist>
+                
+                    <listitem><para><emphasis>USB Mass Storage</emphasis>:  it's a set of computing interface using a communications protocols defined by the USB Implementers Forum that run on the Universal Serial Bus. This standard provides an interface to a variety of storage devices, including digital still cameras.</para></listitem>
+    
+                    <listitem><para><emphasis>FireWire Mass Storage</emphasis>: it's a set of computing interface using a communications protocols developed primarily by Apple Computer in the 1990s. FireWire offering high-speed communications and isochronous real-time data services. Like USB MAss Storage, this standard provides an interface to a variety of storage devices, including digital still cameras. Almost all recent digital cameras support USB version 1 and eventually will support USB version 2, a very few support FireWire.
+                    </para></listitem>
+    
+            </itemizedlist>
+                      
+             To use a generic Mass Storage device with &digikam;, select <guilabel>USB Mass Storage</guilabel> item in <link linkend="setupcamera">Camera Setup</link> list and set the correct mount point path.
             </para>
         
         </sect2>
