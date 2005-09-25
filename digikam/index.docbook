@@ -1990,6 +1990,55 @@
         <anchor id="blursharpentool.anchor"/>
             
             <sect3>
+            <title>Introduction to Common Tool Dialogs</title>
+                
+                <para>
+                Any Image Editor tools like Sharpen, Blur, Noise Reduction, Refocus, Unsharpen Mask, etc. using a common dialog to give a preview effect before to apply filter on current image. You can See below the "Apply Texture" tool in action using this common dialog layout:
+                </para>
+            
+                <figure>
+                    <title>The Apply Texture Tool in Action</title>
+                    <graphic srccredit="The Apply Texture Tool in Action" fileref="editorcommondialogtools.png"/>
+                </figure>
+                
+                <para>
+
+                <itemizedlist>
+                
+                    <listitem><para>
+                        <emphasis>(1)</emphasis>: This area including on the right a progress bar witch indicating the status of filter apply on current image. On the left, five button can be use to select the separate mode of preview area on the right of dialog. Available modes are:
+                        
+                        <itemizedlist>
+                
+                            <listitem><para>Separate horizontally with duplication. The preview effect is applied on original area and copied to target behind.</para></listitem>
+            
+                            <listitem><para>Separate vertically with duplication. The preview effect is applied on original area and copied to target on the right.</para></listitem>
+
+                            <listitem><para>Separate horizontally without duplication. The preview effect is applied on target area dirrectly on the bottom. Original and target are contiguious.</para></listitem>
+            
+                            <listitem><para>Separate vertically without duplication. The preview effect is applied on target area dirrectly on the right. Original and target are contiguious.</para></listitem>
+
+                            <listitem><para>No separate. The preview effect is applied on the full clip area.</para></listitem>
+                                                                                        
+                        </itemizedlist>
+
+                    </para></listitem>
+    
+                    <listitem><para><emphasis>(2)</emphasis>: The clip area selector. Click and drag with the mouse on the clip area to move it on image. The preview area on right of dialog is updated accordingly</para></listitem>
+                    
+                    <listitem><para><emphasis>(3)</emphasis>: The filter settings area.</para></listitem>
+                    
+                    <listitem><para><emphasis>(4)</emphasis>: The original area for the clipped image region. This area is unchanged by the filter. Click and drag with the mouse in this area to move it on image.</para></listitem>
+                    
+                    <listitem><para><emphasis>(5)</emphasis>: The target area for the clipped image region. This area is changed by the filter. Click and drag with the mouse in this area to move it on image.</para></listitem>
+    
+                </itemizedlist>
+            
+                </para>
+                                
+            </sect3>
+                        
+            <sect3>
             <title>Unblurring a Photograph</title>
             
                 <para>
