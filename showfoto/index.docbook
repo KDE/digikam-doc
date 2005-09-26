@@ -1053,6 +1053,55 @@
         <title>Adjusting Sharpness</title>
         
         <anchor id="blursharpentool.anchor"/>
+        
+            <sect3>
+            <title>Introduction to Common Tool Dialogs</title>
+                
+                <para>
+                All Image Editor tools like Sharpen, Blur, Noise Reduction, Refocus, Unsharpen Mask, etc. use a common dialog style that previews the effect before applying the filter to the current image. Below you see the "Apply Texture" tool in action using this common dialog layout:
+                </para>
+            
+                <figure>
+                    <title>The Apply Texture Tool in Action</title>
+                    <graphic srccredit="The Apply Texture Tool in Action" fileref="editorcommondialogtools.png"/>
+                </figure>
+                
+                <para>
+
+                <itemizedlist>
+                
+                    <listitem><para>
+                        <emphasis>(1)</emphasis>: This progress bar indicates the status of filter application on the current image. To the left of it, five buttons allow to select the comparative mode style of the preview area. The modes are:
+                        
+                        <itemizedlist>
+                
+                            <listitem><para>Separate horizontally with duplication. The top area shows the original and the lower one the filter effect for comparison.</para></listitem>
+            
+                            <listitem><para>Separate vertically with duplication. The left area shows the original and the right one the filter effect for comparison.</para></listitem>
+
+                            <listitem><para>Separate horizontally without duplication. The top area shows the original whereas the lower area shows the filter applied to the continuation of the selected zoom.</para></listitem>
+            
+                            <listitem><para>Separate vertically without duplication. The left area shows the original whereas the right side shows the filter applied to the continuation of the selected zoom.</para></listitem>
+
+                            <listitem><para>Direct effect preview. The effect preview is applied to all of the selected zoom area.</para></listitem>
+                                                                                        
+                        </itemizedlist>
+
+                    </para></listitem>
+    
+                    <listitem><para><emphasis>(2)</emphasis>: The preview selector frame. Click and drag with the mouse on the floating frame to move it on the image. The preview area on the left of dialog is updated accordingly.</para></listitem>
+                    
+                    <listitem><para><emphasis>(3)</emphasis>: The filter settings area.</para></listitem>
+                    
+                    <listitem><para><emphasis>(4)</emphasis>: The original area for the zoomed image region. This area is unchanged by the filter. Click and drag with the mouse in this area to move it on the image.</para></listitem>
+                    
+                    <listitem><para><emphasis>(5)</emphasis>: The target area for the zoomed image region. This area is changed by the filter and presents the actual preview. Click and drag with the mouse in this area to move it on the image.</para></listitem>
+    
+                </itemizedlist>
+            
+                </para>
+                                
+            </sect3>
             
             <sect3>
             <title>Unblurring a Photograph</title>
