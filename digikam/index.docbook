@@ -186,8 +186,23 @@
         </para>
 
         <para>
-        If you already have a collection of photographs on your hard disk, you can enter the top-level folder containing those photographs as the Albums Library folder. &digikam; will treat each sub-folder of the folder you've entered as an Album. None of the photographs will be altered. 
+        If you already have a collection of photographs on your hard disk, you can enter the top-level folder containing those photographs as the Albums Library folder. &digikam; will treat each sub-folder of the folder you've entered as an Album. None of the photographs will be altered. During folders parsing, you can see a progress dialog like below:
         </para>
+
+        <figure>
+            <title>The Scan Items Dialog</title>
+            <graphic srccredit="The Scan Items Dialog" fileref="introductionscandialog.png"/>
+        </figure>
+
+        <note><para>
+        Like &digikam; use folders to store Albums on your hard disk, others applications like file managers can remove any albums outside a &digikam; session. In this case, at the next session, &digikam; will tell you if all albums instance that have removed from hard disk must be deleted from albums database.
+        
+        <figure>
+            <title>The Albums Missing Dialog</title>
+            <graphic srccredit="The Albums Missing Dialog" fileref="introductionalbumsmissingdialog.png"/>
+        </figure>
+
+        </para></note>
 
         <para>
         When you use an existing folder of photographs, as the Album Library folder, you will notice that the Albums in the My Album list do not have photographs as their icons. The first time you view each Album &digikam; will create a thumbnail from the first photograph in the Album and use this as the Album icon. See the <link linkend="using-kapp-myalbumsview">My Album</link> section for details of how to change the Album icon.
@@ -1120,9 +1135,17 @@
             &digikam; can automatically rename your photographs using the date and time information included by the camera in the photograph. To use this feature, click the <guilabel>Advanced</guilabel> button on the Camera Interface. The Camera Interface window will expand to reveal some extra features. Select <guilabel>Customize Names</guilabel> and then enter any filename prefix you would like. Then, optionally, add the date and time and an a sequence number. The sequence number may be needed if you have a camera with a very fast multi-shot mode. With this mode, it is possible to get two photographs with exactly the same data and time.
             </para>
     
-            <tip><para>If you want another date format then the default date format, you could fill in for example: <userinput>photo-%Y-%m-%d %H:%M:%S</userinput> in the prefix edit line (turn off <guilabel>Add camera provided date and time</guilabel>). For additional customization read the manpage of strftime.</para></tip> 
+            <tip>
+                <para>
+                <itemizedlist>
+            
+                    <listitem><para>If you want another date format then the default date format, you could fill in for example: <userinput>photo-%Y-%m-%d %H:%M:%S</userinput> in the prefix edit line (turn off <guilabel>Add camera provided date and time</guilabel>). For additional customization read the manpage of strftime.</para></listitem>
 
-            <tip><para>When you select <guilabel>Use camera provided names</guilabel>, you have the option to change the filenames to lowercase when downloading. Or use uppercase if you prefer.</para></tip>
+                    <listitem><para>When you select <guilabel>Use camera provided names</guilabel>, you have the option to change the filenames to lowercase when downloading. Or use uppercase if you prefer.</para></listitem>
+                   
+                </itemizedlist>
+                </para>
+            </tip>
 
             <para>
             The new filename that &digikam; will use for the photographs when they are downloaded is shown underneath the name provided by the camera in the thumbnail view. The renaming settings will be remembered next time you use the camera Interface.
