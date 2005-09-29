@@ -1025,30 +1025,91 @@
             <anchor id="quicksearchtool.anchor"/>
             
                 <para>
-                <!-- TODO !!! -->            
+                Quick Search provides you with a simple search form which you can use to search all data fields in the album library with a single query. You can enter any arguments in the <guilabel>Search</guilabel> text field and it will be used to determine a result. For instance, you can enter the string 'birthday' to search the complete album library for occurrences of the word 'birthday' in photograph description, or '05.png' to search for a specific image file name '05.png'.
                 </para>
-    
+                
                 <figure>
                     <title>Quick Search Tool Dialog</title>
                     <graphic srccredit="Quick Search Tool Dialog" fileref="maininterfacequicksearch.png"/>
                 </figure>
+                
+                <para>
+                When you are satisfied with your selection, click on the <guilabel>Ok</guilabel> button, and the search will be carried out, and the results displayed in "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to name your query in "My Search" list. If you want to modify your selection after performing a search, simply right click on one item from "My Search" view and select an option from pop-up menu. 
+                </para>
+                
+                <para>
+                If you select <guilabel>Edit Search</guilabel>, the search form will re-appear, containing your previous search information. If you select <guilabel>Edit as Advanced Search</guilabel>, the advanced search tool dialog will be launch to modify your previous search informations using more search rules. See the <link linkend="using-kapp-mainwindow-advancedsearchtool">The Advanced Search Tool</link> section for more informations.
+                </para>
+                
+                <para>
+                If you want to remove an existing search from the list, just select <guilabel>Delete Search</guilabel> from pop-up menu.
+                </para>
+    
+                <figure>
+                    <title>Search View from Main Window</title>
+                    <graphic srccredit="Search View from Main Window" fileref="maininterfacesearchview.png"/>
+                </figure>
 
             </sect3>            
             
-            <sect3>
+            <sect3 id="using-kapp-mainwindow-advancedsearchtool">
             <title>The Advanced Search Tool</title>
             <anchor id="advancedsearchtool.anchor"/>
             
                 <para>
-                <!-- TODO !!! -->            
+                Advanced Search tool provides you with a extended search form which you can use to search in specific fields of the &digikam; albums database.
                 </para>
-    
+                    
+                <para>
+                The <guilabel>Search Rules</guilabel> list is used to set all options to process a search query in albums database. all rules are listed verticaly and separed by an operator. A query can be added or deleted to the list using <guilabel>Add/Delete Option</guilabel> or grouped/ungrouped together using <guilabel>Group/Ungroup Options</guilabel>. Each query can be combined to another one using <guilabel>As well as</guilabel> or <guilabel>Or</guilabel> logical operator.
+                </para>                
+                
+                <para>                
+                An option is composed by tree arguments: 
+                
+                <itemizedlist>
+            
+                    <listitem><para>The item used to search in database, witch can be an album, a name, a tag, an image, a keyword, etc.
+                    </para></listitem>
+                    
+                    <listitem><para>The logical operator to process with item witch depands of item type.
+                    </para></listitem>
+                    
+                    <listitem><para>The operator argument witch can be a string or a name already set by database.
+                    </para></listitem>
+                                           
+                </itemizedlist>
+                
+                </para>                
+                
+                <para>                
+                For instance, you can set an advanced query to search all items in database using these options:
+                 
+                <itemizedlist>
+            
+                    <listitem><para>All album names contains the string 'adrien' and all image captions contains the string 'an'.
+                    </para></listitem>
+                    
+                    <listitem><para>Or all item tags are set to 'Peoples'.
+                    </para></listitem>
+                                           
+                    <listitem><para>Or all keywords contains the string 'gilles'.
+                    </para></listitem>
+
+                </itemizedlist>
+
                 <figure>
                     <title>Advanced Search Tool Dialog</title>
                     <graphic srccredit="Advanced Search Tool Dialog" fileref="maininterfaceadvancedsearch.png"/>
                 </figure>
-            
-            </sect3>            
+                
+                </para>
+ 
+                <para>
+                When you are satisfied with your search settings, click on the <guilabel>Ok</guilabel> button, and the advanced search will be carried out, and the results displayed in "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to name your advanced query in "My Search" list. If you want to modify your selection after performing an advanced search, simply right click on one item from "My Search" view and select <guilabel>Edit Search</guilabel> from pop-up menu.
+                </para>
+             
+             </sect3>            
             
         </sect2>
                 
