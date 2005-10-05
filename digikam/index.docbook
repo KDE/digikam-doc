@@ -186,7 +186,7 @@
         </para>
 
         <para>
-        If you already have a collection of photographs on your hard disk, you can enter the top-level folder containing those photographs as the Albums Library folder. &digikam; will treat each sub-folder of the folder you've entered as an Album. None of the photographs will be altered. During folders parsing you can see a progress dialog like this:
+        If you already have a collection of photographs on your hard disk, you can enter the top-level folder containing the photographs, this is called the Albums Library folder. &digikam; will treat each sub-folder of the folder you've entered as an Album. None of the photographs will be altered. During folders parsing you can see a progress dialog like this:
         </para>
 
         <figure>
@@ -195,7 +195,7 @@
         </figure>
 
         <note><para>
-        As &digikam; uses folders (directories) to store albums on your hard disk, others applications like file managers can remove any albums outside a &digikam; session. In this case, at the next session, &digikam; will tell you if all albums that have been removed from the &digikam; photographs root path shall be deleted from albums database.
+        As &digikam; uses your folders (directories) on your hard disk directly, other applications like file managers can remove any albums outside a &digikam; session. In this case, at the next session, &digikam; will tell you if all albums that have been removed from the &digikam; photographs root path shall be deleted from albums database. If you want to move folders around and don't want to do that in &digikam;, we suggest you do that while &digikam; is running, so the database will be kept in sync and you don't loose any meta data.
         
         <figure>
             <title>The Albums Missing Dialog</title>
@@ -1027,6 +1027,10 @@
                 <para>
                 Quick Search provides you with a simple search form which you can use to search all data fields in the album library with a single query. You can enter any arguments in the <guilabel>Search</guilabel> text field and it will be used to determine a result. For instance, you can enter the string 'birthday' to search the complete album library for occurrences of the word 'birthday' in photograph description, or '05.png' to search for a specific image file name '05.png'.
                 </para>
+
+                <para>
+                If you want to search photographs from a certain date, you can simply type <userinput>2005</userinput>, but it is even possible to search for a certain month. Just enter the name of the month in your local langauge. If it is Dutch, you can enter <userinput>Maart</userinput>, to see the pictures of March.
+               </para> 
                 
                 <figure>
                     <title>Quick Search Tool Dialog in Action</title>
@@ -1063,6 +1067,12 @@
                 <para>
                 The <guilabel>Search Rules</guilabel> list is used to set all options to process a search query in albums database. all rules are listed verticaly and separed by an operator. An option can be added or deleted to the list using <guilabel>Add/Delete Option</guilabel> or grouped/ungrouped together using <guilabel>Group/Ungroup Options</guilabel>. Each option can be combined to another one using <guilabel>As well as</guilabel> or <guilabel>Or</guilabel> logical operator.
                 </para>                
+
+<tip>
+                <para>
+                If you made added a rule with <guilabel>As well as</guilabel> and you realize that it should have been <guilabel>Or</guilabel>, you can easily switch to that by double clicking on the text <guilabel>As well as</guilabel> in the rules area.
+                </para>
+                </tip>
                 
                 <para>                
                 An option is composed by four fields: 
@@ -1098,7 +1108,7 @@
                     <listitem><para>All album names contains the string 'adrien' and all image captions contains the string 'an'.
                     </para></listitem>
                     
-                    <listitem><para>Or all item tags are set to 'Peoples'.
+                    <listitem><para>Or all item which have the tag 'Peoples'.
                     </para></listitem>
                                            
                     <listitem><para>Or all keywords contains the string 'gilles'.
@@ -1114,7 +1124,7 @@
                 </para>
  
                 <para>
-                If you want to group any options together, just checked on the options box and press <guilabel>Group</guilabel> button. Options will be appear on the list like this:
+                If you want to group options together, just check the option box iat the end of the rule and press <guilabel>Group</guilabel> button. Options will be appear in the list like this:
                 
                 <figure>
                     <title>A Query Grouped Options Example</title>
