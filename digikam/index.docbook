@@ -1186,14 +1186,14 @@
         <sect2>
         <title>Properties</title>
            <para>
-           The properties side bar show the essential information about the selected image which are largely self-explanatory. They are grouped into those sections:
+           The properties side bar shows the essential information about the selected image which are largely self-explanatory. It is grouped into the following sections:
            <itemizedlist>
 
-               <listitem><para>File Properties: these are file system properties</para></listitem>
+               <listitem><para>File Properties: these are file system related informations</para></listitem>
 
                <listitem><para>Image Properties: shows the image and format properties like dimension, compression, color-depth, &etc;</para></listitem>
 
-               <listitem><para>Photograph Properties: shows a summary of the most important parameters when taking the photograph. This data is taken from the exif field if available</para></listitem>
+               <listitem><para>Photograph Properties: shows a summary of the most important parameters when taking the photograph. This data is taken from the exif data fields if available</para></listitem>
 
            </itemizedlist>
 
@@ -1245,24 +1245,50 @@
            <sect3 id="using-kapp-gps">
            <title>How to use a GPS device with &digikam;</title>
            <note><para>
-           GPS (global positioning system) is used as a generic terms throughout this document, it just means a location in latitude and longitude global coordinates that can be displayed on a map. The actual technical implementation that provides the data can be the American GPS, the Russian GLONAS, the European GALILEO or any other system.
+           GPS (global positioning system) is used as a generic term throughout this document, it just means a location in latitude and longitude global coordinates that can be displayed on a map. The actual technical implementation that provides the data can be the American GPS, the Russian GLONAS, the European GALILEO or any other system.
            </para></note>
 
            <para>
-           Not only for professional photographers it can be interesting to link an image to a precise geographical location. Not everybody uses an airplane to overfly and a certain area with automatic GPS data recording. Environmental planners, military, police, construction bureaus, real estate agecies, all will have an immediate application. 
-           But if, after some time, one has forgotten where the picture was taken, if one loves the nice feature to open with a simple click a browser displaying a zoom of the area, if you like to send you picture as a postcard to another &digikam; user (how is then able to locate your shot), or if you simply need the documentation aspect of it - having position data stored in a photo is great.
+           Not only for professional photographers it can be interesting to link an image to a precise geographical location. Not everybody uses an airplane to overfly and scan a certain area with automatic GPS data recording. Environmental planners, military, police, construction bureaus, real estate agencies, all will have an immediate application. 
+           But if, after some time, one has forgotten where the picture was taken, if one loves the nice feature to open with a simple click a browser displaying a zoom of the area, if you like to send you picture as a postcard to another &digikam; user (who is then able to locate your shot), or if you simply need the documentation aspect of it - having position data stored in a photo is great.
            </para>
-           
            <para>
-           <ulink url="http://www.engadget.com.nyud.net:8090/2004/09/17/diy-black-box-tagging-photos-with-gps-coordinates/">Selfmade Howto</ulink>
+           Now, how do we get GPS data into the images? First it is to say that <ulink url="http://www.exiv2.org/tags.html">exif2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files and per 'manual' insertion of known locations.
            </para>
-           
-           <para>Cameras with GPS interface: 
-              <ulink url="http://www.robgalbraith.com/bins/multi_page.asp?cid=7-6459-7204-7205">Nikon,&nbsp; </ulink>
-              <ulink url="http://www.alta4.com/de/produkte/gpsphotomapper/index.php">Ricoh Pro G3, &nbsp;</ulink>
-              <ulink url="http://digitalcameras.engadget.com/2004/04/30/gps-attachment-for-sony-digital-camcorders/">Sony</ulink>
-           </para>
+            <itemizedlist>
+            
+                <listitem><para>Direct GPS data insertion into the image files</para>
+                   <para></para>
+                   <para><ulink url="http://www.engadget.com.nyud.net:8090/2004/09/17/diy-black-box-tagging-photos-with-gps-coordinates/">Selfmade Howto</ulink>
+                   </para>
+                   <para>Cameras with GPS interface: 
+                    <ulink url="http://www.robgalbraith.com/bins/multi_page.asp?cid=7-6459-7204-7205">Nikon,&nbsp; </ulink>
+                    <ulink url="http://www.alta4.com/de/produkte/gpsphotomapper/index.php">Ricoh Pro G3, &nbsp;</ulink>
+                    <ulink url="http://digitalcameras.engadget.com/2004/04/30/gps-attachment-for-sony-digital-camcorders/">Sony</ulink>
+                  </para>
+                </listitem>
 
+                <listitem><para>Post-treatment of GPS data and image files</para>
+                   <para>Several programs exist for Windows and MacOS that are able to extract and correlate data from pictures and GPS data tracks. The following site provides the same functionality for Linux: <ulink url="http://freefoote.dview.net/linux_gpscorr.html"></ulink></para>
+                   <para>The approach is dead easy: whilst taking your pictures just keep a GPS device running and carry it around with the camera. Once you are done download the pictures and the GPS tracks, and run the above program. It will correlate the data in the time domain; so it is important that the camera be accurate in its clock setting (the GPS device is always accurate through the satellites).</para>
+                </listitem>
+            
+                <listitem><para>'Manual' insertion of known locations</para>
+                   <para>If you happen to know the latitude/longitude or other data you can use the <ulink url="http://www.exiv2.org/tags.html">exiv2 tool</ulink> to insert the data into the pictures. Whilst this can be done with one commandline per field, it is more economic to prepare a file with all data fields provided. The following example file <quote>loc1.gps</quote> illustrates this:</para>
+                   <blockquote><screen># Ta Phrom location
+# call from commandline:$ exiv2 -m loc1.gps foo.jpg
+add Exif.GPSInfo.GPSLatitudeRef Ascii "N"
+add Exif.GPSInfo.GPSLatitude Rational "13/1 23/1 5990/100"
+add Exif.GPSInfo.GPSLongitudeRef Ascii "E"
+add Exif.GPSInfo.GPSLongitude Rational "103/1 53/1 4370/100"
+add Exif.GPSInfo.GPSMapDatum Ascii "WGS-84"
+add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blockquote>
+                   <para>The positional data (e.g. 13.44088333) must be converted into H.MS format (13.235990) and split into its constituents as shown in the given  example. By the way, it is easy to find exact coodinates on the web using <ulink url="http://maps.google.com"> MapsGoogle</ulink></para>
+                   <tip>maps.google.com does not show the street map of Europe. But here are European sites (.fr .de .es at least) that show all navigation details in all of Europe.</tip>
+                </listitem>
+            
+            </itemizedlist>
+          
            <para>
            GPS devices: 
            <ulink url="http://www.emtac.com/products/bluetooth/index.html#btgps">EMTAC bluetooth GPS </ulink>
@@ -1291,7 +1317,12 @@
         <sect2 id="using-kapp-sidebartagfilters">
         <title>Tagfilters</title>
            <para>
-           tbc
+           The tag filter side bar is used to modify the set of images displayed in the main window view. Normally one uses the left side bar with its Album, Date, Tag and Searches view. When additionally one or more tags on right side bar tag filter is checked, only the cross-section of these two selections will be displayed. All ceated tags are available. 
+           </para>
+           <para>
+           To give an example, suppose you have a tag called 'public' which tagges all images except your private ones. Then you can check this 'public' tag in the right side bar to hide the private pictures (all htose not having 'public' tag). Whatever view mode you chose from the left side bar, 'public' only picture will be displayed. Another typical example is the selection of a subset of tags in a hierarchical tree. Suppose you want to display 'red' and 'green' from a tag tree containing 7 different colors as sub-tags. Simply click on the 'color' tag of the main view and check 'red' and 'green' from the right side bar.
+           </para>
+           <para>Another use is <emphasis>drag-and drop tagging</emphasis>. Lets say you selected in the main view a number of pictures to tag them. If the tag already exists, simply drag it from the right side bar onto the selection (any one of the highlighted pictures). A dialog will pop-up and ask if this tag should be applied.
            </para>
 
         </sect2>
@@ -1467,7 +1498,7 @@
                 
                 <para>
                 If your camera provides information about the date of the photograph's taking, &digikam; can use this to automatically create sub-albums in the destination Album when it is downloaded. 
-                Sub-albums names will be based on image dates. All images who have the same date will be downloaded on the same sub-album. Not all cameras include this information. 
+                Sub-albums names will be based on image dates. All images which have the same date will be downloaded into the same sub-album. Not all cameras include this information. 
                 See the <link linkend="using-kapp-imagemetadata">
                 Photograph Meta-Data, Properties and Histogram</link> section for more detail about 
                 information your camera may have embedded in your photographs.
