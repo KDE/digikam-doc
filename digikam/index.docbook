@@ -1317,8 +1317,43 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
         <sect2 id="using-kapp-sidebarcommentstags">
         <title>Comments &amp; Tags</title>
            <para>
-           tbc
+           This side bar tab serves to apply and edit image attributes like comments, rating, date and tags. All attributes are stored in the associated database. The tags only are also written into the IPTC data fields and become part of the image. All attributes are accessible in one side bar view as shown in the screenshot below. This side bar has a first-previous-next-last arrow navigator field on top if shown in the main application.
            </para>
+
+           <figure>
+               <title>Side Bar Comments &amp; Tags example</title>
+                 <graphic srccredit="Side Bar Comments &amp; Tags Example" fileref="sidebarcommentstags.png"/>
+           </figure>
+
+           <para>
+           The comment view can be used to type or paste in a comment (up to ... size). The text is UTF-8 compatible, meaning that all special characters are allowed.
+           </para>
+
+           <para>
+           In the Date &amp; Time section, which reflects the time of taking the photograph, you can change all values. If you need to change a number of images for their creating time &amp; date, there is a more comfortable method available (requiring the kipi-plugins). This latter option can be found under <menuchoice><guimenuitem>Image</guimenuitem><guimenuitem>Adjust time &amp; date...</guimenuitem></menuchoice>. Select the images to be changed in the main view and call the plugin.
+           </para>
+
+           <para>
+           The Rating section displays a 0...5 star rating scheme that can be used in searches and sort orders. It can be applied by a single mouse click or with a keyboard short-cut Ctrl+1...5
+           </para>
+
+           <para>
+           The Tag view shows an adaptive filter tag search box, the tag tree and a combo-box containing the tags previously applied in this digikam session.
+           </para>
+           <para>
+           The tag tree will be adapted dynamically as a function of the search word as you type into the box. So it is easy to quickly reduce the number of possibilities when searching for a tag. Of course, this feature is only useful if you have many tags.
+           </para>
+
+           <para>
+           The combo-box at the bottom is another ergonomical feature for easy tagging of an image series. As you apply different tags they will be memorized in this box for quick access. 
+           </para>
+
+           <para>
+           Otherwise tags are simply applied by checking the respective boxes in the tree.
+           </para>
+           <note><para>
+            In case you have selected a number of images in the main view and you check a tag in the tag tree, this one is only applied to the highlighted image, and not to the whole selection. If you want to tag selections, refer to the <link linkend="using-kapp-sidebartagfilters">Tagfilters</link> section.
+           </para></note>
 
         </sect2>
 
