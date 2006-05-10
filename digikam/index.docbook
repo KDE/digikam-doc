@@ -69,7 +69,7 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2006-05-02</date>
+<date>2006-05-10</date>
 <releaseinfo>0.9.0</releaseinfo>
 
 <abstract>
@@ -1163,14 +1163,14 @@
         <sect2>
         <title>Introduction to the Side Bar</title>
            <para>
-           The &digikam; main windows offers a Side Bar at the right border providing important information and actions of the selected images. It can be displayed by respectively clicking on one of the tabs:
+               The &digikam; main windows has a Side Bar at the right border providing important information and actions of the selected images. This same Side Bar is also available in the <link linkend="using-kapp-imageeditor">Image Editor</link> view, without the first-previous-next-last arrows. It can be displayed by respectively clicking on one of the five tabs:
            </para>
            <para>
             <itemizedlist>
             
-                <listitem><para>Properties : File and image properties, key photographing parameters (exif data)</para></listitem>
+                <listitem><para><link linkend="using-kapp-sidebarfileproperties">Properties</link> : File and image properties, key shooting parameters (EXIF tags)</para></listitem>
 
-                <listitem><para><link linkend="using-kapp-sidebarmetadata">Metadata</link>: Exif, Makernotes, IPTC and GPS data</para></listitem>
+                <listitem><para><link linkend="using-kapp-sidebarmetadata">Metadata</link> : Exif, Makernotes, IPTC and GPS data</para></listitem>
                    
                 <listitem><para><link linkend="using-kapp-sidebarcolors">Colors</link> : Histograms and embedded ICC profiles</para></listitem>
                 
@@ -1183,7 +1183,7 @@
             </para>
         </sect2>
 
-        <sect2>
+        <sect2 id="using-kapp-sidebarfileproperties">
         <title>Properties</title>
            <para>
            The properties side bar shows the essential information about the selected image which are largely self-explanatory. It is grouped into the following sections:
@@ -1237,72 +1237,18 @@
            
            </sect3>
 
-
            <sect3 id="using-kapp-sidebarmetadatagps">
-           <title>TODO</title>
+           <title>Metadata GPS tab</title>
               <para>
-              The positioning data shown in this tab are actually stored in the image (and not in the databse). That allows the location to read by anyone that has access to the image.
+	      This tab provides the GPS (<link linkend="using-kapp-gps">note</link>) section of the metadata. The displayed positioning data are actually stored in the image's EXIF tags (and not in the database). That allows the location to be read by any other application that can understand EXIF GPS data.
               </para>
+	      <para>Some tips as to how to use a GPS device with a camera are (<link linkend="using-kapp-gps">here</link>)</para>
               <figure>
                  <title>Side Bar Metadata GPS info</title>
                    <graphic srccredit="Side Bar Metadata info" fileref="sidebarmetadatagps.png"/>
               </figure>
 
 
-           </sect3>
-
-           <sect3 id="using-kapp-gps">
-           <title>How to use a GPS device with &digikam;</title>
-           <note><para>
-           GPS (global positioning system) is used as a generic term throughout this document, it just means a location in latitude and longitude global coordinates that can be displayed on a map. The actual technical implementation that provides the data can be the American GPS, the Russian GLONAS, the European GALILEO or any other system.
-           </para></note>
-
-           <para>
-           Not only for professional photographers it can be interesting to link an image to a precise geographical location. Not everybody uses an airplane to overfly and scan a certain area with automatic GPS data recording. Environmental planners, military, police, construction bureaus, real estate agencies, all will have an immediate application. 
-           But if, after some time, one has forgotten where the picture was taken, if one loves the nice feature to open with a simple click a browser displaying a zoom of the area, if you like to send you picture as a postcard to another &digikam; user (who is then able to locate your shot), or if you simply need the documentation aspect of it - having position data stored in a photo is great.
-           </para>
-           <para>
-           Now, how do we get GPS data into the images? First it is to say that <ulink url="http://www.exiv2.org/tags.html">exif2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files and per 'manual' insertion of known locations.
-           </para>
-            <itemizedlist>
-            
-                <listitem><para>Direct GPS data insertion into the image files</para>
-                   <para></para>
-                   <para><ulink url="http://www.engadget.com.nyud.net:8090/2004/09/17/diy-black-box-tagging-photos-with-gps-coordinates/">Selfmade Howto</ulink>
-                   </para>
-                   <para>Cameras with GPS interface: 
-                    <ulink url="http://www.robgalbraith.com/bins/multi_page.asp?cid=7-6459-7204-7205">Nikon,&nbsp; </ulink>
-                    <ulink url="http://www.alta4.com/de/produkte/gpsphotomapper/index.php">Ricoh Pro G3, &nbsp;</ulink>
-                    <ulink url="http://digitalcameras.engadget.com/2004/04/30/gps-attachment-for-sony-digital-camcorders/">Sony</ulink>
-                  </para>
-                </listitem>
-
-                <listitem><para>Post-treatment of GPS data and image files</para>
-                   <para>Several programs exist for Windows and MacOS that are able to extract and correlate data from pictures and GPS data tracks. The following site provides the same functionality for Linux: <ulink url="http://freefoote.dview.net/linux_gpscorr.html"></ulink></para>
-                   <para>The approach is dead easy: whilst taking your pictures just keep a GPS device running and carry it around with the camera. Once you are done download the pictures and the GPS tracks, and run the above program. It will correlate the data in the time domain; so it is important that the camera be accurate in its clock setting (the GPS device is always accurate through the satellites).</para>
-                </listitem>
-            
-                <listitem><para>'Manual' insertion of known locations</para>
-                   <para>If you happen to know the latitude/longitude or other data you can use the <ulink url="http://www.exiv2.org/tags.html">exiv2 tool</ulink> to insert the data into the pictures. Whilst this can be done with one commandline per field, it is more economic to prepare a file with all data fields provided. The following example file <quote>loc1.gps</quote> illustrates this:</para>
-                   <blockquote><screen># Ta Phrom location
-# call from commandline:$ exiv2 -m loc1.gps foo.jpg
-add Exif.GPSInfo.GPSLatitudeRef Ascii "N"
-add Exif.GPSInfo.GPSLatitude Rational "13/1 23/1 5990/100"
-add Exif.GPSInfo.GPSLongitudeRef Ascii "E"
-add Exif.GPSInfo.GPSLongitude Rational "103/1 53/1 4370/100"
-add Exif.GPSInfo.GPSMapDatum Ascii "WGS-84"
-add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blockquote>
-                   <para>The positional data (e.g. 13.44088333) must be converted into H.MS format (13.235990) and split into its constituents as shown in the given  example. By the way, it is easy to find exact coodinates on the web using <ulink url="http://maps.google.com"> MapsGoogle</ulink> or <ulink url="http://http://www.multimap.com/map/home.cgi?client=public"> Multimap.com</ulink></para>
-                   <tip><para>maps.google.com does not show the street map of Europe. But here are European sites (.fr .de .es at least) that show all navigation details in all of Europe.</para></tip>
-                </listitem>
-            
-            </itemizedlist>
-          
-           <para>
-           GPS devices: 
-           <ulink url="http://www.emtac.com/products/bluetooth/index.html#btgps">EMTAC bluetooth GPS </ulink>
-
-           </para>
            </sect3>
 
         </sect2>
@@ -1351,7 +1297,7 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
            The Rating section displays a 0...5 star rating scheme that can be used in searches and sort orders. It can be applied by a single mouse click or with a keyboard short-cut Ctrl+1...5. The rating is transcribed into the IPTC 'urgency' data field. The rating trancoding follows the scheme in the this table:
            </para>
 
-<informaltable><tgroup cols="2">
+              <informaltable><tgroup cols="2">
                 <thead><row>
                     <entry>&digikam; Rating</entry>
                     <entry>IPTC Urgency</entry>
@@ -1606,6 +1552,77 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
 
         </sect2>
                                     
+        <sect2 id="using-kapp-gps">
+        <title>How to use a GPS device with &digikam;</title>
+            <note><para>
+                    GPS (global positioning system) is used as a generic term throughout this document, it just means a location in latitude and longitude global coordinates that can be displayed on a map. The actual technical implementation that provides the data can be the American GPS, the Russian GLONAS, the European GALILEO or any other system.
+            </para></note>
+
+            <para>
+                Not only for professional photographers can it be interesting to link an image to a precise geographical location. Not everybody uses an airplane to overfly and scan a certain area with automatic GPS data recording. Environmental planners, military, police, construction bureaus, real estate agencies, all will have an immediate application.
+            </para>
+            <para>
+                But if, after some time, one has forgotten where the picture was taken, if one loves the nice feature to open with a simple click a browser displaying a zoom of the area, if you like to send you picture as a postcard to another &digikam; user (who is then able to locate your shot), or if you simply need the documentation aspect of it - having position data stored in a photo is great.
+            </para>
+            <para>
+                Now, how do we get GPS data into the images? First it is to say that <ulink url="http://www.exiv2.org/tags.html">exif2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files and per 'manual' insertion of known locations.
+            </para>
+            <itemizedlist>
+                
+                <listitem><para>Direct GPS data insertion into the image files</para>
+                    <para>
+                        To our knowledge there is at the time of writing no camera that integrates a GPS unit. But there are a few that combine with GPS receivers, either as a plug-in card or by data transmission through cable or bluetooth.
+                    </para>
+                    <para><ulink url="http://www.engadget.com.nyud.net:8090/2004/09/17/diy-black-box-tagging-photos-with-gps-coordinates/">Selfmade Howto</ulink>
+                    </para>
+                    <para>Cameras with GPS interface:
+                        <ulink url="http://www.lupinelogic.com/products/coyoteye.html">CoyoteEye iPAQ</ulink>
+                        <ulink url="http://www.survey-lab.com/">Ike</ulink>
+                        <ulink url="http://www.kodak.com/global/en/service/professional/tib/tib7061.jhtml?id=0.1.14.34.3.110&amp;lc=en">Kodak DCS Pro</ulink>
+                        <ulink url="http://www.robgalbraith.com/bins/multi_page.asp?cid=7-6459-7204-7205">Nikon</ulink>
+                        <ulink url="http://www.geospatialexperts.com/ricoh.html">Ricoh Pro G3</ulink>
+                        <ulink url="http://digitalcameras.engadget.com/2004/04/30/gps-attachment-for-sony-digital-camcorders/">Sony</ulink>
+                    </para>
+                </listitem>
+                
+                <listitem><para>Post-treatment of GPS data and image files</para>
+                    <para>
+                        Several programs exist for Windows and MacOS that are able to extract and correlate data from pictures and GPS data tracks. The following site provides the same functionality for Linux: <ulink url="http://freefoote.dview.net/linux_gpscorr.html"></ulink>
+                    </para>
+                    <para>
+                        The approach is dead easy: whilst taking your pictures just keep a GPS device running and carry it around with the camera. Once you are done download the pictures and the GPS tracks, and run the above program. It will correlate the data in the time domain; so it is important that the camera be accurate in its clock setting (the GPS device is always accurate through the satellites). The positional accuracy interpolated from the track points can be as good as 20 meters. Of course, this approach only works if your camera can record EXIF data.
+                    </para>
+                </listitem>
+
+                <listitem>
+                    <para>'Manual' insertion of known locations</para>
+                    <para>
+                        If you happen to know the latitude/longitude or other data you can use the <ulink url="http://www.exiv2.org/tags.html">exiv2 tool</ulink> to insert the data into the pictures. Whilst this can be done with one commandline per field, it is more economic to prepare a file with all data fields provided. The following example file <quote>loc1.gps</quote> illustrates this:
+                    </para>
+                    <blockquote><screen># Ta Phrom location
+# call from commandline:$ exiv2 -m loc1.gps foo.jpg
+add Exif.GPSInfo.GPSLatitudeRef Ascii "N"
+add Exif.GPSInfo.GPSLatitude Rational "13/1 23/1 5990/100"
+add Exif.GPSInfo.GPSLongitudeRef Ascii "E"
+add Exif.GPSInfo.GPSLongitude Rational "103/1 53/1 4370/100"
+add Exif.GPSInfo.GPSMapDatum Ascii "WGS-84"
+add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blockquote>
+                    <para>
+                        The positional data (e.g. 13.44088333) must be converted into H.MS format (13.235990) and split into its constituents as shown in the given  example. By the way, it is easy to find exact coodinates on the web using <ulink url="http://maps.google.com"> MapsGoogle</ulink> or <ulink url="http://http://www.multimap.com/map/home.cgi?client=public"> Multimap.com</ulink>
+                    </para>
+                    <tip><para>
+                            maps.google.com does not show the street map of Europe. But here are European sites (.fr .de .es at least) that show all navigation details in all of Europe.
+                    </para></tip>
+                </listitem>
+	
+            </itemizedlist>
+
+            <para>
+                GPS devices: 
+                <ulink url="http://www.emtac.com/products/bluetooth/index.html#btgps">EMTAC bluetooth GPS </ulink>
+            </para>
+        </sect2>
+
     </sect1>
     
     <sect1 id="using-kapp-imageeditor">
@@ -2825,7 +2842,16 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
             <guimenuitem>Export</guimenuitem> <guimenuitem>Print Wizard</guimenuitem></menuchoice>. Then follow the instructions and choices to make.
            </para>
         </sect2>
+        
+        <sect2 id="using-kapp-iccprofile">
+            <title>ICC color profile management</title>
             
+            <para>
+                What is the importance of ICC color profile management? In simple terms it is like a Hifi stereo, where high fidelity is seeked from source to speakers, passing through microphone, recoding media, player and amplifier. Much the same, ICC color profile management tries to maintain color fidelity from photographic subject through the camera to the output media screen, print, paper and projector. Luckily digital photography has taken out one source of distortion, the storage media (as the CD-ROM did in the audio field).
+            </para>
+            
+        </sect2>
+        
     </sect1>  
         
     <sect1 id="using-kapp-setup">
