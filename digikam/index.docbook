@@ -1155,7 +1155,7 @@
     <anchor id="sidebar.anchor"/>
     
         <sect2>
-        <title>Introduction to the Side Bar</title>
+        <title>Introduction to the right Side Bar</title>
            <para>
                The &digikam; main windows has a Side Bar at the right border providing important information and actions of the selected images. This same Side Bar is also available in the <link linkend="using-kapp-imageeditor">Image Editor</link> view, without the first-previous-next-last navigation arrows. It can be displayed by respectively clicking on one of the five tabs:
            </para>
@@ -1353,10 +1353,17 @@
            The tag filter side bar is used to modify the set of images displayed in the main window view. Normally one uses the left side bar with its Album, Date, Tag and Searches view. When additionally one or more tags on right side bar tag filter is checked, only the cross-section of these two selections will be displayed. All ceated tags are available. 
            </para>
            <para>
-           To give an example, suppose you have a tag called 'public' which tagges all images except your private ones. Then you can check this 'public' tag in the right side bar to hide the private pictures (all htose not having 'public' tag). Whatever view mode you chose from the left side bar, 'public' only picture will be displayed. Another typical example is the selection of a subset of tags in a hierarchical tree. Suppose you want to display 'red' and 'green' from a tag tree containing 7 different colors as sub-tags. Simply click on the 'color' tag of the main view and check 'red' and 'green' from the right side bar.
+           To give an example, suppose you have a tag called 'public' which tagges all images except your private ones. Then you can check this 'public' tag in the right side bar to hide the private pictures (all those not having 'public' tag). Whatever view mode you chose from the left side bar, 'public' only picture will be displayed. Another typical example is the selection of a subset of tags in a hierarchical tree. Suppose you want to display 'red' and 'green' from a tag tree containing 7 different colors as sub-tags. Simply click on the 'color' tag of the main view and check 'red' and 'green' from the right side bar.
            </para>
            <para>Another use is <emphasis>drag-and drop tagging</emphasis>. Lets say you selected in the main view a number of pictures to tag them. If the tag already exists, simply drag it from the right side bar onto the selection (any one of the highlighted pictures). A dialog will pop-up and ask if this tag should be applied.
            </para>
+           <figure>
+               <title>Side Bar Tags Tag Filters</title>
+                 <graphic srccredit="Side Bar Tag Filters" fileref="sidebartagfilters.png"/>
+           </figure>
+            <para>
+                In the above example the main window shows the pictures from a calender date, the tag filter is set to 'not tagged', which reduces the set to 3 images. They have been selected with Ctrl+a, then a tag is dragged from the right tag tree over the selection and dropped. A pop-up dialog askes if the tag shall be applied.
+            </para>
 
         </sect2>
 
@@ -1480,7 +1487,7 @@
         <title>Automatic Renaming</title>
 
             <para>
-            Cameras often do not use very meaningful filenames for photographs. The filenames are usually reused once the photographs have been deleted from the camera. This can lead to filename clashes if you download photographs from many shoots into the same Album. It can also be useful to include the date and time that a photograph was taken in the filename.
+            Cameras often do not use very meaningful filenames for photographs. The filenames are usually reused once the photographs have been deleted from the camera. This can lead to filename clashes if you download photographs from many shootings into the same Album. It can also be useful to include the date and time that a picture was taken into the filename.
             </para>
 
             <figure>
@@ -1489,7 +1496,13 @@
             </figure>
 
             <para>
-            &digikam; can automatically rename your photographs using the date and time information included by the camera in the photograph. To use this feature, click the <guilabel>Advanced</guilabel> button on the Camera Interface. The Camera Interface window will expand to reveal some extra features. Select <guilabel>Customize Names</guilabel> and then enter any filename prefix you would like. As an option you can then add the date and time and a sequence number. The sequence number may be needed if you have a camera with a very fast multi-shot mode where it is possible to get two photographs with exactly the same data and time.
+            &digikam; can automatically rename your photographs using the date and time information included by the camera in the photograph. To use this feature, click the <guilabel>Settings</guilabel> button on the Camera Interface. The Camera Interface window will expand to reveal some extra features. Select <guilabel>Customize</guilabel> and then enter any filename prefix you would like. As an option you can then add the date &amp; time, a sequence number or a combination of both. The sequence number may be needed if you have a camera with a very fast multi-shoot mode where it is possible to get two photographs with exactly the same data and time.
+            </para>
+            <para>
+                In the next box you find the options for rotating/flipping the image and for date-based sub-albums. If you check the latter option, folder per day will be automatically generated.
+            </para>
+            <para>
+                The 'On the fly operations' open three more options that act on the photos before storing them on disk. The first two relate to the authors data in <link linkend="authoridentity">Default Author Identity</link>" Settings. If checked the respective items willbe copied into the EXIF tags and IPTC fields. The last option allows to fix a date &amp; time for all downloaded pictures.
             </para>
     
             <tip>
@@ -2923,7 +2936,15 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
                 </para> 
                             
             </sect3>
-            
+
+            <sect3 id="authoridentity">
+            <title>Default Author Identity for IPTC</title>
+
+                <para>
+                </para>
+
+            </sect3>
+
             <sect3 id="setupcollection">
             <title>Collection Settings</title>
     
