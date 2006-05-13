@@ -812,88 +812,6 @@
                 
             </sect3> 
 
-            <sect3 id="using-kapp-imagemetadata">
-            <title>Photograph Meta-Data, Properties and Histogram</title>
-
-                <sect4 id="using-kapp-tagscommentsedit">
-                <title>Editing Tags and Comments</title>
-            
-                    <anchor id="tagscommentsedit.anchor"/>
-                         
-                    <para>
-                    &digikam; lets you view quite a lot of meta-data about your photographs. Meta-data is any information about a photograph that is not part of the image itself, for example, the date the photograph was taken is meta-data about the photograph. 
-                    </para>
-
-                    <para>
-                    Some meta-data is attached to photographs by the camera that took the picture. This camera meta-data is stored inside the image file and is called EXIF data. To view this information right-click on a thumbnail and select <guilabel>Properties</guilabel> from the context menu.
-                    </para>
-        
-                    <para>
-                    Other meta-data is associated with a photograph by &digikam; itself. Comments and Tags are meta-data that &digikam; manages for your photographs. You can edit the Comments and Tags for a photograph by right-clicking a thumbnail and selecting <guilabel>Edit Comments and Tags</guilabel>.
-                    </para>
-
-                    <para>
-                    Unless you have a good reason for placing comments in the JPEG COM field of your images it is probably best to use the main Comments/Tags dialog for adding comments to your photographs. Unfortunately there is no standard where to place a comment. Some applications use the JPEG COM section, but this only works for JPEG images. Other applications store comments in the EXIF field, which is limited to JPEG and TIFF images. &digikam; stores comments in its internal database, so that all image and video formats can be handled the same way.
-                    </para>
-
-                    <figure>
-                        <title>The Image Comments and Tags Dialog</title>
-                        <graphic srccredit="The Image Comments and Tags Dialog" fileref="maininterfacecommentstags.png"/>
-                    </figure>
-
-                    <para>
-                    Editing comments can be a tedious activity. The Comments/Tags dialog makes it easier by allowing you to move between photographs without having to select each in turn. To use this feature, open the Commands/Tags dialog on the first photograph you want to comment on and then use the <guilabel>Forward</guilabel> and <guilabel>Back</guilabel> buttons to move between each photograph.  
-                    </para>
-
-                </sect4>                    
-                
-                <sect4 id="using-kapp-propertiesmetadatahistogram">
-                <title>Displaying Properties, embedded Meta-Data, and Histogram</title>
-            
-                    <anchor id="propertiesmetadatahistogram.anchor"/>
-                
-                    <para>
-                    There is one more set of embedded meta-data that &digikam; can access from a photograph. This can be accessed by right-clicking on a photograph and selecting <guilabel>Properties</guilabel> from the context menu. 
-                    </para>
-                
-                    <para>
-                    This dialog will tell you general informations about current image like how large the photograph is and were it is stored on the hard disk. 
-                    </para>
-                
-                    <figure>
-                        <title>The Image Properties Dialog with General Tab</title>
-                        <graphic srccredit="The Image Properties Dialog with General Tab" 
-                        fileref="maininterfaceimgproperties1.png"/>
-                    </figure>
-                
-                    <para>
-                    This dialog will show you the same EXIF information provided in the EXIF Viewer dialog described in the <link linkend="using-kapp-exifviewertool"> EXIF Viewer section</link>.
-                    </para>
-                    
-                    <figure>
-                        <title>The Image Properties Dialog with EXIF Viewer in Action</title>
-                        <graphic srccredit="The Image Properties Dialog with EXIF Viewer in Action" 
-                        fileref="maininterfaceimgproperties2.png"/>
-                    </figure>
-                                    
-                    <para>
-                    This dialog shows the full set of image histograms. You can find more informations about histograms in the <link linkend="using-kapp-histogramviewer">Histogram Viewer</link> section.
-                    </para>
-                
-                    <figure>
-                        <title>The Image Properties Dialog with Histogram Viewer in Action</title>
-                        <graphic srccredit="The Image Properties Dialog with Histogram Viewer in Action" 
-                        fileref="maininterfaceimgproperties3.png"/>
-                    </figure>
-                
-                    <para>
-                    Quite like within the Edit Comments and Tags dialog, you can move between photographs without having to select each in turn. Use the <guilabel>Forward</guilabel> and <guilabel>Back</guilabel> buttons to move between each photograph.
-                    </para>
-
-                </sect4>                    
-                                                                                                            
-            </sect3> 
-
             <sect3 id="using-kapp-renameimage">
             <title>Renaming a Photograph</title>
              
@@ -1530,7 +1448,7 @@
             <title>Automatic Rotation</title>
 
                 <para>
-                 &digikam; can use any information about the orientation of the camera in the moment the photograph was taken for automatic rotation of the photograph when it is downloaded. Not all cameras include this informations. See the <link linkend="using-kapp-sidebarmetadata">Photograph Meta-Data, Properties and Histogram</link> section for more detail about informations that your camera may have embedded in your photographs.
+                 &digikam; can use any information about the orientation of the camera in the moment the photograph was taken for automatic rotation of the photograph when it is downloaded. Not all cameras include this informations. See the <link linkend="using-kapp-sidebarmetadata">Side Bar Meta-Data</link> section for more detail about informations that your camera may have embedded in your photographs.
                 </para>
 
                 <para>
@@ -1545,8 +1463,8 @@
                 <para>
                 If your camera provides information about the date of the photograph's taking, &digikam; can use this to automatically create sub-albums in the destination Album when it is downloaded. 
                 Sub-albums names will be based on image dates. All images which have the same date will be downloaded into the same sub-album. Not all cameras include this information. 
-                See the <link linkend="using-kapp-imagemetadata">
-                Photograph Meta-Data, Properties and Histogram</link> section for more detail about 
+                See the <link linkend="using-kapp-sidebarmetadata">
+                Side Bar Meta-Data</link> section for more detail about
                 information your camera may have embedded in your photographs.
                 </para>
                 
@@ -1804,7 +1722,7 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
 
                 <para>
                 You can view some of the properties of your photograph by selecting the options in the <guilabel>Image</guilabel> menu. 
-                You can edit the comments set for this photograph using <menuchoice><guimenu>Image</guimenu><guimenuitem>Edit Comments and Tags</guimenuitem></menuchoice>. The new Comments and Tags will be remembered when you close the photograph, even if you do not save the photograph first. For more informations about Comments and Tags dialog, please see <link linkend="using-kapp-tagscommentsedit">Editing Tags and Comments</link> section.
+                You can edit the comments set for this photograph using <menuchoice><guimenu>Image</guimenu><guimenuitem>Edit Comments and Tags</guimenuitem></menuchoice>. The new Comments and Tags will be remembered when you close the photograph, even if you do not save the photograph first. For more informations about Comments and Tags dialog, please see <link linkend="using-kapp-sidebarcommentstags">Comments &amp; Tags</link> section.
                 </para>
             
             </sect3>
@@ -1818,7 +1736,7 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
                 <title>What is EXIF?</title>
                     
                     <para>
-                    EXIF stands for <emphasis>EXtended Interchange Format</emphasis>. It was designed specifically for digital cameras. It allows a large amount of information about the photograph to be stored. Those informations are describing the camera which took the image along with the settings (including date and time) in use when the picture was taken. Also it allows an inline thumbnail to be included. See the <link linkend="using-kapp-imagemetadata">Photograph Meta-Data and Properties</link> section for more detail about information embedded data in your photographs.
+                    EXIF stands for <emphasis>EXtended Interchange Format</emphasis>. It was designed specifically for digital cameras. It allows a large amount of information about the photograph to be stored. Those informations are describing the camera which took the image along with the settings (including date and time) in use when the picture was taken. Also it allows an inline thumbnail to be included. See the <link linkend="using-kapp-sidebarmetadataexif">Side Bar Meta-Data EXIF tags</link> section for more detail about information embedded data in your photographs.
                     </para>
 
                     <para>
@@ -2980,7 +2898,10 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
             
             <sect3 id="setupeditor">
             <title>Image Editor Settings</title>
-                <para></para>
+                <para>
+                By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background color you can choose one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
+                </para>
+                
                 <figure>
                     <title>The Image Editor Settings</title>
                     <graphic srccredit="The Image Editor Settings" fileref="setupimageeditor.png"/>
@@ -2998,23 +2919,25 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
                     <title>The Image Editor IO File Settings</title>
                     <graphic srccredit="The Image Editor IO File Settings" fileref="imageeditorfilesettings.png"/>
                 </figure>
-                
+
+                <para>TODO RAW image decoding options
+                </para>
                 <para>
                 When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the <guilabel>JPEG quality</guilabel> slider  (1: low quality / 100: high quality and no compression).
                 </para>
     
                 <para>
-                With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation doesn't reduce image quality because PNG uses a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value for to use a high compression factor (1: low compression / 9: high compression).
+                With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation does not reduce image quality because PNG uses a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value for to use a high compression factor (1: low compression / 9: high compression).
                 </para>
                 
                 <para>
-                With <guilabel>Using TIFF compression</guilabel> option, you can toggle to use <emphasis>Deflate</emphasis> compression algorithm with TIFF image files. This will reduce the TIFF image files size. This has no image quality effect because <emphasis>Deflate</emphasis> is a lossless algorithm.
+                With <guilabel>Compress TIFF</guilabel> option, you can toggle to use <emphasis>Deflate</emphasis> compression algorithm with TIFF image files. This will reduce the TIFF image files size. It has no image quality effect because <emphasis>Deflate</emphasis> is a lossless algorithm.
                 </para>
                 
-                <para>
-                By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background color can select one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
-                </para>
-                
+            </sect3>
+
+            <sect3 id="setupimageplugins">
+            <title>Setup Image Plugins</title>
                 <para>
                 The Image Editor only implements some very simple photo manipulation tools in the core application. For an easy development of more manipulation tools the Image Editor supports a plugin interface. If your distribution has installed the additional Image Editor plugins they will be listed in the Image Plugins list. You can enable or disable these plugins that you see here.
                 </para>
@@ -3023,8 +2946,24 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
                 For more informations about advanced Image Editor plugins, you can consult the 'DigikamImagePlugins' project at <ulink url="http://extragear.kde.org/apps/digikamimageplugins">http://extragear.kde.org/apps/digikamimageplugins</ulink>.
                 </para>
                             
-            </sect3> 
+                <figure>
+                    <title>The setup of the image plugins</title>
+                    <graphic srccredit="The setup of the image plugins" fileref="setupimageplugins.png"/>
+                </figure>
+
+            </sect3>
+
+            <sect3 id="setupslideshow">
+            <title>Slide show setup</title>
+                <para>TODO Slide show setup</para>
+            </sect3>
             
+
+            <sect3 id="setupiccprofiles">
+            <title>ICC Profiles setup</title>
+                <para>TODO ICC Profiles</para>
+            </sect3>
+
             <sect3 id="setupkipi">
             <title>Kipi Plugins Settings</title>
     
