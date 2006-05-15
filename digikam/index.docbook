@@ -69,7 +69,7 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2006-05-10</date>
+<date>2006-05-15</date>
 <releaseinfo>0.9.0</releaseinfo>
 
 <abstract>
@@ -111,14 +111,17 @@
        <title>About &digikam;</title>
 
        <para>
-       &digikam; is an advanced digital photo management application for the &kde; desktop. It provides a simple interface which makes importing and organizing digital photographs a "snap". &digikam; enables you to manage large numbers of digital photographs in Albums and to organize these photographs for easy retrieval using Tags. It has many features for viewing, organizing, manipulating and sharing your pictures.
+       &digikam; is an advanced digital photo management application for the &kde; desktop. It provides a simple interface which makes importing and organizing digital photographs a "snap". &digikam; enables you to manage large numbers of digital photographs in Albums and to organize these photographs for easy retrieval using tags. It has many features for viewing, organizing, manipulating and sharing your pictures.
        </para>
     
        <para>
-       An easy to use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums.
+       An easy to use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than 600 digital cameras are supported through the gphoto2 library.
        </para>
        
-       <para>&digikam; incorporates a fast Image Editor with a few basic image editing tools. You can use the Image Editor to view your photographs, and make corrections and alterations.
+       <para>&digikam; incorporates a fast Image Editor with a the basic image editing tools. You can use the Image Editor to view your photographs, comment and rate them, make corrections and alterations. The editing power can be easily extended by two sets of plugins, the <ulink url="http://extragear.kde.org/apps/kipi">Kde Image Plugins Interface</ulink> and the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins.</ulink>
+       </para>
+
+       <para>Whereas &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports raw conversion through David Coffins dcraw and ICC color management work flow. 
        </para>
        
        </sect2>
@@ -2615,14 +2618,21 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
             <anchor id="blackandwhitetool.anchor"/>
 
             <para>
-            By default &digikam; provides a couple of simple toning filters that you can use on your photographs. Under the Filters menu you will find classic Black and White chemical toning used in analog photography. Color toning changes the monochromatic tint of a basically black and white photograph. When applied it gives the picture a warm, antique feeling. Some examples of colors toning types available in &digikam; are listed below:
+            &digikam; comes with a couple of black and white filters that you can use on your photographs. Under the <menuchoice><guimenuitem>Filters</guimenuitem><guimenuitem>Black &amp; White</guimenuitem></menuchoice> menu you will find classic Black and White chemical toning used in analog photography. The controls come on three tabs: <emphasis>filters, tone</emphasis> and <emphasis>lightness</emphasis> as shown on the screenshot below. The filters and color toning can be applied independently of each other (on top of each other). The filters actually influence the RGB channel mixing, whereas the toning purely adds a uniform monochromatic tint to the black and white photograph. In the lightness tab you will find a tonal adjustment tool (like curve adjust), a contrast tool and an over-exposure indicator to improve the b&amp;w rendering.
             </para>
+            <figure>
+                <title>The Black &amp; White Filter Plugin in Action</title>
+                <graphic srccredit="The B&amp;W Filter Plugin in Action"
+                fileref="editorbwfilter.png"/>
+            </figure>
+
+            <para>The table below shows in more detail the effect of all filters and tints.</para>
 
             <informaltable><tgroup cols="2">
             
             <thead><row>
                 <entry>Preview</entry>
-                <entry>Type</entry>
+                <entry>Filter Type</entry>
             </row></thead>
 
             <tbody>
@@ -2686,6 +2696,18 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
                     </entry>
                 </row>
                                                                 
+            </tbody>
+            
+            </tgroup></informaltable>
+
+            <informaltable><tgroup cols="2">
+            
+            <thead><row>
+                <entry>Preview</entry>
+                <entry>Color Tint</entry>
+            </row></thead>
+
+              <tbody>
                 <row>
                     <entry>
                     <graphic srccredit="Sepia" fileref="editorconvert_sepia.png"/>
