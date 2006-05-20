@@ -1121,19 +1121,100 @@
 
         <sect2 id="using-kapp-sidebarmetadata">
         <title>Metadata</title>
+
            <para>
-           The metadata side bar is composed of four subtabs <guilabel>Exif, Makernotes, IPTC and GPS data</guilabel>. A combo-box lets you choose between full and simplified data disply. Next to it are a printer and copy button, They do just that - print (kprinter dialog) or copy the repective tab data to the klipper. In the main window view you will find a navigation button set with the file name on top of the tabs.
+           The metadata side bar is composed of four subtabs <guilabel>Exif, Makernotes, IPTC and GPS data</guilabel>. A combo-box lets you choose between full and simplified data display. Next to it are a printer and copy icon, They do just that - print (kprinter dialog) or copy the respective tab data to the clipboard. In the main window view you will find a navigation button set with the file name on top of the tabs.
            </para>
 
-           <sect3 id="using-kapp-sidebarmetadataexif">
-           <title>TODO EXIF Tags</title>
+           <figure>
+               <title>The Metadata Tabs</title>
+               <graphic srccredit="The Metadata Tabs" fileref="sidebarmetadata.png"/>
+             </figure>
 
-              <para>
-              tbc
-              </para>
+           <sect3 id="using-kapp-sidebarmetadataexif">
+           <title>EXIF Tags</title>
+
+                <anchor id="kexif.anchor"/>
+                
+                <sect4>
+                <title>What is EXIF?</title>
+                    
+                    <para>
+                    EXIF stands for <emphasis>EXtended Interchange Format</emphasis>. It was designed specifically for digital cameras. It allows a large amount of information about the photograph to be stored. This information describes the camera which took the image along with the settings (including date and time) in use when the picture was taken. An inline thumbnail can be included.
+                    </para>
+
+                    <para>
+                    EXIF format contains a set of marker sections named <emphasis>Image File Directories</emphasis> (IFD). The sections likely to be found in a normal EXIF file are as follows:
+                    
+                    <itemizedlist>
+            
+                        <listitem><para>
+                            <guilabel>0</guilabel>: contains general information about the photograph.
+                        </para></listitem>
+
+                        <listitem><para>
+                            <guilabel>1</guilabel>: contains information about the embedded thumbnail image.
+                        </para></listitem>
+
+                        <listitem><para>
+                            <guilabel>EXIF</guilabel>: contains extended information about the photograph.
+                        </para></listitem>
+
+                        <listitem><para>
+                            <guilabel>GPS</guilabel>: contains Global Positioning System information provides by the camera during the capture.
+                        </para></listitem>
+
+                        <listitem><para>
+                            <guilabel>Interoperability</guilabel>: contains information to support interoperability between different EXIF implementations.
+                        </para></listitem>
+                                                                                                    
+                        <listitem><para>
+                            <guilabel>Thumbnail</guilabel>: displays the embedded thumbnail image.
+                        </para></listitem>
+                    
+                    </itemizedlist>
+                    
+                    </para>                
+
+                </sect4>
+                
+                <sect4>
+                <title>How to Use EXIF Viewer?</title>
+                    
+                    <para>             
+                    You can review embedded EXIF information for the selected image from the first sidebar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections.
+                    </para>
+            
+                    <figure>
+                        <title>The EXIF Viewer in Action</title>
+                        <graphic srccredit="The EXIF Viewer in Action" fileref="sidebarmetadataexif.png"/>
+                    </figure>
+            
+                    <para>
+                    You can use two different levels to display EXIF marker sections:
+                    
+                    <itemizedlist>
+            
+                        <listitem><para>
+                            <guilabel>Simple</guilabel>: display only EXIF marker.
+                        </para></listitem>
+
+                        <listitem><para>
+                            <guilabel>Full</guilabel>: display all markers except thumbnails.
+                        </para></listitem>
+
+                    </itemizedlist>
+                  
+                    Some vendors add additional EXIF sections, such as Canon, Fujifilm, Nikon, and Sigma. These sections contain vendor and model specific notes. These will be displayed with 
+                    <guilabel>Full</guilabel> level.
+                    </para>
+                    <para>
+                    For the displayed data, EXIF Viewer provides a contextual help. Select an item with right mouse button and the corresponding help can be displayed with the "What's This?" option of the dialog.
+                    </para>
+                                
+                </sect4>
            
            </sect3>
-
 
            <sect3 id="using-kapp-sidebarmetadatamakernote">
            <title>TODO Makernotes</title>
@@ -1173,6 +1254,178 @@
            The colors side bar has two subtabs <guilabel>Color and ICC Profile</guilabel>. Here are more details about <link linkend="using-kapp-iccprofile">Color Management</link>
            </para>
 
+            <sect3 id="using-kapp-histogramviewer">
+            <title>Histogram Viewer</title>
+            
+                <anchor id="histogramviewer.anchor"/>
+            
+                <para>
+                   The histogram for an image shows the amount of each color that is present and their different amplitudes within the image. If your photograph has a color cast you might be able to see what is wrong by looking at the histogram.
+                </para>
+            
+                <para>
+                  The Histogram Viewer shows you informations about the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram-based color correction, use the Adjust Levels Image Editor plugin. This plugin is part of the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>. For more information about using Plugins in &digikam; see the <link linkend="using-kapp-setup">Configuration</link> section.
+                </para>
+                                                
+                <figure>
+                    <title>The Histogram Viewer in Action</title>
+                    <graphic srccredit="The Histogram Viewer in Action" fileref="sidebarcolorshistogramviewer.png"/>
+                </figure>
+            
+                <para>
+                An image can be decomposed into <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, <guilabel>Blue</guilabel>, <guilabel>Alpha</guilabel> color channels. <guilabel>Alpha</guilabel> channel is a Layer in the image that supports transparency (like PNG or &GIF; images). Each channel supports a range of intensity levels from 0 to 255 (integer valued). Thus, a black pixel is encoded by 0 on all color channels; a white pixel by 255 on all color channels. A transparent pixel is encoded by 0 on the alpha channel; an opaque pixel by 255.
+                </para>
+            
+                <para>
+                The Histogram Viewer allows you to view each channel separately:
+            
+                <itemizedlist>
+            
+                    <listitem><para>
+                        <guilabel>Intensity</guilabel>: shows the distribution of brightness values.
+                    </para></listitem>
+
+                    <listitem><para>
+                        <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, <guilabel>Blue</guilabel>: show the distribution of intensity levels for the Red, Green, or Blue channels respectively.
+                    </para></listitem>
+                
+                    <listitem><para>
+                        <guilabel>Alpha</guilabel>: shows the distribution of opacity levels. If the layer is completely opaque or completely transparent, the histogram will consist of a single bar on the left or right edge.
+                    </para></listitem>
+
+                    <listitem><para>
+                        <guilabel>Colors</guilabel>: shows the <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, and <guilabel>Blue</guilabel> histograms superposed, so that you can see all of the color distribution information in a single view. In this mode, the histogram foreground color can be chosen with the <guilabel>Color</guilabel> option.
+                    </para></listitem>
+                            
+                </itemizedlist>
+            
+                </para>
+            
+                <para> 
+                With the <guilabel>Rendering</guilabel> option, you can determine whether the histogram will be displayed using the <guilabel>Full Image</guilabel> data or only with the current <guilabel>Image Selection</guilabel>. This option can only be enabled, if you have previously selected an image region with Image Editor.
+                </para>
+
+                <para> 
+                With <guilabel>Scale</guilabel> option, you can determine whether the histogram will be displayed using a linear or logarithmic Y axis. For images taken with a digital camera, the <guilabel>Linear</guilabel> mode is usually the most useful. However, for images that contain substantial areas of constant color a <guilabel>Linear</guilabel> histogram will often be dominated by a single bar. In this case a <guilabel>Logarithmic</guilabel> histogram will be more useful.
+                </para>
+
+                <para> 
+                You can restrict the analysis of the <guilabel>Statistics</guilabel> field shown at the bottom of the dialog to a limited range of values if you wish. You can set the range in one of two ways:
+            
+                <itemizedlist>
+            
+                    <listitem><para>
+                        Click and drag the pointer across the histogram display area, from the lowest level to the highest level of the range you want.
+                    </para></listitem>
+
+                    <listitem><para>
+                        Use the spin button entries below the histogram area. Left entry is bottom of range and right entry is top of range.  
+                    </para></listitem>
+            
+                </itemizedlist>
+                            
+                </para> 
+            
+                <para> 
+               The statistics shown at the bottom of the Histogram Viewer describe the distribution of channel values, restricted to the selected range. These are:
+            
+                <itemizedlist>
+            
+                    <listitem><para>
+                         The mean.
+                    </para></listitem>
+
+                    <listitem><para>
+                         The standard deviation.
+                    </para></listitem>
+            
+                    <listitem><para>
+                         The median of the selected histogram portion.   
+                    </para></listitem>
+
+                    <listitem><para>
+                         The number of pixels in the image.
+                    </para></listitem>
+
+                    <listitem><para>
+                         The number whose values fall within the selected range.
+                    </para></listitem>
+
+                    <listitem><para>
+                         The percentage whose values fall within the selected range.
+                    </para></listitem>      
+                                                      
+                </itemizedlist>
+
+                In <guilabel>Colors</guilabel> channel mode, the statistics is updated with the foreground color selected with <guilabel>Color</guilabel> option.
+                </para>
+        
+            </sect3>
+
+            <sect3 id="using-kapp-usinghistogram">
+            <title>How To Use an Histogram</title>
+                
+                <para>
+                Histograms are a graphical means to assess the accuracy of an image shown on the screen. The graph represents the 3 regions of the photograph brightness:
+                
+                <itemizedlist>
+            
+                    <listitem><para>
+                         (1) : the shadows-tone on the left.
+                    </para></listitem>
+
+                    <listitem><para>
+                         (2) : the middle-tone on the middle.
+                    </para></listitem>
+            
+                    <listitem><para>
+                         (3) : the highlights-tone on the right.   
+                    </para></listitem>
+
+                </itemizedlist>
+
+                <figure>
+                    <title>An Image Histogram in All Colors Mode</title>
+                    <graphic srccredit="An Image Histogram in All Colors Mode" fileref="editorhistogramdescription.png"/>
+                </figure>
+                
+                The distribution of the graph, where the spikes and bulges are clustered, indicates whether the image is too dark, too bright, or well-balanced. 
+                </para>
+        
+                <para>
+                With an under exposed photograph, the histogram will have a distribution of brightness that tends to be mostly on the left of the graph.
+
+                <figure>
+                    <title>An Over Exposed Photograph</title>
+                    <graphic srccredit="An Over Exposed Photograph" fileref="editorhistogramsample3.png"/>
+                </figure>
+                         
+                With a correctly exposed photograph, the histogram will have a distribution of brightness that will be most prominent near the center part of the graph.
+                       
+                <figure>
+                    <title>A Correctly Exposed Photograph</title>
+                    <graphic srccredit="A Correctly Exposed Photograph" fileref="editorhistogramsample2.png"/>
+                </figure>
+                
+                With an over exposed photograph, the histogram will have the bulge showing the brightness distributed mostly towards the right of the graph.
+                
+                <figure>
+                    <title>An Under Exposed Photograph</title>
+                    <graphic srccredit="An Under Exposed Photograph" fileref="editorhistogramsample1.png"/>
+                </figure>
+
+                </para>
+
+                <para>
+                Important: not all photographs have to exhibit this bulge in the center part of their histogram. Much depends on the subject of the photograph. In some cases, it might be appropriate for the histogram to show a peak at one end or the other, or both.
+                </para>
+                        
+                <para>
+                The histogram is a reliable way of deciding whether or not a photograph is correctly exposed. Should the histogram show an over or under exposure, an <link linkend="using-kapp-correctingexposure">Exposure Correction Tool</link> should be used to fix the photograph.
+                </para>
+                
+            </sect3>
+ 
         </sect2>
 
         <sect2 id="using-kapp-sidebarcommentstags">
@@ -1485,7 +1738,9 @@
         <sect2 id="using-kapp-gps">
         <title>How to use a GPS device with &digikam;</title>
             <note><para>
-                    GPS (global positioning system) is used as a generic term throughout this document, it just means a location in latitude and longitude global coordinates that can be displayed on a map. The actual technical implementation that provides the data can be the American GPS, the Russian GLONAS, the European GALILEO or any other system.
+                    <inlinemediaobject>
+                    <imageobject><imagedata fileref="handheld_gps.png" format="PNG"/></imageobject>
+                    </inlinemediaobject>GPS (global positioning system) is used as a generic term throughout this document, it just means a location in latitude and longitude global coordinates that can be displayed on a map. The actual technical implementation that provides the data can be the American GPS, the Russian GLONAS, the European GALILEO or any other system.
             </para></note>
 
             <para>
@@ -1713,302 +1968,6 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
             <guimenuitem>Toggle Full Screen</guimenuitem></menuchoice> will display the photograph using the full screen mode. You can move back to the normal view by pressing the <keycombo><keycap>Esc</keycap></keycombo> key. By default the Tool Bar is still displayed even in Full Screen Mode. If you would prefer that the Tool Bar is not displayed you can turn it off in the Configure &digikam; dialog accessed from the main &digikam; window, see the <link linkend="setupeditor">Setup Image Editor Section</link>.
             </para>
         
-        </sect2>
-
-        <sect2>
-        <title>Image Properties</title>
-            
-            <sect3 id="using-kapp-commentsedittool">
-            <title>Comments Editing Tool</title>
-                
-                <anchor id="commentsedittool.anchor"/>
-
-                <para>
-                You can view some of the properties of your photograph by selecting the options in the <guilabel>Image</guilabel> menu. 
-                You can edit the comments set for this photograph using <menuchoice><guimenu>Image</guimenu><guimenuitem>Edit Comments and Tags</guimenuitem></menuchoice>. The new Comments and Tags will be remembered when you close the photograph, even if you do not save the photograph first. For more informations about Comments and Tags dialog, please see <link linkend="using-kapp-sidebarcommentstags">Comments &amp; Tags</link> section.
-                </para>
-            
-            </sect3>
-    
-            <sect3 id="using-kapp-exifviewertool">
-            <title>EXIF Viewer Tool</title>
-            
-                <anchor id="kexif.anchor"/>
-                
-                <sect4>
-                <title>What is EXIF?</title>
-                    
-                    <para>
-                    EXIF stands for <emphasis>EXtended Interchange Format</emphasis>. It was designed specifically for digital cameras. It allows a large amount of information about the photograph to be stored. Those informations are describing the camera which took the image along with the settings (including date and time) in use when the picture was taken. Also it allows an inline thumbnail to be included. See the <link linkend="using-kapp-sidebarmetadataexif">Side Bar Meta-Data EXIF tags</link> section for more detail about information embedded data in your photographs.
-                    </para>
-
-                    <para>
-                    EXIF format contains different marker sections named <emphasis>Image File Directories</emphasis> (IFD). The sections likely to be found in a normal EXIF file are as follows:
-                    
-                    <itemizedlist>
-            
-                        <listitem><para>
-                            <guilabel>0</guilabel>: contains general information about the photograph.
-                        </para></listitem>
-
-                        <listitem><para>
-                            <guilabel>1</guilabel>: contains information about the embedded thumbnail image.
-                        </para></listitem>
-
-                        <listitem><para>
-                            <guilabel>EXIF</guilabel>: contains extended information about the photograph.
-                        </para></listitem>
-
-                        <listitem><para>
-                            <guilabel>GPS</guilabel>: contains Global Positioning System information provides by the camera during the capture.
-                        </para></listitem>
-
-                        <listitem><para>
-                            <guilabel>Interoperability</guilabel>: contains information to support interoperability between different EXIF implementations.
-                        </para></listitem>
-                                                                                                    
-                        <listitem><para>
-                            <guilabel>Thumbnail</guilabel>: displays the embedded thumbnail image.
-                        </para></listitem>
-                    
-                    </itemizedlist>
-                    
-                    </para>                
-
-                </sect4>
-                
-                <sect4>
-                <title>How to Use EXIF Viewer?</title>
-                    
-                    <para>             
-                    You can review embedded EXIF information for the image using 
-                    <menuchoice><guimenu>Image</guimenu>
-                    <guimenuitem>Properties</guimenuitem></menuchoice> and <guilabel>EXIF</guilabel> page. 
-                    The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections. 
-                    </para>
-            
-                    <figure>
-                        <title>The EXIF Viewer in Action</title>
-                        <graphic srccredit="The EXIF Viewer in Action" fileref="editorexifviewer.png"/>
-                    </figure>
-            
-                    <para>             
-                    
-                    You can use two different levels to display EXIF marker sections:
-                    
-                    <itemizedlist>
-            
-                        <listitem><para>
-                            <guilabel>Simple</guilabel>: display only EXIF marker.
-                        </para></listitem>
-
-                        <listitem><para>
-                            <guilabel>Full</guilabel>: display all markers excepted thumbnails.
-                        </para></listitem>
-
-                    </itemizedlist>
-                  
-                    Some vendors add additional EXIF sections, such as Canon, Fujifilm, Nikon, and Sigma. These sections contain vendor and model specific notes. These will be displayed with 
-                    <guilabel>Full</guilabel> level.
-                    </para>
-                    
-                    <para>
-                    For the displayed data, EXIF Viewer provides a contextual help. Select an item with right mouse button and the corresponding help can be displayed with the "What's This?" option of the dialog.
-                    </para>
-                                
-                </sect4>
-                
-            </sect3>
-            
-            <sect3 id="using-kapp-filepropertiestool">
-            <title>File Properties Tool</title>
-            
-                <anchor id="filepropertiestool.anchor"/>
-                
-                <para>
-                You can view the file properties using 
-                <menuchoice><guimenu>Image</guimenu>
-                <guimenuitem>Properties</guimenuitem></menuchoice> and <guilabel>General</guilabel> page. 
-                This page shows a large image thumbnail, general image and file system informations, and the &digikam; Meta-Data.
-                </para>
-            
-            </sect3>
-
-            <sect3 id="using-kapp-histogramviewer">
-            <title>Histogram Viewer</title>
-            
-                <anchor id="histogramviewer.anchor"/>
-            
-                <para>
-                If you are interested in the detailed histogram of your photograph you can view it using 
-                <menuchoice><guimenu>Image</guimenu>
-                <guimenuitem>Properties</guimenuitem></menuchoice> and <guilabel>Histogram</guilabel> page. 
-                The histogram for a image shows the amount of each color that is present and their different amplitudes within the image. If your photograph has a color cast you might be able to see what is wrong by looking at the histogram.
-                </para>
-            
-                <para>
-                The Histogram Viewer shows you informations about the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram-based color correction, use the Adjust Levels Image Editor plugin. This plugin is part of the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>. For more information about using Plugins in &digikam; see the <link linkend="using-kapp-setup">Configuration</link> section.
-                </para>
-                                                
-                <figure>
-                    <title>The Histogram Viewer in Action</title>
-                    <graphic srccredit="The Histogram Viewer in Action" fileref="editorhistogramviewer.png"/>
-                </figure>
-            
-                <para>
-                An image can be decomposed into <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, <guilabel>Blue</guilabel>, <guilabel>Alpha</guilabel> color channels. <guilabel>Alpha</guilabel> channel is a Layer in the image that supports transparency (like PNG or &GIF; images). Each channel supports a range of intensity levels from 0 to 255 (integer valued). Thus, a black pixel is encoded by 0 on all color channels; a white pixel by 255 on all color channels. A transparent pixel is encoded by 0 on the alpha channel; an opaque pixel by 255.
-                </para>
-            
-                <para>
-                The Histogram Viewer allows you to view each channel separately:
-            
-                <itemizedlist>
-            
-                    <listitem><para>
-                        <guilabel>Intensity</guilabel>: shows the distribution of brightness values.
-                    </para></listitem>
-
-                    <listitem><para>
-                        <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, <guilabel>Blue</guilabel>: show the distribution of intensity levels for the Red, Green, or Blue channels respectively.
-                    </para></listitem>
-                
-                    <listitem><para>
-                        <guilabel>Alpha</guilabel>: shows the distribution of opacity levels. If the layer is completely opaque or completely transparent, the histogram will consist of a single bar on the left or right edge.
-                    </para></listitem>
-
-                    <listitem><para>
-                        <guilabel>Colors</guilabel>: shows the <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, and <guilabel>Blue</guilabel> histograms superposed, so that you can see all of the color distribution information in a single view. In this mode, the histogram foreground color can be chosen with the <guilabel>Color</guilabel> option.
-                    </para></listitem>
-                            
-                </itemizedlist>
-            
-                </para>
-            
-                <para> 
-                With the <guilabel>Rendering</guilabel> option, you can determine whether the histogram will be displayed using the <guilabel>Full Image</guilabel> data or only with the current <guilabel>Image Selection</guilabel>. This option can only be enabled, if you have previously selected an image region with Image Editor.
-                </para>
-
-                <para> 
-                With <guilabel>Scale</guilabel> option, you can determine whether the histogram will be displayed using a linear or logarithmic Y axis. For images taken with a digital camera, the <guilabel>Linear</guilabel> mode is usually the most useful. However, for images that contain substantial areas of constant color a <guilabel>Linear</guilabel> histogram will often be dominated by a single bar. In this case a <guilabel>Logarithmic</guilabel> histogram will be more useful.
-                </para>
-
-                <para> 
-                You can restrict the analysis of the <guilabel>Statistics</guilabel> field shown at the bottom of the dialog to a limited range of values if you wish. You can set the range in one of two ways:
-            
-                <itemizedlist>
-            
-                    <listitem><para>
-                        Click and drag the pointer across the histogram display area, from the lowest level to the highest level of the range you want.
-                    </para></listitem>
-
-                    <listitem><para>
-                        Use the spin button entries below the histogram area. Left entry is bottom of range and right entry is top of range.  
-                    </para></listitem>
-            
-                </itemizedlist>
-                            
-                </para> 
-            
-                <para> 
-               The statistics shown at the bottom of the Histogram Viewer describe the distribution of channel values, restricted to the selected range. These are:
-            
-                <itemizedlist>
-            
-                    <listitem><para>
-                         The mean.
-                    </para></listitem>
-
-                    <listitem><para>
-                         The standard deviation.
-                    </para></listitem>
-            
-                    <listitem><para>
-                         The median of the selected histogram portion.   
-                    </para></listitem>
-
-                    <listitem><para>
-                         The number of pixels in the image.
-                    </para></listitem>
-
-                    <listitem><para>
-                         The number whose values fall within the selected range.
-                    </para></listitem>
-
-                    <listitem><para>
-                         The percentage whose values fall within the selected range.
-                    </para></listitem>      
-                                                      
-                </itemizedlist>
-
-                In <guilabel>Colors</guilabel> channel mode, the statistics is updated with the foreground color selected with <guilabel>Color</guilabel> option.
-                </para>
-        
-            </sect3>
-
-            <sect3 id="using-kapp-usinghistogram">
-            <title>How To Use an Histogram</title>
-                
-                <para>
-                Histograms are a graphical means to assess the accuracy of an image shown on the screen. The graph represents the 3 regions of the photograph brightness:
-                
-                <itemizedlist>
-            
-                    <listitem><para>
-                         (1) : the shadows-tone on the left.
-                    </para></listitem>
-
-                    <listitem><para>
-                         (2) : the middle-tone on the middle.
-                    </para></listitem>
-            
-                    <listitem><para>
-                         (3) : the highlights-tone on the right.   
-                    </para></listitem>
-
-                </itemizedlist>
-
-                <figure>
-                    <title>An Image Histogram in All Colors Mode</title>
-                    <graphic srccredit="An Image Histogram in All Colors Mode" fileref="editorhistogramdescription.png"/>
-                </figure>
-                
-                The distribution of the graph, where the spikes and bulges are clustered, indicates whether the image is too dark, too bright, or well-balanced. 
-                </para>
-        
-                <para>
-                With an under exposed photograph, the histogram will have a distribution of brightness that tends to be mostly on the left of the graph.
-
-                <figure>
-                    <title>An Over Exposed Photograph</title>
-                    <graphic srccredit="An Over Exposed Photograph" fileref="editorhistogramsample3.png"/>
-                </figure>
-                         
-                With a correctly exposed photograph, the histogram will have a distribution of brightness that will be most prominent near the center part of the graph.
-                       
-                <figure>
-                    <title>A Correctly Exposed Photograph</title>
-                    <graphic srccredit="A Correctly Exposed Photograph" fileref="editorhistogramsample2.png"/>
-                </figure>
-                
-                With an over exposed photograph, the histogram will have the bulge showing the brightness distributed mostly towards the right of the graph.
-                
-                <figure>
-                    <title>An Under Exposed Photograph</title>
-                    <graphic srccredit="An Under Exposed Photograph" fileref="editorhistogramsample1.png"/>
-                </figure>
-
-                </para>
-
-                <para>
-                Important: not all photographs have to exhibit this bulge in the center part of their histogram. Much depends on the subject of the photograph. In some cases, it might be appropriate for the histogram to show a peak at one end or the other, or both.
-                </para>
-                        
-                <para>
-                The histogram is a reliable way of deciding whether or not a photograph is correctly exposed. Should the histogram show an over or under exposure, an <link linkend="using-kapp-correctingexposure">Exposure Correction Tool</link> should be used to fix the photograph.
-                </para>
-                
-            </sect3>
-                    
         </sect2>
 
         <sect2 id="using-kapp-adjustingimage">
@@ -2811,6 +2770,9 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
             </para>
             <para>(88, 249, 16) in Adobe RGB <inlinemediaobject><imageobject><imagedata fileref="2Greens.png" format="PNG"/></imageobject></inlinemediaobject> The same RGB value in sRGB</para>
             
+           <para>Links:</para>
+           <para><ulink url="http://en.wikipedia.org/wiki/Gamut">Gamut</ulink></para>
+
         </sect2>
         
     </sect1>  
