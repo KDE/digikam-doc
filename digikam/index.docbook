@@ -69,7 +69,7 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2006-05-15</date>
+<date>2006-05-21</date>
 <releaseinfo>0.9.0</releaseinfo>
 
 <abstract>
@@ -383,7 +383,7 @@
                         <row><entry>
                         DNG
                         </entry><entry>
-                        Adobe RAW file format (Digital NeGative)
+                        Adobe RAW file format (Digital Negative)
                         </entry></row>
                     
                     </tbody>
@@ -789,7 +789,7 @@
                 </para>
 
                 <para>
-                Note that there can be a problem with meta-data embedded in photographs when they are edited by other image manipulation applications. Some applications do not retain the photograph's meta-data when you save a modified image. This means that if you modify a photograph using one of these programs you will loose information such as orientation, aperture &etc;. that are stored in the exif fields.
+                Note that there can be a problem with meta-data embedded in photographs when they are edited by other image manipulation applications. Some applications do not retain the photograph's meta-data when you save a modified image. This means that if you modify a photograph using one of these programs you will loose information such as orientation, aperture &etc;. that are stored in the EXIF tags.
                 </para>
 
             </sect3>
@@ -933,7 +933,7 @@
             </figure>
             
             <para>
-            The "My Dates" view organizes your photographs based on their dates. Digikam uses either the
+            The "My Dates" view organizes your photographs based on their dates. &digikam; uses either the
             EXIF date or, if no EXIF date is available, the last modification time of the file.
             </para>
 
@@ -957,7 +957,7 @@
                 </para>
 
                 <para>
-                If you want to search photographs from a certain date, you can simply type <userinput>2005</userinput>, but it is even possible to search for a certain month. Just enter the name of the month in your local langauge. If it is Dutch, you can enter <userinput>Maart</userinput>, to see the pictures of March.
+                If you want to search photographs from a certain date, you can simply type <userinput>2005</userinput>, but it is even possible to search for a certain month. Just enter the name of the month in your local language. If it is Dutch, you can enter <userinput>Maart</userinput>, to see the pictures of March.
                </para> 
                 
                 <figure>
@@ -993,7 +993,7 @@
                 </para>
                     
                 <para>
-                The <guilabel>Search Rules</guilabel> list is used to set all options to process a search query in albums database. all rules are listed verticaly and separed by an operator. An option can be added or deleted to the list using <guilabel>Add/Delete Option</guilabel> or grouped/ungrouped together using <guilabel>Group/Ungroup Options</guilabel>. Each option can be combined to another one using <guilabel>As well as</guilabel> or <guilabel>Or</guilabel> logical operator.
+                The <guilabel>Search Rules</guilabel> list is used to set all options to process a search query in albums database. all rules are listed vertically and separated by an operator. An option can be added or deleted to the list using <guilabel>Add/Delete Option</guilabel> or grouped/ungrouped together using <guilabel>Group/Ungroup Options</guilabel>. Each option can be combined to another one using <guilabel>As well as</guilabel> or <guilabel>Or</guilabel> logical operator.
                 </para>                
 
 <tip>
@@ -1015,7 +1015,7 @@
                     <listitem><para>(1): the item used to search in database, witch can be an album, a name, a tag, an image, a keyword, &etc;.
                     </para></listitem>
                     
-                    <listitem><para>(2): the logical operator to process with item witch depands of item type.
+                    <listitem><para>(2): the logical operator to process the item which depends on the item type.
                     </para></listitem>
                     
                     <listitem><para>(3): the operator argument witch can be a string or a name already set by database.
@@ -1052,7 +1052,7 @@
                 </para>
  
                 <para>
-                If you want to group options together, just check the option box iat the end of the rule and press <guilabel>Group</guilabel> button. Options will be appear in the list like this:
+                If you want to group options together, just check the option box at the end of the rule and press <guilabel>Group</guilabel> button. Options will be appear in the list like this:
                 
                 <figure>
                     <title>A Query Grouped Options Example</title>
@@ -1085,7 +1085,7 @@
             
                 <listitem><para><link linkend="using-kapp-sidebarfileproperties">Properties</link> : File and image properties, key shooting parameters (EXIF tags)</para></listitem>
 
-                <listitem><para><link linkend="using-kapp-sidebarmetadata">Metadata</link> : Exif, Makernotes, IPTC and GPS data</para></listitem>
+                <listitem><para><link linkend="using-kapp-sidebarmetadata">Metadata</link> : EXIF, Makernotes, IPTC and GPS data</para></listitem>
                    
                 <listitem><para><link linkend="using-kapp-sidebarcolors">Colors</link> : Histograms and embedded ICC profiles</para></listitem>
                 
@@ -1123,7 +1123,7 @@
         <title>Metadata</title>
 
            <para>
-           The metadata side bar is composed of four subtabs <guilabel>Exif, Makernotes, IPTC and GPS data</guilabel>. A combo-box lets you choose between full and simplified data display. Next to it are a printer and copy icon, They do just that - print (kprinter dialog) or copy the respective tab data to the clipboard. In the main window view you will find a navigation button set with the file name on top of the tabs.
+           The metadata side bar is composed of four sub tabs <guilabel>EXIF, Makernotes, IPTC and GPS data</guilabel>. A combo-box lets you choose between full and simplified data display. Next to it are a printer and copy icon, They do just that - print (kprinter dialog) or copy the respective tab data to the clipboard. In the main window view you will find a navigation button set with the file name on top of the tabs.
            </para>
 
            <figure>
@@ -1182,7 +1182,7 @@
                 <title>How to Use EXIF Viewer?</title>
                     
                     <para>             
-                    You can review embedded EXIF information for the selected image from the first sidebar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections.
+                    You can review embedded EXIF information for the selected image from the first side bar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections.
                     </para>
             
                     <figure>
@@ -1251,7 +1251,7 @@
         <sect2 id="using-kapp-sidebarcolors">
         <title>Colors</title>
            <para>
-           The colors side bar has two subtabs <guilabel>Color and ICC Profile</guilabel>. Here are more details about <link linkend="using-kapp-iccprofile">Color Management</link>
+           The colors side bar has two sub tabs <guilabel>Color and ICC Profile</guilabel>. Here are more details about <link linkend="using-kapp-iccprofile">Color Management</link>
            </para>
 
             <sect3 id="using-kapp-histogramviewer">
@@ -1264,7 +1264,7 @@
                 </para>
             
                 <para>
-                  The Histogram Viewer shows you informations about the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram-based color correction, use the Adjust Levels Image Editor plugin. This plugin is part of the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>. For more information about using Plugins in &digikam; see the <link linkend="using-kapp-setup">Configuration</link> section.
+                  The Histogram Viewer shows the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram-based color correction, use the Adjust Levels or Adjust Curves Image Editor plugin. These plugins are part of the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>. For more information about using Plugins in &digikam; see the <link linkend="using-kapp-setup">Configuration</link> section.
                 </para>
                                                 
                 <figure>
@@ -1454,7 +1454,7 @@
           <title>Date &amp; Time</title>
 
            <para>
-           In the Date &amp; Time section, which reflects the time of taking the photograph, you can change all values. From the date combo-box a calender opens, and the time setting spin-box can also be written by directly typing the time. The datation is copied to the EXIF 'Date and Time' field. If you need to change a number of images for their creating time &amp; date, there is a more comfortable method available (requiring the kipi-plugins). This latter option can be found under <menuchoice><guimenuitem>Image</guimenuitem><guimenuitem>Adjust time &amp; date...</guimenuitem></menuchoice>. Select the images to be changed in the main view and call the plugin.
+           In the Date &amp; Time section, which reflects the time of taking the photograph, you can change all values. From the date combo-box a calender opens, and the time setting spin-box can also be written by directly typing the time. The dating is copied to the EXIF 'Date and Time' field. If you need to change a number of images for their creating time &amp; date, there is a more comfortable method available (requiring the kipi-plugins). This latter option can be found under <menuchoice><guimenuitem>Image</guimenuitem><guimenuitem>Adjust time &amp; date...</guimenuitem></menuchoice>. Select the images to be changed in the main view and call the plugin.
            </para>
           </sect3>
 
@@ -1464,7 +1464,7 @@
            <para>
            The Rating section displays a 0...5 star rating scheme that can be used in searches and sort orders. It can be applied by a single mouse click to the 5 stars in the side bar or with a keyboard short-cut Ctrl+0...5. The rating from the side bar is always applied to one image at a time. To rate a number of images, select them and pop-up the context menu (right-click) to apply a common rating.
            </para>
-           <para>The rating is then transcribed into the IPTC 'urgency' data field. The trancoding follows the scheme in this table:
+           <para>The rating is then transcribed into the IPTC 'urgency' data field. The transcoding follows the scheme in this table:
            </para>
 
               <informaltable><tgroup cols="2">
@@ -1506,14 +1506,14 @@
            </para>
 
            <para>
-           The combo-box at the bottom is another ergonomical feature for easy tagging of an image series. As you apply different tags they will be memorized in this box for quick access. 
+           The combo-box at the bottom is another ergonomic feature for easy tagging of an image series. As you apply different tags they will be memorized in this box for quick access. 
            </para>
 
            <para>
            Otherwise tags are simply applied by checking the respective boxes in the tree. All tags of an image are transcribed into the IPTC 'keyword' data field.
            </para>
            <note><para>
-            In case you have selected a number of images in the main view and you check a tag in the tag tree, this one is only applied to the highlighted image, and not to the whole selection. If you want to tag selections, refer to the <link linkend="using-kapp-sidebartagfilters">Tagfilters</link> section.
+            In case you have selected a number of images in the main view and you check a tag in the tag tree, this one is only applied to the highlighted image, and not to the whole selection. If you want to tag selections, refer to the <link linkend="using-kapp-sidebartagfilters">Tag filters</link> section.
            </para></note>
 
           </sect3>
@@ -1524,10 +1524,10 @@
         <sect2 id="using-kapp-sidebartagfilters">
         <title>Tag Filters</title>
            <para>
-           The tag filter side bar is used to modify the set of images displayed in the main window view. Normally one uses the left side bar with its Album, Date, Tag and Searches view. When additionally one or more tags on right side bar tag filter is checked, only the cross-section of these two selections will be displayed. All ceated tags are available. 
+           The tag filter side bar is used to modify the set of images displayed in the main window view. Normally one uses the left side bar with its Album, Date, Tag and Searches view. When additionally one or more tags on right side bar tag filter is checked, only the cross-section of these two selections will be displayed. All created tags are available. 
            </para>
            <para>
-           To give an example, suppose you have a tag called 'public' which tagges all images except your private ones. Then you can check this 'public' tag in the right side bar to hide the private pictures (all those not having 'public' tag). Whatever view mode you chose from the left side bar, 'public' only picture will be displayed. Another typical example is the selection of a subset of tags in a hierarchical tree. Suppose you want to display 'red' and 'green' from a tag tree containing 7 different colors as sub-tags. Simply click on the 'color' tag of the main view and check 'red' and 'green' from the right side bar.
+           To give an example, suppose you have a tag called 'public' which tags all images except your private ones. Then you can check this 'public' tag in the right side bar to hide the private pictures (all those not having 'public' tag). Whatever view mode you chose from the left side bar, 'public' only picture will be displayed. Another typical example is the selection of a subset of tags in a hierarchical tree. Suppose you want to display 'red' and 'green' from a tag tree containing 7 different colors as sub-tags. Simply click on the 'color' tag of the main view and check 'red' and 'green' from the right side bar.
            </para>
            <para>Another use is <emphasis>drag-and drop tagging</emphasis>. Lets say you selected in the main view a number of pictures to tag them. If the tag already exists, simply drag it from the right side bar onto the selection (any one of the highlighted pictures). A dialog will pop-up and ask if this tag should be applied.
            </para>
@@ -1536,7 +1536,7 @@
                  <graphic srccredit="Side Bar Tag Filters" fileref="sidebartagfilters.png"/>
            </figure>
             <para>
-                In the above example the main window shows the pictures from a calender date, the tag filter is set to 'not tagged', which reduces the set to 3 images. They have been selected with Ctrl+a, then a tag is dragged from the right tag tree over the selection and dropped. A pop-up dialog askes if the tag shall be applied.
+                In the above example the main window shows the pictures from a calender date, the tag filter is set to 'not tagged', which reduces the set to 3 images. They have been selected with Ctrl+a, then a tag is dragged from the right tag tree over the selection and dropped. A pop-up dialog asks if the tag shall be applied.
             </para>
 
         </sect2>
@@ -1676,14 +1676,14 @@
                 In the next box you find the options for rotating/flipping the image and for date-based sub-albums. If you check the latter option, folder per day will be automatically generated.
             </para>
             <para>
-                The 'On the fly operations' open three more options that act on the photos before storing them on disk. The first two relate to the authors data in <link linkend="authoridentity">Default Author Identity</link>" Settings. If checked the respective items willbe copied into the EXIF tags and IPTC fields. The last option allows to fix a date &amp; time for all downloaded pictures.
+                The 'On the fly operations' open three more options that act on the photos before storing them on disk. The first two relate to the authors data in <link linkend="authoridentity">Default Author Identity</link>" Settings. If checked the respective items will be copied into the EXIF tags and IPTC fields. The last option allows to fix a date &amp; time for all downloaded pictures.
             </para>
     
             <tip>
                 <para>
                 <itemizedlist>
             
-                    <listitem><para>If you want another date format then the default date format, you could fill in for example: <userinput>photo-%Y-%m-%d %H:%M:%S</userinput> in the prefix edit line (turn off <guilabel>Add camera provided date and time</guilabel>). For additional customization read the manpage of strftime.</para></listitem>
+                    <listitem><para>If you want another date format then the default date format, you could fill in for example: <userinput>photo-%Y-%m-%d %H:%M:%S</userinput> in the prefix edit line (turn off <guilabel>Add camera provided date and time</guilabel>). For additional customization read the man page of strftime.</para></listitem>
 
                     <listitem><para>When you select <guilabel>Use camera provided names</guilabel>, you have the option to change the filenames to lowercase when downloading. Or use uppercase if you prefer.</para></listitem>
                    
@@ -1782,7 +1782,7 @@
                 <listitem>
                     <para>'Manual' insertion of known locations</para>
                     <para>
-                        If you happen to know the latitude/longitude or other data you can use the <ulink url="http://www.exiv2.org/tags.html">exiv2 tool</ulink> to insert the data into the pictures. Whilst this can be done with one commandline per field, it is more economic to prepare a file with all data fields provided. The following example file <quote>loc1.gps</quote> illustrates this:
+                        If you happen to know the latitude/longitude or other data you can use the <ulink url="http://www.exiv2.org/tags.html">exiv2 tool</ulink> to insert the data into the pictures. Whilst this can be done with one command line per field, it is more economic to prepare a file with all data fields provided. The following example file <quote>loc1.gps</quote> illustrates this:
                     </para>
                     <blockquote><screen># Ta Phrom location
 # call from commandline:$ exiv2 -m loc1.gps foo.jpg
@@ -1793,7 +1793,7 @@ add Exif.GPSInfo.GPSLongitude Rational "103/1 53/1 4370/100"
 add Exif.GPSInfo.GPSMapDatum Ascii "WGS-84"
 add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blockquote>
                     <para>
-                        The positional data (e.g. 13.44088333) must be converted into H.MS format (13.235990) and split into its constituents as shown in the given  example. By the way, it is easy to find exact coodinates on the web using <ulink url="http://maps.google.com"> MapsGoogle</ulink> or <ulink url="http://http://www.multimap.com/map/home.cgi?client=public"> Multimap.com</ulink>
+                        The positional data (e.g. 13.44088333) must be converted into H.MS format (13.235990) and split into its constituents as shown in the given example. By the way, it is easy to find exact coordinates on the web using <ulink url="http://maps.google.com"> MapsGoogle</ulink> or <ulink url="http://http://www.multimap.com/map/home.cgi?client=public"> Multimap.com</ulink>
                     </para>
                     <tip><para>
                             maps.google.com does not show the street map of Europe. But here are European sites (.fr .de .es at least) that show all navigation details in all of Europe.
@@ -1932,7 +1932,7 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
             </para>
 
             <para>
-            To  get a popup menu with the available undo/redo actions, you have to press the left mouse button at the undo or redo icon in the toolbar and hold it down for a moment. If you choose one of the menu items, all undo/redo actions until the chosen ones are done.
+            To  get a popup menu with the available undo/redo actions, you have to press the left mouse button at the undo or redo icon in the tool bar and hold it down for a moment. If you choose one of the menu items, all undo/redo actions until the chosen ones are done.
             </para>
                         
         </sect2>
@@ -2755,9 +2755,9 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
             <title>ICC color profile management</title>
             
             <para>
-                What is the importance of ICC color profile management? In simple terms it is like a Hifi stereo, where high fidelity is seeked from source to speakers, passing through microphone, recoding media, player and amplifier. Much the same, ICC color profile management tries to maintain color fidelity from photographic subject through the camera to the output media screen, print, paper and projector. Luckily digital photography has taken out one source of distortion, the storage media (as the &CD;-ROM did in the audio field).
+                What is the importance of ICC color profile management anyway? In simple terms it is alike Hifi stereo, where high fidelity is seeked from source to speakers, passing through microphone, recoding media, player and amplifier. Much the same, ICC color profile management tries to maintain color fidelity from photographic subject through the camera to the output media screen, print, paper and beamer. Luckily digital photography has taken out one source of distortion, the storage media (as the &CD-ROM;did in the audio field).
             </para>
-            <para>The figure below pictures the problem: Every time there is a transfer from one device to another, an ICC profile is used to correct for the inaccuracies of the device.
+            <para>The figure below pictures the problem: Every time there is a transfer from one device to another, an ICC profile is used to correct for the inaccuracies of the device. The central work space (which is called Profile Connection Space, PCS) provides a common platform to translate the device color spaces into each other.
             </para>
             <figure>
                 <title>The inter-connection between devices and their color spaces</title>
@@ -2765,13 +2765,47 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
                 fileref="colormanagement.png"/>
             </figure>
 
+            <para>A word of caution: If you do not use color management you still can realize phantastic pictures. CM is really important whenever you need identical results between shooting seesions, accurate source reproduction, close rendering results between various display media.</para>
+
+            <para>The ICC standard covers a data format to exchange colour information of devices.</para>
+
             <para>
-                ISO 22028-1 specifies unambiguous exchange of color image data of color space encoding, viewing conditions, image state and reference medium. Here follows an example of the differences in color language: one kind of green defined (by the same numbers) in one color space looks different in another color space. This is what happens when no color management is applied.
+              ISO 22028-1 specifies unambiguous exchange of color image data of color space encoding, viewing conditions, image state and reference medium. Here follows an example of the differences in color language: one kind of green defined (by the same numbers) in one color space looks different in another color space. This is what happens when no color management is applied.
             </para>
-            <para>(88, 249, 16) in Adobe RGB <inlinemediaobject><imageobject><imagedata fileref="2Greens.png" format="PNG"/></imageobject></inlinemediaobject> The same RGB value in sRGB</para>
+            <para>
+              (88, 249, 16) in Adobe RGB <inlinemediaobject><imageobject><imagedata fileref="2Greens.png" format="PNG"/></imageobject></inlinemediaobject> The same RGB value in sRGB
+            </para>
+
+            <para>Photographers want to use the full gamut of their camera and their inkjet printers. Editing of pictures should be done in a work space, where equal RGB-numbers result into gray.</para>
+
+
+            <sect3 id="rendering-intention">
+            <title>Rendering intention</title>
+
+                <para>Rendering intent refers to the way gamuts are handled when the intended target color space cannot handle the full gamut.</para>
+                <itemizedlist>
             
-           <para>Links:</para>
-           <para><ulink url="http://en.wikipedia.org/wiki/Gamut">Gamut</ulink></para>
+                    <listitem><para><emphasis>Perceptual</emphasis>, also called Picture or Maintain Full Gamut.  This is generally recommended for photographic images. The color gamut is expanded or compressed when moving between color spaces to maintain consistent overall appearance. Low saturation colors are changed very little. More saturated colors within the gamuts of both spaces may be altered to differentiate them from saturated colors outside the smaller gamut space. Perceptual rendering applies the same gamut compression to all images, even when the image contains no significant out-of-gamut colors.</para>
+                    </listitem>
+
+                    <listitem><para><emphasis>Relative Colorimetric</emphasis>, also called Proof or Preserve Identical Color and White Point.  Reproduces in-gamut colors exactly and clips out-of-gamut colors to the nearest reproducible hue.</para>
+                    </listitem>
+
+                    <listitem><para><emphasis>Absolute Colorimetric</emphasis>, also called Match or Preserve Identical Colors.  Reproduces in-gamut colors exactly and clips out-of-gamut colors to the nearest reproducible hue, sacrificing saturation and possibly lightness. On tinted papers, whites may be darkened to keep the hue identical to the original. For example, cyan may be added to the white of a cream-colored paper, effectively darkening the image. Rarely of interest to photographers.</para>
+                    </listitem>
+
+                    <listitem><para><emphasis>Saturation</emphasis>, also called Graphic or Preserve Saturation.  Maps the saturated primary colors in the source to saturated primary colors in the destination, neglecting differences in hue, saturation, or lightness. For block graphics; rarely of interest to photographers.</para>
+                    </listitem>
+
+                </itemizedlist>
+
+            </sect3>
+
+           <sect3 id="iccprofile-links">
+            <title>Links</title>
+               <para><ulink url="http://www.oyranos.org/wiki/index.php?title=Main_Pag">Color wiki</ulink></para>
+               <para><ulink url="http://en.wikipedia.org/wiki/Gamut">Gamut explained</ulink></para>
+           </sect3>
 
         </sect2>
         
