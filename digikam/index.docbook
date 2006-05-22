@@ -996,7 +996,7 @@
                 The <guilabel>Search Rules</guilabel> list is used to set all options to process a search query in albums database. all rules are listed vertically and separated by an operator. An option can be added or deleted to the list using <guilabel>Add/Delete Option</guilabel> or grouped/ungrouped together using <guilabel>Group/Ungroup Options</guilabel>. Each option can be combined to another one using <guilabel>As well as</guilabel> or <guilabel>Or</guilabel> logical operator.
                 </para>                
 
-<tip>
+                <tip>
                 <para>
                 If you made added a rule with <guilabel>As well as</guilabel> and you realize that it should have been <guilabel>Or</guilabel>, you can easily switch to that by double clicking on the text <guilabel>As well as</guilabel> in the rules area.
                 </para>
@@ -2755,29 +2755,51 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
             <title>ICC color profile management</title>
             
             <para>
-                What is the importance of ICC color profile management anyway? In simple terms it is alike Hifi stereo, where high fidelity is seeked from source to speakers, passing through microphone, recoding media, player and amplifier. Much the same, ICC color profile management tries to maintain color fidelity from photographic subject through the camera to the output media screen, print, paper and beamer. Luckily digital photography has taken out one source of distortion, the storage media (as the &CD-ROM;did in the audio field).
+                What is the importance of ICC color profile management anyway? In simple terms it is alike Hifi stereo, where high fidelity is seeked from source to speakers, passing through microphone, recoding media, player and amplifier. Much the same, ICC color profile management tries to maintain color fidelity from photographic subject through the camera to the output media screen, print, paper and beamer. Luckily digital photography has taken out one source of distortion, the storage media (as the &CD-ROM; did in the audio field).
             </para>
-            <para>The figure below pictures the problem: Every time there is a transfer from one device to another, an ICC profile is used to correct for the inaccuracies of the device. The central work space (which is called Profile Connection Space, PCS) provides a common platform to translate the device color spaces into each other.
+
+            <para>The figure below pictures the problem: Every time there is a transfer from one device to another, an ICC profile is used to correct for the inaccuracies or limitations of the device. The central work space (which is called Profile Connection Space, PCS) provides a common platform to translate the device color spaces into each other.
             </para>
             <figure>
                 <title>The inter-connection between devices and their color spaces</title>
-                <graphic srccredit="The inter-connection between devices and their color spaces" 
+                <graphic srccredit="Gerhard Kulzer" 
                 fileref="colormanagement.png"/>
             </figure>
 
-            <para>A word of caution: If you do not use color management you still can realize phantastic pictures. CM is really important whenever you need identical results between shooting seesions, accurate source reproduction, close rendering results between various display media.</para>
+            <tip>
+                <para><emphasis>CM Pros.</emphasis> CM is really important whenever you need identical results between shooting sessions, accurate source reproduction, close rendering results between various display media (this would rather point CM to professionals).</para>
+                <para>As a passionate amateur you can also profit from CM, since it is mostly accociated with 16 bit color depth. RAW mode shooting is much more forgiving in terms of exposure than processed shooting (JPEG), so you can generally underexpose and recover the highlights. And, the human eye is much more sensitive to luminosity variations in the dark scales than a digital camera is. Careful tonal adjustment there close to the blacks will produce a better dynamic of the picture. That is why RAW mode pictures often have an apperance of more depth to them.</para>
 
-            <para>The ICC standard covers a data format to exchange colour information of devices.</para>
+                <para><emphasis>CM Cons.</emphasis> If you do not use color management you still can realize phantastic pictures. In journalism or emotional contexts, for holiday photos you do not need any color management.</para>
+            </tip>
 
             <para>
-              ISO 22028-1 specifies unambiguous exchange of color image data of color space encoding, viewing conditions, image state and reference medium. Here follows an example of the differences in color language: one kind of green defined (by the same numbers) in one color space looks different in another color space. This is what happens when no color management is applied.
+                The ICC standard covers a data format to exchange colour information of devices. ISO 22028-1 specifies unambiguous exchange of color image data of color space encoding, viewing conditions, image state and reference medium. Here follows an example of the differences in color language: one kind of green defined (by the same numbers) in one color space looks different in another color space. This is what happens when no color management is applied.
             </para>
             <para>
               (88, 249, 16) in Adobe RGB <inlinemediaobject><imageobject><imagedata fileref="2Greens.png" format="PNG"/></imageobject></inlinemediaobject> The same RGB value in sRGB
             </para>
 
-            <para>Photographers want to use the full gamut of their camera and their inkjet printers. Editing of pictures should be done in a work space, where equal RGB-numbers result into gray.</para>
+            <para>
+                Photographers want to use the full gamut of their camera and their inkjet printers. Editing of pictures should be done in a work space, where equal RGB-numbers result into gray.
+            </para>
 
+            <para>
+                    The following diagram tries to outline the logic &digikam; will follow in its CM work flow, depending on the settings made in <emphasis>IO Files</emphasis> and <emphasis>ICC profiles</emphasis> of the configuration page.
+            </para>
+
+            <figure>
+                <title>The &digikam; internal work flow logic depending on the settings</title>
+                <graphic srccredit="Gerhard Kulzer" 
+                fileref="ICCworkflowlogic.png"/>
+            </figure>
+
+            <sect3 id="softproofing">
+            <title>Soft Proofing</title>
+                <para> Soft Proofing is a way of previewing on the screen (monitor) the result to be expected from an output on another device, typically a printer. Soft proofing will show you the difference to be expected before you actually do it (and waste your costly ink). So you can improve your settings without wasting time and money.
+                </para>
+
+            </sect3>
 
             <sect3 id="rendering-intention">
             <title>Rendering intention</title>
@@ -2803,8 +2825,7 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
 
            <sect3 id="iccprofile-links">
             <title>Links</title>
-               <para><ulink url="http://www.oyranos.org/wiki/index.php?title=Main_Pag">Color wiki</ulink></para>
-               <para><ulink url="http://en.wikipedia.org/wiki/Gamut">Gamut explained</ulink></para>
+               <para><ulink url="http://www.oyranos.org/wiki/index.php?title=Main_Pag">Color wiki</ulink> <ulink url="http://en.wikipedia.org/wiki/CIELAB">CIELAB</ulink> <ulink url="http://en.wikipedia.org/wiki/Gamut">Gamut explained</ulink></para>
            </sect3>
 
         </sect2>
