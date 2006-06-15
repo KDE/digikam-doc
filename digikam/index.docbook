@@ -69,7 +69,7 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2006-05-21</date>
+<date>2006-06-09</date>
 <releaseinfo>0.9.0</releaseinfo>
 
 <abstract>
@@ -200,7 +200,7 @@
         </figure>
 
         <note><para>
-        As &digikam; uses your folders on your hard disk directly, other applications like file managers can remove any albums outside a &digikam; session. In this case, at the next session, &digikam; will tell you if all albums that have been removed from the &digikam; photographs root path shall be deleted from albums database. If you want to move folders around and don't want to do that in &digikam;, we suggest you do that while &digikam; is running, so the database will be kept in sync and you don't loose any meta data.
+        As &digikam; uses your folders on your hard disk directly, other applications like file managers can remove any albums outside a &digikam; session. In this case, at the next session, &digikam; will tell you if all albums that have been removed from the &digikam; photographs root path shall be deleted from albums database. If you want to move folders around and don't want to do that in &digikam;, we suggest you do that while &digikam; is running, so the database will be kept in sync and you don't lose any meta data.
         
         <figure>
             <title>The Albums Missing Dialog</title>
@@ -270,7 +270,7 @@
             <sect3>
             <title>PNG</title>
                 <para>
-                PNG is an image format that was developed as a replacement for a number of older, in the 1990's widely used, image file formats. It is a lossless format like TIFF but it is much more compact and saves disk space. Although your camera is unlikely to support PNG, some people like to convert their photographs to PNG as soon as they get them on their computer. Unlike JPEG, PNG images do not loose quality every time you re-encode them after modification. &digikam; fully supports PNG images and the Batch Processing Images Plugin can convert a batch of images from any supported format to PNG in one step. See the <link linkend="using-kapp-setup">Configuration</link> section for information about using plugins with &digikam;.
+                PNG is an image format that was developed as a replacement for a number of older, in the 1990's widely used, image file formats. It is a lossless format like TIFF but it is much more compact and saves disk space. Although your camera is unlikely to support PNG, some people like to convert their photographs to PNG as soon as they get them on their computer. Unlike JPEG, PNG images do not lose quality every time you re-encode them after modification. &digikam; fully supports PNG images and the Batch Processing Images Plugin can convert a batch of images from any supported format to PNG in one step. See the <link linkend="using-kapp-setup">Configuration</link> section for information about using plugins with &digikam;.
                 </para>
     
                 <para>
@@ -560,7 +560,7 @@
                 <graphic srccredit="The Main Window" fileref="maininterfacepreview.png"/>
             </figure>
 
-            &digikam;'s main window has four areas. The first one is a side bar in the left margin that lets you switch between 4 views: <guilabel>My Albums</guilabel>, <guilabel>My Dates</guilabel>, <guilabel>My Tags</guilabel> and <guilabel>My Searches</guilabel>. Then there is a tree navigator showing the selected view. The main image window is right in the center. And on the right hand side there is another <link linkend="using-kapp-sidebar">side bar</link> shown. This one can be used to show all informations of your images. You can use these views to organize and find your photographs.
+            &digikam;'s main window has four areas. The first one is a sidebar in the left margin that lets you switch between 4 views: <guilabel>My Albums</guilabel>, <guilabel>My Dates</guilabel>, <guilabel>My Tags</guilabel> and <guilabel>My Searches</guilabel>. Then there is a tree navigator showing the selected view. The main image window is right in the center. And on the right hand side there is another <link linkend="using-kapp-sidebar">sidebar</link> shown. This one can be used to show all informations of your images. You can use these views to organize and find your photographs.
             </para>
 
             <para>
@@ -789,7 +789,7 @@
                 </para>
 
                 <para>
-                Note that there can be a problem with meta-data embedded in photographs when they are edited by other image manipulation applications. Some applications do not retain the photograph's meta-data when you save a modified image. This means that if you modify a photograph using one of these programs you will loose information such as orientation, aperture &etc;. that are stored in the EXIF tags.
+                Note that there can be a problem with meta-data embedded in photographs when they are edited by other image manipulation applications. Some applications do not retain the photograph's meta-data when you save a modified image. This means that if you modify a photograph using one of these programs you will lose information such as orientation, aperture &etc;. that are stored in the EXIF tags.
                 </para>
 
             </sect3>
@@ -798,7 +798,7 @@
             <title>Rotating a Photograph</title>
              
                 <note><para>
-                You will need to have the Kipi JPEG Lossless Plugin installed for the rotation features. If you do not have this plugin installed you can still rotate your photographs, but you have to do so from the Image Editor inside. The Image Editor uses a different method of rotating an image, you may not notice any difference but the Image Editor method can cause some loss of quality in the photograph. The rotation methods described here use the Kipi JPEG Lossless Plugin and do not loose any quality in the original photograph.
+                You will need to have the Kipi JPEG Lossless Plugin installed for the rotation features. If you do not have this plugin installed you can still rotate your photographs, but you have to do so from the Image Editor inside. The Image Editor uses a different method of rotating an image, you may not notice any difference but the Image Editor method can cause some loss of quality in the photograph when saving the picture as JPEG. The rotation methods described here use the Kipi JPEG Lossless Plugin and do not lose any quality in the original photograph.
                 </para></note>
                              
                 <para>
@@ -1072,13 +1072,13 @@
     </sect1>
 
     <sect1 id="using-kapp-sidebar">
-    <title>&digikam; Side Bar</title>
+    <title>&digikam; sidebar</title>
     <anchor id="sidebar.anchor"/>
     
         <sect2>
-        <title>Introduction to the right Side Bar</title>
+        <title>Introduction to the right sidebar</title>
            <para>
-               The &digikam; main windows has a Side Bar at the right border providing important information and actions of the selected images. This same Side Bar is also available in the <link linkend="using-kapp-imageeditor">Image Editor</link> view, without the first-previous-next-last navigation arrows. It can be displayed by respectively clicking on one of the five tabs:
+               The &digikam; main windows has a sidebar at the right border providing important information and actions of the selected images. This same sidebar is also available in the <link linkend="using-kapp-imageeditor">Image Editor</link> view, without the first-previous-next-last navigation arrows. It can be displayed by respectively clicking on one of the five tabs:
            </para>
            <para>
             <itemizedlist>
@@ -1094,14 +1094,14 @@
                 <listitem><para><link linkend="using-kapp-sidebartagfilters">Tag Filters</link> : Tag filters applied to main window selection</para></listitem>
             
             </itemizedlist>
-            Clicking successively onto the same tab will make the side bar pop up or fold back into the border.
+            Clicking successively onto the same tab will make the sidebar pop up or fold back into the border.
             </para>
         </sect2>
 
         <sect2 id="using-kapp-sidebarfileproperties">
         <title>Properties</title>
            <para>
-           The properties side bar shows the essential information about the selected image which are largely self-explanatory. It is grouped into the following sections:
+           The properties sidebar shows the essential information about the selected image which are largely self-explanatory. It is grouped into the following sections:
            <itemizedlist>
 
                <listitem><para>File Properties: these are file system related informations</para></listitem>
@@ -1112,8 +1112,8 @@
 
            </itemizedlist>
            <figure>
-               <title>Side Bar File Properties example</title>
-                 <graphic srccredit="Side Bar File Properties Example" fileref="sidebarfileproperties.png"/>
+               <title>sidebar File Properties example</title>
+                 <graphic srccredit="sidebar File Properties Example" fileref="sidebarfileproperties.png"/>
            </figure>
 
            </para>
@@ -1123,7 +1123,7 @@
         <title>Metadata</title>
 
            <para>
-           The metadata side bar is composed of four sub tabs <guilabel>EXIF, Makernotes, IPTC and GPS data</guilabel>. A combo-box lets you choose between full and simplified data display. Next to it are a printer and copy icon, They do just that - print (kprinter dialog) or copy the respective tab data to the clipboard. In the main window view you will find a navigation button set with the file name on top of the tabs.
+           The metadata sidebar is composed of four sub tabs <guilabel>EXIF, Makernotes, IPTC and GPS data</guilabel>. A combo-box lets you choose between full and simplified data display. Next to it are a printer and copy icon, They do just that - print (kprinter dialog) or copy the respective tab data to the clipboard. In the main window view you will find a navigation button set with the file name on top of the tabs.
            </para>
 
            <figure>
@@ -1182,7 +1182,7 @@
                 <title>How to Use EXIF Viewer?</title>
                     
                     <para>             
-                    You can review embedded EXIF information for the selected image from the first side bar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections.
+                    You can review embedded EXIF information for the selected image from the first sidebar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections.
                     </para>
             
                     <figure>
@@ -1240,8 +1240,8 @@
               </para>
 	      <para>Some tips as to how to use a GPS device with a camera are (<link linkend="using-kapp-gps">here</link>)</para>
               <figure>
-                 <title>Side Bar Metadata GPS info</title>
-                   <graphic srccredit="Side Bar Metadata info" fileref="sidebarmetadatagps.png"/>
+                 <title>sidebar Metadata GPS info</title>
+                   <graphic srccredit="sidebar Metadata info" fileref="sidebarmetadatagps.png"/>
               </figure>
 
 
@@ -1251,7 +1251,7 @@
         <sect2 id="using-kapp-sidebarcolors">
         <title>Colors</title>
            <para>
-           The colors side bar has two sub tabs <guilabel>Color and ICC Profile</guilabel>. Here are more details about <link linkend="using-kapp-iccprofile">Color Management</link>
+           The colors sidebar has two sub tabs <guilabel>Color and ICC Profile</guilabel>. Here are more details about <link linkend="using-kapp-iccprofile">Color Management</link>
            </para>
 
             <sect3 id="using-kapp-histogramviewer">
@@ -1431,12 +1431,12 @@
         <sect2 id="using-kapp-sidebarcommentstags">
         <title>Comments &amp; Tags</title>
            <para>
-           This side bar tab serves to apply and edit image attributes like comments, rating, date and tags. The attributes are stored in the associated database, in the IPTC and EXIF data fields and become part of the image. All attributes are accessible in one side bar view as shown in the screenshot below. During image reading the order of priority is a) database b) IPTC and c) EXIF. So if there is a discrepancy between any of the three, this priority will take effect and a synchronization will take place. This side bar has a first-previous-next-last arrow navigator field on top if shown in the main application.
+           This sidebar tab serves to apply and edit image attributes like comments, rating, date and tags. The attributes are stored in the associated database, in the IPTC and EXIF data fields and become part of the image. All attributes are accessible in one sidebar view as shown in the screenshot below. During image reading the order of priority is a) database b) IPTC and c) EXIF. So if there is a discrepancy between any of the three, this priority will take effect and a synchronization will take place. This sidebar has a first-previous-next-last arrow navigator field on top if shown in the main application.
            </para>
 
            <figure>
-               <title>Side Bar Comments &amp; Tags example</title>
-                 <graphic srccredit="Side Bar Comments &amp; Tags Example" fileref="sidebarcommentstags.png"/>
+               <title>sidebar Comments &amp; Tags example</title>
+                 <graphic srccredit="sidebar Comments &amp; Tags Example" fileref="sidebarcommentstags.png"/>
            </figure>
 
           <sect3>
@@ -1462,7 +1462,7 @@
           <title>Rating</title>
 
            <para>
-           The Rating section displays a 0...5 star rating scheme that can be used in searches and sort orders. It can be applied by a single mouse click to the 5 stars in the side bar or with a keyboard short-cut Ctrl+0...5. The rating from the side bar is always applied to one image at a time. To rate a number of images, select them and pop-up the context menu (right-click) to apply a common rating.
+           The Rating section displays a 0...5 star rating scheme that can be used in searches and sort orders. It can be applied by a single mouse click to the 5 stars in the sidebar or with a keyboard short-cut Ctrl+0...5. The rating from the sidebar is always applied to one image at a time. To rate a number of images, select them and pop-up the context menu (right-click) to apply a common rating.
            </para>
            <para>The rating is then transcribed into the IPTC 'urgency' data field. The transcoding follows the scheme in this table:
            </para>
@@ -1524,16 +1524,16 @@
         <sect2 id="using-kapp-sidebartagfilters">
         <title>Tag Filters</title>
            <para>
-           The tag filter side bar is used to modify the set of images displayed in the main window view. Normally one uses the left side bar with its Album, Date, Tag and Searches view. When additionally one or more tags on right side bar tag filter is checked, only the cross-section of these two selections will be displayed. All created tags are available. 
+           The tag filter sidebar is used to modify the set of images displayed in the main window view. Normally one uses the left sidebar with its Album, Date, Tag and Searches view. When additionally one or more tags on right sidebar tag filter is checked, only the cross-section of these two selections will be displayed. All created tags are available. 
            </para>
            <para>
-           To give an example, suppose you have a tag called 'public' which tags all images except your private ones. Then you can check this 'public' tag in the right side bar to hide the private pictures (all those not having 'public' tag). Whatever view mode you chose from the left side bar, 'public' only picture will be displayed. Another typical example is the selection of a subset of tags in a hierarchical tree. Suppose you want to display 'red' and 'green' from a tag tree containing 7 different colors as sub-tags. Simply click on the 'color' tag of the main view and check 'red' and 'green' from the right side bar.
+           To give an example, suppose you have a tag called 'public' which tags all images except your private ones. Then you can check this 'public' tag in the right sidebar to hide the private pictures (all those not having 'public' tag). Whatever view mode you chose from the left sidebar, 'public' only picture will be displayed. Another typical example is the selection of a subset of tags in a hierarchical tree. Suppose you want to display 'red' and 'green' from a tag tree containing 7 different colors as sub-tags. Simply click on the 'color' tag of the main view and check 'red' and 'green' from the right sidebar.
            </para>
-           <para>Another use is <emphasis>drag-and drop tagging</emphasis>. Lets say you selected in the main view a number of pictures to tag them. If the tag already exists, simply drag it from the right side bar onto the selection (any one of the highlighted pictures). A dialog will pop-up and ask if this tag should be applied.
+           <para>Another use is <emphasis>drag-and drop tagging</emphasis>. Lets say you selected in the main view a number of pictures to tag them. If the tag already exists, simply drag it from the right sidebar onto the selection (any one of the highlighted pictures). A dialog will pop-up and ask if this tag should be applied.
            </para>
            <figure>
-               <title>Side Bar Tag Filters</title>
-                 <graphic srccredit="Side Bar Tag Filters" fileref="sidebartagfilters.png"/>
+               <title>sidebar Tag Filters</title>
+                 <graphic srccredit="sidebar Tag Filters" fileref="sidebartagfilters.png"/>
            </figure>
             <para>
                 In the above example the main window shows the pictures from a calender date, the tag filter is set to 'not tagged', which reduces the set to 3 images. They have been selected with Ctrl+a, then a tag is dragged from the right tag tree over the selection and dropped. A pop-up dialog asks if the tag shall be applied.
@@ -1704,11 +1704,11 @@
             <title>Automatic Rotation</title>
 
                 <para>
-                 &digikam; can use any information about the orientation of the camera in the moment the photograph was taken for automatic rotation of the photograph when it is downloaded. Not all cameras include this informations. See the <link linkend="using-kapp-sidebarmetadata">Side Bar Meta-Data</link> section for more detail about informations that your camera may have embedded in your photographs.
+                 &digikam; can use any information about the orientation of the camera in the moment the photograph was taken for automatic rotation of the photograph when it is downloaded. Not all cameras include this informations. See the <link linkend="using-kapp-sidebarmetadata">sidebar Meta-Data</link> section for more detail about informations that your camera may have embedded in your photographs.
                 </para>
 
                 <para>
-                This automatic rotation is switched on by default, and if your camera does not include the information, &digikam; will leave the photograph in its original orientation. If you would like to switch the automatic rotation off, click the <guilabel>Advanced</guilabel> button and deselect the <guilabel>Auto Orient</guilabel> option at the bottom of the window.
+                This automatic rotation is switched on by default, and if your camera does not include the information, &digikam; will leave the photograph at its original orientation. If you would like to switch the automatic rotation off, click the <guilabel>Advanced</guilabel> button and deselect the <guilabel>Auto Orient</guilabel> option at the bottom of the window.
                 </para>
             
             </sect3>
@@ -1720,7 +1720,7 @@
                 If your camera provides information about the date of the photograph's taking, &digikam; can use this to automatically create sub-albums in the destination Album when it is downloaded. 
                 Sub-albums names will be based on image dates. All images which have the same date will be downloaded into the same sub-album. Not all cameras include this information. 
                 See the <link linkend="using-kapp-sidebarmetadata">
-                Side Bar Meta-Data</link> section for more detail about
+                sidebar Meta-Data</link> section for more detail about
                 information your camera may have embedded in your photographs.
                 </para>
                 
@@ -1915,7 +1915,7 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
                 <imageobject><imagedata fileref="editorrevertbutton.png" format="PNG"/></imageobject>
                 <textobject><phrase>The Image Editor Revert Button</phrase></textobject>
             </inlinemediaobject>
-            <guilabel>Revert</guilabel> button on the Tool Bar. You will loose any changes that you have made to the photograph since it was last saved.
+            <guilabel>Revert</guilabel> button on the Tool Bar. You will lose any changes that you have made to the photograph since it was last saved.
             </para>
             
         </sect2>
@@ -2283,22 +2283,15 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
             <title>Rotating or Flipping a Photograph</title>
                 
                 <para>
-                If the photograph shows a wrong orientation you can <guilabel>Flip</guilabel> or <guilabel>Rotate</guilabel> it to the correct orientation you would like by using Transform Flip/Rotate tools available in
-                <menuchoice><guimenu>Transform</guimenu>
-                <guimenuitem>Rotate</guimenuitem></menuchoice> 
-                and 
-                <menuchoice><guimenu>Transform</guimenu>
-                <guimenuitem>Flip</guimenuitem></menuchoice> 
-                menus. 
+                If the photograph shows a wrong orientation you can <guilabel>Flip</guilabel> or <guilabel>Rotate</guilabel> it to the correct orientation you would like by using Transform Flip/Rotate tools available in                <menuchoice><guimenu>Transform</guimenu>                <guimenuitem>Rotate</guimenuitem></menuchoice> and                <menuchoice><guimenu>Transform</guimenu>                <guimenuitem>Flip</guimenuitem></menuchoice> menus.
                 </para>
             
                 <para>
-                With flipping options, you can flip or turn over the image horizontally or vertically like a card. With rotating options, you can rotate the image 90 degrees clockwise or counter-clockwise or by 180 degrees. It can be used to change mode to Portrait or Landscape. You also can rotate more more accurately by using the Free Rotation tool. It is a plug-in
-                available from <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins 
+                With flipping options, you can flip or turn over the image horizontally or vertically like a card deck. With the rotating options, you can rotate the image in 90 degrees steps clockwise. It can be used to change the display mode to Portrait or Landscape. Be aware that this rotation is not lossless when using JPEG format. You also can rotate more accurately to a finer degree by using the Free Rotation tool. It is a plug-in available from <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins
                 project</ulink>, and you can access it by the 
 		<menuchoice><guimenu>Transform</guimenu>
                 <guimenuitem>Free Rotation</guimenuitem></menuchoice> menu entry.
-                See the dedicated <ulink url="help:/digikamimageplugins/freerotation.html">Free Rotation manual</ulink> for more information.  
+                See the dedicated <ulink url="help:/digikamimageplugins/freerotation.html">Free Rotation manual</ulink> for more information.
                 </para>
                 
             </sect3>
@@ -3744,7 +3737,7 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blo
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Launch the advanced search items side bar tab tool.
+                    Launch the advanced search items sidebar tab tool.
                 </action></para>
             </listitem>            
         </varlistentry>
