@@ -1564,7 +1564,7 @@
             </para>
         
             <para>
-            When you start the Camera Interface, it will try to connect to the Camera. For some cameras this connection phase can take a little while. When connected, a <guilabel>Ready</guilabel> indicator will appear and thumbnails of any photographs on the camera will be displayed. Some cameras cannot provide thumbnails of the photographs, if this is the case you will only see the filenames and an mime-type icon for each items stored by your camera (photograph, movies, sound, etc).
+            When you start the Camera Interface, it will try to connect to the Camera. For some cameras this connection phase can take a little while. When connected, a <guilabel>Ready</guilabel> indicator will appear on the bottom and thumbnails of any photographs on the camera will be displayed. Some cameras cannot provide thumbnails of the photographs, if this is the case you will only see the filenames and an mime-type icon for each items stored by your camera (photograph, movies, sounds, etc).
             </para>
             
             <figure>
@@ -1592,16 +1592,16 @@
             </para>            
             
             <para>
-            The Metadata tab displays internal pictures metadata like Exif, Makernotes, GPS, etc. This informations are the same than Metadata side bar tab from &digikam; main interface or image editor. Note, all these metadata can be unavailable with some digital cameras.
+            The Metadata tab displays internal pictures metadata like Exif, Makernotes, GPS, etc. This informations are the same than <link linkend="using-kapp-sidebarmetadata">sidebar Meta-Data</link> from &digikam; main interface or image editor. Note, all these metadata can be unavailable with some digital cameras.
             </para>            
 
         </sect2>
         
         <sect2>
-        <title>Downloading Photographs</title>
+        <title>Downloading Photographs to your computer</title>
             
             <para>
-            The simplest way to download the photographs is to click the <guilabel>Download</guilabel> button and then click <guilabel>Download All</guilabel>. This will download all of the photographs on the camera to a single Album in &digikam;. The download process will not remove the photographs from the camera. It is always advisable to check that the photographs have downloaded safely into the Album you were expecting before deleting them from the camera.
+            The simplest way to download photographs from your camera to your computer is to click the <guilabel>Download</guilabel> button and then click <guilabel>Download All</guilabel>. This will download all of the photographs on the camera to a single Album in &digikam;. The download process will not remove the photographs from the camera. It is always advisable to check that the photographs have downloaded safely into the Album you were expecting before deleting them from the camera.
             </para>
         
             <para>
@@ -1609,7 +1609,7 @@
             </para>
 
             <note><para>
-            If supported by your camera an option <guilabel>Download new </guilabel> is available. Those are pictures not yet downloaded by &digikam;. In that case the new pictures are already marked with a star in the thumbnail window. Obviously if you choose this handy option, it will download the new pictures only.
+            If supported by your camera an option <guilabel>Download new</guilabel> is available. Those are pictures not yet downloaded by &digikam;. In that case the new pictures are already marked with a star in the thumbnail window. Obviously if you choose this handy option, it will download the new pictures only.
             </para></note>
 
         </sect2>
@@ -1739,7 +1739,29 @@
             </sect3>
 
         </sect2>
-                                    
+        
+        <sect2>
+        <title>Uploading Photographs to your camera</title>
+            
+            <para>
+            The simplest way to upload photographs from your computer to your camera is to click the <guilabel>Download</guilabel> button and then click <guilabel>Upload</guilabel>. A standard &kde; file selection dialog will appear to select the files from your computer to copying on your camera. You can select more than one file using the standard &kde; selection methods.
+            </para>
+        
+            <para>
+            When opictures selection is done, &digikam; will ask you where you want upload the files in your camera. A camera folder selection dialog will appear. Just select one folder and press OK to start uploading. All images from your computer will not removed.
+            </para>
+
+            <figure>
+                <title>The Camera Folder Selection Dialog</title>
+                <graphic srccredit="The Camera Folder Selection Dialog" fileref="camerafolderselectiondialog.png"/>
+            </figure>
+        
+            <note><para>
+            Uploading feature is not supported by all camera drivers.
+            </para></note>
+
+        </sect2>
+                            
         <sect2 id="using-kapp-gps">
         <title>How to use a GPS device with &digikam;</title>
             <note><para>
@@ -1796,7 +1818,8 @@ add Exif.GPSInfo.GPSLatitude Rational "13/1 23/1 5990/100"
 add Exif.GPSInfo.GPSLongitudeRef Ascii "E"
 add Exif.GPSInfo.GPSLongitude Rational "103/1 53/1 4370/100"
 add Exif.GPSInfo.GPSMapDatum Ascii "WGS-84"
-add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"</screen></blockquote>
+add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"
+                    </screen></blockquote>
                     <para>
                         The positional data (e.g. 13.44088333) must be converted into H.MS format (13.235990) and split into its constituents as shown in the given example. By the way, it is easy to find exact coordinates on the web using <ulink url="http://maps.google.com"> MapsGoogle</ulink> or <ulink url="http://http://www.multimap.com/map/home.cgi?client=public"> Multimap.com</ulink>
                     </para>
