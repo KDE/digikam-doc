@@ -69,7 +69,7 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2006-06-09</date>
+<date>2006-08-30</date>
 <releaseinfo>0.9.0</releaseinfo>
 
 <abstract>
@@ -121,7 +121,7 @@
        <para>&digikam; incorporates a fast Image Editor with a the basic image editing tools. You can use the Image Editor to view your photographs, comment and rate them, make corrections and alterations. The editing power can be easily extended by two sets of plugins, the <ulink url="http://extragear.kde.org/apps/kipi">Kde Image Plugins Interface</ulink> and the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins.</ulink>
        </para>
 
-       <para>Whereas &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports raw conversion through David Coffins dcraw and ICC color management work flow. 
+       <para>Whereas &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports RAW format conversion through David Coffins dcraw and ICC color management work flow. 
        </para>
        
        </sect2>
@@ -1823,8 +1823,44 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"
                     <para>
                         The positional data (e.g. 13.44088333) must be converted into H.MS format (13.235990) and split into its constituents as shown in the given example. By the way, it is easy to find exact coordinates on the web using <ulink url="http://maps.google.com"> MapsGoogle</ulink> or <ulink url="http://http://www.multimap.com/map/home.cgi?client=public"> Multimap.com</ulink>
                     </para>
+
+                    <para>And here is yet another script which is a GPS wrapper for Phil Harvey's <ulink url="http://www.sno.phy.queensu.ca/~phil/exiftool">ExifTool</ulink> that uses the signed floating number coordinate notation as produced by maps.google.
+                    </para>
+                    <blockquote><screen>
+#!/bin/sh
+# exiftool wrapper script for easy commandline use. It treats regex files or whole directories.
+#
+#                        FMT                  Output
+#                "%d deg %d' %.2f"\"    54 deg 59' 22.80"
+#                "%d deg %.4f min"      54 deg 59.3800 min
+#                "%.6f degrees"         54.989667 degrees
+
+if [ -z $1 ]; then 
+   echo "Usage: exiftool-gps lat long [alt] file || dir (use signed floating coordinates)"
+else
+
+   if  [ -z "$4" ]; then  foo="$3"; alt=0
+   else	                  foo="$4"; alt=$3
+   fi
+
+   if [ -d "$foo" ] ; then
+	lat=$(echo "$1" | awk '{if ($1 &lt; 0) print "S"; else print "N"}')
+	lon=$(echo "$2" | awk '{if ($1 &lt; 0) print "W"; else print "E"}')
+        # use the following syntax for easy googlian paste of ll=-1.23456,53.345345
+	#lon=$(echo "$2" | awk '{if ($2 &lt; 0) print "W"; else print "E"}')
+	echo $1, $lat, $2, $lon, $3, $4, $foo
+
+	for i in "$foo" ; do    # the selection of files treated depend on the passed regex
+	    echo "i= "$i
+	    exiftool -c "%.6f" -GPSMapDatum="WGS-84" -GPSAltitude=$alt \
+	    -GPSLongitudeRef=$lon -GPSLongitude=$2 -GPSLatitudeRef=$lat -GPSLatitude=$1 "$i"
+	    exiftool -GPS:ALL "$i"  # read back
+	done
+   else	echo "file or directory is wrong"
+   fi
+fi                 </screen></blockquote>
                     <tip><para>
-                            maps.google.com does not show the street map of Europe. But here are European sites (.fr .de .es at least) that show all navigation details in all of Europe.
+                            maps.google.com does not show the street maps of Europe. But here are European sites (.fr .de .es at least) that show all navigation details in all of Europe.
                     </para></tip>
                 </listitem>
 	
@@ -2140,7 +2176,7 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"
                     </para>
                 
                     <note><para>
-                    The Aspect Ratio Crop tool remembers the settings depending on image orientation (horizontal or vertical). When you use the crop tool next time these settings will be used as default values depending on the image orientation.
+                    The Aspect Ratio Crop tool remembers the settings depending on image orientation (horizontal or vertical). When you use the crop tool next time these settings will be used as default values depending on the image orientation. The changed image dimensions are stored into the EXIF tables so that the EXIF data reflects the cropped image and not the original one.
                     </para></note>
                                 
                 </sect4>
