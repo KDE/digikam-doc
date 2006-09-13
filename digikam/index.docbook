@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
-<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1.2-Based Variant V1.0//EN" "dtd/kdex.dtd" [
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.2-Based Variant V1.1//EN" "dtd/kdex.dtd" [
   <!ENTITY kappname "&digikam;"><!-- replace kapp here, do *not* replace kappname-->
+  <!ENTITY package "extragear-graphics">
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % English "INCLUDE"><!-- change language only here -->
   <!ENTITY digikam '<application>digiKam</application>'>
@@ -69,18 +70,16 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2006-08-30</date>
+<date>2006-09-12</date>
 <releaseinfo>0.9.0</releaseinfo>
 
 <abstract>
     
     <para>
-        
         <inlinemediaobject>
             <imageobject><imagedata fileref="digikamlogo.png" format="PNG"/></imageobject>
             <textobject> <phrase>&digikam; logo</phrase> </textobject>
         </inlinemediaobject>
-    
     </para>
 
     <para>
@@ -95,6 +94,9 @@
     <keyword>digikam</keyword>
     <keyword>gphoto</keyword>
     <keyword>Graphics</keyword>
+    <keyword>Color Management</keyword>
+    <keyword>exiv2</keyword>
+    <keyword>dcraw</keyword>
 </keywordset>
 
 </bookinfo>
@@ -176,10 +178,10 @@
 
         <anchor id="firstrundialog.anchor"/>
         
-        <figure>
-            <title>The First Run Dialog</title>
-            <graphic srccredit="The First Run Dialog" fileref="introductionfirstrundialog.png"/>
-        </figure>
+        <example> <title>The First Run Dialog</title>
+            <screenshot> <mediaobject><imageobject><imagedata fileref="introductionfirstrundialog.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+        </example>
+
         
         <para>
         When you start &digikam; for the very first time it will ask you where you store your photographs. You can type in the path name of a folder or click on the <guilabel>Folder</guilabel> icon
@@ -194,18 +196,17 @@
         If you already have a collection of photographs on your hard disk, you can enter the top-level folder containing the photographs, this is called the Albums Library folder. &digikam; will treat each sub-folder of the folder you've entered as an Album. None of the photographs will be altered. During folders parsing you can see a progress dialog like this:
         </para>
 
-        <figure>
-            <title>The Scan Items Dialog</title>
-            <graphic srccredit="The Scan Items Dialog" fileref="introductionscandialog.png"/>
-        </figure>
-
+        <example><title>The Scan Items Dialog</title>
+            <screenshot><mediaobject> <imageobject><imagedata fileref="introductionscandialog.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+        </example>
+        
         <note><para>
         As &digikam; uses your folders on your hard disk directly, other applications like file managers can remove any albums outside a &digikam; session. In this case, at the next session, &digikam; will tell you if all albums that have been removed from the &digikam; photographs root path shall be deleted from albums database. If you want to move folders around and don't want to do that in &digikam;, we suggest you do that while &digikam; is running, so the database will be kept in sync and you don't lose any meta data.
         
-        <figure>
-            <title>The Albums Missing Dialog</title>
-            <graphic srccredit="The Albums Missing Dialog" fileref="introductionalbumsmissingdialog.png"/>
-        </figure>
+            <example><title>The Albums Missing Dialog</title>
+              <screenshot><mediaobject><imageobject><imagedata fileref="introductionalbumsmissingdialog.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+            </example>
+        
 
         </para></note>
 
@@ -471,7 +472,7 @@
             <tbody>
                 <row>
                     <entry>
-                    <graphic srccredit="FireWire" fileref="introductionfirewireconnector.png"/>
+                    <screenshot><screeninfo>FireWire</screeninfo><mediaobject><imageobject><imagedata fileref="introductionfirewireconnector.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -481,7 +482,7 @@
 
                 <row>
                     <entry>
-                    <graphic srccredit="USB" fileref="introductionusbconnector.png"/>
+                    <screenshot><screeninfo>USB</screeninfo><mediaobject><imageobject><imagedata fileref="introductionusbconnector.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -491,7 +492,7 @@
 
                 <row>
                     <entry>
-                    <graphic srccredit="Serial" fileref="introductionserialconnector.png"/>
+                    <screenshot><screeninfo>Serial</screeninfo><mediaobject><imageobject><imagedata fileref="introductionserialconnector.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -556,10 +557,10 @@
 
             <para>
 
-            <figure>
+            <example>
                 <title>The Main Window</title>
-                <graphic srccredit="The Main Window" fileref="maininterfacepreview.png"/>
-            </figure>
+                <screenshot><mediaobject><imageobject><imagedata fileref="maininterfacepreview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+            </example>
 
             &digikam;'s main window has four areas. The first one is a sidebar in the left margin that lets you switch between 4 views: <guilabel>My Albums</guilabel>, <guilabel>My Dates</guilabel>, <guilabel>My Tags</guilabel> and <guilabel>My Searches</guilabel>. Then there is a tree navigator showing the selected view. The main image window is right in the center. And on the right hand side there is another <link linkend="using-kapp-sidebar">sidebar</link> shown. This one can be used to show all informations of your images. You can use these views to organize and find your photographs.
             </para>
@@ -672,13 +673,12 @@
                 An Album contains a set of photographs and the Album Properties allows you to set information about this set. To access the Album Properties right-click on an Album and select <guilabel>Edit Album Properties</guilabel> from the context menu.
                 </para>
         
-                <para>                
-                The Album Properties dialog allows you to set:
-                
-                <figure>
+                <para>The Album Properties dialog allows you to set:</para>
+
+                <example>
                     <title>The Album Properties Dialog</title>
-                    <graphic srccredit="The Album Properties Dialog" fileref="maininterfacealbumproperties.png"/>
-                </figure>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfacealbumproperties.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
 
                 <itemizedlist>
             
@@ -698,8 +698,6 @@
                     </para></listitem>
                                            
                 </itemizedlist>
-                
-                </para>
             
             </sect3>                          
 
@@ -844,16 +842,15 @@
         </sect2>
         
         <sect2 id="using-kapp-mytagsview">
-        <title>"My Tags" View</title>
+          <title>"My Tags" View</title>
 
             <para>
             Photograph tagging provides a flexible and powerful way to organize and catalog your photographs. Tags are labels that can be applied to individual photographs. Once a Tag has been set to a photograph, that photograph can be found again by selecting the Tag.
             </para>
             
-            <figure>
-                <title>Selecting a Tag</title>
-                <graphic srccredit="Selecting a Tag" fileref="maininterfacetagsview.png"/>
-            </figure>
+            <example> <title>Selecting a Tag</title>
+                <screenshot><mediaobject><imageobject><imagedata fileref="maininterfacetagsview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+            </example>
                         
             <para>
             When a Tag is selected, all of the photographs that are marked with that Tag are displayed.
@@ -872,7 +869,7 @@
             </para>
 
             <sect3 id="using-kapp-managetags">
-            <title>Managing Tags</title>
+                <title>Managing Tags</title>
              
                 <para>
                 You can add new Tags by right-clicking on either the "My Tags" label or an existing Tag and selecting <guilabel>New Tag</guilabel>. If you add a new Tag by right-clicking on an existing Tag, your new Tag will be created as a sub-Tag.
@@ -898,7 +895,7 @@
             </sect3>    
 
             <sect3 id="using-kapp-taggingimages">
-            <title>Tagging Photographs</title>
+               <title>Tagging Photographs</title>
              
                 <para>
                 Before you can get the most out of &digikam;'s Tagging capabilities you must first tag your photographs. There are two methods of tagging photographs. Once you have identified the photographs that you want to tag you can either drag and drop them onto the Tag in the "My Tags" tree or, by right-clicking on the selected photographs in the Image Window, you can use the <guilabel>Assign Tag</guilabel> menu to select the Tags you wish to set.
@@ -908,10 +905,9 @@
                 You can label a photograph with as many Tags as you like. The photograph will appear when you select any of the Tags that are set against it. This way you can set a Tag for each person in a photograph, as well as the place the photograph was taken, the event it was taken at, &etc;.
                 </para>
 
-                <figure>
-                    <title>Tagging Image with Main Pop-up Menu</title>
-                    <graphic srccredit="Tagging Image with Main Pop-up Menu" fileref="maininterfaceassigntags.png"/>
-                </figure>
+                <example> <title>Tagging Image with Main Pop-up Menu</title>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfaceassigntags.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
                 
                 <para>
                 Once you have tagged a photograph, the Tag name will appear under the thumbnail in the Image Window.
@@ -926,12 +922,11 @@
         </sect2>
         
         <sect2 id="using-kapp-mydatesview">
-        <title>"My Dates" View</title>
+            <title>"My Dates" View</title>
 
-            <figure>
-                <title>My Dates View from Main Window</title>
-                <graphic srccredit="Dates View from Main Window" fileref="maininterfacedateview.png"/>
-            </figure>
+            <example> <title>My Dates View from Main Window</title>
+                <screenshot><screeninfo>Dates View from Main Window</screeninfo><mediaobject><imageobject><imagedata fileref="maininterfacedateview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+            </example>
             
             <para>
             The "My Dates" view organizes your photographs based on their dates. &digikam; uses either the
@@ -961,10 +956,11 @@
                 If you want to search photographs from a certain date, you can simply type <userinput>2005</userinput>, but it is even possible to search for a certain month. Just enter the name of the month in your local language. If it is Dutch, you can enter <userinput>Maart</userinput>, to see the pictures of March.
                </para> 
                 
-                <figure>
+                <example>
                     <title>Quick Search Tool Dialog in Action</title>
-                    <graphic srccredit="Quick Search Tool Dialog" fileref="maininterfacequicksearch.png"/>
-                </figure>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfacequicksearch.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
+                
                 
                 <para>
                 When you are satisfied with your selection, click on the <guilabel>Ok</guilabel> button, and the search will be carried out, and the results displayed in "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to name your query in "My Search" list. If you want to modify your selection after performing a search, simply right click on one item from "My Search" view and select an option from popup menu. 
@@ -978,10 +974,10 @@
                 If you want to remove an existing search from the list, just select <guilabel>Delete Search</guilabel> from popup menu.
                 </para>
     
-                <figure>
+                <example>
                     <title>Search View from Main Window</title>
-                    <graphic srccredit="Search View from Main Window" fileref="maininterfacesearchview.png"/>
-                </figure>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfacesearchview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
 
             </sect3>            
             
@@ -1006,10 +1002,10 @@
                 <para>                
                 An option is composed by four fields: 
                 
-                <figure>
+                <example>
                     <title>A Query Option Detail</title>
-                    <graphic srccredit="A Query Option Detail" fileref="maininterfaceadvancedsearchoption.png"/>
-                </figure>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfaceadvancedsearchoption.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
                 
                 <itemizedlist>
             
@@ -1045,20 +1041,20 @@
 
                 </itemizedlist>
 
-                <figure>
+                <example>
                     <title>Advanced Search Tool Dialog in Action</title>
-                    <graphic srccredit="Advanced Search Tool Dialog" fileref="maininterfaceadvancedsearch.png"/>
-                </figure>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfaceadvancedsearch.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
                 
                 </para>
  
                 <para>
                 If you want to group options together, just check the option box at the end of the rule and press <guilabel>Group</guilabel> button. Options will be appear in the list like this:
                 
-                <figure>
+                <example>
                     <title>A Query Grouped Options Example</title>
-                    <graphic srccredit="A Query Grouped Options Example" fileref="maininterfaceadvancedsearchoptiongroup.png"/>
-                </figure>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfaceadvancedsearchoptiongroup.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
                 
                 </para>
                                 
@@ -1081,6 +1077,7 @@
            <para>
                The &digikam; main windows has a sidebar at the right border providing important information and actions of the selected images. This same sidebar is also available in the <link linkend="using-kapp-imageeditor">Image Editor</link> view, without the first-previous-next-last navigation arrows. It can be displayed by respectively clicking on one of the five tabs:
            </para>
+
            <para>
             <itemizedlist>
             
@@ -1112,10 +1109,10 @@
                <listitem><para>Photograph Properties: shows a summary of the most important parameters when taking the photograph. This data is taken from the exif data fields if available</para></listitem>
 
            </itemizedlist>
-           <figure>
-               <title>sidebar File Properties example</title>
-                 <graphic srccredit="sidebar File Properties Example" fileref="sidebarfileproperties.png"/>
-           </figure>
+
+           <example>   <title>sidebar File Properties example</title>
+                 <screenshot><screeninfo>sidebar File Properties Example</screeninfo><mediaobject><imageobject><imagedata fileref="sidebarfileproperties.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+           </example>
 
            </para>
         </sect2>
@@ -1127,10 +1124,9 @@
            The metadata sidebar is composed of four sub tabs <guilabel>EXIF, Makernotes, IPTC and GPS data</guilabel>. A combo-box lets you choose between full and simplified data display. Next to it are a printer and copy icon, They do just that - print (kprinter dialog) or copy the respective tab data to the clipboard. In the main window view you will find a navigation button set with the file name on top of the tabs.
            </para>
 
-           <figure>
-               <title>The Metadata Tabs</title>
-               <graphic srccredit="The Metadata Tabs" fileref="sidebarmetadata.png"/>
-             </figure>
+           <example>   <title>The Metadata Tabs</title>
+               <screenshot><screeninfo>The Metadata Tabs</screeninfo><mediaobject><imageobject><imagedata fileref="sidebarmetadata.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+           </example>
 
            <sect3 id="using-kapp-sidebarmetadataexif">
            <title>EXIF Tags</title>
@@ -1186,10 +1182,9 @@
                     You can review embedded EXIF information for the selected image from the first sidebar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections.
                     </para>
             
-                    <figure>
-                        <title>The EXIF Viewer in Action</title>
-                        <graphic srccredit="The EXIF Viewer in Action" fileref="sidebarmetadataexif.png"/>
-                    </figure>
+                    <example>   <title>The EXIF Viewer in Action</title>
+                        <screenshot><screeninfo>The EXIF Viewer in Action</screeninfo><mediaobject><imageobject><imagedata fileref="sidebarmetadataexif.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    </example>
             
                     <para>
                     You can use two different levels to display EXIF marker sections:
@@ -1239,11 +1234,12 @@
               <para>
 	      This tab provides the GPS (<link linkend="using-kapp-gps">note</link>) section of the metadata. The displayed positioning data are actually stored in the image's EXIF tags (and not in the database). That allows the location to be read by any other application that can understand EXIF GPS data.
               </para>
-	      <para>Some tips as to how to use a GPS device with a camera are (<link linkend="using-kapp-gps">here</link>)</para>
-              <figure>
-                 <title>sidebar Metadata GPS info</title>
-                   <graphic srccredit="sidebar Metadata info" fileref="sidebarmetadatagps.png"/>
-              </figure>
+	      <para>Some tips as to how to use a GPS device with a camera are (<link linkend="using-kapp-gps">here</link>)
+              </para>
+
+              <example>  <title>sidebar Metadata GPS info</title>
+                   <screenshot><screeninfo>sidebar Metadata info</screeninfo><mediaobject><imageobject><imagedata fileref="sidebarmetadatagps.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+              </example>
 
 
            </sect3>
@@ -1268,10 +1264,9 @@
                   The Histogram Viewer shows the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram-based color correction, use the Adjust Levels or Adjust Curves Image Editor plugin. These plugins are part of the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>. For more information about using Plugins in &digikam; see the <link linkend="using-kapp-setup">Configuration</link> section.
                 </para>
                                                 
-                <figure>
-                    <title>The Histogram Viewer in Action</title>
-                    <graphic srccredit="The Histogram Viewer in Action" fileref="sidebarcolorshistogramviewer.png"/>
-                </figure>
+                <example>   <title>The Histogram Viewer in Action</title>
+                    <screenshot><screeninfo>The Histogram Viewer in Action</screeninfo><mediaobject><imageobject><imagedata fileref="sidebarcolorshistogramviewer.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
             
                 <para>
                 An image can be decomposed into <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, <guilabel>Blue</guilabel>, <guilabel>Alpha</guilabel> color channels. <guilabel>Alpha</guilabel> channel is a Layer in the image that supports transparency (like PNG or &GIF; images). Each channel supports a range of intensity levels from 0 to 255 (integer valued). Thus, a black pixel is encoded by 0 on all color channels; a white pixel by 255 on all color channels. A transparent pixel is encoded by 0 on the alpha channel; an opaque pixel by 255.
@@ -1385,10 +1380,9 @@
 
                 </itemizedlist>
 
-                <figure>
-                    <title>An Image Histogram in All Colors Mode</title>
-                    <graphic srccredit="An Image Histogram in All Colors Mode" fileref="editorhistogramdescription.png"/>
-                </figure>
+                <example> <title>An Image Histogram in All Colors Mode</title>
+                    <screenshot><screeninfo>An Image Histogram in All Colors Mode</screeninfo><mediaobject><imageobject><imagedata fileref="editorhistogramdescription.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
                 
                 The distribution of the graph, where the spikes and bulges are clustered, indicates whether the image is too dark, too bright, or well-balanced. 
                 </para>
@@ -1396,24 +1390,21 @@
                 <para>
                 With an under exposed photograph, the histogram will have a distribution of brightness that tends to be mostly on the left of the graph.
 
-                <figure>
-                    <title>An Over Exposed Photograph</title>
-                    <graphic srccredit="An Over Exposed Photograph" fileref="editorhistogramsample3.png"/>
-                </figure>
+                <example>  <title>An Over Exposed Photograph</title>
+                    <screenshot><screeninfo>An Over Exposed Photograph</screeninfo><mediaobject><imageobject><imagedata fileref="editorhistogramsample3.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
                          
                 With a correctly exposed photograph, the histogram will have a distribution of brightness that will be most prominent near the center part of the graph.
                        
-                <figure>
-                    <title>A Correctly Exposed Photograph</title>
-                    <graphic srccredit="A Correctly Exposed Photograph" fileref="editorhistogramsample2.png"/>
-                </figure>
+                <example>   <title>A Correctly Exposed Photograph</title>
+                    <screenshot><screeninfo>A Correctly Exposed Photograph</screeninfo><mediaobject><imageobject><imagedata fileref="editorhistogramsample2.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
                 
                 With an over exposed photograph, the histogram will have the bulge showing the brightness distributed mostly towards the right of the graph.
                 
-                <figure>
-                    <title>An Under Exposed Photograph</title>
-                    <graphic srccredit="An Under Exposed Photograph" fileref="editorhistogramsample1.png"/>
-                </figure>
+                <example>    <title>An Under Exposed Photograph</title>
+                    <screenshot><screeninfo>An Under Exposed Photograph</screeninfo><mediaobject><imageobject><imagedata fileref="editorhistogramsample1.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
 
                 </para>
 
@@ -1435,10 +1426,9 @@
            This sidebar tab serves to apply and edit image attributes like comments, rating, date and tags. The attributes are stored in the associated database, in the IPTC and EXIF data fields and become part of the image. All attributes are accessible in one sidebar view as shown in the screenshot below. During image reading the order of priority is a) database b) IPTC and c) EXIF. So if there is a discrepancy between any of the three, this priority will take effect and a synchronization will take place. This sidebar has a first-previous-next-last arrow navigator field on top if shown in the main application.
            </para>
 
-           <figure>
-               <title>sidebar Comments &amp; Tags example</title>
-                 <graphic srccredit="sidebar Comments &amp; Tags Example" fileref="sidebarcommentstags.png"/>
-           </figure>
+           <example>  <title>sidebar Comments &amp; Tags example</title>
+                 <screenshot><screeninfo>sidebar Comments &amp; Tags Example</screeninfo><mediaobject><imageobject><imagedata fileref="sidebarcommentstags.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+           </example>
 
           <sect3>
           <title>Comment View</title>
@@ -1532,10 +1522,11 @@
            </para>
            <para>Another use is <emphasis>drag-and drop tagging</emphasis>. Lets say you selected in the main view a number of pictures to tag them. If the tag already exists, simply drag it from the right sidebar onto the selection (any one of the highlighted pictures). A dialog will pop-up and ask if this tag should be applied.
            </para>
-           <figure>
-               <title>sidebar Tag Filters</title>
-                 <graphic srccredit="sidebar Tag Filters" fileref="sidebartagfilters.png"/>
-           </figure>
+
+           <example>    <title>sidebar Tag Filters</title>
+                 <screenshot><screeninfo>sidebar Tag Filters</screeninfo><mediaobject><imageobject><imagedata fileref="sidebartagfilters.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+           </example>
+
             <para>
                 In the above example the main window shows the pictures from a calender date, the tag filter is set to 'not tagged', which reduces the set to 3 images. They have been selected with Ctrl+a, then a tag is dragged from the right tag tree over the selection and dropped. A pop-up dialog asks if the tag shall be applied.
             </para>
@@ -1567,10 +1558,9 @@
             When you start the Camera Interface, it will try to connect to the Camera. For some cameras this connection phase can take a little while. When connected, a <guilabel>Ready</guilabel> indicator will appear on the bottom and thumbnails of any photographs on the camera will be displayed. Some cameras cannot provide thumbnails of the photographs, if this is the case you will only see the filenames and an mime-type icon for each items stored by your camera (photograph, movies, sounds, etc).
             </para>
             
-            <figure>
-                <title>The Camera Client Window</title>
-                <graphic srccredit="The Camera Client Window" fileref="cameraclient.png"/>
-            </figure>
+            <example>   <title>The Camera Client Window</title>
+                <screenshot><screeninfo>The Camera Client Window</screeninfo> <mediaobject><imageobject><imagedata fileref="cameraclient.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+            </example>
                 
         </sect2>
 
@@ -1582,10 +1572,9 @@
             <menuchoice><guimenuitem>Properties</guimenuitem></menuchoice> and <menuchoice><guimenuitem>Metadata</guimenuitem></menuchoice> side bar tabs from Camera Interface  will launch camera item properties and metadata informations.
             </para>
 
-            <figure>
-                <title>The Camera Item Properties Side Bar Tab</title>
-                <graphic srccredit="The Camera Item Properties Side Bar Tab" fileref="cameraclientitemproperties.png"/>
-            </figure>
+            <example>  <title>The Camera Item Properties Side Bar Tab</title>
+                <screenshot><screeninfo>The Camera Item Properties Side Bar Tab</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientitemproperties.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+            </example>
 
             <para>
             The Properties tab displays file properties informations used internally by the camera to store item and a resume of photograph informations to describe how to have taken the pcitures with camera. A flag indicates if the picture has not been downloaded yet to you computer. Note, all these informations can be unavailable with some digital cameras.
@@ -1622,10 +1611,9 @@
             Using <guilabel>Download All</guilabel> or <guilabel>Download Selected</guilabel> buttons will bring up a dialog, that allows you to select a target Album into which the photographs will be downloaded. The list of existing Albums is displayed, ordered by the Folder method (see the <link linkend="using-kapp-myalbumsview">My Albums View</link> for details of Album ordering). You can select the target Album from this list and then click OK.
             </para>
         
-            <figure>
-                <title>The Target Album Selection Dialog</title>
-                <graphic srccredit="The Target Album Selection Dialog" fileref="cameratargetalbumdialog.png"/>
-            </figure>
+            <example>   <title>The Target Album Selection Dialog</title>
+                <screenshot><screeninfo>The Target Album Selection Dialog</screeninfo><mediaobject><imageobject><imagedata fileref="cameratargetalbumdialog.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+            </example>
 
             <para>
             If you want to create a new Album, into which you could download the photographs, click the <guilabel>New Album</guilabel> button. The new Album will be created as a sub-Folder of the Album that is currently selected in the existing Album list. This means that, if you do not want your new Album to be a sub-Folder of an existing Folder, you must first select the "My Albums" entry from the very top of the existing Albums list before creating a new Album.
@@ -1635,10 +1623,9 @@
             When you have selected the target Album, click OK and &digikam; will download the photographs from the camera to that album.  
             </para>
             
-            <figure>
-                <title>The Downloading from Camera in Progress</title>
-                <graphic srccredit="The Downloading from Camera in Progress" fileref="cameraclientdownload.png"/>
-            </figure>
+            <example>  <title>The Downloading from Camera in Progress</title>
+                <screenshot><screeninfo>The Downloading from Camera in Progress</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientdownload.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+            </example>
 
         </sect2>
         
@@ -1669,10 +1656,9 @@
             Cameras often do not use very meaningful filenames for photographs. The filenames are usually reused once the photographs have been deleted from the camera. This can lead to filename clashes if you download photographs from many shootings into the same Album. It can also be useful to include the date and time that a picture was taken into the filename.
             </para>
 
-            <figure>
-                <title>The Camera Interface Advanced Options</title>
-                <graphic srccredit="The Camera Interface Advanced Options" fileref="cameraclientadvanced.png"/>
-            </figure>
+            <example>  <title>The Camera Interface Advanced Options</title>
+                <screenshot><screeninfo>The Camera Interface Advanced Options</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientadvanced.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+            </example>
 
             <para>
             &digikam; can automatically rename your photographs using the date and time information included by the camera in the photograph. To use this feature, click the <guilabel>Settings</guilabel> button on the Camera Interface. The Camera Interface window will expand to reveal some extra features. Select <guilabel>Customize</guilabel> and then enter any filename prefix you would like. As an option you can then add the date &amp; time, a sequence number or a combination of both. The sequence number may be needed if you have a camera with a very fast multi-shoot mode where it is possible to get two photographs with exactly the same data and time.
@@ -1751,10 +1737,9 @@
             When opictures selection is done, &digikam; will ask you where you want upload the files in your camera. A camera folder selection dialog will appear. Just select one folder and press OK to start uploading. All images from your computer will not removed.
             </para>
 
-            <figure>
-                <title>The Camera Folder Selection Dialog</title>
-                <graphic srccredit="The Camera Folder Selection Dialog" fileref="camerafolderselectiondialog.png"/>
-            </figure>
+            <example>  <title>The Camera Folder Selection Dialog</title>
+                <screenshot><screeninfo>The Camera Folder Selection Dialog</screeninfo><mediaobject><imageobject><imagedata fileref="camerafolderselectiondialog.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+            </example>
         
             <note><para>
             Uploading feature is not supported by all camera drivers.
@@ -1890,10 +1875,9 @@ fi                 </screen></blockquote>
             The Image Editor provides a number of tools that enable you to adjust a photograph. Some of these tools are provided by plugins to &digikam;. So they may not be available by default on your distribution. See the <link linkend="setupeditor">Setup Image Editor Section</link> for more details about &digikam; Image Editor plugins.
             </para>
             
-            <figure>
-                <title>The Image Editor Window</title>
-                <graphic srccredit="The Image Editor Window" fileref="editorpreview.png"/>
-            </figure>
+            <example>  <title>The Image Editor Window</title>
+                <screenshot><screeninfo>The Image Editor Window</screeninfo><mediaobject><imageobject><imagedata fileref="editorpreview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+            </example>
             
             <para>
             The image editor has just one main window with:
@@ -2019,13 +2003,14 @@ fi                 </screen></blockquote>
             <inlinemediaobject>
                 <imageobject><imagedata fileref="editorzoombuttons.png" format="PNG"/></imageobject>
                 <textobject> <phrase>The Image Editor Zoom Buttons</phrase> </textobject>
-            </inlinemediaobject> buttons on the toolbar or the entries in the View menu. 
-            To make a photograph fit into the window use the <guilabel>Zoom Autofit</guilabel> 
+            </inlinemediaobject> buttons on the toolbar or the entries in the View menu.
+            </para>
+            <para> 
+            To make a photograph fit the window use this button on the toolbar:<guilabel>Zoom Autofit</guilabel> 
             <inlinemediaobject>
                 <imageobject><imagedata fileref="editorautosizebutton.png" format="PNG"/></imageobject>
                 <textobject> <phrase>The Image Editor AutoFit Button</phrase> </textobject>
             </inlinemediaobject>
-            button on the toolbar.
             </para>
 
             <para>
@@ -2048,11 +2033,10 @@ fi                 </screen></blockquote>
                     Cropping a photograph is not only a common operation, but an often underestimated photographer's tool to compose an image. The Image Editor makes it very easy. To crop a photograph simply drag a rectangle over the image by holding down the left mouse button and moving the mouse. You will see a wire frame rectangle appear as you move the mouse.
                     </para>
             
-                    <figure>
-                        <title>The Current Image Selection in Image Editor</title>
-                        <graphic srccredit="The Current Image Selection in Image Editor" 
-                        fileref="editorimageselection.png"/>
-                    </figure>
+                    <example>  <title>The Current Image Selection in Image Editor</title>
+                      <screenshot><screeninfo>The Current Image Selection in Image Editor"</screeninfo>
+                      <mediaobject><imageobject> <imagedata fileref="editorimageselection.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                    </example>
              
                     <para>
                     When you release the button the area of the photograph that will be removed by a crop operation is greyed out. This allows you to get a good view of how your photograph will look once you have cropped it. You can change the size if the cropped area by dragging the corners of the rectangle, and you can create a new crop area simply by dragging out another rectangle.
@@ -2083,11 +2067,10 @@ fi                 </screen></blockquote>
                     The Aspect Ratio Crop tool goes further. While you are editing digital images, it is often necessary to create a compatible format with, for example, your photo-album or paper formats. If you print an image from your digital camera and then try to put it in your photo album, you may notice that the camera has a different width or height ratio than a normal photographic film format so you need to crop your digital images in a predefined ratio (for example 5:7 or 2:3 which is a standard photo ratio).
                     </para>
                 
-                    <figure>
-                        <title>The Aspect Ratio Crop Tool Dialog</title>
-                        <graphic srccredit="The Aspect Ratio Crop Tool Dialog" 
-                        fileref="editorratiocroptool.png"/>
-                    </figure>
+                    <example>  <title>The Aspect Ratio Crop Tool Dialog</title>
+                        <screenshot><screeninfo>The Aspect Ratio Crop Tool Dialog"</screeninfo>
+                      <mediaobject><imageobject> <imagedata fileref="editorratiocroptool.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                    </example>
                     
                     <para>
                     In the preview area you can resize the cropping rectangle by moving the corners with the mouse. It will keep the ratio value set in the bottom of dialog.
@@ -2203,11 +2186,10 @@ fi                 </screen></blockquote>
                             Many photographers and artists are aware of the Rule of Thirds, where a picture is divided into three sections vertically and horizontally and the points of intersection represent places to position important visual elements. Moving a horizon in a landscape to the position of one third is often more effective than placing it in the middle, but it could also be placed near the bottom one quarter or sixth. There is nothing obligatory about applying the Rule of Thirds. In placing visual elements for effective composition, one must assess many factors including color, dominance, size and balance together with proportion. Often a certain amount of image balance or tension can make a composition more effective.
                             </para>
                             
-                            <figure>
-                                <title>Photograph Composition Example Using Rules of Third</title>
-                                <graphic srccredit="Photograph Composition Example Using Rules of Third" 
-                                fileref="editorrulethirdlinesexample.png"/>
-                            </figure>
+                            <example>  <title>Image Composition Example Using Rules of Third</title>
+                             <screenshot><screeninfo>Image Composition Example Using Rules of Third" 
+                              </screeninfo><mediaobject><imageobject> <imagedata fileref="editorrulethirdlinesexample.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                            </example>
                                                     
                         </listitem>
     
@@ -2217,11 +2199,10 @@ fi                 </screen></blockquote>
                             <guilabel>Harmonious Triangles</guilabel>: Harmonious divisions rely on the principle of similarity. Like the Rule of Thirds guide, Harmonious Triangles are another division of the image using a rectangle into equiangular harmonious triangles aligned with the diagonal.
                             </para>
                             
-                            <figure>
-                                <title>Photograph Composition Example Using Harmonious Triangles</title>
-                                <graphic srccredit="Photograph Composition Example Using Harmonious Triangles" 
-                                fileref="editorharmonioustrianglesexample.png"/>
-                            </figure>
+                            <example>  <title>Photograph Composition Example Using Harmonious Triangles</title>
+                                <screenshot><screeninfo>Photograph Composition Example Using Harmonious Triangles" </screeninfo><mediaobject><imageobject><imagedata             fileref="editorharmonioustrianglesexample.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                            </example>
+
                             
                         </listitem>
                 
@@ -2250,11 +2231,9 @@ fi                 </screen></blockquote>
                                     The <guilabel>Golden Spiral</guilabel> guide will increase your odds of getting captivating results in your photographs. As opposed to Rule of Thirds, the Golden Spiral forms a fluid line for the eye to trace through the picture. This style of composition will invite the viewer's gaze into the picture along the line of the spiral, creating a more symmetrical visual flow, and an overall compelling viewing experience.
                                     </para>
         
-                                    <figure>
-                                        <title>Photograph Composition Example Using Golden Spiral</title>
-                                        <graphic srccredit="Photograph Composition Example Using Golden Spiral" 
-                                        fileref="editorgoldenspiralexample.png"/>
-                                    </figure>
+                                    <example>  <title>Image Composition example using Golden Spiral</title>
+                                        <screenshot><screeninfo>Image Composition Example Using Golden Spiral" </screeninfo><mediaobject><imageobject> <imagedata fileref="editorgoldenspiralexample.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                                    </example>
                                     
                                 </listitem>
                                     
@@ -2264,11 +2243,9 @@ fi                 </screen></blockquote>
                                     One more rule is a <guilabel>Golden Spiral Sections</guilabel> (or Golden Rectangles). These rectangles are used to build the Golden Spiral. There should be something leading the eye to the center of the composition. It could be a line or several subjects. This "something" could just be there without leading the eyes, but it would make its job.
                                     </para>
                                                                 
-                                    <figure>
-                                        <title>Photograph Composition Example Using Golden Spiral Sections</title>
-                                        <graphic srccredit="Photograph Composition Example Using Golden Spiral Sections" 
-                                        fileref="editorgoldenspiralsectionsexample.png"/>
-                                    </figure>
+                                    <example>  <title>Image Composition example using Golden Spiral Sections</title>
+                                        <screenshot><screeninfo>Image Composition Example Using Golden Spiral Sections" </screeninfo><mediaobject><imageobject><imagedata fileref="editorgoldenspiralsectionsexample.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                                    </example>
                                 
                                 </listitem>
                                 
@@ -2282,11 +2259,9 @@ fi                 </screen></blockquote>
                                     When you use Golden Triangles to break up your frame, you're creating an effect dubbed by professional photographic experts named Dynamic Symmetry. Try to keep your focal subject on one of the intersecting points, and place other visual information into the triangles you've already divided out. The result will be a very attractive composition you may not have otherwise attained.
                                     </para>
                                     
-                                    <figure>
-                                        <title>Photograph Composition Example Using Golden Triangle</title>
-                                        <graphic srccredit="Photograph Composition Example Using Golden Triangles" 
-                                        fileref="editorgoldentrianglesexample.png"/>
-                                    </figure>
+                                    <example>  <title>Photograph Composition Example Using Golden Triangle</title>
+                                        <screenshot><screeninfo>Photograph Composition Example Using Golden Triangles" </screeninfo><mediaobject><imageobject><imagedata fileref="editorgoldentrianglesexample.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                                    </example>
                                 
                                 </listitem>
                                 
@@ -2296,11 +2271,10 @@ fi                 </screen></blockquote>
                                     Like the Rule of Thirds the <guilabel>Golden Sections</guilabel> affects the ratio of a picture size as well as the placement of the main subjects on the photo. This ratio is close to the 35mm ratio, so you don't need to change the size of the photo in most cases. But you need to consider the composition: the main subject should lie on one of the four lines or four intersections (subject's eye for example). Truthfully speaking, these rules are not the same. Rule of Thirds is a simplified version of the Golden Mean.
                                     </para>
         
-                                    <figure>
-                                        <title>Photograph Composition Example Using Golden Sections</title>
-                                        <graphic srccredit="Photograph Composition Example Using Golden Sections" 
-                                        fileref="editorgoldensectionsexample.png"/>
-                                    </figure>                                                                                                   
+                                    <example>  <title>Image Composition example using Golden Sections</title>
+                                        <screenshot><screeninfo>Photograph Composition Example Using Golden Sections" </screeninfo><mediaobject><imageobject><imagedata fileref="editorgoldensectionsexample.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                                    </example>
+
                                 </listitem>
     
                             </itemizedlist>
@@ -2333,10 +2307,9 @@ fi                 </screen></blockquote>
                 If the photograph has the wrong size you can scale it to the size you would like by using Transform Resize tool. Select <menuchoice><guimenu>Transform</guimenu><guimenuitem>Resize</guimenuitem></menuchoice> and adjust the target values. The Resize tool dialog is available below.
                 </para>
 
-                <figure>
-                    <title>The Resize Tool Dialog</title>
-                    <graphic srccredit="The Resize Tool Dialog" fileref="editorresizetool.png"/>
-                </figure>
+                <example>  <title>The Resize Tool Dialog</title>
+                    <screenshot><screeninfo>The Resize Tool Dialog</screeninfo><mediaobject><imageobject><imagedata fileref="editorresizetool.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                </example>
                 
                 <para>
                 This image resizing tool uses a standard linear interpolation method to approximate pixels. If you want to up size a small image with a better quality, try the Blowup tool. It is a plug-in available from <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>, and you can access it by the <menuchoice><guimenu>Transform</guimenu><guimenuitem>Blowup</guimenuitem></menuchoice> menu entry. See the dedicated <ulink url="help:/digikamimageplugins/blowup.html">Blowup manual</ulink> for more information.
@@ -2372,11 +2345,9 @@ fi                 </screen></blockquote>
                 <guimenuitem>Red Eye Reduction</guimenuitem></menuchoice>.
                 </para>
             
-                <figure>
-                    <title>The Red Eyes Correction Tool in Action</title>
-                    <graphic srccredit="The Red Eyes Correction Tool in Action" 
-                    fileref="editorredeyescorrection.png"/>
-                </figure>
+                <example>  <title>The Red Eyes Correction Tool in Action</title>
+                    <screenshot><screeninfo>The Red Eyes Correction Tool in Action" </screeninfo><mediaobject><imageobject><imagedata fileref="editorredeyescorrection.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                </example>
             
             </sect3>
         
@@ -2394,10 +2365,9 @@ fi                 </screen></blockquote>
                 All Image Editor tools like Sharpen, Blur, Noise Reduction, Refocus, Unsharpen Mask, &etc;. use a common dialog style that previews the effect before applying the filter to the current image. Below you see the "Apply Texture" tool in action using this common dialog layout:
                 </para>
             
-                <figure>
-                    <title>The Apply Texture Tool in Action</title>
-                    <graphic srccredit="The Apply Texture Tool in Action" fileref="editorcommondialogtools.png"/>
-                </figure>
+                <example>  <title>The Apply Texture Tool in Action</title>
+                    <screenshot><screeninfo>The Apply Texture Tool in Action</screeninfo><mediaobject><imageobject><imagedata fileref="editorcommondialogtools.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                </example>
                 
                 <para>
 
@@ -2448,10 +2418,10 @@ fi                 </screen></blockquote>
                 <guimenuitem>Sharpen</guimenuitem></menuchoice> menu entry.
                 </para>
                 
-                <figure>
-                    <title>The Sharpen Tool in Action</title>
-                    <graphic srccredit="The Sharpen Tool in Action" fileref="editorsharpenplugin.png"/>
-                </figure>
+                
+                    <example>  <title>The Sharpen Tool in Action</title>
+                    <screenshot><screeninfo>The Sharpen Tool in Action</screeninfo><mediaobject><imageobject><imagedata fileref="editorsharpenplugin.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+                
                 
                 <para>
                 You should be careful with this though, or the results will not look very natural: sharpening increases the apparent sharpness of edges in the photograph, but also amplifies noise. The generally most useful technique for sharpening a fuzzy photograph is the Refocus plug-in available from <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>, and you can access it with the
@@ -2465,11 +2435,9 @@ fi                 </screen></blockquote>
                 See the dedicated <ulink url="help:/digikamimageplugins/unsharp.html">Unsharp Mask 
                 manual</ulink> for more information.                
                 
-                <figure>
-                    <title>The Unsharp Mask Image Editor Plugin in Action</title>
-                    <graphic srccredit="The Unsharp Mask Image Editor Plugin in Action" 
-                    fileref="editorunsharpedmaskplugin.png"/>
-                </figure>
+                <example>  <title>The Unsharp Mask Image Editor Plugin in Action</title>
+                    <screenshot><screeninfo>The Unsharp Mask Image Editor Plugin in Action" </screeninfo><mediaobject><imageobject><imagedata fileref="editorunsharpedmaskplugin.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                </example>
                 
                 </para>
             
@@ -2485,11 +2453,10 @@ fi                 </screen></blockquote>
                 See the dedicated <ulink url="help:/digikamimageplugins/despeckle.html">Noise Reduction manual</ulink> for more information.  
                 </para>
             
-                <figure>
-                    <title>The Noise Reduction Image Editor Plugin in Action</title>
-                    <graphic srccredit="The Noise Reduction Image Editor Plugin in Action" 
-                    fileref="editornoisereductionplugin.png"/>
-                </figure>
+                <example>  <title>The Noise Reduction Image Editor Plugin in Action</title>
+                    <screenshot><screeninfo>The Noise Reduction Image Editor Plugin in Action" </screeninfo><mediaobject><imageobject><imagedata 
+                    fileref="editornoisereductionplugin.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                </example>
                                 
             </sect3>                
                 
@@ -2499,11 +2466,9 @@ fi                 </screen></blockquote>
                 Sometimes you have the opposite problem: an image is too crisp. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the Blur Tool, by the <menuchoice><guimenu>Fix</guimenu><guimenuitem>Blur</guimenuitem></menuchoice> menu entry and experiment with the level. The preview windows on the right of the dialogs show the effect of the operation of your photograph.
                 </para>
 
-                <figure>
-                    <title>The Blur Tool in Action</title>
-                    <graphic srccredit="The Blur Tool in Action" 
-                    fileref="editorblurplugin.png"/>
-                </figure>
+                <example>  <title>The Blur Tool in Action</title>
+                    <screenshot><screeninfo>The Blur Tool in Action" </screeninfo><mediaobject><imageobject><imagedata fileref="editorblurplugin.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                </example>
                             
             </sect3>
         
@@ -2521,10 +2486,9 @@ fi                 </screen></blockquote>
             You can see any adjustments you make reflected in the preview. When you are happy with the results, press <guilabel>Ok</guilabel> and they will take effect.
             </para>
 
-            <figure>
-                <title>The Color Balance Tool in Action</title>
-                <graphic srccredit="The Color Balance Tool in Action" fileref="editorcolorbalance.png"/>
-            </figure>
+            <example>  <title>The Color Balance Tool in Action</title>
+                <screenshot><screeninfo>The Color Balance Tool in Action</screeninfo><mediaobject><imageobject><imagedata fileref="editorcolorbalance.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+            </example>
 
             <anchor id="hsladjusttool.anchor"/>
             
@@ -2536,10 +2500,9 @@ fi                 </screen></blockquote>
             When you take pictures in low light conditions, you could get the opposite problem: too much saturation. In this case the Hue/Saturation tool is again a good one to use, only by reducing the saturation instead of increasing it. You can see any adjustments you make reflected in the preview image. When you are happy with the results, press <guilabel>Ok</guilabel> and they will take effect.
             </para>
             
-            <figure>
-                <title>The Hue Saturation Lightness Tool in Action</title>
-                <graphic srccredit="The Hue Saturation Lightness Tool in Action" fileref="editorhsladjust.png"/>
-            </figure>
+            <example>  <title>The Hue Saturation Lightness Tool in Action</title>
+                <screenshot><screeninfo>The Hue Saturation Lightness Tool in Action</screeninfo><mediaobject><imageobject><imagedata fileref="editorhsladjust.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+            </example>
                                     
             <anchor id="autocolorcorrectiontool.anchor"/>
             
@@ -2551,28 +2514,29 @@ fi                 </screen></blockquote>
                 <listitem><para>
                 <guilabel>Normalize</guilabel>: this method scales brightness values across the selected image so that the darkest point becomes black, and the brightest point becomes as bright as possible without altering its hue. This is often a "magic fix" for images that are dim or washed out.
                 
-                <graphic srccredit="Normalize Colors Correction Preview" fileref="editornormalize.png"/>
+                <example><title>Normalize Colors Correction Preview</title>   <screenshot><screeninfo>Normalize Colors Correction Preview</screeninfo><mediaobject><imageobject><imagedata fileref="editornormalize.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                </example>
 
                 </para></listitem>
 
                 <listitem><para>
                 <guilabel>Equalize</guilabel>: this method adjusts the brightness of colors across the selected image so that the histogram for the Value channel is as flat as possible, that is, so that each possible brightness value appears at about the same number of pixels as each other value. Sometimes Equalize works wonderfully at enhancing the contrasts of an image. Other times it gives garbage. It is a very powerful operation, which can either work miracles on a picture or destroy it. 
                 
-                <graphic srccredit="Equalize Colors Correction Preview" fileref="editorequalize.png"/>
+                <example><title>Equalize Colors Correction Preview</title> <screenshot><screeninfo>Equalize Colors Correction Preview</screeninfo><mediaobject><imageobject><imagedata fileref="editorequalize.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
                 
                 </para></listitem>
                 
                 <listitem><para>
                 <guilabel>Auto-levels</guilabel>: this method maximizes the tonal range in the Red, Green, and Blue channels. It determines the image shadow and highlight limit values and adjust the Red, Green, and Blue channels to a full histogram range.
                 
-                <graphic srccredit="Auto Levels Correction Preview" fileref="editorautolevels.png"/>
+                <example><title>Auto Levels Correction Preview</title> <screenshot><screeninfo>Auto Levels Correction Preview</screeninfo><mediaobject><imageobject><imagedata fileref="editorautolevels.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
 
                 </para></listitem>
 
                 <listitem><para>
                 <guilabel>Stretch Contrast</guilabel>: this method enhances the contrast and brightness of the RGB values of an image by stretching the lowest and highest values to their fullest range, adjusting everything in between. This is noticeable only with washed-out images and can be a good fix-it tool for bad photographs.
                 
-                <graphic srccredit="Stretch Contrast Correction Preview" fileref="editorstretchcontrast.png"/>
+                <example><title>Strectch Contrast Correction</title> <screenshot><screeninfo>Stretch Contrast Correction Preview</screeninfo><mediaobject><imageobject><imagedata fileref="editorstretchcontrast.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
 
                 </para></listitem>
                                                 
@@ -2594,22 +2558,19 @@ fi                 </screen></blockquote>
             The simplest tool to use is the Brightness/Contrast/Gamma tool. It is also the least powerful, but in many cases it does everything you need. This tool is often useful for images that are overexposed or underexposed; it is not useful for correcting color casts. The tool gives you three sliders to adjust, for "Brightness", "Contrast" and "Gamma". You can see any adjustments you make reflected in the preview image. When you are happy with the results, press <guilabel>Ok</guilabel> and they will take effect. 
             </para>
             
-            <figure>
-                <title>The Brightness Contrast Gamma Tool in Action</title>
-                <graphic srccredit="The Brightness Contrast Gamma Tool in Action" fileref="editorbcgadjust.png"/>
-            </figure>
-
+            <example>  <title>The Brightness Contrast Gamma Tool in Action</title>
+                <screenshot><screeninfo>The Brightness Contrast Gamma Tool in Action</screeninfo><mediaobject><imageobject><imagedata fileref="editorbcgadjust.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+            </example>
+            
             <para>
             If you have the Adjust Levels plugin installed (see the <link linkend="setupeditor">Setup Image Editor Section</link>) you will have additional entry in the Fix menu called 
             <menuchoice><guimenu>Fix</guimenu>
             <guimenuitem>Colors</guimenuitem>
             <guimenuitem>Levels Adjust</guimenuitem></menuchoice>. This tools provides an integrated way of seeing the results of adjusting multiple levels and also enables you to save level settings for application to multiple photographs. This can be useful if your camera or scanner often makes the same mistakes and you want to apply the same corrections. See the dedicated <ulink url="help:/digikamimageplugins/adjustlevels.html">Adjust Levels manual</ulink> for more information.
             
-            <figure>
-                <title>The Adjust Levels Image Editor Plugin in Action</title>
-                <graphic srccredit="The Adjust Levels Image Editor Plugin in Action" 
-                fileref="editoradjustlevels.png"/>
-            </figure>
+            <example>  <title>The Adjust Levels Image Editor Plugin in Action</title>
+                <screenshot><screeninfo>The Adjust Levels Image Editor Plugin in Action" </screeninfo><mediaobject><imageobject><imagedata fileref="editoradjustlevels.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+            </example>
 
             </para>                                            
         
@@ -2619,11 +2580,11 @@ fi                 </screen></blockquote>
             
 	    But this plugin can do more for you, it helps you to improve the tonal quality of your photographs to very finely stepped gray scales. And don't forget that the better the photographs are (good exposure, lossless format, 24 or 32 bit deep) the more you can improve them. Navigate to the "Achieving ultimate tonal quality" section of this instructive page: <ulink url="http://www.normankoren.com/digital_tonality.html">Tonal quality and dynamic range in digital cameras by Norman Koren</ulink>. Use Adjust Curves tool to do just the same!
 	    
-            <figure>
-                <title>The Adjust Curves Image Editor Plugin in Action</title>
-                <graphic srccredit="The Adjust Curves Image Editor Plugin in Action" 
-                fileref="editoradjustcurves.png"/>
-            </figure>
+            
+                <example>  <title>The Adjust Curves Image Editor Plugin in Action</title>
+                <screenshot><screeninfo>The Adjust Curves Image Editor Plugin in Action" </screeninfo><mediaobject><imageobject><imagedata
+                fileref="editoradjustcurves.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+            
 
             </para>                                            
                     
@@ -2637,12 +2598,11 @@ fi                 </screen></blockquote>
             <para>
             &digikam; comes with a couple of black and white filters that you can use on your photographs. Under the <menuchoice><guimenuitem>Filters</guimenuitem><guimenuitem>Black &amp; White</guimenuitem></menuchoice> menu you will find classic black and white chemical toning used in analog photography. The controls come on three tabs: <emphasis>filters, tone</emphasis> and <emphasis>lightness</emphasis> as shown on the screenshot below. The filters and color toning can be applied independently of each other (on top of each other). The filters actually influence the RGB channel mixing, whereas the toning purely adds a uniform monochromatic tint to the black and white photograph. In the lightness tab you will find a tonal adjustment tool (like curve adjust), a contrast tool and an over-exposure indicator to improve the b&amp;w rendering.
             </para>
-            <figure>
-                <title>The Black &amp; White Filter Plugin in Action</title>
-                <graphic srccredit="The B&amp;W Filter Plugin in Action"
-                fileref="editorbwfilter.png"/>
-            </figure>
-
+            
+              <example>  <title>The Black &amp; White Filter Plugin in Action</title>
+                <screenshot><screeninfo>The B&amp;W Filter Plugin in Action" </screeninfo><mediaobject><imageobject><imagedata fileref="editorbwfilter.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+              </example>
+            
             <para>The table below shows in more detail the effect of all filters and tints.</para>
 
             <informaltable><tgroup cols="2">
@@ -2655,7 +2615,7 @@ fi                 </screen></blockquote>
             <tbody>
                 <row>
                     <entry>
-                    <graphic srccredit="Original Color" fileref="editorconvert_original.png"/>
+                    <screenshot><screeninfo>Original Color</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_original.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -2665,7 +2625,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <graphic srccredit="Neutral Black and White" fileref="editorconvert_bw.png"/>
+                    <screenshot><screeninfo>Neutral Black and White</screeninfo> <mediaobject><imageobject><imagedata fileref="editorconvert_bw.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -2675,7 +2635,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <graphic srccredit="Black and White with Green Filter" fileref="editorconvert_bwgreen.png"/>
+                    <screenshot><screeninfo>Black and White with Green Filter</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_bwgreen.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -2685,7 +2645,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <graphic srccredit="Black and White with Orange Filter" fileref="editorconvert_bworange.png"/>
+                    <screenshot><screeninfo>Black and White with Orange Filter</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_bworange.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -2695,7 +2655,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <graphic srccredit="Black and White with Red Filter" fileref="editorconvert_bwred.png"/>
+                    <screenshot><screeninfo>Black and White with Red Filter</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_bwred.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -2705,7 +2665,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <graphic srccredit="Black and White with Yellow Filter" fileref="editorconvert_bwyellow.png"/>
+                    <screenshot><screeninfo>Black and White with Yellow Filter</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_bwyellow.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -2727,7 +2687,7 @@ fi                 </screen></blockquote>
               <tbody>
                 <row>
                     <entry>
-                    <graphic srccredit="Sepia" fileref="editorconvert_sepia.png"/>
+                    <screenshot><screeninfo>Sepia</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_sepia.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                     
                     <entry>
@@ -2737,7 +2697,7 @@ fi                 </screen></blockquote>
                                 
                  <row>
                     <entry>
-                    <graphic srccredit="Brown" fileref="editorconvert_brown.png"/>
+                    <screenshot><screeninfo>Brown</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_brown.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                     
                     <entry>
@@ -2747,7 +2707,7 @@ fi                 </screen></blockquote>
             
                <row>
                     <entry>
-                    <graphic srccredit="Cold Tone" fileref="editorconvert_cold.png"/>
+                    <screenshot><screeninfo>Cold Tone</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_cold.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                     
                     <entry>
@@ -2757,7 +2717,7 @@ fi                 </screen></blockquote>
             
                 <row>
                     <entry>
-                    <graphic srccredit="Platinum" fileref="editorconvert_platinium.png"/>
+                    <screenshot><screeninfo>Platinum</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_platinium.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                     
                     <entry>
@@ -2767,7 +2727,7 @@ fi                 </screen></blockquote>
             
                 <row>
                     <entry>
-                    <graphic srccredit="Selenium" fileref="editorconvert_selenium.png"/>
+                    <screenshot><screeninfo>Selenium</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_selenium.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                     
                     <entry>
@@ -2783,11 +2743,9 @@ fi                 </screen></blockquote>
              Many other filters and special effects are available if you have the additional Image Editor Plugins installed (see the <link linkend="setupeditor">Setup Image Editor Section</link>), like Film Grain, Rain Drops, Solarize, Charcoal Drawing, &etc;. 
             </para>
 
-            <figure>
-                <title>The Rain Drops Image Editor Plugin in Action</title>
-                <graphic srccredit="The Adjust Levels Image Editor Plugin in Action" 
-                fileref="editorraindropsplugin.png"/>
-            </figure>
+            <example>  <title>The Rain Drops Image Editor Plugin in Action</title>
+                <screenshot><screeninfo>The Adjust Levels Image Editor Plugin in Action" </screeninfo><mediaobject><imageobject><imagedata fileref="editorraindropsplugin.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+            </example>
         
         </sect2>
                    
@@ -2818,11 +2776,12 @@ fi                 </screen></blockquote>
 
             <para>The figure below pictures the problem: Every time there is a transfer from one device to another, an ICC profile is used to correct for the inaccuracies or limitations of the device. The central work space (which is called Profile Connection Space, PCS) provides a common platform to translate the device color spaces into each other.
             </para>
-            <figure>
-                <title>The inter-connection between devices and their color spaces</title>
-                <graphic srccredit="Gerhard Kulzer" 
-                fileref="colormanagement.png"/>
-            </figure>
+            
+            <example>  <title>The inter-connection between devices and their color spaces</title>
+                <screenshot><screeninfo>Gerhard Kulzer" </screeninfo><mediaobject><imageobject><imagedata
+                fileref="colormanagement.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+            </example>
+            
 
             <tip>
                 <para><emphasis>CM Pros.</emphasis> CM is really important whenever you need identical results between shooting sessions, accurate source reproduction, close rendering results between various display media (this would rather point CM to professionals).</para>
@@ -2846,11 +2805,9 @@ fi                 </screen></blockquote>
                     The following diagram tries to outline the logic &digikam; will follow in its CM work flow, depending on the settings made in <emphasis>IO Files</emphasis> and <emphasis>ICC profiles</emphasis> of the configuration page.
             </para>
 
-            <figure>
-                <title>The &digikam; internal work flow logic depending on the settings</title>
-                <graphic srccredit="Gerhard Kulzer" 
-                fileref="ICCworkflowlogic.png"/>
-            </figure>
+           <example>  <title>The &digikam; internal work flow logic depending on the settings</title>
+                <screenshot><screeninfo>Gerhard Kulzer" </screeninfo><mediaobject><imageobject><imagedata                fileref="ICCworkflowlogic.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+            
 
             <sect3 id="softproofing">
             <title>Soft Proofing</title>
@@ -2889,6 +2846,7 @@ fi                 </screen></blockquote>
         </sect2>
         
     </sect1>  
+
         
     <sect1 id="using-kapp-setup">
     <title>&digikam; Configuration</title>
@@ -2911,10 +2869,9 @@ fi                 </screen></blockquote>
                 The Album settings control how the main application will behave. 
                 </para>
     
-                <figure>
-                    <title>The Album Settings</title>
-                    <graphic srccredit="The Album Settings" fileref="setupalbum.png"/>
-                </figure>
+                <example>  <title>The Album Settings</title>
+                    <screenshot><screeninfo>The Album Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupalbum.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
                                     
                 <para>
                 The <guilabel>Album Library Path</guilabel> is the location on your hard disk where &digikam; will store all of the Albums. If you change this location without manually moving all of the Albums on the hard disk, &digikam; will think that there are no existing Albums and will generate a new database at the new location. Your old Albums will not be altered but you will need to change the Album Library Path back to the old location to access them. If you are not sure of what you are doing it is best not to change this location.
@@ -2937,10 +2894,10 @@ fi                 </screen></blockquote>
                 Image files can have some meta-data embedded into the image file format. This meta-data can be stored in a number of standard formats. &digikam; can read meta-data in the EXIF format if it is present in the file. &digikam; can also write comments into the <ulink url="http://www.exif.org">EXIF information</ulink>. Writing comments to the EXIF section is limited to JPEG images.
                 </para>
     
-                <figure>
-                    <title>The Embedded Information Settings</title>
-                    <graphic srccredit="The Embedded Information Settings" fileref="setupembeddedinfo.png"/>
-                </figure>
+                
+<example>  <title>The Embedded Information Settings</title>
+                    <screenshot><screeninfo>The Embedded Information Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupembeddedinfo.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+                
                                     
                 <para>
                 These settings allow you to control how &digikam; will deal with this embedded information.
@@ -2966,10 +2923,10 @@ fi                 </screen></blockquote>
                 <para>
                     This settings page permits to enter default identity and copyright data as shown on the printscreen below. The data will be automatically written into the respective IPTC data fields if so selected during the download from the <link linkend="using-kapp-cameraclientrenaming">camera interface</link>
                 </para>
-                <figure>
-                    <title>Default identity data entry</title>
-                    <graphic srccredit="Default data entry form" fileref="cameraclientidentity.png"/>
-                </figure>
+
+                <example>  <title>Default identity data entry</title>
+                    <screenshot><screeninfo>Default data entry form</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientidentity.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
 
             </sect3>
 
@@ -2980,10 +2937,9 @@ fi                 </screen></blockquote>
                 This dialog manage your Collection types. Album Collections are described in detail in the <link linkend="using-kapp-myalbumsview">My Albums</link> section. 
                 </para>
     
-                <figure>
-                    <title>The Collection Settings</title>
-                    <graphic srccredit="The Collection Settings" fileref="setupcollections.png"/>
-                </figure>
+                <example>  <title>The Collection Settings</title>
+                    <screenshot><screeninfo>The Collection Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupcollections.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
     
             </sect3>
     
@@ -2994,10 +2950,10 @@ fi                 </screen></blockquote>
                 &digikam; can understand lots of different image file types as well as some video and audio formats. To control which types of files &digikam; will try to display you can add or remove file extensions from these lists. Any files that are in the &digikam; Album folders that do not match these extensions will be ignored by &digikam;.
                 </para>
     
-                <figure>
-                    <title>The Mime Type Settings</title>
-                    <graphic srccredit="The Mime Type Settings" fileref="setupmimetypes.png"/>
-                </figure>
+                
+<example>  <title>The Mime Type Settings</title>
+                    <screenshot><screeninfo>The Mime Type Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupmimetypes.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+                
     
             </sect3>                
             
@@ -3007,10 +2963,10 @@ fi                 </screen></blockquote>
                 By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background color you can choose one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
                 </para>
                 
-                <figure>
-                    <title>The Image Editor Settings</title>
-                    <graphic srccredit="The Image Editor Settings" fileref="setupimageeditor.png"/>
-                </figure>
+                
+<example>  <title>The Image Editor Settings</title>
+                    <screenshot><screeninfo>The Image Editor Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupimageeditor.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+                
             </sect3>
 
             <sect3 id="setupfilesettings">
@@ -3020,10 +2976,10 @@ fi                 </screen></blockquote>
                 In the early versions of &digikam; the Image Editor was just a viewer for photographs, but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you to control how the Image Editor will behave.
                 </para>
     
-                <figure>
-                    <title>The Image Editor IO File Settings</title>
-                    <graphic srccredit="The Image Editor IO File Settings" fileref="imageeditorfilesettings.png"/>
-                </figure>
+                
+<example>  <title>The Image Editor IO File Settings</title>
+                    <screenshot><screeninfo>The Image Editor IO File Settings</screeninfo><mediaobject><imageobject><imagedata fileref="imageeditorfilesettings.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+                
 
                 <para>TODO RAW image decoding options
                 </para>
@@ -3051,30 +3007,30 @@ fi                 </screen></blockquote>
                 For more informations about advanced Image Editor plugins, you can consult the 'DigikamImagePlugins' project at <ulink url="http://extragear.kde.org/apps/digikamimageplugins">http://extragear.kde.org/apps/digikamimageplugins</ulink>.
                 </para>
                             
-                <figure>
-                    <title>The setup of the image plugins</title>
-                    <graphic srccredit="The setup of the image plugins" fileref="setupimageplugins.png"/>
-                </figure>
+                
+<example>  <title>The setup of the image plugins</title>
+                    <screenshot><screeninfo>The setup of the image plugins</screeninfo><mediaobject><imageobject><imagedata fileref="setupimageplugins.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+                
 
             </sect3>
 
             <sect3 id="setupslideshow">
             <title>Slide show setup</title>
                 <para>TODO Slide show setup</para>
-                <figure>
-                    <title>The setup of the slide show</title>
-                    <graphic srccredit="The setup of the slide show" fileref="setupslideshow.png"/>
-                </figure>
+                
+<example>  <title>The setup of the slide show</title>
+                    <screenshot><screeninfo>The setup of the slide show</screeninfo><mediaobject><imageobject><imagedata fileref="setupslideshow.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+                
 
             </sect3>
             
             <sect3 id="setupiccprofiles">
             <title>ICC Profiles setup</title>
                 <para>TODO ICC Profiles</para>
-                <figure>
-                    <title>The setup of ICC profiling</title>
-                    <graphic srccredit="The setup of ICC profiling" fileref="setupiccprofiles.png"/>
-                </figure>
+                
+<example>  <title>The setup of ICC profiling</title>
+                    <screenshot><screeninfo>The setup of ICC profiling</screeninfo><mediaobject><imageobject><imagedata fileref="setupiccprofiles.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+                
 
             </sect3>
 
@@ -3085,10 +3041,10 @@ fi                 </screen></blockquote>
                 Kipi is the &kde; Image Plugin Interface. It is an interface that is supported by a number of &kde; image viewer/editor applications. By providing this interface &digikam; can take advantage of many plugins that are written to work with any application that implements the Kipi interface.
                 </para>
     
-                <figure>
-                    <title>The Kipi Plugins Settings</title>
-                    <graphic srccredit="The Kipi Plugins Settings" fileref="setupkipiplugins.png"/>
-                </figure>
+                
+<example>  <title>The Kipi Plugins Settings</title>
+                    <screenshot><screeninfo>The Kipi Plugins Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupkipiplugins.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+                
     
                 <para>
                 If your distribution has the Kipi plugins package installed you will see a list of available plugins. Select those that you want to use and they will be loaded into &digikam;. The plugins will appear as new menu entries in the main Menu Bar and in the context menu for thumbnails.
@@ -3113,10 +3069,10 @@ fi                 </screen></blockquote>
                 The camera settings shows on the left the list of the currently supported cameras. On the right at the top there is an auto-detect button, which tries to identify the camera connected to your computer (make sure that the camera is connected properly to the computer and turned on in the image display mode). Below this are the port settings; the currently supported are Serial, USB, and USB/FireWire Mass Storage.
                 </para>
                 
-                <figure>
-                    <title>The Camera Settings</title>
-                    <graphic srccredit="The Camera Settings" fileref="setupcamera.png"/>
-                </figure>
+                
+<example>  <title>The Camera Settings</title>
+                    <screenshot><screeninfo>The Camera Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupcamera.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+                
                 
                 <anchor id="cameraselection.anchor"/>
                 
@@ -3128,10 +3084,10 @@ fi                 </screen></blockquote>
                 At the very bottom is where you set the path for a USB or FireWire (IEEE-1394 or i-link) Mass Storage camera. This box becomes active once you select USB or FireWire Mass Storage camera in the camera list. You need to enter here the path where you mount the camera, usually "/mnt/camera" or "/mnt/removable".
                 </para>
                             
-                <figure>
-                    <title>The Add Camera Dialog</title>
-                    <graphic srccredit="The Add Camera Dialog" fileref="setupaddcamera.png"/>
-                </figure>
+                
+<example>  <title>The Add Camera Dialog</title>
+                    <screenshot><screeninfo>The Add Camera Dialog</screeninfo><mediaobject><imageobject><imagedata fileref="setupaddcamera.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+                
     
                 <para>
                 To be able to use your digital camera with &digikam;, connect the camera to your computer, switch the camera to the image display mode and turn it on. 
@@ -3164,10 +3120,10 @@ fi                 </screen></blockquote>
                 <guilabel>Scan for new items at startup</guilabel> option force &digikam; to scan album library tree for new items added or removed between &digikam; sessions. This may slow down the start time of &digikam;. If any items have been removed from album library, &digikam; will ask you confirmation before to remove definitely item references in database.
                 </para>
                 
-                <figure>
-                    <title>The Miscellaneous Settings</title>
-                    <graphic srccredit="The Miscellaneous Settings" fileref="setupmisc.png"/>
-                </figure>
+                
+<example>  <title>The Miscellaneous Settings</title>
+                    <screenshot><screeninfo>The Miscellaneous Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupmisc.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+                
                 
             </sect3>                   
                             
@@ -3192,7 +3148,7 @@ fi                 </screen></blockquote>
             <tbody>
                 <row>
                     <entry>
-                    <graphic srccredit="Default Theme" fileref="setupthemedefault.png"/>
+                    <screenshot><screeninfo>Default Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemedefault.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -3202,7 +3158,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <graphic srccredit="Dessert Theme" fileref="setupthemedessert.png"/>
+                    <screenshot><screeninfo>Dessert Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemedessert.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -3213,7 +3169,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <graphic srccredit="Clean Theme" fileref="setupthemeclean.png"/>
+                    <screenshot><screeninfo>Clean Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemeclean.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -3223,7 +3179,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <graphic srccredit="Dark Theme" fileref="setupthemedark.png"/>
+                    <screenshot><screeninfo>Dark Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemedark.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -3233,7 +3189,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <graphic srccredit="Dreary Theme" fileref="setupthemedreary.png"/>
+                    <screenshot><screeninfo>Dreary Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemedreary.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -3243,7 +3199,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <graphic srccredit="Marine Theme" fileref="setupthememarine.png"/>
+                    <screenshot><screeninfo>Marine Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthememarine.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -3253,7 +3209,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <graphic srccredit="OrangeCrush Theme" fileref="setupthemeorangecrush.png"/>
+                    <screenshot><screeninfo>OrangeCrush Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemeorangecrush.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                 
                     <entry>
@@ -3263,7 +3219,7 @@ fi                 </screen></blockquote>
                                                                 
                 <row>
                     <entry>
-                    <graphic srccredit="Default Theme" fileref="setupthemesandy.png"/>
+                    <screenshot><screeninfo>Default Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemesandy.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                     </entry>
                     
                     <entry>
