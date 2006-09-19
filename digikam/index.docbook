@@ -176,12 +176,12 @@
     <sect1 id="using-kapp-firstrun">
     <title>Getting Started</title>
 
-        <anchor id="firstrundialog.anchor"/>
-        
-        <example> <title>The First Run Dialog</title>
-            <screenshot> <mediaobject><imageobject><imagedata fileref="introductionfirstrundialog.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-        </example>
-
+        <sect2 id="firstrundialog">
+           <title>The First Run Dialog</title>
+           <para>
+           <inlinemediaobject><imageobject>
+              <imagedata fileref="introductionfirstrundialog.png" format="PNG" />  </imageobject>
+           </inlinemediaobject></para>
         
         <para>
         When you start &digikam; for the very first time it will ask you where you store your photographs. You can type in the path name of a folder or click on the <guilabel>folder</guilabel> icon
@@ -189,26 +189,31 @@
             <imageobject><imagedata fileref="introductionfoldericon.png" format="PNG"/></imageobject>
             <textobject> <phrase>Folder Icon</phrase> </textobject>
         </inlinemediaobject>
-        to select a folder from the dialog. 
+        to select a folder from the dialog.
         </para>
+        </sect2>
+
+        <sect2>
+        <title>The Scan Items Dialog</title>
 
         <para>
         If you already have a collection of photographs on your hard disk, you can enter the top-level folder containing the photographs, this is called the Albums Library folder. &digikam; will treat each sub-folder of the folder you've entered as an Album. None of the photographs will be altered. During folders parsing you can see a progress dialog like this:
         </para>
-
-        <example><title>The Scan Items Dialog</title>
-            <screenshot><mediaobject> <imageobject><imagedata fileref="introductionscandialog.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-        </example>
-        
-        <note><para>
-        As &digikam; uses your folders on your hard disk directly, other applications like file managers can remove any albums outside a &digikam; session. In this case, at the next session, &digikam; will tell you if all albums that have been removed from the &digikam; photographs root path shall be deleted from albums database. If you want to move folders around and don't want to do that in &digikam;, we suggest you do that while &digikam; is running, so the database will be kept in sync and you don't lose any meta data.
-        
-            <example><title>The Albums Missing Dialog</title>
-              <screenshot><mediaobject><imageobject><imagedata fileref="introductionalbumsmissingdialog.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-            </example>
-        
-
-        </para></note>
+        <para>
+          <inlinemediaobject> <imageobject>
+            <imagedata fileref="introductionscandialog.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+        </sect2>
+        <sect2>
+        <title>The Albums Missing Dialog</title>
+        <para>
+          As &digikam; uses your folders on your hard disk directly, other applications like file managers can remove any albums outside a &digikam; session. In this case &digikam; will tell you at the next session if all albums that have been removed from the &digikam; photographs root path shall be deleted from albums database. If you want to move folders around and do not want to do that in &digikam;, we suggest you do that while &digikam; is running, so the database will be kept in sync and you do not lose any metadata.
+        </para>
+        <para><inlinemediaobject><imageobject> 
+                <imagedata fileref="introductionalbumsmissingdialog.png" format="PNG" /> 
+              </imageobject>
+              <textobject><phrase>The Albums Missing Dialog</phrase></textobject></inlinemediaobject>
+        </para>
 
         <para>
         When you use an existing folder of photographs, as the Album Library folder, you will notice that the Albums in the My Album list do not have photographs as their icons. The first time you view each Album &digikam; will create a thumbnail from the first photograph in the Album and use this as the Album icon. See the <link linkend="using-kapp-myalbumsview">My Album</link> section for details of how to change the Album icon.
@@ -221,7 +226,7 @@
         <para>
         Once you have configured the Album Library Folder you can setup &digikam; to work with your digital camera. Then learn how to use <link linkend="using-kapp-myalbumsview">My Albums</link> and <link linkend="using-kapp-mytagsview">My Tags</link> to arrange your photograph Albums.
         </para> 
-                        
+        </sect2> 
     </sect1>
 
     <sect1 id="using-kapp-fileformatsupport">
@@ -459,7 +464,7 @@
         <title>Introduction</title>
 
             <para>
-            Current digital cameras are characterized by the use of <emphasis>Compact Flash Memory</emphasis> cards and <emphasis>USB</emphasis> or <emphasis>FireWire (IEEE-1394 or i-link)</emphasis> for data transmission. The actual transfers to a host computer is commonly carried out using the <emphasis>USB Mass Storage</emphasis> device class (so that the camera appears as a disk drive) or using the <emphasis>Picture Transfer Protocol (PTP)</emphasis> and its derivatives. Older cameras may use the <emphasis>Serial Port (RS-232)</emphasis> connection.
+            Current digital cameras are characterized by the use of <emphasis>Compact &Flash; Memory</emphasis> cards and <emphasis>USB</emphasis> or <emphasis>FireWire (IEEE-1394 or i-link)</emphasis> for data transmission. The actual transfers to a host computer is commonly carried out using the <emphasis>USB Mass Storage</emphasis> device class (so that the camera appears as a disk drive) or using the <emphasis>Picture Transfer Protocol (PTP)</emphasis> and its derivatives. Older cameras may use the <emphasis>Serial Port (RS-232)</emphasis> connection.
             </para>
             
             <informaltable><tgroup cols="2">
@@ -472,7 +477,7 @@
             <tbody>
                 <row>
                     <entry>
-                    <screenshot><screeninfo>FireWire</screeninfo><mediaobject><imageobject><imagedata fileref="introductionfirewireconnector.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <para><inlinemediaobject><imageobject><imagedata fileref="introductionfirewireconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
                     </entry>
                 
                     <entry>
@@ -482,7 +487,7 @@
 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>USB</screeninfo><mediaobject><imageobject><imagedata fileref="introductionusbconnector.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <para><inlinemediaobject><imageobject><imagedata fileref="introductionusbconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
                     </entry>
                 
                     <entry>
@@ -492,7 +497,7 @@
 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Serial</screeninfo><mediaobject><imageobject><imagedata fileref="introductionserialconnector.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <para><inlinemediaobject><imageobject><imagedata fileref="introductionserialconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
                     </entry>
                 
                     <entry>
@@ -556,13 +561,11 @@
         <title>Introduction to the Main Window</title>
 
             <para>
+              <inlinemediaobject><imageobject><imagedata fileref="maininterfacepreview.png" format="PNG" /> </imageobject>
+              </inlinemediaobject>
+            </para>
 
-            <example>
-                <title>The Main Window</title>
-                <screenshot><mediaobject><imageobject><imagedata fileref="maininterfacepreview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-            </example>
-
-            &digikam;'s main window has four areas. The first one is a sidebar in the left margin that lets you switch between 4 views: <guibutton>My Albums</guibutton>, <guibutton>My Dates</guibutton>, <guibutton>My Tags</guibutton> and <guibutton>My Searches</guibutton>. Then there is a tree navigator showing the selected view. The main image window is right in the center. And on the right hand side there is another <link linkend="using-kapp-sidebar">sidebar</link> shown. This one can be used to show all informations of your images. You can use these views to organize and find your photographs.
+            <para>&digikam;'s main window has four areas. The first one is a sidebar in the left margin that lets you switch between 4 views: <guibutton>My Albums</guibutton>, <guibutton>My Dates</guibutton>, <guibutton>My Tags</guibutton> and <guibutton>My Searches</guibutton>. Then there is a tree navigator showing the selected view. The main image window is right in the center. And on the right hand side there is another <link linkend="using-kapp-sidebar">sidebar</link> shown. This one can be used to show all informations of your images. You can use these views to organize and find your photographs.
             </para>
 
             <para>
@@ -922,11 +925,11 @@
         </sect2>
         
         <sect2 id="using-kapp-mydatesview">
-            <title>"My Dates" View</title>
+            <title>"My Dates" View from Main Window</title>
 
-            <example> <title>My Dates View from Main Window</title>
-                <screenshot><screeninfo>Dates View from Main Window</screeninfo><mediaobject><imageobject><imagedata fileref="maininterfacedateview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-            </example>
+            <para><inlinemediaobject><imageobject><imagedata fileref="maininterfacedateview.png" format="PNG" /> </imageobject>
+              <textobject><phrase>Dates View from Main Window</phrase></textobject></inlinemediaobject>
+            </para>
             
             <para>
             The "My Dates" view organizes your photographs based on their dates. &digikam; uses either the
@@ -1110,7 +1113,7 @@
 
            </itemizedlist>
 
-           <example>   <title>sidebar File Properties example</title>
+           <example>   <title>Sidebar File Properties</title>
                  <screenshot><screeninfo>sidebar File Properties Example</screeninfo><mediaobject><imageobject><imagedata fileref="sidebarfileproperties.png" format="PNG" /> </imageobject></mediaobject></screenshot>
            </example>
 
@@ -1118,15 +1121,14 @@
         </sect2>
 
         <sect2 id="using-kapp-sidebarmetadata">
-        <title>Metadata</title>
+        <title>The Metadata Tabs</title>
 
            <para>
            The metadata sidebar is composed of four sub tabs <guilabel>EXIF, Makernotes, IPTC and GPS data</guilabel>. A combo-box lets you choose between full and simplified data display. Next to it are a printer and copy icon, They do just that - print (&kprinter; dialog) or copy the respective tab data to the clipboard. In the main window view you will find a navigation button set with the file name on top of the tabs.
            </para>
 
-           <example>   <title>The Metadata Tabs</title>
-               <screenshot><screeninfo>The Metadata Tabs</screeninfo><mediaobject><imageobject><imagedata fileref="sidebarmetadata.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-           </example>
+           <para><inlinemediaobject><imageobject><imagedata fileref="sidebarmetadata.png" format="PNG" /> </imageobject><textobject><phrase>The Metadata Tabs</phrase></textobject></inlinemediaobject>
+           </para>
 
            <sect3 id="using-kapp-sidebarmetadataexif">
            <title>EXIF Tags</title>
@@ -1182,9 +1184,8 @@
                     You can review embedded EXIF information for the selected image from the first sidebar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections.
                     </para>
             
-                    <example>   <title>The EXIF Viewer in Action</title>
-                        <screenshot><screeninfo>The EXIF Viewer in Action</screeninfo><mediaobject><imageobject><imagedata fileref="sidebarmetadataexif.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-                    </example>
+                    <para><inlinemediaobject><imageobject><imagedata fileref="sidebarmetadataexif.png" format="PNG" /> </imageobject><textobject><phrase>The EXIF Viewer in Action</phrase></textobject></inlinemediaobject>
+                    </para>
             
                     <para>
                     You can use two different levels to display EXIF marker sections:
@@ -1240,7 +1241,6 @@
               <example>  <title>sidebar Metadata GPS info</title>
                    <screenshot><screeninfo>sidebar Metadata info</screeninfo><mediaobject><imageobject><imagedata fileref="sidebarmetadatagps.png" format="PNG" /> </imageobject></mediaobject></screenshot>
               </example>
-
 
            </sect3>
 
@@ -1523,9 +1523,9 @@
            <para>Another use is <emphasis>drag-and drop tagging</emphasis>. Lets say you selected in the main view a number of pictures to tag them. If the tag already exists, simply drag it from the right sidebar onto the selection (any one of the highlighted pictures). A dialog will pop-up and ask if this tag should be applied.
            </para>
 
-           <example>    <title>sidebar Tag Filters</title>
-                 <screenshot><screeninfo>sidebar Tag Filters</screeninfo><mediaobject><imageobject><imagedata fileref="sidebartagfilters.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-           </example>
+           <para>
+                 <inlinemediaobject><imageobject><imagedata fileref="sidebartagfilters.png" format="PNG" /> </imageobject><textobject><phrase>Sidebar Tag Filters</phrase></textobject></inlinemediaobject>
+           </para>
 
             <para>
                 In the above example the main window shows the pictures from a calender date, the tag filter is set to 'not tagged', which reduces the set to 3 images. They have been selected with Ctrl+a, then a tag is dragged from the right tag tree over the selection and dropped. A pop-up dialog asks if the tag shall be applied.
@@ -1623,9 +1623,9 @@
             When you have selected the target Album, click OK and &digikam; will download the photographs from the camera to that album.  
             </para>
             
-            <example>  <title>The Downloading from Camera in Progress</title>
-                <screenshot><screeninfo>The Downloading from Camera in Progress</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientdownload.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
-            </example>
+            <para>  
+                <inlinemediaobject><imageobject><imagedata fileref="cameraclientdownload.png" format="PNG" /> </imageobject><textobject><phrase>The Downloading in Progress</phrase></textobject></inlinemediaobject> 
+            </para>
 
         </sect2>
         
@@ -1776,15 +1776,16 @@
                         <ulink url="http://www.lupinelogic.com/products/coyoteye.html">CoyoteEye iPAQ</ulink>
                         <ulink url="http://www.survey-lab.com/">Ike</ulink>
                         <ulink url="http://www.kodak.com/global/en/service/professional/tib/tib7061.jhtml?id=0.1.14.34.3.110&amp;lc=en">Kodak DCS Pro</ulink>
-                        <ulink url="http://www.robgalbraith.com/bins/multi_page.asp?cid=7-6459-7204-7205">Nikon</ulink>
-                        <ulink url="http://www.geospatialexperts.com/ricoh.html">Ricoh Pro G3</ulink>
-                        <ulink url="http://digitalcameras.engadget.com/2004/04/30/gps-attachment-for-sony-digital-camcorders/">Sony</ulink>
+                        <ulink url="http://nikonimaging.com/global/products/digitalcamera/index.htm">Nikon DSLR</ulink>
+                        <ulink url="http://www.geospatialexperts.com/ricoh.html">Ricoh Pro G3</ulink>        <ulink url="http://digitalcameras.engadget.com/2004/04/30/gps-attachment-for-sony-digital-camcorders/">Sony</ulink>
                     </para>
                 </listitem>
                 
                 <listitem><para>Post-treatment of GPS data and image files</para>
                     <para>
-                        Several programs exist for &Windows; and MacOS that are able to extract and correlate data from pictures and GPS data tracks. The following site provides the same functionality for &Linux;: <ulink url="http://freefoote.dview.net/linux_gpscorr.html"></ulink>
+                        Several programs exist for &Windows; and MacOS that are able to extract and correlate data from pictures and GPS data tracks. The following site provides the same functionality for &Linux;: 
+                        <ulink url="http://freefoote.dview.net/linux_gpscorr.html"></ulink> 
+                        <ulink url="http://www.carto.net/projects/photoTools/gpsPhoto/"></ulink>
                     </para>
                     <para>
                         The approach is dead easy: whilst taking your pictures just keep a GPS device running and carry it around with the camera. Once you are done download the pictures and the GPS tracks, and run the above program. It will correlate the data in the time domain; so it is important that the camera be accurate in its clock setting (the GPS device is always accurate through the satellites). The positional accuracy interpolated from the track points can be as good as 20 meters. Of course, this approach only works if your camera can record EXIF data.
@@ -1806,7 +1807,7 @@ add Exif.GPSInfo.GPSMapDatum Ascii "WGS-84"
 add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"
                     </screen></blockquote>
                     <para>
-                        The positional data (e.g. 13.44088333) must be converted into H.MS format (13.262718) and split into its constituents as shown in the given example. By the way, it is easy to find exact coordinates on the web using <ulink url="http://maps.google.com"> MapsGoogle</ulink> or <ulink url="http://http://www.multimap.com/map/home.cgi?client=public"> Multimap.com</ulink>
+                        The positional data (&eg; 13.44088333) must be converted into H.MS format (13.262718) and split into its constituents as shown in the given example. By the way, it is easy to find exact coordinates on the web using <ulink url="http://maps.google.com"> MapsGoogle</ulink> or <ulink url="http://http://www.multimap.com/map/home.cgi?client=public"> Multimap.com</ulink>
                     </para>
 
                     <para>And here is yet another script which is a GPS wrapper for Phil Harvey's <ulink url="http://www.sno.phy.queensu.ca/~phil/exiftool">ExifTool</ulink> that uses the signed floating number coordinate notation as produced by maps.google.
@@ -1821,26 +1822,39 @@ add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"
 #                "%.6f degrees"         54.989667 degrees
 
 if [ -z $1 ]; then 
-   echo "Usage: exiftool-gps lat long [alt] file || dir (use signed floating coordinates)"
+   echo "Usage: exiftool-gps-wrapper lat long [alt] file || dir (use signed floating coordinates)"
 else
 
    if  [ -z "$4" ]; then  foo="$3"; alt=0
    else	                  foo="$4"; alt=$3
    fi
 
-   if [ -d "$foo" ] ; then
-	lat=$(echo "$1" | awk '{if ($1 &lt; 0) print "S"; else print "N"}')
-	lon=$(echo "$2" | awk '{if ($1 &lt; 0) print "W"; else print "E"}')
+   echo $foo
+   if [ -e "$foo" ] ; then
+	latR=$(echo "$1" | awk '{if ($1 &lt; 0) print "S"; else print "N"}')
+	lonR=$(echo "$2" | awk '{if ($1 &lt; 0) print "W"; else print "E"}')
+	lat=$(echo "$1" | awk '{val = $1; if ($1 &lt; 0) sub(/-/, "", val); print val}') # absolute value
+	lon=$(echo "$2" | awk '{val = $1; if ($1 &lt; 0) sub(/-/, "", val); print val}') # absolute value
         # use the following syntax for easy googlian paste of ll=-1.23456,53.345345
-	#lon=$(echo "$2" | awk '{if ($2 &lt; 0) print "W"; else print "E"}')
-	echo $1, $lat, $2, $lon, $3, $4, $foo
+	#lonR=$(echo "$2" | awk '{if ($2 &lt; 0) print "W"; else print "E"}')
+	echo $lat, $latR, $lon, $lonR, $3, $4, $foo
+        
+	function setgpsinfo ()
+	{
+	    exiftool -c "%.6f" -GPSMapDatum="WGS-84" -GPSAltitude=$5 \
+	    -GPSLongitudeRef=$4 -GPSLongitude=$3 -GPSLatitudeRef=$2 -GPSLatitude=$1 "$6"
+	    exiftool -GPS:ALL "$6"
+	}
 
-	for i in "$foo" ; do    # the selection of files treated depend on the passed regex
-	    echo "i= "$i
-	    exiftool -c "%.6f" -GPSMapDatum="WGS-84" -GPSAltitude=$alt \
-	    -GPSLongitudeRef=$lon -GPSLongitude=$2 -GPSLatitudeRef=$lat -GPSLatitude=$1 "$i"
-	    exiftool -GPS:ALL "$i"  # read back
-	done
+        if [ -d "$foo" ] ; then
+
+	    for i in "$foo" ; do    # the selection of files treated depend on the passed regex
+	        echo "i= "$i
+                setgpsinfo $lat $latR $lon $lonR $alt "$i"
+	    done
+	else
+            setgpsinfo $lat $latR $lon $lonR $alt "$foo"
+	fi
    else	echo "file or folder is wrong"
    fi
 fi                 </screen></blockquote>
@@ -1977,7 +1991,7 @@ fi                 </screen></blockquote>
             </para>
             
             <para>
-            If these are done so frequently that you really should memorize the keyboard shortcuts, <guilabel>Ctrl-Z</guilabel> to undoing action, and <guilabel>Ctrl-Shift-Z</guilabel> to redoing action.
+            If these are done so frequently that you really should memorize the keyboard shortcuts, <guilabel>&Ctrl;-Z</guilabel> to undoing action, and <guilabel>&Ctrl;-Shift-Z</guilabel> to redoing action.
             </para>
 
             <para>
@@ -2340,7 +2354,7 @@ fi                 </screen></blockquote>
                 <anchor id="redeyecorrectiontool.anchor"/>
             
                 <para>
-                Red eyes are caused when the camera flash is used to take photographs of people. The red is the reflection from the back the eye which can be seen because the pupil cannot react quickly enough to the flash. By the way, with a separate flash light the red eye effect is less likely because of the different viewing angle of flash and lens. You can correct some of the worst effect of Red Eye by selecting the area of the eye on the photograph, in the same way as described for cropping above. Then select
+                Red eyes are caused when the camera flashlight is used to take photographs of people. The red is the reflection from the back the eye which can be seen because the pupil cannot react quickly enough to the flash. By the way, with a separate flash light the red eye effect is less likely because of the different viewing angle of flash and lens. You can correct some of the worst effect of Red Eye by selecting the area of the eye on the photograph, in the same way as described for cropping above. Then select
                 <menuchoice><guimenu>Fix</guimenu>
                 <guimenuitem>Red Eye Reduction</guimenuitem></menuchoice>.
                 </para>
@@ -2615,7 +2629,7 @@ fi                 </screen></blockquote>
             <tbody>
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Original Color</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_original.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="editorconvert_original.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -2625,7 +2639,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Neutral Black and White</screeninfo> <mediaobject><imageobject><imagedata fileref="editorconvert_bw.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="editorconvert_bw.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -2635,7 +2649,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Black and White with Green Filter</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_bwgreen.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="editorconvert_bwgreen.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -2645,7 +2659,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Black and White with Orange Filter</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_bworange.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="editorconvert_bworange.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -2655,7 +2669,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Black and White with Red Filter</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_bwred.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="editorconvert_bwred.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -2665,7 +2679,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Black and White with Yellow Filter</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_bwyellow.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="editorconvert_bwyellow.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -2687,7 +2701,7 @@ fi                 </screen></blockquote>
               <tbody>
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Sepia</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_sepia.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="editorconvert_sepia.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                     
                     <entry>
@@ -2697,7 +2711,7 @@ fi                 </screen></blockquote>
                                 
                  <row>
                     <entry>
-                    <screenshot><screeninfo>Brown</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_brown.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="editorconvert_brown.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                     
                     <entry>
@@ -2707,7 +2721,7 @@ fi                 </screen></blockquote>
             
                <row>
                     <entry>
-                    <screenshot><screeninfo>Cold Tone</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_cold.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="editorconvert_cold.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                     
                     <entry>
@@ -2717,7 +2731,7 @@ fi                 </screen></blockquote>
             
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Platinum</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_platinium.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="editorconvert_platinium.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                     
                     <entry>
@@ -2727,7 +2741,7 @@ fi                 </screen></blockquote>
             
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Selenium</screeninfo><mediaobject><imageobject><imagedata fileref="editorconvert_selenium.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="editorconvert_selenium.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                     
                     <entry>
@@ -2776,11 +2790,12 @@ fi                 </screen></blockquote>
 
             <para>The figure below pictures the problem: Every time there is a transfer from one device to another, an ICC profile is used to correct for the inaccuracies or limitations of the device. The central work space (which is called Profile Connection Space, PCS) provides a common platform to translate the device color spaces into each other.
             </para>
-            
-            <example>  <title>The inter-connection between devices and their color spaces</title>
-                <screenshot><screeninfo>Gerhard Kulzer" </screeninfo><mediaobject><imageobject><imagedata
-                fileref="colormanagement.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-            </example>
+
+            <para>The inter-connection between devices and their color spaces</para>
+            <para>
+                <inlinemediaobject><imageobject><imagedata
+                fileref="colormanagement.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </para>
             
 
             <tip>
@@ -2805,8 +2820,11 @@ fi                 </screen></blockquote>
                     The following diagram tries to outline the logic &digikam; will follow in its CM work flow, depending on the settings made in <emphasis>IO Files</emphasis> and <emphasis>ICC profiles</emphasis> of the configuration page.
             </para>
 
-           <example>  <title>The &digikam; internal work flow logic depending on the settings</title>
-                <screenshot><screeninfo>Gerhard Kulzer" </screeninfo><mediaobject><imageobject><imagedata                fileref="ICCworkflowlogic.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+           <para> 
+              <inlinemediaobject><imageobject>
+                <imagedata fileref="ICCworkflowlogic.png" format="PNG" /> 
+              </imageobject></inlinemediaobject> 
+           </para>
             
 
             <sect3 id="softproofing">
@@ -2869,9 +2887,9 @@ fi                 </screen></blockquote>
                 The Album settings control how the main application will behave. 
                 </para>
     
-                <example>  <title>The Album Settings</title>
-                    <screenshot><screeninfo>The Album Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupalbum.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-                </example>
+                <para>  
+                    <inlinemediaobject><imageobject><imagedata fileref="setupalbum.png" format="PNG" /> </imageobject></inlinemediaobject>
+                </para>
                                     
                 <para>
                 The <guilabel>Album Library Path</guilabel> is the location on your hard disk where &digikam; will store all of the Albums. If you change this location without manually moving all of the Albums on the hard disk, &digikam; will think that there are no existing Albums and will generate a new database at the new location. Your old Albums will not be altered but you will need to change the Album Library Path back to the old location to access them. If you are not sure of what you are doing it is best not to change this location.
@@ -2895,8 +2913,8 @@ fi                 </screen></blockquote>
                 </para>
     
                 
-<example>  <title>The Embedded Information Settings</title>
-                    <screenshot><screeninfo>The Embedded Information Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupembeddedinfo.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+<para>  
+                    <inlinemediaobject><imageobject><imagedata fileref="setupembeddedinfo.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
                 
                                     
                 <para>
@@ -2924,9 +2942,9 @@ fi                 </screen></blockquote>
                     This settings page permits to enter default identity and copyright data as shown on the printscreen below. The data will be automatically written into the respective IPTC data fields if so selected during the download from the <link linkend="using-kapp-cameraclientrenaming">camera interface</link>
                 </para>
 
-                <example>  <title>Default identity data entry</title>
-                    <screenshot><screeninfo>Default data entry form</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientidentity.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-                </example>
+                <para>  
+                    <inlinemediaobject><imageobject><imagedata fileref="cameraclientidentity.png" format="PNG" /> </imageobject></inlinemediaobject>
+                </para>
 
             </sect3>
 
@@ -2937,9 +2955,9 @@ fi                 </screen></blockquote>
                 This dialog manage your Collection types. Album Collections are described in detail in the <link linkend="using-kapp-myalbumsview">My Albums</link> section. 
                 </para>
     
-                <example>  <title>The Collection Settings</title>
-                    <screenshot><screeninfo>The Collection Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupcollections.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-                </example>
+                <para> 
+                    <inlinemediaobject><imageobject><imagedata fileref="setupcollections.png" format="PNG" /> </imageobject></inlinemediaobject>
+                </para>
     
             </sect3>
     
@@ -2951,8 +2969,8 @@ fi                 </screen></blockquote>
                 </para>
     
                 
-<example>  <title>The Mime Type Settings</title>
-                    <screenshot><screeninfo>The Mime Type Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupmimetypes.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+<para>  
+                    <inlinemediaobject><imageobject><imagedata fileref="setupmimetypes.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
                 
     
             </sect3>                
@@ -2964,8 +2982,8 @@ fi                 </screen></blockquote>
                 </para>
                 
                 
-<example>  <title>The Image Editor Settings</title>
-                    <screenshot><screeninfo>The Image Editor Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupimageeditor.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+<para> 
+                    <inlinemediaobject><imageobject><imagedata fileref="setupimageeditor.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
                 
             </sect3>
 
@@ -2977,8 +2995,8 @@ fi                 </screen></blockquote>
                 </para>
     
                 
-<example>  <title>The Image Editor IO File Settings</title>
-                    <screenshot><screeninfo>The Image Editor IO File Settings</screeninfo><mediaobject><imageobject><imagedata fileref="imageeditorfilesettings.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+<para>
+                    <inlinemediaobject><imageobject><imagedata fileref="imageeditorfilesettings.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
                 
 
                 <para>TODO RAW image decoding options
@@ -3008,8 +3026,8 @@ fi                 </screen></blockquote>
                 </para>
                             
                 
-<example>  <title>The setup of the image plugins</title>
-                    <screenshot><screeninfo>The setup of the image plugins</screeninfo><mediaobject><imageobject><imagedata fileref="setupimageplugins.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+<para>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupimageplugins.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
                 
 
             </sect3>
@@ -3018,8 +3036,8 @@ fi                 </screen></blockquote>
             <title>Slide show setup</title>
                 <para>TODO Slide show setup</para>
                 
-<example>  <title>The setup of the slide show</title>
-                    <screenshot><screeninfo>The setup of the slide show</screeninfo><mediaobject><imageobject><imagedata fileref="setupslideshow.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+<para>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupslideshow.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
                 
 
             </sect3>
@@ -3028,8 +3046,8 @@ fi                 </screen></blockquote>
             <title>ICC Profiles setup</title>
                 <para>TODO ICC Profiles</para>
                 
-<example>  <title>The setup of ICC profiling</title>
-                    <screenshot><screeninfo>The setup of ICC profiling</screeninfo><mediaobject><imageobject><imagedata fileref="setupiccprofiles.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+<para>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupiccprofiles.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
                 
 
             </sect3>
@@ -3042,8 +3060,8 @@ fi                 </screen></blockquote>
                 </para>
     
                 
-<example>  <title>The Kipi Plugins Settings</title>
-                    <screenshot><screeninfo>The Kipi Plugins Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupkipiplugins.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+<para>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupkipiplugins.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
                 
     
                 <para>
@@ -3070,8 +3088,8 @@ fi                 </screen></blockquote>
                 </para>
                 
                 
-<example>  <title>The Camera Settings</title>
-                    <screenshot><screeninfo>The Camera Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupcamera.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+<para>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupcamera.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
                 
                 
                 <anchor id="cameraselection.anchor"/>
@@ -3085,8 +3103,8 @@ fi                 </screen></blockquote>
                 </para>
                             
                 
-<example>  <title>The Add Camera Dialog</title>
-                    <screenshot><screeninfo>The Add Camera Dialog</screeninfo><mediaobject><imageobject><imagedata fileref="setupaddcamera.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+<para>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupaddcamera.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
                 
     
                 <para>
@@ -3121,8 +3139,8 @@ fi                 </screen></blockquote>
                 </para>
                 
                 
-<example>  <title>The Miscellaneous Settings</title>
-                    <screenshot><screeninfo>The Miscellaneous Settings</screeninfo><mediaobject><imageobject><imagedata fileref="setupmisc.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+<para>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupmisc.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
                 
                 
             </sect3>                   
@@ -3148,7 +3166,7 @@ fi                 </screen></blockquote>
             <tbody>
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Default Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemedefault.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupthemedefault.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -3158,7 +3176,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Dessert Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemedessert.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupthemedessert.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -3169,7 +3187,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Clean Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemeclean.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupthemeclean.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -3179,7 +3197,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Dark Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemedark.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupthemedark.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -3189,7 +3207,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Dreary Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemedreary.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupthemedreary.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -3199,7 +3217,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Marine Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthememarine.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupthememarine.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -3209,7 +3227,7 @@ fi                 </screen></blockquote>
 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>OrangeCrush Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemeorangecrush.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupthemeorangecrush.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -3219,7 +3237,7 @@ fi                 </screen></blockquote>
                                                                 
                 <row>
                     <entry>
-                    <screenshot><screeninfo>Default Theme</screeninfo><mediaobject><imageobject><imagedata fileref="setupthemesandy.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupthemesandy.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                     
                     <entry>
@@ -3243,7 +3261,7 @@ fi                 </screen></blockquote>
 
 <!-- *********************************************************************** -->
 
-<chapter id="menudescriptions">
+<chapter id="menu-descriptions">
 <title>Menu Descriptions</title>
 
 <sect1>
@@ -3257,7 +3275,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Alt</keycap><keycap>Left</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>Left</keycap></keycombo> </shortcut>
                 <guimenu>Album</guimenu><guimenuitem>Back</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Go back to the previously visited Album using history.</action></para></listitem>
@@ -3265,7 +3283,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Alt</keycap><keycap>Right</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>Right</keycap></keycombo> </shortcut>
                 <guimenu>Album</guimenu><guimenuitem>Forward</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Go forward to the previously visted Album using history. You can only go forward if you've just gone back.</action></para></listitem>
@@ -3273,14 +3291,14 @@ fi                 </screen></blockquote>
         
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>N</keycap></keycombo> </shortcut>  <guimenu>Album</guimenu><guimenuitem>New Album</guimenuitem>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>N</keycap></keycombo> </shortcut>  <guimenu>Album</guimenu><guimenuitem>New Album</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Create a new album folder.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>F3</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>F3</keycap></keycombo> </shortcut>
                 <guimenu>Album</guimenu><guimenuitem>Edit Album Properties</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Edit the currently selected album title, comments and collection.</action></para></listitem>
@@ -3297,7 +3315,7 @@ fi                 </screen></blockquote>
         <!-- Import sub menu -->
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>I</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>I</keycap></keycombo> </shortcut>
                 <guimenu>Album</guimenu><guimenuitem>Import</guimenuitem><guimenuitem>Add Images</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Select images to be added to the currently selected Album.</action></para></listitem>
@@ -3435,7 +3453,7 @@ fi                 </screen></blockquote>
         
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>Q</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>Q</keycap></keycombo> </shortcut>
                 <guimenu>Album</guimenu><guimenuitem>Quit</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Quit &digikam;</action></para></listitem>
@@ -3513,7 +3531,7 @@ fi                 </screen></blockquote>
         
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Alt</keycap><keycap>Return</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>Return</keycap></keycombo> </shortcut>
                 <guimenu>Image</guimenu><guimenuitem>Properties</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>View General Properties, Permissions, embedded Meta-Data, EXIF information, and Histogram of the currently selected image.</action></para></listitem>
@@ -3641,7 +3659,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Shift</keycap><keycap>Delete</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>Delete</keycap></keycombo> </shortcut>
                 <guimenu>Image</guimenu><guimenuitem>Delete/Move to trash</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Delete/Move the currently selected images to Trash.</action></para></listitem>
@@ -3662,7 +3680,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>A</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>A</keycap></keycombo> </shortcut>
                 <guimenu>Select</guimenu><guimenuitem>Select All</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Select all images currently shown</action></para></listitem>
@@ -3670,7 +3688,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>U</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>U</keycap></keycombo> </shortcut>
                 <guimenu>Select</guimenu><guimenuitem>Select None</guimenuitem>
             </menuchoice></term>
         <listitem><para><action>Unselect all items in the current view</action></para></listitem>
@@ -3678,7 +3696,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>*</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>*</keycap></keycombo> </shortcut>
                 <guimenu>Select</guimenu><guimenuitem>Invert Selection</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Invert the current selection</action></para></listitem>
@@ -3699,7 +3717,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>+</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>+</keycap></keycombo> </shortcut>
                 <guimenu>View</guimenu><guimenuitem>Increase Thumbnail Size</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Increase the thumbnail size of the currently selected Album.</action></para></listitem>
@@ -3707,7 +3725,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>-</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>-</keycap></keycombo> </shortcut>
                 <guimenu>View</guimenu><guimenuitem>Decrease Thumbnail Size</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Decrease the thumbnail size of the currently selected Album.</action></para></listitem>
@@ -3948,7 +3966,7 @@ fi                 </screen></blockquote>
         
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>F</keycap></keycombo>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>F</keycap></keycombo>
                 </shortcut>
                 <guimenu>Settings</guimenu><guimenuitem>Full Screen Mode</guimenuitem>
             </menuchoice></term>
@@ -4048,7 +4066,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>Home</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>Home</keycap></keycombo> </shortcut>
                 <guimenu>File</guimenu><guimenuitem>First</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Display the first image of current Album.</action></para></listitem>
@@ -4056,7 +4074,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>End</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>End</keycap></keycombo> </shortcut>
                 <guimenu>File</guimenu><guimenuitem>Last</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Display the last image of current Album.</action></para></listitem>
@@ -4064,7 +4082,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>S</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>S</keycap></keycombo> </shortcut>
                 <guimenu>File</guimenu><guimenuitem>Save</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Save the current image if it has been modified.</action></para></listitem>
@@ -4086,7 +4104,7 @@ fi                 </screen></blockquote>
                             
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo><keycap>Shift</keycap><keycap>Del</keycap></keycombo> </shortcut>
+                <shortcut><keycombo><keycap>&Shift;</keycap><keycap>Del</keycap></keycombo> </shortcut>
                 <guimenu>File</guimenu><guimenuitem>Delete File/Move to trash</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Delete/Move to trash the current image from the current 
@@ -4095,7 +4113,7 @@ fi                 </screen></blockquote>
     
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>P</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>P</keycap></keycombo> </shortcut>
                 <guimenu>File</guimenu><guimenuitem>Print Image</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Print the current image.</action></para></listitem>
@@ -4103,7 +4121,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo ><keycap>Ctrl</keycap><keycap>Q</keycap></keycombo> </shortcut>
+                <shortcut><keycombo ><keycap>&Ctrl;</keycap><keycap>Q</keycap></keycombo> </shortcut>
                 <guimenu>File</guimenu><guimenuitem>Quit</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Quit &digikam; Image Editor.</action></para></listitem>
@@ -4124,7 +4142,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>C</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>C</keycap></keycombo> </shortcut>
                 <guimenu>Edit</guimenu><guimenuitem>Copy</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Copy the current image selection in the clipboard.</action></para></listitem>
@@ -4132,7 +4150,7 @@ fi                 </screen></blockquote>
         
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>Z</keycap></keycombo> </shortcut>
                 <guimenu>Edit</guimenu><guimenuitem>Cancel</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Cancel the last action applied to the current image using history.</action></para></listitem>
@@ -4140,7 +4158,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>Z</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>Z</keycap></keycombo> </shortcut>
                 <guimenu>Edit</guimenu><guimenuitem>Redo</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Redo the last action applied to the current image using history.</action></para></listitem>
@@ -4170,7 +4188,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Alt</keycap><keycap>Return</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>Return</keycap></keycombo> </shortcut>
                 <guimenu>Image</guimenu><guimenuitem>Properties</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>View General Properties, Permissions, embedded Meta-Data, EXIF information, 
@@ -4530,7 +4548,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Shift</keycap><keycap>1</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>1</keycap></keycombo> </shortcut>
                 <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>90 
                 degrees</guimenuitem>
             </menuchoice></term>
@@ -4539,7 +4557,7 @@ fi                 </screen></blockquote>
     
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Shift</keycap><keycap>2</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>2</keycap></keycombo> </shortcut>
                 <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>180 
                 degrees</guimenuitem>
             </menuchoice></term>
@@ -4548,7 +4566,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Shift</keycap><keycap>3</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>3</keycap></keycombo> </shortcut>
                 <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>270 
                 degrees</guimenuitem>
             </menuchoice></term>
@@ -4669,7 +4687,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>+</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>+</keycap></keycombo> </shortcut>
                 <guimenu>View</guimenu><guimenuitem>Zoom In</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Increase the zoom factor on the current image.</action></para></listitem>
@@ -4677,7 +4695,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>-</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>-</keycap></keycombo> </shortcut>
                 <guimenu>View</guimenu><guimenuitem>Zoom Out</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Decrease the zoom factor on the current image.</action></para></listitem>
@@ -4878,7 +4896,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>Ctrl</keycap><keycap>Shift</keycap><keycap>F</keycap></keycombo>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>F</keycap></keycombo>
                 </shortcut>
                 <guimenu>Settings</guimenu><guimenuitem>Full Screen Mode</guimenuitem>
             </menuchoice></term>
