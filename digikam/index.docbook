@@ -1683,7 +1683,7 @@
             </para></caution>
 
         </sect2>
-        
+
         <sect2 id="using-kapp-cameraclientrenaming">
         <title>Automatic Renaming</title>
 
@@ -1695,14 +1695,6 @@
                 <screenshot><screeninfo>Files Renaming Options</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientsetting1.png" format="PNG" /> </imageobject></mediaobject></screenshot>
             </example>
 
-            <example> <title>Albums Auto-creation Options</title>
-                <screenshot><screeninfo>Albums Auto-creation Options</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientsetting2.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-            </example>
-
-            <example> <title>On the fly Operations Options</title>
-                <screenshot><screeninfo>On the fly Operations Options</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientsetting3.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-            </example>
-
             <para>
             &digikam; can automatically rename your photographs using the date and time information included by the camera in the photograph. To use this feature, click the <guilabel>Settings</guilabel> button on the Camera Interface. The Camera Interface window will expand to reveal some extra features. Select <guilabel>Customize</guilabel> and then enter any filename prefix you would like. As an option you can then add the date &amp; time, a sequence number or a combination of both. The sequence number may be needed if you have a camera with a very fast multi-shoot mode where it is possible to get two photographs with exactly the same data and time.
             </para>
@@ -1712,15 +1704,15 @@
             <para>
                 The 'On the fly operations' open three more options that act on the photos before storing them on disk. The first two relate to the authors data in <link linkend="authoridentity">Default Author Identity</link>" Settings. If checked the respective items will be copied into the EXIF tags and IPTC fields. The last option allows to fix a date &amp; time for all downloaded pictures.
             </para>
-    
+
             <tip>
                 <para>
                 <itemizedlist>
-            
+
                     <listitem><para>If you want another date format then the default date format, you could fill in for example: <userinput>photo-%Y-%m-%d %H:%M:%S</userinput> in the prefix edit line (turn off <guilabel>Add camera provided date and time</guilabel>). For additional customization read the man page of strftime.</para></listitem>
 
                     <listitem><para>When you select <guilabel>Use camera provided names</guilabel>, you have the option to change the filenames to lowercase when downloading. Or use uppercase if you prefer.</para></listitem>
-                   
+
                 </itemizedlist>
                 </para>
             </tip>
@@ -1728,9 +1720,9 @@
             <para>
             The new filename that &digikam; will use for the photographs when they are downloaded is shown underneath the name provided by the camera in the thumbnail view. The renaming settings will be remembered next time you use the camera Interface.
             </para>
-                
+
         </sect2>
-        
+
         <sect2>
         <title>Camera Information Based Operations</title>
 
@@ -1741,15 +1733,19 @@
                  &digikam; can use any information about the orientation of the camera in the moment the photograph was taken for automatic rotation of the photograph when it is downloaded. Not all cameras include this informations. See the <link linkend="using-kapp-sidebarmetadata">sidebar Meta-Data</link> section for more detail about informations that your camera may have embedded in your photographs.
                 </para>
 
+                <example> <title>On the fly Operations Options</title>
+                    <screenshot><screeninfo>On the fly Operations Options</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientsetting3.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
+
                 <para>
                 This automatic rotation is switched on by default, and if your camera does not include the information, &digikam; will leave the photograph at its original orientation. If you would like to switch the automatic rotation off, click the <guilabel>Advanced</guilabel> button and deselect the <guilabel>Auto Orient</guilabel> option at the bottom of the window.
                 </para>
-            
+
             </sect3>
-            
+
             <sect3>
             <title>Automatic Destination Albums Creation</title>
-                
+
                 <para>
                 If your camera provides information about the date of the photograph's taking, &digikam; can use this to automatically create sub-albums in the destination Album when it is downloaded. 
                 Sub-albums names will be based on image dates. All images which have the same date will be downloaded into the same sub-album. Not all cameras include this information. 
@@ -1757,7 +1753,11 @@
                 sidebar Meta-Data</link> section for more detail about
                 information your camera may have embedded in your photographs.
                 </para>
-                
+
+                <example> <title>Albums Auto-creation Options</title>
+                    <screenshot><screeninfo>Albums Auto-creation Options</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientsetting2.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
+
                 <para>
                 This option is switched off by default and in this case &digikam; will download the photographs 
                 in the root destination Albums. If you would like to switch on this option click the 
@@ -1768,14 +1768,14 @@
             </sect3>
 
         </sect2>
-        
+
         <sect2>
         <title>Uploading Photographs to your camera</title>
-            
+
             <para>
             The simplest way to upload photographs from your computer to your camera is to click the <guilabel>Download</guilabel> button and then click <guilabel>Upload</guilabel>. A standard &kde; file selection dialog will appear to select the files from your computer to copying on your camera. You can select more than one file using the standard &kde; selection methods.
             </para>
-        
+
             <para>
             When opictures selection is done, &digikam; will ask you where you want upload the files in your camera. A camera folder selection dialog will appear. Just select one folder and press OK to start uploading. All images from your computer will not removed.
             </para>
@@ -1783,13 +1783,13 @@
             <example>  <title>The Camera Folder Selection Dialog</title>
                 <screenshot><screeninfo>The Camera Folder Selection Dialog</screeninfo><mediaobject><imageobject><imagedata fileref="camerafolderselectiondialog.png" format="PNG" /> </imageobject></mediaobject></screenshot>
             </example>
-        
+
             <note><para>
             Uploading feature is not supported by all camera drivers.
             </para></note>
 
         </sect2>
-                            
+
         <sect2 id="using-kapp-gps">
         <title>How to use a GPS device with &digikam;</title>
             <note><para>
