@@ -1124,7 +1124,7 @@
         <title>The Metadata Tabs</title>
 
            <para>
-           The metadata sidebar is composed of four sub tabs <guilabel>EXIF, Makernotes, IPTC and GPS data</guilabel>. A combo-box lets you choose between full and simplified data display. Next to it are a printer and copy icon, They do just that - print (&kprinter; dialog) or copy the respective tab data to the clipboard. In the main window view you will find a navigation button set with the file name on top of the tabs.
+           The metadata sidebar is composed of four sub tabs <guilabel>EXIF, Makernotes, IPTC and GPS data</guilabel>. On the left, two button lets you choose between full and simplified data display. Next to it are a printer and copy icon, They do just that - print (&kprinter; dialog) or copy the respective tab data to the clipboard. In the main window view you will find a navigation button set with the file name on top of the tabs.
            </para>
 
            <para><inlinemediaobject><imageobject><imagedata fileref="sidebarmetadata.png" format="PNG" /> </imageobject><textobject><phrase>The Metadata Tabs</phrase></textobject></inlinemediaobject>
@@ -1144,73 +1144,65 @@
 
                     <para>
                     EXIF format contains a set of marker sections named <emphasis>Image File Directories</emphasis> (IFD). The sections likely to be found in a normal EXIF file are as follows:
-                    
+
                     <itemizedlist>
-            
+
                         <listitem><para>
-                            <guilabel>0</guilabel>: contains general information about the photograph.
+                            <guilabel>Image Information</guilabel>: contains general information about the image.
                         </para></listitem>
 
                         <listitem><para>
-                            <guilabel>1</guilabel>: contains information about the embedded thumbnail image.
+                            <guilabel>Embedded Thumbnail</guilabel>: contains information about the embedded thumbnail image.
                         </para></listitem>
 
                         <listitem><para>
-                            <guilabel>EXIF</guilabel>: contains extended information about the photograph.
-                        </para></listitem>
-
-                        <listitem><para>
-                            <guilabel>GPS</guilabel>: contains Global Positioning System information provides by the camera during the capture.
+                            <guilabel>Photograph Information</guilabel>: contains extended information about the photograph.
                         </para></listitem>
 
                         <listitem><para>
                             <guilabel>Interoperability</guilabel>: contains information to support interoperability between different EXIF implementations.
                         </para></listitem>
-                                                                                                    
-                        <listitem><para>
-                            <guilabel>Thumbnail</guilabel>: displays the embedded thumbnail image.
-                        </para></listitem>
-                    
+
                     </itemizedlist>
-                    
-                    </para>                
+
+                    </para>
 
                 </sect4>
-                
+
                 <sect4>
                 <title>How to Use EXIF Viewer?</title>
-                    
-                    <para>             
+
+                    <para>
                     You can review embedded EXIF information for the selected image from the first sidebar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections.
                     </para>
-            
+
                     <para><inlinemediaobject><imageobject><imagedata fileref="sidebarmetadataexif.png" format="PNG" /> </imageobject><textobject><phrase>The EXIF Viewer in Action</phrase></textobject></inlinemediaobject>
                     </para>
-            
+
                     <para>
                     You can use two different levels to display EXIF marker sections:
-                    
+
                     <itemizedlist>
-            
+
                         <listitem><para>
-                            <guilabel>Simple</guilabel>: display only EXIF marker.
+                            <guilabel>Simple</guilabel>: display only more important EXIF marker for photograph.
                         </para></listitem>
 
                         <listitem><para>
-                            <guilabel>Full</guilabel>: display all markers except thumbnails.
+                            <guilabel>Full</guilabel>: display all EXIF markers.
                         </para></listitem>
 
                     </itemizedlist>
-                  
-                    Some vendors add additional EXIF sections, such as Canon, Fujifilm, Nikon, and Sigma. These sections contain vendor and model specific notes. These will be displayed with 
-                    <guilabel>Full</guilabel> level.
+
+                    Some vendors add additional EXIF sections, such as Canon, Fujifilm, Nikon, Minolta, and Sigma. These sections contain vendor and model specific notes. These will be displayed in <guilabel>Makernote</guilabel> section.
                     </para>
+
                     <para>
                     For the displayed data, EXIF Viewer provides a contextual help. Select an item with &RMB; and the corresponding help can be displayed with the "What's This?" option of the dialog.
                     </para>
-                                
+
                 </sect4>
-           
+
            </sect3>
 
            <sect3 id="using-kapp-sidebarmetadatamakernote">
@@ -1218,7 +1210,7 @@
               <para>
               tbc
               </para>
-           
+
            </sect3>
 
 
@@ -1227,7 +1219,7 @@
               <para>
               tbc
               </para>
-           
+
            </sect3>
 
            <sect3 id="using-kapp-sidebarmetadatagps">
