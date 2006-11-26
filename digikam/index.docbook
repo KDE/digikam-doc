@@ -1134,10 +1134,10 @@
            <title>EXIF Tags</title>
 
                 <anchor id="kexif.anchor"/>
-                
+
                 <sect4>
                 <title>What is EXIF?</title>
-                    
+
                     <para>
                     EXIF stands for <emphasis>EXtended Interchange Format</emphasis>. It was designed specifically for digital cameras. It allows a large amount of information about the photograph to be stored. This information describes the camera which took the image along with the settings (including date and time) in use when the picture was taken. An inline thumbnail can be included.
                     </para>
@@ -1194,11 +1194,11 @@
 
                     </itemizedlist>
 
-                    Some vendors add additional EXIF sections, such as Canon, Fujifilm, Nikon, Minolta, and Sigma. These sections contain vendor and model specific notes. These will be displayed in <guilabel>Makernote</guilabel> section.
+                    For the displayed data, EXIF Viewer provides a contextual help. Select an item with &RMB; and the corresponding help can be displayed with the "What's This?" option of the dialog.
                     </para>
 
                     <para>
-                    For the displayed data, EXIF Viewer provides a contextual help. Select an item with &RMB; and the corresponding help can be displayed with the "What's This?" option of the dialog.
+                    Some vendors add additional EXIF sections, such as Canon, Fujifilm, Nikon, Minolta, and Sigma. These sections contain vendor and model specific notes. These will be displayed in <guilabel>Makernote</guilabel> section.
                     </para>
 
                 </sect4>
@@ -1206,19 +1206,62 @@
            </sect3>
 
            <sect3 id="using-kapp-sidebarmetadatamakernote">
-           <title>TODO Makernotes</title>
-              <para>
-              tbc
-              </para>
+           <title>Makernote Tags</title>
+
+                <sect4>
+                <title>What is Makernote?</title>
+
+                    <para>
+                    The EXIF standard defines a Makernote tag, which allows camera manufacturers to place any custom format metadata in the file. This is used increasingly by camera manufacturers to store a myriad of camera settings not listed in the EXIF standard, such as shooting modes, post-processing settings, serial number, focusing modes, etc. As this tag format is proprietary and manufacturer-specific.
+                    </para>
+
+                </sect4>
+
+                <sect4>
+                <title>How to Use Makernote Viewer?</title>
+
+                    <para>
+                    You can review embedded Makernote information for the selected image from the first sidebar tab. The Makernote Viewer is purely informational: nothing you do with it will cause any change to the Makernote sections.
+                    </para>
+
+                    <para><inlinemediaobject><imageobject><imagedata fileref="sidebarmetadatamakernote.png" format="PNG" /> </imageobject><textobject><phrase>The Makernote Viewer in Action</phrase></textobject></inlinemediaobject>
+                    </para>
+
+                </sect4>
 
            </sect3>
 
-
            <sect3 id="using-kapp-sidebarmetadataiptc">
-           <title>TODO IPTC</title>
-              <para>
-              tbc
-              </para>
+           <title>IPTC Tags</title>
+
+                <sect4>
+                <title>What is IPTC?</title>
+
+                    <para>
+                    The <ulink url="http://www.iptc.org">International Press Telecommunications Council</ulink>, is a consortium of the world's major news agencies and news industry vendors. It develops and maintains technical standards for improved news exchange that are used by virtually every major news organization in the world.
+                    </para>
+
+                    <para>
+                    The IPTC was established in 1965 by a group of news organisations to safeguard the telecommunications interests of the world's press. Since the late 1970s IPTC's activities have primarily focussed on developing and publishing industry standards for the interchange of news data.
+                    </para>
+
+                    <para>
+                    In particular, the IPTC defined a set of metadata attributes that can be applied to images. These were defined originally in 1979, and revised significantly in 1991 to be the "Information Interchange Model" (IIM), but the concept really advanced in 1994 when Adobe defined a specification for actually embedding the metadata into digital image files - known as "IPTC headers".
+                    </para>
+
+                </sect4>
+
+                <sect4>
+                <title>How to Use IPTC Viewer?</title>
+
+                    <para>
+                    You can review embedded IPTC information for the selected image from the first sidebar tab. The IPTC Viewer is purely informational: nothing you do with it will cause any change to the IPTC sections.
+                    </para>
+
+                    <para><inlinemediaobject><imageobject><imagedata fileref="sidebarmetadataiptc.png" format="PNG" /> </imageobject><textobject><phrase>The IPTC Viewer in Action</phrase></textobject></inlinemediaobject>
+                    </para>
+
+                </sect4>
 
            </sect3>
 
