@@ -297,7 +297,7 @@
                 </para>
 
                 <para>
-                &digikam; supports RAW image loading only relying on the <ulink url="http://www.cybercom.net/~dcoffin/dcraw/"> DCRAW program</ulink>. The main Raw file formats supported by &digikam; are listed below:
+                &digikam; supports RAW image loading only relying on the <ulink url="http://www.cybercom.net/~dcoffin/dcraw/"> DCRAW program</ulink> witch is included into &digikam; core. The main Raw file formats supported by &digikam; are listed below:
                                             
                 <informaltable><tgroup cols="2">
         
@@ -1267,15 +1267,32 @@
 
            <sect3 id="using-kapp-sidebarmetadatagps">
            <title>Metadata GPS tab</title>
-              <para>
-	      This tab provides the GPS (<link linkend="using-kapp-gps">note</link>) section of the metadata. The displayed positioning data are actually stored in the image's EXIF tags (and not in the database). That allows the location to be read by any other application that can understand EXIF GPS data.
-              </para>
-	      <para>Some tips as to how to use a GPS device with a camera are (<link linkend="using-kapp-gps">here</link>)
-              </para>
 
-              <example>  <title>sidebar Metadata GPS info</title>
-                   <screenshot><screeninfo>sidebar Metadata info</screeninfo><mediaobject><imageobject><imagedata fileref="sidebarmetadatagps.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-              </example>
+                <sect4>
+                <title>What is GPS?</title>
+
+                    <para>
+                    The Global Positioning System, usually called GPS, is the only fully-functional satellite navigation system. A constellation of more than two dozen GPS satellites broadcasts precise timing signals by radio, allowing any GPS receiver to accurately determine its location (longitude, latitude, and altitude) anywhere on Earth. GPS also provides an extremely precise time reference and gauge speed with a very high degree of accuracy.
+                    </para>
+                    
+                    <para>
+                    The GPS information can be stored in pictures directly by camera or to syncing files with an external GPS device. Look this <link linkend="using-kapp-gps">section</link> for more informations.
+                    </para>
+                    
+                </sect4>
+
+                <sect4>
+                <title>How to Use GPS Locator?</title>
+
+                    <para>
+                    This tab provides the GPS section of the metadata. The displayed positioning data are actually stored in the image's EXIF tags (and not yet in the database). That allows the location to be read by any other application that can understand EXIF GPS data.
+                    </para>
+
+                    <example>  <title>sidebar Metadata GPS info</title>
+                        <screenshot><screeninfo>sidebar Metadata info</screeninfo><mediaobject><imageobject><imagedata fileref="sidebarmetadatagps.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    </example>
+
+                </sect4>
 
            </sect3>
 
