@@ -120,7 +120,7 @@
        An easy to use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than 600 digital cameras are supported through the gphoto2 library.
        </para>
        
-       <para>&digikam; incorporates a fast Image Editor with a the basic image editing tools. You can use the Image Editor to view your photographs, comment and rate them, make corrections and alterations. The editing power can be easily extended by two sets of plugins, the <ulink url="http://extragear.kde.org/apps/kipi">Kde Image Plugins Interface</ulink> and the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins.</ulink>
+       <para>&digikam; incorporates a fast Image Editor with a the basic image editing tools. You can use the Image Editor to view your photographs, comment and rate them, make corrections and alterations. The editing power can be easily extended by two sets of plugins, the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface</ulink> and the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins.</ulink>
        </para>
 
        <para>Whereas &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports RAW format conversion through David Coffins dcraw and ICC color management work flow. 
@@ -437,7 +437,7 @@
         
         <itemizedlist>
             
-                <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="http://extragear.kde.org/apps/kipi">Kde Image Plugins Interface project</ulink> is an effort to develop a common plugin structure for &digikam;, <application>KimDaBa</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi Plugins setup is described in this <link linkend="setupkipiplugins">section</link>.</para></listitem>
+                <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface project (kipi)</ulink> is an effort to develop a common plugin structure for &digikam;, <application>KimDaBa</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi Plugins setup is described in this <link linkend="setupkipiplugins">section</link>.</para></listitem>
 
                 <listitem><para><emphasis>Image Editor Plugins</emphasis>: these plugins add new image manipulation options in the &digikam; Image Editor. The <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink> is dedicated to providing a collection of tools using this architecture. Image Editor Plugins setup is described in this <link linkend="setupeditor">section</link>.
                 </para></listitem>
@@ -1826,7 +1826,7 @@
                 But if, after some time, one has forgotten where the picture was taken, if one loves the nice feature to open with a simple click a browser displaying a zoom of the area, if you like to send your picture as a postcard to another &digikam; user (who is then able to locate your shot), or if you simply need the documentation aspect of it - having position data stored in a photo is great.
             </para>
             <para>
-                Now, how do we get GPS data into the images? First it is to say that <ulink url="http://www.exiv2.org/tags.html">exif2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files and per 'manual' insertion of known locations.
+                Now, how do we get GPS data into the images? First it is to say that <ulink url="http://www.exiv2.org/tags.html">exif2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files using the <ulink url="http://www.kipi-plugins.org">Geolocalization</ulink> kipi-plugin and per 'manual' insertion of known locations.
             </para>
             <itemizedlist>
                 
@@ -1847,34 +1847,23 @@
                 
                 <listitem><para>Post-treatment of GPS data and image files</para>
                     <para>
+                        Using the <ulink url="http://www.kipi-plugins.org">Geolocalization</ulink> kipi-plugin.
+                    </para>
+                    <para>
+                        The approach is dead easy: whilst taking your pictures just keep a GPS device running and carry it around with the camera. Once you are done, download the pictures and the GPS tracks, and run the above plugin. It will correlate the data in the time domain; so it is important that the camera be accurate in its clock setting (the GPS device is always accurate through the satellites). The positional accuracy interpolated from the track points can be as good as 20 meters. Of course, this approach only works if your camera can record EXIF data.
+                    </para>
+                    <para>The GPS track download from a device can be managed with the <ulink url="http://www.ncc.up.pt/gpsman">gpsman</ulink> or <ulink url="http://www.gpsbabel.org">gpsbabel</ulink>. It is important that the downloaded track are being stored in gpx format, which is the only one compatiple with the Geolocalization plugin.
+                    </para>
+                    <para>
                         Several programs exist for &Windows; and MacOS that are able to extract and correlate data from pictures and GPS data tracks. The following site provides the same functionality for &Linux;: 
                         <ulink url="http://freefoote.dview.net/linux_gpscorr.html"></ulink> 
                         <ulink url="http://www.carto.net/projects/photoTools/gpsPhoto/"></ulink>
-                    </para>
-                    <para>
-                        The approach is dead easy: whilst taking your pictures just keep a GPS device running and carry it around with the camera. Once you are done download the pictures and the GPS tracks, and run the above program. It will correlate the data in the time domain; so it is important that the camera be accurate in its clock setting (the GPS device is always accurate through the satellites). The positional accuracy interpolated from the track points can be as good as 20 meters. Of course, this approach only works if your camera can record EXIF data.
                     </para>
                 </listitem>
 
                 <listitem>
                     <para>'Manual' insertion of known locations</para>
-                    <para>
-                        If you happen to know the latitude/longitude or other data you can use the <ulink url="http://www.exiv2.org/tags.html">exiv2 tool</ulink> to insert the data into the pictures. Whilst this can be done with one command line per field, it is more economic to prepare a file with all data fields provided. The following example file <quote>loc1.gps</quote> illustrates this:
-                    </para>
-                    <blockquote><screen># Ta Phrom location
-# call from commandline:$ exiv2 -m loc1.gps foo.jpg
-add Exif.GPSInfo.GPSLatitudeRef Ascii "N"
-add Exif.GPSInfo.GPSLatitude Rational "13/1 26/1 2718/100"
-add Exif.GPSInfo.GPSLongitudeRef Ascii "E"
-add Exif.GPSInfo.GPSLongitude Rational "103/1 53/1 4370/100"
-add Exif.GPSInfo.GPSMapDatum Ascii "WGS-84"
-add Exif.GPSInfo.GPSTrackRef Ascii "Ta Phrom, Siem Reap, Cambodia"
-                    </screen></blockquote>
-                    <para>
-                        The positional data (&eg; 13.44088333) must be converted into H.MS format (13.262718) and split into its constituents as shown in the given example. By the way, it is easy to find exact coordinates on the web using <ulink url="http://maps.google.com"> MapsGoogle</ulink> or <ulink url="http://http://www.multimap.com/map/home.cgi?client=public"> Multimap.com</ulink>
-                    </para>
-
-                    <para>And here is yet another script which is a GPS wrapper for Phil Harvey's <ulink url="http://www.sno.phy.queensu.ca/~phil/exiftool">ExifTool</ulink> that uses the signed floating number coordinate notation as produced by maps.google.
+                    <para>If you happen to know the latitude/longitude or other data you can use the this script which is a GPS wrapper for Phil Harvey's <ulink url="http://www.sno.phy.queensu.ca/~phil/exiftool">ExifTool</ulink> that uses the signed floating number coordinate notation as produced by maps.google.
                     </para>
                     <blockquote><screen>
 #!/bin/sh
@@ -3151,7 +3140,7 @@ fi                 </screen></blockquote>
                 </para>
                 
                 <para>
-                For more informations about Kipi plugins, you can consult the Kipi project at <ulink url="http://extragear.kde.org/apps/kipi">http://extragear.kde.org/apps/kipi</ulink>.
+                For more informations about Kipi plugins, you can consult the Kipi project at <ulink url="http://www.kipi-plugins.org">http://www.kipi-plugins.org</ulink>.
                 </para>
                 
             </sect3>                
@@ -5192,8 +5181,8 @@ Gphoto2 can be obtained from <ulink url="http://www.gphoto.org">Gphoto Home Page
 </para>
 
 <para>
-libkipi can be obtained from <ulink url="http://extragear.kde.org/apps/kipi">
-http://extragear.kde.org/apps/kipi</ulink>.
+libkipi can be obtained from <ulink url="http://www.kipi-plugins.org">
+http://www.kipi-plugins.org</ulink>.
 </para>
 
 <para>
