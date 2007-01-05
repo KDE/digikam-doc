@@ -24,11 +24,6 @@
     </author>
 
     <author>
-        <firstname>Renchi</firstname><surname>Raju</surname>
-        <affiliation><address><email>renchi_at_pooh.tam.uiuc.edu</email></address></affiliation>
-    </author>
-    
-    <author>
         <firstname>Richard</firstname><surname>Taylor</surname>
         <affiliation><address><email>rjt-digicam_at_thegrindstone_dot_me_dot_uk</email></address></affiliation>
     </author>
@@ -61,7 +56,7 @@
 
 <copyright>
     <year>2001</year>
-    <year>2006</year>
+    <year>2007</year>
     <holder>The &digikam; developers team</holder>
 </copyright>
 
@@ -70,7 +65,7 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2006-09-12</date>
+<date>2006-01-05</date>
 <releaseinfo>0.9.0</releaseinfo>
 
 <abstract>
@@ -120,7 +115,7 @@
        An easy to use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than 600 digital cameras are supported through the gphoto2 library.
        </para>
        
-       <para>&digikam; incorporates a fast Image Editor with a the basic image editing tools. You can use the Image Editor to view your photographs, comment and rate them, make corrections and alterations. The editing power can be easily extended by two sets of plugins, the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface</ulink> and the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins.</ulink>
+       <para>&digikam; incorporates a fast Image Editor with basic image editing tools. You can use the Image Editor to view your photographs, comment and rate them, make corrections and alterations. The editing power can be easily extended by two sets of plugins, the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface</ulink> and the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins.</ulink>
        </para>
 
        <para>Whereas &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports RAW format conversion through David Coffins dcraw and ICC color management work flow. 
@@ -437,7 +432,7 @@
         
         <itemizedlist>
             
-                <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface project (kipi)</ulink> is an effort to develop a common plugin structure for &digikam;, <application>KimDaBa</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi Plugins setup is described in this <link linkend="setupkipiplugins">section</link>.</para></listitem>
+                <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface project (kipi)</ulink> is an effort to develop a common plugin structure for &digikam;, <application>KPhotoAlbum</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi Plugins setup is described in this <link linkend="setupkipiplugins">section</link>.</para></listitem>
 
                 <listitem><para><emphasis>Image Editor Plugins</emphasis>: these plugins add new image manipulation options in the &digikam; Image Editor. The <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink> is dedicated to providing a collection of tools using this architecture. Image Editor Plugins setup is described in this <link linkend="setupeditor">section</link>.
                 </para></listitem>
@@ -2115,7 +2110,7 @@ fi                 </screen></blockquote>
                         <imageobject><imagedata fileref="editorcropbutton.png" format="PNG"/></imageobject>
                         <textobject> <phrase>The Image Editor Crop Button</phrase> </textobject>
                     </inlinemediaobject> 
-                    button on the toolbar and the photograph will be cropped. Use the 
+                    button on the toolbar and the photograph will be cropped (&Ctrl;+X). Use the 
                     <menuchoice><guimenu>File</guimenu>
                     <guimenuitem>Save</guimenuitem></menuchoice> or 
                     <menuchoice><guimenu>File</guimenu>
@@ -2822,7 +2817,7 @@ fi                 </screen></blockquote>
             <para>
             When you want to print the current image from the Image Editor, select 
             <menuchoice><guimenu>File</guimenu>
-            <guimenuitem>Print image</guimenuitem></menuchoice> and you get the standard &kde; Print dialog, where you can adjust the settings before printing your photograph.
+            <guimenuitem>Print image</guimenuitem></menuchoice> (&Ctrl;+P) and you get the standard &kde; Print dialog, where you can adjust the settings before printing your photograph.
             </para>         
             
             <para>
@@ -3371,6 +3366,14 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>F5</keycap></keycombo> </shortcut>
+                <guimenu>Album</guimenu><guimenuitem>Refresh</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Refresh the current view in the Main Window.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
                 <guimenu>Album</guimenu>
                 <guimenuitem>Open in &konqueror;</guimenuitem>
             </menuchoice></term>
@@ -3445,6 +3448,38 @@ fi                 </screen></blockquote>
         
         <varlistentry>
             <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Export to Flickr...</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to upload or update images to <ulink url="http://www.flickr.com/">Flickr</ulink> server.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/flickrexport.html">&CD; Flickr Export manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Remote Gallery sync...</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to upload or update images to <ulink url="http://www.gallery2.org/">web galleries</ulink>.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/galleryexport.html">&CD; Gallery Export manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
                 <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>&HTML; export</guimenuitem>
             </menuchoice></term>
             <listitem>
@@ -3459,38 +3494,6 @@ fi                 </screen></blockquote>
             </listitem>
         </varlistentry>
 
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Export to Remote Gallery</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Kipi plugin to export current Album to remote Gallery server.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/kipi-plugins/galleryexport.html">Gallery Export manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Export to Flickr</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Kipi plugin to export current Album to Flickr web service.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/kipi-plugins/flickrexport.html">Flickr Export manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>
-        
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Print 
@@ -3508,6 +3511,22 @@ fi                 </screen></blockquote>
             </listitem>
         </varlistentry>
                                 
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>SimpleViewer export</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to export to <ulink url="http://www.airtightinteractive.com/photos/">SimpleViewer</ulink>.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/simpleviewer.html">SimpleViewer manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Album</guimenu>
@@ -3596,14 +3615,6 @@ fi                 </screen></blockquote>
         
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>Return</keycap></keycombo> </shortcut>
-                <guimenu>Image</guimenu><guimenuitem>Properties</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>View General Properties, Permissions, embedded Meta-Data, EXIF information, and Histogram of the currently selected image.</action></para></listitem>
-        </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
                 <guimenu>Image</guimenu><guimenuitem>Auto Rotate/Flip using EXIF information</guimenuitem>
             </menuchoice></term>
             <listitem>
@@ -3682,6 +3693,38 @@ fi                 </screen></blockquote>
             </listitem>
         </varlistentry>
         
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Geolocalization</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to handle GPS meta data of the image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/geolocalization.html">Geolocalization manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Metadata</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to handle meta data of the image (EXIF, IPTC, comments).
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/metadata.html">Metadata manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Image</guimenu><guimenuitem>Adjust Time and Date</guimenuitem>
@@ -3807,7 +3850,7 @@ fi                 </screen></blockquote>
             <term><menuchoice>
                 <guimenu>View</guimenu><guimenuitem>Sort Images</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Sort all images in current Album by Name, by Path, by Date, or by File Size.</action></para></listitem>
+            <listitem><para><action>Sort all images in current Album by Name, Path, Date, File Size or by Rating.</action></para></listitem>
         </varlistentry>
         
     </variablelist>
@@ -3847,6 +3890,28 @@ fi                 </screen></blockquote>
         
         <varlistentry>
             <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Scan for new images</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Rescan the location(s) for images not yet in the database.
+                </action></para>
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Rebuild all thumbnails...</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Launch rebuild of all thumbnails (careful, can take a long time if you have many images).
+                </action></para>
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
                 <guimenu>Tools</guimenu><guimenuitem>Find Duplicate Images</guimenuitem>
             </menuchoice></term>
             <listitem>
@@ -3863,7 +3928,7 @@ fi                 </screen></blockquote>
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Tools</guimenu><guimenuitem>Gamma adjustment</guimenuitem>
+                <guimenu>Tools</guimenu><guimenuitem>Display adjustment</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -3911,6 +3976,22 @@ fi                 </screen></blockquote>
             </listitem>
         </varlistentry>
         
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Remote Galleries</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to set up a list of remote galleries for exporting.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/remotegalleries.html">Slide Show manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+    
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Tools</guimenu><guimenuitem>Slideshow</guimenuitem>
@@ -4011,6 +4092,23 @@ fi                 </screen></blockquote>
     to add a new camera to the list. Please, read the <link linkend="setupcamera">Setup Camera Section</link>
     for more information.
     </para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Camera</guimenu><guimenuitem>Media Browse</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Browsing attached media devices like card readers, DVDs or memory sticks.</action></para></listitem>
+        </varlistentry>
+
+         <varlistentry>
+            <term><menuchoice>
+                <guimenu>Camera</guimenu><guimenuitem>Add camera</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Interactively add a new camera.</action></para></listitem>
+        </varlistentry>
+
+    </variablelist>
 
     </sect2>
 
@@ -4024,7 +4122,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Settings</guimenu><guimenuitem>Show Toolbar</guimenuitem>
+                <guimenu>Settings</guimenu><guimenuitem>Show Toolbar/Hide Toolbar</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Enable or disable the main &digikam; toolbar.</action></para></listitem>
         </varlistentry>
@@ -4033,7 +4131,7 @@ fi                 </screen></blockquote>
             <term><menuchoice>
                 <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>F</keycap></keycombo>
                 </shortcut>
-                <guimenu>Settings</guimenu><guimenuitem>Full Screen Mode</guimenuitem>
+                <guimenu>Settings</guimenu><guimenuitem>Toggle Full Screen</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Toggles the graphic interface into full screen mode.</action></para></listitem>
         </varlistentry>
@@ -4046,6 +4144,27 @@ fi                 </screen></blockquote>
             Select one for changing the theme used by &digikam;.</action></para></listitem>
         </varlistentry>
         
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Help</guimenu><guimenuitem>Tip of the Day</guimenuitem>
+            </menuchoice></term>
+            <listitem><para>This displays a dialog with useful hints for using &digikam;.</para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Help</guimenu><guimenuitem>Kipi' Plugins Handbooks</guimenuitem>
+            </menuchoice></term>
+            <listitem><para>Launch the &kde; help interface with the Kipi's plugins handbooks.</para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Help</guimenu><guimenuitem>Donate Money...</guimenuitem>
+            </menuchoice></term>
+            <listitem><para>This will open the &digikam; website in a browser helping you to donate funds to &digikam;.</para></listitem>
+        </varlistentry>
+    
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Settings</guimenu><guimenuitem>Configure Shortcuts</guimenuitem>
@@ -4072,34 +4191,6 @@ fi                 </screen></blockquote>
 
     </sect2>
 
-    <!-- *********************************************************************** -->
-
-    <sect2>
-    <title>The Help Menu</title>
-    &help.menu.documentation;
-
-    <para>Additionally &digikam; offers these items:</para>
-
-    <variablelist>
-
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Help</guimenu><guimenuitem>Tip of the Day</guimenuitem>
-            </menuchoice></term>
-            <listitem><para>This displays a dialog with useful hints for using &digikam;.</para></listitem>
-        </varlistentry>
-
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Help</guimenu><guimenuitem>Kipi' Plugins Handbooks</guimenuitem>
-            </menuchoice></term>
-            <listitem><para>Launch the &kde; help interface with the Kipi's plugins handbooks.</para></listitem>
-        </varlistentry>
-    
-    </variablelist>
-
-    </sect2>
-
 </sect1>
 
 <!-- *********************************************************************** -->
@@ -4116,7 +4207,7 @@ fi                 </screen></blockquote>
         <varlistentry>
             <term><menuchoice>
                 <shortcut><keycombo action="press"><keycap>PgUp</keycap></keycombo> </shortcut>
-                <guimenu>File</guimenu><guimenuitem>Previous</guimenuitem>
+                <guimenu>File</guimenu><guimenuitem>Back</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
         </varlistentry>
@@ -4124,7 +4215,7 @@ fi                 </screen></blockquote>
         <varlistentry>
             <term><menuchoice>
                 <shortcut><keycombo action="press"><keycap>PgDown</keycap></keycombo> </shortcut>
-                <guimenu>File</guimenu><guimenuitem>Next</guimenuitem>
+                <guimenu>File</guimenu><guimenuitem>Forward</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Display the next image of the current Album.</action></para></listitem>
         </varlistentry>
@@ -4216,7 +4307,7 @@ fi                 </screen></blockquote>
         <varlistentry>
             <term><menuchoice>
                 <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>Z</keycap></keycombo> </shortcut>
-                <guimenu>Edit</guimenu><guimenuitem>Cancel</guimenuitem>
+                <guimenu>Edit</guimenu><guimenuitem>Undo</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Cancel the last action applied to the current image using history.</action></para></listitem>
         </varlistentry>
@@ -4241,24 +4332,6 @@ fi                 </screen></blockquote>
 
     <para>
     <variablelist>
-
-        <varlistentry>
-            <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>F3</keycap></keycombo> </shortcut>
-                <guimenu>Image</guimenu><guimenuitem>Edit Comments and Tags</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>Edit the comments and tags of the currently 
-            selected image.</action></para></listitem>
-        </varlistentry>
-
-        <varlistentry>
-            <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>Return</keycap></keycombo> </shortcut>
-                <guimenu>Image</guimenu><guimenuitem>Properties</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>View General Properties, Permissions, embedded Meta-Data, EXIF information, 
-            and Histogram of the currently selected image.</action></para></listitem>
-        </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
@@ -4348,6 +4421,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>U</keycap></keycombo> </shortcut>
                 <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem>
                 <guimenuitem>Hue/Saturation/Lightness</guimenuitem>
             </menuchoice></term>
@@ -4357,8 +4431,8 @@ fi                 </screen></blockquote>
     
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Color 
-                Balance</guimenuitem>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>B</keycap></keycombo> </shortcut>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Color Balance</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Color correction of the current image by Red, Green, or Blue 
             adjustments.</action></para></listitem>
@@ -4366,6 +4440,7 @@ fi                 </screen></blockquote>
     
         <varlistentry>
             <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>B</keycap></keycombo> </shortcut>
                 <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Auto-Correction</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Automatic color correction of the current image by an histogram 
@@ -4374,9 +4449,24 @@ fi                 </screen></blockquote>
     
         <varlistentry>
             <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>I</keycap></keycombo> </shortcut>
                 <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Invert</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Invert image colors.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Depth</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Toggle between 8 bit and 16 bit format on color channels.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Color Management</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Invokes the interactive Color Management editor.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -4396,6 +4486,22 @@ fi                 </screen></blockquote>
             </listitem>
         </varlistentry>
         
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>White Balance</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to adjust white color balance on the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/whitebalance.html">White Balance manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Curves 
@@ -4428,23 +4534,7 @@ fi                 </screen></blockquote>
                 </para>     
             </listitem>
         </varlistentry>
-
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>White Balance</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to adjust white color balance on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/whitebalance.html">White Balance manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>
-                                    
+                                   
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Fix</guimenu><guimenuitem>Blur</guimenuitem>
@@ -4469,54 +4559,6 @@ fi                 </screen></blockquote>
             image.</action></para></listitem>        
         </varlistentry>
 
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Unsharp Mask</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to operate an Unsharp mask on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/unsharp.html">Unsharp Mask manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Lens Distortion Correction</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to correct lens distortion of the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/lensdistortion.html">Lens Distortion Correction manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>                
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Restoration</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to reduce artefacts on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/restoration.html">Photograph Restoration manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>            
-        </varlistentry>
-                
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Fix</guimenu><guimenuitem>Inpainting</guimenuitem>
@@ -4552,36 +4594,20 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Anti Vignetting</guimenuitem>
+                <guimenu>Fix</guimenu><guimenuitem>Unsharp Mask</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to correct vignetting of the current image.
+                    Image Editor plugin to operate an Unsharp mask on the current image.
                 </action></para>
                 <para>
                     See the dedicated 
-                    <ulink url="help:/digikamimageplugins/antivignetting.html">Anti Vignetting manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>                
-
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Refocus</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to refocus the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/refocus.html">Refocus Photograph manual</ulink> 
+                    <ulink url="help:/digikamimageplugins/unsharp.html">Unsharp Mask manual</ulink> 
                     for more information.
                 </para>     
             </listitem>
         </varlistentry>
-                        
+        
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Fix</guimenu><guimenuitem>Hot Pixels Correction</guimenuitem>
@@ -4598,6 +4624,70 @@ fi                 </screen></blockquote>
             </listitem>
         </varlistentry>
     
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Lens Distortion Correction</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to correct lens distortion of the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/lensdistortion.html">Lens Distortion Correction manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>                
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Restoration</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to reduce artefacts on the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/restoration.html">Photograph Restoration manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>            
+        </varlistentry>
+                
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Refocus</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to refocus the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/refocus.html">Refocus Photograph manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Fix</guimenu><guimenuitem>Anti Vignetting</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to correct vignetting of the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/antivignetting.html">Anti Vignetting manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>                
+                        
     </variablelist>
     </para>
 
@@ -4613,7 +4703,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>1</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>9</keycap></keycombo> </shortcut>
                 <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>90 
                 degrees</guimenuitem>
             </menuchoice></term>
@@ -4622,7 +4712,7 @@ fi                 </screen></blockquote>
     
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>2</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>8</keycap></keycombo> </shortcut>
                 <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>180 
                 degrees</guimenuitem>
             </menuchoice></term>
@@ -4631,7 +4721,7 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>3</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>7</keycap></keycombo> </shortcut>
                 <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>270 
                 degrees</guimenuitem>
             </menuchoice></term>
@@ -4640,6 +4730,7 @@ fi                 </screen></blockquote>
     
         <varlistentry>
             <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>*</keycap></keycombo> </shortcut>
                 <guimenu>Transform</guimenu><guimenuitem>Flip</guimenuitem><guimenuitem>Horizontally</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Horizontal flip of the current image.</action></para></listitem>
@@ -4647,6 +4738,7 @@ fi                 </screen></blockquote>
     
         <varlistentry>
             <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>/</keycap></keycombo> </shortcut>
                 <guimenu>Transform</guimenu><guimenuitem>Flip</guimenuitem><guimenuitem>Vertically</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Vertical flip of the current image.</action></para></listitem>
@@ -4654,6 +4746,7 @@ fi                 </screen></blockquote>
     
         <varlistentry>
             <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>X</keycap></keycombo> </shortcut>
                 <guimenu>Transform</guimenu><guimenuitem>Crop</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Crop the current image to the current selection.</action></para></listitem>
@@ -4675,27 +4768,11 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Transform</guimenu><guimenuitem>Blowup</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to blow up a photograph without less image quality.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/blowup.html">Blowup manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>            
-        </varlistentry>        
-                        
-        <varlistentry>
-            <term><menuchoice>
                 <guimenu>Transform</guimenu><guimenuitem>Shear</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to shear the current image.horizontally or vertically.
+                    Image Editor plugin to shear the current image horizontally or vertically.
                 </action></para>
                 <para>
                     See the dedicated 
@@ -4705,6 +4782,22 @@ fi                 </screen></blockquote>
             </listitem>            
         </varlistentry>
         
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Transform</guimenu><guimenuitem>Blowup</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to blow up (magnify) a photograph while minimizing image quality loss.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/blowup.html">Blowup manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>            
+        </varlistentry>        
+                        
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Transform</guimenu><guimenuitem>Free Rotation</guimenuitem>
@@ -4768,10 +4861,10 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>A</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>A</keycap></keycombo> </shortcut>
                 <guimenu>View</guimenu><guimenuitem>Zoom AutoFit</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Set the zoom factor for adapting the current image size to the Image Editors 
+            <listitem><para><action>Toggle between zoom factor autofit to image edito window or 100% zoom 
             window size.</action></para></listitem>
         </varlistentry>
                             
@@ -4779,9 +4872,16 @@ fi                 </screen></blockquote>
             <term><menuchoice>
                 <guimenu>View</guimenu><guimenuitem>Histogram</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Display superposed histogram under current image.</action></para></listitem>
+            <listitem><para><action>Display superposed histogram on current image (Luminosity, Red, Green, Blue, Alpha).</action></para></listitem>
         </varlistentry>
     
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>View</guimenu><guimenuitem>Slideshow</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Start a slideshow of the current album.</action></para></listitem>
+        </varlistentry>
+
     </variablelist>
     </para>
 
@@ -4799,7 +4899,7 @@ fi                 </screen></blockquote>
             <term><menuchoice>
                 <guimenu>Filters</guimenu><guimenuitem>Black and White</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Apply Black and White filter to the current image.</action></para></listitem>
+            <listitem><para><action>Open the Black and White filter dialog for the current image.</action></para></listitem>
         </varlistentry>
                 
         <varlistentry>
