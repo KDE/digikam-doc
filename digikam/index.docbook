@@ -606,6 +606,9 @@
             <para>&digikam;'s main window has four areas. The first one is a sidebar in the left margin that lets you switch between 4 views: <guibutton>My Albums</guibutton>, <guibutton>My Dates</guibutton>, <guibutton>My Tags</guibutton> and <guibutton>My Searches</guibutton>. Then there is a tree navigator showing the selected view. The main image window is right in the center. And on the right hand side there is another <link linkend="using-kapp-sidebar">sidebar</link> shown. This one can be used to show all informations of your images. You can use these views to organize and find your photographs.
             </para>
 
+            <anchor id="maininterface-statusbar"/>
+            <para>The status bar at the bottom shows the file name and, on the right end, it has four navigation buttons that lead through the images in the main view.</para>
+
             <para>
             Across the top of the window is a Menu Bar and right below it is the toolbar.
             </para>
@@ -918,6 +921,26 @@
                                                             
         </sect2>
         
+<sect2 id="using-kapp-mydatesview">
+            <title>"My Dates" View from Main Window</title>
+
+            <para><inlinemediaobject><imageobject><imagedata fileref="maininterfacedateview.png" format="PNG" /> </imageobject>
+              <textobject><phrase>Dates View from Main Window</phrase></textobject></inlinemediaobject>
+            </para>
+            
+            <para>
+            The "My Dates" view organizes your photographs based on their dates. &digikam; uses either the
+            EXIF date or, if no EXIF date is available, the last modification time of the file.
+            </para>
+
+            <para>
+            When you select a month from the list, all photographs from that month are displayed in the Image View.
+            You can select days or weeks in the date sheet at the bottom of the Date View to show only the photographs 
+            from the selected dates.
+            </para>
+            
+        </sect2>
+
         <sect2 id="using-kapp-mytagsview">
           <title>"My Tags" View</title>
 
@@ -925,7 +948,7 @@
             (Hierarchical) photograph tagging provides a flexible and powerful way to organize and catalog your photographs. Tags are labels that can be applied to individual photographs or whole groups. Once a Tag has been set to a photograph, that photograph can be found again by selecting the Tag or doing a search.
             </para>
             
-            <example> <title>Selecting a Tag</title>
+            <example> <title>Selecting a Tag and applying a new one</title>
                 <screenshot><mediaobject><imageobject><imagedata fileref="maininterfacetagsview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
             </example>
                         
@@ -953,7 +976,7 @@
 
                 <para>
                 You can move the position of a Tag within the tree by dragging it into the position that you want and dropping it there. A menu will appear that gives you the option to 
-                <guilabel>Move</guilabel> the Tag. A Tag can only be in one place in the tree at a time.
+                <guilabel>Move</guilabel> the Tag. This works from the left and right sidebar. A Tag can only be in one place in the tree at a time.
                 </para>
                 
                 <para>
@@ -977,7 +1000,7 @@
                 You can label a photograph with as many Tags as you like. The photograph will appear when you select any of the Tags that are set against it. This way you can set a Tag for each person in a photograph, as well as the place the photograph was taken, the event it was taken at, &etc;.
                 </para>
 
-                <example> <title>Tagging Image with Main Pop-up Menu</title>
+                <example> <title>Tagging Image with context menu, or with drag&amp;drop  from either sidebar</title>
                     <screenshot><mediaobject><imageobject><imagedata fileref="maininterfaceassigntags.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
                 
@@ -993,25 +1016,6 @@
                                 
         </sect2>
         
-        <sect2 id="using-kapp-mydatesview">
-            <title>"My Dates" View from Main Window</title>
-
-            <para><inlinemediaobject><imageobject><imagedata fileref="maininterfacedateview.png" format="PNG" /> </imageobject>
-              <textobject><phrase>Dates View from Main Window</phrase></textobject></inlinemediaobject>
-            </para>
-            
-            <para>
-            The "My Dates" view organizes your photographs based on their dates. &digikam; uses either the
-            EXIF date or, if no EXIF date is available, the last modification time of the file.
-            </para>
-
-            <para>
-            When you select a month from the list, all photographs from that month are displayed in the Image View.
-            You can select days or weeks in the date sheet at the bottom of the Date View to show only the photographs 
-            from the selected dates.
-            </para>
-            
-        </sect2>
           
         <sect2 id="using-kapp-mysearchesview">
         <title>"My Searches" View</title>
@@ -1021,13 +1025,21 @@
             <anchor id="quicksearchtool.anchor"/>
             
                 <para>
-                Quick Search provides you with a simple search form which you can use to search all data fields in the album library with a single query. You can enter any arguments in the <guilabel>Search</guilabel> text field and it will be used to determine a result. For instance, you can enter the string 'birthday' to search the complete album library for occurrences of the word 'birthday' in photograph description, or '05.png' to search for a specific image file name '05.png'.
+                Quick Search provides you with a simple search form to search all data fields in the album library with a single query. You can enter any arguments in the <guilabel>Search</guilabel> text field and it will be used to determine the results. For instance, you can enter the string 'birthday' to search the complete album library for occurrences of the word 'birthday' in photograph description, or '05.png' to search for a specific image file name '05.png' (no escaping as in regexpressions needed).
                 </para>
 
-                <para>
-                If you want to search photographs from a certain date, you can simply type <userinput>2005</userinput>, but it is even possible to search for a certain month. Just enter the name of the month in your local language. If it is Dutch, you can enter <userinput>Maart</userinput>, to see the pictures of March.
-               </para> 
+               <para>Search Properties:<itemizedlist>
+                                    <listitem><para>searches are case insensitive</para></listitem>
+                                    <listitem><para>blank separated search terms are boolean AND combinations</para></listitem>
+                                    <listitem><para>special characters are literal and not interpreted ( . * ? / &etc;)</para></listitem> 
+                                    <listitem><para>include all elements of the database: names, rating, keywords, tags, albums, collections, dates (and more in the future)</para></listitem>
+                                 </itemizedlist>
+               </para>
                 
+                <para>
+                The Quick Search really works intuitively. If you want to search photographs from a certain date, you can simply type <userinput>2005</userinput>, but it is even possible to search for a certain month. Just enter the name of the month in your local language. If it is Dutch, you can enter <userinput>Maart</userinput>, to see the pictures of March. The combination of 'Maart 2006' means 'Maart AND 2006' and therefore is equivalent to '2006 Maart'. Or look for 'Maart 2007 cr2' to find all RAW files of March 2007.
+               </para> 
+
                 <example>
                     <title>Quick Search Tool Dialog in Action</title>
                     <screenshot><mediaobject><imageobject><imagedata fileref="maininterfacequicksearch.png" format="PNG" /> </imageobject></mediaobject></screenshot>
@@ -1035,11 +1047,11 @@
                 
                 
                 <para>
-                When you are satisfied with your selection, click on the <guilabel>Ok</guilabel> button, and the search will be carried out, and the results displayed in "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to name your query in "My Search" list. If you want to modify your selection after performing a search, simply right click on one item from "My Search" view and select an option from popup menu. 
+                When you are satisfied with your selection, click on the <guilabel>Ok</guilabel> button, and the search will be carried out, and the results displayed in "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to label your query in "My Search" list. If you want to modify your selection after performing a search, simply right click on the item from "My Search" view and select an option from popup menu. 
                 </para>
                 
                 <para>
-                If you select <guilabel>Edit Search</guilabel>, the search form will re-appear, containing your previous search information. If you select <guilabel>Edit as Advanced Search</guilabel>, the advanced search tool dialog will be launch to modify your previous search informations using more search rules. See the <link linkend="using-kapp-mainwindow-advancedsearchtool">The Advanced Search Tool</link> section for more informations.
+                If you select <guilabel>Edit Search</guilabel>, the search form will re-appear, containing your previous search information. If you select <guilabel>Edit as Advanced Search</guilabel>, the advanced search tool dialog will be come up to modify your previous search informations using more elaborate search rules. See the <link linkend="using-kapp-mainwindow-advancedsearchtool">The Advanced Search Tool</link> section for more informations.
                 </para>
                 
                 <para>
@@ -1058,11 +1070,11 @@
             <anchor id="advancedsearchtool.anchor"/>
             
                 <para>
-                Advanced Search tool provides you with a extended search form which you can use to search in specific fields of the &digikam; albums database.
+                Advanced Search tool provides an extended search form which can be used to search in specific fields of the &digikam; albums database.
                 </para>
                     
                 <para>
-                The <guilabel>Search Rules</guilabel> list is used to set all options to process a search query in albums database. all rules are listed vertically and separated by an operator. An option can be added or deleted to the list using <guilabel>Add/Delete Option</guilabel> or grouped/ungrouped together using <guilabel>Group/Ungroup Options</guilabel>. Each option can be combined to another one using <guilabel>As well as</guilabel> or <guilabel>Or</guilabel> logical operator.
+                The <guilabel>Search Rules</guilabel> list is used to set all options to process a search query in albums database. all rules are listed vertically and separated by an operator. An option can be added or deleted to the list using <guilabel>Add/Delete Option</guilabel> or grouped/ungrouped together using <guilabel>Group/Ungroup Options</guilabel>. Each option can be combined with another one using <guilabel>As well as</guilabel> or <guilabel>Or</guilabel> logical operator.
                 </para>                
 
                 <tip>
@@ -1147,7 +1159,7 @@
         <sect2>
         <title>Introduction to the right sidebar</title>
            <para>
-               The &digikam; main window has a sidebar at the right border providing important information and actions of the selected images. This same sidebar is also available in the <link linkend="using-kapp-imageeditor">Image Editor</link> view, without the first-previous-next-last navigation arrows. It can be displayed by respectively clicking on one of the five tabs:
+               The &digikam; main window has a sidebar at the right border providing important information and actions of the selected images. This same sidebar is also available in the <link linkend="using-kapp-imageeditor">Image Editor</link> view. It can be displayed by respectively clicking on one of the five tabs:
            </para>
 
            <para>
