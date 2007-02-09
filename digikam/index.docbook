@@ -65,8 +65,8 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2006-01-05</date>
-<releaseinfo>0.9.0</releaseinfo>
+<date>2006-02-08</date>
+<releaseinfo>0.9.1</releaseinfo>
 
 <abstract>
     
@@ -86,7 +86,7 @@
 <keywordset>
     <keyword>KDE</keyword>
     <keyword>Digital Camera</keyword>
-    <keyword>digikam</keyword>
+    <keyword>digiKam</keyword>
     <keyword>gphoto</keyword>
     <keyword>Graphics</keyword>
     <keyword>Color Management</keyword>
@@ -112,7 +112,7 @@
        </para>
     
        <para>
-       An easy to use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than 600 digital cameras are supported through the gphoto2 library.
+       An easy to use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than 800 digital cameras are supported through the gphoto2 library.
        </para>
        
        <para>&digikam; incorporates a fast Image Editor with basic image editing tools. You can use the Image Editor to view your photographs, comment and rate them, make corrections and alterations. The editing power can be easily extended by two sets of plugins, the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface</ulink> and the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins.</ulink>
@@ -201,7 +201,9 @@
         </sect2>
         <sect2>
         <title>The Albums Missing Dialog</title>
-        <para>
+        <para>This parsing for modifications happens at every application start-up, but it can be disabled in the <guilabel>Settings</guilabel> under <guilabel>Miscellaneous</guilabel>
+	</para>
+	<para>
           As &digikam; uses your folders on your hard disk directly, other applications like file managers can remove any albums outside a &digikam; session. In this case &digikam; will tell you at the next session if all albums that have been removed from the &digikam; photographs root path shall be deleted from albums database. If you want to move folders around and do not want to do that in &digikam;, we suggest you do that while &digikam; is running, so the database will be kept in sync and you do not lose any metadata.
         </para>
         <para><inlinemediaobject><imageobject> 
@@ -257,6 +259,9 @@
                 <para>
                 JPEG is a compressed format, that trades some of the image quality to keep filesizes small. In fact, most cameras save their images in this format unless you specify otherwise. A JPEG image is stored using lossy compression and you can vary the amount of compression. This allows you to choose between lower compression and higher image quality or greater compression and poorer quality. The only reason to choose higher compression is because it creates smaller file so you can store more images, and it's easier to send them by e-mail, or post them on the Web. Most cameras give you two or three choices equivalent to good, better, best although the names vary.
                 </para>
+		<para>
+		JPEG 2000 is supported as well. In general it give for the same compression ratio the better (smoother) results compared to JPEG. The 2000 version has the option of being lossless if so specified in the settings.
+		</para>
             
             </sect3>
 
@@ -288,7 +293,7 @@
                 </para>
                 
                 <para>
-                If you want to learn more about RAW image format visit the very helpful guides <ulink url="http://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml"> The Luminous Landscape</ulink> and <ulink url="http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm"> Cambridge in Colour</ulink>. You can convert RAW format images into JPEG or TIFF in &digikam; using the <ulink url="help:/kipi-plugins/rawconverter.html">RAW Image Converter plugin</ulink>. See the <link linkend="using-kapp-setup">Configuration</link> section for information about using plugins with &digikam;.
+                If you want to learn more about RAW image format visit the very helpful guides<ulink url="http://en.wikipedia.org/wiki/RAW_image_format"> Wikipwdia</ulink> <ulink url="http://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml"> The Luminous Landscape</ulink> and <ulink url="http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm"> Cambridge in Colour</ulink>. You can convert RAW format images into JPEG or TIFF in &digikam; using the <ulink url="help:/kipi-plugins/rawconverter.html">RAW Image Converter plugin</ulink>. See the <link linkend="using-kapp-setup">Configuration</link> section for information about using plugins with &digikam;.
                 </para>
 
                 <para>
@@ -308,15 +313,6 @@
                         </entry></row>
                         
                         <!-- ************************ -->
-                        
-                        <row><entry>
-                        MRW
-                        </entry><entry>
-                        Minolta digital camera RAW file format
-                        </entry></row>
-                        
-                        <!-- ************************ -->
-                                    
                         <row><entry>
                         NEF
                         </entry><entry>
@@ -342,7 +338,7 @@
                         <!-- ************************ -->
                     
                         <row><entry>
-                        PEF
+                        PEF, PTX
                         </entry><entry>
                         Pentax digital camera RAW file format
                         </entry></row>
@@ -358,7 +354,7 @@
                         <!-- ************************ -->
                     
                         <row><entry>
-                        DCR, KDC
+                        DCR, KDC, DC2, K25
                         </entry><entry>
                         Kodak digital camera RAW file format
                         </entry></row>
@@ -366,9 +362,9 @@
                         <!-- ************************ -->
                     
                         <row><entry>
-                        SRF, ARW
+                        SRF, ARW, MRW, MDC
                         </entry><entry>
-                        Sony digital camera RAW file format
+                        Sony/Minolta digital camera RAW file format
                         </entry></row>
 
                         <!-- ************************ -->
@@ -382,10 +378,57 @@
                         <!-- ************************ -->
                         
                         <row><entry>
-                        DNG
+                        DNG (CS1, HDR)
                         </entry><entry>
                         Adobe RAW file format (Digital Negative)
                         </entry></row>
+                                            
+                        <!-- ************************ -->
+                        
+                        <row><entry>
+                        BAY
+                        </entry><entry>
+                        Casio RAW (Bayer)
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        
+                        <row><entry>
+                        ERF
+                        </entry><entry>
+                        Epson digital camera RAW file format
+                        </entry></row>
+
+                        <!-- ************************ -->
+                     
+                        <row><entry>
+                        FFF
+                        </entry><entry>
+                        Imacon/Hasselblad RAW format
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        
+                        <row><entry>
+                        MOS
+                        </entry><entry>
+                        CREO Photo RAW
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        <row><entry>
+                        PXN
+                        </entry><entry>
+                        Fotoman RAW
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        <row><entry>
+                        RDC
+                        </entry><entry>
+                        Ricoh RAW format
+                        </entry></row>
+                                            
                     
                     </tbody>
         
@@ -398,7 +441,7 @@
         </sect2>
 
         <sect2>
-        <title>Moving Image Formats</title>
+        <title>Moving Image Formats (Videos)</title>
 
         <para>
         Many digital cameras support taking of short movie clips. These clips are usually stored in AVI or MPEG format. &digikam; understands these formats and will generate thumbnails for the movie files. However, &digikam; is not a movie editing application and it does not have any built-in movie viewing or editing capabilities. If you double click on a movie file &digikam; will use your &kde; settings to choose a viewing application to use.
@@ -510,7 +553,7 @@
         <title>Transfers Using gPhoto2: PTP and RS-232 Serial Port</title>
         
             <para>
-            &digikam; employs the <emphasis>gPhoto2</emphasis> program to communicate with digital still cameras. gPhoto2 is a free, redistributable set of digital camera software applications which supports a growing number of over 600 cameras. gPhoto2 has support for the <emphasis>Picture Transfer Protocol</emphasis>, which is a widely-supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
+            &digikam; employs the <emphasis>gPhoto2</emphasis> program to communicate with digital still cameras. gPhoto2 is a free, redistributable set of digital camera software applications which supports a growing number of over 800 cameras. gPhoto2 has support for the <emphasis>Picture Transfer Protocol</emphasis>, which is a widely-supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
             </para>
             
             <para>
@@ -742,7 +785,11 @@
                 </para>
                 
                 <para>
-                The first time you select an Album you may have to wait briefly while the thumbnails are generated. 
+                The first time you select an Album you may have to wait briefly while the thumbnails are generated, unless you used the 
+			<menuchoice>
+                        	<guimenu>Tools</guimenu> 
+				<guimenuitem>Rebuild all Thumbnails</guimenuitem> 
+			</menuchoice> menu item beforehand. 
                 </para>            
             
                 <para>
@@ -764,7 +811,7 @@
             <title>Image Management</title>
 
                 <para>
-                Photographs are what &digikam; is all about. The Albums and Tags allow you to organize and find your photographs in a way that suits you. The Image Editor lets you view your photographs and make a number of adjustments to them. You can access all of the functions that &digikam; can perform on a photograph by right-clicking the thumbnail or selecting from the Image menu in the Menu Bar.
+                Photographs are what &digikam; is all about. The Albums and Tags allow you to organize and find your photographs in a way that suits you.  You can access all of the functions that &digikam; can perform on a photograph by right-clicking the thumbnail (context menu) or by selecting from the Image menu in the Menu Bar. You have the choice between viewing the images, viewing by slide show, or of editing the images.
                 </para>
 
             </sect3>
@@ -773,7 +820,26 @@
             <title>Viewing a Photograph</title>
              
                 <para>
-                You can open the Image Editor on a photograph either by clicking the thumbnail or by right-clicking and selecting <guilabel>View/Edit</guilabel> from the context menu. See the <link linkend="using-kapp-imageeditor">&digikam; Image Editor</link> section for instructions on how to edit your photographs.
+                To view the image either click on it, push 
+                    <menuchoice>
+                       <shortcut><keycombo action="press"><keycap>F3</keycap></keycombo></shortcut>
+                         <guimenu>Image</guimenu><guimenuitem>View...</guimenuitem>
+                   </menuchoice>
+                or select <menuchoice><guimenu>View</guimenu></menuchoice> from the context menu. The image will take the whole central space of the main window. For viewing it larger, click the sidebars away (by just clicking on them). While viewing images you can take action from the context menu at any time. <menuchoice><shortcut><keycombo action="press"><keycap>Esc</keycap></keycombo></shortcut><guimenu></guimenu></menuchoice> puts you back into the main window.
+                </para>
+        
+            </sect3>   
+
+            <sect3 id="using-kapp-imageediting">
+            <title>Editing a Photograph</title>
+             
+                <para>
+                You can open the Image Editor on a photograph either using 
+                   <menuchoice>
+                       <shortcut><keycap>F4</keycap></shortcut>
+                         <guimenu>Image</guimenu><guimenuitem>Edit...</guimenuitem>
+                   </menuchoice>
+                or by right-clicking and selecting <guilabel>Edit</guilabel> from the context menu. See the <link linkend="using-kapp-imageeditor">&digikam; Image Editor</link> section for instructions on how to edit your photographs. The Image Editor lets you view your photographs and make a number of adjustments to them.
                 </para>
         
             </sect3>   
@@ -786,20 +852,20 @@
                 </para>
 
                 <para>
-                Note that there can be a problem with meta-data embedded in photographs when they are edited by other image manipulation applications. Some applications do not retain the photograph's meta-data when you save a modified image. This means that if you modify a photograph using one of these programs you will lose information such as orientation, aperture &etc;. that are stored in the EXIF tags.
+                Note that there can be a problem with meta-data embedded in photographs when they are edited by other image manipulation applications. Some applications do not retain the photograph's meta-data when you save a modified image. This means that if you modify a photograph using one of these programs you will lose information such as orientation, aperture &etc;. that are stored in the EXIF and IPCT tags.
                 </para>
 
             </sect3>
             
             <sect3 id="using-kapp-rotateimage">
-            <title>Rotating a Photograph</title>
+            <title>Lossless Image Rotation</title>
              
                 <note><para>
-                You will need to have the Kipi JPEG Lossless Plugin installed for the rotation features. If you do not have this plugin installed you can still rotate your photographs, but you have to do so from the Image Editor inside. The Image Editor uses a different method of rotating an image, you may not notice any difference but the Image Editor method can cause some loss of quality in the photograph when saving the picture as JPEG. The rotation methods described here use the Kipi JPEG Lossless Plugin and do not lose any quality in the original photograph.
+                You will need to have the Kipi JPEG Lossless Plugin installed for the rotation features. If you do not have this plugin installed you can still rotate your photographs, but you have to do so from the Image Editor inside. The Image Editor uses a different method of rotating an image, you may not notice any difference but the Image Editor method can cause some loss of quality in the photograph when saving the picture as JPEG. The rotation methods described here uses the Kipi JPEG Lossless Plugin and does preserve the quality in the original photograph.
                 </para></note>
                              
                 <para>
-                &digikam; provides two ways to get your photographs the right way up. The simplest method is to right-click the thumbnail and select Rotate and then pick the correct amount of rotation needed.
+                &digikam; provides two ways to get your photographs the right way up. The simplest method is to right-click the thumbnail and select <guilabel>Rotate</guilabel> and then pick the correct amount of rotation needed.
                 </para>
                 
                 <para>
@@ -807,7 +873,11 @@
                 </para>
                 
                 <para>
-                The photograph is rotated without loss of quality and the orientation information is set to normal, so that other EXIF-aware applications will handle it correctly. To use this feature, right-click on the thumbnail and select <guilabel>Auto Rotate/Flip Using EXIF Information</guilabel>. The Camera Tool can perform this operation automatically when it uploads the photographs from your camera which will ensure that your photographs are always the right way up. The rotate operation will do nothing, if your camera does not include this information in the photos.
+                The photograph is rotated without loss of quality and the orientation information is set to normal, so that other EXIF-aware applications will handle it correctly. To use this feature, right-click on the thumbnail and select
+                    <menuchoice>
+                         <guimenu>Image</guimenu><guimenuitem>Auto Rotate/Flip Using EXIF Information</guimenuitem>
+                   </menuchoice>
+                . The Camera Tool can perform this operation automatically when it uploads the photographs from your camera which will ensure that your photographs are always the right way up. The rotate operation will do nothing, if your camera does not include this information in the photos.
                 </para>
                 
             </sect3> 
@@ -816,7 +886,11 @@
             <title>Renaming a Photograph</title>
              
                 <para>
-                You can change the filename for a photograph by right-clicking a thumbnail and selecting <guilabel>Rename</guilabel>. Remember to keep the file extension (.jpg, .tif, &etc;).
+                You can change the filename for a photograph by right-clicking a thumbnail and selecting
+                   <menuchoice>
+                       <shortcut><keycap>F2</keycap></shortcut>
+                         <guimenu>Rename</guimenu>
+                   </menuchoice>. Remember to keep the file extension (.jpg, .tif, &etc;).
                 </para>
         
             </sect3>             
@@ -825,16 +899,21 @@
             <title>Deleting a Photograph</title>
              
                 <para>
-                When you delete a photograph from &digikam; it will be moved to the &kde; Trash Can. If you prefer that Delete really removes the photograph completely, than you can set this option by selecting 
-                <menuchoice><guimenu>Settings</guimenu>
-                <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> 
-                and selecting the <guilabel>Miscellaneous</guilabel> page. At the top of that page are the settings that control what happens when a photograph is deleted.
+                When you delete a photograph from &digikam; it will be moved to the &kde; Trash Can.  
+                   <menuchoice>
+                     <shortcut><keycombo action="simul"><keycap>F8</keycap></keycombo> </shortcut>
+                    <guimenu>Image</guimenu><guimenuitem>Delete</guimenuitem>
+                   </menuchoice> or
+                    <menuchoice>
+                     <shortcut><keycap>Delete</keycap> </shortcut><guimenu></guimenu>
+                   </menuchoice>
+             If you prefer that Delete really removes the photograph completely, than you can do that by 
+                   <menuchoice>
+                     <shortcut><keycap>&Shift;</keycap><keycap>Delete</keycap> </shortcut>
+                    <guimenu></guimenu>
+                   </menuchoice>
                 </para>
-
-                <para>
-                To delete a photograph right-click the thumbnail and select <guilabel>Delete</guilabel> from the context menu.
-                </para>
-                                
+                               
             </sect3> 
                                                             
         </sect2>
@@ -843,7 +922,7 @@
           <title>"My Tags" View</title>
 
             <para>
-            Photograph tagging provides a flexible and powerful way to organize and catalog your photographs. Tags are labels that can be applied to individual photographs. Once a Tag has been set to a photograph, that photograph can be found again by selecting the Tag.
+            (Hierarchical) photograph tagging provides a flexible and powerful way to organize and catalog your photographs. Tags are labels that can be applied to individual photographs or whole groups. Once a Tag has been set to a photograph, that photograph can be found again by selecting the Tag or doing a search.
             </para>
             
             <example> <title>Selecting a Tag</title>
@@ -858,13 +937,8 @@
             Tags can be arranged in a hierarchical tree. This allows you to organize your Tags in a logical manner. It also allows you to collapse parts of the tree in the "My Tags" list so that you can easily find the Tags that you are looking for.
             </para>
 
-            <para>
-            By default, when you select a Tag in the tree that contains other sub-Tags, &digikam; will not display photographs that are labeled with the sub-Tags. You can change this behavior, if you prefer that all photographs marked with a sub-Tag of the current Tag should be displayed. To set this option open
-            <menuchoice><guimenu>Settings</guimenu>
-            <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> 
-            from the main Menu Bar, select the <guilabel>Albums</guilabel> page and then 
-            select <guilabel>Show Items in sub-Tags</guilabel>.
-            </para>
+             <tip>
+              <para>Tags are stored in a database for fast access, and, the applied tags are written into IPTC data fields of the image (at least for JPEG). So can use your tags with other programs or, on case of loss of that data in the database, the tags will be reimported when the image is noticed by &digikam;.</para></tip>
 
             <sect3 id="using-kapp-managetags">
                 <title>Managing Tags</title>
@@ -3338,7 +3412,7 @@ fi                 </screen></blockquote>
                 <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>Left</keycap></keycombo> </shortcut>
                 <guimenu>Album</guimenu><guimenuitem>Back</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Go back to the previously visited Album using history.</action></para></listitem>
+            <listitem><para><action>Go back to the previously visited View using history.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -3346,7 +3420,7 @@ fi                 </screen></blockquote>
                 <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>Right</keycap></keycombo> </shortcut>
                 <guimenu>Album</guimenu><guimenuitem>Forward</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Go forward to the previously visted Album using history. You can only go forward if you've just gone back.</action></para></listitem>
+            <listitem><para><action>Go forward to the previously visted View using history. You can only go forward if you've just gone back.</action></para></listitem>
         </varlistentry>
         
         <varlistentry>
@@ -3370,6 +3444,14 @@ fi                 </screen></blockquote>
                 <guimenu>Album</guimenu><guimenuitem>Refresh</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Refresh the current view in the Main Window.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu>
+                <guimenuitem>Sync Pictures Metadata</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Synchronize the metadata between database and the file's metadata of all items of the current Main Window</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -3480,7 +3562,7 @@ fi                 </screen></blockquote>
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>&HTML; export</guimenuitem>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>&HTML; Gallery</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -3592,18 +3674,18 @@ fi                 </screen></blockquote>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="press"><keycap>F4</keycap></keycombo> </shortcut>
-                <guimenu>Image</guimenu><guimenuitem>View/Edit</guimenuitem>
+                <shortcut><keycombo action="press"><keycap>F3</keycap></keycombo> </shortcut>
+                <guimenu>Image</guimenu><guimenuitem>View...</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Open the currently selected image in the &digikam; image editor.</action></para></listitem>
+            <listitem><para><action>View the selected image.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="press"><keycap>F3</keycap></keycombo> </shortcut>
-                <guimenu>Image</guimenu><guimenuitem>Edit Image Comments and Tags</guimenuitem>
+                <shortcut><keycombo action="press"><keycap>F4</keycap></keycombo> </shortcut>
+                <guimenu>Image</guimenu><guimenuitem>Edit...</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Edit the comments and tags of the currently selected image.</action></para></listitem>
+            <listitem><para><action>Open the currently selected image in the &digikam; image editor.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -3901,7 +3983,18 @@ fi                 </screen></blockquote>
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Tools</guimenu><guimenuitem>Rebuild all thumbnails...</guimenuitem>
+                <guimenu>Tools</guimenu><guimenuitem>Resync all Pictures Metadata</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Launch synchronization of all metadata between database and files of all files (not just current view).
+                </action></para>
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Rebuild all Thumbnails...</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
