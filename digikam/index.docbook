@@ -607,7 +607,13 @@
             </para>
 
             <anchor id="maininterface-statusbar"/>
-            <para>The status bar at the bottom shows the file name and, on the right end, it has four navigation buttons that lead through the images in the main view.</para>
+            <para>The status bar at the bottom shows:<itemizedlist>
+                   <listitem><para>file name when single file selected</para></listitem>
+                   <listitem><para>selection information when several items are selected</para></listitem>
+                   <listitem><para>progress bar for batch processes, e.g. assign tags</para></listitem> 
+                   <listitem><para>navigation bar that lead through the images in the main view</para></listitem>
+                   </itemizedlist>
+               </para>
 
             <para>
             Across the top of the window is a Menu Bar and right below it is the toolbar.
@@ -1167,7 +1173,7 @@
             
                 <listitem><para><link linkend="using-kapp-sidebarfileproperties">Properties</link> : File and image properties, key shooting parameters (EXIF tags)</para></listitem>
 
-                <listitem><para><link linkend="using-kapp-sidebarmetadata">Metadata</link> : EXIF, Makernotes, IPTC and GPS data</para></listitem>
+                <listitem><para><link linkend="using-kapp-sidebarmetadata">Metadata</link> : EXIF, Makernotes, IPTC and GPS data (these properties can be edited by two kipi-plugins</para></listitem>
                    
                 <listitem><para><link linkend="using-kapp-sidebarcolors">Colors</link> : Histograms and embedded ICC profiles</para></listitem>
                 
@@ -1254,7 +1260,7 @@
                 <title>How to Use EXIF Viewer?</title>
 
                     <para>
-                    You can review embedded EXIF information for the selected image from the first sidebar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections.
+                    You can review embedded EXIF information for the selected image from the first sidebar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections. If there are more entries than space availbale, just scroll down with the mouse wheel.
                     </para>
 
                     <para><inlinemediaobject><imageobject><imagedata fileref="sidebarmetadataexif.png" format="PNG" /> </imageobject><textobject><phrase>The EXIF Viewer in Action</phrase></textobject></inlinemediaobject>
@@ -1657,7 +1663,7 @@
            <para>
            To give an example, suppose you have a tag called 'public' which tags all images except your private ones. Then you can check this 'public' tag in the right sidebar to hide the private pictures (all those not having 'public' tag). Whatever view mode you chose from the left sidebar, 'public' only picture will be displayed. Another typical example is the selection of a subset of tags in a hierarchical tree. Suppose you want to display 'red' and 'green' from a tag tree containing 7 different colors as sub-tags. Simply click on the 'color' tag of the main view and check 'red' and 'green' from the right sidebar.
            </para>
-           <para>Another use is <emphasis>drag-and drop tagging</emphasis>. Lets say you selected in the main view a number of pictures to tag them. If the tag already exists, simply drag it from the right sidebar onto the selection (any one of the highlighted pictures). A dialog will pop-up and ask if this tag should be applied.
+           <para>Another use is <emphasis>drag-and-drop tagging</emphasis>. Lets say you selected in the main view a number of pictures to tag them. If the tag already exists, simply drag it from the right sidebar onto the selection (any one of the highlighted pictures). A dialog will pop-up and ask if this tag should be applied.
            </para>
 
            <para>
@@ -4124,10 +4130,6 @@ fi                 </screen></blockquote>
                     See the dedicated manuals for more informations:
                     
                     <itemizedlist>
-                        <listitem><para>
-                        <ulink url="help:/kipi-plugins/borderimages.html">Border Images manual</ulink>
-                        </para></listitem>
-
                         <listitem><para>
                         <ulink url="help:/kipi-plugins/colorimages.html">Color Images manual</ulink>
                         </para></listitem>
