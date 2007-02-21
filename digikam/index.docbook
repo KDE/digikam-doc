@@ -3073,6 +3073,7 @@
                 <para>
                 &digikam; can understand lots of different image file types as well as some video and audio formats. To control which types of files &digikam; will try to display you can add or remove file extensions from these lists. Any files that are in the &digikam; Album folders that do not match these extensions will be ignored by &digikam;.
                 </para>
+                <note><para>The default settings can be easily restored by clicking onto the update buttons to the right of each category.</para></note>
     
                 
 <para>  
@@ -3086,6 +3087,7 @@
                 <para>
                 By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background color you can choose one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
                 </para>
+                <para>Over and underexposed areas of an image can be indicated by dark and light marker colors that can be defined here. In the editor this viewing mode can be switched on and off with F10 and F11 respectively.</para>
                 
                 
 <para> 
@@ -3094,7 +3096,7 @@
             </sect3>
 
             <sect3 id="setupfilesettings">
-            <title>Image Editor Settings</title>
+            <title>RAW Decoder Settings</title>
 
                 <para>
                 In the early versions of &digikam; the Image Editor was just a viewer for photographs, but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you to control how the Image Editor will behave.
@@ -3102,11 +3104,26 @@
     
                 
 <para>
-                    <inlinemediaobject><imageobject><imagedata fileref="imageeditorfilesettings.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
+                    <inlinemediaobject><imageobject><imagedata fileref="setuprawfiledecoding.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
                 
-
-                <para>TODO RAW image decoding options
+                <para><guilabel>16-bit color depth</guilabel></para>
+                <para>If enabled, all RAW files will be decoded to 16-bit color depth using a linear gamma curve. To prevent dark picture rendering in the editor, it is recommended to use Color Management in this mode. If disabled, all RAW files will be decoded to 8-bit color depth with a BT.709 gamma curve and a 99th-percentile white point. This mode is faster than 16-bit decoding. In 8-bit mode only will the <guilabel>brightness</guilabel> setting be taken into account (dcraw limitation).
                 </para>
+
+                <para><guilabel>Interplate RGB as four colors</guilabel></para>
+                <para>The default is to assume that all green pixels are the same. If even-row green pixels of the CCD sensor are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail. To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method.</para>
+
+                <para><guilabel>Use camera white balance</guilabel></para>
+                <para>Use the camera's custom white-balance settings if set. Otherwise apply <guilabel>Automatic color balance</guilabel> if this option is set.</para>
+
+                <para><guilabel>Automatic color balance</guilabel></para>
+                <para>Only used if camera white balance is not set. The default is to use a fixed color balance based on a white card photographed in sunlight.</para>
+
+                <para><guilabel>Use Super CCD secondary sensors</guilabel>                <para></para>For Fuji Super CCD SLR cameras only. Use the secondary sensors, in effect underexposing the image by four stops to reveal detail in the highlights. For all other camera types this option is being ignored.</para>
+
+                <para>TODO from Hightlights onwards
+                </para>
+
                 <para>
                 When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the <guilabel>JPEG quality</guilabel> slider  (1: low quality / 100: high quality and no compression).
                 </para>
