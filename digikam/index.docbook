@@ -3118,7 +3118,14 @@
 
                 <para><guilabel>Use Super CCD secondary sensors</guilabel></para>                <para>For Fuji Super CCD SLR cameras only. Use the secondary sensors, in effect underexposing the image by four stops to reveal detail in the highlights. For all other camera types this option is being ignored.</para>
 
-                <para>TODO from Hightlights onwards
+                <para><guilabel>Highlights</guilabel></para>
+                <para>This is the story of the three highlight options, courtesy to <ulink url="http://linux.vilars.com/">Nicolas Vilars</ulink> :</para>
+                <para>Default is here to consider highlights (read: part of your pictures that are burned due to the inability of your camera to capture the highlights) as plain / solid white (<guilabel>solid white</guilabel> option). You can get some fancy results with the <guilabel>unclip</guilabel> option which will paint the hightlights in various pinks. At last you can try to consider recovering some parts of the missing information from the hightlights (<guilabel>reconstruct</guilabel> option).</para>
+                <para>This is possible because the blue pixels tends to saturate less quickly than the greens and the reds. &digikam;/dcraw will try to reconstruct the missing green and red colors from the remaining none saturated blue pixels. Of course here everything is a question of tradeoff between how much color or white you want.</para>
+                <para>If you select <guilabel>reconstruct</guilabel> as the option, you will be given the choice to set a level. A value of 3 is a compromize and can/should be adapted on a per picture basis.</para>
+                <note><para>A small warning here, for the few curious that have read the man pages of Dcraw, the author says that 5 is the compromize, 0 is solid white and 1 unclip. This is because in &digikam; 0 and 1 are the "solid white" and "unclip" options in the drop down menu (if you select these, the level slider will be grayed out). Therefore, the slider in Digikam with the "reconstruct" option will let you choose between 0 to 7 (instead of 0 to 9 in Dcraw command line) where 3 is the compromise instead of 5 in "native" Dcraw command line tool.</para></note>
+
+                <para>TODO from Brightness onwards
                 </para>
 
                 <para>
@@ -3145,10 +3152,9 @@
                 For more information about advanced Image Editor plugins, you can consult the 'DigikamImagePlugins' project at <ulink url="http://extragear.kde.org/apps/digikamimageplugins">http://extragear.kde.org/apps/digikamimageplugins</ulink>.
                 </para>
                             
-                
-<para>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupimageplugins.png" format="PNG" /> </imageobject></inlinemediaobject> </para>
-                
+                <para>
+                    <inlinemediaobject><imageobject><imagedata fileref="setupimageplugins.png" format="PNG" /> </imageobject></inlinemediaobject> 
+                </para>
 
             </sect3>
 
