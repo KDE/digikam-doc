@@ -34,7 +34,7 @@
 
 <copyright>
     <year>2004</year>
-    <year>2006</year>
+    <year>2007</year>
     <holder>The &showfoto; developers team</holder>
 </copyright>
 
@@ -43,18 +43,16 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2006-09-13</date>
-<releaseinfo>0.3.0</releaseinfo>
+<date>2007-02-24</date>
+<releaseinfo>0.5.0</releaseinfo>
 
 <abstract>
     
     <para>
-        
         <inlinemediaobject>
             <imageobject><imagedata fileref="digikamlogo.png" format="PNG"/></imageobject>
             <textobject> <phrase>&digikam; logo</phrase> </textobject>
         </inlinemediaobject>
-    
     </para>
 
     <para>
@@ -68,6 +66,9 @@
     <keyword>digikam</keyword>
     <keyword>showfoto</keyword>
     <keyword>Graphics</keyword>
+    <keyword>Color Management</keyword>
+    <keyword>exiv2</keyword>
+    <keyword>dcraw</keyword>
 </keywordset>
 
 </bookinfo>
@@ -86,7 +87,7 @@
        <para>
        &showfoto; is a fast Image Editor with a few basic yet powerful image editing tools. You can use it to view your photographs and make corrections and alterations.
        </para>
-            
+       
        </sect2>
 
        <sect2>
@@ -153,20 +154,23 @@
             <title>Still Image Compression</title>
     
                 <para>
-                Image compression is the application of data compression on digital images. In effect, the objective is to reduce redundancy of the image data in order to be able to store or transmit data in an efficient form.
+                Image compression is the application of data compression schemes on digital images. It is done through reducing redundancy of the image data in order to be able to store or transmit data in an efficient form.
                 </para>
             
                 <para>
-                Image compression can be lossy or lossless. Lossless compression methods is always be preferred for high value content for archival purposes before to apply transformations like cropping, resizing, color corrections, &etc;. This is because lossy compression methods, especially when used at low bit rates, can introduce compression artifacts. Lossy methods are especially suitable for natural images such as photos in applications where minor (sometimes imperceptible) loss of fidelity is acceptable to achieve a substantial reduction in bit rate. Lossy compression is dedicaced to publish photographs on internet. 
+                Image compression can be lossy or lossless. Lossless compression methods are always preferred for their high preservation value for archival purposes before applying transformations like cropping, resizing, color corrections, &etc;. This is because lossy compression methods, especially when used at low bit rates, introduce compression artifacts. Lossy methods are suitable for natural images such as photos in applications where minor (sometimes imperceptible) loss of fidelity is acceptable to achieve a substantial reduction in file size. Lossy compression is good for image publishing on the Internet.
                 </para>
             
             </sect3>
-                        
+            
             <sect3>
             <title>JPEG</title>
                 <para>
                 JPEG is a compressed format, that trades some of the image quality to keep filesizes small. In fact, most cameras save their images in this format unless you specify otherwise. A JPEG image is stored using lossy compression and you can vary the amount of compression. This allows you to choose between lower compression and higher image quality or greater compression and poorer quality. The only reason to choose higher compression is because it creates smaller file so you can store more images, and it's easier to send them by e-mail, or post them on the Web. Most cameras give you two or three choices equivalent to good, better, best although the names vary.
                 </para>
+		<para>
+		JPEG 2000 is supported as well. In general it give for the same compression ratio the better (smoother) results compared to JPEG. The 2000 version has the option of being lossless if so specified in the settings.
+		</para>
             
             </sect3>
 
@@ -198,11 +202,11 @@
                 </para>
                 
                 <para>
-                If you want to learn more about RAW image format visit the very helpful guides <ulink url="http://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml"> The Luminous Landscape</ulink> and <ulink url="http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm"> Cambridge in Colour</ulink>. You can convert RAW format images into JPEG or TIFF in &showfoto; using the <ulink url="help:/kipi-plugins/rawconverter.html">RAW Image Converter plugin</ulink>. See the <link linkend="using-kapp-setup">Configuration</link> section for information about using plugins with &showfoto;.
+                If you want to learn more about RAW image format visit the very helpful guides<ulink url="http://en.wikipedia.org/wiki/RAW_image_format"> Wikipedia</ulink> <ulink url="http://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml"> The Luminous Landscape</ulink> and <ulink url="http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm"> Cambridge in Colour</ulink>. You can convert RAW format images into JPEG or TIFF in &showfoto; using the <ulink url="help:/kipi-plugins/rawconverter.html">RAW Image Converter plugin</ulink>. See the <link linkend="using-kapp-setup">Configuration</link> section for information about using plugins with &showfoto;.
                 </para>
 
                 <para>
-                &showfoto; supports loading of RAW images only relying on the <ulink url="http://www.cybercom.net/~dcoffin/dcraw/"> DCRAW program</ulink>. The main RAW file formats supported by &showfoto; are listed below:
+                &showfoto; supports RAW image loading only relying on the <ulink url="http://www.cybercom.net/~dcoffin/dcraw"> DCRAW program</ulink> which is included into &showfoto; core and support over 200 RAW file formats. See below a short list of main camera RAW files supported by &showfoto;:
                                             
                 <informaltable><tgroup cols="2">
         
@@ -218,15 +222,6 @@
                         </entry></row>
                         
                         <!-- ************************ -->
-                        
-                        <row><entry>
-                        MRW
-                        </entry><entry>
-                        Minolta digital camera RAW file format
-                        </entry></row>
-                        
-                        <!-- ************************ -->
-                                    
                         <row><entry>
                         NEF
                         </entry><entry>
@@ -252,7 +247,7 @@
                         <!-- ************************ -->
                     
                         <row><entry>
-                        PEF
+                        PEF, PTX
                         </entry><entry>
                         Pentax digital camera RAW file format
                         </entry></row>
@@ -268,7 +263,7 @@
                         <!-- ************************ -->
                     
                         <row><entry>
-                        DCR, KDC
+                        DCR, KDC, DC2, K25
                         </entry><entry>
                         Kodak digital camera RAW file format
                         </entry></row>
@@ -276,9 +271,9 @@
                         <!-- ************************ -->
                     
                         <row><entry>
-                        SRF, ARW
+                        SRF, ARW, MRW, MDC
                         </entry><entry>
-                        Sony digital camera RAW file format
+                        Sony/Minolta digital camera RAW file format
                         </entry></row>
 
                         <!-- ************************ -->
@@ -292,10 +287,57 @@
                         <!-- ************************ -->
                         
                         <row><entry>
-                        DNG
+                        DNG (CS1, HDR)
                         </entry><entry>
                         Adobe RAW file format (Digital Negative)
                         </entry></row>
+                                            
+                        <!-- ************************ -->
+                        
+                        <row><entry>
+                        BAY
+                        </entry><entry>
+                        Casio RAW (Bayer)
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        
+                        <row><entry>
+                        ERF
+                        </entry><entry>
+                        Epson digital camera RAW file format
+                        </entry></row>
+
+                        <!-- ************************ -->
+                     
+                        <row><entry>
+                        FFF
+                        </entry><entry>
+                        Imacon/Hasselblad RAW format
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        
+                        <row><entry>
+                        MOS
+                        </entry><entry>
+                        CREO Photo RAW
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        <row><entry>
+                        PXN
+                        </entry><entry>
+                        Fotoman RAW
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        <row><entry>
+                        RDC
+                        </entry><entry>
+                        Ricoh RAW format
+                        </entry></row>
+                                            
                     
                     </tbody>
         
@@ -318,6 +360,10 @@
         This dependence on other libraries means that it is not possible to give a definitive list of all of the formats that will be available on your system. At the very least JPEG, PNG, and TIFF will be available.
         </para>
 
+        <para>
+        &showfoto; only displays files that are in formats that it understands. It does this by looking at the file extension on the files and checking this against a predefined list. If the file extension is in the list &showfoto; will show the file in the Image View. You can change the list of file extensions that &showfoto; will accept, see the <link linkend="using-kapp-setup">Configuration</link> section for more details.
+        </para>
+
         </sect2>
     
     </sect1>
@@ -326,16 +372,25 @@
     <title>Supported Plugins</title>
 
         <para>
-        One of the nicest things about &showfoto; is how easily its functionality can be extended, by using <emphasis>&digikam; Image Editor Plugins</emphasis>: these plugins add new image manipulation options. &showfoto; support the image plugin core included in &digikam; (if installed) to perform basic image manipulations like Red Eyes Correction, Aspect ration crop, &etc;. Others plugins from <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink> are also supported. This one is dedicated to providing a collection of advanced image editor tools. Image Editor Plugins setup is described in this <link linkend="setupplugins">section</link>.
+        One of the nicest things about &showfoto; is how easily its functionality can be extended, by using plugins. Two plugin architectures are available:
+        
+        <itemizedlist>
+            
+                <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface project (kipi)</ulink>  (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) is an effort to develop a common plugin structure for &showfoto;, <application>KPhotoAlbum</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi Plugins setup is described in this <link linkend="setupkipiplugins">section</link>.</para></listitem>
 
+                <listitem><para><emphasis>Image Editor Plugins</emphasis>: these plugins add new image manipulation options in the &showfoto; Image Editor. The <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>  (<ulink url="help:/digikamimageplugins/index.html">manual</ulink>) is dedicated to providing a collection of tools using this architecture. Image Editor Plugins setup is described in this <link linkend="setupeditor">section</link>.
+                </para></listitem>
+
+        </itemizedlist>
+        
         <inlinemediaobject>
             <imageobject><imagedata fileref="introductionplugininterfaces.png" format="PNG"/></imageobject>
             <textobject> <phrase>Plugins supported by &showfoto;</phrase> </textobject>
         </inlinemediaobject>
         </para>
-                                    
-        <para>
-        Plugins can manipulate images in almost any way that users can. Their advantage is, that it is much easier to add a capability to &showfoto; by writing a small plugin than by modifying the &showfoto; core.
+
+        <para>                                                    
+         Plugins can manipulate images in almost any way that users can. Their advantage is, that it is much easier to add a capability to &showfoto; by writing a small plugin than by modifying the &showfoto; core.
         </para>
                 
     </sect1>
@@ -473,7 +528,7 @@
             </para>
 
             <para>
-            To  get a popup menu with the available undo/redo actions, you have to press the left mouse button at the undo or redo icon in the toolbar and hold it down for a moment. If you choose one of the menu items, all undo/redo actions until the choosen one are done.
+            To  get a popup menu with the available undo/redo actions, you have to press the left mouse button at the undo or redo icon in the toolbar and hold it down for a moment. If you choose one of the menu items, all undo/redo actions until the chosen one are done.
             </para>
                         
         </sect2>
@@ -627,7 +682,7 @@
                 If you are interested in the detailed histogram of your photograph you can view it using 
                 <menuchoice><guimenu>Image</guimenu>
                 <guimenuitem>Properties</guimenuitem></menuchoice> and <guilabel>Histogram</guilabel> page. 
-                The histogram for a image shows the amount of each colour that is present and their different amplitudes within the image. If your photograph has a colour cast you might be able to see what is wrong by looking at the histogram.
+                The histogram for a image shows the amount of each color that is present and their different amplitudes within the image. If your photograph has a color cast you might be able to see what is wrong by looking at the histogram.
                 </para>
             
                 <para>
@@ -768,7 +823,7 @@
                     <graphic srccredit="An Over Exposed Photograph" fileref="editorhistogramsample3.png"/>
                 </figure>
                          
-                With a correctly exposed photograph, the histogram will have a distribution of brightness that will be most prominent near the centre part of the graph.
+                With a correctly exposed photograph, the histogram will have a distribution of brightness that will be most prominent near the center part of the graph.
                        
                 <figure>
                     <title>A Correctly Exposed Photograph</title>
@@ -785,7 +840,7 @@
                 </para>
 
                 <para>
-                Important: not all photographs have to exhibit this bulge in the centre part of their histogram. Much depends on the subject of the photograph. In some cases, it might be appropriate for the histogram to show a peak at one end or the other, or both.
+                Important: not all photographs have to exhibit this bulge in the center part of their histogram. Much depends on the subject of the photograph. In some cases, it might be appropriate for the histogram to show a peak at one end or the other, or both.
                 </para>
                         
                 <para>
@@ -860,7 +915,7 @@
                     </para>
                     
                     <para>
-                    Aspect Ratio Crop tool uses a relative ratio. That means it is the same if you use centimeters or inches and it doesn't specify the physical size. For example, you can see below a correspondance list of traditional photographic paper sizes and aspect ratio crop.
+                    Aspect Ratio Crop tool uses a relative ratio. That means it is the same if you use centimeters or inches and it doesn't specify the physical size. For example, you can see below a corresponding list of traditional photographic paper sizes and aspect ratio crop.
                     </para>
                     
                     <informaltable><tgroup cols="2">
@@ -946,7 +1001,7 @@
                 <sect4 id="using-kapp-compositionguides">
                 <title>Composition Guide</title>
                                 <para>
-                    When first looking at an image, the eye of the viewer rarely settles at the centre of the image, but moves instead from the top left to the right, and then from the lower left to the right again. This pattern is most unconscious but has been well-documented. It is probably associated with the western reading pattern. From the photographer's point of view, the goal then becomes to guide the gaze of the viewer to the subject, being aware of the way many people perceive an image.
+                    When first looking at an image, the eye of the viewer rarely settles at the center of the image, but moves instead from the top left to the right, and then from the lower left to the right again. This pattern is most unconscious but has been well-documented. It is probably associated with the western reading pattern. From the photographer's point of view, the goal then becomes to guide the gaze of the viewer to the subject, being aware of the way many people perceive an image.
                     </para>                                                                                
                     
                     <para>
@@ -1278,7 +1333,7 @@
             <anchor id="colorbalancetool.anchor"/>
             
             <para>
-            Digital cameras often have problems with lighting conditions and it is not unusual to want to correct the colour, contrast and brightness of a photograph. You can experiment with altering the levels of different aspects of your photographs using the tools under the 
+            Digital cameras often have problems with lighting conditions and it is not unusual to want to correct the color, contrast and brightness of a photograph. You can experiment with altering the levels of different aspects of your photographs using the tools under the 
             <menuchoice><guimenu>Fix</guimenu>
             <guimenuitem>Colors</guimenuitem></menuchoice> menu.
             You can see any adjustments you make reflected in the preview. When you are happy with the results, press <guilabel>Ok</guilabel> and they will take effect.
@@ -1411,7 +1466,7 @@
             <tbody>
                 <row>
                     <entry>
-                    <graphic srccredit="Orignal in Color" fileref="editorconvert_original.png"/>
+                    <graphic srccredit="Original in Color" fileref="editorconvert_original.png"/>
                     </entry>
                 
                     <entry>
@@ -1558,7 +1613,7 @@
         <anchor id="setupdialog.anchor"/>
         
         <para>
-        &showfoto; tries to give you as much control on how it works as possible. There are many options that change the behaviour of &showfoto;. To access these settings select
+        &showfoto; tries to give you as much control on how it works as possible. There are many options that change the behavior of &showfoto;. To access these settings select
         <menuchoice><guimenu>Setting</guimenu>
         <guimenuitem>Configure &showfoto;</guimenuitem></menuchoice> from the Menu Bar. The configuration dialog is separated into eight pages. You can change between these pages by clicking on the icons on the left-hand side of the dialog.
         </para>
@@ -1571,15 +1626,15 @@
             </para>
 
             <para>
-            With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation doesn't reduce image quality because PNG usees a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value for to use a high compression factor (1: low compression / 9: high compression).
+            With the <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation doesn't reduce image quality because PNG uses a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value for to use a high compression factor (1: low compression / 9: high compression).
             </para>
             
             <para>
-            With <guilabel>Using TIFF compression</guilabel> option, you can toogle to use <emphasis>Deflate</emphasis> compression algorithm with TIFF image files. This will reduce the TIFF image files size. This has no image quality effect because <emphasis>Deflate</emphasis> is a lossless algorithm. 
+            With the <guilabel>Using TIFF compression</guilabel> option, you can choose to use <emphasis>Deflate</emphasis> compression algorithm with TIFF image files. This will reduce the TIFF image files size. It has no effect on image quality because <emphasis>Deflate</emphasis> is a lossless algorithm.
             </para>
             
             <para>
-            By default the editor will use a black background behind photographs when they are displayed. If you prefer a different background colour you can select one here.
+            By default the editor will use a black background behind photographs when they are displayed. If you prefer a different background color you can select one here.
             </para>
 
             <para>
@@ -1650,7 +1705,7 @@
                     <listitem>
                         
                         <para>
-                        <guilabel>Display in Loop</guilabel>: If you enable this option, slideshow will loop untill you abort it.
+                        <guilabel>Display in Loop</guilabel>: If you enable this option, slideshow will loop until you abort it.
                         </para>
                                                 
                     </listitem>
@@ -2558,7 +2613,7 @@
             <term><menuchoice>
                 <guimenu>Settings</guimenu><guimenuitem>Configure &showfoto;</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Lauch &showfoto; configure dialog.</action></para></listitem>
+            <listitem><para><action>Launch &showfoto; configure dialog.</action></para></listitem>
         </varlistentry>
         
     </variablelist>
@@ -2742,7 +2797,7 @@ Most likely your distribution vendor might already have packaged and provided th
 <title>Compilation and Installation</title>
 
 <para>
-In order to compile and install &showfoto; on your system, type the following in the basedirectorys of the <emphasis>libkipi</emphasis> and <emphasis>digikam</emphasis> module distributions:
+In order to compile and install &showfoto; on your system, type the following at the base directories of the <emphasis>libkipi</emphasis> and <emphasis>&digikam;</emphasis> module distributions:
 
 <screen width="40">
     <prompt>%</prompt> <userinput>export WANT_AUTOCONF_2_5=1</userinput>
