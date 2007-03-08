@@ -169,7 +169,7 @@
                 JPEG is a compressed format, that trades some of the image quality to keep filesizes small. In fact, most cameras save their images in this format unless you specify otherwise. A JPEG image is stored using lossy compression and you can vary the amount of compression. This allows you to choose between lower compression and higher image quality or greater compression and poorer quality. The only reason to choose higher compression is because it creates smaller file so you can store more images, and it's easier to send them by e-mail, or post them on the Web. Most cameras give you two or three choices equivalent to good, better, best although the names vary.
                 </para>
 		<para>
-		JPEG 2000 is supported as well. In general it give for the same compression ratio the better (smoother) results compared to JPEG. The 2000 version has the option of being lossless if so specified in the settings.
+		JPEG 2000 is supported as well. In general it gives for the same compression ratio the better (smoother) results compared to JPEG. Pixelization is less visible. The 2000 version has the option of being lossless at all if so specified in the settings.
 		</para>
             
             </sect3>
@@ -372,23 +372,10 @@
     <title>Supported Plugins</title>
 
         <para>
-        One of the nicest things about &showfoto; is how easily its functionality can be extended, by using plugins. Two plugin architectures are available:
+        One of the nicest things about &showfoto; is how easily its functionality can be extended by using plugins.</para>
+           <para><emphasis>Image Editor Plugins</emphasis>: these plugins add new image manipulation options in the &showfoto; Image Editor. The <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>  (<ulink url="help:/digikamimageplugins/index.html">manual</ulink>) is dedicated to providing a collection of tools using this architecture. Image Editor Plugins setup is described in this <link linkend="setupplugins">section</link>.
+           </para>
         
-        <itemizedlist>
-            
-                <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface project (kipi)</ulink>  (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) is an effort to develop a common plugin structure for &showfoto;, <application>KPhotoAlbum</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi Plugins setup is described in this <link linkend="setupkipiplugins">section</link>.</para></listitem>
-
-                <listitem><para><emphasis>Image Editor Plugins</emphasis>: these plugins add new image manipulation options in the &showfoto; Image Editor. The <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>  (<ulink url="help:/digikamimageplugins/index.html">manual</ulink>) is dedicated to providing a collection of tools using this architecture. Image Editor Plugins setup is described in this <link linkend="setupeditor">section</link>.
-                </para></listitem>
-
-        </itemizedlist>
-        
-        <inlinemediaobject>
-            <imageobject><imagedata fileref="introductionplugininterfaces.png" format="PNG"/></imageobject>
-            <textobject> <phrase>Plugins supported by &showfoto;</phrase> </textobject>
-        </inlinemediaobject>
-        </para>
-
         <para>                                                    
          Plugins can manipulate images in almost any way that users can. Their advantage is, that it is much easier to add a capability to &showfoto; by writing a small plugin than by modifying the &showfoto; core.
         </para>
