@@ -1,0 +1,52 @@
+m_HSLAction = new KAction(i18n("Hue/Saturation/Lightness..."), "adjusths
+./imageplugins/imageplugin_core.cpp:                      CTRL+Key_U,      // NOTE: Photoshop 7 use CTRL+U.
+m_RGBAction = new KAction(i18n("Color Balance..."), "adjustrgb",
+./imageplugins/imageplugin_core.cpp:                      CTRL+Key_B,      // NOTE: Photoshop 7 use CTRL+B.
+m_autoCorrectionAction = new KAction(i18n("Auto-Correction..."), "autocorrection",
+./imageplugins/imageplugin_core.cpp:                                 CTRL+SHIFT+Key_B, // NOTE: Photoshop 7 use CTRL+SHIFT+B with 'Auto-Color' option.
+m_invertAction = new KAction(i18n("Invert"), "invertimage",
+./imageplugins/imageplugin_core.cpp:                         CTRL+Key_I,      // NOTE: Photoshop 7 use CTRL+I.
+./digikam/digikamapp.cpp:    m_accelerators->insert("Copy Album Items Selection CTRL+Key_C", i18n("Copy Album Items Selection"),
+./digikam/digikamapp.cpp:                           CTRL+Key_C, this, SIGNAL(signalCopyAlbumItemsSelection()),
+./digikam/digikamapp.cpp:    m_accelerators->insert("Paste Album Items Selection CTRL+Key_V", i18n("Paste Album Items Selection"),
+./digikam/digikamapp.cpp:                           CTRL+Key_V, this, SIGNAL(signalPasteAlbumItemsSelection()),
+./digikam/digikamapp.cpp:                                    CTRL+Key_I,
+./digikam/digikamapp.cpp:                                    CTRL+Key_A,
+./digikam/digikamapp.cpp:                                    CTRL+Key_U,
+./digikam/digikamapp.cpp:                                    CTRL+Key_Asterisk,
+./digikam/digikamapp.cpp:                                   CTRL+Key_Plus,
+./digikam/digikamapp.cpp:                                   CTRL+Key_Minus,
+./digikam/digikamapp.cpp:                                   CTRL+SHIFT+Key_F,
+./digikam/digikamapp.cpp:    m_0Star = new KAction(i18n("Assign Rating \"No Star\""), CTRL+Key_0,
+./digikam/digikamapp.cpp:    m_1Star = new KAction(i18n("Assign Rating \"One Star\""), CTRL+Key_1,
+./digikam/digikamapp.cpp:    m_2Star = new KAction(i18n("Assign Rating \"Two Stars\""), CTRL+Key_2,
+./digikam/digikamapp.cpp:    m_3Star = new KAction(i18n("Assign Rating \"Three Stars\""), CTRL+Key_3,
+./digikam/digikamapp.cpp:    m_4Star = new KAction(i18n("Assign Rating \"Four Stars\""), CTRL+Key_4,
+./digikam/digikamapp.cpp:    m_5Star = new KAction(i18n("Assign Rating \"Five Stars\""), CTRL+Key_5,
+./showfoto/showfoto.cpp:                                             CTRL+SHIFT+Key_O,
+./showfoto/showfoto.cpp:                                         CTRL+Key_T,
+./utilities/imageeditor/editor/editorwindow.cpp:                                    CTRL+Key_P,
+./utilities/imageeditor/editor/editorwindow.cpp:                                        CTRL+SHIFT+Key_A, this, SLOT(slotToggleAutoZoom()),
+./utilities/imageeditor/editor/editorwindow.cpp:                                           CTRL+SHIFT+Key_F, this,
+./utilities/imageeditor/editor/editorwindow.cpp:                               CTRL+Key_X,
+./utilities/imageeditor/editor/editorwindow.cpp:    d->flipHorzAction = new KAction(i18n("Horizontally"), 0, CTRL+Key_Asterisk,
+./utilities/imageeditor/editor/editorwindow.cpp:    d->flipVertAction = new KAction(i18n("Vertically"), 0, CTRL+Key_Slash,
+./utilities/imageeditor/editor/editorwindow.cpp:                                    0, CTRL+Key_9, m_canvas, SLOT(slotRotate90()),
+./utilities/imageeditor/editor/editorwindow.cpp:                                    0, CTRL+Key_8, m_canvas, SLOT(slotRotate180()),
+./utilities/imageeditor/editor/editorwindow.cpp:                                    0, CTRL+Key_7, m_canvas, SLOT(slotRotate270()),
+./utilities/imageeditor/editor/imagewindow.cpp:    d->star0 = new KAction(i18n("Assign Rating \"No Star\""), CTRL+Key_0,
+./utilities/imageeditor/editor/imagewindow.cpp:    d->star1 = new KAction(i18n("Assign Rating \"One Star\""), CTRL+Key_1,
+./utilities/imageeditor/editor/imagewindow.cpp:    d->star2 = new KAction(i18n("Assign Rating \"Two Stars\""), CTRL+Key_2,
+./utilities/imageeditor/editor/imagewindow.cpp:    d->star3 = new KAction(i18n("Assign Rating \"Three Stars\""), CTRL+Key_3,
+./utilities/imageeditor/editor/imagewindow.cpp:    d->star4 = new KAction(i18n("Assign Rating \"Four Stars\""), CTRL+Key_4,
+./utilities/imageeditor/editor/imagewindow.cpp:    d->star5 = new KAction(i18n("Assign Rating \"Five Stars\""), CTRL+Key_5,
+./utilities/cameragui/cameraui.cpp:    d->imageMenu->insertItem(i18n("Select &All"),       d->view, SLOT(slotSelectAll()),    CTRL+Key_A, 0);
+./utilities/cameragui/cameraui.cpp:    d->imageMenu->insertItem(i18n("Select N&one"),      d->view, SLOT(slotSelectNone()),   CTRL+Key_U, 1);
+./utilities/cameragui/cameraui.cpp:    d->imageMenu->insertItem(i18n("&Invert Selection"), d->view, SLOT(slotSelectInvert()), CTRL+Key_Asterisk, 2);
+./utilities/cameragui/cameraui.cpp:    d->imageMenu->insertItem(i18n("Increase Thumbs"),   this,    SLOT(slotIncreaseThumbSize()), CTRL+Key_Plus, 4);
+./utilities/cameragui/cameraui.cpp:    d->imageMenu->insertItem(i18n("Decrease Thumbs"),   this,    SLOT(slotDecreaseThumbSize()), CTRL+Key_Minus, 5);
+./ChangeLog:      rotate an image in editor, use CTRL+7, CTRL+8, CTRL+9 to prevent
+./ChangeLog:      - 2 keyboard shorcuts can be used to change thumbs size : CTRL+
+./ChangeLog:      CTRL+0/1/2/3/4/5 from Image Editor
+./ChangeLog:      CTRL+0/1/2/3/4/5 from main interface
+./ChangeLog:      Rating image using keyboard shortcuts CTRL+0/1/2/3/4/5 from main

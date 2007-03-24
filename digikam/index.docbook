@@ -5,6 +5,34 @@
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % English "INCLUDE"><!-- change language only here -->
   <!ENTITY digikam '<application>digiKam</application>'>
+  <!ENTITY doc-adjustcurves SYSTEM "adjustcurves.docbook">
+  <!ENTITY doc-adjustlevels SYSTEM "adjustlevels.docbook">
+  <!ENTITY doc-antivignetting SYSTEM "antivignetting.docbook">
+  <!ENTITY doc-resize SYSTEM "resize.docbook"> 
+  <!ENTITY doc-border SYSTEM "border.docbook"> 
+  <!ENTITY doc-blurfx SYSTEM "blurfx.docbook"> 
+  <!ENTITY doc-channelmixer SYSTEM "channelmixer.docbook"> 
+  <!ENTITY doc-charcoal SYSTEM "charcoal.docbook"> 
+  <!ENTITY doc-noisereduction SYSTEM "noisereduction.docbook">
+  <!ENTITY doc-distortionfx SYSTEM "distortionfx.docbook"> 
+  <!ENTITY doc-emboss SYSTEM "emboss.docbook"> 
+  <!ENTITY doc-filmgrain SYSTEM "filmgrain.docbook"> 
+  <!ENTITY doc-freerotation SYSTEM "freerotation.docbook"> 
+  <!ENTITY doc-hotpixels SYSTEM "hotpixels.docbook"> 
+  <!ENTITY doc-infrared SYSTEM "infrared.docbook"> 
+  <!ENTITY doc-inpainting SYSTEM "inpainting.docbook"> 
+  <!ENTITY doc-inserttext SYSTEM "inserttext.docbook"> 
+  <!ENTITY doc-lensdistortion SYSTEM "lensdistortion.docbook">
+  <!ENTITY doc-oilpaint SYSTEM "oilpaint.docbook">
+  <!ENTITY doc-perspective SYSTEM "perspective.docbook"> 
+  <!ENTITY doc-raindrops SYSTEM "raindrops.docbook">
+  <!ENTITY doc-restoration SYSTEM "restoration.docbook"> 
+  <!ENTITY doc-sheartool SYSTEM "sheartool.docbook"> 
+  <!ENTITY doc-coloreffects SYSTEM "coloreffects.docbook">
+  <!ENTITY doc-superimpose SYSTEM "superimpose.docbook"> 
+  <!ENTITY doc-texture SYSTEM "texture.docbook"> 
+  <!ENTITY doc-sharpening SYSTEM "sharpening.docbook"> 
+  <!ENTITY doc-whitebalance SYSTEM "whitebalance.docbook">
 
   <!-- Do not define any other entities; instead, use the entities
        from kde-genent.entities and $LANG/user.entities. -->
@@ -21,6 +49,11 @@
     <author>
         <firstname>Gilles</firstname><surname>Caulier</surname>
         <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer.net</email></address></affiliation>
     </author>
 
     <author>
@@ -43,11 +76,6 @@
         <affiliation><address><email>oliver_at_doerr-privat.de</email></address></affiliation>
     </author>
     
-    <author>
-        <firstname>Gerhard</firstname><surname>Kulzer</surname>
-        <affiliation><address><email>gerhard at kulzer.net</email></address></affiliation>
-    </author>
-
 <!-- TRANS:ROLES_OF_TRANSLATORS -->
 
 </authorgroup>
@@ -65,7 +93,7 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2006-03-11</date>
+<date>2006-03-24</date>
 <releaseinfo>0.9.2</releaseinfo>
 
 <abstract>
@@ -2463,11 +2491,9 @@
 
 <!-- ****************************************************************************************************************** -->
 
-<chapter id="image-editor">
-  <title>The Image Editor</title>
+<chapter id="image-editor">     <title>The Image Editor</title>
     
-    <sect1 id="using-kapp-imageeditor">
-     <title>Introduction to Image Editor</title>
+    <sect1 id="using-kapp-imageeditor">    <title>Introduction to Image Editor</title>
       <anchor id="imageeditor.anchor"/>
 
         <sect2 id="imageeditor-window"> <title>The Image Editor Window</title>
@@ -2623,7 +2649,7 @@
         
          </sect2>
 
-         <sect2>    <title>Printing Images</title>
+        <sect2>    <title>Printing Images</title>
             
             <para>
             When you want to print the current image from the Image Editor, select 
@@ -2642,8 +2668,62 @@
 
         </sect1>
 
-        <sect1 id="photographic-editing"> 
-        <title>Photographic Editing</title>
+    <sect1 id="photographic-editing">      <title>Photographic Editing</title>
+
+        <sect2 id="image-editing-tools">   <title>Image Editing/Workflow Tools</title>
+          <itemizedlist>
+
+   <listitem><para>Image Filters and Enhancement
+      <itemizedlist>
+      <listitem><para><link linkend="adjustcurves">Adjust Curves</link></para></listitem>
+      <listitem><para><link linkend="adjustlevels">Adjust Levels</link></para></listitem>
+      <listitem><para><link linkend="antivignetting">Anti Vignetting Correction</link></para></listitem>
+      <listitem><para><link linkend="channelmixer">Channel Mixer</link></para></listitem>
+      <listitem><para><link linkend="noisereduction">Noise Reduction</link></para></listitem>
+      <listitem><para><link linkend="hotpixels">Hot Pixels Correction</link></para></listitem>
+      <listitem><para><link linkend="inpainting">Photograph Inpainting</link></para></listitem>
+      <listitem><para><link linkend="lensdistortion">Lens Distortion Correction</link></para></listitem>
+      <listitem><para><link linkend="sharpening">Unsharped Mask</link></para></listitem>
+      <listitem><para><link linkend="restoration">Photograph Restoration</link></para></listitem>
+      <listitem><para><link linkend="whitebalance">White Balance</link></para></listitem>
+      <listitem><para><link linkend="coloreffects">Solarize Photograph</link></para></listitem>
+      </itemizedlist>
+   </para></listitem>
+
+   <listitem><para>Image Transformation Tools
+      <itemizedlist>
+      <listitem><para><link linkend="resize">Blowup Photograph</link></para></listitem>
+      <listitem><para><link linkend="freerotation">Free Rotation</link></para></listitem>
+      <listitem><para><link linkend="perspective">Perspective Adjustment</link></para></listitem>
+      <listitem><para><link linkend="sheartool">Shearing Tool</link></para></listitem>
+      </itemizedlist>
+   </para></listitem>
+   
+   <listitem><para>Image Tools
+      <itemizedlist>
+      <listitem><para><link linkend="border">Add Border</link></para></listitem>
+      <listitem><para><link linkend="inserttext">Insert Text</link></para></listitem>
+      <listitem><para><link linkend="superimpose">Template Superimpose</link></para></listitem>
+      <listitem><para><link linkend="texture">Apply Texture</link></para></listitem>
+      </itemizedlist>
+   </para></listitem>
+
+   <listitem><para>Special Effects Plugins
+      <itemizedlist>
+      <listitem><para><link linkend="blurfx">Blur FX.</link></para></listitem>
+      <listitem><para><link linkend="charcoal">Simulate Charcoal Drawing.</link></para></listitem>
+      <listitem><para><link linkend="distortionfx">Distortion FX.</link></para></listitem>
+      <listitem><para><link linkend="emboss">Emboss Photograph.</link></para></listitem>
+      <listitem><para><link linkend="filmgrain">Add Film Grain.</link></para></listitem>
+      <listitem><para><link linkend="infrared">Simulate Infrared Film.</link></para></listitem>
+      <listitem><para><link linkend="oilpaint">Simulate Oil Painting</link></para></listitem>
+      <listitem><para><link linkend="raindrops">Add Rain Drops</link></para></listitem>
+      </itemizedlist>
+   </para></listitem>
+
+</itemizedlist>
+
+	</sect2>
 
         <sect2 id="using-kapp-adjustingimage">
         <title>Adjusting a Photograph</title>
@@ -3391,8 +3471,7 @@
 
        </sect1>
 
-        <sect1 id="using-kapp-iccprofile">
-            <title>ICC color profile management</title>
+    <sect1 id="using-kapp-iccprofile">     <title>ICC color profile management</title>
             
             <para>
                 What is the importance of ICC color profile management anyway? In simple terms it is alike hi-fi stereo, where high fidelity is seeked from source to speakers, passing through microphone, recoding media, player and amplifier. Much the same, ICC color profile management tries to maintain color fidelity from photographic subject through the camera to the output media screen, print, paper and beamer. Luckily digital photography has taken out one source of distortion, the storage media (as the &CD-ROM; did in the audio field).
@@ -5356,9 +5435,41 @@
             
 </sect1>
 
-<!-- *********************************************************************** -->
-
 </chapter>
+
+&doc-adjustcurves;
+&doc-adjustlevels;
+&doc-antivignetting;
+&doc-channelmixer;
+&doc-noisereduction;
+&doc-hotpixels;
+&doc-inpainting;
+&doc-lensdistortion;
+&doc-restoration;
+&doc-sharpening;
+&doc-whitebalance;
+
+&doc-resize;
+&doc-freerotation;
+&doc-perspective;
+&doc-sheartool;
+
+&doc-border;
+&doc-inserttext;
+&doc-superimpose;
+&doc-texture;
+
+&doc-blurfx;
+&doc-charcoal;
+&doc-distortionfx;
+&doc-emboss;
+&doc-filmgrain;
+&doc-infrared;
+&doc-oilpaint;
+&doc-raindrops;
+&doc-coloreffects;
+
+<!-- *********************************************************************** -->
 
 <chapter id="credits">
 
