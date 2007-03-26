@@ -13,12 +13,12 @@
   <!ENTITY doc-coloreffects SYSTEM "coloreffects.docbook">
   <!ENTITY doc-blackwhite   SYSTEM "blackwhite.docbook">
 <!-- correct menu -->
-  <!ENTITY doc-sharpening   SYSTEM "sharpening.docbook"> 
+  <!ENTITY doc-sharpening     SYSTEM "sharpening.docbook"> 
   <!ENTITY doc-antivignetting SYSTEM "antivignetting.docbook">
   <!ENTITY doc-noisereduction SYSTEM "noisereduction.docbook">
-  <!ENTITY doc-restoration  SYSTEM "restoration.docbook"> 
-  <!ENTITY doc-hotpixels    SYSTEM "hotpixels.docbook"> 
-  <!ENTITY doc-inpainting   SYSTEM "inpainting.docbook"> 
+  <!ENTITY doc-restoration    SYSTEM "restoration.docbook"> 
+  <!ENTITY doc-hotpixels      SYSTEM "hotpixels.docbook"> 
+  <!ENTITY doc-inpainting     SYSTEM "inpainting.docbook"> 
   <!ENTITY doc-lensdistortion SYSTEM "lensdistortion.docbook">
 <!-- transform menu -->
   <!ENTITY doc-crop         SYSTEM "crop.docbook"> 
@@ -148,10 +148,10 @@
        An easy to use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than 800 digital cameras are supported through the gphoto2 library.
        </para>
        
-       <para>&digikam; incorporates a fast Image Editor with basic image editing tools. You can use the Image Editor to view your photographs, comment and rate them, make corrections and alterations. The editing power can be easily extended by two sets of plugins, the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface</ulink> (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) and the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins.</ulink> (<ulink url="help:/digikamimageplugins/index.html">manual</ulink>) 
+       <para>&digikam; incorporates a fast Image Editor with basic image editing tools. You can use the Image Editor to view your photographs, comment and rate them, make corrections and alterations. The editing power can be easily extended by a set of plugins, the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface</ulink> (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) 
        </para>
 
-       <para>Whereas &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports RAW format conversion through David Coffins dcraw and ICC color management work flow. 
+       <para>While &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports RAW format conversion through David Coffins dcraw and ICC color management work flow.
        </para>
        
        </sect2>
@@ -501,14 +501,11 @@
  <sect1 id="using-kapp-pluginssupport">     <title>Supported Plugins</title>
 
         <para>
-        One of the nicest things about &digikam; is how easily its functionality can be extended, by using plugins. Two plugin architectures are available:
+        One of the nicest things about &digikam; is how easily its functionality can be extended, by using plugins:
         
         <itemizedlist>
             
                 <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface project (kipi)</ulink>  (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) is an effort to develop a common plugin structure for &digikam;, <application>KPhotoAlbum</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi Plugins setup is described in this <link linkend="setupkipiplugins">section</link>.</para></listitem>
-
-                <listitem><para><emphasis>Image Editor Plugins</emphasis>: these plugins add new image manipulation options in the &digikam; Image Editor. The <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>  (<ulink url="help:/digikamimageplugins/index.html">manual</ulink>) is dedicated to providing a collection of tools using this architecture. Image Editor Plugins setup is described in this <link linkend="setup-editor">section</link>.
-                </para></listitem>
 
         </itemizedlist>
         
@@ -521,7 +518,7 @@
         <para>                                                    
          Plugins can manipulate images in almost any way that users can. Their advantage is, that it is much easier to add a capability to &digikam; by writing a small plugin than by modifying the &digikam; core.
         </para>
-                
+
     </sect1>
 
  <sect1 id="using-kapp-camerasupport">      <title>Supported Digital Still Cameras</title>
@@ -1436,7 +1433,7 @@
                 </para>
             
                 <para>
-                  The Histogram Viewer shows the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram-based color correction, use the Adjust Levels or Adjust Curves Image Editor plugin. These plugins are part of the <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins project</ulink>. For more information about using Plugins in &digikam; see the <link linkend="using-kapp-setup">Configuration</link> section.
+                  The Histogram Viewer shows the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram-based color correction, use the Adjust Levels or Adjust Curves Image Editor tool.
                 </para>
                                                 
                 <example>   <title>The Histogram Viewer in Action</title>
@@ -2216,7 +2213,7 @@
                     <inlinemediaobject><imageobject><imagedata fileref="setupiccprofiles.png" format="PNG" /> </imageobject></inlinemediaobject> 
                 </para>
 
-              <para><guilabel>Behaviour</guilabel> Ask when open an image in image editor / Launch Color Management plugin with RAW files</para>
+              <para><guilabel>Behavior</guilabel> Ask when opening an image in image editor / Launch Color Management tool with RAW files</para>
               <para><guilabel>Color Profiles Directory</guilabel> 
                 Set this to the directory where you stores all your profiles &eg; "/urs/share/color/icc" or "/home/user/Pictures/.icc". &digikam; will scan this directory when starting up.</para>
               <para><guilabel>ICC Profiles Settings</guilabel> 
@@ -2239,31 +2236,15 @@
 
             <sect3>  <title>Process a raw picture</title>
              <para>
-               From there everything is simple, select a RAW picture and open it in the editor. The color management plugin will be displayed after the picture has been processed in order to adjust color rendering. Without color management all pictures are very dark, this is normal. You can experiment the various profiles you have in order to select the best input profile according to your picture (some tends to be very neutral, even a bit dull, some gives more saturated results, &etc;).
+               From there everything is simple, select a RAW picture and open it in the editor. The color management widget will be displayed after the picture has been processed in order to adjust color rendering. Without color management all pictures are very dark, this is normal. You can experiment the various profiles you have in order to select the best input profile according to your picture (some tends to be very neutral, even a bit dull, some gives more saturated results, &etc;).
              </para>
-            </sect3>
-
-            <sect3 id="setup-imageplugins">
-            <title>Setup Image Plugins</title>
-                <para>
-                The Image Editor only implements some very simple photo manipulation tools in the core application. For an easy development of more manipulation tools the Image Editor supports a plugin interface. If your distribution has installed the additional Image Editor plugins they will be listed in the Image Plugins list. You can enable or disable these plugins that you see here.
-                </para>
-    
-                <para>
-                For more information about advanced Image Editor plugins, you can consult the 'DigikamImagePlugins' project at <ulink url="http://extragear.kde.org/apps/digikamimageplugins">&digikam;-Image-Plugins</ulink>.
-                </para>
-                            
-                <para>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupimageplugins.png" format="PNG" /> </imageobject></inlinemediaobject> 
-                </para>
-
             </sect3>
 
             <sect3 id="setupkipiplugins">
             <title>Kipi Plugins Settings</title>
     
                 <para>
-                Kipi is the &kde; Image Plugin Interface. It is an interface that is supported by a number of &kde; image viewer/editor applications. By providing this interface &digikam; can take advantage of many plugins that are written to work with any application that implements the Kipi interface.
+                  Kipi is the &kde; Image Plugin Interface. It is an interface that is supported by a number of &kde; image viewer/editor applications. By providing this interface &digikam; can take advantage of many plugins that are written to work with any application that implements the Kipi interface.
                 </para>
     
                <para>
@@ -2271,17 +2252,17 @@
                 </para>
     
                 <para>
-                If your distribution has the Kipi plugins package installed you will see a list of available plugins. Select those that you want to use and they will be loaded into &digikam;. The plugins will appear as new menu entries in the main Menu Bar and in the context menu for thumbnails.
+                  If your distribution has the Kipi plugins package installed you will see a list of available plugins. Select those that you want to use and they will be loaded into &digikam;. The plugins will appear as new menu entries in the main Menu Bar and in the context menu for thumbnails.
                 </para>
                 
                 <para>
-                Keyboard shortcuts to actions that plugins perform can be set up in the 
+                  Keyboard shortcuts to actions that plugins perform can be set up in the 
                 <menuchoice><guimenu>Setting</guimenu>
                 <guimenuitem>Configure Shortcuts</guimenuitem></menuchoice> menu.
                 </para>
                 
                 <para>
-                For more information about Kipi plugins, you can consult the Kipi project at <ulink url="http://www.kipi-plugins.org">http://www.kipi-plugins.org</ulink> or the <ulink url="help:/kipi-plugins/index.html">kipi-plugins manual</ulink>.
+                  For more information about Kipi plugins, you can consult the Kipi project at <ulink url="http://www.kipi-plugins.org">http://www.kipi-plugins.org</ulink> or the <ulink url="help:/kipi-plugins/index.html">kipi-plugins manual</ulink>.
                 </para>
                 
             </sect3> 
@@ -2498,7 +2479,7 @@
             </para>
 
             <para>
-            The Image Editor provides a number of tools that enable you to adjust a photograph. Some of these tools are provided by plugins to &digikam;. So they may not be available by default on your distribution. See the <link linkend="setup-editor">Setup Image Editor Section</link> for more details about &digikam; Image Editor plugins.
+            The Image Editor provides a number of tools that enable you to adjust a photograph. Some of these tools are provided by plugins to &digikam;. So they may not be available by default on your distribution. See the <link linkend="setupkipiplugins">Setup Image Editor Section</link> for more details about Kipi-plugins.
             </para>
             
             <example>  <title>The Image Editor Window</title>
@@ -2801,28 +2782,15 @@
             </example>
             
             <para>
-            If you have the Adjust Levels plugin installed (see the <link linkend="setup-editor">Setup Image Editor Section</link>) you will have additional entry in the Fix menu called 
-            <menuchoice><guimenu>Fix</guimenu>
-            <guimenuitem>Colors</guimenuitem>
-            <guimenuitem>Levels Adjust</guimenuitem></menuchoice>. This tools provides an integrated way of seeing the results of adjusting multiple levels and also enables you to save level settings for application to multiple photographs. This can be useful if your camera or scanner often makes the same mistakes and you want to apply the same corrections. See the dedicated <ulink url="help:/digikamimageplugins/adjustlevels.html">Adjust Levels manual</ulink> for more information.
-            
-            <example>  <title>The Adjust Levels Image Editor Plugin in Action</title>
-                <screenshot><screeninfo>The Adjust Levels Image Editor Plugin in Action" </screeninfo><mediaobject><imageobject><imagedata fileref="editoradjustlevels.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
-            </example>
-
+            Another important tool is called
+            <menuchoice><guimenu>Color</guimenu>
+             <guimenuitem>Levels Adjust</guimenuitem></menuchoice>. This tool provides an integrated way of seeing the results of adjusting multiple levels and also enables you to save level settings for application to multiple photographs. This can be useful if your camera or scanner often makes the same mistakes and you want to apply the same corrections. See the dedicated <link linkend="using-adjustlevels">Adjust Levels manual</link> for more information.
             </para>
 
             <para>
-              A very powerful way of correcting exposure problems is to use the Adjust Curves plugin available by <menuchoice><guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem>
-              <guimenuitem>Curves Adjust</guimenuitem></menuchoice> menu entry. This tool allows you to click and drag control points on a curve to create a free function mapping input brightness levels to output brightness levels. The Curves tool can replicate any effect you can achieve with Brightness/Contrast/Gamma or the Adjust Levels plugin, though it is more powerful than either one of them. Once again, we refer you to the <ulink url="help:/digikamimageplugins/adjustcurves.html">Adjust Curves manual</ulink> for more detailed instructions, but the easiest way to learn how to use it is by experimenting. 
-
-              But this plugin can do more for you, it helps you to improve the tonal quality of your photographs to very finely stepped gray scales. And don't forget that the better the photographs are (good exposure, lossless format, 24 or 32 bit deep) the more you can improve them. Navigate to the "Achieving ultimate tonal quality" section of this instructive page: <ulink url="http://www.normankoren.com/digital_tonality.html">Tonal quality and dynamic range in digital cameras by Norman Koren</ulink>. Use Adjust Curves tool to do just the same!
-
-                <example>  <title>The Adjust Curves Image Editor Plugin in Action</title>
-                <screenshot><screeninfo>The Adjust Curves Image Editor Plugin in Action" </screeninfo><mediaobject><imageobject><imagedata
-                fileref="editoradjustcurves.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
-
-            </para>
+              A very powerful way of correcting exposure problems is to use the Adjust Curves tool available by <menuchoice><guimenu>Color</guimenu>
+              <guimenuitem>Curves Adjust</guimenuitem></menuchoice> menu entry.
+             </para>
 
         </sect3>
 
@@ -2833,8 +2801,8 @@
             
             <para>
             Digital cameras often have problems with lighting conditions and it is not unusual to want to correct the color contrast and brightness of a photograph. You can experiment with altering the levels of different aspects of your photographs using the tools under the
-            <menuchoice><guimenu>Fix</guimenu>
-            <guimenuitem>Colors</guimenuitem></menuchoice> menu.
+            <menuchoice><guimenu>Color</guimenu>
+            </menuchoice> menu.
             You can see any adjustments you make reflected in the preview. When you are happy with the results, press <guilabel>Ok</guilabel> and they will take effect.
             </para>
 
@@ -2859,7 +2827,7 @@
             <anchor id="autocolorcorrectiontool.anchor"/>
             
             <para>
-            The <guilabel>Normalize</guilabel>, <guilabel>Equalize</guilabel>, <guilabel>Auto Levels</guilabel>, and <guilabel>Stretch Contrast</guilabel> available from <menuchoice><guilabel>Fix</guilabel><guimenuitem>Auto-Correction</guimenuitem></menuchoice> menu entry menu will attempt to work out the best color levels automatically. You will need to experiment with the effects of these functions to see what works best with your photograph. 
+            The <guilabel>Normalize</guilabel>, <guilabel>Equalize</guilabel>, <guilabel>Auto Levels</guilabel>, and <guilabel>Stretch Contrast</guilabel> available from <menuchoice><guilabel>Correct</guilabel><guimenuitem>Auto-Correction</guimenuitem></menuchoice> menu entry menu will attempt to work out the best color levels automatically. You will need to experiment with the effects of these functions to see what works best with your photograph. 
             
             <itemizedlist>
             
@@ -2943,11 +2911,10 @@
                 </para>
             
                 <para>
-                With flipping options, you can flip or turn over the image horizontally or vertically like a card deck. With the rotating options, you can rotate the image in 90 degrees steps clockwise. It can be used to change the display mode to Portrait or Landscape. Be aware that this rotation is not lossless when using JPEG format. You also can rotate more accurately to a finer degree by using the Free Rotation tool. It is a plug-in available from <ulink url="http://extragear.kde.org/apps/digikamimageplugins">DigikamImagePlugins
-                project</ulink>, and you can access it by the 
-		<menuchoice><guimenu>Transform</guimenu>
+                With flipping options, you can flip or turn over the image horizontally or vertically like a card deck. With the rotating options, you can rotate the image in 90 degrees steps clockwise. It can be used to change the display mode to Portrait or Landscape. Be aware that this rotation is not lossless when using JPEG format. You also can rotate more accurately to a finer degree by using the Free Rotation tool. You can access it by the 
+                <menuchoice><guimenu>Transform</guimenu>
                 <guimenuitem>Free Rotation</guimenuitem></menuchoice> menu entry.
-                See the dedicated <ulink url="help:/digikamimageplugins/freerotation.html">Free Rotation manual</ulink> for more information.
+                See the dedicated <link linkend="using-freerotation">Free Rotation manual</link> for more information.
                 </para>
                 
             </sect3>
@@ -3604,8 +3571,7 @@
 
     <!-- *********************************************************************** -->
 
-    <sect2>
-    <title>The View Menu</title>
+    <sect2>    <title>The View Menu</title>
 
     <para>
         <inlinemediaobject>
@@ -3693,8 +3659,7 @@
 
     <!-- *********************************************************************** -->
 
-    <sect2>
-    <title>The Tools Menu</title>
+    <sect2>    <title>The Tools Menu</title>
 
     <para>
         <inlinemediaobject>
@@ -3933,8 +3898,7 @@
     
     <!-- *********************************************************************** -->
 
-    <sect2>
-    <title>The Camera Menu</title>
+    <sect2>    <title>The Camera Menu</title>
 
     <para>
         <inlinemediaobject>
@@ -3970,8 +3934,7 @@
 
     <!-- *********************************************************************** -->
 
-    <sect2 id="settings-menu">
-    <title>The Settings Menu</title>
+    <sect2 id="settings-menu">    <title>The Settings Menu</title>
 
     <para>
         <inlinemediaobject>
@@ -4029,8 +3992,7 @@
 
 <sect1 id="image-editor-menu">               <title>The Image Editor</title>
 
-    <sect2>
-    <title>The File Menu</title>
+    <sect2>        <title>The File Menu</title>
 
     <para>
     <variablelist>
@@ -4120,9 +4082,8 @@
     </sect2>
 
     <!-- *********************************************************************** -->
-    
-    <sect2>
-    <title>The Edit Menu</title>
+
+    <sect2>        <title>The Edit Menu</title>
 
     <para>
     <variablelist>
@@ -4157,218 +4118,146 @@
     </sect2>
 
     <!-- *********************************************************************** -->
-    
-    <sect2>
-    <title>The Image Menu</title>
 
-    <para>
-    <variablelist>
+    <sect2>        <title>The Color Menu</title>
+      <para>
+      <variablelist>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Image</guimenu><guimenuitem>Apply Texture</guimenuitem>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>B</keycap></keycombo> </shortcut>
+                <guimenu>Color</guimenu><guimenuitem>Auto-Correction</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Automatic color/exposure correction of the current image by an histogram manipulation <link linkend="autocolorcorrectiontool.anchor">(help)</link>.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Color</guimenu><guimenuitem>White Balance</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to apply decorative texture to the current image.
+                    Image Editor tool to adjust white color balance on the current image <link linkend="using-whitebalance">(help)</link>.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/texture.html">Apply Texture manual</ulink> 
-                    for more information.
-                </para>     
             </listitem>
-        </varlistentry>      
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Image</guimenu><guimenuitem>Add Border</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to add a decorative border around the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/border.html">Add Border manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>      
+        </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Image</guimenu><guimenuitem>Insert Text</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to insert text in the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/inserttext.html">Insert Text manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>      
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Image</guimenu><guimenuitem>Template Superimpose</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin for apply a template to the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/superimpose.html">Template Superimpose manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>      
-                
-    </variablelist>
-    </para>
-
-    </sect2>
-
-    <!-- *********************************************************************** -->
-    
-    <sect2>
-    <title>The Fix Menu</title>
-
-    <para>
-    <variablelist>
-
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem>
+                <guimenu>Color</guimenu>
                 <guimenuitem>Brightness/Contrast/Gamma</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Exposure correction of the current image by Brightness, Contrast, or Gamma 
-            adjustments.</action></para></listitem>
+            adjustments <link linkend="bcgadjusttool.anchor">(help)</link>.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
                 <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>U</keycap></keycombo> </shortcut>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem>
+                <guimenu>Color</guimenu>
                 <guimenuitem>Hue/Saturation/Lightness</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Color correction of the current image by Hue, Saturation, or Lightness 
-            adjustments.</action></para></listitem>
+            adjustments<link linkend="colorbalancetool.anchor">(help)</link>.</action></para></listitem>
         </varlistentry>
-    
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Color</guimenu><guimenuitem>Color Effects</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Set of four Image Editor tools: Solarize, Vivid (Velvia), Neon and Edge <link linkend="coloreffects">(help)</link>.
+                </action></para>
+          </listitem>
+        </varlistentry>
+
         <varlistentry>
             <term><menuchoice>
                 <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>B</keycap></keycombo> </shortcut>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Color Balance</guimenuitem>
+                <guimenu>Color</guimenu><guimenuitem>Color Balance</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Color correction of the current image by Red, Green, or Blue 
-            adjustments.</action></para></listitem>
+            adjustments <link linkend="colorbalancetool.anchor">(help)</link></action></para></listitem>
         </varlistentry>
-    
+
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>B</keycap></keycombo> </shortcut>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Auto-Correction</guimenuitem>
+                <guimenu>Correct</guimenu><guimenuitem>Curves Adjust</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Automatic color correction of the current image by an histogram 
-            manipulation.</action></para></listitem>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to adjust curves manually on the current image <link linkend="adjustcurves">(help)</link>.
+                </action></para>
+             </listitem>
         </varlistentry>
-    
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Color</guimenu><guimenuitem>Levels Adjust</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to adjust levels manually on the current image <link linkend="adjustlevels">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Color</guimenu><guimenuitem>Channel Mixer</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    <link linkend="using-channelmixer">Image Editor tool </link>to mix color channels on the current image.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
         <varlistentry>
             <term><menuchoice>
                 <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>I</keycap></keycombo> </shortcut>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Invert</guimenuitem>
+                <guimenu>Color</guimenu><guimenuitem>Invert</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Invert image colors.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Depth</guimenuitem>
+                <guimenu>Filters</guimenu><guimenuitem>Black &amp; White</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Toggle between 8 bit and 16 bit format on color channels.</action></para></listitem>
+            <listitem><para><action>Open the <link linkend="blackandwhite-conversion">Black &amp; White  </link>filter dialog for the current image.</action></para></listitem>
         </varlistentry>
-
+ 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Color Management</guimenuitem>
+                <guimenu>Color</guimenu><guimenuitem>Color Management</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Invokes the interactive Color Management editor.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Levels 
-                Adjust</guimenuitem>
+                <guimenu>Color</guimenu><guimenuitem>Depth</guimenuitem>
             </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to adjust levels manually on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/adjustlevels.html">Adjust Levels manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
+            <listitem><para><action>Toggle between 8 bit and 16 bit format on color channels.</action></para></listitem>
         </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>White Balance</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to adjust white color balance on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/whitebalance.html">White Balance manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>
+
+       </variablelist>
+      </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+
+    <sect2>        <title>The Correct Menu</title>
+
+    <para>
+    <variablelist>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Curves 
-                Adjust</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to adjust curves manually on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/adjustcurves.html">Adjust Curves manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Colors</guimenuitem><guimenuitem>Channel Mixer</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to mix color channels on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/channelmixer.html">Channel Mixer manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>
-                                   
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Blur</guimenuitem>
+                <guimenu>Correct</guimenu><guimenuitem>Blur</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Focus error correction of the current image by a blurring 
             operation.</action></para></listitem>
@@ -4376,7 +4265,7 @@
     
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Sharpen</guimenuitem>
+                <guimenu>Correct</guimenu><guimenuitem>Sharpen</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Focus error correction of the current image by a sharping 
             operation.</action></para></listitem>        
@@ -4384,7 +4273,7 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Red Eye Reduction</guimenuitem>
+                <guimenu>Correct</guimenu><guimenuitem>Red Eye Reduction</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Red Eye correction using the current selection of the current 
             image.</action></para></listitem>        
@@ -4392,7 +4281,7 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Inpainting</guimenuitem>
+                <guimenu>Correct</guimenu><guimenuitem>Inpainting</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -4408,7 +4297,7 @@
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Noise Reduction</guimenuitem>
+                <guimenu>Correct</guimenu><guimenuitem>Noise Reduction</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -4425,7 +4314,7 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Unsharp Mask</guimenuitem>
+                <guimenu>Correct</guimenu><guimenuitem>Unsharp Mask</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -4441,7 +4330,7 @@
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Hot Pixels Correction</guimenuitem>
+                <guimenu>Correct</guimenu><guimenuitem>Hot Pixels Correction</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -4457,7 +4346,7 @@
     
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Lens Distortion Correction</guimenuitem>
+                <guimenu>Correct</guimenu><guimenuitem>Lens Distortion Correction</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -4473,7 +4362,7 @@
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Restoration</guimenuitem>
+                <guimenu>Correct</guimenu><guimenuitem>Restoration</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -4489,7 +4378,7 @@
                 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Refocus</guimenuitem>
+                <guimenu>Correct</guimenu><guimenuitem>Refocus</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -4505,7 +4394,7 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Fix</guimenu><guimenuitem>Anti Vignetting</guimenuitem>
+                <guimenu>Correct</guimenu><guimenuitem>Anti Vignetting</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -4526,8 +4415,7 @@
 
     <!-- *********************************************************************** -->
     
-    <sect2>
-    <title>The Transform Menu</title>
+    <sect2>        <title>The Transform Menu</title>
 
     <para>
     <variablelist>
@@ -4668,8 +4556,81 @@
             
     <!-- *********************************************************************** -->
     
-    <sect2>
-    <title>The View Menu</title>
+    <sect2>        <title>The Decoration Menu</title>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Decoration</guimenu><guimenuitem>Apply Texture</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor tool to apply decorative texture to the current image.
+                </action></para>
+                <para>
+                    See the dedicated <link linkend="using-texture">Apply Texture manual</link> for more information.
+                </para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Decoration</guimenu><guimenuitem>Add Border</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to add a decorative border around the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/border.html">Add Border manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>      
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Decoration</guimenu><guimenuitem>Insert Text</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to insert text in the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/inserttext.html">Insert Text manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>      
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Decoration</guimenu><guimenuitem>Template Superimpose</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin for apply a template to the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/superimpose.html">Template Superimpose manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>      
+                
+    </variablelist>
+    </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+    
+    <sect2>        <title>The View Menu</title>
 
     <para>
     <variablelist>
@@ -4726,29 +4687,6 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Filters</guimenu><guimenuitem>Black &amp; White</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>Open the Black &amp; White filter dialog for the current image.</action></para></listitem>
-        </varlistentry>
-                
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Filters</guimenu><guimenuitem>Raindrops</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to add Rain Drops on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/raindrops.html">Rain Drops manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>       
-        </varlistentry>
-
-        <varlistentry>
-            <term><menuchoice>
                 <guimenu>Filters</guimenu><guimenuitem>Infrared Film</guimenuitem>
             </menuchoice></term>
             <listitem>
@@ -4795,22 +4733,6 @@
             </listitem>
         </varlistentry>
 
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Filters</guimenu><guimenuitem>Solarize Image</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to Solarize the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/solarizeimage.html">Solarize Image manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>
-                
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Filters</guimenu><guimenuitem>Distortion Effects</guimenuitem>
@@ -4875,6 +4797,22 @@
             </listitem>            
         </varlistentry>
     
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Raindrops</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to add Rain Drops on the current image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/digikamimageplugins/raindrops.html">Rain Drops manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>       
+        </varlistentry>
+
     </variablelist>
     </para>
 
@@ -4882,8 +4820,7 @@
 
     <!-- *********************************************************************** -->
 
-    <sect2>
-    <title>The Settings Menu</title>
+    <sect2>        <title>The Settings Menu</title>
 
     <para>
     <variablelist>
@@ -4918,8 +4855,7 @@
         
     <!-- *********************************************************************** -->
             
-    <sect2>
-    <title>The Help Menu</title>
+    <sect2>        <title>The Help Menu</title>
     &help.menu.documentation;
 
     <para>Additionally &digikam; Image Editor offers this item:</para>
