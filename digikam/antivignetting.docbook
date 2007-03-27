@@ -11,7 +11,7 @@
     
     <author>
         <firstname>Gerhard</firstname><surname>Kulzer</surname>
-        <affiliation><address><email>gerhard at kulzer.net</email></address></affiliation>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
     </author>    
 </authorgroup>
 
@@ -24,6 +24,7 @@ The &digikam; image plugin <emphasis>Anti Vignetting</emphasis> is a tool to cor
 <keywordset>
 <keyword>KDE</keyword>
 <keyword>Digikam</keyword>
+<keyword>Anti-Vignetting</keyword>
 </keywordset>
 
 </sect3info>
@@ -31,23 +32,22 @@ The &digikam; image plugin <emphasis>Anti Vignetting</emphasis> is a tool to cor
 <title>Introduction</title>
 
 <para>
-Wide angle lenses, especially those used in medium and large format photography, frequently do not uniformly illuminate the entire sensor plane. Instead, they "vignette" (shade) the edges and corners of the image, substantially reducing the light reaching the sensor there. But telelenses may show vignetting too.
+  Wide angle lenses, especially those used in medium and large format photography, frequently do not uniformly illuminate the entire sensor plane. Instead, they "vignette" (shade) the edges and corners of the image, substantially reducing the light reaching the sensor there. But telelenses may show vignetting too.
 </para>
 
 <para>
-The traditional solution for this is to attach a "center filter" to the lens. This is a neutral density filter with maximum density at the optical axis of the lens, clear at the periphery, with density varying inversely to the vignetting of the lens. A center filter has many advantages: not only does it automatically correct for full-frame images but, since it's fixed to the front of the lens, it also compensates for the off-center vignetting which occurs when camera movements are employed for perspective or plane of focus adjustment.
+  The traditional solution for this is to attach a "center filter" to the lens. This is a neutral density filter with maximum density at the optical axis of the lens, clear at the periphery, with density varying inversely to the vignetting of the lens. A center filter has many advantages: not only does it automatically correct for full-frame images but, since it's fixed to the front of the lens, it also compensates for the off-center vignetting which occurs when camera movements are employed for perspective or plane of focus adjustment.
 </para>
 
 <para>
-But there are disadvantages as well. Many center filters require a 1.5 or 2 f-stop filter factor adjustment, which may in turn necessitate a shutter speed so slow (since wide angle lenses, even with center filters, are best used at apertures of f/16 or smaller) that hand-holding the camera is impossible and motion blur becomes a problem when photographing moving objects.
+  But there are disadvantages as well. Many center filters require a 1.5 or 2 f-stop filter factor adjustment, which may in turn necessitate a shutter speed so slow (since wide angle lenses, even with center filters, are best used at apertures of f/16 or smaller) that hand-holding the camera is impossible and motion blur becomes a problem when photographing moving objects.
 </para>
 
 <para>
-With the wide exposure range of present-day film and the color (or grey-scale) depth of digital camera or film scanners, it is possible to simulate the effect of a center filter by applying an equivalent transform to a raw image taken without the filter. This antivignetting plugin applies a center filter transformation to an image employing an algorithm copyrighted by John Walker.
+  With the wide exposure range of present-day film and the color (or grey-scale) depth of digital camera or film scanners, it is possible to simulate the effect of a center filter by applying an equivalent transform to a raw image taken without the filter. This antivignetting plugin applies a center filter transformation to an image employing an algorithm copyrighted by John Walker.
 </para>
 
-<sect4 id="using-plugin-antivignetting">
-<title>Using the plugin</title>
+<sect4 id="using-plugin-antivignetting">  <title>Using the plugin</title>
 
    <para><inlinemediaobject><imageobject> 
       <imagedata fileref="antivignettingdialog.png" format="PNG" /> </imageobject>

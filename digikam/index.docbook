@@ -100,7 +100,7 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2006-03-24</date>
+<date>2006-03-27</date>
 <releaseinfo>0.9.2</releaseinfo>
 
 <abstract>
@@ -2883,7 +2883,7 @@
 
          <para>
            Red eyes are caused when the camera flashlight is used to take photographs of people. The red is the reflection from the back the eye which can be seen because the pupil cannot react quickly enough to the flash. By the way, with a separate flash light the red eye effect is less likely because of the different viewing angle of flash and lens. You can correct some of the worst effect of Red Eye by selecting the area of the eye on the photograph, in the same way as described for cropping above. Then select
-           <menuchoice><guimenu>Correct</guimenu>
+           <menuchoice><guimenu>Corrections</guimenu>
             <guimenuitem>Red Eye Reduction</guimenuitem></menuchoice>.
          </para>
 
@@ -4183,7 +4183,7 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Correct</guimenu><guimenuitem>Curves Adjust</guimenuitem>
+                <guimenu>Corrections</guimenu><guimenuitem>Curves Adjust</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -4233,7 +4233,7 @@
             <term><menuchoice>
                 <guimenu>Color</guimenu><guimenuitem>Color Management</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Invokes the interactive Color Management editor.</action></para></listitem>
+            <listitem><para><action>Invokes the interactive <link linkend="using-kapp-iccprofile">Color Management</link> editor.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -4250,164 +4250,98 @@
 
     <!-- *********************************************************************** -->
 
-    <sect2>        <title>The Correct Menu</title>
+    <sect2>        <title>The Corrections Menu</title>
 
     <para>
     <variablelist>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Correct</guimenu><guimenuitem>Blur</guimenuitem>
+                <guimenu>Corrections</guimenu><guimenuitem>Sharpen</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Focus error correction of the current image by a blurring 
-            operation.</action></para></listitem>
-        </varlistentry>
-    
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Correct</guimenu><guimenuitem>Sharpen</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>Focus error correction of the current image by a sharping 
-            operation.</action></para></listitem>        
+            <listitem><para><action>Classical image sharping operation <link linkend="sharpening">(help)</link>.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Correct</guimenu><guimenuitem>Red Eye Reduction</guimenuitem>
+                <guimenu>Corrections</guimenu><guimenuitem>Blur</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Red Eye correction using the current selection of the current 
-            image.</action></para></listitem>        
+            <listitem><para><action>Image softening operation by blurring <link linkend="using-blurfilter">(help)</link>.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Correct</guimenu><guimenuitem>Inpainting</guimenuitem>
+                <guimenu>Corrections</guimenu><guimenuitem>Red Eye Reduction</guimenuitem>
             </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to remove unwanted area on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/inpainting.html">Photograph Inpainting manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>            
-        </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Correct</guimenu><guimenuitem>Noise Reduction</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to reduce the noise on the current image with using a Despeckle
-                    filter.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/despeckle.html">Noise Reduction manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>            
+            <listitem><para><action>Red Eye correction tool using the current selection <link linkend="redeyecorrectiontool.anchor">(help)</link>.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Correct</guimenu><guimenuitem>Unsharp Mask</guimenuitem>
+                <guimenu>Corrections</guimenu><guimenuitem>Inpainting</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to operate an Unsharp mask on the current image.
+                    Image Editor tool to remove unwanted areas and specs <link linkend="inpainting">(help)</link>.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/unsharp.html">Unsharp Mask manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Correct</guimenu><guimenuitem>Hot Pixels Correction</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to remove hot pixels on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/hotpixels.html">Hot Pixels Photograph manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>
-    
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Correct</guimenu><guimenuitem>Lens Distortion Correction</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to correct lens distortion of the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/lensdistortion.html">Lens Distortion Correction manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>                
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Correct</guimenu><guimenuitem>Restoration</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to reduce artifacts on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/restoration.html">Photograph Restoration manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>            
-        </varlistentry>
-                
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Correct</guimenu><guimenuitem>Refocus</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to refocus the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/refocus.html">Refocus Photograph manual</ulink> 
-                    for more information.
-                </para>     
             </listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Correct</guimenu><guimenuitem>Anti Vignetting</guimenuitem>
+                <guimenu>Corrections</guimenu><guimenuitem>Noise Reduction</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to correct vignetting of the current image.
+                    Image Editor tool to reduce the noise with a Despeckle filter <link linkend="noisereduction">(help)</link>.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/antivignetting.html">Anti Vignetting manual</ulink> 
-                    for more information.
-                </para>     
             </listitem>
-        </varlistentry>                
-                        
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Corrections</guimenu><guimenuitem>Restoration</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor tool to reduce artifacts on the current image <link linkend="restoration">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Corrections</guimenu><guimenuitem>Hot Pixels Correction</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor tool to remove hot pixels on the current image <link linkend="hotpixels">(help)</link>.
+                </action></para>
+           </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Corrections</guimenu><guimenuitem>Anti Vignetting</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to correct vignetting of the current image <link linkend="antivignetting">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Corrections</guimenu><guimenuitem>Lens Distortion Correction</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to correct lens distortion of the current image <link linkend="lensdistortion.anchor">(help)</link>.
+                </action></para>
+           </listitem>
+        </varlistentry>
+
     </variablelist>
     </para>
 
@@ -4422,31 +4356,33 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>9</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>Left</keycap></keycombo> </shortcut>
+                <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>-90 
+                degrees</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Left rotation of the current image.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>Right</keycap></keycombo> </shortcut>
                 <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>90 
                 degrees</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>90 degrees rotation of the current image.</action></para></listitem>
         </varlistentry>
-    
-        <varlistentry>
-            <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>8</keycap></keycombo> </shortcut>
-                <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>180 
-                degrees</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>180 degrees rotation of the current image.</action></para></listitem>
-        </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>7</keycap></keycombo> </shortcut>
-                <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>270 
-                degrees</guimenuitem>
+                <guimenu>Transform</guimenu><guimenuitem>Free Rotation</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>270 degrees rotation of the current image.</action></para></listitem>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to rotate the current image by any angle in degrees <link linkend="freerotation">(help)</link>.
+                </action></para>
+            </listitem>
         </varlistentry>
-    
+
         <varlistentry>
             <term><menuchoice>
                 <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>*</keycap></keycombo> </shortcut>
@@ -4468,21 +4404,21 @@
                 <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>X</keycap></keycombo> </shortcut>
                 <guimenu>Transform</guimenu><guimenuitem>Crop</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Crop the current image to the current selection.</action></para></listitem>
+            <listitem><para><action>Crop image to the current selection.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Transform</guimenu><guimenuitem>Resize</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Resize the current image to the appropriate factor or dimensions.</action></para></listitem>
+            <listitem><para><action>Resize (reduce or blow-up) the current image to the appropriate factor or dimensions <link linkend="resize">(help)</link>.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Transform</guimenu><guimenuitem>Aspect Ratio Crop</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Crop the current image using an constrained aspect ratio.</action></para></listitem>
+            <listitem><para><action>Crop the current image using an constrained aspect ratio <link linkend="aspect-ratio-crop">(help)</link>.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -4491,71 +4427,29 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to shear the current image horizontally or vertically.
+                    Image Editor plugin to shear the current image horizontally or vertically <link linkend="sheartool">(help)</link>.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/sheartool.html">Shear Tool manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>            
+           </listitem>
         </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Transform</guimenu><guimenuitem>Blowup</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to blow up (magnify) a photograph while minimizing image quality loss.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/blowup.html">Blowup manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>            
-        </varlistentry>        
-                        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Transform</guimenu><guimenuitem>Free Rotation</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to rotate the current image by any angle in degrees.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/freerotation.html">Free Rotation manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>            
-        </varlistentry>
-            
+
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Transform</guimenu><guimenuitem>Perspective Adjustment</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to adjust perspective of the current image.
+                    Image Editor plugin to adjust perspective of the current image <link linkend="perspective">(help)</link>.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/perspective.html">Perspective Adjustment manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>            
+           </listitem>
         </varlistentry>
-    
+
     </variablelist>
     </para>
 
     </sect2>
-            
+
     <!-- *********************************************************************** -->
-    
+ 
     <sect2>        <title>The Decoration Menu</title>
 
     <para>
@@ -4581,15 +4475,10 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to add a decorative border around the current image.
+                    Image Editor plugin to add a decorative border around the current image <link linkend="border">(help)</link>.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/border.html">Add Border manual</ulink> 
-                    for more information.
-                </para>     
             </listitem>
-        </varlistentry>      
+        </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
@@ -4597,13 +4486,8 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin to insert text in the current image.
+                    Image Editor plugin to insert text in the current image <link linkend="inserttext">(help)</link>.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/inserttext.html">Insert Text manual</ulink> 
-                    for more information.
-                </para>     
             </listitem>
         </varlistentry>      
         
@@ -4613,23 +4497,18 @@
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Image Editor plugin for apply a template to the current image.
+                    Image Editor plugin for apply a template to the current image <link linkend="superimpose">(help)</link>.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/superimpose.html">Template Superimpose manual</ulink> 
-                    for more information.
-                </para>     
             </listitem>
-        </varlistentry>      
-                
+        </varlistentry>
+
     </variablelist>
     </para>
 
     </sect2>
 
-    <!-- *********************************************************************** -->
-    
+    <!-- ********************************************************************** -->
+
     <sect2>        <title>The View Menu</title>
 
     <para>
@@ -4658,14 +4537,14 @@
             </menuchoice></term>
             <listitem><para><action>Toggle between zoom factor autofit to image edit window or 100% zoom window size.</action></para></listitem>
         </varlistentry>
-                            
+
         <varlistentry>
             <term><menuchoice>
                 <guimenu>View</guimenu><guimenuitem>Histogram</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Display superposed histogram on current image (Luminosity, Red, Green, Blue, Alpha).</action></para></listitem>
         </varlistentry>
-    
+
         <varlistentry>
             <term><menuchoice>
                 <guimenu>View</guimenu><guimenuitem>Slideshow</guimenuitem>
@@ -4693,12 +4572,18 @@
                 <para><action>
                     Image Editor plugin to simulate infrared film on the current image.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/infrared.html">Infrared Film manual</ulink> 
-                    for more information.
-                </para>     
             </listitem>       
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Add Film Grain</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin for to adding Film Grain on the current image.
+                </action></para>
+            </listitem>
         </varlistentry>
 
         <varlistentry>
@@ -4709,14 +4594,20 @@
                 <para><action>
                     Image Editor plugin to simulate Oil Painting on the current image.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/oilpaint.html">Oil Paint manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>       
+           </listitem>       
         </varlistentry>
 
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Charcoal Drawing</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to simulate Charcoal Drawing on the current image.
+                </action></para>
+            </listitem>            
+        </varlistentry>
+    
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Filters</guimenu><guimenuitem>Emboss</guimenuitem>
@@ -4725,11 +4616,6 @@
                 <para><action>
                     Image Editor plugin to Emboss the current image.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/emboss.html">Emboss Image manual</ulink> 
-                    for more information.
-                </para>     
             </listitem>
         </varlistentry>
 
@@ -4741,30 +4627,9 @@
                 <para><action>
                     Image Editor plugin to apply distortion special effects on the current image.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/distortionfx.html">Distortion Effects manual</ulink> 
-                    for more information.
-                </para>     
             </listitem>
         </varlistentry>
         
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Filters</guimenu><guimenuitem>Add Film Grain</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin for to adding Film Grain on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/filmgrain.html">Film Grain manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>
-
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Filters</guimenu><guimenuitem>Blur Effects</guimenuitem>
@@ -4773,30 +4638,9 @@
                 <para><action>
                     Image Editor plugin to apply blurring special effects on the current image.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/blurfx.html">Blur Effects manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
+             </listitem>
         </varlistentry>
 
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Filters</guimenu><guimenuitem>Charcoal Drawing</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Image Editor plugin to simulate Charcoal Drawing on the current image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/charcoal.html">Charcoal Drawing manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>            
-        </varlistentry>
-    
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Filters</guimenu><guimenuitem>Raindrops</guimenuitem>
@@ -4805,11 +4649,6 @@
                 <para><action>
                     Image Editor plugin to add Rain Drops on the current image.
                 </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/digikamimageplugins/raindrops.html">Rain Drops manual</ulink> 
-                    for more information.
-                </para>     
             </listitem>       
         </varlistentry>
 
