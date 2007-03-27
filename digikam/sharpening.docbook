@@ -13,18 +13,18 @@
 </authorgroup>
 
 <abstract>
-      <para>&digikam; provides three different tools for sharpening, with each having merits in a different area.
+      <para>&digikam; provides three different tools for sharpening, with each having <link linkend="comparison-refocus">merits</link> in a different area.
        <itemizedlist>
          <listitem><para>
-           <emphasis>Sharpen</emphasis> is a traditional sharpening tool, which is very fast and easy, but may quickly produce grainy images, in particular in dark areas.
+           <link linkend="using-adjustsharpness">Sharpen</link> is a traditional sharpening tool, which is very fast and easy, but may quickly produce grainy images, in particular in dark areas.
          </para></listitem>
 
          <listitem><para>
-           <emphasis>Unsharp Mask</emphasis> works on the edge contrast to make an image appear sharper, but it actually does not sharpen at all, it works rather psychovisually. It can be used to remove atmospheric haze, and here it does a real good job. The algorithm was taken from the Gimp, and it is copyrighted by Winston Chang.
+           <link linkend="using-unsharp">Unsharp Mask</link> works on the edge contrast to make an image appear sharper, but it actually does not sharpen at all, it works rather psychovisually. It can be used to remove atmospheric haze, and here it does a real good job. The algorithm was taken from the Gimp, and it is copyrighted by Winston Chang.
          </para></listitem>
 
          <listitem><para>
-           <emphasis>Refocus</emphasis> is probably the best of the three because it actually improves sharpness. It is a bit more involved in its application as is has several parameters to play with.
+           <link linkend="refocus">Refocus</link> is probably the best of the three because it actually improves sharpness. It is a bit more involved in its application as is has several parameters to play with.
          </para></listitem>
        </itemizedlist>
     </para>
@@ -33,6 +33,8 @@
 <keywordset>
 <keyword>KDE</keyword>
 <keyword>Digikam</keyword>
+<keyword>Refocus</keyword>
+<keyword>Unsharp mask</keyword>
 </keywordset>
 
 </sect3info>
@@ -49,7 +51,7 @@
     Some scanners apply a sharpen filter while scanning. It's worth to disable it so that you keep control over your image.
  </para>
 
-<sect4 id="using-kapp-adjustsharpness">    <title>Adjusting Sharpness</title>
+<sect4 id="using-adjustsharpness">    <title>Adjusting Sharpness</title>
     <anchor id="sharpentool.anchor" />
 
     <sect5>    <title>Unblurring a Photograph</title>
@@ -98,7 +100,7 @@
         </menuchoice> menu entry and experiment with the level. The preview window on the right of the dialog shows the effect of the operation on your photograph.
       </para>
    </sect5>
-  </sect4>
+</sect4>
 
 <sect4 id="using-unsharp">      <title>The Unsharp Masking Filter</title>
 
@@ -148,7 +150,7 @@
         </inlinemediaobject>
       </para>
     </sect5>
-  </sect4>
+</sect4>
 
 
 <sect4 id="refocus">    <title>Refocus a Photograph</title>
@@ -163,7 +165,7 @@
       </menuchoice> Image Editor menu.
     </para>
     <para>
-      The Refocus technique works differently from <link linkend="using-unsharp">Unsharp Mask</link> and is also unlike the <link linkend="using-kapp-adjustsharpness" >Sharpen Filter</link>  which both increase the contrast of the edges of an image. Refocus rather reverses the process by which the image got blurred by the circular aperture of the camera. This method gives you as much of the original &quot;in focus&quot; image as possible. Refocus uses a very powerful deconvolution algorithm that will reclaim the data that has been mixed up. In mathmatical terms, blurring is usually the result of a convolution, a deconvolution will reverse the process, this is exactly what Refocus is doing. Furthermore, the FIR filter technique allows to remove much of the noise and granularity that often gets accentuated in the sharpening process of all sharpening filters.
+      The Refocus technique works differently from <link linkend="using-unsharp">Unsharp Mask</link> and is also unlike the <link linkend="using-adjustsharpness" >Sharpen Filter</link>  which both increase the contrast of the edges of an image. Refocus rather reverses the process by which the image got blurred by the circular aperture of the camera. This method gives you as much of the original &quot;in focus&quot; image as possible. Refocus uses a very powerful deconvolution algorithm that will reclaim the data that has been mixed up. In mathmatical terms, blurring is usually the result of a convolution, a deconvolution will reverse the process, this is exactly what Refocus is doing. Furthermore, the FIR filter technique allows to remove much of the noise and granularity that often gets accentuated in the sharpening process of all sharpening filters.
     </para>
 
     <sect5 id="using-refocus">      <title>Using the Refocus Tool</title>
@@ -182,24 +184,21 @@
        The image panel and the original preview help you to pan within the image. The preview window shows the filter output using the current settings. 
      </para>
      <para>
-       In most cases you do not know precisely what convolution caused the image degradation. There are two convolutions that are frequently used to model image degradation:
+       In most cases (blurring by camera) a circular convolution caused the image degradation, but there are two convolutions available:
 
         <itemizedlist>
           <listitem>
-            <para>The Gaussian convolution: this one is mathematically similar to the normal distribution, with its bell-shaped curve. From a theoretical point of view the mathematical justification for using the Gaussian convolution is that when you a apply a large number of independent random convolutions the results will always approach a Gaussian convolution.</para>
+            <para>The circular convolution: this one spreads each source point uniformly across a small disk with a fixed radius. Technically this describes the effects of using a (ideal) lens that is not correctly focused.</para>
           </listitem>
           <listitem>
-            <para>The circular convolution: this one spreads each source point uniformly across a small disk with a fixed radius. Technically this describes the effects of using a (ideal) lens that is not correctly focused.</para>
+            <para>The Gaussian convolution: this one is mathematically similar to the normal distribution, with its bell-shaped curve. Originates rather from unnatural blurring (software blurring). From a theoretical point of view the mathematical justification for using the Gaussian convolution is that when you a apply a large number of independent random convolutions the results will always approach a Gaussian convolution.</para>
           </listitem>
         </itemizedlist>
 
-         The refocus tool supports both the Gaussian and the Circular convolution plus mixtures of both. The actual convolution that is used by the plug-in is in fact the result of convolving both the Gaussian and the circular convolution with one another. Both of these convolutions are identical to the identity convolution when their parameter is equal to 0. Therefore, when the Gaussian radius equals 0, the result is a Circular convolution, and likewise when the radius equals 0 the result is a Gaussian convolution.
+         The refocus tool supports both the Circular and the Gaussian convolution plus mixtures of both.
       </para>
       <para>
         In practice, in most cases the Circular convolution works much better than the Gaussian convolution. The Gaussian convolution has a very long tail, so mathematically the result of the convolution also depends on source pixels at a large distance from the original source pixel. The FIR Wiener inverse of a Gaussian convolution in most cases is heavily influenced by source pixels at a large distances, and in most cases this produces undesirable results.
-      </para>
-      <para>
-         The Circular convolution generally produces much better results. One reason is that the FIR Wiener inverse of the Circular convolution in general influenced by source pixels in the immediate neighborhood of the original source pixel. Another reason is that a Circular convolution is theoretically a good mathematical model for images that are slightly unfocused.
       </para>
       <para>To set correctly the deconvolution filter, the plug-in has the following parameters:
 
@@ -248,32 +247,20 @@
           </listitem>
       </itemizedlist>
       </para>
-      <para>
-        This is an example of how the Refocus can change your life. The original image is (1) and the corrected image is (2). Refocus settings used to fix this unfocused image are defaults.
-      </para>
-      <para>
-        <inlinemediaobject>
-          <imageobject>
-            <imagedata fileref="refocuspreview.png" format="PNG" />
-          </imageobject>
-          <textobject>
-            <phrase>Refocus Tool in Action</phrase>
-          </textobject>
-        </inlinemediaobject>
-      </para>
     </sect5>
+</sect4>
 
-    <sect5 id="comparison-refocus">  <title>Comparison With Other Techniques</title>
+<sect4 id="comparison-refocus">  <title>Refocus comparison with other techniques</title>
       <para>Comparison to two other techniques frequently used to enhance images are:
        <itemizedlist>
           <listitem>
             <para>
-              <ulink url="help:/digikam/using-kapp-imageeditor.html#using-kapp-adjustsharpness" >Sharpen Filter</ulink>
+              <link linkend="using-adjustsharpness" >Sharpen Filter</link>
             </para>
           </listitem>
           <listitem>
             <para>
-              <ulink url="help:/digikamimageplugins/unsharp.html" >Unsharp Mask</ulink>
+              <link linkend="using-unsharp" >Unsharp Mask</link>
             </para>
           </listitem>
         </itemizedlist>
@@ -365,8 +352,7 @@
       <note> <para>
           For more information about correction of sharpness methods used in digital imagery, you can find a technical comparison at <ulink url="http://www.bialith.com/Research/BARclockblur.htm" >this url</ulink>.
       </para> </note>
-    </sect5>
-  </sect4>
+</sect4>
 
 
 </sect3>

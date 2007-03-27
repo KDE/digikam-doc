@@ -17,7 +17,7 @@
 
 <abstract>
 <para>
-The &digikam; image plugin <emphasis>Lens Distortion</emphasis> is a tool to correct spherical lens aberrations on the photos. It uses an algorithm copyrighted by David Hodson.
+The &digikam; <emphasis>Lens Distortion</emphasis> is a tool to correct spherical lens aberrations on the photos. It uses an algorithm copyrighted by David Hodson.
 </para>
 </abstract>
 
@@ -32,11 +32,11 @@ The &digikam; image plugin <emphasis>Lens Distortion</emphasis> is a tool to cor
   <anchor id="lensdistortion.anchor"/>
 
 <para>
-<emphasis>Barrel distortion</emphasis> is associated with wide angle (or minimal zoom) lenses. It causes the images to appear slightly spherical (curved outward) like a barrel. You can notice this when you have straight features close to the image's peripheral sides. <emphasis>Pincushion distortion</emphasis> is the opposite defect and is associated with Telephoto lenses (maximum zoom) or underwater pictures. The images appear pinched (bent inward) toward the center. The Pincushion is often less noticeable than barrel but are equally visible near the edges. These distortions can easily be eliminated without visible loss in quality with this plugin. 
+<emphasis>Barrel distortion</emphasis> is associated with wide angle (or minimal zoom) lenses. It causes the images to appear slightly spherical (curved outward) like a barrel. You can notice this when you have straight features close to the image's peripheral sides. <emphasis>Pincushion distortion</emphasis> is the opposite defect and is associated with Telephoto lenses (maximum zoom) or underwater pictures. The images appear pinched (bent inward) toward the center. The Pincushion is often less noticeable than barrel but are equally visible near the edges. These distortions can easily be eliminated without visible loss in quality with this tool. 
 </para>
 
 <note><para>
-This plugin treats the geometrical distortions. Chromatic abberations will not be corrected by this plugin.
+This tool treats the geometrical distortions. Chromatic abberations will not be corrected by this tool.
 </para></note>
 
 <para>
@@ -56,15 +56,15 @@ The following figures explain the main types of geometrical distortions:
 <para>
 </para>
 
-<sect4 id="using-plugin-lensdistortion">
-<title>Using the plugin</title>
+<sect4 id="using-lensdistortion">
+<title>Using the lens distortion tool</title>
 
 <note><para>
 A bit of explanation first. The geometrical corrections use 4th-order polynominal coefficients.
     <itemizedlist>
-        <listitem><para>The 1st-order coefficient changes the size of the image. The plugin calls this <guilabel>Zoom</guilabel>.</para></listitem>
+        <listitem><para>The 1st-order coefficient changes the size of the image. The tool calls this <guilabel>Zoom</guilabel>.</para></listitem>
         <listitem><para>The 2nd-order coefficient treats the main geometrical distortion of lenses and can correct the convex or concave shape of the image.</para></listitem>
-        <listitem><para>The 3rd-order coefficient has a similar rounding effect but levels off towards the edges. This correction is not employed in the plugin.</para></listitem>
+        <listitem><para>The 3rd-order coefficient has a similar rounding effect but levels off towards the edges. This correction is not employed in the tool.</para></listitem>
         <listitem><para>The 4th-order coefficient corrects the far edges inversely to the 2nd-order rounding. Combining it with the 2nd-order correction the geometrical distortions can be almost completely eliminated.</para></listitem>
     </itemizedlist>
 </para></note>
@@ -95,7 +95,7 @@ Four sliders let you set the distortion correction filter:
 </para>
 
 <para>
-To help you to choose the best filter settings, the plugin dialog illustrates with a thumbnail preview the distortion correction applied to a crossed mesh pattern. The values you apply to your image will be saved and come up with the same values as default the next time you call the plugin.
+To help you to choose the best filter settings, the widget dialog illustrates with a thumbnail preview the distortion correction applied to a crossed mesh pattern. The values you apply to your image will be saved and come up with the same values as default the next time you call the tool.
 </para>
 
 <note><para>
@@ -116,8 +116,8 @@ On most images using the barrel correction is enough, however with some shots su
 
 </sect4>
 
-<sect4 id="inaction-plugin-lensdistortion">
-<title>The plugin in action</title>
+<sect4 id="inaction-lensdistortion">
+<title>The lens distortion tool in action</title>
 
 <para>
 This is an example of a barrel correction applied to church in north Norway. The original image is (1), the corrected image (2).
