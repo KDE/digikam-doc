@@ -1,0 +1,1069 @@
+<sect2>                                     <title>Color editing tools</title>
+
+<sect3 id="auto-correction"> 
+<sect3info>           <title>Auto-Correction Tools</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+    <para>
+       This tool set provides five automatic correction levels that will improve an image in most cases. Use this tool before going into the more involved manual adjustments.
+    </para>
+ </abstract>
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+<title>Introduction</title>            
+   <anchor id="autocolorcorrectiontool.anchor"/>
+            
+            <para>
+            The <guilabel>Normalize</guilabel>, <guilabel>Equalize</guilabel>, <guilabel>Auto Levels</guilabel>, and <guilabel>Stretch Contrast</guilabel> available from <menuchoice><guilabel>Correct</guilabel><guimenuitem>Auto-Correction</guimenuitem></menuchoice> menu entry menu will attempt to work out the best color levels automatically. You will need to experiment with the effects of these functions to see what works best with your photograph. 
+            
+            <itemizedlist>
+            
+                <listitem><para>
+                <guilabel>Normalize</guilabel>: this method scales brightness values across the selected image so that the darkest point becomes black, and the brightest point becomes as bright as possible without altering its hue. This is often a "magic fix" for images that are dim or washed out.
+                
+                <example><title>Normalize Colors Correction Preview</title>   <screenshot><screeninfo>Normalize Colors Correction Preview</screeninfo><mediaobject><imageobject><imagedata fileref="editornormalize.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                </example>
+
+                </para></listitem>
+
+                <listitem><para>
+                <guilabel>Equalize</guilabel>: this method adjusts the brightness of colors across the selected image so that the histogram for the Value channel is as flat as possible, that is, so that each possible brightness value appears at about the same number of pixels as each other value. Sometimes Equalize works wonderfully at enhancing the contrasts of an image. Other times it gives garbage. It is a very powerful operation, which can either work miracles on a picture or destroy it. 
+                
+                <example><title>Equalize Colors Correction Preview</title> <screenshot><screeninfo>Equalize Colors Correction Preview</screeninfo><mediaobject><imageobject><imagedata fileref="editorequalize.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+                
+                </para></listitem>
+                
+                <listitem><para>
+                <guilabel>Auto-levels</guilabel>: this method maximizes the tonal range in the Red, Green, and Blue channels. It determines the image shadow and highlight limit values and adjust the Red, Green, and Blue channels to a full histogram range.
+                
+                <example><title>Auto Levels Correction Preview</title> <screenshot><screeninfo>Auto Levels Correction Preview</screeninfo><mediaobject><imageobject><imagedata fileref="editorautolevels.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+
+                </para></listitem>
+
+                <listitem><para>
+                <guilabel>Stretch Contrast</guilabel>: this method enhances the contrast and brightness of the RGB values of an image by stretching the lowest and highest values to their fullest range, adjusting everything in between. This is noticeable only with washed-out images and can be a good fix-it tool for bad photographs.
+                
+                <example><title>Stretch Contrast Correction</title> <screenshot><screeninfo>Stretch Contrast Correction Preview</screeninfo><mediaobject><imageobject><imagedata fileref="editorstretchcontrast.png" format="PNG" /> </imageobject></mediaobject></screenshot> </example>
+
+                </para></listitem>
+                                                
+            </itemizedlist>
+            
+            </para>
+            
+            <para>
+            The results of any adjustments you make will not be remembered until you save your photograph.
+            </para>
+</sect3>
+
+<sect3 id="whitebalance">
+<sect3info>
+
+<title>White Balance</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para>
+The &digikam; <emphasis>White Balance</emphasis> is a semi-automatic tool to adjust the white-balance of a photograph.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>
+White Balance setting is a common hurdle for digital still cameras. In the 'good old time' of film rolls, the white balance was done by the photolab. Nowadays the poor little camera has to guess what is white and what is black. Most of the time, what the camera chooses as the white point, is not of the correct shade or hue. Using this tool it is easy to correct this problem. It provides a variery of parameters that can be trimmed to obtain a better result.
+</para>
+
+<note><para>
+The whitebalance correction is somewhat limited by the fact that we operate in 8bit per channel color space. So if you depart too much from the original, over exposure zones may appear. If you can adjust the whitebalance in raw conversion mode (which is done in 16 bit space), the margin for correction will be greater.
+</para></note>
+
+<para>
+This tool is based on a white color balance algorithm copyrighted by Pawel T. Jochym. Launch it from the <menuchoice><guimenu>Color</guimenu><guimenuitem>White Balance</guimenuitem></menuchoice> Image Editor menu.
+</para>
+
+<sect4 id="using-whitebalance">
+<title>Using the Whitebalance Tool</title>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="whitebalancedialog.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The White Balance Tool Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+The preview window can be resized. To the left, both an original and a target preview tab is shown. The target preview is updated dynamically according to the tool's settings. If you want to see the orginal whitebalance, just click on that tab.
+</para>
+
+<para>
+The target photo preview has a red marker available. The luminosity value of the pixel under the marker is shown as a vertical line in the histogram .
+</para>
+
+<para>
+To the top right, the widget displays a histogram that is dynamically updated when changing the parameters. This histogram is very instructive as it shows that even in well exposed photos, most of the pixels have very small luminosity. With a button you can select to show either one of the 3 colors (or the sum of it which is called luminosity).
+</para>
+
+<para>
+With <guilabel>Exposure</guilabel> you can digitally change the original photo exposure. Increasing the exposure is has the risk of making the pixel noise more visible and to blow out the highlights. Check the <guilabel>Over exposure indicator</guilabel> at the lower right to see if you run into saturation problems.
+The <guilabel>Black Point</guilabel> adjustment can be used to cut the histogram from the left. If your photograph looks foggy (histogram has empty space on the left, black side), you probably need to use this option. The <guilabel>Exposure</guilabel> and <guilabel>Black Point</guilabel> adjustments can be automatically estimated by pressing the <guilabel>Auto Exposure Adjustments</guilabel> button. This sets the black point quite accurately.
+</para>
+
+<para>
+The contrast of your output depends on <guilabel>Shadows</guilabel>, <guilabel>Saturation</guilabel>, and <guilabel>Gamma</guilabel> parameters. The <guilabel>Shadows</guilabel> adjustment lets you enhance or diminish the shadow details in your photo.
+</para>
+
+<para>
+Increasing the contrast of your photograph can have the side effect of reducing the apparent <guilabel>Saturation</guilabel> of the photo. Use a value larger than 1 to increase the saturation and a value of less than 1 to desaturate the photo. A value of 0 will give you a black and white photo. Don't be shy to bump up the saturation of your photos a little. The general rule is that for higher Contrast (lower <guilabel>Gamma</guilabel>) you need to apply more <guilabel>Saturation</guilabel>.
+</para>
+
+<para>
+The next set of options is the mainstay of White Balance settings, which controls the ratio between the three color channels. Here you can set the color <guilabel>Temperature</guilabel>, making your picture warmer or colder. Higher temperature will result in a warmer tint. Setting the ratio between the three color channels requires two adjustments. Since the temperature adjustment mostly controls the ratio between the red and the blue channels, it is natural that the second adjustment will control the intensity of the <guilabel>Green</guilabel> channel.
+</para>
+
+<para>
+Instead of fiddling around with the above controls, you can simply use the <guilabel>Temperature Tone Color Picker</guilabel> button. Press on this button and click anywhere on the original preview image to get the output color of that area to calculate the white color balance temperature settings. This way, <guilabel>Temperature</guilabel> and <guilabel>Green</guilabel> values are automatically computed.
+</para>
+
+<para>
+In addition you can set the White Balance using the preset list. These are the white color balance temperature presets available:
+</para>
+
+<para>
+
+<informaltable><tgroup cols="3">
+            
+<thead>
+   <row>
+      <entry>Color Temperature</entry>
+      <entry>Description</entry>
+      <entry>Kelvin</entry>
+   </row>
+</thead>
+
+<tbody>
+
+   <row>
+      <entry>
+      <guilabel>40W</guilabel>
+      </entry>
+               
+      <entry>
+      40 Watt incandescent lamp.
+      </entry>
+      
+      <entry>
+      <guilabel>2680</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel>200W</guilabel>
+      </entry>
+      
+      <entry>
+      200 Watt incandescent lamp, studio lights, photo floods.
+      </entry>
+      
+      <entry>
+      <guilabel>3000</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel>Sunrise</guilabel>
+      </entry>
+               
+      <entry>
+      Sunrise or sunset light.
+      </entry>
+      
+      <entry>
+      <guilabel>3200</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel>Tungsten</guilabel>
+      </entry>
+               
+      <entry>
+      Tungsten lamp or light at 1 hour from dusk or dawn.
+      </entry>
+      
+      <entry>
+      <guilabel>3400</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel>Neutral</guilabel>
+      </entry>
+               
+      <entry>
+      Neutral color temperature.
+      </entry>
+      
+      <entry>
+      <guilabel>4750</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel>Xenon</guilabel>
+      </entry>
+               
+      <entry>
+      Xenon lamp or light arc.
+      </entry>
+      
+      <entry>
+      <guilabel>5000</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel>Sun</guilabel>
+      </entry>
+               
+      <entry>
+      Sunny daylight around noon.
+      </entry>
+      
+      <entry>
+      <guilabel>5500</guilabel>
+      </entry>
+   </row>   
+   
+   <row>
+      <entry>
+      <guilabel>Flash</guilabel>
+      </entry>
+               
+      <entry>
+      Electronic photo flash.
+      </entry>
+      
+      <entry>
+      <guilabel>5600</guilabel>
+      </entry>
+   </row>      
+
+   <row>
+      <entry>
+      <guilabel>Sky</guilabel>
+      </entry>
+               
+      <entry>
+      Overcast sky light.
+      </entry>
+      
+      <entry>
+      <guilabel>6500</guilabel>
+      </entry>
+   </row>    
+               
+</tbody>
+
+</tgroup></informaltable>
+
+</para>
+
+<para>
+<guilabel>Color Temperature</guilabel> is a simplified way to characterize the spectral properties of a light source. While in reality the color of light is determined by how much each point on the spectral curve contributes to its output, the result can still be summarized on a linear scale. This value is useful e.g. for determining the correct the white balance in digital photography, and for specifying the right light source types in architectural lighting design. Note, however, that light sources of the same color (metamers) can vary widely in the quality of light emitted. 
+</para>
+
+<para>
+Low <guilabel>Color Temperature</guilabel> implies more yellow-red light while high color temperature implies more blue light. Daylight has a rather low color temperature near dawn, and a higher one during the day. Therefore it can be useful to install an electrical lighting system that can supply cooler light to supplement daylight when needed, and fill in with warmer light at night. This also correlates with human feelings towards the warm colors of light coming from candles or an open fireplace at night. Standard unit for color temperature is Kelvin (K).
+</para>
+
+<para>
+<guilabel>Over Exposure Indicator</guilabel> option adds up the colors if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of White Color Balance controls settings. This rule is applied to target preview area as an indication only and has no effect on the final rendering.
+</para>
+
+<para>
+<guilabel>Save As</guilabel> and <guilabel>Load</guilabel> buttons are used to do just that. Any White Color Balance settings that you have set can be saved to the filesystem in a text file and loaded later.
+</para>
+
+<para>
+<guilabel>Reset All</guilabel> button resets all filter settings to default values corresponding to Neutral White Balance color. (Attention, even the neutral setting might be different from your original photograph. If you save it, the white balance will be changed.) 
+</para>
+
+</sect4>
+
+  <sect4 id="inaction-whitebalance">    <title>The Whitebalance in action</title>
+
+  <para>
+    Below, you can see a photograph White Color Balance correction applied to a color photograph taken with an Olympus C3000Z at midday. Look like color temperature is tinted to light blue. Camera have been set with default parameter in auto exposure mode. White Color Balance setting used to correct this photograph is <guilabel>Sun</guilabel> light color temperature. <guilabel>Exposure</guilabel> settings is unchanged. The original image is (1), the corrected image (2).
+  </para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="whitebalancepreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The White Balance Tool in Action</phrase></textobject></inlinemediaobject>
+   </para>
+
+  </sect4>
+</sect3>
+
+<sect3 id="exposure-correct">    <title>Correcting Exposure</title>
+
+     <anchor id="bcgadjusttool.anchor"/>
+
+     <para>
+        The simplest tool to use is the Brightness/Contrast/Gamma tool. It is also the least powerful, but in many cases it does everything you need. This tool is often useful for images that are overexposed or underexposed; it is not useful for correcting color casts. The tool gives you three sliders to adjust, for "Brightness", "Contrast" and "Gamma". You can see any adjustments you make reflected in the preview image. When you are happy with the results, press <guilabel>Ok</guilabel> and they will take effect. 
+     </para>
+
+     <example>  <title>The Brightness Contrast Gamma Tool in Action</title>
+         <screenshot><screeninfo>The Brightness Contrast Gamma Tool in Action</screeninfo><mediaobject><imageobject><imagedata fileref="editorbcgadjust.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+     </example>
+     
+     <para>
+     Another important tool is called
+     <menuchoice><guimenu>Color</guimenu>
+      <guimenuitem>Levels Adjust</guimenuitem></menuchoice>. This tool provides an integrated way of seeing the results of adjusting multiple levels and also enables you to save level settings for application to multiple photographs. This can be useful if your camera or scanner often makes the same mistakes and you want to apply the same corrections. See the dedicated <link linkend="using-adjustlevels">Adjust Levels manual</link> for more information.
+     </para>
+
+     <para>
+       A very powerful way of correcting exposure problems is to use the Adjust Curves tool available by <menuchoice><guimenu>Color</guimenu>
+       <guimenuitem>Curves Adjust</guimenuitem></menuchoice> menu entry.
+      </para>
+
+</sect3>
+
+<sect3 id="coloreffects">
+
+<sect3info>
+<title>Solarize Image</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para>
+The &digikam; <emphasis>Color Effects</emphasis>tool provides four color effects: a solarization effect, a velvia filter, neon effect and edge filter.
+on images.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+<keyword>Solarization</keyword>
+<keyword>Velvia</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>
+In the age of chemical image processing, solarizing (also known as Sabatier) was an effect created by 
+exposing a partially developed print to a brief flash of light, then completing the development. 
+The colored, darker areas shield the additional light from the sensitive photo layers, which has 
+the net effect of making the lighter areas darker and colors being inverted during the second exposure. 
+The result resembles a partially negative image. The tool allows to adjust the interesting effect smoothly.
+</para>
+
+<sect4 id="using-solarize"> <title>Using Solarization</title>
+
+<para>
+The <guilabel>Intensity</guilabel> control helps to preview the solarization by simply increasing it. 
+At about 50% intensity the image shows what was once chemically possible. If you further increase the 
+effect it will finally become a negative image, a stage of inversion not achievable on photographic paper.
+</para>
+</sect4>
+
+<sect4 id="inaction-solarize"> <title>Solarisation in action</title>
+
+<para>
+This is an example of solarization effect. The original image is (1) and the corrected image is (2).
+The <guilabel>Intensity</guilabel> level applied is 30%. 
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="solarizepreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>Solarize Image Effect Preview</phrase></textobject></inlinemediaobject>
+   </para>
+
+</sect4>
+
+<sect4>   <title>The Vivid Effect (Velivia filter)</title>
+  <para>
+    The vivid filter simulates what is known as &quot;Velvia&quot; effect. It is different from saturation in that it has a more pronounced contrast effect that bring colors brilliantly alive and glowing. Try it, it renders beautiful for many subjects!
+  </para>
+  <para>
+    Velvia is a brand of daylight-balanced color reversal film produced by the Japanese company Fujifilm. The name is a contraction of &quot;Velvet Media&quot;, a reference to its smooth image structure. Velvia has very saturated colors under daylight, high contrast. These characteristics make it the slide film of choice for most nature photographers. Velvia's highly saturated colors are, however, considered overdone by some photographers, especially those who don't primarily shoot landscapes.
+  </para>
+     <example>  <title>Original versus Vivid filter</title>
+        <screenshot><screeninfo>Original versus Vivid filter</screeninfo><mediaobject><imageobject><imagedata fileref="editorvivid.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+     </example>
+
+</sect4>
+
+<sect4>  <title>The Neon Effect</title>
+  <para>The neon filter simulates neon light along the contrast edges. The level parameter controls the lightness of the result, whereas the interation slider determines the thickness of the neon light. With big images, the filter might eat the CPU time for a moment.
+  </para>
+     <example>  <title>The neon filter</title>
+        <screenshot><screeninfo>The neon filter</screeninfo><mediaobject><imageobject><imagedata fileref="editorneon.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+     </example>
+
+</sect4>
+
+<sect4>  <title>The Edge Effect</title>
+ <para>TODO
+  </para>
+</sect4>
+
+</sect3>
+
+<sect3 id="using-correctingcolor">       <title>Correcting Color</title>
+     
+     <anchor id="colorbalancetool.anchor"/>
+     
+     <para>
+     Digital cameras often have problems with lighting conditions and it is not unusual to want to correct the color contrast and brightness of a photograph. You can experiment with altering the levels of different aspects of your photographs using the tools under the
+     <menuchoice><guimenu>Color</guimenu>
+     </menuchoice> menu.
+     You can see any adjustments you make reflected in the preview. When you are happy with the results, press <guilabel>Ok</guilabel> and they will take effect.
+     </para>
+
+     <example>  <title>The Color Balance Tool in Action</title>
+        <screenshot><screeninfo>The Color Balance Tool in Action</screeninfo><mediaobject><imageobject><imagedata fileref="editorcolorbalance.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+     </example>
+
+     <anchor id="hsladjusttool.anchor"/>
+     
+     <para>
+     If your image is washed out (which can easily happen when you take pictures in bright light) try the Hue/Saturation/Lightness tool, which gives you three sliders to manipulate, for Hue, Saturation, and Lightness. Raising the saturation will probably make the image look better. In some cases, it is useful to adjust the lightness at the same time. ("Lightness" here is similar to "Brightness" in the Brightness/Contrast/Gamma tool, except that they are formed from different combinations of the red, green, and blue channels).  
+     </para>
+     
+     <para>
+     When you take pictures in low light conditions, you could get the opposite problem: too much saturation. In this case the Hue/Saturation tool is again a good one to use, only by reducing the saturation instead of increasing it. You can see any adjustments you make reflected in the preview image. When you are happy with the results, press <guilabel>Ok</guilabel> and they will take effect.
+     </para>
+     
+     <example>  <title>The Hue Saturation Lightness Tool in Action</title>
+         <screenshot><screeninfo>The Hue Saturation Lightness Tool in Action</screeninfo><mediaobject><imageobject><imagedata fileref="editorhsladjust.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+     </example>
+
+ </sect3>
+
+<sect3 id="adjustcurves">
+<sect3info>
+
+<title>Adjust Curves</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+  <para>
+    The &digikam; <emphasis>Adjust Curves</emphasis> is a tool to non-linearly adjust luminosity graduation and color channels.
+  </para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>
+   The Curves tool is the most sophisticated tool available to adjust the images' tonality. Start it from the <menuchoice><guimenu>Color</guimenu> <guimenuitem>Curves Adjust</guimenuitem></menuchoice> Image Editor menu.
+   It allows you to click and drag control points on a curve to create a free function mapping input brightness levels to output brightness levels. The Curves tool can replicate any effect you can achieve with Brightness/Contrast/Gamma or the Adjust Levels tool, though it is more powerful than either one of them. 
+
+   But this tool can do more for you, it helps you to improve the tonal quality of your photographs to very finely stepped gray scales. And do not forget that the better the photographs are (good exposure, lossless format, 24 or 32 bit deep) the more you can improve them. Navigate to the "Achieving ultimate tonal quality" section of this instructive page: <ulink url="http://www.normankoren.com/digital_tonality.html">Tonal quality and dynamic range in digital cameras by Norman Koren</ulink>. Use Adjust Curves tool to do just the same!
+</para>
+<para>
+   This tool provides visual curves to modify the intensity values of the active layer displayed as a histogram non-linearily. In <guilabel>Smooth</guilabel> curve edition mode, you change the curves shape by adding new points to the curve or by moving end point positions. Another mode is to draw all the curve manually in <guilabel>Free</guilabel> curve edition mode. In both cases the effect is immediately displayed in the image preview area to the left, where the preview can be configured by clicking on the top left icons.
+</para>
+
+<sect4 id="using-adjustcurves">
+<title>Using Adjustcurves</title>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="adjustcurvesdialog.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Adjust Curves Tool Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+To the left, half of the original and the target preview image is shown. The target preview is updated dynamically according to the widget settings. On the right side the following options are available:
+
+<itemizedlist>
+
+  <listitem><para>
+  Modify <guilabel>Channel</guilabel> : with this combo box you can select the specific channel to be modified by the tool:
+
+      <itemizedlist>
+          <listitem><para><guilabel>Luminosity</guilabel>: changes the intensity of all pixels.</para></listitem>
+          <listitem><para><guilabel>Red</guilabel>: changes the Red saturation of all pixels.</para></listitem>
+          <listitem><para><guilabel>Green</guilabel>: changes the Green saturation of all pixels .</para></listitem>
+          <listitem><para><guilabel>Blue</guilabel>: changes the Blue saturation of all pixels.</para></listitem>
+          <listitem><para><guilabel>Alpha</guilabel>: changes the transparency of all pixels.</para></listitem>
+      </itemizedlist>
+
+  </para></listitem>
+
+  <listitem><para>
+  Next to this box are two icons to select linear or logarithmic histogram display. For images taken with a digital camera the linear mode is usually the most useful. However, for images containing substantial areas of constant color, a linear histogram will often be dominated by a single bar. In this case a logarithmic histogram will be more appropriate.
+  </para></listitem>
+
+  <listitem><para>
+  Main Curves Editing Area: the horizontal bar (x-axis) represents input values (they are value levels from 0 to 255). The vertical bar (y-axis) is only a scale for output colors of the selected channel.  The control curve is drawn on a grid and crosses the histogram diagonally. The pointer x/y position is permanently displayed above the grid. If you click on the curve, a control point is created. You can move it to bend the curve. If you click outside the curve, a control point is also created, and the curve includes it automatically. So each point of the curve represents an 'x'  translated into a 'y' output level.
+  </para></listitem>
+
+  <listitem><para>
+  Curve <guilabel>Type</guilabel> for channel : below the editing area are several icons that determine whether the curve can be edited using a <guilabel>Smooth</guilabel> curve or a <guilabel>Free</guilabel> hand mode curve. Smooth mode constrains the curve type to a smooth line with tension and provides a realistic rendering. Free mode lets you draw your curve free-hand with the mouse. With curve segments scattered all over the grid, result will be surprising but hardly repeatable. A reset-to-defaults button is also available.
+  </para></listitem> 
+
+  <listitem><para>
+  If, for example, you move a curve segment to the right, i.e. to highlights, you can see that these highlights are corresponding to darker output tones and that image pixels corresponding to this curve segment will go darker.
+  </para></listitem>
+
+  <listitem><para>
+  With color channels, moving right will decrease saturation up to reaching complementary color. To delete all control points (apart from both end points), click on the <guilabel>Reset Values</guilabel> button. To delete only one  point, move it onto another point. Just ply with the curves and watch the results. You even can solarize the picture on part of its tonal range. This happens when the curve is inverted in some part.
+  </para></listitem>
+
+  <listitem><para>
+  The original photo preview has a red marker on it. If you place this marker to a zone you want to modify, a corresponding line will be drawn on the curve grid indicating the original value. Create a point on that line and move it up or down to adjust it to your pleasing.
+  </para></listitem>
+
+  <listitem><para>
+  <guilabel>Save As</guilabel> and <guilabel>Load</guilabel>: these buttons are used to do just that. Any curves that you have set can be saved to the filesystem and loaded later. The used file format is The Gimp Curves format.
+  </para></listitem>
+
+  <listitem><para>
+  <guilabel>Reset All</guilabel>: this button resets all curve values for all channels.
+  </para></listitem>
+
+</itemizedlist>
+
+</para>
+
+<para>
+The curves tool has several features that facilitate the positioning of points on the control curves. Clicking the mouse button in the original image preview area produces a vertical doted bar in the graph area of the curves tool. The bar position corresponds to the pixel value the mouse cursor is over in the image window. Clicking and dragging the mouse button interactively updates the position of the vertical bar. In this way, it is possible to see where different pixel values in the image are located on the control curve and helps to discover the locations of shadow, midtone, and highlight pixels.
+</para>
+ 
+<para>
+Using this way and the three <guilabel>Color Picker</guilabel> buttons will automatically create control points on the curve in all channels for shadow, middle, and highlight tones. Enable the color picker button that you want to use, and click on the original image preview area to produce control points on each of the Red, Green, Blue, and Luminosity control curves.
+</para>
+
+<para>
+<guilabel>Over Exposure Indicator</guilabel> option adds up all color channels and indicates the blown-out highlights. If more than one channel in a pixel is over-exposed you will see the combined color resulting from the curve settings. The display is an indicator only and has no effect on the final rendering.
+</para>
+
+</sect4>
+
+<sect4 id="inaction-adjustcurves">
+<title>The Adjustcurves in action</title>
+
+<para>
+Below you can see a black and white photograph corrected in <guilabel>Luminosity</guilabel> channel. Shadow and highlight tone picker tool have been use to determined the curves to apply from original. The original image is (1), the corrected image (2).
+</para>
+
+        <para><inlinemediaobject><imageobject> 
+               <imagedata fileref="adjustcurvespreview.png" format="PNG" /> 
+              </imageobject>
+              <textobject><phrase>The Adjust Curves Tool in Action</phrase></textobject></inlinemediaobject>
+        </para>
+
+
+</sect4>
+</sect3>
+
+<sect3 id="adjustlevels">
+<sect3info>
+
+<title>Adjust Levels</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para>
+The &digikam; <emphasis>Adjust Levels</emphasis> is a tool to manually adjust the histogram channels of an image.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>
+Situated between the more sophisticated Adjust Curves tool and the simpler Brightness/Contrast/Gamma Image Editor tool is this Adjust Levels tool for improving exposure. Allthough the dialog for this tool looks very complicated, for the basic usage we have in mind here, the only part you need to deal with is the
+<guilabel>Input Levels</guilabel> area, concretely the 3 sliders that appear below the histogram.
+</para>
+
+<para>
+This widget contains a visual graph of the intensity values of the active layer or selection (histogram). 
+Below the graph are five sliders that can be clicked into and dragged to constrain and change the intensity
+level for the image. The left sliders position represents the dark areas and similarly, 
+the right position represents the light areas.
+</para>
+
+<sect4 id="using-adjustlevels">
+<title>Using the Adjustlevel tool</title>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="adjustlevelsdialog.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Adjust Levels Tool Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+Actually the easiest way to learn how to use it is to experiment by moving the three sliders around, 
+and watching how the image is affected.
+</para>
+
+<para>
+On the right, both an original and a target preview image is available. The target preview is updated dynamically according to the slider positions. On the left, the following options are available:
+ 
+<itemizedlist>
+
+  <listitem><para>
+  Modify levels for <guilabel>Channel</guilabel> : this combo box allows the selection of the specific 
+  channel that will be modified by the tool:
+  
+      <itemizedlist>
+          <listitem><para><guilabel>Luminosity</guilabel>: this option makes intensity changes against 
+          all pixels in the image.</para></listitem>
+          <listitem><para><guilabel>Red</guilabel>: this option makes Red saturation changes against 
+          all pixels in the image.</para></listitem>
+          <listitem><para><guilabel>Green</guilabel>: this option makes Green saturation changes against 
+          all pixels in the image.</para></listitem>
+          <listitem><para><guilabel>Blue</guilabel>: this option makes Blue saturation changes against 
+          all pixels in the image.</para></listitem>
+          <listitem><para><guilabel>Alpha</guilabel>: this option makes transparency changes against 
+          all pixels in the image.</para></listitem>
+      </itemizedlist>
+  
+  </para></listitem>
+
+  <listitem><para>Set <guilabel>Scale</guilabel> for channel : this combo controls whether the histogram
+  will be displayed using a linear or logarithmic amplitude. For images taken with a digital camera, the linear
+  mode is usually the most useful. However, for images that contain substantial areas of constant color a 
+  linear histogram will often be dominated by a single bar. In this case a logarithmic histogram will often 
+  be more useful.</para></listitem>
+  
+  <listitem><para><guilabel>Input Levels</guilabel>: the input levels allow manual adjustments to 
+  be selected for each of the ranges. The main area is a graphic representation of image dark, mid and light tones content. They are on abscissa from level 0 (black) to level 255 (white).
+  Pixel number for a level is on ordinate axis. The curve surface represents all the pixels of the image for the selected channel (histogram). A well balanced image is an image with levels
+  (tones) distributed all over the whole range. An image with a predominant blue color, for example,
+  will produce a histogram shifted to the left in Green and Red channels, manifested by green and
+  red color lacking on highlights. The level ranges can be modified in three ways:
+      <itemizedlist>
+          <listitem><para>
+          Three sliders: the first on the top for dark tones, the second one for light tones, and the last one on the bottom for midtones (often called Gamma value).
+          </para></listitem>
+          <listitem><para>
+          Three input boxes to enter values directly.
+          </para></listitem>
+          <listitem><para>
+          Three Color Picker buttons using the original photo preview to automatically adjust inputs levels settings for shadow, midtone and highlights. There is also a fully automated adjustment button available next to the reset button.
+          </para></listitem>
+      </itemizedlist>
+  </para></listitem>  
+  
+  <listitem><para><guilabel>Output Levels</guilabel>: the output levels allow manual selection
+  of a narrowed-down output level range. There are also two sliders located here that can be used
+  to interactively change the output levels like <guilabel>Input Levels</guilabel>.
+  This ouput level compression may, for example, be used to create a bleached image as a background for some other subject to put into the foreground.</para></listitem>
+  
+  <listitem><para><guilabel>Auto</guilabel>: this button performs an automatic setting of the 
+  levels based on the pixel intensities of the image.</para></listitem>
+  
+  <listitem><para><guilabel>Save As</guilabel> and <guilabel>Load</guilabel>: these buttons are used 
+  to do just that. Any Levels that you have set can be saved to the filesystem and loaded later. 
+  The used file format is The Gimp Levels format.</para></listitem>
+
+  <listitem><para><guilabel>Reset All</guilabel>: this button reset all 
+  <guilabel>Input Levels</guilabel> and <guilabel>Output Levels</guilabel> values for all 
+  channels.</para></listitem>
+  
+</itemizedlist>
+</para>
+
+<para>
+The Adjust Levels tool has several features to facilitate the positioning input levels sliders. Clicking the mouse button in the original image preview area produces a vertical doted bar in the graph area of the histogram. The bar position corresponds to the pixel value under the mouse cursor in the image window. Clicking and dragging the mouse button interactively updates the position of the vertical bar. In this way it is possible to see where different pixel values in the image are located on the input levels sliders and helps to discover the locations of shadow, midtone, and highlight pixels.
+</para>
+ 
+<para>
+Using in this mode and the three <guilabel>Color Picker</guilabel> buttons will automatically adjust input levels settings in all channels for shadow, middle, and highlight tones. Enable the color picker button that you want use, and click on the original image preview area to set input levels on each of the Red, Green, Blue, and Luminosity histogram channels.
+</para>
+
+<para>
+<guilabel>Over Exposure Indicator</guilabel> option checks all color channel to see if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of channel level settings. This feature is available as an indicator in the target preview area and has no effect on final rendering.
+</para>
+
+</sect4>
+
+<sect4 id="inaction-adjustlevels">
+<title>The Adjustlevel tool in action</title>
+
+<para>
+Below, you can see an <guilabel>Input levels</guilabel> adjustment example applied to a color picture for the Red/Green/Blue channels. Intensity/Alpha channels and <guilabel>Output Levels</guilabel> are unchanged. The original image is (1), the corrected image (2).
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="adjustlevelspreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Adjust Levels Tool in Action</phrase></textobject></inlinemediaobject>
+   </para>
+
+</sect4>
+</sect3>
+
+<sect3 id="channelmixer">
+<sect3info>
+
+<title>Channel Mixer</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para>
+The &digikam; image <emphasis>Channel Mixer</emphasis> is a tool to remix the color channels to improve or modify the photograph color shades.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>
+The Channel Mixer is an another sophisticated tool to refine the images' tonality. Start it from the <menuchoice><guimenu>Color</guimenu><guimenuitem>Channel Mixer</guimenuitem></menuchoice> Image Editor menu.
+</para>
+
+<para>
+</para>
+
+<sect4 id="using-channelmixer">
+<title>Using the Channel Mixer</title>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="channelmixerdialog.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Channel Mixer Tool Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+With the channel combo box you select and display the histogram per color. It gives a first hint of how to correct the channels by their relative distribution and amplitude. The left half of the dialog window always shows a preview of what you are doing. The orignal for comparison can be seen when selecting its own window tab.
+</para>
+
+<para>
+The target photo preview has a red marker available. If you place this marker somewherer in the image, a corresponding vertical bar will be drawn in the histogram indicating the color level value in the current channel selected.
+</para>
+
+<para>
+Now the controls are to the lower right: <guilabel>Red</guilabel>, <guilabel>Green</guilabel> and <guilabel>Blue</guilabel> slider controls enable you to mix the channels. If you check <guilabel>Preserve Luminosity</guilabel> the image will retain its overall luminosity despite you changing its color components. This feature is particularly useful when you also ticked the <guilabel>Monochrome</guilabel> box. Because the channel mixer is THE tool to make great black and white conversions of your photographs. Try to reduce the green channel for black and white portraits.
+</para>
+
+<note><para>
+Sometimes, especially when doing monochrome mixing, reducing one color channel may increase visible noise, which actually originates in the chroma noise. Chroma noise means that the little noise specs do not appear at the same location in all the color channels, but the noise patterns looks different in every channel. If that is the case you can improve the monochrome conversion by reducing the chroma noise first.
+</para></note>
+
+<para>
+<guilabel>Save As</guilabel> and <guilabel>Load</guilabel> buttons are used to do just that. Any mixer settings that you have set can be saved to the filesystem and loaded later. The used file format is The Gimp channel mixer format.
+</para>
+
+<para>
+<guilabel>Over Exposure Indicator</guilabel> option adds up the colors if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of channel gain settings. This rule is applying to target preview area and haven't effect to final rendering.
+</para>
+
+<para>
+<guilabel>Reset All</guilabel> button resets all channel mixer settings to default values.
+</para>
+
+</sect4>
+
+<sect4 id="inaction-channelmixer">
+<title>The channel mixer in action</title>
+
+<para>
+Below, you can see a photograph color tone adjustments for the <guilabel>Blue</guilabel> channel. <guilabel>Preserve luminosity</guilabel> option is on. The original image is (1), the corrected image (2).
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="channelmixerpreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Channel Mixer in Action</phrase></textobject></inlinemediaobject>
+   </para>
+
+</sect4>
+</sect3>
+
+<sect3 id="blackandwhite-conversion"> 
+<sect3info>           <title>Black and White Conversion Filters</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+    <para>
+       Black &amp; White photography has always been fascinating in its abstraction cabability. With the advent of digital photography, B&amp;W has almost become a desktop activity, as color images can be easily converted on the computer into black and white, even providing a set of vintage film roll profiles.
+    </para>
+ </abstract>
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+<title>Introduction</title>
+    <anchor id="blackandwhitetool.anchor"/>
+    <para>
+      &digikam; comes with a couple of black &amp; white filters that you can use on your photographs. Under the <menuchoice><guimenuitem>Filters</guimenuitem><guimenuitem>Black &amp; White</guimenuitem></menuchoice> menu you will find classic black &amp; white chemical toning used in analog photography. The controls come on three tabs: <emphasis>Film, Lens Filters, Tone</emphasis> and <emphasis>Lightness</emphasis> as shown on the screenshot below. Film, filters and color toning can be applied independently of each other (on top of each other). The filters actually influence the RGB channel mixing, whereas the toning purely adds a uniform monochromatic tint to the black &amp; white photograph. In the lightness tab you will find a tonal adjustment tool (like curve adjust), a contrast tool and an over-exposure indicator to improve the b&amp;w rendering.
+    </para>
+      <example>  <title>The Black &amp; White Filter tool in Action</title>
+        <screenshot><screeninfo>The B&amp;W Filter tool in Action" </screeninfo><mediaobject><imageobject><imagedata fileref="editorbwfilter.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+      </example>
+    
+    <para>The table below shows in more detail the effect of all filters and tints.</para>
+
+    <informaltable><tgroup cols="2">
+    
+    <thead><row>
+        <entry>Preview</entry>        <entry>Photographic Film Emulation</entry>
+    </row></thead>
+    <tbody>
+
+        <row>
+            <entry>
+              <inlinemediaobject><imageobject><imagedata fileref="editorconvert_bwred.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </entry>
+
+            <entry>
+              <para>Specific settings to emulate a number of famous black &amp; white photographic films are available:</para>
+              <para>Agfa 200X, Agfa Pan 25, Agfa Pan 100, Agfa Pan 400</para> 
+              <para>Ilford Delta 100, Ilford Delta 400, Ilford Delta 400 Pro 3200, Ilford FP4 Plus, Ilford HP5 Plus, Ilford PanF Plus, Ilford XP2 Super</para>
+              <para>Kodak Tmax 100, Kodak Tmax 400, Kodak TriX</para>
+            </entry>
+        </row>
+    </tbody>
+    </tgroup></informaltable>
+
+    <informaltable><tgroup cols="2">
+     <thead><row>
+        <entry>Preview</entry>
+        <entry>Lens Filter Type</entry>
+     </row></thead>
+       <tbody>
+        <row>
+            <entry>
+            <inlinemediaobject><imageobject><imagedata fileref="editorconvert_original.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </entry>
+
+            <entry>
+             Original color image taken in New Zealand landscapes.
+            </entry>
+        </row>
+
+        <row>
+            <entry>
+            <inlinemediaobject><imageobject><imagedata fileref="editorconvert_bw.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </entry>
+
+            <entry>
+            Neutral: simulate black &amp; white neutral film exposure. 
+            </entry>
+        </row>
+
+        <row>
+            <entry>
+            <inlinemediaobject><imageobject><imagedata fileref="editorconvert_bwgreen.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </entry>
+
+           <entry>
+             Green Filter: simulates black &amp; white film exposure with green lens filter. This comes good with all scenic images, especially suited for portraits taken against the sky (similar to 004 Cokin(tm) Green filter).
+           </entry>
+        </row>
+
+        <row>
+            <entry>
+            <inlinemediaobject><imageobject><imagedata fileref="editorconvert_bworange.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </entry>
+
+            <entry>
+            Orange Filter: simulates black &amp; white film exposure with an orange lens filter. This will enhance landscapes, marine scenes and aerial photography (similar to 002 Cokin(tm) Orange filter).
+            </entry>
+        </row>
+
+        <row>
+            <entry>
+            <inlinemediaobject><imageobject><imagedata fileref="editorconvert_bwred.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </entry>
+
+            <entry>
+            Red Filter: simulates black &amp; white film exposure with red lens filter. Creates dramatic sky effects and can simulate moonlight scenes in daytime (similar to 003 Cokin(tm) Red filter).
+            </entry>
+        </row>
+
+        <row>
+            <entry>
+            <inlinemediaobject><imageobject><imagedata fileref="editorconvert_bwyellow.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </entry>
+
+            <entry>
+            Yellow Filter: simulates black &amp; white film exposure with yellow lens filter. Most natural tonal correction, improves contrast. Ideal for landscapes (similar to 001 Cokin(tm) Yellow filter).
+            </entry>
+        </row>
+
+    </tbody>
+    
+    </tgroup></informaltable>
+
+    <informaltable><tgroup cols="2">
+    
+    <thead><row>
+        <entry>Preview</entry>        <entry>Color Tint</entry>
+    </row></thead>
+
+      <tbody>
+        <row>
+            <entry>
+            <inlinemediaobject><imageobject><imagedata fileref="editorconvert_sepia.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </entry>
+    
+            <entry>
+            Sepia Tone: gives a warm highlight and mid-tone while adding a bit of coolness to the shadows - very similar to the process of bleaching a print and re-developing in a sepia toner (typical for your grandmothers photographs). Similar to 005 Cokin(tm) Sepia filter.
+            </entry>
+        </row>
+
+         <row>
+            <entry>
+            <inlinemediaobject><imageobject><imagedata fileref="editorconvert_brown.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </entry>
+    
+            <entry>
+            Brown Tone: similar to Sepia Tone filter, but less pronounced.
+            </entry>
+        </row>
+    
+       <row>
+            <entry>
+            <inlinemediaobject><imageobject><imagedata fileref="editorconvert_cold.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </entry>
+    
+            <entry>
+            Cold Tone: start subtle and replicate printing on a cold tone black &amp; white paper such as a bromide enlarging paper.
+            </entry>
+        </row>
+    
+        <row>
+            <entry>
+            <inlinemediaobject><imageobject><imagedata fileref="editorconvert_platinium.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </entry>
+    
+            <entry>
+            Platinum Tone: effect that replicates traditional platinum chemical toning done in the darkroom.
+            </entry>
+        </row>
+
+        <row>
+            <entry>
+            <inlinemediaobject><imageobject><imagedata fileref="editorconvert_selenium.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </entry>
+
+            <entry>
+            Selenium Tone: effect that replicates traditional selenium chemical toning done in the darkroom.
+            </entry>
+        </row>
+
+    </tbody>
+
+    </tgroup></informaltable>
+
+</sect3>
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

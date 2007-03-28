@@ -1,0 +1,1683 @@
+<chapter id="menu-descriptions">    <title>Menu Descriptions</title>
+
+<sect1 id="main-window">                <title>The main &digikam; window</title>
+
+    <sect2>    <title>The Album Menu</title>
+
+    <para>
+        <inlinemediaobject>
+            <imageobject><imagedata fileref="menualbum.png" format="PNG"/></imageobject>
+            <textobject> <phrase>Album Menu</phrase> </textobject>
+        </inlinemediaobject>
+    </para>
+
+        <para>
+        <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>Left</keycap></keycombo> </shortcut>
+                <guimenu>Album</guimenu><guimenuitem>Back</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Go back to the previously visited View using history.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>Right</keycap></keycombo> </shortcut>
+                <guimenu>Album</guimenu><guimenuitem>Forward</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Go forward to the previously visited View using history. You can only go forward if you've just gone back.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>N</keycap></keycombo> </shortcut>  <guimenu>Album</guimenu><guimenuitem>New Album</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Create a new album folder.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Edit Album Properties</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Edit the currently selected album title, comments and collection.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>F5</keycap></keycombo> </shortcut>
+                <guimenu>Album</guimenu><guimenuitem>Refresh</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Refresh the current view in the Main Window.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry id="synchronize-metadata">
+            <term><menuchoice>
+                <guimenu>Album</guimenu>
+                <guimenuitem>Sync Pictures Metadata</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Synchronize the metadata between database and the file's metadata of all items of the current Main Window</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu>
+                <guimenuitem>Open in &konqueror;</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Open &konqueror; with the current Album path.</action></para></listitem>
+        </varlistentry>
+
+        <!-- Import sub menu -->
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>I</keycap></keycombo> </shortcut>
+                <guimenu>Album</guimenu><guimenuitem>Import</guimenuitem><guimenuitem>Add Images</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Select images to be added to the currently selected Album.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Import</guimenuitem><guimenuitem>Import Folders</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Select folders to be imported like Albums to the currently selected Album</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Import</guimenuitem><guimenuitem>Scan Images</guimenuitem>
+            </menuchoice></term>
+             <listitem>
+                <para><action>
+                    Kipi plugin for image acquisition with a scanner.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/acquireimages.html">Acquire Images manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Import</guimenuitem><guimenuitem>Screenshot</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to take a screenshot.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/acquireimages.html">Acquire Images manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+                
+        <!-- Export sub menu -->
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Archive to 
+                &CD;/DVD</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to archive Albums to &CD; or DVD using K3b.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/cdarchiving.html">&CD; Archiving manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Export to Flickr...</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to upload or update images to <ulink url="http://www.flickr.com/">Flickr</ulink> server.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/flickrexport.html">&CD; Flickr Export manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Remote Gallery sync...</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to upload or update images to <ulink url="http://www.gallery2.org/">web galleries</ulink>.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/galleryexport.html">&CD; Gallery Export manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>&HTML; Gallery</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to create a &HTML; gallery with Albums.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/imagesgallery.html">Images Gallery manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Print 
+                Wizard</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to print Album images.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/printwizard.html">Print Wizard manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+                                
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>SimpleViewer export</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to export to <ulink url="http://www.airtightinteractive.com/photos/">SimpleViewer</ulink>.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/simpleviewer.html">SimpleViewer manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu>
+                <guimenuitem>Delete Album/Move Album to trash</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Delete/Move to trash selected Album and all items in it.</action></para></listitem> 
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>Q</keycap></keycombo> </shortcut>
+                <guimenu>Album</guimenu><guimenuitem>Quit</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Quit &digikam;</action></para></listitem>
+        </varlistentry>
+        
+        </variablelist>
+        </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+
+    <sect2>    <title>The Tag Menu</title>
+
+    <para>
+        <inlinemediaobject>
+            <imageobject><imagedata fileref="menutag.png" format="PNG"/></imageobject>
+            <textobject> <phrase>Tags Menu</phrase> </textobject>
+        </inlinemediaobject>
+    </para>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tag</guimenu><guimenuitem>New Tag</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Create a new Tag entry in the Albums Database.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tag</guimenu><guimenuitem>Edit Tag Properties</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Edit the properties of the currently selected Tag.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tag</guimenu><guimenuitem>Delete Tag</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Remove the currently selected Tag from the Album's Database.</action></para></listitem>
+        </varlistentry>
+            
+    </variablelist>
+    </para>
+
+    </sect2>
+    
+    <!-- *********************************************************************** -->
+
+    <sect2>    <title>The Image Menu</title>
+
+    <para>
+        <inlinemediaobject>
+            <imageobject><imagedata fileref="menuimage.png" format="PNG"/></imageobject>
+            <textobject> <phrase>Image Menu</phrase> </textobject>
+        </inlinemediaobject>
+    </para>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="press"><keycap>F3</keycap></keycombo> </shortcut>
+                <guimenu>Image</guimenu><guimenuitem>View...</guimenuitem>
+            </menuchoice> or 
+                  <menuchoice>
+                   <shortcut><keycombo action="press"><keycap>Enter</keycap></keycombo></shortcut>
+                     <guimenu></guimenu></menuchoice></term>
+            <listitem><para><action>View the selected image.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                   <shortcut><keycombo action="press"><keycap>Esc</keycap></keycombo></shortcut> 
+                   <guimenu></guimenu></menuchoice> or 
+                  <menuchoice>
+                   <shortcut><keycombo action="press"><keycap>F3</keycap></keycombo></shortcut>
+                     <guimenu></guimenu></menuchoice></term>
+            <listitem><para><action>Puts you back from 'image view' into the main window.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="press"><keycap>F4</keycap></keycombo> </shortcut>
+                <guimenu>Image</guimenu><guimenuitem>Edit...</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Open the currently selected image in the &digikam; image editor.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Correct EXIF Orientation Tag</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Manual EXIF Orientation Tag adjustment options of the currently selected image.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Auto Rotate/Flip using EXIF information</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin menu entry to manually activate the auto rotate/flip feature for the currently selected images using the EXIF orientation tag.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/jpeglossless.html">JPEG Loss Less manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Rotate</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin menu entry for rotating the currently selected images by 90/180/270 degrees.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/jpeglossless.html">JPEG Loss Less manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Flip</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin menu entry for flipping the currently selected images horizontally or vertically.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/jpeglossless.html">JPEG Loss Less manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Convert to Black &amp; White</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin menu entry for converting the currently selected images to black &amp; white.  
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/jpeglossless.html">JPEG Loss Less manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Email images</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin for emailing images with your preferred mail agent.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/sendimages.html">Send Images manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Geolocalization</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to handle GPS meta data of the image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/geolocalization.html">Geolocalization manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Metadata</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to handle meta data of the image (EXIF, IPTC, comments).
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/metadata.html">Metadata manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Adjust Time and Date</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin for adjusting time and date of the currently selected images. 
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/timeadjust.html">Time Adjust manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Image</guimenu><guimenuitem>Set as Background</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin for setting the currently selected image as the desktop background.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/wallpaper.html">Wall Paper manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+                
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="press"><keycap>F2</keycap></keycombo> </shortcut>
+                <guimenu>Image</guimenu><guimenuitem>Rename</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Rename the currently selected image.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="press"><keycap>F8</keycap></keycombo> </shortcut>
+                <guimenu>Image</guimenu><guimenuitem>Delete</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Move to trash (recoverable delete)</action></para></listitem>
+        </varlistentry>
+
+    </variablelist>
+    </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+
+    <sect2>    <title>The Select Menu</title>
+
+    <para>
+        <inlinemediaobject>
+            <imageobject><imagedata fileref="menuselect.png" format="PNG"/></imageobject>
+            <textobject> <phrase>Select Menu</phrase> </textobject>
+        </inlinemediaobject>
+    </para>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>A</keycap></keycombo> </shortcut>
+                <guimenu>Select</guimenu><guimenuitem>Select All</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Select all images currently shown</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>U</keycap></keycombo> </shortcut>
+                <guimenu>Select</guimenu><guimenuitem>Select None</guimenuitem>
+            </menuchoice></term>
+        <listitem><para><action>Unselect all items in the current view</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>*</keycap></keycombo> </shortcut>
+                <guimenu>Select</guimenu><guimenuitem>Invert Selection</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Invert the current selection</action></para></listitem>
+        </varlistentry>
+
+    </variablelist>
+    </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+
+    <sect2>    <title>The View Menu</title>
+
+    <para>
+        <inlinemediaobject>
+            <imageobject><imagedata fileref="menuview.png" format="PNG"/></imageobject>
+            <textobject> <phrase>View Menu</phrase> </textobject>
+        </inlinemediaobject>
+    </para>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>F</keycap></keycombo> </shortcut>
+                <guimenu>View</guimenu><guimenuitem>Full Screen Mode</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Switch to full screen (same as F11).</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>View</guimenu><guimenuitem>Slide Show</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Slide Show including RAW files.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="press"><keycap>F9</keycap></keycombo> </shortcut>
+                <guimenu>View</guimenu><guimenuitem>All</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Start slide show of all images in current window.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>F9</keycap></keycombo> </shortcut>
+                <guimenu>View</guimenu><guimenuitem>Selection</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Start slide show on selected images.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>F9</keycap></keycombo> </shortcut>
+                <guimenu>View</guimenu><guimenuitem>Recursive</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Slide show that recurses through the current album tree.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>+</keycap></keycombo> </shortcut>
+                <guimenu>View</guimenu><guimenuitem>Increase Thumbnail Size</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Increase the thumbnail size of the currently selected Album.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>-</keycap></keycombo> </shortcut>
+                <guimenu>View</guimenu><guimenuitem>Decrease Thumbnail Size</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Decrease the thumbnail size of the currently selected Album.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>View</guimenu><guimenuitem>Sort Albums</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Sort all &digikam; Albums by Folder, by Collection, or by Date.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>View</guimenu><guimenuitem>Sort Images</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Sort all images in current Album by Name, Path, Date, File Size or by Rating.</action></para></listitem>
+        </varlistentry>
+        
+    </variablelist>
+    </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+
+    <sect2>    <title>The Tools Menu</title>
+
+    <para>
+        <inlinemediaobject>
+            <imageobject><imagedata fileref="menutools.png" format="PNG"/></imageobject>
+            <textobject> <phrase>Tools Menu</phrase> </textobject>
+        </inlinemediaobject>
+    </para>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>F</keycap></keycombo> </shortcut>
+                <guimenu>Tools</guimenu><guimenuitem>Quick Search</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Launch the simple search items dialog.
+                </action></para>
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>&Ctrl;</keycap><keycap>F</keycap></keycombo> </shortcut>
+                <guimenu>Tools</guimenu><guimenuitem>Advanced Search</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Launch the advanced search items dialog.
+                </action></para>
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Scan for new images</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Rescan the library for images not yet in the database (see also <link linkend="rescan-items">start-up option</link>).
+                </action></para>
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Rebuild all Thumbnails...</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Launch rebuild of all thumbnails (that can take a long time if you have many images).
+                </action></para>
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Sync all Pictures Metadata</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Launch synchronization of all metadata between database and files of all files (not just current view as with <link linkend="synchronize-metadata">this</link> menu).
+                </action></para>
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Find Duplicate Images</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to find duplicate images in Albums Database.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/findduplicateimages.html">Find Duplicate Images manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Image Viewer</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin OpenGL full screen image viewer with the selected image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/openglviewer.html">Calendar manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Create Calendar</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin for creating a calendar with Album items.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/calendar.html">Calendar manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>            
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Create MPEG Slideshow</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin for creating an MPEG Slideshow with Album items.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/mpegencoder.html">MPEG Encoder manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Remote Galleries</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin to set up a list of remote galleries for exporting.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/remotegalleries.html">Slide Show manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Slideshow</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin for displaying an advanced slide show with Album items.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/slideshow.html">Slide Show manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>RAW Image Converter (single)</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi plugin for converting a single RAW image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/rawconverter.html">RAW Converter manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+
+        <!-- Import sub menu -->
+ 
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Batch Processes</guimenuitem>
+            </menuchoice></term>
+             
+            <listitem>
+                <para><action>
+                    Kipi plugin menu entries for performing batch Processes on currently selected images.
+                </action></para>
+                <para>
+                    See the dedicated manuals for more information:
+                    
+                    <itemizedlist>
+                        <listitem><para>
+                        <ulink url="help:/kipi-plugins/colorimages.html">Color Images manual</ulink>
+                        </para></listitem>
+
+                        <listitem><para>
+                        <ulink url="help:/kipi-plugins/convertimages.html">Convert Images manual</ulink>
+                        </para></listitem>
+
+                        <listitem><para>
+                        <ulink url="help:/kipi-plugins/effectimages.html">Effect Images manual</ulink>
+                        </para></listitem>
+
+                        <listitem><para>
+                        <ulink url="help:/kipi-plugins/filterimages.html">Filter Images manual</ulink>
+                        </para></listitem>
+
+                        <listitem><para>
+                        <ulink url="help:/kipi-plugins/recompressimages.html">Recompress Images manual</ulink>
+                        </para></listitem>
+
+                        <listitem><para>
+                        <ulink url="help:/kipi-plugins/renameimages.html">Rename Images manual</ulink>
+                        </para></listitem>
+
+                        <listitem><para>
+                        <ulink url="help:/kipi-plugins/resizeimages.html">Resize Images manual</ulink>
+                        </para></listitem>
+
+                        <listitem><para>
+                        <ulink url="help:/kipi-plugins/rawconverter.html">RAW Converter manual</ulink>
+                        </para></listitem>
+                    </itemizedlist>
+                </para>     
+            </listitem>
+        </varlistentry>
+    
+    </variablelist>
+    </para>
+    
+    </sect2>
+    
+    <!-- *********************************************************************** -->
+
+    <sect2>    <title>The Camera Menu</title>
+
+    <para>
+        <inlinemediaobject>
+            <imageobject><imagedata fileref="menucamera.png" format="PNG"/></imageobject>
+            <textobject> <phrase>Camera Menu</phrase> </textobject>
+        </inlinemediaobject>
+    </para>
+
+    <para>
+    Any configured digital camera will be listed here. You can use the "Add Camera" menu entry to add a new camera to the list. Please, read the <link linkend="cameraselection.anchor">Setup Camera Section</link>
+    for more information.
+    </para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Camera</guimenu><guimenuitem>Media Browse</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Browsing attached media devices like card readers, DVDs or memory sticks.</action></para></listitem>
+        </varlistentry>
+
+         <varlistentry>
+            <term><menuchoice>
+                <guimenu>Camera</guimenu><guimenuitem>Add camera</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Interactively add a new camera.</action></para></listitem>
+        </varlistentry>
+
+    </variablelist>
+
+    </sect2>
+
+
+    <!-- *********************************************************************** -->
+
+    <sect2 id="settings-menu">    <title>The Settings Menu</title>
+
+    <para>
+        <inlinemediaobject>
+            <imageobject><imagedata fileref="menusettings.png" format="PNG"/></imageobject>
+            <textobject> <phrase>Settings Menu</phrase> </textobject>
+        </inlinemediaobject>
+    </para>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Settings</guimenu><guimenuitem>Show Toolbar/Hide Toolbar</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Enable or disable the main &digikam; toolbar.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Settings</guimenu><guimenuitem>Show Statusbar/Hide Statusbar</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Enable or disable the main &digikam; status bar.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Settings</guimenu><guimenuitem>Configure Shortcuts</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Configure the &digikam; shortcuts.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Settings</guimenu><guimenuitem>Configure Toolbars</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Configure the &digikam; toolbars.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Settings</guimenu><guimenuitem>Configure &digikam;</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Launch &digikam; configure dialog.</action></para></listitem>
+        </varlistentry>
+
+    </variablelist>
+    </para>
+
+    </sect2>
+
+</sect1>
+
+<!-- *********************************************************************** -->
+
+<sect1 id="image-editor-menu">               <title>The Image Editor</title>
+
+    <sect2>        <title>The File Menu</title>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="press"><keycap>PgUp</keycap></keycombo> </shortcut>
+                <guimenu>File</guimenu><guimenuitem>Back</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display the previous image of the current Album.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="press"><keycap>PgDown</keycap></keycombo> </shortcut>
+                <guimenu>File</guimenu><guimenuitem>Forward</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display the next image of the current Album.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>Home</keycap></keycombo> </shortcut>
+                <guimenu>File</guimenu><guimenuitem>First</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display the first image of current Album.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>End</keycap></keycombo> </shortcut>
+                <guimenu>File</guimenu><guimenuitem>Last</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display the last image of current Album.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>S</keycap></keycombo> </shortcut>
+                <guimenu>File</guimenu><guimenuitem>Save</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Save the current image if it has been modified.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>File</guimenu><guimenuitem>Save As</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Save the current image in a new file.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>File</guimenu><guimenuitem>Revert</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Restore the current image from the original file if it has been modified.</action></para></listitem>
+        </varlistentry>
+                            
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo><keycap>&Shift;</keycap><keycap>Del</keycap></keycombo> </shortcut>
+                <guimenu>File</guimenu><guimenuitem>Delete File/Move to trash</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Delete/Move to trash the current image from the current 
+            Album.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>P</keycap></keycombo> </shortcut>
+                <guimenu>File</guimenu><guimenuitem>Print Image</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Print the current image.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo ><keycap>&Ctrl;</keycap><keycap>Q</keycap></keycombo> </shortcut>
+                <guimenu>File</guimenu><guimenuitem>Quit</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Quit &digikam; Image Editor.</action></para></listitem>
+        </varlistentry>
+            
+    </variablelist>
+    </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+
+    <sect2>        <title>The Edit Menu</title>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>C</keycap></keycombo> </shortcut>
+                <guimenu>Edit</guimenu><guimenuitem>Copy</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Copy the current image selection in the clipboard.</action></para></listitem>
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>Z</keycap></keycombo> </shortcut>
+                <guimenu>Edit</guimenu><guimenuitem>Undo</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Cancel the last action applied to the current image using history.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>Z</keycap></keycombo> </shortcut>
+                <guimenu>Edit</guimenu><guimenuitem>Redo</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Redo the last action applied to the current image using history.</action></para></listitem>
+        </varlistentry>
+    
+    </variablelist>
+    </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+
+    <sect2>        <title>The Color Menu</title>
+      <para>
+      <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>B</keycap></keycombo> </shortcut>
+                <guimenu>Color</guimenu><guimenuitem>Auto-Correction</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Automatic color/exposure correction of the current image by an histogram manipulation <link linkend="autocolorcorrectiontool.anchor">(help)</link>.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Color</guimenu><guimenuitem>White Balance</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor tool to adjust white color balance on the current image <link linkend="using-whitebalance">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Color</guimenu>
+                <guimenuitem>Brightness/Contrast/Gamma</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Exposure correction of the current image by Brightness, Contrast, or Gamma 
+            adjustments <link linkend="bcgadjusttool.anchor">(help)</link>.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>U</keycap></keycombo> </shortcut>
+                <guimenu>Color</guimenu>
+                <guimenuitem>Hue/Saturation/Lightness</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Color correction of the current image by Hue, Saturation, or Lightness 
+            adjustments<link linkend="colorbalancetool.anchor">(help)</link>.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Color</guimenu><guimenuitem>Color Effects</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Set of four Image Editor tools: Solarize, Vivid (Velvia), Neon and Edge <link linkend="coloreffects">(help)</link>.
+                </action></para>
+          </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>B</keycap></keycombo> </shortcut>
+                <guimenu>Color</guimenu><guimenuitem>Color Balance</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Color correction of the current image by Red, Green, or Blue 
+            adjustments <link linkend="colorbalancetool.anchor">(help)</link></action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Correct</guimenu><guimenuitem>Curves Adjust</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to adjust curves manually on the current image <link linkend="adjustcurves">(help)</link>.
+                </action></para>
+             </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Color</guimenu><guimenuitem>Levels Adjust</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to adjust levels manually on the current image <link linkend="adjustlevels">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Color</guimenu><guimenuitem>Channel Mixer</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    <link linkend="using-channelmixer">Image Editor tool </link>to mix color channels on the current image.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>I</keycap></keycombo> </shortcut>
+                <guimenu>Color</guimenu><guimenuitem>Invert</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Invert image colors.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Black &amp; White</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Open the <link linkend="blackandwhite-conversion">Black &amp; White  </link>filter dialog for the current image.</action></para></listitem>
+        </varlistentry>
+ 
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Color</guimenu><guimenuitem>Color Management</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Invokes the interactive <link linkend="using-iccprofile">Color Management</link> editor.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Color</guimenu><guimenuitem>Depth</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Toggle between 8 bit and 16 bit format on color channels.</action></para></listitem>
+        </varlistentry>
+
+       </variablelist>
+      </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+
+    <sect2>        <title>The Corrections Menu</title>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Correct</guimenu><guimenuitem>Sharpen</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Classical image sharping operation <link linkend="sharpening">(help)</link>.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Correct</guimenu><guimenuitem>Blur</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Image softening operation by blurring <link linkend="using-blurfilter">(help)</link>.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Correct</guimenu><guimenuitem>Red Eye Reduction</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Red Eye correction tool using the current selection <link linkend="redeyecorrectiontool.anchor">(help)</link>.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Correct</guimenu><guimenuitem>Inpainting</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor tool to remove unwanted areas and specs <link linkend="inpainting">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Correct</guimenu><guimenuitem>Noise Reduction</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor tool to reduce the noise with a Despeckle filter <link linkend="noisereduction">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Correct</guimenu><guimenuitem>Restoration</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor tool to reduce artifacts on the current image <link linkend="restoration">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Correct</guimenu><guimenuitem>Hot Pixels Correction</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor tool to remove hot pixels on the current image <link linkend="hotpixels">(help)</link>.
+                </action></para>
+           </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Correct</guimenu><guimenuitem>Anti Vignetting</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to correct vignetting of the current image <link linkend="antivignetting">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Correct</guimenu><guimenuitem>Lens Distortion Correction</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to correct lens distortion of the current image <link linkend="lensdistortion.anchor">(help)</link>.
+                </action></para>
+           </listitem>
+        </varlistentry>
+
+    </variablelist>
+    </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+    
+    <sect2>        <title>The Transform Menu</title>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>Left</keycap></keycombo> </shortcut>
+                <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>-90 
+                degrees</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Left rotation of the current image.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>Right</keycap></keycombo> </shortcut>
+                <guimenu>Transform</guimenu><guimenuitem>Rotate</guimenuitem><guimenuitem>90 
+                degrees</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>90 degrees rotation of the current image.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Transform</guimenu><guimenuitem>Free Rotation</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to rotate the current image by any angle in degrees <link linkend="freerotation">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>*</keycap></keycombo> </shortcut>
+                <guimenu>Transform</guimenu><guimenuitem>Flip</guimenuitem><guimenuitem>Horizontally</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Horizontal flip of the current image.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>/</keycap></keycombo> </shortcut>
+                <guimenu>Transform</guimenu><guimenuitem>Flip</guimenuitem><guimenuitem>Vertically</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Vertical flip of the current image.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>X</keycap></keycombo> </shortcut>
+                <guimenu>Transform</guimenu><guimenuitem>Crop</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Crop image to the current selection.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Transform</guimenu><guimenuitem>Resize</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Resize (reduce or blow-up) the current image to the appropriate factor or dimensions <link linkend="resize">(help)</link>.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Transform</guimenu><guimenuitem>Aspect Ratio Crop</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Crop the current image using an constrained aspect ratio <link linkend="aspect-ratio-crop">(help)</link>.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Transform</guimenu><guimenuitem>Shear</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to shear the current image horizontally or vertically <link linkend="sheartool">(help)</link>.
+                </action></para>
+           </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Transform</guimenu><guimenuitem>Perspective Adjustment</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to adjust perspective of the current image <link linkend="perspective">(help)</link>.
+                </action></para>
+           </listitem>
+        </varlistentry>
+
+    </variablelist>
+    </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+ 
+    <sect2>        <title>The Decoration Menu</title>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Decoration</guimenu><guimenuitem>Apply Texture</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor tool to apply decorative texture to the current image.
+                </action></para>
+                <para>
+                    See the dedicated <link linkend="using-texture">Apply Texture manual</link> for more information.
+                </para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Decoration</guimenu><guimenuitem>Add Border</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to add a decorative border around the current image <link linkend="border">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Decoration</guimenu><guimenuitem>Insert Text</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin to insert text in the current image <link linkend="inserttext">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>      
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Decoration</guimenu><guimenuitem>Template Superimpose</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor plugin for apply a template to the current image <link linkend="superimpose">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+    </variablelist>
+    </para>
+
+    </sect2>
+
+    <!-- ********************************************************************** -->
+
+    <sect2>        <title>The View Menu</title>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>+</keycap></keycombo> </shortcut>
+                <guimenu>View</guimenu><guimenuitem>Zoom In</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Increase the zoom factor on the current image.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>-</keycap></keycombo> </shortcut>
+                <guimenu>View</guimenu><guimenuitem>Zoom Out</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Decrease the zoom factor on the current image.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>A</keycap></keycombo> </shortcut>
+                <guimenu>View</guimenu><guimenuitem>Zoom AutoFit</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Toggle between zoom factor autofit to image edit window or 100% zoom window size.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>View</guimenu><guimenuitem>Histogram</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Display superposed histogram on current image (Luminosity, Red, Green, Blue, Alpha).</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>View</guimenu><guimenuitem>Slideshow</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Start a slideshow of the current album.</action></para></listitem>
+        </varlistentry>
+
+    </variablelist>
+    </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+    
+    <sect2 id="filters-menu">    <title>The Filters Menu</title>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Infrared Film</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor filter to simulate infrared film <link linkend="infrared">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Add Film Grain</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor filter for to adding Film Grain <link linkend="filmgrain">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Oil paint</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor filter to simulate Oil Painting <link linkend="oilpaint">(help)</link>.
+                </action></para>
+           </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Charcoal Drawing</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor filter to simulate Charcoal Drawing <link linkend="charcoal">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Emboss</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor Emboss filter <link linkend="emboss">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Distortion Effects</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor filter set with distortion special effects <link linkend="distortionfx">(help)</link>.
+                </action></para>
+            </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Blur Effects</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor filter set with blurring special effects on <link linkend="blurfx">(help)</link>.
+                </action></para>
+             </listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Filters</guimenu><guimenuitem>Raindrops</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Image Editor filter to add Rain Drops <link linkend="raindrops">(help)</link>.
+                </action></para>
+            </listitem>       
+        </varlistentry>
+
+    </variablelist>
+    </para>
+
+    </sect2>
+
+    <!-- *********************************************************************** -->
+
+    <sect2>        <title>The Settings Menu</title>
+
+    <para>
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>F</keycap></keycombo>
+                </shortcut>
+                <guimenu>Settings</guimenu><guimenuitem>Full Screen Mode</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Toggles the graphic interface to full screen mode.</action></para></listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Settings</guimenu><guimenuitem>Configure Shortcuts</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Configure the &digikam; image editor shortcuts.</action></para></listitem>
+        </varlistentry>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Settings</guimenu><guimenuitem>Configure Toolbars</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Configure the &digikam; image editor toolbars.</action></para></listitem>
+        </varlistentry>
+
+    </variablelist>
+    </para>
+
+    </sect2>
+        
+    <!-- *********************************************************************** -->
+            
+    <sect2>        <title>The Help Menu</title>
+    &help.menu.documentation;
+
+    <para>Additionally &digikam; Image Editor offers this item:</para>
+
+    <variablelist>
+
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Help</guimenu><guimenuitem>ImagePlugins' Handbooks</guimenuitem>
+            </menuchoice></term>
+            <listitem><para>Launch the &kde; help interface with the &digikam; Image Editor 
+            plugins handbooks.</para></listitem>
+        </varlistentry>
+    
+    </variablelist>
+
+    </sect2>
+            
+</sect1>
+
+</chapter>

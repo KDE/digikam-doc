@@ -1,0 +1,691 @@
+<sect2>                               <title>Image transformation tools</title>
+  <sect3 id="using-rotatingflippingimage">
+     <title>Rotating or Flipping a Photograph</title>
+  
+        <para>
+         If the photograph shows a wrong orientation you can <guilabel>Flip</guilabel> or <guilabel>Rotate</guilabel> it to the correct orientation you would like by using Transform Flip/Rotate tools available in 
+           <menuchoice><guimenu>Transform</guimenu> <guimenuitem>Rotate</guimenuitem></menuchoice> and  <menuchoice><guimenu>Transform</guimenu> <guimenuitem>Flip</guimenuitem></menuchoice> menus.
+         </para>
+     
+         <para>
+          With flipping options, you can flip or turn over the image horizontally or vertically like a card deck. With the rotating options, you can rotate the image in 90 degrees steps clockwise. It can be used to change the display mode to Portrait or Landscape. Be aware that this rotation is not lossless when using JPEG format. You also can rotate more accurately to a finer degree by using the Free Rotation tool. You can access it by the 
+          <menuchoice><guimenu>Transform</guimenu>
+          <guimenuitem>Free Rotation</guimenuitem></menuchoice> menu entry.
+          See the dedicated <link linkend="using-freerotation">Free Rotation manual</link> for more information.
+         </para>
+
+     </sect3>
+
+<sect3 id="resize">
+<sect3info>
+
+<title>Change the image size</title>
+
+<authorgroup>
+    
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>
+    
+</authorgroup>
+
+<abstract>
+
+<para>
+<ulink url="http://cimg.sourceforge.net"><inlinemediaobject>
+<imageobject><imagedata fileref="cimg-logo.png" format="PNG"/></imageobject>
+<textobject><phrase>cimglogo</phrase></textobject>
+</inlinemediaobject></ulink>
+</para>
+
+<para>
+The &digikam; <emphasis>Blowup Photograph</emphasis> is definitely one of the most advanced tools to increase a photograph's size with minimal loss in image quality.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+<keyword>Cimg</keyword>
+<keyword>Greycstoration</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>Rescaling an image to make it smaller is easy. The big question is: how can you blow up an image and keep the details sharp? How can one zoom in when the resolution boundary has been reached? How can one reinvent or guess the missing information to fill in the necessarily coarse image after upsizing? Well, the CImg algorithm we use here does an excellent job, try it out and see for yourself!
+</para>
+
+  <sect4 id="using-resizingimage">            <title>Resizing a Photograph</title>
+
+    <anchor id="resizetool.anchor"/>
+    <para>
+     If the photograph has the wrong size you can scale it to the size you would like by using Transform Resize tool. Select <menuchoice><guimenu>Transform</guimenu><guimenuitem>Resize</guimenuitem></menuchoice> and adjust the target values. The Resize tool dialog is available below.
+    </para>
+
+    <example>  <title>The Resize Tool Dialog</title>
+        <screenshot><screeninfo>The Resize Tool Dialog</screeninfo><mediaobject><imageobject><imagedata fileref="editorresizetool.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+    </example>
+
+    <para>
+      This image resizing tool uses a standard linear interpolation method to approximate pixels. If you want to up-size a small image with a better quality, try the Blowup tool.
+    </para>
+
+  </sect4>
+
+
+<sect4 id="using-blowup"> <title>Increasing image size (blow-up)</title>
+  <para>
+    Many image editing programs use some kind of interpolation &eg; spline interpolation to scale-up an image. &digikam; uses a more sophisticated approach. The algorithm underlying <emphasis>Blowup Photograph</emphasis> has been developed by the IMAGE team of GREC CNRS lab in Caen/France and is a part of the <ulink url="http://cimg.sourceforge.net">CImg project</ulink>.
+  </para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="blowupdialog.png" format="PNG" /> </imageobject>
+      <textobject><phrase>Blowup Photograph Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>You have to tell the tool about the resizing you want to do. These settings are available in <guilabel>New Size</guilabel> tab and are listed below:
+
+<itemizedlist>
+
+  <listitem><para><guilabel>Maintain Aspect Ratio</guilabel>: if this option is enabled, setting the new image size will preserve the aspect ratio of the original image.</para></listitem>
+  <listitem><para><guilabel>Width</guilabel>: the new image width to use for blowing up.</para></listitem> 
+  <listitem><para><guilabel>Height</guilabel>: the new image height to use for blowing up.</para></listitem>
+ 
+</itemizedlist>
+</para>
+
+<para>If you want to set filter parameters for finer adjustments, use <guilabel>Smoothing Settings</guilabel> and <guilabel>Advanced Settings</guilabel> tabs:</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="blowupsettings1.png" format="PNG" /> </imageobject>
+      <textobject><phrase>Photograp Blowup Smoothing Settings</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+<itemizedlist>
+  
+     <listitem><para><guilabel>Detail Preservation</guilabel> p [0, 100]: this controls the preservation of the curvatures (features). A low value forces an equal smoothing across the image, whereas bigger values preferably smooth the homogeneous regions and leaves the details sharper. A value of 0.9 should well preserve details so that no sharpening is required afterwards. Note that <guilabel>Detail Preservation</guilabel> must be always inferior to <guilabel>Anisotropy</guilabel>.</para></listitem>
+     <listitem><para><guilabel>Anisotropy</guilabel> alpha [0, 100]: a low value smooths equally in all directions, whereas a value close to 1 smooths in one direction only. If you have film grain or CCD kind of noise a high value will result in wave-like pattern, whereas JPEG artifacts are suited for values close to 1. </para></listitem>
+     <listitem><para><guilabel>Smoothing</guilabel> [0, 500]: this sets the maximum overall smoothing factor (when p defines the relative smoothing). Set it according to the noise level.</para></listitem>
+     <listitem><para><guilabel>Regularity</guilabel> [0, 100]: this parameter is concerned with the bigger structures. The bigger this value, the more even the overall smoothing will be. This is necessary when much noise is present since it is then difficult to estimate the geometry. Also if you want to achieve a 'van Gogh' turbulence effect, setting it higher than 3 is recommended.</para></listitem>
+     <listitem><para><guilabel>Filter Iterations</guilabel>: number of times the blurring algorithm is applied. Usually 1 or 2 is sufficient.</para></listitem>
+
+</itemizedlist>
+
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="blowupsettings2.png" format="PNG" /> </imageobject>
+      <textobject><phrase>Photograph Blowup Advanced Settings</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+<itemizedlist>
+
+     <listitem><para><guilabel>Angular Step</guilabel> da [5, 90]: angular integration of the anisotropy alpha. If alpha is chosen small, da should also be chosen small. But beware, small angles result in long runs! Choose it as large as you can accept. </para></listitem>
+     <listitem><para><guilabel>Integral Step</guilabel> [0.1, 10]: spatial integration step width in terms of pixels. Should remain less than 1 (sub-pixel smoothing) and never be higher than 2.</para></listitem>
+<listitem><para><guilabel>Use Linear Interpolation</guilabel>: The gain in quality if you select this option is only marginal and you lose a factor of 2 in speed. Our recommendation is to leave it off.</para></listitem>
+
+</itemizedlist>
+
+</para>
+
+<para>
+<guilabel>Save As</guilabel> and <guilabel>Load</guilabel> buttons are used to do just that. Any Blowup Photograph filter settings that you have set can be saved to the filesystem in a text file and loaded later.
+</para>
+
+<warning><para>
+Blowup Photograph is very fast in what it is doing, but it can take a long time to run and cause high CPU load. You may always abort computation by pressing <guilabel>Cancel</guilabel> button during rendering.
+</para></warning>
+
+</sect4>
+
+<sect4 id="inaction-blowup">
+<title>The blow-up tool in action</title>
+
+<para>
+You can see below an Blowup Photograph example applied to a small color picture area resized to x2. The original is (1), the Blowup result (3). The (2) preview is the result given to standard linear resizing method to compare.
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="blowuppreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>Blowup Photograph Filter Preview</phrase></textobject></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="aspect-ratio-crop">        <title>Cropping a Photograph</title>
+ 
+    <sect4 id="using-manualcrop">            <title>Manual Crop</title>
+
+        <para>
+        Cropping a photograph is not only a common operation, but an often underestimated photographer's tool to compose an image. The Image Editor makes it very easy. To crop a photograph simply drag a rectangle over the image by holding down the &LMB; and moving the mouse. You will see a wire frame rectangle appear as you move the mouse.
+        </para>
+
+        <example>  <title>The Current Image Selection in Image Editor</title>
+          <screenshot><screeninfo>The Current Image Selection in Image Editor</screeninfo>
+          <mediaobject><imageobject> <imagedata fileref="editorimageselection.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+        </example>
+ 
+        <para>
+        When you release the button the area of the photograph that will be removed by a crop operation is greyed out. This allows you to get a good view of how your photograph will look once you have cropped it. You can change the size if the cropped area by dragging the corners of the rectangle, and you can create a new crop area simply by dragging out another rectangle.
+        </para>
+
+        <para>
+        Once you are happy with the crop, click on the 
+        <inlinemediaobject>
+          <imageobject><imagedata fileref="editorcropbutton.png" format="PNG"/></imageobject>
+          <textobject> <phrase>The Image Editor Crop Button</phrase> </textobject>
+        </inlinemediaobject> 
+        button on the toolbar and the photograph will be cropped (&Ctrl;+X). Use the 
+        <menuchoice><guimenu>File</guimenu>
+        <guimenuitem>Save</guimenuitem></menuchoice> or 
+        <menuchoice><guimenu>File</guimenu>
+        <guimenuitem>Save As</guimenuitem></menuchoice> 
+        entries in the File menu to safe the newly cropped photograph.
+        </para>
+
+    </sect4>
+
+    <sect4 id="using-proportionalcrop">      <title>Proportional Crop</title>
+
+        <anchor id="ratiocroptool.anchor"/>        
+        
+        <para>
+        The Aspect Ratio Crop tool goes further. While you are editing digital images, it is often necessary to create a compatible format with, for example, your photo-album or paper formats. If you print an image from your digital camera and then try to put it in your photo album, you may notice that the camera has a different width or height ratio than a normal photographic film format so you need to crop your digital images in a predefined ratio (for example 5:7 or 2:3 which is a standard photo ratio).
+        </para>
+    
+        <example>  <title>The Aspect Ratio Crop Tool Dialog</title>
+          <screenshot><screeninfo>The Aspect Ratio Crop Tool Dialog</screeninfo>
+          <mediaobject><imageobject> <imagedata fileref="editorratiocroptool.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+        </example>
+        
+        <para>
+        In the preview area you can resize the cropping rectangle by moving the corners with the mouse. It will keep the ratio value set in the bottom of dialog.
+        </para>
+        
+        <para>
+        In the Aspect Ratio Crop tool settings, you specify the <guilabel>Orientation</guilabel> as <guilabel>Portrait</guilabel> or <guilabel>Landscape</guilabel>. Portrait will always have the larger size assigned to the <guilabel>Height</guilabel> and Landscape to the <guilabel>Width</guilabel>.
+        </para>
+        
+        <para>
+        Aspect Ratio Crop tool uses a relative ratio. That means it is the same if you use centimeters or inches and it doesn't specify the physical size. For example, you can see below a correspondence list of traditional photographic paper sizes and aspect ratio crop.
+        </para>
+        
+        <informaltable><tgroup cols="2">
+
+        <thead><row>
+            <entry>Standard Photograph Paper Size</entry>
+            <entry>Aspect Ratio Crop</entry>
+          </row></thead>
+
+    <tbody>
+        <row>
+<entry>
+10x15cm&nbsp;20x30cm&nbsp;30x45cm
+3.5x5"&nbsp;4x6"&nbsp;8x12"&nbsp;12x18"&nbsp;16x24"&nbsp;20x30"
+</entry>
+    
+<entry>
+2:3
+</entry>
+        </row>
+
+        <row>
+<entry>
+6x8cm&nbsp;15x20cm&nbsp;18x24cm&nbsp;30x40cm
+3.75x5"&nbsp;4.5x6"&nbsp;6x8"&nbsp;7.5x10"&nbsp;9x12"
+</entry>
+        
+<entry>
+3:4
+</entry>
+        </row>
+        
+        <row>
+<entry>
+20x25cm&nbsp;40x50cm
+8x10"&nbsp;16x20"
+</entry>
+        
+<entry>
+4:5
+</entry>
+        </row>
+
+        <row>
+<entry>
+15x21cm&nbsp;30x42cm
+5x7"
+</entry>
+        
+<entry>
+5:7
+</entry>
+        </row>
+        
+        <row>
+<entry>
+21x30cm&nbsp;42x60cm
+</entry>
+        
+<entry>
+7:10
+</entry>
+        </row>
+
+    </tbody>
+
+        </tgroup></informaltable>
+
+        <para>
+        At the far right of the dialog two buttons are available to move the crop selection automatically to the horizontal or vertical center of the image.
+        </para>
+        
+        <para>
+        At the very bottom line of the dialog, the <guilabel>Max. Ratio</guilabel> button lets you set the crop area size to the maximum size according with the current aspect ratio settings and orientation.
+        </para>
+    
+        <note><para>
+        The Aspect Ratio Crop tool remembers the settings depending on image orientation (horizontal or vertical). When you use the crop tool next time these settings will be used as default values depending on the image orientation. The changed image dimensions are stored into the EXIF tables so that the EXIF data reflects the cropped image and not the original one.
+        </para></note>
+        
+    </sect4>
+
+    <sect4 id="using-compositionguides">     <title>Composition Guide</title>
+
+        <para>
+        When first looking at an image, the eye of the viewer rarely settles at the center of the image, but moves instead from the top left to the right, and then from the lower left to the right again. This pattern is most unconscious but has been well-documented. It is probably associated with the western reading pattern. From the photographer's point of view, the goal then becomes to guide the gaze of the viewer to the subject, being aware of the way many people perceive an image.
+        </para>        
+        
+        <para>
+        The <guilabel>Composition Guide</guilabel> settings provides guiding elements to better compose your images. These guides are:
+
+        <itemizedlist>
+    
+          <listitem>
+            <para>
+            <guilabel>Rule of Thirds</guilabel>: a grid that divides the picture into thirds in every direction (that makes for 9 parts). These proportions are close to the golden rule and are derived from the field of view of the human eye. They are often used with slight variations throughout a large number of commonly used objects. Within that frame there are precise areas where the important parts of the image should be placed. The same principle is used to determine the position of the horizon and the proportion of ground to sky.
+            </para>
+        
+            <para>
+            Many photographers and artists are aware of the Rule of Thirds, where a picture is divided into three sections vertically and horizontally and the points of intersection represent places to position important visual elements. Moving a horizon in a landscape to the position of one third is often more effective than placing it in the middle, but it could also be placed near the bottom one quarter or sixth. There is nothing obligatory about applying the Rule of Thirds. In placing visual elements for effective composition, one must assess many factors including color, dominance, size and balance together with proportion. Often a certain amount of image balance or tension can make a composition more effective.
+            </para>
+    
+            <example>  <title>Image Composition Example Using Rules of Third</title>
+             <screenshot><screeninfo>Image Composition Example Using Rules of Third
+              </screeninfo><mediaobject><imageobject> <imagedata fileref="editorrulethirdlinesexample.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+            </example>
+           </listitem>
+    
+        <listitem>
+
+            <para>
+            <guilabel>Harmonious Triangles</guilabel>: Harmonious divisions rely on the principle of similarity. Like the Rule of Thirds guide, Harmonious Triangles are another division of the image using a rectangle into equiangular harmonious triangles aligned with the diagonal.
+            </para>
+    
+            <example>  <title>Photograph Composition Example Using Harmonious Triangles</title>
+                <screenshot><screeninfo>Photograph Composition Example Using Harmonious Triangles" </screeninfo><mediaobject><imageobject><imagedata fileref="editorharmonioustrianglesexample.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+            </example>
+
+    
+        </listitem>
+    
+        <listitem>
+
+            <para>
+            <guilabel>Golden Mean</guilabel>: The Golden Mean is a ratio underlying numerous growth patterns throughout nature (from the spiral of a Nautilus shell to the petals of a sunflower), it has an uncanny way of showing up in all kinds of things we deem beautiful.
+            </para>
+
+            <para>
+            The Golden Ratio is the irrational number 1.618033988..., and it is usage dates back to the ancient Egyptians and Greeks who used it in the construction of their temples and pyramids. Artists and architects throughout time have used the Golden Ratio when composing their paintings, buildings, and even photographs, in order to give their creations a sense of natural order and beauty.
+            </para>
+    
+            <para>
+            The ratio is inherent in the Fibonacci series: 1, 1, 2, 3, 5, 8, 13, 21, 34 &etc;., where each succeeding number after 1 is equal to the sum of the two preceding numbers. The ratio formed 1:1.618 is the Golden Mean. A composition following this rule is considered visually harmonious.
+            </para>
+    
+            <para>
+            The Golden Mean provides more fluid guidelines when used to compose an image. These guides are listed below:
+    
+            <itemizedlist>    
+
+        <listitem>        
+    
+        <para>
+        The <guilabel>Golden Spiral</guilabel> guide will increase your odds of getting captivating results in your photographs. As opposed to Rule of Thirds, the Golden Spiral forms a fluid line for the eye to trace through the picture. This style of composition will invite the viewer's gaze into the picture along the line of the spiral, creating a more symmetrical visual flow, and an overall compelling viewing experience.
+        </para>
+        
+        <example>  <title>Image Composition example using Golden Spiral</title>
+            <screenshot><screeninfo>Image Composition Example Using Golden Spiral </screeninfo><mediaobject><imageobject> <imagedata fileref="editorgoldenspiralexample.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+        </example>
+
+        </listitem>
+
+        <listitem>
+    
+        <para>        
+          One more rule is a <guilabel>Golden Spiral Sections</guilabel> (or Golden Rectangles). These rectangles are used to build the Golden Spiral. There should be something leading the eye to the center of the composition. It could be a line or several subjects. This "something" could just be there without leading the eyes, but it would make its job.
+        </para>
+    
+        <example>  <title>Image Composition example using Golden Spiral Sections</title>
+            <screenshot><screeninfo>Image Composition Example Using Golden Spiral Sections </screeninfo><mediaobject><imageobject><imagedata fileref="editorgoldenspiralsectionsexample.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+        </example>
+        
+        </listitem>
+        
+        <listitem>
+
+        <para>
+          The <guilabel>Golden Triangles</guilabel> is a derivative of the Golden Spiral discussed above. Its vertices are the midpoints of the sides of the Golden Rectangle. Note that unlike Harmonious Triangles, Golden Triangles aren't equiangular triangle. Placing diagonals along these lines can make an otherwise static subject appear more dynamic.
+        </para>
+
+        <para>
+        When you use Golden Triangles to break up your frame, you're creating an effect dubbed by professional photographic experts named Dynamic Symmetry. Try to keep your focal subject on one of the intersecting points, and place other visual information into the triangles you've already divided out. The result will be a very attractive composition you may not have otherwise attained.
+        </para>
+
+        <example>  <title>Photograph Composition Example Using Golden Triangle</title>
+            <screenshot><screeninfo>Photograph Composition Example Using Golden Triangles </screeninfo><mediaobject><imageobject><imagedata fileref="editorgoldentrianglesexample.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+        </example>
+        
+        </listitem>
+        
+        <listitem>
+
+        <para>     
+          Like the Rule of Thirds the <guilabel>Golden Sections</guilabel> affects the ratio of a picture size as well as the placement of the main subjects on the photo. This ratio is close to the 35mm ratio, so you don't need to change the size of the photo in most cases. But you need to consider the composition: the main subject should lie on one of the four lines or four intersections (subject's eye for example). Truthfully speaking, these rules are not the same. Rule of Thirds is a simplified version of the Golden Mean.
+        </para>
+        
+        <example>  <title>Image Composition example using Golden Sections</title>
+            <screenshot><screeninfo>Photograph Composition Example Using Golden Sections </screeninfo><mediaobject><imageobject><imagedata fileref="editorgoldensectionsexample.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+        </example>
+
+        </listitem>
+    
+            </itemizedlist>
+            </para>
+    
+           </listitem>
+     
+        </itemizedlist>
+        
+        </para>
+        
+        <para>
+        The <guilabel>Flip Horizontal</guilabel> and <guilabel>Flip Vertical</guilabel> options can be used to apply flip transformation to the harmonious divisions.
+        </para>
+        
+        <para>
+        The <guilabel>Color</guilabel> button lets you set the guidelines color. If you have an high color contrast image, the guidelines may become invisible. By this way, you can adapt the color guide to the current image.
+        </para>
+    
+    </sect4>
+
+</sect3>
+
+<sect3 id="freerotation">
+<sect3info>
+
+<title>Free Rotation</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>        
+</authorgroup>
+
+<abstract>
+<para>
+The &digikam; <emphasis>Free Rotation</emphasis> is a tool for image rotation by any arbitrary angle.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>
+When taking a picture it is all too easy to hold the camera not quite perfectly vertical or horizontal, resulting in a picture where things are tilted at an angle. The way to fix this with the &digikam; Image Editor is to use the Free Rotation tool. Select
+<menuchoice><guimenu>Transform</guimenu>
+<guimenuitem>Free Rotation</guimenuitem></menuchoice> and adjust to the target angle. 
+</para>
+
+<sect4 id="using-freerotation">    <title>Free Rotation Tool</title>
+
+<para>
+Rotate your image by using the <guilabel>Angle</guilabel> slider (value in degrees). Press to <guilabel>Reset Values</guilabel> for reset the slider to zero. A rotating effect preview is available on the right side of the dialog. The new target image dimensions in pixels are shown.
+</para>
+
+<para>
+For better orientation, the Free Rotation tool provides a vertical and horizontal guide. Move the mouse cursor under image preview to display the dashed line guide. Move the cursor to an supposedly vertical or horizontal feature in the image like the sea or a building border
+and press the left mouse button for freeze the dashed lines position. Now, adjust the angle accordinly with the guide.
+</para>
+
+<warning><para>
+After rorating the image, you often find that things are better but not quite perfect. One solution is to rotate a bit more, but there is a disadvantage to that approach. Each time you rotate an image, because the rotated pixels don't line up precisely with the original pixels, the image inevitably gets blurred a little bit. For a single rotation, the amount of blurring is quite small, but two rotations cause twice as much blurring as one, and there is no reason to blur things more than you have to. Sure, the guide tool available in the Free Rotation preview can help you to apply correctly at the first time an angle adjustment to an image.
+</para></warning>
+
+</sect4>
+
+<sect4 id="inaction-freerotation">
+<title>Free Rotation action</title>
+
+<para>
+The Free Rotation dialog tool in action is available below.
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="freerotationpreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Free Rotation Tool Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+After you have rotated an image, there will be unpleasant triangular "holes" at the corners. 
+One way to fix them is to crop the image with <menuchoice><guimenu>Transform</guimenu>
+<guimenuitem>Crop</guimenuitem></menuchoice> Image Editor menu. 
+</para>
+
+<para>A more elegant way to crop the rotated image is to use the <guilabel>Auto-crop</guilabel> function. Choose anyone of the following options from the combo-box to your preference:</para>
+
+<itemizedlist>
+
+  <listitem><para><guilabel>Widest area</guilabel> This option crops the rotated image to the widest possible (width) rectangular section.</para></listitem>
+  
+  <listitem><para><guilabel>Largest area</guilabel> This options crops the rotated image to the biggest surface.</para></listitem>
+
+</itemizedlist>
+
+<para>Hold the mouse over the combo-box and scroll with the wheel between the two possibilities.</para>
+
+<para>The <guilabel>Anti-aliasing</guilabel> checkbox will smooth the image a bit after rotation. Please read the warning above.
+</para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="perspective">
+<sect3info>
+
+<title>Perspective Adjustment</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>    
+</authorgroup>
+
+<abstract>
+<para>
+The &digikam; <emphasis>Perspective Adjustment</emphasis> is a tool for adjusting the image's perspective.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>
+With this tool you can work on the the perspective in a photograph. This is very useful when working with photographs that contain keystone distortion. Keystone distortion occurs when an object is photographed from an angle rather than from a straight-on view. For example, if you take a picture of a a tall building from ground level, the edges of the building appear to meet each other at the far end.
+On the other hand you can use this tool to introduce a new perspective that is not a face-on view but to give the picture a creative spin.
+</para>
+
+<sect4 id="using-perspective">
+<title>Using the Perspective Adjustment</title>
+
+<para>
+All perspective transformations are performed around a fixed point called the reference point. This point is at the center of the item you are transforming and is displayed by a red circle.
+</para>
+
+<para>
+To change the perspective, use the square areas at the image corners for dragging. The perspective preview is rendered automatically. On the right of the dialog you'll find a set of informations witch help you to control the perspective change:
+
+<itemizedlist>
+    <listitem><para><guilabel>New Width</guilabel>: show the new image width in pixels including the empty area around the image resulting from the  geometrical transformation.</para></listitem>
+    <listitem><para><guilabel>New Height</guilabel>: show the new image height in pixels including the empty area around the image resulting from the geometrical transformation.</para></listitem>
+    <listitem><para><guilabel>Top Left Angle</guilabel>: show the current angle in degrees at the top left corner of the perspective area.</para></listitem>
+    <listitem><para><guilabel>Top Right Angle</guilabel>: show the current angle in degrees at the top right corner of the perspective area.</para></listitem>
+    <listitem><para><guilabel>Bottom Left Angle</guilabel>: show the current angle in degrees at the bottom left corner of the perspective area.</para></listitem>
+    <listitem><para><guilabel>Bottom Right Angle</guilabel>: show the current angle in degrees at the bottom right corner of the perspective area.</para></listitem>
+</itemizedlist>
+</para>
+            
+<warning><para>
+After applying the perspective adjustment, the image inevitably gets blurred a little bit. For a single adjustment, the amount of blurring is quite small, but two adjustments cause twice as much blurring as one, and there is no reason to blur things more than you have to.
+</para></warning>
+                        
+<para>
+After you have adjusted the perspective of an image there will be unpleasant triangular "holes" at the corners. 
+One way to fix them is to crop the image with <menuchoice><guimenu>Transform</guimenu>
+<guimenuitem>Crop</guimenuitem></menuchoice> Image Editor menu. 
+</para>
+
+</sect4>
+
+<sect4 id="inaction-perspective">
+<title>The Perspective Adjustment in action</title>
+
+<para>
+The Perspective Adjustment dialog in action is shown below.
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="perspectivepreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Perspective Adjustment Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="sheartool">
+<sect3info>
+
+<title>Shearing Image</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para>
+The &digikam; <emphasis>Shearing Image</emphasis> is a tool for shearing an image horizontally 
+or vertically.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>
+The Shear tool is used to shift one  part of an image to one direction and the other part to the opposite direction. For instance, a horizontal shearing will shift the upper part to the right and the lower part to the left. This is not a rotation: the image is distorted. In other words, it will turn a rectangle into a parallelogram. This tool is available from <menuchoice><guimenu>Transform</guimenu><guimenuitem>Shear</guimenuitem></menuchoice> menu.
+</para>
+
+<sect4 id="using-sheartool">
+<title>Using the Sheartool</title>
+
+<para>
+Shear your image by using the <guilabel>Horizontal Angle</guilabel> and <guilabel>Vertical Angle</guilabel> sliders (values in degrees). You can shear along either Horizontally and vertically at the same time. Click on the <guilabel>Reset Values</guilabel> reset. A shearing effect preview is shown on the center of dialog window. The new target image dimensions in pixels are displayed at the right side of dialog.
+</para>
+
+<para>
+To assist you in aligning, the tool provides a vertical and horizontal guide. Move the mouse cursor under image preview for display the dashed lines guide. Move the cursor to an important place in the image like the sea or a building border and press the left mouse button for freeze the dashed lines position. Now, adjust the shear correction according with the guide.
+</para>
+            
+<warning><para>
+After applying a shearing adjustment, the image inevitably gets blurred a little bit. For a single shearing, the amount of blurring is quite small, but two shears cause twice as much blurring as one, and there is no reason to blur things more than you have to.
+</para></warning>
+                        
+<para>
+After you have sheared an image, there will be unpleasant triangular "holes" at the corners. 
+One way to fix them is to crop the image with <menuchoice><guimenu>Transform</guimenu>
+<guimenuitem>Crop</guimenuitem></menuchoice> Image Editor menu. 
+</para>
+
+</sect4>
+
+<sect4 id="inaction-sheartool">
+<title>The Sheartool in action</title>
+
+<para>
+The Shear Tool dialog in action is available below.
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="sheartoolpreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Shear Tool Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
