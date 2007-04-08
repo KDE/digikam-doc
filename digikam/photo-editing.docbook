@@ -1,0 +1,225 @@
+ <sect1 id="photographic-editing">          <title>Photographic Editing</title>
+
+   <sect2 id="image-editing-tools">             <title>Image Editing/Workflow Tools</title>
+
+    <sect3>      <title>Introduction to Common Tool Dialogs</title>
+      <para>
+         All Image Editor tools like Sharpen, Blur, Noise Reduction, Refocus, Unsharpen Mask, &etc;. use a common dialog style that previews the effect before applying the filter to the current image. Below you see the &quot;Apply Texture&quot; tool in action using this common dialog layout:
+      </para>
+
+      <example>
+        <title>The Apply Texture Tool in Action</title>
+        <screenshot>
+          <screeninfo>The Apply Texture Tool in Action</screeninfo>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="editorcommondialogtools.png" format="PNG" />
+            </imageobject>
+          </mediaobject>
+        </screenshot>
+      </example>
+
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para>
+              <emphasis>(1)</emphasis>: This progress bar indicates the status of filter application on the current image. To the left of it, five buttons allow to select the comparative mode style of the preview area. The modes are:
+              <itemizedlist>
+                <listitem>
+                  <para>Separate horizontally with duplication. The top area shows the original and the lower one the filter effect for comparison.</para>
+                </listitem>
+                <listitem>
+                  <para>Separate vertically with duplication. The left area shows the original and the right one the filter effect for comparison.</para>
+                </listitem>
+                <listitem>
+                  <para>Separate horizontally without duplication. The top area shows the original whereas the lower area shows the filter applied to the continuation of the selected zoom.</para>
+                </listitem>
+                <listitem>
+                  <para>Separate vertically without duplication. The left area shows the original whereas the right side shows the filter applied to the continuation of the selected zoom.</para>
+                </listitem>
+                <listitem>
+                  <para>Direct effect preview. The effect preview is applied to all of the selected zoom area.</para>
+                </listitem>
+              </itemizedlist>
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <emphasis>(2)</emphasis>: The preview selector frame. Click and drag with the mouse on the floating frame to move it on the image. The preview area on the left of dialog is updated accordingly.</para>
+          </listitem>
+          <listitem>
+            <para>
+              <emphasis>(3)</emphasis>: The filter settings area.</para>
+          </listitem>
+          <listitem>
+            <para>
+              <emphasis>(4)</emphasis>: The original area for the zoomed image region. This area is unchanged by the filter. Click and drag with the mouse in this area to move it on the image.</para>
+          </listitem>
+          <listitem>
+            <para>
+              <emphasis>(5)</emphasis>: The target area for the zoomed image region. This area is changed by the filter and presents the actual preview. Click and drag with the mouse in this area to move it on the image.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+    </sect3>
+
+    <sect3>      <title>The &digikam; tool set</title>
+     <itemizedlist>
+
+   <listitem><para>Image Color
+      <itemizedlist>
+      <listitem><para><link linkend="auto-correction">Auto Correction</link></para></listitem>
+      <listitem><para><link linkend="whitebalance">White Balance/Exposure/Saturation</link></para></listitem>
+      <listitem><para><link linkend="coloreffects">Color Effects (Solarize, Vivid, Neon, Edge)</link></para></listitem>
+      <listitem><para><link linkend="exposure-correct">Brightness/Contrast/Gamma</link></para></listitem>
+      <listitem><para><link linkend="adjustcurves">Adjust Curves</link></para></listitem>
+      <listitem><para><link linkend="adjustlevels">Adjust Levels</link></para></listitem>
+      <listitem><para><link linkend="blackandwhite-conversion">Black and White</link></para></listitem>
+      <listitem><para><link linkend="channelmixer">Channel Mixer</link></para></listitem>
+      </itemizedlist>
+   </para></listitem>
+
+   <listitem><para>Image Correction
+      <itemizedlist>
+      <listitem><para><link linkend="sharpening">Sharpening (sharpen, unsharp mask, refocus)</link></para></listitem>
+      <listitem><para><link linkend="using-redeyecorrection">Red Eye Removal</link></para></listitem>
+      <listitem><para><link linkend="inpainting">Photograph Inpainting</link></para></listitem>
+      <listitem><para><link linkend="noisereduction">Noise Reduction &amp; blurring</link></para></listitem>
+      <listitem><para><link linkend="restoration">Photograph Restoration</link></para></listitem>
+      <listitem><para><link linkend="hotpixels">Hot Pixel Correction</link></para></listitem>
+      <listitem><para><link linkend="lensdistortion">Lens Distortion Correction</link></para></listitem>
+      <listitem><para><link linkend="antivignetting">Anti-Vignetting Correction</link></para></listitem>
+      </itemizedlist>
+   </para></listitem>
+
+   <listitem><para>Image Transformation Tools
+      <itemizedlist>
+      <listitem><para><link linkend="resize">Change Size (reduce and blow-up)</link></para></listitem>
+      <listitem><para><link linkend="freerotation">Free Rotation</link></para></listitem>
+      <listitem><para><link linkend="perspective">Perspective Adjustment</link></para></listitem>
+      <listitem><para><link linkend="sheartool">Shearing Tool</link></para></listitem>
+      </itemizedlist>
+   </para></listitem>
+
+   <listitem><para>Image Decoration
+      <itemizedlist>
+      <listitem><para><link linkend="border">Add Border</link></para></listitem>
+      <listitem><para><link linkend="inserttext">Insert Text</link></para></listitem>
+      <listitem><para><link linkend="superimpose">Template Superimpose</link></para></listitem>
+      <listitem><para><link linkend="texture">Apply Texture</link></para></listitem>
+      </itemizedlist>
+   </para></listitem>
+
+   <listitem><para>Special Effect Filters
+      <itemizedlist>
+      <listitem><para><link linkend="infrared">Simulate Infrared Film.</link></para></listitem>
+      <listitem><para><link linkend="filmgrain">Add Film Grain.</link></para></listitem>
+      <listitem><para><link linkend="oilpaint">Simulate Oil Painting</link></para></listitem>
+      <listitem><para><link linkend="charcoal">Simulate Charcoal Drawing.</link></para></listitem>
+      <listitem><para><link linkend="emboss">Emboss Photograph.</link></para></listitem>
+      <listitem><para><link linkend="distortionfx">Distortion FX.</link></para></listitem>
+      <listitem><para><link linkend="blurfx">Blur FX.</link></para></listitem>
+      <listitem><para><link linkend="raindrops">Add Rain Drops</link></para></listitem>
+      </itemizedlist>
+   </para></listitem>
+
+   </itemizedlist>
+     </sect3>
+   </sect2>
+
+      &doc-editor-color;
+
+      &doc-editor-enhance;
+
+      &doc-editor-transform;
+
+      &doc-editor-decorate;
+
+      &doc-editor-filters;
+
+  </sect1>
+
+  <sect1 id="using-iccprofile">     <title>ICC color profile management</title>
+            
+            <para>
+                What is the importance of ICC color profile management anyway? In simple terms it is alike hi-fi stereo, where high fidelity is seeked from source to speakers, passing through microphone, recoding media, player and amplifier. Much the same, ICC color profile management tries to maintain color fidelity from photographic subject through the camera to the output media screen, print, paper and beamer. Luckily digital photography has taken out one source of distortion, the storage media (as the &CD-ROM; did in the audio field).
+            </para>
+
+            <para>The figure below pictures the problem: Every time there is a transfer from one device to another, an ICC profile is used to correct for the inaccuracies or limitations of the device. The central work space (which is called Profile Connection Space, PCS) provides a common platform to translate the device color spaces into each other.
+            </para>
+
+            <para>The inter-connection between devices and their color spaces</para>
+            <para>
+                <inlinemediaobject><imageobject><imagedata
+                fileref="colormanagement.png" format="PNG" /> </imageobject></inlinemediaobject>
+            </para>
+            
+
+            <tip>
+                <para><emphasis>CM Pros.</emphasis> CM is really important whenever you need identical results between shooting sessions, accurate source reproduction, close rendering results between various display media (this would rather point CM to professionals).</para>
+                <para>As a passionate amateur you can also profit from CM, since it is mostly associated with 16 bit color depth. RAW mode shooting is much more forgiving in terms of exposure than processed shooting (JPEG), so you can generally underexpose and recover the highlights. And, the human eye is much more sensitive to luminosity variations in the dark scales than a digital camera is. Careful tonal adjustment there close to the blacks will produce a better dynamic of the picture. That is why RAW mode pictures often have an appearance of more depth to them.</para>
+
+                <para><emphasis>CM Cons.</emphasis> If you do not use color management you still can realize fantastic pictures. In journalism or emotional contexts, for holiday photos you do not need any color management.</para>
+            </tip>
+
+            <para>To configure &digikam; for ICC color management, please refer to the <ulink url="help:/digikam/using-setup.html#setup-iccprofiles">setup section.</ulink>
+            </para>
+
+            <para>
+                The ICC standard covers a data format to exchange color information of devices. ISO 22028-1 specifies unambiguous exchange of color image data of color space encoding, viewing conditions, image state and reference medium. Here follows an example of the differences in color language: one kind of green defined (by the same numbers) in one color space looks different in another color space. This is what happens when no color management is applied.
+            </para>
+            <para>
+              (88, 249, 16) in Adobe RGB <inlinemediaobject><imageobject><imagedata fileref="2Greens.png" format="PNG"/></imageobject></inlinemediaobject> The same RGB value in sRGB.
+            </para>
+
+            <para>
+                Photographers want to use the full gamut of their camera and their ink jet printers. Editing of pictures should be done in a work space, where equal RGB-numbers result into gray.
+            </para>
+
+            <para>
+                    The following diagram tries to outline the logic &digikam; will follow in its CM work flow, depending on the settings made in <emphasis>IO Files</emphasis> and <emphasis>ICC profiles</emphasis> of the configuration page.
+            </para>
+
+           <para> 
+              <inlinemediaobject><imageobject>
+                <imagedata fileref="ICCworkflowlogic.png" format="PNG" /> 
+              </imageobject></inlinemediaobject> 
+           </para>
+            
+
+            <sect2 id="softproofing">
+            <title>Soft Proofing</title>
+                <para> Soft Proofing is a way of previewing on the screen (monitor) the result to be expected from an output on another device, typically a printer. Soft proofing will show you the difference to be expected before you actually do it (and waste your costly ink). So you can improve your settings without wasting time and money.
+                </para>
+
+            </sect2>
+
+            <sect2 id="rendering-intention">
+            <title>Rendering intention</title>
+
+                <para>Rendering intent refers to the way gamuts are handled when the intended target color space cannot handle the full gamut.</para>
+                <itemizedlist>
+            
+                    <listitem><para><emphasis>Perceptual</emphasis>, also called Picture or Maintain Full Gamut.  This is generally recommended for photographic images. The color gamut is expanded or compressed when moving between color spaces to maintain consistent overall appearance. Low saturation colors are changed very little. More saturated colors within the gamuts of both spaces may be altered to differentiate them from saturated colors outside the smaller gamut space. Perceptual rendering applies the same gamut compression to all images, even when the image contains no significant out-of-gamut colors.</para>
+                    </listitem>
+
+                    <listitem><para><emphasis>Relative Colorimetric</emphasis>, also called Proof or Preserve Identical Color and White Point.  Reproduces in-gamut colors exactly and clips out-of-gamut colors to the nearest reproducible hue.</para>
+                    </listitem>
+
+                    <listitem><para><emphasis>Absolute Colorimetric</emphasis>, also called Match or Preserve Identical Colors.  Reproduces in-gamut colors exactly and clips out-of-gamut colors to the nearest reproducible hue, sacrificing saturation and possibly lightness. On tinted papers, whites may be darkened to keep the hue identical to the original. For example, cyan may be added to the white of a cream-colored paper, effectively darkening the image. Rarely of interest to photographers.</para>
+                    </listitem>
+
+                    <listitem><para><emphasis>Saturation</emphasis>, also called Graphic or Preserve Saturation.  Maps the saturated primary colors in the source to saturated primary colors in the destination, neglecting differences in hue, saturation, or lightness. For block graphics; rarely of interest to photographers.</para>
+                    </listitem>
+
+                </itemizedlist>
+
+           </sect2>
+
+           <sect2 id="iccprofile-links">
+            <title>Links</title>
+               <para><ulink url="http://www.oyranos.org/wiki/index.php?title=Main_Pag">Color wiki</ulink> <ulink url="http://en.wikipedia.org/wiki/CIELAB">CIELAB</ulink> <ulink url="http://en.wikipedia.org/wiki/Gamut">Gamut explained</ulink></para>
+           </sect2>
+
+        </sect1>
+
