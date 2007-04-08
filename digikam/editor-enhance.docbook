@@ -1,0 +1,1190 @@
+<sect2 id="editor-correct-tools">                                      <title>Image correction tools</title>
+
+<sect3 id="sharpening">
+<sect3info>    <title>Image Sharpening</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+      <para>&digikam; provides three different tools for sharpening, with each having <link linkend="comparison-refocus">merits</link> in a different area.
+       <itemizedlist>
+         <listitem><para>
+           <link linkend="using-adjustsharpness">Sharpen</link> is a traditional sharpening tool, which is very fast and easy, but may quickly produce grainy images, in particular in dark areas.
+         </para></listitem>
+
+         <listitem><para>
+           <link linkend="using-unsharp">Unsharp Mask</link> works on the edge contrast to make an image appear sharper, but it actually does not sharpen at all, it works rather psychovisually. It can be used to remove atmospheric haze, and here it does a real good job. The algorithm was taken from the Gimp, and it is copyrighted by Winston Chang.
+         </para></listitem>
+
+         <listitem><para>
+           <link linkend="refocus">Refocus</link> is probably the best of the three because it actually improves sharpness. It is a bit more involved in its application as is has several parameters to play with.
+         </para></listitem>
+       </itemizedlist>
+    </para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+<keyword>Refocus</keyword>
+<keyword>Unsharp mask</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+ <para>
+    Out-of-focus photographs, as well as most digitized images, need correction of sharpness. This is due to the digitizing process that must chop up a color continuum in points with slightly different colors: elements thinner than sampling frequency will be averaged into an uniform color. Thus, sharp borders are rendered a little blurred. The same phenomenon appears when printing color dots on paper. SLR cameras need even more sharpening on a regular basis than consumer cameras.
+ </para>
+ <para>
+    Whereas JPEG images have some camera-internal sharpening applied, RAW format pictures always need sharpening in their workflow.
+ </para>
+ <para>
+    Some scanners apply a sharpen filter while scanning. It's worth to disable it so that you keep control over your image.
+ </para>
+
+<sect4 id="using-adjustsharpness">    <title>Adjusting Sharpness</title>
+    <anchor id="sharpentool.anchor" />
+
+    <sect5>    <title>Unblurring a Photograph</title>
+      <para>
+        If the camera focus is not set perfectly or if the camera is moving when the picture is taken the result is a blurred photograph. If there is a lot of blurring, you probably will not be able to do much about it with any technique. If there is only a moderate amount, you should be able to improve the picture. Many good SLR cameras apply less image processing to the pictures than simpler cameras (which tend to artificially increase the contrast to make the pictures look crisp). This kind of slight blur can be easily improved with &digikam; tools.
+      </para>
+      <para>
+           In some situations, you may be able to get useful results by sharpening an photograph using the Sharpen tool by the <menuchoice>  <guimenu>Correct</guimenu>   <guimenuitem>Sharpen</guimenuitem> </menuchoice> menu entry.
+       </para>
+
+      <example>
+        <title>The Sharpen Tool in Action</title>
+        <screenshot>
+          <screeninfo>The Sharpen Tool in Action</screeninfo>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="editorsharpenplugin.png" format="PNG" />
+            </imageobject>
+          </mediaobject>
+        </screenshot>
+      </example>
+      <para>
+         You should be careful with this though, or the results will not look very natural: sharpening increases the apparent sharpness of edges in the photograph, but also amplifies noise. The generally most useful technique for sharpening a fuzzy photograph is the Refocus tool. You can access it with the
+           <menuchoice>  <guimenu>Correct</guimenu>
+           <guimenuitem>Refocus</guimenuitem>
+           </menuchoice> menu entry.
+         Look at <link linkend="refocus">Refocus</link> for more information and a comparison of all the sharpening techniques.
+      </para>
+
+    </sect5>
+
+    <sect5>    <title>Reducing Graininess In a Photograph</title>
+      <para>
+          When you take a photograph in low-light conditions or with a very fast exposure time, the camera does not get enough data to make good estimates of the true color at each pixel, and consequently the resulting photograph looks grainy. You can &quot;smooth out&quot; the graininess by blurring the image, but then you will also lose sharpness. Probably the best approach - if the graininess is not too bad - is to use the filter <link linkend="noisereduction" >Noise Reduction</link> tool, and you can access it by the
+                <menuchoice>     <guimenu>Correct</guimenu>
+                <guimenuitem>Noise Reduction</guimenuitem>
+                </menuchoice> menu entry.
+      </para>
+    </sect5>
+
+    <sect5>    <title>Softening a Photograph</title>
+      <para>
+          Sometimes you have the opposite problem: an image is too crisp. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the <link linkend="using-blurfilter">Blur Tool</link> with the <menuchoice>
+          <guimenu>Correct</guimenu>
+          <guimenuitem>Blur</guimenuitem>
+        </menuchoice> menu entry and experiment with the level. The preview window on the right of the dialog shows the effect of the operation on your photograph.
+      </para>
+   </sect5>
+</sect4>
+
+<sect4 id="using-unsharp">      <title>The Unsharp Masking Filter</title>
+
+    <note><para>
+        The Unsharp Mask filter is an excellent tool to remove haze from your photographs, see <ulink url="http://www.gimpguru.org/Tutorials/RemovingHaze" >this url</ulink> for a demonstration.
+    </para></note>
+
+    <para>
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="unsharpdialog.png" format="PNG" />
+        </imageobject>
+        <textobject>
+          <phrase>Unsharp Mask Dialog</phrase>
+        </textobject>
+      </inlinemediaobject>
+    </para>
+    <para>
+   The image panel and the original preview help you to pan within the image. The preview window shows the filter output using the current settings.
+   </para>
+    <para>
+   There are two important parameters, <guilabel>Radius</guilabel> and <guilabel>Amount</guilabel>. The default values often work pretty well, so you should try them first. Increasing either the <guilabel>Radius</guilabel> or the <guilabel>Amount</guilabel> increases the strength of the effect. Don't get carried away, though: if you make the unsharp mask too strong, it will amplify noise in the image and create the impressions of ridges next to sharp edges.
+   </para>
+    <para>
+   The <guilabel>Radius</guilabel> allows you to set how many pixels on either side of an edge that will be affected by sharpening. High resolution images allow higher radius. You'd better always sharpen an image at its final resolution.
+   </para>
+    <para>
+   The <guilabel>Amount</guilabel> control is the percentage of the difference between the original and the blur image that is added back into the original. It allows you to set strength of sharpening.
+   </para>
+    <para>
+   The <guilabel>Threshold</guilabel> control is a fraction of the maximum RGB value, needed to apply the difference amount. It allows you to set the minimum difference in pixel values that indicates an edge where sharpening should be applied. That way, you can protect areas of smooth tonal transition from sharpening, and avoid creation of blemishes in face, sky or water surface.
+   </para>
+
+    <sect5 id="inaction-unsharp">      <title>The Unsharp Mask in action</title>
+      <para>
+   This is an example of how the Unsharp Mask can change your life. The original image is (1) and the corrected image is (2). The unsharp mask was applied with <guilabel>Radius</guilabel> = 6.0, <guilabel>Amount</guilabel> = 0.5, 
+   <guilabel>Threshold</guilabel> = 0.0. 
+   </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="unsharppreview.png" format="PNG" />
+          </imageobject>
+          <textobject>
+            <phrase>Unsharp Mask Tool in Actio</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect5>
+</sect4>
+
+
+<sect4 id="refocus">    <title>Refocus a Photograph</title>
+    <para>
+      The &digikam; <emphasis>Refocus</emphasis> is a tool to refocus an image by enhancing the sharpness. It uses the <emphasis>Deconvolution Filter</emphasis> algorithm copyrighted by Ernst Lippe.
+    </para>
+
+    <para>
+      This tool attempts to &quot;refocus&quot; an image by undoing the defocussing. This is better than just trying to sharpen a photograph. It is employing a technique called <emphasis>FIR Wiener Filtering</emphasis>. The traditional technique for sharpening images is to use unsharp masking. Refocus generally produces better results than Unsharp masking. Start it from the <menuchoice>
+        <guimenu>Color</guimenu>
+        <guimenuitem>Refocus</guimenuitem>
+      </menuchoice> Image Editor menu.
+    </para>
+    <para>
+      The Refocus technique works differently from <link linkend="using-unsharp">Unsharp Mask</link> and is also unlike the <link linkend="using-adjustsharpness" >Sharpen Filter</link>  which both increase the contrast of the edges of an image. Refocus rather reverses the process by which the image got blurred by the circular aperture of the camera. This method gives you as much of the original &quot;in focus&quot; image as possible. Refocus uses a very powerful deconvolution algorithm that will reclaim the data that has been mixed up. In mathmatical terms, blurring is usually the result of a convolution, a deconvolution will reverse the process, this is exactly what Refocus is doing. Furthermore, the FIR filter technique allows to remove much of the noise and granularity that often gets accentuated in the sharpening process of all sharpening filters.
+    </para>
+
+    <sect5 id="using-refocus">      <title>Using the Refocus Tool</title>
+
+     <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="refocusdialog.png" format="PNG" />
+          </imageobject>
+          <textobject>
+            <phrase>Refocus Dialog</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+     <para>
+       The image panel and the original preview help you to pan within the image. The preview window shows the filter output using the current settings. 
+     </para>
+     <para>
+       In most cases (blurring by camera) a circular convolution caused the image degradation, but there are two convolutions available:
+
+        <itemizedlist>
+          <listitem>
+            <para>The circular convolution: this one spreads each source point uniformly across a small disk with a fixed radius. Technically this describes the effects of using a (ideal) lens that is not correctly focused.</para>
+          </listitem>
+          <listitem>
+            <para>The Gaussian convolution: this one is mathematically similar to the normal distribution, with its bell-shaped curve. Originates rather from unnatural blurring (software blurring). From a theoretical point of view the mathematical justification for using the Gaussian convolution is that when you a apply a large number of independent random convolutions the results will always approach a Gaussian convolution.</para>
+          </listitem>
+        </itemizedlist>
+
+         The refocus tool supports both the Circular and the Gaussian convolution plus mixtures of both.
+      </para>
+      <para>
+        In practice, in most cases the Circular convolution works much better than the Gaussian convolution. The Gaussian convolution has a very long tail, so mathematically the result of the convolution also depends on source pixels at a large distance from the original source pixel. The FIR Wiener inverse of a Gaussian convolution in most cases is heavily influenced by source pixels at a large distances, and in most cases this produces undesirable results.
+      </para>
+      <para>To set correctly the deconvolution filter, the plug-in has the following parameters:
+
+        <itemizedlist>
+          <listitem>
+            <para>
+              <guilabel>Circular Sharpness</guilabel>: This is the radius of the Circular convolution filter. It is the most important parameter for using the plug-in. With most images the default value of 1 should give good results. Select a higher value when your image is very blurred, but beware of producing halos.</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Correlation</guilabel>: Increasing the <guilabel>Correlation</guilabel> may help reducing artifacts. The correlation can range from 0-1. Useful values are 0.5 and values close to 1, e.g. 0.95 and 0.99. Using a high value for the correlation will reduce the sharpening effect of the plug-in.</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Noise filter</guilabel>: Increasing the <guilabel>Noise filter</guilabel> parameter helps reducing artifacts. The Noise can range from 0-1 but values higher than 0.1 are rarely helpful. When the Noise value is too low, e.g. 0 the image quality will be horrible. A useful value is 0.03. Using a high value for the Noise will even blur the image further.</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Gaussian Sharpness</guilabel>: This is the radius for the Gaussian convolution filter. Use this parameter when your blurring is Gaussian (mostly due to previous blur filtering). In most cases you should leave this parameter to 0, because it causes nasty artifacts. When you use non-zero values you will probably have to increase the <guilabel>Correlation</guilabel> and/or <guilabel>Noise filter</guilabel> parameters, too.</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Matrix size</guilabel>: This parameter determines the size of the transformation matrix. Increasing the <guilabel>Matrix Size</guilabel> may give better results, especially when you have chosen large values for <guilabel>Circular Sharpness</guilabel> or <guilabel>Gaussian Sharpness</guilabel>. Note that the plug-in will become very slow when you select large values for this parameter. In most cases you should select a value in the range 3-10.</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Save As</guilabel> and <guilabel>Load</guilabel>: these buttons are used to do just that. Any Refocus parameters that you have set can be saved to the filesystem and loaded later.</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Defaults</guilabel>: this button resets all settings to default values.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>Below, you can see few hints to help you work with the refocus plug-in:
+
+      <itemizedlist>
+          <listitem>
+            <para>Preferrably perform all cropping, color and intensity curve corrections on the image before using this plug-in.</para>
+          </listitem>
+          <listitem>
+            <para>Otherwise use this plug-in before performing any other operations on the image. The reason is that many operations on the image will leave boundaries that are not immediately visible but that will leave nasty artifacts.</para>
+          </listitem>
+          <listitem>
+            <para>When you are scanning images and compress them, e.g. to JPEG, you should use the plug-in on the uncompressed image.</para>
+          </listitem>
+      </itemizedlist>
+      </para>
+    </sect5>
+</sect4>
+
+<sect4 id="comparison-refocus">  <title>Refocus comparison with other techniques</title>
+      <para>Comparison to two other techniques frequently used to enhance images are:
+       <itemizedlist>
+          <listitem>
+            <para>
+              <link linkend="using-adjustsharpness" >Sharpen Filter</link>
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <link linkend="using-unsharp" >Unsharp Mask</link>
+            </para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>
+         Sharpening applies a small convolution matrix that increases the difference between a source pixel and its immediate neighbors. FIR Wiener filtering is a more general technique because it allows a much larger neighborhood and better parameterizations. Sharpening only works when your images are very slightly blurred. Furthermore, for high values of the sharpening parameter the results frequently looks &quot;noisy&quot;. With FIR Wiener filtering this noise can be greatly reduced by selecting higher values for the <guilabel>Correlation</guilabel> and <guilabel>Noise filter</guilabel> parameters. 
+      </para>
+      <para>
+        Unsharp masking is another very popular image enhancement technique. From a mathematical point of view its justification is a bit obscure but many people are very fond of it. The first step is to creat a blurred copy of the source image. Then the difference between the source image and the blurred image is subtracted from the source image, hence the name unsharp masking. If fact, unsharp masking is more of a contrast enhancement on the important image feature than a sharpening. It does not undo the aperture pattern interference of the camera diaphragm as refocus does.
+      </para>
+      <para>
+        In general, unsharp masking produces better results than sharpening. This is probably caused by the fact that unsharp masking uses a larger neighborhood than sharpening.
+      </para>
+      <para>
+         From a theoretical point of view unsharp masking must always introduce artifacts. Even under optimal circumstances it can never completely undo the effect of blurring. For Wiener filtering it is possible to prove that it is the optimal linear filter. In practice, in all cases the results of the FIR Wiener filter were at least as good as those of unsharp masking. The FIR Wiener filter is frequently better in restoring small details.
+      </para>
+      <para>Below, you can see a comparison of different filter apply on a small unfocused image:
+
+        <informaltable>
+          <tgroup cols="2" >
+            <thead>
+              <row>
+                <entry>Preview</entry>
+                <entry>Type</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>
+                  <para>
+                    <inlinemediaobject>
+                      <imageobject>
+                        <imagedata fileref="refocus-notsharpened.png" format="PNG" />
+                      </imageobject>
+                    </inlinemediaobject>
+                  </para>
+                </entry>
+                <entry>
+            Original blured color image to fix. This image have been taken with an analog still camera. The unfocusing result of an insuffisant light for the auto-focus lens.
+            </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>
+                    <inlinemediaobject>
+                      <imageobject>
+                        <imagedata fileref="refocus-sharped.png" format="PNG" />
+                      </imageobject>
+                    </inlinemediaobject>
+                  </para>
+                </entry>
+                <entry>
+            Fixed image using simple sharpening filter. Sharpness setting is 80.
+            </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>
+                    <inlinemediaobject>
+                      <imageobject>
+                        <imagedata fileref="refocus-unsharpmask.png" format="PNG" />
+                      </imageobject>
+                    </inlinemediaobject>
+                  </para>
+                </entry>
+                <entry>
+            Fixed image using unsharp mask filter. Settings are Radius=50, Amount = 5, and Threshold=0.
+            </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>
+                    <inlinemediaobject>
+                      <imageobject>
+                        <imagedata fileref="refocus-refocus.png" format="PNG" />
+                      </imageobject>
+                    </inlinemediaobject>
+                  </para>
+                </entry>
+                <entry>
+             Fixed image using Refocus filter. Settings are Circular Sharpness=1.3, Correlation=0.5, Noise Filter=0.020, Gaussian Sharpness=0 and Matrix Size=5.
+            </entry>
+              </row>
+            </tbody>
+          </tgroup>
+      </informaltable>
+      </para>
+
+      <note> <para>
+          For more information about correction of sharpness methods used in digital imagery, you can find a technical comparison at <ulink url="http://www.bialith.com/Research/BARclockblur.htm" >this url</ulink>.
+      </para> </note>
+</sect4>
+
+
+</sect3>
+
+<sect3 id="using-redeyecorrection">          <title>Remove Red Eye in a Photograph</title>
+
+      <anchor id="redeyecorrectiontool.anchor"/>
+
+  <para>
+    Red eyes are caused when the camera flashlight is used to take photographs of people. The red is the reflection from the back the eye which can be seen because the pupil cannot react quickly enough to the flash. By the way, with a separate flash light the red eye effect is less likely because of the different viewing angle of flash and lens. You can correct some of the worst effect of Red Eye by selecting the area of the eye on the photograph, in the same way as described for cropping above. Then select
+    <menuchoice><guimenu>Correct</guimenu>
+     <guimenuitem>Red Eye Reduction</guimenuitem></menuchoice>.
+  </para>
+
+    <example>  <title>The Red Eyes Correction Tool in Action</title>
+       <screenshot><screeninfo>The Red Eyes Correction Tool in Action" </screeninfo><mediaobject><imageobject><imagedata fileref="editor-redeyes-correction.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+    </example>
+
+</sect3>
+
+<sect3 id="inpainting">
+<sect3info>
+
+<title>Photograph Inpainting</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+
+<para>
+<ulink url="http://cimg.sourceforge.net"><inlinemediaobject>
+<imageobject><imagedata fileref="cimg-logo.png" format="PNG"/></imageobject>
+<textobject><phrase>cimglogo</phrase></textobject>
+</inlinemediaobject></ulink>
+</para>
+
+<para>
+  The <emphasis>Photograph Inpainting</emphasis> tool is definitely one of the most advanced tools to remove unwanted artifacts with unprecedented performance.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>
+</para>
+
+<para>
+The inpainting algorithm has been developed by the IMAGE team of GREC CNRS lab in Caen/France and is a part of the <ulink url="http://cimg.sourceforge.net">CImg project</ulink>.
+</para>
+
+<sect4 id="using-inpainting">    <title>Using the Inpainting tool</title>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="inpaintingdialog.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Photograph Inpainting Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>The tool comes with several presets as starting points and to simplify the restoration. The preset settings available are listed below:
+
+<itemizedlist>
+
+  <listitem><para><guilabel>None</guilabel>: Using most common default filter settings not optimized for any particular purpose.</para></listitem> 
+  <listitem><para><guilabel>Remove Small Area</guilabel>: .</para></listitem>
+  <listitem><para><guilabel>Remove Medium Area</guilabel>: .</para></listitem>
+  <listitem><para><guilabel>Remove Large Area</guilabel>: .</para></listitem>
+ 
+</itemizedlist>
+</para>
+
+<para>If you want to set filter parameters for finer adjustments, use <guilabel>Smoothing Settings</guilabel> and <guilabel>Advanced Settings</guilabel> tabs:</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="inpaintingsettings1.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Inpainting Smoothing Settings</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+<itemizedlist>
+  
+     <listitem><para><guilabel>Detail Preservation</guilabel> p [0, 100]: this controls the preservation of the curvatures (features). A low value forces an equal smoothing across the image, whereas bigger values preferably smooth the homogeneous regions and leaves the details sharper. A value of 0.9 should well preserve details so that no sharpening is required afterwards. Note that <guilabel>Detail Preservation</guilabel> must be always inferior to <guilabel>Anisotropy</guilabel>.</para></listitem>
+     <listitem><para><guilabel>Anisotropy</guilabel> alpha [0, 100]: a low value smooths equally in all directions, whereas a value close to 1 smooths in one direction only. If you have film grain or CCD kind of noise a high value will result in wave-like pattern, whereas JPEG artifacts are suited for values close to 1. </para></listitem>
+     <listitem><para><guilabel>Smoothing</guilabel> [0, 500]: this sets the maximum overall smoothing factor (when p defines the relative smoothing). Set it according to the noise level.</para></listitem>
+     <listitem><para><guilabel>Regularity</guilabel> [0, 100]: this parameter is concerned with the bigger structures. The bigger this value, the more even the overall smoothing will be. This is necessary when much noise is present since it is then difficult to estimate the geometry. Also if you want to achieve a 'van Gogh' turbulence effect, setting it higher than 3 is recommended.</para></listitem>
+     <listitem><para><guilabel>Filter Iterations</guilabel>: number of times the blurring algorithm is applied. Usually 1 or 2 is sufficient.</para></listitem>
+
+</itemizedlist>
+
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="inpaintingsettings2.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Inpainting Advanced Settings</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+<itemizedlist>
+
+     <listitem><para><guilabel>Angular Step</guilabel> da [5, 90]: angular integration of the anisotropy alpha. If alpha is chosen small, da should also be chosen small. But beware, small angles result in long runs! Choose it as large as you can accept. </para></listitem>
+     <listitem><para><guilabel>Integral Step</guilabel> [0.1, 10]: spatial integration step width in terms of pixels. Should remain less than 1 (sub-pixel smoothing) and never be higher than 2.</para></listitem>
+<listitem><para><guilabel>Use Linear Interpolation</guilabel>: The gain in quality if you select this option is only marginal and you lose a factor of 2 in speed. Our recommendation is to leave it off.</para></listitem>
+
+</itemizedlist>
+</para>
+
+<para>
+<guilabel>Save As</guilabel> and <guilabel>Load</guilabel> buttons are used to do just that. Any Photograph Inpainting filter settings that you have set can be saved to the filesystem in a text file and loaded later.
+</para>
+
+<warning><para>
+Photograph Inpainting is (comparatively) very fast in what it is doing, but it can take a long time to run and cause high CPU load. You may always abort computation by pressing <guilabel>Cancel</guilabel> button during rendering.
+</para></warning>
+
+</sect4>
+
+<sect4 id="inaction-inpainting"> <title>The Inpainting tool in action</title>
+
+<para>
+Below, you can see a <guilabel>Remove Small Area</guilabel> Inpainting type applied to a color photograph taken at Guatemala city with an analog camera. Look like there is a strange black artifacts on the face front, resulting of a bad film stockage during the travel. The original image is (1), the corrected image (2).
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="inpaintingpreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Inpainting Filter Preview</phrase></textobject></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="noisereduction">
+
+<sect3info>
+<title>Noise Reduction</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>
+
+</authorgroup>
+
+<abstract>
+<para>
+The &digikam; <emphasis>Noise Reduction</emphasis> is a powerful tool to reduce the image noise. 
+It uses an algorithm copyrighted by Peter Heckert.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+<keyword>Noise reduction</keyword>
+<keyword>Blur</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>
+  This tool provides selectable image filters to remove specks or other artifacts caused by junk such as dust or hair on the lens. It also can be used to remove <emphasis>Sensor Noise</emphasis> from the camera that maybe caused by high ISO settings, as well as the so-called <emphasis>Moir&eacute; Patterns</emphasis> on scanned images from books or magazines.
+</para>
+
+<para>
+  If you want more information about what's digital camera sensor noise, please take a look in this <ulink url="http://www.cambridgeincolour.com/tutorials/noise.htm">tutorial</ulink>.
+</para>
+
+<sect4 id="using-noisereduction">
+<title>Using the Noisereduction Tool</title>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="noisereductiondialog.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Noise Reduction Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+The above screenshot shows a typical scene taken with an digital camera using a high sensitivity ISO setting. It shows grainy noise which can be reduced successfully with this tool.
+</para>
+
+<para>
+The re-sizeable image panel with the original preview helps you to pan within the image. Move the red rectangle around to select the area that lets you judge on the optimal filter settings. The preview window shows the filter output using the current settings. It can be rearranged in four different combinations as depicted in the icons below the original preview. This screenshot shows the first arrangement where the same cutout is shown for comparison. On the bottom of preview area, you can see <guilabel>Zoom Factor</guilabel> settings to magnify an area of the image.
+</para>
+
+<para>
+You can see below a full description of all parameters. In most cases only <guilabel>Details</guilabel> tab is needed and the other parameters available into <guilabel>Advanced</guilabel> tab can be left at their default setting.
+
+<itemizedlist>
+
+<listitem><para>
+<guilabel>Radius</guilabel>: this control selects the gliding window size used for the filter. Larger values do not increase the amount of time needed to filter each pixel in the image but can cause blurring. This window moves across the image, and the color in it is smoothed to remove imperfections. In any case it must be about the same size as noise granularity or somewhat more. If it is set higher than necessary, then it can cause unwanted blur.
+</para></listitem>
+
+<listitem><para>
+<guilabel>Threshold</guilabel>: use the slider for coarse adjustment, and the spin control for fine adjustment. This controls edge detection sensitivity. This value should be set so that edges and details are clearly visible and noise is smoothed out. This value is not bound to any intensity value, it is bound to the second derivative of intensity values. Simply adjust it and watch the preview. Adjustment must be made carefully, because the gap between noisy, smooth, and blur is very small. Adjust it as carefully as you would adjust the focus of a camera.
+</para></listitem>
+
+<listitem><para>
+<guilabel>Texture</guilabel>: this control set the texture accuracy. This value can be used, to get more or less texture accuracy. When decreased, then noise and texture are blurred out, when increased then texture is amplified, but also noise will increase. It has almost no effect to image edges, opposed to filter <guilabel>Edge</guilabel>, which would blur edges, when increased. If <guilabel>Edge</guilabel> is adjusted in away so that edges are sharp, and there is still too much area noise, then <guilabel>Texture</guilabel> detail could be used to reduce noise without blurring edges. Another way would be to decrease <guilabel>Radius</guilabel> and to increase <guilabel>Edge</guilabel>.
+</para></listitem>
+
+<listitem><para>
+<guilabel>Sharpness</guilabel>: this control set the sharpness level. this value defines the pixel distance in which the filter looks ahead for luminance variations. When this value is increased, then spikenoise is erased. You can eventually readjust filter <guilabel>Edge</guilabel>, when you changed this setting. When this value is to high, then the adaptive filter cannot longer accurately track image details, and noise can reappear or blur can occur.
+</para></listitem>
+
+<listitem><para>
+<guilabel>Edge</guilabel>: this control set the edge accuracy for sharpness. This value improves the frequency response for the filter. When it is too strong then not all noise can be removed, or spike noise may appear. Set it near to maximum, if you want to remove weak noise or JPEG-artifacts, without loosing detail.
+</para></listitem>
+
+<listitem><para>
+<guilabel>Erosion</guilabel>: this control set the phase shift for edges. This value can be used to erodes singular spikes and it has a smooth effect to edges, and sharpens edges by erosion, so noise at edges is eroded. The effect is dependant from <guilabel>Sharpness</guilabel>, <guilabel>Damping</guilabel>, and <guilabel>Edges</guilabel>. Set it to minimum, if you want to remove weak noise or JPEG-artifacts. When this value is increased, then also increasing <guilabel>Damping</guilabel> is often useful. This setting can provides sharpening and antialiasing effect to edges when spike noise is corrected. 
+</para></listitem>
+
+<listitem><para>
+<guilabel>Luminance</guilabel>: this control set the luminance tolerance of image. It's recommended to use only <guilabel>Color</guilabel> or <guilabel>Luminance</guilabel> tolerance settings to make an image correction, not the both at the same time. This settings don't influence the main smoothing process controlled by <guilabel>Details</guilabel> settings.
+</para></listitem>
+
+<listitem><para>
+<guilabel>Color</guilabel>: this control set the color tolerance of image. It's recommended to use only <guilabel>Color</guilabel> or <guilabel>Luminance</guilabel> tolerance settings to make an image correction, not the both at the same time. This settings don't influence the main smoothing process controlled by <guilabel>Details</guilabel> settings.
+</para></listitem>
+
+<listitem><para>
+<guilabel>Gamma</guilabel>: this control set the gamma tolerance of image. This value can be used to increase the tolerance values for darker areas (which commonly are more noisy). This results in more blur for shadow areas.
+</para></listitem>
+
+<listitem><para>
+<guilabel>Damping</guilabel>: this control set the phase jitter damping adjustment. This value defines how fast the adaptive filter-radius reacts to luminance variations. If increased, then edges appear smoother, if too high, then blur may occur. If at minimum then noise and phase jitter at edges can occur. It can suppress spike noise when increased and this is the preferred method to remove it.
+</para></listitem>
+
+<listitem><para>
+<guilabel>Save As</guilabel> and <guilabel>Load</guilabel>: these buttons are used to do just that. Any Noise Reduction parameters that you have set can be saved to the filesystem and loaded later.
+</para></listitem>
+
+<listitem><para>
+<guilabel>Defaults</guilabel>: this button resets all settings to default values.
+</para></listitem>
+
+</itemizedlist>
+</para>
+
+ <sect5 id="inaction-noisereduction">   <title>Noisereduction in action</title>
+
+  <para>
+  This is an example of how the noise reduction can change your life. The original image is (1) and the corrected image is (2). The noise reduction was applied using default settings. 
+  </para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="noisereductionpreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Noise Reduction in Action</phrase></textobject></inlinemediaobject>
+   </para>
+
+ </sect5>
+
+    <sect5 id="using-blurfilter">    <title>Softening a Photograph</title>
+      <para>
+          Sometimes an image is too crisp for your purposes. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the Blur Tool with the <menuchoice>
+          <guimenu>Correct</guimenu>
+          <guimenuitem>Blur</guimenuitem>
+        </menuchoice> menu entry and experiment with the level. The preview window on the right of the dialog shows the effect of the operation on your photograph.
+      </para>
+      <example>
+        <title>The Blur Tool in Action</title>
+        <screenshot>
+          <screeninfo>The Blur Tool in Action&quot; </screeninfo>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="editorblurplugin.png" format="PNG" />
+            </imageobject>
+          </mediaobject>
+        </screenshot>
+      </example>
+   </sect5>
+
+
+</sect4>
+
+</sect3>
+
+<sect3 id="restoration">
+<sect3info>
+
+<title>Photograph Restoration</title>
+
+<authorgroup>
+    
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>
+    
+</authorgroup>
+
+<abstract>
+
+<para>
+<ulink url="http://cimg.sourceforge.net"><inlinemediaobject>
+<imageobject><imagedata fileref="cimg-logo.png" format="PNG"/></imageobject>
+<textobject><phrase>cimglogo</phrase></textobject>
+</inlinemediaobject></ulink>
+</para>
+
+<para>
+The &digikam; <emphasis>Photograph Restoration</emphasis> is definitely one of the most advanced tools to reduce photograph artifacts.
+</para>
+
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>
+This fantastic restoration filter is a new development providing unprecedented possibilities in the public domain to remove lots of unwanted stuff from your images. It is well adapted to deal with degraded images suffering from Gaussian noise, film grain, scratches or compression artifacts and local degradations usually encountered in digital (original or digitized) images. The smoothing happens along the image curvatures, thus preserving the meaningful content much alike our human eye would want it.
+</para>
+
+<para>
+The same algorithm can be used for colorization and texture replacement which is covered by another tool (inpainting). The restoration algorithm has been developed by the IMAGE team of GREC CNRS lab in Caen/France and is a part of the <ulink url="http://cimg.sourceforge.net">CImg project</ulink>.
+</para>
+
+
+
+<sect4 id="using-restoration">
+<title>Using the Restoration tool</title>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="restorationdialog.png" format="PNG" /> </imageobject>
+      <textobject><phrase>Photograph Restoration Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>The tool comes with several presets as starting points and to simplify the restoration. The preset settings available are listed below:
+
+<itemizedlist>
+
+  <listitem><para><guilabel>None</guilabel>: Using most common default filter settings not optimized for any particular purpose.</para></listitem> 
+  <listitem><para><guilabel>Reduce Uniform Noise</guilabel>: Optimum settings for image noise due to sensors.</para></listitem>
+  <listitem><para><guilabel>Reduce JPEG Artifacts</guilabel>: JPEG's compression is not perfect, in fact for some types of images it is far from it. As a lossy compression algorithm, there are some compression "artifacts" - slight defaults showing in the decompressed image. This setting aims at correcting this problem.</para></listitem>
+  <listitem><para><guilabel>Reduce Texturing</guilabel>: Optimized to remove artifacts from scanning, digitizing or Moire patterns.</para></listitem>
+ 
+</itemizedlist>
+</para>
+
+<para>If you want to set filter parameters for finer adjustments, use <guilabel>Smoothing Settings</guilabel> and <guilabel>Advanced Settings</guilabel> tabs:</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="restorationsettings1.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Restoration Smoothing Settings</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+<itemizedlist>
+  
+     <listitem><para><guilabel>Detail Preservation</guilabel> p [0, 100]: this controls the preservation of the curvatures (features). A low value forces an equal smoothing across the image, whereas bigger values preferably smooth the homogeneous regions and leaves the details sharper. A value of 0.9 should well preserve details so that no sharpening is required afterwards. Note that <guilabel>Detail Preservation</guilabel> must be always inferior to <guilabel>Anisotropy</guilabel>.</para></listitem>
+     <listitem><para><guilabel>Anisotropy</guilabel> alpha [0, 100]: a low value smooths equally in all directions, whereas a value close to 1 smooths in one direction only. If you have film grain or CCD kind of noise a high value will result in wave-like pattern, whereas JPEG artifacts are suited for values close to 1. </para></listitem>
+     <listitem><para><guilabel>Smoothing</guilabel> [0, 500]: this sets the maximum overall smoothing factor (when p defines the relative smoothing). Set it according to the noise level.</para></listitem>
+     <listitem><para><guilabel>Regularity</guilabel> [0, 100]: this parameter is concerned with the uniformity of the smoothing. Imagine the smoothing process as a combing of the image. Then the Regularity would correspond to the size of the comb. The bigger this value, the more even the overall smoothing will be. This is necessary when much noise is present since it is then difficult to estimate the local geometry. Also if you want to achieve a 'van Gogh' turbulence effect, setting it higher than 3 is recommended.</para></listitem>
+     <listitem><para><guilabel>Filter Iterations</guilabel>: number of times the blurring algorithm is applied. Usually 1 or 2 is sufficient.</para></listitem>
+
+</itemizedlist>
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="restorationsettings2.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Restoration Advanced Settings</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+<itemizedlist>
+
+     <listitem><para><guilabel>Angular Step</guilabel> da [5, 90]: angular integration of the anisotropy alpha. If alpha is chosen small, da should also be chosen small. But beware, small angles result in long runs! Choose it as large as you can accept. </para></listitem>
+     <listitem><para><guilabel>Integral Step</guilabel> [0.1, 10]: spatial integration step width in terms of pixels. Should remain less than 1 (sub-pixel smoothing) and never be higher than 2.</para></listitem>
+<listitem><para><guilabel>Use Linear Interpolation</guilabel>: The gain in quality if you select this option is only marginal and you lose a factor of 2 in speed. Our recommendation is to leave it off.</para></listitem>
+
+</itemizedlist>
+
+</para>
+
+<para>
+<guilabel>Save As</guilabel> and <guilabel>Load</guilabel> buttons are used to do just that. Any Photograph Restoration filter settings that you have set can be saved to the filesystem in a text file and loaded later.
+</para>
+
+<warning><para>
+Photograph restoration is (comparatively) very fast in what it is doing, but it can take a long time to run and cause high CPU load. You may always abort computation by pressing <guilabel>Abort</guilabel> button during preview rendering.
+</para></warning>
+
+</sect4>
+
+<sect4 id="inaction-restoration">
+<title>The Restoration tool in action</title>
+
+<para>
+Below, you can see a <guilabel>Reduce Uniform Noise</guilabel> Restoration type applied to a Black and White photograph taken with a Minolta(tm) 700Si camera using Ilford(tm) HP-5 film set at 3200 ISO sensitivity. You see the very prominent film grain on the faces. The original image is (1), the corrected image (2).
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="restorationpreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>Reduce Uniform Noise Restoration Preview</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+Below, you can see an another Photograph Restoration example using <guilabel>Reduce Texturing</guilabel> Restoration type applied to an old color photograph acquire with a digital flat scanner. You see the very prominent artifacts resulting of scanner light on plastic photograph paper. The original image is (1), the corrected image (2).
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="restorationpreview2.png" format="PNG" /> </imageobject>
+      <textobject><phrase>Reduce Texturing Restoration Preview</phrase></textobject></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="hotpixels">
+<sect3info>
+
+<title>Hot Pixels Correction</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    <author>
+        <firstname>Unai</firstname><surname>Garro</surname>
+        <affiliation><address><email>ugarro at telefonica dot net</email></address></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para>
+The &digikam; <emphasis>Hot Pixels</emphasis> tool facilitates removing hot pixels from photographs taken with a CCD camera. It uses algorithms from the JPEGPixi project which are copyrighted by Martin Dickopp.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>digiKam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>
+Most current digital cameras produce images with several brightly colored "bad pixels" when using slow shutter speeds. Night pictures can be ruined by these "bad pixels". There are three different types of "bad pixels":
+
+<itemizedlist>
+
+  <listitem><para>Stuck pixels: it's a pixel that always reads high or is always on to maximum power on all exposures. This produces a bright pixel usually of red, blue or green color in the final image. A stuck pixel will occur regardless of shutter speed, aperture size or any other user settings. It will occur on a normal exposure and tends to be more obvious under bright condition.</para></listitem>
+    
+  <listitem><para>Dead pixels: it's a pixel that reads zero or is always off on all exposures. This state produces a black pixel in the final image. Similar to stuck pixel, a dead pixel will occur regardless of shutter speed, aperture size or any other user settings.</para></listitem>
+ 
+  <listitem><para>Hot pixels: it's a pixel that reads high (bright) on longer exposures as white, red, or green color. The longer the exposure time, the more visible hot pixels will become. These pixels will not be visible in bright conditions.</para></listitem>
+
+</itemizedlist> 
+
+Note that stuck or dead pixels will occur at the same location for all images. If the location of the stuck or dead pixel occurs at different locations, it may be a Hot Pixel.
+</para>
+<para>
+
+Stuck, dead or hot pixels are a problem in particular when shooting in high quality raw mode since many cameras have built-in hot pixel suppression applied automatically when JPEG compression is used (which is mostly the case).
+</para>
+
+<para>
+This tool can be used to fix the "Hot pixels" and "Stuck Pixels" on a photograph using a black frame subtraction method. There is no yet a manual editor to select bad pixels.
+</para>
+
+<sect4 id="using-blackframecreation">
+<title>Create the Black Frames</title>
+
+<para>
+The Black Frame substraction method is the most accurate "Hot Pixels" and "Stuck Pixels" removal. First you have to create a "Black Frame" as a reference. This is easy to do. When you finish taking your long exposure shots, put a lens cap on the camera and take one "dark" image with the same exposure time as the images before. This image will be all dark, but with close examination you will see that it has the Hot and Stuck Pixels (colored dots). These are positioned at the same places as on your previous shots.
+</para>
+ 
+<para>
+Load this file to the widget using the <guilabel>Black Frame</guilabel> button. The toll will process an automatic detection of Hot and Stuck Pixels. They will be highlighted in the control panel preview areas.
+</para>
+
+<warning><para>
+If you use an old digital camera, it is important to re-shoot the Black Frame next time you are taking a long exposure pictures to detect new Hot and Stuck Pixels on CCD defects.
+</para></warning>
+
+</sect4>
+
+<sect4 id="using-hotpixels">
+<title>Using the hotpixel tool</title>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="hotpixelsdialog.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Hot Pixels Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+At first, as explained in the previous section, you need to load a Black Frame corresponding to the image to correct. An automatic parsing will be processed on the Black Frame to find bad pixels. Note that the widget will remember the previous Black Frame used on the last  session and it will be re-opened automatically with the next session.
+</para>
+
+<para>
+The image panel and the original preview help you to pan within the image. The preview window shows the filter output using the current settings. Bad Pixels are highlighted on all preview areas.
+</para>
+
+<para>
+Select an area to see bad pixels on preview and the filter result using 'Separate View' options of image panel. Choose the best  <guilabel>Filter</guilabel> method to interpolate pixels or pixel blocks. These are the available filters:
+
+<itemizedlist>
+
+  <listitem><para>Average: the pixels adjacent to the pixel block are averaged. The resulting color is assigned to all pixels in the block. For 1-dimensional interpolation, this is done separately for one pixel-wide, horizontal or vertical stripes.</para></listitem>
+    
+  <listitem><para>Linear: the pixels which have a distance of 1 from the pixel block are used to calculate a bi-linear surface (2-dim), or a group of linear curves (1-dim), which is then used to assign interpolated colors to the pixels in the block.</para></listitem>
+  
+  <listitem><para>Quadratic: this is the default filtering method. The pixels which have a distance of 2 or less from the pixel block are used to calculate a bi-quadratic surface (2-dim), or a group of quadratic curves (1-dim), which is then used to assign interpolated colors to the pixels in the block.</para></listitem>
+  
+  <listitem><para>Cubic: the pixels which have a distance of 3 or less from the pixel block are used to calculate a bi-cubic surface (2-dim), or a group of cubic curves (1-dim), which is then used to assign interpolated colors to the pixels in the block.</para></listitem>
+
+</itemizedlist> 
+
+</para>
+
+</sect4>
+
+<sect4 id="inaction-hotpixels">
+<title>The hotpixels tool in action</title>
+
+<para>
+Below, you can see the Hot Pixels Correction tool applied to a color photograph taken with a deficient digital camera at 200 ISO sensitivity with a long exposure shot. The original image magnified to 300% is (1), the corrected image (2).
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="hotpixelspreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Pixels Correction Preview</phrase></textobject></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="antivignetting">
+<sect3info>
+
+<title>Anti Vignetting</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>    
+</authorgroup>
+
+<abstract>
+<para>
+The &digikam; <emphasis>Anti Vignetting</emphasis> is a tool to correct image vignetting (under-exposure in the corners).
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+<keyword>Anti-Vignetting</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+
+<para>
+  Wide angle lenses, especially those used in medium and large format photography, frequently do not uniformly illuminate the entire sensor plane. Instead, they "vignette" (shade) the edges and corners of the image, substantially reducing the light reaching the sensor there. But telelenses may show vignetting too.
+</para>
+
+<para>
+  The traditional solution for this is to attach a "center filter" to the lens. This is a neutral density filter with maximum density at the optical axis of the lens, clear at the periphery, with density varying inversely to the vignetting of the lens. A center filter has many advantages: not only does it automatically correct for full-frame images but, since it's fixed to the front of the lens, it also compensates for the off-center vignetting which occurs when camera movements are employed for perspective or plane of focus adjustment.
+</para>
+
+<para>
+  But there are disadvantages as well. Many center filters require a 1.5 or 2 f-stop filter factor adjustment, which may in turn necessitate a shutter speed so slow (since wide angle lenses, even with center filters, are best used at apertures of f/16 or smaller) that hand-holding the camera is impossible and motion blur becomes a problem when photographing moving objects.
+</para>
+
+<para>
+  With the wide exposure range of present-day film and the color (or grey-scale) depth of digital camera or film scanners, it is possible to simulate the effect of a center filter by applying an equivalent transform to a raw image taken without the filter. This antivignetting tool applies a center filter transformation to an image employing an algorithm copyrighted by John Walker.
+</para>
+
+<sect4 id="using-antivignetting">  <title>Using the Anti-vignetting tool</title>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="antivignettingdialog.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Anti Vignetting Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+Three sliders give you control over the vignetting correction filter, and three more over the target image exposure:
+</para>
+
+<para>
+<guilabel>Density</guilabel>: this option controls the degree of luminosity attenuation by the filter at its point of maximum density. The default density is 2.0, which corresponds to an optical filter with a 1 f-stop filter factor (or, by no coincidence, a factor of 2 in luminosity). Increase the density to compensate for a greater degree of vignetting; reduce it for less.
+</para>
+
+<para>
+<guilabel>Power</guilabel>: this option determines the rate at which the filter intensity falls off from the point of maximum density toward the edges, expressed as a power factor. The default of 1 yields a linear reduction in filter density with distance from the center. Power factors greater than 1.0 cause a faster fall-off (for example, a power of 2 causes the density to decrease as the square of the distance from the center) and causes the effect of the filter to be concentrated near the center. Powers less than 1 spread out the density of the filter toward the edges; a power of 0.5 causes the density to fall as the square root of the distance from the center.
+</para>
+
+<para>
+<guilabel>Radius</guilabel>: this option specifies the radius, as a multiple of the half diagonal measure of the image, at which the density of the filter falls off to zero (or, in other words, becomes transparent). The default value of 1.0 specifies a filter which is transparent at its corners. A radius specification greater than 1 extends the effect of the center filter beyond the edges of the image, while a radius less than one limits the filter's action to a region smaller than the image. When compensating for vignetting by lenses used with large format and some medium format cameras, the default radius factor of 1 is rarely correct! These lenses often "cover" an image circle substantially larger than the film to permit camera movements to control perspective and focus, and consequently have a vignetting pattern which extends well beyond the edges of the film, requiring a radius setting greater than 1 to simulate a center filter covering the entire image circle.
+</para>
+
+<para>
+The only way to be sure which settings of <guilabel>Density</guilabel>, <guilabel>Power</guilabel>, and <guilabel>Radius</guilabel> best compensate for the actual optical characteristics of a given lens is to expose a uniformly illuminated scene (for example, a grey card lit by diffuse light) and perform densitometry on the resulting image (for example with Adjust Level tool histogram position bar). Failing that, or specifications by the lens manufacturer giving the precise degree of vignetting at one or more working apertures, you may have to experiment with different settings to find those which work best for each of your lenses. For help you in this task, the widget dialog provide a thumbnail mask rendering applied on the image. Fortunately, the response of the human eye is logarithmic, not linear like most digital imaging sensors, so you needn't precisely compensate for the actual vignetting to create images which viewers will perceive as uniformly illuminated.
+</para>
+
+<para>
+<guilabel>Brightness</guilabel>, <guilabel>Contrast</guilabel>, and <guilabel>Gamma</guilabel> settings: processing an image with this antivignetting tool reduces the luminosity of pixels. You need to re-adjust the target image exposure with these options. These sliders give only positive values because you need only to increase this setting.
+</para>
+
+<note><para>
+If you want a finer exposure re-adjustment of the target image, leave the Brightness/Contrast/Gamma values at zero and use the Adjust Curve tool from &digikam; Image Editor available under <menuchoice><guimenu>Color</guimenu><guimenuitem>Adjust Curve</guimenuitem></menuchoice> menu entry.
+</para></note>
+
+</sect4>
+
+<sect4 id="inaction-antivignetting">
+<title>The anti-vignetting tool in action</title>
+
+<para>
+This is an example of an anti vignetting correction applied to an image. The original image (1) shows vignetting in the corners, the corrected image (2) much less. A brightness and contrast correction is also applied to the target image by this tool.
+</para>
+
+<para>
+The values used for this example are:
+<itemizedlist>            
+    <listitem><para>Density    = 2.6.</para></listitem>
+    <listitem><para>Power      = 0.9.</para></listitem>
+    <listitem><para>Radius     = 1.1.</para></listitem>
+    <listitem><para>Brightness = 20.</para></listitem>
+    <listitem><para>Contrast   = 50.</para></listitem>
+    <listitem><para>Gamma      = 20.</para></listitem>
+</itemizedlist>    
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="antivignettingpreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>The Anti Vignetting Image Editor Tool in Action</phrase></textobject></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="lensdistortion">
+<sect3info>
+
+<title>Lens Distortion Correction</title>
+
+<authorgroup>
+    <author>
+        <firstname>Gilles</firstname><surname>Caulier</surname>
+        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
+    </author>
+    
+    <author>
+        <firstname>Gerhard</firstname><surname>Kulzer</surname>
+        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para>
+The &digikam; <emphasis>Lens Distortion</emphasis> is a tool to correct spherical lens aberrations on the photos. It uses an algorithm copyrighted by David Hodson.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title>Introduction</title>
+  <anchor id="lensdistortion.anchor"/>
+
+<para>
+<emphasis>Barrel distortion</emphasis> is associated with wide angle (or minimal zoom) lenses. It causes the images to appear slightly spherical (curved outward) like a barrel. You can notice this when you have straight features close to the image's peripheral sides. <emphasis>Pincushion distortion</emphasis> is the opposite defect and is associated with Telephoto lenses (maximum zoom) or underwater pictures. The images appear pinched (bent inward) toward the center. The Pincushion is often less noticeable than barrel but are equally visible near the edges. These distortions can easily be eliminated without visible loss in quality with this tool. 
+</para>
+
+<note><para>
+This tool treats the geometrical distortions. Chromatic abberations will not be corrected by this tool.
+</para></note>
+
+<para>
+The following figures explain the main types of geometrical distortions:
+<itemizedlist>            
+    <listitem><para>(1): pincushion distortion.</para></listitem>
+    <listitem><para>(2): no distortion.</para></listitem>
+    <listitem><para>(3): barrel distortion.</para></listitem>
+</itemizedlist>    
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="distortions.png" format="PNG" /> </imageobject>
+      <textobject><phrase>Lens Distortion Types</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+</para>
+
+<sect4 id="using-lensdistortion">
+<title>Using the lens distortion tool</title>
+
+<note><para>
+A bit of explanation first. The geometrical corrections use 4th-order polynominal coefficients.
+    <itemizedlist>
+        <listitem><para>The 1st-order coefficient changes the size of the image. The tool calls this <guilabel>Zoom</guilabel>.</para></listitem>
+        <listitem><para>The 2nd-order coefficient treats the main geometrical distortion of lenses and can correct the convex or concave shape of the image.</para></listitem>
+        <listitem><para>The 3rd-order coefficient has a similar rounding effect but levels off towards the edges. This correction is not employed in the tool.</para></listitem>
+        <listitem><para>The 4th-order coefficient corrects the far edges inversely to the 2nd-order rounding. Combining it with the 2nd-order correction the geometrical distortions can be almost completely eliminated.</para></listitem>
+    </itemizedlist>
+</para></note>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="lensdistortiondialog.png" format="PNG" /> </imageobject>
+      <textobject><phrase>Lens Distortion Correction Dialog</phrase></textobject></inlinemediaobject>
+   </para>
+
+<para>
+Four sliders let you set the distortion correction filter:
+</para>
+
+<para>
+<guilabel>Main</guilabel>: this value controls the amount of 2nd-order distortion. Negative values correct barrel distortions, while positive values correct pincushion distortion.
+</para>
+
+<para>
+<guilabel>Edge</guilabel>: this value controls the amount of 4th-order distortion. The Edge control has more effect at the edges of the image than at the center. For most lenses, the <guilabel>Edge</guilabel> parameter has the opposite sign of the <guilabel>Main</guilabel> parameter.
+</para>
+
+<para>
+<guilabel>Zoom</guilabel>: this value rescales the overall image size (1st-order correction). Negative values zoom out of the image, while positive values zoom in.
+</para>
+
+<para>
+<guilabel>Brighten</guilabel>: this control adjusts the brightness in image corners. Negative values decrease the brightness image corners, while positive values increase it.
+</para>
+
+<para>
+To help you to choose the best filter settings, the widget dialog illustrates with a thumbnail preview the distortion correction applied to a crossed mesh pattern. The values you apply to your image will be saved and come up with the same values as default the next time you call the tool.
+</para>
+
+<note><para>
+The barrel-pincushion correction should be done before any crop or size changes (including perspective correction). In fact the Barrel-Pincushion corrections should be the very first step on the original image. If you crop the image and then use barrel correction the effect would be obviously wrong.
+</para></note>
+
+<para>
+To help you finding the best correction the tool provides a vertical and horizontal guide. Move the mouse cursor in the image preview to display the dashed lines guide. Move the cursor to an important place in the image like the sea level or a building border and press the left mouse button for freeze the dashed lines position. Now, adjust the barrel/pincushion correction to align with the guide.
+</para>
+
+<para>
+When using pincushion correction the resulting image will have a black border in the corner. You will need to cut this out with a crop tool available in <menuchoice><guimenu>Transform</guimenu><guimenuitem>Crop</guimenuitem></menuchoice> Image Editor menu or via the zoom slider of this dialog.
+</para>
+
+<para>
+On most images using the barrel correction is enough, however with some shots such as front pictures, frames, paintings, the next logical step is to use perspective correction to make all the angles 90 degrees. Note that when you hold your camera by hand you almost always introduce some kind of slight perspective distortion.
+</para>
+
+</sect4>
+
+<sect4 id="inaction-lensdistortion">
+<title>The lens distortion tool in action</title>
+
+<para>
+This is an example of a barrel correction applied to church in north Norway. The original image is (1), the corrected image (2).
+</para>
+
+<para>
+The values used for this example are:
+<itemizedlist>            
+    <listitem><para>Main     = -40.</para></listitem>
+    <listitem><para>Edge     = 0.</para></listitem>
+    <listitem><para>Zoom     = -20.</para></listitem>
+    <listitem><para>Brighten = 0.</para></listitem>
+</itemizedlist>    
+</para>
+
+   <para><inlinemediaobject><imageobject> 
+      <imagedata fileref="lensdistortionpreview.png" format="PNG" /> </imageobject>
+      <textobject><phrase>Lens Distortion Correction Preview</phrase></textobject></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+
