@@ -5,6 +5,8 @@
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % English "INCLUDE"><!-- change language only here -->
   <!ENTITY digikam '<application>digiKam</application>'>
+  <!-- path to snapshots for digikam and showfoto -->
+  <!ENTITY path "">
   <!ENTITY doc-file-formats     SYSTEM "file-formats.docbook">
   <!ENTITY doc-sidebar          SYSTEM "sidebar.docbook">
 <!-- image editor -->
@@ -85,7 +87,7 @@
     
     <para>
         <inlinemediaobject>
-            <imageobject><imagedata fileref="digikamlogo.png" format="PNG"/></imageobject>
+            <imageobject><imagedata fileref="&path;digikamlogo.png" format="PNG"/></imageobject>
             <textobject> <phrase>&digikam; logo</phrase> </textobject>
         </inlinemediaobject>
     </para>
@@ -185,13 +187,13 @@
            <title>The First Run Dialog</title>
            <para>
            <inlinemediaobject><imageobject>
-              <imagedata fileref="introductionfirstrundialog.png" format="PNG" />  </imageobject>
+              <imagedata fileref="&path;introductionfirstrundialog.png" format="PNG" />  </imageobject>
            </inlinemediaobject></para>
         
         <para>
         When you start &digikam; for the very first time it will ask you where you store your photographs. You can type in the path name of a folder or click on the <guilabel>folder</guilabel> icon
         <inlinemediaobject>
-            <imageobject><imagedata fileref="introductionfoldericon.png" format="PNG"/></imageobject>
+            <imageobject><imagedata fileref="&path;introductionfoldericon.png" format="PNG"/></imageobject>
             <textobject> <phrase>Folder Icon</phrase> </textobject>
         </inlinemediaobject>
         to select a folder from the dialog.
@@ -206,7 +208,7 @@
         </para>
         <para>
           <inlinemediaobject> <imageobject>
-            <imagedata fileref="introductionscandialog.png" format="PNG" /> </imageobject></inlinemediaobject>
+            <imagedata fileref="&path;introductionscandialog.png" format="PNG" /> </imageobject></inlinemediaobject>
         </para>
         </sect2>
         <sect2>
@@ -217,7 +219,7 @@
           As &digikam; uses your folders on your hard disk directly, other applications like file managers can remove any albums outside a &digikam; session. In this case &digikam; will tell you at the next session if all albums that have been removed from the &digikam; photographs root path shall be deleted from albums database. If you want to move folders around and do not want to do that in &digikam;, we suggest you do that while &digikam; is running, so the database will be kept in sync and you do not lose any metadata.
         </para>
         <para><inlinemediaobject><imageobject> 
-                <imagedata fileref="introductionalbumsmissingdialog.png" format="PNG" /> 
+                <imagedata fileref="&path;introductionalbumsmissingdialog.png" format="PNG" /> 
               </imageobject>
               <textobject><phrase>The Albums Missing Dialog</phrase></textobject></inlinemediaobject>
         </para>
@@ -250,7 +252,7 @@
         </itemizedlist>
         
         <inlinemediaobject>
-            <imageobject><imagedata fileref="introductionplugininterfaces.png" format="PNG"/></imageobject>
+            <imageobject><imagedata fileref="&path;introductionplugininterfaces.png" format="PNG"/></imageobject>
             <textobject> <phrase>The &digikam; plugins interface</phrase> </textobject>
         </inlinemediaobject>
         </para>
@@ -281,7 +283,7 @@
             <tbody>
                 <row>
                     <entry>
-                    <para><inlinemediaobject><imageobject><imagedata fileref="introductionfirewireconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
+                    <para><inlinemediaobject><imageobject><imagedata fileref="&path;introductionfirewireconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
                     </entry>
                 
                     <entry>
@@ -291,7 +293,7 @@
 
                 <row>
                     <entry>
-                    <para><inlinemediaobject><imageobject><imagedata fileref="introductionusbconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
+                    <para><inlinemediaobject><imageobject><imagedata fileref="&path;introductionusbconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
                     </entry>
                 
                     <entry>
@@ -301,7 +303,7 @@
 
                 <row>
                     <entry>
-                    <para><inlinemediaobject><imageobject><imagedata fileref="introductionserialconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
+                    <para><inlinemediaobject><imageobject><imagedata fileref="&path;introductionserialconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
                     </entry>
                 
                     <entry>
@@ -363,7 +365,7 @@
         <title>Introduction to the Main Window</title>
 
             <para>
-              <inlinemediaobject><imageobject><imagedata fileref="maininterfacepreview.png" format="PNG" /> </imageobject>
+              <inlinemediaobject><imageobject><imagedata fileref="&path;maininterfacepreview.png" format="PNG" /> </imageobject>
               </inlinemediaobject>
             </para>
 
@@ -385,7 +387,7 @@
             
             <para>
                 <inlinemediaobject>
-                    <imageobject><imagedata fileref="maininterfacetoolbar.png" format="PNG"/></imageobject>
+                    <imageobject><imagedata fileref="&path;maininterfacetoolbar.png" format="PNG"/></imageobject>
                     <textobject> <phrase>The Default Main Toolbar</phrase> </textobject>
                 </inlinemediaobject>
             </para>
@@ -491,7 +493,7 @@
 
                 <example>
                     <title>The Album Properties Dialog</title>
-                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfacealbumproperties.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfacealbumproperties.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
 
                 <itemizedlist>
@@ -552,7 +554,7 @@
                 <para>
                 The Image Window provides the main view of your photographs. When you select an Album the photographs in that Album will be displayed in the Image Window. Each photograph is displayed as a thumbnail. You can alter the size of the thumbnails using the magnifier buttons in the toolbar.
                 <inlinemediaobject>
-                    <imageobject><imagedata fileref="editorzoombuttons.png" format="PNG"/></imageobject>
+                    <imageobject><imagedata fileref="&path;editorzoombuttons.png" format="PNG"/></imageobject>
                     <textobject> <phrase>The Thumbnail size buttons</phrase> </textobject>
                 </inlinemediaobject>
                 </para>
@@ -703,7 +705,7 @@
 <sect2 id="using-mydatesview">
             <title>"My Dates" View from Main Window</title>
 
-            <para><inlinemediaobject><imageobject><imagedata fileref="maininterfacedateview.png" format="PNG" /> </imageobject>
+            <para><inlinemediaobject><imageobject><imagedata fileref="&path;maininterfacedateview.png" format="PNG" /> </imageobject>
               <textobject><phrase>Dates View from Main Window</phrase></textobject></inlinemediaobject>
             </para>
             
@@ -728,7 +730,7 @@
             </para>
             
             <example> <title>Selecting a Tag and applying a new one</title>
-                <screenshot><mediaobject><imageobject><imagedata fileref="maininterfacetagsview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfacetagsview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
             </example>
                         
             <para>
@@ -780,7 +782,7 @@
                 </para>
 
                 <example> <title>Tagging Image with context menu, or with drag&amp;drop  from either sidebar</title>
-                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfaceassigntags.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfaceassigntags.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
                 
                 <para>
@@ -821,7 +823,7 @@
 
                 <example>
                     <title>Quick Search Tool Dialog in Action</title>
-                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfacequicksearch.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfacequicksearch.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
                 
                 
@@ -839,7 +841,7 @@
     
                 <example>
                     <title>Search View from Main Window</title>
-                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfacesearchview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfacesearchview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
 
             </sect3>            
@@ -867,7 +869,7 @@
                 
                 <example>
                     <title>A Query Option Detail</title>
-                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfaceadvancedsearchoption.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfaceadvancedsearchoption.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
                 
                 <itemizedlist>
@@ -906,7 +908,7 @@
 
                 <example>
                     <title>Advanced Search Tool Dialog in Action</title>
-                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfaceadvancedsearch.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfaceadvancedsearch.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
                 
                 </para>
@@ -916,7 +918,7 @@
                 
                 <example>
                     <title>A Query Grouped Options Example</title>
-                    <screenshot><mediaobject><imageobject><imagedata fileref="maininterfaceadvancedsearchoptiongroup.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfaceadvancedsearchoptiongroup.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
                 
                 </para>
@@ -967,7 +969,7 @@
            </para>
 
            <example>  <title>sidebar Comments &amp; Tags example</title>
-                 <screenshot><screeninfo>sidebar Comments &amp; Tags Example</screeninfo><mediaobject><imageobject><imagedata fileref="sidebarcommentstags.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                 <screenshot><screeninfo>sidebar Comments &amp; Tags Example</screeninfo><mediaobject><imageobject><imagedata fileref="&path;sidebarcommentstags.png" format="PNG" /> </imageobject></mediaobject></screenshot>
            </example>
 
           <sect3>
@@ -1064,7 +1066,7 @@
            </para>
 
            <para>
-                 <inlinemediaobject><imageobject><imagedata fileref="sidebartagfilters.png" format="PNG" /> </imageobject><textobject><phrase>Sidebar Tag Filters</phrase></textobject></inlinemediaobject>
+                 <inlinemediaobject><imageobject><imagedata fileref="&path;sidebartagfilters.png" format="PNG" /> </imageobject><textobject><phrase>Sidebar Tag Filters</phrase></textobject></inlinemediaobject>
            </para>
 
             <para>
@@ -1098,7 +1100,7 @@
             </para>
             
             <example>   <title>The Camera Client Window</title>
-                <screenshot><screeninfo>The Camera Client Window</screeninfo> <mediaobject><imageobject><imagedata fileref="cameraclient.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                <screenshot><screeninfo>The Camera Client Window</screeninfo> <mediaobject><imageobject><imagedata fileref="&path;cameraclient.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
             </example>
                 
         </sect2>
@@ -1112,7 +1114,7 @@
             </para>
 
             <example>  <title>The Camera Item Properties Side Bar Tab</title>
-                <screenshot><screeninfo>The Camera Item Properties Side Bar Tab</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientitemproperties.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                <screenshot><screeninfo>The Camera Item Properties Side Bar Tab</screeninfo><mediaobject><imageobject><imagedata fileref="&path;cameraclientitemproperties.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
             </example>
 
             <para>
@@ -1151,7 +1153,7 @@
             </para>
         
             <example>   <title>The Target Album Selection Dialog</title>
-                <screenshot><screeninfo>The Target Album Selection Dialog</screeninfo><mediaobject><imageobject><imagedata fileref="cameratargetalbumdialog.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+                <screenshot><screeninfo>The Target Album Selection Dialog</screeninfo><mediaobject><imageobject><imagedata fileref="&path;cameratargetalbumdialog.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
             </example>
 
             <para>
@@ -1163,7 +1165,7 @@
             </para>
             
             <para>  
-                <inlinemediaobject><imageobject><imagedata fileref="cameraclientdownload.png" format="PNG" /> </imageobject><textobject><phrase>The Downloading in Progress</phrase></textobject></inlinemediaobject> 
+                <inlinemediaobject><imageobject><imagedata fileref="&path;cameraclientdownload.png" format="PNG" /> </imageobject><textobject><phrase>The Downloading in Progress</phrase></textobject></inlinemediaobject> 
             </para>
 
         </sect2>
@@ -1196,7 +1198,7 @@
             </para>
 
             <example> <title>Files Renaming Options</title>
-                <screenshot><screeninfo>Files Renaming Options</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientsetting1.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                <screenshot><screeninfo>Files Renaming Options</screeninfo><mediaobject><imageobject><imagedata fileref="&path;cameraclientsetting1.png" format="PNG" /> </imageobject></mediaobject></screenshot>
             </example>
 
             <para>
@@ -1238,7 +1240,7 @@
                 </para>
 
                 <example> <title>On the fly Operations Options</title>
-                    <screenshot><screeninfo>On the fly Operations Options</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientsetting3.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><screeninfo>On the fly Operations Options</screeninfo><mediaobject><imageobject><imagedata fileref="&path;cameraclientsetting3.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
 
                 <para>
@@ -1259,7 +1261,7 @@
                 </para>
 
                 <example> <title>Albums Auto-creation Options</title>
-                    <screenshot><screeninfo>Albums Auto-creation Options</screeninfo><mediaobject><imageobject><imagedata fileref="cameraclientsetting2.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><screeninfo>Albums Auto-creation Options</screeninfo><mediaobject><imageobject><imagedata fileref="&path;cameraclientsetting2.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
 
                 <para>
@@ -1285,7 +1287,7 @@
             </para>
 
             <example>  <title>The Camera Folder Selection Dialog</title>
-                <screenshot><screeninfo>The Camera Folder Selection Dialog</screeninfo><mediaobject><imageobject><imagedata fileref="camerafolderselectiondialog.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                <screenshot><screeninfo>The Camera Folder Selection Dialog</screeninfo><mediaobject><imageobject><imagedata fileref="&path;camerafolderselectiondialog.png" format="PNG" /> </imageobject></mediaobject></screenshot>
             </example>
 
             <note><para>
@@ -1298,7 +1300,7 @@
         <title>How to use a GPS device with &digikam;</title>
             <note><para>
                     <inlinemediaobject>
-                    <imageobject><imagedata fileref="handheld_gps.png" format="PNG"/></imageobject>
+                    <imageobject><imagedata fileref="&path;handheld_gps.png" format="PNG"/></imageobject>
                     </inlinemediaobject>GPS (global positioning system) is used as a generic term throughout this document, it just means a location in latitude and longitude global coordinates that can be displayed on a map. The actual technical implementation that provides the data can be the American GPS, the Russian GLONAS, the European GALILEO or any other system.
             </para></note>
 
@@ -1399,7 +1401,7 @@
                 </para>
     
                 <para>  
-                    <inlinemediaobject><imageobject><imagedata fileref="setupalbum.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupalbum.png" format="PNG" /> </imageobject></inlinemediaobject>
                 </para>
                                     
                 <para>
@@ -1423,7 +1425,7 @@
                 </para>
     
                 <para> 
-                    <inlinemediaobject><imageobject><imagedata fileref="setupcollections.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupcollections.png" format="PNG" /> </imageobject></inlinemediaobject>
                 </para>
     
             </sect3>
@@ -1435,7 +1437,7 @@
                 </para>
 
                 <para>  
-                    <inlinemediaobject><imageobject><imagedata fileref="cameraclientidentity.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;cameraclientidentity.png" format="PNG" /> </imageobject></inlinemediaobject>
                 </para>
 
             </sect3>
@@ -1447,7 +1449,7 @@
                 </para>
                 
                 <para>  
-                    <inlinemediaobject><imageobject><imagedata fileref="setupembeddedinfo.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupembeddedinfo.png" format="PNG" /> </imageobject></inlinemediaobject>
                 </para>
                                     
                 <para>
@@ -1475,7 +1477,7 @@
                 </para>
     
                 <para>  
-                    <inlinemediaobject><imageobject><imagedata fileref="setuptooltip.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setuptooltip.png" format="PNG" /> </imageobject></inlinemediaobject>
                 </para>
 
             </sect3>
@@ -1488,7 +1490,7 @@
                 <note><para>The default settings can be easily restored by clicking onto the update buttons to the right of each category.</para></note>
     
                 <para>  
-                    <inlinemediaobject><imageobject><imagedata fileref="setupmimetypes.png" format="PNG" /> </imageobject></inlinemediaobject> 
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupmimetypes.png" format="PNG" /> </imageobject></inlinemediaobject> 
                 </para>
               
             </sect3>
@@ -1500,7 +1502,7 @@
                 <para>
                   Over and underexposed areas of an image can be indicated by dark and light marker colors that can be defined here. In the editor this viewing mode can be switched on and off with F10 and F11 respectively.</para>
                 <para> 
-                    <inlinemediaobject><imageobject><imagedata fileref="setupimageeditor.png" format="PNG" /> </imageobject></inlinemediaobject> 
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupimageeditor.png" format="PNG" /> </imageobject></inlinemediaobject> 
                 </para>
                 
             </sect3>
@@ -1512,7 +1514,7 @@
                 </para>
     
                 <para> 
-                    <inlinemediaobject><imageobject><imagedata fileref="setupsaveimages.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupsaveimages.png" format="PNG" /> </imageobject></inlinemediaobject>
                 </para>
 
                 <para>
@@ -1543,7 +1545,7 @@
                 <para>The default is to assume that all green pixels are the same. If even-row green pixels of the CCD sensor are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail. To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method.</para>
 
                 <para>
-                    <inlinemediaobject><imageobject><imagedata fileref="setuprawfiledecoding.png" format="PNG" /> </imageobject></inlinemediaobject> 
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setuprawfiledecoding.png" format="PNG" /> </imageobject></inlinemediaobject> 
                 </para>
                 
                 <para><guilabel>Use camera white balance</guilabel></para>
@@ -1590,7 +1592,7 @@
                  Basically, a profile "maps" the color information and gives information on how one should render them. It gives also information to LCMS and &digikam; on how to translate the color information from one color space to an other in order to keep the colors as accurate as possible. 
               </para>
                 <para>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupiccprofiles.png" format="PNG" /> </imageobject></inlinemediaobject> 
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupiccprofiles.png" format="PNG" /> </imageobject></inlinemediaobject> 
                 </para>
 
               <para><guilabel>Behavior</guilabel> Ask when opening an image in image editor / Launch Color Management tool with RAW files</para>
@@ -1627,7 +1629,7 @@
                 </para>
     
                <para>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupkipiplugins.png" format="PNG" /> </imageobject></inlinemediaobject> 
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupkipiplugins.png" format="PNG" /> </imageobject></inlinemediaobject> 
                 </para>
     
                 <para>
@@ -1649,7 +1651,7 @@
             <sect3 id="setup-slideshow">              <title>Slide show setup</title>
                 <para>The slide show setup should be easy to understand. The upper slider adjusts the time between image transitions; usually a time of 4-5 seconds is good. The other check boxes enable/disable the metadata to be shown on the bottom of the slide show pictures during display.</para>
                 <para>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupslideshow.png" format="PNG" /> </imageobject></inlinemediaobject> 
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupslideshow.png" format="PNG" /> </imageobject></inlinemediaobject> 
                 </para>
             </sect3>
 
@@ -1660,7 +1662,7 @@
                 </para>
                 
                 <para>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupcamera.png" format="PNG" /> </imageobject></inlinemediaobject> 
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupcamera.png" format="PNG" /> </imageobject></inlinemediaobject> 
                 </para>
                 
                 <anchor id="cameraselection.anchor"/>
@@ -1674,7 +1676,7 @@
                 </para>
                             
                 <para>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupaddcamera.png" format="PNG" /> </imageobject></inlinemediaobject> 
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupaddcamera.png" format="PNG" /> </imageobject></inlinemediaobject> 
                 </para>
     
                 <para>
@@ -1713,7 +1715,7 @@
                 </para>
                 
                 <para>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupmisc.png" format="PNG" /> </imageobject></inlinemediaobject> 
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupmisc.png" format="PNG" /> </imageobject></inlinemediaobject> 
                 </para>
                 
             </sect3>
@@ -1738,7 +1740,7 @@
             <tbody>
                 <row>
                     <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupthemeclean.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemeclean.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -1748,7 +1750,7 @@
 
                 <row>
                     <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupthemedark.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemedark.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -1758,7 +1760,7 @@
 
                 <row>
                     <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupthemedefault.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemedefault.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -1768,7 +1770,7 @@
 
                 <row>
                     <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupthemedessert.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemedessert.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -1779,7 +1781,7 @@
 
                 <row>
                     <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupthemedigicasa.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemedigicasa.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -1790,7 +1792,7 @@
 
                 <row>
                     <entry>
-                     <inlinemediaobject><imageobject><imagedata fileref="setupthemedreary.png" format="PNG" /> </imageobject></inlinemediaobject>
+                     <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemedreary.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -1800,7 +1802,7 @@
 
                 <row>
                     <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupthememarine.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthememarine.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
 
                     <entry>
@@ -1810,7 +1812,7 @@
 
                 <row>
                     <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupthemeorangecrush.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemeorangecrush.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
                 
                     <entry>
@@ -1820,7 +1822,7 @@
 
                 <row>
                     <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="setupthemesandy.png" format="PNG" /> </imageobject></inlinemediaobject>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemesandy.png" format="PNG" /> </imageobject></inlinemediaobject>
                     </entry>
 
                     <entry>
@@ -1859,7 +1861,7 @@
             </para>
             
             <example>  <title>The Image Editor Window</title>
-                <screenshot><screeninfo>The Image Editor Window</screeninfo><mediaobject><imageobject><imagedata fileref="editorpreview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                <screenshot><screeninfo>The Image Editor Window</screeninfo><mediaobject><imageobject><imagedata fileref="&path;editorpreview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
             </example>
             
             <para>
@@ -1880,7 +1882,7 @@
                         
             <para>
                 <inlinemediaobject>
-                    <imageobject><imagedata fileref="editortoolbar.png" format="PNG"/></imageobject>
+                    <imageobject><imagedata fileref="&path;editortoolbar.png" format="PNG"/></imageobject>
                     <textobject> <phrase>The Image Editor Toolbar</phrase> </textobject>
                 </inlinemediaobject>
             </para>
@@ -1942,7 +1944,7 @@
             <guimenuitem>Revert</guimenuitem></menuchoice> 
             or clicking the 
             <inlinemediaobject>
-                <imageobject><imagedata fileref="editorrevertbutton.png" format="PNG"/></imageobject>
+                <imageobject><imagedata fileref="&path;editorrevertbutton.png" format="PNG"/></imageobject>
                 <textobject><phrase>The Image Editor Revert Button</phrase></textobject>
             </inlinemediaobject>
             <guilabel>Revert</guilabel> button on the toolbar. You will lose any changes that you have made to the photograph since it was last saved.
@@ -1979,14 +1981,14 @@
             <para>
             You can zoom in and out of a photograph using the 
             <inlinemediaobject>
-                <imageobject><imagedata fileref="editorzoombuttons.png" format="PNG"/></imageobject>
+                <imageobject><imagedata fileref="&path;editorzoombuttons.png" format="PNG"/></imageobject>
                 <textobject> <phrase>The Image Editor Zoom Buttons</phrase> </textobject>
             </inlinemediaobject> buttons on the toolbar or the entries in the View menu.
             </para>
             <para> 
             To make a photograph fit the window use this button on the toolbar:<guilabel>Zoom Autofit</guilabel> 
             <inlinemediaobject>
-                <imageobject><imagedata fileref="editorautosizebutton.png" format="PNG"/></imageobject>
+                <imageobject><imagedata fileref="&path;editorautosizebutton.png" format="PNG"/></imageobject>
                 <textobject> <phrase>The Image Editor AutoFit Button</phrase> </textobject>
             </inlinemediaobject>
             </para>
