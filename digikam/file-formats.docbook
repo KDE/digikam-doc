@@ -1,0 +1,239 @@
+ <sect1 id="using-fileformatsupport">  <title>Supported Image File Formats</title>
+
+        <sect2>
+        <title>Still Photograph Formats</title>
+        
+            <sect3>
+            <title>Introduction</title>
+    
+                <para>
+                Almost all digital cameras store photographs in one of two formats: JPEG or TIFF. Many cameras enable you to select which of these formats to use. A full description of these formats can be found at the <ulink url="http://en.wikipedia.org/wiki/Graphics_file_format">Wikipedia</ulink>. &digikam; supports both of these formats.
+                </para>
+            
+            </sect3>
+
+            <sect3>
+            <title>Still Image Compression</title>
+    
+                <para>
+                Image compression is the application of data compression schemes on digital images. It is done through reducing redundancy of the image data in order to be able to store or transmit data in an efficient form.
+                </para>
+            
+                <para>
+                Image compression can be lossy or lossless. Lossless compression methods are always preferred for their high preservation value for archival purposes before applying transformations like cropping, resizing, color corrections, &etc;. This is because lossy compression methods, especially when used at low bit rates, introduce compression artifacts. Lossy methods are suitable for natural images such as photos in applications where minor (sometimes imperceptible) loss of fidelity is acceptable to achieve a substantial reduction in file size. Lossy compression is good for image publishing on the Internet.
+                </para>
+            
+            </sect3>
+            
+            <sect3>
+            <title>JPEG</title>
+                <para>
+                JPEG is a compressed format, that trades some of the image quality to keep filesizes small. In fact, most cameras save their images in this format unless you specify otherwise. A JPEG image is stored using lossy compression and you can vary the amount of compression. This allows you to choose between lower compression and higher image quality or greater compression and poorer quality. The only reason to choose higher compression is because it creates smaller file so you can store more images, and it is easier to send them by e-mail, or post them on the Web. Most cameras give you two or three choices equivalent to good, better, best although the names vary.
+                </para>
+		<para>
+		JPEG 2000 is supported as well. In general it give for the same compression ratio the better (smoother) results compared to JPEG. The 2000 version has the option of being lossless if so specified in the settings.
+		</para>
+            
+            </sect3>
+
+            <sect3>
+            <title>TIFF</title>
+                <para>
+                TIFF has been widely accepted and widely supported as an image format. Commonly, TIFF may be stored by the camera in uncompressed form or using lossless compression algorithm (Deflate). It maintains higher image quality but at the expense of much larger filesizes. Some cameras let you save your images in this format and it is a popular format because of its lossless compression algorithm. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by programs.
+                </para>
+            
+            </sect3>
+
+            <sect3>
+            <title>PNG</title>
+                <para>
+                PNG is an image format that was developed as a replacement for a number of older, in the 1990's widely used, image file formats. It is a lossless format like TIFF but it is much more compact and saves disk space. Although your camera is unlikely to support PNG, some people like to convert their photographs to PNG as soon as they get them on their computer. Unlike JPEG, PNG images do not lose quality every time you re-encode them after modification. &digikam; fully supports PNG images and the Batch Processing Images Plugin can convert a batch of images from any supported format to PNG in one step. See the <link linkend="using-setup">Configuration</link> section for information about using plugins with &digikam;.
+                </para>
+    
+                <para>
+                PNG is an extensible file format for the lossless, portable, well-compressed storage of raster images. PNG provides a patent-free replacement for &GIF; and can also replace many common uses of TIFF. PNG is designed to work well in on-line viewing applications, such as the World Wide Web, so it is fully streamable with a progressive display option. Also, PNG can store gamma and chromaticity data for improved color matching on heterogeneous platforms. PNG supports 8 and 16 bits / colors /pixels depth. It's the perfect file format to archive your photographs. For more information about the PNG format see the <ulink url="http://www.libpng.org/pub/png/">PNG homepage</ulink>.
+                </para>
+            
+            </sect3>
+
+            <sect3>
+            <title>RAW</title>
+                
+                <para>
+                Some, typically more expensive, cameras allow you to store images in RAW format. RAW format is not really an image standard at all. It is different for every make of camera. RAW format images contain all the data that is taken directly from the camera's image sensor before the software in the camera applies things like white balance, sharpening &etc;. Storing  photographs in a camera's RAW format allows you to alter settings, such as white balance, after the photograph has been taken. Most professional photographers use RAW format, because it offers them maximum flexibility. The downside is that RAW image files can be very large indeed. 
+                </para>
+                
+                <para>
+                If you want to learn more about RAW image format visit the very helpful guides<ulink url="http://en.wikipedia.org/wiki/RAW_image_format"> Wikipedia</ulink> <ulink url="http://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml"> The Luminous Landscape</ulink> and <ulink url="http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm"> Cambridge in Colour</ulink>. You can convert RAW format images into JPEG or TIFF in &digikam; using the <ulink url="help:/kipi-plugins/rawconverter.html">RAW Image Converter plugin</ulink>. See the <link linkend="using-setup">Configuration</link> section for information about using plugins with &digikam;.
+                </para>
+
+                <para>
+                &digikam; supports RAW image loading only relying on the <ulink url="http://www.cybercom.net/~dcoffin/dcraw"> DCRAW program</ulink> which is included into &digikam; core and supports over 200 RAW file formats. See below a short list of main camera RAW files supported by &digikam;:
+                                            
+                <informaltable><tgroup cols="2">
+        
+                    <thead><row>
+                    <entry>RAW File Format</entry>
+                    <entry>Description</entry>
+                    </row></thead>
+                    <tbody>                
+                        <row><entry>
+                        CRW, CR2
+                        </entry><entry>
+                        Canon digital camera RAW file formats
+                        </entry></row>
+                        
+                        <!-- ************************ -->
+                        <row><entry>
+                        NEF
+                        </entry><entry>
+                        Nikon digital camera RAW file format
+                        </entry></row>
+                        
+                        <!-- ************************ -->
+                    
+                        <row><entry>
+                        ORF
+                        </entry><entry>
+                        Olympus digital camera RAW file format
+                        </entry></row>
+                        
+                        <!-- ************************ -->
+                    
+                        <row><entry>
+                        RAF
+                        </entry><entry>
+                        Fuji digital camera RAW file format
+                        </entry></row>
+                        
+                        <!-- ************************ -->
+                    
+                        <row><entry>
+                        PEF, PTX
+                        </entry><entry>
+                        Pentax digital camera RAW file format
+                        </entry></row>
+                        
+                        <!-- ************************ -->
+                    
+                        <row><entry>
+                        X3F
+                        </entry><entry>
+                        Sigma digital camera RAW file format
+                        </entry></row>
+
+                        <!-- ************************ -->
+                    
+                        <row><entry>
+                        DCR, KDC, DC2, K25
+                        </entry><entry>
+                        Kodak digital camera RAW file format
+                        </entry></row>
+                                                
+                        <!-- ************************ -->
+                    
+                        <row><entry>
+                        SRF, ARW, MRW, MDC
+                        </entry><entry>
+                        Sony/Minolta digital camera RAW file format
+                        </entry></row>
+
+                        <!-- ************************ -->
+                    
+                        <row><entry>
+                        RAW
+                        </entry><entry>
+                        Panasonic, Casio, Leica digital camera RAW file format
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        
+                        <row><entry>
+                        DNG (CS1, HDR)
+                        </entry><entry>
+                        Adobe RAW file format (Digital Negative)
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        
+                        <row><entry>
+                        BAY
+                        </entry><entry>
+                        Casio RAW (Bayer)
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        
+                        <row><entry>
+                        ERF
+                        </entry><entry>
+                        Epson digital camera RAW file format
+                        </entry></row>
+
+                        <!-- ************************ -->
+                     
+                        <row><entry>
+                        FFF
+                        </entry><entry>
+                        Imacon/Hasselblad RAW format
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        
+                        <row><entry>
+                        MOS
+                        </entry><entry>
+                        CREO Photo RAW
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        <row><entry>
+                        PXN
+                        </entry><entry>
+                        Fotoman RAW
+                        </entry></row>
+                                            
+                        <!-- ************************ -->
+                        <row><entry>
+                        RDC
+                        </entry><entry>
+                        Ricoh RAW format
+                        </entry></row>
+                                            
+                    
+                    </tbody>
+        
+                </tgroup></informaltable>
+            
+                </para>
+            
+            </sect3>
+            
+        </sect2>
+
+        <sect2>
+        <title>Moving Image Formats (Videos)</title>
+
+        <para>
+        Many digital cameras support taking of short movie clips. These clips are usually stored in AVI or MPEG format. &digikam; understands these formats and will generate thumbnails for the movie files. However, &digikam; is not a movie editing application and it does not have any built-in movie viewing or editing capabilities. If you double click on a movie file &digikam; will use your &kde; settings to choose a viewing application to use.
+        </para>
+        </sect2>
+
+        <sect2>
+        <title>How &digikam; Supports File Formats</title>
+
+        <para>
+        &digikam; relies on a number of libraries and support packages to load and save image formats. Which image formats are available will depend on the availability of these libraries on your system and, in some cases, on the way that those libraries have been compiled. On most distributions you will find that a wide range of image formats are viewable within &digikam;.
+        </para>
+
+        <para>
+        This dependence on other libraries means that it is not possible to give a definitive list of all of the formats that will be available on your system. At the very least JPEG, PNG, and TIFF will be available.
+        </para>
+
+        <para>
+        &digikam; only displays files that are in formats that it understands. It does this by looking at the file extension on the files and checking this against a predefined list. If the file extension is in the list &digikam; will show the file in the Image View. You can change the list of file extensions that &digikam; will accept, see the <link linkend="using-setup">Configuration</link> section for more details.
+        </para>
+
+        </sect2>
+    
+    </sect1>
