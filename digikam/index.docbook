@@ -5,7 +5,7 @@
   <!ENTITY % addindex "IGNORE">
   <!ENTITY % English "INCLUDE"><!-- change language only here -->
   <!ENTITY digikam '<application>digiKam</application>'>
-  <!-- path to snapshots for digikam and showfoto -->
+<!-- relative path to snapshots for digikam and showfoto -->
   <!ENTITY path "">
   <!ENTITY doc-file-formats     SYSTEM "file-formats.docbook">
   <!ENTITY doc-sidebar          SYSTEM "sidebar.docbook">
@@ -80,7 +80,7 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2006-03-28</date>
+<date>2006-04-09</date>
 <releaseinfo>0.9.2</releaseinfo>
 
 <abstract>
@@ -121,14 +121,14 @@
        <title>About &digikam;</title>
 
        <para>
-       &digikam; is an advanced digital photo management application for the &kde; desktop. It provides a simple interface which makes importing and organizing digital photographs a "snap". &digikam; enables you to manage large numbers of digital photographs in Albums and to organize these photographs for easy retrieval using tags. It has many features for viewing, organizing, manipulating and sharing your pictures.
+       &digikam; is an advanced digital photo management application for the &kde; desktop. It provides a simple interface which makes importing and organizing digital photographs a &quot;snap&quot;. &digikam; enables you to manage large numbers of digital photographs in Albums and to organize these photographs for easy retrieval using tags, collections, dates and searches. It has many features for viewing, organizing, processing and sharing your pictures.
        </para>
     
        <para>
-       An easy to use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than 800 digital cameras are supported through the gphoto2 library.
+       An easy-to-use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">800 digital cameras</ulink> are supported through the gphoto2 library.
        </para>
        
-       <para>&digikam; incorporates a fast Image Editor with basic image editing tools. You can use the Image Editor to view your photographs, comment and rate them, make corrections and alterations. The editing power can be easily extended by a set of plugins, the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface</ulink> (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) 
+       <para>&digikam; incorporates a fast Image Editor with many image editing tools. You can use the Image Editor to view your photographs, comment and rate them, correct, enhance and alter them. The editing power can be easily extended by a set of plugins, the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface</ulink> (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) 
        </para>
 
        <para>While &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports RAW format conversion through David Coffins dcraw and ICC color management work flow.
@@ -1445,7 +1445,7 @@
             <sect3 id="setup-embeddedinfo">           <title>Metadata (embedded information settings)</title>
     
                 <para>
-                Image files can have some meta-data embedded into the image file format. This meta-data can be stored in a number of standard formats. &digikam; can read meta-data in the EXIF format if it is present in the file. &digikam; can also write comments into the <ulink url="http://www.exif.org">EXIF information</ulink>. Writing comments to the EXIF section is limited to JPEG images.
+                Image files can have some meta-data embedded into the image file format. This meta-data can be stored in a number of standard formats. &digikam; can read meta-data in the EXIF format if it is present in the file. &digikam; can also write comments into the <ulink url="http://www.exif.org">EXIF information</ulink>. Writing comments to the EXIF section is limited to JPEG images for now (the exiv2 library is in development and will be extended to PNG and TIFF format metadata embedding in the near future).
                 </para>
                 
                 <para>  
@@ -1457,17 +1457,21 @@
                 </para>            
                 
                 <para>
-                <guilabel>Save image comments as embedded comments (JFIF) in JPEG images</guilabel> : this will synchronize the comments that you add to your photographs with those in embedded in the image. This is useful because the comments embedded in the image can be read by other image viewers. Care should be taken if you have images that already have comments embedded in them because these comments will be overwritten by the comments made within &digikam;.
-                </para> 
-    
-                <para>
-                <guilabel>Rotate Images and Thumbnails according to EXIF tag</guilabel> : this will use any orientation information that your camera has included in the EXIF information to automatically rotate your photographs so that they are the correct way up when displayed. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can right-click on the thumbnail and select <guilabel>Auto-rotate/flip according to EXIF orientation</guilabel>. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
+                <guilabel>Show images/thumbs rotated according to EXIF tag</guilabel> : this will use any orientation information that your camera has included in the EXIF information to automatically rotate your photographs so that they are the correct way up when displayed. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can right-click on the thumbnail and select <guilabel>Auto-rotate/flip according to EXIF orientation</guilabel>. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
                 </para> 
                 
                 <para>
                 <guilabel>Set EXIF Orientation Tag to Normal after rotate/flip</guilabel> : the Auto Rotate option automatically corrects the orientation of images taken with digital cameras that have an orientation sensor. The camera adds an orientation tag to the image's EXIF meta-data. &digikam; can read this tag to adjust the image accordingly. If you manually rotate an image, this meta-data will be incorrect. This option will set the orientation tag to "Normal" after an adjustment, assuming that you rotated it to the correct orientation. Switch this off if you don't want &digikam; to make changes to the orientation tag, when you rotate or flip the image.
                 </para> 
-                            
+
+                <para>
+                 The <guilabel>IPTC Actions</guilabel> will save the data into the respective IPTC fields, which ensures a permanent metadata storage in the image and not only in &digikam;'s database. Thus, metadata is persistent across applications, and may be exported or imported into &digikam; without loss.
+                </para>
+
+                <para>
+                <guilabel>Save image comments as embedded comments (JFIF) in JPEG images</guilabel> : this will synchronize the comments that you add to your photographs with those in embedded in the image. This is useful because the comments embedded in the image can be read by other image viewers. Care should be taken if you have images that already have comments embedded in them because these comments will be overwritten by the comments made within &digikam;.
+                </para> 
+    
             </sect3>
 
             <sect3 id="setup-tooltip">                <title>Tooltip Settings</title>
