@@ -232,7 +232,7 @@
         </para>
 
         <para>
-        Once you have configured the Album Library Folder you can setup &digikam; to work with your digital camera. Then learn how to use <link linkend="using-myalbumsview">Albums</link> and <link linkend="using-mytagsview">My Tags</link> to arrange your photograph Albums.
+        Once you have configured the Album Library Folder you can setup &digikam; to work with your digital camera. Then learn how to use <link linkend="using-myalbumsview">Albums</link> and <link linkend="using-mytagsview">Tags</link> to arrange your photograph Albums.
         </para> 
         </sect2> 
     </sect1>
@@ -476,7 +476,7 @@
             <title>Moving or Copying Photographs Between Albums</title>
                 
                 <para>
-                Simply drag the photograph and drop it on the destination Album to move or copy it from on Album to another. A menu will appear that gives you the option to <guilabel>Move</guilabel> or <guilabel>Copy</guilabel> the photograph. You can move or copy multiple photographs the same way, just select all the photographs that you want to move and drag them on to the destination Album. 
+                Simply drag the photograph and drop it on the destination Album to move or copy it from one Album to another. A menu will appear that gives you the option to <guilabel>Move</guilabel> or <guilabel>Copy</guilabel> the photograph. You can move or copy multiple photographs the same way, just select all the photographs that you want to move and drag them on to the destination Album. 
                 </para>
         
             </sect3>
@@ -487,7 +487,7 @@
                 <anchor id="albumpropsedit.anchor"/>
                 
                 <para>
-                An Album contains a set of photographs and the Album Properties allows you to set information about this set. To access the Album Properties right-click on an Album and select <guilabel>Edit Album Properties</guilabel> from the context menu.
+                An Album contains a set of images and the Album Properties allows you to set information about this set. To access the Album Properties right-click on an Album and select <guilabel>Edit Album Properties</guilabel> from the context menu.
                 </para>
         
                 <para>The Album Properties dialog allows you to set:</para>
@@ -529,8 +529,7 @@
                 To select a different photograph as the Album icon, right-click on the photograph that you want to use as the Album icon and select &quot;Set as Album Thumbnail&quot; from the context menu. Additionally you can use drag and drop to set the Album icon. Drag the photographs icon and drop it on the currently selected Album in the Album list.
                 </para>
 
-            <note><para>A note on Album Collections</para>
-
+            <note>
                 <para>
                 An Album can only be in one Album Collection and Album Collections cannot be nested.
                 </para>
@@ -563,9 +562,9 @@
                 The first time you select an Album you may have to wait briefly while the thumbnails are generated, unless you used the 
 			<menuchoice>
                         	<guimenu>Tools</guimenu> 
-				<guimenuitem>Rebuild all Thumbnails</guimenuitem> 
+				<guimenuitem>Rebuild all Thumbnails...</guimenuitem> 
 			</menuchoice> menu item beforehand. 
-                </para>            
+                </para>
             
                 <para>
                 Information about each photograph is displayed below each thumbnail. You can control what information is displayed from the 
@@ -577,7 +576,7 @@
                 </para> 
 
                 <para>
-                The thumbnails have Tool Tips which will pop up if you allow the mouse to dwell over a thumbnail for a moment. The Tool Tip shows the most important properties of the photograph including any Tags that you have applied. The screenshot at the top of the <link linkend="using-mainwindow-intro">Introduction to the Main Window</link> section shows a Tool Tip being displayed.
+                The thumbnails have Tool Tips which will pop up if you allow the mouse to dwell over a thumbnail for a moment. The Tool Tip shows the most important properties of the photograph including any tags that you have applied. The screenshot at the top of the <link linkend="using-mainwindow-intro">Introduction to the Main Window</link> section shows a Tool Tip being displayed.
                 </para>
 
             </sect3>
@@ -702,8 +701,7 @@
 
         </sect2>
 
-<sect2 id="using-mydatesview">
-            <title>&quot;Dates&quot; View from Main Window</title>
+   <sect2 id="using-mydatesview">       <title>&quot;Dates&quot; View from Main Window</title>
 
             <para><inlinemediaobject><imageobject><imagedata fileref="&path;maininterfacedateview.png" format="PNG" /> </imageobject>
               <textobject><phrase>Dates View from Main Window</phrase></textobject></inlinemediaobject>
@@ -722,84 +720,78 @@
             
         </sect2>
 
-        <sect2 id="using-mytagsview">
-          <title>&quot;Tags&quot; View</title>
+   <sect2 id="using-mytagsview">        <title>&quot;Tags&quot; View</title>
 
-            <para>
-            (Hierarchical) photograph tagging provides a flexible and powerful way to organize and catalog your images. Tags are labels that can be applied to individual images or whole groups. Once a Tag has been set to a photograph, that photograph can be found again by selecting the Tag or doing a search.
-            </para>
-            
-            <example> <title>Selecting a Tag and applying a new one</title>
+      <para>
+        (Hierarchical) tagging provides a flexible and powerful way to organize and catalog your images. Tags are labels that can be applied to individual images or whole groups. Once a tag has been set to an image it can be found again by selecting the tag or doing a search.
+      </para>
+      
+            <example> <title>Selecting a tag and applying a new one</title>
                 <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfacetagsview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
             </example>
                         
-            <para>
-            When a Tag is selected, all of the images that are marked with that Tag are displayed.
-            </para>
+      <para>When a tag is selected, all of the images that are marked with that tag are displayed.     </para>
 
-            <para>
-            Tags can be arranged in a hierarchical tree. This allows you to organize your Tags in a logical manner. It also allows you to collapse parts of the tree in the &quot;Tags&quot; list so that you can easily find the Tags that you are looking for.
-            </para>
+      <para>
+         Tags can be arranged in a hierarchical tree. This allows you to organize your tags in a logical manner. One can collapse parts of the tree in the &quot;Tags&quot; list so that one can easily find the tags that you are looking for.
+      </para>
 
              <tip>
-              <para>Tags are stored in a database for fast access, and, the applied tags are written into IPTC data fields of the image (at least for JPEG). So can use your tags with other programs or, on case of loss of that data in the database, the tags will be re-imported when the image is noticed by &digikam;.</para></tip>
+              <para>Tags are stored in a database for fast access, and the applied tags are written into IPTC data fields of the image (at least for JPEG). So can use your tags with other programs or, in case of loss of that data in the database, the tags will be re-imported with the image by &digikam;.</para></tip>
 
-            <sect3 id="using-managetags">
-                <title>Managing Tags</title>
+      <sect3 id="using-managetags">          <title>Managing Tags</title>
              
-                <para>
-                You can add new Tags by right-clicking on either the &quot;Tags&quot; label or an existing Tag and selecting <guilabel>New Tag</guilabel>. If you add a new Tag by right-clicking on an existing Tag, your new Tag will be created as a sub-Tag.
-                </para>
+         <para>
+           You can add new tags by right-clicking on either the &quot;Tags&quot; label or an existing tag and selecting <guilabel>New Tag</guilabel>. If you add a new tag by right-clicking on an existing tag, your new tag will be created as a sub-tag.
+         </para>
 
-                <para>
-                You can delete a Tag by right-clicking on the Tag you want to delete and selecting <guilabel>Delete</guilabel> Tag. When you delete a tag the images themselves are not deleted. Simply the tag is removed from those images.
-                </para>
+         <para>
+           You can delete a tag by right-clicking on the tag you want to delete and selecting <guilabel>Delete</guilabel> tag. When you delete a tag the images themselves are not deleted. Simply the tag is removed from those images.
+         </para>
 
-                <para>
-                You can move the position of a Tag within the tree by dragging it into the position that you want and dropping it there. A menu will appear that gives you the option to 
-                <guilabel>Move</guilabel> the Tag. This works from the left and right sidebar. A Tag can only be in one place in the tree at a time.
-                </para>
+         <para>
+           You can move the position of a tag within the tree by dragging it into the position that you want and dropping it there. A menu will appear that gives you the option to 
+           <guilabel>Move</guilabel> the tag. This works from the left and right sidebar. A tag can only be in one place in the tree at a time.
+         </para>
                 
-                <para>
-                You can set the Tag Properties by right-clicking on a Tab and selecting <guilabel>Edit Tag Properties</guilabel>. The Tag Properties allow you to change the name of the Tag and the icon used in the "My Tag" tree.
-                </para>
+         <para>
+           You can set the Tag Properties by right-clicking on a Tab and selecting <guilabel>Edit Tag Properties</guilabel>. The Tag Properties allow you to change the name of the tag and the icon used in the &quot;Tags&quot; tree.
+         </para>
 
-                <para>
-                To select a different photograph as the Tag icon, right-click on the photograph that you want to use as the Tag icon and select "Set as Tag Thumbnail" from the context menu. Additionally you can use drag and drop to set the Tag icon. Drag the images icon and drop it on the currently selected Tag in the Tag list.
-                </para>                
-                                                                        
-            </sect3>    
+         <para>
+           To select a different photograph as the tag icon, right-click on the photograph that you want to use as the tag icon and select "Set as Tag Thumbnail" from the context menu. Additionally you can use drag and drop to set the tag icon. Drag the images icon and drop it on the currently selected tag in the tag list.
+         </para>
 
-            <sect3 id="using-taggingimages">
-               <title>Tagging Photographs</title>
+       </sect3>    
+
+       <sect3 id="using-taggingimages">           <title>Tagging Photographs</title>
              
-                <para>
-                Before you can get the most out of &digikam;'s Tagging capabilities you must first tag your photographs. There are two methods of tagging photographs. Once you have identified the photographs that you want to tag you can either drag and drop them onto the Tag in the &quot;Tags&quot; tree or, by right-clicking on the selected photographs in the Image Window, you can use the <guilabel>Assign Tag</guilabel> menu to select the Tags you wish to set.
-                </para>
+         <para>
+           Before you can get the most out of &digikam;'s tagging capabilities you must first tag your photographs. There are two methods of tagging photographs. Once you have identified the photographs that you want to tag you can either drag and drop them onto the tag in the &quot;Tags&quot; tree or, by right-clicking on the selected photographs in the Image Window, you can use the <guilabel>Assign Tag</guilabel> menu to select the tags you wish to set.
+         </para>
 
-                <para>
-                You can label a photograph with as many Tags as you like. The photograph will appear when you select any of the Tags that are set against it. This way you can set a Tag for each person in a photograph, as well as the place the photograph was taken, the event it was taken at, &etc;.
-                </para>
+         <para>
+           You can label a photograph with as many tags as you like. The photograph will appear when you select any of the tags that are set against it. This way you can set a tag for each person in a photograph, as well as the place the photograph was taken, the event it was taken at, &etc;.
+         </para>
 
-                <example> <title>Tagging Image with context menu, or with drag&amp;drop  from either sidebar</title>
-                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfaceassigntags.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-                </example>
+           <example> <title>Tagging Image with context menu, or with drag&amp;drop  from either sidebar</title>
+           <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfaceassigntags.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+           </example>
                 
-                <para>
-                Once you have tagged a photograph, the Tag name will appear under the thumbnail in the Image Window.
-                </para>
+         <para>
+           Once you have tagged a photograph, the tag name will appear under the thumbnail in the Image Window.
+         </para>
                 
-                <para>
-                You can remove a Tag from a photograph by right-clicking on the photograph and using the <guilabel>Remove</guilabel> Tag menu. This menu will only show those Tags that have been set on this photograph. 
-                </para>
-                                                                                        
+         <para>
+            You can remove a tag from a photograph by right-clicking on the photograph and using the <guilabel>Remove</guilabel> Tag menu. This menu will only show those tags that have been set on this photograph. 
+         </para>
+
             </sect3>  
                                 
         </sect2>
         
           
-        <sect2 id="using-mysearchesview">
-        <title>&quot;Searches&quot; View</title>
+    <sect2 id="using-mysearchesview">        <title>&quot;Searches&quot; View</title>
 
             <sect3>
             <title>The Quick Search Tool</title>
@@ -810,11 +802,11 @@
                 </para>
 
                <para>Search Properties:<itemizedlist>
-                                    <listitem><para>searches are case insensitive</para></listitem>
-                                    <listitem><para>blank separated search terms are boolean AND combinations</para></listitem>
-                                    <listitem><para>special characters are literal and not interpreted ( . * ? / &etc;)</para></listitem> 
-                                    <listitem><para>include all elements of the database: names, rating, keywords, tags, albums, collections, dates (and more in the future)</para></listitem>
-                                 </itemizedlist>
+                     <listitem><para>searches are case insensitive</para></listitem>
+                     <listitem><para>blank separated search terms are boolean AND combinations</para></listitem>
+                     <listitem><para>special characters are literal and not interpreted ( . * ? / &etc;)</para></listitem> 
+                     <listitem><para>include all elements of the database: names, rating, keywords, tags, albums, collections, dates (and more in the future)</para></listitem>
+                     </itemizedlist>
                </para>
                 
                 <para>
@@ -931,7 +923,45 @@
             
         </sect2>
                 
-    </sect1>
+ </sect1>
+
+ <sect1 id="using-lighttable">          <title>The &digikam; Light Table</title>
+     <para>
+       &digikam; features a light table in a separate window to easily compare images. It work on all supported image formats including RAW files.
+     </para>
+     <para>
+       Select one or several images in any view from the main window, call 
+         <menuchoice> <shortcut><keycombo><keycap>F6</keycap></keycombo> </shortcut>
+            <guimenu>Place onto Light Table</guimenu>
+         </menuchoice> 
+       from the context menu. The selection will be added to the light table, and its separate window will open. When you are back to the &digikam; main window you can quickly access the light table with <menuchoice> <shortcut>
+          <keycombo action="press"><keycap>&Alt;</keycap><keycap>F6</keycap></keycombo> </shortcut>
+          <guimenu>Tools</guimenu><guimenuitem>Light Table</guimenuitem> </menuchoice>.
+     </para>
+
+     <para>
+       From the thumbbar drag &amp; drop images to the left and right comparison pane below. A little arrow will indicate which copy is shown in which pane. If you choose <guilabel>Synchronize Preview</guilabel> from the toolbar, any zoom and panning in one window will be synchronously executed in the other pane, so that you can compare the same areas of two images.
+     </para>
+
+     <para>
+        Another mode is better suited for quickly culling from a series of images. If you choose <guilabel>Navigate by Pair</guilabel> from the toolbar, the first two images will be automatically inserted into the comparison panes. Click on any thumbnail to make it the left side preview, the adjacent thumbnail to the right will be inserted into the right pane. That make it easy to sift through a series of similar images.
+      </para>
+      <para>
+        Of course, the usual delete actions work from the light table directly as well as 
+           <menuchoice> <shortcut><keycombo action="press"><keycap>F4</keycap></keycombo> </shortcut>
+                <guimenu>File</guimenu><guimenuitem>Edit...</guimenuitem>
+           </menuchoice>.
+      </para>
+
+      <para>
+         All image information from the main window right sidebar is available for each of the two previews in the light table. This makes it easy to link visual differences to exposure data, for example.
+      </para>
+                <example>
+                    <title>The Light Table in Action</title>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;lighttable.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
+ 
+ </sect1>
 
  <sect1 id="using-sidebar">            <title>&digikam; sidebar</title>
     <anchor id="sidebar.anchor"/>
@@ -1032,7 +1062,7 @@
           <title>Tag Tree</title>
 
            <para>
-           The Tag view shows an adaptive filter tag search box, the tag tree and a combo-box containing the tags previously applied in this &digikam; session.
+           The tag view shows an adaptive filter tag search box, the tag tree and a combo-box containing the tags previously applied in this &digikam; session.
            </para>
            <para>
            The tag tree will be adapted dynamically as a function of the search word as you type into the box. So it is easy to quickly reduce the number of possibilities when searching for a tag. Of course, this feature is only useful if you have many tags.
@@ -1057,7 +1087,7 @@
         <sect2 id="using-sidebartagfilters">
         <title>Tag Filters</title>
            <para>
-           The tag filter sidebar is used to modify the set of images displayed in the main window view. Normally one uses the left sidebar with its Album, Date, Tag and Searches view. When additionally one or more tags on right sidebar tag filter is checked, only the cross-section of these two selections will be displayed. All created tags are available. 
+           The tag filter sidebar is used to modify the set of images displayed in the main window view. Normally one uses the left sidebar with its Album, Date, Tags and Searches view. When additionally one or more tags on right sidebar tag filter is checked, only the cross-section of these two selections will be displayed. All created tags are available. 
            </para>
            <para>
            To give an example, suppose you have a tag called 'public' which tags all images except your private ones. Then you can check this 'public' tag in the right sidebar to hide the private images (all those not having 'public' tag). Whatever view mode you chose from the left sidebar, 'public' only image will be displayed. Another typical example is the selection of a subset of tags in a hierarchical tree. Suppose you want to display 'red' and 'green' from a tag tree containing 7 different colors as sub-tags. Simply click on the 'color' tag of the main view and check 'red' and 'green' from the right sidebar.
@@ -1975,7 +2005,7 @@
         <sect2>       <title>Moving Between Photographs</title>
             
             <para>
-            Once you have started the Image Editor you can move between photographs in the same Album or Tag view by using the navigator buttons on the toolbar or the entries in the <guilabel>File</guilabel> menu. If you have made any changes to the current photograph you will be asked if you want to save them.
+            Once you have started the Image Editor you can move between photographs in the same Album or Tags view by using the navigator buttons on the toolbar or the entries in the <guilabel>File</guilabel> menu. If you have made any changes to the current photograph you will be asked if you want to save them.
             </para>
         
         </sect2>
