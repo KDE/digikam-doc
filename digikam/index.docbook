@@ -232,7 +232,7 @@
         </para>
 
         <para>
-        Once you have configured the Album Library Folder you can setup &digikam; to work with your digital camera. Then learn how to use <link linkend="using-myalbumsview">Albums</link> and <link linkend="using-mytagsview">Tags</link> to arrange your photograph Albums.
+        Once you have configured the Album Library Folder you can set up &digikam; to work with your digital camera. Then learn how to use <link linkend="using-myalbumsview">Albums</link> and <link linkend="using-mytagsview">Tags</link> to arrange your photograph Albums.
         </para> 
         </sect2> 
     </sect1>
@@ -269,7 +269,7 @@
         <title>Introduction</title>
 
             <para>
-            Current digital cameras are characterized by the use of <emphasis>Compact &Flash; Memory</emphasis> cards and <emphasis>USB</emphasis> or <emphasis>FireWire (IEEE-1394 or i-link)</emphasis> for data transmission. The actual transfers to a host computer is commonly carried out using the <emphasis>USB Mass Storage</emphasis> device class (so that the camera appears as a disk drive) or using the <emphasis>Image Transfer Protocol (PTP)</emphasis> and its derivatives. Older cameras may use the <emphasis>Serial Port (RS-232)</emphasis> connection.
+            Current digital cameras are characterized by the use of <emphasis>Compact &Flash; Memory</emphasis> cards and <emphasis>USB</emphasis> or <emphasis>FireWire (IEEE-1394 or i-link)</emphasis> for data transmission. The actual transfers to a host computer are commonly carried out using the <emphasis>USB Mass Storage</emphasis> device class (so that the camera appears as a disk drive) or using the <emphasis>Picture Transfer Protocol (PTP)</emphasis> and its derivatives. Older cameras may use the <emphasis>Serial Port (RS-232)</emphasis> connection.
             </para>
             
             <informaltable><tgroup cols="2">
@@ -320,7 +320,7 @@
         <title>Transfers Using gPhoto2: PTP and RS-232 Serial Port</title>
         
             <para>
-            &digikam; employs the <emphasis>gPhoto2</emphasis> program to communicate with digital still cameras. gPhoto2 is a free, redistributable set of digital camera software applications which supports a growing number of over 800 cameras. gPhoto2 has support for the <emphasis>Image Transfer Protocol</emphasis>, which is a widely-supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
+            &digikam; employs the <emphasis>gPhoto2</emphasis> program to communicate with digital still cameras. gPhoto2 is a free, redistributable set of digital camera software applications which supports a growing number of over 800 cameras. gPhoto2 has support for the <emphasis>Picture Transfer Protocol</emphasis>, which is a widely supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
             </para>
             
             <para>
@@ -333,16 +333,15 @@
         <title>Transfers Using Mass Storage Device</title>
             
             <para>
-            Of the devices that are not directly supported by gPhoto2, there is support for the <emphasis>Mass Storage</emphasis> protocol, which is well-supported under &GNU;/&Linux;. This includes any digital cameras and Memory Card Readers. Mass Storage interfaces are:
-             
-            <itemizedlist>
-                
-                    <listitem><para><emphasis>USB Mass Storage</emphasis>:  it is a set of computing interface using a communications protocols defined by the USB Implementers Forum that run on the Universal Serial Bus. This standard provides an interface to a variety of storage devices, including digital cameras.</para></listitem>
-    
-                    <listitem><para><emphasis>FireWire Mass Storage</emphasis>: it is a set of computing interface using a communications protocols developed primarily by Apple Computer in the 1990s. FireWire offering high-speed communications and asynchronous real-time data services. Like USB Mass Storage, this standard provides an interface to a variety of storage devices, including digital still cameras. Almost all recent digital cameras support USB version 1 and eventually will support USB version 2, a very few support FireWire.
-                    </para></listitem>
-    
-            </itemizedlist>
+            Of the devices that are not directly supported by gPhoto2, there is support for the <emphasis>Mass Storage</emphasis> protocol, which is well supported under &GNU;/&Linux;. This includes many digital cameras and Memory Card Readers. Mass Storage interfaces are:
+               
+              <itemizedlist>
+                 <listitem><para><emphasis>USB Mass Storage</emphasis>:  a computer interface using communication protocols defined by the USB Implementers Forum that run on the Universal Serial Bus. This standard provides an interface to a variety of storage devices, including digital cameras.</para></listitem>
+
+                 <listitem><para><emphasis>FireWire Mass Storage</emphasis>: a computer interface using communication protocols developed primarily by Apple Computer in the 1990s. FireWire offers high-speed communications and isochronous real-time data services. Like USB Mass Storage, this standard provides an interface to a variety of storage devices, including digital still cameras. Almost all recent digital cameras support USB version 1 and eventually will support USB version 2; a very few support FireWire.
+                 </para></listitem>
+
+              </itemizedlist>
                       
              To use a generic Mass Storage device with &digikam;, select <guilabel>Mounted Camera</guilabel> item in <link linkend="cameraselection.anchor">Camera Setup</link> list and set the correct mount point path.
             </para>
@@ -438,7 +437,7 @@
             <title>Creating a New Album</title>
                 
                 <para>
-                There are a number of ways to create a new Album. You can create a new Album when you upload new photographs from the Camera using the Camera Tool. You can also create a new empty Album by clicking the <menuchoice><guimenu>View</guimenu> </menuchoice> button on the toolbar. As an additional option, you can create a new Album by importing an existing folder of photographs from your computer, just select <menuchoice><guimenu>Album</guimenu> <guimenuitem>Import</guimenuitem> <guimenuitem>Import Folders</guimenuitem></menuchoice> from the Menu Bar and select the folder that you want to import. An Album will be created with the same name as the hard disk folder. You can use drag and drop to import a folder. Drag a folder icon, for example from a &konqueror; window. Than drop it on the album list on the left. A menu will appear that gives you the option to move or copy the folder into &digikam;.
+                There are a number of ways to create a new Album. You can create a new Album when you upload new photographs from the Camera using the Camera Tool. You can also create a new empty Album by clicking the <menuchoice><guimenu>View</guimenu> </menuchoice> button on the tool bar. As an additional option, you can create a new Album by importing an existing folder of photographs from your computer; just select <menuchoice><guimenu>Album</guimenu> <guimenuitem>Import</guimenuitem> <guimenuitem>Import Folders</guimenuitem></menuchoice> from the menu bar and select the folder that you want to import. An Album will be created with the same name as the hard disk folder. You can use drag and drop to import a folder. Drag a folder icon, for example from a &konqueror; window. Then drop it on the album list on the left. A menu will appear that gives you the option to move or copy the folder into &digikam;.
                 </para>
         
             </sect3>
@@ -456,11 +455,11 @@
             <title>Adding a Photograph to an Album</title>
                 
                 <para>
-                Most of the time you will create new Albums and populate them with photographs directly from your camera using the Camera Tool. However, sometimes you may want to add a photograph that you already have on your computer to an existing Album. To add a photograph to an Album, make sure that the Album is selected. Then, either click the <guilabel>Add Images</guilabel> icon in the toolbar or select <menuchoice><guimenu>Album</guimenu> <guimenuitem>Import</guimenuitem> <guimenuitem>Add Images</guimenuitem></menuchoice> from the Menu Bar. Select the photographs that you want to add from the file dialog and click <guilabel>Open</guilabel>. The photographs will be copied into the Album. Additionally, you can use drag and drop to import photographs. Drag the photographs icons, for example from a &konqueror; window. Than drop it on the image list on the right hand side. 
+                Most of the time you will create new Albums and populate them with photographs directly from your camera using the Camera Tool. However, sometimes you may want to add a photograph that you already have on your computer to an existing Album. To add a photograph to an Album, make sure that the Album is selected. Then, either click the <guilabel>Add Images</guilabel> icon in the tool bar or select <menuchoice><guimenu>Album</guimenu> <guimenuitem>Import</guimenuitem> <guimenuitem>Add Images</guimenuitem></menuchoice> from the menu bar. Select the photographs that you want to add from the file dialog and click <guilabel>Open</guilabel>. The photographs will be copied into the Album. Additionally, you can use drag and drop to import photographs. Drag the photographs icons, for example from a &konqueror; window. Than drop it on the image list on the right hand side. 
                 </para>
                 
                 <para>
-                If you have a scanner configured you can also scan a photograph straight into an Album. Select 
+                If you have a scanner configured, you can also scan a photograph straight into an Album. Select 
                 <menuchoice><guimenu>Album</guimenu>
                 <guimenuitem>Import</guimenuitem>
                 <guimenuitem>Scan Images</guimenuitem></menuchoice>. 
@@ -476,7 +475,7 @@
             <title>Moving or Copying Photographs Between Albums</title>
                 
                 <para>
-                Simply drag the photograph and drop it on the destination Album to move or copy it from one Album to another. A menu will appear that gives you the option to <guilabel>Move</guilabel> or <guilabel>Copy</guilabel> the photograph. You can move or copy multiple photographs the same way, just select all the photographs that you want to move and drag them on to the destination Album. 
+                Simply drag the photograph and drop it on the destination Album to move or copy it from one Album to another. A menu will appear that gives you the option to <guilabel>Move</guilabel> or <guilabel>Copy</guilabel> the photograph. You can move or copy multiple photographs the same way, just select all the photographs that you want to move and drag them on to the destination Album.
                 </para>
         
             </sect3>
@@ -487,7 +486,7 @@
                 <anchor id="albumpropsedit.anchor"/>
                 
                 <para>
-                An Album contains a set of images and the Album Properties allows you to set information about this set. To access the Album Properties right-click on an Album and select <guilabel>Edit Album Properties</guilabel> from the context menu.
+                An Album contains a set of photographs. Album Properties allows you to set information about this set. To access the Album Properties right-click on an Album and select <guilabel>Edit Album Properties</guilabel> from the context menu.
                 </para>
         
                 <para>The Album Properties dialog allows you to set:</para>
@@ -502,7 +501,7 @@
                     <listitem><para>The Album <guilabel>Title</guilabel> : this will be used in the &quot;Albums&quot; list.
                     </para></listitem>
                     
-                    <listitem><para>The Album <guilabel>Collection</guilabel> : this is a way of grouping your Albums together by a common label. The Collection you set will be used to order your albums when you select <guilabel>By Collection</guilabel> from the drop down box in the toolbar or using <menuchoice><guimenu>View</guimenu><guimenuitem>Sort Albums</guimenuitem><guimenuitem>By Collection</guimenuitem></menuchoice>. If you want to add and delete Collection labels, use the <link linkend="setup-collection">Collection Settings</link> dialog.
+                    <listitem><para>The Album <guilabel>Collection</guilabel> : this is a way of grouping your Albums together by a common label. The Collection you set will be used to order your albums when you select <guilabel>By Collection</guilabel> from the drop down box in the tool bar or using <menuchoice><guimenu>View</guimenu><guimenuitem>Sort Albums</guimenuitem><guimenuitem>By Collection</guimenuitem></menuchoice>. If you want to add and delete Collection labels, use the <link linkend="setup-collection">Collection Settings</link> dialog.
                     </para></listitem> 
                     
                     <listitem><para>The <guilabel>Comments</guilabel> for the Album : this will be shown in the banner at the top of the main Image Window.
@@ -511,7 +510,7 @@
                     <listitem><para>The Album <guilabel>Date</guilabel> : this will be used when you order your Albums by date using <menuchoice><guimenu>View</guimenu><guimenuitem>Sort Albums</guimenuitem><guimenuitem>By Date</guimenuitem></menuchoice>.
                     </para></listitem>
 
-                    <listitem><para><guilabel>Oldest, Average, Newest</guilabel> buttons : these will set the <guilabel>Date</guilabel> to the oldest, average or latest date of the images in that album. It will first try to calculate the average date of the images in the album based on the EXIF-headers. If that fails it will fall back to modification date of the files in that folder.
+                    <listitem><para><guilabel>Oldest, Average, Newest</guilabel> buttons : these will set the <guilabel>Date</guilabel> to the oldest, average or latest date of the images in that album. It will first try to calculate the average date of the images in the album based on the EXIF-headers. If that fails it will fall back to the modification date of the files in that folder.
                     </para></listitem>
                                            
                 </itemizedlist>
@@ -535,7 +534,7 @@
                 </para>
 
                 <para>
-                &digikam; also supports tagging individual photographs using the &quot;Tags&quot; area at the left of the main window. Album Collections are different to photograph tagging because the Album Collection applies to all the photographs in an Album rather than to individual photographs. You can use both Album Collections and tagging to organize your photographs.
+                &digikam; also supports tagging individual photographs using the "My Tags" area at the left of the main window. Album Collections are different from photograph tagging because the Album Collection applies to all the photographs in an Album rather than to individual photographs. You can use both Album Collections and tagging to organize your photographs.
                 </para>
         
             </note>
@@ -585,7 +584,7 @@
             <title>Image Management</title>
 
                 <para>
-                Photographs and images are what &digikam; is all about. With the four views in the left sidebar you can organize and find your photographs in the way that suits you.  You can access all of the functions that &digikam; can perform on an image by right-clicking the thumbnail (context menu) or by selecting from the Image menu in the Menu Bar. You have the choice between viewing the images, viewing by slide show, viewing them on the light table, or of editing the images.
+                Photographs are what &digikam; is all about. Albums and Tags allow you to organize and find your photographs in a way that suits you.  You can access all of the functions that &digikam; can perform on a photograph by right-clicking the thumbnail (context menu) or by selecting from the Image menu in the menu bar. You have the choice between viewing the images, viewing by slide show, or of editing the images.
                 </para>
 
             </sect3>
@@ -631,7 +630,7 @@
             <title>Viewing or Editing a Photograph With Another Application</title>
 
                 <para>
-                Sometimes &digikam; may not provide all of the capabilities you need. You can open a photograph in another application by right-clicking on it and selecting from the <guilabel>Open With</guilabel> sub-menu. The list applications that appear in this menu is controlled by the standard &kde; file associations for the image format type of this photograph. Look into the &kde; manual for instructions on changing these file associations if the application that you need is not listed.
+                Sometimes &digikam; may not provide all of the capabilities you need. You can open a photograph in another application by right-clicking on it and selecting from the <guilabel>Open With</guilabel> sub-menu. The list of applications that appear in this menu is controlled by the standard &kde; file associations for the image format type of this photograph. Consult the &kde; manual for instructions on changing these file associations if the application that you need is not listed.
                 </para>
 
                 <para>
@@ -644,7 +643,7 @@
             <title>Lossless Image Rotation</title>
              
                 <note><para>
-                You will need to have the Kipi JPEG Lossless Plugin installed for the rotation features. If you do not have this plugin installed you can still rotate your photographs, but you have to do so from the Image Editor inside. The Image Editor uses a different method of rotating an image, you may not notice any difference but the Image Editor method can cause some loss of quality in the image when saving it as JPEG. The rotation methods described here uses the Kipi JPEG Lossless Plugin and does preserve the quality in the original photograph.
+                You will need to have the Kipi JPEG Lossless Plugin installed for the rotation features. If you do not have this plugin installed you can still rotate your photographs, but you have use the Image Editor. The Image Editor uses a different method of rotating an image, you may not notice any difference but the Image Editor method can cause some loss of quality in the photograph when saving the picture as JPEG. The rotation methods described here uses the Kipi JPEG Lossless Plugin which preserve the quality in the original photograph.
                 </para></note>
                              
                 <para>
@@ -660,7 +659,7 @@
                     <menuchoice>
                          <guimenu>Image</guimenu><guimenuitem>Auto Rotate/Flip Using EXIF Information</guimenuitem>
                    </menuchoice>
-                . The Camera Tool can perform this operation automatically when it uploads the photographs from your camera which will ensure that your photographs are always the right way up. The rotate operation will do nothing, if your camera does not include this information in the photos.
+                . The Camera Tool can perform this operation automatically when it uploads the photographs from your camera which will ensure that your photographs are always the right way up. The rotate operation will do nothing if your camera does not include this information in the photos.
                 </para>
                 
             </sect3> 
@@ -692,7 +691,7 @@
                    </menuchoice>
              If you prefer that Delete really removes the photograph completely, than you can do that by 
                    <menuchoice>
-                     <shortcut><keycap>&Shift;</keycap><keycap>Delete</keycap> </shortcut>
+                     <shortcut><keycap>&Shift;</keycap><keycap> Delete</keycap> </shortcut>
                     <guimenu></guimenu>
                    </menuchoice>
                 </para>
@@ -737,7 +736,7 @@
       </para>
 
              <tip>
-              <para>Tags are stored in a database for fast access, and the applied tags are written into IPTC data fields of the image (at least for JPEG). So can use your tags with other programs or, in case of loss of that data in the database, the tags will be re-imported with the image by &digikam;.</para></tip>
+              <para>Tags are stored in a database for fast access, and, the applied tags are written into IPTC data fields of the image (at least for JPEG). So can use your tags with other programs or, in case of loss of that data in the database, the tags will be reimported when the image is noticed by &digikam;.</para></tip>
 
       <sect3 id="using-managetags">          <title>Managing Tags</title>
              
@@ -746,11 +745,11 @@
          </para>
 
          <para>
-           You can delete a tag by right-clicking on the tag you want to delete and selecting <guilabel>Delete</guilabel> tag. When you delete a tag the images themselves are not deleted. Simply the tag is removed from those images.
+           You can delete a Tag by right-clicking on the Tag you want to delete and selecting <guilabel>Delete</guilabel> Tag. When you delete a tag, the photographs themselves are not deleted. Simply the tag is removed from those photographs.
          </para>
 
          <para>
-           You can move the position of a tag within the tree by dragging it into the position that you want and dropping it there. A menu will appear that gives you the option to 
+           You can move the position of a Tag within the tree by dragging it to the position that you want and dropping it there. A menu will appear that gives you the option to 
            <guilabel>Move</guilabel> the tag. This works from the left and right sidebar. A tag can only be in one place in the tree at a time.
          </para>
                 
@@ -767,7 +766,7 @@
        <sect3 id="using-taggingimages">           <title>Tagging Photographs</title>
              
          <para>
-           Before you can get the most out of &digikam;'s tagging capabilities you must first tag your photographs. There are two methods of tagging photographs. Once you have identified the photographs that you want to tag you can either drag and drop them onto the tag in the &quot;Tags&quot; tree or, by right-clicking on the selected photographs in the Image Window, you can use the <guilabel>Assign Tag</guilabel> menu to select the tags you wish to set.
+           Before you can get the most out of &digikam;'s Tagging capabilities, you must first tag your photographs. There are two methods of tagging photographs. Once you have identified the photographs that you want to tag you can either drag and drop them onto the Tag in the "My Tags" tree or, by right-clicking on the selected photographs in the Image Window, you can use the <guilabel>Assign Tag</guilabel> menu to select the Tags you wish to set.
          </para>
 
          <para>
@@ -798,7 +797,7 @@
             <anchor id="quicksearchtool.anchor"/>
             
                 <para>
-                Quick Search provides you with a simple search form to search all data fields in the album library with a single query. You can enter any arguments in the <guilabel>Search</guilabel> text field and it will be used to determine the results. For instance, you can enter the string 'birthday' to search the complete album library for occurrences of the word 'birthday' in photograph description, or '05.png' to search for a specific image file name '05.png' (no escaping as in regexpressions needed).
+                Quick Search provides you with a simple search form to search all data fields in the album library with a single query. You can enter any arguments in the <guilabel>Search</guilabel> text field and it will be used to determine the results. For instance, you can enter the string 'birthday' to search the complete album library for occurrences of the word 'birthday' in all photograph descriptions, or '05.png' to search for a specific image file name '05.png' (no escaping as in regexpressions needed).
                 </para>
 
                <para>Search Properties:<itemizedlist>
@@ -820,7 +819,7 @@
                 
                 
                 <para>
-                When you are satisfied with your selection, click on the <guilabel>Ok</guilabel> button, and the search will be carried out, and the results displayed in "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to label your query in "My Search" list. If you want to modify your selection after performing a search, simply right click on the item from "My Search" view and select an option from pop-up menu. 
+                When you are satisfied with your selection, click on the <guilabel>Ok</guilabel> button, and the search will be carried out, and the results displayed in "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to label your query in "My Search" list. If you want to modify your selection after performing a search, simply right click on the item from "My Search" view and select an option from the popup menu. 
                 </para>
                 
                 <para>
@@ -828,7 +827,7 @@
                 </para>
                 
                 <para>
-                If you want to remove an existing search from the list, just select <guilabel>Delete Search</guilabel> from pop-up menu.
+                If you want to remove an existing search from the list, just select <guilabel>Delete Search</guilabel> from the popup menu.
                 </para>
     
                 <example>
@@ -847,12 +846,12 @@
                 </para>
                     
                 <para>
-                The <guilabel>Search Rules</guilabel> list is used to set all options to process a search query in albums database. all rules are listed vertically and separated by an operator. An option can be added or deleted to the list using <guilabel>Add/Delete Option</guilabel> or grouped/ungrouped together using <guilabel>Group/Ungroup Options</guilabel>. Each option can be combined with another one using <guilabel>As well as</guilabel> or <guilabel>Or</guilabel> logical operator.
+                The <guilabel>Search Rules</guilabel> list is used to set all options to process a search query in the albums database. All rules are listed vertically and separated by an operator. An option can be added or deleted to the list using <guilabel>Add/Delete Option</guilabel> or grouped/ungrouped together using <guilabel>Group/Ungroup Options</guilabel>. Each option can be combined with another one using <guilabel>As well as</guilabel> or <guilabel>Or</guilabel> logical operator.
                 </para>                
 
                 <tip>
                 <para>
-                If you made added a rule with <guilabel>As well as</guilabel> and you realize that it should have been <guilabel>Or</guilabel>, you can easily switch to that by double clicking on the text <guilabel>As well as</guilabel> in the rules area.
+                If you made a rule with <guilabel>As well as</guilabel> and you realize that it should have been <guilabel>Or</guilabel>, you can easily switch to that by double clicking on the text <guilabel>As well as</guilabel> in the rules area.
                 </para>
                 </tip>
                 
@@ -866,7 +865,7 @@
                 
                 <itemizedlist>
             
-                    <listitem><para>(1): the item used to search in database, which can be an album, a name, a tag, an image, a keyword, &etc;.
+                    <listitem><para>(1): the item used to search in the database, which can be an album, a name, a tag, an image, a keyword, &etc;.
                     </para></listitem>
                     
                     <listitem><para>(2): the logical operator to process the item which depends on the item type.
@@ -883,7 +882,7 @@
                 </para>                
                 
                 <para>                
-                For instance, you can set an advanced query to search all items in database using these options:
+                For instance, you can set an advanced query to search all items in the database using these options:
                  
                 <itemizedlist>
             
@@ -916,7 +915,7 @@
                 </para>
                                 
                 <para>
-                When you are satisfied with your search settings, click on the <guilabel>Ok</guilabel> button, and the advanced search will be carried out, and the results displayed in "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to name your advanced query in "My Search" list. If you want to modify your selection after performing an advanced search, simply right click on one item from "My Search" view and select <guilabel>Edit Search</guilabel> from pop-up menu.
+                When you are satisfied with your search settings, click on the <guilabel>Ok</guilabel> button. The advanced search will be carried out, and the results displayed in the "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to name your advanced query in the "My Search" list. If you want to modify your selection after performing an advanced search, simply right click on one item from "My Search" view and select <guilabel>Edit Search</guilabel> from the popup menu.
                 </para>
              
              </sect3>            
@@ -1008,7 +1007,7 @@
            The comment view can be used to type or paste in a comment of unlimited size (see note below). The text is UTF-8 compatible, meaning that all special characters are allowed. The comments are copied to EXIF and IPTC comment fields to be used from other applications.
            </para>
            <caution><para>
-           The IPTC data does only support ASCII characters and 2000 characters at most (old American norm). All comments will be truncated after 2000 chars, and special characters will be malformed. If you intend to use the IPTC comment field in other applications you should be compliant with these restrictions.
+           IPTC data only supports ASCII characters and is limited to 2000 characters (old American norm). All comments will be truncated after 2000 chars, and special characters will be malformed. If you intend to use the IPTC comment field in other applications you should be compliant with these restrictions.
            </para></caution>
 
           </sect3>
@@ -1114,7 +1113,7 @@
         <title>Introduction to Camera Interface</title>
 
             <para>
-            The Camera Tool allows you to download your photographs directly from your camera into a &digikam; Album. You can access the Camera Tool by clicking on the Camera menu and selecting from the list of configured Cameras. See the <link linkend="cameraselection.anchor">Setup Camera Section</link> of the manual for instructions on how to setup &digikam; to work with your Camera. If you want to have more information about how &digikam; supports digital camera, please a take a look at <link linkend="using-camerasupport">this section</link>.
+            The Camera Tool allows you to download your photographs directly from your camera into a &digikam; Album. You can access the Camera Tool by clicking on the Camera menu and selecting from the list of configured cameras. See the <link linkend="setup-camera">Setup Camera Section</link> of the manual for instructions on how to setup &digikam; to work with your camera. If you want to have more information about how &digikam; supports digital cameras, please a take a look at <link linkend="using-camerasupport">this section</link>.
             </para>
 
             <para>
@@ -1122,11 +1121,11 @@
             </para>
             
             <para>
-            To be able to use your digital camera with &digikam;, connect the camera to your computer, switch the camera to the image display mode and turn it on. You can find more descriptions in the manual that comes with your camera.
+            To be able to use your digital camera with &digikam;, connect the camera to your computer, switch the camera to the image display mode and turn it on. See you camera's user manual if you need more information.
             </para>
         
             <para>
-            When you start the Camera Interface, it will try to connect to the Camera. For some cameras this connection phase can take a little while. When connected, a <guilabel>Ready</guilabel> indicator will appear on the bottom and thumbnails of any photographs on the camera will be displayed. Some cameras cannot provide thumbnails of the photographs, if this is the case you will only see the filenames and an mime-type icon for each items stored by your camera (photograph, movies, sounds, etc).
+            When you start the Camera Interface, it will try to connect to the Camera. For some cameras this connection phase can take a little while. When connected, a <guilabel>Ready</guilabel> indicator will appear on the bottom and thumbnails of any photographs on the camera will be displayed. Some cameras cannot provide thumbnails of the photographs. If this is the case, you will only see the filenames and a mime-type icon for each item stored by your camera (photograph, movies, sounds, etc).
             </para>
             
             <example>   <title>The Camera Client Window</title>
@@ -1136,10 +1135,10 @@
         </sect2>
 
         <sect2>
-        <title>Getting information About Photographs from the Cameras</title>
+        <title>Getting information About Photographs from the Camera</title>
 
             <para>
-            Before to download photographs on your computer, you can need to see camera item information. Using the 
+            Before downloading photographs to your computer, you may wish to see camera item information. Using the 
             <menuchoice><guimenuitem>Properties</guimenuitem></menuchoice> and <menuchoice><guimenuitem>Metadata</guimenuitem></menuchoice> side bar tabs from Camera Interface  will launch camera item properties and metadata information.
             </para>
 
@@ -1152,7 +1151,7 @@
             </para>
             
             <para>
-            The Metadata tab displays internal images metadata like EXIF, Makernotes, GPS, &etc;. This information are the same than <link linkend="using-sidebarmetadata">sidebar Meta-Data</link> from &digikam; main interface or image editor. Note, all these metadata can be unavailable with some digital cameras.
+            The Metadata tab displays an internal picture's metadata like Exif, Makernotes, GPS, &etc;. This information is the same as  <link linkend="using-sidebarmetadata">sidebar Meta-Data</link> from the &digikam; main interface or image editor. Note, all these metadata can be unavailable with some digital cameras.
             </para>            
 
         </sect2>
@@ -1165,7 +1164,7 @@
             </para>
         
             <para>
-            If you do not want to download all of the photographs you can select just those that you need using the standard &kde; selection methods. Once you have the photographs selected click <guilabel>Download</guilabel> and then <guilabel>Download Selected</guilabel>. The <guilabel>Download Selected</guilabel> button will be grayed out until you have selected some photographs.
+            If you do not want to download all of the photographs you can select just those that you need using the standard &kde; selection methods. Once you have the photographs selected, click <guilabel>Download</guilabel> and then <guilabel>Download Selected</guilabel>. The <guilabel>Download Selected</guilabel> button will be grayed out until you have selected some photographs.
             </para>
 
             <note><para>
@@ -1187,7 +1186,7 @@
             </example>
 
             <para>
-            If you want to create a new Album, into which you could download the photographs, click the <guilabel>New Album</guilabel> button. The new Album will be created as a sub-Folder of the Album that is currently selected in the existing Album list. This means that, if you do not want your new Album to be a sub-Folder of an existing Folder, you must first select the &quot;Albums&quot; entry from the very top of the existing Albums list before creating a new Album.
+            If you want to create a new Album, into which you could download the photographs, click the <guilabel>New Album</guilabel> button. The new Album will be created as a sub-folder of the Album that is currently selected in the existing Album list. This means that, if you do not want your new Album to be a sub-folder of an existing folder, you must first select the "My Albums" entry from the very top of the existing Albums list before creating a new Album.
             </para>
             
             <para>
@@ -1204,7 +1203,7 @@
         <title>Deleting Photographs from the Cameras</title>
 
             <para>
-            Once you are happy with the downloaded photographs that you wanted, you are ready to delete photographs from the Camera. You can delete all of the photographs in one go by clicking the
+            Once you are happy with the downloaded photographs that you wanted, you are ready to delete photographs from the Camera. You can delete all of the photographs at once by clicking the
             <menuchoice>
                    <guimenu>Delete</guimenu>
                    <guimenuitem>Delete All</guimenuitem>
@@ -1235,10 +1234,10 @@
             &digikam; can automatically rename your photographs using the date and time information included by the camera in the photograph. To use this feature, click the <guilabel>Settings</guilabel> button on the Camera Interface. The Camera Interface window will expand to reveal some extra features. Select <guilabel>Customize</guilabel> and then enter any filename prefix you would like. As an option you can then add the date &amp; time, a sequence number or a combination of both. The sequence number may be needed if you have a camera with a very fast multi-shoot mode where it is possible to get two photographs with exactly the same data and time.
             </para>
             <para>
-                In the next box you find the options for rotating/flipping the image and for date-based sub-albums. If you check the latter option, folder per day will be automatically generated.
+                In the next box you find the options for rotating/flipping the image and for date based subalbums. If you check the latter option, folder per day will be automatically generated.
             </para>
             <para>
-                The 'On the fly operations' open three more options that act on the photos before storing them on disk. The first two relate to the authors data in <link linkend="author-identity">Default Author Identity</link>" Settings. If checked the respective items will be copied into the EXIF tags and IPTC fields. The last option allows to fix a date &amp; time for all downloaded images.
+                The 'On the fly operations' open three more options that act on the photos before storing them on disk. The first two relate to the authors data in <link linkend="author-identity">Default Author Identity</link>" Settings. If checked the respective items will be copied into the EXIF tags and IPTC fields. The last option allows a date &amp; time for all downloaded pictures to be set.
             </para>
 
             <tip>
@@ -1254,7 +1253,7 @@
             </tip>
 
             <para>
-            The new filename that &digikam; will use for the photographs when they are downloaded is shown underneath the name provided by the camera in the thumbnail view. The renaming settings will be remembered next time you use the camera Interface.
+            The new filename that &digikam; will use for the photographs when they are downloaded is shown underneath the name provided by the camera in the thumbnail view. The renaming settings will be remembered the next time you use the camera interface.
             </para>
 
         </sect2>
@@ -1266,7 +1265,7 @@
             <title>Automatic Rotation</title>
 
                 <para>
-                 &digikam; can use any information about the orientation of the camera in the moment the photograph was taken for automatic rotation of the photograph when it is downloaded. Not all cameras include this information. See the <link linkend="using-sidebarmetadata">sidebar Meta-Data</link> section for more detail about information that your camera may have embedded in your photographs.
+                 &digikam; can use any information about the orientation of the camera at the moment the photograph was taken for automatic rotation of the photograph when it is downloaded. Not all cameras include this information. See the <link linkend="using-sidebarmetadata">sidebar Meta-Data</link> section for more detail about information that your camera may have embedded in your photographs.
                 </para>
 
                 <example> <title>On the fly Operations Options</title>
@@ -1283,8 +1282,7 @@
             <title>Automatic Destination Albums Creation</title>
 
                 <para>
-                If your camera provides information about the date of the photograph's taking, &digikam; can use this to automatically create sub-albums in the destination Album when it is downloaded. 
-                Sub-albums names will be based on image dates. All images which have the same date will be downloaded into the same sub-album. Not all cameras include this information. 
+                If your camera provides information about the date of the photograph's taking, &digikam; can use this to automatically create subalbums in the destination Album when it is downloaded. Subalbums names will be based on image dates. All images which have the same date will be downloaded into the same subalbum. Not all cameras include this information. 
                 See the <link linkend="using-sidebarmetadata">
                 sidebar Meta-Data</link> section for more detail about
                 information your camera may have embedded in your photographs.
@@ -1313,7 +1311,7 @@
             </para>
 
             <para>
-            When images selection is done, &digikam; will ask you where you want upload the files in your camera. A camera folder selection dialog will appear. Just select one folder and press OK to start uploading. All images from your computer will not removed.
+            When images selection is done, &digikam; will ask you where you want to upload the files on your camera. A camera folder selection dialog will appear. Just select one folder and press OK to start uploading. No images will be removed from your computer.
             </para>
 
             <example>  <title>The Camera Folder Selection Dialog</title>
@@ -1331,7 +1329,7 @@
             <note><para>
                     <inlinemediaobject>
                     <imageobject><imagedata fileref="&path;handheld_gps.png" format="PNG"/></imageobject>
-                    </inlinemediaobject>GPS (global positioning system) is used as a generic term throughout this document, it just means a location in latitude and longitude global coordinates that can be displayed on a map. The actual technical implementation that provides the data can be the American GPS, the Russian GLONAS, the European GALILEO or any other system.
+                    </inlinemediaobject>GPS (global positioning system) is used as a generic term throughout this document. It just means a location in latitude and longitude global coordinates that can be displayed on a map. The actual technical implementation that provides the data can be the American GPS, the Russian GLONAS, the European GALILEO or any other system.
             </para></note>
 
             <para>
@@ -1341,13 +1339,13 @@
                 But if, after some time, one has forgotten where the image was taken, if one loves the nice feature to open with a simple click a browser displaying a zoom of the area, if you like to send your image as a postcard to another &digikam; user (who is then able to locate your shot), or if you simply need the documentation aspect of it - having position data stored in a photo is great.
             </para>
             <para>
-                Now, how do we get GPS data into the images? First it is to say that <ulink url="http://www.exiv2.org/tags.html">exif2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files using the <ulink url="http://www.kipi-plugins.org">Geolocalization</ulink> (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink>) kipi-plugin and per 'manual' insertion of known locations.
+                Now, how do we get GPS data into the images?  <ulink url="http://www.exiv2.org/tags.html">exif2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files using the <ulink url="http://www.kipi-plugins.org">Geolocalization</ulink> (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink>) kipi-plugin and per 'manual' insertion of known locations.
             </para>
             <itemizedlist>
                 
                 <listitem><para>Direct GPS data insertion into the image files</para>
                     <para>
-                        To our knowledge there is at the time of writing no camera that integrates a GPS unit. But there are a few that combine with GPS receivers, either as a plug-in card or by data transmission through cable or bluetooth.
+                        To our knowledge there is at the time of writing no camera that integrates a GPS unit. But there are a few that combine with GPS receivers, either as a plug-in card or by data transmission through cable or Bluetooth.
                     </para>
                     <para><ulink url="http://www.engadget.com.nyud.net:8090/2004/09/17/diy-black-box-tagging-photos-with-gps-coordinates/">Selfmade Howto</ulink>
                     </para>
@@ -1365,9 +1363,9 @@
                         Using the <ulink url="http://www.kipi-plugins.org">Geolocalization</ulink> kipi-plugin (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink> if kipi-plugins are already installed).
                     </para>
                     <para>
-                        The approach is dead easy: whilst taking your images just keep a GPS device running and carry it around with the camera. Once you are done, download the images and the GPS tracks, and run the above plugin. It will correlate the data in the time domain; so it is important that the camera be accurate in its clock setting (the GPS device is always accurate through the satellites). The positional accuracy interpolated from the track points can be as good as 20 meters. Of course, this approach only works if your camera can record EXIF data.
+                        This approach is dead easy: while taking your pictures just keep a GPS device running and carry it around with the camera. Once you are done, download the pictures and the GPS tracks, and run the above plugin. It will correlate the data in the time domain; so it is important that the camera be accurate in its clock setting (the GPS device is always accurate through the satellites). The positional accuracy interpolated from the track points can be as good as 20 meters. Of course, this approach only works if your camera can record EXIF data.
                     </para>
-                    <para>The GPS track download from a device can be managed with the <ulink url="http://www.ncc.up.pt/gpsman">gpsman</ulink> or <ulink url="http://www.gpsbabel.org">gpsbabel</ulink>. It is important that the downloaded track are being stored in gpx format, which is the only one compatible with the Geolocalization plugin.
+                    <para>The GPS track download from a device can be managed with the <ulink url="http://www.ncc.up.pt/gpsman">gpsman</ulink> or <ulink url="http://www.gpsbabel.org">gpsbabel</ulink>. It is important that the downloaded tracks are being stored in gpx format, which is the only one compatible with the Geolocalization plugin.
                     </para>
                     <para>
                         Several programs exist for &Windows; and MacOS that are able to extract and correlate data from images and GPS data tracks. The following site provides the same functionality for &Linux;: 
@@ -1381,7 +1379,7 @@
                     <para>If you happen to know the latitude/longitude or other data you can use the this script which is a GPS wrapper for Phil Harvey's <ulink url="http://www.sno.phy.queensu.ca/~phil/exiftool">ExifTool</ulink> that uses the signed floating number coordinate notation as produced by maps.google.
                     </para>
                     <tip><para>
-                            maps.google.com does not show the street maps of Europe. But here are European sites (.fr .de .es .it .co.uk at least) that show all navigation details in all of Europe.
+                            maps.google.com does not show the street maps of Europe. But there are European sites (.fr .de .es .it .co .uk at least) that show all navigation details in all of Europe.
                     </para></tip>
                 </listitem>
 	
@@ -1402,9 +1400,9 @@
             <anchor id="setupdialog.anchor"/>
             
             <para>
-              &digikam; tries to give you as much control on how it works as possible. There are many options that change the behavior of &digikam;. To access these settings select
+              &digikam; tries to give you as much control over how it works as possible. There are many options that change the behavior of &digikam;. To access these settings select
               <menuchoice><guimenu>Setting</guimenu>
-              <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> from the Menu Bar. The configuration dialog is separated into 15 pages. You can change between these pages by clicking on the icons on the left-hand side of the dialog.
+              <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> from the menubar. The configuration dialog is separated into 15 pages. You can change between these pages by clicking on the icons on the left-hand side of the dialog.
             </para>
 
          <itemizedlist>
@@ -1451,7 +1449,7 @@
             <sect3 id="setup-collection">             <title>Collection Settings</title>
     
                 <para>
-                This dialog manage your Collection types. Album Collections are described in detail in the <link linkend="using-myalbumsview">Albums</link> section. 
+                This dialog manages your Collection types. Album Collections are described in detail in the <link linkend="using-myalbumsview">Albums</link> section. 
                 </para>
     
                 <para> 
@@ -1521,7 +1519,7 @@
                 <para>
                 &digikam; can understand lots of different image file types as well as some video and audio formats. To control which types of files &digikam; will try to display you can add or remove file extensions from these lists. Any files that are in the &digikam; Album folders that do not match these extensions will be ignored by &digikam;.
                 </para>
-                <note><para>The default settings can be easily restored by clicking onto the update buttons to the right of each category.</para></note>
+                <note><para>The default settings can be easily restored by clicking on the update buttons to the right of each category.</para></note>
     
                 <para>  
                     <inlinemediaobject><imageobject><imagedata fileref="&path;setupmimetypes.png" format="PNG" /> </imageobject></inlinemediaobject> 
@@ -1552,11 +1550,11 @@
                 </para>
 
                 <para>
-                With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation does not reduce image quality because PNG uses a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value for to use a high compression factor (1: low compression / 9: high compression).
+                With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation does not reduce image quality because PNG uses a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value to use a high compression factor (1: low compression / 9: high compression).
                 </para>
                 
                 <para>
-                With <guilabel>Compress TIFF</guilabel> option, you can toggle to use <emphasis>Deflate</emphasis> compression algorithm with TIFF image files. This will reduce the TIFF image files size. It has no image quality effect because <emphasis>Deflate</emphasis> is a lossless algorithm.
+                With <guilabel>Compress TIFF</guilabel> option, you can toggle to use <emphasis>Deflate</emphasis> compression algorithm with TIFF image files. This will reduce TIFF image files sizes. It has no image quality effect because <emphasis>Deflate</emphasis> is a lossless algorithm.
                 </para>
 
                 <para>
@@ -1592,7 +1590,7 @@
                 <para>For Fuji Super CCD SLR cameras only. Use the secondary sensors, in effect underexposing the image by four stops to reveal detail in the highlights. For all other camera types this option is being ignored.</para>
 
                 <para><guilabel>Highlights</guilabel></para>
-                <para>This is the story of the three highlight options, courtesy to <ulink url="http://linux.vilars.com/">Nicolas Vilars</ulink> :</para>
+                <para>This is the story of the three highlight options, courtesy of <ulink url="http://linux.vilars.com/">Nicolas Vilars</ulink> :</para>
                 <para>Default is here to consider highlights (read: part of your images that are burned due to the inability of your camera to capture the highlights) as plain / solid white (<guilabel>solid white</guilabel> option). You can get some fancy results with the <guilabel>unclip</guilabel> option which will paint the highlights in various pinks. At last you can try to consider recovering some parts of the missing information from the highlights (<guilabel>reconstruct</guilabel> option).</para>
                 <para>
                   This is possible because the blue pixels tends to saturate less quickly than the greens and the reds. &digikam;/dcraw will try to reconstruct the missing green and red colors from the remaining none saturated blue pixels. Of course here everything is a question of tradeoff between how much color or white you want.</para>
@@ -1659,7 +1657,7 @@
             <sect3 id="setup-kipiplugins">            <title>Kipi Plugins Settings</title>
     
                 <para>
-                  Kipi is the &kde; Image Plugin Interface. It is an interface that is supported by a number of &kde; image viewer/editor applications. By providing this interface &digikam; can take advantage of many plugins that are written to work with any application that implements the Kipi interface.
+                  Kipi is the &kde; Image Plugin Interface. It is an interface that is supported by a number of &kde; image viewer/editor applications. By providing this interface, &digikam; can take advantage of many plugins that are written to work with any application that implements the Kipi interface.
                 </para>
     
                <para>
@@ -1667,7 +1665,7 @@
                 </para>
     
                 <para>
-                  If your distribution has the Kipi plugins package installed you will see a list of available plugins. Select those that you want to use and they will be loaded into &digikam;. The plugins will appear as new menu entries in the main Menu Bar and in the context menu for thumbnails.
+                  If your operating system has the Kipi plugins package installed, you will see a list of available plugins. Select those that you want to use and they will be loaded into &digikam;. The plugins will appear as new menu entries in the main menu bar and in the context menu for thumbnails.
                 </para>
                 
                 <para>
@@ -1722,7 +1720,7 @@
                 </para>
                 
                 <note><para>
-                You can choose any title you like for the camera in the setup and this title will be used in the main window <guilabel>Cameras</guilabel> menu. If you have more than one cameras, you can add them through this setup interface.
+                You can choose any title you like for the camera in the setup and this title will be used in the main window <guilabel>Cameras</guilabel> menu. If you have more than one camera, you can add them through this setup interface.
     
                 Yet another possibility - and a very convenient one - is provided by the script in <ulink url="http://digikam.free.fr/hotplug/">usbcam.tar.gz</ulink>. When this is installed, &digikam; will open all by itself whenever a camera is plugged into the USB connector for download.
                 </para></note>
@@ -1745,7 +1743,7 @@
 
                 <anchor id="rescan-items" />
                 <para>
-                  The <guilabel>Scan for new items at start-up</guilabel> option forces &digikam; to scan the album library tree for new items added or removed between &digikam; sessions. This may slow down the start time of &digikam;. If any items have been removed from the album library, &digikam; will ask your confirmation before definitely removing the item references in database.
+                  <guilabel>Scan for new items at startup</guilabel> option will force &digikam; to scan the album library tree for new items added or removed between &digikam; sessions. This may slow down the start time of &digikam;. If any items have been removed from album library, &digikam; will ask you confirmation before to remove definitely item references in database.
                 </para>
                 
                 <para>
@@ -1761,7 +1759,7 @@
             <para>
             Color schemes are supplied like themes to personalize &digikam; main interface for you pleasure. To access these settings select
             <menuchoice><guimenu>Setting</guimenu>
-            <guimenuitem>Themes</guimenuitem></menuchoice> from the Menu Bar and select your preferred theme to use. A preview of the available themes is listed below:
+            <guimenuitem>Themes</guimenuitem></menuchoice> from the menubar and select your preferred theme to use. A preview of the available themes is listed below:
             </para>
 
             <informaltable><tgroup cols="2">
@@ -1908,7 +1906,7 @@
                 </para></listitem>
 
                 <listitem><para>
-                A Menu Bar across the top and below that a toolbar that provides quick access to some commonly used functions.
+                A menu bar across the top and below that a tool bar that provides quick access to some commonly used functions.
                 </para></listitem>
             
             </itemizedlist>
@@ -1962,7 +1960,7 @@
             The editing functions of the Image Editor will make changes to your photograph. None of the editing functions will change the original photograph unless you select 
             <menuchoice><guimenu>File</guimenu>
             <guimenuitem>Save</guimenuitem></menuchoice> 
-            or click the <guilabel>Save</guilabel> button in the toolbar. Note that once you have saved the changed version you will not be able to recover the original photograph.
+            or click the <guilabel>Save</guilabel> button in the tool bar. Note that once you have saved the changed version you will not be able to recover the original photograph.
             </para>
         
             <para>
@@ -1981,7 +1979,7 @@
                 <imageobject><imagedata fileref="&path;editorrevertbutton.png" format="PNG"/></imageobject>
                 <textobject><phrase>The Image Editor Revert Button</phrase></textobject>
             </inlinemediaobject>
-            <guilabel>Revert</guilabel> button on the toolbar. You will lose any changes that you have made to the photograph since it was last saved.
+            <guilabel>Revert</guilabel> button on the tool bar. You will lose any changes that you have made to the photograph since it was last saved.
             </para>
             
         </sect2>
@@ -1993,11 +1991,11 @@
             </para>
             
             <para>
-            If these are done so frequently that you really should memorize the keyboard shortcuts, <guilabel>&Ctrl;-Z</guilabel> to undoing action, and <guilabel>&Ctrl;-Shift-Z</guilabel> to redoing action.
+            If these are done frequently, you really should memorize the keyboard shortcuts, <guilabel>&Ctrl;-Z</guilabel> to undo an action, and <guilabel>&Ctrl;-Shift-Z</guilabel> to redo an action.
             </para>
 
             <para>
-            You have to press the &LMB; over the undo or redo icon in the toolbar and hold it down for a moment to produce a context menu. If you choose one of the menu items, all undo/redo actions until the chosen ones are undone/undone.
+            You have to press the &LMB; over the undo or redo icon in the tool bar and hold it down for a moment to produce a context menu. If you choose one of the menu items, all undo/redo actions until the chosen ones are undone/undone.
             </para>
                         
         </sect2>
@@ -2017,10 +2015,10 @@
             <inlinemediaobject>
                 <imageobject><imagedata fileref="&path;editorzoombuttons.png" format="PNG"/></imageobject>
                 <textobject> <phrase>The Image Editor Zoom Buttons</phrase> </textobject>
-            </inlinemediaobject> buttons on the toolbar or the entries in the View menu.
+            </inlinemediaobject> buttons on the tool bar or the entries in the View menu.
             </para>
             <para> 
-            To make a photograph fit the window use this button on the toolbar:<guilabel>Zoom Autofit</guilabel> 
+            To make a photograph fit the window use this button on the tool bar:<guilabel>Zoom Autofit</guilabel> 
             <inlinemediaobject>
                 <imageobject><imagedata fileref="&path;editorautosizebutton.png" format="PNG"/></imageobject>
                 <textobject> <phrase>The Image Editor AutoFit Button</phrase> </textobject>
