@@ -55,9 +55,9 @@
         <varlistentry id="synchronize-metadata">
             <term><menuchoice>
                 <guimenu>Album</guimenu>
-                <guimenuitem>Sync Images Metadata</guimenuitem>
+                <guimenuitem>Synchronize images with database</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Synchronize the metadata between database and the file's metadata of all items of the current Main Window</action></para></listitem>
+            <listitem><para><action>Synchronize the metadata between database and the file's metadata of all items of the current Main Window. The images will inherit the database metadata, not the other way around as in <link linkend="update-db-metadata">this </link>menu.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
@@ -704,13 +704,13 @@
             </listitem>            
         </varlistentry>
         
-        <varlistentry>
+        <varlistentry id="update-db-metadata">
             <term><menuchoice>
-                <guimenu>Tools</guimenu><guimenuitem>Sync all Images Metadata</guimenuitem>
+                <guimenu>Tools</guimenu><guimenuitem>Update Metadata Database...</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
-                    Launch synchronization of all metadata between database and files of all files (not just current view as with <link linkend="synchronize-metadata">this</link> menu).
+                    Launch synchronization of all metadata between database and files for all files (not just current view as with <link linkend="synchronize-metadata">this</link> menu). Database metadata will be overwritten with the file's metadata in case of discrepancy. The opposite you can do from the <link linkend="synchronize-metadata">Album</link> menu.
                 </action></para>
             </listitem>            
         </varlistentry>
