@@ -994,7 +994,7 @@
         <sect2 id="using-sidebarcommentstags">
         <title>Comments &amp; Tags</title>
            <para>
-           This sidebar tab serves to apply and edit image attributes like comments, rating, date and tags. The attributes are stored in the associated database, in the IPTC and EXIF data fields and become part of the image. All attributes are accessible in one sidebar view as shown in the screenshot below. During image reading the order of priority is a) database b) IPTC and c) EXIF. So if there is a discrepancy between any of the three, this priority will take effect and a synchronization will take place. This sidebar has a first-previous-next-last arrow navigator field on top if shown in the main application.
+           This sidebar tab serves to apply and edit image attributes like captions, rating, date and tags. The attributes are stored in the associated database, in the IPTC and EXIF data fields and become part of the image. All attributes are accessible in one sidebar view as shown in the screenshot below. During image reading the order of priority is a) database b) IPTC and c) EXIF. So if there is a discrepancy between any of the three, this priority will take effect and a synchronization will take place. This sidebar has a first-previous-next-last arrow navigator field on top if shown in the main application.
            </para>
 
            <example>  <title>sidebar Comments &amp; Tags example</title>
@@ -1004,10 +1004,10 @@
           <sect3>
           <title>Comment View</title>
            <para>
-           The comment view can be used to type or paste in a comment of unlimited size (see note below). The text is UTF-8 compatible, meaning that all special characters are allowed. The comments are copied to EXIF and IPTC comment fields to be used from other applications.
+           The caption view can be used to type or paste in a caption of unlimited size (see note below). The text is UTF-8 compatible, meaning that all special characters are allowed. The captions are copied to EXIF and IPTC fields to be used by other applications.
            </para>
            <caution><para>
-           IPTC data only supports ASCII characters and is limited to 2000 characters (old American norm). All comments will be truncated after 2000 chars, and special characters will be malformed. If you intend to use the IPTC comment field in other applications you should be compliant with these restrictions.
+           IPTC data only supports ASCII characters and is limited to 2000 characters (old American norm). All texts will be truncated after 2000 chars, and special characters will be malformed. If you intend to use the IPTC caption field in other applications you should be compliant with these restrictions.
            </para></caution>
 
           </sect3>
@@ -1473,7 +1473,7 @@
             <sect3 id="setup-embeddedinfo">           <title>Metadata (embedded information settings)</title>
     
                 <para>
-                Image files can have some meta-data embedded into the image file format. This meta-data can be stored in a number of standard formats. &digikam; can read meta-data in the EXIF format if it is present in the file. &digikam; can also write comments into the <ulink url="http://www.exif.org">EXIF information</ulink>. Writing comments to the EXIF section is limited to JPEG images for now (the exiv2 library is in development and will be extended to PNG and TIFF format metadata embedding in the near future).
+                Image files can have some meta-data embedded into the image file format. This meta-data can be stored in a number of standard formats. &digikam; can read meta-data in the EXIF format if it is present in the file. &digikam; can also write captions into the <ulink url="http://www.exif.org">EXIF information</ulink>. Writing captions to the EXIF section is limited to JPEG images for now (the exiv2 library is in development and will be extended to PNG and TIFF format metadata embedding in the near future).
                 </para>
                 
                 <para>  
@@ -1497,7 +1497,7 @@
                 </para>
 
                 <para>
-                <guilabel>Save image comments as embedded comments (JFIF) in JPEG images</guilabel> : this will synchronize the comments that you add to your photographs with those in embedded in the image. This is useful because the comments embedded in the image can be read by other image viewers. Care should be taken if you have images that already have comments embedded in them because these comments will be overwritten by the comments made within &digikam;.
+                <guilabel>Save image captions as embedded captions (JFIF) in JPEG images</guilabel> : this will synchronize the captions that you add to your photographs with those in embedded in the image. This is useful because the captions embedded in the image can be read by other image viewers. Care should be taken if you have images that already have captions embedded in them because these captions will be overwritten by the captions made within &digikam;.
                 </para> 
     
             </sect3>
