@@ -69,12 +69,14 @@
    <listitem><para>Image Color
       <itemizedlist>
       <listitem><para><link linkend="auto-correction">Auto Correction</link></para></listitem>
-      <listitem><para><link linkend="whitebalance">White Balance/Exposure/Saturation</link></para></listitem>
-      <listitem><para><link linkend="coloreffects">Color Effects (Solarize, Vivid, Neon, Edge)</link></para></listitem>
       <listitem><para><link linkend="exposure-correct">Brightness/Contrast/Gamma</link></para></listitem>
-      <listitem><para><link linkend="adjustcurves">Adjust Curves</link></para></listitem>
-      <listitem><para><link linkend="adjustlevels">Adjust Levels</link></para></listitem>
+      <listitem><para><link linkend="using-correctingcolor">Hue/Saturation/Lightness</link></para></listitem>
+      <listitem><para><link linkend="colorbalancetool.anchor">Color Balance</link></para></listitem>
       <listitem><para><link linkend="blackandwhite-conversion">Black and White</link></para></listitem>
+      <listitem><para><link linkend="adjustlevels">Adjust Levels</link></para></listitem>
+      <listitem><para><link linkend="coloreffects">Color Effects (Solarize, Vivid, Neon, Edge)</link></para></listitem>
+      <listitem><para><link linkend="whitebalance">White Balance/Exposure/Saturation</link></para></listitem>
+      <listitem><para><link linkend="adjustcurves">Adjust Curves</link></para></listitem>
       <listitem><para><link linkend="channelmixer">Channel Mixer</link></para></listitem>
       </itemizedlist>
    </para></listitem>
@@ -140,7 +142,7 @@
   </sect1>
 
   <sect1 id="using-iccprofile">     <title>ICC color profile management</title>
-            
+
             <para>
                 What is the importance of ICC color profile management anyway? In simple terms it is alike hi-fi stereo, where high fidelity is seeked from source to speakers, passing through microphone, recoding media, player and amplifier. Much the same, ICC color profile management tries to maintain color fidelity from photographic subject through the camera to the output media screen, print, paper and beamer. Luckily digital photography has taken out one source of distortion, the storage media (as the &CD-ROM; did in the audio field).
             </para>
@@ -153,7 +155,7 @@
                 <inlinemediaobject><imageobject><imagedata
                 fileref="&path;colormanagement.png" format="PNG" /> </imageobject></inlinemediaobject>
             </para>
-            
+
 
             <tip>
                 <para><emphasis>CM Pros.</emphasis> CM is really important whenever you need identical results between shooting sessions, accurate source reproduction, close rendering results between various display media (this would rather point CM to professionals).</para>
@@ -180,12 +182,12 @@
                     The following diagram tries to outline the logic &digikam; will follow in its CM work flow, depending on the settings made in <emphasis>IO Files</emphasis> and <emphasis>ICC profiles</emphasis> of the configuration page.
             </para>
 
-           <para> 
+           <para>
               <inlinemediaobject><imageobject>
-                <imagedata fileref="&path;ICCworkflowlogic.png" format="PNG" /> 
-              </imageobject></inlinemediaobject> 
+                <imagedata fileref="&path;ICCworkflowlogic.png" format="PNG" />
+              </imageobject></inlinemediaobject>
            </para>
-            
+
 
             <sect2 id="softproofing">
             <title>Soft Proofing</title>
@@ -199,7 +201,7 @@
 
                 <para>Rendering intent refers to the way gamuts are handled when the intended target color space cannot handle the full gamut.</para>
                 <itemizedlist>
-            
+
                     <listitem><para><emphasis>Perceptual</emphasis>, also called Image or Maintain Full Gamut.  This is generally recommended for photographic images. The color gamut is expanded or compressed when moving between color spaces to maintain consistent overall appearance. Low saturation colors are changed very little. More saturated colors within the gamuts of both spaces may be altered to differentiate them from saturated colors outside the smaller gamut space. Perceptual rendering applies the same gamut compression to all images, even when the image contains no significant out-of-gamut colors.</para>
                     </listitem>
 
