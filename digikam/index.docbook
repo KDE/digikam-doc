@@ -70,7 +70,7 @@
 
 <copyright>
     <year>2001</year>
-    <year>2007</year>
+    <year>2008</year>
     <holder>The &digikam; developers team</holder>
 </copyright>
 
@@ -79,7 +79,7 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2007-09-01</date>
+<date>2008-01-03</date>
 <releaseinfo>0.9.3</releaseinfo>
 
 <abstract>
@@ -120,17 +120,17 @@
        <title>About &digikam;</title>
 
        <para>
-       &digikam; is an advanced digital photo management application for the &kde; desktop. It provides a simple interface which makes importing and organizing digital photographs a &quot;snap&quot;. &digikam; enables you to manage large numbers of digital photographs in Albums and to organize these photographs for easy retrieval using tags, collections, dates and searches. It has many features for viewing, organizing, processing and sharing your images.
+       &digikam; is an advanced digital photo management application for the &kde; desktop. It provides a simple interface which makes importing and organizing digital photographs a &quot;snap&quot;. &digikam; enables you to manage large numbers of digital photographs in Albums and to organize these photographs for easy retrieval using tags, captions, collections, dates and searches. It has many features for viewing, organizing, processing and sharing your images.
        </para>
 
        <para>
-       An easy-to-use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">800 digital cameras</ulink> are supported through the gphoto2 library.
+       An easy-to-use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">900 digital cameras</ulink> are supported by the gphoto2 library. Of course, any media or card reader supported by your operating system wil interface with &digikam;.
        </para>
 
        <para>&digikam; incorporates a fast Image Editor with many image editing tools. You can use the Image Editor to view your photographs, comment and rate them, correct, enhance and alter them. The editing power can be easily extended by a set of plugins, the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface</ulink> (<ulink url="help:/kipi-plugins/index.html">manual</ulink>)
        </para>
 
-       <para>While &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports RAW format conversion through David Coffins dcraw and ICC color management work flow.
+       <para>While &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports RAW format conversion through David Coffins dcraw and ICC color management <link linkend="rawprocessing.anchor">work flow</link>.
        </para>
 
        </sect2>
@@ -246,7 +246,7 @@
 
         <itemizedlist>
 
-                <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface project (kipi)</ulink>  (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) is an effort to develop a common plugin structure for &digikam;, <application>KPhotoAlbum</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi Plugins setup is described in this <link linkend="setup-kipiplugins">section</link>.</para></listitem>
+                <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface project (kipi)</ulink>  (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) is an effort to develop a common plugin structure for &digikam;, <application>KPhotoAlbum</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi-Plugins setup is described in this <link linkend="setup-kipiplugins">section</link>.</para></listitem>
 
         </itemizedlist>
 
@@ -265,12 +265,9 @@
  <sect1 id="using-camerasupport">      <title>Supported Digital Still Cameras</title>
     <anchor id="digitalstillcamera.anchor"/>
 
-        <sect2>
-        <title>Introduction</title>
-
-            <para>
+          <para>
             Current digital cameras are characterized by the use of <emphasis>Compact &Flash; Memory</emphasis> cards and <emphasis>USB</emphasis> or <emphasis>FireWire (IEEE-1394 or i-link)</emphasis> for data transmission. The actual transfers to a host computer are commonly carried out using the <emphasis>USB Mass Storage</emphasis> device class (so that the camera appears as a disk drive) or using the <emphasis>Picture Transfer Protocol (PTP)</emphasis> and its derivatives. Older cameras may use the <emphasis>Serial Port (RS-232)</emphasis> connection.
-            </para>
+          </para>
 
             <informaltable><tgroup cols="2">
 
@@ -314,10 +311,7 @@
 
             </tgroup></informaltable>
 
-        </sect2>
-
-        <sect2>
-        <title>Transfers using gPhoto2: PTP and RS-232 Serial Port</title>
+        <para><guilabel>Transfers using gPhoto2: PTP and RS-232 Serial Port</guilabel></para>
 
             <para>
             &digikam; employs the <emphasis>gPhoto2</emphasis> program to communicate with digital still cameras. gPhoto2 is a free, redistributable set of digital camera software applications which supports a growing number of over 800 cameras. gPhoto2 has support for the <emphasis>Picture Transfer Protocol</emphasis>, which is a widely supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
@@ -327,10 +321,8 @@
             Many old digital still cameras used <emphasis>Serial Port</emphasis> to communicate with host computer. Because photographs are big files and serial port transfers are slow, this connection is now obsolete. &digikam; supports these cameras and performs image transfers using the gPhoto2 program. You can find a complete list of supported digital cameras at this <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">url</ulink>.
             </para>
 
-        </sect2>
 
-        <sect2>
-        <title>Transfers using Mass Storage device</title>
+        <para>        <guilabel>Transfers using Mass Storage device</guilabel></para>
 
             <para>
             Of the devices that are not directly supported by gPhoto2, there is support for the <emphasis>Mass Storage</emphasis> protocol, which is well supported under &GNU;/&Linux;. This includes many digital cameras and Memory Card Readers. Mass Storage interfaces are:
@@ -345,8 +337,6 @@
 
              To use a generic Mass Storage device with &digikam;, select <guilabel>Mounted Camera</guilabel> item in <link linkend="cameraselection.anchor">Camera Setup</link> list and set the correct mount point path.
             </para>
-
-        </sect2>
 
     </sect1>
 
@@ -935,7 +925,7 @@
 
  <sect1 id="using-lighttable">          <title>The &digikam; Light Table</title>
      <para>
-       &digikam; features a light table in a separate window to easily compare images. It work on all supported image formats including RAW files.
+       &digikam; features a light table in a separate window to easily compare images. It works with all supported image formats including RAW files.
      </para>
      <para>
        Select one or several images in any view from the main window, call
@@ -962,7 +952,13 @@
       </para>
 
       <para>
-         All image information from the main window right sidebar is available for each of the two previews in the light table. This makes it easy to link visual differences to exposure data, for example.
+         All image information from the main window right sidebar is available for each of the two previews in the light table. This makes it easy to link visual differences to exposure data for example.
+      </para>
+      <para>
+         In the lower right corner of each pane there you find a built-in panning action (crossed arrows). Click on it and keep the &LMB; pressed to pan ocross the image (in synchronous mode both images will show the same viewing port).
+      </para>
+      <para>
+         Zooming works the same as in other views: use indifferently the zoom slider below the panes or <keycombo action="press"><keycap>&Ctrl;</keycap><keycap>scroll wheel</keycap></keycombo> to zoom in and out, with both images when in synchronous mode.
       </para>
                 <example>
                     <title>The Light Table in Action</title>
@@ -1421,6 +1417,7 @@
              <listitem><para><link linkend="setup-embeddedinfo">Metadata (embedded information)</link></para></listitem>
              <listitem><para><link linkend="setup-tooltip">Tooltip Settings</link></para></listitem>
              <listitem><para><link linkend="setup-mimetype">Mime Type Settings</link></para></listitem>
+             <listitem><para><link linkend="setup-lighttable">Light Table Settings</link></para></listitem>
              <listitem><para><link linkend="setup-editor">Image Editor Settings</link></para></listitem>
              <listitem><para><link linkend="setup-saveimages">Save Image Options</link></para></listitem>
              <listitem><para><link linkend="setup-raw-decoder">RAW Decoder Settings</link></para></listitem>
@@ -1536,6 +1533,17 @@
 
             </sect3>
 
+            <sect3 id="setup-lighttable">               <title>Light Table Settings</title>
+
+                <para>
+                The setting of the &digikam; Light Table can be set to default values on this page so that every time you open the Light Table, these settings are activated (if possible, because for images having different sizes the synchronous mode does not work). The &quot;Load full image size&quot; is only recommended for fast maschines, but if you have one, enable this option for better viewing results.
+                </para>
+                <para>
+                    <inlinemediaobject><imageobject><imagedata fileref="&path;setuplighttable.png" format="PNG" /> </imageobject></inlinemediaobject>
+                </para>
+
+            </sect3>
+
             <sect3 id="setup-editor">                 <title>Image Editor Settings</title>
                 <para>
                   By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background color you can choose one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
@@ -1551,9 +1559,11 @@
             <sect3 id="setup-saveimages">             <title>Save Image Options</title>
 
                 <para>
-                When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the <guilabel>JPEG quality</guilabel> slider  (1: low quality / 100: high quality and no compression).
+                  When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the <guilabel>JPEG quality</guilabel> slider  (1: low quality / 100: high quality and no compression).
                 </para>
-
+                <para>
+                  Chroma subsampling is the practice of encoding images by implementing more resolution for luminance information than for color information. Please read <ulink url="http://en.wikipedia.org/wiki/Chroma_subsampling">this</ulink> Wikipedia article for a full explanation.
+                </para>
                 <para>
                     <inlinemediaobject><imageobject><imagedata fileref="&path;setupsaveimages.png" format="PNG" /> </imageobject></inlinemediaobject>
                 </para>
@@ -1623,6 +1633,12 @@
                    While demosaicing your image, you can additionally ask for noise reduction (at a speed penalty). This option applies a noise reduction algorithm while the image still is in CIE Lab color space. Because the noise is only applied to the Luminosity layer (the "L" of the Lab), it should not blur your image as traditional noise reduction algorithms do in RVB mode. So, if you converted an image from RAW and it appears noisy, rather than applying a denoiser, go back and re-convert with this option enabled. The defaults are: <emphasis>Domain</emphasis> = 2 and <emphasis>Range</emphasis> = 4.
                 </para>
 
+                <anchor id="CA.anchor"/>
+                <para><guilabel>Enable chromatic abberation (CA) correction</guilabel></para>
+                <para>
+                   If you know the CA of your lenses you can set the red and blue correction values here. This is certainly the optimal method for CA correction as it is done during RAW conversion.
+                </para>
+
            </sect3>
 
             <sect3 id="setup-iccprofiles">            <title>ICC Profiles setup</title>
@@ -1638,7 +1654,7 @@
 
               <para><guilabel>Behavior</guilabel> Ask when opening an image in image editor / Launch Color Management tool with RAW files</para>
               <para><guilabel>Color Profiles Directory</guilabel>
-                Set this to the folder where you store all your profiles &eg; "/usr/share/color/icc" or "/home/user/Images/.icc". &digikam; will scan this folder when starting up.</para>
+                Set this to the folder where you store all your profiles &eg; "/usr/share/color/icc" or "/home/user/.color/icc". &digikam; will scan this folder when starting up.</para>
               <para><guilabel>ICC Profiles Settings</guilabel>
                 Here you are given the ability to provide &quot;default&quot; choices for your profiles. Everything is adaptable later-on at the opening of a RAW file.</para>
               <itemizedlist>
@@ -1646,7 +1662,8 @@
                 <listitem><para>The <guilabel>Use color managed view</guilabel> is an alternative to using Xcalib or Argyll. Only your image will be color managed, not your entire screen! </para></listitem>
 
                 <listitem><para>
-                  You have to provide a workspace profile (such as Adobe RGB or sRGB). If you want to go to print with your images, you may want to go to Adobe RGB, if it is only for web publishing, sRGB is better (Adobe RGB will be displayed slightly dull in non color managed enable software such as browsers). However you may change this later of course, therefore Adobe RGB can be a good choice for storing and image handling as you can always change it to sRGB before releasing a image for your blog.</para></listitem>
+                  You have to provide a workspace profile (linear profiles such as sRGB, ECI-RGB, LStar-RGB, Adobe-RGB oder CIE-RGB). If you want to print your images, you may want to opt for Adobe RGB, if it is only for web publishing, sRGB is better (Adobe RGB will be displayed slightly dull in non color managed enabled software such as browsers). However you may change this later of course (by attributing another profile), therefore Adobe RGB can be a good choice for storing and image handling as you can always change it to sRGB before releasing an image for your blog.</para><para>Do not use non-linear profiles as they will change the color-balance</para>
+                </listitem>
 
                 <listitem><para>
                   input profile should match the camera maker you are using. I am the (happy) owner of a Minolta 7D and I therefore use a Minolta profile.</para></listitem>
@@ -1655,9 +1672,50 @@
                  There are some other options such as the soft proof profile which enables you to emulate, granted that you have a profile for it, how your image will render for a particular device. It is useful before printing for instance because your printer has a smaller gamut than your camera and some colors might look saturated. You may want to fix this manually instead of relying on the "blind" algorithm of your printer.</para></listitem>
 
               </itemizedlist>
+
+              <para>For most cameras it is pretty obvious what color profile they propose for the type at hand, not so for the Canon's. Here is a table of camera/profiles matches, it is non-authoritative of course:</para>
+              <informaltable><tgroup cols="2">
+                <thead><row>
+                    <entry>Camera</entry>
+                    <entry>Profile series</entry>
+                    </row></thead>
+                    <tbody>
+                        <row>   <entry>Canon 1D mark II</entry>     <entry>6051</entry>      </row>
+                        <row>   <entry>Canon 1D mark II</entry>     <entry>6111</entry>      </row>
+                        <row>   <entry>Canon 1Ds</entry>            <entry>6021</entry>      </row>
+                        <row>   <entry>Canon 1Ds mark II</entry>    <entry>6081</entry>      </row>
+                        <row>   <entry>Canon 5D</entry>      <entry>6091</entry>      </row>
+                        <row>   <entry>Canon 10D</entry>     <entry>6031</entry>      </row>
+                        <row>   <entry>Canon 20D</entry>     <entry>6061</entry>      </row>
+                        <row>   <entry>Canon 30D</entry>     <entry>6112</entry>      </row>
+                        <row>   <entry>Canon 40D</entry>     <entry>6101</entry>      </row>
+                        <row>   <entry>Canon 300D</entry>    <entry>6031</entry>      </row>
+                        <row>   <entry>Canon 350D</entry>    <entry>6111 or 6071</entry>      </row>
+                        <row>   <entry>Canon 400D</entry>    <entry>6131</entry>      </row>
+                     </tbody>
+              </tgroup></informaltable>
+              <para>The Canon profile extension betray the target style: F for Faithful Style, L for Landscape Style, N for Neutral Style, P for Portrait Style, S for Standard Style.</para>
             </sect3>
 
-            <sect3>  <title>Process a raw image</title>
+            <sect3 id="raw-workflow">  <title>Processing RAW image files, RAW work-flow</title>
+            <anchor id="rawprocessing.anchor"/>
+
+             <para>A typical RAW workflow with &digikam; may follow these steps:</para>
+             <itemizedlist>
+               <listitem><para>Setting up the RAW conversion and color management preferences
+                 <itemizedlist>
+                  <listitem><para>get the ICC color profiles for the camera, display and printer</para></listitem>
+                  <listitem><para>setup &digikam; correctly defining a color work space </para></listitem>
+                 </itemizedlist>
+               </para></listitem>
+               <listitem><para>Camera whitepoint adjustment</para></listitem>
+               <listitem><para>Demosaicing (include interpolation, noise filtering and <link linkend="CA.anchor">CA correction</link></para></listitem>
+               <listitem><para>Conversion to a color space</para> </listitem>
+               <listitem><para>Gamma correction</para> </listitem>
+               <listitem><para>Color profile application</para> </listitem>
+               <listitem><para>Dynamic range expansion (optional)</para></listitem>
+             </itemizedlist>
+
              <para>
                From there everything is simple, select a RAW image and open it in the editor. The color management widget will be displayed after the image has been processed in order to adjust color rendering. Without color management all images are very dark, this is normal. You can experiment the various profiles you have in order to select the best input profile according to your image (some tends to be very neutral, even a bit dull, some gives more saturated results, &etc;).
              </para>
@@ -2011,7 +2069,7 @@
         <sect2>       <title>Moving Between Photographs</title>
 
             <para>
-            Once you have started the Image Editor you can move between photographs in the same Album or Tags view by using the navigator buttons on the toolbar or the entries in the <guilabel>File</guilabel> menu. If you have made any changes to the current photograph you will be asked if you want to save them.
+            Once you have started the Image Editor you can move between photographs in the same view you started from by using the navigator buttons on the toolbar, <keycap>PgUp</keycap>, <keycap>PgDown</keycap> or the entries in the <guilabel>File</guilabel> menu. If you have made any changes to the current photograph you will be asked if you want to save them.
             </para>
 
         </sect2>
@@ -2019,14 +2077,10 @@
         <sect2>       <title>Changing the View</title>
 
             <para>
-            You can zoom in and out of a photograph using the
-            <inlinemediaobject>
-                <imageobject><imagedata fileref="&path;editorzoombuttons.png" format="PNG"/></imageobject>
-                <textobject> <phrase>The Image Editor Zoom Buttons</phrase> </textobject>
-            </inlinemediaobject> buttons on the tool bar or the entries in the View menu.
+            You can zoom in and out of a photograph using the <keycombo action="press"><keycap>&Ctrl;</keycap><keycap>scroll wheel</keycap></keycombo>, the toolbar icons or the entries in the View menu.
             </para>
             <para>
-            To make a photograph fit the window use this button on the tool bar:<guilabel>Zoom Autofit</guilabel>
+            To make a photograph fit the window use this button on the tool bar: <guilabel>Zoom Autofit</guilabel>
             <inlinemediaobject>
                 <imageobject><imagedata fileref="&path;editorautosizebutton.png" format="PNG"/></imageobject>
                 <textobject> <phrase>The Image Editor AutoFit Button</phrase> </textobject>

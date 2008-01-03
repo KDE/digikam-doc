@@ -1,8 +1,24 @@
- <sect1 id="photographic-editing">          <title>Photographic Editing</title>
+ <sect1 id="photographic-editing">          <title>Photographic Editing - Workflow</title>
 
    <sect2 id="image-editing-tools">             <title>Image Editing/Workflow Tools</title>
+    <sect3 id="standard-workflow">              <title>A Standard Workflow Proposal</title>
+      <para>When performing a basic workflow, the primary areas for consideration are:
+        <orderedlist>
+          <listitem><para>Exposure: <link linkend="whitebalance">White Balance</link></para></listitem>
+          <listitem><para>Color: <link linkend="whitebalance">White Balance</link></para></listitem>
+          <listitem><para>Black and white points: <link linkend="whitebalance">White Balance</link> or <link linkend="adjustlevels">Adjust Levels</link></para></listitem>
+          <listitem><para>Contrast: <link linkend="adjustcurves">Adjust Curves</link></para></listitem>
+          <listitem><para>Saturation: <link linkend="whitebalance">White Balance</link> or <link linkend="coloreffects">Vivid</link> or <link linkend="using-correctingcolor">Hue/Saturation/Lightness</link></para></listitem>
+          <listitem><para>Interpolation</para></listitem>
+          <listitem><para>Sharpening</para></listitem>
+          <listitem><para>Digital Asset Management</para></listitem>
+        </orderedlist>
+        We recommend this sequence of image editing steps to ensure optimum photographic quality for the end product. In particular, never do sharpening before the last step. And we recommend using a lossless format like PNG or TIFF for storing photographs. Otherwise you'll lose a bit every time you save the results.
+        </para>
+        <para>Many of the tools you may need for photographic editing are included with &digikam;. Their desciption follows here. </para>
+    </sect3>
 
-    <sect3>      <title>Introduction to Common Tool Dialogs</title>
+    <sect3>      <title>Introduction to common editing tools features</title>
       <para>
          All Image Editor tools like Sharpen, Blur, Noise Reduction, Refocus, Unsharpen Mask, &etc;. use a common dialog style that previews the effect before applying the filter to the current image. Below you see the &quot;Apply Texture&quot; tool in action using this common dialog layout:
       </para>
@@ -23,43 +39,49 @@
         <itemizedlist>
           <listitem>
             <para>
-              <emphasis>(1)</emphasis>: This progress bar indicates the status of filter application on the current image. To the left of it, five buttons allow to select the comparative mode style of the preview area. The modes are:
+              <emphasis>(1)</emphasis>: The seven buttons to the top left select the comparison style of the preview area. The modes are:
               <itemizedlist>
+                <listitem>         <para>Original image</para>             </listitem>
                 <listitem>
-                  <para>Separate horizontally with duplication. The top area shows the original and the lower one the filter effect for comparison.</para>
+                  <para>Split vertically without duplication. The left area shows the original whereas the right side shows the filter applied to the continuation of the selected zoom.</para>
                 </listitem>
                 <listitem>
-                  <para>Separate vertically with duplication. The left area shows the original and the right one the filter effect for comparison.</para>
+                  <para>Split horizontally without duplication. The top area shows the original whereas the lower area shows the filter applied to the continuation of the selected zoom.</para>
                 </listitem>
                 <listitem>
-                  <para>Separate horizontally without duplication. The top area shows the original whereas the lower area shows the filter applied to the continuation of the selected zoom.</para>
+                  <para>Split vertically. The left area shows the original and the right one the filter effect for comparison.</para>
                 </listitem>
                 <listitem>
-                  <para>Separate vertically without duplication. The left area shows the original whereas the right side shows the filter applied to the continuation of the selected zoom.</para>
+                  <para>Split horizontally. The top area shows the original and the lower one the filter effect for comparison.</para>
                 </listitem>
                 <listitem>
-                  <para>Direct effect preview. The effect preview is applied to all of the selected zoom area.</para>
+                  <para>Effect preview. This is a live effect preview without comparison.</para>
+                </listitem>
+                <listitem>
+                  <para>'Mouse over' style: preview when mouse is off the preview (in the settings area), otherwise shows original.</para>
                 </listitem>
               </itemizedlist>
             </para>
           </listitem>
           <listitem>
-            <para>
-              <emphasis>(2)</emphasis>: The preview selector frame. Click and drag with the mouse on the floating frame to move it on the image. The preview area on the left of dialog is updated accordingly.</para>
+            <para><emphasis>(2)</emphasis>: There are two buttons that can be toggled to show over or underexposure. The colors can be customized in the <link linkend="setupdialog.anchor">general setup page</link>.</para>
+          </listitem>
+          <listitem>
+            <para><emphasis>(3)</emphasis>: The preview selector frame. Click and drag with the mouse on the floating frame to move it on the image. The preview area on the left of dialog is updated accordingly.</para>
+          </listitem>
+          <listitem>
+            <para>   <emphasis>(4)</emphasis>: The filter or plugin settings area.</para>
           </listitem>
           <listitem>
             <para>
-              <emphasis>(3)</emphasis>: The filter settings area.</para>
+              <emphasis>(5)</emphasis>: At the lower left corner: there is help and a reset to defaults button (all settings are remembered from the last use of the plugin).</para>
           </listitem>
           <listitem>
             <para>
-              <emphasis>(4)</emphasis>: The original area for the zoomed image region. This area is unchanged by the filter. Click and drag with the mouse in this area to move it on the image.</para>
-          </listitem>
-          <listitem>
-            <para>
-              <emphasis>(5)</emphasis>: The target area for the zoomed image region. This area is changed by the filter and presents the actual preview. Click and drag with the mouse in this area to move it on the image.</para>
+              <emphasis>(6)</emphasis>: There is a progress indicator for plugins with involved calculations.</para>
           </listitem>
         </itemizedlist>
+
       </para>
     </sect3>
 
@@ -73,7 +95,7 @@
       <listitem><para><link linkend="using-correctingcolor">Hue/Saturation/Lightness</link></para></listitem>
       <listitem><para><link linkend="colorbalancetool.anchor">Color Balance</link></para></listitem>
       <listitem><para><link linkend="blackandwhite-conversion">Black and White</link></para></listitem>
-      <listitem><para><link linkend="adjustlevels">Adjust Levels</link></para></listitem>
+      <listitem><para></para></listitem>
       <listitem><para><link linkend="coloreffects">Color Effects (Solarize, Vivid, Neon, Edge)</link></para></listitem>
       <listitem><para><link linkend="whitebalance">White Balance/Exposure/Saturation</link></para></listitem>
       <listitem><para><link linkend="adjustcurves">Adjust Curves</link></para></listitem>
