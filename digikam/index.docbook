@@ -106,6 +106,7 @@
     <keyword>Color Management</keyword>
     <keyword>exiv2</keyword>
     <keyword>dcraw</keyword>
+    <keyword>RAW format</keyword>
 </keywordset>
 
 </bookinfo>
@@ -124,7 +125,7 @@
        </para>
 
        <para>
-       An easy-to-use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">900 digital cameras</ulink> are supported by the gphoto2 library. Of course, any media or card reader supported by your operating system wil interface with &digikam;.
+       An easy-to-use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">900 digital cameras</ulink> are supported by the gphoto2 library. Of course, any media or card reader supported by your operating system will interface with &digikam;.
        </para>
 
        <para>&digikam; incorporates a fast Image Editor with many image editing tools. You can use the Image Editor to view your photographs, comment and rate them, correct, enhance and alter them. The editing power can be easily extended by a set of plugins, the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface</ulink> (<ulink url="help:/kipi-plugins/index.html">manual</ulink>)
@@ -182,37 +183,37 @@
 
  <sect1 id="using-firstrun">           <title>Getting Started</title>
 
-        <sect2 id="firstrundialog">
-           <title>The First Run Dialog</title>
+       <sect2>   <title></title>
+        <para></para>
+        <sect3 id="firstrundialog">   <title>The First Run Dialog</title>
            <para>
            <inlinemediaobject><imageobject>
               <imagedata fileref="&path;introductionfirstrundialog.png" format="PNG" />  </imageobject>
            </inlinemediaobject></para>
 
         <para>
-        When you start &digikam; for the very first time it will ask you where you store your photographs. You can type in the path name of a folder or click on the <guilabel>folder</guilabel> icon
-        <inlinemediaobject>
+          When you start &digikam; for the very first time it will ask you where you store your photographs. You can type in the path name of a folder or click on the <guilabel>folder</guilabel> icon
+           <inlinemediaobject>
             <imageobject><imagedata fileref="&path;introductionfoldericon.png" format="PNG"/></imageobject>
             <textobject> <phrase>Folder Icon</phrase> </textobject>
-        </inlinemediaobject>
-        to select a folder from the dialog.
+           </inlinemediaobject>
+          to select a folder from the dialog.
         </para>
-        </sect2>
+        </sect3>
 
-        <sect2>
-        <title>The Scan Items Dialog</title>
-
+        <sect3>        <title>The Scan Items Dialog</title>
         <para>
-        If you already have a collection of photographs on your hard disk, you can enter the top-level folder containing the photographs, this is called the Albums Library folder. &digikam; will treat each sub-folder of the folder you've entered as an Album. None of the photographs will be altered. During folders parsing you can see a progress dialog like this:
+          If you already have a collection of photographs on your hard disk, you can enter the top-level folder containing the photographs, this is called the Albums Library folder. &digikam; will treat each sub-folder of the folder you've entered as an Album. None of the photographs will be altered. During folders parsing you can see a progress dialog like this:
         </para>
         <para>
           <inlinemediaobject> <imageobject>
             <imagedata fileref="&path;introductionscandialog.png" format="PNG" /> </imageobject></inlinemediaobject>
         </para>
-        </sect2>
-        <sect2>
-        <title>The Albums Missing Dialog</title>
-        <para>This parsing for modifications happens at every application start-up, but it can be disabled in the <guilabel>Settings</guilabel> under <guilabel>Miscellaneous</guilabel>
+        </sect3>
+
+        <sect3>        <title>The Albums Missing Dialog</title>
+        <para>
+          This parsing for modifications happens at every application start-up, but it can be disabled in the <guilabel>Settings</guilabel> under <guilabel>Miscellaneous</guilabel>
 	</para>
 	<para>
           As &digikam; uses your folders on your hard disk directly, other applications like file managers can remove any albums outside a &digikam; session. In this case &digikam; will tell you at the next session if all albums that have been removed from the &digikam; photographs root path shall be deleted from albums database. If you want to move folders around and do not want to do that in &digikam;, we suggest you do that while &digikam; is running, so the database will be kept in sync and you do not lose any metadata.
@@ -224,17 +225,18 @@
         </para>
 
         <para>
-        When you use an existing folder of photographs, as the Album Library folder, you will notice that the Albums in the Album list do not have photographs as their icons. The first time you view each Album &digikam; will create a thumbnail from the first photograph in the Album and use this as the Album icon. See the <link linkend="using-myalbumsview">Album</link> section for details of how to change the Album icon.
+          When you use an existing folder of photographs, as the Album Library folder, you will notice that the Albums in the Album list do not have photographs as their icons. The first time you view each Album &digikam; will create a thumbnail from the first photograph in the Album and use this as the Album icon. See the <link linkend="using-myalbumsview">Album</link> section for details of how to change the Album icon.
         </para>
 
         <para>
-        If you have previously accessed your photograph collection with another application, that has created thumbnails in non-standard sub-folders, &digikam; will show these thumbnail folders as separate Albums. &digikam; follows the <ulink url="http://www.freedesktop.org/">freedesktop.org</ulink> standards for thumbnail folders. There is no way of hiding non-standard thumbnail folders from the &quot;Albums&quot; list. If you want to keep them you could create an Album Collection that just contains all the thumbnail Folders and then view your Albums in By Collection order. See the <link linkend="using-myalbumsview">Album</link> section for more about Album Collections.
+          If you have previously accessed your photograph collection with another application, that has created thumbnails in non-standard sub-folders, &digikam; will show these thumbnail folders as separate Albums. &digikam; follows the <ulink url="http://www.freedesktop.org/">freedesktop.org</ulink> standards for thumbnail folders. There is no way of hiding non-standard thumbnail folders from the &quot;Albums&quot; list. If you want to keep them you could create an Album Collection that just contains all the thumbnail Folders and then view your Albums in By Collection order. See the <link linkend="using-myalbumsview">Album</link> section for more about Album Collections.
         </para>
 
         <para>
-        Once you have configured the Album Library Folder you can set up &digikam; to work with your digital camera. Then learn how to use <link linkend="using-myalbumsview">Albums</link> and <link linkend="using-mytagsview">Tags</link> to arrange your photograph Albums.
+          Once you have configured the Album Library Folder you can set up &digikam; to work with your digital camera. Then learn how to use <link linkend="using-myalbumsview">Albums</link> and <link linkend="using-mytagsview">Tags</link> to arrange your photograph Albums.
         </para>
-        </sect2>
+        </sect3>
+       </sect2>
     </sect1>
 
  &doc-file-formats;
@@ -246,7 +248,7 @@
 
         <itemizedlist>
 
-                <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface project (kipi)</ulink>  (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) is an effort to develop a common plugin structure for &digikam;, <application>KPhotoAlbum</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi-Plugins setup is described in this <link linkend="setup-kipiplugins">section</link>.</para></listitem>
+                <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface project (Kipi)</ulink>  (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) is an effort to develop a common plugin structure for &digikam;, <application>KPhotoAlbum</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi-Plugins setup is described in this <link linkend="setup-kipiplugins">section</link>.</para></listitem>
 
         </itemizedlist>
 
@@ -735,7 +737,7 @@
       </para>
 
              <tip>
-              <para>Tags are stored in a database for fast access, and, the applied tags are written into IPTC data fields of the image (at least for JPEG). So can use your tags with other programs or, in case of loss of that data in the database, the tags will be reimported when the image is noticed by &digikam;.</para></tip>
+              <para>Tags are stored in a database for fast access, and, the applied tags are written into IPTC data fields of the image (at least for JPEG). So can use your tags with other programs or, in case of loss of that data in the database, the tags will be re-imported when the image is noticed by &digikam;.</para></tip>
 
       <sect3 id="using-managetags">          <title>Managing Tags</title>
 
@@ -818,7 +820,7 @@
 
 
                 <para>
-                When you are satisfied with your selection, click on the <guilabel>Ok</guilabel> button, and the search will be carried out, and the results displayed in "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to label your query in "My Search" list. If you want to modify your selection after performing a search, simply right click on the item from "My Search" view and select an option from the popup menu.
+                When you are satisfied with your selection, click on the <guilabel>Ok</guilabel> button, and the search will be carried out, and the results displayed in "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to label your query in "My Search" list. If you want to modify your selection after performing a search, simply right click on the item from "My Search" view and select an option from the pop-up menu.
                 </para>
 
                 <para>
@@ -826,7 +828,7 @@
                 </para>
 
                 <para>
-                If you want to remove an existing search from the list, just select <guilabel>Delete Search</guilabel> from the popup menu.
+                If you want to remove an existing search from the list, just select <guilabel>Delete Search</guilabel> from the pop-up menu.
                 </para>
 
                 <example>
@@ -914,7 +916,7 @@
                 </para>
 
                 <para>
-                When you are satisfied with your search settings, click on the <guilabel>Ok</guilabel> button. The advanced search will be carried out, and the results displayed in the "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to name your advanced query in the "My Search" list. If you want to modify your selection after performing an advanced search, simply right click on one item from "My Search" view and select <guilabel>Edit Search</guilabel> from the popup menu.
+                When you are satisfied with your search settings, click on the <guilabel>OK</guilabel> button. The advanced search will be carried out, and the results displayed in the "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to name your advanced query in the "My Search" list. If you want to modify your selection after performing an advanced search, simply right click on one item from "My Search" view and select <guilabel>Edit Search</guilabel> from the pop-up menu.
                 </para>
 
              </sect3>
@@ -955,7 +957,7 @@
          All image information from the main window right sidebar is available for each of the two previews in the light table. This makes it easy to link visual differences to exposure data for example.
       </para>
       <para>
-         In the lower right corner of each pane there you find a built-in panning action (crossed arrows). Click on it and keep the &LMB; pressed to pan ocross the image (in synchronous mode both images will show the same viewing port).
+         In the lower right corner of each pane there you find a built-in panning action (crossed arrows). Click on it and keep the &LMB; pressed to pan across the image (in synchronous mode both images will show the same viewing port).
       </para>
       <para>
          Zooming works the same as in other views: use indifferently the zoom slider below the panes or <keycombo action="press"><keycap>&Ctrl;</keycap><keycap>scroll wheel</keycap></keycombo> to zoom in and out, with both images when in synchronous mode.
@@ -981,7 +983,7 @@
 
                 <listitem><para><link linkend="using-sidebarfileproperties">Properties</link> : File and image properties, key shooting parameters (EXIF tags)</para></listitem>
 
-                <listitem><para><link linkend="using-sidebarmetadata">Metadata</link> : EXIF, Makernotes, IPTC and GPS data (these properties can be edited by two kipi-plugins</para></listitem>
+                <listitem><para><link linkend="using-sidebarmetadata">Metadata</link> : EXIF, Makernotes, IPTC and GPS data (these properties can be edited by two Kipi-plugins</para></listitem>
 
                 <listitem><para><link linkend="using-sidebarcolors">Colors</link> : Histograms and embedded ICC profiles</para></listitem>
 
@@ -1021,7 +1023,7 @@
           <title>Date &amp; Time</title>
 
            <para>
-           In the Date &amp; Time section, which reflects the time of taking the photograph, you can change all values. From the date combo-box a calender opens, and the time setting spin-box can also be written by directly typing the time. The dating is copied to the EXIF 'Date and Time' field. If you need to change a number of images for their creating time &amp; date, there is a more comfortable method available (requiring the kipi-plugins). This latter option can be found under <menuchoice><guimenuitem>Image</guimenuitem><guimenuitem>Adjust time &amp; date...</guimenuitem></menuchoice>. Select the images to be changed in the main view and call the plugin.
+           In the Date &amp; Time section, which reflects the time of taking the photograph, you can change all values. From the date combo-box a calender opens, and the time setting spin-box can also be written by directly typing the time. The dating is copied to the EXIF 'Date and Time' field. If you need to change a number of images for their creating time &amp; date, there is a more comfortable method available (requiring the Kipi-plugins). This latter option can be found under <menuchoice><guimenuitem>Image</guimenuitem><guimenuitem>Adjust time &amp; date...</guimenuitem></menuchoice>. Select the images to be changed in the main view and call the plugin.
            </para>
           </sect3>
 
@@ -1156,7 +1158,7 @@
             </para>
 
             <para>
-            The Metadata tab displays an internal picture's metadata like Exif, Makernotes, GPS, &etc;. This information is the same as  <link linkend="using-sidebarmetadata">sidebar Meta-Data</link> from the &digikam; main interface or image editor. Note, all these metadata can be unavailable with some digital cameras.
+            The Metadata tab displays an internal picture's metadata like EXIF, Makernotes, GPS, &etc;. This information is the same as  <link linkend="using-sidebarmetadata">sidebar Meta-Data</link> from the &digikam; main interface or image editor. Note, all these metadata can be unavailable with some digital cameras.
             </para>
 
         </sect2>
@@ -1344,7 +1346,7 @@
                 But if, after some time, one has forgotten where the image was taken, if one loves the nice feature to open with a simple click a browser displaying a zoom of the area, if you like to send your image as a postcard to another &digikam; user (who is then able to locate your shot), or if you simply need the documentation aspect of it - having position data stored in a photo is great.
             </para>
             <para>
-                Now, how do we get GPS data into the images?  <ulink url="http://www.exiv2.org/tags.html">exif2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files using the <ulink url="http://www.kipi-plugins.org">Geolocalization</ulink> (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink>) kipi-plugin and per 'manual' insertion of known locations.
+                Now, how do we get GPS data into the images?  <ulink url="http://www.exiv2.org/tags.html">exiv2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files using the <ulink url="http://www.kipi-plugins.org">Geolocalization</ulink> (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink>) Kipi-plugin and per 'manual' insertion of known locations.
             </para>
             <itemizedlist>
 
@@ -1365,7 +1367,7 @@
 
                 <listitem><para>Post-treatment of GPS data and image files</para>
                     <para>
-                        Using the <ulink url="http://www.kipi-plugins.org">Geolocalization</ulink> kipi-plugin (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink> if kipi-plugins are already installed).
+                        Using the <ulink url="http://www.kipi-plugins.org">Geolocalization</ulink> Kipi-plugin (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink> if Kipi-plugins are already installed).
                     </para>
                     <para>
                         This approach is dead easy: while taking your pictures just keep a GPS device running and carry it around with the camera. Once you are done, download the pictures and the GPS tracks, and run the above plugin. It will correlate the data in the time domain; so it is important that the camera be accurate in its clock setting (the GPS device is always accurate through the satellites). The positional accuracy interpolated from the track points can be as good as 20 meters. Of course, this approach only works if your camera can record EXIF data.
@@ -1397,6 +1399,20 @@
             </para>
         </sect2>
     </sect1>
+
+  <sect1 id="dam">    <title>Digital Asset Management (DAM) with &digikam;</title>
+
+    <para>
+      What is digital asset management apart from a buzz word? Digital Asset Management (DAM) refers to every part of the process that follows the taking of the picture, through final output and permanent storage. Anyone who shoots, scans or stores digital photographs is practicing some form of DAM, but most of us are not doing so systematically or efficiently. We present a tool, a plan and practical advice on how to file, find, protect and re-use photographs, focusing on best practices for digital photographers using &digikam;.
+    </para>
+    <para>
+      Can you find your digital photographs when you need them, or do you spend more time sifting through your hard drive and file cabinets than you would like? Do you have a systematic approach for assigning and tracking content data on your photos? If you make a living as a photographer, do your images bear your copyright and contact information, or do they circulate in the marketplace unprotected? Do you want your future grandchildren admire your photographs you have taken yesterday? How to prepare to change your computer, your hard disk, the software, the operating system and still manage to find your pictures?
+    </para>
+
+    <para>
+      We try to answer all those questions. But let's take them one-by-one.
+    </para>
+  </sect1>
 
  <sect1 id="using-setup">              <title>&digikam; Configuration</title>
 
@@ -1615,11 +1631,11 @@
                   This is possible because the blue pixels tends to saturate less quickly than the greens and the reds. &digikam;/dcraw will try to reconstruct the missing green and red colors from the remaining none saturated blue pixels. Of course here everything is a question of tradeoff between how much color or white you want.</para>
                 <para>If you select <guilabel>reconstruct</guilabel> as the option, you will be given the choice to set a level. A value of 3 is a compromise and can/should be adapted on a per image basis.</para>
                 <note><para>
-                   A small warning here, for the few curious that have read the man pages of Dcraw, the author says that 5 is the compromise, 0 is solid white and 1 unclip. This is because in &digikam; 0 and 1 are the "solid white" and "unclip" options in the drop down menu (if you select these, the level slider will be grayed out). Therefore, the slider in Digikam with the "reconstruct" option will let you choose between 0 to 7 (instead of 0 to 9 in Dcraw command line) where 3 is the compromise instead of 5 in "native" Dcraw command line tool.</para></note>
+                   A small warning here, for the few curious that have read the man pages of Dcraw, the author says that 5 is the compromise, 0 is solid white and 1 unclip. This is because in &digikam; 0 and 1 are the "solid white" and "unclip" options in the drop down menu (if you select these, the level slider will be grayed out). Therefore, the slider in &digikam; with the "reconstruct" option will let you choose between 0 to 7 (instead of 0 to 9 in Dcraw command line) where 3 is the compromise instead of 5 in "native" Dcraw command line tool.</para></note>
 
                 <para><guilabel>Brightness</guilabel> (works in 8 bit mode only)</para>
                 <para>
-                  Set the luminosity to your taste, you probably need to go a little higher than the default = 1. But this can be adjusted later with the image options in the Digikam image editor. Given the cost in time for demosaicing, stay conservative.
+                  Set the luminosity to your taste, you probably need to go a little higher than the default = 1. But this can be adjusted later with the image options in the &digikam; image editor. Given the cost in time for demosaicing, stay conservative.
                 </para>
 
                 <para><guilabel>Quality</guilabel></para>
@@ -1630,7 +1646,7 @@
 
                  <para><guilabel>Enable Noise Reduction</guilabel></para>
                  <para>
-                   While demosaicing your image, you can additionally ask for noise reduction (at a speed penalty). This option applies a noise reduction algorithm while the image still is in CIE Lab color space. Because the noise is only applied to the Luminosity layer (the "L" of the Lab), it should not blur your image as traditional noise reduction algorithms do in RVB mode. So, if you converted an image from RAW and it appears noisy, rather than applying a denoiser, go back and re-convert with this option enabled. The defaults are: <emphasis>Domain</emphasis> = 2 and <emphasis>Range</emphasis> = 4.
+                   While demosaicing your image, you can additionally ask for noise reduction (at a speed penalty). This option applies a noise reduction algorithm while the image still is in CIE Lab color space. Because the noise is only applied to the Luminosity layer (the "L" of the Lab), it should not blur your image as traditional noise reduction algorithms do in RGB mode. So, if you converted an image from RAW and it appears noisy, rather than applying a denoiser, go back and re-convert with this option enabled. The defaults are: <emphasis>Domain</emphasis> = 2 and <emphasis>Range</emphasis> = 4.
                 </para>
 
                 <anchor id="CA.anchor"/>
@@ -1662,7 +1678,7 @@
                 <listitem><para>The <guilabel>Use color managed view</guilabel> is an alternative to using Xcalib or Argyll. Only your image will be color managed, not your entire screen! </para></listitem>
 
                 <listitem><para>
-                  You have to provide a workspace profile (linear profiles such as sRGB, ECI-RGB, LStar-RGB, Adobe-RGB oder CIE-RGB). If you want to print your images, you may want to opt for Adobe RGB, if it is only for web publishing, sRGB is better (Adobe RGB will be displayed slightly dull in non color managed enabled software such as browsers). However you may change this later of course (by attributing another profile), therefore Adobe RGB can be a good choice for storing and image handling as you can always change it to sRGB before releasing an image for your blog.</para><para>Do not use non-linear profiles as they will change the color-balance</para>
+                  You have to provide a workspace profile (linear profiles such as sRGB, ECI-RGB, LStar-RGB, Adobe-RGB or CIE-RGB). If you want to print your images, you may want to opt for Adobe RGB, if it is only for web publishing, sRGB is better (Adobe RGB will be displayed slightly dull in non color managed enabled software such as browsers). However you may change this later of course (by attributing another profile), therefore Adobe RGB can be a good choice for storing and image handling as you can always change it to sRGB before releasing an image for your blog.</para><para>Do not use non-linear profiles as they will change the color-balance</para>
                 </listitem>
 
                 <listitem><para>
@@ -1742,7 +1758,7 @@
                 </para>
 
                 <para>
-                  For more information about Kipi plugins, you can consult the Kipi project at <ulink url="http://www.kipi-plugins.org">http://www.kipi-plugins.org</ulink> or the <ulink url="help:/kipi-plugins/index.html">kipi-plugins manual</ulink>.
+                  For more information about Kipi plugins, you can consult the Kipi project at <ulink url="http://www.kipi-plugins.org">http://www.kipi-plugins.org</ulink> or the <ulink url="help:/kipi-plugins/index.html">Kipi-plugins manual</ulink>.
                 </para>
 
             </sect3>
