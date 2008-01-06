@@ -244,6 +244,16 @@
  <sect1 id="using-camerasupport">      <title>Supported Digital Still Cameras</title>
     <anchor id="digitalstillcamera.anchor"/>
 
+          <note><para>
+            RAW file support: if you are using RAW shooting mode with your camera, &digikam; is probably well able to deal with it. RAW support depends on the <ulink url="http://www.cybercom.net/~dcoffin/dcraw"> Dave Coffin's</ulink> dcraw program. To find out if your particular camera is supported, bring up the list of supported RAW cameras from the <menuchoice><guimenu>Help</guimenu><guimenuitem>RAW camera support</guimenuitem></menuchoice> menu.
+          </para>
+          <para>
+            How to setup and work with RAW files is described in <link linkend="setup-raw-decoder">RAW Decoder Settings</link> and <link linkend="raw-workflow">RAW Workflow</link>.</para>
+          </note>
+
+          <para>
+            An easy-to-use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">900 digital cameras</ulink> are supported by the gphoto2 library. Of course, any media or card reader supported by your operating system will interface with &digikam;.
+          </para>
           <para>
             Current digital cameras are characterized by the use of <emphasis>Compact &Flash; Memory</emphasis> cards and <emphasis>USB</emphasis> or <emphasis>FireWire (IEEE-1394 or i-link)</emphasis> for data transmission. The actual transfers to a host computer are commonly carried out using the <emphasis>USB Mass Storage</emphasis> device class (so that the camera appears as a disk drive) or using the <emphasis>Picture Transfer Protocol (PTP)</emphasis> and its derivatives. Older cameras may use the <emphasis>Serial Port (RS-232)</emphasis> connection.
           </para>
@@ -1126,13 +1136,35 @@
     <para>
       We try to answer all those questions. But let's take them one-by-one.
     </para>
+
+      <sect2>        <title>Build a system to organize and find your images</title>
+        <para>Todo
+        </para>
+        <para>Themes: Hierarchy, tags, captions, date, albums, filenames, versionning, exporting
+        </para>
+
+      </sect2>
+
+      <sect2>        <title>Protect your authorship and copyright</title>
+         <para>Todo
+         </para>
+        <para>Themes: watermarking, IPTC and XMP authorship data, export size
+        </para>
+      </sect2>
+
+      <sect2>        <title>Preserve your images through the changes of technology</title>
+         <para>Todo
+         </para>
+        <para>Themes: metadata, IPTC stored in image files, XMP files associated, keep the originals, storage media, retrieval of images and metadata, copying image data over to the next generation of media, programs, operating system, viewing device... use of the www
+        </para>
+       </sect2>
+
   </sect1>
 
  <sect1 id="using-camera">             <title>Using a Digital Camera With &digikam;</title>
     <anchor id="camerainterface.anchor"/>
 
-        <sect2>
-        <title>Introduction to Camera Interface</title>
+        <sect2>        <title>Introduction to Camera Interface</title>
 
             <para>
             The Camera Tool allows you to download your photographs directly from your camera into a &digikam; Album. You can access the Camera Tool by clicking on the Camera menu and selecting from the list of configured cameras. See the <link linkend="setup-camera">Setup Camera Section</link> of the manual for instructions on how to setup &digikam; to work with your camera. If you want to have more information about how &digikam; supports digital cameras, please a take a look at <link linkend="using-camerasupport">this section</link>.
@@ -1686,7 +1718,7 @@
                 </listitem>
 
                 <listitem><para>
-                  input profile should match the camera maker you are using. I am the (happy) owner of a Minolta 7D and I therefore use a Minolta profile.</para></listitem>
+                  The input profile should match the camera maker and model you are using. 'Not all profiles are created equal', there are some that have no tone mapping/gamma correction included (Canon). As of now, dcraw does not correct gamma for 16 bit depth conversion, which means that you have to do the tone mapping yourself.</para></listitem>
 
                 <listitem><para>
                  There are some other options such as the soft proof profile which enables you to emulate, granted that you have a profile for it, how your image will render for a particular device. It is useful before printing for instance because your printer has a smaller gamut than your camera and some colors might look saturated. You may want to fix this manually instead of relying on the "blind" algorithm of your printer.</para></listitem>
