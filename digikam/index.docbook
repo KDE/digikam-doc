@@ -1299,7 +1299,7 @@
                 In the next box you find the options for rotating/flipping the image and for date based subalbums. If you check the latter option, folder per day will be automatically generated.
             </para>
             <para>
-                The 'On the fly operations' open three more options that act on the photos before storing them on disk. The first two relate to the authors data in <link linkend="author-identity">Default Author Identity</link>" Settings. If checked the respective items will be copied into the EXIF tags and IPTC fields. The last option allows a date &amp; time for all downloaded pictures to be set.
+                The 'On the fly operations' open three more options that act on the photos before storing them on disk. The first two relate to the authors data in <link linkend="author-identity">Default Author Identity</link>" Settings. If checked, the respective items will be copied into the EXIF tags and IPTC fields. The last option allows a date &amp; time for all downloaded photographs to be set.
             </para>
 
             <tip>
@@ -1401,7 +1401,7 @@
                 But if, after some time, one has forgotten where the image was taken, if one loves the nice feature to open with a simple click a browser displaying a zoom of the area, if you like to send your image as a postcard to another &digikam; user (who is then able to locate your shot), or if you simply need the documentation aspect of it - having position data stored in a photo is great.
             </para>
             <para>
-                Now, how do we get GPS data into the images?  <ulink url="http://www.exiv2.org/tags.html">exiv2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files using the <ulink url="http://www.kipi-plugins.org">Geolocalization</ulink> (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink>) Kipi-plugin and per 'manual' insertion of known locations.
+                Now, how do we get GPS data into the images?  <ulink url="http://www.exiv2.org/tags.html">exiv2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files using the <ulink url="http://www.kipi-plugins.org">Geolocation</ulink> (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink>) Kipi-plugin and per 'manual' insertion of known locations.
             </para>
             <itemizedlist>
 
@@ -1422,12 +1422,12 @@
 
                 <listitem><para>Post-treatment of GPS data and image files</para>
                     <para>
-                        Using the <ulink url="http://www.kipi-plugins.org">Geolocalization</ulink> Kipi-plugin (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink> if Kipi-plugins are already installed).
+                        Using the <ulink url="http://www.kipi-plugins.org">Geolocation</ulink> Kipi-plugin (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink> if Kipi-plugins are already installed).
                     </para>
                     <para>
                         This approach is dead easy: while taking your pictures just keep a GPS device running and carry it around with the camera. Once you are done, download the pictures and the GPS tracks, and run the above plugin. It will correlate the data in the time domain; so it is important that the camera be accurate in its clock setting (the GPS device is always accurate through the satellites). The positional accuracy interpolated from the track points can be as good as 20 meters. Of course, this approach only works if your camera can record EXIF data.
                     </para>
-                    <para>The GPS track download from a device can be managed with the <ulink url="http://www.ncc.up.pt/gpsman">gpsman</ulink> or <ulink url="http://www.gpsbabel.org">gpsbabel</ulink>. It is important that the downloaded tracks are being stored in gpx format, which is the only one compatible with the Geolocalization plugin.
+                    <para>The GPS track download from a device can be managed with the <ulink url="http://www.ncc.up.pt/gpsman">gpsman</ulink> or <ulink url="http://www.gpsbabel.org">gpsbabel</ulink>. It is important that the downloaded tracks are being stored in gpx format, which is the only one compatible with the Geolocation plugin.
                     </para>
                     <para>
                         Several programs exist for &Windows; and MacOS that are able to extract and correlate data from images and GPS data tracks. The following site provides the same functionality for &Linux;:
@@ -1535,11 +1535,11 @@
                 <para>This is an extract of the IPCT specifications:</para>
     <itemizedlist>
       <listitem><para>
-         <emphasis>Author</emphasis> (is synonymous to Creator): This field should contain your name, or the name of the person who created the photograph. If it is not appropriate to add the name of the photographer (for example, if the identify of the photographer needs to be protected) the name of a company or organization can also be used. Once saved, this field should not be changed by anyone. This field does not support the use of commas or semi-colons as separator.
+         <emphasis>Author</emphasis> (is synonymous to <emphasis>Creator</emphasis> and <emphasis>By-line</emphasis>): This field should contain your name, or the name of the person who created the photograph. If it is not appropriate to add the name of the photographer (for example, if the identify of the photographer needs to be protected) the name of a company or organization can also be used. Once saved, this field should not be changed by anyone. This field does not support the use of commas or semi-colons as separator.
      </para></listitem>
 
       <listitem><para>
-         <emphasis>Author title</emphasis>: This field should contain the job title of the photographer. Examples might include titles such as: Staff Photographer, Freelance Photographer, or Independent Commercial Photographer. Since this is a qualifier for the Author field, the Author field must also be filled out.
+         <emphasis>Author title</emphasis> (synonymous with <emphasis>By-line title</emphasis>): This field should contain the job title of the photographer. Examples might include titles such as: Staff Photographer, Freelance Photographer, or Independent Commercial Photographer. Since this is a qualifier for the Author field, the Author field must also be filled out.
      </para></listitem>
 
       <listitem><para>
