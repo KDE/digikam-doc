@@ -310,8 +310,11 @@
             Many old digital still cameras used <emphasis>Serial Port</emphasis> to communicate with host computer. Because photographs are big files and serial port transfers are slow, this connection is now obsolete. &digikam; supports these cameras and performs image transfers using the gPhoto2 program. You can find a complete list of supported digital cameras at this <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">url</ulink>.
             </para>
 
+            <note>
+                <para>libgphoto2 needs to be built with libexif to retrieve thumbnails to digiKam properlly. EXIF support is required for thumbnail retrieval on some libgphoto2 camera drivers. If EXIF supported is not set with libgphoto2, you might not see thumbnails or the thumbnail extraction might be very slow.</para>
+            </note>
 
-        <para>        <guilabel>Transfers using Mass Storage device</guilabel></para>
+        <para><guilabel>Transfers using Mass Storage device</guilabel></para>
 
             <para>
             Of the devices that are not directly supported by gPhoto2, there is support for the <emphasis>Mass Storage</emphasis> protocol, which is well supported under &GNU;/&Linux;. This includes many digital cameras and Memory Card Readers. Mass Storage interfaces are:
