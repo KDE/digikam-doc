@@ -35,7 +35,7 @@
 
     <author>
         <firstname>Gerhard</firstname><surname>Kulzer</surname>
-        <affiliation><address><email>gerhard at kulzer dot net</email></address></affiliation>
+        <affiliation><address><email>gerhard_at_kulzer_dot_net</email></address></affiliation>
     </author>
 
     <author>
@@ -44,8 +44,13 @@
     </author>
 
     <author>
-        <firstname>Richard</firstname><surname>Taylor</surname>
-        <affiliation><address><email>rjt-digicam_at_thegrindstone_dot_me_dot_uk</email></address></affiliation>
+        <firstname>Elle</firstname><surname>Stone</surname>
+        <affiliation><address><email>jrle1_at_twcny_dot_rr_dot_com</email></address></affiliation>
+    </author>
+
+    <author>
+        <firstname>Oliver</firstname><surname>Doerr</surname>
+        <affiliation><address><email>oliver_at_doerr-privat.de</email></address></affiliation>
     </author>
 
     <author>
@@ -56,11 +61,6 @@
     <author>
         <firstname>Joern</firstname><surname>Ahrens</surname>
         <affiliation><address><email>joern.ahrens_at_kdemail_dot_net</email></address></affiliation>
-    </author>
-
-    <author>
-        <firstname>Oliver</firstname><surname>Doerr</surname>
-        <affiliation><address><email>oliver_at_doerr-privat.de</email></address></affiliation>
     </author>
 
 <!-- TRANS:ROLES_OF_TRANSLATORS -->
@@ -79,8 +79,8 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2008-01-30</date>
-<releaseinfo>0.9.3</releaseinfo>
+<date>2008-07-24</date>
+<releaseinfo>0.9.4</releaseinfo>
 
 <abstract>
 
@@ -314,7 +314,7 @@
                 <para>libgphoto2 needs to be built with libexif to retrieve thumbnails to digiKam properly. EXIF support is required for thumbnail retrieval on some libgphoto2 camera drivers. If EXIF supported is not set with libgphoto2, you might not see thumbnails or the thumbnail extraction might be very slow.</para>
             </note>
 
-        <para><guilabel>Transfers using Mass Storage device</guilabel></para>
+        <para>        <guilabel>Transfers using Mass Storage device</guilabel></para>
 
             <para>
             Of the devices that are not directly supported by gPhoto2, there is support for the <emphasis>Mass Storage</emphasis> protocol, which is well supported under &GNU;/&Linux;. This includes many digital cameras and Memory Card Readers. Mass Storage interfaces are:
@@ -410,31 +410,31 @@
 
             <para>
 
-            <itemizedlist>
+            <orderedlist>
 
-                <listitem><para>(1) : Go one view backwards in the main window view history (Alt+Left)</para> </listitem>
+                <listitem><para> Go one view backwards in the main window view history (Alt+Left)</para> </listitem>
 
-                <listitem><para>(2) : Go one view forwards in the main window view history (Alt+Right)</para> </listitem>
+                <listitem><para>Go one view forwards in the main window view history (Alt+Right)</para> </listitem>
 
-                <listitem><para>(3) : Add images, import function (Ctrl+I)</para></listitem>
+                <listitem><para>Add images, import function (Ctrl+I)</para></listitem>
 
-                <listitem><para>(4) : Create a new Album (Ctrl+N)</para></listitem>
+                <listitem><para>Create a new Album (Ctrl+N)</para></listitem>
 
-                <listitem><para>(5) : Edit Album properties</para></listitem>
+                <listitem><para>Edit Album properties</para></listitem>
 
-                <listitem><para>(6) : Quick Search tool (Ctrl+F)</para></listitem>
+                <listitem><para>Quick Search tool (Ctrl+F)</para></listitem>
 
-                <listitem><para>(7) : View image (F3)</para></listitem>
+                <listitem><para>View image (F3)</para></listitem>
 
-                <listitem><para>(8) : Open in Image Editor (F4)</para></listitem>
+                <listitem><para>Open in Image Editor (F4)</para></listitem>
 
-                <listitem><para>(9) : Rename Image (F2)</para></listitem>
+                <listitem><para>Rename Image (F2)</para></listitem>
 
-                <listitem><para>(10) : Toggle Full Screen (Ctrl+Shift+F)</para></listitem>
+                <listitem><para>Toggle Full Screen (Ctrl+Shift+F)</para></listitem>
 
-                <listitem><para>(11) : Slide Show (F9)</para></listitem>
+                <listitem><para>Slide Show (F9)</para></listitem>
 
-            </itemizedlist>
+            </orderedlist>
 
             </para>
 
@@ -880,21 +880,21 @@
                     <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfaceadvancedsearchoption.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
 
-                <itemizedlist>
+                <orderedlist>
 
-                    <listitem><para>(1): the item used to search in the database, which can be an album, a name, a tag, an image, a keyword, &etc;.
+                    <listitem><para>the item used to search in the database, which can be an album, a name, a tag, an image, a keyword, &etc;.
                     </para></listitem>
 
-                    <listitem><para>(2): the logical operator to process the item which depends on the item type.
+                    <listitem><para>the logical operator to process the item which depends on the item type.
                     </para></listitem>
 
-                    <listitem><para>(3): the operator argument which can be a string or a name already set by database.
+                    <listitem><para>the operator argument which can be a string or a name already set by database.
                     </para></listitem>
 
-                    <listitem><para>(4): a checked box to manage the option using Add/Delete and Group/Ungroup controls.
+                    <listitem><para>a checked box to manage the option using Add/Delete and Group/Ungroup controls.
                     </para></listitem>
 
-                </itemizedlist>
+                </orderedlist>
 
                 </para>
 
@@ -1399,12 +1399,12 @@ Fun stuff
          </sect4>
        </sect3>
 
-       <sect3 id="logical-errors">  <title>Logical errors</title>
+       <sect3 id="logical-errors">  <title>Saveguarding against logical errors</title>
          <sect4>  <title>Web storage services</title>
       <para>Amazon Web Services includes S3 - Simple Storage Service. With appropriate configuration, you can mount that as a drive on &Linux;, Mac, and Windows systems, allowing you to use it as a backup destination for your favorite software. Google Shared Storage is another popular offer where one can store infinite amount of data.</para>
       <para>It is expensive compared to hard drives at home - 40 GB cost &dollar;75 a year, 400 GB cost &dollar;500. And you have to transfer the images over (a comparatively slow) internet.</para>
       <para>I think as a safeguard against localized data loss of the most essential images it's not a bad idea at all, but it is not a general backup solution, much too slow for that.</para>
-      <para>Why didn't I mention Picasaweb or Flickr (to name the competition)? Because the free space is limited there to 1 GB and you don't want to have full resolution images online.</para>
+      <para>Picasaweb (Google), Flickr (Yahoo) and Foto-Community 23hq.com provide online storage services specialist on photographie. Their free space is limited to 1 GB and you don't want to have full resolution images online. But the pro-accounts offer more, in the case of Flickr, dramatically more. For a mere 25$ a year you get unlimited (sic! reality check needed here) space.</para>
       <para>In terms of data retention the web space solution is probably pretty safe. Transmission errors are corrected (thanks to the TCP protocol) and the big companies usually have backup included plus distributed storage so that they are disaster proof within themselves.</para>
          </sect4>
          <sect4>  <title>Transmission Errors</title>
@@ -2483,35 +2483,35 @@ Fun stuff
 
             <para>
 
-            <itemizedlist>
+            <orderedlist>
 
-                <listitem><para>(1) : First Current Album Image.</para></listitem>
+                <listitem><para>First Current Album Image.</para></listitem>
 
-                <listitem><para>(2) : Previous Image.</para></listitem>
+                <listitem><para>Previous Image.</para></listitem>
 
-                <listitem><para>(3) : Next Image.</para></listitem>
+                <listitem><para>Next Image.</para></listitem>
 
-                <listitem><para>(4) : Last Current Album Image.</para></listitem>
+                <listitem><para>Last Current Album Image.</para></listitem>
 
-                <listitem><para>(5) : Save the modified image.</para></listitem>
+                <listitem><para>Save the modified image.</para></listitem>
 
-                <listitem><para>(6) : Undoing last action.</para></listitem>
+                <listitem><para>Undoing last action.</para></listitem>
 
-                <listitem><para>(7) : Redoing previous action.</para></listitem>
+                <listitem><para>Redoing previous action.</para></listitem>
 
-                <listitem><para>(8) : Restore the Current Image From Disk.</para></listitem>
+                <listitem><para>Restore the Current Image From Disk.</para></listitem>
 
-                <listitem><para>(9) : Zoom Into the Image.</para></listitem>
+                <listitem><para>Zoom Into the Image.</para></listitem>
 
-                <listitem><para>(10) : Zoom Out of the Image.</para></listitem>
+                <listitem><para>Zoom Out of the Image.</para></listitem>
 
-                <listitem><para>(11) : Toggle Auto Zooming (if selected image will fit in the window).</para></listitem>
+                <listitem><para>Toggle Auto Zooming (if selected image will fit in the window).</para></listitem>
 
-                <listitem><para>(12) : Rotate the Current Image.</para></listitem>
+                <listitem><para>Rotate the Current Image.</para></listitem>
 
-                <listitem><para>(13) : Crop Image to the Selected Region.</para></listitem>
+                <listitem><para>Crop Image to the Selected Region.</para></listitem>
 
-            </itemizedlist>
+            </orderedlist>
 
             </para>
           </sect2>
@@ -2614,7 +2614,6 @@ Fun stuff
 </chapter>
 
 <!-- *********************************************************************** -->
-
 &doc-menu-descriptions;
 
 <!-- *********************************************************************** -->
