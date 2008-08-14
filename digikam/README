@@ -2,7 +2,7 @@ Handbook README:
 ----------------
 The substructure of the help files that develop as a tree are created by <chapter> tags.
 
->>> How to Make Screenshot for Manual with Alpha Blending 3D Border <<<
+>>> How to make a screenshot for the manual with Alpha Blending 3D Border <<<
 
 - Never use advanced color theme to make screenshots. Always use KDE default color and icon set.
 
@@ -16,7 +16,7 @@ The substructure of the help files that develop as a tree are created by <chapte
       -> Border X Size = 1
       -> Border Y Size = 1
       -> Border Color = black (R:0, G:0, B:0)
-      -> Delata Value on Color = 1
+      -> Delta Value on Color = 1
    * Image/Flatten Image
    * Script-Fu/Shadow/Drop-Shadow with this options :
       -> Offset X = 5
@@ -33,7 +33,10 @@ Note : A gimp2.[2,3] script from Gerhard Kulzer can be used to add Alpha Blendin
 http://digikam3rdparty.free.fr/Tools/kde-screenshot-dropshadow.scm
 
 !----------Important-------------!
-Since the documentation is very good it is also very demanding in terms of volume, 99% whereof are screenshots. In order to limit the byte count to the minimum the following command chain shall be used to reduce the png file size. A factor of 2-4 can be gained. From within the folder where the png reside issue this command (requires pngnq and optipng to be installed on the system):
+Since the documentation is very good it is also very demanding in terms of volume, 99% whereof are screenshots.
+In order to limit the byte count to the minimum the following command chain shall be used to reduce the png file size.
+A factor of 2-4 can be gained. From within the folder where the png reside issue this command (requires pngnq and optipng
+to be installed on the system):
 
 pngnq -s 1 ./*.png && optipng *-nq8.png && rename -f s/-nq8\.png/.png/ *-nq8.png
 
