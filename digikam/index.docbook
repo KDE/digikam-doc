@@ -16,6 +16,7 @@
   <!ENTITY doc-editor-transform SYSTEM "editor-transform.docbook">
   <!ENTITY doc-editor-filters   SYSTEM "editor-filters.docbook">
   <!ENTITY doc-editor-decorate  SYSTEM "editor-decorate.docbook">
+  <!ENTITY doc-color-management SYSTEM "color-management.docbook">
 <!-- menus -->
   <!ENTITY doc-menu-descriptions SYSTEM "menu-descriptions.docbook">
   <!ENTITY doc-ie-menu           SYSTEM "ie-menu.docbook">
@@ -79,8 +80,8 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2008-07-24</date>
-<releaseinfo>0.9.4</releaseinfo>
+<date>2008-10-07</date>
+<releaseinfo>0.9.5</releaseinfo>
 
 <abstract>
 
@@ -121,17 +122,17 @@
        <title>About &digikam;</title>
 
        <para>
-       &digikam; is an advanced digital photo management application for the &kde; desktop. It provides a simple interface which makes importing and organizing digital photographs a &quot;snap&quot;. &digikam; enables you to manage large numbers of digital photographs in Albums and to organize these photographs for easy retrieval using tags, captions, collections, dates and searches. It has many features for viewing, organizing, processing and sharing your images.
+       &digikam; is an advanced digital photo management application for the &kde; desktop. It provides a simple interface which makes importing and organizing digital photographs a &quot;snap&quot;. &digikam; enables you to manage large numbers of digital photographs in Albums and to organize these photographs for easy retrieval using tags (keywords), captions, collections, dates, geolocation and searches. It has many features for viewing, organizing, processing and sharing your images. Thus, &digikam; is a formidable <link linkend="dam">Digital Asset Management</link> (DAM) software including powerful image editing functions.
        </para>
 
        <para>
-       An easy-to-use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">900 digital cameras</ulink> are supported by the gphoto2 library. Of course, any media or card reader supported by your operating system will interface with &digikam;.
+       An easy-to-use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">1000 digital cameras</ulink> are supported by the gphoto2 library. Of course, any media or card reader supported by your operating system will interface with &digikam;.
        </para>
 
        <para>&digikam; incorporates a fast Image Editor with many image editing tools. You can use the Image Editor to view your photographs, comment and rate them, correct, enhance and alter them. The editing power can be easily extended by a set of plugins, the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface</ulink> (<ulink url="help:/kipi-plugins/index.html">manual</ulink>)
        </para>
 
-       <para>While &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports RAW format conversion through David Coffins dcraw and ICC color management <link linkend="rawprocessing.anchor">work flow</link>.
+       <para>While &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports RAW format conversion through libraw, DNG export and ICC color management <link linkend="rawprocessing.anchor">work flow</link>.
        </para>
 
        </sect2>
@@ -252,7 +253,7 @@
           </note>
 
           <para>
-            An easy-to-use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">900 digital cameras</ulink> are supported by the gphoto2 library. Of course, any media or card reader supported by your operating system will interface with &digikam;.
+            An easy-to-use camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">1000 digital cameras</ulink> are supported by the gphoto2 library. Of course, any media or card reader supported by your operating system will interface with &digikam;.
           </para>
           <para>
             Current digital cameras are characterized by the use of <emphasis>Compact &Flash; Memory</emphasis> cards and <emphasis>USB</emphasis> or <emphasis>FireWire (IEEE-1394 or i-link)</emphasis> for data transmission. The actual transfers to a host computer are commonly carried out using the <emphasis>USB Mass Storage</emphasis> device class (so that the camera appears as a disk drive) or using the <emphasis>Picture Transfer Protocol (PTP)</emphasis> and its derivatives. Older cameras may use the <emphasis>Serial Port (RS-232)</emphasis> connection.
@@ -1401,8 +1402,8 @@ Fun stuff
 
        <sect3 id="logical-errors">  <title>Saveguarding against logical errors</title>
          <sect4>  <title>Web storage services</title>
-      <para>Amazon Web Services includes S3 - Simple Storage Service. With appropriate configuration, you can mount that as a drive on &Linux;, Mac, and Windows systems, allowing you to use it as a backup destination for your favorite software. Google Shared Storage is another popular offer where one can store infinite amount of data.</para>
-      <para>It is expensive compared to hard drives at home - 40 GB cost &dollar;75 a year, 400 GB cost &dollar;500. And you have to transfer the images over (a comparatively slow) internet.</para>
+      <para>Amazon Web Services includes S3 - Simple Storage Service. With appropriate configuration, you can mount S3 as a drive on &Linux;, Mac, and Windows systems, allowing you to use it as a backup destination for your favorite software. Google Shared Storage is another popular offer where one can store infinite amount of data.</para>
+      <para>It is expensive compared to hard drives at home - 40 GB cost &dollar;75 a year, 400 GB cost &dollar;500. And you have to transfer the images over the (a comparatively slow) internet.</para>
       <para>I think as a safeguard against localized data loss of the most essential images it's not a bad idea at all, but it is not a general backup solution, much too slow for that.</para>
       <para>Picasaweb (Google), Flickr (Yahoo) and Foto-Community 23hq.com provide online storage services specialist on photographie. Their free space is limited to 1 GB and you don't want to have full resolution images online. But the pro-accounts offer more, in the case of Flickr, dramatically more. For a mere 25$ a year you get unlimited (sic! reality check needed here) space.</para>
       <para>In terms of data retention the web space solution is probably pretty safe. Transmission errors are corrected (thanks to the TCP protocol) and the big companies usually have backup included plus distributed storage so that they are disaster proof within themselves.</para>
@@ -1545,9 +1546,9 @@ Fun stuff
           <para><command>PNG</command> has been invented as a Open Source standard to replace GIF, but it does much more. It is lossless, supports XMP, EXIF and IPTC metadata, 16 bit color encoding and full transparency. PNG can store gamma and chromaticity data for improved color matching on heterogeneous platforms. Its drawback are a relatively big footprints (but smaller than TIFF) and slow compression. We recommend it.</para>
           <para><command>TIFF</command> has been widely accepted as an image format. TIFF can exist in uncompressed form or in a container using a lossless compression algorithm (Deflate). It maintains high image quality but at the expense of much larger file sizes. Some cameras let you save your images in this format. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by all applications.</para>
           <para><command>RAW</command> format. Some, typically more expensive, cameras support RAW format shooting. The RAW format is not really an image standard at all, it is a container format which is different for every brand and camera model. RAW format images contain minimally processed data from the image sensor of a digital camera or image scanner. Raw image files are sometimes called digital negatives, as they fulfill the same role as film negatives in traditional chemical photography: that is, the negative is not directly usable as an image, but has all of the information needed to create an image. Storing photographs in a camera's RAW format provides for higher dynamic range and allows you to alter settings, such as white balance, after the photograph has been taken. Most professional photographers use RAW format, because it offers them maximum flexibility. The downside is that RAW image files can be very large indeed.</para>
-          <para>My recommendation is clearly to <command>abstain from archiving in RAW format</command> (as opposed to shooting in RAW format, which I recommend). It has all bad ingredients: many varieties and proprietary nature. It is clear that in a few years time you can't use your old RAW files anymore. If already seen people changing camera, losing their color profiles and having great difficulty to treat their old RAW files correctly. Better change to DNG format!</para>
-          <para><command>DNG</command> Digital Negative file format is a royalty free and open RAW image format designed by Adobe Systems. DNG was a response to demand for a unifying camera raw file format. It is based on the TIFF/EP format, and mandates use of metadata. An handful of camera manufacturers have adopted DNG already, let's hope that the main contenders Canon and Nikon will use it one day.</para>
-          <para>I strongly recommend converting RAW files to DNG for archiving. Despite the fact that DNG was created by Adobe, it is an open standard and widely embraced by the Open Source community (which is usually a good indicator of perennial properties). Some manufacturers have already adopted DNG as RAW format. And last not least, Adobe is the most important source of graphical software today, and they of course support their own invention. It is an ideal archival format, the raw sensor data will be preserved as such in TIFF format inside DNG, so that the risk associated with proprietary RAW formats is alleviated. All of this make migration to another operating system a no-brainer. In the near future we'll see 'non-destructive editing', where files are not changed anymore but rather all editing steps will be recorded (into the DNG as it where). When you open such a file again, the editing script will be replayed. This takes computation power, but it is promising as it leaves the original intact. </para>
+          <para>My recommendation is clearly to <command>abstain from archiving in RAW format</command> (as opposed to shooting in RAW format, which I recommend). It has all bad ingredients: many varieties and proprietary nature. It is clear that in a few years time you can't use your old RAW files anymore. I have already seen people changing camera, losing their color profiles and having great difficulty to treat their old RAW files correctly. Better change to DNG format!</para>
+          <para><command>DNG</command> Digital Negative file format is a royalty free and open RAW image format designed by Adobe Systems. DNG was a response to demand for a unifying camera raw file format. It is based on the TIFF/EP format, and mandates use of metadata. A handful of camera manufacturers have adopted DNG already, let's hope that the main contenders Canon and Nikon will use it one day.</para>
+          <para>I strongly recommend converting RAW files to DNG for archiving. Despite the fact that DNG was created by Adobe, it is an open standard and widely embraced by the Open Source community (which is usually a good indicator of perennial properties). Some manufacturers have already adopted DNG as RAW format. And last not least, Adobe is the most important source of graphical software today, and they of course support their own invention. It is an ideal archival format, the raw sensor data will be preserved as such in TIFF format inside DNG, so that the risk associated with proprietary RAW formats is alleviated. All of this makes migration to another operating system a no-brainer. In the near future we'll see 'non-destructive editing', where files are not changed anymore but rather all editing steps will be recorded (into the DNG as it were). When you open such a file again, the editing script will be replayed. This takes computation power, but it is promising as it leaves the original intact and computing power increases all the time. </para>
           <para><command>XML</command> (Extensible Mark-up Language) or <command>RDF</command> (Resource Description Framework). XML is like HTML, but where HTML is mostly concerned with the presentation of data, XML is concerned with the &quot;representation&quot; of data. On top of that, XML is non-proprietary, operating-system-independent, fairly simple to interpret, text-based and cheap. RDF is the WC3's solution to integrate a variety of different applications such as library catalogs, world-wide directories, news feeds, software, as well as collections of music, images, and events using XML as an interchange syntax. Together the specifications provide a method that uses a lightweight ontology based on the Dublin Core which also supports the &quot;Semantic Web&quot; (easy exchange of knowledge on the Web).</para>
 
           <para>IPTC goes XMP</para>
@@ -2155,10 +2156,10 @@ Fun stuff
            <sect3 id="setup-iccprofiles">            <title>ICC Profiles setup</title>
 
               <para>
-                 &digikam; has the ability to color manage your images. RAW files are not color managed at all. Your camera provides the data it has captured in a raw format and will let you manage all the processing. Every camera has its specifics regarding how it captures color information, therefore you will need to apply a specific profile to the images you want to process. Please refer to the section <link linkend="using-iccprofile">ICC color profile management</link> for more details an explanations.
+                 &digikam; is color-management enabled. RAW files - as they come -  are not color managed at all. Your camera provides the data it has captured in a raw format and will let you manage all the processing. Every camera has its specifics as to how how it captures color information, therefore you will need to apply a specific profile to the images you want to process. Please refer to the section <link linkend="using-iccprofile">ICC color profile management</link> for more details an explanations.
               </para>
               <para>
-                 Basically, a profile "maps" the color information and gives information on how one should render them. It gives also information to LCMS and &digikam; on how to translate the color information from one color space to an other in order to keep the colors as accurate as possible.
+                 Basically, a profile "maps" the color information and gives information on how one should render them. It gives also information to LCMS and &digikam; on how to translate the color information from one color space to an other in order to keep the colors as accurate as possible across all rendring media.
               </para>
                 <para>
                     <inlinemediaobject><imageobject><imagedata fileref="&path;setupiccprofiles.png" format="PNG" /> </imageobject></inlinemediaobject>
@@ -2610,6 +2611,7 @@ Fun stuff
     </sect1>
 
  &doc-photo-editing;
+ &doc-color-management;
 
 </chapter>
 
