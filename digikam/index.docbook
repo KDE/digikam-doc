@@ -71,7 +71,7 @@
 
 <copyright>
     <year>2001</year>
-    <year>2008</year>
+    <year>2009</year>
     <holder>The &digikam; developers team</holder>
 </copyright>
 
@@ -80,7 +80,7 @@
      and in the FDL itself on how to use it. -->
 <legalnotice>&FDLNotice;</legalnotice>
 
-<date>2009-01-16</date>
+<date>2009-01-18</date>
 <releaseinfo>0.10</releaseinfo>
 
 <abstract>
@@ -137,26 +137,25 @@
 
        </sect2>
 
-       <sect2 id="news">      <title>New Features</title>
-	 <itemizedlist><para>General</para>
-		 <listitem><para>Runs on any platform that supports Qt4 and KDE4</para></listitem>
+       <sect2 id="news">      <title>New Features of the KDE4 version</title>
+	 <itemizedlist>
+		 <listitem><para>Runs on any platform that supports Qt4 and KDE4 (including Win32 and OS X)</para></listitem>
 		 <listitem><para>Supports XMP metadata</para></listitem>
 		 <listitem><para>Reads, writes and converts into DNG format</para></listitem>
+		 <listitem><para>New RAW processing tool, gamma-correction in 16 bits</para></listitem>
 		 <listitem><para>Preview of video and audio files</para></listitem>
 		 <listitem><para>Database file is independant of photo libraries, enabling remote paths, multiple roots and offline archives</para></listitem>
-		 <listitem><para>Improved DB schema with many more metadata that can be searched, e.g. camera or lens</para></listitem>
+		 <listitem><para>Improved database with many more metadata that can be searched, e.g. camera or lens</para></listitem>
 		 <listitem><para>Marble integration, geographical filtering with the mouse on the map</para></listitem>
-		 <listitem><para>New search find duplicates and similar images</para></listitem>
-		 <listitem><para>Help menu lists al RAW formats and &digikam; component versions</para></listitem>
+		 <listitem><para>New search finds duplicates and similar images</para></listitem>
+		 <listitem><para>Help menu lists all RAW formats and &digikam; component versions</para></listitem>
 		 <listitem><para>DNG, NEF and PEF RAW file can be metadata edited</para></listitem>
 		 <listitem><para>Useability improvements for netbooks</para></listitem>
-		 <listitem><para>Non modal image editor</para></listitem>
+		 <listitem><para>Non-modal image editor</para></listitem>
 		 <listitem><para>Thumbnail bar in preview mode</para></listitem>
-		 <listitem><para>Live search boxes in sidebars and main window</para></listitem>
+		 <listitem><para>Live search boxes in both sidebars and main window</para></listitem>
 		 <listitem><para>New camera interface, capture tool, scanner interface</para></listitem>
-		 <listitem><para>New plugin based on lensfun fo automatic lens error corrections</para></listitem>
-		 <listitem><para>New RAW processing tool, gamma-correction in 16 bits</para></listitem>
-		 <listitem><para></para></listitem>
+		 <listitem><para>New plugin based on lensfun for automatic lens error corrections</para></listitem>
 	 </itemizedlist>
        </sect2>
 
@@ -216,13 +215,21 @@
            </inlinemediaobject></para>
 
         <para>
-          When you start &digikam; for the very first time it will ask you where you store your photographs. You can type in the path name of a folder or click on the <guilabel>folder</guilabel> icon
+          When you start &digikam; for the very first time it will ask you where you store your photographs and the &digikam; database. You can choose any local, remote or removable folder. Just type in the path name of a folder or click on the <guilabel>folder</guilabel> icon
            <inlinemediaobject>
             <imageobject><imagedata fileref="&path;introductionfoldericon.png" format="PNG"/></imageobject>
             <textobject> <phrase>Folder Icon</phrase> </textobject>
            </inlinemediaobject>
-          to select a folder from the dialog.
+          to select a folder from the dialog. 
         </para>
+ 	<para>In the second box you have to specify a local folder that resides on your computer, in which the database will be stored. This path will be the same for all image folders.
+	</para>
+       
+	<para><inlinemediaobject><imageobject>
+              <imagedata fileref="&path;addinglibraries.png" format="PNG" />  </imageobject>
+           </inlinemediaobject></para>
+	<para>Lateron you can add as many locations as you like - &digikam; will add them to the album library. <menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure</guimenuitem><guimenuitem>Collections</guimenuitem></menuchoice></para>
+	
         </sect3>
 
         <sect3>        <title>The Scan Items Dialog</title>
@@ -233,21 +240,12 @@
           <inlinemediaobject> <imageobject>
             <imagedata fileref="&path;introductionscandialog.png" format="PNG" /> </imageobject></inlinemediaobject>
         </para>
-        </sect3>
-
-        <sect3>        <title>The Albums Missing Dialog</title>
-        <para>
-          This parsing for modifications happens at every application start-up, but it can be disabled in the <guilabel>Settings</guilabel> under <guilabel>Miscellaneous</guilabel>
-	</para>
+	<note><para>&digikam; will recurse the library path to its full depth. You cannot exclude (prune) any sub-path unless you make that sub-path hidden. You have to do that from outside of &digikam; by putting a dot in fron of the sub-path.</para></note>
+ 
 	<para>
           As &digikam; uses your folders on your hard disk directly, other applications like file managers can remove any albums outside a &digikam; session. In this case &digikam; will tell you at the next session if all albums that have been removed from the &digikam; photographs root path shall be deleted from albums database. If you want to move folders around and do not want to do that in &digikam;, we suggest you do that while &digikam; is running, so the database will be kept in sync and you do not lose any metadata.
         </para>
-        <para><inlinemediaobject><imageobject>
-                <imagedata fileref="&path;introductionalbumsmissingdialog.png" format="PNG" />
-              </imageobject>
-              <textobject><phrase>The Albums Missing Dialog</phrase></textobject></inlinemediaobject>
-        </para>
-
+ 
         <para>
           When you use an existing folder of photographs, as the Album Library folder, you will notice that the Albums in the Album list do not have photographs as their icons. You can change that by dragging any photograph in the Album onto the folder icon in the left sidebar and use this as the Album icon. See the <link linkend="using-myalbumsview">Album</link> section for details of how to change the Album icon.
         </para>
@@ -269,7 +267,7 @@
     <anchor id="digitalstillcamera.anchor"/>
 
           <note><para>
-            RAW file support: if you are using RAW shooting mode with your camera, &digikam; is probably well able to deal with it. RAW support depends on the <ulink url="http://www.cybercom.net/~dcoffin/dcraw"> Dave Coffin's</ulink> dcraw program. To find out if your particular camera is supported, bring up the list of supported RAW cameras from the <menuchoice><guimenu>Help</guimenu><guimenuitem>RAW camera support</guimenuitem></menuchoice> menu.
+            RAW file support: if you are using RAW shooting mode with your camera, &digikam; is probably well able to deal with it. RAW support depends on the libraw library. To find out if your particular camera is supported, bring up the list of supported RAW cameras from the <menuchoice><guimenu>Help</guimenu><guimenuitem>RAW camera support</guimenuitem></menuchoice> menu.
           </para>
           <para>
             How to setup and work with RAW files is described in <link linkend="setup-raw-decoder">RAW Decoder Settings</link> and <link linkend="raw-workflow">RAW Workflow</link>.</para>
@@ -649,7 +647,11 @@
                   <menuchoice>
                    <shortcut><keycombo action="press"><keycap>F3</keycap></keycombo></shortcut>
                      <guimenu></guimenu></menuchoice> puts you back into the main window.
-                </para>
+                <inlinemediaobject>
+                    <imageobject><imagedata fileref="&path;maininterfaceview.png" format="PNG"/></imageobject>
+                    <textobject> <phrase>The viewer with thumbnail slider below</phrase> </textobject>
+                </inlinemediaobject>
+                  </para>
 
             </sect3>
 
@@ -736,6 +738,7 @@
                     <guimenu></guimenu>
                    </menuchoice>
                 </para>
+		<para>Deleting works from anywhere in any &digikam; windows</para>
 
             </sect3>
 
@@ -830,15 +833,24 @@
 
         </sect2>
 
+   <sect2>	<title>The Timeline</title>
+   
+	   <para>The timeline view shows a timescale-adjustable histogram of the numbers of images per time unit. A slelection frame moves over the histogram. To select a time frame just click into the <emphasis>lower square</emphasis> of the selection frame where the time unit is indicated. That will show all corresponding images in the main window.</para>
+	   <para>In the field right below you can enter a title and save your selection. It will then appear in the list field at the bottom.</para>
+                <example>
+                    <title>The Timeline View in Action</title>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;timeline.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
+   </sect2>
 
     <sect2 id="using-mysearchesview">        <title>&quot;Searches&quot; View</title>
 
             <sect3>
-            <title>The Quick Search Tool</title>
+            <title>The Quick Search</title>
             <anchor id="quicksearchtool.anchor"/>
 
                 <para>
-                Quick Search provides you with a simple search form to search all data fields in the album library with a single query. You can enter any arguments in the <guilabel>Search</guilabel> text field and it will be used to determine the results. For instance, you can enter the string 'birthday' to search the complete album library for occurrences of the word 'birthday' in all photograph descriptions, or '05.png' to search for a specific image file name '05.png' (no escaping as in regexpressions needed).
+                Quick Search is a little box in the status bar and provides you with a simple means to search all data fields in the album library with a single query. You can enter any arguments in the <guilabel>Search</guilabel> text field and it will be used to determine the results. For instance, you can enter the string 'birthday' to search the complete album library for occurrences of the word 'birthday' in all photograph descriptions, or '05.png' to search for a specific image file name '05.png' (no escaping as in regexpressions needed).
                 </para>
 
                <para>Search Properties:<itemizedlist>
@@ -852,16 +864,25 @@
                 <para>
                 The Quick Search really works intuitively. If you want to search images from a certain date, you can simply type <userinput>2005</userinput>, but it is even possible to search for a certain month. Just enter the name of the month in your local language. If it is Dutch, you can enter <userinput>Maart</userinput>, to see the images of March. The combination of 'Maart 2006' means 'Maart AND 2006' and therefore is equivalent to '2006 Maart'. Or look for 'Maart 2007 cr2' to find all RAW files of March 2007.
                </para>
+	       <para>Next to the search box is a little LED that turns green if the search has results. Just click on it to reset the filtering and show all images again. If the search is not succeessful, the LED turns red.</para>
 
                 <example>
                     <title>Quick Search Tool Dialog in Action</title>
                     <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfacequicksearch.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
+		</sect3>
 
+		<sect3> <title>Searches proper</title>
 
-                <para>
+		<para>
+		The more sophisticated search tool is a tab on the left sidebar (binocular icon). If you  open it, you will be presented with a simple search box the works as described above, except that you can save this search as a live folder that always filters for what you entered as search criteria. When saved, the filter will appear in the list. </para>
+		<para>
                 When you are satisfied with your selection, click on the <guilabel>Ok</guilabel> button, and the search will be carried out, and the results displayed in "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to label your query in "My Search" list. If you want to modify your selection after performing a search, simply right click on the item from "My Search" view and select an option from the pop-up menu.
                 </para>
+                <example>
+                    <title>Quick Search Tool Dialog in Action</title>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;searchinterface.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
 
                 <para>
                 If you select <guilabel>Edit Search</guilabel>, the search form will re-appear, containing your previous search information. If you select <guilabel>Edit as Advanced Search</guilabel>, the advanced search tool dialog will be come up to modify your previous search information using more elaborate search rules. See the <link linkend="using-mainwindow-advancedsearchtool">The Advanced Search Tool</link> section for more information.
@@ -883,87 +904,22 @@
             <anchor id="advancedsearchtool.anchor"/>
 
                 <para>
-                Advanced Search tool provides an extended search form which can be used to search in specific fields of the &digikam; albums database.
+                Advanced Search tool provides an extended search form with a wealth of search parameters, which can be used to search in specific fields of the &digikam; albums database.
                 </para>
 
                 <para>
-                The <guilabel>Search Rules</guilabel> list is used to set all options to process a search query in the albums database. All rules are listed vertically and separated by an operator. An option can be added or deleted to the list using <guilabel>Add/Delete Option</guilabel> or grouped/ungrouped together using <guilabel>Group/Ungroup Options</guilabel>. Each option can be combined with another one using <guilabel>As well as</guilabel> or <guilabel>Or</guilabel> logical operator.
+                The <guilabel>Search Rules</guilabel> list is used to set all options to process a search query in the albums database. All rules are listed vertically and separated by an operator. An option can be added or deleted to the list using <guilabel>Add Search Group/Remove Group</guilabel>. Each option can be combined with another one using <guilabel>Meet all..</guilabel> or <guilabel>Meet any...</guilabel> or <guilabel>one of these...</guilabel>  <guilabel>At least one...</guilabel> logical operators.
                 </para>
 
-                <tip>
-                <para>
-                If you made a rule with <guilabel>As well as</guilabel> and you realize that it should have been <guilabel>Or</guilabel>, you can easily switch to that by double clicking on the text <guilabel>As well as</guilabel> in the rules area.
-                </para>
-                </tip>
-
-                <para>
-                An option is composed by four fields:
-
-                <example>
-                    <title>A Query Option Detail</title>
-                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfaceadvancedsearchoption.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-                </example>
-
-                <orderedlist>
-
-                    <listitem><para>the item used to search in the database, which can be an album, a name, a tag, an image, a keyword, &etc;.
-                    </para></listitem>
-
-                    <listitem><para>the logical operator to process the item which depends on the item type.
-                    </para></listitem>
-
-                    <listitem><para>the operator argument which can be a string or a name already set by database.
-                    </para></listitem>
-
-                    <listitem><para>a checked box to manage the option using Add/Delete and Group/Ungroup controls.
-                    </para></listitem>
-
-                </orderedlist>
-
-                </para>
-
-                <para>
-                For instance, you can set an advanced query to search all items in the database using these options:
-
-                <itemizedlist>
-
-                    <listitem><para>All album names contains the string 'adrien' and all image captions contains the string 'an'.
-                    </para></listitem>
-
-                    <listitem><para>Or all item which have the tag 'Peoples'.
-                    </para></listitem>
-
-                    <listitem><para>Or all keywords contains the string 'gilles'.
-                    </para></listitem>
-
-                </itemizedlist>
-
-                <example>
-                    <title>Advanced Search Tool Dialog in Action</title>
-                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfaceadvancedsearch.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-                </example>
-
-                </para>
-
-                <para>
-                If you want to group options together, just check the option box at the end of the rule and press <guilabel>Group</guilabel> button. Options will be appear in the list like this:
-
-                <example>
-                    <title>A Query Grouped Options Example</title>
-                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;maininterfaceadvancedsearchoptiongroup.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-                </example>
-
-                </para>
-
-                <para>
-                When you are satisfied with your search settings, click on the <guilabel>OK</guilabel> button. The advanced search will be carried out, and the results displayed in the "My Search" view from the main window. The <guilabel>Save search as</guilabel> text field will be used to name your advanced query in the "My Search" list. If you want to modify your selection after performing an advanced search, simply right click on one item from "My Search" view and select <guilabel>Edit Search</guilabel> from the pop-up menu.
-                </para>
-
-             </sect3>
+              </sect3>
 
         </sect2>
 
- </sect1>
+    <sect2 id="fuzzy-searches">              <title>Fuzzy Searches/Duplicates</title>
+	    <para></para>
+    </sect2>
+
+</sect1>
 
  <sect1 id="using-lighttable">         <title>The &digikam; Light Table</title>
      <para>
