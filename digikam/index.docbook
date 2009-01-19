@@ -463,7 +463,7 @@
         </sect2>
 
         <sect2 id="using-myalbumsview">
-        <title>&quot;Albums&quot; View</title>
+        <title>Albums View</title>
 
             <para>
             The &quot;Albums&quot; tree provides an organized view of your photograph albums. All photographs that are managed by &digikam; are stored in a single folder branch. The albums can be sorted by their folder layout on the hard disk, by the Collection name that has been set in the Album Properties or by the Date of that Albums (this date can also be changed in the Properties of each Album).
@@ -744,7 +744,7 @@
 
         </sect2>
 
-   <sect2 id="using-mydatesview">       <title>&quot;Dates&quot; View from Main Window</title>
+   <sect2 id="using-mydatesview">       <title>Calendar View</title>
 
             <para><inlinemediaobject><imageobject><imagedata fileref="&path;maininterfacedateview.png" format="PNG" /> </imageobject>
               <textobject><phrase>Dates View from Main Window</phrase></textobject></inlinemediaobject>
@@ -763,7 +763,7 @@
 
         </sect2>
 
-   <sect2 id="using-mytagsview">        <title>&quot;Tags&quot; View</title>
+   <sect2 id="using-mytagsview">        <title>Tags View (Keywords)</title>
 
       <para>
         (Hierarchical) tagging provides a flexible and powerful way to organize and catalog your images. Tags are labels that can be applied to individual images or whole groups. Once a tag has been set to an image it can be found again by selecting the tag or doing a search.
@@ -843,7 +843,7 @@
                 </example>
    </sect2>
 
-    <sect2 id="using-mysearchesview">        <title>&quot;Searches&quot; View</title>
+    <sect2 id="using-mysearchesview">        <title>Searches View</title>
 
             <sect3>
             <title>The Quick Search</title>
@@ -908,7 +908,7 @@
                 </para>
 
                 <para>
-                The <guilabel>Search Rules</guilabel> list is used to set all options to process a search query in the albums database. All rules are listed vertically and separated by an operator. An option can be added or deleted to the list using <guilabel>Add Search Group/Remove Group</guilabel>. Each option can be combined with another one using <guilabel>Meet all..</guilabel> or <guilabel>Meet any...</guilabel> or <guilabel>one of these...</guilabel>  <guilabel>At least one...</guilabel> logical operators.
+                The <guilabel>Search Rules</guilabel> list is used to set all options to process a search query in the albums database. All rules are listed vertically and separated by an operator. An option can be added or deleted to the list using <guilabel>Add Search Group/Remove Group</guilabel>. Each option can be combined with another one using <guilabel>Meet all..</guilabel> or <guilabel>Meet any...</guilabel> or <guilabel>one of these...</guilabel>  <guilabel>At least one...</guilabel> logical operators. Thus, one can construct searches of the type &quot;AND NOT&quot;.
                 </para>
 
               </sect3>
@@ -916,7 +916,16 @@
         </sect2>
 
     <sect2 id="fuzzy-searches">              <title>Fuzzy Searches/Duplicates</title>
-	    <para></para>
+	    <para>&digikam; characterizes every image by a legthy number using a special technique (Haar algorithm) that make it possible to compare images by comparing this calculated signature. The less numerical difference there is between any two image signatures, the more they resemble each other. This technique has three implementations</para>
+		<itemizedlist>
+		<listitem><para>Similar items: This is a drag&amp;drop zone where you can drop any image to find a similar one. A threshold can be modified in order to narrow down or enlarge the resulting selection. Drag an image from anywhere over the fuzzy search icon in the left sidebar, it will open and you drop it there.</para></listitem>
+		<listitem><para>Sketch: free hand color sketching: draw a quick sketch and &digikam; will find corresponding images. Again a threshold can be set.</para></listitem>
+		<listitem><para>Duplicates: after &digikam; has scanned all collections you will find a list of duplicates here. It's up to you of course to decide what to do with them. From the menu <menuchoice><guimenu>Tools</guimenu><guimenuitem>Rebuild all fingerprints...</guimenuitem></menuchoice> you can initiate a total rebuild of the image signatures (may take hours if you have a large collection, an estimate is 2 hours for 10'000 images) or from the bottom you can just rescan, which is much faster. <guimenu>Find duplicates</guimenu> will do just that, but it will take a long time too as it has to compare every image with any other image. </para></listitem>
+		</itemizedlist>
+                <example>
+                    <title>Fuzzy search for similar image</title>
+                    <screenshot><mediaobject><imageobject><imagedata fileref="&path;fuzzysearchsimilar.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
     </sect2>
 
 </sect1>
