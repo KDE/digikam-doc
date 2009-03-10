@@ -144,13 +144,13 @@
 		 <listitem><para>Reads, writes and converts into DNG format</para></listitem>
 		 <listitem><para>New RAW processing tool, gamma-correction in 16 bits</para></listitem>
 		 <listitem><para>Preview of video and audio files</para></listitem>
-		 <listitem><para>Database file is independant of photo libraries, enabling remote paths, multiple roots and offline archives</para></listitem>
+		 <listitem><para>Database file is independent of photo libraries, enabling remote paths, multiple roots and offline archives</para></listitem>
 		 <listitem><para>Improved database with many more metadata that can be searched, e.g. camera or lens</para></listitem>
 		 <listitem><para>Marble integration, geographical filtering with the mouse on the map</para></listitem>
 		 <listitem><para>New search finds duplicates and similar images</para></listitem>
 		 <listitem><para>Help menu lists all RAW formats and &digikam; component versions</para></listitem>
 		 <listitem><para>DNG, NEF and PEF RAW file can be metadata edited</para></listitem>
-		 <listitem><para>Useability improvements for netbooks</para></listitem>
+		 <listitem><para>Usability improvements for netbooks</para></listitem>
 		 <listitem><para>Non-modal image editor</para></listitem>
 		 <listitem><para>Thumbnail bar in preview mode</para></listitem>
 		 <listitem><para>Live search boxes in both sidebars and main window</para></listitem>
@@ -240,7 +240,7 @@
           <inlinemediaobject> <imageobject>
             <imagedata fileref="&path;introductionscandialog.png" format="PNG" /> </imageobject></inlinemediaobject>
         </para>
-	<note><para>&digikam; will recurse the library path to its full depth. You cannot exclude (prune) any sub-path unless you make that sub-path hidden. You have to do that from outside of &digikam; by putting a dot in fron of the sub-path.</para></note>
+	<note><para>&digikam; will recurse the library path to its full depth. You cannot exclude (prune) any sub-path unless you make that sub-path hidden. You have to do that from outside of &digikam; by putting a dot in front of the sub-path.</para></note>
  
 	<para>
           As &digikam; uses your folders on your hard disk directly, other applications like file managers can remove any albums outside a &digikam; session. In this case &digikam; will tell you at the next session if all albums that have been removed from the &digikam; photographs root path shall be deleted from albums database. If you want to move folders around and do not want to do that in &digikam;, we suggest you do that while &digikam; is running, so the database will be kept in sync and you do not lose any metadata.
@@ -835,7 +835,7 @@
 
    <sect2>	<title>The Timeline</title>
    
-	   <para>The timeline view shows a timescale-adjustable histogram of the numbers of images per time unit. A slelection frame moves over the histogram. To select a time frame just click into the <emphasis>lower square</emphasis> of the selection frame where the time unit is indicated. That will show all corresponding images in the main window.</para>
+	   <para>The timeline view shows a timescale-adjustable histogram of the numbers of images per time unit. A selection frame moves over the histogram. To select a time frame just click into the <emphasis>lower square</emphasis> of the selection frame where the time unit is indicated. That will show all corresponding images in the main window.</para>
 	   <para>In the field right below you can enter a title and save your selection. It will then appear in the list field at the bottom.</para>
                 <example>
                     <title>The Timeline View in Action</title>
@@ -1358,7 +1358,7 @@ Fun stuff
       <para>Physical deterioration of the media happens more rapidly with paper and CD-Rs than the average of film. Yet while film lasts longer (sometimes decades longer) than other forms of media, the right kind of backup of digital media never loses anything. Film decays - digital 1's and 0's do not, and film starts to decay the moment it's created and developed. It will never have the same color, contrast, etc. that it did have a moment before. Digital doesn't do that. However, digital is susceptible to corruption! And yes, physical media such as floppies and magnetic hard drives are also susceptible to the decay of the medium, just like CDs are. They just last longer. </para>
       <para>To combat the problem of CDs/DVDs, they need to be properly cared for and not trusted for more than a few years. Thankfully you can purchase archive-quality CDs and DVDs which last longer, though they are much more difficult to obtain and are much more expensive. There are offers out there for gold-plated DVDs, &dollar;2 a piece claiming 100 years storage life (if you care to believe it).</para>
       <para>CD/DVD disks may become unreadable, but you can reduce the risk using good disks and a good recorder, and storing them in a correct way. The best DVD recorders are not much more expensive than the cheapest, but they write in a much more reliable way. It's a matter of choosing the right one.</para>
-      <para>Essentially, CDs and DVDs are very prone to errors, even in a freshly written state. That's why they are heavily protected with a checksum mechanism (75% of data are effective data, the rest is formating and checksum overhead). But even with that massive amount of protection they will suffer deterioration from chemical aging, ultra-violet exposure, scratches, dust, etc.</para>
+      <para>Essentially, CDs and DVDs are very prone to errors, even in a freshly written state. That's why they are heavily protected with a checksum mechanism (75% of data are effective data, the rest is formatting and checksum overhead). But even with that massive amount of protection they will suffer deterioration from chemical aging, ultra-violet exposure, scratches, dust, etc.</para>
       <para>For damaged CDs and DVDs, there is an inexpensive program called <ulink url="http://www.isobuster.com/">IsoBuster</ulink> from which will do seeming miracles on CDs and DVDs. It runs on Windows and &Linux;; but not (yet) on Macs. Similarly, there are applications designed to get data from damaged floppies, hard drives, flash media such as camera memory and USB drives, and so forth. </para>
       <para>Optical media: Blu-ray disks seem to win the format war against 'HD DVD'. A dual-layer Blu-ray disc can store 50 GB, almost six times the capacity of a dual layer DVD at 8.5 GB. Everything that has been said about CDs/DVDs applies to Blu-ray disks as well.</para>
       <para>Best practice:</para>
@@ -2105,7 +2105,7 @@ Fun stuff
                 <para>If enabled, all RAW files will be decoded to 16-bit color depth using a linear gamma curve. To prevent dark image rendering in the editor, it is recommended to use Color Management in this mode. If disabled, all RAW files will be decoded to 8-bit color depth with a BT.709 gamma curve and a 99th-percentile white point. This mode is faster than 16-bit decoding. In 8-bit mode only will the <guilabel>brightness</guilabel> setting be taken into account (dcraw limitation).
                 </para>
 
-                <para><guilabel>Interplate RGB as four colors</guilabel></para>
+                <para><guilabel>Interpolate RGB as four colors</guilabel></para>
                 <para>The default is to assume that all green pixels are the same. If even-row green pixels of the CCD sensor are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail. To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method.</para>
 
                 <para>
@@ -2147,7 +2147,7 @@ Fun stuff
                 </para>
 
                 <anchor id="CA.anchor"/>
-                <para><guilabel>Enable chromatic aberation (CA) correction</guilabel></para>
+                <para><guilabel>Enable chromatic aberration (CA) correction</guilabel></para>
                 <para>
                    If you know the CA of your lenses you can set the red and blue correction values here. This is certainly the optimal method for CA correction as it is done during RAW conversion.
                 </para>

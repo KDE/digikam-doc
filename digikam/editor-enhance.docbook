@@ -187,7 +187,7 @@ End:
         </menuchoice> Image Editor menu.
     </para>
       <para>
-      The Refocus technique works differently from <link linkend="using-unsharp" >Unsharp Mask</link> and is also unlike the <link linkend="using-adjustsharpness" >Sharpen Filter</link>  which both increase the contrast of the edges of an image. Refocus rather reverses the process by which the image got blurred by the circular aperture of the camera. This method gives you as much of the original &quot;in focus&quot; image as possible. Refocus uses a very powerful deconvolution algorithm that will reclaim the data that has been mixed up. In mathmatical terms, blurring is usually the result of a convolution, a deconvolution will reverse the process, this is exactly what Refocus is doing. Furthermore, the FIR filter technique allows to remove much of the noise and granularity that often gets accentuated in the sharpening process of all sharpening filters.
+      The Refocus technique works differently from <link linkend="using-unsharp" >Unsharp Mask</link> and is also unlike the <link linkend="using-adjustsharpness" >Sharpen Filter</link>  which both increase the contrast of the edges of an image. Refocus rather reverses the process by which the image got blurred by the circular aperture of the camera. This method gives you as much of the original &quot;in focus&quot; image as possible. Refocus uses a very powerful deconvolution algorithm that will reclaim the data that has been mixed up. In mathematical terms, blurring is usually the result of a convolution, a deconvolution will reverse the process, this is exactly what Refocus is doing. Furthermore, the FIR filter technique allows to remove much of the noise and granularity that often gets accentuated in the sharpening process of all sharpening filters.
     </para>
       <sect5 id="using-refocus" >
         <title>Using the Refocus Tool</title>
@@ -290,7 +290,7 @@ End:
          Sharpening applies a small convolution matrix that increases the difference between a source pixel and its immediate neighbors. FIR Wiener filtering is a more general technique because it allows a much larger neighborhood and better parameterizations. Sharpening only works when your images are very slightly blurred. Furthermore, for high values of the sharpening parameter the results frequently looks &quot;noisy&quot;. With FIR Wiener filtering this noise can be greatly reduced by selecting higher values for the <guilabel>Correlation</guilabel> and <guilabel>Noise filter</guilabel> parameters.
       </para>
       <para>
-        Unsharp masking is another very popular image enhancement technique. From a mathematical point of view its justification is a bit obscure but many people are very fond of it. The first step is to creat a blurred copy of the source image. Then the difference between the source image and the blurred image is subtracted from the source image, hence the name unsharp masking. If fact, unsharp masking is more of a contrast enhancement on the important image feature than a sharpening. It does not undo the aperture pattern interference of the camera diaphragm as refocus does.
+        Unsharp masking is another very popular image enhancement technique. From a mathematical point of view its justification is a bit obscure but many people are very fond of it. The first step is to create a blurred copy of the source image. Then the difference between the source image and the blurred image is subtracted from the source image, hence the name unsharp masking. If fact, unsharp masking is more of a contrast enhancement on the important image feature than a sharpening. It does not undo the aperture pattern interference of the camera diaphragm as refocus does.
       </para>
       <para>
         In general, unsharp masking produces better results than sharpening. This is probably caused by the fact that unsharp masking uses a larger neighborhood than sharpening.
@@ -320,7 +320,7 @@ End:
                   </para>
                 </entry>
                 <entry>
-            Original blured color image to fix. This image have been taken with an analog still camera. The unfocusing result of an insuffisant light for the auto-focus lens.
+            Original blurred color image to fix. This image have been taken with an analog still camera. The unfocusing result of an insuffisant light for the auto-focus lens.
             </entry>
               </row>
               <row>
@@ -1226,7 +1226,7 @@ The  <emphasis>Lens Distortion</emphasis> is a tool to correct spherical lens ab
 </para>
     <note>
       <para>
-This tool treats the geometrical distortions. Chromatic abberations will not be corrected by this tool.
+This tool treats the geometrical distortions. Chromatic aberrations will not be corrected by this tool.
 </para>
     </note>
     <para>
@@ -1258,7 +1258,7 @@ The following figures explain the main types of geometrical distortions:
       <title>Using the lens distortion tool</title>
       <note>
         <para>
-A bit of explanation first. The geometrical corrections use 4th-order polynominal coefficients.
+A bit of explanation first. The geometrical corrections use 4th-order polynomial coefficients.
     <itemizedlist>
             <listitem>
               <para>The 1st-order coefficient changes the size of the image. The tool calls this <guilabel>Zoom</guilabel>.</para>
