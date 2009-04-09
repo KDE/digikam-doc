@@ -1,9 +1,5 @@
-########### install files ###############
-#
-#
-# search packages used by KDE
-find_package(KDE4 REQUIRED)
-include (KDE4Defaults)
-include (MacroLibrary)
+FIND_PACKAGE(KDE4 REQUIRED)
+INCLUDE(KDE4Defaults)
+INCLUDE(MacroLibrary)
 
-kde4_create_handbook(index.docbook INSTALL_DESTINATION ${HTML_INSTALL_DIR}/en SUBDIR digikam)
+KDE4_CREATE_HANDBOOK(index.docbook INSTALL_DESTINATION ${HTML_INSTALL_DIR}/en SUBDIR digikam)
