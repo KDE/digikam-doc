@@ -71,7 +71,8 @@ End:
     <sect4 id="using-adjustsharpness" >
       <title>Adjusting Sharpness</title>
       <anchor id="sharpentool.anchor" />
-      <sect5>
+    </sect4>
+      <sect4>
         <title>Unblurring a Photograph</title>
         <para>
 &digikam;
@@ -102,8 +103,8 @@ End:
           </menuchoice> menu entry.
          Look at <link linkend="refocus" >Refocus</link> for more information and a comparison of all the sharpening techniques.
       </para>
-      </sect5>
-      <sect5>
+      </sect4>
+      <sect4>
         <title>Reducing Graininess In a Photograph</title>
         <para>
           When you take a photograph in low-light conditions or with a very fast exposure time, the camera does not get enough data to make good estimates of the true color at each pixel, and consequently the resulting photograph looks grainy. You can &quot;smooth out&quot; the graininess by blurring the image, but then you will also lose sharpness. Probably the best approach - if the graininess is not too bad - is to use the filter <link linkend="noisereduction" >Noise Reduction</link> tool, and you can access it by the
@@ -112,8 +113,8 @@ End:
             <guimenuitem>Noise Reduction</guimenuitem>
           </menuchoice> menu entry.
       </para>
-      </sect5>
-      <sect5>
+      </sect4>
+      <sect4>
         <title>Softening a Photograph</title>
         <para>
           Sometimes you have the opposite problem: an image is too crisp. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the <link linkend="using-blurfilter" >Blur Tool</link> with the <menuchoice>
@@ -121,8 +122,7 @@ End:
             <guimenuitem>Blur</guimenuitem>
           </menuchoice> menu entry and experiment with the level. The preview window on the right of the dialog shows the effect of the operation on your photograph.
       </para>
-      </sect5>
-    </sect4>
+      </sect4>
     <sect4 id="using-unsharp" >
       <title>The Unsharp Masking Filter</title>
       <note>
@@ -155,7 +155,8 @@ End:
       <para>
    The <guilabel>Threshold</guilabel> control is a fraction of the maximum RGB value, needed to apply the difference amount. It allows you to set the minimum difference in pixel values that indicates an edge where sharpening should be applied. That way, you can protect areas of smooth tonal transition from sharpening, and avoid creation of blemishes in face, sky or water surface.
    </para>
-      <sect5 id="inaction-unsharp" >
+    </sect4>
+      <sect4 id="inaction-unsharp" >
         <title>The Unsharp Mask in action</title>
         <para>
    This is an example of how the Unsharp Mask can change your life. The original image is (1) and the corrected image is (2). The unsharp mask was applied with <guilabel>Radius</guilabel> = 6.0, <guilabel>Amount</guilabel> = 0.5,
@@ -171,8 +172,7 @@ End:
             </textobject>
           </inlinemediaobject>
         </para>
-      </sect5>
-    </sect4>
+      </sect4>
     <sect4 id="refocus" >
       <title>Refocus a Photograph</title>
       <para>
@@ -189,7 +189,8 @@ End:
       <para>
       The Refocus technique works differently from <link linkend="using-unsharp" >Unsharp Mask</link> and is also unlike the <link linkend="using-adjustsharpness" >Sharpen Filter</link>  which both increase the contrast of the edges of an image. Refocus rather reverses the process by which the image got blurred by the circular aperture of the camera. This method gives you as much of the original &quot;in focus&quot; image as possible. Refocus uses a very powerful deconvolution algorithm that will reclaim the data that has been mixed up. In mathematical terms, blurring is usually the result of a convolution, a deconvolution will reverse the process, this is exactly what Refocus is doing. Furthermore, the FIR filter technique allows to remove much of the noise and granularity that often gets accentuated in the sharpening process of all sharpening filters.
     </para>
-      <sect5 id="using-refocus" >
+    </sect4>
+      <sect4 id="using-refocus" >
         <title>Using the Refocus Tool</title>
         <para>
           <inlinemediaobject>
@@ -268,8 +269,7 @@ End:
             </listitem>
           </itemizedlist>
         </para>
-      </sect5>
-    </sect4>
+      </sect4>
     <sect4 id="comparison-refocus" >
       <title>Refocus comparison with other techniques</title>
       <para>Comparison to two other techniques frequently used to enhance images are:
@@ -706,7 +706,8 @@ You can see below a full description of all parameters. In most cases only <guil
           </listitem>
         </itemizedlist>
       </para>
-      <sect5 id="inaction-noisereduction" >
+    </sect4>
+      <sect4 id="inaction-noisereduction" >
         <title>Noisereduction in action</title>
         <para>
   This is an example of how the noise reduction can change your life. The original image is (1) and the corrected image is (2). The noise reduction was applied using default settings.
@@ -721,8 +722,8 @@ You can see below a full description of all parameters. In most cases only <guil
             </textobject>
           </inlinemediaobject>
         </para>
-      </sect5>
-      <sect5 id="using-blurfilter" >
+      </sect4>
+      <sect4 id="using-blurfilter" >
         <title>Softening a Photograph</title>
         <para>
           Sometimes an image is too crisp for your purposes. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the Blur Tool with the <menuchoice>
@@ -741,8 +742,7 @@ You can see below a full description of all parameters. In most cases only <guil
             </mediaobject>
           </screenshot>
         </example>
-      </sect5>
-    </sect4>
+      </sect4>
   </sect3>
   <sect3 id="restoration" >
     <sect3info>

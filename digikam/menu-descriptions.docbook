@@ -16,7 +16,7 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>Left</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul">&Alt;<keycap>Left</keycap></keycombo> </shortcut>
                 <guimenu>Album</guimenu><guimenuitem>Back</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Go back to the previously visited View using history.</action></para></listitem>
@@ -24,22 +24,29 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>Right</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul">&Alt;<keycap>Right</keycap></keycombo> </shortcut>
                 <guimenu>Album</guimenu><guimenuitem>Forward</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Go forward to the previously visited View using history. You can only go forward if you've just gone back.</action></para></listitem>
         </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>N</keycap></keycombo> </shortcut>  <guimenu>Album</guimenu><guimenuitem>New Album</guimenuitem>
-            </menuchoice></term>
-            <listitem><para><action>Create a new album folder.</action></para></listitem>
-        </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Album</guimenu><guimenuitem>Edit Album Properties</guimenuitem>
+                <shortcut><keycombo action="simul">&Ctrl;<keycap>N</keycap></keycombo> </shortcut>  <guimenu>Album</guimenu><guimenuitem>New...</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>Create a new album folder.</action></para></listitem>
+        </varlistentry>
+<!--        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>New Album from Selection...</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>???</action></para></listitem>
+        </varlistentry>
+-->
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Album</guimenu><guimenuitem>Properties</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Edit the currently selected album title, caption and collection.</action></para></listitem>
         </varlistentry>
@@ -55,7 +62,7 @@
         <varlistentry id="synchronize-metadata">
             <term><menuchoice>
                 <guimenu>Album</guimenu>
-                <guimenuitem>Synchronize images with database</guimenuitem>
+                <guimenuitem>Synchronize Images with Database</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Synchronize the metadata between database and the file's metadata of all items of the current Main Window. The images will inherit the database metadata, not the other way around as in <link linkend="update-db-metadata">this </link>menu.</action></para></listitem>
         </varlistentry>
@@ -63,22 +70,22 @@
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Album</guimenu>
-                <guimenuitem>Open in &konqueror;</guimenuitem>
+                <guimenuitem>Open in File Manager</guimenuitem>
             </menuchoice></term>
-            <listitem><para><action>Open &konqueror; with the current Album path.</action></para></listitem>
+            <listitem><para><action>Open the default file manager with the current Album path.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
                 <guimenu>Album</guimenu>
-                <guimenuitem>Delete Album/Move Album to trash</guimenuitem>
+                <guimenuitem>Delete</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Delete/Move to trash selected Album and all items in it.</action></para></listitem> 
         </varlistentry>
         
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>Q</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo> </shortcut>
                 <guimenu>Album</guimenu><guimenuitem>Quit</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Quit &digikam;</action></para></listitem>
@@ -105,21 +112,21 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Tag</guimenu><guimenuitem>New Tag</guimenuitem>
+                <guimenu>Tag</guimenu><guimenuitem>New..</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Create a new Tag entry in the Albums Database.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Tag</guimenu><guimenuitem>Edit Tag Properties</guimenuitem>
+                <guimenu>Tag</guimenu><guimenuitem>Properties</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Edit the properties of the currently selected Tag.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Tag</guimenu><guimenuitem>Delete Tag</guimenuitem>
+                <guimenu>Tag</guimenu><guimenuitem>Delete</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Remove the currently selected Tag from the Album's Database.</action></para></listitem>
         </varlistentry>
@@ -174,7 +181,7 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="press"><keycap>&Ctrl;</keycap><keycap>L</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="press">&Ctrl;<keycap>L</keycap></keycombo> </shortcut>
                 <guimenu>Image</guimenu><guimenuitem>Place onto Light Table</guimenuitem>
             </menuchoice></term>
             <listitem>
@@ -184,7 +191,7 @@
         
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="press"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>L</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="press">&Ctrl;&Shift;<keycap>L</keycap></keycombo> </shortcut>
                 <guimenu>Image</guimenu><guimenuitem>Add to Light Table</guimenuitem>
             </menuchoice></term>
             <listitem>
@@ -265,7 +272,7 @@
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Image</guimenu><guimenuitem>Email images</guimenuitem>
+                <guimenu>Image</guimenu><guimenuitem>Email Images...</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -329,7 +336,7 @@
         
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="press"><keycap>&Ctrl;</keycap><keycap>P</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="press">&Ctrl;<keycap>P</keycap></keycombo> </shortcut>
                 <guimenu>Album</guimenu><guimenuitem>Export</guimenuitem><guimenuitem>Print 
                 Wizard</guimenuitem>
             </menuchoice></term>
@@ -384,12 +391,12 @@
 
     <!-- *********************************************************************** -->
 
-    <sect2>    <title>The Select Menu</title>
+    <sect2>    <title>The Edit Menu</title>
 
     <para>
         <inlinemediaobject>
             <imageobject><imagedata fileref="&path;menuselect.png" format="PNG"/></imageobject>
-            <textobject> <phrase>Select Menu</phrase> </textobject>
+            <textobject> <phrase>Edit Menu</phrase> </textobject>
         </inlinemediaobject>
     </para>
 
@@ -398,24 +405,24 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>A</keycap></keycombo> </shortcut>
-                <guimenu>Select</guimenu><guimenuitem>Select All</guimenuitem>
+                <shortcut><keycombo action="simul">&Ctrl;<keycap>A</keycap></keycombo> </shortcut>
+                <guimenu>Edit</guimenu><guimenuitem>Select All</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Select all images currently shown</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>U</keycap></keycombo> </shortcut>
-                <guimenu>Select</guimenu><guimenuitem>Select None</guimenuitem>
+                <shortcut><keycombo action="simul">&Ctrl;&Shift;<keycap>A</keycap></keycombo> </shortcut>
+                <guimenu>Edit</guimenu><guimenuitem>Select None</guimenuitem>
             </menuchoice></term>
         <listitem><para><action>Unselect all items in the current view</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>*</keycap></keycombo> </shortcut>
-                <guimenu>Select</guimenu><guimenuitem>Invert Selection</guimenuitem>
+                <shortcut><keycombo action="simul">&Ctrl;<keycap>*</keycap></keycombo> </shortcut>
+                <guimenu>Edit</guimenu><guimenuitem>Invert Selection</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Invert the current selection</action></para></listitem>
         </varlistentry>
@@ -441,7 +448,7 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>F</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul">&Ctrl;&Shift;<keycap>F</keycap></keycombo> </shortcut>
                 <guimenu>View</guimenu><guimenuitem>Full Screen Mode</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Switch to full screen (same as F11).</action></para></listitem>
@@ -449,7 +456,7 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>View</guimenu><guimenuitem>Slide Show</guimenuitem>
+                <guimenu>View</guimenu><guisubmenu>Slideshow</guisubmenu>
             </menuchoice></term>
             <listitem><para><action>Slide Show including RAW files.</action></para></listitem>
         </varlistentry>
@@ -457,30 +464,47 @@
         <varlistentry>
             <term><menuchoice>
                 <shortcut><keycombo action="press"><keycap>F9</keycap></keycombo> </shortcut>
-                <guimenu>View</guimenu><guimenuitem>Slide Show</guimenuitem><guimenuitem>All</guimenuitem>
+                <guimenu>View</guimenu><guisubmenu>Slideshow</guisubmenu><guimenuitem>All</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Start slide show of all images in current window.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>F9</keycap></keycombo> </shortcut>
-                <guimenu>View</guimenu><guimenuitem>Slide Show</guimenuitem><guimenuitem>Selection</guimenuitem>
+                <shortcut><keycombo action="simul">&Alt;<keycap>F9</keycap></keycombo> </shortcut>
+                <guimenu>View</guimenu><guisubmenu>Slideshow</guisubmenu><guimenuitem>Selection</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Start slide show on selected images.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Shift;</keycap><keycap>F9</keycap></keycombo> </shortcut>
-                <guimenu>View</guimenu><guimenuitem>Slide Show</guimenuitem><guimenuitem>Recursive</guimenuitem>
+                <shortcut><keycombo action="simul">&Shift;<keycap>F9</keycap></keycombo> </shortcut>
+                <guimenu>View</guimenu><guisubmenu>Slideshow</guisubmenu><guimenuitem>With All Sub-Albums</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Slide show that recurses through the current album tree.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>+</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul">&Alt;&Shift;<keycap>F9</keycap></keycombo> </shortcut>
+                <guimenu>View</guimenu><guisubmenu>Slideshow</guisubmenu><guimenuitem>Advanced Slideshow...</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi-plugin for displaying an advanced slide show with Album items.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/slideshow.html">Advanced Slide Show manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>
+        </varlistentry>
+    
+        <varlistentry>
+            <term><menuchoice>
+                <shortcut><keycombo action="simul">&Ctrl;<keycap>+</keycap></keycombo> </shortcut>
                 <guimenu>View</guimenu><guimenuitem>Zoom in</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Increase preview or the thumbnail size of the currently selected Album.</action></para></listitem>
@@ -488,7 +512,7 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>-</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul">&Ctrl;<keycap>-</keycap></keycombo> </shortcut>
                 <guimenu>View</guimenu><guimenuitem>Zoom out</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Decrease preview or the thumbnail size of the currently selected Album.</action></para></listitem>
@@ -496,8 +520,8 @@
         
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>&Ctrl;</keycap><keycap>0</keycap></keycombo> </shortcut>
-                <guimenu>View</guimenu><guimenuitem>Zoom to 1:1</guimenuitem>
+                <shortcut><keycombo action="simul">&Ctrl;&Alt;<keycap>0</keycap></keycombo> </shortcut>
+                <guimenu>View</guimenu><guimenuitem>Zoom to 100%</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Will show the image 1:1 (meaning 1 image pixel is mapped exactly to 1 screen pixel) in preview mode.</action></para></listitem>
         </varlistentry>
@@ -505,23 +529,31 @@
         <varlistentry>
             <term><menuchoice>
                 <shortcut><keycombo action="simul">
-                    <keycap>&Ctrl;</keycap><keycap>&Shift;</keycap><keycap>E</keycap>
+                    &Ctrl;&Shift;<keycap>E</keycap>
                 </keycombo></shortcut>
                 <guimenu>View</guimenu><guimenuitem>Fit to Window</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Will size the image as to fit snug into the window.</action></para></listitem>
         </varlistentry>
-        
+<!--
         <varlistentry>
             <term><menuchoice>
-                <guimenu>View</guimenu><guimenuitem>Sort Albums</guimenuitem>
+                <shortcut><keycombo action="simul">&Ctrl;<keycap>T</keycap></keycombo></shortcut>
+                <guimenu>View</guimenu><guimenuitem>Show Thumbnails</guimenuitem>
+            </menuchoice></term>
+            <listitem><para><action>???</action></para></listitem>
+        </varlistentry>
+-->        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>View</guimenu><guisubmenu>Sort Albums</guisubmenu>
             </menuchoice></term>
             <listitem><para><action>Sort all &digikam; Albums by Folder, by Collection, or by Date.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>View</guimenu><guimenuitem>Sort Images</guimenuitem>
+                <guimenu>View</guimenu><guisubmenu>Sort Images</guisubmenu>
             </menuchoice></term>
             <listitem><para><action>Sort all images in current Album by Name, Path, Date, File Size or by Rating.</action></para></listitem>
         </varlistentry>
@@ -561,8 +593,8 @@
 
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>F</keycap></keycombo> </shortcut>
-                <guimenu>Tools</guimenu><guimenuitem>Quick Search</guimenuitem>
+                <shortcut><keycombo action="simul">&Ctrl;<keycap>F</keycap></keycombo> </shortcut>
+                <guimenu>Tools</guimenu><guimenuitem>Search...</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -573,8 +605,8 @@
         
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>&Ctrl;</keycap><keycap>F</keycap></keycombo> </shortcut>
-                <guimenu>Tools</guimenu><guimenuitem>Advanced Search</guimenuitem>
+                <shortcut><keycombo action="simul">&Alt;&Ctrl;<keycap>F</keycap></keycombo> </shortcut>
+                <guimenu>Tools</guimenu><guimenuitem>Advanced Search...</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -585,7 +617,7 @@
         
         <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Alt;</keycap><keycap>F6</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul"><keycap>L</keycap></keycombo> </shortcut>
                 <guimenu>Tools</guimenu><guimenuitem>Light Table</guimenuitem>
             </menuchoice></term>
             <listitem>
@@ -597,7 +629,24 @@
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Tools</guimenu><guimenuitem>Scan for new images</guimenuitem>
+                <shortcut><keycombo action="simul">&Ctrl;<keycap>D</keycap></keycombo> </shortcut>
+                <guimenu>Tools</guimenu><guimenuitem>Find Duplicates</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi-plugin to find duplicate images in Albums Database.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/findduplicateimages.html">Find Duplicate Images manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Scan for New Images...</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -616,10 +665,19 @@
                 </action></para>
             </listitem>            
         </varlistentry>
-        
+<!--        
+        <varlistentry>
+            <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>Rebuild all Fingerprints...</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>???</action></para>
+            </listitem>            
+        </varlistentry>
+-->        
         <varlistentry id="update-db-metadata">
             <term><menuchoice>
-                <guimenu>Tools</guimenu><guimenuitem>Update Metadata Database...</guimenuitem>
+                <guimenu>Tools</guimenu><guimenuitem>Synchronize all Images with Database...</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -630,39 +688,7 @@
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Tools</guimenu><guimenuitem>Find Duplicate Images</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Kipi-plugin to find duplicate images in Albums Database.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/kipi-plugins/findduplicateimages.html">Find Duplicate Images manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>            
-        </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Tools</guimenu><guimenuitem>Image Viewer</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Kipi-plugin OpenGL full screen image viewer with the selected image.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/kipi-plugins/openglviewer.html">OpenGL viewer manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>            
-        </varlistentry>
-        
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Tools</guimenu><guimenuitem>Create Calendar</guimenuitem>
+                <guimenu>Tools</guimenu><guimenuitem>Create Calendar...</guimenuitem>
             </menuchoice></term>
             <listitem>
                 <para><action>
@@ -678,6 +704,22 @@
 
         <varlistentry>
             <term><menuchoice>
+                <guimenu>Tools</guimenu><guimenuitem>OpenGL Image Viewer...</guimenuitem>
+            </menuchoice></term>
+            <listitem>
+                <para><action>
+                    Kipi-plugin OpenGL full screen image viewer with the selected image.
+                </action></para>
+                <para>
+                    See the dedicated 
+                    <ulink url="help:/kipi-plugins/openglviewer.html">OpenGL viewer manual</ulink> 
+                    for more information.
+                </para>     
+            </listitem>            
+        </varlistentry>
+        
+        <varlistentry>
+            <term><menuchoice>
                 <guimenu>Tools</guimenu><guimenuitem>Remote Galleries</guimenuitem>
             </menuchoice></term>
             <listitem>
@@ -687,22 +729,6 @@
                 <para>
                     See the dedicated 
                     <ulink url="help:/kipi-plugins/remotegalleries.html">Remote galleries manual</ulink> 
-                    for more information.
-                </para>     
-            </listitem>
-        </varlistentry>
-    
-        <varlistentry>
-            <term><menuchoice>
-                <guimenu>Tools</guimenu><guimenuitem>Advanced Slideshow</guimenuitem>
-            </menuchoice></term>
-            <listitem>
-                <para><action>
-                    Kipi-plugin for displaying an advanced slide show with Album items.
-                </action></para>
-                <para>
-                    See the dedicated 
-                    <ulink url="help:/kipi-plugins/slideshow.html">Advanced Slide Show manual</ulink> 
                     for more information.
                 </para>     
             </listitem>
@@ -811,7 +837,7 @@
 
          <varlistentry>
             <term><menuchoice>
-                <shortcut><keycombo action="simul"><keycap>&Ctrl;</keycap><keycap>I</keycap></keycombo> </shortcut>
+                <shortcut><keycombo action="simul">&Ctrl;<keycap>I</keycap></keycombo> </shortcut>
                 <guimenu>Camera</guimenu><guimenuitem>Add Images...</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Navigate to a folder and select images</action></para></listitem>
@@ -1012,35 +1038,35 @@
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Settings</guimenu><guimenuitem>Show Toolbar/Hide Toolbar</guimenuitem>
+                <guimenu>Settings</guimenu><guimenuitem>Show Toolbar</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Enable or disable the main &digikam; toolbar.</action></para></listitem>
         </varlistentry>
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Settings</guimenu><guimenuitem>Show Statusbar/Hide Statusbar</guimenuitem>
+                <guimenu>Settings</guimenu><guimenuitem>Show Statusbar</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Enable or disable the main &digikam; status bar.</action></para></listitem>
         </varlistentry>
         
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Settings</guimenu><guimenuitem>Configure Shortcuts</guimenuitem>
+                <guimenu>Settings</guimenu><guimenuitem>Configure Shortcuts...</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Configure the &digikam; shortcuts.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Settings</guimenu><guimenuitem>Configure Toolbars</guimenuitem>
+                <guimenu>Settings</guimenu><guimenuitem>Configure Toolbars...</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Configure the &digikam; toolbars.</action></para></listitem>
         </varlistentry>
 
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Settings</guimenu><guimenuitem>Configure &digikam;</guimenuitem>
+                <guimenu>Settings</guimenu><guimenuitem>Configure &digikam;...</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Launch &digikam; configure dialog.</action></para></listitem>
         </varlistentry>
@@ -1054,7 +1080,7 @@
     <variablelist>
         <varlistentry>
             <term><menuchoice>
-                <guimenu>Help</guimenu><guimenuitem>RAW cameras supported</guimenuitem>
+                <guimenu>Help</guimenu><guimenuitem>Supported RAW Cameras</guimenuitem>
             </menuchoice></term>
             <listitem><para><action>Displays a live filter of all supported RAW format cameras.</action></para></listitem>
         </varlistentry>
