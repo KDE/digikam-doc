@@ -983,154 +983,7 @@
 
  </sect1>
 
- <sect1 id="using-sidebar">            <title>&digikam; sidebar</title>
-    <anchor id="sidebar.anchor"/>
-
-        <sect2>
-        <title>Introduction to the right sidebar</title>
-           <para>
-               The &digikam; main window has a sidebar at the right border providing important information and actions of the selected images. This same sidebar is also available in the <link linkend="using-imageeditor">Image Editor</link> view. It can be displayed by respectively clicking on one of the five tabs:
-           </para>
-
-           <para>
-            <itemizedlist>
-
-                <listitem><para><link linkend="using-sidebarfileproperties">Properties</link> : File and image properties, key shooting parameters (EXIF tags)</para></listitem>
-
-                <listitem><para><link linkend="using-sidebarmetadata">Metadata</link> : EXIF, Makernotes, IPTC and GPS data (these properties can be edited by two Kipi-plugins</para></listitem>
-
-                <listitem><para><link linkend="using-sidebarcolors">Colors</link> : Histograms and embedded ICC profiles</para></listitem>
-
-                <listitem><para><link linkend="using-sidebargeolocation">Geolocation</link> : Marble widget shows GPS location</para></listitem>
-
-                <listitem><para><link linkend="using-sidebarcommentstags">Comments &amp; Tags</link> : Comments, Date &amp; Time setting, Rating, Tags</para></listitem>
-
-                <listitem><para><link linkend="using-sidebartagfilters">Tag Filters</link> : Tag filters applied to main window selection</para></listitem>
-
-            </itemizedlist>
-            Clicking successively onto the same tab will make the sidebar pop up or fold back into the border.
-            </para>
-        </sect2>
-
-        &doc-sidebar;
-
-        <sect2 id="using-sidebarcommentstags">
-        <title>Comments &amp; Tags</title>
-           <para>
-           This sidebar tab serves to apply and edit image attributes like captions, rating, date and tags. The attributes are stored in the associated database, in the IPTC and EXIF data fields and become part of the image. All attributes are accessible in one sidebar view as shown in the screenshot below. During image reading the order of priority is a) database b) IPTC and c) EXIF. So if there is a discrepancy between any of the three, this priority will take effect and a synchronization will take place. This sidebar has a first-previous-next-last arrow navigator field on top if shown in the main application.
-           </para>
-
-           <example>  <title>sidebar Comments &amp; Tags example</title>
-                 <screenshot><screeninfo>sidebar Comments &amp; Tags Example</screeninfo><mediaobject><imageobject><imagedata fileref="&path;sidebarcommentstags.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-           </example>
-
-          <sect3>
-          <title>Comment View</title>
-           <para>
-           The caption view can be used to type or paste in a caption of unlimited size (see note below). The text is UTF-8 compatible, meaning that all special characters are allowed. The captions are copied to EXIF and IPTC fields to be used by other applications.
-           </para>
-           <caution><para>
-           IPTC data only supports ASCII characters and is limited to 2000 characters (old American norm). All texts will be truncated after 2000 chars, and special characters will be malformed. If you intend to use the IPTC caption field in other applications you should be compliant with these restrictions.
-           </para></caution>
-	<para>After commenting, either choose the <guibutton>Apply</guibutton> button or go straight to the next image, the captions will be saved.</para>
-	<para>Next to the Apply button there is the <guibutton>More</guibutton> button. From it you can either choose to read metadata from the selected file to the database, or the other way around, to write metadata to the files (the latter take place anyway if you chose a metadata setting so that all metadata is always saved to the images).</para>
-
-          </sect3>
-
-          <sect3>
-          <title>Date &amp; Time</title>
-
-           <para>
-           In the Date &amp; Time section, which reflects the time of taking the photograph, you can change all values. From the date combo-box a calender opens, and the time setting spin-box can also be written by directly typing the time. The dating is copied to the EXIF 'Date and Time' field. If you need to change a number of images for their creating time &amp; date, there is a more comfortable method available (requiring the Kipi-plugins). This latter option can be found under <menuchoice><guimenuitem>Image</guimenuitem><guimenuitem>Adjust time &amp; date...</guimenuitem></menuchoice>. Select the images to be changed in the main view and call the plugin.
-           </para>
-          </sect3>
-
-          <sect3>
-          <title>Rating</title>
-
-           <para>
-           The Rating section displays a 0...5 star rating scheme that can be used in searches and sort orders. It can be applied by a single mouse click to the 5 stars in the sidebar or with a keyboard short-cut Ctrl+0...5. The rating from the sidebar is always applied to one image at a time. To rate a number of images, select them and pop-up the context menu (right-click) to apply a common rating.
-           </para>
-           <para>The rating is then transcribed into the IPTC 'urgency' data field. The transcoding follows the scheme in this table:
-           </para>
-
-              <informaltable><tgroup cols="2">
-                <thead><row>
-                    <entry>&digikam; Rating</entry>
-                    <entry>IPTC Urgency</entry>
-                    </row></thead>
-
-                    <tbody>
-                        <row>   <entry>-</entry>         <entry>8</entry>      </row>
-
-                        <row>   <entry>*</entry>         <entry>7</entry>      </row>
-
-                        <row>   <entry>*</entry>         <entry>6</entry>      </row>
-
-                        <row>   <entry>**</entry>        <entry>5</entry>      </row>
-
-                        <row>   <entry>***</entry>       <entry>4</entry>      </row>
-
-                        <row>   <entry>****</entry>      <entry>3</entry>      </row>
-
-                        <row>   <entry>****</entry>      <entry>2</entry>      </row>
-
-                        <row>   <entry>*****</entry>     <entry>1</entry>      </row>
-                     </tbody>
-
-              </tgroup></informaltable>
-
-          </sect3>
-
-          <sect3>
-          <title>Tag Tree</title>
-
-           <para>
-           The tag view shows an adaptive filter tag search box, the tag tree and a combo-box containing the tags previously applied in this &digikam; session.
-           </para>
-           <para>
-           The tag tree will be adapted dynamically as a function of the search word as you type into the box. So it is easy to quickly reduce the number of possibilities when searching for a tag. Of course, this feature is only useful if you have many tags.
-           </para>
-
-           <para>
-           The combo-box at the bottom is another ergonomic feature for easy tagging of an image series. As you apply different tags they will be memorized in this box for quick access.
-           </para>
-
-           <para>
-           Otherwise tags are simply applied by checking the respective boxes in the tree. All tags of an image are transcribed into the IPTC 'keyword' data field.
-           </para>
-           <note><para>
-            In case you have selected a number of images in the main view and you check a tag in the tag tree, this one is only applied to the highlighted image, and not to the whole selection. If you want to tag selections, refer to the <link linkend="using-sidebartagfilters">Tag filters</link> section.
-           </para></note>
-
-          </sect3>
-
-        </sect2>
-
-
-        <sect2 id="using-sidebartagfilters">
-        <title>Tag Filters</title>
-           <para>
-           The tag filter sidebar is used to modify the set of images displayed in the main window view. Normally one uses the left sidebar with its Album, Date, Tags and Searches view. When additionally one or more tags on right sidebar tag filter is checked, only the cross-section of these two selections will be displayed. All created tags are available.
-           </para>
-           <para>
-           To give an example, suppose you have a tag called 'public' which tags all images except your private ones. Then you can check this 'public' tag in the right sidebar to hide the private images (all those not having 'public' tag). Whatever view mode you chose from the left sidebar, 'public' only image will be displayed. Another typical example is the selection of a subset of tags in a hierarchical tree. Suppose you want to display 'red' and 'green' from a tag tree containing 7 different colors as sub-tags. Simply click on the 'color' tag of the main view and check 'red' and 'green' from the right sidebar.
-           </para>
-           <para>Another use is <emphasis>drag-and-drop tagging</emphasis>. Lets say you selected in the main view a number of images to tag them. If the tag already exists, simply drag it from the right sidebar onto the selection (any one of the highlighted images). A dialog will pop-up and ask if this tag should be applied.
-           </para>
-
-           <para>
-                 <inlinemediaobject><imageobject><imagedata fileref="&path;sidebartagfilters.png" format="PNG" /> </imageobject><textobject><phrase>Sidebar Tag Filters</phrase></textobject></inlinemediaobject>
-           </para>
-
-            <para>
-                In the above example the main window shows the images from a calender date, the tag filter is set to 'not tagged', which reduces the set to 3 images. They have been selected with Ctrl+a, then a tag is dragged from the right tag tree over the selection and dropped. A pop-up dialog asks if the tag shall be applied.
-            </para>
-
-        </sect2>
-
-    </sect1>
-
+&doc-sidebar;
 
  <sect1 id="dam">                      <title>Digital Asset Management (DAM) with &digikam;</title>
 
@@ -1161,7 +1014,7 @@
     </itemizedlist>
     <para><link linkend="dam-workflow">A typical DAM workflow</link></para>
 
-   <sect2> <title>Introduction</title>
+   <sect2 id="dam-introduction"> <title>Introduction</title>
     <epigraph><para><emphasis>...in the end, photographs need a lot of care.</emphasis>  I hope it's you who said this.</para></epigraph>
 
      <para>Can you find your digital photographs when you need them? Or do you spend more time sifting through your hard drive and file cabinets than you would like? Do you have a systematic approach for assigning and tracking content data on your photos? If you make a living as a photographer, do your images bear your copyright and contact information, or do they circulate in the marketplace unprotected? Do you want your future grandchildren to admire your photographs you have taken yesterday? How do you ensure backup and the correctness of your data? How to prepare to change your computer, your hard disk, the software, the operating system and still manage to find your pictures or movies?</para>
@@ -2622,5 +2475,113 @@ Fun stuff
 <!-- *********************************************************************** -->
 
 &doc-credits-annexes;
+
+<appendix id="installation">        <title>Installation</title>
+
+<sect1 id="getting-kapp">                <title>How to Obtain &digikam;</title>
+
+<para>
+The website for &digikam; is at <ulink url="http://www.digikam.org">http://www.digikam.org</ulink>. Please check it regularly to get the latest news about &digikam;. &digikam; can be obtained in binary and source format from <ulink url="http://sourceforge.net/project/showfiles.php?group_id=42641">http://sourceforge.net/project/showfiles.php?group_id=42641</ulink>.
+</para>
+
+<para>
+Also you can checkout the <emphasis>digikam</emphasis> and <emphasis>kipi</emphasis> source code modules
+from &kde; Extragear SVN repository like this:
+
+<screen width="40">
+    <prompt>%</prompt> <userinput>svn co -N svn://anonsvn.kde.org/home/kde/trunk/extragear/graphics</userinput>
+    <prompt>%</prompt> <userinput>cd graphics</userinput>
+    <prompt>%</prompt> <userinput>svn up digikam</userinput>
+    <prompt>%</prompt> <userinput>svn co svn://anonsvn.kde.org/home/kde/branches/KDE/3.5/kde-common/admin</userinput>
+</screen>
+
+</para>
+
+<para>
+The last SVN snapshoots can be downloaded at this &URL; <ulink url="ftp://ftp.kde.org/pub/kde/unstable/snapshots/">
+ftp://ftp.kde.org/pub/kde/unstable/snapshots/</ulink>.
+</para>
+
+</sect1>
+
+<sect1 id="requirements">                <title>Requirements</title>
+
+<para>
+In order to successfully use &digikam;, you need the following:
+<itemizedlist>
+    <listitem><para>AutoConf >= 2.5    <ulink url="http://www.gnu.org/software/autoconf">GNU autoconf</ulink></para></listitem>
+    <listitem><para>AutoMake >= 1.7.0    <ulink url="http://www.gnu.org/software/automake">GNU automake</ulink></para></listitem>
+    <listitem><para>&kde; 3.x    <ulink url="http://www.kde.org">&kde; Home Page</ulink></para></listitem>
+    <listitem><para>libqt >= 3.3.x    <ulink url="http://www.trolltech.com">Trolltech</ulink></para></listitem>
+    <listitem><para>libsqlite >= 3.x    <ulink url="http://www.sqlite.org">SQlite3</ulink></para></listitem>
+    <listitem><para>gphoto2 >= 2.x   <ulink url="http://www.gphoto.org">Gphoto Home Page</ulink></para></listitem>
+    <listitem><para>libgdbm >= 1.8.0</para></listitem>
+    <listitem><para>libkipi >= 0.1   <ulink url="http://www.kipi-plugins.org">www.kipi-plugins.org</ulink></para></listitem>
+    <listitem><para>libkexiv2 >= 0.1   <ulink url="http://www.kipi-plugins.org">www.kipi-plugins.org</ulink></para></listitem>
+    <listitem><para>libdcraw >= 0.1.5   <ulink url="http://www.kipi-plugins.org">www.kipi-plugins.org</ulink></para></listitem>
+    <listitem><para>libtiff >= 3.6.x (>=3.8.2 recommended)   <ulink url="http://www.remotesensing.org/libtiff">www.remotesensing.org</ulink></para></listitem>
+    <listitem><para>libpng >= 1.2.0   <ulink url="http://www.libpng.org/pub/png/libpng.html">www.libpng.org</ulink></para></listitem>
+    <listitem><para>liblcms >= 1.14.x   <ulink url="http://www.littlecms.com">Little CMS Home Page</ulink></para></listitem>
+    <listitem><para>libjasper >= 1.7   <ulink url="http://www.ece.uvic.ca/~mdadams/jasper">Jasper site</ulink></para></listitem>
+    <listitem><para>exiv2 >= 0.12 (>=0.14 recommended)   <ulink url="http://www.exiv2.org">Exiv2.org</ulink></para></listitem>
+</itemizedlist>
+All library dependencies require development and binary packages installed on your
+computer to compile &digikam;.
+</para>
+
+<para> 
+Most likely your distribution vendor might already have packaged and provided these packages.
+</para>
+
+</sect1>
+
+<sect1 id="compilation">                 <title>Compilation and Installation</title>
+
+<para>
+In order to compile and install &digikam; on your system, type the following in the base folder of the <emphasis>libkipi</emphasis> and <emphasis>digikam</emphasis> module distributions:
+
+<screen width="40">
+    <prompt>%</prompt> <userinput>export WANT_AUTOCONF_2_5=1</userinput>
+    <prompt>%</prompt> <userinput>export KDEDIR=KDE_installation_dir_on_your_system</userinput>
+    <prompt>%</prompt> <userinput>export 
+    PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/path/to/installation/lib/pkgconfig</userinput>    
+    <prompt>%</prompt> <userinput>make -f Makefile.cvs</userinput>
+    <prompt>%</prompt> <userinput>./configure</userinput>
+    <prompt>%</prompt> <userinput>make</userinput>
+    <prompt>%</prompt> <userinput>su</userinput>
+    <prompt>%</prompt> <userinput>make install</userinput>
+</screen>
+</para>
+
+<note>
+<title>Important Notes</title>
+
+<para>
+Stage 3 is required if you are installing libkipi/libkexiv2 in a non-standard location, and you must let pkg-config know about their paths.
+</para>
+
+<para>
+More specific compilation and installation options can be passed to the <emphasis>configure</emphasis> script. Use <userinput>./configure --help</userinput> on the command line to view these options.
+</para>
+
+<para>
+Use <emphasis>--enable-debug=full</emphasis> option with <emphasis>configure</emphasis> script for to provide a full information bug report.
+</para>
+
+<para>
+Because &digikam; depends on <emphasis>libkipi</emphasis> and <emphasis>libkexif</emphasis>, you must build these libraries before you build &digikam;.
+</para>
+
+</note>
+
+<para>
+Since &digikam; uses autoconf and automake you should not have trouble compiling it. If you run into problems please report them to <email>digikam-users@kde.org</email>.
+</para>
+
+</sect1>
+
+</appendix>
+
+&documentation.index;
 
 </book>
