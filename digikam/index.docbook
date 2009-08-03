@@ -1036,7 +1036,7 @@
 
       <sect3 id="build-archive"> <title>Build the archive: Folder organization, physical layout as information</title>
       <para>The first thing to do and to know before you put anything onto your system is a to build an information structure (as opposed to data structure). Your image files have to be somehow organized within the computer, you have to decide if others should have access to your photographs (sharing), if you put them on a dedicated drive, on a network drive &etc; Keep in mind that you have to migrate one day onto some bigger volume. </para>
-      <para>The organization should be simple, unified and scalable, and it should be independent of the storage medium on which you host them. Do not make the folders too small, several thousand images in one folder is not too much to ask for, but keep them small enough so that they can fit into a backup medium like a DVD 4.7 of 9.4 GB for double sided ones. Remember that the archive will grow all the time! The concrete type of structure depends on your use case of course: Lets take a simple yet frequent example: you are a casual photographer taking pictures of your private life, your family, holidays and so on. It could be efficient to create a structure based on years plus some holiday and export containers. It could look like this:</para>
+      <para>The organization should be simple, unified and scalable, and it should be independent of the storage medium on which you host them. Do not make the folders too small, several thousand images in one folder is not too much to ask for, but keep them small enough so that they can fit into a backup medium like a DVD 4.7 or 9.4 GB for double sided ones. Remember that the archive will grow all the time! The concrete type of structure depends on your use case of course: Lets take a simple yet frequent example: you are a casual photographer taking pictures of your private life, your family, holidays and so on. It could be efficient to create a structure based on years plus some holiday and export containers. It could look like this:</para>
 <blockquote><screen>2006
 2007
 2008
@@ -1376,8 +1376,8 @@ Fun stuff
         <sect4>  <title>Scalability</title>
       <para>Scalability is the tech-geek expression of the (easy) capability of a system to be resized, which always means up-sized. </para>
       <para>EMVS /LVM Todo</para>
-      <para>Lets assume you planned for scalability and dedicated the container you want to increase to a separate disk or partition. On *nix systems like &Linux; you then can copy an resize the container to the new disk:</para>
-      <para>Check with dmesg if your new disk is recognized b the system, but don't mount it.</para>
+      <para>Lets assume you planned for scalability and dedicated the container you want to increase to a separate disk or partition. On *nix systems like &Linux; you then can copy and resize the container to the new disk:</para>
+      <para>Check with dmesg if your new disk is recognized by the system, but don't mount it.</para>
 <blockquote><screen>
 &dollar; dd if=/dev/sdb[#] of=/dev/sdc # source is /dev/sdb, new disk is /dev/sdc
 &dollar; parted resize /dev/sdc1 0 &lt;disk size in MB&gt; # works on ext2,3, fat16, 32 and reiserfs
@@ -1586,9 +1586,9 @@ Fun stuff
                 <para>
                 <itemizedlist>
 
-                    <listitem><para>If you want another date format then the default date format, you could fill in for example: <userinput>photo-%Y-%m-%d %H:%M:%S</userinput> in the prefix edit line (turn off <guilabel>Add camera provided date and time</guilabel>). For additional customization read the man page of strftime.</para></listitem>
+                    <listitem><para>If you want another date format then the default date format, you could fill in for example: <userinput>photo-%Y-%m-%d %H:%M:%S</userinput> in the prefix edit line (turn off <guilabel>Add Date &amp; Time</guilabel>). For additional customization read the man page of strftime.</para></listitem>
 
-                    <listitem><para>When you select <guilabel>Use camera provided names</guilabel>, you have the option to change the filenames to lowercase when downloading. Or use uppercase if you prefer.</para></listitem>
+                    <listitem><para>When you select <guilabel>Camera filenames</guilabel>, you have the option to change the filenames to lowercase when downloading. Or use uppercase if you prefer.</para></listitem>
 
                 </itemizedlist>
                 </para>
