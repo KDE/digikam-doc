@@ -1852,11 +1852,11 @@ Fun stuff
                 </para>
 
                 <para>
-                <guilabel>Show images/thumbs rotated according to EXIF tag</guilabel> : this will use any orientation information that your camera has included in the EXIF information to automatically rotate your photographs so that they are the correct way up when displayed. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can right-click on the thumbnail and select <guilabel>Auto-rotate/flip according to EXIF orientation</guilabel>. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
+                <guilabel>Show images/thumbnails rotated according to orientation tag</guilabel> : this will use any orientation information that your camera has included in the EXIF information to automatically rotate your photographs so that they are the correct way up when displayed. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can right-click on the thumbnail and select <guilabel>Auto-rotate/flip according to EXIF orientation</guilabel>. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
                 </para>
 
                 <para>
-                <guilabel>Set EXIF Orientation Tag to Normal after rotate/flip</guilabel> : the Auto Rotate option automatically corrects the orientation of images taken with digital cameras that have an orientation sensor. The camera adds an orientation tag to the image's EXIF meta-data. &digikam; can read this tag to adjust the image accordingly. If you manually rotate an image, this meta-data will be incorrect. This option will set the orientation tag to "Normal" after an adjustment, assuming that you rotated it to the correct orientation. Switch this off if you don't want &digikam; to make changes to the orientation tag, when you rotate or flip the image.
+                <guilabel>Set orientation tag to normal after rotate/flip</guilabel> : the Auto Rotate option automatically corrects the orientation of images taken with digital cameras that have an orientation sensor. The camera adds an orientation tag to the image's EXIF meta-data. &digikam; can read this tag to adjust the image accordingly. If you manually rotate an image, this meta-data will be incorrect. This option will set the orientation tag to "Normal" after an adjustment, assuming that you rotated it to the correct orientation. Switch this off if you don't want &digikam; to make changes to the orientation tag, when you rotate or flip the image.
                 </para>
 
                 <para>
@@ -1864,7 +1864,7 @@ Fun stuff
                 </para>
 
                 <para>
-                <guilabel>Save image captions as embedded captions (JFIF) in JPEG images</guilabel> : this will synchronize the captions that you add to your photographs with those in embedded in the image. This is useful because the captions embedded in the image can be read by other image viewers. Care should be taken if you have images that already have captions embedded in them because these captions will be overwritten by the captions made within &digikam;.
+                <guilabel>Save image captions as embedded text</guilabel> : this will synchronize the captions that you add to your photographs with those in embedded in the image. This is useful because the captions embedded in the image can be read by other image viewers. Care should be taken if you have images that already have captions embedded in them because these captions will be overwritten by the captions made within &digikam;.
                 </para>
 
             </sect3>
@@ -2103,7 +2103,7 @@ Fun stuff
             <sect3 id="setup-camera">                 <title>Camera Interface Settings</title>
 
                 <para>
-                The camera settings shows on the left the list of the currently supported cameras. On the right at the top there is an auto-detect button, which tries to identify the camera connected to your computer (make sure that the camera is connected properly to the computer and turned on in the image display mode). Below this are the port settings; the currently supported are Serial, USB, and USB/FireWire Mass Storage.
+                The camera settings shows on the left of the list of the currently supported cameras. On the right at the top there is an auto-detect button, which tries to identify the camera connected to your computer (make sure that the camera is connected properly to the computer and turned on in the image display mode). Below this are the port settings; the currently supported are Serial, USB, and USB/FireWire Mass Storage.
                 </para>
 
                 <para>
@@ -2113,7 +2113,7 @@ Fun stuff
                 <anchor id="cameraselection.anchor"/>
 
                 <para>
-                Clicking on a camera in the list on the left will display the supported ports which you can then select. If there is only one supported port it will be automatically selected. At the bottom on the right there is a box for setting the exact path in case of a serial port. Please note that USB interface does not need any paths to be set. If you cannot find your camera on the list, you can try to use a generic Mass Storage device to selecting <guilabel>Mounted Camera</guilabel> item in the list.
+                Clicking on a camera in the list on the left will display the supported ports which you can then select. If there is only one supported port it will be automatically selected. At the bottom on the right there is a box for setting the exact path in case of a serial port. Please note that USB interface does not need any paths to be set. If you cannot find your camera on the list, you can try to use a generic Mass Storage device selecting <guilabel>Mounted Camera</guilabel> item in the list.
                 </para>
 
                 <para>
@@ -2142,7 +2142,7 @@ Fun stuff
             <sect3 id="setup-miscellaneous">          <title>Miscellaneous Settings</title>
 
                 <para>
-                  With  the <guilabel>Show confirmation dialog when moving items to trash</guilabel> setting you can set the verbosity of &digikam; when you delete a photograph or an Album. See <link linkend="using-deleteimage">Deleting a Photograph</link> and <link linkend="using-deletealbum">Deleting an Album</link> sections for more details.
+                  With  the <guilabel>Confirm when moving items to trash</guilabel> setting you can set the verbosity of &digikam; when you delete a photograph or an Album. See <link linkend="using-deleteimage">Deleting a Photograph</link> and <link linkend="using-deletealbum">Deleting an Album</link> sections for more details.
                 </para>
 
                 <para>
@@ -2170,7 +2170,7 @@ Fun stuff
 
             <para>
             Color schemes are supplied like themes to personalize &digikam; main interface for you pleasure. To access these settings select
-            <menuchoice><guimenu>Setting</guimenu>
+            <menuchoice><guimenu>Settings</guimenu>
             <guimenuitem>Themes</guimenuitem></menuchoice> from the menubar and select your preferred theme to use. A preview of the available themes is listed below:
             </para>
 
@@ -2297,7 +2297,7 @@ Fun stuff
 
         <sect2 id="imageeditor-window"> <title>The Image Editor Window</title>
             <para>
-            &digikam; incorporates a fast Image Editor with a few basic yet powerful image editing tools. You can use the Image Editor to view your photographs and to make corrections and alterations. The Image Editor can be accessed either by clicking on a thumbnail in the Image Window or by right-clicking on a thumbnail and selecting <guilabel>View/Edit</guilabel> from the context menu.
+            &digikam; incorporates a fast Image Editor with a few basic yet powerful image editing tools. You can use the Image Editor to view your photographs and to make corrections and alterations. The Image Editor can be accessed either by clicking on a thumbnail in the Image Window or by right-clicking on a thumbnail and selecting <guilabel>Edit</guilabel> from the context menu.
             </para>
 
             <para>
@@ -2407,7 +2407,7 @@ Fun stuff
             </para>
 
             <para>
-            You have to press the &LMB; over the undo or redo icon in the tool bar and hold it down for a moment to produce a context menu. If you choose one of the menu items, all undo/redo actions until the chosen ones are undone/undone.
+            You have to press the &LMB; over the undo or redo icon in the tool bar and hold it down for a moment to produce a context menu. If you choose one of the menu items, all undo/redo actions until the chosen ones are undone/redone.
             </para>
 
         </sect2>
@@ -2435,7 +2435,7 @@ Fun stuff
 
             <para>
             <menuchoice><guimenu>View</guimenu>
-            <guimenuitem>Toggle Full Screen</guimenuitem></menuchoice> will display the photograph using the full screen mode. You can move back to the normal view by pressing the <keycombo><keycap>Esc</keycap></keycombo> key. By default the toolbar is still displayed even in Full Screen Mode. If you would prefer that the toolbar is not displayed you can turn it off in the Configure &digikam; dialog accessed from the main &digikam; window, see the <link linkend="setup-editor">Setup Image Editor Section</link>.
+            <guimenuitem>Full Screen Mode</guimenuitem></menuchoice> will display the photograph using the full screen mode. You can move back to the normal view by pressing the <keycombo><keycap>Esc</keycap></keycombo> key. By default the toolbar is still displayed even in Full Screen Mode. If you would prefer that the toolbar is not displayed you can turn it off in the Configure &digikam; dialog accessed from the main &digikam; window, see the <link linkend="setup-editor">Setup Image Editor Section</link>.
             </para>
 
          </sect2>
@@ -2453,7 +2453,7 @@ Fun stuff
             </para>
 
            <para>
-                From the main window view you can print single images or whole sets of them. Entire thumbnail pages can be printed with your selection. All you need to do is selecting images the standard way and call <menuchoice><guimenu>Album</guimenu><guimenuitem>Export</guimenuitem> <guimenuitem>Print Wizard</guimenuitem></menuchoice>. Then follow the instructions and choices to make.
+                From the main window view you can print single images or whole sets of them. Entire thumbnail pages can be printed with your selection. All you need to do is selecting images the standard way and call <menuchoice><guimenu>Image</guimenu> <guimenuitem>Print Assistant</guimenuitem></menuchoice>. Then follow the instructions and choices to make.
            </para>
          </sect2>
 
