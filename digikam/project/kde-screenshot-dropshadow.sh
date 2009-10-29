@@ -38,7 +38,7 @@ shadowcolor=Black
 usage()
 {
     cat <<EOF
-Usage: $(basename $0) <options> file
+Usage: $(basename ${0}) <options> file
 
 options:
   -f <width>        set the frame width in px
@@ -55,7 +55,7 @@ EOF
 
 draw_frame()
 {
-    temp=$1.FRAME
+    temp=${1}.FRAME
     convert ${1}  \
                 -bordercolor ${bordercolor}   \
                 -border ${border}x${border}   \
@@ -66,7 +66,7 @@ draw_frame()
 
 draw_shadow()
 {
-    temp=$1.SHADOW
+    temp=${1}.SHADOW
     convert ${1}  \
         \( +clone                                                       \
                 -background ${shadowcolor}                              \
@@ -80,13 +80,13 @@ draw_shadow()
 
 filter()
 {
-    if [ -w $1 ]; then
-        echo -n "'$1' ... "
-        draw_frame  $1
-        draw_shadow $1
+    if [ -w ${1} ]; then
+        echo -n "'${1}' ... "
+        draw_frame  ${1}
+        draw_shadow ${1}
         echo "done!"
     else
-        echo "'$1' is not a valid file, or you don't have write permissions."
+        echo "'${1}' is not a valid file, or you don't have write permissions."
     fi
 }
 
@@ -95,29 +95,29 @@ filter()
 # -----------------------------------------------------------------------------
 while getopts ":f:x:o:s:hb:" Option
 do
-    case $Option in
-        f)  border=$OPTARG;;
-        x)  offset=$OPTARG;;
-        o)  opacity=$OPTARG;;
-        s)  sigma=$OPTARG;;
-        b)  extension="$OPTARG";;
+    case ${Option} in
+        f)  border=${OPTARG};;
+        x)  offset=${OPTARG};;
+        o)  opacity=${OPTARG};;
+        s)  sigma=${OPTARG};;
+        b)  extension="${OPTARG}";;
         h)  usage;;
-        \?) echo "Unknown option -$OPTARG. See -h for more information."
+        \?) echo "Unknown option -${OPTARG}. See -h for more information."
             exit 1;;
-        :)  echo "Option -$OPTARG needs an additional argument. See -h for more information."
+        :)  echo "Option -${OPTARG} needs an additional argument. See -h for more information."
             exit 1;;
     esac
 done
-shift $(expr $OPTIND - 1)
+shift $(expr ${OPTIND} - 1)
 
-if [ -z $extension ]; then
-    if [ $# -ne 1 ]; then
+if [ -z ${extension} ]; then
+    if [ ${#} -ne 1 ]; then
         usage
     fi
-    filter $1
+    filter ${1}
 else
-    for f in *.$extension; do
-        filter $f
+    for f in *.${extensio}n; do
+        filter ${f}
     done
 fi
 
