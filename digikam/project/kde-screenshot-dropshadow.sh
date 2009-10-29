@@ -58,41 +58,41 @@ EOF
 draw_frame()
 {
     ret=0
-    temp=${1}.FRAME
-    convert ${1}  \
+    temp="${1}.FRAME"
+    convert "${1}"  \
                 -bordercolor ${bordercolor}   \
                 -border ${border}x${border}   \
-        ${temp}
+        "${temp}"
 
     ret=${?}
-    mv ${temp} ${1}
+    mv "${temp}" "${1}"
     return ${ret}
 }
 
 draw_shadow()
 {
     ret=0
-    temp=${1}.SHADOW
-    convert ${1}  \
+    temp="${1}.SHADOW"
+    convert "${1}"  \
         \( +clone                                                       \
                 -background ${shadowcolor}                              \
                 -shadow ${opacity}x${sigma}+${offset}+${offset}         \
         \) +swap                                                        \
         -background none -layers merge +repage                          \
-        ${temp}
+        "${temp}"
 
     ret=${?}
-    mv ${temp} ${1}
+    mv "${temp}" "${1}"
     return ${ret}
 }
 
 filter()
 {
-    if [ -w ${1} ]; then
+    if [ -w "${1}" ]; then
         echo -n "'${1}' ... "
-        draw_frame  ${1}
+        draw_frame  "${1}"
         if [ ${?} -eq 0 ]; then
-            draw_shadow ${1}
+            draw_shadow "${1}"
             if [ ${?} -eq 0 ]; then
                 echo "done!"
             else
@@ -134,10 +134,10 @@ if [ -z ${extension} ]; then
         echo ${usage_h_option}
         exit 1
     fi
-    filter ${1}
+    filter "${1}"
 else
     for f in *.${extension}; do
-        filter ${f}
+        filter "${f}"
     done
 fi
 
