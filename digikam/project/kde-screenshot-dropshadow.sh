@@ -35,6 +35,8 @@ opacity=80
 sigma=3
 shadowcolor=Black
 
+usage_h_option="See -h for more information."
+
 usage()
 {
     cat <<EOF
@@ -102,9 +104,11 @@ do
         s)  sigma=${OPTARG};;
         b)  extension="${OPTARG}";;
         h)  usage;;
-        \?) echo "Unknown option -${OPTARG}. See -h for more information."
+        \?) echo "Unknown option -${OPTARG}"
+            echo ${usage_h_option}
             exit 1;;
-        :)  echo "Option -${OPTARG} needs an additional argument. See -h for more information."
+        :)  echo "Option -${OPTARG} needs an additional argument."
+            echo ${usage_h_option}
             exit 1;;
     esac
 done
@@ -112,11 +116,13 @@ shift $(expr ${OPTIND} - 1)
 
 if [ -z ${extension} ]; then
     if [ ${#} -ne 1 ]; then
-        usage
+        echo "No filename specified. For batch mode, use the -b option."
+        echo ${usage_h_option}
+        exit 1
     fi
     filter ${1}
 else
-    for f in *.${extensio}n; do
+    for f in *.${extension}; do
         filter ${f}
     done
 fi
