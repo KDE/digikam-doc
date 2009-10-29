@@ -57,17 +57,21 @@ EOF
 
 draw_frame()
 {
+    ret=0
     temp=${1}.FRAME
     convert ${1}  \
                 -bordercolor ${bordercolor}   \
                 -border ${border}x${border}   \
         ${temp}
 
+    ret=${?}
     mv ${temp} ${1}
+    return ${ret}
 }
 
 draw_shadow()
 {
+    ret=0
     temp=${1}.SHADOW
     convert ${1}  \
         \( +clone                                                       \
@@ -77,7 +81,9 @@ draw_shadow()
         -background none -layers merge +repage                          \
         ${temp}
 
+    ret=${?}
     mv ${temp} ${1}
+    return ${ret}
 }
 
 filter()
@@ -85,8 +91,16 @@ filter()
     if [ -w ${1} ]; then
         echo -n "'${1}' ... "
         draw_frame  ${1}
-        draw_shadow ${1}
-        echo "done!"
+        if [ ${?} -eq 0 ]; then
+            draw_shadow ${1}
+            if [ ${?} -eq 0 ]; then
+                echo "done!"
+            else
+                echo "FAILED!"
+            fi
+        else
+            echo "FAILED!"
+        fi
     else
         echo "'${1}' is not a valid file, or you don't have write permissions."
     fi
