@@ -2564,20 +2564,20 @@ The website for &digikam; is at <ulink url="http://www.digikam.org">http://www.d
 
 <para>
 Also you can checkout the <emphasis>digikam</emphasis> and <emphasis>kipi</emphasis> source code modules
-from &kde; Extragear SVN repository like this:
+from &kde; Extragear Git repository like this:
 
 <screen width="40">
-    <prompt>%</prompt> <userinput>svn co -N svn://anonsvn.kde.org/home/kde/trunk/extragear/graphics</userinput>
-    <prompt>%</prompt> <userinput>cd graphics</userinput>
-    <prompt>%</prompt> <userinput>svn up digikam</userinput>
-    <prompt>%</prompt> <userinput>svn co svn://anonsvn.kde.org/home/kde/branches/KDE/3.5/kde-common/admin</userinput>
+    <prompt>%</prompt> <userinput>git clone git://anongit.kde.org/digikam</userinput>
+    <prompt>%</prompt> <userinput>git clone git://anongit.kde.org/digikam-doc</userinput>
+    <prompt>%</prompt> <userinput>git clone git://anongit.kde.org/kipi-plugins</userinput>
+    <prompt>%</prompt> <userinput>git clone git://anongit.kde.org/kipi-plugins-doc</userinput>
 </screen>
 
 </para>
 
 <para>
-The last SVN snapshoots can be downloaded at this &URL; <ulink url="ftp://ftp.kde.org/pub/kde/unstable/snapshots/">
-ftp://ftp.kde.org/pub/kde/unstable/snapshots/</ulink>.
+The last releases can be downloaded at this &URL; <ulink url="ftp://ftp.kde.org/pub/kde/unstable/digikam/">
+ftp://ftp.kde.org/pub/kde/unstable/digikam/</ulink>.
 </para>
 
 </sect1>
@@ -2585,24 +2585,8 @@ ftp://ftp.kde.org/pub/kde/unstable/snapshots/</ulink>.
 <sect1 id="requirements">                <title>Requirements</title>
 
 <para>
-In order to successfully use &digikam;, you need the following:
-<itemizedlist>
-    <listitem><para>AutoConf >= 2.5    <ulink url="http://www.gnu.org/software/autoconf">GNU autoconf</ulink></para></listitem>
-    <listitem><para>AutoMake >= 1.7.0    <ulink url="http://www.gnu.org/software/automake">GNU automake</ulink></para></listitem>
-    <listitem><para>&kde; 3.x    <ulink url="http://www.kde.org">&kde; Home Page</ulink></para></listitem>
-    <listitem><para>libqt >= 3.3.x    <ulink url="http://www.trolltech.com">Trolltech</ulink></para></listitem>
-    <listitem><para>libsqlite >= 3.x    <ulink url="http://www.sqlite.org">SQlite3</ulink></para></listitem>
-    <listitem><para>gphoto2 >= 2.x   <ulink url="http://www.gphoto.org">Gphoto Home Page</ulink></para></listitem>
-    <listitem><para>libgdbm >= 1.8.0</para></listitem>
-    <listitem><para>libkipi >= 0.1   <ulink url="http://www.kipi-plugins.org">www.kipi-plugins.org</ulink></para></listitem>
-    <listitem><para>libkexiv2 >= 0.1   <ulink url="http://www.kipi-plugins.org">www.kipi-plugins.org</ulink></para></listitem>
-    <listitem><para>libdcraw >= 0.1.5   <ulink url="http://www.kipi-plugins.org">www.kipi-plugins.org</ulink></para></listitem>
-    <listitem><para>libtiff >= 3.6.x (>=3.8.2 recommended)   <ulink url="http://www.remotesensing.org/libtiff">www.remotesensing.org</ulink></para></listitem>
-    <listitem><para>libpng >= 1.2.0   <ulink url="http://www.libpng.org/pub/png/libpng.html">www.libpng.org</ulink></para></listitem>
-    <listitem><para>liblcms >= 1.14.x   <ulink url="http://www.littlecms.com">Little CMS Home Page</ulink></para></listitem>
-    <listitem><para>libjasper >= 1.7   <ulink url="http://www.ece.uvic.ca/~mdadams/jasper">Jasper site</ulink></para></listitem>
-    <listitem><para>exiv2 >= 0.12 (>=0.14 recommended)   <ulink url="http://www.exiv2.org">Exiv2.org</ulink></para></listitem>
-</itemizedlist>
+In order to successfully use &digikam;, you need the following <ulink url="http://digikam.org/download?q=download/dependencies">
+digiKam dependencies/</ulink>.
 All library dependencies require development and binary packages installed on your
 computer to compile &digikam;.
 </para>
@@ -2616,16 +2600,12 @@ Most likely your distribution vendor might already have packaged and provided th
 <sect1 id="compilation">                 <title>Compilation and Installation</title>
 
 <para>
-In order to compile and install &digikam; on your system, type the following in the base folder of the <emphasis>libkipi</emphasis> and <emphasis>digikam</emphasis> module distributions:
+In order to compile and install &digikam; on your system, type the following in the base folder of the <emphasis>libkipi</emphasis> and <emphasis>digikam</emphasis> module distributions.  You should use a separate build folder to help cleaning up sources if something goes wrong.:
 
 <screen width="40">
-    <prompt>%</prompt> <userinput>export WANT_AUTOCONF_2_5=1</userinput>
-    <prompt>%</prompt> <userinput>export KDEDIR=KDE_installation_dir_on_your_system</userinput>
-    <prompt>%</prompt> <userinput>export 
-    PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/path/to/installation/lib/pkgconfig</userinput>    
-    <prompt>%</prompt> <userinput>make -f Makefile.cvs</userinput>
-    <prompt>%</prompt> <userinput>./configure</userinput>
-    <prompt>%</prompt> <userinput>make</userinput>
+    <prompt>%</prompt> <userinput># mkdir build </userinput>
+    <prompt>%</prompt> <userinput>cmake -DCMAKE_BUILD_TYPE=debugfull -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` .. </userinput>
+   <prompt>%</prompt> <userinput>make</userinput>
     <prompt>%</prompt> <userinput>su</userinput>
     <prompt>%</prompt> <userinput>make install</userinput>
 </screen>
@@ -2653,7 +2633,7 @@ Because &digikam; depends on <emphasis>libkipi</emphasis> and <emphasis>libkexif
 </note>
 
 <para>
-Since &digikam; uses autoconf and automake you should not have trouble compiling it. If you run into problems please report them to <email>digikam-users@kde.org</email>.
+Since &digikam; uses CMake you should not have trouble compiling it. If you run into problems please report them to <email>digikam-users@kde.org</email>.
 </para>
 
 </sect1>
