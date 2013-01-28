@@ -129,7 +129,7 @@
        An easy-to-use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">1000 digital cameras</ulink> are supported by the gphoto2 library. Of course, any media or card reader supported by your operating system will interface with &digikam;.
        </para>
 
-       <para>&digikam; incorporates a fast Image Editor with many image editing tools. You can use the Image Editor to view your photographs, comment and rate them, correct, enhance and alter them. The editing power can be easily extended by a set of plugins, the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface</ulink> (<ulink url="help:/kipi-plugins/index.html">manual</ulink>)
+       <para>&digikam; incorporates a fast Image Editor with many image editing tools. You can use the Image Editor to view your photographs, comment and rate them, correct, enhance and alter them. The editing power can be easily extended by a set of plugins, the <ulink url="https://projects.kde.org/projects/extragear/graphics/kipi-plugins">Kde Image Plugins Interface</ulink> (<ulink url="help:/kipi-plugins/index.html">manual</ulink>)
        </para>
 
        <para>While &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports RAW format conversion through libraw, DNG export and ICC color management <link linkend="rawprocessing.anchor">work flow</link>.
@@ -430,7 +430,7 @@
 
         <itemizedlist>
 
-                <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="http://www.kipi-plugins.org">Kde Image Plugins Interface project (Kipi)</ulink>  (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) is an effort to develop a common plugin structure for &digikam;, <application>KPhotoAlbum</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi-Plugins setup is described in this <link linkend="setup-kipiplugins">section</link>.</para></listitem>
+                <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="https://projects.kde.org/projects/extragear/graphics/kipi-plugins">Kde Image Plugins Interface project (Kipi)</ulink>  (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) is an effort to develop a common plugin structure for &digikam;, <application>KPhotoAlbum</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi-Plugins setup is described in this <link linkend="setup-kipiplugins">section</link>.</para></listitem>
 
         </itemizedlist>
 
@@ -1429,7 +1429,6 @@ Fun stuff
         <listitem><para>if not physically separated already, separate it now (swapping-in another backup drive)</para></listitem>
 </orderedlist>
       <para>This protocol tries to leave you enough time to spot losses and to recover fully at the same time keeping the backup volume at &lt;130% of the working space. You end up with a daily version of the last 7-14 days, a weekly snapshot for at least one month, and a snapshot of every month. Any more thinning should be done by hand after a full verification.</para>
-      <para>script to follow....TBD</para>
       <para>For German speaking *nix users: <ulink url="http://www.heinlein-support.de/web/rsync-backup/"> link</ulink></para>
      </sect4>
     </sect3>
@@ -1669,7 +1668,7 @@ Fun stuff
 		   <listitem><para>The sequence number may be needed if you have a camera with a very fast multi-shoot mode where it is possible to get two photographs with exactly the same data and time.
 	</para></listitem>
 
-                    <listitem><para>If you want another date format then the default date format, click on <guilabel>Date &amp; Time...</guilabel>, choose <guilabel>Custom</guilabel> in <guilabel>Format</guilabel> drop-down list and fill in for example "dd.MM.yyyy hh:mm:ss". For more information, read <ulink url="http://doc.trolltech.com/latest/qdatetime.html#toString">QdateTime</ulink> class reference.</para></listitem>
+                    <listitem><para>If you want another date format then the default date format, click on <guilabel>Date &amp; Time...</guilabel>, choose <guilabel>Custom</guilabel> in <guilabel>Format</guilabel> drop-down list and fill in for example "dd.MM.yyyy hh:mm:ss". For more information, read <ulink url="http://doc.qt.digia.com/qt/qdatetime.html#toString">QdateTime</ulink> class reference.</para></listitem>
 
                     <listitem><para>When you select <guilabel>Camera filenames</guilabel>, you have the option to change the filenames to lowercase when downloading. Or use uppercase if you prefer.</para></listitem>
 
@@ -1764,7 +1763,7 @@ Fun stuff
                 But if, after some time, one has forgotten where the image was taken, if one loves the nice feature to open with a simple click a browser displaying a zoom of the area, if you like to send your image as a postcard to another &digikam; user (who is then able to locate your shot), or if you simply need the documentation aspect of it - having position data stored in a photo is great.
             </para>
             <para>
-                Now, how do we get GPS data into the images?  <ulink url="http://www.exiv2.org/tags.html">exiv2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files using the <ulink url="http://www.kipi-plugins.org">Geolocation</ulink> (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink>) Kipi-plugin and per 'manual' insertion of known locations.
+                Now, how do we get GPS data into the images?  <ulink url="http://www.exiv2.org/tags.html">exiv2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files using the Geolocation Kipi-plugin (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink>) and per 'manual' insertion of known locations.
             </para>
             <itemizedlist>
 
@@ -1774,23 +1773,16 @@ Fun stuff
                     </para>
                     <para><ulink url="http://www.engadget.com.nyud.net:8090/2004/09/17/diy-black-box-tagging-photos-with-gps-coordinates/">Selfmade Howto</ulink>
                     </para>
-                    <para>Cameras with GPS interface:
-                        <ulink url="http://www.lupinelogic.com/products/coyoteye.html">CoyoteEye iPAQ</ulink>
-                        <ulink url="http://www.survey-lab.com/">Ike</ulink>
-                        <ulink url="http://www.kodak.com/global/en/service/professional/tib/tib7061.jhtml?id=0.1.14.34.3.110&amp;lc=en">Kodak DCS Pro</ulink>
-                        <ulink url="http://nikonimaging.com/global/products/digitalcamera/index.htm">Nikon DSLR</ulink>
-                        <ulink url="http://www.geospatialexperts.com/ricoh.html">Ricoh Pro G3</ulink>        <ulink url="http://digitalcameras.engadget.com/2004/04/30/gps-attachment-for-sony-digital-camcorders/">Sony</ulink>
-                    </para>
                 </listitem>
 
                 <listitem><para>Post-treatment of GPS data and image files</para>
                     <para>
-                        Using the <ulink url="http://www.kipi-plugins.org">Geolocation</ulink> Kipi-plugin (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink> if Kipi-plugins are already installed).
+                        Using the Geolocation Kipi-plugin (<ulink url="help:/kipi-plugins/geolocalization.html">Manual</ulink> if Kipi-plugins are already installed).
                     </para>
                     <para>
                         This approach is dead easy: while taking your pictures just keep a GPS device running and carry it around with the camera. Once you are done, download the pictures and the GPS tracks, and run the above plugin. It will correlate the data in the time domain; so it is important that the camera be accurate in its clock setting (the GPS device is always accurate through the satellites). The positional accuracy interpolated from the track points can be as good as 20 meters. Of course, this approach only works if your camera can record EXIF data.
                     </para>
-                    <para>The GPS track download from a device can be managed with the <ulink url="http://www.ncc.up.pt/gpsman">gpsman</ulink> or <ulink url="http://www.gpsbabel.org">gpsbabel</ulink>. It is important that the downloaded tracks are being stored in gpx format, which is the only one compatible with the Geolocation plugin.
+                    <para>The GPS track download from a device can be managed with the <ulink url="http://gpsman.sourceforge.net/">gpsman</ulink> or <ulink url="http://www.gpsbabel.org">gpsbabel</ulink>. It is important that the downloaded tracks are being stored in gpx format, which is the only one compatible with the Geolocation plugin.
                     </para>
                     <para>
                         Several programs exist for &Windows; and MacOS that are able to extract and correlate data from images and GPS data tracks. The following site provides the same functionality for &Linux;:
@@ -1803,9 +1795,6 @@ Fun stuff
                     <para>'Manual' insertion of known locations</para>
                     <para>If you happen to know the latitude/longitude or other data you can use the this script which is a GPS wrapper for Phil Harvey's <ulink url="http://www.sno.phy.queensu.ca/~phil/exiftool">ExifTool</ulink> that uses the signed floating number coordinate notation as produced by maps.google.
                     </para>
-                    <tip><para>
-                            maps.google.com does not show the street maps of Europe. But there are European sites (.fr .de .es .it .co .uk at least) that show all navigation details in all of Europe.
-                    </para></tip>
                 </listitem>
 
             </itemizedlist>
@@ -1813,7 +1802,6 @@ Fun stuff
             <para>
                 GPS devices:
 		<ulink url="http://www.letsgodigital.org/en/9323/sony_gps_photography/">GPS tracker from Sony </ulink> and
-		<ulink url="http://photofinder.atpinc.com/">ATP Fotofinder GPS tracker</ulink>
                 <ulink url="http://www.emtac.com/products/bluetooth/index.html#btgps">EMTAC bluetooth GPS </ulink>
             </para>
         </sect2>
@@ -2053,7 +2041,7 @@ Fun stuff
                 <para>For Fuji Super CCD SLR cameras only. Use the secondary sensors, in effect underexposing the image by four stops to reveal detail in the highlights. For all other camera types this option is being ignored.</para>
 
                 <para><guilabel>Highlights</guilabel></para>
-                <para>This is the story of the three highlight options, courtesy of <ulink url="http://linux.vilars.com/">Nicolas Vilars</ulink> :</para>
+                <para>This is the story of the three highlight options, courtesy of Nicolas Vilars:</para>
                 <para>Default is here to consider highlights (read: part of your images that are burned due to the inability of your camera to capture the highlights) as plain / solid white (<guilabel>solid white</guilabel> option). You can get some fancy results with the <guilabel>unclip</guilabel> option which will paint the highlights in various pinks. At last you can try to consider recovering some parts of the missing information from the highlights (<guilabel>reconstruct</guilabel> option).</para>
                 <para>
                   This is possible because the blue pixels tends to saturate less quickly than the greens and the reds. &digikam;/dcraw will try to reconstruct the missing green and red colors from the remaining none saturated blue pixels. Of course here everything is a question of tradeoff between how much color or white you want.</para>
@@ -2171,7 +2159,7 @@ Fun stuff
                 </para>
 
                 <para>
-                  For more information about Kipi plugins, you can consult the Kipi project at <ulink url="http://www.kipi-plugins.org">http://www.kipi-plugins.org</ulink> or the <ulink url="help:/kipi-plugins/index.html">Kipi-plugins manual</ulink>.
+                  For more information about Kipi plugins, you can consult the <ulink url="help:/kipi-plugins/index.html">Kipi-plugins manual</ulink>.
                 </para>
 
             </sect3>
@@ -2254,117 +2242,8 @@ Fun stuff
             <para>
             Color schemes are supplied like themes to personalize &digikam; main interface for you pleasure. To access these settings select
             <menuchoice><guimenu>Settings</guimenu>
-            <guimenuitem>Themes</guimenuitem></menuchoice> from the menubar and select your preferred theme to use. A preview of the available themes is listed below:
+            <guimenuitem>Themes</guimenuitem></menuchoice> from the menubar and select your preferred theme to use.
             </para>
-
-            <informaltable><tgroup cols="2">
-
-            <thead><row>
-                <entry>Preview</entry>
-                <entry>Theme Name</entry>
-            </row></thead>
-
-            <tbody>
-                <row>
-                    <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemeclean.png" format="PNG" /> </imageobject></inlinemediaobject>
-                    </entry>
-
-                    <entry>
-                    Clean
-                    </entry>
-                </row>
-
-                <row>
-                    <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemedark.png" format="PNG" /> </imageobject></inlinemediaobject>
-                    </entry>
-
-                    <entry>
-                    Dark
-                    </entry>
-                </row>
-
-                <row>
-                    <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemedefault.png" format="PNG" /> </imageobject></inlinemediaobject>
-                    </entry>
-
-                    <entry>
-                    Default
-                    </entry>
-                </row>
-
-                <row>
-                    <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemedessert.png" format="PNG" /> </imageobject></inlinemediaobject>
-                    </entry>
-
-                    <entry>
-                    Dessert
-                    </entry>
-                </row>
-
-
-                <row>
-                    <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemedigicasa.png" format="PNG" /> </imageobject></inlinemediaobject>
-                    </entry>
-
-                    <entry>
-                    Digicasa
-                    </entry>
-                </row>
-
-
-                <row>
-                    <entry>
-                     <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemedreary.png" format="PNG" /> </imageobject></inlinemediaobject>
-                    </entry>
-
-                    <entry>
-                    Dreary
-                    </entry>
-                </row>
-
-                <row>
-                    <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthememarine.png" format="PNG" /> </imageobject></inlinemediaobject>
-                    </entry>
-
-                    <entry>
-                    Marine
-                    </entry>
-                </row>
-
-                <row>
-                    <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemeorangecrush.png" format="PNG" /> </imageobject></inlinemediaobject>
-                    </entry>
-
-                    <entry>
-                    OrangeCrush
-                    </entry>
-                </row>
-
-                <row>
-                    <entry>
-                    <inlinemediaobject><imageobject><imagedata fileref="&path;setupthemesandy.png" format="PNG" /> </imageobject></inlinemediaobject>
-                    </entry>
-
-                    <entry>
-                    Sandy
-                    </entry>
-                </row>
-
-            </tbody>
-
-            </tgroup></informaltable>
-
-            <note><para>
-              Theme settings are implemented in simple text file. If you are interested to create a new theme for &digikam;, you can find more information about it in this <ulink url="http://www.digikam.org/themeguide.html">tutorial</ulink>.
-            </para></note>
-
         </sect2>
 
     </sect1>
@@ -2531,10 +2410,6 @@ Fun stuff
             <guimenuitem>Print image</guimenuitem></menuchoice> (&Ctrl;+P) and you get the standard &kde; Print dialog, where you can adjust the settings before printing your photograph.
             </para>
 
-            <para>
-            For more information about advanced printing settings, please consult <ulink url="help:/kdeprint/index.html">&kde; Print manual</ulink>.
-            </para>
-
            <para>
                 From the main window view you can print single images or whole sets of them. Entire thumbnail pages can be printed with your selection. All you need to do is selecting images the standard way and call <menuchoice><guimenu>Image</guimenu> <guimenuitem>Print Assistant</guimenuitem></menuchoice>. Then follow the instructions and choices to make.
            </para>
@@ -2559,7 +2434,7 @@ Fun stuff
 <sect1 id="getting-kapp">                <title>How to Obtain &digikam;</title>
 
 <para>
-The website for &digikam; is at <ulink url="http://www.digikam.org">http://www.digikam.org</ulink>. Please check it regularly to get the latest news about &digikam;. &digikam; can be obtained in binary and source format from <ulink url="http://sourceforge.net/project/showfiles.php?group_id=42641">http://sourceforge.net/project/showfiles.php?group_id=42641</ulink>.
+The website for &digikam; is at <ulink url="http://www.digikam.org">http://www.digikam.org</ulink>. Please check it regularly to get the latest news about &digikam;. &digikam; can be obtained in binary and source format from the digiKam web site.
 </para>
 
 <para>

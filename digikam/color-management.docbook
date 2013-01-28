@@ -38,7 +38,7 @@
           <screeninfo></screeninfo>
           <mediaobject>
            <imageobject>
-            <imagedata fileref="542px-CIExy1931_sRGB_svg.png" format="PNG"/>
+            <imagedata fileref="&path;542px-CIExy1931_sRGB_svg.png" format="PNG"/>
            </imageobject>
            <textobject>
             <phrase></phrase>
@@ -85,7 +85,6 @@
           <itemizedlist>
           <listitem><para><ulink url="http://www.creativepro.com/article/the-darkroom-makes-a-comeback" /></para></listitem>
           <listitem><para><ulink url="http://www.creativepro.com/article/the-darkroom-makes-a-comeback-part-2-" /></para></listitem>
-          <listitem><para><ulink url="http://www.kevinmillsphoto.com/Articles/OfficeLightingArticle.html" /></para></listitem>
           <listitem><para><ulink url="http://www.lrc.rpi.edu/programs/nlpip/lightingAnswers/fullSpectrum/abstract.asp" /></para></listitem>
           </itemizedlist>
          </sect3>
@@ -209,7 +208,7 @@
               <listitem><para>If you are working in 8-bits rather than 16-bits, choose a smaller rather than a larger working space to avoid clipping and banding. </para></listitem>
               <listitem><para>For archival purposes, convert your raw file to a 16-bit tiff with a large gamut working space to avoid loosing color information. Then convert this archival tiff to your medium-gamut or large-gamut working space of choice (saving the converted working tiff under a new name, of course). </para></listitem>
           </orderedlist></para>
-          <para>For more information on choosing a working space, see <ulink url="http://www.brucelindbloom.com/Info">this page</ulink>, Information about RGB Working Spaces for a visual comparison of the gamut (array of included colors) of the various working color spaces. See <ulink url="http://www.luminous-landscape.com/tutorials/prophoto-rgb.shtml">here</ulink> and <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm">here</ulink> for a pro- and con- presentation, respectively, of the merits of using large gamut working spaces. And while you are on the cambrideincolour.com website, check out the tutorial on color management. </para>
+          <para>For more information on choosing a working space, see <ulink url="http://www.brucelindbloom.com/">this page</ulink>, Information about RGB Working Spaces for a visual comparison of the gamut (array of included colors) of the various working color spaces. See <ulink url="http://www.luminous-landscape.com/tutorials/prophoto-rgb.shtml">here</ulink> and <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm">here</ulink> for a pro- and con- presentation, respectively, of the merits of using large gamut working spaces. And while you are on the cambrideincolour.com website, check out the tutorial on color management. </para>
        </sect3>
      </sect2>
 
@@ -329,7 +328,7 @@
 
         <para>One practical consequence of the gamma of a working space is that the higher the gamma, the more tones are available for editing in the shadows, with consequently fewer tones available in the highlights. So theoretically, if you are working on a very dark-toned (low key) image you might want a working space with a higher gamma.  And if you are working on a high key image, say a picture taken in full noon sunlight of a wedding dress with snow as a backdrop, you might want to choose a working space with a lower gamma, so you have more available tonal gradations in the highlights. But in the real world of real image editing, almost everyone uses working spaces with either gamma 1.8 or 2.2.  </para>
         <para>Some people are trying to standardize on gamma 2.0.  sRGB and LStar-RGB are not gamma-based working spaces. Rather, sRGB uses a <ulink url="http://en.wikipedia.org/wiki/SRGB">hybrid gamma</ulink>, and LStar-RGB uses a luminosity-based tonal response curve instead of a gamma value - see <ulink url="http://www.colormanagement.org/en/workingspaces.html">here</ulink> for more information, and then google around for more in-depth information.  </para>
-        <para>In addition to gamma 1.8 and gamma 2.2 the only other gamma for a working space that gets much mention or use is gamma 1.0, also called linear gamma. <emphasis>Linear gamma</emphasis> is used in HDR (high dynamic range) imaging and also if one wants to avoid introducing gamma-induced errors into one's regular low dynamic range editing. Gamma-induced errors is a topic outside the scope of this tutorial, but see <ulink url="http://www.4p8.com/eric.brasseur/gamma.html">Gamma errors</ulink> in <ulink url="http://www.21stcenturyshoebox.com/essays/color_reproduction.html">picture scaling,</ulink> for gamma-induced color shifts; and of course Timo Autiokari's somewhat infamous <ulink url="http://www.aim-dtp.net/">website</ulink>. </para>
+        <para>In addition to gamma 1.8 and gamma 2.2 the only other gamma for a working space that gets much mention or use is gamma 1.0, also called linear gamma. <emphasis>Linear gamma</emphasis> is used in HDR (high dynamic range) imaging and also if one wants to avoid introducing gamma-induced errors into one's regular low dynamic range editing. Gamma-induced errors is a topic outside the scope of this tutorial, but see <ulink url="http://www.4p8.com/eric.brasseur/gamma.html">Gamma errors</ulink> in <ulink url="http://www.21stcenturyshoebox.com/essays/color_reproduction.html">picture scaling,</ulink> for gamma-induced color shifts. </para>
         <para>Unfortunately and despite their undeniable mathematical advantages, linear gamma working spaces have so few tones in the shadows that (in my opinion) they are impossible to use for editing if one is working in 8-bits, and still problematic at 16-bits.  When the day comes when we are all doing our editing on 32-bit files produced by our HDR cameras on our personal supercomputers, I predict that we will all be using working spaces with gamma 1; Adobe Lightroom is already using a linear gamma working space "under the hood" and Lightzone has always used a linear gamma working space. </para>
 
         <para>Which working space: <emphasis>large gamut</emphasis> or <emphasis>small gamut</emphasis></para>
@@ -340,7 +339,7 @@
           <listitem><para>For images intended for the web, use (one of the) sRGB (variants - there are several).  </para></listitem>
           <listitem><para>For the most accuracy in your image editing (that is, making the most of your "bits" with the least risk of banding or clipping when you convert your image from your working space to an output space), use the smallest working space that includes all the colors in the scene that you photographed, plus a little extra room for those new colors you intentionally produce as you edit.  </para></listitem>
           <listitem><para>If you are working in 8-bits rather than 16-bits, choose a smaller space rather than a larger space.</para></listitem>
-          <listitem><para>For archival purposes, convert your raw file to a 16-bit tiff with a large gamut working space to avoid loosing color information. Then convert this archival tiff to your working space of choice (saving the converted working tiff under a new name, of course). See <ulink url="http://www.21stcenturyshoebox.com/essays/scenereferredworkflow.html">here</ulink> for more details.</para></listitem>
+          <listitem><para>For archival purposes, convert your raw file to a 16-bit tiff with a large gamut working space to avoid loosing color information. Then convert this archival tiff to your working space of choice (saving the converted working tiff under a new name, of course). See <ulink url="http://simon.tindemans.eu/essays/scenereferredworkflow">here</ulink> for more details.</para></listitem>
         </orderedlist>
 
         <para>The WHYs of these bits of advice regarding which working space are beyond the scope of this tutorial.  See Bruce Lindbloom's excellent website (<ulink url="http://www.brucelindbloom.com/">Info, Information about RGB Working Spaces</ulink>) for a visual comparison of the gamut (array of included colors) of the various working color spaces.  See <ulink url="http://www.luminous-landscape.com/tutorials/prophoto-rgb.shtml">here</ulink> and <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm">here</ulink> for a pro and con presentation, respectively, of the merits of using large gamut working spaces. And while you are on the <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm">cambrideincolour.com</ulink> website, check out the tutorial on color management. </para>
