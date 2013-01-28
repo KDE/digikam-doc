@@ -2586,7 +2586,7 @@ ftp://ftp.kde.org/pub/kde/unstable/digikam/</ulink>.
 
 <para>
 In order to successfully use &digikam;, you need the following <ulink url="http://digikam.org/download?q=download/dependencies">
-digiKam dependencies/</ulink>.
+digiKam dependencies</ulink>.
 All library dependencies require development and binary packages installed on your
 computer to compile &digikam;.
 </para>
@@ -2600,7 +2600,7 @@ Most likely your distribution vendor might already have packaged and provided th
 <sect1 id="compilation">                 <title>Compilation and Installation</title>
 
 <para>
-In order to compile and install &digikam; on your system, type the following in the base folder of the <emphasis>libkipi</emphasis> and <emphasis>digikam</emphasis> module distributions.  You should use a separate build folder to help cleaning up sources if something goes wrong.:
+In order to compile and install &digikam; on your system, type the following in the base folder of the <emphasis>libkipi</emphasis> and <emphasis>digikam</emphasis> module distributions.  You should use a separate build folder to help cleaning up sources if something goes wrong.
 
 <screen width="40">
     <prompt>%</prompt> <userinput>mkdir build </userinput>
@@ -2619,11 +2619,11 @@ Stage 3 is required if you are installing libkipi/libkexiv2 in a non-standard lo
 </para>
 
 <para>
-More specific compilation and installation options can be passed to the <emphasis>configure</emphasis> script. Use <userinput>./configure --help</userinput> on the command line to view these options.
+More specific compilation and installation options can be passed to the <emphasis>cmake</emphasis>. Use <userinput>cmake --help</userinput> on the command line to view these options.
 </para>
 
 <para>
-Use <emphasis>--enable-debug=full</emphasis> option with <emphasis>configure</emphasis> script for to provide a full information bug report.
+Use <emphasis>-DCMAKE_BUILD_TYPE=debugfull</emphasis> option with <emphasis>cmake</emphasis> for to provide a full information bug report.
 </para>
 
 <para>
