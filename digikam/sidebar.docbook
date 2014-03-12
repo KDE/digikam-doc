@@ -233,7 +233,7 @@
                 <itemizedlist>
             
                     <listitem><para>
-                        <guilabel>Intensity</guilabel>: shows the distribution of brightness values.
+                        <guilabel>Luminosity</guilabel>: shows the distribution of brightness values.
                     </para></listitem>
 
                     <listitem><para>
@@ -252,10 +252,6 @@
             
                 </para>
             
-                <para> 
-                With the <guilabel>Rendering</guilabel> option, you can determine whether the histogram will be displayed using the <guilabel>Full Image</guilabel> data or only with the current <guilabel>Image Selection</guilabel>. This option can only be enabled if you have previously selected an image region with Image Editor.
-                </para>
-
                 <para> 
                 With <guilabel>Scale</guilabel> option, you can determine whether the histogram will be displayed using a linear or logarithmic Y axis. For images taken with a digital camera, the <guilabel>Linear</guilabel> mode is usually the most useful. However, for images that contain substantial areas of constant color a <guilabel>Linear</guilabel> histogram will often be dominated by a single bar. In this case a <guilabel>Logarithmic</guilabel> histogram will be more useful.
                 </para>
@@ -279,9 +275,17 @@
             
                 <para> 
                The statistics shown at the bottom of the Histogram Viewer describe the distribution of channel values, restricted to the selected range. These are:
-            
+
                 <itemizedlist>
             
+                    <listitem><para>
+                         The number of pixels in the image.
+                    </para></listitem>
+
+                    <listitem><para>
+                         The number whose values fall within the selected range.
+                    </para></listitem>
+
                     <listitem><para>
                          The mean.
                     </para></listitem>
@@ -295,20 +299,24 @@
                     </para></listitem>
 
                     <listitem><para>
-                         The number of pixels in the image.
-                    </para></listitem>
-
-                    <listitem><para>
-                         The number whose values fall within the selected range.
-                    </para></listitem>
-
-                    <listitem><para>
                          The percentage whose values fall within the selected range.
                     </para></listitem>      
                                                       
+                    <listitem><para>
+                         The color depth of the image.
+                    </para></listitem>
+
+                    <listitem><para>
+                         Alpha channel in the image.
+                    </para></listitem>
+
+                    <listitem><para>
+                         The source of the histogramm, either <guilabel>Full Image</guilabel> or <guilabel>Image Region</guilabel>
+                         if you have selected an area of the image in the Editor.
+                    </para></listitem>
+
                 </itemizedlist>
 
-                In <guilabel>Colors</guilabel> channel mode, the statistics is updated with the foreground color selected with <guilabel>Color</guilabel> option.
                 </para>
         
             </sect3>
