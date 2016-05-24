@@ -1,13 +1,13 @@
 #
-# Copyright (c) 2010-2014, Gilles Caulier, <caulier dot gilles at gmail dot com>
+# Copyright (c) 2010-2016, Gilles Caulier, <caulier dot gilles at gmail dot com>
 #
 # Redistribution and use is allowed according to the terms of the BSD license.
 # For details see the accompanying COPYING-CMAKE-SCRIPTS file.
 
 project(digikam-doc)
 
-set(CMAKE_MIN_VERSION   "2.8.12")
-set(ECM_MIN_VERSION     "1.1.0")
+set(CMAKE_MIN_VERSION   "3.0.0")
+set(ECM_MIN_VERSION     "1.5.0")
 set(KF5_VERSION         "5.1.0")
 
 cmake_minimum_required(VERSION ${CMAKE_MIN_VERSION})
