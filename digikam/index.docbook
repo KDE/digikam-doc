@@ -32,41 +32,6 @@
 
 <title>The &digikam; Handbook</title>
 
-<authorgroup>
-
-    <author>
-        <firstname>Gerhard</firstname><surname>Kulzer</surname>
-        <affiliation><address><email>gerhard_at_kulzer_dot_net</email></address></affiliation>
-    </author>
-
-    <author>
-        <firstname>Gilles</firstname><surname>Caulier</surname>
-        <affiliation><address><email>caulier_dot_gilles_at_gmail_dot_com</email></address></affiliation>
-    </author>
-
-    <author>
-        <firstname>Elle</firstname><surname>Stone</surname>
-        <affiliation><address><email>jrle1_at_twcny_dot_rr_dot_com</email></address></affiliation>
-    </author>
-
-    <author>
-        <firstname>Oliver</firstname><surname>Doerr</surname>
-        <affiliation><address><email>oliver_at_doerr-privat.de</email></address></affiliation>
-    </author>
-
-    <author>
-        <firstname>Ralf</firstname><surname>Hoelzer</surname>
-        <affiliation><address><email>kde_at_ralfhoelzer.com</email></address></affiliation>
-    </author>
-
-    <author>
-        <firstname>Joern</firstname><surname>Ahrens</surname>
-        <affiliation><address><email>joern.ahrens_at_kdemail_dot_net</email></address></affiliation>
-    </author>
-
-<!-- TRANS:ROLES_OF_TRANSLATORS -->
-</authorgroup>
-
 <copyright>
     <year>2001</year>
     <year>2016</year>
@@ -734,7 +699,7 @@
             <title>Viewing or Editing a Photograph With Another Application</title>
 
                 <para>
-                Sometimes &digikam; may not provide all of the capabilities you need. You can open a photograph in another application by right-clicking on it and selecting from the <guilabel>Open With</guilabel> sub-menu. The list of applications that appear in this menu is controlled by the standard desktop file associations for the image format type of this photograph. Consult the &kde; manual for instructions on changing these file associations if the application that you need is not listed.
+                Sometimes &digikam; may not provide all of the capabilities you need. You can open a photograph in another application by right-clicking on it and selecting from the <guilabel>Open With</guilabel> sub-menu. The list of applications that appear in this menu is controlled by the standard desktop file associations for the image format type of this photograph. Consult the desktop manual for instructions on changing these file associations if the application that you need is not listed.
                 </para>
 
                 <para>
@@ -785,7 +750,7 @@
             <title>Deleting a Photograph</title>
 
                 <para>
-                When you delete a photograph from &digikam; it will be moved to the &kde; Trash Can.
+                When you delete a photograph from &digikam; it will be moved to the internal Trash Can.
                    <menuchoice>
                      <shortcut><keycombo action="simul"><keycap>F8</keycap></keycombo> </shortcut>
                     <guimenu>Image</guimenu><guimenuitem>Delete</guimenuitem>
@@ -1103,7 +1068,7 @@
       <para>But as much as there is no such thing as a free lunch, there is no free cataloging or DAM - those who spend the initial time of building a systematic method of their own will be better off as time passes and the number of photographs multiplies. The ROI (return on investment) of DAM has been estimated in different studies to be better than 10. Keep in mind to be <command>concise, plan for the future (30-50y), do it once</command>. The upcoming semantic web will totally integrate into and add value to a DAM environment.</para>
 
       <sect3 id="case-for-digikam">  <title>A case for doing DAM with &digikam;</title>
-      <para>&digikam; provides a number of methods to classify photographs: filenames, albums, collections, date + time, tags, rating, GPS position and captions. As if this was not enough, in the KDE4 version of &digikam; you can search many standard metadata items like camera model, lens, coordinates, image size and many more. Metadata categories as listed here are in fact different 'views' of your photo library. Combining these views is<emphasis> the </emphasis>very powerful method to narrow down the search for a file and to find it quickly. Imagine having 800 photos of your loved one. Searching for 'Mary', having more than '***' rating, shot in 'France' will surely leave you with very few candidates. In terms of selection criteria for a DAM system, &digikam; fares very well in terms of completeness, versatility, speed, scalability, accuracy and openness.</para>
+      <para>&digikam; provides a number of methods to classify photographs: filenames, albums, collections, date + time, tags, rating, GPS position and captions. As if this was not enough, you can search many standard metadata items like camera model, lens, coordinates, image size and many more. Metadata categories as listed here are in fact different 'views' of your photo library. Combining these views is<emphasis> the </emphasis>very powerful method to narrow down the search for a file and to find it quickly. Imagine having 800 photos of your loved one. Searching for 'Mary', having more than '***' rating, shot in 'France' will surely leave you with very few candidates. In terms of selection criteria for a DAM system, &digikam; fares very well in terms of completeness, versatility, speed, scalability, accuracy and openness.</para>
       <para>The key thing to remember is that you don't know how you or somebody else will try to find an image 2 years ahead of our time. You will remember past events in a different context, it's a fact of life. So if can narrow down your search by remembering place or time or camera or theme or rating or owner you stand an infinitely better chance to find it quickly than by just one of those criteria or none. At the beginning, at the time of taking a photograph, all metadata is in your head (except for the EXIF data). If you do not transcribe some of it into your DAM system, it will be lost eventually as much as every event fades into oblivion over time.</para>
       <para>One distinction has to be interjected here between <command>private</command> and <command>public metadata</command>. One could say that all file-embedded attributes are potentially public since the images may be exported, sold, and copied to other places and people. On the other hand all non-embedded metadata in the database can be considered private as they stay in the database and go nowhere else. By adjusting &digikam;'s settings accordingly you can control what kind of data remains private and what will be embedded and eventually become public.</para>
     </sect3>
@@ -1193,12 +1158,12 @@ Fun stuff
         <listitem><para>contemplate, research, watch, and talk - but mostly listen.</para></listitem>
         <listitem><para> it's okay if the image is less than perfect because it has the strength to stand on its own merit described in the caption.</para></listitem>
 </itemizedlist>
-      <para>With &digikam; you can enter unlimited amounts of text using internationalized alphabet (UTF-8) as caption. You can enter it for a selection of photos at the same time. KDE even provides a spell checker. When you export images to web galleries, the captions will be exported at choice into either/or/and caption/title of the web gallery system, no need to re-write the story for publishing.</para>
+      <para>With &digikam; you can enter unlimited amounts of text using internationalized alphabet (UTF-8) as caption. You can enter it for a selection of photos at the same time. When you export images to web services, the captions will be exported at choice into either/or/and caption/title of the web gallery system, no need to re-write the story for publishing.</para>
     </sect3>
 
       <sect3 id="geotagging">  <title>Geolocation (geo-tagging)</title>
       <para>Do you still remember the times before GPS? When you would find your way to another city without navigation system? Wasn't the earth a dull blue ball before GoogleEarth? Well then, with images, the train of spatial representation is running at cruising speed alright. </para>
-      <para>A few cameras have a GPS receiver built-in, the images come tagged with 3-dimensional coordinates. And with almost any GPS device you're able to extract a trace (of course the receiver needs to be switched-on and carried with you whilst taking the photographs, and for good matching the camera time must be accurately set) and save it onto a computer. You have to store it in gpx format, that's easily done with gpsbabel, gpsman and other tools. You then can automatically match a whole bunch of photos with that track using &digikam;. The coordinates are written into the JFIF part of JPG files (settings choice) and into the database. The KDE4 version will enable searches based on locations and coordinates, you can create virtual albums of geographical areas! In the right sidebar under the metadata tab you'll find your image located on a local zoom of the world map. A further click brings on anyone of several mapping services on the web, zooming in on details. Even if you don't have a GPS trace you can geo-tag multiple images with a geo-editor. Just navigate on the map to the spot of shooting and click to fix it as a geo-tag. </para>
+      <para>A few cameras have a GPS receiver built-in, the images come tagged with 3-dimensional coordinates. And with almost any GPS device you're able to extract a trace (of course the receiver needs to be switched-on and carried with you whilst taking the photographs, and for good matching the camera time must be accurately set) and save it onto a computer. You have to store it in gpx format, that's easily done with gpsbabel, gpsman and other tools. You then can automatically match a whole bunch of photos with that track using &digikam;. The coordinates are written into the JFIF part of JPG files (settings choice) and into the database. &digikam; will enable searches based on locations and coordinates, you can create virtual albums of geographical areas! In the right sidebar under the metadata tab you'll find your image located on a local zoom of the world map. A further click brings on anyone of several mapping services on the web, zooming in on details. Even if you don't have a GPS trace you can geo-tag multiple images with a geo-editor. Just navigate on the map to the spot of shooting and click to fix it as a geo-tag. </para>
       <para>e.g. conversion of a Garmin track with file name 'xyz':</para>
 <blockquote><screen>&dollar; gpsbabel -w -i mapsource -f xyz.mps -o gpx -F xyz.gpx</screen></blockquote>
       <para>The possibilities of exploiting this geolocation are already innumerable and will become pervasive in the future. I'm sure one day not too far away we can revisit in a virtual reality our travels through geo-tagged pictures. The &digikam; features include exporting to kml files that can be opened by GoogleEarth (which in turn will show the photos on their shooting site), exporting to gallery2, picasaweb, flickr &etc; with GoogleMaps viewer and more.</para>
@@ -1580,7 +1545,7 @@ Fun stuff
             </para>
 
             <para>
-            If you do not want to download all of the photographs you can select just those that you need using the standard &kde; selection methods. Once you have the photographs selected, click <guilabel>Download</guilabel> and then <guilabel>Download Selected</guilabel>. The <guilabel>Download Selected</guilabel> button will be grayed out until you have selected some photographs.
+            If you do not want to download all of the photographs you can select just those that you need using the standard selection methods. Once you have the photographs selected, click <guilabel>Download</guilabel> and then <guilabel>Download Selected</guilabel>. The <guilabel>Download Selected</guilabel> button will be grayed out until you have selected some photographs.
             </para>
 
             <note><para>
@@ -1630,7 +1595,7 @@ Fun stuff
             </para>
 
             <caution><para>
-            Please note that there is no way to restore a photo that you have deleted from the camera. The photographs are not moved to the &kde; Trash Can, they are removed completely. It is best to double check that you have successfully downloaded a photograph into a &digikam; Album before you delete it from the camera. Anyway, if you plan to empty the camera card, you better do that from the camera menu because it is much quicker.
+            Please note that there is no way to restore a photo that you have deleted from the camera. The photographs are not moved to the internal Trash Can, they are removed completely. It is best to double check that you have successfully downloaded a photograph into a &digikam; Album before you delete it from the camera. Anyway, if you plan to empty the camera card, you better do that from the camera menu because it is much quicker.
             </para></caution>
 
         </sect2>
@@ -1728,7 +1693,7 @@ Fun stuff
         <title>Uploading Photographs to your camera</title>
 
             <para>
-            The simplest way to upload photographs from your computer to your camera is to click the <guilabel>Download</guilabel> button and then click <guilabel>Upload</guilabel>. A standard &kde; file selection dialog will appear to select the files from your computer to copying on your camera. You can select more than one file using the standard &kde; selection methods.
+            The simplest way to upload photographs from your computer to your camera is to click the <guilabel>Download</guilabel> button and then click <guilabel>Upload</guilabel>. A standard file selection dialog will appear to select the files from your computer to copying on your camera. You can select more than one file using the standard selection methods.
             </para>
 
             <para>
@@ -2138,7 +2103,7 @@ Fun stuff
             <sect3 id="setup-kipiplugins">            <title>Kipi Plugins Settings</title>
 
                 <para>
-                  Kipi is the &kde; Image Plugin Interface. It is an interface that is supported by a number of &kde; image viewer/editor applications. By providing this interface, &digikam; can take advantage of many plugins that are written to work with any application that implements the Kipi interface.
+                  Kipi is an Image Plugin Interface. It is an interface that is supported by a number of image viewer/editor applications. By providing this interface, &digikam; can take advantage of many plugins that are written to work with any application that implements the Kipi interface.
                 </para>
 
                <para>
@@ -2404,7 +2369,7 @@ Fun stuff
             <para>
             When you want to print the current image from the Image Editor, select
             <menuchoice><guimenu>File</guimenu>
-            <guimenuitem>Print image</guimenuitem></menuchoice> (&Ctrl;+P) and you get the standard &kde; Print dialog, where you can adjust the settings before printing your photograph.
+            <guimenuitem>Print image</guimenuitem></menuchoice> (&Ctrl;+P) and you get the standard Print dialog, where you can adjust the settings before printing your photograph.
             </para>
 
            <para>
@@ -2448,8 +2413,8 @@ from &kde; Extragear Git repository like this:
 </para>
 
 <para>
-The last releases can be downloaded at this &URL; <ulink url="ftp://ftp.kde.org/pub/kde/unstable/digikam/">
-ftp://ftp.kde.org/pub/kde/unstable/digikam/</ulink>.
+The last releases can be downloaded at this &URL; <ulink url="ftp://ftp.kde.org/pub/kde/stable/digikam/">
+ftp://ftp.kde.org/pub/kde/stable/digikam/</ulink>.
 </para>
 
 </sect1>
