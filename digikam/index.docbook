@@ -137,25 +137,25 @@
 
        </sect2>
 
-       <sect2 id="news">      <title>New Features of the KDE4 version</title>
+       <sect2 id="news">      <title>New Features of the KDE5 version</title>
 	 <itemizedlist>
-		 <listitem><para>Runs on any platform that supports Qt4 and KDE4 (including Win32 and OS X)</para></listitem>
-		 <listitem><para>Supports XMP metadata</para></listitem>
-		 <listitem><para>Reads, writes and converts into DNG format</para></listitem>
-		 <listitem><para>New RAW processing tool, gamma-correction in 16 bits</para></listitem>
-		 <listitem><para>Preview of video and audio files</para></listitem>
-		 <listitem><para>Database file is independent of photo libraries, enabling remote paths, multiple roots and offline archives</para></listitem>
-		 <listitem><para>Improved database with many more metadata that can be searched, &eg; camera or lens</para></listitem>
-		 <listitem><para>Marble integration, geographical filtering with the mouse on the map</para></listitem>
-		 <listitem><para>New search finds duplicates and similar images</para></listitem>
-		 <listitem><para>Help menu lists all RAW formats and &digikam; component versions</para></listitem>
-		 <listitem><para>DNG, RWL, NEF and PEF RAW file can be metadata edited</para></listitem>
-		 <listitem><para>Usability improvements for netbooks</para></listitem>
-		 <listitem><para>Non-modal image editor</para></listitem>
-		 <listitem><para>Thumbnail bar in preview mode</para></listitem>
-		 <listitem><para>Live search boxes in both sidebars and main window</para></listitem>
-		 <listitem><para>New camera interface, capture tool, scanner interface</para></listitem>
-		 <listitem><para>New plugin based on lensfun for automatic lens error corrections</para></listitem>
+		 <listitem><para>Runs on any platform that supports Qt5 and KDE5 (including Win32 and OS X)</para></listitem>
+		 <listitem><para>Multi-threaded interface to query the database</para></listitem>
+		 <listitem><para>Embedded trash support for each collection instead of desktop trash</para></listitem>
+		 <listitem><para>Thumbs and preview video support is now delegated to QT5Multimedia framework</para></listitem>
+		 <listitem><para>Mysql internal server is now configurable as Sqlite to store database files at a customized place</para></listitem>
+		 <listitem><para>Mysql internal/remote server is now configurable with first run assistant</para></listitem>
+		 <listitem><para>New batch queue manager tool to convert RAW files to DNG</para></listitem>
+		 <listitem><para>New batch queue manager tool to adjust time and date metadata</para></listitem>
+		 <listitem><para>New option in editor and light table to import images from a digital scanner</para></listitem>
+		 <listitem><para>New option in editor and light table to edit metadata</para></listitem>
+		 <listitem><para>New option in editor and light table to edit geolocation</para></listitem>
+		 <listitem><para>New option in editor and light table to run presentation tool</para></listitem>
+		 <listitem><para>New editor tool to perform color chage based on Lut3D</para></listitem>
+		 <listitem><para>New tool in camera import interface to convert RAW files to DNG</para></listitem>
+		 <listitem><para>Consolidation of Mysql database backend</para></listitem>
+		 <listitem><para>Improved startup time with different scan for new items stage</para></listitem>
+		 <listitem><para>... and much more</para></listitem>
 	 </itemizedlist>
        </sect2>
 
@@ -175,7 +175,7 @@
        <title>Support</title>
 
        <para>
-       &digikam; is a community supported project, which means that users and developers support one another. If you become a regular user of &digikam; you are encouraged to join the &digikam; Users Mailing List. You can start off by asking questions of other &digikam; users and hopefully soon you will be answering the support questions of others.
+       &digikam; is a community supported project, which means that users and developers support one another. If you become a regular user of &digikam; you are encouraged to join the &digikam; Users Mailing List. You can start off by asking questions to other &digikam; users and hopefully soon you will be answering the support questions of others.
        </para>
 
        <para>
@@ -218,11 +218,7 @@
            </para>
 
         <para>
-          When you start &digikam; for the very first time it will ask you where you store your photographs and the &digikam; database. You can choose any local, remote or removable folder. Just type in the path name of a folder or click on the <guilabel>folder</guilabel> icon 
-           <inlinemediaobject>
-            <imageobject><imagedata fileref="&path;introductionfoldericon.png" format="PNG"/></imageobject>
-            <textobject> <phrase>Folder Icon</phrase> </textobject>
-           </inlinemediaobject> to select a folder from the dialog.
+          When you start &digikam; for the very first time it will ask you where you store your photographs. You can choose any local, remote or removable folder. Just type in the path name of a folder or click on the <guilabel>Browse...</guilabel> icon to select a folder from the dialog.
            </para>
            
            <para>
@@ -235,30 +231,33 @@
               <textobject> <phrase>Choosing database path for digikam</phrase> </textobject>
            </inlinemediaobject>
         </para>
-        
+         
+ 	<para>Then you have to specify a local folder that resides on your computer, in which the database will be stored. This path will be the same for all image folders.
+	</para>
+       
+	<para>
+            <inlinemediaobject>
+                <imageobject><imagedata fileref="&path;firstrunassistant_step3.png" format="PNG" /></imageobject>
+           </inlinemediaobject>
+        </para>
+   
         <para>Next, you will have to choose the way you would like to open RAW files : either with automatic adjustments or with the digiKam RAW import tool to adjust corrections manually.</para>
         
         <para> If you don't know what is a RAW file or if your camera don't support RAW files, you should keep the default setting and skip this step.</para>
         
         <para>
           <inlinemediaobject>
-            <imageobject><imagedata fileref="&path;firstrunassistant_step3.png" format="PNG"/></imageobject>
+            <imageobject><imagedata fileref="&path;firstrunassistant_step4.png" format="PNG"/></imageobject>
             <textobject> <phrase>RAW import</phrase> </textobject>
            </inlinemediaobject>
         </para> 
-        
- 	<!--<para>Then you have to specify a local folder that resides on your computer, in which the database will be stored. This path will be the same for all image folders.
-	</para>
        
-	<para><inlinemediaobject><imageobject>
-              <imagedata fileref="&path;addinglibraries.png" format="PNG" />  </imageobject>
-           </inlinemediaobject></para>-->
 	
-	<para>Metadata information storage may be important if you plan to work with another photo management program and you should <guilabel>Add information to files</guilabel>. But if you don't want to alter your pictures, keep the default setting: <guilabel>Do nothing</guilabel>.</para>
+	<para>Metadata information storage may be important if you plan to work with another photo management program and you should choose <guilabel>Add information to files</guilabel>. But if you don't want to alter your pictures, keep the default setting: <guilabel>Do nothing</guilabel>.</para>
 	
 	<para>
 	<inlinemediaobject>
-	<imageobject><imagedata fileref="&path;firstrunassistant_step4.png" format="PNG"/></imageobject>
+	<imageobject><imagedata fileref="&path;firstrunassistant_step5.png" format="PNG"/></imageobject>
         <textobject> <phrase>Metadata information</phrase> </textobject>
         </inlinemediaobject>
         </para>
@@ -267,25 +266,25 @@
 	
 	<para>
 	<inlinemediaobject>
-	<imageobject><imagedata fileref="&path;firstrunassistant_step5.png" format="PNG"/></imageobject>
+	<imageobject><imagedata fileref="&path;firstrunassistant_step6.png" format="PNG"/></imageobject>
         <textobject> <phrase>Preview image method</phrase> </textobject>
         </inlinemediaobject>
         </para>
         
-        <para>Now how digiKam will open images on a right click. Previews will load faster but you won't be able to make any corrections.</para>
-        
-        <para>
-	<inlinemediaobject>
-	<imageobject><imagedata fileref="&path;firstrunassistant_step6.png" format="PNG"/></imageobject>
-        <textobject> <phrase>Open image method</phrase> </textobject>
-        </inlinemediaobject>
-        </para>
-        
-        <para>Tooltips are a fast and easy way to display important information on a photograph, they popup as the mouse move over a thumbnail. Select "Use tooltips" if you want to display them.</para>
+        <para>Now decide how digiKam will open images on a right click. Previews will load faster but you won't be able to make any corrections.</para>
         
         <para>
 	<inlinemediaobject>
 	<imageobject><imagedata fileref="&path;firstrunassistant_step7.png" format="PNG"/></imageobject>
+        <textobject> <phrase>Open image method</phrase> </textobject>
+        </inlinemediaobject>
+        </para>
+        
+        <para>Tooltips are a fast and easy way to display important information about a photograph, they popup as the mouse moves over a thumbnail. Select "Use tooltips" if you want to display them.</para>
+        
+        <para>
+	<inlinemediaobject>
+	<imageobject><imagedata fileref="&path;firstrunassistant_step8.png" format="PNG"/></imageobject>
         <textobject> <phrase>Tooltips</phrase> </textobject>
         </inlinemediaobject>
         </para>
@@ -294,10 +293,12 @@
 	
         <para>
 	<inlinemediaobject>
-	<imageobject><imagedata fileref="&path;firstrunassistant_step8.png" format="PNG"/></imageobject>
+	<imageobject><imagedata fileref="&path;firstrunassistant_step9.png" format="PNG"/></imageobject>
         <textobject> <phrase>Tooltips</phrase> </textobject>
         </inlinemediaobject>
         </para>	
+        
+        <!-- ¿ws?  -->
 	
         </sect3>
 
