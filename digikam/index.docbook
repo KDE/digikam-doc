@@ -89,7 +89,7 @@
        An easy-to-use Camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">1000 digital cameras</ulink> are supported by the gphoto2 library. Of course, any media or card reader supported by your operating system will interface with &digikam;.
        </para>
 
-       <para>&digikam; incorporates a fast Image Editor with many image editing tools. You can use the Image Editor to view your photographs, comment and rate them, correct, enhance and alter them. The editing power can be easily extended by a set of plugins, the <ulink url="https://commits.kde.org/kipi-plugins">Kde Image Plugins Interface</ulink> (<ulink url="help:/kipi-plugins/index.html">manual</ulink>)
+       <para>&digikam; incorporates a fast Image Editor with many image editing tools. You can use the Image Editor to view your photographs, comment and rate them, correct, enhance and alter them. The images post processing  can be easily extended by a set of plugins, the <ulink url="https://quickgit.kde.org/?p=kipi-plugins.git">KIPI project</ulink> (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) dedicated to work with remote web services.
        </para>
 
        <para>While &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports RAW format conversion through libraw, DNG export and ICC color management <link linkend="rawprocessing.anchor">work flow</link>.
@@ -389,7 +389,7 @@
 
         <itemizedlist>
 
-                <listitem><para><emphasis>Kipi Plugins</emphasis>: the <ulink url="https://commits.kde.org/kipi-plugins">Kde Image Plugins Interface project (Kipi)</ulink>  (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) is an effort to develop a common plugin structure for &digikam;, <application>KPhotoAlbum</application>, <application>Showimg</application> and <application>Gwenview</application>. Its aim is to share image plugins among graphical applications. Kipi-Plugins setup is described in this <link linkend="setup-kipiplugins">section</link>.</para></listitem>
+                <listitem><para><emphasis>KIPI plugins</emphasis>: the <ulink url="https://quickgit.kde.org/?p=kipi-plugins.git">Kipi project</ulink> (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) is dedicated to develop a plugin interface for &digikam;. Kipi-Plugins setup is described in this <link linkend="setup-kipiplugins">section</link>.</para></listitem>
 
         </itemizedlist>
 
@@ -400,7 +400,7 @@
         </para>
 
         <para>
-         Plugins can manipulate images in almost any way that users can. Their advantage is, that it is much easier to add a capability to &digikam; by writing a small plugin than by modifying the &digikam; core.
+         Plugins are dedicated mostly to export and import images with remote web services. Their advantage is, that it is much easier to add a capability to &digikam; by writing a small plugin than by modifying the &digikam; core.
         </para>
 
     </sect1>
@@ -2387,92 +2387,6 @@ Fun stuff
 <!-- *********************************************************************** -->
 
 &doc-credits-annexes;
-
-<appendix id="installation">        <title>Installation</title>
-
-<sect1 id="getting-kapp">                <title>How to Obtain &digikam;</title>
-
-<para>
-The website for &digikam; is at <ulink url="http://www.digikam.org">http://www.digikam.org</ulink>. Please check it regularly to get the latest news about &digikam;. &digikam; can be obtained in binary and source format from the digiKam web site.
-</para>
-
-<para>
-Also you can checkout the <emphasis>digikam</emphasis> and <emphasis>kipi</emphasis> source code modules
-from &kde; Extragear Git repository like this:
-
-<screen width="40">
-    <prompt>%</prompt> <userinput>git clone git://anongit.kde.org/digikam</userinput>
-    <prompt>%</prompt> <userinput>git clone git://anongit.kde.org/digikam-doc</userinput>
-    <prompt>%</prompt> <userinput>git clone git://anongit.kde.org/kipi-plugins</userinput>
-    <prompt>%</prompt> <userinput>git clone git://anongit.kde.org/kipi-plugins-doc</userinput>
-</screen>
-
-</para>
-
-<para>
-The last releases can be downloaded at this &URL; <ulink url="ftp://ftp.kde.org/pub/kde/stable/digikam/">
-ftp://ftp.kde.org/pub/kde/stable/digikam/</ulink>.
-</para>
-
-</sect1>
-
-<sect1 id="requirements">                <title>Requirements</title>
-
-<para>
-In order to successfully use &digikam;, you need the following <ulink url="http://digikam.org/download?q=download/dependencies">
-digiKam dependencies</ulink>.
-All library dependencies require development and binary packages installed on your
-computer to compile &digikam;.
-</para>
-
-<para> 
-Most likely your distribution vendor might already have packaged and provided these packages.
-</para>
-
-</sect1>
-
-<sect1 id="compilation">                 <title>Compilation and Installation</title>
-
-<para>
-In order to compile and install &digikam; on your system, type the following in the base folder of the <emphasis>libkipi</emphasis> and <emphasis>digikam</emphasis> module distributions.  You should use a separate build folder to help cleaning up sources if something goes wrong.
-
-<screen width="40">
-    <prompt>%</prompt> <userinput>mkdir build </userinput>
-    <prompt>%</prompt> <userinput>cmake -DCMAKE_BUILD_TYPE=debugfull -DCMAKE_INSTALL_PREFIX=`kde4-config --prefix` .. </userinput>
-   <prompt>%</prompt> <userinput>make</userinput>
-    <prompt>%</prompt> <userinput>su</userinput>
-    <prompt>%</prompt> <userinput>make install</userinput>
-</screen>
-</para>
-
-<note>
-<title>Important Notes</title>
-
-<para>
-Stage 3 is required if you are installing libkipi/libkexiv2 in a non-standard location, and you must let pkg-config know about their paths.
-</para>
-
-<para>
-More specific compilation and installation options can be passed to the <emphasis>cmake</emphasis>. Use <userinput>cmake --help</userinput> on the command line to view these options.
-</para>
-
-<para>
-Use <emphasis>-DCMAKE_BUILD_TYPE=debugfull</emphasis> option with <emphasis>cmake</emphasis> for to provide a full information bug report.
-</para>
-
-<para>
-Because &digikam; depends on <emphasis>libkipi</emphasis> and <emphasis>libkexif</emphasis>, you must build these libraries before you build &digikam;.
-</para>
-
-</note>
-
-<para>
-Since &digikam; uses CMake you should not have trouble compiling it. If you run into problems please report them to <email>digikam-users@kde.org</email>.
-</para>
-
-</sect1>
-
-</appendix>
 
 &documentation.index;
 
