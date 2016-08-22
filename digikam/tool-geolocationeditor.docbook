@@ -1,0 +1,188 @@
+<chapter id="tool-geolocationeditor">
+<chapterinfo>
+
+<abstract>
+<para>
+The Geolocation Editor allows for adding and editing GPS coordinates of picture metadata. The geo-data is stored into the image (EXIF tags) and the location can be displayed in an external browser map.
+</para>
+</abstract>
+
+<keywordset>
+<keyword>GPS</keyword>
+<keyword>Map</keyword>
+</keywordset>
+</chapterinfo>
+
+<title>Geolocation Editor</title>
+
+<para>
+  The <quote>Geolocation Editor</quote> provides the tools to localize pictures
+  geographically in the common spherical coordinate system (used by GPS/Galileo).
+  Altitude, latitude and longitude are used.
+</para>
+<note><para>
+   The tool only works for image formats that have EXIF or XMP metadata supported by
+   <ulink url="http://www.exiv2.org">Exiv2 library</ulink>.
+</para></note>
+
+<sect1 id="geolocation-title">  <title>Geolocation</title>
+<para>
+The tool has two methods to mark the pictures with coordinates:
+</para>
+<itemizedlist>
+    <listitem>
+        <para>Batch correlation of GPS tracking data with a series of images.</para>
+    </listitem>
+    <listitem>
+        <para>Semi-automatic coordinate attribution to single pictures.</para>
+    </listitem>
+</itemizedlist>
+
+<sect2 id="geolocation-correlator">       <title>The correlator</title>
+        <para>In order to correlate your images with geographic data you need to
+        have a GPS tracking information available as a XML file in <literal>gpx</literal>
+        format (<application><ulink url="http://www.gpsbabel.org">gpsbabel</ulink></application>
+        and <application><ulink url="http://www.ncc.up.pt/gpsman/">gpsman</ulink></application>
+        can download and convert tracking data from a GPS device for you).
+        </para>
+        <para>
+        <menuchoice><guimenu>Image</guimenu>
+          <guimenuitem>Geolocation</guimenuitem>
+          <guimenuitem>Correlator</guimenuitem></menuchoice>. 
+             This interface can correlate a previously selected number of pictures
+             with registered GPS tracking information.
+        </para>
+            <example id="geolocation-geo-correlation-dialog">
+               <title>The geo-correlation dialog based on EXIF date/time and tracking data (gpx format)</title>
+                   <screenshot><mediaobject><imageobject><imagedata fileref="geolocationcorrelate.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+           </example>
+           <para>
+             Select the images you want to correlate in the application main view,
+             then call the menu. The above dialog will show up. To indicate possible
+             time/location correlation you have to load a track file with
+             <guilabel>Load GPX File</guilabel> that contains GPS data taken at
+             the same time and location as the pictures with your camera.
+           </para>
+           <para>
+             When the file is loaded, an automatic correlation is done showing the
+             attributed coordinates in red. GPS track data is invariably recorded
+             in GMT time, so you need to match the camera time with GMT, which
+             can be done with <guilabel>Time Zone</guilabel>. Select the
+             <emphasis>camera time zone</emphasis> here!
+           </para>
+           <para>
+             The <guilabel>Max. time gap</guilabel> setting specifies the limit
+             within which GPS time and camera time shall be deemed coincident.
+             The maximum value is 2000 seconds.
+           </para>
+           <tip><para>If you have no tracking data for pictures that were taken
+           in the same place you can just manually edit a <literal>gpx</literal>
+           file and apply it to those images. The 2000 second time gap will then
+           correlate all pictures taken within 20 minutes.
+           </para></tip>
+
+           <para>
+             The option <guilabel>Interpolate</guilabel> and <guilabel>Difference
+             in min.</guilabel> can be used if there is no match of data. If you
+             know that in reality there is a location match despite a larger time gap
+             between camera and GPS, you can set this limit here and click on the
+             <guilabel>Correlate</guilabel> button to interpolate.
+           </para>
+            <example id="geolocation-correlation">
+               <title>Correlation</title>
+                   <screenshot><mediaobject><imageobject><imagedata fileref="geolocationcorrelate1.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+           </example>
+           <para>
+             240 minutes is the maximum time difference that can be introduced here.
+           </para>
+
+</sect2> 
+
+<sect2 id="geolocation-edit-coordinates">       <title>Edit Coordinates</title>
+            <example id="geolocation-semi-automatic-attributing">
+               <title>Semi-automatic attributing of coordinates through map interaction</title>
+                   <screenshot><mediaobject><imageobject><imagedata fileref="geolocationeditcoords.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+           </example>
+           <para>
+              The coordinates can be set manually with this dialog. This comes in handy
+              if there is a series of photos taken at the same location. Since the
+              coordinates are memorized from one dialog call to another, it is as
+              easy as clicking on <guilabel>OK</guilabel> to set the previous data
+              to the current photo.
+           </para>
+           <para>
+              Otherwise the location can be found and fixed iteratively with the
+              displayed map. Click on the region of interest, zoom in, adjust
+              location by clicking again, and so on until sufficient accuracy is
+              achieved. The altitude must always be entered manually. The map can
+              be switched between map mode, satellite image or mixed mode.
+           </para>
+</sect2>
+
+<sect2 id="geolocation-manual"> <title>Commandline tagging</title>
+  <para>
+    Completely outside of the &digikam; context, the are ways to GPS tag images.
+    Here is a shell script that uses <command>exiftool</command> to tag a
+    batch of images.
+  </para>
+
+
+<programlisting>
+#!/bin/sh
+# exiftool wrapper script for easy commandline use. It treats regex files or whole directories.
+#
+#                        FMT                  Output
+#                "%d deg %d' %.2f"\"    54 deg 59' 22.80"
+#                "%d deg %.4f min"      54 deg 59.3800 min
+#                "%.6f degrees"         54.989667 degrees
+
+if [ -z $1 ]; then 
+   echo "Usage: exiftool-gps-wrapper lat long [alt] file || dir (use signed floating coordinates)"
+else
+
+   if  [ -z "$4" ]; then  foo="$3"; alt=0
+   else	                  foo="$4"; alt=$3
+   fi
+
+   echo $foo
+   if [ -e "$foo" ] ; then
+	latR=$(echo "$1" | awk '{if ($1 &lt; 0) print "S"; else print "N"}')
+	lonR=$(echo "$2" | awk '{if ($1 &lt; 0) print "W"; else print "E"}')
+	lat=$(echo "$1" | awk '{val = $1; if ($1 &lt; 0) sub(/-/, "", val); print val}') # absolute value
+	lon=$(echo "$2" | awk '{val = $1; if ($1 &lt; 0) sub(/-/, "", val); print val}') # absolute value
+        # use the following syntax for easy googlian paste of ll=-1.23456,53.345345
+	#lonR=$(echo "$2" | awk '{if ($2 &lt; 0) print "W"; else print "E"}')
+	echo $lat, $latR, $lon, $lonR, $3, $4, $foo
+        
+	function setgpsinfo ()
+	{
+	    exiftool -c "%.6f" -GPSMapDatum="WGS-84" -GPSAltitude=$5 \
+	    -GPSLongitudeRef=$4 -GPSLongitude=$3 -GPSLatitudeRef=$2 -GPSLatitude=$1 "$6"
+	    exiftool -GPS:ALL "$6"
+	}
+
+        if [ -d "$foo" ] ; then
+
+	    for i in "$foo" ; do    # the selection of files treated depend on the passed regex
+	        echo "i= "$i
+                setgpsinfo $lat $latR $lon $lonR $alt "$i"
+	    done
+	else
+            setgpsinfo $lat $latR $lon $lonR $alt "$foo"
+	fi
+   else	echo "file or folder is wrong"
+   fi
+fi                 
+</programlisting>
+</sect2>
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
