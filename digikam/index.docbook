@@ -103,29 +103,6 @@
 
        <para>While &digikam; remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available plugins, supports RAW format conversion through libraw, DNG export and ICC color management <link linkend="rawprocessing.anchor">work flow</link>.
        </para>
-
-       </sect2>
-
-       <sect2 id="news">      <title>New Features of the 5.x versions</title>
-         <itemizedlist>
-                 <listitem><para>Runs on any platform that supports Qt5 (including Win32 and MacOS)</para></listitem>
-                 <listitem><para>Multi-threaded interface to query the database</para></listitem>
-                 <listitem><para>Embedded trash support for each collection instead of desktop trash</para></listitem>
-                 <listitem><para>Thumbs and preview video support is now delegated to Qt5Multimedia framework</para></listitem>
-                 <listitem><para>Mysql internal server is now configurable as Sqlite to store database files at a customized place</para></listitem>
-                 <listitem><para>Mysql internal/remote server is now configurable with first run assistant</para></listitem>
-                 <listitem><para>New batch queue manager tool to convert RAW files to DNG</para></listitem>
-                 <listitem><para>New batch queue manager tool to adjust time and date metadata</para></listitem>
-                 <listitem><para>New option in editor and light table to import images from a digital scanner</para></listitem>
-                 <listitem><para>New option in editor and light table to edit metadata</para></listitem>
-                 <listitem><para>New option in editor and light table to edit geolocation</para></listitem>
-                 <listitem><para>New option in editor and light table to run presentation tool</para></listitem>
-                 <listitem><para>New editor tool to perform color change based on Lut3D</para></listitem>
-                 <listitem><para>New tool in camera import interface to convert RAW files to DNG</para></listitem>
-                 <listitem><para>Consolidation of Mysql database backend</para></listitem>
-                 <listitem><para>Improved startup time with different scan for new items stage</para></listitem>
-                 <listitem><para>... and much more</para></listitem>
-         </itemizedlist>
        </sect2>
 
        <sect2>
@@ -263,19 +240,17 @@
         <imageobject><imagedata fileref="&path;firstrunassistant_step9.png" format="PNG"/></imageobject>
         <textobject> <phrase>Tooltips</phrase> </textobject>
         </inlinemediaobject>
-        </para>        
-
-        <!-- ¿ws?  -->
+        </para>
 
         </sect3>
 
         <sect3>        <title>The Scan Items Dialog</title>
         <para>
-          If you already have a collection of photographs on your hard disk, you can enter the top-level folder containing the photographs, this is called the Albums Library folder. &digikam; will treat each sub-folder of the folder you've entered as an Album. None of the photographs will be altered. During folders parsing you can see a progress dialog like this:
+          If you already have a collection of photographs on your hard disk, you can enter the top-level folder containing the photographs, this is called the Albums Library folder. &digikam; will treat each sub-folder of the folder you've entered as an Album. None of the photographs will be altered. During folders parsing you can see a progress bar in the lower right corner like this:
         </para>
         <para>
           <inlinemediaobject> <imageobject>
-            <imagedata fileref="&path;introductionscandialog.png" format="PNG" /> </imageobject></inlinemediaobject>
+            <imagedata fileref="&path;introductionscanprogress.png" format="PNG" /> </imageobject></inlinemediaobject>
         </para>
         <note><para>&digikam; will recurse the library path to its full depth. You cannot exclude (prune) any sub-path unless you make that sub-path hidden. You have to do that from outside of &digikam; by putting a dot in front of the sub-path.</para></note>
 
@@ -2397,7 +2372,9 @@ Fun stuff
     <sect1 id="bqm-intro">        <title>Introduction to Batch Queue Manager</title>
     <anchor id="bqm.anchor"/>
 
-        &doc-bqm-mainwindow;      
+        &doc-bqm-mainwindow;
+
+    </sect1>
 
     <sect1 id="bqm-workflow">   <title>Batch Photographic Workflow</title>
 
