@@ -1,83 +1,86 @@
-<sect2> <title>Raw Image Convertion</title>
+<sect1 id="bqm-rawconverter"> <title>Batch RAW Workflow</title>
 
-<sect3><title>Introduction to Raw Converter</title>
+    <sect2> <title>Raw Image Convertion</title>
 
-<para>
-With the Batch Queue Manager, you can import/convert your images stored in
-<emphasis>RAW format</emphasis> to a target formats as (<guilabel>JPEG</guilabel>,
-<guilabel>TIFF</guilabel>, or <guilabel>PNG</guilabel>).
-</para>
+        <sect3><title>Introduction to Raw Converter</title>
 
-<para>There are ome considerations before your convert, and even before you shoot
-in raw format. RAW image file formats keep the original information of the exposure
-supposedly without loss (when compressed, they use reversible, lossless compressions
-algorithms). Many photographers prefer to take their picture in RAW mode because
-the camera's built-in conversion program is often of lesser quality than what
-you can achieve with digital image processing. The whitebalance of the digital
-camera is registered but not applied to the image. Some CMOS CCD's create four
-types of color filter data: RGBG, Red, Green, Blue and another Green mask for
-contrast enhancement. This tool can take this into account.
-</para>
+            <para>
+            With the Batch Queue Manager, you can import/convert your images stored in
+            <emphasis>RAW format</emphasis> to a target formats as (<guilabel>JPEG</guilabel>,
+            <guilabel>TIFF</guilabel>, or <guilabel>PNG</guilabel>).
+            </para>
 
-<para>
-The conversion is actually based on <command>libraw</command>. Don't expect to produce the same images
-as software provided by the camera vendor but sometimes libraw gives better results.
-</para>
+            <para>There are ome considerations before your convert, and even before you shoot
+            in raw format. RAW image file formats keep the original information of the exposure
+            supposedly without loss (when compressed, they use reversible, lossless compressions
+            algorithms). Many photographers prefer to take their picture in RAW mode because
+            the camera's built-in conversion program is often of lesser quality than what
+            you can achieve with digital image processing. The whitebalance of the digital
+            camera is registered but not applied to the image. Some CMOS CCD's create four
+            types of color filter data: RGBG, Red, Green, Blue and another Green mask for
+            contrast enhancement. This tool can take this into account.
+            </para>
 
-</sect3>
+            <para>
+            The conversion is actually based on <command>libraw</command>. Don't expect to produce the same images
+            as software provided by the camera vendor but sometimes libraw gives better results.
+            </para>
 
-<sect3 id="using-plugin-rawconverter">
-<title>Using Raw Converter</title>
+        </sect3>
 
-<para>
-Select the RAW files to convert and load them to a dedicate batch queue.
-</para>
+        <sect3 id="using-rawconverter"> <title>Using Raw Converter</title>
 
-<para>
-In Batch Queue Manager settings view, you can adjust the available check and value boxes
-to optimize the RAW conversion process. The first checkbox indicates to use the camera 
-settings for white balance.
-The essential parameters like brightness, and red/blue amplifier may be adjusted.
-If the result is not quite optimal, don't worry, it is always possible to fine-tune
-the image later on.
-</para>
+            <para>
+            Select the RAW files to convert and load them to a dedicate batch queue.
+            </para>
 
-<para>
-A <guilabel>Four color RGBG</guilabel> conversion can be selected to use contrast
-information. (If your camera works in RGB mode, the RGBG setting has no effect).
-</para>
+            <para>
+            In Batch Queue Manager settings view, you can adjust the available check and value boxes
+            to optimize the RAW conversion process. The first checkbox indicates to use the camera 
+            settings for white balance.
+            The essential parameters like brightness, and red/blue amplifier may be adjusted.
+            If the result is not quite optimal, don't worry, it is always possible to fine-tune
+            the image later on.
+            </para>
 
-<para>You must choose one output formats to save the conversion result by placing the
-target file format convertion tool. The file name will stay the same by default, only the extension changes.
-<guilabel>JPEG</guilabel> uses the lossy algorithm and produces the smallest output
-file size. In opposite the tagged image format (<guilabel>TIFF</guilabel>) preserves all information of
-your image while using lossless LZW compression.
-</para>
+            <para>
+            A <guilabel>Four color RGBG</guilabel> conversion can be selected to use contrast
+            information. (If your camera works in RGB mode, the RGBG setting has no effect).
+            </para>
 
-<tip><para>
-If you intend to work a lot on your images or if it is likely that you have to
-reuse it later on, then don't use <guilabel>JPEG</guilabel> format because it
-allows a limited number of operations before it deterioates visibly.
-<guilabel>TIFF</guilabel> and <guilabel>PNG</guilabel> are better suited to keep
-the original data.
-</para></tip>
+            <para>You must choose one output formats to save the conversion result by placing the
+            target file format convertion tool. The file name will stay the same by default, only the extension changes.
+            <guilabel>JPEG</guilabel> uses the lossy algorithm and produces the smallest output
+            file size. In opposite the tagged image format (<guilabel>TIFF</guilabel>) preserves all information of
+            your image while using lossless LZW compression.
+            </para>
 
-<note><para>
-If you choose <guilabel>JPEG</guilabel>, or <guilabel>TIFF</guilabel>, or <guilabel>PNG</guilabel> as the <guilabel>Save Format</guilabel> then the meta-data included in RAW file will be included in the target
-files as Exif information.
-</para></note>
+            <tip><para>
+            If you intend to work a lot on your images or if it is likely that you have to
+            reuse it later on, then don't use <guilabel>JPEG</guilabel> format because it
+            allows a limited number of operations before it deterioates visibly.
+            <guilabel>TIFF</guilabel> and <guilabel>PNG</guilabel> are better suited to keep
+            the original data.
+            </para></tip>
 
-<para>
-When you have finished to setup the queue, click the <guibutton>Process</guibutton> button to start the
-conversion. If you want abort image conversion, press the <guibutton>Abort</guibutton>
-button.
-</para>
+            <note><para>
+            If you choose <guilabel>JPEG</guilabel>, or <guilabel>TIFF</guilabel>, or <guilabel>PNG</guilabel> as the <guilabel>Save Format</guilabel> then the meta-data included in RAW file will be included in the target
+            files as Exif information.
+            </para></note>
 
-<!-- TODO : add a screenshot of BQM RAW conversion in action -->
+            <para>
+            When you have finished to setup the queue, click the <guibutton>Process</guibutton> button to start the
+            conversion. If you want abort image conversion, press the <guibutton>Abort</guibutton>
+            button.
+            </para>
 
-</sect3>
+            <!-- TODO : add a screenshot of BQM RAW conversion in action -->
 
-</sect2>
+        </sect3>
+
+    </sect2>
+    
+</sect1>
 
 <!--
 Local Variables:
