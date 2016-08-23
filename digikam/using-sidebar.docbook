@@ -1,53 +1,59 @@
- <sect1 id="using-sidebar">            <title>&digikam; sidebar</title>
+ <sect1 id="using-sidebar"> <title>&digikam; sidebar</title>
     <anchor id="sidebar.anchor"/>
 
         <sect2 id="introduction-rightsidebar">
         <title>Introduction to the right sidebar</title>
+
            <para>
                The &digikam; main window has a sidebar at the right border providing important information and actions of the selected images. This same sidebar is also available in the <guilabel>Image Editor</guilabel> view. It can be displayed by respectively clicking on one of the five tabs:
            </para>
 
            <para>
-            <itemizedlist>
+                <itemizedlist>
 
-                <listitem><para><link linkend="using-sidebarfileproperties">Properties</link> : File and image properties, key shooting parameters (EXIF tags)</para></listitem>
+                    <listitem><para><link linkend="using-sidebarproperties">Properties</link> : File and image properties, key shooting parameters (EXIF tags)</para></listitem>
 
-                <listitem><para><link linkend="using-sidebarmetadata">Metadata</link> : EXIF, Makernotes, IPTC and GPS data (these properties can be edited by two Kipi-plugins</para></listitem>
+                    <listitem><para><link linkend="using-sidebarmetadata">Metadata</link> : EXIF, Makernotes, IPTC and GPS data (these properties can be edited by two Kipi-plugins</para></listitem>
 
-                <listitem><para><link linkend="using-sidebarcolors">Colors</link> : Histograms and embedded ICC profiles</para></listitem>
+                    <listitem><para><link linkend="using-sidebarcolors">Colors</link> : Histograms and embedded ICC profiles</para></listitem>
 
-                <listitem><para><link linkend="using-sidebargeolocation">Geolocation</link> : Marble widget shows GPS location</para></listitem>
+                    <listitem><para><link linkend="using-sidebargeolocation">Geolocation</link> : Marble widget shows GPS location</para></listitem>
 
-                <listitem><para><link linkend="using-sidebarcommentstags">Comments &amp; Tags</link> : Comments, Date &amp; Time setting, Rating, Tags</para></listitem>
+                    <listitem><para><link linkend="using-sidebarcaptions">Comments &amp; Tags</link> : Comments, Date &amp; Time setting, Rating, Tags</para></listitem>
 
-                <listitem><para><link linkend="using-sidebartagfilters">Tag Filters</link> : Tag filters applied to main window selection</para></listitem>
+                    <listitem><para><link linkend="using-sidebarfilters">Tag Filters</link> : Tag filters applied to main window selection</para></listitem>
 
-            </itemizedlist>
-            Clicking successively onto the same tab will make the sidebar pop up or fold back into the border.
+                </itemizedlist>
+
+                Clicking successively onto the same tab will make the sidebar pop up or fold back into the border.
             </para>
+
         </sect2>
 
-        <sect2 id="using-sidebarfileproperties">    <title>Properties</title>
-           <para>
-           The properties sidebar shows the essential information about the selected image which are largely self-explanatory. It is grouped into the following sections:
-           <itemizedlist>
+        <sect2 id="using-sidebarproperties"> <title>Properties</title>
 
-               <listitem><para>File Properties: these are file system related information</para></listitem>
+            <para>
 
-               <listitem><para>Image Properties: shows the image and format properties like dimension, compression, color-depth, &etc;</para></listitem>
+                The properties sidebar shows the essential information about the selected image which are largely self-explanatory. It is grouped into the following sections:
+                <itemizedlist>
 
-               <listitem><para>Photograph Properties: shows a summary of the most important parameters when taking the photograph. This data is taken from the EXIF data fields if available</para></listitem>
+                    <listitem><para>File Properties: these are file system related information</para></listitem>
 
-           </itemizedlist>
+                    <listitem><para>Image Properties: shows the image and format properties like dimension, compression, color-depth, &etc;</para></listitem>
 
-           <example>   <title>Sidebar File Properties</title>
-                 <screenshot><screeninfo>sidebar File Properties Example</screeninfo><mediaobject><imageobject><imagedata fileref="&path;sidebarfileproperties.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-           </example>
+                    <listitem><para>Photograph Properties: shows a summary of the most important parameters when taking the photograph. This data is taken from the EXIF data fields if available</para></listitem>
+
+                </itemizedlist>
+
+                <example> <title>Sidebar File Properties</title>
+                        <screenshot><screeninfo>sidebar File Properties Example</screeninfo><mediaobject><imageobject><imagedata fileref="&path;using-sidebar-properties.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                </example>
 
            </para>
+
         </sect2>
 
-        <sect2 id="using-sidebarmetadata">          <title>The Metadata Tabs</title>
+        <sect2 id="using-sidebarmetadata"> <title>The Metadata Tabs</title>
 
            <para>Metadata are data about the images or files, like technical data of camera setting during shooting, author info, copyrights, keywords, captions, and coordinates of location.</para>
            <para>
@@ -65,13 +71,13 @@
              </itemizedlist>
            </para>
 
-           <para><inlinemediaobject><imageobject><imagedata fileref="&path;sidebarmetadata.png" format="PNG" /> </imageobject><textobject><phrase>The Metadata Tabs</phrase></textobject></inlinemediaobject>
+           <para><inlinemediaobject><imageobject><imagedata fileref="&path;using-sidebar-metadata.png" format="PNG" /> </imageobject><textobject><phrase>The Metadata Tabs</phrase></textobject></inlinemediaobject>
            </para>
 
            <sect3 id="using-sidebarmetadataexif">
            <title>EXIF Tags</title>
 
-                <anchor id="kexif.anchor"/>
+                <anchor id="exiftab.anchor"/>
 
                 <sect4>
                 <title>What is EXIF?</title>
@@ -158,7 +164,7 @@
                     You can review embedded Makernote information for the selected image in this sidebar tab. The Makernote Viewer is purely informational: nothing you do with it will cause any change to the Makernote sections.
                     </para>
 
-                    <para><inlinemediaobject><imageobject><imagedata fileref="&path;sidebarmetadatamakernote.png" format="PNG" /> </imageobject><textobject><phrase>The Makernote Viewer in Action</phrase></textobject></inlinemediaobject>
+                    <para><inlinemediaobject><imageobject><imagedata fileref="&path;using-sidebar-metadatamakernote.png" format="PNG" /> </imageobject><textobject><phrase>The Makernote Viewer in Action</phrase></textobject></inlinemediaobject>
                     </para>
 
                 </sect4>
@@ -192,7 +198,7 @@
                     You can review embedded IPTC information for the selected image in this sidebar tab. The IPTC Viewer is purely informational: nothing you do with it will cause any change to the IPTC sections.
                     </para>
 
-                    <para><inlinemediaobject><imageobject><imagedata fileref="&path;sidebarmetadataiptc.png" format="PNG" /> </imageobject><textobject><phrase>The IPTC Viewer in Action</phrase></textobject></inlinemediaobject>
+                    <para><inlinemediaobject><imageobject><imagedata fileref="&path;using-sidebar-metadataiptc.png" format="PNG" /> </imageobject><textobject><phrase>The IPTC Viewer in Action</phrase></textobject></inlinemediaobject>
                     </para>
 
                 </sect4>
@@ -201,37 +207,37 @@
 
          </sect2>
 
-        <sect2 id="using-sidebarcolors">            <title>Colors</title>
+        <sect2 id="using-sidebarcolors"> <title>Colors</title>
            <para>
            The colors sidebar has two sub tabs <guilabel>Color and ICC Profile</guilabel>. Here are more details about <link linkend="using-iccprofile">Color Management</link>
            </para>
 
             <sect3 id="using-histogramviewer">
             <title>Histogram Viewer</title>
-            
+
                 <anchor id="histogramviewer.anchor"/>
-            
+
                 <para>
                    The histogram for an image shows the amount of each color that is present and their different amplitudes within the image. If your photograph has a color cast you might be able to see what is wrong by looking at the histogram.
                 </para>
-            
+
                 <para>
                   The Histogram Viewer shows the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram based color correction, use the Adjust Levels or Adjust Curves Image Editor plugin.
                 </para>
-                                                
+
                 <example>   <title>The Histogram Viewer in Action</title>
-                    <screenshot><screeninfo>The Histogram Viewer in Action</screeninfo><mediaobject><imageobject><imagedata fileref="&path;sidebarcolorshistogramviewer.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><screeninfo>The Histogram Viewer in Action</screeninfo><mediaobject><imageobject><imagedata fileref="&path;using-sidebar-histogramview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
-            
+
                 <para>
                 An image can be decomposed into <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, <guilabel>Blue</guilabel>, <guilabel>Alpha</guilabel> color channels. <guilabel>Alpha</guilabel> channel is a Layer in the image that supports transparency (like PNG or &GIF; images). Each channel supports a range of intensity levels from 0 to 255 (integer valued). Thus, a black pixel is encoded by 0 on all color channels; a white pixel by 255 on all color channels. A transparent pixel is encoded by 0 on the alpha channel; an opaque pixel by 255.
                 </para>
-            
+
                 <para>
                 The Histogram Viewer allows you to view each channel separately:
-            
+
                 <itemizedlist>
-            
+
                     <listitem><para>
                         <guilabel>Luminosity</guilabel>: shows the distribution of brightness values.
                     </para></listitem>
@@ -239,7 +245,7 @@
                     <listitem><para>
                         <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, <guilabel>Blue</guilabel>: show the distribution of intensity levels for the Red, Green, or Blue channels respectively.
                     </para></listitem>
-                
+
                     <listitem><para>
                         <guilabel>Alpha</guilabel>: shows the distribution of opacity levels. If the layer is completely opaque or completely transparent, the histogram will consist of a single bar on the left or right edge.
                     </para></listitem>
@@ -247,20 +253,20 @@
                     <listitem><para>
                         <guilabel>Colors</guilabel>: shows the <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, and <guilabel>Blue</guilabel> histograms superposed, so that you can see all of the color distribution information in a single view.
                     </para></listitem>
-                            
+
                 </itemizedlist>
-            
+
                 </para>
-            
-                <para> 
+
+                <para>
                 With <guilabel>Scale</guilabel> option, you can determine whether the histogram will be displayed using a linear or logarithmic Y axis. For images taken with a digital camera, the <guilabel>Linear</guilabel> mode is usually the most useful. However, for images that contain substantial areas of constant color a <guilabel>Linear</guilabel> histogram will often be dominated by a single bar. In this case a <guilabel>Logarithmic</guilabel> histogram will be more useful.
                 </para>
 
-                <para> 
+                <para>
                 You can restrict the analysis of the <guilabel>Statistics</guilabel> field shown at the bottom of the dialog to a limited range of values if you wish. You can set the range in one of two ways:
-            
+
                 <itemizedlist>
-            
+
                     <listitem><para>
                         Click and drag the pointer across the histogram display area, from the lowest level to the highest level of the range you want.
                     </para></listitem>
@@ -268,16 +274,16 @@
                     <listitem><para>
                         Use the spin button entries below the histogram area. Left entry is bottom of range and right entry is top of range.  
                     </para></listitem>
-            
+
                 </itemizedlist>
-                            
+
                 </para> 
-            
+
                 <para> 
                The statistics shown at the bottom of the Histogram Viewer describe the distribution of channel values, restricted to the selected range. These are:
 
                 <itemizedlist>
-            
+
                     <listitem><para>
                          The number of pixels in the image.
                     </para></listitem>
@@ -293,15 +299,15 @@
                     <listitem><para>
                          The standard deviation.
                     </para></listitem>
-            
+
                     <listitem><para>
-                         The median of the selected histogram portion.   
+                         The median of the selected histogram portion.
                     </para></listitem>
 
                     <listitem><para>
                          The percentage whose values fall within the selected range.
-                    </para></listitem>      
-                                                      
+                    </para></listitem>
+
                     <listitem><para>
                          The color depth of the image.
                     </para></listitem>
@@ -318,17 +324,17 @@
                 </itemizedlist>
 
                 </para>
-        
+
             </sect3>
 
-            <sect3 id="using-usinghistogram">
+            <sect3 id="using-histogram">
             <title>How To Use an Histogram</title>
-                
+
                 <para>
                 Histograms are a graphical means to assess the accuracy of an image shown on the screen. The graph represents the 3 regions of the photograph brightness:
-                
+
                 <itemizedlist>
-            
+
                     <listitem><para>
                          (1) : the shadows-tone on the left.
                     </para></listitem>
@@ -336,7 +342,7 @@
                     <listitem><para>
                          (2) : the middle-tone on the middle.
                     </para></listitem>
-            
+
                     <listitem><para>
                          (3) : the highlights-tone on the right.   
                     </para></listitem>
@@ -344,51 +350,51 @@
                 </itemizedlist>
 
                 <example> <title>An Image Histogram in All Colors Mode</title>
-                    <screenshot><screeninfo>An Image Histogram in All Colors Mode</screeninfo><mediaobject><imageobject><imagedata fileref="&path;editorhistogramdescription.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><screeninfo>An Image Histogram in All Colors Mode</screeninfo><mediaobject><imageobject><imagedata fileref="&path;using-sidebar-histogramdescription.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
-                
+
                 The distribution of the graph, where the spikes and bulges are clustered, indicates whether the image is too dark, too bright, or well-balanced. 
                 </para>
-        
+
                 <para>
                 With an under exposed photograph, the histogram will have a distribution of brightness that tends to be mostly on the left of the graph.
 
                 <example>    <title>An Under Exposed Photograph</title>
-                    <screenshot><screeninfo>An Under Exposed Photograph</screeninfo><mediaobject><imageobject><imagedata fileref="&path;editorhistogramsample1.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><screeninfo>An Under Exposed Photograph</screeninfo><mediaobject><imageobject><imagedata fileref="&path;using-sidebar-histogramsample1.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
 
                 With an over exposed photograph, the histogram will have the bulge showing the brightness distributed mostly towards the right of the graph.
-                
+
                 <example>  <title>An Over Exposed Photograph</title>
-                    <screenshot><screeninfo>An Over Exposed Photograph</screeninfo><mediaobject><imageobject><imagedata fileref="&path;editorhistogramsample3.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><screeninfo>An Over Exposed Photograph</screeninfo><mediaobject><imageobject><imagedata fileref="&path;using-sidebar-histogramsample3.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
-                         
+
                 With a correctly exposed photograph, the histogram will have a distribution of brightness that will be most prominent near the center part of the graph.
-                       
+
                 <example>   <title>A Correctly Exposed Photograph</title>
-                    <screenshot><screeninfo>A Correctly Exposed Photograph</screeninfo><mediaobject><imageobject><imagedata fileref="&path;editorhistogramsample2.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><screeninfo>A Correctly Exposed Photograph</screeninfo><mediaobject><imageobject><imagedata fileref="&path;using-sidebar-histogramsample2.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
-                
+
                 </para>
 
                 <para>
                 Important: not all photographs have to exhibit this bulge in the center part of their histogram. Much depends on the subject of the photograph. In some cases, it might be appropriate for the histogram to show a peak at one end or the other, or both.
                 </para>
-                        
+
                 <para>
                 The histogram is a reliable way of deciding whether or not a photograph is correctly exposed. Should the histogram show an over or under exposure, an <link linkend="exposure-correct">Exposure Correction Tool</link> should be used to fix the photograph.
                 </para>
-                
+
             </sect3>
- 
+
         </sect2>
 
-                    
+
         <sect2 id="using-sidebargeolocation">       <title>The Geolocation Tab</title>
 
     <para>This tab is based on the marble widget to display a rough map of orientation. You can zoom in and out with the mousewheel by either scrolling it or hold and drag it. Pan by holding down the left mouse button.</para>
                 <example>   <title>The Geolocation tab</title>
-                    <screenshot><screeninfo>For higher resolution maps choose "More Info"</screeninfo><mediaobject><imageobject><imagedata fileref="&path;sidebarmetadatagps.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                    <screenshot><screeninfo>For higher resolution maps choose "More Info"</screeninfo><mediaobject><imageobject><imagedata fileref="&path;using-sidebar-metadatagps.png" format="PNG" /> </imageobject></mediaobject></screenshot>
                 </example>
         <para>The left sidebar is a geo-search tool. Press the <keycombo action="press">&Ctrl;<keycap>left mouse button</keycap></keycombo> to pull-up a square as indicated. All images falling within the coordinates of that square will be shown. </para>
     <para>On the right sidebar you will find a cross to indicate the GPS location and the selected image's name next to it. The GPS coordinates and the time information are displayed below the widget. </para>
@@ -407,14 +413,14 @@
 
     </sect2>
 
-        <sect2 id="using-sidebarcommentstags">
+        <sect2 id="using-sidebarcaptions">
         <title>Comments &amp; Tags</title>
            <para>
            This sidebar tab serves to apply and edit image attributes like captions, rating, date and tags. The attributes are stored in the associated database, in the IPTC and EXIF data fields and become part of the image. All attributes are accessible in one sidebar view as shown in the screenshot below. During image reading the order of priority is a) database b) IPTC and c) EXIF. So if there is a discrepancy between any of the three, this priority will take effect and a synchronization will take place. This sidebar has a first-previous-next-last arrow navigator field on top if shown in the main application.
            </para>
 
            <example>  <title>sidebar Comments &amp; Tags example</title>
-                 <screenshot><screeninfo>sidebar Comments &amp; Tags Example</screeninfo><mediaobject><imageobject><imagedata fileref="&path;sidebarcommentstags.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+                 <screenshot><screeninfo>sidebar Comments &amp; Tags Example</screeninfo><mediaobject><imageobject><imagedata fileref="&path;using-sidebar-captions.png" format="PNG" /> </imageobject></mediaobject></screenshot>
            </example>
 
           <sect3>
@@ -493,7 +499,7 @@
            Otherwise tags are simply applied by checking the respective boxes in the tree. All tags of an image are transcribed into the IPTC 'keyword' data field.
            </para>
            <note><para>
-            In case you have selected a number of images in the main view and you check a tag in the tag tree, this one is only applied to the highlighted image, and not to the whole selection. If you want to tag selections, refer to the <link linkend="using-sidebartagfilters">Tag filters</link> section.
+            In case you have selected a number of images in the main view and you check a tag in the tag tree, this one is only applied to the highlighted image, and not to the whole selection. If you want to tag selections, refer to the <link linkend="using-sidebarfilters">Filters</link> section.
            </para></note>
 
           </sect3>
@@ -501,7 +507,7 @@
         </sect2>
 
 
-        <sect2 id="using-sidebartagfilters">
+        <sect2 id="using-sidebarfilters">
         <title>Tag Filters</title>
            <para>
            The tag filter sidebar is used to modify the set of images displayed in the main window view. Normally one uses the left sidebar with its Album, Date, Tags and Searches view. When additionally one or more tags on right sidebar tag filter is checked, only the cross-section of these two selections will be displayed. All created tags are available.
@@ -513,14 +519,23 @@
            </para>
 
            <para>
-                 <inlinemediaobject><imageobject><imagedata fileref="&path;sidebartagfilters.png" format="PNG" /> </imageobject><textobject><phrase>Sidebar Tag Filters</phrase></textobject></inlinemediaobject>
+                 <inlinemediaobject><imageobject><imagedata fileref="&path;using-sidebar-filters.png" format="PNG" /> </imageobject><textobject><phrase>Sidebar Tag Filters</phrase></textobject></inlinemediaobject>
            </para>
 
             <para>
                 In the above example the main window shows the images from a calender date, the tag filter is set to 'not tagged', which reduces the set to 3 images. They have been selected with Ctrl+a, then a tag is dragged from the right tag tree over the selection and dropped. A pop-up dialog asks if the tag shall be applied.
             </para>
 
-        </sect2>
+    </sect2>
 
-    </sect1>
+</sect1>
 
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->
