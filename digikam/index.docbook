@@ -12,6 +12,8 @@
   <!ENTITY doc-intro-background       SYSTEM "intro-background.docbook">
   <!ENTITY doc-intro-firstrun         SYSTEM "intro-firstrun.docbook">
   <!ENTITY doc-intro-fileformats      SYSTEM "intro-fileformats.docbook">
+  <!ENTITY doc-intro-camerasupport    SYSTEM "intro-camerasupport.docbook">
+  <!ENTITY doc-intro-pluginsupport    SYSTEM "intro-pluginsupport.docbook">
 <!-- image editor -->
   <!ENTITY doc-photo-editing          SYSTEM "photo-editing.docbook">
   <!ENTITY doc-editor-color           SYSTEM "editor-color.docbook">
@@ -94,121 +96,11 @@
 
     &doc-intro-fileformats;
 
- <sect1 id="using-camerasupport">      <title>Supported Digital Still Cameras</title>
-    <anchor id="digitalstillcamera.anchor"/>
+    &doc-intro-camerasupport;
 
-          <note><para>
-            RAW file support: if you are using RAW shooting mode with your camera, &digikam; is probably well able to deal with it. RAW support depends on the libraw library. To find out if your particular camera is supported, bring up the list of supported RAW cameras from the <menuchoice><guimenu>Help</guimenu><guimenuitem>RAW camera support</guimenuitem></menuchoice> menu.
-          </para>
-          <para>
-            How to setup and work with RAW files is described in <link linkend="setup-raw-decoder">RAW Decoder Settings</link> and <link linkend="raw-workflow">RAW Workflow</link>.</para>
-          </note>
-
-          <para>
-            An easy-to-use camera interface is provided, that will connect to your digital camera and download photographs directly into &digikam; Albums. More than <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">1000 digital cameras</ulink> are supported by the gphoto2 library. Of course, any media or card reader supported by your operating system will interface with &digikam;.
-          </para>
-          <para>
-            Current digital cameras are characterized by the use of <emphasis>Compact &Flash; Memory</emphasis> cards and <emphasis>USB</emphasis> or <emphasis>FireWire (IEEE-1394 or i-link)</emphasis> for data transmission. The actual transfers to a host computer are commonly carried out using the <emphasis>USB Mass Storage</emphasis> device class (so that the camera appears as a disk drive) or using the <emphasis>Picture Transfer Protocol (PTP)</emphasis> and its derivatives. Older cameras may use the <emphasis>Serial Port (RS-232)</emphasis> connection.
-          </para>
-
-            <informaltable><tgroup cols="2">
-
-            <thead><row>
-                <entry>Preview Example</entry>
-                <entry>Connector Type</entry>
-            </row></thead>
-
-            <tbody>
-                <row>
-                    <entry>
-                    <para><inlinemediaobject><imageobject><imagedata fileref="&path;introductionfirewireconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
-                    </entry>
-
-                    <entry>
-                    FireWire (IEEE-1394 or i-link) connector from a professional digital still camera
-                    </entry>
-                </row>
-
-                <row>
-                    <entry>
-                    <para><inlinemediaobject><imageobject><imagedata fileref="&path;introductionusbconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
-                    </entry>
-
-                    <entry>
-                    Universal Serial Bus (USB) connector from a consumer digital still camera
-                    </entry>
-                </row>
-
-                <row>
-                    <entry>
-                    <para><inlinemediaobject><imageobject><imagedata fileref="&path;introductionserialconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
-                    </entry>
-
-                    <entry>
-                    Serial Port (RS-232) connector from an old digital still camera
-                    </entry>
-                </row>
-
-            </tbody>
-
-            </tgroup></informaltable>
-
-        <para><guilabel>Transfers using gPhoto2: PTP and RS-232 Serial Port</guilabel></para>
-
-            <para>
-            &digikam; employs the <emphasis>gPhoto2</emphasis> program to communicate with digital still cameras. gPhoto2 is a free, redistributable set of digital camera software applications which supports a growing number of over 800 cameras. gPhoto2 has support for the <emphasis>Picture Transfer Protocol</emphasis>, which is a widely supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
-            </para>
-
-            <para>
-            Many old digital still cameras used <emphasis>Serial Port</emphasis> to communicate with host computer. Because photographs are big files and serial port transfers are slow, this connection is now obsolete. &digikam; supports these cameras and performs image transfers using the gPhoto2 program. You can find a complete list of supported digital cameras at this <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">url</ulink>.
-            </para>
-
-            <note>
-                <para>libgphoto2 needs to be built with libexif to retrieve thumbnails to digiKam properly. EXIF support is required for thumbnail retrieval on some libgphoto2 camera drivers. If EXIF supported is not set with libgphoto2, you might not see thumbnails or the thumbnail extraction might be very slow.</para>
-            </note>
-
-        <para>        <guilabel>Transfers using Mass Storage device</guilabel></para>
-
-            <para>
-            Of the devices that are not directly supported by gPhoto2, there is support for the <emphasis>Mass Storage</emphasis> protocol, which is well supported under &GNU;/&Linux;. This includes many digital cameras and Memory Card Readers. Mass Storage interfaces are:
-
-              <itemizedlist>
-                 <listitem><para><emphasis>USB Mass Storage</emphasis>:  a computer interface using communication protocols defined by the USB Implementers Forum that run on the Universal Serial Bus. This standard provides an interface to a variety of storage devices, including digital cameras.</para></listitem>
-
-                 <listitem><para><emphasis>FireWire Mass Storage</emphasis>: a computer interface using communication protocols developed primarily by Apple Computer in the 1990s. FireWire offers high-speed communications and isochronous real-time data services. Like USB Mass Storage, this standard provides an interface to a variety of storage devices, including digital still cameras. Almost all recent digital cameras support USB version 1 and eventually will support USB version 2; a very few support FireWire.
-                 </para></listitem>
-
-              </itemizedlist>
-
-             To use a generic Mass Storage device with &digikam;, select <guilabel>Mounted Camera</guilabel> item in <link linkend="cameraselection.anchor">Camera Setup</link> list and set the correct mount point path.
-            </para>
-
-    </sect1>
-
- <sect1 id="using-pluginssupport">     <title>Supported Plugins</title>
-
-        <para>
-        One of the nicest things about &digikam; is how easily its functionality can be extended, by using plugins:
-
-        <itemizedlist>
-
-                <listitem><para><emphasis>KIPI plugins</emphasis>: the <ulink url="https://quickgit.kde.org/?p=kipi-plugins.git">Kipi project</ulink> (<ulink url="help:/kipi-plugins/index.html">manual</ulink>) is dedicated to develop a plugin interface for &digikam;. Kipi-Plugins setup is described in this <link linkend="setup-kipiplugins">section</link>.</para></listitem>
-
-        </itemizedlist>
-
-        <inlinemediaobject>
-            <imageobject><imagedata fileref="&path;introductionplugininterfaces.png" format="PNG"/></imageobject>
-            <textobject> <phrase>The &digikam; plugins interface</phrase> </textobject>
-        </inlinemediaobject>
-        </para>
-
-        <para>
-         Plugins are dedicated mostly to export and import images with remote web services. Their advantage is, that it is much easier to add a capability to &digikam; by writing a small plugin than by modifying the &digikam; core.
-        </para>
-
-    </sect1>
-
-</chapter>
+    &doc-intro-pluginsupport;
+    
+ </chapter>
 
 <!-- *********************************************************************** -->
 
