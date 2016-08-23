@@ -21,7 +21,8 @@
   <!ENTITY doc-using-camera           SYSTEM "using-camera.docbook">  
   <!ENTITY doc-using-setup            SYSTEM "using-setup.docbook">  
 <!-- Image Editor Chapter -->
-  <!ENTITY doc-photo-editing          SYSTEM "photo-editing.docbook">
+  <!ENTITY doc-editor-using           SYSTEM "editor-using.docbook">
+  <!ENTITY doc-editor-photoediting    SYSTEM "editor-photoediting.docbook">
   <!ENTITY doc-editor-color           SYSTEM "editor-color.docbook">
   <!ENTITY doc-editor-enhance         SYSTEM "editor-enhance.docbook">
   <!ENTITY doc-editor-transform       SYSTEM "editor-transform.docbook">
@@ -128,172 +129,10 @@
 
 <!-- ****************************************************************************************** -->
 
-<chapter id="image-editor">     <title>The Image Editor</title>
+<chapter id="image-editor"> <title>The Image Editor</title>
 
- <sect1 id="using-imageeditor">        <title>Introduction to Image Editor</title>
-      <anchor id="imageeditor.anchor"/>
-
-        <sect2 id="imageeditor-window"> <title>The Image Editor Window</title>
-            <para>
-            &digikam; incorporates a fast Image Editor with a few basic yet powerful image editing tools. You can use the Image Editor to view your photographs and to make corrections and alterations. The Image Editor can be accessed either by clicking on a thumbnail in the Image Window or by right-clicking on a thumbnail and selecting <guilabel>Edit</guilabel> from the context menu.
-            </para>
-
-            <para>
-            The Image Editor provides a number of tools that enable you to adjust a photograph. Some of these tools are provided by plugins to &digikam;. So they may not be available by default on your distribution. See the <link linkend="setup-kipiplugins">Setup Image Editor Section</link> for more details about Kipi-plugins.
-            </para>
-
-            <example>  <title>The Image Editor Window</title>
-                <screenshot><screeninfo>The Image Editor Window</screeninfo><mediaobject><imageobject><imagedata fileref="&path;editorpreview.png" format="PNG" /> </imageobject></mediaobject></screenshot>
-            </example>
-
-            <para>
-            The image editor has just one main window with:
-
-            <itemizedlist>
-
-                <listitem><para>
-                A status at the bottom which shows the filename, the current file number, the current zoom level, and the current image size.
-                </para></listitem>
-
-                <listitem><para>
-                A menu bar across the top and below that a tool bar that provides quick access to some commonly used functions.
-                </para></listitem>
-
-            </itemizedlist>
-            </para>
-
-            <para>
-                <inlinemediaobject>
-                    <imageobject><imagedata fileref="&path;editortoolbar.png" format="PNG"/></imageobject>
-                    <textobject> <phrase>The Image Editor Toolbar</phrase> </textobject>
-                </inlinemediaobject>
-            </para>
-
-            <para>
-
-            <orderedlist>
-
-                <listitem><para>First Current Album Image.</para></listitem>
-
-                <listitem><para>Previous Image.</para></listitem>
-
-                <listitem><para>Next Image.</para></listitem>
-
-                <listitem><para>Last Current Album Image.</para></listitem>
-
-                <listitem><para>Save the modified image.</para></listitem>
-
-                <listitem><para>Undoing last action.</para></listitem>
-
-                <listitem><para>Redoing previous action.</para></listitem>
-
-                <listitem><para>Restore the Current Image From Disk.</para></listitem>
-
-                <listitem><para>Zoom Into the Image.</para></listitem>
-
-                <listitem><para>Zoom Out of the Image.</para></listitem>
-
-                <listitem><para>Toggle Auto Zooming (if selected image will fit in the window).</para></listitem>
-
-                <listitem><para>Rotate the Current Image.</para></listitem>
-
-                <listitem><para>Crop Image to the Selected Region.</para></listitem>
-
-            </orderedlist>
-
-            </para>
-          </sect2>
-
-        <sect2>       <title>Restoring Your Original Photograph</title>
-
-            <para>
-            The editing functions of the Image Editor will make changes to your photograph. None of the editing functions will change the original photograph unless you select
-            <menuchoice><guimenu>File</guimenu>
-            <guimenuitem>Save</guimenuitem></menuchoice>
-            or click the <guilabel>Save</guilabel> button in the tool bar. Note that once you have saved the changed version you will not be able to recover the original photograph.
-            </para>
-
-            <para>
-            You might prefer to take a copy of your photograph before you make any changes. You can use
-            <menuchoice><guimenu>File</guimenu>
-            <guimenuitem>Save As</guimenuitem></menuchoice>
-            to save a working copy.
-            </para>
-
-            <para>
-            At any time <emphasis>before</emphasis> you save your photograph you can restore the view to the original image by selecting
-            <menuchoice><guimenu>File</guimenu>
-            <guimenuitem>Revert</guimenuitem></menuchoice>
-            or clicking the
-            <inlinemediaobject>
-                <imageobject><imagedata fileref="&path;editorrevertbutton.png" format="PNG"/></imageobject>
-                <textobject><phrase>The Image Editor Revert Button</phrase></textobject>
-            </inlinemediaobject>
-            <guilabel>Revert</guilabel> button on the tool bar. You will lose any changes that you have made to the photograph since it was last saved.
-            </para>
-
-        </sect2>
-
-        <sect2>       <title>Undoing/Redoing Actions</title>
-
-            <para>
-            Almost anything you do to an image in Image Editor can be undone/redone. You can undo the most recent action by choosing <menuchoice><guimenu>Edit</guimenu><guimenuitem>Undo</guimenuitem></menuchoice>, and redo by <menuchoice><guimenu>Edit</guimenu><guimenuitem>Redo</guimenuitem></menuchoice>
-            </para>
-
-            <para>
-            If these are done frequently, you really should memorize the keyboard shortcuts, <guilabel>&Ctrl;-Z</guilabel> to undo an action, and <guilabel>&Ctrl;-Shift-Z</guilabel> to redo an action.
-            </para>
-
-            <para>
-            You have to press the &LMB; over the undo or redo icon in the tool bar and hold it down for a moment to produce a context menu. If you choose one of the menu items, all undo/redo actions until the chosen ones are undone/redone.
-            </para>
-
-        </sect2>
-
-        <sect2>       <title>Moving Between Photographs</title>
-
-            <para>
-            Once you have started the Image Editor you can move between photographs in the same view you started from by using the navigator buttons on the toolbar, <keycap>PgUp</keycap>, <keycap>PgDown</keycap> or the entries in the <guilabel>File</guilabel> menu. If you have made any changes to the current photograph you will be asked if you want to save them.
-            </para>
-
-        </sect2>
-
-        <sect2>       <title>Changing the View</title>
-
-            <para>
-            You can zoom in and out of a photograph using the <keycombo action="press">&Ctrl;<keycap>scroll wheel</keycap></keycombo>, the toolbar icons or the entries in the View menu.
-            </para>
-            <para>
-            To make a photograph fit the window use this button on the tool bar: <guilabel>Zoom Autofit</guilabel>
-            <inlinemediaobject>
-                <imageobject><imagedata fileref="&path;editorautosizebutton.png" format="PNG"/></imageobject>
-                <textobject> <phrase>The Image Editor AutoFit Button</phrase> </textobject>
-            </inlinemediaobject>
-            </para>
-
-            <para>
-            <menuchoice><guimenu>View</guimenu>
-            <guimenuitem>Full Screen Mode</guimenuitem></menuchoice> will display the photograph using the full screen mode. You can move back to the normal view by pressing the <keycombo>&Esc;</keycombo> key. By default the toolbar is still displayed even in Full Screen Mode. If you would prefer that the toolbar is not displayed you can turn it off in the Configure &digikam; dialog accessed from the main &digikam; window, see the <link linkend="setup-editor">Setup Image Editor Section</link>.
-            </para>
-
-         </sect2>
-
-        <sect2>       <title>Printing Images</title>
-
-            <para>
-            When you want to print the current image from the Image Editor, select
-            <menuchoice><guimenu>File</guimenu>
-            <guimenuitem>Print image</guimenuitem></menuchoice> (&Ctrl;+P) and you get the standard Print dialog, where you can adjust the settings before printing your photograph.
-            </para>
-
-           <para>
-                From the main window view you can print single images or whole sets of them. Entire thumbnail pages can be printed with your selection. All you need to do is selecting images the standard way and call <menuchoice><guimenu>Image</guimenu> <guimenuitem>Print Assistant</guimenuitem></menuchoice>. Then follow the instructions and choices to make.
-           </para>
-         </sect2>
-
-    </sect1>
-
- &doc-photo-editing;
+ &doc-editor-using;
+ &doc-editor-photoediting;
  &doc-color-management;
 
 </chapter>
