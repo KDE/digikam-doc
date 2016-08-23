@@ -1,17 +1,17 @@
  <sect1 id="photographic-editing">   <title>Photographic Editing - Workflow</title>
 
-   <sect2 id="image-editing-tools">             <title>Image Editing/Workflow Tools</title>
+    <sect2 id="image-editing-tools">             <title>Image Editing/Workflow Tools</title>
     <sect3 id="standard-workflow">              <title>A Standard Workflow Proposal</title>
-      <para>When performing a basic workflow, the primary areas for consideration are:
+        <para>When performing a basic workflow, the primary areas for consideration are:
         <orderedlist>
-          <listitem><para>Exposure: <link linkend="whitebalance">White Balance</link></para></listitem>
-          <listitem><para>Color: <link linkend="whitebalance">White Balance</link></para></listitem>
-          <listitem><para>Black and white points: <link linkend="whitebalance">White Balance</link> or <link linkend="adjustlevels">Adjust Levels</link></para></listitem>
-          <listitem><para>Contrast: <link linkend="adjustcurves">Adjust Curves</link></para></listitem>
-          <listitem><para>Saturation: <link linkend="whitebalance">White Balance</link> or <link linkend="coloreffects">Vivid</link> or <link linkend="using-correctingcolor">Hue/Saturation/Lightness</link></para></listitem>
-          <listitem><para>Resizing (interpolation) : <link linkend="resize">Change Size</link></para></listitem>
-          <listitem><para><link linkend="sharpening">Sharpening</link></para></listitem>
-          <listitem><para><ulink url="help:/digikam/inedex.html#dam">Digital Asset Management</ulink> (applying tags, captions, rating, geolocation, save under new name)</para></listitem>
+            <listitem><para>Exposure: <link linkend="whitebalance">White Balance</link></para></listitem>
+            <listitem><para>Color: <link linkend="whitebalance">White Balance</link></para></listitem>
+            <listitem><para>Black and white points: <link linkend="whitebalance">White Balance</link> or <link linkend="adjustlevels">Adjust Levels</link></para></listitem>
+            <listitem><para>Contrast: <link linkend="adjustcurves">Adjust Curves</link></para></listitem>
+            <listitem><para>Saturation: <link linkend="whitebalance">White Balance</link> or <link linkend="coloreffects">Vivid</link> or <link linkend="using-correctingcolor">Hue/Saturation/Lightness</link></para></listitem>
+            <listitem><para>Resizing (interpolation) : <link linkend="resize">Change Size</link></para></listitem>
+            <listitem><para><link linkend="sharpening">Sharpening</link></para></listitem>
+            <listitem><para><ulink url="help:/digikam/inedex.html#dam">Digital Asset Management</ulink> (applying tags, captions, rating, geolocation, save under new name)</para></listitem>
         </orderedlist>
         We recommend this sequence of image editing steps to ensure optimum photographic quality for the end product. In particular, never do sharpening before the last step. And we recommend using a lossless format like PNG or TIFF for storing photographs. Otherwise you'll lose a bit every time you save the results. If you can afford it, use 16 bit/channel for your best shots. If you want to change color space, in particular if you want to work in CIEL*a*b, 16 bit per channel are required to avoid truncation effects.
         </para>
@@ -20,178 +20,185 @@
     </sect3>
 
     <sect3>      <title>Introduction to common editing tools features</title>
-      <para>
-         All Image Editor tools like Sharpen, Blur, Noise Reduction, Refocus, Unsharp Mask, &etc; use a common dialog style that previews the effect before applying the filter to the current image. Below you see the &quot;Apply Texture&quot; tool in action using this common dialog layout:
-      </para>
+        <para>
+            All Image Editor tools like Sharpen, Blur, Noise Reduction, Refocus, Unsharp Mask, &etc; use a common dialog style that previews the effect before applying the filter to the current image. Below you see the &quot;Apply Texture&quot; tool in action using this common dialog layout:
+        </para>
 
-      <example>
+        <example>
         <title>The Apply Texture Tool in Action</title>
         <screenshot>
-          <screeninfo>The Apply Texture Tool in Action</screeninfo>
-          <mediaobject>
+            <screeninfo>The Apply Texture Tool in Action</screeninfo>
+            <mediaobject>
             <imageobject>
-              <imagedata fileref="&path;editorcommondialogtools.png" format="PNG" />
+                <imagedata fileref="&path;editorcommondialogtools.png" format="PNG" />
             </imageobject>
-          </mediaobject>
+            </mediaobject>
         </screenshot>
-      </example>
+        </example>
 
-      <para>
+        <para>
         <itemizedlist>
-          <listitem>
+            <listitem>
             <para>
-              <emphasis>(1)</emphasis>: The seven buttons to the top left select the comparison style of the preview area. The modes are:
-              <itemizedlist>
+                <emphasis>(1)</emphasis>: The seven buttons to the top left select the comparison style of the preview area. The modes are:
+                <itemizedlist>
                 <listitem>         <para>Original image</para>             </listitem>
                 <listitem>
-                  <para>Split vertically without duplication. The left area shows the original whereas the right side shows the filter applied to the continuation of the selected zoom.</para>
+                    <para>Split vertically without duplication. The left area shows the original whereas the right side shows the filter applied to the continuation of the selected zoom.</para>
                 </listitem>
                 <listitem>
-                  <para>Split horizontally without duplication. The top area shows the original whereas the lower area shows the filter applied to the continuation of the selected zoom.</para>
+                    <para>Split horizontally without duplication. The top area shows the original whereas the lower area shows the filter applied to the continuation of the selected zoom.</para>
                 </listitem>
                 <listitem>
-                  <para>Split vertically. The left area shows the original and the right one the filter effect for comparison.</para>
+                    <para>Split vertically. The left area shows the original and the right one the filter effect for comparison.</para>
                 </listitem>
                 <listitem>
-                  <para>Split horizontally. The top area shows the original and the lower one the filter effect for comparison.</para>
+                    <para>Split horizontally. The top area shows the original and the lower one the filter effect for comparison.</para>
                 </listitem>
                 <listitem>
-                  <para>Effect preview. This is a live effect preview without comparison.</para>
+                    <para>Effect preview. This is a live effect preview without comparison.</para>
                 </listitem>
                 <listitem>
-                  <para>'Mouse over' style: preview when mouse is off the preview (in the settings area), otherwise shows original.</para>
+                    <para>'Mouse over' style: preview when mouse is off the preview (in the settings area), otherwise shows original.</para>
                 </listitem>
-              </itemizedlist>
+                </itemizedlist>
             </para>
-          </listitem>
-          <listitem>
+            </listitem>
+            <listitem>
             <para><emphasis>(2)</emphasis>: There are two buttons that can be toggled to show over or underexposure. The colors can be customized in the <link linkend="setupdialog.anchor">general setup page</link>.</para>
-          </listitem>
-          <listitem>
+            </listitem>
+            <listitem>
             <para><emphasis>(3)</emphasis>: The preview selector frame. Click and drag with the mouse on the floating frame to move it on the image. The preview area on the left of dialog is updated accordingly.</para>
-          </listitem>
-          <listitem>
+            </listitem>
+            <listitem>
             <para>   <emphasis>(4)</emphasis>: The filter or plugin settings area.</para>
-          </listitem>
-          <listitem>
+            </listitem>
+            <listitem>
             <para>
-              <emphasis>(5)</emphasis>: At the lower left corner: there is help and a reset to defaults button (all settings are remembered from the last use of the plugin).</para>
-          </listitem>
-          <listitem>
+                <emphasis>(5)</emphasis>: At the lower left corner: there is help and a reset to defaults button (all settings are remembered from the last use of the plugin).</para>
+            </listitem>
+            <listitem>
             <para>
-              <emphasis>(6)</emphasis>: There is a progress indicator for plugins with involved calculations.</para>
-          </listitem>
+                <emphasis>(6)</emphasis>: There is a progress indicator for plugins with involved calculations.</para>
+            </listitem>
         </itemizedlist>
 
-      </para>
+        </para>
     </sect3>
 
     <sect3>      <title>The &digikam; tool set</title>
-     <itemizedlist>
+        <itemizedlist>
 
-   <listitem><para>Image Color
-      <itemizedlist>
-      <listitem><para><link linkend="auto-correction">Auto Correction</link></para></listitem>
-      <listitem><para><link linkend="exposure-correct">Brightness/Contrast/Gamma</link></para></listitem>
-      <listitem><para><link linkend="using-correctingcolor">Hue/Saturation/Lightness</link></para></listitem>
-      <listitem><para><link linkend="colorbalancetool.anchor">Color Balance</link></para></listitem>
-      <listitem><para><link linkend="blackandwhite-conversion">Black and White</link></para></listitem>
-      <listitem><para><link linkend="encoding-depth">Encoding Depth</link></para></listitem>
-      <listitem><para><link linkend="color-management">Color Management</link></para></listitem>
-      <listitem><para><link linkend="adjustlevels">Levels Adjust</link></para></listitem>
-      <listitem><para><link linkend="coloreffects">Color Effects (Solarize, Vivid, Neon, Edge)</link></para></listitem>
-      <listitem><para><link linkend="whitebalance">White Balance/Exposure/Saturation</link></para></listitem>
-      <listitem><para><link linkend="adjustcurves">Curves Adjust</link></para></listitem>
-      <listitem><para><link linkend="channelmixer">Channel Mixer</link></para></listitem>
-      </itemizedlist>
-   </para></listitem>
+    <listitem><para>Image Color
+        <itemizedlist>
+        <listitem><para><link linkend="auto-correction">Auto Correction</link></para></listitem>
+        <listitem><para><link linkend="exposure-correct">Brightness/Contrast/Gamma</link></para></listitem>
+        <listitem><para><link linkend="using-correctingcolor">Hue/Saturation/Lightness</link></para></listitem>
+        <listitem><para><link linkend="colorbalancetool.anchor">Color Balance</link></para></listitem>
+        <listitem><para><link linkend="blackandwhite-conversion">Black and White</link></para></listitem>
+        <listitem><para><link linkend="encoding-depth">Encoding Depth</link></para></listitem>
+        <listitem><para><link linkend="color-management">Color Management</link></para></listitem>
+        <listitem><para><link linkend="adjustlevels">Levels Adjust</link></para></listitem>
+        <listitem><para><link linkend="coloreffects">Color Effects (Solarize, Vivid, Neon, Edge)</link></para></listitem>
+        <listitem><para><link linkend="whitebalance">White Balance/Exposure/Saturation</link></para></listitem>
+        <listitem><para><link linkend="adjustcurves">Curves Adjust</link></para></listitem>
+        <listitem><para><link linkend="channelmixer">Channel Mixer</link></para></listitem>
+        </itemizedlist>
+    </para></listitem>
 
-   <listitem><para>Image Enhancement
-      <itemizedlist>
-      <listitem><para><link linkend="sharpening">Sharpening (sharpen, unsharp mask, refocus)</link></para></listitem>
-      <listitem><para><link linkend="using-blurfilter" >Blur Tool</link></para></listitem>
-      <listitem><para><link linkend="using-redeyecorrection">Red Eye Removal</link></para></listitem>
-      <listitem><para><link linkend="inpainting">Photograph Inpainting</link></para></listitem>
-      <listitem><para><link linkend="noisereduction">Noise Reduction &amp; blurring</link></para></listitem>
-      <listitem><para><link linkend="hotpixels">Hot Pixel Correction</link></para></listitem>
-      <listitem><para><link linkend="lensdistortion">Lens Distortion Correction</link></para></listitem>
-      <listitem><para><link linkend="restoration">Photograph Restoration</link></para></listitem>
-      <listitem><para><link linkend="vignettingcorrection">Vignetting Correction Tool</link></para></listitem>
-      </itemizedlist>
-   </para></listitem>
+    <listitem><para>Image Enhancement
+        <itemizedlist>
+        <listitem><para><link linkend="sharpening">Sharpening (sharpen, unsharp mask, refocus)</link></para></listitem>
+        <listitem><para><link linkend="using-blurfilter" >Blur Tool</link></para></listitem>
+        <listitem><para><link linkend="using-redeyecorrection">Red Eye Removal</link></para></listitem>
+        <listitem><para><link linkend="inpainting">Photograph Inpainting</link></para></listitem>
+        <listitem><para><link linkend="noisereduction">Noise Reduction &amp; blurring</link></para></listitem>
+        <listitem><para><link linkend="hotpixels">Hot Pixel Correction</link></para></listitem>
+        <listitem><para><link linkend="lensdistortion">Lens Distortion Correction</link></para></listitem>
+        <listitem><para><link linkend="restoration">Photograph Restoration</link></para></listitem>
+        <listitem><para><link linkend="vignettingcorrection">Vignetting Correction Tool</link></para></listitem>
+        </itemizedlist>
+    </para></listitem>
 
-   <listitem><para>Image Transformation Tools
-      <itemizedlist>
-      <listitem><para><link linkend="resize">Change Size (reduce and blow-up)</link></para></listitem>
-      <listitem><para><link linkend="freerotation">Free Rotation</link></para></listitem>
-      <listitem><para><link linkend="perspective">Perspective Adjustment</link></para></listitem>
-      <listitem><para><link linkend="sheartool">Shearing Tool</link></para></listitem>
-      </itemizedlist>
-   </para></listitem>
+    <listitem><para>Image Transformation Tools
+        <itemizedlist>
+        <listitem><para><link linkend="resize">Change Size (reduce and blow-up)</link></para></listitem>
+        <listitem><para><link linkend="freerotation">Free Rotation</link></para></listitem>
+        <listitem><para><link linkend="perspective">Perspective Adjustment</link></para></listitem>
+        <listitem><para><link linkend="sheartool">Shearing Tool</link></para></listitem>
+        </itemizedlist>
+    </para></listitem>
 
-   <listitem><para>Image Decoration
-      <itemizedlist>
-      <listitem><para><link linkend="border">Add Border</link></para></listitem>
-      <listitem><para><link linkend="inserttext">Insert Text</link></para></listitem>
-      <listitem><para><link linkend="superimpose">Template Superimpose</link></para></listitem>
-      <listitem><para><link linkend="texture">Apply Texture</link></para></listitem>
-      </itemizedlist>
-   </para></listitem>
+    <listitem><para>Image Decoration
+        <itemizedlist>
+        <listitem><para><link linkend="border">Add Border</link></para></listitem>
+        <listitem><para><link linkend="inserttext">Insert Text</link></para></listitem>
+        <listitem><para><link linkend="superimpose">Template Superimpose</link></para></listitem>
+        <listitem><para><link linkend="texture">Apply Texture</link></para></listitem>
+        </itemizedlist>
+    </para></listitem>
 
-   <listitem><para>Special Effect Filters
-      <itemizedlist>
-      <listitem><para><link linkend="infrared">Simulate Infrared Film.</link></para></listitem>
-      <listitem><para><link linkend="filmgrain">Add Film Grain.</link></para></listitem>
-      <listitem><para><link linkend="oilpaint">Simulate Oil Painting</link></para></listitem>
-      <listitem><para><link linkend="charcoal">Simulate Charcoal Drawing.</link></para></listitem>
-      <listitem><para><link linkend="emboss">Emboss Photograph.</link></para></listitem>
-      <listitem><para><link linkend="distortionfx">Distortion FX.</link></para></listitem>
-      <listitem><para><link linkend="blurfx">Blur FX.</link></para></listitem>
-      <listitem><para><link linkend="raindrops">Add Rain Drops</link></para></listitem>
-      </itemizedlist>
-   </para></listitem>
+    <listitem><para>Special Effect Filters
+        <itemizedlist>
+        <listitem><para><link linkend="infrared">Simulate Infrared Film.</link></para></listitem>
+        <listitem><para><link linkend="filmgrain">Add Film Grain.</link></para></listitem>
+        <listitem><para><link linkend="oilpaint">Simulate Oil Painting</link></para></listitem>
+        <listitem><para><link linkend="charcoal">Simulate Charcoal Drawing.</link></para></listitem>
+        <listitem><para><link linkend="emboss">Emboss Photograph.</link></para></listitem>
+        <listitem><para><link linkend="distortionfx">Distortion FX.</link></para></listitem>
+        <listitem><para><link linkend="blurfx">Blur FX.</link></para></listitem>
+        <listitem><para><link linkend="raindrops">Add Rain Drops</link></para></listitem>
+        </itemizedlist>
+    </para></listitem>
 
-   </itemizedlist>
-     </sect3>
+    </itemizedlist>
+        </sect3>
 
-   </sect2>
+    </sect2>
 
-            <sect2 id="raw-workflow">  <title>Processing RAW image files, RAW work-flow</title>
-            <anchor id="rawprocessing.anchor"/>
+    <sect2 id="raw-workflow">  <title>Processing RAW image files, RAW work-flow</title>
+    <anchor id="rawprocessing.anchor"/>
 
-             <para>A typical RAW workflow with &digikam; may follow these steps:</para>
-             <itemizedlist>
-               <listitem><para>Setting up the RAW conversion and color management preferences
-                 <itemizedlist>
-                  <listitem><para>get the ICC color profiles for the camera, display and printer</para></listitem>
-                  <listitem><para>setup &digikam; correctly defining a color work space </para></listitem>
-                 </itemizedlist>
-               </para></listitem>
-               <listitem><para>Camera whitepoint setting</para></listitem>
-               <listitem><para>Demosaicing (includes interpolation, noise filtering and
-                  <ulink url="help:/digikam/using-setup.html#CA.anchor">chromatic aberration correction</ulink>)
-                  </para></listitem>
-               <listitem><para>Conversion to a color space</para> </listitem>
-               <listitem><para>Gamma correction, tone mapping</para> </listitem>
-               <listitem><para>Color profile assignment</para> </listitem>
-               <listitem><para>Dynamic range expansion (optional)</para></listitem>
-               <listitem><para>Continue with <link linkend="standard-workflow">standard workflow</link></para></listitem>
-             </itemizedlist>
+        <para>A typical RAW workflow with &digikam; may follow these steps:</para>
+        <itemizedlist>
+        <listitem><para>Setting up the RAW conversion and color management preferences
+            <itemizedlist>
+            <listitem><para>get the ICC color profiles for the camera, display and printer</para></listitem>
+            <listitem><para>setup &digikam; correctly defining a color work space </para></listitem>
+            </itemizedlist>
+        </para></listitem>
+        <listitem><para>Camera whitepoint setting</para></listitem>
+        <listitem><para>Demosaicing (includes interpolation, noise filtering and
+            <ulink url="help:/digikam/using-setup.html#CA.anchor">chromatic aberration correction</ulink>)
+            </para></listitem>
+        <listitem><para>Conversion to a color space</para> </listitem>
+        <listitem><para>Gamma correction, tone mapping</para> </listitem>
+        <listitem><para>Color profile assignment</para> </listitem>
+        <listitem><para>Dynamic range expansion (optional)</para></listitem>
+        <listitem><para>Continue with <link linkend="standard-workflow">standard workflow</link></para></listitem>
+        </itemizedlist>
 
-             <para>
-               From there everything is simple, select a RAW image and open it in the editor. The color management widget will be displayed after the image has been processed in order to adjust color rendering. Without color management all images are very dark, this is normal. You can experiment the various profiles you have in order to select the best input profile according to your image (some tends to be very neutral, even a bit dull, some gives more saturated results, &etc;).
-             </para>
-            </sect2>
+        <para>
+        From there everything is simple, select a RAW image and open it in the editor. The color management widget will be displayed after the image has been processed in order to adjust color rendering. Without color management all images are very dark, this is normal. You can experiment the various profiles you have in order to select the best input profile according to your image (some tends to be very neutral, even a bit dull, some gives more saturated results, &etc;).
+        </para>
+    </sect2>
 
+    &doc-editor-color;
 
-      &doc-editor-color;
+    &doc-editor-enhance;
 
-      &doc-editor-enhance;
+    &doc-editor-transform;
 
-      &doc-editor-transform;
+    &doc-editor-decorate;
 
-      &doc-editor-decorate;
+    &doc-editor-filters;
 
-      &doc-editor-filters;
+</sect1>
 
-  </sect1>
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

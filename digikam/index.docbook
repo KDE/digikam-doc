@@ -38,9 +38,10 @@
   <!ENTITY doc-tool-presentation      SYSTEM "tool-presentation.docbook">
   <!ENTITY doc-tool-advrename         SYSTEM "tool-advrename.docbook">
   <!ENTITY doc-tool-metadataeditor    SYSTEM "tool-metadataeditor.docbook">
-<!-- Menus -->
-  <!ENTITY doc-menu-descriptions      SYSTEM "menu-descriptions.docbook">
-  <!ENTITY doc-ie-menu                SYSTEM "ie-menu.docbook">
+<!-- Menus Chapter -->
+  <!ENTITY doc-menu-albums            SYSTEM "menu-albums.docbook">
+  <!ENTITY doc-menu-editor            SYSTEM "menu-editor.docbook">
+<!-- Annexes Chapter -->
   <!ENTITY doc-credits-annexes        SYSTEM "credits-annex.docbook">
 
   <!-- Do not define any other entities; instead, use the entities
@@ -164,11 +165,16 @@
 &doc-tool-advrename;
 &doc-tool-metadataeditor;
 
-<!-- *********************************************************************** -->
+<!-- ******** MENUS ******************************************************** -->
 
-&doc-menu-descriptions;
+<chapter id="menu-descriptions"> <title>Menu Descriptions</title>
 
-<!-- *********************************************************************** -->
+    &doc-menu-albums;
+    &doc-menu-editor;
+
+</chapter>
+
+<!-- ******** ANNEXES ****************************************************** -->
 
 &doc-credits-annexes;
 
