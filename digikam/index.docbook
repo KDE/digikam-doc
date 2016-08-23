@@ -7,10 +7,11 @@
   <!ENTITY digikam '<application>digiKam</application>'>
 <!-- relative path to snapshots for digikam and showfoto -->
   <!ENTITY path "">
-  <!ENTITY doc-file-formats           SYSTEM "file-formats.docbook">
   <!ENTITY doc-sidebar                SYSTEM "sidebar.docbook">
 <!-- introduction -->
   <!ENTITY doc-intro-background       SYSTEM "intro-background.docbook">
+  <!ENTITY doc-intro-firstrun         SYSTEM "intro-firstrun.docbook">
+  <!ENTITY doc-intro-fileformats      SYSTEM "intro-fileformats.docbook">
 <!-- image editor -->
   <!ENTITY doc-photo-editing          SYSTEM "photo-editing.docbook">
   <!ENTITY doc-editor-color           SYSTEM "editor-color.docbook">
@@ -87,136 +88,11 @@
 
 <chapter id="introduction">    <title>Introduction</title>
 
- <sect1 id="intro-background"> <title>Background</title>
-
     &doc-intro-background;
-     
-</sect1>
 
- <sect1 id="using-firstrun">           <title>Getting Started</title>
+    &doc-intro-firstrun;
 
-       <sect2>   <title></title>
-        <para></para>
-        <sect3 id="firstrundialog">   <title>The First Run Dialog</title>
-           <para>
-            <!-- <imagedata fileref="&path;introductionfirstrundialog.png" format="PNG" />  -->
-           <inlinemediaobject><imageobject>
-              <imagedata fileref="&path;firstrunassistant_step1.png" format="PNG" /></imageobject>
-           </inlinemediaobject>
-           </para>
-
-        <para>
-          When you start &digikam; for the very first time it will ask you where you store your photographs. You can choose any local, remote or removable folder. Just type in the path name of a folder or click on the <guilabel>Browse...</guilabel> icon to select a folder from the dialog.
-           </para>
-
-           <para>
-           Later on you can add as many locations as you like - &digikam; will add them to the album library. <menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure digiKam</guimenuitem><guimenuitem>Collections</guimenuitem></menuchoice>
-           </para>
-
-           <para>
-            <inlinemediaobject><imageobject>
-              <imagedata fileref="&path;firstrunassistant_step2.png" format="PNG" /></imageobject>
-              <textobject> <phrase>Choosing database path for digikam</phrase> </textobject>
-           </inlinemediaobject>
-        </para>
-
-        <para>Then you have to specify a local folder that resides on your computer, in which the database will be stored. This path will be the same for all image folders.
-        </para>
-
-        <para>
-            <inlinemediaobject>
-                <imageobject><imagedata fileref="&path;firstrunassistant_step3.png" format="PNG" /></imageobject>
-           </inlinemediaobject>
-        </para>
-
-        <para>Next, you will have to choose the way you would like to open RAW files : either with automatic adjustments or with the digiKam RAW import tool to adjust corrections manually.</para>
-
-        <para> If you don't know what is a RAW file or if your camera don't support RAW files, you should keep the default setting and skip this step.</para>
-
-        <para>
-          <inlinemediaobject>
-            <imageobject><imagedata fileref="&path;firstrunassistant_step4.png" format="PNG"/></imageobject>
-            <textobject> <phrase>RAW import</phrase> </textobject>
-           </inlinemediaobject>
-        </para> 
-
-        <para>Metadata information storage may be important if you plan to work with another photo management program and you should choose <guilabel>Add information to files</guilabel>. But if you don't want to alter your pictures, keep the default setting: <guilabel>Do nothing</guilabel>.</para>
-
-        <para>
-        <inlinemediaobject>
-        <imageobject><imagedata fileref="&path;firstrunassistant_step5.png" format="PNG"/></imageobject>
-        <textobject> <phrase>Metadata information</phrase> </textobject>
-        </inlinemediaobject>
-        </para>
-
-        <para>Then choose how digiKam will load images in preview mode and light table. Reduced version will load faster but at the cost of quality.</para>
-
-        <para>
-        <inlinemediaobject>
-        <imageobject><imagedata fileref="&path;firstrunassistant_step6.png" format="PNG"/></imageobject>
-        <textobject> <phrase>Preview image method</phrase> </textobject>
-        </inlinemediaobject>
-        </para>
-
-        <para>Now decide how digiKam will open images on a right click. Previews will load faster but you won't be able to make any corrections.</para>
-
-        <para>
-        <inlinemediaobject>
-        <imageobject><imagedata fileref="&path;firstrunassistant_step7.png" format="PNG"/></imageobject>
-        <textobject> <phrase>Open image method</phrase> </textobject>
-        </inlinemediaobject>
-        </para>
-
-        <para>Tooltips are a fast and easy way to display important information about a photograph, they popup as the mouse moves over a thumbnail. Select "Use tooltips" if you want to display them.</para>
-
-        <para>
-        <inlinemediaobject>
-        <imageobject><imagedata fileref="&path;firstrunassistant_step8.png" format="PNG"/></imageobject>
-        <textobject> <phrase>Tooltips</phrase> </textobject>
-        </inlinemediaobject>
-        </para>
-
-        <para>Click on <guibutton>Finish</guibutton>. DigiKam will now start to scan for photographs...</para>
-
-        <para>
-        <inlinemediaobject>
-        <imageobject><imagedata fileref="&path;firstrunassistant_step9.png" format="PNG"/></imageobject>
-        <textobject> <phrase>Tooltips</phrase> </textobject>
-        </inlinemediaobject>
-        </para>
-
-        </sect3>
-
-        <sect3>        <title>The Scan Items Dialog</title>
-        <para>
-          If you already have a collection of photographs on your hard disk, you can enter the top-level folder containing the photographs, this is called the Albums Library folder. &digikam; will treat each sub-folder of the folder you've entered as an Album. None of the photographs will be altered. During folders parsing you can see a progress bar in the lower right corner like this:
-        </para>
-        <para>
-          <inlinemediaobject> <imageobject>
-            <imagedata fileref="&path;introductionscanprogress.png" format="PNG" /> </imageobject></inlinemediaobject>
-        </para>
-        <note><para>&digikam; will recurse the library path to its full depth. You cannot exclude (prune) any sub-path unless you make that sub-path hidden. You have to do that from outside of &digikam; by putting a dot in front of the sub-path.</para></note>
-
-        <para>
-          As &digikam; uses your folders on your hard disk directly, other applications like file managers can remove any albums outside a &digikam; session. In this case &digikam; will tell you at the next session if all albums that have been removed from the &digikam; photographs root path shall be deleted from albums database. If you want to move folders around and do not want to do that in &digikam;, we suggest you do that while &digikam; is running, so the database will be kept in sync and you do not lose any metadata.
-        </para>
-
-        <para>
-          When you use an existing folder of photographs, as the Album Library folder, you will notice that the Albums in the Album list do not have photographs as their icons. You can change that by dragging any photograph in the Album onto the folder icon in the left sidebar and use this as the Album icon. See the <link linkend="using-myalbumsview">Album</link> section for details of how to change the Album icon.
-        </para>
-
-        <para>
-          If you have previously accessed your photograph collection with another application, that has created thumbnails in non-standard sub-folders, &digikam; will show these thumbnail folders as separate Albums. &digikam; follows the <ulink url="http://www.freedesktop.org/">freedesktop.org</ulink> standards for thumbnail folders. There is no way of hiding non-standard thumbnail folders from the &quot;Albums&quot; list. If you want to keep them you could create an Album Collection that just contains all the thumbnail Folders and then view your Albums in By Collection order. See the <link linkend="using-myalbumsview">Album</link> section for more about Album Collections.
-        </para>
-
-        <para>
-          Once you have configured the Album Library Folder you can set up &digikam; to work with your digital camera. Then learn how to use <link linkend="using-myalbumsview">Albums</link> and <link linkend="using-mytagsview">Tags</link> to arrange your photograph Albums.
-        </para>
-        </sect3>
-       </sect2>
-    </sect1>
-
- &doc-file-formats;
+    &doc-intro-fileformats;
 
  <sect1 id="using-camerasupport">      <title>Supported Digital Still Cameras</title>
     <anchor id="digitalstillcamera.anchor"/>
