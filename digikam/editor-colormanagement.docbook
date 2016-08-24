@@ -2,12 +2,26 @@
 
     <sect2 id="CM-intro"> <title>Introduction</title>
       <para>The point of a color-managed workflow is to ensure that the colors coming from your camera or scanner have a predictable relationship with the colors you actually photographed or scanned, that the colors displayed on your monitor match the colors coming from your camera or scanner, and that the colors you print or display on the web match the colors you produced in your digital darkroom.</para>
+      
+        <para>
+        <screenshot>
+        <screeninfo></screeninfo>
+        <mediaobject>
+        <imageobject>
+        <imagedata fileref="&path;editor-cm-colormanagement.pn" format="PNG"/>
+        </imageobject>
+        <textobject>
+        <phrase></phrase>
+        </textobject>
+        </mediaobject>
+        </screenshot>
+        </para>
 
-      <sect3 id="buttons-to-push">     <title>Which buttons do I push?</title>
+      <sect3 id="buttons-to-push"> <title>Which buttons do I push?</title>
          <para>When it comes to color management, everyone wants to know, "which buttons do I push to get the results I want". Unfortunately, color management of necessity involves making informed choices at every step along the image-processing workflow. The purpose of this tutorial is to provide sufficient background information on color management, along with links to more in-depth information, to enable you to begin to make your own informed decisions, based on your own desired results.</para>
       </sect3>
 
-      <sect3 id="CM-needed">     <title>Is there anyone who doesn't need to worry about color management?</title>
+      <sect3 id="CM-needed"> <title>Is there anyone who doesn't need to worry about color management?</title>
         <para>If your imaging workflow meets all six criteria listed below, then you don't need to worry about color management. </para>
         <orderedlist>
             <listitem><para>you are working at a monitor properly calibrated to the sRGB color space (more about that below)</para></listitem>
@@ -37,7 +51,7 @@
           <screeninfo></screeninfo>
           <mediaobject>
            <imageobject>
-            <imagedata fileref="&path;542px-CIExy1931_sRGB_svg.png" format="PNG"/>
+            <imagedata fileref="&path;editor-cm-542px-CIExy1931-sRGB.png" format="PNG"/>
            </imageobject>
            <textobject>
             <phrase></phrase>
@@ -137,9 +151,25 @@
           <para>The whole point of interpolation using demosaicing algorithms such as dcraw's default AHD is to guess what color and intensity of light actually fell on any given pixel by interpolating information gathered from that single pixel plus its neighboring pixels (see <ulink url="http://en.wikipedia.org/wiki/Demosaic">Wikipedia article</ulink>). Every raw processing program makes additional assumptions such as "when is it signal and when is it background noise?",  "at what point has the sensor well reached full saturation?", and so forth. The resulting output of all these algorithms and assumptions that raw processing software makes is a trio of RGB values for each pixel in the image. Given the same raw file, different raw processors will output different RGB values. </para>
          </sect3>
           <sect3> <title>Where do I find a generic profile for my camera?  </title>
-          <para>The ufraw website <ulink url="http://ufraw.sourceforge.net/Colors.html">section on color management</ulink> has information on where to find ready-made camera profiles. If you poke around the &digikam; users forum archives, you'll find additional advice. If you keep hunting and experimenting, likely you will find a generic profile that works "well enough". However, as stated above, it's an unfortunate fact of digital imaging that the camera profiles supplied by Canon, Nikon, and the like don't work as well with raw converters other than each camera manufacturer's own proprietary raw converter. Which is why Bibble and Phase One, for example, have to make their own profiles for all the cameras that they support. So eventually you may decide that you want a camera profile that is specific to your camera, your lighting conditions, and your raw processing workflow. </para>
+          <para>The ufraw website <ulink url="http://ufraw.sourceforge.net/Colors.html">section on color management</ulink> has information on where to find ready-made camera profiles. If you poke around the &digikam; users forum archives, you'll find additional advice. If you keep hunting and experimenting, likely you will find a generic profile that works "well enough". However, as stated above, it's an unfortunate fact of digital imaging that the camera profiles supplied by Canon, Nikon, and the like don't work as well with raw converters other than each camera manufacturer's own proprietary raw converter. Which is why Bibble and Phase One, for example, have to make their own profiles for all the cameras that they support. So eventually you may decide that you want a camera profile that is specific to your camera, your lighting conditions, and your raw processing workflow.</para>
+
+          <para>
+          <screenshot>
+          <screeninfo></screeninfo>
+          <mediaobject>
+           <imageobject>
+            <imagedata fileref="&path;editor-cm-iccworkflowlogic.png" format="PNG"/>
+           </imageobject>
+           <textobject>
+            <phrase></phrase>
+           </textobject>
+          </mediaobject>
+          </screenshot>
+          </para>
+          
          </sect3>
-          <sect3> <title>How do I get a camera profile specific to my camera, lighting conditions, and raw workflow? </title>
+
+         <sect3> <title>How do I get a camera profile specific to my camera, lighting conditions, and raw workflow? </title>
           <para>Many commercial services provide profiling services, for a fee, of course. Or you can use LPRof to profile your camera yourself. If you want to profile your own camera, you will need an "IT8 target", that is, an image containing squares of known colors. Along with the IT8 target, you will receive the appropriate set of known values for each square of color on the target. </para>
           <para>If you plan to use LProf to profile your camera, check the documentation for a list of recommended targets. To profile your camera, you photograph the IT8 target under specified lighting conditions (for example, in daylight, usually taken to mean noon on a sunny day in the summer, with nothing nearby that might cast shadows or reflect color casts) and save the image as a raw file. Then you process the raw file using your particular raw processing software+settings and run the resulting image file through the profiling software. The profiling software compares the RGB values in the image produced by your camera+lighting conditions+raw processing routine with the RGB values in the original target and then produces your camera (icc) profile.   </para>
           <para>Profiling a camera is exactly analogous to profiling a monitor. When profiling a monitor, the profiling software tells the graphics card to send squares of color with particular RGB values to the screen. The spectrophotometer measures the actual color that is produced on the screen. When profiling a camera, the known colors are the RGB colors in the original patches on the IT8 target, which the profiling software compares to the colors produced by the digital image of the target, which was photographed in selected lighting conditions, saved as raw, then processed with specific raw processing software+settings.  </para>
@@ -150,7 +180,7 @@
        </sect3>
      </sect2>
 
-     <sect2 id="PCS">             <title>The PCS: color profiles point to real colors in the real world</title>
+     <sect2 id="PCS"> <title>The PCS: color profiles point to real colors in the real world</title>
         <sect3> <title>Camera, scanner, working space, monitor, printer - what do all these color profiles really do?</title>
           <para>A color profile describes the color gamut of the device or space to which it belongs by specifying what real color in the real world corresponds to each trio of RGB values in the color space of the device (camera, monitor, printer) or working space. </para>
           <para>The camera profile essentially says, "for every RGB trio of values associated with every pixel in the image file produced from the raw file by the raw processing software, "this RGB image file trio" corresponds to "that real color as seen by a real observer in the real world" (or rather, as displayed on the IT8 target if you produced your own camera profile, but it amounts to the same thing - the goal of profiling your camera is to make the picture of the target look like the target). </para>
@@ -181,7 +211,7 @@
               <listitem><para>White point (usually D50 or D65 though other values may be used), which specifies the color temperature of the white point of the working space. </para></listitem>
           </orderedlist>
        </sect3>
-        <sect3> <title>What gamma should my working space have?  </title>
+        <sect3> <title>What gamma should my working space have?</title>
           <para>The gamma of a color profile dictates what power transform needs to take place to properly convert from an image's embedded color profile (perhaps your working color space or your camera color profile) to another color profile with a different gamma, such as your chosen working space, or the display profile used to display the image on the screen or perhaps from one working space to another, or perhaps from your working space to your printer's color space. Dcraw outputs a 16-bit image with a linear gamma, which means that a histogram of the resulting image file shows the actual amount of light that each pixel on the camera sensor captured during the exposure (paraphrasing <ulink url="http://www.guillermoluijk.com/tutorial/dcraw/index_en.htm">this page</ulink>). (Which is why at present applying a camera profile to the dcraw output also requires applying an appropriate gamma transform to get to the desired working space, unless the camera profile also uses gamma=1.) </para>
           <para>One practical consequence of the gamma of a working space is that the higher the gamma, the more discrete tones are available for editing in the shadows, with consequently fewer tones available in the highlights. Changing the gamma of an image redistributes the number of tones available in the lighter and darker areas of an image. Theoretically, if you are working on a very dark-toned (low key) image you might want a working space with a higher gamma. And if you are working on a high key image, say a picture taken in full noon sunlight of a wedding dress with snow as a backdrop, you might want to choose a working space with a lower gamma, so you have more available tonal gradations in the highlights. </para>
           <para>Theory aside, in the real world of real image editing, almost everyone uses working spaces with either a gamma of either 1.8 or 2.2. sRGB and L*-RGB are two notable exceptions. </para>
@@ -211,7 +241,7 @@
        </sect3>
      </sect2>
 
-     <sect2 id="rendering">       <title>Printer profiles, rendering intents, and soft-proofing</title>
+     <sect2 id="rendering"> <title>Printer profiles, rendering intents, and soft-proofing</title>
       <sect3>   <title>Where do I get a printer profile?</title>
           <para>Whew!  We've come a long way - almost ready to print that image! Where do I get a printer profile?  Well, you already know the answer. You can use the generic profile that comes with your printer. You can purchase a professionally produced profile. If you ask, some commercial printing establishments will send you their printer profiles (which won't work with your printer!). You can make your own printer profile using Argyll, in which case your profile can be tailored to your particular paper, inks, and even image characteristics (if you are printing a series of images with a color palette limited to subdued browns, you don't need a printer profile that tries to make room for saturated cyans and blues). I cannot offer any more advice or links to more information on this subject because I've just started to learn about printing images (previously I've only viewed and shared my images via monitor display). But do see <ulink url="http://www.luminous-landscape.com/essays/fancy-graphics2.shtml">this page</ulink> for an excellent presentation of the benefits of producing your own printer profile, plus a resoundingly positive endorsement of using Argyll for making your printer profile.</para>
        </sect3>
@@ -248,7 +278,7 @@
        </sect3>
      </sect2>
 
-     <sect2 id="CM-defionitions">  <title>A few definitions and comments</title>
+     <sect2 id="CM-definitions">  <title>A few definitions and comments</title>
       <para>You've reached the end of this tutorial on color management. We've "color-managed" our way all the way from the camera and the monitor, to the working space, to the printer. I've learned a lot and I hope you have, too. What follow is some additional comments and definitions:</para>
           <para><emphasis>Assign</emphasis> a profile means change the meaning of the RGB numbers in an image by embedding a new profile without changing the actual RGB numbers associated with each pixel in the image. "Convert" to a profile means embed a new profile, but also change the RGB numbers at the same time so that the meaning of the RGB values - that is, the real-world visible color represented by the trio of RGB numbers associated with each pixel in an image - remains the same before and after the conversion from one space to another.</para>
           <para>On the other hand, every time you assign a new working space profile rather than convert to a new working space (except when initially assigning a camera profile to the image file you get from your raw processing software), the appearance of the image should more or less drastically change (usually for the worse, unless the wrong profile had previously been inadvertently embedded in the image).</para>
@@ -344,13 +374,13 @@
         <para>The WHYs of these bits of advice regarding which working space are beyond the scope of this tutorial.  See Bruce Lindbloom's excellent website (<ulink url="http://www.brucelindbloom.com/">Info, Information about RGB Working Spaces</ulink>) for a visual comparison of the gamut (array of included colors) of the various working color spaces.  See <ulink url="http://www.luminous-landscape.com/tutorials/prophoto-rgb.shtml">here</ulink> and <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm">here</ulink> for a pro and con presentation, respectively, of the merits of using large gamut working spaces. And while you are on the <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm">cambridgeincolour.com</ulink> website, check out the tutorial on color management. </para>
     </sect3>
 
-            <sect3 id="softproofing">                  <title>Soft Proofing</title>
+            <sect3 id="softproofing"> <title>Soft Proofing</title>
                 <para> Soft Proofing is a way of previewing on the screen (monitor) the result to be expected from an output on another device, typically a printer. Soft proofing will show you the difference to be expected before you actually do it (and waste your costly ink). So you can improve your settings without wasting time and money.
                 </para>
 
             </sect3>
 
-            <sect3 id="rendering-intention">          <title>Rendering intention</title>
+            <sect3 id="rendering-intention"> <title>Rendering intention</title>
 
                 <para>Rendering intent refers to the way gamuts are handled when the intended target color space cannot handle the full gamut.</para>
                 <itemizedlist>
@@ -371,7 +401,7 @@
 
            </sect3>
 
-           <sect3 id="iccprofile-links">            <title>Links</title>
+           <sect3 id="iccprofile-links"> <title>Links</title>
                <itemizedlist>
                <listitem><para><ulink url="http://www.oyranos.org/wiki/index.php?title=Main_Page">Color wiki</ulink></para></listitem>
                <listitem><para><ulink url="http://en.wikipedia.org/wiki/CIELAB">CIELab</ulink></para></listitem>
