@@ -4,7 +4,7 @@
     <note>
 
         <para>
-            RAW file support: if you are using RAW shooting mode with your camera, &digikam; is probably well able to deal with it. RAW support depends on the libraw library. To find out if your particular camera is supported, bring up the list of supported RAW cameras from the <menuchoice><guimenu>Help</guimenu><guimenuitem>RAW camera support</guimenuitem></menuchoice> menu.
+            RAW file support: if you are using RAW shooting mode with your camera, &digikam; is probably well able to deal with it. RAW support depends on the libraw library. To find out if your particular camera is supported, bring up the list of supported RAW cameras from the <menuchoice><guimenu>Help</guimenu><guimenuitem>Supported RAW Cameras</guimenuitem></menuchoice> menu.
         </para>
 
         <para>
@@ -33,31 +33,31 @@
     <tbody>
         <row>
             <entry>
-            <para><inlinemediaobject><imageobject><imagedata fileref="&path;intro-firewireconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
+                <para><inlinemediaobject><imageobject><imagedata fileref="&path;intro-firewireconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
             </entry>
 
             <entry>
-            FireWire (IEEE-1394 or i-link) connector from a professional digital still camera
-            </entry>
-        </row>
-
-        <row>
-            <entry>
-            <para><inlinemediaobject><imageobject><imagedata fileref="&path;intro-usbconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
-            </entry>
-
-            <entry>
-            Universal Serial Bus (USB) connector from a consumer digital still camera
+                FireWire (IEEE-1394 or i-link) connector from a professional digital still camera
             </entry>
         </row>
 
         <row>
             <entry>
-            <para><inlinemediaobject><imageobject><imagedata fileref="&path;intro-serialconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
+                <para><inlinemediaobject><imageobject><imagedata fileref="&path;intro-usbconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
             </entry>
 
             <entry>
-            Serial Port (RS-232) connector from an old digital still camera
+                Universal Serial Bus (USB) connector from a consumer digital still camera
+            </entry>
+        </row>
+
+        <row>
+            <entry>
+                <para><inlinemediaobject><imageobject><imagedata fileref="&path;intro-serialconnector.png" format="PNG" /> </imageobject></inlinemediaobject></para>
+            </entry>
+
+            <entry>
+                Serial Port (RS-232) connector from an old digital still camera
             </entry>
         </row>
 
@@ -74,11 +74,11 @@
     </para>
 
     <para>
-        Many old digital still cameras used <emphasis>Serial Port</emphasis> to communicate with host computer. Because photographs are big files and serial port transfers are slow, this connection is now obsolete. &digikam; supports these cameras and performs image transfers using the gPhoto2 program. You can find a complete list of supported digital cameras at this <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">url</ulink>.
+        Many old digital still cameras used <emphasis>Serial Port</emphasis> to communicate with host computers. Because photographs are big files and serial port transfers are slow, this connection is now obsolete. &digikam; supports these cameras and performs image transfers using the gPhoto2 program. You can find a complete list of supported digital cameras at this <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php">url</ulink>.
     </para>
 
     <note>
-        <para>libgphoto2 needs to be built with libexif to retrieve thumbnails to digiKam properly. EXIF support is required for thumbnail retrieval on some libgphoto2 camera drivers. If EXIF supported is not set with libgphoto2, you might not see thumbnails or the thumbnail extraction might be very slow.</para>
+        <para>libgphoto2 needs to be built with libexif to retrieve thumbnails to digiKam properly. EXIF support is required for thumbnail retrieval on some libgphoto2 camera drivers. If EXIF support is not set with libgphoto2, you might not see thumbnails or the thumbnail extraction may be very slow.</para>
     </note>
 
     <para>
@@ -86,21 +86,29 @@
     </para>
 
     <para>
-        Of the devices that are not directly supported by gPhoto2, there is support for the <emphasis>Mass Storage</emphasis> protocol, which is well supported under &GNU;/&Linux;. This includes many digital cameras and Memory Card Readers. Mass Storage interfaces are:
+        For the devices that are not directly supported by gPhoto2, there is support for the <emphasis>Mass Storage</emphasis> protocol, which is well supported under &GNU;/&Linux;. This includes many digital cameras and Memory Card Readers. Mass Storage interfaces are:
 
         <itemizedlist>
-            <listitem><para><emphasis>USB Mass Storage</emphasis>:  a computer interface using communication protocols defined by the USB Implementers Forum that run on the Universal Serial Bus. This standard provides an interface to a variety of storage devices, including digital cameras.</para></listitem>
 
-            <listitem><para><emphasis>FireWire Mass Storage</emphasis>: a computer interface using communication protocols developed primarily by Apple Computer in the 1990s. FireWire offers high-speed communications and isochronous real-time data services. Like USB Mass Storage, this standard provides an interface to a variety of storage devices, including digital still cameras. Almost all recent digital cameras support USB version 1 and eventually will support USB version 2; a very few support FireWire.
+            <listitem><para>
+                <emphasis>USB Mass Storage</emphasis>:  a computer interface using communication protocols defined by the USB Implementers Forum that run on the Universal Serial Bus. This standard provides an interface to a variety of storage devices, including digital cameras.
+            </para></listitem>
+
+            <listitem><para>
+                <emphasis>FireWire Mass Storage</emphasis>: a computer interface using communication protocols developed primarily by Apple Computer in the 1990s. FireWire offers high-speed communications and isochronous real-time data services. Like USB Mass Storage, this standard provides an interface to a variety of storage devices, including digital still cameras. Almost all recent digital cameras support USB version 1 and eventually will support USB version 2; a very few support FireWire.
             </para></listitem>
 
         </itemizedlist>
 
-        To use a generic Mass Storage device with &digikam;, select <guilabel>Mounted Camera</guilabel> item in <link linkend="cameraselection.anchor">Camera Setup</link> list and set the correct mount point path.
+        To use a generic Mass Storage device with &digikam;, select <menuchoice><guimenu>Import</guimenu><guimenuitem>Camera</guimenuitem><guimenuitem>Add Camera Manually...</guimenuitem></menuchoice>, add your device and set the correct mount point path. 
+    </para>
+
+    <para>
+        For details see the chapter <link linkend="setup-camera">Configure digiKam...</link>, into Section "Camera".
     </para>
 
 </sect1>
- 
+
 <!--
 Local Variables:
 mode: sgml
