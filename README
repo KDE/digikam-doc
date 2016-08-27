@@ -45,11 +45,12 @@ Note : Another script by Andi Clemens can be used to automate the above instruct
 ----------------------------------------------------------------------
 
 !----------Important-------------!
-Since the documentation is very good it is also very demanding in terms of volume, 99% whereof are screenshots.
-In order to limit the byte count to the minimum the following command chain shall be used to reduce the png file size.
-A factor of 2-4 can be gained. From within the folder where the png reside issue this command (requires pngnq and optipng
-to be installed on the system):
 
-pngnq -s 1 ./*.png && optipng *-nq8.png && rename -f s/-nq8\.png/.png/ *-nq8.png
+Since the documentation is very good it is also very demanding in terms of volume, 99% whereof are screenshots.
+
+In order to limit the byte count to the minimum the following command chain shall be used to reduce the png file size.
+
+A factor of 2-4 can be gained. From within the folder where the png reside, use script optpng.sh from project/ sub-dir
+(requires pngnq and optipng to be installed on the system)
 
 digiKam team
