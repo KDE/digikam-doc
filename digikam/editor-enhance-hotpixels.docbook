@@ -1,0 +1,114 @@
+  <sect3 id="editor-enhance-hotpixels" >
+    <sect3info>
+      <title>Hot Pixels Correction</title>
+      <abstract>
+        <para>
+&digikam;
+The  <emphasis>Hot Pixels</emphasis> tool facilitates removing hot pixels from photographs taken with a CCD camera. It uses algorithms from the JPEGPixi project which are copyrighted by Martin Dickopp.
+</para>
+      </abstract>
+      <keywordset>
+        <keyword>digiKam</keyword>
+      </keywordset>
+    </sect3info>
+    <title>Introduction</title>
+    <para>
+Most current digital cameras produce images with several brightly colored &quot;bad pixels&quot; when using slow shutter speeds. Night images can be ruined by these &quot;bad pixels&quot;. There are three different types of &quot;bad pixels&quot;:
+
+<itemizedlist>
+        <listitem>
+          <para>Stuck pixels: it's a pixel that always reads high or is always on to maximum power on all exposures. This produces a bright pixel usually of red, blue or green color in the final image. A stuck pixel will occur regardless of shutter speed, aperture size or any other user settings. It will occur on a normal exposure and tends to be more obvious under bright condition.</para>
+        </listitem>
+        <listitem>
+          <para>Dead pixels: it's a pixel that reads zero or is always off on all exposures. This state produces a black pixel in the final image. Similar to stuck pixel, a dead pixel will occur regardless of shutter speed, aperture size or any other user settings.</para>
+        </listitem>
+        <listitem>
+          <para>Hot pixels: it's a pixel that reads high (bright) on longer exposures as white, red, or green color. The longer the exposure time, the more visible hot pixels will become. These pixels will not be visible in bright conditions.</para>
+        </listitem>
+      </itemizedlist>
+
+Note that stuck or dead pixels will occur at the same location for all images. If the location of the stuck or dead pixel occurs at different locations, it may be a Hot Pixel.
+</para>
+    <para>
+
+Stuck, dead or hot pixels are a problem in particular when shooting in high quality raw mode since many cameras have built-in hot pixel suppression applied automatically when JPEG compression is used (which is mostly the case).
+</para>
+    <para>
+This tool can be used to fix the &quot;Hot pixels&quot; and &quot;Stuck Pixels&quot; on a photograph using a black frame subtraction method. There is no yet a manual editor to select bad pixels.
+</para>
+    <sect4 id="using-blackframecreation" >
+      <title>Create the Black Frames</title>
+      <para>
+The Black Frame substraction method is the most accurate &quot;Hot Pixels&quot; and &quot;Stuck Pixels&quot; removal. First you have to create a &quot;Black Frame&quot; as a reference. This is easy to do. When you finish taking your long exposure shots, put a lens cap on the camera and take one &quot;dark&quot; image with the same exposure time as the images before. This image will be all dark, but with close examination you will see that it has the Hot and Stuck Pixels (colored dots). These are positioned at the same places as on your previous shots.
+</para>
+      <para>
+Load this file to the widget using the <guilabel>Black Frame</guilabel> button. The toll will process an automatic detection of Hot and Stuck Pixels. They will be highlighted in the control panel preview areas.
+</para>
+      <warning>
+        <para>
+If you use an old digital camera, it is important to re-shoot the Black Frame next time you are taking a long exposure images to detect new Hot and Stuck Pixels on CCD defects.
+</para>
+      </warning>
+    </sect4>
+    <sect4 id="using-hotpixels" >
+      <title>Using the hotpixel tool</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-hotpixels.png" format="PNG" />
+          </imageobject>
+          <textobject>
+            <phrase>The Hot Pixels Dialog</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+At first, as explained in the previous section, you need to load a Black Frame corresponding to the image to correct. An automatic parsing will be processed on the Black Frame to find bad pixels. Note that the widget will remember the previous Black Frame used on the last  session and it will be re-opened automatically with the next session.
+</para>
+      <para>
+The image panel and the original preview help you to pan within the image. The preview window shows the filter output using the current settings. Bad Pixels are highlighted on all preview areas.
+</para>
+      <para>
+Select an area to see bad pixels on preview and the filter result using 'Separate View' options of image panel. Choose the best  <guilabel>Filter</guilabel> method to interpolate pixels or pixel blocks. These are the available filters:
+
+<itemizedlist>
+          <listitem>
+            <para>Average: the pixels adjacent to the pixel block are averaged. The resulting color is assigned to all pixels in the block. For 1-dimensional interpolation, this is done separately for one pixel-wide, horizontal or vertical stripes.</para>
+          </listitem>
+          <listitem>
+            <para>Linear: the pixels which have a distance of 1 from the pixel block are used to calculate a bi-linear surface (2-dim), or a group of linear curves (1-dim), which is then used to assign interpolated colors to the pixels in the block.</para>
+          </listitem>
+          <listitem>
+            <para>Quadratic: this is the default filtering method. The pixels which have a distance of 2 or less from the pixel block are used to calculate a bi-quadratic surface (2-dim), or a group of quadratic curves (1-dim), which is then used to assign interpolated colors to the pixels in the block.</para>
+          </listitem>
+          <listitem>
+            <para>Cubic: the pixels which have a distance of 3 or less from the pixel block are used to calculate a bi-cubic surface (2-dim), or a group of cubic curves (1-dim), which is then used to assign interpolated colors to the pixels in the block.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+    </sect4>
+    <sect4 id="inaction-hotpixels" >
+      <title>The hotpixels tool in action</title>
+      <para>
+Below, you can see the Hot Pixels Correction tool applied to a color photograph taken with a deficient digital camera at 200 ISO sensitivity with a long exposure shot. The original image magnified to 300% is (1), the corrected image (2).
+</para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-hotpixels-preview.png" format="PNG" />
+          </imageobject>
+          <textobject>
+            <phrase>The Pixels Correction Preview</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

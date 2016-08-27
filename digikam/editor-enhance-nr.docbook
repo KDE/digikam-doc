@@ -1,0 +1,154 @@
+  <sect3 id="editor-enhance-nr" >
+    <sect3info>
+      <title>Noise Reduction</title>
+      <abstract>
+        <para>
+&digikam;
+The  <emphasis>Noise Reduction</emphasis> is a powerful tool to reduce the image noise.
+It uses an algorithm copyrighted by Peter Heckert.
+</para>
+      </abstract>
+      <keywordset>
+        <keyword>Digikam</keyword>
+        <keyword>Noise reduction</keyword>
+        <keyword>Blur</keyword>
+      </keywordset>
+    </sect3info>
+    <title>Introduction</title>
+    <para>
+  This tool provides selectable image filters to remove specks or other artifacts caused by junk such as dust or hair on the lens. It also can be used to remove <emphasis>Sensor Noise</emphasis> from the camera that maybe caused by high ISO settings, as well as the so-called <emphasis>
+Moir&eacute; Patterns</emphasis> on scanned images from books or magazines.
+</para>
+    <para>
+  If you want more information about what's digital camera sensor noise, please take a look in this <ulink url="http://www.cambridgeincolour.com/tutorials/noise.htm" >tutorial</ulink>.
+</para>
+    <sect4 id="using-noisereduction" >
+      <title>Using the Noisereduction Tool</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-noisereduction.png" format="PNG" />
+          </imageobject>
+          <textobject>
+            <phrase>The Noise Reduction Dialog</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+The above screenshot shows a typical scene taken with an digital camera using a high sensitivity ISO setting. It shows grainy noise which can be reduced successfully with this tool.
+</para>
+      <para>
+The re-sizeable image panel with the original preview helps you to pan within the image. Move the red rectangle around to select the area that lets you judge on the optimal filter settings. The preview window shows the filter output using the current settings. It can be rearranged in four different combinations as depicted in the icons below the original preview. This screenshot shows the first arrangement where the same cutout is shown for comparison. On the bottom of preview area, you can see <guilabel>Zoom Factor</guilabel> settings to magnify an area of the image.
+</para>
+      <para>
+You can see below a full description of all parameters. In most cases only <guilabel>Details</guilabel> tab is needed and the other parameters available into <guilabel>Advanced</guilabel> tab can be left at their default setting.
+
+<itemizedlist>
+          <listitem>
+            <para>
+              <guilabel>Radius</guilabel>: this control selects the gliding window size used for the filter. Larger values do not increase the amount of time needed to filter each pixel in the image but can cause blurring. This window moves across the image, and the color in it is smoothed to remove imperfections. In any case it must be about the same size as noise granularity or somewhat more. If it is set higher than necessary, then it can cause unwanted blur.
+</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Threshold</guilabel>: use the slider for coarse adjustment, and the spin control for fine adjustment. This controls edge detection sensitivity. This value should be set so that edges and details are clearly visible and noise is smoothed out. This value is not bound to any intensity value, it is bound to the second derivative of intensity values. Simply adjust it and watch the preview. Adjustment must be made carefully, because the gap between noisy, smooth, and blur is very small. Adjust it as carefully as you would adjust the focus of a camera.
+</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Texture</guilabel>: this control set the texture accuracy. This value can be used, to get more or less texture accuracy. When decreased, then noise and texture are blurred out, when increased then texture is amplified, but also noise will increase. It has almost no effect to image edges, opposed to filter <guilabel>Edge</guilabel>, which would blur edges, when increased. If <guilabel>Edge</guilabel> is adjusted in away so that edges are sharp, and there is still too much area noise, then <guilabel>Texture</guilabel> detail could be used to reduce noise without blurring edges. Another way would be to decrease <guilabel>Radius</guilabel> and to increase <guilabel>Edge</guilabel>.
+</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Sharpness</guilabel>: this control set the sharpness level. This value defines the pixel distance in which the filter looks ahead for luminance variations. When this value is increased, then spikenoise is erased. You can eventually readjust filter <guilabel>Edge</guilabel>, when you changed this setting. When this value is to high, then the adaptive filter cannot longer accurately track image details, and noise can reappear or blur can occur.
+</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Edge</guilabel>: this control set the edge accuracy for sharpness. This value improves the frequency response for the filter. When it is too strong then not all noise can be removed, or spike noise may appear. Set it near to maximum, if you want to remove weak noise or JPEG-artifacts, without loosing detail.
+</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Erosion</guilabel>: this control set the phase shift for edges. This value can be used to erodes singular spikes and it has a smooth effect to edges, and sharpens edges by erosion, so noise at edges is eroded. The effect is dependant from <guilabel>Sharpness</guilabel>, <guilabel>Damping</guilabel>, and <guilabel>Edges</guilabel>. Set it to minimum, if you want to remove weak noise or JPEG-artifacts. When this value is increased, then also increasing <guilabel>Damping</guilabel> is often useful. This setting can provides sharpening and antialiasing effect to edges when spike noise is corrected.
+</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Luminance</guilabel>: this control set the luminance tolerance of image. It's recommended to use only <guilabel>Color</guilabel> or <guilabel>Luminance</guilabel> tolerance settings to make an image correction, not the both at the same time. This settings don't influence the main smoothing process controlled by <guilabel>Details</guilabel> settings.
+</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Color</guilabel>: this control set the color tolerance of image. It's recommended to use only <guilabel>Color</guilabel> or <guilabel>Luminance</guilabel> tolerance settings to make an image correction, not the both at the same time. This settings don't influence the main smoothing process controlled by <guilabel>Details</guilabel> settings.
+</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Gamma</guilabel>: this control set the gamma tolerance of image. This value can be used to increase the tolerance values for darker areas (which commonly are more noisy). This results in more blur for shadow areas.
+</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Damping</guilabel>: this control set the phase jitter damping adjustment. This value defines how fast the adaptive filter-radius reacts to luminance variations. If increased, then edges appear smoother, if too high, then blur may occur. If at minimum then noise and phase jitter at edges can occur. It can suppress spike noise when increased and this is the preferred method to remove it.
+</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Save As</guilabel> and <guilabel>Load</guilabel>: these buttons are used to do just that. Any Noise Reduction parameters that you have set can be saved to the filesystem and loaded later.
+</para>
+          </listitem>
+          <listitem>
+            <para>
+              <guilabel>Defaults</guilabel>: this button resets all settings to default values.
+</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+    </sect4>
+      <sect4 id="inaction-noisereduction" >
+        <title>Noisereduction in action</title>
+        <para>
+  This is an example of how the noise reduction can change your life. The original image is (1) and the corrected image is (2). The noise reduction was applied using default settings.
+  </para>
+        <para>
+          <inlinemediaobject>
+            <imageobject>
+              <imagedata fileref="&path;editor-noisereduction-preview.png" format="PNG" />
+            </imageobject>
+            <textobject>
+              <phrase>The Noise Reduction in Action</phrase>
+            </textobject>
+          </inlinemediaobject>
+        </para>
+      </sect4>
+      <sect4 id="using-blurfilter" >
+        <title>Softening a Photograph</title>
+        <para>
+          Sometimes an image is too crisp for your purposes. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the Blur Tool with the <menuchoice>
+            <guimenu>Enhance</guimenu>
+            <guimenuitem>Blur</guimenuitem>
+          </menuchoice> menu entry and experiment with the level. The preview window on the right of the dialog shows the effect of the operation on your photograph.
+      </para>
+        <example>
+          <title>The Blur Tool in Action</title>
+          <screenshot>
+            <screeninfo>The Blur Tool in Action</screeninfo>
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="&path;editor-blur.png" format="PNG" />
+              </imageobject>
+            </mediaobject>
+          </screenshot>
+        </example>
+      </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
