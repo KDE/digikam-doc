@@ -1,0 +1,38 @@
+<sect1 id="using-movieformats"> <title>Supported Movie Formats</title>
+
+    <sect2> <title>Introduction</title>
+
+	<para>
+	    Many digital cameras support taking of short movie clips. 
+	    These clips are usually stored in AVI or MP4 format. 
+	    &digikam; understands metadata from these formats and will generate 
+	    thumbnails for the movie files. 
+	    However, &digikam; is not a movie editing application and it does not have any 
+	    built-in movie viewing or editing capabilities. 
+	    If you double click on a movie file &digikam; you can preview video 
+	    or choose a viewing application through your desktop settings.
+	</para>
+
+    </sect2>
+
+    <sect2> <title>Video Formats</title>
+
+        <para>
+    	    &digikam; relies on Qt5Multimedia framework to handle video files. 
+    	    This framework will able to play video files depending on the availability of video codec 
+    	    installed on your system. &digikam; do not include extra video codec.
+    	    On Linux desktop, this framework will use GStreamer backend.
+    	    On other desktop operating system, you will need to install extra video codecs.
+        </para>
+    
+    </sect2>
+
+</sect1>
+ 
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
