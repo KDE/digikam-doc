@@ -8,30 +8,28 @@
             </inlinemediaobject>
         </para>
 
-        <para>&digikam;'s main window has four areas. The first one is a sidebar in the left margin that lets you switch between 4 views: <guibutton>Albums</guibutton>, <guibutton>Dates</guibutton>, <guibutton>Tags</guibutton> and <guibutton>Searches</guibutton>. Then there is a tree navigator panel showing the selected view. The main image window is right in the center. And on the right hand side there is another <link linkend="using-sidebar">sidebar</link> shown. This one can be used to show all information about your images. You can use all these views to organize and find your photographs.
+        <para>&digikam;'s main window has up to four areas in the center for control, selection and showing results (here showing only two). They are surrounded by the menu bar and the tool bar at the top, the staus bar at the bottom and the left and right side bar. The left sidebar lets you switch between 8 views: Albums (shown here), Tags, Labels, Dates, Timeline, Search, Fuzzy (Search) and People (Tags). In the center we see here the icon area, showing thumnails of the content of the selected album, and the preview area, showing the selected image. In the top left corner of the preview we have a few buttons for moving back and forth through the content of the album, for rotating the image, for showing or adding face tags and to switch to fullscreen mode. And on the right hand side there is another <link linkend="using-sidebar">sidebar</link> shown. This one can be used to show all information about your images. You can use all these views to organize and find your photographs.
         </para>
-        <para>To unclutter the interface, either toggle the sidebars away with a &LMB;, or use the full screen view mode (F11, Ctrl+Shift+F).</para>
+        
+        <para> Don't worry if your main window looks quite different at the moment. You will soon learn how to switch the different areas on and off and at some point you might get a look very similar to the above screenshot.</para> 
+       
         <para>Drag and Drop of images works about everywhere: d&amp;d an image into another branch of the album tree, across the horizontal album separation line, or to another application window. The only restriction is that you cannot d&amp;d into tag, date or searches.</para>
 
         <anchor id="maininterface-statusbar"/>
-        <para>The status bar at the bottom shows in all four views:
+        <para>The status bar at the bottom shows in all eight views:
                 <itemizedlist>
                     <listitem><para>the file name when selecting a single file</para></listitem>
                     <listitem><para>selection information when several items are selected</para></listitem>
-                    <listitem><para>progress bar for batch processes, &eg; assigning tags</para></listitem>
                     <listitem><para>Quick filters:</para>
-                    <para>- search string field: live filter on file names, captions (comments), and tags</para>
-                    <para>- a file type selector lets you single out the most common ones: JPEG, PNG, TIFF, RAW, movies and audio</para>
-                    <para>- a rating filter to select images rated with the clicked number of stars</para>
+                    <para>- Information how many filters are active</para>
+                    <para>- a trash bin button to reset all active filters</para>
+                    <para>- a funnel button to open the filter settings panel</para>
                     </listitem>
-                    <listitem><para>a thumbnail size slider</para></listitem>
-                    <listitem><para>a navigation bar that leads through the images in the main view</para></listitem>
+                    <listitem><para>a progress bar for batch processes, &eg; assigning tags</para></listitem>
+                    <listitem><para>a thumbnail and preview size slider with buttons for "Fit to Window" and "Zoom to 100%"</para></listitem>
+                    <listitem><para>a size selection popup list in % for the preview</para></listitem>
                 </itemizedlist>
         </para>
-
-        <note>
-            <para>The text filter is only used for those fields which are actually displayed in the icon view. E.g. filename matching only works if filenames are displayed. The fields which are displayed can be configured in the album settings dialog.</para>
-        </note>
 
         <para>
         The window top shows the menu bar and the main toolbar below.
@@ -48,39 +46,44 @@
 
         <orderedlist>
 
-            <listitem><para>Go one view backwards in the main window view history (Alt+Left)</para> </listitem>
+            <listitem><para>Open Image Editor with the selected image</para> </listitem>
 
-            <listitem><para>Go one view forwards in the main window view history (Alt+Right)</para> </listitem>
+            <listitem><para>Open Light Table (L)</para> </listitem>
 
-            <listitem><para>Add images, import function (Ctrl+I)</para></listitem>
+            <listitem><para>Open  <link linkend="bqm.anchor">Batch Queue Manager</link> (B)</para></listitem>
+           
+            <listitem><para>Import (drop down menue showing all connected cameras and mass storage devices)</para></listitem>
 
-            <listitem><para>Create a new Album (Ctrl+N)</para></listitem>
+            <listitem><para>Switch to thumbnail view</para></listitem>
 
-            <listitem><para>Edit Album properties</para></listitem>
+            <listitem><para>Toggle preview of selected image</para></listitem>
 
-            <listitem><para>Quick Search tool (Ctrl+F)</para></listitem>
+            <listitem><para>Switch to configurable table view</para></listitem>
 
-            <listitem><para>View image (F3)</para></listitem>
-
-            <listitem><para>Open in Image Editor (F4)</para></listitem>
-
-            <listitem><para>Rename Image (F2)</para></listitem>
+            <listitem><para>Slideshow drop down menue</para></listitem>
 
             <listitem><para>Toggle Full Screen (Ctrl+Shift+F)</para></listitem>
-
-            <listitem><para>Slide Show (F9)</para></listitem>
 
         </orderedlist>
 
         </para>
+        
+        <para>
+            You can customize the toolbar by choosing <menuchoice><guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</guimenuitem></menuchoice>
+        </para>    
 
     </sect2>
 
     <sect2 id="using-myalbumsview">
     <title>Albums View</title>
+    
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-mainwindow-albumview.png" format="PNG" /> </imageobject>
+            </inlinemediaobject>
+        </para>
 
         <para>
-        The &quot;Albums&quot; tree provides an organized view of your photograph albums. All photographs that are managed by &digikam; are stored in a single folder branch. The albums can be sorted by their folder layout on the hard disk, by the Collection name that has been set in the Album Properties or by the Date of that Albums (this date can also be changed in the Properties of each Album).
+        By clicking the &quot;Albums&quot; button on the left side bar you toggle the &quot;Albums&quot; tree which provides an organized view of your photograph albums. The albums can be sorted by their folder layout on the hard disk (or on removable media or network shares), by the Category that has been set in the Album Properties or by the Date of that Albums (this date can also be changed in the Properties of each Album).
         </para>
 
         <para>
@@ -91,7 +94,7 @@
         <title>Creating a New Album</title>
 
             <para>
-                There are a number of ways to create a new Album. You can create a new Album when you upload new photographs from the Camera using the Camera Tool. You can also create a new empty Album by clicking the <guibutton>New</guibutton> button on the tool bar. As an additional option, you can create a new Album by importing an existing folder of photographs from your computer; just select <menuchoice><guimenu>Import</guimenu> <guimenuitem>Add Folders...</guimenuitem></menuchoice> from the menu bar and select the folder that you want to import. An Album will be created with the same name as the hard disk folder. You can use drag and drop to import a folder. Drag a folder icon, for example from a &konqueror; window. Then drop it on the album list on the left. A menu will appear that gives you the option to move or copy the folder into &digikam;.
+                There are a number of ways to create a new Album. You can create a new Album when you upload new photographs from the Camera using <menuchoice><guimenu>Import</guimenu> <guimenuitem>Cameras</guimenuitem></menuchoice>. You can also create a new empty Album with <menuchoice><guimenu>Album</guimenu> <guimenuitem>New...</guimenuitem></menuchoice> (Ctrl+N) in the &quot;Albums&quot; view. As an additional option, you can create a new Album by importing an existing folder of photographs from your computer; just select <menuchoice><guimenu>Import</guimenu> <guimenuitem>Add Folders...</guimenuitem></menuchoice> from the menu bar and select the folder that you want to import. An Album will be created with the same name as the hard disk folder. You can use drag and drop to import a folder. Drag a folder icon, for example from a &konqueror; window. Then drop it on the album list on the left. A menu will appear that gives you the option to move or copy the folder into &digikam;.
             </para>
 
         </sect3>
