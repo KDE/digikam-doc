@@ -1,0 +1,105 @@
+<sect3 id="editor-color-auto">
+    <sect3info> <title>Auto-Correction Tools</title>
+
+    <abstract>
+        <para>
+        This tool set provides five automatic correction levels that will improve an image in most cases. Use this tool before going into the more involved manual adjustments.
+        </para>
+    </abstract>
+
+    </sect3info>
+
+    <title>Introduction</title>
+    <anchor id="autocolorcorrectiontool.anchor"/>
+
+    <para>
+
+        The <guilabel>Normalize</guilabel>, <guilabel>Equalize</guilabel>, <guilabel>Auto Levels</guilabel>, and <guilabel>Stretch Contrast</guilabel>
+        available from <menuchoice><guilabel>Correct</guilabel><guimenuitem>Auto-Correction</guimenuitem></menuchoice> menu entry menu will attempt to 
+        work out the best color levels automatically. You will need to experiment with the effects of these functions to see what works best with your photograph.
+
+        <itemizedlist>
+
+            <listitem>
+                <para>
+                    <guilabel>Normalize</guilabel>: this method scales brightness values across the selected image so that the darkest 
+                    point becomes black, and the brightest point becomes as bright as possible without altering its hue. 
+                    This is often a "magic fix" for images that are dim or washed out.
+
+                    <example>
+                        <title>Normalize Colors Correction Preview</title>
+                        <screenshot><screeninfo>Normalize Colors Correction Preview</screeninfo>
+                            <mediaobject><imageobject><imagedata fileref="&path;editor-normalize.png" format="PNG" /> </imageobject></mediaobject>
+                        </screenshot>
+                    </example>
+
+                </para>
+            </listitem>
+
+            <listitem>
+                <para>
+                    <guilabel>Equalize</guilabel>: this method adjusts the brightness of colors across the selected image so that 
+                    the histogram for the Value channel is as flat as possible, that is, so that each possible brightness value appears 
+                    at about the same number of pixels as each other value. Sometimes Equalize works wonderfully at enhancing the contrasts of an image. 
+                    Other times it gives garbage. It is a very powerful operation, which can either work miracles on an image or destroy it.
+
+                    <example>
+                        <title>Equalize Colors Correction Preview</title>
+                        <screenshot>
+                            <screeninfo>Equalize Colors Correction Preview</screeninfo>
+                            <mediaobject><imageobject><imagedata fileref="&path;editor-equalize.png" format="PNG" /></imageobject></mediaobject>
+                        </screenshot>
+                    </example>
+
+                    </para>
+            </listitem>
+
+            <listitem>
+                <para>
+                    <guilabel>Auto-levels</guilabel>: this method maximizes the tonal range in the Red, Green, and Blue channels. 
+                    It determines the image shadow and highlight limit values and adjust the Red, Green, and Blue channels to a full histogram range.
+
+                    <example>
+                        <title>Auto Levels Correction Preview</title>
+                        <screenshot>
+                            <screeninfo>Auto Levels Correction Preview</screeninfo>
+                            <mediaobject><imageobject><imagedata fileref="&path;editor-autolevels.png" format="PNG" /></imageobject></mediaobject>
+                        </screenshot>
+                    </example>
+
+                </para>
+            </listitem>
+
+            <listitem>
+                <para>
+                    <guilabel>Stretch Contrast</guilabel>: this method enhances the contrast and brightness of the RGB values 
+                    of an image by stretching the lowest and highest values to their fullest range, adjusting everything in between. 
+                    This is noticeable only with washed-out images and can be a good fix-it tool for bad photographs.
+
+                    <example>
+                        <title>Stretch Contrast Correction</title>
+                        <screenshot>
+                            <screeninfo>Stretch Contrast Correction Preview</screeninfo>
+                            <mediaobject><imageobject><imagedata fileref="&path;editor-stretchcontrast.png" format="PNG" /></imageobject></mediaobject>
+                        </screenshot>
+                    </example>
+                </para>
+            </listitem>
+
+        </itemizedlist>
+
+    </para>
+
+    <para>
+        The results of any adjustments you make will not be remembered until you save your photograph.
+    </para>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
