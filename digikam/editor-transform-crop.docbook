@@ -3,35 +3,65 @@
     <sect4 id="using-manualcrop"> <title>Manual Crop</title>
 
         <para>
-        Cropping a photograph is not only a common operation, but an often underestimated photographer's tool to compose an image. The Image Editor makes it very easy. To crop a photograph simply drag a rectangle over the image by holding down the &LMB; and moving the mouse. You will see a wire frame rectangle appear as you move the mouse.
+            Cropping a photograph is not only a common operation, but an often underestimated photographer's tool to compose an image. 
+            The Image Editor makes it very easy. To crop a photograph simply drag a rectangle over the image by holding down the &LMB; and moving the mouse. 
+            You will see a wire frame rectangle appear as you move the mouse.
         </para>
 
-        <example>  <title>The Current Image Selection in Image Editor</title>
-        <screenshot><screeninfo>The Current Image Selection in Image Editor</screeninfo>
-        <mediaobject><imageobject> <imagedata fileref="&path;editor-imageselection.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
+        <example>
+            <title>The Current Image Selection in Image Editor</title>
+            <screenshot><screeninfo>The Current Image Selection in Image Editor</screeninfo>
+            <mediaobject><imageobject> <imagedata fileref="&path;editor-imageselection.png" format="PNG" /> </imageobject></mediaobject></screenshot> 
         </example>
 
         <para>
-        When you release the button the area of the photograph that will be removed by a crop operation is greyed out. This allows you to get a good view of how your photograph will look once you have cropped it. You can change the size of the cropped area by dragging the corners of the rectangle, and you can create a new crop area simply by dragging out another rectangle.
+            When you release the button the area of the photograph that will be removed by a crop operation is greyed out. 
+            This allows you to get a good view of how your photograph will look once you have cropped it. 
+            You can change the size of the cropped area by dragging the corners of the rectangle, and you can create a new crop area simply by dragging out another rectangle.
         </para>
 
         <para>
-        Once you are happy with the crop, click on the 
-        <inlinemediaobject>
-        <imageobject><imagedata fileref="&path;editor-cropbutton.png" format="PNG"/></imageobject>
-        <textobject> <phrase>The Image Editor Crop Button</phrase> </textobject>
-        </inlinemediaobject> 
-        button on the toolbar and the photograph will be cropped (&Ctrl;+X). Use the 
-        <menuchoice><guimenu>File</guimenu>
-        <guimenuitem>Save</guimenuitem></menuchoice> or 
-        <menuchoice><guimenu>File</guimenu>
-        <guimenuitem>Save As</guimenuitem></menuchoice> 
-        entries in the File menu to save the newly cropped photograph.
+            Once you are happy with the crop, click on the 
+
+            <inlinemediaobject>
+                <imageobject><imagedata fileref="&path;editor-cropbutton.png" format="PNG"/></imageobject>
+                <textobject> <phrase>The Image Editor Crop Button</phrase> </textobject>
+            </inlinemediaobject>
+
+            button on the toolbar and the photograph will be cropped (&Ctrl;+X). Use the 
+            <menuchoice><guimenu>File</guimenu>
+            <guimenuitem>Save</guimenuitem></menuchoice> or 
+            <menuchoice><guimenu>File</guimenu>
+            <guimenuitem>Save As</guimenuitem></menuchoice> 
+            entries in the File menu to save the newly cropped photograph.
         </para>
 
     </sect4>
 
-    <sect4 id="using-proportionalcrop">      <title>Proportional Crop</title>
+    <sect4 id="using-autocrop"> <title>Auto Crop</title>
+
+        <para>
+            The Auto Crop tool removes the borders from an image. It searches the largest possible border area that is all the same color,
+            and then crops this area from the image, as if you had used the Crop tool.
+        </para>
+
+        <para>
+            This tool can be used for example to crop a stiched panorama, assembly with many images, which generate black borders around.
+        </para>
+
+        <example>
+            <title>Stiched Panorama Processed With Auto Crop</title>
+            <screenshot>
+                <screeninfo>Stiched Panorama Processed With Auto Crop</screeninfo>
+                <mediaobject><imageobject>
+                    <imagedata fileref="&path;editor-transform-autocrop.png" format="PNG" />
+                </imageobject></mediaobject>
+            </screenshot> 
+        </example>
+
+    </sect4>
+
+    <sect4 id="using-proportionalcrop"> <title>Proportional Crop</title>
 
         <anchor id="ratiocroptool.anchor"/>
 
