@@ -1,0 +1,60 @@
+<sect3 id="editor-enhance-localcontrast" >
+    <sect3info>
+        <title>Local Contrast Tool</title>
+        <abstract>
+            <para>
+                The <emphasis>Local Contrast</emphasis> tool render pseudo-HDR image.
+            </para>
+        </abstract>
+
+        <keywordset>
+            <keyword>HDR</keyword>
+            <keyword>Tone Mapping</keyword>
+        </keywordset>
+
+    </sect3info>
+
+    <title>Improve Photos exposure with Local Contrast Tool</title>
+
+    <para>
+         There are multiple way to render HDR image to improve photos containing under or overexposed areas. With camera devices, usual tools lets you merge multiple shots 
+         with different exposures into one perfectly exposed photo. This work nicely but require some limitation, as for example the necessity to shot static subjects.
+         But what if you have just in case of single image, or with dynamic subjects? You might want to give a try to the Local Contrast feature.
+         It’s based on the LDR Tonemapping utility which is designed to improve the dynamic range of the photo by reducing its global contrast and increasing the local contrast.
+         It does so by generating a desaturated and blurred version of the photo. It then combines the RGB channels of the original photo with the desaturated blurred image 
+         using either the Linear or Power function. Sounds complicated? Don’t worry, the Local Contrast tool is rather straightforward to use, 
+         so you don’t have to understand all its intricacies in order to achieve pleasing results.
+    </para>
+
+    <example>
+        <title>The Local Contrast in Action</title>
+            <screenshot>
+                <screeninfo>The Local Contrast Tool in Action</screeninfo>
+                <mediaobject><imageobject>
+                    <imagedata fileref="&path;editor-localcontrast.png" format="PNG" />
+                </imageobject></mediaobject>
+            </screenshot>
+    </example>
+
+    <para>
+        Open the photo you want in the editor and choose <menuchoice><guimenu>Enhance</guimenu><guimenuitem>Local Contrast</guimenuitem></menuchoice>.
+        The tool lets you apply up to four tonemapping operations called stages. 
+        Each stage offers two parameters for you to tweak: Power and Blur. The former allows you to specify the desaturation level, 
+        while the latter lets you adjust the affected areas on the photo. 
+        To preview the result, hit the Try button. Once you are satisfied with the result, press OK to apply the process to the photo.
+    </para>
+
+    <para>
+        While the Local Constrast tool may sound like an easy way to fix photos, you should use it with care: 
+        sometimes it can do more damage than good, producing unnaturally looking photos.
+    </para>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
