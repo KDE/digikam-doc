@@ -1,60 +1,82 @@
 <sect2> <title>Special Effects (Filters)</title>
 
-    <sect3 id="infrared">
-    <sect3info>
+    <sect3 id="coloreffects">
 
-    <title>Simulate Infrared Film</title>
+    <sect3info>
+    <title>Solarize Image</title>
 
     <abstract>
     <para>
-    The &digikam; <emphasis>Infrared Film</emphasis> filter simulates traditional infrared film material.
+    The &digikam; <emphasis>Color Effects</emphasis>tool provides four color effects: a solarization effect, a velvia filter, neon effect and edge filter.
     </para>
     </abstract>
+
+    <keywordset>
+    <keyword>Solarization</keyword>
+    <keyword>Velvia</keyword>
+    </keywordset>
 
     </sect3info>
 
     <title>Introduction</title>
 
     <para>
-    Simulating classical infrared film material (the effect is rendered in black and white) is an interesting alienation effect that is even stronger and more dramatic than pure black and white conversion. Contrast and an abstract touch are improved, which can underpin the expression of the photographer as an artist.
-
-    It is like taking an image in black and white with a red filter on the camera lenses. Areas which reflect little red light, &eg; the sky, will show as low density, dark areas. Areas which are excellent reflectors of red light, e.g. most green foliage, will be high density areas. And snow landscapes are really dramatic.
+    In the age of chemical image processing, solarizing (also known as Sabatier) was an effect created by
+    exposing a partially developed print to a brief flash of light, then completing the development.
+    The colored, darker areas shield the additional light from the sensitive photo layers, which has
+    the net effect of making the lighter areas darker and colors being inverted during the second exposure.
+    The result resembles a partially negative image. The tool allows to adjust the interesting effect smoothly.
     </para>
+
+    <sect4 id="using-solarize"> <title>Using Solarization</title>
 
     <para>
-    The algorithm is based on the method of the 'Simulate Infrared Film' tutorial of the GimpGuru.org web site available at <ulink url="http://www.gimpguru.org/Tutorials/SimulatedInfrared">this url</ulink>.
-    The filter tries to reproduce the famous Ilford(tm) SFX200 infrared film. This film has a sensitivity range of 200-800 ISO.
+    The <guilabel>Intensity</guilabel> control helps to preview the solarization by simply increasing it.
+    At about 50% intensity the image shows what was once chemically possible. If you further increase the
+    effect it will finally become a negative image, a stage of inversion not achievable on photographic paper.
     </para>
+    </sect4>
 
-    <sect4 id="using-infrared">
-    <title>Using the Infrared Filter</title>
+    <sect4 id="inaction-solarize"> <title>Solarisation in action</title>
 
     <para>
-    The left part of the dialog window lets you select the region to be shown in the preview section. Move the red rectangle with the mouse around to show the effect on different parts of the image.
+    This is an example of solarization effect. The original image is (1) and the corrected image is (2).
+    The <guilabel>Intensity</guilabel> level applied is 30%.
     </para>
 
-    <para>
-    The lower part provides the two controls, Film Grain and ISO sensitivity. Check the <guilabel>Add Film Grain</guilabel> box if you want to simulate the grainy texture of a high sensitivity film. The ISO-level slider modifies the amount of filmgrain added and the predominance of green color (chlorophyll in nature) in the conversion mixer. Green pastures will become white as snow! Try it out.
+    <para><inlinemediaobject><imageobject>
+        <imagedata fileref="&path;editor-solarize.png" format="PNG" /> </imageobject>
+        <textobject><phrase>Solarize Image Effect Preview</phrase></textobject></inlinemediaobject>
     </para>
-
-    <note><para>
-    Because the filter mixes color channels to reproduce infrared film (with emphasis on green channel), one can not simulate infrared effect from black and white original photograph, since the color information is missing.
-    </para></note>
 
     </sect4>
 
-    <sect4 id="inaction-infrared">
-    <title>The filter in action</title>
-
+    <sect4>   <title>The Vivid Effect (Velvia filter)</title>
     <para>
-    This is an example of the infrared film effect applied to a color image taken in New Zealand's landscapes. The original image is (1) and the converted image is (2). The film sensitivity used to simulate the infrared film is ISO-400. Higher ISO values will create a kind of aura in the highlights.
+        The vivid filter simulates what is known as &quot;Velvia&quot; effect. It is different from saturation in that it has a more pronounced contrast effect that bring colors brilliantly alive and glowing. Try it, it renders beautiful for many subjects!
     </para>
-
-    <para><inlinemediaobject><imageobject> 
-        <imagedata fileref="&path;editor-infrared-preview.png" format="PNG" /> </imageobject>
-        <textobject><phrase>The Infrared filter in Action</phrase></textobject></inlinemediaobject>
+    <para>
+        Velvia is a brand of daylight-balanced color reversal film produced by the Japanese company Fujifilm. The name is a contraction of &quot;Velvet Media&quot;, a reference to its smooth image structure. Velvia has very saturated colors under daylight, high contrast. These characteristics make it the slide film of choice for most nature photographers. Velvia's highly saturated colors are, however, considered overdone by some photographers, especially those who don't primarily shoot landscapes.
     </para>
+        <example>  <title>Original versus Vivid filter</title>
+            <screenshot><screeninfo>Original versus Vivid filter</screeninfo><mediaobject><imageobject><imagedata fileref="&path;editor-vivid.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+        </example>
 
+    </sect4>
+
+    <sect4>  <title>The Neon Effect</title>
+    <para>The neon filter simulates neon light along the contrast edges. The level parameter controls the lightness of the result, whereas the interaction slider determines the thickness of the neon light. With big images, the filter might eat the CPU time for a moment.
+    </para>
+        <example>  <title>The neon filter</title>
+            <screenshot><screeninfo>The neon filter</screeninfo><mediaobject><imageobject><imagedata fileref="&path;editor-neon.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+        </example>
+
+    </sect4>
+
+    <sect4>  <title>The Edge Effect</title>
+    <para>
+        TODO
+    </para>
     </sect4>
 
     </sect3>
