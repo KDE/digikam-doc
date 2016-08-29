@@ -1,0 +1,82 @@
+<sect2 id="editor-cm-definitions">
+    <title>More definitions about Color Management</title>
+
+    <para>
+        You've reached the end of this tutorial on color management. We've "color-managed" our way all the way from the camera and the monitor, to the working space, to the printer. I've learned a lot and I hope you have, too. What follow is some additional comments and definitions:
+    </para>
+
+    <para>
+        <emphasis>Assign</emphasis> a profile means change the meaning of the RGB numbers in an image by embedding a new profile without changing the actual RGB numbers associated with each pixel in the image. "Convert" to a profile means embed a new profile, but also change the RGB numbers at the same time so that the meaning of the RGB values - that is, the real-world visible color represented by the trio of RGB numbers associated with each pixel in an image - remains the same before and after the conversion from one space to another.
+    </para>
+
+    <para>
+        On the other hand, every time you assign a new working space profile rather than convert to a new working space (except when initially assigning a camera profile to the image file you get from your raw processing software), the appearance of the image should more or less drastically change (usually for the worse, unless the wrong profile had previously been inadvertently embedded in the image).
+    </para>
+
+    <para>
+        In theory, you should be able to do multiple conversions of an image from one working space to another, and if you are using a color-managed image editor, even though all the RGB numbers in the image will change with each conversion, the image displayed on your screen should look the same. In actual fact, because of rounding errors upon each conversion, not to mention gamut-clipping when going from a larger to a smaller working space, every time you convert from one space to another the image degrades a bit.
+    </para>
+
+    <para>
+        <emphasis>Device-dependent</emphasis> and <emphasis>device-independent</emphasis> profiles:  The camera profile, a scanner profile, your monitor's profile, and your printer's color profile are all device-dependent profiles - these profiles only work with the specific device for which they were produced by means of profiling. Working space profiles and the PCS's are "device-independent". Once an image file has been translated by LCMS via a PCS to a device-independent working space, in a sense it no longer matters what device originally produced the image. But as soon as you want to display or print the image, then the device (monitor, printer) used matters a great deal and requires a device-dependent profile.
+    </para>
+
+    <para>
+        An <emphasis>interpolated raw file</emphasis> isn't a raw file. For some reason this simple point causes a lot of confusion. But after a raw file has been interpolated by raw processing software and then output as a tiff or jpeg, the original raw file is still a raw file, of course, but the interpolated file is just an image file. It isn't a raw file.
+    </para>
+
+    <para>
+        <emphasis>Linear</emphasis> has two related and easily confused definitions. "Linear" can mean that the image tonality reflects the tonality in the original scene as photographed instead of being altered by the application of an S-curve or other means of changing local and global tonality. It can also mean that the gamma transfer curve of the color space is linear. An image can be "linear" in either, both, or neither of these two senses. A raw image as developed by dcraw is linear in both senses. The same image as developed by Canon's DPP won't be linear in either sense.
+    </para>
+
+    <para>
+        <emphasis>HDR and LDR</emphasis> do not refer to the bit-depth of the image. "High dynamic range" and "low dynamic range" refer to the total dynamic range encompassed by an image. A regular low dynamic range image, say encompassing a mere 5 "stops" (the average digital camera these days can easily accommodate 8 or 9 stops), can be saved as an 8-, 16-, 32-, or even 64-bit image, depending on your software, but the dynamic range of the image isn't thereby increased. Only the number of discrete steps from the brightest to the darkest tone in the image has changed. Conversely, a 22-stop scene (way beyond the capacity of a consumer-oriented digital camera without using multiple exposures) can be saved as an 8- or 16-bit image, but the resulting image will exhibit extreme banding (that is, it will display extreme banding in any given tonal range that can actually be displayed on a typical monitor at one time) because of the relatively few available discrete tonal steps from the lightest to the darkest tone in the image.
+    </para>
+
+    <para>
+        <emphasis>In-camera produced jpegs don't need a camera profile</emphasis>. All jpegs (or tiffs, if you have an older Minolta Dimage camera) coming straight out of a camera (even if produced by point-and-shoots cameras that don't allow you to save a raw file) start life inside the camera as a raw file produced by the camera's A to D converter. If you save your images as jpegs, then the processor inside the camera interpolates the raw file, assigns a camera profile, translates the resulting RGB numbers to a working space (usually sRGB but sometimes you can choose AdobeRGB, depending on the camera), does the jpeg compression, and stores the jpeg file on your camera card. So jpegs (or tiffs) from your camera don't need to be assigned a camera profile which is then translated to a working space via a PCS. Jpegs from a camera are already in a working space.
+    </para>
+
+    <para>
+        <emphasis>Useful mathematical information</emphasis> if you are dealing with dcraw's linear gamma output:  Mathematically speaking, when doing a gamma transform you normalize (that is, divide by 256 if you are working with 8-bit values) the RGB numbers and raise the resulting numbers to an appropriate power depending on the respective gammas of the starting and ending color space, then renormalize the results to a new set of RGB numbers. It's not hard, and very instructive, to do this with a calculator for a few sets of RGB numbers spaced from (0,0,0) to (255,255,255) to see how RGB numbers change from one gamma encoding to another. LCMS does this for you when you ask LCMS to convert from one color space to another. However, if ALL you are doing is converting from one color space to the same color space except for a different gamma, use imagemagick instead of LCMS and just manipulate the RGB numbers directly, then assign the new working space to the image - the results will be more accurate than going through a color space transform.
+    </para>
+
+    <para>
+        <emphasis>Copyrighted and copyleft working spaces</emphasis>: I will take it as given that all the ordinarily encountered working spaces, such as:
+    </para>
+
+    <orderedlist>
+
+        <listitem><para>
+            The several variants of sRGB (see color.org).
+        </para></listitem>
+
+        <listitem><para>
+            BruceRGB or BestRGB.
+        </para></listitem>
+
+        <listitem><para>
+            The various ECI (European color initiative) working space profiles.
+        </para></listitem>
+
+        <listitem><para>
+            AdobeRGB, Adobe WideGamutRGB, and Kodak/Adobe ProPhotoRGB (Kodak and Adobe ProPhoto are the same, just branded differently) and their non-branded, non-copyrighted counterparts (Oyranos includes a non-branded version of AdobeRGB).
+        </para></listitem>
+
+    </orderedlist>
+
+    <para>
+        And quite a few other working spaces that could be added to this list, are all more or less suitable as working spaces. Which working space you should use depends only and solely on you, on your requirements as the editor of your digital images with your eventual output intentions (web, fine art print, etc). However, as a critical aside, if you are using Adobe or other copyrighted working space profiles, these profiles contain copyright information that shows up in your image exif information. Lately I've been perusing the openicc mailing lists. Apparently LCMS can be used to produce nonbranded, copyleft working space profiles that are just the same as - actually indistinguishable from - the branded, copyrighted working space profiles. It would be a wonderful addition to &digikam; if a set of "copyleft" working space profiles, including nonbranded, relabelled versions of ProPhotoRGB, AdobeRGB, and Adobe WidegamutRGB (perhaps in two flavors each: linear gamma and the usual gamma), could be bundled as part of the &digikam; package.
+    </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->
