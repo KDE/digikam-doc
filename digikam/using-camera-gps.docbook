@@ -1,0 +1,98 @@
+<sect2 id="using-camera-gps">
+    <title>How to use a GPS device with &digikam;</title>
+
+    <note>
+
+        <para>
+
+            <inlinemediaobject><imageobject>
+                <imagedata fileref="&path;using-camera-handheldgps.png" format="PNG"/>
+            </imageobject></inlinemediaobject>
+
+            GPS (global positioning system) is used as a generic term throughout this document. It just means a location in latitude and longitude global coordinates that can be displayed on a map. The actual technical implementation that provides the data can be the American GPS, the Russian GLONAS, the European GALILEO or any other system.
+
+        </para>
+
+    </note>
+
+    <para>
+        Not only for professional photographers can it be interesting to link an image to a precise geographical location. Not everybody uses an airplane to overfly and scan a certain area with automatic GPS data recording. Environmental planners, military, police, construction bureaus, real estate agencies, all will have an immediate application.
+    </para>
+
+    <para>
+        But if, after some time, one has forgotten where the image was taken, if one loves the nice feature to open with a simple click a browser displaying a zoom of the area, if you like to send your image as a postcard to another &digikam; user (who is then able to locate your shot), or if you simply need the documentation aspect of it - having position data stored in a photo is great.
+    </para>
+
+    <para>
+        Now, how do we get GPS data into the images?  <ulink url="http://www.exiv2.org/tags.html">exiv2</ulink> supports many kinds of the GPS data fields, even bearing, satellite and map references. So the question is really how to get the data into those fields? There are at least three ways to do this: directly with the appropriate hardware, per post-treatment of GPS and image files using the <link linkend="tool-geolocationeditor">Geolocation Tool</link> and per 'manual' insertion of known locations.
+    </para>
+
+    <itemizedlist>
+
+        <listitem><para>Direct GPS data insertion into the image files</para>
+
+            <para>
+                To our knowledge there is at the time of writing no camera that integrates a GPS unit. But there are a few that combine with GPS receivers, either as a plug-in card or by data transmission through cable or Bluetooth.
+            </para>
+
+            <para>
+                <ulink url="http://www.engadget.com.nyud.net:8090/2004/09/17/diy-black-box-tagging-photos-with-gps-coordinates/">Selfmade Howto</ulink>
+            </para>
+
+        </listitem>
+
+        <listitem>
+
+            <para>
+                Post-treatment of GPS data and image files
+            </para>
+
+            <para>
+                Using the <link linkend="tool-geolocationeditor">Geolocation Tool</link>.
+            </para>
+
+            <para>
+                This approach is dead easy: while taking your pictures just keep a GPS device running and carry it around with the camera. Once you are done, download the pictures and the GPS tracks, and run the above plugin. It will correlate the data in the time domain; so it is important that the camera be accurate in its clock setting (the GPS device is always accurate through the satellites). The positional accuracy interpolated from the track points can be as good as 20 meters. Of course, this approach only works if your camera can record EXIF data.
+            </para>
+
+            <para>
+                The GPS track download from a device can be managed with the <ulink url="http://gpsman.sourceforge.net/">gpsman</ulink> or <ulink url="http://www.gpsbabel.org">gpsbabel</ulink>. It is important that the downloaded tracks are being stored in gpx format, which is the only one compatible with the Geolocation plugin.
+            </para>
+
+            <para>
+                Several programs exist for &Windows; and MacOS that are able to extract and correlate data from images and GPS data tracks. The following site provides the same functionality for &Linux;:
+                <ulink url="http://freefoote.dview.net/linux_gpscorr.html">gpsCorr</ulink> or
+                <ulink url="http://www.carto.net/projects/photoTools/gpsPhoto/">gpsPhoto</ulink>
+            </para>
+
+        </listitem>
+
+        <listitem>
+
+            <para>
+                'Manual' insertion of known locations
+            </para>
+
+            <para>
+                If you happen to know the latitude/longitude or other data you can use the this script which is a GPS wrapper for Phil Harvey's <ulink url="http://www.sno.phy.queensu.ca/~phil/exiftool">ExifTool</ulink> that uses the signed floating number coordinate notation as produced by maps.google.
+            </para>
+
+        </listitem>
+
+    </itemizedlist>
+
+    <para>
+        GPS devices:
+        <ulink url="http://www.letsgodigital.org/en/9323/sony_gps_photography/">GPS tracker from Sony </ulink> and
+        <ulink url="http://www.emtac.com/products/bluetooth/index.html#btgps">EMTAC bluetooth GPS </ulink>
+    </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
