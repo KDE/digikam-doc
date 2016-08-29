@@ -1,6 +1,6 @@
  <sect1 id="editor-cm"> <title>RAW File Treatment and Color Management</title>
 
-    <sect2 id="CM-intro"> <title>Introduction</title>
+    <sect2 id="editor-cm-intro"> <title>Introduction</title>
       <para>The point of a color-managed workflow is to ensure that the colors coming from your camera or scanner have a predictable relationship with the colors you actually photographed or scanned, that the colors displayed on your monitor match the colors coming from your camera or scanner, and that the colors you print or display on the web match the colors you produced in your digital darkroom.</para>
 
         <para>
@@ -35,7 +35,7 @@
       </sect3>
      </sect2>
 
-     <sect2 id="sRGB">            <title>The sRGB color space</title>
+     <sect2 id="editor-cm-sRGB"> <title>The sRGB color space</title>
        <sect3>                   <title>What is so special about the sRGB color space?</title>
          <para>sRGB is widely accepted as a standard color profile by virtually everyone involved with consumer-oriented imaging. sRGB was proposed in 1996 by Hewlett Packard and Microsoft as a standardized color space for consumer-oriented applications. As stated in the initial HP/MS proposal:
             <blockquote><para>Hewlett-Packard and Microsoft propose the addition of support for a standard color space, sRGB, within the Microsoft operating systems, HP products, the Internet, and all other interested vendors. The aim of this color space is to complement the current color management strategies by enabling a third method of handling color in the operating systems, device drivers and the Internet that utilizes a simple and robust device independent color definition. This will provide good quality and backward compatibility with minimum transmission and system overhead. Based on a calibrated colorimetric RGB color space well suited to Cathode Ray Tube (CRT) monitors, television, scanners, digital cameras, and printing systems, such a space can be supported with minimum cost to software and hardware vendors...</para></blockquote>
@@ -63,7 +63,7 @@
        </sect3>
      </sect2>
 
-     <sect2 id="profile-monitor"> <title>Calibrating and profiling your monitorRGB?</title> 
+     <sect2 id="editor-cm-monitor"> <title>Calibrating and Profiling Your Monitor RGB</title> 
           <sect3> <title>If I choose to work exclusively in the sRGB color space, do I need to calibrate my monitor?  </title>
           <para>Yes!  Whether you stay within the color gamut provided by sRGB or not, you need a properly calibrated monitor because sRGB assumes that your monitor is calibrated to sRGB. Your monitor calibration closes the loop. If you work within the color gamut provided by sRGB then you need to calibrate your monitor to the sRGB standard (or produce and use an accurate monitor profile, or both). </para>
           </sect3>
@@ -103,7 +103,7 @@
          </sect3>
     </sect2>
 
-     <sect2 id="camera-rawfile">            <title>The camera profile and issues with raw file development</title>
+     <sect2 id="editor-cm-rawfile"> <title>The Camera Profile and Raw File Development</title>
           <sect3> <title>What's the next step in color management? </title>
           <para>First and for the record, many excellent professional and amateur photographers save all their images as in-camera jpegs and work exclusively in the sRGB color space. But if you want to work in a larger color space, or if you want to work with raw files (even if you output sRGB image files from your raw files), read on.</para>
           <para>Judging from questions asked in the &digikam; user's forum, if you are reading this tutorial you probably are shooting raw images with a digital dSLR and you are hoping that somewhere in the arcane waters of color management lies the answer to how to get a nice picture from your raw image file. And you're right!  The next thing you need is the right camera profile for developing your raw image. But first let's answer the question you really might have been asking:</para>
@@ -180,7 +180,7 @@
        </sect3>
      </sect2>
 
-     <sect2 id="PCS"> <title>The PCS: color profiles point to real colors in the real world</title>
+     <sect2 id="editor-cm-pcs"> <title>The Profiles Point to Real Colors in the Real World</title>
         <sect3> <title>Camera, scanner, working space, monitor, printer - what do all these color profiles really do?</title>
           <para>A color profile describes the color gamut of the device or space to which it belongs by specifying what real color in the real world corresponds to each trio of RGB values in the color space of the device (camera, monitor, printer) or working space. </para>
           <para>The camera profile essentially says, "for every RGB trio of values associated with every pixel in the image file produced from the raw file by the raw processing software, "this RGB image file trio" corresponds to "that real color as seen by a real observer in the real world" (or rather, as displayed on the IT8 target if you produced your own camera profile, but it amounts to the same thing - the goal of profiling your camera is to make the picture of the target look like the target). </para>
@@ -196,7 +196,7 @@
        </sect3>
      </sect2>
 
-     <sect2 id="working-space">   <title>The Working Space</title>
+     <sect2 id="editor-cm-wkspace"> <title>The Working Space</title>
         <sect3> <title>So I told &digikam; where to find my monitor profile and I have a camera profile that I applied to the image file produced by my raw processing software. What's the next step in color management?  </title>
           <para>You need to choose a working color space so you can edit your image. LCMS will transform your image from your camera color space to your chosen working space, via the PCS specified by your camera color profile.</para>
        </sect3>
@@ -241,7 +241,7 @@
        </sect3>
      </sect2>
 
-     <sect2 id="rendering"> <title>Printer profiles, rendering intents, and soft-proofing</title>
+     <sect2 id="editor-cm-rendering"> <title>Printer Profiles with Rendering Intents and Soft-Proofing</title>
       <sect3>   <title>Where do I get a printer profile?</title>
           <para>Whew!  We've come a long way - almost ready to print that image! Where do I get a printer profile?  Well, you already know the answer. You can use the generic profile that comes with your printer. You can purchase a professionally produced profile. If you ask, some commercial printing establishments will send you their printer profiles (which won't work with your printer!). You can make your own printer profile using Argyll, in which case your profile can be tailored to your particular paper, inks, and even image characteristics (if you are printing a series of images with a color palette limited to subdued browns, you don't need a printer profile that tries to make room for saturated cyans and blues). I cannot offer any more advice or links to more information on this subject because I've just started to learn about printing images (previously I've only viewed and shared my images via monitor display). But do see <ulink url="http://www.luminous-landscape.com/essays/fancy-graphics2.shtml">this page</ulink> for an excellent presentation of the benefits of producing your own printer profile, plus a resoundingly positive endorsement of using Argyll for making your printer profile.</para>
        </sect3>
@@ -278,7 +278,7 @@
        </sect3>
      </sect2>
 
-     <sect2 id="CM-definitions">  <title>A few definitions and comments</title>
+     <sect2 id="editor-cm-definitions"> <title>More definitions about Color Management</title>
       <para>You've reached the end of this tutorial on color management. We've "color-managed" our way all the way from the camera and the monitor, to the working space, to the printer. I've learned a lot and I hope you have, too. What follow is some additional comments and definitions:</para>
           <para><emphasis>Assign</emphasis> a profile means change the meaning of the RGB numbers in an image by embedding a new profile without changing the actual RGB numbers associated with each pixel in the image. "Convert" to a profile means embed a new profile, but also change the RGB numbers at the same time so that the meaning of the RGB values - that is, the real-world visible color represented by the trio of RGB numbers associated with each pixel in an image - remains the same before and after the conversion from one space to another.</para>
           <para>On the other hand, every time you assign a new working space profile rather than convert to a new working space (except when initially assigning a camera profile to the image file you get from your raw processing software), the appearance of the image should more or less drastically change (usually for the worse, unless the wrong profile had previously been inadvertently embedded in the image).</para>
@@ -299,7 +299,7 @@
           <para>and quite a few other working spaces that could be added to this list, are all more or less suitable as working spaces. Which working space you should use depends only and solely on you, on your requirements as the editor of your digital images with your eventual output intentions (web, fine art print, etc). However, as a critical aside, if you are using Adobe or other copyrighted working space profiles, these profiles contain copyright information that shows up in your image exif information. Lately I've been perusing the openicc mailing lists. Apparently LCMS can be used to produce nonbranded, copyleft working space profiles that are just the same as - actually indistinguishable from - the branded, copyrighted working space profiles. It would be a wonderful addition to &digikam; if a set of "copyleft" working space profiles, including nonbranded, relabelled versions of ProPhotoRGB, AdobeRGB, and Adobe WidegamutRGB (perhaps in two flavors each: linear gamma and the usual gamma), could be bundled as part of the &digikam; package. </para>
      </sect2>
 
-     <sect2 id="profile-connection">  <title>The Universal Translator: your camera profile, the Profile Connection Space, and LMCS</title>
+     <sect2 id="editor-cm-connection"> <title>The Color Space Connections</title>
 
          <para>So the question for each RGB trio of values in the (let us assume) 16-bit tiff produced by dcraw becomes, "What does a particular trio of RGB values for the pixels making up images produced by this particular (make and model) camera really mean in terms of some absolute standard referencing some ideal observer". This absolute standard referencing an ideal observer is more commonly called a <emphasis>Profile Connection Space</emphasis>.  A camera profile is needed to accurately characterize or describe the response of a given camera's pixels to light entering that camera, so that the RGB values in the output file produced by the raw converter can be translated first into an absolute Profile Connection Space (PCS) and then from the PCS to your chosen working space. As a very important aside, for most of the open source world (including digikam), the software used to translate from the camera profile to the PCS and from the PCS to your chosen working space and eventually to your chosen output space (for printing or perhaps monitor display) is based on lcms (the <ulink url="http://littlecms.com">little color management engine</ulink>).  For what it's worth, my own testing has shown that lcms does more accurate conversions than Adobe's proprietary color conversion engine.  Further, for almost all raw conversion programs, including commercial closed source software such as Adobe Photoshop, the raw conversion is typically based on decoding of the proprietary raw file done by dcraw.  David Coffin, author of dcraw, is the hero of raw conversion - without him we'd all be stuck using the usually windows/mac only proprietary software that comes with our digital cameras.  The dcraw's interpolation algorithms (not to be confused with the aforementioned decoding of the proprietary raw file), which are part of &digikam;  if properly used, produce results equal or superior to commercial, closed source software.  We in the world of linux and open source software are NOT second-class citizens when it comes to digital imaging.  Far from. </para>
 
