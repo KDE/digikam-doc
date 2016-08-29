@@ -1,8 +1,68 @@
 <sect1 id="intro-database"> <title>The &digikam; Database</title>
 
      <para>
-           TODO
+         The DigiKam actually manages more than one databases. For convenience, it is broadly categorized in three:</para><para>
+     1)Core database for all collection properties, i.e it hosts all albums, images and searches data.</para><para>
+     2)Thumbnails database for compressed thumbnails i.e. to host image thumbs with wavelets compression images.</para><para>
+     3)Face database for storing face recognition metadata i.e. to host face histogram for faces recognition.</para><para>
+    Currently, digiKam uses either SQLite or MySQL databases for storing data. (PostgreSQL support is planned for future). 
      </para>
+     
+     <para>
+         SQLITE</para>
+     
+     <para>
+
+     By default, digiKam uses SQLite as its back-end for storing important metadata and thumbnails. Two SQLite databases used for storing them are digikam4.db and thumbnails.db respectively. 
+    
+     To make your application run fast and smoothly, it is recommended to check and optimize your databases once in awhile. This could be achieved using sqlite3 packages or sqlite browser (high quality, easy to use visual tool for managing database objects).
+     For Ubuntu and its derivatives, it could be retrieved using sudo apt-get install sqlite3 or sudo apt-get install sqlitebrowser. Now all remains is to open the terminal, switch to the directory where databases and stored, and voila! 
+
+    Note: Take care to use a place hosted by fast hardware (such as SSD) with enough free space especially for thumbnails database. A remote file system such as NFS cannot be used here. For performance reasons, it recommended to avoid removable media.
+    </para>
+
+    <para>
+        MYSQL</para>
+    
+    <para>
+        DigiKam also provides support for popular MySQL database engine.Of course, you might wonder why you’d want to switch to MySQL when SQLite already does a good job of managing the data? Using MySQL as digiKam’s database back-end allows you to store the data on a remote server. This way, you can use multiple digiKam installations (e.g. On your notebook and PC) to access and manage your photo collections. You can also use MySQL tools to backup and analyze digiKam’s data.
+        
+        Obviously, to use DigiKam with MySQL, you would require a MySQL server. Or, you could also install MariaDB, which serves the purpose well.(Could be installed easily using this <ulink url="http://www.liquidweb.com/kb/how-to-install-mariadb-5-5-on-ubuntu-14-04-lts/">link</ulink>.
+        
+        To switch from SQLite to MySQL database, go to Settings | Configure DigiKam and then under Settings section, select a database from the drop down list.
+
+        1)MySQL Internal - This allows to run an internal database server on your system. DigiKam uses Unix socket for the connection.
+        2)MySQL Remote - Use this if you’ve your data on remote server and and you’re on a different machine trying to access the collection.
+        
+    </para>
+    
+    <para>
+        Database Remote Server Instructions</para>
+    
+    <para>
+        Follow the instructions below, if you don’t have a dedicated user account and a digiKam DB already set up. Run the commands in MySQL server (after replacing password with correct one) : </para><para>
+        
+        1)CREATE USER ''@'%' IDENTIFIED BY 'password';</para><para>
+        2)GRANT ALL ON *.* TO ''@'%' IDENTIFIED BY 'password';</para><para>
+        3)CREATE DATABASE digikam;</para><para>
+        4)GRANT ALL PRIVILEGES ON digikam.* TO ''@'%';</para><para>
+        5)FLUSH PRIVILEGES;</para><para>
+        
+        Note: If you have an enormous collection, you should start the MySQL server with “mysql --max_allowed_packet = 128M”</para><para>
+        
+        Now, in digiKam, go to Settings | Configure DigiKam and then under Settings section, select “MySQL Server”  from the drop down list.
+    </para>
+    
+     <para>
+            <inlinemediaobject><imageobject>
+                  <imagedata fileref="&path;intro-database-instructions.png" format="PNG" /></imageobject>
+            </inlinemediaobject>
+    </para>
+        
+    <para>
+        Enter the IP address of your MySQL server in the Host Name field and specify the correct port in the Port field (the default port is 3306). In the Schema Name field, enter the name of the database for storing photo metadata, and specify the name of the database for storing thumbnails in the Thumbnails Schema Name field. Enter your MySQL username and password in the appropriate fields. To check whether the database connection works properly, press the Check DB Connection button. If everything works as it’s supposed to, switch to the Collections sections, and add the directories containing your photos. Hit OK, and wait till digiKam populates the databases with data from photos. This can take a while if you have a lot of photos.
+        
+    </para>
 
  </sect1>
 
