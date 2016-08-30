@@ -93,7 +93,7 @@
         <title>Database Settings</title>
 
         <para>
-            TODO
+            The details of database settings is mostly given in the introduction section about <link linkend="intro-database">&digikam; databases</link>.
         </para>
 
     </sect2>
@@ -101,11 +101,13 @@
     <sect2 id="using-setup-collections"> <title>Collections Settings</title>
 
         <para>
-        This dialog manages your Collection types. Album Collections are described in detail in the <link linkend="using-myalbumsview">Albums</link> section.
+            This dialog manages your Collection types. Album Collections are described in detail in the <link linkend="using-myalbumsview">Albums</link> section.
         </para>
 
         <para>
-            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-collections.png" format="PNG" /> </imageobject></inlinemediaobject>
+            <inlinemediaobject><imageobject>
+                <imagedata fileref="&path;using-setup-collections.png" format="PNG" />
+            </imageobject></inlinemediaobject>
         </para>
 
     </sect2>
@@ -135,7 +137,8 @@
 
     </sect2>
 
-    <sect2 id="using-setup-tooltip">                <title>Tooltip Settings</title>
+    <sect2 id="using-setup-tooltip">
+        <title>Tooltip Settings</title>
 
         <para>
         This setup page covers all options of information appearing when the mouse hovers over a file in the main view. According the checked options they will be shown or not.
@@ -147,7 +150,8 @@
 
     </sect2>
 
-    <sect2 id="using-setup-metadata"> <title>Metadata Settings</title>
+    <sect2 id="using-setup-metadata">
+        <title>Metadata Settings</title>
 
         <para>
         Image files can have some meta-data embedded into the image file format. This meta-data can be stored in a number of standard formats. &digikam; can read meta-data in the EXIF format if it is present in the file. &digikam; can also write captions into the <ulink url="http://www.exif.org">EXIF information</ulink>. Writing captions to the EXIF section is limited to JPEG images for now (the exiv2 library is in development and will be extended to PNG and TIFF format metadata embedding in the near future).
@@ -179,7 +183,8 @@
 
     </sect2>
 
-    <sect2 id="using-setup-templates"> <title>Templates Settings</title>
+    <sect2 id="using-setup-templates">
+        <title>Templates Settings</title>
 
         <para>
             This page contains the default identity and copyright data as shown on the printscreen below. The data will be automatically written into the respective IPTC data fields if so selected during the download from the <link linkend="using-camera-rename">camera interface</link>. Also, if you call for database synchronisation, this data will be written into the IPTC fields.
@@ -217,7 +222,8 @@
 
     </sect2>
 
-    <sect2 id="using-setup-mimetype">               <title>Mime Type Settings</title>
+    <sect2 id="using-setup-mimetype">
+        <title>Mime Type Settings</title>
 
         <para>
         &digikam; can understand lots of different image file types as well as some video and audio formats. To control which types of files &digikam; will try to display you can add or remove file extensions from these lists. Any files that are in the &digikam; Album folders that do not match these extensions will be ignored by &digikam;.
@@ -233,7 +239,8 @@
 
     </sect2>
 
-    <sect2 id="using-setup-editor"> <title>Image Editor Settings</title>
+    <sect2 id="using-setup-editor">
+        <title>Image Editor Settings</title>
 
         <para>
             By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background color you can choose one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
@@ -258,7 +265,8 @@
 
     </sect2>
 
-    <sect2 id="using-setup-saveimages"> <title>Save Image Options</title>
+    <sect2 id="using-setup-saveimages">
+        <title>Save Image Options</title>
 
         <para>
             When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the <guilabel>JPEG quality</guilabel> slider  (1: low quality / 100: high quality and no compression).
@@ -286,7 +294,8 @@
 
     </sect2>
 
-    <sect2 id="using-setup-raw"> <title>RAW Decoder Settings</title>
+    <sect2 id="using-setup-raw">
+        <title>RAW Decoding Settings</title>
 
         <para>
         In the early versions of &digikam; the Image Editor was just a viewer for photographs, but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you to control how the Image Editor will behave.
@@ -368,12 +377,13 @@
 
     </sect2>
 
-    <sect2 id="using-setup-cm"> <title>Color Management Settings</title>
+    <sect2 id="using-setup-cm">
+        <title>Color Management Settings</title>
 
         <para>
             &digikam; is color-management enabled. RAW files - as they come -  are not color managed at all. Your camera provides the data it has captured in a raw format and will let you manage all the processing. Every camera has its specifics as to how it captures color information, therefore you will need to apply a specific profile to the images you want to process. Please refer to the section <link linkend="using-iccprofile">ICC color profile management</link> for more details an explanations.
         </para>
-        
+
         <para>
             Basically, a profile "maps" the color information and gives information on how one should render them. It gives also information to LCMS and &digikam; on how to translate the color information from one color space to an other in order to keep the colors as accurate as possible across all rendring media.
         </para>
@@ -443,7 +453,8 @@
         
     </sect2>
 
-    <sect2 id="using-setup-lighttable">               <title>Light Table Settings</title>
+    <sect2 id="using-setup-lighttable">
+        <title>Light Table Settings</title>
 
         <para>
         The setting of the &digikam; Light Table can be set to default values on this page so that every time you open the Light Table, these settings are activated (if possible, because for images having different sizes the synchronous mode does not work). The &quot;Load full image size&quot; is only recommended for fast maschines, but if you have one, enable this option for better viewing results.
@@ -455,9 +466,13 @@
 
     </sect2>
 
-    <sect2 id="using-setup-slideshow"> <title>Slide-Show Settings</title>
-        <para>The slide show setup should be easy to understand. The upper slider adjusts the time between image transitions; usually a time of 4-5 seconds is good. The other check boxes enable/disable the metadata to be shown on the bottom of the slide show images during display.</para>
-        
+    <sect2 id="using-setup-slideshow">
+        <title>Slide-Show Settings</title>
+
+        <para>
+            The slide show setup should be easy to understand. The upper slider adjusts the time between image transitions; usually a time of 4-5 seconds is good. The other check boxes enable/disable the metadata to be shown on the bottom of the slide show images during display.
+        </para>
+
         <para>
             <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-slideshow.png" format="PNG" /> </imageobject></inlinemediaobject>
         </para>
@@ -473,7 +488,8 @@
 
     </sect2>
 
-    <sect2 id="using-setup-camera">                 <title>Camera Settings</title>
+    <sect2 id="using-setup-camera">
+        <title>Camera Settings</title>
 
         <para>
         The camera settings shows on the left of the list of the currently supported cameras. On the right at the top there is an auto-detect button, which tries to identify the camera connected to your computer (make sure that the camera is connected properly to the computer and turned on in the image display mode). Below this are the port settings; the currently supported are Serial, USB, and USB/FireWire Mass Storage.
@@ -512,7 +528,8 @@
 
     </sect2>
 
-    <sect2 id="using-setup-plugins">            <title>Plugins Settings</title>
+    <sect2 id="using-setup-plugins">
+        <title>Plugins Settings</title>
 
         <para>
             Kipi is an Image Plugin Interface. It is an interface that is supported by a number of image viewer/editor applications. By providing this interface, &digikam; can take advantage of many plugins that are written to work with any application that implements the Kipi interface.
@@ -534,7 +551,8 @@
 
     </sect2>
 
-    <sect2 id="using-setup-misc">          <title>Miscellaneous Settings</title>
+    <sect2 id="using-setup-misc">
+        <title>Miscellaneous Settings</title>
 
         <para>
             With  the <guilabel>Confirm when moving items to trash</guilabel> setting you can set the verbosity of &digikam; when you delete a photograph or an Album. See <link linkend="using-deleteimage">Deleting a Photograph</link> and <link linkend="using-deletealbum">Deleting an Album</link> sections for more details.
@@ -560,7 +578,8 @@
 
     </sect2>
 
-    <sect2 id="using-setup-theme">        <title>The Theme Setup</title>
+    <sect2 id="using-setup-theme">
+        <title>The Theme Setup</title>
 
         <para>
         Color schemes are supplied like themes to personalize &digikam; main interface for you pleasure. To access these settings select
