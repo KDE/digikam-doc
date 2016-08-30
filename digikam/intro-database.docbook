@@ -5,6 +5,11 @@
         <title>Introduction</title>
 
         <para>
+            <!-- TODO : explain here why we use database, which information are stored inside, the advantage to search information,
+            how it's populated, how it's updated, etc...-->
+        </para>
+
+        <para>
             The &digikam; actually manages more than one databases. For convenience, it is broadly categorized in three:
 
             <orderedlist>
@@ -31,6 +36,10 @@
         <title>The Sqlite Database</title>
 
         <para>
+            <!-- TODO : add more description of sqlite as the most use embeded DB in the world -->
+        </para>
+
+        <para>
             By default, &digikam; uses SQLite as its back-end for storing important metadata and thumbnails. Tree SQLite files used for storing them are digikam4.db, thumbnails-digikam.db, and recognition.db respectively.
         </para>
 
@@ -39,8 +48,12 @@
         </para>
 
         <note><para>
-            Take care to use a place hosted by fast hardware (such as SSD) with enough free space especially for thumbnails database. A remote file system such as NFS cannot be used here. For performance reasons, it recommended to avoid removable media.
+            Take care to use a place hosted by fast hardware (such as SSD) with enough free space especially for thumbnails database. A remote file system such as NFS cannot be used here. For performance and technical reasons, you cannot use removable media.
         </para></note>
+
+        <para>
+            <!-- TODO : add more details about storage place of sqlite files -->
+        </para>
 
         <para>
             <inlinemediaobject><imageobject>
@@ -57,12 +70,16 @@
             <title>MySQL Versus QSlite</title>
 
             <para>
+                <!-- TODO : add more description of Mysqland MAriabd, the history and differences, especially about how many items can be stored in each DB type (items and albums) -->
+            </para>
+
+            <para>
                 &digikam; also provides support for popular MySQL database engine. Of course, you might wonder why you’d want to switch to MySQL when SQLite already does a good job of managing the data? Using MySQL as &digikam;’s database back-end allows you to store the data on a remote server. This way, you can use multiple &digikam; installations (e.g. On your notebook and PC) to access and manage your photo collections. You can also use MySQL tools to backup and analyze &digikam;’s data.
             </para>
 
             <para>
 
-                To switch from SQLite to MySQL database, go to <guimenu>Settings</guimenu><guimenuitem>Configure &digikam;</guimenuitem> and then under <guilabel>Settings</guilabel> section, select a database from the drop down list.
+                To switch from SQLite to MySQL database, go to <guimenu>Settings</guimenu> / <guimenuitem>Configure &digikam;</guimenuitem> and then under <guilabel>Settings</guilabel> section, select a database from the drop down list.
 
                 <orderedlist>
 
@@ -84,7 +101,7 @@
             <title>The MySQL Internal Server</title>
 
             <para>
-                TODO
+                <!-- TODO : add more description of mysql internal solutions, from a technical view -->
             </para>
 
             <para>
@@ -106,6 +123,10 @@
                 Follow the instructions below, if you don’t have a dedicated user account and a &digikam; database already set up. Run the commands in MySQL server (after replacing password with correct one):
             </para>
 
+            <para>
+                <!-- TODO : The instruction below are not enough as command arguments will chnage depending of database names -->
+            </para>
+
             <blockquote><screen>
                 CREATE USER ''@'%' IDENTIFIED BY 'password';
                 GRANT ALL ON *.* TO ''@'%' IDENTIFIED BY 'password';
@@ -119,7 +140,7 @@
             </para></note>
 
             <para>
-                Now, in &digikam;, go to <guimenu>Settings</guimenu><guimenuitem>Configure &digikam;</guimenuitem> and then under <guilabel>Settings</guilabel> section, select <guilabel>MySQL Server</guilabel> from the drop down list.
+                Now, in &digikam;, go to <guimenu>Settings</guimenu> / <guimenuitem>Configure &digikam;</guimenuitem> and then under <guilabel>Settings</guilabel> section, select <guilabel>MySQL Server</guilabel> from the drop down list.
             </para>
 
             <para>
@@ -132,9 +153,15 @@
                 Enter the IP address of your MySQL server in the Host Name field and specify the correct port in the Port field (the default port is 3306). In the Schema Name field, enter the name of the database for storing photo metadata, and specify the name of the database for storing thumbnails in the Thumbnails Schema Name field. Enter your MySQL username and password in the appropriate fields. To check whether the database connection works properly, press the Check DB Connection button. If everything works as it’s supposed to, switch to the Collections sections, and add the directories containing your photos. Hit OK, and wait till digiKam populates the databases with data from photos. This can take a while if you have a lot of photos.
             </para>
 
+            <para>
+                <!-- TODO : Remote Mysql will use network : Give all recommendation to have the best performance results -->
+            </para>
+
         </sect3>
 
     </sect2>
+
+    <!-- TODO : add new sect2 about Database backup recommendation -->
 
 </sect1>
 
