@@ -1,0 +1,138 @@
+<sect2 id="using-sidebar-captions">
+    <title>Captions</title>
+
+    <sect3>
+    <title>Introduction</title>
+
+        <para>
+            This sidebar tab serves to apply and edit image attributes like captions, rating, date and tags. The attributes are stored in the associated database, in the IPTC and EXIF data fields and become part of the image. All attributes are accessible in one sidebar view as shown in the screenshot below. During image reading the order of priority is a) database b) IPTC and c) EXIF. So if there is a discrepancy between any of the three, this priority will take effect and a synchronization will take place. This sidebar has a first-previous-next-last arrow navigator field on top if shown in the main application.
+        </para>
+
+        <example>
+            <title>sidebar Comments &amp; Tags example</title>
+            <screenshot>
+                <screeninfo>sidebar Comments &amp; Tags Example</screeninfo>
+                <mediaobject><imageobject>
+                    <imagedata fileref="&path;using-sidebar-captions.png" format="PNG" />
+                </imageobject></mediaobject>
+            </screenshot>
+        </example>
+
+    </sect3>
+
+    <sect3>
+        <title>Comment View</title>
+
+        <para>
+            The caption view can be used to type or paste in a caption of unlimited size (see note below). The text is UTF-8 compatible, meaning that all special characters are allowed. The captions are copied to EXIF and IPTC fields to be used by other applications.
+        </para>
+
+        <caution><para>
+            IPTC data only supports ASCII characters and is limited to 2000 characters (old American norm). All texts will be truncated after 2000 chars, and special characters will be malformed. If you intend to use the IPTC caption field in other applications you should be compliant with these restrictions.
+        </para></caution>
+
+        <para>
+            After commenting, either choose the <guibutton>Apply</guibutton> button or go straight to the next image, the captions will be saved.
+        </para>
+
+        <para>
+            Next to the Apply button there is the <guibutton>More</guibutton> button. From it you can either choose to read metadata from the selected file to the database, or the other way around, to write metadata to the files (the latter take place anyway if you chose a metadata setting so that all metadata is always saved to the images).
+        </para>
+
+    </sect3>
+
+    <sect3>
+
+        <title>Date &amp; Time</title>
+
+        <para>
+            In the Date &amp; Time section, which reflects the time of taking the photograph, you can change all values. From the date combo-box a calender opens, and the time setting spin-box can also be written by directly typing the time. The dating is copied to the EXIF 'Date and Time' field. If you need to change a number of images for their creating time &amp; date, there is a more comfortable method available in Batch Queue Manager. This latter option can be found under <menuchoice><guimenuitem>Image</guimenuitem><guimenuitem>Adjust time &amp; date...</guimenuitem></menuchoice>. Select the images to be changed in the main view and call the plugin.
+        </para>
+
+    </sect3>
+
+    <sect3>
+    <title>Rating</title>
+
+    <para>
+        The Rating section displays a 0...5 star rating scheme that can be used in searches and sort orders. It can be applied by a single mouse click to the 5 stars in the sidebar or with a keyboard short-cut Ctrl+0...5. The rating from the sidebar is always applied to one image at a time. To rate a number of images, select them and pop-up the context menu (right-click) to apply a common rating.
+    </para>
+
+    <para>
+        The rating is then transcribed into the IPTC 'urgency' data field. The transcoding follows the scheme in this table:
+    </para>
+
+    <informaltable><tgroup cols="2">
+
+        <thead><row>
+            <entry>&digikam; Rating</entry>
+            <entry>IPTC Urgency</entry>
+            </row></thead>
+
+            <tbody>
+                <row>   <entry>-</entry>         <entry>8</entry>      </row>
+
+                <row>   <entry>*</entry>         <entry>7</entry>      </row>
+
+                <row>   <entry>*</entry>         <entry>6</entry>      </row>
+
+                <row>   <entry>**</entry>        <entry>5</entry>      </row>
+
+                <row>   <entry>***</entry>       <entry>4</entry>      </row>
+
+                <row>   <entry>****</entry>      <entry>3</entry>      </row>
+
+                <row>   <entry>****</entry>      <entry>2</entry>      </row>
+
+                <row>   <entry>*****</entry>     <entry>1</entry>      </row>
+            </tbody>
+
+        </tgroup></informaltable>
+
+    </sect3>
+
+    <sect3>
+    <title>Tag Tree</title>
+
+        <para>
+            The tag view shows an adaptive filter tag search box, the tag tree and a combo-box containing the tags previously applied in this &digikam; session.
+        </para>
+
+        <para>
+            The tag tree will be adapted dynamically as a function of the search word as you type into the box. So it is easy to quickly reduce the number of possibilities when searching for a tag. Of course, this feature is only useful if you have many tags.
+        </para>
+
+        <para>
+            The combo-box at the bottom is another ergonomic feature for easy tagging of an image series. As you apply different tags they will be memorized in this box for quick access.
+        </para>
+
+        <para>
+            Otherwise tags are simply applied by checking the respective boxes in the tree. All tags of an image are transcribed into the IPTC 'keyword' data field.
+        </para>
+
+        <note><para>
+            In case you have selected a number of images in the main view and you check a tag in the tag tree, this one is only applied to the highlighted image, and not to the whole selection. If you want to tag selections, refer to the <link linkend="using-sidebar-filters">Filters</link> section.
+        </para></note>
+
+    </sect3>
+
+    <sect3>
+        <title>Information View</title>
+
+            <para>
+                TODO
+            </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->
