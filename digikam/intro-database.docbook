@@ -15,15 +15,15 @@
             <orderedlist>
 
                 <listitem><para>
-                    Core database for all collection properties, i.e it hosts all albums, images and searches data.
+                    Core database for all collection properties, &ie; it hosts all albums, images and searches data.
                 </para></listitem>
 
                 <listitem><para>
-                    Thumbnails database for compressed thumbnails i.e. to host image thumbs with wavelets compression images.
+                    Thumbnails database for compressed thumbnails &ie; to host image thumbs with wavelets compression images.
                 </para></listitem>
 
                 <listitem><para>
-                    Face database for storing face recognition metadata i.e. to host face histogram for faces recognition.
+                    Face database for storing face recognition metadata &ie; to host face histogram for faces recognition.
                 </para></listitem>
 
             </orderedlist>
@@ -44,7 +44,7 @@
         </para>
 
         <para>
-            To make your application run fast and smoothly, it is recommended to check and optimize your databases once in awhile. This could be achieved using sqlite3 packages or sqlite browser (high quality, easy to use visual tool for managing database objects). For Ubuntu and its derivatives, it could be retrieved using sudo apt-get install sqlite3 or sudo apt-get install sqlitebrowser. Now all remains is to open the terminal, switch to the directory where databases and stored, and voila!
+            To make your application run fast and smoothly, it is recommended to check and optimize your databases once in awhile. This could be achieved using sqlite3 packages or sqlite browser (high quality, easy to use visual tool for managing database objects). For Ubuntu and its derivatives, it could be retrieved using <command>sudo apt-get install sqlite3</command> or <command>sudo apt-get install sqlitebrowser</command>. Now all remains is to open the terminal, switch to the directory where databases and stored, and voila!
         </para>
 
         <note><para>
@@ -67,14 +67,14 @@
         <title>The MySQL Database</title>
 
         <sect3>
-            <title>MySQL Versus QSlite</title>
+            <title>MySQL Versus SQLite</title>
 
             <para>
                 <!-- TODO : add more description of Mysqland MAriabd, the history and differences, especially about how many items can be stored in each DB type (items and albums) -->
             </para>
 
             <para>
-                &digikam; also provides support for popular MySQL database engine. Of course, you might wonder why you’d want to switch to MySQL when SQLite already does a good job of managing the data? Using MySQL as &digikam;’s database back-end allows you to store the data on a remote server. This way, you can use multiple &digikam; installations (e.g. On your notebook and PC) to access and manage your photo collections. You can also use MySQL tools to backup and analyze &digikam;’s data.
+                &digikam; also provides support for popular MySQL database engine. Of course, you might wonder why you’d want to switch to MySQL when SQLite already does a good job of managing the data? Using MySQL as &digikam;’s database back-end allows you to store the data on a remote server. This way, you can use multiple &digikam; installations (&eg; On your notebook and PC) to access and manage your photo collections. You can also use MySQL tools to backup and analyze &digikam;’s data.
             </para>
 
             <para>
@@ -84,7 +84,7 @@
                 <orderedlist>
 
                     <listitem><para>
-                        MySQL Internal: This allows to run an internal database server on your system. DigiKam uses Unix socket for the connection.
+                        MySQL Internal: This allows to run an internal database server on your system. &digikam; uses Unix socket for the connection.
                     </para></listitem>
 
                     <listitem><para>
@@ -116,7 +116,7 @@
             <title>The MySQL Remote Server</title>
 
             <para>
-                Obviously, to use &digikam; with a remote MySQL, you would require a MySQL server. Or, you could also install MariaDB, which serves the purpose well.(Could be installed easily using this <ulink url="http://www.liquidweb.com/kb/how-to-install-mariadb-5-5-on-ubuntu-14-04-lts/">link</ulink>.
+                Obviously, to use &digikam; with a remote MySQL, you would require a MySQL server. Or, you could also install MariaDB, which serves the purpose well. (Could be installed easily using this <ulink url="http://www.liquidweb.com/kb/how-to-install-mariadb-5-5-on-ubuntu-14-04-lts/">link</ulink>.)
             </para>
 
             <para>
@@ -136,7 +136,7 @@
             </screen></blockquote>
 
             <note><para>
-                Note: If you have an enormous collection, you should start the MySQL server with “mysql --max_allowed_packet = 128M”
+                If you have an enormous collection, you should start the MySQL server with <command>mysql --max_allowed_packet = 128M</command>
             </para></note>
 
             <para>
@@ -150,7 +150,7 @@
             </para>
 
             <para>
-                Enter the IP address of your MySQL server in the Host Name field and specify the correct port in the Port field (the default port is 3306). In the Schema Name field, enter the name of the database for storing photo metadata, and specify the name of the database for storing thumbnails in the Thumbnails Schema Name field. Enter your MySQL username and password in the appropriate fields. To check whether the database connection works properly, press the Check DB Connection button. If everything works as it’s supposed to, switch to the Collections sections, and add the directories containing your photos. Hit OK, and wait till digiKam populates the databases with data from photos. This can take a while if you have a lot of photos.
+                Enter the IP address of your MySQL server in the <guilabel>Host Name</guilabel> field and specify the correct port in the <guilabel>Port</guilabel> field (the default port is 3306). In the <guilabel>Schema Name</guilabel> field, enter the name of the database for storing photo metadata, and specify the name of the database for storing thumbnails in the <guilabel>Thumbnails Schema Name</guilabel> field. Enter your MySQL username and password in the appropriate fields. To check whether the database connection works properly, press the <guibutton>Check DB Connection</guibutton> button. If everything works as it’s supposed to, switch to the Collections sections, and add the directories containing your photos. Hit <guibutton>OK</guibutton>, and wait till &digikam; populates the databases with data from photos. This can take a while if you have a lot of photos.
             </para>
 
             <para>
