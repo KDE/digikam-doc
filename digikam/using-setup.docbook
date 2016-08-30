@@ -1,479 +1,566 @@
 <sect1 id="using-setup"> <title>&digikam; Configuration</title>
 
-    <sect2 id="setupdialog"> <title>The Setup Section</title>
+    <sect2 id="using-setup-intro">
+        <title>Introduction</title>
 
         <anchor id="setupdialog.anchor"/>
 
         <para>
             &digikam; tries to give you as much control over how it works as possible. There are many options that change the behavior of &digikam;. To access these settings select
             <menuchoice><guimenu>Settings</guimenu>
-            <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> from the menubar. The configuration dialog is separated into 15 pages. You can change between these pages by clicking on the icons on the left-hand side of the dialog.
+            <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> from the menubar. The configuration dialog is separated by categories displayed in separated pages. You can change between these pages by clicking on the icons on the left-hand side of the dialog.
         </para>
 
         <itemizedlist>
-            <listitem><para><link linkend="setup-album">Album Settings</link></para></listitem>
-            <listitem><para><link linkend="setup-collection">Collection Settings</link></para></listitem>
-            <listitem><para><link linkend="author-identity">Default Author Identity</link></para></listitem>
-            <listitem><para><link linkend="setup-embeddedinfo">Metadata (embedded information)</link></para></listitem>
-            <listitem><para><link linkend="setup-tooltip">Tooltip Settings</link></para></listitem>
-            <listitem><para><link linkend="setup-mimetype">Mime Type Settings</link></para></listitem>
-            <listitem><para><link linkend="setup-lighttable">Light Table Settings</link></para></listitem>
-            <listitem><para><link linkend="setup-editor">Image Editor Settings</link></para></listitem>
-            <listitem><para><link linkend="setup-saveimages">Save Image Options</link></para></listitem>
-            <listitem><para><link linkend="setup-raw-decoder">RAW Decoder Settings</link></para></listitem>
-            <listitem><para><link linkend="setup-iccprofiles">ICC Profiles setup</link></para></listitem>
-            <listitem><para><link linkend="setup-kipiplugins">Kipi Plugins Settings</link></para></listitem>
-            <listitem><para><link linkend="setup-slideshow">Slide show settings</link></para></listitem>
-            <listitem><para><link linkend="setup-camera">Camera Interface Settings</link></para></listitem>
-            <listitem><para><link linkend="setup-miscellaneous">Miscellaneous Settings</link></para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-database">Database Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-collections">Collections Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-album">Album Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-tooltip">Tooltip Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-metadata">Metadata Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-templates">Templates Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-mimetype">Mime-Type Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-editor">Image Editor Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-versioning">Image Versioning Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-saveimages">Image Saving Options</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-raw">RAW Decoding Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-cm">Color Management Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-lighttable">Light Table Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-slideshow">Slide show settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-quality">Image Quality Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-camera">Camera Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-plugins">Plugins Settings</link>
+            </para></listitem>
+
+            <listitem><para>
+                <link linkend="using-setup-misc">Miscellaneous Settings</link>
+            </para></listitem>
+
         </itemizedlist>
-
-        <sect3 id="setup-album"> <title>Album Settings</title>
-
-            <para>
-            The Album settings control how the main application will behave.
-            </para>
-
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-album.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-            <para>
-            The <guilabel>Album Library Path</guilabel> is the location on your hard disk where &digikam; will store all of the Albums. If you change this location without manually moving all of the Albums on the hard disk, &digikam; assumes that there are no existing Albums and will generate a new database at the new location. Your old Albums will not be altered but you will need to change the Album Library Path back to the old location to access them. If you are not sure of what you are doing it is best not to change this location.
-            </para>
-
-            <para>
-            The <guilabel>Thumbnails</guilabel> options are described in the <link linkend="using-imageview">Images</link> section.
-            </para>
-
-            <para>
-            The <guilabel>Click action</guilabel> can be set to <guilabel>Show embedded preview</guilabel> or <guilabel>Start image editor</guilabel>. You herewith define the default behavior of &digikam; when you click on an image item in the main view.
-            </para>
-
-        </sect3>
-
-        <sect3 id="setup-collection"> <title>Collection Settings</title>
-
-            <para>
-            This dialog manages your Collection types. Album Collections are described in detail in the <link linkend="using-myalbumsview">Albums</link> section.
-            </para>
-
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-collections.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-        </sect3>
-
-        <sect3 id="author-identity"> <title>Default Author Identity for IPTC</title>
-
-            <para>
-                This page contains the default identity and copyright data as shown on the printscreen below. The data will be automatically written into the respective IPTC data fields if so selected during the download from the <link linkend="using-camera-rename">camera interface</link>. Also, if you call for database synchronisation, this data will be written into the IPTC fields.
-            </para>
-
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-camera-identity.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-            <para>This is an extract of the IPTC specifications:</para>
-
-            <itemizedlist>
-
-                <listitem><para>
-                    <emphasis>Author</emphasis> (is synonymous to <emphasis>Creator</emphasis> and <emphasis>By-line</emphasis>): This field should contain your name, or the name of the person who created the photograph. If it is not appropriate to add the name of the photographer (for example, if the identity of the photographer needs to be protected) the name of a company or organization can also be used. Once saved, this field should not be changed by anyone. This field does not support the use of commas or semi-colons as separator.
-                </para></listitem>
-
-                <listitem><para>
-                    <emphasis>Author title</emphasis> (synonymous with <emphasis>By-line title</emphasis>): This field should contain the job title of the photographer. Examples might include titles such as: Staff Photographer, Freelance Photographer, or Independent Commercial Photographer. Since this is a qualifier for the Author field, the Author field must also be filled out.
-                </para></listitem>
-
-                <listitem><para>
-                    <emphasis>Credit</emphasis> (synonymous with Provider): Use the credit field to identify who is providing the photograph. This does not necessarily have to be the author. If a photographer is working for a news agency such as Reuters or the Associated Press, these organizations could be listed here as they are &quot;providing&quot; the image for use by others. If the image is a stock photograph, then the group (agency) involved in supplying the image should be listed here.
-                </para></listitem>
-
-                <listitem><para>
-                    <emphasis>Source</emphasis>: The Source field should be used to identify the original owner or copyright holder of the photograph. The value of this field should never be changed after the information is entered following the image's creation. While not yet enforced by the custom panels, you should consider this to be a &quot;write-once&quot; field. The source could be an individual, an agency, or a member of an agency. To aid in later searches, it is suggested to separate any slashes &quot;/&quot; with a blank space. Use the form &quot;photographer / agency&quot; rather than &quot;photographer/agency.&quot; Source may also be different from Creator and from the names listed in the Copyright Notice.
-                </para></listitem>
-
-                <listitem><para>
-                    <emphasis>Copyright Notice</emphasis>: The Copyright Notice should contain any necessary copyright notice for claiming the intellectual property, and should identify the current owner(s) of the copyright for the photograph. Usually, this would be the photographer, but if the image was done by an employee or as work-for-hire, then the agency or company should be listed. Use the form appropriate to your country. For the United States you would typically follow the form of &copy; {date of first publication} name of copyright owner, as in &quot;&copy;2005 John Doe.&quot; Note, the word &quot;copyright&quot; or the abbreviation &quot;copr&quot; may be used in place of the &copy; symbol. In some foreign countries only the copyright symbol is recognized and the abbreviation does not work. Furthermore the copyright symbol must be a full circle with a &quot;c&quot; inside; using something like (c) where the parentheses form a partial circle is not sufficient. For additional protection worldwide, use of the phrase, &quot;all rights reserved&quot; following the notice above is encouraged. In Europe you would use: Copyright {Year} {Copyright owner}, all rights reserved. In Japan, for maximum protection, the following three items should appear in the copyright field of the IPTC Core: (a) the word, Copyright; (b) year of the first publication; and (c) name of the author. You may also wish to include the phrase &quot;all rights reserved.&quot;
-                </para></listitem>
-        
-            </itemizedlist>
-
-        </sect3>
-
-        <sect3 id="setup-embeddedinfo"> <title>Metadata (embedded information settings)</title>
-
-            <para>
-            Image files can have some meta-data embedded into the image file format. This meta-data can be stored in a number of standard formats. &digikam; can read meta-data in the EXIF format if it is present in the file. &digikam; can also write captions into the <ulink url="http://www.exif.org">EXIF information</ulink>. Writing captions to the EXIF section is limited to JPEG images for now (the exiv2 library is in development and will be extended to PNG and TIFF format metadata embedding in the near future).
-            </para>
-
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-embeddedinfo.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-            <para>
-            These settings allow you to control how &digikam; will deal with this embedded information.
-            </para>
-
-            <para>
-            <guilabel>Show images/thumbnails rotated according to orientation tag</guilabel> : this will use any orientation information that your camera has included in the EXIF information to automatically rotate your photographs so that they are the correct way up when displayed. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can right-click on the thumbnail and select <guilabel>Auto-rotate/flip according to EXIF orientation</guilabel>. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
-            </para>
-
-            <para>
-            <guilabel>Set orientation tag to normal after rotate/flip</guilabel> : the Auto Rotate option automatically corrects the orientation of images taken with digital cameras that have an orientation sensor. The camera adds an orientation tag to the image's EXIF meta-data. &digikam; can read this tag to adjust the image accordingly. If you manually rotate an image, this meta-data will be incorrect. This option will set the orientation tag to "Normal" after an adjustment, assuming that you rotated it to the correct orientation. Switch this off if you don't want &digikam; to make changes to the orientation tag, when you rotate or flip the image.
-            </para>
-
-            <para>
-                The <guilabel>IPTC Actions</guilabel> will save the data into the respective IPTC fields, which ensures a permanent metadata storage in the image and not only in &digikam;'s database. Thus, metadata is persistent across applications, and may be exported or imported into &digikam; without loss.
-            </para>
-
-            <para>
-            <guilabel>Save image captions as embedded text</guilabel> : this will synchronize the captions that you add to your photographs with those in embedded in the image. This is useful because the captions embedded in the image can be read by other image viewers. Care should be taken if you have images that already have captions embedded in them because these captions will be overwritten by the captions made within &digikam;.
-            </para>
-
-        </sect3>
-
-        <sect3 id="setup-tooltip">                <title>Tooltip Settings</title>
-
-            <para>
-            This setup page covers all options of information appearing when the mouse hovers over a file in the main view. According the checked options they will be shown or not.
-            </para>
-
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-tooltip.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-        </sect3>
-
-        <sect3 id="setup-mimetype">               <title>Mime Type Settings</title>
-
-            <para>
-            &digikam; can understand lots of different image file types as well as some video and audio formats. To control which types of files &digikam; will try to display you can add or remove file extensions from these lists. Any files that are in the &digikam; Album folders that do not match these extensions will be ignored by &digikam;.
-            </para>
-            
-            <note>
-                <para>The default settings can be easily restored by clicking on the update buttons to the right of each category.</para>
-            </note>
-
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-mimetypes.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-        </sect3>
-
-        <sect3 id="setup-lighttable">               <title>Light Table Settings</title>
-
-            <para>
-            The setting of the &digikam; Light Table can be set to default values on this page so that every time you open the Light Table, these settings are activated (if possible, because for images having different sizes the synchronous mode does not work). The &quot;Load full image size&quot; is only recommended for fast maschines, but if you have one, enable this option for better viewing results.
-            </para>
-            
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-lighttable.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-        </sect3>
-
-        <sect3 id="setup-editor"> <title>Image Editor Settings</title>
-            
-            <para>
-                By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background color you can choose one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
-            </para>
-            
-            <para>
-                Over and underexposed areas of an image can be indicated by dark and light marker colors that can be defined here. In the editor this viewing mode can be switched on and off with F10 and F11 respectively.
-            </para>
-            
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-imageeditor.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-        </sect3>
-
-        <sect3 id="setup-saveimages"> <title>Save Image Options</title>
-
-            <para>
-                When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the <guilabel>JPEG quality</guilabel> slider  (1: low quality / 100: high quality and no compression).
-            </para>
-            
-            <para>
-                Chroma subsampling is the practice of encoding images by implementing more resolution for luminance information than for color information. Please read <ulink url="http://en.wikipedia.org/wiki/Chroma_subsampling">this</ulink> Wikipedia article for a full explanation.
-            </para>
-            
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-saveimages.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-            <para>
-            With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation does not reduce image quality because PNG uses a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value to use a high compression factor (1: low compression / 9: high compression).
-            </para>
-
-            <para>
-            With <guilabel>Compress TIFF</guilabel> option, you can toggle to use <emphasis>Deflate</emphasis> compression algorithm with TIFF image files. This will reduce TIFF image files sizes. It has no image quality effect because <emphasis>Deflate</emphasis> is a lossless algorithm.
-            </para>
-
-            <para>
-            With the <guilabel>LossLess JPEG 2000 files</guilabel> option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG. At the time of writing, metadata is not yet supported, but it is in the 'pipeline'.
-            </para>
-
-        </sect3>
-
-        <sect3 id="setup-raw-decoder"> <title>RAW Decoder Settings</title>
-
-            <para>
-            In the early versions of &digikam; the Image Editor was just a viewer for photographs, but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you to control how the Image Editor will behave.
-            </para>
-
-            <para>
-                <guilabel>16-bit color depth</guilabel>
-            </para>
-            
-            <para>If enabled, all RAW files will be decoded to 16-bit color depth using a linear gamma curve. To prevent dark image rendering in the editor, it is recommended to use Color Management in this mode. If disabled, all RAW files will be decoded to 8-bit color depth with a BT.709 gamma curve and a 99th-percentile white point. This mode is faster than 16-bit decoding. In 8-bit mode only will the <guilabel>brightness</guilabel> setting be taken into account (dcraw limitation).
-            </para>
-
-            <para>
-                <guilabel>Interpolate RGB as four colors</guilabel>
-            </para>
-            
-            <para>The default is to assume that all green pixels are the same. If even-row green pixels of the CCD sensor are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail. To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method.</para>
-
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-rawfiledecoding.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-            <para><guilabel>Use camera white balance</guilabel></para>
-            <para>Use the camera's custom white-balance settings if set. Otherwise apply <guilabel>Automatic color balance</guilabel> if this option is set.</para>
-
-            <para><guilabel>Automatic color balance</guilabel></para>
-            
-            <para>Only used if camera white balance is not set. The default is to use a fixed color balance based on a white card photographed in sunlight.</para>
-
-            <para><guilabel>Use Super CCD secondary sensors</guilabel></para>
-            
-            <para>For Fuji Super CCD SLR cameras only. Use the secondary sensors, in effect underexposing the image by four stops to reveal detail in the highlights. For all other camera types this option is being ignored.</para>
-
-            <para><guilabel>Highlights</guilabel></para>
-            
-            <para>This is the story of the three highlight options, courtesy of Nicolas Vilars:</para>
-            
-            <para>Default is here to consider highlights (read: part of your images that are burned due to the inability of your camera to capture the highlights) as plain / solid white (<guilabel>solid white</guilabel> option). You can get some fancy results with the <guilabel>unclip</guilabel> option which will paint the highlights in various pinks. At last you can try to consider recovering some parts of the missing information from the highlights (<guilabel>reconstruct</guilabel> option).</para>
-            
-            <para>
-                This is possible because the blue pixels tends to saturate less quickly than the greens and the reds. &digikam;/dcraw will try to reconstruct the missing green and red colors from the remaining none saturated blue pixels. Of course here everything is a question of tradeoff between how much color or white you want.
-            </para>
-            
-            <para>If you select <guilabel>reconstruct</guilabel> as the option, you will be given the choice to set a level. A value of 3 is a compromise and can/should be adapted on a per image basis.</para>
-            
-            <note><para>
-                A small warning here, for the few curious that have read the man pages of Dcraw, the author says that 5 is the compromise, 0 is solid white and 1 unclip. This is because in &digikam; 0 and 1 are the "solid white" and "unclip" options in the drop down menu (if you select these, the level slider will be grayed out). Therefore, the slider in &digikam; with the "reconstruct" option will let you choose between 0 to 7 (instead of 0 to 9 in Dcraw command line) where 3 is the compromise instead of 5 in "native" Dcraw command line tool.
-            </para></note>
-
-            <para><guilabel>Brightness</guilabel> (works in 8 bit mode only)</para>
-            
-            <para>
-                Set the luminosity to your taste, you probably need to go a little higher than the default = 1. But this can be adjusted later with the image options in the &digikam; image editor. Given the cost in time for demosaicing, stay conservative.
-            </para>
-
-            <para><guilabel>Quality</guilabel></para>
-            
-            <para>
-                A <ulink url="http://en.wikipedia.org/wiki/Demosaicing">demosaicing</ulink> algorithm is a digital image process used to interpolate a complete image from the partial raw data received from the color-filtered image sensor internal to many digital cameras in form of a matrix of colored pixels. Also known as CFA interpolation or color reconstruction.
-            </para>
-            
-            <para>
-                &digikam; and Dcraw offer us three alternatives: bi-linear, VNG interpolation, AHD interpolation. It seems that <emphasis>AHD interpolation</emphasis> (for Adaptive Homogeneity-Directed) is the best choice for quality according to some test that I have performed and the paper of the person that implemented it. <emphasis>VNG interpolation</emphasis> (Variable Number of Gradients) was the first algorithm used by Dcraw but suffers from color artifacts on the edge. <emphasis>Bilinear</emphasis> is interesting if you are looking for speed with a acceptable result.
-            </para>
-
-            <para><guilabel>Enable Noise Reduction</guilabel></para>
-            
-            <para>
-                While demosaicing your image you can additionally ask for noise reduction (at a slight speed penalty). This option applies a noise reduction algorithm while the image still is in CIE Lab color space. Because the noise is only applied to the Luminosity layer (the "L" of the Lab), it should not blur your image as traditional noise reduction algorithms do in RGB mode. So, if you converted an image from RAW and it appears noisy, rather than applying a denoiser, go back and re-convert with this option enabled. The defaults are: <emphasis>Threshold</emphasis> = 100. Higher values will increase the smoothing, lower will decrease smoothing.
-            </para>
-
-            <anchor id="CA.anchor"/>
-            
-            <para><guilabel>Enable chromatic aberration (CA) correction</guilabel></para>
-            
-            <para>
-                If you know the CA of your lenses you can set the red and blue correction values here. This is certainly the optimal method for CA correction as it is done during RAW conversion.
-            </para>
-
-        </sect3>
-
-        <sect3 id="setup-iccprofiles"> <title>ICC Profiles setup</title>
-
-            <para>
-                &digikam; is color-management enabled. RAW files - as they come -  are not color managed at all. Your camera provides the data it has captured in a raw format and will let you manage all the processing. Every camera has its specifics as to how it captures color information, therefore you will need to apply a specific profile to the images you want to process. Please refer to the section <link linkend="using-iccprofile">ICC color profile management</link> for more details an explanations.
-            </para>
-            
-            <para>
-                Basically, a profile "maps" the color information and gives information on how one should render them. It gives also information to LCMS and &digikam; on how to translate the color information from one color space to an other in order to keep the colors as accurate as possible across all rendring media.
-            </para>
-            
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-iccprofiles.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-            <para>
-                <guilabel>Behavior</guilabel> Ask when opening an image in image editor / Launch Color Management tool with RAW files
-            </para>
-            
-            <para><guilabel>Color Profiles Directory</guilabel>
-            Set this to the folder where you store all your profiles &eg; "/usr/share/color/icc" or "/home/user/.color/icc". &digikam; will scan this folder when starting up.</para>
-        
-            <para><guilabel>ICC Profiles Settings</guilabel>
-            Here you are given the ability to provide &quot;default&quot; choices for your profiles. Everything is adaptable later-on at the opening of a RAW file.</para>
-            
-            <itemizedlist>
-
-                <listitem><para>The <guilabel>Use color managed view</guilabel> is an alternative to using Xcalib or Argyll. Only your image will be color managed, not your entire screen! </para></listitem>
-
-                <listitem><para>
-                    You have to provide a workspace profile (linear profiles such as sRGB, ECI-RGB, LStar-RGB, Adobe-RGB or CIE-RGB). If you want to print your images, you may want to opt for Adobe RGB, if it is only for web publishing, sRGB is better (Adobe RGB will be displayed slightly dull in non color managed enabled software such as browsers). However you may change this later of course (by attributing another profile), therefore Adobe RGB can be a good choice for storing and image handling as you can always change it to sRGB before releasing an image for your blog.</para><para>Do not use non-linear profiles as they will change the color-balance</para>
-                </listitem>
-
-                <listitem><para>
-                    The input profile should match the camera maker and model you are using. 'Not all profiles are created equal', there are some that have no tone mapping/gamma correction included (Canon). As of now, dcraw does not correct gamma for 16 bit depth conversion, which means that you have to do the tone mapping yourself.</para></listitem>
-
-                <listitem><para>
-                    There are some other options such as the soft proof profile which enables you to emulate, granted that you have a profile for it, how your image will render for a particular device. It is useful before printing for instance because your printer has a smaller gamut than your camera and some colors might look saturated. You may want to fix this manually instead of relying on the "blind" algorithm of your printer.</para></listitem>
-
-            </itemizedlist>
-
-            <para>
-            For most cameras it is pretty obvious what color profile they propose for the type at hand, not so for the Canon's. Here is a table of camera/profiles matches, it is non-authoritative of course:
-            </para>
-            
-            <informaltable><tgroup cols="2">
-            
-                <thead><row>
-                    <entry>Camera</entry>
-                    <entry>Profile series</entry>
-                </row></thead>
-        
-                <tbody>
-                    <row>   <entry>Canon 1D mark II</entry>     <entry>6051</entry>         </row>
-                    <row>   <entry>Canon 1D mark II</entry>     <entry>6111</entry>         </row>
-                    <row>   <entry>Canon 1Ds</entry>            <entry>6021</entry>         </row>
-                    <row>   <entry>Canon 1Ds mark II</entry>    <entry>6081</entry>         </row>
-                    <row>   <entry>Canon 5D</entry>             <entry>6091</entry>         </row>
-                    <row>   <entry>Canon 10D</entry>            <entry>6031</entry>         </row>
-                    <row>   <entry>Canon 20D</entry>            <entry>6061</entry>         </row>
-                    <row>   <entry>Canon 30D</entry>            <entry>6112</entry>         </row>
-                    <row>   <entry>Canon 40D</entry>            <entry>6101</entry>         </row>
-                    <row>   <entry>Canon 300D</entry>           <entry>6031</entry>         </row>
-                    <row>   <entry>Canon 350D</entry>           <entry>6111 or 6071</entry> </row>
-                    <row>   <entry>Canon 400D</entry>           <entry>6131</entry>         </row>
-                </tbody>
-                
-            </tgroup></informaltable>
-            
-            <para>The Canon profile extension betray the target style: F for Faithful Style, L for Landscape Style, N for Neutral Style, P for Portrait Style, S for Standard Style.
-            </para>
-
-            <para>Here you find a typical <link linkend="raw-workflow">RAW workflow</link> scenario.</para>
-            
-        </sect3>
-
-        <sect3 id="setup-kipiplugins">            <title>Kipi Plugins Settings</title>
-
-            <para>
-                Kipi is an Image Plugin Interface. It is an interface that is supported by a number of image viewer/editor applications. By providing this interface, &digikam; can take advantage of many plugins that are written to work with any application that implements the Kipi interface.
-            </para>
-
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-kipiplugins.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-            <para>
-                If your operating system has the Kipi plugins package installed, you will see a list of available plugins. Select those that you want to use and they will be loaded into &digikam;. The plugins will appear as new menu entries in the main menu bar and in the context menu for thumbnails.
-            </para>
-
-            <para>
-                Keyboard shortcuts to actions that plugins perform can be set up in the
-            <menuchoice><guimenu>Setting</guimenu>
-            <guimenuitem>Configure Shortcuts</guimenuitem></menuchoice> menu.
-            </para>
-
-        </sect3>
-
-        <sect3 id="setup-slideshow"> <title>Slide show setup</title>
-            <para>The slide show setup should be easy to understand. The upper slider adjusts the time between image transitions; usually a time of 4-5 seconds is good. The other check boxes enable/disable the metadata to be shown on the bottom of the slide show images during display.</para>
-            
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-slideshow.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-            
-        </sect3>
-
-        <sect3 id="setup-camera">                 <title>Camera Interface Settings</title>
-
-            <para>
-            The camera settings shows on the left of the list of the currently supported cameras. On the right at the top there is an auto-detect button, which tries to identify the camera connected to your computer (make sure that the camera is connected properly to the computer and turned on in the image display mode). Below this are the port settings; the currently supported are Serial, USB, and USB/FireWire Mass Storage.
-            </para>
-
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-camera.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-            <anchor id="cameraselection.anchor"/>
-
-            <para>
-            Clicking on a camera in the list on the left will display the supported ports which you can then select. If there is only one supported port it will be automatically selected. At the bottom on the right there is a box for setting the exact path in case of a serial port. Please note that USB interface does not need any paths to be set. If you cannot find your camera on the list, you can try to use a generic Mass Storage device selecting <guilabel>Mounted Camera</guilabel> item in the list.
-            </para>
-
-            <para>
-            At the very bottom is where you set the path for a USB or FireWire (IEEE-1394 or i-link) Mass Storage camera. This box becomes active once you select USB or FireWire Mass Storage camera in the camera list. You need to enter here the path where you mount the camera, usually "/mnt/camera" or "/mnt/removable".
-            </para>
-
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-addcamera.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-            <para>
-            To be able to use your digital camera with &digikam;, connect the camera to your computer, switch the camera to the image display mode and turn it on.
-            </para>
-
-            <para>
-            Try and see if &digikam; can auto-detect the camera; if not, you can set the camera model and port manually. Once you have the camera setup, go to the "Cameras" menu in the main interface and you will see the camera listed in the menu.
-            </para>
-
-            <note><para>
-            You can choose any title you like for the camera in the setup and this title will be used in the main window <guilabel>Cameras</guilabel> menu. If you have more than one camera, you can add them through this setup interface.
-
-            </para></note>
-
-        </sect3>
-
-        <sect3 id="setup-miscellaneous">          <title>Miscellaneous Settings</title>
-
-            <para>
-                With  the <guilabel>Confirm when moving items to trash</guilabel> setting you can set the verbosity of &digikam; when you delete a photograph or an Album. See <link linkend="using-deleteimage">Deleting a Photograph</link> and <link linkend="using-deletealbum">Deleting an Album</link> sections for more details.
-            </para>
-
-            <para>
-                The editorial changes done through the right sidebar can be quietly applied by &digikam; when setting the <guilabel>Apply changes in the right sidebar without confirmation</guilabel> option. Otherwise the changes must be applied by pressing the <guilabel>Apply changes</guilabel> button.
-            </para>
-
-            <para>
-                You can also switch off the display of the splash screen when &digikam; loads. This may speed up the start time of &digikam; slightly.
-            </para>
-
-            <anchor id="rescan-items" />
-            
-            <para>
-                <guilabel>Scan for new items at startup</guilabel> option will force &digikam; to scan the album library tree for new items added or removed between &digikam; sessions. This may slow down the start time of &digikam;. If any items have been removed from album library, &digikam; will ask you confirmation before to remove definitely item references in database.
-            </para>
-
-            <para>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-misc.png" format="PNG" /> </imageobject></inlinemediaobject>
-            </para>
-
-        </sect3>
 
     </sect2>
 
-    <sect2 id="setuptheme">        <title>The Theme Setup</title>
+    <sect2 id="using-setup-database">
+        <title>Database Settings</title>
+
+        <para>
+            TODO
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-collections"> <title>Collections Settings</title>
+
+        <para>
+        This dialog manages your Collection types. Album Collections are described in detail in the <link linkend="using-myalbumsview">Albums</link> section.
+        </para>
+
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-collections.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-album">
+        <title>Album Settings</title>
+
+        <para>
+        The Album settings control how the main application will behave.
+        </para>
+
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-album.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+        <para>
+        The <guilabel>Album Library Path</guilabel> is the location on your hard disk where &digikam; will store all of the Albums. If you change this location without manually moving all of the Albums on the hard disk, &digikam; assumes that there are no existing Albums and will generate a new database at the new location. Your old Albums will not be altered but you will need to change the Album Library Path back to the old location to access them. If you are not sure of what you are doing it is best not to change this location.
+        </para>
+
+        <para>
+        The <guilabel>Thumbnails</guilabel> options are described in the <link linkend="using-imageview">Images</link> section.
+        </para>
+
+        <para>
+        The <guilabel>Click action</guilabel> can be set to <guilabel>Show embedded preview</guilabel> or <guilabel>Start image editor</guilabel>. You herewith define the default behavior of &digikam; when you click on an image item in the main view.
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-tooltip">                <title>Tooltip Settings</title>
+
+        <para>
+        This setup page covers all options of information appearing when the mouse hovers over a file in the main view. According the checked options they will be shown or not.
+        </para>
+
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-tooltip.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-metadata"> <title>Metadata Settings</title>
+
+        <para>
+        Image files can have some meta-data embedded into the image file format. This meta-data can be stored in a number of standard formats. &digikam; can read meta-data in the EXIF format if it is present in the file. &digikam; can also write captions into the <ulink url="http://www.exif.org">EXIF information</ulink>. Writing captions to the EXIF section is limited to JPEG images for now (the exiv2 library is in development and will be extended to PNG and TIFF format metadata embedding in the near future).
+        </para>
+
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-embeddedinfo.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+        <para>
+        These settings allow you to control how &digikam; will deal with this embedded information.
+        </para>
+
+        <para>
+        <guilabel>Show images/thumbnails rotated according to orientation tag</guilabel> : this will use any orientation information that your camera has included in the EXIF information to automatically rotate your photographs so that they are the correct way up when displayed. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can right-click on the thumbnail and select <guilabel>Auto-rotate/flip according to EXIF orientation</guilabel>. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
+        </para>
+
+        <para>
+        <guilabel>Set orientation tag to normal after rotate/flip</guilabel> : the Auto Rotate option automatically corrects the orientation of images taken with digital cameras that have an orientation sensor. The camera adds an orientation tag to the image's EXIF meta-data. &digikam; can read this tag to adjust the image accordingly. If you manually rotate an image, this meta-data will be incorrect. This option will set the orientation tag to "Normal" after an adjustment, assuming that you rotated it to the correct orientation. Switch this off if you don't want &digikam; to make changes to the orientation tag, when you rotate or flip the image.
+        </para>
+
+        <para>
+            The <guilabel>IPTC Actions</guilabel> will save the data into the respective IPTC fields, which ensures a permanent metadata storage in the image and not only in &digikam;'s database. Thus, metadata is persistent across applications, and may be exported or imported into &digikam; without loss.
+        </para>
+
+        <para>
+        <guilabel>Save image captions as embedded text</guilabel> : this will synchronize the captions that you add to your photographs with those in embedded in the image. This is useful because the captions embedded in the image can be read by other image viewers. Care should be taken if you have images that already have captions embedded in them because these captions will be overwritten by the captions made within &digikam;.
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-templates"> <title>Templates Settings</title>
+
+        <para>
+            This page contains the default identity and copyright data as shown on the printscreen below. The data will be automatically written into the respective IPTC data fields if so selected during the download from the <link linkend="using-camera-rename">camera interface</link>. Also, if you call for database synchronisation, this data will be written into the IPTC fields.
+        </para>
+
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-camera-identity.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+        <para>This is an extract of the IPTC specifications:</para>
+
+        <itemizedlist>
+
+            <listitem><para>
+                <emphasis>Author</emphasis> (is synonymous to <emphasis>Creator</emphasis> and <emphasis>By-line</emphasis>): This field should contain your name, or the name of the person who created the photograph. If it is not appropriate to add the name of the photographer (for example, if the identity of the photographer needs to be protected) the name of a company or organization can also be used. Once saved, this field should not be changed by anyone. This field does not support the use of commas or semi-colons as separator.
+            </para></listitem>
+
+            <listitem><para>
+                <emphasis>Author title</emphasis> (synonymous with <emphasis>By-line title</emphasis>): This field should contain the job title of the photographer. Examples might include titles such as: Staff Photographer, Freelance Photographer, or Independent Commercial Photographer. Since this is a qualifier for the Author field, the Author field must also be filled out.
+            </para></listitem>
+
+            <listitem><para>
+                <emphasis>Credit</emphasis> (synonymous with Provider): Use the credit field to identify who is providing the photograph. This does not necessarily have to be the author. If a photographer is working for a news agency such as Reuters or the Associated Press, these organizations could be listed here as they are &quot;providing&quot; the image for use by others. If the image is a stock photograph, then the group (agency) involved in supplying the image should be listed here.
+            </para></listitem>
+
+            <listitem><para>
+                <emphasis>Source</emphasis>: The Source field should be used to identify the original owner or copyright holder of the photograph. The value of this field should never be changed after the information is entered following the image's creation. While not yet enforced by the custom panels, you should consider this to be a &quot;write-once&quot; field. The source could be an individual, an agency, or a member of an agency. To aid in later searches, it is suggested to separate any slashes &quot;/&quot; with a blank space. Use the form &quot;photographer / agency&quot; rather than &quot;photographer/agency.&quot; Source may also be different from Creator and from the names listed in the Copyright Notice.
+            </para></listitem>
+
+            <listitem><para>
+                <emphasis>Copyright Notice</emphasis>: The Copyright Notice should contain any necessary copyright notice for claiming the intellectual property, and should identify the current owner(s) of the copyright for the photograph. Usually, this would be the photographer, but if the image was done by an employee or as work-for-hire, then the agency or company should be listed. Use the form appropriate to your country. For the United States you would typically follow the form of &copy; {date of first publication} name of copyright owner, as in &quot;&copy;2005 John Doe.&quot; Note, the word &quot;copyright&quot; or the abbreviation &quot;copr&quot; may be used in place of the &copy; symbol. In some foreign countries only the copyright symbol is recognized and the abbreviation does not work. Furthermore the copyright symbol must be a full circle with a &quot;c&quot; inside; using something like (c) where the parentheses form a partial circle is not sufficient. For additional protection worldwide, use of the phrase, &quot;all rights reserved&quot; following the notice above is encouraged. In Europe you would use: Copyright {Year} {Copyright owner}, all rights reserved. In Japan, for maximum protection, the following three items should appear in the copyright field of the IPTC Core: (a) the word, Copyright; (b) year of the first publication; and (c) name of the author. You may also wish to include the phrase &quot;all rights reserved.&quot;
+            </para></listitem>
+
+        </itemizedlist>
+
+    </sect2>
+
+    <sect2 id="using-setup-mimetype">               <title>Mime Type Settings</title>
+
+        <para>
+        &digikam; can understand lots of different image file types as well as some video and audio formats. To control which types of files &digikam; will try to display you can add or remove file extensions from these lists. Any files that are in the &digikam; Album folders that do not match these extensions will be ignored by &digikam;.
+        </para>
+
+        <note>
+            <para>The default settings can be easily restored by clicking on the update buttons to the right of each category.</para>
+        </note>
+
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-mimetypes.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-editor"> <title>Image Editor Settings</title>
+
+        <para>
+            By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background color you can choose one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
+        </para>
+
+        <para>
+            Over and underexposed areas of an image can be indicated by dark and light marker colors that can be defined here. In the editor this viewing mode can be switched on and off with F10 and F11 respectively.
+        </para>
+        
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-imageeditor.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-versioning">
+        <title>Image Versioning Settings</title>
+
+        <para>
+            TODO
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-saveimages"> <title>Save Image Options</title>
+
+        <para>
+            When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the <guilabel>JPEG quality</guilabel> slider  (1: low quality / 100: high quality and no compression).
+        </para>
+        
+        <para>
+            Chroma subsampling is the practice of encoding images by implementing more resolution for luminance information than for color information. Please read <ulink url="http://en.wikipedia.org/wiki/Chroma_subsampling">this</ulink> Wikipedia article for a full explanation.
+        </para>
+        
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-saveimages.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+        <para>
+        With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation does not reduce image quality because PNG uses a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value to use a high compression factor (1: low compression / 9: high compression).
+        </para>
+
+        <para>
+        With <guilabel>Compress TIFF</guilabel> option, you can toggle to use <emphasis>Deflate</emphasis> compression algorithm with TIFF image files. This will reduce TIFF image files sizes. It has no image quality effect because <emphasis>Deflate</emphasis> is a lossless algorithm.
+        </para>
+
+        <para>
+        With the <guilabel>LossLess JPEG 2000 files</guilabel> option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG. At the time of writing, metadata is not yet supported, but it is in the 'pipeline'.
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-raw"> <title>RAW Decoder Settings</title>
+
+        <para>
+        In the early versions of &digikam; the Image Editor was just a viewer for photographs, but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you to control how the Image Editor will behave.
+        </para>
+
+        <para>
+            <guilabel>16-bit color depth</guilabel>
+        </para>
+        
+        <para>If enabled, all RAW files will be decoded to 16-bit color depth using a linear gamma curve. To prevent dark image rendering in the editor, it is recommended to use Color Management in this mode. If disabled, all RAW files will be decoded to 8-bit color depth with a BT.709 gamma curve and a 99th-percentile white point. This mode is faster than 16-bit decoding. In 8-bit mode only will the <guilabel>brightness</guilabel> setting be taken into account (dcraw limitation).
+        </para>
+
+        <para>
+            <guilabel>Interpolate RGB as four colors</guilabel>
+        </para>
+        
+        <para>The default is to assume that all green pixels are the same. If even-row green pixels of the CCD sensor are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail. To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method.</para>
+
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-rawfiledecoding.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+        <para><guilabel>Use camera white balance</guilabel></para>
+        <para>Use the camera's custom white-balance settings if set. Otherwise apply <guilabel>Automatic color balance</guilabel> if this option is set.</para>
+
+        <para><guilabel>Automatic color balance</guilabel></para>
+        
+        <para>Only used if camera white balance is not set. The default is to use a fixed color balance based on a white card photographed in sunlight.</para>
+
+        <para><guilabel>Use Super CCD secondary sensors</guilabel></para>
+        
+        <para>For Fuji Super CCD SLR cameras only. Use the secondary sensors, in effect underexposing the image by four stops to reveal detail in the highlights. For all other camera types this option is being ignored.</para>
+
+        <para><guilabel>Highlights</guilabel></para>
+        
+        <para>This is the story of the three highlight options, courtesy of Nicolas Vilars:</para>
+        
+        <para>Default is here to consider highlights (read: part of your images that are burned due to the inability of your camera to capture the highlights) as plain / solid white (<guilabel>solid white</guilabel> option). You can get some fancy results with the <guilabel>unclip</guilabel> option which will paint the highlights in various pinks. At last you can try to consider recovering some parts of the missing information from the highlights (<guilabel>reconstruct</guilabel> option).</para>
+        
+        <para>
+            This is possible because the blue pixels tends to saturate less quickly than the greens and the reds. &digikam;/dcraw will try to reconstruct the missing green and red colors from the remaining none saturated blue pixels. Of course here everything is a question of tradeoff between how much color or white you want.
+        </para>
+        
+        <para>If you select <guilabel>reconstruct</guilabel> as the option, you will be given the choice to set a level. A value of 3 is a compromise and can/should be adapted on a per image basis.</para>
+        
+        <note><para>
+            A small warning here, for the few curious that have read the man pages of Dcraw, the author says that 5 is the compromise, 0 is solid white and 1 unclip. This is because in &digikam; 0 and 1 are the "solid white" and "unclip" options in the drop down menu (if you select these, the level slider will be grayed out). Therefore, the slider in &digikam; with the "reconstruct" option will let you choose between 0 to 7 (instead of 0 to 9 in Dcraw command line) where 3 is the compromise instead of 5 in "native" Dcraw command line tool.
+        </para></note>
+
+        <para><guilabel>Brightness</guilabel> (works in 8 bit mode only)</para>
+        
+        <para>
+            Set the luminosity to your taste, you probably need to go a little higher than the default = 1. But this can be adjusted later with the image options in the &digikam; image editor. Given the cost in time for demosaicing, stay conservative.
+        </para>
+
+        <para><guilabel>Quality</guilabel></para>
+        
+        <para>
+            A <ulink url="http://en.wikipedia.org/wiki/Demosaicing">demosaicing</ulink> algorithm is a digital image process used to interpolate a complete image from the partial raw data received from the color-filtered image sensor internal to many digital cameras in form of a matrix of colored pixels. Also known as CFA interpolation or color reconstruction.
+        </para>
+        
+        <para>
+            &digikam; and Dcraw offer us three alternatives: bi-linear, VNG interpolation, AHD interpolation. It seems that <emphasis>AHD interpolation</emphasis> (for Adaptive Homogeneity-Directed) is the best choice for quality according to some test that I have performed and the paper of the person that implemented it. <emphasis>VNG interpolation</emphasis> (Variable Number of Gradients) was the first algorithm used by Dcraw but suffers from color artifacts on the edge. <emphasis>Bilinear</emphasis> is interesting if you are looking for speed with a acceptable result.
+        </para>
+
+        <para><guilabel>Enable Noise Reduction</guilabel></para>
+        
+        <para>
+            While demosaicing your image you can additionally ask for noise reduction (at a slight speed penalty). This option applies a noise reduction algorithm while the image still is in CIE Lab color space. Because the noise is only applied to the Luminosity layer (the "L" of the Lab), it should not blur your image as traditional noise reduction algorithms do in RGB mode. So, if you converted an image from RAW and it appears noisy, rather than applying a denoiser, go back and re-convert with this option enabled. The defaults are: <emphasis>Threshold</emphasis> = 100. Higher values will increase the smoothing, lower will decrease smoothing.
+        </para>
+
+        <anchor id="CA.anchor"/>
+        
+        <para><guilabel>Enable chromatic aberration (CA) correction</guilabel></para>
+        
+        <para>
+            If you know the CA of your lenses you can set the red and blue correction values here. This is certainly the optimal method for CA correction as it is done during RAW conversion.
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-cm"> <title>Color Management Settings</title>
+
+        <para>
+            &digikam; is color-management enabled. RAW files - as they come -  are not color managed at all. Your camera provides the data it has captured in a raw format and will let you manage all the processing. Every camera has its specifics as to how it captures color information, therefore you will need to apply a specific profile to the images you want to process. Please refer to the section <link linkend="using-iccprofile">ICC color profile management</link> for more details an explanations.
+        </para>
+        
+        <para>
+            Basically, a profile "maps" the color information and gives information on how one should render them. It gives also information to LCMS and &digikam; on how to translate the color information from one color space to an other in order to keep the colors as accurate as possible across all rendring media.
+        </para>
+        
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-iccprofiles.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+        <para>
+            <guilabel>Behavior</guilabel> Ask when opening an image in image editor / Launch Color Management tool with RAW files
+        </para>
+        
+        <para><guilabel>Color Profiles Directory</guilabel>
+        Set this to the folder where you store all your profiles &eg; "/usr/share/color/icc" or "/home/user/.color/icc". &digikam; will scan this folder when starting up.</para>
+    
+        <para><guilabel>ICC Profiles Settings</guilabel>
+        Here you are given the ability to provide &quot;default&quot; choices for your profiles. Everything is adaptable later-on at the opening of a RAW file.</para>
+        
+        <itemizedlist>
+
+            <listitem><para>The <guilabel>Use color managed view</guilabel> is an alternative to using Xcalib or Argyll. Only your image will be color managed, not your entire screen! </para></listitem>
+
+            <listitem><para>
+                You have to provide a workspace profile (linear profiles such as sRGB, ECI-RGB, LStar-RGB, Adobe-RGB or CIE-RGB). If you want to print your images, you may want to opt for Adobe RGB, if it is only for web publishing, sRGB is better (Adobe RGB will be displayed slightly dull in non color managed enabled software such as browsers). However you may change this later of course (by attributing another profile), therefore Adobe RGB can be a good choice for storing and image handling as you can always change it to sRGB before releasing an image for your blog.</para><para>Do not use non-linear profiles as they will change the color-balance</para>
+            </listitem>
+
+            <listitem><para>
+                The input profile should match the camera maker and model you are using. 'Not all profiles are created equal', there are some that have no tone mapping/gamma correction included (Canon). As of now, dcraw does not correct gamma for 16 bit depth conversion, which means that you have to do the tone mapping yourself.</para></listitem>
+
+            <listitem><para>
+                There are some other options such as the soft proof profile which enables you to emulate, granted that you have a profile for it, how your image will render for a particular device. It is useful before printing for instance because your printer has a smaller gamut than your camera and some colors might look saturated. You may want to fix this manually instead of relying on the "blind" algorithm of your printer.</para></listitem>
+
+        </itemizedlist>
+
+        <para>
+        For most cameras it is pretty obvious what color profile they propose for the type at hand, not so for the Canon's. Here is a table of camera/profiles matches, it is non-authoritative of course:
+        </para>
+        
+        <informaltable><tgroup cols="2">
+        
+            <thead><row>
+                <entry>Camera</entry>
+                <entry>Profile series</entry>
+            </row></thead>
+    
+            <tbody>
+                <row>   <entry>Canon 1D mark II</entry>     <entry>6051</entry>         </row>
+                <row>   <entry>Canon 1D mark II</entry>     <entry>6111</entry>         </row>
+                <row>   <entry>Canon 1Ds</entry>            <entry>6021</entry>         </row>
+                <row>   <entry>Canon 1Ds mark II</entry>    <entry>6081</entry>         </row>
+                <row>   <entry>Canon 5D</entry>             <entry>6091</entry>         </row>
+                <row>   <entry>Canon 10D</entry>            <entry>6031</entry>         </row>
+                <row>   <entry>Canon 20D</entry>            <entry>6061</entry>         </row>
+                <row>   <entry>Canon 30D</entry>            <entry>6112</entry>         </row>
+                <row>   <entry>Canon 40D</entry>            <entry>6101</entry>         </row>
+                <row>   <entry>Canon 300D</entry>           <entry>6031</entry>         </row>
+                <row>   <entry>Canon 350D</entry>           <entry>6111 or 6071</entry> </row>
+                <row>   <entry>Canon 400D</entry>           <entry>6131</entry>         </row>
+            </tbody>
+            
+        </tgroup></informaltable>
+        
+        <para>The Canon profile extension betray the target style: F for Faithful Style, L for Landscape Style, N for Neutral Style, P for Portrait Style, S for Standard Style.
+        </para>
+
+        <para>Here you find a typical <link linkend="raw-workflow">RAW workflow</link> scenario.</para>
+        
+    </sect2>
+
+    <sect2 id="using-setup-lighttable">               <title>Light Table Settings</title>
+
+        <para>
+        The setting of the &digikam; Light Table can be set to default values on this page so that every time you open the Light Table, these settings are activated (if possible, because for images having different sizes the synchronous mode does not work). The &quot;Load full image size&quot; is only recommended for fast maschines, but if you have one, enable this option for better viewing results.
+        </para>
+
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-lighttable.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-slideshow"> <title>Slide-Show Settings</title>
+        <para>The slide show setup should be easy to understand. The upper slider adjusts the time between image transitions; usually a time of 4-5 seconds is good. The other check boxes enable/disable the metadata to be shown on the bottom of the slide show images during display.</para>
+        
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-slideshow.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+        
+    </sect2>
+
+    <sect2 id="using-setup-quality">
+        <title>Image Quality Settings</title>
+
+        <para>
+            TODO
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-camera">                 <title>Camera Settings</title>
+
+        <para>
+        The camera settings shows on the left of the list of the currently supported cameras. On the right at the top there is an auto-detect button, which tries to identify the camera connected to your computer (make sure that the camera is connected properly to the computer and turned on in the image display mode). Below this are the port settings; the currently supported are Serial, USB, and USB/FireWire Mass Storage.
+        </para>
+
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-camera.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+        <anchor id="cameraselection.anchor"/>
+
+        <para>
+        Clicking on a camera in the list on the left will display the supported ports which you can then select. If there is only one supported port it will be automatically selected. At the bottom on the right there is a box for setting the exact path in case of a serial port. Please note that USB interface does not need any paths to be set. If you cannot find your camera on the list, you can try to use a generic Mass Storage device selecting <guilabel>Mounted Camera</guilabel> item in the list.
+        </para>
+
+        <para>
+        At the very bottom is where you set the path for a USB or FireWire (IEEE-1394 or i-link) Mass Storage camera. This box becomes active once you select USB or FireWire Mass Storage camera in the camera list. You need to enter here the path where you mount the camera, usually "/mnt/camera" or "/mnt/removable".
+        </para>
+
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-addcamera.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+        <para>
+        To be able to use your digital camera with &digikam;, connect the camera to your computer, switch the camera to the image display mode and turn it on.
+        </para>
+
+        <para>
+        Try and see if &digikam; can auto-detect the camera; if not, you can set the camera model and port manually. Once you have the camera setup, go to the "Cameras" menu in the main interface and you will see the camera listed in the menu.
+        </para>
+
+        <note><para>
+        You can choose any title you like for the camera in the setup and this title will be used in the main window <guilabel>Cameras</guilabel> menu. If you have more than one camera, you can add them through this setup interface.
+
+        </para></note>
+
+    </sect2>
+
+    <sect2 id="using-setup-plugins">            <title>Plugins Settings</title>
+
+        <para>
+            Kipi is an Image Plugin Interface. It is an interface that is supported by a number of image viewer/editor applications. By providing this interface, &digikam; can take advantage of many plugins that are written to work with any application that implements the Kipi interface.
+        </para>
+
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-kipiplugins.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+        <para>
+            If your operating system has the Kipi plugins package installed, you will see a list of available plugins. Select those that you want to use and they will be loaded into &digikam;. The plugins will appear as new menu entries in the main menu bar and in the context menu for thumbnails.
+        </para>
+
+        <para>
+            Keyboard shortcuts to actions that plugins perform can be set up in the
+        <menuchoice><guimenu>Setting</guimenu>
+        <guimenuitem>Configure Shortcuts</guimenuitem></menuchoice> menu.
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-misc">          <title>Miscellaneous Settings</title>
+
+        <para>
+            With  the <guilabel>Confirm when moving items to trash</guilabel> setting you can set the verbosity of &digikam; when you delete a photograph or an Album. See <link linkend="using-deleteimage">Deleting a Photograph</link> and <link linkend="using-deletealbum">Deleting an Album</link> sections for more details.
+        </para>
+
+        <para>
+            The editorial changes done through the right sidebar can be quietly applied by &digikam; when setting the <guilabel>Apply changes in the right sidebar without confirmation</guilabel> option. Otherwise the changes must be applied by pressing the <guilabel>Apply changes</guilabel> button.
+        </para>
+
+        <para>
+            You can also switch off the display of the splash screen when &digikam; loads. This may speed up the start time of &digikam; slightly.
+        </para>
+
+        <anchor id="rescan-items" />
+        
+        <para>
+            <guilabel>Scan for new items at startup</guilabel> option will force &digikam; to scan the album library tree for new items added or removed between &digikam; sessions. This may slow down the start time of &digikam;. If any items have been removed from album library, &digikam; will ask you confirmation before to remove definitely item references in database.
+        </para>
+
+        <para>
+            <inlinemediaobject><imageobject><imagedata fileref="&path;using-setup-misc.png" format="PNG" /> </imageobject></inlinemediaobject>
+        </para>
+
+    </sect2>
+
+    <sect2 id="using-setup-theme">        <title>The Theme Setup</title>
 
         <para>
         Color schemes are supplied like themes to personalize &digikam; main interface for you pleasure. To access these settings select
@@ -484,7 +571,7 @@
     </sect2>
 
 </sect1>
- 
+
 <!--
 Local Variables:
 mode: sgml
