@@ -1,8 +1,9 @@
- <sect1 id="using-sidebar"> <title>&digikam; sidebar</title>
+<sect1 id="using-sidebar">
+    <title>&digikam; sidebar</title>
     <anchor id="sidebar.anchor"/>
 
-        <sect2 id="introduction-rightsidebar">
-        <title>Introduction to the right sidebar</title>
+        <sect2 id="using-sidebar-intro">
+        <title>Introduction to the Right Sidebar</title>
 
            <para>
                The &digikam; main window has a sidebar at the right border providing important information and actions of the selected images. This same sidebar is also available in the <guilabel>Image Editor</guilabel> view. It can be displayed by respectively clicking on one of the five tabs:
@@ -11,17 +12,33 @@
            <para>
                 <itemizedlist>
 
-                    <listitem><para><link linkend="using-sidebarproperties">Properties</link> : File and image properties, key shooting parameters (EXIF tags)</para></listitem>
+                    <listitem><para>
+                        <link linkend="using-sidebar-properties">Properties</link> : File and image properties, key shooting parameters.
+                    </para></listitem>
 
-                    <listitem><para><link linkend="using-sidebarmetadata">Metadata</link> : EXIF, Makernotes, IPTC and GPS data (these properties can be edited by two Kipi-plugins</para></listitem>
+                    <listitem><para>
+                        <link linkend="using-sidebar-metadata">Metadata</link> : EXIF, Makernotes, IPTC and XMP data.
+                    </para></listitem>
 
-                    <listitem><para><link linkend="using-sidebarcolors">Colors</link> : Histograms and embedded ICC profiles</para></listitem>
+                    <listitem><para>
+                        <link linkend="using-sidebar-colors">Colors</link> : Histograms and embedded ICC profiles.
+                    </para></listitem>
 
-                    <listitem><para><link linkend="using-sidebargeolocation">Maps</link> : Marble widget shows GPS location</para></listitem>
+                    <listitem><para>
+                        <link linkend="using-sidebar-maps">Maps</link> : Marble widget shows GPS location.
+                    </para></listitem>
 
-                    <listitem><para><link linkend="using-sidebarcaptions">Captions</link> : Comments, Date &amp; Time setting, Rating, Tags</para></listitem>
+                    <listitem><para>
+                        <link linkend="using-sidebar-captions">Captions</link> : Comments, Date &amp; Time setting, Rating, Tags.
+                    </para></listitem>
 
-                    <listitem><para><link linkend="using-sidebarfilters">Tag Filters</link> : Tag filters applied to main window selection</para></listitem>
+                    <listitem><para>
+                        <link linkend="using-sidebar-filters">Tag Filters</link> : Tag filters applied to main window selection.
+                    </para></listitem>
+
+                    <listitem><para>
+                        <link linkend="using-sidebar-tools">Tools</link> : An optional contextual view dedicated to group by categories all main tools available.
+                    </para></listitem>
 
                 </itemizedlist>
 
@@ -30,7 +47,8 @@
 
         </sect2>
 
-        <sect2 id="using-sidebarproperties"> <title>Properties</title>
+        <sect2 id="using-sidebar-properties">
+        <title>Properties</title>
 
             <para>
 
@@ -53,7 +71,8 @@
 
         </sect2>
 
-        <sect2 id="using-sidebarmetadata"> <title>Metadata</title>
+        <sect2 id="using-sidebar-metadata">
+        <title>Metadata</title>
 
            <para>Metadata are data about the images or files, like technical data of camera setting during shooting, author info, copyrights, keywords, captions, and coordinates of location.</para>
            <para>
@@ -207,7 +226,8 @@
 
          </sect2>
 
-        <sect2 id="using-sidebarcolors"> <title>Colors</title>
+        <sect2 id="using-sidebar-colors">
+        <title>Colors</title>
            <para>
            The colors sidebar has two sub tabs <guilabel>Color and ICC Profile</guilabel>. Here are more details about <link linkend="using-iccprofile">Color Management</link>
            </para>
@@ -389,8 +409,8 @@
 
         </sect2>
 
-
-        <sect2 id="using-sidebargeolocation"> <title>Maps</title>
+        <sect2 id="using-sidebar-maps">
+        <title>Maps</title>
 
     <para>This tab is based on the marble widget to display a rough map of orientation. You can zoom in and out with the mousewheel by either scrolling it or hold and drag it. Pan by holding down the left mouse button.</para>
                 <example>   <title>The Geolocation tab</title>
@@ -413,7 +433,7 @@
 
     </sect2>
 
-        <sect2 id="using-sidebarcaptions">
+        <sect2 id="using-sidebar-captions">
         <title>Captions</title>
            <para>
            This sidebar tab serves to apply and edit image attributes like captions, rating, date and tags. The attributes are stored in the associated database, in the IPTC and EXIF data fields and become part of the image. All attributes are accessible in one sidebar view as shown in the screenshot below. During image reading the order of priority is a) database b) IPTC and c) EXIF. So if there is a discrepancy between any of the three, this priority will take effect and a synchronization will take place. This sidebar has a first-previous-next-last arrow navigator field on top if shown in the main application.
@@ -499,14 +519,14 @@
            Otherwise tags are simply applied by checking the respective boxes in the tree. All tags of an image are transcribed into the IPTC 'keyword' data field.
            </para>
            <note><para>
-            In case you have selected a number of images in the main view and you check a tag in the tag tree, this one is only applied to the highlighted image, and not to the whole selection. If you want to tag selections, refer to the <link linkend="using-sidebarfilters">Filters</link> section.
+            In case you have selected a number of images in the main view and you check a tag in the tag tree, this one is only applied to the highlighted image, and not to the whole selection. If you want to tag selections, refer to the <link linkend="using-sidebar-filters">Filters</link> section.
            </para></note>
 
           </sect3>
 
         </sect2>
 
-        <sect2 id="using-sidebarfilters">
+        <sect2 id="using-sidebar-filters">
         <title>Tag Filters</title>
            <para>
            The tag filter sidebar is used to modify the set of images displayed in the main window view. Normally one uses the left sidebar with its Album, Date, Tags and Searches view. When additionally one or more tags on right sidebar tag filter is checked, only the cross-section of these two selections will be displayed. All created tags are available.
@@ -524,6 +544,15 @@
             <para>
                 In the above example the main window shows the images from a calender date, the tag filter is set to 'not tagged', which reduces the set to 3 images. They have been selected with Ctrl+a, then a tag is dragged from the right tag tree over the selection and dropped. A pop-up dialog asks if the tag shall be applied.
             </para>
+
+    </sect2>
+
+        <sect2 id="using-sidebar-tools">
+        <title>Tools view</title>
+
+        <para>
+           TODO
+        </para>
 
     </sect2>
 
