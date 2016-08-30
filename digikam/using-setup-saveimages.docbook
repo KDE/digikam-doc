@@ -1,0 +1,42 @@
+<sect2 id="using-setup-saveimages">
+    <title>Save Image Options</title>
+
+    <para>
+        When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the <guilabel>JPEG quality</guilabel> slider  (1: low quality / 100: high quality and no compression). At the time of writing, metadata is supported.
+    </para>
+
+    <para>
+        Chroma subsampling is the practice of encoding images by implementing more resolution for luminance information than for color information. Please read <ulink url="http://en.wikipedia.org/wiki/Chroma_subsampling">this</ulink> Wikipedia article for a full explanation.
+    </para>
+
+    <para>
+        <inlinemediaobject><imageobject>
+            <imagedata fileref="&path;using-setup-saveimages.png" format="PNG" />
+        </imageobject></inlinemediaobject>
+    </para>
+
+    <para>
+        With <guilabel>PNG compression</guilabel> option, you can reduce PNG image files size. This operation does not reduce image quality because PNG uses a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value to use a high compression factor (1: low compression / 9: high compression). At the time of writing, metadata is supported.
+    </para>
+
+    <para>
+        With <guilabel>Compress TIFF</guilabel> option, you can toggle to use <emphasis>Deflate</emphasis> compression algorithm with TIFF image files. This will reduce TIFF image files sizes. It has no image quality effect because <emphasis>Deflate</emphasis> is a lossless algorithm. At the time of writing, metadata is supported.
+    </para>
+
+    <para>
+        With the <guilabel>LossLess JPEG 2000 files</guilabel> option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG. At the time of writing, metadata is supported.
+    </para>
+
+    <para>
+        With the <guilabel>LossLess PGF files</guilabel> option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG-2000. At the time of writing, metadata is supported.
+    </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

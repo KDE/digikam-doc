@@ -1,0 +1,42 @@
+<sect2 id="using-setup-metadata">
+    <title>Metadata Settings</title>
+
+    <para>
+        Image files can have some meta-data embedded into the image file format. This meta-data can be stored in a number of standard formats. &digikam; can read meta-data in the EXIF format if it is present in the file. &digikam; can also write captions into the <ulink url="http://www.exif.org">EXIF information</ulink>. Writing captions to the EXIF section is limited to JPEG images for now (the exiv2 library is in development and will be extended to PNG and TIFF format metadata embedding in the near future).
+    </para>
+
+    <para>
+        <inlinemediaobject><imageobject>
+            <imagedata fileref="&path;using-setup-embeddedinfo.png" format="PNG" />
+        </imageobject></inlinemediaobject>
+    </para>
+
+    <para>
+        These settings allow you to control how &digikam; will deal with this embedded information.
+    </para>
+
+    <para>
+        <guilabel>Show images/thumbnails rotated according to orientation tag</guilabel> : this will use any orientation information that your camera has included in the EXIF information to automatically rotate your photographs so that they are the correct way up when displayed. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can right-click on the thumbnail and select <guilabel>Auto-rotate/flip according to EXIF orientation</guilabel>. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
+    </para>
+
+    <para>
+        <guilabel>Set orientation tag to normal after rotate/flip</guilabel> : the Auto Rotate option automatically corrects the orientation of images taken with digital cameras that have an orientation sensor. The camera adds an orientation tag to the image's EXIF meta-data. &digikam; can read this tag to adjust the image accordingly. If you manually rotate an image, this meta-data will be incorrect. This option will set the orientation tag to "Normal" after an adjustment, assuming that you rotated it to the correct orientation. Switch this off if you don't want &digikam; to make changes to the orientation tag, when you rotate or flip the image.
+    </para>
+
+    <para>
+        The <guilabel>IPTC Actions</guilabel> will save the data into the respective IPTC fields, which ensures a permanent metadata storage in the image and not only in &digikam;'s database. Thus, metadata is persistent across applications, and may be exported or imported into &digikam; without loss.
+    </para>
+
+    <para>
+        <guilabel>Save image captions as embedded text</guilabel> : this will synchronize the captions that you add to your photographs with those in embedded in the image. This is useful because the captions embedded in the image can be read by other image viewers. Care should be taken if you have images that already have captions embedded in them because these captions will be overwritten by the captions made within &digikam;.
+    </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
