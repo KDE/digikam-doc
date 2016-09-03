@@ -1,89 +1,295 @@
- <sect1 id="using-mainwindow"> <title>The Main &digikam; Window</title>
+<sect1 id="using-mainwindow">
+    <title>The Main &digikam; Window</title>
 
     <sect2 id="using-mainwindow-intro">
-    <title>Introduction to the Main Window</title>
+        <title>Introduction to the Main Window</title>
+
+    <para>
+        <inlinemediaobject><imageobject><imagedata fileref="&path;using-mainwindow-preview.png" format="PNG" /> </imageobject>
+        </inlinemediaobject>
+    </para>
+
+        <sect3 id="using-areasandbars">
+        <title>Areas and Bars</title>
 
         <para>
-            <inlinemediaobject><imageobject><imagedata fileref="&path;using-mainwindow-preview.png" format="PNG" /> </imageobject>
-            </inlinemediaobject>
+            &digikam;'s main window has two areas in the center showing your photograhps. One is the <firstterm>Icon Area</firstterm>, showing thumnails of the content of the selected album or of a search result, and the other one the <firstterm>Preview</firstterm>, showing the selected image. Together let's call them the <link linkend="using-imagearea">Image Area</link>. In the top left corner of the Preview we have a few buttons for moving back and forth through the content of the album, for rotating the image, for showing or adding face tags and to switch to fullscreen mode. By clicking on the preview you can make it disappear and by clicking on the picture area of a thumbnail open it again.
         </para>
 
-        <para>&digikam;'s main window has up to four areas in the center for control, selection and showing results (here showing only two). They are surrounded by the menu bar and the tool bar at the top, the status bar at the bottom and the left and right side bar. The left sidebar lets you switch between 8 views: Albums (shown here), Tags, Labels, Dates, Timeline, Search, Fuzzy (Search) and People (Tags). In the center we see here the icon area, showing thumbnails of the content of the selected album, and the preview area, showing the selected image. In the top left corner of the preview we have a few buttons for moving back and forth through the content of the album, for rotating the image, for showing or adding face tags and to switch to fullscreen mode. And on the right hand side there is another <link linkend="using-sidebar">sidebar</link> shown. This one can be used to show all information about your images. You can use all these views to organize and find your photographs.
+        <para>
+            The Image Area in the center is surrounded by the menu bar and the <link linkend="maininterface-toolbar">Main Toolbar</link> at the top, the <link linkend="maininterface-statusbar">Status Bar</link> at the bottom and the Left and <link linkend="using-sidebar-intro">Right Sidebar</link>. The Left Sidebar lets you switch between eight <quote>Views</quote>: Albums (shown here), Tags, Labels, Dates, Timeline, Search, Fuzzy (Search) and People (Tags). The Right Sidebar can be used to show all informations about your images and partly also to edit them. You can use all these views to organize and find your photographs. If you click on one of the buttons on the sidebars there will fold out another area, offering possibilities to select, to make inputs, &eg; for searches, to edit data and to show informations.
         </para>
-        
-        <para> Don't worry if your main window looks quite different at the moment. You will soon learn how to switch the different areas on and off and at some point you might get a look very similar to the above screenshot.</para> 
-       
-        <para>Drag and Drop of images works about everywhere: d&amp;d an image into another branch of the album tree, across the horizontal album separation line, or to another application window. The only restriction is that you cannot d&amp;d into tag, date or searches.</para>
 
-        <anchor id="maininterface-statusbar"/>
-        <para>The status bar at the bottom shows in all eight views:
-                <itemizedlist>
-                    <listitem><para>the file name when selecting a single file</para></listitem>
-                    <listitem><para>selection information when several items are selected</para></listitem>
-                    <listitem><para>Quick filters:</para>
+        <para>
+            Don't worry if your main window looks quite different at the moment. You will soon learn how to switch the different areas on and off and at some point you might get a look very similar to the above screenshot.
+        </para>
+
+        <para>
+            Drag and Drop of images works about everywhere: d&amp;d an image into another branch of the album tree, across the horizontal album separation line, or to another application window. The only restriction is that you cannot d&amp;d into tag, date or searches.
+        </para>
+
+        </sect3>
+
+        <sect3 id="maininterface-statusbar">
+            <title> The Status Bar</title>
+
+            <para>The status bar at the bottom shows in all eight views:
+            <itemizedlist>
+                <listitem><para>the file name when selecting a single file</para></listitem>
+                <listitem><para>selection information when several items are selected</para></listitem>
+                <listitem><para>Quick filters:</para>
                     <para>- Information how many filters are active</para>
                     <para>- a trash bin button to reset all active filters</para>
                     <para>- a funnel button to open the filter settings panel</para>
-                    </listitem>
-                    <listitem><para>a progress bar for batch processes, &eg; assigning tags</para></listitem>
-                    <listitem><para>a thumbnail and preview size slider with buttons for "Fit to Window" and "Zoom to 100%"</para></listitem>
-                    <listitem><para>a size selection popup list in % for the preview</para></listitem>
-                </itemizedlist>
-        </para>
+                </listitem>
+                <listitem><para>a progress bar for batch processes, &eg; assigning tags</para></listitem>
+                <listitem><para>a thumbnail and preview size slider with buttons for "Fit to Window" and "Zoom to 100%"</para></listitem>
+                <listitem><para>a size selection popup list in % for the preview</para></listitem>
+            </itemizedlist>
+            </para>
 
-        <para>
-        The window top shows the menu bar and the main toolbar below.
-        </para>
+        </sect3>
 
-        <para>
-            <inlinemediaobject>
-                <imageobject><imagedata fileref="&path;using-mainwindow-toolbar.png" format="PNG"/></imageobject>
-                <textobject> <phrase>The Default Main Toolbar</phrase> </textobject>
-            </inlinemediaobject>
-        </para>
+        <sect3 id="maininterface-toolbar">
+            <title> Main Toolbar</title>
+            <para>
+            The window top shows the Menu Bar and the <firstterm>Main Toolbar</firstterm> below.
+            </para>
 
-        <para>
+            <para>
+                <inlinemediaobject>
+                    <imageobject><imagedata fileref="&path;using-mainwindow-toolbar.png" format="PNG"/></imageobject>
+                    <textobject> <phrase>The Default Main Toolbar</phrase> </textobject>
+                </inlinemediaobject>
+            </para>
 
-        <orderedlist>
+            <para>
 
-            <listitem><para>Open Image Editor with the selected image</para> </listitem>
+                <orderedlist>
 
-            <listitem><para>Open Light Table (L)</para> </listitem>
+                    <listitem><para>Open Image Editor with the selected image</para> </listitem>
 
-            <listitem><para>Open  <link linkend="bqm.anchor">Batch Queue Manager</link> (B)</para></listitem>
-           
-            <listitem><para>Import (drop down menu showing all connected cameras and mass storage devices)</para></listitem>
+                    <listitem><para>Open Light Table (L)</para> </listitem>
 
-            <listitem><para>Switch to thumbnail view</para></listitem>
+                    <listitem><para>Open <link linkend="bqm.anchor">Batch Queue Manager</link> (B)</para></listitem>
 
-            <listitem><para>Toggle preview of selected image</para></listitem>
+                    <listitem><para>Import (drop down menu showing all connected cameras and mass storage devices)</para></listitem>
 
-            <listitem><para>Switch to configurable table view</para></listitem>
+                    <listitem><para>Switch to thumbnail view</para></listitem>
 
-            <listitem><para>Slideshow drop down menu</para></listitem>
+                    <listitem><para>Toggle preview of selected image</para></listitem>
 
-            <listitem><para>Toggle Full Screen (Ctrl+Shift+F)</para></listitem>
+                    <listitem><para>Switch to configurable table view</para></listitem>
 
-        </orderedlist>
+                    <listitem><para>Slideshow drop down menu</para></listitem>
 
-        </para>
-        
-        <para>
-            You can customize the toolbar by choosing <menuchoice><guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</guimenuitem></menuchoice>
-        </para>    
+                    <listitem><para>Toggle Full Screen (Ctrl+Shift+F)</para></listitem>
+
+                </orderedlist>
+
+            </para>
+
+            <para>
+                You can customize the Toolbar by choosing <menuchoice><guimenu>Settings</guimenu> <guimenuitem>Configure Toolbars...</guimenuitem></menuchoice> or right click on it and choose <guimenuitem>Configure Toolbars...</guimenuitem> from the context menu.
+            </para>
+        </sect3>
+
+    </sect2>
+
+    <sect2 id="using-imagearea">
+    <title>Image Area</title>
+
+        <sect3>
+        <title>General Information</title>
+
+            <para>
+                In all eight views the Image Area shows the result of your selection or search on the Left Sidebar in the Icon Area. Each image is displayed as a thumbnail. You can alter the size of the thumbnails using the magnifier slider close to the right end of the status bar.
+                <inlinemediaobject>
+                    <imageobject><imagedata fileref="&path;editor-zoombuttons.png" format="PNG"/></imageobject>
+                    <textobject> <phrase>The thumbnail size slider</phrase> </textobject>
+                </inlinemediaobject>
+            </para>
+
+            <para>
+                The first time you select an Album you may have to wait briefly while the thumbnails are generated.
+            </para>
+
+            <para>
+                Information about each photograph is displayed below each thumbnail. You can control what information is displayed from the
+                <menuchoice>
+                    <guimenu>Settings</guimenu>
+                    <guimenuitem>Configure &digikam;</guimenuitem>
+                </menuchoice>
+                dialog. Select the <guilabel>Album View</guilabel> page and look for the <guilabel>Icon-View Options</guilabel> section.
+            </para>
+
+            <para>
+                The thumbnails have <firstterm>Tool Tips</firstterm> which will pop up if you allow the mouse to dwell over a thumbnail for a moment. The Tool Tip shows the most important properties of the photograph including any tags that you have applied.
+            </para>
+
+            <para>
+                <screenshot><mediaobject><imageobject><imagedata fileref="&path;using-mainwindow-tooltip.png" format="PNG" /> </imageobject></mediaobject></screenshot>
+            </para>
+
+            <para>
+                The content of the Tool Tips can be configured in the Tool Tip section of 
+
+                <menuchoice>
+                    <guimenu>Settings</guimenu>
+                    <guimenuitem>Configure &digikam;</guimenuitem>
+                </menuchoice>
+            </para>
+
+            <para>
+                As an alternative you can display the photograhps in a table by hitting the <menuchoice><guimenu>Table</guimenu></menuchoice> button on the Main Toolbar or by selecting <menuchoice><guimenu>View</guimenu><guimenuitem>Table</guimenuitem></menuchoice> menu from the menu bar. This allows to see a lot of photograhps at the same time (Tip: leave away the thumbnail column) in a way you can customize the usual way by right-clicking on the headline bar and choose the informations you want to see. Left-clicking on a line in the table will open the preview of that photograph.
+            </para>
+
+            <para>
+                You can access all of the functions that &digikam; can perform on a photograph by right-clicking the thumbnail or line in the table (context menu) or by selecting from the <menuchoice><guimenu>Item</guimenu></menuchoice> menu in the menu bar.
+            </para>
+
+        </sect3>
+
+        <sect3 id="using-imageviewing">
+        <title>Viewing an image</title>
+
+            <para>
+                There are several possibilities to view an image. You can either click on it, select 
+                <menuchoice>
+                    <shortcut><keycombo action="press"><keycap>F3</keycap></keycombo></shortcut>
+                    <guimenu>Image</guimenu><guimenuitem>View</guimenuitem><guimenuitem>Preview Image</guimenuitem>
+                </menuchoice> 
+                from the menu bar or select <guilabel>View</guilabel> from the context menu. The Preview Area will open and the Icon Area will be reduced to one line. For viewing it larger, click the sidebars away (by just clicking on the active button on them). An even larger view you can achieve by clicking the <quote>Show Fullscreen</quote> icon 
+                <inlinemediaobject>
+                    <imageobject><imagedata fileref="&path;using-mainwindow-icon-fullscreen.png" format="PNG"/> </imageobject>
+                </inlinemediaobject> 
+                either on the thumbnail or on the preview. While viewing images you can take action from the context menu at any time (not in fullscreen mode). To close the preview, just click again or press
+                <menuchoice>
+                    <shortcut><keycombo action="press">&Esc;</keycombo></shortcut>
+                    <guimenu></guimenu>
+                </menuchoice> or
+                <menuchoice>
+                    <shortcut><keycombo action="press"><keycap>F3</keycap></keycombo></shortcut>
+                    <guimenu></guimenu>
+                </menuchoice> or click the 
+                <menuchoice><guimenu>Table</guimenu></menuchoice> or 
+                <menuchoice><guimenu>Thumbnail</guimenu></menuchoice> button.
+            </para>
+
+            <para>
+            </para>
+
+            <para>
+                <inlinemediaobject>
+                    <imageobject><imagedata fileref="&path;using-mainwindow-preview.png" format="PNG"/></imageobject>
+                    <textobject> <phrase>The viewer with thumbnail slider below</phrase> </textobject>
+                </inlinemediaobject>
+            </para>
+
+            <para>
+                You can also view your images in a slideshow using the <quote>Slideshow</quote> drop down menu from the Main Toolbar. You have the choice to start a slideshow with a selection of photograhps, the whole content of the folder (or search result) or even including all subfolders.
+            </para>
+
+        </sect3>
+
+        <sect3 id="using-imageediting">
+        <title>Editing a Photograph</title>
+
+            <para>
+                You can open the Image Editor on a photograph either clicking the <guilabel>Image Editor</guilabel> button on the Main Toolbar or by selecting 
+                    <menuchoice>
+                        <shortcut><keycap>F4</keycap></shortcut>
+                        <guimenu>Item</guimenu><guimenuitem>Open...</guimenuitem>
+                    </menuchoice>
+                from the menu bar or by right-clicking and selecting <guilabel>Open...</guilabel> from the context menu. See the <link linkend="editor-using">&digikam; Image Editor</link> section for instructions on how to edit your photographs. The Image Editor offers a wide range of tools to enhance, decorate and/or modify your photographs.
+            </para>
+
+        </sect3>
+
+        <sect3 id="using-externalapp">
+        <title>Viewing or Editing a Photograph With Another Application</title>
+
+            <para>
+                Sometimes &digikam; may not provide all of the capabilities you need. You can open a photograph in another application by right-clicking on it and selecting from the <guilabel>Open With...</guilabel> sub-menu (At the moment this function is available only under LINUX). The list of applications that appear in this menu is controlled by the standard desktop file associations for the image format type of this photograph. Consult the desktop manual for instructions on changing these file associations if the application that you need is not listed.
+            </para>
+
+            <para>
+                Note that there can be a problem with meta-data embedded in photographs when they are edited by other image manipulation applications. Some applications do not retain the photograph's meta-data when you save a modified image. This means that if you modify a photograph using one of these programs you will lose information such as orientation, aperture &etc; that are stored in the EXIF and IPTC tags.
+            </para>
+
+        </sect3>
+
+        <sect3 id="using-rotateimage">
+        <title>Lossless Image Rotation</title>
+
+            <note><para>
+                There is a difference between rotating a photograph in one of the Views of &digikam; or in the Image Editor. The Image Editor uses a different method of rotating an image, you may not notice any difference but the Image Editor method can cause some loss of quality in the photograph when saving the picture as JPEG. The rotation methods described here preserve the original quality of the photograph also in JPEG - Files.
+            </para></note>
+
+            <para>
+                &digikam; provides two ways to get your photographs the right way up. The simplest method is to click one of the rotate - icons on the thumbnail or the preview (or to right-click for the context menu and select <guilabel>Rotate</guilabel> and then pick the direction of rotation needed.
+            </para>
+
+            <para>
+               The second method to select
+                    <menuchoice>
+                        <guimenu>Item</guimenu><guimenuitem>Auto Rotate/Flip Using EXIF Information</guimenuitem>
+                    </menuchoice> 
+                from the menu bar. Most digital cameras have an orientation sensor. This sensor can detect how you hold the camera while taking an image. It stores this orientation information inside the image. This meta data is stored in an embedded meta-data section called EXIF. The cameras could rotate the image themselves right away, but they have limited processing power, so they leave this job to an application like &digikam;. If the camera is storing the orientation, then &digikam; can use it to automatically rotate your photographs so that they are the correct way up when you display them. &digikam; will rotate the image on disk according to this orientation information.
+            </para>
+
+            <para>
+                The photograph is rotated without loss of quality and the orientation information is set to normal, so that other EXIF-aware applications will handle it correctly. The <link linkend="camerainterface.anchor">Import Tool</link> can perform this operation automatically when it uploads the photographs from your camera which will ensure that your photographs are always the right way up. The rotate operation will do nothing if your camera does not include this information in the photos.
+            </para>
+
+        </sect3>
+
+        <sect3 id="using-renameimage">
+        <title>Renaming a Photograph</title>
+
+            <para>
+            You can change the filename for a photograph by right-clicking a thumbnail and selecting
+                <menuchoice>
+                    <shortcut><keycap>F2</keycap></shortcut>
+                        <guimenu>Rename</guimenu>
+                </menuchoice>. Remember to keep the file extension (.jpg, .tif, &etc;).
+            </para>
+
+            <para>
+                You can also batch rename photograhps. One method is to use the <link linkend="bqm.anchor">Batch Queue Manager</link> (B). Another one is to select multiple photograhps and then press F2. A dialog will open showing the list of selected photograhps with their current name and the new name. These two are identical at first until you place the cursor in the input field, type in something and/or select a modifier from the buttons below. Make use of the tooltips!
+            </para>
+
+        </sect3>
+
+        <sect3 id="using-deleteimage">
+        <title>Deleting a Photograph</title>
+
+            <para>
+                When you delete a photograph from &digikam; with
+                <menuchoice>
+                    <shortcut><keycombo action="simul"><keycap>Del</keycap></keycombo> </shortcut>
+                <guimenu>Item</guimenu><guimenuitem>Move to Trash</guimenuitem>
+                </menuchoice>  
+                it will be moved from its folder on the hard disk to the internal Trash Can.
+            </para>
+
+            <para>Deleting works from anywhere in any &digikam; window.</para>
+
+        </sect3>
 
     </sect2>
 
     <sect2 id="using-myalbumsview">
     <title>Albums View</title>
-    
+
         <para>
             <inlinemediaobject><imageobject><imagedata fileref="&path;using-mainwindow-albumview.png" format="PNG" /> </imageobject>
             </inlinemediaobject>
         </para>
 
         <para>
-        By clicking the &quot;Albums&quot; button on the left side bar you toggle the &quot;Albums&quot; tree which provides an organized view of your photograph albums. The albums can be sorted by their folder layout on the hard disk (or on removable media or network shares), by the Category that has been set in the Album Properties or by the Date of that Albums (this date can also be changed in the Properties of each Album).
+            By clicking the &quot;Albums&quot; button on the left side bar you toggle the &quot;Albums&quot; tree which provides an organized view of your photograph albums. The top item &quot;Albums&quot; just shows the "welcome to digiKam" screen in the view area. The next level of the &quot;Albums&quot; tree shows your different Collections (marked by the <inlinemediaobject><imageobject><imagedata fileref="&path;using-mainwindow-icon-collection.png" format="PNG" /> </imageobject>
+            </inlinemediaobject> icon) or at least one if you haven't added one or more yet in the <menuchoice><guimenu>Settings</guimenu> <guimenuitem>Configure digiKam...</guimenuitem></menuchoice> Collections section. Each Collection represents a folder branch on your harddisk, on removable media or on network shares and the next levels in the tree show the structure of those  folders, here called &quot;Albums&quot;. The albums can be sorted by their folder layout on the hard disk, by the Category that has been set in the <link linkend="albumpropsedit.anchor">Album Properties</link> or by the Date of that Albums (this date can also be changed in the Properties of each Album). You can invert the sort order (ascending/descending) by clicking on the title bar of the album tree.
         </para>
 
         <para>
@@ -103,7 +309,7 @@
         <title>Deleting an Album</title>
 
             <para>
-                When you delete an Album from &digikam; it will be moved into the internal Trash Can. As an option you could change this behavior, so that delete really did remove the Album and all of the photographs in it. This can be changed by selecting <menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure &digikam;</guimenuitem></menuchoice> and selecting the Miscellaneous page. At the top of this page are the settings that control what happens when a photograph is deleted. To delete an Album right-click the Album in the &quot;Albums&quot; tree and select Delete Album from Hard Disk from the context menu.
+                When you delete an Album from &digikam; it will be moved into the internal Trash Can. As an option you could change this behavior, so that delete really will remove the Album and all of the photographs in it. This can be changed by selecting <menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure &digikam;</guimenuitem></menuchoice> and selecting the Miscellaneous page. At the top of this page are the settings that control what happens when a photograph is deleted. To delete an Album right-click the Album in the &quot;Albums&quot; tree and select Delete Album from the context menu.
             </para>
 
         </sect3>
@@ -112,7 +318,11 @@
         <title>Adding a Photograph to an Album</title>
 
             <para>
-            Most of the time you will create new Albums and populate them with photographs directly from your camera using the Camera Tool. However, sometimes you may want to add a photograph that you already have on your computer to an existing Album. To add a photograph to an Album, make sure that the Album is selected. Then, either click the <guilabel>Add Images</guilabel> icon in the tool bar or select <menuchoice><guimenu>Import</guimenu> <guimenuitem>Add Images...</guimenuitem></menuchoice> from the menu bar. Select the photographs that you want to add from the file dialog and click <guilabel>Open</guilabel>. The photographs will be copied into the Album. Additionally, you can use drag and drop to import photographs. Drag the photographs icons, for example from a &konqueror; window. Then drop it on the image list on the right hand side.
+                Most of the time you will create new Albums and populate them with photographs directly from your camera using the Camera Tool. However, sometimes you may want to add a photograph that you already have on your computer to an existing Album. To add a photograph to an Album select <menuchoice><guimenu>Import</guimenu> <guimenuitem>Add Images...</guimenuitem></menuchoice> (Ctrl+Alt+I) from the menu bar. Select a source folder from the dialog and click OK. An import window will open. Select the photographs that you want to add and choose <guilabel>Download Selected</guilabel> from the &quot;Download&quot; drop down menu. A dialog will open where you can choose the destination album. The photographs will be copied into the Album. <guilabel>Download New</guilabel> (Ctrl+N) from the same menu will copy only those images which are not in the destination folder yet.
+            </para>
+
+            <para>
+                Additionally, you can use drag and drop to import photographs. Drag the photographs icons, for example from a &dolphin; window. Then drop it on the image list on the right hand side.
             </para>
 
             <para>
@@ -138,7 +348,7 @@
             <anchor id="albumpropsedit.anchor"/>
 
             <para>
-            An Album contains a set of photographs. Album Properties allows you to set information about this set. To access the Album Properties right-click on an Album and select <guilabel>Edit Album Properties</guilabel> from the context menu.
+             Album Properties can help you remember which kind of photographs are in an Album and can also help you to organize the &quot;Albums&quot; tree. To access the Album Properties right-click on an Album and select <guilabel>Properties</guilabel> (Alt+Return) from the context menu.
             </para>
 
             <para>The Album Properties dialog allows you to set:</para>
@@ -150,13 +360,13 @@
 
             <itemizedlist>
 
-                <listitem><para>The Album <guilabel>Title</guilabel> : this will be used in the &quot;Albums&quot; list.
+                <listitem><para>The Album <guilabel>Title</guilabel> : Name of the Album, identical with the name of the folder on your harddisk. If you edit it here, the folder will also be renamed.
                 </para></listitem>
 
-                <listitem><para>The Album <guilabel>Collection</guilabel> : this is a way of grouping your Albums together by a common label. The Collection you set will be used to order your albums when you select <guilabel>By Collection</guilabel> from the drop down box in the tool bar or using <menuchoice><guimenu>View</guimenu><guimenuitem>Sort Albums</guimenuitem><guimenuitem>By Collection</guimenuitem></menuchoice>. If you want to add and delete Collection labels, use the <link linkend="using-setup-collections">Collections Settings</link> dialog.
+                <listitem><para>The Album <guilabel>Category</guilabel> : this is a way of grouping your Albums together by a common label. The Category you set will be used to order your albums when you select <guilabel>By Category</guilabel> from the drop down box in the tool bar or using <menuchoice><guimenu>View</guimenu><guimenuitem>Sort Albums</guimenuitem><guimenuitem>By Category</guimenuitem></menuchoice>. If you want to add and delete Category labels, choose from the menu <menuchoice><guimenu>Settings</guimenu><guimenuitem>Configure &digikam;</guimenuitem></menuchoice> and here the Album Category section.
                 </para></listitem>
 
-                <listitem><para>The <guilabel>Comments</guilabel> for the Album : this will be shown in the banner at the top of the main Image Window.
+                <listitem><para>The <guilabel>Caption</guilabel> for the Album : Usually a short description of the content, but of course you are free to abuse in any conceivable way. But beware: this will be shown in the banner at the top of the main Image Window ;-)
                 </para></listitem>
 
                 <listitem><para>The Album <guilabel>Date</guilabel> : this will be used when you order your Albums by date using <menuchoice><guimenu>View</guimenu><guimenuitem>Sort Albums</guimenuitem><guimenuitem>By Date</guimenuitem></menuchoice>.
@@ -173,11 +383,11 @@
         <title>Setting the Album Icon</title>
 
             <para>
-            When you first view an Album, &digikam; selects the first photograph in the Album as the icon to display in the &quot;Albums&quot; list. This helps you remember what kind of photographs are contained in an Album. Sometimes the first photograph in the Album is not the most representative and you want to select a different one as the Album icon.
+            &digikam; displays the usual folder icon in the &quot;Albums&quot; list. You can choose one of your photographs instead.This may help you to remember what kind of photographs are contained in an Album.
             </para>
 
             <para>
-            To select a different photograph as the Album icon, right-click on the photograph that you want to use as the Album icon and select &quot;Set as Album Thumbnail&quot; from the context menu. Additionally you can use drag and drop to set the Album icon. Drag the photographs icon and drop it on the currently selected Album in the Album list.
+            To select a photograph as the Album icon, right-click on the photograph that you want to use as the Album icon and select &quot;Set as Album Thumbnail&quot; from the context menu. Additionally you can use drag and drop to set the Album icon. Drag the photographs icon from the thumbnail area and drop it on the currently selected Album in the Album list.
             </para>
 
         <note>
@@ -186,7 +396,7 @@
             </para>
 
             <para>
-            &digikam; also supports tagging individual photographs using the "My Tags" area at the left of the main window. Album Collections are different from photograph tagging because the Album Collection applies to all the photographs in an Album rather than to individual photographs. You can use both Album Collections and tagging to organize your photographs.
+            &digikam; also supports tagging individual photographs. Album Categories are different from photograph tagging because the Album Category applies to all the photographs in an Album rather than to individual photographs. You can use both Album Category and tagging to organize your photographs.
             </para>
         </note>
 
@@ -194,167 +404,6 @@
 
     </sect2>
 
-    <sect2 id="using-imageview">
-    <title>Image View</title>
-
-        <sect3>
-        <title>Introduction</title>
-
-            <para>
-            The Image Window provides the main view of your images. When you select an Album the images contained in that Album will be displayed in the Image Window. Each image is displayed as a thumbnail. You can alter the size of the thumbnails using the magnifier slider in the lower right of the status bar.
-            <inlinemediaobject>
-                <imageobject><imagedata fileref="&path;editor-zoombuttons.png" format="PNG"/></imageobject>
-                <textobject> <phrase>The thumbnail size slider</phrase> </textobject>
-            </inlinemediaobject>
-            </para>
-
-            <para>
-                The first time you select an Album you may have to wait briefly while the thumbnails are generated, unless you used the
-                <menuchoice>
-                        <guimenu>Tools</guimenu>
-                        <guimenuitem>Rebuild all Thumbnails...</guimenuitem>
-                </menuchoice> menu item beforehand.
-            </para>
-
-            <para>
-            Information about each photograph is displayed below each thumbnail. You can control what information is displayed from the
-            <menuchoice>
-                    <guimenu>Settings</guimenu>
-                    <guimenuitem>Configure &digikam;</guimenuitem>
-            </menuchoice>
-            dialog. Select the <guilabel>Album View</guilabel> page and look for the <guilabel>Icon-View Options</guilabel> section.
-            </para>
-
-            <para>
-            The thumbnails have Tool Tips which will pop up if you allow the mouse to dwell over a thumbnail for a moment. The Tool Tip shows the most important properties of the photograph including any tags that you have applied. The screenshot at the top of the <link linkend="using-mainwindow-intro">Introduction to the Main Window</link> section shows a Tool Tip being displayed.
-            </para>
-
-        </sect3>
-
-        <sect3>
-        <title>Image Management</title>
-
-            <para>
-            Photographs are what &digikam; is all about. Albums and Tags allow you to organize and find your photographs in a way that suits you.  You can access all of the functions that &digikam; can perform on a photograph by right-clicking the thumbnail (context menu) or by selecting from the Image menu in the menu bar. You have the choice between viewing the images, viewing by slide show, or of editing the images.
-            </para>
-
-        </sect3>
-
-        <sect3 id="using-imageviewing">
-        <title>Viewing an image</title>
-
-            <para>
-            There are several possibilities to view an image. You can either click on it, push
-                <menuchoice>
-                    <shortcut><keycombo action="press"><keycap>F3</keycap></keycombo></shortcut>
-                        <guimenu>Image</guimenu><guimenuitem>View...</guimenuitem>
-                </menuchoice> or
-                <menuchoice>
-                <shortcut><keycombo action="press">&Enter;</keycombo></shortcut>
-                    <guimenu></guimenu></menuchoice>
-            or select <menuchoice><guimenu>View</guimenu></menuchoice> from the context menu. The image will take the whole central space of the main window. For viewing it larger, click the sidebars away (by just clicking on them). While viewing images you can take action from the context menu at any time. To get back to the album view, just click again or press
-                <menuchoice>
-                <shortcut><keycombo action="press">&Esc;</keycombo></shortcut>
-                <guimenu></guimenu></menuchoice> or
-                <menuchoice>
-                <shortcut><keycombo action="press"><keycap>F3</keycap></keycombo></shortcut>
-                    <guimenu></guimenu></menuchoice> puts you back into the main window.
-            <inlinemediaobject>
-                <imageobject><imagedata fileref="&path;using-mainwindow-preview.png" format="PNG"/></imageobject>
-                <textobject> <phrase>The viewer with thumbnail slider below</phrase> </textobject>
-            </inlinemediaobject>
-                </para>
-
-        </sect3>
-
-        <sect3 id="using-imageediting">
-        <title>Editing a Photograph</title>
-
-            <para>
-            You can open the Image Editor on a photograph either using
-                <menuchoice>
-                    <shortcut><keycap>F4</keycap></shortcut>
-                        <guimenu>Image</guimenu><guimenuitem>Edit...</guimenuitem>
-                </menuchoice>
-            or by right-clicking and selecting <guilabel>Edit</guilabel> from the context menu. See the <link linkend="editor-using">&digikam; Image Editor</link> section for instructions on how to edit your photographs. The Image Editor lets you view your photographs and make a number of adjustments to them.
-            </para>
-
-        </sect3>
-
-        <sect3 id="using-externalapp">
-        <title>Viewing or Editing a Photograph With Another Application</title>
-
-            <para>
-            Sometimes &digikam; may not provide all of the capabilities you need. You can open a photograph in another application by right-clicking on it and selecting from the <guilabel>Open With</guilabel> sub-menu. The list of applications that appear in this menu is controlled by the standard desktop file associations for the image format type of this photograph. Consult the desktop manual for instructions on changing these file associations if the application that you need is not listed.
-            </para>
-
-            <para>
-            Note that there can be a problem with metadata embedded in photographs when they are edited by other image manipulation applications. Some applications do not retain the photograph's metadata when you save a modified image. This means that if you modify a photograph using one of these programs you will lose information such as orientation, aperture &etc; that are stored in the EXIF and IPTC tags.
-            </para>
-
-        </sect3>
-
-        <sect3 id="using-rotateimage">
-        <title>Lossless Image Rotation</title>
-
-            <note><para>
-            You will need to have the Kipi JPEG Lossless Plugin installed for the rotation features. If you do not have this plugin installed you can still rotate your photographs, but you have use the Image Editor. The Image Editor uses a different method of rotating an image, you may not notice any difference but the Image Editor method can cause some loss of quality in the photograph when saving the picture as JPEG. The rotation methods described here uses the Kipi JPEG Lossless Plugin which preserve the quality in the original photograph.
-            </para></note>
-
-            <para>
-            &digikam; provides two ways to get your photographs the right way up. The simplest method is to right-click the thumbnail and select <guilabel>Rotate</guilabel> and then pick the correct amount of rotation needed.
-            </para>
-
-            <para>
-            Many digital cameras now have an orientation sensor. This sensor can detect how you hold the camera while taking an image. It stores this orientation information inside the image. This meta data is stored in an embedded metadata section called EXIF. The cameras could rotate the image themselves right away, but they have limited processing power, so they leave this job to an application like &digikam;. If the camera is storing the orientation, then &digikam; can use it to automatically rotate your photographs so that they are the correct way up when you display them. &digikam; will rotate the image on disk according to this orientation information.
-            </para>
-
-            <para>
-            The photograph is rotated without loss of quality and the orientation information is set to normal, so that other EXIF-aware applications will handle it correctly. To use this feature, right-click on the thumbnail and select
-                <menuchoice>
-                        <guimenu>Image</guimenu><guimenuitem>Auto Rotate/Flip Using EXIF Information</guimenuitem>
-                </menuchoice>
-            . The Camera Tool can perform this operation automatically when it uploads the photographs from your camera which will ensure that your photographs are always the right way up. The rotate operation will do nothing if your camera does not include this information in the photos.
-            </para>
-
-        </sect3>
-
-        <sect3 id="using-renameimage">
-        <title>Renaming a Photograph</title>
-
-            <para>
-            You can change the filename for a photograph by right-clicking a thumbnail and selecting
-                <menuchoice>
-                    <shortcut><keycap>F2</keycap></shortcut>
-                        <guimenu>Rename</guimenu>
-                </menuchoice>. Remember to keep the file extension (.jpg, .tif, &etc;).
-            </para>
-
-        </sect3>
-
-        <sect3 id="using-deleteimage">
-        <title>Deleting a Photograph</title>
-
-            <para>
-            When you delete a photograph from &digikam; it will be moved to the internal Trash Can.
-                <menuchoice>
-                    <shortcut><keycombo action="simul"><keycap>F8</keycap></keycombo> </shortcut>
-                <guimenu>Image</guimenu><guimenuitem>Delete</guimenuitem>
-                </menuchoice> or
-                <menuchoice>
-                    <shortcut><keycap>Delete</keycap> </shortcut><guimenu></guimenu>
-                </menuchoice>
-            If you prefer that Delete really removes the photograph completely, than you can do that by
-                <menuchoice>
-                    <shortcut>&Shift;<keycap> Delete</keycap> </shortcut>
-                <guimenu></guimenu>
-                </menuchoice>
-            </para>
-            <para>Deleting works from anywhere in any &digikam; windows</para>
-
-        </sect3>
-
-    </sect2>
 
     <sect2 id="using-mydatesview">       <title>Calendar View</title>
 
