@@ -158,7 +158,7 @@
             <title>The MySQL Internal Server</title>
 
             <para>
-                While using a large collection, of size greater than 10,000, the application tends to slow down. To avoid the delay and maintain efficiency, digiKam provides option of using “MySQL Internal Server”. To be clear, this isn’t an actual server, or a public network. Instead, it a server that runs only while application is running.
+                While using a large collection, of size greater than 10,000, the application tends to slow down. To avoid the delay and maintain efficiency, &digikam; provides option of using “MySQL Internal Server”. To be clear, this isn’t an actual server, or a public network. Instead, it a server that runs only while application is running.
             </para>
             
             <para>
@@ -166,7 +166,7 @@
             </para>
             
             <para>
-                Internal server uses two MySQL Binary Tools - “mysql_install_db” and “mysqld”. You can configure their locations in the Setup dialog. DigiKam will try to find these binaries automatically if they’re installed on your system. 
+                Internal server uses two MySQL Binary Tools - <application>mysql_install_db</application> and <application>mysqld</application>. You can configure their locations in the configuration dialog. &digikam; will try to find these binaries automatically if they’re installed on your system. 
             </para>
 
             <para>
@@ -205,7 +205,7 @@
             </para></note>
 
             <para>
-                Now, in &digikam;, go to <guimenu>Settings</guimenu> / <guimenuitem>Configure &digikam;</guimenuitem> and then under <guilabel>Settings</guilabel> section, select <guilabel>MySQL Server</guilabel> from the drop down list.
+                Now, in &digikam;, go to <menuchoice><guimenu>Settings</guimenu> <guimenuitem>Configure &digikam;</guimenuitem></menuchoice> and then under <guilabel>Settings</guilabel> section, select <guilabel>MySQL Server</guilabel> from the drop down list.
             </para>
 
             <para>
@@ -221,11 +221,13 @@
             <para>
                 Recommendation for best results
             </para>
-            
-            <para>
-                With slow network, digiKam hang a lots of time especially when album contents is important (>1000 items). This solution relies on network performance. Problem has been reproducible using Wifi connection, for instance. Switching to Ethernet solves the problem.
 
-                Also, If you have an enormous collection, you should start the MySQL server with “mysql --max_allowed_packet = 128M”. (If you’re well acquainted with using MySQL, you could also change your settings in my.ini or ~/.my.cnf files).
+            <para>
+                With slow network, &digikam; hangs a lot of time especially when album contains many items (>1000). This solution relies on network performance. Problem has been reproducible using Wifi connection, for instance. Switching to Ethernet solves the problem.
+            </para>
+
+            <para>
+                Also, if you have an enormous collection, you should start the MySQL server with <command>mysql --max_allowed_packet = 128M</command>. (If you’re well acquainted with using MySQL, you could also change your settings in my.ini or ~/.my.cnf files).
             </para>
 
         </sect3>
@@ -263,7 +265,7 @@
         </para>
         
         <para>
-            Each database can be named with a different name, not only "digikam". This permits user  to backup only what is needed.For instance, naming “core” database as digikamCore, permits to isolate only this table (the most important file). Thumbnails and recognition databases can always be regenerated for scratch.
+            Each database can be named with a different name, not only "digikam". This permits user to backup only what is needed. For instance, naming “core” database as digikamCore, permits to isolate only this table (the most important file). Thumbnails and recognition databases can always be regenerated for scratch.
         </para>
     </sect2>
     
@@ -271,12 +273,12 @@
         <title>Database Statistics</title>
         
         <para>
-            DigiKam provides a unique tool of maintaining the statistics of your collection. It includes count of images, videos (including individual count by image format), tags etc.
+            &digikam; provides a unique tool of maintaining the statistics of your collection. It includes count of images, videos (including individual count by image format), tags &etc;
             Also, includes the Database backend (QSQLITE or QMYSQL) and the Database Path (where your collection is located).
         </para>
         
         <para>
-            You can view your statistics by going to <guibutton>Help</guibutton> | <guimenuitem>Database Statistics</guimenuitem>. A dialog box like this will appear:
+            You can view your statistics by going to <menuchoice><guimenu>Help</guimenu> <guimenuitem>Database Statistics</guimenuitem></menuchoice>. A dialog box like this will appear:
         </para>
         
         <para>
