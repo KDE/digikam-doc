@@ -6,7 +6,10 @@
 
         <para>
            Everyone knows about database, it is used to store data. As all other application programs, &digikam; too uses the database for some obvious reasons like avoiding data duplication, reducing data redundancy and greater data integrity. Moreover, the cost of data entry, storage and retrieval  are drastically reduced. Additionally, any user can access the data using query language.
-           Talking in particular about &digikam;, the Albums, Album Roots, Tags, Thumbnails, Face Recognition Data, Image Metadata, File Paths, Settings &etc; are all stored in database. 
+        </para>
+
+        <para>
+           Talking in particular about &digikam;, the Albums, Album Roots, Tags, Thumbnails, Face Recognition Data, Image Metadata, File Paths, Settings &etc; are all stored in database.
         </para>
 
         <para>
@@ -62,7 +65,7 @@
         </para>
 
         <para>
-            To make your application run fast and smoothly, it is recommended to check and optimize your databases once in awhile. This could be achieved using sqlite3 packages or sqlite browser (high quality, easy to use visual tool for managing database objects). For Ubuntu and its derivatives, it could be retrieved using <command> sudo apt-get install sqlite3</command> or <command>sudo apt-get install sqlitebrowser</command>. Now all remains is to open the terminal, switch to the directory where databases and stored.
+            To make your application run fast and smoothly, it is recommended to check and optimize your databases once in awhile. This could be achieved using sqlite3 packages or sqlite browser (high quality, easy to use visual tool for managing database objects). For Ubuntu and its derivatives, it could be retrieved using <command>sudo apt-get install sqlite3</command> or <command>sudo apt-get install sqlitebrowser</command>. Now all remains is to open the terminal, switch to the directory where databases and stored.
         </para>
 
         <note><para>
@@ -70,7 +73,7 @@
         </para></note>
 
         <para>
-            SQLite database files could be found in your “collection” folder, which you have added to &digikam;. (By default, if you add your “Pictures” collection, the DB files will be present in <filename class="directory"> ~/Pictures</filename> folder).
+            SQLite database files could be found in your “collection” folder, which you have added to &digikam;. (By default, if you add your “Pictures” collection, the database files will be present in <filename class="directory"> ~/Pictures</filename> folder).
         </para>
 
         <para>
@@ -135,8 +138,7 @@
             </para>
 
             <para>
-
-                To switch from SQLite to MySQL database, go to <guimenu>Settings</guimenu> / <guimenuitem>Configure &digikam;</guimenuitem> and then under <guilabel>Settings</guilabel> section, select a database from the drop down list.
+                To switch from SQLite to MySQL database, go to <guimenuitem>Settings</guimenuitem> / <guimenuitem>Configure &digikam;</guimenuitem> and then under <guilabel>Settings</guilabel> section, select a database from the drop down list.
 
                 <orderedlist>
 
@@ -158,13 +160,13 @@
             <title>The MySQL Internal Server</title>
 
             <para>
-                While using a large collection, of size greater than 10,000, the application tends to slow down. To avoid the delay and maintain efficiency, &digikam; provides option of using “MySQL Internal Server”. To be clear, this isn’t an actual server, or a public network. Instead, it is a server that runs only while application is running.
+                While using a large collection, of size greater than 10,000 items, the application tends to slow down. To avoid the delay and maintain efficiency, &digikam; provides option of using <guilabel>MySQL Internal Server”</guilabel>. To be clear, this isn’t an actual server, or a public network. Instead, it is a server that runs only while application is running.
             </para>
-            
+
             <para>
-                Internal server creates a separate database that can be accessed (only while application is running) using the command: <command>mysql --socket=/home/<replaceable>[user_name]</replaceable>/.local/share/digikam/db_misc/mysql.socket digikam </command>
+                Internal server creates a separate database that can be accessed (only while application is running) using the command: <command>mysql --socket=/home/<replaceable>[user_name]</replaceable>/.local/share/digikam/db_misc/mysql.socket digikam</command>
             </para>
-            
+
             <para>
                 Internal server uses two MySQL Binary Tools - <application>mysql_install_db</application> and <application>mysqld</application>. You can configure their locations in the configuration dialog. &digikam; will try to find these binaries automatically if they’re installed on your system. 
             </para>
@@ -189,7 +191,7 @@
             </para>
 
             <note><para>
-                You can select any database name. (Here it is, “digikam”). Just remember to fill in the database name correctly in Core, Thumbs, Face Db Name in the dialog box shown below.
+                You can select any database name. (Here it is, “digikam”). Just remember to fill in the database name correctly in Core, Thumbs, Face database names from the dialog box shown below.
             </para></note>
 
             <blockquote><screen>
@@ -215,15 +217,35 @@
             </para>
 
             <para>
-                Enter the IP address of your MySQL server in the <guilabel>Host Name</guilabel> field and specify the correct port in the <guilabel>Port</guilabel> field (the default port is 3306). In the <guilabel>Core Db Name</guilabel> field, enter the name of the database for storing photo metadata, and specify the name of the database for storing thumbnails in the <guilabel>Thumbs Db Name</guilabel> field. Enter your MySQL username and password in the appropriate fields. To check whether the database connection works properly, press the <guibutton>Check Connection</guibutton> button. If everything works as it’s supposed to, switch to the Collections sections, and add the directories containing your photos. Hit <guibutton>OK</guibutton>, and wait till &digikam; populates the databases with data from photos. This can take a while if you have a lot of photos.
+                Enter the IP address of your MySQL server in the <guilabel>Host Name</guilabel> field and specify the correct port in the <guilabel>Port</guilabel> field (the default port is 3306).
             </para>
 
             <para>
-                Recommendation for best results
+                In the <guilabel>Core Db Name</guilabel> field, enter the name of the first database for storing photo metadata.
             </para>
 
             <para>
-                With slow network, &digikam; hangs a lot of time especially when album contains many items (>1000). This solution relies on network performance. Problem has been reproducible using Wifi connection, for instance. Switching to Ethernet solves the problem.
+                Specify the name of the second database for storing wavelets compressed thumbnails in the <guilabel>Thumbs Db Name</guilabel> field.
+            </para>
+
+            <para>
+                The third database is dedicated to store face histograms for recognition purpose. Use the <guilabel>Face Db Name</guilabel> field for that.
+            </para>
+
+            <para>
+                To be connected safety to the remote server, enter your MySQL identification using <guilabel>username</guilabel> and <guilabel>password</guilabel> fields.
+            </para>
+
+            <para>
+                To check whether the database connection works properly, press the <guibutton>Check Connection</guibutton> button. If everything works as it’s supposed to, switch to the <guilabel>Collections</guilabel> sections, and add the directories containing your photos. Hit <guibutton>OK</guibutton>, and wait till &digikam; populates the databases with data from photos. This can take a while if you have a lot of items to register in database.
+            </para>
+
+            <para>
+                There are some tips and recommendation to obtain the best results with a remote MySQL database server.
+            </para>
+
+            <para>
+                With slow network, &digikam; hangs a lot of time especially when album contains many items (>1000). This solution relies on network performance. Problem has been reproducible using Wifi connection, for instance. Switching to Ethernet must solves the problem.
             </para>
 
             <para>
@@ -246,9 +268,9 @@
         </para>
 
         <para>
-                <inlinemediaobject><imageobject>
-                    <imagedata fileref="&path;intro-database-migration.png" format="PNG" /></imageobject>
-                </inlinemediaobject>
+            <inlinemediaobject><imageobject>
+                <imagedata fileref="&path;intro-database-migration.png" format="PNG" /></imageobject>
+            </inlinemediaobject>
         </para>
 
         <para>
@@ -256,35 +278,35 @@
         </para>
 
     </sect2>
-    
+
     <sect2 id="intro-database-backup">
         <title>Database Backup Recommendation</title>
-        
+
         <para>
-            For security reasons, planing a DB backup using crontab over the network can help against device dysfunctions. A NAS or an external drive can also be used for that. 
+            For security reasons, planing a database backup using crontab over the network can help against device dysfunctions. A NAS or an external drive can also be used for that.
         </para>
-        
+
         <para>
             Each database can be named with a different name, not only "digikam". This permits user to backup only what is needed. For instance, naming “core” database as digikamCore, permits to isolate only this table (the most important file). Thumbnails and recognition databases can always be regenerated for scratch.
         </para>
     </sect2>
-    
+
     <sect2 id="intro-database-statistics">
         <title>Database Statistics</title>
-        
+
         <para>
             &digikam; provides a unique tool of maintaining the statistics of your collection. It includes count of images, videos (including individual count by image format), tags &etc;
             Also, includes the Database backend (QSQLITE or QMYSQL) and the Database Path (where your collection is located).
         </para>
-        
+
         <para>
             You can view your statistics by going to <menuchoice><guimenu>Help</guimenu> <guimenuitem>Database Statistics</guimenuitem></menuchoice>. A dialog box like this will appear:
         </para>
-        
+
         <para>
-                <inlinemediaobject><imageobject>
-                    <imagedata fileref="&path;intro-database-statistics.png" format="PNG" /></imageobject>
-                </inlinemediaobject>
+            <inlinemediaobject><imageobject>
+                <imagedata fileref="&path;intro-database-statistics.png" format="PNG" /></imageobject>
+            </inlinemediaobject>
         </para>
     </sect2>
 
