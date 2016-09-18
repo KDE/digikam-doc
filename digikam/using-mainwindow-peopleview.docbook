@@ -1,0 +1,114 @@
+<sect2 id="using-mainwindow-peopleview">
+    <title>People View</title>
+
+    <para>
+        As long as you are not just taking pictures from machines or stars or something like that, Face Management might be an interesting feature for you (even with a machine there might be a human being operating it). In &digikam; it consists of two tasks: Face Detection and Face Recognition.
+    </para>
+
+    <sect3> <title>Face Detection</title>
+
+        <para>
+            The first step is to have &digikam; finding all those pics that show faces not even knowing yet who's face it is. To prepare that process you click <guilabel>Scan collection for faces</guilabel> which will open the Scanning faces dialog. Right under the header you have a drop down menu where you can choose between
+            <itemizedlist>
+                <listitem>
+                    <para>Skip images already scanned</para>
+                </listitem>
+                <listitem>
+                    <para>Scan again and merge results</para>
+                </listitem>
+                <listitem>
+                    <para>Clear unconfirmed results and rescan</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+
+        <para>
+            The first one you would choose if you didn't scan yet or if you did with a satisfying result but added new photographs since then or if you already improved a search result, &eg; by removing face tags which obviously don't show a face. The second you would choose if you want the images already scanned to be included in the next scan. The third is more interesting in the context of Face Recognition since <quote>unconfirmed results</quote> means face tags that don't have a name assigned to them yet.
+        </para>
+
+        <para>
+            For the task we are talking about you check <guilabel>Detect faces</guilabel>, of course. Since face detection is a time-consuming task you better <emphasis>don't</emphasis> hit <guilabel>Scan</guilabel> right away, rather <guilabel>Options</guilabel>. An additional area will fold out organized with three tabs. In <guilabel>Albums</guilabel> you can confine the scan to certain albums or tags. In <guilabel>Parameters</guilabel> you can try to find a balance between speed and accuracy that suits your needs. Under <guilabel>Advanced</guilabel> you will find two checkboxes. The first is explained by the text above it. The second is for face recognition, see next article.
+        </para>
+
+        <para>
+            Once you have chosen your options carefully you click <guilabel>Scan</guilabel> and after a while, depending on the scope of your selection, the result will be presented in the Image Area. In the Tags list of the Left Sidebar you will see the People branch of your tag tree. You will see the whole scan result only if the topmost tag <quote>People</quote> is selected. In the tree you will see a new virtual tag called <quote>Unknown</quote> which will show all those images where faces are recognized but not yet connected to a person. If you just scanned for the first time you will find the whole result also here.
+        </para>
+
+        <para>
+            <example>
+                <title>Face Detection result</title>
+                <mediaobject>
+                    <imageobject><imagedata fileref="&path;using-mainwindow-facedetection.png" format="PNG" /></imageobject>
+                </mediaobject>
+            </example>
+        </para>
+
+        <para>
+            Note that the thumbnails presented here are not showing the whole image. They show the area of the image where the scan algorithm put down a <firstterm>Face Tag</firstterm>. You can see that if you click on the thumbnail. In the preview that opens you will see the whole image with all the face tags on them. If you don't see them, click the 
+            <inlinemediaobject>
+                <imageobject><imagedata fileref="&path;using-mainwindow-icon-showfacetags.png" format="PNG" /></imageobject>
+            </inlinemediaobject> 
+            button in the upper left corner of the preview. If there is more than one face tag on the image it will also be represented by more than one thumbnail. In the screenshot above this is the case with the two topmost thumbnails.
+        </para>
+
+        <para>
+            <mediaobject>
+                <imageobject><imagedata fileref="&path;using-mainwindow-facedetectiontag.png" format="PNG" /></imageobject>
+            </mediaobject>
+        </para>
+
+        <para>
+            This screenshot image have been chosen because it shows one important issue: the algorithm will find inevitably details in an image that resemble a face but are actually something else. That's what the <guilabel>Remove</guilabel> button is for. It will remove the face tag from the photograph and if it is the only face tag (left) the photograph will disappear from the scan result.
+        </para>
+
+        <para>
+            If it really is a face the field labeled "Who is this?" comes into play. Here you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With <guilabel>Confirm</guilabel> you can save that to the database. If it was the only face tag (left) the image will disappear from the <quote>Unknown</quote> selection and you will find it once you select either the <quote>People</quote> tag or one of the tags you assigned to one of the face tags in that image.
+        </para>
+
+        <para>
+            In the context menu of the preview there are two more items related to face tags: <guilabel>Add a Face Tag</guilabel> and <guilabel>Clear all faces on this image</guilabel>.
+        </para>
+
+    </sect3>
+
+    <sect3> <title>Face Recognition</title>
+
+        <para>
+            Assigning People tags to face tags is an important prerequisite to Face Recognition. Very obviously &digikam; can only recognize faces if it has something to compare with. So it's up to you to show it the ropes, which means in this case to tell &digikam;: This is Lara, this is Juan, this is Peter and so forth. For that you would, after performing a Face Detection as described in the previous article, typically select the <quote>unknown</quote> tag on the Left Sidebar, click on a thumbnail and click, if necessary, on the 
+            <inlinemediaobject>
+                <imageobject><imagedata fileref="&path;using-mainwindow-icon-showfacetags.png" format="PNG" /></imageobject>
+            </inlinemediaobject> 
+            (Show Face Tags) button. Now you should see the face tags of that photograph. Those which have a people (or other) tag already assigned will simply show the name of that tag. The others, showing <quote>unknown</quote> faces, will show a field and two buttons as in the screenshot of the previous article. In the field labeled "Who is this?" you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With <guilabel>Confirm</guilabel> you can save that to the database.
+        </para>
+
+        <para>
+            If a face tag is confirmed and thus showing only the name of the tag but not the buttons to remove, edit or confirm it, but you need this buttons because &eg; it's wrong and you want to edit or remove it, just double-click on the name and the buttons will re-appear.
+        </para>
+
+        <para>
+            Once you have a tag assigned to a few photographs you can have &digikam; looking if it can find more photographs showing the same face. To prepare that process you click <guilabel>Scan collection for faces</guilabel> but his time you select <guilabel>Recognize faces</guilabel>. 
+        </para>
+
+        <para>
+            Face Recognition is faster than Face Detection but it still makes sense to click <guilabel>Options</guilabel> and confine the scan to certain albums or tags in the <guilabel>Albums</guilabel> tab, &eg; to the "Unknown" tag. In the <guilabel>Parameters</guilabel> tab we can play with the balance between speed and accuracy. Under <guilabel>Advanced</guilabel> you will find two checkboxes. The first is explained by the text above it.
+        </para>
+
+        <para>
+            In case of unsatisfying results it might be helpful to use <guilabel>Clear and rebuild all training data</guilabel>. One reason can be that there are too many face tags assigned to a person which shows this person in a way that doesn't really help the search algorithm, &eg; with sunglasses, blurred, unusual colors, carnival make up, dark shaded areas in the face, baby/kid/adult photographs mixed...  Another reason to use that option can be false face recognition due to a wrong accuracy setting in the <guilabel>Parameters</guilabel> tab.
+        </para>
+
+        <para>
+            To start the Face Recognition you click <guilabel>Scan</guilabel>. The process will tag every recognized face with the appropriate People tag out of your tag tree and the corresponding thumbnail will disappear from the "Unknown" tag selection.
+        </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

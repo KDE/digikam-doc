@@ -1,0 +1,113 @@
+<sect2 id="using-mainwindow-searchesview">
+    <title>Search View</title>
+    <para>
+        We talked about quite a few views already and their searching capabilities, which are all kind of specialized. The Search View now offers a more versatile and general way of searching. There are two different approaches.
+    </para>
+
+    <para>
+        <mediaobject>
+            <imageobject><imagedata fileref="&path;using-mainwindow-searchview.png" format="PNG" /> </imageobject>
+        </mediaobject>
+    </para>
+
+    <sect3> <title>The Quick Search</title>
+    <anchor id="quicksearchtool.anchor"/>
+
+        <para>
+            Quick Search is the adaptive search box at the top of the search dialog (Left Sidebar) and provides you with a simple means to search the &digikam; database with a single query. You can enter any arguments in the <guilabel>Search:</guilabel> text field and it will be used to determine the results. For instance, you can enter the string 'birthday' to search the complete database for occurrences of the word 'birthday' in all metadata text fields, or '05.png' to search for a specific image file name '05.png' (no escaping as in regexpressions needed).
+        </para>
+
+        <para>Search Properties:
+            <itemizedlist>
+                <listitem><para>searches are case insensitive</para></listitem>
+                <listitem><para>blank separated search terms are boolean AND combinations</para></listitem>
+                <listitem><para>special characters are literal and not interpreted ( . * ? / &etc;)</para></listitem>
+                <listitem><para>include all elements of the database: names, rating, keywords, tags, albums, collections, dates (and more in the future)</para></listitem>
+            </itemizedlist>
+        </para>
+
+        <para>
+            You can save your searches as a live folder that always filters for what you entered as search criteria. Just type a name for the search into the <guilabel>Save Current Search</guilabel> field and click the save button to the right of it. When saved, the filter will appear in the <guilabel>Searches</guilabel> list. By clicking the title bar of this list you can invert the sorting order. Once you select one of your saved searches, the search result will be presented in the Image Area immediately and the <guilabel>Save Current Search</guilabel> field will convert into a <guilabel>Edit Stored Search</guilabel> field where you can edit your search criteria. The name of the saved search will be used to label the search result in the Image Area.
+        </para>
+
+        <para>
+            If you want to delete or rename a saved search from the list, right-click on it and select from the context menu.
+        </para>
+
+    </sect3>
+
+    <sect3 id="using-mainwindow-advancedsearchtool">
+    <title>The Advanced Search Tool</title>
+
+        <para>
+            Advanced Search tool provides an extended search form which can be used to search in specific fields of the &digikam; database in a more sophisticated way. Click the <guilabel>Advanced Search...</guilabel> button and it will come up like this:
+        </para>
+
+        <para>
+            <mediaobject>
+                <imageobject><imagedata fileref="&path;using-mainwindow-advancedsearchtool.png" format="PNG" /></imageobject>
+            </mediaobject>
+        </para>
+
+        <para>
+            The field labeled <quote>Find pictures that have associated all these words:</quote> is just a duplicate of the Quick Search field.
+        </para>
+
+        <para>
+            Click on one of the blue categories and there will fold out an area with all the fields you can search for in that very category. Depending on the kind of data each field contains different input fields for your search, sometimes more than one type for the same field. Simplest are selection buttons, &eg; for colors. Then you have plain fields of the <quote>The <replaceable>field content</replaceable> contains</quote> type, drop down lists and checkboxes. Many fields have two input fields allowing you to define a range, &eg; <quote>Find pictures with a width between</quote>. And often you find a link type thing called <quote>Any</quote> which opens a drop down field with checkboxes for the possible contents of that field.
+        </para>
+
+        <example>
+            <title>Advanced Search Criteria</title>
+            <mediaobject>
+                <imageobject><imagedata fileref="&path;using-mainwindow-advancedsearchtool2.png" format="PNG" /></imageobject>
+            </mediaobject>
+        </example>
+
+        <para>
+            Thanks to the labeling of the search fields they are pretty much self explaining. What we have to talk about is how they work together if you fill in or select more than one. On the right side of the header (blue area at the top) you find a little link <quote>Options</quote>. If you click on that one the header will change and you see four options.
+        </para>
+
+        <para>
+            <itemizedlist>
+                <listitem><para>
+                    <quote>Meet All of the following conditions</quote> means that your different search parameters will be connected by boolean AND for the search. Example: if you selected Album name <quote>Holidays</quote> and color <quote>red</quote> the search will find all pictures labeled with <quote>red</quote> out of the Album <quote>Holidays</quote>.
+                </para></listitem>
+
+                <listitem><para>
+                    <quote>Meet Any of the following conditions</quote> means that your different search parameters will be connected by boolean OR for the search. Example: if you selected Album name <quote>Holidays</quote> and color <quote>red</quote> the search will find the content of the Album <quote>Holidays</quote> <emphasis>and</emphasis> all pictures labeled with <quote>red</quote> out of your whole collection.
+                </para></listitem>
+
+                <listitem><para>
+                    <quote>None of these conditions are met</quote> means that your different search parameters will be connected by boolean NAND for the search. Again our example: if you selected Album name <quote>Holidays</quote> and color <quote>red</quote> the search will find all pictures of your collection except those labeled with <quote>red</quote> <emphasis>and</emphasis> except those out of the Album <quote>Holidays</quote>.
+                </para></listitem>
+
+                <listitem><para>
+                    <quote>At least one of these conditions is not met</quote> means that your different search parameters will be connected by boolean NOR for the search. One more example: if you selected Album name <quote>Holidays</quote> and color <quote>red</quote> the search will find all pictures of your collection except those labeled with <quote>red</quote> out of the Album <quote>Holidays</quote>.
+                </para></listitem>
+            </itemizedlist>
+        </para>
+
+        <para>
+            Complicated? No, good! Because the real stuff is yet to come. Have a look at the footer of the Advanced Search Tool. Here you find <guilabel>+ Add Search Group</guilabel>. If you hit this button another list with the same categories of search fields will open below the first one (scroll down in case you don't see it right away) separated by a blue header showing the same options we were just talking about. On top of them you see an underlined OR meaning that this list is connected to the first one by boolean OR. You can change that to AND by clicking on it.
+        </para>
+
+        <para>
+            To explain how it works let's make another example based on one of those we had already. I want to use the second one. That means: in the first group you checked <quote>Meet Any of the following conditions</quote> and you selected Album name <quote>Holidays</quote> and color <quote>red</quote>. As we said already this will produce all pictures labeled with <quote>red</quote> out of your whole collection <emphasis>and</emphasis> the content of the Album <quote>Holidays</quote>. Now let's assume for some reason you want to exclude all rejected files and all files with a rating lower than three stars. So you open a second group, click on the underlined OR in the header in order to change it to AND, select <quote>None of these conditions are met</quote>, fold out the <quote>Picture Properties</quote>, check under <quote>Labels</quote> the red flag (rejected) and select under <quote>Rating</quote> no star (five white stars) in the first field and two stars in the second field. Note that there is a difference between <quote>no star</quote> and <quote>No Rating assigned</quote>! If you want to exclude the pictures without any rating as well you got to open another Search Group, click on the underlined OR in the header in order to change it to AND, select <quote>None of these conditions are met</quote> and select <quote>No Rating assigned</quote> in the <quote>Picture Properties</quote> category.
+        </para>
+
+        <para>
+            Which brings us to the fact that you can open as many additional Search Groups as you need to formulate your query. But since the purpose of this handbook is not to open a competition in creating the most sophisticated queries I leave it to you to figure out how far you have to go or can go in this respect and rather finish this section with a few hints about the other buttons in the Advanced Search Tool. Beside the <guilabel>+ Add Search Group</guilabel> button you see <guilabel>Reset</guilabel>. This removes all additional Search Groups and clears all the fields in the remaining one. It's a good policy to use this button before starting to create a new search, in particular when you leave the Advanced Search Tool with the intention to use the Quick Search for your next query, because otherwise the search criteria remain active even if you don't see them and screw up your new search. <guilabel>Try</guilabel> carries out the search but leaves the Advanced Search Tool window open, <guilabel>OK</guilabel> does the same but closes the window. <quote>Remove Group</quote> in the header of the additional Search Groups doesn't need an explanation, I think.
+        </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
