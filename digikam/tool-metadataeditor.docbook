@@ -3,7 +3,7 @@
 
 <abstract>
 <para>
-The Metadata Editor is a tool for adding and editing Exif, Iptc, or Xmp metadata from an image.
+The Metadata Editor is a tool for adding and editing EXIT, IPTC, or XMP metadata attached to an image.
 </para>
 </abstract>
 
@@ -20,42 +20,55 @@ The Metadata Editor is a tool for adding and editing Exif, Iptc, or Xmp metadata
 <title>Metadata Editor</title>
 
 <para>
-    Inside each digital photo hides metadata in the Exif, Iptc, or Xmp formats, and &digikam; provides tools for viewing and editing this useful information.
+  Image metadata is textual information 
+  that can be attached to digital images in order to annotate, describe and categorise them.  
+  This information is useful for searching and indexing images and for accessibility services.  
+  There are three standard formats in which image metadata can be stored: EXIF, IPTC and XMP.  
+  They concentrate on different properties of the image and are used for different purposes.  
+  &digikam; provides tools for viewing and editing image metadata in all these formats.
 </para>
 
 <para>
     The application offers metadata editing tools available through the <guimenu>Edit Metadata</guimenu> menu entry. 
-    The metadata editor conveniently organizes all metadata into sections for each kind of metadata chunk, making it easier to find and edit 
-    specific entries. For example, to edit hardware-related information, switch to the <guilabel>Device</guilabel> section. Here you can modify device manufacturer, 
-    device model, exposure-related settings, and other information.
+    The metadata editor conveniently arranges all metadata into sections for each kind of metadata chunk, 
+    making it easier to find and edit specific entries. 
+    For example, to edit hardware-related information, switch to the <guilabel>Device</guilabel> section. 
+    Here you can modify device manufacturer, device model, exposure-related settings, and other information.
 </para>
 
 <para>
     <inlinemediaobject>
         <imageobject><imagedata fileref="&path;tool-metadataeditor-exif.png" format="PNG"/></imageobject>
-        <textobject><phrase>The Metadata Editor Working on Device Information from Exif</phrase></textobject>
+        <textobject><phrase>The Metadata Editor Working on Device Information from EXIF</phrase></textobject>
     </inlinemediaobject>
 </para>
 
 <para>
-    In addition to Exif, IPTC and XMP formats are supported, so you can perform the described actions on metadata stored in these metadata chunks as for Exif.
-    Remember that Exif is dedicated to store camera information, where Iptc and Xmp are more used to store post process text information as rights management.
-    So, it's not recommended to edit the metadata that the camera creates but more to add the author/copyright/&etc; information, excepted if you need to fix wrong
-    internal values.
+    In addition to EXIF, IPTC and XMP formats are supported, 
+    so you can perform the described actions on metadata stored in these metadata chunks as for EXIF.
+    Remember that EXIF is dedicated to store camera information, 
+    where IPTC and XMP are more used to store post-process text information such as rights management.  
+    So, it is not recommeded to edit the metadata injected by the camera that took the photograph; 
+    on the other hand, you can add information about the author, copyright etc.
+    <ulink url="http://www.exiv2.org/metadata.html" >Detailed description of supported entries</ulink > is available online.
 </para>
 
 <para>
     <inlinemediaobject>
         <imageobject><imagedata fileref="&path;tool-metadataeditor-xmp.png" format="PNG"/></imageobject>
-        <textobject><phrase>The Metadata Editor Working on Right Management Information from Xmp</phrase></textobject>
+        <textobject><phrase>The Metadata Editor Working on Rights Management Information from XMP</phrase></textobject>
     </inlinemediaobject>
 </para>
 
 <para>
-    Note that you can synchronize some specific metadata entries from one chunk to another one, as for example the comments which is available into 
-    Exif, Iptc, and Xmpp as different forms. When relevant checkbox are set in the section, relevant chunk entries are backported and adjusted in most 
-    compatible format.
-</para>
+    Note that you can synchronise some specific metadata entries from one chunk to another one, 
+    as for example the comments 
+    which is available in EXIF, IPTC, and XMP as separate entries. 
+    Mark the check boxes corresponding to the entries you wish to copy from one format to another.</para >
+  <caution 
+    ><para >
+      Note that synchronising metadata may produce undesired results 
+      because EXIF is limited to pure ASCII character set.</para ></caution>
 
 </chapter>
 
