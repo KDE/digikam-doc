@@ -3,7 +3,7 @@
 
     <abstract>
         <para>
-            Maintenance is a tool run processes in background to maintain image collections and database contents.
+            Maintenance is a tool run processes in the background to maintain image collections and database contents.
         </para>
     </abstract>
 
@@ -18,7 +18,7 @@
         <title>Introduction</title>
 
         <para>
-            TODO
+            Depending on your workflow, your &digikam; settings and whether you work on your images collection also with other programs it might be necessary to run maintenance operations from time to time to update the &digikam; databases and also your images regarding duplicates, face tags, quality labels etc. The maintenance tool can do that for you, even more than one operation in one go depending on your requirements.
         </para>
 
     </sect1>
@@ -30,7 +30,11 @@
             <title>The Common Options</title>
 
             <para>
-                TODO
+                In the Common Options section you can restrict the scope of the maintenance process(es) to certain albums or tags. You got to un-check <guilabel>Whole albums collection</guilabel> or <guilabel>Whole tags collection</guilabel> to get access to the drop down fields where you can select albums or tags. If you switch from <guilabel>Albums</guilabel> to <guilabel>Tags</guilabel> or vice versa your selection in the now grayed out item will remain untouched which might be useful if you need a certain selection more often.
+            </para>
+            
+            <para>
+                Since many of the processes the maintenance tool can perform are time consuming (depending also on the scope, of course) you have the choice to check <guilabel>Work on all processor cores</guilabel> if your machine has more than one and they are not occupied otherwise.
             </para>
 
         </sect2>
@@ -39,7 +43,14 @@
             <title>The Scan for New Items Tool</title>
 
             <para>
-                TODO
+                This process will scan the collections you defined in 
+                <menuchoice>
+                    <guimenu>Settings</guimenu><guisubmenu>Configure &digikam;</guisubmenu><guimenuitem>Collections</guimenuitem>
+                </menuchoice> 
+                for new items, &ie; image files you added to your collections while &digikam; was not running. You can run this process also automatically on &digikam; startup by checking <guilabel>Scan for new items at startup</guilabel> in 
+                <menuchoice>
+                    <guimenu>Settings</guimenu><guisubmenu>Configure &digikam;</guisubmenu><guimenuitem>Miscellaneous</guimenuitem>
+                </menuchoice>.
             </para>
 
         </sect2>
@@ -81,10 +92,14 @@
         </sect2>
 
         <sect2 id="tool-maintenance-features-quality">
-            <title>The Images Quality Sorter Tool</title>
+            <title>The Image Quality Sorter Tool</title>
 
             <para>
-                TODO
+                The Image Quality Sorter assigns quality labels to images according to the settings in 
+                <menuchoice>
+                    <guimenu>Settings</guimenu><guisubmenu>Configure &digikam;...</guisubmenu><guimenuitem>Image Quality Sorter</guimenuitem>
+                </menuchoice>.
+                There you also have to enable this tool if you want to use it. Since it is a time consuming process it's a good idea to check <guilabel>Work on all processor cores</guilabel> and restrict the job to certain albums or tags. The tool will set the red flag for <quote>rejected</quote>, the yellow one for <quote>pending</quote> and the green one for <quote>accepted</quote>.
             </para>
 
         </sect2>
