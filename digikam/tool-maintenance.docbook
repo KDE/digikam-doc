@@ -3,7 +3,7 @@
 
     <abstract>
         <para>
-            Maintenance is a tool run processes in the background to maintain image collections and database contents.
+            Maintenance is a tool running processes in the background to maintain image collections and database contents.
         </para>
     </abstract>
 
@@ -30,7 +30,7 @@
             <title>The Common Options</title>
 
             <para>
-                In the Common Options section you can restrict the scope of the maintenance process(es) to certain albums or tags. You got to un-check <guilabel>Whole albums collection</guilabel> or <guilabel>Whole tags collection</guilabel> to get access to the drop down fields where you can select albums or tags. If you switch from <guilabel>Albums</guilabel> to <guilabel>Tags</guilabel> or vice versa your selection in the now grayed out item will remain untouched which might be useful if you need a certain selection more often.
+                In the Common Options section you can restrict the scope of the maintenance process(es) to certain albums or tags. You got to un-check <guilabel>Whole albums collection</guilabel> or <guilabel>Whole tags collection</guilabel> to get access to the drop down fields where you can select albums or tags. Note that in this drop down field you have a context menu to select or deselect children and/or parents and also to invert the selection. If you switch from <guilabel>Albums</guilabel> to <guilabel>Tags</guilabel> or vice versa your selection in the now grayed out item will remain untouched which might be useful if you need a certain selection more often.
             </para>
             
             <para>
@@ -59,7 +59,11 @@
             <title>The Rebuild Thumbnails Tool</title>
 
             <para>
-                TODO
+                Rebuilding the thumbnails might be necessary if you worked on your images with other applications or if you changed the thumbnail size in 
+                <menuchoice>
+                    <guimenu>Settings</guimenu><guisubmenu>Configure &digikam;</guisubmenu><guisubmenu>Views</guisubmenu><guimenuitem>Tree-Views</guimenuitem>
+                </menuchoice>. 
+                The <quote> Scan for changed or non-cataloged items</quote> option can speed up the process in the first case or if you just added pictures to your collection.
             </para>
 
         </sect2>
@@ -68,7 +72,8 @@
             <title>The Rebuild Fingerprints Tool</title>
 
             <para>
-                TODO
+                Fingerprints are necessary for finding duplicates and similar items and for finding images by scetches. For detailed description see 
+                <link linkend="using-mainwindow-fuzzysearches">Fuzzy View</link>.
             </para>
 
         </sect2>
@@ -77,16 +82,18 @@
             <title>The Find Duplicates Tool</title>
 
             <para>
-                TODO
+                The Find Duplicates Tool is doing the same as the <guilabel>Find duplicates</guilabel> button in the Fuzzy View, but here you can combine it with other maintenance operations and you have the chance to check <quote>Work on all processor cores</quote> under Common Options (see above) to speed up the process.
             </para>
 
         </sect2>
 
         <sect2 id="tool-maintenance-features-faces">
             <title>The Face Management Tool</title>
+            <subtitle>Detect and Recognize Faces</subtitle>
 
             <para>
-                TODO
+                This is the same process you can access in the People View with the <guilabel>Scan collection for faces</guilabel> button. Here you just cannot set the Fast - Accurate parameter and the option <quote>Clear and rebuild all training data</quote>. For more information about the Faces Data Management options see 
+                <link linkend="using-mainwindow-peopleview">People View</link>.
             </para>
 
         </sect2>
