@@ -5,16 +5,16 @@
 
         <para>
             Many digital cameras support taking of short movie clips. 
-            These clips are usually stored in AVI or MP4 format. 
+            These clips are usually stored in AVI, MOV, or MP4 format. 
             &digikam; understands metadata from these formats and will generate 
             thumbnails for the movie files.
         </para>
 
         <para>
             However, &digikam; is not a movie editing application and it does not have any 
-            built-in movie viewing or editing capabilities. 
+            built-in movie editing capabilities. 
             If you double click on a movie file &digikam; you can preview video 
-            or choose a viewing application through your desktop settings.
+            or choose a dedicated viewing / editing application through your desktop settings.
         </para>
 
     </sect2>
@@ -23,19 +23,25 @@
         <title>Video Formats</title>
 
         <para>
-            &digikam; relies on <ulink url="http://doc.qt.io/qt-5/multimediaoverview.html">Qt5 Multimedia framework</ulink> to handle video files. 
-            You must take a care to have installed all parts of this frameworks on your computer, and especially the multimedia plugins interface.
-            This framework will able to play video files depending on the availability of video codecs 
-            installed on your system. &digikam; do not include extra video codec. These codecs are loaded on demand at running time.
+            &digikam; relies on <ulink url="http://www.qtav.org/">QtAV Multimedia framework</ulink> to handle video files. 
+            In background, QtAV use the powerfull <ulink url="https://ffmpeg.org/">FFmpeg</ulink> video tool-kit, witch include 
+            all codecs that digiKam needs to play video files.
         </para>
 
         <para>
-            On &Linux; desktop, this framework will use GStreamer backends. You need to install GStreamer plugins named "Good", "Bad" and "Ugly",
-            to be sure that all video formats will be handled by Qt5 Multimedia interface.
+            FFmpeg codec is available under &Linux; desktop, MacOS, and Windows. You will don't need to install extra video codec on your computer.
         </para>
 
+    </sect2>
+
+    <sect2>
+        <title>Video Features</title>
+
         <para>
-            On other desktop operating system, you will need to install extra video codecs, as KLite Codec Pack for <ulink url="http://www.codecguide.com/download_kl.htm">Microsoft Windows</ulink> or for <ulink url="http://www.techisky.com/tips/k-lite-codec-pack-for-mac.html">Apple MacOS</ulink>.
+            With &digikam;, you will be able to read video metadata, as movies length, video frames per seconds, video size, and encoding options, 
+            in goal to populate the database at scanning and to perform searches on your collection about video properties. 
+            You will be able to play video in embeded preview mode, and while a slide-show. This include to preview video from your camera device before 
+            downloading (only with USB Mass Storage connexion mode).
         </para>
 
     </sect2>
