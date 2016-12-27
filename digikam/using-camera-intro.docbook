@@ -1,33 +1,71 @@
 <sect2 id="using-camera-intro">
-    <title>Introduction to Camera Interface</title>
+    <title>Introduction to the Import Interface</title>
 
     <para>
-        The Camera Tool allows you to download your photographs directly from your camera into a &digikam; Album. You can access the Camera Tool by clicking on the Camera menu and selecting from the list of configured cameras. See the <link linkend="using-setup-camera">Setup Camera Section</link> of the manual for instructions on how to setup &digikam; to work with your camera. If you want to have more information about how &digikam; supports digital cameras, please a take a look at <link linkend="intro-camerasupport">this section</link>.
+        The Import Interface helps you to get photographs into a &digikam; Album, whether it is  directly from your camera, from a USB mass storage device, via a card reader or from a local or remote folder. You can access the Import Interface by 
+        <variablelist>
+            <varlistentry>
+                <term><menuchoice>
+                    <guimenu>Import</guimenu><guimenuitem>Cameras</guimenuitem>
+                </menuchoice></term>
+                <listitem>
+                    <para><action>
+                            Select one of the cameras from the submenu or choose <guilabel>Add Camera Manually...</guilabel>.
+                    </action></para>
+                    <para>
+                        The latter will open the dialog described in the <link linkend="using-setup-camera">Camera Settings</link>  section of this handbook. If you want to have more information about how &digikam; supports digital cameras, please a take a look at <link linkend="intro-camerasupport">this section</link>.
+                    </para>
+                </listitem>
+            </varlistentry>
+            
+            <varlistentry>
+                <term><menuchoice>
+                    <guimenu>Import</guimenu><guimenuitem>USB Storage Devices</guimenuitem>
+                </menuchoice></term>
+                <listitem>
+                    <para><action>
+                            Select one of the USB devices from the submenu.
+                    </action></para>
+                </listitem>
+            </varlistentry>
+            
+            <varlistentry>
+                <term><menuchoice>
+                    <guimenu>Import</guimenu><guimenuitem>Card Readers</guimenuitem>
+                </menuchoice></term>
+                <listitem>
+                    <para><action>
+                            Select one of the card readers from the submenu.
+                    </action></para>
+                </listitem>
+            </varlistentry>
+            
+            <varlistentry>
+                <term><menuchoice>
+                    <shortcut><keycombo action="simul">&Ctrl;&Alt;<keycap>I</keycap></keycombo></shortcut>
+                    <guimenu>Import</guimenu><guimenuitem>Add Images...</guimenuitem>
+                </menuchoice></term>
+                <listitem>
+                    <para><action>
+                            Select a source folder from the following dialog.
+                    </action></para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
     </para>
 
     <para>
-        The Camera Interface is not the only way to get your photographs into &digikam;. See the <link linkend="using-addphototoalbum">Adding a photograph to an Album</link> section for a description of how to add photographs that are already on your hard disk. But Camera Interface provides a lots of advanced settings to import images into your albums database.
+        To be able to use your digital camera with &digikam;, connect the camera to your computer, switch the camera to the image display mode and turn it on. See your camera's user manual if you need more information.
     </para>
 
     <para>
-        To be able to use your digital camera with &digikam;, connect the camera to your computer, switch the camera to the image display mode and turn it on. See you camera's user manual if you need more information.
-    </para>
-
-    <para>
-        When you start the Camera Interface, it will try to connect to the Camera. For some cameras this connection phase can take a little while. When connected, a <guilabel>Ready</guilabel> indicator will appear on the bottom and thumbnails of any photographs on the camera will be displayed. Some cameras cannot provide thumbnails of the photographs. If this is the case, you will only see the filenames and a mime-type icon for each item stored by your camera (photograph, movies, sounds, etc).
-    </para>
-
-    <example>
-
-        <title>The Camera Client Window</title>
-        <screenshot>
+       <screenshot>
             <screeninfo>The Camera Client Window</screeninfo>
             <mediaobject><imageobject>
                 <imagedata fileref="&path;using-camera-maininterface.png" format="PNG" />
             </imageobject></mediaobject>
         </screenshot>
-
-    </example>
+    </para>
 
 </sect2>
 
