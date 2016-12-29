@@ -23,8 +23,11 @@
  #
  # ============================================================ */
 
-du $1
-
-pngnq -s 1 -f -e .png $1 && optipng $1
-
-du $1
+for f in `find ../digikam -iname \*.png`; do
+    ORG_SIZE=$(du -b $f | awk '{print $1}')
+    pngnq -s 1 -f -e .png $f 2>/dev/null
+    optipng -quiet $f
+    NEW_SIZE=$(du -b $f | awk '{print $1}')
+    DIF_SIZE=$((ORG_SIZE-NEW_SIZE))
+    echo "Optimization of $f : $DIF_SIZE bytes"
+done
