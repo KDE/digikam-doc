@@ -2,7 +2,7 @@
 <title>Colors</title>
 
     <para>
-        The colors sidebar has two sub tabs <guilabel>Color and ICC Profile</guilabel>. Here are more details about <link linkend="using-iccprofile">Color Management</link>
+        The colors sidebar has two sub tabs <guilabel>Color</guilabel> and <guilabel>ICC Profile</guilabel>. Here are more details about <link linkend="using-iccprofile">Color Management</link>
     </para>
 
     <sect3 id="using-histogramviewer">
@@ -15,21 +15,19 @@
         </para>
 
         <para>
-            The Histogram Viewer shows the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram based color correction, use the Adjust Levels or Adjust Curves Image Editor plugin.
+            The Histogram Viewer shows the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram based color correction, use for example Color Balance, Levels Adjust or Curves Adjust in the Image Editor.
         </para>
 
-        <example>
-            <title>The Histogram Viewer in Action</title>
-            <screenshot>
-                <screeninfo>The Histogram Viewer in Action</screeninfo>
-                <mediaobject><imageobject>
+        <para>
+            <inlinemediaobject>
+                <imageobject>
                     <imagedata fileref="&path;using-sidebar-histogramview.png" format="PNG" />
-                </imageobject></mediaobject>
-            </screenshot>
-        </example>
+                </imageobject>
+            </inlinemediaobject>
+        </para>
 
         <para>
-            An image can be decomposed into <guilabel>Red</guilabel>, <guilabel>Green</guilabel>, <guilabel>Blue</guilabel>, <guilabel>Alpha</guilabel> color channels. <guilabel>Alpha</guilabel> channel is a Layer in the image that supports transparency (like PNG or &GIF; images). Each channel supports a range of intensity levels from 0 to 255 (integer valued). Thus, a black pixel is encoded by 0 on all color channels; a white pixel by 255 on all color channels. A transparent pixel is encoded by 0 on the alpha channel; an opaque pixel by 255.
+            An image can be decomposed into <guilabel>Red</guilabel>, <guilabel>Green</guilabel> and <guilabel>Blue</guilabel> color channels. <guilabel>Alpha</guilabel> channel is a Layer in the image that supports transparency (like PNG or &GIF; images). Each channel supports a range of intensity levels from 0 to 255 (integer valued). Thus, a black pixel is encoded by 0 on all color channels; a white pixel by 255 on all color channels. A transparent pixel is encoded by 0 on the alpha channel; an opaque pixel by 255.
         </para>
 
         <para>
@@ -58,7 +56,7 @@
         </para>
 
         <para>
-            With <guilabel>Scale</guilabel> option, you can determine whether the histogram will be displayed using a linear or logarithmic Y axis. For images taken with a digital camera, the <guilabel>Linear</guilabel> mode is usually the most useful. However, for images that contain substantial areas of constant color a <guilabel>Linear</guilabel> histogram will often be dominated by a single bar. In this case a <guilabel>Logarithmic</guilabel> histogram will be more useful.
+            With the <guilabel>Scale</guilabel> option you can determine whether the histogram will be displayed using a linear or logarithmic Y axis. For images taken with a digital camera, the <guilabel>Linear</guilabel> mode is usually the most useful. However, for images that contain substantial areas of constant color a <guilabel>Linear</guilabel> histogram will often be dominated by a single bar. In this case a <guilabel>Logarithmic</guilabel> histogram will be more useful.
         </para>
 
         <para>
@@ -138,7 +136,7 @@
                 </para></listitem>
 
                 <listitem><para>
-                    (2) : the middle-tone on the middle.
+                    (2) : the middle-tone in the middle.
                 </para></listitem>
 
                 <listitem><para>
