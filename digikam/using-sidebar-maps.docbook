@@ -1,52 +1,39 @@
-<sect2 id="using-sidebar-maps">
-    <title>Maps</title>
+<sect2 id="using-sidebar-maps">    <title>Maps</title>
 
-    <sect3>
-        <title>Geolocate Images</title>
+    <para>
+        &digikam; offers three geolocation tools:
+        <orderedlist numeration="arabic">
+            <listitem><para>The Map View on the Left Sidebar which is the search tool for finding images by their GPS data.</para></listitem>
+            <listitem><para>The <link linkend="tool-geolocationeditor">Geolocation Editor</link> which is accessible via <menuchoice><shortcut><keycombo action="simul">&Ctrl;&Shift;<keycap>G</keycap></keycombo></shortcut><guimenu>Item</guimenu><guimenuitem>Edit Geolocation...</guimenuitem></menuchoice> and allows to set and to edit GPS data.</para></listitem>
+            <listitem><para>This tab on the Right Sidebar which shows the location of the image on a map and is purely informative.</para></listitem>
+        </orderedlist> 
+        All three are based on the Marble widget.  
+    </para>
+    
+    <para>
+        This tab shows a map of orientation where you will find a marker or a thumnail to indicate the GPS location of the selected image. The GPS coordinates and the time information are displayed below the widget. You can zoom in and out with the mouse wheel by either scrolling it or hold and drag it. Pan by holding down the left mouse button.
+    </para>
 
-        <para>
-            This tab is based on the world-map widget to display a rough map of orientation. You can zoom in and out with the mousewheel by either scrolling it or hold and drag it. Pan by holding down the left mouse button.
-        </para>
+    <para>
+        <inlinemediaobject>
+            <imageobject>
+                <imagedata fileref="&path;using-sidebar-metadatagps.png" format="PNG"/>
+            </imageobject>
+        </inlinemediaobject>
+    </para>
 
-        <example>
-            <title>The Geolocation tab</title>
-            <screenshot>
-                <screeninfo>For higher resolution maps choose "More Info"</screeninfo>
-                <mediaobject><imageobject>
-                    <imagedata fileref="&path;using-sidebar-metadatagps.png" format="PNG" />
-                </imageobject></mediaobject>
-            </screenshot>
-        </example>
+    <para>     
+        For navigating on the map refer to Marble handbook, Chapter 2. The meaning of <quote>GPS</quote> and functions and buttons that apply to all three geolocation parts are described in the <link linkend="tool-geolocationeditor">Geolocation Editor</link> chapter of this handbook. This applies to the context menu on the map and the line of buttons under the map except the last one.
+    </para>
+    
+    <para>
+        For information about the different map services you can use the drop-down field under the line of buttons. Choose a service here and then click the See-more-information-on-the-Internet button to the right.
+    </para>
 
-        <para>
-            The left sidebar is a geo-search tool. Press the <keycombo action="press">&Ctrl;<keycap>left mouse button</keycap></keycombo> to pull-up a square as indicated. All images falling within the coordinates of that square will be shown.
-        </para>
+    <para>
+        The displayed positioning data are actually stored in the image's EXIF tags. That allows the location to be read by any other application that can understand EXIF GPS data.
+    </para>
 
-        <para>
-            On the right sidebar you will find a cross to indicate the GPS location and the selected image's name next to it. The GPS coordinates and the time information are displayed below the widget.
-        </para>
-
-        <para>
-            For higher resolution maps choose <guibutton>More Info</guibutton> button to open the detailed map service (choose before on the left scroll box) in a Internet browser.
-        </para>
-
-        <para>
-            The displayed positioning data are actually stored in the image's EXIF tags (and not yet in the database). That allows the location to be read by any other application that can understand EXIF GPS data.
-        </para>
-    </sect3>
-
-    <sect3>
-        <title>What is GPS</title>
-
-        <para>
-            The <ulink url="http://en.wikipedia.org/wiki/Global_Positioning_System">Global Positioning System</ulink> usually called GPS, is the only fully functional satellite navigation system. A constellation of more than two dozen GPS satellites broadcasts precise timing signals by radio, allowing any GPS receiver to accurately determine its location (longitude, latitude, and altitude) anywhere on Earth. GPS also provides an extremely precise time reference and gauge speed with a very high degree of accuracy.
-        </para>
-
-        <para>
-            GPS information can be stored in images directly by supported cameras or by synchronizing photographs with an external GPS device track. Look at this <ulink url="help:/digikam/using-camera.html#using-gps">section</ulink> for more information.
-        </para>
-
-    </sect3>
 
 </sect2>
 
