@@ -16,9 +16,9 @@
 
         <para>
             &digikam; comes with a couple of black &amp; white filters that you can use on your photographs. 
-            Under the <menuchoice><guimenuitem>Filters</guimenuitem><guimenuitem>Black &amp; White</guimenuitem></menuchoice> menu 
+            Under the <menuchoice><guimenuitem>Color</guimenuitem><guimenuitem>Black &amp; White...</guimenuitem></menuchoice> menu 
             you will find classic black &amp; white chemical toning used in analog photography. 
-            The controls come on three tabs: <emphasis>Film, Lens Filters, Tone</emphasis> and <emphasis>Lightness</emphasis> as shown on the screenshot below. 
+            The controls come on four drop-down items: <emphasis>Film, Lens Filters, Tone</emphasis> and <emphasis>Lightness</emphasis> as shown on the screenshot below. 
             Film, filters and color toning can be applied independently of each other (on top of each other). 
             The filters actually influence the RGB channel mixing, whereas the toning purely adds a uniform monochromatic tint to the black &amp; white photograph. 
             In the lightness tab you will find a tonal adjustment tool (like curve adjust), a contrast tool and an over-exposure indicator to improve the b&amp;w rendering.
@@ -29,6 +29,7 @@
             <title>The Black &amp; White Filter tool in Action</title>
             <screenshot>
                 <screeninfo>The B&amp;W Filter tool in Action</screeninfo>
+                <!-- TODO: need a new screenshot -->
                 <mediaobject><imageobject><imagedata fileref="&path;editor-bwfilter.png" format="PNG" /> </imageobject></mediaobject>
             </screenshot>
 
@@ -50,9 +51,10 @@
 
                 <entry>
                 <para>Specific settings to emulate a number of famous black &amp; white photographic films are available:</para>
+                <para>Generic</para>
                 <para>Agfa 200X, Agfa Pan 25, Agfa Pan 100, Agfa Pan 400</para>
-                <para>Ilford Delta 100, Ilford Delta 400, Ilford Delta 400 Pro 3200, Ilford FP4 Plus, Ilford HP5 Plus, Ilford PanF Plus, Ilford XP2 Super</para>
-                <para>Kodak Tmax 100, Kodak Tmax 400, Kodak TriX</para>
+                <para>Ilford Delta 100, Ilford Delta 400, Ilford Delta 400 Pro 3200, Ilford FP4 Plus, Ilford HP5 Plus, Ilford PanF Plus, Ilford XP2 Super, Ilford SPX 200 (Infrared), Ilford SPX 400 (Infrared), Ilford SPX 800 (Infrared)</para>
+                <para>Kodak Tmax 100, Kodak Tmax 400, Kodak TriX, Kodak HIE (Infrared)</para>
                 </entry>
             </row>
         </tbody>
@@ -80,7 +82,7 @@
                 </entry>
 
                 <entry>
-                Neutral: simulate black &amp; white neutral film exposure.
+                No Lens Filter: simulate black &amp; white neutral film exposure.
                 </entry>
             </row>
 
@@ -123,6 +125,26 @@
                 Yellow Filter: simulates black &amp; white film exposure with yellow lens filter. Most natural tonal correction, improves contrast. Ideal for landscapes (similar to 001 Cokin(tm) Yellow filter).
                 </entry>
             </row>
+            <!-- TODO: 
+            <row>
+                <entry>
+                <inlinemediaobject><imageobject><imagedata fileref="&path;editor-convert-bwyellowgreen.png" format="PNG" /> </imageobject></inlinemediaobject>
+                </entry>
+
+                <entry>
+                Yellow-Green Filter: TODO.
+                </entry>
+            </row>
+
+            <row>
+                <entry>
+                <inlinemediaobject><imageobject><imagedata fileref="&path;editor-convert-bwblue.png" format="PNG" /> </imageobject></inlinemediaobject>
+                </entry>
+
+                <entry>
+                Blue Filter: TODO.
+                </entry>
+            </row> -->
 
         </tbody>
 
@@ -131,7 +153,7 @@
         <informaltable><tgroup cols="2">
 
         <thead><row>
-            <entry>Preview</entry> <entry>Color Tint</entry>
+            <entry>Preview</entry> <entry>Hue (Color Tint)</entry>
         </row></thead>
 
         <tbody>
@@ -141,7 +163,7 @@
                 </entry>
 
                 <entry>
-                Sepia Tone: gives a warm highlight and mid-tone while adding a bit of coolness to the shadows - very similar to the process of bleaching a print and re-developing in a sepia toner (typical for your grandmothers photographs). Similar to 005 Cokin(tm) Sepia filter.
+                Sepia Filter: gives a warm highlight and mid-tone while adding a bit of coolness to the shadows - very similar to the process of bleaching a print and re-developing in a sepia toner (typical for your grandmothers photographs). Similar to 005 Cokin(tm) Sepia filter.
                 </entry>
             </row>
 
@@ -151,7 +173,7 @@
                 </entry>
 
                 <entry>
-                Brown Tone: similar to Sepia Tone filter, but less pronounced.
+                Brown Filter: similar to Sepia Tone filter, but less pronounced.
                 </entry>
             </row>
 
@@ -161,17 +183,7 @@
                 </entry>
 
                 <entry>
-                Cold Tone: start subtle and replicate printing on a cold tone black &amp; white paper such as a bromide enlarging paper.
-                </entry>
-            </row>
-
-            <row>
-                <entry>
-                <inlinemediaobject><imageobject><imagedata fileref="&path;editor-convert-platinium.png" format="PNG" /> </imageobject></inlinemediaobject>
-                </entry>
-
-                <entry>
-                Platinum Tone: effect that replicates traditional platinum chemical toning done in the darkroom.
+                Cold Filter: start subtle and replicate printing on a cold tone black &amp; white paper such as a bromide enlarging paper.
                 </entry>
             </row>
 
@@ -181,9 +193,29 @@
                 </entry>
 
                 <entry>
-                Selenium Tone: effect that replicates traditional selenium chemical toning done in the darkroom.
+                Selenium Filter: effect that replicates traditional selenium chemical toning done in the darkroom.
                 </entry>
             </row>
+
+            <row>
+                <entry>
+                <inlinemediaobject><imageobject><imagedata fileref="&path;editor-convert-platinium.png" format="PNG" /> </imageobject></inlinemediaobject>
+                </entry>
+
+                <entry>
+                Platinum Filter: effect that replicates traditional platinum chemical toning done in the darkroom.
+                </entry>
+            </row>
+            <!-- TODO:
+            <row>
+                <entry>
+                <inlinemediaobject><imageobject><imagedata fileref="&path;editor-convert-green.png" format="PNG" /> </imageobject></inlinemediaobject>
+                </entry>
+
+                <entry>
+                Green Filter: TODO.
+                </entry>
+            </row> -->
 
         </tbody>
 
@@ -201,13 +233,14 @@
             conversion. Contrast and an abstract touch are improved, which can underpin the expression 
             of the photographer as an artist.
 
-            It is like taking an image in black and white with a red filter on the camera lenses. 
+            It is like taking an image in black and white with a red filter on the camera lense. 
             Areas which reflect little red light, &eg; the sky, will show as low density, dark areas. 
-            Areas which are excellent reflectors of red light, e.g. most green foliage, will be high 
+            Areas which are excellent reflectors of red light, &eg; most green foliage, will be high 
             density areas. And snow landscapes are really dramatic.
         </para>
 
         <para>
+            <!-- TODO: https://www.gimp.org/news/2015/01/22/gimpguruorg-rip/ - without link -->
             The algorithm is based on the method of the 'Simulate Infrared Film' tutorial of the GimpGuru.org 
             web site available at <ulink url="http://www.gimpguru.org/Tutorials/SimulatedInfrared">this url</ulink>.
             The filter tries to reproduce the famous Ilford(tm) SFX infrared film series. 
