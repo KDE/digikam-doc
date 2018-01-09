@@ -7,54 +7,88 @@
         <title>Behavior Settings</title>
 
         <para>
-            These settings allow you to control how &digikam; will deal with this embedded information.
+            Behavior tab allows you to select what information &digikam; will write to the Metadata and control how &digikam; will deal with this embedded information.
         </para>
-
+        
         <para>
             <inlinemediaobject><imageobject>
                 <imagedata fileref="&path;using-setup-metadata-behavior.png" format="PNG" />
             </imageobject></inlinemediaobject>
         </para>
-
+        
         <para>
-            The <guilabel>IPTC Actions</guilabel> will save the data into the respective IPTC fields, which ensures a permanent metadata storage in the image and not only in &digikam;'s database. Thus, metadata is persistent across applications, and may be exported or imported into &digikam; without loss.
+            If Lazy synchronization is turned on &digikam; will only write metadata when user clicks on "Apply pending changes to metadata" icon in Statusbar or on exit.
         </para>
-
+        
         <para>
-            <guilabel>Save image captions as embedded text</guilabel> : this will synchronize the captions that you add to your photographs with those in embedded in the image. This is useful because the captions embedded in the image can be read by other image viewers. Care should be taken if you have images that already have captions embedded in them because these captions will be overwritten by the captions made within &digikam;.
+            <inlinemediaobject><imageobject>
+                <imagedata fileref="&path;using-setup-metadata-behavior-apply-changes" format="PNG" />
+            </imageobject></inlinemediaobject>
         </para>
-
     </sect3>
+       
+        <sect3 id="using-setup-metadata-sidecars">
+             <title>Sidecars Settings</title>
+             
+            <para>
+            Sidecars tab allows user to control whether &digikam; will read/write from/to XMP sidecars or not. Filename for the sidecars set to filename.ext.xmp e.g. image1.dng will have a sidecar file named image1.dng.xmp
+            </para>
+            
+            <para>
+            <inlinemediaobject><imageobject>
+                <imagedata fileref="&path;using-setup-metadata-sidecars.png" format="PNG" />
+            </imageobject></inlinemediaobject>
+        </para>
+    </sect3>
+#        <para>
+#            The <guilabel>IPTC Actions</guilabel> will save the data into the respective IPTC fields, which ensures a permanent metadata storage in the image and not only in &digikam;'s database. Thus, metadata is persistent across applications, and may be exported or imported into &digikam; without loss.
+#        </para>
+#
+#        <para>
+#            <guilabel>Save image captions as embedded text</guilabel> : this will synchronize the captions that you add to your photographs with those in embedded in the image. This is useful because the captions embedded in the image can be read by other image viewers. Care should be taken if you have images that already have captions embedded in them because these captions will be overwritten by the captions made within &digikam;.
+#        </para>
+
+
 
     <sect3 id="using-setup-metadata-rotation">
         <title>Rotation Settings</title>
-
-        <sect4 id="using-setup-metadata-rotation-op">
-            <title>Rotate Operations</title>
-
-            <para>
+            
+        <para>
                 <inlinemediaobject><imageobject>
                     <imagedata fileref="&path;using-setup-metadata-rotation-op.png" format="PNG" />
                 </imageobject></inlinemediaobject>
             </para>
-
-            <para>
-                TODO
-            </para>
-
-        </sect4>
+            
+#        <sect4 id="using-setup-metadata-rotation-op">
+#            <title>Rotate Operations</title>
+#
+#            <para>
+#                <inlinemediaobject><imageobject>
+#                    <imagedata fileref="&path;using-setup-metadata-rotation-op.png" format="PNG" />
+#                </imageobject></inlinemediaobject>
+#            </para>
+#
+#            <para>
+#                TODO
+#            </para>
+#
+#        </sect4>
 
         &doc-using-setup-metadata-rotation-ac;
 
     </sect3>
 
-    &doc-using-setup-metadata-views;
-
+    <sect3 id="using-setup-metadata-views">
+        <title>Views Settings</title>
+   
+        &doc-using-setup-metadata-views;
+    </sect3>
+    
     <sect3 id="using-setup-metadata-advanced">
         <title>Advanced Settings</title>
 
         <para>
-            TODO
+            Advanced tab allows you to manage namespaces used by &digikam; to store and retrieve tags, ratings and comments. This functionality is often used by advanced users to synchronize metadata between different software. Please leave the default settings if you are not sure what to do here.
         </para>
 
         <para>
