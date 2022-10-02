@@ -1,0 +1,175 @@
+<sect1 id="intro-camerasupport"
+> <title
+>Càmeres fotogràfiques digitals admeses</title>
+    <anchor id="digitalstillcamera.anchor"/>
+
+    <note>
+
+        <para
+>Admet els fitxers RAW: si utilitzeu el mode de captura RAW amb la càmera, el &digikam; probablement serà molt capaç de bregar amb això. La implementació RAW depèn de la biblioteca libraw. Per esbrinar si la vostra càmera està acceptada, mireu si apareix a la llista de càmeres RAW des del menú <menuchoice
+><guimenu
+>Ajuda</guimenu
+><guimenuitem
+>Càmeres RAW admeses</guimenuitem
+></menuchoice
+>. </para>
+
+        <para
+>Com configurar i treballar amb fitxers RAW es descriu a <link linkend="using-setup-raw"
+>Arranjament de la descodificació RAW</link
+> i <link linkend="raw-workflow"
+>Flux de treball RAW</link
+>. </para>
+
+    </note>
+
+    <para
+>Proporciona una senzilla interfície de càmera, que es connectarà a la vostra càmera digital i es descarregaran les fotografies directament als àlbums del &digikam;. Més de <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php"
+>1.000 càmeres digitals</ulink
+> són compatibles amb la biblioteca gphoto2. Per descomptat, qualsevol suport o lector de targetes admès pel vostre sistema operatiu interactuarà amb el &digikam;. </para>
+
+    <para
+>Les càmeres digitals actuals es caracteritzen per l'ús de targetes <emphasis
+>Compact &Flash; Memory</emphasis
+>, <emphasis
+>USB</emphasis
+> o <emphasis
+>FireWire (IEEE-1394 o i-link)</emphasis
+> per a la transmissió de les dades. Les transferències reals a un ordinador central, habitualment es duen a terme, utilitzant una classe de dispositiu d'<emphasis
+>emmagatzematge massiu USB</emphasis
+> (de manera que la càmera apareixerà com una unitat de disc) o utilitzant el <emphasis
+>protocol per a la transferència d'imatges</emphasis
+> (Picture Transfer Protocol -PTP-) i els seus derivats. Les càmeres antigues poden utilitzar la connexió del <emphasis
+>port sèrie (RS-232)</emphasis
+>. </para>
+
+    <informaltable
+><tgroup cols="2">
+
+    <thead>
+        <row>
+            <entry
+>Vista prèvia d'exemple</entry>
+            <entry
+>Tipus de connector</entry>
+        </row>
+    </thead>
+
+    <tbody>
+        <row>
+            <entry>
+                <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;intro-firewireconnector.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+            </entry>
+
+            <entry
+>El connector FireWire (IEEE-1394 o i-link) d'una càmera fotogràfica digital professional </entry>
+        </row>
+
+        <row>
+            <entry>
+                <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;intro-usbconnector.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+            </entry>
+
+            <entry
+>El connector Universal Serial Bus (USB) d'una càmera fotogràfica digital de consum </entry>
+        </row>
+
+        <row>
+            <entry>
+                <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;intro-serialconnector.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+            </entry>
+
+            <entry
+>El connector port sèrie (RS-232) d'una càmera fotogràfica digital antiga </entry>
+        </row>
+
+    </tbody>
+
+    </tgroup
+></informaltable>
+
+    <para>
+        <guilabel
+>Transferències emprant el gPhoto2: PTP i el port sèrie RS-232</guilabel>
+    </para>
+
+    <para
+>El &digikam; empra el programa <emphasis
+>gPhoto2</emphasis
+> per a comunicar-se amb les càmeres fotogràfiques digitals. El gPhoto2 és un conjunt lliure i redistribuïble d'aplicacions de programari per a càmeres digitals que admet un nombre creixent de més de 800 càmeres. El gPhoto2 admet el <emphasis
+>protocol per a la transferència d'imatges</emphasis
+> (Picture Transfer Protocol), el qual és un protocol amb un ampli suport desenvolupat per l'associació internacional de la indústria d'imatge (International Imaging Industry Association) per a permetre la transferència d'imatges des de càmeres digitals cap a ordinadors i altres dispositius perifèrics sense necessitat de controladors per a dispositius addicionals. </para>
+
+    <para
+>Moltes càmeres fotogràfiques digitals antigues utilitzen el <emphasis
+>port sèrie</emphasis
+> per a comunicar-se amb ordinadors centrals. Com que les fotografies són fitxers de grans dimensions i les transferències del port sèrie són lentes, aquesta connexió ja està obsoleta. El &digikam; admet aquestes càmeres i realitza les transferències d'imatges utilitzant el programa gPhoto2. Trobareu una completa llista de les càmeres digitals acceptades en aquest <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php"
+>URL</ulink
+>. </para>
+
+    <note>
+        <para
+>La libgphoto2 s'ha de construir amb la libexif per a rebre les miniatures correctament al &digikam;. Es requereix la implementació EXIF per a rebre les miniatures sobre alguns controladors de càmera a la libgphoto2. Si no s'ha establert dita implementació, no podreu veure les miniatures o la seva extracció podria ser molt lenta.</para>
+    </note>
+
+    <para>
+        <guilabel
+>Transferències emprant un dispositiu d'emmagatzematge massiu</guilabel>
+    </para>
+
+    <para
+>Pels dispositius que no són admesos directament pel gPhoto2, hi ha la implementació per al protocol d'<emphasis
+>emmagatzematge massiu</emphasis
+>, el qual funciona bé a &GNU;/&Linux;. Això inclou moltes càmeres digitals i lectors de targetes de memòria. Les interfícies d'emmagatzematge massiu són les següents:<itemizedlist
+> <listitem
+><para
+><emphasis
+>Emmagatzematge massiu USB</emphasis
+>: una interfície d'ordinador que utilitza protocols de comunicació definits per l'USB Implementers Forum que s'executen al bus sèrie universal (USB). Aquest estàndard proporciona una interfície per a una varietat de dispositius d'emmagatzematge, incloent-hi les càmeres digitals.</para
+></listitem
+> <listitem
+><para
+><emphasis
+>Emmagatzematge massiu FireWire</emphasis
+>: una interfície d'ordinador que utilitza protocols de comunicació desenvolupats principalment per Apple Computer a la dècada de 1990. El FireWire ofereix comunicacions d'alta velocitat i serveis de dades isòcrons en temps real. Igual que l'emmagatzematge massiu USB, aquest estàndard proporciona una interfície per a una varietat de dispositius d'emmagatzematge, incloses les càmeres fotogràfiques digitals. Gairebé totes les càmeres digitals recents admeten USB versió 1 i ara admeten USB versió 2. El port FireWire l'admeten molt poques.</para
+></listitem
+> </itemizedlist
+> Per utilitzar un dispositiu d'emmagatzematge massiu genèric amb el &digikam;, seleccioneu l'element <menuchoice
+><guimenu
+>Importa</guimenu
+><guimenuitem
+>Càmera</guimenuitem
+><guimenuitem
+>Afegeix una càmera manualment...</guimenuitem
+></menuchoice
+>, afegiu el vostre dispositiu i establiu el camí correcte per al punt de muntatge. </para>
+
+    <para
+>Pels detalls, vegeu el capítol <link linkend="using-setup-camera"
+>Configura el digiKam...</link
+>, dins de la secció «Càmera». </para>
+
+</sect1>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

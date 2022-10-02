@@ -1,0 +1,271 @@
+<sect3 id="editor-transform-resize">
+    <sect3info>
+
+        <title
+>Afbeeldingsgrootte wijzigen</title>
+
+        <abstract>
+
+            <para>
+                <ulink url="http://cimg.sourceforge.net"
+><inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;logo-cimg.png" format="PNG"/></imageobject>
+                <textobject
+><phrase
+>cimglogo</phrase
+></textobject>
+                </inlinemediaobject
+></ulink>
+            </para>
+
+            <para
+>Zeker een van de meest geavanceerde hulpmiddelen van &digikam; is <emphasis
+>Foto opblazen</emphasis
+> om de afmetingen van een foto met minimaal verlies van de kwaliteit te vergroten. </para>
+
+        </abstract>
+
+        <keywordset>
+        <keyword
+>Cimg</keyword>
+        <keyword
+>Greycstoration</keyword>
+        </keywordset>
+
+    </sect3info>
+
+    <title
+>Inleiding</title>
+
+    <para
+>Het verschalen van een foto om deze kleiner te maken is makkelijk. De grote vraag is: hoe kan u een foto groter maken en tegelijk de details scherp houden? Hoe kan u inzoomen terwijl de resolutiegrens als is bereikt? Hoe kan men na het vergroten de missende informatie bedenken of raden om de noodzakelijkerwijs grove foto in te vullen? Wel, het CImg algoritme dat we gebruiken voert zijn taak excellent uit, probeer het en vorm je eigen mening! </para>
+
+    <sect4 id="using-resizingimage"
+> <title
+>Afbeelding van grootte veranderen</title>
+
+        <anchor id="resizetool.anchor"/>
+
+        <para
+>Als de foto het verkeerde formaat heeft dan u het verschalen naar het gewenste formaat door gebruik van het hulpmiddel voor Grootte wijzigen. Selecteer <menuchoice
+><guimenu
+>Transformeren</guimenu
+><guimenuitem
+>Grootte wijzigen</guimenuitem
+></menuchoice
+> en pas de gewenste waarde aan. U kunt hieronder het dialoogvenster voor Grootte wijzigen zien. </para>
+
+        <example
+><title
+>De dialoog van het hulpmiddel grootte wijzigen</title>
+            <screenshot
+><screeninfo
+>De dialoog van het hulpmiddel grootte wijzigen</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editor-resize.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> 
+        </example>
+
+        <para
+>Dit hulpmiddel voor het in grootte aanpassen van de foto gebruikt een standaard lineaire interpolatie methode om de pixels te benaderen. Als u een kleine foto met een goede kwaliteit wilt vergroten, probeer dan het opblaashulpmiddel. </para>
+
+    </sect4>
+
+
+    <sect4 id="using-resizerestoration"
+> <title
+>Groote afbeelding laten toenemen (restauratie)</title>
+        <para
+>Veel fotobewerkinsprogramma´s gebruiken een soort interpolatie &eg; spline interpolatie bij het vergroten van een foto. &digikam; gebruikt een meer geraffineerde benadering. Het algoritme onder <emphasis
+>Restauratie</emphasis
+> is ontwikkeld door het IMAGE team van het GREC CNRS laboratorium in Caen/Frankrijk en is een onderdeel van het <ulink url="http://cimg.sourceforge.net"
+>CImg project</ulink
+>. </para>
+
+        <para
+><inlinemediaobject
+><imageobject
+> 
+            <imagedata fileref="&path;editor-resize-restoration.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Dialoogvenster voor foto opblazen</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+        <para
+>U moet de nieuwe maten in het programma opgegeven. Deze waarden kunt u in het tabblad <guilabel
+>Nieuwe afmeting</guilabel
+> vinden en worden hieronder genoemd: <itemizedlist>
+
+        <listitem
+><para
+><guilabel
+>Verhoudingen behouden</guilabel
+>: als dit is ingeschakeld, dan zal bij het instellen van het nieuwe foto-formaat de verhoudingen van het originele foto overnemen.</para
+></listitem>
+        <listitem
+><para
+><guilabel
+>Breedte</guilabel
+>: de breedte van de nieuwe foto die gebruikt zal worden bij het opblazen.</para
+></listitem
+> 
+        <listitem
+><para
+><guilabel
+>Hoogte</guilabel
+>: de hoogte van de nieuwe foto die gebruikt zal worden bij het opblazen.</para
+></listitem>
+
+        </itemizedlist>
+        </para>
+
+        <para
+>Als u de filterparameters wilt instellen voor fijnere aanpassingen, gebruik dan de tabbladen: <guilabel
+>Gladheid</guilabel
+> en <guilabel
+>Geavanceerde instellingen</guilabel
+>: </para>
+
+        <para
+><inlinemediaobject
+><imageobject
+> 
+            <imagedata fileref="&path;editor-resize-restoration-settings1.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Instellingen voor het vergroten van foto´s</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+        <para>
+        <itemizedlist>
+
+            <listitem
+><para
+><guilabel
+>Detailbehoud</guilabel
+> p [0, 100]: dit regelt het behoud van de krommingen (features). Een kleine waarde geeft over de gehele foto een egaal resultaat, terwijl grotere waarden homogene vlakken egaal maakt en toch de details scherp houdt. Een waarde van 0.9 zal details bewaren zodat daarna verscherpen niet nodig is. Let wel op dat <guilabel
+>Detailbehoud</guilabel
+> altijd kleiner moet zijn dan <guilabel
+>Anisotropie</guilabel
+>.</para
+></listitem>
+            <listitem
+><para
+><guilabel
+>Anisotropie</guilabel
+> alpha [0, 100]: een kleine waarde geeft in alle richtingen een egaal resultaat, terwijl een waarde dicht bij 1 maar in een richting werkt. Als u een korrelige film heeft of sterke ruis bij een CCD dan krijgt u golf-vormige patronen, terwijl JPEG artefacten vragen om waarden dicht bij 1. </para
+></listitem>
+            <listitem
+><para
+><guilabel
+>Gladheid</guilabel
+> [0, 500]: dit stelt de algemene maximale gladheidsfactor in (waarbij p de relatieve gladheid is). Stel het in overeenkomstig het ruis-niveau.</para
+></listitem>
+            <listitem
+><para
+><guilabel
+>Regelmatigheid</guilabel
+> [0, 100]: deze waarde is van belang voor grotere structuren. hoe groter deze waarde, des te egaler de algemene gladheid zal zijn. Dit is van belang als er veel ruis aanwezig is omdat het dan moeilijk is om de geometrie te bepalen. Maar als u een 'van Gogh' turbulent effect wilt bereiken, dan wordt u aanbevolen om het groter dan 3 in te stellen.</para
+></listitem>
+            <listitem
+><para
+><guilabel
+>Filterherhalingen</guilabel
+>: het aantal keren dat het algoritme wordt toegepast. Meestal is 1 of 2 voldoende.</para
+></listitem>
+
+        </itemizedlist>
+        </para>
+
+        <para
+><inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;editor-resize-restoration-settings2.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Geavanceerde instellingen voor foto opblazen</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+        <para>
+            <itemizedlist>
+
+                <listitem
+><para
+><guilabel
+>Hoekstap</guilabel
+> de [5, 90]: hoek integratie van de anisotropie alpha. Als alpha klein is gekozen dan moet u dit ook klein instellen. Maar pas op, kleine hoeken resulteren in lange rekentijden! Kies het zo groot mogelijk. </para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Integraalstap</guilabel
+> [0.1, 10]: spatiële integraalstap met de stap in pixels. Bij voorkeur kleiner dan 1 (sub-pixel smoothing) en nooit groter dan 2.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Lineaire interpolatie gebruiken</guilabel
+>: Het kwaliteitsvoordeel is bij gebruik marginaal en het gaat 2x zo langzaam. Ons advies is daarom om uitgeschakeld te laten.</para
+></listitem>
+
+            </itemizedlist>
+
+        </para>
+
+        <para
+>De knoppen <guilabel
+>Opslaan als...</guilabel
+> en <guilabel
+>Laden...</guilabel
+> zijn precies voor dat doel in gebruik. Alle vergroot-instellingen kunt u opslaan in een tekstbestand en later weer laden. </para>
+
+        <warning
+><para
+>Foto´s opblazen is (relatief) erg snel in wat het doet, maar het kan toch veel processortijd gebruiken. U kunt altijd de berekening afbreken door tijdens de berekening op de knop <guilabel
+>Afbreken</guilabel
+> te drukken. </para
+></warning>
+
+    </sect4>
+
+    <sect4 id="inaction-resizerestoration">
+        <title
+>Het hulpmiddel voor opblazen in actie</title>
+
+        <para
+>U kunt hieronder een voorbeeld zien van een opgeblazen foto van een klein kleurenfotootje die 2x zo groot is gemaakt. Het origineel is (1), het opgeblazen resultaat (3). Het voorbeeld (2) is ter vergelijking het resultaat van de standaard lineaire vergrotingsmethode. </para>
+
+        <para
+><inlinemediaobject
+><imageobject
+> 
+            <imagedata fileref="&path;editor-resize-restoration-preview.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Voorbeeldafbeelding van een opgeblazen foto</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+    </sect4>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

@@ -1,0 +1,202 @@
+<sect3 id="editor-color-levels">
+    <sect3info>
+
+    <title
+>Regola livelli</title>
+
+    <abstract>
+    <para
+><emphasis
+>Regola livelli</emphasis
+> di &digikam; è uno strumento per regolare manualmente i canali degli istogrammi di un'immagine. </para>
+    </abstract>
+
+    </sect3info>
+
+    <title
+>Introduzione</title>
+
+    <para
+>Situato tra il più sofisticato strumento di regolazione delle curve e il più semplice strumento di modifica di Luminosità/Contrasto/Gamma dell'editor di immagini c'è questo strumento di regolazione dei livelli, per migliorare l'esposizione. Sebbene la finestra di questo strumento sembri molto complicata, l'unica parte che ti interessa è l'area <guilabel
+>Livelli di input</guilabel
+>, in concreto i tre cursori presenti sotto l'istogramma. </para>
+
+    <para
+>Questo strumento contiene un grafico visivo dei valori di intensità dello strato attivo o della selezione (istogramma). Sotto il grafico ci sono cinque cursori su cui si può fare clic, e che possono essere trascinati per limitare e cambiare il livello di intensità dell'immagine. La posizione sinistra del cursore rappresenta le aree scure, e similmente la posizione destra rappresenta quelle chiare. </para>
+
+    <sect4 id="using-adjustlevels">
+        <title
+>Usare lo strumento Regola livelli</title>
+
+        <para>
+            <inlinemediaobject
+><imageobject>
+                <imagedata fileref="&path;editor-levelsadjust.png" format="PNG"/> </imageobject>
+                <textobject
+><phrase
+>La finestra dello strumento Regola livelli</phrase
+></textobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>In pratica il modo più facile di imparare a usarlo è provare a spostare i tre cursori, e vedere come l'immagine ne viene influenzata. </para>
+
+        <para
+>A destra è disponibile un'anteprima sia dell'immagine originale che della risultante. L'anteprima della risultante è aggiornata dinamicamente secondo le posizioni dei cursori. Sulla sinistra, sono disponibili le seguenti opzioni: <itemizedlist>
+
+            <listitem
+><para
+>Modifica i livelli per <guilabel
+>Canale</guilabel
+>: questa casella combinata permette la selezione del canale specifico che sarà modificato dallo strumento: <itemizedlist>
+                    <listitem
+><para
+><guilabel
+>Luminosità</guilabel
+>: questa opzione esegue cambiamenti dell'intensità rispetto a tutti i pixel dell'immagine.</para
+></listitem>
+                    <listitem
+><para
+><guilabel
+>Rosso</guilabel
+>: questa opzione esegue cambiamenti della saturazione del rosso rispetto a tutti i pixel dell'immagine.</para
+></listitem>
+                    <listitem
+><para
+><guilabel
+>Verde</guilabel
+>: questa opzione esegue cambiamenti della saturazione del verde rispetto a tutti i pixel dell'immagine.</para
+></listitem>
+                    <listitem
+><para
+><guilabel
+>Blu</guilabel
+>: questa opzione esegue cambiamenti della saturazione del blu rispetto a tutti i pixel dell'immagine.</para
+></listitem>
+                    <listitem
+><para
+><guilabel
+>Alfa</guilabel
+>: questa opzione esegue cambiamenti della trasparenza rispetto a tutti i pixel dell'immagine.</para
+></listitem>
+                </itemizedlist>
+
+            </para
+></listitem>
+
+            <listitem
+><para
+>Imposta la <guilabel
+>Scala</guilabel
+> del canale: questa casella controlla la visualizzazione dell'istogramma in scala lineare o logaritmica. Per le immagini fatte con una macchina fotografica digitale, la modalità lineare è normalmente la più utile. Tuttavia, nelle immagini che contengono aree estese di colore costante, un istogramma lineare sarà spesso dominato da una sola barra. In questo caso un istogramma logaritmico sarà più utile.</para
+></listitem>
+
+            <listitem
+><para
+><guilabel
+>Livelli di input</guilabel
+>: i livelli di input permettono di selezionare delle regolazioni manuali per ciascuno degli intervalli. L'area principale è una rappresentazione grafica del contenuto scuro, medio e chiaro dell'immagine. Sono sull'ascissa dal livello 0 (nero) al livello 255 (bianco). Il numero di pixel di un livello è sull'asse delle ordinate. La superficie della curva rappresenta tutti i pixel dell'immagine con livelli (toni) distribuiti su tutto l'intervallo. Un'immagine con un colore blu predominante, per esempio, produrrà un istogramma spostato a sinistra nei canali del verde e del rosso, indicato dalla mancanza di porzioni significative di verde e rosso. Gli intervalli dei livelli possono essere cambiati in tre modi: <itemizedlist>
+                    <listitem
+><para
+>Tre cursori: il primo in cima per i toni scuri, il secondo per i toni chiari, e l'ultimo in basso per i toni medi (spesso chiamato valore gamma). </para
+></listitem>
+                    <listitem
+><para
+>Tre caselle per inserire i valori direttamente. </para
+></listitem>
+                    <listitem
+><para
+>Tre pulsanti di selezione del colore usando l'anteprima della foto originale per regolare automaticamente i livelli di input per i toni in ombra, medi ed in risalto. C'è anche un pulsante di regolazione completamente automatica disponibile di fianco al pulsante di reimpostazione. </para
+></listitem>
+                </itemizedlist>
+            </para
+></listitem>
+
+            <listitem
+><para
+><guilabel
+>Livelli di output</guilabel
+>: i livelli di output permettono la selezione manuale di un intervallo di output limitato. Qui ci sono anche due cursori che possono essere usati per cambiare interattivamente i livelli di output come i <guilabel
+>Livelli di input</guilabel
+>. Questa compressione dell'output potrebbe, per esempio, essere usata per creare un'immagine sbiancata come sfondo per qualche altro soggetto da mettere in primo piano.</para
+></listitem>
+
+            <listitem
+><para
+><guilabel
+>Auto</guilabel
+>: questo pulsante esegue un'impostazione automatica dei livelli, basandosi sulle intensità dei pixel dell'immagine.</para
+></listitem>
+
+            <listitem
+><para
+><guilabel
+>Salva come...</guilabel
+> e <guilabel
+>Carica...</guilabel
+>: questi pulsanti servono per fare quello che dicono. Qualsiasi livello che tu abbia impostato può essere salvato nel filesystem e caricato più tardi. Il formato di file usato è quello dei livelli di Gimp.</para
+></listitem>
+
+            <listitem
+><para
+><guilabel
+>Azzera tutto</guilabel
+>: questo pulsante reimposta tutti i valori dei <guilabel
+>Livelli di input</guilabel
+> e dei <guilabel
+>Livelli di output</guilabel
+> per tutti i canali.</para
+></listitem>
+
+            </itemizedlist>
+        </para>
+
+        <para
+>Lo strumento Regolazione dei livelli ha diverse funzionalità che facilitano il posizionamento dei cursori dei livelli. Facendo clic col pulsante del mouse nell'anteprima dell'immagine originale produrrai una barra tratteggiata verticale nell'area del grafico dell'istogramma, la cui  posizione corrisponde al valore del pixel sotto al cursore del mouse. Facendo invece clic col pulsante del mouse e trascinando aggiornerai interattivamente la posizione della barra verticale. In questo modo è possibile vedere dove sono posizionati i valori di diversi pixel sui cursori dei livelli di input; questo aiuta a scoprire la posizione dei pixel in ombra, di quelli con tono medio o di quelli in risalto. </para>
+
+        <para
+>Usando questa modalità e i tre pulsanti del <guilabel
+>Selettore del colore</guilabel
+> regolerai automaticamente le impostazioni dei livelli di input in tutti i canali per i toni in ombra, per i medi e per quelli in risalto. Attiva il selettore del colore che vuoi usare e fai clic sull'area dell'anteprima dell'immagine originale per impostare i livelli di input su ciascuno dei canali dell'istogramma del rosso, del verde, del blu e della luminosità. </para>
+
+        <para
+>L'opzione <guilabel
+>Indicatore di sovraesposizione</guilabel
+> controlla tutti i canali dei colori per vedere se un canale in un pixel è sovraesposto: vedrai il colore combinato risultante dalle impostazioni della curva del canale. Questa funzionalità è solo indicativa nell'area dell'anteprima del risultato, e non ha effetto sulla resa finale. </para>
+
+        </sect4>
+
+    <sect4 id="inaction-adjustlevels">
+    <title
+>Lo strumento per la regolazione dei livelli in azione</title>
+
+    <para
+>Qui sotto puoi vedere un esempio di regolazione dei <guilabel
+>Livelli di input</guilabel
+> applicato ad un'immagine a colori per i canali di rosso, verde e blu. I canali di intensità e alfa, e i <guilabel
+>Livelli di output</guilabel
+> sono invariati. L'immagine originale è (1), quella corretta è (2). </para>
+
+    <para>
+        <inlinemediaobject>
+            <imageobject
+><imagedata fileref="&path;editor-levels-preview.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Lo strumento per la regolazione dei livelli in azione</phrase
+></textobject>
+        </inlinemediaobject>
+    </para>
+
+    </sect4>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

@@ -1,0 +1,374 @@
+<sect2 id="using-setup-database">
+    <title
+>Instellingen van database</title>
+
+    <para>
+
+        <note
+><para
+>Voor een introductie over de interne opslag van gegevens, ga naar de sectie <link linkend="intro-database"
+>Introductie in &digikam; databases</link
+>. </para
+></note>
+
+    </para>
+
+    <sect3 id="using-setup-database-sqlite">
+        <title
+>De SQLite-database</title>
+
+        <para
+><ulink url="https://sqlite.org"
+>SQLite</ulink
+> is een beheersysteem voor een relationele database, gevat in de C programmeerbibliotheek. SQLite is niet direct te vergelijken met client/server SQL database-engines zoals MySQL, Oracle of PostgreSQL. Het is echter een ingebedde SQL database-engine, &ie; het is ingebed in een eindprogramma. SQLite leest en schrijft direct uit/naar gewone bestanden op een schijf. Voor lokale opslag op een schijf met laag gelijktijdig schrijven en minder dan een terabyte aan inhoud, is SQLite een bijna altijd betere oplossing. SQLite is snel en betrouwbaar en vereist geen configuratie of onderhoud. Het houdt de zaken eenvoudig. SQLite "werkt gewoon". </para>
+
+        <para
+>&digikam; gebruikt standaard SQLite als zijn back-end voor het opslaan van belangrijke metagegevens en miniaturen. Drie SQLite bestanden, gebruikt voor het opslaan hiervan, hebben respectievelijk de naam: <orderedlist>
+
+                <listitem
+><para
+>Kern: digikam4.db. </para
+></listitem>
+
+                <listitem
+><para
+>Miniaturen: thumbnails-digikam.db. </para
+></listitem>
+
+                <listitem
+><para
+>Gezichten: recognition.db. </para
+></listitem>
+
+            </orderedlist>
+
+        </para>
+
+        <para
+>Om uw toepassing snel en gladjes te laten lopen, is het aanbevolen om uw databases at en toe te controleren en te optimaliseren. Dit kan bereikt worden met sqlite3 pakketten of sqlite-browser (hoge kwaliteit, gemakkelijk te gebruiken visueel hulpmiddel voor het beheer van database-objecten). Voor Ubuntu en zijn afgeleiden, kan het pakket worden opgehaald met <command
+>sudo apt-get install sqlite3</command
+> of <command
+>sudo apt-get install sqlitebrowser</command
+>. Alles wat er nog te doen is is het openen van de terminal, schakel naar de map waar de databases zijn opgeslagen. </para>
+
+        <note
+><para
+>Let er op om een plaats te gebruiken met snelle hardware (zoals een SSD) met genoeg vrije ruimte speciaal voor de miniaturendatabase. Een bestandssysteem op afstand zoals NFS kan niet hier gebruikt worden. Vanwege redenen van prestatie en techniek, kunt u geen verwijderbare media gebruiken. </para
+></note>
+
+        <para
+>SQLite database bestanden zijn te vinden in uw “verzameling” map, die u hebt toegevoegd aan &digikam;. (Standaard, als u uw Afbeeldingen” verzameling hebt toegevoegd, zullen de database bestanden aanwezig zijn in de map <filename class="directory"
+> ~/Afbeeldingen</filename
+>). </para>
+
+        <para>
+            <inlinemediaobject
+><imageobject>
+                <imagedata fileref="&path;intro-database-sqlite.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+    </sect3>
+
+    <sect3 id="using-setup-database-mysql">
+        <title
+>De MySQL-database</title>
+
+        <sect4>
+            <title
+>MySQL Versus SQLite</title>
+
+            <para
+><ulink url="https://www.mysql.com"
+>MySQL</ulink
+> is een open-source, relationele database beheersysteem, geschreven in C en C++. Oorspronkelijke ontwikkeling van MySQL door Michael Widenius en David Axmark in het begin van 1994. Sun Microsystems verkreeg MySQL in 2008, die later door Oracle in 2010 werd verkregen. MySQL werkt nu op bijna alle systeemplatforms (Linux, Microsoft Windows, OS X, SunOS …). </para>
+
+            <para
+><ulink url="https://mariadb.org/"
+>MariaDB</ulink
+> server is een door een gemeenschap ontwikkelde afsplitsing van MySQL server. Gestart door kernleden van het originele MySQL team, werkt MariaDB actief met buitenstaande ontwikkelaars om de meest functionele, stabiele en van een gezonde licentie voorziene, open SQL server in the industrie te leveren. </para>
+
+            <para
+>MariaDB heeft in feite MySQL overgenomen, ‘vanwege een paar basis redenen: <orderedlist>
+
+                    <listitem
+><para
+>De ontwikkeling van MariaDB is meer open en levenslustig. </para
+></listitem>
+
+                    <listitem
+><para
+>Meer vernieuwende functies. </para
+></listitem>
+
+                    <listitem
+><para
+>Meer opslag-engines. </para
+></listitem>
+
+                    <listitem
+><para
+>Betere performance. </para
+></listitem>
+
+                    <listitem
+><para
+>Compatibel en gemakkelijk te migreren. </para
+></listitem>
+
+                </orderedlist>
+
+            </para>
+
+            <para
+>&digikam; biedt ook ondersteuning voor de populaire MySQL database engine. Natuurlijk kunt u zich afvragen waarom u om zou willen schakelen naar MySQL wanneer SQLite al goed de gegevens kan beheren? MySQL biedt vele voordelen voor het opslaan van gegevens van &digikam;, speciaal bij verzamelingen met meer dan 100.000 items. Met zulke grote verzamelingen, introduceert SQLite latency die de toepassing vertraagt. </para>
+
+            <para
+>Met MySQL als de database back-end voor &digikam; bent u in staat om de gegevens zowel lokaal als op een server op afstand op te slaan. Lokaaal, om de lokale SQLite opslag te vervangen en de ander om een gedeelde computer via het netwerk te gebruiken. Met MySQL als database back-end van &digikam; kunt u de gegevens op een server op afstand opslaan. Op deze manier kunt u meerdere &digikam; installaties (bijvoorbeeld, op uw notebook en PC) gebruiken om toegang te hebben tot en beheren van uw fotoverzamelingen. U kunt ook MySQL hulpmiddelen gebruiken om een backup te maken van en de gegevens van &digikam; te analyseren. </para>
+
+            <para
+>Om om te schakelen van SQLite naar de MySQL database, ga naar <guimenuitem
+>Instellingen</guimenuitem
+> / <guimenuitem
+>&digikam; configureren...</guimenuitem
+> en dan onder de sectie <guilabel
+>Instellingen</guilabel
+>, selecteert u een database uit het afrolmenu. <orderedlist>
+
+                    <listitem
+><para
+>MySQL intern: dit stelt u in staat om een interne databaseserver te gebruiken op uw systeem. &digikam; gebruikt Unix socket voor de verbinding. </para
+></listitem>
+
+                    <listitem
+><para
+>MySQL op afstand: gebruik dit als u uw gegevens op een server op afstand hebt en u op een andere machine probeert toegang te krijgen tot de verzameling. </para
+></listitem>
+
+                </orderedlist>
+
+            </para>
+
+        </sect4>
+
+        <sect4>
+            <title
+>De MySQL interne server</title>
+
+            <para
+>Bij gebruik van een grote verzameling, met een grootte groter dan 100.000 items, zal de toepassing trager worden. Om de vertraging te vermijden en efficiency te handhaven, biedt &digikam; de optie van het gebruik van de <guilabel
+>MySQL interne server”</guilabel
+>. Ter verduidelijking, dit is geen echte server of een publiek netwerk. In plaats daarvan, het is een server die alleen actief is wanneer de toepassing actief is. </para>
+
+            <para
+>De interne server maakt een gescheiden database aan die toegang biedt (alleen wanneer de toepassing actief is) met het commando: <command
+>mysql --socket=/home/<replaceable
+>[gebruikersnaam]</replaceable
+>/.local/share/digikam/db_misc/mysql.socket digikam</command
+> </para>
+
+            <para
+>De interne server gebruikt twee MySQL binaire hulpmiddelen - <application
+>mysql_install_db</application
+> en <application
+>mysqld</application
+>. U kunt hun locaties instellen in de configuratiedialoog. &digikam; zal proberen deze binaire bestanden automatisch te vinden als ze geïnstalleerd zijn op uw systeem. </para>
+
+            <para>
+                <inlinemediaobject
+><imageobject>
+                    <imagedata fileref="&path;intro-database-mysqlinternal.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+
+        </sect4>
+
+        <sect4>
+            <title
+>De MySQL server op afstand</title>
+
+            <para
+>Om &digikam; met een MySQL server op afstand te gebruiken, moet u een MySQL server hebben. Of, u zou ook MariaDB kunnen installeren, die he doel goed dient. (Kan gemakkelijk geïnstalleerd worden via deze <ulink url="http://www.liquidweb.com/kb/how-to-install-mariadb-5-5-on-ubuntu-14-04-lts/"
+>koppeling</ulink
+>.) </para>
+
+            <para
+>Volg de onderstaande instructies, als u geen specifiek gebruikersaccount hebt en een &digikam; database al is ingesteld. Voer de commando's uit op de MySQL server (nar vervanging van het wachtwoord door het juiste): </para>
+
+            <note
+><para
+>U kunt elke databasenaam selecteren. (Hier is het, “digikam”). U dient eenvoudig de  juiste naam in te vullen in de databasenaam in die van Core, Thumbs, Face in het onderstaande dialoogvak. </para
+></note>
+
+            <blockquote
+><screen
+>CREATE USER ''@'%' IDENTIFIED BY 'password';
+                GRANT ALL ON *.* TO ''@'%' IDENTIFIED BY 'password';
+                CREATE DATABASE digikam;
+                GRANT ALL PRIVILEGES ON digikam.* TO ''@'%';
+                FLUSH PRIVILEGES;
+            </screen
+></blockquote>
+
+            <note
+><para
+>Als u een enorme verzameling hebt, dan zou u de MySQL server moeten starten met <command
+>mysql --max_allowed_packet = 128M</command
+> </para
+></note>
+
+            <para
+>Ga nu, in &digikam;, naar <menuchoice
+><guimenu
+>Instellingen</guimenu
+> <guimenuitem
+>&digikam; configureren...</guimenuitem
+></menuchoice
+> en dan onder de sectie <guilabel
+>Instellingen</guilabel
+>, selecteer <guilabel
+>MySQL server</guilabel
+> uit het afrolmenu. </para>
+
+            <para>
+                <inlinemediaobject
+><imageobject>
+                    <imagedata fileref="&path;intro-database-remotemysql.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+
+            <para
+>Voer het IP-adres van uw MySQL-server in in het veld <guilabel
+>Hostnaam</guilabel
+> en specificeer de juiste poort in het veld <guilabel
+>Poort</guilabel
+> (de standaard poort is 3306). </para>
+
+            <para
+>In het veld <guilabel
+>Kern Db naam</guilabel
+>, voer de naam in van de eerste database voor opslag van metagegevens van foto's. </para>
+
+            <para
+>Specificeer de naam van de tweede database voor opslaan van met wavelets gecomprimeerde miniaturen in het veld <guilabel
+>Thumbs Db naam</guilabel
+> field. </para>
+
+            <para
+>De derde database is gewijd aan de opslag van gezichtshistogrammen voor herkenningsdoeleneinden. Gebruik het veld <guilabel
+>Gezichten Db naam</guilabel
+> daarvoor. </para>
+
+            <para
+>Om veilig verbonden te worden met de server op afstand, voer uw MySQL identificatie in met de velden <guilabel
+>gebruikersnaam</guilabel
+> en <guilabel
+>wachtwoord</guilabel
+>. </para>
+
+            <para
+>Om te controleen of de databaseverbinding juist werkt, druk op de knop <guibutton
+>Verbinding controleren</guibutton
+>. Als alles werkt zoals het zou moeten, schakel dan om naar de secties <guilabel
+>Verzamelingen</guilabel
+> en voeg de mappen met uw foto's toe. Druk op <guibutton
+>OK</guibutton
+> en wacht totdat &digikam; de databases vult met gegevens uit foto's. Dit kan even duren als u veel items hebt om te registreren in de database. </para>
+
+            <para
+>Er zijn enige tips en aanbevelingen om het beste resultaat te krijgen met een externe MySQL databaseserver. </para>
+
+            <para
+>Met een langzaam netwerk hangt &digikam; langere tijd speciaal wanneer albums veel items (
+>1000) bevatten. Deze oplossing hangt af van netwerkprestaties. Probleem was bijvoorbeeld reproduceerbaar met een Wifi-verbinding. Overschakelen naar ethernet moet het probleem oplossen. </para>
+
+            <para
+>Ook, als u een enorme verzameling hebt, dan zou u de MySQL server moeten starten met <command
+>mysql --max_allowed_packet = 128M</command
+>. (Als u goed bekend bent met het gebruik van MySQL, dan kunt u ook uw instellingen in bestand my.ini of ~/.my.cnf wijzigen). </para>
+
+        </sect4>
+
+    </sect3>
+
+    <sect3 id="using-setup-database-migration">
+        <title
+>Migratie van database</title>
+
+        <para
+>De fotobeheertoepassing komt op met een exclusief hulpmiddel “Databasemigratie”, die gebruikers help om hun gegevens te mifreren. Neem aan dat u SQLite gebruikt en u wilt alle gegevens naar een MySQL database verplaatsen, het migratiehulpmiddel zal u daarbij helpen. Het kan u helpen gegevens uit SQLite naar MySQL en vice versa te migreren. </para>
+
+        <para
+>Om te migreren naar een andere database, ga naar <menuchoice
+><guimenu
+>Instellingen</guimenu
+> <guimenuitem
+>Migratie van database...</guimenuitem
+></menuchoice
+>. Er zal een dialoogvenster verschijnen: </para>
+
+        <para>
+            <inlinemediaobject
+><imageobject>
+                <imagedata fileref="&path;intro-database-migration.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Kies nu de toepasselijke databasetypes waarnaar u wilt converteren. Klik tenslotte op de knop <guibutton
+>Migreren</guibutton
+> om de database van SQLite naar MySQL (of vice versa) te converteren. </para>
+
+    </sect3>
+
+    <sect3 id="using-setup-database-backup">
+        <title
+>Aanbeveling voor backup van database</title>
+
+        <para
+>Voor redenen van beveiliging kan het plannen van een reservekopie van de database met crontab over het netwerk helpen tegen het fout functioneren van een apparaat. Een NAS of een externe schijf kan daar ook voor worden gebruikt. </para>
+
+        <para
+>Elke database kan een andere naam krijgen, niet alleen "digikam". Dit maakt het voor de gebruiker mogelijk om alleen een reservekopie te maken van wat nodig is. Bijvoorbeeld “core” database te benoemen als digikamCore, biedt de mogelijkheid om alleen deze tabel te isoleren (het meest belangrijke bestand). Databases voor miniaturen en herkenning kunnen altijd vanaf niets opnieuw worden gegenereerd. </para>
+
+        <para
+>Het hoofdstuk over <link linkend="tool-maintenance"
+>Onderhoudshulpmiddel van &digikam;</link
+> zal uitleggen hoe na enige tijd de inhoud van de database te onderhouden en hoe to de verzamelingen te synchroniseren met informatie in databases (en omgekeerd). </para>
+
+    </sect3>
+
+    <sect3 id="using-setup-database-statistics">
+        <title
+>Database statistieken</title>
+
+        <para
+>&digikam; biedt een uniek hulpmiddel voor het onderhouden van statistieken van uw verzameling. Het omvat aantal afbeeldingen, video's (inclusief individuele aantallen per afbeeldingformaat), tags &etc; Omvat ook de Database-backend (QSQLITE of QMYSQL) en het pad naar de database (waar uw verzameling zich bevind). </para>
+
+        <para
+>U kunt uw statistieken bekijken door naar <menuchoice
+><guimenu
+>Help</guimenu
+> <guimenuitem
+>Databasestatistieken</guimenuitem
+></menuchoice
+> te gaan. De volgende dialoog zal verschijnen: </para>
+
+        <para>
+            <inlinemediaobject
+><imageobject>
+                <imagedata fileref="&path;intro-database-statistics.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

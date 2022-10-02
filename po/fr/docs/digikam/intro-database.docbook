@@ -1,0 +1,58 @@
+<sect1 id="intro-database">
+    <title
+>La base de données de &digikam;</title>
+
+    <sect2 id="intro-database-intro">
+        <title
+>Introduction</title>
+
+        <para
+>Chacun sait que les bases de données servent à stocker des données.Comme tous les autres logiciels de gestion de photos, &digikam; utilise une base de données pour de nombreuses raisons évidentes comme éviter la duplication des données, éviter leur redondance, fournir un moteur de recherche rapide, et augmenter l'intégrité des données. De plus, le coût de la saisie, du stockage et de la récupération des données est ainsi drastiquement réduit. Enfin, tout utilisateur peut accéder aux données grâce au langage de requête. </para>
+
+        <para
+>Dans le cas particulier de &digikam;, les albums, albums racines, étiquettes, vignettes, données de reconnaissance faciale, métadonnées des images, emplacements des fichiers, configuration, &etc; sont stockés dans des fichiersde base de données différents. </para>
+
+        <para
+>&digikam; gère en réalité plus d'une base de données. Pour des raisons pratiques, les données sont réparties entre trois : <orderedlist>
+
+                <listitem
+><para
+>La base centrale pour toutes les propriétés des collections, c'est-à-dire tous les albums, images et données de recherche. </para
+></listitem>
+
+                <listitem
+><para
+>La base des vignettes pour les vignettes compressées, c'est-à-dire une version des vignettes qui utilise la compression par ondelettes (format PGF). </para
+></listitem>
+
+                <listitem
+><para
+>La base des visages pour stocker les données de reconnaissance faciale, c'est-à-dire les histogrammes qui servent à reconnaître les visages. </para
+></listitem>
+
+            </orderedlist>
+
+        </para>
+
+    </sect2>
+
+    <sect2 id="intro-database-config">
+        <title
+>Éléments techniques et configuration</title>
+
+        <para
+>Tous les détails de configuration de la base de données sont donnés principalement dans la section Configuration des <link linkend="using-setup-database"
+>bases de données de &digikam;</link
+>. </para>
+
+    </sect2>
+
+</sect1>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

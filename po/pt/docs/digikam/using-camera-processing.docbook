@@ -1,0 +1,231 @@
+<sect2 id="using-camera-processing">
+<title
+>Opções Avançadas da Interface de Importação</title>
+
+<para
+>A página <guilabel
+>Configuração</guilabel
+> da barra lateral direita na Interface de Importação abre cinco secções com opções avançadas para o processamento da importação. </para>
+
+    <sect3 id="using-camera-rename">
+        <title
+>Opções de Mudança de Nomes dos Ficheiros</title>
+
+        <para
+>As máquinas normalmente não usam nomes muito adequados para as fotografias. Os nomes dos ficheiros são normalmente reutilizados, logo que as fotografias tenham sido removidas da máquina. Isto poderá levar a conflitos dos nomes de ficheiros se transferir as fotografias de várias sessões para o mesmo álbum. Poderá também ser útil incluir a data e hora em que uma fotografia foi tirada no nome do ficheiro. </para>
+
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-camera-setting1.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Se seleccionar a opção <guilabel
+>Nomes dos ficheiros da máquina</guilabel
+>, os nomes dos ficheiros das imagens não serão alterados. Mas poderá mudar a sua capitalização para maiúsculas ou minúsculas com a lista <quote
+>Mudar a capitalização para:</quote
+>. Se seleccionar <guilabel
+>Personalizar</guilabel
+>, será capaz de colocar em conjunto um padrão de mudança de nomes com o menu Opções, que contém o nome do ficheiro original, extensão, o dono e grupo, a pasta, uma janela para definir um número de sequência e uma janela para adicionar os dados da data e hora, sejam valores fixos ou baseados na informação da hora gravada pela máquina fotográfica no ficheiro da imagem. </para>
+        
+        <para
+>Na janela do número de sequência, irá descobrir duas opções: <guilabel
+>Numeração à base da extensão</guilabel
+> e <guilabel
+>Numeração à base da pasta</guilabel
+>. Se estiverem assinaladas, o &digikam; irá iniciar uma nova sequência para cada extensão do ficheiro e / ou pasta. </para>
+        
+        <para
+>A janela da Data &amp; Hora parece-se com a seguinte: </para>
+        
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-camera-datetime.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>O calendário só fica activo se a <quote
+>Data Fixa</quote
+> for seleccionada no campo <guilabel
+>Origem:</guilabel
+>. Desta forma, poderá adicionar a mesma informação de data e hora aos nomes dos ficheiros de todas as imagens ou vídeos importados. Se a <quote
+>Imagem</quote
+> for seleccionada em alternativa, o &digikam; irá usar a informação da hora dos meta-dados dos ficheiros de imagem. Com o campo <guilabel
+>Formato:</guilabel
+>, poderá escolher entre diversos formatos de data/hora, ou ainda um formato personalizado. No último caso, escolha <guilabel
+>Personalizado</guilabel
+> na lista <guilabel
+>Formato:</guilabel
+> e preencha, por exemplo, "dd.MM.yyyy hh:mm:ss". Para mais informações, leia a referência da classe <ulink url="http://qt-project.org/doc/qt-5.0/qtcore/qdatetime.html#toString"
+>QDateTime</ulink
+>. </para>
+
+        <para
+>Para além disso, estas opções ainda podem ser mais personalizadas com a ajuda de um conjunto de modificadores. Uma lista de todas as opções e modificadores em conjunto, com uma breve explicação de cada uma, irá abrir ao carregar no botão de informação. </para>
+
+        <tip>
+            <para
+>O número de sequência poderá ser necessário se tiver uma máquina com um modo de disparo múltiplo muito rápido, onde aí será possível obter duas fotografias com a mesma data e hora exactas. </para>
+        </tip>
+
+        <para
+>O nome novo do ficheiro que o &digikam; irá usar para as fotografias, quando estas forem transferidas, é mostrado por baixo do nome indicado pela câmara na área de miniaturas. As opções de mudança de nomes serão recordadas da próxima vez que usar a Interface da Câmara. </para>
+
+    </sect3>
+    
+    <sect3>
+    <title
+>Criação Automática de Álbuns</title>
+        
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-camera-setting3.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Assinale a opção <guilabel
+>Sub-álbuns baseados na extensão</guilabel
+> para o &digikam; criar sub-álbuns com base na extensão dos ficheiros das imagens importadas no álbum de destino. O &digikam; irá abrir uma janela onde poderá escolher o álbum de destino, assim que carregar numa das opções de transferência, quer na barra de ferramentas quer no menu Item. Se quiser criar um novo Álbum, para o qual poderá transferir as fotografias, carregue no botão <guilabel
+>Novo Álbum</guilabel
+>. O novo álbum será criado como uma sub-pasta do álbum que está seleccionado de momento na lista de álbuns existente. Isto significa que, se não quiser que o seu novo álbum seja uma sub-pasta de uma pasta existente, deverá seleccionar primeiro a colecção onde deseja criar o novo álbum. As colecções são representadas pelo ícone <inlinemediaobject
+> <imageobject
+><imagedata fileref="&path;using-mainwindow-icon-collection.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>. </para>
+
+        <para
+>Se a sua máquina fotográfica fornecer informações sobre a data em que a fotografia foi tirada, ou se importar a partir de um dispositivo USB ou pasta, o &digikam; pode usar isto para criar automaticamente sub-álbuns no álbum de destino quando for transferida. Os nomes dos sub-álbuns serão baseados nas datas das imagens. Todas as imagens que tiverem a mesma data serão transferidas para o mesmo sub-álbum. Nem todas as máquinas incluem esta informação. Veja a secção da <link linkend="using-sidebar-metadata"
+>barra lateral de Meta-Dados</link
+> para mais detalhes sobre a informação que a sua máquina poderá ter incorporado nas suas fotografias. </para>
+
+    </sect3>
+
+
+    <sect3>
+        <title
+>Operações 'na Altura'</title>
+
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-camera-setting2.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Esta secção da página de Configuração oferece diversas opções para as imagens JPEG. A lista <guilabel
+>Modelo:</guilabel
+> permite-lhe escolher um dos seus modelos de meta-dados personalizados por si na <link linkend="using-setup-templates"
+>Configuração dos Modelos</link
+>. Poderá aceder ao Gestor de Modelos também com o botão de edição à direita da lista. </para>
+        
+        <para
+>As opções <guilabel
+>Escrever o nome do documento no EXIF</guilabel
+> e <guilabel
+>Corrigir a data &amp; hora internas</guilabel
+> gravam estas informações nas respectivas marcas de EXIF e campos do XMP. </para>
+
+        <para
+>Se assinalar a opção seguinte, o &digikam; irá efectuar a acção de rotação/inversão automática descrita na <link linkend="using-rotateimage"
+>Rotação da Imagem sem Perdas</link
+>. </para>
+        
+        <para
+>O <guilabel
+>Converter para um formato de ficheiros sem perdas</guilabel
+> permite-lhe converter as imagens para PNG, TIFF, PGF ou JPEG2000 durante a importação. </para>
+
+    </sect3>
+    
+    <sect3>
+        <title
+>Opções da Conversão para DNG</title>
+
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-camera-setting4.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+        
+        <para
+>Esta secção permite activar a conversão para DNG das imagens RAW, assinalando a opção <guilabel
+>Converter as imagens RAW para um contentor DNG</guilabel
+> e seleccionando as opções para essa conversão. Para aprender mais sobre o DNG (Digital Negative), use a ligação <quote
+>contentor DNG</quote
+>. <variablelist>
+                <varlistentry>
+                    <term
+><menuchoice>
+                        <guimenuitem
+>Incorporar o ficheiro original</guimenuitem>
+                    </menuchoice
+></term>
+                    <listitem>
+                        <para
+><action
+>Incorpora o ficheiro RAW original no contentor DNG. </action
+></para>
+                    </listitem>
+                </varlistentry>
+                
+                <varlistentry>
+                    <term
+><menuchoice>
+                        <guimenuitem
+>Compressão sem Perdas</guimenuitem>
+                    </menuchoice
+></term>
+                    <listitem>
+                        <para
+><action
+>Activa a compressão sem perdas. A diferença entre a compressão com e sem perdas é praticamente imperceptível com o DNG. </action
+></para>
+                    </listitem>
+                </varlistentry>
+                
+                <varlistentry>
+                    <term
+><menuchoice>
+                        <guimenuitem
+>Antevisão do JPEG</guimenuitem>
+                    </menuchoice
+></term>
+                    <listitem>
+                        <para
+><action
+>Escolha se deseja incorporar uma antevisão de tamanho médio ou completo em JPEG no contentor DNG, ou nenhuma de todo. </action
+></para>
+                    </listitem>
+                </varlistentry>
+            </variablelist>
+        </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Programação</title>
+
+        <para
+>A última secção da página de Configuração permite a execução de programas para manipular as imagens durante a importação. Poderá escrever o nome do ficheiro do programa no campo de texto ou pesquisar por ele com o botão <guilabel
+>Escolher...</guilabel
+>. Veja o botão de informação para obter algumas expressões adicionais para personalizar a linha de comandos! </para>
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

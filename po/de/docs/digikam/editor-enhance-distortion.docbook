@@ -1,0 +1,187 @@
+  <sect3 id="editor-enhance-distortion">
+    <sect3info>
+      <title
+>Linsenverzerrungskorrektur</title>
+      <abstract>
+        <para
+>Die &digikam; <emphasis
+>Linsenverzerrung</emphasis
+> ist ein Werkzeug, um die Auswirkung von sphärischen Linsen auf Fotos zu korrigieren. Es benutzt einen urheberrechtlich geschützten Algorithmus von David Hodson. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>digiKam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Einführung</title>
+    <anchor id="lensdistortion.anchor"/>
+    <para
+><emphasis
+>Tonnenförmige Verzerrung</emphasis
+> tritt auf bei einem Weitwinkelobjektiv oder einem minimalen Zoom. Es sorgt dafür, dass das Bild leicht sphärisch erscheint wie einen Tonne. Sie sehen dass, wenn Sie gerade Einzelheiten in den Seitenränder des Bildes haben. <emphasis
+>Kissenförmige Verzerrung</emphasis
+> ist der entgegengesetzte Defekt und entsteht bei den Linsen von Teleobjektiven, also einem maximalem Zoom oder auch bei Unterwasserbildern. Die Bilder erscheinen zusammen gedrückt in die Mitte. Das Kissen ist meistens schwieriger zu sehen als die Tonne, aber ähnlich sichtbar an den Ecken. Diese Verzerrungen können mit diesem Werkzeug entfernt werden ohne einen sichtbaren Verlust an Qualität. </para>
+    <note>
+      <para
+>Dieses Werkzeug arbeitet mit geometrischen Verzerrungen. Farbliche Verzerrungen können nicht mit diesem Werkzeug korrigiert werden. </para>
+    </note>
+    <para
+>Die folgende Zeichnung erklärt die Haupttypen von geometrischen Verzerrungen: <itemizedlist>
+        <listitem>
+          <para
+>(1): Kissenförmige Verzerrung.</para>
+        </listitem>
+        <listitem>
+          <para
+>(2): Keine Verzerrung.</para>
+        </listitem>
+        <listitem>
+          <para
+>(3): Tonnenförmige Verzerrung.</para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para>
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="&path;editor-distortions.png" format="PNG"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>Linsenverzerrungstypen</phrase>
+        </textobject>
+      </inlinemediaobject>
+    </para>
+    <para/>
+    <sect4 id="using-lensdistortion">
+      <title
+>Das Werkzeug <quote
+>Linsenverzerrung</quote
+> benutzen</title>
+      <note>
+        <para
+>Eine kleine Erklärung vorab. Die geometrischen Korrekturen benutzen Koeffizienten eines Polynoms vierten Grades. <itemizedlist>
+            <listitem>
+              <para
+>Der Koeffizient des ersten Grades ändert die Größe des Bildes. Das Werkzeug nennt dies <guilabel
+>Zoom</guilabel
+>.</para>
+            </listitem>
+            <listitem>
+              <para
+>Der Koeffizient des zweiten Grades behandelt die allgemeine geometrische Verzerrung der Linse und kann die konkave oder konvexe Form des Bildes korrigieren.</para>
+            </listitem>
+            <listitem>
+              <para
+>Der Koeffizient des dritten Grades hat einen ähnlichen Rundungseffekt, flacht aber an den Kanten ab. Diese Korrektur wird nicht in dem Werkzeug angewendet.</para>
+            </listitem>
+            <listitem>
+              <para
+>Der Koeffizient vierten Grades korrigiert die entfernten Ecken entgegengesetzt zu dem des zweiten Grades. Wenn Sie diese beiden kombinieren kann jede geometrische Verzerrung nahezu eliminiert werden.</para>
+            </listitem>
+          </itemizedlist>
+        </para>
+      </note>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-lensdistortion.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Dialog <quote
+>Linsenverzerrungkorrektur</quote
+></phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>Anhand von vier Reglern können Sie Filter korrigieren: </para>
+      <para
+><guilabel
+>Allgemein</guilabel
+>: dieser Wert kontrolliert die Stärke der Verzerrung zweiten Grades. Mit negativen Werten können tonnenförmige Verzerrungen korrigiert werden und positive Werte kissenförmige Verzerrung. </para>
+      <para
+><guilabel
+>Ecke</guilabel
+>: dieser Wert kontrolliert die Stärke der Verzerrung vierten Grades. Dieser Wert wirkt stärker an den Rändern als in der Mitte des Bildes. Für die meisten Linsen hat der ´<guilabel
+>Ecken</guilabel
+> Parameter das umgekehrte Vorzeichen des Parameters <guilabel
+>Allgemein</guilabel
+>. </para>
+      <para
+><guilabel
+>Zoom</guilabel
+>: dieser Wert skaliert die Bildgröße neu und führt dadurch eine Korrektur ersten Grades durch. Negative Werte vergrößern während positive das Bild verkleinern. </para>
+      <para
+><guilabel
+>Aufhellen</guilabel
+>: dieser Wert justiert die Helligkeit in den Ecken des Bildes. Negative Werte verringern die Helligkeit des Bildes in den Ecken, während positive Werte sie erhöhen. </para>
+      <para
+>Um Ihnen zu helfen die besten Filtereinstellungen zu finden, illustriert der Dialogmit einer Vorschau die Verzerrungskorrektur. Die Werte die Sie für Ihr Bild benutzen, werden gespeichert und beim nächsten Start als Standardwerte benutzt. </para>
+      <note>
+        <para
+>Die tonnen- bzw. kissenförmige Korrektur sollte vor allen Zuschneide- oder Größenänderungen durchgeführt werden. Am besten führen Sie diese Korrektur als aller erstes durch. Falls Sie ein Bild neu zu schneiden und danach eine tonnenförmige Korrektur durchführen wäre der Effekt augenscheinlich der Falsche. </para>
+      </note>
+      <para
+>Um Ihnen zu helfen die beste Korrektur zu finden stellt Ihnen dieses Werkzeug eine vertikale und eine horizontale Hilfslinie zur Verfügung. Bewegen Sie den Mauszeiger in der Bildvorschau um die gestrichelten Linien anzuzeigen. Bewegen Sie ihn zu einem wichtigen Ort, wie z.B. der Meeresrand oder einer Gebäudewand, in Ihrem Bild und drücken Sie die &LMB; um die Linien an dieser Stelle zu fixieren. Im Anschluss können Sie die tonnen-/kissenförmige Verzerrung mit der Hilfe der Linien korrigieren. </para>
+      <para
+>Wenn Sie eine kissenförmige Verzerrung korrigieren wird das resultierende Bild schwarze Ecken haben. Sie können diese mit dem Zuschneide-Werkzeug im Menü <menuchoice
+><guimenu
+>Transformieren</guimenu
+><guimenuitem
+>Zuschneiden</guimenuitem
+></menuchoice
+> aus der Bildbearbeitung oder über den Zoom Regler dieses Dialogs entfernen. </para>
+      <para
+>Für die meisten Bilder reicht die tonnenförmige Korrektur aus. Der nächste logische Schritt für einige Motive wie z.B. Aufnahmen von vorne, Rahmen und Gemälden ist es die Perspektive so zu korrigieren das alle Winkel im Bild 90 Grad haben. Beachten Sie dabei das wenn Sie die Kamera mit der Hand halten werden Sie immer eine leichte Verzerrung der Perspektive haben. </para>
+    </sect4>
+    <sect4 id="inaction-lensdistortion">
+      <title
+>Das Werkzeug <quote
+>Linsenverzerrung</quote
+> in Aktion</title>
+      <para
+>Dies ist ein Beispiel für die tonnenförmige Korrektur angewendet auf eine Kirche in Norwegen. Das Originalbild ist unter (1) und das korrigierte Bild unter (2) zu sehen. </para>
+      <para
+>Die in diesem Beispiel genutzten Werte sind: <itemizedlist>
+          <listitem>
+            <para
+>Allgemein = -40.</para>
+          </listitem>
+          <listitem>
+            <para
+>Ecke = 0.</para>
+          </listitem>
+          <listitem>
+            <para
+>Zoom = -20.</para>
+          </listitem>
+          <listitem>
+            <para
+>Aufhellen = 0.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-lensdistortion-preview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Vorschau der Linsenverzerrungskorrektur</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

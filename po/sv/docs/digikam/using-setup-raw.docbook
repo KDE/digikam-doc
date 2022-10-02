@@ -1,0 +1,153 @@
+<sect2 id="using-setup-raw">
+    <title
+>Inställningar för avkodning av obehandlade bilder</title>
+
+    <para
+>I tidiga versioner av &digikam; var bildeditorn bara en fotografivisning, men den utvecklas snabbt till ett mycket användbart bildbehandlingsverktyg. Den här dialogrutan låter dig styra hur bildeditorn beter sig. </para>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-raw-behavior.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+    <para>
+        <guilabel
+>16-bitars färgdjup</guilabel>
+    </para>
+
+    <para
+>Om aktiverad, avkodas alla obehandlade filer till 16-bitars färgdjup med en linjär gammakurva. För att förhindra att en svart bild visas i editorn, rekommenderas att använda färghantering med detta läge.Om inaktiverad, avkodas alla obehandlade filer till 8-bitars färgdjup med en BT.709 gammakurva och en 99:e percentil vitpunkt. Läget är mycket snabbare än 16-bitars avkodning. Inställningen <guilabel
+>Ljusstyrka</guilabel
+> tas bara hänsyn till i 8-bitarsläge (en begränsning i dcraw). </para>
+
+    <para>
+        <guilabel
+>Interpolera RGB som fyra färger</guilabel>
+    </para>
+
+    <para
+>Standardvärdet är att anta att alla gröna bildpunkter är likadana. Om gröna bildpunkter i CCD-sensorns jämna rader är känsligare för ultraviolett ljus än udda rader, skapar skillnaden ett rutmönster i resultatet. Genom att använda alternativet löses problemet med minimal detaljförlust. Sammanfattningsvis gör alternativet bilden något suddigare, men eliminerar falska 2x2 rutmönster med kvalitetsmetoden VNG, eller labyrinter med kvalitetsmetoden AHD. </para>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-raw-settings.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+    <para>
+        <guilabel
+>Använd kamerans vitbalans</guilabel>
+    </para>
+
+    <para
+>Använder kamerans inställning av vitbalans om markerat. Använder annars <guilabel
+>Automatisk färgbalans</guilabel
+> om det alternativet är markerat. </para>
+
+    <para>
+        <guilabel
+>Automatisk färgbalans</guilabel>
+    </para>
+
+    <para
+>Används bara om kamerans inställning av vitbalans inte är markerat. Standardvärdet är att använda en fast färgbalans baserad på ett vitt kort fotograferat i solljus. </para>
+
+    <para>
+        <guilabel
+>Använd Super-CCD sekundära sensorer</guilabel>
+    </para>
+
+    <para
+>Bara för Fuji Super-CCD spegelreflexkameror. Använd de sekundära sensorerna, och underexponera därmed bilden med fyra bländarsteg för att synliggöra detaljer i dagrar. Alternativet ignoreras för alla andra kameror. </para>
+
+    <para>
+        <guilabel
+>Dagrar</guilabel>
+    </para>
+
+    <para
+>Här är berättelsen om de tre inställningarna av dagrar, med benäget tillstånd av Nicolas Vilars: </para>
+
+    <para
+>Det normala här är att anse att dagrar (i betydelsen delar av bilden som är överexponerade på grund av att kameran inte kunde avbilda dem) som enkla, helt vita (alternativet <guilabel
+>Helvita</guilabel
+>). Man kan få ett snyggt resultat med alternativet <guilabel
+>Obeskurna</guilabel
+> som återger dagrar i olika rosa nyanser. Slutligen kan man fundera på att försöka återskapa en del av den saknade informationen i dagrarna (alternativet <guilabel
+>Återskapade</guilabel
+>). </para>
+
+    <para
+>Det är möjligt eftersom blåa bildpunkter ofta mättas mindre snabbt än gröna och röda. &digikam; och dcraw försöker återskapa de saknade gröna och röda färgerna från de kvarvarande icke mättade blåa bildpunkterna. Naturligtvis är allt det här en fråga om en avvägning av hur mycket färg eller vitt man vill ha. </para>
+
+    <para
+>Om man väljer alternativet <guilabel
+>Återskapade</guilabel
+>, får man möjlighet att ange en nivå. Värdet 3 är en kompromiss och kan/bör anpassas baserat på varje bild. </para>
+
+    <note
+><para
+>En liten varning här för de fåtal nyfikna som har läst manualsidorna för dcraw, där skriver författaren att 5 är kompromissvärdet, 0 är helvita och 1 är obeskurna. Det beror på att i &digikam; är 0 och 1 alternativen "helvita" och "obeskurna" i kombinationsrutan (om du väljer dem är nivåreglaget inaktiverat). Därför låter reglaget i &digikam; för alternativet "återskapade" dig välja från 0 till 7 (istället för 0 till 9 på kommandoraden i dcraw), där 3 är kompromissvärdet istället för 5 i själva kommandoradsverktyget dcraw. </para
+></note>
+
+    <para
+><guilabel
+>Ljusstyrka</guilabel
+> (fungerar bara i 8-bitarsläge) </para>
+
+    <para
+>Ställ in ljusstyrkan efter smak. Du behöver troligen gå lite högre än normalvärdet 1, men detta kan justeras senare med bildalternativen i &digikam;s bildeditor. På grund av tidskostnaden för mosaikborttagning, var konservativ. </para>
+
+    <para>
+        <guilabel
+>Kvalitet</guilabel>
+    </para>
+
+    <para
+>En <ulink url="http://en.wikipedia.org/wiki/Demosaicing"
+>algoritm för mosaikborttagning</ulink
+> är digital bildprocess som används för att interpolera en fullständig bild från partiell obehandlad data i form av en matris av färgade bildpunkter, som tagits emot från den färgfiltrerade bildsensorn som finns internt i många digitalkameror. Den är också känd som CFA-interpolation eller färgrekonstruktion. </para>
+
+    <para
+>&digikam; och dcraw tillhandahåller tre alternativ: Bilinjär, VNG-interpolation och AHD-interpolation. Det verkar som om <emphasis
+>AHD-interpolation</emphasis
+> (adaptiv homogenitetsstyrd) är det bästa valet för hög kvalitet, enligt några prov jag har gjort och enligt artikeln av upphovsmannen. <emphasis
+>VNG-interpolation</emphasis
+> (variabelt antal gradienter) var den första algoritmen som användes av dcraw, men den lider av färgavvikelser vid kanter. <emphasis
+>Bilinjär</emphasis
+> är intressant om du är ute efter snabbhet med ett acceptabelt resultat. </para>
+
+    <para>
+        <guilabel
+>Aktivera brusreducering</guilabel>
+    </para>
+
+    <para
+>När mosaikborttagning av bilden utförs, kan också brusreducering begäras (med något ökad tidsåtgång). Alternativet använder en brusreduceringsalgoritm medan bilden fortfarande har färgrymden CIE Lab. Eftersom bruset bara gäller ljusstyrkan ("L" i Lab), ska den inte göra bilden suddig som traditionella brusreduceringsalgoritmer gör i RGB-läge. Om du konverterade en bild från obehandlat format och den verkar brusig, gå tillbaka och konvertera den igen med alternativet aktiverat, istället för att använda något brusreduceringsverktyg. Standardvärdet är <emphasis
+>Tröskel</emphasis
+> = 100. Högre värden ökar utjämningen, lägre värden minskar utjämningen. </para>
+
+    <anchor id="CA.anchor"/>
+
+    <para>
+        <guilabel
+>Aktivera korrektion av kromatisk avvikelse</guilabel>
+    </para>
+
+    <para
+>Om du känner till den kromatiska avvikelsen hos dina linser kan du ställa in korrektionsvärden för rött och blått här. Det är definitivt det optimala sättet att korrigera kromatisk avvikelse, eftersom den görs vid konvertering av den obehandlade bilden. </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

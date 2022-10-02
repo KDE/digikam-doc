@@ -1,0 +1,73 @@
+<sect2 id="editor-cm-srgb">
+    <title
+>El espacio de colores sRGB</title>
+
+    <sect3>
+        <title
+>¿Qué tiene de especial el espacio de colores sRGB?</title>
+
+        <para
+>sRGB está ampliamente aceptado como perfil de color estándar por todas las personas involucradas virtualmente con la creación de imágenes orientadas al consumidor. En 1996 Hewlett Packard y Microsoft propusieron sRGB como un espacio de colores estándar para aplicaciones orientadas al consumidor. Como aparece en la propuesta inicial de HP/MS: <blockquote
+><para
+> Hewlett-Packard y Microsoft proponen soporte para un espacio de colores estándar, sRGB, dentro de los sistemas operativos de Microsoft, de productos HP, de Internet, y de todos los distribuidores interesados. El objetivo de este espacio de colores es las estrategias del actual gestor de color, activando un tercer método de manejo de color en los sistemas operativos,controladores de dispositivos e Internet que utiliza una de definición de color de dispositivo independiente simple y robusta. Esto produce buena calidad y compatibilidad retrasada con las transmisiones mínimas y gastos fijos de sistema. Basado en un espacio de colores RGB colorimétrico apropiado para pantallas CRT (Tubos de Rayos Catódicos), televisión, escáneres, cámaras digitales e impresoras, como un espacio que puede ser soportado con el mínimo coste para los distribuidores de software y hardware...</para
+></blockquote
+> <blockquote
+><para
+>Actualmente, el ICC [Consorcio Internacional del Color]... rastrea y garantiza que un color está correctamente acotado desde la entrada hasta la salida del espacio de colores... fijando un perfil para el espacio de colores de entrada de la imagen en cuestión. Eso es apropiado para usuarios avanzados. Sin embargo, existe un amplio rango de usuarios que no requieren este nivel de de flexibilidad y control. De forma adicional, muchos formatos de archivos existentes no lo necesitan, y and puede que nunca soporten el perfil de color embebido, y finalmente existe un amplio rango de usos [que] actualmente desanima a las personas de agregar datos extra a los archivos. Un espacio de colores RGB común dirige estos asuntos... combinando los diferentes espacios de pantallas RGB estándar y no estándar en un único espacio de colores RGB estándar. Tal y como un estándar podría mejorar dramáticamente la fidelidad del color en el entorno de escritorio. Por ejemplo, si los distribuidores de sistemas operativos proporcionan soporte para un espacio de colores RGB estándar, la entrada y la salida de los dispositivos de los distribuidores que permiten usar este espacio de colores estándar podría comunicar color fácil y confidencialmente sin más gastos de gestión de color en las más comunes situaciones. (<ulink url="http://www.w3.org/Graphics/Color/sRGB"
+>archived copy</ulink
+>)</para
+></blockquote
+> Para resumir, el motivo de que se adoptará universalmente el espacio de colores sRGB fue y es hacer la vida más fácil a los consumidores (no necesitan preocuparse sobre la gestión del color), menos caro para los fabricantes (no necesitan preocuparse sobre la compatibilidad a nivel del consumidor, de cámaras digitales o escáneres, pantallas, impresoras y en adelante), y más conveniente para mostrar imágenes en Internet (no tiene que preocuparse sobre integración ni lectura de perfiles icc - ya los considera sRGB). </para>
+
+        <para>
+            <emphasis
+>Entonces si sRGB funciona bien y hace la vida fácil para todos, ¿Por qué utilizar cualquier otro espacio de colores y de ese modo estar forzado a preocuparse por los asuntos del gestor de color?</emphasis>
+        </para>
+
+        <para
+>sRGB fue diseñado para contener colores expuestos con facilidad en las pantallas orientadas al consumidor e impresos por impresoras orientadas también al consumidor, fabricadas en 1996. Este mínimo común denominador de colección es menor que el juego de colores visibles e imprimibles (el término técnico es «gama de color») es más pequeño que el juego de colores que las cámaras digitales actuales puedan capturar, más pequeño que el juego de colores que las impresoras puedan imprimir, y mucho más pequeño que la gama de color de la amplia gama de pantallas que están empezando a entrar en el mercado. Para cualquiera que quiera hacer uso de la amplia gama de colores gamuts que está disponible hoy en día en el nivel del consumidor, la gama de sRGB es muy pequeña. Inversamente, si usted no tiene intención de hacer uso de una extensa gama de colores en cualquier punto de su punto de trabajo de imagen digital, entonces usted no necesita preocuparse sobre espacios de colores que no sean sRGB ni de todas las complejidades que acompañan a la gestión de color. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>¿Cómo de pequeño es sRGB?</title
+> 
+
+        <para
+>Una representación visual de las limitaciones de sRGB comparado con los colores que vemos actualmente en el mundo real, se presentará a continuación. Esto muestra dos representaciones dimensionales de todos los colores que podemos ver (la región con forma de herradura) y los colores contenidos en el espacio sRGB (la región pequeña en forma de triángulo) </para>
+
+        <para>
+            <screenshot>
+                <screeninfo
+></screeninfo>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="&path;editor-cm-542px-CIExy1931-sRGB.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                    <phrase
+></phrase>
+                    </textobject>
+                </mediaobject>
+            </screenshot>
+        </para>
+
+        <para
+>Si desea versión bidimensional de sRGB comparada con alguno de los espacios de colores de trabajo grandes, mire el excelente <ulink url="http://www.brucelindbloom.com/"
+>sitio</ulink
+> de Bruce Lindbloom, haciendo clic en «Info» y en «Information About RGB Working Spaces». </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

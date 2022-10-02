@@ -1,0 +1,164 @@
+<chapter id="tool-flickrexport">
+<chapterinfo>
+
+<abstract>
+  <para
+>Het hulpmiddel Exporteren naar Flickr stelt de gebruiker in staat foto's naar de <ulink url="http://www.flickr.com"
+>Flickr</ulink
+> webservice te uploaden. </para>
+</abstract>
+
+</chapterinfo>
+
+<title
+>Hulpmiddel Exporteren naar Flickr</title>
+
+  <para
+>Flickr is een online toepassing voor fotobeheer. Flickr is een manier om uw foto's bij de mensen waar u om geeft te krijgen. Met Flickr kunt u uw favoriete foto's aan de wereld tonen, blog de foto's die u hebt genomen met een telefoon met camera en beveiligd en privé foto's aan uw vrienden en familie tonen over de gehele wereld. </para>
+
+  <para
+>Het hulpmiddel FlickrExport kan gebruikt worden om een afbeeldingenverzameling te uploaden vanaf uw computer naar de flickr-server op afstand via het internet. </para>
+
+<sect1 id="using-tool-flickrexport"
+> 
+  <title
+>Initialisatie van hulpmiddel bij eerste keer toegang</title>
+
+  <para
+>Bij gebruik van het hulpmiddel voor de eerste keer zult u meegenomen worden in het proces van het verkrijgen van een token dat gebruikt wordt voor authenticatie. De Volgende dialoog zal verschijnen en een browservenster zal starten die u zal aanmelden in <ulink url="http://www.flickr.com"
+>Flickr</ulink
+>: </para>
+
+  <figure id="flickrexport-first-signup-dialog">
+      <title
+>Het voorbeeld van de eerste dialoog voor inschrijven</title>
+      <mediaobject
+><imageobject>
+        <imagedata srccredit="The First Sign Up Dialog Preview" fileref="tool-flickrexport-signup.png"/>
+      </imageobject
+></mediaobject>
+  </figure>
+
+  <para
+>Na met succes aangemeld te zijn zal FlickrUploadr worden toegestaan om foto's te verzenden naar de flickr-website. U krijgt de volgende pagina te zien bij met succes aanmelden: </para>
+
+  <figure id="flickrexport-successful-signup">
+      <title
+>De pagina na met succes aanmelden bij Flickr</title>
+      <mediaobject
+><imageobject>
+        <imagedata srccredit="The Successful Signup Flickr page" fileref="tool-flickrexport-authenticated.png"/>
+      </imageobject
+></mediaobject>
+  </figure>
+
+  <para
+>Sluit daarna gewoon de browser-vensters en keer terug naar de dialoog van de toepassing. Na klikken op <guilabel
+>Ja</guilabel
+> zult u het interface zien dat wordt gebruikt om foto's te uploaden naar Flickr, beschreven in de volgende sectie. </para>
+
+</sect1>
+
+<sect1 id="uploading-using-tool-flickrexport"
+> 
+<title
+>Regulier gebruik van hulpmiddel</title>
+
+  <para
+>Wanneer het hulpmiddel voor exporteren naar Flickr is aangeroepen voor een tweede keer of later krijgt u de volgende dialoog te zien, die de huidige toegangsrechten van de hulpmiddel voor exporteren naar Flickr toont. Het proces voor uploaden vereist <quote
+>schrijf</quote
+>rechten. Het hulpmiddel staat geen andere rechten toe dan die nu gelden. U wordt dan gevraagd of u door wilt gaan met de huidige rechten. </para>
+     <figure id="flickrexport-current-permissions-dialog">
+      <title
+>Voorbeeld van dialoog met de huidige rechten</title>
+      <mediaobject
+><imageobject>
+        <imagedata srccredit="Current Permission Dialog preview" fileref="tool-flickrexport-continue.png"/>
+      </imageobject
+></mediaobject>
+  </figure>
+
+   <para
+>Na klikken op <guibutton
+>Ja</guibutton
+> zult het interface zien om foto's naar Flickr te uploaden. </para>
+   <para
+>Na klikken op <guibutton
+>Nee</guibutton
+> zal het authenticatieproces worden herhaald. </para>
+
+  <para
+>Het hoofdvenster van de dialoog Uploaden wordt hieronder getoond: </para>
+
+  <figure id="flickrexport-main-uploading-dialog">
+      <title
+>Het voorbeeld van het hoofdvenster van de dialoog Uploaden</title>
+      <mediaobject
+><imageobject>
+        <imagedata srccredit="The Main Uploading Dialog Preview" fileref="tool-flickrexport-uploaddialog.png"/>
+      </imageobject
+></mediaobject>
+  </figure>
+
+  <para
+>Op de knop <guibutton
+>Foto's toevoegen</guibutton
+> zou geklikt moeten worden nadat de gebruiker de andere opties in de dialoog heeft ingesteld. Na het klikken op deze knop zal een selectiedialoog voor afbeeldingen openen waar u de foto's kunt selecteren die u wilt uploaden en op <guibutton
+>OK</guibutton
+> kunt klikken waarna het uploaden van de afbeeldingen start. </para>
+
+  <para
+>Het veld <guilabel
+>Tags</guilabel
+> kan gevuld worden met een serie woorden (kommagescheiden) die als tags toegevoegd zullen worden aan de geüploade afbeeldingen. </para>
+
+  <para
+>De keuzevakjes <guilabel
+>Publiek</guilabel
+>, <guilabel
+>Vrienden</guilabel
+> en <guilabel
+>Familie</guilabel
+> kunnen geactiveerd worden om van toepassing zijnde toegangsrechten toe te voegen aan de geüploade afbeeldingen. Standaard worden de afbeeldingen geüpload als privé. </para>
+
+  <para
+>Als de optie <guilabel
+>Foto's van grootte wijzigen voor uploaden</guilabel
+> is geselecteerd, zullen de foto's van grootte wijzigen vóór uploaden. De waarden zullen gelezen worden uit de keuzelijst <guilabel
+>Maximale afmetingen</guilabel
+>. </para>
+
+  <para
+>De keuzelijst <guilabel
+>Maximale afmetingen</guilabel
+> kan gebruikt worden om adjust de maximum hoogte aan te passen tot welke de foto's van grootte zullen wijzigen vóór uploaden. De breedte berekening zal gedaan worden zodat de beeldverhouding wordt bewaard. </para>
+
+ <figure id="flickrexport-uploading-progress-dialog">
+      <title
+>Het voorbeeld van de voortgangsindicator in de dialoog Uploaden</title>
+      <mediaobject
+><imageobject>
+        <imagedata srccredit="The Uploading Progress Dialog Preview" fileref="tool-flickrexport-uploading.png"/>
+      </imageobject
+></mediaobject>
+  </figure>
+  <para
+>U kunt op de knop <guilabel
+>Annuleren</guilabel
+> klikken om het uploaden van foto's te onderbreken. </para>
+
+<para
+>Tenslotte kunt u de geüploade foto's bekijken door de <ulink url="http://www.flickr.com"
+>Flickr</ulink
+> te bezoeken. </para>
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: ts
+End:
+-->

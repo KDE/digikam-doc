@@ -1,0 +1,211 @@
+<sect2 id="editor-cm-rawfile">
+    <title
+>Il profilo della fotocamera e lo sviluppo dei file RAW</title>
+
+    <sect3>
+        <title
+>Qual è il prossimo passo nella gestione dei colori? </title>
+
+        <para
+>Primo e per la cronaca, molti eccellenti fotografi professionali ed amatoriali salvano tutte le loro immagini come jpeg nella fotocamera, e lavorano esclusivamente nello spazio colore sRGB. Ma se vuoi lavorare in un spazio di colore più ampio, o con i file RAW (anche se elabori immagini sRGB dai tuoi file RAW), continua a leggere. </para>
+
+        <para
+>A giudicare dalle domande rivolte nel forum degli utenti di  &digikam;, se stai leggendo questa guida probabilmente stai scattando foto in formato RAW con la tua reflex digitale, e speri che da qualche parte nelle acque arcane della gestione del colore giaccia la risposta su come ottenere una bella fotografia dal tuo file d'immagine RAW. Hai fatto centro! La prossima cosa di cui hai bisogno è il giusto profilo della tua fotocamera per sviluppare le tue immagini RAW. Ma prima rispondiamo alla domanda che stavi realmente per chiedere. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Perché l'immagine prodotta da convertitori come dcraw o ufraw non assomiglia all'immagine dell'anteprima mostrata in digikam? </title>
+
+        <para
+>Sono felice che tu lo abbia chiesto. Che la fotocamera permetta o no all'utente l'opzione di salvare un'immagine come file RAW, tutte le immagini delle fotocamere digitali nascono come file grezzi: quando chiedi alla macchina fotografica di salvare in formato jpeg invece che RAW, la fotocamera usa il suo processore interno per convertire il file da RAW a jpeg. Quell'immagine di anteprima incorporata è quello a cui la tua immagine assomiglierebbe se tu avessi chiesto alla tua fotocamera di salvare in formato jpeg invece che in RAW. </para>
+
+        <para
+>Da qui parlerò della mia esperienza di utente Canon, ma suppongo che la maggior parte delle reflex digitali di livello economico o medio si comportino in modo simile. Canon offre all'utente diversi stili di fotografia (N.d.T: programmi preimpostati): neutrale, standard, ritratto, panorama, e così via, che determinano il tipo di elaborazione che sarà fatta all'immagine grezza per produrre l'immagine finale, che questa sia fatta oppure no direttamente nella macchina fotografica o più tardi, usando il programma proprietario Canon DPP di elaborazione delle immagini grezze. Questo offre all'utente un controllo superiore, ma manipola ancora il file RAW in accordo con lo stile di fotografia scelto in precedenza. La maggior parte degli stili Canon aggiunge una pesante curva S ed un'extra di saturazione del colore per dare alla foto un po' di «risalto». Anche se scegli lo stile «neutrale» (lo stile Canon che ti dà le tonalità meno modificate), e selezioni «meno contrasto», «meno saturazione», «nessuna riduzione del rumore» e «nessuna nitidezza», nella finestra di dialogo di sviluppo RAW di DPP troverai, sapendo dove guardare, che una curva S e anche una ombra di eliminazione del rumore sono stati applicati alla tua immagine. </para>
+
+        <para
+>Libraw (che &digikam; usa per convertire i file RAW nei file di immagine) non aggiunge una curva a S alla tonalità della tua immagine. Libraw ti fornisce le luci e le ombre che sono davvero registrate dal sensore della macchina fotografica. Secondo <ulink url="http://21stcenturyshoebox.com/essays/scenereferredworkflow.html"
+>Tindeman</ulink
+>, un'eccellente lettura e una risorsa di consigli giusti, con collegamenti ad altrettante buone fonti ed informazioni aggiuntive, dcraw è uno della manciata di sviluppatori RAW che ti dà veramente la tonalità riferita alla scena. Anche ufraw produce di base un'immagine attinente alla scena (sebbene ufraw dia all'utente l'opzione di modificare l'immagine riferita alla scena cambiando la distribuzione dei toni e la saturazione). E l'immagine riferita alla scena di ufraw/dcraw appare piatta, perché il sensore registra la luce in modo lineare, quando i nostri occhi grazie al cervello accomodano costantemente le aree scure e luminose di una scena. Ciò significa che il nostro cervello per un certo verso «applica una curva S» alla scena per renderci capaci di mettere a fuoco meglio le aree di particolare interesse come muoviamo il nostro sguardo. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>L'immagine jpeg incorporata sembra molto più carina dell'output di dcraw. Qual è il valore della tonalità riferita alla scena? </title>
+
+        <para
+>Quando scatti una foto, probabilmente hai un'idea di quello che vuoi come risultato finale. È molto più facile ottenerlo se non c'è bisogno di ripercorrere all'indietro le cose che già sono state fatte alla tua immagine. Una volta che Canon (o Nikon, o Bibble &etc;) ha applicato la propria curva S proprietaria e la rimozione del rumore nelle ombre, la nitidezza, &etc; alla tua immagine, le tue ombre le tue luci, i contorni &etc;. sono già spremute, tagliate, spezzettate e altrimenti alterate e digerite. Hai gettato via dell'informazione e non puoi riaverla. Specialmente nelle ombre, anche nelle immagini a 16bit (che poi sarebbero in realtà 12 o 14 bit, dipende dalla fotocamera, ma è codificato a 16bit solo per comodità del computer), non ci sono proprio tutte queste informazioni sin dall'inizio. </para>
+
+        <para
+>A me sembra che il cuore e l'anima dell'elaborazione delle immagini sia la manipolazione deliberata del tono, del colore, della nitidezza selettiva e così via, cosicché lo spettatore si concentra su quello che tu, il fotografo, hai trovato di particolare interesse al momento dello scatto. Perché lasciare l'arte dell'elaborazione dell'immagine a qualche software proprietario che processa i file RAW? In altre parole, «piatto è bene» se tu preferissi dare alle tue immagini il tuo personale tocco artistico. L'alternativa è quella di lasciare che l'algoritmo proprietario, inscatolato, prodotto da Canon, Nikon, Bibble, &etc; interpreti le tue immagini per te (d'altro canto, non si può negare che per molte immagini, quegli algoritmi preconfezionati sono veramente buoni!) </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Posso capire il valore di iniziare l'elaborazione dell'immagine con una interpretazione riferita alla scena invece che su di una che colpisca l'occhio come vedo nell'immagine jpeg incorporata. Ma ti sto dicendo che le immagini prodotte da digiKam/libraw sembrano davvero pessime! Perché? </title>
+
+        <para
+>Beh, dipende. Se l'immagine sembra davvero molto scura, allora tu chiedi a dcraw di emettere un file a 16bit e sei incappato nel problema che dcraw non applica una trasformazione gamma prima di emettere il file d'immagine. Puoi usare imagemagick per applicare una funzione gamma al file di immagine prodotto da dcraw. O puoi trovare o creare un profilo di fotocamera con una gamma di 1. Oppure puoi usare ufraw, che applica la funzione gamma per te. </para>
+
+        <para
+>Se la tua immagine mostra delle luci alte rosa, c'è una soluzione. Per una spiegazione del problema, insieme ad una cura da riga di comando per questo problema, vedi <ulink url="http://www.luminous-landscape.com/forum/index.php?topic=23430.0"
+>questo post nel forum «Luminous Landscape»</ulink
+>. </para>
+
+        <para
+>Se l'immagine non è scura ma sembra davvero bizzarra. probabilmente hai fatto qualche scelta avventata nell'interfaccia utente di Libraw. Essa ti permette di comporre in modo opportuno opzioni che altrimenti dovresti specificare da riga di comando. Ad ogni modo, la comodità ha sempre un prezzo. Primo, l'interfaccia potrebbe non fornire tutte le opzioni che sono disponibili da riga di comando. Secondo, per spremere il massimo dall'interfaccia di Libraw hai bisogno di sapere che cosa fanno davvero i pulsanti, i cursori, &etc;. Il ché significa che hai bisogno di sapere cosa accade nella riga di comando se vuoi i risultati migliori usando l'interfaccia. (Questa guida non copre l'uso dell'interfaccia utente di Libraw: digikam si sta sviluppando rapidamente, e qualsiasi cosa potrei scrivere sull'interfaccia di Libraw sarà sicuramente datata tra poco). </para>
+
+        <para
+>Per esempio, se la tua jpeg incorporata ha ombre molto carine, profonde e ricche ma l'immagine jpeg o tiff prodotta da Libraw mostra delle macchiette rosse disposte in percorsi nelle aree scure, allora probabilmente hai messo un segno di spunta nella opzione «Avanzate, Punto di nero» con il cursore impostato a 0. Togli la x dalla casella Punto di nero e riprova. Questa casella corrisponde nell'interfaccia di Libraw alla opzione -k quando si usa dcraw da linea di comando. L'opzione «-k» ti permette di annullare la stima migliore di dcraw rispetto a dove, nei toni scuri della tua immagine, inizia il segnale digitale per eliminare il rumore di fondo. Se non usi l'opzione «-k» nella linea di comando, allora dcraw calcola un valore appropriato per te, basato sulla sua stima del rumore di fondo. Per la mia Canon 400D/xti, il valore di rumore di fondo calcolato da dcraw è di solito attorno a 256 (l'opzione da linea di comando «-v» dirà a dcraw di comunicarti che cosa sta facendo quando processa il tuo file RAW). Se comunque usassi l'opzione «-K /percorso/foto_nera.pgm» per dire a dcraw di sottrarre una foto nera, allora dcraw riporterebbe il punto di nero a 0, ed ora non c'è più necessità di specificare un valore più alto per evitare le ombre più oscure nell'immagine, dove il rumore di solito sovrasta il segnale. (Una «foto nera» è uno scatto preso con il coperchio delle lenti al suo posto, con le stesse impostazione di esposizione come quando hai scattato la tua immagine da elaborare e idealmente subito dopo questa). L'opzione «-K» permette a dcraw di sottrarre il rumore di fondo dalla immagine. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Dove trovo delle buone informazioni sul rumore digitale? </title>
+
+        <para
+>Vedi i seguenti eccellenti articoli:</para>
+
+        <itemizedlist>
+
+            <listitem
+><para
+><ulink url="http://www.ronbigelow.com/articles/noise-1/noise-1.htm"
+></ulink
+></para
+></listitem>
+
+            <listitem
+><para
+><ulink url="http://www.cambridgeincolour.com/tutorials/noise.htm"
+></ulink
+></para
+></listitem>
+
+            <listitem
+><para
+><ulink url="http://www.clarkvision.com/imagedetail/digital.signal.to.noise/"
+></ulink
+></para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Perché i colori delle Canon e delle Nikon sono migliori di quelli prodotti da Libraw?</title>
+
+        <para
+>La resa del colore è uno dei campi dove il software di sviluppo dei file RAW di Canon (e presumibilmente anche di NIkon) fa davvero un buon lavoro. Perché? Perché il software proprietario di sviluppo dei file RAW è accoppiato con i profili della macchina fotografica che sono specifici dell'immagine grezza che proviene dal modello e marchio della fotocamera. Ho controllato in modo esteso, usando un «contagocce» (N.d.T.: programmi tipo Kcolorchooser) per comparare il risultato di vari sviluppatori di file RAW usando i profili della macchina fotografica di varie sorgenti. Un lavoro tedioso sebbene istruttivo. Con ufraw e dcraw (da linea di comando se non dalla interfaccia utente di digikam per dcraw), puoi applicare il profilo della Canon relativo a marca-modello-stile-di-foto al risultato di dcraw durante lo sviluppo del file RAW, e i colori non saranno mai esattamente gli stessi di quelli prodotti da Canon. In modo simile, i profili di Bibble funzionano decisamente bene con il software Bibble, ma a mio modo di vedere non funzionano altrettanto bene con Libraw come fanno con il software proprio di Bibble. E avanti così. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Perché un profilo di macchina fotografica è specifico per una data marca e modello? </title>
+
+        <para
+>Le macchine fotografiche digitali hanno una griglia di milioni di piccoli fotosensori all'interno, che compongono il chip CCD o CMOS. Questi piccoli pixel sensibili sono cechi al colore. Essi registrano solamente la quantità di luce che ricevono, non il colore. Così, per permettere ai pixel di registrare l'informazione relativa al colore, ogni pixel è avvolto da lenti trasparenti rosse o verdi o blu, solitamente alternati in quella che è chiamata griglia Bayer (eccetto i sensori Foveon, che lavorano differentemente). Un'immagine grezza non è null'altro che una griglia di valori che indicano «quanta luce» è passata attraverso il filtro colorato che avvolge ogni sensore. </para>
+
+        <para
+>Chiaramente la risposta dei pixel alla luce è il risultato di diversi fattori specifici della fotocamera. Questi includono: la natura della griglia del sensore stesso, le precise qualità di colorazione/trasmissione dei cappucci delle lenti dei pixel, e la particolare conversione analogico-digitale e la successiva elaborazione che avviene dentro la fotocamera per produrre l'immagine grezza che viene memorizzata nella memoria removibile. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Che cosa significa «conversione analogico-digitale»?</title>
+
+        <para
+>«Analogico» significa che varia in modo continuo, come quanta acqua puoi mettere in un bicchiere. «Digitalizzare » un segnale digitale significa che i valori che cambiano in modo continuo della sorgente analogica sono arrotondati a quantità discrete e comode per la numerazione binaria usata dai computer. La conversione analogico-digitale (A-D) che avviene dentro la macchina fotografica è necessaria perché i pixel fotosensibili sono di natura analogica. Essi acquistano una carica elettrica proporzionale alla quantità di luce ricevuta. La carica accumulata su ogni pixel viene convertita in una quantità discreta e digitale dal convertitore analogico-digitale della macchina fotografica, il che spiega perché un convertitore a 14 bit è meglio di uno a 12bit: più precisione nella conversione significa meno informazione scartata nel processo di conversione. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Perché viene usato un profilo di fotocamera specifico dal programma di elaborazione RAW per lo sviluppo dei file RAW? </title>
+
+        <para
+>L'intero problema dell'interpolazione che usa algoritmi di demosaicizzazione, come per AHD, che è l'algoritmo di base usato da dcraw, è indovinare quale colore e che intensità luminosa è davvero caduta su ciascun pixel, interpolando le informazioni raccolte da ogni singolo pixel più i suoi vicini (vedi <ulink url="https://it.wikipedia.org/wiki/Demosaicizzazione"
+>la voce di Wikipedia</ulink
+>). Ogni programma di elaborazione RAW fa delle assunzioni come «quando è segnale e quando è rumore?», «a che punto il sensore ha raggiunto la piena saturazione?», e via di seguito. Il prodotto risultante di tutti questi algoritmi e assunzioni che il programma di elaborazione fa è un trio di valori RGB per ogni pixel nell'immagine. Dato lo stesso file RAW, programmi diversi di elaborazione RAW forniranno diversi valori RGB. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Dove trovo un profilo generico per la mia fotocamera?</title>
+
+        <para
+>La <ulink url="http://ufraw.sourceforge.net/Colors.html"
+>sezione </ulink
+> del sito di ufraw sulla gestione del colore contiene informazione su dove trovare profili di fotocamera pronti. Se ti facessi un giro nell'archivio del forum degli utenti di &digikam; troveresti consigli ulteriori. Se continuassi a cercare ed a sperimentare, probabilmente troveresti un profilo generico che funziona «abbastanza bene». Ad ogni modo, come detto prima, è una sfortuna del mondo dell'immagine digitale che i profili delle fotocamere forniti da Canon, Nikon e simili, non funzionino così bene con i convertitori RAW diversi da quello specifico proprietario realizzato da ogni produttore di macchine fotografiche. Questa è la ragione per cui Bibble e Phase One, per esempio, devono fare i propri profili per tutte le macchine che supportano. Così eventualmente potresti decidere di volere un profilo di macchina fotografica specifico per il tuo apparecchio, per le condizioni luminose e per il tuo modo di elaborare i file RAW. </para>
+
+        <para>
+            <screenshot>
+                <screeninfo
+></screeninfo>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="&path;editor-cm-iccworkflowlogic.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                    <phrase
+></phrase>
+                    </textobject>
+                </mediaobject>
+            </screenshot>
+        </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Come mi procuro un profilo specifico per la mia macchina fotografica, per le condizioni luminose e per l'elaborazione RAW? </title>
+
+        <para
+>Molti servizi commerciali forniscono un servizio di creazione di profili, a pagamento ovviamente. Oppure puoi usare LPRof per farti il profilo della tua macchina fotografica da solo. Se vuoi procedere così avrai bisogno di un «IT8 target» per la calibrazione, che è un'immagine che contiene quadrati di colori conosciuti. Assieme con il target IT8 riceverai l'insieme appropriato di valori conosciuti per ogni riquadro di colore stampato sul target. </para>
+
+        <para
+>Se hai in mente di usare LProf per profilare la tua macchina fotografica, controlla la documentazione per una lista di target raccomandati. Per fare il profilo della tua fotocamera fotografi il target IT8, seguendo specifiche condizioni di illuminazione (per esempio, con la luce solare, a meta mattina in un giorno assolato d'estate, con nulla accanto che possa gettare la sua ombra o riflettere i colori) e salva l'immagine come file RAW. Quindi passa ad elaborare il file RAW usando uno specifico software di elaborazione con le impostazioni che usi di solito e fai passare l'immagine risultante attraverso il programma per profilare. Il software compara i valori RGB nell'immagine prodotti dalla tua macchina, dalle condizioni luminose usate e dal tuo procedimento di routine d'elaborazione RAW con i valori RGB del target originale, e quindi produce il profilo (ICC) della tua fotocamera. </para>
+
+        <para
+>Fare il profilo di una fotocamera è analogo a profilare un monitor. Quando si fa il profilo al monitor, il software dice alla scheda grafica di inviare allo schermo rettangoli di colore con uno specifico valore RGB e lo spettrofotometro misura il colore vero che viene prodotto sullo schermo. Quando si profila una fotocamera, i colori noti sono i colori RGB nelle pezze originali sul target IT8, che il software di profiling compara con quello prodotto dall'immagine digitale del target, che è stato fotografato nelle condizioni di luce selezionate, salvato come file RAW ed elaborato con un specifico software con le proprie impostazioni. </para>
+
+        <para
+><ulink url="http://lprof.sourceforge.net/help/ufraw.html"
+>Qui</ulink
+> c'è un collegamento su come fare per usare LProf v1.11 e ufraw (e, per analogia, con ogni altro programma per file RAW) per produrre un profilo della fotocamera: http://lprof.sourceforge.net/help/ufraw.html. Debian Lenny fornisce LProf 1.11.4 nei depositi APT. Versioni più recenti possono essere compilate da CVS. E qui c'è un link ad un <ulink url="http://www.targets.coloraid.de/"
+>target IT8</ulink
+> economico e di buona reputazione. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Come applico il profilo della macchina fotografica all'immagine a 16 bit prodotta dal mio software open source per l'elaborazione RAW? </title>
+
+        <para
+>Se stai usando l'interfaccia di Libraw, <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>qui</ulink
+> è dove dire a &digikam; che profilo usare. Se stai usando dcraw da riga di comando devi scegliere se produrre immagini a 16bit con o senza il profilo della fotocamera già applicato. Se dici a dcraw di produrre un file senza applicare il profilo, potrai usare l'utility tifficc di LCMS (anche da linea di comando) per applicare il profilo. Il vantaggio di usare tifficc è che puoi dire a LCMS di usare una conversione ad alta qualità (sembra che dcraw usi LCMS al valore predefinito medio). Lo svantaggio, ovviamente, è che applicare il profilo della tua fotocamera da riga di comando aggiunge un passo in più al tuo metodo di editare i file grezzi. Se usi ufraw, leggi il manuale utente. </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

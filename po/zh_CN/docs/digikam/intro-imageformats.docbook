@@ -1,0 +1,286 @@
+<sect1 id="using-imageformats"
+> <title
+>支持的图片格式</title>
+
+    <sect2
+> <title
+>介绍</title>
+
+	<para
+>&digikam; 依赖于一些库和支持包来加载和保存图像格式。 哪种图像格式可用将取决于这些库在您的系统中的可用性。 在较新版的 &digikam; 支持范围广泛的图像格式。 </para>
+
+	<para
+>这种对系统图片识别库的依赖意味着不可能支持所有图片格式。 但JPEG、PNG和TIFF是默认支持的。 </para>
+
+	<para
+>&digikam; 只显示它能理解的格式的文件。 它通过查看文件扩展名并对照预定义的列表来做到这一点。 如果文件扩展名在邮件列表 &digikam; 中显示图像视图中的文件，只要安装了相应的库。 您可以更改 &digikam; 将接受的文件扩展名的列表，详情请查看 <link linkend="using-setup"
+>配置</link
+> 部分。 </para>
+
+        <para
+>几乎所有数码照相机都以两种格式之一储存照片：JPEG或TIFF。 许多摄像头允许您选择使用哪种格式。 在 <ulink url="https://en.wikipedia.org/wiki/Image_file_formats"
+>维基百科</ulink
+>上可以找到这些格式的完整描述。 &digikam; 支持这两种格式。 </para>
+
+    </sect2>
+
+    <sect2
+> <title
+>压缩图像</title>
+
+        <para
+>图像压缩是在数字图像上应用的数据压缩计划。 这样做的方法是减少图像数据的冗余，以便能够以有效的形式储存或传送数据。 </para>
+
+        <para
+>图像压缩可能是损耗或丢失。 在进行裁剪等转换之前，总是倾向于使用无损的压缩方法，以达到存档所需的高保存价值， 调整大小，色彩校正， &etc; 这是因为有损压缩方法，尤其是低比特率使用时，会引入压缩工艺。 丢失方法适合于自然图像，如应用中的照片，因为为了大幅度缩减文件大小，这些应用程序允许轻微（有时不可察觉）损失质量。 对互联网上的图像发布而言，压缩后的图像查看更快速。 </para>
+
+    </sect2>
+
+    <sect2
+> <title
+>JPEG</title>
+        
+        <para
+>JPEG 是一个压缩格式，它损失一些图像质量以保持小体积。 事实上，大多数码相机都以这种格式保存它们的图像。 使用 losy 压缩存储JPEG 图像，您可以更改压缩数量。 这可以让您选择较低的压缩比例保持较高的质量或较高的压缩比例和较低的质量。 选择较高压缩的唯一原因是因为它创建了较小的文件以便您可以存储更多图像， 并且更容易通过电子邮件发送或在网络上张贴。 大多数码相机会为您提供标准、高质量、超高质量的选择。 </para>
+            
+        <para
+>&digiKam; 也支持JPEG 2000。JPEG 2000与JPEG 的压缩结果相似。 如果设置中选择JPEG 2000图像质量会损失更少些。 </para>
+
+    </sect2>
+
+    <sect2
+> <title
+>TIFF</title>
+
+        <para
+>TIFF 已被广泛接受并作为一种图像格式得到广泛支持。 通常，TIFF 可以由相机以未压缩形式储存，或使用无损的压缩算法（Deflate）。 它保持了较高的图像质量，但是更大的文件体积。 一些 数码相机以这种格式保存您的图像，它是一个受欢迎的格式，因为它没有损耗的压缩算法。 但越来越多是人不再使用这种格式，而且并非所有程序都可识别TIFF。 </para>
+
+    </sect2>
+
+    <sect2
+> <title
+>PNG</title>
+
+        <para
+>PNG 是一种图像格式，它是在1990年代广泛使用的图像文件格式中用来替代若干较老的图像格式。 它是像TIFF这样一种没有损耗的格式，但它更紧凑，更节省了磁盘空间。 尽管几乎没有数码相机支持PNG, 很多人从相机取出照片后，就立即将照片转换成PNG。 与 JPEG不同的是，PNG 图像在修改后每次重新编码时都不会失去质量。 &digikam; 完全支持 PNG 图像，批处理队列管理器可以将任何支持的格式的图像一键转换为 PNG (或其他格式)。 </para>
+
+        <para
+>PNG 是一个可扩展的文件格式，无损、可移植、压缩良好的栅格图像存储。 PNG 是 &GIF; 的无专利替代品，也可以取代TIFF 的许多常用用途。 PNG的设计目的是在万维网等网上浏览应用软件方面发挥良好作用。 这样它完全可以通过渐进显示选项。 另外，PNG 可以存储伽玛和色谱数据，以便在不同的平台上改进色彩匹配。PNG 支持8和16位比特/颜色/像素深度。 这是归类您照片的完美的文件格式。关于PNG格式的更多信息，请参阅 <ulink url="http://www.libpng.org/pub/png/"
+>PNG 主页</ulink
+> </para>
+
+    </sect2>
+
+    <sect2
+> <title
+>PGF</title>
+
+        <para
+>“渐进图形文件”是另一个不那么为人所知的开放图像格式。基于波形，它允许无损和无损的数据压缩。 PGF 与JPEG 2000 相比，但它是为了显示速度(压缩/读取)而开发的，而不是最佳的压缩率。 读取相同大小的文件，PGF 比JPEG 看起来要好，但仍然非常适合渐进式显示。 因此，它应该非常适合网络，但目前很少有浏览器能够显示它。 关于 PGF 格式的更多信息见 <ulink url="http://www.libpgf.org/"
+>libPGF 主页</ulink
+>。 </para
+> 
+
+    </sect2>
+
+    <sect2
+> <title
+>RAW</title>
+
+        <para
+>有些昂贵的相机允许您以RAW格式存储图像。 RAW 格式实际上根本不是一个图像标准，而是每个相机都有不同。 RAW 格式图像包含所有直接从相机图像传感器获取的数据，然后在相机中的软件应用白平衡等东西。 锐化 &etc; 以摄像头的 RAW 格式存储照片，使您可以更改设置， 例如拍摄照片后的白平衡等。 大多数专业摄影师使用RAW格式，因为它为他们提供了最大的灵活性。RAW图像文件可能确实非常大。 </para>
+
+        <para
+>如果您想了解更多关于 RAW 图像格式的信息，请访问<ulink url="https://en.wikipedia.org/wiki/Raw_image_format"
+> 维基百科，</ulink
+> <ulink url="http://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml"
+> The Luminous Landscape，</ulink
+> 和 <ulink url="http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm"
+> 剑桥</ulink
+>。 您可以使用&digikam; 中 的<link linkend="raw-workflow"
+>图像编辑器</link
+> 将RAW 格式图像转换为 JPEG、PNG 或 TIFF 。 </para>
+
+        <para
+>&digikam;支持RAW格式的导入，依赖<ulink url="https://www.libraw.org"
+>Libraw library</ulink
+>的支持，此功能已嵌入&digikam;。&digikam;支持超800款相机的RAW，点击<ulink url="http://www.cybercom.net/~dcoffin/dcraw"
+>Dave Coffin's</ulink
+>查询您相机的RAW是否被支持。下面是部分常见格式： <informaltable
+><tgroup cols="2">
+
+                <thead
+><row>
+                <entry
+>RAW 文件格式</entry>
+                <entry
+>说明</entry>
+                </row
+></thead>
+                <tbody>
+                    <row
+><entry
+>CRW, CR2 </entry
+><entry
+>Canon 数码相机 RAW 文件格式 </entry
+></row>
+
+                    <!-- ************************ -->
+                    <row
+><entry
+>NEF </entry
+><entry
+>Nikon 数码相机 RAW 文件格式 </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>ORF </entry
+><entry
+>Olympus 数码相机 RAW 文件格式 </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>RAF </entry
+><entry
+>Fuji 数码相机 RAW 文件格式 </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>RWL </entry
+><entry
+>Leica 相机 RAW 文件格式 </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>PEF, PTX </entry
+><entry
+>Pentaxe 数码相机 RAW 文件格式 </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>X3F </entry
+><entry
+>Sigma 数码相机 RAW 文件格式 </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>DCR, KDC, DC2, K25 </entry
+><entry
+>Kodak 数码相机 RAW 文件格式 </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>SRF, ARW, MRW, MDC </entry
+><entry
+>Sony/Minolta 数码相机 RAW 文件格式 </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>RAW </entry
+><entry
+>Panasonic, Casio, Leica 数码相机 RAW 文件格式 </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>DNG (CS1, HDR) </entry
+><entry
+>Adobe RAW 文件格式 (Digital Negative) </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>BAY </entry
+><entry
+>Casio RAW (Bayer) </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>ERF </entry
+><entry
+>Epson 数码相机 RAW 文件格式 </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>FFF </entry
+><entry
+>Imacon/Hasselblad RAW 格式 </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>MOS </entry
+><entry
+>CREO 照片 RAW </entry
+></row>
+
+                    <!-- ************************ -->
+                    <row
+><entry
+>PXN </entry
+><entry
+>Fotoman RAW </entry
+></row>
+
+                    <!-- ************************ -->
+                    <row
+><entry
+>RDC </entry
+><entry
+>Ricoh的 RAW 格式 </entry
+></row>
+
+                </tbody>
+
+            </tgroup
+></informaltable>
+
+        </para>
+
+    </sect2>
+
+</sect1>
+ 
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

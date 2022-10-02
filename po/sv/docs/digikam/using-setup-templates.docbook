@@ -1,0 +1,235 @@
+<sect2 id="using-setup-templates">
+    <title
+>Mallinställningar</title>
+
+    <para
+>Hantering av metadatamallar är avsett att skapa och hantera metadatamallar som kan användas med <itemizedlist>
+            <listitem
+><para
+>fliken <guilabel
+>Information</guilabel
+> i vyn <guilabel
+>Rubriker</guilabel
+> i höger sidorad </para
+></listitem>
+
+            <listitem
+><para
+>sektionen <guilabel
+>Åtgärder i farten (bara JPEG)</guilabel
+> i vyn <guilabel
+>Inställningar</guilabel
+> i höger sidorad i fönstret <menuchoice
+><guimenu
+>Importera</guimenu
+> <guimenuitem
+>Kameror</guimenuitem
+> <guimenuitem
+>En kamera</guimenuitem
+> </menuchoice
+>. </para
+></listitem>
+        </itemizedlist>
+    </para>
+
+    <para
+></para>
+
+    <para>
+        <mediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-template-rights.png" format="PNG"/>
+        </imageobject
+></mediaobject>
+    </para>
+
+    <para
+>Den övre delen visar en lista över befintliga mallar. Den första raden visar mallens rubrik, den andra visar upphovsmän i själva mallens fält <quote
+>Upphovsmännens namn</quote
+>. Till höger finns tre redigeringsknappar, nedanför ett inmatningsfält för mallens rubrik. För att skapa en ny mall, skriver du in rubriken i inmatningsfältet och klickar på knappen <guilabel
+>Lägg till...</guilabel
+>. Den nya mallen visas då i listan. För att redigera en befintlig mall, markerar du den i listan och redigerar fälten (se nästa stycke) och klickar till sist på knappen <guilabel
+>Ersätt...</guilabel
+>. Du kan också skriva in en ny rubrik för den redigerade mallen och spara den nya versionen med knappen <guilabel
+>Lägg till...</guilabel
+>. För att ta bort en mall markerar du den uppenbarligen i listan och klickar på knappen <guilabel
+>Ta bort</guilabel
+>. </para>
+
+    <warning
+><para
+>Observera att ändringarna som görs i mallarna lagras bara i mallfilen om inställningsdialogrutan avslutas med <guilabel
+>Ok</guilabel
+>. Knapparna <guilabel
+>Lägg till...</guilabel
+> och <guilabel
+>Ersätt...</guilabel
+> ändrar bara mallistan i minnet. </para
+></warning>
+
+    <tip
+><para
+>Mallfilen finns i ~/.local/share/digikam/ för manuell säkerhetskopiering eller för att hantera olika malluppsättningar via filsystemet. </para
+></tip>
+
+    <para
+>Resten av fönstret är uppdelad i fyra flikar, som grupperar metadatafälten i <guilabel
+>Rättigheter</guilabel
+>, <guilabel
+>Plats</guilabel
+>, <guilabel
+>Kontakt</guilabel
+> och <guilabel
+>Motiv</guilabel
+>. </para>
+
+    <para
+>Fliken <guilabel
+>Rättigheter</guilabel
+> (se ovan) innehåller standardidentitet och upphovsrättsdata. Här är ett utdrag ur IPTC-specifikationen för fälten: </para>
+
+    <itemizedlist>
+
+        <listitem
+><para
+><emphasis
+>Upphovsman</emphasis
+> (synonym till <emphasis
+>Skapare</emphasis
+> och <emphasis
+>Byline</emphasis
+>): Fältet ska innehålla ditt namn, eller namnet på personen som skapade fotografiet. Om det inte är lämpligt att ange fotografens namn (till exempel om fotografens identitet måste skyddas), kan också namnet på ett företag eller en organisation användas. När det väl har sparats, ska inte fältet ändras av någon. Fältet stöder inte användning av kommatecken eller semikolon som avskiljare. </para
+></listitem>
+
+        <listitem
+><para
+><emphasis
+>Upphovsmannens titel</emphasis
+> (synonym till <emphasis
+>Bylinetitel</emphasis
+>): Fältet ska innehålla fotografens yrkestitel. Exempel kan vara titlar som Redaktionsfotograf, Frilansfotograf eller Oberoende kommersiell fotograf. Eftersom det är en inledning till fältet Upphovsman, måste fältet Upphovsman också fyllas i. </para
+></listitem>
+
+        <listitem
+><para
+><emphasis
+>Erkännande</emphasis
+> (synonym till Försörjare): Använd fältet Erkännande för att identifiera vem som tillhandahåller fotografiet. Det behöver inte nödvändigtvis vara upphovsmannen. Om en fotograf arbetar åt en nyhetsbyrå som Reuters eller Associated Press, kan organisationen anges här, eftersom den &quot;försörjer&quot; andra med bilden. Om bilden är lagervara, ska gruppen (byrån) som är delaktig i att tillhandahålla bilden anges här. </para
+></listitem>
+
+        <listitem
+><para
+><emphasis
+>Källa</emphasis
+>: Källfältet ska användas för att identifiera fotografiets ursprungliga ägare eller upphovsrättsinnehavare. Fältets värde ska aldrig ändras när informationen har skrivits in efter att bilden har skapats. Även om det ännu inte upprätthålls av de egna rutorna, bör du betrakta det som ett fält som är &quot;skrivbart en gång&quot;. Källan kan vara en enskild person, en byrå, eller en anställd på en byrå. För att förenkla senare sökning, föreslås att alla snedstreck &quot;/&quot; omges av blanktecken. Använd formen &quot;fotograf / byrå&quot; istället för &quot;fotograf/byrå&quot;. Källan kan också skilja sig från skaparen och från de namn som anges under copyright. </para
+></listitem>
+
+        <listitem
+><para
+><emphasis
+>Copyright</emphasis
+>: Fältet Copyright ska innehålla all nödvändig information för att hävda upphovsrättsligt ägande, och ska identifiera den nuvarande innehavaren eller innehavarna av fotografiets copyright. Oftast är det fotografen, men om bilden togs av en anställd eller på uppdrag, ska byrån eller företaget anges. Använd formen som är tillämplig i ditt land. I Förenta staterna: &copy; (datum för första publicering) innehavarens namn. Exempelvis &quot;&copy;2005 N.N.&copy; Observera att ordet &quot;Copyright&quot; eller förkortningen &quot;Copr&quot; kan användas istället för symbolen &copy;. I vissa länder erkänns bara symbolen, och förkortningen fungerar inte. Dessutom måste symbolen vara en hel cirkel med ett &quot;c&copy; inuti: att använda något som (c) där parenteserna formar en ofullständig cirkel är inte tillräckligt. För ytterligare skydd över hela världen, rekommenderas att &quot;all rights reserved&quot; läggs till efter ovanstående information. I Europa använder man: Copyright {År} {Upphovsrättsinnehavare}, all rights reserved. I Japan ska följande tre delar ingå i IPTC-kärnans Copyright-fält för att erhålla maximalt skydd: (a) ordet Copyright, (b) år för första publicering, (c) upphovsmannens namn. Om du så önskar, kan du lägga till &quot;all rights reserved&quot;. </para
+></listitem>
+
+    </itemizedlist>
+
+    <para
+></para>
+
+    <para>
+        <mediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-template-location.png" format="PNG"/>
+        </imageobject
+></mediaobject>
+    </para>
+
+    <para
+>Fälten under fliken <guilabel
+>Plats</guilabel
+> är självförklarande av  beteckningarna och de gråa tipsen i de tomma fälten. En något utförligare beskrivning finns i <menuchoice
+> <guimenu
+>Inställningar</guimenu
+> <guimenuitem
+>Anpassa &digikam;...</guimenuitem
+> <guimenuitem
+>Metadata</guimenuitem
+> <guimenuitem
+>Vyer</guimenuitem
+> <guimenuitem
+>IPTC-visning</guimenuitem
+> </menuchoice
+>. </para>
+
+    <para
+></para>
+
+    <para>
+        <mediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-template-contact.png" format="PNG"/>
+        </imageobject
+></mediaobject>
+    </para>
+
+    <para
+>Data under fliken <guilabel
+>Kontakt</guilabel
+> hänvisar till (huvud-) fotografen i <quote
+>Upphovsmännens namn</quote
+> under fliken <guilabel
+>Rättigheter</guilabel
+>. </para>
+
+    <para
+></para>
+
+    <para>
+        <mediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-template-subjects.png" format="PNG"/>
+        </imageobject
+></mediaobject>
+    </para>
+
+    <para
+>Under fliken <guilabel
+>Motiv</guilabel
+> kan du tilldela en eller flera motivkoder till mallen enligt IPTC-standarden för fotometadata. Om det första alternativet <quote
+>Använd standardreferenskod</quote
+> väljes kan du välja en kod i kombinationsfältet så dyker dess betydelse upp i fälten under sektionen <quote
+>Använd egen definition</quote
+>. Om du inte känner till koden för motivet du vill tilldela på detta sätt, är det ganska tröttande, eftersom det finns 1400 motiv i standarden. Ett bättre sätt är att leta efter motivet via <ulink url="http://show.newscodes.org/index.html"
+>den här webbadressen</ulink
+>. Där väljer du <quote
+>Subject Codes</quote
+> och språk (engelska rekommenderas) och klickar på <quote
+>Show</quote
+>. Du kan panorera i diagrammet och göra ytterligare objektnivåer synliga genom att klicka på ett av fälten. I fältet till höger om diagrammet finns koden för det valda motivet. </para>
+
+    <para
+>I allmänhet är motivkoderna för IPTC ganska omfattande, men å andra sidan något ofullständiga på vissa områden, t.ex. hittar man bara Go, chess, bridge och shogi under Lifestyle and Leisure/Games. Därför kanske du behöver lägga till egna motiv, även om de alltid förblir privata (eller företagsspecifika) motiv. Ett sätt att göra det i &digikam; är att först markera <quote
+>Använd standardreferenskod</quote
+> och välja 10001004, vilket går till Lifestyle and Leisure/Games/shogi, för att fortsätta med vårt exempel. Markera därefter <quote
+>Använd egen definition</quote
+> och ändra den sista siffran i <quote
+>Referens:</quote
+> till 5 och texten i fältet <quote
+>Detaljer:</quote
+> så att den lyder <quote
+>Domino</quote
+>. Den egna definitionen kan nu sparas i mallen genom att klicka på <guilabel
+>Lägg till...</guilabel
+> på höger sida om motivlistan. Därefter kan du skriva in en mallrubrik (om det är en ny mall) och spara mallen genom att klicka på <guilabel
+>Lägg till...</guilabel
+> på höger sida om mallistan. Blanda inte ihop dessa två! </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

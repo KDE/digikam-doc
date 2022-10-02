@@ -1,0 +1,204 @@
+<sect3 id="editor-color-curves">
+    <sect3info>
+
+    <title
+>Regola curve</title>
+
+    <abstract>
+    <para
+>Lo strumento <emphasis
+>Regola curve</emphasis
+> di &digikam; serve per regolare non linearmente la gradazione della luminosità ed i canali dei colori. </para>
+    </abstract>
+
+    </sect3info>
+
+    <title
+>Introduzione</title>
+
+    <para
+>Regola curve è il più sofisticato strumento disponibile per regolare la tonalità delle immagini. Avvialo dal menu dell'Editor di immagini <menuchoice
+> <guimenu
+>Colore</guimenu
+><guimenuitem
+>Regola curve...</guimenuitem
+></menuchoice
+>: ti permetterà di trascinare dei punti di controllo su di una curva per creare una funzione libera che associ i livelli di luminosità in ingresso ad altri in uscita. Lo strumento Regola curve può replicare qualsiasi effetto che puoi ottenere sia con Luminosità/contrasto/gamma che con lo strumento Regola livelli, tuttavia è più potente di entrambi. Ma questo strumento può fare anche altro per te: aiutarti a migliorare la qualità dei toni delle tue foto in scale di grigio molto fini. E non dimenticarti che, tanto migliori sono le foto (buona esposizione, formato senza perdita, profondità a 24 o 32 bit), tanto più le puoi migliorare. Vai alla sezione <quote
+><foreignphrase lang="en"
+>Achieving ultimate tonal quality</foreignphrase
+></quote
+> di questa pagina istruttiva: <ulink url="http://www.normankoren.com/digital_tonality.html"
+>Qualità di tono e intervallo dinamico nelle macchine fotografiche digitali, di Norman Koren</ulink
+>. Usa lo strumento Regola curve di per fare esattamente lo stesso! </para>
+    <para
+>Questo strumento fornisce delle curve visive per modificare i valori di intensità dello strato attivo visualizzato come un istogramma non lineare. Nella <guilabel
+>Modalità a curva liscia</guilabel
+> modifichi la forma della curva aggiungendo dei nuovi punti alle curve, oppure spostando la posizione degli estremi. Un'altra modalità è quella di disegnare tutta la curva manualmente, nella <guilabel
+>Modalità a curva libera</guilabel
+>. In entrambi i casi l'effetto è immediatamente visualizzato nell'area di anteprima dell'immagine a sinistra, nella quale l'anteprima può essere configurata facendo clic sulle icone in alto a sinistra. </para>
+
+        <sect4 id="using-adjustcurves">
+        <title
+>Usare Regola curve</title>
+
+        <para
+><inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;editor-curvesadjust.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>La finestra dello strumento Regola curve</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+        <para
+>A sinistra vengono visualizzate metà dell'immagine originale e l'anteprima della risultante; quest'ultima viene aggiornata dinamicamente in base alle impostazioni dell'oggetto. Nella parte destra sono disponibili le seguenti opzioni: <itemizedlist>
+
+        <listitem
+><para
+>Modifica il <guilabel
+>Canale</guilabel
+>: con questa casella combinata puoi selezionare il canale specifico che sarà modificato dallo strumento: <itemizedlist>
+                <listitem
+><para
+><guilabel
+>Luminosità</guilabel
+>: cambia l'intensità di tutti i pixel.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Rosso</guilabel
+>: cambia la saturazione del rosso di tutti i pixel.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Verde</guilabel
+>: cambia la saturazione del verde di tutti i pixel.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Blu</guilabel
+>: cambia la saturazione del blu di tutti i pixel.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Alfa</guilabel
+>: cambia la trasparenza di tutti i pixel.</para
+></listitem>
+            </itemizedlist>
+
+        </para
+></listitem>
+
+        <listitem
+><para
+>Di fianco a questo riquadro ci sono due icone per selezionare la visualizzazione dell'istogramma, che può essere in scala lineare o logaritmica. Per le immagini scattate con una macchina fotografica digitale la modalità lineare è normalmente quella più utile. Tuttavia, nelle immagini che contengono aree estese di colore costante, un istogramma lineare sarà spesso dominato da una sola barra; in questo caso sarà quindi più utile uno logaritmico. </para
+></listitem>
+
+        <listitem
+><para
+>Area principale di modifica delle curve: la barra orizzontale (asse X) rappresenta i valori di input (sono i livelli di valore da 0 a 255). La barra verticale (asse Y) è solo una scala per i colori di output del canale selezionato. La curva di controllo viene disegnata su una griglia, e taglia diagonalmente il diagramma. La posizione X/Y del puntatore viene visualizzata costantemente sopra la griglia. Se fai clic sulla curva viene creato un punto di controllo: puoi spostarlo per piegare la curva. Un clic al di fuori della curva crea allo stesso modo un punto di controllo, che viene automaticamente incluso dalla curva. Perciò ogni punto della curva rappresenta un «X», tradotto in un livello di output «Y». </para
+></listitem>
+
+        <listitem
+><para
+><guilabel
+>Tipo</guilabel
+> della curva del canale: sotto l'area di modifica ci sono diverse icone, che determinano se la curva può essere modificata usando una <guilabel
+>Modalità a curva liscia</guilabel
+> oppure una a <guilabel
+>Modalità a curva libera</guilabel
+>. La modalità liscia impone che il tipo della curva sia una linea liscia in tensione, e dà una resa realistica. La modalità libera ti lascia disegnare la tua curva a mano libera con il mouse: con dei segmenti di curva sparsi sulla griglia il risultato sarà sorprendente, ma poco ripetibile. È disponibile anche un pulsante di reimpostazione ai valori predefiniti. </para
+></listitem>
+
+        <listitem
+><para
+>Se per esempio, sposti un segmento di curva a destra, cioè verso i toni in risalto, vedrai che questi corrispondono a toni di output più scuri, e che i pixel dell'immagine che corrispondono a questo segmento di curva si scuriranno. </para
+></listitem>
+
+        <listitem
+><para
+>Con i canali dei colori, spostando a destra ridurrai la saturazione fino al raggiungimento del colore complementare. Per eliminare tutti i punti di controllo (eccetto gli estremi), fai clic sul pulsante <guilabel
+>Azzera</guilabel
+>, mentre per eliminare un solo un punto, spostalo su di un altro. Gioca con le curve e giudica i risultati. Puoi anche solarizzare l'immagine su parte dei suoi toni. Ciò avviene quando la curva è invertita in qualche parte. </para
+></listitem>
+
+        <listitem
+><para
+>Sull'anteprima della foto originale c'è un segno rosso. Se lo metti sopra ad una zona che vuoi modificare verrà disegnata una linea corrispondente sulla griglia delle curve per indicare il valore originale. Crea un punto su quella linea, e spostalo in alto o in basso a tuo piacimento. </para
+></listitem>
+
+        <listitem
+><para
+><guilabel
+>Salva come...</guilabel
+> e <guilabel
+>Carica...</guilabel
+>: questi pulsanti servono a fare quello che dicono. Qualsiasi curva che tu abbia impostato può essere salvata su file e caricata più tardi. Il formato di file usato è quello dei livelli di Gimp. </para
+></listitem>
+
+        <listitem
+><para
+><guilabel
+>Azzera</guilabel
+>: questo pulsante reimposta tutti i valori delle curve per tutti i canali. </para
+></listitem>
+
+        </itemizedlist>
+
+        </para>
+
+        <para
+>Lo strumento delle curve ha diverse funzionalità che facilitano il posizionamento dei punti sulle curve di controllo. Fare clic col pulsante del mouse nell'anteprima dell'immagine originale produce una barra tratteggiata verticale nell'area del grafico dello strumento delle curve. La posizione della barra corrisponde al valore del pixel sul quale si trova il mouse. Fare clic col pulsante del mouse e trascinare aggiorna interattivamente la posizione della barra verticale. In questo modo è possibile vedere dove sono posizionati i valori di diversi pixel sulla curva di controllo; ciò aiuta a scoprire la posizione dei pixel in ombra, di quelli con tono medio e di quelli in risalto. </para>
+
+        <para
+>Usando questo metodo ed i tre pulsanti del <guilabel
+>Selettore del colore del tono</guilabel
+> verranno creati automaticamente dei punti di controllo sulle curve di tutti i canali per i toni in ombra, per i medi e per quelli in risalto. Attiva il selettore del colore che vuoi usare e fai clic sull'area dell'anteprima dell'immagine originale per produrre i punti di controllo su ciascuna delle curve di controllo del rosso, del verde, del blu e della luminosità. </para>
+        <!-- TODO: digiKam 5.6.0 - this option does not exist (new screenshot)
+        <para>
+        <guilabel
+>Over Exposure Indicator</guilabel
+> option adds up all color channels and indicates the blown-out highlights. If more than one channel in a pixel is over-exposed you will see the combined color resulting from the curve settings. The display is an indicator only and has no effect on the final rendering.
+        </para
+> -->
+
+        </sect4>
+
+        <sect4 id="inaction-adjustcurves">
+        <title
+>Regola curve in azione</title>
+
+        <para
+>Sotto puoi vedere una fotografia in bianco e nero corretta nel canale della <guilabel
+>Luminosità</guilabel
+>. Sono stati usati gli strumenti di selezione dei toni in ombra e in risalto per determinare le curve da applicare all'originale. L'immagine originale è la (1), quella corretta è la (2). </para>
+
+            <para
+><inlinemediaobject
+><imageobject>
+                <imagedata fileref="&path;editor-curves-preview.png" format="PNG"/>
+                </imageobject>
+                <textobject
+><phrase
+>Lo strumento Regola curve in azione</phrase
+></textobject
+></inlinemediaobject>
+            </para>
+
+        </sect4>
+
+    </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

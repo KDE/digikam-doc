@@ -1,0 +1,118 @@
+  <sect3 id="editor-enhance-hotpixels">
+    <sect3info>
+      <title
+>热像素纠正</title>
+      <abstract>
+        <para
+>&digikam; <emphasis
+>热像素</emphasis
+> 工具有助于从 CCD 摄像头拍摄的照片中移除热像素。 它使用来自JPEGPixi项目的算法，该算法被Martin Dickop所版权使用。 </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>digiKam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>介绍</title>
+    <para
+>大多数当前数码相机在使用慢速快门速度时生成多个亮色 &quot;坏像素&quot; 的图像。 夜间图像可能会被这些 &quot;坏像素&quot;毁坏。 有三种不同类型的 &quot;坏像素&quot;： <itemizedlist
+> <listitem
+> <para
+>卡壳像素：它是一个总是读高的像素，或者在所有暴露中总是能达到最大功率。 这会在最终图像中产生一个亮色的像素，通常是红色、蓝色或绿色的颜色。 不论快门速度、孔径大小或任何其他用户设置，都会出现卡壳像素。 它将在正常情况下发生，而且在正常情况下往往更加明显。</para
+> </listitem
+> <listitem
+> <para
+>死黑像素：这是一个读零或在所有暴露中总是关闭的像素。 此状态在最终图像中产生一个黑像素。 与卡壳像素相似，无论快门速度、孔径大小或任何其他用户设置如何，都会出现死黑像素。</para
+> </listitem
+> <listitem
+> <para
+>热像素：它是一个像白色一样长时间接触高(亮) 的像素， 红色或绿色颜色。 曝光时间越长，热像素越多。这些像素将在亮度条件下不可见。</para
+> </listitem
+> </itemizedlist
+> 请注意，所有图像都会在同一位置被卡住或死像素。 如果卡住或死黑像素的位置发生在不同的地点，它可能是热像素。 </para>
+    <para
+>卡壳、死黑、热像素是当高质量原始模式拍摄时常出现的一个问题，因为许多相机在使用 JPEG 压缩时都会自动应用内置热像素抑制(多数情况下)。 </para>
+    <para
+>这个工具可以用来修复照片上的 &quot;热像素&quot; 和 &quot;卡壳像素&quot; 使用黑帧检测方法。 目前不可以手动选择坏像素。 </para>
+    <sect4 id="using-blackframecreation">
+      <title
+>创建黑帧</title>
+      <para
+>黑框减料方法是最准确的 &quot;热像素&quot; 和 &quot;卡壳像素&quot; 移除。 首先你必须创建一个 &quot;黑框架&quot; 作为参考。当你完成长曝光拍摄时， 盖上镜头盖，拍摄一个 &quot;纯黑&quot; 的图像，其曝光时间与以前的图像相同。 这个图像将是黑暗的，但经过仔细检查，你会看到它有热和卡壳像素(彩色点)。 这些位置与你以前的拍摄处在同一位置。 </para>
+      <para
+>使用 <guilabel
+>黑框</guilabel
+> 按钮将此文件加载到小部件中。 系统将自动检测热像素和卡壳像素。它们将在控制面板预览区域中高亮显示。 </para>
+      <warning>
+        <para
+>如果您使用旧的数字相机， 下次您拍摄长曝光照片一定要重新拍黑帧照片，以检测CCD缺陷上的新的热像素和卡壳像素。 </para>
+      </warning>
+    </sect4>
+    <sect4 id="using-hotpixels">
+      <title
+>使用热像素工具</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-hotpixels.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>热像素对话框</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>首先，正如前一节所解释的那样，您需要加载与图像相对应的黑框来校正。 将在黑框上处理自动解析以查找坏像素。 请注意，小部件将记住上次会话中使用的前一个黑框架，并将在下次会话时自动重新打开它。 </para>
+      <para
+>图像面板和原始预览有助于您在图像内移动查看。 预览窗口显示使用当前设置的过滤器输出。所有预览区域都突出显示错误像素。 </para>
+      <para
+>使用图像面板的“独立视图”选项选择一个区域，在预览中看到坏像素，并看到过滤结果。 选择最佳的 <guilabel
+>筛选器</guilabel
+> 方法来插插像素或像素块。这些是可用的筛选器： <itemizedlist>
+          <listitem>
+            <para
+>平均值：与像素块相邻的像素平均值。由此产生的颜色分配给所有像素在方块中。 对于1维内插值，这是针对一个像素宽、横向或垂直条纹单独做的。</para>
+          </listitem>
+          <listitem>
+            <para
+>线性: 距离像素块1的像素用于计算双线性表面(2-dim)， 或一组线性曲线(1-dim)，然后用于将内插颜色分配给方块中的像素。</para>
+          </listitem>
+          <listitem>
+            <para
+>Quadratic: 这是默认过滤方法。 与像素块距离为2或更小的像素，用于计算双倍表面(2-dim)， 或一组二次曲线(1-dim)，然后用来将内插颜色分配给方块中的像素。</para>
+          </listitem>
+          <listitem>
+            <para
+>立方体：与像素块距离不超过3的像素用于计算双立方表面(2-dim)， 或一组立方曲线(1-dim)，然后用于将内插颜色分配给方块中的像素。</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+    </sect4>
+    <sect4 id="inaction-hotpixels">
+      <title
+>热像素工具执行中</title>
+      <para
+>下面， 你可以看到热像素校正工具应用于一张像素不足的色彩照片，照片拍摄自200 ISO 长时间曝光拍摄的数码相机。 原始图像放大到300%是(1), 校正图像(2)。 </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-hotpixels-preview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>像素校正预览</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

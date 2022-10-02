@@ -1,0 +1,201 @@
+<sect2 id="using-sidebar-captions">
+    <title
+>Rubriker</title>
+
+    <sect3>
+    <title
+>Inledning</title>
+
+        <para
+>Den här sidoradsfliken gör tjänst för att ändra och redigera bildegenskaper som bildtexter, betyg, datum och etiketter. Egenskaperna lagras i tillhörande databas. i IPTC- och EXIF-datafälten och blir en del av bilden. Alla egenskaper kan kommas åt i en sidoradsvy som visas på skärmbilden nedan. När bilden läses är prioritetsordningen a) databasen, b) IPTC, och c) EXIF. Om det finns någon skillnad mellan några av de tre, gäller prioriteringen och en synkronisering utförs. Sidoraden har ett navigationsfält längst upp med pilar för första, föregående, nästa och sista om den visas i huvudprogrammet. </para>
+
+        <example>
+            <title
+>Exempel på sidoradens kommentarer och etiketter</title>
+            <screenshot>
+                <screeninfo
+>Exempel på sidoradens kommentarer och etiketter</screeninfo>
+                <mediaobject
+><imageobject>
+                    <imagedata fileref="&path;using-sidebar-captions.png" format="PNG"/>
+                </imageobject
+></mediaobject>
+            </screenshot>
+        </example>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Kommentarvy</title>
+
+        <para
+>Bildtextvyn kan användas för att skriva in eller klistra in en bildtext av obegränsad storlek (se anmärkningen nedan). Texten använder UTF-8, vilket betyder att alla specialtecken tillåts. Bildtexterna kopieras till EXIF- och IPTC-fält så att de kan användas av andra program. </para>
+
+        <caution
+><para
+>IPTC-data stöder bara ASCII-tecken och högst 2000 tecken (gammal amerikansk standard). Alla texter kortas av efter 2000 tecken, och specialtecken blir felformaterade. Om du avser att använda IPTC-rubrikfältet i andra program måste du följa dessa begränsningar. </para
+></caution>
+
+        <para
+>Efter att ha lagt till kommentaren, klicka antingen på knappen <guibutton
+>Verkställ</guibutton
+> eller gå direkt till nästa bild, så sparas rubrikerna. </para>
+
+        <para
+>Intill knappen Verkställ finns knappen <guibutton
+>Fler</guibutton
+>. Via den kan du antingen välja att lagra metadata från vald fil i databasen, eller tvärtom skriva metadata i filer (det senare sker ändå om du väljer en metadatainställkning som gör att all metadata alltid sparas i bilder). </para>
+
+    </sect3>
+
+    <sect3>
+
+        <title
+>Datum och tid</title>
+
+        <para
+>I delen med datum och tid, som anger tiden då fotografiet togs, kan du ändra alla värden. En kalender visas med kombinationsrutan, och nummerrutan för tidsinställning kan också ändras genom att direkt skriva in tiden. Dateringen kopieras till EXIF:s datum- och tidsfält. Om du behöver ändra tid och datum då ett antal bilder togs, finns det ett bekvämare sätt tillgängligt (i köhantering för bakgrundsbehandling). Det senare alternativet finns under <menuchoice
+><guimenuitem
+>Bild</guimenuitem
+> <guimenuitem
+>Justera tid och datum...</guimenuitem
+></menuchoice
+>. Markera bilderna som ska ändras i huvudvyn och anropa verktyget. </para>
+
+    </sect3>
+
+    <sect3>
+    <title
+>Betyg</title>
+
+    <para
+>Betygsdelen visar en betygsättning med 0 till 5 stjärnor som kan användas vid sökning och sorteringsordning. Den kan ändras med ett enda musklick eller med snabbtangenterna <keycombo
+>&Ctrl;<keycap
+>0...5</keycap
+></keycombo
+>. Betygen i sidoraden tilldelas alltid en bild åt gången. För att betygsätta ett antal bilder, markera dem och aktivera den sammanhangsberoende menyn (klicka med höger musknapp) för att tilldela dem ett gemensamt betygsvärde. </para>
+
+    <para
+>Betygen införs därefter i IPTC-datafältet 'brådska'. Betygskodningen följer metoden i den här tabellen: </para>
+
+    <informaltable
+><tgroup cols="2">
+
+        <thead
+><row>
+            <entry
+>&digikam;s betyg</entry>
+            <entry
+>IPTC-brådska</entry>
+            </row
+></thead>
+
+            <tbody>
+                <row
+>   <entry
+>-</entry
+>         <entry
+>8</entry
+>      </row>
+
+                <row
+>   <entry
+>*</entry
+>         <entry
+>7</entry
+>      </row>
+
+                <row
+>   <entry
+>*</entry
+>         <entry
+>6</entry
+>      </row>
+
+                <row
+>   <entry
+>**</entry
+>        <entry
+>5</entry
+>      </row>
+
+                <row
+>   <entry
+>***</entry
+>       <entry
+>4</entry
+>      </row>
+
+                <row
+>   <entry
+>****</entry
+>      <entry
+>3</entry
+>      </row>
+
+                <row
+>   <entry
+>****</entry
+>      <entry
+>2</entry
+>      </row>
+
+                <row
+>   <entry
+>*****</entry
+>     <entry
+>1</entry
+>      </row>
+            </tbody>
+
+        </tgroup
+></informaltable>
+
+    </sect3>
+
+    <sect3 id="using-sidebar-tags">
+    <title
+>Trädet med etiketter</title>
+
+        <para
+>Etikettvyn visar en sökruta med anpassningsbart filter, trädet med etiketter och en kombinationsruta som innehåller etiketterna som tidigare användes under den här &digikam;-sessionen. </para>
+
+        <para
+>Trädet med etiketter anpassas dynamiskt som en funktion av sökorden medan du skriver i rutan. Det är alltså enkelt att snabbt reducera antalet möjligheter vid sökning av en etikett. Funktionen är förstås bara användbar om du har många etiketter. </para>
+
+        <para
+>Kombinationsrutan längst ner är ytterligare en ergonomisk funktion för att enkelt ge en serie bilder en etikett. När du lägger till olika etiketter blir de ihågkomna i rutan för att snabbt gå att komma åt. </para>
+
+        <para
+>Annars läggs etiketter helt enkelt till genom att markera respektive rutor i trädet. Alla etiketter för en bild överförs i IPTC-datafältet 'nyckelord'. </para>
+
+        <note
+><para
+>Om du har markerat ett antal bilder i huvudvyn och markerar en etikett i trädet med etiketter, läggs den bara till för den streckade bilden, och inte för alla markerade bilder. Om du vill lägga till etiketter för markerade bilder, se avsnittet <link linkend="using-sidebar-filters"
+>Etikettfilter</link
+>. </para
+></note>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Informationsvy</title>
+
+            <para
+>ATT GÖRA </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

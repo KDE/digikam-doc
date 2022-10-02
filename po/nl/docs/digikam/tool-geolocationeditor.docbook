@@ -1,0 +1,509 @@
+<chapter id="tool-geolocation">
+<chapterinfo>
+
+    <abstract>
+        <para
+>Geolocatie betekent toekennen, bewerken en gebruiken van metagegevens die de geografische plaats beschrijven waar afbeeldingen of video's zijn gemaakt. De bron van deze metagegevens kan uw camera, een aparte GPS ontvanger zijn of andere middelen van geografische informatie, in het bijzonder kaarten. </para>
+
+        <para
+>Niet alleen voor professionele fotografen kan het interessant zijn om een afbeelding te koppelen aan een precieze geografische locatie. Milieu-planners, militairen, politie, bouwbureaus, vastgoed agentschappen, allen kunnen een behoefte hebben om dit toe te passen.  </para>
+
+        <para
+>Maar als men, na enige tijd, vergeten is waar de foto werd genomen, als menhoudt van de leuke toepassing om met een simpele klik een browser te openen en een zoomweergave van het gebied te zien, als u uw afbeelding wilt verzenden als een ansichtkaart naar een andere &digikam; gebruiker (die dan in staat is om uw opname te vinden), of als u gewoon behoefte hebt aan het documentatie-aspect ervan - de positiegegevens opgeslagen in een foto is een geweldige mogelijkheid. </para>
+
+    </abstract>
+
+    <keywordset>
+        <keyword
+>GPS</keyword>
+        <keyword
+>Kaart</keyword>
+    </keywordset>
+</chapterinfo>
+
+<title
+>Geolocatie</title>
+    <para
+>GPS (Global Positioning System) wordt overal in dit document gebruikt als een algemene term. Het betekent gewoon een locatie in het algemene sferische coördinatensysteem die op een kaart kan worden weergegeven. De werkelijke technische implementatie die de gegevens levert, kan zijn het Amerikaanse GPS, het Russische GLONAS, het Europese Galileo of een ander systeem. </para>
+
+    <para
+>Er zijn vier hulpmiddelen met betrekking tot geolocatie in &digikam-app; en twee in &showfoto;: </para>
+        <orderedlist numeration="arabic">
+
+            <listitem
+><para
+>De kaartmodus van het Afbeeldingsgebied die, afhankelijk van de selectie in de linker zijbalk, afbeeldingen toont met GPS gegevens op een kaart, &eg; de afbeeldingen in het album dat u selecteerde in de Albumweergave, de afbeeldingen met een bepaalde toegekende tag (geselecteerd in de Tagweergave), met een bepaald label enzovoort. Dit is alleen beschikbaar in &digikam-app;. </para
+></listitem>
+    
+            <listitem
+><para
+>De Kaartweergave in de linker zijbalk van &digikam-app;, die het zoekhulpmiddel is voor zoeken in afbeeldingen op hun GPS-gegevens. Dit is ook beschikbaar in &digikam-app;. </para
+></listitem>
+
+            <listitem
+><para
+>De geolocatiebewerker die we iets verderop beschrijven en die toegankelijk is via <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenu
+>Item</guimenu
+><guimenuitem
+>Geolocatie bewerken...</guimenuitem
+></menuchoice
+> (<menuchoice
+><guimenu
+>Bestand</guimenu
+><guimenuitem
+>Edit Geolocation...</guimenuitem
+></menuchoice
+> in &showfoto;). </para
+></listitem>
+
+            <listitem
+><para
+>Het tabblad <link linkend="using-sidebar-maps"
+>Kaart</link
+> in de rechter zijbalk toont de locatie van de afbeelding op een kaart en is puur informatief. </para
+></listitem>
+
+        </orderedlist>
+    <para
+>Alle vier zijn gebaseerd op het &marble; widget. </para>
+
+    <note
+><para
+>Deze hulpmiddelen werken alleen voor afbeeldingformaten die EXIF- of XMP-metagegevens bevatten ondersteunt door <ulink url="http://www.exiv2.org"
+>libkexiv2</ulink
+> </para
+></note>
+
+    <sect1 id="tool-geolocationeditor"
+>  <title
+>Geolocatiebewerker</title>
+    
+        <para
+>De geolocatiebewerker maakt het mogelijk om GPS coördinaten van metagegevens van afbeeldingen toe te voegen en te bewerken. Het geo-gegeven wordt opgeslagen in de afbeelding (EXIF tags) en de locatie kan getoond worden op een interne of externe kaart in een browser. De geolocatiebewerker biedt ook een hulpmiddel voor <firstterm
+>Omgekeerde geocodering</firstterm
+>. </para>
+        <para
+>De geolocatiebewerker kan geopend worden via menu-item <menuchoice
+><guimenu
+>Item</guimenu
+> <guimenuitem
+>Geolocatie bewerken</guimenuitem
+></menuchoice
+> of via indrukken van <keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>G</keycap
+></keycombo
+>. Het vereist minstens één afbeelding om te selecteren anders zal het niet openen. </para>
+        
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;tool-geolocation-editcoords.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>De Geolocatiebewerker biedt de hulpmiddelen om afbeeldingen geografisch te lokaliseren in het gebruikelijke sferische coördinatensysteem (gebruikt door GPS/Galileo). Hoogte, breedte-, lengtegraad, snelheid, aantal satellieten, type reparatie en DOP zijn te bewerken. </para>
+       
+        <para
+>De bewerker heeft twee methoden om afbeeldingen met coördinaten te markeren: </para>
+        
+        <itemizedlist>
+            <listitem
+><para
+>Semi-automatische toekenning van coördinaten aan enkele afbeeldingen, toegankelijk via het tabblad <guilabel
+>Details</guilabel
+> in het rechter zijpaneel. </para
+></listitem>
+            <listitem
+><para
+>Correlatie in bulk van GPS trackinggegevens met een serie afbeeldingen die u wilt vinden in het tabblad <link linkend="geolocation-correlator"
+>GPS-correlator</link
+> </para
+></listitem>
+        </itemizedlist>
+        
+        <para
+>Verder biedt de rechter zijbalk nog drie hulpmiddelen: </para>
+        
+        <itemizedlist>
+            <listitem
+><para
+>Het tabblad <guilabel
+>Ongedaan maken/opnieuw</guilabel
+>. </para
+></listitem>
+            <listitem
+><para
+>Het tabblad <guilabel
+>Omgekeerde geocodering</guilabel
+> die in staat stelt om geografische namen te vinden (steden, straatnamen, ...) door een publieke service voor omgekeerde geocodering te gebruiken en de GPS-gegevens van een afbeelding. </para
+></listitem>
+            <listitem
+><para
+>Het tabblad <guilabel
+>Zoeken</guilabel
+> die in staat stelt posities op de kaart te vinden van geografische namen (steden, monumenten, ...) door een service voor publieke geonamen te gebruiken (GeoNames en OpenStreetMap op het moment van schrijven). </para
+></listitem>
+        </itemizedlist>
+    
+        <sect2 id="geolocation-map"
+>       <title
+>De kaart</title>
+            
+            <para
+>Voor navigeren op de kaart zie het handboek van &marble;, Hoofdstuk 2. Ook voor het contextmenu sky zie de documentatie over &marble;. </para>
+            
+            <para
+>Direct onder de kaart vindt u een rij knoppen. Ik zal de teksten in de tekstballonnen gebruiken als aanduidingen in de volgende beschrijving. Van links naar rechts hebben we <itemizedlist>
+                    <listitem
+><para
+>De knop Kaartinstellingen opent een klein menu waarmee u kunt kiezen tussen Google Maps en &marble; en afhankelijk van die keuze het soort kaart dat u wilt gebruiken. Verder kunt u de projectie voor &marble; kiezen (sferisch, Mercator, gelijke rechthoeken) en u kunt een paar extra hulpmiddelen zoals kompas en schaal op de kaart tonen. </para
+></listitem>
+                    <listitem
+><para
+>De knop Inzoomen. </para
+></listitem>
+                    <listitem
+><para
+>De knop Uitzoomen. </para
+></listitem>
+                    <listitem
+><para
+>De knop Schakelaar-tussen-markeringen-en-miniaturen laat u kiezen of u de posities van uw afbeeldingen aangeeft door een markeringssymbool of door een miniatuur op de kaart. Als u miniaturen kiest dan zijn de volgende twee knoppen heel interessant. </para
+></listitem>
+                    <listitem
+><para
+>De knop De-miniatuurgrootte-op-de-kaart-vergroten doet gewoon dat en ... </para
+></listitem>
+                    <listitem
+><para
+>... de knop Miniatuurgrootte-verkleinen-op-de-kaart ook. </para
+></listitem>
+                    <listitem
+><para
+>De knop Pan-modus laat u de kaart verschuiven door te klikken met de &LMB; en ingedrukt houden en dan met de muis verslepen naar waar u het nodig heeft. Het cursorsymbool zal wijzigen naar een handje. </para
+></listitem>
+                    <listitem>
+                        <para
+>De knop Zoomen-in-een-groep is nuttig als u afbeeldingen zo dicht op elkaar op de kaart dat alleen de bovenste zichtbaar is. Wanneer u klikt op de zichtbare afbeelding zal de zoomfactor aangepast worden zodat alle andere afbeeldingen erachter zichtbaar worden. Als u op een groep afbeeldingen klikt en er gebeurt echt niets dan hebben ze ofwel exact dezelfde geografische positie en/of de zoomfactor is al op zijn maximum. </para>
+                        <para
+>Merk op dat <quote
+>groep</quote
+> in deze context hier niets van doen heeft met de gegroepeerde afbeeldingen zoals beschreven in hoofdstuk 2 van het Handbook van &digikam-app;. Hier refereert de term naar afbeeldingen die zeer dicht bij elkaar liggen op de kaart (afhankelijk van de zoomfactor) of exact dezelfde geografische positie hebben. </para>
+                    </listitem>
+                    <listitem
+><para
+>De knop Selecteer-afbeeldingen schakelt de selectie van een afbeelding of een groep afbeeldingen in de lijst met afbeeldingen rechts onder de knoppen in, nadat u klikt op de kaart. De selectiestatus van alle andere afbeeldingen in de lijst blijft ongewijzigd. Wees bewust van het feit dat er een soort van selectie in twee stappen is! Als u klikt op een miniatuur of markering op de kaart zullen de geselecteerde afbeelding(en) in de lijst met afbeeldingen een lichtblauwe achtergrond krijgen. Als u er in de lijst op klikt zal de achtergrond donkerder blauw worden en als er eerder meer dan een afbeelding met een licht blauwe achtergrond was, zullen de anderen niet meer geselecteerd zijn. Slechts klikken op een afbeelding in de lijst zal zijn voorbeeld laten verschijnen rechts van de lijst. </para
+></listitem>
+                    <listitem
+><para
+>De knop Bladwijzerposities-op-de-kaart-tonen werkt niet op het moment van schrijven omdat het gehele probleem van bladwijzer gereorganiseerd moet worden. Dit heeft ook effect op het item <menuchoice
+><guimenu
+>Bladwijzers</guimenu
+> <guimenuitem
+>Bladwijzers bewerken...</guimenuitem
+></menuchoice
+> in het contextmenu op de lijst met afbeeldingen onder de kaart en het item <guilabel
+>Bladwijzer toevoegen</guilabel
+> in het contextmenu op de kaart. </para
+></listitem>
+                </itemizedlist>
+                
+                <anchor id="bookmarkstatus.anchor"/>
+
+                <warning>
+                    <para
+>Het gebruik van <guilabel
+>Bladwijzer toevoegen</guilabel
+> in het contextmenu op de kaart kan leiden tot verlies van uw bladwijzers in &marble;! </para>
+                </warning>
+ 
+            </para>
+            
+            <para
+>Van het contextmenu op de kaart is alleen <guilabel
+>Coördinaten kopiëren</guilabel
+> van belang voor geo-tags. Het kopieert de geografische coördinaten op de cursorpositie naar het klembord. Voor alle andere menu-items zie het handboek van &marble;. </para>
+            
+            <para
+>Merk op dat u de indeling van één kaart naar twee kaarten kunt wijzigen, naast of boven elkaar via het kleine afrolmenu onderaan de Geolocatiebewerker. </para>
+            
+        </sect2>
+
+        <sect2 id="geolocation-edit-coordinates"
+>       <title
+>Coördinaten bewerken</title>
+            <para
+>De coördinaten kunnen handmatig ingesteld worden in het tabblad <guilabel
+>Details</guilabel
+> (zie bovenstaande schermafdruk). De locatie is te vinden en iteratief vast te leggen met de getoonde kaart. Verplaats de muiscursor naar het van belang zijnde gebied, zoom in, pas de locatie aan, zoom opnieuw in enzovoort totdat voldoende nauwkeurigheid is bereikt. Merk op dat het centrum voor zoomen zich altijd op de cursorpositie bevindt. Klik uiteindelijk met de &RMB; op de gewenste positie en kies <guilabel
+>Coördinaten kopiëren</guilabel
+>. U kunt dan naar de lijst met afbeeldingen onder de kaart gaan en een of meer afbeeldingen selecteren, klik met de &RMB; op ze en kies <guilabel
+>Coördinaten plakken</guilabel
+>. De coördinaten zullen dan getoond worden in de velden Breedtegraad en Lengtegraad rechts van de kaart. Om uw wijzigingen op te slaan klikt u op de knop <guilabel
+>Toepassen</guilabel
+> rechts onder het veld <guilabel
+>DOP</guilabel
+>. </para>
+            
+            <para
+>Als u een of meer afbeeldingen hebt die al GPS gegevens bezitten, dan kunt u de coördinaten van een van deze kopiëren en ze plakken op een of meer andere afbeeldingen door de respectievelijke items uit het contextmenu op de lijst mat afbeeldingen te gebruiken. Dit wordt handig als er een serie foto's genomen is op dezelfde locatie. </para>
+            
+            <para
+>Rechts van de kaart zijn er naast breedte- en lengtegraad, velden voor hoogte, snelheid, aantal satellieten, type reparatie en onzekerheid (DOP). U kunt deze velden al ingevuld zinen als u een foto selecteert waar uw camera deze informatie al in de EXIF gegevens heeft geschreven. Anders kunt u ze handmatig invullen als u deze gegevens ergens anders vandaan hebt, &eg; een aparte GPS ontvanger. Merk op dat u het relevante keuzevakje moet activeren voordat u een veld kan bewerken (onder &Windows; moet u mogelijk dubbelklikken). Alleen voor <guilabel
+>Hoogte</guilabel
+> is deze toegekend aan de foto door het item <guilabel
+>Ontbrekende waarden van hoogte</guilabel
+> uit het contextmenu op de lijst met afbeeldingen, die er voor zorgt dat de bewerker dit gegeven uit de kaartgegevens, gegeven de positie (breedte- en lengtegraad), haalt. </para>
+            
+            <para
+>Om geolocatiegegevens te verwijderen moet u het relevante keuzevakje deactiveren en op de knop <guilabel
+>Toepassen</guilabel
+> drukken recht onder het veld <guilabel
+>DOP</guilabel
+>. Anders dan dat biedt het contextmenu op de lijst met afbeeldingen items om enige van de gegevens uit de afbeelding te verwijderen. Met betrekking tot het laatste item <guilabel
+>Bladwijzers</guilabel
+> kijk <link linkend="bookmarkstatus.anchor"
+>hier</link
+>. </para>
+            
+        </sect2>
+
+        <sect2 id="geolocation-correlator"
+>       <title
+>De correlator</title>
+            <para
+>Om uw afbeeldingen te correleren met geografische gegevens moet u GPS trackinginformatie beschikbaar hebben als een XML-bestand in <literal
+>gpx</literal
+> formaat (<application
+><ulink url="http://www.gpsbabel.org"
+>gpsbabel</ulink
+></application
+> en <application
+><ulink url="http://gpsman.sourceforge.net/"
+>gpsman</ulink
+></application
+> kan trackinggegevens downloaden en converteren uit een GPS apparaat voor u). Het idee is: bij het nemen van uw foto's houdt u een GPS apparaat actief en draagt u het samen met de camera. Nadat u klaar bent, downloadt u de foto's en de GPS tracks en activeert u de correlator. </para>
+
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-correlate1.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+
+            <para
+>Selecteer de afbeeldingen die u wilt correleren in de hoofdweergave van de toepassing, roep daarna de geolocatiebewerker op met <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenuitem
+> </guimenuitem
+></menuchoice
+> en schakel om naar het tabblad <guilabel
+>GPS correlator</guilabel
+> in de rechter zijbalk. De bovenstaande dialoog zal verschijnen met de geselecteerde afbeeldingen in de lijst onder de kaart. Om een mogelijke correlatie tussen tijden/locatie aan te geven moet u een trackbestand laden met <guilabel
+>GPX bestand laden</guilabel
+> die GPS gegevens bevat genomen op dezelfde tijd en locatie als de afbeeldingen. </para>
+
+            <para
+>Wanneer het bestand is geladen en <guilabel
+>Tracks tonen op de kaart</guilabel
+> is geactiveerd, zal de track getoond op de kaart. U kunt meer dan één bestand laden en &digikam; zal verschillende kleuren aan hen toekennen en de tracks zo op de kaart tonen. </para>
+
+            <para
+>GPS-trackgegevens worden altijd opgenomen in UTC (Universal Time Coordinated), u moet dus de tijd in de camera overeen laten komen met UTC, wat gedaan kan worden met <guilabel
+>Cameratijdzone:</guilabel
+>. Selecteer <guilabel
+>Zelfde als systeem</guilabel
+> als u de foto's nam in de tijdzone bij u thuis en &digikam; zal het verschil met UTC bepalen uit uw systeemtijd. Als u de foto's ergens anders hebt genomen zou u <guilabel
+>Handmatig:</guilabel
+> moeten activeren en het toepasselijke verschil uit het afrolveld rechts moeten kiezen. U kunt hetzelfde mechanisme gebruiken om een eenvoudige misaanpassing van uw cameratijd om welke reden dan ook te corrigeren of een offset van een gpx-bestand vanwege probleempjes in de gebruikte software om andere trackbestandsformaten naar gpx te converteren. Hier komt <guilabel
+>Fijnoffset (mm:ss)</guilabel
+> in het spel waarmee u tot 59 minutes en 59 seconden kunt optellen of aftrekken van uw in het bovenstaande veld gekozen tijdsverschil. </para>
+
+            <para
+>De instelling <guilabel
+>Max. tijdsverschil (sec.):</guilabel
+> specificeert de limiet waarbinnen de GPS-tijd en de cameratijd beschouwd worden als gelijk. De maximale waarde is 2000 seconds. Dit betekent dat als geen item in het gpx-bestand exact overeenkomt met het tijdstempel van de foto, de positie van het item met het kleinste tijdsverschil met de foto er aan toegekend zal worden zolang als dit tijdsverschil kleiner is dan de instelling <guilabel
+>Max. tijdsverschil (sec.):</guilabel
+>. Als u zich afvraagt welke waarde u hier zou moeten specificeren zou een kijkje in de instellingen van uw track-recording-device/software of in het gpx-bestand (wat gemakkelijk is met een tekstbewerker) zou kunnen helpen. Hoe sneller u bewoog bij het nemen van de foto('s) hoe belangrijker deze beslissing zal zijn. </para>
+
+            <para
+><guilabel
+>Interpoleren</guilabel
+> biedt een andere optie in geval er geen exacte overeekomst is tussen het tijdstempel van uw foto('s) en een item in het gpx-bestand en zolang u zich min of meer in een rechte lijn verplaatste tussen twee opgenomen GPS-posities zal het de meer precieze optie bieden. Hier wordt de positie van de foto berekend (lineair geïnterpoleerd) uit de posities van de twee dichtsbijzijnde items in het gpx-bestand en de respectievelijke verschillen in tijd. Als het tijdsverschil tussen de twee dichtsbijzijnde items en de foto gelijk zijn zal de toegekende positie op een rechte lijn liggen tussen de posities van de twee items precies in het midden. </para>
+            
+            <para
+><guilabel
+>Max. interpol. tijdsverschil (min):</guilabel
+> heeft niets van doen met politieman Max van Interpol ;-) In plaats daarvan bepaalt deze of een GPS punt gebruikt kan worden voor interpolatie. Als zijn tijd verder weg is van de tijd van het plaatje dan deze limiet, kan het niet gebruikt worden. 240 minuten is het maximale tijdsverschil dat hier opgegeven kan worden. </para>
+            
+            <para
+>Nadat uw instellingen zijn gedaan, klikt u op de knop <guilabel
+>Correleren</guilabel
+>. Als er helemaal geen overeekomst is zult u het bericht "Kon geen enkele afbeelding correleren - ga na dat de instelling van de tijdzone en tijdsverschil juist zijn." Anders krijgt u zoiets als "2 uit 4 afbeeldingen zijn gecorreleerd. Controleer de instelling van de tijdzone en tijdsverschil als u denkt dat meer afbeeldingen gecorreleerd zouden moeten zijn." In het beste geval krijgt u "Alle afbeeldingen zijn gecorreleerd. U kunt nu hun positie op de kaart controleren." </para>
+            
+            <para
+>Als u deze aanbevelingen wilt volgen is het een goed idee om het tabblad <guilabel
+>Details</guilabel
+> te wijzigen omdat u daar een vooruitblik hebt van de afbeeldingen die erg kunnen helpen om ze te identificeren op de kaart. Bedenk dat u altijd moet klikken op een afbeelding in de lijst onder de kaart om zijn voorbeeld te laten verschijnen. Nadat u tevreden bent met het resultaat, klik op de knop <guilabel
+>Toepassen</guilabel
+> onderaan de Geolocatiebewerker om de wijzigingen naar het afbeeldingsbestand en de database op te slaan. </para>
+
+        </sect2>
+        
+        <sect2 id="geolocation-undo-redo"
+>       <title
+>Ongedaan maken/opnieuw</title>
+            <para
+>In het tabblad <guilabel
+>Ongedaan maken/opnieuw</guilabel
+> wordt een geschiedenis bijgehouden over alle wijzigingen die u hebt toegepast op de afbeeldingen geladen in de Geolocatiebewerker. De geschiedenis toont de gemaakte wijzigingen in slechts één tabblad of in verschillende tabbladen en zal alleen verwijderd worden nadat u de bewerker hebt verlaten. Na een paar acties in de verschillende tabbladen kan de opname eruit zien als dit: </para>
+            
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-undo1.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+                
+            <para
+>De laatste stap is geaccentueerd wanneer u het tabblad inkomt. De eerste stap heeft altijd het label <quote
+>leeg</quote
+> en representeert de status die de afbeeldingen hadden toen ze werden geladen. U kunt op elke stap klikken en, afhankelijk van welk soort wijzigingen die u deed, kunt u de afbeeldingen opnieuw zien verschijnen, zien verdwijnen of zich verplaatsen op de kaart of de verschillen zien in de lijst met afbeeldingen onder de kaart. Merk op dat de lijst is te configureren door met de &RMB; te klikken op de kop. </para>
+            
+            <para
+>Laten we eens aannemen dat u zich realiseerde dat de verplaatsing in de laatste stap verkeerd was. U klikt gewoon op de eerdere stap (Details gewijzigd), u gaat naar het tabblad <guilabel
+>Zoeken</guilabel
+> (onderstaand verder beschreven) en u doet een andere verplaatsing. Na terugkeer naar het tabblad <guilabel
+>Ongedaan/Opnieuw</guilabel
+> zou het er zo uit kunnen zien: </para>
+            
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-undo2.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+        </sect2>
+        
+        <sect2 id="geolocation-reverse-geocoding"
+>       <title
+>Omgekeerde geocodering</title>
+            <para
+>In dit tabblad kunt u een publieke geoname-service gebruiken om adresdetails op te zoeken van de geographische positie van een of meer afbeeldingen en ze te converteren in tags. Om dat te doen hebt u enige voorbereiding nodig. U zou al bekend moeten zijn met het idee van tags en hoe ze aan te maken, te bewerken en te gebruiken. De beste ingang in dit onderwerp is te vinden in de sectie Tagsweergave van Hoofdstuk 2 van het handbook van &digikam-app;. </para>
+            <para
+>U zou eerst een basistag in de tagbeheerder moeten aanmaken of in de tagboomstructuur van de linker- of rechterzijbalk. U zou het locatie of plaatsen of ... kunnen noemen </para>
+            <para
+>Daarna selecteert u de afbeelding(en) die u een tag wilt geven (er moeten GPS-gegevens worden toegekend), open de geolocatiebewerker en klik op het tabblad <guilabel
+>Omgekeerde geocodering</guilabel
+>. U zult uw tagboomstructuur zien en als u met de &RMB; klikt op een tag, bij voorkeur diegene die u maakte voor de geo-tags, zult u dit context-menu zien: </para>
+            
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-reverse1.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+
+            <para
+>In de hoofdsectie worden de tags die u kunt toevoegen gesorteerd van de grootste regio (land) naar de kleinste (huisnummer). Als u <guilabel
+>Alle adreselementen toevoegen</guilabel
+> kiest en dan de Locatietag uitvouwt en alle subtags zult u dit hebben: </para>
+
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-reverse2.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+
+            <para
+>Deze rode tags in accolades worden besturingstags genoemd. Ze bepalen welke adreselementen u wilt hebben in de service "omgekeerde geolocatie" die u hebt gekozen bovenaan onder <guilabel
+>Service selecteren</guilabel
+> om naar te zoeken. U kunt nog steeds enige van hen verwijderen met de hulp van het contextmenu als u het gevoel hebt dat u ze niet nodig hebt of de structuur te wijzigen door sommige besturingstags te verwijderen en ze op andere plaatsen van de boomstructuur toe te voegen of zelfs een nieuwe boomstructuur te bouwen parallel aan de eerste door een besturingstag toe te voegen aan de begintag (hier: Locatie). De besturingstags op hetzelfde niveau te plaatsen in plaats van een boomstructuur kan heel wat redundante tags besparen omdat dezelfde plaats- of stadsnaam bestaat in meer dan één staat of land laat staan straatnamen. Maar het kan de gehele locatietak van uw boomstructuurtags tamelijk lang maken en daarom niet meer te berekenen. Dat wil zeggen dat u uw eigen oplossing voor dit probleem moet vinden afhankelijk van wat u nodig hebt, misschien een mix, en hoe sneller u het minder werk vindt die u moet investeren in het bewerken van uw boomstructuur van tags en de besturingstags. </para>
+            <para
+>Laten we aannemen dat u de besturingstags gebruikt zoals getoond in de bovenstaande schermafdruk, selecteer de afbeeldingen die u van tags wilt voorzien uit de lijst met afbeeldingen links en klik op <guilabel
+>Omgekeerde geocodering gebruiken</guilabel
+>. Daarna zou de tagboomstructuur er uit kunnen zien als dit: </para>
+ 
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-reverse3.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+            
+            <para
+>De groene tags representeren de zoekresultaten van de geselecteerde publieke omgekeerde geocoderingsservice en zijn al toegekend aan de afbeelding(en). Om deze tags op te slaan in het afbeeldingsbestand en de database van &digikam; klik op <guilabel
+>Toepassen</guilabel
+>. De tags zullen verschijnen als reguliere tags in uw tagboomstructuur die u kunt hier al kunt zien of in de tagboomstructuur in de linker of rechter zijbalk. Natuurlijk kunt u ze nog steeds bewerken zoals elke andere tag in de Tagbeheerder of in de linker of rechter zijbalk, maar niet hier in de Geolocatiebewerker. </para>
+
+        </sect2>
+        
+        <sect2 id="geolocation-search"
+>       <title
+>Zoeken</title>
+            <para
+>In het tabblad <guilabel
+>Zoeken</guilabel
+> kunt u plaatsen zoeken op hun geografische namen met publieke geonaamservices (GeoNames en OpenStreetMap op het moment van schrijven). U hoeft alleen een naam van een plaats te typen (stad, monument, hotel, ...) in het invoerveld bovenaaan en op <guilabel
+>Zoeken</guilabel
+> klikken. In de resultatenlijst onderaan krijgt u zoiets als: </para>
+            
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="tool-geolocation-search.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+            
+            <para
+>Natuurlijk bestaat Paris niet alleen in Frankrijk. Dus als u zocht naar de hoofdstad van Frankrijk kunt u omlaag gaan in de lijst totdat u een item vindt dat zonder twijfel daar behoort zoals "Arc de Triomphe" en er op klikken of een beetje beter zoeken zoals "Paris, Arc de Triomphe" of "Paris, France". Nadat u op een item in de lijst klikt zal de kaart gecentreerd worden op die plaats en kunt nu inzoomen met de inzoomknop (tweede van links onder de kaart). Met gebruik van dit voorbeeld met GeoNames zult u merken dat u nog steeds heel veel resultaten krijgt en zelfs twee gelabeld met alleen "Arc de Triomphe", de tweede een straat een paar honderd meter van de boog. Met OSM krijgt u slechts één resultaat. U moet een beetje met de verschillende services spelen in verschillende regio's, met meer of minder precieze zoektermen en daarna zult u een idee krijgen over hoe u het best uw zoekopdrachten kunt uitvoeren. </para>
+            <para
+>Voor de knoppen rechtsboven de resultatenlijst zie hun tekstballonnen! Het contextmenu op zoekresultaten biedt </para>
+            
+            <itemizedlist>
+                <listitem
+><para
+><guilabel
+>Coördinaten kopiëren</guilabel
+> die u later kunt plakken naar een of meer afbeeldingen in de afbeeldingenlijst onder de kaart</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Geselecteerde afbeeldingen naar deze positie verplaatsen</guilabel
+> wat in wezen hetzelfde is maar meer direct als u de afbeeldingen al geladen hebt in de geolocatiebewerker</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Uit de resultatenlijst verwijderen</guilabel
+> wat speciaal nuttig is in samenhang met de knop Behoud-de-resultaten-van-oude-zoekopdrachten-... boven de resultatenlijst.</para
+></listitem>
+            </itemizedlist>
+
+        </sect2>
+    </sect1>
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

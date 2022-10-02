@@ -1,0 +1,80 @@
+<chapter id="tool-metadataeditor">
+<chapterinfo>
+
+<abstract>
+<para
+>dMetadataeditorn är ett verktyg för att lägga till och redigera EXIF-, IPTC- eller XMP-metadata som bilaga till en bild. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>Metadata</keyword>
+<keyword
+>IPTC</keyword>
+<keyword
+>EXIF</keyword>
+<keyword
+>XMP</keyword>
+<keyword
+>Tillverkaranmärkning</keyword>
+<keyword
+>Kommentarer</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Metadataeditor</title>
+
+<para
+>Bildmetadata är textinformation som kan biläggas digitala bilder för att kommentera, beskriva och kategorisera dem. Informationen är användbar för att söka efter och indexera bilder, och för tillgänglighetstjänster. Det finns tre standardformat som bildmetadata kan lagras med: EXIF, IPTC och XMP. De koncentrerar sig på olika bildegenskaper och används i olika syften. &digikam; tillhandahåller verktyg för att visa och redigera metadata för alla tre formaten. </para>
+
+<para
+>Programmet erbjuder verktyg för redigering av metadata via menyalternativet <guimenu
+>Redigera metadata</guimenu
+>. Metadataeditorn arrangerar all metadata bekvämt i sektioner för varje typ av metadata, vilket gör det lättare att hitta och redigera specifika poster. För att exempelvis redigera hårdvarurelaterad information, gå till sektionen <guilabel
+>Enhet</guilabel
+>. Här kan du ändra enhetens tillverkare, enhetens modell, exponeringsrelaterade inställningar och annan information. </para>
+
+<para>
+    <inlinemediaobject>
+        <imageobject
+><imagedata fileref="&path;tool-metadataeditor-exif.png" format="PNG"/></imageobject>
+        <textobject
+><phrase
+>Metadataeditorn som arbetar med enhetsinformation från EXIF</phrase
+></textobject>
+    </inlinemediaobject>
+</para>
+
+<para
+>Förutom EXIF stöds också formaten IPTC och XMP, så du kan utföra de beskrivna åtgärderna också för metadata lagrad i dessa typer liksom för EXIF. Kom ihåg att EXIF är avsett att lagra kamerainformation, medan IPTC och XMP används mer för att lagra textinformation för efterbehandling såsom rättighetshantering. Alltså rekommenderas inte att redigera den metadata som kameran skapar. Å andra sidan kan information om upphovsman, copyright, etc. läggas till. En <ulink url="http://www.exiv2.org/metadata.html"
+>detaljerad beskrivning av poster som stöds</ulink
+> är tillgänglig på nätet. </para>
+
+<para>
+    <inlinemediaobject>
+        <imageobject
+><imagedata fileref="&path;tool-metadataeditor-xmp.png" format="PNG"/></imageobject>
+        <textobject
+><phrase
+>Metadataeditorn som arbetar med rättighetsinformation från XMP</phrase
+></textobject>
+    </inlinemediaobject>
+</para>
+
+<para
+>Observera att du kan synkronisera vissa specifika metadataposter från en typ till en annan, såsom exempelvis kommentarer som är tillgängliga som separata poster i EXIF, IPTC och XMP. Markera kryssrutorna som motsvarar posterna som du vill kopiera från ett format till ett annat.</para>
+  <caution
+><para
+>Observera att synkronisering av metadata kan ge oönskade resultat eftersom EXIF är begränsat till den rena ASCII teckenuppsättningen.</para
+></caution>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

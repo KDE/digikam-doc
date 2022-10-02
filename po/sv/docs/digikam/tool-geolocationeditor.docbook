@@ -1,0 +1,509 @@
+<chapter id="tool-geolocation">
+<chapterinfo>
+
+    <abstract>
+        <para
+>Geografisk lokalisering betyder att tilldela, redigera och använda metadata som beskriver den geografiska plats där bilder togs eller videor spelades in. Källan till metadata kan vara kameran, en separat GPS-mottagare eller något annat sätt att få geografisk information, i synnerhet kartor. </para>
+
+        <para
+>Det kan vara intressant att koppla ihop en bild med en exakt geografisk position, också för andra än professionella fotografer. Alla använder inte flygplan för att flyga över ett visst område med automatisk lagring av GPS-data. Det finns en omedelbar användning för miljöplanerare, militär, polis, byggfirmor och fastighetsmäklare. </para>
+
+        <para
+>Men om man har glömt var bilden togs efter en viss tid, eller om man tycker om den trevliga funktionen att kunna visa en webbläsare som zoomar in på platsen med ett enkelt klick, eller om man vill skicka bilden som vykort till en annan användare av &digikam; (som då kan se var bilden togs), eller om man helt enkelt behöver dokumentationsmöjligheten - då är det utmärkt att ha positionsdata lagrad i bilden. </para>
+
+    </abstract>
+
+    <keywordset>
+        <keyword
+>GPS</keyword>
+        <keyword
+>Karta</keyword>
+    </keywordset>
+</chapterinfo>
+
+<title
+>Geografisk lokalisering</title>
+    <para
+>GPS (det globala positioneringssystemet) används som en generell beteckning i hela dokumentet, och det betyder bara en plats angiven med det vanliga sfäriska koordinatsystemet som kan visas på en karta. Själva den tekniska lösning som tillhandahåller informationen kan vara det amerikanska GPS, det ryska GLONAS, det europeiska GALILEO eller vilket annat system som helst. </para>
+
+    <para
+>Det finns fyra verktyg rörande geografisk lokalisering i &digikam-app; och två i &showfoto;: </para>
+        <orderedlist numeration="arabic">
+
+            <listitem
+><para
+>Kartläget för bildområdet som visar bilder med GPS-data på en karta beroende på markeringen i vänster sidorad, t.ex. bilderna i albumet som markerats i albumvyn, bilderna med en viss tilldelad etikett (markerade i etikettvyn), med en viss beteckning, och så vidare. Det är bara tillgängligt i &digikam-app;. </para
+></listitem>
+    
+            <listitem
+><para
+>Kartvyn i vänster sidorad i &digikam-app;, som är sökverktyget för att hitta bilder enligt deras GPS-information. Den är också bara tillgänglig i &digikam-app;. </para
+></listitem>
+
+            <listitem
+><para
+>Den geografiska lokaliseringseditorn som vi beskriver i det här kapitlet, och som går att komma åt via <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenu
+>Objekt</guimenu
+><guimenuitem
+>Redigera geografisk plats...</guimenuitem
+></menuchoice
+> (<menuchoice
+><guimenu
+>Arkiv</guimenu
+><guimenuitem
+>Redigera geografisk plats...</guimenuitem
+></menuchoice
+> i &showfoto;). </para
+></listitem>
+
+            <listitem
+><para
+>Fliken <link linkend="using-sidebar-maps"
+>Karta</link
+> i höger sidorad som visar bildens plats på en karta, och enbart är informativ. </para
+></listitem>
+
+        </orderedlist>
+    <para
+>Alla fyra är baserade på den grafiska &marble;-komponenten. </para>
+
+    <note
+><para
+>Verktygen fungerar bara med bildformat som har stöd för EXIF- eller XMP-metadata av <ulink url="http://www.exiv2.org"
+>Exiv2-biblioteket</ulink
+>. </para
+></note>
+
+    <sect1 id="tool-geolocationeditor"
+>  <title
+>Geografisk lokaliseringseditor</title>
+    
+        <para
+>Den geografisk lokaliseringseditorn gör det möjligt att lägga till och redigera GPS-koordinater i bildmetadata. Den geografiska informationen lagras i bilden (EXIF-taggar) och platsen kan visas på en intern eller extern webbläsares karta. Den geografisk lokaliseringseditorn erbjuder också ett verktyg för <firstterm
+>omvänd geografisk lokalisering</firstterm
+>. </para>
+        <para
+>Den geografisk lokaliseringseditorn kan öppnas via menyalternativet <menuchoice
+><guimenu
+>Objekt</guimenu
+> <guimenuitem
+>Redigera geografisk plats</guimenuitem
+></menuchoice
+> eller genom att trycka på <keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>G</keycap
+></keycombo
+>. Det kräver att minst en bild är markerad annars öppnas den inte. </para>
+        
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;tool-geolocation-editcoords.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Den geografiska lokaliseringseditorn tillhandahåller verktyg för att lokalisera bilder geografiskt med det vanliga sfäriska koordinatsystemet (som används av GPS och Galileo). Höjd, latitud och longitud, hastighet, antal satelliter, fixeringstyp och DOP går att redigera. </para>
+       
+        <para
+>Editorn har två sätt att markera bilder med koordinater: </para>
+        
+        <itemizedlist>
+            <listitem
+><para
+>Halvautomatisk tilldelning av koordinater för enstaka bilder, som kan kommas åt via fliken <guilabel
+>Detaljer</guilabel
+> i höger sidorad. </para
+></listitem>
+            <listitem
+><para
+>Korrelation i bakgrunden av GPS-spårdata med en serie bilder som finns under fliken <link linkend="geolocation-correlator"
+>Korrelationsverktyg för GPS</link
+>. </para
+></listitem>
+        </itemizedlist>
+        
+        <para
+>Dessutom erbjuder höger sidorad ytterligare tre verktyg: </para>
+        
+        <itemizedlist>
+            <listitem
+><para
+>Fliken <guilabel
+>Ångra och gör om</guilabel
+>. </para
+></listitem>
+            <listitem
+><para
+>Fliken <guilabel
+>Omvänd geografisk kodning</guilabel
+> som gör det möjligt att hitta geografiska namn (städer, gatunamn, ...) genom att använda en öppen tjänst för omvänd geografisk kodning och GPS-data från en bild. </para
+></listitem>
+            <listitem
+><para
+>Fliken <guilabel
+>Sök</guilabel
+> som gör det möjligt att hitta positioner på kartan från geografiska namn (städer, monument, ...) genom att använda en öppen tjänst för geografiska namn (GeoNames och OpenStreetMap när det här skrivs). </para
+></listitem>
+        </itemizedlist>
+    
+        <sect2 id="geolocation-map"
+>       <title
+>Kartan</title>
+            
+            <para
+>Se kapitel 2 i handbok &marble; för navigering på kartan. Se också dokumentationen över &marble; för den sammanhangsberoende himmelsmenyn. </para>
+            
+            <para
+>Direkt under kartan finns en rad knappar. Jag använder verktygstipsens texter som beteckningar i följande beskrivning. Från vänster till höger har vi: <itemizedlist>
+                    <listitem
+><para
+>Knappen för kartinställning visar en liten meny som låter dig välja mellan Google-kartor och &marble;, och beroende på det valet välja vilken sorts karta som du vill använda. Dessutom kan projektionen väljas för &marble; (sfärisk, Merkator, ekvirektangulär), och du kan visa ett fåtal ytterligare verktyg som kompass och skala på kartan. </para
+></listitem>
+                    <listitem
+><para
+>Knappen för att zooma in. </para
+></listitem>
+                    <listitem
+><para
+>Knappen för att zooma ut. </para
+></listitem>
+                    <listitem
+><para
+>Knappen för byte mellan markörer och miniatyrbilder låter dig välja om du vill att bildernas position ska indikeras av markörsymboler eller av en miniatyrbild på kartan. Om du väljer miniatyrbilder, är följande två knappar särskilt intressanta. </para
+></listitem>
+                    <listitem
+><para
+>Knappen för att öka miniatyrbildernas storlek på kartan gör just det och ... </para
+></listitem>
+                    <listitem
+><para
+>... också knappen för att minska miniatyrbildernas storlek på kartan. </para
+></listitem>
+                    <listitem
+><para
+>Knappen för panoreringsläge låter dig flytta kartan genom att vänsterklicka och hålla nere, och sedan dra den med musen till platsen du behöver. Markörsymbolen ändras till en hand. </para
+></listitem>
+                    <listitem>
+                        <para
+>Knappen för att zooma in i en grupp är användbar om du har bilder så nära varandra på kartan att alla utom den översta är dolda. När du väl klickar på den synliga bilden, justeras zoomfaktorn så att alla andra bilder bakom den blir synliga. Om du klickar på en grupp bilder och ingenting verkar hända, har de antingen exakt samma geografiska position och/eller är zoomfaktorn redan maximal. </para>
+                        <para
+>Observera att <quote
+>grupp</quote
+> i det här sammanhanget inte har någonting att göra med grupperade bilder som beskrivs i kapitel 2 i handbok &digikam-app;. Här avser begreppet bilder som är mycket nära varandra på kartan (beroende på zoomfaktorn), eller har exakt samma geografiska position. </para>
+                    </listitem>
+                    <listitem
+><para
+>Knappen för att välja bilder växlar markeringen av en bild eller en grupp av bilder i bildlistan precis nedanför knapparna, när du väl klickar på den på kartan. Markeringsstatus för alla andra bilder i listan förblir oförändrad. Var medveten om det faktum att det finns en sorts tvåstegsmarkering. Om du klickar på en miniatyrbild eller markör på kartan får de markerade bilderna i bildlistan en ljusblå bakgrund. Om du klickar på dem i listan blir bakgrunden mörkare blå, och om det fanns mer än en bild med ljusblå bakgrund innan de andra, blir de avmarkerade. Förhandsgranskningen för en bild till höger om listan visas bara genom att klicka på den i listan. </para
+></listitem>
+                    <listitem
+><para
+>Knappen för att visa positioner på kartan med bokmärken fungerar inte när det här skrivs, eftersom hela hanteringen av bokmärken måste organiseras om. Det påverkar också alternativet <menuchoice
+><guimenu
+>Bokmärken</guimenu
+> <guimenuitem
+>Redigera bokmärken...</guimenuitem
+></menuchoice
+> i den sammanhangsberoende menyn för listan med bilder under kartan, och alternativet <guilabel
+>Lägg till bokmärke</guilabel
+> i kartans sammanhangsberoende meny. </para
+></listitem>
+                </itemizedlist>
+                
+                <anchor id="bookmarkstatus.anchor"/>
+
+                <warning>
+                    <para
+>Användning av <guilabel
+>Lägg till bokmärke</guilabel
+> i den sammanhangsberoende menyn på kartan kan leda till att dina bokmärken i &marble; går förlorade. </para>
+                </warning>
+ 
+            </para>
+            
+            <para
+>Bara alternativet <guilabel
+>Kopiera koordinater</guilabel
+> från kartans sammanhangsberoende meny är av intresse för geografiska etiketter. Det kopierar de geografiska koordinaterna för pekarens position till klippbordet. Se handbok &marble; för alla andra menyalternativ. </para>
+            
+            <para
+>Observera att du kan ändra layout från en karta till två kartor, intill eller ovanpå varandra, med den lilla kombinationsmenyn längst ner i den geografiska lokaliseringseditorn. </para>
+            
+        </sect2>
+
+        <sect2 id="geolocation-edit-coordinates"
+>       <title
+>Redigera koordinater</title>
+            <para
+>Koordinaterna kan ställas in manuellt under fliken <guilabel
+>Detaljinformation</guilabel
+> (se skärmbilden ovan). Platsen kan lokaliseras och fastställas iterativt med kartan som visas. Flytta muspekaren till det intressanta området, zooma in, justera platsen, zooma in igen, och så vidare till tillräcklig noggrannhet uppnås. Observera att zoomningens centrum alltid är vid pekarens position. Till sist, klicka med höger musknapp på önskad position och välj <guilabel
+>Kopiera koordinater</guilabel
+>. Nu kan du gå till bildlistan under kartan, markera en eller flera bilder, klicka med höger musknapp på dem och välja <guilabel
+>Klistra in koordinater</guilabel
+>. Koordinaterna visas sedan i fälten Latitud och Longitud till höger om kartan. Klicka på knappen <guilabel
+>Verkställ</guilabel
+> direkt under fältet <guilabel
+>DOP</guilabel
+> för att spara ändringarna. </para>
+            
+            <para
+>Om du har en eller flera bilder som redan har GPS-data kan koordinaterna kopieras från en av dem och klistras in i en eller flera andra bilder genom att använda respektive alternativ i den sammanhangsberoende menyn i bildlistan. Det är praktiskt om det finns en serie foton tagna på samma plats. </para>
+            
+            <para
+>Till höger om kartan finns förutom latitud och longitud, fält för höjd, hastighet, antal satelliter, fixtyp och osäkerhet (DOP). Du kan se att fälten redan är ifyllda om du markerade ett fotografi där kameran skrivit in informationen i EXIF-data. Annars kan den fyllas i manuellt, om du har data någon annanstans ifrån, t.ex. en separat GPS-mottagare. Observera att du måste markera relevant kryssruta innan ett fält kan redigeras (på &Windows; kan du behöva dubbelklicka på det). Enbart för <guilabel
+>Höjd</guilabel
+> erbjuder den sammanhangsberoende menyn i bildlistan <guilabel
+>Slå upp saknade höjdvärden</guilabel
+>, vilket gör att editorn slår upp data i kartdata under förutsättning att positionen (latitud och longitud) redan är tilldelad till fotografiet. </para>
+            
+            <para
+>För att ta bort geografisk lokaliseringsinformation måste du avmarkera relevant kryssruta och klicka på knappen <guilabel
+>Verkställ</guilabel
+> direkt under fältet <guilabel
+>DOP</guilabel
+>. Förutom det, erbjuder den sammanhangsberoende meny för bildlistan alternativ för att ta bort en del data från bilden. Angående det sista alternativet <guilabel
+>Bokmärken</guilabel
+>, se <link linkend="bookmarkstatus.anchor"
+>här</link
+>. </para>
+            
+        </sect2>
+
+        <sect2 id="geolocation-correlator"
+>       <title
+>Korrelationsverktyget</title>
+            <para
+>För att kunna korrelera bilder med geografisk data måste GPS-spårinformation vara tillgängligt som en XML-fil med <literal
+>GPX</literal
+>-format (<application
+><ulink url="http://www.gpsbabel.org"
+>gpsbabel</ulink
+></application
+> och <application
+><ulink url="http://gpsman.sourceforge.net/"
+>gpsman</ulink
+></application
+> kan ladda ner och konvertera spårdata från en GPS-enhet åt dig). Idén är att hålla igång en GPS-enhet medan bilderna tas och bära omkring den med kameran. När det är klart, ladda ner bilderna och GPS-spåret, och utför korrelationen. </para>
+
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-correlate1.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+
+            <para
+>Markera bilderna du vill korrelera i programmets huvudvy, och anropa den geografiska lokaliseringseditorn med <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenuitem
+></guimenuitem
+></menuchoice
+> och gå till fliken <guilabel
+>Korrelationsverktyg för GPS</guilabel
+> i höger sidorad. Dialogrutan ovan dyker upp med de markerade bilderna i en lista under kartan. För att ange möjlig korrelation mellan tid och plats måste du ladda en spårfil med <guilabel
+>Ladda GPX-fil</guilabel
+>, som innehåller GPS-data från samma tid och plats som bilderna togs med kameran. </para>
+
+            <para
+>När filen läses in och <guilabel
+>Visa spår på kartan</guilabel
+> är markerad, visas spåret på kartan. Det går att läsa in mer än en fil, och &digikam; tilldelar dem olika färger och visar spåren på kartan i enlighet med det. </para>
+
+            <para
+>GPS-spårdata lagras undantagslöst med UTC (Universal Time Coordinated), så kamerans tid måste matchas med UTC, vilket går att göra med <guilabel
+>Kamerans tidszon</guilabel
+>. Välj <guilabel
+>Samma som systemet</guilabel
+> om fotografierna togs i din hemmatidszon så räknar &digikam; ut skillnaden mellan UTC och systemtiden. Om fotografierna togs någon annanstans, måste du markera <guilabel
+>Manuell:</guilabel
+> och välja lämplig skillnad i kombinationsfältet till höger. Det går att använda samma mekanism för att rätta en enkel feljustering av kamerans tid av någon anledning, eller en tidsskillnad i en GPX-fil orsakad av egendomligheter i den programvara som användes för att konvertera andra spårfilformat till GPX. Här kommer <guilabel
+>Fin skillnad (mm:ss)</guilabel
+> in i bilden där du kan lägga till eller ta bort upp till 59 minuter och 59 sekunder för tidsskillnaden vald i fältet ovan. </para>
+
+            <para
+>Inställningen <guilabel
+>Maximal tidslucka (s):</guilabel
+> anger gränsen som GPS-tiden och kameratiden ska anse överensstämma inom. Det maximala värdet är 2000 sekunder. Det betyder att om ingen post i GPX-filen motsvarar fotografiets tidsstämpel exakt, tilldelas positionen för posten med det minsta tidsluckan till det under förutsättning att tidsluckan är mindre än inställningen <guilabel
+>Maximal tidslucka (s):</guilabel
+>. Om du undrar vilket värde som bör anges här, kan det hjälpa att titta på inställningarna i spårinspelningsenhet eller programvaran, eller i GPX-filen (vilket är enkelt att göra med en texteditor). Ju snabbare du rörde dig när fotografierna togs, desto viktigare är beslutet. </para>
+
+            <para
+><guilabel
+>Interpolera</guilabel
+> erbjuder ett annat alternativ ifall det inte finns någon exakt träff mellan tidsstämpeln i fotografierna och någon post i GPX-filen, och du rörde dig någorlunda rakt mellan två lagrade GPS-positioner är det ett noggrannare alternativ. Här beräknas fotografiets position (med linjär interpolation) från de två närmaste positionerna i GPX-filen och respektive tidsskillnader. Om exempelvis tidsluckorna mellan de två närmaste posterna och fotografiet är lika, blir positionen som tilldelas precis på mitten av  en rak linje mellan positionerna. </para>
+            
+            <para
+><guilabel
+>Maximal tidslucka för interpolation (min):</guilabel
+> bestämmer om en GPS-punkt är lämplig för interpolation. Om tiden är längre från bildens tid än gränsen, kan den inte användas. Den maximala tidsskillnaden som kan definieras här är 240 minuter. </para>
+            
+            <para
+>När inställningarna väl är klara klickar du på knappen <guilabel
+>Korrelera</guilabel
+>. Om det inte finns någon träff är allt du får meddelandet "Kunde inte korrelera någon bild. Försäkra dig om att inställningar av tidsskillnad och tidslucka är riktiga." Annars får du något som "Korrelation har utförts för 2 av 4 bilder. Kontrollera inställningar av tidsskillnad och tidslucka om du anser att fler bilder skulle ha korrelerats." I bästa fall får du "Alla bilder har korrelerats. Du kan nu kontrollera deras position på kartan." </para>
+            
+            <para
+>Om du vill följa rekommendationen är det en god idé att gå till fliken <guilabel
+>Detaljer</guilabel
+> eftersom det finns en förhandsgranskning av bilderna som kan vara till stor hjälp när de ska identifieras på kartan. Kom ihåg att du alltid måste klicka på en bild i listan under kartan för att få dess förhandsgranskning att dyka upp. När du väl är nöjd med resultatet, klicka på knappen <guilabel
+>Verkställ</guilabel
+> längst ner i den geografiska lokaliseringseditorn för att spara ändringarna i bildfilen och i databasen. </para>
+
+        </sect2>
+        
+        <sect2 id="geolocation-undo-redo"
+>       <title
+>Ångra och Gör om</title>
+            <para
+>Under fliken <guilabel
+>Ångra/Gör om</guilabel
+> lagras historik för alla ändringar som utförs i bilderna som lästs in i den geografiska lokaliseringseditorn. Historiken visar ändringar ändringar som görs under en flik eller flera flikar och tas bort när editorn väl avslutas. Efter några åtgärder under olika flikar kan historiken se ut så här: </para>
+            
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-undo1.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+                
+            <para
+>Det senaste steget är markerat när fliken visas. Det första steget är alltid markerat <quote
+>tom</quote
+> och representerar status som bilderna hade när de lästes in. Det går att klicka på varje steg, och beroende på vilka ändringar som gjordes kan bilder dyka upp, försvinna eller flyttas på kartan, eller så kan skillnader visas i bildlistan under kartan. Observera att listan går att ställa in genom att klicka med höger musknapp på rubriken. </para>
+            
+            <para
+>Låt oss nu anta att du inser att förflyttningen i det senaste steget var felaktig. Klicka bara på steget innan (Information ändrad), så kommer du till fliken <guilabel
+>Sök</guilabel
+> (ytterligare beskriven nedan) och kan göra en annan förflyttning. Efter att ha kommit tillbaka till fliken <guilabel
+>Ångra/Gör om</guilabel
+> kan den se ut så här: </para>
+            
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-undo2.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+        </sect2>
+        
+        <sect2 id="geolocation-reverse-geocoding"
+>       <title
+>Omvänd geografisk kodning</title>
+            <para
+>Under den här fliken kan du använda en öppen tjänst för geografiska namn för att slå upp adressinformation för den geografiska positionen för en eller flera bilder och konvertera den till etiketter. För att göra det behövs några förberedelser. Du bör redan vara bekant med idén bakom etiketter och hur man skapar, redigerar och använder dem. Det bästa inledningen till ämnet hittar du i avsnittet Etikettvy i kapitel 2 av handbok &digikam-app;. </para>
+            <para
+>Först ska du skapa en rotetikett med etiketthanteringen eller med etiketträdet i vänster eller höger sidorad. Det kan namnges Lokalisering eller Platser eller ... </para>
+            <para
+>Därefter markerad du bilden eller bilderna som ska etiketteras (de måste ha tilldelad GPS-data), öppnar den geografiska lokaliseringseditorn och klickar på fliken <guilabel
+>Omvänd geografisk kodning</guilabel
+>. Då visas ditt etiketträd och om du klickar med höger musknapp på en etikett, helst en som skapades för geografiska etiketter, visas följande sammanhangsberoende meny: </para>
+            
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-reverse1.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+
+            <para
+>I huvudsektionen sorteras etiketterna som kan läggas till från det största området (land) ner till det minsta (husnummer). Om du väljer <guilabel
+>Lägg till alla adresselement</guilabel
+> och därefter viker ut platsetiketten och alla deletiketter får du följande: </para>
+
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-reverse2.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+
+            <para
+>De röda etiketterna inom klammerparenteser kallas kontrolletiketter. De bestämmer vilka adresselement som du vill att tjänsten för omvänd geografisk kodning du har valt längst upp under <guilabel
+>Välj tjänst</guilabel
+> ska leta efter. Du kan fortfarande ta bort några av dem med hjälp av den sammanhangsberoende menyn om du anser att de inte behövs, eller ändra strukturen genom att ta bort några kontrolletiketter och lägga till dem på andra platser i trädet, eller till och med skapa ett nytt träd parallellt till det första genom att lägga till en kontrolletikett i rotetiketten (här: Location). Att arrangera kontrolletiketterna på samma nivå istället för i en trädstruktur kan spara många överflödiga etiketter, eftersom samma stads- eller ortnamn finns i mer än en stat eller land, alldeles bortsett från gatunamn. Men det kan göra hela platsgrenen i etiketträdet rätt lång och därför svårberäknad. Det vill säga att du måste hitta en egen lösning på problemet baserat på dina behov, kanske en blandning, och ju snabbare du hittar den, desto mindre arbete måste du lägga ner på att redigera etiketträdet och kontrolletiketterna. </para>
+            <para
+>Låt oss anta att du använder kontrolletiketterna som visas på skärmbilden, markera bilderna som du vill etikettera i bildlistan till vänster och klicka på <guilabel
+>Utför omvänd geografisk kodning</guilabel
+>. Därefter kan etiketträdet likna följande: </para>
+ 
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-reverse3.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+            
+            <para
+>De gröna etiketterna representerar sökresultaten för den valda öppna tjänsten för omvänd geografisk kodning och har redan tilldelats till bilden eller bilderna. För att spara etiketterna i bildfilen och &digikam;s databas klicka på <guilabel
+>Verkställ</guilabel
+>. Etiketterna dyker upp som vanliga etiketter i etiketträdet som du redan kan se här eller i etiketträdet i vänster eller höger sidorad. Du kan naturligtvis redigera dem som vilken annan etikett som helst i etiketthanteraren eller i vänster eller höger sidorad, men inte här i den geografiska lokaliseringseditorn. </para>
+
+        </sect2>
+        
+        <sect2 id="geolocation-search"
+>       <title
+>Sök</title>
+            <para
+>Under fliken <guilabel
+>Sök</guilabel
+> kan du slå upp platser enligt deras geografiska namn genom att använda öppna tjänster för geografiska namn (GeoNames och OpenStreetMap när det här skrivs). Man skriver bara in namnet på en plats (stad, monument, hotell, ...) i inmatningsfältet längst upp och klickar på <guilabel
+>Sök</guilabel
+>. Då får man något som liknar följande i resultatlistan nedanför: </para>
+            
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="tool-geolocation-search.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+            
+            <para
+>Uppenbarligen finns Paris inte bara i Frankrike. Så om du letade efter Frankrikes huvudstad kan du antingen gå neråt i listan till du hittar en post som utan tvekan hör hemma där, såsom "Arc de Triomphe" och klicka på den, eller ange sökningen mer precist som "Paris, Arc de Triomphe" eller "Paris, Frankrike". När du väl klickar på en post i listan centreras kartan på platsen och det går att zooma in med inzoomningsknappen (den andra från vänster under kartan). Vid användning av det här exemplet med GeoNames märker du att man fortfarande får en mängd resultat och till och med två som bara kallas "Arc de Triomphe", det andra en gata några undra meter från triumfbågen. Med OSM får man bara ett resultat. Man måste prova lite grand med de olika tjänsterna i olika områden, med mer eller mindre precisa sökbegrepp, för att få en idé om hur man söker på bästa sätt. </para>
+            <para
+>Resultatlistan hänvisar till verktygstipsen för knapparna precis ovanför. Den sammanhangsberoende menyn för poster i sökresultatet erbjuder: </para>
+            
+            <itemizedlist>
+                <listitem
+><para
+><guilabel
+>Kopiera koordinater</guilabel
+> som senare kan klistras in i en eller flera bilder i bildlistan under kartan</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Flytta markerade bilder till den här positionen</guilabel
+> som egentligen är samma sak, men mer rättframt, under förutsättning att bilderna redan är inlästa i den geografiska lokaliseringseditorn.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Ta bort från resultatlista</guilabel
+> som är särskilt användbart i samband med knappen för att behålla resultaten av gamla sökningar ovanför resultatlistan.</para
+></listitem>
+            </itemizedlist>
+
+        </sect2>
+    </sect1>
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

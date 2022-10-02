@@ -1,0 +1,142 @@
+<chapter id="tool-htmlgallery">
+<chapterinfo>
+
+<abstract>
+<para
+>HTML-galleri är ett verktyg för att exportera en uppsättning album eller bilder till en &HTML;-sida. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>HTML-galleri</title>
+
+<para
+>Det här kraftfulla verktyget kan exportera dina album till ett &HTML;-kompatibelt galleri med webbilder. Det är enkelt att välja album att exportera till en &HTML;-sida och ställa in många designer och parametrar för &HTML;-återgivningen. Kodningen UTF-8 används för bästa internationalisering. </para>
+
+<sect1 id="using-tool-htmlgalleryalbumselection">
+<title
+>Dialogruta för albumval</title>
+
+<para
+>När verktyget startas inifrån &digikam; visas tre flikar för att ändra inställningarna. Fliken <guilabel
+>Mina album</guilabel
+> gör det möjligt att välja alla album som ska exporteras till &HTML;. Markera bara respektive album (de visas utan hierarkiska nivåer). Under de följande två flikarna, <guilabel
+>Mina etiketter</guilabel
+> och <guilabel
+>Mina sökningar</guilabel
+> kan urvalet förfinas genom att använda etiketter eller tidigare sökresultat i &digikam;. </para>
+
+<figure id="htmlgallery-album-selection-dialog">
+    <title
+>Dialogrutan för albumval i &digikam;</title>
+    <mediaobject
+><imageobject>
+      <imagedata srccredit="The Album Selection Dialog" fileref="tool-htmlgallery-albumselection.png"/>
+    </imageobject
+></mediaobject>
+</figure>
+
+<para
+>Nästa steg är att välja ett tema för galleriet med den här dialogrutan: </para>
+
+<figure id="htmlgallery-themeselection-dialog">
+    <title
+>Dialogrutan för temaval</title>
+    <mediaobject
+><imageobject>
+      <imagedata srccredit="The Theme Selection Dialog" fileref="tool-htmlgallery-themeselection.png"/>
+    </imageobject
+></mediaobject>
+</figure>
+
+<para
+>Beroende på valt tema kan det finnas ytterligare alternativ för att finjustera galleriets utseende. </para>
+<para
+>Nästa skärmbild visar temaparametrarna för temat <guilabel
+>Klassiskt</guilabel
+>: </para>
+<figure id="htmlgallery-themeparameters-dialog">
+    <title
+>Parametrar för det klassiska temat</title>
+    <mediaobject
+><imageobject>
+      <imagedata srccredit="Parameters for Classic Theme" fileref="tool-htmlgallery-themeparameters.png"/>
+    </imageobject
+></mediaobject>
+</figure>
+
+<para
+>För alla valda teman går det att justera inställningar för bilderna och miniatyrbilderna i galleriet: </para>
+
+<figure id="htmlgallery-imagesettings-dialog">
+    <title
+>Dialogruta för bildinställningar och miniatyrbilder</title>
+    <mediaobject
+><imageobject>
+      <imagedata srccredit="The Image Settings and Thumbnails Dialog" fileref="tool-htmlgallery-imagesettings.png"/>
+    </imageobject
+></mediaobject>
+</figure>
+
+<para
+>Under sektionen <guilabel
+>Hela bilden</guilabel
+> kan antingen ändrade bilder sparas eller <guilabel
+>Använd originalbild</guilabel
+> väljas. </para>
+<para
+>För ändrade bilder kan du välja utdataformatet JPEG (minsta filstorlek, men destruktivt) eller PNG (förlustfritt och fri licens) och ange specifika bildkomprimeringsfunktioner. Om diskutrymme är av intresse, kontrollera resultatbildernas komprimering och minska komprimeringsnivån från värddatorprogrammets förvalda värde. </para>
+<para
+>Genom att markera rutan <guilabel
+>Maximal storlek</guilabel
+> kan resultatets maximala storlek (i bildpunkter) bestämmas med nummerrutan till höger. Bilder större än värdet skalas ner till det, medan mindre bilder inte ändras. </para>
+<note
+><para
+>Om JPEG-filformatet väljes för storleksändrade bilder, bevaras all EXIF-information från JPEG-originalfilerna. </para
+></note>
+
+<para
+>Sektionen <guilabel
+>Miniatyrbilder</guilabel
+> gör det möjligt att ställa in <guilabel
+>Format</guilabel
+>, <guilabel
+>Kvalitet</guilabel
+> och <guilabel
+>Storlek</guilabel
+> för miniatyrbilderna i galleriet. </para>
+
+<figure id="htmlgallery-output-dialog">
+    <title
+>Dialogruta för utdata</title>
+    <mediaobject
+><imageobject>
+      <imagedata srccredit="The Output Dialog" fileref="tool-htmlgallery-output.png"/>
+    </imageobject
+></mediaobject>
+</figure>
+
+<para
+>Sidan definierar inställningarna av var och hur galleriet lagras, med alla sina tillhörande bilder. Välj en katalog eller lägg till en ny katalog med skrivåtkomst, där du vill att galleriet ska skrivas. Två underkataloger med namnet på albumkatalogen och temat skapas som innehåller allting. </para>
+
+<para
+>En förloppsdialogruta som ger en återmatningsindikering till användaren. Klicka på knappen <guilabel
+>Avbryt</guilabel
+> under detta steg om du vill avbryta processen. </para>
+
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

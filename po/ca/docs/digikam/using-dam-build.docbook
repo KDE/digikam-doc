@@ -1,0 +1,272 @@
+<sect2 id="using-dam-build">
+    <title
+>Construir un sistema per organitzar i trobar les fotografies</title>
+
+    <para
+>Temes: la jerarquia, les etiquetes, la valoració, les llegendes, la geolocalització, la data, els àlbums, els noms de fitxer, el control de versions, l'exportació </para>
+
+    <para
+>M'atreveixo a dir que si teniu més de 1.000 fotografies a l'ordinador sense cap gestió DAM, trigareu molt temps trobar alguna imatge en particular. I si no sabeu quantes imatges hi ha a l'arxiu, és que segurament no esteu utilitzant el &digikam;. L'enfocament doble d'emmagatzemar les metadades en una base de dades <emphasis
+>i</emphasis
+> als fitxers d'imatge garanteix una cerca ultraràpida i un arxivat segur de lliure accés amb altres aplicacions, plataformes i formats. </para>
+
+    <para
+>Però així com no hi ha un dinar gratis, no hi ha cap catalogació o DAM gratuïta. Aquells que passin un temps inicial per a construir un mètode sistemàtic, milloraran amb el pas del temps i multiplicaran el nombre de fotografies. El ROI (retorn sobre la inversió -return on investment-) de la DAM s'ha estimat en diferents estudis com millor que 10. Tingueu en compte el ser <command
+>concís, un pla per al futur (30 o 50 anys), fer-ho un cop</command
+>. El web semàntic resultant s'integrarà completament i afegirà valor a un entorn DAM. </para>
+
+    <sect3 id="case-for-digikam"
+> <title
+>Un cas per fer DAM amb el &digikam;</title>
+
+        <para
+>El &digikam; proporciona una sèrie de mètodes per a classificar les fotografies: noms de fitxer, àlbums, col·leccions, data + hora, etiquetes, valoració, la posició GPS i les llegendes. Com si això no fos suficient, podeu cercar molts elements de metadades estàndard com el model de la càmera, lent, coordenades, mida de la imatge i molts més. Les categories de les metadades llistades aquí en realitat són les diferents «vistes» de la vostra biblioteca de fotografies. La combinació d'aquestes vistes és <emphasis
+>un</emphasis
+> mètode molt eficaç per a limitar la cerca d'un fitxer i trobar-lo ràpidament. Imagineu que teniu 800 fotografies d'una persona estimada. La cerca de «Maria», amb una valoració més alta de «***», presa a «França» sense dubte us donarà molt poques candidates. Quant als criteris de selecció d'un sistema DAM, el &digikam; es maneja molt bé en termes de suficiència, versatilitat, velocitat, escalabilitat, precisió i transparència. </para>
+
+        <para
+>El punt clau a recordar és que no sabeu si algú altre tractarà de trobar una imatge d'aquí a 2 anys. Recordareu els esdeveniments passats en un context diferent, es tracta d'un fet de la vida. Per tant, si podeu limitar la cerca, recordant el lloc, la data, la càmera, el tema, la valoració o el propietari, procedireu amb una solució infinitament millor per trobar-les més ràpidament que amb un sol criteri o cap en absolut. Anteriorment, en el moment en què es pren la fotografia, totes les metadades es troben al vostre cap (a excepció de les dades EXIF). Si no en transcriviu algunes al vostre sistema DAM, es perdran, ja que gairebé tots els esdeveniments s'obliden amb el temps. </para>
+
+        <para
+>Una distinció serà intervenir entre les metadades <command
+>públiques</command
+> i <command
+>privades</command
+>. Es podria dir que tots els atributs incrustats als fitxers són potencialment públics, atès que les imatges es poden exportar, vendre i copiar a altres llocs. D'altra banda totes les metadades no incrustades en la base de dades es poden considerar privades, ja que romanen a la base de dades i enlloc més. En ajustar la configuració del &digikam; d'acord amb això es pot controlar quin tipus de dades es mantenen privades i les que seran incrustades i finalment fetes públiques. </para>
+
+    </sect3>
+
+    <sect3 id="build-archive"
+> <title
+>Construir l'arxiu: Organització de les carpetes, disposició física com a informació</title>
+
+        <para
+>El primer a fer i saber abans de posar res al vostre sistema és construir una estructura d'informació (com l'oposat a l'estructura de les dades). Els vostres fitxers d'imatge han d'estar organitzats d'alguna manera a l'ordinador, haureu de decidir si altres persones tindran accés a les vostres fotografies (compartir), si les poseu en una unitat dedicada, en una unitat de xarxa, &etc; Tingueu en compte que algun dia les haureu de migrar a un volum més gran. </para>
+
+        <para
+>L'organització haurà de ser simple, unificada i escalable, i haurà de ser independent del suport d'emmagatzematge on s'allotjaran. No feu les carpetes massa petites, diversos milers d'imatges en una carpeta no és molt demanar, però prou petites perquè puguin cabre en un suport de còpia de seguretat com un DVD o un Blue Ray. Recordeu que l'arxiu creixerà sempre! Per descomptat, el tipus concret dependrà de l'estructura del seu cas d'ús: Aprenem amb un exemple simple però freqüent: sou un fotògraf informal que pren fotografies de la seva vida privada, la seva família, les vacances, &etc; Podria ser eficaç el fet de crear una estructura basada en els anys, amb alguns contenidors per a les vacances i exportació. Això podria tenir el següent aspecte: </para>
+
+        <blockquote
+><screen
+>2006
+            2007
+            2008
+            Vacances
+            - A
+            - B
+            - C
+            Exportació
+            Coses interessants
+        </screen
+></blockquote>
+
+        <para
+>Potser sereu feliç amb aquesta estructura. Les fotografies de les vacances es poden trobar ràpidament per la seva ubicació (a menys que aneu al mateix lloc cada any), la resta estaran organitzades per la data. Si preneu prou fotografies, voldreu crear subcarpetes amb els anys, mesos, &pex; 2008-01, 2008-02, &etc; «Exportació» seria un contenidor d'imatges per imprimir o per pujar a un lloc web. </para>
+
+        <para
+>El fotògraf professional té necessitats molt diferents, ja que hi tindrà versions de les fotografies, arxius, fluxos de treball, un flux constant d'imatges de diferents temes i una gran quantitat de tot. D'aquí a 10 anys tindrà els arxius al 95% i els fitxers al 5% de l'espai de treball de manera que no voldreu organitzar l'estructura de tot el contingut! </para>
+
+        <para
+>La consideració és la següent: </para>
+
+        <itemizedlist>
+            <listitem
+><para
+>Quins tipus de fitxers van junts? La segregació segons el tipus de fitxer fa més fàcil el processament per lots. Mantenir els fitxers nous i antics separats.</para
+></listitem>
+            <listitem
+><para
+>Com podeu fer que l'estructura sigui escalable?</para
+></listitem>
+            <listitem
+><para
+>La segregació dels fitxers originals i amb treball fa que sigui més fàcil assignar una estratègia per a la còpia de seguretat i migració. Sempre sabreu si esteu mirant un original o un derivat.</para
+></listitem>
+        </itemizedlist>
+
+    </sect3>
+
+    <sect3 id="automatic-metadata"
+> <title
+>Generar automàticament les metadades</title>
+
+        <para
+>Com seguir tot aquest assumpte de les metadades? En primer lloc, ja hi ha un munt de <command
+>metadades generades automàticament</command
+>: les dades EXIF ​​i Notes del fabricant. Si heu configurat el &digikam; amb la vostra secció d'identitat, totes les imatges importades s'imprimiran amb aquest conjunt de dades que inclouen els drets d'autor, tot automàticament. Si esteu gravant en paral·lel un seguiment GPS mentre preneu les fotografies, les podreu geolocalitzar amb una sola acció utilitzant l'eina de geolocalització. Encara que preneu més de 1.000 imatges en una sessió, no passaran més de 10 minuts per fer tot això. I ara teniu tota la configuració de la càmera per a cada presa, les dades de la lent com el zoom, enfocament, obertura, &etc; la data i l'hora, ubicació de la presa, drets d'autor, autoria, el programa utilitzat, i molt més. No està malament, no? Però podríem haver fet més durant la importació, canviant el nom del fitxer per incloure la data, el lloc o el tema, es podria haver canviat a un format sense pèrdua de 16 bits per canal, es podria haver fet la separació automàtica dels fitxers JPEG i RAW en les seves carpetes. De fet, recomanen canviar el nom automàticament perquè coincideixi amb un esdeveniment, un lloc o un tema. El &digikam; proporciona tota l'agrupació relacionada amb la data/calendari de manera que no hi ha gairebé necessitat de codificar la data en el nom del fitxer. Llevat que us agradi fer precisament això per a navegar pels vostres àlbums amb una altra aplicació que no reconegui el calendari. Si heu comprat una càmera nova o si teniu una segona. L'esquema de numeració per a la nova càmera tornarà a començar des del típic IMG_0001.JPG una altra vegada, es crearan noms de fitxer idèntics als que ja teniu si no canvieu el nom. En canviar el nom disminuirà la possibilitat de sobreescriure inadvertidament en una data posterior. Manteniu nets els noms nous, utilitzeu caràcters alfanumèrics, guions, guions baixos i amb un sol punt abans de l'extensió del fitxer. </para>
+
+        <para
+>També recomano canviar les opcions de «desar les metadades» a la pàgina de configuració del &digikam; per a les metadades. Això assegurarà que les dades EXIF ​​i IPTC s'escriuran al fitxer. Si us oblideu de fer-ho, sempre les podreu posar al dia copiant les metadades de la base de dades als fitxers d'una sola vegada (des del menú Àlbum). </para>
+
+        <para
+>Ara tenim un munt de coses que ja es troben a la base de dades, però i si cal canviar res? El &digikam; proporciona un editor de metadades per a un nombre seleccionat d'atributs, òbviament els més importants. </para>
+
+        <para
+>El treball real començarà aquí, a mesura que s'apliquin les etiquetes, les llegendes i una valoració a cada fotografia. Per descomptat, totes les imatges que requereixin el mateix atribut es poden tractar com a una selecció en una acció. Començarem amb la valoració o classificació. El millor és començar amb la classificació, perquè en el treball futur pugueu concentrar-vos en bones captures. </para>
+
+    </sect3>
+
+    <sect3 id="ranking"
+> <title
+>Valorar/Classificar</title>
+
+        <para
+>El &digikam; implementa una classificació sistemàtica per a l'eina de valoració de 5 estrelles. De fet, hi ha 6 nivells, de zero a cinc estrelles (*) que es poden atribuir (en desar-les a les metadades IPTC, una traducció dels nivells serà garant de la compatibilitat amb altres programes). La valoració s'aplicarà ràpidament amb el &digikam; emprant dreceres de teclat o el ratolí sobre cada fotografia o seleccions senceres. La valoració es pot introduir com a criteri de cerca o directament des dels filtres ràpids a la barra d'estat. No obstant això, abans de començar l'atribució d'estrelles a tot arreu, preneu-vos un moment per establir criteris personals per a la classificació. Una bona pràctica és la d'escriure la vostra atribució personal d'estrelles amb alguna expressió qualitativa, el qual definirà el que en realitat significa donar 5 estrelles. En general, hi hauria d'haver moltes menys imatges valorades amb l'assignació d'estrelles. Una proporció de 3 a 10 entre cada nivell ha demostrat ser útil. Això permetrà arribar més enllà distingint la vostra piràmide de valoració. Diguem, que trieu un interval entre 7 nivells. Cada imatge de 5 estrelles, llavors tindrà 7 de 4 estrelles, 49 de 3 estrelles i així successivament, el qual resultarà en gairebé 20.000 imatges. Sorprenent? Sí, i 16.807 d'elles que no s'han valorat en absolut! Fins i tot es pot definir un esquema de valoració diferent en funció del tipus d'ús, 2 estrelles per a ús comercial, pot significar alguna cosa més que les fotografies de les vacances amb 2 estrelles. També és una bona pràctica definir una valoració neutra, tot el que hi hagi per sota serà en realitat una valoració negativa. Això us ajudarà a sacrificar i aprimar la vostra col·lecció de manera molt eficient. O es podrien definir les intencions de les valoracions, 0 estrelles per «es pot llançar a la paperera», 1 estrella per a les imatges en quarantena (decidir més tard), 2 estrelles per a exportar-les a la galeria, 3 estrelles per a imprimir-les, 4 estrelles per a vendre-les, 5 estrelles per «haig de treballar-hi», com vulgueu. Cal adaptar-ho a les <emphasis
+>vostres</emphasis
+> necessitats. La següent taula il·lustra una possible evolució per a un fotògraf professional, utilitzant una relació de la classificació d'aproximadament 7, durant els pròxims 12 anys. És evident que es poden trobar amb facilitat les captures bones, fins i tot entre milions de fotografies. </para>
+
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-dam-pyramid.png" format="PNG"/></imageobject>
+                <textobject
+> <phrase
+>Classificar</phrase
+> </textobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Continuarem amb les etiquetes (o paraules clau com s'anomenen en altres aplicacions, o categories, totes elles són sinònimes). </para>
+
+    </sect3>
+
+    <sect3 id="keywords"
+> <title
+>Etiquetar, assignar paraules clau</title>
+
+        <para
+>Les etiquetes són un sistema de retolat jeràrquic que es crea a mesura que les afegiu. L'important és crear un sistema que s'adapti a les vostres necessitats i hàbits. Sou un (semi)professional que vol vendre fotografies a les agències, voleu publicar a una galeria web, o simplement sou un aficionat ocasional gestionant la memòria visual de la família? Per a tots aquests diferents casos d'ús voldreu dissenyar una estructura d'etiquetes que s'hi adapti. Si ho configureu, el &digikam; escriurà tota la jerarquia en els camps IPTC perquè puguin ser utilitzats per l'agència fotogràfica utilitzant una aplicació diferent que crearà automàticament el títol i la llegenda per a les exportacions al web. En qualsevol cas, us seran molt útils per trobar ràpidament una imatge concreta. </para>
+
+        <para
+>La jerarquia proporcionarà agrupacions automàtiques. Per exemple, si inicieu una jerarquia típica d'ús privat amb «Activitats», «Gent», «Llocs», «Temes» i «Projectes» en el nivell superior, tot el que s'etiqueti amb una subetiqueta s'agruparà en un àlbum virtual. El &digikam; té una vista dedicada a la barra lateral esquerra per aquests àlbums virtuals. Però, encara millor! A mesura que continueu afegint subetiquetes en les jerarquies, no només sereu capaç de cercar i filtrar amb rapidesa, el filtre d'etiquetes de la barra lateral dreta us permetrà seleccionar combinacions de grups d'etiquetes. Diguem que al plafó d'etiquetes de la barra lateral esquerre seleccioneu l'àlbum virtual «Persones» i que hi teniu 12 etiquetes diferents, llavors el podreu combinar amb la barra lateral dreta i simplement escollir «Pere», «Pau» i «Maria» d'entre les 12. </para>
+
+        <para
+>A la llarga no recordareu els detalls de les vostres imatges i el seu assumpte (essencialment les metadades al vostre cervell es descomponen). Per tant, és de summa importància que <command
+>trieu categories generals i genèriques</command
+>. Sempre recordareu que una captura en particular es va realitzar a la riba d'un riu, en un país o un continent (-> riu, continent), però se us ha oblidat on era el riu. En lloc de només etiquetar-la amb «Okavango», també la podeu etiquetar amb riu/Àfrica o riu/Sud-àfrica. Els detalls que poseu aquí s'introduiran en una etiqueta o en les llegendes. Un truc que pot ajudar: Com buscar aquest riu amb un motor de cerca a Internet? Aquest és el camí a seguir! </para>
+
+        <para
+>Una altra categorització podria estar orientada a tasques com «treballs d'impressió», «exportació web», «personal», «galeriaXYZ», «clients», «presentació», &etc; Creeu els grups a mesura que els necessiteu, almenys hauríeu de poder recordar de memòria les etiquetes de nivell superior, en cas contrari la diferenciació es tornarà inútil. No us oblideu que disposeu de tots els altres atributs per a restringir la cerca. El filtre d'etiquetes a la barra lateral dreta combina amb qualsevol vista de la barra lateral esquerra (àlbums, calendari, línia de temps, etiqueta i cerca). </para>
+
+        <para
+>En importar imatges catalogades des d'altres fonts que ja tenen etiquetes incrustades, el &digikam; crearà automàticament els arbres, inserint-los respectivament al lloc correcte. La reordenació de la jerarquia dins de l'arbre no és un problema, ho podeu fer amb facilitat arrossegant i deixant anar una subbranca a un altre lloc en la jerarquia. Les etiquetes canviades s'actualitzaran a mesura que el &digikam; ajusta les branques. </para>
+
+        <para
+>El següent gràfic mostra com se superposen les diferents metadades. Aquesta és una representació molt grollera, ja que cada bloc de metadades en si mateix se subdivideix en moltes seccions. Els noms de fitxer i les dades del calendari són propietat de totes les imatges. </para>
+
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-dam-metadata.png" format="PNG"/></imageobject>
+                <textobject
+> <phrase
+>Classificar</phrase
+> </textobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Ja n'hi ha prou d'etiquetes. Passarem a les llegendes o comentaris, la tercera eina més important per a la catalogació de les metadades. </para>
+
+    </sect3>
+
+    <sect3 id="captions"
+>  <title
+>Llegendes/Comentaris</title>
+
+        <para
+>Aquest és el quart tipus de metadades que presentem aquí. Quina és la diferència entre les llegendes comparades amb les etiquetes (els comentaris també es poden utilitzar com a sinònims, però el vocabulari IPTC estipula el terme «caption» -llegenda-), paraules clau? Les etiquetes s'apliquen a una descripció jeràrquica i generalitzada, les llegendes són l'oposat: descripció en prosa, detalls, coses anecdòtiques. Les etiquetes també serveixen per trobar, recuperar i agrupar els actius, mentre que les llegendes serveixen per entretenir, informar, tocar a l'observador. Naturalment, també es poden utilitzar per a filtrar el catàleg, però això només funciona per producte. Les llegendes són per a recordar la història, l'esdeveniment, les emocions, és el que fa les fotografies molt més interessants a la vista, posen les fotografies en un context i significat. Si les imatges són una declaració estètica, la llegenda haurà de ser el complement emocional i informatiu. </para>
+
+        <para
+>Poques vegades es vol que ningú vegi les vostres fotografies. Preferiu compartir-les amb els amics, la família, altres fotògrafs, agències, posar-les a Internet. I no em digueu que no esteu interessat a conèixer com s'estan rebent les vostres fotografies! </para>
+
+        <para
+>Podríeu tenir el retrat més bonic, una posta de sol o un paisatge i a ningú sembla importar-li. A què es deu? Observeu algunes bones fotografies per si mateixes sense necessitat de llegir el títol, comentari o informació de fons. Quants esteu interessats en la profunditat del camp, temps d'exposició, balanç de blancs, &etc;? Alguns, és clar. Però tothom estarà interessat en la història que expliquen les imatges, voldreu recordar una fotografia, perquè hi ha massa imatges sense sentit que ens bombardegen a tota hora. Li haureu de donar quelcom a l'observador que ho expliqui tot. </para>
+
+        <para
+>Observem aquest panorama. De moment, fins i tot sembla un bell panorama de platja. Si us hi apropeu, començareu a veure alguns detalls, la gent, l'espai. </para>
+
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-dam-story.png" format="PNG"/></imageobject>
+                <textobject
+> <phrase
+>Classificar</phrase
+> </textobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>I ara us dic que aquest és el punt d'arribada dels aliats a la <quote
+>platja d'Omaha</quote
+> a la Normandia francesa 60 anys després del desembarcament. Uau! Un comença a somiar, fer associacions, recordar, el període històric es troba present, es pot escoltar el silenci. La llegenda ha reformulat totalment la percepció d'aquest panorama. </para>
+
+        <para
+>Perquè els altres apreciïn les vostres fotografies, el títol és probablement més important que la imatge mateixa, per l'interès que genera. En mostrar fotografies, expliqueu una història. Recordeu que la clau és transmetre el significat als visualitzadors, per ajudar-los a entendre el que sabeu sobre el tema i què us va emocionar. </para>
+
+        <itemizedlist>
+            <listitem
+><para
+>que la gent sàpiga el que sabeu sobre el tema, per què us agrada</para
+></listitem>
+            <listitem
+><para
+>crear una línia vermella entre les fotografies</para
+></listitem>
+            <listitem
+><para
+>oposar o relacionar èpoques diferents</para
+></listitem>
+            <listitem
+><para
+>prendre notes de recordatori poc després de prendre la fotografia</para
+></listitem>
+            <listitem
+><para
+>contemplar, investigar, veure i parlar. Però sobretot, escoltar.</para
+></listitem>
+            <listitem
+><para
+>va bé si la imatge no és tan perfecta, perquè té la força del seu propi mèrit descrit a la llegenda.</para
+></listitem>
+        </itemizedlist>
+
+        <para
+>Amb el &digikam; podeu introduir una quantitat il·limitada de text utilitzant l'alfabet internacional (UTF-8) com a llegenda. El podeu introduir alhora per a una selecció de fotografies. Quan s'exporten les imatges als serveis web, les llegendes seran exportades a elecció en/o/i llegenda/títol del sistema de galeria web, sense necessitat de tornar a escriure la història per a la publicació. </para>
+
+    </sect3>
+
+    <sect3 id="geotagging"
+> <title
+>Geolocalitzar (etiquetatge geogràfic)</title>
+
+        <para
+>Encara recordeu els temps abans del GPS? Quan trobàveu el camí a una altra ciutat sense un sistema de navegació? No era la terra una bola blava avorrida abans del GoogleEarth? Doncs bé, ara mateix, amb les imatges, el tren de la representació espacial funciona a velocitat de creuer. </para>
+
+        <para
+>Unes quantes càmeres tenen un receptor GPS incorporat, les imatges s'etiqueten amb coordenades en 3 dimensions. I amb gairebé qualsevol dispositiu GPS que sigui capaç d'extreure un trajecte (per descomptat, cal que el receptor estigui connectat i que el dueu a sobre mentre preneu les fotografies, i per a una bona coincidència, s'ha d'establir amb precisió l'hora i la data a la càmera) i desar-lo a un ordinador. L'emmagatzemareu en el format GPX, de lectura fàcil amb el gpsbabel, gpsman i altres eines. A continuació, podreu fer coincidir automàticament un munt de fotografies amb aquest trajecte utilitzant el &digikam;. Les coordenades s'escriuran a la part JFIF dels fitxers JPG (opció a la configuració) i a la base de dades. El &digikam; permetrà cerques basades en llocs i coordenades, podreu crear àlbums virtuals de les àrees geogràfiques! A la barra lateral dreta, sota la pestanya de les metadades, trobareu la vostra imatge en una àrea local ampliada del mapa del món. Un altre clic us durà a qualsevol dels diversos serveis de mapes del web, ampliant per a veure-la amb més detall. Fins i tot, si no teniu un trajecte GPS, podeu etiquetar geogràficament múltiples imatges amb un editor geogràfic. Simplement navegueu pel mapa fins al lloc on les vàreu prendre i feu-hi clic per a fixar-lo com a una etiqueta geogràfica. </para>
+
+        <para
+>&pex;, la conversió d'un trajecte del Garmin amb el nom de fitxer «xyz»: </para>
+
+        <blockquote>
+            <screen
+>&dollar; gpsbabel -w -i mapa_origen -f xyz.mps -o gpx -F xyz.gpx</screen>
+        </blockquote>
+
+        <para
+>Les possibilitats d'explotació d'aquesta geolocalització ja són innumerables i en el futur es convertirà en dominant. Estic segur que un dia no gaire llunyà, es podran visitar aquests viatges en una realitat virtual a través de les imatges etiquetades geogràficament. Les característiques del &digikam; inclouen l'exportació a fitxers KML que es poden obrir amb el GoogleEarth (que al seu torn mostra les fotografies al lloc on es varen prendre), exportació a gallery2, picasaweb, flickr, &etc; amb el visualitzador GoogleMaps i més. </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

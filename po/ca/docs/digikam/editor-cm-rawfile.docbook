@@ -1,0 +1,211 @@
+<sect2 id="editor-cm-rawfile">
+    <title
+>El perfil de la càmera i el desenvolupament del fitxer RAW</title>
+
+    <sect3>
+        <title
+>Quin és el següent pas en la gestió del color? </title>
+
+        <para
+>En primer lloc i perquè consti, molts excel·lents fotògrafs professionals i aficionats desen totes les seves imatges com fitxers JPEG a la càmera i treballen exclusivament en l'espai de color sRGB. Però si voleu treballar en un espai de color més gran, o si voleu treballar amb fitxers RAW (fins i tot si els fitxers d'imatge de sortida RAW són sRGB), seguiu llegint. </para>
+
+        <para
+>A jutjar per les preguntes en el fòrum d'usuaris del &digikam;, si esteu llegint aquesta guia d'aprenentatge, probablement preneu imatges RAW amb una càmera rèflex digital i teniu l'esperança que en algun lloc de les aigües misterioses de la gestió del color trobareu la resposta a com obtenir una bona fotografia a partir del fitxer d'imatge RAW. I teniu raó! El següent que necessiteu és el perfil de la càmera adequat per a desenvolupar la vostra imatge RAW. Però primer respondrem a la pregunta que realment podríeu haver demanat. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Per què la imatge produïda pels convertidors RAW com «dcraw» o «ufraw» s'assembla a la vista prèvia incrustada mostrada pel &digikam;? </title>
+
+        <para
+>Bona pregunta. Totes les imatges de càmeres digitals comencen com a fitxers RAW, si la càmera permet a l'usuari l'opció de desar la imatge com un fitxer RAW. Quan li dieu a la càmera que desi imatges JPEG en lloc de fitxers RAW, la càmera utilitzarà el seu processador integrat per a convertir el fitxer RAW a un JPEG. Aquesta vista prèvia incrustada és al que s'hauria de semblar la vostra imatge final si heu configurat la vostra càmera per desar imatges JPEG en lloc de fitxers RAW. </para>
+
+        <para
+>A partir d'aquí parlaré de la meva experiència com a usuari de Canon, però m'imagino que la majoria de totes les rèflex digitals de gamma mitjana es comporten de manera similar. La Canon ofereix als usuaris diversos estils de fotografia -neutre, estàndard, retrat, paisatge i així successivament- que determinen quin tipus de tractament es durà a terme en el fitxer d'imatge RAW per presentar la imatge final, si el processament es realitza «a la càmera» o posterior, utilitzant el programari propietari DPP de Canon. El programari de processament RAW DPP de Canon li dona a l'usuari un control addicional, però encara manipula el fitxer d'imatge RAW d'acord amb l'estil de fotografia triat. La majoria dels estils de fotografia de Canon afegeixen una forta corba S i saturació del color addicional per donar una mica més «d'encant» a la fotografia. Fins i tot si escolliu l'estil de fotografia «neutre» (l'estil de fotografia de Canon us donarà la tonalitat menys modificada). I seleccioneu «menys contrast», «menys saturació», «sense reducció del soroll» i «sense aguditzar» al diàleg de desenvolupament RAW DPP, es troba, si sabeu el que voleu, aplicat a la corba S i també una reducció de les ombres a la vostra imatge. </para>
+
+        <para
+>La «libraw» (la qual, el &digikam; utilitza per a convertir els fitxers RAW en fitxers d'imatge) no afegeix una corba S a la tonalitat de la vostra imatge. La «libraw» dona les llums i ombres que queden gravades pel sensor de la càmera. Segons <ulink url="http://21stcenturyshoebox.com/essays/scenereferredworkflow.html"
+>Tindeman</ulink
+>, una excel·lent lectura i font de bons consells, amb enllaços a altres bones fonts d'informació addicional, el «dcraw» només és un grapat de desenvolupadors RAW que en realitat us dona la tonalitat «en referència a l'escena». El «ufraw» també produeix per omissió una imatge en referència a l'escena (tot i que el «ufraw» dona a l'usuari l'opció de modificar la imatge en referència a l'escena canviant la distribució tonal i saturació). I la imatge en referència a l'escena del «dcraw»/«ufraw» tenen un aspecte pla, a causa que el sensor de la càmera registra la llum de forma lineal, mentre que els nostres ulls estan constantment interactuant amb el nostre cervell per donar cabuda a les àrees fosques i brillants en una escena, el qual significa que el nostre cervell, en certa manera «aplica una corba S» a l'escena de manera que ens puguem centrar millor en les zones d'especial interès com quan mirem al nostre voltant. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>La vista prèvia JPEG incrustada es veu molt millor que la sortida del «dcraw». Quin és el valor de la tonalitat en referència a l'escena? </title>
+
+        <para
+>Quan preneu una fotografia, probablement teniu una idea del que voleu a la imatge final. És molt més fàcil aconseguir aquesta imatge final, si no heu de «desfer» coses que ja heu fet a la vostra imatge. Una vegada Canon (Nikon, Bibble, &etc;) ha aplicat les seves corbes S propietàries i reducció de les ombres, agudització, &etc; a la vostra imatge, a continuació, les ombres, reflexos, detall de les vores, &etc;, ja s'aixafen, tallen, piquen, i d'altra manera alteren i mutilen. Heu llançat informació de distància i no es pot recuperar. Especialment en les ombres, fins i tot amb imatges de 16 bits (en realitat, 12 o 14 bits, depenent de la càmera, però està codificat com a 16 bits per a major comoditat a l'ordinador), simplement no hi ha molta informació per on començar. </para>
+
+        <para
+>Sembla que el cor i l'ànima del processament de la imatge és la manipulació deliberada de la tonalitat de la imatge, color, agudesa selectiva, i així successivament, de manera que l'espectador se centra en el que, el fotògraf, va trobar d'especial interès quan va prendre la fotografia. Per què donar l'art del processament d'imatges a algun tipus de programari propietari de processament RAW? En altres paraules, «el pla és bo» si preferiu donar a les imatges la vostra pròpia interpretació artística. L'alternativa és permetre que els enllaunats, algoritmes propietaris produïts per Canon, Nikon, Bibble, &etc; interpretin les vostres imatges. (D'altra banda, no es pot negar que per a moltes imatges, aquests algoritmes enllaunats són realment bons!) </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Puc veure el valor en l'inici de la meva edició d'imatges amb una representació en referència a l'escena en lloc de la representació de vista força al·lucinant que veig en el JPEG incrustat. Però, us dic, les imatges produïdes per &digikam;/«libraw» es veuen realment molt malament! Per què? </title>
+
+        <para
+>Bé, això depèn. Si la imatge es veu molt fosca, llavors vau demanar al «dcraw» donar sortida a un fitxer de 16 bits i us heu topat amb el problema que el «dcraw» no aplica una transformació de gamma abans de presentar el fitxer d'imatge. Podeu utilitzar «imagemagick» per aplicar la transformació de gamma apropiada pel fitxer d'imatge produït per la «libraw». O podeu trobar o crear un perfil de la càmera amb una gamma d'1. O podeu utilitzar el «ufraw», el qual aplica la transformació de gamma. </para>
+
+        <para
+>Si la imatge té reflexos rosats, hi ha una solució. Per una explicació del problema, juntament amb la cura de línia d'ordres per aquest problema, vegeu <ulink url="http://www.luminous-landscape.com/forum/index.php?topic=23430.0"
+>aquest missatge al fòrum «Luminous Landscape»</ulink
+>. </para>
+
+        <para
+>Si la imatge no és fosca però es veu molt estranya, probablement vau prendre algunes decisions imprudents en la interfície d'usuari de la «libraw». La interfície de la «libraw» convenientment us permet «marcar» les opcions que d'altra manera haureu d'especificar a la línia d'ordres. No obstant això, la comoditat sempre té un preu. En primer lloc, la interfície no pot proporcionar accés a totes les opcions que estan disponibles a la línia d'ordres I en segon lloc, per obtenir el màxim rendiment de la interfície de la «libraw», haureu de saber què fan realment els botons, controls lliscants, &etc; El qual significa que us cal conèixer el que passa a la línia d'ordres per obtenir els millors resultats utilitzant la interfície. (Aquesta guia d'aprenentatge no tractarà de documentar com utilitzar la interfície d'usuari de la «libraw». El &digikam; s'està desenvolupant a un ritme ràpid i tot el que podria escriure sobre la interfície de la «libraw» segurament serà obsolet en un futur pròxim). </para>
+
+        <para
+>Per exemple, si el vostre JPEG incrustat té molt bones ombres, riques i profundes, però el JPEG o TIFF produït per la «libraw» té patrons de línia vermella que taquen les àrees d'ombra, llavors probablement heu marcat l'opció «Avançat, Punt negre», amb el control lliscant establert a 0. Desmarqueu la casella de «Punt negre» i torneu-ho a intentar. Aquesta casella de la interfície de la «libraw» correspon amb l'opció «-k» quan s'utilitza el «dcraw» a la línia d'ordres. L'opció «-k» permet anul·lar les millors estimacions del «dcraw», en els tons d'ombra de la imatge, inicia el senyal digital per anul·lar el soroll de fons. Si no utilitzeu l'opció «-k» a la línia d'ordres, el «dcraw» calcularà un valor adequat, basat en la seva estimació del soroll de fons. Per a la meva Canon 400 d/xti, el valor del soroll de fons calculat pel «dcraw» generalment és al voltant de 256 (l'opció de línia d'ordres «-v» farà que el «dcraw» us digui el que està fent mentre processa el fitxer RAW). No obstant això, si utilitzo l'opció «-K /ubicació_del_marc_negre.pgm» li direu al «dcraw» que elimini un marc negre, i després, el «dcraw» informarà el punt negre com «0», ja que ara no hi ha necessitat d'establir un nivell més alt per evitar les ombres fosques de la imatge, on el soroll típicament ofega el senyal. (Un «marc negre» és una exposició presa amb la tapa de la lent coberta, amb els mateixos paràmetres d'exposició com, i l'ideal és just després, prendre la imatge que s'està processant. L'opció «-K» permet al «dcraw» eliminar el soroll de fons de la imatge). </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>On puc trobar bona informació sobre el soroll digital? </title>
+
+        <para
+>Vegeu els següents articles excel·lents:</para>
+
+        <itemizedlist>
+
+            <listitem
+><para
+><ulink url="http://www.ronbigelow.com/articles/noise-1/noise-1.htm"
+></ulink
+></para
+></listitem>
+
+            <listitem
+><para
+><ulink url="http://www.cambridgeincolour.com/tutorials/noise.htm"
+></ulink
+></para
+></listitem>
+
+            <listitem
+><para
+><ulink url="http://www.clarkvision.com/imagedetail/digital.signal.to.noise/"
+></ulink
+></para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Per què els colors de Canon i Nikon són millors que els colors produïts per la «libraw»?</title>
+
+        <para
+>La representació del color és un lloc on el programari propietari de Canon (i presumiblement de Nikon) pel desenvolupament RAW fa una molt, molt bona feina. Per què? Com que el programari propietari de processament RAW ve juntament amb els perfils de la càmera, els quals són específics per a imatges RAW coincidint amb la marca i model de la vostra càmera, quan es processa utilitzant el programari propietari de processament RAW de la marca i model de la càmera. He comprovat extensivament, utilitzant un «comptagotes» per comparar els resultats de diversos desenvolupadors RAW utilitzant diversos perfils de càmera des de diferents fonts -un procés molt tediós, encara que instructiu-. Amb el «ufraw» i «dcraw» (des de la línia d'ordres si no des de la interfície d'usuari del «dcraw» del &digikam;), podeu aplicar els perfils de color específics de l'estil de la fotografia i pel model de càmera de Canon a la sortida del «dcraw» durant el procés de desenvolupament RAW, i els colors encara NO seran exactament els mateixos que els produïts per la Canon. De la mateixa manera, els perfils de Bibble funcionen força bé amb el programari de Bibble, però que no funcionen tan bé, al meu entendre, amb la «libraw» com ho fan amb el programari propi de Bibble. El mateix s'aplica a altres casos. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Per què un perfil de la càmera és específic per a una marca i model específic de càmera? </title>
+
+        <para
+>Les càmeres digitals tenen una matriu de milions de petits sensors de llum a l'interior, ho fa un xip CCD o CMOS. Aquests píxels sensibles a la llum són daltònics -només registren la quantitat, no el color, de la llum que incideix sobre seu-. Per a permetre que aquests píxels gravin la informació del color, cada píxel està cobert per una lent transparent vermella, verda o blava, en general alternades en el que s'anomena una matriu Bayer (excepte pels sensors Faveon, que funcionen de manera diferent). Una imatge RAW no és més que un conjunt de valors que indiquen «la quantitat de llum» que ha passat a través de la lent vermella, blava o verda fins a arribar al sensor. </para>
+
+        <para
+>Clarament, la resposta dels píxels a la llum és el resultat d'un munt de factors específics de la càmera, inclosos: la naturalesa de la matriu pròpia dels sensors, les qualitats de color/transmissores precises de les tapes de la lent, i la conversió analògica a digital en particular i després del procés de postconversió que passa a l'interior de la càmera per presentar la imatge RAW que s'emmagatzema a la targeta. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Què significa «conversió d'analògic a digital»?</title>
+
+        <para
+>«Analògic» vol dir variació contínua, igual que la quantitat d'aigua que podeu posar en un got. «Digitalitzar» un senyal analògic vol dir que els nivells de canvis continus des de la font de senyal analògic són «arrodonits» a quantitats discretes adaptades als nombres binaris utilitzats pels ordinadors. La conversió d'analògic a digital que es porta a terme dins de la càmera, és necessari perquè els píxels sensibles a la llum són de naturalesa analògica -recullen una càrrega proporcional a la quantitat de llum que els arriba-. La càrrega acumulada en cada píxel és convertida en una quantitat digital discreta pel convertidor analògic a digital de la càmera. El qual, per cert, explica per què un convertidor de 14 bits és millor que un convertidor de 12 bits -més precisió a la sortida de la conversió, significa que es llença menys informació en el procés de conversió-. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Per què un perfil de la càmera és específic pel programa de processament RAW utilitzat per desenvolupar el fitxer RAW? </title>
+
+        <para
+>El punt central de la interpolació utilitzant algorismes de reconstrucció de color com l'AHD predeterminat del «dcraw» és endevinar quin color i la intensitat de la llum que en realitat va caure sobre qualsevol píxel interpolant la informació obtinguda d'aquest píxel individual i els seus píxels veïns (vegeu <ulink url="https://en.wikipedia.org/wiki/Demosaicing"
+>l'article de la Wikipedia</ulink
+>). Cada programa de processament RAW fa suposicions addicionals, com ara «quin és el senyal i quan és el soroll de fons?», «en quin moment el sensor arriba a la saturació completa?», i així successivament. La sortida resultant de tots aquests algoritmes i presa de decisions que fa el programari de processament RAW és un trio de valors RGB per a cada píxel de la imatge. Donat el mateix fitxer RAW, diferents processadors RAW donaran diferents valors RGB. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>On trobo un perfil genèric per a la meva càmera?</title>
+
+        <para
+>La pàgina web del «ufraw» sobre la <ulink url="http://ufraw.sourceforge.net/Colors.html"
+>gestió del color</ulink
+> té informació sobre on trobar perfils de càmera ja fets. Si doneu un cop d'ull a l'arxiu del fòrum d'usuaris del &digikam;, trobareu consells addicionals. Si manteniu la cerca i experimentació, probablement trobareu un perfil genèric que funcioni «força bé». No obstant això, com hem dit, és un fet desafortunat de la imatge digital que els perfils de càmera subministrats per Canon, Nikon, i similars no funcionen tan bé amb convertidors RAW diferents del convertidor RAW propietari de cada fabricant. Per això Bibble i Phase One, per exemple, han de crear els seus propis perfils per a totes les càmeres a les quals donen suport. Així que al final podreu decidir que voleu un perfil de la càmera que sigui específic per a la vostra càmera, les vostres condicions d'il·luminació, i el vostre flux de treball de processament RAW. </para>
+
+        <para>
+            <screenshot>
+                <screeninfo
+></screeninfo>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="&path;editor-cm-iccworkflowlogic.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                    <phrase
+></phrase>
+                    </textobject>
+                </mediaobject>
+            </screenshot>
+        </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Com puc obtenir un perfil de la càmera específic per a la meva càmera, condicions d'il·luminació i flux de treball RAW? </title>
+
+        <para
+>Molts serveis comercials ofereixen serveis de perfils, per un preu, és clar. O podeu utilitzar «LPRof» per a ajustar el perfil de la vostra càmera. Si voleu ajustar el perfil de la vostra pròpia càmera, necessitareu un «objectiu IT8», és a dir, una imatge que contingui quadrats de colors coneguts. Juntament amb l'objectiu IT8, rebreu el conjunt apropiat de valors coneguts per a cada quadrat de color a l'objectiu. </para>
+
+        <para
+>Si teniu previst utilitzar el «LProf» per a ajustar el perfil de la vostra càmera, comproveu la documentació per a una llista d'objectius recomanats. Per a ajustar el perfil de la vostra càmera, haureu de fotografiar amb l'objectiu IT8 en condicions d'il·luminació específiques (per exemple, la llum del dia, el que correspon a prendre la fotografia a prop del migdia en un dia assolellat a l'estiu, sense res a prop que pogués projectar ombres o reflectir dominants de colors) i desar la imatge com un fitxer RAW. Després processeu el fitxer RAW amb el programari+paràmetres de processament RAW en particular i executar el fitxer d'imatge resultant a través del programari de creació de perfils. El programari de creació de perfils compararà els valors RGB en la imatge produïda per la càmera+condicions d'il·luminació+rutina de processament RAW amb els valors RGB en l'objectiu original i presentarà el perfil (icc) de la vostra càmera. </para>
+
+        <para
+>Ajustar el perfil d'una càmera és exactament anàleg a ajustar el perfil d'un monitor. Quan s'ajusta el perfil d'un monitor, el programari de creació de perfils li diu a la targeta gràfica que enviï els quadrats de color amb determinats valors RGB a la pantalla. L'espectrofotòmetre mesura el color real que es produeix a la pantalla. Quan s'ajusta el perfil d'una càmera, els colors coneguts seran els colors RGB en les mostres originals en el blanc IT8, que el programari de creació de perfils compararà amb els colors produïts per la imatge digital del blanc, la qual va ser fotografiada en condicions d'il·luminació seleccionades, desada com a RAW, després processada amb més opcions de configuració específiques pel programari de processament RAW. </para>
+
+        <para
+><ulink url="http://lprof.sourceforge.net/help/ufraw.html"
+>Aquí</ulink
+> teniu un enllaç a un «com es fa» per a l'ús del «LProf v1.11» i el «ufraw» (i per analogia, qualsevol altre processador RAW) per presentar un perfil de la càmera. «Debian Lenny» té el «LProf 1.11.4» en els repositoris APT. Les versions més recents es poden construir des del CVS. I aquí hi ha un enllaç a un, assequible i ben considerat <ulink url="http://www.targets.coloraid.de/"
+>objectiu IT8</ulink
+>. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Com puc aplicar un perfil de la càmera pel fitxer d'imatge de 16 bits produït pel meu programari de codi obert pel processament RAW? </title>
+
+        <para
+>Si esteu utilitzant la interfície de la «libraw», <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>aquí</ulink
+> s'explica com dir-li al &digikam; quin perfil de la càmera utilitzar. Si utilitzeu el «dcraw» des de la línia d'ordres, tindreu l'opció de donar sortida al vostre fitxer d'imatge de 16 bits aplicant o sense aplicar el perfil de la càmera. Si li dieu al «dcraw» que doni sortida al fitxer sense aplicar el perfil de la càmera, podreu utilitzar la utilitat «tifficc» de «LCMS» (també a la línia d'ordres) per aplicar el perfil de la càmera. L'avantatge d'utilitzar «tifficc» és que podreu dir-li a «LCMS» que utilitzi conversió d'alta qualitat (el «dcraw» sembla utilitzar la qualitat mitjana per omissió de «LCMS»). El desavantatge, per descomptat, és que aplicar el vostre perfil de la càmera des de la línia d'ordres afegeix un pas addicional al vostre flux de treball RAW. Si utilitzeu el «ufraw», consulteu la guia de l'usuari del «ufraw». </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

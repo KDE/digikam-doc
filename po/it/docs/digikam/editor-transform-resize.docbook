@@ -1,0 +1,271 @@
+<sect3 id="editor-transform-resize">
+    <sect3info>
+
+        <title
+>Cambiare le dimensioni dell'immagine</title>
+
+        <abstract>
+
+            <para>
+                <ulink url="http://cimg.sourceforge.net"
+><inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;logo-cimg.png" format="PNG"/></imageobject>
+                <textobject
+><phrase
+>cimglogo</phrase
+></textobject>
+                </inlinemediaobject
+></ulink>
+            </para>
+
+            <para
+>Lo strumento <emphasis
+>Espansione fotografica</emphasis
+> di &digikam; è decisamente uno dei più avanzati per aumentare le dimensioni di una fotografia con una perdita minima in qualità dell'immagine. </para>
+
+        </abstract>
+
+        <keywordset>
+        <keyword
+>Cimg</keyword>
+        <keyword
+>Greycstoration</keyword>
+        </keywordset>
+
+    </sect3info>
+
+    <title
+>Introduzione</title>
+
+    <para
+>Rimpicciolire un'immagine è facile. Il problema è: come si può espandere un'immagine e mantenerne nitidi i dettagli? Come si può ingrandire quando è stato raggiunto il limite di risoluzione? Come si possono inventare o indovinare le informazioni mancanti da inserire nell'immagine necessariamente grezza dopo l'ingrandimento? Be', l'algoritmo CImg che usiamo fa un ottimo lavoro, provalo e vedi da te! </para>
+
+    <sect4 id="using-resizingimage"
+> <title
+>Ridimensionare una foto</title>
+
+        <anchor id="resizetool.anchor"/>
+
+        <para
+>Se la fotografia ha le dimensioni sbagliate, puoi cambiarle come vuoi usando lo strumento di ridimensionamento. Seleziona <menuchoice
+> <guimenu
+>Trasforma</guimenu
+><guimenuitem
+>Ridimensiona</guimenuitem
+> </menuchoice
+>, e regola i valori di destinazione. La finestra dello strumento di ridimensionamento è visibile sotto. </para>
+
+        <example
+><title
+>La finestra dello strumento di ridimensionamento</title>
+            <screenshot
+><screeninfo
+>La finestra dello strumento di ridimensionamento</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editor-resize.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> 
+        </example>
+
+        <para
+>Questo strumento di ridimensionamento delle immagini usa un normale metodo a interpolazione lineare per approssimare i pixel. Se vuoi ingrandire un'immagine con una qualità migliore, usa lo strumento di espansione. </para>
+
+    </sect4>
+
+
+    <sect4 id="using-resizerestoration"
+> <title
+>Aumentare le dimensioni dell'immagine (restauro)</title>
+        <para
+>Molti programmi di foto-ritocco usano qualche tipo di interpolazione, per esempio l'interpolazione spline, per ingrandire le immagini, mentre &digikam; usa un approccio più sofisticato. L'algoritmo incorporato in <emphasis
+>Restauro</emphasis
+> è stato sviluppato dalla squadra IMAGE dei laboratori GREC CNRS di Caen in Francia, e fa parte del <ulink url="http://cimg.sourceforge.net"
+>progetto CImg</ulink
+>. </para>
+
+        <para
+><inlinemediaobject
+><imageobject
+> 
+            <imagedata fileref="&path;editor-resize-restoration.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Finestra di Espansione fotografica</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+        <para
+>Devi dire allo strumento quale ridimensionamento vuoi fare. Nella scheda <guilabel
+>Nuova dimensione</guilabel
+> sono disponibili le impostazioni elencate sotto: <itemizedlist>
+
+        <listitem
+><para
+><guilabel
+>Mantieni le proporzioni</guilabel
+>: se questa opzione è abilitata, impostando la nuova dimensione dell'immagine manterrai le proporzioni dell'immagine originale.</para
+></listitem>
+        <listitem
+><para
+><guilabel
+>Larghezza</guilabel
+>: la nuova larghezza dell'immagine da usare per l'espansione.</para
+></listitem
+> 
+        <listitem
+><para
+><guilabel
+>Altezza</guilabel
+>: la nuova altezza dell'immagine da usare per l'espansione.</para
+></listitem>
+
+        </itemizedlist>
+        </para>
+
+        <para
+>Se vuoi impostare i parametri del filtro per fare regolazioni più precise, usa le schede <guilabel
+>Impostazioni di lisciatura</guilabel
+> e <guilabel
+>Impostazioni avanzate</guilabel
+>: </para>
+
+        <para
+><inlinemediaobject
+><imageobject
+> 
+            <imagedata fileref="&path;editor-resize-restoration-settings1.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Impostazioni di smussatura dell'ingrandimento fotografico</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+        <para>
+        <itemizedlist>
+
+            <listitem
+><para
+><guilabel
+>Mantenimento dei dettagli</guilabel
+> p [0, 100]: questo controlla il mantenimento delle curvature (caratteristiche). Un valore basso impone una lisciatura uniforme nell'immagine, mentre valori più grandi lisciano preferenzialmente le zone omogenee e lasciano i dettagli nitidi. Un valore di 0,9 dovrebbe mantenere bene i dettagli in modo che in seguito non sia necessario aumentare la nitidezza. Nota che il <guilabel
+>Mantenimento dei dettagli</guilabel
+> deve sempre essere minore dell'<guilabel
+>Anisotropia</guilabel
+>.</para
+></listitem>
+            <listitem
+><para
+><guilabel
+>Anisotropia</guilabel
+> alfa [0, 100]: un valore basso liscia allo stesso modo in tutte le direzioni, mentre un valore vicino a 1 liscia solo in una direzione. Se hai grana della pellicola o disturbi di tipo CCD, un valore alto risulterà in uno schema a onde, mentre gli artefatti JPEG sono adatti a valori vicini a 1. </para
+></listitem>
+            <listitem
+><para
+><guilabel
+>Lisciatura</guilabel
+> [0, 500]: questo imposta il fattore di lisciatura complessivo massimo (mentre p definisce la lisciatura relativa). Impostalo secondo il livello del disturbo.</para
+></listitem>
+            <listitem
+><para
+><guilabel
+>Regolarità</guilabel
+> [0, 100]: questo parametro riguarda le strutture abbastanza grandi. Più grande è questo valore, più regolare sarà la lisciatura complessiva. Ciò è necessario quando ci sono molti disturbi, perché in quei casi è difficile stimare la geometria. Inoltre, se vuoi ottenere un effetto di turbolenza in stile van Gogh, è raccomandata un'impostazione maggiore di 3.</para
+></listitem>
+            <listitem
+><para
+><guilabel
+>Iterazioni del filtro</guilabel
+>: il numero di volte che sarà applicato l'algoritmo di sfocatura. Normalmente è sufficiente 1 o 2.</para
+></listitem>
+
+        </itemizedlist>
+        </para>
+
+        <para
+><inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;editor-resize-restoration-settings2.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Impostazioni avanzate dell'espansione fotografica</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+        <para>
+            <itemizedlist>
+
+                <listitem
+><para
+><guilabel
+>Passo angolare</guilabel
+> da [5, 90]: integrazione angolare del fattore di anisotropia alfa. Se alfa viene scelto piccolo, anche «da» dovrebbe essere piccolo. Ma attenzione, gli angoli piccoli causano grandi calcoli! Sceglilo tanto largo quanto lo puoi accettare. </para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Passo integrale</guilabel
+> [0,1, 10]: larghezza del passo di integrazione spaziale in pixel. Dovrebbe rimanere sotto 1 (lisciatura sub-pixel) e mai andare oltre 2.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Usa interpolazione lineare</guilabel
+>: il guadagno di qualità se selezioni questa opzione è solo marginale, e perdi un fattore di 2 in velocità. Raccomandiamo di lasciarla inattiva.</para
+></listitem>
+
+            </itemizedlist>
+
+        </para>
+
+        <para
+>I pulsanti <guilabel
+>Salva come...</guilabel
+> e <guilabel
+>Carica...</guilabel
+> sono usati per fare esattamente quello. Qualsiasi impostazione del filtro di espansione fotografica che hai impostato può essere salvata sul disco in un file di testo e caricata più tardi. </para>
+
+        <warning
+><para
+>L'espansione fotografica è molto veloce a fare il suo lavoro, ma può volerci molto tempo per farlo e potrebbe causare un forte carico sulla CPU. Puoi sempre interrompere il calcolo premendo il pulsante <guilabel
+>Interrompi</guilabel
+> durante la resa dell'anteprima. </para
+></warning>
+
+    </sect4>
+
+    <sect4 id="inaction-resizerestoration">
+        <title
+>Lo strumento di espansione in azione</title>
+
+        <para
+>Sotto puoi vedere un esempio di Espansione fotografica a una piccola area di un'immagine a colori ridimensionata al doppio. L'originale è (1), il risultato espanso (3). L'anteprima (2) è il risultato dato al metodo di ridimensionamento standard lineare come confronto. </para>
+
+        <para
+><inlinemediaobject
+><imageobject
+> 
+            <imagedata fileref="&path;editor-resize-restoration-preview.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Anteprima del filtro di espansione fotografica</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+    </sect4>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

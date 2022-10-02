@@ -1,0 +1,225 @@
+  <sect3 id="editor-enhance-inpaint">
+    <sect3info>
+      <title
+>Bildfehlerkorrektur</title>
+      <abstract>
+        <para>
+          <ulink url="http://cimg.sourceforge.net">
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref="&path;logo-cimg.png" format="PNG"/>
+              </imageobject>
+              <textobject>
+                <phrase
+>cimglogo</phrase>
+              </textobject>
+            </inlinemediaobject>
+          </ulink>
+        </para>
+        <para
+>Das Werkzeug <emphasis
+>Bildfehlerkorrektur</emphasis
+> ist eins der am weitest entwickelten Werkzeug, um nicht gewünschte Artefakte mit beispielloser Geschwindigkeit zu entfernen. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>digiKam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Einführung</title>
+    <para/>
+    <para
+>Der Inpainting Algorithmus wurde vom IMAGE Team des GREC CNRS Labors in Caen/Frankreich entwickelt und ist Teil des <ulink url="http://cimg.sourceforge.net"
+>CImg-Projektes</ulink
+>. </para>
+    <sect4 id="using-inpainting">
+      <title
+>Das Werkzeug <quote
+>Bildfehlerkorrektur</quote
+> benutzen</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-inpainting.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Der Dialog <quote
+>Bildfehlerkorrektur</quote
+></phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>Dieses Werkzeug enthält verschiedene Voreinstellungen als Starpunkte, um die Restaurierung zu vereinfachen. Die verfügbaren Voreinstellungen sind unten aufgezählt: <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Keine</guilabel
+>: Benutzt die am weitesten gebräuchlichen Einstellungen für den Filter. Diese sind nicht für irgend eine spezielle Anwendung optimiert.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Kleine Artefakte entfernen</guilabel
+>: .</para
+> <!-- TODO -->
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Mittlere Artefakte entfernen</guilabel
+>: .</para
+> <!-- TODO -->
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Große Artefakte entfernen</guilabel
+>: .</para
+> <!-- TODO -->
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Falls Sie die Filtereinstellungen feiner justieren wollen können Sie dazu die Reiter<guilabel
+>Glättung</guilabel
+> und <guilabel
+>Fortgeschrittene Einstellungen</guilabel
+> benutzen.</para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-inpainting-settings1.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Die Glättungseinstellungen der <quote
+>Bildfehlerkorrektur</quote
+></phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Detailerhaltung</guilabel
+> p [0, 100]: dies kontrolliert die Erhaltung der Details. Ein kleiner Wert führt zu einer gleichmäßigen Glätte über das Bild. Wogegen größere Werte hauptsächlich homogene Regionen glätten und Details scharf lassen. Ein Wert von 0,9 sollte Details so erhalten, dass kein Schärfen nachträglich nötig ist. Beachten Sie bitte das die <guilabel
+>Detailerhaltung</guilabel
+> immer der <guilabel
+>Richtungsabhängigkeit</guilabel
+> untergeordnet sein sollte.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Richtungsabhängigkeit</guilabel
+> Alpha [0,100]: ein kleiner Wert glättet gleichmäßig in alle Richtungen, während ein Wert nahe an 1 nur in eine Richtung glättet. Falls Sie eine Filmkörnung haben oder CCD Rauschen wird ein hoher Wert wellenähnliche Muster erzeugen. JPEG Artefakte werden am besten bei einem Wert in der Nähe von 1 beseitigt. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Glätten</guilabel
+> [0, 500]: dies setzt den maximalen Glättungsfaktor über alles. p definiert dann die relative Glättung. Setzen Sie diesen Wert daher passend zum Grad des Rauschens in Ihrem Bild.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Regelmäßigkeit:</guilabel
+> [0, 100]: dieser Parameter betrifft größere Strukturen. Je höher dieser Wert gesetzt wird, desto mehr wird geglättet. Dies ist notwendig, wenn sehr viel Rauschen vorliegt, da es dann schwierig ist die Geometrie des Bildes zu schätzen. Auch wenn Sie einen 'van Gogh' Turbulenzeffekt erzeugen wollen muss er höher als 3 gesetzt werden.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Wiederholungen</guilabel
+>: gibt an wie oft der Algorithmus durchlaufen wird. Normalerweise reicht hier 1 oder 2 aus.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-inpainting-settings2.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Die fortgeschrittenen Einstellungen der <quote
+>Bildfehlerkorrektur</quote
+></phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Winkelschrittweite</guilabel
+> da [5, 90]: Winkelabhängige Integration des anisotropen Alpha. Falls Alpha klein gewählt wird, sollte da ebenfalls klein gewählt werden. Achten Sie dabei darauf, dass kleine Winkel eine lange Laufzeit erzeugen. Sie sollten diesen Wert also so größtmöglich und für Ihre Bedürfnisse akzeptabel wählen. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Integrale Schrittweite</guilabel
+> [0,1, 10]: integrale Schrittweite in Pixeln. Sie sollten den Wert kleiner 1 setzen, um Sub-Pixel-Glättung zu vermeiden und niemals größer als 2.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Lineare Interpolation benutzen</guilabel
+>: Das Mehr an Qualität das Sie durch Anwahl dieser Option erhalten ist nur gering. Er verdoppelt aber die Laufzeit. Wir empfehlen ihn daher ihn auszulassen.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Die Knöpfe <guilabel
+>Speichern als</guilabel
+> und <guilabel
+>Laden</guilabel
+> machen genau dies. Jede Einstellung von <quote
+>Bildfehler korrigieren</quote
+> kann hiermit in eine Textdatei gespeichert und später wieder geladen werden. </para>
+      <warning>
+        <para
+><quote
+>Bildfehler korrigieren</quote
+> ist vergleichsweise sehr schnell bei der Arbeit. Es kann aber trotzdem sehr lange dauern und eine hohe CPU Last nach sich ziehen. Sie können daher die Berechnung jederzeit mit dem Knopf <guilabel
+>Abbruch</guilabel
+> abbrechen. </para>
+      </warning>
+    </sect4>
+    <sect4 id="inaction-inpainting">
+      <title
+>Das Werkzeug zur <quote
+>Bildfehlerkorrektur</quote
+>in Aktion</title>
+      <para
+>Unten können Sie sehen wie Bildfehler mit <guilabel
+>Kleine Artefakte entfernen</guilabel
+> korrigiert werden. Das Modul wird auf einem Foto, dass in Guatemala Stadt mit einer analogen Kamera gemacht wurde, angewendet. Wie Sie sehen gibt es ein eigenartiges schwarzes Artefakt im Vordergrund, dass durch eine schlechte Filmlagerung während der Reise verursacht wurdel.Das Originalbild ist unter (1) zu sehen und das korrigierte Bild unter (2). </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-inpainting-preview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Die Vorschau des Filters zur <quote
+>Bildfehlerkorrektur</quote
+></phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

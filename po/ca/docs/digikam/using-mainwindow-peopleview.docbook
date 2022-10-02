@@ -1,0 +1,186 @@
+<sect2 id="using-mainwindow-peopleview">
+    <title
+>La vista Persones</title>
+
+    <para
+>Sempre que no es tracti només de fer fotografies de màquines o estrelles o de quelcom altre, la gestió de les cares pot ser una característica interessant (fins i tot amb una màquina pot ser que hi hagi un ésser humà operant). Al &digikam; això consisteix en dues tasques: detecció de les cares i reconeixement de les cares. </para>
+
+    <sect3
+> <title
+>Detectar les cares</title>
+
+        <para
+>El primer pas és que el &digikam; trobi totes aquelles fotografies que mostrin cares encara que no conegui a qui pertanyen. Per preparar aquest procés, feu clic a <guilabel
+>Explora la col·lecció cercant cares</guilabel
+>, el qual obrirà el diàleg Exploració de cares. A la dreta sota la capçalera hi ha un menú desplegable des d'on podeu triar entre: <itemizedlist>
+                <listitem>
+                    <para
+>Omet les imatges que ja s'han explorat</para>
+                </listitem>
+                <listitem>
+                    <para
+>Torna a explorar i fusiona els resultats</para>
+                </listitem>
+                <listitem>
+                    <para
+>Neteja els resultats no confirmats i torna a explorar</para>
+                </listitem>
+            </itemizedlist>
+        </para>
+
+        <para
+>El primer que cal tenir clar si encara no heu explorat o si ho vau fer amb un resultat satisfactori, però ara heu afegit fotografies noves o si ja heu millorat un resultat de la cerca, &pex;, eliminant etiquetes de cares que, òbviament, no mostren una cara. El segon, cal escollir si voleu que les imatges explorades s'incloguin a la següent exploració. El tercer és més interessant en el context del reconeixement de les cares, ja que els <quote
+>resultats sense confirmar</quote
+> significa etiquetes de cara que encara no tenen un nom assignat. </para>
+
+        <para
+>Per a la tasca que estem parlant, marqueu <guilabel
+>Detecta les cares</guilabel
+>, per descomptat. Atès que la detecció de cares és una tasca que requereix molt de temps, és millor que <emphasis
+>no</emphasis
+> toqueu <guilabel
+>Explora</guilabel
+> immediatament, sinó <guilabel
+>Opcions</guilabel
+>. Es desplegarà una àrea addicional organitzada amb tres pestanyes. A <guilabel
+>Àlbums</guilabel
+> podreu limitar l'exploració a determinats àlbums o etiquetes. A <guilabel
+>Paràmetres</guilabel
+> podreu intentar trobar un equilibri entre la velocitat i la precisió que s'adapti a les vostres necessitats. Sota <guilabel
+>Avançat</guilabel
+>, trobareu dues caselles de selecció. La primera s'explica amb el text anterior. La segona és per al reconeixement de les cares, vegeu el següent article. </para>
+
+        <para
+>Una vegada hàgiu escollit acuradament les vostres opcions, feu clic a <guilabel
+>Explora</guilabel
+> i després d'un temps, depenent de l'àmbit de la vostra selecció, el resultat es mostrarà a l'àrea de la imatge. A la llista d'etiquetes de la barra lateral esquerra, veureu la branca Persones del vostre arbre d'etiquetes. Veureu tot el resultat de l'exploració només si seleccioneu l'etiqueta més alta <quote
+>Persones</quote
+>. A l'arbre veureu una etiqueta virtual nova anomenada <quote
+>Desconeguda</quote
+>, la qual mostrarà totes aquelles imatges on es reconeixen cares, però que encara no estan connectades amb una persona. Si heu explorat per primera vegada, aquí és on trobareu tot el resultat. </para>
+
+        <para>
+            <example>
+                <title
+>Resultat de detectar les cares</title>
+                <mediaobject>
+                    <imageobject
+><imagedata fileref="&path;using-mainwindow-facedetection.png" format="PNG"/></imageobject>
+                </mediaobject>
+            </example>
+        </para>
+
+        <para
+>Tingueu en compte que les miniatures que es presenten aquí no mostren tota la imatge. Mostren l'àrea de la imatge on l'algorisme de l'exploració situa una <firstterm
+>etiqueta de cara</firstterm
+>. La podreu veure fent clic sobre la miniatura. A la vista prèvia que s'obrirà, veureu tota la imatge amb totes les etiquetes de cares. Si no les veieu, feu clic al botó <inlinemediaobject
+> <imageobject
+><imagedata fileref="&path;using-mainwindow-icon-showfacetags.png" format="PNG"/></imageobject
+> </inlinemediaobject
+> de l'extrem superior esquerre de la vista prèvia. Si hi ha més d'una etiqueta de cara a la imatge, també estarà representada per més d'una miniatura. A la captura de pantalla de sobre, aquest és el cas amb les dues miniatures superiors. </para>
+
+        <para>
+            <mediaobject>
+                <imageobject
+><imagedata fileref="&path;using-mainwindow-facedetectiontag.png" format="PNG"/></imageobject>
+            </mediaobject>
+        </para>
+
+        <para
+>Aquesta imatge de captura de pantalla s'ha triat perquè mostra un problema important: inevitablement l'algorisme trobarà detalls en una imatge que s'assemblen a una cara, però que en realitat són una altra cosa. Això és pel que ens va bé el botó <guilabel
+>Elimina</guilabel
+>. Eliminarà l'etiqueta de cara de la fotografia i, si era l'única etiqueta de cara (esquerra), la fotografia desapareixerà del resultat de l'exploració. </para>
+
+        <para
+>Si realment hi ha una cara, entrarà en joc el camp anomenat «Qui és aquest/a?». Aquí podeu escriure el nom d'una etiqueta de Persona existent des del vostre arbre d'etiquetes o utilitzar la funció desplegable per a mostrar l'arbre d'etiquetes i seleccionar-ne una. Amb <guilabel
+>Confirma</guilabel
+>, podreu desar-la a la base de dades. Si era l'única etiqueta de cara (esquerra), la imatge desapareixerà de la selecció <quote
+>Desconegut/da</quote
+> i la trobareu quan seleccioneu l'etiqueta <quote
+>Persones</quote
+> o una de les etiquetes que heu assignat a una de les etiquetes de cara en aquesta imatge. </para>
+
+        <para
+>Al menú contextual de la vista prèvia hi ha dos elements més relacionats amb les etiquetes de les cares: <guilabel
+>Afegeix una etiqueta de cara</guilabel
+> i <guilabel
+>Neteja totes les cares d'aquesta imatge</guilabel
+>. </para>
+
+    </sect3>
+
+    <sect3
+> <title
+>Reconeixement de les cares</title>
+
+        <para
+>Assignar etiquetes de persones a les etiquetes de les cares és un prerequisit important per al reconeixement de les cares. Òbviament, el &digikam; només podrà reconèixer les cares si té quelcom per comparar. De manera que us correspon mostrar-li per on anar: Aquesta és la Laia, en Joan, en Pere, &etc; Per això, després de realitzar una detecció de cares tal com es descriu a l'article anterior, normalment seleccioneu l'etiqueta <quote
+>desconeguda</quote
+> a la barra lateral esquerra, feu clic a la miniatura i feu clic, si cal, al botó <inlinemediaobject
+> <imageobject
+><imagedata fileref="&path;using-mainwindow-icon-showfacetags.png" format="PNG"/></imageobject
+> </inlinemediaobject
+> (Mostra les etiquetes de les cares). Ara hauríeu de veure les etiquetes de les cares d'aquesta fotografia. Les que tinguin una etiqueta de persona (o una altra) ja assignada només mostraran el nom d'aquesta etiqueta. Les altres, que mostren cares <quote
+>desconegudes</quote
+>, mostraran un camp i dos botons com a la captura de pantalla de l'article anterior. Al camp anomenat «Qui és aquest/a?» podreu escriure el nom d'una etiqueta de Persona existent fora de l'arbre d'etiquetes o utilitzar la característica desplegable per a mostrar l'arbre d'etiquetes i seleccionar-ne una. Amb <guilabel
+>Confirma</guilabel
+>, podreu desar-la a la base de dades. </para>
+
+        <note>
+            <para
+>Si utilitzeu l'element <guilabel
+>Assigna una etiqueta</guilabel
+> del menú contextual en comptes del procediment descrit anteriorment, <emphasis
+>no</emphasis
+> s'assignarà una etiqueta de cara. S'assignarà una etiqueta normal i l'assignarà a tota la imatge. </para>
+        </note>
+
+        <para
+>Si es confirma una etiqueta de cara, només es mostrarà el nom de l'etiqueta, però no els botons per eliminar, editar o confirmar, però necessiteu aquests botons, &pex;, és incorrecta i la voleu editar o eliminar, simplement feu doble clic sobre el nom, i els botons tornaran a aparèixer. </para>
+
+        <para
+>Una vegada tingueu assignada una etiqueta a unes quantes fotografies, podreu tenir al &digikam; cercant si pot trobar més fotografies que mostrin la mateixa cara. Per a preparar aquest procés, feu clic a <guilabel
+>Explora la col·lecció cercant cares</guilabel
+>, però aquesta vegada seleccioneu <guilabel
+>Reconeixement de les cares</guilabel
+>. </para>
+
+        <note>
+            <para
+>Per a poder reconèixer automàticament una cara nova, prèviament s'ha d'entrenar amb un mínim de 4 cares similars etiquetades en diferents imatges emprant el flux de treball manual per a la gestió de les cares. </para>
+        </note>
+
+        <para
+>El reconeixement de les cares és més ràpid que la detecció de les cares, però encara té sentit fer clic a <guilabel
+>Opcions</guilabel
+> i limitar l'exploració a determinats àlbums o etiquetes a la pestanya <guilabel
+>Àlbums</guilabel
+>, &pex;, a l'etiqueta «Desconeguda». A la pestanya <guilabel
+>Paràmetres</guilabel
+> podrem jugar amb l'equilibri entre la velocitat i la precisió. Sota <guilabel
+>Avançat</guilabel
+> trobareu dues caselles de selecció. La primera s'explica amb el text anterior. </para>
+
+        <para
+>En el cas de resultats insatisfactoris, podria ser útil utilitzar <guilabel
+>Neteja i reconstrueix totes les dades d'entrenament</guilabel
+>. Una raó pot ser que hi hagi massa etiquetes de cara assignades a una persona mostrant aquesta persona d'una manera que no ajudi realment a l'algoritme de cerca, &pex;, amb ulleres de sol, borrosa, colors inusuals, amb una disfressa de carnestoltes, àrees fosques ombrejades a la cara, fotografies de bebè/infant/adult barrejades... Una altra raó per utilitzar aquesta opció pot ser un reconeixement de cares fals a causa d'una opció de configuració de precisió errònia a la pestanya <guilabel
+>Paràmetres</guilabel
+>. </para>
+
+        <para
+>Per a començar amb el reconeixement de les cares, feu clic a <guilabel
+>Explora</guilabel
+>. El procés etiquetarà totes les cares reconegudes amb l'etiqueta Persona adequada del vostre arbre d'etiquetes i la corresponent miniatura desapareixerà de la selecció d'etiqueta «Desconeguda». </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

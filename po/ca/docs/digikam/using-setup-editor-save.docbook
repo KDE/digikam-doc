@@ -1,0 +1,55 @@
+<sect3 id="using-setup-editor-save">
+    <title
+>Desar les opcions de la imatge</title>
+
+    <para
+>Quan es realitzen canvis als fitxers JPEG i després es desen al disc dur, s'ha de tornar a codificar el fitxer JPEG. Cada vegada que es codifica un fitxer JPEG, s'ha de prendre una decisió sobre el nivell de qualitat que s'aplicarà. Per desgràcia, el nivell de qualitat aplicat no es registra al fitxer d'imatge. Això vol dir que l'editor d'imatges no podrà utilitzar la mateixa relació de qualitat en desar una imatge alterada que l'emprada per a la imatge original. Podeu canviar el nivell de qualitat predeterminat que aplicarà l'editor d'imatges quan desa les imatges alterades movent el control lliscant <guilabel
+>Qualitat JPEG</guilabel
+> (1: baixa qualitat / 100: alta qualitat i sense compressió). En el moment que ho escrivim, s'admeten les metadades. </para>
+
+    <para
+>El mostreig secundari del croma és la pràctica de codificar les imatges implementant més resolució per a la informació de luminància que per a la informació del color. Si us plau, llegiu <ulink url="https://en.wikipedia.org/wiki/Chroma_subsampling"
+>aquest article</ulink
+> de la Wikipedia per a una explicació completa. </para>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-editor-save.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+    <para
+>Amb l'opció <guilabel
+>Compressió PNG</guilabel
+>, podreu reduir la mida dels fitxers d'imatge PNG. Aquesta operació no redueix la qualitat de la imatge a causa que el PNG utilitza un algoritme sense pèrdua. L'únic efecte serà que les dades de la imatge necessitaran més temps per a comprimir/descomprimir. Si disposeu d'un equip ràpid, podreu canviar aquest valor per utilitzar un factor alt de compressió (1: compressió baixa / 9: compressió alta). En el moment que ho escrivim, s'admeten les metadades. </para>
+
+    <para
+>Amb l'opció <guilabel
+>Compressió TIFF</guilabel
+>, podreu alternar l'ús de l'algoritme de compressió <emphasis
+>Deflate</emphasis
+> amb els fitxers d'imatge TIFF. Això reduirà la mida dels fitxers d'imatge TIFF. No té cap efecte sobre la qualitat de la imatge a causa que <emphasis
+>Deflate</emphasis
+> és un algoritme sense pèrdua. En el moment que ho escrivim, s'admeten les metadades. </para>
+
+    <para
+>Amb l'opció <guilabel
+>Fitxers JPEG 2000 sense pèrdua</guilabel
+>, permet l'emmagatzematge sense pèrdua, o, si se seleccionen les opcions amb pèrdua, fins i tot en aquest cas la mida comparativa dels fitxers serà molt millor que amb el JPEG normal. En el moment que ho escrivim, s'admeten les metadades. </para>
+
+    <para
+>Amb l'opció <guilabel
+>Fitxers PGF sense pèrdua</guilabel
+>, permet l'emmagatzematge sense pèrdua, o, si se seleccionen les opcions amb pèrdua, fins i tot en aquest cas la mida comparativa dels fitxers serà molt millor que amb el JPEG-2000. En el moment que ho escrivim, s'admeten les metadades. </para>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

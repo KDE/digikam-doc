@@ -1,0 +1,152 @@
+  <sect3 id="editor-enhance-vignetting">
+    <sect3info>
+      <title
+>Correcção do Efeito-Vinheta</title>
+      <abstract>
+        <para
+>O 'plugin' de imagem do &digikam; <emphasis
+>Correcção da vinheta</emphasis
+> é uma ferramenta para corrigir o efeito de vinheta da imagem (sub-exposição nos cantos). </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>Digikam</keyword>
+        <keyword
+>Anti-Vinheta</keyword>
+	<keyword
+>Adicionar uma vinheta</keyword>
+	<keyword
+>Correcção da vinheta</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introdução</title>
+    <para
+>As lentes grandes-angulares, especialmente as que são usadas em fotografias de formato médio e grande, normalmente não iluminam de forma uniforme o plano do filme por completo. Em vez disso, fazem uma espécie de &quot;vinheta&quot; (sombra) nos cantos e nos extremos da imagem, reduzindo substancialmente a luz que atinge o filme nesses pontos. Contudo, as lentes telescópicas também poderão gerar alguma vinheta. </para>
+    <para
+>A solução tradicional para isto é anexar um &quot;filtro central&quot; nas lentes. Este é um filtro de densidade neutra com uma densidade máxima no eixo óptico das lentes, limpa na periferia e com uma densidade que varia inversamente com o efeito de vinheta das lentes. Um filtro central tem várias vantagens: não só corrige automaticamente para as imagens completas mas, dado que está fixo em frente à lente,  também compensa o efeito de vinheta fora do centro, que ocorre quando se aplicam movimentos na máquina fotográfica para o ajuste da perspectiva ou do plano de foco. </para>
+    <para
+>Mas também existem desvantagens. Muitos dos filtros centrais necessitam de ajuste do factor de corte de 1,5 ou 2 f, o que poderá necessitar por sua vez de uma velocidade de obturação tão lenta (dado que as lentes grandes-angulares, mesmo com filtros centrais, são melhor usadas com aberturas de f/16 ou menores) que é impossível segurar a máquina à mão e o borrão de movimento torna-se um problema ao fotografar objectos em movimento. </para>
+    <para
+>Com a grande gama de filmes nos dias de hoje a profundidade de cor (ou tons de cinzento) das máquinas digitais ou dos 'scanners' de filme, é possível simular o efeito de uma filtro central posteriormente, aplicando uma transformação equivalente a uma imagem em bruto tirada sem o filtro. Este 'plugin' aplica uma transformação de filtragem central a uma imagem. Usa um algoritmo cujos direitos de cópia pertencem a John Walker. </para>
+    <sect4 id="using-vignettingcorrection">
+      <title
+>Usar a ferramenta de correcção da vinheta</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-vignettingcorrection.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>A Janela de Correcção da Vinheta</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>Existem cinco barras que lhe dão o controlo sobre o filtro de correcção da vinheta, assim como existem outras três para corrigir a exposição da imagem-alvo: </para>
+      <para
+><guilabel
+>Quantidade</guilabel
+>: esta opção controla o grau de atenuação de intensidade do filtro no seu ponto de densidade máxima. A densidade por omissão é 2,0, o que corresponde a um filtro óptico com um factor de corte de 1 f (ou, sem coincidências, a um factor de 2 na luminosidade). Aumente a densidade se quiser compensar um maior grau do efeito de vinheta; reduza-o no caso de o efeito ser menor. </para>
+      <para
+><guilabel
+>Leve</guilabel
+>: esta opção determina a taxa com que a intensidade do filtro decai desde o ponto de densidade máxima até à periferia, expresso como um factor de potência. O valor por omissão 1 corresponde a uma redução linear na densidade do filtro com a distância ao centro. Os factores de potência maiores que 1,0 causam um decaimento mais rápido (por exemplo, uma potência de 2 faz com faz com que a densidade reduza com o quadrado da distância ao centro) e faz com que o efeito do filtro se concentre perto do centro. As potências abaixo de 1,0 espalham a densidade do filtro pelos extremos; uma potência de 0,5 faz com que a densidade decaia com um factor proporcional à raiz quadrada da distância ao centro. </para>
+      <para
+><guilabel
+>Raio</guilabel
+>: esta opção indica o raio, como um múltiplo da medida da meia-diagonal da imagem, na qual a densidade do filtro decai para zero (ou, por outras palavras, fica transparente). O valor por omissão 1,0 corresponde a um filtro que, se ficar centrado com a imagem, é transparente no seus cantos. Um valor de raio maior que 1,0 estende o efeito do filtro central para lá do cantos da imagem, enquanto um raio menor que um limita a acção do filtro a uma região menor que a imagem. Ao compensar o efeito de vinheta das lentes usadas para as máquinas de médio e grande formato, o factor de raio predefinido igual a 1,0 raramente é correcto! Estas lentes muitas vezes &quot;cobrem&quot; um círculo de imagem substancialmente maior que o filme para permitir os movimentos da máquina fotográfica para controlar a perspectiva e o foco e, consequentemente, ter um padrão de vinheta que se estenda bastante para lá dos extremos do filme, o que necessita de um raio maior que 1 para simular um filtro central que cubra o círculo inteiro da imagem. </para>
+      <para
+>A única forma de ter a certeza dos valores óptimos de <guilabel
+>Densidade</guilabel
+>, <guilabel
+>Leveza</guilabel
+> e <guilabel
+>Raio</guilabel
+> para compensar as características ópticas actuais de uma dada lente é expor uma cena iluminada de forma uniforme (por exemplo, um cartão cinzento iluminado por uma luz difusa) e efectuar uma densimetria na imagem resultante. Se isso falhar, ou se as especificações do fabricante das lentes derem o grau de vinheta preciso com uma ou mais aberturas, poderá ter de experimentar com várias configurações para descobrir as que funcionam melhor para cada uma das suas lentes. Para o ajudar  nessa tarefa, a janela do 'plugin' oferece uma máscara em miniatura aplicada à imagem. Felizmente, a resposta do olho humano é logarítmica e não linear, como a maioria dos sistemas de imagem digitais, pelo que não necessita de compensar com precisão a vinheta actual para criar imagens que os visualizadores apresentem como iluminadas de forma uniforme. </para>
+     <para
+>Configuração do <guilabel
+>deslocamento em X</guilabel
+> e <guilabel
+>deslocamento em Y</guilabel
+>: estas opções movem, respectivamente, o centro do filtro na horizontal ou na vertical até chegar ao extremo da imagem definido de acordo com a percentagem indicada. Um valor negativo para o deslocamento em X irá deslocar o filtro para a esquerda, enquanto um valor positivo deslocá-lo-á para a direita. Do mesmo modo, um valor negativo em Y irá deslocar o filtro para cima, enquanto um valor positivo o deslocará para baixo. </para>
+      <para
+>Opções do <guilabel
+>Brilho</guilabel
+>, <guilabel
+>Contraste</guilabel
+> e <guilabel
+>Gama</guilabel
+>: o processamento de uma imagem com este 'plugin' reduz a intensidade dos pixels. Terá de ajustar de novo a exposição da imagem de destino com estas opções. Estas barras só lhe dão valores positivos, dado que só precisa de aumentar esta configuração. </para>
+	<para
+><guilabel
+>Adicionar uma Vinheta</guilabel
+>: muitas fotografias parecem desinteressantes devido a terem um fundo que distrai as pessoas ou por outro motivo de composição qualquer. Embora, na maior parte dos casos, queira remover essa vinheta, é um facto que uma vinheta selectiva poderá melhorar a legibilidade de uma fotografia e deslocar a atenção para o assunto pretendido. Como artista, poderá seleccionar esta opção; se a marcar, irá inverter o filtro, escurecendo assim os cantos de uma fotografia. </para>
+      <note>
+        <para
+>Se quiser um ajuste de exposição mais fino, deixe os valores de Brilho/Contraste/Gama a zero e use a ferramenta de Ajuste de Curvas do Editor de Imagens do &digikam;, que está disponível em <menuchoice
+><guimenu
+>Corrigir</guimenu
+><guimenuitem
+>Cores</guimenuitem
+><guimenuitem
+>Ajustar a Curva</guimenuitem
+></menuchoice
+>. </para>
+      </note>
+    </sect4>
+    <sect4 id="inaction-vignettingcorrection">
+      <title
+>A ferramenta de correcção da vinheta em acção</title>
+      <para
+>Este é um exemplo de uma correcção de vinheta aplicada a uma imagem. A imagem original (1) mostra a vinheta nos canos, enquanto a imagem corrigida (2) mostra muito menos. Também é aplicada uma correcção do brilho e do contraste à imagem de destino gerada por esta ferramenta. </para>
+      <para
+>Os valores usados neste exemplo são: <itemizedlist>
+          <listitem>
+            <para
+>Densidade = 2,6.</para>
+          </listitem>
+          <listitem>
+            <para
+>Potência = 0,9.</para>
+          </listitem>
+          <listitem>
+            <para
+>Raio = 1,1.</para>
+          </listitem>
+          <listitem>
+            <para
+>Brilho = 20.</para>
+          </listitem>
+          <listitem>
+            <para
+>Contraste = 50.</para>
+          </listitem>
+          <listitem>
+            <para
+>Gama = 20.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-antivignetting-preview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>A Ferramenta de Correcção da Vinheta do Editor de Imagens em Acção</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

@@ -1,0 +1,168 @@
+<sect2 id="editor-cm-wkspace">
+    <title
+>Arbetsrymden</title>
+
+    <sect3>
+        <title
+>Nu har jag talat om för &digikam; var min bildskärmsprofil finns, och jag har en kameraprofil som jag använde för bildfilen som skapades av min programvara för hantering av obehandlade bilder. Vad är nästa steg i färghanteringen? </title>
+
+        <para
+>Du måste välja ett arbetsfärgsystem så att du kan redigera bilden. LCMS omvandlar bilden från kamerans färgsystem till den valda färgsystemet, via PCS som anges av kamerans färgprofil. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Varför kan man inte bara redigera bilder med färgsystemet som beskrivs av kameraprofilen?</title>
+
+        <para
+>Trots allt ska kameraprofilen tillhandahålla den bästa "anpassningen" till färgerna som registreras av kameran, efter behandling med proceduren för hantering av obehandlade filer, eller hur? I Wikipedia står det "Arbetsrymder som sRGB eller Adobe RGB, är färgsystem som underlättar bra resultat vid redigering. Exempelvis ska bildpunkter med samma värden för RGB verka neutrala". "[B]ildpunkter med samma värden för RGB ska verka neutrala" betyder bara att för en given bildpunkt med R = G = B, i en bild som har konverterats till en lämplig arbetsrymd, ska man se en grå, svart eller vit färg på skärmen. Många kameraprofiler bryter mot detta "neutrala" villkor. Jag känner inte till någon lista på andra tekniska krav för en lämplig arbetsrymd. Jag kan dock föreställa mig en annan god anledning till att man inte vill redigera bilden med kameraprofilens färgsystem. Om man tittar på storleken hos en typisk kameraprofil, är den omkring en kvarts till en halv Mibyte eller mer. Den innehåller en mängd information om alla ändringar som behöver göras i ursprungsmotivets olika färgområden och tonomfång, för att få riktig färgåtergivning av RGB-värden som skapas vid behandling av den obehandlade filen. Kameraprofilen är riktig (åtminstone för färger i det ursprungliga motivet) men inte särskilt matematiskt jämn. Färgprofiler för arbetsrymder, har å andra sidan mycket liten storlek (en halv Kibyte istället för en halv Mibyte) eftersom de beskriver ett tonomfång i form av jämna, kontinuerliga, matematiska funktioner. Profiler för arbetsrymder behöver inte ta hänsyn till "stökigheten" hos verkliga sensorer, så de matematiska omvandlingarna som utförs vid bildredigering kommer att gå mycket problemfriare och noggrannare än om du försöker redigera bilden medan den fortfarande är i kamerans färgsystem. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Vilken arbetsrymd ska man välja?</title>
+
+        <para
+>Alla har en åsikt. Jag lägger bara fram något av den information som behövs för att göra ett välgrundat val. Profiler för arbetsrymder karaktäriseras av: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>Gamma (eller en annan överföringsfunktion), som bestämmer hur mycket av de ursprungliga linjära styrkevärden som kamerasensorn lagrade (utsatta för A/D-konvertering i kameran, och därefter interpolerade av programmet för behandling av obehandlade bilder för att skapa bildfilen) ändras för att göra redigering enklare och exaktare. </para
+></listitem>
+
+            <listitem
+><para
+>RGB-grundfärgerna som bestämmer färgintervallen, det vill säga färgtonomfånget som täcks av en given profil. </para
+></listitem>
+
+            <listitem
+><para
+>Vitpunkt (oftast D50 eller D65, även om andra värden kan användas), som anger färgtemperaturen hos arbetsrymdens vitpunkt. </para
+></listitem>
+
+        </orderedlist>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Vilken gamma ska arbetsrymden ha?</title>
+
+        <para
+>En färgprofils gamma bestämmer vilken transform som måste göras för att konvertera från bildens inbäddade färgprofil (kanske färgarbetsrymden eller kamerans färgprofil) till en annan färgprofil med annat gamma, som den valda arbetsrymden, eller bildskärmsprofilen som används för att visa bilden på skärmen, eller kanske från en arbetsrymd till en annan, eller kanske från arbetsrymden till skrivarens färgsystem. Utdata från dcraw är en 16-bitars bild med linjär gamma, vilket betyder att histogrammet för den resulterande bildfilen visar den verkliga ljusmängden som varje bildpunkt lagrade vid exponeringen (en omskrivning av <ulink url="http://www.guillermoluijk.com/tutorial/dcraw/index_en.htm"
+>följande sida</ulink
+>). (Vilket är orsaken till att en lämplig gammatransform också måste utföras för att få önskad arbetsrymd när en kameraprofil tilldelas till utdata från dcraw, om inte kameraprofilen också använder gamma = 1.) </para>
+
+        <para
+>En praktisk konsekvens av en arbetsrymds gamma är att ju större gamma är, desto fler diskreta färgtoner är tillgängliga för redigering i skuggorna, med motsvarande färre färgtoner tillgängliga i dagrarna. Att ändra gamma i en bild omfördelar antal färgtoner tillgängliga i de mörka och ljusa områdena i en bild. Teoretiskt sett, om man arbetar på en (finstämd) bild med mörka färgtoner vill man ha en arbetsrymd med större gamma. Och om man arbetar på en briljant bild, säg en bild taken i solljus mitt på dagen av en bröllopsklänning med snö i bakgrunden, kanske man bör välja en arbetsrymd med mindre gamma, så att det finns fler graderingar av färgtoner i dagrarna. </para>
+
+        <para
+>Bortsett från teorin, i verkligheten med verklig bildredigering, använder nästan alla antingen arbetsrymder med gamma 1,8 eller 2,2. Två undantag värda att nämna är sRGB och L*-RGB. </para>
+
+        <para
+>sRGB använder en överföringsfunktion som liknar den hos ett katodstrålerör (och därmed inte nödvändigtvis relevant för bildredigering eller visning på en LCD-skärm). Som Wikipedia anmärker, "I motsats till de flesta andra RGB-färgsystem, kan inte sRGB gamma uttryckas som ett enda numeriskt värde. Totalt är gamma ungefär 2,2, och består av en linjär del (gamma 1,0) nära svart, och en icke-linjär del på andra ställen med exponenten 2,4 och gamma (lutningen på logaritmisk utdata mot logaritmisk indata) från 1,0 till ungefär 2,3" (citat från <ulink url="https://en.wikipedia.org/wiki/SRGB"
+>följande sida</ulink
+>), vilket leder till en del komplicerad matematik vid bildbehandling. </para>
+
+        <para
+>L*-RGB använder samma perceptuellt likformiga överföringsfunktion som färgsystemet CIELab. "Vid lagring av färger i värden med begränsad precision" kan användning av en perceptuellt likformig överföringsfunktion "förbättra reproduktionen av färgtoner" (citat från <ulink url="https://en.wikipedia.org/wiki/Lab_color_space"
+>följande sida</ulink
+>). </para>
+
+        <para
+>Förutom gamma 1,8 och gamma 2,2, är det enda andra gammavärdet för arbetsrymder som nämns eller används i större utsträckning linjärt gamma, eller gamma 1,0. Som nämnts ovan, är utdata från dcraw filer med linjärt gamma om du ber om 16-bitars utdata. Linjärt gamma används vid HDR (stort dynamiskt omfång) bildhantering, och dessutom om man vill undvika att introducera gamma-relaterade fel i vanlig redigering med litet dynamiskt omfång. </para>
+
+        <para
+>"Gamma-relaterade fel" är ett ämne utanför den här handledningens omfattning. Men se "Gamma errors in picture scaling" (se <ulink url="http://www.4p8.com/eric.brasseur/gamma.html"
+>följande sida</ulink
+>) för gamma-relaterade skiftningar av tonfärg, och förstås Timo Autiokaris informativa (ehuru något ökända) webbplats med helhjärtat stöd för att använda arbetsrymder med linjärt gamma (Timos webbplats verkar vara nere för närvarande, men arkiverade kopior av hans artiklar är fortfarande tillgängliga via Google). Bruce Lindbloom nämner ett gamma-relaterat fel som ofta träffas på som orsakas av felaktig beräkning av ljusstyrka i en icke-linjär RGB-arbetsrymd (se <ulink url="http://www.brucelindbloom.com/index.html?WorkingSpaceInfo.html"
+>föjande sida</ulink
+>, sidonot 1). Och i samma ådra, orsakar beräkningarna som ingår i att blanda ihop färger för att skapa nya färger (som användning av ett digitalt filter för att göra en bild varmare) gamma-relaterade fel, om inte de nya färgerna beräknas genom att först transformera alla relevanta värden tillbaka till sina linjära motsvarigheter. </para>
+
+        <para
+>Dessvärre och trots deras uppenbara matematiska fördelar, har arbetsrymder med linjärt gamma (enligt min mening) så få färgtoner i skuggorna att de är omöjliga att använda vid redigering om man arbetar med 8 bitar, och fortfarande problematiska med 16 bitar. När dagen kommer då vi alla redigerar 32-bitars filer skapade av HDR-kameror på vår personliga superdator, förutsäger jag att vi kommer att använda arbetsrymder med gamma 1. Adobe Lightroom använder redan en arbetsrymd med linjärt gamma "i det fördolda". CS2 tillåter alternativet att använda linjärt gamma för att blanda färger, och Lightzone har alltid använt en arbetsrymd med linjärt gamma. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Hur många diskreta färgtonsteg finns i en digital bild?</title>
+
+        <para
+>I en 8-bitars bild finns det 256 tonsteg från helt svart till helt vitt. I en 16-bitars bild finns det teoretiskt 65536 steg. Men kom ihåg att de 16 bitarna började antingen som 10 bitar (1024 steg), 12 bitar (4096 steg) eller 14 bitar (16384 steg) skapade av kamerans A/D-konvertering: de extra bitarna för att nå 16 bitar börjar bara som utfyllnad. De tillgängliga färgtonerna är inte jämt fördelade från ljust till mörkt. I linjärt gammaläge (som kamerasensorn ser saker), finns det en hel del fler färgtoner i dagrarna än i skuggorna. Sålunda rådet att "exponera åt höger, men förstör inte dagrarna" när man fotograferar med obehandlade bilder. Se Ron Bigelows <ulink url="http://www.ronbigelow.com/articles/articles.htm"
+>artikel "Why Raw"</ulink
+>, för en fullständig beskrivning av den tillgängliga fördelningen av färgtoner i en obehandlad bild. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Ska man använda en arbetsrymd med stort eller litet tonomfång? </title>
+
+        <para
+>En viktig hänsyn vid val av arbetsrymd är att vissa arbetsrymder är större än andra, vilket betyder att de täcker mer av det synliga spektrat (och som en följd inkluderar några imaginära färger, matematiska begrepp som egentligen inte finns). De större arbetsrymderna erbjuder fördelen av att kunna behålla alla färger som kameran lagrade och som bevarades vid konverteringen av LCMS från kameraprofilen till profilsambandsrymden, med sitt extremt stora tonomfång, och tillbaka igen till den valda arbetsrymden. </para>
+
+        <para
+>Men att behålla alla tänkbara färger har ett pris, som förklaras nedan. Och det verkar som om vilken given digital bild som helst troligen bara innehåller en liten delmängd av alla möjliga synliga färger som kameran klarar av att avbilda. Den lilla delmängden får enkelt rum i en av de mindre arbetsrymderna (ett undantag som kräver ett större tonomfång skulle vara en bild av ett mycket färgmättat objekt, liksom en gul påsklilja). </para>
+
+        <para
+>Att använda en mycket stor arbetsrymd betyder att redigering av bilden (använda kurvor, öka färgmättnaden, etc.) enkelt kan skapa färger som den slutliga utmatningsenheten (skrivare, bildskärm) helt enkelt inte kan reproducera (du kan inte heller se färgerna medan du redigerar). Alltså måste konverteringen från arbetsrymden till utenhetens färgrymd (som skrivarens) avbilda färgerna utanför tonomfånget i den redigerade bilden, där vissa till och med kan vara fullständigt imaginära, till skrivarens färgrymd med dess mycket mindre tonomfång. Denna avbildningsprocess leder i bästa fall till inexakta färger och mättnadsförlust. Vad värre är, avbildningen kan enkelt leda till färgbandning (luckor i vad som skulle vara en jämn färgövergång, kanske över en blå himmelsvidd) och beskärning (t.ex. noggrant framställda dämpade övergångar mellan skira röda nyanser, kan exempelvis avbildas till ett enda parti matt röd efter konvertering till skrivarens färgrymd). Dessutom säger experterna att 8-bitars bilder helt enkelt inte har tillräckligt med färgtoner för att sträckas ut över en arbetsrymd med stort tonomfång utan bandning och mättnadsförlust, även innan konvertering till utdatarymden. Om du alltså väljer en arbetsrymd med stort tonomfång, försäkra dig om att du börjar med en 16-bitars bild. </para>
+
+        <para
+>Som sammanfattning, oriktigt hanterade arbetsrymder med stort tonomfång kan orsaka förlust av information vid utmatning. Arbetsrymder med litet tonomfång kan beskära information vid inmatning. Arbetsrymder med medelstort tonomfång försöker hitta en lämplig balans. Som framgår av Wikipedia, är det en kompromiss. </para>
+
+        <para
+>Här är några ofta upprepade råd om val av arbetsrymd: </para>
+
+        <para>
+            <orderedlist>
+
+                <listitem
+><para
+>Använd (eller konvertera åtminstone den slutliga bilden till) sRGB med bilder avsedda för webben. </para
+></listitem>
+
+                <listitem
+><para
+>För att få störst noggrannhet vid bildredigering (det vill säga, få ut så mycket som möjligt av dina begränsade "bitar" med minst risk för bandning och klippning när du konverterar bilden från arbetsrymden till en utmatningsrymd), använd den minsta arbetsrymd som omfattar alla färger i motivet du fotograferade, plus lite extra utrymme för de nya färger du med avsikt skapar när du redigerar. </para
+></listitem>
+
+                <listitem
+><para
+>Om du arbetar med 8 bitar istället för 16 bitar, välj en liten arbetsrymd istället för en stor för att undvika överstyrning och bandning. </para
+></listitem>
+
+                <listitem
+><para
+>Konvertera den obehandlade filen till en 16-bitars TIFF-fil med en arbetsrymd som har stort tonomfång för att undvika att förlora färginformation, i arkiveringssyfte. Konvertera därefter den arkiverade TIFF-filen till vald arbetsrymd med normalt eller stort tonomfång (spara förstås arbetskopian med ett nytt namn). </para
+></listitem>
+
+            </orderedlist>
+        </para>
+
+        <para
+>För mer information om att välja arbetsrymd, se <ulink url="http://www.brucelindbloom.com/"
+>följande sida</ulink
+>, "Information about RGB Working Spaces" för en visuell jämförelse av de olika arbetsrymderna. Se <ulink url="http://www.luminous-landscape.com/tutorials/prophoto-rgb.shtml"
+>här</ulink
+> och <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm"
+>här</ulink
+> för presentationer av respektive fördelar och nackdelar av att använda arbetsrymder med stort tonomfång. Och när du ändå är på webbplatsen cambridgeincolour.com, titta på handledningen om färghantering. </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

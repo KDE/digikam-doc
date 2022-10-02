@@ -1,0 +1,270 @@
+<sect2 id="using-dam-build">
+    <title
+>Skapa ett system för att organisera och hitta dina fotografier</title>
+
+    <para
+>Teman: Hierarki, etiketter, betygsättning, bildtexter, geografisk plats, datum, album, filnamn, versioner, export </para>
+
+    <para
+>Jag vågar påstå att om du har fler än 1000 fotografier på datorn utan någon hänsyn tagen till hantering av digitala tillgångar, tar det dig alltför lång tid att hitta en viss bild. Och om du inte vet hur många bilder är lagrade i dina filer, använder du med säkerhet inte &digikam;. Den dubbla metoden att lagra metadata i en databas <emphasis
+>och</emphasis
+> i bildfilerna, garanterar extremt snabb sökning och säker arkivering, fritt tillgänglig för andra program, plattformar och format. </para>
+
+    <para
+>Men på samma sätt som ingenting kommer gratis, finns det ingen katalogisering eller hantering av digitala tillgångar som inte kostar någonting: de som tillbringar den inledande tid det tar att skapa en egen systematisk metod klarar sig bättre när tiden går och antalet fotografier ökar. Lönsamheten hos investeringen som läggs på hantering av digitala tillgångar har uppskattats vara bättre än en faktor 10 i olika studier. Kom ihåg att vara <command
+>koncis, planera för framtiden (30 - 50 år), och att göra allt en gång för alla</command
+>. Det kommande semantiska nätverket kommer att kunna integreras helt och hållet med en miljö för hantering av digitala tillgångar och ge den ytterligare värde. </para>
+
+    <sect3 id="case-for-digikam"
+> <title
+>Ett argument för att hantera digitala tillgångar med &digikam;</title>
+
+        <para
+>&digikam; tillhandahåller ett antal metoder att klassificera fotografier: filnamn, album, samlingar, datum och tid, etiketter, betyg, GPS-position och bildtexter. Som om det inte var nog, kan du söka efter många standardiserade metadata-objekt som kameramärke, lins, koordinater, bildstorlek med mera. Metadata-kategorier som anges här är i själva verket olika 'vyer' av fotobiblioteket. Att kombinera dessa vyer är den <emphasis
+>överlägset</emphasis
+> bästa metoden att begränsa sökningen efter en fil och snabbt hitta den. Tänk dig att du har över 800 fotografier av din älskade. Att söka efter 'Anna' med bättre betyg än '***', taget i 'Frankrike' ger dig säkert bara några få kandidater. När det gäller urvalskriterier för system som hanterar digitala tillgångar, klarar sig &digikam; mycket bra i termer av fullständighet, mångsidighet, hastighet, skalbarhet, noggrannhet och öppenhet. </para>
+
+        <para
+>Det viktigaste att komma ihåg är att du inte vet hur du eller någon annan gör för att försöka hitta en bild två år framåt i tiden. Du kommer ihåg tidigare händelser i ett annat sammanhang, det är oundvikligt. Om du kan begränsa sökningen genom att komma ihåg plats, tid, kamera, tema, betyg eller ägare har du en oändligt mycket bättre chans att hitta något snabbt en med bara ett av dessa kriterier, eller inget alls. I början, när fotografiet tas, har du all metadata i huvudet (förutom EXIF-data). Om du inte matar in en del av den i systemet för hantering av digitala tillgångar, går den till sist förlorad på samma sätt som alla händelser faller i glömska med tiden. </para>
+
+        <para
+>Skillnaden mellan <command
+>privat</command
+> och <command
+>öppen</command
+> metadata, måste betonas här. Man kan säga att alla egenskaper som är inbäddade i filer, är potentiellt öppna, eftersom bilderna kan exporteras, säljas, och kopieras till andra platser och personer. Å andra sidan kan all metadata i databasen som inte är inbäddad anses vara privat, eftersom den förblir i databasen och inte hamnar någon annanstans. Genom att justera inställningarna i &digikam; enligt detta, kan du styra vilken data som förblir privat och vilken som blir inbäddad och slutligen öppen. </para>
+
+    </sect3>
+
+    <sect3 id="build-archive"
+> <title
+>Skapa arkivet: katalogorganisation, fysisk layout som information</title>
+
+        <para
+>Det första att göra och känna till innan du lägger in något i systemet är att skapa en informationsstruktur (i motsats till datastruktur). Dina bildfiler måste organiseras på något sätt i datorn. Du måste bestämma om andra ska kunna komma åt fotografierna (dela filer), om du placerar dem på en särskild enhet, på en nätverksenhet, etc. Kom ihåg att du någon gång måste flytta dem till en större enhet. </para>
+
+        <para
+>Organisationen ska vara enkel, enhetlig och skalbar, och den ska vara oberoende av lagringsmediet där du förvarar dem. Gör inte katalogerna för små. Flera tusen bilder i en katalog är inte för mycket att önska, men håll dem små nog så att de får plats på ett säkerhetskopieringsmedium som dvd eller Bluray. Kom ihåg att arkivet växer hela tiden! Den konkreta strukturtypen beror naturligtvis på ditt användarfall. Låt oss ta ett enkelt, men ändå vanligt exempel: Du är en tillfällig fotograf som tar bilder av ditt privatliv, din familj, semestrar, och så vidare. Då skulle det kunna vara effektivt att skapa en struktur baserat på årtal, samt semestrar och lagring för export. Det skulle kunna se ut så här: </para>
+
+        <blockquote
+><screen
+>2006
+            2007
+            2008
+            Semester
+            - A
+            - B
+            - C
+            Export
+            Kul grejer
+        </screen
+></blockquote>
+
+        <para
+>Kanske är du nöjd med denna struktur. Semesterbilder kan snabbt hittas baserat på sin plats (om du inte åker till samma plats varje år), och resten är organiserade enligt datum. Om du tar tillräckligt många bilder bör du kanske skapa underkataloger för åren som månader, t.ex. 2008-01, 2008-02, etc. Katalogen 'Export' skulle kunna innehålla bilder som ska skrivas ut eller läggas på en webbplats. </para>
+
+        <para
+>En mer yrkesmässig fotograf har mycket annorlunda behov, eftersom det finns versioner av fotografier, arkiv, arbetsflöden, ett konstant inflöde av bilder med olika teman, och en stor mängd av allting. Inom 10 år har man 95 % arkiv och 5 % arbetsfiler, och man vill inte organisera strukturen baserat på innehållet. </para>
+
+        <para
+>Man bör ta hänsyn till detta: </para>
+
+        <itemizedlist>
+            <listitem
+><para
+>Vilka olika filer passar ihop? Att dela upp enligt filtyp gör det enklare att utföra bakgrundsbehandling. Håll nya och gamla filer åtskilda.</para
+></listitem>
+            <listitem
+><para
+>Hur kan strukturen göras skalbar?</para
+></listitem>
+            <listitem
+><para
+>Att hålla original och arbetsfiler åtskilda gör det enklare att skapa strategier för säkerhetskopiering och förflyttning. Du kan alltid veta om du söker efter ett original eller ett derivat.</para
+></listitem>
+        </itemizedlist>
+
+    </sect3>
+
+    <sect3 id="automatic-metadata"
+> <title
+>Skapa metadata automatiskt</title>
+
+        <para
+>Hur sköter man allt det där med metadata? För det första finns det redan en mängd <command
+>automatiskt skapad metadata</command
+>: EXIF-data och Tillverkaranmärkningar. Om du har ställt in &digikam; med dina identitetsvärden kommer alla importerade bilder att automatiskt märkas med denna datauppsättning, vilket omfattar copyright. Om du har sparat ett GPS-spår samtidigt som fotografierna togs, kan du lokalisera bilderna med en enda åtgärd genom att använda verktyget för geografisk plats. Även om du kom tillbaka med 1000 bilder från en fotoutflykt, ska du inte behöva tillbringa mer än 10 minuter för att göra allt det där. Du har redan alla kamerainställningar för varje bild, linsdata som zoom, fokus, bländare, etc., datum och tid, fotografiets plats, copyright, upphovsman, använt program, med mera. Inte så dåligt, eller hur? Men vi kunde ha gjort mer vid import: vi kunde ha ändrat filnamn för att inkludera datum, plats eller tema; vi kunde ha ändrat format till ett förlustfritt format med 16 bitar/kanal; vi kunde ha skilt JPEG och obehandlade filer i olika kataloger. Jag rekommenderar faktiskt att göra automatiskt namnbyte för att motsvara en händelse, plats eller tema. &digikam; tillhandahåller all datum- och kalenderbaserad gruppering, så det finns knappast något behov av att koda in datum i filnamnet, om du inte vill göra det för att kunna bläddra i dina album med ett annat program som inte klarar datum så bra. Någon gång kommer du att köpa en ny kamera, tidigare än du tänkt dig, eller så har du redan en andra kamera. Numreringsmetoden för den nya kameran börjar typiskt om med IMG_0001.JPG, vilket skapar identiska filnamn som de du redan har, om du inte byter namn på dem. Genom att byta namn minskar du risken att skriva över dem av misstag vide ett senare tillfälle. Håll de nya namnen snygga: använd alfanumeriska tecken, bindestreck, understreck och en enda punkt innan filändelsen. </para>
+
+        <para
+>Jag rekommenderar också att aktivera alternativen för att 'spara metadata' på &digikam;s inställningssida för metadata. Det garanterar att EXIF- och IPTC-data skrivs i filen. Om du glömt att göra det kan du alltid komma ikapp genom att kopiera metadata i databasen till filerna på en gång (från albummenyn). </para>
+
+        <para
+>Nu har vi redan en massa i databasen, men vad händer om något av det behöver ändras? &digikam; tillhandahåller en metadataeditor för ett urval av egenskaper, naturligtvis de allra viktigaste. </para>
+
+        <para
+>Det verkliga arbetet börjar nu, eftersom vi ska lägga till etiketter, bildtext och ett betyg för varje fotografi. Alla bilder som ska ha samma egenskap kan naturligtvis markeras och hanteras på en gång. Låt oss börja med betyg eller omdöme. Det är bäst att börja med betygsättning, eftersom du kan koncentrera dig på bra bilder i det fortsatta arbetet. </para>
+
+    </sect3>
+
+    <sect3 id="ranking"
+> <title
+>Betygsättning och omdömen</title>
+
+        <para
+>Ett bedömningssystem är implementerat i &digikam; med det femstjärniga betygsverktyget. Det finns i själva verket sex nivåer: noll till fem stjärnor (*) kan tilldelas (när de sparas till IPTC-metadata utförs en översättning av nivåerna för att fungera tillsammans med andra program). Betyg kan snabbt tilldelas med &digikam; genom att använda snabbtangenter eller musen för enstaka fotografier eller hela markeringar. Betyget kan sedan användas som sökbegrepp, eller direkt från snabbfiltren i statusraden. Ta dig dock tid att etablera personliga kriterier för betygen, innan du  börjar tilldela stjärnor överallt. Den bästa metoden är att skriva ner din personliga motsvarighet mellan stjärnor och några kvalitetsbegrepp, som definierar vad du faktiskt menar när du ger t.ex. fem stjärnor. I allmänhet bör färre och färre bilder betygsättas med ökande antal stjärnor. Ett förhållande på 3-10 mellan varje nivå har visat sig användbar. Det låter dig komma långt i åtskillnad med din betygspyramid. Låt säga att du väljer förhållandet 7 mellan nivåerna. För varje bild med fem stjärnor, finns det då 7 med fyra stjärnor, 49 med tre stjärnor, och så vidare, vilket ger nästan 20000 bilder. Förvånande? Ja, och 16807 av dem behövde du inte alls betygsätta! Du kan till och med definiera olika betygssättning beroende på användning. Två stjärnor vid kommersiell användning kan betyda någonting annat än två stjärnor för semesterfoton. Det är också bra att definiera ett neutralt betyg, där allting lägre i själva verket är ett negativt betyg. Det hjälper dig att effektivt gallra och tunna ut din samling. Annars skulle du kunna definiera syften med betygen, säg noll stjärnor för 'kan kastas', en stjärna för bilder i karantän (bestäm senare), två stjärnor för galleriexport, tre stjärnor för utskrift, fyra stjärnor för försäljning, fem stjärnor för 'att arbeta med', hur du vill. Det måste passa <emphasis
+>dina</emphasis
+> syften. Följande tabell illustrerar en möjlig evolution för en yrkesfotograf som använder betygsförhållandet omkring 7 under följande 12 år. Det är uppenbart att bra bilder lätt kan hittas, till och med bland miljontals foton. </para>
+
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-dam-pyramid.png" format="PNG"/></imageobject>
+                <textobject
+> <phrase
+>Omdömen</phrase
+> </textobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Låt oss fortsätta med etiketter (eller nyckelord som det kallas i andra program, eller kategorier, alla är synonymer). </para>
+
+    </sect3>
+
+    <sect3 id="keywords"
+> <title
+>Lägga till etiketter, tilldela nyckelord</title>
+
+        <para
+>Etiketter är ett hierarkiskt beteckningssystem som skapas medan du lägger till något i det. Det viktigaste är att skapa ett system som passar dina behov och vanor. Är du professionell eller halvprofessionell och vill sälja fotografier till agenturer, vill du publicera via ett webbgalleri, eller är du bara en tillfällig amatör som hanterar bilder som familjeminnen? För alla dessa olika användarfall bör man skapa en etikettstruktur som är anpassad till dem. Om du ställer in det, skriver &digikam; hela hierarkin till IPTC-fält så att de kan användas av en bildagentur, med ett annat program, för att automatiskt skapa rubrik och bildtext för webbexport. Hur som helst gör den tjänst så att du snabbt kan hitta en specifik bild igen. </para>
+
+        <para
+>Hierarkin ger dig automatiska grupper. Om du till exempel börjar en typisk privat hierarki med 'Aktiviteter', 'Personer', 'Platser', 'Teman' och 'Projekt' på toppnivån, grupperas allting du betecknar med en deletikett till dessa ihop i ett virtuellt album. &digikam; har en särskild vy i vänstra sidoraden för dessa virtuella album. Med det blir ännu bättre! När du fortsätter att lägga till deletiketter i hierarkierna, blir det inte bara möjligt att söka och snabbfiltrera med dem, utan högra sidoradens etikettfilter låter dig också välja kombinationer av etikettgrupper. Låt oss säga att du väljer det virtuella albumet 'Personer' i vänstra sidoradens etikettruta, och du har 12 olika etiketter för personer där, så kan du kombinera dem med den högra sidoraden och bara välja 'Björn', 'Benny' och 'Agneta' av de 12. </para>
+
+        <para
+>Alltefter som tiden går kommer du inte komma ihåg detaljer om dina bilder och deras motiv (väsentligen kommer metadata i din hjärna försvinna). Därför är det ytterst viktigt att du <command
+>väljer allmänna generella kategorier</command
+>. Du kommer alltid att komma ihåg att en viss bild togs vid en flodstrand i ett visst land eller på en viss kontinent (-> flod, kontinent), men du har glömt vilken flod det var. Istället för att bara ge den etiketten 'Okavango', använder du flod/Afrika eller flod/Sydafrika. Detaljer kan du antingen också lägga i en etikett eller i bildtexten. Ett trick kan vara till hjälp: Hur skulle man söka efter floden med en söktjänst på Internet? Det är så man ska göra! </para>
+
+        <para
+>En annan kategorisering kan vara åtgärdsbaserad, som 'utskrift', 'webbexport', 'personligt', 'galleri XYZ', 'kunder', 'bildspel', etc. Skapa grupper när du behöver dem, men inte annars. Du bör åtminstone kunna etiketterna på toppnivån utantill, annars blir det meningslöst att göra uppdelningen. Glöm inte bort att du har alla andra egenskaper för att begränsa sökningar. Etikettfiltret i den högra sidoraden kan kombineras med alla vyer i den vänstra sidoraden (album, kalender, tidslinje, etiketter och sökning). </para>
+
+        <para
+>När du importerar katalogiserade bilder från andra källor som redan har inbäddade etiketter, skapar &digikam; automatiskt träden åt dig, eller infogar dem på rätt plats. Det är inga problem att ordna om hierarkin i ett träd: Du gör det enkelt genom att dra och släppa ett delträd på en annan plats i hierarkin. De ändrade etiketterna uppdateras när &digikam; löper igenom grenarna. </para>
+
+        <para
+>Här visar diagrammet hur olika metadata överlappar. Det är en mycket grov avbildning, eftersom varje grupp av metadata själv är uppdelad i många sektioner. Filnamn och kalenderdata är egenskaper hos alla bilder. </para>
+
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-dam-metadata.png" format="PNG"/></imageobject>
+                <textobject
+> <phrase
+>Omdömen</phrase
+> </textobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Nog om etiketter. Låt oss gå vidare till bildtexter eller kommentarer, det tredje huvudsakliga verktyget för att katalogisera metadata. </para>
+
+    </sect3>
+
+    <sect3 id="captions"
+>  <title
+>Rubriker och kommentarer</title>
+
+        <para
+>Det här är redan den fjärde sortens metadata som vi presenterar. Vad är skillnaden mellan bildtexter, etiketter (kommentarer kan användas med samma betydelse, men IPTC föreskriver beteckningen 'caption', bildtext) och nyckelord? Medan etiketter har en hierarkisk och generaliserad beskrivning, är bildtexterna motsatsen: prosabeskrivning, detaljer, anekdoter. Etiketter har huvudsyftet att hitta, hämta och gruppera tillgångar, medan bildtexter ska roa, informera, och beröra betraktaren. Naturligtvis kan de också användas för att filtrera katalogen, men det är bara en sidoeffekt. Bildtexter finns för att komma ihåg historien, händelsen och känslorna. De är vad som gör fotografier mycket intressantare att titta på. Bildtexter placerar in fotografier i ett sammanhang och en betydelse. Om bilden är en estetisk utsaga, ska bildtexten vara det känslomässiga och informativa komplementet. </para>
+
+        <para
+>Det är sällan du inte vill att någon ska titta på dina fotografier. Istället vill du dela dem med vänner, familj, andra fotografer, agenturer, eller lägga ut dem på Internet. Och påstå inte att du inte är intresserad av hur dina foton bedöms! </para>
+
+        <para
+>Du kanske har ett mycket vackert porträtt, en solnedgång eller ett landskap, och ingen verkar bry sig om det. Vad kan det bero på? Titta på några bra fotografier själv utan att läsa en bildtext, kommentar eller bakgrundsinformation. Hur många är intresserade av skärpedjup, exponeringstid, vitbalans, etc.? Några naturligtvis, men alla är intresserade av vad bilderna berättar. Man vill komma ihåg ett fotografi, nu när vi ändå blir bombarderade med alltför många meningslösa bilder. Betraktaren måste få något som förklarar det hela. </para>
+
+        <para
+>Låt oss ta en titt på detta panorama. Från långt håll är det inte ens ett vackert strandpanorama. Men om du går närmare börjar du se en del detaljer, som människorna, utbredningen. </para>
+
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-dam-story.png" format="PNG"/></imageobject>
+                <textobject
+> <phrase
+>Omdömen</phrase
+> </textobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Och nu talar jag om för dig att det är de allierades landstigningsplats på &quot;Omaha Beach&quot; i franska Normandiet 60 år efter landstigningen. Häftigt! Man börjar drömma, får associationer, minnen, den historiska tidrymden finns där, man kan nästan höra tystnaden. Bildtexten har helt omformat uppfattningen av panoramat. </para>
+
+        <para
+>För att andra ska uppskatta dina fotografier är bildtexten troligen viktigare än själva bilden, på grund av hur intresseväckande den är. När du visar bilderna, berätta en historia. Kom ihåg att det viktigaste är att förmedla betydelsen till betraktarna, för att hjälpa dem förstå vad du känner till om motivet och vad som berörde dig. </para>
+
+        <itemizedlist>
+            <listitem
+><para
+>Låt andra få reda på vad du känner till om motivet, varför du tycker om det</para
+></listitem>
+            <listitem
+><para
+>Skapa en röd tråd mellan fotografierna</para
+></listitem>
+            <listitem
+><para
+>Framställ dem som motsatser till, eller relatera dem till, olika epoker</para
+></listitem>
+            <listitem
+><para
+>Gör anteckningar snart efter tagningen för att komma ihåg</para
+></listitem>
+            <listitem
+><para
+>Tänk efter, forska, betrakta och prata: men lyssna mest</para
+></listitem>
+            <listitem
+><para
+>Det gör ingenting om bilden inte är perfekt, eftersom den har möjlighet att leva av egen kraft med beskrivningen i bildtexten</para
+></listitem>
+        </itemizedlist>
+
+        <para
+>Du kan skriva in obegränsade mängder text med internationella alfabeten (UTF-8) som bildtext med &digikam;. Du kan skriva in den för ett antal markerade foton samtidigt. När du exporterar bilder till webbtjänster, kan bildtexten valfritt exporteras som antingen rubrik eller titel, eller båda, till webbgalleriets system. Det finns inget behov av att skriva om det hela vid publicering. </para>
+
+    </sect3>
+
+    <sect3 id="geotagging"
+> <title
+>Geografisk plats (geografiska etiketter)</title>
+
+        <para
+>Kommer du fortfarande ihåg en tid utan GPS? När du hittade vägen till en annan stad utan navigationssystem? Var inte jorden ett tråkigt blått klot utan Google Earth? Jovisst, när det gäller rumsrepresentation av bilder har tåget minsann kommit upp i marschfart. </para>
+
+        <para
+>Ett fåtal kameror har inbyggd GPS-mottagare, och bilderna levereras betecknade med tredimensionella koordinater. Du kan också läsa ut ett spår från nästan alla GPS-enheter (mottagaren måste förstås vara påslagen och bäras med dig när du tar fotografierna, och för god ihoppassning måste kamerans tid vara noggrant inställd) och spara det på datorn. Du måste lagra det med GPX-format, vilket enkelt görs med gpsbabel, gpsman och andra verktyg. Därefter kan du automatiskt passa ihop en hel bunt foton med spåret via &digikam;. Koordinaterna skrivs i JFIF-delen av JPG-filerna (inställningsalternativ) och i databasen. &digikam; kommer att göra det möjligt att söka baserat på plats och koordinat, och du kan skapa virtuella album av geografiska områden! I högra sidoraden under metadatafliken hittar du bilden lokaliserad på en inzoomad del av världskartan. Ytterligare ett klick tar dig till en av flera karttjänster på webben, inzoomad på detaljer. Även om du inte har ett GPS-spår kan du beteckna flera bilder geografiskt med en geografisk editor. Gå bara till platsen fotografiet togs på kartan, och klicka för att använda den som geografisk etikett. </para>
+
+        <para
+>Exempelvis konvertering av ett Garmin-spår med filnamnet 'xyz': </para>
+
+        <blockquote>
+            <screen
+>&dollar; gpsbabel -w -i mapsource -f xyz.mps -o gpx -F xyz.gpx</screen>
+        </blockquote>
+
+        <para
+>Möjligheterna med att utnyttja lokalisering av geografisk plats är redan omfattande, och kommer att bli genomgripande i framtiden. Någon gång, inte alltför långt in i framtiden, är jag säker på att vi kan återuppleva våra resor i en virtuell verklighet via bilder markerade med geografisk plats. Funktionerna i &digikam; omfattar export till kml-filer som kan öppnas av Google Earth (som i sin tur visar fotografierna vid platsen de tagits), export till Gallery2, Picasaweb, Flickr, etc., med visning i Google Kartor, med mera. </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

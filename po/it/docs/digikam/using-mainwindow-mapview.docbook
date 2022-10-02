@@ -1,0 +1,90 @@
+<sect2 id="using-mainwindow-mapview">
+   <title
+>La vista Mappa</title>
+
+    <para
+>L'intera suite di geolocalizzazione di &digikam;, se vogliamo chiamarla così ;-), consiste di quattro parti: </para>
+        <orderedlist numeration="arabic">
+            <listitem
+><para
+>La modalità Mappa dell'area dell'immagine, che visualizza le immagini con i dati GPS su di una mappa a seconda della selezione effettuata nella barra laterale sinistra, &eg; le immagini nell'album che hai selezionato nella vista Album, le immagini con certi tag assegnati (che sono selezionati nella vista Tag) o con certe etichette, e così via. </para
+></listitem>
+            <listitem
+><para
+>Questa vista, che è lo strumento di ricerca per trovare le immagini in base ai loro dati GPS.</para
+></listitem>
+            <listitem
+><para
+>L'<link linkend="tool-geolocationeditor"
+>editor di geolocalizzazione</link
+>, che è accessibile da <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenu
+>Elemento</guimenu
+><guimenuitem
+>Modifica la geolocalizzazione...</guimenuitem
+></menuchoice
+>, e permette di impostare e di modificare i dati GPS.</para
+></listitem>
+            <listitem
+><para
+>La scheda <link linkend="using-sidebar-maps"
+>Mappa</link
+> nella barra laterale destra, che mostra il luogo dell'immagine su di una mappa, ed è puramente informativa.</para
+></listitem>
+        </orderedlist>
+    <para
+>Tutte e quattro sono basate sull'oggetto &marble;. </para>
+
+    <para>
+        <inlinemediaobject>
+            <imageobject
+><imagedata fileref="&path;using-mainwindow-mapsearch.png" format="PNG"/></imageobject>
+        </inlinemediaobject>
+    </para>
+
+    <para
+>Per spostarti nella mappa fai riferimento al capitolo 2 del manuale di &marble;. Il significato di <quote
+>GPS</quote
+>, delle funzioni e dei pulsanti che si applicano a tutte e tre le parti per la geolocalizzazione è descritto nel capitolo sull'<link linkend="tool-geolocationeditor"
+>editor di geolocalizzazione</link
+> di questo manuale. Questo si applica al menu contestuale sulla mappa ed alla prima file di pulsanti sotto ad essa, ma non agli ultimi tre. Le denominazioni che ho qui usato per i pulsanti sono semplicemente il contenuto del rispettivo suggerimento. </para>
+
+    <para
+>Di solito inizierai a ricercare un'immagine definendo una regione su di una mappa: dai pulsanti <quote
+>Ricerca tramite area:</quote
+> fai clic su quello di sinistra, il <guilabel
+>Seleziona immagini disegnando un rettangolo</guilabel
+>. Fai clic con il &LMB; su un angolo della mappa, disegna un rettangolo e fai clic con il &LMB; sull'altro angolo: saranno mostrate nell'area dell'immagine tutte le immagini che ricadono all'interno delle coordinate di quel rettangolo (solo le immagini che sono state geo-codificate, ovviamente). </para>
+
+    <para
+>L'ultimo pulsante sulla destra è il Crea-una-selezione-di-regione-da-una-miniatura, che, se ci fai clic sopra, crea una piccola regione intorno ad un marcatore o ad una miniatura: se ci sono altre immagini nascoste dietro di essa, perché hanno la stessa posizione o perché sono molto vicine all'immagine su cui hai fatto clic, queste verranno mostrate nell'area dell'immagine. </para>
+
+    <para
+>L'ultimo pulsante della fila è il Rimuovi-l'attuale-selezione-della-regione. Devo spiegarti anche questo? Bene, ti dico che, ovviamente, rimuove solo la selezione, non le tue preziose immagini :-) </para>
+
+    <para
+>Ora diamo un'occhiata ai tre pulsanti alla fine della fila di destra sotto la mappa, che controllano l'immagine che vedi nell'area dell'immagine al di fuori della tua regione definita. Iniziamo con quello alla fine della fila, il pulsante Seleziona-immagini: se lo attivi, cambierà la selezione di una fotografia (o di un gruppo di fotografie se si nascondono a vicenda) dopo che ci hai fatto clic sulla mappa. Questo può essere utile per regolare finemente la tua selezione prima di eseguire delle operazioni dalla barra laterale destra o dai menu. </para>
+
+    <para
+>Il pulsante Filtra-immagini (quello con sopra l'imbuto), diversamente dal Seleziona-immagini (che lascia le immagini della tua regione definita visibili nell'area dell'immagine), disattiva tutte le altre immagini e mostra solo quella su cui hai fatto clic. Questo è particolarmente utile se la mappa mostra solo dei marcatori, o se le miniature sono troppo piccole per identificare chiaramente le immagini. </para>
+
+    <para
+>Il pulsante Rimuovi-il-filtro-attuale è autoesplicativo, ma voglio precisare che questi ultimi tre pulsanti non influenzeranno la regione di ricerca che hai definito: questo significa che, una volta fatto clic sul pulsante con la croce bianca in un cerchio rosso, tutte le immagini in quella regione dovrebbero essere nuovamente visualizzate nell'area dell'immagine. </para>
+
+    <para
+>Il pulsante <guilabel
+>Mostra elementi non geolocalizzati</guilabel
+> visualizza nell'area dell'immagine tutte le immagini senza dati GPS. Se nella tua raccolta ce ne sono troppe, potrebbe essere una buona idea usare la scheda Filtro nella barra laterale destra, e magari anche le funzioni di ordinamento e di raggruppamento del menu <guimenu
+>Visualizza</guimenu
+>. </para>
+
+    <para
+>Nel riquadro sotto puoi inserire il nome del tuo filtro geografico: questo, dopo che hai fatto clic il pulsante di salvataggio alla sua destra, sarà aggiunto nella vista a lista di sotto per un riferimento futuro, e funziona come una cartella geografica live. Il campo di ricerca in basso ricerca nella Lista di ricerca di sopra. </para>
+
+</sect2>

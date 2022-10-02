@@ -1,0 +1,238 @@
+<sect2 id="using-camera-processing">
+<title
+>Avancerade funktioner i importgränssnittet</title>
+
+<para
+>Fliken <guilabel
+>Inställningar</guilabel
+> i höger sidorad av importgränssnittet visar fem sektioner med avancerade alternativ för importbehandlingen. </para>
+
+    <sect3 id="using-camera-rename">
+        <title
+>Alternativ vid namnändring av filer</title>
+
+        <para
+>Kameror använder ofta filnamn som inte är särskilt meningsfulla för fotografier. Filnamnen används ofta igen när fotografierna har tagits bort från kameran. Det kan orsaka filnamnskonflikter om du laddar ner fotografier från många tagningar i samma album. Det kan också vara användbart att inkludera datum och tid då ett fotografi togs i filnamnet. </para>
+
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-camera-setting1.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Om du väljer <guilabel
+>Kamerafilnamn</guilabel
+> ändras inte bildernas filnamn, men du har möjlighet att ändra skiftläge till stora eller små bokstäver med kombinationsfältet <quote
+>Ändra skiftläge till:</quote
+>. Om du väljer <guilabel
+>Anpassa</guilabel
+> kan du sätta ihop ett namnändringsmönster från kombinationsmenyn Alternativ, som innehåller originalets filnamn, filändelse, ägare och grupp, katalog, en dialogruta för att definiera ett sekvensnummer och en dialogruta för att lägga till tids- och datuminformation, antingen fast eller baserat på tidsinformationen skriven av kameran i bildfilen. </para>
+        
+        <para
+>I dialogrutan för sekvensnummer finns två alternativ: <guilabel
+>Numrering medveten om filändelser</guilabel
+> och <guilabel
+>Numrering medveten om kataloger</guilabel
+>. Om de är markerade påbörjar &digikam; en ny sekvens för varje filändelse och/eller katalog. </para>
+        
+        <para
+>Dialogrutan för datum och tid ser ut så här: </para>
+        
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-camera-datetime.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Kalendern är bara aktiv om <quote
+>Fast datum</quote
+> väljes i kombinationsfältet <guilabel
+>Källa:</guilabel
+>. På så sätt kan du lägga till samma datum- och tidsinformation i filnamnen på alla importerade bilder eller videor. Om <quote
+>Bild</quote
+> är vald istället, använder &digikam; tidsinformationen från metadata i bildfilerna. Du kan välja bland flera vanliga datum- och tidsformat och ett eget format med kombinationsfältet <guilabel
+>Format:</guilabel
+>. För det senare, välj <guilabel
+>Egen</guilabel
+> i kombinationsfältet <guilabel
+>Format:</guilabel
+> och fyll exempelvis i "dd.MM.yyyy hh:mm:ss". För mer information, läs klassreferensen för <ulink url="http://doc.qt.io/qt-5/qdatetime.html#toString"
+>QDateTime</ulink
+>. </para>
+
+        <para
+>Dessutom kan alternativen anpassas ytterligare med hjälp av ett antal modifieringar. En lista över alla alternativ och modifieringar tillsammans med en kort förklaring visas när informationsknappen klickas. </para>
+
+        <tip>
+            <para
+>Sekvensnumret kan behövas om du har en kamera med mycket snabbt läge för bildsekvenser, där det är möjligt att få två fotografier med exakt samma datum och tid. </para>
+        </tip>
+
+        <para
+>Det nya filnamnet som &digikam; kommer att använda för fotografierna när de laddas ner visas under miniatyrbilden i bildikonen. Inställningarna av namnbyte ihågkoms nästa gång du använder kameragränssnittet. </para>
+
+<caution
+><para
+>För närvarande kan inte &digikam; läsa metadata från obehandlade filer under importen. Du skulle kunna importera filerna med kamerans filnamn bevarade först, och sedan byta namn på dem efter importen genom att använda namnbytesfunktionen (F2). </para
+></caution>
+
+    </sect3>
+    
+    <sect3>
+    <title
+>Skapa album automatiskt</title>
+        
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-camera-setting3.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Markera <guilabel
+>Filändelsebaserade delalbum</guilabel
+> så skapar &digikam; delalbum baserade på filändelsen hos de importerade bilderna i målalbumet. &digikam; visar en dialogruta där du kan välja målalbum när du väl klickat på någon av nerladdningsalternativen, antingen i verktygsraden eller i objektmenyn. Om du vill skapa ett nytt album dit fotografierna kan laddas ner, klicka på knappen <guilabel
+>Nytt album</guilabel
+>. Det nya albumet skapas som en underkatalog till albumet som för närvarande är markerat i den befintliga albumlistan. Det betyder att om du inte vill att det nya albumet ska vara en underkatalog till en befintlig katalog måste du först markera samlingen där du vill skapa det nya albumet. Samlingar indikeras av ikonen <inlinemediaobject
+> <imageobject
+><imagedata fileref="&path;using-mainwindow-icon-collection.png" format="PNG"/></imageobject
+> </inlinemediaobject
+>. </para>
+
+        <para
+>Om din kamera tillhandahåller information om datum när ett fotografi tas, eller om du importerar från en USB-enhet eller katalog, innehåller bilderna EXIF-metadata med datum- och tidsinformation, och &digikam; kan använda det för att automatiskt skapa delalbum i målalbumet under import. Delalbumens namn baseras på bildernas datum. Alla bilder som har samma datum laddas ner i samma delalbum om du markerar <guilabel
+>Datumbaserade delalbum</guilabel
+>. Alla kameror inkluderar inte den här informationen. Se avsnittet <link linkend="using-sidebar-metadata"
+>Sidoradens metadata</link
+> för ytterligare detaljer om vilken information som kameran kan ha lagt till i dina fotografier. </para>
+
+    </sect3>
+
+
+    <sect3>
+        <title
+>Åtgärder i farten</title>
+
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-camera-setting2.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Den här sektionen under inställningsfliken erbjuder flera alternativ för JPEG-bilder. Kombinationsfältet <guilabel
+>Mall:</guilabel
+> låter dig välja en av de metadatamallar som du anpassade i <link linkend="using-setup-templates"
+>Mallinställningar</link
+>. Du kan också komma åt Mallhantering med redigeringsknappen till höger om kombinationsfältet. </para>
+        
+        <para
+><guilabel
+>Skriv dokumentnamnet i EXIF</guilabel
+> och <guilabel
+>Rätta internt datum och tid</guilabel
+> skriver informationen till respektive EXIF-taggar och XMP-fält. </para>
+
+        <para
+>Om nästa ruta markeras utför &digikam; åtgärden för automatisk rotation och vändning som beskrivs under <link linkend="using-rotateimage"
+>Förlustfri bildrotation</link
+>. </para>
+        
+        <para
+><guilabel
+>Konvertera till förlustfritt filformat</guilabel
+> låter dig konvertera bilderna till PNG, TIFF, PGF eller JPEG2000 under import. </para>
+
+    </sect3>
+    
+    <sect3>
+        <title
+>Konverteringsalternativ för DNG</title>
+
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;using-camera-setting4.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+        
+        <para
+>Sektionen gör det möjligt att aktivera DNG-konvertering av obehandlade bilder genom att markera <guilabel
+>Konvertera obehandlade bilder till DNG-behållare</guilabel
+> och välja alternativ för konverteringen. För att ta reda på mer om Digital Negative (DNG) använd länken <quote
+>DNG-behållare</quote
+>. <variablelist>
+                <varlistentry>
+                    <term
+><menuchoice>
+                        <guimenuitem
+>Inbädda originalfilen</guimenuitem>
+                    </menuchoice
+></term>
+                    <listitem>
+                        <para
+><action
+>Inbäddar den ursprungliga obehandlade filen i DNG-behållaren. </action
+></para>
+                    </listitem>
+                </varlistentry>
+                
+                <varlistentry>
+                    <term
+><menuchoice>
+                        <guimenuitem
+>Förlustfri komprimering</guimenuitem>
+                    </menuchoice
+></term>
+                    <listitem>
+                        <para
+><action
+>Aktiverar förlustfri komprimering. Skillnaden mellan destruktiv och förlustfri komprimering sägs vara nästan omöjlig att särskilja med DNG. </action
+></para>
+                    </listitem>
+                </varlistentry>
+                
+                <varlistentry>
+                    <term
+><menuchoice>
+                        <guimenuitem
+>JPEG-förhandsgranskning</guimenuitem>
+                    </menuchoice
+></term>
+                    <listitem>
+                        <para
+><action
+>Välj om du vill att en JPEG-förhandsgranskning med normal eller full storlek ska inbäddas i DNG-behållaren, eller ingen alls. </action
+></para>
+                    </listitem>
+                </varlistentry>
+            </variablelist>
+        </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Skript</title>
+
+        <para
+>Den sista sektionen under inställningsfliken erbjuder att köra skript för att behandla bilderna under import. Du kan skriva in skriptets filnamn i indatafältet eller söka efter det genom att använda knappen <guilabel
+>Bläddra...</guilabel
+>. Klicka på informationsknappen för att ta en titt på ytterligare uttryck för att anpassa kommandoraden. </para>
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

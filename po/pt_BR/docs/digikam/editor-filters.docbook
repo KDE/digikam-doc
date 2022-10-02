@@ -1,0 +1,1205 @@
+<sect2
+>                                      <title
+>Efeitos Especiais (Filtros)</title>
+<sect3 id="infrared">
+<sect3info>
+
+<title
+>Simular o Filme Infravermelho</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_gmail_dot_com</email
+></address
+></affiliation>
+    </author
+>  
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>O plugin de imagem do &digikam; <emphasis
+>Filme Infravermelho</emphasis
+> simula o material de filme tradicional para infravermelho. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title
+>Introdução</title>
+
+<para
+>A simulação do material de filme clássico de infravermelhos (o efeito é representado em preto-e-branco) é um efeito de alienação interessante que é ainda mais forte e mais dramático que a conversão pura para preto-e-branco. É adicionado algum contraste e um toque abstrato, o que poderá conferir à expressão do fotógrafo um toque artístico. É como tirar uma fotografia em preto-e-branco com um filtro vermelho nas lentes da máquina fotográfica. As áreas que refletirem pouca luz vermelha, &eg; o céu, irão aparecer como áreas de densidade baixa e escuras. As áreas que sejam excelentes refletores de luz vermelha, p.ex., a folhagem mais vermelha, serão áreas de alta densidade. Além destas, as paisagens de neve são realmente dramáticas. </para>
+
+<para
+>O algoritmo baseia-se no método do tutorial para 'Simular o Filme de Infravermelho' da página Web GimpGuru.org, que está disponível <ulink url="http://www.gimpguru.org/Tutorials/SimulatedInfrared"
+>nesta URL</ulink
+>. O plugin tenta reproduzir o filme de infravermelho conhecido Ilford(tm) SFX200. Este filme tem uma gama de sensibilidade de 200-800 ISO. </para>
+
+<sect4 id="using-infrared">
+<title
+>Usar o Filtro de Infravermelho</title>
+
+<para
+>A parte esquerda da janela permite-lhe selecionar a região a mostrar na seção de antevisão. Mova o retângulo com o mouse, para mostrar o efeito em várias partes diferentes da imagem. </para>
+
+<para
+>A parte inferior oferece dois controles, o Grão de Filme e a Sensibilidade ISO. Assinale a opção <guilabel
+>Adicionar Grão de Filme</guilabel
+> se quiser simular a textura granulada de um filme de alta sensibilidade. A barra do nível de ISO modifica a quantidade de grão de filme adicionada e a predominância da cor verde (clorofila na natureza) na mistura da conversão. Os pastos verdes ficarão brancos como neve! Experimente. </para>
+
+<note
+><para
+>Uma vez que o filtro mistura os canais de cores para reproduzir o filme de infra-vermelho (especialmente no canal verde), não é possível tentar simular o efeito de infra-vermelho a partir de uma fotografia original em preto-e-branco. </para
+></note>
+
+</sect4>
+
+<sect4 id="inaction-infrared">
+<title
+>O filtro em ação</title>
+
+<para
+>Este é um exemplo do efeito do filme de infravermelho, aplicado a uma imagem a cores com paisagens da Nova Zelândia. A imagem original é a (1) e a imagem convertida é a (2). A sensibilidade do filme usada para simular o filme infravermelhos é a ISO-400. </para>
+
+   <para
+><inlinemediaobject
+><imageobject
+> 
+      <imagedata fileref="&path;infraredpreview.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>O filtro de Infravermelhos em Ação</phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="filmgrain">
+<sect3info>
+
+<title
+>Grão de Filme</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>O filtro do &digikam; para o <emphasis
+>Grão de Filme</emphasis
+> reproduz as técnicas de grão de filme tradicionais, existentes nos rolos de altas velocidades. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title
+>Introdução</title>
+
+<para
+>O filtro do &digikam; para o <emphasis
+>Grão de Filme</emphasis
+> é uma ferramenta simples para produzir grão de filme nas suas imagens, como acontece nos materiais de rolos clássicos para velocidades altas como, por exemplo, o famoso P/B KodaK Tri-X. Para aumentar a sensibilidade do filme, os fabricantes usavam grãos de prata maiores na emulsão da fotografia. </para>
+
+<para
+>O efeito de grão do filme dá à sua imagem um espírito particular ou tenta-o transportar ao longo do tempo. A imagem tratada adquire uma atmosfera intemporal, destacada da vida do dia a dia. Se quiser essa aparência granulada artística, especialmente para as fotografias monocromáticas, use este filtro. </para>
+
+<sect4 id="using-filmgrain">
+<title
+>Usar o filtro de Grão de Filme</title>
+
+<para
+>Existe uma barra calibrada na sensibilidade ISO para controlar a intensidade e granularidade do grão. O valor padrão é o ISO-2400, ainda que sejam normalmente necessários valores mais elevados. Se quiser ainda mais grão, aplique o filtro várias vezes. </para>
+
+</sect4>
+
+<sect4 id="inaction-filmgrain">
+<title
+>O filtro em ação</title>
+
+<para
+>Este é um exemplo do efeito do grão do filme aplicado numa imagem em preto e branco. A imagem original é a (1) e a imagem corrigida é a (2). A sensibilidade do filme usada para simular o grão do filme é a ISO-1600. </para>
+
+   <para
+><inlinemediaobject
+><imageobject
+> 
+      <imagedata fileref="&path;filmgrainpreview.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>O Filtro do Grão de Filme em Ação</phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="oilpaint">
+<sect3info>
+
+<title
+>Pintura a Óleo</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>O plugin de imagem do &digikam; <emphasis
+>Pintura a Óleo</emphasis
+> é um filtro de efeito de imagem para simular uma pintura a óleo. Utiliza um algoritmo com o 'copyright' de Pieter Voloshyn. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title
+>Introdução</title>
+
+<para
+>O plugin de imagem do &digikam; <emphasis
+>Pintura a Óleo</emphasis
+> ajuda a dar às suas imagens digitais um visual bonito de pintura a óleo. As pinturas da natureza e objetos estáticos são bastante adequadas para este efeito. </para>
+
+<sect4 id="using-oilpaint">
+<title
+>Usar o filtro de Pintura a Óleo</title>
+
+<para
+>Existem duas barras para controlar o efeito. A barra superior seleciona o <guilabel
+>Tamanho do Pincel</guilabel
+> entre 1 e 5. Os pincéis maiores são melhor adequados para as imagens grandes. A barra inferior controla a <guilabel
+>Suavidade</guilabel
+> ou, vista do outro lado, a deformação. </para>
+
+</sect4>
+
+<sect4 id="inaction-oilpaint">
+<title
+>O filtro de Pintura a Óleo em ação</title>
+
+<para
+>Este é um exemplo do efeito do filtro de pintura a óleo. A imagem original é a (1) e a imagem transformada é a (2). O <guilabel
+>Tamanho do Pincel</guilabel
+> para esta imagem de 640 pixels de tamanho é de 1, enquanto a <guilabel
+>Suavidade</guilabel
+> é de 17. </para>
+
+   <para
+><inlinemediaobject
+><imageobject
+> 
+      <imagedata fileref="&path;oilpaintpreview.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>Antevisão do Efeito de Imagem de Pintura a Óleo</phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="charcoal">
+<sect3info>
+
+<title
+>Desenho a Carvão</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>O filtro do &digikam; para <emphasis
+>Desenho a Carvão</emphasis
+> é um filtro de efeitos que cria um resultado semelhante a um desenho a carvão. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title
+>Introdução</title>
+
+<para
+>O filtro do &digikam; para o <emphasis
+>Desenho a Carvão</emphasis
+> usa os gradientes de cores e luminosidade para produzir um desenho a carvão em tons de cinza. As linhas que definem o contorno da imagem ficam pronunciadas. As imagens que tenham gradientes pouco alterados não são ideais para este efeito. É útil imaginar a cena que iria extrair para fazer você mesmo um desenho à mão, para que possa escolher a imagem inicial. </para>
+
+<sect4 id="using-charcoal">
+<title
+>Usar o filtro de Desenho a Carvão</title>
+
+<para
+>Existem duas barras que controlam o efeito numa escala de 1-100. A barra superior seleciona o tamanho do lápis, enquanto que a segunda ajusta o contraste (suavidade). </para>
+
+</sect4>
+
+<sect4 id="inaction-charcoal">
+<title
+>O filtro do Desenho a Carvão em ação</title>
+
+<para
+>Este é um exemplo do filtro de desenho a carvão. A imagem original é a (1) e a imagem transformada é a (2). Os valores padrão 30 e 10 foram aplicados. O resultado poderá ser melhorado se ajustar os níveis de luminosidade. </para>
+
+   <para
+><inlinemediaobject
+><imageobject
+> 
+      <imagedata fileref="&path;charcoalpreview.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>O filtro do Desenho a Carvão em Ação</phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="emboss">
+<sect3info>
+
+<title
+>Elevar Imagem</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>O plugin de imagem do &digikam; <emphasis
+>Elevar</emphasis
+> é um efeito para esculpir a sua imagem em 3-D como se fosse impressa em cera. Utiliza um algoritmo com o copyright de Pieter Voloshyn. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Digikam</keyword>
+</keywordset>
+
+</sect3info
+>     <title
+>Introdução</title>
+
+<para
+>O plugin de imagem do &digikam; <emphasis
+>Elevação</emphasis
+> é uma ferramenta rápida para representar as suas imagens com um efeito 3-D. Funciona particularmente bem nas imagens com uma estrutura simples em que a cor não é o conteúdo mais importante. O filtro usa a diferença entre as cores e a luminosidade para a converter numa paisagem cinzenta e semelhante a um luar, orientada à direção das 10 horas de um relógio. </para>
+
+<sect4 id="using-emboss"
+>      <title
+>Usar o filtro de Elevação</title>
+
+<para
+>O controle da <guilabel
+>Profundidade</guilabel
+> permite definir o contraste da filtragem. Um valor igual a 30 (10%) é o normal. </para>
+
+</sect4>
+
+<sect4 id="inaction-emboss"
+>   <title
+>O filtro de elevação em ação</title>
+
+<para
+>Este é o exemplo do efeito de elevação. A imagem original é a (1) e a imagem transformada é a (2). A <guilabel
+>Profundidade</guilabel
+> aplicada é de 10%. </para>
+
+   <para
+><inlinemediaobject
+><imageobject
+> 
+      <imagedata fileref="&path;embosspreview.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>O filtro de elevação em ação</phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="distortionfx">
+<sect3info>
+
+<title
+>FX de Distorção</title>
+
+<authorgroup>
+    
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_gmail_dot_com</email
+></address
+></affiliation>
+    </author>
+    
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+    
+</authorgroup>
+
+<abstract>
+<para
+>O plugin de imagens do &digikam; <emphasis
+>FX de Distorção</emphasis
+> é um pacote com efeitos especiais de para aplicar nas suas imagens estáticas digitais. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title
+>Introdução</title>
+
+<para
+>Com este filtro, você poderá transformar uma fotografia normal numa obra de arte adequada para emoldurar, usando técnicas de distorção. Ela usa os algoritmos com direitos de cópia de Pieter Voloshyn. </para>
+
+<sect4 id="using-distortionfx">
+<title
+>Usar o filtro</title>
+
+<para
+>Estes são os efeitos de distorção disponíveis: </para>
+
+<para>
+
+<informaltable
+><tgroup cols="2">
+            
+<thead>
+   <row>
+      <entry
+>Tipo</entry>
+      <entry
+>Antevisão</entry>
+   </row>
+</thead>
+
+<tbody>
+
+   <row>
+      <entry
+><guilabel
+>Olhos de Peixe</guilabel
+>: roda a foto em torno de uma forma esférica 3D para reproduzir o efeito normal em fotografia de 'Olho de Peixe'. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_fisheyes.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row>
+
+   <row>
+      <entry
+><guilabel
+>Remoinho</guilabel
+>: roda a fotografia de modo a provocar um padrão em remoinho. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_twirl.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row>
+
+   <row>
+      <entry
+><guilabel
+>Cilíndrico Horizontal</guilabel
+>: roda a fotografia em torno de um cilindro horizontal. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_cylinderh.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row>
+
+   <row>
+      <entry
+><guilabel
+>Cilíndrico Vertical</guilabel
+>: roda a fotografia em torno de um cilindro vertical. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_cylinderv.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+>   
+
+   <row>
+      <entry
+><guilabel
+>Cilíndrico H/V.</guilabel
+>: roda a fotografia em torno de 2 cilindros, um vertical e um horizontal. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_cylinderhv.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+>   
+
+   <row>
+      <entry
+><guilabel
+>Caricatura</guilabel
+>: distorce a fotografia com um efeito de 'Olho de Peixe' invertido. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_caricature.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+>   
+
+   <row>
+      <entry
+><guilabel
+>Vários Cantos</guilabel
+>: divide a fotografia como um padrão com vários cantos. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_corners.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+>   
+   
+   <row>
+      <entry
+><guilabel
+>Ondas Horizontal</guilabel
+>: distorce a fotografia com ondas horizontais. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_wavesh.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+> 
+            
+   <row>
+      <entry
+><guilabel
+>Ondas Vertical</guilabel
+>: distorce a fotografia com ondas verticais. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_wavesv.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+> 
+
+   <row>
+      <entry
+><guilabel
+>Ondas em Bloco 1</guilabel
+>: distorce a imagem em células e altera-a de modo a parecer que está sendo vista através de blocos de vidro. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_blockwaves1.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+> 
+   
+   <row>
+      <entry
+><guilabel
+>Ondas em Bloco 2</guilabel
+>: como o Ondas em Bloco 1, mas com outra versão da distorção por blocos de vidro. </entry>
+               
+      <entry>
+         <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_blockwaves2.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+> 
+
+   <row>
+      <entry
+><guilabel
+>Ondas Circulares 1</guilabel
+>: distorce a fotografia com ondas circulares. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_circularwaves1.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+> 
+
+   <row>
+      <entry
+><guilabel
+>Ondas Circulares 2</guilabel
+>: outra variante do efeito de Ondas Circulares. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_circularwaves2.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+> 
+   
+   <row>
+      <entry
+><guilabel
+>Coordenadas Polares</guilabel
+>: converte a fotografia de coordenadas retangulares para polares. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_polarcoord.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para
+>      </entry>
+   </row
+> 
+
+   <row>
+      <entry
+><guilabel
+>Coordenadas Não-Polares</guilabel
+>: Um efeito de coordenadas polares invertido. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_unpolarcoord.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+> 
+
+   <row>
+      <entry
+><guilabel
+>Mosaico</guilabel
+>: divide a fotografia em blocos quadrados e move-os aleatoriamente dentro da imagem. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;distortionfx_tiles.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+> 
+      
+</tbody>
+
+</tgroup
+></informaltable>
+
+</para>
+
+<warning
+><para
+>Alguns efeitos poderão levar bastante tempo rodando e poderão provocar uma carga de CPU elevada. Você poderá sempre interromper um efeito se clicar no botão <guilabel
+>Interromper</guilabel
+> durante a visualização da antevisão. </para
+></warning>
+
+</sect4>
+
+<sect4 id="inaction-distortionfx">
+<title
+>O filtro de distorção em ação</title>
+
+<para
+>A janela de FX de Distorção está visível na imagem abaixo. </para>
+
+   <para
+><inlinemediaobject
+><imageobject
+> 
+      <imagedata fileref="&path;distortionfxpreview.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>Antevisão da Janela da Ferramenta de FX de Distorção</phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="blurfx">
+<sect3info>
+
+<title
+>FX de Borrão</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_gmail_dot_com</email
+></address
+></affiliation>
+    </author
+>  
+
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>O plugin de imagem do &digikam; <emphasis
+>FX de Borrão</emphasis
+> é uma série de efeitos de borrão para imagens estáticas digitais. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title
+>Introdução</title>
+
+<para
+>Com este plugin, você poderá transformar uma fotografia normal numa obra de arte adequada para emoldurar, usando técnicas de borrão. Ela usa os algoritmos com direitos de cópia de Pieter Voloshyn. </para>
+
+<sect4 id="using-blurfx">
+<title
+>Usar o FX Borrão</title>
+
+<para
+>Estes são os efeitos de borrão disponíveis: </para>
+
+<para>
+
+<informaltable
+><tgroup cols="2">
+            
+<thead>
+   <row>
+      <entry
+>Tipo</entry>
+      <entry
+>Antevisão</entry>
+   </row>
+</thead>
+
+<tbody>
+
+   <row>
+      <entry
+><guilabel
+>Borrão de Ampliação</guilabel
+>: borra a imagem ao longo de linhas radiais, partindo de um determinado ponto central. Isto simula o borrão de uma câmera de ampliação, dando deste modo à fotografia uma expressão dinâmica, como é visto normalmente nas fotos desportivas. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;blurfx_zoomblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row>
+
+   <row>
+      <entry
+><guilabel
+>Borrão Radial</guilabel
+>: borra a imagem, rodando os pixels em torno do ponto central indicado. Isto simula o borrão de uma câmera em rotação. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;blurfx_radialblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row>
+
+   <row>
+      <entry
+><guilabel
+>Borrão Distante</guilabel
+>: borra a imagem de modo a simular o efeito de uma lente não focada. O objeto parece ficar distorcido para o fundo. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;blurfx_farblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row>
+
+   <row>
+      <entry
+><guilabel
+>Borrão de Movimento</guilabel
+>: borra a imagem, desviando os pixels na horizontal. Isto simula o borrão de uma câmera em movimento linear, como uma foto tirada em um carro ou trem. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;blurfx_motionblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row>
+
+   <row>
+      <entry
+><guilabel
+>Borrão do Foco</guilabel
+>: borra os cantos da imagem para reproduzir a distorção por astigmatismo de uma lente. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;blurfx_focusblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row>
+
+   <row>
+      <entry
+><guilabel
+>Borrão Suave</guilabel
+>: borra suavemente a imagem nos tons mais escuros e mais forte nos tons mais claros. Isto dá às fotografias um efeito de foco brilhante e de sonho (efeito de Hamilton). É ideal para criar retratos românticos, fotografias glamorosas ou para adicionar um brilho quente e sutil. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;blurfx_softenerblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row>
+
+   <row>
+      <entry
+><guilabel
+>Borrão por Agitação</guilabel
+>: borra a imagem aleatoriamente, movendo aleatoriamente os pixels, simulando o borrão de uma câmera em movimento arbitrário. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;blurfx_shakeblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+>   
+   
+   <row>
+      <entry
+><guilabel
+>Borrão Inteligente</guilabel
+>: descobre as arestas de cores na fotografia e borra-as, sem estragar o resto da imagem. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;blurfx_smartblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+>      
+
+   <row>
+      <entry
+><guilabel
+>Vidro Gelado</guilabel
+>: borra a imagem, simulando a filtragem de dispersão de luz através de um vidro gelado. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;blurfx_frostglass.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+>    
+
+   <row>
+      <entry
+><guilabel
+>Mosaico</guilabel
+>: divide a fotografia em células retangulares e depois volta a criá-la, preenchendo essas células com o valor médio do pixel. </entry>
+               
+      <entry>
+        <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;blurfx_mosaic.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+      </entry>
+   </row
+>    
+               
+</tbody>
+
+</tgroup
+></informaltable>
+
+</para>
+
+<warning
+><para
+>Alguns efeitos poderão levar bastante tempo rodando e poderão provocar uma carga de CPU elevada. Você poderá sempre interromper um efeito se clicar no botão <guilabel
+>Interromper</guilabel
+> durante a visualização da antevisão. </para
+></warning>
+
+</sect4>
+
+<sect4 id="inaction-blurfx">
+<title
+>O FX Borrão em ação</title>
+
+<para
+>É mostrado abaixo um exemplo da janela de FX de Borrão em ação. </para>
+
+   <para
+><inlinemediaobject
+><imageobject
+> 
+      <imagedata fileref="&path;blurfxpreview.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>A Antevisão da Janela de FX de Borrão</phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="raindrops">
+<sect3info>
+
+<title
+>Pingos de Chuva</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>O plugin de imagem do &digikam; <emphasis
+>Pingos de Chuva</emphasis
+> é um filtro de efeitos de imagem para adicionar pingos de chuva a uma imagem. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Digikam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title
+>Introdução</title>
+
+<para
+>Os <emphasis
+>Pingos de Chuva</emphasis
+> são uma pequena ferramenta engraçada para pôr pingos de chuva nas suas imagens. Naturalmente, desenha a sua imagem com um aspecto molhado. Usa um algoritmo da autoria de Pieter Voloshyn. </para>
+
+<sect4 id="using-raindrops">
+<title
+>Usar o filtro dos Pingos de Chuva</title>
+
+<para
+>Existem três barras que lhe dão o controle sobre o filtro do efeito: </para>
+
+<para
+>O <guilabel
+>Tamanho do pingo</guilabel
+>, obviamente, permite-lhe mudar o tamanho dos pingos. Uma vez que o tamanho do pingo não escala automaticamente com o tamanho da imagem, é normalmente necessário reduzir o tamanho das imagens pequenas. O <guilabel
+>Número</guilabel
+> altera a quantidade e a densidade dos pingos. O <guilabel
+>Olho-de-peixe</guilabel
+> altera o efeito ótico dos pingos na imagem. </para>
+
+<note
+><para
+>Você poderá manter uma zona livre de pingos de chuva com a ferramenta <guilabel
+>Seleção</guilabel
+> do Editor de Imagens do &digikam;. Se selecionar a área a evitar (por exemplo um rosto) antes de lançar o filtro de <emphasis
+>Pingos de Chuva</emphasis
+>, irá mantê-la livre de pingos de chuva. </para
+></note>
+
+</sect4>
+
+<sect4 id="inaction-raindrops">
+<title
+>O filtro de pingos de chuva em ação</title>
+
+<para
+>Este é um exemplo do filtro de pingos de chuva. A imagem original (1) mostra um pôr-do-sol calmo, enquanto a imagem transformada (2) indica um pôr-do-sol após uma tempestade. Foram usados os valores predefinidos neste exemplo. </para>
+
+   <para
+><inlinemediaobject
+><imageobject
+> 
+      <imagedata fileref="&path;raindropspreview.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>Antevisão do Efeito de Imagem dos Pingos de Chuva</phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+</sect4>
+
+</sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

@@ -1,0 +1,83 @@
+<sect2 id="using-mainwindow-fuzzysearches">
+    <title
+>Inexakt visning</title>
+
+    <para
+>&digikam; karaktäriserar varje bild med ett långt tal genom att använda en särskild teknik (Haar-algoritm) som gör det möjligt att jämföra bilder genom att jämföra den beräknade signaturen. Ju mindre numerisk skillnad det är mellan två bildsignaturer, desto mer liknar de varandra. Tekniken tillämpas på tre sätt i &digikam;: </para>
+
+    <itemizedlist>
+
+        <listitem>
+            <para
+>Duplikat: Innan du kan låta &digikam; hitta dubbletter måste signaturerna (eller fingeravtrycken) beräknas. Processen kan startas med knappen <guilabel
+>Uppdatera fingeravtryck</guilabel
+> som påbörjar en total ombyggnad av bildsignaturerna (kan ta flera timmar om du har en stor samling, en uppskattning är 2 timmar för 10 000 bilder). När fingeravtrycken väl är beräknade kan du använda <guimenu
+>Sök duplikat</guimenu
+>, men tar också lång tid eftersom varje bild måste jämföras med varje annan bild. Sättet att hantera det i båda fall är att begränsa sökningen till vissa album och/eller etiketter. Sökresultatet kan begränsas eller utökas med likhetsintervallet. Observera att genom att minska den övre tröskeln något under 100 % kan du förhindra att saker som exakta kopior, bilder i bildserier etc. ingår i sökresultatet om du vill. </para>
+
+            <example>
+                <title
+>Sök duplikat begränsat till ett album</title>
+                <mediaobject>
+                    <imageobject
+><imagedata fileref="&path;using-mainwindow-duplicates-albumsfilter.png" format="PNG"/></imageobject>
+                </mediaobject>
+            </example>
+            
+            <para
+>En översikt av resultatet ges i vänster sidorad. Den första kolumnen visar referensbilderna för varje enskilt resultat. Objektkolumnen talar om hur många bilder som hör till varje resultat, inklusive referensbilen. Den sista kolumnen visar medelvärdet av likheten, vilket ger en idé om hur lika bilderna i varje resultat kan vara. Referensbilden med 100 % ingår <emphasis
+>inte</emphasis
+> i medelvärdet. Observera att resultaten kan sorteras genom att klicka på någon av kolumnrubrikerna. </para>
+            
+            <para
+>Individuella likhetsvärdet för varje objekt kan erhållas i bildområdets tabellvy (knappen <guilabel
+>Tabell</guilabel
+> i huvudverktygsraden). Klicka med höger musknapp på en av kolumnrubrikerna och välj <guilabel
+>Likhet</guilabel
+> i <guilabel
+>Objektegenskaper</guilabel
+> för att visa likhetskolumnen. Genom att klicka på kolumnens rubrik, sorteras resultaten enligt likhet, grupperade enligt referensbilder. Att klicka upprepade gånger på rubriken byter mellan stigande och fallande ordning. </para>
+        </listitem>
+
+        <listitem>
+            <para id="find-similar"
+>Bild (liknande objekt): Det är en drag och släpp zon där du kan släppa vilken bild som helst för att hitta en liknande. Dra en bild från var som helst, även utanför &digikam; (filhanteraren, andra program), över den inexakta sökikonen i vänster sidorad. Den öppnas och du släpper den där eller använder <guilabel
+>Sök efter liknande...</guilabel
+> i en miniatyrbilds sammanhangsberoende meny i vilken annan vy som helst. Här kan du också begränsa eller utöka det resulterande urvalet med ett intervall. I fältet nedanför kan du skriva in ett namn på sökningen och spara den. I söklistan nedanför finns dina sparade sökningar. Genom att klicka på listans rubrikrad ändras sorteringsordningen mellan stigande och fallande. Längst ner finns ett adaptivt sökfält som kan hjälpa till att hitta en viss sökning. </para>
+
+            <example>
+                <title
+>Inexakt sökning efter liknande bilder</title>
+                <mediaobject
+><imageobject
+><imagedata fileref="&path;using-mainwindow-searchsimilar.png" format="PNG"/></imageobject
+></mediaobject>
+            </example>
+        </listitem>
+
+        <listitem>
+            <para
+>Skiss: En frihandsritad färgskiss. Rita en snabbskiss, så hittar &digikam; motsvarande bilder. Du hittar samma sätt att spara sökningen som under fliken <guilabel
+>Bilder</guilabel
+>. </para>
+
+            <example>
+                <title
+>Inexakt skissökning</title>
+                <mediaobject>
+                    <imageobject
+><imagedata fileref="&path;using-mainwindow-searchsketch.png" format="PNG"/></imageobject>
+                </mediaobject>
+            </example>
+        </listitem>
+
+    </itemizedlist>
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

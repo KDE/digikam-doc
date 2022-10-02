@@ -1,0 +1,272 @@
+<sect2 id="using-sidebar-colors">
+<title
+>Färger</title>
+
+    <para
+>Färgsidoraden har två delflikar <guilabel
+>Färg</guilabel
+> och <guilabel
+>ICC-profil</guilabel
+>. Här hittar du mer information om <link linkend="using-iccprofile"
+>färghantering</link
+>. </para>
+
+    <sect3 id="using-histogramviewer">
+    <title
+>Histogramvisning</title>
+
+        <anchor id="histogramviewer.anchor"/>
+
+        <para
+>En bilds histogram visar mängden av varje färg som ingår, och deras olika amplituder inom bilden. Om fotografiet har en färgavvikelse, kan du kanske se vad som är fel genom att titta på histogrammet. </para>
+
+        <para
+>Histogramvisningen visar den statistiska fördelningen av färgvärden i den aktuella bilden. Den är enbart för information: ingenting du gör kan orsaka någon ändring av bilden. Om du vill utföra histogrambaserad färgkorrigering, använd exempelvis Färgbalands, Justera nivåer eller Justera kurvor i bildeditorn. </para>
+
+        <para>
+            <inlinemediaobject>
+                <imageobject>
+                    <imagedata fileref="&path;using-sidebar-histogramview.png" format="PNG"/>
+                </imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>En bild kan delas upp i färgkanalerna <guilabel
+>Röd</guilabel
+>, <guilabel
+>Grön</guilabel
+> och <guilabel
+>Blå</guilabel
+>. Kanalen <guilabel
+>Alfa</guilabel
+> är ett lager i bilden som stöder genomskinlighet (som PNG- eller &GIF;-bilder). Varje kanal stöder ett intervall av intensiteter från 0 till 255 (heltalsvärden). Alltså kodas en svart bildpunkt med 0 i alla färgkanaler, och en vit bildpunkt med 255 i alla färgkanaler. En genomskinlig bildpunkt kodas med 0 i alfakanalen, och en ogenomskinlig bildpunkt med 255. </para>
+
+        <para
+>Histogramvisningen låter dig visa varje kanal separat: <itemizedlist>
+
+                <listitem
+><para
+><guilabel
+>Ljusstyrka</guilabel
+>: visar fördelningen av ljusstyrkevärden. </para
+></listitem>
+
+                <listitem
+><para
+><guilabel
+>Röd</guilabel
+>, <guilabel
+>Grön</guilabel
+>, <guilabel
+>Blå</guilabel
+>: visar fördelningen av intensitetsnivåer för respektive röd, grön och blå kanal. </para
+></listitem>
+
+                <listitem
+><para
+><guilabel
+>Alfa</guilabel
+>: visar fördelningen av ogenomskinlighetsnivåer. Om lagret är helt ogenomskinligt eller helt genomskinligt, består histogrammet av en enda stapel vid vänstra eller högra kanten. </para
+></listitem>
+
+                <listitem
+><para
+><guilabel
+>Färger</guilabel
+>: visar det <guilabel
+>röda</guilabel
+>, <guilabel
+>gröna</guilabel
+> och <guilabel
+>blåa</guilabel
+> histogrammet överlagrade, så att du kan se hela informationen om färgdistribution i en enda vy. </para
+></listitem>
+
+            </itemizedlist>
+
+        </para>
+
+        <para
+>Med alternativet <guilabel
+>Skala</guilabel
+> kan du bestämma om histogrammet visas med en linjär eller logaritmisk Y-axel. För bilder tagna med en digitalkamera är läget <guilabel
+>Linjär</guilabel
+> oftast mest användbart. För bilder som dock innehåller större områden med konstant färg, domineras ofta ett <guilabel
+>linjärt</guilabel
+> histogram av en enda stapel. I detta fall är ett <guilabel
+>logaritmiskt</guilabel
+> histogram mer användbart. </para>
+
+        <para
+>Du kan begränsa analysen i fältet <guilabel
+>Statistik</guilabel
+> som visas längst ner i dialogrutan till ett begränsat intervall av värden om du vill. Intervallet kan ställas in på ett av två olika sätt: <itemizedlist>
+
+                <listitem
+><para
+>Klicka och dra pekaren över histogrammets visningsområde, från den lägsta till den högsta nivån i intervallet du vill ha. </para
+></listitem>
+
+                <listitem
+><para
+>Genom att använda numeriska inmatningsrutorna under histogramområdet. Den vänstra inmatningsrutan är intervallets undre gräns och den högra är intervallets övre gräns. </para
+></listitem>
+
+            </itemizedlist>
+
+        </para>
+
+        <para
+>Statistiken som visas längst ner i histogramvisningen beskriver fördelningen av kanalvärden, begränsat till det markerade intervallet. De är: <itemizedlist>
+
+            <listitem
+><para
+>Antal bildpunkter i bilden. </para
+></listitem>
+
+            <listitem
+><para
+>Antal vars värde ligger inom det markerade intervallet. </para
+></listitem>
+
+            <listitem
+><para
+>Medelvärdet. </para
+></listitem>
+
+            <listitem
+><para
+>Standardavvikelsen. </para
+></listitem>
+
+            <listitem
+><para
+>Medianen för den markerade delen av histogrammet. </para
+></listitem>
+
+            <listitem
+><para
+>Procentandelen vars värden ligger inom det markerade intervallet. </para
+></listitem>
+
+            <listitem
+><para
+>Bildens färgdjup. </para
+></listitem>
+
+            <listitem
+><para
+>Alfakanal i bilden. </para
+></listitem>
+
+            <listitem
+><para
+>Histogrammets källa, antingen <guilabel
+>Hela bilden</guilabel
+> eller <guilabel
+>Bildområde</guilabel
+> om ett område av bilden har markerats i editorn. </para
+></listitem>
+
+        </itemizedlist>
+
+        </para>
+
+    </sect3>
+
+    <sect3 id="using-histogram">
+    <title
+>Hur ett histogram används</title>
+
+        <para
+>Histogram är ett grafiskt sätt att utvärdera noggrannheten hos en bild som visas på skärmen. Diagrammet representerar tre områden av fotografiets ljusstyrka: <itemizedlist
+> <listitem
+><para
+> (1) : skuggtonerna till vänster. </para
+></listitem
+> <listitem
+><para
+> (2) : normaltonerna i mitten. </para
+></listitem
+> <listitem
+><para
+> (3) : dagrarna till höger. </para
+></listitem
+> </itemizedlist
+> <example
+> <title
+>Ett bildhistogram i läget med alla färger</title
+> <screenshot
+><screeninfo
+>Ett bildhistogram i läget med alla färger</screeninfo
+><mediaobject
+><imageobject
+> <imagedata fileref="&path;using-sidebar-histogramdescription.png" format="PNG"/> </imageobject
+></mediaobject
+> </screenshot
+> </example
+> Fördelningen i diagrammet, där topparna och utbuktningarna är samlade, anger om bilden är för mörk, för ljus eller välbalanserad. </para>
+
+        <para
+>Med ett underexponerat fotografi, har histogrammet en fördelning av ljusstyrka som har en tendens att i huvudsak vara till vänster i diagrammet. <example
+> <title
+>Ett underexponerat fotografi</title
+> <screenshot
+><screeninfo
+>Ett underexponerat fotografi</screeninfo
+><mediaobject
+> <imageobject
+> <imagedata fileref="&path;using-sidebar-histogramsample1.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example
+> Med ett överexponerat fotografi, kommer histogrammet att ha utbuktningen som visar ljusstyrkan i huvudsak fördelad åt höger i diagrammet. <example
+> <title
+>Ett överexponerat fotografi</title
+> <screenshot
+><screeninfo
+>Ett överexponerat fotografi</screeninfo
+><mediaobject
+> <imageobject
+> <imagedata fileref="&path;using-sidebar-histogramsample3.png" format="PNG"/> </imageobject
+></mediaobject
+> </screenshot
+></example
+> Med ett riktigt exponerat fotografi, kommer histogrammet att ha en fördelning av ljusstyrka som är mest uttalad nära diagrammets mitt. <example>
+                <title
+>Ett riktigt exponerat fotografi</title>
+                <screenshot>
+                    <screeninfo
+>Ett riktigt exponerat fotografi</screeninfo>
+                    <mediaobject
+><imageobject>
+                        <imagedata fileref="&path;using-sidebar-histogramsample2.png" format="PNG"/>
+                    </imageobject
+></mediaobject>
+                </screenshot>
+            </example>
+
+        </para>
+
+        <para
+>Viktigt: Alla fotografier måste inte uppvisa den här utbuktningen i histogrammets mittendel. En hel del beror på fotografiets motiv. I vissa fall kan det vara riktigt att histogrammet visar en topp i ena eller andra änden, eller i båda. </para>
+
+        <para
+>Histogrammet är ett tillförlitligt sätt att bestämma om ett fotografi är riktigt exponerat eller inte. Skulle histogrammet visa en över- eller underexponering, bör ett <link linkend="editor-color-exposure"
+>verktyg för exponeringskorrektion</link
+> användas för att förbättra fotografiet. </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

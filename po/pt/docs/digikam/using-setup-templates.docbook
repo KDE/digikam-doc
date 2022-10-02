@@ -1,0 +1,229 @@
+<sect2 id="using-setup-templates">
+    <title
+>Configuração do Modelo</title>
+
+    <para
+>O Gestor de Modelos de Meta-Dados pretende criar e gerir os modelos de meta-dados que podem ser usados <itemizedlist>
+            <listitem
+><para
+>na página de <guilabel
+>Informação</guilabel
+> da área de <guilabel
+>Legendas</guilabel
+> da barra lateral direita </para
+></listitem>
+
+            <listitem
+><para
+>na secção <guilabel
+>Operações Instantâneas (apenas no JPEG)</guilabel
+> da área de <guilabel
+>Configuração</guilabel
+> da barra lateral direita ou na janela <menuchoice
+> <guimenu
+>Importar</guimenu
+> <guimenuitem
+>Câmaras</guimenuitem
+> <guimenuitem
+>Câmara-de-Exemplo</guimenuitem
+> </menuchoice
+>. </para
+></listitem>
+        </itemizedlist>
+    </para>
+
+    <para
+></para>
+
+    <para>
+        <mediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-template-rights.png" format="PNG"/>
+        </imageobject
+></mediaobject>
+    </para>
+
+    <para
+>A parte superior mostra uma lista com os modelos já existentes. A primeira linha mostra o título do modelo, a segunda linha mostra o nome dos autores no campo <quote
+>Nomes dos Autores</quote
+> desse mesmo modelo. À direita terá três botões de edição, por baixo existe um campo de texto para o título do modelo. Para criar um novo modelo, poderá escrever um título no campo de texto e carregar no botão <guilabel
+>Adicionar...</guilabel
+>. O novo modelo irá aparecer na lista. Para editar um modelo existente, podê-lo-á seleccionar na lista e depois editar os seus campos (ver o parágrafo seguinte) e finalmente carregar no botão <guilabel
+>Substituir...</guilabel
+>. Também poderá escrever um novo título para o modelo editado e gravar a nova versão com o botão <guilabel
+>Adicionar...</guilabel
+>. Para apagar um modelo, como é óbvio, deverá seleccioná-lo na lista e carregar no botão <guilabel
+>Remover</guilabel
+>. </para>
+
+    <warning
+><para
+>Lembre-se que todas as alterações que fizer aos modelos só serão guardadas no ficheiro de modelo se sair da janela de configuração com o <guilabel
+>OK</guilabel
+>! Os botões <guilabel
+>Adicionar...</guilabel
+> e <guilabel
+>Substituir...</guilabel
+> só mudam a lista de modelos na RAM. </para
+></warning>
+
+    <tip
+><para
+>O ficheiro de modelo poderá ser encontrado em ~/.local/share/digikam/, para uma cópia de segurança manual ou para gerir diferentes conjuntos de modelos, através do sistema de ficheiros. </para
+></tip>
+
+    <para
+>O resto da janela está dividido em quatro páginas, agrupando os campos de meta-dados em <guilabel
+>Direitos</guilabel
+>, <guilabel
+>Localização</guilabel
+>, <guilabel
+>Contacto</guilabel
+> e <guilabel
+>Assuntos</guilabel
+>. </para>
+
+    <para
+>A página de <guilabel
+>Direitos</guilabel
+> (ver acima) contém a identidade predefinida e os dados de direitos de cópia. Isto é um extracto da especificação do IPTC para esses campos: </para>
+
+    <itemizedlist>
+
+        <listitem
+><para
+><emphasis
+>Autor</emphasis
+> (é semelhante ao Criador): Este campo deverá conter o seu nome ou o nome da pessoa que criou a fotografia. Se não for apropriado adicionar o nome do fotógrafo (por exemplo, se a identidade do fotógrafo precisa ser protegida), também poderá usar o nome de uma companhia ou organização. Quando gravado, este campo não deverá ser alterado por ninguém. Este campo não suporta a utilização de vírgulas ou ponto-e-vírgulas como separador. </para
+></listitem>
+
+        <listitem
+><para
+><emphasis
+>Título do autor</emphasis
+>: Este campo deverá conter o título da profissão do fotógrafo. Alguns exemplos poderão incluir títulos como: Fotógrafo de Equipa, Fotógrafo Autónomo ou Fotógrafo Comercial Independente. Dado que esta é uma qualificação para o campo Autor, esse campo deverá também ser preenchido. </para
+></listitem>
+
+        <listitem
+><para
+><emphasis
+>Crédito</emphasis
+> (sinónimo de Fornecedor): Use o campo Fornecedor para identificar quem está a fornecer a fotografia. Este não terá de ser necessariamente o autor. Se um fotógrafo estiver a trabalhar para uma agência noticiosa, como a Reuters ou a Associated Press, estas organizações poderão ser aqui indicadas como &quot;fornecedoras&quot; da imagem para ser usada pelos outros. Se a imagem é uma fotografia em 'stock', então deverá ser indicado aqui o grupo (agência) envolvido no fornecimento da imagem. </para
+></listitem>
+
+        <listitem
+><para
+><emphasis
+>Origem</emphasis
+>: O campo Origem deverá ser usado para identificar o dono original ou detentor dos direitos da fotografia. O valor deste campo nunca deverá ser alterado depois de a informação ser introduzida após a criação da imagem. Embora ainda não seja aplicado pelos painéis personalizados, poderá considerar este campo como sendo  de &quot;escrita única&quot;. A origem pode ser um indivíduo, uma agência ou um membro de uma agência. Para ajudar nas pesquisas posteriores, sugere-se que separe as barras &quot;/&quot; com um espaço em branco. Use o formato &quot;fotógrafo / agência&quot; em vez de &quot;fotógrafo/agência.&quot; A Origem poderá também ser diferente do Criador e dos nomes indicados nas Notas de 'Copyright'. </para
+></listitem>
+
+        <listitem
+><para
+><emphasis
+>Aviso de Copyright</emphasis
+>: O Aviso ou Notas de Copyright deverá conter todos os avisos de direitos de cópia necessários para reclamar a propriedade intelectual, devendo identificar os donos actuais dos direitos de cópia da fotografia. Normalmente, seria o fotógrafo, mas se a imagem foi feita por um empregado ou por trabalho contratado, então a agência ou companhia deverão ser indicados. Use o formato adequado para o seu país. Portugal: &copy; {data da primeira publicação} nome do detentor dos direitos, como por exemplo &quot;&copy;2005 José Pires.&quot; Nota, a palavra &quot;copyright&quot; ou a abreviatura &quot;copr&quot; poderão ser usadas em substituição do símbolo &copy;. Em alguns países estrangeiros, somente o símbolo de 'copyright' é reconhecido e a abreviatura não funciona. Para além disso, o símbolo de 'copyright' deverá ser uma circunferência completa com um &quot;c&quot; dentro; usar algo do tipo '(c)', onde os parêntesis formam parcialmente essa circunferência, não é suficiente. Para protecção adicional em todo o mundo, encoraja-se que use &quot;todos os direitos reservados&quot;. Na Europa iria usar: Copyright {Ano} {Detentor dos direitos}, todos os direitos reservados. No Japão, para a protecção máxima, deveriam aparecer os três seguintes itens no campo de 'copyright' dos dados de IPTC: (a) a palavra, Copyright; (b) o ano da primeira publicação; e (c) o nome do autor. Poderá também querer incluir a frase &quot;todos os direitos reservados.&quot; </para
+></listitem>
+
+    </itemizedlist>
+
+    <para
+></para>
+
+    <para>
+        <mediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-template-location.png" format="PNG"/>
+        </imageobject
+></mediaobject>
+    </para>
+
+    <para
+>Os campos na página <guilabel
+>Localização</guilabel
+> são intuitivos, baseando-se no título e nas sugestões a cinzento nos campos vazios. Poderá descobrir uma descrição um pouco mais elaborada na opção <menuchoice
+> <guimenu
+>Configuração</guimenu
+> <guimenuitem
+>Configurar o &digikam;</guimenuitem
+> <guimenuitem
+>Meta-dados</guimenuitem
+> <guimenuitem
+>Vistas</guimenuitem
+> <guimenuitem
+>Visualizador de IPTC</guimenuitem
+> </menuchoice
+> </para>
+
+    <para
+></para>
+
+    <para>
+        <mediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-template-contact.png" format="PNG"/>
+        </imageobject
+></mediaobject>
+    </para>
+
+    <para
+>Os dados da página de <guilabel
+>Contacto</guilabel
+> referem-se ao fotógrafo (principal) nos <quote
+>Nomes dos Autores</quote
+> na página de <guilabel
+>Direitos</guilabel
+>. </para>
+
+    <para
+></para>
+
+    <para>
+        <mediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-template-subjects.png" format="PNG"/>
+        </imageobject
+></mediaobject>
+    </para>
+
+    <para
+>Na página <guilabel
+>Assuntos</guilabel
+>, poderá atribuir um ou mais Códigos de Assuntos de acordo com a Norma de Meta-Dados Fotográficos IPTC ao modelo. Se a primeira opção <quote
+>Usar um código de referência-padrão</quote
+>, poderá escolher um código da lista, para que o significado do mesmo apareça nos campos da secção <quote
+>Usar uma definição personalizada</quote
+>. Se não conhecer o código do assunto que deseja atribuir, será um pouco mais complicado, porque existem 1400 assuntos na norma. Uma melhor forma de descobrir o seu assunto será <ulink url="http://show.newscodes.org/index.html"
+>este URL</ulink
+>. Aí, poderá seleccionar os <quote
+>Códigos de Assuntos</quote
+> e a sua língua (é recomendado o Inglês) e carregar em <quote
+>Mostrar</quote
+>. No diagrama, poder-se-á deslocar e tornar visíveis os níveis adicionais de um item se carregar num dos campos. No campo à direita do diagrama, poderá encontrar o código do assunto seleccionado. </para>
+
+    <para
+>De um modo geral, os Códigos de Assuntos IPTC são bastante abrangentes mas, por outro lado, são um pouco incompletos em alguns campos, &eg; em Estilo e Lazer/Jogos, só encontra o Go, Xadrez, Bridge e o Shogi. Por isso, poderá querer adicionar assuntos próprios, mesmo que permaneçam como assuntos a nível privado (ou empresarial). Uma forma de o fazer no &digikam; é verificar primeiro a opção <quote
+>Usar o código-padrão da referência</quote
+> e seleccionar o valor 10001004, que o conduzirá ao Estilo e Lazer/Jogos/Shogi - só para usar o exemplo actual. Depois pode assinalar a opção <quote
+>Usar uma definição personalizada</quote
+> e mudar o último algarismo da <quote
+>Referência:</quote
+> para 5 e o texto no campo <quote
+>Detalhe:</quote
+> para - por exemplo <quote
+>dominó</quote
+>. Depois, pode gravar esta definição personalizada no modelo, carregando para tal em <guilabel
+>Adicionar...</guilabel
+> à direita da lista de assuntos. Depois, poderá escrever um título do modelo (se for um novo) e gravar o modelo, carregando em <guilabel
+>Adicionar...</guilabel
+> do lado direito da lista de modelos. Não os misture! </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

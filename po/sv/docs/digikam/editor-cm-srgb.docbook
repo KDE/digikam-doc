@@ -1,0 +1,73 @@
+<sect2 id="editor-cm-srgb">
+    <title
+>Färgsystemet sRGB</title>
+
+    <sect3>
+        <title
+>Vad är så speciellt med färgsystemet sRGB?</title>
+
+        <para
+>sRGB är vitt accepterat som en standardfärgprofil av i stort sett alla som är inblandade i konsumentinriktad bildhantering. Hewlett Packard och Microsoft föreslog 1996 sRGB som ett standardiserat färgsystem för konsumentinriktade tillämpningar. Som anges i det ursprungliga förslaget från HP och MS: <blockquote
+><para
+>Hewlett-Packard och Microsoft föreslår tillägg av stöd för ett standardfärgsystem, sRGB, i Microsofts operativsystem, HP produkter, Internet, och alla andra intresserade tillverkare. Syftet med färgsystemet är att komplettera de nuvarande färghanteringsstrategierna genom att möjliggöra en tredje metod för hantering av färger i operativsystem, drivrutiner och Internet som utnyttjar en enkel och robust enhetsoberoende färgdefinition. Det åstadkommer god kvalitet och bakåtkompatibilitet med minimering av extra överförings- och systemkostnader. Ett sådant färgsystem, baserad på ett kalibrerat kolorimetriskt RGB-färgsystem väl lämpad för katodstråleskärmar, television, bildläsare, digitalkameror och utskriftssystem, kan stödjas med minimal kostnad för leverantörer av programvara och hårdvara ...</para
+></blockquote
+> <blockquote
+><para
+>För närvarande följer och försäkrar ICC (Internationella färgkonsortiet) att en färg är riktigt avbildad från inkommande till utgående färgrymd ... genom att bifoga en profil för inkommande färgrymd till bilden ifråga. Det är lämpligt för användare med höga krav. Det finns dock en omfattande kategori användare som inte kräver en sådan nivå av flexibilitet och kontroll. Dessutom stöder inte de flesta befintliga filformat inbäddade färgprofiler, och kommer kanske aldrig göra det, och slutligen finns det ett omfattande antal användningsområden där tillägg av extra data i filer avråds från. Ett gemensamt standardiserat RGB-färgsystem löser dessa problem ... genom att föra samman de många standardiserade och icke-standardiserade RGB-färgsystemen för bildskärmar i ett enda standardiserat RGB-färgsystem. En sådan standard skulle drastiskt kunna förbättra färgtroheten i skrivbordsmiljön. Om operativsystemleverantörer exempelvis tillhandahåller stöd för ett standardiserat RGB-färgsystem, kan apparatleverantörer som stöder standarden enkelt och säkert kommunicera färginformation utan ytterligare färghanteringskostnader i de vanligaste situationerna. (<ulink url="http://www.w3.org/Graphics/Color/sRGB"
+>archived copy</ulink
+>)</para
+></blockquote
+> Sammanfattningsvis, var och är syftet med det nu nästan allmänt vedertagna färgsystemet sRGB att förenkla för konsumenter (inget behov av att bekymra sig om färghantering), att inte bli så dyr för tillverkare (inget behov av att bekymra sig över kompatibilitet i konsumentledet mellan digitalkameror eller bildläsare, bildskärmar, skrivare, med mera) och att vara mer lätthanterligt när bilder visas på Internet (bekymra sig inte om att inbädda och läsa ICC-profiler: anta bara sRGB). </para>
+
+        <para>
+            <emphasis
+>Om sRGB fungerar så bra och gör livet så enkelt för alla, varför ska man då använda något annat färgsystem och därigenom bli tvungen att bekymra sig om färghanteringsproblem?</emphasis>
+        </para>
+
+        <para
+>sRGB konstruerades för att innehålla färger som enkelt gick att visa på konsumentinriktade bildskärmar och skrivas ut av konsumentinriktade skrivare tillverkade 1996. Denna minsta gemensamma nämnare av synliga och skrivbara färger, den tekniska termen är "tonomfång", är mycket mindre än den mängd färger vi kan se i verkligheten, mycket mindre än den mängd färger dagens digitalkameror kan avbilda, mycket mindre än den mängd färger dagens skrivare kan skriva ut, och mycket mindre än tonomfånget hos de nya bildskärmar med stort tonomfång som börjar komma in på konsumentmarknaden. För alla som vill använda sig av de större tonomfång tillgängliga idag, till och med på konsumentnivå, är tonomfånget hos sRGB för litet. Omvänt, om du inte avser att använda ett utökat tonomfång vid något tillfälle i ditt digitala arbetsflöde med bilder, behöver du inte bekymra dig om andra färgsystem än sRGB och allt tillhörande krångel med färghantering. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Hur liten är sRGB?</title
+> 
+
+        <para
+>En visuell representation av begränsningarna hos sRGB jämfört med färger man egentligen ser i verkligheten presenteras nedan. Den visar en tvådimensionell representation av alla färger man kan se (det hästskoformade området) och färgerna som ingår i färgrymden sRGB (det mindre triangelformade området). </para>
+
+        <para>
+            <screenshot>
+                <screeninfo
+></screeninfo>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="&path;editor-cm-542px-CIExy1931-sRGB.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                    <phrase
+></phrase>
+                    </textobject>
+                </mediaobject>
+            </screenshot>
+        </para>
+
+        <para
+>Om du vill se en tvådimensionell representation av sRGB jämförd med några av de större arbetsfärgsystemen, se Bruce Lindbloms utmärkta <ulink url="http://www.brucelindbloom.com/"
+>hemsida</ulink
+>, klicka på "Info" och därefter "Information About RGB Working Spaces". </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

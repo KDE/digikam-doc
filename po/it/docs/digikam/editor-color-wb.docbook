@@ -1,0 +1,311 @@
+<sect3 id="editor-color-wb">
+    <sect3info>
+
+    <title
+>Bilanciamento del bianco</title>
+
+    <abstract>
+    <para
+>Il <emphasis
+>bilanciamento del bianco</emphasis
+> di &digikam; è uno strumento semiautomatico per regolare il bilanciamento del bianco di una fotografia. </para>
+    </abstract>
+
+    </sect3info>
+
+    <title
+>Introduzione</title>
+
+    <para
+>L'impostazione del bilanciamento del bianco è un problema comune nelle macchine fotografiche digitali. Ai bei vecchi tempi delle pellicole il bilanciamento del bianco veniva fatto dal laboratorio fotografico. Oggi la povera macchinetta fotografica deve indovinare cosa è bianco e cosa è nero. La maggior parte delle volte, ciò che la fotocamera sceglie come punto bianco non ha la sfumatura o la tonalità corretta. Usando questo strumento è facile correggere il problema: fornisce una serie di parametri che possono essere adattati per ottenere un risultato migliore. </para>
+
+    <note
+><para
+>La correzione del bilanciamento del bianco è un po' limitata dal fatto che operiamo in uno spazio di colore a 8 bit per canale. Quindi, se ti allontani troppo dall'originale potrebbero apparire zone di sovraesposizione. Se potessi regolare il bilanciamento del bianco in modalità di conversione grezza (che viene fatto in uno spazio a 16 bit), il margine di correzione sarà maggiore. </para
+></note>
+
+    <para
+>Questo strumento si basa su un algoritmo di bilanciamento del colore bianco sotto copyright di Pawel T. Jochym. Avvialo dal menu dell'editor di immagini <menuchoice
+><guimenu
+>Colore</guimenu
+><guimenuitem
+>Bilanciamento del bianco</guimenuitem
+></menuchoice
+>. </para>
+
+    <sect4 id="using-whitebalance"
+>  <title
+>Usare lo strumento di bilanciamento del bianco</title>
+
+    <para
+><inlinemediaobject
+><imageobject>
+        <imagedata fileref="&path;editor-whitebalance.png" format="PNG"/> </imageobject>
+        <textobject
+><phrase
+>La finestra dello strumento di bilanciamento del bianco</phrase
+></textobject
+></inlinemediaobject>
+    </para>
+
+    <para
+>La finestra di anteprima può essere ridimensionata. A sinistra vengono visualizzate sia una scheda di anteprima dell'originale, sia del risultato. Quest'ultimo viene aggiornato dinamicamente in base alle impostazioni dello strumento; se vuoi vedere il bilanciamento del bianco originale, fai clic sulla scheda dell'immagine originale. </para>
+
+    <para
+>L'anteprima della fotografia risultante ha un segno rosso disponibile. Il valore di luminosità del pixel sotto il segno viene indicato come una linea verticale nell'istogramma. </para>
+
+    <para
+>In alto a destra lo strumento visualizza un istogramma che viene aggiornato dinamicamente quando cambiano i parametri. Questo istogramma è molto istruttivo, perché mostra che anche in fotografie ben esposte la maggior parte dei pixel ha una luminosità molto ridotta. Con un pulsante puoi scegliere di mostrare uno qualsiasi dei tre colori (o la loro somma, detta luminosità). </para>
+
+    <para
+>Con <guilabel
+>Esposizione</guilabel
+> puoi cambiare digitalmente l'esposizione della foto originale. Aumentando l'esposizione aumenti il rischio di rendere più visibili i disturbi dei pixel e di spegnere le luci. Segna l'<guilabel
+>Indicatore di sovraesposizione</guilabel
+> in basso a destra per vedere se sei soggetto a problemi di saturazione. La regolazione del <guilabel
+>Punto nero</guilabel
+> può essere usata per tagliare l'istogramma a sinistra. Se la tua fotografia sembra nebbiosa (l'istogramma ha spazio vuoto sul lato sinistro nero), probabilmente devi usare questa opzione. Le regolazioni dell'<guilabel
+>Esposizione</guilabel
+> e del <guilabel
+>Punto nero</guilabel
+> possono essere stimate automaticamente premendo il pulsante di <guilabel
+>Regolazioni di esposizione automatiche</guilabel
+>. Ciò imposta il punto nero in maniera piuttosto precisa. </para>
+
+    <para
+>Il contrasto del tuo risultato dipende dai parametri <guilabel
+>Ombre</guilabel
+>, <guilabel
+>Saturazione</guilabel
+> e <guilabel
+>Gamma</guilabel
+>. La regolazione delle <guilabel
+>Ombre</guilabel
+> ti permette di migliorare o diminuire i dettagli delle ombre nella tuo foto. </para>
+
+    <para
+>Aumentando il contrasto della tua fotografia può portare l'effetto collaterale di ridurre la <guilabel
+>Saturazione</guilabel
+> apparente della foto. Usa un valore maggiore di 1 per aumentare la saturazione, e un valore minore di 1 per desaturarla. Un valore di 0 ti restituirà una foto in bianco e nero. Non aver paura di aumentare un po' la saturazione delle foto. La regola generale è che con un maggior contrasto (minor <guilabel
+>Gamma</guilabel
+>) devi applicare più <guilabel
+>Saturazione</guilabel
+>. </para>
+
+    <para
+>Il prossimo insieme di opzioni è la spina dorsale delle impostazioni del bilanciamento del bianco, che controllano il rapporto fra i tre canali dei colori. Qui puoi impostare la <guilabel
+>Temperatura</guilabel
+> del colore, per scaldare o per raffreddare la tua immagine. Una temperatura maggiore causerà un tono più caldo. Impostare il rapporto tra i tre canali del colore richiede due regolazioni. Siccome la regolazione della temperatura controlla per lo più il rapporto tra i canali del rosso e del blu, è naturale che la seconda regolazione controllerà l'intensità del canale del <guilabel
+>Verde</guilabel
+>. </para>
+
+    <para
+>Invece di macchinare con i controlli qui sopra puoi semplicemente usare il pulsante <guilabel
+>Selettore del colore del tono della temperatura</guilabel
+>. Premi questo pulsante e fai clic da qualsiasi parte nell'anteprima dell'immagine originale per ottenere il colore risultante di quell'area per calcolare le impostazioni della temperatura di bilanciamento del colore bianco. In questo modo, i valori di <guilabel
+>Temperatura</guilabel
+> e di <guilabel
+>Verde</guilabel
+> vengono calcolati automaticamente. </para>
+
+    <para
+>Inoltre puoi impostare il bilanciamento del bianco usando l'elenco di preimpostazioni. Quelle disponibili per la temperatura del bilanciamento del bianco sono: </para>
+
+    <para>
+
+    <informaltable
+><tgroup cols="3">
+
+    <thead>
+    <row>
+        <entry
+>Temperatura del colore</entry>
+        <entry
+>Descrizione</entry>
+        <entry
+>Kelvin</entry>
+    </row>
+    </thead>
+
+    <tbody>
+
+    <row>
+        <entry>
+        <guilabel
+>40W</guilabel>
+        </entry>
+
+        <entry
+>Lampadina ad incandescenza da 40 watt. </entry>
+
+        <entry>
+        <guilabel
+>2680</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>200W</guilabel>
+        </entry>
+
+        <entry
+>Lampadina ad incandescenza da 200 watt, luci da studio, illuminazione fotografica. </entry>
+
+        <entry>
+        <guilabel
+>3000</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Alba</guilabel>
+        </entry>
+
+        <entry
+>Luce di un'alba o di un tramonto. </entry>
+
+        <entry>
+        <guilabel
+>3200</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Tungsteno</guilabel>
+        </entry>
+
+        <entry
+>Lampadina al tungsteno, o luce ad un'ora dal crepuscolo o dall'alba. </entry>
+
+        <entry>
+        <guilabel
+>3400</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Neutra</guilabel>
+        </entry>
+
+        <entry
+>Temperatura del colore neutra. </entry>
+
+        <entry>
+        <guilabel
+>4750</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Xeno</guilabel>
+        </entry>
+
+        <entry
+>Lampada allo xeno o arco elettrico. </entry>
+
+        <entry>
+        <guilabel
+>5000</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Sole</guilabel>
+        </entry>
+
+        <entry
+>Luce diurna verso mezzogiorno. </entry>
+
+        <entry>
+        <guilabel
+>5500</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Flash</guilabel>
+        </entry>
+
+        <entry
+>Flash elettronico di una macchina fotografica. </entry>
+
+        <entry>
+        <guilabel
+>5600</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Cielo</guilabel>
+        </entry>
+
+        <entry
+>Luce di un cielo coperto. </entry>
+
+        <entry>
+        <guilabel
+>6500</guilabel>
+        </entry>
+    </row>
+
+    </tbody>
+
+    </tgroup
+></informaltable>
+
+    </para>
+
+    <para
+>La <guilabel
+>Temperatura del colore</guilabel
+> è un modo semplificato di rappresentare le caratteristiche spettrali di una sorgente di luce. Mentre in realtà il colore della luce è determinato da quanto ogni componente dello spettro contribuisce alla somma, il risultato può sempre essere riassunto su una scala lineare. Questo valore è utile, ad esempio, per determinare il corretto bilanciamento del bianco nella fotografia digitale, e per specificare la sorgente di luce adatta nella progettazione dell'illuminazione in architettura. Nota, comunque, che le sorgenti di luce dello stesso colore (metameri) possono variare ampiamente nella qualità della luce emessa. </para>
+
+    <para
+>Una <guilabel
+>Temperatura del colore</guilabel
+> bassa implica più luce gialla e rossa, mentre una temperatura del colore alta implica più luce blu. La luce diurna ha una temperatura di colore piuttosto bassa all'alba, ed una più alta durante il giorno. Quindi può essere utile installare un sistema di illuminazione elettrica che possa fornire una luce più chiara per aggiungersi alla luce diurna quando necessario, e che introduca una luce più calda di notte. Questo si collega anche alle impressioni delle persone sui colori caldi della luce che viene dalle candele o da un falò nella notte. L'unità standard della temperatura del colore è il kelvin (K). </para>
+
+    <para
+>L'opzione <guilabel
+>Indicatore di sovraesposizione</guilabel
+> aggiunge i colori se più di un canale in un pixel è sovraesposto, e vedrai il colore combinato risultante dalle impostazioni dei controlli del bilanciamento del bianco. Questa regola viene applicata solo all'area di anteprima del risultato, e non ha effetto sulla resa finale. </para>
+
+    <para
+>I pulsanti <guilabel
+>Salva come...</guilabel
+> e <guilabel
+>Carica...</guilabel
+> sono usati per compiere le azioni che descrivono. Qualsiasi impostazione del bilanciamento del bianco che hai impostato può essere salvata in un file di testo e caricata più tardi. </para>
+
+    <para
+>Il pulsante <guilabel
+>Reimposta tutto</guilabel
+> azzera tutte le impostazioni del filtro riportandole ai valori predefiniti, che corrispondono al colore di bilanciamento del bianco neutro (attenzione, anche l'impostazione neutra potrebbe essere diversa dalla tua foto originale. Se la salvi, il bilanciamento del bianco sarà modificato). </para>
+
+    </sect4>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

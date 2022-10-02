@@ -1,0 +1,239 @@
+<sect2 id="using-setup-templates">
+    <title
+>Arranjament de les plantilles</title>
+
+    <para
+>El gestor de plantilles de metadades està destinat a crear i gestionar les plantilles de metadades que es poden utilitzar a <itemizedlist>
+            <listitem
+><para
+>la pestanya <guilabel
+>Informació</guilabel
+> o a la vista <guilabel
+>Comentaris</guilabel
+> de la barra lateral dreta </para
+></listitem>
+
+            <listitem
+><para
+>la secció <guilabel
+>Operacions al vol (només JPEG)</guilabel
+> de la vista <guilabel
+>Arranjament</guilabel
+> de la barra lateral dreta a la finestra <menuchoice
+> <guimenu
+>Importa</guimenu
+> <guimenuitem
+>Càmeres</guimenuitem
+><guimenuitem
+>UnaDeLesMevesCàmeres</guimenuitem
+> </menuchoice
+>. </para
+></listitem>
+        </itemizedlist>
+    </para>
+
+    <para
+></para>
+
+    <para>
+        <mediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-template-rights.png" format="PNG"/>
+        </imageobject
+></mediaobject>
+    </para>
+
+    <para
+>La part superior mostra una llista de les plantilles ja existents. La primera fila mostra el títol de la plantilla, la segona mostra el/s nom/s del/s autor/s al camp <quote
+>Noms dels autors</quote
+> d'aquesta mateixa plantilla. A la dreta hi ha tres botons d'edició, per sota d'un camp d'entrada per al títol de la plantilla. Per crear una plantilla, escriviu un títol al camp d'entrada i feu clic al botó <guilabel
+>Afegeix...</guilabel
+>. La plantilla nova apareixerà a la llista. Per editar una plantilla existent, seleccioneu-la a la llista, després editeu els camps (vegeu el següent paràgraf) i, finalment, feu clic al botó <guilabel
+>Substitueix...</guilabel
+>. Així podreu escriure un nou títol per a la plantilla editada i desar la nova versió amb el botó <guilabel
+>Afegeix...</guilabel
+>. Per eliminar una plantilla, molt òbviament, seleccioneu-la a la llista i feu clic al botó <guilabel
+>Elimina</guilabel
+>. </para>
+
+    <warning
+><para
+>Recordeu que tots els canvis realitzats en les plantilles només s'emmagatzemaran al fitxer de la plantilla, si sortiu del diàleg de configuració amb <guilabel
+>D'acord</guilabel
+>! Els botons <guilabel
+>Afegeix...</guilabel
+> i <guilabel
+>Substitueix...</guilabel
+> només faran canvis a la llista de plantilles a la RAM. </para
+></warning>
+
+    <tip
+><para
+>El fitxer de la plantilla es pot trobar a ~/.local/share/digikam/ per a una còpia de seguretat manual o per a la gestió dels diferents conjunts de plantilles per mitjà del sistema de fitxers. </para
+></tip>
+
+    <para
+>La resta de la finestra es divideix en quatre pestanyes, agrupant els camps de metadades en <guilabel
+>Drets</guilabel
+>, <guilabel
+>Ubicació</guilabel
+>, <guilabel
+>Contacte</guilabel
+> i <guilabel
+>Assumptes</guilabel
+>. </para>
+
+    <para
+>La pestanya <guilabel
+>Drets</guilabel
+> (vegeu a sobre) conté les dades d'identitat i drets d'autor per omissió. Aquest és un extracte de les especificacions IPTC: </para>
+
+    <itemizedlist>
+
+        <listitem
+><para
+><emphasis
+>Autor</emphasis
+> (sinònim de <emphasis
+>Creador</emphasis
+> -<emphasis
+>Creator</emphasis
+>- i <emphasis
+>Per línia</emphasis
+> -<emphasis
+>By-line</emphasis
+>-): Aquest camp haurà de contenir el vostre nom, o el nom de la persona que va crear la fotografia. Si no és convenient afegir el nom del fotògraf (per exemple, si cal protegir la identitat del fotògraf), també podeu emprar el nom d'una empresa o organització. Un cop desat, aquest camp no haurà de ser canviat per ningú. Aquest camp no admet l'ús de comes o punt i coma com a separadors. </para
+></listitem>
+
+        <listitem
+><para
+><emphasis
+>Títol de l'autor</emphasis
+> (sinònim amb <emphasis
+>Títol per línia</emphasis
+>): Aquest camp hauria de contenir els càrrecs professionals dels autors. Per exemple, es poden indicar els següents càrrecs: Fotògraf de plantilla, Fotògraf independent o Fotògraf comercial independent. Com que és un qualificador del camp Autor, aquest també s'ha d'omplir. </para
+></listitem>
+
+        <listitem
+><para
+><emphasis
+>Crèdit</emphasis
+> (sinònim de proveïdor): Utilitzeu el camp Proveïdor per a identificar qui proporciona la fotografia. Aquest no ha de ser necessàriament l'autor. Si un fotògraf treballa per a una agència de notícies com Reuters o Associated Press, aquestes organitzacions poden estar indicades aquí atès que elles «proporcionen» la imatge per a l'ús d'altres. Si la imatge és una fotografia que prové d'un banc d'imatges, caldria indicar aquí el grup (agència) responsable del subministrament de la imatge. </para
+></listitem>
+
+        <listitem
+><para
+><emphasis
+>Origen</emphasis
+>: Aquest camp s'ha d'emprar per identificar el propietari original o el titular dels drets d'autor de la fotografia. El valor d'aquest camp no s'ha de canviar una vegada s'ha introduït la informació després de la creació de la imatge. Tot i que encara no és forçat pels plafons personalitzats, s'ha de considerar que es tracta d'un camp «d'una sola escriptura». L'origen pot ser un individu, una agència o un membre d'una agència. Per ajudar en les cerques posteriors, se suggereix separar qualsevol barra inclinada «/» amb un espai en blanc. Utilitzeu la forma «fotògraf / agència» en comptes de «fotògraf/agència». L'origen també pot ser diferent del creador i dels noms que figuren a la nota del copyright. </para
+></listitem>
+
+        <listitem
+><para
+><emphasis
+>Avís de copyright</emphasis
+>: L'avís de copyright ha de contenir qualsevol avís de drets d'autor necessari per a reclamar la propietat intel·lectual, i ha d'identificar al/s propietari/s actual/s dels drets d'autor de la fotografia. En general, aquest seria el fotògraf, però si la imatge va ser feta per un empleat o com a treball a sou, a continuació s'ha de llistar l'agència o empresa. Utilitzeu la forma apropiada al vostre país. Per als Estats Units, el més habitual és seguir la forma &copy; {data de la primera publicació} nom del propietari del copyright, com a «&copy;, 2005 John Doe» Nota, la paraula «copyright» o l'abreviatura «copr» ​​pot ser utilitzada en lloc del símbol &copy;. En alguns països estrangers només es reconeix el símbol dels drets d'autor i l'abreviatura no funciona. D'altra banda, el símbol dels drets d'autor ha de ser un cercle complet amb una «c» a l'interior; utilitzant alguna cosa com (c), on els parèntesis formen un cercle parcial no serà suficient. Per augmentar la seguretat a tot el món, us animem a emprar la frase, «tots els drets reservats» (all rights reserved) després de l'avís anterior. A Europa s'hauria d'utilitzar: Copyright {Any} {Propietari dels drets}, tots els drets reservats. Al Japó, per a una màxima protecció, han d'aparèixer els següents tres elements en el camp dels drets d'autor del nucli IPTC: (a) la paraula, Copyright; (b) l'any de la primera publicació; i (c) el nom de l'autor. També és possible que vulgueu incloure la frase «all rights reserved». </para
+></listitem>
+
+    </itemizedlist>
+
+    <para
+></para>
+
+    <para>
+        <mediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-template-location.png" format="PNG"/>
+        </imageobject
+></mediaobject>
+    </para>
+
+    <para
+>Els camps a la pestanya <guilabel
+>Ubicació</guilabel
+> és autoexplicativa pel seu títol i els consells grisos en els camps buits. Es pot trobar una explicació una mica més elaborada a <menuchoice
+> <guimenu
+>Arranjament</guimenu
+> <guimenuitem
+>Configura el &digikam;...</guimenuitem
+> <guimenuitem
+>Metadades</guimenuitem
+> <guimenuitem
+>Vistes</guimenuitem
+> <guimenuitem
+>Visualitzador d'IPTC</guimenuitem
+> </menuchoice
+> </para>
+
+    <para
+></para>
+
+    <para>
+        <mediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-template-contact.png" format="PNG"/>
+        </imageobject
+></mediaobject>
+    </para>
+
+    <para
+>Les dades a la pestanya <guilabel
+>Contacte</guilabel
+> es refereix al fotògraf (plom) sota <quote
+>Noms dels autors</quote
+> a la pestanya <guilabel
+>Drets</guilabel
+>. </para>
+
+    <para
+></para>
+
+    <para>
+        <mediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-template-subjects.png" format="PNG"/>
+        </imageobject
+></mediaobject>
+    </para>
+
+    <para
+>A la pestanya <guilabel
+>Assumptes</guilabel
+> podreu assignar un o més codis d'assumpte d'acord amb l'estàndard de metadades de fotografies IPTC a la plantilla. Si s'ha seleccionat la primera opció <quote
+>Usa un codi de referència estàndard</quote
+>, podreu triar un codi des del camp de llista desplegable i el significat de la mateixa apareixerà en els camps de la secció <quote
+>Usa una definició personalitzada</quote
+>. Si no coneixeu el codi per a l'assumpte que voleu assignar, aquesta manera serà una mica tediosa, ja que hi ha 1.400 assumptes a l'estàndard. Una millor manera és cercar l'assumpte en <ulink url="http://show.newscodes.org/index.html"
+>aquest URL</ulink
+>. Seleccioneu <quote
+>Codis d'assumpte</quote
+> i el vostre idioma (es recomana anglès) i feu clic a <quote
+>Mostra</quote
+>. Al diagrama, podreu desplaçar i fer visibles els nivells addicionals d'un element fent clic en un dels camps. Al camp a la dreta del diagrama, trobareu el codi de l'assumpte seleccionat. </para>
+
+    <para
+>En general, els codis d'assumpte IPTC són molt complets, però per altra banda, una mica incomplets en alguns camps, &pex;, sota Estil de vida i Temps lliure/Jocs, només trobareu anar, escacs, bridge i shogi. Així que possiblement hi voldreu afegir temes propis, tot i que sempre romandran com assumptes privats (o de companyia). Una manera de fer-ho al &digikam; és marcar primer <quote
+>Usa un codi de referència estàndard</quote
+> i seleccioneu 10001004, el qual us durà a Estil de vida i Oci/Jocs/shogi -només per a romandre en el nostre exemple-. A continuació, seleccioneu <quote
+>Usa una definició personalitzada</quote
+> i canvieu l'últim dígit de <quote
+>Referència:</quote
+> a 5 i el text al camp <quote
+>Detall:</quote
+> a <quote
+>dominó</quote
+>. Deseu aquesta definició personalitzada a la plantilla fent clic a <guilabel
+>Afegeix...</guilabel
+> al costat dret de la llista d'assumptes. A continuació, escriviu un títol per a la plantilla (si es tracta d'una plantilla nova) i deseu-la fent clic a <guilabel
+>Afegeix...</guilabel
+> al costat dret de la llista de plantilles. No confongueu aquests dos botons! </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

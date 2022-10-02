@@ -1,0 +1,88 @@
+<sect2 id="using-mainwindow-mapview">
+   <title
+>Área do Mapa</title>
+
+    <para
+>O pacote completo de geo-localização do &digikam; - se lhe quiser chamar assim ;-) - consiste em quatro componentes: </para>
+        <orderedlist numeration="arabic">
+            <listitem
+><para
+>O modo de Mapa da Área da Imagem, que mostra as imagens com dados GPS num mapa, dependendo da selecção na barra lateral esquerda, &eg; as imagens no álbum que seleccionou na Área do Álbum, as imagens com uma dada marca atribuída (seleccionada na Área das Marcas), com uma dada legenda e assim por diante. </para
+></listitem>
+            <listitem
+><para
+>Esta área, que é a ferramenta de pesquisa para procurar imagens pelos seus dados de GPS.</para
+></listitem>
+            <listitem
+><para
+>O <link linkend="tool-geolocationeditor"
+>Editor de Geo-Localização</link
+>, que está acessível através da opção <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenu
+>Item</guimenu
+><guimenuitem
+>Editar a Geo-localização...</guimenuitem
+></menuchoice
+> e permite definir e editar os dados de GPS.</para
+></listitem>
+            <listitem
+><para
+>A página do <link linkend="using-sidebar-maps"
+>Mapa</link
+>, na barra lateral direita, que mostra a localização da imagem num mapa e é puramente informativa.</para
+></listitem>
+        </orderedlist>
+    <para
+>Todas as quatro baseiam-se no elemento gráfico do &marble;. </para>
+
+    <para>
+        <inlinemediaobject>
+            <imageobject
+><imagedata fileref="&path;using-mainwindow-mapsearch.png" format="PNG"/></imageobject>
+        </inlinemediaobject>
+    </para>
+
+    <para
+>Para navegar pelo mapa, consulte o manual do &marble;, no capítulo 2. O significado do <quote
+>GPS</quote
+> e as funções que se aplicam a todos os três componentes de geo-localização estão descritos no capítulo do <link linkend="tool-geolocationeditor"
+>Editor de Geo-Localização</link
+> deste manual. Isto aplica-se ao menu de contexto no mapa e a primeira linha de botões no mapa, exceptuando as últimas três. As designações aqui usadas para os botões são o conteúdo da dica respectiva. </para>
+
+    <para
+>Normalmente irá começar por pesquisar as imagens, definindo uma região no mapa. Nos botões para <quote
+>Pesquisar por área:</quote
+>, carregue no botão da esquerda, o botão 'Seleccionar as imagens com um rectângulo', carregando depois no botão esquerdo num canto do mapa, desenhando um rectângulo e depois carregando outra vez no botão esquerdo do rato no outro canto. Todas as imagens que estiverem dentro das coordenadas desse rectângulo serão desenhadas na Área da Imagem (desde que as suas imagens tenham sido geo-referenciadas, como é óbvio). </para>
+
+    <para
+>O botão seguinte à direita é o botão 'Criar uma selecção da região a partir de uma miniatura', que cria uma pequena região em torno da posição de um marcador ou miniatura, caso carregue nele. Se existirem outras imagens escondidas por trás, por terem a mesma posição ou estarem muito perto da imagem que carregou, as mesmas serão apresentadas na Área da Imagem. </para>
+
+    <para
+>O último botão nesta fila é o botão 'Remover a selecção da região actual'. Esta faz o que é dito aqui - remove a selecção actualmente em curso, mas não as suas preciosas imagens :-) </para>
+
+    <para
+>Agora vejamos os três botões no extremo direito da fila por baixo do mapa. Eles controlam as imagens que vê na Área da Imagem, a partir da sua região definida. Comecemos pelo que aparece no fim da fila, o botão para 'Seleccionar as Imagens'. Se o activar, irá comutar a selecção de uma fotografia (ou um grupo de fotografias, caso estejam escondidas umas atrás das outras), assim que carregar nela no mapa. Isto poderá ser útil para afinar a sua selecção antes de desempenhar as operações na barra lateral direita ou nos menus. </para>
+
+    <para
+>O botão para Filtrar as Imagens (o que tem o funil) irá - ao contrário do botão para 'Seleccionar as Imagens', que deixa todas as imagens da sua região definida visíveis na Área da Imagem -, desligar todas as outras imagens e mostrar apenas a imagem onde carregou. Isto é particularmente útil se o mapa estiver apenas a mostrar os marcadores ou se as miniaturas forem demasiado pequenas para conseguir identificar as imagens de forma clara. </para>
+
+    <para
+>O botão para 'Remover o filtro actual' é auto-explicativo mas é importante mencionar que estes três últimos botões não irão afectar a sua região de pesquisa definida, o que significa que, uma vez carregando no botão com a cruz branca num círculo vermelho, todas as imagens nessa região voltarão a ficar visíveis na Área da Imagem. </para>
+
+    <para
+>O botão para <guilabel
+>Mostrar os Itens Não Geo-Localizados</guilabel
+> mostra todas as imagens sem dados GPS na Área da Imagem. Se isto se aplica a muitas imagens das suas colecções, poderá ser uma boa ideia usar a página de Filtros da Barra Lateral Direita e/ou as funções de ordenação e agrupamento no menu <guimenu
+>Ver</guimenu
+>, adicionalmente. </para>
+
+    <para
+>No campo abaixo, poderá introduzir um nome para o seu filtro geográfico. O mesmo será adicionado à lista abaixo para referência futura, assim que carregar no botão de gravação à direita do mesmo, funcionando como uma pasta geográfica em directo. O campo de pesquisa no fundo irá procurar na lista de Pesquisas acima. </para>
+
+</sect2>

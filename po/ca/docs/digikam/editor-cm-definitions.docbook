@@ -1,0 +1,93 @@
+<sect2 id="editor-cm-definitions">
+    <title
+>Més definicions sobre la gestió del color</title>
+
+    <para
+>Heu arribat al final d'aquesta guia d'aprenentatge sobre la gestió del color. Hem fet una «gestió del color» des de la càmera i el monitor, fins a l'espai de treball i la impressora. He après molt i espero que vosaltres també. El que segueix són alguns comentaris i definicions addicionals: </para>
+
+    <para
+><emphasis
+>Assignar</emphasis
+> un perfil significa canviar el significat dels números RGB en una imatge mitjançant l'incrustat d'un nou perfil sense canviar els números RGB reals associats amb cada píxel a la imatge. «Convertir» a un perfil vol dir inserir un nou perfil, però també canviar alhora els números RGB de manera que el significat dels valors RGB -és a dir, el color visible del món real representat pel trio de números RGB associats amb cada píxel en una imatge- segueixi sent el mateix abans i després de la conversió d'un espai a un altre. </para>
+
+    <para
+>D'altra banda, cada vegada que assigneu un nou perfil de l'espai de treball en lloc de convertir a un nou espai de treball (excepte quan s'assigna inicialment un perfil de la càmera al fitxer d'imatge que rebeu des del vostre programari de processament RAW), l'aparença de la imatge canviarà més o menys dràsticament (en general empitjora, llevat que prèviament el perfil equivocat hagi estat inadvertidament incrustat a la imatge). </para>
+
+    <para
+>En teoria, hauríeu de ser capaç de fer múltiples conversions d'una imatge des d'un espai de treball a un altre, i si esteu utilitzant un editor d'imatges amb gestió del color, tot i que tots els números RGB de la imatge canviaran amb cada conversió, la imatge que aparegui a la pantalla haurà de ser la mateixa. En realitat, per culpa dels errors d'arrodoniment sobre cada conversió, per no mencionar el retallat de la gamma quan es passa d'un espai de treball més gran a un de més petit, cada vegada que convertiu des d'un espai a un altre, la imatge es degradarà una mica. </para>
+
+    <para
+>Perfils <emphasis
+>dependents del dispositiu</emphasis
+> i els <emphasis
+>independents del dispositiu</emphasis
+>: El perfil de la càmera, un perfil de l'escàner, el perfil del monitor i el perfil de color de la impressora tots són perfils que depenen del dispositiu -aquests perfils només funcionen amb el dispositiu específic per al qual van ser produïts per mitjà de creació del perfil-. Els perfils de l'espai de treball i el del PCS són «independents del dispositiu». Una vegada, un fitxer d'imatge ha estat traduït per LCMS a través d'un PCS cap a un espai de treball independent del dispositiu, en certa manera ja no importa quin dispositiu va produir originalment la imatge. Però tan aviat com vulgueu visualitzar o imprimir la imatge, llavors el dispositiu utilitzat (monitor, impressora) tindrà una gran importància i requerirà un perfil dependent del dispositiu. </para>
+
+    <para
+>Un <emphasis
+>fitxer RAW interpolat</emphasis
+> no és un fitxer RAW. Per alguna raó, aquest simple punt provoca una gran confusió. No obstant això, després que un fitxer RAW hagi estat interpolat pel programari de processament RAW i després la sortida com a TIFF o JPEG, el fitxer RAW original seguirà sent un fitxer RAW, per descomptat, però el fitxer interpolat només serà un fitxer d'imatge. No serà un fitxer RAW. </para>
+
+    <para
+><emphasis
+>Lineal</emphasis
+> té dues definicions relacionades i fàcilment confuses. «Lineal» pot significar que la tonalitat de la imatge reflecteix la tonalitat en l'escena original com es va fotografiar en comptes de ser alterada per l'aplicació d'una corba S o altres mitjans de canvi de la tonalitat local i global. També pot significar que una corba de transferència de la gamma de l'espai de color és lineal. Una imatge pot ser «lineal» en qualsevol, ambdós, o cap dels dos sentits. Una imatge RAW desenvolupada per «dcraw» és lineal en ambdós sentits. La mateixa imatge desenvolupada pel DPP de Canon no serà lineal en cap sentit. </para>
+
+    <para
+><emphasis
+>HDR i LDR</emphasis
+> no es refereixen a la profunditat de bits de la imatge. «Marge dinàmic elevat -High dynamic range-» i «marge dinàmic baix -low dynamic range-» es refereixen a la gamma dinàmica total abastada per una imatge. Una imatge de marge dinàmic baix normal, diu que abasta unes 5 «parades» (la càmera digital mitjana en aquests dies pot acomodar fàcilment 8 o 9 parades), es poden desar com una imatge de 8-, 16-, 32-, o fins i tot de 64 bits, depenent del vostre programari, però el marge dinàmic de la imatge no es veu alterada per aquest fet. Només canviaran el nombre de passos discrets des dels tons més brillants als tons més foscos de la imatge. Per contra, una escena de 22 parades (molt més enllà de la capacitat d'una càmera digital orientada al consumidor sense utilitzar múltiples exposicions) es pot guardar com una imatge de 8- o de 16 bits, però la imatge resultant exhibirà un efecte de cartell extrem (és a dir, mostrarà un efecte de cartell en qualsevol abast tonal donat, ja que en realitat es pot visualitzar en un monitor típic d'una sola vegada), a causa dels relativament pocs passos tonals discrets disponibles des del to més brillant al més fosc de la imatge. </para>
+
+    <para
+><emphasis
+>Les imatges JPEG produïdes a la càmera no necessiten un perfil de la càmera</emphasis
+>. Tots els fitxers JPEG (o TIFF, si teniu una vella càmera «Minolta Dimage») que venen directament d'una càmera (fins i tot si són preses per càmeres instantànies que no permeten desar un fitxer RAW) comencen la seva vida a l'interior de la càmera com un fitxer RAW produït pel convertidor de «A» a «D» de la càmera. Si deseu les imatges com a fitxers JPEG, el processador dins de la càmera interpolarà el fitxer RAW, assignant un perfil de la càmera, traduint els números RGB resultants a un espai de treball (normalment sRGB, però de vegades podeu triar AdobeRGB, depenent de la càmera), realitzarà la compressió JPEG, i emmagatzemarà el fitxer JPEG a la targeta de la vostra càmera. De manera que pels fitxers JPEG (o TIFF) de la càmera no serà necessari assignar-hi un perfil de la càmera al qual traduir a un espai de treball a través d'un PCS. Els JPEG d'una càmera ja es troben en un espai de treball. </para>
+
+    <para
+><emphasis
+>Informació matemàtica útil</emphasis
+> si negocieu amb la sortida d'interval lineal de «dcraw»: Matemàticament parlant, quan es realitza una transformació de gamma esteu normalitzant (és a dir, dividiu per 256 si esteu treballant amb valors de 8 bits) els números RGB i elevant els números resultants a una potència apropiada en funció de les respectives gammes de l'espai de color d'inici i final, a continuació, torneu a normalitzar els resultats a un nou conjunt de números RGB. No és difícil, i és molt instructiu, fer això amb una calculadora per uns quants conjunts de números RGB espaiats des de (0,0,0) fins a (255,255,255) per veure com canvien els números RGB d'una codificació de gamma a una altra. LCMS ho farà per vosaltres quan li dieu que converteixi des d'un espai de color a un altre. No obstant això, si tot el que estem fent és convertir d'un espai de color al mateix espai de color a excepció d'una gamma diferent, utilitzeu «imagemagick» en lloc de «LCMS» i simplement manipuleu directament els números RGB, després assigneu el nou espai de treball a la imatge -els resultats seran més exactes si se sotmeten a una transformació de l'espai de color-. </para>
+
+    <para
+><emphasis
+>Drets d'autor i espais de treball lliures de còpia</emphasis
+>: donaré per fet que tots els espais de treball que es troben normalment, com ara: </para>
+
+    <orderedlist>
+
+        <listitem
+><para
+>Les diverses variants de sRGB (vegeu color.org). </para
+></listitem>
+
+        <listitem
+><para
+>BruceRGB o BestRGB. </para
+></listitem>
+
+        <listitem
+><para
+>Els diversos perfils de l'espai de treball ECI (iniciativa europea del color). </para
+></listitem>
+
+        <listitem
+><para
+>AdobeRGB, Adobe WideGamutRGB i Kodak/Adobe ProPhotoRGB (Kodak i Adobe ProPhoto són els mateixos, sols és diferent la marca) i les seves sense marca, equivalent a sense drets d'autor (Oyranos inclou una versió sense marca d'AdobeRGB). </para
+></listitem>
+
+    </orderedlist>
+
+    <para
+>I un bon nombre d'altres espais de treball que es podrien afegir a aquesta llista, són tots més o menys adequats com a espais de treball. Quin espai de treball utilitzar dependrà únicament de vosaltres, de les vostres necessitats com a editor de les vostres imatges digitals amb les vostres eventuals intencions de sortida (web, impressió artística, &etc;) No obstant això, com un efecte secundari important, si esteu utilitzant Adobe o altres perfils de l'espai de treball amb drets d'autor, aquests perfils contenen informació de drets d'autor que apareixerà a la informació EXIF de la imatge. Darrerament he estat fullejant les llistes de correu openicc. Aparentment LCMS es pot utilitzar per a presentar perfils de l'espai de treball lliures de còpia que són el mateix -de fet, difícils de distingir- que els perfils de l'espai de treball amb marca i drets d'autor. Seria un afegit meravellós al &digikam; si un conjunt de perfils de l'espai de treball «lliures de còpia», incloent-hi les versions sense marca i que estiguin degudament etiquetats per ProPhotoRGB, AdobeRGB i Adobe WidegamutRGB (potser en dos sabors cadascun: l'interval lineal i l'interval de costum), es podrien incloure com a part del paquet &digikam;. </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

@@ -1,0 +1,118 @@
+  <sect3 id="editor-enhance-hotpixels">
+    <sect3info>
+      <title
+>Korrigering av heta bildpunkter</title>
+      <abstract>
+        <para
+>Verktyget <emphasis
+>Heta bildpunkter</emphasis
+> i &digikam; låter dig ta bort heta bildpunkter i ett fotografi taget med en CCD-kamera. Det använder algoritmer från JPEGPixi-projektet med copyright av Martin Dickopp. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>Digikam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Inledning</title>
+    <para
+>De flesta av dagens digitalkameror producerar bilder med ett flertal ljust färgade &quot;dåliga bildpunkter&quot; när långa slutartider används. Nattbilder kan förstöras av dessa &quot;dåliga bildpunkter&quot;. Det finns tre olika typer av &quot;dåliga bildpunkter&quot;: <itemizedlist
+><listitem
+><para
+>Fasta bildpunkter: Det är en bildpunkt som alltid läses av som hög, eller alltid har maximal effekt i alla exponeringar. Den skapar en ljus bildpunkt, oftast med röd, blå eller grön färg, i den slutliga bilden. En fast bildpunkt syns oavsett slutartiden, bländarstorleken eller någon annan inställning av användaren. Den uppstår vid normal exponering och brukar vara mer uppenbar vid ljusa förhållanden.</para
+></listitem
+><listitem
+><para
+>Döda bildpunkter: Det är en bildpunkt som läses av som noll och alltid är av i alla exponeringar. Tillståndet skapar en svart bildpunkt i den slutliga bilden. På liknande sätt som en fast bildpunkt, syns en död bildpunkt oavsett slutartiden, bländarstorleken eller någon annan inställning av användaren.</para
+></listitem
+> <listitem
+><para
+>Heta bildpunkter: Det är en bildpunkt som läses av som hög (ljus) vid längre exponeringar som vit, röd eller grön färg. Ju längre exponeringstid, desto synligare blir heta bildpunkter. Dessa bildpunkter syns inte vid ljusa förhållanden.</para
+></listitem
+> </itemizedlist
+> Observera att fasta eller döda bildpunkter inträffar på samma plats i alla bilder. Om platsen för en fast eller död bildpunkt varierar, kan det vara en het bildpunkt. </para>
+    <para
+>Fasta, döda eller heta bildpunkter är i synnerhet ett problem vid fotografering med obehandlat läge i hög kvalitet, eftersom många kameror har inbyggd borttagning av heta bildpunkter som automatiskt verkställs när JPEG-komprimering används (vilket oftast är fallet). </para>
+    <para
+>Verktyget kan användas för att fixa &quot;Heta bildpunkter&quot; eller &quot;Fasta bildpunkter&quot; i ett fotografi med en metod baserad på subtraktion av en svart bildruta. Det finns ännu inte någon manuell editor för att välja dåliga bildpunkter. </para>
+    <sect4 id="using-blackframecreation">
+      <title
+>Skapa de svarta bildrutorna</title>
+      <para
+>Metoden med subtraktion av svart bildruta ger den noggrannaste borttagningen av &quot;Heta bildpunkter&quot; och &quot;Fasta bildpunkter&quot;. Först måste du skapa en &quot;svart bildruta&quot; som referens. Det är enkelt att göra. När du har tagit färdigt dina bilder med lång exponeringstid sätt på ett linsskydd på kameran och ta en &quot;svart&quot; bild med samma exponeringstid som de tidigare bilderna. Bilden blir helt svart, men vid nära undersökning ser du att den har vita och fasta bildpunkter (färgade punkter). De är placerade på samma position som på dina föregående bilder. </para>
+      <para
+>Ladda filen i komponenten med knappen <guilabel
+>Svart bildruta</guilabel
+>. Verktyget utför automatisk detektering av vita och fasta bildpunkter. De markeras i kontrollrutans förhandsgranskningsområden. </para>
+      <warning>
+        <para
+>Om du använder en äldre digitalkamera är det viktigt att ta om den svarta bildrutan nästa gång du tar en bild med lång exponeringstid, för att detektera nya vita och fasta bildpunkter på grund av CCD-defekter. </para>
+      </warning>
+    </sect4>
+    <sect4 id="using-hotpixels">
+      <title
+>Använda verktyget Heta bildpunkter</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-hotpixels.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Dialogrutan för verktyget Heta bildpunkter</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>Som förklarades i föregående avsnitt, måste du först ladda en svart bildruta som motsvarar bilden som ska korrigeras. En automatisk tolkning utförs i den svarta bildrutan för att hitta dåliga bildpunkter. Observera att verktyget kommer ihåg föregående svarta bildruta som användes vid den senaste sessionen, och den öppnas automatiskt igen vid nästa session. </para>
+      <para
+>Bildrutan och förhandsgranskningen av originalet hjälper dig att panorera i bilden. Förhandsgranskningsfönstret visar filterresultatet med nuvarande inställningar. Dåliga bildpunkter markeras i alla förhandsgranskningsområden. </para>
+      <para
+>Välj ett område för att se dåliga bildpunkter i förhandsgranskningen och filtrets resultat med alternativet 'Skilda vyer' i bildrutan. Välj bästa metod med <guilabel
+>Filter</guilabel
+> för att interpolera bildpunkter eller bildpunktsblock. Följande filter är tillgängliga: <itemizedlist>
+          <listitem>
+            <para
+>Medelvärde: Bildpunkterna intill bildpunktsblocket medelvärdesbildas. Den resulterade färgen tilldelas till alla bildpunkter i blocket. För endimensionell interpolering görs det separat för en bildpunkt breda, horisontella eller vertikala ränder.</para>
+          </listitem>
+          <listitem>
+            <para
+>Linjär: Bildpunkterna som har avståndet ett från bildpunktsblocket används för att beräkna en bilinjär yta (tvådimensionell), eller en samling linjära kurvor (endimensionella), som sedan används för att tilldela interpolerade färger till bildpunkterna i blocket.</para>
+          </listitem>
+          <listitem>
+            <para
+>Kvadratisk: Det är förvald filtreringsmetod. Bildpunkterna som har avståndet två eller mindre från bildpunktsblocket används för att beräkna en bikvadratisk yta (tvådimensionell), eller en samling kvadratiska kurvor (endimensionella), som sedan används för att tilldela interpolerade färger till bildpunkterna i blocket.</para>
+          </listitem>
+          <listitem>
+            <para
+>Kubisk: Bildpunkter som har avståndet 3 eller mindre från bildpunktsblocket används för att beräkna en bikubisk yta (tvådimensionell), eller en samling kubiska kurvor (endimensionella), som sedan används för att tilldela interpolerade färger till bildpunkterna i blocket.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+    </sect4>
+    <sect4 id="inaction-hotpixels">
+      <title
+>Verktyget Heta bildpunkter under arbete</title>
+      <para
+>Nedan ser du verktyget för korrigering av heta bildpunkter använd på ett färgfotografi taget med en undermålig digitalkamera vid känsligheten 200 ISO med en långtidsexponering. Originalbilden förstorad 300 % är (1), och den korrigerade bilden är (2). </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-hotpixels-preview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Förhandsgranskning av korrigering av heta bildpunkter</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

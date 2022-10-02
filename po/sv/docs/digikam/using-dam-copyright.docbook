@@ -1,0 +1,72 @@
+<sect2 id="using-dam-copyright">
+    <title
+>Skydda din upphovsrätt</title>
+
+    <para
+>Teman: vattenmärken, IPTC- och XMP-upphovsdata, exportstorlek </para>
+
+    <para
+>Detta är det sista kapitlet och steget för att märka ditt digitala bibliotek med upphovsman, ägare och upphovsrättsinformation. I större utsträckning än på den "gamla goda tiden" (?) med papperskopior, gör det allestädes närvarande Internet att det blir alltför lätt att "stjäla" en bild från en webbplats. Upphovsman och upphovsrättsinformation bör åtminstone vara en del av metadata för alla bilder som kommer att exporteras och/eller publiceras i någon form. Ingenting är enklare att göra med &digikam;: Du kan ställa in en standardidentitet, så uppdateras automatiskt alla bilder som läses in av &digikam;. Det finns en orsak till att jag har lagt till öppen upphovsrätt (eng. copyleft) i rubriken (citat från Wikipedia): </para>
+
+    <blockquote>
+
+        <para
+>&quot;Copyleft är en ordlek med ordet copyright och är bruket att använda upphovsrättslagen för att ta bort begränsningar när det gäller distribution av kopior eller ändrade versioner av ett verk för andra, och kräva att samma frihet bevaras i ändrade versioner. </para>
+
+        <para
+>Öppen upphovsrätt är en form av licens och kan användas för att ändra copyright för verk som musik och konst. I allmänhet tillåter upphovsrättslag en upphovsman att förhindra andra från att kopiera, anpassa eller distribuera kopiera av upphovsmannens arbete. I motsats till det, kan en upphovsman via en licensform baserat på öppen upphovsrätt, ge alla som tar emot en kopia av ett arbete rättighet att reproducera, anpassa eller distribuera arbetet, så länge alla resulterande kopior eller anpassningar också är bundna av samma öppna licensform. En mycket använd och ursprunglig öppen licens är GNU General Public License. Liknande licenser är tillgängliga via Creative Commons, så kallade Share-alike.&quot; </para>
+
+    </blockquote>
+
+    <para
+>Här följer en beskrivning av vad som ska skrivas in på &digikam;s inställningssida som information: </para>
+
+    <para
+><command
+>Upphovsman</command
+> (synonym till Skapare och Byline): Fältet ska innehålla ditt namn, eller namnet på personen som skapade fotografiet. Om det inte är lämpligt att ange fotografens namn (till exempel om fotografens identitet måste skyddas), kan också namnet på ett företag eller en organisation användas. När det väl har sparats, ska inte fältet ändras av någon. Fältet stöder inte användning av kommatecken eller semikolon som avskiljare. </para>
+
+    <para
+><command
+>Upphovsmannens titel</command
+> (synonym till Bylinetitel): Fältet ska innehålla fotografens yrkestitel. Exempel kan vara titlar som Redaktionsfotograf, Frilansfotograf eller Oberoende kommersiell fotograf. Eftersom det är en inledning till fältet Upphovsman, måste fältet Upphovsman också fyllas i. </para>
+
+    <para
+><command
+>Erkännande</command
+> (synonym till Försörjare): Använd fältet Försörjare för att identifiera vem som tillhandahåller fotografiet. Det behöver inte nödvändigtvis vara upphovsmannen. Om en fotograf arbetar åt en nyhetsbyrå som Reuters eller Associated Press, kan organisationen anges här, eftersom den 'försörjer' andra med bilden. Om bilden är lagervara, ska gruppen (byrån) som är delaktig i att tillhandahålla bilden anges här. </para>
+
+    <para
+><command
+>Källa</command
+>: Källfältet ska användas för att identifiera fotografiets ursprungliga ägare eller upphovsrättsinnehavare. Fältets värde ska aldrig ändras när informationen har skrivits in efter att bilden har skapats. Även om det ännu inte upprätthålls av de egna rutorna, bör du betrakta det som ett fält som är 'skrivbart en gång'. Källan kan vara en enskild person, en byrå, eller en anställd på en byrå. För att förenkla senare sökning, föreslås att alla snedstreck '/' omges av blanktecken. Använd formen 'fotograf / byrå' istället för 'fotograf/byrå'. Källan kan också skilja sig från skaparen och från de namn som anges under copyright. </para>
+
+    <para
+><command
+>Copyright</command
+>: Fältet Copyright ska innehålla all nödvändig information för att hävda upphovsrättsligt ägande, och ska identifiera den nuvarande innehavaren eller innehavarna av fotografiets copyright. Oftast är det fotografen, men om bilden togs av en anställd eller på uppdrag, ska byrån eller företaget anges. Använd formen som är tillämplig i ditt land. I Förenta staterna används typiskt formen © (datum för första publicering) innehavarens namn, exempelvis 'copr 2005 N.N'. Ordet 'copyright' eller förkortningen 'copr' ska användas istället för symbolen &copy; om bara ASCII-tecken tillåts. I vissa länder erkänns bara symbolen, och förkortningen fungerar inte. Att använda något som (c) där parenteserna formar en ofullständig cirkel är inte tillräckligt. För ytterligare skydd över hela världen, rekommenderas att 'all rights reserved' läggs till efter ovanstående information. I Europa använder man: Copyright {År} {Upphovsrättsinnehavare}, all rights reserved. I Japan ska följande tre delar ingå i IPTC-kärnans Copyright-fält för att erhålla maximalt skydd: (a) ordet Copyright, (b) år för första publicering, (c) upphovsmannens namn. Om du så önskar, kan du lägga till 'all rights reserved'. </para>
+
+    <para
+>Även om det är högst angeläget att fylla i avdelningarna med upphovsman och copyright, utgör det inget skydd mot bedrägeri. Vem som helst med lite mer än grundkunskaper om datorer kan ta bort eller ändra metadata inbäddad i bilder. Lösningen av detta problem heter 'digitala vattenmärken'. För privatpersoner är det kanske inte så intressant för de flesta fotografier, men för professionella och halvprofessionella fotografer är ett sådant skydd verkligt viktigt. </para>
+
+    <sect3 id="watermarking"
+>  <title
+>Digitala vattenmärken (DW)</title>
+
+        <para
+>Digitala vattenmärken betyder ett osynligt digitalt vattenmärke som inpräntas på fotografier som en del av digital upphovsrättshantering (DRM). Vattenmärket innehåller samma information om upphovsman och copyright som beskrivs ovan, men metadata krypteras och sparas i själva bilddata (i motsats till metadatadelen, som är en separat del i bildfilen). Det osynliga avtrycket har holografiska egenskaper, så att ändringar som görs av en bild (storlek, färg, beskärning, upp till en viss gräns) inte förstör upphovsrättsinformationen. Bara när storleken hos en bild ändras till en mycket liten bråkdel, som en miniatyrbild, går den inbäddade informationen förlorad, men då är bilden inte längre av något värde för parten som kränker upphovsrätten. </para>
+
+        <para
+>Ett digitalt vattenmärke är unikt för varje bild. &digikam; kommer snart att tillhandahålla ett verktyg för digital vattenmärkning som har funktioner för bakgrundsbehandling. </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

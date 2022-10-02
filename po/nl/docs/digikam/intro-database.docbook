@@ -1,0 +1,58 @@
+<sect1 id="intro-database">
+    <title
+>De database van &digikam;</title>
+
+    <sect2 id="intro-database-intro">
+        <title
+>Inleiding</title>
+
+        <para
+>Iedereen is bekend met databases, ze worden gebruikt om gegevens op te slaan. Zoals alle andere fotobeheerprogramma's gebruikt &digikam; ook de database om enige vanzelfsprekende redenen, beperken van overbodige gegevens, een snelle zoek-engine en grotere integriteit van gegevens. Bovendien zijn de kosten van gegevensinvoer, opslag en opzoeken drastisch gereduceerd. Bovendien kan elke gebruiker toegang krijgen tot de gegevens met een zoektaal. </para>
+
+        <para
+>In &digikam; worden de albums, startlocaties van albums, tags, miniaturen, gezichtsherkenningsgegevens, metagegevens van afbeeldingen, paden van bestanden, instellingen &etc; allemaal opgeslagen in de database. </para>
+
+        <para
+>&digikam; beheert in werkelijkheid meer dan één database. Voor het gemak wordt dit als drie gecategoriseerd: <orderedlist>
+
+                <listitem
+><para
+>Kerndatabase voor alle eigenschappen van verzamelingen, &ie; het bevat alle albums, afbeeldingen en zoekgegevens. </para
+></listitem>
+
+                <listitem
+><para
+>Miniaturendatabase voor gecomprimeerde miniaturen &ie; bevat miniaturen die met wavelets gecomprimeerde afbeeldingen gebruiken (PGF formaat). </para
+></listitem>
+
+                <listitem
+><para
+>Gezichtendatabase voor het opslaan van metagegevens voor gezichtsherkenning &ie; bevat gezichtshistogrammen voor gezichtsherkenning. </para
+></listitem>
+
+            </orderedlist>
+
+        </para>
+
+    </sect2>
+
+    <sect2 id="intro-database-config">
+        <title
+>Technische achtergrond en instellingen</title>
+
+        <para
+><ulink url="https://sqlite.org"
+>SQLite</ulink
+> is een beheersysteem voor een relationele database, gevat in de C programmeerbibliotheek. SQLite is niet direct te vergelijken met client/server SQL database-engines zoals MySQL, Oracle of PostgreSQL. Het is echter een ingebedde SQL database-engine, &ie; het is ingebed in een eindprogramma. SQLite leest en schrijft direct uit/naar gewone bestanden op een schijf. Voor lokale opslag op een schijf met laag gelijktijdig schrijven en minder dan een terabyte aan inhoud, is SQLite een bijna altijd betere oplossing. SQLite is snel en betrouwbaar en vereist geen configuratie of onderhoud. Het houdt de zaken eenvoudig. SQLite "werkt gewoon". </para>
+
+    </sect2>
+
+</sect1>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

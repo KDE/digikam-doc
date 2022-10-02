@@ -1,0 +1,186 @@
+<chapter id="tool-maintenance">
+<chapterinfo>
+
+    <abstract>
+        <para
+>Manutenzione è uno strumento che avvia dei processi in background per mantenere in efficienza le raccolte di immagini ed i contenuti della banca dati. </para>
+    </abstract>
+
+    <keywordset>
+        <keyword
+>Manutenzione</keyword>
+        </keywordset>
+    </chapterinfo>
+
+    <title
+>Strumento Manutenzione</title>
+
+    <sect1 id="tool-maintenance-intro">
+        <title
+>Introduzione</title>
+
+        <para
+>A seconda del tuo flusso di lavoro, delle tue impostazioni di &digikam; e se lavori sulla tua raccolta d'immagini anche con altri programmi o meno, potrebbe essere necessario avviare di volta in volta delle operazioni di manutenzione per aggiornare la banca dati di &digikam; e le tue immagini; questo per quanto riguarda i duplicati, i tag facciali, le etichette sulla qualità &etc;. Lo strumento di manutenzione può fare tutto questo per te, anche più di un'operazione alla volta, a seconda delle tue esigenze. </para>
+
+    </sect1>
+
+    <sect1 id="tool-maintenance-features">
+        <title
+>Le funzionalità di Manutenzione</title>
+
+        <sect2 id="tool-maintenance-features-common">
+            <title
+>Le opzioni comuni</title>
+
+            <para
+>Nella sezione Opzioni comuni puoi confinare l'ambito dei processi di manutenzione a certi album o a certi tag. Devi deselezionare <guilabel
+>Raccolta di tutti gli album</guilabel
+> oppure <guilabel
+>Raccolta di tutti i tag</guilabel
+> per aver accesso alle caselle a cascata da cui puoi selezionare gli album o le etichette. Nota che in queste caselle a cascata hai un menu contestuale per selezionare o deselezionare i figli o i genitori, e anche per invertire la selezione. Se passi da <guilabel
+>Album</guilabel
+> a <guilabel
+>Tag</guilabel
+> o viceversa, la tua selezione sarà inattiva e gli elementi rimarranno intatti, cosa che può essere utile se utilizzi più spesso una certa selezione. </para>
+            
+            <para
+>Dal momento che la maggior parte dei processi che lo strumento di manutenzione può eseguire impiegano molto tempo (anche in funzione della portata, ovviamente), devi scegliere <guilabel
+>Lavora con tutti i core del processore</guilabel
+> se il tuo computer ne ha più di uno e non sono occupati diversamente. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-scan">
+            <title
+>Lo strumento Cerca nuovi elementi</title>
+
+            <para
+>Questo processo analizzerà le raccolte che hai definito in <menuchoice
+> <guimenu
+>Impostazioni</guimenu
+><guisubmenu
+>Configura &digikam;...</guisubmenu
+><guimenuitem
+>Raccolte</guimenuitem
+> </menuchoice
+> alla ricerca di nuovi elementi, &ie; file d'immagine che hai aggiunto alle tue raccolte mentre &digikam; non era in esecuzione. Puoi anche avviare automaticamente questo processo all'avvio di &digikam;, spuntando<guilabel
+>Cerca nuovi elementi all'avvio</guilabel
+> in <menuchoice
+> <guimenu
+>Impostazioni</guimenu
+><guisubmenu
+>Configura &digikam;...</guisubmenu
+><guimenuitem
+>Varie</guimenuitem
+> </menuchoice
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-thumbs">
+            <title
+>Lo strumento Ricostruisci le miniature</title>
+
+            <para
+>La ricostruzione delle miniature può essere necessaria se hai lavorato sulle tue immagini con altre applicazioni, o se hai cambiato la dimensione delle miniature in <menuchoice
+> <guimenu
+>Impostazioni</guimenu
+><guisubmenu
+>Configura &digikam;...</guisubmenu
+><guisubmenu
+>Visualizza</guisubmenu
+><guimenuitem
+>Viste ad albero</guimenuitem
+> </menuchoice
+>. L'opzione <quote
+>Ricerca oggetti cambiati o non catalogati</quote
+> può velocizzare il processo nel primo caso, o se hai semplicemente aggiunto delle immagini alla tua raccolta. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-fingerprints">
+            <title
+>Lo strumento Ricostruisci i codici di controllo</title>
+
+            <para
+>I codici di controllo sono necessari per trovare i duplicati e gli elementi simili, e per trovare le immagini in base agli schizzi. Per una descrizione dettagliata, vedi la <link linkend="using-mainwindow-fuzzysearches"
+>vista approssimata</link
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-duplicates">
+            <title
+>Lo strumento Trova duplicati</title>
+
+            <para
+>Lo strumento Trova duplicati fa la stessa cosa del pulsante <guilabel
+>Trova duplicati</guilabel
+> nella vista approssimata, ma qui si può combinare alle operazioni di manutenzione, ed hai la possibilità di marcare <quote
+>Lavora con tutti i core del processore</quote
+> nelle opzioni comuni (vedi sopra) per velocizzare il processo. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-faces">
+            <title
+>Lo strumento Gestione dei volti</title>
+            <subtitle
+>Rileva e riconosci i volti</subtitle>
+
+            <para
+>È lo stesso processo al quale puoi accedere nella vista Persone con il pulsante <guilabel
+>Analizza la raccolta alla ricerca di visi</guilabel
+>, solo che qui non puoi impostare il parametro Velocità - Accuratezza e l'opzione <quote
+>Azzera e ricostruisci tutte le informazioni di addestramento</quote
+>. Per maggiori informazioni sulle opzioni di gestione dei dati facciali, vedi la <link linkend="using-mainwindow-peopleview"
+>vista Persone</link
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-quality">
+            <title
+>Lo strumento Ordinatore qualità delle immagini</title>
+
+            <para
+>Lo strumento Ordinatore qualità delle immagini assegna alle immagini delle etichette in base alla loro qualità, in accordo con le impostazioni in <menuchoice
+> <guimenu
+>Impostazioni</guimenu
+><guisubmenu
+>Configura &digikam;...</guisubmenu
+><guimenuitem
+>Ordinatore qualità delle immagini,</guimenuitem
+> </menuchoice
+>; da qui devi anche abilitare questo strumento, se vuoi usarlo. Dal momento che questo processo richiede tempo, è una buona idea selezionare <guilabel
+>Lavora con tutti i core del processore</guilabel
+> e confinare il lavoro ad alcuni album o ad alcuni tag. Questo strumento imposterà il flag rosso per <quote
+>Rifiutata</quote
+>, quello giallo per <quote
+>In sospeso</quote
+> ed il verde per <quote
+>Accettata</quote
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-sync">
+            <title
+>Lo strumento Sincronizzatore dei metadati</title>
+
+            <para
+>Da fare </para>
+
+        </sect2>
+
+    </sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

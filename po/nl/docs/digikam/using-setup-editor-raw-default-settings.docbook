@@ -1,0 +1,187 @@
+<sect3 id="using-setup-raw-default">
+
+    <title
+>Standaard instellingen voor RAW</title>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-editor-raw-settings.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+    <para
+>Mozaïek wegwerken </para>
+
+        <para
+>Een algoritme voor <ulink url="https://en.wikipedia.org/wiki/Demosaicing"
+>wegwerken van mozaïek</ulink
+> is digitaal afbeeldingsproces gebruikt om een volledige afbeelding te interpoleren uit partiële ruwe gegevens uit de kleur gefilterde afbeeldingssensor in vele digitale camera's om een matrix te vormen van gekleurde pixels. Ook bekend als CFA-interpolatie of kleur reconstructie. </para>
+
+        <para>
+            <guilabel
+>RGB interpoleren als vier kleuren</guilabel>
+        </para>
+
+        <para
+>Bij de standaard wordt er van uitgegaan dat alle groene pixels hetzelfde zijn. Als groene pixels van de CCD-sensor op de even rij meer gevoelig zijn voor ultraviolet licht dan op de oneven zult u een golfpatroon in de uitvoer krijgen. Deze optie lost dit probleem op met een klein detailverlies. Bij herhaling vervaagt deze optie de afbeelding iets, maar het elimineert valse 2x2 golfpatronen met de VNG-kwaliteitsmethode en mazen met de AHD-kwaliteitsmethode. </para>
+
+        <para>
+            <guilabel
+>Pixels niet uitrekken of draaien</guilabel>
+        </para>
+
+        <para
+>TE DOEN </para>
+         
+
+
+        <para>
+            <guilabel
+>Kwaliteit:</guilabel>
+        </para>
+
+        <para
+>TE DOEN &digikam; en Dcraw bieden ons drie alternatieven: bi-lineair, VNG-interpolatie, AHD-interpolatie. Het schijnt dat <emphasis
+>AHD-interpolatie</emphasis
+> (voor Adaptive Homogeneity-Directed) de beste keuze is voor kwaliteit volgens enige testen die ik heb uitgevoerd en het paper van de persoon die het heeft geïmplementeerd. <emphasis
+>VNG-interpolatie</emphasis
+> (Variable Number of Gradients) was het eerste algoritme gebruikt door Dcraw maar het lijdt aan kleur-artifacts aan de rand. <emphasis
+>Bi-lineair</emphasis
+> is interessant als u kijkt naar snelheid met een acceptabel resultaat. </para>
+         
+
+
+        <para>
+            <guilabel
+>Doorgangen:</guilabel>
+        </para>
+
+        <para
+>TE DOEN </para>
+         
+
+
+        <para>
+            <guilabel
+>Interpolatie verfijnen</guilabel>
+        </para>
+
+        <para
+>Deze optie is alleen beschikbaar voor DCB en VCD/AHD. TE DOEN </para>
+         
+
+    <para
+>Witbalans </para>
+
+
+        <para>
+            <guilabel
+>Methode</guilabel>
+        </para>
+
+        <para
+>Er zij hier vier opties beschikbaar: Standaard D65, Camera, Automatisch en Handmatig. <quote
+>Standaard D65</quote
+> gaat over normale daglicht condities. <quote
+>Camera</quote
+> gebruikt de camera-eigen instellingen voor witbalans indien ingesteld. ??? <quote
+>Automatisch</quote
+> De standaard is om een vastgezette kleurbalans te gebruiken, gebaseerd op een witte kaart gefotografeerd in zonlicht. ??? <quote
+>Handmatig</quote
+> zal kleuren aanpassen volgens de T(K) (kleurtemperatuur in graden Kelvin) en Groen instellingen. TE DOEN </para>
+         
+
+
+        <para>
+            <guilabel
+>Lichtvlekken</guilabel>
+        </para>
+
+        <para
+>Dit is het verhaal van de drie lichtvlekopties, met dank aan Nicolas Vilars: </para>
+
+        <para
+>Standaard is hier het beschouwen van lichtvlekken (lees: delen van uw afbeeldingen die ingebrand zijn vanwege de onmogelijkheid van uw camera om de lichtvlekken te vangen) als gewoon / geheel wit (optie <guilabel
+>geheel wit</guilabel
+>). U kunt enige grappige resultaten krijgen met de optie <guilabel
+>unclip</guilabel
+> die de lichtvlekken in verschillende kleuren roze zal schilderen. Tenslotte kunt u proberen om te overwegen enige delen te herstellen van de ontbrekende informatie uit de lichtvlekken (optie <guilabel
+>reconstrueren</guilabel
+>). </para>
+
+        <para
+>Dit is mogelijk omdat de blauwe pixels een tendens hebben om minder snel te verzadigen dan de groene en de rode. &digikam;/dcraw zal proberen om de ontbrekende groene en rode kleuren uit de overblijvende niet verzadigde blauwe pixels te reconstrueren. Natuurlijk is hier alles een kwestie van de verhouding tussen hoeveel kleur of wit u wilt. </para>
+
+        <para
+>Als u <guilabel
+>Reconstrueren</guilabel
+> als optie selecteert, zult u de keuze gegeven worden om een niveau te kiezen. een waarde van 3 is een compromis en kan/zou aangepast (kunnen) worden op een basis per afbeelding. </para>
+
+        <note
+><para
+>Hier is een kleine waarschuwing, voor de paar nieuwsgierigen die de man-pagina's van Dcraw hebben gelezen, zegt de auteur dat 5 het compromis is, 0 is geheel wit en 1 unclip. Dit is omdat in &digikam; 0 en 1 zijn de opties "geheel wit" en "unclip" in het afrolmenu (als u deze selecteert, zal de niveauschuifregelaar grijs zijn). Daarom laat de schuifregelaar in &digikam; met de optie "reconstrueren" u kiezen tussen 0 tot 7 (in plaats van 0 tot 9 in de opdrachtregel van Dcraw) waar 3 het compromis is in plaats van 5 op de opdrachtregel van het hulpmiddel Dcraw. </para
+></note>
+         
+
+        <para>
+            <guilabel
+>Belichtingscorrectie (E.V)</guilabel>
+        </para>
+
+        <para
+>TE DOEN </para>
+         
+
+        <para>
+            <guilabel
+>Valse kleuren in oplichten corrigeren</guilabel>
+        </para>
+
+        <para
+>TE DOEN </para>
+         
+
+        <para>
+            <guilabel
+>Automatische helderheid</guilabel>
+        </para>
+
+        <para
+>TE DOEN </para>
+         
+
+    <para
+>Correcties </para>
+
+        <para>
+            <guilabel
+>Ruisreductie</guilabel>
+        </para>
+
+        <para
+>TE DOEN Bij verwijderen van mozaïek in uw afbeelding kunt u ook vragen om ruisreductie (met een kleine vermindering van snelheid). Deze optie past een algoritme toe van ruisreductie terwijl de afbeelding nog steeds in de CIE Lab kleurruimte is. Omdat ruis alleen toegepast wordt op de laag Helderheid (Luminosity) (de "L" van Lab), zou het uw afbeelding niet moeten vervangen zoals traditionele algoritmen voor ruisreductie doen in modus RGB. Dus, als u een afbeelding van RAW converteert en het verschijnt met ruis, dan, in plaats van een ruisvermindering, ga terug en converteer opnieuw met deze optie ingeschakeld. De standaard is: <emphasis
+>Drempel</emphasis
+> = 100. Hogere waarden zullen het gladstrijken vergroten, lager zal gladstrijken verminderen. </para>
+         
+
+        <anchor id="CA.anchor"/>
+
+        <para>
+            <guilabel
+>Chromatische aberratie (CA) correctie</guilabel>
+        </para>
+
+        <para
+>Als u de CA van uw lenzen weet kunt u de rood- en blauwcorrectiewaarden hier instellen. Dit is zeker de optimale methode voor CA-correctie omdat het gedaan wordt tijdens de RAW-conversie. </para>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

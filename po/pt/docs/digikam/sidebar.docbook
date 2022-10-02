@@ -1,0 +1,847 @@
+ <sect1 id="using-sidebar"
+>            <title
+>Barra lateral do &digikam;</title>
+    <anchor id="sidebar.anchor"/>
+
+        <sect2 id="introduction-rightsidebar">
+        <title
+>Introdução à barra lateral da direita</title>
+           <para
+>A janela principal do &digikam; oferece uma barra lateral do lado direito que mostra informações e acções importantes para as imagens seleccionadas. Esta mesma barra lateral também está disponível na área do <guilabel
+>Editor de Imagens</guilabel
+>, sem os botões de navegação primeiro-anterior-seguinte-último. Poderá ser mostrada se carregar, respectivamente, numa das cinco páginas: </para>
+
+           <para>
+            <itemizedlist>
+
+                <listitem
+><para
+><link linkend="using-sidebarfileproperties"
+>Propriedades</link
+>: As propriedades do ficheiro e da imagem, os parâmetros-chave da fotografia (dados EXIF)</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebarmetadata"
+>Meta-dados</link
+>: EXIF, Notas do fabricante, dados IPTC e GPS (essas propriedades poderão ser editadas por dois 'plugins' do KIPI)</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebarcolors"
+>Cores</link
+> : Histogramas e perfis de ICC incorporados</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebargeolocation"
+>Geo-localização</link
+> : um item do Marble que mostra a localização GPS</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebarcommentstags"
+>Comentários &amp; Marcas</link
+> : Comentários, configuração da Data &amp; Hora, Classificação, Marcas</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebartagfilters"
+>Filtros de Marcas</link
+> : os filtros das marcas que são aplicados na selecção da janela principal</para
+></listitem>
+
+            </itemizedlist>
+Se carregar sucessivamente na mesma página, fará com que a barra lateral apareça ou se enrole de novo no extremo da janela. </para>
+        </sect2>
+
+        <sect2 id="using-sidebarfileproperties"
+>    <title
+>Propriedades</title>
+           <para
+>A barra de propriedades mostra as informações essenciais acerca da imagem seleccionada, sendo relativamente fáceis de compreender. Está agrupada nas seguintes secções: <itemizedlist>
+
+               <listitem
+><para
+>Propriedades do Ficheiro: são informações relacionadas com o sistema de ficheiros</para
+></listitem>
+
+               <listitem
+><para
+>Propriedades da Imagem: mostra as propriedades da imagem e do formato, como a dimensão, a compressão, a profundidade de cor, &etc;</para
+></listitem>
+
+               <listitem
+><para
+>Propriedades da Fotografia: mostra um resumo dos parâmetros mais importantes, quando tirou a fotografia. Estes dados são retirados dos campos de dados do EXIF, se estiverem disponíveis</para
+></listitem>
+
+           </itemizedlist>
+
+           <example
+>   <title
+>Propriedades do Ficheiro na Barra Lateral</title>
+                 <screenshot
+><screeninfo
+>Exemplo de Propriedades do Ficheiro na Barra Lateral</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarfileproperties.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+
+           </para>
+        </sect2>
+
+        <sect2 id="using-sidebarmetadata"
+>          <title
+>A Página de Meta-Dados</title>
+
+           <para
+>Os meta-dados são os dados sobre as imagens ou os ficheiros, como os dados técnicos da configuração da máquina durante a tiragem da fotografia, a informação do autor, os direitos de cópia, palavras-chave, títulos e coordenadas do local.</para>
+           <para
+>A barra de meta-dados é composta por quatro sub-páginas: <guilabel
+>EXIF</guilabel
+>, <guilabel
+>Notas do Fabricante</guilabel
+>, <guilabel
+>IPTC</guilabel
+> e <guilabel
+>GPS</guilabel
+>. Do lado esquerdo, estão dois botões que lhe permitem mudar entre a visualização completa e simplificada dos dados. A seguir à mesma existe um ícone para imprimir e outro para copiar: o primeiro imprime os dados e o outro copia os meta-dados da página para a área de transferência. </para>
+           <para
+>Uma funcionalidade realmente boa é o campo de pesquisa na parte inferior das páginas de meta-dados. À medida que vai escrevendo uma palavra-chave, os meta-dados no topo serão filtrados sucessivamente até que os reduza ao que está à procura. É uma forma rápida de aceder a informações específicas.</para>
+
+           <para
+>Os meta-dados, tal como são apresentados nestas quatro páginas, poderão ser modificados e melhorados de diversas formas noutro local: <itemizedlist>
+                 <listitem
+><para
+>com a <ulink url="help:/digikam/using-camera.html"
+>interface da máquina fotográfica</ulink
+></para
+></listitem>
+                 <listitem
+><para
+>o <ulink url="help:/kipi-plugins/metadataeditor.html"
+>editor de meta-dados</ulink
+></para
+></listitem>
+                 <listitem
+><para
+>o <ulink url="help:/kipi-plugins/geolocalization.html"
+>localizador de GPS</ulink
+></para
+></listitem>
+                 <listitem
+><para
+>a <ulink url="help:/menu-descriptions#synchronize-metadata"
+>cópia</ulink
+> dos meta-dados da base de dados para os ficheiros</para
+></listitem>
+                 <listitem
+><para
+>a <ulink url="help:/menu-descriptions#update-db-metadata"
+>cópia</ulink
+> dos meta-dados do ficheiro para a base de dados</para
+></listitem>
+             </itemizedlist>
+           </para>
+
+           <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadata.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>As Páginas de Meta-Dados</phrase
+></textobject
+></inlinemediaobject>
+           </para>
+
+           <sect3 id="using-sidebarmetadataexif">
+           <title
+>Marcas de EXIF</title>
+
+                <anchor id="kexif.anchor"/>
+
+                <sect4>
+                <title
+>O que é o EXIF?</title>
+
+                    <para
+>O EXIF significa <ulink url="https://en.wikipedia.org/wiki/Exif"
+>EXtended Interchange Format</ulink
+>. Foi desenhado especificamente para as máquinas fotográficas digitais. Permite guardar uma grande quantidade de informação acerca da fotografia a guardar. Esta informação descreve a máquina que tirou a fotografia, bem como a sua configuração (incluindo a data e hora) usada na altura da tiragem da fotografia. Poderá ser incluída uma miniatura incorporada. </para>
+
+                    <para
+>O formato EXIF contém um conjunto de secções de marcação chamadas de <emphasis
+>Pastas de Ficheiros de Imagem</emphasis
+> (IFD). As secções que poderão ser encontradas num ficheiro EXIF normal são as seguintes: <itemizedlist>
+
+                        <listitem
+><para
+><guilabel
+>Informação da Imagem</guilabel
+>: contém informações gerais acerca da imagem. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Miniatura Incorporada</guilabel
+>: contém informações acerca da imagem em miniatura incorporada. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Informação da Fotografia</guilabel
+>: contém informações extendidas acerca da fotografia. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Interoperabilidade</guilabel
+>: contém informações para suportar a interoperabilidade entre as diferentes implementações do EXIF. </para
+></listitem>
+
+                    </itemizedlist>
+
+                    </para>
+
+                </sect4>
+
+                <sect4>
+                <title
+>Como Usar o Visualizador de EXIF?</title>
+
+                    <para
+>Poderá rever a informação do EXIF incorporada para a imagem seleccionada, na primeira página da barra lateral. O Visualizador de EXIF é meramente informativo: nada do que fizer aqui irá provocar qualquer alteração nas secções do EXIF. Se existirem mais itens do que espaço disponível, basta deslocar-se com a roda do rato. </para>
+
+                    <para
+>Poderá usar dois níveis diferentes para mostrar as secções de marcações EXIF: <itemizedlist>
+
+                        <listitem
+><para
+><guilabel
+>Simples</guilabel
+>: mostra apenas as marcações EXIF mais importantes para as fotografias. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Completa</guilabel
+>: mostra todas as marcações de EXIF. </para
+></listitem>
+
+                    </itemizedlist>
+
+                    </para>
+
+                    <para
+>Alguns fabricantes adicionam secções extra do EXIF, como a Canon, a Fujifilm, a Nikon, a Minolta e a Sigma. Estas secções contêm as notas específicas do fabricante e do modelo. Estas serão apresentadas na secção das<guilabel
+>Notas do Fabricante</guilabel
+>. </para>
+
+                </sect4>
+
+           </sect3>
+
+           <sect3 id="using-sidebarmetadatamakernote">
+           <title
+>Marcas de Notas do Fabricante</title>
+
+                <sect4>
+                <title
+>O Que São as Notas do Fabricante?</title>
+
+                    <para
+>A norma EXIF define uma marca de Notas do Fabricante, que permite aos fabricantes das máquinas colocarem quaisquer meta-dados personalizados no ficheiro. Isto vai sendo cada vez mais usado pelos fabricantes das máquinas, por forma a guardar uma grande quantidade de configurações da máquina que não constam da norma EXIF, como os modos de disparo, a configuração do pós-processamento, o número de série, os modos de focagem, &etc;. Este formato de marcas é proprietário e específico do fabricante. </para>
+
+                </sect4>
+
+                <sect4>
+                <title
+>Como Usar o Visualizador de Notas do Fabricante</title>
+
+                    <para
+>Poderá rever as informações incorporadas das Notas do Fabricante para a imagem seleccionada, a partir da primeira página da barra lateral. O Visualizador de Notas do Fabricante é meramente informativo: nada do que fizer com ele irá provocar qualquer alteração nas secções de Notas do Fabricante. </para>
+
+                    <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadatamakernote.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>O Visualizador de Notas do Fabricante em Acção</phrase
+></textobject
+></inlinemediaobject>
+                    </para>
+
+                </sect4>
+
+           </sect3>
+
+           <sect3 id="using-sidebarmetadataiptc">
+           <title
+>Marcas de IPTC</title>
+
+                <sect4>
+                <title
+>O que é o IPTC?</title>
+
+                    <para
+>O <ulink url="http://www.iptc.org"
+>International Press Telecommunications Council</ulink
+> é um consórcio das maiores agências de notícias informativas e fornecedores das indústrias noticiosas. Desenvolve e mantém normas técnicas para a troca melhorada de notícias que é usada por praticamente todas as organizações noticiosas em todo o mundo. </para>
+
+                    <para
+>O IPTC estabeleceu-se em 1965 com um grupo de organizações noticiosas para salvaguardar os interesses de telecomunicações da imprensa mundial. Desde o fim dos anos 70, as actividades do IPTC focaram-se principalmente no desenvolvimento e publicação de normas industriais para o intercâmbio de dados noticiosos. </para>
+
+                    <para
+>Em particular, o IPTC definiu um conjunto de atributos de meta-dados que poderão ser aplicados às imagens. Estes foram definidos originalmente em 1979, e foram bastante revistos em 1991 para serem o "Modelo de Intercâmbio de Informação" (IIM), se bem que o conceito avançou realmente em 1994, quando a Adobe definiu uma especificação para incorporar de facto os meta-dados nos ficheiros de imagens digitais - conhecidos como "cabeçalhos de IPTC". </para>
+
+                </sect4>
+
+                <sect4>
+                <title
+>Como Usar o Visualizador do IPTC</title>
+
+                    <para
+>Poderá rever as informações incorporadas do IPTC para a imagem seleccionada, a partir da primeira página da barra lateral. O Visualizador do IPTC é meramente informativo: nada do que fizer com ele irá provocar qualquer alteração nas secções do IPTC. </para>
+
+                    <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadataiptc.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>O Visualizador do IPTC em Acção</phrase
+></textobject
+></inlinemediaobject>
+                    </para>
+
+                </sect4>
+
+           </sect3>
+
+         </sect2>
+
+        <sect2 id="using-sidebarcolors"
+>            <title
+>Cores</title>
+           <para
+>A barra lateral de cores têm duas sub-páginas <guilabel
+>Perfil de Cores e ICC</guilabel
+>. Aqui estão mais detalhes acerca da <link linkend="using-iccprofile"
+>Gestão de Cores</link
+> </para>
+
+            <sect3 id="using-histogramviewer">
+            <title
+>Visualizador do Histograma</title>
+            
+                <anchor id="histogramviewer.anchor"/>
+            
+                <para
+>O histograma de uma imagem mostra a quantidade de cada cor presente, bem como as suas diferentes amplitudes dentro da imagem. Se a sua fotografia tiver uma mudança de cor, poderá ver o que se passa de errado, olhando para o histograma para esse fim. </para>
+            
+                <para
+>O Visualizador do Histograma mostra a distribuição estatística dos valores de cores na imagem actual. É meramente informativo: nada do que aqui fizer irá provocar qualquer alteração à imagem. Se quiser efectuar uma correcção de cores com base no histograma, use o 'plugin' de Ajuste dos Níveis ou das Curvas do Editor de Imagens. </para>
+                                                
+                <example
+>   <title
+>O Visualizador do Histograma em Acção</title>
+                    <screenshot
+><screeninfo
+>O Visualizador do Histograma em Acção</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarcolorshistogramviewer.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+                </example>
+            
+                <para
+>Uma imagem poderá ser decomposta em canais de cores <guilabel
+>Vermelho</guilabel
+>, <guilabel
+>Verde</guilabel
+>, <guilabel
+>Azul</guilabel
+>, <guilabel
+>Alfa</guilabel
+>. O canal <guilabel
+>Alfa</guilabel
+> é uma camada na imagem que suporta a transparência (como nas imagens PNG ou &GIF;). Cada canal suporta uma gama de valores de intensidade de 0 a 255 (valores inteiros). Como tal, um ponto preto é codificado como 0 em todos os canais de cores, enquanto um ponto branco corresponderá a 255 em todos os canais de cores. Um ponto transparente está codificado como 0 no canal 'alfa', enquanto um opaco está codificado como 255. </para>
+            
+                <para
+>O Visualizador do Histograma permite-lhe ver cada um dos canais em separado: <itemizedlist>
+            
+                    <listitem
+><para
+><guilabel
+>Luminosidade</guilabel
+>: mostra a distribuição dos valores de brilho. </para
+></listitem>
+
+                    <listitem
+><para
+><guilabel
+>Vermelho</guilabel
+>, <guilabel
+>Verde</guilabel
+>, <guilabel
+>Azul</guilabel
+>: mostra a distribuição dos níveis de intensidade para os canais Vermelho, Verde e Azul, respectivamente. </para
+></listitem>
+                
+                    <listitem
+><para
+><guilabel
+>Alfa</guilabel
+>: mostra a distribuição dos níveis de opacidade. Se a camada for completamente opaca ou transparente, o histograma irá consistir numa única barra à esquerda ou à direita. </para
+></listitem>
+
+                    <listitem
+><para
+><guilabel
+>Cores</guilabel
+>: mostra os histogramas do <guilabel
+>Vermelho</guilabel
+>, <guilabel
+>Verde</guilabel
+> e <guilabel
+>Azul</guilabel
+> sobrepostos, para que possa ver a informação da distribuição de todas as cores numa única vista. </para
+></listitem>
+                            
+                </itemizedlist>
+            
+                </para>
+            
+                <para
+>Com a opção <guilabel
+>Escala</guilabel
+>, poderá determinar se o histograma será apresentado com um eixo dos Y linear ou logarítmico. Para as imagens tiradas com uma máquina digital, o modo <guilabel
+>Linear</guilabel
+> será normalmente o mais útil. Contudo, para as imagens que contenham áreas substanciais de cores constantes, um histograma <guilabel
+>Linear</guilabel
+> será normalmente dominado por uma barra única. Nesse caso, o histograma <guilabel
+>Logarítmico</guilabel
+> será mais útil. </para>
+
+                <para
+>Poderá restringir a análise do campo de <guilabel
+>Estatísticas</guilabel
+>, no fundo da janela, para uma gama de valores limitada se o desejar. Poderá definir a gama de uma de duas formas: <itemizedlist>
+            
+                    <listitem
+><para
+>Carregue e arraste o cursor pela área de visualização do histograma, desde o nível inferior até ao superior da gama que desejar. </para
+></listitem>
+
+                    <listitem
+><para
+>Use os campos incrementais por baixo da área do histograma. O item da esquerda é o valor inferior e o da direita o superior. </para
+></listitem>
+            
+                </itemizedlist>
+                            
+                </para
+> 
+            
+                <para
+>As estatísticas apresentadas no fundo do Visualizador do Histograma descrevem a distribuição dos valores dos canais restrita ao intervalo seleccionado. Estes são: <itemizedlist>
+            
+                    <listitem
+><para
+>O número de pontos na imagem. </para
+></listitem>
+
+                    <listitem
+><para
+>O número de pontos cujos valores caem dentro do intervalo seleccionado. </para
+></listitem>
+
+                    <listitem
+><para
+>A média. </para
+></listitem>
+
+                    <listitem
+><para
+>O desvio-padrão. </para
+></listitem>
+            
+                    <listitem
+><para
+>A mediana da secção seleccionada no histograma. </para
+></listitem>
+
+                    <listitem
+><para
+>A percentagem dos valores que caem dentro do intervalo seleccionado. </para
+></listitem
+>      
+                                                      
+                    <listitem
+><para
+>A profundidade de cor da imagem. </para
+></listitem>
+
+                    <listitem
+><para
+>O canal alfa na imagem. </para
+></listitem>
+
+                    <listitem
+><para
+>A origem do histograma, que pode ser <guilabel
+>Imagem Completa</guilabel
+> ou <guilabel
+>Região da Imagem</guilabel
+>, caso tenha seleccionado uma área da imagem no editor. </para
+></listitem>
+
+                </itemizedlist>
+
+                </para>
+        
+            </sect3>
+
+            <sect3 id="using-usinghistogram">
+            <title
+>Como Usar um Histograma</title>
+                
+                <para
+>Os histogramas são um meio gráfico de verificar a precisão de uma imagem apresentada no ecrã. O gráfico representa as três regiões de brilho da fotografia: <itemizedlist
+> <listitem
+><para
+> (1) : os tons-sombra à esquerda. </para
+></listitem
+> <listitem
+><para
+> (2) : os meios-tons no centro. </para
+></listitem
+> <listitem
+><para
+> (3) : os tons claros à direita. </para
+></listitem
+> </itemizedlist
+> <example
+> <title
+>O Histograma de uma Imagem no Modo com Todas as Cores</title
+> <screenshot
+><screeninfo
+>O Histograma de uma Imagem no Modo com Todas as Cores</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramdescription.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example
+> A distribuição do gráfico, onde estão representados os picos e os baixos-relevos, indica se a imagem é demasiado escura, clara ou bem balanceada. </para>
+        
+                <para
+>Com uma fotografia sub-exposta, o histograma terá uma distribuição de brilho que tende a estar mais à esquerda no gráfico.<example
+> <title
+>Uma Fotografia Sub-Exposta</title
+> <screenshot
+><screeninfo
+>Uma Fotografia Sub-Exposta</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramsample1.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example
+> Com uma fotografia sobre-exposta, o histograma irá ter uma distribuição de brilho que será mais proeminente perto da direita do gráfico. <example
+> <title
+>Uma Fotografia Exposta Correctamente</title
+> <screenshot
+><screeninfo
+>Uma Fotografia Sobre-Exposta</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramsample3.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example
+> Com uma fotografia exposta correctamente, o histograma terá o relevo a mostrar o brilho distribuído mais ao centro no gráfico. <example
+>   <title
+>Uma Fotografia Exposta Correctamente</title>
+                    <screenshot
+><screeninfo
+>Uma Fotografia Exposta Correctamente</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramsample2.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+                </example>
+                
+                </para>
+
+                <para
+>Importante: nem todas as fotografias têm de exibir este relevo na parte central do seu histograma. Depende muito do assunto da fotografia. Em alguns casos, poderá ser apropriado ao histograma mostrar um pico num extremo, no outro ou em ambos. </para>
+                        
+                <para
+>O histograma é uma forma fiável de decidir se uma fotografia está exposta correctamente ou não. Se o histograma apresentar uma sobre-exposição ou uma sub-exposição, deverá usar uma <link linkend="exposure-correct"
+>Ferramenta de Correcção da Exposição</link
+> para corrigir a fotografia. </para>
+                
+            </sect3>
+ 
+        </sect2>
+
+                    
+        <sect2 id="using-sidebargeolocation"
+>       <title
+>A Página de Geo-Localização</title>
+
+    <para
+>Esta página baseia-se no elemento do Marble para mostrar um mapa de orientação. Poderá ampliar e reduzir, com a deslocação da roda do rato ou ao carregar nesta e arrastá-la. Posicione-se, mantendo carregado o botão esquerdo do rato.</para>
+                <example
+>   <title
+>A página de Geo-Localização</title>
+                    <screenshot
+><screeninfo
+>Para mapas de maior resolução, escolha "Mais Informações"</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadatagps.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+                </example>
+        <para
+>A barra lateral esquerda é uma ferramenta de geo-localização. Carregue com <keycombo action="press"
+>&Ctrl;<keycap
+>botão esquerdo do rato</keycap
+></keycombo
+> para desenhar um quadrado. Todas as imagens que caiam nas coordenadas desse quadrado serão filtradas e apresentadas (desde que as suas imagens tenham sido geo-referenciadas, como é óbvio). </para>
+    <para
+>Na barra lateral da direita, irá encontrar uma cruz que indica a localização GPS e o nome da imagem seleccionada a seguir a ela. As coordenadas do GPS e a informação da data são mostradas por baixo do elemento. </para>
+    <para
+>Para os mapas de maior resolução, escolha o botão <guibutton
+>Mais Informação</guibutton
+> para abrir o serviço detalhado de mapas (escolha antes na área à esquerda) num navegador Internet.</para>
+    <para
+>Os dados de posicionamento apresentados estão de facto guardados nas marcas EXIF da imagem (e ainda não na base de dados). Isto permite ler a localização a partir qualquer outra aplicação que consiga compreender os dados de GPS do EXIF.</para>
+
+                 <sect3
+>                <title
+>O que é o GPS?</title>
+
+                    <para
+>O sistema <ulink url="http://en.wikipedia.org/wiki/Global_Positioning_System"
+>Global Positioning System</ulink
+>, normalmente chamado de GPS, é o único sistema de navegação por satélite completamente funcional. Uma constelação com mais de duas dúzias de satélites GPS transmitem sinais de temporização precisos por rádio, permitindo a qualquer receptor de GPS determinar com precisão a sua localização (longitude, latitude e altitude) em qualquer ponto da Terra. O GPS também fornece uma referência temporal extremamente precisa e um indicador de velocidade com um grau bastante grande de precisão. </para>
+                    <para
+>A informação do GPS poderá ser guardada directamente nas imagens pelas máquinas que o suportem ou através da sincronização das fotografias com um trajecto de um dispositivo GPS. Veja esta <ulink url="help:/digikam/using-camera.html#using-gps"
+>secção</ulink
+> para obter mais informações. </para>
+                </sect3>
+
+    </sect2>
+
+        <sect2 id="using-sidebarcommentstags">
+        <title
+>Comentários &amp; Marcas</title>
+           <para
+>Esta barra lateral serve para aplicar e editar os atributos da imagem, como os comentários, a classificação, a data e as marcas. Todos os atributos são guardados na base de dados associada. As marcas também são gravadas nos campos de dados do IPTC e EXIF e tornam-se parte da imagem. Todos os atributos estão acessíveis numa área da barra lateral, como aparece na imagem abaixo. Durante a leitura da imagem, a ordem de prioridade é a) a base de dados b) o IPTC e c) o EXIF. Por isso, se existir uma discrepância entre alguns deles, será esta a prioridade em efeito e a sincronização tomará lugar. Esta barra lateral tem um campo de navegação primeiro-anterior-seguinte-último, no topo, se for mostrado na aplicação principal. </para>
+
+           <example
+>  <title
+>Exemplo de Comentários &amp; Marcas na Barra Lateral</title>
+                 <screenshot
+><screeninfo
+>Exemplo de Comentários &amp; Marcas na Barra Lateral</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarcommentstags.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+
+          <sect3>
+          <title
+>Área do Comentário</title>
+           <para
+>A área do título poderá ser usada para escrever ou colar um título de tamanho ilimitado (ver a nota abaixo). O texto é compatível com o UTF-8, o que significa que todos os caracteres especiais são permitidos. Os comentários são copiados para os campos de comentários do EXIF e do IPTC para ser usados noutras aplicações. </para>
+           <caution
+><para
+>Os dados do IPTC só suportam caracteres ASCII e 2000 caracteres no máximo (a norma Americana antiga). Todos os comentários serão delimitados ao fim de 2000 caracteres e os caracteres especiais serão considerados inválidos. Se pretender usar o campo do título do IPTC noutras aplicações, deverá ser compatível com estas restrições. </para
+></caution>
+    <para
+>Depois de comentar, poderá escolher o botão <guibutton
+>Aplicar</guibutton
+> ou passar para a imagem seguinte; nesse caso, serão guardados os títulos.</para>
+    <para
+>A seguir ao botão Aplicar, existe o botão <guibutton
+>Mais</guibutton
+>. Nele, poderá optar por ler os meta-dados do ficheiro seleccionado para a base de dados; ou, no sentido inverso, gravar os meta-dados nos ficheiros (o último caso acontece sempre, se escolheu uma configuração de meta-dados em que os mesmos sejam guardados sempre nas imagens).</para>
+
+          </sect3>
+
+          <sect3>
+          <title
+>Data &amp; Hora</title>
+
+           <para
+>Na secção de Data &amp; Hora, que reflecte a hora em que a fotografia foi tirada, poderá alterar todos os valores. Na lista de datas, aparecerá um calendário, e poderá definir a hora se a escrever directamente. A data é copiada para o campo 'Data e Hora' do EXIF. Se necessitar de alterar a data &amp; hora de um conjunto de imagens, existe um método mais confortável (que necessita dos 'plugins' do KIPI). Esta última opção pode ser encontrada em <menuchoice
+><guimenuitem
+>Imagem</guimenuitem
+><guimenuitem
+>Ajustar a hora &amp; data...</guimenuitem
+></menuchoice
+>. Seleccione as imagens a alterar na área principal e invoque o 'plugin'. </para>
+          </sect3>
+
+          <sect3>
+          <title
+>Classificação</title>
+
+           <para
+>A secção de Classificação mostra um esquema de classificação de 0...5 estrelas, que poderá ser usado nas pesquisas e nos critérios de ordenação. Poderá ser aplicado com um único 'click' do rato ou com os atalhos de teclado Ctrl+0...5.  A classificação da barra lateral ´e sempre aplicada numa imagem de cada vez. Para classificar um conjunto de imagens, seleccione-as e abra o menu de contexto (com o botão direito) para aplicar uma classificação comum. </para>
+           <para
+>A classificação é então transcrita para o campo de dados de 'urgência' do IPTC. A codificação segue o esquema desta tabela: </para>
+
+              <informaltable
+><tgroup cols="2">
+                <thead
+><row>
+                    <entry
+>Classificação do &digikam;</entry>
+                    <entry
+>Urgência do IPTC</entry>
+                    </row
+></thead>
+
+                    <tbody>
+                        <row
+>   <entry
+>-</entry
+>         <entry
+>8</entry
+>      </row>
+
+                        <row
+>   <entry
+>*</entry
+>         <entry
+>7</entry
+>      </row>
+
+                        <row
+>   <entry
+>*</entry
+>         <entry
+>6</entry
+>      </row>
+
+                        <row
+>   <entry
+>**</entry
+>        <entry
+>5</entry
+>      </row>
+
+                        <row
+>   <entry
+>***</entry
+>       <entry
+>4</entry
+>      </row>
+
+                        <row
+>   <entry
+>****</entry
+>      <entry
+>3</entry
+>      </row>
+
+                        <row
+>   <entry
+>****</entry
+>      <entry
+>2</entry
+>      </row>
+
+                        <row
+>   <entry
+>*****</entry
+>     <entry
+>1</entry
+>      </row>
+                     </tbody>
+
+              </tgroup
+></informaltable>
+
+          </sect3>
+
+          <sect3>
+          <title
+>Árvore de Marcas</title>
+
+           <para
+>A área de marcas mostra um filtro de marcas adaptativo, a árvore de marcas e uma lista que contém as marcas aplicadas anteriormente nesta sessão do &digikam;. </para>
+           <para
+>A área de marcas será adaptada de forma dinâmica em função da palavra de procura, à medida que vai escrevendo no campo. Deste modo, é simples reduzir rapidamente o número de possibilidades, ao procurar por uma dada marca. Obviamente, esta funcionalidade só é útil se tiver muitas marcas. </para>
+
+           <para
+>A lista no fundo é outra funcionalidade ergonómica para marcar facilmente uma série de imagens. À medida que vai aplicando marcas diferentes, estas vão sendo memorizadas neste campo, para um acesso mais rápido. </para>
+
+           <para
+>Caso contrário, as marcas são simplesmente aplicadas, assinalando os campos respectivos na árvore. Todas as marcas de uma imagem estão transcritas para o campo de dados 'palavra-chave' do IPTC. </para>
+           <note
+><para
+>No caso de ter seleccionado um conjunto de imagens na área principal e de ter assinalado uma marca na árvore de marcas, esta é só aplicada na imagem seleccionada, e não a toda a selecção. Se quiser marcar as selecções, veja na secção de <link linkend="using-sidebartagfilters"
+>Filtros de Marcas</link
+>. </para
+></note>
+
+          </sect3>
+
+        </sect2>
+
+
+        <sect2 id="using-sidebartagfilters">
+        <title
+>Filtros de Marcas</title>
+           <para
+>A barra lateral do filtro de marcas é usada para modificar o conjunto de imagens que aparece na janela principal. Normalmente, é usada a barra lateral esquerda com a sua vista de Álbum, Data, Marca e Procura. Quando for assinalada uma ou mais marcas no filtro de marcas da barra lateral, apenas o cruzamento dessas selecções será mostrado. Todas as marcas criadas estão disponíveis. </para>
+           <para
+>Para dar um exemplo, imagine que tem uma marca chamada 'público' que marca todas as imagens excepto as suas imagens privadas. Depois, poderá assinalar esta marca 'público' na barra lateral, de modo a esconder as imagens privadas (todas as que não têm a marca 'público'). Seja qual for o modo de visualização que escolher na barra lateral esquerda, só aparecerão as imagens 'público'. Outro exemplo típico é a selecção de um sub-conjunto de marcas numa árvore hierárquica. Imagine que quer mostrar o 'vermelho' e o 'verde' de uma árvore de marcas que contenha 7 cores diferentes como sub-marcas. Basta carregar na marca de 'cor' da janela principal e assinalar o 'vermelho' e o 'verde' da barra lateral direita. </para>
+           <para
+>Outra utilização é a <emphasis
+>marcação por 'drag-and-drop'</emphasis
+>. Imagine que seleccionou na janela principal um conjunto de imagens para as marcar. Se a marca já existir, basta arrastá-la da barra lateral direita para a selecção (qualquer uma das imagens seleccionadas). Irá aparecer uma janela a perguntar se esta marca deverá ser aplicada. </para>
+
+           <para>
+                 <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebartagfilters.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>Filtros de Marcas da Barra Lateral</phrase
+></textobject
+></inlinemediaobject>
+           </para>
+
+            <para
+>No exemplo acima, a janela principal mostra as imagens numa data do calendário, o filtro de marcas está como 'não marcado', o que reduz o conjunto a 3 imagens. Estas foram seleccionadas com o Ctrl+A, e poderá arrastar uma marca da árvore de marcas da direita e largá-la a seguir. Irá aparecer uma janela a perguntar se deverá aplicar a marca. </para>
+
+        </sect2>
+
+    </sect1>
+

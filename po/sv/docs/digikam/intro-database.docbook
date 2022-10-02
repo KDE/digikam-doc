@@ -1,0 +1,58 @@
+<sect1 id="intro-database">
+    <title
+>Databasen i &digikam;</title>
+
+    <sect2 id="intro-database-intro">
+        <title
+>Inledning</title>
+
+        <para
+>Alla känner till databaser, som används för att lagra data. Som alla andra program för hantering av fotografier, använder &digikam; också databaser av några uppenbara orsaker som att undvika duplicering av data, reducera dataredundans och uppnå större dataintegritet. Dessutom reduceras kostnaden för datainmatning, lagring och hämtning drastiskt. Förutom detta, kan vilken användare som helst komma åt data genom att använda frågespråk. </para>
+
+        <para
+>När det gäller &digikam; i synnerhet, lagras album, albumrötter, etiketter, miniatyrbilder, data för ansiktsigenkänning, bildernas metadata, filsökvägar, inställningar, etc. alla i olika databasfiler. </para>
+
+        <para
+>&digikam; hanterar i själva verket mer än en databas. Av bekvämlighetsskäl är de i stort sett kategoriserade som tre: <orderedlist>
+
+                <listitem
+><para
+>Huvuddatabas för alla samlingsegenskaper, dvs. den innehåller alla album, bilder och sökdata. </para
+></listitem>
+
+                <listitem
+><para
+>Miniatyrbildsdatabas för komprimerade miniatyrbilder, dvs. för att innehålla bildernas miniatyrbilder som wavelet-komprimerade bilder (PGF-format). </para
+></listitem>
+
+                <listitem
+><para
+>Ansiktsdatabas för att lagra metadata för ansiktsigenkänning, dvs. för att innehålla ansiktshistogram för ansiktsigenkänning. </para
+></listitem>
+
+            </orderedlist>
+
+        </para>
+
+    </sect2>
+
+    <sect2 id="intro-database-config">
+        <title
+>Teknisk bakgrund och inställning</title>
+
+        <para
+>All detaljinformation om databasinställningar ges i huvudsak i inställningsavsnittet om <link linkend="using-setup-database"
+>&digikam;s databaser</link
+>. </para>
+
+    </sect2>
+
+</sect1>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

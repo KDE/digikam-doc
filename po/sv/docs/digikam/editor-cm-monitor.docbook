@@ -1,0 +1,148 @@
+<sect2 id="editor-cm-monitor">
+    <title
+>Kalibrera och profilera bildskärmens RGB</title
+> 
+
+    <sect3>
+        <title
+>Om man väljer att enbart arbeta med färgsystemet sRGB, behöver man då kalibrera bildskärmen?</title>
+
+        <para
+>Ja! Vare sig du förblir inom tonomfånget som tillhandahålls av sRGB eller inte, behöver du en riktigt kalibrerad bildskärm eftersom sRGB antar att bildskärmen är kalibrerad för sRGB. Kalibreringen av bildskärmen sluter cirkeln. Om du arbetar inom tonomfånget som tillhandahålls av sRGB måste du kalibrera bildskärmen enligt sRGB-standarden (eller skapa och använda en riktig bildskärmsprofil, eller både och). </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Vad är konsekvenserna av att arbeta med en okalibrerad bildskärm?</title>
+
+        <para
+>Det finns flera möjliga konsekvenser, ingen av dem bra. Varje bildskärm, kalibrerad eller inte, har sin egen (okalibrerade) vitpunkt, uttryckt som en temperatur i grader Kelvin. Vitpunkten hos en bildskärm (kalibrerad eller inte) är färgen man ser när man tittar på en helvit yta av skärmen. Helt vitt är det när RGB värdena i bilden alla är lika med 255 (uttryckt med 8-bitars värden), såsom den enkla vita bakgrunden på en webbsida eller kontorsdokument. Man kan tro att "vitt är vitt", men om du kunde rada upp flera bildskärmar kalibrerade med olika vitpunkter, skulle du se att ju högre temperatur bildskärmens vitpunkt har, desto blåare ser skärmen ut i jämförelse med andra bildskärmar med lägre vitpunkter. Om du kan hitta inställningarna för din egen bildskärm, ändra temperaturen uppåt och neråt (kom ihåg att ställa tillbaka den till dess ursprungliga inställning när du är klar, om du inte bestämmer dig för att du vill ha en annan vitpunkt). Dina ögon, som snabbt anpassar sig till en konstant vitpunkt, märker enkelt att skärmen blir blåare eller gulare när du flyttar vitpunkten uppåt eller neråt. Om din okalibrerade bildskärm är för blå (ursprunglig vitpunkten i katodstråleskärmar är typiskt 9300 K, medan sRGB antar 6500 K), överkompenserar du när du redigerar bilder och skapar bilder som ser gulaktiga och för varma ut på en riktigt kalibrerad bildskärm. Omvänt, om bildskärmen är för gul eftersom färgtemperaturen är för lågt inställd (jag tror att LCD-skärmar har en ursprunglig vitpunkt omkring 5500 K), ser bilderna blåaktiga och för kalla ut på en riktigt kalibrerad bildskärm. </para>
+
+        <para
+>Att ställa in en lämplig vitpunkt är bara en del av bildskärmskalibreringen. Du måste också ha en lämplig svartpunkt, ljusstyrka (luminans), och gammafunktion (överföringsfunktion). Om bildskärmen är för mörk eftersom svartpunkten är för lågt inställd, överkompenserar du och skapar bilder som ser urblekta ut på en riktigt kalibrerad bildskärm. Omvänt, om bildskärmens svartpunkt är för högt inställd, ser dina bilder för mörka och mättade ut på en riktigt kalibrerad bildskärm. </para>
+
+        <para
+>Om ljusstyrkan eller kontrasten är för högt inställda, antar du att dina bilder har mycket större "genomslagskraft" än de verkligen har när de visas på en riktigt kalibrerad bildskärm. Dessutom får du ont i ögonen och LCD-skärmen bränns ut snabbare. </para>
+
+        <para
+>Om bildskärmens gamma är felaktigt inställt, kommer färgtonsvariationen från mörk till ljus att vara oriktig. Det vill säga att skuggor eller dagrar kan bli överdrivet komprimerade eller expanderade, vilket leder till att man kompenserar i motsatt riktning. Vid visning på en riktigt kalibrerad bildskärm kan skuggorna vara för ljusa eller mörka (eller dagrarna för mörka eller ljusa), medan resten av bilden lider av överdriven komprimering av färgtoner. Och Gud hjälpe dig om de interna R-, G- och B-kanonerna (eller motsvarigheten på en LCD-skärm) är felaktigt inställda, eftersom de resulterande färgskiftningarna (för mycket grönt, för mycket magenta, för mycket orange, etc.) du oundvikligen skapar genom att "korrigera" bilden vid redigering, är mycket uppenbara när den visas på en riktigt kalibrerad bildskärm. </para>
+
+        <para
+>Vare sig bildskärmen är riktigt kalibrerad eller inte, kanske du blir förvånad över resultatet av en jämförelse mellan en bild som du redigerat på din bildskärm hemma med samma bild på andra bildskärmar i huset eller hos vänners eller grannars bildskärmar. Vi var definitivt det: Vi har två Sony Trinitron bildskärmar hemma, en med en felaktig (för stark) grön kanon och en med en felaktig (för stark) blå kanon. Alla bilder redigerade på någon av bildskärmarna såg helt felaktiga ut på den andra bildskärmen, till vi köpte en spektrofotometer för att kalibrera och profilera båda bildskärmarna. Tyvärr kan inte någon av de båda bildskärmarna längre kalibreras så att de visar en riktig svartpunkt, så vi använder dem inte längre för bildredigering: poängen är att ytterligare en fördel med en spektrofotometer är att man vet när det är dags att ersätta bildskärmen. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Betydelsen av "svartpunkt" och "ljusstyrka" verkar ganska klar, men vad betyder "gamma"?</title>
+
+        <para
+>Se <ulink url="https://sv.wikipedia.org/wiki/Gammakurva"
+>följande Wikipedia-artikel</ulink
+> för en översikt av rollen som spelas av gamma för bildskärmar och fotografering. Länkarna längst ner i motsvarade engelska artikel är utmärkta källor till ytterligare information. I Wikipedia står det: "Gammakomprimering, också känt som gammakodning, används för att koda linjära luminansvärden eller RGB-värden till videosignaler eller värden i digitala videofiler. Gammaexpansion är den omvända processen, eller avkodningsprocessen ... Gammakodning hjälper till att avbilda data (både analogt och digitalt) på en mer perceptuellt likformig domän." Ja, jag vet, klart som korvspad. Läs Wikipedia-artikeln och titta på bilderna. Till sist klarnar det nog. Om du går in på djupet i bildredigering och färghantering måste du till sist ta beslut om vilket gammavärde (eller annan kodnings- och avkodningsfunktion) du ska välja när du kalibrerar bildskärmen, profilerar digitalkameran, och väljer arbetsfärgsystem. Om du är tveksam (för de som bara vill veta vilken knapp man ska trycka på), är gamma = 2,2 ett ofta använt värde, både vid kalibrering av bildskärmar och arbetsfärgsystem. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Vad är skillnaden mellan att kalibrera en bildskärm och att profilera den?</title>
+
+        <para
+>När de först hör talas om färghantering, blir många förbryllade av skillnaden mellan kalibrering och profilering av en bildskärm (jag var definitivt det). Ett citat ur Hal Engels utmärkta resonemang från &digikam;s användarforum: </para>
+
+        <blockquote
+><para
+>Kalibrering är en process då en enhet bringas till något definierat tillstånd genom att justera inställningar eller någon annan fysisk metod. Exempelvis omfattar kalibreringen av en bildskärm justering av dess vitpunkt, svartnivå, ljusstyrka och gamma till fördefinierade eller standardvärden med bildskärmens knappar och genom att ändra videokortets gammafunktion ... I motsats till kalibrering, är processen då en profil skapas en karakterisering av enheten som inte omfattar några ändringar eller justeringar av enheten. Istället är det en mätprocess som resulterar i en fil som innehåller en precis matematisk beskrivning av enhetens färg- och tonomfångskarakteristik. Filen är en ICC-profil. Denna karakteristik innehåller överföringsfunktionen från enhetens färgrymd till en standardiserad absolut färgrymd (den kallas en färgprofilrymd, PCS, i en ICC-profil), enhetens vitpunkt, svartpunkt, primärfärger och annan information. Bildskärmar karakteriseras (profileras) normalt i sitt kalibrerade tillstånd. Som sammanfattning, kalibrering gör ändringar av enheten för att ändra karakteristiken för dess färgreproduktion så att den överensstämmer med något fördefinierat tillstånd. Profilering eller karakterisering är en mätprocess som resulterar i en detaljerad beskrivning av karakteristiken (normalt kalibrerad) för enhetens färgreproduktion (citat <ulink url="http://digikam.1695700.n4.nabble.com/Re-Color-Managed-View-How-td1739136.html#a14160285"
+>härifrån</ulink
+>). </para
+></blockquote>
+
+        <para
+>Att kalibrera bildskärmen är egentligen inte tekniskt en del av färghantering, men uppenbarligen är en riktigt kalibrerad och/eller profilerad bildskärm en nödvändighet för ett färghanterat arbetsflöde. Den här handledningen täcker inte det viktiga ämnet hur en bildskärm kalibreras och profileras. Dokumentationen för <ulink url="http://www.argyllcms.com/"
+>ArgyllCMS</ulink
+> och <ulink url="http://lprof.sourceforge.net/"
+>LProf</ulink
+> är mycket bra och starkt rekommenderad läsning. För att använda någon av dessa programvaror till kalibrering och/eller profilering av en bildskärm, behöver du en spektrofotometer. En spektrofotometer (ibland kallad en "spindel") är en enhet för att mäta RGB-värdena hos färgytor projicerade på bildskärmen av programvara som Argyll och LProf. Argylls webbsida tillhandahåller en aktuell lista med spektrofotometrar som stöds. Jag tror att LProf kan använda alla spektrofotometrar som Argyll kan, eftersom de två programmen delar på relevanta kodavsnitt. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Kan man kalibrera en bildskärm utan en spektrofotometer? </title>
+
+        <para
+>Det finns diverse metoder angivna på Internet hur man kalibrerar en bildskärm utan att använda en spektrofotometer. Dessa metoder baserade på "ögonmått" är bättre än att inte kalibrera bildskärmen alls, och kan skapa riktigt användbara resultat beroende på ditt ögonmått och bildskärm. Men ögonmått är inte en ersättning för en riktigt kalibrerad och profilerad bildskärm. I själva verket är det inte svårt att kalibrera och profilera en bildskärm med en spektrofotometer, även om det kan verka skrämmande från början. Spektrofotometrar kan erhållas för en bra bit under 2000 kr (om du väljer en dyrare modell, försäkra dig om att du betalar för bättre hårdvara, istället för tillverkarens programvara med fler funktioner som inte fungerar på Linux). Argylls och/eller LProfs dokumentation leder dig genom processen för kalibrering och profilering av bildskärmen, utan att du behöver lära dig mycket färghanteringsteori. Och om eller när du lärt dig tillräckligt om färghantering för att inse att du vill ha eller behöver en mer detaljerad bildskärmsprofil av en viss typ, för ett visst syfte, har dessa två programvaror alla avancerade funktioner man någonsin kan önska sig. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Med antagandet att jag har bestämt mig för att enbart arbeta med färgsystemet sRGB, vilka "knappar" ska jag trycka på i &digikam; efter att jag har kalibrerat min bildskärm? </title>
+
+        <para
+>Om bildskärmen är kalibrerat till sRGB-standard och du enbart arbetar i färgsystemet sRGB, kan du inaktivera färghantering i Digikam. Du behöver inte tala om för &digikam; vilken bildskärmsprofil som ska användas, eftersom &digikam; normalt använder färgsystemet sRGB som färgsystem för bildskärmen. Du behöver inte heller tala om för &digikam; att använda ett färghanterat arbetsflöde, eftersom &digikam; normalt använder sRGB för kamera, skrivare och arbetsrymd, precis som föreslogs av HP och MS redan 1996. </para>
+
+        <para
+>Men om du vill ta de första stegen mot ett färghanterat arbetsflöde, titta på <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>motsvarande inställningssida</ulink
+>, aktivera färghantering och välj sRGB som bildskärmsprofil, kameraprofil, arbetsrymdsprofil och skrivarprofil. Om du dessutom har använt Argyll eller LProf för att skapa en bildskärmsprofil efter kalibrering av bildskärmen, exempelvis kallad "min_bildskärmsprofil.icc", tala då om för &digikam; att använda bildskärmsprofilen "min_bildskärmsprofil.icc" istället för sRGB. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Var finns alla ICC-profiler lagrade på min dator?</title>
+
+        <para
+>Ja, detta är &Linux;, och då beror det på var du lagrade dem. Jag lagrar alla mina ICC-profiler i katalogen /usr/share/color/icc, som är stället som för närvarande kommer närmast en standardplats för ICC-profiler i Linux. Om du använder den här katalogen för dina ICC-profiler, måste du troligen ändra katalogens rättigheter för att tillåta användare läs- och skrivåtkomst. Därefter talar du bara om för &digikam; <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>var dina profiler finns</ulink
+>. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Spelar ljussättningen och vägg-, tak-, gardin-, eller möbelfärger i närheten av bildskärmen någon roll?</title>
+
+        <para
+>Ja! Bra ljussättning är en förutsättning för riktig bildredigering och för att jämföra papperskopior med bilden på skärmen. Om ljussättningen nära arbetsstationen är för stark, ser färger på bildskärmen för mörka ut, och tvärtom. Om ljuset från armaturerna i arbetsrummet har ett lågt färgåtergivningsindex (vilket betyder att du inte har glödlampor med fullständigt spektrum), eller om ljuset i arbetsrummet kommer från ett fönster, och därmed varierar med väder och tid på dygnet (eller ännu värre, filtreras av ett färgat draperi), eller om väggar och tak skapar färgskiftningar på bildskärmen, "korrigerar" redigeringsprocessen färgskiftningar som egentligen inte finns. Det bästa rådet, så länge det inte påverkar familjelivet negativt: använd neutralt gråa väggar och tak, täck fönstren, bär neutrala kläder, samt ställ in lämpliga ljusnivåer med riktiga glödlampor och armaturer. För mer information om vad som är lämpliga ljusnivåer, och riktiga glödlampor och armaturer för att redigera bilder och titta på papperskopior, se följande artiklar: </para>
+
+        <itemizedlist>
+
+            <listitem
+><para>
+                <ulink url="http://www.creativepro.com/article/the-darkroom-makes-a-comeback"
+></ulink>
+            </para
+></listitem>
+
+            <listitem
+><para>
+                <ulink url="http://www.creativepro.com/article/the-darkroom-makes-a-comeback-part-2-"
+></ulink>
+            </para
+></listitem>
+
+            <listitem
+><para>
+                <ulink url="http://www.lrc.rpi.edu/programs/nlpip/lightingAnswers/fullSpectrum/abstract.asp"
+></ulink>
+            </para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

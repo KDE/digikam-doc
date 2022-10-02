@@ -1,0 +1,55 @@
+<sect3 id="using-setup-editor-save">
+    <title
+>Inställningar av spara bild</title>
+
+    <para
+>När ändringar görs i JPEG-filer och de sparas tillbaka till hårddisken, måste JPEG-filen kodas om. Varje gång en JPEG-fil kodas måste ett beslut tas om komprimeringsnivån som ska användas. Tyvärr lagras inte komprimeringsnivån som används i bildfilen. Det betyder att bildeditorn inte kan använda samma komprimeringsnivå när en ändrad bild sparas som användes för originalbilden. Du kan ändra förvald komprimeringsnivå som bildeditorn använder när den sparar ändrade bilder genom att flytta skjutreglaget för <guilabel
+>JPEG-kvalitet</guilabel
+> (1: låg kvalitet, 100: hög kvalitet och ingen komprimering). När detta skrivs stöds metadata. </para>
+
+    <para
+>Delsampling av kroma är bruket att koda bilder genom att åstadkomma högre upplösning för luminansinformation än färginformation. Läs <ulink url="https://en.wikipedia.org/wiki/Chroma_subsampling"
+>denna</ulink
+> engelska Wikipedia-artikel för en fullständig förklaring. </para>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-editor-save.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+    <para
+>Med alternativet <guilabel
+>PNG-komprimering</guilabel
+> kan du reducera PNG-bildfilens storlek. Åtgärden har ingen effekt på bildens kvalitet, eftersom PNG använder en förlustfri algoritm. Den enda effekten är att det tar längre tid att komprimera och avkoda filer. Om du har en snabb dator kan du ändra värdet för att använda en hög komprimeringsfaktor (1: låg komprimering, 9: hög komprimering). När detta skrivs stöds metadata. </para>
+
+    <para
+>Med alternativet <guilabel
+>Använd TIFF-komprimering</guilabel
+> kan du välja att använda komprimeringsalgoritmen <emphasis
+>Deflate</emphasis
+> för TIFF-bildfiler. Det reducerar TIFF-bildfilens storlek. Det har ingen effekt på bildens kvalitet, eftersom <emphasis
+>Deflate</emphasis
+> är en förlustfri algoritm. När detta skrivs stöds metadata. </para>
+
+    <para
+>Med alternativet <guilabel
+>Förlustfria JPEG 2000-filer</guilabel
+> tillåts förlustfri lagring. Även annars, om det inte markeras, är kvaliteten för jämförbar filstorlek mycket bättre än normal JPEG. När detta skrivs stöds metadata. </para>
+
+    <para
+>Med alternativet <guilabel
+>Förlustfria PGF-filer</guilabel
+> tillåts förlustfri lagring. Även annars, om det inte markeras, är kvaliteten för jämförbar filstorlek mycket bättre än normal JPEG-2000. När detta skrivs stöds metadata. </para>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

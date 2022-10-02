@@ -1,0 +1,168 @@
+<sect2 id="editor-cm-wkspace">
+    <title
+>O Espaço de Trabalho</title>
+
+    <sect3>
+        <title
+>Deste modo, disse ao &digikam; onde encontrar o meu perfil de monitores e tenho um perfil da máquina que apliquei ao ficheiro da imagem produzido pela minha aplicação de processamento de ficheiros RAW. Qual é o passo seguinte na gestão de cores? </title>
+
+        <para
+>Necessita de escolher um espaço de cores de trabalho para poder editar a sua imagem. O LCMS irá transformar a sua imagem do seu espaço de cores da máquina para o seu espaço de trabalho escolhido, através do PCS indicado pelo seu perfil de cores da máquina. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Porque é que não posso simplesmente editar as minhas imagens no espaço de cores descrito pelo perfil da máquina?</title>
+
+        <para
+>Afinal de contas, o perfil da máquina deverá oferecer o melhor "ajuste" às cores registadas pela máquina fotográfica e processadas pela aplicação usada, certo? O Wikipédia diz "Os espaços de trabalho, como o sRGB ou o RGB, são espaços de cores que facilitam bons resultados na edição. Por exemplo, os pixels com valores RGB iguais deverão aparecer neutros." Isto significa que, para qualquer pixel de uma imagem que tenha sido convertido para um espaço de trabalho adequado, caso o R = G = B, deverá ver uma cor branca, preta ou cinzenta no seu ecrã. Muitos perfis de máquinas violam esta condição "neutra". O autor desconhece a lista de todos os outros requisitos para um espaço de trabalho adequado. Contudo, existe outra boa razão pela qual poderá não querer editar a sua imagem no espaço de cores do perfil da sua máquina. Se olhar para o tamanho de um perfil típico, situa-se na ordem de 1/4 de mega-byte ou mais ainda. Tem bastantes informações sobre todas as alterações que necessitam ser feitas em diferentes regiões de cores e tonalidades, para a imagem original, para obter uma rendição de cores precisa a partir dos valores RGB que vieram do processador RAW. O perfil da máquina é preciso ou exacto (pelo menos para as cores no destino original), mas não é particularmente suave, do ponto de vista matemático. Os perfis de espaços de cores de trabalho, por outro lado, são muito pequenos de tamanho (meio quilo-byte em vez de meio mega-byte, porque descrevem um gamute de cores em termos de funções matemáticas contínuas e suaves. Os perfis dos espaços de trabalho não precisam de fazer cedências À "confusão" de sensores no mundo real, por isso as manipulações matemáticas efectuadas durante a edição da imagem aplicar-se-ão de forma muito mais suave e exacta, do que se tentasse editar a sua imagem, caso estivesse ainda no espaço de cores da máquina. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Qual o espaço de trabalho que devo escolher?</title>
+
+        <para
+>Toda a gente tem a sua opinião. Serão deixadas aqui algumas das informações necessárias para fazer uma escolha informada. Os perfis dos espaços de trabalho caracterizam-se por: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>'Gama' (ou outra função de transferência), que dita a medida em que os valores de intensidade linear originais, capturados pelo sensor da máquina (e sujeitos à conversão A-D interna da máquina, interpolados de seguida pelo programa de processamento RAW para produzir o ficheiro da imagem), são alterados para tornar a edição mais simples ou mais exacta. </para
+></listitem>
+
+            <listitem
+><para
+>As cores primárias RGB que ditam a gama de cores, isto é, o gamute coberto por um dado perfil. </para
+></listitem>
+
+            <listitem
+><para
+>O ponto branco (normalmente o D50 ou o D65, ainda que possam ser usados outros valores), que indica a temperatura de cor do ponto branco do espaço de trabalho. </para
+></listitem>
+
+        </orderedlist>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Qual o 'gama' que deverá ter o meu espaço de trabalho?</title>
+
+        <para
+>O 'gama' ou 'gamma' de um perfil de cores dita qual a transformação de potência que é necessário ter lugar para converter adequadamente de um perfil de cores incorporado numa imagem (talvez o seu espaço de cores de trabalho) para outro perfil de cores com um 'gama' diferente, como por exemplo o perfil do ecrã, usado para mostrar a imagem no ecrã ou talvez para um novo espaço de trabalho ou ainda talvez do espaço de trabalho para o espaço de cores da sua impressora. O 'dcraw' gera uma imagem de 16 'bits' com um 'gama' linear, o que significa que um histograma do ficheiro resultante mostra a quantidade de luz que cada pixel no sensor da máquina capturou na exposição (citando <ulink url="http://www.guillermoluijk.com/tutorial/dcraw/index_en.htm"
+>esta página</ulink
+>). (É por isso que, no presente, ao aplicar um perfil de uma máquina no resultado do 'dcraw', irá necessitar também de fazer uma transformação do 'gama' para voltar ao espaço de trabalho desejado, a menos que o perfil da máquina use também um 'gama'=1.) </para>
+
+        <para
+>Uma consequência prática do 'gama' de um espaço de trabalho é que, quanto maior o 'gama', mais tons discretos ficarão na edição de zonas escuras, com uma redução nos tons mais claros. A mudança do 'gama' de uma imagem volta a distribuir o número de tons disponíveis nas áreas claras e escuras de uma imagem. Em teoria, se estiver a trabalhar numa imagem muito escura (com chave baixa), poderá querer ter um espaço de trabalho com um 'gama' mais elevado. Se estiver a trabalhar numa imagem com tons claros, por exemplo, uma fotografia tirada em pleno meio-dia, sobre um vestido de noiva e com um fundo de neve, poderá querer escolher um espaço de trabalho com 'gama' mais baixo, para que tenha mais graus de tonalidades nos tons claros. </para>
+
+        <para
+>Teorias à parte, no mundo da edição real de imagens, quase toda a gente usa espaços de trabalho com um 'gama' de 1,8 ou 2,2. O sRGB e o L*-RGB são duas excepções notáveis. </para>
+
+        <para
+>O sRGB usa uma função de transferência próxima da de um CRT (e, deste modo, não necessariamente relevante para a edição de imagens ou para a apresentação num LCD). Como é indicado no Wikipédia, "Ao contrário dos outros espaços de cores RGB, o 'gama' do sRGB não pode ser expresso como um único valor numérico. O 'gama' global é aproximadamente 2,2, o que consiste numa secção linear ('gama' 1,0) perto do preto e uma secção não-linear noutro ponto, que envolve um expoente de 2,4 e um 'gama' (curva da saída vs. entrada) que varia de 1,0 a 2,3" (citando <ulink url="http://en.wikipedia.org/wiki/SRGB"
+>esta página</ulink
+>), o que implica alguma matemática complicada durante o processamento da imagem. </para>
+
+        <para
+>O L*-RGB usa como função de transferência a mesma função de transferência da percepção uniforme que o espaço de cores CIELab. "Ao guardar as cores com valores de precisão limitada", usando uma função de transferência da percepção uniforme, "poderá melhorar a reprodução dos tons" (citado <ulink url="http://en.wikipedia.org/wiki/Lab_color_space"
+>nesta página</ulink
+>). </para>
+
+        <para
+>Para além do gama=1,8 e gama=2,2, o outro único 'gama' para um espaço de trabalho que merece tanta atenção ou utilização é o 'gama' linear, ou gama=1.0. Como apontado acima, o 'dcraw' devolve ficheiros de 'gama' linear quando pedir um resultado a 16 bits. O 'gama' linear é usado nas imagens HDR ('high dynamic range' - gama dinâmica elevada) e também se quiser evitar a introdução de erros induzidos pelo 'gama' na edição de uma gama dinâmica reduzida. </para>
+
+        <para
+>Os "erros induzidos pelo 'gama'" são um tópico fora do âmbito deste tutorial. Mas veja a secção <ulink url="http://www.4p8.com/eric.brasseur/gamma.html"
+>"Gamma errors in picture scaling"</ulink
+> (errors de 'gama' no ajuste de escala das imagens) para ver os desvios de tonalidade induzidos pelo 'gama'; obviamente, veja também a página Web informativas (mas infelizmente com alguma má fama) de Timo Autiokari, de modo a obter um esclarecimento completo da utilização de espaços de trabalho de 'gama' linear (a página Web do Timo parece estar em baixo de momento, mas existem cópias arquivadas dos seus artigos no Google). Bruce Lindbloom menciona um erro comum induzido pelo 'gama' que é provocado pelo cálculo incorrecto da luminosidade num espaço de trabalho RGB não-linear (ver <ulink url="http://www.brucelindbloom.com/index.html?WorkingSpaceInfo.html"
+>esta página</ulink
+>, nota lateral 1). Seguindo o mesmo rumo, os cálculos envolvidos na mistura de cores para produzir cores novas (como a utilização de um filtro digital para adicionar 'calor' a uma imagem) resultam em erros no 'gama', a menos que as cores novas seja calculadas através da transformação de todos os valores relevantes para os seus valores lineares. </para>
+
+        <para
+>Infelizmente, e apesar das suas vantagens matemáticas inegáveis, os espaços de trabalho com 'gama' linear têm tão poucos tons escuros que (na opinião do autor) são impossíveis de usar na edição, caso esteja a trabalhar a 8 'bits', e continuam a ser problemáticos a 16 'bits'. No dia em que todos façam edições com ficheiros de 32 'bits', produzidos com máquinas HDR e em computadores poderosos, prevê-se que se utilizará então espaços de trabalho com 'gama' 1; o Adobe Lightroom já usa um espaço de trabalho com 'gama' linear "nos bastidores", o CS2 permite a utilização de um 'gama' linear para a mistura de cores e o Lightzone sempre usou um espaço de trabalho com 'gama' linear. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Quantos passos tonais discretos existem numa imagem digital?</title>
+
+        <para
+>Numa imagem de 8 bits, tem 256 passos de tonalidade, desde o preto puro ao branco puro. Numa imagem de 16 bits, teoricamente terá 65 536 passos. Mas lembre-se, esses 16 'bits' começaram como sendo 10 'bits' (=1 024 passos), 12 'bits' (=4 096 passos), ou 14 'bits' (=16 384 passos), sendo produzidos pelo conversor A-D da máquina - os 'bits' extra para atingir os 16 'bits' começaram por ser apenas preenchimento. Os tons disponíveis não são distribuídos de forma uniforme do claro para o escuro. No modo de 'gama' linear (como o sensor da máquina vê as coisas), existem bastantes mais tons na zona clara no que na escura. Daí o conselho, se fotografar em RAW, de "expor à direita, mas não explodir os tons claros". Veja os artigos do Ron Bigelow sobre <ulink url="http://www.ronbigelow.com/articles/articles.htm"
+>porquê o RAW</ulink
+>, para uma discussão completa sobre a distribuição dos tons disponíveis numa imagem RAW. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Devo usar um espaço de trabalho de gamute largo ou estreito? </title>
+
+        <para
+>Uma consideração importante ao escolher um espaço de trabalho é que alguns espaços são maiores que outros, o que significa que cobrem uma maior área do espectro visível (e, por consequência, incluem algumas cores imaginárias - construções matemáticas que não existem de facto). Esses espaços de cores maiores oferecem a vantagem de manter todas as cores capturadas pela sua máquina e preservadas pela conversão LCMS do perfil da sua máquina para o espaço de ligação do perfil de gamute-super-largo e de volta para o seu espaço de trabalho escolhido. </para>
+
+        <para
+>Mas manter todas as cores possíveis tem o seu preço, como é explicado abaixo. Para além disso, qualquer imagem digital indicada contém apenas um sub-conjunto de todas as cores visíveis possíveis que a sua máquina é capaz de capturar. Esse pequeno sub-conjunto está contido facilmente num dos espaços de trabalho menores (uma excepção que necessita de um gamute de cores maior seria uma imagem de um objecto altamente saturado, como um malmequer amarelo). </para>
+
+        <para
+>A utilização de um espaço de trabalho muito largo significa que a edição da sua imagem (a aplicação de curvas, o aumento da saturação, etc.) poderá produzir facilmente cores que o seu dispositivo de saída eventual (impressora, monitor) simplesmente não conseguirá reproduzir (não poderá ver estas cores, de qualquer forma, durante a edição). Como tal, a conversão do seu espaço de cores para o seu dispositivo de saída (por exemplo, a sua impressora) terá de voltar a mapear as cores fora-do-gamute para a sua imagem editada, sendo que algumas passariam a totalmente imaginárias, para o espaço de cores da sua impressora, com o seu gamute muito mais reduzido. Este processamento irá levar a cores inadequadas e à perda de saturação, na melhor das hipóteses. Ainda pior, o mesmo processo poderá levar facilmente ao efeito de poster (onde se notam diferenças quando deveria existir uma transição suave, por exemplo, numa imagem de céu azul) e recorte (p.ex., as suas leves transições com tons avermelhados delicados poderão ser convertidos para um vermelho intenso depois da conversão para o espaço de cores da sua impressora). Do mesmo modo, os peritos dizem que as imagens de 8 'bits' simplesmente não têm tons suficientes para percorrer um espaço de trabalho de gamute elevado sem esse efeito de poster e perda de saturação, mesmo antes da conversão para um espaço de saída. Por isso, se escolher um espaço de trabalho com gamute largo, certifique-se que começa por uma imagem a 16 'bits'. </para>
+
+        <para
+>Para resumir, os espaços de trabalho com gamutes largos, usados de forma indevida, poderão levar à perda de informação no resultado. Os espaços de trabalho de gamute estreito poderão recortar informação à entrada. Os espaços de gamute médio tentar atingir um compromisso satisfatório. Como diz a Wikipédia, é tudo uma questão de compromisso. </para>
+
+        <para
+>Aqui estão alguns conselhos repetidos frequentemente sobre a escolha de um espaço de trabalho: </para>
+
+        <para>
+            <orderedlist>
+
+                <listitem
+><para
+>Para as imagens destinadas à Web, use (ou pelo menos converta a imagem final para) o sSRGB. </para
+></listitem>
+
+                <listitem
+><para
+>Para obter uma maior precisão na edição das suas imagens (isto é, tirar o máximo partido dos seus 'bits' limitados, com o risco mínimo de alargamento ou recorte, quando converter a sua imagem do seu espaço de trabalho para um espaço à saída), use o espaço de trabalho menor que inclua todas as cores na cena que fotografou, mais algum espaço extra para essas cores novas que produziu intencionalmente na sua edição. </para
+></listitem>
+
+                <listitem
+><para
+>Se estiver a trabalhar a 8-bits, em vez de 16-bits, escolha um espaço de trabalho menor em vez de um maior, para evitar recortes e alargamentos. </para
+></listitem>
+
+                <listitem
+><para
+>Para fins de arquivo, converta o seu ficheiro RAW para um TIFF de 16 bits, com um espaço de trabalho de gamute largo, para evitar perder informações de cores. Depois, converta este TIFF de arquivo para o espaço de trabalho de gamute médio ou largo à sua escolha (guardando o TIFF convertido com um nome novo, obviamente). </para
+></listitem>
+
+            </orderedlist>
+        </para>
+
+        <para
+>Para obter mais informações sobre a escolha de um espaço de trabalho, veja em <ulink url="http://www.brucelindbloom.com/Info"
+>Informações sobre Espaços de Trabalho RGB</ulink
+> uma comparação visual do gamute (lista de cores incluídas) dos vários espaços de cores de trabalho. Veja <ulink url="http://www.luminous-landscape.com/tutorials/prophoto-rgb.shtml"
+>aqui</ulink
+> e <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm"
+>aqui</ulink
+> uma apresentação dos prós e contras, respectivamente, em relação à utilização de espaços de trabalho de gamute largo. E, já que está na página Web cambrideincolour.com, veja o tutorial sobre a gestão de cores. </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

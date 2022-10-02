@@ -1,0 +1,83 @@
+<sect2 id="using-mainwindow-fuzzysearches">
+    <title
+>La vista Aproximada</title>
+
+    <para
+>El &digikam; caracteritza cada imatge amb un número llarg utilitzant una tècnica especial (algorisme d'Haar) que fa possible la comparació de les imatges mitjançant la comparació d'aquesta signatura calculada. La diferència numèrica més petita entre dues signatures d'imatge resultarà en el fet que s'assemblen més entre si. Aquesta tècnica té tres implementacions al &digikam;: </para>
+
+    <itemizedlist>
+
+        <listitem>
+            <para
+>Duplicats: abans de poder disposar del &digikam; per trobar duplicats, cal que es calculin les signatures (o empremtes dactilars). Podeu iniciar aquest procés amb el botó <guilabel
+>Actualitza les empremtes digitals</guilabel
+>, el qual inicia una reconstrucció total de les signatures de les imatges (pot trigar hores si teniu una gran col·lecció, amb una estimació de 2 hores per a 10.000 imatges). Una vegada calculades, podreu utilitzar <guilabel
+>Cerca els duplicats</guilabel
+>, però també trigarà molt, ja que s'ha de comparar cada imatge amb qualsevol altra. Tan així, la manera de fer en ambdós casos, és limitar la cerca a determinats àlbums i/o etiquetes. Amb l'interval de similitud, podreu reduir o ampliar el resultat de la cerca. Tingueu en compte que, si baixeu el llindar superior una mica per sota del 100%, podreu mantenir coses com còpies exactes, imatges preses en sèries, &etc;, fora del resultat de la cerca. </para>
+
+            <example>
+                <title
+>Cercar els duplicats mentre es restringeix a un àlbum</title>
+                <mediaobject>
+                    <imageobject
+><imagedata fileref="&path;using-mainwindow-duplicates-albumsfilter.png" format="PNG"/></imageobject>
+                </mediaobject>
+            </example>
+            
+            <para
+>Es mostrarà un resum del resultat a la barra lateral esquerra. La primera columna mostra les imatges de referència de cada resultat. La columna Elements indica quantes imatges pertanyen a cada resultat, inclosa la imatge de referència. L'última columna mostra la mitjana de semblança, la qual us donarà una idea de quant de semblants poden ser les imatges de cada resultat. La imatge de referència amb el seu 100% <emphasis
+>no</emphasis
+> està inclosa en la mitjana. Tingueu en compte que els resultats es poden ordenar fent clic en una de les capçaleres de la columna. </para>
+            
+            <para
+>Es poden obtenir valors individuals de similitud per a cada element a la vista de taula de l'àrea de la imatge (el botó <guilabel
+>Taula</guilabel
+> a la barra d'eines principal). Feu clic amb el &BDR; sobre una de les capçaleres de la columna i seleccioneu <guilabel
+>Similitud</guilabel
+> a <guilabel
+>Propietats de l'element</guilabel
+> per a mostrar la columna de semblança. En fer clic a la capçalera d'aquesta columna, els resultats es classificaran agrupats per similitud segons les imatges de referència. Si feu clic repetidament a la capçalera, s'anirà alternant entre l'ordre ascendent i descendent. </para>
+        </listitem>
+
+        <listitem>
+            <para id="find-similar"
+>Imatge (elements similars): aquesta és una zona d'arrossegar i deixar anar on podreu deixar anar qualsevol imatge per trobar-ne una de similar. Arrossegueu una imatge des de qualsevol lloc, fins i tot des de fora del &digikam; (gestor de fitxers, altres programes), sobre la icona de cerca aproximada a la barra lateral esquerra, s'obrirà i la deixareu allà o utilitzeu <guilabel
+>Cerca les similars...</guilabel
+> des del menú contextual d'una miniatura en qualsevol altra vista. També podeu reduir o ampliar la selecció resultant amb l'interval de similitud. Al següent camp, podeu introduir un nom per a la cerca i desar-lo. A la llista de cerques que hi ha a continuació, trobareu les vostres cerques desades. En fer clic a la barra de títol d'aquesta llista, s'activarà l'ordre de classificació entre ascendent i descendent. A la part inferior trobareu un camp de cerca adaptatiu que us podrà ajudar a trobar una cerca concreta. </para>
+
+            <example>
+                <title
+>Cerca aproximada per a imatges similars</title>
+                <mediaobject
+><imageobject
+><imagedata fileref="&path;using-mainwindow-searchsimilar.png" format="PNG"/></imageobject
+></mediaobject>
+            </example>
+        </listitem>
+
+        <listitem>
+            <para
+>Croquis: dibuixant en color a mà lliure: dibuixeu un esbós ràpid i el &digikam; trobarà les imatges corresponents. Trobareu els mateixos mitjans per desar la cerca a la pestanya <guilabel
+>Imatge</guilabel
+>. </para>
+
+            <example>
+                <title
+>Cerca aproximada per a esbossos</title>
+                <mediaobject>
+                    <imageobject
+><imagedata fileref="&path;using-mainwindow-searchsketch.png" format="PNG"/></imageobject>
+                </mediaobject>
+            </example>
+        </listitem>
+
+    </itemizedlist>
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

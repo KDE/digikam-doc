@@ -1,0 +1,350 @@
+<sect2 id="editor-cm-connection"
+> <title
+>Färgrymdsambanden</title>
+
+    <para
+>Frågan för varje RGB-trippel av värden i den 16-bitars TIFF-fil (antar vi) skapad av dcraw blir alltså: "Vad betyder en viss RGB-trippel av värden verkligen för bildpunkter som utgör bilder skapade av den här specifika kameran (märke och modell) i relation till någon absolut standard som hänvisar till någon ideal observatör?" Denna absoluta standard som hänvisar till en ideal observatör kallas vanligtvis <emphasis
+>profilsambandsrymd</emphasis
+>. En kameraprofil behövs för att noggrant karakterisera eller beskriva svaret hos en given kameras bildpunkter på ljus som kommer in i kameran, så att RGB-värden i resultatfilen skapad av konverteringsprogrammet för obehandlade filer kan först översättas till en absolut profilsambandsrymd (PCS) och därefter från PCS till den valda arbetsrymden. Som en viktig sidoanmärkning, i större delen av världen med öppen källkod (inklusive Digikam), är programvaran som används för att översätta från kameraprofilen till PCS och från PCS till den valda arbetsrymden och slutligen till den valda utdatarymden (för utskrift eller kanske visning på bildskärm) baserad på LCMS (den <ulink url="http://littlecms.com"
+>lilla färghanteringsprogramvaran</ulink
+>). Vilken betydelse det än har, så visar mina egna prov att LCMS gör noggrannare översättningar mellan färgsystem än Adobes tillverkarspecifika färgkonverteringsprogram. Dessutom är konverteringen av obehandlade filer, i nästan alla program för konvertering av obehandlade filer, inklusive kommersiell programvara med privat källkod som Adobe Photoshop, typiskt baserad på avkodning av den tillverkarspecifika obehandlade filen gjord av dcraw. David Coffin, upphovsman till dcraw, är hjälten vid konvertering av obehandade filer: utan honom skulle vi alla vara fast vid den vanliga tillverkarspecifika programvaran, oftast bara för Windows och MacIntosh, som levereras med digitalkameror. Interpoleringsalgoritmerna i dcraw (som inte ska blandas ihop med den tidigare nämnda avkodningen av den tillverkarspecifika obehandlade filen), som ingår i &digikam; om använda på rätt sätt, skapar resultat jämförbara eller överlägsna kommersiell programvara med privat källkod. Vi i &Linux;-världen med öppen källkod är INTE andra klassens medborgare när det gäller digital bildbehandling. Långt ifrån. </para>
+
+    <para
+>Det finns två ofta använda profilsambandsrymder: CIELAB och CIEXYZ (se <ulink url="https://en.wikipedia.org/wiki/Color_management"
+>färghantering</ulink
+>, avsnittet "Color translation", och slå därefter upp CIELAB och CIEXYZ på Wikipedia). LCMS använder kameraprofilen för att översätta RGB-värden från den interpolerade obehandlade filen, det vill säga TIFF-filen skapad av dcraw, till lämplig profilsambandsrymd. (Oftast CIEXYZ. Varför CIEXYZ? Jag har inte spenderat någon tid på att ta reda på det.) En profilsambandsrymd är i sig inte någon arbetsrymd. Istället är den en absolut referensrymd som bara används för översättning från ett färgsystem till ett annat: föreställ dig den som en universalöversättare för alla färgprofiler som en bild kan stöta på under dess resa från kamerans obehandlade fil till det slutliga resultatet: </para>
+
+    <orderedlist>
+
+        <listitem
+><para
+>LCMS använder kameraprofilen, som också kallas indataprofil, för att översätta de interpolerade RGB-talen skapade av dcraw, som bara betyder någonting i förhållande till kameran (tillverkare och modell), till en annan RGB-talmängd, som bara betyder någonting i profilsambandsrymden (PCS). </para
+></listitem>
+
+        <listitem
+><para
+>LCMS översätter profilsambandsrymdens RGB-värden till motsvarande värden i den valda arbetsrymden så att du kan redigera bilden. Återigen, dessa värden i arbetsrymden har BARA betydelse i förhållande till en given arbetsrymd. Samma röda färg, visuellt sett, representeras av olika RGB-tripplar i olika arbetsrymder, och om du tilldelar fel profil kommer bilden att se felaktig ut, något felaktig eller mycket felaktig beroende på skillnaden mellan de två profilerna. </para
+></listitem>
+
+        <listitem
+><para
+>Medan du redigerar bilden i den valda arbetsrymden, ska LCMS översätta alla RGB-värden i arbetsrymden tillbaka till PCS, och därefter över till rätt RGB-värden som låter bildskärmen (din utmatningsenhet) ge dig den noggrannast möjliga representationen av bilden medan den redigeras. Översättningen till skärmen görs i farten och du ska aldrig ens märka att den sker, om den inte görs felaktigt: Då ser bilden som visas fel ut, kanske lite felaktig, eller kanske mycket, mycket, mycket felaktig. </para
+></listitem>
+
+        <listitem
+><para
+>När du är övertygad om att den redigerade bilden är klar att dela med resten av världen, översätter LCMS arbetsrymdens RGB-värden tillbaka till PCS och ut igen till skrivarens färgrymd med en skrivarprofil som karakteriserar kombinationen av skrivare och papper (om du tänker dig att skriva ut bilden) eller till sRGB (om du tänker dig att visa bilden på webben, e-posta den till vänner, eller kanske skapa ett bildspel som ska visas på andra bildskärmar än din egen). </para
+></listitem>
+
+    </orderedlist>
+
+    <para
+>Låt oss ta ett steg tillbaka och titta på den första färgprofilen en bild stöter på, det vill säga kameraprofilen (se (1) omedelbart ovanför): dcraw kan i själva verket tilldela kameraprofilen åt dig (dcraw använder LCMS internt). Men att skapa TIFF-filen, som består av de interpolerade RGB-värdena härledda från kamerans obehandlade fil, och att tilldela kameraprofilen till den interpolerade filen, är två distinkta och helt separerbara steg (separerbara i teori och praktik med dcraw, bara i teori med de flesta program för behandling av obehandlade filer). Väljarna för utmatning på dcraws kommandorad "-o 0 [obehandlad färg (unik för varje kamera)] -4 [16-bitar linjär] -T [TIFF]" talar om för dcraw att skriva ut RGB-värdena från interpoleringen av obehandlad data till en TIFF-fil utan att tilldela en kameraindataprofil (orden inom hakparentes förklarar väljarna, men ska inte skrivas på kommandoraden). Därefter, om du verkligen tycker om att arbeta på kommandoraden, kan du använda LCMS-verktyget tifficc för att tilldela kameraprofilen själv. Fördelen med att göra det är att du kan tala om för LCMS att använda konvertering med hög kvalitet (dcraw verkar använda LCMS förvalda medelkvalitet). Nackdelen är förstås att tillägg av kameraprofilen från kommandoraden innebär ett extra steg i arbetsflödet för obehandlade bilder. </para>
+
+    <sect3 id="using-iccprofile">
+        <title
+>Var man hittar kameraprofiler</title>
+
+        <para
+>Var hittar man då dessa svårfångade och ytterst nödvändiga kameraspecifika profilerna som vi behöver för att översätta våra interpolerade obehandlade filer till en arbetsfärgrymd? Avsnittet om färghantering på <ulink url="http://ufraw.sourceforge.net/Colors.html"
+>ufraws webbsida</ulink
+> har information om var man hittar färdiggjorda kameraprofiler. Det är dock ett beklagligt faktum vid digitalfotografering att kameraprofilerna som tillhandahålls av Canon, Nikon, och liknande, inte fungerar så bra med andra program för konvertering av obehandlade filer som med tillverkarnas egna program. Det är orsaken till att exempelvis Bibble och Phase one (och Adobe, men ACR döljer profilerna skapade av Adobe inne i programkoden) måste skapa egna profiler för alla kameror de stöder: kom ihåg denna benägenhet hos kameratillverkarna nästa gång du köper en digitalkamera. </para>
+
+        <para
+>Men åter till att hitta en kameraprofil för din kamera: det verkliga svaret (under förutsättning att du inte hittar en färdiggjord profil som du är nöjd med) är att skapa en egen kameraprofil eller få en gjord åt dig. Det finns en hel del kommersiella inrättningar tillhandahåller profileringstjänster, naturligtvis mot en avgift. Annars kan du använda LProf eller Argyll för att profilera kameran själv. Jag har själv ännu inte följt rådet, så jag kan inte berätta hur enkel eller svår processen att profilera en kamera kan vara. Men jag kan tänka mig, med kunskap om hur minutiöst noggranna personerna bakom Argyll, LProf och LCMS är när det gäller färghantering, att det är fullt genomförbart att skapa en egen kameraprofil, och troligen blir resultatet bättre än någon tillverkarspecifik profil. Trots allt så profilerade inte Canon (och inte heller Bibble eller Phase one) MIN kamera: De profilerade bara en kamera som liknar min. </para>
+
+        <para
+>Arbetsrymder: </para>
+
+        <para
+>Nu har den obehandlade filen interpolerats av dcraw och du har skaffat en kameraprofil och använt tifficc för att tilldela kameraprofilen till TIFF-filen skapad av dcraw (eller bett dcraw att tilldela den åt dig). Vad betyder allt detta? Det verkliga svaret omfattar en hel del matematik och färgvetenskap som är långt bortom min kunskap, och troligen också din. Det korta, praktiska, svaret är att varken kamerans profilrymd eller profilsambandsrymden är en lämplig färgrymd för bildredigering. Nästa steg är att välja en arbetsrymd för bildredigering. Därefter utför du (eller i själva verket färghanteringsverktyget LCMS, som programvaran för digital bildbehandling med öppen källkod använder) en dubbel översättning. Först använder LCMS kameraprofilen för att översätta RGB-värdet för varje bildpunkt i bilden skapad av dcraw utan kameraprofil, till den tidigare nämnda profilsambandsrymden. Därefter översätter det RGB-värdet för varje bildpunkt i profilsambandsrymden till den valda arbetsrymden. </para>
+
+        <para
+>Missförstånd och förvirrande terminologi: </para>
+
+        <para
+>Innan vi berättar mer om arbetsrymder, måste vi klargöra vissa missförstånd och förvirrande terminologi: </para>
+
+        <para
+>För det första är sRGB både ett färgsystem för arbete och utdata för bilder avsedda för webben och visning på en bildskärm. (Om du har en ny flott bildskärm med ett större tonomfång en det som täcks av sRGB, bör du uppenbarligen åter överväga vilken utdataprofil du ska använda för att dra bäst nytta av din underbara, och förhoppningsvis kalibrerade och profilerade bildskärm, men konvertera bilderna till sRGB innan du skickar vidare dem till dina vänner.) sRGB är också färgsystemet som många hemskrivare och kommersiella skrivare för massproduktion förväntar sig att bildfiler har när de skickas till skrivaren. Det är också färgsystemet som de flesta program antar om en bild inte har en inbäddad färgprofil som talar om för programmet vilket färgsystem som ska användas för att tolka (översätta) RGB-värdena. Om du alltså väljer att inte använda färghantering, är valet enkelt: ställ in allting till sRGB. </para>
+
+        <para
+>För det andra, alla JPEG-filer (eller TIFF-filer, om du har en äldre Minolta Dimage kamera) som kommer direkt från kameran (även om de skapas av enknappskameror som inte låter dig spara en obehandlad fil) börjar livet som en obehandlad bild skapad av kamerans A/D-konvertering. Processorn i kameran interpolerar den obehandlade bilden, tilldelar en kameraprofil, översätter de resulterande RGB-värdena till en arbetsrymd (oftast sRGB, men ibland kan du välja Adobe RGB, beroende på kamera), gör JPEG-komprimeringen och lagrar JPEG-filen på kamerans minneskort. Alltså behöver ALDRIG JPEG-filer (eller TIFF-filer) från kameran tilldelas en kameraprofil eller indataprofil som sedan översätts till en arbetsrymd via en PCS. JPEG-filer från en kamera är redan i en arbetsrymd. </para>
+
+        <para
+>För det tredje, om någon är osäker på detta, observera att en interpolerad obehandlad fil inte längre är obehandlad: den har interpolerats och därefter sparats som en TIFF-fil vars RGB-värden måste översättas till en arbetsrymd, genom att använda kameraprofilen, PCS och LCMS. För det fjärde (enbart för framtida referens), och för att här introducera ofta använd färghanteringsterminologi, kameraprofilen och skrivarens färgprofil är båda enhetsberoende, medan arbetsrymden kommer att vara enhetsoberoende. Den kan användas med vilken bild som helst, och med vilken programvara utrustad riktig färghantering som helst, utan att bry sig om vad bildens ursprung är.</para>
+
+        <para
+>För det femte, ovan har jag använt orden översätta och översättning som en beskrivande metafor för det som LCMS gör vid översättning av RGB-värden från ett färgsystem till ett annat via PCS. Den vanliga och riktiga terminologin är konvertera och konvertering, vilket jag kommer att använda nedan. De fyra metoderna för konvertering mellan ett färgsystem och ett annat är: perceptuell, relativt färgläge, absolut färgläge och färgmättnad. Vilken konverteringsmetod man ska använda vid ett givet bildbehandlingssteg från obehandlad fil till slutlig utskriven bild är utanför den här handledningens omfattning. Det vanligaste rådet är, om du tvekar, använd perceptuell. </para>
+
+        <para
+>För det sjätte (återigen, enbart för framtida referens), att tilldela en profil betyder att ändra betydelsen av RGB-värdena i en bild genom att inbädda en ny profil utan att ändra själva RGB-värdena som hör ihop med varje bildpunkt i bilden. Att konvertera betyder att inbädda en ny profil, men också samtidigt ändra RGB-värdena så att betydelsen av RGB-värdena, det vill säga den verkliga synliga färgen som representeras av RGB-trippeln som hör ihop med varje bildpunkt i en bild, förblir samma före och efter konverteringen från ett färgsystem till ett annat. Man ska kunna göra flera konverteringar av en bild från en arbetsrymd till en annan, och om man använder en bildeditor med riktig färghantering så ska bilden som visas på skärmen se likadan ut, även om alla RGB-värden i bilden ändras vid varje konvertering (om man bortser från de ofta omärkbara små men oundvikliga ändringarna från ackumulerade skillnader i tonomfång och matematiska avrundningsfel).Varje gång du tilldelar en ny profil istället för att konvertera till en ny arbetsrymd, ändras bildens utseende dock mer eller mindre drastiskt (ofta till det sämre). </para>
+
+        <para
+>Slutligen (och detta är en ytterst viktig punkt), är färghantering INTE bara relevant om du tar obehandlade bilder. Färghantering påverkar alla steg av bildbehandlingen, vare sig du börjar med en obehandlad fil som du själv interpolerar och översätter till en TIFF-fil, eller om du börjar med en JPEG-fil eller en TIFF-fil som kameran skapat. </para>
+
+        <para
+>Upphovsrättsskyddade arbetsrymder och arbetsrymder med fri upphovsrätt: </para>
+
+        <para
+>Jag tar för givet att ALLA arbetsrymder som man normalt träffar på, såsom: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>De olika varianterna av sRGB (se <ulink url="http://www.color.org/v4spec.xalter"
+>color.org</ulink
+>). </para
+></listitem>
+
+            <listitem
+><para
+><ulink url="http://www.brucelindbloom.com"
+>BruceRGB</ulink
+>. </para
+></listitem>
+
+            <listitem
+><para
+>De olika <ulink url="http://www.eci.org/doku.php?id=en:colourstandards:workingcolorspaces"
+>profilerna</ulink
+> för arbetsrymder från ECI (Europeiska färginitiativet). </para
+></listitem>
+
+            <listitem
+><para
+>AdobeRGB, Adobe WideGamutRGB och Kodak/Adobe ProPhotoRGB (Kodak och Adobe ProPhoto är likadana, bara med olika märkesnamn) och deras motsvarigheter <ulink url="http://www.behrmann.name/index.php?option=com_content&amp;task=view&amp;id=34&amp;Itemid=68"
+>utan märkesnamn och upphovsrättsskydd</ulink
+> (Oyranos innehåller en version av AdobeRGB utan märkesnamn). </para
+></listitem>
+
+            <listitem
+><para
+>Och en mängd andra som skulle kunna läggas till i listan är alla mer eller mindre lämpliga arbetsrymder. Vilken du bör använda beror enbart på DIG, och DINA krav när du redigerar DINA digitala bilder med DINA slutliga utskriftsbehov (webben, konstfotografier etc.). </para
+></listitem>
+
+        </orderedlist>
+
+        <para
+>Dock, som en kritisk kommentar, om man använder Adobe (eller andra upphovsrättsskyddade) profiler som arbetsrymder, innehåller dessa profiler copyright-information som dyker upp i bildens EXIF-information. Den senaste tiden har jag bläddrat igenom e-postlistorna hos openicc. Uppenbarligen kan LCMS användas för att skapa profiler med fri upphovsrätt utan märkesnamn för arbetsrymder som är likadana som, i själva verket omöjliga att skilja från, upphovsrättsskyddade profiler med märkesnamn. Det skulle vara ett underbart tillägg till Digikam om en uppsättning profiler med "fri upphovsrätt", inklusive omdöpta versioner av ProPhotoRGB, AdobeRGB och Adobe WidegamutRGB utan märkesnamn (kanske i två versioner vardera: med linjär gamma och vanlig gamma), skulle kunna levereras som en del av &digikam;-paketet. </para>
+
+        <para
+>Vilken arbetsrymd: gamma </para
+> 
+
+        <para
+>Nästa fråga är: Vilken arbetsrymd ska man använda? I <ulink url="https://en.wikipedia.org/wiki/Color_management#Working_spaces"
+>Wikipedia</ulink
+> står det: <blockquote
+><para
+>Arbetsrymder som sRGB eller Adobe RGB, är färgsystem som underlättar bra resultat vid redigering. Exempelvis ska bildpunkter med samma värden för RGB verka neutrala. Att använda en stor arbetsrymd (med stort tonomfång) leder till färgbandning, medan användning av en liten arbetsrymd leder till beskärning. Denna kompromiss är av vikt för en kritisk bildredaktör.</para
+></blockquote>
+        </para>
+
+        <para
+>Jaha, det citatet från Wikipedia är ju klart som korvspad, och jag vet inte om jag kan förklara det bättre, men jag gör ett försök: "[B]ildpunkter med samma värden för RGB ska verka neutrala" betyder bara att för en given bildpunkt med R = G = B, i en bild som har konverterats till en lämplig arbetsrymd, ska man se grått, svart eller vitt på skärmen. </para>
+
+        <para
+>Jag känner inte till någon lista med andra tekniska krav för en lämplig arbetsrymd, även om någon otvivelaktigt har skapat en sådan lista. Men de flesta profiler för arbetsrymder karaktäriseras av: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>RGB-grundfärgerna som bestämmer färgintervallen, det vill säga tonomfånget som täcks av en given profil. </para
+></listitem>
+
+            <listitem
+><para
+>Vitpunkt, oftast D50 eller D65, som bestämmer arbetsrymdens totala dynamiska omfång, från 0,0,0 (helt svart) till det starkast möjliga vita. </para
+></listitem>
+
+            <listitem
+><para
+>Gamma. </para
+></listitem>
+
+        </orderedlist
+> 
+
+        <para
+>De praktiska konsekvenser som uppstår genom att använda olika RGB-grundfärger, vilka leder till större eller mindre arbetsrymder, beskrivs nedan. De praktiska konsekvenserna för olika val av arbetsrymdernas vitpunkter är utanför den här handledningens omfattning. Här nämner jag lite grand om de praktiska konsekvenserna av arbetsrymdens gamma (slå upp gamma på Wikipedia, för en utmärkt artikel och referenser). </para>
+
+        <para
+>En färgprofils gamma bestämmer vilken transform som måste göras för att konvertera från bildens inbäddade färgprofil (kanske färgarbetsrymden eller kamerans färgprofil) till en annan färgprofil med annat gamma, som (1) bildskärmsprofilen som används för att visa bilden på skärmen, eller (2) kanske en ny arbetsrymd, eller (3) kanske från arbetsrymden till skrivarens färgsystem. </para>
+
+        <tip>
+            <para
+>Matematiskt sett, vid beräkning av en transform normaliseras RGB-värdena, de resulterande talen upphöjs till en lämplig exponent beroende på respektive gamma för ingående färgsystem, och resultaten normaliseras igen till en ny uppsättning RGB-värden. LCMS gör det åt dig när du ber LCMS att konvertera från ett färgsystem till ett annat. Om ALLT du gör är att konvertera från ett färgsystem till samma färgsystem förutom annorlunda gamma, använd ImageMagick istället för LCMS och behandla bara RGB-värdena direkt: resultatet kommer att bli noggrannare. </para>
+        </tip>
+
+        <para
+>En praktisk konsekvens av en arbetsrymds gamma är att ju större gamma är, desto fler diskreta färgtoner är tillgängliga för redigering i skuggorna, med motsvarande färre färgtoner tillgängliga i dagrarna. Teoretiskt sett, om man arbetar på en (finstämd) bild med mörka färgtoner vill man ha en arbetsrymd med större gamma. Och om man arbetar på en briljant bild, säg en bild taken i solljus mitt på dagen av en bröllopsklänning med snö i bakgrunden, kanske man bör välja en arbetsrymd med mindre gamma, så att det finns fler graderingar av färgtoner i dagrarna. Men i verkligheten med verklig bildredigering, använder nästan alla antingen arbetsrymder med gamma 1,8 eller 2,2. </para>
+
+        <para
+>Vissa personer försöker standardisera på gamma 2,0. sRGB och L*-RGB är inte gamma-baserade arbetsrymder. Istället använder sRGB <ulink url="https://en.wikipedia.org/wiki/SRGB"
+>hybridgamma</ulink
+> och L*-RGB använder en ljusstyrkebaserad färgtonssvarskurva istället för ett gammavärde: se <ulink url="http://www.colormanagement.org/en/workingspaces.html"
+>här</ulink
+> för mer information, och leta vidare på Google efter mer djupgående information. </para>
+
+        <para
+>Förutom gamma 1,8 och gamma 2,2, är det enda andra gammavärdet för arbetsrymder som nämns eller används i större utsträckning gamma 1,0, också kallat linjärt gamma. <emphasis
+>Linjärt gamma</emphasis
+> används vid HDR (stort dynamiskt omfång) bildhantering, och dessutom om man vill undvika att introducera gamma-relaterade fel i vanlig redigering med litet dynamiskt omfång. Gamma-relaterade fel är ett ämne utanför den här handledningens omfattning, men se <ulink url="http://www.4p8.com/eric.brasseur/gamma.html"
+>Gamma-fel</ulink
+> vid <ulink url="http://www.21stcenturyshoebox.com/essays/color_reproduction.html"
+>skalning av bilder</ulink
+> för gamma-relaterade skiftningar av tonfärg. </para>
+
+        <para
+>Dessvärre och trots deras uppenbara matematiska fördelar, har arbetsrymder med linjärt gamma (enligt min mening) så få färgtoner i skuggorna att de är omöjliga att använda vid redigering om man arbetar med 8 bitar, och fortfarande problematiska med 16 bitar. När dagen kommer då vi alla redigerar 32-bitars filer skapade av HDR-kameror på vår personliga superdator, förutsäger jag att vi kommer att använda arbetsrymder med gamma 1. Adobe Lightroom använder redan en arbetsrymd med linjärt gamma "i det fördolda" och Lightzone har alltid använt en arbetsrymd med linjärt gamma. </para>
+
+        <para
+>Vilken arbetsrymd: <emphasis
+>stort tonomfång</emphasis
+> eller <emphasis
+>litet tonomfång</emphasis
+> </para>
+
+        <para
+>En viktig hänsyn vid val av arbetsrymd är att vissa arbetsrymder är större än andra, vilket betyder att de täcker mer av det synliga spektrat (och inkluderar kanske till och med några imaginära färger, matematiska begrepp som egentligen inte finns). De större arbetsrymderna erbjuder fördelen av att kunna behålla alla färger som kameran lagrade och som bevarades av LCMS vid konverteringen från kameraprofilen till den verkligt stora profilsambandsrymden. </para>
+
+        <para
+>Men att behålla alla tänkbara färger har ett pris. Det verkar som om vilken given digital bild som helst (bilder av gula påskliljor med mättade gula färger är vanliga undantag) troligen bara innehåller en liten delmängd av alla möjliga synliga färger som kameran klarar av att avbilda. Den lilla delmängden får enkelt rum i en av de mindre arbetsrymderna. Att använda en mycket stor arbetsrymd betyder att redigering av bilden (använda kurvor, öka färgmättnaden, etc.) enkelt kan skapa färger som den slutliga utmatningsenheten (skrivare, bildskärm) helt enkelt inte kan återge. Alltså måste konverteringen från arbetsrymden till utenhetens färgrymd (som skrivarens) avbilda färgerna utanför tonomfånget i den redigerade bilden, där vissa till och med kan vara fullständigt imaginära, till skrivarens färgrymd med dess mycket mindre tonomfång, vilket i bästa fall leder till inexakta färger och i värsta fall till färgbandning (luckor i vad som skulle vara en jämn färgövergång, kanske över en blå himmelsvidd) och beskärning (t.ex. noggrant framställda dämpade övergångar mellan skira röda nyanser, kan exempelvis avbildas till ett enda parti matt röd efter konvertering till skrivarens färgrymd). </para>
+
+        <para
+>Med andra ord, oriktigt hanterade arbetsrymder med stort tonomfång kan orsaka förlust av information vid utmatning. Arbetsrymder med litet tonomfång kan beskära information vid inmatning. Som framgår av Wikipedia, är det en kompromiss. Här följer några ofta upprepade råd: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>Använd (någon av) sRGB (varianterna, det finns flera) för bilder avsedda för webben. </para
+></listitem>
+
+            <listitem
+><para
+>För att få störst noggrannhet vid bildredigering (det vill säga, få ut så mycket som möjligt av dina "bitar" med minst risk för bandning och klippning när du konverterar bilden från arbetsrymden till en utmatningsrymd), använd den minsta arbetsrymd som omfattar alla färger i motivet du fotograferade, plus lite extra utrymme för de nya färger du med avsikt skapar när du redigerar. </para
+></listitem>
+
+            <listitem
+><para
+>Om du arbetar med 8-bitar istället för 16-bitar, välj en mindre rymd istället för en större. </para
+></listitem>
+
+            <listitem
+><para
+>Konvertera den obehandlade filen till en 16-bitars TIFF-fil med en arbetsrymd som har stort tonomfång för att undvika att förlora färginformation, i arkiveringssyfte. Konvertera därefter den arkiverade TIFF-filen till vald arbetsrymd med normalt eller stort tonomfång (spara förstås arbetskopian med ett nytt namn). Se <ulink url="http://simon.tindemans.eu/essays/scenereferredworkflow"
+>här</ulink
+> för mer detaljinformation. </para
+></listitem>
+
+        </orderedlist>
+
+        <para
+>Varför dessa små råd rörande vilken arbetsrymd att välja ges är utanför den här handledningens omfattning. Se Bruce Lindblooms utmärkta webbplats (<ulink url="http://www.brucelindbloom.com/"
+>Info, Information about RGB Working Spaces</ulink
+>) för en visuell jämförelse av tonomfånget (fält av färger som ingår) i de olika arbetsrymderna. Se <ulink url="http://www.luminous-landscape.com/tutorials/prophoto-rgb.shtml"
+>här</ulink
+> och <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm"
+>här</ulink
+> för presentationer av respektive fördelar och nackdelar av att använda arbetsrymder med stort tonomfång. Och när du ändå är på webbplatsen <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm"
+>cambridgeincolour.com</ulink
+>, titta på handledningen om färghantering. </para>
+
+    </sect3>
+
+    <sect3 id="softproofing">
+        <title
+>Bildskärmskorrektur</title>
+
+        <para
+>Bildskärmskorrektur är ett sätt att på skärmen (bildskärmen) förhandsgranska resultatet som kan förväntas vid utmatning av en annan enhet, typiskt en skrivare. Bildskärmskorrektur visar skillnaden som kan förväntas innan du gör utskriften (och slösar bort dyrt bläck). Du kan alltså förbättra inställningarna utan att slösa tid och pengar. </para>
+
+    </sect3>
+
+    <sect3 id="rendering-intention">
+        <title
+>Återgivningsalternativ</title>
+
+        <para
+>Återgivningsalternativ avser sättet som tonomfång hanteras när avsett målfärgsystem inte kan hantera det fullständiga tonomfånget. </para>
+
+        <itemizedlist>
+
+            <listitem
+><para
+><emphasis
+>Perceptuell</emphasis
+>, också känd som 'Bild' eller 'Behåll fullständigt tonomfång'. Den rekommenderas i allmänhet för fotografiska bilder. Tonomfånget expanderas eller trycks ihop vid byte mellan färgsystem för att behålla ett övergripande konsekvent utseende. Färger med liten färgmättnad ändras mycket lite. Färger med större färgmättnad inom båda färgsystemens tonomfång kan ändras för att skilja dem från mättade färger utanför det mindre färgsystemets tonomfång. Perceptuell återgivning utför samma komprimering av tonomfång för alla bilder, även om bilden inte innehåller några signifikanta färger utanför tonomfånget. </para
+></listitem>
+
+            <listitem
+><para
+><emphasis
+>Relativt färgläge</emphasis
+>, också känt som 'Korrektur' eller 'Bevara identiska färger och vitpunkt'. Reproducerar färger inom tonområdet exakt och beskär färger utanför tonområdet till närmast återgivningsbara färgton. </para
+></listitem>
+
+            <listitem
+><para
+><emphasis
+>Absolut färgläge</emphasis
+>, också känt som 'Matcha' eller 'Bevara identiska färger'. Reproducerar färger inom tonomfånget exakt och beskär färger utanför tonomfånget till närmaste återgivningsbara färgton, och offrar färgmättnad och möjligen ljusstyrka. På tonat papper kan vita färger göras mörkare för att behålla identisk färgton som originalet, till exempel kan turkos läggas till i det vita på gräddfärgat papper, vilket leder till att bilden blir mörkare. Sällan intressant för fotografer. </para
+></listitem>
+
+            <listitem
+><para
+><emphasis
+>Färgmättnad</emphasis
+>, också känt som 'Grafik' eller 'Bevara färgmättnad'. Avbildar de mättade grundfärgerna i källan till mättade grundfärger i resultatet, och bortser från skillnader i färgton, färgmättnad eller ljusstyrka. För blockgrafik, sällan av intresse för fotografer. </para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+    <sect3 id="iccprofile-links">
+        <title
+>Länkar</title>
+
+        <itemizedlist>
+
+            <listitem
+><para>
+                <ulink url="http://www.oyranos.org/wiki/index.php?title=Main_Page"
+>Färg-wiki</ulink>
+            </para
+></listitem>
+
+            <listitem
+><para>
+                <ulink url="https://en.wikipedia.org/wiki/Lab_color_space#CIELAB"
+>CIELab</ulink>
+            </para
+></listitem>
+
+            <listitem
+><para>
+                <ulink url="http://en.wikipedia.org/wiki/Gamut"
+>Förklaring av tonomfång</ulink>
+            </para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

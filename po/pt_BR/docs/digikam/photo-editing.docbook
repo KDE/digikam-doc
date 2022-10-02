@@ -1,0 +1,497 @@
+ <sect1 id="photographic-editing"
+>   <title
+>Edição Fotográfica - Fluxo de Trabalho</title>
+
+   <sect2 id="image-editing-tools"
+>             <title
+>Ferramentas de Edição de Imagens/Fluxo de Trabalho</title>
+    <sect3 id="standard-workflow"
+>              <title
+>Uma Proposta de Fluxo de Trabalho Normal</title>
+      <para
+>Ao efetuar um fluxo de trabalho básico, as áreas primárias em consideração são: <orderedlist
+> <listitem
+><para
+>Exposição: <link linkend="whitebalance"
+>Balanceamento de Branco</link
+></para
+></listitem
+> <listitem
+><para
+>Cor: <link linkend="whitebalance"
+>Balanceamento de Branco</link
+></para
+></listitem
+> <listitem
+><para
+>Pontos pretos e brancos: <link linkend="whitebalance"
+>Balanceamento de Branco</link
+> ou <link linkend="adjustlevels"
+>Ajuste de Níveis</link
+></para
+></listitem
+> <listitem
+><para
+>Contraste: <link linkend="adjustcurves"
+>Ajuste de Curvas</link
+></para
+></listitem
+> <listitem
+><para
+>Saturação: <link linkend="whitebalance"
+>Balanceamento de Branco</link
+> ou <link linkend="coloreffects"
+>Vivo</link
+> ou <link linkend="using-correctingcolor"
+>Tom/Saturação/Luminosidade</link
+></para
+></listitem
+> <listitem
+><para
+>Dimensionamento (interpolação) : <link linkend="resize"
+>Mudar o Tamanho</link
+></para
+></listitem
+> <listitem
+><para
+><link linkend="sharpening"
+>Aumento de Definição</link
+></para
+></listitem
+> <listitem
+><para
+><ulink url="help:/digikam/inedex.html#dam"
+>Gestão de Dados Digitais</ulink
+> (aplicação de etiquetas, títulos, classificação, geo-localização, gravação com outro nome)</para
+></listitem
+> </orderedlist
+> Recomenda-se esta sequência de passos de edição de imagens para garantir uma qualidade fotográfica ótima para o produto final. Em particular, nunca faça o afiamento antes do passo final. Recomenda-se também que use um formato sem perdas como o PNG ou o TIFF para guardar fotografias. Caso contrário, irá perder sempre um pouco quando salvar os resultados. Se possível, use 16 bits/canal para as suas melhores fotografias. Se quiser mudar o espaço de cores - em particular, se quiser trabalhar em CIEL*a*b -, são necessários 16 bits por canal para evitar efeitos de recorte. </para>
+        <para
+>Se você trocar os passos 4 e 5, o que é bem possível se o contraste inicial já for muito bom, poderá fazer os primeiros 4 ajustes no mesmo plugin, o balanceamento de branco</para>
+        <para
+>Muitas das ferramentas que poderá necessitar para a edição fotográfica estão incluídas com o &digikam;. Segue-se a sua descrição. </para>
+    </sect3>
+
+    <sect3
+>      <title
+>Introdução às funcionalidades de edição comuns</title>
+      <para
+>Todas as ferramentas do Editor de Imagens, como o Afiamento, o Borrão, a Redução de Ruído, a Refocagem, a Máscara Não-Afiada, &etc;, usam um estilo comum de janelas, que antevê o efeito antes de aplicar o filtro à imagem atual. Abaixo, você poderá ver a ferramenta para &quot;Aplicar uma Textura&quot; em ação, usando este leiaute de janelas comum: </para>
+
+      <example>
+        <title
+>A Ferramenta para Aplicar uma Textura em Ação</title>
+        <screenshot>
+          <screeninfo
+>A Ferramenta para Aplicar uma Textura em Ação</screeninfo>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="&path;editorcommondialogtools.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot>
+      </example>
+
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para
+><emphasis
+>(1)</emphasis
+>: Os sete botões permitem-lhe selecionar o estilo do modo comparativo da área de antevisão. Os modos são: <itemizedlist>
+                <listitem
+>         <para
+>Imagem original</para
+>             </listitem>
+                <listitem>
+                  <para
+>Separar verticalmente sem duplicação. A área esquerda mostra a imagem original e a direita mostra o filtro aplicado à continuação da área ampliada selecionada.</para>
+                </listitem>
+                <listitem>
+                  <para
+>Separar horizontalmente sem duplicação. A área superior mostra a imagem original e a inferior mostra o filtro aplicado à continuação da área ampliada selecionada.</para>
+                </listitem>
+                <listitem>
+                  <para
+>Separar verticalmente. A área esquerda mostra a imagem original e a direita o efeito do filtro, para fins de comparação.</para>
+                </listitem>
+                <listitem>
+                  <para
+>Separar horizontalmente. A área superior mostra a imagem original e a inferior o efeito do filtro, para fins de comparação.</para>
+                </listitem>
+                <listitem>
+                  <para
+>Antevisão do efeito. Esta é uma antevisão ao vivo do efeito sem comparação.</para>
+                </listitem>
+                <listitem>
+                  <para
+>Estilo 'Mouse à passagem': antevisão quando o cursor está fora da antevisão (na área de configuração); caso contrário, mostra o original.</para>
+                </listitem>
+              </itemizedlist>
+            </para>
+          </listitem>
+          <listitem>
+            <para
+><emphasis
+>(2)</emphasis
+>: Existem dois botões que poderão ser comutados para mostrar a sobreexposição ou subexposição. As cores poderão ser personalizadas na <link linkend="setupdialog.anchor"
+>página geral de configuração</link
+>.</para>
+          </listitem>
+          <listitem>
+            <para
+><emphasis
+>(3)</emphasis
+>: A área do seletor da antevisão. Clique e arraste com o mouse a moldura flutuante, de modo a posicioná-la na imagem. A área de antevisão à esquerda da janela será atualizada de acordo com isso.</para>
+          </listitem>
+          <listitem>
+            <para
+><emphasis
+>(4)</emphasis
+>: A área de configuração do filtro ou plugin.</para>
+          </listitem>
+          <listitem>
+            <para
+><emphasis
+>(5)</emphasis
+>: No canto inferior esquerdo: existe um botão de ajuda e de restauração das predefinições (toda a configuração é recordada a partir da última utilização do plugin).</para>
+          </listitem>
+          <listitem>
+            <para
+><emphasis
+>(6)</emphasis
+>: Existe um indicador de progresso para os plugins com cálculos envolvidos.</para>
+          </listitem>
+        </itemizedlist>
+
+      </para>
+    </sect3>
+
+    <sect3
+>      <title
+>O conjunto de ferramentas do &digikam;</title>
+     <itemizedlist>
+
+   <listitem
+><para
+>Cores da Imagem <itemizedlist>
+      <listitem
+><para
+><link linkend="auto-correction"
+>Correção Automática</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="exposure-correct"
+>Brilho/Contraste/Gama</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="using-correctingcolor"
+>Tom/Saturação/Luminosidade</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="colorbalancetool.anchor"
+>Balanceamento de cor</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="blackandwhite-conversion"
+>Preto e Branco</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="encoding-depth"
+>Profundidade da Codificação</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="color-management"
+>Gerenciamento de cores</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="adjustlevels"
+>Ajuste de Níveis</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="coloreffects"
+>Efeitos de Cores (Solarizar, Vivo, Néon, Margens)</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="whitebalance"
+>Balanceamento de Branco/Exposição/Saturação</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="adjustcurves"
+>Ajuste de Curvas</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="channelmixer"
+>Mistura de Canais</link
+></para
+></listitem>
+      </itemizedlist>
+   </para
+></listitem>
+
+   <listitem
+><para
+>Melhoramento da Imagem <itemizedlist>
+      <listitem
+><para
+><link linkend="sharpening"
+>Aumento de definição (afiamento, máscara não-afiada, refocagem)</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="using-blurfilter"
+>Ferramenta de Borrão</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="using-redeyecorrection"
+>Remoção de Olhos Vermelhos</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="inpainting"
+>Pintura Interior de Fotografias</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="noisereduction"
+>Redução de Ruído &amp; borrão</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="hotpixels"
+>Correção de Pixels Queimados</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="lensdistortion"
+>Correção de Distorção de Lentes</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="restoration"
+>Restauração de Fotografias</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="vignettingcorrection"
+>Ferramenta de Correção da Vinheta</link
+></para
+></listitem>
+      </itemizedlist>
+   </para
+></listitem>
+
+   <listitem
+><para
+>Ferramentas de Transformação da Imagem <itemizedlist>
+      <listitem
+><para
+><link linkend="resize"
+>Mudar de Tamanho (redução e ampliação)</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="freerotation"
+>Rotação Livre</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="perspective"
+>Ajuste de Perspectiva</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="sheartool"
+>Ferramenta de Inclinação</link
+></para
+></listitem>
+      </itemizedlist>
+   </para
+></listitem>
+
+   <listitem
+><para
+>Decoração da Imagem <itemizedlist>
+      <listitem
+><para
+><link linkend="border"
+>Adicionar borda</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="inserttext"
+>Inserir um Texto</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="superimpose"
+>Sobrepor Modelo</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="texture"
+>Aplicar Textura</link
+></para
+></listitem>
+      </itemizedlist>
+   </para
+></listitem>
+
+   <listitem
+><para
+>Filtros de Efeitos Especiais <itemizedlist>
+      <listitem
+><para
+><link linkend="infrared"
+>Simular um Filme de Infravermelho.</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="filmgrain"
+>Adicionar Grão ao Filme.</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="oilpaint"
+>Simular uma Pintura a Óleo</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="charcoal"
+>Simular um Desenho a Carvão.</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="emboss"
+>Gravar uma Fotografia em Relevo.</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="distortionfx"
+>Efeitos de Distorção.</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="blurfx"
+>Efeitos de Borrão.</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="raindrops"
+>Adicionar Pingos de Chuva</link
+></para
+></listitem>
+      </itemizedlist>
+   </para
+></listitem>
+
+   </itemizedlist>
+     </sect3>
+
+   </sect2>
+
+            <sect2 id="raw-workflow"
+>  <title
+>Processamento de arquivos de imagem RAW, fluxo do RAW</title>
+            <anchor id="rawprocessing.anchor"/>
+
+             <para
+>Um fluxo de trabalho do RAW típico com o &digikam; poder-se-á basear nestes passos:</para>
+             <itemizedlist>
+               <listitem
+><para
+>Configuração das preferências de conversão e gerenciamento de cores no RAW <itemizedlist>
+                  <listitem
+><para
+>obter os perfis de cores do ICC da câmera, monitor e impressora</para
+></listitem>
+                  <listitem
+><para
+>configurar o &digikam; corretamente, definindo um espaço de trabalho para cores </para
+></listitem>
+                 </itemizedlist>
+               </para
+></listitem>
+               <listitem
+><para
+>Configuração do ponto-branco da máquina</para
+></listitem>
+               <listitem
+><para
+>Remoção do efeito de mosaico (inclui a interpolação, filtragem de ruído e <ulink url="help:/digikam/using-setup.html#CA.anchor"
+>correção da aberração cromática</ulink
+> </para
+></listitem>
+               <listitem
+><para
+>Conversão para um espaço de cores</para
+> </listitem>
+               <listitem
+><para
+>Correção do gama, mapeamento de tons</para
+> </listitem>
+               <listitem
+><para
+>Atribuição do perfil de cores</para
+> </listitem>
+               <listitem
+><para
+>Expansão dinâmica do intervalo (opcional)</para
+></listitem>
+               <listitem
+><para
+>Continuar com o <link linkend="standard-workflow"
+>fluxo normal de trabalho</link
+></para
+></listitem>
+             </itemizedlist>
+
+             <para
+>A partir daqui tudo é simples; selecione uma imagem RAW e abra-a no editor. A janela de gerenciamento de cores será apresentada depois de a imagem ser processada, de modo a ajustar a representação das cores. Sem a gestão de cores, todas as imagens ficam muito escuras; isto é normal. Você poderá experimentar os vários perfis que tem à disposição, de modo a selecionar o melhor perfil de entrada de acordo com a sua imagem (alguns tendem a ser bastante neutros, até desnecessários, outros dão resultados mais saturados, &etc;). </para>
+            </sect2>
+&doc-editor-color; &doc-editor-enhance; &doc-editor-transform; &doc-editor-decorate; &doc-editor-filters; </sect1>
+

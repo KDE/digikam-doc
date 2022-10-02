@@ -1,0 +1,55 @@
+<sect3 id="using-setup-editor-save">
+    <title
+>Opzioni di salvataggio delle immagini</title>
+
+    <para
+>Quando si modificano dei file JPEG che sono salvati sul disco fisso, questi devono essere ricodificati, e ogni volta che ciò accade deve essere presa una decisione sul livello di qualità da applicare. Sfortunatamente infatti, esso non viene registrato nel file dell'immagine; ciò vuol dire che l'editor di immagini non può usare lo stesso rapporto di qualità dell'immagine originale quando salva un'immagine modificata. Puoi cambiare il livello predefinito della qualità che sarà applicata dall'editor di immagini in questi casi spostando il cursore <guilabel
+>Qualità JPEG</guilabel
+> (1: bassa qualità, 100: alta qualità e senza compressione). In questo momento i metadati sono supportati. </para>
+
+    <para
+>Il sotto-campionamento del colore è la pratica di codificare le immagini implementando una maggior risoluzione per l'informazione della luminanza che per quella del colore. Leggi <ulink url="https://it.wikipedia.org/wiki/Sottocampionamento_della_crominanza"
+> questo </ulink
+> articolo di wikipedia per una spiegazione completa. </para>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-editor-save.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+    <para
+>Con l'opzione <guilabel
+>Compressione PNG</guilabel
+> puoi ridurre le dimensioni dei file PNG. Questa operazione non riduce la qualità dell'immagine, perché PNG usa un algoritmo senza perdita. L'unico effetto è che i dati dell'immagine richiedono più tempo per la compressione e per la decompressione. Se hai un computer veloce puoi cambiare questo valore per usare un alto fattore di compressione (1: bassa compressione, 9: alta compressione). In questo momento i metadati sono supportati. </para>
+
+    <para
+>Con l'opzione <guilabel
+>Comprimi file TIFF</guilabel
+> puoi attivare l'uso dell'algoritmo di compressione <emphasis
+>Deflate</emphasis
+> per i file delle immagini TIFF; ciò ridurrà le loro dimensioni. Non ha nessun effetto sulla qualità delle immagini, perché <emphasis
+>Deflate</emphasis
+> è un algoritmo senza perdita. In questo momento i metadati sono supportati. </para>
+
+    <para
+>Con l'opzione <guilabel
+>File JPEG 2000 senza perdita</guilabel
+> è possibile avere un salvataggio senza perdita o, se è selezionata l'opzione con perdita, la qualità a pari dimensioni del file è molto migliore del formato JPEG normale. In questo momento i metadati sono supportati. </para>
+
+    <para
+>Con l'opzione <guilabel
+>File PGF senza perdita</guilabel
+> è possibile avere un salvataggio senza perdita o, se è selezionata l'opzione con perdita, la qualità a pari dimensioni del file è molto migliore del formato JPEG-2000 normale. In questo momento i metadati sono supportati. </para>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

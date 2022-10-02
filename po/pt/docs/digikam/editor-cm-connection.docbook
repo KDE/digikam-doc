@@ -1,0 +1,350 @@
+<sect2 id="editor-cm-connection"
+> <title
+>As Ligações aos Espaços de Cores</title>
+
+    <para
+>Como tal, a questão para cada trio de valores RGB no (apenas como exemplo) TIFF de 16 bits produzido pelo 'dcraw' passa a ser, "O que significa um trio de valores RGB dos pixels em particular que compõem as imagens produzidas por esta câmara em particular (marca e modelo) nos termos de alguma referência-padrão absoluta, no que faz referência um observador ideal qualquer". Esta norma absoluta que referencia um observador ideal é normalmente chamada de <emphasis
+>Espaço de Ligação de Perfis</emphasis
+>. O perfil de uma câmara é necessário para caracterizar ou descrever de forma precisa a resposta em pixels de uma dada câmara face à luz que entra na mesma, para que os valores RGB no ficheiro de saída produzido pelo conversor de RAW possam ser traduzidos primeiro para um Espaço de Ligação de Perfis (PCS) absoluto e depois sim do PCS para o seu espaço de trabalho escolhido. Como tópico colateral importante, para a maioria do mundo 'open source' (incluindo o digiKam), o 'software' usado para traduzir do perfil da câmara para o PCS e do PCS para o seu espaço de trabalho escolhido e, eventualmente, para o seu espaço de saída (para impressão ou visualização no ecrã), baseia-se no LCMS (o <ulink url="http://littlecms.com"
+>little color management engine - pequeno motor de gestão de cores</ulink
+>). No que dá a entender, em alguns testes dá a noção que o LCMS produz conversões ainda mais precisas que o próprio motor proprietário de conversão de cores da Adobe. Para além disso para quase todos os programas de conversão de RAW, incluindo os programas fechados e comerciais, como o Adobe Photoshop, a conversão RAW baseia-se tipicamente na descodificação do ficheiro RAW proprietário pelo 'dcraw'. David Coffin, autor do 'dcraw', é o herói da conversão para RAW - sem ele, estaríamos presos a usar as aplicações proprietárias em Mac/Windows que só o 'software' proprietário que vem com as câmaras traz. Os algoritmos de interpolação do 'dcraw' (não confundir com a descodificação mencionada anteriormente do ficheiro RAW proprietário) que fazem parte do &digikam;, se usados adequadamente, produzem resultados iguais ou superiores às aplicações comerciais e fechadas. Nós no mundo do Linux e do 'Software' Livre não somos cidadãos de segunda classe no que diz respeito à fotografia digital. Longe disso. </para>
+
+    <para
+>Existem dois Espaços de Ligação de Perfis comuns - o CIELAB e o CIEXYZ (veja em <ulink url="http://en.wikipedia.org/wiki/Color_management"
+>Gestão de Cores</ulink
+>, na secção de tradução de cores, e veja depois o CIELAB e o CIEXYZ na Wikipédia). O LCMS usa o perfil da máquina para traduzir os valores RGB do ficheiro RAW interpolado, isto é, o TIFF produzido pelo 'dcraw', para o Espaço de Ligação de Perfis (normalmente o CIEXYZ - porquê o CIEXYZ? Não houve tempo para aprender outros). Um espaço de ligação de perfis não é um espaço de trabalho em si. Em vez disso, um PCS é um espaço absoluto de referência que só é usado para traduzir de um espaço de cores para outro - pense num PCS como sendo um Tradutor Universal para todos os perfis de cores que uma imagem poderá encontrar no seu percurso desde o ficheiro RAW da máquina até ao resultado final: </para>
+
+    <orderedlist>
+
+        <listitem
+><para
+>O LCMS usa o perfil da máquina, que também é chamado de perfil de entrada, para traduzir os números RGB interpolados e produzidos pelo 'dcraw', que só fazem sentido em relação à sua máquina (marca e modelo), para um segundo conjunto de números RGB que só fazem sentido no Espaço de Ligação do Perfil. </para
+></listitem>
+
+        <listitem
+><para
+>O LCMS traduz os números RGB do Espaço de Ligação de Perfis  para os números correspondentes no seu espaço de trabalho escolhido, para que possa editar a sua imagem. Mais uma vez, estes números SÓ fazem sentido em relação a um espaço de trabalho indicado. O mesmo vermelho, falando a nível visual, é representado por diferentes trios de números RGB em diferentes espaços de trabalho; e, se atribuir o perfil errado, a imagem irá aparecer mal, ligeiramente mal ou completamente mal, dependendo das diferenças entre os dois perfis. </para
+></listitem>
+
+        <listitem
+><para
+>Enquanto está a editar a sua imagem no seu espaço de trabalho escolhido, o LCMS deverá traduzir todos os números RGB de volta para o PCS, e finalmente para os números RGB correctos que permitem ao seu monitor (o seu dispositivo de visualização) lhe dar a representação mais aproximada da sua imagem, como está a ser editada. Esta tradução é feita na altura e nem dá por ela ocorrer, a menos que não esteja a ser feita correctamente - aí a imagem apresentada simplesmente irá aparecer mal (melhor ou pior). </para
+></listitem>
+
+        <listitem
+><para
+>Quando estiver satisfeito com a sua imagem editada e estiver disposto a partilhá-la com o mundo, o LCMS traduz de volta os números RGB do espaço de trabalho para o espaço do PCS e de novo para o espaço da impressora, usando um perfil que caracteriza a sua combinação de papel/impressora (se planear imprimir a imagem) ou para o sRGB (se planear mostrar a imagem na Web ou a enviar para os amigos por e-mail ou ainda para alguma apresentação em monitores que não o seu). </para
+></listitem>
+
+    </orderedlist>
+
+    <para
+>Para voltar atrás um pouco e ver o primeiro perfil de cores que uma imagem encontra, isto é o perfil da câmara (ver o (1) imediatamente acima) - o 'dcraw' consegue de facto aplicar o perfil da sua câmara por si (o 'dcraw' usa o 'lcms' internamente). Contudo, (i) a geração do TIFF composto pelos valores RGB interpolados  e derivados do ficheiro RAW da câmara e (ii) a aplicação do perfil da câmara ao ficheiro interpolado, são dois passos bastante distintos e totalmente separados (pelo menos na teoria e prática no 'dcraw'; na teoria na maioria dos outros conversores RAW). O resultado das opções da linha de comandos 'dcraw' "-o 0 [Cor RAW (única em cada câmara)] -4 [16-bit linear] -T [tiff]" diz ao 'dcraw' para produzir os números RGB a partir da interpolação RAW para um TIFF sem aplicar nenhum perfil de entrada da câmara (as palavras entre parêntesis explicam as opções mas não devem ser introduzidas na linha de comandos). Então, se realmente gostar de trabalhar a partir da linha de comandos, poderá usar o utilitário do LCMS 'tifficc' para aplicar você mesmo o perfil da sua câmara. A vantagem de o fazer é que poderá dizer ao LCMS para usar uma conversão de alta qualidade (o 'dcraw' parece usar a versão de qualidade média por omissão). A desvantagem, como é óbvio, é que a aplicação do perfil da sua câmara a partir da linha de comandos adiciona um passo extra ao seu fluxo de trabalho do RAW. </para>
+
+    <sect3 id="using-iccprofile">
+        <title
+>Onde encontrar perfis das máquinas</title>
+
+        <para
+>Por isso, onde é que se podem obter esses perfis específicos alusivos e necessários para traduzir os ficheiros RAW interpolados para um espaço de cores de trabalho? A secção da <ulink url="http://ufraw.sourceforge.net/Colors.html"
+>página Web do UFRAW</ulink
+> sobre a gestão de cores tem algumas informações sobre onde encontrar alguns perfis já feitos para máquinas fotográficas. É um facto infeliz da imagem digital que os perfis fornecidos pela Canon, Nikon, entre outros, não funcionem tão bem com os conversores RAW que não sejam os do próprio fabricante. É por isso que a Bibble e a Phase One (e a Adobe, mas a ACR esconde os perfis dentro do código do programa), por exemplo, têm de criar os seus próprios perfis para todas as máquinas que suportam - tenha em mente esta tendência proprietária da próxima vez que escolher uma máquina digital. </para>
+
+        <para
+>Voltando à pesquisa de um perfil de câmara para a sua câmara - a resposta verdadeira (assumindo que não encontra um perfil já pronto que o satisfaça) é criar o seu próprio perfil de câmara ou pedir para lhe criarem um. Existem alguns serviços comerciais que oferecem serviços de perfis (obviamente através de uma taxa). Ou então poderá usar o LPRof ou o Argyll para criar você mesmo um perfil para a sua câmara. O autor ainda não investigou o suficiente para saber se é fácil ou difícil o processo de criação de um perfil de câmara. Mas o mesmo imagina, sabendo quão meticulosas são as pessoas por trás do Argyll, LPRof, e LCMS no que respeita à gestão de cores, que a criação do perfil da sua câmara é bastante exequível e provavelmente os resultados até serão melhores do que usando um perfil proprietário. No fim de tudo, a Canon (assim como a Bibble e a Phase One nesse aspecto) não tinham criado um perfil para a câmara DO AUTOR - apenas criaram um perfil para uma máquina parecida com essa. </para>
+
+        <para
+>Espaços de Trabalho: </para>
+
+        <para
+>Por isso, agora o seu ficheiro RAW foi interpolado pelo 'dcraw', obteve um perfil da máquina e usou o 'tifficc' do LCMS para aplicar o perfil da sua máquina ao TIFF produzido pelo 'dcraw' (ou pediu ao 'dcraw' para lho aplicar por si). O que é que significa tudo isto? A resposta real implica alguma matemática e a ciência da cor está fora do âmbito do autor e do leitor. A resposta prática é que nem o perfil da máquina nem o Espaço de Ligação dos Perfis é um espaço apropriado para a edição da imagem. O seu próximo passo é escolher um espaço de trabalho para a edição da imagem. Depois, você (ou o motor de gestão de cores LCMS que usa a sua aplicação) deverá efectuar uma tradução dupla. Primeiro o LCMS usa o perfil da máquina para traduzir os valores RGB de cada pixel na imagem resultante do 'dcraw' do Espaço de Ligação de Perfis indicado anteriormente. Depois, traduz os valores RGB de cada pixel do PCS para o seu espaço de trabalho. </para>
+
+        <para
+>Confusões e terminologias confusas: </para>
+
+        <para
+>Antes de falar mais sobre os espaços de trabalho, é necessário clarificar algumas confusões e termos confusos: </para>
+
+        <para
+>Em primeiro lugar, o sRGB é tanto um espaço de cores de trabalho como um espaço de saída para as imagens destinadas à Web e à visualização nos ecrãs (se tiver um óptimo monitor com um gamute superior ao definido pelo sRGB, obviamente poderá querer considerar qual o perfil a usar para tirar o melhor partido do seu monitor devidamente calibrado e definido, mas converta primeiro a sua imagem para sRGB, antes de a enviar para os seus amigos!). O sRGB também é o espaço de cores para que as diversas impressoras domésticas e industriais deverão estar configuradas quando forem enviadas imagens para estas. Mais uma vez, é também o espaço de cores que a maioria dos programas irá assumir, caso não exista um perfil de cores incorporado que indique ao programa como deverão ser interpretados os valores RGB. Por isso, se optar por não usar a gestão de cores, as suas opções são simples - configure tudo com o sRGB. </para>
+
+        <para
+>Em segundo lugar, todos os JPEG's produzidos (ou TIFF's, se tiver uma máquina antiga Minolta Dimage) que saem directamente da máquina (mesmo que sejam produzidos por máquinas instantâneas, que não lhe permitem gravar um ficheiro RAW) iniciam a sua vida como um ficheiro RAW produzido pelo conversor A-D da máquina. Se gravar as suas imagens como JPEG's, então o processador da máquina faz uma interpolação o ficheiro RAW, atribui um perfil da máquina, traduz os números RGB resultantes para um espaço de trabalho (normalmente a sRGB, mas poderá também escolher a AdobeRGB, dependendo da máquina), faz a compressão do JPEG e guarda o ficheiro JPEG no seu cartão de memória. Como tal, os JPEG's (ou TIFF's) da sua máquina NUNCA precisam de ter um perfil associado e traduzidos depois por um PCS para um espaço de trabalho. Os JPEG's de uma máquina já estão num espaço de trabalho. </para>
+
+        <para
+>Em terceiro lugar, no caso de alguém não ter a certeza sobre este ponto, lembre-se que um ficheiro RAW interpolado já não é mais um ficheiro RAW - foi interpolado e transformado num ficheiro TIFF, cujos valores RGB precisam de ser traduzidos para um espaço de trabalho, usando o perfil da máquina, o PCS e o LCMS. Em quarto lugar (apenas para referência futura), para introduzir um pouco da terminologia de gestão de cores mais comum - o perfil da máquina e da sua impressora são ambos dependentes do dispositivo, enquanto o espaço de trabalho será independente do dispositivo - poderá ser usado com qualquer imagem, com qualquer aplicação de gestão de cores, sem reparar onde é que a imagem teve origem.</para>
+
+        <para
+>Em quinto lugar, foram referidas acima as palavras "traduzir" e "tradução" como uma metáfora descritiva do que o LCMS faz ao traduzir os valores RGB de um espaço de cores para outro, através do PCS. A terminologia normal e correcta é "converter" e "conversão", que será usada em baixo. Os quatro métodos de conversão de um espaço de cores para outro são: percepção, colorimétrica relativa, colorimétrica absoluta e saturação. O método de conversão que deverá usar para qualquer passo de processamento da imagem, desde o ficheiro RAW até ao ficheiro final, está para além do âmbito deste tutorial. O conselho normal é: em caso de dúvida, use a tentativa de percepção. </para>
+
+        <para
+>Em sexto lugar (e, mais uma vez, para referência futura), atribuir um perfil significa a alteração do significado dos números RGB numa imagem, incorporando um perfil novo sem alterar os valores RGB actuais e associados a cada pixel na imagem; a conversão significa a incorporação de um novo perfil, mas altera também os números RGB ao mesmo tempo, pelo que o significado dos valores RGB - isto é, a cor visível no mundo real, representada pelo trio de números RGB associados a cada pixel numa imagem - se mantém o mesmo antes e depois da conversão de um espaço para outro. Deverá ser capaz de fazer diversas conversões numa imagem de um espaço de trabalho para outro e, com um editor de imagens com uma gestão de cores adequada, mesmo que todos os números RGB da imagem se alterem com cada conversão, a  imagem no seu ecrã deverá aparecer igual (deixando de parte as pequenas e imperceptíveis, mas inevitáveis, alterações geradas pelas quebras de correspondências acumuladas de gamute e pelos erros matemáticos de arredondamentos). Contudo, sempre que atribuir um novo perfil de espaço de trabalho em vez de converter para um espaço de trabalho novo, a aparência da imagem irá alterar de forma mais ou menos drástica (normalmente para pior). </para>
+
+        <para
+>Finalmente (e este é um ponto importante e crucial), a gestão de cores NÃO é apenas relevante se fotografar em formato RAW. A gestão de cores afecta cada uma das etapas da linha de processamento da imagem, quer comece com um ficheiro RAW que você mesmo interpolou e traduziu para um ficheiro TIFF, quer se começar por um JPEG ou TIFF produzido pela sua máquina. </para>
+
+        <para
+>Espaços de trabalho com e sem direitos de cópia: </para>
+
+        <para
+>É dado como adquirido que TODOS os espaços de trabalho normais encontrados, como por exemplo: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>As diversas variantes do sRGB (ver em <ulink url="http://www.color.org/v4spec.xalter"
+>color.org</ulink
+>). </para
+></listitem>
+
+            <listitem
+><para
+><ulink url="http://www.brucelindbloom.com"
+>BruceRGB</ulink
+>. </para
+></listitem>
+
+            <listitem
+><para
+>Os diversos <ulink url="http://www.eci.org/doku.php?id=en:colourstandards:workingcolorspaces"
+>perfis</ulink
+> de espaços de trabalho do ECI (European color initiative). </para
+></listitem>
+
+            <listitem
+><para
+>O AdobeRGB, Adobe WideGamutRGB e o Kodak/Adobe ProPhotoRGB (Kodak e Adobe ProPhoto são iguais, mas com marcas diferentes) e a sua <ulink url="http://www.behrmann.name/index.php?option=com_content&amp;task=view&amp;id=34&amp;Itemid=68"
+>versão sem marca e direitos de cópia</ulink
+> (o Oyranos inclui uma versão sem marca do AdobeRGB. </para
+></listitem>
+
+            <listitem
+><para
+>E ainda mais uns outros que poderão ser adicionados a esta lista são mais ou menos adequados como espaços de trabalho. O espaço de trabalho que deverá usar depende única e exclusivamente de SI, dos SEUS requisitos como editor das SUAS imagens digitais com as SUAS eventuais intenções de saída (Web, impressão artística, etc). </para
+></listitem>
+
+        </orderedlist>
+
+        <para
+>Porém, como efeito colateral crítico, se estiver a usar os perfis do espaço de trabalho da Adobe (ou outros com direitos de cópia), estes perfis contêm informação sob protecção de direitos de cópia que aparecem na informação EXIF da sua imagem. Ultimamente, o autor tem usado as listas de correio do 'openicc' Aparentemente, o LCMS pode ser usado para produzir perfis de espaços de trabalho sem marcas e direitos de cópia que são exactamente iguais - aliás, difíceis de distinguir - aos perfis com marcas e direitos de cópia. Seria uma adição maravilhosa ao Digikam se um conjunto de perfis de espaços de trabalho sem "direitos de cópia", incluindo versões sem marca e legendadas correctamente do ProPhotoRGB, do AdobeRGB e do Adobe WidegamutRGB (talvez em duas variantes: 'gama' linear e 'gama' normal) pudesse ser fornecido como parte do pacote do &digikam;. </para>
+
+        <para
+>Qual o espaço de trabalho: 'gama' </para
+> 
+
+        <para
+>Agora, a questão seguinte é: qual o espaço de trabalho que devo usar? <ulink url="http://en.wikipedia.org/wiki/Color_management#Working_spaces"
+>O Wikipédia diz: </ulink
+> <blockquote
+><para
+>Os espaços de trabalho, como o sRGB ou o Adobe RGB, são espaços de cores que fornecem facilmente bons resultados durante a edição. Por exemplo, os pixels com valores RGB iguais deverão aparecer neutros. Usando um espaço de trabalho largo (gamute) irá levar a um efeito de poster, enquanto que um espaço de trabalho estreito irá conduzir ao recorte. Este compromisso é uma consideração para o editor crítico da imagem</para
+></blockquote>
+        </para>
+
+        <para
+>Bem, essa citação da Wikipédia é muito pouco clara e será difícil de a explicar de forma mais clara, mas segue aqui uma tentativa de definição. "Os [p]ixels com valores RGB iguais deverão aparecer neutros" significa apenas que, para qualquer pixel de uma imagem que foi convertida para um espaço de trabalho adequado, caso R = G = B, deverá ver cinzento, preto ou branco no seu ecrã. </para>
+
+        <para
+>O autor não está ao corrente de outros requisitos técnicos para um espaço de trabalho adequado, ainda que alguém possa já ter produzido uma lista assim, sem dúvida. Porém, a maioria dos perfis de espaços de trabalho caracterizam-se por: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>As cores primárias do RGB que ditam a gama de cores, isto é, o gamute coberto por um dado perfil. </para
+></listitem>
+
+            <listitem
+><para
+>O ponto branco, normalmente o D50 ou o D65, que dita a gama total dinâmica do espaço de trabalho, desde 0,0,0 (preto total) até ao branco mais claro possível. </para
+></listitem>
+
+            <listitem
+><para
+>Gama. </para
+></listitem>
+
+        </orderedlist
+> 
+
+        <para
+>As consequências práticas que resultam da utilização de primários RGB diferentes, que conduzem a espaços de trabalho maiores ou menores, serão discutidas abaixo. A consequência prática das diferentes escolhas para o ponto branco do espaço de trabalho está para além do âmbito deste tutorial. Aqui, falar-se-á um pouco sobre as consequências práticas do 'gama' do espaço de trabalho (para um artigo e referências excelentes, procure por 'gamma' no Wikipédia). </para>
+
+        <para
+>O 'gama' ou 'gamma' de um perfil de cores dita qual a transformação de potência que é necessário ter lugar para converter adequadamente de um perfil de cores incorporado numa imagem (talvez o seu espaço de cores de trabalho) para outro perfil de cores com um 'gama' diferente, como por exemplo (i)o perfil do ecrã, usado para mostrar a imagem no ecrã ou (ii)talvez para um novo espaço de trabalho ou ainda (iii)talvez do espaço de trabalho para o espaço de cores da sua impressora. </para>
+
+        <tip>
+            <para
+>Falando de forma matemática, para uma transformação de potência, é necessário normalizar os números RGB e elevar os números resultantes a uma potência apropriada, dependendo dos 'gamas' respectivos do espaço de cores inicial e final, voltando depois a normalizar os resultados para um novo conjunto de números RGB. O LCMS faz isso por si, quando lhe pedir para converter de um espaço de cores para outro; contudo, se TUDO o que está a fazer é uma transformação de potência, use o Imagemagick em vez do LCMS e manipule apenas os números RGB directamente - os resultados serão mais exactos. </para>
+        </tip>
+
+        <para
+>Uma consequência prática do gama de um espaço de trabalho é que, quanto maior o 'gama, mais tons estarão disponíveis para editar nos tons escuros, com a consequência de menos tons claros. Por isso, na teoria, se estiver a trabalhar numa imagem muito escura (chave baixa, poderá querer um espaço de trabalho com um 'gama' maior. Do mesmo modo, se trabalhar numa imagem de chave alta, como uma imagem tirada à luz do meio-dia de um vestido de noiva, com a neve como fundo, poderá querer escolher um espaço de trabalho com um 'gama' menor, para que tenha alguns graus de tonalidades disponíveis para os tons claros. Contudo, no mundo real da edição de imagem, quase todos usam espaços de trabalho com 'gamas' de 1,8 ou 2,2. </para>
+
+        <para
+>Algumas pessoas estão a tentar criar uma norma com o 'gama' igual a 2,0. O sRGB e o L*-RGB não são espaços de trabalho baseados em 'gama'. Em vez disso, o sRGB usa um <ulink url="http://en.wikipedia.org/wiki/SRGB"
+>'gama' híbrido</ulink
+>, enquanto o L*-RGB usa uma curva de resposta de tonalidade baseada na luminosidade, em vez de um valor de 'gama' - veja mais informações <ulink url="http://www.colormanagement.org/en/workingspaces.html"
+>aqui</ulink
+>, e depois pesquise por mais informações e mais detalhadas. </para>
+
+        <para
+>Para além do 'gama' 1,8 e 2,2, o outro 'gama' para um espaço de trabalho que valerá a pena mencionar ou usar é o 'gama' 1,0, também chamado de 'gama' linear. O <emphasis
+>gama linear</emphasis
+> é usado nas imagens HDR (gama dinâmica elevada) e também se quiser evitar a introdução de erros induzidos pelo 'gama' para uma edição de imagem com gama dinâmica elevada. Os erros induzidos pelo 'gama' são um tópico fora do âmbito deste tutorial, mas veja os <ulink url="http://www.4p8.com/eric.brasseur/gamma.html"
+>erros do 'gama'</ulink
+> na <ulink url="http://www.21stcenturyshoebox.com/essays/color_reproduction.html"
+>mudança de escala da imagem,</ulink
+>, no que respeita aos desvios de cores induzidos pelo 'gama'. </para>
+
+        <para
+>Infelizmente, e apesar das suas vantagens matemáticas inegáveis, os espaços de trabalho com 'gama' linear têm tão poucos tons escuros que (na opinião do autor) são impossíveis de usar na edição, caso esteja a trabalhar a 8 'bits', e continuam a ser problemáticos a 16 'bits'. No dia em que todos façam edições com ficheiros de 32 'bits', produzidos com máquinas HDR e em computadores poderosos, prevê-se que se utilizará então espaços de trabalho com 'gama' 1; o Adobe Lightroom já usa um espaço de trabalho com 'gama' linear "nos bastidores" e o Lightzone sempre usou um espaço de trabalho com 'gama' linear. </para>
+
+        <para
+>Qual o espaço de trabalho: <emphasis
+>gamute largo</emphasis
+> ou <emphasis
+>gamute estreito</emphasis
+> </para>
+
+        <para
+>Uma das considerações mais importantes na escolha de um espaço de trabalho é que alguns espaços são maiores que outros, o que significa que cobrem mais do espectro visível (e mesmo algumas cores imaginárias - construções matemáticas que não existem de facto). Esses espaços maiores oferecem a vantagem de lhe permitir manter todas as cores capturadas pela sua câmara e preservadas pela conversão do LMCS do perfil da sua câmara para o realmente grande espaço de ligação do perfil. </para>
+
+        <para
+>Mas manter todas as cores possíveis têm o seu preço. Parece que todas as imagens digitais indicadas (imagens de malmequeres amarelo altamente saturados sendo uma excepção comum), provavelmente irão conter apenas um pequeno sub-conjunto de todas as cores visíveis que a sua máquina fotográfica possa capturar. Este pequeno sub-conjunto está facilmente contido num dos espaços de cores de trabalho mais pequenos. A utilização de um espaço de trabalho muito largo significa que a edição da sua imagem (a aplicação de curvas, saturação, etc.) poderá produzir facilmente cores que o seu dispositivo de saída eventual (impressora, monitor) simplesmente não conseguirá apresentar. Por isso, a conversão do seu espaço de trabalho para o seu espaço à saída (como a sua impressora) terá de mapear de novo as cores fora do gamute na sua imagem editada, podendo algumas delas serem totalmente imaginárias, para o espaço de cores da sua impressora, com o seu gamute muito menor, dando origem a cores erradas, na melhor das hipóteses, e ao efeito de poster, na pior das hipóteses (nesse efeito, irá obter quebras no que seria uma transição suave de cores, por exemplo, num imagem do céu azul) e recorte (p.ex., as suas transições suaves e delicadas de tons de vermelho que se possam transformar, por exemplo, num bloco sólido de vermelho vivo, após a conversão para o espaço de cores da sua impressora). </para>
+
+        <para
+>Por outras palavras, os espaços de trabalho com gamutes largos, usados de forma indevida, poderão levar à perda de informação no resultado. Os espaços de trabalho de gamute estreito poderão recortar informação à entrada. Como diz a Wikipédia, é tudo uma questão de compromisso. Aqui estão alguns conselhos repetidos frequentemente: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>Para as imagens destinadas à Web, use (uma variante do) sRGB (existem diversas). </para
+></listitem>
+
+            <listitem
+><para
+>Para obter uma maior precisão na edição das suas imagens (isto é, tirar o máximo partido dos seus 'bits' limitados, com o risco mínimo de alargamento ou recorte, quando converter a sua imagem do seu espaço de trabalho para um espaço à saída), use o espaço de trabalho menor que inclua todas as cores na cena que fotografou, mais algum espaço extra para essas cores novas que produziu intencionalmente na sua edição. </para
+></listitem>
+
+            <listitem
+><para
+>Se estiver a trabalhar a 8-bits, em vez de 16-bits, escolha um espaço de trabalho menor em vez de um maior. </para
+></listitem>
+
+            <listitem
+><para
+>Para fins de arquivo, converta o seu ficheiro RAW para um TIFF de 16 bits, com um espaço de trabalho de gamute largo, para evitar perder informações de cores. Depois, converta este TIFF de arquivo para o espaço de trabalho de gamute médio ou largo à sua escolha (guardando o TIFF convertido com um nome novo, obviamente). Veja mais detalhes <ulink url="http://simon.tindemans.eu/essays/scenereferredworkflow"
+>aqui</ulink
+>. </para
+></listitem>
+
+        </orderedlist>
+
+        <para
+>O porquê destes avisos no que respeita ao que é cada espaço de cores está além do âmbito deste tutorial. Leia a excelente página Web de Bruce Lindbloom (<ulink url="http://www.brucelindbloom.com/"
+>Info, Information about RGB Working Spaces</ulink
+>) para uma comparação visual do gamute (lista de cores incluídas) dos diversos espaços de cores de trabalho. Veja <ulink url="http://www.luminous-landscape.com/tutorials/prophoto-rgb.shtml"
+>aqui</ulink
+> e <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm"
+>aqui</ulink
+> uma apresentação dos prós e contras, respectivamente, dos méritos do uso dos espaços de cores de gamute amplo. E, já agora, na página Web <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm"
+>cambridgeincolour.com</ulink
+>, veja o tutorial sobre a gestão de cores. </para>
+
+    </sect3>
+
+    <sect3 id="softproofing">
+        <title
+>Prova Suave</title>
+
+        <para
+>A prova suave é uma forma de antever no ecrã (monitor) o resultado esperado a partir do resultado de outro dispositivo, normalmente uma impressora. A prova suave mostrar-lhe-á as diferenças a esperar antes de realmente as aplicar (e desperdiçar tinta). Deste modo, poderá melhor a sua configuração sem perder tempo nem dinheiro. </para>
+
+    </sect3>
+
+    <sect3 id="rendering-intention">
+        <title
+>Tentativa de representação</title>
+
+        <para
+>A tentativa de representação diz respeito à forma como são tratados os gamutes, quando o espaço de cores de destino pretendido não consegue lidar com o gamute completo. </para>
+
+        <itemizedlist>
+
+            <listitem
+><para
+><emphasis
+>Percepção</emphasis
+>, também chamado de Imagem ou Manter o Gamute Completo. Normalmente é recomendado para as imagens fotográficas. O gamute de cores é expandido ou comprimido ao mudar de espaços de cores, para manter uma aparência global consistente. As cores de baixa saturação são muito pouco modificadas. As cores mais saturadas, dentro dos gamutes de ambos os espaços, são alteradas para as diferenciar das cores saturadas fora do gamute. A representação por percepção aplica a mesma compressão do gamute a todas as imagens, mesmo quando a imagem não contém cores significativas fora do gamute. </para
+></listitem>
+
+            <listitem
+><para
+><emphasis
+>Colorimétrica Relativa</emphasis
+>, também chamada de Prova ou Preservação de Cores e Ponto Branco Idênticos. Reproduz as cores dentro do gamute tal como estão, recortando as cores fora do gamute para a tonalidade mais próxima que possa ser reproduzida. </para
+></listitem>
+
+            <listitem
+><para
+><emphasis
+>Colorimétrica Absoluta</emphasis
+>, também chamada de Correspondência ou Preservação das Cores Idênticas. Reproduz as cores dentro do gamute tal-e-qual e recorta as cores fora do gamute, ajustando-as para a tonalidade mais próxima, sacrificando a saturação e, possivelmente, a tonalidade. Por exemplo, poder-se-á adicionar um pouco de cíano ao branco de um papel-creme, escurecendo de facto a imagem. Raramente é de interesse para os fotógrafos. </para
+></listitem>
+
+            <listitem
+><para
+><emphasis
+>Saturação</emphasis
+>, também chamada de Gráfica ou Preservar a Saturação. Mapeia as cores primárias saturadas na origem com as cores saturadas primárias no destino, negligenciando as diferenças no tom, saturação  ou luminosidade. Para gráficos em bloco; raramente é interessante para os fotógrafos. </para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+    <sect3 id="iccprofile-links">
+        <title
+>Hiperligações</title>
+
+        <itemizedlist>
+
+            <listitem
+><para>
+                <ulink url="http://www.oyranos.org/wiki/index.php?title=Main_Page"
+>Wiki de cores</ulink>
+            </para
+></listitem>
+
+            <listitem
+><para>
+                <ulink url="http://en.wikipedia.org/wiki/CIELAB"
+>CIELab</ulink>
+            </para
+></listitem>
+
+            <listitem
+><para>
+                <ulink url="http://en.wikipedia.org/wiki/Gamut"
+>O gamute explicado</ulink>
+            </para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

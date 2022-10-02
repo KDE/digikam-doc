@@ -1,0 +1,187 @@
+<sect3 id="using-setup-raw-default">
+
+    <title
+>Standardinställningar för obehandlade filer</title>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-editor-raw-settings.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+    <para
+>Mosaikborttagning </para>
+
+        <para
+>En algoritm för <ulink url="https://en.wikipedia.org/wiki/Demosaicing"
+>mosaikborttagning</ulink
+> är en digital bildprocess använd för att interpolera en fullständig bild från partiell obehandlad data mottagen från den färgfiltrerade bildsensorn intern i många digitalkameror i form av en matris med färgade bildpunkter. Också känd som CFA-interpolation eller färgrekonstruktion. </para>
+
+        <para>
+            <guilabel
+>Interpolera RGB som fyra färger</guilabel>
+        </para>
+
+        <para
+>Förval är att anta att alla gröna bildpunkter är likadana. Om CCD-sensorns gröna bildpunkter i jämna rader är känsligare för ultraviolett ljus än udda rader, orsakar skillnaden ett rutmönster i utdata. Genom att använda detta alternativ löses problemet med minimal detaljförlust. För att sammanfatta, så gör alternativet bilden något suddigare, men eliminerar falska 2x2 rutmönster med kvalitetsmetoden VNG, eller labyrinter med kvalitetsmetoden AHD. </para>
+
+        <para>
+            <guilabel
+>Sträck eller rotera inte bildpunkter</guilabel>
+        </para>
+
+        <para
+>ATT GÖRA </para>
+         
+
+
+        <para>
+            <guilabel
+>Kvalitet:</guilabel>
+        </para>
+
+        <para
+>&digikam; och dcraw erbjuder oss tre alternativ: bilinjär, VNG-interpolation och AHD-interpolation. Det verkar som om <emphasis
+>AHD-interpolation</emphasis
+> (adaptiv homogenstyrd) är det bästa valet för hög kvalitet enligt några prov som jag har gjort och en artikel av personen som implementerat det. <emphasis
+>VNG-interpolation</emphasis
+> (variabelt antal toningar) var den första algoritmen som användes av dcraw, men den lider av färgförvrängningar vid kanter. <emphasis
+>Bilinjär</emphasis
+> är intressant om man är ute efter snabbhet med ett acceptabelt resultat. </para>
+         
+
+
+        <para>
+            <guilabel
+>Genomgång:</guilabel>
+        </para>
+
+        <para
+>ATT GÖRA </para>
+         
+
+
+        <para>
+            <guilabel
+>Förbättra interpolation</guilabel>
+        </para>
+
+        <para
+>Alternativet är bara tillgängligt för DCB och VCD/AHD. ATT GÖRA </para>
+         
+
+    <para
+>Vitbalans </para>
+
+
+        <para>
+            <guilabel
+>Metod</guilabel>
+        </para>
+
+        <para
+>Här är fyra alternativ tillgängliga: Förval D65, Kamera, Automatisk och Manuell. <quote
+>Förval D65</quote
+> gäller normala dagsljusförhållanden. <quote
+>Kamera</quote
+> använder kamerans egna vitbalansinställning om den finns. <quote
+>Automatisk</quote
+> förval är att använda en fast färgbalans baserad på ett vitt kort fotograferat i solljus. <quote
+>Manuell</quote
+> justerar färger enligt T(K) (färgtemperaturen i grader Kelvin) och Grön-inställningen. </para>
+         
+
+
+        <para>
+            <guilabel
+>Dagrar</guilabel>
+        </para>
+
+        <para
+>De här är historien om de tre alternativen för dagrar, med benäget tillstånd av Nicolas Vilars: </para>
+
+        <para
+>Här är förval att ta hänsyn till dagrar (läs: delar av bilden som är inbrända på grund av kamerans oförmåga att fånga dagrar) som enkelt vitt eller helvitt (alternativet <guilabel
+>Helvitt</guilabel
+>). Du kan få en del snygga resultat med alternativet <guilabel
+>Obeskuret</guilabel
+>, som målar i dagrarna med diverse rosa toner. Till sist kan du överväga att återskapa vissa delar av den saknade informationen från dagrarna (alternativet <guilabel
+>Återskapa</guilabel
+>). </para>
+
+        <para
+>Det är möjligt eftersom blåa bildpunkter brukar mättas mindre snabbt än gröna och röda. &digikam; och dcraw försöker återskapa de saknade gröna och röda färger från de återstående icke mättade blåa bildpunkterna. Naturligtvis är allting här en fråga om en kompromiss mellan hur mycket färg eller vitt man vill ha. </para>
+
+        <para
+>Om du väljer <guilabel
+>Återskapa</guilabel
+> som alternativ, får du valet att ange en nivå. Värdet 3 är en kompromiss och kan/bör anpassas baserat på varje bild. </para>
+
+        <note
+><para
+>En liten varning här. För de fåtal nyfikna som har läst manualsidorna för dcraw, säger författaren att 5 är en kompromiss, 0 är helvitt och 1 är obeskuret. Det beror på att i &digikam; är alternativet 0 "helvitt" och 1 "obeskuret" i kombinationsmenyn (om de väljes, blir nivåreglaget grått). Därför låter skjutreglaget dig välja mellan 0 till 7 (istället för 0 till 9 på kommandoraden i dcraw) och därmed är 3 en kompromiss istället för 5 i det "riktiga" kommandoradsverktyget dcraw. </para
+></note>
+         
+
+        <para>
+            <guilabel
+>Exponeringsvärde (EV)</guilabel>
+        </para>
+
+        <para
+>ATT GÖRA </para>
+         
+
+        <para>
+            <guilabel
+>Korrigera felaktiga färger i dagrar</guilabel>
+        </para>
+
+        <para
+>ATT GÖRA </para>
+         
+
+        <para>
+            <guilabel
+>Automatisk ljusstyrka</guilabel>
+        </para>
+
+        <para
+>ATT GÖRA </para>
+         
+
+    <para
+>Korrigeringar </para>
+
+        <para>
+            <guilabel
+>Brusreducering</guilabel>
+        </para>
+
+        <para
+>Under mosaikborttagning av bilder kan du dessutom be om brusreducering (till en viss hastighetsförsämring). Alternativet utför en brusreduceringsalgoritm medan bilden fortfarande använder CIE Lab-färgrymden. Eftersom bruset bara gäller Ljusstyrka ("L" i Lab), bör det inte göra bilden suddig som traditionella brusreduceringsalgoritmer gör i RGB-läge. Så om du konverterade en bild från obehandlat format och den verkar brusig, istället för att använda brusreducering, gå tillbaka och konvertera om med alternativet aktiverat. Förvalen är: <emphasis
+>Tröskel</emphasis
+> = 100. Större värden ökar utjämningen, lägre värden minskar den. </para>
+         
+
+        <anchor id="CA.anchor"/>
+
+        <para>
+            <guilabel
+>Aktivera korrigering av kromatisk aberration</guilabel>
+        </para>
+
+        <para
+>Om dina linsers kromatiska aberration är känd, kan du ange korrektionsvärdena för röd och blå här. Det är definitivt den optimala metoden för korrigering av kromatisk aberration eftersom den utförs under konvertering av obehandlad data. </para>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

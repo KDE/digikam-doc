@@ -1,0 +1,105 @@
+<sect2 id="using-camera-gps">
+    <title
+>Het gebruik van een GPS-apparaat met &digikam;</title>
+
+    <note>
+
+        <para>
+
+            <inlinemediaobject
+><imageobject>
+                <imagedata fileref="&path;using-camera-handheldgps.png" format="PNG"/>
+            </imageobject
+></inlinemediaobject
+> GPS (Global Positioning System) wordt overal in dit document gebruikt als een algemene term. Het betekent gewoon een locatie in coördinaten van lengte- en breedtegraad die op een kaart kunnen worden weergegeven. De werkelijke technische implementatie die de gegevens levert kan zijn het Amerikaanse GPS, het Russische GLONAS, het Europese Galileo of een ander systeem. </para>
+
+    </note>
+
+    <para
+>Niet alleen voor professionele fotografen kan het interessant zijn om een afbeelding te koppelen aan een precieze geografische locatie. Milieu-planners, militairen, politie, bouwbureaus, vastgoed agentschappen, allen kunnen een behoefte hebben om dit toe te passen.  </para>
+
+    <para
+>Maar als men, na enige tijd, vergeten is waar de foto werd genomen, als menhoudt van de leuke toepassing om met een simpele klik een browser te openen en een zoomweergave van het gebied te zien, als u uw afbeelding wilt verzenden als een ansichtkaart naar een andere &digikam; gebruiker (die dan in staat is om uw opname te vinden), of als u gewoon behoefte hebt aan het documentatie-aspect ervan - de positiegegevens opgeslagen in een foto is een geweldige mogelijkheid. </para>
+
+    <para
+>Hoe krijgen we nu die GPS-gegevens in de beelden? <ulink url="http://www.exiv2.org/tags.html"
+>exiv2</ulink
+> ondersteunt veel soorten velden van GPS-gegevens, ook richting, satelliet- en kaartreferenties. Dus de vraag is eigenlijk hoe komen die gegevens in die velden? Er zijn minstens drie manieren om dit te doen: direct, met de juiste hardware, per nabehandeling van GPS en afbeeldingsbestanden met behulp van het <link linkend="tool-geolocationeditor"
+>Hulpmiddel Geolocatie</link
+> en met 'handmatig' invoegen van bekende locaties. </para>
+
+    <itemizedlist>
+
+        <listitem
+><para
+>Direct inbrengen van GPS-gegevens in de afbeeldingsbestanden.</para>
+
+            <para
+>Voor zover wij weten is er op het moment van schrijven geen camera met geïntegreerde GPS-unit. Maar er zijn er paar die te combineren zijn met GPS-ontvangers, hetzij als een insteekkaart of door gegevensoverdracht via kabel of Bluetooth. </para>
+
+            <para>
+                <ulink url="http://www.engadget.com.nyud.net:8090/2004/09/17/diy-black-box-tagging-photos-with-gps-coordinates/"
+>Hoe kunt u dat zelf doen</ulink>
+            </para>
+
+        </listitem>
+
+        <listitem>
+
+            <para
+>Nabehandeling van GPS-gegevens en afbeeldingsbestanden </para>
+
+            <para
+>Het <link linkend="tool-geolocationeditor"
+>Hulpmiddel Geolocation</link
+> gebruiken. </para>
+
+            <para
+>Deze aanpak is doodsimpel: terwijl u gewoon uw foto's blijft maken neemt u een GPS apparaat met u mee. Zodra u klaar bent, download u de foto's en het GPS-spoor, en voert u de bovenstaande plug-in uit. Die zal de gegevens correleren binnen het tijdsbestek; het is dus belangrijk dat de klokinstelling van de camera accuraat is (het GPS-apparaat is altijd accuraat door de satellieten). De nauwkeurigheid van de positie, geïnterpoleerd op grond van de track-punten kan nauwkeurig zijn tot op 20 meter. Natuurlijk, werkt deze aanpak alleen als uw camera EXIF data kan op nemen. </para>
+
+            <para
+>De GPS route downloaden van een apparaat kan worden gedaan met de <ulink url="http://gpsman.sourceforge.net/"
+>gpsman</ulink
+> of <ulink url="http://www.gpsbabel.org"
+>gpsbabel</ulink
+>. Het is belangrijk dat de gedownloade routes worden opgeslagen in gpx-formaat, dat is het enige formaat, verenigbaar met de Geolocatie plug-in. </para>
+
+            <para
+>Er bestaan diverse programma's voor &Windows; and MacOS die in staat zijn om gegevens over te nemen en in verband te brengen met beelden en GPS routes. De volgende site voorziet in dezelfde functie voor &Linux;: <ulink url="http://freefoote.dview.net/linux_gpscorr.html"
+>gpsCorr</ulink
+> of <ulink url="http://www.carto.net/projects/photoTools/gpsPhoto/"
+>gpsPhoto</ulink
+> </para>
+
+        </listitem>
+
+        <listitem>
+
+            <para
+>Handmatig inbrengen van bekende locaties </para>
+
+            <para
+>Als de breedte en lengte of andere gegevens bekend zijn dan kunt u gebruik maken van dit script dat een GPS overkoepeling is voor Phil Harvey's <ulink url="http://www.sno.phy.queensu.ca/~phil/exiftool"
+>ExifTool</ulink
+> dat gebruik maakt van coordinaten in een notatie met drijvendekomma getallen met teken zoals weergegeven door maps.google. </para>
+
+        </listitem>
+
+    </itemizedlist>
+
+    <para
+>GPS apparaten: <ulink url="http://www.letsgodigital.org/en/9323/sony_gps_photography/"
+>GPS tracker van Sony </ulink
+> en <ulink url="http://www.emtac.com/products/bluetooth/index.html#btgps"
+>EMTAC bluetooth GPS </ulink
+> </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

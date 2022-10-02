@@ -1,0 +1,433 @@
+<sect3 id="editor-enhance-sharpen">
+    <sect3info>
+        <title
+>Aguditzar la imatge</title>
+        <abstract>
+        <para
+>El &digikam; ofereix tres eines diferents per a l'agudització, cadascuna amb <link linkend="comparison-refocus"
+>mèrits</link
+> sobre una àrea diferent. <itemizedlist>
+            <listitem>
+                <para
+><link linkend="using-adjustsharpness"
+>Aguditza</link
+>, és una eina per a fer augmentar l'agudització tradicional, la qual és molt ràpida i fàcil, però pot presentar ràpidament imatges granulades, en particular en les zones fosques. </para>
+            </listitem>
+            <listitem>
+                <para
+>La <link linkend="using-unsharp"
+>Màscara de desenfocament</link
+> funciona sobre el contrast de les vores per crear una imatge que sembli més nítida, però en realitat no augmenta l'agudesa en absolut, funciona força psico-visualment. Es pot utilitzar per eliminar la boirina atmosfèrica, i en aquest cas fa una molt bona feina. L'algorisme es va prendre del Gimp, i és copyright d'en Winston Chang. </para>
+            </listitem>
+            <listitem>
+                <para
+>El <link linkend="refocus"
+>Reenfocament</link
+> probablement és la millor de les tres, ja que en realitat millora l'agudesa. És una mica més complicada d'aplicar, ja que disposa de diversos paràmetres amb els quals jugar. </para>
+            </listitem>
+            </itemizedlist>
+        </para>
+        </abstract>
+        <keywordset>
+        <keyword
+>Digikam</keyword>
+        <keyword
+>Reenfocament</keyword>
+        <keyword
+>Màscara de desenfocament</keyword>
+        </keywordset>
+    </sect3info>
+    <title
+>Introducció</title>
+    <para
+>Les fotografies desenfocades, així com la majoria de les imatges digitalitzades, necessiten una correcció de l'agudesa. Això es deu al fet que el procés de digitalització ha de tallar un continu de color en punts amb colors lleugerament diferents: els elements més subtils de la freqüència de mostratge es fusionaran en un color uniforme. Per tant, les vores s'aguditzaran i es presentaran una mica borroses. El mateix fenomen apareix quan s'imprimeixen punts de color sobre el paper. Les càmeres rèflex encara tenen més necessitat d'augmentar l'agudització en comparació amb altres càmeres de consum. </para>
+    <para
+>Mentre que les imatges JPEG tenen alguna agudització aplicada internament a la càmera, les imatges en format RAW sempre requeriran agudització en el seu flux de treball. </para>
+    <para
+>Alguns escàners apliquen un filtre per augmentar l'agudització durant l'escaneig. Val la pena desactivar-lo per a poder mantenir el control sobre la vostra imatge. </para>
+    <sect4 id="using-adjustsharpness">
+        <title
+>Ajustar l'agudització</title>
+        <anchor id="sharpentool.anchor"/>
+    </sect4>
+        <sect4>
+        <title
+>Treure la manca de definició d'una fotografia</title>
+        <para
+>Si l'enfocament de la càmera no està ajustat perfectament o si la càmera es mou en prendre la imatge, el resultat serà una fotografia borrosa. Si n'hi ha una gran quantitat, probablement no sereu capaç de fer gaire referent a això amb cap tècnica. Si només n'hi ha una quantitat moderada, hauríeu de ser capaç de millorar la imatge. Moltes càmeres rèflex de qualitat apliquen menys processament a la imatge que les càmeres més simples (les quals tendeixen a augmentar artificialment el contrast perquè les imatges es vegin nítides). Aquest tipus de lleu difuminat es pot millorar fàcilment amb algunes eines. </para>
+        <para
+>En algunes situacions, sereu capaç d'obtenir resultats útils definint una fotografia utilitzant l'eina Aguditza des de l'entrada de menú <menuchoice
+> <guimenu
+>Millora</guimenu
+> <guimenuitem
+>Aguditza</guimenuitem
+> </menuchoice
+>. </para>
+        <example>
+            <title
+>L'eina «Aguditza» en acció</title>
+            <screenshot>
+            <screeninfo
+>L'eina «Aguditza» en acció</screeninfo>
+            <mediaobject>
+                <imageobject>
+                <imagedata fileref="&path;editor-sharpen.png" format="PNG"/>
+                </imageobject>
+            </mediaobject>
+            </screenshot>
+        </example>
+        <para
+>Haureu de tenir cura amb això, o els resultats no es veuran molt naturals: l'agudització fa augmentar l'agudització aparent de les vores de la fotografia, però també amplifica el soroll. En general, la tècnica més útil per a definir més una fotografia borrosa és l'eina Reenfocament. Hi podeu accedir amb l'entrada de menú <menuchoice
+> <guimenu
+>Millora</guimenu
+> <guimenuitem
+>Reenfocament</guimenuitem
+> </menuchoice
+>. Vegeu <link linkend="refocus"
+>Reenfocament</link
+> per obtenir més informació i una comparació de totes les tècniques per a fer augmentar l'agudització. </para>
+        </sect4>
+        <sect4>
+        <title
+>Reduir el gra en una fotografia</title>
+        <para
+>Quan preneu una fotografia en condicions de poca llum o amb un temps d'exposició molt ràpid, la càmera no rebrà prou dades per fer una bona estimació del veritable color en cada píxel, i per tant la fotografia resultant es veurà granulada. Podreu &quot;suavitzar&quot; el gra difuminant la imatge, però també podríeu perdre agudesa. Probablement la millor manera -si el gra no és tan dolent- és utilitzar el filtre de <link linkend="editor-enhance-nr"
+>reducció del soroll</link
+>, hi podeu accedir des de l'entrada <menuchoice
+> <guimenu
+>Millora</guimenu
+> <guimenuitem
+>Reducció del soroll</guimenuitem
+> </menuchoice
+> del menú. </para>
+        </sect4>
+        <sect4>
+        <title
+>Suavitzar una fotografia</title>
+        <para
+>De vegades tindreu el problema oposat: una imatge està massa nítida. La solució consisteix a difuminar-la una mica: per sort difuminar una imatge és molt més fàcil que definir-la més. Seleccioneu l'<link linkend="editor-enhance-blur"
+>eina Difuminat</link
+> amb l'entrada de menú <menuchoice
+> <guimenu
+>Millora</guimenu
+> <guimenuitem
+>Difuminat</guimenuitem
+> </menuchoice
+> i experimenteu amb el nivell. La finestra de vista prèvia a la dreta del diàleg mostrarà l'efecte de l'operació sobre la vostra fotografia. </para>
+        </sect4>
+    <sect4 id="using-unsharp">
+        <title
+>El filtre «Màscara de desenfocament»</title>
+        <note>
+        <para
+>El filtre Màscara de desenfocament és una excel·lent eina per eliminar la boira de les vostres fotografies, vegeu <ulink url="http://www.gimpguru.org/Tutorials/RemovingHaze"
+>aquest URL</ulink
+> per a una demostració. </para>
+        </note>
+        <para>
+        <inlinemediaobject>
+            <imageobject>
+            <imagedata fileref="&path;editor-unsharp.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+            <phrase
+>El diàleg «Màscara de desenfocament»</phrase>
+            </textobject>
+        </inlinemediaobject>
+        </para>
+        <para
+>El plafó d'imatge i la vista prèvia original us ajudaran a desplaçar dins de la imatge. La finestra de vista prèvia mostrarà la sortida del filtre utilitzant la configuració actual. </para>
+        <para
+>Hi ha dos paràmetres importants, <guilabel
+>Radi</guilabel
+> i <guilabel
+>Quantitat</guilabel
+>. Els valors per omissió solen funcionar força bé, de manera que primer els haureu de provar. Augmentant el <guilabel
+>Radi</guilabel
+> o la <guilabel
+>Quantitat</guilabel
+> s'incrementarà la intensitat de l'efecte. No us deixeu dur: si feu massa forta la màscara de desenfocament, s'amplificarà el soroll a la imatge i es crearà la impressió de crestes al costat d'unes vores afilades. </para>
+        <para
+>El control <guilabel
+>Radi</guilabel
+> permet establir el nombre de píxels a cada costat d'una vora que es veuran afectats per l'agudització. Les imatges d'alta resolució permeten un radi major. Sempre serà millor definir més una imatge en la seva resolució final. </para>
+        <para
+>El control <guilabel
+>Quantitat</guilabel
+> és el percentatge de la diferència entre l'original i la imatge difuminada que s'afegeix de nou en l'original. Us permetrà establir la força de l'agudització. </para>
+        <para
+>El control <guilabel
+>Llindar</guilabel
+> és una fracció del valor RGB màxim, necessari per aplicar la quantitat de la diferència. Permet establir la diferència mínima en valors de píxel que indiquin a on s'haurà d'aplicar una vora més definida. D'aquesta manera, podreu protegir les àrees de transició tonal suau en augmentar l'agudització, i evitar la creació de taques a la superfície de la cara, del cel o de l'aigua. </para>
+    </sect4>
+        <sect4 id="inaction-unsharp">
+        <title
+>La «Màscara de desenfocament» en acció</title>
+        <para
+>Aquest és un exemple de com la Màscara de desenfocament pot canviar-vos la vida. La imatge original és (1) i la imatge corregida és (2). La màscara de desenfocament s'ha aplicat amb <guilabel
+>Radi</guilabel
+> = 6,0, <guilabel
+>Quantitat</guilabel
+> = 0,5, <guilabel
+>Llindar</guilabel
+> = 0,0. </para>
+        <para>
+            <inlinemediaobject>
+            <imageobject>
+                <imagedata fileref="&path;editor-unsharp-preview.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+                <phrase
+>L'eina «Màscara de desenfocament» en acció</phrase>
+            </textobject>
+            </inlinemediaobject>
+        </para>
+        </sect4>
+    <sect4 id="refocus">
+        <title
+>Reenfocar una fotografia</title>
+        <para
+>El <emphasis
+>reenfocament</emphasis
+> del &digikam; és una eina per enfocar una imatge mitjançant la millora de l'agudització. Utilitza l'algoritme del <emphasis
+>filtre de deconvolució</emphasis
+>, copyright d'en Ernst Lippe. </para>
+        <para
+>Aquesta eina tracta de &quot;tornar a orientar&quot; una imatge desfent el desenfocament. Això és millor que mirar d'aguditzar una fotografia. Fa servir una tècnica anomenada <emphasis
+>filtre de Wiener</emphasis
+> (FIR Wiener Filtering). La tècnica tradicional per augmentar l'agudització de les imatges és utilitzar la màscara de desenfocament. El reenfocament, generalment produeix millors resultats que la màscara de desenfocament. Comenceu des del menú <menuchoice
+> <guimenu
+>Millora</guimenu
+> <guimenuitem
+>Aguditza</guimenuitem
+> <guimenuitem
+>Reenfocament</guimenuitem
+> </menuchoice
+> de l'editor d'imatges. </para>
+        <para
+>La tècnica Reenfocament funciona de manera diferent de la <link linkend="using-unsharp"
+>màscara de desenfocament</link
+> i també que el <link linkend="using-adjustsharpness"
+>filtre Aguditza</link
+> doncs tots dos augmenten el contrast de les vores d'una imatge. El reenfocament, inverteix el procés pel qual la imatge es torna borrosa per l'obertura circular de la càmera. Aquest mètode us donarà la quantitat més gran possible de la imatge original <quote
+>enfocada</quote
+>. El reenfocament, utilitza un poderós algorisme de deconvolució per a recuperar les dades que s'han barrejat. En termes matemàtics, difuminada és generalment el resultat d'una convolució, una deconvolució invertirà el procés, això és exactament el que farà el reenfocament. D'altra banda, la tècnica de filtre FIR permet eliminar gran part del soroll i la granularitat que sovint s'accentua en el procés de fer augmentar l'agudesa de tots els filtres d'agudització. </para>
+    </sect4>
+        <sect4 id="using-refocus">
+        <title
+>Usar l'eina «Reenfocament»</title>
+        <para>
+            <inlinemediaobject>
+            <imageobject>
+                <imagedata fileref="&path;editor-refocus.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+                <phrase
+>Diàleg «Reenfocament»</phrase>
+            </textobject>
+            </inlinemediaobject>
+        </para>
+        <para
+>El plafó d'imatge i la vista prèvia original us ajudaran a desplaçar dins de la imatge. La finestra de vista prèvia mostrarà la sortida del filtre utilitzant la configuració actual. </para>
+        <para
+>En la majoria dels casos (la visió borrosa de la càmera) una convolució circular causa la degradació de la imatge, però hi ha dues convolucions disponibles: <itemizedlist
+> <listitem
+> <para
+>La convolució circular: estén cada punt d'origen de manera uniforme a través d'un petit disc amb un radi fix. Tècnicament això descriu els efectes d'utilitzar una lent (ideal) que no està correctament enfocada.</para
+> </listitem
+> <listitem
+> <para
+>La convolució gaussiana: és matemàticament similar a la distribució normal, amb la seva corba en forma de campana. Més aviat origina un difuminat fingit (difuminat per programari). Des d'un punt de vista teòric, la justificació matemàtica per utilitzar la convolució gaussiana és que quan s'aplica a un gran nombre de convolucions aleatòries independents els resultats sempre s'aproparà a una convolució gaussiana.</para
+> </listitem
+> </itemizedlist
+> L'eina de reenfocament, implementa tant la convolució circular com la gaussiana, així com la combinació de totes dues. </para>
+        <para
+>A la pràctica, en la majoria dels casos, la convolució circular funciona molt millor que la convolució gaussiana. La convolució gaussiana té una cua molt llarga, de manera que matemàticament el resultat de la convolució també dependrà dels píxels d'origen a una gran distància del píxel font original. El filtre de Wiener invers d'una convolució gaussiana en la majoria dels casos està fortament influenciat per píxels d'origen a una gran distància, i en la majoria dels casos això produeix resultats no desitjats. </para>
+        <para
+>Per ajustar correctament el filtre de deconvolució, el connector disposa dels següents paràmetres: <itemizedlist>
+            <listitem>
+                <para
+><guilabel
+>Agudesa circular</guilabel
+>: Aquest és el radi del filtre de convolució circular. És el paràmetre més important per emprar amb aquest connector. Per a la majoria de les imatges el valor per omissió d'1 hauria de donar bons resultats. Seleccioneu un valor més alt quan la imatge sigui molt borrosa, però aneu amb compte de produir halos.</para>
+            </listitem>
+            <listitem>
+                <para
+><guilabel
+>Correlació</guilabel
+>: Incrementar la correlació pot ajudar a reduir els defectes. L'interval de la correlació pot anar de 0 a 1. Els valor útils són 0,5 i valors propers a 1, &pex; 0,95 o 0,99. L'ús d'un valor alt a la correlació reduirà l'efecte d'agudització del connector.</para>
+            </listitem>
+            <listitem>
+                <para
+><guilabel
+>Filtre del soroll</guilabel
+>: Incrementar el paràmetre filtre de soroll ajuda a reduir els defectes. L'interval del soroll pot anar de 0 a 1 però els valors superiors a 0,1 són rarament útils. Quan el valor de soroll és molt baix, &pex;, 0 la qualitat de la imatge serà horrible. Un valor útil és 0,03. Utilitzar un valor alt per al soroll tan sols difuminarà encara més la imatge.</para>
+            </listitem>
+            <listitem>
+                <para
+><guilabel
+>Agudesa gaussiana</guilabel
+>: Aquest és el radi per al filtre de convolució gaussiana. Utilitzeu aquest paràmetre quan el desenfocament és gaussià (probablement a causa al difuminat de l'anterior filtre). En la majoria dels casos haureu de deixar aquest paràmetre a 0, ja que causa defectes desagradables. Utilitzant valors diferents de zero és probable que també incrementeu els paràmetres de la <guilabel
+>Correlació</guilabel
+> i/o <guilabel
+>Filtre del soroll</guilabel
+>.</para>
+            </listitem>
+            <listitem>
+                <para
+><guilabel
+>Mida de la matriu</guilabel
+>: Aquest paràmetre determina la mida de la matriu de transformació. Incrementar la mida de la matriu pot donar millors resultats, sobretot quan s'han triat valors grans per a <guilabel
+>Agudesa circular</guilabel
+> o <guilabel
+>Agudesa gaussiana</guilabel
+>. Tingueu en compte que el connector es tornarà molt lent quan seleccioneu valors alts d'aquest paràmetre. En la majoria dels casos haureu de seleccionar un valor en l'interval de 3 a 10.</para>
+            </listitem>
+            <listitem>
+                <para
+><guilabel
+>Desa com a...</guilabel
+> i <guilabel
+>Carrega...</guilabel
+>: aquests botons s'utilitzen per realitzar les accions que descriuen. Qualsevol paràmetre pel reenfocament que establiu es podrà desar al sistema de fitxers en un fitxer de text i carregar-lo més endavant.</para>
+            </listitem>
+            <listitem>
+                <para
+><guilabel
+>Omissió</guilabel
+>: aquest botó restableix tots els ajustos als valors per omissió.</para>
+            </listitem>
+            </itemizedlist>
+        </para>
+        <para
+>A continuació, podeu veure alguns consells per ajudar-vos a treballar amb el connector de reenfocament: <itemizedlist>
+            <listitem>
+                <para
+>Preferiblement realitzeu totes les correccions de l'escapçat, corbes de color i intensitat sobre la imatge abans d'utilitzar aquest connector.</para>
+            </listitem>
+            <listitem>
+                <para
+>En cas contrari, utilitzeu aquest connector abans de realitzar cap altra operació sobre la imatge. La raó és que moltes de les operacions sobre la imatge deixaran límits que no seran immediatament visibles, però que deixaran defectes desagradables.</para>
+            </listitem>
+            <listitem>
+                <para
+>Quan escanegeu imatges i després les comprimiu, &pex;, a JPEG, haureu d'utilitzar el connector sobre la imatge sense comprimir.</para>
+            </listitem>
+            </itemizedlist>
+        </para>
+        </sect4>
+    <sect4 id="comparison-refocus">
+        <title
+>El «Reenfocament» en comparació amb altres tècniques</title>
+        <para
+>En comparació amb dues tècniques que s'utilitzen sovint per a millorar les imatges: <itemizedlist>
+            <listitem>
+            <para>
+                <link linkend="using-adjustsharpness"
+>Filtre Aguditza</link>
+            </para>
+            </listitem>
+            <listitem>
+            <para>
+                <link linkend="using-unsharp"
+>Màscara de desenfocament</link>
+            </para>
+            </listitem>
+        </itemizedlist>
+        </para>
+        <para
+>L'agudització aplica una petita matriu de convolució que augmenta la diferència entre un píxel d'origen i els seus veïns immediats. El filtratge de Wiener és una tècnica més general, ja que permet parametritzacions veïnals més i més grans. L'agudització només funciona quan les imatges estan molt poc borroses. A més, per a valors alts del paràmetre l'agudització els resultats sovint es veuen «amb soroll». Amb el filtratge Wiener aquest soroll es pot reduir en gran manera seleccionant valors més alts per als paràmetres de <guilabel
+>Correlació</guilabel
+> i <guilabel
+>Filtre del soroll</guilabel
+>. </para>
+        <para
+>La màscara de desenfocament és una altra tècnica molt popular per a la millora de la imatge. Des d'un punt de vista matemàtic, la seva justificació és una mica obscura, però és del grat de molta gent. El primer pas és crear una còpia borrosa de la imatge d'origen. Llavors la diferència entre la imatge original i la imatge borrosa es resta de la imatge d'origen, d'aquí el nom màscara de desenfocament. De fet, la màscara de suavitzat més aviat és una millora del contrast sobre les característiques importants de la imatge que un augment en l'agudització. No desfà la interferència del patró d'obertura del diafragma de la càmera com fa el reenfocament. </para>
+        <para
+>En general, la màscara de desenfocament produeix millors resultats que l'augment de l'agudització. Això és probablement causat pel fet que la màscara de desenfocament utilitza un veïnal més gran que l'augment de la nitidesa. </para>
+        <para
+>Des d'un punt de vista teòric, la màscara de desenfocament sempre presentarà defectes. Fins i tot en circumstàncies òptimes, mai no podrà desfer per complet l'efecte de difuminat. És possible demostrar que el filtratge de Wiener és el filtre lineal òptim. A la pràctica, en tots els casos els resultats del filtre de Wiener van ser almenys tan bons com els de la màscara de desenfocament. El filtre de Wiener sovint és millor en la restauració de petits detalls. </para>
+        <para
+>A continuació, podeu veure una comparació dels diferents filtres aplicats sobre una petita imatge desenfocada: <informaltable
+> <tgroup cols="2">
+            <thead>
+                <row>
+                <entry
+>Vista prèvia</entry>
+                <entry
+>Tipus</entry>
+                </row>
+            </thead>
+            <tbody>
+                <row>
+                <entry>
+                    <para>
+                    <inlinemediaobject>
+                        <imageobject>
+                        <imagedata fileref="&path;editor-refocus-notsharpened.png" format="PNG"/>
+                        </imageobject>
+                    </inlinemediaobject>
+                    </para>
+                </entry>
+                <entry
+>La imatge original de color borrós per arreglar. La imatge ha estat presa amb una càmera fotogràfica analògica. El resultat sense definició prové d'una llum insuficient provocada per l'enfocament automàtic de la lent. </entry>
+                </row>
+                <row>
+                <entry>
+                    <para>
+                    <inlinemediaobject>
+                        <imageobject>
+                        <imagedata fileref="&path;editor-refocus-sharped.png" format="PNG"/>
+                        </imageobject>
+                    </inlinemediaobject>
+                    </para>
+                </entry>
+                <entry
+>La imatge corregida utilitzant un filtre senzill d'augment de l'agudització. L'ajust per augmentar l'agudització és 80. </entry>
+                </row>
+                <row>
+                <entry>
+                    <para>
+                    <inlinemediaobject>
+                        <imageobject>
+                        <imagedata fileref="&path;editor-refocus-unsharpmask.png" format="PNG"/>
+                        </imageobject>
+                    </inlinemediaobject>
+                    </para>
+                </entry>
+                <entry
+>La imatge corregida utilitzant el filtre de màscara de desenfocament. La configuració és Radi = 50, Quantitat = 5 i Llindar = 0. </entry>
+                </row>
+                <row>
+                <entry>
+                    <para>
+                    <inlinemediaobject>
+                        <imageobject>
+                        <imagedata fileref="&path;editor-refocus-refocus.png" format="PNG"/>
+                        </imageobject>
+                    </inlinemediaobject>
+                    </para>
+                </entry>
+                <entry
+>La imatge corregida utilitzant el filtre de reenfocament. La configuració és Agudesa circular = 1,3, Correlació = 0,5, Filtre del soroll = 0,020, Agudesa gaussiana = 0 i Mida de la matriu = 5. </entry>
+                </row>
+            </tbody>
+            </tgroup>
+        </informaltable>
+        </para>
+        <note>
+        <para
+>Per obtenir més informació sobre la correcció dels mètodes d'agudització emprats en les imatges digitals, podeu trobar una comparació tècnica en <ulink url="http://www.bialith.com/Research/BARclockblur.htm"
+>aquest URL</ulink
+>. </para>
+        </note>
+    </sect4>
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

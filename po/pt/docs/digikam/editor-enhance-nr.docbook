@@ -1,0 +1,188 @@
+  <sect3 id="editor-enhance-nr">
+    <sect3info>
+      <title
+>Redução de Ruído</title>
+      <abstract>
+        <para
+>O 'plugin' de imagem de <emphasis
+>Redução de Ruído</emphasis
+> do &digikam; é uma ferramenta poderosa para reduzir o ruído da imagem. Usa um algoritmo com os direitos de cópia de Peter Heckert. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>Redução de ruído</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introdução</title>
+    <para
+>Esta ferramenta oferece alguns filtros de imagem seleccionáveis para remover pontos ou outros artefactos causados por lixo, como por exemplo pó ou cabelos nas lentes. Também pode ser usado para remover o <emphasis
+>Ruído do Sensor</emphasis
+> da máquina que possa ter sido causado por valores altos de ISO, assim como aplicar o <emphasis
+>Efeito de Moir&eacute;</emphasis
+> numa imagem de uma revista. </para>
+    <para
+>Se quiser mais informações sobre o ruído dos sensores das máquinas fotográficas digitais, por favor dê uma vista de olhos neste <ulink url="http://www.cambridgeincolour.com/tutorials/noise.htm"
+>tutorial</ulink
+>. </para>
+    <sect4 id="using-noisereduction">
+      <title
+>Usar a Ferramenta de Redução do Ruído</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-noisereduction.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>A Janela de Redução do Ruído</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>A imagem acima mostra uma cena típica, tirada com uma máquina digital, usando um rolo de alta sensibilidade a preto-e-branco. Mostra um ruído de grão, o qual poderá ser reduzido com sucesso por esta ferramenta. </para>
+      <para
+>O painel dimensionável com a antevisão original ajuda-o a posicionar-se dentro da imagem. Mova o rectângulo vermelho para seleccionar a área que lhe permitirá julgar a configuração óptima do filtro. A janela de antevisão mostra o resultado do filtro, usando a configuração actual. Poderá ser reorganizada em quatro combinações diferentes, como é representado nos ícones por baixo da antevisão original. Esta imagem mostra a primeira organização, em que o mesmo corte é mostrado a título de comparação. No fundo da área de antevisão, poderá ver o <guilabel
+>Factor de Ampliação</guilabel
+> para ampliar uma área da imagem. </para>
+      <para
+>Poderá ver em baixo uma descrição completa de todos os parâmetros. Na maioria dos casos, apenas será necessária a página de <guilabel
+>Detalhes</guilabel
+>, podendo deixar os outros parâmetros da página <guilabel
+>Avançado</guilabel
+> com os seus valores predefinidos. <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Raio</guilabel
+>: este controlo selecciona o tamanho da janela de desvio, usada pelo filtro. Os valores maiores não aumentam a quantidade de tempo necessária para filtrar cada pixel da imagem, mas poderão provocar algum borrão. Esta janela percorre a imagem e a cor nela é suavizada para remover as imperfeições. Em qualquer um dos casos, deverá ser do mesmo tamanho da granularidade do ruído, ou ligeiramente maior. Se for maior que o necessário, poderá causar algum borrão indesejado. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Limiar</guilabel
+>: use a barra para um ajuste mais abrangente e o campo incremental para um ajuste fino. Isto controla a sensibilidade à detecção de contornos. Este valor deverá ser definido de forma que os contornos sejam claramente visíveis e o ruído seja suavizado. Este valor não está limitado a qualquer valor de intensidade, mas sim à segunda derivada dos valores de intensidade. Basta ajustá-lo e observar a antevisão. O ajuste deverá ser feito com cuidado, dado que a fronteira entre o ruído, a suavização e o borrão é bastante reduzida. Ajuste-a com cuidado, como faria com a focagem de uma máquina fotográfica. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Textura</guilabel
+>: este controlo define a precisão da textura. Este valor pode ser usado para obter melhor ou pior precisão da textura. Quando for reduzido, então o ruído e a textura serão borrados, enquanto se forem aumentados, a textura será amplificada, mas também o ruído irá aumentar. Não tem praticamente efeito nenhum nos contornos da imagem, em oposição à <guilabel
+>Margem</guilabel
+> do filtro, o que irá borrar os contornos, se for aumentado. Se a <guilabel
+>Margem</guilabel
+> for ajustada de modo a que os contornos fiquem definidos, e continuar a haver muito ruído na área, então o detalhe da <guilabel
+>Textura</guilabel
+> poderá ser usado para reduzir o ruído sem borrar os contornos. Outra forma seria diminuir o <guilabel
+>Raio</guilabel
+> e aumentar a <guilabel
+>Margem</guilabel
+>. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Afiamento</guilabel
+>: este controlo define o nível de definição dos detalhes. Este valor define a distância em pixels na qual o filtro irá procurar antecipadamente as variações de luminosidade. Quando este valor for aumentado, então será removido o ruído de picos. Poderá eventualmente ajustar a <guilabel
+>Margem</guilabel
+> do filtro, quando mudar esta opção. Quando este valor for muito alto, o filtro adaptativo não poderá mais registar os detalhes da imagem, podendo começar a aparecer ruído ou borrões. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Margem</guilabel
+>: este controlo define a precisão dos contornos no afiamento. Este valor melhora a resposta na frequência do filtro. Quando for demasiado forte, então nem todo o ruído poderá ser removido, podendo aparecer algum ruído por picos. Configure-o como próximo do máximo, se quiser remover ruído fraco ou artefactos de JPEG, sem perder detalhes. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Erosão</guilabel
+>: este controlo define o desvio de fase nos contornos. Este valor pode ser usado para criar erosão nos pixels individuais e tem um efeito de suavização nos contornos, afiando os contornos por erosão, obtendo uma erosão do ruído nos contornos. O efeito depende do <guilabel
+>Afiamento</guilabel
+>, da <guilabel
+>Humidade</guilabel
+> e das <guilabel
+>Margens</guilabel
+>. Configure-o com o valor mínimo, se quiser remover o ruído fraco ou os artefactos do JPEG. Quando este valor for aumentando, então também será útil aumentar a <guilabel
+>Humidade</guilabel
+>. Esta opção poderá oferecer o efeito de afiamento e suavização dos contornos, quando for corrigido o ruído de picos. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Luminosidade</guilabel
+>: este controlo define a tolerância de luminosidade da imagem. Recomenda-se que use apenas as opções de tolerância da <guilabel
+>Cor</guilabel
+> ou da <guilabel
+>Luminosidade</guilabel
+> para fazer correcções na imagem, não ambas ao mesmo tempo. Estas opções não influenciam o processo de suavização principal que é controlado pelas opções de <guilabel
+>Detalhes</guilabel
+>. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Cor</guilabel
+>: este controlo define a tolerância de cor da imagem. Recomenda-se que use apenas as opções de tolerância da <guilabel
+>Cor</guilabel
+> ou <guilabel
+>Luminosidade</guilabel
+> para fazer uma correcção na imagem, e não ambas ao mesmo tempo. Estas opções não influenciam o processo de suavização principal, que é controlado pelas opções de <guilabel
+>Detalhes</guilabel
+>. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Gama</guilabel
+>: este controlo define a tolerância do gama da imagem. Este valor pode ser usado para aumentar os valores de tolerância das áreas mais escuras (que têm mais ruído normalmente). Isto resulta num maior borrão nas áreas sombreadas. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Humidade</guilabel
+>: este controlo define o ajuste de humidade no desvio de fase. Este valor define a rapidez da reacção do raio do filtro adaptativo às variações de luminosidade. Se for aumentado, os contornos aparecem mais suavizados; se for demasiado elevado, então poderá ocorrer algum borrão. Se for próximo do mínimo, então poderá ocorrer algum ruído e desvio de fase nos contornos. Poderá suprimir o ruído de picos se for aumentado e é o método preferido para o remover. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Gravar Como</guilabel
+> e <guilabel
+>Carregar</guilabel
+>: estes botões são usados exactamente para isso. Todos os parâmetros de Redução de Ruído que tenha definido poderão ser gravados e carregados posteriormente. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Repor Tudo</guilabel
+>: este botão repõe toda a configuração nos seus valores predefinidos. </para>
+          </listitem>
+        </itemizedlist>
+      </para>
+    </sect4>
+      <sect4 id="inaction-noisereduction">
+        <title
+>A redução de ruído em acção</title>
+        <para
+>Este é um exemplo de como a redução de ruído poderá mudar a sua vida. A imagem original é a (1) e a imagem corrigida é a (2). A redução do ruído foi aplicada com a configuração predefinida. </para>
+        <para>
+          <inlinemediaobject>
+            <imageobject>
+              <imagedata fileref="&path;editor-noisereduction-preview.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase
+>A Redução do Ruído em Acção</phrase>
+            </textobject>
+          </inlinemediaobject>
+        </para>
+      </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

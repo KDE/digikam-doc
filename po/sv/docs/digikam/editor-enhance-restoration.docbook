@@ -1,0 +1,222 @@
+  <sect3 id="editor-enhance-restoration">
+    <sect3info>
+      <title
+>Restaurering av fotografi</title>
+      <abstract>
+        <para>
+          <ulink url="http://cimg.sourceforge.net">
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref="&path;logo-cimg.png" format="PNG"/>
+              </imageobject>
+              <textobject>
+                <phrase
+>cimglogo</phrase>
+              </textobject>
+            </inlinemediaobject>
+          </ulink>
+        </para>
+        <para
+><emphasis
+>Restaurering av fotografi</emphasis
+> i &digikam; är definitivt ett av de mest avancerade verktygen för att reducera artefakter i fotografier. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>Digikam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Inledning</title>
+    <para
+>Det här fantastiska restaureringsfiltret är en nyutveckling som erbjuder möjligheter utan motstycke bland allmänt tillgängliga verktyg för att ta bort mängder av oönskat skräp från dina bilder. Det är väl anpassat för att hantera försämrade bilder som lider av Gaussiskt brus, filmkorn, repor eller komprimeringsartefakter och lokala försämringar som man ofta stöter på i digitala bilder (original eller digitaliserade). Utjämningen sker längs krökningar i bilderna, och bevarar på så sätt betydelsefullt innehåll på liknande sätt som det mänskliga ögat vill ha det. </para>
+    <para
+>Samma algoritm kan användas för färgläggning och strukturersättning, som täcks av ett annat verktyg (fyll i fotografi). Restaureringsalgoritmen har utvecklats av IMAGE-gruppen i GREC CNRS laboratorium i Caen, Frankrike, och är en del av <ulink url="http://cimg.sourceforge.net"
+>CImg-projektet</ulink
+>. </para>
+    <sect4 id="using-restoration">
+      <title
+>Använda restaureringsverktyget</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-restoration.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Restaurering av fotografi</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>Verktyget levereras med flera förinställningar som startpunkter och för att förenkla restaurering. Tillgängliga förinställningar listas nedan: <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Ingen</guilabel
+>: Använder de vanligaste förvalda filterinställningarna, som inte är optimerade för något visst syfte.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Reducera likformigt brus</guilabel
+>: Optimala inställningar för bildbrus orsakat av sensorer.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Reducera JPEG-artefakter</guilabel
+>: JPEG-komprimering är inte perfekt, och för vissa typer av bilder är den långt ifrån perfekt. Som en komprimeringsalgoritm med förlust, finns det vissa &quot;artefakter&quot;, små defekter som visas i den avkodade bilden. Den här inställningen har som mål att korrigera problemet.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Reducera mönster</guilabel
+>: Optimerad för att ta bort artefakter från bildinläsning, digitalisering eller moiré-mönster.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Om du vill ställa in filterparametrar för finjustering, använd flikarna <guilabel
+>Utjämning</guilabel
+> och <guilabel
+>Avancerade inställningar</guilabel
+>:</para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-restoration-settings1.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Utjämningsinställningar för restaurering av fotografi</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Detaljbevarande</guilabel
+> p [0, 100]: Den här styr bevarande av krökningar (anletsdrag). Ett lågt värde tvingar fram en likformig utjämning över hela bilden, medan större värden i första hand utjämnar likformiga områden och lämnar detaljerna skarpare. Värdet 0,9 bevarar detaljer bra nog så att ingen ökning av skärpan krävs efteråt. Observera att <guilabel
+>Detaljbevarande</guilabel
+> alltid måste vara mindre än <guilabel
+>Anisotropi</guilabel
+>.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Anisotropi</guilabel
+> alfa [0, 100]: Ett lågt värde utjämnar lika mycket i alla riktningar, medan ett värde nära 1 bara utjämnar i en riktning. Om du har filmkorn eller CCD-liknande brus, ger ett högt värde vågliknande mönster, medan JPEG-artefakter är lämpliga för värden nära 1. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Utjämning</guilabel
+> [0, 500]: Den här inställningen anger maximal övergripande utjämningsfaktor (när p definierar den relativa utjämningen). Ställ in det enligt brusnivån.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Regelbundenhet</guilabel
+> [0, 100]: Den här parametern gäller utjämningens regelbundenhet. Föreställ dig utjämningsprocessen som att bilden kammas. Då motsvarar regelbundenheten kammens storlek. Ju större värdet är, desto mer regelbunden blir den övergripande utjämningen. Det är nödvändigt när det finns mycket brus, eftersom det då är svårt att uppskatta den lokala geometrin. Om du också vill åstadkomma en 'van Gogh' turbulenseffekt, rekommenderas inställningar större än 3.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Filtreringsiterationer</guilabel
+>: Antal gånger som suddighetsalgoritmen utförs. Oftast är 1 till 2 tillräckligt.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-restoration-settings2.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Avancerade inställningar för restaurering av fotografi</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Vinkelsteg</guilabel
+> da [5, 90]: Vinkelintegrering av anisotropifaktorn a. Om alfa väljes liten, ska också da väljas liten. Men se upp med att små vinklar ger långa beräkningstider. Välj det så stort som du kan acceptera. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Integreringssteg</guilabel
+> [0,1, 10]: Stegbredd för rumslig integrering uttryckt i bildpunkter. Bör förbli mindre än 1 (delbildpunktsutjämning) och ska aldrig vara mer än 2.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Använd linjär interpolation</guilabel
+>: Vinsten i kvalitet om du markerar alternativet är bara marginell, och du förlorar en faktor två i hastighet. Rekommendationen är att lämna det av.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Knapparna <guilabel
+>Spara som...</guilabel
+> och <guilabel
+>Ladda...</guilabel
+> används för att göra just det. Alla filterinställningar för att restaurera ett fotografi som du har ställt in kan sparas i filsystemet i en textfil och senare laddas. </para>
+      <warning>
+        <para
+>Restaurering av ett fotografi är (jämförelsevis) mycket snabbt med tanke på vad det gör, med det kan ta lång tid att utföra, och orsaka hög processorlast. Du kan alltid avbryta en effekt genom att trycka på knappen <guilabel
+>Avbryt</guilabel
+> under uppritning av förhandsgranskningen. </para>
+      </warning>
+    </sect4>
+    <sect4 id="inaction-restoration">
+      <title
+>Restaurering av fotografi under arbete</title>
+      <para
+>Nedan ser du restaureringstypen <guilabel
+>Reducera likformigt brus</guilabel
+> utförd på ett svartvitt fotografi taget med kameran Minolta™ 700Si och Ilford™ HP-5 film inställd på ISO-känsligheten 3200. Du ser ett mycket framträdande filmkorn på ansiktena. Originalbilden är (1), den korrigerade bilden är (2). </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-restoration-preview1.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Förhandsgranskning av restaurering med reducera likformigt brus</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>Nedan ser du ett annat exempel på fotografisk restaurering med användning av <guilabel
+>Reducera mönster</guilabel
+> utförd på ett gammalt färgfotografi inläst med en digital flatbäddsbildläsare. Du ser de mycket framträdande artefakterna som resulterar av bildläsarens ljus på fotografiskt plastpapper. Originalbilden är (1), den korrigerade bilden är (2). </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-restoration-preview2.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Förhandsgranskning av restaurering med reducera mönster</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

@@ -1,0 +1,134 @@
+<sect2 id="editor-cm-rendering">
+    <title
+>Profili della stampante, intenti di rendering e prova a schermo</title>
+
+    <sect3>
+        <title
+>Dove mi procuro un profilo della stampante?</title>
+
+        <para
+>Fiuuu! Siamo arrivati lontano - quasi pronti per stampare quell'immagine! Dove trovo un profilo della stampante? Sai già la risposta. Puoi usare il profilo generico della tua stampante o puoi comprarne uno prodotto professionalmente: se lo chiedi, alcuni stabilimenti di stampa commerciale ti manderanno i loro (che però non funzioneranno con la tua stampante!). Puoi farti da solo il tuo profilo della stampante usando Argyll, e in questo caso puoi adattarlo alla tua particolare carta, ai tuoi inchiostri, ed anche alle caratteristiche delle immagini (se stai stampando una serie di immagini con una tavolozza di colori limitata a sotto-toni marroni, non hai bisogno di un profilo di stampante che provi a far spazio al ciano e blu saturati). Non posso darti ulteriori consigli o collegamenti a maggiori informazioni su questo argomento, ho appena iniziato ad imparare come si stampano le immagini (in passato ho visto e condiviso le mie immagini solo attraverso lo schermo del monitor), ma dai un'occhiata a <ulink url="http://www.luminous-landscape.com/essays/fancy-graphics2.shtml"
+>questa pagina</ulink
+>: fa un'eccellente presentazione dei benefici derivanti dalla creazione del profilo della propria stampante, più una valutazione sostanzialmente positivo sull'uso Argyll per questo scopo. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Che dire degli intenti di rendering?</title>
+
+        <para
+>L'intento di rendering si riferisce al modo in cui le gamme di colore sono gestite quando il target prefissato dello spazio di colore (per esempio, il monitor o la stampante) non può occuparsi della piena gamma dello spazio di colore della sorgente (per esempio nello spazio di lavoro). </para>
+
+        <para
+>Ci sono quattro intenti di rendering comunemente usati: percettivo, colorimetrico relativo, colorimetrico assoluto, e saturazione. Ho cercato su Internet per trovare il migliore scritto sugli intenti di rendering e le implicazioni dello scegliere un intento di rendering rispetto ad un altro. Credo di aver trovato questo articolo, leggi <ulink url="http://www.cambridgeincolour.com/tutorials/color-space-conversion.htm"
+>questa pagina</ulink
+>. Citando brevemente dall'articolo di Cambridge in Color sulla conversione degli spazi di colore: </para>
+
+        <blockquote>
+
+            <para
+>Il rendering percettivo e colorimetrico relativo sono probabilmente i più utili per la fotografia digitale nella conversione dei tipi. Ognuno pone una differente priorità su come rendere i colori all'interno di una regione della gamma senza appaiamento. </para>
+
+            <para
+>Il colorimetrico relativo mantiene una corrispondenza quasi esatta tra le due gamme dei colori, anche se questo taglia fuori dei colori della gamma. </para>
+
+            <para
+>All'opposto, il rendering percettivo prova a preservare qualche relazione tra i colori fuori gamma, anche se questo si tramuta in scarsa accuratezza per i colori nella gamma... </para>
+
+            <para
+>Il colorimetrico assoluto è simile al relativo nel fatto che preserva i colori nella gamma e taglia quelli fuori gamma, ma differiscono nel mondo in cui ognuno tratta il punto di bianco... Il colorimetrico relativo altera i colori nella gamma, così che il punto di bianco di uno spazio si allinei con quello dell'altro, mentre il colorimetrico assoluto preserva esattamente i colori (senza considerare di cambiare il punto di bianco). </para>
+
+            <para
+>L'intento di rendering saturazione tenta di preservare i colori saturi. </para>
+
+        </blockquote
+> 
+
+        <para
+>Io citerei l'articolo per intero (è così buono), ma sono sicuro che sarebbe un "uso sleale". Così', vai a controllare l'articolo da te. Le illustrazioni nell'articolo aiutano davvero a chiarire cosa veramente facciano gli intenti di rendering e in base a quale compromesso scegliere un intento di rendering piuttosto che un altro. </para>
+
+        <para
+>Per un'altra fonte eccellente di informazione sugli intenti di rendering con illustrazioni a corredo, leggi <ulink url="http://www.normankoren.com/color_management.html#Rendering_intent"
+>questa pagina</ulink
+>. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Che tipo di intento di rendering dovrei usare per visualizzare le immagini sul mio monitor?</title>
+
+        <para
+>La scelta più comune è la colorimetrica relativa. Ti suggerirei di non usare la colorimetrica assoluta (es: con ufraw), a meno che tu non voglia dei risultati molto strani. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Che cosa è la prova colore a schermo?</title>
+
+        <para
+>La prova colore a schermo ti mostrerà le differenze che ti devi attendere tra quello che vedi a schermo e quello che vedrai quando farai una stampa. Per fare una prova colore hai bisogno di un profilo per la tua stampante (a dire il vero, per la combinazione carta/stampante, perché la carta usata influenza i colori dell'inchiostro e il punto di bianco). Se non ti piace l'immagine nella prova puoi introdurre dei cambiamenti (nel tuo spazio di lavoro, non dopo aver convertito la tua immagine nello spazio della tua stampante!) per allineare la prova colore dell'immagine alla stampa voluta. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Che intento di rendering dovrei usare quando faccio una prova di colore a schermo? </title>
+
+        <para
+>Ho sempre sentito dire che si dovrebbe usare "l'intento percettivo" quando si trasforma un immagine da uno spazio di lavoro più grande ad uno spazio di stampa più piccolo. Ma, specialmente alla luce delle letture del summenzionato articolo Cambridge in Color, sembra che questo possa dare i migliori risultati o meno a seconda dalla combinazione delle rispettive gamme di un'immagine e della combinazione stampante/carta in questione. Di recente ho sperimentato un po' gli intenti di stampa, e trovo che, per le mie immagini, gli intenti colorimetrici diano colori più chiari e limpidi, a patto però di ri-elaborare con attenzione l'immagine, per evitare il taglio delle luci forti e delle ombre. Un'attenta lettura dei vari forum di fotografia e degli articoli disponibili in Internet indica che "l'intento percettivo" è solo un'opzione, e non sempre quella "migliore". </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>E che cosa si sa della compensazione del punto di nero?</title>
+
+        <para
+>La definizione più chiara che ho potuto trovare sulla compensazione del punto di nero è come segue:"BPC (black point compensation) è il modo di fare degli aggiustamenti tra i livelli massimi di nero dei file digitali e le capacità di colorare di nero di vari dispositivi digitali [come una stampante]"(citazione da <ulink url="http://www.newsandtech.com/issues/2004/05-04/pt/05-04_blackpoint.htm"
+>questa pagina</ulink
+>). </para>
+
+        <para
+>L'articolo da cui proviene questa definizione offre una spiegazione molto chiara (sebbene Adobe-centrica) di come la compensazione del punto di nero funzioni e le conseguenze pratiche di usarla o no. Il consiglio definitivo è: dipende. Prova a fare una prova a schermo con la compensazione del punto nero abilitata. Se ti piace usala, altrimenti non usarla. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Possono essere usati tutti gli intenti di rendering quando si converte da uno spazio di colore ad un altro?</title>
+
+        <para
+>In una parola: no. Gli intenti di rendering disponibili quando si converte da un profilo ad un altro dipendono dal profilo di destinazione. Non tutti i profili supportano ogni intento di rendering. Quello che succede quando selezioni un intento di rendering non supportato è che LCMS usa silenziosamente l'intento di rendering del profilo predefinito. </para>
+
+        <para
+>Per una discussione informativa e umoristica sui miti che circondano l'uso dei vari intenti di rendering vedi:<ulink url="http://www.colorwiki.com/wiki/Color_Management_Myths_21-25#Myth_.2321:_There_are_perceptual_rendering_intents_available_when_converting_from_scanner.2Fcamera-.3Eworkspace_or_workspace-.3Eworkspace."
+>qui</ulink
+> e <ulink url="http://www.colorwiki.com/wiki/Color_Management_Myths_6-10"
+>qui</ulink
+>. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Perché l'intento percettivo di rendering viene raccomandato così spesso come l'intento di rendering "fotografico"? </title>
+
+        <para
+>È una scelta sicura perché impedisce il taglio delle ombre e delle luci forti, anche se forse a scapito della desaturazione di tutti i tuoi colori. Così, se non vuoi preoccuparti di fare delle prove a schermo, scegli l'intento di rendering percettivo (se no vuoi fare una prova a schermo probabilmente dovresti anche rimanere con sRGB). </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

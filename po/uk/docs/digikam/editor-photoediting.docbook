@@ -1,0 +1,575 @@
+ <sect1 id="photographic-editing"
+> <title
+>Редагування фотографій — потокова обробка</title>
+
+    <sect2 id="image-editing-tools"
+> <title
+>Редагування зображень/Пакетні інструменти</title>
+
+        <sect3 id="standard-workflow"
+> <title
+>Стандартна процедура обробки</title>
+
+            <para
+>Під час виконання типової обробки зображень основними інструментами, на які слід звернути увагу є: <orderedlist
+> <listitem
+><para
+>Експозиція: <link linkend="editor-color-wb"
+>Баланс білого</link
+></para
+></listitem
+> <listitem
+><para
+>Колір: <link linkend="editor-color-wb"
+>Баланс білого</link
+></para
+></listitem
+> <listitem
+><para
+>Точки чорного і білого: <link linkend="editor-color-wb"
+>Баланс білого</link
+> або <link linkend="editor-color-levels"
+>Налаштування рівнів</link
+></para
+></listitem
+> <listitem
+><para
+>Контрастність: <link linkend="editor-color-curves"
+>Виправити криві</link
+></para
+></listitem
+> <listitem
+><para
+>Насиченість: <link linkend="editor-color-wb"
+>Баланс білого</link
+>, <link linkend="editor-filters-colorsfx"
+>Чіткість</link
+> або <link linkend="editor-color-correction"
+>Відтінок/Насиченість/Освітленість</link
+></para
+></listitem
+> <listitem
+><para
+>Зміна розмірів (інтерполяція) : <link linkend="editor-transform-resize"
+>Змінити розмір</link
+></para
+></listitem
+> <listitem
+><para
+><link linkend="editor-enhance-sharpen"
+>Збільшення різкості</link
+></para
+></listitem
+> <listitem
+><para
+><ulink url="help:/digikam/index.html#dam"
+>Керування цифровими ресурсами</ulink
+> (застосування міток, підписів, оцінок, даних геопозиціонування, збереження з іншою назвою)</para
+></listitem
+> </orderedlist
+> Ми радимо вам виконати цю послідовність кроків з редагування зображення, щоб досягти оптимальної фотографічної якості отриманого зображення. Зокрема, вам ніколи не слід виконувати збільшення різкості перед останнім кроком. Для зберігання фотографій ми радимо вам скористатися форматом, збереження даних у якому не призводить до втрати якості, зокрема у форматах PNG і TIFF. У випадку, якщо ви знехтуєте цією порадою, зображення втрачатиме якість кожного разу, коли ви зберігатимете результати редагування. Якщо ви можете собі це дозволити, використовуйте формат 16 бітів/канал для ваших найкращих знімків. Якщо ви змінюєте простір кольорів, зокрема, якщо ви бажаєте працювати з CIEL*a*b, зображення у форматі 16 бітів на канал дозволять уникнути обрізання діапазону кольорів під час перетворення. </para>
+
+            <para
+>Ви можете виконати кроки 4 і 5 у зворотньому порядку, це можливе, якщо початкова контрастність зображення вже є достатньою, ви можете виконати перші 4 дії з коригування за допомогою одного інструмента, балансу білого</para>
+
+            <para
+>Багато з інструментів, які можуть знадобитися вам для редагування фотографій, включено до &digikam;. Далі ви можете знайти їх опис. </para>
+
+        </sect3>
+
+        <sect3
+> <title
+>Вступні зауваження щодо можливостей типових інструментів редагування</title>
+
+            <para
+>Для всіх інструментів редактора зображень, зокрема «Збільшення різкості», «Розмивання», «Зміна фокусування», «Маска зменшення різкості» тощо, використано однаковий стиль діалогових вікон. У цих вікнах ви зможете спостерігати за наслідками застосування інструменту перед його справжнім застосуванням до поточного зображення. Нижче наведено приклад роботи інструменту «Застосувати текстуру», на якому ви можете бачити типове компонування діалогового вікна: </para>
+
+            <example
+> <title
+>Робота інструменту «Текстура»</title>
+                <screenshot>
+                    <screeninfo
+>Робота інструменту «Текстура»</screeninfo>
+                    <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="&path;editor-commondialogtools.png" format="PNG"/>
+                    </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </example>
+
+            <para>
+
+                <itemizedlist>
+
+                    <listitem
+><para
+><emphasis
+>(1)</emphasis
+>: за допомогою семи кнопок, розташованих згори ліворуч, можна вибрати стиль порівняння у області перегляду. Серед можливих режимів: <itemizedlist>
+
+                            <listitem
+><para
+>Початкове зображення.</para
+></listitem>
+
+                            <listitem>
+                                <para
+>Вертикальне розділення без дублювання. У лівій області буде показано початкове зображення, а у правій — застосування фільтра до продовження поточної збільшеної ділянки.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Горизонтальне розділення без дублювання. У верхній області буде показано початкове зображення, а у нижній — застосування фільтра до продовження поточної збільшеної ділянки.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Вертикальне розділення. У лівій частині буде показано початкове зображення, а у правій, для порівняння, — те саме зображення з застосованим ефектом.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Горизонтальне розділення. У верхній частині буде показано початкове зображення, а у нижній, для порівняння, — те саме зображення з застосованим ефектом.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Перегляд ефекту: інтерактивний перегляд результатів застосування ефекту без можливості порівняння.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Стиль «наведення вказівника миші»: попередній перегляд буде показано, якщо вказівник миші не перебуває у області перегляду (наприклад, знаходиться у області параметрів), у іншому випадку буде показано початкове зображення.</para>
+                            </listitem>
+
+                        </itemizedlist>
+
+                    </para
+></listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(2)</emphasis
+>: тут можна бачити дві кнопки, які вмикають або вимикають пере- та недоекспонування. Кольори можна налаштувати на <link linkend="setupdialog.anchor"
+>сторінці загального налаштування</link
+>.</para>
+                        </listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(3)</emphasis
+>: область вибору інструменту перегляду. Наведіть на нього вказівник миші і перетягніть рамочку, щоб пересунути перегляд зображенням. Область перегляду, розташовану ліворуч у діалоговому вікні буде оновлено відповідним чином.</para>
+                        </listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(4)</emphasis
+>: область параметрів фільтра або інструмента.</para>
+                        </listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(5)</emphasis
+>: у нижньому лівому куті розташовано кнопки довідки і повернення до типових параметрів (параметрів, які програма запам’ятала під час попереднього використання інструмента).</para>
+                        </listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(6)</emphasis
+>: індикатор поступу для інструментів, для роботи яких потрібні обчислення.</para>
+                        </listitem>
+
+                </itemizedlist>
+
+            </para>
+
+        </sect3>
+
+        <sect3
+> <title
+>Набір інструментів &digikam;</title>
+
+            <itemizedlist>
+
+                <listitem
+><para
+>Колір зображення <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-color-depth"
+>Глибина кодування</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-profile"
+>Перетворення просторів кольорів</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-auto"
+>Автоматичне виправлення</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-exposure"
+>Яскравість/Контрастність/Гама</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="hsladjusttool.anchor"
+>Відтінок/Насиченість/Освітленість</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="colorbalancetool.anchor"
+>Баланс кольорів</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-levels"
+>Коригування рівнів</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-wb"
+>Баланс білого/Експозиція/Насиченість</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-curves"
+>Коригування кривих</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-mixer"
+>Змішувач каналів</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-bw"
+>Чорно-білий</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="infraredtool.anchor"
+>Імітація інфрачервоної плівки</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-neg"
+>Кольоровий негатив</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+                <listitem
+><para
+>Покращення зображення <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-enhance-sharpen"
+>Зміна різкості (збільшення різкості, маска зменшення різкості, зміна фокуса)</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-blur"
+>Інструмент розмивання</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-redeyes"
+>Інструмент вилучення наслідків ефекту «червоних очей»</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-inpaint"
+>Замальовування фотографії</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-localcontrast"
+>Локальна контрастність</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-nr"
+>Вилучення шумів</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-hotpixels"
+>Виправлення «гарячих» пікселів</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-distortion"
+>Виправлення викривлення, спричиненого об’єктивом</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-restoration"
+>Відновлення фотографій</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-vignetting"
+>Інструмент виправлення віньєтування</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-lenscorrection"
+>Інструмент автокорекції об’єктива</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+                <listitem
+><para
+>Інструменти перетворення зображення <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-transform-crop"
+>Інструмент «Обрізання»</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-rotateflip"
+>Зміна розміру</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-liquid"
+>Пошарове вирізання</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-resize"
+>Зміна розміру</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-freerotation"
+>Довільний поворот</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-perspective"
+>Налаштування перспективи</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-shear"
+>Інструмент перекошування</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+                <listitem
+><para
+>Оздоблення зображення <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-decorate-border"
+>Додавання рамки</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-decorate-inserttext"
+>Вставка тексту</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-decorate-texture"
+>Застосування текстури</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+                <listitem
+><para
+>Фільтри спеціальних ефектів <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-filters-colorsfx"
+>Ефекти кольорів</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-filmgrain"
+>Додавання зернистості плівки</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-oilpaint"
+>Імітація малювання олійною фарбою</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-charcoal"
+>Імітування малювання грифелем</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-emboss"
+>Створення ефекту барельєфа на фотографії.</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-distortionfx"
+>Ефекти викривлення</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-blurfx"
+>Ефекти розмивання</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-raindrops"
+>Додавання крапель дощу</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+            </itemizedlist>
+
+        </sect3>
+
+    </sect2>
+
+    <sect2 id="raw-workflow"
+> <title
+>Обробка файлів зображень цифрових негативів, процес роботи з цифровими негативами</title>
+    <anchor id="rawprocessing.anchor"/>
+
+        <para
+>Типова робота з цифровим негативом у &digikam; може складатися з таких кроків:</para>
+
+            <itemizedlist>
+
+                <listitem
+><para
+>Налаштування параметрів перетворення цифрового негатива і параметрів керування кольорами: <itemizedlist>
+
+                        <listitem
+><para
+>отримання профілів кольорів ICC для фотоапарата, дисплея та принтера</para
+></listitem>
+
+                        <listitem
+><para
+>належне налаштування &digikam; на бажаний робочий простір кольорів </para
+></listitem>
+
+                    </itemizedlist>
+
+                </para
+></listitem>
+
+                <listitem
+><para
+>Встановлення точки білого фотоапарата</para
+></listitem>
+
+                <listitem
+><para
+>Усування ефектів мозаїчності (зокрема інтерполяція, фільтрування шуму і <ulink url="help:/digikam/using-setup.html#CA.anchor"
+>виправлення хроматичної аберації</ulink
+>) </para
+></listitem>
+
+                <listitem
+><para
+>Перетворення простору кольорів</para
+> </listitem>
+
+                <listitem
+><para
+>Виправлення гами, відображення тонів</para
+> </listitem>
+
+                <listitem
+><para
+>Призначення профілів кольорів</para
+> </listitem>
+
+                <listitem
+><para
+>Динамічне розширення діапазону (необов’язкове)</para
+></listitem>
+
+                <listitem
+><para
+>Виконання <link linkend="standard-workflow"
+>стандартних робіт</link
+></para
+></listitem>
+
+            </itemizedlist>
+
+        <para
+>Далі все дуже просто: оберіть зображення цифрового негатива і відкрийте його у редакторі. Після обробки зображення програма відкриє вікно віджета керування кольорами для коригування показу кольорів. Без застосування керування кольорами всі зображення виглядатимуть дуже тьмяними, і це нормально. Ви можете поекспериментувати з профілями, які є у вашому розпорядженні, щоб вибрати найкращий профіль для введення потрібного вам зображення (деякі з профілів даватимуть дуже ахроматичні, навіть трохи нудні зображення, інші ж даватимуть насиченіші кольорами результати тощо). </para>
+
+    </sect2
+>&doc-editor-color; &doc-editor-enhance; &doc-editor-transform; &doc-editor-decorate; &doc-editor-filters; </sect1>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

@@ -1,0 +1,209 @@
+  <sect3 id="editor-enhance-inpaint">
+    <sect3info>
+      <title
+>Ретуширование изображения</title>
+      <abstract>
+        <para>
+          <ulink url="http://cimg.sourceforge.net">
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref="&path;logo-cimg.png" format="PNG"/>
+              </imageobject>
+              <textobject>
+                <phrase
+>cimglogo</phrase>
+              </textobject>
+            </inlinemediaobject>
+          </ulink>
+        </para>
+        <para
+>Инструмент <emphasis
+>Ретуширование изображения</emphasis
+> — это определённо один из самых передовых инструментов для удаления нежелательных артефактов изображения с беспрецедентной производительностью. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>Digikam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Введение</title>
+    <para/>
+    <para
+>Алгоритм ретуширования был разработан командой IMAGE лаборатории GREC CNRS из города Кан, Франция, и он является частью <ulink url="http://cimg.sourceforge.net"
+>проекта CImg</ulink
+>. </para>
+    <sect4 id="using-inpainting">
+      <title
+>Использование инструмента ретуширования</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-inpainting.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Диалог инструмента ретуширования</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>В инструмент встроено несколько готовых параметров в качестве отправной точки для упрощения процесса ретуширования. Список доступных готовых параметров представлен ниже: <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Другое</guilabel
+>: используется наиболее распространённые параметры по умолчанию, не оптимизированные под конкретную цель.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Удалить небольшой диапазон</guilabel
+>: .</para
+> <!-- TODO -->
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Удалить средний диапазон</guilabel
+>: .</para
+> <!-- TODO -->
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Удалить большой диапазон</guilabel
+>: .</para
+> <!-- TODO -->
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Для более точной настройки фильтра воспользуйтесь вкладками <guilabel
+>Общие</guilabel
+> и <guilabel
+>Расширенные параметры</guilabel
+>:</para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-inpainting-settings1.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Дополнительные параметры ретуширования</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Сохранение деталей</guilabel
+> [0, 100]: контролирует сохранение кривизны. Низкое значение приводит к равномерному сглаживанию изображения, в то время как большие значения предпочтительно сглаживают однородные области и делают детали более чёткими. Значение 0,9 сохраняет детали, чтобы впоследствии не требовалось повышение резкости. Обратите внимание, что  значение параметра <guilabel
+>Сохранение деталей</guilabel
+> всегда должно быть ниже значения параметра <guilabel
+>Анизотропия</guilabel
+>.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Анизотропия</guilabel
+> альфа [0, 100]: низкое значение сглаживает одинаково во всех направлениях, а значение, близкое к 1, сглаживает только в одном направлении. Если есть зернистость плёнки или имеется шум, подобный шуму на ПЗС-матрицах, высокое значение приведёт к появлению волнообразного рисунка, а артефакты JPEG подходят для значений, близких к 1. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Сглаживание</guilabel
+> [0, 500]: устанавливает максимальный общий коэффициент сглаживания (где p определяет относительное сглаживание). Установите его в соответствии с уровнем шума.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Порядок</guilabel
+> [0, 100]: этот параметр имеет отношение к более крупным структурам. Чем больше это значение, тем более равномерным будет общее сглаживание. Это необходимо в случае, когда присутствует много шума, потому что тогда трудно оценить локальную геометрию. Кроме того, если требуется добиться эффекта «турбулентности» Ван Гога, рекомендуется установить значение выше 3.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Проходов</guilabel
+>: количество применений алгоритма размытия. Обычно достаточно значения 1 или 2.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-inpainting-settings2.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Дополнительные параметры ретуширования</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Шаг по углу</guilabel
+> градус [5, 90]: угловая интеграция альфа-анизотропии. Если альфа выбрана маленькой, то и градус угла следует выбрать маленьким. Будьте осторожны, небольшие значения приводят к увеличению продолжительности работы. Рекомендуется устанавливать наиболее большие углы. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Интегральный шаг</guilabel
+> [0.1, 10]: ширина шага пространственной интеграции в пикселах. Ширина шага должна оставаться меньше 1 (субпиксельное сглаживание) и никогда не должна быть больше 2.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Использовать линейную интерполяцию</guilabel
+>: При выборе этой опции прирост качества будет незначителен, а скорость обработки изображения упадёт в два раза. Рекомендуется не использовать её.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para
+><guilabel
+>Сохранить как...</guilabel
+> и <guilabel
+>Из файла...</guilabel
+>: эти кнопки функционируют в соответствии со своими названиями. Все параметры ретуширования фотографии возможно сохранить в системе и загрузить позже. </para>
+      <warning>
+        <para
+>Инструмент ретуширования фотографии работает сравнительно быстро, но обработка может занять много времени и привести к высокой загрузке процессора. Процесс обработки всегда возможно прервать нажатием кнопки <guilabel
+>Отмена</guilabel
+>. </para>
+      </warning>
+    </sect4>
+    <sect4 id="inaction-inpainting">
+      <title
+>Пример использования инструмента ретуширования</title>
+      <para
+>Ниже представлен результат работы функции инструмента ретуширования <guilabel
+>Удалить небольшой диапазон</guilabel
+>, применённого к цветной фотографии, сделанной в Гватемале с помощью аналоговой камеры. Заметно, что на лице есть странные чёрные артефакты из-за использования плохой фотопленки во время путешествия. Оригинальное изображение представлено под номером (1), отретушированное — под номером (2). </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-inpainting-preview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Пример использования инструмента ретуширования</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

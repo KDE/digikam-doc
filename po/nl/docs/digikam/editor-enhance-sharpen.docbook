@@ -1,0 +1,437 @@
+<sect3 id="editor-enhance-sharpen">
+    <sect3info>
+        <title
+>Verscherpen van een afbeelding</title>
+        <abstract>
+        <para
+>&digikam; levert drie verschillende hulpmiddelen voor verscherpen, elk met <link linkend="comparison-refocus"
+>eigenschappen</link
+> op een verschillend gebied. <itemizedlist>
+            <listitem>
+                <para
+><link linkend="using-adjustsharpness"
+>Sharpen</link
+> is een traditioneel hulpmiddel voor verscherpen, die erg snel en gemakkelijk is, maar snel korrelige afbeeldingen produceert, speciaal in donkere gebeiden. </para>
+            </listitem>
+            <listitem>
+                <para
+><link linkend="using-unsharp"
+>Unsharp Mask</link
+> werkt op het randcontrast om een afbeelding scherper te laten lijken, maar in werkelijkheid niets scherper maakt, het werkt tamelijk psychovisueel. Het kan worden gebruikt om een atmosferische waas te verwijderen en hier doet het echt goed werkt. Het algoritme komt uit "the Gimp" en het copyright behoort aan Winston Chang. </para>
+            </listitem>
+            <listitem>
+                <para
+><link linkend="refocus"
+>Refocus</link
+> is waarschijnlijk het beste van de drie omdat het echt de scherpte verbeterd. Het is een beetje ingewikkelder in zijn toepassing omdat er verschillende parameters zijn om mee te spelen. </para>
+            </listitem>
+            </itemizedlist>
+        </para>
+        </abstract>
+        <keywordset>
+        <keyword
+>Digikam</keyword>
+        <keyword
+>Opnieuw focussen</keyword>
+        <keyword
+>Unsharp mask (Onscherp masker)</keyword>
+        </keywordset>
+    </sect3info>
+    <title
+>Inleiding</title>
+    <para
+>Foto's die out-of-focus zijn, maar ook de meeste gedigitaliseerde afbeeldingen, hebben correctie voor de scherpte nodig. Dit komt door het digitaliseringsproces dat een kleurvlak bewerkt met punten die licht in kleur variëren: elementen kleiner dan de bemonsteringsfrequentie worden uitgemiddeld tot een continue kleur. Hierdoor zien scherpe begrenzingen er een beetje vaag uit. Hetzelfde fenomeen treedt ook op bij het op papier printen van gekleurde punten. Bij spiegelreflexcamera's is het zelfs vaker nodig een correctie op scherpte uit voeren dan bij consumentencamera's. </para>
+    <para
+>Op JPEG afbeeldingen is al in de camera verscherping toegepast, afbeeldingen in RAW-formaat hebben altijd verscherping nodig in hun workflow. </para>
+    <para
+>Sommige scanners passen een verscherpingsfilter toe bij het scanning. Het kan het waard zijn om het uit te schakelen zodat u de controle houdt over uw afbeelding. </para>
+    <sect4 id="using-adjustsharpness">
+        <title
+>Scherpte aanpassen</title>
+        <anchor id="sharpentool.anchor"/>
+    </sect4>
+        <sect4>
+        <title
+>Een foto verscherpen</title>
+        <para
+>Als de focus van de camera niet perfect is ingesteld of de camera beweegt bij het maken van de foto dan zal het resultaat een wazige foto zijn. Als deze erg wazig is dan kunt u er waarschijnlijk weinig eraan doen met welke techniek dan ook. Maar als de foto niet erg wazig is dan kunt u wellicht de foto minder wazig maken. Vele goede spiegelreflexcamera's passen minder beeldbewerking toe op de foto's dan eenvoudiger camera's (die de neiging hebben om kunstmatig het contrast te verhogen zodat de foto's er beter uit zien). Dit soort lichte wazigheid kunt u makkelijk met de juiste gereedschappen verbeteren. </para>
+        <para
+>In sommige situaties kunt u misschien bruikbare resultaten krijgen bij het verscherpen van een foto met het hulpmiddel voor verscherpen via het menu-item <menuchoice
+> <guimenu
+>Verbeteren</guimenu
+> <guimenuitem
+>Verscherpen</guimenuitem
+> </menuchoice
+>. </para>
+        <example>
+            <title
+>Het hulpmiddel voor verscherpen in actie</title>
+            <screenshot>
+            <screeninfo
+>Het hulpmiddel voor verscherpen in actie</screeninfo>
+            <mediaobject>
+                <imageobject>
+                <imagedata fileref="&path;editor-sharpen.png" format="PNG"/>
+                </imageobject>
+            </mediaobject>
+            </screenshot>
+        </example>
+        <para
+>U moet hier voorzichtig mee omspringen omdat het resultaat er anders niet natuurlijk uitziet: het verminderen van de wazigheid maakt de randen in de foto schijnbaar scherper, maar het versterkt ook de ruis. In het algemeen is de meest bruikbare techniek voor het verminderen van wazigheid op foto's het Refocus hulpmiddel. U krijgt hiertoe toegang via het menuitem <menuchoice
+><guimenu
+>Verbeteren</guimenu
+><guimenuitem
+>Verscherpen</guimenuitem
+></menuchoice
+>. Lees <link linkend="refocus"
+>Refocus</link
+> voor meer informatie over en vergelijkingen van verscherpingstechnieken. </para>
+        </sect4>
+        <sect4>
+        <title
+>Korreligheid van een foto reduceren</title>
+        <para
+>Als u een foto neemt bij zeer weinig licht of met een erg snelle sluitertijd, dan heeft de camera niet genoeg informatie om goed te kunnen bepalen wat de echte kleur van elke pixel is, wat als resultaat geeft dat foto er korrelig uit ziet. U kunt deze korreligheid &quot;gladder&quot; maken door de foto waziger te maken, maar u verliest dan ook scherpte. Waarschijnlijk is de beste methode - als de korreligheid niet te erg is - het gebruik van het filter <link linkend="editor-enhance-nr"
+>Ruisreductie</link
+> dat u kunt bereiken via het menuitem <menuchoice
+> <guimenu
+>Verbeteren</guimenu
+> <guimenuitem
+>Ruisreductie</guimenuitem
+> </menuchoice
+>. </para>
+        </sect4>
+        <sect4>
+        <title
+>Een foto verzachten</title>
+        <para
+>Soms is het probleem tegenovergesteld: een foto is te scherp. Een beetje waziger maken is dan de oplossing: gelukkig is het veel gemakkelijker om een foto waziger te maken dan om het scherper te maken. Selecteer het <link linkend="editor-enhance-blur"
+>Hulpmiddel voor vervagen</link
+> via het menuitem <menuchoice
+> <guimenu
+>Verbeteren</guimenu
+> <guimenuitem
+>Vervagen</guimenuitem
+> </menuchoice
+> en experimenteer met het niveau. De voorbeeldweergave aan de rechterkant in het dialoogvenster toont het effect van de bewerking op uw foto. </para>
+        </sect4>
+    <sect4 id="using-unsharp">
+        <title
+>Het filter Onscherpte masker</title>
+        <note>
+        <para
+>Het filter Unsharp Mask is een uitstekend hulpmiddel om een waas uit uw foto's te verwijderen, zie <ulink url="http://www.gimpguru.org/Tutorials/RemovingHaze"
+>deze url</ulink
+> voor een demonstratie. </para>
+        </note>
+        <para>
+        <inlinemediaobject>
+            <imageobject>
+            <imagedata fileref="&path;editor-unsharp.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+            <phrase
+>Dialoog van Unsharp Mask</phrase>
+            </textobject>
+        </inlinemediaobject>
+        </para>
+        <para
+>Het paneel met de afbeelding en het voorbeeld van het origineel helpen u om u door de foto te verplaatsen. Het voorbeeldvenster toont het resultaat van het filter met de huidige instellingen. </para>
+        <para
+>Er zijn twee belangrijke variabelen, <guilabel
+>Straal</guilabel
+> en <guilabel
+>Hoeveelheid</guilabel
+>. De standaard getallen werken meestal verbazend goed, probeer deze daarom eerst. Door het vergroten van de <guilabel
+>Straal</guilabel
+> of de <guilabel
+>Hoeveelheid</guilabel
+> maakt u het effect sterker. Maar laat u niet meeslepen: als u het masker voor onscherpte te sterk maakt dan versterkt het de ruis in de foto en creëert het de indruk van ribbels naast scherpe randen. </para>
+        <para
+>Met de <guilabel
+>Straal</guilabel
+> kunt u instellen hoeveel pixels aan elke zijde van een rand wordt bewerkt door verscherping. Bij foto's met hoge resolutie is een grotere straal mogelijk. Het is beter om de verscherping bij de uiteindelijke resolutie van een foto uit te voeren. </para>
+        <para
+>De variabele <guilabel
+>Hoeveelheid</guilabel
+> is het percentage voor het verschil tussen het origineel en de wazige afbeelding die wordt toegevoegd aan het origineel. Hiermee kunt u sterkte voor het verscherpen instellen. </para>
+        <para
+>De besturing van de <guilabel
+>Drempelwaarde</guilabel
+> is een gedeelte van de maximum RGB-waarde, nodig voor de verschilwaarde. Hiermee kunt u het minimum verschil in pixel-waarde instellen dat een rand voorstelt waar de verscherping op moet worden toegepast. Op deze manier kunt u gebieden beschermen tegen verscherpen, die geleidelijk van kleur veranderen, en vermijdt u daarmee rimpels en ribbels in gezichten, de lucht of het wateroppervlak. </para>
+    </sect4>
+        <sect4 id="inaction-unsharp">
+        <title
+>Het filter Unsharp Mask in actie</title>
+        <para
+>Dit is een voorbeeld van hoe het filter Unsharp Mask uw leven kan veranderen. De originele afbeelding is (1) en de gecorrigeerde afbeelding is (2). Het filter Unsharp Mask is toegepast met <guilabel
+>Straal</guilabel
+> = 6.0, <guilabel
+>Hoeveelheid</guilabel
+> = 0.5, <guilabel
+>Drempel</guilabel
+> = 0.0. </para>
+        <para>
+            <inlinemediaobject>
+            <imageobject>
+                <imagedata fileref="&path;editor-unsharp-preview.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+                <phrase
+>Filter Unsharp Mask in actie</phrase>
+            </textobject>
+            </inlinemediaobject>
+        </para>
+        </sect4>
+    <sect4 id="refocus">
+        <title
+>Refocus toepassen op een foto</title>
+        <para
+>Het hulpmiddel <emphasis
+>Refocus</emphasis
+> van &digikam; is een hulpmiddel om de focussering van een afbeelding opnieuw te doen door de scherpte te verbeteren. Het gebruikt het algoritme <emphasis
+>Deconvolutie-filter</emphasis
+> met copyright bij Ernst Lippe. </para>
+        <para
+>Dit hulpmiddel probeert een foto opnieuw te &quot;focussen&quot; door de defocussering ongedaan te maken. Dit is beter dan proberen een foto te verscherpen. Dat is een techniek toepassen met de naam <emphasis
+>FIR Wiener Filtering</emphasis
+>. De traditionele techniek voor het verscherpen van foto's is het gebruik van onscherpte masker. Opnieuw focussen geeft meestal betere resultaten dan onscherpte masker. U kunt het starten via het menu van de afbeeldingsbewerker <menuchoice
+> <guimenu
+>Verbeteren</guimenu
+> <guimenuitem
+>Verscherpen</guimenuitem
+> <guimenuitem
+>Opnieuw focussen</guimenuitem
+> </menuchoice
+>. </para>
+        <para
+>De techniek van het opnieuw focusseren is anders dan <link linkend="using-unsharp"
+>Masker voor onscherpte</link
+> en wijkt ook af van het <link linkend="using-adjustsharpness"
+>verscherpingsfilter</link
+> die beide het contrast van de fotoranden verhogen. Opnieuw focussen keert echter het proces in de cirkelvormige lensopening van de camera om waarmee de foto's waziger zijn geworden. Deze methode geeft zoveel mogelijk de originele &quot;in focus&quot; foto weer terug. Opnieuw focussen gebruikt een zeer krachtig deconvolutiealgoritme dat vermengde data terugbrengt. In wiskundige termen: wazigheid is meestal het resultaat van afbuigingen, een terugbuiging zal dit proces omkeren, dit is wat Refocus is doet. Daarnaast verwijdert het FIR-filter veel van de ruis en korreligheid die vaak wordt geaccentueerd in het verscherpingproces van de verscherpingsfilters. </para>
+    </sect4>
+        <sect4 id="using-refocus">
+        <title
+>Het hulpmiddel Refocus gebruiken</title>
+        <para>
+            <inlinemediaobject>
+            <imageobject>
+                <imagedata fileref="&path;editor-refocus.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+                <phrase
+>Dialoog van Refocus</phrase>
+            </textobject>
+            </inlinemediaobject>
+        </para>
+        <para
+>Het paneel met de afbeelding en het voorbeeld van het origineel helpen u om u door de foto te verplaatsen. Het voorbeeldvenster toont het resultaat van het filter met de huidige instellingen. </para>
+        <para
+>In de meeste gevallen dat de camera de oorzaak is van een wazig beeld, is een circulaire vervorming de oorzaak van de slechte afbeelding, maar er zijn twee soorten afbuigingen: <itemizedlist
+> <listitem
+> <para
+>De circulaire verspreiding: deze verspreidt elke lichtpunt uniform rond een kleine schijf met een vaste straal. Technisch gesproken is dit het resultaat van het gebruik van een (ideale) lens die niet correct in focus is.</para
+> </listitem
+> <listitem
+> <para
+>De Gaussiaanse verdeling: deze is wiskundig gelijk aan een normale verdeling, met zijn klokvormige curve. Heeft meestal een niet natuurlijke oorzaak (wazigheid veroorzaakt door software). Van een theoretisch standpunt is een wiskundig geldige reden voor het gebruik van Gaussiaanse verdeling dat als u een groot aantal onafhankelijke willekeurige afbuigingen toepast, het resultaat altijd een Gaussiaanse verdeling zal benaderen.</para
+> </listitem
+> </itemizedlist
+> Het gereedschap voor opnieuw focussen kan zowel de Circulaire als de Gaussiaanse afbuiging met daarnaast mengvormen van beide bewerken. </para>
+        <para
+>In praktijk werkt meestal de Circulaire verdeling veel beter dan de Gaussiaanse verdeling. De Gaussiaanse verdeling heeft een zeer lange uitloop, wiskundig is daarom het resultaat ook afhankelijk van pixels op een grote afstand van het oorspronkelijke pixel. De FIR Wiener inverse van een Gaussiaanse verdeling is vaak hevig beïnvloedt door pixels op grote afstand en geeft daarom vaak ongewenste resultaten. </para>
+        <para
+>Om het deconvolutie-filter correct in te stellen heeft de plug-in de volgende parameters: <itemizedlist>
+            <listitem>
+                <para
+><guilabel
+>Circulaire scherpte</guilabel
+>: Dit is de straal van het circulaire convolutie-filter. Dit is de meest belangrijke parameter van deze plug-in. Voor de meeste afbeeldingen geeft de standaardwaarde 1 goede resultaten. Selecteer een hogere waarde als uw afbeelding erg vaag is, maar let er op dat geen halo's worden gemaakt.</para>
+            </listitem>
+            <listitem>
+                <para
+><guilabel
+>Correlatie</guilabel
+>: Het verhogen van de <guilabel
+>Correlatie</guilabel
+> kan het reduceren van artefacten bevorderen. De correlatie kan liggen tussen de 0 en 1. Bruikbare waarden zijn 0,5 en waarden dichtbij 1: dus 0,95 en 0,99. Een hogere waarde voor de correlatie zal het verscherpingseffect voor de plug-in reduceren.</para>
+            </listitem>
+            <listitem>
+                <para
+><guilabel
+>Ruisfilter</guilabel
+>: het verhogen van het <guilabel
+>ruisfilter</guilabel
+> kan helpen bij het reduceren van artefacten. Het ruisfilter kan tussen de 0-1 liggen, maar waarden boven de 0,1 zijn vrijwel nooit bruikbaar. Als de waarde voor het ruisfilter te laag is, &eg; 0,0, dan zal de kwaliteit van de afbeelding vreselijk zijn. Een bruikbare waarde is 0,01. Een hogere waarde voor het ruisfilter zal het de afbeelding verder vervagen.</para>
+            </listitem>
+            <listitem>
+                <para
+><guilabel
+>Gaussiaanse scherpheid</guilabel
+>: dit is de scherpheid voor de Gaussiaanse winding. Gebruik deze parameter als uw vervaging van het type Gaussiaans is (meestal vanwege eerdere ruisreductie). In de meeste gevallen laat u deze parameter op 0 staan, omdat het vreselijke artefacten veroorzaakt. Als u een hogere waarde kiest, dan dient u waarschijnlijk ook de parameters <guilabel
+>Correlatie</guilabel
+> en/of <guilabel
+>Ruisfilter</guilabel
+> te verhogen.</para>
+            </listitem>
+            <listitem>
+                <para
+><guilabel
+>Matrixgrootte</guilabel
+>: deze parameter bepaalt de grootte van de transformatiematrix. Het verhogen van de <guilabel
+>Matrixgrootte</guilabel
+> kan voor betere resultaten zorgen, in het bijzonder als u hoge waarden hebt gekozen voor <guilabel
+>Circulaire scherpte</guilabel
+> of <guilabel
+>Gaussiaanse scherpte</guilabel
+>. Merk op dat de plug-in zeer langzaam zal zijn bij het het kiezen van grote waarden. Meestal zou u een waarde tussen de 3 en de 10 moeten kiezen.</para>
+            </listitem>
+            <listitem>
+                <para
+>De knoppen <guilabel
+>Opslaan als...</guilabel
+> en <guilabel
+>Laden...</guilabel
+> zijn precies voor dat doel in gebruik. Alle parameters voor opnieuw focussen kunt u opslaan in het bestandssysteem en later weer laden.</para>
+            </listitem>
+            <listitem>
+                <para
+><guilabel
+>Standaarden</guilabel
+>: zet alle instellingen terug naar de standaardwaarden.</para>
+            </listitem>
+            </itemizedlist>
+        </para>
+        <para
+>Hieronder kunt u enkele aanwijzingen lezen voor het werken met de plug-in voor het opnieuw focussen: <itemizedlist>
+            <listitem>
+                <para
+>Voer bij voorkeur op de foto alle gewenste correcties met bijsnijden, kleur- en intensiteit-curve uit voordat u deze plug-in gebruikt.</para>
+            </listitem>
+            <listitem>
+                <para
+>Gebruik anders deze plug-in voordat u enige andere bewerking op de foto uitvoert. De reden hiervoor is dat veel bewerkingen begrenzingen achterlaten die niet onmiddellijk zichtbaar zijn maar wel vervelende artefacten achterlaten.</para>
+            </listitem>
+            <listitem>
+                <para
+>Als u afbeeldingen inscant en deze vervolgens comprimeert, &eg; naar JPEG, dan is het verstandig dat u de plug-in op de niet gecomprimeerde afbeelding toepast.</para>
+            </listitem>
+            </itemizedlist>
+        </para>
+        </sect4>
+    <sect4 id="comparison-refocus">
+        <title
+>Opnieuw focusseren vergeleken met andere technieken</title>
+        <para
+>Vergelijking met twee andere voor het verbeteren van foto's veelgebruikte technieken zijn: <itemizedlist>
+            <listitem>
+            <para>
+                <link linkend="using-adjustsharpness"
+>Verscherpingsfilter</link>
+            </para>
+            </listitem>
+            <listitem>
+            <para>
+                <link linkend="using-unsharp"
+>Onscherp masker</link>
+            </para>
+            </listitem>
+        </itemizedlist>
+        </para>
+        <para
+>Verscherpen past een kleine convolutie-matrix toe, die het verschil tussen het bron-pixel en de omliggende pixels vergroot. FIR Wiener filtering is een meer algemene techniek omdat u het voor grotere gebieden kan toepassen en beter kan instellen. Verscherpen werkt alleen als uw foto´s maar een beetje wazig zijn. Bovendien, als u grotere waarden gebruikt voor het verscherpen dan is het resultaat vaak met &quot;ruis&quot;. Met FIR Wiener filtering kunt u deze ruis grotendeels reduceren door een grotere waarde voor <guilabel
+>Correlatie</guilabel
+> en <guilabel
+>Ruisfilter</guilabel
+> in te stellen. </para>
+        <para
+>Onscherpte masker is nog een populair foto-verbetering techniek. Vanuit een wiskundig oogpunt is de onderbouwing een beetje vaag maar veel mensen zijn er toch tevreden mee. De eerste stap is het maken van een wazige kopie van de originele foto. Vervolgens trekken we het verschil tussen de originele foto en de wazige kopie af van de originele foto, vandaar de naam onscherpte masker. In feite is onscherpte masker meer een contrast verbeteren van de foto dan verscherping. Het maakt niet de interferentie van de lensopening en het diafragma van de camera ongedaan zoals opnieuw focusseren dat wel doet. </para>
+        <para
+>In het algemeen geeft onscherp maskeren betere resultaten dan verscherpen. Dit komt waarschijnlijk door het feit dat onscherp maskeren naar een groter vlak kijkt dan verscherpen. </para>
+        <para
+>Op theoretische gronden moet onscherpte masker altijd artifacts introduceren. Zelfs onder optimale omstandigheden kan het nooit de wazigheid compleet verwijderen. Voor Wiener filtering kan men bewijzen dat het het optimale lineaire filter is. In de praktijk zijn in alle gevallen de resultaten van de FIR Wiener filter minstens zo goed als die van onscherpte masker. Het FIR Wiener filter is vaker beter in het restaureren van kleine details. </para>
+        <para
+>Hieronder kunt u een vergelijking zien tussen verschillende filters toegepast op een kleine foto die uit focus is: <informaltable
+> <tgroup cols="2">
+            <thead>
+                <row>
+                <entry
+>Voorbeeld</entry>
+                <entry
+>Type</entry>
+                </row>
+            </thead>
+            <tbody>
+                <row>
+                <entry>
+                    <para>
+                    <inlinemediaobject>
+                        <imageobject>
+                        <imagedata fileref="&path;editor-refocus-notsharpened.png" format="PNG"/>
+                        </imageobject>
+                    </inlinemediaobject>
+                    </para>
+                </entry>
+                <entry
+>De originele wazige kleurenfoto voor de reparatie. Deze foto is genomen met een analoge fotocamera. Onvoldoende licht voor de auto-focus lens zorgde ervoor dat de foto niet in focus is. </entry>
+                </row>
+                <row>
+                <entry>
+                    <para>
+                    <inlinemediaobject>
+                        <imageobject>
+                        <imagedata fileref="&path;editor-refocus-sharped.png" format="PNG"/>
+                        </imageobject>
+                    </inlinemediaobject>
+                    </para>
+                </entry>
+                <entry
+>Gerepareerde afbeelding door gebruik van verscherpen. Instelling voor scherpte is 80. </entry>
+                </row>
+                <row>
+                <entry>
+                    <para>
+                    <inlinemediaobject>
+                        <imageobject>
+                        <imagedata fileref="&path;editor-refocus-unsharpmask.png" format="PNG"/>
+                        </imageobject>
+                    </inlinemediaobject>
+                    </para>
+                </entry>
+                <entry
+>Gerepareerde foto door gebruik van onscherpte masker. Straal=50, Hoeveelheid=5 en Drempel=0. </entry>
+                </row>
+                <row>
+                <entry>
+                    <para>
+                    <inlinemediaobject>
+                        <imageobject>
+                        <imagedata fileref="&path;editor-refocus-refocus.png" format="PNG"/>
+                        </imageobject>
+                    </inlinemediaobject>
+                    </para>
+                </entry>
+                <entry
+>Gerepareerde afbeelding door gebruik van opnieuw focusseren. De instellingen zijn Circulaire scherpte=1,3, Correlatie=0,5, Ruisfilter=0,020, Gaussiaanse scherpte=0 en Matrixgrootte=5. </entry>
+                </row>
+            </tbody>
+            </tgroup>
+        </informaltable>
+        </para>
+        <note>
+        <para
+>Voor meer informatie over het gebruik van methodes voor verscherping in digitale fotografie kunt u een technische vergelijking vinden op <ulink url="http://www.bialith.com/Research/BARclockblur.htm"
+>deze webpagina</ulink
+>. </para>
+        </note>
+    </sect4>
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

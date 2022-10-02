@@ -1,0 +1,134 @@
+<sect2 id="editor-cm-rendering">
+    <title
+>Skrivarprofiler, återgivningsalternativ och bildskärmskorrektur</title>
+
+    <sect3>
+        <title
+>Var skaffar man en skrivarprofil?</title>
+
+        <para
+>Pust! Vi har kommit långt: vi är nästan klara att skriva ut bilden. Var skaffar man en skrivarprofil? Ja, du vet redan svaret. Du kan använda den generella profilen som levereras med skrivaren. Du kan köpa en professionellt skapad profil. Om du ber dem, skickar vissa kommersiella utskriftsbyråer sina skrivarprofiler (som inte fungerar med din skrivare). Du kan skapa dina egna skrivarprofiler med Argyll, och då kan profilen skräddarsys för ditt papper, bläck och till och med bildkarakteristik (om du skriver ut en serie bilder med färgpaletten begränsad till dämpade bruna färger, behöver du inte en skrivarprofil som försöker ge utrymme för mättade turkosa och blåa färger). Jag kan inte erbjuda fler råd eller länkar till mer information om ämnet, eftersom jag just har börjat lära mig om utskrift av bilder (tidigare har jag bara tittat på och delat mina bilder via bildskärmar). Men se <ulink url="http://www.luminous-landscape.com/essays/fancy-graphics2.shtml"
+>följande sida</ulink
+> för en utmärkt presentation av fördelarna med att skapa din egen skrivarprofil, samt en rungande positiv rekommendation av Argyll för att skapa skrivarprofilen. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Vad gäller för återgivningsalternativ?</title>
+
+        <para
+>Termen "återgivningsalternativ" anger sättet som färgers tonomfång hanteras när avsedd målrymd (till exempel bildskärmen eller skrivaren) inte kan hantera det fullständiga tonomfånget hos källans färgrymd (till exempel arbetsrymden). </para>
+
+        <para
+>Det finns fyra ofta använda återgivningsalternativ: perceptuellt, relativt färgläge, absolut färgläge och färgmättat. Jag har letat på Internet efter den bästa beskrivningen av återgivningsalternativ och de kompromisser som ingår vid val av ett återgivningsalternativ istället för ett annat. Jag tror att jag hittade en sådan artikel. Se <ulink url="http://www.cambridgeincolour.com/tutorials/color-space-conversion.htm"
+>följande sida</ulink
+>. Ett kort citat ur artikeln från Cambridge in Colour om konvertering av färgrymder: </para>
+
+        <blockquote>
+
+            <para
+>Perceptuell återgivning och relativt färgläge är troligtvis de mest användbara konverteringstyperna för digitalfotografi. Var och en ger olika prioritet till återgivning av färger inom området där tonomfången inte passar ihop. </para>
+
+            <para
+>Relativt färgläge bevarar ett nästan exakt förhållande mellan färger inom tonomfånget, även om det beskär färger utanför tonomfånget. </para>
+
+            <para
+>I motsats till detta, försöker perceptuell återgivning att också bevara något förhållande mellan färger utanför tonomfånget, även om det resulterar i mindre noggrannhet för färger inom tonomfånget ... </para>
+
+            <para
+>Absolut färgläge liknar relativt på det sätt att det bevarar färger inom tonomfånget och beskär de utanför tonomfånget, men de skiljer sig i hur var och en hanterar vitpunkten .. Relativt färgläge förvränger färgerna inom tonomfånget så att vitpunkten i en färgrymd motsvarar den andra, medan absolut färgläge bevarar färgerna exakt (utan att ta hänsyn till att vitpunkten ändras) ... </para>
+
+            <para
+>Färgmättad återgivning försöker bevara mättade färger. </para>
+
+        </blockquote
+> 
+
+        <para
+>Jag kunde citera hela artikeln (så bra är den), men jag är säker på att det skulle innebära brott mot citaträtten. Så ta en titt på artikeln själv. Illustrationerna i artikeln hjälper verkligen till med att klargöra vad de olika återgivningsalternativen faktiskt gör, och kompromisserna som ingår vid val av ett återgivningsalternativ istället för ett annat. </para>
+
+        <para
+>Se <ulink url="http://www.normankoren.com/color_management.html#Rendering_intent"
+>följande sida</ulink
+> för en annan utmärkt informationskälla om återgivningsalternativ med tillhörande illustrationer. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Vilket återgivningsalternativ bör man använda för att visa bilder på en bildskärm?</title>
+
+        <para
+>Det vanligaste valet är relativt färgläge. Jag föreslår att du inte använder absolut färgläge (t.ex. med ufraw) om du inte vill ha riktigt konstiga resultat. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Vad är bildskärmskorrektur?</title>
+
+        <para
+>Bildskärmskorrektur visar förväntad skillnad mellan vad du ser på skärmen och vad du ser när du gör en utskrift. För att visa en bildskärmskorrektur, behöver du en profil för skrivaren (i själva verket för kombinationen av skrivare och papper, eftersom det papper som används påverkar bläckets färger och vitpunkten). Om du inte tycker om bildskärmskorrekturen kan du göra ändringar (i arbetsrymden, inte efter konvertering av bilden till skrivarens färgrymd) för att få bildskärmskorrekturen att bättre motsvara hur du vill att den slutliga utskriften ska se ut. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Vilket återgivningsalternativ bör man använda vid bildskärmskorrektur? </title>
+
+        <para
+>Jag har alltid hört att man bör använda "perceptuell återgivning" vid transformering av en bild från en större arbetsrymd till en mindre utskriftsrymd, men i synnerhet efter att ha läst den tidigare nämnda artikeln från "Cambridge in colour" verkar det som om perceptuell återgivning kan ibland och ibland inte ge bäst resultat, beroende på respektive tonomfång i bilden och kombinationen av skrivare och papper i fråga. Jag har experimenterat en hel del på senaste tiden med utmatningsåtergivning för skrivare. Jag märker att återgivningsalternativen absolut och relativt färgläge ger klarare, ljusare färger, dock till priset av att behöva noggrant redigera om bilden för att undvika beskärning av dagrar och skuggor. Genomläsning av olika fotografiforum och artiklar tillgängliga på Internet indikerar att "perceptuell återgivning" bara är ett alternativ, och inte på något sätt alltid "det bästa" alternativet. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Vad gäller för svartpunktskompensation?</title>
+
+        <para
+>Den tydligaste definitionen jag kunde hitta av svartpunktskompensation är följande: "SPK är ett sätt att göra justeringar mellan de maximala svartnivåerna hos digitala filer och möjligheterna att återge svart hos olika digitala enheter [som skrivare]" (citat från <ulink url="http://www.newsandtech.com/issues/2004/05-04/pt/05-04_blackpoint.htm"
+>följande sida</ulink
+>). </para>
+
+        <para
+>Artikeln som definitionen kommer från erbjuder en mycket tydlig förklaring (även om den är centrerad på Adobe) av hur svartpunktskompensation fungerar och de praktiska konsekvenserna av att använda den eller inte. I slutändan är rådet att det beror på. Prova bildskärmskorrektur med svartpunktskompensation aktiverad. Om du tycker om resultatet, använd den. Annars, använd den inte. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Kan alla återgivningsalternativ användas vid konvertering från ett färgsystem till ett annat?</title>
+
+        <para
+>Med ett enda ord, nej. Vilka återgivningsalternativ som är tillgängliga vid konvertering från en profil till en annan beror på målprofilen. Alla profiler stöder inte alla återgivningsalternativ. Vad som händer när du väljer ett återgivningsalternativ som inte stöds, är att LCMS använder profilens förvalda återgivningsalternativ utan att säga någonting. </para>
+
+        <para
+>För en informativ och humoristisk beskrivning av myter som omger användningen av olika återgivningsalternativ, se <ulink url="http://www.colorwiki.com/wiki/Color_Management_Myths_21-25#Myth_.2321:_There_are_perceptual_rendering_intents_available_when_converting_from_scanner.2Fcamera-.3Eworkspace_or_workspace-.3Eworkspace."
+>här</ulink
+> och <ulink url="http://www.colorwiki.com/wiki/Color_Management_Myths_6-10"
+>här</ulink
+>. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Varför rekommenderas perceptuell återgivning så ofta som "fotografiskt" återgivningsalternativ? </title>
+
+        <para
+>Den är ett säkert val, eftersom den förhindrar beskärning av skuggor och dagrar, även om det kan ske till bekostnad av att alla färger förlorar färgmättnad. Om du inte vill bekymra dig om att göra någon bildskärmskorrektur, välj perceptuell återgivning (om du inte vill göra någon bildskärmskorrektur, bör du nog också hålla dig till sRGB). </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

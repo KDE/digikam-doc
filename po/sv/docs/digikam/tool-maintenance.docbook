@@ -1,0 +1,186 @@
+<chapter id="tool-maintenance">
+<chapterinfo>
+
+    <abstract>
+        <para
+>Underhåll är ett verktyg för att köra processer i bakgrunden för att underhålla bildsamlingar och databasinnehåll. </para>
+    </abstract>
+
+    <keywordset>
+        <keyword
+>Underhåll</keyword>
+        </keywordset>
+    </chapterinfo>
+
+    <title
+>Underhållsverktyg</title>
+
+    <sect1 id="tool-maintenance-intro">
+        <title
+>Inledning</title>
+
+        <para
+>Beroende på arbetsflödet, &digikam;s inställningar och om du också arbetar med bildsamlingen i andra program, kan det vara nödvändigt att utföra underhållsfunktioner då och då för att uppdatera &digikam;s databas och även bilderna rörande dubbletter, ansiktsetiketter, kvalitetsetiketter, etc. Underhållsverktyget kan göra det åt dig, till och med mer än en funktion åt gången beroende på dina krav. </para>
+
+    </sect1>
+
+    <sect1 id="tool-maintenance-features">
+        <title
+>Underhållsfunktionerna</title>
+
+        <sect2 id="tool-maintenance-features-common">
+            <title
+>De vanliga alternativen</title>
+
+            <para
+>Under sektionen Vanliga alternativ kan omfattningen av underhållsprocesser begränsas till vissa album eller etiketter. <guilabel
+>Hela albumsamlingen</guilabel
+> eller <guilabel
+>Hela etikettsamlingen</guilabel
+> måste avmarkeras för att komma åt kombinationsfälten där album eller etiketter kan väljas. Observera att det finns en sammanhangsberoende meny i kombinationsfältet för att markera eller avmarkera underliggande och/eller överliggande objekt, och dessutom för att invertera markeringen. Om du byter från <guilabel
+>Album</guilabel
+> till <guilabel
+>Etiketter</guilabel
+> eller vice versa, förblir valet i det nu gråa alternativet orört, vilket kan vara användbart om du oftare behöver ett visst val. </para>
+            
+            <para
+>Eftersom många av processerna som underhållsverktyget kan utföra är tidsödande (naturligtvis också beroende på omfattningen), har du möjlighet att markera <guilabel
+>Använd alla processorkärnor</guilabel
+> om datorn har mer än en och de inte är upptagna med annat. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-scan">
+            <title
+>Verktyget Sök efter nya objekt</title>
+
+            <para
+>Processen söker igenom samlingarna som definierades i <menuchoice
+> <guimenu
+>Inställningar</guimenu
+><guisubmenu
+>Anpassa &digikam;...</guisubmenu
+><guimenuitem
+>Samlingar</guimenuitem
+> </menuchoice
+> efter nya objekt, dvs. bildfiler som lagts till i samlingen medan &digikam; inte körde. Processen kan köras automatiskt när &digikam; startas genom att markera <guilabel
+>Sök efter nya objekt vid start</guilabel
+> i <menuchoice
+> <guimenu
+>Inställningar</guimenu
+><guisubmenu
+>Configure &digikam;...</guisubmenu
+><guimenuitem
+>Diverse</guimenuitem
+> </menuchoice
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-thumbs">
+            <title
+>Verktyget Skapa om miniatyrbilder</title>
+
+            <para
+>Det kan vara nödvändigt att skapa om miniatyrbilderna om du har arbetat med bilderna i andra program, eller om du ändrade miniatyrbildsstorleken i <menuchoice
+><guimenu
+>Inställningar</guimenu
+> <guisubmenu
+>Anpassa &digikam;...</guisubmenu
+><guisubmenu
+>Vyer</guisubmenu
+><guimenuitem
+>Trädvyer</guimenuitem
+></menuchoice
+>. Alternativet <quote
+>Sök efter ändrade eller ej katalogiserade objekt</quote
+> kan snabba upp processen för det första fallet, eller om du just lagt till bilder i samlingen. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-fingerprints">
+            <title
+>Verktyget Skapa om fingeravtryck</title>
+
+            <para
+>Fingeravtryck är nödvändiga för att hitta dubbletter och liknande objekt, samt för att hitta bilder via skisser. För en detaljerad beskrivning se <link linkend="using-mainwindow-fuzzysearches"
+>Inexakt visning</link
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-duplicates">
+            <title
+>Verktyget Sök duplikat</title>
+
+            <para
+>Verktyget Sök duplikat gör samma sak som knappen <guilabel
+>Sök duplikat</guilabel
+> i den inexakta visningen, men här kan det kombineras med andra underhållsåtgärder och du har möjlighet att markera <quote
+>Använd alla processorkärnor</quote
+> under Vanliga alternativ (se ovan) för att snabba upp processen. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-faces">
+            <title
+>Verktyget Ansiktshantering</title>
+            <subtitle
+>Detektera och känn igen ansikten</subtitle>
+
+            <para
+>Det här är samma process som du kan komma åt i personvyn med knappen <guilabel
+>Sök igenom samlingen efter ansikten</guilabel
+>. Här kan du bara inte ställa in parametern snabb - noggrann och alternativet <quote
+>Rensa och bygg om all övningsdata</quote
+>. För mer information om alternativen för hantering av ansiktsdata, se <link linkend="using-mainwindow-peopleview"
+>Personvy</link
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-quality">
+            <title
+>Verktyget Bildkvalitetssortering</title>
+
+            <para
+>Bildkvalitetssortering tilldelar kvalitetsetiketter till bilder enligt inställningarna i <menuchoice
+> <guimenu
+>Inställningar</guimenu
+><guisubmenu
+>Anpassa &digikam;...</guisubmenu
+><guimenuitem
+>Bildkvalitetssortering</guimenuitem
+> </menuchoice
+>. Verktyget måste också aktiveras där om du vill använda det. Eftersom det är en tidsödande process är det en god idé att markera <guilabel
+>Använd alla processorkärnor</guilabel
+> och begränsa jobbet till vissa album eller etiketter. Verktyget sätter den röda flaggan för <quote
+>kasserad</quote
+>, den gula för <quote
+>obestämd</quote
+> och den gröna för <quote
+>godkänd</quote
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-sync">
+            <title
+>Verktyget Synkronisering av metadata</title>
+
+            <para
+>ATT GÖRA </para>
+
+        </sect2>
+
+    </sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

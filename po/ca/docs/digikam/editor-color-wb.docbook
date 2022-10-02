@@ -1,0 +1,315 @@
+<sect3 id="editor-color-wb">
+    <sect3info>
+
+    <title
+>Balanç de blancs</title>
+
+    <abstract>
+    <para
+>El <emphasis
+>balanç de blancs</emphasis
+> al &digikam; és una eina semiautomàtica per ajustar el balanç de blancs d'una fotografia. </para>
+    </abstract>
+
+    </sect3info>
+
+    <title
+>Introducció</title>
+
+    <para
+>L'ajust del balanç de blancs és un problema comú per a les càmeres fotogràfiques digitals. En els «bons vells temps» dels rotllos de pel·lícula, el balanç de blancs es feia al laboratori fotogràfic. Avui en dia la pobra càmera ha d'endevinar què és blanc i què és negre. La majoria de les vegades, el que la càmera tria com a punt blanc, no és de l'ombra o to correcte. Utilitzant aquesta eina, és fàcil de corregir aquest problema. Proporciona una varietat de paràmetres que es poden ajustar per obtenir un millor resultat. </para>
+
+    <note
+><para
+>La correcció del balanç de blancs està una mica limitada pel fet que operem en l'espai de color de 8 bits per canal. De manera que si us allunyeu massa de l'original, poden aparèixer zones amb sobreexposició. Si podeu ajustar el balanç de blancs en mode de conversió RAW (el qual es fa a l'espai de 16 bits), el marge per a la correcció serà més gran. </para
+></note>
+
+    <para
+>Aquesta eina es basa en un algoritme del balanç del color blanc copyright d'en Pawel T. Jochym. Es llança des del menú <menuchoice
+><guimenu
+>Color</guimenu
+><guimenuitem
+>Balanç de blancs</guimenuitem
+></menuchoice
+> de l'editor d'imatges. </para>
+
+    <sect4 id="using-whitebalance"
+>  <title
+>Usar l'eina «Balanç de blancs»</title>
+
+    <para
+><inlinemediaobject
+><imageobject>
+        <imagedata fileref="&path;editor-whitebalance.png" format="PNG"/> </imageobject>
+        <textobject
+><phrase
+>El diàleg de l'eina «Balanç de blancs»</phrase
+></textobject
+></inlinemediaobject>
+    </para>
+
+    <para
+>La finestra de vista prèvia es pot canviar de mida. A l'esquerra, es mostren les vistes prèvies tant de l'original com la de destinació. La vista prèvia del resultat s'actualitza dinàmicament segons la configuració de l'eina. Si voleu veure el balanç de blancs original, només cal fer clic sobre aquesta pestanya. </para>
+
+    <para
+>La vista prèvia de la fotografia de destinació conté un marcador vermell. El valor de la lluminositat del píxel sota el marcador es mostra com una línia vertical a l'histograma. </para>
+
+    <para
+>A la part superior dreta, el giny mostra un histograma que s'actualitza de forma dinàmica en canviar els paràmetres. Aquest histograma és molt instructiu, ja que mostra que, fins i tot en fotografies ben exposades, la majoria dels píxels tenen una lluminositat molt petita. Amb un botó podeu seleccionar per mostrar un dels 3 colors (o la seva suma, el que s'anomena lluminositat). </para>
+
+    <para
+>Amb <guilabel
+>Exposició</guilabel
+> podeu canviar digitalment l'exposició de la fotografia original. Augmentant l'exposició es corre el risc de fer el soroll de píxels més visible i d'apagar les llums intenses. Marqueu <guilabel
+>Indicador de sobreexposició</guilabel
+> a la part inferior dreta per veure si sou propens a tenir problemes de saturació. L'ajust <guilabel
+>Punt negre</guilabel
+> es pot utilitzar per retallar l'histograma a l'esquerra. Si es veu boira a la fotografia (l'histograma té un espai buit a l'esquerra, costat negre), probablement haureu d'utilitzar aquesta opció. La configuració <guilabel
+>Exposició</guilabel
+> i <guilabel
+>Punt negre</guilabel
+> es pot estimar de forma automàtica prement el botó <guilabel
+>Arranjaments automàtics d'exposició</guilabel
+>. Això estableix el punt negre amb força precisió. </para>
+
+    <para
+>El contrast de la sortida dependrà dels paràmetres <guilabel
+>Ombres</guilabel
+>, <guilabel
+>Saturació</guilabel
+> i <guilabel
+>Gamma</guilabel
+>. L'ajustament de les <guilabel
+>Ombres</guilabel
+> us permetrà millorar o disminuir els detalls de les ombres a la fotografia. </para>
+
+    <para
+>Augmentar el contrast de la fotografia pot tenir l'efecte secundari de reduir la <guilabel
+>Saturació</guilabel
+> aparent de la fotografia. Utilitzeu un valor més gran que 1 per augmentar la saturació i un valor més petit que 1 per a dessaturar la fotografia. Un valor de 0 us donarà una fotografia en blanc i negre. No tingueu por de pujar una mica la saturació de les fotografies. La regla general és que per a un contrast més gran (<guilabel
+>Gamma</guilabel
+> més petita) és necessari aplicar més <guilabel
+>Saturació</guilabel
+>. </para>
+
+    <para
+>El següent conjunt d'opcions són la base dels ajustos del balanç de blancs, els quals controlen la relació entre els tres canals de color. Aquí podeu establir la <guilabel
+>Temperatura</guilabel
+> del color, fent que la vostra imatge sigui més calenta o més freda. Una temperatura més alta donarà lloc a un to més càlid. Establir la relació entre els tres canals de color requereix dos ajustaments. Atès que l'ajust de la temperatura sobretot controla la relació entre els canals <guilabel
+>Vermell</guilabel
+> i <guilabel
+>Blau</guilabel
+>, és natural que el segon ajustament controli la intensitat del canal <guilabel
+>Verd</guilabel
+>. </para>
+
+    <para
+>En lloc de perdre el temps amb els controls anteriors, només heu d'utilitzar el botó <guilabel
+>Selector de la temperatura de color del to</guilabel
+>. Premeu aquest botó i feu clic a qualsevol part de la vista prèvia de la imatge original per obtenir el color de sortida d'aquesta àrea per a calcular la configuració de temperatura de balanç del color blanc. D'aquesta manera, els valors <guilabel
+>Temperatura</guilabel
+> i <guilabel
+>Verd</guilabel
+> es calculen de forma automàtica. </para>
+
+    <para
+>A més podeu establir el balanç de blancs utilitzant la llista de predeterminats. Aquests són els valors predefinits disponibles per a la temperatura de balanç del color blanc: </para>
+
+    <para>
+
+    <informaltable
+><tgroup cols="3">
+
+    <thead>
+    <row>
+        <entry
+>Temperatura de color</entry>
+        <entry
+>Descripció</entry>
+        <entry
+>Kelvin</entry>
+    </row>
+    </thead>
+
+    <tbody>
+
+    <row>
+        <entry>
+        <guilabel
+>40W</guilabel>
+        </entry>
+
+        <entry
+>Làmpada incandescent de 40 watts. </entry>
+
+        <entry>
+        <guilabel
+>2680</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>200W</guilabel>
+        </entry>
+
+        <entry
+>Làmpada incandescent de 200 watts, llums de l'estudi, inundacions a la fotografia. </entry>
+
+        <entry>
+        <guilabel
+>3000</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Sortida del sol</guilabel>
+        </entry>
+
+        <entry
+>Llum de l'alba o posta del sol. </entry>
+
+        <entry>
+        <guilabel
+>3200</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Tungstè</guilabel>
+        </entry>
+
+        <entry
+>Làmpada de tungstè o llum a hora de la sortida/posta del sol. </entry>
+
+        <entry>
+        <guilabel
+>3400</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Neutre</guilabel>
+        </entry>
+
+        <entry
+>Temperatura de color neutre. </entry>
+
+        <entry>
+        <guilabel
+>4750</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Xenó</guilabel>
+        </entry>
+
+        <entry
+>Làmpada de xenó o arc de llum. </entry>
+
+        <entry>
+        <guilabel
+>5000</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Sol</guilabel>
+        </entry>
+
+        <entry
+>Llum d'un dia assolellat cap al migdia. </entry>
+
+        <entry>
+        <guilabel
+>5500</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Flaix</guilabel>
+        </entry>
+
+        <entry
+>Flaix electrònic de fotografia. </entry>
+
+        <entry>
+        <guilabel
+>5600</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Cel</guilabel>
+        </entry>
+
+        <entry
+>Llum de cel ennuvolat. </entry>
+
+        <entry>
+        <guilabel
+>6500</guilabel>
+        </entry>
+    </row>
+
+    </tbody>
+
+    </tgroup
+></informaltable>
+
+    </para>
+
+    <para
+><guilabel
+>Temperatura de color</guilabel
+> és una forma simplificada de caracteritzar les propietats espectrals d'una font de llum. Mentre que en la realitat el color de la llum és determinat per la quantitat que cada punt a la corba espectral contribueix a la seva sortida, el resultat encara es pot resumir en una escala lineal. Aquest valor és útil, &pex;, per determinar el balanç de blancs correcte en la fotografia digital, i per especificar els tipus de fonts de llum adequats en el disseny de la il·luminació arquitectònica. Tingueu en compte, però, que les fonts de llum del mateix color poden variar molt en la qualitat de la llum emesa. </para>
+
+    <para
+>Una baixa <guilabel
+>Temperatura de color</guilabel
+> implica llum més groga i vermella mentre que una alta temperatura de color implica una llum més blava. La llum del dia té una temperatura de color més baixa a prop de la matinada, i una més alta durant el dia. Per tant, pot ser útil per instal·lar un sistema d'enllumenat elèctric que pot proporcionar llum més freda per complementar la llum del dia quan sigui necessari, i omplir amb llum més càlida a la nit. Això també es relaciona amb els sentiments humans cap als colors càlids de la llum procedent de les veles o una xemeneia durant la nit. La unitat estàndard per a la temperatura de color és el Kelvin (K). </para>
+
+    <para
+>L'opció <guilabel
+>Indicador de sobreexposició</guilabel
+> suma els colors si més d'un canal a un píxel està sobreexposat, i veureu el color combinat resultant de la configuració de balanç del color blanc. Aquesta regla només s'aplica a l'àrea de la vista prèvia de destinació a títol indicatiu i no té cap efecte en la representació final. </para>
+
+    <para
+>Els botons <guilabel
+>Desa com a...</guilabel
+> i <guilabel
+>Carrega...</guilabel
+> s'utilitzen per realitzar les accions que descriuen. Qualsevol configuració del balanç del color blanc que establiu es podrà desar al sistema de fitxers en un fitxer de text i carregar-lo més endavant. </para>
+
+    <para
+>El botó <guilabel
+>Reinicialitza-ho tot</guilabel
+> restableix tota la configuració de filtre als valors per omissió corresponents al color de balanç de blancs neutre. (Atenció, la posició neutra encara pot ser diferent de la fotografia original. Si la deseu, es canviarà el balanç de blancs). </para>
+
+    </sect4>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

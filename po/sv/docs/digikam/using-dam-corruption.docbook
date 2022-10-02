@@ -1,0 +1,771 @@
+<sect2 id="using-dam-corruption">
+    <title
+>Skydda dina bilder från dataförlust och förvanskning</title>
+
+    <para
+>Teman: diskfel, diskkrascher, spänningsvariationer, felrättande koder, överföringsfel, försämring av lagringsmedia, återställning, redundans, katastrofberedskap, livstid, temperatur, datastorlek, vanliga myter </para>
+
+    <sect3
+> <title
+>Vilka är då huvudfaktorerna vid förlust av digital data?</title>
+
+        <para
+>Vi talar naturligtvis inte om att förlora en cd på vägen eller i en eldsvåda: den sortens förlust är precis likadan som för traditionella papperskopior eller negativ. Vi talar om problem med de så kallade "nya media". </para>
+
+        <para
+>Problem med digital data kan grovt delas in i följande problemområden: </para>
+
+        <orderedlist>
+            <listitem
+><para
+>Den fysiska försämringen av media (alla media försämras med olika tidskalor)</para
+></listitem>
+            <listitem
+><para
+>Överföringsfel som inte detekteras vid dataöverföringar</para
+></listitem>
+            <listitem
+><para
+>Avsaknad av stöd för långlivade, troligen tillverkarspecifika, digitala format</para
+></listitem>
+            <listitem
+><para
+>Föråldrad hårdvara </para
+></listitem>
+        </orderedlist>
+
+        <para
+>Kroll Ontrack, världens största dataåtervinningsföretag, har en del intressant statistik om vad som verkligen orsakar dataförlust. </para>
+
+        <informaltable>
+            <tgroup cols="3">
+            <tbody>
+            <row>
+                <entry
+>Orsaker till dataförlust</entry>
+                <entry
+>Uppfattning</entry>
+                <entry
+>Verklighet</entry>
+            </row>
+            <row>
+                <entry
+>Hårdvaru- eller systemproblem</entry>
+                <entry
+>78 %</entry>
+                <entry
+>56 %</entry>
+            </row>
+            <row>
+                <entry
+>Mänskligt fel</entry>
+                <entry
+>11 %</entry>
+                <entry
+>26 %</entry>
+            </row>
+            <row>
+                <entry
+>Programvaruförvanskning eller -problem </entry>
+                <entry
+>7 %</entry>
+                <entry
+>9 %</entry>
+            </row>
+            <row>
+                <entry
+>Datavirus</entry>
+                <entry
+>2 %</entry>
+                <entry
+>4 %</entry>
+            </row>
+            <row>
+                <entry
+>Katastrofer</entry>
+                <entry
+>1-2 %</entry>
+                <entry
+>1-2 %</entry>
+            </row>
+            </tbody>
+            </tgroup>
+        </informaltable>
+
+        <para
+>Låt oss analysera fallen steg för steg. </para>
+
+    </sect3>
+
+    <sect3 id="physical-deterioration"
+> <title
+>Fysisk försämring</title>
+
+        <sect4
+> <title
+>Cd, dvd, Bluray, optiska enheter</title>
+
+            <para
+>Fysisk försämring av media sker i allmänhet snabbare med papper och cd-r än med film. Även om film klarar sig längre (ibland tiotals år längre) än andra typer av media, går aldrig någonting förlorat med den rätta sortens säkerhetskopiering av digitala media. Film blir sämre, medan digitala ettor och nollor inte blir det, och film börjar försämras från det ögonblick den skapas och framkallas. Den kommer aldrig att ha samma färg, kontrast, etc. som den hade ett ögonblick tidigare. Digitalt sker inte detta. Dock är digitala media utsatta för förvanskning! Ja, fysiska media som disketter och magnetiska hårddiskar är också utsatta för försämring av mediet, precis som en cd. De klarar sig bara längre. </para>
+
+            <para
+>För att bekämpa problemen med cd- och dvd-skivor måste de skötas på rätt sätt, och inte anses pålitliga mer än några få år. Som tur är kan man köpa cd- och dvd-skivor med arkiveringskvalitet, som klarar sig längre, även om de är svårare att skaffa och mycket dyrare. Det finns erbjudanden om guldpläterade dvd-skivor, som påstås klara 100 års lagringstid (om man nu tror på det). </para>
+
+            <para
+>Cd- och dvd-skivor kan bli oläsbara, men du kan reducera risken genom att använda bra skivor och en bra brännare, och lagra dem på rätt sätt. De bästa dvd-brännarna är inte mycket dyrare än de billigaste, men de skriver på ett mycket tillförlitligare sätt. Det är bara frågan om att välja den rätta. </para>
+
+            <para
+>Cd- och dvd-skivor är i själva verket mycket felbenägna, till och med när de just har bränts. Det är orsaken till att de är starkt skyddade av en checksummeringsmekanism (75 % av data är effektiv, resten är extra för formatering och checksummering). Men även med detta starka skydd lider de av försämring av kemisk åldring, av att utsättas för ultraviolett ljus, av repor och damm, etc. </para>
+
+            <para
+>Det finns ett billigt program för skadade cd- och dvd-skivor som heter <ulink url="https://www.isobuster.com/"
+>IsoBuster</ulink
+>, som utför verkliga mirakel med cd- och dvd-skivor. Det fungerar på Windows och &Linux;, men inte (ännu) på MacIntosh-datorer. På motsvarande sätt finns det program konstruerade för att hämta data från skadade disketter, hårddiskar, Flash-media som kameraminnen och USB-enheter, och så vidare. </para>
+
+            <para
+>Optiska media: Det verkar som Bluray-skivor vinner formatkriget mot 'HD DVD'. En Bluray-skiva med dubbla lager kan lagra 50 Gibyte, nästan sex gånger så mycket som en 8,5 Gibytes dvd med dubbla lager. Allt som har sagts om cd- och dvd-skivor gäller också för Bluray-skivor. </para>
+
+            <para
+>Bästa kända metod: </para>
+
+            <para
+>Bränn dem långsamt med en bra brännare med media av arkiveringskvalitet med ett öppet, ej tillverkarspecifikt, format. Läs tillbaka data för verifiering, markera dem med en beskrivande text samt datum och upphovsman, lås in dem där det är rent, mörkt, fritt från skadedjur och torrt. Glöm heller inte bort att kopiera över dem till nästa mediageneration innan du kastar din sista hårdvara eller programvara som klarar av att läsa dem. </para>
+
+        </sect4>
+
+        <sect4>
+            <title
+>Hårddiskar (diskenheter, HDD)</title>
+
+            <para
+>Hårddisktillverkare behåller sin statistik för sig själva. En fabriksgaranti ger dig en ny hårddisk, men ingen data. Bland andra har Google gjort en storskalig studie av felmekanismer hos hårddiskenheter: <ulink url="https://research.google.com/archive/disk_failures.pdf"
+>Disk Failures Study</ulink
+>. </para>
+
+            <para
+>I ett nötskal: Hårddiskar klarar sig längst när de används mellan 35°C and 45°C. Vid lägre temperaturer ökar felfrekvenserna dramatiskt. Styrenheter (elektronik) är den främsta orsaken till fel. SMART diagnosticerar inte något av detta. Vissa fel i SMART är en indikation på nära förestående haveri, i synnerhet sökfel och omlokaliseringsvärden. Förväntad livstid är 4-5 år. </para>
+
+            <para
+>Men allt beror en hel del på det verkliga användarfallet och en del tur. Jag har till exempel en Fujitsu bärbar dator som är igång dygnet runt sedan 1998, nästan tio år utan den minsta störning. Bara tur? I allmänhet, och i motsats till intuitionen och ekologisk hänsyn, får man en längre livstid genom att köra en hårddisk konstant istället för att sätta på och stänga av den hela tiden. Det har till och med rapporterats att omfattande användning av energisparläge för att varva ner enheten kan snabbt vara skadligt. Att låta den arbeta hårt minskar livstiden något. De värsta faktorerna för hårddiskenheter är troligtvis vibrationer, chocker och låga temperaturer. </para>
+
+            <para
+>Om hårddisken ger ifrån sig konstiga ljud, kommer inte vanlig programvara för att återställa filer att fungera. Gör en snabb säkerhetskopiering om du skulle råka ut för det. (Använd verktyget dd, om möjligt, inte en vanlig säkerhetskopiering av filer, eftersom dd läser med en jämn ström i en spiral från början till slutet, och inte stressar mekaniken.) Det finns specialistföretag som kan återvinna data från enheter som annars är förstörda, men de är dyra, räkna med en minsta avgift på 12000 kronor. </para>
+
+        </sect4>
+
+        <sect4
+> <title
+>Spänningstoppar</title>
+
+            <para
+>Så många som 1 % av alla datorer påverkas av åska och spänningstoppar varje år. </para>
+
+            <para
+>(Detta handlar om total dataförlust på grund av spänningstoppar. Man kan naturligtvis råka ut för dataförlust då och då på grund av spänningsavbrott innan filer har sparats, men sådana förluster kan normalt återställas utan större svårighet.) </para>
+
+            <para
+>Man behöver inte vänta på nästa åskväder för att vara bekymrad över hur en plötslig variation i elströmmen kan påverka datorsystemet. Aktuell statistik visar att upp till 63 procent av alla olycksfall med elektronik beror på kraftproblem, och de flesta datorer utsätts för två eller flera avvikelser i kraftförsörjningen per dag. Eftersom spänningstoppar eller strömavbrott kan hända var som helst och när som helst, är det vettigt att skydda datorn genom att investera i någon form av överspänningsskydd. </para>
+
+        </sect4>
+
+        <sect4
+> <title
+>Hur spänningstoppar uppstår</title>
+
+            <para
+>En spänningstopp uppstår när elledningens linjespänning ökar över det nominella värdet under mer än 10 millisekunder. Sextio procent av alla spänningstoppar uppstår i hemmet eller kontoret själv, i allmänhet när en enhet med en motor (som en hårtork, ett kylskåp eller en vattenpump) stängs av och effekten den använde avleds någon annanstans som överspänning. De återstående 40 procent av spänningstopparna skapas av faktorer som åska, omkoppling av kraftbolaget, slående ledningar, dåliga kablar, och så vidare. </para>
+
+            <para
+>Även om de flesta vanliga apparater som använder elektricitet inte påverkas av spänningstoppar, kan enheter som förlitar sig på datorkretsar och snabba mikroprocessorer utsättas för allvarliga skador. För datorn kan spänningsavvikelser orsaka att tangentbordet låser sig, fullständig dataförlust, försämring av hårdvara, skadade moderkort, med mera. Underlåtenhet att skydda dig från det oundvikliga kan resultera i både förlust av tid och pengar. </para>
+
+        </sect4>
+
+        <sect4
+> <title
+>Överspänningsskydd</title>
+
+            <para
+>Det vanligaste försvaret mot spänningstoppar är ett överspänningsskydd, en apparat som fungerar genom att absorbera en del av överskottsenergin och avleda resten till jord. De förekommer oftast i form av ett grenuttag (en av de där långa anordningarna med ungefär sex uttag och en enda jordad stickkontakt). Kom dock ihåg att inte alla grenuttag fungerar som överspänningsskydd. </para>
+
+            <para
+>När du väljer överspänningsskydd, ska du försäkra dig om att det följer standarden UL 1449, som garanterar ett visst minimalt skydd. Du bör också leta efter ett som erbjuder skydd mot åska (alla gör inte det) och ger en garanti för apparater som är riktigt anslutna. </para>
+
+            <para
+>Eftersom en spänningstopp kan följa vilken väg som helst till datorn, försäkra dig om att alla periferienheter anslutna till systemet är skyddade. Det gäller också telefonledningen eller kabelmodemet, eftersom spänning också kan ledas via dessa vägar. Ett antal tillverkare producerar nu överspänningsskydd som också tillhandahåller ett telefonjack för modemet tillsammans med elektriska uttag, medan andra har uttag för koaxialkablar för de som använder ett kabelmodem eller tv-mottagarkort. </para>
+
+            <para
+>Om du har en bärbar dator, måste du också ha med dig ett överspänningsskydd. Ett antal skydd särskilt konstruerade för bärbara datorer är tillgängliga, med liten storlek och innehållande både el- och telefonkontakter vilket gör dem idealiska för användning på resande fot. </para>
+
+        </sect4>
+
+        <sect4
+> <title
+>Avbrottsfri kraftförsörjning (UPS)</title>
+
+            <para
+>Medan ett överspänningsskydd skyddar datorn från mindre variationer i elförsörjningen, hjälper de inte om strömmen skulle avbrytas helt. Till och med ett avbrott på några få sekunder kan orsaka förlust av värdefull data, så du kan anse att det är värt att investera i ett aggregat för avbrottsfri kraftförsörjning. </para>
+
+            <para
+>Förutom att det fungerar som överspänningsskydd, byter apparaterna automatiskt till batterikraft när ett strömavbrott sker, vilket ger dig tillfälle att spara data och stänga av systemet till strömmen kommer tillbaka. När du köper en UPS, försäkra dig om att den har samma egenskaper som du kräver av ett överspänningsskydd, men kontrollera också batteriets livslängd och ingående programvara. </para>
+
+            <para
+>Med den potentiella risken för datorsystemet i åtanke, är det värt att investera i skydd för störningar av kraftförsörjningen. Ett överspänningsskydd av god kvalitet kostar dig upp emot 200 kronor, medan en 500W UPS kan fås för mindre än 400 kronor. Det är en låg kostnad för den sinnesfrid du uppnår genom att veta att datorn är väl skyddad. Som ett minimum, dra åtminstone ur alla anslutningar till datorn när du åker på semester. </para>
+
+        </sect4>
+
+        <sect4
+> <title
+>Minnesenheter: USB-stickor, minneskort, flash-diskar</title>
+
+            <para
+>Minnesenheter är mekaniskt mer robusta än hårddiskar och lider mycket mindre i det avseendet när de kopplas in i datorn. Men eftersom de oftast är flyttbara enheter, utsätts de för fall, olyckor och elektrostatiska urladdningar mycket oftare. Av olika orsaker är minnesenheter alltså minst lika benägna att gå sönder som hårddiskar. Lägg därtill stöldrisk, livslängd och begränsad kapacitet, så blir minnesenheter olämpliga som permanenta datalagringsenheter. </para>
+
+            <para
+>En stor orsak till dataförlust (ofta möjlig att återställa) är osäker borttagning av minnesenheter från datorn. Innan data sparas från datorns minne till en ansluten enhet, förblir den i buffrar en viss tid. För hårddiskar betyder det som mest sekunder, medan det kan vara tiotals minuter för minnesenheter. Innan du tar bort en minnesenhet, aktivera alltid lagring av data via programvara (ofta benämnd "säker urkoppling"). </para>
+
+            <para
+>Det finns en ny teknologitrend som är på gång, att ersätta hårddiskar med Flash-baserade enheter. Omkring 2010 kan de vara prismässigt konkurrenskraftiga mot hårddiskar. Ett problem med dem är att kvarhålla data. Den kan inte skrivas över hur många gånger som helst. Flash-baserade enheter slits ut när de används. Slitaget beror till stor del på platsen data skrivs, och hur ofta den skrivs. &Linux; har utvecklat en specialdrivrutin som undviker att skriva till samma ställe alltför ofta. Men allt detta är preliminär information. Håll utkik efter mer. </para>
+
+        </sect4>
+
+        <sect4
+> <title
+>Magnetiska media</title>
+
+        <para
+>Magnetband används i säkerhetskopieringssystem, mycket oftare i professionella sammanhang än hemma. Band har problem med att kvarhålla data och föränderlig teknologi, men i ett avseende är de säkrare än cd och dvd: de är mindre utsatta för repor, smuts och brister vid skrivning. Å andra sidan är de känsliga för magnetiska fält. Släng en magnet intill ett band, så är innehållet borta! Band bör kopieras över var 5:e till 8:e år, annars förstörs för många bitar och skydd av checksummor fallerar. Nackdelen med magnetband är ofta bandspelarens pris, och återställningstiden (20 gånger längre än från hårddisk). Säkerhetskopieringssystem med band har sett sina bästa dagar. </para>
+
+        </sect4>
+
+    </sect3>
+
+    <sect3 id="logical-errors"
+> <title
+>Säkra mot logiska fel</title>
+
+        <sect4
+> <title
+>Lagringstjänster på webben</title>
+
+            <para
+>Amazons webbtjänst innehåller S3 - enkel lagringstjänst. Med lämplig inställning kan du montera S3 som en enhet på &Linux;-, Mac-, och Windows-system, vilket låter dig använda den som en säkerhetskopieringsplats för dina favoritprogram. Googles delade lagring är också ett populärt erbjudande, där man kan lagra hur mycket data som helst. </para>
+
+            <para
+>Det är dyrt jämfört med hårddiskar hemma: 40 Gibyte kostar 75 dollar per år, 400 Gibyte kostar 500 dollar. Och bilderna måste överföras via Internet (som är jämförelsevis långsamt). </para>
+
+            <para
+>Jag anser att det inte på något sätt är en dålig idé som en försäkring mot lokal dataförlust för de allra viktigaste bilderna, men det är inte en allmän lösning för säkerhetskopiering, därtill är det mycket för långsamt. </para>
+
+            <para
+>Google Photo, Flickr (Yahoo) och fotogemenskapen 23hq.com tillhandahåller specialiserade direktlagringstjänster för fotografier. Deras fritt tillgängliga utrymme är begränsat till 1 Gibyte, och man vill inte lagra bilder med full upplösning på nätet. Men professionella konton erbjuder mer, dramatiskt mycket mer när det gäller Flickr. För bara 25 dollar om året får man obegränsat [inte så realistiskt!] lagringsutrymme. </para>
+
+            <para
+>När det gäller att behålla data är lösningen med webbutrymme troligtvis ganska säker. Överföringsfel korrigeras (tack vara TCP-protokollet) och för de större företagen ingår oftast säkerhetskopiering samt distribuerad lagring, så att de är internt skyddade för katastrofer. </para>
+
+        </sect4>
+
+        <sect4
+> <title
+>Överföringsfel</title>
+
+            <para
+>Data går inte bara förlorad från lagringsenheter. Den går också förlorad när den skickas internt i datorn eller över nätverk (även om själva nätverkstrafiken med TCP är skyddad från fel). Fel uppstår i bussar och vid minneslagring. Konsumentprodukter har inget skydd mot sådana bitfel, men det kan vara värt att ta en titt på det. Man kan köpa minnen skyddade med felrättande koder (ECC), vilka medges vara dyra. Med ECC-minnen kommer minnet åtminstone att rensas från enkelbitfel och rättas. Dubbelbitfel undgår metoden, men de sker också sällan. </para>
+
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;using-dam-transmission.png" format="PNG"/></imageobject>
+                    <textobject
+> <phrase
+>Överföringsfel</phrase
+> </textobject>
+                </inlinemediaobject>
+            </para>
+
+            <para
+>Diagrammet avbildar elementen i en dator som ingår i överföringskedjan, där alla överföringar är utsatta för överföringsfel. Filsystemen zfs och btrfs garanterar åtminstone dataintegriteten för vägen mellan operativsystemet och hårddisken. </para>
+
+            <para
+>Felfrekvensen per bit (BER) för minne och överföringskanaler rör sig om 1 på 10 millioner (10E6 bitar). Det betyder inte mer än att <command
+>1 av 3000 bilder har ett fel enbart beroende på överföringsproblem</command
+>. Hur dramatiskt det blir för en bild är lämnat åt slumpen. Det skulle kunna betyda att bilden blir förstörd, eller att en bildpunkt någonstans ändrar sitt värde. På grund av den komprimering som används för nästan alla bilder, kan man inte förutse hur allvarligt ett enda bitfel kan bli. Ofta ser man bara en del av bilden istället för hela. </para>
+
+            <para
+>Det värsta av allt är att ingen talar om för dig när ett överföringsfel uppstår, inte ens hårdvaran. Alla sådana tekniska fel skickas vidare oupptäckta, till en dag när du öppnar fotografiet och till din förvåning märker att det är skadat. Det är rätt bekymmersamt att det inte finns något skydd inne i datorn. Ingen verkar ha tänkt på det. Internet (TCP-protokollet) är mycket säkrare som dataväg än interna vägar i en dator. </para>
+
+            <para
+>Otillförlitliga kraftaggregat är en annan källa till överföringsförluster, eftersom de orsakar störningar i dataflödet. Med normala filsystem uppstår sådana fel utan att de märks. </para>
+
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;using-dam-errors.png" format="PNG"/></imageobject>
+                    <textobject
+> <phrase
+>Förväntad felfrekvens ökar med komplexitet</phrase
+> </textobject>
+                </inlinemediaobject>
+            </para>
+
+            <para
+>Även om du inte är alltför bekymrad av överföringsproblem idag, ta en titt på framtiden i exemplet. Redan 2010 kommer vi att se tusentals fel per år! </para>
+
+        </sect4>
+
+        <sect4
+>  <title
+>Filsystem från 'Oracle' eller en uppstickare från 'Sun' vid horisonten?</title>
+
+            <para
+>ZFS från Sun Microsystems verkar vara en av två kandidater för att hantera skivfel på låg nivå, och det är mycket skalbart. Det har öppen källkod, starkt patentskydd, levereras med en licens som inte fungerar ihop med GPL, och är tillgängligt på Solaris och Leopard. Låt oss hoppas att det snart blir tillgängligt på &Linux; och Windows <ulink url="http://blogs.zdnet.com/storage/?p=169"
+>(en artikel)</ulink
+>. </para>
+
+            <para
+>Detta är för de modiga: <ulink url="http://www.wizy.org/wiki/ZFS_on_FUSE"
+>Fuse ZFS</ulink
+>. </para>
+
+            <para
+>Oracle har också påbörjat ett initiativ med sitt BTRFS-filsystem, som fortfarande är på alfastadiet. Det utnyttjar samma skyddsteknik som ZFS, och är tillgängligt på &Linux;, även om det ännu inte är en del av den vanliga kärnan. </para>
+
+        </sect4>
+
+    </sect3>
+
+    <sect3 id="human-errors"
+>   <title
+>Mänskliga fel</title>
+
+        <sect4
+>  <title
+>Stöld och olyckor</title>
+
+            <para
+>Underskatta dem inte! Dessa två faktorer står för 86 % av förlusterna för bärbara datorer och 46 % för fasta system. För bärbara datorer, står stöld ensamt för 50 %. </para>
+
+        </sect4>
+
+        <sect4
+>  <title
+>Skadliga program</title>
+
+            <para
+>Dataförlust på grund av virus är mindre allvarlig än man kan tro av vad man hör. Den står till exempel för färre skador än stöld eller ominstallation, och den är begränsad till användare av Microsofts operativsystem. Användare av Apple råkar ut för mycket få virus, och för &Linux; har de inte funnits på en rätt lång tid nu. </para>
+
+        </sect4>
+
+        <sect4
+>  <title
+>Panik kan ha betydelse vid dataförlust</title>
+
+            <para
+>Mänskliga fel är ett stort problem vid dataförlust, liksom med allt annat. Ta ett djupt andetag och stoppa! Panik är en vanlig reaktion, och man kan göra verkligt dumma saker. Erfarna användare kan dra ut fel enhet från ett RAID system, eller formatera om en hårddisk så att all information blir förstörd. Att agera utan att tänka är farligt för data. Sluta stressa upp dig över förlusten och gör ingenting med hårddisken. Ännu bättre är att sluta använda datorn innan du har tänkt ut en plan. Sätt dig ner och förklara din plan för en lekman, eller hellre kvinna. Du blir förvånad över hur många dumma idéer du själv kan upptäcka med en sådan övning. </para>
+
+            <para
+>Om hårddisken ger ifrån sig konstiga ljud, kommer inte vanlig programvara för att återställa filer att fungera. Gör en snabb säkerhetskopiering om du skulle råka ut för det. Om skivan fortfarande snurrar och du inte kan hitta din data, hitta ett verktyg för att återställa data och säkerhetskopiera till en annan dator eller enhet. (För de som inte använder &Linux;: Sök på Google efter &quot;free data recovery software&quot;, så finns det några alternativ, inklusive ett från Ontrack.) Det är viktigt att ladda ner på en annan enhet, antingen på en annan dator, eller på en USB-minnessticka eller hårddisk. Det är lämpligt att spara återställd data på en annan hårddisk. Programmet dd är användbart på Unix-system. </para>
+
+        </sect4>
+
+    </sect3>
+
+    <sect3 id="myths-dispelled"
+>  <title
+>Vanliga myter skingrade</title>
+
+        <para
+>Jag skulle vilja skingra några vanliga myter: </para>
+
+        <itemizedlist>
+
+            <listitem
+><para
+>Filsystem med öppen källkod är mindre benägna att utsättas för dataförlust än tillverkarspecifika system: Fel. NTFS är istället ett litet pinnhål bättre än ext3, ReiserFS, JFS eller XFS, för att bara nämna de mest populära filsystemen som ofta levereras som standardfilsystem med distributioner. En enastående artikel om detta finns <ulink url="http://www.cs.wisc.edu/~vijayan/vijayan-thesis.pdf"
+>här</ulink
+>. </para
+></listitem>
+
+            <listitem
+><para
+>Journalbaserade filsystem förhindrar dataförvanskning och förlust. Fel, de snabbar bara upp sökprocessen i fallet med ett plötsligt avbrott under användning, och förhindrar tvetydiga tillstånd. Men om en fil inte hade sparats helt och hållet innan missödet, går den förlorad. </para
+></listitem>
+
+            <listitem
+><para
+>RAID-system förhindrar dataförvanskning och förlust. Oftast fel. RAID 0 och 1 skyddar dig inte från någonting. RAID 5 kan förhindra dataförlust på grund av hårddiskfel (men inte från skiv- eller filsystemfel). Många enklare RAID-styrenheter (de flesta enheter på moderkort) rapporterar inte problem, med antagandet att du aldrig kommer att märka dem. Om du märker det flera månader senare, vad är då chansen att du vet att felet berodde på styrenheten? Ett försåtligt problem är förvanskning av RAID 5 paritetsdata. Det är ganska enkelt att kontrollera en fil genom att läsa den och kontrollera metadata. Att kontrollera paritetsdata är mycket svårare, alltså ser du oftast inte paritetsfel förrän en ombyggnad sker. Då är det förstås för sent. </para
+></listitem>
+
+            <listitem
+><para
+>Virus är det största hotet för digital data. Fel. Stöld och mänskligt fel är de primära orsakerna till dataförlust. </para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+    <sect3 id="storage-budget"
+>  <title
+>Skapa en budget: Datastorlek, uppskattning av nödvändig lagringsvolym</title>
+
+        <para
+>Sensorer i digitalkameror är 1-2 bländarsteg från fundamentala fysikaliska begränsningar. Vad jag menar är att det finns en naturlig gräns för hur långt tekniska framsteg kan nå. Känslighet och bruskarakteristik för alla typer av ljussensorer är inte långt från denna gräns. </para>
+
+        <para
+>Dagens kameror går mot sensorer med 10 megapixlar, även om den upplösningen redan är för stor för kompaktkameror och försämrar slutresultatet. Givet sensorstorlek och optikkvalitet är 6 megapixlar optimalt för kompaktkameror. Till och med spegelreflexkameror når sina gränser vid 10-12 megapixlar. För ännu högre upplösningar måste man utnyttja helbildsensorer (24 x 36 mm) eller ännu större format. </para>
+
+        <para
+>Om man tar hänsyn till tillverkarnas reklam om megapixlar, verkar det på den säkra sidan att påstå att de flesta framtida kameror kommer att ha mindre än 20 megapixel. Det ger oss en uppskattning av nödvändigt lagringsutrymme per fotografi i det långa loppet; &lt;15 Mibyte per bild. Även om versionsbaserade filer introduceras (gruppering av variationer hos ett fotografi under en filreferens), är trenden att implementera ändringsskript så att bara ett litet extra utrymme krävs, och inte en helt annorlunda bild för varje version. Med snabbare hårdvara kommer detta koncept snart nå sin mognad. </para>
+
+        <para
+>För att uppskatta hur mycket lagringsutrymme du måste planera för, multiplicera helt enkelt antal fotografier du tar per år (enkelt med tidslinjen i &digikam;s sidorad) med 15 Mibyte. De flesta användare behåller färre än 2000 bilder per år, vilket kräver mindre än 30 Gibyte/år. Med antagandet att du byter hårddisk (eller något framtida medium) omkring var fjärde till femte år, kommer den naturliga ökningen av lagringskapacitet vara tillräcklig för att hålla dig flytande. </para>
+
+        <para
+>De mer ambitiösa där ute kommer att behöva mer utrymme, kanske mycket mer. Fundera på att köpa en filserver. Gigabit-ethernet levereras integrerat i moderkort idag, och det går på ett ögonblick att hämta filer via det lokala nätverket. På tal om moderna moderkort: nu har de externa SATA-anslutningar. Det gör det verkligen till en bagatell att köpa en extern SATA-enhet och koppla in den till datorn. Under detta år (2008) kommer 1000 Gbyte enheter nå marknaden. De är utmärkta kompakta lagringsenheter för utbyte vid säkerhetskopiering: behåll en enhet hemma, och ha en på någon annan plats. </para>
+
+    </sect3>
+
+    <sect3 id="backup"
+>  <title
+>Säkerhetskopiera, säkerhetskopiera, säkerhetskopiera, återställ!</title>
+
+        <para
+>En 750 Gbyte hårddisk kostar idag 1000 kronor. Skyll inte på någon annan vid dataförlust! 6 % av alla persondatorer råkar ut för en dataförlust ett givet år. Säkerhetskopiera data ofta enligt en plan, och säkerhetskopiera den och kontrollera säkerhetskopian innan du gör något ovanligt som att installera om operativsystemet, byta hårddisk, ändra partitionsstorlek, och så vidare. </para>
+
+        <sect4
+>  <title
+>Förhindra katastrofer</title>
+
+            <para
+>Antag att du samvetsgrant gör säkerhetskopior varje dag på en extern SATA-diskenhet. Då inträffar dagen då åskan slår ner. Om den externa disken inte var inkopplad i det ögonblicket kan du skatta dig lycklig! </para>
+
+            <para
+>Katastrofer sker lokalt och förstör mycket. Glöm bort flygplanskrascher: eldsvådor, vattenskador, elektricitet, ungar och stöld är farliga nog för din data. De skadar ofta ett helt rum eller hela huset. </para>
+
+            <para
+>Därför betyder hantering av katastrofer att inte lagra lokalt. Flytta säkerhetskopior till övervåningen, huset intill, till kontoret (eller tvärtom), eller någon annanstans. </para>
+
+            <para
+>Det finns en annan god sak med fysisk separation: som nämnts ovan är panik ofta orsak till att data förstörs, till och med säkerhetskopierad data. Att ha en säkerhetskopia som inte är direkt tillgänglig kan rädda ditt skinn en vacker dag. </para>
+
+        </sect4>
+
+        <sect4
+>  <title
+>Några tekniker för säkerhetskopiering förklarade för lekmän</title>
+
+            <itemizedlist>
+
+                <listitem
+><para
+>Fullständig säkerhetskopiering: En komplett säkerhetskopiering av alla filer som ingår. Det är en ögonblicksbild utan historik, och representerar en fullständig kopia från en viss tidpunkt. </para
+></listitem>
+
+                <listitem
+><para
+>Differentiell säkerhetskopia: En säkerhetskopia enbart av de filer som har ändrats sedan den senaste fullständiga säkerhetskopian. Utgör en fullständig ögonblicksbild av två tidpunkter: den fullständiga säkerhetskopian och den senaste differentiella. </para
+></listitem>
+
+                <listitem
+><para
+>Inkrementell säkerhetskopiering: En säkerhetskopiering av bara filer som har ändrats sedan den senaste andra säkerhetskopieringen. Består av flera kopieringar. Du kan återställa det ursprungliga tillståndet för en godtycklig tidpunkt när en sådan säkerhetskopiering utfördes. Det är så nära man kan komma till ett versionsbaserat system, utom att det bara är samplat och inte kontinuerligt. </para
+></listitem>
+
+            </itemizedlist>
+
+        </sect4>
+
+        <sect4
+>  <title
+>Bästa kända metod: Recept på säkerhetskopiering för lekmän inom IT</title>
+
+            <orderedlist>
+                    <listitem
+><para
+>Gör en fullständig säkerhetskopiering med en extern lagringsenhet.</para
+></listitem>
+                    <listitem
+><para
+>Verifiera dess dataintegritet och avlägsna den (katastrofhantering)</para
+></listitem>
+                    <listitem
+><para
+>Ha en annan lagringsenhet för ofta förekommande säkerhetskopior</para
+></listitem>
+                    <listitem
+><para
+>Byt enheterna varannan månad efter att ha verifierat dataintegritet</para
+></listitem>
+            </orderedlist>
+
+        </sect4>
+
+        <sect4
+>  <title
+>Ett användbart recept för säkerhetskopiering med rsync</title>
+
+            <para
+>Rsync är ett underbart litet verktyg som är förvånansvärt lätt att anpassa på dina datorer. Istället för att ha en FTP-session styrd av ett skript, eller någon annan form av filöverföringsskript: rsync kopierar bara skillnader för filer som verkligen har ändras, komprimerat och  av säkerhetsskäl via SSH om du vill. Det är en hel del. </para>
+
+            <para
+>En rimlig ansats för säkerhetskopiering av bilder skulle kunna vara följande: </para>
+
+            <orderedlist>
+
+                    <listitem
+><para
+>Säkerhetskopiera viktiga bilder omedelbart till dvd eller optisk media (efter de har lagrats på en dator) </para
+></listitem>
+
+                    <listitem
+><para
+>Gör daglig inkrementell säkerhetskopiering av arbetsarean </para
+></listitem>
+
+                    <listitem
+><para
+>Gör en veckovis differentiell säkerhetskopiering och ta bort motsvarande säkerhetskopia från veckan minus två (två veckor tillbaka) </para
+></listitem>
+
+                    <listitem
+><para
+>Gör en månadsvis differentiell säkerhetskopiering och ta bort säkerhetskopian från månad minus två </para
+></listitem>
+
+                    <listitem
+><para
+>Om inte redan fysiskt åtskilda, skilj dem nu åt (genom att byta till en annan diskenhet för säkerhetskopiering) </para
+></listitem>
+
+            </orderedlist>
+
+            <para
+>Metoden försöker ge dig tillräckligt med tid att upptäcka förluster och att återställa fullständigt, samtidigt som volymen för säkerhetskopiering hålls på &lt;130 % av arbetsutrymmet. Du får en daglig version för de senaste 7-14 dagarna, en veckovis kopia under minst en månad, och en kopia av varje månad. Eventuell ytterligare gallring bör göras för hand efter en fullständig verifikation. </para>
+
+        </sect4>
+
+    </sect3>
+
+    <sect3 id="technology-review">
+        <title
+>Bevara dina bilder genom teknologiförändringar och olika ägare</title>
+
+        <para
+>Teman: metadata, IPTC lagrad i bildfiler, tillhörande XMP-filer, behåll originalen, lagringsmedia, skalbarhet, återställa bilder och metadata, kopiera bilddata till nästa generations media, program, operativsystem, virtuella system, visningsutrustning ... användning av webben. </para>
+
+        <para
+>För att dina värdefulla bilder ska överleva sisådär de kommande 40 åren (eftersom det är då du blir verkligt intresserad av att gå tillbaka till de fina gamla fotografierna av dig som barn, ungdom, etc.) finns det två strategier att följa: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>Följ med teknologin. Bli inte efter mer än några år.</para
+></listitem>
+
+            <listitem
+><para
+>Spara dina foton med en öppen, ej tillverkarspecifik, standard.</para
+></listitem>
+
+        </orderedlist>
+
+        <sect4
+>  <title
+>Hur hänger man med teknologin?</title>
+
+            <para
+>Eftersom framtiden på grund av sin natur inte kan förutsägas, måste allt som sägs idag tas med försiktighet, och granskas alltmedan tiden går. Tyvärr finns det inga möjliga genvägar undan viss grundläggande vaksamhet. Åtminstone var femte till åttonde år bör man fråga sig hur bakåtkompatibla nuvarande system är. Ju färre alternativ vi använde i det förflutna, desto färre frågor måste besvaras i framtiden. </para>
+
+            <para
+>Varje gång du byter datorsystem (hårdvara, operativsystem, program, digital upphovshantering) måste du förstås ställa samma frågor. Om du vill byta till Windows Vista idag, måste du upprepade gånger ställa dig frågan om du fortfarande kan importera dina bilder, och ännu viktigare, om du någonsin kommer att kunna flytta dem till något annat system eller någon annan dator. Risken är stor att du inte kommer att kunna det. Jag ser många runt omkring som kämpar, eftersom Vista genomdriver en strikt hantering av digital upphovsrätt. Hur kan du bevisa för Vista att du verkligen är ägare till dina bilders upphovsrätt? </para>
+
+            <para
+>Frågorna bör besvaras i enlighet med linjen som förklaras i detta dokument: använd eller byt till öppna standarder som stöds av en mångfald program. </para>
+
+            <para
+>Nu är virtuella datorer tillgängliga för alla. Om du har en gammal dator som är viktig för att kunna läsa dina bilder, behåll den, och installera den som en virtuell dator för senare användning. </para>
+
+            <para
+>Annars är rådet mycket enkelt: Varje gång du byter datorarkitektur, lagrings- och säkerhetskopieringsteknologi, eller filformat, kontrollera det, gå igenom biblioteket och konvertera till en nyare standard om det behövs. Och håll dig till öppna standarder. </para>
+
+        </sect4>
+
+        <sect4
+>  <title
+>Skalbarhet</title>
+
+            <para
+>Skalbarhet är tekniknördens uttryck för förmågan att (enkelt) kunna ändra ett systems storlek, vilket alltid betyder att göra det större. </para>
+
+            <para
+>Låt oss anta att du planerat för skalbarhet och tillägnat en separat disk eller partition till förvaringsutrymmet du vill kunna öka. På Unix-system såsom &Linux;, kan du då kopiera förvaringsutrymmet till den nya disken och ändra dess storlek: </para>
+
+            <para
+>Kontrollera att den nya disken känns igen av systemet med dmesg, men montera den inte. </para>
+
+            <blockquote
+><screen
+>&dollar; dd if=/dev/sdb[#] of=/dev/sdc # källa är /dev/sdb, ny disk är /dev/sdc
+&dollar; parted resize /dev/sdc1 0 &lt;diskstorlek i MB&gt; # fungerar med ext2,3, fat16, 32 och reiserfs
+&dollar; resize2fs /dev/sadc1  #resize_reiserfs i detta fall
+            </screen
+></blockquote>
+
+        </sect4>
+
+        <sect4
+>  <title
+>Använd öppna, ej tillverkarspecifika, standarder som filformat</title>
+
+            <para
+>Den digitala erans korta historia under de senaste 20 åren har gång på gång bevisat att tillverkarspecifika format är inte rätt väg när man vill att data ska vara läsbart 10 år in i framtiden. Microsoft är definitivt en välkänd syndare i det avseendet på grund av en dominerande marknadsandel. Men andra bolag är i själva verket (oavsiktligt) värre, eftersom de inte finns kvar på marknaden alls, eller bara har en liten bas av användare och bidragsgivare. I fallet med Microsoft har man åtminstone fördelen att många delar samma problem. Att hitta en lösning lyckas därför mycket oftare. Ändå använder Microsoft i vissa fall dokumentation för öppen källkod för att förstå sina egna system, så dåligt underhållen har deras egen dokumentation varit. Oftast kan man inte läsa ett dokument utan fel, skapat av samma program två huvudversioner tidigare, med en given Microsoft Office programsvit. </para>
+
+            <para
+>Bildformat har haft en längre livstid än kontorsdokument, och är något mindre påverkade av åldring. </para>
+
+            <para
+>Standarder med öppen källkod har den enorma fördelen av att ha en öppen specifikation. Även om det någon gång i framtiden inte finns någon programvara som kan läsa den längre, kan man återskapa sådan programvara, en uppgift som blir enklare år från år. </para>
+
+            <para
+><command
+>JPEG</command
+> har funnits ett tag nu, och även om det är ett format med destruktiv komprimering som förlorar en del varje gång du gör en ändring och sparar, finns det överallt, stöder JFIF-, EXIF-, IPTC- och XMP-metadata, har bra komprimeringsfaktorer och kan läsas av all programvara för bildbehandling. På grund av dess begränsade metadata, destruktiva komprimering, avsaknad av genomskinlighet och 8-bitars färgkanaldjup, rekommenderar vi det inte. JPEG 2000 är bättre, kan användas förlustfritt, men saknar användarbas. </para>
+
+            <para
+><command
+>GIF</command
+> är ett tillverkarspecifikt. patenterat format som långsamt håller på att försvinna från marknaden. Använd det inte. </para>
+
+            <para
+>Formatet <command
+>PNG</command
+> uppfanns som en standard med öppen källkod för att ersätta GIF, men det klarar av mycket mer. Det är förlustfritt, stöder XMP-, EXIF- och IPTC-metadata, 16-bitars färgkodning och full genomskinlighet. PNG kan lagra gamma och kromatisk data för att förbättra färganpassning på heterogena plattformar. Dess nackdel är en relativt stor storlek (men mindre än TIFF) och långsam komprimering. Vi rekommenderar det. </para>
+
+            <para
+><command
+>TIFF</command
+> har bredd acceptans som bildformat. TIFF kan finnas i okomprimerad form eller i en behållare med en förlustfri komprimeringsalgoritm (Deflate). Det behåller hög bildkvalitet, till bekostnad av mycket större filstorlekar. Vissa kameror låter dig spara dina bilder med detta format. Problemet är att formatet har ändrats av så många, att det finns nu 50 eller fler varianter, och alla känns inte igen av alla program. </para>
+
+            <para
+><command
+>PGF</command
+> "Progressiv grafikfil" är ett annat inte så välkänt, men öppet, filformat för bilder. Det är baserat på Wavelet, och tillåter förlustfri och destruktiv datakomprimering. PGF står sig bra i jämförelse med JPEG 2000, men utvecklades för hastighet (komprimering och avkodning) istället för att ge bäst komprimeringsförhållande. Vid samma filstorlek ser en PGF-fil väsentligt bättre ut än en JPEG-fil, medan den också förblir mycket bra vid gradvis visning. Därför bör det vara lämpligt för webben, men för närvarande kan få webbläsare visa det. För mer information om PGF-formatet, se <ulink url="http://www.libpgf.org/"
+>hemsidan för libPGF</ulink
+>. </para>
+
+            <para
+><command
+>Obehandlat</command
+> format. Vissa, oftast dyrare, kameror stöder att ta bilder med obehandlat format. Det obehandlade formatet är egentligen inte alls en bildstandard, utan ett behållarformat som är olika för varje tillverkare och kameramodell. Bilder med obehandlat format innehåller data med minimal behandling från bildsensorn i en digitalkamera eller bildläsare. Obehandlade bildfiler kallas ibland digitala negativ, eftersom de uppfyller samma roll som filmnegativ i traditionell kemisk fotografi: dvs. negativet är inte direkt användbart som en bild, men innehåller all information som behövs för att skapa en bild. Att lagra fotografier med en kameras obehandlade format tillhandahåller större dynamiskt omfång, och låter dig ändra inställningar, som vitbalans, efter fotografiet har tagits. De flesta yrkesfotografer använder obehandlat format, eftersom det ger dem maximal flexibilitet. Nackdelen är att obehandlade bildfiler verkligen kan vara mycket stora. </para>
+
+            <para
+>Min rekommendation är helt klart att <command
+>avstå från arkivering med obehandlat format</command
+> (i motsats till att ta bilder med obehandlat format, vilket jag rekommenderar). Det har alla dåliga egenskaper: många varianter och tillverkarspecifik natur. Det är uppenbart att om några få år kan du inte längre använda dina gamla obehandlade filer. Jag har redan sett de som bytt kamera, förlorat sina färgprofiler och haft stora svårigheter med att behandla sina gamla obehandlade filer på rätt sätt. Det är mycket bättre att byta till DNG-formatet! </para>
+
+            <para
+><command
+>DNG</command
+> digitalt negativfilformat är ett öppet ersättningsfritt obehandlat bildformat skapat av Adobe Systems. DNG var ett svar på krav på ett enhetligt obehandlat kameraformat. Det är baserat på TIFF/EP-formatet, och har krav på att metadata används. Ett fåtal kameratillverkare har redan tagit DNG i bruk. Låt oss hoppas att huvudaktörerna Canon och Nikon kommer att använda det i framtiden. </para>
+
+            <para
+>Jag rekommenderar starkt att konvertera obehandlade filer till DNG vid arkivering. Trots det faktum att DNG skapades av Adobe, är det en öppen standard och i stor utsträckning anammad av gemenskapen för öppen källkod (vilket ofta är en god indikation på överlevnadsegenskaper). Vissa tillverkare har redan tagit DNG i bruk som obehandlat format. Sist men inte minst är Adobe den viktigaste källan till grafikprogramvara idag, och de stöder förstås sin egen uppfinning. Det är ett idealiskt arkiveringsformat. Obehandlad sensordata bevaras som sådan i TIFF-formatet inne i DNG, så risken med tillverkarspecifika obehandlade format mildras. Allt detta gör det lätt avklarat att flytta till ett annat operativsystem. I en nära framtid kommer vi att se 'icke-destruktiv redigering', där bilderna inte längre ändras, utan alla redigeringssteg kommer att spelas in (i själva verket med DNG). När en sådan fil öppnas igen, spelas redigeringsskriptet upp. Det gör åt beräkningskapacitet, men är lovande eftersom det lämnar originalet oförändrat, och tillgänglig beräkningskapacitet ökar hela tiden. </para>
+
+            <para
+><command
+>XML</command
+> (Extensible Mark-up Language) eller <command
+>RDF</command
+> (Resource Description Framework). XML liknar HTML, men där HTML i huvudsak är inriktat på att presentera data, är XML inriktat på &quot;representationen&quot; av data. Förutom det, är XML inte tillverkarspecifikt, oberoende av operativsystem, ganska enkelt att tolka, textbaserat och billigt. RDF är lösningen från WC3 för att integrera en mängd olika tillämpningar, som bibliotekskataloger, världsomspännande register, nyhetskällor, programvara, samt notsamlingar, bilder och händelser, med användning av XML som utväxlingssyntax. Tillsammans tillhandahåller specifikationerna en metod som använder en lättviktsontologi baserat på Dublin Core som också stöder den &quot;semantiska webben&quot; (enkelt utbyte av kunskap via webben). </para>
+
+            <para
+>IPTC blir XMP</para>
+
+            <para
+>Det är troligen en av orsakerna till att Adobe introducerade sin XML-baserade XMP-teknologi runt 2001, för att ersätta 90-talets teknologi med &quot;bildresursblock&quot;. XMP står för &quot;Extensible Metadata Platform&quot;, en blandning av XML och RDF. Det är en etiketteringsteknologi som låter användare inbädda data om en fil i filen själv. Filinformationen sparas med filändelsen &quot;.xmp&quot; (vilket innebär att XML/RDF används). </para>
+
+            <para
+><command
+>XMP</command
+>. Även om ODF alltid kommer att vara läsbart (eftersom texten det innehåller är skriven i klartext), bevarar XMP metadata med det tydligt förståeliga formatet XML. Det finns ingen fara att det inte kommer att kunna läsas senare här. Det kan inbäddas i bildfiler, eller vara en separat tillhörande fil (sidovagnskonceptet). XMP kan användas i PDF, JPEG, JPEG2000, GIF, PNG, HTML, TIFF, Adobe Illustrator, PSD, Postscript och inkapslad Postscript. In en redigerad JPEG-fil, ingår XMP-information typiskt vid sidan om EXIF- och IPTC-data. </para>
+
+            <para
+>Att inbädda metadata i filer gör det möjligt att enkelt dela och överföra filer mellan produkter, tillverkare, plattformar, och kunder, utan att metadata går förlorad. De vanligaste metadatataggar som lagras i XMP-data är de från Dublin Core metadatainitiativet, vilket omfattar saker som titel, beskrivning, skapare och så vidare. Standarden är konstruerad för att vara möjlig att utöka, vilket låter användare lägga till sina egna typer av metadata i XMP-data. XMP tillåter i allmänhet inte att binära datatyper inbäddas. Det betyder att eventuell binärdata som man vill ska ingå i XMP, som miniatyrbilder, måste kodas i något format som är XML-vänligt, liksom Base64. </para>
+
+            <para
+>Många fotografer föredrar att behålla ett original av alla bilder (oftast med obehandlat format) för arkivet. XMP passar det tillvägagångssättet eftersom det håller metadata åtskilt från bildfilen. Jag delar inte den synen. Det kan uppstå problem att länka metadatafilen och bildfilen, och som nämnts ovan kommer obehandlade format att bli föråldrade. Jag rekommenderar att använda DNG som omgivande format och placera allt inuti det. </para>
+
+            <para
+><ulink url="http://dublincore.org/"
+>Dublin Core metadatainitiativ</ulink
+> är en öppen organisation som håller på att utveckla samverkande standarder för metadata tillgängliga på nätet, med stöd för en stor mängd ändamål och affärsmodeller. DCMI:s aktiviteter omfattar arbete med arkitektur och modellering, diskussioner och samarbete i DCMI-gemenskapen och DCMI-aktivitetsgrupper, årliga konferenser och arbetsmöten, standardkontakter, och utbildningssatsningar för att gynna ett utbredd godtagande av metadatastandarder och bruk. </para>
+
+        </sect4>
+
+    </sect3>
+
+    <sect3 id="best-practice"
+>  <title
+>Bästa kända metod: Skydda data</title>
+
+        <itemizedlist>
+
+            <listitem
+><para
+>Använd överspänningsskydd (som följer standarden UL 1449) kombinerat med avbrottsfri kraftförsörjning</para
+></listitem>
+
+            <listitem
+><para
+>Använd felrättande minne för att garantera riktig dataöverföring (till och med när filer bara sparas)</para
+></listitem>
+
+            <listitem
+><para
+>Övervaka dina hårddiskar (temperatur, oljud, ...), gör säkerhetskopior</para
+></listitem>
+
+            <listitem
+><para
+>Förvara säkerhetskopior på en annan plats, inlåsta, eller använd lagringsutrymme på webben</para
+></listitem>
+
+            <listitem
+><para
+>Använd arkivmedia och brännare</para
+></listitem>
+
+            <listitem
+><para
+>Grips inte av panik i händelse av dataförlust. Förklara för någon utomstående lekman hur du planerar att återställa data.</para
+></listitem>
+
+            <listitem
+><para
+>Välj filsystem, partitioner, kataloger för att enkelt sköta om skalbarhet</para
+></listitem>
+
+            <listitem
+><para
+>Använd öppna, ej tillverkarspecifika, standarder för att hantera och spara fotografier</para
+></listitem>
+
+            <listitem
+><para
+>Utför en teknologigranskning/förändring åtminstone var femte år</para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

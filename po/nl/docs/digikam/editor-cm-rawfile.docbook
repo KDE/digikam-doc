@@ -1,0 +1,211 @@
+<sect2 id="editor-cm-rawfile">
+    <title
+>Het cameraprofiel en zaken met betrekking tot het ontwikkelen van een raw-bestand</title>
+
+    <sect3>
+        <title
+>Wat is de volgende stap in kleurbeheer? </title>
+
+        <para
+>Ten eerste, en voor de goede orde, veel uitmuntende professionele en amateurfotografen slaan al hun beelden uitsluitend op als in-camera jpegs in de sRGB kleurruimte. Maar als u wil werken in ruimere kleurruimten of als u wilt werken met RAW bestanden (zelfs als u sRGB beelden van uw RAW bestanden wilt maken) lees dan verder.  </para>
+
+        <para
+>Afgaande op de vragen die gesteld worden op het &digikam; gebruikersforum, als u deze zelfstudie volgt dan maakt u waarschijnlijk RAW opnamen met een digitale spiegelreflexcamera(dSLR) en hoopt u dat ergens in de geheime wateren van kleurbeheersing het antwoord verscholen ligt hoe een leuke foto van uw RAW bestand te maken. En u heeft gelijk! Het volgende dat u nodig heeft is het juiste cameraprofiel voor het ontwikkelen van uw RAW beelden. Maar laten we eerst de vraag beantwoorden die u had kunnen stellen.  </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Waarom ziet de afbeelding die is geproduceerd door raw-converters zoals dcraw of ufraw er niet zo uit als het ingebedde voorbeeld dat door digikam wordt getoond? </title>
+
+        <para
+>Blij dat u dat vroeg. Alle digitale camerabeelden beginnen als RAW bestand, of de camera de gebruiker nu toestaat de beelden als RAW bestand op te slaan of niet. Als u de camera nu vraagt om jpeg op te slaan in plaats van RAW bestanden, dan zal de camera altijd de ingebouwde processor gebruiken om de RAW bestanden te converteren naar jpeg. Die ingebouwde voorbeeldversie is hoe uw uiteindelijke beeld er uit zou zien als u de camera had ingesteld om jpeg op te slaan in plaats van RAW bestanden.   </para>
+
+        <para
+>Ik spreek hier uit ervaring als Canon gebruiker, maar ik schat dat de meeste of alle  beginners en middenklasse DSLR's zich zo gedragen. Canon biedt gebruikers verschillende stijlen voor opnamen; neutraal, standaard, portret, landschap, enz. die bepalen wat voor bewerking zal worden uitgevoerd op de raw opname om het uiteindelijke beeld te vormen. Of de bewerking nu in-camera of later met gebruik van de meegeleverde Canon DPP programmatuur wordt uitgevoerd. Het Canon DPP raw verwerkingsprogramma biedt de gebruiker uitgebreidere mogelijkheden voor bewerking maar behandelt het raw bestand nog steeds in overeenstemming met de gekozen fotostijl. De meeste  van de Canon fotostijlen voegen een zware S-kromme en extra kleurverzadiging toe om het beeld meer pit te geven. Zelfs als u kiest voor een neutrale opnamestijl (de Canon opnamestijl die de minst gewijzigde toon hanteert) en u selecteert "minder contrast", "minder verzadiging", "geen ruisonderdrukking" en geen "verscherping" in de DPP raw dialoog dan zult u ontdekken, als u weet waar u moet zoeken, dat een S-kromme en ook schaduw ruisonderdrukking werd toegepast. </para>
+
+        <para
+>Libraw (dat &digikam; gebruikt om raw bestanden om te zetten naar beeldbestanden) voegt geen S-kromme toe aan uw beeldtonaliteit. Libraw geeft de lichte en donkere delen weer zoals die werkelijk door de camerasensor werden vastgelegd. Volgens  <ulink url="http://21stcenturyshoebox.com/essays/scenereferredworkflow.html"
+>Tindeman</ulink
+>, (een uitstekend te lezen stuk en bron van goede adviezen, met links naar even goede bronnen voor aanvullende informatie). Dcraw is een van de weinige ontwikkelaars in raw, die u de werkelijke, aan de opname gerelateerde tonaliteit geeft. En de dcraw/ufraw aan opname gerelateerde beeldkromme ziet er dan ook vlak uit, omdat de camera licht lineair vastlegt, terwijl onze ogen constant in wisselwerking zijn met onze hersenen om zich aan te passen aan donkere en heldere gebieden in een beeld. Dat betekent dat onze hersenen tot op zekere hoogte een S-kromme aanbrengen aan het beeld om ons in staat te stellen beter te focussen op voor ons interessante gebieden terwijl we rond kijken. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Het ingebedde jpeg-voorbeeld ziet er zoveel mooier uit dan de uitvoer van dcraw. Wat is de waarde van tonaliteit verwezen naar de scene? </title>
+
+        <para
+>We nemen aan dat als u een foto maakt, u een idee heeft van hoe u wilt dat het uiteindelijke plaatje er uit zal zien. Het is veel gemakkelijker om dat eindresultaat te krijgen als u niet allerlei dingen ongedaan hoeft te maken die al aan uw beeld zijn toegevoegd. Als Canon, (of Nikon, of Bibble, of wie dan ook) eenmaal hun ingebouwde S-krommen en ruisonderdrukking in de schaduw, verscherping &etc; aan uw opname heeft toegevoegd, dan zijn schaduwen, hoge lichtniveaus, randdetails &etc; reeds geknepen, gekortwiekt, afgehakt en op andere manier gewijzigd en verwrongen. U heeft dan informatie weggegooid en u kunt dat niet meer terug krijgen. Speciaal in schaduwen, zelfs met 16-bits beelden(in feite, 12- of 14-bits, afhankelijk van de camera, maar het wordt gecodeerd als 16-bits voor het gemak van de computer), is er dan niet meer zo veel informatie aanwezig.  </para>
+
+        <para
+>Waar het eigenlijk om gaat bij het bewerken van beelden is, denk ik, het bewust manipuleren van toon, kleur, scherpte en ander zaken op zo'n manier dat de kijker ziet wat u, de fotograaf, van bijzonder belang vond toen u de opname maakte. Waarom zou u dan de kunst van beeldbewerking uit handen geven aan software die door een fabrikant werd ontwikkeld? Met andere woorden, "plat is mooi", terwijl u liever uw eigen kunstzinnige interpretatie aan uw beelden wilt geven? Het alternatief om ingeblikte, merk-algoritmen gemaakt door Canon, Nikon, Bibble &etc; de beelden voor u te interpreteren. (Aan de andere kant valt niet te ontkennen dat deze algoritmen voor veel opnamen tamelijk goed werken.) </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Ik kan de waarde zien bij het starten van mijn bewerking van de afbeelding met een naar de scene refererende rendering in plaats van de oogstrelende rendering die ik zie in de ingebedde jpeg. Maar ik zeg je, de door digiKam/libraw geproduceerde afbeeldingen zien er heel slecht uit! Waarom? </title>
+
+        <para
+>Dat hangt er van af. Als het beeld erg donker is, dan liet u dcraw een 16-bit bestand aan maken en dan stuit u op een probleem doordat dcraw  geen gamma-omvorming heeft toegepast voordat het beeldbestand werd gemaakt. U kunt gebruik maken van imagemagic om de juiste gamma transformatie toe te passen op het door Libraw gevormde beeld. Of u kunt een cameraprofiel zoeken of maken met een gamma van 1. Of u kunt ufraw gebruiken dat de gamma-omvorming voor u toepast.  </para>
+
+        <para
+>Als uw beeld roze in heldere delen heeft, is er een oplossing. Voor uitleg van het probleem en de opdrachtregel om het op te lossen, kijk op: <ulink url="http://www.luminous-landscape.com/forum/index.php?topic=23430.0"
+>this "Luminous Landscape" forum post</ulink
+>. </para>
+
+        <para
+>Als de afbeelding niet donker is maar het ziet er echt raar uit, dan hebt u waarschijnlijk onjuiste keuzes gemaakt in het gebruikersinterface van Libraw. Het interface  van Libraw stelt u met gemak in staat you om opties in te voegen die u anders moet specificeren op de commandoregel. Gemak komt echter met een prijs. Ten eerste, kan het interface geen toegang bieden tot alle opties die beschikbaar zijn op de commandoregel. Ten tweede, om het meeste uit het interface van Libraw te krijgen, moet u weten wat de knoppen, schuifregelaars, &etc; in het interface in feite doen. Dit betekent dat u moet weten wat er gebeurt op de commandoregel als u de beste resultaten uit het gebruik van het interface wilt halen. (Deze handleiding zal niet proberen te documenteren hoe het gebruikersinterface van Libraw te gebruiken. Digikam is bezig zich snel te ontwikkelen en alles wat ik zou schrijven over het interface van Libraw zal zeker verouderd zijn in de nabije toekomst.) </para>
+
+        <para
+>Als uw ingesloten jpeg mooie. diepe, rijke schaduwen heeft maar het jpeg/tiff beeld dat digikam/Libraw er van maakt vertoont onregelmatige rode lijnen in de schaduwpartijen, dan heeft u waarschijnlijk een "x" geplaatst in het hokje van de "geadvanceerde zwartpunt" optie en heeft u het schuifje op 0. gezet. Haal de "x" weg uit het zwartpunt hokje en probeer het opnieuw. Dit hokje in het digikam/Libraw interface komt overeen met de optie "-k" wanneer dcraw wordt gebruikt in de opdrachtregel. Met de optie "-k" overschrijft u de beste schatting van dcraw voor waar in de schaduwtonen van uw beeld het digitale signaal de achtergrondruis begint te overschrijven. Als u de "-k" optie in de opdrachtregel niet gebruikt, dan berekent dcraw een passende waarde, gebaseerd op de geschatte achtergrondruis. Voor mijn Canon 400d/xti is de door dcraw berekende achtergrondruis gewoonlijk ongeveer 256(de opdrachtregel optie -v geeft aan dcraw de opdracht om u te laten weten wat het programma doet tijdens de verwerking van uw raw bestand. Echter, als ik gebruik maak van de optie "-K /pad naar blackframe.pgm" om dcraw een blackframe in mindering te laten brengen dan zal dcraw het zwartpunt als "0" rapporteren omdat het dan niet nodig is om het hoger in te stellen teneinde de diepste schaduwen in het beeld te vermijden, daar waar ruis het signaal overstemd. (Een blackframe is een opname genomen met de lensdop op de lens en met de zelfde instelling waarmee de opname werd gemaakt. Het beste is om dat onmiddellijk te doen na het maken van de opname die verwerkt wordt. De optie "-K" stelt dcraw in staat de achtergrondruis af te trekken van het beeld). </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Waar vind ik goede informatie over digitale ruis? </title>
+
+        <para
+>Zie de volgende uitstekende artikelen:</para>
+
+        <itemizedlist>
+
+            <listitem
+><para
+><ulink url="http://www.ronbigelow.com/articles/noise-1/noise-1.htm"
+></ulink
+></para
+></listitem>
+
+            <listitem
+><para
+><ulink url="http://www.cambridgeincolour.com/tutorials/noise.htm"
+></ulink
+></para
+></listitem>
+
+            <listitem
+><para
+><ulink url="http://www.clarkvision.com/imagedetail/digital.signal.to.noise/"
+></ulink
+></para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Waarom zijn de kleuren van Canon en Nikon beter dan de kleuren die door Libraw worden geproduceerd?</title>
+
+        <para
+>Kleurweergave is een gebied waar Canon en (vermoedelijk) Nikon, goede software voor ontwikkeling van raw beelden levert. Waarom?  Omdat de door hen ontwikkelde software gekoppeld is aan de cameraprofielen die afgestemd zijn op de raw beelden, gemaakt door die camera. Ik heb dat uitgebreid gecontroleerd met gebruikmaking van de "pipet" om de resultaten van verschillende raw ontwikkelaars te vergelijken. Ik heb daarbij gebruik gemaakt van verschillende cameraprofielen uit verschillende bronnen. Een erg moeizaam maar leerzaam proces. Met ufraw en dcraw (vanaf de opdrachtregel als u het digikam gebruikersinterface niet gebruikt), kunt u Canon's op cameramodel afgestemde, kleurprofiel toepassen op de resultaten van Libraw tijdens het raw ontwikkelproces en de kleuren zullen toch nog niet hetzelfde zijn als wat Canon produceert. Bibble profielen werken tamelijk goed met Bibble software, maar met dcraw niet zo goed als met Bibble's eigen software. Enzovoort, enzovoort. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Waarom is een cameraprofiel specifiek voor een gegeven merk en model van een camera? </title>
+
+        <para
+>Een CCD of een CMOS sensor binnenin een digitale camera, bestaat uit een patroon van miljoenen kleine lichtsensoren (pixels) die gezamenlijk de CCD of CMOS sensor vormen. Deze lichtgevoelige pixels zijn kleurenblind. Ze registreren slechts de hoeveelheid en niet de kleur van het licht dat er op valt. Om pixels de kleurinformatie te laten registreren is iedere pixel afgedekt met een transparante rode, groene of blauwe lens, elkaar gewoonlijk afwisselend in, wat genoemd wordt, een Bayer patroon (behalve Faveon sensoren die werken anders). Een raw beeld is niet meer dan een patroon van waarden die aangeven hoeveel licht door de rode, groene of blauwe lens word doorgelaten om de sensor te bereiken. </para>
+
+        <para
+>Het is duidelijk, pixelreactie op licht is het resultaat van veel camera-specifieke factoren: de aard van de sensor matrix zelf, de precieze kleur/doorlatende eigenschappen van de lenskappen en de specifieke analoog naar digitaal conversie en de verwerking die daarna plaats vind in de camera om de ruwe afbeelding te produceren die wordt opgeslagen op de kaart. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Wat betekent "conversie van analoog naar digitaal"?</title>
+
+        <para
+>"Analoog" betekent continu variërende, zoals hoeveel water je in een glas kunt doen. "Digitalisering" van een analoog signaal betekent dat de continu veranderende niveaus van de analoge signaalbron zijn "afgerond" naar discrete waarden geschikt voor binaire getallen gebruikt door computers. De conversie van analoog naar digitaal, die plaatsvindt in de camera, is nodig omdat de lichtgevoelige pixels analoog van aard zijn. Ze verzamelen een (elektrische) lading die in verhouding staat tot de hoeveelheid licht die hen bereikt. De opgebouwde lading op elke pixel wordt vervolgens omgezet in een discrete, digitale waarde door de converter van analoog naar digitaal in de camera. Hetgeen verklaart waarom een 14-bits converter beter is dan een 12-bits converter - meer precisie in de conversieresultaten betekent dat minder informatie verloren raakt in het conversieproces. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Waarom is een cameraprofiel specifiek voor het gebruikte bewerkingsprogramma van raw om het raw-bestand te ontwikkelen? </title>
+
+        <para
+>Waar het om gaat bij interpolatie met gebruikmaking van demozaïek-algoritmen zoals de standaard AHD in dcraw, is om er achter te komen welke kleur en lichtintensiteit in werkelijkheid op elk pixel viel, door interpolatie van de informatie die verkregen word van dat ene pixel plus de aangrenzende pixels (zie <ulink url="https://en.wikipedia.org/wiki/Demosaicing"
+>Wikipedia artikel</ulink
+>). Ieder raw-verwerkingsprogramma maakt gebruik van aanvullende veronderstellingen zoals, "Wanneer betekenen de gegevens werkelijke data en wanneer is het achtergrondruis?" "Op welk punt heeft de sensor volledige verzadiging bereikt?", enzovoort.  Het uiteindelijke resultaat van al deze algoritmen en aannames, die het raw-verwerkende programma maakt is een drietal RGB-waarden voor elk pixel in het beeld. Uitgaande van hetzelfde beeld zullen verschillende raw-verwerkers ook verschillende RGB-waarden opleveren.   </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Waar kan ik een algemeen profiel voor mijn camera vinden?</title>
+
+        <para
+>Op de ufraw website, <ulink url="http://ufraw.sourceforge.net/Colors.html"
+>sectie over kleurbeheer</ulink
+> staat waar u kant en klare cameraprofielen kunt vinden. Als u rondneust op de archieven van het &digikam; gebruikersforum dan vindt u aanvullende informatie. Als u blijft zoeken en experimenteren zult u een algemeen profiel vinden dat goed genoeg werkt. Zoals eerder gesteld, het is nou eenmaal zo bij digitale beeldverwerking dat de cameraprofielen die worden geleverd door bv Canon en Nikon niet zo goed werken met andere raw converters als die welke door de camerafabriek worden verstrekt. Dat is waarom Bibble en Phase One zelf profielen moeten maken voor alle camera's die zij ondersteunen. Uiteindelijk wilt u misschien toch een cameraprofiel dat specifiek is toegesneden op uw camera, uw belichting en uw raw-bewerkingsproces.   </para>
+
+        <para>
+            <screenshot>
+                <screeninfo
+></screeninfo>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="&path;editor-cm-iccworkflowlogic.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                    <phrase
+></phrase>
+                    </textobject>
+                </mediaobject>
+            </screenshot>
+        </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Hoe krijg ik een cameraprofiel specifiek voor mijn camera, lichtcondities, en workflow voor raw? </title>
+
+        <para
+>Veel commerciële dienstverleners maken profielen tegen betaling. Met LPRof kunt u ook zelf een profiel van uw camera maken. Als u dat zelf wilt doen heeft u een "IT8 target" nodig. Dat is een beeld dat vierkantjes met bekende kleuren omvat. Samen met "IT8" ontvangt u dan de juiste set bekende waarden voor elk van de vierkantjes op het target. </para>
+
+        <para
+>Als u van plan bent LPRof te gebruiken om uw camera van een profiel te voorzien, bekijk dan de documentatie om een lijst met aanbevolen targets te vinden. Om een profiel voor uw camera te maken fotografeert u "IT8 target" onder specifieke belichtingscondities(bijvoorbeeld bij daglicht, midden overdag op een heldere zonnige dag in de zomer zonder objecten in de omgeving die een schaduw of een kleurreflectie kunnen werpen op uw onderwerp) en sla het beeld op als een raw bestand. Daarna verwerkt u het raw bestand met uw speciale raw verwerkingssoftware+instellingen en laat vervolgens het bestand bewerken door de de software die het profiel moet maken. De software die het profiel gaat maken vergelijkt de RGB waarden in het beeld dat tot stand kwam door uw camera+belichtingscondities+raw verwerkingsproces, met de RGB waarden in het originele target en stelt vervolgens het ICC-profiel van uw camera samen. </para>
+
+        <para
+>Een profiel maken voor een camera is precies hetzelfde als een profiel maken voor een beeldscherm. Bij het profileren van het beeldscherm, vertelt het profileringsprogramma de grafische kaart om vierkantjes met speciale RGB waarden naar het scherm te sturen. De spectrometer meet dan de werkelijke kleur die op het scherm word weergegeven. Bij het profileren van een camera zijn de referentiekleuren, de RGB kleuren in de oorspronkelijke vierkantjes op het IT8 target, die door de software worden vergeleken met de kleuren gemaakt door het digitale beeld van de target, dat eerder werd opgenomen onder geselecteerde belichtingscondities, opgeslagen als raw en daarna verwerkt met specifieke raw verwerkingssoftwareplusinstellingen. </para>
+
+        <para
+><ulink url="http://lprof.sourceforge.net/help/ufraw.html"
+>Hier</ulink
+> is een verwijzing naar een "hoe en wat" voor gebruik van LProf v1.11 en ufraw en andere raw verwerkers, om een cameraprofiel aan te maken. Debian Lenny heeft LProf 1.11.4 in de APT repositories. Meer recente versies kunnen worden opgebouwd uit de CVS. En er is een verwijzing naar een betaalbaar, goed te boek staand <ulink url="http://www.targets.coloraid.de/"
+>IT8 target</ulink
+>. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Hoe pas ik een cameraprofiel toe op het 16-bit afbeeldingsbestand geproduceerd door mijn open source bewerkeningssoftware voor raw? </title>
+
+        <para
+>Als u het interface van Libraw gebruikt, kunt u <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>hier</ulink
+> aan &digikam; vertellen welk cameraprofiel te gebruiken. Als u dcraw gebruikt vanaf de commandoregel, dan hebt u de keuze om uw 16-bits afbeeldingsbestand met of zonder het al toegepaste cameraprofiel uit te voeren. Als u aan dcraw vraagt om het bestand zonder het toegepaste cameraprofiel uit te voeren, dan kunt u LCMS's tifficc utility gebruiken (ook op de commandoregel) om het cameraprofiel toe te passen. Het voordeel van tifficc gebruiken is dat u LCMS kan vertellen om hoge kwaliteitsconversie te gebruiken (dcraw lijkt de LCMS standaard medium). Het nadeel is natuurlijk dat toepassen van uw cameraprofiel vanaf de commandoregel een extra stap toevoegt aan uw raw-workflow. Als u ufraw gebruikt, consulteer dan de gebruikersgids van ufraw. </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

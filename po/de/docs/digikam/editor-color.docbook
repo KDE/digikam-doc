@@ -1,0 +1,1655 @@
+<sect2
+>                                     <title
+>Farbbearbeitungswerkzeuge</title>
+
+<sect3 id="auto-correction">
+<sect3info
+>           <title
+>Werkzeuge zur automatischen Korrektur</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_gmail_dot_com</email
+></address
+></affiliation>
+    </author>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+    <para
+>Dieses Werkzeug stellt fünf automatische Korrekturen zur Verfügung, die ein Bild in den meisten Fällen verbessern können. Benutzen Sie es daher, bevor Sie eine weitergehende manuelle Bearbeitung versuchen. </para>
+ </abstract>
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>digiKam</keyword>
+</keywordset>
+
+</sect3info>
+<title
+>Einführung</title>
+   <anchor id="autocolorcorrectiontool.anchor"/>
+
+            <para
+>Die Funktionen <guilabel
+>Normalisieren</guilabel
+>, <guilabel
+>Abgleichen</guilabel
+>, <guilabel
+>Automatisches Abgleichen</guilabel
+> und <guilabel
+>Kontrast erweitern</guilabel
+> aus dem Menü <menuchoice
+><guilabel
+>Korrigieren</guilabel
+><guimenuitem
+>Automatische Korrektur</guimenuitem
+></menuchoice
+> versuchen automatisch aus Ihren Farben das Beste zu machen. Sie werden mit diesen Effekten experimentieren müssen, um zu sehen welches am besten bei Ihrem Foto wirkt. <itemizedlist>
+
+                <listitem
+><para
+><guilabel
+>Normalisieren</guilabel
+>: diese Methode skaliert die Leuststärkewerte über das gesamte Bild, sodass der dunkelste Punkt schwarz und der hellste Punkt so hell wie möglich wird ohne seine Farbschattierung zu ändern. Diese Funktion ist häufig eine <quote
+>Magische Korrektur</quote
+> für Bilder die dunkel oder ausgewaschen sind. <example
+><title
+>Vorschau von Farben normalisieren</title
+>   <screenshot
+><screeninfo
+>Vorschau von Farben normalisieren</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editornormalize.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+                </example>
+
+                </para
+></listitem>
+
+                <listitem
+><para
+><guilabel
+>Abgleichen</guilabel
+>: diese Methode justiert den Leuchtstärkefaktor der Farben des ausgewählten Bildes, sodass das Histogramm des Intensitätskanals so flach wie möglich wird. Dadurch hat annähernd jeder Helligkeitsbereich dieselbe Anzahl von Pixeln. Manchmal erzielt das Abgleichen sehr gute Ergebnisse bei der Verbesserung des Kontrastes eines Bildes, manchmal produziert es auch nur Müll. Es handelt sich um eine sehr leistungsfähige Operation, die entweder Wunder bei einem Bild bewirkt oder es zerstört. <example
+><title
+>Vorschau der Farbabgleichkorrektur</title
+> <screenshot
+><screeninfo
+>Vorschau der Farbabgleichkorrektur</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorequalize.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example>
+
+                </para
+></listitem>
+
+                <listitem
+><para
+><guilabel
+>Automatisches Abgleichen</guilabel
+>: diese Methode maximiert den Farbbereich im Rot-, Grün- und Blaukanal. Sie ermittelt die dunklen und hellen Grenztöne und justiert die Rot-, Grün- und Blaukanäle auf den kompletten Histogrammbereich. <example
+><title
+>Vorschau des automatischen Abgleichens</title
+> <screenshot
+><screeninfo
+>Vorschau des automatischen Abgleichens</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorautolevels.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example>
+
+                </para
+></listitem>
+
+                <listitem
+><para
+><guilabel
+>Kontrast erweitern</guilabel
+>: diese Methode verbessert den Kontrast und die Leuchtstärke der RGB Werte eines Bildes durch das verschieben der niedrigsten und höchsten Werte auf den größtmöglichen Bereich und einer Neujiustierung aller Werte dazwischen. Dies ist nur sichtbar bei ausgewaschenen Bildern und kann eine gute Korrektur für schlechte Fotos sein. <example
+><title
+><quote
+>Kontrast erweitern</quote
+>-Korrektur</title
+> <screenshot
+><screeninfo
+>Vorschau des erweiterten Kontrastes</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorstretchcontrast.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example>
+
+                </para
+></listitem>
+
+            </itemizedlist>
+
+            </para>
+
+            <para
+>Sie müssen das Ergebnis Ihrer Justierungen abspeichern damit das Foto entsprechend geändert wird. </para>
+</sect3>
+
+<sect3 id="whitebalance">
+<sect3info>
+
+<title
+>Weißabgleich</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_gmail_dot_com</email
+></address
+></affiliation>
+    </author>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Der <emphasis
+>Weißabgleich</emphasis
+> von &digikam; ist ein halbautomatisches Werkzeug, um den Weißabgleich eines Fotos durchzuführen. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>digiKam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title
+>Einführung</title>
+
+<para
+>Der Weißabgleich ist ein verbreitetes Hinderniss für Digitalkameras. In den guten, alten Zeiten der Filmrollen wurde der Weißabgleich im Fotolabor durchgeführt. Heutzutage muss die Kamera erraten was weiß und was schwarz ist. Meistens wählt die Kamera dann als Weißpunkt etwas mit der falschen Farbschattierung. Mit diesem Werkzeug ist es einfach das Problem zu korrigieren. Es stellt eine Vielzahl von Parametern zur Verfügung, die für ein besseres Ergebnis eingestellt werden können. </para>
+
+<note
+><para
+>Die Weißabgleich-Korrektur ist etwas beschränkt da über einen Farbraum mit 8-Bit pro Farbe gearbeitet wird. Falls Sie also zu weit vom Originalbild entfernt liegen können Bereiche mit Überbelichtung auftreten. Falls Sie den Weißabgleich im Rohmodus durchführen können, welcher im 16-Bit Modus arbeitet, so werden Ihre Möglichkeiten zur Korrektur besser ausfallen. </para
+></note>
+
+<para
+>Dieses Werkzeug basiert auf einen Weißabgleichsalgorithmus der urheberrechtlich von Pawel T. Jochym geschützt ist. Sie starten ihn über den Menüeintrag <menuchoice
+><guimenu
+>Farben</guimenu
+><guimenuitem
+>Weißabgleich</guimenuitem
+></menuchoice
+> der Bildbearbeitung. </para>
+
+<sect4 id="using-whitebalance"
+>  <title
+>Den Weißabgleich benutzen</title>
+
+   <para
+><inlinemediaobject
+><imageobject>
+      <imagedata fileref="&path;whitebalancedialog.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>Der Dialog <quote
+>Weißabgleich</quote
+></phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+<para
+>Das Vorschaufenster kann in der Größe angepasst werden. Auf der linken Seite sind sowohl das Originalbild als auch die Vorschau des Zielbildes zu sehen. Die Vorschau wird dynamisch den Einstellungen des Werkzeugs angepasst. Wenn Sie wieder den Originalweißabgleich sehen wollen, dann reicht es auf das Unterfenster zu klicken. </para>
+
+<para
+>Die Vorschau des Zielfotos verfügt über einen roten Marker. Die Luminanz des Pixels unter diesem Marker wird als vertikale Linie im Histogramm angezeigt. </para>
+
+<para
+>Rechts oben wird ein Histogramm angezeigt, dass dynamisch geändert wird, sobald Sie einen Parameter ändern. Dieses Histogramm ist sehr hilfreich da, sogar in gut beleuchteten Bildern, die meisten Pixel sehr kleine Luminanzwerte haben. Mit einem Knopf können Sie entscheiden, ob einer der drei Farben oder Ihre Summe angezeigt wird. Die Summe wird Luminanz genannt. </para>
+
+<para
+>Mit der <guilabel
+>Belichtung</guilabel
+> können Sie digital die Belichtung Ihres Originalfotos ändern. Eine Erhöhung der Belichtung erhöht auch das Risiko das Pixelrauschen besser sichtbar zu machen und die hellen Töne zu überbelichten. Setzen Sie den <guilabel
+>Überbelichtungsindikator</guilabel
+> links unten um solche Probleme im Vorfeld zu sehen. Der <guilabel
+>Schwarzpunkt</guilabel
+> kann justiert werden ,um das Histogramm links ab zu schneiden. Falls Ihr Histogramm nebelig aussieht, d.h. das Histogramm hat leeren Raum auf der linken, schwarzen Seite, sollten Sie eventuell diese Option benutzen. <guilabel
+>Belichtung</guilabel
+> und <guilabel
+>Schwarzpunkt</guilabel
+> können automatisch justiert werden durch einen Druck auf den Knopf <guilabel
+>Justierung der automatischen Belichtung</guilabel
+>. Dies setzt den Schwarzpunkt ziemlich genau. </para>
+
+<para
+>Der Kontrast Ihres Ergebnis hängt von <guilabel
+>Schatten</guilabel
+>, <guilabel
+>Sättigung</guilabel
+> und <guilabel
+>Gamma</guilabel
+> ab. Die <guilabel
+>Schatten</guilabel
+> justierung lässt Sie die Schattendetails Ihrer Fotos verbessern oder auch herunter dimmen. </para>
+
+<para
+>Eine Erhöhung des Kontrastes Ihres Fotos kann den Nebeneffekt der Reduzierung der <guilabel
+>Sättigung</guilabel
+> des Fotos haben. Benutzen Sie einen Wert größer als 1 um die Sättigung zu erhöhen und einen Wert kleiner als 1 um sie zu erniedrigen. Ein Wert von 0 erzeugt ein Schwarz/Weiß-Foto. Trauen Sie sich ruhig die Sättigung Ihrer Bilder ein wenig anzuheben. Die allgemeine Regel ist das für einen höheren Kontrast, entspricht einem niedrigen <guilabel
+>Gamma</guilabel
+> Wert, Sie auch mehr <guilabel
+>Sättigung</guilabel
+> anwenden sollten. </para>
+
+<para
+>Der nächste Satz von Optionen ist die Hauptstütze des Weißabgleichs. Sie kontrollieren das Verhältnis zwischen den drei Farbkanälen. Sie können hier die Farb-<guilabel
+>Temperatur</guilabel
+> setzen und dadurch Ihre Bilder wärmer oder kälter machen. Eine hohe Temperatur wird einen warmen Ton erzeugen. Um das Verhältnis zwischen den drei Farben zu setzen haben Sie zwei Justierungsmöglichkeiten. Da die Farbtemperatur hauptsächlich das Verhältnis zwischen dem Rot und dem Blaukanal justiert, liegt es nahe das die zweite Möglichkeit die Intensität vom<guilabel
+>Grün</guilabel
+>-Kanal kontrolliert. </para>
+
+<para
+>Anstat mit den oben genannten Kontrollen herum zuspielen, sollten Sie die <guilabel
+>Farbtemperatur-Pipette</guilabel
+> benutzen. Drücken Sie auf diesen Knopf und danach irgendwo auf die Bildvorschau um die dabei ausgewählte Farbe zur Berechnung der Farbtemperatur des Weißabgleichs zu benutzen. Auf diese Art werden auch die <guilabel
+>Temperatur</guilabel
+> und <guilabel
+>Grün</guilabel
+>-Werte automatisch gesetzt. </para>
+
+<para
+>Zusätzlich können Sie den Weißabgleich mit der Liste der Voreinstellungen setzen. Die folgenden Einstellungen sind verfügbar: </para>
+
+<para>
+
+<informaltable
+><tgroup cols="3">
+
+<thead>
+   <row>
+      <entry
+>Farbtemperatur</entry>
+      <entry
+>Beschreibung</entry>
+      <entry
+>Kelvin</entry>
+   </row>
+</thead>
+
+<tbody>
+
+   <row>
+      <entry>
+      <guilabel
+>40W</guilabel>
+      </entry>
+
+      <entry
+>weißglühende 40 Watt Lampe. </entry>
+
+      <entry>
+      <guilabel
+>2680</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel
+>200W</guilabel>
+      </entry>
+
+      <entry
+>weißglühende 200 Watt Lampe, Studiolicht, Fotoscheinwerfer. </entry>
+
+      <entry>
+      <guilabel
+>3000</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel
+>Sonnenaufgang</guilabel>
+      </entry>
+
+      <entry
+>Sonnenauf- oder Untergangslicht. </entry>
+
+      <entry>
+      <guilabel
+>3200</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel
+>Wolfram</guilabel>
+      </entry>
+
+      <entry
+>Wolfram Lampe oder auch das Licht einer Stunde vor Abend- bzw. nach Morgendämmerung </entry>
+
+      <entry>
+      <guilabel
+>3400</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel
+>Neutral</guilabel>
+      </entry>
+
+      <entry
+>Neutrale Farbtemperatur. </entry>
+
+      <entry>
+      <guilabel
+>4750</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel
+>Xenon</guilabel>
+      </entry>
+
+      <entry
+>Xenon Lampe oder Lichtbogen. </entry>
+
+      <entry>
+      <guilabel
+>5000</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel
+>Sonne</guilabel>
+      </entry>
+
+      <entry
+>Sonniges Tageslicht um die Mittagszeit. </entry>
+
+      <entry>
+      <guilabel
+>5500</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel
+>Blitz</guilabel>
+      </entry>
+
+      <entry
+>Blitz einer Fotokamera. </entry>
+
+      <entry>
+      <guilabel
+>5600</guilabel>
+      </entry>
+   </row>
+
+   <row>
+      <entry>
+      <guilabel
+>Himmel</guilabel>
+      </entry>
+
+      <entry
+>Bewölkter Himmel. </entry>
+
+      <entry>
+      <guilabel
+>6500</guilabel>
+      </entry>
+   </row>
+
+</tbody>
+
+</tgroup
+></informaltable>
+
+</para>
+
+<para
+><guilabel
+>Farbtemperatur</guilabel
+> ist ein einfacher Weg einem Bild durch spezielle Spektraleigenschaften der Lichtquelle zu charakterisieren. Während in der Realität die Farbe des Lichtes davon abhängt, inwieweit jeder Punkt auf der Spektralkurve zu seinem Ausgabewert hinzugibt, kann das Ergebnis immer noch in einer linearen Skalierung zusammen gefasst werden. Dieser Wert ist brauchbar um &eg; den korrekten Weißabgleich für ein digitales Foto zu ermitteln und zur Spezifizierung des richtigen Lichtquellentyps in einem architektonischen Lichtdesign. Beachten Sie dabei, dass Lichtquellen derselben Farbe (Metamorphosen) sehr weit in der Qualität des Lichtes variieren können. </para>
+
+<para
+>Eine niedrige <guilabel
+>Farbtemperatur</guilabel
+> impliziert mehr gelb-rotes Licht während eine hohe mehr blaues Licht impliziert. Tageslicht hat bei Sonnenaufgang ein eher niedrige Temeperatur und während des Tages eine höhere. Daher kann es sinnvoll sein ein elektrisches Lichtsystem zu installieren dass kälteres Licht während des Tageslicht und warmes Licht in der Nacht zur Verfügung stellt. Dies passt gut zu den menschlichen Gefühlen das warme Lichtfarben von Kerzen und Kaminfeuern in der Nacht kommen. Die Standardeinheit für die Farbtemperatur ist Kelvin (K). </para>
+
+<para
+>Der <guilabel
+>Überbelichtungsindikator</guilabel
+> erhöht die Farben, wenn mehr als ein Farbkanal des Pixels überbelichtet ist.. Sie werden das kombinierte Ergebnis im Weißabgleich angezeigt bekommen. Dies wird in der Vorschau als reiner Indikator angezeigt und hat keinen Effekt auf das endgültige Bild. </para>
+
+<para
+>Die Knöpfe <guilabel
+>Speichern als</guilabel
+> und <guilabel
+>Laden</guilabel
+> machen genau dies. Jede Einstellung des Weißabgleichs die Sie gesetzt haben können Sie hiermit in eine Textdatei speichern und später wieder laden. </para>
+
+<para
+>Der Knopf <guilabel
+>Voreinstellungen</guilabel
+> setzt alle Filterwerte wieder auf ihre Standardwerte und dem zugehörigen neutralen Weißabgleichs zurück. Beachten Sie dabei dass auch neutrale Einstellungen ein anderes Foto als Ihr Original ergeben werden. Wenn Sie diese speichern wird Ihr Originalbild geändert. </para>
+
+</sect4>
+
+</sect3>
+
+<sect3 id="encoding-depth"
+>    <title
+>Kodierungstiefe</title>
+    <para
+>Sie können hier die Kodierungstiefe pro Farbkanal des bearbeiteten Bildes einstellen. 8-Bit Kodierung ist das weit verbreitete JPEG-Format, 16-Bit Kodierung ist besser für hochqualitative Bilder geeignet. Diese Kodierung benötigt aber auch mehr Plattenplatz, Rechenzeit und steht nurfür die Formate PNG, PNM, TIFF und DNG zur Verfügung.</para>
+</sect3>
+
+<sect3 id="color-management"
+>    <title
+>Farbverwaltung</title>
+    <para
+>Dieses Werkzeug öffnet denselben Dialog wie den zur Bearbeitung von Rohbildern. Es benutzt die Änderung und die Zuweisung von Farbprofilen. Farbtonmapping kann durch das Unterfenster für die Helligkeiten durchgeführt werden. Eine detaillierte Anleitung für die Benutzung von Farbprofilen können Sie das <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>Kapitel Farbverwaltung</ulink
+> zu Rate ziehen.</para>
+</sect3>
+
+<sect3 id="exposure-correct"
+>    <title
+>Belichtung korrigieren</title>
+
+     <anchor id="bcgadjusttool.anchor"/>
+
+     <para
+>Das einfachste Werkzeug zur Benutzung ist Leuchtstärke/Kontrast/Gamma. Es ist auch das am wenigsten leistungsfähige Werkzeug, das aber in vielen Fällen alles kann was Sie benötigen. Dieses Werkzeug ist hilfreich bei Bildern die über- oder unterbelichtet sind, es sollte allerdings nicht verwendet werden um Fehlfarben zu korrigieren. Es verfügt über drei Regler um <quote
+>Leuchtstärke</quote
+>, <quote
+>Kontrast</quote
+> und <quote
+>Gamma</quote
+> zu justieren. Alle Änderungen sind in der Vorschau sichtbar. Wenn Sie mit dem Ergebnis zufrieden sind können Sie dies mit dem <guilabel
+>Ok</guilabel
+> Knopf übernehmen. </para>
+
+     <example
+>  <title
+>Das Werkzeug Leuchtstärke/Kontrast/Gamma in Aktion</title>
+         <screenshot
+><screeninfo
+>Das Werkzeug Leuchtstärke/Kontrast/Gamma in Aktion</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorbcgadjust.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+     </example>
+
+     <para
+>Ein weiteres wichtiges Werkzeug ist im Menü unter <menuchoice
+><guimenu
+>Farben</guimenu
+> <guimenuitem
+>Tonwertkorrektur zu finden</guimenuitem
+></menuchoice
+>. Dieses Werkzeug stellt einen integrierten Weg zur Verfügung, um mehrere Farbkanäle gleichzeitig zu justieren und erlaubt es Ihnen auch Ihre Einstellungen zu speichern, damit Sie diese für mehrere Fotos benutzen können. Dies ist hilfreich, wenn Ihre Kamera oder Ihr Scanner immer denselben Fehler machen und Sie daher immer dieselbe Korrektur benötigen. Im Handbuch zur <link linkend="using-adjustlevels"
+>Tonwertkorrektur</link
+> finden Sie weitere Informationen. </para>
+
+     <para
+>Eine sehr leistungsfähige Möglichkeit, Belichtungsprobleme zu korrigieren ist das Werkzeug zur Gradation, das Sie unter <menuchoice
+><guimenu
+>Farben</guimenu
+> <guimenuitem
+>Gradation</guimenuitem
+></menuchoice
+> im Menü finden. </para>
+
+</sect3>
+
+<sect3 id="coloreffects">
+
+<sect3info>
+<title
+>Bild solarisieren</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Das &digikam; Werkzeug <emphasis
+>Farbeffekte</emphasis
+> stellt Ihnen vier Farbeffekte, einen Solarisationseffekt, einen Velvia-Filter, einen Neon-Effekt und einen Kantenfilter zur Verfügung. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>digiKam</keyword>
+<keyword
+>Solarisation</keyword>
+<keyword
+>Velvia</keyword>
+</keywordset>
+
+</sect3info>
+
+<title
+>Einführung</title>
+
+<para
+>In Zeiten der chemischen Verarbeitung war Solarisation, auch Sabatier genannt, ein Effekt der entstand wenn man einen teilweise entwickelten Druck einem kurzen Blitzlicht aussetzte und danach die Entwicklung des Bildes vervollständigte. Die farbigen, dunkleren Bereiche beschützten das empfindliche Fotopapier von dem zusätzlichen Licht. Dies hatte den Effekt, dass die helleren Bereiche dunkler und die Farben durch die zweite Beleuchtung invertiert wurden. Das Ergebnis war ein teilweises Negativ des Bildes. Dieses Werkzeug erlaubt Ihnen diesen interessanten Effekt fein zu justieren. </para>
+
+<sect4 id="using-solarize"
+> <title
+>Solarisation benutzen</title>
+
+<para
+>Die <guilabel
+>Intensität</guilabel
+> kontrolliert die Solarisation. Bei ca. 50% Intensität zeigt das Bild was chemisch möglich ist. Ein weitere Erhöhung erzeugt schlussendlich ein Negativbild, dass so nicht auf Fotopapier zu erzeugen ist. </para>
+</sect4>
+
+<sect4 id="inaction-solarize"
+> <title
+>Die Solarisation in Aktion</title>
+
+<para
+>Dies ist ein Beispiel des Solarisationseffektes. Das Originalbild ist die (1) und das bearbeitet die (2). Die angewandte <guilabel
+>Intensität</guilabel
+> liegt bei 30%. </para>
+
+   <para
+><inlinemediaobject
+><imageobject>
+      <imagedata fileref="&path;solarizepreview.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>Vorschau der Bildsolarisation</phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+</sect4>
+
+<sect4
+>   <title
+>Der Vivid-Effekt (Velvia-Filter)</title>
+  <para
+>Der Vivid-Filter simuliert den so genannten &quot;Velvia&quot;-Effekt. Er unterscheidet sich von einer Sättigung dadurch, dass er einen stärkeren Kontrasteffekt hat der die Farben brilliant und glühend macht. Versuchen Sie es einfach, er verschönert viele Fotos. </para>
+  <para
+>Velvia ist der Markenname für einen auf Tageslicht optimierten umgekehrten Farbfilm der von der japanischen Firma Fujifilm hergestellt wird. Der Name ist eine Zusammensetzung von &quot;Velvet Media&quot; und damit eine Referenz für seine glatte Bildstruktur. Velvia bietet sehr gesättigte Farben bei Tageslicht und hohe Kontraste. Die Charakteristiken machen ihn zum Film der Wahl für Naturfotographen. Velvias stark gesättigte Farben sind aber auch einigen Fotographen, speziell denen die kaum Landschaften ablichten, zu viel. </para>
+     <example
+>  <title
+>Original kontra Vivid-Filter</title>
+        <screenshot
+><screeninfo
+>Original kontra Vivid-Filter</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorvivid.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+     </example>
+
+</sect4>
+
+<sect4
+>  <title
+>Der Neoneffekt</title>
+  <para
+>Der Neonfilter simuliert Neonlicht an den Kontrastkanten. Der Parameter Level kontrolliert die Helligkeit des Ergebnisses und der Schieber Wiederholungen die Stärke des Neonlichts. Bei großen Bilder kann der Filter die gesamte CPU für einen Moment auslasten. </para>
+     <example
+>  <title
+>Der Neonfilter</title>
+        <screenshot
+><screeninfo
+>Der Neonfilter</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorneon.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+     </example>
+
+</sect4>
+
+<sect4
+>  <title
+>Der Kanten Effekt</title>
+ <para
+>Offene Punkte </para>
+</sect4>
+
+</sect3>
+
+<sect3 id="using-correctingcolor"
+>       <title
+>Farben korrigieren</title>
+
+     <anchor id="colorbalancetool.anchor"/>
+
+     <para
+>Digitalkameras haben häufig Probleme mit Lichtbedingungen und es ist daher nicht ungewöhnlich das Sie den Farbkontrast und die Leuchtstärke des Fotos korrigieren wollen. Sie können zum experimentieren die verschiedenen Farbaspekte Ihres Fotos mit den Werkzeugen im Menü unter <menuchoice
+><guimenu
+>Farben</guimenu
+> </menuchoice
+> zu ändern. Alle Ihre Justierungen können Sie in der Vorschau betrachten. Sobald Sie mit dem Ergebnis zufrieden sind benutzen Sie den Knopf <guilabel
+>Ok</guilabel
+> und Sie werden angewendet. </para>
+
+     <example
+>  <title
+>Die Farbbalanz in Aktion</title>
+        <screenshot
+><screeninfo
+>Die Farbbalanz in Aktion</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorcolorbalance.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+     </example>
+
+     <anchor id="hsladjusttool.anchor"/>
+
+     <para
+>Wenn Ihr Bild ausgewaschen wirkt. Dies kann z.B. leicht passieren wenn Sie Fotos bei hellem Sonneschein anfertigen sollten Sie das Werkzeug für Farbschattierung/Sättigung/Helligkeit versuchen. Dies gibt Ihnen drei Schieber um die Farbschattierung, Sättigung und Helligkeit zu manipulieren. Eine erhöhen der Sättigung wird Ihr Bild unter Umständen besser aussehen lassen. In einigen Fällen ist es sinnvoll die Helligkeit gleichzeitig zu justieren. Die <quote
+>Helligkeit</quote
+> hier ist ähnlich zu der <quote
+>Leuchtstärke</quote
+> aus dem Werkzeug Leuchstärke/Kontrast/Gamma. Sie werden allerdings durch unterschiedliche Kombinationen der Rot-, Grün- und Blaukanäle erzeugt. </para>
+
+     <para
+>Wenn Sie ein Foto bei schlechten Lichtverhältnissen machen können Sie das umgekehrte Problem bekommen: eine zu große Sättigung. Auch in diesem Fall ist das Werkzeug für Helligkeit/Sättigung eine gute Wahl um die Sättigung reduzieren anstatt sie zu erhöhen. Alle Änderungen die Sie durchführen können Sie in der Vorschau betrachten. Wenn Ihn das Ergebnis gefällt können Sie die Änderungen mit <guilabel
+>Ok</guilabel
+> bestätigen. </para>
+
+     <example
+>  <title
+>Das Werkzeug für Farbschattierung/Sättigung/Helligkeit in Aktion</title>
+         <screenshot
+><screeninfo
+>Das Werkzeug für Farbschattierung/Sättigung/Helligkeit in Aktion</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhsladjust.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+     </example>
+
+ </sect3>
+
+<sect3 id="adjustlevels">
+<sect3info>
+
+<title
+>Tonwertkorrektur</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_gmail_dot_com</email
+></address
+></affiliation>
+    </author>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Die <emphasis
+>Tonwertkorrektur</emphasis
+> ist ein Werkzeug um die Histogrammkanäle eines Bildes manuell zu justieren. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>digiKam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title
+>Einführung</title>
+
+<para
+>Zwischen den komplexen Werkzeug Gradation und dem einfachen Leuchstärke/Kontrast/Gamma ist das Werkzeug Tonwertkorrektur zur Verbesserung der Belichtung angesiedelt. Auch wenn der Dialog zu diesem Werkzeug sehr kompliziert wirkt, benötigen Sie für den hier erläuterten Anwendungszweck nur den Bereich der <guilabel
+>Schieber</guilabel
+>. Konkreter die drei Schieber unterhalb des Histogramms. </para>
+
+<para
+>Das Fenster enthält einen Graphen der Intensitätswerte, ein Histogramm, des aktiven Kanals oder des ausgewählten Bereichs. Unter dem Graphen sind drei Schieber in die hinein geklickt und die verschoben werden können, um die Intensitätswerte des Bildes zu ändern. Die linke Seite repräsentiert die dunklen und die rechte Seite die hellen Bereiche. </para>
+
+<sect4 id="using-adjustlevels">
+<title
+>Die Tonwertkorrektur benutzen</title>
+
+   <para
+><inlinemediaobject
+><imageobject>
+      <imagedata fileref="&path;adjustlevelsdialog.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>Der Dialog <quote
+>Tonwertkorrektur</quote
+></phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+<para
+>Der einfachste Weg die Bedienung zu erlernen ist es die Regler zu verschieben und dabei darauf zu achten, wie sich das Bild ändert. </para>
+
+<para
+>Auf der rechten Seite kann das Original und die Vorschau des Bildes betrachtet werden. Die Vorschau wird dynamisch, anhand der Einstellungen des Bildes, aktualisiert. Auf der linken Seite sind die folgenden Optionen verfügbar. <itemizedlist>
+
+  <listitem
+><para
+><guilabel
+>Kanal</guilabel
+>: diese Auswahlbox erlaubt die Auswahl des spezifischen Kanals der verändert werden soll: <itemizedlist>
+          <listitem
+><para
+><guilabel
+>Luminanz</guilabel
+>: diese Option ändert die Luminanzwerte aller Pixel des Bildes.</para
+></listitem>
+          <listitem
+><para
+><guilabel
+>Rot</guilabel
+>: diese Option ändert die Rotsättigung aller Pixel des Bildes.</para
+></listitem>
+          <listitem
+><para
+><guilabel
+>Grün</guilabel
+>: diese Option ändert die Grünsättigung aller Pixel des Bildes.</para
+></listitem>
+          <listitem
+><para
+><guilabel
+>Blau</guilabel
+>: diese Option ändert die Blausättigung aller Pixel des Bildes.</para
+></listitem>
+          <listitem
+><para
+><guilabel
+>Alpha</guilabel
+>: diese Option ändert die Transparenzwerte aller Pixel des Bildes.</para
+></listitem>
+      </itemizedlist>
+
+  </para
+></listitem>
+
+  <listitem
+><para
+><guilabel
+>Skalierung</guilabel
+>: mit dieser Auswahlbox kann eingestellt werden, ob das Histogramm mit einer linearen oder logarithmischen Y-Achse dargestellt wird. Für Bilder einer Digitalkamera ist häufig die lineare Darstellung am brauchbarsten. Bei Bildern die große Bereiche einer konstanten Farbe beinhalten wird das lineare Histogramm von einer einzigen Säule dominiert. In diesem Fall ist das logarithmische Einteilung nützlicher.</para
+></listitem>
+
+  <listitem
+><para
+><guilabel
+>Eingabewerte</guilabel
+>: die Eingabewerte erlauben die Auswahl manueller Werte für jeden Bereich. Die Grafik in der Mitte zeigt eine Präsentation der dunklen, mittleren und hellen Töne des Bildinhalts. Die x-Achse zeigt Werte von 0 (schwarz) bis 255 (weiß). Die Pixel eines x-Wertes ist auf der y-Achse angezeigt. Die Oberfläche der Kurve repräsentiert alle Pixel des Bildes für den ausgewählten Kanal (Histogramm). Ein gut ausbalanciertes Bild nutzt die komplette Breite an Farbtönen. Ein Bild mit einem Blaustich wird z.B. ein nach links verschobenes Histogramm im Grün- und Rotkanal haben. Die Wertebereiche können auf zwei Arten modifiziert werden: <itemizedlist>
+          <listitem
+><para
+>Drei Regler: Der oberste für die dunklen Töne, der mittlere für die hellen Töne  und der unterste für die mittleren Töne, häufig Gammawerte genannt. </para
+></listitem>
+          <listitem
+><para
+>Drei Eingabefelder, um die Werte direkt einzugeben. </para
+></listitem>
+          <listitem
+><para
+>Die drei Farbpinpetten können in der Vorschau des Originalbildes benutzt werden, um die Eingabewerte der Schatten, mittleren und hellen Töne automatisch zu justieren. Darüber hinaus gibt es einen Knopf für eine voll automatische Justierung. </para
+></listitem>
+      </itemizedlist>
+  </para
+></listitem>
+
+  <listitem
+><para
+><guilabel
+>Ausgabewerte</guilabel
+>: die Ausgabewerte erlauben die Auswahl manueller Werte für jeden Bereich. Es existieren hier auch zwei Regler die benutzt werden können um die Ausgabewerte interaktiv wie bei den <guilabel
+>Eingabewerten</guilabel
+> zu ändern. Die Kompression der Ausgabewerte kann z.B. dafür genutzt werden ein ausgebleichtes Bild als Hintergrund zu erstellen während etwas anderes im Vordergrund zu sehen ist.</para
+></listitem>
+
+  <listitem
+><para
+><guilabel
+>Automatisch</guilabel
+>: Mit diesem Knopf werden die Bildwerte automatisch in Abhängigkeit von den Intensitätswerten des Bildes gesetzt.</para
+></listitem>
+
+  <listitem
+><para
+><guilabel
+>Speichern als</guilabel
+> und <guilabel
+>Laden</guilabel
+>: Mit diese Knöpfen können die eingestellten Werte im Dateisystem gespeichert und später wieder geladen. Dazu wird das Gimp Levels Format benutzt.</para
+></listitem>
+
+  <listitem
+><para
+><guilabel
+>Voreinstellungen</guilabel
+>: setzt alle <guilabel
+>Eingabewerte</guilabel
+> und <guilabel
+>Ausgabewerte</guilabel
+> für alle Kanäle zurück.</para
+></listitem>
+
+</itemizedlist>
+</para>
+
+<para
+>Das Werkzeug <quote
+>Tonwertkorrektur</quote
+> hat verschiedene Möglichkeiten, um das Setzen der Eingabewerte zu erleichtern. Nach einem Druck auf den Mausknopf im Originalbild wird ein vertikaler Graph in der Im Histogrammbereich aktualisiert. Die Position des Reglers entspricht dem Pixelwert unter dem Mauszeiger. Durch anklicken eines Punktes und verschieben der Maus wird der Regler automatisch aktualisiert. Auf diese Art ist es möglich sich für verschiedene Pixel die Eingabewerte anzusehen und so die Schatten, Mittel und Sonnentöne zu finden. </para>
+
+<para
+>Wenn Sie diesen Modus und die drei <guilabel
+>Farbpipetten</guilabel
+> benutzen, wird die Eingabewerte automatisch für alle Schatten, Mittel und Sonnentöne neu justiert. Aktivieren Sie die Farbpipette die Sie benutzen wollen und klicken Sie auf die Vorschau des Originalbildes um die Eingabewerte des Histogramms für Rot-, Grün-, Blau- und die Luminanzkanäle zu setzen. </para>
+
+<para
+>Die Option <guilabel
+>Überbelichtungsindikator</guilabel
+> kontrolliert alle Farbkanäle, um überbelichtete Pixel zu finden und Ihnen das kombinierte Ergebnis aller Kanäle anzuzeigen. Hierbei handelt es sich um einen Indikator, d.h. Sie bekommen den Effekt nur in der Vorschau angezeigt und es ist kein Effekt beim endgültigen Ergebnis zu sehen. </para>
+
+</sect4>
+
+<sect4 id="inaction-adjustlevels">
+<title
+>Das Werkzeug zur Tonwertkorrektur in Aktion</title>
+
+<para
+>Unten sehen Sie ein Beispiel für die Justierung der <guilabel
+>Eingabewerte</guilabel
+> angewendet auf die Rot, Grün und Blau Kanal eines Fotos. Intensität und Alpha Kanal, sowie die <guilabel
+>Ausgabewerte</guilabel
+> sind unverändert. Das Originalbild ist mit (1) und das korrigierte Bild mit (2) gekennzeichnet. </para>
+
+   <para
+><inlinemediaobject
+><imageobject>
+      <imagedata fileref="&path;adjustlevelspreview.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>Das Werkzeug zur Tonwertkorrektur in Aktion</phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+</sect4>
+</sect3>
+
+<sect3 id="adjustcurves">
+<sect3info>
+
+<title
+>Gradation</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_gmail_dot_com</email
+></address
+></affiliation>
+    </author>
+
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+  <para
+>Mit dem Werkzeug <emphasis
+>Gradation</emphasis
+> können nicht-linear Luminanzwerte und Farbkanäle justiert werden. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>digiKam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title
+>Einführung</title>
+
+<para
+>Das Werkzeug Gradation ist das am weitesten entwickelte Werkzeug, um die Farbtöne des Bildes zu justieren. Sie starten es in dem Sie aus dem Menü der Bildbearbeitung <menuchoice
+><guimenu
+>Farben</guimenu
+> <guimenuitem
+>Gradation</guimenuitem
+></menuchoice
+>. Es erlaubt Ihnen Kontrollpunkte auf der Kurve zu ziehen und woanders abzulegen, um dadurch eine freie Funktion zur Umsetzung von Eingabeleuchtstärken zu Ausgabeleuchtstärken zu erstellen. Mit der Gradation können Sie jeden Effekt erstellen, den Sie auch mit den Werkzeugen Leuchstärke/Kontrast/Gamma oder Tonwertkorrektur erreichen. Es ist damit noch leistungsfähiger als jedes von ihnen. Das Werkzeug kann noch mehr für Sie erledigen, es hilft Ihnen, die Qualität der Farbtöne Ihrer Fotos in sehr feine Graustufen zu verbessern. Vergessen Sie hierbei nicht, das je höher die Qualität in Form einer guten Beleuchtung, verlustfreiem Format, 24 oder 32 Bit Farbtiefe ist, desto mehr können Sie die Fotos verbessern. Weitere Informationen in englisch finden Sie im abschnitt <quote
+>ultimate tonal quality</quote
+> dieser Seite: <ulink url="http://www.normankoren.com/digital_tonality.html"
+>Tonal quality and dynamic range in digital cameras by Norman Koren</ulink
+>. Mit dem Werkzeug Gradation ist dasselbe möglich. </para>
+<para
+>Dieses Werkzeug stellt visuelle Kurven zur Änderung der Leuchstärkewerte der aktiven Farbebene zur Verfügung. Hier wird das Histogramm nicht-linear dargestellt. Im Kurvenbearbeitungsmodus <guilabel
+>Glatt</guilabel
+> können Sie die Form der Kurve ändern indem Sie neue Punkte hinzufügen oder indem Sie die Endpunkte verschieben. Ein anderer Modus ist es die Kurve komplett <guilabel
+>Frei</guilabel
+> zu zeichnen. In beiden Fällen ist der Effekt sofort in der Bildvorschau links zu sehen. Die Vorschau kann über die Symbole links oben konfiguriert werden. </para>
+
+<sect4 id="using-adjustcurves">
+<title
+>Gradation benutzen</title>
+
+   <para
+><inlinemediaobject
+><imageobject>
+      <imagedata fileref="&path;adjustcurvesdialog.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>Der Dialog <quote
+>Gradation</quote
+></phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+<para
+>Auf der linken Seite wird die Hälfte des Originals und das Zielbild angezeigt. Die Vorschau wird dynamisch in Abhängigkeit von Ihren Einstellungen aktualisiert. Auf der rechten Seite sind die folgenden Optionen verfügbar: <itemizedlist>
+
+  <listitem
+><para
+>Modifiziere <guilabel
+>Kanal</guilabel
+>: diese Auswahlbox erlaubt es den Kanal anzugeben der von dem Modul verändert wird: <itemizedlist>
+          <listitem
+><para
+><guilabel
+>Luminanz</guilabel
+>: verändert die Luminanz, d.h. die gewichtete Helligkeit, aller Pixel des Bildes.</para
+></listitem>
+          <listitem
+><para
+><guilabel
+>Rot</guilabel
+>: verändert die Rotsättigung aller Pixel des Bildes.</para
+></listitem>
+          <listitem
+><para
+><guilabel
+>Grün</guilabel
+>: verändert die Grünsättigung aller Pixel des Bildes.</para
+></listitem>
+          <listitem
+><para
+><guilabel
+>Blau</guilabel
+>: verändert die Blausättigung aller Pixel des Bildes.</para
+></listitem>
+          <listitem
+><para
+><guilabel
+>Alpha</guilabel
+>: verändert die Transparentwerte aller Pixel des Bildes.</para
+></listitem>
+      </itemizedlist>
+
+  </para
+></listitem>
+
+  <listitem
+><para
+>Neben diesem Kästchen befinden sich zwei Symbole um zwischen einer linearen und einer logarithmischen Ansicht zu wechseln. Für Bilder die mit einer Digitalkamera aufgenommen wurden ist meistens der lineare Modus der sinnvollste. Für Bilder mit großen Bereichen einer konstanten Farbe erzeugt der lineare Modus einen breiten Balken. In diesem Fall hilft der logarithmische Modus weiter. </para
+></listitem>
+
+  <listitem
+><para
+>Hauptkurvenbearbeitungsbereich: Die Horizontale Leiste (x-Achse) repräsentiert Eingabewerte mit Werten von 0 bis 255. Die vertikale Leiste (y-Achse) ist eine Skalierung für die Ausgabefarben des ausgewählten Kanals. Die Kontrollkurve ist auf dem Gitter gezeichnet und kreuzt das Histogramm diagonal. Die x,y-Postion des Mauszeigers wird permanent über dem Gitter angezeigt. Wenn Sie auf die Kurve klicken wird ein Kontrollpunkt erstellt. Diesen können Sie verschieben, um die Kurve zu verbiegen. Wenn Sie neben der Kurve klicken, wird ebenfalls ein Kontrollpunkt erstellt und die Kurve so verbogen, dass Sie diesen automatisch enthält. Dadurch repräsentiert für jeden Punkt auf der Kurve ein x-Eingabewerte die Übersetzung zu einem y-Ausgabewert. </para
+></listitem>
+
+  <listitem
+><para
+>Kurven <guilabel
+>Typ</guilabel
+> für den Kanal: mit dieser Auswahlbox geben Sie an, ob der Kurventyp zum bearbeiten ein <guilabel
+>stetiger</guilabel
+> oder ein <guilabel
+>Frei</guilabel
+>-Hand Modus ist. Der stetige Modus beschränkt die Kurve auf eine stetige Linie unter Spannung und erzeugt dadurch eine realistischen Effekt. Der freie Modus erlaubt es die Kurve mit der Maus frei zu zeichnen. Mit Kurventeilen, die über das ganze Gitter verteilt sind, werden Sie ein überraschendes und nur schwer reproduzierbares Ergebnis erzeugen. Ein Knopf zum Zurücksetzen ist auch verfügbar. </para
+></listitem>
+
+  <listitem
+><para
+>Wenn Sie z.B. einen Kurventeil nach rechts verschieben, z.B. die hellen Töne, dann können Sie sehen dass diese hellen Töne mit dunkleren Ausgabetönen korrespondieren und das die zugehörigen Bildpixel dunkler werden. </para
+></listitem>
+
+  <listitem
+><para
+>Wenn ein Farbkanal nach rechts verschoben wird, wird die Sättigung verringert. Das kann soweit gehen, dass die Komplementärfarbe erreicht wird. Um alle Kontrollpunkte, bis auf die beiden Endpunkte, zu löschen, können Sie den Knopf <guilabel
+>Alle Werte zurücksetzen</guilabel
+> benutzen. Um nur einen Punkt zu löschen, verschieben Sie diesen einfach auf einen anderen Punkt. Spielen Sie einfach mal mit der Kurve herum und beobachten Sie die Ergebnisse. Sie können ein Bild sogar in einem Teil seines tonlichen Bereichs solarisieren. Dies passiert, wenn die Kurve in einem Teil invertiert wird. </para
+></listitem>
+
+  <listitem
+><para
+>Auf der Vorschau des Originalfotos ist eine rote Markierung zu sehen. Wenn Sie diese Markierung auf den Bereich den Sie ändern wollen verschieben, wird ein passende Linie auf der Kurve angezeigt, die den Originalwert darstellt. Erstellen Sie einen Punkt auf dieser Linie und bewegen Sie diesen dann auf und ab, bis der Wert nach Ihrem Geschmack justiert ist. </para
+></listitem>
+
+  <listitem
+><para
+><guilabel
+>Speichern als</guilabel
+> und <guilabel
+>Laden</guilabel
+>: mit diesen Knöpfen können Sie genau dies machen. Jede Kurve die Sie erzeugt haben kann hiermit im Dateisystem gespeichert und später geladen werden. Das Dateiformat dafür ist das Gimp Kurvenformat. </para
+></listitem>
+
+  <listitem
+><para
+><guilabel
+>Voreinstellung</guilabel
+>: dieser Knopf setzt alle Werte für alle Kanäle zurück. </para
+></listitem>
+
+</itemizedlist>
+
+</para>
+
+<para
+>Das Kurvenwerkzeug bietet verschiedene Möglichkeiten die Kontrollpunkte der Kurve zu setzen.Ds Drücken des Mausknopfes im Originalbild erzeugt eine gestrichelte vertikale Linie. Die Position der Linie entspricht dem Pixel der sich unter der Maus befindet. Durch das gedrückt halten des Mausknopfes und verschieben der Maus wird die Position der Linie entsprechend angepasst. Auf diese Art kann man leicht sehen wo unterschiedliche Pixel auf der Farbkurve liegen. Dies hilft die Schatten,- Mittel- und Sonnentöne zu finden. </para>
+
+<para
+>Wenn Sie diese Methode und die drei <guilabel
+>Farbpipetten</guilabel
+>-Knöpfe erstellen automatisch die Kontrollpunkte der Kurve für alle Kanäle der Schatten-, Mittel- und Sonnentöne. Aktivieren Sie die Farbpipette die Sie benutzen wollen und klicken Sie auf das Originalbild um die Kontrollpunkte für die Rot-, Grün-, Blau- und Luminanzkurve zu setzen. </para>
+
+<para
+>Die Option <guilabel
+>Überbelichtungsindikator</guilabel
+> kontrolliert alle Farbkanäle, um überbelichtete Pixel anzuzeigen. Falls in mehr als einem Kanal überbelichtete Pixel gefunden werden, bekommen Sie das kombinierte Ergebnis angezeigt. Hierbei handelt es sich um einen Indikator, d.h. Sie bekommen den Effekt nur in der Vorschau angezeigt und es ist kein Effekt beim endgültigen Ergebnis zu sehen. </para>
+
+</sect4>
+
+<sect4 id="inaction-adjustcurves">
+<title
+>Das Werkzeug zur Gradation in Aktion</title>
+
+<para
+>Unten können Sie ein Schwarz-Weiß-Foto sehen, das im <guilabel
+>Luminanzkanal</guilabel
+> korrigiert wurde. Schatten- und Sonnentöne wurde mit der Farbpipette gesetzt und auf die Kurven angewendet. Das Originalbild ist (1) und das korrigierte (2). </para>
+
+        <para
+><inlinemediaobject
+><imageobject>
+               <imagedata fileref="&path;adjustcurvespreview.png" format="PNG"/>
+              </imageobject>
+              <textobject
+><phrase
+>Das Werkzeug zur Gradation in Aktion</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+
+</sect4>
+</sect3>
+
+<sect3 id="channelmixer">
+<sect3info>
+
+<title
+>Kanal-Mixer</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_gmail_dot_com</email
+></address
+></affiliation>
+    </author>
+
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+<para
+>Der <emphasis
+>Kanal-Mixer</emphasis
+> der &digikam; Bildbearbeitung ist ein Werkzeug, um die Farbkanäle zu verbessern oder die Farbschattierungen des Fotos zu ändern. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>digiKam</keyword>
+</keywordset>
+
+</sect3info>
+
+<title
+>Einführung</title>
+
+<para
+>Der Kanal-Mixer ist ein weiteres hochentwickeltes Werkzeug um die Farbtöne der Bilder zu mischen. Sie können es aus dem Menü <menuchoice
+><guimenu
+>Farben</guimenu
+><guimenuitem
+>Kanal-Mixer</guimenuitem
+></menuchoice
+> der Bildbearbeitung bearbeiten. </para>
+
+<sect4 id="using-channelmixer">
+<title
+>Den Kanal-Mixer benutzen</title>
+
+   <para
+><inlinemediaobject
+><imageobject>
+      <imagedata fileref="&path;channelmixerdialog.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>Der Dialog <quote
+>Kanal-Mixer</quote
+></phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+<para
+>Mit der Kanalauswahlbox können Sie die Farbe für das Histogramm auswählen: Dies gibt Ihnen einen ersten Hinweis wie Sie die Kanäle korrigieren können indem Sie die relative Verteilung und Ausschlag betrachten. Der linke Bereich des Fensters zeigt Ihnen eine Vorschau an. Das Original kann zum Vergleich über den eigenen Reiter angesehen werden. </para>
+
+<para
+>Die Vorschau des Zielbildes verfügt über einen roten Marker. Wenn Sie diesen im Bild positionieren erscheint eine vertikale Linie im Histogramm um Ihnen den entsprechenden Farbwert anzuzeigen. </para>
+
+<para
+>Die Kontrollen für das Modul sind rechts unten: Regler für <guilabel
+>Rot</guilabel
+>, <guilabel
+>Grün</guilabel
+> und <guilabel
+>Bau</guilabel
+> erlauben es Ihnen diese Kanäle zu mischen. Falls Sie <guilabel
+>Luminanz bewahren</guilabel
+> aktivieren wird das Bild die allgemeine Helligkeit behalten auch wenn Sie die entsprechenden Farbkomponenten ändern. Dies ist besonders praktisch, wenn Sie ebenfalls die Option <guilabel
+>Monochrom</guilabel
+> aktivieren, da das Kanal-Mixer dann DAS Werkzeug zur Erzeugung von großartigen Schwarz-Weiß Konvertierungen Ihrer Fotos ist. Versuchen Sie den Grünkanal für Schwarz-Weiß Portraits zu reduzieren. </para>
+
+<note
+><para
+>Manchmal, besonders wenn Sie Monochrom mischen, führt die Reduktion einer Farbe zu einem sichtbaren Rauschen, das vom Farbrauschen kommt. Farbrauschen besteht aus kleinen Rauschartefakten die nicht an derselben Stelle im Farbkanal auftreten und deren Rauschmuster in jedem Kanal anders aussieht. Wenn das der Fall ist, können Sie Ihre Monochrom-Konvertierung dadurch verbessern, indem Sie das Farbrauschen zuerst reduzieren. </para
+></note>
+
+<para
+>Die <guilabel
+>Speichern als</guilabel
+> und <guilabel
+>Laden</guilabel
+> Knöpfe werden genau zu diesem Zwecke eingesetzt. Jede beliebige Mixer-Einstellung können Sie damit für später speichern und dann laden. Das benutzte Dateiformat ist das <quote
+>Gimp channel mixer format</quote
+>. </para>
+
+<para
+>Die Option <guilabel
+>Überbelichtungsindikator</guilabel
+> kontrolliert alle Farbkanäle, um überbelichtete Pixel zu finden und Ihnen das kombinierte Ergebnis aller Kanäle anzuzeigen. Hierbei handelt es sich um einen Indikator, d.h. Sie bekommen den Effekt nur in der Vorschau angezeigt und es ist kein Effekt beim endgültigen Ergebnis zu sehen. </para>
+
+<para
+><guilabel
+>Voreinstellungen</guilabel
+>: setzt alle Einstellungen des Kanalmixers auf Ihre Standardwerte zurück. </para>
+
+</sect4>
+
+<sect4 id="inaction-channelmixer">
+<title
+>Der Kanal-Mixer in Aktion</title>
+
+<para
+>Unten können Sie ein Foto sehen in dem der <guilabel
+>Blau</guilabel
+> Kanal neu justiert wurde. Die Option <guilabel
+>Luminanz bewahren</guilabel
+> ist aktiviert. Das Originalbild ist unter (1) und das bearbeitete Bild unter (2) zu sehen. </para>
+
+   <para
+><inlinemediaobject
+><imageobject>
+      <imagedata fileref="&path;channelmixerpreview.png" format="PNG"/> </imageobject>
+      <textobject
+><phrase
+>Der Kanalmixer in Aktion</phrase
+></textobject
+></inlinemediaobject>
+   </para>
+
+</sect4>
+</sect3>
+
+<sect3 id="blackandwhite-conversion">
+<sect3info
+>           <title
+>Monochrom-Filter</title>
+
+<authorgroup>
+    <author
+><firstname
+>Gilles</firstname
+><surname
+>Caulier</surname
+> <affiliation
+><address
+><email
+>caulier_dot_gilles_at_gmail_dot_com</email
+></address
+></affiliation>
+    </author>
+    <author
+><firstname
+>Gerhard</firstname
+><surname
+>Kulzer</surname
+> <affiliation
+><address
+><email
+>gerhard at kulzer dot net</email
+></address
+></affiliation>
+    </author>
+</authorgroup>
+
+<abstract>
+    <para
+>Schwarz/Weiß-Fotografie war immer schon faszinierend wegen Ihrer Abstraktionsfähigkeit. Mit der Entwicklung der Digitalfotografie ist Schwarz/Weiß ein Arbeitsschritt, da Farbbilder einfach auf dem Rechner konvertiert werden können. Auch mit einem Satz von Filmrollenprofile. </para>
+ </abstract>
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>digiKam</keyword>
+</keywordset>
+
+</sect3info>
+<title
+>Einführung</title>
+    <anchor id="blackandwhitetool.anchor"/>
+    <para
+>&digikam; enthält eine Anzahl von Schwarz/Weiß Filtern, die Sie bei Ihren Fotos benutzen können. Im Menü <menuchoice
+><guimenuitem
+>Filter</guimenuitem
+><guimenuitem
+>Monochrom kolorieren</guimenuitem
+></menuchoice
+> finden Sie klassische Schwarz/Weiß Filter mit chemischen Tönungen aus der analogen Fotografie. Die Kontrollen hierzu sind in drei Reitern angeordnet: <emphasis
+>Film, Linsenfilter, Farbton</emphasis
+> und <emphasis
+>Helligkeit</emphasis
+> wie in dem Bildschirmfoto unten gezeigt. Film, Filter und Farbtöne können unabhängig voneinander angewendet werden auch nach einander. Die Filter verändern die Mischung der RGB-Kanäle wobei die Farbtöne ein pure gleichmäßige monochrome Tinte zu dem Schwarz/Weiß-Foto hinzufügt. Im Reiter Helligkeit finden Sie Werkzuege zur Farbtonjustierung (Gradation), zum Kontrast und einen Überbelichtungsindikator um die Schwarz/Weiß Wiedergabe zu verbessern. </para>
+      <example
+>  <title
+>Das Werkzeug für Monochromfilter in Aktion</title>
+        <screenshot
+><screeninfo
+>Das Werkzeug für Monochromfilter in Aktion</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorbwfilter.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+      </example>
+
+    <para
+>Die unten folgende Tabelle zeigt sehr detailliert den Effekt aller Filter und Farben.</para>
+
+    <informaltable
+><tgroup cols="2">
+
+    <thead
+><row>
+        <entry
+>Vorschau</entry
+>        <entry
+>Simulation von Fotofilmen</entry>
+    </row
+></thead>
+    <tbody>
+
+        <row>
+            <entry>
+              <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editorconvert_bwred.png" format="PNG"/> </imageobject
+></inlinemediaobject>
+            </entry>
+
+            <entry>
+              <para
+>Einstellungen zum Simulieren von berühmten schwarz/weiß Filmen stehen zur Verfügung: </para>
+              <para
+>Agfa 200X, Agfa Pan 25, Agfa Pan 100, Agfa Pan 400</para>
+              <para
+>Ilford Delta 100, Ilford Delta 400, Ilford Delta 400 Pro 3200, Ilford FP4 Plus, Ilford HP5 Plus, Ilford PanF Plus, Ilford XP2 Super</para>
+              <para
+>Kodak Tmax 100, Kodak Tmax 400, Kodak TriX</para>
+            </entry>
+        </row>
+    </tbody>
+    </tgroup
+></informaltable>
+
+    <informaltable
+><tgroup cols="2">
+     <thead
+><row>
+        <entry
+>Vorschau</entry>
+        <entry
+>Linsenfiltertyp</entry>
+     </row
+></thead>
+       <tbody>
+        <row>
+            <entry>
+            <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editorconvert_original.png" format="PNG"/> </imageobject
+></inlinemediaobject>
+            </entry>
+
+            <entry
+>Originalfarbbild aufgenommen in der Landschaft von Neuseeland. </entry>
+        </row>
+
+        <row>
+            <entry>
+            <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editorconvert_bw.png" format="PNG"/> </imageobject
+></inlinemediaobject>
+            </entry>
+
+            <entry
+>Neutral: simuliert schwarz/weiß mit einer neutralen Filmbelichtung. </entry>
+        </row>
+
+        <row>
+            <entry>
+            <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editorconvert_bwgreen.png" format="PNG"/> </imageobject
+></inlinemediaobject>
+            </entry>
+
+           <entry
+>Grünfilter: simuliert eine schwarz/weiß Filmbelichtung mit einem grünen Linsenfilter. Dies sieht gut aus, bei allen Szenenbilder und paßt besonders gut zu Portraits gegen den Himmel. Also ähnlich wie der 004 Cokin(tm) Grünfilter. </entry>
+        </row>
+
+        <row>
+            <entry>
+            <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editorconvert_bworange.png" format="PNG"/> </imageobject
+></inlinemediaobject>
+            </entry>
+
+            <entry
+>Orangefilter: simuliert eine schwarz/weiß Filmbelichtung mit einem orangen Linsenfilter. Dies verbessert Landschaften, maritime Szenen und Luftfotos. Also ähnlich wie der 002 Cokin(tm) Orangefilter. </entry>
+        </row>
+
+        <row>
+            <entry>
+            <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editorconvert_bwred.png" format="PNG"/> </imageobject
+></inlinemediaobject>
+            </entry>
+
+            <entry
+>Rotfilter: simuliert eine schwarz/weiß Filmbelichtung mit einem roten Linsenfilter. Dies erstellt dramatische Himmeleffekte und kann Mondlichtszenen zur Tageszeit simulieren. Also ähnlich wie der 003 Cokin(tm) Rotfilter. </entry>
+        </row>
+
+        <row>
+            <entry>
+            <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editorconvert_bwyellow.png" format="PNG"/> </imageobject
+></inlinemediaobject>
+            </entry>
+
+            <entry
+>Gelbfilter: simuliert eine schwarz/weiß Filmbelichtung mit einem gelben Linsenfilter. Dies ist die natürlichste Farbtonkorrektur und verbessert den Kontrast. Er ist ideal für Landschaften und damit ähnlich dem 001 Cokin(tm) Gelbfilter. </entry>
+        </row>
+
+    </tbody>
+
+    </tgroup
+></informaltable>
+
+    <informaltable
+><tgroup cols="2">
+
+    <thead
+><row>
+        <entry
+>Vorschau</entry
+>        <entry
+>Farbton</entry>
+    </row
+></thead>
+
+      <tbody>
+        <row>
+            <entry>
+            <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editorconvert_sepia.png" format="PNG"/> </imageobject
+></inlinemediaobject>
+            </entry>
+
+            <entry
+>Sepiaton: erzeugt warme helle und mittlere Töne während er ein bisschen Kälte in den Schattentönen hinzufügt. Dies ist sehr ähnlich zu dem Prozeß des Ausbleichens eines Drucks und der Wiederentwicklung in einem Sepiatoner. Dies ist typisch für die Fotos Ihrer Großmutter und damit ähnlich dem 005 Cokin(tm) Sepiafilter. </entry>
+        </row>
+
+         <row>
+            <entry>
+            <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editorconvert_brown.png" format="PNG"/> </imageobject
+></inlinemediaobject>
+            </entry>
+
+            <entry
+>Braunton: ähnlich zu dem Sepiatonfilter, aber weniger betont. </entry>
+        </row>
+
+       <row>
+            <entry>
+            <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editorconvert_cold.png" format="PNG"/> </imageobject
+></inlinemediaobject>
+            </entry>
+
+            <entry
+>Kalter Ton: startet den Druck auf einem kalten schwarz/weiß Papier wie dem Bromidpapier. </entry>
+        </row>
+
+        <row>
+            <entry>
+            <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editorconvert_platinium.png" format="PNG"/> </imageobject
+></inlinemediaobject>
+            </entry>
+
+            <entry
+>Platinton: Effekt der traditionelle chemische Platin-Entwicklung in einem Dunkelraum simuliert. </entry>
+        </row>
+
+        <row>
+            <entry>
+            <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editorconvert_selenium.png" format="PNG"/> </imageobject
+></inlinemediaobject>
+            </entry>
+
+            <entry
+>Selenton: Effekt der traditionelle chemische Selen-Entwicklung in einem Dunkelraum simuliert. </entry>
+        </row>
+
+    </tbody>
+
+    </tgroup
+></informaltable>
+
+</sect3>
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->
+

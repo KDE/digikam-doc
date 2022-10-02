@@ -1,0 +1,175 @@
+<sect1 id="intro-camerasupport"
+> <title
+>Ondersteunde digitale camera's</title>
+    <anchor id="digitalstillcamera.anchor"/>
+
+    <note>
+
+        <para
+>Ondersteuning van RAW-bestanden: als u de modus RAW schieten met uw camera gebruikt, zal &digikam; waarschijnlijk wel in staat zijn daar mee te werken. Ondersteuning van RAW hangt af van de bibliotheek libraw. Om uit te zoeken of uw specifieke camera wordt ondersteund, breng dan de lijst met ondersteunde RAW-camera's te voorschijn uit het menu <menuchoice
+><guimenu
+>Help</guimenu
+><guimenuitem
+>Ondersteunde RAW-camera's</guimenuitem
+></menuchoice
+>. </para>
+
+        <para
+>Hoe in te stellen en te werken met RAW-bestanden is beschreven in <link linkend="using-setup-raw"
+>Instellingen voor RAW-decoder</link
+> en <link linkend="raw-workflow"
+>RAW-workflow</link
+>. </para>
+
+    </note>
+
+    <para
+>Het bevat een gemakkelijk te gebruiken camera-interface, dat verbinding maakt met uw digitale camera en foto's direct download in albums van &digikam;. Meer dan <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php"
+>1000 digitale camera's</ulink
+> worden er ondersteund door de gphoto2-bibliotheek. Natuurlijk wordt elke medium of kaartlezer, ondersteund door uw besturingssysteem, zich verbinden met &digikam;. </para>
+
+    <para
+>Huidige digitale camera's worden gekarakteriseerd door het gebruik van <emphasis
+>Compact &Flash; geheugen</emphasis
+>kaarten en <emphasis
+>USB</emphasis
+> of <emphasis
+>FireWire (IEEE-1394 of i-link)</emphasis
+> voor  gegevensoverdracht. De actuele overdracht naar een hostcomputer wordt gewoonlijk uitgevoerd met de apparaatklasse <emphasis
+>USB-massaopslag</emphasis
+> (zodat de camera als een schijfapparaat verschijnt) of gebruik maakt van het <emphasis
+>Picture Transfer Protocol (PTP)</emphasis
+> en zijn afgeleiden. Oudere camera's kunnen de verbinding <emphasis
+>Seriële poort (RS-232)</emphasis
+> gebruiken. </para>
+
+    <informaltable
+><tgroup cols="2">
+
+    <thead>
+        <row>
+            <entry
+>Voorbeeld</entry>
+            <entry
+>Verbindingstype</entry>
+        </row>
+    </thead>
+
+    <tbody>
+        <row>
+            <entry>
+                <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;intro-firewireconnector.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+            </entry>
+
+            <entry
+>FireWire (IEEE-1394 or i-link) verbinding van een professionele digitale camera </entry>
+        </row>
+
+        <row>
+            <entry>
+                <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;intro-usbconnector.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+            </entry>
+
+            <entry
+>Universal Serial Bus (USB) verbinding van een digitale camera (consumentenversie) </entry>
+        </row>
+
+        <row>
+            <entry>
+                <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;intro-serialconnector.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+            </entry>
+
+            <entry
+>Seriële poort (RS-232) verbinding van een oude digitale camera </entry>
+        </row>
+
+    </tbody>
+
+    </tgroup
+></informaltable>
+
+    <para>
+        <guilabel
+>Overdracht met gPhoto2: PTP en RS-232 seriële poort</guilabel>
+    </para>
+
+    <para
+>&digikam; gebruikt het programma <emphasis
+>gPhoto2</emphasis
+> om met de digitale fotocamera's te communiceren. gPhoto2 is een vrije, opnieuw te distribueren, set van software toepassingen voor de digitale camera die een groeiend aantal van meer dan 800 camera's ondersteunt. gPhoto2 heeft ondersteuning voor het <emphasis
+>Picture Transfer Protocol</emphasis
+>, wat een breed ondersteund protocol is ontwikkeld door de International Imaging Industry Association om de overdracht van afbeeldingen uit digitale camera's naar computers en andere perifere apparaten zonder de noodzaak van extra  apparaatstuurprogramma's. </para>
+
+    <para
+>Veel oude camera's maken gebruik van de <emphasis
+>seriële poort</emphasis
+> om te communiceren met de computers. Omdat foto's vrij grote bestanden zijn en seriële poorten traag wordt dit type verbinding niet meer gebruikt. &digikam; biedt ondersteuning voor dit type camera en gebruikt het programma gPhoto2 voor de overdracht van de afbeeldingen. Een complete lijst met ondersteunde camera's is te vinden op <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php"
+>deze website</ulink
+>. </para>
+
+    <note>
+        <para
+>libgphoto2 moet zijn gebouwd met libexif om op de juiste manier miniaturen naar digiKam over te brengen. EXIF-ondersteuning is vereist voor ophalen van miniaturen vanaf sommige libgphoto2 camerastuurprogrammatuur. Als EXIF ondersteuning niet is ingesteld in libgphoto2, dan kunt u mogelijk geen miniaturen zien of het ophalen van miniaturen kan erg langzaam zijn.</para>
+    </note>
+
+    <para>
+        <guilabel
+>Overdrachten met massa-opslag-apparaat</guilabel>
+    </para>
+
+    <para
+>Voor apparaten die niet direct worden ondersteund door gPhoto2 bestaat er ondersteuning voor het <emphasis
+>Massa-opslag</emphasis
+> protocol, dat goed wordt ondersteund door: &GNU;/&Linux;. Dit omvat vele digitale camera's en geheugenkaartlezers. Massa-opslag-interfaces zijn: <itemizedlist
+> <listitem
+><para
+><emphasis
+>USB Mass Storage</emphasis
+>: een computerinterface dat gebruik maakt van communicatieprotocollen gedefinieerd  door het USB  Implementers forum die draaien op de Universal Serial Bus. Deze standaard biedt een interface voor verscheidene geheugenopslag apparaten, inclusief digitale camera's.</para
+></listitem
+> <listitem
+><para
+><emphasis
+>FireWire Mass Storage</emphasis
+>: een computerinterface dat gebruik maakt van communicatieprotocollen die als eerste ontwikkeld werden door Apple Computer in de 90er jaren. Fire Wire biedt hoge snelheid communicatie en isochrone realtime data diensten. Net als USB Mass Storage biedt deze standaard een interface naar een variëteit van opslagapparaten, inclusief digitale camera's. Bijna alle recente digitale camera's ondersteunen USB versie 1 en ondersteunen eventueel USB versie 2; een paar ondersteunen FireWire. </para
+></listitem
+> </itemizedlist
+> Om een algemeen Mass Storage apparaat met &digikam; te gebruiken, selecteer <menuchoice
+><guimenu
+>Importeren</guimenu
+><guimenuitem
+>Camera</guimenuitem
+><guimenuitem
+>Camera handmatig toevoegen...</guimenuitem
+></menuchoice
+>, voeg uw apparaat toe en stel het pad in naar het koppelingspunt. </para>
+
+    <para
+>Voor details zie het hoofdstuk <link linkend="using-setup-camera"
+>digiKam instellen...</link
+>, in de sectie "Camera". </para>
+
+</sect1>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

@@ -1,0 +1,279 @@
+<chapter id="tool-acquireimages">
+<chapterinfo>
+
+<abstract>
+<para
+>Het hulpmiddel voor het verkrijgen van afbeeldingen is toegespitst om afbeeldingen te scannen met een vlakke scanner. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>Vlakke scanner</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Hulpmiddel voor afbeeldingen ophalen</title>
+
+<para
+>Dit hulpmiddel kan gebruikt worden om beelden met een vlakke scanner te digitaliseren. Het hulpmiddel gebruikt libksane, een interface voor de SANE-bibliotheek om vlakke scanners te bedienen. </para>
+<para
+>Het kan beelden opslaan in alle hoofd formaten, bijvoorbeeld de volgende formaten: <itemizedlist>
+<listitem
+><para
+>png (8 en 16 bits per kleur) </para
+></listitem>
+<listitem
+><para
+>jpeg, jpg, jpeg 2000 </para
+></listitem>
+<listitem
+><para
+>tiff </para
+></listitem>
+</itemizedlist>
+</para>
+
+<note
+><para
+>U kunt de status van de ondersteuning van uw scanner controleren op de website van het SANE-project door de informatie in te voeren op deze zoekpagina: <ulink url="http://www.sane-project.org/cgi-bin/driver.pl"
+>http://www.sane-project.org/cgi-bin/driver.pl</ulink
+>.</para
+></note>
+
+<sect1 id="scanner-selection">
+<title
+>Selectie van scanner</title>
+<para
+>Als de geselecteerde scanner niet kan worden geopend of wanneer geen standaard scanner is aangegeven, wordt een dialoogvenster voor selectie van de scanner geopend. </para>
+<para
+>De gebruiker kan de gewenste scanner kiezen en op <guibutton
+>OK</guibutton
+> drukken om de scanner te openen. Op <guibutton
+>Annuleren</guibutton
+> drukken zal het hulpmiddel afsluiten. </para>
+
+<screenshot>
+     <screeninfo
+>Geen scanner gevonden</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-no-scanner-found.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Geen scanner gevonden</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+
+<para
+>In het geval dat er geen apparaten zijn gevonden, misschien omdat de scanner niet is ingeplugd of uitgeschakeld, corrigeer dat dan. De knop <guibutton
+>Lijst met apparaten</guibutton
+> kan gebruikt worden om de lijst met scanners opnieuw te laden.</para
+> 
+<note
+><para
+>Niet alle drivers/backends ondersteunen deze functie. Stop in dat geval het hulpmiddel. Sluit uw scanner aan en start de toepassing opnieuw. </para>
+</note>
+
+</sect1>
+
+<sect1 id="main-dialog">
+<title
+>Hoofddialoog</title>
+<screenshot>
+     <screeninfo
+>Hoofddialoog</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-main-dialog.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Hoofddialoog</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+
+<para
+>In het hoofdvenster, heeft de gebruiker twee sets van scanopties: <guilabel
+>Basisopties</guilabel
+> en <guilabel
+>Scanner specifieke opties</guilabel
+>. Het tabblad <guilabel
+>Basisopties</guilabel
+> bevat de meestgebruikte parameters die de SANE-backends aan de scanner biedt, terwijl het tabblad <guilabel
+>Scanner specifieke opties</guilabel
+> alle opties van de backend bevat. De hier vermelde opties zijn afhankelijk van SANE ondersteuning voor uw apparaatstuurprogramma: libksane (die het hulpmiddel gebruikt) moet de meeste typen parameters kunnen tonen die SANE biedt (analoge gamma-tabellen worden op dit moment niet ondersteund). </para>
+
+<screenshot>
+     <screeninfo
+>Tabblad voor specifieke opties voor de scanner</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-other-options.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Tabblad voor specifieke opties voor de scanner</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+
+<para
+>De specifieke opties voor de scanner bevatten meer gedetailleerde opties van de backends. Het hulpmiddel heeft geen speciale afhandeling voor deze opties. </para>
+
+<para
+>Als u tevreden bent met uw instellingen kunt u de kleine pijl bovenaan de splitsing van de opties gebruiken. bij klikken vouwt het de opties in of uit. De vouwer kan het voorbeeldgebied overlappen, maar vervaagt wanneer de muiscursor uit de vouwer beweegt.</para
+>  
+</sect1>
+
+<sect1 id="scanning">
+<title
+>Scannen</title>
+<para
+>Om een afbeelding te scannen kan de gebruiker starten met een voorbeeldscan en dan het deel van het scangebied selecteren om de uiteindelijke scan te doen. De voorbeeldscan wordt gestart door op de knop Voorbeeld te drukken. </para>
+
+<screenshot>
+     <screeninfo
+>De knop Voorbeeld</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-preview-button.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>De knop Voorbeeld</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+
+<para
+>Wanneer het voorbeeld is gescand kan het gebied van de uiteindelijke afbeelding worden geselecteerd. </para>
+<screenshot>
+     <screeninfo
+>Selectie en zoom</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-zoom-in.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Selectie en zoom</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+<para
+>Om de afbeelding beter te kunnen selecteren kan de gebruiker in- en uitzoomen naar de huidige selectie of zoomen om het gehele voorbeeld in het venster te laten passen. </para>
+<screenshot>
+     <screeninfo
+>De knop "Passend maken"</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-zoom-to-fit.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>De knop "Passend maken"</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+
+<para
+>Wanneer de afbeelding is geselecteerd kan de uiteindelijke afbeelding worden verkregen door op de knop Uiteindelijke scan te drukken. </para>
+
+<screenshot>
+     <screeninfo
+>De definitieve scanknop</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-final-button.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>De definitieve scanknop</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+
+<para
+>U zult de voortgang van de scan zien. </para>
+<screenshot>
+     <screeninfo
+>Volgen van het scannen</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-scanning.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Volgen van het scannen</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="scanning-multiple-selections">
+<title
+>Meerdere selecties scannen</title>
+<para
+>Soms hebt u alleen bepaalde delen van een afbeelding nodig. In plaats van het hele plaatje te scannen en met behulp van een grafische toepassing (&eg; &kolourpaint;) verschillende delen van de afbeelding op te slaan in afzonderlijke bestanden, gebruikt u de meervoudige selectiefunctie van het hulpmiddel. </para>
+<screenshot>
+     <screeninfo
+>Meervoudige Selecties</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-multiple-selections.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Meervoudige Selecties</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+<para
+>Scan een voorbeeld en gebruik dan de &LMB; om het eerste deel van de afbeelding in het voorbeeld te selecteren. Beweeg over het geselecteerde gebied met de muiscursor en klik op het groene pictogram <guiicon
+>+</guiicon
+> om het gebied te selecteren. Geselecteerde gebieden worden aangegeven door een rode rand. Selecteer daarna de volgende gedeelten van de afbeelding op dezelfde manier.</para>
+<para
+>Om een enkele selectie te verwijderen beweeg over het gebied met de muiscursor en klik op de rode pictogram <guiicon
+>-</guiicon
+>. Met <guilabel
+>Selecties wissen</guilabel
+> uit het contextmenu gestart met de &RMB; kunnen alle selecties in een voorbeeld worden verwijderd. </para>
+<para
+>Als u twee afzonderlijke afbeeldingen of foto's op de scanner heeft geplaatst en u heeft een voorbeeld gestart, dan zal het hulpmiddel automatisch al vast twee verschillende gebieden selecteren. </para>
+<para
+>Als u tevreden bent met uw keuze start dan de definitieve batch scan van alle selecties. De geselecteerde delen van de afbeelding worden gescand en afzonderlijk opgeslagen in verschillende bestanden. </para>
+</sect1>
+
+<sect1 id="help">
+<title
+>Help en afsluiten</title>
+<para
+>Aan de onderkant van het hoofdvenster vindt u de  knoppen<guibutton
+>Help</guibutton
+> en <guibutton
+>Sluiten</guibutton
+>.</para>
+
+<para
+>De knop <guibutton
+>Help</guibutton
+> roept het menu op dat beschreven wordt in de sectie <ulink url ="help: /fundamentals/menus.html#menus-help"
+>Menu Help</ulink
+>. De knop <guibutton
+>Sluiten</guibutton
+> wordt gebruikt om het hulpmiddel af te sluiten.</para>
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

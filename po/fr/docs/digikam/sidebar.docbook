@@ -1,0 +1,847 @@
+ <sect1 id="using-sidebar"
+>            <title
+>Barre latérale &digikam;</title>
+    <anchor id="sidebar.anchor"/>
+
+        <sect2 id="introduction-rightsidebar">
+        <title
+>Introduction à la barre latérale de droite</title>
+           <para
+>La fenêtre principale de &digikam; possède une barre latérale du côté droit qui fournit des informations importantes et permet d'effectuer diverses actions sur les images sélectionnées. La même barre latérale existe également dans la vue <guilabel
+>éditeur d'images</guilabel
+>. Elle peut être affichée en cliquant sur l'un des cinq onglets : </para>
+
+           <para>
+            <itemizedlist>
+
+                <listitem
+><para
+><link linkend="using-sidebarfileproperties"
+>Propriétés</link
+> : propriétés du fichier et de l'image, principaux paramètres de prise de vue (étiquettes EXIF)</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebarmetadata"
+>Métadonnées</link
+> : données EXIF, Makernotes, IPTC et GPS (ces propriétés peuvent être éditées par deux modules externes Kipi)</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebarcolors"
+>Couleurs</link
+> : histogrammes et profils ICC embarqués</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebargeolocation"
+>Géolocalisation</link
+> : le composant graphique Marble montre la localisation GPS</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebarcommentstags"
+>Commentaires &amp; étiquettes</link
+> : commentaires, réglages de la date et de l'heure, notation, étiquetage</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebartagfilters"
+>Filtres d'étiquettes</link
+> : des filtres d'étiquettes à appliquer à la sélection de la fenêtre principale</para
+></listitem>
+
+            </itemizedlist>
+Cliquer plusieurs fois sur le même onglet fera apparaître et disparaître la barre latérale. </para>
+        </sect2>
+
+        <sect2 id="using-sidebarfileproperties"
+>    <title
+>Propriétés</title>
+           <para
+>La barre latérale Propriétés affiche les informations essentielles à propos de l'image sélectionnée. Ces propriétés parlent d'elles-même. Elles sont regroupées en sections : <itemizedlist>
+
+               <listitem
+><para
+>Propriétés du fichier : ce sont les informations relatives au système de fichiers.</para
+></listitem>
+
+               <listitem
+><para
+>Propriétés de l'image : elles montrent les informations sur l'image et son format, comme les dimensions, la compression, la profondeur de couleurs, &etc;</para
+></listitem>
+
+               <listitem
+><para
+>Propriétés de la photographie : elles montrent un résumé des principaux paramètres de prise de vue. Ces informations proviennent des champs de données EXIF, s'ils existent.</para
+></listitem>
+
+           </itemizedlist>
+
+           <example
+>   <title
+>Propriétés de la barre latérale</title>
+                 <screenshot
+><screeninfo
+>Exemple de propriétés de fichier dans la barre latérale</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarfileproperties.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+
+           </para>
+        </sect2>
+
+        <sect2 id="using-sidebarmetadata"
+>          <title
+>Les onglets métadonnées</title>
+
+           <para
+>Les métadonnées sont des données concernant les images ou les fichiers, comme les données techniques enregistrées par l'appareil lors de la prise de vue, l'information sur l'auteur et les copyrights, les mots clé, les légendes et les coordonnées de géolocalisation.</para>
+           <para
+>La barre latérale Métadonnées est composée de quatre sous-onglets <guilabel
+>EXIF</guilabel
+>, <guilabel
+>Makernote</guilabel
+>, <guilabel
+>IPTC</guilabel
+> et <guilabel
+>XMP</guilabel
+>. Sur la gauche, deux boutons vous permettent de choisir entre un affichage simple et complet. Au milieu se trouve l'icône d'un disque permettant d'enregistrer les métadonnées sur le disque. À côté se trouvent un bouton d'impression et un bouton de copie qui font précisément cela : imprimer ou copier les métadonnées dans le presse-papier. </para>
+           <para
+>Une fonctionnalité très pratique est le champ de recherche rapide en bas de l'onglet Métadonnées. Lorsque vous y saisissez un mot clé, les métadonnées affichées au-dessus seront filtrées jusqu'à ce que vous trouviez celle que vous cherchez. C'est un moyen rapide d'accéder à une information spécifique.</para>
+
+           <para
+>Les métadonnées affichées dans ces quatre onglets peuvent être modifiées et améliorées ailleurs, de plusieurs manières. <itemizedlist>
+                 <listitem
+><para
+>avec l'<ulink url="help:/digikam/using-camera.html"
+>interface appareils</ulink
+></para
+></listitem>
+                 <listitem
+><para
+>l'<ulink url="help:/kipi-plugins/metadataeditor.html"
+>éditeur de métadonnées</ulink
+></para
+></listitem>
+                 <listitem
+><para
+>le <ulink url="help:/kipi-plugins/geolocalization.html"
+>localisateur GPS</ulink
+></para
+></listitem>
+                 <listitem
+><para
+><ulink url="help:/menu-descriptions#synchronize-metadata"
+>copier</ulink
+> les métadonnées de la base vers les fichiers</para
+></listitem>
+                 <listitem
+><para
+><ulink url="help:/menu-descriptions#update-db-metadata"
+>copier</ulink
+> les métadonnées du fichier vers la base</para
+></listitem>
+             </itemizedlist>
+           </para>
+
+           <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadata.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>Les onglets métadonnées</phrase
+></textobject
+></inlinemediaobject>
+           </para>
+
+           <sect3 id="using-sidebarmetadataexif">
+           <title
+>Étiquettes EXIF</title>
+
+                <anchor id="kexif.anchor"/>
+
+                <sect4>
+                <title
+>Qu'est-ce que EXIF ?</title>
+
+                    <para
+>EXIF signifie <ulink url="https://fr.wikipedia.org/wiki/Exchangeable_image_file_format"
+>Exchangeable image file format</ulink
+>. Il a été créé spécifiquement pour les appareils photos numériques. Il permet de stocker beaucoup d'informations sur les photos. Ces informations décrivent aussi bien l'appareil qui a pris la photo que les réglages (avec la date et l'heure) au moment de la prise de vue. Une vignette peut même être intégrée. </para>
+
+                    <para
+>Le format EXIF contient différentes sections délimitées, appelées <emphasis
+>Image File Directories</emphasis
+> (IFD, dossiers de fichiers image). Les sections que l'on peut trouver dans un fichier EXIF classique sont les suivantes : <itemizedlist>
+
+                        <listitem
+><para
+><guilabel
+>Information sur l'image</guilabel
+> : contient des informations générales sur la photo. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Vignette embarquée</guilabel
+> : contient de l'information sur la vignette embarquée. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Informations sur la photographie</guilabel
+> : contient des informations étendues sur la photo. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Interopérabilité</guilabel
+> : contient des informations pour améliorer l'interopérabilité entre les différentes implémentations EXIF. </para
+></listitem>
+
+                    </itemizedlist>
+
+                    </para>
+
+                </sect4>
+
+                <sect4>
+                <title
+>Comment utiliser l'afficheur EXIF ?</title>
+
+                    <para
+>Vous pouvez passer en revue les informations EXIF d'une image en utilisant le premier onglet de la barre latérale. L'affichage des données EXIF est purement indicatif, vous ne risquez pas de modifier quoi que ce soit aux sections EXIF. S'il y a plus d'entrées que l'espace d'affichage disponible, utilisez la molette de la souris pour les faire défiler. </para>
+
+                    <para
+>Vous pouvez utiliser deux niveaux différents pour afficher les sections EXIF : <itemizedlist>
+
+                        <listitem
+><para
+><guilabel
+>Simple</guilabel
+> : n'affiche que les champs les plus importants pour la photographie. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Complet</guilabel
+> : affiche tous les champs EXIF. </para
+></listitem>
+
+                    </itemizedlist>
+
+                    </para>
+
+                    <para
+>Certains vendeurs comme Canon, Fujifilm, Nikon, Minolta et Sigma ajoutent des sections EXIF supplémentaires. Ces sections contiennent des informations spécifiques à chaque modèle. Ces sections seront affichées dans l'onglet <guilabel
+>Makernote</guilabel
+>. </para>
+
+                </sect4>
+
+           </sect3>
+
+           <sect3 id="using-sidebarmetadatamakernote">
+           <title
+>Étiquettes Makernote</title>
+
+                <sect4>
+                <title
+>Qu'est-ce que Makernote ?</title>
+
+                    <para
+>Le standard EXIF définit une étiquette Makernote, qui permet aux fabricants d'appareils photo de placer des métadonnées personnalisées dans le fichier. Ce champ est de plus en plus utilisé par les fabricants pour stocker une myriade de paramètres qui n'existent pas dans le standard EXIF, comme le mode de prise de vue, les paramètres de post-traitement, les numéros de série, les modes de focus, &etc; mais format d'étiquette des propriétaire et spécifique à chaque fabricant. </para>
+
+                </sect4>
+
+                <sect4>
+                <title
+>Comment utiliser l'afficheur Makernote ?</title>
+
+                    <para
+>Vous pouvez passer en revue les informations Makernote d'une image en utilisant cet onglet de la barre latérale. L'affichage des données Makernote est purement indicatif, vous ne risquez pas de modifier quoi que ce soit aux sections Makernote. </para>
+
+                    <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadatamakernote.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>L'afficheur de données Makernote en action</phrase
+></textobject
+></inlinemediaobject>
+                    </para>
+
+                </sect4>
+
+           </sect3>
+
+           <sect3 id="using-sidebarmetadataiptc">
+           <title
+>Étiquettes IPTC</title>
+
+                <sect4>
+                <title
+>Qu'est-ce que IPTC ?</title>
+
+                    <para
+>Le <ulink url="http://www.iptc.org"
+>Conseil International de la Presse et des Télécommunications</ulink
+> est un consortium composé des principales agences de presse et vendeurs de l'industrie de la presse. Il développe et maintient des standards techniques permettant d'améliorer l'échange d'informations qui sont utilisées par pratiquement toutes les agences évènementielles dans le monde. </para>
+
+                    <para
+>L'IPTC a été établi en 1965 par un groupe d'organisations d'actualités pour sauvegarder les intérêts de la presse mondiale dans le domaine des télécommunications. Depuis la fin des années 1970, les activités de l'IPTC se sont principalement concentrées sur la publication de standards industriels pour l'échange de données d'actualité. </para>
+
+                    <para
+>En particulier, l'IPTC a défini une séries de métadonnées qui peuvent être appliquées aux images. Elles ont été définies initialement en 1979 et révisées de manière importante en 1991 pour devenir un Modèle d'échange d'informations (IMM en anglais) mais le concept a réellement progressé en 1994 lorsqu'Adobe a défini des spécifications pour embarquer ces métadonnées dans les images numériques, maintenant connues comme les « en-têtes IPTC ». </para>
+
+                </sect4>
+
+                <sect4>
+                <title
+>Comment utiliser l'afficheur IPTC ?</title>
+
+                    <para
+>Vous pouvez passer en revue les informations IPTC d'une image en utilisant cet onglet de la barre latérale. L'affichage des données IPTC est purement indicatif, vous ne risquez pas de modifier quoi que ce soit aux sections IPTC. </para>
+
+                    <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadataiptc.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>L'afficheur de données IPTC en action</phrase
+></textobject
+></inlinemediaobject>
+                    </para>
+
+                </sect4>
+
+           </sect3>
+
+         </sect2>
+
+        <sect2 id="using-sidebarcolors"
+>            <title
+>Couleurs</title>
+           <para
+>La barre latérale des couleurs possède deux sous-onglets, <guilabel
+>Couleur et profil ICC</guilabel
+>. Vous trouverez plus de détails dans la section <link linkend="using-iccprofile"
+>Gestion des couleurs</link
+> </para>
+
+            <sect3 id="using-histogramviewer">
+            <title
+>Affichage de l'histogramme</title>
+            
+                <anchor id="histogramviewer.anchor"/>
+            
+                <para
+>L'histogramme d'une image montre la quantité de chaque couleur présente et leurs amplitudes relatives dans l'image. Si votre image a une couleur trop dominante, vous devriez pouvoir déterminer ce qui ne va pas en regardant l'histogramme. </para>
+            
+                <para
+>L'afficheur d'histogramme vous montre des informations sur la répartition statistique des valeurs de couleur de l'image. c'est purement indicatif. Vous ne risquez pas de modifier l'image en regardant ces infos. Si vous souhaitez faire une correction de couleurs à partir de l'histogramme, utilisez le module externe d'ajustement des niveaux de l'image ou d'ajustement des courbes de l'image. </para>
+                                                
+                <example
+>   <title
+>L'afficheur d'histogramme en action</title>
+                    <screenshot
+><screeninfo
+>L'afficheur d'histogramme en action</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarcolorshistogramviewer.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+                </example>
+            
+                <para
+>Une image peut être décomposée en plusieurs canaux de couleurs : <guilabel
+>Rouge</guilabel
+>, <guilabel
+>Vert</guilabel
+>, <guilabel
+>Bleu</guilabel
+>, <guilabel
+>Alpha</guilabel
+>. Le canal <guilabel
+>Alpha</guilabel
+> est une couche dans l'image qui permet la transparence (comme les images PNG et &GIF;). Chaque canal définit différents niveaux d'intensité allant de 0 à 255 (valeurs entières). Ainsi, un pixel noir correspond à 0 pour tous les canaux, un pixel blanc à 255 pour tous les canaux. Un pixel transparent se code par un 0 sur le canal alpha; un pixel opaque par 255. </para>
+            
+                <para
+>L'afficheur d'histogramme permet de voir chaque canal séparément : <itemizedlist>
+            
+                    <listitem
+><para
+><emphasis
+>Luminosité</emphasis
+> : montre la répartition des valeurs de luminosité. </para
+></listitem>
+
+                    <listitem
+><para
+><guilabel
+>Rouge</guilabel
+>, <guilabel
+>Vert</guilabel
+>, <guilabel
+>Bleu</guilabel
+> : montrent la répartition des niveaux d'intensité pour les canaux rouge, vert et bleu. </para
+></listitem>
+                
+                    <listitem
+><para
+><guilabel
+>Alpha</guilabel
+> : montre la répartition des niveaux d'opacité. Si la couche est complètement opaque ou complètement transparente, l'histogramme sera une simple barre verticale sur le bord gauche ou droit. </para
+></listitem>
+
+                    <listitem
+><para
+><guilabel
+>Couleurs</guilabel
+> : montrent les histogrammes <guilabel
+>Rouge</guilabel
+>, <guilabel
+>Vert</guilabel
+> et <guilabel
+>Bleu</guilabel
+> superposés, de manière à voir toute l'information à la fois. </para
+></listitem>
+                            
+                </itemizedlist>
+            
+                </para>
+            
+                <para
+>Grâce à l'option <guilabel
+>Échelle</guilabel
+>, vous pouvez choisir l'échelle de l'axe Y entre linéaire et logarithmique. Pour des images prises avec un appareil photo numérique, le mode <guilabel
+>Linéaire</guilabel
+> est a priori le plus utile. Cependant, pour des images comportant des zones importantes de même couleur, le mode <guilabel
+>Linéaire</guilabel
+> sera souvent dominé par une seule barre verticale. Dans ce cas, le mode <guilabel
+>Logarithmique</guilabel
+> vous sera utile. </para>
+
+                <para
+>Vous pouvez restreindre l'analyse des <guilabel
+>Statistiques</guilabel
+> affichée en bas du dialogue à une plage limitée de valeur. Il y a deux moyens de régler cette échelle : <itemizedlist>
+            
+                    <listitem
+><para
+>Cliquez et faites glisser le curseur à travers l'histogramme entre les deux valeurs extrêmes des niveaux qui vous intéressent. </para
+></listitem>
+
+                    <listitem
+><para
+>Utilisez les boutons de réglage en dessous de l'histogramme. Le réglage de gauche est la valeur minimum, le réglage de droite est la valeur maximum. </para
+></listitem>
+            
+                </itemizedlist>
+                            
+                </para
+> 
+            
+                <para
+>Les statistiques affichées dans le bas de la vue en histogramme décrivent la distribution des canaux de couleurs, restreinte à la zone sélectionnée. Il s'agit : <itemizedlist>
+            
+                    <listitem
+><para
+>Du nombre de pixels dans l'image. </para
+></listitem>
+
+                    <listitem
+><para
+>Du nombre de pixels dont les valeurs se trouvent dans la zone sélectionnée. </para
+></listitem>
+
+                    <listitem
+><para
+>De la moyenne. </para
+></listitem>
+
+                    <listitem
+><para
+>De la déviation standard. </para
+></listitem>
+            
+                    <listitem
+><para
+>De la médiane de la portion sélectionnée de l'histogramme. </para
+></listitem>
+
+                    <listitem
+><para
+>Du pourcentage de valeurs se trouvant dans la zone sélectionnée. </para
+></listitem
+>      
+                                                      
+                    <listitem
+><para
+>De la profondeur de couleurs de l'image. </para
+></listitem>
+
+                    <listitem
+><para
+>Du canal alpha de l'image. </para
+></listitem>
+
+                    <listitem
+><para
+>De la source de l'histogramme, soit <guilabel
+>Image entière</guilabel
+> soit <guilabel
+>Région de l'image</guilabel
+> si vous avez sélectionné une zone de l'image dans l'éditeur. </para
+></listitem>
+
+                </itemizedlist>
+
+                </para>
+        
+            </sect3>
+
+            <sect3 id="using-usinghistogram">
+            <title
+>Comment utiliser l'histogramme</title>
+                
+                <para
+>Les histogrammes sont des outils graphiques pour valider la qualité d'une image montrée à l'écran. Le graphique représente les 3 régions de luminosité de l'image.<itemizedlist
+> <listitem
+><para
+> (1) : les tons foncés sur la gauche. </para
+></listitem
+> <listitem
+><para
+> (2) : les tons médians au milieu. </para
+></listitem
+> <listitem
+><para
+> (3) : les tons clairs sur la droite. </para
+></listitem
+> </itemizedlist
+> <example
+> <title
+>Une image d'histogramme dans le mode toutes couleurs</title
+> <screenshot
+><screeninfo
+>Une image d'histogramme dans le mode toutes couleurs</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramdescription.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example
+> La répartition du graphe, ou les pics et les bosses sont groupées, indique si l'image est trop claire, trop sombre ou bien équilibrée. </para>
+        
+                <para
+>Avec une photo sous-exposée, l'histogramme de luminosité sera plutôt déplacé sur la gauche du graphique. <example
+> <title
+>Une photo sous-exposée</title
+> <screenshot
+><screeninfo
+>Une photo sous-exposée</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramsample1.png" format="PNG"/> </imageobject
+></mediaobject
+> </screenshot
+> </example
+> Avec photo surexposée, l'histogramme aura une répartition de luminosité avec un renflement sur la droite du graphique. <example
+> <title
+>Une photo surexposée</title
+> <screenshot
+><screeninfo
+>Une photo surexposée</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramsample3.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example
+> Avec une photo correctement exposée, l'histogramme aura une répartition conduisant à un graphique beaucoup plus centré. <example
+>   <title
+>Une photo correctement exposée</title>
+                    <screenshot
+><screeninfo
+>Une photo correctement exposée</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramsample2.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+                </example>
+                
+                </para>
+
+                <para
+>Important : toutes les photos n'ont pas forcément de renflement au centre de leur histogramme. Cela dépend en fait énormément du sujet de la photo. Dans certains, il peut être correct pour un histogramme d'avoir un pic à l'une ou l'autre de ses extrémités (ou les deux). </para>
+                        
+                <para
+>L'histogramme est un moyen fiable pour déterminer si les photos sont correctement exposées. Si tant est que celles-ci soient sous ou surexposées, un outil de <link linkend="exposure-correct"
+>Correction d'exposition</link
+> doit être utilisé pour corriger la photo. </para>
+                
+            </sect3>
+ 
+        </sect2>
+
+                    
+        <sect2 id="using-sidebargeolocation"
+>       <title
+>L'onglet de géolocalisation</title>
+
+    <para
+>Cet onglet utilise le composant graphique Marble pour afficher une carte d'orientation grossière. Vous pouvez zoomer en avant ou en arrière avec la molette de la souris, en la faisant défiler ou en cliquant et en la maintenant. Déplacez la carte en maintenant le &BGS;.</para>
+                <example
+>   <title
+>L'onglet de géolocalisation</title>
+                    <screenshot
+><screeninfo
+>Pour des cartes de plus haute résolution, utilisez « Plus d'infos »</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadatagps.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+                </example>
+        <para
+>La barre latérale gauche est un outil de recherche par géolocalisation. Appuyez sur <keycombo action="press"
+>&Ctrl;<keycap
+>&BGS;</keycap
+></keycombo
+> pour dessiner un rectangle comme indiqué. Toutes les images dont les coordonnées géographiques se trouvent dans ce rectangle seront affichées. </para>
+    <para
+>Dans la barre latérale de droite, vous verrez une croix indiquant la localisation GPS et à côté d'elle le nom de l'image sélectionnée. Les coordonnées GPS et l'heure sont affichées sous le composant graphique. </para>
+    <para
+>Pour des cartes de plus haute résolution, utilisez le bouton <guibutton
+>Plus d'infos</guibutton
+> pour obtenir dans un navigateur web des détails sur chaque service cartographique disponible.</para>
+    <para
+>Les données de géolocalisation affichées sont actuellement stockées dans les étiquettes EXIF de l'image (et pas encore dans la base de données). Ceci permet que les données de géolocalisation soient lu par tout logiciel qui comprend les coordonnées GPS EXIF.</para>
+
+                 <sect3
+>                <title
+>Qu'est-ce que le GPS ?</title>
+
+                    <para
+>Le <ulink url="http://fr.wikipedia.org/wiki/Global_Positioning_System"
+>Global Positioning System</ulink
+>, appelé habituellement GPS, est le seul système de navigation par satellite pleinement fonctionnel. Une constellation d'une vingtaine de satellites GPS diffuse des signaux horaires très précis par signal radio, ce qui permet à n'importe quel récepteur GPS de déterminer sa position (longitude, latitude et altitude) avec précision, où que ce soit sur Terre. Le système GPS fournit également une référence de temps très précise et un moyen de calculer sa vitesse avec une grande précision. </para>
+                    <para
+>Les informations GPS peuvent être stockées dans les images directement par les appareils photo possédant cette fonction, ou en synchronisant les photos avec un appareil GPS indépendant. Lisez <ulink url="help:/digikam/using-camera.html#using-gps"
+>cette section</ulink
+> pour plus d'informations. </para>
+                </sect3>
+
+    </sect2>
+
+        <sect2 id="using-sidebarcommentstags">
+        <title
+>Commentaires et étiquettes</title>
+           <para
+>Cet onglet de la barre latérale sert à appliquer et modifier les attributs d'images comme les légendes, la notation, la date et les étiquettes. Ces attributs sont stockés dans la base de données, dans les champs de données IPTC et EXIF et font ensuite partie de l'image. Tous les attributs sont accessibles dans la barre latérale telle qu'affichée dans la capture d'écran ci-dessous. Lors de la lecture de l'image, l'ordre de priorité est a) la base de données, b) les champs IPTC et c) les champs EXIF. Ainsi, s'il existe une incohérence entre ces trois ensembles de données, cette priorité sera utilisée et une synchronisation sera effectuée. Cette barre latérale a un navigateur composé des flèches premier-précédent-suivant-dernier en haut lorsqu'elle est affichée dans l'application principale. </para>
+
+           <example
+>  <title
+>exemple de Commentaires et étiquettes dans la barre latérale</title>
+                 <screenshot
+><screeninfo
+>exemple de Commentaires et étiquettes dans la barre latérale</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarcommentstags.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+
+          <sect3>
+          <title
+>La vue commentaires</title>
+           <para
+>La vue Légendes peut être utilisée pour saisir ou copier/coller une légende sans limite de taille (lire la note ci-dessous). Ce champ est compatible UTF-8 ce qui signifie que tous les caractères spéciaux sont acceptés. Les légendes sont copiées dans les champs EXIF et IPTC pour pouvoir être lus par les autres logiciels. </para>
+           <caution
+><para
+>Les données IPTC n'acceptent que les caractères ASCII et sont limités à 2000 caractères (ancienne norme américaine). Tous les textes seront tronqués à 2000 caractères et les caractères spéciaux seront corrompus. Si vous voulez utiliser les champs IPTC dans d'autres logiciels, vous devriez saisir des légendes qui respectent ces restrictions. </para
+></caution>
+    <para
+>Après avoir écrit votre commentaire, cliquez sur le bouton <guibutton
+>Appliquer</guibutton
+> ou allez directement sur l'image suivante. Les légendes seront enregistrées.</para>
+    <para
+>À côté du bouton Appliquer, vous trouverez un bouton <guibutton
+>Plus</guibutton
+>. Celui-ci vous permet soit de lire les métadonnées depuis le fichier sélectionné vers la base de données, soit dans l'autre sens d'écrire les métadonnées de la base vers les fichiers (cette dernière action a lieu de toute façon si vous choisissez des paramètres qui font que les métadonnées sont toujours écrites dans les images).</para>
+
+          </sect3>
+
+          <sect3>
+          <title
+>Date et heure</title>
+
+           <para
+>Dans la section Dates et heures, qui reflète l'heure de prise de vue de la photographie, vous pouvez changer toutes les valeurs. À partir de la liste déroulante, un calendrier s'ouvre et il est possible de saisir l'heure directement dans les champs incrémentiels. L'horodatage est copié dans le champ EXIF « Date et heure ». Si vous voulez changer la date et l'heure de création de nombreuses images, il existe un moyen plus facile (qui nécessite un module externe Kipi). Cette dernière option se trouve sous <menuchoice
+><guimenuitem
+>Image</guimenuitem
+><guimenuitem
+>Ajuster l'heure et la date...</guimenuitem
+></menuchoice
+>. Sélectionnez dans la fenêtre principale les images dont vous voulez changer la date et l'heure et lancez le module externe. </para>
+          </sect3>
+
+          <sect3>
+          <title
+>Notation</title>
+
+           <para
+>La section Notation affiche un modèle de notation utilisant 0 à 5 étoiles qui peut être utilisé dans les recherches et les tris. Il peut être appliqué par un simple clic de souris sur les 5 étoiles de la barre latérale ou via un raccourci clavier : Ctrl+0...5. La notation de la barre latérale ne peut être appliquée qu'à une seule image à la fois. Pour noter plusieurs images, sélectionnez-les et faites un clic droit pour leur définir une note commune. </para>
+           <para
+>La notation est ensuite écrite dans le champ « Urgence » IPTC. Le transcodage suit le schéma donné dans cette table : </para>
+
+              <informaltable
+><tgroup cols="2">
+                <thead
+><row>
+                    <entry
+>Notation dans &digikam;</entry>
+                    <entry
+>Urgence IPTC</entry>
+                    </row
+></thead>
+
+                    <tbody>
+                        <row
+>   <entry
+>-</entry
+>         <entry
+>8</entry
+>      </row>
+
+                        <row
+>   <entry
+>*</entry
+>         <entry
+>7</entry
+>      </row>
+
+                        <row
+>   <entry
+>*</entry
+>         <entry
+>6</entry
+>      </row>
+
+                        <row
+>   <entry
+>**</entry
+>        <entry
+>5</entry
+>      </row>
+
+                        <row
+>   <entry
+>***</entry
+>       <entry
+>4</entry
+>      </row>
+
+                        <row
+>   <entry
+>****</entry
+>      <entry
+>3</entry
+>      </row>
+
+                        <row
+>   <entry
+>****</entry
+>      <entry
+>2</entry
+>      </row>
+
+                        <row
+>   <entry
+>*****</entry
+>     <entry
+>1</entry
+>      </row>
+                     </tbody>
+
+              </tgroup
+></informaltable>
+
+          </sect3>
+
+          <sect3>
+          <title
+>Arbre d'étiquettes</title>
+
+           <para
+>La vue en étiquettes montre un champ de recherche d'étiquettes, l'arbre des étiquettes et une boîte déroulante contenant les étiquettes appliquées précédemment dans cette session de &digikam;. </para>
+           <para
+>L'arbre des étiquettes s'adaptera automatiquement en fonction des mots saisis dans le champ de recherche. Il est donc facile de réduire le nombre d'étiquettes affichées dans l'arbre. Ceci est particulièrement utile si vous avez défini beaucoup d'étiquettes. </para>
+
+           <para
+>La boîte déroulante sous l'arbre des étiquettes est une autre fonctionnalité ergonomique qui vous permet d'étiqueter rapidement une série d'images. Au fur et à mesure que vous appliquez des étiquettes, celles-ci seront ajoutées dans cette boîte pour permettre un accès rapide. </para>
+
+           <para
+>Sinon, vous pouvez simplement appliquer des étiquettes en cochant les cases correspondantes dans l'arbre. Toutes les étiquettes sont enregistrées dans le champ « mots clé » des données IPTC. </para>
+           <note
+><para
+>Si vous avez sélectionné plusieurs images dans la fenêtre principale et que vous cochez une étiquette dans l'arbre, celle-ci ne sera appliquée qu'à l'image mise en valeur et pas à la sélection toute entière. Pour étiqueter des sélections, consultez la section <link linkend="using-sidebartagfilters"
+>Filtres d'étiquettes</link
+>. </para
+></note>
+
+          </sect3>
+
+        </sect2>
+
+
+        <sect2 id="using-sidebartagfilters">
+        <title
+>Filtres d'étiquettes</title>
+           <para
+>La barre latérale de filtre d'étiquettes sert à modifier l'ensemble d'image affiché dans la fenêtre principale. Habituellement, vous utiliserez la barre latérale de gauche avec ses vues Albums, Dates, Étiquettes et Recherche. Lorsqu'en plus une ou plusieurs étiquettes sont cochées dans le filtre d'étiquettes de la barre latérale de droite, seule l'intersection de ces deux sélections s'affichera dans la fenêtre principale. Toutes les étiquettes créées peuvent être utilisées par ce filtre. </para>
+           <para
+>Par exemple, imaginons que vous ayez défini une étiquette « Publique » et que celle-ci soit appliquées à toutes les images sauf celles qui sont privées. Si vous cochez cette étiquette dans la barre latérale de droite, vos images privées (celles qui n'ont pas l'étiquette « Publique ») seront masquées. Quel que soit le mode utilisé dans la barre latérale de gauche, seules les images publiques seront affichées. Un autre exemple typique est la sélection d'un sous-ensemble d'étiquettes depuis l'arbre. Imaginez que vous vouliez afficher les couleurs « Rouge » et « Vert » dans un arbre contenant 7 couleurs différentes en sous-étiquettes. Cochez alors l'étiquette « Couleur » dans la barre latérale de gauche et les étiquettes « Rouge » et « Vert » dans la barre latérale de droite. </para>
+           <para
+>Une autre utilisation est <emphasis
+>l'étiquetage par glisser-déposer</emphasis
+>. Imaginons que vous sélectionniez un ensemble d'images à étiqueter dans la fenêtre principale. Si l'étiquette à attribuer existe déjà, glissez-déposez simplement n'importe quelle image la sélection sur cette étiquette dans la barre latérale droite. Une note contextuelle apparaîtra pour vous demander si vous voulez appliquer cette étiquette. </para>
+
+           <para>
+                 <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebartagfilters.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>Filtres d'étiquettes de la barre latérale</phrase
+></textobject
+></inlinemediaobject>
+           </para>
+
+            <para
+>Dans l'exemple ci-dessus, la fenêtre principale montre les photos correspondant à une date particulière, le filtre d'étiquettes est réglé sur « non étiquetées », ce qui réduit l'ensemble affiché à 3 images. Celles-ci ont été sélectionnées avec Ctrl+a et une étiquette a été glissée-déposée depuis la barre latérale de droite vers la sélection. Une note contextuelle demande si l'étiquette doit être appliquée. </para>
+
+        </sect2>
+
+    </sect1>
+

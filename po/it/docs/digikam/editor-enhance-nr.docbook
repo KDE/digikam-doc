@@ -1,0 +1,194 @@
+  <sect3 id="editor-enhance-nr">
+    <sect3info>
+      <title
+>Riduzione dei disturbi</title>
+      <abstract>
+        <para
+>La <emphasis
+>riduzione dei disturbi</emphasis
+> di &digikam; è un potente strumento per ridurre i disturbi delle immagini. Usa un algoritmo sotto il copyright di Peter Heckert. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>Riduzione dei disturbi</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introduzione</title>
+    <para
+>Questo strumento fornisce dei filtri per immagini selezionabili che rimuovono macchie o altri artefatti causati da sporcizia come polvere o capelli sulla lente. Può anche essere usato per rimuovere i <emphasis
+>disturbi del sensore</emphasis
+> della macchina fotografica, che sono causati magari da alte impostazioni ISO, oltre al cosiddetto <emphasis
+>effetto Moiré</emphasis
+> su immagini acquisite da libri o riviste con uno scanner. </para>
+    <para
+>Se vuoi avere maggiori informazioni sui disturbi dei sensori della macchine fotografiche, dai un'occhiata a questa <ulink url="http://www.cambridgeincolour.com/tutorials/noise.htm"
+>esercitazione</ulink
+>. </para>
+    <sect4 id="using-noisereduction">
+      <title
+>Usare lo strumento per la riduzione dei disturbi</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-noisereduction.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>La finestra per la riduzione dei disturbi</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>La schermata sopra mostra una tipica foto scattata con una macchina digitale usando un'impostazione ISO ad alta sensibilità. Mostra dei disturbi di granularità che possono venire ridotti con questo strumento. </para>
+      <para
+>Il pannello delle immagini ridimensionabile con l'anteprima dell'originale ti aiuta a scorrere l'immagine. Sposta il rettangolo rosso per selezionare un'area che ti permette di giudicare le impostazioni ottimali del filtro. La finestra di anteprima mostra il risultato del filtro usando le impostazioni attuali. Può essere riordinato in quattro diverse combinazioni, come indicato nelle icone sotto l'anteprima dell'originale. Questa schermata mostra la prima disposizione dove viene mostrato, per confronto, lo stesso ritaglio. In fondo all'area di anteprima puoi vedere le impostazioni del <guilabel
+>Fattore di ingrandimento</guilabel
+> per ingrandire un'area dell'immagine. </para>
+      <para
+>Sotto puoi leggere una descrizione completa di tutti i parametri. Nella maggior parte dei casi è necessaria solo la scheda <guilabel
+>Dettagli</guilabel
+>, mentre gli altri parametri nella scheda <guilabel
+>Avanzate</guilabel
+> possono essere lasciati alle loro impostazioni predefinite. <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Raggio</guilabel
+>: questo controllo seleziona la dimensione della finestra scorrevole usata dal filtro. Valori maggiori non implicano più tempo necessario per filtrare ogni pixel dell'immagine, ma possono causare sfocature. Questa finestra scorre nell'immagine, e il colore in essa compreso viene smussato per rimuovere le imperfezioni. In ogni caso dovrebbe essere delle stesse dimensioni della granularità dei disturbi, o un po' di più. Se è più grande del necessario può causare una sfocatura indesiderata. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Soglia</guilabel
+>: usa questo cursore per una regolazione di massima, e la casella numerica una regolazione di precisione. Questo controlla la sensibilità al rilevamento dei bordi, e il valore dovrebbe essere impostato in modo che i bordi e i dettagli siano chiaramente visibili mentre i disturbi siano cancellati. Questo valore non è vincolato a nessun valore di intensità, ma alla derivata seconda dei valori di intensità. Prova a regolarlo per vedere cosa succede. La regolazione deve essere fatta con attenzione, perché il passaggio tra <quote
+>disturbato</quote
+>, <quote
+>giusto</quote
+> e <quote
+>sfocato</quote
+> è molto veloce. Regola con la stessa attenzione con cui ti metteresti a regolare la messa a fuoco della macchina fotografica. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Trama</guilabel
+>: questo controllo imposta la precisione della trama, e il valore può essere usato per avere maggiore o minore accuratezza. Quando viene ridotto, trama e disturbi vengono sfocati; quando viene aumentato la trama viene amplificata, ma anche il disturbo. Non ha praticamente nessun effetto sui bordi dell'immagine, al contrario del filtro <guilabel
+>Bordo</guilabel
+>, che sfocherebbe i bordi se venisse aumentato. Se <guilabel
+>Bordo</guilabel
+> viene regolato in modo tale che i bordi siano nitidi e ci sono ancora troppi disturbi nell'area, si potrebbe usare il dettaglio della <guilabel
+>Trama</guilabel
+> per ridurre i disturbi senza sfocare i bordi. Un altro modo è ridurre il <guilabel
+>Raggio</guilabel
+> e aumentare il <guilabel
+>Bordo</guilabel
+>. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Nitidezza</guilabel
+>: questo controllo imposta il livello di nitidezza, e il valore definisce la distanza in pixel per cui il filtro cerca variazioni di luminanza. Aumentando questo valore si cancellano i disturbi a picco. Puoi eventualmente regolare il filtro <guilabel
+>Bordo</guilabel
+> quando cambi questa impostazione. Quando questo valore è troppo elevato, il filtro adattativo non può più seguire accuratamente i dettagli dell'immagine e i disturbi possono riapparire o può verificarsi una sfocatura. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Bordo</guilabel
+>: questo controllo imposta la nitidezza della precisione del bordo, e il valore migliora la risposta in frequenza del filtro. Quando è troppo elevato non sarà possibile rimuovere tutti i disturbi, o potrebbero apparire dei picchi di disturbo. Impostalo quasi al massimo se vuoi rimuovere dei disturbi molto deboli o artefatti JPEG senza perdere dettagli. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Erosione</guilabel
+>: questo controllo imposta lo scostamento di fase per i bordi, e il valore può essere usato per erodere picchi singoli. Ha un effetto lisciante sui bordi, e aumenta la loro nitidezza erodendoli, in modo che i disturbi ai bordi siano erosi. L'effetto dipende dalla <guilabel
+>Nitidezza</guilabel
+>, dallo <guilabel
+>Smorzamento</guilabel
+> e dal <guilabel
+>Bordo</guilabel
+>. Impostalo al minimo se vuoi rimuovere dei disturbi molto deboli o artefatti JPEG. Quando questo valore viene aumentato, è utile aumentare anche lo <guilabel
+>Smorzamento</guilabel
+>. Questa impostazione aumenta la nitidezza e riduce l'aliasing ai bordi durante la correzione dei disturbi a picco. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Luminanza</guilabel
+>: questo controllo imposta la tolleranza alla luminanza dell'immagine. Si raccomanda di usare solo le impostazioni di tolleranza del <guilabel
+>Colore</guilabel
+> e della <guilabel
+>Luminanza</guilabel
+> per correggere un'immagine, non entrambe allo stesso tempo. Queste impostazioni non hanno influenza sul processo di smussatura principale controllato dalle impostazioni dei <guilabel
+>Dettagli</guilabel
+>. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Colore</guilabel
+>: questo controllo imposta la tolleranza al colore dell'immagine. Si raccomanda di usare solo le impostazioni di tolleranza del <guilabel
+>Colore</guilabel
+> e della <guilabel
+>Luminanza</guilabel
+> per correggere un'immagine, non entrambe allo stesso tempo. Queste impostazioni non hanno influenza sul processo di smussatura principale controllato dalle impostazioni dei <guilabel
+>Dettagli</guilabel
+>. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Gamma</guilabel
+>: questo controllo imposta la tolleranza alla gamma dell'immagine, e il valore può essere usato per aumentare i valori di tolleranza per le aree scure (che normalmente sono più disturbate). Ciò risulta da una maggiore sfocatura delle aree in ombra. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Smorzamento</guilabel
+>: questo controllo imposta la regolazione dello smorzamento del tremolio di fase, e il valore definisce quanto velocemente il raggio del filtro adattativo debba reagire a variazioni di luminanza. Se viene aumentato i bordi sembreranno più lisci, se è troppo alto potrebbe verificarsi una sfocatura. Se è al minimo potrebbero verificarsi disturbi e tremolio di fase ai bordi. Può eliminare i disturbi di picco quando viene aumentato, e questo è il metodo preferito per rimuoverli. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Salva come...</guilabel
+> e <guilabel
+>Carica...</guilabel
+>: questi pulsanti sono usati per fare esattamente quello che descrivono. Qualsiasi parametro di riduzione dei disturbi che hai impostato può essere salvato in un file sul disco e caricato più tardi. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Valori predefiniti</guilabel
+>: questo pulsante reimposta tutte le impostazioni ai loro valori predefiniti. </para>
+          </listitem>
+        </itemizedlist>
+      </para>
+    </sect4>
+      <sect4 id="inaction-noisereduction">
+        <title
+>Riduzione dei disturbi in azione</title>
+        <para
+>Questo è un esempio di come la riduzione dei disturbi può cambiarti la vita. L'immagine originale è (1) e l'immagine corretta è (2). La riduzione del rumore è stata applicata con le impostazioni di base. </para>
+        <para>
+          <inlinemediaobject>
+            <imageobject>
+              <imagedata fileref="&path;editor-noisereduction-preview.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase
+>La riduzione dei disturbi in azione</phrase>
+            </textobject>
+          </inlinemediaobject>
+        </para>
+      </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

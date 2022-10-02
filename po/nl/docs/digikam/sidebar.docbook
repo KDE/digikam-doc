@@ -1,0 +1,841 @@
+ <sect1 id="using-sidebar"
+>            <title
+>De zijbalk van &digikam;</title>
+    <anchor id="sidebar.anchor"/>
+
+        <sect2 id="introduction-rightsidebar">
+        <title
+>Inleiding tot de rechter zijbalk</title>
+           <para
+>Het hoofdvenster van &digikam; heeft een zijbalk aan de rechter rand die belangrijke informatie en acties biedt over de geselecteerde afbeeldingen. Deze zelfde zijbalk is ook beschikbaar in het beeld <guilabel
+>Afbeeldingsbewerker</guilabel
+>. Het kan weergegeven worden door respectievelijk te klikken op een van de vijf tabbladen: </para>
+
+           <para>
+            <itemizedlist>
+
+                <listitem
+><para
+><link linkend="using-sidebarfileproperties"
+>Eigenschappen</link
+> : eigenschappen van bestand en afbeelding, hoofdparameters van de opname (EXIF-tags)</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebarmetadata"
+>Metagegevens</link
+> : EXIF, Notities van de maker, IPTC en GPS gegevens (deze eigenschappen kunnen bewerkt worden door twee Kipi-plug-ins)</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebarcolors"
+>Kleuren</link
+> : histogrammen en ingebedde ICC-profielen</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebargeolocation"
+>Geolocatie</link
+> : Marble widget toont GPS-locatie</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebarcommentstags"
+>Commentaar &amp; tags</link
+> : commentaar, datum &amp; tijdinstelling, waardering, tags</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebartagfilters"
+>Tag-filters</link
+> : tag-filters toegepast op de selectie in het hoofdvenster</para
+></listitem>
+
+            </itemizedlist>
+Door herhaaldelijk op hetzelfde tabblad te klikken zal de zijbalk verschijnen of zich invouwen in de rand. </para>
+        </sect2>
+
+        <sect2 id="using-sidebarfileproperties"
+>    <title
+>Eigenschappen</title>
+           <para
+>De zijbalk voor eigenschappen toont de belangrijkste informatie van de geselecteerde foto welke voor zich spreken. Het is onderverdeeld in de volgende secties: <itemizedlist>
+
+               <listitem
+><para
+>Eigenschappen van het bestand: dit is aan het bestandssysteem gerelateerde informatie</para
+></listitem>
+
+               <listitem
+><para
+>Eigenschappen van de afbeelding: toont de eigenschappen van de afbeelding en het format zoals afmetingen, compressie, kleurdiepte, &etc;</para
+></listitem>
+
+               <listitem
+><para
+>Fotografische eigenschappen: toont een samenvatting van de meest belangrijke parameters bij het nemen van de foto. Deze gegevens worden uit de EXIF-gegevensvelden gehaald, indien beschikbaar</para
+></listitem>
+
+           </itemizedlist>
+
+           <example
+>   <title
+>Bestandseigenschappen in de zijbalk</title>
+                 <screenshot
+><screeninfo
+>Voorbeeld van bestandseigenschappen in de zijbalk</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarfileproperties.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+
+           </para>
+        </sect2>
+
+        <sect2 id="using-sidebarmetadata"
+>          <title
+>Het tabblad Metagegevens</title>
+
+           <para
+>Metadata is data van de foto´s of bestanden, zoals technische data van camera instellingen tijdens het nemen van de foto, informatie over de auteur, auteursrecht, trefwoorden, bijschriften, en coördinaten van de locatie.</para>
+           <para
+>De metadata zijbalk bestaat uit vier sub tabs <guilabel
+>EXIF</guilabel
+>, <guilabel
+>Notities van de maker</guilabel
+>, <guilabel
+>IPTC</guilabel
+> en <guilabel
+>XMP</guilabel
+> data. Aan de linkerkant vindt u twee knoppen waarmee u kunt kiezen tussen het tonen van de volledige en de vereenvoudigde versie van de data. In het midden vindt u het pictogram van een disk waarmee u de metadata op de schijf kunt opslaan. daarnaast ziet u een printer en kopieer-pictogram - dat is precies wat ze doen: de metadata respectievelijk printen of naar het klembord kopiëren. </para>
+           <para
+>Een handig onderdeel is het zoekvak onderaan het metadata tab. tijdens het invoeren van een trefwoord zal de metadata daarboven gefilterd worden totdat u het beperkt heeft tot wat u aan het zoeken bent. het is een snelle manier om bepaalde informatie op te zoeken.</para>
+
+           <para
+>Metagegevens, zoals in deze vier tabs, kunt u op verschillende locaties wijzigen: <itemizedlist>
+                 <listitem
+><para
+>Via de <ulink url="help:/digikam/using-camera.html"
+>camera interface</ulink
+></para
+></listitem>
+                 <listitem
+><para
+>de <ulink url="help:/kipi-plugins/metadataeditor.html"
+>metadata editor</ulink
+></para
+></listitem>
+                 <listitem
+><para
+>de <ulink url="help:/kipi-plugins/geolocalization.html"
+>GPS-locator</ulink
+></para
+></listitem>
+                 <listitem
+><para
+><ulink url="help:/menu-descriptions#synchronize-metadata"
+>metagegevens</ulink
+> van de database naar bestand schrijven</para
+></listitem>
+                 <listitem
+><para
+><ulink url="help:/menu-descriptions#update-db-metadata"
+>metagegevens</ulink
+> van het bestand naar de database schrijven</para
+></listitem>
+             </itemizedlist>
+           </para>
+
+           <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadata.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>Het tabblad Metagegevens</phrase
+></textobject
+></inlinemediaobject>
+           </para>
+
+           <sect3 id="using-sidebarmetadataexif">
+           <title
+>EXIF-tags</title>
+
+                <anchor id="kexif.anchor"/>
+
+                <sect4>
+                <title
+>Wat is EXIF?</title>
+
+                    <para
+>EXIF staat voor <ulink url="https://en.wikipedia.org/wiki/Exif"
+>Exchangeable image file format</ulink
+>. Het was speciaal voor digitale cameras ontworpen. Hierin kunt u veel informatie over de foto opslaan. Deze informatie beschrijft de camera en de instellingen (inclusief de datum en tijdstip) daarvan waarmee de foto is gemaakt. Er kan zelfs een ingebed voorbeeld bij zijn. </para>
+
+                    <para
+>EXIF formaat bevat een verzameling marker secties genaamd <emphasis
+>Image File Directories</emphasis
+> (IFD). De secties die u meestal in een normaal EXIF bestand aantreft zijn de volgende: <itemizedlist>
+
+                        <listitem
+><para
+><guilabel
+>Afbeeldingsinformatie</guilabel
+>: bevat algemene informatie over de foto. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Ingebedde miniatuur</guilabel
+>: bevat informatie over het Ingebedde miniatuur. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Foto-informatie</guilabel
+>: bevat uitgebreide informatie over de foto. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Interoperability</guilabel
+>: bevat informatie voor interoperabiliteit tussen verschillende EXIF-implementaties. </para
+></listitem>
+
+                    </itemizedlist>
+
+                    </para>
+
+                </sect4>
+
+                <sect4>
+                <title
+>Hoe kan ik de EXIF-weergave gebruiken?</title>
+
+                    <para
+>U kunt van de geselecteerde foto de ingebedde EXIF informatie bekijken in de eerste zijbalk tab. De EXIF Viewer is alleen informatief: u kunt de EXIF-secties er niet mee wijzigen. Als de lijst met items langer is dan de beschikbare ruimte, scroll dan omlaag met het muiswiel. </para>
+
+                    <para
+>U kunt op twee verschillende detailniveau´s bekijken: <itemizedlist>
+
+                        <listitem
+><para
+><guilabel
+>Simple</guilabel
+>: toont alleen de belangrijkste EXIF-tags van de foto. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Volledig</guilabel
+>: toont alle EXIF-tags. </para
+></listitem>
+
+                    </itemizedlist>
+
+                    </para>
+
+                    <para
+>Sommige fabrikanten zoals Canon, Fujifilm, Nikon, Minolta, en Sigma voegen extra EXIF-tags toe. Deze tags bevatten fabrikant en model specifieke informatie. Deze zijn terug te vinden in de <guilabel
+>Makernote</guilabel
+> tab. </para>
+
+                </sect4>
+
+           </sect3>
+
+           <sect3 id="using-sidebarmetadatamakernote">
+           <title
+>Makernote Tags</title>
+
+                <sect4>
+                <title
+>Wat is Makernote?</title>
+
+                    <para
+>De EXIF-standaard definieert een Makernote tag, waarin het voor camera fabrikanten toegestaan is eigen gedefinieerde metadata te plaatsen. De camera fabrikanten gebruiken dit steeds meer voor het opslaan van veel diverse camera-instellingen die niet in de EXIF-standaard voorkomen zoals opnamemodus, nabewerking-instellingen, serie nummer, focusseermodus, &etc; maar de indeling van deze tag is fabriekseigen. </para>
+
+                </sect4>
+
+                <sect4>
+                <title
+>Hoe kan ik de Makernote-weergave gebruiken?</title>
+
+                    <para
+>U kunt van de geselecteerde foto de ingebedde Makernote informatie bekijken in deze zijbalk tab. De Makernote Viewer is alleen informatief: u kunt de Makernote-secties er niet mee wijzigen. </para>
+
+                    <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadatamakernote.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>De Makernote-weergave in actie</phrase
+></textobject
+></inlinemediaobject>
+                    </para>
+
+                </sect4>
+
+           </sect3>
+
+           <sect3 id="using-sidebarmetadataiptc">
+           <title
+>IPTC-tags</title>
+
+                <sect4>
+                <title
+>Wat is IPTC?</title>
+
+                    <para
+>De <ulink url="http://www.iptc.org"
+>International Press Telecommunications Council</ulink
+>, is een consortium van de belangrijkste persagentschappen en nieuwsdiensten uit de wereld. Het ontwikkelt en onderhoud technische standaarden voor verbeterde uitwisseling van nieuws welke bij nagenoeg alle belangrijke persagentschappen in gebruik zijn. </para>
+
+                    <para
+>Het IPTC is opgericht in 1965 door een groep van persagentschappen voor het veiligstellen van de telecommunicatie belangen van de pers in de wereld. Sinds eind jaren zeventig heeft IPTC zich gefocust op het ontwikkelen en publicatie van industrie-standaarden voor de uitwisseling van nieuws data. </para>
+
+                    <para
+>De IPTC heeft met name een verzameling van metadata attributen gedefinieerd die u kunt toepassen op foto´s. Deze zijn in 1979 bedacht en in 1991 belangrijk gewijzigd naar het "Information Interchange Model" (IIM), maar het concept kreeg een echte verbetering in 1994 toen Adobe een specificatie definieerde voor het echt embedden van de metadata in digitale foto-bestanden - bekend als "IPTC headers". </para>
+
+                </sect4>
+
+                <sect4>
+                <title
+>Hoe kan ik de IPTC-weergave gebruiken?</title>
+
+                    <para
+>U kunt van de geselecteerde foto de ingebedde IPTC informatie bekijken in deze zijbalk tab. De IPTC Viewer is alleen informatief: u kunt de IPTC-secties er niet mee wijzigen. </para>
+
+                    <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadataiptc.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>De IPTC-weergave in actie</phrase
+></textobject
+></inlinemediaobject>
+                    </para>
+
+                </sect4>
+
+           </sect3>
+
+         </sect2>
+
+        <sect2 id="using-sidebarcolors"
+>            <title
+>Kleuren</title>
+           <para
+>De kleuren zijbalk heeft twee sub tabs <guilabel
+>Histogram en ICC Profiel</guilabel
+>. Hier kunt u meer lezen over <link linkend="using-iccprofile"
+>Kleurenbeheer</link
+> </para>
+
+            <sect3 id="using-histogramviewer">
+            <title
+>Histogramweergave</title>
+            
+                <anchor id="histogramviewer.anchor"/>
+            
+                <para
+>Het histogram van een foto toont welke kleuren aanwezig zijn en de hoeveelheid daarvan in de foto. Als uw foto een kleurzweem heeft dan kan u wellicht zien wat het probleem is door het histogram te bestuderen. </para>
+            
+                <para
+>De Histogram weergave toont de statistische distributie van kleuren in de geselecteerde foto. Het is alleen informatief: u kunt er niets mee wijzigen. Als u een op de histogram gebaseerde kleuren correctie wilt uitvoeren dan moet u de plugin voor Niveau Aanpassen of de Curves Aanpassen gebruiken. </para>
+                                                
+                <example
+>   <title
+>De histogramweergave in actie</title>
+                    <screenshot
+><screeninfo
+>De histogramweergave in actie</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarcolorshistogramviewer.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+                </example>
+            
+                <para
+>Een foto kan ontleed worden in de kleurkanalen <guilabel
+>Rood</guilabel
+>, <guilabel
+>Groen</guilabel
+>, <guilabel
+>Blauw</guilabel
+>, <guilabel
+>Alpha</guilabel
+>. <guilabel
+>Alpha</guilabel
+> kanaal is een laag in de foto die transparantie ondersteund (zoals PNG of &GIF; afbeeldingen). Elk kanaal heeft een intensiteit-bereik van 0 tot 255 (integer waarden). Dus, een zwarte pixel is gecodeerd als 0 in alle kleurkanalen; een witte pixel als 255 in alle kleurkanalen. Een transparante pixel is gecodeerd als 0 in het alpha kanaal; een ondoorzichtige pixel als 255. </para>
+            
+                <para
+>Met de histogramweergave kunt u elk kanaal apart bekijken: <itemizedlist>
+            
+                    <listitem
+><para
+><guilabel
+>Lichtsterkte</guilabel
+>: toont de distributie van de helderheidswaarden. </para
+></listitem>
+
+                    <listitem
+><para
+><guilabel
+>Rood</guilabel
+>, <guilabel
+>Groen</guilabel
+> en <guilabel
+>Blauw</guilabel
+>: tonen de distributie van de intensiteitsniveaus voor de rood-, groen-, en blauwkanalen. </para
+></listitem>
+                
+                    <listitem
+><para
+><guilabel
+>Alpha</guilabel
+>: toont de distributie van de dichtheidsniveaus. Als een laag geheel ondoorzichtig of geheel doorzichtig is, dan zal de histogram een enkelvoudige balk tonen aan de linker of rechter kant. </para
+></listitem>
+
+                    <listitem
+><para
+><guilabel
+>Kleuren</guilabel
+>: laat de <guilabel
+>Rood</guilabel
+>, <guilabel
+>Groen</guilabel
+>, en <guilabel
+>Blauw</guilabel
+> histogrammen bij elkaar opgeteld zien, zodat u alle kleuren distributie informatie in een enkele blik kan overzien. </para
+></listitem>
+                            
+                </itemizedlist>
+            
+                </para>
+            
+                <para
+>Met <guilabel
+>Schaal</guilabel
+> instellen: via deze keuzemogelijkheid kunt u instellen of u de histogram ziet met een lineaire of een logaritmische schaal Voor met een digitale camera gemaakte foto's is meestal de lineaire modus het handigst, maar bij afbeeldingen met daarop grote vlakken met een constante kleur, zal een lineaire histogram gedomineerd worden door een enkele piek. In zulke gevallen zal een logaritmische histogram handiger zijn. </para>
+
+                <para
+>U kunt indien gewenst de <guilabel
+>Statistieken</guilabel
+> onderaan het dialoogvenster beperken tot een beperkt bereik. U kunt het bereik op twee manieren beperken: <itemizedlist>
+            
+                    <listitem
+><para
+>Klik en sleep de muisaanwijzer over de histogramweergave om het bereik te selecteren. </para
+></listitem>
+
+                    <listitem
+><para
+>Gebruik de draaivelden onder de histogramweergave. Het linker draaiveld is de onderkant van het bereik, het rechter draaiveld de bovenkant. </para
+></listitem>
+            
+                </itemizedlist>
+                            
+                </para
+> 
+            
+                <para
+>De statistieken onder het histogrambeeld geven informatie over de kanaalwaarden, beperkt tot het geselecteerde bereik. Deze zijn: <itemizedlist>
+            
+                    <listitem
+><para
+>Het aantal pixels in de foto. </para
+></listitem>
+
+                    <listitem
+><para
+>Het aantal waarvan de waarde binnen het geselecteerde bereik valt. </para
+></listitem>
+
+                    <listitem
+><para
+>Gemiddelde. </para
+></listitem>
+
+                    <listitem
+><para
+>Standaardafwijking. </para
+></listitem>
+            
+                    <listitem
+><para
+>De mediaan van het geselecteerde gedeelte van het histogram. </para
+></listitem>
+
+                    <listitem
+><para
+>Het percentage waarvan de waarde in de geselecteerde bereik valt. </para
+></listitem
+>      
+                                                      
+                    <listitem
+><para
+>De kleurendiepte van de afbeelding. </para
+></listitem>
+
+                    <listitem
+><para
+>Alfa-kanaal van de foto. </para
+></listitem>
+
+                    <listitem
+><para
+>De bron van de histogram is naar keuze <guilabel
+>Volledige afbeelding</guilabel
+> of <guilabel
+>Afbeeldingsgebied</guilabel
+> als u in de editor een gedeelte van de foto heeft geselecteerd. </para
+></listitem>
+
+                </itemizedlist>
+
+                </para>
+        
+            </sect3>
+
+            <sect3 id="using-usinghistogram">
+            <title
+>Hoe gebruikt u een histogram</title>
+                
+                <para
+>Histogrammen zijn een grafisch hulpmiddel bij het bepalen van de kwaliteit van de op het scherm getoonde foto. De grafiek geeft de 3 helderheid gebieden weer van de foto: <itemizedlist
+> <listitem
+><para
+> (1) : Aan de linkerkant de schaduwen. </para
+></listitem
+> <listitem
+><para
+> (2) : In het midden de middentonen. </para
+></listitem
+> <listitem
+><para
+> (3) : Aan de rechterkant de oplichtende gedeeltes. </para
+></listitem
+> </itemizedlist
+> <example
+> <title
+>Een histogram in alle kleuren mode van een foto</title
+> <screenshot
+><screeninfo
+>Een histogram in alle kleuren mode van een foto</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramdescription.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example
+> De opbouw van de grafiek, waar de bergen en de dalen zijn, geeft een indicatie of een foto te donker is, te licht is, of goed in balans. </para>
+        
+                <para
+>Bij een onderbelichte foto zal de de piek van de helderheid meestal aan de linkerkant van de histogram liggen. <example
+> <title
+>Een onderbelichte foto</title
+> <screenshot
+><screeninfo
+>Een onderbelichte foto</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramsample1.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example
+> Bij een overbelichte foto zal de de piek van de helderheid meestal aan de rechterkant van de histogram liggen. <example
+> <title
+>Een overbelichte foto</title
+> <screenshot
+><screeninfo
+>Een overbelichte foto</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramsample3.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example
+> Bij een goed belichte foto zal de de piek van de helderheid meestal dicht bij het midden van de histogram liggen. <example
+>   <title
+>Een juist belichte foto</title>
+                    <screenshot
+><screeninfo
+>Een juist belichte foto</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramsample2.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+                </example>
+                
+                </para>
+
+                <para
+>Belangrijk: niet alle foto´s hoeven deze uitstulping in het midden van de histogram te hebben. Veel hangt af van het onderwerp op de foto. In sommige gevallen kan het heel toepasselijk zijn dat er een piek aan het ene eind is of aan het andere, of aan beide. </para>
+                        
+                <para
+>Het histogram is een betrouwbare manier om te beslissen of een foto wel of niet goed is belicht. Als het histogram een onder- of overbelichting aantoont dan kunt u een <link linkend="exposure-correct"
+>Belichtingscorrectie </link
+> gebruiken voor correctie van de foto. </para>
+                
+            </sect3>
+ 
+        </sect2>
+
+                    
+        <sect2 id="using-sidebargeolocation"
+>       <title
+>De Geolocatie-tab</title>
+
+    <para
+>Deze tab is gebaseerd op het marble widget voor het tonen van een landkaart voor de oriëntatie. U kunt met het muiswiel in- en uitzoomen door het naar keuze te scrollen of door te verslepen. Wandel over de kaart door de &LMB; in te drukken.</para>
+                <example
+>   <title
+>De Geolocatie-tab</title>
+                    <screenshot
+><screeninfo
+>Kies voor kaarten met een hogere resolutie "Meer informatie"</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadatagps.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+                </example>
+        <para
+>De linker zijbalk is een geo-search tool. Klik op de <keycombo action="press"
+>&Ctrl;<keycap
+>linker muisknop</keycap
+></keycombo
+> om op de landkaart een rechthoek te openen. Alle foto´s waarvan de coördinaten in dat rechthoek vallen zullen getoond worden. </para>
+    <para
+>In de rechter zijbalk vindt u een dat de GPS-locatie aangeeft met de geselecteerde foto ernaast. Het GPS coördinaat en de tijd zijn onder het widget te zien. </para>
+    <para
+>Voor een kaart met een hogere resolutie klikt u op de knop <guibutton
+>Meer informatie</guibutton
+> om een gedetailleerde map service (Gekozen in het linker keuzevak) in een Internet browser te openen.</para>
+    <para
+>De getoonde positie data zijn eigenlijk in de EXIF tags van de foto opgeslagen(en nog niet in de database). Hierdoor kan de locatie door elk ander programma dat EXIF GPS data begrijpt worden ingelezen.</para>
+
+                 <sect3
+>                <title
+>Wat is GPS?</title>
+
+                    <para
+>Het <ulink url="http://en.wikipedia.org/wiki/Global_Positioning_System"
+>Global Positioning System</ulink
+> meestal GPS genoemd, is het enige volledig werkend satelliet navigatie systeem. Een constellatie van meer dan twee dozijn GPS satellieten zenden nauwkeurige timing signalen via de radio, waarmee elke GPS ontvanger nauwkeurig (lengte, breedte, en hoogte) overal op de aarde zijn locatie kan bepalen. GPS ook een zeer precieze tijdreferentie en zeer nauwkeurig de relatieve snelheid uitzenden. </para>
+                    <para
+>GPS informatie kan door camera´s die dit ondersteunen direct in foto´s worden opgeslagen maar ook later door de foto te synchroniseren met een externe GPS track. Lees ook deze <ulink url="help:/digikam/using-camera.html#using-gps"
+>sectie</ulink
+> voor meer informatie. </para>
+                </sect3>
+
+    </sect2>
+
+        <sect2 id="using-sidebarcommentstags">
+        <title
+>Titel &amp; Tags</title>
+           <para
+>Deze zijbalk dient om foto-attributen zoals titels, waardering,datum en tags toe te voegen en te bewerken. De attributen worden in de IPTC en EXIF data velden van de bijbehorende database opgeslagen en worden op die manier onderdeel van de foto. Alle attributen zijn via een zijbalk toegankelijk zoals in het schermafdruk hieronder is te zien. Tijdens het inlezen van de foto is de prioriteit-volgorde a) database b) IPTC en c) EXIF. als er een verschil is tussen deze drie, dan wordt deze prioriteit gevolgd en volgt er een synchronisatie. Deze zijbalk heeft navigatieknoppen in de vorm van eerste-vorige- volgende-laatste bovenaan het hoofdvenster. </para>
+
+           <example
+>  <title
+>Zijbalk Titels &amp; Tags met voorbeeld</title>
+                 <screenshot
+><screeninfo
+>Zijbalk Titels &amp; Tags met voorbeeld</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarcommentstags.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+
+          <sect3>
+          <title
+>Commentaar venster</title>
+           <para
+>Het commentaar venster kunt u gebruiken om een titel van onbeperkte grootte in te voeren of te plakken (lees de opmerking hieronder). De tekst is UTF-8 compatibel, wat inhoud dat alle speciale karakters toegestaan zijn. Het commentaar wordt ook naar EXIF en IPTC velden gekopieerd zodat andere programma´s het ook kunnen gebruiken. </para>
+           <caution
+><para
+>IPTC data ondersteund alleen ASCII karakters en is beperkt tot 2000 karakters (oude Amerikaanse norm). Alle tekst na 2000 karakters is afgekapt, en speciale karakters zullen misvormd zijn. als het uw bedoeling is om de IPTC commentaar velden in andere programma´s te gebruiken dan moet u met deze beperkingen rekening houden. </para
+></caution>
+    <para
+>Na het invoeren van het commentaar u gaat onmiddellijk naar de volgende foto of kiest u de knop <guibutton
+>toepassen</guibutton
+> waarna de commentaren worden opgeslagen.</para>
+    <para
+>Vlakbij de Toepassen-knop is er de knop <guibutton
+>Meer</guibutton
+>. Van hieruit kunt kiezen om of de metadata van het bestand naar de database te kopiëren, of andersom, de metadata naar het bestand te kopiëren (het laatste zal altijd plaatsvinden als u een metadata-instelling heeft gekozen dat alle metadata in het bestand wordt opgeslagen).</para>
+
+          </sect3>
+
+          <sect3>
+          <title
+>Datum &amp; tijd</title>
+
+           <para
+>In de Datum &amp; Tijd sectie, wat het tijdstip waarop de foto is genomen weergeeft, kunt u alle waarden wijzigen. Via het keuzemenu voor de datum opent u een kalender, maar het tijdstip kunt u ook direct invoeren door het direct te typen. De datum zal naar het EXIF 'Date and Time' veld gekopieerd worden. Als u het tijdstip &amp; datum van een aantal foto´s wilt wijzigen dan is er een makkelijker methode beschikbaar (de Kipi-plugins zijn daarvoor nodig). Deze laatste methode kunt u vinden onder <menuchoice
+><guimenuitem
+>Afbeelding</guimenuitem
+><guimenuitem
+>Datum &amp; tijd aanpassen</guimenuitem
+></menuchoice
+>. Selecteer in het hoofdvenster de aan te passen foto´s en start de plugin. </para>
+          </sect3>
+
+          <sect3>
+          <title
+>Waardering</title>
+
+           <para
+>De waardering sectie heeft een waarderingschema van 0 tot 5 sterren dat u kunt gebruiken bij het zoeken en bij het sorteren. U kunt ze via een enkele muisklik op een van de 5 sterren in de zijbalk of via de sneltoets Ctrl+0...5 uitdelen. De waardering via de zijbalk kunt u maar aan een foto tegelijk geven. Om aan een aantal foto´s tegelijk een waardering te geven, selecteert u ze en gebruikt vervolgens het contextmenu (rechtsklikken) om ze een waardering te geven. </para>
+           <para
+>De waardering zal vervolgens naar het IPTC 'urgency' data veld geschreven worden. De vertaalslag zal het schema in deze tabel volgen: </para>
+
+              <informaltable
+><tgroup cols="2">
+                <thead
+><row>
+                    <entry
+>Waardering in &digikam;</entry>
+                    <entry
+>IPTC Urgentie</entry>
+                    </row
+></thead>
+
+                    <tbody>
+                        <row
+>   <entry
+>-</entry
+>         <entry
+>8</entry
+>      </row>
+
+                        <row
+>   <entry
+>*</entry
+>         <entry
+>7</entry
+>      </row>
+
+                        <row
+>   <entry
+>*</entry
+>         <entry
+>6</entry
+>      </row>
+
+                        <row
+>   <entry
+>**</entry
+>        <entry
+>5</entry
+>      </row>
+
+                        <row
+>   <entry
+>***</entry
+>       <entry
+>4</entry
+>      </row>
+
+                        <row
+>   <entry
+>****</entry
+>      <entry
+>3</entry
+>      </row>
+
+                        <row
+>   <entry
+>****</entry
+>      <entry
+>2</entry
+>      </row>
+
+                        <row
+>   <entry
+>*****</entry
+>     <entry
+>1</entry
+>      </row>
+                     </tbody>
+
+              </tgroup
+></informaltable>
+
+          </sect3>
+
+          <sect3>
+          <title
+>Boomstructuur van tags</title>
+
+           <para
+>Het tag-vensterdialoog toont een aanpasbare zoekvak voor tags, een boomstructuur met tags en een keuzemenu met de tags die eerder in deze sessie in &digikam; zijn toegepast. </para>
+           <para
+>De boomstructuur met de tags past zich dynamisch aan de zoekwoorden die u in het zoekvak invult. Dit maakt het daarom erg makkelijk om het aantal mogelijkheden te beperken tijdens het zoeken naar een tag. Dit onderdeel is natuurlijk alleen handig als u veel tags heeft. </para>
+
+           <para
+>Het keuzemenu onderaan is nog zo'n handig onderdeel voor het handig taggen van een serie foto's. De verschillende tags die u gebruikt blijven in dit keuzemenu zodat u ze snel bij de hand heeft. </para>
+
+           <para
+>Andere tags past u eenvoudig toe door op hun vakje in de boomstructuur te klikken. Alle tags van een foto vindt u beschreven in het IPTC 'keyword' data veld. </para>
+           <note
+><para
+>In het geval dat u een aantal foto's heeft geselecteerd om daar een tag uit de boomstructuur aan vast te koppelen dan wordt deze alleen aan de gemarkeerde foto en niet aan de rest van de selectie. Als u een selectie een tag wilt geven, lees dan eerst sectie <link linkend="using-sidebartagfilters"
+>Tag-filters</link
+>. </para
+></note>
+
+          </sect3>
+
+        </sect2>
+
+
+        <sect2 id="using-sidebartagfilters">
+        <title
+>Tag-filters</title>
+           <para
+>De tag-filter zijbalk gebruikt u om een verzameling in het hoofdvenster getoonde foto's te wijzigen. Normaal gesproken gebruikt u de linker zijbalk met de zoekvensters voor Albums, Datums en Tags. Als u daarnaast nog een of meer tags in de rechter zijbalk heeft geselecteerd, dan zal alleen een doorsnede van deze twee selecties zichtbaar zijn. Alle aangemaakte tags zijn beschikbaar. </para>
+           <para
+>U heeft als voorbeeld een tag met de naam 'public' die aan al uw foto's is gekoppeld behalve uw privé foto's. U kunt vervolgens in de rechter zijbalk deze 'public' tag selecteren om de privé foto's te verbergen (al diegene die niet de 'public' tag hebben). Welke selectie mode u ook kiest in de linker zijbalk, alleen de 'public' foto's zullen te zien zijn. Een ander veel voorkomend voorbeeld is de selectie van een aantal subtags in een boomstructuur. Stel dat u in een tag-boom met 7 verschillende kleuren alleen ´rood´ en ´groen´ wilt laten zien. Klik eenvoudig op de ´color´-tag en schakel vervolgens ´rood´ en ´groen´ in via de rechter zijbalk. </para>
+           <para
+>Een ander gebruik is het <emphasis
+>taggen door verslepen en laten vallen</emphasis
+>. Stel dat u in het hoofdvenster een aantal foto´s heeft geselecteerd om deze te taggen. Als de tag al bestaat, dan kunt u het eenvoudig vanuit de rechter zijbalk verslepen naar de selectie (elke van de gemarkeerde foto´s). Een dialoog zal zich openen met daarin de vraag of de tag toegepast moet worden. </para>
+
+           <para>
+                 <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebartagfilters.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>Tagfilters in de zijbalk</phrase
+></textobject
+></inlinemediaobject>
+           </para>
+
+            <para
+>In het voorbeeld van hierboven is in het hoofdvenster de foto´s te zien die geselecteerd zijn op een datum, het tag filter is ingesteld op 'niet tagged', wat de verzameling beperkt tot 3 foto´s. Ze zijn geselecteerd met Ctrl+a, waarna een tag vanuit de rechter boomstructuur op de selectie erop is losgelaten. Een pop-up dialoogvenster vraagt of de tag toegepast moet worden. </para>
+
+        </sect2>
+
+    </sect1>
+

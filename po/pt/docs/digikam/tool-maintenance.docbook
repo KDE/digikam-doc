@@ -1,0 +1,186 @@
+<chapter id="tool-maintenance">
+<chapterinfo>
+
+    <abstract>
+        <para
+>A Manutenção é uma ferramenta para executar processos em segundo plano para manter as colecções de imagens e o conteúdo da base de dados. </para>
+    </abstract>
+
+    <keywordset>
+        <keyword
+>Manutenção</keyword>
+        </keywordset>
+    </chapterinfo>
+
+    <title
+>Ferramenta de Manutenção</title>
+
+    <sect1 id="tool-maintenance-intro">
+        <title
+>Introdução</title>
+
+        <para
+>Dependendo do seu fluxo de trabalho, da sua configuração do &digikam; e se trabalha na sua colecção de imagens noutros programas, poderá ser necessário executar algumas operações de manutenção de tempos a tempos para actualizar as bases de dados do &digikam; e também as suas imagens, no que diz respeito aos duplicados, marcas das caras, legendas de qualidade, etc. A ferramenta de manutenção poderá fazer isso por si, até mesmo mais que uma operação, dependendo dos seus requisitos. </para>
+
+    </sect1>
+
+    <sect1 id="tool-maintenance-features">
+        <title
+>As Funcionalidades de Manutenção</title>
+
+        <sect2 id="tool-maintenance-features-common">
+            <title
+>As Opções Comuns</title>
+
+            <para
+>Na secção de Opções Comuns, poderá restringir o âmbito dos processos de manutenção a determinados álbuns ou marcas. Tem de desligar primeiro a opção <guilabel
+>Colecção de álbuns inteira</guilabel
+> ou <guilabel
+>Colecção de marcas inteira</guilabel
+> para obter o acesso aos campos das listas onde poderá seleccionar os álbuns ou marcas que deseja. Se mudar dos <guilabel
+>Álbuns</guilabel
+> para as <guilabel
+>Marcas</guilabel
+> ou vice-versa, a sua selecção no item que ficou desactivado irá permanecer inalterada, o que poderá ser útil se precisar de uma dada selecção com maior frequência. </para>
+            
+            <para
+>Dado que muitos dos processos que a ferramenta de manutenção consegue fazer consomem bastante tempo (dependendo também do âmbito, como é óbvio), tem a opção de assinalar <guilabel
+>Trabalhar em todos os núcleos de processamento</guilabel
+>, se a sua máquina tiver mais que um e este não estiver ocupado de facto. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-scan">
+            <title
+>A Ferramenta de Pesquisa por Itens Novos</title>
+
+            <para
+>Este processo irá sondar as colecções que definiu em <menuchoice
+> <guimenu
+>Configuração</guimenu
+><guisubmenu
+>Configurar o &digikam;</guisubmenu
+><guimenuitem
+>Colecções</guimenuitem
+> </menuchoice
+> para os itens novos, &ie; os ficheiros de imagens que adicionou às suas colecções enquanto o &digikam; não estava em execução. Também poderá executar este processo automaticamente no arranque do &digikam; se assinalar a opção <guilabel
+>Sondar os itens novos no arranque</guilabel
+> em <menuchoice
+> <guimenu
+>Configuração</guimenu
+><guisubmenu
+>Configurar o &digikam;</guisubmenu
+><guimenuitem
+>Diversos</guimenuitem
+> </menuchoice
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-thumbs">
+            <title
+>A Ferramenta de Reconstrução de Miniaturas</title>
+
+            <para
+>A reconstrução das miniaturas poderá ser necessária se tiver trabalhado com as suas imagens com outras aplicações ou se tiver alterado o tamanho das miniaturas em <menuchoice
+> <guimenu
+>Configuração</guimenu
+><guisubmenu
+>Configurar o &digikam;</guisubmenu
+><guisubmenu
+>Vistas</guisubmenu
+><guimenuitem
+>Árvores</guimenuitem
+> </menuchoice
+>. A opção <quote
+>Sondar os itens modificados ou não-catalogados</quote
+> poderá acelerar o processo no primeiro caso ou se tiver acabado de adicionar imagens à sua colecção. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-fingerprints">
+            <title
+>A Ferramenta de Reconstrução de Impressões-Digitais</title>
+
+            <para
+>As impressões digitais são necessárias para procurar duplicados e itens semelhantes, assim como para encontrar imagens com base em desenhos. Para uma descrição mais detalhada, veja a <link linkend="using-mainwindow-fuzzysearches"
+>Área Difusa</link
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-duplicates">
+            <title
+>A Ferramenta de Pesquisa de Duplicados</title>
+
+            <para
+>A Ferramenta de Pesquisa de Duplicados faz o mesmo que a opção <guilabel
+>Procurar duplicados</guilabel
+> na Área Difusa, mas aqui podê-la-á combinar com outras operações de manutenção, tendo ainda a hipótese de assinalar a opção <quote
+>Trabalhar em todos os núcleos de processamento</quote
+> nas Opções Comuns (ver acima) para acelerar o processo. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-faces">
+            <title
+>A Ferramenta de Gestão de Caras</title>
+            <subtitle
+>Detectar e Reconhecer Caras</subtitle>
+
+            <para
+>Este é o mesmo processo que poderá aceder, na Área das Pessoas, com o botão <guilabel
+>Sondar a colecção por caras</guilabel
+>. Aqui só não poderá definir o parâmetro 'Rápido - Preciso' e a opção <quote
+>Limpar e reconstruir todos os dados de treino</quote
+>. Para mais informações sobre as opções de Gestão de Dados das Caras, veja a <link linkend="using-mainwindow-peopleview"
+>Área das Pessoas</link
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-quality">
+            <title
+>A Ferramenta de Ordenação de Qualidade das Imagens</title>
+
+            <para
+>A Ordenação da Qualidade da Imagem atribui legendas de qualidade às imagens, de acordo com a configuração em <menuchoice
+> <guimenu
+>Configuração</guimenu
+><guisubmenu
+>Configurar o &digikam;...</guisubmenu
+><guimenuitem
+>Ordenação da Qualidade da Imagem</guimenuitem
+> </menuchoice
+>. Aí, também terá de activar esta ferramenta se a desejar usar. Dado que é um processo que consome bastante tempo, é uma boa ideia assinalar a opção <guilabel
+>Trabalhar em todos os núcleos de processamento</guilabel
+> e restringir a tarefa a certos álbuns ou marcas. A ferramenta irá atribuir uma bandeira vermelha para os <quote
+>rejeitados</quote
+>, uma amarela para os <quote
+>pendentes</quote
+> e uma verde para os <quote
+>aceites</quote
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-sync">
+            <title
+>A Ferramenta de Sincronização de Meta-Dados</title>
+
+            <para
+>A FAZER </para>
+
+        </sect2>
+
+    </sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

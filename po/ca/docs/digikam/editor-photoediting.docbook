@@ -1,0 +1,577 @@
+ <sect1 id="photographic-editing"
+> <title
+>Edició fotogràfica: Flux de treball</title>
+
+    <sect2 id="image-editing-tools"
+> <title
+>Eines per a l'edició d'imatges/flux de treball</title>
+
+        <sect3 id="standard-workflow"
+> <title
+>Una proposta de flux de treball estàndard</title>
+
+            <para
+>En realitzar un flux de treball bàsic, les àrees principals a considerar són: <orderedlist
+> <listitem
+><para
+>Exposició: <link linkend="editor-color-wb"
+>Balanç de blancs</link
+></para
+></listitem
+> <listitem
+><para
+>Color: <link linkend="editor-color-wb"
+>Balanç de blancs</link
+></para
+></listitem
+> <listitem
+><para
+>Punts blancs i negres: <link linkend="editor-color-wb"
+>Balanç de blancs</link
+> o <link linkend="editor-color-levels"
+>Ajustar els nivells</link
+></para
+></listitem
+> <listitem
+><para
+>Contrast: <link linkend="editor-color-curves"
+>Ajustar les corbes</link
+></para
+></listitem
+> <listitem
+><para
+>Saturació: <link linkend="editor-color-wb"
+>Balanç de blancs</link
+>, <link linkend="editor-filters-colorsfx"
+>Llampant</link
+> o <link linkend="editor-color-correction"
+>To/Saturació/Lluminositat</link
+></para
+></listitem
+> <listitem
+><para
+>Canvi de mida (interpolació): <link linkend="editor-transform-resize"
+>Canviar la mida</link
+></para
+></listitem
+> <listitem
+><para
+><link linkend="editor-enhance-sharpen"
+>Agudització</link
+></para
+></listitem
+> <listitem
+><para
+><ulink url="help:/digikam/index.html#dam"
+>Gestió d'actius digitals</ulink
+> (aplicar etiquetes, comentaris, valoració, geolocalització, desar sota un nom nou)</para
+></listitem
+> </orderedlist
+> Recomanem aquesta seqüència de passos en l'edició d'imatges per assegurar una qualitat fotogràfica òptima al producte final. En particular, mai s'ha de realitzar l'agudització abans de l'últim pas. I us recomanem utilitzar un format sense pèrdua com PNG o TIFF per emmagatzemar les fotografies. En cas contrari, perdreu una mica cada vegada que deseu els resultats. Si us ho podeu permetre, utilitzeu 16 bits/canal per a les millors fotografies. Si voleu canviar l'espai de color, sobretot si voleu treballar amb el CIEL *a*b, es requereixen 16 bits per canal per evitar els efectes de truncament. </para>
+
+            <para
+>Si canvieu el pas 4 i 5, el qual és molt possible si el contrast inicial ja és molt bo, podeu realitzar el primer ajust 4 en la mateixa eina, el balanç de blancs.</para>
+
+            <para
+>Moltes de les eines que podreu necessitar per a l'edició fotogràfica s'inclouen amb el &digikam;. La seva descripció segueix aquí. </para>
+
+        </sect3>
+
+        <sect3
+> <title
+>Introducció a les característiques de les eines d'edició comunes</title>
+
+            <para
+>Totes les eines de l'editor d'imatges com Agudització, Difuminat, Reducció del soroll, Reenfocament, Màscara de desenfocament, &etc; utilitzen un estil de diàleg comú, el qual prediu l'efecte abans d'aplicar el filtre a la imatge actual. A sota podeu veure l'eina <quote
+>Aplica una textura</quote
+> en acció utilitzant aquest disseny de diàleg comú: </para>
+
+            <example
+> <title
+>L'eina Aplica una textura en acció</title>
+                <screenshot>
+                    <screeninfo
+>L'eina Aplica una textura en acció</screeninfo>
+                    <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="&path;editor-commondialogtools.png" format="PNG"/>
+                    </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </example>
+
+            <para>
+
+                <itemizedlist>
+
+                    <listitem
+><para
+><emphasis
+>(1)</emphasis
+>: Els set botons a la part superior esquerra seleccionen l'estil de comparació de l'àrea de vista prèvia. Els modes són: <itemizedlist>
+
+                            <listitem
+><para
+>Imatge original.</para
+></listitem>
+
+                            <listitem>
+                                <para
+>Divideix verticalment sense duplicacions. L'àrea de l'esquerra mostra l'original, mentre que la del costat dret mostra el filtre aplicat a la continuació del zoom seleccionat.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Divideix horitzontalment sense duplicacions. L'àrea de dalt mostra l'original, mentre que la de l'esquerra mostra el filtre aplicat a la continuació del zoom seleccionat.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Divideix verticalment. L'àrea de l'esquerra mostra l'original i la de la dreta l'efecte del filtre per a comparar.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Divideix horitzontalment. L'àrea de dalt mostra l'original i la de sota l'efecte del filtre per a comparar.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Vista prèvia dels efectes. Aquesta és una vista prèvia directa de l'efecte, sense comparació.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Estil «passar el ratolí»: vista prèvia quan el ratolí es troba fora de la vista prèvia (a l'àrea de configuració), altrament mostra l'original.</para>
+                            </listitem>
+
+                        </itemizedlist>
+
+                    </para
+></listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(2)</emphasis
+>: Hi ha dos botons que es poden activar per a mostrar la sobre o subexposició. Els colors es poden personalitzar a la <link linkend="setupdialog.anchor"
+>pàgina de configuració general</link
+>.</para>
+                        </listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(3)</emphasis
+>: El marc selector de la vista prèvia. Feu clic i arrossegueu el marc flotant per a moure'l sobre la imatge. L'àrea de vista prèvia a l'esquerra del diàleg s'actualitzarà en conseqüència.</para>
+                        </listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(4)</emphasis
+>: L'àrea de configuració del filtre o eina.</para>
+                        </listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(5)</emphasis
+>: A la cantonada inferior esquerra: hi ha l'ajuda i un botó per a restablir els valors per omissió (tota la configuració serà recordada des de l'últim ús de l'eina).</para>
+                        </listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(6)</emphasis
+>: Hi ha un indicador de progrés per a les eines amb càlculs involucrats.</para>
+                        </listitem>
+
+                </itemizedlist>
+
+            </para>
+
+        </sect3>
+
+        <sect3
+> <title
+>El conjunt d'eines del &digikam;</title>
+
+            <itemizedlist>
+
+                <listitem
+><para
+>Color de la imatge <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-color-depth"
+>Profunditat de codificació</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-profile"
+>Conversió de l'espai de color</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-auto"
+>Correcció automàtica</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-exposure"
+>Brillantor/Contrast/Gamma</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="hsladjusttool.anchor"
+>To/Saturació/Lluminositat</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="colorbalancetool.anchor"
+>Equilibri de color</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-levels"
+>Ajustar els nivells</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-wb"
+>Balanç de blancs/Exposició/Saturació</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-curves"
+>Ajustar les corbes</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-mixer"
+>Mesclador de canals</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-bw"
+>Blanc i negre</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="infraredtool.anchor"
+>Simulació d'una pel·lícula infraroja</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-neg"
+>Color negatiu</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+                <listitem
+><para
+>Millora de la imatge <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-enhance-sharpen"
+>Agudització (aguditza, màscara de desenfocament, reenfocament)</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-blur"
+>Eina pel difuminat</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-redeyes"
+>Eliminar els ulls vermells</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-inpaint"
+>Repintat fotogràfic</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-localcontrast"
+>Contrast local</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-nr"
+>Reducció del soroll</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-hotpixels"
+>Correcció dels píxels cremats</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-distortion"
+>Correcció de la distorsió de la lent</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-restoration"
+>Restauració fotogràfica</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-vignetting"
+>Eina per a la correcció del vinyetatge</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-lenscorrection"
+>Eina per a la correcció automàtica de la lent</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+                <listitem
+><para
+>Eines per a la transformació de les imatges <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-transform-crop"
+>Eina per escapçar</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-rotateflip"
+>Canviar la mida</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-liquid"
+>Redimensionament líquid</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-resize"
+>Canviar la mida</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-freerotation"
+>Gir lliure</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-perspective"
+>Ajustament de la perspectiva</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-shear"
+>Eina per inclinar</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+                <listitem
+><para
+>Decoració de la imatge <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-decorate-border"
+>Afegir una vora</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-decorate-inserttext"
+>Inserir text</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-decorate-texture"
+>Aplicar una textura</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+                <listitem
+><para
+>Filtres pels efectes especials <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-filters-colorsfx"
+>Efectes de color</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-filmgrain"
+>Afegir gra de pel·lícula</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-oilpaint"
+>Simular una pintura a l'oli</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-charcoal"
+>Simular un dibuix al carbonet</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-emboss"
+>Relleu fotogràfic</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-distortionfx"
+>Efecte especial de distorsió</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-blurfx"
+>Efecte especial de difuminat</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-raindrops"
+>Afegir gotes de pluja</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+            </itemizedlist>
+
+        </sect3>
+
+    </sect2>
+
+    <sect2 id="raw-workflow"
+> <title
+>Processar fitxers d'imatge RAW, el flux de treball RAW</title>
+    <anchor id="rawprocessing.anchor"/>
+
+        <para
+>Un flux de treball RAW típic amb el &digikam; pot seguir aquests passos:</para>
+
+            <itemizedlist>
+
+                <listitem
+><para
+>Ajustar la conversió RAW i les preferències de la gestió del color: <itemizedlist>
+
+                        <listitem
+><para
+>obtenir els perfils de color ICC per a la càmera, la pantalla i la impressora</para
+></listitem>
+
+                        <listitem
+><para
+>configurar el &digikam; correctament per definir un espai de treball de color </para
+></listitem>
+
+                    </itemizedlist>
+
+                </para
+></listitem>
+
+                <listitem
+><para
+>Ajustar el punt blanc de la càmera</para
+></listitem>
+
+                <listitem
+><para
+>Reconstrucció de color (inclou la interpolació, filtratge del soroll i la <ulink url="help:/digikam/using-setup.html#CA.anchor"
+>correcció de l'aberració cromàtica</ulink
+>) </para
+></listitem>
+
+                <listitem
+><para
+>Conversió a un espai de color</para
+> </listitem>
+
+                <listitem
+><para
+>Correcció de la gamma, mapatge dels tons</para
+> </listitem>
+
+                <listitem
+><para
+>Assignar perfils de color</para
+> </listitem>
+
+                <listitem
+><para
+>Marge dinàmic expandit (opcional)</para
+></listitem>
+
+                <listitem
+><para
+>Continueu amb el <link linkend="standard-workflow"
+>flux de treball estàndard</link
+></para
+></listitem>
+
+            </itemizedlist>
+
+        <para
+>A partir d'aquí tot és simple, seleccioneu una imatge RAW i obriu-la a l'editor. Una vegada s'hagi processat la imatge, es mostrarà el giny per a la gestió del color per tal d'ajustar la reproducció del color. Sense una gestió del color, totes les imatges seran massa fosques, això és normal. Podeu experimentar amb els diferents perfils per tal de seleccionar el millor perfil d'entrada d'acord amb la vostra imatge (alguns tendeixen a ser molt neutres, fins i tot una mica avorrits, altres donen resultats més saturats, &etc;) </para>
+
+    </sect2
+>&doc-editor-color; &doc-editor-enhance; &doc-editor-transform; &doc-editor-decorate; &doc-editor-filters; </sect1>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

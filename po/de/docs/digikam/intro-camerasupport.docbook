@@ -1,0 +1,171 @@
+<sect1 id="intro-camerasupport"
+> <title
+>Unterstützte Digitalkameras</title>
+    <anchor id="digitalstillcamera.anchor"/>
+
+    <note>
+
+        <para
+>Rohdateiunterstützung: Falls Sie den Rohmodus Ihrer Kamera verwenden, so kann &digikam; möglicherweise auch damit umgehen. Die Unterstützung basiert auf der libraw-Bibliothek. Wenn Sie herausfinden wollen, ob eine spezielle Kamera unterstützt ist, so finden Sie eine Liste von unterstützten Rohkameras im Menü <menuchoice
+><guimenu
+>Hilfe</guimenu
+><guimenuitem
+>Unterstützte Rohkameras</guimenuitem
+></menuchoice
+> . </para>
+
+        <para
+>Wie Sie dies einrichten und mit Rohdateien arbeiten ist in den Abschnitten <link linkend="using-setup-raw"
+>Roh-Decoder-Einstellungen</link
+> und <link linkend="raw-workflow"
+>Roh-Arbeitsablauf</link
+> beschrieben. </para>
+
+    </note>
+
+    <para
+>Eine einfach zu benutzende Kameraschnittstelle wird Ihnen zur Verfügung gestellt, damit Sie sich mit Ihrer Digitalkamera verbinden und Ihre Fotos direkt in &digikam;-Alben herunterladen können. Mehr als <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php"
+>1000 Digitalkameras</ulink
+> werden mittels der Bibliothek gphoto2 unterstützt. Natürlich wird jedes Medium und jeder Kartenleser, der von Ihrem Betriebssystem unterstützt wird, mit &digikam; zusammen arbeiten. </para>
+
+    <para
+>Moderne Digitalkameras zeichnen sich durch die Verwendung von <emphasis
+>Compact &Flash; Memory</emphasis
+> Karten und <emphasis
+>USB</emphasis
+> oder <emphasis
+>FireWire (IEEE-1394 oder i-Link)</emphasis
+> zur Datenübertragung aus. Für die tatsächliche Übertragung zum Rechner wird die Kamera häufig als <emphasis
+>USB-Massenspeicher</emphasis
+> Gerät angemeldet. Die Kamera erscheint dann als Plattenlaufwerk. Die Anbindung kann auch über das <emphasis
+>Picture Transfer Protocol (PTP)</emphasis
+> und seine Derivate realisiert werden. Ältere Kameras nutzen unter Umständen zur Verbindung den <emphasis
+>seriellen Port (RS-232)</emphasis
+>. </para>
+
+    <informaltable
+><tgroup cols="2">
+
+    <thead>
+        <row>
+            <entry
+>Vorschaubeispiel</entry>
+            <entry
+>Anschlusstyp</entry>
+        </row>
+    </thead>
+
+    <tbody>
+        <row>
+            <entry>
+                <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;intro-firewireconnector.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+            </entry>
+
+            <entry
+>FireWire (IEEE-1394 oder i-Link) Verbindung von einer professionellen Digitalkamera </entry>
+        </row>
+
+        <row>
+            <entry>
+                <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;intro-usbconnector.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+            </entry>
+
+            <entry
+>Universal Serial Bus (USB) Verbindung von einer Digitalkamera für den Heimanwender </entry>
+        </row>
+
+        <row>
+            <entry>
+                <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;intro-serialconnector.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+            </entry>
+
+            <entry
+>Serielle Port (RS-232) Verbindung von einer alten Digitalkamera </entry>
+        </row>
+
+    </tbody>
+
+    </tgroup
+></informaltable>
+
+    <para>
+        <guilabel
+>Übertragungen durch gPhoto2: PTP und RS-232 serieller Port</guilabel>
+    </para>
+
+    <para
+>&digikam; benutzt das Programm <emphasis
+>gPhoto2</emphasis
+> zur Kommunikation mit Digitalkameras. gPhoto2 ist eine freie, weiter verteilbare Softwaresammlung für Digitalkameras, die eine ständig steigende Anzahl von über 800 Kameras unterstützt. gPhoto2 unterstützt auch das <emphasis
+>Picture Transfer Protocol</emphasis
+>, ein weit verbreitetes Protokoll, das von der International Imaging Industry Association entwickelt wurde. Es erlaubt die Übertragung von Bildern von Digitalkameras zu Rechnern und anderen Peripheriegeräten ohne die Notwendigkeit zusätzlicher Treiber. </para>
+
+    <para
+>Viele alte Digitalkameras benutzen die <emphasis
+>serielle Schnittstelle</emphasis
+> für ihre Kommunikation mit dem Rechner. Da Fotos im Allgemeinen große Dateien sind und Übertragungen über den seriellen Port langsam sind, ist diese Verbindung inzwischen veraltet. &digikam; unterstützt diese Kameras und führt die Übertragung der Bilder mit gPhoto2 durch. Eine komplette Liste der unterstützten Kameras finden Sie unter diesem <ulink url="http://www.gphoto.org/proj/libgphoto2/support.php"
+>Link</ulink
+>. </para>
+
+    <note>
+        <para
+>libgphoto2 muss mit libexif Unterstützung erstellt worden sein damit die Vorschaubilder von digiKam zuverlässig ausgelesen werden können. Die Exif Unterstützung wird von einigen libgphoto2-Kameratreibern benötigt, um die Vorschaubilder auszulesen. Wenn die Exif-Unterstützung nicht in libgphoto2 vorhanden ist, werden Sie Vorschaubilder eventuell nicht sehen können oder die Erzeugung könnte sehr langsam sein.</para>
+    </note>
+
+    <para>
+        <guilabel
+>Übertragungen mit einem Massenspeichergerät</guilabel>
+    </para>
+
+    <para
+>Für die Geräte, die nicht direkt von gPhoto2 unterstützt werden, existiert eine Unterstützung für das <emphasis
+>Massenspeicher</emphasis
+>-Protokoll, das von &GNU;/&Linux; sehr gut unterstützt wird. Dazu gehören Digitalkameras und Lesegeräte für Speicherkarten. Schnittstellen für Massenspeicher sind: <itemizedlist
+> <listitem
+><para
+><emphasis
+>USB-Massenspeicher</emphasis
+>: Schnittstelle mit einem Satz von Kommunikationsprotokollen, die durch das USB-Implementierungsforum definiert wurden. Dieser Standard stellt eine Schnittstelle für eine Vielzahl von Speichergeräten, inklusive Digitalkameras, zur Verfügung.</para
+></listitem
+> <listitem
+><para
+><emphasis
+>FireWire-Massenspeicher</emphasis
+>: Schnittstelle enthält einen Satz von Kommunikationsprotokollen, die primär durch Apple Computer in den 1990ern entwickelt wurden. FireWire stellt eine schnelle Kommunikation und asynchrone Echtzeit-Datenverarbeitung zur Verfügung. Wie beim USB-Massenspeicher existiert für diesen Standard eine Schnittstelle für eine Vielzahl von Speichergeräten, inklusive Digitalkameras. Nahezu alle aktuellen Digitalkameras unterstützen USB Version 1 und künftig auch Version 2, einige wenige unterstützen FireWire. </para
+></listitem
+> </itemizedlist
+> Um ein generisches Massenspeichergerät mit &digikam; zu benutzen, müssen Sie <guilabel
+>Eingebundene Kamera</guilabel
+> in den <link linkend="cameraselection.anchor"
+>Kamera Einstellungen</link
+> auswählen und den richtigen Pfad zum Einhängepunkt angeben. </para>
+
+    <para
+>Weitere Informationen finden Sie im Kapitel <link linkend="using-setup-camera"
+>digiKam einrichten</link
+> im Abschnitt Kamera. </para>
+
+</sect1>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

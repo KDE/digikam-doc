@@ -1,0 +1,254 @@
+<sect3 id="editor-filters-blurfx">
+    <sect3info>
+
+    <title
+>Efectes especials de difuminat</title>
+
+    <abstract>
+    <para
+>L'<emphasis
+>efecte especial de difuminat</emphasis
+> del &digikam; són una sèrie d'efectes de difuminat per a imatges fotogràfiques digitals. </para>
+    </abstract>
+
+    </sect3info>
+
+    <title
+>Introducció</title>
+
+    <para
+>Amb aquest conjunt de filtres, podeu transformar una fotografia normal en una obra d'art per emmarcar utilitzant operacions que difuminen. Utilitza algoritmes amb copyright d'en Pieter Voloshyn. </para>
+
+    <sect4 id="using-blurfx">
+    <title
+>Usar l'«Efecte especial de difuminat»</title>
+
+    <para
+>Aquests són els efectes especials de difuminat disponibles: </para>
+
+    <para>
+
+    <informaltable
+><tgroup cols="2">
+                
+    <thead>
+    <row>
+        <entry
+>Tipus</entry>
+        <entry
+>Vista prèvia</entry>
+    </row>
+    </thead>
+
+    <tbody>
+
+    <row>
+        <entry
+><guilabel
+>Difuminat per zoom</guilabel
+>: difumina la imatge al llarg de les línies radials a partir d'un punt central especificat. Simula el difuminat d'una càmera amb zoom, el qual dona a la fotografia una expressió dinàmica que sovint es veu en fotografies esportives. </entry>
+                
+        <entry>
+            <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editor-blurfx-zoomblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+        </entry>
+    </row>
+
+    <row>
+        <entry
+><guilabel
+>Difuminat radial</guilabel
+>: difumina la imatge donant un efecte de gir als píxels al voltant d'un punt central especificat. Simula el desenfocament d'una càmera giratòria. </entry>
+                
+        <entry>
+            <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editor-blurfx-radialblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+        </entry>
+    </row>
+
+    <row>
+        <entry
+><guilabel
+>Difuminat llunyà</guilabel
+>: difumina la imatge per a simular l'efecte d'una lent de càmera desenfocada. El tema sembla retrocedir a un segon pla. </entry>
+                
+        <entry>
+            <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editor-blurfx-farblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+        </entry>
+    </row>
+
+    <row>
+        <entry
+><guilabel
+>Difuminat per moviment</guilabel
+>: difumina la imatge sacsejant els píxels horitzontalment. Simula el desenfocament d'una càmera en un moviment de forma lineal, &ead;, com una fotografia presa des d'un cotxe o un tren. </entry>
+                
+        <entry>
+            <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editor-blurfx-motionblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+        </entry>
+    </row>
+
+    <row>
+        <entry
+><guilabel
+>Difuminat de l'enfocament</guilabel
+>: difumina les cantonades de la imatge per a reproduir la distorsió astigmàtica d'una lent. </entry>
+                
+        <entry>
+            <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editor-blurfx-focusblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+        </entry>
+    </row>
+
+    <row>
+        <entry
+><guilabel
+>Difuminat per atenuació</guilabel
+>: difumina la imatge suaument en sobre els tons més foscos i fortament en les llums intenses. Això li dona a les fotografies un efecte de somni i d'enfocament suau sense brillantor (efecte de Hamilton). És ideal per crear retrats romàntics, fotografies amb glamour, o afegir un fulgor càlid i subtil. </entry>
+                
+        <entry>
+            <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editor-blurfx-softenerblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+        </entry>
+    </row>
+
+    <row>
+        <entry
+><guilabel
+>Difuminat per sacseig</guilabel
+>: difumina la imatge movent els píxels de forma aleatòria simulant el desenfocament d'una càmera en moviment arbitrari. </entry>
+                
+        <entry>
+            <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editor-blurfx-shakeblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+        </entry>
+    </row
+>   
+    
+    <row>
+        <entry
+><guilabel
+>Difuminat intel·ligent</guilabel
+>: troba les vores de color a la fotografia i les difumina sense enterbolir la resta de la imatge. </entry>
+                
+        <entry>
+            <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editor-blurfx-smartblur.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+        </entry>
+    </row
+>      
+
+    <row>
+        <entry
+><guilabel
+>Vidre glaçat</guilabel
+>: difumina la imatge simulant una dispersió de la llum a l'atzar filtrada a través d'un vidre glaçat. </entry>
+                
+        <entry>
+            <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editor-blurfx-frostglass.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+        </entry>
+    </row
+>    
+
+    <row>
+        <entry
+><guilabel
+>Mosaic</guilabel
+>: difumina la imatge dividint la fotografia en cel·les rectangulars i després recrea l'ompliment de les cel·les amb el valor mitjà dels píxels. </entry>
+                
+        <entry>
+            <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;editor-blurfx-mosaic.png" format="PNG"/> </imageobject
+></inlinemediaobject
+></para>
+        </entry>
+    </row
+>    
+                
+    </tbody>
+
+    </tgroup
+></informaltable>
+
+    </para>
+
+    <warning
+><para
+>Alguns efectes poden prendre molt de temps a executar-se i això causa una càrrega de la CPU. Sempre podreu cancel·lar el càlcul prement el botó <guilabel
+>Cancel·la</guilabel
+> durant la renderització de la vista prèvia. </para
+></warning>
+
+    </sect4>
+
+    <sect4 id="inaction-blurfx">
+    <title
+>L'«efecte especial de difuminat» en acció</title>
+
+    <para
+>Un exemple del diàleg de l'«Efecte especial de difuminat» en acció es mostra a continuació. </para>
+
+    <para
+><inlinemediaobject
+><imageobject
+> 
+        <imagedata fileref="&path;editor-blurfx-preview.png" format="PNG"/> </imageobject>
+        <textobject
+><phrase
+>La vista prèvia del diàleg de l'eina «Efecte especial de difuminat»</phrase
+></textobject
+></inlinemediaobject>
+    </para>
+
+    </sect4>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

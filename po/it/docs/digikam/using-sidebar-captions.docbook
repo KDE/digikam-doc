@@ -1,0 +1,209 @@
+<sect2 id="using-sidebar-captions">
+    <title
+>Le didascalie</title>
+
+    <sect3>
+    <title
+>Introduzione</title>
+
+        <para
+>Questa scheda della barra laterale serve ad applicare e a modificare gli attributi dell'immagine, come le didascalie, i voti, le date ed i tag. Gli attributi sono salvati nella banca dati associata, nei campi IPTC ed EXIF, e diventano parte dell'immagine. Essi sono accessibili in una vista della barra laterale, come mostrato nella schermata sotto. Durante la lettura dell'immagine l'ordine di priorità è: 1) banca dati, 2) IPTC e 3) EXIF. Perciò se ci sono discrepanze tra alcuni di questi sarà considerato questo ordine, ed i dati verranno sincronizzati. La barra laterale ha in alto un campo di navigazione con pulsanti del tipo primo-precedente-successivo-ultimo se viene visualizzata nell'applicazione principale. </para>
+
+        <example>
+            <title
+>esempio di commenti e di tag nella barra laterale</title>
+            <screenshot>
+                <screeninfo
+>esempio di commenti e di tag nella barra laterale</screeninfo>
+                <mediaobject
+><imageobject>
+                    <imagedata fileref="&path;using-sidebar-captions.png" format="PNG"/>
+                </imageobject
+></mediaobject>
+            </screenshot>
+        </example>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Vista dei commenti</title>
+
+        <para
+>La vista delle didascalie può essere usata per scrivere o per inserire una didascalia di dimensioni illimitate (vedi nota sotto). Il testo è compatibile UTF-8, il che vuol dire che sono permessi tutti i caratteri. Le didascalie vengono copiate nei campi EXIF e IPTC, per poter essere usate da altre applicazioni. </para>
+
+        <caution
+><para
+>I dati IPTC supportano soltanto i caratteri ASCII, che sono limitati a 2000 (vecchia norma americana). Tutti i testi saranno tagliati dopo 2000 caratteri, e i caratteri speciali saranno storpiati. Se vuoi usare il campo delle didascalie IPTC in altre applicazioni dovresti rispettare questi limiti. </para
+></caution>
+
+        <para
+>Dopo che hai commentato, scegli o il pulsante <guibutton
+>Applica</guibutton
+> o vai direttamente all'immagine successiva, e la didascalia sarà salvata. </para>
+
+        <para
+>Accanto al pulsante <guibutton
+>Applica</guibutton
+> c'è un pulsante <guibutton
+>Di più</guibutton
+>. Da esso puoi scegliere o di leggere i metadati dal file selezionato e trasferirli alla banca dati, o, all'inverso, di scrivere i metadati nei file (quest'ultimo viene attuato comunque, se hai scelto un'impostazione per salvare sempre i metadati nelle immagini). </para>
+
+    </sect3>
+
+    <sect3>
+
+        <title
+>Data e ora</title>
+
+        <para
+>Nella sezione <guilabel
+>Data e ora</guilabel
+>, che indica il momento dello scatto della fotografia, puoi cambiare tutti i valori. Dalla casella combinata della data si apre un calendario, e puoi anche riscrivere direttamente la casella numerica dell'ora. La data viene copiata nel campo EXIF <quote
+>Date and Time</quote
+>. Se devi cambiare la data e l'ora di creazione di un certo numero di immagini hai a disposizione un metodo più comodo (che richiede le estensioni KIPI). Quest'ultima opzione può essere trovata sotto <menuchoice
+><guimenuitem
+>Immagine</guimenuitem
+><guimenuitem
+>Regola data e ora</guimenuitem
+></menuchoice
+>: seleziona le immagini da modificare nella vista principale, e chiama lo strumento. </para>
+
+    </sect3>
+
+    <sect3>
+    <title
+>Voto</title>
+
+    <para
+>La sezione Voto visualizza uno schema di voto da zero a cinque stelle, che può essere usato nelle ricerche e nei riordinamenti. Può essere applicato con un singolo clic del mouse sulle cinque stelle nella barra laterale, o con la scorciatoia da tastiera <keycombo
+>&Ctrl;<keycap
+>0...5</keycap
+></keycombo
+>. Il voto della barra laterale viene sempre applicato a un'immagine alla volta. Per dare un voto ad un certo numero di immagini, selezionale e fai apparire il menu contestuale (fai clic con il &RMB;) per applicare un voto comune. </para>
+
+    <para
+>Il voto viene quindi trascritto nel campo di dati IPTC 'Urgency'. La codifica segue lo schema della tabella seguente: </para>
+
+    <informaltable
+><tgroup cols="2">
+
+        <thead
+><row>
+            <entry
+>Voto di &digikam;</entry>
+            <entry
+>Urgency di IPTC</entry>
+            </row
+></thead>
+
+            <tbody>
+                <row
+>   <entry
+>-</entry
+>         <entry
+>8</entry
+>      </row>
+
+                <row
+>   <entry
+>*</entry
+>         <entry
+>7</entry
+>      </row>
+
+                <row
+>   <entry
+>*</entry
+>         <entry
+>6</entry
+>      </row>
+
+                <row
+>   <entry
+>**</entry
+>        <entry
+>5</entry
+>      </row>
+
+                <row
+>   <entry
+>***</entry
+>       <entry
+>4</entry
+>      </row>
+
+                <row
+>   <entry
+>****</entry
+>      <entry
+>3</entry
+>      </row>
+
+                <row
+>   <entry
+>****</entry
+>      <entry
+>2</entry
+>      </row>
+
+                <row
+>   <entry
+>*****</entry
+>     <entry
+>1</entry
+>      </row>
+            </tbody>
+
+        </tgroup
+></informaltable>
+
+    </sect3>
+
+    <sect3 id="using-sidebar-tags">
+    <title
+>Albero dei tag</title>
+
+        <para
+>La vista <guilabel
+>Tag</guilabel
+> mostra un riquadro di ricerca a filtro adattativo dei tag, l'albero dei tag ed una casella combinata contenente i tag applicati in precedenza nella presente sessione di &digikam;. </para>
+
+        <para
+>L'albero dei tag sarà adattato dinamicamente in funzione della parola di ricerca mentre la scrivi nel riquadro. È quindi facile ridurre rapidamente il numero di possibilità quando cerchi un tag. Ovviamente, questa funzionalità è utile solo se hai molti tag. </para>
+
+        <para
+>La casella combinata in fondo è un'altra funzionalità ergonomica per classificare facilmente una serie di immagini. Quando applichi diversi tag, essi saranno memorizzati in questo riquadro per potervi accedere rapidamente in seguito. </para>
+
+        <para
+>Altrimenti, i tag sono applicati semplicemente segnandone i rispettivi riquadri nell'albero. Tutti i tag di un'immagine sono trascritti nel campo di dati IPTC «keyword». </para>
+
+        <note
+><para
+>Nel caso che tu abbia selezionato un certo numero di immagini nella vista principale e spunti un tag nell'albero dei tag, questo viene applicato all'immagine evidenziata, e non a tutta la selezione. Se vuoi applicarlo ad intere selezioni, fai riferimento alla sezione sui <link linkend="using-sidebar-filters"
+>filtri</link
+>. </para
+></note>
+
+    </sect3>
+
+    <sect3>
+        <title
+>La vista Informazioni</title>
+
+            <para
+>Da fare </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

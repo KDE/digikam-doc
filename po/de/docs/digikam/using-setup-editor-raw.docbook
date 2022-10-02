@@ -1,0 +1,155 @@
+<sect2 id="using-setup-raw">
+    <title
+>Einstellungen des Rohdekodierers</title>
+
+    <para
+>In den früheren Versionen von &digikam; war die Bildbearbeitung nur ein Bildbetrachter für Fotos. Zurzeit entwickelt es sich sehr schnell zu einem Werkzeug zur Manipulation Ihrer Fotos weiter. Mit diesem Dialog können Sie die Einstellungen der Bildbearbeitung ändern. </para>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-editor-raw-behavior.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+    <para>
+        <guilabel
+>16-Bit-Farbtiefe</guilabel>
+    </para>
+
+    <para
+>Wenn diese Einstellung eingeschaltet ist, werden alle Rohdateien mit einer Farbtiefe von 16-Bit unter Verwendung einer linearen Gammakurve dekodiert. Um eine zu dunkle Wiedergabe von Bilder zu vermeiden, empfehlen wir Ihnen die Farbverwaltung in diesem Modus einzuschalten. Wenn die Option ausgeschaltet ist, werden die Bilder mit einer Farbtiefe von 8-Bit mit einer BT.709 Gammakurve und einem 99-prozentigen Weißpunkt dekodiert. Dieser Modus ist schneller als die 16-Bit-Dekodierung. Nur im 8-Bit-Modus wird die Einstellung für die <guilabel
+>Leuchtstärke</guilabel
+> ausgewertet. Dies ist eine Einschränkung von dcraw. </para>
+
+    <para>
+        <guilabel
+>RGB mit vier Farben interpolieren</guilabel>
+    </para>
+
+    <para
+>Die Standardannahme ist, dass alle grünen Pixel gleich sind. Wenn die geradzeiligen grünen Pixel des CCD-Sensors empfindlicher auf ultraviolettes Licht reagieren als die Pixel bei ungeraden Zeilen, erzeugt dieser Unterschied ein Gittermuster in der Ausgabe. Wenn Sie diese Option benutzen, lösen Sie dieses Problem mit einem minimalen Verlust an Details. Diese Option zeichnet das Bild ein wenig weich, eliminiert aber die 2x2 Gittermuster mit der VNG- oder der AHD-Qualitätsmethode. </para>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-editor-raw-settings.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+    <para>
+        <guilabel
+>Kameraweißabgleich benutzen</guilabel>
+    </para>
+
+    <para
+>Wenn diese Option gesetzt ist, wird der Weißabgleich der Kamera benutzt. Anderenfalls wird, wenn gesetzt, die <guilabel
+>Automatische Farbbalance</guilabel
+> benutzt. </para>
+
+    <para>
+        <guilabel
+>Automatische Farbbalance</guilabel>
+    </para>
+
+    <para
+>Diese Einstellung wird nur benutzt, wenn der Weißabgleich nicht gesetzt ist. Standard ist es eine feste Farbbalance benutzen, die auf einer weißen Karte die im Sonnenlicht fotografiert wurde, basiert. </para>
+
+    <para>
+        <guilabel
+>Zweitsensoren der Super-CCD benutzen</guilabel>
+    </para>
+
+    <para
+>Diese Einstellung wird nur für Fuji Super CCD SLR Kameras unterstützt. Das Benutzen der zweiten Sensoren hat den Effekt, dass unterbelichtete Bilder in vier Schritten mehr Details in den Spitzlichtern bekommen. Für andere Kameras wird diese Option ignoriert. </para>
+
+    <para>
+        <guilabel
+>Spitzlichter</guilabel>
+    </para>
+
+    <para
+>Dies ist die Geschichte der drei Einstellungen zu den Spitzlichtern von Nicolas Vilars : </para>
+
+    <para
+>Der Standard ist es die Spitzlichter, also die Teile Ihrer Bilder die eingebrannt sind, aufgrund der Unfähigkeit Ihrer Kamera die Spitzlichter einzufangen, als durchgehendes Weiß zu betrachten. Benutzen Sie dazu die Einstellung <guilabel
+>Durchgehendes Weiß</guilabel
+> in den Einstellungen. Die Einstellung <guilabel
+>Farben lösen</guilabel
+> erzeugt einige ausgefallene Ergebnisse, da sie die Spitzlichter in diversen Rosatönen anzeigt. Zuletzt können Sie versuchen einige Teile der fehlenden Informationen aus den Spitzlichtern zu <guilabel
+>Rekonstruieren</guilabel
+>. </para>
+
+    <para
+>Dies ist möglich, da blaue Pixel im Allgemeinen sich nicht so schnell sättigen wie grüne und rote. &digikam; und dcraw versuchen daher die fehlenden Grün- und Rot-Anteile aus den noch nicht gesättigten blauen Pixeln zu rekonstruieren. Natürlich ist dies ein Frage, wieviel Farbe oder Weiß Sie wollen. </para>
+
+    <para
+>Wenn Sie die Option <guilabel
+>Rekonstruieren</guilabel
+> auswählen, bekommen Sie die Möglichkeit ein Level zu setzen. Hierbei ist ein Wert von drei ein Kompromiss und kann/sollte daher für jedes Bild einzeln angepasst werden. </para>
+
+    <note
+><para
+>An dieser Stelle eine kleine Warnung an all jene, die so neugierig waren die Hilfeseiten von Dcraw zu lesen. Der Autor sagt dort, dass 5 der Kompromiss ist, 0 ein durchgehendes Weiß ist und 1 Farben lösen. In &digikam; sind 0 und 1 eigene Optionen im Menü. Wenn Sie diese auswählen, wird der Level-Regler ausgegraut. Der Regler lässt Sie daher zwischen Null und Sieben wählen und nicht wie in der Befehlszeile von Dcraw zwischen zwischen 0 und 9. Daher ist hier der Kompromiss eine 3 anstelle der 5 im Befehlszeilenwerkzeug von Dcraw. </para
+></note>
+
+    <para
+><guilabel
+>Leuchtstärke</guilabel
+> (nur im 8-Bit-Modus verfügbar) </para>
+
+    <para
+>Setzen Sie den Luminanzwert nach Ihrem Geschmack. Sie müssen ihn wahrscheinlich etwas höher als den Standard 1 setzen. Dies kann aber auch später in den Bildoptionen der &digikam;-Bildbearbeitung gemacht werden. Um die Zeit für das Demosaicing klein zu halten, sollten Sie konservativ vorgehen. </para>
+
+    <para>
+        <guilabel
+>Qualität</guilabel>
+    </para>
+
+    <para
+>Ein <ulink url="http://en.wikipedia.org/wiki/Demosaicing"
+>Demosaicing</ulink
+>-Algorithmus ist ein digitaler Bildprozess, um ein komplettes Bild aus den Teilrohdaten zu errechnen, die von dem farbgefilterten Bildsensor kommen, den viele Kameras haben und der eine Matrix farbiger Pixel zur Verfügung stellt. Diese Algorithmus ist auch als CFA-Interpolation oder Farbrekonstruktion bekannt. </para>
+
+    <para
+>&digikam; und Dcraw stellen Ihnen drei Alternativen zur Verfügung: Bilinear, VNG-Interpolation und AHD-Interpolation. Nach einigen Tests sieht es so aus,. als ob <emphasis
+>AHD-Interpolation</emphasis
+> (für Adaptive Homogeneity-Directed) die Qualität für mich und das von mir benutzte Papier erzeugt. <emphasis
+>VNG-Interpolation</emphasis
+> (Variable Nummer von Gradienten) war der erste Algorithmus der von Dcraw benutzt wurde. Er erzeugt aber Farbartefakte an den Kanten. <emphasis
+>Bilinear</emphasis
+> ist interessant, wenn Sie eine schnelle Lösung mit einem akzeptablen Ergebnis suchen. </para>
+
+    <para>
+        <guilabel
+>Rauschverminderung aktivieren</guilabel>
+    </para>
+
+    <para
+>Während Ihr Bild demosaict wird können Sie zusätzlich eine Rauschverminderung einschalten. Dies zieht allerdings eine längere Laufzeit nach sich. Die Option wendet einen Rauschverminderungsalgorithmus während das Bild noch im CIE-Lab Farbraum ist. Da die Rauschminderung nur in der Luminanzebene, dem <quote
+>L</quote
+> des Farbraums, angewendet wird, sollte sie das Bild nicht weichzeichnen, wie es traditionelle Rauschminderungsalgorithmen im RGB Modus machen. Falls Sie also ein verrauschtes Bild aus den Rohdaten bekommen, sollten Sie keine Rauschreduktion beim fertigen Bild durchführen, sondern das Bild mit dieser Option neu aus den Rohdaten berechnen lassen. Der Standard für den <emphasis
+>Schwellwert</emphasis
+> ist 100. Höhere Werte verbessern die Glättung und niedrigere verschlechtern sie. </para>
+
+    <anchor id="CA.anchor"/>
+
+    <para>
+        <guilabel
+>Farbabweichungskorrektur (CA) einschalten</guilabel>
+    </para>
+
+    <para
+>Wenn Sie die Farbabweichung Ihrer Linsen kennen können Sie die Rot- und Blau-Korrekturwerte hier setzen. Dies ist sicherlich die beste Methode für eine Farbweichungskorrektur, da Sie während der Rohkonvertierung durchgeführt wird. </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

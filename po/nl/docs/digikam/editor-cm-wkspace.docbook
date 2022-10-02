@@ -1,0 +1,168 @@
+<sect2 id="editor-cm-wkspace">
+    <title
+>De werkruimte</title>
+
+    <sect3>
+        <title
+>Dus vertelde ik &digikam; waar het profiel van mijn monitor te vinden is en ik heb een cameraprofiel, dat ik toepaste op het beeldbestand, geleverd door mijn raw-verwerkings-software. Wat is de volgende stap in kleurbeheer?  </title>
+
+        <para
+>U moet een kleurruimte kiezen zodat u uw beeld kunt bewerken. LCMS zal uw beeld transformeren van de camerakleurruimte naar de door u gekozen werkkleurruimte via de PCS, gespecificeerd door het kleurprofiel van uw camera.  </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Waarom kan ik mijn beelden niet bewerken in de kleurruimte die door mijn cameraprofiel wordt aangeduid?</title>
+
+        <para
+>Uiteindelijk zal het cameraprofiel toch wel het beste passen bij de kleuren die door mijn camera werden geregistreerd en door mijn raw-verwerkende-software verwerkt? Wikipedia zegt: "Werkruimte zoals sRGB of Adobe RGB, zijn kleurruimten die goede resultaten bieden tijdens het bewerken". Bijvoorbeeld, pixels met gelijke waarden van RGB moeten er neutraal uit zien. "Betekent gewoon dat een bepaald pixel in een afbeelding die is omgebouwd naar een geschikte werkruimte, als R = G = B er op het beeldscherm grijs of zwart of wit uit moet zien. "Pixels met gelijke waarden RGB moeten neutraal lijken." Veel cameraprofielen voldoen niet aan deze voorwaarde voor neutraal. Ik ken geen lijst met andere technische eisen voor een geschikte werkruimte. Ik kan wel een andere goede reden bedenken waarom u uw afbeelding niet zou bewerken in uw cameraprofiel. Als u namelijk kijkt naar de omvang van een typisch cameraprofiel dan is dat in de orde van grootte van een kwart tot een half megabyte of meer. Het bevat heel wat informatie over de wijzigingen die moeten worden uitgevoerd op verschillende gebieden van kleur en tonaliteit in de oorspronkelijke scène, om nauwkeurige kleurweergave te krijgen van de RGB-waarden die uit de raw-verwerker komen. Het cameraprofiel is nauwkeurig (althans voor kleuren in het oorspronkelijke target) maar rekenkundig niet bijzonder gaaf. Anderzijds, zijn werkruimte-kleurprofielen erg klein (een half kilobyte in plaats van een half megabyte) omdat ze een kleurengamma beschrijven in termen van mooie, ononderbroken, wiskundige functies. Werkruimteprofielen hoeven geen voorzieningen te treffen voor de "rommelige" werking van sensoren, zodat de wiskundige manipulaties, uitgevoerd tijdens het bewerken van afbeeldingen veel vlotter en nauwkeuriger zullen verlopen dan wanneer u probeert om uw afbeelding te bewerken terwijl die zich nog in de camerakleurruimte bevindt. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Welke werkruimte moet ik kiezen?</title>
+
+        <para
+>Iedereen heeft een mening. Ik zal een paar stukjes informatie uitleggen die nodig zijn om een onderbouwde keuze te maken. Werkruimteprofielen worden gekenmerkt door: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>Gamma (of een andere overdrachtsfunctie), dat aangeeft hoeveel de oorspronkelijke lineaire intensiteitswaarden, vastgelegd door de camerasensor (en onderworpen aan de in de camera aanwezige Analoog naar Digitaal conversie, en daarna geïnterpoleerd door het raw-verwerkingsprogramma) moet worden gewijzigd om het bewerken gemakkelijker of nauwkeuriger te maken. </para
+></listitem>
+
+            <listitem
+><para
+>RGB primaire kleuren die het kleurengamma bepalen dat binnen het bereik van een bepaald kleurprofiel ligt. </para
+></listitem>
+
+            <listitem
+><para
+>Witpunt (gewoonlijk D50 of D65, hoewel andere waarden ook gebruikt kunnen worden), dat de kleurtemperatuur van het witpunt in de werkruimte specificeert. </para
+></listitem>
+
+        </orderedlist>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Welk gamma moet mijn werkruimte hebben? </title>
+
+        <para
+>Het gamma van een kleurprofiel bepaalt welke omzetting nodig is voor de conversie van het ingebedde kleurprofiel van een beeld naar een ander kleurprofiel, bv. dat van de door u gekozen werkruimte of het profiel van uw beeldscherm of conversie van de ene werkkleurruimte naar een andere of naar de kleurruimte van uw printer. Dcraw levert een 16-bit beeld met een lineair gamma. Dat betekent dat een histogram van het beeldbestand toont hoeveel licht elk pixel van de camera opvangt bij belichting. (lees ook <ulink url="http://www.guillermoluijk.com/tutorial/dcraw/index_en.htm"
+>deze pagina</ulink
+>). Daarom vereist het toepassen van een cameraprofiel aan dcraw ook de juiste gammatransformatie om in de gewenste werkruimte te komen. (Behalve als het cameraprofiel ook gamma=1 gebruikt). </para>
+
+        <para
+>Een praktisch gevolg van het gamma van de werkruimte is, dat hoe hoger het gamma, hoe meer afzonderlijke kleurtonen in de schaduwen beschikbaar zijn om te bewerken en dus hoe minder tonen in de heldere delen. Veranderen van het gamma van een beeld verdeelt opnieuw het aantal tonen beschikbaar in lichte en in de donkerder gebieden van de afbeelding. In theorie, zou u bij het bewerken van een erg donkere opname (low key) een ruimte met een hoger gamma willen hebben. En als u een erg lichte opname bewerkt bijvoorbeeld een opname van een trouwjurk met sneeuw als achtergrond in helder zonlicht zou u een werkruimte willen met een lager gamma  zodat u meer toongradaties beschikbaar heeft in de heldere delen. </para>
+
+        <para
+>Theorie daar gelaten, in de wereld van het beeldbewerking gebruikt bijna iedereen werkruimten met een gamma van ofwel 1,8 of 2,2. Twee opvallende uitzonderingen vormen sRGB en L*-RGB. </para>
+
+        <para
+>sRGB gebruikt een overdrachtsfunctie dicht bij die van een CRT (niet relevant voor beeldbewerking op LCD scherm.) Wikipedia stelt: "In tegenstelling tot andere RGB kleurruimten, kan sRGB gamma niet worden uitgedrukt in een enkele numerieke waarde. "Het over-all gamma is ongeveer 2,2 en bestaat uit een lineaire (gamma 1,0) sectie bijna zwart, en een niet lineaire sectie elders, bevattende een 2,4 exponent en een gamma-helling van log-uitvoer versus log-invoer, veranderend van 1,0 tot ongeveer 2,3." (citaat van : <ulink url="https://en.wikipedia.org/wiki/SRGB"
+>deze pagina</ulink
+>), hetgeen zorgt voor enig gecompliceerd rekenwerk gedurende de beeldbewerking. </para>
+
+        <para
+>L*-RGB hanteert als transferfunctie dezelfde perceptueel uniforme overdrachtsfunctie als de CIELab kleurruimte. "Bij het opslaan van kleuren in waarden met beperkte precisie", kan het gebruik van een perceptueel uniforme functie de weergave van kleurtonen verbeteren." (citaat van <ulink url="https://en.wikipedia.org/wiki/Lab_color_space"
+>deze pagina</ulink
+>). </para>
+
+        <para
+>Als aanvulling op gamma=1,8 en gamma=2,2 is er nog het lineaire gamma =1.0 dat vaak genoemd of gebruikt wordt. Zoals vermeld, levert dcraw lineaire gammabestanden als u om een 16bits uitkomst vraagt. Lineaire gamma wordt gebruikt in HDR(high dynamic range) beelden en ook wanneer men wil vermijden dat er door gamma veroorzaakte fouten komen in de gewone "low dynamic range" bewerking. </para>
+
+        <para
+>"Door gamma veroorzaakte fouten" is een onderwerp dat eigenlijk buiten de strekking van deze zelfstudie ligt. Maar bekijk "Gamma fouten in herschalen van beelden" (overgenomen uit: <ulink url="http://www.4p8.com/eric.brasseur/gamma.html"
+>deze pagina</ulink
+>) voor door gamma veroorzaakte verschuivingen in kleurtonen. En bekijk beslist ook Timo Autiokari's informatieve (ofschoon een beetje impopulaire) website voor een overtuigde aanbeveling voor lineaire gamma werkruimten. Bruce Lindbloom vermeldt een algemeen voorkomende door gamma veroorzaakte fout die wordt veroorzaakt door onjuiste berekening van helderheid in een niet-lineaire RGB werkruimte (zie <ulink url="http://www.brucelindbloom.com/index.html?WorkingSpaceInfo.html"
+>deze pagina</ulink
+>, terzijde-noot 1). En net zo vruchteloos, de berekeningen betreffende het mengen van kleuren om nieuwe kleuren te maken (zoals het gebruik van een digitaal filter om een beeld warmer te maken) resulteren in gamma-fouten tenzij de nieuwe kleuren worden berekend door vooraf alle relevante waarden terug om te zetten naar hun lineaire waarden. </para>
+
+        <para
+>Helaas, en ondanks hun ontegenzeggelijke rekenkundige voordelen, beschikken werkruimten met lineaire gamma over zo weinig kleurtonen in de schaduwen dat (naar mijn mening) ze onmogelijk te gebruiken zijn voor bewerking als we in 8-bits werken en ook nog maar met moeite in 16-bits. Ik voorzie dat we in de toekomst voor het bewerken (op super pc's) van, door onze HDR camera's geleverde, 32-bits bestanden, allemaal werkruimten met gamma=1 zullen gebruiken. Adobe Lightroom maakt al gebruik van lineaire gamma werkruimten (zonder dat dat vermeld word), CS2 biedt de mogelijkheid om een lineaire gamma te gebruiken voor het mengen van kleuren en Lightzone heeft altijd al een lineaire gamma werkruimte gebruikt. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Hoeveel afzonderlijke tonale stapjes heeft een digitaal beeld? </title>
+
+        <para
+>In een 8-bits beeld zitten 256 tonale stapjes van pikzwart tot helderwit. In een 16-bits beeld, theoretisch, 65536 stapjes. Maar de 16-bits begonnen als: ofwel 10 bits (=1024 stapjes), 12 bits (=4096 stapjes), of 14 bits (=16384 stapjes) zoals geleverd door de A-to-D converter van de camera - de extra bits om 16-bits te bereiken zijn slechts opvulling. De beschikbare kleurtonen zijn niet gelijkmatig verdeeld van licht tot donker. In de modus lineaire gamma (zoals de camerasensor het ziet) zijn heel wat meer tonen in de heldere plekken dan in de schaduwen. Vandaar het advies, als je raw schiet, om langer te belichten maar niet de heldere plekken op te blazen. Zie Ron Bigelow's <ulink url="http://www.ronbigelow.com/articles/articles.htm"
+>artikel over "waarom in raw"</ulink
+>, voor een uitgebreide discussie over de distributie van beschikbare tonen in een raw-opname. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Moet ik een grote of een kleine gammawerkruimte gebruiken? </title>
+
+        <para
+>Een belangrijke overweging bij het kiezen van een werkruimte is dat sommige werkruimten groter zijn dan andere. Dat betekent dat ze een groter deel van het waarneembare spectrum bestrijken(en daardoor tevens denkbeeldige kleuren bevatten, rekenkundige constructies die niet werkelijk bestaan). Deze grotere ruimten bieden het voordeel van het behoud van alle kleuren, vastgelegd door uw camera en opgeslagen door de LCMS bij de conversie van uw cameraprofiel naar het super-brede-gamma profiel, aansluitend op de door u gekozen werkruimte. </para>
+
+        <para
+>Maar het behoud van alle mogelijke kleuren is niet zonder consequenties zoals u zult zien. En het lijkt er op dat elk digitaal beeld een kleine reeks bevat van alle mogelijke zichtbare kleuren die uw camera kan vastleggen. Deze reeks past gemakkelijk in een van de kleinere werkruimten (een uitzondering die een groter kleurengamma vereist zou een opname zijn van een hoog verzadigd onderwerp zoals een gele narcis).  </para>
+
+        <para
+>Werken met een erg grote kleurruimte betekent dat bij de bewerking (gebruik van krommen, verhogen van verzadiging) kleuren gemaakt kunnen worden die niet door het beeldscherm of de printer weergegeven kunnen worden. (U kunt die kleuren ook niet zien tijdens de bewerking). Zodat bij de conversie van kleurwerkruimte naar uitvoerapparatuur, bv. printer, de buiten het gamma vallende kleuren (sommigen misschien wel denkbeeldig), van uw bewerkte beeld opnieuw in kaart moeten worden gebracht voor de uitvoerapparatuur met een kleiner kleurengamma. Erger, het kan leiden tot "postervorming", zeg maar, hiaten in wat een geleidelijke kleurovergang zou moeten zijn (bijvoorbeeld het verloop in een blauwe lucht). Ook kan het gemakkelijk leiden tot onjuiste kleuren of verlies van verzadiging en clipping (aftoppen). Met andere woorden, uw vakkundig gevormde overgangen tussen delicate rode tinten kunnen veranderen in een massief blok saai rood na de conversie voor de kleurruimte van uw printer. Experts zeggend dat 8-bits beelden niet voldoende tinten bezitten om een breed gamma af te dekken, zelfs voor de conversie naar een andere kleurruimte. Dus als u kiest voor een werkruimte met een breed gamma, begin dan met een 16-bits beeld. </para>
+
+        <para
+>Samenvattend, onjuist gebruik van kleurwerkruimten met een breed gamma kan leiden tot verlies van informatie (data) in de uitvoer. Kleine kleurruimten kunnen informatie afknijpen bij het invoeren. Middelgrote kleurruimten trachten de gulden middenweg te vinden. Zoals wikipedia stelt, het is een kwestie van kiezen.  </para>
+
+        <para
+>Hier zijn enkele vaak herhaalde tips bij het kiezen van een werkruimte: </para>
+
+        <para>
+            <orderedlist>
+
+                <listitem
+><para
+>Voor beelden bestemd voor het web, gebruik (of transformeer het beeld naar) sRGB.   </para
+></listitem>
+
+                <listitem
+><para
+>Gebruik, om uw afbeelding zo accuraat mogelijk te bewerken, de kleinst mogelijke werkruimte die alle kleuren bevat van de opname die u heeft gemaakt. Plus nog een beetje extra ruimte voor die kleuren die u gaat maken tijdens het bewerken. Op die manier haalt u zonder vorming van banden of aftoppen het meeste uit de beperkte hoeveelheid bits van uw afbeelding bij de conversie van uw werkruimte naar de uiteindelijke kleurruimte. </para
+></listitem>
+
+                <listitem
+><para
+>Als u werkt in 8-bits i.p.v. 16-bits, kiest u een kleinere werkruimte in plaats van een grotere om afkapping en bandvorming te voorkomen. </para
+></listitem>
+
+                <listitem
+><para
+>Zet, voor archiveringsdoeleinden, uw RAW-bestand om naar een 16-bits tiff bestand met een grote gamut-werkruimte om te vermijden dat gegevens over kleurinformatie verloren raken. Converteer daarna dit tiff bestand naar de gewenste middel- of grote gamma-werkruimte. (sla het geconverteerde tiff bestand onder een nieuwe naam op) </para
+></listitem>
+
+            </orderedlist>
+        </para>
+
+        <para
+>Kijk voor meer informatie over het kiezen van een werkruimte op: <ulink url="http://www.brucelindbloom.com/"
+>deze pagina</ulink
+>, informatie over RGB werkruimten voor visuele vergelijking van gamma (reeks van bijbehorende kleuren) van de diverse kleurruimten. Zie <ulink url="http://www.luminous-landscape.com/tutorials/prophoto-rgb.shtml"
+>hier</ulink
+> en <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm"
+>hier</ulink
+> voor een overzicht van argumenten voor en tegen het gebruik van brede gamma-werkruimten. En als u op de website cambridgeincolour.com bent, bekijk dan de zelfstudie over kleurbeheer. </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

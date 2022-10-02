@@ -1,0 +1,186 @@
+<chapter id="tool-maintenance">
+<chapterinfo>
+
+    <abstract>
+        <para
+>Manteniment és una eina que executa processos en segon pla per a mantenir el contingut de les col·leccions d'imatges i la base de dades. </para>
+    </abstract>
+
+    <keywordset>
+        <keyword
+>Manteniment</keyword>
+        </keywordset>
+    </chapterinfo>
+
+    <title
+>Eina «Manteniment»</title>
+
+    <sect1 id="tool-maintenance-intro">
+        <title
+>Introducció</title>
+
+        <para
+>Depenent del vostre flux de treball, de la vostra configuració del &digikam; i si esteu treballant en la vostra col·lecció d'imatges -també amb altres programes-, podria ser necessari executar les operacions de manteniment de tant en tant per actualitzar les bases de dades del &digikam;, i també les vostres imatges a la cerca de duplicats, etiquetes de cares, etiquetes de qualitat, &etc; L'eina de manteniment ho pot fer, fins i tot més d'una operació alhora en funció de les vostres necessitats. </para>
+
+    </sect1>
+
+    <sect1 id="tool-maintenance-features">
+        <title
+>Les característiques del manteniment</title>
+
+        <sect2 id="tool-maintenance-features-common">
+            <title
+>Les opcions comunes</title>
+
+            <para
+>A la secció Opcions comunes, podeu restringir l'àmbit del procés/sos de manteniment a determinats àlbums o etiquetes. Heu de desmarcar <guilabel
+>Tota la col·lecció d'àlbums</guilabel
+> o <guilabel
+>Tota la col·lecció d'etiquetes</guilabel
+> per accedir als camps de la llista desplegable des d'on podreu seleccionar àlbums o etiquetes. Tingueu present que en aquest camp de llista desplegable disposareu d'un menú contextual per a seleccionar o desseleccionar els fills i/o pares i també per invertir la selecció. Si canvieu des d'<guilabel
+>Àlbums</guilabel
+> a <guilabel
+>Etiquetes</guilabel
+> o viceversa, la vostra selecció en l'objecte ara de color gris romandrà intacta, el qual podria ser útil si es necessita una certa selecció més sovint. </para>
+            
+            <para
+>Atès que molts dels processos de l'eina de manteniment es poden realitzar alhora (depenent també de l'àmbit d'aplicació, és clar), disposareu de l'opció de marcar <guilabel
+>Treballa amb tots els nuclis dels processadors</guilabel
+> si la vostra màquina en té més d'un i no estan ocupats en altres tasques. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-scan">
+            <title
+>Eina «Explora per a elements nous»</title>
+
+            <para
+>Aquest procés explorarà les col·leccions que heu definit a <menuchoice
+> <guimenu
+>Arranjament</guimenu
+><guisubmenu
+>Configura el &digikam;...</guisubmenu
+><guimenuitem
+>Col·leccions</guimenuitem
+> </menuchoice
+> pels elements nous, &ead;, fitxers d'imatge que s'afegeixen a les vostres col·leccions mentre el &digikam; no s'estava executant. També podeu executar aquest procés automàticament durant l'inici del &digikam; marcant <guilabel
+>Explora per a elements nous en iniciar</guilabel
+> a <menuchoice
+> <guimenu
+>Arranjament</guimenu
+><guisubmenu
+>Configura el &digikam;...</guisubmenu
+><guimenuitem
+>Miscel·lània</guimenuitem
+> </menuchoice
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-thumbs">
+            <title
+>Eina «Reconstrueix les miniatures»</title>
+
+            <para
+>La reconstrucció de les miniatures pot ser necessària si heu treballat en les vostres imatges amb altres aplicacions o si heu canviat la mida de les miniatures a <menuchoice
+> <guimenu
+>Arranjament</guimenu
+><guisubmenu
+>Configura el &digikam;...</guisubmenu
+><guisubmenu
+>Vistes</guisubmenu
+><guimenuitem
+>Vistes en arbre</guimenuitem
+> </menuchoice
+>. L'opció <quote
+>Explora per elements modificats o sense catalogar</quote
+> pot accelerar el procés en el primer cas o si acabeu d'afegir imatges a la vostra col·lecció. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-fingerprints">
+            <title
+>Eina «Reconstrueix les empremtes digitals»</title>
+
+            <para
+>Les empremtes digitals són necessàries per a trobar els duplicats i elements similars, i per trobar imatges amb esbossos. Per a una descripció detallada, vegeu la <link linkend="using-mainwindow-fuzzysearches"
+>vista aproximada</link
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-duplicates">
+            <title
+>Eina «Cerca els duplicats»</title>
+
+            <para
+>L'eina per a trobar els duplicats fa el mateix que el botó <guilabel
+>Cerca els duplicats</guilabel
+> a la vista Aproximada, però aquí podreu combinar-la amb altres operacions de manteniment i tindreu l'oportunitat de marcar <quote
+>Treballa amb tots els nuclis dels processadors</quote
+> a Opcions comunes (vegeu més amunt) per accelerar el procés. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-faces">
+            <title
+>Eina «Gestió de les cares»</title>
+            <subtitle
+>Detectar i reconèixer les cares</subtitle>
+
+            <para
+>Aquest és el mateix procés al qual podeu accedir a la vista Persones amb el botó <guilabel
+>Explora la col·lecció cercant cares</guilabel
+>. Aquí no podreu establir el paràmetre «Ràpid - Exacte» i l'opció <quote
+>Neteja i reconstrueix totes les dades d'entrenament</quote
+>. Per obtenir més informació sobre les opcions per a la gestió de dades de les cares, vegeu la vista <link linkend="using-mainwindow-peopleview"
+>Persones</link
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-quality">
+            <title
+>Eina «Ordenador de les imatges segons la qualitat»</title>
+
+            <para
+>L'ordenació segons la qualitat de la imatge assigna etiquetes de qualitat a les imatges d'acord amb la configuració a <menuchoice
+> <guimenu
+>Arranjament</guimenu
+><guisubmenu
+>Configura el &digikam;...</guisubmenu
+><guimenuitem
+>Ordenador d'imatges segons la qualitat</guimenuitem
+> </menuchoice
+>. Allà també haureu d'activar aquesta eina si voleu utilitzar-la. Atès que és un procés que triga temps, és una bona idea marcar <guilabel
+>Treballa amb tots els nuclis dels processadors</guilabel
+> i restringir el treball a certs àlbums o etiquetes. L'eina establirà l'indicador vermell per <quote
+>rebutjada</quote
+>, el groc per <quote
+>pendent</quote
+> i el verd per <quote
+>acceptada</quote
+>. </para>
+
+        </sect2>
+
+        <sect2 id="tool-maintenance-features-sync">
+            <title
+>Eina «Sincronitzador de les metadades»</title>
+
+            <para
+>Per fer («TODO») </para>
+
+        </sect2>
+
+    </sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

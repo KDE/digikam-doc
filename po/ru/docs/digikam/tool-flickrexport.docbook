@@ -1,0 +1,164 @@
+<chapter id="tool-flickrexport">
+<chapterinfo>
+
+<abstract>
+  <para
+>Инструмент FlickrExport позволяет загружать изображения в веб-службу <ulink url="http://www.flickr.com"
+>Flickr</ulink
+>. </para>
+</abstract>
+
+</chapterinfo>
+
+<title
+>Инструмент экспорта во Flickr</title>
+
+  <para
+>Flickr — это онлайн-приложение для управление фотографиями. Flickr — это способ делиться своими фотографиями с близкими людьми. Flickr позволяет показывать изображения всему миру, вести блог о фотографиях, сделанных на камеру телефона, а также безопасно и конфиденциально показывать фотографии своим друзьям и родственникам по всему миру. </para>
+
+  <para
+>Инструмент экспорта в Flickr позволяет загрузить коллекцию изображений с компьютера на удалённый сервер Flickr с помощью интернет-соединения. </para>
+
+<sect1 id="using-tool-flickrexport"
+> 
+  <title
+>Инициализация инструмента при первом использовании</title>
+
+  <para
+>При получении доступа к инструменту в первый раз потребуется пройти процедуру получения токена, использующегося в целях авторизации. При попытке авторизации на <ulink url="http://www.flickr.com"
+>Flickr</ulink
+> появится следующий диалог и откроется окно браузера: </para>
+
+  <figure id="flickrexport-first-signup-dialog">
+      <title
+>Диалог первой регистрации</title>
+      <mediaobject
+><imageobject>
+        <imagedata srccredit="The First Sign Up Dialog Preview" fileref="tool-flickrexport-signup.png"/>
+      </imageobject
+></mediaobject>
+  </figure>
+
+  <para
+>После успешной регистрации FlickrUploadr сможет отправлять фотографии на сайт Flickr. После регистрации будет отображаться следующая страница: </para>
+
+  <figure id="flickrexport-successful-signup">
+      <title
+>Страница успешной авторизации на Flickr</title>
+      <mediaobject
+><imageobject>
+        <imagedata srccredit="The Successful Signup Flickr page" fileref="tool-flickrexport-authenticated.png"/>
+      </imageobject
+></mediaobject>
+  </figure>
+
+  <para
+>Затем закройте окна браузера и вернитесь к диалогу главного приложения. После нажатия <guilabel
+>Да</guilabel
+> отобразится интерфейс, используемый для загрузки фотографий на Flickr, описанный в следующем разделе. </para>
+
+</sect1>
+
+<sect1 id="uploading-using-tool-flickrexport"
+> 
+<title
+>Работа с инструментом</title>
+
+  <para
+>При повторном вызове инструмента экспорта FlickrExport появится приветственный диалог, показывающий, какие права в данный момент имеет инструмент экспорта Flickr. Процесс загрузки требует наличие прав <quote
+>записи</quote
+>. На данный момент инструмент не предоставляет никаких других разрешений. Затем будет предложено продолжить с текущими разрешениями. </para>
+     <figure id="flickrexport-current-permissions-dialog">
+      <title
+>Диалог текущих разрешений</title>
+      <mediaobject
+><imageobject>
+        <imagedata srccredit="Current Permission Dialog preview" fileref="tool-flickrexport-continue.png"/>
+      </imageobject
+></mediaobject>
+  </figure>
+
+   <para
+>При нажатии на кнопку <guibutton
+>Да</guibutton
+> отобразится интерфейс для загрузки изображений на Flickr. </para>
+   <para
+>При нажатии на кнопку <guibutton
+>Нет</guibutton
+> повторится процесс авторизации. </para>
+
+  <para
+>Главное окно загрузки представлено на снимке ниже: </para>
+
+  <figure id="flickrexport-main-uploading-dialog">
+      <title
+>Главное окно загрузки</title>
+      <mediaobject
+><imageobject>
+        <imagedata srccredit="The Main Uploading Dialog Preview" fileref="tool-flickrexport-uploaddialog.png"/>
+      </imageobject
+></mediaobject>
+  </figure>
+
+  <para
+>После установки других параметров в диалоге можно будет нажать кнопку <guibutton
+>Добавить фотографии</guibutton
+>. Откроется диалог выбора изображений, позволяющий выбрать фотографии для загрузки. Выбрав фотографии, нажмите <guibutton
+>OK</guibutton
+>, после чего начнётся загрузка изображения. </para>
+
+  <para
+>Поле <guilabel
+>Теги</guilabel
+> может быть заполнено рядом слов (через запятую), которые будут назначены в качестве тегов загруженным изображениям. </para>
+
+  <para
+>Флажки <guilabel
+>Открытый</guilabel
+>, <guilabel
+>Друзья</guilabel
+> и <guilabel
+>Семья</guilabel
+> позволяют установить соответствующие права доступа к загруженным изображениям. По умолчанию все загруженные изображения отмечаются как закрытые. </para>
+
+  <para
+>Если установлен флажок <guilabel
+>Изменять размер фотографий перед загрузкой</guilabel
+>, размер изображений перед загрузкой будет изменён. Значения будут браться из раскрывающегося списка <guilabel
+>Максимальный размер</guilabel
+>. </para>
+
+  <para
+>Раскрывающийся список <guilabel
+>Максимальное разрешение</guilabel
+> позволяет отрегулировать значение максимальной высоты, на которое будут изменены размеры фотографии перед загрузкой. Для учёта соотношения сторон также автоматически будет посчитана ширина. </para>
+
+ <figure id="flickrexport-uploading-progress-dialog">
+      <title
+>Диалог процесса загрузки</title>
+      <mediaobject
+><imageobject>
+        <imagedata srccredit="The Uploading Progress Dialog Preview" fileref="tool-flickrexport-uploading.png"/>
+      </imageobject
+></mediaobject>
+  </figure>
+  <para
+>Чтобы отменить загрузку фотографий, нажмите кнопку <guilabel
+>Отменить</guilabel
+>. </para>
+
+<para
+>Чтобы просмотреть загруженные фотографии, посетите сайт <ulink url="http://www.flickr.com"
+>Flickr</ulink
+>. </para>
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: ts
+End:
+-->

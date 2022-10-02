@@ -1,0 +1,134 @@
+<sect2 id="editor-cm-rendering">
+    <title
+>Perfis de Impressora com Tentativas de Desenho e Provas Suaves</title>
+
+    <sect3>
+        <title
+>Onde é que posso obter um perfil de impressoras?</title>
+
+        <para
+>Ufa! Já seguimos um grande caminho - está quase pronto para imprimir essa imagem! Onde é que poderá obter um perfil da impressora? Bem, provavelmente já saberá a resposta. Poderá usar o perfil genérico que vem com a sua impressora. Poderá comprar um perfil produzido profissionalmente. Se pedir, alguns estabelecimentos de impressoras enviar-lhe-ão os perfis das suas impressoras (que não irão funcionar com a sua impressora!). Poderá criar o perfil da sua impressora com o Argyll, onde nesse caso o seu perfil poderá ser ajustado ao seu papel, tinteiros ou características das imagens em particular (se estiver a imprimir um conjunto de imagens com uma paleta de cores limitada a tons de castanho, não irá precisar de um perfil de impressoras que tente arranjar espaço para azuis e cíanos saturados). Não vale a pena dar mais conselhos ou referências de informação sobre este assunto, porque ainda agora o autor começou a aprender sobre a impressão de imagens (ainda que já tivessem sido vistas e partilhadas algumas imagens para o monitor). Mas poderá ver <ulink url="http://www.luminous-landscape.com/essays/fancy-graphics2.shtml"
+>nesta página</ulink
+> uma excelente apresentação das vantagens de produzir o perfil da sua própria impressora, para além de uma recomendação bastante positiva para a utilização do Argyll na criação do perfil da sua impressora. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>E sobre as tentativas de representação?</title>
+
+        <para
+>A "tentativa de representação" refere-se à forma como os gamutes de cores são tratados quando o espaço de cores do destino pretendido (por exemplo, o monitor ou a impressora) não conseguem lidar com o gamute completo do espaço de cores de origem (por exemplo, o espaço de trabalho). </para>
+
+        <para
+>Existem quatro tentativas de representação usadas de forma comum: percepção, colorimétrica absoluta, colorimétrica relativa e saturação. Foi feita uma investigação pela Internet, à procura do melhor texto sobre as tentativas de representação e os compromissos envolvidos na escolha de um em detrimento de outro. Pensa-se ter descoberto esse artigo. Veja-o <ulink url="http://www.cambridgeincolour.com/tutorials/color-space-conversion.htm"
+>nesta página</ulink
+>. Uma citação breve do artigo de Cambridge a Cores, sobre a conversão de espaços de cores: </para>
+
+        <blockquote>
+
+            <para
+>A representação colorimétrica relativa e de percepção são provavelmente os tipos de conversão mais úteis para a fotografia digital. Cada uma coloca uma prioridade diferente sobre a representação das cores dentro da região sem correspondência do gamute. </para>
+
+            <para
+>A colorimétrica relativa mantém uma relação quase exacta entre as cores no gamute, mesmo que esta retire cores fora do gamute. </para>
+
+            <para
+>Em contraste, a representação por percepção tenta também preservar alguma relação entre as cores fora do gamute, mesmo que isto resulte em algumas imprecisões nas cores do gamute... </para>
+
+            <para
+>A colorimétrica absoluta é semelhante à relativa, na medida em que respeita as cores dentro do gamute e retira as fora dele, mas diferem na forma como cada uma lida com o ponto branco... A colorimétrica relativa desvia as cores dentro do gamute, de forma que o ponto branco de um espaço esteja alinhado com o ponto branco do outro, enquanto a colorimétrica absoluta preserva as cores de forma exacta (sem ligar à mudança do ponto branco)... </para>
+
+            <para
+>A tentativa de representação por saturação tenta preservar as cores saturadas. </para>
+
+        </blockquote
+> 
+
+        <para
+>Seria citado o artigo inteiro (é muito bom), mas isso implicaria uma "utilização indevida" de certeza. Como tal, veja o artigo você mesmo. As ilustrações no artigo realmente ajudam a clarificar o que fazem realmente as diferentes tentativas de representação, bem como os compromissos envolvidos na escolha de uma tentativa sobre outra. </para>
+
+        <para
+>Para ter outra fonte excelente de informação sobre as tentativas de representação, com ilustrações a acompanhar, veja <ulink url="http://www.normankoren.com/color_management.html#Rendering_intent"
+>esta página</ulink
+>. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Qual a tentativa de representação que deverá ser usada para apresentar as imagens no meu monitor?</title>
+
+        <para
+>A escolha normal é a colorimétrica relativa. Sugerir-se-ia que não usasse a colorimétrica absoluta (&eg; com o ufraw), a menos que queira alguns resultados muito estranhos. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>O que é a prova suave?</title>
+
+        <para
+>A prova suave mostrar-lhe-á as diferenças esperadas entre o que vê no ecrã e o que irá ver quando fizer uma impressão. Para uma prova suave, é necessário um perfil para a sua impressora (de facto, para a combinação da sua impressora/papel usado, dado que este último afecta as cores das tintas e o ponto branco). Se não gostar da imagem de prova, poderá fazer algumas alterações (no seu espaço de trabalho, não após a conversão da imagem para o seu espaço da impressora!) para alinhar a imagem de prova mais com o que pretende na impressão final. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Qual a tentativa de representação que deverá ser usada na prova suave? </title>
+
+        <para
+>Ouve-se com frequência que deverá usar a "tentativa por percepção" ao transformar uma imagem de um espaço maior para um espaço menor da impressora. Mas, especialmente depois de ter lido o artigo Cambridge in Color, acima mencionado, parece que a tentativa por percepção pode ou não dar os melhores resultados, dependendo dos respectivos gamutes da imagem e da combinação da impressora/papel em questão. Já foram feitas algumas experiências com as tentativas na impressão. Para as imagens sob testes, as tentativas colorimétricas deram cores mais brilhantes e distintas, se bem que às custas de ter de editar de novo a imagem, para evitar o recorte dos tons claros e escuros. A consulta em diversos fóruns e artigos de fotografia na Internet indica que a "tentativa de percepção" é apenas uma opção, o que não quer dizer de todo que seja "a melhor" opção. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>E sobre a compensação do ponto preto?</title>
+
+        <para
+>A definição mais clara que se pôde encontrar sobre a compensação do ponto preto é "uma forma de fazer ajustes entre os níveis máximos de preto nos ficheiros digitais e as capacidades de preto nos vários dispositivos digitais [como uma impressora]" (citado <ulink url="http://www.newsandtech.com/issues/2004/05-04/pt/05-04_blackpoint.htm"
+>nesta página</ulink
+>). </para>
+
+        <para
+>O artigo de onde vem esta definição oferece uma explicação bastante clara (ainda que orientada para a Adobe) de como funciona a compensação do ponto preto e quais as consequências práticas do seu uso ou não. O conselho de rodapé é "depende". Tente a prova suave com a compensação do ponto preto activada. Se gostar, use-a. Caso contrário, não a use. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Podem ser usadas todas as tentativas de representação ao converter de um espaço de cores para outro?</title>
+
+        <para
+>Numa palavra, "não". As tentativas de representação disponíveis ao converter de um perfil para outro dependem do perfil de destino. Nem todos os perfis suportam todas as tentativas de representação. O que acontece ao seleccionar uma tentativa não suportada é o LCMS tentar usar de forma silenciosa a tentativa de representação predefinida do perfil. </para>
+
+        <para
+>Para uma discussão informativa e humorística dos mitos envolvidos na utilização das várias tentativas de representação, veja os artigos <ulink url="http://www.colorwiki.com/wiki/Color_Management_Myths_21-25#Myth_.2321:_There_are_perceptual_rendering_intents_available_when_converting_from_scanner.2Fcamera-.3Eworkspace_or_workspace-.3Eworkspace."
+>aqui</ulink
+> e <ulink url="http://www.colorwiki.com/wiki/Color_Management_Myths_6-10"
+>aqui</ulink
+>. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Porque é que a tentativa de representação por percepção é recomendada tantas vezes como a "fotográfica"? </title>
+
+        <para
+>É uma escolha segura, dado que evita o recorte de sombras e tons claros, ainda que possa ter como consequência a saturação de todas as suas cores. Por isso, se não se quiser incomodar com qualquer prova suave, escolha a tentativa de representação por percepção (se não quiser fazer uma prova suave, provavelmente deverá também querer ficar com o sRGB). </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

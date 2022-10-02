@@ -1,0 +1,1731 @@
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+--><sect2 id="editor-correct-tools">
+  <title
+>Melhoramento da Imagem</title>
+  <sect3 id="sharpening">
+    <sect3info>
+      <title
+>Definição de Imagem</title>
+      <authorgroup>
+        <author
+><firstname
+>Gilles</firstname
+> <surname
+>Caulier</surname
+> <affiliation
+> <address
+> <email
+>caulier_dot_gilles_at_gmail_dot_com</email>
+            </address>
+          </affiliation>
+        </author>
+        <author
+><firstname
+>Gerhard</firstname
+> <surname
+>Kulzer</surname
+> <affiliation
+> <address
+> <email
+>gerhard at kulzer dot net</email>
+            </address>
+          </affiliation>
+        </author>
+      </authorgroup>
+      <abstract>
+        <para
+>O &digikam; oferece três ferramentas diferentes para aumentar o detalhe ou definição de uma imagem, tendo cada uma os seus <link linkend="comparison-refocus"
+>méritos</link
+> numa área diferente. <itemizedlist>
+            <listitem>
+              <para
+>O <link linkend="using-adjustsharpness"
+>Afiamento</link
+> é uma ferramenta de aumento de definição tradicional que é muito rápida e simples, mas que poderá facilmente produzir imagens granuladas, principalmente em áreas escuras. </para>
+            </listitem>
+            <listitem>
+              <para
+>A <link linkend="using-unsharp"
+>Máscara Não-Afiada</link
+> funciona no contraste das margens, de modo a fazer uma imagem parecer mais definida, mas ela não aumenta nenhum detalhe em especial, funcionando apenas ao nível psico-visual. Poderá ser usada para remover a difusão atmosférica, onde aí desempenha um papel muito bom. O algoritmo foi retirado do Gimp e tem os direitos de cópia de Winston Chang. </para>
+            </listitem>
+            <listitem>
+              <para
+>A <link linkend="refocus"
+>Refocagem</link
+> é provavelmente o melhor dos três métodos, uma vez que aumenta de fato a definição da imagem. Está mais envolvido neste processo, possuindo diversos parâmetros com os quais lidar. </para>
+            </listitem>
+          </itemizedlist>
+        </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>KDE</keyword>
+        <keyword
+>Digikam</keyword>
+        <keyword
+>Refocagem</keyword>
+        <keyword
+>Máscara não-afiada</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introdução</title>
+    <para
+>As fotografias desfocadas, assim como a maioria das imagens digitalizadas, precisam de aumento da sua definição. Isto é devido ao processo de digitalização que separa uma sequência contínua de cores em pontos com cores ligeiramente diferentes: os elementos menores que a frequência de amostragem serão reduzidos à média numa cor uniforme. Nesse caso, os contornos definidos aparecem um pouco borrados. O mesmo fenômeno acontece quando se imprime pontos coloridos no papel. As câmeras SLR precisam ainda mais regularmente de um maior aumento de definição que as máquinas fotográficas comuns. </para>
+    <para
+>Enquanto as imagens JPEG têm algum aumento de definição interno da câmera já aplicado, as imagens no formato RAW precisam sempre aumentar a sua definição quando são manipuladas. </para>
+    <para
+>Alguns 'scanners' de digitalização aplicam um filtro de afiamento enquanto obtém a digitalização. Convém desativá-lo se quiser ter controle sobre a sua imagem. </para>
+    <sect4 id="using-adjustsharpness">
+      <title
+>Ajustar o Realce de Detalhes (Afiar)</title>
+      <anchor id="sharpentool.anchor"/>
+    </sect4>
+      <sect4>
+        <title
+>Remover o Borrão de uma Fotografia</title>
+        <para
+>Se o foco da câmera não estiver configurado perfeitamente, ou se a máquina se mexer quando tiver sido tirada a fotografia, o resultado é uma fotografia borrada. Se o borrão for muito grande, provavelmente não será capaz de fazer nada com qualquer técnica que seja. Se só for um borrão moderado, poderá ser capaz de melhorar a imagem. Muitas câmeras SLR de qualidade aplicam menos processamento às imagens que as máquinas mais simples (que tendem a aumentar artificialmente o contraste, o que faz as imagens parecerem mais definidas). Este tipo de borrão leve poderá ser facilmente melhorado com as ferramentas. </para>
+        <para
+>Em algumas situações, você poderá querer obter resultados úteis, afiando ou aumentando a definição de uma fotografia, usando a ferramenta de Afiamento na opção do menu <menuchoice
+> <guimenu
+>Melhorar</guimenu
+> <guimenuitem
+>Afiamento</guimenuitem
+> </menuchoice
+>. </para>
+        <example>
+          <title
+>A Ferramenta de Afiamento em Ação</title>
+          <screenshot>
+            <screeninfo
+>A Ferramenta de Afiamento em Ação</screeninfo>
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="&path;editorsharpenplugin.png" format="PNG"/>
+              </imageobject>
+            </mediaobject>
+          </screenshot>
+        </example>
+        <para
+>Você deverá ter cuidado com isto, todavia, caso contrário as imagens não irão parecer muito naturais: o afiamento aumenta a definição aparente das arestas na fotografia, mas também amplifica o ruído. De um modo geral, a técnica mais útil para afiar uma fotografia difusa é a ferramenta de Refocagem. Você poderá acessá-la com a opção do menu <menuchoice
+> <guimenu
+>Melhorar</guimenu
+> <guimenuitem
+>Refocar</guimenuitem
+> </menuchoice
+>. Veja a <link linkend="refocus"
+>Refocagem</link
+> para obter mais informações e comparar as técnicas de aumento de definição. </para>
+      </sect4>
+      <sect4>
+        <title
+>Reduzir o Grão numa Fotografia</title>
+        <para
+>Quando tira uma fotografia com pouca luz ou com um tempo de exposição muito rápido, a máquina não consegue obter dados suficientes para fazer boas estimativas da cor verdadeira de cada pixel, assim a fotografia resultante parece possuir algum grão. Você poderá &quot;suavizar&quot; esse grão se borrar a imagem, se bem que nesse caso poderá também perder alguma definição. Provavelmente a melhor abordagem - se o grão não for muito ruim - é usar o filtro de <link linkend="noisereduction"
+>Redução do Ruído</link
+>, que poderá acessar na opção do menu <menuchoice
+> <guimenu
+>Melhorar</guimenu
+> <guimenuitem
+>Redução do Ruído</guimenuitem
+> </menuchoice
+>. </para>
+      </sect4>
+      <sect4>
+        <title
+>Suavizar uma Fotografia</title>
+        <para
+>Em alguns casos, você costuma ter o problema oposto: uma imagem é muito definida. A solução é borrá-la um pouco: felizmente borrar uma imagem é muito mais simples que o inverso. Selecione a <link linkend="using-blurfilter"
+>Ferramenta de Borrão</link
+> com a opção do menu <menuchoice
+> <guimenu
+>Melhorar</guimenu
+> <guimenuitem
+>Borrão</guimenuitem
+> </menuchoice
+> e experimente o nível. A imagem de antevisão, à direita na janela, mostra o efeito da operação na sua fotografia. </para>
+      </sect4>
+    <sect4 id="using-unsharp">
+      <title
+>O Filtro da Máscara Não-Afiada</title>
+      <note>
+        <para
+>O filtro de Máscara Não-Afiada é uma ferramenta excelente para remover poeiras das suas fotografias; veja <ulink url="http://www.gimpguru.org/Tutorials/RemovingHaze"
+>neste URL</ulink
+> uma demonstração. </para>
+      </note>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;unsharpdialog.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>A Janela de Máscara Não-Afiada</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>O painel da imagem e a antevisão original ajudam-no a posicionar-se dentro da imagem. A janela de antevisão mostra o resultado do filtro com as configurações atuais. </para>
+      <para
+>Existem dois parâmetros importantes, o <guilabel
+>Raio</guilabel
+> e a <guilabel
+>Quantidade</guilabel
+>. Os valores padrão normalmente funcionam muito bem, assim deverá experimentá-los inicialmente. Aumentar tanto o <guilabel
+>Raio</guilabel
+> como a <guilabel
+>Quantidade</guilabel
+> aumenta a eficácia do efeito. Não se deixe levar, contudo: se fizer uma máscara muito forte, ela irá amplificar o ruído na imagem e irá dar também origem a artefatos visuais nas áreas onde existem extremos afiados. </para>
+      <para
+>O <guilabel
+>Raio</guilabel
+> permite-lhe definir quantos pixels de cada lado de uma aresta serão afetados por este efeito. As imagens de alta resolução permitem raios mais elevados. Será sempre melhor afiar uma imagem na sua resolução final. </para>
+      <para
+>O controle da <guilabel
+>Quantidade</guilabel
+> é a percentagem da diferença entre o original e a imagem borrada que é adicionada de novo ao original. Permite-lhe definir a força do afiamento. </para>
+      <para
+>O controle do <guilabel
+>Limiar</guilabel
+> é uma fração do valor máximo RGB necessário para aplicar a quantidade da diferença. Permite-lhe definir a diferença mínima dos valores dos pixels que indicam uma aresta que será necessária afiar. Deste modo, você poderá proteger as áreas de transições suaves de tonalidades de serem afiadas e evitar a criação de manchas nos rostos, no céu ou na superfície da água. </para>
+    </sect4>
+      <sect4 id="inaction-unsharp">
+        <title
+>A Máscara Não-Afiada em ação</title>
+        <para
+>Este é um exemplo de como a Máscara Não-Afiada poderá mudar a sua vida. A imagem original é a (1) e a imagem corrigida é a (2). A máscara não-afiada foi aplicada com um <guilabel
+>Raio</guilabel
+> = 6,0; <guilabel
+>Quantidade</guilabel
+> = 0,5 e <guilabel
+>Limite</guilabel
+> = 0,0. </para>
+        <para>
+          <inlinemediaobject>
+            <imageobject>
+              <imagedata fileref="&path;unsharppreview.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase
+>A Ferramenta da Máscara Não-Afiada em Ação</phrase>
+            </textobject>
+          </inlinemediaobject>
+        </para>
+      </sect4>
+    <sect4 id="refocus">
+      <title
+>Refocar uma Fotografia</title>
+      <para
+>A ferramenta do &digikam; para <emphasis
+>Refocar</emphasis
+> é uma ferramenta que refoca uma imagem, aumentando a sua definição. Ela usa o algoritmo do <emphasis
+>Filtro de Desconvolução</emphasis
+>, cujos direitos de cópia pertencem a Ernst Lippe. </para>
+      <para
+>Esta ferramenta tenta &quot;refocar&quot; uma imagem, anulando a desfocagem. Isto é melhor do que tentar simplesmente afiar uma fotografia. Aplica uma técnica chamada <emphasis
+>Filtragem Wiener FIR</emphasis
+>. A técnica tradicional para aumentar a definição das imagens é usar a máscara não-afiada. A refocagem produz geralmente melhores resultados que a máscara não-afiada. Inicie-a a partir do menu do Editor de Imagens <menuchoice
+> <guimenu
+>Melhorar</guimenu
+> <guimenuitem
+>Afiar</guimenuitem
+> <guimenuitem
+>Refocar</guimenuitem
+> </menuchoice
+>. </para>
+      <para
+>A técnica de Refocagem funciona de forma diferente da <link linkend="using-unsharp"
+>Máscara Não-Afiada</link
+> e do <link linkend="using-adjustsharpness"
+>Filtro de Afiamento</link
+>, que aumentam o contraste dos contornos de uma imagem. A focagem, por outro lado, inverte o processo do borrão da imagem pela abertura circular da máquina fotográfica. Este método oferece-lhe o máximo da imagem &quot;focada&quot; original. A refocagem usa um algoritmo de desconvolução muito poderoso que irá obter os dados misturados. Em termos matemáticos, o borrão é normalmente o resultado de uma convolução, assim uma desconvolução irá inverter o processo, exatamente o que faz o filtro de Refocagem. Além disso, a técnica do filtro FIR permite-lhe remover muito do ruído e granularidade que se acentua no processo de afiamento dos filtros de afiamento. </para>
+    </sect4>
+      <sect4 id="using-refocus">
+        <title
+>Usar a Ferramenta de Refocagem</title>
+        <para>
+          <inlinemediaobject>
+            <imageobject>
+              <imagedata fileref="&path;refocusdialog.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase
+>Janela de Refocagem</phrase>
+            </textobject>
+          </inlinemediaobject>
+        </para>
+        <para
+>O painel da imagem e a antevisão original ajudam-no a posicionar-se dentro da imagem. A janela de antevisão mostra o resultado do filtro com as configurações atuais. </para>
+        <para
+>Na maioria dos casos (borrão pela câmera), a degradação da imagem é resultante de uma convolução circular, mas existem duas convoluções disponíveis: <itemizedlist
+> <listitem
+> <para
+>A convolução circular: esta espalha cada um dos pontos originais de forma uniforme por um disco com um raio fixo. Tecnicamente, isto descreve os efeitos de utilização de uma lente (ideal) que não esteja focada corretamente.</para
+> </listitem
+> <listitem
+> <para
+>A convolução Gaussiana: esta é semelhante a nível matemático à distribuição normal, com a sua curva em forma de sino. Ela dá origem a um borrão mais natural (borrão por software). Do ponto de vista teórico, a justificativa matemática para usar a convolução Gaussiana é que, quando aplica uma grande quantidade de convoluções aleatórias independentes, os resultados aproximar-se-ão sempre a uma convolução Gaussiana.</para
+> </listitem
+> </itemizedlist
+> A ferramenta de focagem suporta tanto a convolução Circular como a Gaussiana, além de combinações de ambas. </para>
+        <para
+>Na prática, na maioria dos casos, a convolução circular funciona muito melhor que a convolução Gaussiana. A convolução Gaussiana tem um rastro muito grande; por isso, matematicamente, o resultado da convolução também depende dos pixels de origem a uma grande distância do pixel original. A inversa Wiener FIR de uma convolução Gaussiana é geralmente influenciada em grande medida pelos pixels a grandes distâncias, sendo que na maior parte dos casos poderá provocar resultados indesejados. </para>
+        <para
+>Para configurar corretamente o filtro de desconvolução, o plugin tem os seguintes parâmetros: <itemizedlist>
+            <listitem>
+              <para
+><guilabel
+>Afiamento Circular</guilabel
+>: Este é o raio do filtro de convolução circular. É o parâmetro mais importante para usar o plugin. Com a maioria das imagens, o valor padrão 1 deverá corresponder a bons resultados. Selecione um valor maior quando a sua imagem estiver muito borrada, mas tenha cuidado com a criação de halos.</para>
+            </listitem>
+            <listitem>
+              <para
+><guilabel
+>Correlação</guilabel
+>: O aumento da <guilabel
+>Correlação</guilabel
+> poderá ajudar a reduzir os artefatos. A correlação poderá variar entre 0 e 1. Os valores úteis são o 0,5 e os valores próximos de 1, &eg; 0,95 e 0,99. Se usar um valor alto para a correlação, irá reduzir o efeito de afiamento do plugin.</para>
+            </listitem>
+            <listitem>
+              <para
+><guilabel
+>Filtro de ruído</guilabel
+>: Se aumentar o parâmetro <guilabel
+>Filtro de ruído</guilabel
+>, poderá ajudar a reduzir os artefatos. O ruído poderá variar de 0-1, mas os valores maiores que 0,1 são raramente úteis. Quando o valor do ruído for muito baixo, &eg; 0, a qualidade da imagem será horrível. Um valor útil será 0,03. A utilização de um valor alto para o Ruído irá inclusive borrar mais a imagem.</para>
+            </listitem>
+            <listitem>
+              <para
+><guilabel
+>Afiamento Circular</guilabel
+>: Este é o raio do filtro de convolução gaussiano. Use este parâmetro quando o seu borrão for Gaussiano (provavelmente devido a filtragens de borrão anteriores). Com a maior parte das imagens, será aconselhado o valor padrão 0, uma vez que provoca artefatos desagradáveis. Quando usar valores não-nulos, provavelmente terá também que aumentar os parâmetros <guilabel
+>Correlação</guilabel
+> e/ou <guilabel
+>Filtro de Ruído</guilabel
+>.</para>
+            </listitem>
+            <listitem>
+              <para
+><guilabel
+>Tamanho da matriz</guilabel
+>: Este parâmetro determina o tamanho da matriz de transformação. Se aumentar o <guilabel
+>Tamanho da Matriz</guilabel
+>, poderá obter melhores resultados, especialmente quando tiver escolhido valores altos para o <guilabel
+>Afiamento Circular</guilabel
+> ou o <guilabel
+>Afiamento Gaussiano</guilabel
+>. Repare que o plugin tornar-se-á muito lento quando escolher valores altos para este parâmetro. Na maioria dos casos, terá que selecionar um valor no intervalo 3-10.</para>
+            </listitem>
+            <listitem>
+              <para
+><guilabel
+>Salvar Como</guilabel
+> e <guilabel
+>Carregar</guilabel
+>: estes botões são usados exatamente para esse fim. Todos os parâmetros de Refocagem que tiver definido poderão ser salvos no sistema de arquivos e carregados posteriormente.</para>
+            </listitem>
+            <listitem>
+              <para
+><guilabel
+>Padrões</guilabel
+>: este botão restaura toda a configuração nos seus valores predefinidos.</para>
+            </listitem>
+          </itemizedlist>
+        </para>
+        <para
+>Abaixo, você poderá ver algumas sugestões que o ajudam a trabalhar com o plugin de refocagem: <itemizedlist>
+            <listitem>
+              <para
+>Efetue de preferência todas as correções de recorte, das curvas de cores e de luminosidade antes de usar este plugin.</para>
+            </listitem>
+            <listitem>
+              <para
+>Caso contrário, use este plugin antes de efetuar quaisquer operações na imagem. A razão é que diversas operações na imagem irão deixar margens que não são necessariamente visíveis, mas que irão deixar artefatos desagradáveis.</para>
+            </listitem>
+            <listitem>
+              <para
+>Quando estiver digitalizando as imagens e comprimindo-as, &eg; para JPEG, você deverá usar o plugin sobre a imagem não-comprimida.</para>
+            </listitem>
+          </itemizedlist>
+        </para>
+      </sect4>
+    <sect4 id="comparison-refocus">
+      <title
+>Comparação da refocagem com as outras técnicas</title>
+      <para
+>Em comparação com outras duas técnicas usadas frequentemente para melhorar as imagens, temos: <itemizedlist>
+          <listitem>
+            <para>
+              <link linkend="using-adjustsharpness"
+>Filtro de Afiamento</link>
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              <link linkend="using-unsharp"
+>Máscara Não-Afiada</link>
+            </para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para
+>O afiamento aplica uma pequena matriz de convolução que aumenta a diferença entre um pixel original e os seus vizinhos imediatos. A filtragem Wiener FIR é uma técnica mais geral, uma vez que produz maiores parametrizações e uma vizinhança maior. O afiamento só funciona quando as suas imagens estão apenas ligeiramente borradas. Além disso, para valores altos do parâmetro de afiamento, os resultados parecem normalmente &quot;ruidosos&quot;. Com a filtragem Wiener FIR, este ruído poderá ser bastante reduzido, selecionando os valores mais elevados da <guilabel
+>Correlação</guilabel
+> e os parâmetros do <guilabel
+>Filtro de ruído</guilabel
+>. </para>
+      <para
+>A máscara não-afiada é outra técnica bastante popular de melhoramento de imagens. Do ponto de vista matemático, a sua justificação é um pouco obscura, mas é do agrado de muitas pessoas. O primeiro passo é criar uma cópia borrada da imagem de origem. Depois, a diferença entre a imagem original e a imagem borrada é subtraída à imagem original, daí o nome de máscara não-afiada. De fato, a máscara não-afiada é mais uma melhoria do contraste nas características importantes das imagens que um aumento de definição. Não anula a interferência do padrão de abertura do diafragma da máquina fotográfica, algo que a refocagem faz. </para>
+      <para
+>De um modo geral, a máscara não-afiada traz melhores resultados que o afiamento. Isto é provavelmente causado pelo fato de a máscara não-afiada usar uma vizinhança maior que o afiamento. </para>
+      <para
+>Do ponto de vista teórico, a máscara não-afiada deverá introduzir sempre artefatos. Mesmo em circunstâncias ótimas, ela nunca poderá anular por completo o efeito do borrão. Na filtragem Wiener, é possível provar que é o filtro linear ótimo. Na prática, em todos os casos, o resultado do filtro Wiener FIR foram pelo menos tão bons como a máscara não-afiada. O filtro Wiener FIR é normalmente melhor ao restaurar pequenos detalhes. </para>
+      <para
+>Abaixo, você poderá ver uma comparação entre os diferentes filtros, aplicado numa pequena imagem desfocada: <informaltable
+> <tgroup cols="2">
+            <thead>
+              <row>
+                <entry
+>Antevisão</entry>
+                <entry
+>Tipo</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>
+                  <para>
+                    <inlinemediaobject>
+                      <imageobject>
+                        <imagedata fileref="&path;refocus-notsharpened.png" format="PNG"/>
+                      </imageobject>
+                    </inlinemediaobject>
+                  </para>
+                </entry>
+                <entry
+>A imagem colorida borrada original. A imagem foi retirada a partir de uma câmera estática analógica. O resultado da desfocagem provém de luz insuficiente para as lentes de focagem automática. </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>
+                    <inlinemediaobject>
+                      <imageobject>
+                        <imagedata fileref="&path;refocus-sharped.png" format="PNG"/>
+                      </imageobject>
+                    </inlinemediaobject>
+                  </para>
+                </entry>
+                <entry
+>A imagem corrigida com o filtro de afiamento simples. A configuração do afiamento é igual a 80. </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>
+                    <inlinemediaobject>
+                      <imageobject>
+                        <imagedata fileref="&path;refocus-unsharpmask.png" format="PNG"/>
+                      </imageobject>
+                    </inlinemediaobject>
+                  </para>
+                </entry>
+                <entry
+>A imagem corrigida com o filtro da máscara não-afiada. A configuração corresponde a Raio = 50, Quantidade = 5, Limiar = 0. </entry>
+              </row>
+              <row>
+                <entry>
+                  <para>
+                    <inlinemediaobject>
+                      <imageobject>
+                        <imagedata fileref="&path;refocus-refocus.png" format="PNG"/>
+                      </imageobject>
+                    </inlinemediaobject>
+                  </para>
+                </entry>
+                <entry
+>Imagem corrigida com o filtro de Refocagem. A configuração corresponde a Afiamento Circular=1,3, Correlação=0,5, Filtro de Ruído=0,020, Afiamento Gaussiano=0 e Tamanho da Matriz=5. </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </informaltable>
+      </para>
+      <note>
+        <para
+>Para mais informações sobre a correção dos métodos de aumento de definição usados nas imagens digitais, você poderá encontrar uma comparação técnica <ulink url="http://www.bialith.com/Research/BARclockblur.htm"
+>neste URL</ulink
+>. </para>
+      </note>
+    </sect4>
+  </sect3>
+  <sect3 id="using-redeyecorrection">
+    <title
+>Remover os Olhos Vermelhos numa Fotografia</title>
+    <anchor id="redeyecorrectiontool.anchor"/>
+    <para
+>Os Olhos Vermelhos são causados quando são tiradas fotografias de pessoas com 'flash'. O vermelho é a reflexão na parte de trás do olho que pode ser vista, uma vez que a pupila não consegue reagir suficientemente depressa ao 'flash'. Atualmente, com uma luz de flash separada, o efeito dos olhos vermelhos é menos notório, devido aos ângulos de visualização diferentes da lente e do 'flash'. Você poderá corrigir algum dos piores efeitos dos Olhos Vermelhos se selecionar a área do olho na fotografia, da mesma forma que é descrita no recorte acima. Depois, selecione a opção <menuchoice
+><guimenu
+>Melhorar</guimenu
+> <guimenuitem
+>Redução de Olhos Vermelhos</guimenuitem
+></menuchoice
+>. </para>
+    <para
+>Como funciona <itemizedlist>
+        <listitem
+><para
+>Defina o modo de antevisão ao seu gosto</para
+></listitem>
+        <listitem
+><para
+>A opção de <guilabel
+>Sensibilidade</guilabel
+> ajusta a quantidade de remoção de olhos vermelhos (agressiva ou não)</para
+></listitem>
+        <listitem
+><para
+>A barra de <guilabel
+>Suavidade</guilabel
+> define o borrão da área que foi escurecida para tornar a pupila mais natural</para
+></listitem>
+        <listitem
+><para
+>A <guilabel
+>Coloração</guilabel
+> define uma pintura personalizada para a pupila. Se quiser olhos azuis em vez de olhos escuros, você poderá fazer isto aqui</para
+></listitem>
+        <listitem
+><para
+>O <guilabel
+>Nível de Pintura</guilabel
+> ajusta a luminosidade da cor da pupila definida</para
+></listitem>
+      </itemizedlist>
+    </para>
+    <example>
+      <title
+>A Ferramenta de Correção de Olhos Vermelhos em Ação</title>
+      <screenshot>
+        <screeninfo
+>A Ferramenta de Correção de Olhos Vermelhos em Ação </screeninfo>
+        <mediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-redeyes-correction.png" format="PNG"/>
+          </imageobject>
+        </mediaobject>
+      </screenshot>
+    </example>
+  </sect3>
+  <sect3 id="inpainting">
+    <sect3info>
+      <title
+>Pintura Interior de Fotografias</title>
+      <authorgroup>
+        <author
+><firstname
+>Gilles</firstname
+> <surname
+>Caulier</surname
+> <affiliation
+> <address
+> <email
+>caulier_dot_gilles_at_gmail_dot_com</email>
+            </address>
+          </affiliation>
+        </author>
+        <author
+><firstname
+>Gerhard</firstname
+> <surname
+>Kulzer</surname
+> <affiliation
+> <address
+> <email
+>gerhard at kulzer dot net</email>
+            </address>
+          </affiliation>
+        </author>
+      </authorgroup>
+      <abstract>
+        <para>
+          <ulink url="http://cimg.sourceforge.net">
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref="&path;cimg-logo.png" format="PNG"/>
+              </imageobject>
+              <textobject>
+                <phrase
+>cimglogo</phrase>
+              </textobject>
+            </inlinemediaobject>
+          </ulink>
+        </para>
+        <para
+>A ferramenta <emphasis
+>Pintura Interior de Fotografias</emphasis
+> é, definitivamente, uma das ferramentas mais avançadas para remover áreas indesejadas das fotografias, com uma performance sem precedentes. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>KDE</keyword>
+        <keyword
+>Digikam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introdução</title>
+    <para/>
+    <para
+>O algoritmo de pintura interior foi desenvolvido pela equipe IMAGE do laboratório GREC CNRS em Caen/França, e faz parte do <ulink url="http://cimg.sourceforge.net"
+>projeto CImg</ulink
+>. </para>
+    <sect4 id="using-inpainting">
+      <title
+>Usar a ferramenta de pintura interior</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;inpaintingdialog.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>A Janela da Pintura Interior de Fotografias</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>A ferramenta vem com várias predefinições como pontos iniciais, de modo a simplificar a restauração. As opções predefinidas disponíveis estão indicadas abaixo: <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Nenhum</guilabel
+>: Usa a configuração predefinida dos filtros, sem otimizações para qualquer fim em particular.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Remover Área Pequena</guilabel
+>: .</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Remover Área Média</guilabel
+>: .</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Remover Área Grande</guilabel
+>: .</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Se você quiser configurar os parâmetros do filtro para os ajustes mais finos, veja as páginas de <guilabel
+>Configuração da Suavização</guilabel
+> e <guilabel
+>Configuração Avançada</guilabel
+>:</para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;inpaintingsettings1.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>A Configuração da Suavização da Pintura Interior</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Preservação dos Detalhes</guilabel
+> p [0, 100]: esta opção controla a preservação das curvaturas (funcionalidades). Um valor baixo obriga a uma suavização homogênea em toda a imagem, enquanto os valores mais elevados irão, preferencialmente, suavizar as regiões homogêneas e deixar os detalhes mais definidos. Um valor igual a 0,9 deverá manter bem os detalhes, de modo que não seja necessário afiar ainda mais os detalhes.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Anisotropia</guilabel
+> alpha [0, 100]: um valor baixo suaviza da mesma forma em todas as direções, enquanto um valor próximo de 1 suaviza apenas numa direção. Se você tiver grão de filme ou algum ruído de CCD, irá obter um padrão ondulado, enquanto os artefatos JPEG são mais adequados para os valores próximos de 1. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Suavização</guilabel
+> [0, 500]: isto define o fator global de suavização (onde o 'p' a suavização relativa). Configure-o de acordo com o nível de ruído.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Regularidade</guilabel
+> [0, 10]: este parâmetro diz respeito às estruturas maiores. Quanto maior este valor, mais regular será a suavização geral. Isto é necessário quando estiver presente muito ruído, uma vez que é difícil estimar a geometria nesse caso. Do mesmo modo, se você quiser obter um efeito de turbulência à 'Van Gogh', recomenda-se que configure este valor como maior que 3.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Iterações do Filtro</guilabel
+>: o número de vezes que o algoritmo de borrão é aplicado. Normalmente, é suficiente 1 ou 2.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;inpaintingsettings2.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>A Configuração Avançada da Pintura Interior</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Passo Angular</guilabel
+> da [5, 90]: a integração angular do 'alpha' anisotrópico. Se o 'alpha' for baixo, o 'da' deverá também ser baixo. Mas tenha cuidado, pequenos ângulos correspondem a execuções mais longas! Escolha o maior valor aceitável. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Passo Integral</guilabel
+> [0, 10]: a largura do passo de integração espacial, em termos de pixels. Deverá ser menor que 1 (suavização de subpixels) e nunca deverá ser maior que 2.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Usar a Interpolação Linear</guilabel
+>: O ganho de qualidade, se você selecionar esta opção, é apenas marginal e você irá perder um fator de 2 na velocidade. A recomendação é que mantenha a opção desligada.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Os botões <guilabel
+>Salvar Como</guilabel
+> e <guilabel
+>Carregar</guilabel
+> são usados para fazer o que descrevem. Qualquer configuração do filtro de Pintura Interior de Fotografias que tenha definido poderá ser salva num arquivo de texto no sistema de arquivos para depois ser carregada novamente. </para>
+      <warning>
+        <para
+>A Pintura Interior é muito rápida (em termos comparativos) na sua ação, mas poderá levar bastante tempo rodando e provocar uma carga de CPU elevada. Você poderá sempre interromper os cálculos se clicar em <guilabel
+>Cancelar</guilabel
+> durante a renderização. </para>
+      </warning>
+    </sect4>
+    <sect4 id="inaction-inpainting">
+      <title
+>A ferramenta de pintura interior em ação</title>
+      <para
+>Abaixo, você poderá ver um tipo de pintura <guilabel
+>Remover Área Pequena</guilabel
+>, aplicado a uma foto a cores tirada na cidade de Guatemala, com uma câmera fotográfica analógica. Parece existir um estranho artefato a preto na face, resultante de um acondicionamento incorreto do filme durante a viagem. A imagem original é a (1), enquanto a imagem corrigida é a (2). </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;inpaintingpreview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Antevisão do Filtro de Pintura Interior</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+  <sect3 id="noisereduction">
+    <sect3info>
+      <title
+>Redução de Ruído</title>
+      <authorgroup>
+        <author
+><firstname
+>Gilles</firstname
+> <surname
+>Caulier</surname
+> <affiliation
+> <address
+> <email
+>caulier_dot_gilles_at_gmail_dot_com</email>
+            </address>
+          </affiliation>
+        </author>
+        <author
+><firstname
+>Gerhard</firstname
+> <surname
+>Kulzer</surname
+> <affiliation
+> <address
+> <email
+>gerhard at kulzer dot net</email>
+            </address>
+          </affiliation>
+        </author>
+      </authorgroup>
+      <abstract>
+        <para
+>O plugin de imagem de <emphasis
+>Redução de Ruído</emphasis
+> do &digikam; é uma ferramenta poderosa para reduzir o ruído da imagem. Usa um algoritmo com os direitos de cópia de Peter Heckert. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>KDE</keyword>
+        <keyword
+>Digikam</keyword>
+        <keyword
+>Redução de ruído</keyword>
+        <keyword
+>Borrar</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introdução</title>
+    <para
+>Esta ferramenta oferece alguns filtros de imagem selecionáveis para remover pontos ou outros artefatos causados por lixo, como por exemplo pó ou cabelos nas lentes. Também pode ser usado para remover o <emphasis
+>Ruído do Sensor</emphasis
+> da máquina que possa ter sido causado por valores altos de ISO, assim como aplicar o <emphasis
+>Efeito de Moir&eacute;</emphasis
+> numa imagem de uma revista. </para>
+    <para
+>Se você quiser mais informações sobre o ruído dos sensores das máquinas fotográficas digitais, por favor dê uma olhada neste <ulink url="http://www.cambridgeincolour.com/tutorials/noise.htm"
+>tutorial</ulink
+>. </para>
+    <sect4 id="using-noisereduction">
+      <title
+>Usar a Ferramenta de Redução do Ruído</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;noisereductiondialog.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>A Janela de Redução do Ruído</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>A imagem acima mostra uma cena típica, tirada com uma câmera digital, usando um rolo de alta sensibilidade em preto-e-branco. Mostra um ruído de grão, o qual poderá ser reduzido com sucesso por esta ferramenta. </para>
+      <para
+>O painel dimensionável com a antevisão original ajuda-o a posicionar-se dentro da imagem. Mova o retângulo vermelho para selecionar a área que lhe permitirá julgar a configuração ótima do filtro. A janela de antevisão mostra o resultado do filtro, usando a configuração atual. Ela poderá ser reorganizada em quatro combinações diferentes, como é representado nos ícones abaixo da antevisão original. Esta imagem mostra a primeira organização, em que o mesmo corte é mostrado a título de comparação. No fundo da área de antevisão, poderá ver o <guilabel
+>Fator de Ampliação</guilabel
+> para ampliar uma área da imagem. </para>
+      <para
+>Você poderá ver abaixo uma descrição completa de todos os parâmetros. Na maioria dos casos, apenas será necessária a página de <guilabel
+>Detalhes</guilabel
+>, podendo deixar os outros parâmetros da página <guilabel
+>Avançado</guilabel
+> com os seus valores predefinidos. <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Raio</guilabel
+>: este controle seleciona o tamanho da janela de desvio, usada pelo filtro. Os valores maiores não aumentam a quantidade de tempo necessária para filtrar cada pixel da imagem, mas poderão provocar algum borrão. Esta janela percorre a imagem e a cor nela é suavizada para remover as imperfeições. Em qualquer um dos casos, deverá ser do mesmo tamanho da granularidade do ruído, ou ligeiramente maior. Se for maior que o necessário, poderá causar algum borrão indesejado. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Limiar</guilabel
+>: use a barra para um ajuste mais abrangente e o campo incremental para um ajuste fino. Isto controla a sensibilidade à detecção de contornos. Este valor deverá ser definido de forma que os contornos sejam claramente visíveis e o ruído seja suavizado. Este valor não está limitado a qualquer valor de intensidade, mas sim à segunda derivada dos valores de intensidade. Basta ajustá-lo e observar a antevisão. O ajuste deverá ser feito com cuidado, uma vez que a fronteira entre o ruído, a suavização e o borrão é bastante reduzida. Ajuste-o com cuidado, como faria com a focagem de uma câmera fotográfica. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Textura</guilabel
+>: este controle define a precisão da textura. Este valor pode ser usado para obter melhor ou pior precisão da textura. Quando for reduzido, então o ruído e a textura serão borrados, enquanto se forem aumentados, a textura será amplificada, mas também o ruído irá aumentar. Não tem praticamente efeito nenhum nos contornos da imagem, em oposição à <guilabel
+>Margem</guilabel
+> do filtro, o que irá borrar os contornos, se for aumentado. Se a <guilabel
+>Margem</guilabel
+> for ajustada de modo a que os contornos fiquem definidos, e continuar a haver muito ruído na área, então o detalhe da <guilabel
+>Textura</guilabel
+> poderá ser usado para reduzir o ruído sem borrar os contornos. Outra forma seria diminuir o <guilabel
+>Raio</guilabel
+> e aumentar a <guilabel
+>Margem</guilabel
+>. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Afiamento</guilabel
+>: este controle define o nível de definição dos detalhes. Este valor define a distância em pixels na qual o filtro irá procurar antecipadamente as variações de luminosidade. Quando este valor for aumentado, então será removido o ruído de picos. Você poderá eventualmente ajustar a <guilabel
+>Margem</guilabel
+> do filtro, quando mudar esta opção. Quando este valor for muito alto, o filtro adaptativo não poderá mais registrar os detalhes da imagem, podendo começar a aparecer ruído ou borrões. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Margem</guilabel
+>: este controle define a precisão dos contornos no afiamento. Este valor melhora a resposta na frequência do filtro. Quando for muito forte, então nem todo o ruído poderá ser removido, podendo aparecer algum ruído por picos. Configure-o como próximo do máximo, se quiser remover ruído fraco ou artefatos de JPEG, sem perder detalhes. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Erosão</guilabel
+>: este controle define o desvio de fase nos contornos. Este valor pode ser usado para criar erosão nos pixels individuais e tem um efeito de suavização nos contornos, afiando os contornos por erosão, obtendo uma erosão do ruído nos contornos. O efeito depende do <guilabel
+>Afiamento</guilabel
+>, do <guilabel
+>Amortecimento</guilabel
+> e das <guilabel
+>Margens</guilabel
+>. Configure-o com o valor mínimo, se quiser remover o ruído fraco ou os artefatos do JPEG. Quando este valor for aumentando, então também será útil aumentar o <guilabel
+>Amortecimento</guilabel
+>. Esta opção poderá oferecer o efeito de afiamento e suavização dos contornos, quando for corrigido o ruído de picos. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Luminosidade</guilabel
+>: este controle define a tolerância de luminosidade da imagem. Recomenda-se que use apenas as opções de tolerância da <guilabel
+>Cor</guilabel
+> ou da <guilabel
+>Luminosidade</guilabel
+> para fazer correções na imagem, não ambas ao mesmo tempo. Estas opções não influenciam o processo de suavização principal que é controlado pelas opções de <guilabel
+>Detalhes</guilabel
+>. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Cor</guilabel
+>: este controle define a tolerância de cor da imagem. Recomenda-se que use apenas as opções de tolerância da <guilabel
+>Cor</guilabel
+> ou <guilabel
+>Luminosidade</guilabel
+> para fazer uma correção na imagem, e não ambas ao mesmo tempo. Estas opções não influenciam o processo de suavização principal, que é controlado pelas opções de <guilabel
+>Detalhes</guilabel
+>. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Gama</guilabel
+>: este controle define a tolerância do gama da imagem. Este valor pode ser usado para aumentar os valores de tolerância das áreas mais escuras (que têm mais ruído normalmente). Isto resulta num maior borrão nas áreas sombreadas. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Amortecimento</guilabel
+>: este controle define o ajuste de amortecimento no desvio de fase. Este valor define a rapidez da reação do raio do filtro adaptativo às variações de luminosidade. Se for aumentado, os contornos aparecem mais suavizados; se for demasiado elevado, então poderá ocorrer algum borrão. Se for próximo do mínimo, então poderá ocorrer algum ruído e desvio de fase nos contornos. Poderá suprimir o ruído de picos se for aumentado e é o método preferido para o remover. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Salvar Como</guilabel
+> e <guilabel
+>Carregar</guilabel
+>: estes botões são usados exatamente para isso. Todos os parâmetros de Redução de Ruído que tenha definido poderão ser salvos e carregados posteriormente. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Padrões</guilabel
+>: este botão restaura toda a configuração nos seus valores predefinidos. </para>
+          </listitem>
+        </itemizedlist>
+      </para>
+    </sect4>
+      <sect4 id="inaction-noisereduction">
+        <title
+>A redução de ruído em ação</title>
+        <para
+>Este é um exemplo de como a redução de ruído poderá mudar a sua vida. A imagem original é a (1) e a imagem corrigida é a (2). A redução do ruído foi aplicada com a configuração predefinida. </para>
+        <para>
+          <inlinemediaobject>
+            <imageobject>
+              <imagedata fileref="&path;noisereductionpreview.png" format="PNG"/>
+            </imageobject>
+            <textobject>
+              <phrase
+>A Redução do Ruído em Ação</phrase>
+            </textobject>
+          </inlinemediaobject>
+        </para>
+      </sect4>
+      <sect4 id="using-blurfilter">
+        <title
+>Suavizar uma Fotografia</title>
+        <para
+>Em algumas vezes uma imagem fica demasiado definida para o que se pretende. A solução é borrá-la um pouco: felizmente, borrar uma imagem é muito mais fácil que o inverso. Selecione a opção da Ferramenta de Borrão com a opção do menu <menuchoice
+> <guimenu
+>Melhorar</guimenu
+> <guimenuitem
+>Borrão</guimenuitem
+> </menuchoice
+> e experimente o nível. A janela de antevisão à direita da janela mostra o efeito da operação na sua fotografia. </para>
+        <example>
+          <title
+>A Ferramenta de Borrão em Ação</title>
+          <screenshot>
+            <screeninfo
+>A Ferramenta de Borrão em Ação</screeninfo>
+            <mediaobject>
+              <imageobject>
+                <imagedata fileref="&path;editorblurplugin.png" format="PNG"/>
+              </imageobject>
+            </mediaobject>
+          </screenshot>
+        </example>
+      </sect4>
+  </sect3>
+  <sect3 id="restoration">
+    <sect3info>
+      <title
+>Restauração de Fotografias</title>
+      <authorgroup>
+        <author
+><firstname
+>Gilles</firstname
+> <surname
+>Caulier</surname
+> <affiliation
+> <address
+> <email
+>caulier_dot_gilles_at_gmail_dot_com</email>
+            </address>
+          </affiliation>
+        </author>
+        <author
+><firstname
+>Gerhard</firstname
+> <surname
+>Kulzer</surname
+> <affiliation
+> <address
+> <email
+>gerhard at kulzer dot net</email>
+            </address>
+          </affiliation>
+        </author>
+      </authorgroup>
+      <abstract>
+        <para>
+          <ulink url="http://cimg.sourceforge.net">
+            <inlinemediaobject>
+              <imageobject>
+                <imagedata fileref="&path;cimg-logo.png" format="PNG"/>
+              </imageobject>
+              <textobject>
+                <phrase
+>cimglogo</phrase>
+              </textobject>
+            </inlinemediaobject>
+          </ulink>
+        </para>
+        <para
+>O plugin de imagem do &digikam; <emphasis
+>Restauração de Fotografias</emphasis
+> é, definitivamente, uma das ferramentas mais avançadas para reduzir os defeitos das fotografias. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>KDE</keyword>
+        <keyword
+>Digikam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introdução</title>
+    <para
+>Este filtro fantástico de restauração é um novo desenvolvimento que oferece possibilidades sem precedentes no domínio público, para remover várias coisas indesejáveis nas suas imagens. Está bem adaptado para lidar com as imagens degradadas que sofrem de ruído gaussiano, grão de filme, riscos ou artefatos de compressão e degradações locais, os quais se encontram normalmente nas imagens digitais (originais ou digitalizadas). A suavização ocorre ao longo das curvaturas das imagens, preservando deste modo o conteúdo interessante de uma forma muto semelhante ao que o nosso olho humano deseja. </para>
+    <para
+>Pode ser usado o mesmo algoritmo para a coloração e substituição de texturas, o qual é coberto por outra ferramenta (pintura interior...). O algoritmo de restauração foi desenvolvido pela equipe IMAGE do laboratório GREC CNRS em Caen/França e faz parte do <ulink url="http://cimg.sourceforge.net"
+> projeto CImg </ulink
+>. </para>
+    <sect4 id="using-restoration">
+      <title
+>Usar a ferramenta de Restauração</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="r&path;estorationdialog.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Janela de Restauração da Fotografia</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>A ferramenta vem com várias predefinições como pontos iniciais, de modo a simplificar a restauração. As opções predefinidas disponíveis estão indicadas abaixo: <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Nenhum</guilabel
+>: Usa a configuração predefinida dos filtros, sem otimizações para qualquer fim em particular.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Reduzir o Ruído Uniforme</guilabel
+>: A configuração ótima para o ruído de imagem, devido a ruído no sensor.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Reduzir os Artefatos JPEG</guilabel
+>: A compressão do JPEG não é perfeita; de fato, em algumas imagens, está longe disso. Como algoritmo de compressão com perdas que é, existem alguns &quot;artefatos&quot; de compressão - pequenos detalhes que aparecem na imagem descomprimida. Esta opção tenta corrigir este problema.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Reduzir a Texturização</guilabel
+>: Otimizada para remover os artefatos de digitalização ou de padrões Moire.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Se você quiser configurar os parâmetros do filtro para os ajustes mais finos, veja as páginas de <guilabel
+>Configuração da Suavização</guilabel
+> e <guilabel
+>Configuração Avançada</guilabel
+>:</para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;restorationsettings1.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Configuração de Suavização do Restauração</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Preservação dos Detalhes</guilabel
+> p [0, 100]: esta opção controla a preservação das curvaturas (funcionalidades). Um valor baixo obriga a uma suavização homogênea em toda a imagem, enquanto os valores mais elevados irão, preferencialmente, suavizar as regiões homogêneas e deixar os detalhes mais definidos. Um valor igual a 0,9 deverá manter bem os detalhes, de modo que não seja necessário afiar ainda mais os detalhes.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Anisotropia</guilabel
+> alpha [0, 100]: um valor baixo suaviza da mesma forma em todas as direções, enquanto um valor próximo de 1 suaviza apenas numa direção. Se você tiver grão de filme ou algum ruído de CCD, irá obter um padrão ondulado, enquanto os artefatos JPEG são mais adequados para os valores próximos de 1. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Suavização</guilabel
+> [0, 500]: isto define o fator global de suavização (onde o 'p' a suavização relativa). Configure-o de acordo com o nível de ruído.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Regularidade</guilabel
+> [0, 100]: este parâmetro diz respeito à uniformidade da suavização. Imagine o processo de suavização como uma escova sobre a imagem. Deste modo, a Regularidade iria corresponder ao tamanho da escova. Quanto maior este valor, mais regular será a suavização geral. Isto é necessário quando estiver presente muito ruído, uma vez que é difícil estimar a geometria nesse caso. Do mesmo modo, se você quiser obter um efeito de turbulência à 'Van Gogh', recomenda-se que configure este valor como maior que 3.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Iterações do Filtro</guilabel
+>: o número de vezes que o algoritmo de borrão é aplicado. Normalmente, é suficiente 1 ou 2.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;restorationsettings2.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Configuração Avançada do Restauração</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para
+><guilabel
+>Passo Angular</guilabel
+> da [5, 90]: a integração angular do 'alpha' anisotrópico. Se o 'alpha' for baixo, o 'da' deverá também ser baixo. Mas tenha cuidado, pequenos ângulos correspondem a execuções mais longas! Escolha o maior valor aceitável. </para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Passo Integral</guilabel
+> [0, 10]: a largura do passo de integração espacial, em termos de pixels. Deverá ser menor que 1 (suavização de subpixels) e nunca deverá ser maior que 2.</para>
+          </listitem>
+          <listitem>
+            <para
+><guilabel
+>Usar a Interpolação Linear</guilabel
+>: O ganho de qualidade, se você selecionar esta opção, é apenas marginal e você irá perder um fator de 2 na velocidade. A recomendação é que mantenha a opção desligada.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para
+>Os botões <guilabel
+>Salvar Como</guilabel
+> e <guilabel
+>Carregar</guilabel
+> são usados mesmo para isso. As opções dos filtros de Restauração da Fotografia que você tenha definido poderão ser salvas num arquivo de texto e carregadas posteriormente. </para>
+      <warning>
+        <para
+>O filtro de restauração de fotografias é (relativamente) muito rápido no que faz, mas poderá levar bastante tempo rodando e originar uma carga de CPU elevada. Você poderá sempre interromper o cálculo se clicar no botão <guilabel
+>Interromper</guilabel
+> durante a renderização da antevisão. </para>
+      </warning>
+    </sect4>
+    <sect4 id="inaction-restoration">
+      <title
+>A ferramenta de Restauração em ação</title>
+      <para
+>Abaixo, você pode ver um tipo de restauração <guilabel
+>Reduzir o Ruído Uniforme</guilabel
+>, aplicado a uma fotografia em preto-e-branco tirada com uma câmera Minolta(tm) 700Si, usando o filme Ilford(tm) HP-5 com uma sensibilidade ISO de 3200. Você poderá ver o grão proeminente no filme nos rostos. A imagem original é a (1) e a imagem corrigida é a (2). </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;restorationpreview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Antevisão da Restauração na Redução de Ruído Uniforme</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>Abaixo, você pode ver um tipo de restauração <guilabel
+>Reduzir o Ruído Uniforme</guilabel
+>, aplicado a uma fotografia antiga a cores que foi obtida com um 'scanner' plano. Você poderá ver os artefatos proeminentes da luz do 'scanner' sobre o papel plastificado fotográfico. A imagem original é a (1) e a imagem corrigida é a (2). </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;restorationpreview2.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Antevisão da Restauração por Redução de Texturas</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+  <sect3 id="hotpixels">
+    <sect3info>
+      <title
+>Correção de Pixels Queimados</title>
+      <authorgroup>
+        <author
+><firstname
+>Gilles</firstname
+> <surname
+>Caulier</surname
+> <affiliation
+> <address
+> <email
+>caulier_dot_gilles_at_gmail_dot_com</email>
+            </address>
+          </affiliation>
+        </author>
+        <author
+><firstname
+>Unai</firstname
+> <surname
+>Garro</surname
+> <affiliation
+> <address
+> <email
+>ugarro at telefonica dot net</email>
+            </address>
+          </affiliation>
+        </author>
+      </authorgroup>
+      <abstract>
+        <para
+>O plugin de imagem do &digikam; <emphasis
+>Pixels Queimados</emphasis
+> permitir-lhe-á remover os pixels queimados de uma fotografia retirada a partir de uma câmera fotográfica com CCD defeituoso. Usa os algoritmos do projeto JPEGPixi e têm o 'copyright' de Martin Dickopp. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>KDE</keyword>
+        <keyword
+>digiKam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introdução</title>
+    <para
+>A maioria das máquinas fotográficas digitais atuais produzem imagens com vários &quot;pixels avariados&quot; brilhantes, ao usar velocidades de obturação mais lentas. As fotos à noite poderão também ser arruinadas por estes &quot;pixels avariados&quot;. Existem três tipos diferentes de &quot;pixels avariados&quot;: <itemizedlist
+> <listitem
+><para
+>Pixels presos: é um pixel que fica sempre ao nível máximo ou elevado de potência em todas as exposições. Isto produz normalmente um pixel brilhante vermelho, verde ou azul na imagem final. Um pixel preso irá ocorrer independentemente da velocidade de obturação, tamanho da abertura ou de outras configurações do usuário. Irá ocorrer numa exposição normal e tende a ser mais óbvia em condições claras.</para
+></listitem
+> <listitem
+><para
+>Pixels mortos: é um pixel que fica sempre zerado ou apagado em todas as exposições. Este estado produz um pixel preto na imagem final. De forma semelhante aos pixels presos, um pixel morto irá ocorrer de forma independente da velocidade de obturação, tamanho da abertura ou de outras configurações do usuário.</para
+></listitem
+> <listitem
+><para
+>Pixels queimados: é um pixel que fica no nível máximo (luz acesa) em exposições maiores e que poderá produzir pixels brancos, vermelhos ou verdes em exposições mais longas. Quanto maior a duração da exposição, mais visíveis se tornarão os pixels queimados. Estes pixels não ficarão visíveis em condições claras.</para
+></listitem
+> </itemizedlist
+> Lembre-se que os pixels presos ou mortos irão ocorrer no mesmo local para todas as imagens. Se a localização do pixel preso ou morto ocorrer num local diferente, poderá ser um pixel queimado. </para>
+    <para
+>Os pixels presos, mortos ou queimados são um problema, em particular, quando está tirando fotografias num modo em bruto de alta qualidade, uma vez que várias máquinas têm supressão de pixels queimados incorporada, quando é usada a compressão JPEG (o que acontece na maioria dos casos). </para>
+    <para
+>Este plugin pode ser usado para corrigir os &quot;pixels queimados&quot; e os &quot;pixels presos&quot; de uma fotografia, a partir de um método de subtração por moldura de preto. Ainda não existe um editor manual para selecionar os pixels estragados. </para>
+    <sect4 id="using-blackframecreation">
+      <title
+>Criar os Contornos Pretos</title>
+      <para
+>O método de subtração por Moldura de Preto é o método de remoção de pixels queimados mais eficaz. Em primeiro lugar, você terá que criar um contorno preto. Isto é fácil de fazer. Quando acabar de fazer as suas exposições longas, coloque uma tampa preta na máquina fotográfica e tire uma imagem &quot;escura&quot; com o mesmo tempo de exposição das imagens anteriores. Esta imagem ficará toda escura, mas olhando-a com cuidado, irá descobrir os pontos queimados e presos (pontos coloridos). Estes estão posicionados no mesmo local das fotos anteriores. </para>
+      <para
+>Carregue este arquivo no plugin com o botão de <guilabel
+>Contorno Preto</guilabel
+>. O plugin irá processar uma detecção automática dos pixels queimados e presos. Eles ficarão realçados nas áreas de antevisão do painel de controle. </para>
+      <warning>
+        <para
+>Se usar uma máquina digital antiga, é importante voltar a usar a Moldura de Preto da próxima vez que tirar fotografias de exposição prolongada para detectar novos pixels queimados e presos nos defeitos do CCD. </para>
+      </warning>
+    </sect4>
+    <sect4 id="using-hotpixels">
+      <title
+>Usar a ferramenta de pixels queimados</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;hotpixelsdialog.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>A Janela de Pixels Queimados</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>Em primeiro lugar, como foi explicado na seção anterior, é necessário carregar uma Moldura de Preto que corresponde à imagem a corrigir. Será feito um processamento automático na Moldura de Preto para descobrir os pixels estragados. Repare que o plugin irá recordar a Moldura de Preto usada na sessão anterior e será aberta de novo automaticamente na próxima sessão. </para>
+      <para
+>O painel da imagem e a antevisão do original ajudam-no a posicionar-se na imagem. A janela de antevisão mostra o resultado do filtro de acordo com a configuração atual. Os Pixels Estragados aparecem em todas as áreas de antevisão. </para>
+      <para
+>Selecione uma área para ver os pixels estragados na antevisão e no resultado do filtro usando as opções de 'Vistas Separadas' do painel de imagens. Escolha o método de <guilabel
+>Filtro</guilabel
+> melhor para interpolar os pixels ou blocos de pixels. Estes são os filtros disponíveis: <itemizedlist>
+          <listitem>
+            <para
+>Média: os pixels adjacentes ao bloco de pixels são sujeitos a uma média. A cor resultante é atribuída a todos os pixels do bloco. Para a interpolação a 1 dimensão, isto é feito em separado para linhas de 1 pixel de espessura na horizontal ou na vertical.</para>
+          </listitem>
+          <listitem>
+            <para
+>Linear: os pixels que tiverem uma distância de 1 ao bloco de pixels são usados para calcular uma superfície bilinear (a 2 dimensões) ou um grupo de curvas lineares (a 1 dimensão), o qual será então usado para atribuir cores interpoladas aos pixels do bloco.</para>
+          </listitem>
+          <listitem>
+            <para
+>Quadrático: este é o método de filtragem padrão. Os pixels que tiverem uma distância de 2 ou menos do bloco de pixels serão usadas para calcular uma superfície biquadrática (a 2 dimensões) ou um grupo de curvas quadráticas (a 1 dimensão), que será usado para atribuir as cores interpoladas aos pixels no bloco.</para>
+          </listitem>
+          <listitem>
+            <para
+>Cúbico: os pixels que tiverem uma distância de 3 ou menos do bloco de pixels serão usadas para calcular uma superfície bicúbica (a 2 dimensões) ou um grupo de curvas cúbicas (a 1 dimensão), que será usado para atribuir as cores interpoladas aos pixels no bloco.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+    </sect4>
+    <sect4 id="inaction-hotpixels">
+      <title
+>A ferramenta de pixels queimados em ação</title>
+      <para
+>Abaixo, você poderá ver a Correção de Pixels Queimados aplicada a uma fotografia a cores, tirada com uma máquina defeituosa com sensibilidade de 200 ISO e uma exposição longa. A imagem original, ampliada a 300%, é a (1), enquanto a corrigida é a (2). </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;hotpixelspreview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Antevisão da Correção de Pixels Queimados</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+  <sect3 id="vignettingcorrection">
+    <sect3info>
+      <title
+>Correção da vinheta</title>
+      <authorgroup>
+        <author
+><firstname
+>Gilles</firstname
+> <surname
+>Caulier</surname
+> <affiliation
+> <address
+> <email
+>caulier_dot_gilles_at_gmail_dot_com</email>
+            </address>
+          </affiliation>
+        </author>
+        <author
+><firstname
+>Gerhard</firstname
+> <surname
+>Kulzer</surname
+> <affiliation
+> <address
+> <email
+>gerhard at kulzer dot net</email>
+            </address>
+          </affiliation>
+        </author>
+      </authorgroup>
+      <abstract>
+        <para
+>O plugin de imagem <emphasis
+>Correção da vinheta</emphasis
+> do &digikam; é uma ferramenta para corrigir o efeito de vinheta da imagem (subexposição nos cantos). </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>KDE</keyword>
+        <keyword
+>Digikam</keyword>
+        <keyword
+>Anti-Vinheta</keyword>
+	<keyword
+>Adicionar uma vinheta</keyword>
+	<keyword
+>Correção da vinheta</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introdução</title>
+    <para
+>As lentes grandes-angulares, especialmente as que são usadas em fotografias de formato médio e grande, normalmente não iluminam uniformemente o plano do filme por completo. Em vez disso, fazem uma espécie de &quot;vinheta&quot; (sombra) nos cantos e nos extremos da imagem, reduzindo substancialmente a luz que atinge o filme nesses pontos. Contudo, as lentes telescópicas também poderão gerar alguma vinheta. </para>
+    <para
+>A solução tradicional para isto é anexar um &quot;filtro central&quot; nas lentes. Este é um filtro de densidade neutra com uma densidade máxima no eixo óptico das lentes, limpa na periferia e com uma densidade que varia inversamente com o efeito de vinheta das lentes. Um filtro central tem várias vantagens: não só corrige automaticamente as imagens completas mas, uma vez que está fixo em frente à lente, também compensa o efeito de vinheta fora do centro, que ocorre quando se aplicam movimentos na máquina fotográfica para o ajuste da perspectiva ou do plano de foco. </para>
+    <para
+>Mas também existem desvantagens. Muitos dos filtros centrais necessitam de ajuste do fator de corte de 1,5 ou 2 f, o que poderá necessitar por sua vez de uma velocidade de obturação tão lenta (uma vez que as lentes grandes-angulares, mesmo com filtros centrais, são melhor usadas com aberturas de f/16 ou menores) que é impossível segurar a máquina à mão e o borrão de movimento torna-se um problema ao fotografar objetos em movimento. </para>
+    <para
+>Com a grande gama de filmes nos dias de hoje a profundidade de cor (ou tons de cinza) das máquinas digitais ou dos 'scanners' de filme, é possível simular o efeito de uma filtro central posteriormente, aplicando uma transformação equivalente a uma imagem em bruto tirada sem o filtro. Este plugin aplica uma transformação de filtragem central a uma imagem. Usa um algoritmo cujos direitos de cópia pertencem a John Walker. </para>
+    <sect4 id="using-vignettingcorrection">
+      <title
+>Usar a ferramenta de correção da vinheta</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;vignettingcorrectiondialog.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>A Janela de Correção da Vinheta</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>Existem cinco barras que lhe dão o controle sobre o filtro de correção da vinheta, assim como existem outras três para corrigir a exposição da imagem-alvo: </para>
+      <para
+><guilabel
+>Quantidade</guilabel
+>: esta opção controla o grau de atenuação de intensidade do filtro no seu ponto de quantidade máxima. A quantidade por padrão é 2,0, o que corresponde a um filtro ótico com um fator de corte de 1 f (ou, sem coincidências, a um fator de 2 na luminosidade). Aumente a quantidade se quiser compensar um maior grau do efeito de vinheta; reduza-o no caso de o efeito ser menor. </para>
+      <para
+><guilabel
+>Leveza</guilabel
+>: esta opção determina a taxa com que a intensidade do filtro decai desde o ponto de quantidade máxima até à periferia, expresso como um fator de potência. O valor padrão 1 corresponde a uma redução linear na quantidade do filtro com a distância ao centro. Os fatores de potência maiores que 1,0 causam um decaimento mais rápido (por exemplo, uma potência de 2 faz com faz com que a quantidade reduza com o quadrado da distância ao centro) e faz com que o efeito do filtro se concentre perto do centro. As potências abaixo de 1,0 espalham a quantidade do filtro pelos extremos; uma potência de 0,5 faz com que a quantidade decaia com um fator proporcional à raiz quadrada da distância ao centro. </para>
+      <para
+><guilabel
+>Raio</guilabel
+>: esta opção indica o raio, como um múltiplo da medida da meia-diagonal da imagem, na qual a quantidade do filtro decai para zero (ou, em outras palavras, fica transparente). O valor padrão 1,0 corresponde a um filtro que, se ficar centrado com a imagem, é transparente no seus cantos. Um valor de raio maior que 1,0 estende o efeito do filtro central além do cantos da imagem, enquanto um raio menor que um limita a ação do filtro a uma região menor que a imagem. Ao compensar o efeito de vinheta das lentes usadas para as máquinas de médio e grande formato, o fator de raio predefinido igual a 1,0 raramente é correto! Estas lentes muitas vezes &quot;cobrem&quot; um círculo de imagem substancialmente maior que o filme para permitir os movimentos da máquina fotográfica para controlar a perspectiva e o foco e, consequentemente, ter um padrão de vinheta que se estenda bastante além dos extremos do filme, o que necessita de um raio maior que 1 para simular um filtro central que cubra o círculo inteiro da imagem. </para>
+      <para
+>A única forma de ter a certeza dos valores ótimos de <guilabel
+>Quantidade</guilabel
+>, <guilabel
+>Leveza</guilabel
+> e <guilabel
+>Raio</guilabel
+> para compensar as características óticas atuais de uma determinada lente é expor uma cena uniformemente iluminada (por exemplo, um cartão cinza iluminado por uma luz difusa) e efetuar uma densimetria na imagem resultante. Se isso falhar, ou se as especificações do fabricante das lentes derem o grau de vinheta preciso com uma ou mais aberturas, você poderá ter que experimentar com várias configurações para descobrir as que funcionam melhor para cada uma das suas lentes. Para ajudá-lo nessa tarefa, a janela do plugin oferece uma máscara em miniatura aplicada à imagem. Felizmente, a resposta do olho humano é logarítmica e não linear, como a maioria dos sistemas de imagem digitais, assim você não necessita de compensar com precisão a vinheta atual para criar imagens que os visualizadores apresentem como uniformemente iluminadas. </para>
+     <para
+>Configuração do <guilabel
+>deslocamento em X</guilabel
+> e <guilabel
+>deslocamento em Y</guilabel
+>: estas opções movem, respectivamente, o centro do filtro na horizontal ou na vertical até chegar ao extremo da imagem definido de acordo com a percentagem indicada. Um valor negativo para o deslocamento em X irá deslocar o filtro para a esquerda, enquanto um valor positivo deslocá-lo-á para a direita. Do mesmo modo, um valor negativo em Y irá deslocar o filtro para cima, enquanto um valor positivo o deslocará para baixo. </para>
+      <para
+>Opções do <guilabel
+>Brilho</guilabel
+>, <guilabel
+>Contraste</guilabel
+> e <guilabel
+>Gama</guilabel
+>: o processamento de uma imagem com este plugin reduz a intensidade dos pixels. Você terá que ajustar de novo a exposição da imagem de destino com estas opções. Estas barras só lhe dão valores positivos, uma vez que você só precisa aumentar esta configuração. </para>
+	<para
+><guilabel
+>Adicionar uma vinheta</guilabel
+>: muitas fotografias parecem desinteressantes devido a terem um fundo que distrai as pessoas ou por outro motivo de composição qualquer. Embora, na maior parte dos casos, você queira remover essa vinheta, é um fato que uma vinheta seletiva poderá melhorar a legibilidade de uma fotografia e deslocar a atenção para o assunto pretendido. Como artista, você poderá selecionar esta opção; se a marcar, irá inverter o filtro, escurecendo assim os cantos de uma fotografia. </para>
+      <note>
+        <para
+>Se quiser um ajuste de exposição mais fino, deixe os valores de Brilho/Contraste/Gama em zero e use a ferramenta de Ajuste de Curvas do Editor de Imagens do &digikam;, que está disponível no menu <menuchoice
+> <guimenu
+>Cores</guimenu
+><guimenuitem
+>Ajustar curva</guimenuitem
+> </menuchoice
+>. </para>
+      </note>
+    </sect4>
+    <sect4 id="inaction-vignettingcorrection">
+      <title
+>A ferramenta de correção da vinheta em ação</title>
+      <para
+>Este é um exemplo de uma correção de vinheta aplicada a uma imagem. A imagem original (1) mostra a vinheta nos cantos, enquanto a imagem corrigida (2) mostra muito menos. Também é aplicada uma correção do brilho e do contraste à imagem de destino gerada por esta ferramenta. </para>
+      <para
+>Os valores usados neste exemplo são: <itemizedlist>
+          <listitem>
+            <para
+>Densidade = 2,6.</para>
+          </listitem>
+          <listitem>
+            <para
+>Potência = 0,9.</para>
+          </listitem>
+          <listitem>
+            <para
+>Raio - 1,1.</para>
+          </listitem>
+          <listitem>
+            <para
+>Brilho = 20.</para>
+          </listitem>
+          <listitem>
+            <para
+>Contraste = 50.</para>
+          </listitem>
+          <listitem>
+            <para
+>Gama = 20.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;antivignettingpreview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>A Ferramenta de Correção da Vinheta do Editor de Imagens em Ação</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+  <sect3 id="lensdistortion">
+    <sect3info>
+      <title
+>Correção de Distorção de Lentes</title>
+      <authorgroup>
+        <author
+><firstname
+>Gilles</firstname
+> <surname
+>Caulier</surname
+> <affiliation
+> <address
+> <email
+>caulier_dot_gilles_at_gmail_dot_com</email>
+            </address>
+          </affiliation>
+        </author>
+        <author
+><firstname
+>Gerhard</firstname
+> <surname
+>Kulzer</surname
+> <affiliation
+> <address
+> <email
+>gerhard at kulzer dot net</email>
+            </address>
+          </affiliation>
+        </author>
+      </authorgroup>
+      <abstract>
+        <para
+>O plugin de imagem do &digikam; para a <emphasis
+>Distorção de Lentes</emphasis
+> é uma ferramenta para reduzir a distorção esférica provocada pelas lentes numa imagem. Usa um algoritmo cujos direitos de cópia pertencem a David Hodson. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>KDE</keyword>
+        <keyword
+>Digikam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introdução</title>
+    <anchor id="lensdistortion.anchor"/>
+    <para
+>A <emphasis
+>Distorção de abaulamento</emphasis
+> está associada com as lentes grande angulares (ou de zoom mínimo) e que faz com que as imagens pareçam esféricas (curvadas para fora). Você irá reparar nisso quando tiver forma retas próximas da borda da imagem. Em oposição, a <emphasis
+>Distorção de afunilamento</emphasis
+> está associada com as lentes telescópicas (ou de zoom máximo), onde as imagens parecem espremidas (distorcidas para dentro), em torno do centro. O afunilamento é, muitas das vezes, menos notório que o abaulamento. Estas distorções podem ser facilmente eliminadas sem grande perda visível com este plugin. </para>
+    <note>
+      <para
+>Esta ferramenta trata das distorções geométricas. As distorções cromáticas não serão corrigidas por esta ferramenta. </para>
+    </note>
+    <para
+>As figuras a seguir explicam os tipos principais de distorções geométricas: <itemizedlist>
+        <listitem>
+          <para
+>(1): distorção por afunilamento.</para>
+        </listitem>
+        <listitem>
+          <para
+>(2): sem distorção.</para>
+        </listitem>
+        <listitem>
+          <para
+>(3): distorção por abaulamento.</para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para>
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="&path;distortions.png" format="PNG"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>Tipos de Distorção das Lentes</phrase>
+        </textobject>
+      </inlinemediaobject>
+    </para>
+    <para/>
+    <sect4 id="using-lensdistortion">
+      <title
+>Usar a ferramenta de distorção de lentes</title>
+      <note>
+        <para
+>Algumas explicações em primeiro lugar. As correções geométricas usam coeficientes polinomiais de 4ª ordem. <itemizedlist>
+            <listitem>
+              <para
+>O coeficiente de 1ª ordem altera o tamanho da imagem. A ferramenta chama a isto de <guilabel
+>Ampliação</guilabel
+>.</para>
+            </listitem>
+            <listitem>
+              <para
+>O coeficiente de 2ª ordem trata da distorção geométrica principal das lentes e pode corrigir a forma convexa ou côncava da imagem.</para>
+            </listitem>
+            <listitem>
+              <para
+>O coeficiente de 3ª ordem tem um efeito de arredondamento semelhante mas aplica-se mais em direção aos extremos. Esta correção não é aplicada na ferramenta.</para>
+            </listitem>
+            <listitem>
+              <para
+>O coeficiente de 4ª ordem corrige os extremos mais distantes de forma inversa ao arredondamento de 2ª ordem. Em conjunto com a correção de 2ª ordem, as distorções geométricas podem ser eliminadas quase por completo.</para>
+            </listitem>
+          </itemizedlist>
+        </para>
+      </note>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;lensdistortiondialog.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>A Janela de Correção de Distorção de Lentes</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>Existem quatro barras que lhe dão o controle sobre o filtro de correção da distorção: </para>
+      <para
+><guilabel
+>Principal</guilabel
+>: este valor controla a quantidade de distorção de 2ª ordem que é oferecida pelo filtro. Os valores negativos corrigem o efeito de distorção por abaulamento das lentes, enquanto os positivos corrigem a distorção por afunilamento. </para>
+      <para
+><guilabel
+>Extremos</guilabel
+>: este valor controla a quantidade de distorção de 4ª ordem oferecida pelo filtro. Funciona como a opção Principal, só que esta opção faz mais efeito nos extremos das imagens que no centro. Para a maioria das lentes, o parâmetro <guilabel
+>Extremos</guilabel
+> tem o sinal oposto ao do parâmetro <guilabel
+>Principal</guilabel
+>. </para>
+      <para
+><guilabel
+>Zoom</guilabel
+>: este valor ajusta a escala do tamanho (correção de 1ª ordem) da imagem. Os valores negativos reduzem a imagem, enquanto os positivos a ampliam. </para>
+      <para
+><guilabel
+>Brilho</guilabel
+>: este valor ajusta o brilho nos cantos da imagem. Os valores negativos diminuem o brilho nos cantos, enquanto os positivos aumentam-no. </para>
+      <para
+>Para ajudá-lo a escolher a configuração ótima do filtro, a janela do plugin mostra-lhe uma antevisão em miniatura da correção de distorção aplicada a um padrão cruzado. Os valores que aplicar à sua imagem serão salvos e irão aparecer com os mesmos valores que os predefinidos, da próxima vez que invocar a ferramenta. </para>
+      <note>
+        <para
+>A correção de abaulamento/afunilamento deverá ser feita antes de quaisquer alterações de recorte ou tamanho (incluindo a correção de perspectiva). De fato, as correções de Abaulamento/Afunilamento deverão ser o primeiro passo de todos na imagem original. Se recortar a imagem e usar depois a correção de abaulamento, o efeito será obviamente errado. </para>
+      </note>
+      <para
+>Para ajudá-lo, a ferramenta oferece também uma guia horizontal e vertical. Mova o cursor do mouse sob a antevisão da imagem para mostrar a guia tracejada. Mova o cursor para um ponto importante na imagem, como o mar ou o contorno de um edifício e clique com o botão esquerdo do mouse para congelar a posição das linhas tracejadas. Agora, ajuste a correção de abaulamento/afunilamento de acordo com a guia. </para>
+      <para
+>Ao usar a correção de afunilamento, a imagem resultante irá ter um contorno preto no canto. Você terá que cortá-lo com a ferramenta de recorte na opção <menuchoice
+><guimenu
+>Transformar</guimenu
+><guimenuitem
+>Recortar</guimenuitem
+></menuchoice
+> do Editor de Imagens ou através da barra de ampliação desta janela. </para>
+      <para
+>Na maioria das imagens, a utilização da correção de abaulamento é suficiente, contudo, com algumas fotos como os retratos frontais, as molduras, pinturas, o próximo passo será usar a correção de perspectiva para tornar todos os ângulos a 90 graus. Repare que, quando colocar a sua máquina fotográfica manualmente em frente a uma imagem, irá quase sempre introduzir uma espécie de distorção de perspectiva. </para>
+    </sect4>
+    <sect4 id="inaction-lensdistortion">
+      <title
+>A ferramenta de distorção de lentes em ação</title>
+      <para
+>Este é um exemplo de uma correção de abaulamento aplicada a uma imagem de uma igreja no norte da Noruega. A imagem original é a (1) e a imagem corrigida é a (2). </para>
+      <para
+>Os valores usados neste exemplo são: <itemizedlist>
+          <listitem>
+            <para
+>Principal = -40.</para>
+          </listitem>
+          <listitem>
+            <para
+>Margem = 0.</para>
+          </listitem>
+          <listitem>
+            <para
+>Ampliação = -20.</para>
+          </listitem>
+          <listitem>
+            <para
+>Brilho = 0.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;lensdistortionpreview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Antevisão da Correção da Distorção de Lentes</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+</sect2>

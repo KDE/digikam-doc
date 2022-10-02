@@ -1,0 +1,148 @@
+<sect2 id="editor-cm-monitor">
+    <title
+>Kalibreren en profileren van de RGB van uw monitor</title
+> 
+
+    <sect3>
+        <title
+>Als ik uitsluitend werk in de sRGB kleurruimte, moet ik dan mijn monitor kalibreren?</title>
+
+        <para
+>Ja, of u nu blijft binnen het kleurengamma dat door sRGB wordt geboden of niet, u heeft een juist gekalibreerd beeldscherm nodig omdat sRGB er van uit gaat dat uw beeldscherm is gekalibreerd voor sRGB. De kalibratie van uw beeldscherm vormt het sluitstuk van de cirkel. Als u werkt binnen  het kleurengamma, zoals voorzien door sRGB dan moet u uw beeldscherm kalibreren voor de sRGB standaard (of een accuraat kleurenschermprofiel aanmaken of beiden).    </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Wat zijn de consequenties van het werken met een niet gekalibreerde monitor?</title>
+
+        <para
+>Er zijn verschillende mogelijke consequenties. Geen van hen is goed. Elk beeldscherm, gekalibreerd of anders, kent een eigen (gekalibreerd) witpunt dat wordt uitgedrukt als temperatuur in graden Kelvin. Het witpunt van een beeldscherm (gekalibreerd of niet) is de kleur die u ziet als u kijkt naar een stukje zuiver wit op het beeldscherm. Zuiver wit is wanneer de RGB waarden in uw afbeelding allen gelijk zijn aan 255 (uitgedrukt in 8 bits), zoals de egaal witte pagina van een webpagina  of een office document. U denkt misschien wit is wit, maar als u verschillende beeldschermen, die allen gekalibreerd zijn op verschillende witpunten, dan zou u zien dat hoe hoger de temperatuur van het witpunt van het beeldscherm, hoe blauwer het scherm toont in vergelijking met schermen met een lager witpunt. Als u de instellingen van uw eigen beeldscherm kunt vinden, wijzig dan de temperatuur naar boven of naar beneden (vergeet niet om die weer terug te zetten naar beginstand wanneer u klaar bent, behalve als u besluit dat u een ander witpunt wilt instellen).  Uw ogen, die zich snel aanpassen aan een constant witpunt, zullen gemakkelijk het verschil zien wanneer het scherm blauwer en geler wordt naarmate u de aanwijzer hoger en lager beweegt. Als uw niet gekalibreerde scherm te blauw is (ingebouwde CRT kleurtemperatuur is 9300K en sRGB gaat er van uit dat het 6500K is) als u dan uw beeld bewerkt dan zult u overcompenseren en beelden produceren die te geel en te warm van kleur lijken op een juiste gekalibreerd beeldscherm. Omgekeerd, als uw beeldscherm te geel is omdat de kleurtemperatuur te laag werd ingesteld (ik geloof dat ingebouwde kleurtemperatuur van LCD schermen ongeveer 5500K is), dan zullen uw afbeeldingen  blauwachtig/te koel lijken op een juist gekalibreerd beeldscherm. </para>
+
+        <para
+>Het juiste witpunt instellen is slechts een deel van de kalibratie van het beeldscherm. U heeft ook een exact zwartpunt, helderheid en kleurengamma nodig. Als uw beeldscherm te donker is omdat het zwartpunt te laag is ingesteld dan zult u overcompenseren en beelden krijgen die er bleek uitzien op een juist ingesteld beeldscherm. Andersom, als het zwartpunt van uw beeldscherm te hoog is ingesteld dan zullen uw beelden te donker en oververzadigd lijken op een juist ingesteld beeldscherm.  </para>
+
+        <para
+>Als de helderheid/contrast te hoog is ingesteld, dan neemt u aan dat uw afbeeldingen meer "pop" hebben dan ze werkelijk hebben wanneer ze bekeken worden op een goed gekalibreerde monitor, plus dat uw ogen zeer gaan doen en uw LCD-scherm sneller zal inbranden. </para>
+
+        <para
+>Als het gamma van uw monitor onjuist is ingesteld dan zullen uw variaties in kleurtoon onjuist zijn. Dat betekent, de schaduwen of de zeer lichte delen kunnen te veel gecomprimeerd of opgerekt zijn en u verleiden om dat in de tegenovergestelde richting te compenseren. Dus wanneer bekeken op een juist ingestelde monitor  zouden de schaduwen te helder of te donker worden (of de zeer lichte delen te donker of te licht) en de rest van het beeld zou lijden aan overmatige compressie. Nog erger is het als de interne R, G, en B kanon (of het LCD-equivalent) van uw monitor onjuist zijn ingesteld (elk kanon heeft zijn eigen zwartpunt en versterking), omdat de resulterende kleurenset - te groen, te magenta, te oranje, &etc; is, die u onvermijdelijk maakt door uw afbeelding bij bewerking te "corrigeren" - zijn zeer duidelijk wanneer bekeken op een juist gekalibreerde monitor. </para>
+
+        <para
+>Of uw beeldscherm juist is gekalibreerd of niet, u zult verbaasd zijn over de resultaten bij het vergelijken van een beeld dat u heeft bewerkt op uw eigen computer wanneer dat beeld op andere beeldschermen bij u thuis of op het beeldscherm van een vriend of buurman wordt weergegeven. Wij waren werkelijk verbaasd, elk beeld bewerkt op onze computer zag er op de andere beeldschermen anders uit tot we een spectrofotometer kochten om alle beeldschermen in ons huis te kalibreren en er een kleurprofiel voor aan te maken. Geen van de twee verouderde CRT beeldschermen in ons huis kunnen nu nog gekalibreerd worden om een juist zwartpunt in te stellen en worden niet langer gebruikt voor beeldbewerking. Daaruit blijkt dat een bijkomend voordeel van het gebruik van een spectrofotometer is dat u kunt vaststellen wanneer het tijd word om een ander beeldscherm aan te schaffen. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>De betekenis van "zwartpunt" en "helderheid" lijkt behoorlijk helder, maar wat betekent "gamma"?</title>
+
+        <para
+>Bekijk <ulink url="https://nl.wikipedia.org/wiki/Gamma_correctie"
+>dit artikel in Wikipedia</ulink
+> om een overzicht te krijgen van de rol van gamma in beeldschermen en fotografie; de koppelingen onderaan het artikel in het Engels zijn allen uitstekende bronnen voor aanvullende informatie. Wikipedia stelt "Gamma compressie, ook wel genoemd: gammacodering, wordt gebruikt voor lineaire belichting of om RGB waarden te coderen naar videosignalen of digitale videobestandswaarden. Gamma verbreding is het omgekeerde ofwel het decoderingsproces. Gamma codering helpt om gegevens/data (zowel analoog als digitaal) te onder te brengen in een zichtbaar uniform gebied. Ja, we weten het, het is lastig om te begrijpen maar lees het artikel op Wikipedia en bekijk aandachtig de afbeeldingen. Uiteindelijk zult u het gaan begrijpen. Als u zich dieper in de materie van bewerken en kleurbeheersing wilt begeven, dan zult u uiteindelijk beslissingen moeten nemen over welk gamma (of andere codering of decoderingsfunctie u wilt gebruiken wanneer u uw beeldscherm kalibreert, een profiel aanmaakt voor uw digitale camera en een kleurruimte kiest. Wanneer u onzeker bent (voor hen die liever alleen willen weten welk knopje te gebruiken!), gamma=2.2 is een wijdverbreide waarde voor zowel beeldschermkalibratie als kleurruimten. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Wat is het verschil tussen kalibreren van een monitor en profileren van een monitor?</title>
+
+        <para
+>Bij het voor de eerste keer iets leren over kleurbeheer zijn veel mensen in verwarring over het verschil tussen kalibreren en profileren van een monitor (ik was het). Aanhalen van de uitstekende discussie van Hal Engel in het forum voor &digikam; gebruikers: </para>
+
+        <blockquote
+><para
+>Het kalibreren houdt in dat een apparaat in een bepaalde staat wordt gebracht door het wijzigen van de instellingen. Bijvoorbeeld, het kalibreren van een beeldscherm omvat het instellen van het witpunt, zwartpunt, helderheid en gamma tot van tevoren vastgesteld standaarden door gebruik te maken van de besturing van het beeldscherm en door de kromme van de videokaart te wijzigen. In tegenstelling tot kalibreren is het maken van een profiel het herkenbaar maken van het apparaat zonder veranderingen aan te brengen of instellingen te wijzigen. Beter gezegd, het is dus een meetproces dat een bestand oplevert waarin de juiste mathematische beschrijving van kleur- en tooneigenschappen van het apparaat worden bepaald. Zo'n bestand is een ICC profiel. Deze karakteristieken omvatten de overdrachtsfunctie van de kleurruimte van het apparaat naar een gestandaardiseerde absolute kleurruimte (dit noemt men profielkleurruimte, PCS, in een ICC profiel), het witpunt, zwartpunt, primaire kleuren en andere informatie. Beeldschermen worden normaal gekarakteriseerd (geprofileerd) in hun gekalibreerde staat. Samenvattend, kalibratie brengt wijzigingen aan in het apparaat om de weergave van kleuren te veranderen, zodat de kleurweergave voldoet aan een vooraf bepaalde instelling. Profileren of karakterisering is een meetproces  dat een gedetailleerde beschrijving geeft van de kleurweergavekarakteristiek  van het (gekalibreerde) apparaat. (Overgenomen vanaf <ulink url="http://digikam.1695700.n4.nabble.com/Re-Color-Managed-View-How-td1739136.html#a14160285"
+>hier</ulink
+>) </para
+></blockquote>
+
+        <para
+>Technisch gezien is het kalibreren van uw beeldscherm geen onderdeel van kleurmanagement. Maar klaarblijkelijk is een juist gekalibreerd beeldscherm al dan niet vergezeld van een kleurprofiel een vereiste voor kleurbeheersing in uw werkproces. Deze zelfstudie behandeld niet de belangrijke onderwerpen over hoe een beeldscherm te kalibreren en van een profiel te voorzien. De documentatie <ulink url="http://www.argyllcms.com/"
+>ArgyllCMS </ulink
+> en <ulink url="http://lprof.sourceforge.net/"
+>LProf </ulink
+> zijn erg goed en zeer aan te bevelen. Om een van beide programma's te gebruiken om uw beeldscherm te kalibreren en te profileren, zult u een spectrofotometer nodig hebben. Het apparaat wordt ook wel "spin" of "spider" genoemd. Het is een apparaat om de RGB waarden van bepaalde posities te meten die op het beeldscherm worden geprojecteerd door kalibratie/profileringsprogramma's als Argyll en Lprof. De website Argyll onderhoudt een lijst van door hen ondersteunde spectrofotometers. Lprof kan gebruik maken van alle spectrofotometers die door Argyll worden gebruikt omdat beiden programma's relevante delen van de code delen. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Kan ik mijn monitor kalibreren zonder een spectrumfotometer? </title>
+
+        <para
+>Op internet worden diverse manieren aangegeven om een beeldscherm te kalibreren zonder een spectrofotometer te gebruiken. Deze "op het oog" methoden zijn beter dan helemaal geen kalibratie en afhankelijk van uw ogen en van uw beeldscherm, kunnen ze redelijk bruikbare resultaten opleveren. Maar deze methode is geen vervanging voor een juist gekalibreerd en geprofileerd beeldscherm. Voor de goede orde, kalibreren en een profiel aanmaken voor een beeldscherm met een spectrofotometer, ofschoon beangstigend in het begin, is niet moeilijk. Spectrofotometers zijn te koop voor prijzen vanaf ca. 100 Euro. (Als u liever een duurder model wilt kopen let dan op dat u niet iets koopt dat volop mogelijkheden biedt maar niet onder Linux werkt.) De Argyll en/of LProf  documentatie begeleidt u door het proces voor het kalibreren en profileren van uw beeldscherm, zonder veel te moeten leren over kleurbeheer. En als u echter voldoende weet over kleurbeheer om te beseffen dat u een meer gedetailleerd kleurprofiel nodig heeft voor een een specifieke toepassing dan bieden deze twee programma's alle geavanceerde mogelijkheden die u kunt wensen. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Aangenomen dat ik hebt besloten om uitsluitend in de sRGB kleurruimte te werken, welke knoppen van &digikam; moet ik dan indrukken nadat ik mijn monitor heb gekalibreerd? </title>
+
+        <para
+>Als uw beeldscherm is gekalibreerd naar sRGB standaard en u werkt uitsluitend in sRGB dan kunt u kleurbeheer in digikam uit zetten. U hoeft &digikam; niet te vertellen welk beeldschermprofiel te gebruiken omdat &digikam; de standaard instelling sRGB als kleurprofiel voor het beeldscherm gebruikt. En u hoeft &digikam; niet te vertellen een sRGB workflow aan te houden omdat &digikam; standaard sRGB gebruikt voor uw camera, printer en werkruimte zoals in 1996 aangegeven door HP en MS (ontwerpers van de standaard). </para>
+
+        <para
+>Maar als u de eerste stappen wilt nemen naar een kleurbeheer werkproces, kijk dan op: <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>overeenkomstige pagina voor Instellingen</ulink
+>, schakel kleurbeheer in en kies sRGB als uw beeldschermprofiel, uw cameraprofiel, uw werkruimteprofiel en uw printerprofiel. Als u ook Argyll of LProf heeft gebruikt om een beeldschermprofiel te maken nadat u uw beeldscherm heeft gekalibreerd en bijvoorbeeld genoemd: "mijnbeeldschermprofiel.icc" vertel &digikam; dan om mijnbeeldschermprofiel.icc te gebruiken in plaats van sRGB als beeldschermprofiel. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Waar zijn alle icc-profielen opgeslagen op mijn computer?</title>
+
+        <para
+>Welnu, dit is &Linux; en het hangt af van waar u ze hebt opgeslagen. Ik sla al mijn icc-profielen op in de map /usr/share/color/icc, wat op dit moment het dichtst bij een standaard Linux-locatie voor icc-profielen is. Als u deze map voor uw icc-profielen gebruikt, dan zal het waarschijnlijk nodig zijn om de rechten op deze map te wijzigen om uw gebruiker lees- en schrijftoegang te geven. Daarna vertelt u aan &digikam; <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>waar uw profielen zich bevinden</ulink
+>. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Zijn de verlichting en de kleuren van de muur/plafond/gordijnen/meubels bij mijn monitor van belang?</title>
+
+        <para
+>Ja, goede verlichting is een eerste vereiste voor het juist bewerken van uw beelden en om afdrukken te vergelijken met het beeld op het beeldscherm. Als het licht bij uw werkstation te helder is zullen de kleuren op uw beeldscherm te donker lijken en omgekeerd, als het licht van de lampen in uw werkkamer een lage CRI (color rendering index) heeft, dan betekent dat dat u geen lampen met een volledig kleurenspectrum heeft, of als uw werkkamer door een raam verlicht word en het licht dus verandert met het veranderen van het weer of de tijd van de dag. (of nog erger als u gekleurde gordijnen heeft), of als de muren kleuren werpen op uw beeldscherm dan zal uw bewerkingsproces gecorrigeerde kleuren opleveren die niet echt bestaan. Het beste advies voor zover mogelijk voor behoud van de harmonie in uw gezin: neutraal grijze wanden en plafond, dek ramen af, draag neutrale kleding en schaf passende lichtniveaus en lampen en armaturen aan. Zie voor meer informatie over wat de passende lichtniveaus, lampen en armaturen zijn voor het bewerken van beelden en bekijken van afdrukken, de volgende artikelen.  </para>
+
+        <itemizedlist>
+
+            <listitem
+><para>
+                <ulink url="http://www.creativepro.com/article/the-darkroom-makes-a-comeback"
+></ulink>
+            </para
+></listitem>
+
+            <listitem
+><para>
+                <ulink url="http://www.creativepro.com/article/the-darkroom-makes-a-comeback-part-2-"
+></ulink>
+            </para
+></listitem>
+
+            <listitem
+><para>
+                <ulink url="http://www.lrc.rpi.edu/programs/nlpip/lightingAnswers/fullSpectrum/abstract.asp"
+></ulink>
+            </para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

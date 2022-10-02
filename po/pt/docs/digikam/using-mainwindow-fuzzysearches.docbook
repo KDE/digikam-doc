@@ -1,0 +1,83 @@
+<sect2 id="using-mainwindow-fuzzysearches">
+    <title
+>Área de Pesquisa Difusa</title>
+
+    <para
+>O &digikam; caracteriza cada imagem por um número extenso que usa uma técnica especial (algoritmo de Haar) que possibilita a comparação de imagens através da comparação desta assinatura calculada. Quanto menor for a diferença numérica entre duas assinaturas de imagens, mais parecidas serão uma com a outra. Esta técnica tem três implementações no &digikam;: </para>
+
+    <itemizedlist>
+
+        <listitem>
+            <para
+>Duplicados: depois de o &digikam; tem analisado todas as colecções, irá encontrar aqui uma lista com os duplicados. Depende de si, como é óbvio, decidir o que fazer com elas. No botão <guilabel
+>Reconstruir as impressões digitais</guilabel
+>, poderá iniciar uma reconstrução total das assinaturas das imagens (poderá levar horas se tiver uma colecção grande; uma estimativa possível é de 2 horas para 10 000 imagens) ou poderá pedir uma nova análise, o que é muito mais rápido. A opção para <guimenu
+>Procurar os duplicados</guimenu
+> irá fazer isso mesmo, mas irá levar também bastante tempo, dado que tem de comparar cada uma das imagens com todas as outras. Com isto, o que há a fazer é reduzir a sua pesquisa a certos álbuns e/ou marcas. Com o limite de Semelhança, poderá restringir ou alargar o resultado da pesquisa. </para>
+
+            <example>
+                <title
+>Pesquisa por duplicados restrita a um álbum</title>
+                <mediaobject>
+                    <imageobject
+><imagedata fileref="&path;using-mainwindow-duplicates-albumsfilter.png" format="PNG"/></imageobject>
+                </mediaobject>
+            </example>
+            
+            <para
+>Será dada uma visão geral sobre o resultado na barra lateral esquerda. A primeira coluna mostra as imagens de referência de cada resultado individual. A coluna dos Itens diz-lhe quantas imagens pertencem a cada resultado, incluindo a imagem de referência. A última coluna mostra a semelhança média, o que lhe dá uma ideia de quão semelhantes as imagens de cada resultado parecem ser. A imagem de referência, com os seus 100 %, <emphasis
+>não</emphasis
+> está incluída na média. Lembre-se que os resultados podem ser ordenados se carregar num dos cabeçalhos das colunas. </para>
+            
+            <para
+>Poderá obter os valores individuais de semelhança para cada item na tabela da Área de Imagens (botão <guilabel
+>Tabela</guilabel
+> da Barra Principal). Carregue com o botão direito sobre um dos cabeçalhos das colunas e seleccione <guilabel
+>Semelhança</guilabel
+> as <guilabel
+>Propriedades do item</guilabel
+> para mostrar a coluna de semelhança. Ao carregar no cabeçalho desta coluna, então os resultados serão ordenados pela semelhança, agrupada pelas imagens de referência. Se carregar repetidamente no cabeçalho, irá comutar entre o sentido ascendente e descendente. </para>
+        </listitem>
+
+        <listitem>
+            <para id="find-similar"
+>Imagem (Itens semelhantes): Esta é uma zona de 'drag&amp;drop', onde poderá largar qualquer imagem para encontrar uma semelhante. Arraste uma imagem de um sítio qualquer sobre o ícone de pesquisa difusa na barra lateral esquerda, a qual irá abrir para lhe permitir largar o ficheiro, ou então usando a opção <guilabel
+>Procurar Semelhantes...</guilabel
+> no menu de contexto de uma miniatura em qualquer outra área qualquer. Poderá reduzir ou alargar a selecção resultante com um limite definido por si. No campo abaixo, poderá introduzir um nome para a pesquisa e gravá-lo. Na lista de pesquisas abaixo, poderá encontrar as suas pesquisas gravadas. Se carregar na barra de título dessa lista, irá comutar o sentido da ordenação entre ascendente e descendente. No fundo, irá encontrar um campo de pesquisa adaptativo, o qual lhe poderá ajudar a procurar uma pesquisa em particular. </para>
+
+            <example>
+                <title
+>Pesquisa difusa por imagens semelhantes</title>
+                <mediaobject
+><imageobject
+><imagedata fileref="&path;using-mainwindow-searchsimilar.png" format="PNG"/></imageobject
+></mediaobject>
+            </example>
+        </listitem>
+
+        <listitem>
+            <para
+>Desenho: desenho de cores à mão: faça um desenho rápido para que o &digikam; tente descobrir as imagens correspondentes. Irá encontrar a mesma forma de gravação da pesquisa na página <guilabel
+>Imagem</guilabel
+>. </para>
+
+            <example>
+                <title
+>Pesquisa difusa por desenho</title>
+                <mediaobject>
+                    <imageobject
+><imagedata fileref="&path;using-mainwindow-searchsketch.png" format="PNG"/></imageobject>
+                </mediaobject>
+            </example>
+        </listitem>
+
+    </itemizedlist>
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

@@ -1,0 +1,181 @@
+  <sect3 id="editor-enhance-distortion">
+    <sect3info>
+      <title
+>Correzione della distorsione lenticolare</title>
+      <abstract>
+        <para
+>La <emphasis
+>distorsione lenticolare</emphasis
+> di &digikam; è uno strumento per correggere le aberrazioni lenticolari sferiche nelle foto. Usa un algoritmo protetto dal copyright di David Hodson. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>Digikam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introduzione</title>
+    <anchor id="lensdistortion.anchor"/>
+    <para
+>La <emphasis
+>distorsione a barilotto</emphasis
+> è associata alle lenti a grandangolo (o a ingrandimento minimo). Fa apparire l'immagine leggermente sferica (curvata all'esterno) come un barilotto. Puoi notarlo quando ci sono oggetti dritti vicino ai lati esterni dell'immagine. La <emphasis
+>distorsione a cuscinetto</emphasis
+> è il difetto opposto, ed è associata ai teleobiettivi (a ingrandimento massimo) o a immagini subacquee. Le immagini appaiono pizzicate (piegate all'interno). L'effetto a cuscinetto è spesso meno facile da vedere di quello a barilotto, ma sono ugualmente visibili vicino ai bordi. Queste distorsioni possono facilmente essere eliminate con questo strumento senza una perdita di qualità sensibile. </para>
+    <note>
+      <para
+>Questo strumento tratta le distorsioni geometriche; le aberrazioni cromatiche non saranno corrette da questo strumento. </para>
+    </note>
+    <para
+>Le seguenti figure spiegano i tipi principali di distorsioni geometriche: <itemizedlist>
+        <listitem>
+          <para
+>(1): distorsione a cuscinetto.</para>
+        </listitem>
+        <listitem>
+          <para
+>(2): senza distorsione.</para>
+        </listitem>
+        <listitem>
+          <para
+>(3): distorsione a barilotto.</para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para>
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="&path;editor-distortions.png" format="PNG"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>Tipi di distorsione lenticolare</phrase>
+        </textobject>
+      </inlinemediaobject>
+    </para>
+    <para/>
+    <sect4 id="using-lensdistortion">
+      <title
+>Uso dello strumento di distorsione lenticolare</title>
+      <note>
+        <para
+>Prima un po' di spiegazioni. Le correzioni geometriche usano dei coefficienti polinomiali di quarto ordine. <itemizedlist>
+            <listitem>
+              <para
+>Il coefficiente di primo ordine cambia le dimensioni dell'immagine. Lo strumento lo chiama <guilabel
+>Ingrandimento</guilabel
+>.</para>
+            </listitem>
+            <listitem>
+              <para
+>Il coefficiente di secondo ordine riguarda la distorsione geometrica principale delle lenti, e può correggere la forma convessa o concava dell'immagine.</para>
+            </listitem>
+            <listitem>
+              <para
+>Il coefficiente di terzo ordine ha un effetto di arrotondamento simile, ma si livella verso i bordi. Questa correzione non è impiegata nello strumento.</para>
+            </listitem>
+            <listitem>
+              <para
+>Il coefficiente di quarto ordine corregge i bordi distanti inversamente all'arrotondamento di secondo ordine. Combinandolo con la correzione di secondo ordine le distorsioni geometriche possono essere eliminate quasi completamente.</para>
+            </listitem>
+          </itemizedlist>
+        </para>
+      </note>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-lensdistortion.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Finestra della Correzione della distorsione lenticolare</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>Quattro cursori ti permettono di impostare il filtro di correzione della distorsione: </para>
+      <para
+><guilabel
+>Principale</guilabel
+>: questo valore controlla la quantità di distorsione di secondo ordine. I valori negativi correggono le distorsioni a barilotto, mentre quelli positivi correggono le distorsioni a cuscinetto. </para>
+      <para
+><guilabel
+>Bordo</guilabel
+>: questo valore controlla la quantità di distorsione di quarto ordine. Il controllo Bordo ha più effetto ai bordi dell'immagine che al centro. Per la maggior parte delle lenti il parametro <guilabel
+>Bordo</guilabel
+> ha segno opposto al <guilabel
+>Principale</guilabel
+>. </para>
+      <para
+><guilabel
+>Ingrandimento</guilabel
+>: questo valore riduce le dimensioni totali dell'immagine (correzione di primo ordine). Valori negativi rimpiccioliscono l'immagine, quelli positivi la ingrandiscono. </para>
+      <para
+><guilabel
+>Illuminazione</guilabel
+>: questo controllo regola la luminosità negli angoli dell'immagine. Valori negativi riducono la luminosità dell'immagine negli angoli, valori positivi la aumentano. </para>
+      <para
+>Per aiutarti a scegliere le migliori impostazioni del filtro, la finestra dello strumento illustra con un'anteprima in miniatura la correzione della distorsione applicata ad uno schema a rete incrociata. I valori che applichi all'immagine saranno salvati, e riappariranno come impostazione predefinita la prossima volta che userai lo strumento. </para>
+      <note>
+        <para
+>La correzione barilotto-cuscinetto dovrebbe essere fatta prima di qualsiasi taglio o di cambiamento delle dimensioni (inclusa la correzione della prospettiva). Anzi, dovrebbero essere il primissimo intervento sull'immagine originale. Se tagli l'immagine e poi usi la correzione a barilotto, l'effetto sarebbe ovviamente sbagliato. </para>
+      </note>
+      <para
+>Per aiutarti a trovare la correzione migliore lo strumento ti fornisce anche una guida verticale ed una orizzontale: sposta il puntatore del mouse nell'anteprima dell'immagine per visualizzarle a linee tratteggiate. Sposta il puntatore in un posto importante dell'immagine, come il livello del mare o il bordo di un edificio, e premi il &LMB; per congelare la posizione delle linee tratteggiate. Adesso regola la correzione barilotto/cuscinetto per allinearti alla guida. </para>
+      <para
+>Quando usi la correzione a cuscinetto, l'immagine risultante avrà un bordo nero nell'angolo. Dovrai tagliarlo con uno strumento di taglio, disponibile nel menu dell'editor d'immagini <menuchoice
+><guimenu
+>Trasforma</guimenu
+><guimenuitem
+>Taglia</guimenuitem
+></menuchoice
+>, oppure con il cursore d'ingrandimento di questa finestra. </para>
+      <para
+>Per la maggior parte delle immagini l'uso della correzione a barilotto è sufficiente, ma con alcune foto, come immagini frontali, cornici, quadri, il passo logico successivo è l'uso della correzione della prospettiva per rendere tutti gli angoli di 90 gradi. Nota che, quando tieni in mano la tua macchina fotografica, introduci quasi sempre qualche tipo di leggera distorsione della prospettiva. </para>
+    </sect4>
+    <sect4 id="inaction-lensdistortion">
+      <title
+>Lo strumento di distorsione lenticolare in azione</title>
+      <para
+>Questo è un esempio di una correzione a barilotto applicata ad una chiesa nella Norvegia settentrionale. L'immagine originale è la (1), quella corretta la (2). </para>
+      <para
+>I valori usati in questo esempio sono: <itemizedlist>
+          <listitem>
+            <para
+>Principale = -40.</para>
+          </listitem>
+          <listitem>
+            <para
+>Bordo = 0.</para>
+          </listitem>
+          <listitem>
+            <para
+>Ingrandimento = -20.</para>
+          </listitem>
+          <listitem>
+            <para
+>Illuminazione = 0.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-lensdistortion-preview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Anteprima della correzione della distorsione lenticolare</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

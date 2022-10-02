@@ -1,0 +1,374 @@
+<sect2 id="using-setup-database">
+    <title
+>Impostazioni della banca dati</title>
+
+    <para>
+
+        <note
+><para
+>Per un'introduzione sull'immagazzinamento dei dati interni fai riferimento alla sezione <link linkend="intro-database"
+>introduzione alla banca dati di &digikam;</link
+> </para
+></note>
+
+    </para>
+
+    <sect3 id="using-setup-database-sqlite">
+        <title
+>La banca dati Sqlite</title>
+
+        <para
+><ulink url="https://sqlite.org"
+>SQLite</ulink
+> è un sistema di gestione di banche dati relazionali, contenuto in una libreria di programmazione C. SQLite non è direttamente paragonabile a motori client/server di banca dati SQL come MySQL, Oracle o PostgreSQL. Piuttosto è un motore di banche dati SQL incorporato, cioè viene incorporato in un programma. SQLite legge e scrive direttamente dei normali file su disco. Per dispositivi di memorizzazione locali con bassa concorrenza in scrittura e meno di un terabyte di contenuti, SQLite è quasi sempre una soluzione migliore. SQLite è veloce ed affidabile e non richiede configurazione o manutenzione. Non complica le case. SQLite «semplicemente funziona». </para>
+
+        <para
+>Come scelta predefinita, &digikam; usa SQLite come suo motore per memorizzare i metadati e le miniature importanti. I tre file di SQLite usati per memorizzarli sono chiamati rispettivamente: <orderedlist>
+
+                <listitem
+><para
+>Principale: digikam4.db. </para
+></listitem>
+
+                <listitem
+><para
+>Miniature: thumbnails-digikam.db. </para
+></listitem>
+
+                <listitem
+><para
+>Visi: recognition.db. </para
+></listitem>
+
+            </orderedlist>
+
+        </para>
+
+        <para
+>È consigliabile verificare e ottimizzare la banca dati di tanto in tanto per rendere la tua applicazione veloce e senza intoppi. Questo può essere fatto usando i pacchetti sqlite3, oppure sqlite browser (uno strumento visuale per la gestione di oggetti banche dati semplice da usare e di alta qualità). Per Ubuntu e per le sue derivate possono essere installati con <command
+>sudo apt-get install sqlite3</command
+> o con <command
+>sudo apt-get install sqlitebrowser</command
+>. Ora, tutto quello che rimane da fare è aprire il terminale e spostarsi nella cartella in cui è memorizzata la banca dati. </para>
+
+        <note
+><para
+>Cerca di usare un posto su un dispositivo veloce (come un SSD) dotato di spazio libero sufficiente, specialmente per la banca dati delle miniature. Un file system remoto, come NFS, non può essere utilizzato qui. Per ragioni sia di prestazione che tecniche non puoi usare un dispositivo rimovibile. </para
+></note>
+
+        <para
+>I file della banca dati SQLite possono essere trovati nella tua cartella della «raccolta», quella che hai aggiunto in &digikam;. (se hai aggiunto la tua raccolta «Immagini», il file della banca dati come predefinito sarà presente nella cartella <filename class="directory"
+> ~/Immagini</filename
+>). </para>
+
+        <para>
+            <inlinemediaobject
+><imageobject>
+                <imagedata fileref="&path;intro-database-sqlite.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+    </sect3>
+
+    <sect3 id="using-setup-database-mysql">
+        <title
+>La banca dati MySQL</title>
+
+        <sect4>
+            <title
+>MySQL contro SQLite</title>
+
+            <para
+><ulink url="https://www.mysql.com"
+>MySQL</ulink
+> è un sistema di gestione di banche dati relazionali libero scritto in C e C++, il cui sviluppo originale è incominciato nel 1994 ad opera di Michael Widenius e David Axmark. La Sun Microsystem ha acquisito MySQL nel 2008, ed è stata in seguito acquisita da Oracle nel 2010. Al momento MySQL funziona su quasi tutte le piattaforme (Linux, Microsoft Windows, OS X, SunOS …). </para>
+
+            <para
+>Il server <ulink url="https://mariadb.org/"
+>MariaDB</ulink
+> è un fork del server MySQL sviluppato dalla comunità. Iniziato dai membri principali del team di MySQL, MariaDB lavora attivamente con gli sviluppatori che si sono aggiunti in seguito, per distribuire il server SQL più ricco di funzionalità, stabile, rilasciato in modo sano e con licenza aperta del settore. </para>
+
+            <para
+>MariaDB ha al momento superato MySQL per queste semplici ragioni: <orderedlist>
+
+                    <listitem
+><para
+>Lo sviluppo di MariaDB è più aperto e più vibrante. </para
+></listitem>
+
+                    <listitem
+><para
+>Ha più funzionalità all'avanguardia. </para
+></listitem>
+
+                    <listitem
+><para
+>Più motori di archiviazione. </para
+></listitem>
+
+                    <listitem
+><para
+>Migliori prestazioni. </para
+></listitem>
+
+                    <listitem
+><para
+>Compatibile e semplice da migrare. </para
+></listitem>
+
+                </orderedlist>
+
+            </para>
+
+            <para
+>&digikam; fornisce anche il supporto al popolare motore di banche dati MySQL. Naturalmente ti potresti chiedere perché dovresti passare a MySQL quando SQLite fa già un ottimo lavoro nella gestione dei dati. MySQL offre molti vantaggi nella memorizzazione dei dati di &digikam;, specialmente quando la raccolta include più di 100.000 elementi: con tali raccolte, SQLite genera delle latenze che rallentano l'applicazione. </para>
+
+            <para
+>Usando MySQL come motore della banca dati di &digikam; puoi immagazzinare i dati in locale, ma anche in remoto. Localmente, per rimpiazzare la memorizzazione di SQLite, ed infine per usare computer condivisi sulla rete. Usando MySQL come motore della banca dati di &digikam; puoi immagazzinare i dati in un server remoto, in modo da poter usare installazioni multiple di &digikam; (per esempio sul tuo portatile e sul tuo PC) per gestire le tue raccolte di foto. Puoi anche usare gli strumenti di MySQL per analizzare i dati di &digikam;. </para>
+
+            <para
+>Per passare dalla banca dati SQLite a MySQL, vai in <guimenuitem
+>Impostazioni</guimenuitem
+> / <guimenuitem
+>Configura &digikam;...</guimenuitem
+>, quindi nella sezione <guilabel
+>Impostazioni</guilabel
+>, e seleziona una banca dati dalla lista a cascata. <orderedlist>
+
+                    <listitem
+><para
+>MySQL interno: permette di avviare un server per la banca dati interno al tuo sistema. &digikam; utilizza il socket di Unix per la connessione. </para
+></listitem>
+
+                    <listitem
+><para
+>MySQL remoto: usalo se hai i dati in un server remoto, e accedi alla tua raccolta da una macchina diversa. </para
+></listitem>
+
+                </orderedlist>
+
+            </para>
+
+        </sect4>
+
+        <sect4>
+            <title
+>Il server MySQL interno</title>
+
+            <para
+>Se usi una grande raccolta, con più di 100.000 elementi, l'applicazione tende a rallentare. Per evitare ciò, e per mantenere l'efficienza, &digikam; ti permette di usare un <guilabel
+>server Mysql interno</guilabel
+>. Per essere chiari, questo non è un server vero e proprio o una rete pubblica, è invece un server che funziona solo mentre l'applicazione è in funzione. </para>
+
+            <para
+>Il server interno crea una banca dati separata, a cui si può avere accesso (solo mentre l'applicazione è in esecuzione) usando il comando: <command
+>mysql --socket=/home/<replaceable
+>[nome_utente]</replaceable
+>/.local/share/digikam/db_misc/mysql.socket digikam</command
+> </para>
+
+            <para
+>Il server interno usa due strumenti interni di MySQL- <application
+>mysql_install_db</application
+> e <application
+>mysqld</application
+>; puoi configurare i loro percorsi nella finestra di configurazione. &digikam; cercherà di trovare questi binari automaticamente se sono installati nel tuo sistema. </para>
+
+            <para>
+                <inlinemediaobject
+><imageobject>
+                    <imagedata fileref="&path;intro-database-mysqlinternal.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+
+        </sect4>
+
+        <sect4>
+            <title
+>Il server remoto MySQL</title>
+
+            <para
+>Ovviamente l'uso di &digikam; con MySQL remoto richiederebbe un server di MySQL, oppure potresti installare MariaDB, che serve bene allo scopo. (Potresti installarlo semplicemente da questo <ulink url="http://www.liquidweb.com/kb/how-to-install-mariadb-5-5-on-ubuntu-14-04-lts/"
+>collegamento</ulink
+>.) </para>
+
+            <para
+>Segui le istruzioni qui sotto se non hai un account utente ed una banca dati di &digikam; già configurata. Esegui i comandi nel server MySQL (dopo aver sostituito la password con quella corretta): </para>
+
+            <note
+><para
+>Puoi selezionare un qualsiasi nome per la banca dati (qui è semplicemente «digikam», ricordati solo di riempire correttamente il nome della banca dati principale, di quella per le miniature e di quella per i visi nella finestra mostrata qui sotto. </para
+></note>
+
+            <blockquote
+><screen
+>CREATE USER ''@'%' IDENTIFIED BY 'password';
+                GRANT ALL ON *.* TO ''@'%' IDENTIFIED BY 'password';
+                CREATE DATABASE digikam;
+                GRANT ALL PRIVILEGES ON digikam.* TO ''@'%';
+                FLUSH PRIVILEGES;
+            </screen
+></blockquote>
+
+            <note
+><para
+>Se hai una raccolta enorme dovresti avviare il server MySQL con <command
+>mysql --max_allowed_packet = 128M</command
+> </para
+></note>
+
+            <para
+>Ora, in &digikam;, vai in <menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Configura &digikam;...</guimenuitem
+></menuchoice
+>, quindi nella sezione <guilabel
+>Impostazioni</guilabel
+>, e seleziona <guilabel
+>Server MySQL</guilabel
+> dall'elenco a tendina. </para>
+
+            <para>
+                <inlinemediaobject
+><imageobject>
+                    <imagedata fileref="&path;intro-database-remotemysql.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+
+            <para
+>Inserisci l'indirizzo IP del tuo server MySQL nel campo <guilabel
+>Nome host:</guilabel
+>, e specifica la porta giusta nel campo <guilabel
+>Porta</guilabel
+> (quella predefinita è la 3306). </para>
+
+            <para
+>Inserisci nel campo <guilabel
+>Nome Bd principale:</guilabel
+> il nome della prima banca dati che immagazzina i metadati delle fotografie. </para>
+
+            <para
+>Specifica il nome della seconda banca dati che immagazzina le miniature compresse con wavelet nel campo <guilabel
+>Nome Bd miniature:</guilabel
+>. </para>
+
+            <para
+>La terza banca dati serve per immagazzinare gli istogrammi facciali per il riconoscimento. Usa per questo il campo <guilabel
+>Nome Bd visi:</guilabel
+>. </para>
+
+            <para
+>Per essere connessi con sicurezza al server remoto inserisci la tua identificazione MySQL, usando i campi <guilabel
+>nome utente</guilabel
+> e <guilabel
+>password</guilabel
+>. </para>
+
+            <para
+>Premi il pulsante <guibutton
+>Verifica la connessione</guibutton
+> per controllare se la connessione con la banca dati funziona correttamente: se tutto va come deve, passa alla sezione <guilabel
+>Raccolte</guilabel
+>, e aggiungi le cartelle che contengono le tue fotografie. Premi quindi <guibutton
+>OK</guibutton
+>, e aspetta affinché &digikam; popoli la banca dati con i dati delle tue foto. Questo può richiedere un po' di tempo se hai molti elementi da registrare nella banca dati. </para>
+
+            <para
+>Ci sono alcuni suggerimenti e raccomandazioni per ottenere i risultati migliori con un server di banca dati remoto MySQL. </para>
+
+            <para
+>Con una rete lenta &digikam; si blocca per molto tempo, specialmente se l'album contiene molti elementi (
+>1000): questa soluzione fa affidamento sulle prestazioni della rete. Il problema è riproducibile usando una connessione Wifi, per esempio, mentre dovrebbe risolversi passando ad una Ethernet. </para>
+
+            <para
+>Inoltre, se hai una raccolta molto grande, dovresti avviare il server MySQL con <command
+>mysql --max_allowed_packet = 128M</command
+>. (se sei esperto nell'uso di MySQL puoi anche cambiare le impostazioni nei file my.ini, oppure in ~/.my.cnf files). </para>
+
+        </sect4>
+
+    </sect3>
+
+    <sect3 id="using-setup-database-migration">
+        <title
+>Migrazione della banca dati</title>
+
+        <para
+>L'applicazione di gestione delle fotografie nasce con uno strumento esclusivo per la «migrazione della banca dati», che permette agli utenti di migrare i loro dati. Supponiamo che stai usando SQLite, e che vorresti spostare i tuoi dati in un database MySQL; questo strumento ti aiuterebbe. Può aiutarti a migrare i dati da SQLite a MySQL e viceversa. </para>
+
+        <para
+>Per migrare su un altra banca dati, vai in <menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Migrazione della banca dati...</guimenuitem
+></menuchoice
+>.; ti apparirà una finestra di dialogo: </para>
+
+        <para>
+            <inlinemediaobject
+><imageobject>
+                <imagedata fileref="&path;intro-database-migration.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>Ora scegli il tipo di banca dati appropriata in cui vuoi convertire, infine fai clic sul pulsante <guibutton
+>Migra</guibutton
+> per convertire la banca dati da SQLite a MySQL (o viceversa). </para>
+
+    </sect3>
+
+    <sect3 id="using-setup-database-backup">
+        <title
+>Raccomandazioni sulla banca dati</title>
+
+        <para
+>Per ragioni di sicurezza, pianificare una copia di sicurezza sulla rete usando crontab può aiutare a prevenire le disfunzioni. Possono essere utili anche un NAS o un drive esterno. </para>
+
+        <para
+>Ciascuna banca dati può essere chiamata con un diverso nome, non solo «digikam»; in questo modo l'utente può creare una copia di sicurezza contenente solamente quello di cui ha bisogno. Per esempio, chiamando la banca dati «principale» digikamPrincipale, è possibile isolare solo questa tabella (il file più importante), mentre le banche dati per le miniature ed i riconoscimenti possono essere rigenerate da zero. </para>
+
+        <para
+>Il capitolo sullo <link linkend="tool-maintenance"
+>strumento di manutenzione di &digikam;</link
+> spiegherà come mantenere nel tempo i contenuti della banca dati, e come sincronizzare le raccolte con le informazioni delle banche dati (e viceversa). </para>
+
+    </sect3>
+
+    <sect3 id="using-setup-database-statistics">
+        <title
+>Statistiche della banca dati</title>
+
+        <para
+>&digikam; fornisce uno strumento unico per mantenere le statistiche della tua raccolta; esso include il conteggio delle immagini, dei video (inclusi i conteggi individuali in base al formato dell'immagine), dei tag &etc;. Include anche il motore della banca dati (QSQLITE oppure QMYSQL) ed il percorso della banca dati (dove si trova la tua raccolta). </para>
+
+        <para
+>Puoi visualizzare le tue statistiche andando in <menuchoice
+><guimenu
+>Aiuto</guimenu
+> <guimenuitem
+>Statistiche della banca dati</guimenuitem
+></menuchoice
+>; apparirà una finestra come questa: </para>
+
+        <para>
+            <inlinemediaobject
+><imageobject>
+                <imagedata fileref="&path;intro-database-statistics.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

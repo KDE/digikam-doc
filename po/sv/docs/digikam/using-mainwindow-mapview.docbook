@@ -1,0 +1,88 @@
+<sect2 id="using-mainwindow-mapview">
+   <title
+>Kartvy</title>
+
+    <para
+>Hela den geografiska lokaliseringssviten i &digikam;, om man vill kalla den det, består av fyra delar: </para>
+        <orderedlist numeration="arabic">
+            <listitem
+><para
+>Kartläget för bildområdet som visar bilder med GPS-data på en karta beroende på markeringen i vänster sidorad, t.ex. bilderna i albumet som markerats i albumvyn, bilderna med en viss tilldelad etikett (markerade i etikettvyn), med en viss beteckning, och så vidare. </para
+></listitem>
+            <listitem
+><para
+>Vyn som är sökverktyget för att hitta bilder enligt deras GPS-information.</para
+></listitem>
+            <listitem
+><para
+><link linkend="tool-geolocationeditor"
+>Den geografiska lokaliseringseditorn</link
+>, som går att komma åt via <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Shift;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenu
+>Objekt</guimenu
+><guimenuitem
+>Redigera geografisk plats...</guimenuitem
+></menuchoice
+>, och gör det möjligt att ange och redigera GPS-information.</para
+></listitem>
+            <listitem
+><para
+>Fliken <link linkend="using-sidebar-maps"
+>Karta</link
+> i höger sidorad som visar bildens plats på en karta, och enbart är informativ.</para
+></listitem>
+        </orderedlist>
+    <para
+>Alla fyra är baserade på den grafiska &marble;-komponenten. </para>
+
+    <para>
+        <inlinemediaobject>
+            <imageobject
+><imagedata fileref="&path;using-mainwindow-mapsearch.png" format="PNG"/></imageobject>
+        </inlinemediaobject>
+    </para>
+
+    <para
+>Se kapitel 2 i handboken för &marble; om navigering på kartan. Betydelsen av <quote
+>GPS</quote
+> samt funktioner och knappar som gäller alla tre delarna av geografisk lokalisering, beskrivs i handbokens kapitel <link linkend="tool-geolocationeditor"
+>Geografisk lokaliseringseditor</link
+>. Det gäller den sammanhangsberoende menyn på kartan och den första raden knappar under kartan, utom de tre sista. Betydelsen som används här för knapparna är innehållet i respektive verktygstips. </para>
+
+    <para
+>Oftast börjar man söka efter bilder genom att definiera ett område på kartan. Klicka på den vänstra av knapparna vid <quote
+>Sök enligt område:</quote
+>, knappen för att välja bilder genom att rita en rektangel. klicka med vänster musknapp på ett hörn på kartan, rita en öppen rektangel och klicka med vänster musknapp på ett annat hörn. Alla bilder som hamnar inom rektangelns koordinater visas i bildområdet (naturligtvis under förutsättning att bilderna har geografisk kodning). </para>
+
+    <para
+>Nästa knapp till höger är knappen för att skapa ett markerat område från en miniatyrbild, som skapar ett litet område omkring positionen för en markör eller miniatyrbild om du klickar på den. Om det finns andra bilder dolda bakom den eftersom de har samma position, eller en position mycket nära bilden som klickades på, visas de i bildområdet. </para>
+
+    <para
+>Den sista knappen på raden är knappen för att ta bort aktuellt markerat område. Måste jag faktiskt förklara den i alla fall? Nå, jag bör väl nämna att den förstås bara tar bort markeringen, och inte de värdefulla bilderna. </para>
+
+    <para
+>Låt oss nu ta en titt på de tre knapparna längst till höger på raden precis under kartan. De bestämmer vilka bilder från det definierade området som visas i bildområdet. Låt oss börja med den som är allra sist på raden, knappen för att välja bilder. Om den aktiveras, markerar eller avmarkerar den ett fotografi (eller en grupp av fotografier om de är dolda bakom varandra) när man väl klickar på kartan med den. Det kan vara till hjälp för att finjustera markeringen innan åtgärder utförs från höger sidorad eller menyerna. </para>
+
+    <para
+>Knappen för att filtrera bilder (den med en tratt på), i motsats till knappen för att markera bilder som lämnar alla bilder från det definierade området synliga i bildområdet, stänga av alla andra bilder och bara visa de som du klickade på. Det är särskilt användbart om kartan bara visar markörer, eller om miniatyrbilderna är för små för att tydligt identifiera bilder. </para>
+
+    <para
+>Knappen för att ta bort aktuellt filter är självförklarande, men jag vill nämna här att de tre sista knapparna inte påverkar det definierade sökområdet, vilket betyder att när du väl klickat på knappen med det vita krysset i röd cirkel, visas alla sökområdets bilder igen i bildområdet. </para>
+
+    <para
+>Knappen <guilabel
+>Visa objekt utan geografisk lokalisering</guilabel
+> visar alla bilder utan GPS-information i bildområdet. Om det gäller många bilder i samlingarna kan det vara en god idé att använda filterfliken i höger sidorad och/eller dessutom sorterings- och grupperingsfunktionerna i menyn <guimenu
+>Visa</guimenu
+>. </para>
+
+    <para
+>I rutan nedanför kan ett namn på det geografiska filtret skrivas in. Det läggs till i listvyn nedanför för framtida referens, när du väl klickat på knappen för att spara det till höger om det, och fungerar som en aktiv geografisk katalog. Sökfältet längst ner söker i listan över sökningarna ovan. </para>
+
+</sect2>

@@ -1,0 +1,279 @@
+<chapter id="tool-acquireimages">
+<chapterinfo>
+
+<abstract>
+<para
+>Verktyget för att hämta bilder är avsett för att läsa in bilder med en flatbäddsbildläsare. </para>
+</abstract>
+
+<keywordset>
+<keyword
+>Flatbäddsbildläsare</keyword>
+</keywordset>
+</chapterinfo>
+
+<title
+>Verktyget Hämta bilder</title>
+
+<para
+>Verktyget kan användas för att läsa in bilder med en flatbäddsbildläsare. Verkyget använder libksane, ett gränssnitt för biblioteket SANE som styr flatbäddsbildläsare.</para>
+<para
+>Det kan spara bilder med alla större bildlagringsmetoder, exempelvis följande format: <itemizedlist>
+<listitem
+><para
+>png (8 och 16 bitar/färg) </para
+></listitem>
+<listitem
+><para
+>jpeg, jpg, jpeg 2000 </para
+></listitem>
+<listitem
+><para
+>tiff </para
+></listitem>
+</itemizedlist>
+</para>
+
+<note
+><para
+>Du kan kontrollera om din bildläsare stöds på SANE-projektets webbplats genom att skriva in information på följande söksida: <ulink url="http://www.sane-project.org/cgi-bin/driver.pl"
+>http://www.sane-project.org/cgi-bin/driver.pl</ulink
+>.</para
+></note>
+
+<sect1 id="scanner-selection">
+<title
+>Val av bildläsare</title>
+<para
+>Om den valda bildläsaren inte kan öppnas, eller om ingen förvald bildläsare tillhandahålls, visas en dialogruta för val av bildläsare. </para>
+<para
+>Användaren kan välja bildläsaren som ska användas och klicka på <guibutton
+>Ok</guibutton
+> för att öppna bildläsaren. Att klicka på <guibutton
+>Avbryt</guibutton
+> gör att verktyget avslutas. </para>
+
+<screenshot>
+     <screeninfo
+>Någon bildläsare hittades inte</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-no-scanner-found.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Någon bildläsare hittades inte</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+
+<para
+>I händelse inga enheter hittades, kanske på grund av att bildläsaren inte är ansluten eller är avstängd, korrigera det. Därefter kan <guibutton
+>Uppdatera enhetslista</guibutton
+> användas för att uppdatera listan med bildläsare.</para
+> 
+<note
+><para
+>Alla enheter eller gränssnitt stöder inte funktionen. Avsluta i så fall verktyget, anslut bildläsaren och starta om programmet.</para>
+</note>
+
+</sect1>
+
+<sect1 id="main-dialog">
+<title
+>Huvuddialogruta</title>
+<screenshot>
+     <screeninfo
+>Huvuddialogruta</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-main-dialog.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Huvuddialogruta</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+
+<para
+>I huvudfönstret har användaren två uppsättningar inläsningsalternativ: <guilabel
+>Grundalternativ</guilabel
+> och <guilabel
+>Specifika alternativ för bildläsare</guilabel
+>. Fliken <guilabel
+>Grundalternativ</guilabel
+> innehåller de vanligaste parametrarna som SANE-gränssnitten för bildläsare tillhandahåller, medan fliken <guilabel
+>Specifika alternativ för bildläsare</guilabel
+> innehåller gränssnittets alla alternativ. Alternativen som listas här beror på drivrutinens SANE-stöd: libksane (som verktyget använder) ska kunna visa de flesta typer av parametrar som SANE tillhandahåller (analoga gammatabeller stöds för närvarande inte). </para>
+
+<screenshot>
+     <screeninfo
+>Fliken Specifika alternativ för bildläsare</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-other-options.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Fliken Specifika alternativ för bildläsare</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+
+<para
+>De specifika alternativen för bildläsaren innehåller gränssnittens mer detaljerade alternativ. Verktyget har ingen speciell hantering av dessa alternativ. </para>
+
+<para
+>Om du är nöjd med dina inställningar, kan du använda den lilla pilen längst upp på alternativdelaren. När den klickas expanderas eller dras alternativen ihop. De hopdragna alternativen kan överlappa förhandsgranskningsområdet, men tonas bort när muspekaren flyttas utanför dem.</para
+>  
+</sect1>
+
+<sect1 id="scanning">
+<title
+>Inläsning</title>
+<para
+>För att läsa in en bild, kan användaren börja med inläsning av en förhandsgranskning och därefter välja en del av inläsningsområdet för den slutliga inläsningen. Inläsning av förhandsgranskningen startas genom att klicka på förhandsgranskningsknappen. </para>
+
+<screenshot>
+     <screeninfo
+>Knappen Förhandsgranskning</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-preview-button.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Knappen Förhandsgranskning</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+
+<para
+>När förhandsgranskningen är inläst kan området för den slutliga bilden markeras. </para>
+<screenshot>
+     <screeninfo
+>Markering och zoomning</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-zoom-in.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Markering och zoomning</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+<para
+>För att kunna välja bättre i bilden kan användaren zooma in, zooma ut, zooma till nuvarande markering eller zooma för att visa hela förhandsgranskningen i fönstret. </para>
+<screenshot>
+     <screeninfo
+>Knappen "Fyll sidan"</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-zoom-to-fit.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Knappen "Fyll sidan"</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+
+<para
+>När bilden har markerats kan den slutliga bilden hämtas genom att klicka på knappen för att läsa in slutlig bild. </para>
+
+<screenshot>
+     <screeninfo
+>Knappen för att läsa in slutlig bild</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-final-button.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Knappen för att läsa in slutlig bild</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+
+<para
+>Inläsningens förlopp visas. </para>
+<screenshot>
+     <screeninfo
+>Inläsning pågår</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-scanning.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Inläsning pågår</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+</sect1>
+
+<sect1 id="scanning-multiple-selections">
+<title
+>Läsa in flera markeringar</title>
+<para
+>Ibland behövs bara vissa delar av en bild. Istället för att läsa in hela bilden och sedan använda ett grafikprogram (t.ex. &kolourpaint;) för att spara de olika bilddelarna i olika filer, kan verktygets funktion för flera markeringar användas. </para>
+<screenshot>
+     <screeninfo
+>Flera markeringar</screeninfo>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="tool-acquire-multiple-selections.png" format="PNG"/>
+      </imageobject>
+        <textobject>
+        <phrase
+>Flera markeringar</phrase>
+      </textobject>
+    </mediaobject>
+</screenshot>
+<para
+>Läs in en förhandsgranskning och använd därefter vänster musknapp för att markera den första delen av bilden i förhandsgranskningen. Håll muspekaren över det valda området och klicka på den gröna ikonen <guiicon
+>+</guiicon
+> för att markera området. Markerade områden indikeras av en röd kant. Markera nu de följande delarna av bilden på samma sätt.</para>
+<para
+>Håll muspekaren över ett område och klicka på den röda ikonen <guiicon
+>-</guiicon
+> för att ta bort en enskild markering. Alla markeringar i en förhandsgranskning kan tas bort med <guilabel
+>Rensa markeringar</guilabel
+> i den sammanhangsberoende menyn som visas med höger musknapp. </para>
+<para
+>Om du placerade två separata bilder eller foton i bildläsaren och utför en förhandsgranskning markerar verktyget automatiskt de olika områdena. </para>
+<para
+>När du är nöjd med ditt val, kan den slutliga inläsningen i bakgrunden av alla markeringar startas. De markerade delarna av bilden läses in och sparas separat i olika filer. </para>
+</sect1>
+
+<sect1 id="help">
+<title
+>Hjälp och Stäng</title>
+<para
+>Längst ner i huvudfönstret finns knapparna <guibutton
+>Hjälp</guibutton
+> och <guibutton
+>Stäng</guibutton
+>.</para>
+
+<para
+>Knappen <guibutton
+>Hjälp</guibutton
+> visar menyn som beskrivs i avsnittet <ulink url="help:/fundamentals/menus.html#menus-help"
+>Menyn Hjälp</ulink
+>. Knappen <guibutton
+>Stäng</guibutton
+> används för att avsluta insticksprogrammet.</para>
+</sect1>
+
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

@@ -1,0 +1,168 @@
+<sect2 id="editor-cm-wkspace">
+    <title
+>Lo spazio di lavoro</title>
+
+    <sect3>
+        <title
+>Così ho detto a &digikam; dove trovare il profilo del mio monitor e ho un profilo di fotocamera che ho applicato all'immagine prodotta dal mio software di elaborazione RAW. Qual è il prossimo passo nella gestione del colore? </title>
+
+        <para
+>Devi scegliere uno spazio di colore funzionante, in modo che tu possa modificare la tua immagine. LCMS trasformerà la tua immagine dallo spazio di colore della tua fotocamera al tuo spazio di lavoro prescelto attraverso il PCS specificato dal profilo della tua fotocamera. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Perché non posso semplicemente modificare le mie immagini nello spazio di colore descritto dal profilo della mia fotocamera?</title>
+
+        <para
+>Dopo tutto, il profilo della fotocamera dovrebbe fornire il miglior adattamento ai colori registrati dalla macchina fotografica, come elaborata dalla mia procedura di elaborazione RAW, giusto? Wikipedia dice, "Gli spazi di lavoro, così come sRGB e Adobe RGB, sono spazi di lavoro che facilitano i buoni risultati mentre si elabora. Per esempio, i pixel con lo stesso valore RGB dovrebbero apparire neutrali" "[P]ixel con lo stesso valore di RGB dovrebbero apparire neutrali" significa solo che per ogni dato pixel in una immagine che è stato convertito ad un appropriato spazio di colori, se R=G=B dovresti vedere un grigio o un nero o un bianco sullo schermo. Molti profili di fotocamera non rispettano questa condizione «neutrale». Non sono a conoscenza di un elenco di altri requisiti tecnici per uno spazio di lavoro appropriato. Comunque, posso pensare ad un'altra buona ragione perché tu non voglia editare la tua immagine nello spazio di colore del tuo profilo della fotocamera. Se tu guardi alle dimensioni di un profilo di fotocamera tipico, è nell'ordine di un quarto fino a mezzo megabyte o di più. Esso ha molte informazioni su tutti i cambiamenti che sono necessari da fare nelle differenti regioni del colore e tonalità nella scena originale, per avere una resa dei colori accurata dai valori RGB prodotti dal processore grezzo. Il profilo della fotocamera è accurato (almeno per i colori nel target originale) ma non proprio matematicamente scorrevole. I profili di colore, d'altro canto, sono molto piccoli in dimensione (mezzo kilobyte invece che mezzo megabyte) perché essi descrivono una gamma di colore in termini di una funzione matematica continua e scorrevole. I profili di colore funzionanti non hanno bisogno di fare deduzioni per il disordine dei sensori del mondo reale, così la manipolazione matematica prodotta durante l'elaborazione dell'immagine sarà molto più scorrevole e accurata che se tu provassi ad elaborare la tua immagine mentre è ancora nello spazio di colore della fotocamera. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Che spazio di lavoro dovrei scegliere?</title>
+
+        <para
+>Ognuno ha la sua idea, io sto solo cercando di tirar fuori qualche pezzo di informazione necessaria per una scelta consapevole. I profili di spazio di lavoro sono caratterizzati da: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>Gamma (o un'altra funzione di trasferimento), che detta quanto i valori lineari originali di intensità catturati dal sensore della fotocamera (e soggetti alla conversione A-D interna alla macchina, quindi interpolati dal programma di elaborazione RAW per produrre il file di immagine) sono alterati per rendere più facile e preciso l'editing. </para
+></listitem>
+
+            <listitem
+><para
+>Le primarie RGB che dettano l'estensione dei colori, così è, la gamma coperta per un dato profilo. </para
+></listitem>
+
+            <listitem
+><para
+>Il punto del bianco (tipicamente D50 o D65 sebbene altri valori possano essere usati), che specifichi la temperatura del colore del punto di bianco nello spazio del colore. </para
+></listitem>
+
+        </orderedlist>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Quale gamma dovrebbe avere il mio spazio di lavoro?</title>
+
+        <para
+>La gamma di un profilo di colore stabilisce di che trasformata di potenza (N.d.T.: in Inglese "power transform") si ha bisogno per convertire appropriatamente il profilo di colore incorporato di un'immagine (può darsi il tuo spazio di colore di lavoro o il profilo di colore della fotocamera) ad un altro profilo di colore con una gamma di differente, così come al tuo spazio di lavoro prescelto, o al profilo dello schermo usato per mostrare l'immagine a schermo o forse al profilo di colore della tua stampante. Dcraw fornisce un'immagine a 16bit con gamma lineare, che significa che  un istogramma del risultante file di immagine mostra l'attuale quantità di luce che ogni pixel nel sensore della fotocamera ha catturato durante l'esposizione (parafrasando <ulink url="http://www.guillermoluijk.com/tutorial/dcraw/index_en.htm"
+>questa pagina</ulink
+>). Ragion per cui al momento applicare un profilo di fotocamera all'output di dcraw richiede pure di applicare una appropriata trasformata della gamma per avere lo spazio di lavoro desiderato, a meno che il profilo della fotocamera non usi a sua volta una gamma=1 </para>
+
+        <para
+>Una conseguenza pratica della gamma di uno spazio di lavoro è che più alta è la gamma, più i toni discreti sono disponibili per l'editing nelle ombre, con la conseguenza che meno toni sono disponibili nella regione delle luci alte. Cambiare la gamma di un'immagine ridistribuisce il numero dei toni disponibili nelle aree più luminose o più scure di un'immagine. Teoricamente, se stai lavorando su una foto molto scura Low-key (in toni bassi) potresti volere uno spazio di lavoro con una gamma più alta. E se stai lavorando su un'immagine High-key (toni alti), diciamo una foto presa al sole di mezzogiorno di un vestito da sposa con un sfondo innevato, tu potresti voler scegliere uno spazio di lavoro con una gamma più bassa, così hai più gradazioni di tono disponibili nelle luci alte. </para>
+
+        <para
+>Teoria a parte, nel mondo reale del reale editing dell'immagine, quasi tutti usano spazi di lavoro con la gamma o di 1,8 o di 2,2, sRGB e L*-RGB sono due notevoli eccezioni. </para>
+
+        <para
+>sRGB usa una funzione di trasferimento vicina a quella di un monitor CRT (e quindi non necessariamente rilevante per l'editing dell'immagine e per la proiezione su schermi LCD). Come Wikipedia nota, «Diversamente dalla maggior parte degli spazi di colore RGB, la gamma sRGB non può essere espressa come un singolo valore numerico. La gamma complessiva è approssimativamente 2.2, che consiste di una gamma lineare (gamm 1,0) nella sezione vicina al nero, e in una parte non-lineare altrove che comporta un esponente di 2.4 e una gamma (pendenza del logaritmo dell'output contro il logaritmo dell'input) che cambia da 1,0 fino a circa 2,3»  (citazione da <ulink url="https://en.wikipedia.org/wiki/SRGB"
+>questa pagina</ulink
+>), che produce una qualche matematica complicata durante l'elaborazione dell'immagine. </para>
+
+        <para
+>L*-RGB usa come sua funzione di trasferimento la stessa funzione percettivamente uniforme dello spazio di colore CIELab. «Quando si memorizzano i colori in valori dalla precisione limitata» usare una funzione di trasferimento percettivamente uniforme «può migliorare la riproduzione dei toni» (citazione da <ulink url="https://en.wikipedia.org/wiki/Lab_color_space"
+>questa pagina</ulink
+>). </para>
+
+        <para
+>In aggiunta alla gamma=1,8 e alla gamma=2,2 , la sola altra gamma per uno spazio di lavoro che ottiene molta attenzione o uso è la gamma lineare, o gamma=1,0. Come notato sopra, dcraw produce file con gamma lineare se chiedete un output di 16bit. La gamma lineare è usata nella formazione dell'immagine HDR (high dynamic range) ed anche se si vuole evitare di introdurre errori indotti dalla gamma in una regolare elaborazione low dynamic range. </para>
+
+        <para
+>«Gli errori gamma-indotti» sono un argomento al di fuori dello scopo di questa guida. Ma leggi "Gamma errors in picture scaling" (citazione da <ulink url="http://www.4p8.com/eric.brasseur/gamma.html"
+>questa pagina</ulink
+>) per i salti di tonalità indotti dalla gamma; e ovviamente leggi il sito web informativo di Timo Autiokari (benché un po' famigerato) per un sostegno sincero all'uso di spazi di lavoro a gamma lineare (il sito di Timo sembra inaccessibile ultimamente, sebbene copie d'archivio dei suoi articoli siano ancora disponibili attraverso google). Bruce Lindbloom nomina un errore gamma-indotto che si incontra comunemente che è causato dal calcolo scorretto della luminanza in spazi di lavoro RGB non lineari (vedi <ulink url="http://www.brucelindbloom.com/index.html?WorkingSpaceInfo.html"
+>questa pagina</ulink
+>, nota 1). In un simile tenore, i calcoli coinvolti nel mescolare i colori insieme per produrre nuovi colori (come se si usasse un filtro digitale per aggiungere calore ad una immagine) risultano in errori di gamma a meno che i nuovi colori non siano calcolati previa trasformazione di tutti i valori rilevanti ai loro originali valori lineari. </para>
+
+        <para
+>Sfortunatamente e a dispetto del loro innegabili vantaggi matematici, gli spazi di lavoro a gamma lineare hanno così pochi toni nelle ombre che (a mio giudizio) sono impossibili da usare per l'editing se si lavoro in 8bit, e sono ancora problematici a 16bit. Quando verrà il giorno in cui tutti editeremo file a 32bit prodotti da fotocamere HDR sui nostri supercomputer personali, prevedo che useremo tutti spazi di lavoro con gamma=1. Adobe Lightroom sta già usando uno spazio di lavoro a gamma lineare "sotto il cofano", CS2 permette l'opzione di usare la gamma lineare per mescolare i colori, e Lightzone ha sempre usato uno spazio di lavoro a gamma lineare.  </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Quanti passi discreti di tono ci sono in un'immagine digitale?</title>
+
+        <para
+>In un'immagine a 8bit, hai 256 passaggi di tono dal nero solido al bianco solido. In un'immagine a 16bit hai teoricamente 65536 passaggi. Ma ricorda, questi 16bit partono sia come 10bit (=1024 passaggi), 12bit (=4096 passaggi), o 14bit (=16384 passaggi) come prodotti dal convertitore A-D della macchina fotografica - i bit extra per raggiungere 16bit partono come imbottitura. I toni disponibili non sono distribuiti equamente dalla luce agli scuri. Nella modalità gamma lineare (come il sensore della fotocamera vede le cose), c'è un mucchio di toni in più nelle alte luci che nelle ombre. Perciò il consiglio, se scatti RAW, di «esporre alla destra ma non esagerare le alte luci». Vedi gli articoli di Ron Bigelow su "Why RAW" (Perché RAW) <ulink url="http://www.ronbigelow.com/articles/articles.htm"
+>qui</ulink
+> per una completa discussione della distribuzione dei toni disponibili in una immagine grezza. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Dovrei usare uno spazio di lavoro a gamma ampia o a gamma piccola? </title>
+
+        <para
+>Nello scegliere uno spazio di lavoro una grossa considerazione è che alcuni spazi di lavoro sono più grandi di altri, che significa che coprono uno spettro maggiore del visibile (e come conseguenza includono alcuni colori immaginari - costrutti matematici che non esistono realmente). Queste spazi più grandi offrono il vantaggio di permetterti di mantenere tutti i colori acquisiti dalla tua fotocamera e sono preservati dalla conversione LCMS dal profilo della tua macchina fotografica al profilo con gamma super-ampia dello spazio di connessione e ancora al tuo spazio di lavoro prescelto. </para>
+
+        <para
+>Ma mantenere tutti i possibili colori ha un prezzo, come spiegato sotto. E sembra che ogni data immagine digitale verosimilmente contiene solo un insieme minore di tutti i possibili colori del visibile che la tua fotocamera è in grado di catturare. Questo insieme più piccolo è facilmente contenuto in uno degli spazi di lavoro minori (un eccezione che richiede una gamma di colore più larga sarebbe una foto con un soggetto altamente saturo come i giunchi gialli). </para>
+
+        <para
+>Usare uno spazio di lavoro molto largo significa che editare la tua immagine (applicare curve, aumentare la saturazione, &etc;) può facilmente produrre colori che il tuo eventuale dispositivo di output (stampante, monitor) non è semplicemente in grado di riprodurre (sebbene nemmeno tu sia in grado di vedere questi colori mentre stai editando). Così la conversione da uno spazio di lavoro allo spazio del dispositivo di output (&eg; la tua stampante) dovrà rimappare i colori fuori gamma nella tua immagine editata, alcuni dei quali potrebbero essere anche del tutto immaginari, allo spazio colore  della tua stampante con la sua gamma di colore molto più piccola. Questo processo di ri-mappatura condurrà a dei colori inaccurati e perdita di saturazione al meglio. Ancora peggio, la ri-mappatura può facilmente portare al bandeggio ("posterizzazione" - salti in quello che dovrebbe essere una dolce transizione dei colori, come attraverso uno scorcio di cielo blu) e al clipping (la tenue transizione accuratamente lavorata di delicate sfumature di rosso, per esempio, potrebbe essere rimappata come un blocco solido di rosso monotono  nello spazio di colore della tua stampante). Ancora, gli esperti dicono che le immagini a 8bit non hanno abbastanza toni per allungarsi tra spazi di lavoro a larga gamma senza bandeggio e perdita di saturazione, anche prima della conversione ad uno spazio di output. Così se scegli uno spazio di lavoro a larga gamma, fai in modo di partire con un'immagine a 16bit. </para>
+
+        <para
+>Riassumendo, spazi di lavoro a larga gamma, impropriamente maneggiati, possono portare a perdita di informazione in output. Gli spazi di lavoro a piccola gamma possono tagliare le informazioni in input. Gli spazi di lavoro di medie dimensioni provano a centrare un compromesso felice. Come dice Wikipedia: è un bilanciamento. </para>
+
+        <para
+>Qui ci sono un po' di suggerimenti ripetuti spesso sulla scelta dello spazio di lavoro: </para>
+
+        <para>
+            <orderedlist>
+
+                <listitem
+><para
+>Per le immagine orientate alla rete, adoperate (o almeno convertite l'immagine finale a) sRGB. </para
+></listitem>
+
+                <listitem
+><para
+>Per la massima accuratezza nell'editare la tua immagine (cioè tirare fuori il massimo dai tuoi bit limitati con il minore rischio di bandeggio o di clipping quando converti la tua immagine dal tuo spazio di lavoro ad uno spazio di output), usa il più piccolo spazio di lavoro che includa tutti i colori nella scena che hai fotografato, più un piccolo spazio extra per quei nuovi colori che produci inavvertitamente quando editi. </para
+></listitem>
+
+                <listitem
+><para
+>Se stai lavorando in 8bit piuttosto che 16bit, scegli uno spazio di lavoro più piccolo piuttosto che più largo per evitare il bandeggio e il clipping. </para
+></listitem>
+
+                <listitem
+><para
+>Per propositi di archiviazione, converti i tuoi file RAW in tiff a 16bit con uno spazio di lavoro a larga gamma per evitare di perdere le informazioni sui colori. Quindi converti questo archivio tiff nel tuo spazio di lavoro prescelto a media o larga gamma (salvando l'immagine tiff convertita di lavoro con un nuovo nome, ovviamente). </para
+></listitem>
+
+            </orderedlist>
+        </para>
+
+        <para
+>Per più informazioni sulla scelta dello spazio di lavoro, vedi <ulink url="http://www.brucelindbloom.com/"
+>questa pagina</ulink
+>. Fornisce informazioni sugli spazi di lavoro RGB con un confronto visivo tra le gamme (griglie di colori inclusi) dei vari spazi di lavoro. Vedi <ulink url="http://www.luminous-landscape.com/tutorials/prophoto-rgb.shtml"
+>qui</ulink
+> e <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm"
+>qui</ulink
+>per una presentazione dei pro e dei contro, rispettivamente, del merito di usare spazi di lavoro a larga gamma. E mentre sei nel sito web di cambridgeincolour.com, fatti un giro nella guida alla gestione del colore (in inglese). </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

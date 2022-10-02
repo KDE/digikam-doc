@@ -1,0 +1,130 @@
+  <sect3 id="editor-enhance-hotpixels">
+    <sect3info>
+      <title
+>Correzione dei pixel bruciati</title>
+      <abstract>
+        <para
+>Lo strumento per i <emphasis
+>pixel bruciati</emphasis
+> di &digikam; facilita la rimozione dei pixel bruciati dalle fotografie fatte con una macchina fotografica con CCD. Usa degli algoritmi del progetto JPEGPixi che sono sotto il copyright di Martin Dickopp. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>digiKam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introduzione</title>
+    <para
+>La maggior parte delle macchine fotografiche digitali attuali producono immagini con diversi <quote
+>pixel difettosi</quote
+>, che sono molto luminosi quando si usano dei tempi di otturazione brevi. Le immagini notturne potrebbero esserne rovinate. Ci sono tre tipi di <quote
+>pixel difettosi</quote
+>: <itemizedlist
+><listitem
+><para
+>Pixel bloccati: sono pixel che leggono sempre un valore elevato, o sono sempre alla massima potenza in ogni esposizione. Ciò produce un pixel luminoso, normalmente di colore rosso, verde o blu, nell'immagine finale. Un pixel bloccato apparirà indipendentemente dal tempo di otturazione, dall'apertura del diaframma o da qualsiasi altra impostazione. Apparirà in un'esposizione normale, e sarà più evidente in condizioni luminose.</para
+></listitem
+><listitem
+><para
+>Pixel morti: sono pixel che leggono sempre zero o sono sempre spenti in tutte le esposizioni; questo stato produce un pixel nero nell'immagine finale. Come un pixel bloccato, un pixel morto apparirà indipendentemente dal tempo di otturazione, dall'apertura del diaframma o da qualsiasi altra impostazione.</para
+></listitem
+><listitem
+><para
+>Pixel bruciati: sono pixel che leggono valori elevati, nelle esposizioni prolungate, di bianco, rosso o verde. Più lungo è il tempo di esposizione, più i pixel bruciati saranno visibili.</para
+></listitem
+></itemizedlist
+> Nota che i pixel bloccati o morti saranno nello stesso posto in tutte le immagini. Se la posizione di un pixel bloccato o morto cambia, potrebbe invece essere un pixel bruciato. </para>
+    <para
+>I pixel bloccati, morti o bruciati sono un problema, in particolare quando si scatta in modalità grezza ad alta qualità, perché molte macchine fotografiche hanno una soppressione dei pixel bruciati incorporata, che viene applicata automaticamente se viene usata la compressione JPEG (cioè nella maggior parte dei casi). </para>
+    <para
+>Questo strumento può essere utile per correggere i <quote
+>pixel bruciati</quote
+> e quelli <quote
+>bloccati</quote
+> in una fotografia, usando un metodo di sottrazione di foto scura. Non c'è ancora un editor manuale per selezionare i pixel difettosi. </para>
+    <sect4 id="using-blackframecreation">
+      <title
+>Creare le foto scure</title>
+      <para
+>Il metodo di sottrazione delle foto scure è il metodo più accurato per rimuovere i pixel bruciati e bloccati. Prima devi creare una <quote
+>foto scura</quote
+> come riferimento, ed è facile da fare: quando hai finito di fare le foto a lunga esposizione metti il copri-obiettivo sulla lente e scatta un'immagine <quote
+>scura</quote
+> con lo stesso tempo di esposizione delle immagini precedenti. Questa immagine sarà completamente scura, ma ad un esame più attento la vedrai contenere i pixel bloccati e bruciati (punti colorati). Questi sono posizionati come nella tue foto precedenti. </para>
+      <para
+>Carica questo file nello strumento, usando il pulsante <guilabel
+>Foto scura...</guilabel
+>, ed esso elaborerà un rilevamento automatico dei pixel bruciati e di quelli bloccati, che saranno evidenziati nelle aree di anteprima del pannello di controllo. </para>
+      <warning>
+        <para
+>Se usi una vecchia macchina digitale, è importante scattare la foto scura la prossima volta che fai delle foto a lunga esposizione, per rilevare i nuovi pixel bruciati e bloccati tra i difetti del CCD. </para>
+      </warning>
+    </sect4>
+    <sect4 id="using-hotpixels">
+      <title
+>Usare lo strumento dei pixel bruciati</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-hotpixels.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>La finestra dei pixel bruciati</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>All'inizio, come spiegato nella sezione precedente, devi caricare una foto scura corrispondente all'immagine da correggere: verrà fatta un'elaborazione automatica della foto scura, per trovare i pixel difettosi. Nota che lo strumento ricorderà la foto scura usata nell'ultima sessione, e la riaprirà automaticamente la prossima volta. </para>
+      <para
+>Il pannello dell'immagine e l'anteprima dell'originale ti aiutano a scorrere l'immagine. La finestra dell'anteprima mostra il risultato del filtro usando le impostazioni attuali. I pixel difettosi sono evidenziati in tutte le aree di anteprima. </para>
+      <para
+>Seleziona un'area per vedere i pixel difettosi nell'anteprima e nel risultato del filtro, usando l'opzione «Vista separata» del pannello dell'immagine. Scegli il miglior <guilabel
+>Filtro</guilabel
+> per interpolare i pixel o i blocchi di pixel. Questi sono i filtri disponibili: <itemizedlist>
+          <listitem>
+            <para
+>Medio: viene presa la media dei pixel adiacenti al blocco di pixel. Il colore risultante viene assegnato a tutti i pixel del blocco. Per l'interpolazione monodimensionale, ciò viene fatto separatamente a strisce orizzontali o verticali larghe un pixel.</para>
+          </listitem>
+          <listitem>
+            <para
+>Lineare: i pixel a una distanza di uno dal blocco di pixel sono usati per calcolare una superficie bilineare (bidimensionale), o un gruppo di curve lineari (monodimensionali), che viene poi usata per assegnare i colori interpolati ai pixel del blocco.</para>
+          </listitem>
+          <listitem>
+            <para
+>Quadratico: questo è il metodo predefinito di filtraggio. I pixel con una distanza di due o meno dal blocco di pixel sono usati per calcolare una superficie biquadratica (bidimensionale), o un gruppo di curve quadratiche (monodimensionali), che viene poi usata per assegnare i colori interpolati ai pixel del blocco.</para>
+          </listitem>
+          <listitem>
+            <para
+>Cubico: i pixel con una distanza di tre o meno dal blocco di pixel sono usati per calcolare un superficie bicubica (bidimensionale), o un gruppo di curve cubiche (monodimensionali), che viene poi usata per assegnare i colori interpolati ai pixel del blocco.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+    </sect4>
+    <sect4 id="inaction-hotpixels">
+      <title
+>Lo strumento dei pixel bruciati in azione</title>
+      <para
+>Sotto puoi vedere lo strumento di correzione dei pixel bruciati applicato a una fotografia a colori scattata con una macchina digitale difettosa ad una sensibilità di 200 ISO con uno scatto a lunga esposizione. L'immagine originale, ingrandita del 300%, è (1), quella corretta è (2). </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-hotpixels-preview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>L'anteprima della correzione dei pixel</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

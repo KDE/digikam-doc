@@ -1,0 +1,200 @@
+<sect3 id="editor-color-curves">
+    <sect3info>
+
+    <title
+>Curves aanpassen</title>
+
+    <abstract>
+    <para
+>Het <emphasis
+>Curves aanpassen</emphasis
+> van &digikam; is een hulpmiddel voor het niet lineair aanpassen van de lichtkracht en de kleurkanalen. </para>
+    </abstract>
+
+    </sect3info>
+
+    <title
+>Inleiding</title>
+
+    <para
+>Het hulpmiddel Curves aanpassen is het meest geavanceerde gereedschap dat beschikbaar is voor het aanpassen van de tonen in een afbeelding. Start het via het menu Afbeelding bewerken <menuchoice
+><guimenu
+>Kleur</guimenu
+> <guimenuitem
+>Curves aanpassen...</guimenuitem
+></menuchoice
+>. U heeft via klikken en het verslepen van controlepunten op de curve de volledige vrijheid om een curve te maken die de invoer helderheid-niveaus omzet naar uitvoer helderheid-niveaus. Het hulpmiddel Curves aanpassen kan elk effect dat u met hulpmiddel 'Helderheid/Contrast/Gamma' bereikt of 'Niveaus aanpassen', nabootsen, maar het heeft meer mogelijkheden dan de twee bovengenoemden. Het kan u daarnaast ook helpen bij het in kleine stapjes verbeteren van de grijstonen van uw afbeeldingen. En vergeet niet hoe beter de kwaliteit van de afbeeldingen is (goed belicht, verliesvrij formaat, 24 of 32 bits diep) des te meer kunt u ze verbeteren. Ga voor meer informatie naar de sectie "Achieving ultimate tonal quality" van deze informatieve pagina: <ulink url="http://www.normankoren.com/digital_tonality.html"
+>Tonal quality and dynamic range in digital cameras by Norman Koren</ulink
+>. U kunt hetzelfde bereiken door gebruik te maken van 'Curves aanpassen'! </para>
+    <para
+>Dit hulpmiddel laat de curves visueel zien zodat u de intensiteitswaarden van de actieve laag kunt wijzigen, die als een niet lineair histogram te zien zijn. In de <guilabel
+>Modus gladde curve</guilabel
+> kunt u de vorm van de curve wijzigen door meer punten aan de curve toe te voegen of door de eindpunten te verplaatsen. Een andere manier is het handmatig tekenen van de hele curve in de modus <guilabel
+>Modus Vrije curve</guilabel
+>. In beide gevallen is het effect onmiddellijk zichtbaar in de voorbeeldweergave links, de voorbeeldweergave kunt u instellen door op de pictogrammen linksboven te klikken. </para>
+
+        <sect4 id="using-adjustcurves">
+        <title
+>Curves aanpassen gebruiken</title>
+
+        <para
+><inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;editor-curvesadjust.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Het dialoogvenster Curves aanpassen</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+        <para
+>Links zijn de helften van het origineel en van de voorbeeldweergave te zien. De voorbeeldweergave van het resultaat wordt dynamisch bijgewerkt wanneer de schuifknoppen een andere stand krijgen. Rechts kunt u kiezen uit de volgende keuzemogelijkheden: <itemizedlist>
+
+        <listitem
+><para
+>Wijzig <guilabel
+>Kanaal</guilabel
+> : met dit keuzevakje kunt u het kanaal selecteren dat u gaat wijzigen met het hulpmiddel: <itemizedlist>
+                <listitem
+><para
+><guilabel
+>Lichtkracht</guilabel
+>: wijzigt de intensiteit van alle pixels.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Rood</guilabel
+>: wijzigt de rood verzadiging van alle pixels.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Groen</guilabel
+>: wijzigt de groen verzadiging van alle pixels.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Blauw</guilabel
+>: wijzigt de blauw verzadiging van alle pixels.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Alfa</guilabel
+>: wijzigt de transparantie van alle pixels.</para
+></listitem>
+            </itemizedlist>
+
+        </para
+></listitem>
+
+        <listitem
+><para
+>Naast dit vierkant ziet u twee pictogrammen voor de keuze tussen een lineair of een logaritmisch histogram. Voor foto's gemaakt met een digitale camera is meestal de lineaire modus het handigst, maar bij afbeeldingen met daarop grote vlakken met een constante kleur, zal een lineair histogram gedomineerd worden door een enkele piek. In zulke gevallen zal een logaritmisch histogram handiger zijn. </para
+></listitem>
+
+        <listitem
+><para
+>Hoofdvak voor curve bewerking: de horizontale balk (x-as) stelt de invoerwaarde voor (de waarde kan variëren van 0 tot 255). De verticale balk (y-as) is alleen een schaal voor de uitvoerkleuren van het geselecteerde kanaal. De regelcurve loopt in het histogram (met een ruitjespatroon) diagonaal. De x/y-locaties van de cursor zijn permanent zichtbaar boven op het ruitjespatroon. Als u op de curve klikt dan voegt u een controlepunt toe. U kunt deze verplaatsen zodat u daarmee bochten in de curve aanbrengt. U voegt ook een controlepunt toe als u naast de curve klikt en de curve neemt deze automatisch op. Elk punt van de curve stelt daarom een 'x' voor vertaald naar een 'y' uitvoer. </para
+></listitem>
+
+        <listitem
+><para
+>Curve <guilabel
+>Type</guilabel
+> voor kanaal: onder het bewerkingsvenster ziet u verschillende pictogrammen die aangeven of u de curve kunt bewerken in de <guilabel
+>Modus Gladde curve</guilabel
+> of uit <guilabel
+>Modus Vrije hand</guilabel
+>. Modus Gladde curve beperkt de curve tot een gladde lijn die een realistisch resultaat geeft. In de modus Vrije hand kunt u met de muis de curve tekenen. Met de segmenten verspreidt over het vlak, kunnen verrassende resultaten bereikt worden die nauwelijks herhaalbaar zijn. Een herstel-knop voor de standaardwaarden is ook beschikbaar. </para
+></listitem>
+
+        <listitem
+><para
+>Als u bijvoorbeeld een gedeelte van de curve naar rechts verplaatst, dan kunt u bij lichte plekken zien dat deze lichte plekken donkerder tonen krijgen en dat de afbeeldingspixels die bij dit curve-segment horen donkerder worden. </para
+></listitem>
+
+        <listitem
+><para
+>Bij kleuren-kanalen zal naar rechts verplaatsen de verzadiging verminderen totdat de complementaire kleur is bereikt. Om alle controlepunten te verwijderen (afgezien van de begin en eindpunten) klikt u op de knop <guilabel
+>Herstel</guilabel
+>. Om alleen een punt te verwijderen, versleept u het naar een ander punt. Speel gewoon een beetje met de curves en bestudeer de resultaten. U kunt zelfs de foto solariseren voor een gedeelte van zijn kleurtoon-bereik. Dit gebeurt als de curve voor een gedeelte is geïnverteerd. </para
+></listitem>
+
+        <listitem
+><para
+>De voorbeeldweergave van de originele foto heeft een rode markering. Als u deze markering verplaatst naar de plek die u wilt wijzigen, dan zal er een bijbehorende lijn op het rooster worden getrokken die de originele waarden voorstelt. U kunt vervolgens een controlepunt op deze lijn aanmaken en deze naar wens omhoog of omlaag verplaatsen. </para
+></listitem>
+
+        <listitem
+><para
+>De knoppen <guilabel
+>Opslaan als...</guilabel
+> en <guilabel
+>Laden...</guilabel
+> zijn precies voor dat doel in gebruik. Alle ingestelde curves kunt u opslaan in een bestand en later weer laden. Het gebruikte bestandsformaat is het The Gimp Curves formaat. </para
+></listitem>
+
+        <listitem
+><para
+><guilabel
+>Herstellen</guilabel
+>: deze knop hersteld alle curves voor alle kanalen. </para
+></listitem>
+
+        </itemizedlist>
+
+        </para>
+
+        <para
+>Het dialoogvenster van curves heeft verschillende onderdelen die kunnen helpen bij het positioneren van de punten op de controle-curven. Door met de muis te klikken in de voorbeeldweergave van het origineel krijgt u een verticale balk in het curvevlak te zien. De locatie van de balk komt overeen met waarde van het pixel waarboven de muis zweeft in het hoofdvenster. Door verslepen met de muis kunt u de positie van deze verticale balk bijwerken. Op deze manier is het mogelijk om te zien welke locatie de verschillende pixels in de afbeelding op de control-curve hebben en het helpt om de locaties van schaduwen, middentonen en lichte plekken te vinden. </para>
+
+        <para
+>Via deze methode en de drie <guilabel
+>Kleurentoonkiezer</guilabel
+>-knoppen creëert u automatisch controlepunten op de curve voor schaduw, middentonen en lichte tinten in alle kanalen. Selecteer de kleurenkiezer die u wilt gebruiken en klik op de voorbeeldafbeelding van het origineel om controlepunten voor elk van de rode, groene, blauwe en lichtkracht controle curves aan te maken. </para>
+        <!-- TODO: digiKam 5.6.0 - this option does not exist (new screenshot)
+        <para>
+        <guilabel
+>Over Exposure Indicator</guilabel
+> option adds up all color channels and indicates the blown-out highlights. If more than one channel in a pixel is over-exposed you will see the combined color resulting from the curve settings. The display is an indicator only and has no effect on the final rendering.
+        </para
+> -->
+
+        </sect4>
+
+        <sect4 id="inaction-adjustcurves">
+        <title
+>Het gebruik van Curves Aanpassen in actie</title>
+
+        <para
+>Hieronder kunt u een zwart-witfoto zien die voor <guilabel
+>Lichtkracht</guilabel
+> is gecorrigeerd . U kunt het schaduwtint en het oplichttint pipet gebruiken om de curve vast te stellen die u wilt gebruiken voor het origineel. De originele foto is (1), de aangepaste foto (2). </para>
+
+            <para
+><inlinemediaobject
+><imageobject>
+                <imagedata fileref="&path;editor-curves-preview.png" format="PNG"/>
+                </imageobject>
+                <textobject
+><phrase
+>Het gebruik van Curves Aanpassen in actie</phrase
+></textobject
+></inlinemediaobject>
+            </para>
+
+        </sect4>
+
+    </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

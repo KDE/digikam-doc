@@ -1,0 +1,313 @@
+<sect3 id="editor-color-wb">
+    <sect3info>
+
+    <title
+>Witbalans</title>
+
+    <abstract>
+    <para
+>De <emphasis
+>Witbalans</emphasis
+> van &digikam; is een halfautomatisch hulpmiddel om de witbalans van een foto aan te passen. </para>
+    </abstract>
+
+    </sect3info>
+
+    <title
+>Inleiding</title>
+
+    <para
+>Het gaat vaak mis met de witbalans instelling bij digitale fotocamera's. In de "goede oude tijd" van het filmrolletje werd de witbalans verzorgt door het fotolaboratorium. In de huidige tijd moet de arme kleine camera raden wat op de foto wit is en wat zwart is. Wat de camera meestal uitkiest als een witpunt heeft niet de juiste schaduw of verzadiging. Met behulp van dit hulpmiddel kunt u dat gemakkelijk corrigeren. Het heeft een aantal parameters die u kunt aanpassen zodat u een beter resultaat krijgt. </para>
+
+    <note
+><para
+>De correctie van de witbalans is gelimiteerd door het feit dat we met 8 bits per kleurruimte van een kanaal werken. Als u dus te veel afwijkt van het origineel dan kunnen overbelichte plekken verschijnen. Als u in de modus rawconversie (wat met 16 bits gebeurt) de witbalans corrigeert dan heeft u meer ruimte voor correctie. </para
+></note>
+
+    <para
+>Dit hulpmiddel is gebaseerd op een witbalans algoritme met als auteursrechthebbende Pawel T. Jochym. Start het via het menu Afbeelding bewerken<menuchoice
+><guimenu
+>Kleur</guimenu
+><guimenuitem
+>Witbalans</guimenuitem
+></menuchoice
+>. </para>
+
+    <sect4 id="using-whitebalance"
+>  <title
+>Het hulpmiddel Witbalans gebruiken</title>
+
+    <para
+><inlinemediaobject
+><imageobject>
+        <imagedata fileref="&path;editor-whitebalance.png" format="PNG"/> </imageobject>
+        <textobject
+><phrase
+>Het dialoogvenster voor witbalans</phrase
+></textobject
+></inlinemediaobject>
+    </para>
+
+    <para
+>U kunt het formaat van het voorbeeldvenster instellen. Aan de linkerkant is het origineel en het resultaatvoorbeeld te zien. Het resultaatvoorbeeld wordt onmiddellijk overeenkomstig de nieuwe instellingen bijgewerkt. Klik op de knop <guilabel
+>Standaard</guilabel
+> als u het weer met de originele witbalans wilt zien. </para>
+
+    <para
+>Bij het resultaatvoorbeeld is een rode markeerstift beschikbaar. De lichtkracht van het pixel onder de markeerstift is te zien als een verticale lijn in het histogram. </para>
+
+    <para
+>Rechtsboven ziet u in een widget een histogram dat dynamisch wordt bijgewerkt wanneer de parameters wijzigen. Dit histogram is zeer informatief omdat het toont dat zelfs in goed belichte foto's de meeste pixels zeer weinig lichtkracht hebben. Met een knop kunt u een van de 3 kleuren selecteren (of het totaal ervan dat de naam lichtkracht draagt). </para>
+
+    <para
+>Met <guilabel
+>Belichting</guilabel
+> kunt u digitaal de originele belichting van de foto aanpassen. De belichting verhogen geeft wel het risico dat ruis meer zichtbaar wordt en de lichtere plekken flets worden. Om te zien of u een probleem met de verzadiging heeft kunt u de <guilabel
+>Overbelichtingsindicatie</guilabel
+> rechtsonder controleren. Met de knop <guilabel
+>Zwartpunt</guilabel
+> verschuift u het histogram naar links. Als uw foto er mistig uitziet (het histogram heeft lege ruimte aan de linker, zwarte zijde) dan moet u waarschijnlijk deze mogelijkheid gebruiken. De instellingen voor <guilabel
+>Belichting</guilabel
+> en <guilabel
+>Zwartpunt</guilabel
+> kunnen automatisch worden berekent door op de knop <guilabel
+>Autobelichting aanpassen</guilabel
+> te drukken. Dit stelt het zwartpunt vrij nauwkeurig in. </para>
+
+    <para
+>Het contrast van uw foto is afhankelijk van <guilabel
+>Schaduwen</guilabel
+>, <guilabel
+>Verzadiging</guilabel
+> en <guilabel
+>Gamma</guilabel
+>. Met de knop <guilabel
+>Schaduwen</guilabel
+> kunt u de details in de schaduwen op uw foto meer of minder zichtbaar maken. </para>
+
+    <para
+>Het vergroten van het contrast van uw foto kan als neveneffect hebben dat de schijnbare <guilabel
+>Verzadiging</guilabel
+> van de foto vermindert. Het gebruik van een waarde groter dan 1 vergroot de verzadiging en een waarde kleiner dan 1 vermindert de verzadiging van de foto. Een waarde 0 geeft een zwart-witfoto. Wees niet te verlegen om de verzadiging van uw foto's een beetje te vergroten. In het algemeen is voor een groter contrast (minder <guilabel
+>Gamma</guilabel
+>) meer <guilabel
+>Verzadiging</guilabel
+> nodig. </para>
+
+    <para
+>De volgende set schuifknoppen zijn de belangrijkste onderdelen voor de instellingen van de witbalans, die de verhoudingen controleren tussen de hoofdkleuren. Hier kunt u de kleur-<guilabel
+>Temperatuur</guilabel
+> instellen wat uw foto warmer of kouder maakt. Hogere temperaturen geven een warmere tint. Om de verhouding tussen de drie hoofdkleuren in te stellen zijn er twee instellingen nodig. Omdat de temperatuur-instelling voornamelijk de verhouding tussen de hoofdkleuren rood en blauw regelen, zal daarom de tweede instelling de intensiteit van de hoofdkleur <guilabel
+>Groen</guilabel
+> regelen. </para>
+
+    <para
+>In plaats van moeizaam met bovengenoemde schuifknoppen te rommelen, kunt u ook eenvoudig de knop <guilabel
+>Temperatuurtint-kleurenkiezer</guilabel
+> gebruiken. Druk op deze knop en klik ergens op de originele voorbeeldafbeelding om een sample van de kleur op die plek te nemen en vervolgens de temperatuur van de witbalans te berekenen.De waarden van <guilabel
+>Temperatuur</guilabel
+> en <guilabel
+>Groen</guilabel
+> worden op deze manier automatisch berekend. </para>
+
+    <para
+>Daarnaast kunt u ook de witbalans instellen via een keuzelijst. Dit zijn de beschikbare witbalans temperaturen: </para>
+
+    <para>
+
+    <informaltable
+><tgroup cols="3">
+
+    <thead>
+    <row>
+        <entry
+>Kleurtemperatuur</entry>
+        <entry
+>Beschrijving</entry>
+        <entry
+>Kelvin</entry>
+    </row>
+    </thead>
+
+    <tbody>
+
+    <row>
+        <entry>
+        <guilabel
+>40W</guilabel>
+        </entry>
+
+        <entry
+>40 Watt gloeilamp. </entry>
+
+        <entry>
+        <guilabel
+>2680</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>200W</guilabel>
+        </entry>
+
+        <entry
+>200 Watt gloeilamp, studio lampen, flood-licht. </entry>
+
+        <entry>
+        <guilabel
+>3000</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Zonsopgang</guilabel>
+        </entry>
+
+        <entry
+>Zonsopgang- of zonsonderganglicht. </entry>
+
+        <entry>
+        <guilabel
+>3200</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Wolfraam</guilabel>
+        </entry>
+
+        <entry
+>Gloeilamp of licht een uur na ochtend- of voor avondschemering. </entry>
+
+        <entry>
+        <guilabel
+>3400</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Neutraal</guilabel>
+        </entry>
+
+        <entry
+>Neutrale kleurtemperatuur </entry>
+
+        <entry>
+        <guilabel
+>4750</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Xenon</guilabel>
+        </entry>
+
+        <entry
+>Xenonlamp of lichtboog. </entry>
+
+        <entry>
+        <guilabel
+>5000</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Zon</guilabel>
+        </entry>
+
+        <entry
+>Zonnig daglicht rond het middaguur. </entry>
+
+        <entry>
+        <guilabel
+>5500</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Flits</guilabel>
+        </entry>
+
+        <entry
+>Elektronische flits </entry>
+
+        <entry>
+        <guilabel
+>5600</guilabel>
+        </entry>
+    </row>
+
+    <row>
+        <entry>
+        <guilabel
+>Hemel</guilabel>
+        </entry>
+
+        <entry
+>Licht van bewolkte lucht. </entry>
+
+        <entry>
+        <guilabel
+>6500</guilabel>
+        </entry>
+    </row>
+
+    </tbody>
+
+    </tgroup
+></informaltable>
+
+    </para>
+
+    <para
+><guilabel
+>Kleurtemperatuur</guilabel
+> is een vereenvoudigde voorstelling van de spectrale eigenschappen van een lichtbron. Terwijl in werkelijkheid de kleur van het licht wordt bepaald door hoeveel elk punt op de spectrale grafiek aan het totaal toevoegt, kan het resultaat toch op een lineaire schaal worden opgeteld. Deze waarde is bruikbaar &eg; voor het vaststellen van de correcte witbalans in digitale fotografie, en voor specificatie van de lichtbronnen in een architecturaal lichtplan. Merk wel op dat lichtbronnen met ogenschijnlijk dezelfde kleur (metameren) een groot verschil kunnen hebben in de kwaliteit van het uitgezonden licht. </para>
+
+    <para
+>Een lage <guilabel
+>Kleurtemperatuur</guilabel
+> houdt meer geelrood licht in terwijl een hoge kleurtemperatuur meer blauw licht inhoud. Vlak na zonsopgang heeft daglicht een nogal lage kleurtemperatuur, en een hogere tijdens de rest van de dag. Het kan daarom zinvol zijn om een elektrisch verlichtingsysteem aan te leggen dat desgewenst koeler licht kan toevoegen aan het daglicht, en warmer licht kan toevoegen aan de nacht. Dit komt overeen met de gevoeligheid van het menselijke oog voor de warme kleuren die van kaarsen en open haarden in het donker komen. De standaard eenheid voor kleurtemperatuur is Kelvin (K). </para>
+
+    <para
+>De <guilabel
+>Overbelichtingsindicatie</guilabel
+> controleert voor alle kleurkanalen of een pixel is overbelicht, als dat het geval is dan ziet u het gecombineerde resultaat van de witbalans-instelling. Dit onderdeel geeft alleen een indicatie in de voorbeeldweergave en heeft geen effect in het uiteindelijke resultaat. </para>
+
+    <para
+>De knoppen <guilabel
+>Opslaan als...</guilabel
+> en <guilabel
+>Laden...</guilabel
+> zijn precies voor dat doel in gebruik. Elke door u gemaakte witbalans-instelling kunt u in het bestandssysteem als een tekstbestand opslaan, om die later weer te laden. </para>
+
+    <para
+>De knop <guilabel
+>Alles herstellen</guilabel
+> zet alle filters terug naar de standaardwaarden van de neutrale witbalans kleur. (Let op, de neutrale instelling kan zelfs verschillen van uw originele foto, bij het opslaan kan de witbalans gewijzigd zijn.) </para>
+
+    </sect4>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

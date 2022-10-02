@@ -1,0 +1,181 @@
+  <sect3 id="editor-enhance-distortion">
+    <sect3info>
+      <title
+>Corregir la distorsió de la lent</title>
+      <abstract>
+        <para
+>La <emphasis
+>distorsió de la lent</emphasis
+> del &digikam; és una eina per a corregir les aberracions de la lent esfèriques a les fotografies. Empra un algoritme el qual és copyright d'en David Hodson. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>Digikam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introducció</title>
+    <anchor id="lensdistortion.anchor"/>
+    <para
+>La <emphasis
+>distorsió de barril</emphasis
+> està associada amb lents de gran angular (o zoom mínim). Causa que les imatges apareguin lleugerament esfèriques (corbada cap a fora) com un barril. Ho podeu notar quan tingueu característiques rectes prop de parts perifèriques de la imatge. La <emphasis
+>distorsió de coixinet</emphasis
+> és el defecte contrari i s'associa amb les lents de telescopi (zoom màxim) o imatges submarines. Les imatges apareixen pessigades (doblegada cap a dins) cap al centre. L'efecte de coixinet sovint és menys visible que el de barril, però són igualment visibles a prop de les vores. Aquestes distorsions es poden eliminar amb facilitat sense una pèrdua visible en la qualitat amb aquesta eina. </para>
+    <note>
+      <para
+>Aquesta eina tracta les distorsions geomètriques. Les aberracions cromàtiques no seran corregides per aquesta eina. </para>
+    </note>
+    <para
+>Les següents figures expliquen els principals tipus de distorsions geomètriques: <itemizedlist>
+        <listitem>
+          <para
+>(1): distorsió de coixinet.</para>
+        </listitem>
+        <listitem>
+          <para
+>(2): sense distorsió.</para>
+        </listitem>
+        <listitem>
+          <para
+>(3): distorsió de barril.</para>
+        </listitem>
+      </itemizedlist>
+    </para>
+    <para>
+      <inlinemediaobject>
+        <imageobject>
+          <imagedata fileref="&path;editor-distortions.png" format="PNG"/>
+        </imageobject>
+        <textobject>
+          <phrase
+>Tipus de distorsió de la lent</phrase>
+        </textobject>
+      </inlinemediaobject>
+    </para>
+    <para/>
+    <sect4 id="using-lensdistortion">
+      <title
+>Usar l'eina «Distorsió de la lent»</title>
+      <note>
+        <para
+>Primer, algunes explicacions. Les correccions geomètriques utilitzen coeficients dels polinomis de quart ordre. <itemizedlist>
+            <listitem>
+              <para
+>El coeficient de primer ordre canvia la mida de la imatge. L'eina ho anomena <guilabel
+>Zoom</guilabel
+>.</para>
+            </listitem>
+            <listitem>
+              <para
+>El coeficient de segon ordre tracta la distorsió geomètrica principal de les lents i pot corregir la forma convexa o còncava de la imatge.</para>
+            </listitem>
+            <listitem>
+              <para
+>El coeficient de tercer ordre té un efecte d'arrodoniment similar, però s'anivella cap a les vores. Aquesta correcció no s'empra en l'eina.</para>
+            </listitem>
+            <listitem>
+              <para
+>El coeficient de quart ordre corregeix les vores llunyanes inversament a l'arrodoniment de segon ordre. Combinat amb la correcció de segon ordre, les distorsions geomètriques es poden eliminar gairebé per complet.</para>
+            </listitem>
+          </itemizedlist>
+        </para>
+      </note>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-lensdistortion.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>El diàleg de «Correcció de la distorsió de la lent»</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>Quatre controls lliscants us permeten ajustar el filtre de correcció de la distorsió: </para>
+      <para
+><guilabel
+>Principal</guilabel
+>: Aquest valor controla la quantitat de distorsió de segon ordre. Els valors negatius corregeixen la distorsió de barril, mentre que els positius corregeixen la distorsió de coixí. </para>
+      <para
+><guilabel
+>Límit</guilabel
+>: aquest valor controla la quantitat de distorsió de quart ordre. Controla que té més efecte en les vores de la imatge que al centre. Per a la majoria de les lents, el paràmetre <guilabel
+>Límit</guilabel
+> té el signe oposat del paràmetre <guilabel
+>Principal</guilabel
+>. </para>
+      <para
+><guilabel
+>Zoom</guilabel
+>: aquest valor converteix a una escala la mida de tota la imatge (correcció de primer ordre). Els valors negatius allunyen de la imatge, mentre que els valors positius la faran més gran. </para>
+      <para
+><guilabel
+>Brillantor</guilabel
+>: aquest control ajusta la brillantor a les cantonades de la imatge. Els valors negatius disminueixen la brillantor a les cantonades de la imatge, mentre que els valors positius l'augmentaran. </para>
+      <para
+>Per ajudar-vos a triar els millors ajustos pels filtres, el diàleg del giny il·lustra amb una vista prèvia en miniatura la correcció de la distorsió aplicada a un patró de malla creuada. Els valors que apliqueu a la imatge es desaran i tornaran a aparèixer com per omissió la propera vegada que crideu a l'eina. </para>
+      <note>
+        <para
+>La correcció de barril/coixinet s'ha de fer abans de qualsevol escapçat o canvi de mida (inclosa la correcció de la perspectiva). De fet, les correccions de barril/coixinet hauran de ser el primer pas sobre la imatge original. Si escapceu la imatge i després utilitzeu la correcció de barril, l'efecte seria òbviament erroni. </para>
+      </note>
+      <para
+>Per ajudar-vos a trobar la millor correcció, l'eina proporciona una guia vertical i horitzontal. Moveu el cursor del ratolí en la imatge de vista prèvia per mostrar la guia de línies de punts. Moveu el cursor a un lloc important en la imatge com el nivell del mar o prop d'un edifici i premeu el &BER; per a congelar la posició de les línies de punts. Ara, ajusteu la correcció de barril/coixinet per alinear-se amb la guia. </para>
+      <para
+>Quan s'utilitza la correcció de coixinet la imatge resultant tindrà una vora negra a la cantonada. Haureu de retallar-la amb una eina d'escapçat disponible al menú <menuchoice
+> <guimenu
+>Transforma</guimenu
+> <guimenuitem
+>Escapça</guimenuitem
+> </menuchoice
+> de l'editor d'imatges o mitjançant el control lliscant de zoom d'aquest diàleg. </para>
+      <para
+>En la majoria de les imatges utilitzar la correcció de barril és suficient, però, amb algunes fotografies com imatges frontals, marcs, quadres, el següent pas lògic és utilitzar la correcció de la perspectiva per fer tots els angles de 90 graus. Tingueu en compte que quan sosteniu la vostra càmera amb la mà gairebé sempre es presentarà una mena de distorsió lleu de la perspectiva. </para>
+    </sect4>
+    <sect4 id="inaction-lensdistortion">
+      <title
+>L'eina «Distorsió de la lent» en acció</title>
+      <para
+>Aquest és un exemple d'una correcció barril aplicada a l'església al nord de Noruega. La imatge original és (1), la imatge corregida és (2). </para>
+      <para
+>Els valors utilitzats per a aquest exemple són: <itemizedlist>
+          <listitem>
+            <para
+>Principal = -40.</para>
+          </listitem>
+          <listitem>
+            <para
+>Vora = 0.</para>
+          </listitem>
+          <listitem>
+            <para
+>Zoom = -20.</para>
+          </listitem>
+          <listitem>
+            <para
+>Brillantor = 0.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-lensdistortion-preview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>Vista prèvia per a la correcció de la distorsió de la lent</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

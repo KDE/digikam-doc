@@ -1,0 +1,288 @@
+<sect1 id="using-imageformats"
+> <title
+>Bildformat som stöds</title>
+
+    <sect2
+> <title
+>Inledning</title>
+
+	<para
+>&digikam; förlitar sig på ett antal bibliotek och stödpaket för att ladda och spara bildformat. Vilka bildformat som är tillgängliga kommer att bero på tillgängligheten hos dessa bibliotek på ditt system, och ibland på sättet som biblioteken har kompilerats. I de flesta distributioner, kommer du att märka att ett stort antal bildformat kan visas inne i &digikam;. </para>
+
+	<para
+>Detta beroende av andra bibliotek betyder att det inte är möjligt att ge en definitiv lista på alla format som är tillgängliga på ditt system. Åtminstone JPEG, PNG och TIFF bör vara tillgängliga. </para>
+
+	<para
+>&digikam; visar bara filer som har format som kan förstås. Det görs genom att titta på filernas filändelser och kontrollera dem med en fördefinierad lista. Om filändelsen finns i listan, visar &digikam; filen i bildvisningen. Du kan ändra listan med filändelser som &digikam; accepterar. Se avsnittet <link linkend="using-setup"
+>Inställning</link
+> för mer detaljerad information. </para>
+
+        <para
+>Nästan alla digitalkameror lagrar fotografier i ett av två format: JPEG eller TIFF. Många kameror låter dig välja vilket av dessa format som ska användas. En fullständig beskrivning av formaten finns på <ulink url="https://sv.wikipedia.org/wiki/Bildfilformat"
+>Wikipedia</ulink
+>. &digikam; stöder båda dessa format. </para>
+
+    </sect2>
+
+    <sect2
+> <title
+>Komprimering av stillbilder</title>
+
+        <para
+>Bildkompression är användning av datakomprimeringsmetoder för digitala bilder. Det görs genom att ta bort redundans i bilddata för att kunna lagra eller överföra data i en effektiv form. </para>
+
+        <para
+>Bildkomprimering kan vara destruktiva eller förlustfri. Förlustfria komprimeringsmetoder föredras alltid på grund av deras höga bevarandevärde i arkiveringssyfte innan omvandlingar som beskärning, storleksändring, färgkorrigering, etc. Det beror på att destruktiva komprimeringsmetoder, i synnerhet när de används med låga bithastigheter introducerar komprimeringsartefakter. Destruktiva metoder är lämpliga för naturliga bilder som foton i program där mindre (ibland omärkbar) förlust av naturtrogenhet är acceptabel för att åstadkomma en väsentlig reducering av bithastigheten. Destruktiv komprimering är bra för publicering av fotografier på Internet. </para>
+
+    </sect2>
+
+    <sect2
+> <title
+>JPEG</title>
+        
+        <para
+>JPEG är ett komprimerat format som byter ut en del av bildkvaliteten för att hålla filstorlekarna små. I själva verket sparar de flesta kameror sina bilder med det här formatet om du inte anger något annat. En JPEG-bild lagras med destruktiv komprimering, och du kan variera komprimeringens storlek. Det låter dig välja mellan mindre komprimering och högre bildkvalitet eller större komprimering och sämre kvalitet. Den enda anledningen att välja högre komprimering är på grund av att det skapar mindre filer så att du kan lagra fler bilder, och det är enklare att skicka dem via e-post, eller visa dem på webben. De flesta kameror ger dig två eller tre val som motsvarar bra, bättre och bäst, även om namnen varierar. </para>
+            
+        <para
+>Dessutom stöds JPEG-2000. Det tillhandahåller bättre (jämnare) resultat vid samma komprimeringsgrad jämfört med JPEG. I 2000-versionen finns det möjlighet att vara förlustfri, om det anges i inställningarna. </para>
+
+    </sect2>
+
+    <sect2
+> <title
+>TIFF</title>
+
+        <para
+>TIFF har fått bred acceptans och brett stöd som ett bildformat. Vanligtvis kan TIFF lagras i okomprimerad form av kameran eller genom att använda en förlustfri komprimeringsalgoritm (Deflate). Det upprätthåller bättre bildkvalitet, men till bekostnad av mycket större filstorlekar. Vissa kameror låter dig spara dina bilder med formatet, och det är ett populärt format på grund av dess förlustfria komprimeringsalgoritm. Problemet är att formatet har ändrats av så många personer att det nu finns 50 eller fler varianter, och alla känns inte igen av program. </para>
+
+    </sect2>
+
+    <sect2
+> <title
+>PNG</title>
+
+        <para
+>PNG är ett bildformat som utvecklades som en ersättning för ett antal äldre bildfilformat som användes på många håll under 1990-talet. Det är ett förlustfritt format som TIFF, men är mycket kompaktare och sparar diskutrymme. Även om det inte är troligt att din kamera stöder PNG, tycker vissa om att konvertera sina fotografier till PNG så fort de lagrat dem på datorn. I motsats till JPEG, förlorar inte PNG-bilder kvalitet varje gång du kodar dem efter ändringar. &digikam; stöder PNG-bilder fullständigt, och köhantering för bakgrundsbehandling kan konvertera en uppsättning bilder från vilket format som helst som stöds till PNG i ett steg. </para>
+
+        <para
+>PNG är ett utökningsbart filformat för förlustfri, flyttbar, välkomprimerad lagring av rasterbilder. PNG tillhandahåller en patentfri ersättning till &GIF; och kan också ersätta många vanliga användningar av TIFF. PNG är avsedd att fungera bra i direktvisningsprogram, som webben, så det är fullständigt strömningsbart med ett alternativ för progressiv visning. Dessutom kan PNG lagra gamma och kromaticitetsdata på heterogena plattformar. PNG stöder djupen 8- och 16 bitar per färg och bildpunkt. Det är ett perfekt filformat att arkivera fotografier med. För mer information om PNG-formatet se <ulink url="http://www.libpng.org/pub/png/"
+>PNG hemsidan</ulink
+>. </para>
+
+    </sect2>
+
+    <sect2
+> <title
+>PGF</title>
+
+        <para
+><command
+>PGF</command
+> "Progressiv grafikfil" är ett annat inte så välkänt, men öppet, filformat för bilder. Det är baserat på Wavelet, och tillåter förlustfri och destruktiv datakomprimering. PGF står sig bra i jämförelse med JPEG 2000, men utvecklades för hastighet (komprimering och avkodning) istället för att ge bäst komprimeringsförhållande. Vid samma filstorlek ser en PGF-fil väsentligt bättre ut än en JPEG-fil, medan den också förblir mycket bra vid gradvis visning. Därför bör det vara lämpligt för webben, men för närvarande kan få webbläsare visa det. För mer information om PGF-formatet, se <ulink url="http://www.libpgf.org/"
+>hemsidan för libPGF</ulink
+>. </para
+> 
+
+    </sect2>
+
+    <sect2
+> <title
+>Obehandlad</title>
+
+        <para
+>Några, typiskt dyrare, kameror låter dig lagra bilder med ett obehandlat format. Ett obehandlat format följer egentligen inte någon bildstandard alls. Det är olika för varje kameramärke. Bilder med obehandlat format innehåller all data som kommer direkt från kamerans bildsensor innan programvaran i kameran utför behandling som vitbalans, skärpa, etc. Genom att lagra fotografier med kamerans obehandlade format kan du ändra inställningar såsom vitbalansen efter fotografiet har tagits. De flesta professionella fotografer använder obehandlat format eftersom det ger dem maximal flexibilitet. Nackdelen är att filer med obehandlat format verkligen kan vara mycket stora. </para>
+
+        <para
+>Om du vill lära dig mer om obehandlade bildformat, besök guiderna <ulink url="https://en.wikipedia.org/wiki/Raw_image_format"
+>Wikipedia</ulink
+>, <ulink url="http://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml"
+>Luminous Landscape</ulink
+> och <ulink url="http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm"
+>Cambridge in Colour</ulink
+>, som kan vara till stor hjälp. Du kan konvertera bilder med obehandlat format till JPEG eller TIFF i &digikam;, med <link linkend="raw-workflow"
+>bildeditorn</link
+>. </para>
+
+        <para
+>&digikam; stöder bara laddning av obehandlade bilder, och förlitar sig på <ulink url="https://www.libraw.org"
+>biblioteket libraw</ulink
+> som ingår i &digikam;s kärna, och stöder över 800 obehandlade filformat. Alla kameror som stöds listas längst ner på <ulink url="http://www.cybercom.net/~dcoffin/dcraw"
+>Dave Coffins</ulink
+> webbsida. Tabellen nedan visar en kort lista med obehandlade kamerafiler som stöds av &digikam;: <informaltable
+><tgroup cols="2">
+
+                <thead
+><row>
+                <entry
+>Obehandlat filformat</entry>
+                <entry
+>Beskrivning</entry>
+                </row
+></thead>
+                <tbody>
+                    <row
+><entry
+>CRW, CR2 </entry
+><entry
+>Obehandlade filformat för Canon digitalkameror </entry
+></row>
+
+                    <!-- ************************ -->
+                    <row
+><entry
+>NEF </entry
+><entry
+>Obehandlat filformat för Nikon digitalkameror </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>ORF </entry
+><entry
+>Obehandlat filformat för Olympus digitalkameror </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>RAF </entry
+><entry
+>Obehandlat filformat för Fuji digitalkameror </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>RWL </entry
+><entry
+>Obehandlat filformat för Leica-kameror </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>PEF, PTX </entry
+><entry
+>Obehandlat filformat för Pentax digitalkameror </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>X3F </entry
+><entry
+>Obehandlat filformat för Sigma digitalkameror </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>DCR, KDC, DC2, K25 </entry
+><entry
+>Obehandlat filformat för Kodak digitalkameror </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>SRF, ARW, MRW, MDC </entry
+><entry
+>Obehandlat filformat för Sony/Minolta digitalkameror </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>RAW </entry
+><entry
+>Obehandlat filformat för Panasonic, Casio och Leica digitalkameror </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>DNG (CS1, HDR) </entry
+><entry
+>Adobe obehandlat filformat (digitalt negativ) </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>BAY </entry
+><entry
+>Casio obehandlat filformat (Bayer) </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>ERF </entry
+><entry
+>Obehandlat filformat för Epson digitalkameror </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>FFF </entry
+><entry
+>Imacon/Hasselblad obehandlat format </entry
+></row>
+
+                    <!-- ************************ -->
+
+                    <row
+><entry
+>MOS </entry
+><entry
+>CREO foto obehandlat filformat </entry
+></row>
+
+                    <!-- ************************ -->
+                    <row
+><entry
+>PXN </entry
+><entry
+>Fotoman obehandlat filformat </entry
+></row>
+
+                    <!-- ************************ -->
+                    <row
+><entry
+>RDC </entry
+><entry
+>Ricoh obehandlat format </entry
+></row>
+
+                </tbody>
+
+            </tgroup
+></informaltable>
+
+        </para>
+
+    </sect2>
+
+</sect1>
+ 
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

@@ -1,0 +1,93 @@
+<sect2 id="editor-cm-definitions">
+    <title
+>Meet definities over kleurbeheer</title>
+
+    <para
+>U bent aan het einde gekomen van deze zelfstudie over kleurbeheer. We hebben onze kleurbeheer-route van camera  en beeldscherm tot werkruimte tot printer voltooid. Ik heb er veel van geleerd en hopelijk u ook. Wat nu volgt zijn aanvullende opmerkingen en definities. </para>
+
+    <para
+><emphasis
+>Toewijzen</emphasis
+> van een profiel houdt in, het wijzigen van de RGB getallen in een beeld door een nieuw profiel in te brengen zonder de eigenlijke RGB getallen van elke pixel te wijzigen. Converteren naar een profiel betekent een nieuw profiel inbrengen en tevens de RGB getallen wijzigen zodat de betekenis van de RGB waarden (dat is de zichtbare kleur die door de RGB-waarden van iedere pixel wordt gevormd) hetzelfde blijft, voor en na de conversie van de ene ruimte naar de andere ruimte.  </para>
+
+    <para
+>Aan de andere kant, elke keer dat u een nieuw werkruimteprofiel toewijst in plaats van conversie naar een nieuwe werkruimte te kiezen, zal het uiterlijk van het beeld min of meer drastisch veranderen. Behalve wanneer u bij aanvang een cameraprofiel toewijst aan de afbeelding die u krijgt van uw raw-verwerkende software maar meestal wordt het slechter. </para>
+
+    <para
+>In theorie zou u meerdere conversies van een kleurruimte naar een andere van een afbeelding kunnen maken. En als u een bewerkingsprogramma met kleurbeheer gebruikt zou het beeld er op het scherm telkens hetzelfde uit moeten zien. Maar feitelijk raakt het beeld met iedere conversie verder in verval door afrondingen van rekenresultaten en afknijpen van heldere of donkere delen in de afbeelding.  </para>
+
+    <para
+><emphasis
+>Apparaat-afhankelijke</emphasis
+> en <emphasis
+>Apparaat-onafhankelijke</emphasis
+> profielen: het cameraprofiel, een scannerprofiel, uw beeldschermprofiel en het kleurprofiel van uw printer zijn allen apparaat-afhankelijke profielen. Deze profielen werken alleen met het specifieke apparaat waarvoor ze werden ontwikkeld. Werkruimteprofielen en de PCS-en (profiel-verbindende kleurruimten) zijn apparaat-onafhankelijk. Wanneer een afbeeldingsbestand vertaald is door een LCMS (Little Color Management System) via een PCS naar een apparaat-onafhankelijke werkruimte maakt het niet langer uit door welk apparaat het afbeeldingsbestand oorspronkelijk werd aangemaakt. Maar zo gauw u het beeld op een ander beeldscherm wilt tonen of het printen, dan maakt het veel uit welk apparaat wordt gebruikt en is een apparaat-afhankelijk profiel vereist. </para>
+
+    <para
+>Een <emphasis
+>geïnterpoleerd raw-bestand</emphasis
+> is geen raw-bestand. Om de een of andere reden veroorzaakt dit eenvoudige punt veel verwarring. Maar nadat een raw-bestand is geïnterpoleerd door bewerkingssoftware voor raw en de uitvoer als een tiff- of jpeg-bestand, het originele raw-bestand is nog steeds een raw-bestand natuurlijk, maar het geïnterpoleerde bestand is gewoon een afbeeldingsbestand. Het is geen raw-bestand. </para>
+
+    <para
+><emphasis
+>Lineair</emphasis
+> kent twee aan elkaar verwante maar gemakkelijk te verwarren definities. "Lineair" kan betekenen dat de kleurtoon van een beeld weergeeft wat de kleurtoon van de gefotografeerde scene was. Het kan ook betekenen dat de gammaconversiecurve van de kleurruimte lineair is. Een beeld kan lineair zijn in een van de twee, in beide of in geen van twee betekenissen. Een raw-afbeelding zoals ontwikkeld door dcraw is lineair in beide betekenissen. Eenzelfde afbeelding, ontwikkeld door Canon's DPP zal in geen van de betekenissen lineair zijn.    </para>
+
+    <para
+><emphasis
+>HDR en LDR</emphasis
+> verwijzen niet naar de bitdiepte van een afbeelding. "High dynamic range" en "low dynamic range" verwijzen naar het totale dynamische bereik van een beeld. Een gewoon beeld met een laag dynamisch bereik, zeg maar, 5 diafragmastapjes kan opgeslagen worden als, 8-, 16-, 32-, of zelfs 64-bits afhankelijk van de software. (Een tegenwoordige digitale camera kan gemakkelijk 8 of 9 diafragmastapjes bevatten) Maar het dynamische bereik van het beeld wordt daardoor niet gewijzigd. Slechts het aantal afzonderlijke stapjes van de helderste tot de donkerste tonen is gewijzigd. Omgekeerd kan een 22-staps (wat in een eenvoudige camera niet haalbaar is) eenvoudig beeld opgeslagen worden als een 8-bits of 16-bits beeld maar het resultaat zal verschijnselen van extreme bandvorming te zien geven door de relatief geringe beschikbare stapjes van lichte tot donkere tonen in de afbeelding. Het zal extreme bandvorming laten zien in elk toonbereik op het beeldscherm. </para>
+
+    <para
+><emphasis
+>Intern (in-camera) geproduceerde jpegs hebben geen cameraprofiel nodig</emphasis
+>. Alle jpeg's (of tiff's, als u een ouder model Minolta Dimage camera hebt) die regelrecht uit de camera komen beginnen hun leven als een raw-bestand dat geconverteerd werd door de inwendige analoog naar digitaal converter (omzetter.) Zelfs wanneer gemaakt door eenvoudige pocket-camera's. Als u uw beelden opslaat als jpeg's, dan interpoleert de processor in uw camera het raw-bestand, wijst een cameraprofiel toe, vertaalt de resulterende RGB waarden naar een werkruimte (gewoonlijk sRGB, maar soms kan u kiezen voor AdobeRGB), zorgt voor de jpeg-compressie en slaat de afbeelding op in de geheugenkaart van uw camera. Voor jpeg's (of tiff's) van uw camera is het niet nodig een profiel toe te wijzen dat dan vertaald wordt naar werkruimte via een PCS. Jpeg's van uw camera bevinden zich al in een kleurwerkruimte. </para>
+
+    <para
+><emphasis
+>Handige wiskundige informatie</emphasis
+> als u te maken hebt met lineaire gamma-uitvoer van dcraw: wiskundig gezien, bij het doen van een gamma transformatie normaliseert u, (dat is, de RGB-nummers delen door 256 als u werkt met 8- bits waarden) en verhoogt u de verkregen getallen naar een passende waarde, afhankelijk van de respectievelijke gamma's van de eerste en laatste kleurruimte, daarna normalizeert u de resultaten opnieuw naar een nieuwe reeks van RGB getallen. Het is niet moeilijk en zeer leerzaam om dit te doen met een rekenmachine voor een paar afzonderlijke sets van RGB getallen van (0,0,0) tot (255,255,255) om te zien hoe RGB-getallen van de ene gamma-codering naar de andere veranderen. LCMS doet dit voor u wanneer u LCMS vraagt te converteren van de ene kleurruimte naar de andere. Als alles wat u doet is het converteren van één kleurruimte naar dezelfde kleurruimte behalve voor een andere gamma, gebruik dan imagemagick in plaats van LCMS en behandel de RGB-getallen direct, ken dan de nieuwe werkruimte toe aan de afbeelding - het resultaat zal beter zijn dan door een transformatie van de kleurruimte te gaan. </para>
+
+    <para
+><emphasis
+>door Copyright beschermde en onbeschermde werkruimten</emphasis
+>: ik neem aan dat alle gewone werkruimten die men tegen kan komen zoals:  </para>
+
+    <orderedlist>
+
+        <listitem
+><para
+>De verschillende varianten van sRGB (zie color.org) </para
+></listitem>
+
+        <listitem
+><para
+>BruceRGB of BestRGB. </para
+></listitem>
+
+        <listitem
+><para
+>De verschillende ECI (European color initiative) werkruimteprofielen </para
+></listitem>
+
+        <listitem
+><para
+>AdobeRGB, AdobeWideGamutRGB, en Kodak/Adobe ProPhotoRGB (Kodak en Adobe ProPhoto zijn hetzelfde met een andere naam) en hun merkloze onbeschermde tegenhangers (Oyranos bevat een merkloze versie van AdobeRGB) </para
+></listitem>
+
+    </orderedlist>
+
+    <para
+>En een tamelijk aantal andere werkruimten die toegevoegd kunnen worden aan deze lijst, zijn al meer of minder geschikt als werkruimteprofielen. Welke werkruimte u zou moeten gebruiken hangt alleen en geheel alleen van u af, van uw eisen als de beweker van uw digitale afbeeldingen met uw eventuele uitvoerwensen (web, kunstafdrukken, &etc;). Echter, als een kritische opmerking, als u Adobe of andere werkruimteprofielen met copyrightgebruikt, deze profielen bevatten informatie onder copyright die zich vertoont in de exif-informatie van uw afbeelding. De laatste tijd heb ik mij verdiept in de openicc e-maillijsten. Kennelijk lan LCMS gebruikt worden om merkloze, copyleft werkruimteprofielen te produceren die praktisch hetzelfde zijn - in feite niet te onderscheiden van - de werkruimteprofielen met een merk. Het zou een prachtige toevoeging zijn aan &digikam; als een set "copyleft" werkruimteprofielen, inclusief die zonder merk, opnieuw van een label voorziene versies van ProPhotoRGB, AdobeRGB en Adobe WidegamutRGB (misschien in twee smaken elk: lineaire gamma en de gebruikelijke gamma), gebundeld worden als onderdeel van het pakket &digikam;. </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

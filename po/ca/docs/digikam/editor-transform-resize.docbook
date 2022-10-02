@@ -1,0 +1,271 @@
+<sect3 id="editor-transform-resize">
+    <sect3info>
+
+        <title
+>Canviar la mida d'una imatge</title>
+
+        <abstract>
+
+            <para>
+                <ulink url="http://cimg.sourceforge.net"
+><inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;logo-cimg.png" format="PNG"/></imageobject>
+                <textobject
+><phrase
+>cimglogo</phrase
+></textobject>
+                </inlinemediaobject
+></ulink>
+            </para>
+
+            <para
+><emphasis
+>Engrandir la fotografia</emphasis
+> del &digikam;, és sens dubte, una de les eines més avançades per augmentar la mida d'una fotografia amb una mínima pèrdua en la qualitat de la imatge. </para>
+
+        </abstract>
+
+        <keywordset>
+        <keyword
+>Cimg</keyword>
+        <keyword
+>Greycstoration</keyword>
+        </keywordset>
+
+    </sect3info>
+
+    <title
+>Introducció</title>
+
+    <para
+>El fet de tornar a escalar una imatge per fer-la més petita és fàcil. La gran pregunta és: com es pot engrandir una imatge i mantenir els detalls més definits? Com es pot fer zoom quan s'ha abastat el límit de la resolució? Com es pot reinventar o endevinar la informació que falta per omplir en la grossa imatge necessàriament després de fer zoom? Bé, l'algorisme CImg que fem servir aquí fa un treball excel·lent, proveu i veieu-ho vosaltres mateixos! </para>
+
+    <sect4 id="using-resizingimage"
+> <title
+>Canviar la mida d'una fotografia</title>
+
+        <anchor id="resizetool.anchor"/>
+
+        <para
+>Si la fotografia té la mida incorrecta, podeu escalar-la a la mida que voleu utilitzant l'eina redimensió de transformació. Seleccioneu <menuchoice
+><guimenu
+>Transforma</guimenu
+><guimenuitem
+>Redimensiona</guimenuitem
+></menuchoice
+> i ajusteu els valors objectius. El diàleg de l'eina de redimensionament estan disponibles a sota. </para>
+
+        <example
+><title
+>El diàleg de l'eina «Redimensiona»</title>
+            <screenshot
+><screeninfo
+>El diàleg de l'eina «Redimensiona»</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editor-resize.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> 
+        </example>
+
+        <para
+>Aquesta eina canvia la mida de la imatge utilitzant un mètode d'interpolació lineal estàndard per aproximar els píxels. Si voleu augmentar una imatge petita amb una millor qualitat, proveu l'eina Canvia la mida. </para>
+
+    </sect4>
+
+
+    <sect4 id="using-resizerestoration"
+> <title
+>Augmentar la mida de la imatge (restaurar)</title>
+        <para
+>Molts programes d'edició d'imatges utilitzen algun tipus d'interpolació, &pex;, interpolació amb corbes per augmentar l'escala d'una imatge. &digikam; utilitza un enfocament més sofisticat. L'algorisme subjacent <emphasis
+>restaurar</emphasis
+> ha estat desenvolupat per l'equip IMAGE del laboratori GREC CNRS a Caen/França i forma part del <ulink url="http://cimg.sourceforge.net"
+>projecte CImg</ulink
+>. </para>
+
+        <para
+><inlinemediaobject
+><imageobject
+> 
+            <imagedata fileref="&path;editor-resize-restoration.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Diàleg per engrandir la fotografia</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+        <para
+>Heu de dir-li a l'eina el canvi de mida que voleu realitzar. Aquestes opcions de configuració estan disponibles a la pestanya <guilabel
+>Mida nova</guilabel
+> i s'enumeren a continuació: <itemizedlist>
+
+        <listitem
+><para
+><guilabel
+>Mantén la relació d'aspecte</guilabel
+>: si aquesta opció està activada, els ajustos de creació de la mida nova de la imatge seran conservar la relació d'aspecte de la imatge original.</para
+></listitem>
+        <listitem
+><para
+><guilabel
+>Amplada</guilabel
+>: la nova amplada de la imatge que s'utilitzarà per engrandir.</para
+></listitem
+> 
+        <listitem
+><para
+><guilabel
+>Alçada</guilabel
+>: la nova alçada de la imatge que s'utilitzarà per engrandir.</para
+></listitem>
+
+        </itemizedlist>
+        </para>
+
+        <para
+>Si voleu establir paràmetres de filtre per ajustos més fins, utilitzeu les pestanyes <guilabel
+>Configuració del suavitzat</guilabel
+> i <guilabel
+>Arranjament avançat</guilabel
+>: </para>
+
+        <para
+><inlinemediaobject
+><imageobject
+> 
+            <imagedata fileref="&path;editor-resize-restoration-settings1.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Configuració del suavitzat per engrandir la fotografia</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+        <para>
+        <itemizedlist>
+
+            <listitem
+><para
+><guilabel
+>Conservació dels detalls</guilabel
+> p [0, 100]: això controla la conservació de les curvatures (característiques). Un valor baix obliga a un suavitzat igual que el llarg de la imatge, mentre que valors més grans suavitzen preferentment les regions homogènies i deixen els detalls més definits. Un valor de 0,9 també conservarà els detalls de manera que no es requereixi aguditzar després. Tingueu en compte que <guilabel
+>Conservació dels detalls</guilabel
+> sempre haurà de ser inferior a l'<guilabel
+>Anisotropia</guilabel
+>.</para
+></listitem>
+            <listitem
+><para
+><guilabel
+>Anisotropia</guilabel
+> alfa [0, 100]: un valor baix suavitza de la mateixa manera en totes les direccions, mentre que un valor proper a 1 suavitza en una sola direcció. Si teniu gra de pel·lícula o soroll de tipus CCD, un valor alt resultarà en un patró d'ona, mentre que pels defectes JPEG són adequats valors propers a 1. </para
+></listitem>
+            <listitem
+><para
+><guilabel
+>Suavitzat</guilabel
+> [0, 500]: estableix el màxim factor de suavitzat general (quan p defineix el suavitzat relatiu). Ajusteu-lo d'acord amb el nivell de soroll.</para
+></listitem>
+            <listitem
+><para
+><guilabel
+>Regularitat</guilabel
+> [0, 100]: aquest paràmetre es refereix a les estructures més grans. Com més alt sigui aquest valor, més suau serà el suavitzat global. Això és necessari quan hi ha present molt de soroll, ja que és difícil estimar la geometria. A més, si voleu aconseguir un efecte de turbulència a l'estil «Van Gogh», es recomana un ajust superior a 3.</para
+></listitem>
+            <listitem
+><para
+>Filtre <guilabel
+>Iteracions</guilabel
+>: nombre de vegades que s'aplicarà l'algorisme de difuminat. Normalment n'hi ha prou amb 1 o 2.</para
+></listitem>
+
+        </itemizedlist>
+        </para>
+
+        <para
+><inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;editor-resize-restoration-settings2.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Configuració avançada per engrandir la fotografia</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+        <para>
+            <itemizedlist>
+
+                <listitem
+><para
+><guilabel
+>Pas angular</guilabel
+> de [5, 90]: la integració angular de l'anisotropia alfa. Si alfa és baixa, també el «de» s'haurà de baixar. Però compte, els angles petits resulten en grans càlculs! Trieu el més gran que pugueu acceptar. </para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Pas Integral</guilabel
+> [0,1, 10]: amplada del pas d'integració espacial en termes de píxels. Haurà de romandre en menys que 1 (suavitzat del subpíxel) i mai més gran que 2.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Usa interpolació lineal</guilabel
+>: El guany en qualitat, si se selecciona aquesta opció, només serà marginal i es perdrà un factor de 2 en velocitat. La nostra recomanació és deixar-lo desactivat.</para
+></listitem>
+
+            </itemizedlist>
+
+        </para>
+
+        <para
+>Els botons <guilabel
+>Desa com a...</guilabel
+> i <guilabel
+>Carrega...</guilabel
+> s'utilitzen per realitzar les accions que descriuen. Qualsevol configuració que establiu al filtre per engrandir la fotografia, es podrà desar al sistema de fitxers en un fitxer de text i carregar-lo més endavant. </para>
+
+        <warning
+><para
+>Engrandir la fotografia és molt ràpid en el que fa, però pot prendre molt de temps a executar-se i això causa una càrrega de la CPU. Sempre podreu cancel·lar el càlcul prement el botó <guilabel
+>Cancel·la</guilabel
+> durant la renderització. </para
+></warning>
+
+    </sect4>
+
+    <sect4 id="inaction-resizerestoration">
+        <title
+>L'eina engrandir en acció</title>
+
+        <para
+>A continuació podeu veure un exemple d'engrandir la fotografia, aplicat a una petita àrea de color de la imatge redimensionada a x2. L'original és (1), el resultat d'engrandir és (3). La vista prèvia (2) és el resultat determinat amb el mètode de canvi de mida lineal estàndard perquè compareu. </para>
+
+        <para
+><inlinemediaobject
+><imageobject
+> 
+            <imagedata fileref="&path;editor-resize-restoration-preview.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Vista prèvia del filtre engrandir la fotografia</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+    </sect4>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

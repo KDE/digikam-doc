@@ -1,0 +1,187 @@
+<sect2 id="using-setup-cm">
+    <title
+>Kleurbeheerinstellingen</title>
+
+    <para
+>&digikam; geschikt voor kleurbeheer. RAW bestanden zoals ze aangemaakt worden zijn niet voor kleur bewerkt. Uw camera levert de gegevens die hij heeft vastgelegd in RAW formaat en laat u alle bewerkingen uitvoeren. Iedere camera heeft zijn specifieke manier van kleurinformatie vastleggen. Daarom zult u een specifiek profiel moeten toepassen op de beelden die u wilt bewerken. Kijk daarvoor op: <link linkend="using-iccprofile"
+>ICC kleurprofielbeheer</link
+> voor meer details en uitleg. </para>
+
+    <para
+>Kortom, een profiel plaatst kleurinformatie en verstrekt informatie over hoe de kleuren moeten worden weergeven. Het geeft ook informatie aan LCMS en &digikam; over hoe de kleur informatie van de ene kleurruimte naar een andere vertaald moet worden om de kleuren zo nauwkeurig mogelijk te houden voor alle media voor weergave. </para>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-cm-behavior.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+    <para
+><guilabel
+>Werkwijze </guilabel
+> vraag bij het openen van een afbeelding in de beeldbewerker/start kleurbeheertoepassing met RAW bestanden. </para>
+
+    <para
+><guilabel
+>Kleurprofielmap</guilabel
+> : stel deze in op de map waar u alle profielen bewaart &eg; "/usr/share/color/icc" of "/home/user/.color/icc". &digikam; scant deze map bij het opstarten. </para>
+
+    <para
+><guilabel
+>Instellingen van ICC-profielen</guilabel
+> : hier wordt de gelegenheid geboden om &quot;standaard&quot; keuzes voor uw profielen aan te geven. Alles is later aanpasbaar bij het openen van een RAW bestand.  </para>
+
+    <itemizedlist>
+
+        <listitem
+><para
+>De <guilabel
+>Kleurbeheerweergave gebruiken</guilabel
+> is een alternatief voor gebruik van Xcalib of Argyll. Kleurbeheer heeft alleen invloed op uw beeld, niet op het gehele scherm. </para
+></listitem>
+
+        <listitem
+><para
+>U moet een werkruimteprofiel aangeven (lineaire profielen als sRGB, ECI-RGB, LStar-,RGB, Adobe-RGB of CIE-RGB). Als u uw afbeeldingen wilt afdrukken kunt u Adobe-RGB kiezen. Als het alleen voor internetpublicatie is dan is sRGB beter (Adobe-RGB wordt een beetje saai in browsers zonder kleurmanagement). Maar u kunt dit later natuurlijk ook veranderen (door een ander profiel aan te geven) daarom kan Adobe-RGB een goede keus zijn voor het opslaan van het beeld omdat u het later altijd nog kan veranderen naar sRGB voor het beeld op uw blog wordt geplaatst. Opmerking: gebruik geen niet-lineaire profielen omdat ze de kleurbalans zullen wijzigen. </para
+></listitem>
+
+        <listitem
+><para
+>Het invoerprofiel moet passen bij het cameramerk en model dat u gebruikt. Niet alle profielen zijn gelijk, er zijn er bij waarin tone mapping/gamma correctie niet is inbegrepen (Canon). Van nu af corrigeert dcraw gamma niet voor bij conversie van 16 bits diepte, dat betekent dat u het tone-mapping zelf moet doen.  </para
+></listitem>
+
+        <listitem
+><para
+>Er zijn een aantal andere opties, zoals het soft proof-profiel waarmee u vooraf kunt beoordelen, er van uitgaande dat u er een profiel voor heeft, hoe uw afbeelding zal worden voor een bepaald apparaat. Het is handig voor het afdrukken, bijvoorbeeld omdat de printer een kleiner gamma heeft dan uw camera en sommige kleuren verzadigd kunnen lijken. U kunt dit handmatig bepalen in plaats van te vertrouwen op het "blinde" algoritme van uw printer. </para
+></listitem>
+
+    </itemizedlist>
+
+    <para
+>Voor de meeste camera's is het vrij duidelijk welk kleurprofiel zij voorstellen voor het type dat u gebruikt, maar niet voor de Canon's. Hier is een tabel van de camera's en bijpassende profielen, het niet-verplichtend natuurlijk: </para>
+
+    <informaltable
+><tgroup cols="2">
+
+        <thead
+><row>
+            <entry
+>Camera</entry>
+            <entry
+>Profielserie</entry>
+        </row
+></thead>
+
+        <tbody>
+            <row
+>   <entry
+>Canon 1D mark II</entry
+>     <entry
+>6051</entry
+>         </row>
+            <row
+>   <entry
+>Canon 1D mark II</entry
+>     <entry
+>6111</entry
+>         </row>
+            <row
+>   <entry
+>Canon 1Ds</entry
+>            <entry
+>6021</entry
+>         </row>
+            <row
+>   <entry
+>Canon 1Ds mark II</entry
+>    <entry
+>6081</entry
+>         </row>
+            <row
+>   <entry
+>Canon 5D</entry
+>             <entry
+>6091</entry
+>         </row>
+            <row
+>   <entry
+>Canon 10D</entry
+>            <entry
+>6031</entry
+>         </row>
+            <row
+>   <entry
+>Canon 20D</entry
+>            <entry
+>6061</entry
+>         </row>
+            <row
+>   <entry
+>Canon 30D</entry
+>            <entry
+>6112</entry
+>         </row>
+            <row
+>   <entry
+>Canon 40D</entry
+>            <entry
+>6101</entry
+>         </row>
+            <row
+>   <entry
+>Canon 300D</entry
+>           <entry
+>6031</entry
+>         </row>
+            <row
+>   <entry
+>Canon 350D</entry
+>           <entry
+>6111 of 6071</entry
+> </row>
+            <row
+>   <entry
+>Canon 400D</entry
+>           <entry
+>6131</entry
+>         </row>
+        </tbody>
+
+    </tgroup
+></informaltable>
+
+    <para
+>De Canon profiel-extensie duidt aan het voorgestelde gebruik: F voor natuurgetrouw, L voor landschap, N voor neutraal, P voor Portret Stijl en S voor standaard stijl. </para>
+
+    <para
+>Hier vind u een typisch <link linkend="raw-workflow"
+>RAW workflow</link
+> scenario. </para>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-cm-profiles.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-cm-advanced.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

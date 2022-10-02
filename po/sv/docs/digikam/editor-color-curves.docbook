@@ -1,0 +1,198 @@
+<sect3 id="editor-color-curves">
+    <sect3info>
+
+    <title
+>Justera kurvor</title>
+
+    <abstract>
+    <para
+><emphasis
+>Justera kurvor</emphasis
+> är ett verktyg i &digikam; för icke-linjär justering av luminositetsskalor och färgkanaler. </para>
+    </abstract>
+
+    </sect3info>
+
+    <title
+>Inledning</title>
+
+    <para
+>Verktyget Justera kurvor är det mest sofistikerade verktyget som kan användas för att justera bildernas tonomfång. Starta det från bildeditorns meny <menuchoice
+><guimenu
+>Färg</guimenu
+> <guimenuitem
+>Kurvjustering...</guimenuitem
+></menuchoice
+>. Det låter dig klicka och dra styrpunkter på en kurva för att skapa en fri funktion som avbildar ljusstyrkenivåer från indata till utdata. Verktyget Justera kurvor kan återskapa alla effekter som går att uppnå med verktygen Ljusstyrka, kontrast, gamma eller Nivåjustering, även om det är kraftfullare än båda. </para>
+    <para
+>Det här verktyget tillhandahåller visuella kurvor för att utföra icke-linjära ändringar av intensitetsvärden i det aktiva lagret, visat som ett histogram. Med redigeringsläget <guilabel
+>Jämt kurvläge</guilabel
+> för kurvan, ändrar du kurvans form genom att lägga till nya punkter på kurvan eller flytta slutpunkternas läge. Ett annat sätt är att rita hela kurvan för hand med redigeringsläget <guilabel
+>Fritt kurvläge</guilabel
+> för kurvan. I båda fall, är effekten automatiskt tillgänglig i bildens förhandsgranskningsområde till vänster, där förhandsgranskningen kan ställas in genom att klicka på ikonerna överst till vänster. </para>
+
+        <sect4 id="using-adjustcurves">
+        <title
+>Använda Justera kurvor</title>
+
+        <para
+><inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;editor-curvesadjust.png" format="PNG"/> </imageobject>
+            <textobject
+><phrase
+>Dialogrutan för verktyget justera kurvor</phrase
+></textobject
+></inlinemediaobject>
+        </para>
+
+        <para
+>Till vänster visas både halva originalet och en förhandsgranskning av resultatbilden. Förhandsgranskningen av resultatbilden uppdateras dynamiskt enligt komponentens inställningar. På höger sida är följande alternativ tillgängliga: <itemizedlist>
+
+        <listitem
+><para
+>Ändra <guilabel
+>Kanal</guilabel
+>: Den här kombinationsrutan gör det möjligt att välja den specifika kanal som ska ändras av verktyget. <itemizedlist>
+                <listitem
+><para
+><guilabel
+>Ljusstyrka</guilabel
+>: Ändrar intensiteten hos alla bildpunkter.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Röd</guilabel
+>: Ändrar röd färgmättnad för alla bildpunkter.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Grön</guilabel
+>: Ändrar grön färgmättnad för alla bildpunkter.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Blå</guilabel
+>: Ändrar blå färgmättnad för alla bildpunkter.</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Alfa</guilabel
+>: Ändrar genomskinlighet hos alla bildpunkter.</para
+></listitem>
+            </itemizedlist>
+
+        </para
+></listitem>
+
+        <listitem
+><para
+>Intill rutan finns två ikoner för att välja linjär eller logaritmisk visning av histogrammet. Det linjära läget är oftast mest användbart för bilder som tagits med en digitalkamera. För bilder som innehåller stora områden med konstant färg domineras dock ett linjärt histogram av en enda stapel. I detta fall är ett logaritmiskt histogram lämpligare. </para
+></listitem>
+
+        <listitem
+><para
+>Huvudredigeringsområde för kurvor: Den horisontella linjen (x-axeln) representerar indatavärden (de är värdenivåer från 0 till 255). Den vertikala linjen (y-axeln) är bara en skala av resultatfärger för vald kanal. Styrkurvan ritas på ett rutnät och korsar histogrammet diagonalt. Pekarens x- och y-position visas permanent ovanför rutnätet. Om du klickar på kurvan skapas en styrpunkt. Du kan flytta den för att böja kurvan. Om du klickar utanför kurvan skapas också en styrpunkt, och den inkluderas automatiskt i kurvan. Varje punkt på kurvan representerar alltså ett 'x' översatt till en resultatnivå 'y'. </para
+></listitem>
+
+        <listitem
+><para
+>Kurvans <guilabel
+>Typ</guilabel
+> för kanalen: under redigeringsområdet finns flera ikoner som avgör om kurvan kan redigeras som en <guilabel
+>Jämnt kurvläge</guilabel
+> kurva eller med läget <guilabel
+>Fritt kurvläge</guilabel
+>. Jämnt läge begränsar kurvtypen till en jämn linje med sträckning och tillhandahåller en realistisk återgivning. Fritt läge låter dig rita kurvan på fri hand genom att använda musen. Med kurvsegment utspridda över hela rutnätet blir resultatet överraskande, men knappast möjligt att upprepa. En knapp för att återställa ursprungliga värden är också tillgänglig. </para
+></listitem>
+
+        <listitem
+><para
+>Om du till exempel flyttar ett kurvsegment åt höger, dvs. mot dagrarna, kan du se att dessa dagrar motsvarar mörkare resultattoner och att bildpunkter som motsvarar kurvsegmentet blir mörkare. </para
+></listitem>
+
+        <listitem
+><para
+>Att flytta åt höger i färgkanaler minskar färgmättnaden till komplementfärgen nås. För att ta bort alla styrpunkter (förutom de båda ändpunkterna), klicka på knappen <guilabel
+>Återställ</guilabel
+>. För att bara ta bort en punkt, flytta den ovanpå en annan punkt. Använd bara kurvorna och titta på resultatet. Du kan till och med solarisera bilden i delar av dess tonomfång. Det inträffar när kurvan är inverterad på något ställe. </para
+></listitem>
+
+        <listitem
+><para
+>Förhandsgranskningen av originalfotot har en röd markör. Om du placerar markören i en zon du vill ändra, ritas en motsvarande linje i rutnätet som anger originalvärdet. Skapa en punkt på den linjen och flytta den uppåt eller neråt för att justera den till du är nöjd. </para
+></listitem>
+
+        <listitem
+><para
+><guilabel
+>Spara som...</guilabel
+> och <guilabel
+>Läs in...</guilabel
+>: Dessa knappar används för att göra just det. Alla kurvor som du har ställt in kan spara i filsystemet och senare laddas. Filformatet som används är Gimp-kurvformatet. </para
+></listitem>
+
+        <listitem
+><para
+><guilabel
+>Återställ</guilabel
+>: Knappen återställer alla kurvornas värden för alla kanaler. </para
+></listitem>
+
+        </itemizedlist>
+
+        </para>
+
+        <para
+>Verktyget för att justera kurvor har flera funktioner som underlättar att placera punkter på styrkurvorna. Att klicka med musknappen i förhandsgranskningen av originalbilden ger en vertikal punktformat linje i kurvverktygets diagramområde. Linjens position motsvarar bildpunktsvärdet som muspekaren befinner sig över i bildfönstret. Att klicka och dra musknappen uppdaterar den vertikala linjens position interaktivt. På så sätt är det möjligt att se var olika bildpunktsvärden i bilden finns på styrkurvan, och det hjälper till att upptäcka platsen för bildpunkter med skuggor, mellantoner och dagrar. </para>
+
+        <para
+>På detta sätt, och med de tre knapparna för <guilabel
+>Färghämtare</guilabel
+> skapas automatiskt styrpunkter på kurvan i alla kanaler för skuggor, mellantoner och dagrar. Aktivera färghämtningsknappen som du vill använda, och klicka på området med förhandsgranskning av originalbilden för att skapa styrpunkter på var och en av styrkurvorna för rött, grönt, blått och ljusstyrka. </para>
+        <!-- TODO: digiKam 5.6.0 - this option does not exist (new screenshot)
+        <para>
+        <guilabel
+>Over Exposure Indicator</guilabel
+> option adds up all color channels and indicates the blown-out highlights. If more than one channel in a pixel is over-exposed you will see the combined color resulting from the curve settings. The display is an indicator only and has no effect on the final rendering.
+        </para
+> -->
+
+        </sect4>
+
+        <sect4 id="inaction-adjustcurves">
+        <title
+>Justera kurvor under arbete</title>
+
+        <para
+>Nedan ser du ett svartvitt fotografi korrigerat i kanalen <guilabel
+>ljusstyrka</guilabel
+>. Hämtningsverktyget för skuggton har används för att bestämma kurvorna som ska användas i originalet. Originalbilden är (1), den korrigerade bilden (2). </para>
+
+            <para
+><inlinemediaobject
+><imageobject>
+                <imagedata fileref="&path;editor-curves-preview.png" format="PNG"/>
+                </imageobject>
+                <textobject
+><phrase
+>Justera kurvor under arbete</phrase
+></textobject
+></inlinemediaobject>
+            </para>
+
+        </sect4>
+
+    </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

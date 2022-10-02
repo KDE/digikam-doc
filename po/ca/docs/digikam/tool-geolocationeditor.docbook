@@ -1,0 +1,509 @@
+<chapter id="tool-geolocation">
+<chapterinfo>
+
+    <abstract>
+        <para
+>Geolocalització significa assignar, editar i utilitzar les metadades que descriuen el lloc geogràfic on es van prendre les imatges o vídeos. La font d'aquestes metadades pot ser la vostra càmera, un receptor GPS per separat o altres mitjans d'informació geogràfica, en particular els mapes. </para>
+
+        <para
+>No només els fotògrafs professionals poden estar interessants en vincular una imatge amb una ubicació geogràfica precisa. No tothom utilitza un avió per a sobrevolar i explorar una àrea determinada amb el registre automàtic de les dades GPS. Planificadors mediambientals, militars, policia, constructores, agències immobiliàries, tots tindran una aplicació immediata. </para>
+
+        <para
+>Però si després d'algun temps, heu oblidat a on es va prendre la imatge, però us agradaria obrir un navegador amb una ampliació de la zona, enviar-la com una postal a un altre usuari del &digikam; (qui després voldrà ubicar la vostra fotografia), o si simplement us cal documentar l'aspecte de la mateixa -tenir les dades de posició emmagatzemades en una foto és òptim-. </para>
+
+    </abstract>
+
+    <keywordset>
+        <keyword
+>GPS</keyword>
+        <keyword
+>Mapa</keyword>
+    </keywordset>
+</chapterinfo>
+
+<title
+>Geolocalització</title>
+    <para
+>El GPS (sistema de posicionament global) s'utilitza com un terme genèric en aquest document. Només significa una ubicació en el sistema de coordenades esfèric comú que es pot mostrar en un mapa. La implementació de la tècnica real que proporciona les dades pot ser el GPS americà, el GLONAS rus, el GALILEO europeu o qualsevol altre sistema. </para>
+
+    <para
+>Al &digikam-app; hi ha quatre eines relacionades amb la geolocalització i dues al &showfoto;: </para>
+        <orderedlist numeration="arabic">
+
+            <listitem
+><para
+>El mode mapa, a l'àrea de la imatge, mostra les imatges amb les dades GPS sobre un mapa depenent de la selecció a la barra lateral esquerra, &pex;, les imatges a l'àlbum que heu seleccionat a la vista Àlbum, les imatges amb una determinada etiqueta assignada (seleccionada a la vista Etiquetes), amb un cert nivell i així successivament. Només està disponible al &digikam-app;. </para
+></listitem>
+    
+            <listitem
+><para
+>La vista Mapa a la barra lateral esquerra del &digikam-app; és l'eina de cerca per trobar imatges emprant les seves dades GPS. Això també només està disponible al &digikam-app;. </para
+></listitem>
+
+            <listitem
+><para
+>L'editor de la geolocalització el descrivim una mica més endavant i és accessible a <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Maj;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenu
+>Element</guimenu
+><guimenuitem
+>Edita la geolocalització...</guimenuitem
+></menuchoice
+> (<menuchoice
+><guimenu
+>Fitxer</guimenu
+><guimenuitem
+>Edita la geolocalització...</guimenuitem
+></menuchoice
+> al &showfoto;). </para
+></listitem>
+
+            <listitem
+><para
+>La pestanya <link linkend="using-sidebar-maps"
+>Mapa</link
+> a la barra lateral dreta, mostra la ubicació de la imatge en un mapa i té caràcter merament informatiu. </para
+></listitem>
+
+        </orderedlist>
+    <para
+>Les quatre estan basades en el giny del &marble;. </para>
+
+    <note
+><para
+>Aquestes eines només funcionen per als formats d'imatge que tenen metadades EXIF o XMP implementades per la <ulink url="http://www.exiv2.org"
+>biblioteca Exiv2</ulink
+>. </para
+></note>
+
+    <sect1 id="tool-geolocationeditor"
+>  <title
+>Editor de la geolocalització</title>
+    
+        <para
+>L'editor de la geolocalització permet afegir i editar les coordenades GPS a les metadades de la fotografia. Les dades geogràfiques s'emmagatzemen a la imatge (etiquetes EXIF) i la ubicació es pot mostrar en un mapa de navegador extern. L'Editor de la geolocalització també ofereix una <firstterm
+>geocodificació inversa</firstterm
+>. </para>
+        <para
+>L'editor de geolocalització es pot obrir a través de l'entrada del menú <menuchoice
+><guimenu
+>Element</guimenu
+> <guimenuitem
+>Edita la geolocalització</guimenuitem
+></menuchoice
+> o prement <keycombo action="simul"
+>&Ctrl;&Maj;<keycap
+>G</keycap
+></keycombo
+>. Requereix que almenys se seleccioni una imatge o no s'obrirà. </para>
+        
+        <para>
+            <inlinemediaobject>
+                <imageobject
+><imagedata fileref="&path;tool-geolocation-editcoords.png" format="PNG"/></imageobject>
+            </inlinemediaobject>
+        </para>
+
+        <para
+>L'editor de la geolocalització proporciona les eines per a localitzar geogràficament les fotografies en el sistema de coordenades esfèriques comú (utilitzat per GPS/Galileu). Es poden editar altitud, latitud i longitud, velocitat, nombre de satèl·lits, tipus fix i DOP. </para>
+       
+        <para
+>L'editor té dos mètodes per a marcar les fotografies amb les coordenades: </para>
+        
+        <itemizedlist>
+            <listitem
+><para
+>Atribució de coordenades semiautomàtica a una sola fotografia, accessible a través de la pestanya <guilabel
+>Detalls</guilabel
+> de la barra lateral dreta. </para
+></listitem>
+            <listitem
+><para
+>La correlació per lots de les dades de seguiment GPS amb una sèrie d'imatges la trobareu a la pestanya <link linkend="geolocation-correlator"
+>Correlacionador del GPS</link
+>. </para
+></listitem>
+        </itemizedlist>
+        
+        <para
+>A més la barra lateral dreta, ofereix tres eines més: </para>
+        
+        <itemizedlist>
+            <listitem
+><para
+>La pestanya <guilabel
+>Desfer/refer</guilabel
+>. </para
+></listitem>
+            <listitem
+><para
+>La pestanya <guilabel
+>Geocodificació inversa</guilabel
+>, la qual permet trobar noms geogràfics (ciutats, noms de carrer...) mitjançant l'ús d'un servei públic de geocodificació inversa i les dades GPS d'una imatge. </para
+></listitem>
+            <listitem
+><para
+>La pestanya <guilabel
+>Cerca</guilabel
+>, la qual permet trobar posicions al mapa partint de noms geogràfics (ciutats, monuments...) mitjançant l'ús d'un servei públic de noms geogràfics (GeoNames i OpenStreetMap en el moment d'escriure això). </para
+></listitem>
+        </itemizedlist>
+    
+        <sect2 id="geolocation-map"
+>       <title
+>El mapa</title>
+            
+            <para
+>Per a navegar al mapa, consulteu el manual del &marble;, capítol 2. També per al menú contextual celeste vegeu la documentació del &marble;. </para>
+            
+            <para
+>Just a sota del mapa trobareu una fila de botons. Utilitzaré els consells d'eina com les designacions en la següent descripció. D'esquerra a dreta, tenim <itemizedlist>
+                    <listitem
+><para
+>El botó de configuració del mapa obre un petit menú que permet triar entre Google Maps i &marble;, segons aquesta elecció es triarà el tipus de mapa que voleu utilitzar. També podeu seleccionar la projecció del &marble; (esfèrica, Mercator, cilíndrica equidistant) i podeu fer mostrar algunes eines addicionals com la brúixola i l'escala del mapa. </para
+></listitem>
+                    <listitem
+><para
+>El botó apropa. </para
+></listitem>
+                    <listitem
+><para
+>El botó allunya. </para
+></listitem>
+                    <listitem
+><para
+>El botó que canvia entre marcadors i miniatures permet decidir si voleu que les posicions de les imatges siguin indicades per un símbol de marcat o per una miniatura en el mapa. Si trieu miniatures, els propers dos botons seran de particular interès. </para
+></listitem>
+                    <listitem
+><para
+>El botó «incrementa la mida de les miniatures al mapa», farà precisament això i... </para
+></listitem>
+                    <listitem
+><para
+>...el botó «disminueix la mida de les miniatures al mapa», també. </para
+></listitem>
+                    <listitem
+><para
+>El botó mode panoràmic permet moure el mapa fent clic amb el &BER; i mantenint-lo premut i arrossegant-lo després fins on calgui. El símbol del cursor canviarà a una mà. </para
+></listitem>
+                    <listitem>
+                        <para
+>El botó «zoom en un grup», és útil si teniu imatges tan properes una de l'altra en el mapa que resten ocultes en part. Una vegada feu clic a la imatge visible, el factor de zoom es podrà ajustar de manera que totes les altres imatges darrere seu es faran visibles. Si feu clic en un grup d'imatges i realment no passa res, llavors serà perquè tenen exactament la mateixa posició geogràfica i/o el factor de zoom ja es troba al seu màxim. </para>
+                        <para
+>Recordeu que el <quote
+>grup</quote
+> en aquest context no té res a veure amb les imatges agrupades com es descriuen en el capítol 2 del manual del &digikam-app;. Aquí, el terme es refereix a les imatges que estan molt a prop l'una de l'altra en el mapa (depenent del factor de zoom) o que tenen exactament la mateixa posició geogràfica. </para>
+                    </listitem>
+                    <listitem
+><para
+>El botó «selecciona les imatges», commuta la selecció d'una imatge o d'un grup d'imatges a la llista d'imatges just a sota dels botons una vegada que feu clic al mapa. L'estat de la selecció de totes les altres imatges de la llista es mantindrà sense canvis. Sigueu conscients del fet que hi ha un tipus de selecció en dues passes! Si feu clic en una miniatura o marcador al mapa, el fons de la/es imatge/s seleccionada/es a la llista d'imatges es convertirà en un blau clar. Si feu clic en la llista, el fons es convertirà en un blau més fosc i si hi ha més d'una imatge amb fons blau clar abans, les altres seran desseleccionades. Només en fer clic en una imatge a la llista, apareixerà la seva vista prèvia a la dreta de la llista. </para
+></listitem>
+                    <listitem
+><para
+>El botó «mostra les posicions marcades en el mapa», no està funcionant en el moment d'escriure això, perquè tot el tema dels punts d'interès ha de ser reorganitzat. Això també afecta l'element <menuchoice
+><guimenu
+>Punts d'interès</guimenu
+> <guimenuitem
+>Edita els punts d'interès...</guimenuitem
+></menuchoice
+> al menú contextual de la llista d'imatges a sota del mapa i l'element <guilabel
+>Afegeix un punt d'interès</guilabel
+> al menú contextual del mapa. </para
+></listitem>
+                </itemizedlist>
+                
+                <anchor id="bookmarkstatus.anchor"/>
+
+                <warning>
+                    <para
+>L'ús d'<guilabel
+>Afegeix un punt d'interès</guilabel
+> al menú contextual en el mapa pot conduir a la pèrdua dels vostres punts d'interès al &marble;! </para>
+                </warning>
+ 
+            </para>
+            
+            <para
+>Des del menú contextual al mapa només <guilabel
+>Copia les coordenades</guilabel
+> és d'interès per a l'etiquetatge geogràfic. Aquest copia les coordenades geogràfiques a la posició del cursor al porta-retalls. Per a tots els altres elements del menú, vegeu el manual del &marble;. </para>
+            
+            <para
+>Recordeu que podeu canviar la disposició d'un mapa a dos mapes, un al costat o damunt de l'altra a través del petit menú desplegable que hi ha a la part inferior de l'editor de geolocalització. </para>
+            
+        </sect2>
+
+        <sect2 id="geolocation-edit-coordinates"
+>       <title
+>Editar les coordenades</title>
+            <para
+>Les coordenades es poden establir manualment a la pestanya <guilabel
+>Detalls</guilabel
+> (mireu la captura de pantalla anterior). La ubicació es pot trobar i corregir de forma iterativa amb el mapa mostrat. Moveu el cursor del ratolí cap a la regió d'interès, apropeu-la, ajusteu la ubicació, feu zoom de nou, i així successivament fins que s'aconsegueixi una precisió suficient. Tingueu en compte que el centre del zoom restarà sempre a la posició del cursor. Finalment feu clic amb el &BDR; a la posició desitjada i escolliu <guilabel
+>Enganxa les coordenades</guilabel
+>. Ara podreu anar a la llista d'imatges a sota del mapa, seleccioneu una o més imatges, feu-hi amb el &BDR; i escolliu <guilabel
+>Enganxa les coordenades</guilabel
+>. Les coordenades es visualitzaran en els camps de latitud i longitud a la dreta del mapa. Per a desar els canvis, feu clic al botó <guilabel
+>Aplica</guilabel
+> just a sota del camp <guilabel
+>DOP</guilabel
+>. </para>
+            
+            <para
+>Si teniu una o més imatges que ja tenen les dades GPS, podeu copiar les coordenades d'una d'aquestes i enganxar-les en una o més imatges utilitzant els elements respectius del menú contextual de la llista d'imatges. Això és útil si hi ha una sèrie de fotografies preses en el mateix lloc. </para>
+            
+            <para
+>A la dreta del mapa, al costat de la latitud i longitud, hi ha els camps per a l'altitud, velocitat, nombre de satèl·lits, fixar el tipus i la incertesa (DOP). Podreu veure aquests camps ja omplerts si seleccioneu una fotografia on la càmera va escriure aquesta informació en les dades EXIF. Altrament els podreu emplenar manualment si teniu aquestes dades d'un altre lloc, &pex;, un receptor GPS per separat. Tingueu en compte que haureu de marcar la casella de selecció corresponent abans de poder editar un camp (sota el &Windows; potser haureu de fer-hi doble clic). Només per a <guilabel
+>Altitud</guilabel
+>, el menú contextual de la llista d'imatges ofereix <guilabel
+>Cerca els valors d'altitud que manquen</guilabel
+>, el qual fa que l'editor cerqui aquestes dades a les dades del mapa, atès que la posició (latitud i longitud) ja estan assignades a la fotografia. </para>
+            
+            <para
+>Per esborrar les dades de geolocalització, haureu de desmarcar la casella de selecció corresponent i fer clic al botó <guilabel
+>Aplica</guilabel
+> just a sota del camp <guilabel
+>DOP</guilabel
+>. A més del menú contextual de la llista d'imatges, aquest ofereix elements per eliminar algunes de les dades de la imatge. Com per a l'últim element <guilabel
+>Punts d'interès</guilabel
+>, mireu <link linkend="bookmarkstatus.anchor"
+>aquí</link
+>. </para>
+            
+        </sect2>
+
+        <sect2 id="geolocation-correlator"
+>       <title
+>El correlacionador</title>
+            <para
+>Per tal de correlacionar les vostres imatges amb les dades geogràfiques necessitareu tenir la informació de seguiment per GPS com un fitxer XML en format <literal
+>gpx</literal
+> (<application
+><ulink url="http://www.gpsbabel.org"
+>GPSBabel</ulink
+></application
+> i <application
+><ulink url="http://gpsman.sourceforge.net/"
+>gpsman</ulink
+></application
+> poden descarregar i convertir les dades de seguiment des d'un dispositiu GPS). La idea és: quan preneu les vostres imatges només cal mantenir encès un dispositiu GPS i portar-lo per tot arreu amb la càmera. Un cop hàgiu acabat, descarregueu les imatges i els trajectes GPS, i executeu el correlacionador. </para>
+
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-correlate1.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+
+            <para
+>Seleccioneu les imatges que voleu correlacionar a la vista principal de l'aplicació, a continuació, crideu l'editor de la geolocalització amb <menuchoice
+><shortcut
+><keycombo action="simul"
+>&Ctrl;&Maj;<keycap
+>G</keycap
+></keycombo
+></shortcut
+><guimenuitem
+> </guimenuitem
+></menuchoice
+> i canvieu a la pestanya <guilabel
+>Correlacionador GPS</guilabel
+> a la barra lateral dreta. Es mostrarà el diàleg anterior amb les imatges seleccionades a la llista a sota del mapa. Per indicar una possible hora/lloc de correlació haureu de carregar un fitxer de trajecte amb <guilabel
+>Carrega un fitxer GPX</guilabel
+> que contingui les dades preses pel GPS en el mateix moment i lloc que les fotografies. </para>
+
+            <para
+>Quan es carrega el fitxer i <guilabel
+>Mostra els trajectes en el mapa</guilabel
+> està marcada, el trajecte es mostrarà en el mapa. Podeu carregar més d'un fitxer i el &digikam; els assignarà diferents colors, i mostrarà els trajectes en el mapa en conseqüència. </para>
+
+            <para
+>Les dades del trajecte del GPS sempre es registren en UTC (temps universal coordinat), de manera que necessitareu que coincideixi l'hora de la càmera amb l'UTC, el qual es pot fer amb <guilabel
+>Zona horària de la càmera:</guilabel
+>. Seleccioneu <guilabel
+>La mateixa que el sistema</guilabel
+> si preneu les fotografies a la vostra zona horària local i el &digikam; s'adonarà de la diferència entre l'hora UTC i l'hora del sistema. Si vau prendre les fotografies en un altre lloc, haureu de marcar <guilabel
+>Manual:</guilabel
+> i escollir la diferència corresponent al camp desplegable a la dreta. També podeu utilitzar el mateix mecanisme per a corregir un mal ajust simple de l'hora de la càmera per qualsevol motiu o un desplaçament a un fitxer GPX a causa de les peculiaritats d'un programari utilitzat per a convertir trajectes des d'altres formats de fitxer de trajecte a GPX. Aquí entra en joc <guilabel
+>Desplaçament fi (mm:ss):</guilabel
+>, des d'on es poden afegir o restar fins a 59 minuts i 59 segons a la diferència de temps triada en el camp anterior. </para>
+
+            <para
+>L'opció <guilabel
+>Interval màx. de temps (seg.):</guilabel
+> especifica el límit dins del qual, l'hora del GPS i de la càmera es consideraran coincidents. El valor màxim és de 2.000 segons. Això vol dir que si no hi ha cap entrada al fitxer GPX que coincideixi exactament amb la marca de temps de la fotografia, la posició de l'entrada amb l'interval de temps més petit a la fotografia s'assignarà a ella, sempre que aquesta diferència de temps sigui més petita que l'opció <guilabel
+>Interval màx. de temps (seg.):</guilabel
+>. Si us pregunteu quin valor s'ha d'especificar aquí, el fet de donar una ullada a la configuració del dispositiu/programari d'enregistrament del trajecte o al fitxer GPX (el que és fàcilment possible amb un editor de text) podria ajudar. Aquesta decisió serà més important com més ràpid us estiguéssiu movent en prendre la/es fotografia/es. </para>
+
+            <para
+><guilabel
+>Interpola</guilabel
+>, ofereix una altra opció en cas que no hi hagi una correspondència exacta entre la marca de temps de la/es fotografia/es, una entrada al fitxer GPX i el temps que estigueu en moviment més o menys recte entre dues posicions GPS enregistrades, serà l'opció més precisa. Aquí es calcula la posició de la fotografia (interpolada lineal) a partir de les posicions de dues entrades properes al fitxer GPX i les respectives diferències en el temps. Si, per exemple, els intervals de temps entre les dues entrades més properes i la fotografia són iguals, la posició assignada estarà al punt central d'una línia recta entre les posicions de les dues entrades. </para>
+            
+            <para
+><guilabel
+>Interval màx. d'interpol. de temps (min):</guilabel
+> no té res a veure amb l'inspector Max de la Interpol ;-) En el seu lloc, determina si un punt GPS és elegible per a la interpolació. Si el seu temps està més lluny del temps de la imatge que aquest límit, no es podrà utilitzar. 240 minuts és la diferència de temps màxima que podreu introduir. </para>
+            
+            <para
+>Una vegada realitzada la vostra configuració, feu clic al botó <guilabel
+>Correlaciona</guilabel
+>. Si no hi ha cap coincidència, obtindreu el missatge «No s'ha pogut correlacionar cap imatge -comproveu que els paràmetres del desplaçament i l'interval siguin correctes-». Altrament obtindrà alguna cosa com «S'han correlacionat 2 de 4 imatges. Comproveu que els paràmetres del desplaçament i l'interval siguin correctes si penseu que s'haurien de correlacionar més imatges». En el millor dels casos s'obté «S'han correlacionat totes les imatges. Ara podeu comprovar la seva posició en el mapa». </para>
+            
+            <para
+>Si voleu seguir aquesta recomanació, és una bona idea canviar a la pestanya <guilabel
+>Detalls</guilabel
+> atès que allí tindreu una vista prèvia de les imatges que poden ajudar-vos molt a identificar-les en el mapa. Recordeu que sempre haureu de fer clic en una imatge a la llista sota el mapa per a fer que aparegui la seva vista prèvia. Una vegada esteu satisfet amb els resultats, feu clic al botó <guilabel
+>Aplica</guilabel
+> a la part inferior de l'editor de geolocalització per a desar els canvis al fitxer d'imatge i a la base de dades. </para>
+
+        </sect2>
+        
+        <sect2 id="geolocation-undo-redo"
+>       <title
+>Fer i desfer</title>
+            <para
+>A la pestanya <guilabel
+>Desfer/refer</guilabel
+> s'enregistra un historial sobre tots els canvis que s'apliquen a les imatges carregades a l'editor de la geolocalització. L'historial mostra els canvis realitzats en una sola pestanya o en diverses pestanyes i només s'eliminarà un cop sortiu de l'editor. Després d'unes poques accions en les diferents pestanyes, el registre podria tenir aquest aspecte: </para>
+            
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-undo1.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+                
+            <para
+>L'últim pas estarà ressaltat quan introduïu la pestanya. El primer pas sempre serà l'etiqueta <quote
+>buida</quote
+> i representa l'estat que tenien les imatges tenien quan es van carregar. Podeu fer clic a cada pas i, depenent de quin tipus de canvis es van fer, és possible veure com apareixen, desapareixen o es mouen les imatges en el mapa, o veure les diferències a la llista d'imatges sota el mapa. Recordeu que la llista es pot configurar fent clic amb el &BDR; a la capçalera. </para>
+            
+            <para
+>Ara suposem que arribeu a la conclusió que el moviment en l'últim pas estava malament. Simplement feu clic al pas anterior (Detalls canviat), aneu a la pestanya <guilabel
+>Cerca</guilabel
+> (descrit més endavant) i feu un altre moviment. Després torneu a la pestanya <guilabel
+>Desfer/refer</guilabel
+>, la qual podria tenir aquest aspecte: </para>
+            
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-undo2.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+        </sect2>
+        
+        <sect2 id="geolocation-reverse-geocoding"
+>       <title
+>Geocodificació inversa</title>
+            <para
+>En aquesta pestanya podreu utilitzar un servei públic de nom geogràfic per a cercar detalls de l'adreça de la posició geogràfica d'una o més imatges, i convertir-les dins de les etiquetes. Per tal de fer-ho, necessitareu alguns preparatius. Haureu d'estar familiaritzat amb la idea de les etiquetes i com crear, editar i utilitzar-les. La millor entrada en aquest tema es troba a la secció La vista Etiquetes del capítol 2 al manual del &digikam-app;. </para>
+            <para
+>En primer lloc haureu de crear una etiqueta arrel al Gestor d'etiquetes o a l'arbre d'etiquetes de la barra lateral esquerra o dreta. La podríeu anomenar Ubicació o Llocs... </para>
+            <para
+>A continuació, seleccioneu la/es imatge/s que voleu etiquetar (necessiten tenir assignades les dades del GPS), obriu l'editor de la geolocalització i feu clic a la pestanya <guilabel
+>Geocodificació inversa</guilabel
+>. Veureu el seu arbre d'etiquetes i si feu clic amb el &BDR; sobre una etiqueta, preferiblement la que heu creat per a les etiquetes de geo, veureu aquest menú contextual: </para>
+            
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-reverse1.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+
+            <para
+>A la secció principal es poden afegir etiquetes, ordenades de regió (país) més gran fins al (nombre de casa) més petit. Si trieu <guilabel
+>Afegeix tots els elements de l'adreça</guilabel
+> i després desplegueu l'etiqueta d'ubicació i totes les subetiquetes tindran el següent: </para>
+
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-reverse2.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+
+            <para
+>Aquestes etiquetes vermelles entre claudàtors s'anomenen etiquetes de control. Determinen quins elements de l'adreça voleu que el servei de geolocalització inversa reverteixi a la part superior sota <guilabel
+>Seleccioneu un servei</guilabel
+>. Encara podreu eliminar-ne algunes amb l'ajuda del menú contextual, si trobeu que no les necessiteu o modificar l'estructura suprimint algunes etiquetes de control i afegint-les a altres llocs de l'arbre, o fins i tot construir un arbre paral·lel nou al primer, afegint una etiqueta de control a l'etiqueta arrel (aquí: Lloc). Arranjar les etiquetes de control en el mateix nivell en comptes d'una estructura en arbre pot estalviar una gran quantitat d'etiquetes redundants per a la mateixa ciutat o que aquesta existeixi en més d'un estat o país, deixeu només els noms dels carrers. No obstant això, podeu fer que tota la branca de la ubicació de l'arbre d'etiquetes sigui força llarg i per tant, incalculable. Això vol dir que haureu de trobar la vostra pròpia solució a aquest problema, en funció de les vostres necessitats, potser una barreja, i com més aviat ho esbrineu, menys treball invertireu en l'edició del vostre arbre d'etiquetes i les etiquetes de control. </para>
+            <para
+>Suposarem que utilitzeu les etiquetes de control com es mostra a la captura de pantalla anterior, seleccioneu les imatges que voleu etiquetar de la llista d'imatges a l'esquerra i feu clic a <guilabel
+>Aplica la geocodificació inversa</guilabel
+>. Llavors l'arbre d'etiquetes pot tenir un aspecte similar a aquest: </para>
+ 
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="&path;tool-geolocation-reverse3.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+            
+            <para
+>Les etiquetes verdes representen el resultat de la cerca del servei públic de geocodificació inversa seleccionat i que ja han estat assignades a la/es imatge/s. Per a desar aquestes etiquetes al fitxer d'imatge i a la base de dades del &digikam;, feu clic a <guilabel
+>Aplica</guilabel
+>. Les etiquetes apareixeran com a etiquetes regulars en el vostre arbre d'etiquetes, les quals ja es poden veure aquí o a l'arbre d'etiquetes de la barra lateral esquerra o dreta. Per descomptat, encara les podreu editar com qualsevol altra etiqueta al gestor d'etiquetes o a la barra lateral esquerra o dreta, però no aquí, al gestor de la geolocalització. </para>
+
+        </sect2>
+        
+        <sect2 id="geolocation-search"
+>       <title
+>Cerca</title>
+            <para
+>A la pestanya <guilabel
+>Cerca</guilabel
+> podreu cercar llocs pels seus noms geogràfics utilitzant els serveis públics de noms geogràfics (GeoNames i OpenStreetMap en el moment d'escriure). Només cal escriure un nom d'un lloc (ciutat, monument, hotel...) al camp d'entrada a la part superior i feu clic a <guilabel
+>Cerca</guilabel
+>. A la llista de resultats que hi ha a sota obtindreu alguna cosa com això: </para>
+            
+            <para>
+                <inlinemediaobject>
+                    <imageobject
+><imagedata fileref="tool-geolocation-search.png" format="PNG"/></imageobject>
+                </inlinemediaobject>
+            </para>
+            
+            <para
+>Òbviament, París no només existeix a França. Així que si esteu cercant la capital de França, podreu desplaçar-vos per la llista fins a trobar una entrada a la que sens dubte hi pertanyi com «Arc de Triomf», i feu clic o especifiqueu una cerca una mica més precisa com «París, Arc de Triomf» o «París, França». Una vegada feu clic en una entrada a la llista, el mapa se centrarà en aquest lloc i ara podreu apropar amb el botó de zoom (segon des de l'esquerra, a sota del mapa). Utilitzant aquest exemple amb GeoNames, us adonareu que així i tot, encara s'obtenen una gran quantitat de resultats, fins i tot, dos etiquetats únicament amb «Arc de triomf», el segon, un carrer a uns quants centenars de metres de distància de l'arc. Amb OSM s'obté un sol resultat. Haureu de jugar una mica amb els diferents serveis en diferents regions, amb termes de cerca més o menys precisos i després obtindreu una idea sobre com millorar les vostres cerques. </para>
+            <para
+>Per als botons de la dreta, just a sobre de la llista de resultats es refereixen als seus consells d'eina! El menú contextual de les entrades del resultat ofereix </para>
+            
+            <itemizedlist>
+                <listitem
+><para
+><guilabel
+>Copia les coordenades</guilabel
+>, les podeu enganxar més tard a una o més imatges de la llista d'imatges a sota del mapa</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Mou les imatges seleccionades a aquesta posició</guilabel
+>, el qual és bàsicament el mateix, però més senzill sempre que tingueu les imatges ja carregades a l'editor de la geolocalització</para
+></listitem>
+                <listitem
+><para
+><guilabel
+>Elimina de la llista de resultats</guilabel
+>, la qual és especialment útil en conjunció amb el botó manté els resultats de les cerques antigues... que hi ha a sobre de la llista de resultats.</para
+></listitem>
+            </itemizedlist>
+
+        </sect2>
+    </sect1>
+</chapter>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

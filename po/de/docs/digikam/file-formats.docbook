@@ -1,0 +1,294 @@
+ <sect1 id="using-fileformatsupport"
+>  <title
+>Unterstützte Dateiformate</title>
+
+        <para
+>&digikam; benötigt eine Anzahl von Bibliotheken und anderer Pakete um Bildformate zu lesen und zu schreiben. Die zur Verfügung stehenden Formate hängen daher von Ihrem System und, in einigen Fällen, von der Art wie diese Bibliotheken compiliert wurden ab. In den meisten Distributionen werden Sie eine große Anzahl von Bildformaten mit &digikam; bearbeiten können. </para>
+
+        <para
+>Aufgrund dieser Abhängigkeit von anderen Bibliotheken ist es unmöglich an dieser Stelle eine Liste aller auf ihrem System verfügbaren Dateiformate zu geben. Sie werden aber immer JPEG und TIFF darunter finden. </para>
+
+        <para
+>&digikam; zeigt nur Dateien in Formaten an die kennt. Dies geschieht anhand der Dateierweiterung und einem Vergleich dieser mit einer vordefinierten Liste. Falls die Erweiterung in der Liste aufgeführt ist, wird &digikam; die Datei in der Bildbearbeitung anzeigen. Sie können diese Liste der Dateierweiterungen die &digikam; akzeptiert ändern. Im Abschnitt <link linkend="using-setup"
+>Konfiguration</link
+> finden Sie weitere Informationen hierzu. </para>
+
+        <sect2
+>        <title
+>Fotoformate</title>
+
+            <sect3
+>            <title
+>Einführung</title>
+
+                <para
+>Nahezu alle Digitalkameras speichern Fotos in einem von zwei Formaten: JPEG oder TIFF. Einige Kameras erlauben es Ihnen sogar das zu benutzende Format auszuwählen. Eine ausführlichere Beschreibung dieser Dateiformate können Sie in der <ulink url="http://de.wikipedia.org/wiki/Liste_der_Dateiformate"
+>Wikipedia</ulink
+>finden. &digikam; unterstützt beide Formate. </para>
+
+            </sect3>
+
+            <sect3
+>            <title
+>Bildkompression</title>
+
+                <para
+>Bildkompression ist die Anwendung von Datenkompressionsverfahren auf digitale Bilder. Dabei werden redundante Informationen reduziert, um auf diese Weise die Bilddaten auf eine effizientere Art zu speichern. </para>
+
+                <para
+>Bildkomprimierung kann verlustbehaftet oder verlustfrei arbeiten. Verlustfreie Komprimierung sollte grundsätzlich bevorzugt werden, da sie sämtliche Informationen erhält, bevor Transformationen, wie z.B. Zuschneiden, Größenänderungen, Farbkorrekturen usw. durchgeführt werden. Verlustbehaftete Methoden erzeugen, speziell bei niedrigen Bitraten, Komprimierungsartefakte. Verlustbehaftete Methoden eignen sich für natürliche Bilder wie z.B. Fotos in Anwendungen wo eine Verringerung der Qualität zugunsten einer wesentlichen Reduktion der Bildgröße akzeptabel ist. Verlustbehaftete Komprimierung eignet sich z.B. hervorragend für das veröffentlichen von Bildern im Internet. </para>
+
+            </sect3>
+
+            <sect3
+>            <title
+>JPEG</title>
+                <para
+>JPEG ist ein komprimierendes Format das eine kleine Verschlechterung der Bildqualität hinnimmt um die Dateigröße klein zu halten. Die meisten Kameras speichern Ihre Bilder in diesem Format bis Sie ein anderes Format auswählen. JPEG Bilder werden mit einer Verlust behafteten Kompression gespeichert bei der Sie die Stärke der Kompression angeben können. Dadurch können Sie zwischen einer niedrigen Kompression mit einer hohen Bildqualität und einer großen Kompression mit schlechter Qualität wählen. Der einzige Grund für eine starke Kompression ist das Sie kleiner Dateien erzeugt und Sie auf diese Art mehr Bilder speichern, sie leichter per E-Mail versenden oder ins Web veröffentlichen können. Die meisten Kameras stellen Ihnen drei Stufen, wie z.B, gut, besser, am besten zur Verfügung wobei die Namen variieren können. </para>
+		<para
+>JPEG 2000 wird ebenfalls unterstützt. Im allgemeinen gibt es bessere, glattere Ergebnisse als JPEG bei demselben Kompressionsverhältnis. Die 2000er Version kann auch verlustfrei speichern, wenn dies in den Einstellungen angegeben ist. </para>
+
+            </sect3>
+
+            <sect3
+>            <title
+>TIFF</title>
+                <para
+>TIFF ist ein weit verbreitetes und unterstütztes Bildformat. Im allgemeinen wird TIFF in der Kamera unkomprimiert oder mit einer verlustfreien Kompression (Adobe Deflate) gespeichert. Es behält einen höhere Bildqualität zu den Kosten einer viel größeren Dateigröße. Einige Kameras erlauben es Ihnen Ihre Bilder in diesem Format zu speichern und es ist sehr beliebt da es eine verlustfreie Kompression bietet. Das Problem dieses Formats ist es das es von so vielen Leuten angepasst wurde, das es mehr als 50 Ausrichtungen von ihm gibt, die natürlich nicht alle von allen Programmen unterstützt werden. </para>
+
+            </sect3>
+
+            <sect3
+>            <title
+>PNG</title>
+                <para
+>PNG ist ein Dateiformat das als Ersatz für eine Anzahl von älteren Formaten aus den 1990ern entwickelt wurde. Es ist wie TIFF verlustfrei, aber wesentlich kompakter und spart daher Plattenplatz. Auch wenn Kameras PNG höchstwahrscheinlich nicht unterstützen konvertieren einige Leute Ihre Fotos in dieses Format sobald sie sie auf dem Computer gespeichert haben. Im Gegensatz zu JPEG verschlechtert sich bei PNG-Bildern nicht jedesmal die Qualität, wenn Sie nach eine Änderung neu kodiert werden müssen. &digikam; unterstützt PNG-Bilder und das Stapel-Bilderkonvertierungsmodul kann einen ganzen Stapel von Bildern in einem unterstützten Format nach PNG in einem Schritt konvertieren. Im Abschnitt <link linkend="using-setup"
+>Konfiguration</link
+> können Sie weitere Informationen zur Benutzung von Modulen mit &digikam; nachlesen. </para>
+
+                <para
+>PNG ist ein erweiterbares Format für eine verlustfreie, portable und gut komprimierte Speicherung von Rasterbildern. PNG stellt einen patentfreien Ersatz für &GIF; zur Verfügung und kann in vielen Fällen sogar TIFF ersetzen. PNG wurde erschaffen um gut in Online Betrachtern, wie z.B. das World Wide Web, zu funktionieren. Es ist daher daher als Datenstrom betrachtbar mit einer fortschreitenden Anzeigeoption. PNG kann darüber hinaus Gamma und Farbwertdaten für eine verbesserte Farbwiedergabe auf heterogenen Plattformen speichern. PNG unterstützt die Farbtiefen 8 und 16 Bit. Es ist das perfekte Dateiformat um Fotos zu archivieren. Weitere Informationen über das PNG Format finden Sie auf der<ulink url="http://www.libpng.org/pub/png/"
+>PNG Homepage</ulink
+> in englisch. </para>
+
+            </sect3>
+
+            <sect3
+>            <title
+>PGF</title>
+	       <para
+><quote
+>Progressive Graphics File</quote
+> ist ein weiteres weniger bekanntes, aber offenes Grafikformat. Es basiert auf diskreten Wavelet-Transformation und erlaubt verlustfreie und verlustbehaftete Komprimierung. Es ist mit JPEG 2000 vergleichbar, wurde aber mehr für bessere Geschwindigkeit bei der Komprimierung und Dekomprimierung als für den Komprimierungsgrad entwickelt. Bei gleicher Dateigröße sieht eine PGF-Bild um einiges besser aus als ein JPG-Bild und ist dabei gut bei der progressiven Anzeige. Daher ist es gut für das Web geeignet, wird aber leider nur von wenigen Browsern unterstützt. Weitere Informationen über das PGF-Format finden Sie auf der <ulink url="http://www.libpgf.org/"
+>libPGF-Webseite</ulink
+>. </para
+> 
+
+            </sect3>
+
+            <sect3
+>            <title
+>Roh</title>
+
+                <para
+>Einige, typischerweise teure, Kameras erlauben es die Bilder im Rohformat zu speichern. Das Rohformat ist kein Standardbildformat. Jeder Kamerahersteller hat sein eigenes Format. Rohformatbilder enthalten alle Daten die der Bildsensor der Kamera eingelesen hat, bevor Sie durch Software, wie z.B.Weißbalance, Schärfen &etc; verändert wurden. Das Abspeichern der Fotos in diesem Format erlaubt es Ihnen diese Einstellungen selbst vorzunehmen. Die meisten professionellen Fotografen benutzen das Rohformat, da sie hier über die größte Flexibilität verfügen. Der Nachteil ist, dass die Dateien sehr groß werden.  </para>
+
+                <para
+>Falls Sie mehr über das Rohbildformat erfahren wollen, so können Sie unter <ulink url="http://en.wikipedia.org/wiki/RAW_image_format"
+>Wikipedia</ulink
+>, <ulink url="http://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml"
+>The Luminous Landscape</ulink
+> und <ulink url="http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm"
+>Cambridge in Colour</ulink
+> sehr hilfreiche Anleitungen auf Englisch lesen. Sie können Rohformat-Bilder mit dem <ulink url="help:/kipi-plugins/rawconverter.html"
+>Rohbildkonverter</ulink
+> von &digikam; in JPEG oder TIFF konvertieren. Im Abschnitt <link linkend="using-setup"
+>Konfiguration</link
+> finden Sie weitere Informationen über die Benutzung von Modulen mit &digikam;. </para>
+
+                <para
+>&digikam; unterstützt das Laden von Rohbildern nur mit dem Programm <ulink url="http://www.cybercom.net/~dcoffin/dcraw/"
+>dcraw</ulink
+>, welches in &digikam; enthalten ist. Hiermit werden mehr als 200 Rohdateiformate unterstützt. Alle unterstützen Kameras können Sie unten auf der Web-Seite von <ulink url="http://www.cybercom.net/~dcoffin/dcraw"
+>Dave Coffin</ulink
+> sehen. Die Tabelle unten zeigt eine kurze Liste von Rohformaten die von &digikam; unterstützt werden: <informaltable
+><tgroup cols="2">
+
+                    <thead
+><row>
+                    <entry
+>Rohdateiformat</entry>
+                    <entry
+>Beschreibung</entry>
+                    </row
+></thead>
+                    <tbody>
+                        <row
+><entry
+>CRW, CR2 </entry
+><entry
+>Rohformate für Canon Digitalkameras </entry
+></row>
+
+                        <!-- ************************ -->
+                        <row
+><entry
+>NEF </entry
+><entry
+>Rohformat für Nikon Digitalkameras </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>ORF </entry
+><entry
+>Rohformat für Olympus Digitalkameras </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>RAF </entry
+><entry
+>Rohformat für Fuji Digitalkameras </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>RWL </entry
+><entry
+>Rohformat für Leica-Digitalkameras </entry
+></row>
+
+                         <!-- ************************ -->
+
+                        <row
+><entry
+>PEF, PTX </entry
+><entry
+>Rohformat für Pentax Digitalkameras </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>X3F </entry
+><entry
+>Rohformat für Sigma Digitalkameras </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>DCR, KDC, DC2, K25 </entry
+><entry
+>Rohformate für Kodak Digitalkameras </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>SRF, ARW, MRW, MDC </entry
+><entry
+>Rohformat für Sony/Minolta Digitalkameras </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>Roh </entry
+><entry
+>Rohformat für Panasonic, Casio und Leica Digitalkameras </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>DNG (CS1, HDR) </entry
+><entry
+>Rohformat von Adobe (Digital Negative) </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>BAY </entry
+><entry
+>Rohformat von Casio (Bayer) </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>ERF </entry
+><entry
+>Rohformat für Epson Digitalkameras </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>FFF </entry
+><entry
+>Rohformat von Imacon/Hasselblad </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>MOS </entry
+><entry
+>CREO Fotorohformat </entry
+></row>
+
+                        <!-- ************************ -->
+                        <row
+><entry
+>PXN </entry
+><entry
+>Rohformat von Fotoman </entry
+></row>
+
+                        <!-- ************************ -->
+                        <row
+><entry
+>RDC </entry
+><entry
+>Rohformat von Ricoh </entry
+></row>
+
+
+                    </tbody>
+
+                </tgroup
+></informaltable>
+
+                </para>
+
+            </sect3>
+
+        </sect2>
+
+        <sect2
+>        <title
+>Filmformate (Videos)</title>
+
+        <para
+>Viele Digitalkameras unterstützen die Aufnahme kurzer Filme. Diese Clips werden häufig im AVI- oder MPEG-Format gespeichert. &digikam; versteht diese Formate und wird Vorschauen für die Filme generieren. &digikam; ist aber kein Filmbearbeitungsprogramm und verfügt daher über keine eingebauten Möglichkeiten Filme anzuzeigen oder zu bearbeiten. Wenn Sie auf eine Filmdatei klicken wird &digikam; die &kde;-Einstellungen zur Wiedergabe von Filmen nutzen um das Programm zur Wiedergabe zu starten. </para>
+        </sect2>
+
+    </sect1>

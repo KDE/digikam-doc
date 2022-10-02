@@ -1,0 +1,497 @@
+ <sect1 id="photographic-editing"
+>   <title
+>Procedura per il fotoritocco -</title>
+
+   <sect2 id="image-editing-tools"
+>             <title
+>Strumenti di fotoritocco ed elaborazione</title>
+    <sect3 id="standard-workflow"
+>              <title
+>Una proposta per una procedura standard</title>
+      <para
+>Quando si effettua una procedura di base, le aree primarie da considerare sono: <orderedlist
+><listitem
+><para
+>Esposizione: <link linkend="whitebalance"
+>Bilanciamento del bianco</link
+></para
+></listitem
+> <listitem
+><para
+>Colore: <link linkend="whitebalance"
+>Bilanciamento del bianco</link
+></para
+></listitem
+> <listitem
+><para
+>Punti bianco e nero: <link linkend="whitebalance"
+>Bilanciamento del bianco</link
+> o <link linkend="adjustlevels"
+>Regolazione dei livelli</link
+></para
+></listitem
+> <listitem
+><para
+>Contrasto: <link linkend="adjustcurves"
+>Regolazione delle curve</link
+></para
+></listitem
+> <listitem
+><para
+>Saturazione: <link linkend="whitebalance"
+>Bilanciamento del bianco</link
+> o <link linkend="coloreffects"
+>Vivid</link
+> o <link linkend="using-correctingcolor"
+>Tonalità/Saturazione/Luminosità</link
+></para
+></listitem
+> <listitem
+><para
+>Ridimensionamento (interpolazione): <link linkend="resize"
+>Cambiamento di dimensioni</link
+></para
+></listitem
+> <listitem
+><para
+><link linkend="sharpening"
+>Aumento della nitidezza</link
+></para
+></listitem
+> <listitem
+><para
+><ulink url="help:/digikam/inedex.html#dam"
+>Gestione degli attivi digitali</ulink
+> (applicare tag, didascalie, voti, geolocalizzazione, salvare sotto nuovo nome)</para
+></listitem
+> </orderedlist
+> Raccomandiamo questa sequenza di passi per la modifica delle immagini per assicurare l'ottima qualità del prodotto finale. In particolare, mai aumentare la nitidezza prima dell'ultimo passo. Raccomandiamo anche di usare un formato senza perdita come PNG o TIFF per salvare le fotografie, altrimenti ne perderai un po' ogni volta che salverai i risultati. Se puoi permettertelo, usa 16 bit per canale per le tue fotografie: Se vuoi cambiare lo spazio dei colori, in particolare se vuoi lavorare in CIEL*a*b, sono richiesti 16 bit per canale per evitare gli effetti del troncamento. </para>
+        <para
+>Se scambi i passi 4 e 5, che è perfettamente possibile se il contrasto iniziale è già molto buono, puoi fare le prime quattro regolazioni nella stessa estensione, il Bilanciamento del bianco.</para>
+        <para
+>Molti degli strumenti di cui potresti aver bisogno sono inclusi con &digikam;. Segue la loro descrizione. </para>
+    </sect3>
+
+    <sect3
+>      <title
+>Introduzione alle funzionalità dei comuni strumenti di modifica</title>
+      <para
+>Tutti gli strumenti dell'editor di immagini come quelli per l'aumento della nitidezza, la sfocatura, la riduzione dei disturbi, la rimessa a fuoco, la maschera di contrasto, eccetera usano uno stile di finestra comune che mostra l'anteprima dell'effetto prima di applicare il filtro all'immagine attuale. Sotto vedi lo strumento &quot;Applica trama&quot; in azione usando questo schema comune di finestra: </para>
+
+      <example>
+        <title
+>Lo strumento Applica trama in azione</title>
+        <screenshot>
+          <screeninfo
+>Lo strumento Applica trama in azione</screeninfo>
+          <mediaobject>
+            <imageobject>
+              <imagedata fileref="&path;editorcommondialogtools.png" format="PNG"/>
+            </imageobject>
+          </mediaobject>
+        </screenshot>
+      </example>
+
+      <para>
+        <itemizedlist>
+          <listitem>
+            <para
+><emphasis
+>(1)</emphasis
+>: i sette pulsanti in alto a sinistra selezionano lo stile di modalità di confronto dell'area di anteprima. Le modalità sono: <itemizedlist>
+                <listitem
+>         <para
+>Immagine originale</para
+>             </listitem>
+                <listitem>
+                  <para
+>Separa verticalmente senza duplicato. L'area a sinistra mostra l'originale mentre quella a destra mostra il filtro applicato alla continuazione dell'ingrandimento selezionato.</para>
+                </listitem>
+                <listitem>
+                  <para
+>Separa orizzontalmente senza duplicato. L'area in alto mostra l'originale mentre quella in basso mostra il filtro applicato alla continuazione dell'ingrandimento selezionato.</para>
+                </listitem>
+                <listitem>
+                  <para
+>Separa verticalmente. L'area a sinistra mostra l'originale e quella a destra l'effetto del filtro per il confronto.</para>
+                </listitem>
+                <listitem>
+                  <para
+>Separa orizzontalmente. L'area in alto mostra l'originale e quella in basso l'effetto del filtro per il confronto.</para>
+                </listitem>
+                <listitem>
+                  <para
+>Anteprima dell'effetto. Questa è un'anteprima in diretta senza confronto.</para>
+                </listitem>
+                <listitem>
+                  <para
+>Stile «passaggio del mouse»: anteprima quando il mouse è fuori dall'anteprima (nell'area delle impostazioni), altrimenti mostra l'originale.</para>
+                </listitem>
+              </itemizedlist>
+            </para>
+          </listitem>
+          <listitem>
+            <para
+><emphasis
+>(2)</emphasis
+>: ci sono due pulsanti che possono essere attivati per indicare la sovra- o la sottoesposizione. I colori possono essere personalizzati nella <link linkend="setupdialog.anchor"
+>pagina di configurazione generale</link
+>.</para>
+          </listitem>
+          <listitem>
+            <para
+><emphasis
+>(3)</emphasis
+>: il riquadro di selezione dell'anteprima. Fai clic e trascina con il mouse il riquadro mobile per spostarlo nell'immagine. L'area di anteprima a sinistra della finestra verrà aggiornata corrispondentemente.</para>
+          </listitem>
+          <listitem>
+            <para
+><emphasis
+>(4)</emphasis
+>: l'area delle impostazioni del filtro o dell'estensione.</para>
+          </listitem>
+          <listitem>
+            <para
+><emphasis
+>(5)</emphasis
+>: nell'angolo in basso a sinistra: c'è un pulsante di aiuto e uno per reimpostare ai valori predefiniti (tutte le impostazioni vengono ricordate dall'ultimo uso dell'estensione).</para>
+          </listitem>
+          <listitem>
+            <para
+><emphasis
+>(6)</emphasis
+>: c'è un indicatore di avanzamento per le estensioni con calcoli complicati.</para>
+          </listitem>
+        </itemizedlist>
+
+      </para>
+    </sect3>
+
+    <sect3
+>      <title
+>Gli strumenti di &digikam;</title>
+     <itemizedlist>
+
+   <listitem
+><para
+>Colore dell'immagine <itemizedlist>
+      <listitem
+><para
+><link linkend="auto-correction"
+>Correzione automatica</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="exposure-correct"
+>Luminosità, contrasto, gamma</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="using-correctingcolor"
+>Tonalità/saturazione/luminosità</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="colorbalancetool.anchor"
+>Bilanciamento dei colori</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="blackandwhite-conversion"
+>Bianco e nero</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="encoding-depth"
+>Profondità di codifica</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="color-management"
+>Gestione dei colori</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="adjustlevels"
+>Regolazione dei livelli</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="coloreffects"
+>Effetti di colore (solarizzazione, Vivid, neon, bordo)</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="whitebalance"
+>Bilanciamento del bianco, esposizione, saturazione</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="adjustcurves"
+>Regolazione delle curve</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="channelmixer"
+>Mixer dei canali</link
+></para
+></listitem>
+      </itemizedlist>
+   </para
+></listitem>
+
+   <listitem
+><para
+>Miglioramento delle immagini <itemizedlist>
+      <listitem
+><para
+><link linkend="sharpening"
+>Nitidezza (aumento della nitidezza, maschera di contrasto, rimessa a fuoco)</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="using-blurfilter"
+>Strumento di sfocatura</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="using-redeyecorrection"
+>Rimozione degli occhi rossi</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="inpainting"
+>Reintegrazione fotografica</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="noisereduction"
+>Riduzione dei disturbi e sfocatura</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="hotpixels"
+>Correzione dei pixel bruciati</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="lensdistortion"
+>Correzione della distorsione lenticolare</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="restoration"
+>Restauro fotografico</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="vignettingcorrection"
+>Strumento per la correzione della vignettatura</link
+></para
+></listitem>
+      </itemizedlist>
+   </para
+></listitem>
+
+   <listitem
+><para
+>Strumenti di trasformazione delle immagini <itemizedlist>
+      <listitem
+><para
+><link linkend="resize"
+>Cambia dimensioni (riduzione ed espansione)</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="freerotation"
+>Rotazione libera</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="perspective"
+>Regolazione della prospettiva</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="sheartool"
+>Strumento di distorsione</link
+></para
+></listitem>
+      </itemizedlist>
+   </para
+></listitem>
+
+   <listitem
+><para
+>Decorazione delle immagini <itemizedlist>
+      <listitem
+><para
+><link linkend="border"
+>Aggiungi bordo</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="inserttext"
+>Inserisci testo</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="superimpose"
+>Sovrapposizione di modelli</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="texture"
+>Applicazione di trame</link
+></para
+></listitem>
+      </itemizedlist>
+   </para
+></listitem>
+
+   <listitem
+><para
+>Filtri per effetti speciali <itemizedlist>
+      <listitem
+><para
+><link linkend="infrared"
+>Simulazione della pellicola infrarossa</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="filmgrain"
+>Aggiunta di grana della pellicola</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="oilpaint"
+>Simulazione della pittura a olio</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="charcoal"
+>Simulazione del disegno a carboncino</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="emboss"
+>Metti in rilievo la fotografia</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="distortionfx"
+>Effetti di distorsione</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="blurfx"
+>Effetti di sfocatura</link
+></para
+></listitem>
+      <listitem
+><para
+><link linkend="raindrops"
+>Aggiungi gocce di pioggia</link
+></para
+></listitem>
+      </itemizedlist>
+   </para
+></listitem>
+
+   </itemizedlist>
+     </sect3>
+
+   </sect2>
+
+            <sect2 id="raw-workflow"
+>  <title
+>Elaborazione dei file di immagini grezze, procedura grezza</title>
+            <anchor id="rawprocessing.anchor"/>
+
+             <para
+>Una procedura tipica con &digikam; potrebbe seguire questi passi:</para>
+             <itemizedlist>
+               <listitem
+><para
+>Configurare la conversione grezza e le preferenze di gestione dei colori <itemizedlist>
+                  <listitem
+><para
+>Ottenere i profili di colore ICC per la macchina fotografica, il visore e la stampante</para
+></listitem>
+                  <listitem
+><para
+>Configurare &digikam; correttamente definendo uno spazio dei colori di lavoro </para
+></listitem>
+                 </itemizedlist>
+               </para
+></listitem>
+               <listitem
+><para
+>Impostazione del punto bianco della macchina fotografica</para
+></listitem>
+               <listitem
+><para
+>Demosaicizzazione (include l'interpolazione, il filtraggio dei disturbi e la correzione dell'<ulink url="help:/digikam/using-setup.html#CA.anchor"
+>aberrazione cromatica).</ulink
+> </para
+></listitem>
+               <listitem
+><para
+>Conversione a uno spazio dei colori</para
+> </listitem>
+               <listitem
+><para
+>Correzione gamma, mappatura dei toni</para
+> </listitem>
+               <listitem
+><para
+>Assegnazione del profilo di colore</para
+> </listitem>
+               <listitem
+><para
+>Espansione a intervallo dinamico (opzionale)</para
+></listitem>
+               <listitem
+><para
+>Continua con la <link linkend="standard-workflow"
+>procedura standard</link
+></para
+></listitem>
+             </itemizedlist>
+
+             <para
+>Da lì è tutto semplice, seleziona un'immagine grezza e aprila nell'editor. L'oggetto di gestione dei colori sarà visualizzato dopo che l'immagine sarà stata elaborata per regolare la resa dei colori. Senza la gestione dei colori tutte le immagini sono molto scure, questo è normale. Puoi sperimentare i vari profili che hai per selezionare il miglior profilo di input per l'immagine (alcuni tendono a essere molto neutrali, anche un po' uggiosi, altri danno risultati più saturi, eccetera). </para>
+            </sect2>
+&doc-editor-color; &doc-editor-enhance; &doc-editor-transform; &doc-editor-decorate; &doc-editor-filters; </sect1>
+

@@ -1,0 +1,197 @@
+<sect2 id="using-setup-cm">
+    <title
+>Einstellungen zur Farbverwaltung</title>
+
+    <para
+>&digikam; kann die Farben Ihrer Bilder verwalten. In Rohdateien gibt es überhaupt keine Farbverwaltung. Ihre Kamera stellt die Daten in einem Rohformat zur Verfügung wie sie diese eingefangen hat und lässt Sie die gesamte Verarbeitung durchführen. Jede Kamera geht anders mit den eingefangenen Farbinformationen um. Sie müssen daher ein spezielles Profil auf die Bilder, die Sie verarbeiten wollen, anwenden. In dem Abschnitt <link linkend="using-iccprofile"
+>ICC Farbprofilverwaltung</link
+> finden Sie weiter Details und Erklärungen. </para>
+
+    <para
+>Ein Profil <quote
+>übersetzt</quote
+> die Farbinformationen und gibt Anweisungen wie diese wieder gegeben werden sollten. Es gibt auch LCMS und &digikam; Informationen wie die Farbinformationen von einem Farbraum in den anderen zu übersetzen sind damit die Farben so genau wie möglich sind. </para>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-cm-behavior.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+    <para
+><guilabel
+>Verhalten</guilabel
+>Fragen, wenn ein Bild in der Bildbearbeitung geöffnet wird / Farbverwaltungsmodul mit Rohdateien starten. </para>
+
+    <para
+><guilabel
+>Farbprofil-Ordner</guilabel
+> Geben Sie hier den Ordner an, wie z. B. <quote
+>/usr/share/color/icc</quote
+> oder <quote
+>/home/user/.color/icc</quote
+>, in dem Sie alle Ihre Profile speichern. &digikam; durchsucht diese Ordner dann während des Starts. </para>
+
+    <para
+><guilabel
+>Einstellungen der ICC-Profile</guilabel
+> Sie haben hier die Möglichkeit &quot;Standards&quot; für Ihre Profile zu hinterlegen. Alles lässt sich beim Öffnen der Rohdatei später ändern. </para>
+
+    <itemizedlist>
+
+        <listitem
+><para
+>Die <guilabel
+>Farbverwaltungsansicht</guilabel
+> ist eine Alternative gegenüber Xcalib oder Argyll. Hier sind nur Ihre Bilder farbverwaltet nicht der gesamte Bildschirm. </para
+></listitem>
+
+        <listitem
+><para
+>Sie müssen ein Profil für den Arbeitsbereich, wie z. B. Adobe RGB oder sRGB hinterlegen. Wenn Sie Ihre Bilder später drucken wollen, ist Adobe RGB eventuell die bessere Wahl. Falls Sie sie für die Veröffentlichung im Web benutzen wollen, ist sRGB besser, da Adobe RGB ein wenig eintönig beim Ansehen in nicht farbverwalteter Software wie Browsern wirkt. Sie können dies natürlich später ändern und Adobe RGB kann eine gute Wahl sein für die Speicherung und Bearbeitung der Bilder. Vor der Veröffentlichung eines Bildes in Ihrem Blog können Sie dann zu sRGB wechseln. Hinweis: Verwenden Sie keine nichtlinearen Profile, da sie den Farbabgleich ändern. </para
+></listitem>
+
+        <listitem
+><para
+>Die Eingabeprofile sollten zu dem Kamerahersteller und Modell das Sie benutzen passen. <quote
+>Nicht alle Profile sind auf die gleiche Art erstellt</quote
+>. Es gibt einige, wie z.B. Canon, die keine Farbtonmapping oder Gammakorrektur enthalten. Zurzeit korrigiert dcraw Gamma nicht für Konvertierungen bei 16 Bit-Tiefe. Dies bedeutet, dass Sie das Farbtonmapping selbst durchführen müssen. </para
+></listitem>
+
+        <listitem
+><para
+>Es gibt weitere Optionen wie das Soft-Proof-Profil, mit dem Sie emulieren können, wie Ihr Bild von einem Gerät wieder gegeben werden würde. Dies ist sehr nützlich, bevor Sie Bild drucken, da Ihr Drucker einen kleineren Farbbereich hat als Ihre Kamera und einige Farben daher sehr gesättigt wirken können. Dies könnten Sie manuell korrigieren, anstatt sich auf den <quote
+>blinden</quote
+> Algorithmus Ihres Drucker zu verlassen. </para
+></listitem>
+
+    </itemizedlist>
+
+    <para
+>Für die meisten Kameras ist es ziemlich offensichtlich welches Farbprofil bei ihnen wofür vorgesehen ist. Leider nicht bei den Modellen von Canon. Daher folgt hier eine Tabelle von Kameras und Profilen die zusammen passen. Diese Antwort ist natürlich inoffiziell: </para>
+
+    <informaltable
+><tgroup cols="2">
+
+        <thead
+><row>
+            <entry
+>Kamera</entry>
+            <entry
+>Profilserien</entry>
+        </row
+></thead>
+
+        <tbody>
+            <row
+>   <entry
+>Canon 1D Mark II</entry
+>     <entry
+>6051</entry
+>         </row>
+            <row
+>   <entry
+>Canon 1D Mark II</entry
+>     <entry
+>6111</entry
+>         </row>
+            <row
+>   <entry
+>Canon 1Ds</entry
+>            <entry
+>6021</entry
+>         </row>
+            <row
+>   <entry
+>Canon 1Ds Mark II</entry
+>    <entry
+>6081</entry
+>         </row>
+            <row
+>   <entry
+>Canon 5D</entry
+>             <entry
+>6091</entry
+>         </row>
+            <row
+>   <entry
+>Canon 10D</entry
+>            <entry
+>6031</entry
+>         </row>
+            <row
+>   <entry
+>Canon 20D</entry
+>            <entry
+>6061</entry
+>         </row>
+            <row
+>   <entry
+>Canon 30D</entry
+>            <entry
+>6112</entry
+>         </row>
+            <row
+>   <entry
+>Canon 40D</entry
+>            <entry
+>6101</entry
+>         </row>
+            <row
+>   <entry
+>Canon 300D</entry
+>           <entry
+>6031</entry
+>         </row>
+            <row
+>   <entry
+>Canon 350D</entry
+>           <entry
+>6111 oder 6071</entry
+> </row>
+            <row
+>   <entry
+>Canon 400D</entry
+>           <entry
+>6131</entry
+>         </row>
+        </tbody>
+
+    </tgroup
+></informaltable>
+
+    <para
+>Die Canon Profilerweiterung lässt den Stil für das Ziel erkennen: F für einen genaue Stil, L für Landschaften, N für Neutral, P für Portraitund S für den Standard Stil. </para>
+
+    <para
+>Sie können hier einen typischen <link linkend="raw-workflow"
+>Roharbeitsablauf finden</link
+>. </para>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-cm-profiles.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+    <para>
+        <inlinemediaobject
+><imageobject>
+            <imagedata fileref="&path;using-setup-cm-advanced.png" format="PNG"/>
+        </imageobject
+></inlinemediaobject>
+    </para>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

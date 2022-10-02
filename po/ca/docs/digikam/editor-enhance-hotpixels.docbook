@@ -1,0 +1,118 @@
+  <sect3 id="editor-enhance-hotpixels">
+    <sect3info>
+      <title
+>Correcció dels píxels cremats</title>
+      <abstract>
+        <para
+>L'eina <emphasis
+>píxels cremats</emphasis
+> del &digikam; facilita l'eliminació dels píxels cremats de les fotografies preses amb una càmera CCD. Utilitza algoritmes del projecte JPEGPixi, els quals són copyright d'en Martin Dickopp. </para>
+      </abstract>
+      <keywordset>
+        <keyword
+>digiKam</keyword>
+      </keywordset>
+    </sect3info>
+    <title
+>Introducció</title>
+    <para
+>Les càmeres digitals més actuals presenten imatges amb diversos colors brillants «píxels defectuosos» quan s'utilitzen velocitats d'obturació lentes. Amb aquests «píxels defectuosos» es poden arruïnar les imatges nocturnes. Hi ha tres tipus diferents de «píxels defectuosos»: <itemizedlist
+> <listitem
+> <para
+>Píxels blocats: són els píxels que sempre es llegeixen en un valor alt o que sempre estan a la màxima potència en totes les exposicions. Això produeix un píxel brillant generalment de color vermell, blau o verd en la imatge final. Un píxel blocat apareixerà independentment de la velocitat d'obturació, mida de l'obertura o qualsevol altra configuració de l'usuari. Apareixerà en una exposició normal i tendeix a ser més evident en condicions de molta llum.</para
+> </listitem
+> <listitem
+> <para
+>Píxels morts: són els píxels que indiquen zero o que sempre estan apagats en totes les exposicions. Aquest estat produeix un píxel negre en la imatge final. Similar a un píxel blocat, un píxel mort apareixerà independentment de la velocitat d'obturació, mida de l'obertura o qualsevol altra configuració de l'usuari.</para
+> </listitem
+> <listitem
+> <para
+>Píxels cremats: són els píxels que llegeixen valors alts (brillant) en exposicions més llargues com el color blanc, vermell o verd. Com més gran sigui el temps d'exposició, els píxels calents seran més visibles. Aquests píxels no són visibles en condicions de molta llum.</para
+> </listitem
+> </itemizedlist
+> Tingueu en compte que es produiran píxels blocats o morts en el mateix lloc en totes les imatges. Si la ubicació del píxel blocat o mort es produeix en diferents llocs, podria ser un píxel cremat. </para>
+    <para
+>Els píxels blocats, morts o cremats són un problema en particular, quan es dispara en mode d'alta qualitat RAW, ja que moltes càmeres tenen una funció automàtica per a l'eliminació del píxel cremat quan s'utilitza la compressió JPEG (el que passa en la majoria dels casos). </para>
+    <para
+>Aquesta eina es pot utilitzar per a corregir els «píxels cremats» i «píxels blocats» sobre una fotografia utilitzant un mètode de sostracció per marc negre. Encara no hi ha un editor manual per a seleccionar els píxels defectuosos. </para>
+    <sect4 id="using-blackframecreation">
+      <title
+>Crear els marcs negres</title>
+      <para
+>El mètode de sostracció per marc negre és el més precís per eliminar els «píxels cremats» i els «píxels blocats». Primer haureu de crear un «marc negre» com a referència. Això és fàcil de fer. Quan acabeu de prendre llargues exposicions, poseu una tapa a la lent de la càmera i prendreu una imatge «fosca» amb el mateix temps d'exposició que les anteriors imatges. Aquesta imatge serà tota fosca, però amb examen minuciós veureu que té els píxels cremats i blocats (punts de colors). Aquests estan ubicats en els mateixos llocs que en les anteriors fotografies. </para>
+      <para
+>Carregueu aquest fitxer al giny utilitzant el botó <guilabel
+>Marc negre</guilabel
+>. L'eina processarà una detecció automàtica dels píxels cremats i blocats. Aquests seran ressaltats en les àrees de vista prèvia del plafó de control. </para>
+      <warning>
+        <para
+>Si utilitzeu una vella càmera digital, és important tornar a disparar el marc negre la propera vegada que esteu prenent una llarga exposició d'imatges per a detectar nous píxels cremats i blocats en els defectes del CCD. </para>
+      </warning>
+    </sect4>
+    <sect4 id="using-hotpixels">
+      <title
+>Usar l'eina «Píxels cremats»</title>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-hotpixels.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>El diàleg de «Píxels cremats»</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+      <para
+>En primer lloc, com s'ha explicat a la secció anterior, cal carregar un marc negre corresponent a la imatge a corregir. Una anàlisi automàtica processarà el marc negre per trobar els píxels defectuosos. Tingueu en compte que el giny recordarà el marc negre anterior utilitzat en l'última sessió i el tornarà a obrir automàticament amb la propera sessió. </para>
+      <para
+>El plafó d'imatge i la vista prèvia original us ajudaran a desplaçar dins de la imatge. La finestra de vista prèvia mostrarà la sortida del filtre utilitzant la configuració actual. Els píxels defectuosos es ressalten en totes les àrees de vista prèvia. </para>
+      <para
+>Seleccioneu una àrea de la vista prèvia per veure els píxels defectuosos i el resultat del filtre utilitzant les opcions «Vista separada» del plafó d'imatges. Escolliu el millor mètode de <guilabel
+>Filtre</guilabel
+> per a interpolar els píxels o píxels blocats. Aquests són els filtres disponibles: <itemizedlist>
+          <listitem>
+            <para
+>Mitjana: els píxels adjacents al bloc de píxels faran la mitjana. El color resultant s'assignarà a tots els píxels en el bloc. Per a la interpolació dimensional, això es realitza separadament per a una franja de píxels en amplada, horitzontals o verticals.</para>
+          </listitem>
+          <listitem>
+            <para
+>Lineal: els píxels que tenen una distància d'1 des del bloc de píxels s'utilitzen per a calcular una superfície bilineal (2 dimensions), o un grup de corbes lineals (1 dimensió), que després s'utilitzaran per assignar colors interpolats als píxels en el bloc.</para>
+          </listitem>
+          <listitem>
+            <para
+>Quadràtic: aquest és el mètode de filtrat per omissió. Els píxels que tenen una distància de 2 des del bloc de píxels s'utilitzen per a calcular una superfície quadràtica bilineal (2 dimensions), o un grup de corbes quadràtiques lineals (1 dimensió), que després s'utilitzaran per assignar colors interpolats als píxels en el bloc.</para>
+          </listitem>
+          <listitem>
+            <para
+>Cúbic: els píxels que tenen una distància de 3 des del bloc de píxels s'utilitzen per a calcular una superfície cúbica bilineal (2 dimensions), o un grup de corbes cúbiques lineals (1 dimensió), que després s'utilitzaran per assignar colors interpolats als píxels en el bloc.</para>
+          </listitem>
+        </itemizedlist>
+      </para>
+    </sect4>
+    <sect4 id="inaction-hotpixels">
+      <title
+>L'eina «Píxels cremats» en acció</title>
+      <para
+>A continuació podeu veure l'eina per a la correcció dels píxels cremats aplicada a una fotografia en color, presa amb una càmera digital poc satisfactòria a una sensibilitat ISO de 200 amb una llarga exposició de la fotografia. La imatge original ampliada a 300% és (1), la imatge corregida és (2). </para>
+      <para>
+        <inlinemediaobject>
+          <imageobject>
+            <imagedata fileref="&path;editor-hotpixels-preview.png" format="PNG"/>
+          </imageobject>
+          <textobject>
+            <phrase
+>La vista prèvia de «Correcció dels píxels»</phrase>
+          </textobject>
+        </inlinemediaobject>
+      </para>
+    </sect4>
+  </sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

@@ -1,0 +1,211 @@
+<sect2 id="editor-cm-rawfile">
+    <title
+>Kameraprofilen och problem med framkallning av obehandlade filer</title>
+
+    <sect3>
+        <title
+>Vad är nästa steg i färghanteringen? </title>
+
+        <para
+>För det första och för protokollet, många utmärkta professionella och amatörfotografer sparar alla sina bilder som JPEG skapade av kameran, och arbetar enbart i färgsystemet sRGB. Men om du vill arbeta i en större färgrymd, eller om du vill arbeta med obehandlade filer (även om du skapar sRGB-filer från obehandlade filer), läs då vidare. </para>
+
+        <para
+>Att döma av frågor ställda på &digikam;s användarforum, om du läser den här handledningen tar du troligen obehandlade bilder med en digital spegelreflexkamera, och hoppas på att någonstans i färghanteringens mörka vatten finns svaret på hur man får en snygg bild från en obehandlad bildfil. Och du har rätt! Vad du behöver härnäst är rätt kameraprofil för att framkalla den obehandlade bilden. Men låt oss först besvara frågan som du kanske verkligen ställde. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Varför ser inte förhandsgranskningarna av bilden som skapas av konverteringsprogram av obehandlade bilder, som dcraw eller ufraw, likadan ut som den inbäddade förhandsgranskningen som visas av Digikam? </title>
+
+        <para
+>Bra fråga. Alla bilder från digitalkameror börjar som obehandlade filer, vare sig kameran ger användaren möjlighet att spara bilden som en obehandlad fil eller inte. När man ber kameran att spara JPEG-filer istället för obehandlade filer, använder kameran sin inbyggda processor för att konvertera den obehandlade filen till en JPEG-fil. Den inbäddade förhandsgranskningen är hur den slutliga bilden skulle ha sett ut som om du hade ställt in kameran att spara JPEG-filer istället för obehandlade filer. </para>
+
+        <para
+>I fortsättningen kommer jag att beskriva min erfarenhet som Canon-användare, men min gissning är att de flesta eller alla digitala spegelreflexkameror av enkel- och mellanklass beter sig på liknande sätt. Canon erbjuder användaren flera bildtyper - neutral, standard, porträtt, landskap, och så vidare - som bestämmer vilken sorts behandling som görs av den obehandlade bildfilen för att skapa den slutliga bilden, vare sig behandlingen görs "i kameran" eller senare, med Canons tillverkarspecifika programvara, DPP. Canons DPP programvara för behandling av obehandlade filer ger användaren ytterligare styrmöjligheter, men hanterar ändå den obehandlade bildfilen enligt den valda bildtypen. De flesta av Canons bildtyper lägger till en markerad S-kurva och extra färgmättnad för att ge bilden mer "briljans". Även om du väljer "neutral" bildtyp (den bildtyp från Canon som ger minst förändrat tonomfång), och väljer "mindre kontrast", "mindre färgmättnad", "ingen brusreducering" och "ingen skärpeökning" i DPP:s framkallningsdialogruta, märker du att en S-kurva och brusreducering i skuggor har använts i bilden, om du vet vad du ska leta efter. </para>
+
+        <para
+>Libraw (som &digikam; använder för att konvertera obehandlade filer till bildfiler) lägger inte till någon S-kurva i bildens tonomfång. Libraw ger dig dagrarna och skuggorna som verkligen lagrades från kamerans sensor. Enligt <ulink url="http://21stcenturyshoebox.com/essays/scenereferredworkflow.html"
+>Tindeman</ulink
+>, utmärkt läsning och en källa av goda råd, med länkar till lika bra källor till ytterligare information, är dcraw ett av bara en handfull program för framkallning av obehandlade bilder som verkligen ger "motivrelaterat" tonomfång. Ufraw skapar också normalt en motivrelaterad bild (även om ufraw ger användaren möjlighet att ändra den motivrelaterade bilden genom att ändra färgtonsfördelningen och färgmättnaden). Och utseendet på den motivrelaterade bilden från dcraw eller ufraw ÄR kontrastlös, eftersom kamerasensorn lagrar ljuset linjärt, medan våra ögon tillsammans med hjärnan hela tiden tar hänsyn till mörka och ljusa områden i ett motiv, vilket innebär att hjärnan i viss mån "behandlar motivet med en S-kurva", för att vi bättre ska kunna fokusera på områden av särskilt intresse när vi tittar oss omkring. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Den inbäddade JPEG-förhandsgranskningen ser så mycket bättre ut än utdata från dcraw. Vad är värdet med motivrelaterat tonomfång? </title>
+
+        <para
+>När du tar en bild har du förmodligen en idé om hur du vill att den färdiga bilden ska se ut. Det är mycket enklare att uppnå den färdiga bilden om du inte måste "ta bort" saker som redan har gjorts med bilden. När Canon (eller Nikon, eller Bibble, etc.) har använt sina egna S-kurvor och brusreducering av skuggor, skärpeförbättring, etc. i bilden, har skuggorna, dagrarna, kantdetaljer, etc. redan blivit hoptryckta, beskurna, avhuggna, samt ändrade och skadade på andra sätt. Information har kastats bort, och går inte att få tillbaka. Särskilt i skuggorna, även med 16-bitars bilder (i själva verket 12 eller 14 bitar, beroende på kamera, men kodat som 16 bitar för datorns skull), finns det helt enkelt inte så mycket information ens från början. </para>
+
+        <para
+>För mig verkar det som det innersta i bildbehandling är genomtänkt förändring av bildens tonomfång, färg, selektiv skärpa, med mera, så att betraktaren fokuserar på vad du som fotograf ansåg vara särskilt intressant när du tog bilden. Varför lämna över bildbehandlingens konst till någon tillverkarspecifik programvara för behandling av obehandlade bilder? Med andra ord är "kontrastlöst" bra, om du hellre vill ge bilderna din egen konstnärliga tolkning. Alternativet är att låta de färdigproducerade, tillverkarspecifika algoritmerna skapade av Canon, Nikon, Bibble, etc. tolka bilderna åt dig. (Å andra sidan, kan man inte neka till att för många bilder är de färdigproducerade algoritmerna faktiskt ganska bra.) </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Jag kan förstå värdet av att börja bildredigeringen med en motivrelaterad återgivning istället för den briljanta återgivningen som jag ser i den inbäddade JPEG-bilden. Men som sagt, bilderna skapade av Digikam och Libraw ser verkligen riktigt dåliga ut. Varför? </title>
+
+        <para
+>Ja, det beror på Om bilden ser mycket mörk ut, har du bett dcraw att skapa en 16-bitars fil och har stött på ett problem där Libraw inte utför en gamma-transform innan bildfilen lagras. Du kan använda ImageMagick för att utföra lämplig gamma-transform av bildfilen som skapats av dcraw. Annars kan du leta rätt på eller skapa en kameraprofil med gamma 1, eller använda ufraw, som utför gamma-transformen åt dig. </para>
+
+        <para
+>Om bilden har rosa dagrar, finns det en lösning. För en förklaring av problemet, samt lösningen via kommandoraden, se <ulink url="http://www.luminous-landscape.com/forum/index.php?topic=23430.0"
+>följande artikel från forumet "Luminous Landscape"</ulink
+>. </para>
+
+        <para
+>Om bilden inte är mörk, utan bara ser konstig ut, har du troligen gjort mindre förståndiga val i Libraws användargränssnitt. Libraws gränssnitt låter dig bekvämt "vrida in" alternativ som du annars måste ange på kommandoraden. Dock har bekvämlighet alltid sitt pris. För det första, kanske inte gränssnittet ger tillgång till alla alternativ tillgängliga på kommandoraden. För det andra, för att få ut så mycket som möjligt från Libraws gränssnitt, måste du veta vad knapparna, skjutreglagen, etc. i gränssnittet faktiskt gör. Det betyder att du måste veta vad som händer på kommandoraden om du vill få bästa resultat vid användning av gränssnittet. (Den här handledningen gör inget försök att dokumentera hur Libraws användargränssnitt ska användas. Digikam utvecklas i snabb takt och allt jag skulle kunna skriva om Libraws gränssnitt blir säkerligen föråldrat inom kort.) </para>
+
+        <para
+>Om den inbäddade JPEG-filen exempelvis har mycket fina mörka rika skuggor, men JPEG- eller TIFF-filen skapad av Libraw har fläckvis röda linjemönster i skuggiga områden, har du troligen kryssat i alternativet "Avancerat, Svartpunkt", med skjutreglaget inställt på 0. Avmarkera rutan Svartpunkt och försök igen. Den här rutan i Libraw-gränssnittet motsvarar väljaren "-k" när dcraw används på kommandoraden. Väljaren "-k" låter dig överskrida dcraws bästa uppskattning av var i bildens skuggtoner som den digitala signalen börjar skilja sig från bakgrundsbruset. Om du inte använder väljaren "-k" på kommandoraden beräknar dcraw ett lämpligt värde åt dig, baserat på dess uppskattning av bakgrundsbruset. Med min Canon 400d/xti, är bakgrundsbrusets värde som beräknas av dcraw oftast omkring 256 (kommandoradsväljaren "-v" ber dcraw att tala om för dig vad programmet gör vid behandling av den obehandlade filen). Om jag istället använder väljaren "-K /sökväg_till_svart_bild.pgm" för att be dcraw att subtrahera bort en svart bild, rapporterar dcraw svartpunkten som "0", eftersom det inte finns något behov av att ställa in den högre för att undvika de mörkaste skuggorna i bilden, där brus typiskt dränker signalen. (En "svart bild" är ett fotografi taget med linsskyddet på, med samma exponeringsinställningar som, och idealiskt direkt efter, bilden som behandlas. Väljaren "-K" låter dcraw subtrahera bakgrundsbruset från bilden.) </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Var kan man hitta bra information om digitalt brus? </title>
+
+        <para
+>Se följande utmärkta artiklar:</para>
+
+        <itemizedlist>
+
+            <listitem
+><para
+><ulink url="http://www.ronbigelow.com/articles/noise-1/noise-1.htm"
+></ulink
+></para
+></listitem>
+
+            <listitem
+><para
+><ulink url="http://www.cambridgeincolour.com/tutorials/noise.htm"
+></ulink
+></para
+></listitem>
+
+            <listitem
+><para
+><ulink url="http://www.clarkvision.com/imagedetail/digital.signal.to.noise/"
+></ulink
+></para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Varför är färgerna från Canon och Nikon bättre än färgerna skapade av Libraw?</title>
+
+        <para
+>Färgåtergivning är ett område där Canons (och antagligen Nikons) tillverkarspecifika programvara för framkallning av obehandlade bilder gör ett mycket, mycket bra arbete. Varför? Eftersom den tillverkarspecifika programvaran för behandling av obehandlade bilder är kopplad till kameraprofiler som är specifika för obehandlade bilder som kommer från din kameramodell, när bilden behandlas med användning av den tillverkarspecifika programvaran från din kameratillverkare för din kameramodell. Jag har gjort omfattande kontroller, med användning av en "pipett" för att jämföra utdata från olika framkallningsprogram för obehandlade bilder med olika kameraprofiler från olika källor, en mycket tröttsam men lärorik process. Med ufraw och dcraw (från kommandoraden, om än inte från Digikams dcraw användargränssnitt), kan man använda Canons specifika färgprofil(er) för kamera, modell, bild, typ, och färgerna är ändå INTE exakt likadana som vad Canon producerar. På liknande sätt fungerar Bibbles profiler rätt bra med Bibble, men de fungerar inte riktigt lika bra med Libraw som de gör med Bibbles egen programvara, enligt min mening, Och så vidare ... </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Varför är en kameraprofil specifik för en given kameratillverkare och modell? </title>
+
+        <para
+>Digitalkameror har en matris av miljontals inbyggda små ljussensorer, som antingen skapar en CCD- eller en CMOS-krets. Dessa ljuskänsliga bildpunkter är färgblinda: de lagrar bara mängden, inte färgen, av ljuset som faller på dem. För att låta bildpunkter lagra färginformation, täcks varje bildpunkt med en genomskinlig röd, grön eller blå lins, oftast alternerande i vad som kallas en Bayermatris (utom för Foveon-sensorer, som fungerar på ett annat sätt). En obehandlad bild är ingenting mer än en matris av värden som anger "hur mycket" ljus som passerade genom den täckande röda, blåa eller gröna linsen för att nå sensorn. </para>
+
+        <para
+>Uppenbarligen är bildpunktens svar på ljus resultatet av en mängd kameraspecifika faktorer, inklusive själva sensormatrisens natur, de exakta färgläggnings- och spridningsegenskaperna hos de täckande linserna, och den särskilda analog till digital-konverteringen och behandlingen efter konverteringen som sker inne i kameran, för att skapa den obehandlade bild som lagras på minneskortet. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Vad betyder "analog till digital-konvertering"?</title>
+
+        <para
+>"Analog" betyder kontinuerligt varierande, liksom mängden vatten du kan hälla i ett glas. Att "digitalisera" en analog signal betyder att de kontinuerligt varierande nivåerna från den analoga signalkällan "avrundas" till diskreta kvantiteter, för bekväm användning med datorernas binära tal. Den analog till digital-konvertering som äger rum i kameran är nödvändig, eftersom de ljuskänsliga bildpunkterna är analoga till sin natur. De samlar in en laddning proportionell mot mängden ljus som når dem. Den samlade laddningen i varje bildpunkt omvandlas sedan till en diskret, digital kvantitet av kamerans analog till digital-konvertering. Det förklarar för övrigt varför en 14-bitars konvertering är bättre än en 12-bitars: Större noggrannhet i konverteringens utdata betyder att mindre information går förlorad i konverteringsprocessen. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Varför används en kameraprofil specifik för det program för behandling av obehandlade filer som används för att framkalla den obehandlade filen? </title>
+
+        <para
+>Hela vitsen med interpolering med algoritmer för mosaikborttagning som dcraws förvalda AHD, är att gissa vilken färg och ljusstyrka som verkligen nådde vilken given bildpunkt som helst, genom att interpolera information insamlad från den bildpunkten samt dess intilliggande bildpunkter (se <ulink url="https://en.wikipedia.org/wiki/Demosaicing"
+>Wikipedia-artikeln</ulink
+>). Alla program för behandling av obehandlade bilder gör ytterligare antaganden såsom "vad är signal och vad är bakgrundsbrus?", "vid vilket tillfälle har sensorpunkten nått fullständig mättnad?", och så vidare. Resultatet från alla dessa algoritmer och antaganden som programvaran för behandling av obehandlade bilder gör, är en trippel av RGB-värden för varje bildpunkt i bilden. Med samma obehandlade fil, skapar olika programvaror för behandling av obehandlade bilder olika RGB-värden. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Var hittar jag en generell profil för min kamera?</title>
+
+        <para
+><ulink url="http://ufraw.sourceforge.net/Colors.html"
+>Avsnittet om färghantering</ulink
+> på ufraws webbsida har information om var man hittar färdiggjorda kameraprofiler. Om du letar runt i arkiven för &digikam;s användarforum, finner du ytterligare råd. Om du fortsätter jaga och experimentera, hittar du troligen en generell profil som fungerar "bra nog". Som framförts ovan är det dock ett beklagligt faktum vid digitalfotografering att kameraprofilerna som tillhandahålls av Canon, Nikon, och liknande, inte fungerar så bra med andra program för konvertering av obehandlade filer som med tillverkarnas egna program. Det är orsaken till att exempelvis Bibble och Phase One måste skapa egna profiler för alla kameror de stöder. Till slut kanske du bestämmer att du vill ha en kameraprofil som är specifik för din kamera, dina ljusförhållanden och ditt arbetsflöde för hantering av obehandlade bilder. </para>
+
+        <para>
+            <screenshot>
+                <screeninfo
+></screeninfo>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="&path;editor-cm-iccworkflowlogic.png" format="PNG"/>
+                    </imageobject>
+                    <textobject>
+                    <phrase
+></phrase>
+                    </textobject>
+                </mediaobject>
+            </screenshot>
+        </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Hur skaffar jag en kameraprofil specifik för min kamera, ljusförhållanden och arbetsflöde med obehandlade bilder? </title>
+
+        <para
+>Många kommersiella inrättningar tillhandahåller profileringstjänster, naturligtvis mot en avgift. Annars kan du använda LProf för att profilera kameran själv. Om du ska profilera din egen kamera behöver du en "IT8-bild", det vill säga en bild som innehåller fyrkanter av kända färger. Tillsammans med IT8-bilden, får du den tillämpliga uppsättningen kända värden för varje färgad fyrkant på bilden. </para>
+
+        <para
+>Om du avser att använda LProf för att profilera din kamera, kontrollera dokumentationen efter en lista med rekommenderade målbilder. För att profilera kameran, fotograferar man IT8-målbilden med specificerade ljusförhållanden (till exempel dagsljus, vilket oftast antas betyda mitt på dagen en solig sommardag, utan någonting intill som skulle kunna kasta skuggor eller reflektera färgskiftningar) och sparar den obehandlade bilden. Därefter behandlas den obehandlade bilden med den specifika programvaran för behandling av obehandlade bilder och kör den resulterande bildfilen genom profileringsprogramvaran. Profileringsprogramvaran jämför RGB-värden i bilden, som skapas av kameran + ljusförhållandena + rutinen för behandling av obehandlade bilder, med RGB-värden i den ursprungliga målbilden och genererar sedan kamerans (ICC) profil. </para>
+
+        <para
+>Att profilera en kamera är exakt jämförbart med att profilera en bildskärm. När en bildskärm profileras ber profileringsprogramvaran grafikkortet att skicka färgade fyrkanter med vissa RGB-värden till skärmen. Spektrofotometern mäter den verkliga färgen som skapas på skärmen. När en kamera profileras, är de kända färgerna RGB-färgerna i originalrutorna på IT8-målbilden, som profileringsprogramvaran jämför med färgerna skapade från den digitala bilden av målet, som fotograferades med utvalda ljusförhållanden, sparades som obehandlad bild, och därefter behandlades med specifik programvara för behandling av obehandlade bilder med specifika inställningar. </para>
+
+        <para
+><ulink url="http://lprof.sourceforge.net/help/ufraw.html"
+>Här</ulink
+> är en länk till en handledning hur LProf v1.11 och ufraw används (och därmed alla andra behandlingsprogram av obehandlade bilder) för att skapa en kameraprofil: http://lprof.sourceforge.net/help/ufraw.html. Debian Lenny har LProf 1.11.4 i APT-arkivet. Senare versioner kan byggas från CVS. Och här är länken till en billig, väl ansedd <ulink url="http://www.targets.coloraid.de/"
+>IT8-bild</ulink
+>. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Hur använder jag en kameraprofil med en 16-bitars bildfil skapad av min programvara (med öppen källkod) för behandling av obehandlade bilder? </title>
+
+        <para
+>Om du använder Libraw-gränssnittet, anges <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>här</ulink
+> hur man talar om för &digikam; vilken kameraprofil som ska användas. Om du använder dcraw från kommandoraden, har du möjlighet att välja om du vill mata ut 16-bitars bildfilen med eller utan ingående kameraprofil. Om du ber dcraw att mata ut filen utan ingående kameraprofil, kan du använda LCMS verktyg tifficc (också på kommandoraden) för att lägga till kameraprofilen. Fördelen med att använda tifficc är att du kan tala om för LCMS att använda konvertering med hög kvalitet (dcraw verkar använda LCMS förvalda medelkvalitet). Nackdelen är förstås att tillägg av kameraprofilen från kommandoraden innebär ett extra steg i arbetsflödet för obehandlade bilder. Om du använder ufraw, rådfråga ufraws användarhandbok. </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

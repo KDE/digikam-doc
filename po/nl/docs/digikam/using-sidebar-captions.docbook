@@ -1,0 +1,201 @@
+<sect2 id="using-sidebar-captions">
+    <title
+>Opschriften</title>
+
+    <sect3>
+    <title
+>Inleiding</title>
+
+        <para
+>Deze zijbalk dient om foto-attributen zoals titels, waardering,datum en tags toe te voegen en te bewerken. De attributen worden in de IPTC en EXIF data velden van de bijbehorende database opgeslagen en worden op die manier onderdeel van de foto. Alle attributen zijn via een zijbalk toegankelijk zoals in het schermafdruk hieronder is te zien. Tijdens het inlezen van de foto is de prioriteit-volgorde a) database b) IPTC en c) EXIF. als er een verschil is tussen deze drie, dan wordt deze prioriteit gevolgd en volgt er een synchronisatie. Deze zijbalk heeft navigatieknoppen in de vorm van eerste-vorige- volgende-laatste bovenaan het hoofdvenster. </para>
+
+        <example>
+            <title
+>Zijbalk Titels &amp; Tags met voorbeeld</title>
+            <screenshot>
+                <screeninfo
+>Zijbalk Titels &amp; Tags met voorbeeld</screeninfo>
+                <mediaobject
+><imageobject>
+                    <imagedata fileref="&path;using-sidebar-captions.png" format="PNG"/>
+                </imageobject
+></mediaobject>
+            </screenshot>
+        </example>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Commentaar venster</title>
+
+        <para
+>Het commentaar venster kunt u gebruiken om een titel van onbeperkte grootte in te voeren of te plakken (lees de opmerking hieronder). De tekst is UTF-8 compatibel, wat inhoud dat alle speciale karakters toegestaan zijn. Het commentaar wordt ook naar EXIF en IPTC velden gekopieerd zodat andere programma´s het ook kunnen gebruiken. </para>
+
+        <caution
+><para
+>IPTC data ondersteund alleen ASCII karakters en is beperkt tot 2000 karakters (oude Amerikaanse norm). Alle tekst na 2000 karakters is afgekapt, en speciale karakters zullen misvormd zijn. als het uw bedoeling is om de IPTC commentaar velden in andere programma´s te gebruiken dan moet u met deze beperkingen rekening houden. </para
+></caution>
+
+        <para
+>Na het invoeren van het commentaar u gaat onmiddellijk naar de volgende foto of kiest u de knop <guibutton
+>toepassen</guibutton
+> waarna de commentaren worden opgeslagen. </para>
+
+        <para
+>Vlakbij de Toepassen-knop is er de knop <guibutton
+>Meer</guibutton
+>. Van hieruit kunt kiezen om of de metadata van het bestand naar de database te kopiëren, of andersom, de metadata naar het bestand te kopiëren (het laatste zal altijd plaatsvinden als u een metadata-instelling heeft gekozen dat alle metadata in het bestand wordt opgeslagen). </para>
+
+    </sect3>
+
+    <sect3>
+
+        <title
+>Datum &amp; tijd</title>
+
+        <para
+>In de Datum &amp; Tijd sectie, wat het tijdstip waarop de foto is genomen weergeeft, kunt u alle waarden wijzigen Via het keuzemenu voor de datum opent u een kalender, maar het tijdstip kunt u ook direct invoeren door het direct te typen. De datum zal naar het EXIF 'Date and Time' veld gekopieerd worden. Als u het tijdstip &amp; datum van een aantal foto´s wilt wijzigen dan is er een makkelijker methode beschikbaar in de wachtrijbeheerder voor bulk. Deze laatste methode kunt u vinden onder <menuchoice
+><guimenuitem
+>Afbeelding</guimenuitem
+><guimenuitem
+>Datum &amp; tijd aanpassen</guimenuitem
+></menuchoice
+>. Selecteer in het hoofdvenster de aan te passen foto´s en start het hulpmiddel. </para>
+
+    </sect3>
+
+    <sect3>
+    <title
+>Waardering</title>
+
+    <para
+>De sectie waardering heeft een waarderingsschema van 0 tot 5 sterren dat u kunt gebruiken bij het zoeken en bij het sorteren. U kunt ze via een enkele muisklik op een van de 5 sterren in de zijbalk of via de sneltoets <keycombo
+>&Ctrl;<keycap
+>0...5</keycap
+></keycombo
+> uitdelen. De waardering via de zijbalk kunt u maar aan een foto tegelijk geven. Om aan een aantal foto´s tegelijk een waardering te geven, selecteert u ze en gebruikt vervolgens het contextmenu (klikken met de &RMB;) om ze een waardering te geven. </para>
+
+    <para
+>De waardering zal vervolgens naar het IPTC 'urgency' data veld geschreven worden. De vertaalslag zal het schema in deze tabel volgen: </para>
+
+    <informaltable
+><tgroup cols="2">
+
+        <thead
+><row>
+            <entry
+>Waardering in &digikam;</entry>
+            <entry
+>IPTC Urgentie</entry>
+            </row
+></thead>
+
+            <tbody>
+                <row
+>   <entry
+>-</entry
+>         <entry
+>8</entry
+>      </row>
+
+                <row
+>   <entry
+>*</entry
+>         <entry
+>7</entry
+>      </row>
+
+                <row
+>   <entry
+>*</entry
+>         <entry
+>6</entry
+>      </row>
+
+                <row
+>   <entry
+>**</entry
+>        <entry
+>5</entry
+>      </row>
+
+                <row
+>   <entry
+>***</entry
+>       <entry
+>4</entry
+>      </row>
+
+                <row
+>   <entry
+>****</entry
+>      <entry
+>3</entry
+>      </row>
+
+                <row
+>   <entry
+>****</entry
+>      <entry
+>2</entry
+>      </row>
+
+                <row
+>   <entry
+>*****</entry
+>     <entry
+>1</entry
+>      </row>
+            </tbody>
+
+        </tgroup
+></informaltable>
+
+    </sect3>
+
+    <sect3 id="using-sidebar-tags">
+    <title
+>Boomstructuur van tags</title>
+
+        <para
+>Het tag-vensterdialoog toont een aanpasbare zoekvak voor tags, een boomstructuur met tags en een keuzemenu met de tags die eerder in deze sessie in &digikam; zijn toegepast. </para>
+
+        <para
+>De boomstructuur met de tags past zich dynamisch aan de zoekwoorden die u in het zoekvak invult. Dit maakt het daarom erg makkelijk om het aantal mogelijkheden te beperken tijdens het zoeken naar een tag. Dit onderdeel is natuurlijk alleen handig als u veel tags heeft. </para>
+
+        <para
+>Het keuzemenu onderaan is nog zo'n handig onderdeel voor het handig taggen van een serie foto's. De verschillende tags die u gebruikt blijven in dit keuzemenu zodat u ze snel bij de hand heeft. </para>
+
+        <para
+>Andere tags past u eenvoudig toe door op hun vakje in de boomstructuur te klikken. Alle tags van een foto vindt u beschreven in het IPTC 'keyword' data veld. </para>
+
+        <note
+><para
+>In het geval dat u een aantal foto's heeft geselecteerd om daar een tag uit de boomstructuur aan vast te koppelen dan wordt deze alleen aan de gemarkeerde foto en niet aan de rest van de selectie. Als u een selectie een tag wilt geven, lees dan eerst sectie <link linkend="using-sidebar-filters"
+>Filters</link
+>. </para
+></note>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Informatie in de weergave</title>
+
+            <para
+>TE DOEN </para>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

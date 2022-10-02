@@ -1,0 +1,206 @@
+<sect2 id="using-mainwindow-tagsview">
+    <title
+>La vista Tag</title>
+
+    <para
+>Mettere dei tag (gerarchici) è una maniera flessibile e potente di organizzare e di catalogare le tue immagini. I tag (anche chiamati <quote
+>parole chiave</quote
+> in altre applicazioni) sono delle etichette che possono essere applicate alle singole immagini o ad interi gruppi. Una volta che un tag è stato impostato su di un'immagine, essa può essere ritrovata selezionando il tag o effettuando una ricerca. </para>
+
+    <para
+>I tag possono essere ordinati in un albero gerarchico; ciò ti permette di organizzarli logicamente. Si possono contrarre parti dell'albero nell'elenco <quote
+>Tag</quote
+>, in modo da poter trovare facilmente i tag che stai cercando. </para>
+
+    <para
+></para>
+
+    <para>
+        <mediaobject>
+            <imageobject
+><imagedata fileref="&path;using-mainwindow-tagsview.png" format="PNG"/></imageobject>
+        </mediaobject>
+    </para>
+
+    <para
+>Quando un tag è selezionato nella barra laterale sinistra, tutte le immagini che sono marcate con quel tag vengono mostrate nell'area di visualizzazione. </para>
+
+    <para
+>Prima di assegnare e di usare i tag devi prima definirli. Se importi delle fotografie con dei tag assegnati, &digikam; costruirà un albero dei tag appropriato durante l'importazione. Oltre a questo è necessario definire i tag da soli. Un accesso semplice per questo è il menu contestuale mostrato nella schermata qui sopra. </para>
+
+    <sect3 id="using-managetags"
+> <title
+>Gestire i tag</title>
+
+        <para
+>Puoi aggiungere nuovi tag facendo clic con il &RMB; sia sull'etichetta <quote
+>tag</quote
+> sia su un tag preesistente, e selezionando <guilabel
+>Nuovo tag...</guilabel
+>: si aprirà una finestra in cui puoi digitare il nome del tag (o anche un intero ramo gerarchico), e assegnare un'icona e/o una scorciatoia per quel tag. Se aggiungi un nuovo tag facendo clic con il &RMB; su un tag preesistente, il tuo nuovo tag sarà creato come sotto-tag. </para>
+
+        <para
+>Puoi eliminare un tag facendo clic con il &RMB; sul tag che vuoi eliminare, quindi selezionando <guilabel
+>Elimina tag</guilabel
+>. Quando elimini un tag le fotografie non vengono eliminate, semplicemente il tag viene rimosso da quelle fotografie. </para>
+
+        <para
+>Puoi spostare la posizione di un tag nell'albero trascinandolo nella posizione che vuoi e rilasciandolo. Apparirà un menu, che ti dà l'opzione di <guilabel
+>Sposta</guilabel
+>re il tag. Questo funziona dalle barre laterali destra e sinistra. Un tag può essere solo in un posto alla volta. </para>
+
+        <para
+>Puoi impostare le proprietà del tag facendo clic con il &RMB; su di esso e selezionando <guilabel
+>Proprietà...</guilabel
+>. Le proprietà del tag ti permettono di cambiare il suo nome, l'icona usata nell'albero dei tag e la scorciatoia. </para>
+
+        <para
+>Per selezionare una fotografia come icona del tag fai clic con il &RMB; sulla fotografia che vuoi usare come l'icona del tag, e seleziona <quote
+>Imposta come miniatura del tag</quote
+> dal menu contestuale. Per impostare l'icona del tag puoi inoltre puoi usare il trascinamento: trascina l'icona dell'immagine e rilasciala sul tag selezionato nell'elenco dei tag. </para>
+
+        <para
+>Uno strumento più elaborato per lavorare su un grande albero dei tag è il <link linkend="using-tagsmngr"
+>gestore dei tag</link
+>, al quale puoi accedere facendo clic sul pulsante <guilabel
+>Apri il gestore dei tag</guilabel
+> in cima all'albero dei tag. </para>
+
+        <para
+>Nel capitolo sulla <link linkend="keywords"
+>gestione dei beni digitali (DAM</link
+> di questo manuale puoi trovare alcune utili considerazioni su come costruire il tuo albero dei tag. </para>
+
+        <para
+>Non è sempre semplice creare una gerarchia logica da categorie generali e generiche, ti potresti trovare in un problema come questo: </para>
+
+        <blockquote
+><screen
+>Animale
+                - Animale domestico
+                    - Gatto
+                    - Bestiame
+                    - Cane
+
+                - Animale selvaggio
+                    - Uccello
+                    - Gatto
+                        - Ghepardo
+                        - Leone
+                        - Tigre
+
+                - Animale dello zoo
+                    - Uccello
+                    - Gatto
+                        - Ghepardo
+                        - Leopardo
+        </screen
+></blockquote>
+
+        <para
+>In questo albero dei tag la parola chiave <quote
+>Gatto</quote
+> compare tre volte. Questo non causa problemi a &digikam;, ma ci sono dei casi in cui l'utente non può sapere quale dei tre è applicato ad un'immagine, perché potrebbe non essere in grado di vedere l'intera gerarchia del tag. Un aiuto in un caso come questo potrebbe essere quello di applicare all'immagine un tag anche con il tag genitore, o perfino dell'intera gerarchia, ma diventerebbe un po' ingombrante, &eg; nell'icona dell'immagine, se sono qui visualizzati i tag. Il secondo <quote
+>Gatto</quote
+> può essere evitato chiamandolo <quote
+>Gatto selvatico</quote
+>, ma chiamare il terzo <quote
+>Gatto dello zoo</quote
+> è un po' troppo, penso. E ancora: ci sono anche due <quote
+>Ghepardo</quote
+>! </para>
+
+        <para
+>Soluzione: sostituisci il ramo <quote
+>Animale dello zoo</quote
+> con il tag singolo <quote
+>Zoo</quote
+>, da usare in aggiunta al tag scelto dai due rami rimanenti. Potresti anche metterlo al massimo livello della tua gerarchia se hai delle fotografie scattate in uno zoo che non mostrano animali. </para>
+
+    </sect3>
+
+    <sect3 id="using-taggingimages"
+> <title
+>Mettere i tag sulle foto</title>
+
+        <para
+>Prima di poter usare tutte le capacità di &digikam; con i tag, devi prima assegnarli alle foto. Ci sono alcuni metodi per farlo: quando hai identificato le fotografie a cui vuoi assegnare i tag puoi sia trascinarle sul tag nell'albero dei tag, sia, facendo clic con il &RMB; sulle foto selezionate nella finestra delle immagini, usare il menu <guilabel
+>Assegna tag</guilabel
+> per selezionare i tag che vuoi impostare. </para>
+
+        <para
+>Trascinamento: funziona con entrambe le barre laterali, a condizione, naturalmente, che stiano mostrando dei tag. Con la barra laterale destra funziona in maniera ovvia: trascina il tag e rilascialo sulla fotografia o sulla selezione di fotografie a cui vuoi assegnarlo. Con la barra laterale sinistra devi invece trascinare le fotografie sul tag. Vuoi sapere perché? Prova nell'altro modo e vedrai :-) </para>
+
+        <para
+>Scorciatoie: come menzionato in precedenza in questo capitolo, puoi assegnare delle scorciatoie nelle proprietà dei tag. Con queste puoi assegnare o rimuovere un tag dalle fotografie selezionate. </para>
+
+        <para
+>Menu contestuale: facendo clic con il &RMB; sulle fotografie selezionate e scegliendo <guilabel
+>Assegna tag</guilabel
+> vedrai che la prossima finestra ti offre gli ultimi dieci tag usati, <guilabel
+>Aggiungi nuovo tag...</guilabel
+>, che è stato descritto all'inizio del precedente <link linkend="using-managetags"
+>articolo</link
+>, e <guilabel
+>Altri tag...</guilabel
+>, che conduce a quello che è descritto nel prossimo paragrafo. Il metodo del menu contestuale è ovviamente molto utile se per un po' usi solo un numero limitato di tag del tuo albero. </para>
+
+        <example>
+            <title
+>Mettere i tag alle immagini con il menu contestuale</title>
+            <mediaobject>
+                <imageobject
+><imagedata fileref="&path;using-mainwindow-assigntags.png" format="PNG"/></imageobject>
+            </mediaobject>
+        </example>
+
+        <para
+>Puoi rimuovere un tag da una foto facendo clic con il &RMB; sulla foto e usando il menu <guilabel
+>Rimuovi tag</guilabel
+>. Questo menu mostrerà solo i tag che sono stati impostati per questa foto. </para>
+
+        <para
+>La barra laterale destra: questo è quello che chiamerei il mio metodo standard per assegnare i tag. Fai clic su <guilabel
+>Didascalie ed etichette</guilabel
+> nella barra laterale destra, quindi nella scheda <guilabel
+>Tag</guilabel
+> per vedere l'intero albero dei tag. Ora metti una spunta nelle caselle dei tag che vuoi assegnare, toglila da quelli che non vuoi, ed infine fai clic su <guilabel
+>Applica</guilabel
+>. Se non confermi e cambi il fuoco ti verrà chiesto se vuoi applicare i cambiamenti, a meno che tu non disabiliti questa conferma; puoi farlo sia spuntando <quote
+>Applica sempre le modifiche senza chiedere conferma</quote
+>, sia <quote
+>Non chiedere conferma quando si applicano modifiche nella barra laterale destra</quote
+> nella sezione Varie di <menuchoice
+><guimenu
+>Impostazioni</guimenu
+> <guimenuitem
+>Configura digiKam...</guimenuitem
+></menuchoice
+>. Per ulteriori dettagli su altri pulsanti e campi della scheda <guilabel
+>Tag</guilabel
+> vedi le <link linkend="using-sidebar-tags"
+>barre laterali di &digikam;</link
+>. </para>
+
+        <para
+>Puoi etichettare una fotografia con tutti i tag che vuoi: la fotografia apparirà ogni volta che selezioni uno qualsiasi dei tag impostati su di essa. In questo modo puoi impostare un tag per ogni persona in una fotografia, oltre al posto in cui la foto è stata fatta, in quali circostanze, eccetera. </para>
+
+        <para
+>Una volta che hai messo un tag su una foto, il nome del tag apparirà sotto la miniatura nell'area delle immagini. </para>
+
+        <tip>
+            <para
+>I tag sono conservati in una banca dati per un rapido accesso, e quelli applicati vengono scritti nei campi di dati IPTC dell'immagine (questo almeno per i file JPEG). In questo modo puoi usare i tag con altri programmi o, nel caso di perdita di dati dalla banca dati centrale, i tag potranno essere reimportati nel momento in cui &digikam; rileverà l'immagine. </para>
+        </tip>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

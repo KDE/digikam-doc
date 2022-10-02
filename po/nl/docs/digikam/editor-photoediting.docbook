@@ -1,0 +1,577 @@
+ <sect1 id="photographic-editing"
+> <title
+>Fotografisch bewerken - Workflow</title>
+
+    <sect2 id="image-editing-tools"
+> <title
+>Afbeeldingsbewerking/Hulpmiddelen voor workflow</title>
+
+        <sect3 id="standard-workflow"
+> <title
+>Een standaard voorstel voor workflow</title>
+
+            <para
+>Bij het uitvoeren van de basis bewerkingen dient u in de eerste plaats te denken aan de volgende aspecten: <orderedlist
+> <listitem
+><para
+>Belichting: <link linkend="editor-color-wb"
+>Witbalans</link
+></para
+></listitem
+> <listitem
+><para
+>Kleur: <link linkend="editor-color-wb"
+>Witbalans</link
+></para
+></listitem
+> <listitem
+><para
+> Zwart-en witpunten: <link linkend="editor-color-wb"
+>Witbalans</link
+> or <link linkend="editor-color-levels"
+>Aanpassen niveaus</link
+> </para
+></listitem
+> <listitem
+><para
+>Contrast: <link linkend="editor-color-curves"
+>Krommen wijzigen</link
+></para
+></listitem
+> <listitem
+><para
+> Verzadiging: <link linkend="editor-color-wb"
+>Witbalans</link
+> of <link linkend="editor-filters-colorsfx"
+>Levendig</link
+> of <link linkend="editor-color-correction"
+>Tint/Verzadiging/Helderheid</link
+> </para
+></listitem
+> <listitem
+><para
+>Wijzigen bestandsgrootte (interpolatie) : <link linkend="editor-transform-resize"
+>Wijzig grootte</link
+></para
+></listitem
+> <listitem
+><para
+><link linkend="editor-enhance-sharpen"
+>Verscherpen</link
+></para
+></listitem
+> <listitem
+><para
+><ulink url="help:/digikam/index.html#dam"
+>Digitaal eigendomsbeheer</ulink
+> (toekennen van tags, opschriften, waardering, geolocatie, opslaan met nieuwe naam)</para
+></listitem
+> </orderedlist
+> Wij adviseren deze volgorde van bewerken om de optimale fotografische kwaliteit voor het eindproduct te verkrijgen. Voer nooit verscherpen uit vóór de laatste bewerking. En we adviseren een verliesloos formaat zoals PNG of TIFF voor het opslaan van foto's. Anders verliest u bij elke keer opslaan een beetje van de kwaliteit. Als u de ruimte heeft, gebruik dan 16 bits/kanaal voor uw beste opnamen. Als u van kleurruimte wilt veranderen, speciaal als u in CIEL*a*b wilt werken, dan is 16 bit per kanaal vereist om afrondingseffecten te voorkomen.  </para>
+
+            <para
+>Als u stap 4 en 5 wilt omwisselen, dat is goed mogelijk als het originele contrast al heel goed is, dan kunt u de eerste 4 wijzigingen doen in hetzelfde hulpmiddel, de witbalans.</para>
+
+            <para
+>Veel van de hulpmiddelen die u nodig heeft bij fotobewerking zitten in &digikam;. Hun beschrijving volgt hier:  </para>
+
+        </sect3>
+
+        <sect3
+> <title
+>Inleiding tot algemene mogelijkheden van bewerkingshulpmiddelen</title>
+
+            <para
+>Alle bewerkingshulpmiddelen zoals verscherpen, doezelen, ruisreductie, opnieuw focussen, masker voor onscherpte &etc; gebruiken een gemeenschappelijke dialoogstijl die het effect als voorbeeld toont voordat het filter wordt toegepast op de huidige afbeelding. Hieronder ziet u het hulpmiddel <quote
+>Pas textuur toe</quote
+> in actie met gebruik van de gemeenschappelijke dialoogvorm: </para>
+
+            <example
+> <title
+>Het hulpmiddel textuur toepassen in actie</title>
+                <screenshot>
+                    <screeninfo
+>Het hulpmiddel textuur toepassen in actie</screeninfo>
+                    <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="&path;editor-commondialogtools.png" format="PNG"/>
+                    </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </example>
+
+            <para>
+
+                <itemizedlist>
+
+                    <listitem
+><para
+><emphasis
+>(1)</emphasis
+>: de zeven knoppen linksboven selecteren de vergelijkingsstijl van het voorbeeldgebied. De modi zijn: <itemizedlist>
+
+                            <listitem
+><para
+>Oorspronkelijke afbeelding.</para
+></listitem>
+
+                            <listitem>
+                                <para
+>Verticaal splitsen zonder doublures. Het linker deel toont het origineel terwijl de rechterzijde het filter toont, toegepast op de voortzetting van het geselecteerde zoomgebied.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Horizontaal splitsen zonder doublures. Het bovenste gebied toont het origineel terwijl op het onderste deel het filter is toegepast op de voortzetting van het geselecteerde zoomgebied. </para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Verticaal splitsen. Het linker gebied geeft het origineel en het rechter het filtereffect ter vergelijking.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Horizontaal splitsen. Het bovenste gedeelte toont het origineel en het onderste het filtereffect ter vergelijking.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Effectvoorbeeld. Dit is een live-effect voorbeeld zonder vergelijking.</para>
+                            </listitem>
+
+                            <listitem>
+                                <para
+>Stijl 'muis boven' stijl: voorbeeld wordt getoond wanneer de muis buiten het hoofdvenster is (in het instellingengebied), anders wordt het origineel weergegeven.</para>
+                            </listitem>
+
+                        </itemizedlist>
+
+                    </para
+></listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(2)</emphasis
+>: Er zijn twee knoppen die omgeschakeld kunnen worden om over- of onderbelichting te tonen. De gewenste kleuren kunnen worden aangepast in de <link linkend="setupdialog.anchor"
+>Algemene instellingenpagina</link
+>.</para>
+                        </listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(3)</emphasis
+>: Het voorbeeldselectievenster. Klik en sleep metde muis op het zwevende frame om het te verplaatsen naar de afbeelding. Het voorbeeldgebied links van venster wordt dienovereenkomstig aangepast.</para>
+                        </listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(4)</emphasis
+>: het instellingsgebied van filter of hulpmiddel.</para>
+                        </listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(5)</emphasis
+>: in de linker onderhoek: bevindt zich een hulp- en herstelknop naar de standaard instellingen (alle instellingen worden onthouden van de laatste instellingen van het hulpmiddel).</para>
+                        </listitem>
+
+                        <listitem>
+                        <para
+><emphasis
+>(6)</emphasis
+>: Er is een voortgangsindicatie voor het hulpmiddel met bijbehorende berekeningen.</para>
+                        </listitem>
+
+                </itemizedlist>
+
+            </para>
+
+        </sect3>
+
+        <sect3
+> <title
+>De set hulpmiddelen van &digikam;</title>
+
+            <itemizedlist>
+
+                <listitem
+><para
+>Afbeeldingskleur <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-color-depth"
+>Coderingsdiepte</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-profile"
+>Kleurruimteconversie...</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-auto"
+>Autocorrectie</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-exposure"
+>Helderheid/contrast/gamma</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="hsladjusttool.anchor"
+>Tint/verzadiging/lichtheid</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="colorbalancetool.anchor"
+>Kleurbalans</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-levels"
+>Niveaus aanpassen</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-wb"
+>Witbalans/Belichting/Verzadiging</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-curves"
+>Curves aanpassen</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-mixer"
+>Kanaalmixer</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-bw"
+>Zwart-wit</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="infraredtool.anchor"
+>Infraroodfilm simuleren</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-color-neg"
+>Kleurennegatief</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+                <listitem
+><para
+>Afbeeldingverbetering <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-enhance-sharpen"
+>Verscherpen (verscherpen, onscherp masker, opnieuw focusseren)</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-blur"
+>Hulpmiddel voor vervagen</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-redeyes"
+>Rode ogen verwijderen</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-inpaint"
+>Foto inkleuren</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-localcontrast"
+>Lokaal contrast</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-nr"
+>Ruisreductie</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-hotpixels"
+>Correctie van hotpixels</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-distortion"
+>Lensvervorming corrigeren</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-restoration"
+>Fotorestauratie</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-vignetting"
+>Hulpmiddel voor vignettering corrigeren</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-enhance-lenscorrection"
+>Hulpmiddel voor automatische lenscorrectie</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+                <listitem
+><para
+>Afbeeldingstransformatiehulpmiddelen <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-transform-crop"
+>Uitsnedegereedschap</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-rotateflip"
+>Grootte wijzigen</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-liquid"
+>Vloeiend grootte wijzigen</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-resize"
+>Grootte wijzigen</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-freerotation"
+>Vrije rotatie</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-perspective"
+>Perspectief aanpassen</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-transform-shear"
+>Hulpmiddel voor schuin trekken </link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+                <listitem
+><para
+>Verfraaien van de afbeelding <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-decorate-border"
+>Rand toevoegen</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-decorate-inserttext"
+>Tekst invoegen</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-decorate-texture"
+>Textuur aanbrengen</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+                <listitem
+><para
+>Filters voor speciale effecten <itemizedlist>
+                    <listitem
+><para
+><link linkend="editor-filters-colorsfx"
+>Kleureffecten</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-filmgrain"
+>Filmkorrel aanbrengen</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-oilpaint"
+>Olieverfschilderij simuleren</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-charcoal"
+>Houtskooltekening simuleren</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-emboss"
+>Breng reliëf aan in foto</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-distortionfx"
+>FX-vervorming</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-blurfx"
+>FX-vervaging</link
+></para
+></listitem>
+                    <listitem
+><para
+><link linkend="editor-filters-raindrops"
+>Regendruppels aanbrengen</link
+></para
+></listitem>
+                    </itemizedlist>
+                </para
+></listitem>
+
+            </itemizedlist>
+
+        </sect3>
+
+    </sect2>
+
+    <sect2 id="raw-workflow"
+> <title
+>RAW-afbeeldingsbestanden bewerken, RAW bewerkingsvolgorde</title>
+    <anchor id="rawprocessing.anchor"/>
+
+        <para
+>Een typisch RAW bewerkingsvolgorde met &digikam; kan uit de volgende stappen bestaan:</para>
+
+            <itemizedlist>
+
+                <listitem
+><para
+>De voorkeuren voor RAW-conversie en kleurbeheer instellen: <itemizedlist>
+
+                        <listitem
+><para
+>haal de ICC-kleurprofielen voor de camera, scherm en printer op</para
+></listitem>
+
+                        <listitem
+><para
+>&digikam; juist instellen door een kleurwerkruimte te definiëren </para
+></listitem>
+
+                    </itemizedlist>
+
+                </para
+></listitem>
+
+                <listitem
+><para
+>Instelling van witpunt van camera</para
+></listitem>
+
+                <listitem
+><para
+>Mozaïek verwijderen (inclusief interpolatie, ruis filteren en <ulink url="help:/digikam/using-setup.html#CA.anchor"
+>chromatische aberratie corrigeren</ulink
+>) </para
+></listitem>
+
+                <listitem
+><para
+>Conversie naar kleurruimte</para
+> </listitem>
+
+                <listitem
+><para
+>Gammacorrectie, toon overeen laten komen</para
+> </listitem>
+
+                <listitem
+><para
+>Kleurprofieltoewijzing</para
+> </listitem>
+
+                <listitem
+><para
+>Dynamisch bereik vergroten (optioneel)</para
+></listitem>
+
+                <listitem
+><para
+>Ga door met <link linkend="standard-workflow"
+>standaard workflow</link
+></para
+></listitem>
+
+            </itemizedlist>
+
+        <para
+>Vanaf daar is alles eenvoudig, selecteer een RAW-afbeelding en open het in de bewerker. Het widget voor kleurbeheer wordt weergegeven nadat de afbeelding is verwerkt om kleurweergave aan te passen. Zonder kleurbeheer zijn alle afbeeldingen erg donker, dit is normaal. U kunt experimenteren met de verschillende profielen die u hebt om het beste invoerprofiel voor uw afbeelding te selecteren (sommige zijn zeer neutraal, zelfs een beetje saai, sommigen geven wat meer verzadigde resultaten, &etc;). </para>
+
+    </sect2
+>&doc-editor-color; &doc-editor-enhance; &doc-editor-transform; &doc-editor-decorate; &doc-editor-filters; </sect1>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

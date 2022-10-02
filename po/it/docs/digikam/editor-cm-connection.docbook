@@ -1,0 +1,350 @@
+<sect2 id="editor-cm-connection"
+> <title
+>Le connessioni dello spazio del colore</title>
+
+    <para
+>Così la domanda per ogni trio di valori RGB nell'immagine TIFF a 16bit, poniamo, prodotta da dcraw diventa, "Che cosa veramente significa un particolare trio di valori RGB per i pixel che formano le immagini prodotte da questa particolare (marca e modello) fotocamera in termini di qualche standard assoluto che si riferisce ad un osservatore ideale. Questo standard assoluto che si riferisce ad un osservatore ideale e più comunemente chiamato PCS <emphasis
+>Profile Connection Space</emphasis
+>. Un profilo di fotocamera è necessario per caratterizzare accuratamente o per descrivere la risposta dei pixel di una data macchina fotografica alla luce che entra, così che i valori RGB nell'output del file prodotto dal convertitore RAW può essere tradotto prima in Profile Connection Space (PCS) assoluto e quindi dal PCS allo spazio di lavoro da te scelto. Da un lato molto importante, per la maggior parte del mondo Open Source (incluso digikam), il software usato per tradurre da un profilo di camera al PCS e dal PCS allo spazio di lavoro scelto e eventualmente dallo spazio di output prescelto (per stampare o forse lo schermo del monitor) è basato su LCMS (il <ulink url="http://littlecms.com"
+>little color management engine</ulink
+>). Per quel che vale, la mia esperienza personale ha mostrato che LCMS fa una conversione più accurata del motore di conversione del colore proprietario di Adobe. Ulteriormente, per quasi tutti i programmi di conversione, includendo i software commerciali a sorgente chiuso come Adobe Photoshop, la conversione RAW è tipicamente basata sulla decodifica del file RAW fatta da dcraw. David Coffin, autore di dcraw, è il campione della conversione RAW: senza di lui saremmo obbligati ad usare il software proprietario che arriva con la macchina digitale su Windows/Mac. Gli algoritmi di interpolazione di dcraw (da non confondere con la summenzionata decodifica dei file proprietari RAW), che sono parte di &digikam; se propriamente usati, producono risultati uguali o superiori al software commerciale e chiuso. Noi nel mondo di &Linux; e del software Open Source non siamo cittadini di seconda categoria quando si tratta di immagine digitale. Anzi. </para>
+
+    <para
+>Ci sono due profili PCS comunemente usati: CIELAB e CIEXYZ (vedi la sezione<ulink url="https://it.wikipedia.org/wiki/Gestione_digitale_del_colore"
+> Gestione digitale del colore</ulink
+> sulla traduzione del colore o cerca CIELAB e CIEXYZ su Wikipedia). LCMS usa il profilo della macchina per tradurre i valori RGB dal file RAW interpolato, così è, l'immagine TIFF prodotto da dcraw, nel PCS appropriato (di solito CIEXYZ). Un PCS non è di per sé uno spazio di lavoro. Piuttosto PCS è uno spazio assoluto di riferimento usato solamente per tradurre da uno spazio di colore ad un altro. Pensa al PCS come al traduttore universale di tutti i profili di colore che un'immagine potrebbe incontrare nel corso del suo viaggio dal file RAW della fotocamera all'output finale: </para>
+
+    <orderedlist>
+
+        <listitem
+><para
+>LCSM usa il profilo della fotocamera, anche chiamato profilo di input, per tradurre i numeri RGB interpolati, prodotti da dcraw, che hanno solo un significato relativo alla (marca e modello) fotocamera, ad un secondo insieme di numeri RGB che hanno un significato solo all'interno del PCS. </para
+></listitem>
+
+        <listitem
+><para
+>LCMS traduce i numeri RGB del PCS nei numeri corrispondenti al tuo spazio di lavoro prescelto, così che tu possa editare la tua immagine. Ed ancora, questi numeri dello spazio di lavoro hanno solamente significato relativamente allo spazio di lavoro dato. Lo stesso rosso, parlando visivamente, è rappresentato da differenti triplette di numeri RGB nei differenti spazi di lavoro; se tu vuoi assegnare il profilo sbagliato l'immagine sembrerà sbagliata, molto o poco dipende dalle differenze tra i due profili. </para
+></listitem>
+
+        <listitem
+><para
+>Mentre stai elaborando la tua immagine nel tuo spazio di lavoro prescelto, LCMS dovrebbe tradurre tutti i numeri RGB dallo spazio di lavoro ancora in PCS a numeri RGB corretti, che rendono capace il tuo monitor (il tuo dispositivo di visualizzazione) di dare la rappresentazione più accurata possibile della tua immagine così come viene editata. Questa traduzione per il monitor è fatta al volo e non deve mai essere notata, a meno che non avvenga in maniera scorretta, quindi l'immagine mostrata apparirà sbagliata, forse poco, forse moltissimo. </para
+></listitem>
+
+        <listitem
+><para
+>Quando sei soddisfatto e la tua immagine editata è pronta per essere condivisa con il resto del mondo, LCMS traduce i numeri dello spazio di colore RGB nello spazio PCS e nello spazio di colore della stampante usando il profilo di colore della stampante caratteristico della tua combinazione di stampante/carta (se stai pianificando di stampare l'immagine) oppure in sRGB (se stai pianificando di mostrare l'immagine sul web o comunque sui monitor dei tuoi amici o in una presentazione a schermo). </para
+></listitem>
+
+    </orderedlist>
+
+    <para
+>Torniamo indietro un po' a vedere il primo profilo di colore che una immagine incontra, cioè quello della fotocamera (vedi (1) subito sopra) - dcraw può infatti applicare per te il profilo della tua fotocamera (dcraw usa internamente LCMS). Ma prima la generazione dell'immagine TIFF composta dai valori RGB interpolati derivati dal file RAW e poi l'applicazione del profilo della fotocamera al file interpolato sono due passaggi distinti e totalmente separabili (separabili in teoria e pratica da dcraw; solamente in teoria per la maggior parte degli altri convertitori RAW). Le opzioni di output da linea di comando di dcraw "-o 0 [colore Raw (unico per ogni fotocamera)] -4 [16-bit lineare] -T [tiff]" dice a dcraw di produrre i numeri RGB dalla interpolazione RAW in un file TIFF senza applicare un profilo della fotocamera (le parole in parentesi spiegano l'opzione ma non devono essere scritte nella linea di comando). Quindi, se davvero ti piace lavorare dalla linea di comando, puoi usare l'utilità tifficc di LCMS per applicare il profilo della fotocamera da solo. Il vantaggio di fare così è che puoi dire a LCMS di usare una conversione ad alta qualità (dcraw sembra che usi l'opzione media come prestabilita). Lo svantaggio, ovviamente, è che applicare il profilo della tua fotocamera dalla linea di comando aggiunge un passo in più al tuo metodo di editare i file RAW. </para>
+
+    <sect3 id="using-iccprofile">
+        <title
+>Dove trovare profili della fotocamera</title>
+
+        <para
+>Quindi, dove ci procuriamo questi profili specifici della fotocamera, così necessari che servono per tradurre i nostri file RAW interpolati in uno spazio di lavoro? La sezione sulla gestione del colore del sito di <ulink url="http://ufraw.sourceforge.net/Colors.html"
+>UFRAW</ulink
+> ha un po' di informazioni su dove trovarli pronti. È una sfortuna per il mondo dell'immagine digitale che i profili forniti da Canon, Nikon e simili non funzionino così bene con i convertitori RAW diversi da quelli forniti dal produttore della macchina fotografica. Ragion per cui Bibble e Phase One (e Adobe, ma ACR nasconde i profili fatti da Adobe dentro al codice del programma) per esempio devono farsi i propri profili per tutte le fotocamere che supportano: tieni a mente questa propensione proprietaria del produttore della tua fotocamera la prossima volta che ne compri una. </para>
+
+        <para
+>Ma tornando a trovare un profilo di fotocamera per la tua macchina, la vera risposta (assumendo che tu non sia soddisfatto di quello pronto) è di farsi il proprio o di averne uno fatto apposta. Molti servizi commerciali forniscono un servizio di creazione di profili, a pagamento ovviamente. O puoi usare LPRof o Argyll per profilare da solo la tua macchina. Non ho ancora percorso fino in fondo la strada, così non posso dire se sia facile o difficile come processo. Ma immagino che, sapendo quanto meticolose siano le persone dietro a Argyll, LPRof e LCMS riguardo alla gestione del colore, il farsi il proprio profilo di fotocamera sia molto fattibile, e molto verosimilmente i risultati saranno migliori di quelli ottenibili con ogni profilo proprietario. Dopotutto, Canon (Bibble e pure Phase One per quanto importa) non hanno profilato la mia fotocamera, hanno solo profilato una macchina come la mia. </para>
+
+        <para
+>Spazi di lavoro: </para>
+
+        <para
+>Così ora il tuo file RAW è stato interpolato da dcraw, hai ottenuto un profilo di fotocamera e hai usato tifficc di LCMS per applicare il tuo profilo di fotocamera alla TIFF prodotta da dcraw (o hai chiesto a dcraw di farlo per te). Che cosa significa tutto questo? La risposta vera implica un po' di matematica e di scienza dei colori al di sopra delle mie capacità, e forse anche delle tue. La risposta breve e pratica è che, né lo spazio del profilo della fotocamera, né il PCS è uno spazio appropriato per editare le immagini. Il prossimo passo è quello di scegliere uno spazio di lavoro adatto. E allora tu (o piuttosto il motore di gestione del colore LCMS che il tuo software usa) al momento fai una doppia traduzione: prima LCMS usa il profilo della fotocamera per tradurre i valori RGB di ogni pixel nel file senza profilo che gli proviene da dcraw applicato nello spazio PCS, poi traduce i valori RGB di ogni pixel da PCS allo spazio di lavoro prescelto. </para>
+
+        <para
+>Confusioni e terminologia che confonde: </para>
+
+        <para
+>Prima di dire altro sugli spazi di lavoro devo chiarire un po' di confusione e di terminologia confusa: </para>
+
+        <para
+>Primo, sRGB è sia uno spazio colore di lavoro sia uno spazio colore per l'output per le immagini indirizzate al web e per essere mostrate sullo schermo (se hai uno di quei nuovi monitor fighi (sic!) a larga gamma, più di quanto sia coperta da sRGB, potresti ovviamente riconsiderare di profilare il tuo monitor per sfruttarlo al massimo, ma per favore ricordati di riconvertire la tua immagine a sRGB prima di mandarla ai tuoi amici!). sRGB è anche lo spazio colore che un bel po' di stampanti casalinghe e quelle per la produzione di massa si aspettano di ricevere da un'immagine mandata in stampa. È anche il profilo atteso dalla maggior parte dei programmi quando un'immagine non ne ha uno incorporato che dica al programma che spazio di colore dovrebbe essere usato per interpretare i numeri RGB. Così, se scegli di non usare la gestione del colore, le opzioni della tua gestione del colore sono semplici: imposta tutto a sRGB. </para>
+
+        <para
+>Secondo, tutte le JPEG (o le TIFF, se hai una più vecchia macchina fotografica Minolta Dimage) che escono dalla fotocamera (anche quando prodotte da macchine punta-e-scatta che non ti permettono di salvare in formato RAW) iniziano la loro vita dentro la macchina come un file RAW prodotto dal convertitore A-D. Il processore dentro la fotocamera interpola il file RAW, assegna un profilo di fotocamera, traduce i numeri RGB risultanti in uno spazio di lavoro (di solito sRGB ma qualche volta puoi scegliere AdobeRGB, dipende dall'apparecchio fotografico), comprime in JPEG e memorizza il file nella scheda di memoria. Così le immagini JPEG o TIFF provenienti dalla tua macchina non hanno bisogno di aver assegnato un profilo, che viene quindi tradotto in uno spazio di lavoro tramite PCS. Le immagini JPEG dalla fotocamera sono già in uno spazio di lavoro. </para>
+
+        <para
+>Terzo, nel caso che qualcuno sia dubbioso su questo punto, noti che un file RAW interpolato non è più un file RAW. È stato interpolato e quindi elaborato come immagine TIFF, i valori RGB della quale necessitano di essere tradotti ad uno spazio di lavoro, usando un profilo di fotocamera, il PCS e LCMS. Quarto (solamente per futuro riferimento), per introdurre un po' di terminologia sulla gestione del colore comunemente usata, il profilo della fotocamera ed il profilo del colore della tua stampante sono entrambi dipendenti dal dispositivo, laddove lo spazio di lavoro sarà indipendente dal dispositivo - può essere usato con ogni immagine, con qualsiasi software propriamente gestito nel colore, senza riguardo da dove l'immagine si è originata.</para>
+
+        <para
+>Quinto, sopra ho usato le parole tradurre e traduzione come una metafora descrittiva per ciò che fa LCMS quando traduce i valori RGB da uno spazio ad un altro tramite PCS. La terminologia solita e corretta è convertire e conversione, che userò sotto. I quattro metodi di conversione da uno spazio colore ad un altro sono: percettivo, colorimetrico relativo, colorimetrico assoluto e saturazione. Quale metodo di conversione dovresti usare per un dato passaggio di elaborazione dell'immagine da un file RAW all'output definitivo è oltre gli scopi della guida. In linea di massima: quando sei in dubbio, usa il percettivo. </para>
+
+        <para
+>Sesto (e ancora, solamente per futuro riferimento), assegnare un profilo vuol dire cambiare il significato dei numeri RGB in un'immagine, incorporando un nuovo profilo senza cambiare i veri valori RGB associati ad ogni pixel nell'immagine; convertire significa incorporarne un nuovo profilo, ma allo stesso tempo anche cambiare i numeri RGB, in modo che il significato dei valori RGB (così è, i colori visibili del mondo reale rappresentati dal trio numerico RGB associato con ogni pixel dell'immagine) rimanga lo stesso prima e dopo la conversione da uno spazio all'altro. Dovresti essere capace di fare conversioni multiple di un'immagine da uno spazio di lavoro ad un altro, e, se stai usando un editor di immagine che viene gestito nel colore, anche se tutti i numeri RGB nell'immagine cambieranno con ogni conversione, l'immagine mostrata sul tuo schermo dovrebbe sembrare la stessa. (mettendo da parte i piccoli indistinguibili ma inevitabili cambiamenti dovuti alla discordanza di gamma e agli errori matematici di arrotondamento). Ad ogni modo, tutte le volte che assegni un nuovo profilo di spazio di lavoro piuttosto che convertire in un nuovo spazio di lavoro, l'aspetto di un'immagine dovrebbe più o meno cambiare drasticamente (di solito in peggio). </para>
+
+        <para
+>Infine (e questo è un punto cruciale), la gestione del colore non è solo importante se tu scatti in RAW. Condiziona ogni livello della linea di elaborazione di un'immagine, che tu parta con un file RAW che proprio tu interpoli e traduci in TIFF; o che tu parta con una JPEG o TIFF prodotta dalla tua fotocamera. </para>
+
+        <para
+>Spazi di lavoro affetti da copyright e da copyleft: </para>
+
+        <para
+>Riterrò assodato che tutti gli spazi di lavoro ordinariamente incontrati, come: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>Le diverse varianti dello sRGB (vedi <ulink url="http://www.color.org/v4spec.xalter"
+>color.org</ulink
+>). </para
+></listitem>
+
+            <listitem
+><para
+><ulink url="http://www.brucelindbloom.com"
+>BruceRGB</ulink
+>. </para
+></listitem>
+
+            <listitem
+><para
+>I vari <ulink url="http://www.eci.org/doku.php?id=en:colourstandards:workingcolorspaces"
+>profili</ulink
+> ECI (European color initiative) dello spazio di lavoro. </para
+></listitem>
+
+            <listitem
+><para
+>AdobeRGB, Adobe WideGamutRGB e Kodak/Adobe ProPhotoRGB (Kodak e Adobe ProPhoto sono la stessa cosa, solo con un diverso marchio) e le loro controparti <ulink url="http://www.behrmann.name/index.php?option=com_content&amp;task=view&amp;id=34&amp;Itemid=68"
+>non marchiate e senza copyright</ulink
+> (Oyranos include una versione non marcata di AdobeRGB). </para
+></listitem>
+
+            <listitem
+><para
+>E un bel po' di altri che potrebbero essere aggiunti alla lista, sono tutti più o meno adatti come spazi di lavoro. Quale spazio di lavoro dovresti usare dipende solo ed esclusivamente da te, dai requisiti del tuo editor di immagini digitali, dai tuoi eventuali intenti di output (web, stampa di qualità artistica, &etc;). </para
+></listitem>
+
+        </orderedlist>
+
+        <para
+>Comunque, come critica a parte, se stai usando un profilo dello spazio di lavoro Adobe o un altro coperto da copyright, essi contengono informazioni di copyright che compariranno nei dati EXIF della tua immagine. Ultimamente ho cercato attentamente la mailing list di openicc. Apparentemente LCMS può essere usato per produrre profili di spazio di lavoro senza marchi e copyleft che sono gli stessi (veramente indistinguibili dall'originale) dei profili dello spazio di lavoro marcati e con copyright. Sarebbe una meravigliosa aggiunta a &digikam; se un insieme di profili di spazio di lavoro «copyleft», che includa versioni senza marchio o ri-etichettate di ProPhotoRGB, AdobeRGB, e Adobe WidegamutRGB (può darsi in due qualità ognuno: gamma lineare e gamma solita), possa essere incluso come una parte del pacchetto &digikam;. </para>
+
+        <para
+>Quale spazio di lavoro: la gamma </para
+> 
+
+        <para
+>Ora, la prossima domanda è: quale spazio di lavoro dovrei usare? <ulink url="https://en.wikipedia.org/wiki/Color_management#Working_spaces"
+>Wikipedia dice:</ulink
+> <blockquote
+><para
+>Gli spazi di lavoro, così come sRGB e Adobe RGB, sono spazi di colore che facilitano i buoni risultati mentre si elabora. Per esempio, i pixel con lo stesso valore RGB dovrebbero apparire neutrali. Usare un largo (gamut) spazio di lavoro porterà alla "posterizzazione", mentre usare uno spazio di lavoro piccolo porterà al clipping. Questo bilanciamento è una considerazione critica per l'editor di immagine</para
+></blockquote>
+        </para>
+
+        <para
+>Bene, quella citazione da Wikipedia è chiara come una notte di luna nuova: non so se sarò in grado di spiegartelo più chiaramente, ma proverò. «[P]ixel con lo stesso valore di RGB dovrebbero apparire neutrali» significa solo che, per ogni dato pixel in una immagine che è stato convertito ad un appropriato spazio di colori, se R=G=B dovresti vedere un grigio o un nero o un bianco sullo schermo. </para>
+
+        <para
+>Non so di una lista con altri requisiti tecnici per uno spazio di lavoro adatto, sebbene indubbiamente qualcuno avrà prodotto un tale elenco. Ma la maggior parte dei profili di spazio di lavoro sono caratterizzati da: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>Le primarie RGB che stabiliscono lo spettro dei colori, cioè la gamma coperta da un dato profilo. </para
+></listitem>
+
+            <listitem
+><para
+>Punto di bianco, tipicamente D50 o D65, che stabilisce il raggio dinamico totale dello spazio di lavoro, da 0,0,0 (nero totale) al bianco più luminoso possibile. </para
+></listitem>
+
+            <listitem
+><para
+>Gamma. </para
+></listitem>
+
+        </orderedlist
+> 
+
+        <para
+>Le conseguenze pratiche che risultano dall'uso di diverse primarie RGB, che portano a spazi di lavoro più grandi o più piccoli, sono discusse sotto. Le conseguenze pratiche per le differenti scelte del punto di bianco dello spazio di lavoro vanno oltre lo scopo di questa guida. Qui discuterò un pochino delle conseguenze pratiche della gamma dello spazio di lavoro (per un articolo eccellente e diverse referenze cerca gamma su Wikipedia). </para>
+
+        <para
+>La gamma di un profilo di colore sancisce di quale trasformata di potenza si ha bisogno per convertire in modo appropriato da un profilo di colore incorporato nell'immagine (può darsi il tuo spazio di colore di lavoro) ad un altro profilo di colore con una gamma differente, come (I) il profilo del monitor usato per proiettare l'immagine sullo schermo oppure (II) può darsi un nuovo spazio di colore, o (III) forse dal tuo spazio di lavoro allo spazio di colore della tua stampante. </para>
+
+        <tip>
+            <para
+>Parlando matematicamente, per una trasformata di potenza (N.d.T.: in inglese "power transform") si normalizzano i numeri RGB e si elevano i numeri risultanti alla potenza appropriata in modo dipendente alle rispettive gamme dell'inizio e della fine dello spazio di colore, quindi si ri-normalizzano i risultati al nuovo insieme di numeri RGB. LCMS fa questo per te quando chiedi e LCMS di convertire da uno spazio di colore ad un altro; comunque, se tutto quello che fai è una trasformata di potenza, usa imagemagick al posto di LCMS e limitati alla manipolazione diretta dei valori RGB: i risultati saranno molto più accurati. </para>
+        </tip>
+
+        <para
+>Una conseguenza pratica della gamma di uno spazio di lavoro è che più alta è la gamma, più i toni discreti sono disponibili per l'editing nelle ombre, con la conseguenza che sono disponibili meno toni nella regione delle luci alte. Teoricamente, se stai lavorando su una foto molto scura Low-key (in toni bassi) potresti volere uno spazio di lavoro con una gamma più alta. E se stai lavorando su un'immagine High-key (toni alti), diciamo una foto presa al sole di mezzogiorno di un vestito da sposa con un sfondo innevato, potresti voler scegliere uno spazio di lavoro con una gamma più bassa, così hai più gradazioni di tono disponibili nelle luci alte. Ma nel mondo reale della vera elaborazione delle immagini, quasi tutti usano uno spazio di lavoro con la gamma di 1,8 o 2,2. </para>
+
+        <para
+>Alcune persone stanno cercando di standardizzare la gamma 2,0. sRGB e LStar-RGB non sono spazi di lavoro basati sulla gamma. Piuttosto, sRGB usa una <ulink url="https://it.wikipedia.org/wiki/Spazio_colore_sRGB"
+>gamma ibrida</ulink
+>, e LStar-RGB usa una curva di risposta tonale basata sulla luminosità invece che un valore gamma. Vedi <ulink url="http://www.colormanagement.org/en/workingspaces.html"
+>qui</ulink
+> per maggiori informazioni, e cerca poi su google informazioni più approfondite. </para>
+
+        <para
+>In aggiunta alla gamma 1,8 e 2,2, la sola altra gamma per uno spazio di lavoro che ottiene molta attenzione o uso è la gamma lineare, o gamma 1,0. <emphasis
+>La gamma lineare </emphasis
+> è usata nella formazione dell'immagine HDR (high dynamic range) ed anche se si vuole evitare di introdurre errori indotti dalla gamma in una regolare elaborazione low dynamic range. «Gli errori gamma-indotti» sono un argomento al di fuori dello scopo di questa guida. Ma leggi <ulink url="http://www.4p8.com/eric.brasseur/gamma.html"
+>errori della gamma</ulink
+> in <ulink url="http://www.21stcenturyshoebox.com/essays/color_reproduction.html"
+>nel ridimensionamento dell'immagine,</ulink
+> per i salti di tonalità indotti dalla gamma. </para>
+
+        <para
+>Sfortunatamente e a dispetto del loro innegabili vantaggi matematici, gli spazi di lavoro a gamma lineare hanno così pochi toni nelle ombre che (a mio giudizio) sono impossibili da usare per l'editing se si lavora in 8bit, e sono ancora problematici a 16. Quando verrà il giorno in cui tutti editeremo file a 32bit prodotti da fotocamere HDR sui nostri supercomputer personali prevedo che useremo tutti spazi di lavoro con gamma=1. Adobe Lightroom sta già usando uno spazio di lavoro a gamma lineare «sotto il cofano», e Lightzone ha sempre usato uno spazio di lavoro a gamma lineare. </para>
+
+        <para
+>Quale spazio di lavoro: <emphasis
+>gamut ampia</emphasis
+> o <emphasis
+>gamut piccola</emphasis
+> </para>
+
+        <para
+>Nello scegliere uno spazio di lavoro, una grossa considerazione da fare è che alcuni spazi di lavoro sono più grandi di altri, che significa che coprono uno spettro maggiore del visibile (e di conseguenza includono alcuni colori immaginari - costrutti matematici che non esistono realmente). Queste spazi più grandi offrono il vantaggio di permetterti di mantenere tutti i colori acquisiti dalla tua fotocamera, e sono preservati dalla conversione LCMS dal profilo della tua macchina fotografica al profilo super-ampio dello spazio di connessione PCS. </para>
+
+        <para
+>Ma mantenere tutti i possibili colori ha un prezzo. Sembra che qualsiasi immagine digitale (un'eccezione che richiede una gamma di colore più larga sarebbe una foto con un soggetto altamente saturo, come i giunchi gialli) verosimilmente contiene solo un insieme minore di tutti i possibili colori del visibile che la tua fotocamera è in grado di catturare. Questo insieme più piccolo è facilmente contenuto in uno degli spazi di lavoro minori. Usare uno spazio di lavoro molto largo significa che editare la tua immagine (applicare curve, aumentare la saturazione, &etc;) può facilmente produrre colori che il tuo eventuale dispositivo di output (stampante, monitor) non è semplicemente in grado di riprodurre. Così la conversione da uno spazio di lavoro allo spazio del dispositivo di output (es.: la tua stampante) dovrà rimappare i colori fuori gamma nella tua immagine editata, alcuni dei quali potrebbero essere anche del tutto immaginari, allo spazio colore della tua stampante con la sua gamma di colore molto più piccola. Questo processo di ri-mappatura condurrà a dei colori inaccurati e perdita di saturazione al meglio. Ancora peggio, la ri-mappatura può facilmente portare al bandeggio («posterizzazione» - salti in quello che dovrebbe essere una dolce transizione dei colori, come attraverso uno scorcio di cielo blu) e al clipping (la tenue transizione accuratamente lavorata di delicate sfumature di rosso, per esempio, potrebbe essere ri-mappata come un blocco solido di rosso monotono nello spazio di colore della tua stampante). </para>
+
+        <para
+>In altre parole, spazi di lavoro a larga gamut, se impropriamente maneggiati, possono portare a perdita di informazione in uscita. Gli spazi di lavoro a piccola gamma possono tagliare le informazioni in input. Come dice Wikipedia: è un bilanciamento. Qui ci sono un po' di suggerimenti ripetuti spesso: </para>
+
+        <orderedlist>
+
+            <listitem
+><para
+>Per le immagine orientate alla rete, adopera una delle varianti sRGB (ce ne sono molte). </para
+></listitem>
+
+            <listitem
+><para
+>Per la massima accuratezza nell'editare la tua immagine (cioè per tirare fuori il massimo dai tuoi bit con il minore rischio di bandeggio o di clipping quando converti la tua immagine dal tuo spazio di lavoro ad uno spazio di output) usa il più piccolo spazio di lavoro che includa tutti i colori nella scena che hai fotografato, più un piccolo spazio extra per quei nuovi colori che produci inavvertitamente quando editi. </para
+></listitem>
+
+            <listitem
+><para
+>Se stai lavorando a 8bit piuttosto che a 16, scegli uno spazio di lavoro più piccolo piuttosto che uno più largo. </para
+></listitem>
+
+            <listitem
+><para
+>Per propositi di archiviazione, converti i tuoi file RAW in tiff a 16bit con uno spazio di lavoro a larga gamma per evitare di perdere le informazioni sui colori. Quindi converti questo archivio tiff nel tuo spazio di lavoro prescelto (salvando l'immagine tiff convertita di lavoro con un nuovo nome, ovviamente). Vedi <ulink url="http://simon.tindemans.eu/essays/scenereferredworkflow"
+>qui</ulink
+> per maggiori dettagli. </para
+></listitem>
+
+        </orderedlist>
+
+        <para
+>I perché di questi piccoli suggerimenti riguardo quale spazio di lavoro usare vanno al di là di questa guida. Vedi quindi l'eccellente sito di Bruce Lindbloom (<ulink url="http://www.brucelindbloom.com/"
+>Info, Information about RGB Working Spaces</ulink
+>) per un raffronto della gamma di vari spazi colore di lavoro (griglie di colori inclusi). Vedi <ulink url="http://www.luminous-landscape.com/tutorials/prophoto-rgb.shtml"
+>qui</ulink
+> e <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm"
+>qui</ulink
+> per una presentazione dei pro e contro. E mentre sei nel sito <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm"
+>cambridgeincolour.com</ulink
+>, leggi il tutorial sulla gestione del colore. </para>
+
+    </sect3>
+
+    <sect3 id="softproofing">
+        <title
+>Prova a schermo</title>
+
+        <para
+>La prova a schermo è un modo per vedere in anteprima sullo schermo (sul monitor) il risultato che ti devi attendere dall'output su un altro dispositivo, solitamente una stampante. La prova a schermo mostrerà la differenza che ti devi aspettare prima che tu la produca veramente (buttando via il tuo prezioso inchiostro). Così puoi migliorare le impostazioni senza gettar via tempo e soldi. </para>
+
+    </sect3>
+
+    <sect3 id="rendering-intention">
+        <title
+>Intenti di rendering</title>
+
+        <para
+>Gli intenti di rendering si riferiscono al modo in cui le gamme sono trattate quando lo spazio di colore dell'obiettivo voluto non può gestire tutta la gamma. </para>
+
+        <itemizedlist>
+
+            <listitem
+><para
+><emphasis
+>Percettivo</emphasis
+>, anche chiamato Gamma Piena dell'Immagine o Mantieni la Piena Gamma, si raccomanda generalmente per le immagini fotografiche. La gamma colore viene espansa e compressa quando ci si muove tra gli spazi di colore per mantenere consistente l'aspetto tra tutti i passaggi. I colori poco saturi cambiano molto poco. I colori più saturi nella gamma di entrambi gli spazi possono essere alterati per distinguerli dai colori saturi fuori dallo spazio con gamma più piccola. Il rendering percettivo applica la stessa compressione di gamma a tutte le immagini, anche quando l'immagine non contiene colori significativi fuori dalla gamma. </para
+></listitem>
+
+            <listitem
+><para
+><emphasis
+>Colorimetrico Relativo</emphasis
+>, chiamato anche Prova o Mantiene il colore identico e Punto di Bianco. Riproduce esattamente i colori nella gamma e taglia i colori fuori gamma alla tinta riproducibile più vicina. </para
+></listitem>
+
+            <listitem
+><para
+><emphasis
+>Colorimetrico Assoluto</emphasis
+>, anche chiamato «Accoppia o preserva i colori identici». Riproduce esattamente i colori nella gamma e taglia alla tinta riproducibile più vicina i colori fuori gamma, sacrificando la saturazione e talvolta la luminosità. Su carta colorata i bianchi potrebbero essere scuriti per mantenere la tinta identica all'originale. Per esempio, il ciano potrebbe essere aggiunto al bianco di carta color crema, scurendo effettivamente l'immagine. Interessa di rado i fotografi. </para
+></listitem>
+
+            <listitem
+><para
+><emphasis
+>Saturazione</emphasis
+>, anche chiamata «Preserva saturazione o grafica». Associa i colori primari saturi nella sorgente ai colori saturi primari nella destinazione, trascurando le differenze di tinta, saturazione, e luminosità. Per grafica a blocchi; raramente di interesse per i fotografi. </para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+    <sect3 id="iccprofile-links">
+        <title
+>Collegamenti</title>
+
+        <itemizedlist>
+
+            <listitem
+><para>
+                <ulink url="http://www.oyranos.org/wiki/index.php?title=Main_Page"
+>Color wiki</ulink>
+            </para
+></listitem>
+
+            <listitem
+><para>
+                <ulink url="https://en.wikipedia.org/wiki/Lab_color_space#CIELAB"
+>CIELab</ulink>
+            </para
+></listitem>
+
+            <listitem
+><para>
+                <ulink url="http://en.wikipedia.org/wiki/Gamut"
+>La Gamut spiegata</ulink>
+            </para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

@@ -1,0 +1,411 @@
+<sect3 id="editor-transform-crop"
+> <title
+>Ritagliare una fotografia</title>
+
+    <sect4 id="using-manualcrop"
+> <title
+>Taglio manuale</title>
+
+        <para
+>Il taglio di una fotografia è non solo un'operazione comune, ma spesso è uno strumento fotografico sottovalutato per comporre un'immagine. L'editor di immagini lo rende molto facile. Per tagliare una foto trascina un rettangolo sull'immagine tenendo premuto il &LMB; e muovendo il mouse: mentre lo muovi vedrai apparire un riquadro rettangolare. </para>
+
+        <example>
+            <title
+>L'attuale selezione dell'immagine nell'editor</title>
+            <screenshot
+><screeninfo
+>L'attuale selezione dell'immagine nell'editor</screeninfo>
+            <mediaobject
+><imageobject
+> <imagedata fileref="&path;editor-imageselection.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> 
+        </example>
+
+        <para
+>Quando rilasci il pulsante, l'area della fotografia che sarà rimossa da un'operazione di taglio sarà oscurata, e questo ti permette di avere una buona idea di come sembrerà la tua foto dopo che l'avrai tagliata. Puoi modificare le dimensioni dell'area tagliata trascinandone gli angoli, e puoi creare una nuova area di taglio semplicemente tracciando un altro rettangolo. </para>
+
+        <para
+>Una volta che sei soddisfatto del taglio fai clic sul pulsante <inlinemediaobject
+> <imageobject
+><imagedata fileref="&path;editor-cropbutton.png" format="PNG"/></imageobject
+> <textobject
+> <phrase
+>Il pulsante di taglio dell'editor di immagini</phrase
+></textobject
+></inlinemediaobject
+> sulla barra degli strumenti, e la fotografia verrà tagliata (<keycombo
+>&Ctrl;<keycap
+>X</keycap
+></keycombo
+>). Usa le voci <menuchoice
+> <guimenu
+>File</guimenu
+><guimenuitem
+>Salva</guimenuitem
+></menuchoice
+> oppure <menuchoice
+><guimenu
+>File</guimenu
+><guimenuitem
+>Salva come...</guimenuitem
+></menuchoice
+> del menu <guimenu
+>File</guimenu
+> per salvare la fotografia appena tagliata. </para>
+
+    </sect4>
+
+    <sect4 id="using-autocrop"
+> <title
+>Ritaglio automatico</title>
+
+        <para
+>Lo strumento di ritaglio automatico rimuove i bordi da un'immagine: cerca l'area del bordo più grande possibile tutta dello stesso colore e la taglia dell'immagine, proprio come se avessi utilizzato lo strumento Taglio. </para>
+
+        <para
+>Questo strumento può essere usato per esempio per tagliare un panorama cucito e assemblarlo con molte immagini, operazione che genera un bordo nero intorno. </para>
+
+        <example>
+            <title
+>Panorama unito elaborato con il ritaglio automatico</title>
+            <screenshot>
+                <screeninfo
+>Panorama unito elaborato con il ritaglio automatico</screeninfo>
+                <mediaobject
+><imageobject>
+                    <imagedata fileref="&path;editor-transform-autocrop.png" format="PNG"/>
+                </imageobject
+></mediaobject>
+            </screenshot
+> 
+        </example>
+
+    </sect4>
+
+    <sect4 id="using-proportionalcrop"
+> <title
+>Taglio proporzionale</title>
+
+        <anchor id="ratiocroptool.anchor"/>
+
+        <para
+>Lo strumento di taglio proporzionale va oltre. Mentre modifichi le immagini digitali è spesso necessario creare un formato compatibile con, ad esempio, il tuo album di fotografie o con il formato della carta. Se stampi un'immagine dalla tua macchina fotografica digitale e poi cerchi di metterla nel tuo album di foto potresti notare che la macchina ha un diverso rapporto tra altezza e larghezza rispetto a una normale pellicola fotografica; dovrai quindi tagliare le tue immagini digitali rispettando delle proporzioni predefinite (per esempio 5:7 o 2:3, che sono delle proporzioni standard). </para>
+
+        <example
+>  <title
+>La finestra dello strumento di taglio proporzionale</title>
+        <screenshot
+><screeninfo
+>La finestra dello strumento di taglio proporzionale</screeninfo>
+        <mediaobject
+><imageobject
+> <imagedata fileref="&path;editor-ratiocrop.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> 
+        </example>
+
+        <para
+>Nell'area di anteprima puoi ridimensionare il rettangolo di taglio, spostando gli angoli con il mouse. Verrà mantenuto il rapporto impostato che è in basso nella finestra. </para>
+
+        <para
+>Nelle impostazioni dello strumento di taglio proporzionale devi specificare l'<guilabel
+>Orientazione</guilabel
+>, <guilabel
+>Verticale</guilabel
+> o <guilabel
+>Orizzontale</guilabel
+>. L'opzione <guilabel
+>Verticale</guilabel
+> assegnerà sempre la dimensione maggiore all'<guilabel
+>Altezza</guilabel
+>, mentre <guilabel
+>Orizzontale</guilabel
+> alla <guilabel
+>Larghezza</guilabel
+>. </para>
+
+        <para
+>Lo strumento di taglio proporzionale usa un rapporto relativo. Vale a dire che è lo stesso se usi centimetri o pollici, senza specificare la dimensione fisica. Per esempio, sotto vedi un elenco di corrispondenze tra le dimensioni tradizionali della carta fotografica e il taglio proporzionale. </para>
+
+        <informaltable
+><tgroup cols="2">
+
+        <thead
+><row>
+            <entry
+>Dimensioni standard della carta fotografica</entry>
+            <entry
+>Ritaglia secondo le proporzioni</entry>
+        </row
+></thead>
+
+    <tbody>
+        <row>
+            <entry
+>10×15cm&nbsp;20×30cm&nbsp;30×45cm 3,5×5″&nbsp;4×6″&nbsp;8×12″&nbsp;12×18″&nbsp;16×24″&nbsp;20×30″ </entry>
+
+            <entry
+>2:3 </entry>
+        </row>
+
+        <row>
+            <entry
+>6×8cm&nbsp;15×20cm&nbsp;18×24cm&nbsp;30×40cm 3,75×5″&nbsp;4,5×6″&nbsp;6×8″&nbsp;7,5×10″&nbsp;9×12″ </entry>
+
+            <entry
+>3:4 </entry>
+        </row>
+
+        <row>
+            <entry
+>20×25cm&nbsp;40×50cm 8×10″&nbsp;16×20″ </entry>
+
+            <entry
+>4:5 </entry>
+        </row>
+
+        <row>
+            <entry
+>15×21cm&nbsp;30×42cm 5×7″ </entry>
+
+            <entry
+>5:7 </entry>
+        </row>
+
+        <row>
+            <entry
+>21×30cm&nbsp;42×60cm </entry>
+
+            <entry
+>7:10 </entry>
+        </row>
+
+    </tbody>
+
+        </tgroup
+></informaltable>
+
+        <para
+>In fondo a destra nella finestra sono disponibili due pulsanti, che servono per spostare automaticamente la selezione di taglio al centro orizzontale o a quello verticale dell'immagine. </para>
+
+        <para
+>Nell'ultima riga della finestra, il pulsante <guilabel
+>Proporzioni massime</guilabel
+> ti permette di impostare l'area di taglio alle dimensioni massime, secondo le attuali impostazioni di proporzioni e di orientazione. </para>
+
+        <note
+><para
+>Lo strumento di taglio alle proporzioni ricorda le impostazioni che dipendono dall'orientazione dell'immagine (orizzontale o verticale): la prossima volta che lo userai, queste impostazioni saranno usate come valori predefiniti, a seconda dell'orientazione dell'immagine. Le dimensioni modificate vengono salvate nelle tabelle EXIF, in modo che i dati EXIF riflettano sempre l'immagine ritagliata e non quella originale. </para
+></note>
+
+    </sect4>
+
+    <sect4 id="using-compositionguides"
+>     <title
+>Guida di composizione</title>
+
+        <para
+>Quando si guarda per la prima volta un'immagine, l'occhio dello spettatore raramente si posa al centro dell'immagine, ma si sposta da in alto a sinistra verso destra, e poi da in basso a sinistra di nuovo a destra. Questo schema è inconscio ma è ben documentato; è probabilmente associato allo schema di lettura occidentale. Dal punto di vista del fotografo l'obiettivo diventa guidare lo sguardo dello spettatore dell'oggetto, tenendo conto del modo in cui molti percepiscono un'immagine. </para>
+
+        <para
+>Le impostazioni della <guilabel
+>Guida di composizione</guilabel
+> forniscono gli elementi di guida per comporre meglio le tue immagini. Queste guide sono: <itemizedlist>
+
+            <listitem>
+                <para
+><guilabel
+>Regola dei terzi</guilabel
+>: una griglia che divide l'immagine in terzi in ogni direzione (cioè in nove parti). Queste proporzioni sono vicine alla regola aurea, e sono derivate dal campo visivo dell'occhio umano. Sono usate, spesso con variazioni minori, da una serie di oggetti comunemente usati. In questi riquadri ci sono aree precise dove dovrebbero essere posizionate le parti importanti dell'immagine. Lo stesso principio si usa per determinare la posizione dell'orizzonte e le proporzioni tra cielo e terra. </para>
+
+                <para
+>Molti fotografi e artisti conoscono la regola dei terzi, in cui un'immagine viene divisa in tre sezioni verticalmente e orizzontalmente, e i punti di intersezione rappresentano i posti in cui disporre gli elementi visuali più importanti. Spostare l'orizzonte di un paesaggio nella posizione di un terzo è spesso meglio che metterlo nel mezzo, ma potrebbe anche essere messo a un quarto o un sesto dal fondo: non c'è nulla di obbligatorio in questa regola. Nel posizionare gli elementi visivi in modo da ottenere una composizione riuscita si devono valutare molti fattori, come colore, prevalenza, dimensioni e bilanciamento insieme alle proporzioni. Spesso una certa quantità di bilanciamento o di tensione dell'immagine può rendere migliore una composizione. </para>
+
+                <example
+>  <title
+>Esempio di composizione delle immagini usando la regola dei terzi</title>
+                <screenshot
+><screeninfo
+>Esempio di composizione delle immagini usando la regola dei terzi </screeninfo
+><mediaobject
+><imageobject
+> <imagedata fileref="&path;editor-rulethirdlines-example.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> 
+                </example>
+            </listitem>
+
+            <listitem>
+
+                <para
+><guilabel
+>Triangoli armonici</guilabel
+>: le divisioni armoniche si affidano al principio di somiglianza. Come la guida della regola dei terzi, i triangoli armonici sono un'altra divisione dell'immagine in triangoli armonici equiangoli allineati alla diagonale. </para>
+
+                <example
+>  <title
+>Esempio di composizione fotografica usando i triangoli armonici</title>
+                    <screenshot
+><screeninfo
+>Esempio di composizione fotografica usando i triangoli armonici </screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editor-harmonioustriangles-example.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> 
+                </example>
+
+            </listitem>
+
+            <listitem>
+
+                <para
+><guilabel
+>Sezione aurea</guilabel
+>: la sezione aurea è un rapporto intrinseco presente in molti schemi di crescita nella natura (dalla spirale della conchiglia di un nautilo ai petali del girasole), che ha la bizzarra abitudine di apparire in tutte le cose che consideriamo belle. </para>
+
+                <para
+>La sezione aurea è il numero irrazionale 1,618033988...; il suo uso risale agli antichi egizi e greci, che la usarono nella costruzione delle loro piramidi e dei loro templi. Artisti e architetti hanno usato la sezione aurea attraverso i secoli nella composizione di dipinti ed edifici, ma anche di fotografie, per dare alle loro composizioni un senso di ordine e di bellezza naturale. </para>
+
+                <para
+>La sezione è intrinseca nella serie di Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21, 34 eccetera, dove ogni numero dopo 1 è uguale alla somma dei due precedenti. Il rapporto risultante, 1:1,618, è la sezione aurea. Una composizione che segua questa regola è considerata visivamente armoniosa. </para>
+
+                <para
+>La sezione aurea fornisce linee guida più fluide quando viene usata per comporre un'immagine. Queste guide sono elencate di seguito: <itemizedlist>
+
+            <listitem>
+
+            <para
+>La guida <guilabel
+>Spirale aurea</guilabel
+> aumenterà le probabilità di ottenere risultati accattivanti con le tue fotografie. Al contrario della regola dei terzi, la spirale aurea forma una linea fluida che l'occhio traccia nell'immagine. Questo stile di composizione invita lo sguardo dello spettatore nell'immagine secondo la linea della spirale, creando un flusso visivo più simmetrico, e un'impressione visiva complessivamente coinvolgente. </para>
+
+            <example
+>  <title
+>Esempio di composizione delle immagini usando la spirale aurea</title>
+                <screenshot
+><screeninfo
+>Esempio di composizione delle immagini usando la spirale aurea </screeninfo
+><mediaobject
+><imageobject
+> <imagedata fileref="&path;editor-goldenspiral-example.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> 
+            </example>
+
+            </listitem>
+
+            <listitem>
+
+            <para
+>Un'altra regola sono le <guilabel
+>Sezioni della spirale aurea</guilabel
+>, o rettangoli aurei. Questi rettangoli si usano per costruire la spirale aurea. Ci dovrebbe essere qualcosa che guida l'occhio al centro della composizione. Potrebbe essere una linea o alcuni soggetti. Questo <quote
+>qualcosa</quote
+> potrebbe essere lì senza guidare gli occhi, ma farebbe lo stesso il suo lavoro. </para>
+
+            <example
+>  <title
+>Esempio di composizione delle immagini usando le sezioni della spirale aurea</title>
+                <screenshot
+><screeninfo
+>Esempio di composizione delle immagini usando le sezioni della spirale aurea </screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editor-goldenspiralsections-example.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> 
+            </example>
+
+            </listitem>
+
+            <listitem>
+
+            <para
+>I <guilabel
+>Triangoli aurei</guilabel
+> sono derivati dalla spirale aurea discussa prima. I loro vertici sono i punti centrali dei lati dei rettangoli aurei. Nota che, al contrario dei triangoli armonici, i triangoli aurei non sono equiangoli. Mettere le diagonali lungo queste linee può rendere più dinamico un soggetto altrimenti statico. </para>
+
+            <para
+>Quando usi i triangoli aurei per dividere l'immagine crei un effetto che gli esperti di fotografia chiamano <quote
+>simmetria dinamica</quote
+>. Prova a mantenere il tuo soggetto in uno dei punti di intersezione e metti le altre informazioni visive nei triangoli che hai già diviso. Il risultato sarà una composizione molto accattivante, che altrimenti potresti non riuscire a creare. </para>
+
+            <example
+>  <title
+>Esempio di composizione fotografica usando il triangolo aureo</title>
+                <screenshot
+><screeninfo
+>Esempio di composizione fotografica usando i triangoli aurei </screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editor-goldentriangles-example.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> 
+            </example>
+
+            </listitem>
+
+            <listitem>
+
+            <para
+>Come la regola dei terzi, le <guilabel
+>Sezioni auree</guilabel
+> influenzano il rapporto delle dimensioni di un'immagine, oltre alla posizione del soggetto principale nella fotografia. Il rapporto è vicino al rapporto delle pellicole a 35mm, quindi di solito non devi cambiare le dimensioni delle foto. Devi però considerare la composizione: il soggetto principale dovrebbe restare su una delle quattro linee o delle quattro intersezioni (l'occhio del soggetto, per esempio). In realtà queste regole non sono esattamente le stesse: la regola dei terzi è una versione semplificata della sezione aurea. </para>
+
+            <example
+>  <title
+>Esempio di composizione delle immagini usando le sezioni auree</title>
+                <screenshot
+><screeninfo
+>Esempio di composizione fotografica usando le sezioni auree </screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editor-goldensections-example.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> 
+            </example>
+
+            </listitem>
+
+                </itemizedlist>
+                </para>
+
+            </listitem>
+
+        </itemizedlist>
+
+        </para>
+
+        <para
+>Le opzioni <guilabel
+>Ribalta orizzontalmente</guilabel
+> e <guilabel
+>Ribalta verticalmente</guilabel
+> possono essere usate per effettuare ribaltamenti sulle divisioni armoniche. </para>
+
+        <para
+>Il pulsante <guilabel
+>Colore</guilabel
+> ti permette di impostare il colore delle linee guida. Se hai un'immagine con forte contrasto cromatico, le linee guida potrebbero scomparire; in questo modo puoi adattare il colore della guida all'immagine attuale. </para>
+
+    </sect4>
+
+</sect3>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-omittag: nil
+sgml-shorttag: t
+End:
+-->

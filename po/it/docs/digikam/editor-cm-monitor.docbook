@@ -1,0 +1,148 @@
+<sect2 id="editor-cm-monitor">
+    <title
+>Calibrare e creare il profilo del tuo monitor RGB</title
+> 
+
+    <sect3>
+        <title
+>Se scelgo di lavorare esclusivamente nello spazio di colore sRGB, ho bisogno di calibrare il mio monitor?</title>
+
+        <para
+>Sì! Che tu decida o no di restare nella gamma colore offerta dallo sRGB hai bisogno di calibrare opportunamente il tuo monitor, perché sRGB assume che esso sia calibrato per sRGB. Questa operazione chiude il circolo. Se lavori con la gamma colori fornita da sRGB allora hai bisogno di calibrare il tuo monitor allo standard sRGB (o di fornire e di usare un accurato profilo del tuo monitor, o entrambi). </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Quali sono le conseguenze del lavorare con un monitor non calibrato?</title>
+
+        <para
+>Ci sono diverse possibili conseguenze, nessuna delle quali buona. Ogni monitor, calibrato o no, ha un punto di Bianco nativo (non calibrato), espresso dalla temperatura in gradi Kelvin. Il punto di Bianco di un monitor (calibrato o no) è il colore che vedi quando stai osservando un pezzo di bianco puro sul tuo schermo. Il bianco pure si ottiene quando i valori RGB nella tua immagine sono tutti uguali a 255 (nella codifica ad 8 bit), cosi come lo sfondo solo bianco di una pagina web o di un documento office. Stai pensando «il bianco è bianco», ma se riuscissi ad allineare diversi monitor calibrati a punti di bianco differenti vedresti che, più è alta la temperatura del punto di bianco del monitor, più lo schermo sembra di tonalità blu al confronto con i monitor che hanno un punto di bianco più basso. Se riesci a trovare le impostazioni del tuo monitor, cambia la temperatura in su e in giù (ricordando di riportarlo alle sue condizioni iniziali quando hai finito, fino a quando non decidi di volere un punto di Bianco differente). I tuoi occhi, che si adattano velocemente ad un punto di bianco costante, capiranno facilmente che lo schermo diventa più blu o più giallo come sposti il punto di bianco più basso o più alto. Se il tuo monitor non calibrato è troppo blu (la temperatura di colore di un monitor CRT è tipicamente di 9300K e lo sRGB assume che sia 6500K), quando editerai le tue immagini compenserai eccessivamente, e produrrai immagini che sembreranno giallognole e troppo calde su di un monitor opportunamente calibrato. Al contrario, se il tuo monitor è troppo giallo perché la temperatura di colore è impostata troppo bassa (credo che la temperatura nativa dei monitor LCD sia circa 5500K), le tue immagini sembreranno azzurrine e troppo fredde su un monitor propriamente calibrato. </para>
+
+        <para
+>Impostare propriamente il punto di Bianco è solo una parte della calibrazione del monitor. Hai bisogno pure di un appropriato punto di Nero, luminosità (luminanza), e una funzione gamma (trasferimento). Se il tuo monitor è troppo scuro perché il punto di Nero è impostato troppo basso, compenserai eccessivamente e produrrai immagini che su un monitor propriamente calibrato sembreranno slavate. All'opposto, se il punto di Nero del tuo monitor è troppo alto, le tue immagini sembreranno troppo scure e sovra-sature su di un monitor calibrato opportunamente. </para>
+
+        <para
+>Se la luminosità/contrasto è impostata troppo elevata, penserai che le tue immagini abbiano un numero maggiore di punti sovraesposti di quanti ne abbiano effettivamente quando sono viste su un monitor propriamente calibrato, in più i tuoi occhi avranno dolore e tuo schermo LCD si brucerà più in fretta. </para>
+
+        <para
+>Se la gamma del tuo monitor non è impostata correttamente, le variazioni di tono da scuro a chiaro saranno falsate. In altre parole, le ombre o le luci potrebbero essere eccessivamente espanse o compresse, portandoti a compensare nella direzione opposta. Così, quando le immagini sono viste su uno schermo opportunamente calibrato, le ombre potrebbero essere troppo chiare o troppo scure (lo stesso per le luci alte), con il resto dell'immagine che soffre per una sovra compressione dei toni intermedi. Ti aiuti il cielo se i fasci R, G e B del tuo monitor (o i loro equivalenti negli schermi LCD) sono impostati impropriamente (ogni fascio ha il proprio punto di nero e guadagno), perché le fusioni dei colori risultanti - troppo verde, troppo magenta, troppo arancio, &etc;, che inevitabilmente genererai correggendo la tua immagine nella fase di editing - sono molto ovvie da vedere in uno schermo opportunamente calibrato. </para>
+
+        <para
+>Che il tuo monitor sia opportunamente calibrato o no, potresti essere sorpreso comparando un'immagine che hai elaborato sul monitor di casa tua con la stessa immagine mostrata sugli altri monitor di casa tua o su quelli dei tuoi amici o dei vicini. Noi lo siamo di certo. Abbiamo due schermi Sony Trinitron a casa nostra, uno con col fascio del verde errato (troppo alto) e uno con il fascio blu errato (troppo alto). Ogni immagine elaborata su un monitor sembrava molto sbagliata su l'altro, fino a quando non comprammo uno spettrofotometro per calibrare e fare il profilo ad entrambi. Sfortunatamente a quel punto nessuno di questi due monitor può essere calibrato per mostrare un punto di nero corretto, così non sono stati più usati per l'editing delle immagini. Il punto è che un beneficio aggiuntivo nell'usare uno spettrofotometro è che sai quando è l'ora di rimpiazzare il tuo monitor. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Il significato di «Punto di Nero» e di «Luminosità» sembra abbastanza chiaro, ma cosa significa «gamma»?</title>
+
+        <para
+>Vedi <ulink url="https://it.wikipedia.org/wiki/Correzione_di_gamma"
+>Correzione Gamma</ulink
+> per una panoramica sul ruolo della gamma nei monitor e in fotografia, i collegamenti in fondo all'articolo sono una fonte eccellenti di ulteriori informazioni. Come dice Wikipedia: «Correzione di gamma, non linearità del gamma, codifica gamma, o, spesso, semplicemente, gamma è il nome di un'operazione non lineare usata per codificare e decodificare la luminanza o i valori tristimolo in un sistema video o fotografico. [...] La codifica gamma aiuta a mantenere i dati (sia analogici che digitali) in un dominio uniforme dal punto di vista percettivo.» Sì, lo so chiaro come una notte di luna nuova. Leggi l'articolo di Wikipedia e studia le immagini. Alla fine ti immergerà nell'argomento. Se ti metterai al lavoro approfonditamente nell'editing delle immagini e nella gestione del colore, alla fine avrai bisogno di decidere che tipo di gamma (o altra funzione di codifica/decodifica) vuoi usare quando calibri il tuo monitor, fare il profilo della tua fotocamera e scegliere uno spazio dei colori funzionale. Quando sei nel dubbio (per quelli di voi che vogliono solo sapere che pulsante premere!), il valore 2,2 della gamma è ampiamente usato, sia per la calibrazione dei monitor sa per lavorare negli spazi dei colori. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Qual'è la differenza tra calibrare il monitor e farne il profilo?</title>
+
+        <para
+>Agli inizi dell'apprendimento su come si gestisce il colore, molte persone sono confuse dalla differenza tra calibrare il monitor e farne il profilo (lo sono stato anche io). Citando l'eccellente discussione di Hal Engel nel forum utenti di &digikam;: </para>
+
+        <blockquote
+><para
+>La calibrazione è il processo dove un dispositivo è posto in uno certo stato attraverso aggiustamenti con i suoi controlli o con quelli di altri mezzi fisici. Per esempio, l'atto di calibrare un monitor comporta il mettere a punto il punto di bianco, il livello di nero, la luminosità e la gamma a livelli predeterminati o standard usando i controlli del monitor e alterando la funzione gamma della scheda video... Diversamente dalla calibrazione, il processo di creare un profilo è la caratterizzazione di un dispositivo, che non implica fare un cambiamento o un aggiustamento al dispositivo. Piuttosto è un processo di misura che dà come risultato un file che riporta una descrizione matematica fedele dei colori del dispositivo e delle caratteristiche di tonalità. Questo è un profilo ICC. Queste caratteristiche includono il trasferimento di funzione dallo spazio di colore del dispositivo ad uno spazio di colore standardizzato e assoluto (questo è anche detto Profile Color Space, PCS, in un profilo ICC), del punto di bianco del dispositivo, punto di nero, primarie e altre informazioni. Gli schermi vengono caratterizzati (profilati) quando sono nel loro stato calibrato. Riassumendo, la calibrazione fa cambiamenti al dispositivo per alterare il modo in cui riproduce i colori per uniformarsi a un qualche stato predefinito. Il fare un profilo o caratterizzazione è un processo di misura che porta ad una descrizione dettagliata delle caratteristiche di riproduzione del colore del dispositivo (normalmente calibrato). (citazione da <ulink url="http://digikam.1695700.n4.nabble.com/Re-Color-Managed-View-How-td1739136.html#a14160285"
+>qui</ulink
+>) </para
+></blockquote>
+
+        <para
+>Calibrare il tuo monitor non è tecnicamente parte della gestione del colore, ma ovviamente un monitor propriamente calibrato e/o caratterizzato è un prerequisito per un processo di gestione del colore. Questa guida non copre gli argomenti importanti su come come calibrare o profilare un monitor. La documentazione disponibile presso <ulink url="http://www.argyllcms.com/"
+>ArgyllCMS </ulink
+> e <ulink url="http://lprof.sourceforge.net/"
+>LProf </ulink
+> è davvero una lettura buona e caldamente raccomandata. Per usare entrambi questi software per calibrare e/o profilare il tuo monitor hai bisogno di uno spettrofotometro. Uno spettrofotometro (a volte chiamato anche «spider») è un dispositivo per la misura dei valori RGB dei punti di colori proiettati sullo schermo del monitor da software di calibrazione/caratterizzazione quali Argyll e LProf. Il sito della Argyll mantiene una lista aggiornata degli spettrofotometri supportati. Credo che LProf possa usare tutti gli spettrofotometri che usa Argyll, dato che i due programmi condividono una rilevante sezione del codice. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Posso calibrare il mio monitor senza uno spettrofotometro? </title>
+
+        <para
+>Ci sono vari metodi disponibili su Internet per calibrare un monitor senza usare uno spettrofotometro. Questi metodi ad occhio sono meglio di non calibrare per nulla il tuo monitor, e a seconda dei tuoi occhi e del tuo monitor, possono produrre dei risultati abbastanza usabili. Ma i metodi ad occhio non sono un sostituto per un monitor propriamente calibrato e profilato. Per la cronaca, calibrare e profilare un monitor con un spettrofotometro, sebbene sia a prima vista spaventoso, non è difficile. Gli spettrofotometri possono essere ottenuti per meno di 100$ (se hai in mente un modello più costoso, assicurati che stai pagando per un prodotto migliore, piuttosto che un po' di software in allegato dal produttore con qualche funzione in più ma che non girerà su Linux). La documentazione di Argyll e/o Lprof ti guiderà attraverso il processo di calibrare e profilare il tuo monitor, senza dovere imparare molto della teoria della gestione dei colori. E se/quando impari abbastanza della gestione del colore da capire che vuoi o hai bisogno di un profilo del monitor più dettagliato di un certo tipo, per un certo scopo, questi due software hanno tutte le capacità avanzate che potresti sperare. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Assumendo che abbia deciso di lavorare esclusivamente nello spazio dei colori sRGB, che pulsante di &digikam; dovrei premere dopo che ho calibrato il monitor? </title>
+
+        <para
+>Se il tuo monitor è stato calibrato allo standard sRGB e lavori esclusivamente nello spazio dei colori sRGB, allora puoi disabilitare la gestione del colore in &digikam;. Non hai bisogno di dire a &digikam; che profilo monitor usare perché &digikam; di base usa lo spazio dei colori sRGB come profilo di spazio dei colori. E non hai bisogno di dire a &digikam; di usare un procedimento di gestione del colore perché &digikam; imposterà l'uso di sRGB per la macchina fotografica, la stampante, lo spazio di lavoro, così come posto da HP e MS nel 1996. </para>
+
+        <para
+>Ma se vuoi percorrere i primi passi nel processo di gestione del colore, allora vai alla <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>pagina corrispondente delle impostazioni</ulink
+>, abilita la gestione dei colori, e seleziona sRGB come profilo del monitor, della fotocamera, dello spazio di lavoro della tua stampante. Se hai anche usato Argyll o LProf per produrre un profilo del monitor dopo che lo hai calibrato- forse chiamato «mymonitorprofile.icc» - allora dì a &digikam; di usare «mymonitorprofile.icc» invece di sRGB come profilo del monitor. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Dove si trovano memorizzati i profili ICC nel mio computer?</title>
+
+        <para
+>Bene, questo è &Linux;, e dipende da dove li metti tu. Io ripongo tutti i miei profili ICC nella cartella /usr/share/color/icc, che è il posto più vicino ad una collocazione standard in Linux dei profili ICC. Se usi questa cartella per i tuoi profili ICC, verosimilmente cambierai i permessi della cartella per consentire l'accesso in lettura/scrittura al tuo account utente. Quindi tu dirai a &digikam; <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>dove i tuoi profili sono collocati</ulink
+>. </para>
+
+    </sect3>
+
+    <sect3>
+        <title
+>Ciò che si trova attorno e vicino al mio monitor (muro, tende, soffitto, mobili) influisce?</title>
+
+        <para
+>Sì! Una buona illuminazione è un prerequisito per un corretto editing delle immagini e per la comparazione delle stampe con l'immagine a schermo. Se la luce vicino alla tua workstation è troppo brillante, i colori sul monitor sembreranno troppo scuri e, accade l'opposto, se la luce degli impianti nella tua stanza ha una bassa CRI (Indice di Resa Cromatica, che significa che non hai lampade a spettro pieno), o se la luce della stanza proviene dalla finestra e così varia con il clima e l'ora del giorno (o peggio, è filtrata da una tenda colorata), o se le pareti e il soffitto stanno creando fusioni di colore con il tuo monitor, quindi il tuo processo di editing «correggerà» fusioni di colori che in realtà non esistono. Il miglior consiglio, che sia il più possibile consistente e possa mantenere la quiete famigliare: muri e soffitto color grigio neutro, coprire le finestre, indossare abiti di colore neutro, impostare un livello appropriato di luce usando lampade e impianti adeguati. Per maggiori informazioni su quali siano i livelli di illuminazione giusti, lampade e lampadari per editare le immagini e vedere le stampe, leggi i seguenti articoli: </para>
+
+        <itemizedlist>
+
+            <listitem
+><para>
+                <ulink url="http://www.creativepro.com/article/the-darkroom-makes-a-comeback"
+></ulink>
+            </para
+></listitem>
+
+            <listitem
+><para>
+                <ulink url="http://www.creativepro.com/article/the-darkroom-makes-a-comeback-part-2-"
+></ulink>
+            </para
+></listitem>
+
+            <listitem
+><para>
+                <ulink url="http://www.lrc.rpi.edu/programs/nlpip/lightingAnswers/fullSpectrum/abstract.asp"
+></ulink>
+            </para
+></listitem>
+
+        </itemizedlist>
+
+    </sect3>
+
+</sect2>
+
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

@@ -1,0 +1,292 @@
+ <sect1 id="using-fileformatsupport"
+>  <title
+>Formatos de Arquivos Suportados</title>
+
+        <para
+>O &digikam; baseia-se num conjunto de bibliotecas e pacotes de suportes para carregar e salvar os formatos de imagens. Os formatos de imagens disponíveis dependem da disponibilidade destas bibliotecas no seu sistema e, em alguns casos, na forma como essas bibliotecas foram compiladas. Na maior parte das distribuições, você irá descobrir que uma grande gama de formatos de imagens poderão ser vistos dentro do &digikam;. </para>
+
+        <para
+>Esta dependência de outras bibliotecas significa que não é possível indicar uma lista definitiva de todos os formatos que estarão disponíveis no seu sistema. Pelo menos, estarão disponíveis o JPEG, o PNG e o TIFF. </para>
+
+        <para
+>O &digikam; só mostra os arquivos que estejam em formatos que ele consiga compreender. Ele faz isso ao olhar para a extensão dos arquivos e comparando-a com uma lista predefinida. Se a extensão do arquivo estiver na lista, o &digikam; irá mostrar o arquivo na Área de Imagem. Você poderá mudar a lista das extensões que o &digikam; irá aceitar; para ver mais detalhes, leia a seção de <link linkend="using-setup"
+>Configuração</link
+>. </para>
+
+        <sect2
+>        <title
+>Formatos de Fotografias Estáticas</title>
+
+            <sect3
+>            <title
+>Introdução</title>
+
+                <para
+>Quase todas as câmeras digitais guardam as fotografias num de dois formatos: JPEG ou TIFF. Muitas máquinas permitem-lhe selecionar qual destes formatos usar. Você poderá encontrar uma descrição completa sobre estes formatos no <ulink url="http://en.wikipedia.org/wiki/Graphics_file_format"
+>Wikipedia</ulink
+>. O &digikam; suporta ambos os formatos. </para>
+
+            </sect3>
+
+            <sect3
+>            <title
+>Compressão de Imagens Estáticas</title>
+
+                <para
+>A compressão de imagem é a aplicação dos esquemas de compressão de dados nas imagens digitais. Ela é feita através da remoção da redundância dos dados da imagem, para poder guardar ou transmitir os dados de forma eficiente. </para>
+
+                <para
+>A compressão das imagens poderá ser com ou sem perdas. Os métodos de compressão sem perdas sempre terão preferência pelo seu alto valor de preservação, para fins de armazenamento, antes de aplicar as transformações como o recorte, o dimensionamento, as correções de cores, &etc; Isto acontece porque os métodos de compressão com perdas, especialmente se forem usados com taxas de dados baixas, introduzem artefatos resultantes da compressão. Os métodos com perdas são adequados para imagens naturais, como as fotos nos aplicativos, onde a perda de fidelidade (algumas vezes imperceptível) é aceitável, de modo a obter uma redução substancial no tamanho do arquivo. A compressão com perdas é boa para publicação de imagens na Internet. </para>
+
+            </sect3>
+
+            <sect3
+>            <title
+>JPEG</title>
+                <para
+>O JPEG é um formato comprimido, que abdica de alguma da qualidade da imagem para manter os tamanhos de arquivos pequenos. De fato, a maior parte das câmeras guardam as suas imagens neste formato, a menos que indique o contrário. Uma imagem JPEG é guardada com uma compressão com perdas, podendo variar a quantidade de compressão. Esta permite-lhe optar entre uma compressão menor e uma maior qualidade de imagem, ou entre uma maior compressão e uma pior qualidade. A única razão para escolher uma maior compressão é pelo tamanho menor dos arquivos, para que possa guardar mais imagens, sendo assim mais simples de enviá-las por e-mail ou publicar na Web. A maior parte das câmeras fornecem duas ou três opções, do tipo 'boa', 'muito boa', 'excelente', ainda que os nomes possam variar. </para>
+		<para
+>O JPEG 2000 também é suportado. De um modo geral, ele propicia os melhores resultados (mais suaves), para o mesmo nível de compressão, em comparação com o JPEG. A versão 2000 tem a opção para ser sem perdas, se isto for indicado na configuração. </para>
+
+            </sect3>
+
+            <sect3
+>            <title
+>TIFF</title>
+                <para
+>O TIFF foi largamente aceito e suportado como um formato de imagem. Normalmente, o TIFF pode ser gravado pela câmera num formato não-comprimido ou usando algoritmos de compressão sem perdas (deflação). Mantém uma maior qualidade da imagem, mas com o compromisso de arquivos muito maiores. Algumas máquinas deixam-no salvar as suas imagens neste formato, e é um formato muito conhecido pelo seu algoritmo de compressão sem perdas. O problema é que o formato foi alterado por tanta gente, que existem agora cerca de 50 variantes e nem todas são reconhecidas pelos programas. </para>
+
+            </sect3>
+
+            <sect3
+>            <title
+>PNG</title>
+                <para
+>O PNG é um formato de imagem que foi desenvolvido como substituto para um conjunto de formatos antigos, usados nos anos 90. É um formato sem perdas, como o TIFF, mas é muito mais compacto e poupa espaço em disco. Ainda que a sua câmera possa não suportar o PNG, algumas pessoas gostam de converter as suas imagens para PNG, assim que as tenham no seu computador. Ao contrário do JPEG, as imagens PNG não perdem qualidade sempre que a recodifica após as modificações. O &digikam; suporta totalmente as imagens PNG, assim como o Plugin de Processamento em Bloco de Imagens consegue converter um conjunto de imagens de um formato qualquer conhecido para PNG, de uma vez. Veja a seção de <link linkend="using-setup"
+>Configurações</link
+> para obter mais informações sobre a utilização de plugins no &digikam;. </para>
+
+                <para
+>O PNG é um formato de arquivo extensível para o armazenamento sem perdas, portável e bem comprimido de imagens rasterizadas. O PNG é um substituto livre de patentes do &GIF;, podendo também substituir muitas utilizações comuns do TIFF. O PNG está desenhado para funcionar bem com as aplicações de visualização 'online', como a World Wide Web, assim é completamente transmissível com uma opção de visualização progressiva. Do mesmo modo, o PNG pode guardar os dados de 'gama' e cromaticidade, para poder ter uma melhor correspondência de cores em plataformas heterogêneas. O PNG suporta profundidades de cores de 8 e 16 bits / cores /pixels. É o formato de arquivo perfeito para salvar as suas fotografias. Para mais informações sobre o formato PNG, veja a <ulink url="http://www.libpng.org/pub/png/"
+>página pessoal do PNG</ulink
+>. </para>
+
+            </sect3>
+
+            <sect3
+>            <title
+>PGF</title>
+	       <para
+>O "Progressive Graphics File" (Arquivo Gráfico Progressivo) é outro formato de imagem, não tão conhecido, mas também aberto. Baseado em padrões de ondas, permite a compressão de dados com ou sem perdas. O PGF é comparável ao JPEG 2000, mas foi desenvolvido com a velocidade (compressão/descompressão) em vista, em vez da taxa de compressão. Com o mesmo tamanho, um arquivo PGF parece substancialmente melhor que um JPEG, mantendo-se ainda muito bom na apresentação progressiva. Por isso, deverá ser bastante adequado para a Web, se bem que, no momento, poucos navegadores Web sabem exibi-lo. Para mais informações acerca do formato PGF, veja a <ulink url="http://www.libpgf.org/"
+>página Web da libPGF</ulink
+>. </para
+> 
+
+            </sect3>
+
+            <sect3
+>            <title
+>RAW</title>
+
+                <para
+>Algumas câmeras, normalmente as mais caras, permitem-lhe salvar as imagens no formato RAW. Este formato não é propriamente padrão de imagem, sendo diferente para cada marca de câmera. As imagens em RAW contêm todos os dados obtidos diretamente dos sensores da máquina, antes do programa existente na câmera efetuar modificações, como o balanceamento de branco, aumento de definição &etc; O armazenamento de fotos no formato RAW de uma câmera permite-lhe alterar as configurações, como o balanceamento de branco, após tirar a fotografia. Muitos fotógrafos profissionais usam o formato RAW, porque lhes oferece maior flexibilidade. A desvantagem é que os arquivos de imagens em RAW ficam muito grandes. </para>
+
+                <para
+>Se você quiser saber mais sobre o formato de imagem RAW, visite os guias muito úteis: <ulink url="http://en.wikipedia.org/wiki/RAW_image_format"
+> Wikipedia</ulink
+> <ulink url="http://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml"
+> The Luminous Landscape</ulink
+> e <ulink url="http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm"
+> Cambridge in Colour</ulink
+>. Você poderá converter as imagens no formato RAW para JPEG ou TIFF no &digikam;, usando o <ulink url="help:/kipi-plugins/rawconverter.html"
+>plugin de Conversão de Imagens RAW</ulink
+>. Veja a seção de <link linkend="using-setup"
+>Configurações</link
+> para saber mais sobre a utilização de plugins com o &digikam;. </para>
+
+                <para
+>O &digikam; suporta o carregamento de imagens RAW, baseando-se apenas no programa <ulink url="http://www.cybercom.net/~dcoffin/dcraw"
+>DCRAW</ulink
+>, o qual está incluído no núcleo do &digikam; e que suporta cerca de 200 formatos de arquivos RAW. Todas as câmeras suportadas são listadas na parte inferior da página Web de <ulink url="http://www.cybercom.net/~dcoffin/dcraw"
+> Dave Coffin's</ulink
+>. A tabela abaixo mostra uma breve lista dos arquivos RAW suportados pelo &digikam;: <informaltable
+><tgroup cols="2">
+
+                    <thead
+><row>
+                    <entry
+>Formato do Arquivo RAW</entry>
+                    <entry
+>Descrição</entry>
+                    </row
+></thead>
+                    <tbody>
+                        <row
+><entry
+>CRW, CR2 </entry
+><entry
+>Formatos de arquivos RAW das câmeras digitais da Canon </entry
+></row>
+
+                        <!-- ************************ -->
+                        <row
+><entry
+>NEF </entry
+><entry
+>Formatos de arquivos RAW das câmeras digitais da Nikon </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>ORF </entry
+><entry
+>Formatos de arquivos RAW das câmeras digitais da Olympus </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>RAF </entry
+><entry
+>Formatos de arquivos RAW das câmeras digitais da Fuji </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>RWL </entry
+><entry
+>Formatos de arquivos RAW das câmeras digitais da Leica </entry
+></row>
+
+                         <!-- ************************ -->
+
+                        <row
+><entry
+>PEF, PTX </entry
+><entry
+>Formatos de arquivos RAW das câmeras digitais da Pentax </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>X3F </entry
+><entry
+>Formatos de arquivos RAW das câmeras digitais da Sigma </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>DCR, KDC, DC2, K25 </entry
+><entry
+>Formatos de arquivos RAW das câmeras digitais da Kodak </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>SRF, ARW, MRW, MDC </entry
+><entry
+>Formatos de arquivos RAW das câmeras digitais da Sony/Minolta </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>RAW </entry
+><entry
+>Formatos de arquivos RAW das câmeras digitais da Panasonic, Casio, Leica </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>DNG (CS1, HDR) </entry
+><entry
+>Formatos de arquivos RAW da Adobe (Digital Negative) </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>BAY </entry
+><entry
+>RAW da Casio (Bayer) </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>ERF </entry
+><entry
+>Formatos de arquivos RAW da Epson </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>FFF </entry
+><entry
+>Formato RAW da Imacon/Hasselblad </entry
+></row>
+
+                        <!-- ************************ -->
+
+                        <row
+><entry
+>MOS </entry
+><entry
+>RAW Fotográfico da CREO </entry
+></row>
+
+                        <!-- ************************ -->
+                        <row
+><entry
+>PXN </entry
+><entry
+>RAW da Fotoman </entry
+></row>
+
+                        <!-- ************************ -->
+                        <row
+><entry
+>RDC </entry
+><entry
+>Formato RAW da Ricoh </entry
+></row>
+
+
+                    </tbody>
+
+                </tgroup
+></informaltable>
+
+                </para>
+
+            </sect3>
+
+        </sect2>
+
+        <sect2
+>        <title
+>Formatos de Imagens em Movimento (Vídeos)</title>
+
+        <para
+>Muitas câmeras digitais suportam a gravação de pequenos clipes de vídeo. Estas sequências são normalmente salvas no formato AVI ou MPEG. O &digikam; compreende estes formatos e irá gerar miniaturas para os arquivos do filme. Contudo, o &digikam; não é uma aplicação de edição de filmes e não tem quaisquer capacidades de visualização ou edição de filmes. Se fizer duplo-clique num arquivo de vídeo, o &digikam; irá usar a sua configuração do &kde; para escolher a aplicação de visualização a usar. </para>
+        </sect2>
+
+    </sect1>

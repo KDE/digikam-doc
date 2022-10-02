@@ -1,0 +1,867 @@
+ <sect1 id="using-sidebar"
+>            <title
+>&digikam; Seitenleiste</title>
+    <anchor id="sidebar.anchor"/>
+
+        <sect2 id="introduction-rightsidebar">
+        <title
+>Einführung in die rechte Seitenleiste</title>
+           <para
+>Das &digikam;-Hauptfenster hat eine Seitenleiste am rechten Rand, die wichtige Informationen und Aktionen für die ausgewählten Bilder zur Verfügung stellt. Die gleiche Seitenleiste ist, ohne die Navigationspfeile, auch in der <guilabel
+>Bildbearbeitung</guilabel
+> verfügbar. Sie wird angezeigt, wenn einer der fünf Karteireiter angeklickt wird: </para>
+
+           <para>
+            <itemizedlist>
+
+                <listitem
+><para
+><link linkend="using-sidebarfileproperties"
+>Eigenschaften</link
+>: Datei- und Bildeigenschaften, Kameraparameter während der Bilderstellung (EXIF Stichworte).</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebarmetadata"
+>Metadaten</link
+>: EXIF, Herstelleranmerkungen, IPTC- und GPS-Daten. Diese Eigenschaften können Sie mittels zweier KIPI-Module bearbeiten.</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebarcolors"
+>Farben</link
+>: Histogramme und eingebettete ICC-Profile.</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebartagfilters"
+>Geolokalisierung</link
+>: Das Marble-Widget zeigt Ihnen GPS-Lokationen an.</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebarcommentstags"
+>Kommentare/Stichworte</link
+>: Kommentare, Datum- &amp; Zeiteinstellungen, Bewertung, Stichworte.</para
+></listitem>
+
+                <listitem
+><para
+><link linkend="using-sidebartagfilters"
+>Stichwort-Filter</link
+>: Stichwort-Filter, die auf die Auswahl im Hauptfenster angewendet werden können.</para
+></listitem>
+
+            </itemizedlist>
+Mehrfaches Klicken auf denn gleichen Reiter lässt die Seitenleiste erscheinen bzw. wieder in den Rand verschwinden. </para>
+        </sect2>
+
+        <sect2 id="using-sidebarfileproperties"
+>    <title
+>Eigenschaften</title>
+           <para
+>Die Seitenleiste <quote
+>Eigenschaften</quote
+> zeigt die wichtigsten Informationen über das ausgewählte Bild an und ist weitgehend selbst erklärend. Sie ist in den folgenden Abschnitten gruppiert: <itemizedlist>
+
+               <listitem
+><para
+>Dateieigenschaften: dies sind die Informationen aus dem Dateisystem.</para
+></listitem>
+
+               <listitem
+><para
+>Bildeigenschaften: zeigt die Informationen, wie die Abmessungen, Komprimierung, Farbtiefe, usw., zu Bild und Bildformat an.</para
+></listitem>
+
+               <listitem
+><para
+>Fotoeigenschaften: zeigt eine Zusammenfassung der wichtigsten Parameter beim Aufnehmen des Fotos an. Diese Daten stammen von den EXIF-Daten, wenn diese verfügbar sind.</para
+></listitem>
+
+           </itemizedlist>
+
+           <example
+>   <title
+>Seitenleiste <quote
+>Dateieigenschaften</quote
+></title>
+                 <screenshot
+><screeninfo
+>Beispiel für die Seitenleiste <quote
+>Dateieigenschaften</quote
+></screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarfileproperties.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+
+           </para>
+        </sect2>
+
+        <sect2 id="using-sidebarmetadata"
+>          <title
+>Die Karteikarte Metadaten</title>
+
+           <para
+>Metadaten sind Daten über die Bilder oder Dateien wie technische Daten der Kamera, Einstellungen bei der Aufnahme des Fotos, Informationen über den Autor, Copyright, Stichwörter, Beschriftungen und die Koordinaten des Aufnahmeorts.</para>
+           <para
+>Die Metadaten-Seitenleiste besteht aus vier Kartenkarten, <guilabel
+>Exif</guilabel
+>, <guilabel
+>Herstellerbemerkungen</guilabel
+>, <guilabel
+>IPTC</guilabel
+> und <guilabel
+>XMP</guilabel
+>. Links gibt es zwei Symbole, mit denen Sie zwischen benutzerdefinierter und vollständiger Listen umschalten. Dann folgt ein Symbol zum Speichern der Metadaten, Daneben finden Sie ein Symbol zum Drucken und zum Kopieren der Metadaten in die Zwischenablage. </para>
+           <para
+>Unter der Liste der Metadaten finden Sie eine Suchleiste. Geben Sie dort die ersten Buchstaben ein, werden die Metadaten nacheinander folgend gefiltert. Setzen Sie die Eingabe fort, bis Sie die Suche weit genug eingeschränkt haben. Dies ist ein schneller Weg für den Zugriff auf bestimmte Informationen.</para>
+
+           <para
+>Die in diesen vier Karteikarten angezeigten Metadaten können auch mehrfach an anderen Stellen im Programm bearbeitet werden. <itemizedlist>
+                 <listitem
+><para
+>mit der <ulink url="help:/digikam/using-camera.html"
+>Kameraschnittstelle</ulink
+></para
+></listitem>
+                 <listitem
+><para
+>dem <ulink url="help:/kipi-plugins/metadataeditor.html"
+>Metadaten-Editor</ulink
+></para
+></listitem>
+                 <listitem
+><para
+>mit der <ulink url="help:/kipi-plugins/geolocalization.html"
+>Geo-Lokalisierung</ulink
+></para
+></listitem>
+                 <listitem
+><para
+><ulink url="help:/menu-descriptions#synchronize-metadata"
+>Kopieren</ulink
+>  von Metadaten aus der Datenbank in Dateien.</para
+></listitem>
+                 <listitem
+><para
+><ulink url="help:/menu-descriptions#update-db-metadata"
+>Kopieren</ulink
+> von Metadaten in die Datenbank</para
+></listitem>
+             </itemizedlist>
+           </para>
+
+           <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadata.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>Die Karteikarte Metadaten</phrase
+></textobject
+></inlinemediaobject>
+           </para>
+
+           <sect3 id="using-sidebarmetadataexif">
+           <title
+>EXIF-Stichwörter</title>
+
+                <anchor id="kexif.anchor"/>
+
+                <sect4>
+                <title
+>Was ist EXIF?</title>
+
+                    <para
+>Exif bedeutet <ulink url="https://de.wikipedia.org/wiki/Exif"
+>Exchangeable Image File Format</ulink
+>. Es wurde speziell für digitale Kameras entwickelt. Es erlaubt das Speichern einer großen Menge von Daten über die Fotografie. Diese Information beschreibt die Kamera, mit der das Foto aufgenommen wurde, zusammen mit den benutzten Einstellungen wie auch Datum und Zeit. Ein eingebettetes Vorschaubild kann eingefügt werden. </para>
+
+                    <para
+>Das Exif-Format enthält eine Gruppe von Markierungsabschnitten, die <emphasis
+>Image File Directories</emphasis
+> (IFD). Die folgenden Abschnitte finden Sie wahrscheinlich in einer normalen Exif-Datei: <itemizedlist>
+
+                        <listitem
+><para
+><guilabel
+>Bild-Information</guilabel
+>: Enthält allgemeine Informationen zum Bild. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Eingebettetes Vorschaubild</guilabel
+>: Enthält Informationen über das eingebettete Vorschaubild. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Fotograf-Information</guilabel
+>: Enthält erweiterte Informationen über den Fotografen. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Kompatibilität</guilabel
+>: Enthält Informationen zur Unterstützung von Interoperabilität zwischen verschiedenen Exif-Implementationen. </para
+></listitem>
+
+                    </itemizedlist>
+
+                    </para>
+
+                </sect4>
+
+                <sect4>
+                <title
+>Anwendung des Exif-Betrachters</title>
+
+                    <para
+>Sie können die eingebetteten Exif-Information des ausgewählten Bilds auf der ersten Karteikarte betrachten. Es lassen sich hier aber keine Daten ändern. Ist die Liste länger als das Anzeigefenster, blättern Sie mit der Bildlaufleiste und dem Mausrad. </para>
+
+                    <para
+>Sie können die Exif-Metadaten in zwei verschiedenen Detailstufen anzeigen lassen: <itemizedlist>
+
+                        <listitem
+><para
+><guilabel
+>Benutzerdefinierte Liste</guilabel
+>: Zeigt nur die wichtigsten Exif-Daten an. </para
+></listitem>
+
+                        <listitem
+><para
+><guilabel
+>Komplette Liste</guilabel
+>: Zeigt alle Exif-Metadaten. </para
+></listitem>
+
+                    </itemizedlist>
+
+                    </para>
+
+                    <para
+>Einige Hersteller haben zusätzliche Exif-Abschnitte wie zum Beiseile Canon, Fujifilm, Nikon, Minolta, and Sigma. Diese Abschnitte enthalten spezifische Hersteller- und Modelldaten. Diese werden auf der Karteikarte <guilabel
+>Herstellerbemerkungen</guilabel
+> angezeigt. </para>
+
+                </sect4>
+
+           </sect3>
+
+           <sect3 id="using-sidebarmetadatamakernote">
+           <title
+>Stichwörter für Herstellerbemerkungen</title>
+
+                <sect4>
+                <title
+>Was sind Herstellerbemerkungen?</title>
+
+                    <para
+>Der Exif-Standard definiert Stichwörter für Herstellerbemerkungen. Damit können die Kamerahersteller Metadaten in eigenen Formaten in der Datei einfügen. Dies wird in wachsendem Maß von Kameraherstellern benutzt, um eine riesige Anzahl von Kameraeinstellungen zu speichern, die nicht im Exil-Standard definiert sind. Dazu gehören Aufnahmemodus, Einstellungen zur Nachbearbeitung, Seriennummer, Belichtungsmodus &etc; Aber diese Formate sind proprietär und Herstellerspezifisch. </para>
+
+                </sect4>
+
+                <sect4>
+                <title
+>Ansicht der Herstellerbemerkungen verwenden</title>
+
+                    <para
+>Sie können die eingebetteten Hersteller-Information des ausgewählten Bilds auf dieser Karteikarte betrachten. Es lassen sich hier aber keine Daten ändern. </para>
+
+                    <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadatamakernote.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>Die Ansicht der Herstellerbemerkungen in Aktion</phrase
+></textobject
+></inlinemediaobject>
+                    </para>
+
+                </sect4>
+
+           </sect3>
+
+           <sect3 id="using-sidebarmetadataiptc">
+           <title
+>IPTC-Stichwörter</title>
+
+                <sect4>
+                <title
+>Was ist IPTC?</title>
+
+                    <para
+><ulink url="http://www.iptc.org"
+>International Press Telecommunications Council</ulink
+> ist ein Konsortium der wichtigsten Nachrichtenagenturen und Herausgebern von Nachrichten in der Welt. Es entwickelt und verwaltet technische Standards für den verbesserten Austausch von Nachrichten, die von allen großen Nachrichten-Organisationen der Welt verwendet werden. </para>
+
+                    <para
+>Das IPTC wurde 1965 von einer Gruppe von Nachrichten-Organisationen  gegründet, um die Telekommunikations-Interessen der Welt-Presse zu sichern. Seit den späten 1970ern konzentrieren sich die Aktivitäten der IPTC primär auf die Entwicklung und Veröffentlichung von Industriestandard für den Austausch von Nachrichtendaten. </para>
+
+                    <para
+>Insbesondere definiert die IPTC eine Gruppe von Attributen für Metadaten, die für Bilder verwendet werden können. Diese wurden ursprünglich 1979 definiert und 1991 wesentlich zum „Information Interchange Model“ (IIM) überarbeitet, aber das Konzept wurde 1994 erheblich verbessert, als Adobe eine Spezifikation für das tatsächliche Einbetten von Metadaten in digitale Bilder definierte, dies wurde als „IPTC-Header“ bekannt. </para>
+
+                </sect4>
+
+                <sect4>
+                <title
+>Anwendung des IPTC-Betrachters</title>
+
+                    <para
+>Sie können die eingebetteten IPTC-Information des ausgewählten Bilds auf dieser Karteikarte betrachten. Es lassen sich hier aber keine Daten ändern. </para>
+
+                    <para
+><inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadataiptc.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>Der IPTC-Betrachter in Aktion</phrase
+></textobject
+></inlinemediaobject>
+                    </para>
+
+                </sect4>
+
+           </sect3>
+
+         </sect2>
+
+        <sect2 id="using-sidebarcolors"
+>            <title
+>Farben</title>
+           <para
+>Die Seitenleiste Farben hat die zwei Karteikarten <guilabel
+>Farbe</guilabel
+> und <guilabel
+>ICC-Profile</guilabel
+>. Weitere Informationen finden Sie im Abschnitt <link linkend="using-iccprofile"
+>Farbverwaltung</link
+>. </para>
+
+            <sect3 id="using-histogramviewer">
+            <title
+>Histogramm-Betrachter</title>
+            
+                <anchor id="histogramviewer.anchor"/>
+            
+                <para
+>Das Histogramm eines Bilds zeigt die Menge jeder vorhandenen Farbe und ihre verschiedenen Amplituden im Bild. Wenn Ihr Bild einen Farbstich hat, können Sie den Fehler im Histogramm erkennen. </para>
+            
+                <para
+>Der Histogramm-Betrachter zeigt die statistische Verteilung von Farbwerten im Bild. Es lassen sich hier aber keine Daten ändern. Möchten Sie eine Farbkorrektur auf der Grundlage eines Histogramms durchführen, sollten Sie die Bearbeitungsmodule „Tonwertkorrektur“ oder „Gradation“ verwenden. </para>
+                                                
+                <example
+>   <title
+>Der Histogramm-Betrachter in Aktion</title>
+                    <screenshot
+><screeninfo
+>Der Histogramm-Betrachter in Aktion</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarcolorshistogramviewer.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+                </example>
+            
+                <para
+>Ein Bild kann in die Farbkanäle <guilabel
+>Rot</guilabel
+>, <guilabel
+>Grün</guilabel
+>, <guilabel
+>Blau</guilabel
+> und <guilabel
+>Alpha</guilabel
+>. Der <guilabel
+>Alpha</guilabel
+>-Kanal ist eine Ebene im Bild, die Transparenz unterstützt wie PNG oder &GIF;-Bilder. Jeder Kanal unterstützt einen Intensitätsbereich von 0 bis 255 in Ganzzahlwerten. So wird ein schwarzes Pixel in allen Farbkanälen mit dem Wert 0 kodiert und ein weißes Pixel mit dem Wert 255. Ein transparentes Pixel wird im Alpha-Kanal mit 0 und ein deckendes Pixel mit dem Wert 255. </para>
+            
+                <para
+>Im Histogramm-Betrachter können Sie jeden Kanal getrennt anzeigen: <itemizedlist>
+            
+                    <listitem
+><para
+><guilabel
+>Leuchtkraft</guilabel
+>: Zeigt die Verteilung der Helligkeitswerte. </para
+></listitem>
+
+                    <listitem
+><para
+><guilabel
+>Rot</guilabel
+>, <guilabel
+>Grün</guilabel
+>, <guilabel
+>Blau</guilabel
+>: Zeigt die Verteilung der Helligkeitswerte für Rot, Grün und Blau. </para
+></listitem>
+                
+                    <listitem
+><para
+><guilabel
+>Alpha</guilabel
+>: Zeigt die Verteilung der Undurchsichtigkeitsebenen. Ist die Ebene vollständig deckend oder vollständig durchsichtig, besteht das Histogramm aus einem einzelnen Balken an der linken oder rechten Seite. </para
+></listitem>
+
+                    <listitem
+><para
+><guilabel
+>Farben</guilabel
+>: Zeigt die Histogramme von <guilabel
+>Rot</guilabel
+>, <guilabel
+>Grün</guilabel
+> und <guilabel
+>Blau</guilabel
+> überlagert an. Dadurch können alle Informationen zur Farbverteilung in einer gemeinsamen Ansicht. </para
+></listitem>
+                            
+                </itemizedlist>
+            
+                </para>
+            
+                <para
+>Mit der Skalierung können Sie festlegen, ob die Y-Werte in linearem oder logarithmischen Maßstab angezeigt werden. Für Bilder, die mit einer digitalen Kamera aufgenommen wurde, ist der Modus <guilabel
+>Linear</guilabel
+> normalerweise am sinnvollsten. Jedoch bei Bilden, die erhebliche Bereiche in gleicher Farbe haben, besteht das Histogramm nur aus einem einzelnen Balken. Dann ist der Anzeigemodus <guilabel
+>Logarithmisch</guilabel
+> sinnvoller. </para>
+
+                <para
+>Sie können die Analyse im Bereich <guilabel
+>Statistik</guilabel
+> unten in der Seitenleiste auf einen begrenzten Wertebereich einstellen. Dies können Sie auf zwei Arten durchführen: <itemizedlist>
+            
+                    <listitem
+><para
+>Klicken und ziehen Sie den Zeiger über den Anzeigebereich des Histogramms vom niedrigsten bis zum höchsten Wert des gewünschten Bereichs. </para
+></listitem>
+
+                    <listitem
+><para
+>Verwenden Sie die Drehfelder unter dem Histogramm-Bereich. Der linke Eintrag ist der untere und der rechte Eintrag ist der obere Grenzwert des Bereichs. </para
+></listitem>
+            
+                </itemizedlist>
+                            
+                </para
+> 
+            
+                <para
+>Die unter dem Histogramm angezeigten Statistikdaten beschreiben die Verteilung der Werte in den Kanälen für den ausgewählten Bereich: Folgende Werte werden angezeigt: <itemizedlist>
+            
+                    <listitem
+><para
+>Die Anzahl der Pixel im Bild. </para
+></listitem>
+
+                    <listitem
+><para
+>Die Anzahl der Pixel, deren Werte im ausgewählten Bereich liegen. </para
+></listitem>
+
+                    <listitem
+><para
+>Das rechnerische Mittel </para
+></listitem>
+
+                    <listitem
+><para
+>Die Standardabweichung. </para
+></listitem>
+            
+                    <listitem
+><para
+>Der Median des ausgewählten Histogramm-Bereichs. </para
+></listitem>
+
+                    <listitem
+><para
+>Den Prozentsatz der Pixel, deren Werte im ausgewählten Bereich liegen. </para
+></listitem
+>      
+                                                      
+                    <listitem
+><para
+>Die Farbtiefe des Bilds. </para
+></listitem>
+
+                    <listitem
+><para
+>Der Alphakanal im Bild. </para
+></listitem>
+
+                    <listitem
+><para
+>Die Quelle des Histogramms, entweder <guilabel
+>Vollbild</guilabel
+> oder <guilabel
+>Bildbereich</guilabel
+>, wenn Sie im Editor einen Teil des Bilds ausgewählt haben. </para
+></listitem>
+
+                </itemizedlist>
+
+                </para>
+        
+            </sect3>
+
+            <sect3 id="using-usinghistogram">
+            <title
+>Arbeiten mit Histogrammen</title>
+                
+                <para
+>Histogramme sind ein grafisches Mittel, um die Fehlerfreiheit eines auf dem Bildschirm angezeigten Fotos zu beurteilen.Im Diagramm werden drei Bereiche der Helligkeit des Fotos dargestellt: <itemizedlist
+> <listitem
+><para
+> (1) : Dunkle Farbtöne links. </para
+></listitem
+> <listitem
+><para
+> (2) : Mittlere Farbtöne in der Mitte. </para
+></listitem
+> <listitem
+><para
+> (3) : Helle Farbtöne rechts. </para
+></listitem
+> </itemizedlist
+> <example
+> <title
+>Histogramm eines Bilds mit allen Farben</title
+> <screenshot
+><screeninfo
+>Histogramm eines Bilds mit allen Farben</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramdescription.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example
+> Die Verteilung von Spitzen und Ausbeulungen zeigt an, ob ein Bild zu dunkel, zu hell oder ausgewogen ist. </para>
+        
+                <para
+>Bei einer unterbelichteten Aufnahme zeigt das Histogramm eine Verteilung der Helligkeit mit dem Schwerpunkt auf der linken Seite des Diagramms.<example
+> <title
+>Ein unterbelichtetes Foto</title
+> <screenshot
+><screeninfo
+>Ein unterbelichtetes Foto</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramsample1.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example
+> Bei einer überbelichteten Aufnahme zeigt das Histogramm eine Verteilung der Helligkeit mit dem Schwerpunkt auf der rechten Seite des Diagramms.<example
+> <title
+>Ein überbelichtetes Foto</title
+> <screenshot
+><screeninfo
+>Ein überbelichtetes Foto</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramsample3.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot
+> </example
+> Bei einer korrekt belichteten Aufnahme zeigt das Histogramm eine Verteilung der Helligkeit mit dem Schwerpunkt im mittleren Bereich des Diagramms. <example
+>   <title
+>Ein korrekt belichtetes Foto</title>
+                    <screenshot
+><screeninfo
+>Ein korrekt belichtetes Foto</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;editorhistogramsample2.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+                </example>
+                
+                </para>
+
+                <para
+>Wichtiger Hinweis: Nicht alle Fotografien zeigen diese Ausbuchtung im mittleren Bereich des Histogramms. Dies hängt auch vom Motiv der Aufnahme ab. In manchen Fällen zeigt das Histogramm eines korrekt belichteten Fotos Spitzen in den beiden äußeren Bereichen an. </para>
+                        
+                <para
+>Ein Histogramm ist eine verlässliche Methode, um zu erkennen ob ein Bild korrekt belichtet ist. Zeigt ein Histogramm Über- oder Unterbelichtung, dann können Sie die <link linkend="exposure-correct"
+>Belichtungskorrektur</link
+> verwenden, um das Foto zu korrigieren. </para>
+                
+            </sect3>
+ 
+        </sect2>
+
+                    
+        <sect2 id="using-sidebargeolocation"
+>       <title
+>Die Karteikarte Geolokalisierung</title>
+
+    <para
+>Diese Anzeige basiert auf einem Marble-Miniprogramm, um eine Übersichtskarte zur Orientierung anzuzeigen. Die Vergrößerung können Sie mit dem Mausrad ändern, indem Sie es entweder drehen oder das Rad halten und ziehen. Verschieben Sie die Karte, indem Sie die linke Maustaste gedrückt halten und ziehen.</para>
+                <example
+>   <title
+>Die Karteikarte Geolokalisierung</title>
+                    <screenshot
+><screeninfo
+>Wählen Sie bitte <quote
+>Weitere Informationen</quote
+> für Karten mit höherer Auflösung.</screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarmetadatagps.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+                </example>
+        <para
+>In der linken Seitenleiste finden Sie ein Kartensuchwerkzeug. Drücken Sie den <keycombo action="press"
+>&Ctrl;<keycap
+>linken Mausknopf</keycap
+></keycombo
+>, um ein Quadrat aufzuziehen. Alle Bilder innerhalb dieser Koordinaten werden gefiltert und angezeigt. </para>
+    <para
+>In der rechten Seitenleiste sehen Sie ein Kreuz, das den GPS-Ort anzeigt und ein Vorschaubild daneben. Die GPS-Koordinaten und die Zeitinformationen werden unten in der Seitenleiste angezeigt. </para>
+    <para
+>Um die Karte in höherer Auflösung anzuzeigen, klicken Sie auf den Knopf <guibutton
+>Mehr Informationen dazu im Internet</guibutton
+>, um den detaillierten Kartendienst, den Sie im Auswahlfeld links ausgewählt haben, im Internetbrowser zu öffnen.</para>
+    <para
+>Die angezeigten Positionsdaten werden tatsächlich in den Exif-Stichwörtern der Bilder und nicht in der Datenbank gespeichert. Dadurch kann der Ort von jeder anderen Anwendung gelesen werden, die GPS-Daten von Exif verarbeiten kann.</para>
+
+                 <sect3
+>                <title
+>Was ist GPS?</title>
+
+                    <para
+>Das <ulink url="https://de.wikipedia.org/wiki/GPS"
+>Global Positioning System (Globales Positionsbestimmungssystem)</ulink
+>, normaler weise nur GPS genannt, ist das einige vollständig  funktionierende Satelliten-Navigationssystem. Eine Gruppe von mehr als zwei Dutzend GPS-Satelliten strahlen mit codierten Radiosignalen ständig ihre aktuelle Position und die genaue Uhrzeit aus. Damit kann jeder GPS-Empfänger überall auf der Erde seinen Standort (Längengrad, Breitengrad, Höhe) genau bestimmen. GPS stellt auch ein sehr präzises Zeitsignal und eine Geschwindigkeitsanzeige mit sehr hoher Genauigkeit zur Verfügung. </para>
+                    <para
+>GPS-Informationen können in Bildern direkt durch unterstütze Kameras oder mit dem Abgleich von Fotos mit externen GPS-Geräten gespeichert werden. Weitere Informationen finden Sie in diesem <ulink url="help:/digikam/using-camera.html#using-gps"
+>Abschnitt</ulink
+>. </para>
+                </sect3>
+
+    </sect2>
+
+        <sect2 id="using-sidebarcommentstags">
+        <title
+>Kommentare &amp; Stichwörter</title>
+           <para
+>Mit dem Reiter in der Seitenleiste können Sie Bildattribute wie Beschriftungen, Bewertung, Datum und Stichworte bearbeiten. Die Attribute werden in der angeschlossenen Datenbank, in den IPTC- und EXIF-Datenfeldern gespeichert und werden Teil des Bildes. Alle Attribute sind über eine Ansicht der Seitenleiste erreichbar, die unten im Bildschirmfoto gezeigt wird. Während des Einlesens des Bildes ist die Reihenfolge a) Datenbank b) IPTC und c) EXIF. Falls also eine Diskrepanz zwischen einem der drei auftritt, wird diese Reihenfolge benutzt und eine Synchronisation durchgeführt. Die Seitenleiste verfügt am oberen Ende über ein Navigationsfeld mit Pfeilen für erstes, vorheriges, nächstes und letztes. </para>
+
+           <example
+>  <title
+>Beispiel für die Seitenleiste <quote
+>Kommentare/Stichworte</quote
+></title>
+                 <screenshot
+><screeninfo
+>Beispiel für die Seitenleiste <quote
+>Kommentare/Stichworte</quote
+></screeninfo
+><mediaobject
+><imageobject
+><imagedata fileref="&path;sidebarcommentstags.png" format="PNG"/> </imageobject
+></mediaobject
+></screenshot>
+           </example>
+
+          <sect3>
+          <title
+>Kommentaransicht</title>
+           <para
+>In der Beschriftungsansicht können Sie Beschriftungen mit unbegrenzter Größe eingeben oder einfügen. Beachten Sie hierzu die Bemerkung unten. Der Text ist UTF-8 kompatibel. Das bedeutet, dass sämtliche Sonderzeichen erlaubt sind. Die Beschriftungen werden in die EXIF- und IPTC- Felder kopiert, damit Sie von anderen Programmen benutzt werden können. </para>
+           <caution
+><para
+>Die IPTC-Daten unterstützen nur ASCII-Zeichen und sind auf 2000 Zeichen limitiert. Alle Kommentare werden nach 2000 Zeichen abgeschnitten und Sonderzeichen werden umgeformt. Wenn Sie das IPTC-Beschriftungsfeld in anderen Anwendungen benutzen wollen, sollten Sie diese Einschränkungen beachten. </para
+></caution>
+    <para
+>Nach dem Sie es kommentiert haben benutzen Sie entweder den Knopf <guibutton
+>Anwenden</guibutton
+> oder wechseln einfach zum nächsten Bild, die Beschriftungen werden dann gespeichert.</para>
+    <para
+>Neben dem Anwenden-Knopf gibt es einen Knopf <guibutton
+>Mehr</guibutton
+>. Mit diesem können Sie weitere Metadaten aus der ausgewählten Datei oder der Datenbank auslesen. Sie können aber auch die Metadaten in die Dateien schreiben. Dies wird aber immer durchgeführt, wenn Sie eine Metadateneinstellung gewählt haben die immer in die Bilder geschrieben wird.</para>
+
+          </sect3>
+
+          <sect3>
+          <title
+>Datum &amp; Uhrzeit</title>
+
+           <para
+>Im Abschnitt Datum &amp; Zeit, der die Zeit, zu der das Foto gemacht wurde, darstellt, können Sie alle Werte ändern. Beim Datumsknopf öffnet sich ein Kalender und das Zeiteingabefeld kann auch direkt zur Eingabe der Zeit benutzt werden. Die Datierung wird in die EXIF-Felder für Datum und Zeit kopiert. Wenn Sie für mehrere Bilder Zeit &amp; Datum ändern müssen, gibt es dafür eine komfortablere Methode, die die KIPI-Module benutzt. Diese Option kann unter <menuchoice
+><guimenuitem
+>Bild</guimenuitem
+><guimenuitem
+>Zeit und Datum einstellen ...</guimenuitem
+></menuchoice
+> gefunden werden. Wählen Sie dazu in der Hauptansicht die Bilder aus und rufen Sie das Modul auf. </para>
+          </sect3>
+
+          <sect3>
+          <title
+>Bewertung</title>
+
+           <para
+>Der Abschnitt Bewertung zeigt ein Bewertungsschema von 0 bis 5 Sternen an und kann in Suchen und Sortierungen benutzt werden. Er kann entweder mit einem einzelnen Mausklick auf die 5 Sterne in die Seitenleiste oder mit dem Tastaturkürzel Strg+0...5 angewendet werden. Die Bewertung aus der Seitenleiste wird immer nur auf ein Bild angewendet. Um mehrere Bilder gleichzeitig zu bewerten, wählen Sie diese aus und benutzen Sie das Kontextmenü. </para>
+           <para
+>Die Bewertung wird in das IPTC-Feld <quote
+>urgency</quote
+> geschrieben. Die Kodierung folgt dabei dem Schema in der folgenden Tabelle: </para>
+
+              <informaltable
+><tgroup cols="2">
+                <thead
+><row>
+                    <entry
+>&digikam;-Bewertung</entry>
+                    <entry
+>IPTC-Dringlichkeit</entry>
+                    </row
+></thead>
+
+                    <tbody>
+                        <row
+>   <entry
+>-</entry
+>         <entry
+>8</entry
+>      </row>
+
+                        <row
+>   <entry
+>*</entry
+>         <entry
+>7</entry
+>      </row>
+
+                        <row
+>   <entry
+>*</entry
+>         <entry
+>6</entry
+>      </row>
+
+                        <row
+>   <entry
+>**</entry
+>        <entry
+>5</entry
+>      </row>
+
+                        <row
+>   <entry
+>***</entry
+>       <entry
+>4</entry
+>      </row>
+
+                        <row
+>   <entry
+>****</entry
+>      <entry
+>3</entry
+>      </row>
+
+                        <row
+>   <entry
+>****</entry
+>      <entry
+>2</entry
+>      </row>
+
+                        <row
+>   <entry
+>*****</entry
+>     <entry
+>1</entry
+>      </row>
+                     </tbody>
+
+              </tgroup
+></informaltable>
+
+          </sect3>
+
+          <sect3>
+          <title
+>Stichwortbaum</title>
+
+           <para
+>Die Stichwortansicht zeigt eine Suchbox zum Filtern der Stichwörter, den Stichwortbaum und eine Auswahlbox mit den zuvor in dieser &digikam;-Sitzung angewendeten Stichwörtern. </para>
+           <para
+>Der Stichwortbaum wird dynamisch dem eingegebenen Suchwort angepasst. Sie können so die Anzahl der Möglichkeiten bei der Suche nach einem Stichwort schnell einschränken. Diese Fähigkeit ist besonders nützlich, wenn Sie viele Stichwörter haben. </para>
+
+           <para
+>Das Eingabefeld am unteren Ende ist eine weitere Erleichterung bei der Eingabe von Stichwörtern bei einer Bilderserie. Wenn Sie verschiedene Stichwörter eingegeben haben, werden diese für den schnellen Zugriff gespeichert. </para>
+
+           <para
+>Stichwörter können auch durch Markieren der entsprechenden Ankreuzfelder im Baum gesetzt werden. Alle Stichworte eines Bildes werden in das IPTC-Feld <quote
+>keyword</quote
+> gespeichert. </para>
+           <note
+><para
+>Wenn mehrere Bilder in der Hauptansicht ausgewählt sind und Sie ein Stichwort im Stichwortbaum auswählen, wird dieses nur auf das hervorgehobene Bild und nicht auf die gesamte Auswahl angewendet, Wenn Sie eine Auswahl mit einem Stichwort versehen wollen, lesen Sie bitte den Abschnitt <link linkend="using-sidebartagfilters"
+>Stichwortfilter</link
+>. </para
+></note>
+
+          </sect3>
+
+        </sect2>
+
+
+        <sect2 id="using-sidebartagfilters">
+        <title
+>Stichwortfilter</title>
+           <para
+>Die Seitenleiste Stichwortfilter wird benutzt, um die Auswahl der im Hauptfenster angezeigten Bilder zu ändern. Normalerweise wird dazu die linke Seitenleiste mit ihren Album,- Datum-, Stichwort- und Suchansichten benutzt. Wenn zusätzlich ein oder mehrere Stichwortfilter aus der rechten Seite benutzt werden, wird nur die Schnittmenge dieser beiden angezeigt. Alle erstellten Stichwörter sind verfügbar. </para>
+           <para
+>Nehmen Sie z. B. an, dass Sie ein Stichwort <quote
+>Öffentlich</quote
+> haben, das alle Bilder bis auf Ihre privaten enthält. Sie können dann dieses Stichwort in der rechten Seitenleiste auswählen, um Ihre privaten Bilder zu verstecken. Welche Ansicht Sie auch in der linken Seitenleiste wählen, nur die öffentlichen Bilder werden angezeigt. Ein weiteres typisches Beispiel ist die Auswahl einer Untermenge an Stichwörtern im hierarchischem Baum. Angenommen Sie wollen die Stichwörter Rot und Grün aus einem Baum mit sieben verschieden Farben als Unterstichwörter auswählen. Wählen Sie dazu einfach das Stichwort Farbe und danach Rot und Grün aus der rechten Seitenleiste. </para>
+           <para
+>Sie können auch <emphasis
+>Stichworte ziehen und ablegen</emphasis
+>. Angenommen Sie haben in der Hauptansicht mehrere Bilder ausgewählt, um Sie mit Stichworten zu versehen. Wenn das Stichwort schon existiert, können Sie es einfach aus der rechten Seitenleiste ziehen und auf die Auswahl legen. Daraufhin erscheint ein Dialog, der Sie fragt, ob Sie das Stichwort setzen wollen. </para>
+
+           <para>
+                 <inlinemediaobject
+><imageobject
+><imagedata fileref="&path;sidebartagfilters.png" format="PNG"/> </imageobject
+><textobject
+><phrase
+>Seitenleiste <quote
+>Stichwortfilter</quote
+></phrase
+></textobject
+></inlinemediaobject>
+           </para>
+
+            <para
+>Im oberen Beispiel zeigt das Hauptfenster die Bilder an einem Kalendertag. Der Stichwortfilter steht auf <quote
+>Keine Stichwörter</quote
+>, was die Menge auf drei Bilder reduziert. Sie wurden mit Strg+a ausgewählt, und danach wurde ein Stichwort aus dem rechten Stichwortbaum auf die Auswahl gezogen und dort abgelegt. Ein Dialog fragt, ob dieses Stichwort gesetzt werden soll. </para>
+
+        </sect2>
+
+    </sect1>
+

@@ -1,0 +1,959 @@
+ <sect1 id="raw-decoding"
+>           <title
+>Behandeling van RAW-bestand en kleurbeheer</title>
+
+     <note
+><para
+>De auteur van dit artikel/deze handleiding is hoofdzakelijk Elle Stone, bedankt Elle voor die bijdrage. Ik heb het hoofdzakelijk aangepast aan de concrete implementatie van &digikam;.</para
+></note>
+    <sect2 id="CM-intro"
+>            <title
+>Inleiding</title>
+      <para
+>Het punt van een kleurbeheer is om er zeker van te zijn dat de kleuren uit uw camera of scanner een voorspelbare relatie hebben met de kleuren die zijn gefotografeerd of gescand, dat de kleuren weergegeven op uw monitor overeenkomen met de kleuren uit uw camera of scanner en dat de kleuren die u afdrukt of weergeeft op het web overeenkomen met de kleuren die u in uw digitale donkere kamer hebt gemaakt.</para>
+
+      <sect3 id="buttons-to-push"
+>     <title
+>Welke knoppen moet ik indrukken?</title>
+         <para
+>Als het tot kleurbeheer komt wil iedereen weten, "welke knoppen moet ik indrukken om het gewenste resultaat te krijgen". Helaas maakt kleurbeheer het nodig om geïnformeerde keuzes te maken bij elke stap in de workflow van afbeeldingsbewerking. Het doel van deze handleiding is om voldoende achtergrondinformatie te leveren over kleurbeheer, naast koppelingen naar meer diepgaande informatie, om u in staat te stellen om te beginnen met het maken van uw eigen geïnformeerde beslissingen, gebaseerd op door u gewenste resultaten.</para>
+      </sect3>
+
+      <sect3 id="CM-needed"
+>     <title
+>Is er iemand die zich geen zorgen hoeft te maken over kleurbeheer?</title>
+        <para
+>Als uw workflow voor afbeeldingen aan alle zes onderstaand getoonde criteria voldoet, dan hoeft u zich geen zorgen te maken over kleurbeheer. </para>
+        <orderedlist>
+            <listitem
+><para
+>u werkt op een monitor die juist is gekalibreerd op de sRGB kleurruimte (meer hierover later)</para
+></listitem>
+            <listitem
+><para
+>uw workflow voor afbeeldingen start met een in de camera gemaakte jpeg die zich al in de sRGB kleurruimte bevindt</para
+></listitem>
+            <listitem
+><para
+>u werkt uitsluitend in de sRGB kleurruimte voor bewerking</para
+></listitem>
+            <listitem
+><para
+>uw printer wil afbeeldingen in de sRGB kleurruimte</para
+></listitem>
+            <listitem
+><para
+>uw scanner produceert afbeeldingen in de sRGB kleurruimte</para
+></listitem>
+            <listitem
+><para
+>uw enige andere uitvoer van afbeeldingen is via e-mail of het web, waar sRGB de de facto standaard is</para
+></listitem>
+       </orderedlist>
+
+      </sect3>
+     </sect2>
+
+     <sect2 id="sRGB"
+>            <title
+>De sRGB kleurruimte</title>
+       <sect3
+>                   <title
+>Wat is er zo speciaal aan de sRGB kleurruimte?</title>
+         <para
+>sRGB word geaccepteerd als het standaard kleurprofiel door bijna iedereen die betrokken is bij consumentgerichte beeldbewerking. sRGB werd in 1996 voorgesteld door Hewlett Packard en Microsoft als een gestandaardiseerde kleurruimte voor consument gerichte toepassingen. Zoals werd gesteld in het initiële HP/MS voorstel: <blockquote
+><para
+>Hewlett-Packard en Microsoft stellen voor om de ondersteuning voor een standaard kleurruimte, sRGB, binnen de Microsoft besturingssystemen, HP producten, het Internet, en alle andere belangstellende leveranciers uit te breiden. Het doel van deze kleurruimte is om de huidige strategieën voor kleurbeheer aan te vullen met een derde methode voor het kleurbeheer dat gebruik maakt van een eenvoudig en robuust middel voor onafhankelijke kleurdefinitie voor besturingssystemen, apparaat besturingen en het Internet. Dit biedt goede kwaliteit en terugwerkende uitwisselbaarheid met minimale overdracht en systeembelasting. Gebaseerd op een gekalibreerde colorimetrische RGB kleurruimte, goed passend voor CRT beeldschermen, televisie, scanners, digitale camera's en printers kan zo een ruimte worden ondersteund met minimale kosten voor software en hardware leveranciers.</para
+></blockquote
+> <blockquote
+><para
+>Momenteel, wordt er door de ICC (International Color Consortium) op toegezien dat kleur op de juiste wijze van invoerkleurruimte naar uitvoerkleurruimte in kaart wordt gebracht door het aanbrengen van een profiel voor de invoerkleurruimte van de afbeelding in kwestie. Dit is passend voor de meer gevorderde gebruikers. Er is echter een breed scala aan gebruikers die geen behoefte hebben aan dit niveau van mogelijkheden en gebruik. Bovendien nemen de meeste bestandsformaten geen kleurprofiel op en zullen dat ook nooit doen, en tenslotte is er een brede reeks van toepassingen die het toevoegen van extra data aan hun files ontmoedigen. Een algemene standaard RGB kleurruimte richt zich op die onderwerpen door het samenvoegen van de vele standaard en niet-standaard RGB beeldscherm kleurruimten tot één enkele standaard RGB kleurruimte. Z'n standaard zou de kleurechtheid in de bureaubladomgeving dramatisch verbeteren.  Om een voorbeeld te geven, als leveranciers van besturingssystemen ondersteuning bieden voor de standaard RGB kleurruimte, dan kunnen leveranciers van in- en uitvoerapparatuur met deze kleurruimte gemakkelijk en betrouwbaar in de meest voorkomende situaties kleur kunnen communiceren zonder verdere overhead voor kleurmanagement in de meest voorkomende situaties.(<ulink url="http://www.w3.org/Graphics/Color/sRGB"
+>archived copy</ulink
+>)</para
+></blockquote
+> Samenvattend, het doel van de thans bijna algemeen aanvaardde sRGB kleurruimte was en is om het leven gemakkelijker te maken voor consumenten (geen zorgen meer over kleurmanagement), minder kosten voor fabrikanten (geen zorgen om uitwisselbaarheid tussen consumenten digitale camera's, scanners, beeldschermen, printers enz.) en meer gemak bij het tonen van beelden op het Internet (zonder zorgen over het invoegen en lezen van ICC profielen) en er van uitgaand dat sRGB de kleurruimte is.</para>
+       <para
+><emphasis
+>Dus, als sRGB zo goed werkt en het leven voor iedereen zo gemakkelijk maakt, waarom zou je nog een andere kleurruimte gebruiken en dus gedwongen worden om zich zorgen te maken over zaken als kleurbeheer?</emphasis
+></para>
+       <para
+>sRGB werd ontworpen om kleuren te bevatten die gemakkelijk getoond konden worden op beeldschermen voor consumenten en afgedrukt konden worden op printers voor consumenten die in 1996 gefabriceerd werden. Deze set  met de kleinste gemene deler van toonbare en afdrukbare kleuren - de technische benaming is "kleurengamma" - is veel kleiner dan de set kleuren die wij in werkelijkheid kunnen zien, veel kleiner ook dan de set kleuren die digitale camera's kunnen vastleggen, veel kleiner dan hedendaagse printers kunnen printen en veel kleiner dan het kleurengamma van de nieuwe, breedspectrum beeldschermen die op de markt voor consumenten aangeboden worden. Voor wie gebruik wil maken  van de bredere kleurengamma's die beschikbaar zijn, zelfs op het niveau van de gewone consument is het gamma van sRGB veel te klein. Omgekeerd, als u niet van plan bent om om gebruik te maken van bredere kleurengamma's op enig moment in uw digitale beeldbewerkingsproces dan hoeft u zich geen zorgen te maken over niet-sRGB kleurruimten en alle bijbehorende ingewikkeldheden van kleurbeheer.</para>
+       </sect3>
+       <sect3
+>                   <title
+>Hoe klein is sRGB?</title
+> 
+          <para
+>Een beeld van de beperkingen van sRGB in vergelijking met de kleuren die we in werkelijkheid zien wordt hieronder getoond. Het toont een twee dimensionaal beeld van alle kleuren die we kunnen zien (het hoefijzervormige gebied) en de kleuren die de sRGB ruimte omvat (het kleinere driehoekige gebied).</para>
+          <para>
+          <screenshot>
+          <screeninfo
+></screeninfo>
+          <mediaobject>
+           <imageobject>
+            <imagedata fileref="&path;542px-CIExy1931_sRGB_svg.png" format="PNG"/>
+           </imageobject>
+           <textobject>
+            <phrase
+></phrase>
+           </textobject>
+          </mediaobject>
+          </screenshot>
+          </para>
+          <para
+>Als u het twee dimensionale beeld van sRGB wilt zien in vergelijking met enkele van de grotere gebruikte kleurruimten, kijk dan op: Bruce Lindbloom's uitmuntende site: <ulink url="http://www.brucelindbloom.com/"
+>site</ulink
+>, klik op "info"en daarna op: "information about RGB Working Spaces".</para>
+       </sect3>
+     </sect2>
+
+     <sect2 id="profile-monitor"
+> <title
+>Kalibreren en profileren van de RGB van uw monitor?</title
+> 
+          <sect3
+> <title
+>Als ik uitsluitend werk in de sRGB kleurruimte, moet ik dan mijn monitor kalibreren? </title>
+          <para
+>Ja, of u nu blijft binnen het kleurengamma dat door sRGB wordt geboden of niet, u heeft een juist gekalibreerd beeldscherm nodig omdat sRGB er van uit gaat dat uw beeldscherm is gekalibreerd voor sRGB. De kalibratie van uw beeldscherm vormt het sluitstuk van de cirkel. Als u werkt binnen  het kleurengamma, zoals voorzien door sRGB dan moet u uw beeldscherm kalibreren voor de sRGB standaard (of een accuraat kleurenschermprofiel aanmaken of beiden).    </para>
+          </sect3>
+          <sect3
+> <title
+>Wat zijn de consequenties van het werken met een niet gekalibreerde monitor?</title>
+          <para
+>Er zijn verschillende mogelijke consequenties. Geen van hen is goed. Elk beeldscherm, gekalibreerd of anders, kent een eigen (gekalibreerd) witpunt dat wordt uitgedrukt als temperatuur in graden Kelvin. Het witpunt van een beeldscherm (gekalibreerd of niet) is de kleur die u ziet als u kijkt naar een stukje zuiver wit op het beeldscherm. Zuiver wit is wanneer de RGB waarden in uw afbeelding allen gelijk zijn aan 255 (uitgedrukt in 8 bits), zoals de egaal witte pagina van een webpagina  of een office document. U denkt misschien wit is wit, maar als u verschillende beeldschermen, die allen gekalibreerd zijn op verschillende witpunten, dan zou u zien dat hoe hoger de temperatuur van het witpunt van het beeldscherm, hoe blauwer het scherm toont in vergelijking met schermen met een lager witpunt. Als u de instellingen van uw eigen beeldscherm kunt vinden, wijzig dan de temperatuur naar boven of naar beneden (vergeet niet om die weer terug te zetten naar beginstand wanneer u klaar bent, behalve als u besluit dat u een ander witpunt wilt instellen).  Uw ogen, die zich snel aanpassen aan een constant witpunt, zullen gemakkelijk het verschil zien wanneer het scherm blauwer en geler wordt naarmate u de aanwijzer hoger en lager beweegt. Als uw niet gekalibreerde scherm te blauw is (ingebouwde CRT kleurtemperatuur is 9300K en sRGB gaat er van uit dat het 6500K is) als u dan uw beeld bewerkt dan zult u overcompenseren en beelden produceren die te geel en te warm van kleur lijken op een juiste gekalibreerd beeldscherm. Omgekeerd, als uw beeldscherm te geel is omdat de kleurtemperatuur te laag werd ingesteld (ik geloof dat ingebouwde kleurtemperatuur van LCD schermen ongeveer 5500K is), dan zullen uw afbeeldingen  blauwachtig/te koel lijken op een juist gekalibreerd beeldscherm. </para>
+          <para
+>Het juiste witpunt instellen is slechts een deel van de kalibratie van het beeldscherm. U heeft ook een exact zwartpunt, helderheid en kleurengamma nodig. Als uw beeldscherm te donker is omdat het zwartpunt te laag is ingesteld dan zult u overcompenseren en beelden krijgen die er bleek uitzien op een juist ingesteld beeldscherm. Andersom, als het zwartpunt van uw beeldscherm te hoog is ingesteld dan zullen uw beelden te donker en oververzadigd lijken op een juist ingesteld beeldscherm.  </para>
+          <para
+>Als de helderheid/contrast te hoog is ingesteld, dan neemt u aan dat uw afbeeldingen meer "pop" hebben dan ze werkelijk hebben wanneer ze bekeken worden op een goed gekalibreerde monitor, plus dat uw ogen zeer gaan doen en uw LCD-scherm sneller zal inbranden. </para>
+          <para
+>Als het gamma van uw monitor onjuist is ingesteld dan zullen uw variaties in kleurtoon onjuist zijn. Dat betekent, de schaduwen of de zeer lichte delen kunnen te veel gecomprimeerd of opgerekt zijn en u verleiden om dat in de tegenovergestelde richting te compenseren. Dus wanneer bekeken op een juist ingestelde monitor  zouden de schaduwen te helder of te donker worden (of de zeer lichte delen te donker of te licht) en de rest van het beeld zou lijden aan overmatige compressie. Nog erger is het als de interne R, G, en B kanon (of het LCD-equivalent) van uw monitor onjuist zijn ingesteld (elk kanon heeft zijn eigen zwartpunt en versterking), omdat de resulterende kleurenset - te groen, te magenta, te oranje, etc. is, die u onvermijdelijk maakt door uw afbeelding bij bewerking te "corrigeren" - zijn zeer duidelijk wanneer bekeken op een juist gekalibreerde monitor. </para>
+          <para
+>Of uw beeldscherm juist is gekalibreerd of niet, u zult verbaasd zijn over de resultaten bij het vergelijken van een beeld dat u heeft bewerkt op uw eigen computer wanneer dat beeld op andere beeldschermen bij u thuis of op het beeldscherm van een vriend of buurman wordt weergegeven. Wij waren werkelijk verbaasd, elk beeld bewerkt op onze computer zag er op de andere beeldschermen anders uit tot we een spectrofotometer kochten om alle beeldschermen in ons huis te kalibreren en er een kleurprofiel voor aan te maken. Geen van de twee verouderde CRT beeldschermen in ons huis kunnen nu nog gekalibreerd worden om een juist zwartpunt in te stellen en worden niet langer gebruikt voor beeldbewerking. Daaruit blijkt dat een bijkomend voordeel van het gebruik van een spectrofotometer is dat u kunt vaststellen wanneer het tijd word om een ander beeldscherm aan te schaffen.</para>
+         </sect3>
+          <sect3
+> <title
+>De betekenis van "zwartpunt" en "helderheid" lijkt behoorlijk helder, maar wat betekent "gamma"?</title>
+          <para
+>Bekijk <ulink url="http://nl.wikipedia.org/wiki/Gamma_correctie"
+>dit artikel in Wikipedia</ulink
+> om een overzicht te krijgen van de rol van gamma in beeldschermen en fotografie; de koppelingen onderaan het artikel in het Engels zijn allen uitstekende bronnen voor aanvullende informatie. Wikipedia stelt "Gamma compressie, ook wel genoemd: gammacodering, wordt gebruikt voor lineaire belichting of om RGB waarden te coderen naar videosignalen of digitale videobestandswaarden. Gamma verbreding is het omgekeerde ofwel het decoderingsproces. Gamma codering helpt om gegevens/data (zowel analoog als digitaal) te onder te brengen in een zichtbaar uniform gebied. Ja, we weten het, het is lastig om te begrijpen maar lees het artikel op Wikipedia en bekijk aandachtig de afbeeldingen. Uiteindelijk zult u het gaan begrijpen. Als u zich dieper in de materie van bewerken en kleurbeheersing wilt begeven, dan zult u uiteindelijk beslissingen moeten nemen over welk gamma (of andere codering of decoderingsfunctie u wilt gebruiken wanneer u uw beeldscherm kalibreert, een profiel aanmaakt voor uw digitale camera en een kleurruimte kiest. Wanneer u onzeker bent (voor hen die liever alleen willen weten welk knopje te gebruiken!), gamma=2.2 is een wijdverbreide waarde voor zowel beeldschermkalibratie als kleurruimten.</para>
+         </sect3>
+          <sect3
+> <title
+>Wat is het verschil tussen kalibreren van een monitor en profileren van een monitor? </title>
+          <para
+>Bij het voor de eerste keer iets leren over kleurbeheer zijn veel mensen in verwarring over het verschil tussen kalibreren en profileren van een monitor (ik was het). Aanhalen van de uitstekende discussie van Hal Engel in het forum voor &digikam; gebruikers:</para>
+             <blockquote
+><para
+>Het kalibreren houdt in dat een apparaat in een bepaalde staat wordt gebracht door het wijzigen van de instellingen. Bijvoorbeeld, het kalibreren van een beeldscherm omvat het instellen van het witpunt, zwartpunt, helderheid en gamma tot van tevoren vastgesteld standaarden door gebruik te maken van de besturing van het beeldscherm en door de kromme van de videokaart te wijzigen. In tegenstelling tot kalibreren is het maken van een profiel het herkenbaar maken van het apparaat zonder veranderingen aan te brengen of instellingen te wijzigen. Beter gezegd, het is dus een meetproces dat een bestand oplevert waarin de juiste mathematische beschrijving van kleur- en tooneigenschappen van het apparaat worden bepaald. Zo'n bestand is een ICC profiel. Deze karakteristieken omvatten de overdrachtsfunctie van de kleurruimte van het apparaat naar een gestandaardiseerde absolute kleurruimte (dit noemt men profielkleurruimte, PCS, in een ICC profiel), het witpunt, zwartpunt, primaire kleuren en andere informatie. Beeldschermen worden normaal gekarakteriseerd (geprofileerd) in hun gekalibreerde staat. Samenvattend, kalibratie brengt wijzigingen aan in het apparaat om de weergave van kleuren te veranderen, zodat de kleurweergave voldoet aan een vooraf bepaalde instelling. Profileren of karakterisering is een meetproces  dat een gedetailleerde beschrijving geeft van de kleurweergavekarakteristiek  van het (gekalibreerde) apparaat. (Overgenomen vanaf <ulink url="http://digikam.1695700.n4.nabble.com/Re-Color-Managed-View-How-td1739136.html#a14160285"
+>hier</ulink
+>)</para
+></blockquote>
+
+          <para
+>Technisch gezien is het kalibreren van uw beeldscherm geen onderdeel van kleurmanagement. Maar klaarblijkelijk is een juist gekalibreerd beeldscherm al dan niet vergezeld van een kleurprofiel een vereiste voor kleurbeheersing in uw werkproces. Deze zelfstudie behandeld niet de belangrijke onderwerpen over hoe een beeldscherm te kalibreren en van een profiel te voorzien. De documentatie <ulink url="http://www.argyllcms.com/"
+>ArgyllCMS </ulink
+> en <ulink url="http://lprof.sourceforge.net/"
+>LProf </ulink
+> zijn erg goed en zeer aan te bevelen. Om een van beide programma's te gebruiken om uw beeldscherm te kalibreren en te profileren, zult u een spectrofotometer nodig hebben. Het apparaat wordt ook wel "spin" of "spider" genoemd. Het is een apparaat om de RGB waarden van bepaalde posities te meten die op het beeldscherm worden geprojecteerd door kalibratie/profileringsprogramma's als Argyll en Lprof. De website Argyll onderhoudt een lijst van door hen ondersteunde spectrofotometers. Lprof kan gebruik maken van alle spectrofotometers die door Argyll worden gebruikt omdat beiden programma's relevante delen van de code delen. </para>
+         </sect3>
+          <sect3
+> <title
+>Kan ik mijn monitor kalibreren zonder een spectrumfotometer? </title>
+          <para
+>Op internet worden diverse manieren aangegeven om een beeldscherm te kalibreren zonder een spectrofotometer te gebruiken. Deze "op het oog" methoden zijn beter dan helemaal geen kalibratie en afhankelijk van uw ogen en van uw beeldscherm, kunnen ze redelijk bruikbare resultaten opleveren. Maar deze methode is geen vervanging voor een juist gekalibreerd en geprofileerd beeldscherm. Voor de goede orde, kalibreren en een profiel aanmaken voor een beeldscherm met een spectrofotometer, ofschoon beangstigend in het begin, is niet moeilijk. Spectrofotometers zijn te koop voor prijzen vanaf ca. 100 Euro. (Als u liever een duurder model wilt kopen let dan op dat u niet iets koopt dat volop mogelijkheden biedt maar niet onder Linux werkt.) De Argyll en/of LProf  documentatie begeleidt u door het proces voor het kalibreren en profileren van uw beeldscherm, zonder veel te moeten leren over kleurbeheer. En als u echter voldoende weet over kleurbeheer om te beseffen dat u een meer gedetailleerd kleurprofiel nodig heeft voor een een specifieke toepassing dan bieden deze twee programma's alle geavanceerde mogelijkheden die u kunt wensen.</para>
+         </sect3>
+          <sect3
+> <title
+>Aangenomen dat ik hebt besloten om uitsluitend in de sRGB kleurruimte te werken, welke knoppen van &digikam; moet ik dan indrukken nadat ik mijn monitor heb gekalibreerd? </title>
+          <para
+>Als uw beeldscherm is gekalibreerd naar sRGB standaard en u werkt uitsluitend in sRGB dan kunt u kleurbeheer in digikam uit zetten. U hoeft &digikam; niet te vertellen welk beeldschermprofiel te gebruiken omdat &digikam; de standaard instelling sRGB als kleurprofiel voor het beeldscherm gebruikt. En u hoeft &digikam; niet te vertellen een sRGB workflow aan te houden omdat &digikam; standaard sRGB gebruikt voor uw camera, printer en werkruimte zoals in 1996 aangegeven door HP en MS (ontwerpers van de standaard). </para>
+          <para
+>Maar als u de eerste stappen wilt nemen naar een kleurbeheer werkproces, kijk dan op: <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>overeenkomstige pagina voor Instellingen</ulink
+>, schakel kleurbeheer in en kies sRGB als uw beeldschermprofiel, uw cameraprofiel, uw werkruimteprofiel en uw printerprofiel. Als u ook Argyll of LProf heeft gebruikt om een beeldschermprofiel te maken nadat u uw beeldscherm heeft gekalibreerd en bijvoorbeeld genoemd: "mijnbeeldschermprofiel.icc" vertel &digikam; dan om mijnbeeldschermprofiel.icc te gebruiken in plaats van sRGB als beeldschermprofiel.</para>
+         </sect3>
+          <sect3
+> <title
+>Waar zijn alle icc-profielen opgeslagen op mijn computer? </title>
+          <para
+>Welnu, dit is Linux en het hangt af van waar u ze hebt opgeslagen. Ik sla al mijn icc-profielen op in de map /usr/share/color/icc, wat op dit moment het dichtst bij een standaard Linux-locatie voor icc-profielen is. Als u deze map voor uw icc-profielen gebruikt, dan zal het waarschijnlijk nodig zijn om de rechten op deze map te wijzigen om uw gebruiker lees- en schrijftoegang te geven. Daarna vertelt u aan &digikam; <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>waar uw profielen zich bevinden</ulink
+>.</para>
+         </sect3>
+          <sect3
+> <title
+>Zijn de verlichting en de kleuren van de muur/plafond/gordijnen/meubels bij mijn monitor van belang? </title>
+          <para
+>Ja, goede verlichting is een eerste vereiste voor het juist bewerken van uw beelden en om afdrukken te vergelijken met het beeld op het beeldscherm. Als het licht bij uw werkstation te helder is zullen de kleuren op uw beeldscherm te donker lijken en omgekeerd, als het licht van de lampen in uw werkkamer een lage CRI (color rendering index) heeft, dan betekent dat dat u geen lampen met een volledig kleurenspectrum heeft, of als uw werkkamer door een raam verlicht word en het licht dus verandert met het veranderen van het weer of de tijd van de dag. (of nog erger als u gekleurde gordijnen heeft), of als de muren kleuren werpen op uw beeldscherm dan zal uw bewerkingsproces gecorrigeerde kleuren opleveren die niet echt bestaan. Het beste advies voor zover mogelijk voor behoud van de harmonie in uw gezin: neutraal grijze wanden en plafond, dek ramen af, draag neutrale kleding en schaf passende lichtniveaus en lampen en armaturen aan. Zie voor meer informatie over wat de passende lichtniveaus, lampen en armaturen zijn voor het bewerken van beelden en bekijken van afdrukken, de volgende artikelen. </para>
+          <itemizedlist>
+          <listitem
+><para
+><ulink url="http://www.creativepro.com/article/the-darkroom-makes-a-comeback"
+></ulink
+></para
+></listitem>
+          <listitem
+><para
+><ulink url="http://www.creativepro.com/article/the-darkroom-makes-a-comeback-part-2-"
+></ulink
+></para
+></listitem>
+          <listitem
+><para
+><ulink url="http://www.lrc.rpi.edu/programs/nlpip/lightingAnswers/fullSpectrum/abstract.asp"
+></ulink
+></para
+></listitem>
+          </itemizedlist>
+         </sect3>
+    </sect2>
+
+     <sect2 id="camera-rawfile"
+>            <title
+>Het cameraprofiel en zaken met betrekking tot het ontwikkelen van een raw-bestand</title>
+          <sect3
+> <title
+>Wat is de volgende stap in kleurbeheer? </title>
+          <para
+>Ten eerste, en voor de goede orde, veel uitmuntende professionele en amateurfotografen slaan al hun beelden uitsluitend op als in-camera jpegs in de sRGB kleurruimte. Maar als u wil werken in ruimere kleurruimten of als u wilt werken met RAW bestanden (zelfs als u sRGB beelden van uw RAW bestanden wilt maken) lees dan verder. </para>
+          <para
+>Afgaande op de vragen die gesteld worden op het &digikam; gebruikersforum, als u deze zelfstudie volgt dan maakt u waarschijnlijk RAW opnamen met een digitale spiegelreflexcamera(dSLR) en hoopt u dat ergens in de geheime wateren van kleurbeheersing het antwoord verscholen ligt hoe een leuke foto van uw RAW bestand te maken. En u heeft gelijk! Het volgende dat u nodig heeft is het juiste cameraprofiel voor het ontwikkelen van uw RAW beelden. Maar laten we eerst de vraag beantwoorden die u had kunnen stellen: </para>
+         </sect3>
+          <sect3
+> <title
+>Waarom ziet de afbeelding die is geproduceerd door raw-converters zoals dcraw of ufraw er niet zo uit als het ingebedde voorbeeld dat door digikam wordt getoond?</title>
+          <para
+>Blij dat u dat vroeg. Alle digitale camerabeelden beginnen als RAW bestand, of de camera de gebruiker nu toestaat de beelden als RAW bestand op te slaan of niet. Als u de camera nu vraagt om jpeg op te slaan in plaats van RAW bestanden, dan zal de camera altijd de ingebouwde processor gebruiken om de RAW bestanden te converteren naar jpeg. Die ingebouwde voorbeeldversie is hoe uw uiteindelijke beeld er uit zou zien als u de camera had ingesteld om jpeg op te slaan in plaats van RAW bestanden.   </para>
+          <para
+>Ik spreek hier uit ervaring als Canon gebruiker, maar ik schat dat de meeste of alle  beginners en middenklasse DSLR's zich zo gedragen. Canon biedt gebruikers verschillende stijlen voor opnamen; neutraal, standaard, portret, landschap, enz. die bepalen wat voor bewerking zal worden uitgevoerd op de raw opname om het uiteindelijke beeld te vormen. Of de bewerking nu in-camera of later met gebruik van de meegeleverde Canon DPP programmatuur wordt uitgevoerd. Het Canon DPP raw verwerkingsprogramma biedt de gebruiker uitgebreidere mogelijkheden voor bewerking maar behandelt het raw bestand nog steeds in overeenstemming met de gekozen fotostijl. De meeste  van de Canon fotostijlen voegen een zware S-kromme en extra kleurverzadiging toe om het beeld meer pit te geven. Zelfs als u kiest voor een neutrale opnamestijl (de Canon opnamestijl die de minst gewijzigde toon hanteert) en u selecteert "minder contrast", "minder verzadiging", "geen ruisonderdrukking" en geen "verscherping" in de DPP raw dialoog dan zult u ontdekken, als u weet waar u moet zoeken, dat een S-kromme en ook schaduw ruisonderdrukking werd toegepast.</para>
+          <para
+>Dcraw (dat &digikam; gebruikt om raw bestanden om te zetten naar beeldbestanden) voegt geen S-kromme toe aan uw beeldtonaliteit.Dcraw geeft de lichte en donkere delen weer zoals die werkelijk door de camerasensor werden vastgelegd. Volgens  <ulink url="http://21stcenturyshoebox.com/essays/scenereferredworkflow.html"
+>Tindeman</ulink
+>, (een uitstekend te lezen stuk en bron van goede adviezen, met links naar even goede bronnen voor aanvullende informatie). Dcraw is een van de weinige ontwikkelaars in raw, die u de werkelijke, aan de opname gerelateerde tonaliteit geeft. En de dcraw/ufraw aan opname gerelateerde beeldkromme ziet er dan ook vlak uit, omdat de camera licht lineair vastlegt, terwijl onze ogen constant in wisselwerking zijn met onze hersenen om zich aan te passen aan donkere en heldere gebieden in een beeld. Dat betekent dat onze hersenen tot op zekere hoogte een S-kromme aanbrengen aan het beeld om ons in staat te stellen beter te focussen op voor ons interessante gebieden terwijl we rond kijken.</para>
+         </sect3>
+          <sect3
+> <title
+>Het ingebedde jpeg-voorbeeld ziet er zoveel mooier uit dan de uitvoer van dcraw. Wat is de waarde van tonaliteit verwezen naar de scene? </title>
+          <para
+>We nemen aan dat als u een foto maakt, u een idee heeft van hoe u wilt dat het uiteindelijke plaatje er uit zal zien. Het is veel gemakkelijker om dat eindresultaat te krijgen als u niet allerlei dingen ongedaan hoeft te maken die al aan uw beeld zijn toegevoegd. Als Canon, (of Nikon, of Bibble, of wie dan ook) eenmaal hun ingebouwde S-krommen en ruisonderdrukking in de schaduw, verscherping etc. aan uw opname heeft toegevoegd, dan zijn schaduwen, hoge lichtniveaus, randdetails etc. reeds geknepen, gekortwiekt, afgehakt en op andere manier gewijzigd en verwrongen. U heeft dan informatie weggegooid en u kunt dat niet meer terug krijgen. Speciaal in schaduwen, zelfs met 16-bits beelden(in feite, 12- of 14-bits, afhankelijk van de camera, maar het wordt gecodeerd als 16-bits voor het gemak van de computer), is er dan niet meer zo veel informatie aanwezig.  </para>
+          <para
+>Waar het eigenlijk om gaat bij het bewerken van beelden is, denk ik, het bewust manipuleren van toon, kleur, scherpte en ander zaken op zo'n manier dat de kijker ziet wat u, de fotograaf, van bijzonder belang vond toen u de opname maakte. Waarom zou u dan de kunst van beeldbewerking uit handen geven aan software die door een fabrikant werd ontwikkeld? Met andere woorden, "plat is mooi", terwijl u liever uw eigen kunstzinnige interpretatie aan uw beelden wilt geven? Het alternatief om ingeblikte, merk-algoritmen gemaakt door Canon, Nikon, Bibble en anderen de beelden voor u te interpreteren. (Aan de andere kant valt niet te ontkennen dat deze algoritmen voor veel opnamen tamelijk goed werken.)</para>
+         </sect3>
+          <sect3
+> <title
+>Dat is allemaal erg interessant. Ik kan wel het belang inzien om mijn beeldbewerking te beginnen met aan de opname gerelateerde bewerking. Maar ik zeg u, de beelden die geleverd worden door digikam/dcraw zien er werkelijk slecht uit! Waarom? </title>
+          <para
+>Dat hangt er van af. Als het beeld erg donker is, dan liet u dcraw een 16-bit bestand aan maken en dan stuit u op een probleem doordat dcraw  geen gamma-omvorming heeft toegepast voordat het beeldbestand werd gemaakt. U kunt gebruik maken van imagemagic om de juiste gamma transformatie toe te passen op het door dcraw gevormde beeld. Of u kunt een cameraprofiel zoeken of maken met een gamma van 1. Of u kunt ufraw gebruiken dat de gamma-omvorming voor u toepast.  </para>
+          <para
+>Als uw beeld roze in heldere delen heeft, is er een oplossing. Voor uitleg van het probleem en de opdrachtregel om het op te lossen, kijk op: <ulink url="http://www.luminous-landscape.com/forum/index.php?topic=23430.0"
+>this "Luminous Landscape" forum post</ulink
+>.</para>
+          <para
+>Als het beeld niet te donker is maar het ziet er echt raar uit dan heeft u waarschijnlijk enige onoordeelkundige keuzen gemaakt in het digikam/dcraw gebruikersinterface. Het digikam/dcraw interface laat u gemakkelijk mogelijkheden aanklikken die u anders met een opdrachtregel zou moeten aangeven. Echter gemak krijgt u niet voor niets. Ten eerste, het interface biedt geen toegang tot alle mogelijkheden die beschikbaar zijn in de opdrachtregel (beginnend met &digikam; 0.9.4 zijn slechts sommigen van de opties op de dcraw opdrachtregel beschikbaar). En ten tweede, om het uiterste uit het digikam/dcraw interface te halen moet u weten wat de knoppen en schuiven in het interface precies doen. Dat betekent dat u moet weten wat er gebeurt in de opdrachtregel als u de beste resultaten met het interface wilt behalen. (Deze zelfstudie zal niet proberen om het gebruikersinterface van digikam/dcraw te documenteren. Deze zelfstudie ontwikkelt zich in een rap tempo en dingen die ik zou kunnen schrijven over digikam/dcraw zullen beslist in de nabije toekomst achterhaald zijn).</para>
+          <!--[[Gerhard, I could provide a couple of sample images here if desired]]-->
+          <para
+>Als uw ingesloten jpeg mooie. diepe, rijke schaduwen heeft maar het jpeg/tiff beeld dat digikam/dcraw er van maakt vertoont onregelmatige rode lijnen in de schaduwpartijen, dan heeft u waarschijnlijk een "x" geplaatst in het  hokje van de "geadvanceerde zwartpunt" optie en heeft u het schuifje op 0. gezet. Haal de "x" weg uit het zwartpunt hokje en probeer het opnieuw. Dit hokje in het digikam/dcraw interface komt overeen met de optie "-k" wanneer dcraw wordt gebruikt in de opdrachtregel. Met de optie "-k" overschrijft u de beste schatting van dcraw voor waar in de schaduwtonen van uw beeld het digitale signaal de achtergrondruis begint te overschrijven. Als u de "-k" optie in de opdrachtregel niet gebruikt, dan berekent dcraw een passende waarde, gebaseerd op de geschatte achtergrondruis. Voor mijn Canon 400d/xti is de door dcraw berekende achtergrondruis gewoonlijk ongeveer 256(de opdrachtregel optie -v geeft aan dcraw de opdracht om u te laten weten wat het programma doet tijdens de verwerking van uw raw bestand. Echter, als ik gebruik maak van de optie "-K /pad naar blackframe.pgm" om dcraw een blackframe in mindering te laten brengen dan zal dcraw het zwartpunt als "0" rapporteren omdat het dan niet nodig is om het hoger in te stellen teneinde de diepste schaduwen in het beeld te vermijden, daar waar ruis het signaal overstemd. (Een blackframe is een opname genomen met de lensdop op de lens en met de zelfde instelling waarmee de opname werd gemaakt. Het beste is om dat onmiddellijk te doen na het maken van de opname die verwerkt wordt. De optie "-K" stelt dcraw in staat de achtergrondruis af te trekken van het beeld).</para>
+         </sect3>
+          <sect3
+> <title
+>Waar vind ik goede informatie over digitale ruis? </title>
+          <para
+>Zie de volgende uitstekende artikelen:</para>
+          <itemizedlist>
+           <listitem
+><para
+><ulink url="http://www.ronbigelow.com/articles/noise-1/noise-1.htm"
+></ulink
+></para
+></listitem>
+           <listitem
+><para
+><ulink url="http://www.cambridgeincolour.com/tutorials/noise.htm"
+></ulink
+></para
+></listitem>
+           <listitem
+><para
+><ulink url="http://www.clarkvision.com/imagedetail/digital.signal.to.noise/"
+></ulink
+></para
+></listitem>
+          </itemizedlist>
+         </sect3>
+          <sect3
+> <title
+>Waar vind ik goede informatie over de opties voor de commandoregel van dcraw? </title>
+          <para
+>De allerbeste bron van informatie over hoe dcraw raw-bestanden bewerkt is <ulink url="http://www.guillermoluijk.com/tutorial/dcraw/index_en.htm"
+>hier</ulink
+> te vinden. </para>
+          <para
+>Als u met raw bestanden wilt werken dan adviseer ik om het artikel van Guillermo twee of drie keer te lezen. Guillermo gelooft dat dcraw superieure resultaten oplevert in vergelijking met raw verwerking van commerciële verwerkers. Nadat alle commerciële raw verwerkende programma's werden getest moest ik uiteindelijk vaststellen dat dcraw superieure resultaten oplevert. </para>
+          <para
+>De manpagina van dcraw legt alle opties voor de command0regel uit en is <ulink url="http://www.cybercom.net/~dcoffin/dcraw/dcraw.1.html"
+>hier</ulink
+> te vinden.</para>
+         </sect3>
+          <sect3
+> <title
+>Waarom zijn de kleuren van Canon en Nikon beter dan de kleuren die door dcraw worden geproduceerd? </title>
+          <para
+>Kleurweergave is een gebied waar Canon en (vermoedelijk) Nikon, goede software voor ontwikkeling van raw beelden levert. Waarom?  Omdat de door hen ontwikkelde software gekoppeld is aan de cameraprofielen die afgestemd zijn op de raw beelden, gemaakt door die camera. Ik heb dat uitgebreid gecontroleerd met gebruikmaking van de "pipet" om de resultaten van verschillende raw ontwikkelaars te vergelijken. Ik heb daarbij gebruik gemaakt van verschillende cameraprofielen uit verschillende bronnen. Een erg moeizaam maar leerzaam proces. Met ufraw en dcraw (vanaf de opdrachtregel als u het digikam gebruikersinterface niet gebruikt), kunt u Canon's op cameramodel afgestemde, kleurprofiel toepassen op de resultaten van dcraw tijdens het raw ontwikkelproces en de kleuren zullen toch nog niet hetzelfde zijn als wat Canon produceert. Bibble profielen werken tamelijk goed met Bibble software, maar met dcraw niet zo goed als met Bibble's eigen software. Enzovoort, enzovoort. </para>
+         </sect3>
+          <sect3
+> <title
+>Waarom is een cameraprofiel specifiek voor een gegeven merk en model van een camera? </title>
+          <para
+>Een CCD of een CMOS sensor binnenin een digitale camera, bestaat uit een patroon van miljoenen kleine lichtsensoren (pixels) die gezamenlijk de CCD of CMOS sensor vormen. Deze lichtgevoelige pixels zijn kleurenblind. Ze registreren slechts de hoeveelheid en niet de kleur van het licht dat er op valt. Om pixels de kleurinformatie te laten registreren is iedere pixel afgedekt met een transparante rode, groene of blauwe lens, elkaar gewoonlijk afwisselend in, wat genoemd wordt, een Bayer patroon (behalve Faveon sensoren die werken anders). Een raw beeld is niet meer dan een patroon van waarden die aangeven hoeveel licht door de rode, groene of blauwe lens word doorgelaten om de sensor te bereiken. </para>
+          <para
+>Het is duidelijk, pixelreactie op licht is het resultaat van veel camera-specifieke factoren: de aard van de sensor matrix zelf, de precieze kleur/doorlatende eigenschappen van de lenskappen en de specifieke analoog naar digitaal conversie en de verwerking die daarna plaats vind in de camera om de ruwe afbeelding te produceren die wordt opgeslagen op de kaart. </para>
+         </sect3>
+          <sect3
+> <title
+>Wat betekent "conversie van analoog naar digitaal"?</title>
+          <para
+>"Analoog" betekent continu variërende, zoals hoeveel water je in een glas kunt doen. "Digitalisering" van een analoog signaal betekent dat de continu veranderende niveaus van de analoge signaalbron zijn "afgerond" naar discrete waarden geschikt voor binaire getallen gebruikt door computers. De conversie van analoog naar digitaal, die plaatsvindt in de camera, is nodig omdat de lichtgevoelige pixels analoog van aard zijn. Ze verzamelen een (elektrische) lading die in verhouding staat tot de hoeveelheid licht die hen bereikt. De opgebouwde lading op elke pixel wordt vervolgens omgezet in een discrete, digitale waarde door de converter van analoog naar digitaal in de camera. Hetgeen verklaart waarom een 14-bits converter beter is dan een 12-bits converter - meer precisie in de conversieresultaten betekent dat minder informatie verloren raakt in het conversieproces.</para>
+         </sect3>
+          <sect3
+> <title
+>Waarom is een cameraprofiel specifiek voor het gebruikte bewerkingsprogramma van raw om het raw-bestand te ontwikkelen?</title>
+          <para
+>Waar het om gaat bij interpolatie met gebruikmaking van demozaïek-algoritmen zoals de standaard AHD in dcraw, is om er achter te komen welke kleur en lichtintensiteit in werkelijkheid op elk pixel viel, door interpolatie van de informatie die verkregen word van dat ene pixel plus de aangrenzende pixels (zie <ulink url="http://en.wikipedia.org/wiki/Demosaic"
+>Wikipedia artikel</ulink
+>). Ieder raw-verwerkingsprogramma maakt gebruik van aanvullende veronderstellingen zoals, "Wanneer betekenen de gegevens werkelijke data en wanneer is het achtergrondruis?" "Op welk punt heeft de sensor volledige verzadiging bereikt?", enzovoort.  Het uiteindelijke resultaat van al deze algoritmen en aannames, die het raw-verwerkende programma maakt is een drietal RGB-waarden voor elk pixel in het beeld. Uitgaande van hetzelfde beeld zullen verschillende raw-verwerkers ook verschillende RGB-waarden opleveren.   </para>
+         </sect3>
+          <sect3
+> <title
+>Waar kan ik een algemeen profiel voor mijn camera vinden? </title>
+          <para
+>Op de ufraw website, <ulink url="http://ufraw.sourceforge.net/Colors.html"
+>sectie over kleurbeheer</ulink
+> staat waar u kant en klare cameraprofielen kunt vinden. Als u rondneust op de archieven van het &digikam; gebruikersforum dan vindt u aanvullende informatie. Als u blijft zoeken en experimenteren zult u een algemeen profiel vinden dat goed genoeg werkt. Zoals eerder gesteld, het is nou eenmaal zo bij digitale beeldverwerking dat de cameraprofielen die worden geleverd door bv Canon en Nikon niet zo goed werken met andere raw converters als die welke door de camerafabriek worden verstrekt. Dat is waarom Bibble en Phase One zelf profielen moeten maken voor alle camera's die zij ondersteunen. Uiteindelijk wilt u misschien toch een cameraprofiel dat specifiek is toegesneden op uw camera, uw belichting en uw raw-bewerkingsproces.   </para>
+         </sect3>
+          <sect3
+> <title
+>Hoe krijg ik een cameraprofiel specifiek voor mijn camera, lichtcondities, en workflow voor raw? </title>
+          <para
+>Veel commerciële dienstverleners maken profielen tegen betaling. Met LPRof kunt u ook zelf een profiel van uw camera maken. Als u dat zelf wilt doen heeft u een "IT8 target" nodig. Dat is een beeld dat vierkantjes met bekende kleuren omvat. Samen met "IT8" ontvangt u dan de juiste set bekende waarden voor elk van de vierkantjes op het target. </para>
+          <para
+>Als u van plan bent LPRof te gebruiken om uw camera van een profiel te voorzien, bekijk dan de documentatie om een lijst met aanbevolen targets te vinden. Om een profiel voor uw camera te maken fotografeert u "IT8 target" onder specifieke belichtingscondities(bijvoorbeeld bij daglicht, midden overdag op een heldere zonnige dag in de zomer zonder objecten in de omgeving die een schaduw of een kleurreflectie kunnen werpen op uw onderwerp) en sla het beeld op als een raw bestand. Daarna verwerkt u het raw bestand met uw speciale raw verwerkingssoftware+instellingen en laat vervolgens het bestand bewerken door de de software die het profiel moet maken. De software die het profiel gaat maken vergelijkt de RGB waarden in het beeld dat tot stand kwam door uw camera+belichtingscondities+raw verwerkingsproces, met de RGB waarden in het originele target en stelt vervolgens het ICC-profiel van uw camera samen. </para>
+          <para
+>Een profiel maken voor een camera is precies hetzelfde als een profiel maken voor een beeldscherm. Bij het profileren van het beeldscherm, vertelt het profileringsprogramma de grafische kaart om vierkantjes met speciale RGB waarden naar het scherm te sturen. De spectrometer meet dan de werkelijke kleur die op het scherm word weergegeven. Bij het profileren van een camera zijn de referentiekleuren, de RGB kleuren in de oorspronkelijke vierkantjes op het IT8 target, die door de software worden vergeleken met de kleuren gemaakt door het digitale beeld van de target, dat eerder werd opgenomen onder geselecteerde belichtingscondities, opgeslagen als raw en daarna verwerkt met specifieke raw verwerkingssoftware+instellingen. </para>
+          <para
+><ulink url="http://lprof.sourceforge.net/help/ufraw.html"
+>Hier</ulink
+> is een verwijzing naar een "hoe en wat" voor gebruik van LProf v1.11 en ufraw en andere raw verwerkers, om een cameraprofiel aan te maken. Debian Lenny heeft LProf 1.11.4 in de APT repositories. Meer recente versies kunnen worden opgebouwd uit de CVS. En er is een verwijzing naar een betaalbaar, goed te boek staand <ulink url="http://www.targets.coloraid.de/"
+>IT8 target</ulink
+>.</para>
+         </sect3>
+          <sect3
+> <title
+>Hoe pas ik een cameraprofiel toe op het 16-bit afbeeldingsbestand geproduceerd door mijn open source bewerkeningssoftware voor raw? </title>
+          <para
+>Als u gebruik maakt van het digikam/dcraw interface, dan vindt u <ulink url="help:/digikam/using-setup.html#setup-iccprofiles"
+>hier</ulink
+> hoe u &digikam; kunt vertellen welk cameraprofiel te gebruiken. Als u dcraw vanuit de opdrachtregel gebruikt heeft u de keuze om het 16-bits afbeeldingsbestand met of zonder het al toegepaste cameraprofiel uit te voeren. Als u dcraw vraagt om het resultaat zonder toegepast cameraprofiel te maken, dan kunt u de toepassing tifficc van LCMS gebruiken (ook op de opdrachtregel) om het cameraprofiel toe te passen. Het voordeel van het gebruik van tifficc is dat u LCMS kunt opdragen om een hoge kwaliteitsconversie toe te passen (dcraw schijnt LCMS gemiddeld als standaard te hanteren). Het nadeel is natuurlijk dat het toepassen van het cameraprofiel via de opdrachtregels is dat het een extra stap toevoegt aan uw raw-workflow. Als u ufraw gebruikt kijk dan in de ufraw handleiding. </para>
+       </sect3>
+     </sect2>
+
+     <sect2 id="PCS"
+>             <title
+>De PCS: kleurprofielpunten naar echte kleuren in de echte wereld</title>
+        <sect3
+> <title
+>Camera, scanner, werkruimte, monitor, printer - wat doen al deze kleurprofielen echt?</title>
+          <para
+>Een kleurprofiel beschrijft het kleurgamma van het apparaat of de ruimte waartoe het behoort, door te specificeren  welke werkelijke kleur in de echte wereld overeenkomt met ieder drietal RGB waarden in de kleurruimte van het apparaat (camera, beeldscherm, printer) of werkomgeving. </para>
+          <para
+>In essentie zegt het cameraprofiel: "voor elk drietal RGB waarden van elk pixel in het beeldbestand, geproduceerd door de raw verwerkende software komt dit drietal RGB waarden overeen met de werkelijke kleuren zoals gezien door een waarnemer in de werkelijke wereld. Met andere woorden, zoals getoond op het IT8 target, als u uw eigen cameraprofiel heeft aangemaakt. Maar het komt op het zelfde neer. Het doel van het profileren van uw camera is om er voor te zorgen dat het beeld in uw camera er uit ziet als het werkelijke. </para>
+          <para
+>Door naar de RGB waarden van een beeld te kijken kunt u geen plaatje zien. U kunt wel een plaatje zien door het te tonen op een beeldscherm of door het af te drukken op een printer. Als u uw beeldscherm profileert maakt u een profiel dat zegt: dit drietal RGB waarden die de grafische kaart naar het beeldscherm stuurt zullen op het scherm de echte kleur tonen zoals waargenomen in de echte wereld. </para>
+          <para
+>Wat beeldschermprofiel en cameraprofiel gemeen hebben is het stukje over: "de werkelijke kleur zoals gezien door een werkelijke waarnemer in de werkelijke wereld". Verschillende drietallen RGB nummers in respectievelijk, de beeldscherm- en camera-kleurruimten verwijzen naar dezelfde werkelijke kleur in de werkelijke wereld. Werkelijke kleuren in de werkelijke wereld vormen een referentiepunt voor de omzetting tussen alle kleurprofielen die uw beeld tegen zal komen tijdens de bewerking van camera naar beeldscherm naar bewerkingsprogramma, printer of het web. </para>
+       </sect3>
+        <sect3
+> <title
+>Hoe kan een kleurprofiel wijzen naar een echte kleur in de echt wereld? </title>
+          <para
+>Echte mensen zien zelfs niet dezelfde kleuren als ze de wereld bekijken, toch? </para>
+          <para
+>Lang geleden, in 1931, besloot het International Color Consortium om op rekenkundige wijze alle kleuren die mensen kunnen zien in kaart te brengen. Zodoende, toonden ze aan een groep mensen een groep kleuren en vroegen de mensen om aan te geven wanneer een bepaalde kleur gelijk was aan een andere kleur. Waarbij de twee overeenkomende kleuren in feite tot stand kwamen door veranderende combinaties van golflengten. Wat was de waarde van zo'n vreemde procedure? Menselijke kleurwaarneming berust op het feit dat we drie types kegelreceptoren hebben met een piekgevoeligheid voor licht van golflengtes van ongeveer 430, 540, en 570 nm, maar met een behoorlijke overlapping in gevoeligheid tussen de verschillende kegelreceptoren. Een gevolg van hoe we kleuren zien is dat veel verschillende combinaties van verschillende golflengten van licht er uit zien als dezelfde kleur. </para>
+          <para
+>Na uitgebreid testen produceerde het ICC (international Color Consortium) de CIE-XYZ kleurruimte die rekenkundig, alle waarneembare kleuren beschrijft en vorm geeft, die door een ideaal persoon konden worden waargenomen. (Ideaal in die zin dat zij reacties van vele afzonderlijke mensen in kaart brachten). Deze kleurruimte is geen kleurprofiel in de normale zin van het woord. Eigenlijk biedt het een (vaste verbindende kleurruimte) "Profile Connecting Space"(PCS) voor het omzetten van kleur RGB waarden van de ene kleurruimte naar een andere. (Zie <ulink url="http://en.wikipedia.org/wiki/Tristimulus#Tristimulus_values"
+>hier</ulink
+> en <ulink url="http://en.wikipedia.org/wiki/Color_vision "
+>hier</ulink
+>.)</para>
+          <para
+>CIE-XYZ is niet de enige PCS. Een andere, algemeen gebruikte PCS is CIE-Lab die rekenkundig wordt verkregen uit de CIE-XYZ kleurruimte. CIE-Lab is bedoeld om "waarneembaar uniform" te zijn. Hetgeen betekent: "een wijziging in de kleurwaarde zou ook een wijziging van waarneembaar belang opleveren" (geciteerd uit <ulink url="http://en.wikipedia.org/wiki/Lab_color_space"
+>Wikipedia article</ulink
+>). Wikipedia zegt: "De drie coördinaten van CIELAB geven: de helderheid van de kleur, (L* = 0 geeft zwart en L8 = 100 geeft egaal wit; glanzend wit kan zelfs hoger zijn),  de positie tussen rood, blauw en groen(a*, negatieve waarden geven groen aan terwijl positieve waarden magenta aangeven) en de positie tussen geel en blauw (citaat uit <ulink  url="http://en.wikipedia.org/wiki/Lab_color_space"
+>Wikipedia artikel</ulink
+>).  </para>
+          <para
+>Om bruikbaar te zijn moeten kleurprofielen worden gekoppeld aan software die de omzetting van een kleurruimte naar een andere via de PCS mogelijk maakt. In de wereld van Linux open-source-software (en ook veel gesloten software), wordt de omzetting van een kleurruimte naar een andere gewoonlijk uitgevoerd door <ulink url="http://www.littlecms.com/"
+>LCMS</ulink
+>, de "kleine kleurbewerkingssoftware". Voor zover van belang, mijn eigen testen hebben aangetoond dat LCMS een nauwkeuriger kleurruimteconversie uitvoert dan Adobe's eigen kleurconversieprogramma.  </para>
+       </sect3>
+     </sect2>
+
+     <sect2 id="working-space"
+>   <title
+>De werkruimte</title>
+        <sect3
+> <title
+>Dus vertelde ik &digikam; waar het profiel van mijn monitor te vinden is en ik heb een cameraprofiel, dat ik toepaste op het beeldbestand, geleverd door mijn raw-verwerkings-software. Wat is de volgende stap in kleurbeheer?  </title>
+          <para
+>U moet een kleurruimte kiezen zodat u uw beeld kunt bewerken. LCMS zal uw beeld transformeren van de camerakleurruimte naar de door u gekozen werkkleurruimte via de PCS, gespecificeerd door het kleurprofiel van uw camera. </para>
+       </sect3>
+        <sect3
+> <title
+>Waarom kan ik mijn beelden niet bewerken in de kleurruimte die door mijn cameraprofiel wordt aangeduid? </title>
+          <para
+>Uiteindelijk zal het cameraprofiel toch wel het beste passen bij de kleuren die door mijn camera werden geregistreerd en door mijn raw-verwerkende-software verwerkt? Wikipedia zegt: "Werkruimte zoals sRGB of Adobe RGB, zijn kleurruimten die goede resultaten bieden tijdens het bewerken". Bijvoorbeeld, pixels met gelijke waarden van RGB moeten er neutraal uit zien. "Betekent gewoon dat een bepaald pixel in een afbeelding die is omgebouwd naar een geschikte werkruimte, als R = G = B er op het beeldscherm grijs of zwart of wit uit moet zien. "Pixels met gelijke waarden RGB moeten neutraal lijken." Veel cameraprofielen voldoen niet aan deze voorwaarde voor neutraal. Ik ken geen lijst met andere technische eisen voor een geschikte werkruimte. Ik kan wel een andere goede reden bedenken waarom u uw afbeelding niet zou bewerken in uw cameraprofiel. Als u namelijk kijkt naar de omvang van een typisch cameraprofiel dan is dat in de orde van grootte van een kwart tot een half megabyte of meer. Het bevat heel wat informatie over de wijzigingen die moeten worden uitgevoerd op verschillende gebieden van kleur en tonaliteit in de oorspronkelijke scène, om nauwkeurige kleurweergave te krijgen van de RGB-waarden die uit de raw-verwerker komen. Het cameraprofiel is nauwkeurig (althans voor kleuren in het oorspronkelijke target) maar rekenkundig niet bijzonder gaaf. Anderzijds, zijn werkruimte-kleurprofielen erg klein (een half kilobyte in plaats van een half megabyte) omdat ze een kleurengamma beschrijven in termen van mooie, ononderbroken, wiskundige functies. Werkruimteprofielen hoeven geen voorzieningen te treffen voor de "rommelige" werking van sensoren, zodat de wiskundige manipulaties, uitgevoerd tijdens het bewerken van afbeeldingen veel vlotter en nauwkeuriger zullen verlopen dan wanneer u probeert om uw afbeelding te bewerken terwijl die zich nog in de camerakleurruimte bevindt.</para>
+       </sect3>
+        <sect3
+> <title
+>Welke werkruimte moet ik kiezen? </title>
+          <para
+>Iedereen heeft een mening. Ik zal een paar stukjes informatie uitleggen die nodig zijn om een onderbouwde keuze te maken. Werkruimteprofielen worden gekenmerkt door: </para>
+          <orderedlist>
+              <listitem
+><para
+>Gamma (of een andere overdrachtsfunctie), dat aangeeft hoeveel de oorspronkelijke lineaire intensiteitswaarden, vastgelegd door de camerasensor (en onderworpen aan de in de camera aanwezige Analoog naar Digitaal conversie, en daarna geïnterpoleerd door het raw-verwerkingsprogramma) moet worden gewijzigd om het bewerken gemakkelijker of nauwkeuriger te maken.</para
+></listitem>
+              <listitem
+><para
+>RGB primaire kleuren die het kleurengamma bepalen dat binnen het bereik van een bepaald kleurprofiel ligt.</para
+></listitem>
+              <listitem
+><para
+>Witpunt (gewoonlijk D50 of D65, hoewel andere waarden ook gebruikt kunnen worden), dat de kleurtemperatuur van het witpunt in de werkruimte specificeert. </para
+></listitem>
+          </orderedlist>
+       </sect3>
+        <sect3
+> <title
+>Welk gamma moet mijn werkruimte hebben?  </title>
+          <para
+>Het gamma van een kleurprofiel bepaalt welke omzetting nodig is voor de conversie van het ingebedde kleurprofiel van een beeld naar een ander kleurprofiel, bv. dat van de door u gekozen werkruimte of het profiel van uw beeldscherm of conversie van de ene werkkleurruimte naar een andere of naar de kleurruimte van uw printer. Dcraw levert een 16-bit beeld met een lineair gamma. Dat betekent dat een histogram van het beeldbestand toont hoeveel licht elk pixel van de camera opvangt bij belichting. (lees ook <ulink url="http://www.guillermoluijk.com/tutorial/dcraw/index_en.htm"
+>deze pagina</ulink
+>). Daarom vereist het toepassen van een cameraprofiel aan dcraw ook de juiste gammatransformatie om in de gewenste werkruimte te komen. (Behalve als het cameraprofiel ook gamma=1 gebruikt). </para>
+          <para
+>Een praktisch gevolg van het gamma van de werkruimte is, dat hoe hoger het gamma, hoe meer afzonderlijke kleurtonen in de schaduwen beschikbaar zijn om te bewerken en dus hoe minder tonen in de heldere delen. Veranderen van het gamma van een beeld verdeelt opnieuw het aantal tonen beschikbaar in lichte en in de donkerder gebieden van de afbeelding. In theorie, zou u bij het bewerken van een erg donkere opname (low key) een ruimte met een hoger gamma willen hebben. En als u een erg lichte opname bewerkt bijvoorbeeld een opname van een trouwjurk met sneeuw als achtergrond in helder zonlicht zou u een werkruimte willen met een lager gamma  zodat u meer toongradaties beschikbaar heeft in de heldere delen. </para>
+          <para
+>Theorie daar gelaten, in de wereld van het beeldbewerking gebruikt bijna iedereen werkruimten met een gamma van ofwel 1,8 of 2,2. Twee opvallende uitzonderingen vormen sRGB en L*-RGB. </para>
+          <para
+>sRGB gebruikt een overdrachtsfunctie dicht bij die van een CRT (niet relevant voor beeldbewerking op LCD scherm.) Wikipedia stelt: "In tegenstelling tot andere RGB kleurruimten, kan sRGB gamma niet worden uitgedrukt in een enkele numerieke waarde. "Het over-all gamma is ongeveer 2,2 en bestaat uit een lineaire (gamma 1,0) sectie bijna zwart, en een niet lineaire sectie elders, bevattende een 2,4 exponent en een gamma-helling van log-uitvoer versus log-invoer, veranderend van 1,0 tot ongeveer 2,3." (citaat van : <ulink url="http://en.wikipedia.org/wiki/SRGB"
+>deze pagina</ulink
+>), hetgeen zorgt voor enig gecompliceerd rekenwerk gedurende de beeldbewerking. </para>
+          <para
+>L*-RGB hanteert als transferfunctie dezelfde perceptueel uniforme overdrachtsfunctie als de CIELab kleurruimte. "Bij het opslaan van kleuren in waarden met beperkte precisie", kan het gebruik van een perceptueel uniforme functie de weergave van kleurtonen verbeteren." (citaat van <ulink url="http://en.wikipedia.org/wiki/Lab_color_space"
+>deze pagina</ulink
+>).</para>
+          <para
+>Als aanvulling op gamma=1,8 en gamma=2,2 is er nog het lineaire gamma =1.0 dat vaak genoemd of gebruikt wordt. Zoals vermeld, levert dcraw lineaire gammabestanden als u om een 16bits uitkomst vraagt. Lineaire gamma wordt gebruikt in HDR(high dynamic range) beelden en ook wanneer men wil vermijden dat er door gamma veroorzaakte fouten komen in de gewone "low dynamic range" bewerking. </para>
+          <para
+>"Door gamma veroorzaakte fouten" is een onderwerp dat eigenlijk buiten de strekking van deze zelfstudie ligt. Maar bekijk "Gamma fouten in herschalen van beelden" (overgenomen uit: <ulink url="http://www.4p8.com/eric.brasseur/gamma.html"
+>deze pagina</ulink
+>) voor door gamma veroorzaakte verschuivingen in kleurtonen. En bekijk beslist ook Timo Autiokari's informatieve (ofschoon een beetje impopulaire) website voor een overtuigde aanbeveling voor lineaire gamma werkruimten. Bruce Lindbloom vermeldt een algemeen voorkomende door gamma veroorzaakte fout die wordt veroorzaakt door onjuiste berekening van helderheid in een niet-lineaire RGB werkruimte (zie <ulink url="http://www.brucelindbloom.com/index.html?WorkingSpaceInfo.html"
+>deze pagina</ulink
+>, terzijde-noot 1). En net zo vruchteloos, de berekeningen betreffende het mengen van kleuren om nieuwe kleuren te maken (zoals het gebruik van een digitaal filter om een beeld warmer te maken) resulteren in gamma-fouten tenzij de nieuwe kleuren worden berekend door vooraf alle relevante waarden terug om te zetten naar hun lineaire waarden.</para>
+          <para
+>Helaas, en ondanks hun ontegenzeggelijke rekenkundige voordelen, beschikken werkruimten met lineaire gamma over zo weinig kleurtonen in de schaduwen dat (naar mijn mening) ze onmogelijk te gebruiken zijn voor bewerking als we in 8-bits werken en ook nog maar met moeite in 16-bits. Ik voorzie dat we in de toekomst voor het bewerken (op super pc's) van, door onze HDR camera's geleverde, 32-bits bestanden, allemaal werkruimten met gamma=1 zullen gebruiken. Adobe Lightroom maakt al gebruik van lineaire gamma werkruimten (zonder dat dat vermeld word), CS2 biedt de mogelijkheid om een lineaire gamma te gebruiken voor het mengen van kleuren en Lightzone heeft altijd al een lineaire gamma werkruimte gebruikt.</para>
+       </sect3>
+        <sect3
+> <title
+>Hoeveel afzonderlijke tonale stapjes heeft een digitaal beeld? </title>
+          <para
+>In een 8-bits beeld zitten 256 tonale stapjes van pikzwart tot helderwit. In een 16-bits beeld, theoretisch, 65536 stapjes. Maar de 16-bits begonnen als: ofwel 10 bits (=1024 stapjes), 12 bits (=4096 stapjes), of 14 bits (=16384 stapjes) zoals geleverd door de A-to-D converter van de camera - de extra bits om 16-bits te bereiken zijn slechts opvulling. De beschikbare kleurtonen zijn niet gelijkmatig verdeeld van licht tot donker. In de modus lineaire gamma (zoals de camerasensor het ziet) zijn heel wat meer tonen in de heldere plekken dan in de schaduwen. Vandaar het advies, als je raw schiet, om langer te belichten maar niet de heldere plekken op te blazen. Zie Ron Bigelow's <ulink url="http://www.ronbigelow.com/articles/articles.htm"
+>artikel over "waarom in raw"</ulink
+>, voor een uitgebreide discussie over de distributie van beschikbare tonen in een raw-opname. </para>
+       </sect3>
+        <sect3
+> <title
+>Moet ik een grote of een kleine gammawerkruimte gebruiken? </title>
+          <para
+>Een belangrijke overweging bij het kiezen van een werkruimte is dat sommige werkruimten groter zijn dan andere. Dat betekent dat ze een groter deel van het waarneembare spectrum bestrijken(en daardoor tevens denkbeeldige kleuren bevatten, rekenkundige constructies die niet werkelijk bestaan). Deze grotere ruimten bieden het voordeel van het behoud van alle kleuren, vastgelegd door uw camera en opgeslagen door de LCMS bij de conversie van uw cameraprofiel naar het super-brede-gamma profiel, aansluitend op de door u gekozen werkruimte. </para>
+          <para
+>Maar het behoud van alle mogelijke kleuren is niet zonder consequenties zoals u zult zien. En het lijkt er op dat elk digitaal beeld een kleine reeks bevat van alle mogelijke zichtbare kleuren die uw camera kan vastleggen. Deze reeks past gemakkelijk in een van de kleinere werkruimten (een uitzondering die een groter kleurengamma vereist zou een opname zijn van een hoog verzadigd onderwerp zoals een gele narcis). </para>
+          <para
+>Werken met een erg grote kleurruimte betekent dat bij de bewerking (gebruik van krommen, verhogen van verzadiging) kleuren gemaakt kunnen worden die niet door het beeldscherm of de printer weergegeven kunnen worden. (U kunt die kleuren ook niet zien tijdens de bewerking). Zodat bij de conversie van kleurwerkruimte naar uitvoerapparatuur, bv. printer, de buiten het gamma vallende kleuren (sommigen misschien wel denkbeeldig), van uw bewerkte beeld opnieuw in kaart moeten worden gebracht voor de uitvoerapparatuur met een kleiner kleurengamma. Erger, het kan leiden tot "postervorming", zeg maar, hiaten in wat een geleidelijke kleurovergang zou moeten zijn (bijvoorbeeld het verloop in een blauwe lucht). Ook kan het gemakkelijk leiden tot onjuiste kleuren of verlies van verzadiging en clipping (aftoppen). Met andere woorden, uw vakkundig gevormde overgangen tussen delicate rode tinten kunnen veranderen in een massief blok saai rood na de conversie voor de kleurruimte van uw printer. Experts zeggend dat 8-bits beelden niet voldoende tinten bezitten om een breed gamma af te dekken, zelfs voor de conversie naar een andere kleurruimte. Dus als u kiest voor een werkruimte met een breed gamma, begin dan met een 16-bits beeld.</para>
+          <para
+>Samenvattend, onjuist gebruik van kleurwerkruimten met een breed gamma kan leiden tot verlies van informatie (data) in de uitvoer. Kleine kleurruimten kunnen informatie afknijpen bij het invoeren. Middelgrote kleurruimten trachten de gulden middenweg te vinden. Zoals wikipedia stelt, het is een kwestie van kiezen. </para>
+          <para
+>Hier zijn enkele vaak herhaalde tips bij het kiezen van een werkruimte: </para>
+          <para>
+          <orderedlist>
+              <listitem
+><para
+>Voor beelden bestemd voor het web, gebruik (of transformeer het beeld naar) sRGB.   </para
+></listitem>
+              <listitem
+><para
+>Gebruik, om uw afbeelding zo accuraat mogelijk te bewerken, de kleinst mogelijke werkruimte die alle kleuren bevat van de opname die u heeft gemaakt. Plus nog een beetje extra ruimte voor die kleuren die u gaat maken tijdens het bewerken. Op die manier haalt u zonder vorming van banden of aftoppen het meeste uit de beperkte hoeveelheid bits van uw afbeelding bij de conversie van uw werkruimte naar de uiteindelijke kleurruimte. </para
+></listitem>
+              <listitem
+><para
+>Als u werkt in 8-bits i.p.v. 16-bits, kiest u een kleinere werkruimte in plaats van een grotere om afkapping en bandvorming te voorkomen. </para
+></listitem>
+              <listitem
+><para
+>Zet, voor archiveringsdoeleinden, uw RAW-bestand om naar een 16-bits tiff bestand met een grote gamut-werkruimte om te vermijden dat gegevens over kleurinformatie verloren raken. Converteer daarna dit tiff bestand naar de gewenste middel- of grote gamma-werkruimte. (sla het geconverteerde tiff bestand onder een nieuwe naam op) </para
+></listitem>
+          </orderedlist
+></para>
+          <para
+>Kijk voor meer informatie over het kiezen van een werkruimte op: <ulink url="http://www.brucelindbloom.com/"
+>deze pagina</ulink
+>, informatie over RGB werkruimten voor visuele vergelijking van gamma (reeks van bijbehorende kleuren) van de diverse kleurruimten. Zie <ulink url="http://www.luminous-landscape.com/tutorials/prophoto-rgb.shtml"
+>hier</ulink
+> en <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm"
+>hier</ulink
+> voor een overzicht van argumenten voor en tegen het gebruik van brede gamma-werkruimten. En als u op de website cambridgeincolour.com bent, bekijk dan de zelfstudie over kleurbeheer. </para>
+       </sect3>
+     </sect2>
+
+     <sect2 id="rendering"
+>       <title
+>Printerprofielen, weergave-intenties, en soft-proofing</title>
+      <sect3
+>   <title
+>Waar vind ik een printerprofiel?</title>
+          <para
+>We hebben veel geleerd en staan op het punt om het over printen te hebben. Waar kan ik een profiel voor mijn printer krijgen? Eigenlijk weet u het antwoord al. U kunt het algemene profiel gebruiken dat bij uw printer wordt geleverd, of u kunt een professioneel aangemaakt profiel kopen. Als u er om vraagt sturen sommige drukkerijen u hun eigen profiel(maar dat werkt niet met uw printer.) U kunt ook een profiel aanmaken met behulp van het Argyll programma. In dat geval kunt u het profiel afstemmen op het door u gebruikte papier, de inkt en zelfs de typische eigenaardigheden van uw afbeelding. Als u bijvoorbeeld een serie opnamen wilt printen die allen min of meer in gereserveerde bruine kleuren werden genomen dan heeft het geen zin om een kleurruimte te kiezen waarin plaats wordt gecreëerd voor verzadigde rode en blauwe kleuren. Op dit punt kan ik eigenlijk niet veel meer adviezen geven omdat ik zelf net ben begonnen met het bestuderen van de het onderwerp printing.(voorheen hield ik me slechts bezig met bekijken en delen met en anderen van beelden op het beeldscherm). Maar kijk beslist op <ulink url="http://www.luminous-landscape.com/essays/fancy-graphics2.shtml"
+>deze pagina</ulink
+> voor een uitstekende presentatie over de voordelen van het zelf maken van een profiel uw printer. Plus een overtuigende positieve onderschrijving van het gebruik van Argyll om uw printerprofiel te maken.</para>
+       </sect3>
+        <sect3
+> <title
+>Hoe zit dat bij weergave-intenties?  </title>
+          <para
+>Weergave intentie (rendering intent) slaat op de wijze waarop kleurengamma's worden bewerkt wanneer de doelkleurruimte (bijv. die van de printer) het gehele gamma van de bronkleurruimte niet kan omvatten.</para>
+          <para
+>Er zijn vier algemeen gehanteerde weergave-intenties: perceptueel, relatief colorimetrisch, absoluut colorimetrisch en verzadiging. Ik heb het internet doorzocht op een goede beschrijving van het onderwerp de afwegingen bij het kiezen van de ene of de andere weergave-intentie. Kijk op <ulink url="http://www.cambridgeincolour.com/tutorials/color-space-conversion.htm"
+>deze pagina</ulink
+>. Het is een korte overname van het www.cambridgeincolor.com artikel over conversie van kleurruimte.</para>
+          <blockquote
+><para
+>Perceptuele en colorimetrische weergave-intentie zijn waarschijnlijk de meest nuttige conversietypen voor digitale fotografie. Elk van de methoden hanteert een andere prioriteit voor hoe zij kleuren weergeven in het niet aansluitende gamma-gebied. </para>
+          <para
+>Relatieve colorimetrische benadering onderhoudt een bijna exacte verhouding tussen gamma-kleuren, zelfs als die buiten de kleuren van het gamma reikt. </para>
+          <para
+>Perceptuele weergave tracht ook een relatie met buiten het gamma vallende kleuren in stand te houden, zelfs als dit uitmondt in onvolkomenheden voor kleuren binnen het gamma.  </para>
+          <para
+>De absolute aanpak is vergelijkbaar met de relatieve colorimetrische benadering doordat het binnen het gamma vallende kleuren behoudt en de buiten het gamma vallende kleuren afknijpt. Maar ze verschillen in de manier waarop ze het witpunt hanteren. De relatieve colorimetrische methode verschuift de kleuren binnen het gamma zodat het witpunt van de ene kleurruimte overeenkomt met dat van de andere ruimte, terwijl absolute colorimetrische methode de kleuren nauwkeurig behoudt (zonder het witpunt te wijzigen). </para>
+          <para
+>Verzadiging weergave-intentie tracht verzadigde kleuren te behouden.</para
+></blockquote
+> 
+          <para
+>Ik zou graag het hele artikel weergeven maar dat zou unfair gebruik zijn. Lees daarom het artikel zelf op de site. De illustraties in dat artikel helpen beslist om duidelijk te maken wat de verschillende weergave-intenties eigenlijk doen en de compromissen die gemaakt worden bij het bepalen van de voorkeur voor de ene of de ander benadering. </para>
+          <para
+>Nog een uitstekende bron van informatie over het onderwerp voorzien van illustraties vind u op <ulink url="http://www.normankoren.com/color_management.html#Rendering_intent"
+>deze pagina</ulink
+>.</para>
+       </sect3>
+        <sect3
+> <title
+>Wat voor weergave-intentie moet ik gebruiken voor weergave op mijn beeldscherm? </title>
+          <para
+>De gebruikelijke keuze valt op relatief colorimetrisch. Mijn advies zou zijn om niet de absolute colorimetrische (bv. met ufraw) te gebruiken, tenzij u erg vreemde resultaten wilt. </para>
+       </sect3>
+        <sect3
+> <title
+>Wat is soft-proofing? </title>
+          <para
+>Soft-proofing toont u de verschillen die u kunt verwachten tussen dat wat u op het scherm ziet en dat wat u op de afdruk zult zien. Om een soft-proof te krijgen heeft u het profiel van uw printer nodig (eigenlijk voor de combinatie van uw printer en uw papier omdat de keuze van papier invloed heeft op het witpunt in de afbeelding). Als u het beeld in soft-proofmodus niet mooi vindt, kunt u, voordat u de afbeelding converteert naar de kleurwerkruimte van uw printer, wijzigingen aanbrengen in uw werkruimte om het soft-proofbeeld meer in overeenstemming te brengen met het gewenste printresultaat. </para>
+       </sect3>
+        <sect3
+> <title
+>Wat voor weergave-intentie moet ik gebruiken bij soft-proofing? </title>
+          <para
+>Ik heb altijd gehoord dat men perceptuele weergave-intentie moet gebruiken bij de conversie van een grotere naar een kleinere kleurwerkruimte van de printer. Maar gezien in het licht van dat artikel in Cambridge in color schijnt het zo te zijn dat perceptuele intentie wel of niet de beste resultaten op kan leveren. Het hangt af van de verschillende gamma's van de printer/papier combinatie in kwestie. Ik heb nogal wat geëxperimenteerd met intenties voor printen en ontdekte dat voor mijn beelden de colorimetrische intenties duidelijker en meer heldere afdrukken opleveren. Echter niet zonder dat het beeld eerst aandachtig wordt bewerkt om te voorkomen dat heldere delen en schaduwen afgeknepen worden. In artikelen op diverse fotoforums valt te lezen dat perceptuele intenties een optie is maar beslist niet altijd de beste. </para>
+       </sect3>
+        <sect3
+> <title
+>En hoe zit het met zwartpunt-compensatie? </title>
+          <para
+>De meest begrijpelijke definitie die ik kon vinden over zwartpunt-compensatie is deze: "Zwartpunt-compensatie is een manier om aanpassingen te maken tussen maximale zwartpuntniveaus van digitale bestanden en de capaciteit om zwart weer te geven door diverse apparaten (zoals printers)" (een citaat van <ulink url="http://www.newsandtech.com/issues/2004/05-04/pt/05-04_blackpoint.htm"
+>deze pagina</ulink
+>).  </para>
+          <para
+>Het artikel waaruit deze definitie komt biedt een heldere uitleg (gebaseerd op Adobe) over hoe zwartpunt-compensatie werkt  en de praktische consequenties van het niet gebruiken van zwartpunt-compensatie. Het uiteindelijke advies is: probeer soft-proofing met zwartpunt-compensatie. Als het u bevalt gebruik het dan en anders niet. </para>
+       </sect3>
+        <sect3
+> <title
+>Kunnen alle weergave-intenties worden gebruikt bij de conversie van een kleurruimte naar een andere?   </title>
+          <para
+>In één woord, nee, elke weergave-intentie is beschikbaar bij de conversie van het ene profiel naar het andere. Niet ieder profiel ondersteunt iedere weergave-intentie. Wat er gebeurt als u een weergave-intentie gebruikt die niet wordt ondersteund, is dat LCMS stilletjes de standaard weergave-intentie van het profiel toepast. </para>
+          <para
+>Voor een informatieve en humorvolle discussie over mythen die het gebruik van de verschillende weergave-intenties omgeven, zie <ulink url="http://www.colorwiki.com/wiki/Color_Management_Myths_21-25#Myth_.2321:_There_are_perceptual_rendering_intents_available_when_converting_from_scanner.2Fcamera-.3Eworkspace_or_workspace-.3Eworkspace."
+>hier</ulink
+> en <ulink url="http://www.colorwiki.com/wiki/Color_Management_Myths_6-10"
+>hier</ulink
+>.</para>
+       </sect3>
+        <sect3
+> <title
+>Waarom wordt perceptuele weergave-intentie zo vaak aanbevolen als de fotografische weergave-intentie? </title>
+          <para
+>Het is een veilige keuze want het voorkomt afknijpen van heldere delen en schaduwen, evenwel met de mogelijkheid van het verminderen van verzadiging van al uw kleuren. Dus als u de last van soft-proofing wilt vermijden, kies dan perceptuele weergave-intentie. Als u geen soft-proof wilt dan kunt u eigenlijk beter in sRGB blijven werken. </para>
+       </sect3>
+     </sect2>
+
+     <sect2 id="CM-defionitions"
+>  <title
+>Enkele definities en opmerkingen</title>
+      <para
+>U bent aan het einde gekomen van deze zelfstudie over kleurbeheer. We hebben onze kleurbeheer-route van camera  en beeldscherm tot werkruimte tot printer voltooid. Ik heb er veel van geleerd en hopelijk u ook. Wat nu volgt zijn aanvullende opmerkingen en definities.</para>
+          <para
+><emphasis
+>Toewijzen</emphasis
+> van een profiel houdt in, het wijzigen van de RGB getallen in een beeld door een nieuw profiel in te brengen zonder de eigenlijke RGB getallen van elke pixel te wijzigen. Converteren naar een profiel betekent een nieuw profiel inbrengen en tevens de RGB getallen wijzigen zodat de betekenis van de RGB waarden (dat is de zichtbare kleur die door de RGB-waarden van iedere pixel wordt gevormd) hetzelfde blijft, voor en na de conversie van de ene ruimte naar de andere ruimte. </para>
+          <para
+>Aan de andere kant, elke keer dat u een nieuw werkruimteprofiel toewijst in plaats van conversie naar een nieuwe werkruimte te kiezen, zal het uiterlijk van het beeld min of meer drastisch veranderen. Behalve wanneer u bij aanvang een cameraprofiel toewijst aan de afbeelding die u krijgt van uw raw-verwerkende software maar meestal wordt het slechter.</para>
+          <para
+>In theorie zou u meerdere conversies van een kleurruimte naar een andere van een afbeelding kunnen maken. En als u een bewerkingsprogramma met kleurbeheer gebruikt zou het beeld er op het scherm telkens hetzelfde uit moeten zien. Maar feitelijk raakt het beeld met iedere conversie verder in verval door afrondingen van rekenresultaten en afknijpen van heldere of donkere delen in de afbeelding.  </para>
+          <para
+><emphasis
+>Apparaat-afhankelijke</emphasis
+> en <emphasis
+>Apparaat-onafhankelijke</emphasis
+> profielen: het cameraprofiel, een scannerprofiel, uw beeldschermprofiel en het kleurprofiel van uw printer zijn allen apparaat-afhankelijke profielen. Deze profielen werken alleen met het specifieke apparaat waarvoor ze werden ontwikkeld. Werkruimteprofielen en de PCS-en (profiel-verbindende kleurruimten) zijn apparaat-onafhankelijk. Wanneer een afbeeldingsbestand vertaald is door een LCMS (Little Color Management System) via een PCS naar een apparaat-onafhankelijke werkruimte maakt het niet langer uit door welk apparaat het afbeeldingsbestand oorspronkelijk werd aangemaakt. Maar zo gauw u het beeld op een ander beeldscherm wilt tonen of het printen, dan maakt het veel uit welk apparaat wordt gebruikt en is een apparaat-afhankelijk profiel vereist.</para>
+          <para
+>Een <emphasis
+>geïnterpoleerd raw-bestand</emphasis
+> is geen raw-bestand. Om de een of andere reden veroorzaakt dit begrip veel verwarring. Maar nadat een raw-bestand geïnterpoleerd is door software voor raw-bewerking en daarna is uitgevoerd als tiff of jpeg, is het originele raw-bestand natuurlijk nog steeds een raw-bestand, maar het geïnterpoleerde bestand gewoon een afbeeldingsbestand. Het is geen raw-bestand. </para>
+          <para
+><emphasis
+>Lineair</emphasis
+> kent twee aan elkaar verwante maar gemakkelijk te verwarren definities. "Lineair" kan betekenen dat de kleurtoon van een beeld weergeeft wat de kleurtoon van de gefotografeerde scene was. Het kan ook betekenen dat de gammaconversiecurve van de kleurruimte lineair is. Een beeld kan lineair zijn in een van de twee, in beide of in geen van twee betekenissen. Een raw-afbeelding zoals ontwikkeld door dcraw is lineair in beide betekenissen. Eenzelfde afbeelding, ontwikkeld door Canon's DPP zal in geen van de betekenissen lineair zijn.   </para>
+          <para
+><emphasis
+>HDR en LDR</emphasis
+> verwijzen niet naar de bitdiepte van een afbeelding. "High dynamic range" en "low dynamic range" verwijzen naar het totale dynamische bereik van een beeld. Een gewoon beeld met een laag dynamisch bereik, zeg maar, 5 diafragmastapjes kan opgeslagen worden als, 8-, 16-, 32-, of zelfs 64-bits afhankelijk van de software. (Een tegenwoordige digitale camera kan gemakkelijk 8 of 9 diafragmastapjes bevatten) Maar het dynamische bereik van het beeld wordt daardoor niet gewijzigd. Slechts het aantal afzonderlijke stapjes van de helderste tot de donkerste tonen is gewijzigd. Omgekeerd kan een 22-staps (wat in een eenvoudige camera niet haalbaar is) eenvoudig beeld opgeslagen worden als een 8-bits of 16-bits beeld maar het resultaat zal verschijnselen van extreme bandvorming te zien geven door de relatief geringe beschikbare stapjes van lichte tot donkere tonen in de afbeelding. Het zal extreme bandvorming laten zien in elk toonbereik op het beeldscherm.</para>
+          <para
+><emphasis
+>Intern (in-camera) geproduceerde jpegs hebben geen cameraprofiel nodig</emphasis
+>. Alle jpeg's (of tiff's, als u een ouder model Minolta Dimage camera hebt) die regelrecht uit de camera komen beginnen hun leven als een raw-bestand dat geconverteerd werd door de inwendige analoog naar digitaal converter (omzetter.) Zelfs wanneer gemaakt door eenvoudige pocket-camera's. Als u uw beelden opslaat als jpeg's, dan interpoleert de processor in uw camera het raw-bestand, wijst een cameraprofiel toe, vertaalt de resulterende RGB waarden naar een werkruimte (gewoonlijk sRGB, maar soms kan u kiezen voor AdobeRGB), zorgt voor de jpeg-compressie en slaat de afbeelding op in de geheugenkaart van uw camera. Voor jpeg's (of tiff's) van uw camera is het niet nodig een profiel toe te wijzen dat dan vertaald wordt naar werkruimte via een PCS. Jpeg's van uw camera bevinden zich al in een kleurwerkruimte. </para>
+          <para
+><emphasis
+>Handige wiskundige informatie</emphasis
+> als u te maken hebt met lineaire gamma-uitvoer van dcraw: wiskundig gezien, bij het doen van een gamma transformatie normaliseert u, (dat is, de RGB-nummers delen door 256 als u werkt met 8- bits waarden) en verhoogt u de verkregen getallen naar een passende waarde, afhankelijk van de respectievelijke gamma's van de eerste en laatste kleurruimte, daarna normalizeert u de resultaten opnieuw naar een nieuwe reeks van RGB getallen. Het is niet moeilijk en zeer leerzaam om dit te doen met een rekenmachine voor een paar afzonderlijke sets van RGB getallen van (0,0,0) tot (255,255,255) om te zien hoe RGB-getallen van de ene gamma-codering naar de andere veranderen. LCMS doet dit voor u wanneer u LCMS vraagt te converteren van de ene kleurruimte naar de andere. Als alles wat u doet is het converteren van één kleurruimte naar dezelfde kleurruimte behalve voor een andere gamma, gebruik dan imagemagick in plaats van LCMS en behandel de RGB-getallen direct, ken dan de nieuwe werkruimte toe aan de afbeelding - het resultaat zal beter zijn dan door een transformatie van de kleurruimte te gaan.</para>
+          <para
+><emphasis
+>door Copyright beschermde en onbeschermde werkruimten</emphasis
+>: ik neem aan dat alle gewone werkruimten die men tegen kan komen zoals:  </para>
+          <orderedlist>
+              <listitem
+><para
+>de verschillende varianten van sRGB (zie color.org) </para
+></listitem>
+              <listitem
+><para
+>BruceRGB of BestRGB </para
+></listitem>
+              <listitem
+><para
+>de verschillende ECI (European color initiative) werkruimteprofielen </para
+></listitem>
+              <listitem
+><para
+>AdobeRGB, AdobeWideGamutRGB, en Kodak/Adobe ProPhotoRGB (Kodak en Adobe ProPhoto zijn hetzelfde met een andere naam) en hun merkloze onbeschermde tegenhangers (Oyranos bevat een merkloze versie van AdobeRGB) </para
+></listitem>
+          </orderedlist>
+          <para
+>en nog heel wat andere werkruimten die aan de lijst kunnen worden toegevoegd, zijn allen min of meer bruikbaar als werkruimte. Welke werkruimte u zou moeten gebruiken hangt alleen van u af. Van uw eisen als bewerker van digitale beelden met uw uiteindelijke gebruiksdoelen. (Internet, beeldkunst, afdrukken enz.) Echter als kritische aantekening, als u Adobe of andere beschermde werkruimteprofielen gebruikt. Deze profielen bevatten copyright informatie die zichtbaar wordt in de EXIF gegevens van uw afbeeldingen. Onlangs heb ik kennis genomen van de openicc mailing lijst. Blijkbaar kan LCMS worden gebruikt om merkloze, copyleft werkruimteprofielen aan te maken die gelijk zijn, in feite niet te onderscheiden van, de gemerkte en van copyright voorziene werkruimten profielen. Het zou een prachtige aanvulling op &digikam; zijn om een set "copyrightloze" werkruimteprofielen, inclusief merkloze, hernoemde versies van ProPhotoRGB, AdobeRGB, en Adobe WidegamutRGB (misschien elk in twee smaken, linear gamma en het gebruikelijke gamma), samen te pakken als onderdeel van het &digikam; pakket. </para>
+     </sect2>
+
+     <sect2 id="profile-connection"
+>  <title
+>De algemene omzetter: uw camera profiel, de profielverbindende kleurruimte en de LMCS (Littel Colour Management System).</title>
+
+         <para
+>En zo ontstaat de vraag: wat doet ieder trio RGB-waarden van een 16-bits pixel in tiff door dcraw gemaakt voor een ideale waarnemer. Deze absolute standaard, refererend aan een ideale waarnemer wordt <emphasis
+>Profielverbindende ruimte</emphasis
+>genoemd. Om de respons van een camera op het binnenkomende licht te karakteriseren is een cameraprofiel nodig. Zo kunnen de RGB-waarden in het uitvoerbestand, die gemaakt werden door de rawverwerker, vertaald worden naar een absolute Profielverbindende ruimte (PCS) en naar uw werkruimte. Belangrijke kanttekening: voor het grootste deel van de open source wereld, (inclusief digikam), is de software die gebruikt wordt voor omzetting van het cameraprofiel naar PCS en van PCS naar de werkruimte en uiteindelijk naar de gekozen uitvoerruimte (naar printer of beeldscherm) gebaseerd op LCMS <ulink url="http://littlecms.com"
+>little color management engine</ulink
+>. Mijn eigen testen hebben aangetoond dat LCMS nauwkeuriger omzettingen levert dan het eigen conversieprogramma van Adobe. En verder, voor bijna alle rawconversieprogramma's, inclusief het commercieel verkrijgbare Adobe Photoshop, is de rawconversie gebaseerd de decodering van het rawbestand door dcraw. David Coffin, schrijver van (het programma) dcraw, is de held van de rawconversie. Zonder hem zouden we allen nog steeds vast zitten aan de Windows/Mac software die meegeleverd wordt met camera's. Dcraw interpolatie algoritmen (niet te verwarren met eerder genoemde decodering van merkgebonden raw-bestanden), die deel uit maken van &digikam; leveren, als ze juist toegepast worden, resultaten die gelijk of beter zijn dan de commerciële closed source software. Wij in de wereld van Linux en open source software zijn geen tweederangs burgers wanneer het gaat om digitale beeldverwerking. Verre van dat. </para>
+
+         <para
+>Er zijn twee algemeen gebruikte Profielverbindenderuimten - CIELAB en CIEXYZ (zie de sectie over kleurvertaling <ulink url="http://en.wikipedia.org/wiki/Color_management"
+>kleurbeheer</ulink
+>, zoek ook op CIELAB en CIEXYZ op wikipedia). Lcms gebruikt het cameraprofiel om RGB-waarden van het geïnterpoleerde raw-bestand, dat is de tiff die dcraw levert, te vertalen naar de juiste profielverbindende ruimte (gewoonlijk CIEXYZ).Een profielverbindende ruimte is op zich nog geen werkruimte. Een PCS is wel een absolute referentieruimte, gebruikt voor het vertalen van de ene kleurruimte naar een andere. Beschouw PCS maar als een universele vertaler voor alle kleurprofielen die een beeldbestand tegen komt op de route van camera raw-bestand naar uiteindelijke uitvoer:</para>
+         <orderedlist>
+            <listitem
+><para
+>Lcms gebruikt het cameraprofiel, ook wel genoemd het invoerprofiel, om de geïnterpoleerde, door dcraw geproduceerde, RGB-getallen, die alleen betekenis hebben voor uw (merk en model) camera, te vertalen naar een tweede set RGB-getallen die alleen van betekenis zijn voor de profielverbindende ruimte.</para
+></listitem>
+            <listitem
+><para
+>Lcms vertaalt de RGB-getallen van de Profielverbindenderuimte naar de overeenkomstige getallen in uw gekozen werkruimte zodat u uw beeldbestand kan bewerken. En deze werkruimtegetallen hebben ALLEEN betekenis voor een gegeven werkruimte. Hetzelfde rood, visueel gesproken, wordt in verschillende werkruimten vertegenwoordigd  door verschillende trio's van RGBgetallen; en als u het verkeerde profiel toewijst zal het beeld er verkeerd uitzien, een beetje verkeerd of heel erg verkeerd, afhankelijk van de verschillen tussen de twee profielen.</para
+></listitem>
+            <listitem
+><para
+>Terwijl u uw afbeelding bewerkt in de door u gekozen werkruimte, zou lcms alle RGB waarden van de werkruimte moeten terug vertalen naar de PCS en vervolgens naar de juiste RGB waarden die uw beeldscherm in staat stellen de meest accurate weergave te bieden terwijl u de afbeelding aan het bewerken bent. Deze vertaling voor het beeldscherm wordt ondertussen uitgevoerd en u zou zelfs nooit moeten merken dat dit plaats vindt, behalve wanneer het niet goed wordt uitgevoerd. In dat geval is het beeld op uw beeldscherm verkeerd, een beetje of heel erg of zelfs totaal verkeerd. </para
+></listitem>
+            <listitem
+><para
+>Wanneer u vindt dat uw afbeelding gereed is om aan de buitenwereld te presenteren vertaalt lcms de werkruimte RGB-getallen terug naar de PCS-ruimte (profielverbindende) en naar de kleurruimte van de printer met gebruik van het printerprofiel dat aangeeft welke printer/papier combinatie gebruikt wordt. Of, naar sRGB, als u van plan bent het beeld op internet te tonen of het per e-mail te verzenden of om een diashow te maken die op andere beeldschermen getoond kan worden.</para
+></listitem>
+       </orderedlist>
+
+       <para
+>Laten we even terug gaan en kijken naar het eerste kleurprofiel waarmee uw afbeelding te maken krijgt. Dat is het cameraprofiel (zie (1) hier boven) - dcraw kan uw cameraprofiel voor u toepassen (dcraw gebruikt lcms inwendig). Maar (i) het opwekken van de tiff samengesteld uit de geïnterpoleerde RGB-waarden die van het camera-RAW-bestand komen en (ii) de toepassing van het cameraprofiel op het geïnterpoleerde bestand  zijn twee verschillende en afzonderlijk te gebruiken stappen (afzonderlijk in theorie en praktijk voor dcraw; in theorie alleen voor de meeste raw-converters). De uitvoeropties van de dcraw-opdrachtregel "-o 0 [Raw-kleur (uniek voor elke camera )] -4 [16-bit lineair] -T [tiff]" draagt dcraw op om de RGB waarden van de raw-interpolatie uit te drukken in een tiff ZONDER het camera invoerprofiel toe te passen (de woorden tussen haken verklaren de opties maar moeten niet worden ingebracht in de opdrachtregel). Dan, als u werkelijk plezier heeft in het werken vanuit de opdrachtregel, kunt u het lcms hulpmiddel tifficc gebruiken om het cameraprofiel zelf toe te passen. Het voordeel van deze methode is dat u lcms kunt opdragen om hoge kwaliteit conversie toe te passen (dcraw schijnt lcms middelmatig als standaard te gebruiken). Het nadeel is natuurlijk dat het inbrengen van uw camera profiel in de opdrachtregel een extra stap in het proces is.</para>
+
+      <sect3 id="using-iccprofile"
+>   <title
+>Waar kunt u cameraprofielen vinden</title>
+
+        <para
+>En waar vinden we nu die camera-profielen die we nodig hebben om onze geïnterpoleerde raw-bestanden te vertalen naar een kleurwerkruimte. De sectie <ulink url="http://ufraw.sourceforge.net/Colors.html"
+>UFRAW website </ulink
+> over kleurbeheer geeft een beetje informatie over waar wij kant en klare cameraprofielen kunnen vinden. Jammer genoeg werken de cameraprofielen die geleverd worden door Canon, Nikon en soortgenoten niet zo goed samen met andere raw-converters dan de door de fabrikant meegeleverde converters. Dat is waarom Bibble en Phase One (en Adobe, maar ACR verbergt het door Adobe gemaakte profiel in de programmacode), hun eigen profiel moeten maken voor iedere camera die ze ondersteunen. Onthoud deze eigendomsmentaliteit van de camerafabrikant de volgende keer dat u een digitale camera koopt.  </para>
+        <para
+>Maar even terug naar het vinden van een cameraprofiel voor uw camera. Het juiste antwoord is; (als u geen kant en klaar profiel voor uw camera kunt vinden) om uw eigen profiel aan te maken of te laten maken. Er zijn nogal wat commerciële dienstverleners die tegen betaling een profiel voor uw camera maken. Of u kunt gebruik maken van LPRof, dan wel Argyll om zelf uw camera te profileren. Ik heb dat zelf nog nooit gedaan daarom kan ik niet zeggen hoe gemakkelijk of hoe moeilijk het is. Maar ik kan me voor stellen dat het te doen is als ik bedenk hoe nauwgezet de mensen achter Argyll en LPRof zijn ten aanzien van kleurbeheer. En de resultaten zullen beter zijn dan het door de maker van de camera geleverde profiel. Want Canon (en ook Bibble en Phase One) hebben niet het profiel van mijn camera gemaakt maar het profiel van een camera zoals die van mij.</para>
+        <para
+>Werkruimten:</para>
+
+        <para
+>Dus nu is uw raw-bestand geïnterpoleerd door dcraw, u heeft een cameraprofiel verkregen en u heeft lcms tifficc gebruikt om ​​uw cameraprofiel toe te passen op het tiff bestand, geproduceerd door dcraw (of u heeft dcraw gevraagd dat voor u toe te passen). Wat betekent dit nou allemaal? Het werkelijk antwoord omvat veel rekenkunde en kleurwetenschap, iets wat u en mij ver boven de pet gaat. Het korte praktische antwoord is dat noch de cameraprofielruimte, noch de profielverbindende ruimte een passende omgeving is om uw afbeelding te bewerken. Uw volgende stap is om een werkruimte te kiezen voor de bewerking van uw afbeelding. En dan voert u (of eigenlijk de lcms kleurbeheermotor die uw digitale beeldsoftware gebruikt) een dubbele vertaling uit. Eerst gebruikt lcms het cameraprofiel om de RGB-waarden van ieder pixel in het dcraw-uitvoer-beeld-zonder-cameraprofiel-toegepast, naar de eerder genoemde Profielverbindenderuimte. Daarna vertaalt het de RGB-waarden van ieder pixel in de Profielverbindenderuimte naar de door u gekozen werkruimte.</para>
+
+        <para
+>Verwarring en verwarrende benamingen:</para>
+        <para
+>Alvorens over werkruimten te spreken, is het nodig enige verwarring en verwarrende terminologie weg te nemen en op te klaren: </para>
+        <para
+>Ten eerste, sRGB is zowel een kleurwerkruimte alsook een uitvoerkleurruimte voor beelden bestemd voor het Internet en het beeldscherm. Als u een moderne monitor bezit met een gamut groter dan dat wat door sRGB wordt bestreken dan kunt u overwegen om het uitvoerprofiel te gebruiken waarmee u ten volle gebruik kunt maken van de voordelen van die nieuwe en hopelijk gekalibreerde monitor. Maar zorg er alstublieft voor dat uw beelden naar sRGB worden omgezet voor u ze naar uw vrienden stuurt. sRGB is ook de kleurruimte van beeldbestanden die veel thuisprinters en massa-productie commerciële afdrukcentrales verwachten wanneer u beelden verzendt. Het is ook de kleurruimte die de meeste programma's verwachten wanneer beelden zonder ingesloten kleurprofiel worden geopend. Dus als je ervoor kiest om kleurbeheer niet gebruiken, dan zijn uw keuzes voor kleurbeheer simpel, stel alles in op sRGB. </para>
+        <para
+>Ten tweede, alle jpeg afbeeldingen vinden hun oorsprong in de camera in de vorm van een raw bestand aangemaakt door A(naloog) naar D(igitaal) omzetter. Dat geldt ook voor eenvoudige compactcamera's die geen raw-bestanden opslaan. De processor in de camera interpoleert het raw-bestand wijst een cameraprofiel toe, vertaalt de RGB-waarden naar een werkruimte, (gewoonlijk RGB maar soms kunt u kiezen uit sRGB of Adobe RGB afhankelijk van de camera)  voert de jpeg-compressie uit en slaat het bestand op op de geheugenkaart van uw camera. Zodoende hoeft er voor jpeg's(of tiff's) van uw camera NOOIT een camera- of invoerprofiel worden toegewezen, want jpeg's van een camera zitten al in een werkruimte.</para>
+        <para
+>Ten derde, mocht iemand nog onzeker zijn op dit punt onthoud dan dat een geïnterpoleerd raw-bestand niet langer een raw-bestand is. Het is geïnterpoleerd en vervolgens uitgevoerd als tiff-bestand  waarvan de RGBwaarden nog moeten worden vertaald naar een werkruimte met gebruikmaking van het cameraprofiel, de PCS (profielverbindende ruimte) en de lcms. Ten vierde (alleen voor toekomstige referentie), om hier maar eens een beetje algemeen gehanteerde kleurbeheerbenamingen te introduceren - het cameraprofiel en het kleurprofiel van uw printer zijn beiden afhankelijk van respectievelijk de camera en de printer. Terwijl de werkruimte onafhankelijk van de apparatuur is. Het kan voor elke beeld gebruikt worden, met elke kleurbeheersoftware, los van waar het beeld ontstond. </para>
+        <para
+>Ten vijfde, hiervoor heb ik de uitdrukkingen: vertalen en vertaling gebruikt als beschrijving van wat lcms doet wanneer het RGB-waarden, via de profielverbindenderuimte vertaalt van een kleurruimte naar een andere kleurruimte. De gebruikelijke en juiste termen zijn converteren en conversie die ik hierna zal gebruiken. De vier methoden voor conversie van een kleurruimte naar een andere zijn perceptueel, relatief colorometrisch, absoluut colorometrisch  en verzadigd. Welke methode u zou moeten hanteren voor een gegeven beeldberwerkingsstap van raw-bestand tot uiteindelijke uitvoer valt buiten het bereik van deze zelfstudie. De vuistregel is: als je het niet weet, kies dan perceptueel als uitvoer. </para>
+        <para
+>Ten zesde (en dit is echt alleen voor toekomstige referenties), een profiel toewijzen betekent het wijzigen van de RGB waarden van een beeld door het inbrengen van een nieuw profiel zonder de eigenlijke RGBwaarden te wijzigen die bij iedere pixel van het beeld horen. Converteren betekent breng een nieuw profiel in  maar wijzig ook de RGBwaarden op het zelfde moment zodat de betekenis van de RGBwaarden, zeg maar de werkelijke zichtbare kleuren, het zelfde blijven voor en na de conversie van een ruimte naar een andere ruimte. Met een goed kleurbeeldbewerkingsprogramma moet u meerdere conversies van een afbeelding kunnen uitvoeren bij het converteren van de ene werkruimte naar de andere, hoewel alle de RGB-nummers in de afbeelding veranderen met elke conversie, moet het beeld op het scherm er hetzelfde uitzien (afgezien van de meestal onmerkbaar kleine, maar onvermijdelijke veranderingen van geaccumuleerde gamma mismatches en wiskundige afrondingsfouten). Echter, elke keer dat u een nieuwe werkruimteprofiel toewijst in plaats van te converteren naar een nieuwe werkruimte, zal het uiterlijk van de afbeelding drastisch veranderen (meestal wordt het slechter).</para>
+        <para
+>Tenslotte, (en dit is belangrijk) kleurbeheer is NIET alleen relevant wanneer u in raw schiet. Kleurbeheer beïnvloedt elke fase van het beeldbewerkingsproces. Of u nu begint met een door u gemaakte en geïnterpoleerde raw-opname die geconverteerd werd naar een tiff-bestand of wanneer u begint met een jpeg of tiff aangemaakt door uw camera. </para>
+
+        <para
+>Werkruimten met copyright en copyleft:</para>
+        <para
+>Ik beschouw het als een gegeven dat ALLE werkruimten die men tegenkomt, zoals:</para>
+        <orderedlist>
+          <listitem
+><para
+>de diverse varianten van sRGB (zie  <ulink url="http://www.color.org/v4spec.xalter"
+>color.org</ulink
+>) </para
+></listitem>
+          <listitem
+><para
+><ulink url="http://www.brucelindbloom.com"
+>BruceRGB</ulink
+></para
+></listitem>
+          <listitem
+><para
+>de verschillende ECI (European color initiative) <ulink url="http://www.eci.org/doku.php?id=en:colourstandards:workingcolorspaces"
+>werkruimteprofielen</ulink
+></para
+></listitem>
+          <listitem
+><para
+>AdobeRGB, Adobe WideGamutRGB en Kodak/Adobe ProPhotoRGB (Kodak en Adobe ProPhoto zijn hetzelfde alleen met een verschillende naam) en hun <ulink url="http://www.behrmann.name/index.php?option=com_content&amp;task=view&amp;id=34&amp;Itemid=68"
+>non-branded, non-copyrighted</ulink
+> tegenpolen (Oyranos bevat een merkloze versie van AdobeRGB)</para
+></listitem>
+          <listitem
+><para
+>en nog heel wat anderen die aan de lijst kunnen worden toegevoegd, zijn allen min of meer bruikbare werkruimten. Welke werkruimte u kiest is geheel aan u en aan uw vereisten ten aanzien van de uitvoer van uw digitale opnamen met uw uiteindelijke gebruiksdoelen. (Web, afdrukken voor schone kunsten, enz.)  </para
+></listitem>
+        </orderedlist>
+        <para
+>Echter, als kritische aantekening, als u Adobe of andere beschermde werkruimteprofielen gebruikt. Deze profielen bevatten copyright informatie die zichtbaar wordt in de EXIF gegevens van uw afbeeldingen. Onlangs heb ik kennis genomen van de openicc mailing lijst. Blijkbaar kan LCMS worden gebruikt om merkloze, copyleft werkruimteprofielen aan te maken die gelijk zijn, in feite niet te onderscheiden van, de gemerkte en van copyright voorziene werkruimteprofielen. Het zou een prachtige aanvulling op &digikam; zijn om een set "copyrightloze" werkruimteprofielen, inclusief merkloze, hernoemde versies van ProPhotoRGB, AdobeRGB, en Adobe WidegamutRGB (misschien elk in twee smaken, linear gamma en het gebruikelijke gamma), samen te pakken als onderdeel van het &digikam; pakket. </para>
+
+        <para
+>Welke werkruimte: gamma</para
+> 
+        <para
+>Welnu, de volgende vraag is: welke werkruimte zou ik gebruiken? <ulink url="http://en.wikipedia.org/wiki/Color_management#Working_spaces"
+>Wikipedia zegt: </ulink
+> <blockquote
+><para
+>Werkruimten als sRGB of AdobeRGB zijn kleurruimten die goede resultaten mogelijk maken bij het bewerken. Bijvoorbeeld, pixels met gelijke RGB-waarden moeten neutraal lijken. Het gebruik van een werkruimte met brede gamma leidt tot posterkleuren terwijl gebruik van een kleinere werkruimte zal leiden tot afvlakken. De afweging: welke kleurruimte moet de kritische bewerker zelf maken. </para
+></blockquote
+> </para>
+        <para
+>Dat citaat uit wikipedia is zo helder als modder. Ik weet niet zeker of ik het duidelijker kan uitleggen maar ik zal het proberen. "[P]ixels met gelijke waarden van RGB moeten neutraal lijken" betekent gewoon dat voor een bepaald pixel in een beeld dat is omgezet naar een geschikte werkruimte geldt: indien R = G = B, u grijs of zwart of wit op uw scherm moet zien. </para>
+        <para
+>Het bestaan van een lijst met andere technische vereisten voor een passende werkruimte is mij niet bekend. Ongetwijfeld zal er wel iemand zijn die zo'n lijst heeft gemaakt. Maar de meeste werkruimteprofielen worden gekarakteriseerd door: </para>
+        <orderedlist>
+           <listitem
+><para
+>RGB primaries die de reeks kleuren dicteert, dat wil zeggen, de gamut gedekt door een gegeven profiel</para
+></listitem>
+           <listitem
+><para
+>witpunt, gewoonlijk D50 of D65, wat de totale dynamische reeks dicteert van de werkruimte, vanaf 0,0,0 (totaal zwart) tot het helderste wit</para
+></listitem>
+           <listitem
+><para
+>gamma</para
+></listitem>
+        </orderedlist
+> 
+        <para
+>De praktische consequenties van het gebruik van verschillende primaire kleuren die leiden tot kleinere of grotere werkruimten worden hieronder beschreven. De praktische consequenties van verschillende keuzen van werkruimte-witpunt vallen buiten het bereik van deze zelfstudie. Hier bespreken we alleen iets over de praktische consequenties van het kleurruimte-gamma. (Kijk voor een uitstekend artikel en referenties op wikipedia onder: 'gamma'). </para>
+        <para
+>Het gamma van een kleurprofiel dicteert welke krachtconversie nodig is om een juiste conversie te doen van het ingebouwde kleurprofiel van een beeld (misschien uw kleurwerkruimte) naar een ander kleurprofiel met een ander gamma. Zoals (i) het weergaveprofiel dat gebruikt wordt om het beeld op het beeldscherm te krijgen. Of (ii) misschien naar een andere kleurwerkruimte, of (iii) misschien van uw kleurwerkruimte naar de kleurruimte van uw printer. </para>
+
+        <tip
+><para
+>Wiskundig gezien, voor een vermogenstransformatie normaliseert u de RGB-waarden en verhoogt u de verkregen waarden naar een juiste macht afhankelijk van de respectievelijke gamma's van de beginnende en eindigende kleurruimte. Dan normaliseert u opnieuw de resultaten naar een nieuwe reeks RGB-waarden. Lcms doet dit voor u wanneer u lcms vraagt te converteren van de ene kleurruimte naar de andere; echter, als het enige dat u wilt doen is, een macht te transformeren, gebruik dan imagemagick in plaats van LCMS en manipuleer de RGB-waarden rechtstreeks - de resultaten zullen nauwkeuriger zijn.</para
+></tip>
+
+        <para
+>Een praktische eigenschap van het gamma van een kleurruimte is dat hoe hoger het gamma, hoe meer tonen er beschikbaar zijn in donkere partijen en hoe minder tonen beschikbaar zijn in de lichtere partijen. Dus in theorie als u werkt in een beeld met donkere tonen (zg, low key) zou u een werkruimte met een hoger gamma willen hebben. En als u werkt in een licht beeld(high key) bijvoorbeeld opnamen gemaakt in het volle zonlicht met een witte trouwjurk en sneeuw als achtergrond dan kiest u voor een werkruimte met een lager gamma. Daardoor beschikt u over meer toon gradaties in de hoge lichten. Maar in werkelijkheid kiest bijna iedereen werkruimten met een gamma van 1,8 of 2,2. </para>
+        <para
+>Sommige mensen proberen een gamma van 2. als standaard te gebruiken. sRGb en LStar-RGB zijn geen op gamma gebaseerde werkruimten. Eigenlijk gebruikt sRGB <ulink url="http://en. wikipedia.org/wiki/SRGB"
+>hybrid gamma</ulink
+> en LStar-RGB gebruikt een op helderheid gebaseerde toonresponskromme in plaats van een gammawaarde- zie <ulink url="http://www.colormanagement.org/en/workingspaces.html"
+>hier</ulink
+> voor meer informatie en google dan een beetje rond voor meer diepgaande informatie.  </para>
+        <para
+>Naast het gamma 1,8 en gamma 2,2 is de enige andere gamma voor een werkruimte die veel vermeldt of gebruikt wordt gamma 1,0, ook wel lineair gamma genoemd. <emphasis
+>Lineair gamma</emphasis
+> wordt gebruikt in HDR (High Dynamic Range) beelden en als men fouten wil vermijden die door gamma worden veroorzaakt in de gewone low dynamic range bewerkingen. Door gamma veroorzaakte fouten, is een onderwerp dat te ver gaat voor deze zelfstudie. Maar kijk eens op <ulink url="http://www.4p8.com/eric.brasseur/gamma.html"
+>Gamma errors</ulink
+> in <ulink url="http://www.21stcenturyshoebox.com/essays/color_reproduction.html"
+>picture scaling,</ulink
+> voor door gamma veroorzaakte kleurverschuivingen. </para>
+        <para
+>Helaas en ondanks de onweerlegbare wiskundige voordelen hebben lineaire gamma werkruimten zo weinig tonen in de donkere partijen dat ze onmogelijk gebruikt kunnen worden voor bewerking in 8-bits bestanden, en zelfs in 16-bits bestanden is het problematisch. Wanneer de dag komt dat we allemaal onze bewerking doen op 32-bits bestanden geproduceerd door onze HDR camera's op onze persoonlijke supercomputers, voorspel ik dat we allemaal werkruimten zullen gebruiken met gamma 1. Adobe Lightroom gebruikt al een lineaire gamma werkruimte en LightZone heeft altijd gebruik gemaakt van een lineaire gamma werkruimte. </para>
+
+        <para
+>Welke werkruimte: <emphasis
+>grote gamut</emphasis
+> of <emphasis
+>kleine gamut</emphasis
+></para>
+        <para
+>Een belangrijke factor bij het kiezen van een werkruimte is dat sommige werkruimten groter dan anderen zijn, waardoor ze meer van het zichtbare spectrum beslaan. (en misschien zelfs ook enkele denkbeeldige kleuren - wiskundige constructies die niet echt bestaan). Deze grotere ruimtes bieden het voordeel van het toestaan ​​van het behouden van alle kleuren die uw camera heeft vastgelegd en bewaard door de lcms conversie van uw camera-profiel naar de echt grote profiel verbindende kleurruimte. </para>
+        <para
+>Maar zoals u zult zien is het behoud van alle mogelijke kleuren niet zonder consequenties. En het lijkt er op dat elk digitaal beeld een kleine reeks bevat van alle mogelijke zichtbare kleuren die uw camera kan vastleggen. (een uitzondering die een groter kleurengamma vereist zou een opname zijn van een hoog verzadigd onderwerp zoals een gele narcis). Deze kleine reeks past gemakkelijk in een van de kleinere werkruimten. Gebruik maken van een heel grote werkruimte betekent dat het bewerken van uw afbeelding gemakkelijk kleuren kan voortbrengen die uw uiteindelijke uitvoerapparaat, bv, printer, niet kan weergeven. Dus de conversie van uw werkruimte naar de werkruimte van uw uitvoerapparaat(bv printer) zal de kleuren die buiten het kleurengamma vallen opnieuw moeten indelen voor de werkruimte van uw printer die een stuk kleiner is. Omdat sommige kleuren die daardoor ontstaan geheel denkbeeldige kleuren zijn kan het gevolg zijn dat kleuren niet juist worden weergegeven of dat posterkleuren ontstaan of dat er banding of afknijpen op treed. Zo kan het gebeuren dat de zorgvuldig door u bewerkte kleuren uit de printer komen als massieve blokken rood of een andere kleur in plaats van dat er een geleidelijk overgang in de kleuren zichtbaar is.</para>
+        <para
+>Met andere woorden, wanneer grotere werkruimten met een groter gamut onjuist worden behandeld kan dat leiden tot teloorgaan van informatie bij de uitvoer. Kleine gamut werkruimten kunnen informatie al bij de invoer aftoppen. Zoals in wikipedia beschreven is het allemaal een kwestie van afwegen. Hier is een vaak gegeven advies:</para>
+        <orderedlist>
+          <listitem
+><para
+>Voor afbeeldingen bedoeld voor het web gebruikt u (een van de) sRGB (varianten - er zijn er verscheidene). </para
+></listitem>
+          <listitem
+><para
+>Gebruik voor de hoogste nauwkeurigheid bij het bewerken van uw afbeeldingen de kleinste werkruimte die alle kleuren bevat die u vast legde, plus een beetje extra ruimte voor de kleuren die u bewust produceerde tijdens de bewerkingen. Dit betekent, het meeste uit uw bitjes halen met het laagste risico op banden of afknijpen. </para
+></listitem>
+          <listitem
+><para
+>Als u werkt in 8-bits i.p.v. 16-bits, kiest u een kleinere ruimte in plaats van een grotere.</para
+></listitem>
+          <listitem
+><para
+>Converteer voor archivering van uw afbeeldingen, deze naar een 16-bits tiff met een werkruimte met een groot kleurengamma, om verlies van kleurinformatie te voorkomen. Daarna kunt u de gearchiveerde tiff (natuurlijk met een nieuwe naam) naar de werkruimte van uw keuze converteren. Zie <ulink url="http://simon.tindemans.eu/essays/scenereferredworkflow"
+>hier</ulink
+> voor details.</para
+></listitem>
+        </orderedlist>
+
+        <para
+>Het WAAROM, van deze eenvoudige adviezen over werkruimte gaat te ver voor het doel van deze zelfstudie. Zie ook: Bruce Lindbloom's uitstekende website (<ulink url="http://www.brucelindbloom.com/"
+>Info, informatie over RGB Werkruimten</ulink
+>) voor een visuele vergelijking van de gamma (rangschikking van de bijbehorende kleuren) van diverse kleurwerkruimten. Zie <ulink url="http://www.luminous-landscape.com/tutorials/prophoto-rgb.shtml"
+>hier</ulink
+> en <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm"
+>hier</ulink
+> voor een presentatie over voors en tegens van de merites van het gebruik van grote gammawerkruimten. En als u op de website <ulink url="http://www.cambridgeincolour.com/tutorials/sRGB-AdobeRGB1998.htm"
+>cambridgeincolour.com</ulink
+> bent, bekijk dan de zelfstudie over kleurmanagement.  </para>
+    </sect3>
+
+            <sect3 id="softproofing"
+>                  <title
+>Soft-proofing</title>
+                <para
+>Soft-proofing is een manier om op het scherm (monitor) het te verwachten resultaat van uitvoer op een ander apparaat vooraf te bekijken, typisch een printer. Soft-proofing toont u het te verwachten verschil voordat u het echt doet (en uw kostbare inkt verspilt). Zo kunt u uw instellingen verbeteren zonder tijd en geld te verspillen. </para>
+
+            </sect3>
+
+            <sect3 id="rendering-intention"
+>          <title
+>Rendering-intentie</title>
+
+                <para
+>Rendering-intentie refereert aan de manier waarop gamuts worden behandeld wanneer de kleurruimte van het doel niet de volledige gamut aankan.</para>
+                <itemizedlist>
+
+                    <listitem
+><para
+><emphasis
+>Perceptueel</emphasis
+>, ook wel genoemd beeld of volledig gamut behouden. Dit wordt algemeen aanbevolen voor fotografische beelden. Het kleurengamma wordt uitgebreid of gecomprimeerd bij het wisselen tussen kleurruimten om een consistent beeld te behouden. Laag verzadigde beelden worden weinig veranderd. Meer verzadigde beelden binnen het gamma van beide kleurruimten kunnen worden veranderd om ze te onderscheiden van verzadigde kleuren buiten de kleine gammaruimte. Perceptuele weergave-intentie past de zelfde gammacompressie  toe op alle beelden, zelfs wanneer een beeld geen noemenswaardige buiten het gamma-vallende kleuren heeft.</para>
+                    </listitem>
+
+                    <listitem
+><para
+><emphasis
+>Relatief Colorimetrisch</emphasis
+>, ook wel genaamd "Proof" of: "Behoud Identieke Kleur" en witpunt. Reproduceert "in-gamut" kleuren exact en knijpt "buiten-gamut-vallende" kleuren naar de dichtstbijzijnde reproduceerbare tint.</para>
+                    </listitem>
+
+                    <listitem
+><para
+><emphasis
+>Absoluut Colorimetrisch</emphasis
+>, ook wel genaamd: overeenkomend, of "Behoud van identieke kleuren". Reproduceert "in-gamut" kleuren exact en knijpt "out-of-gamut" kleur af naar dichtstbijliggende reproduceerbare tint, ten koste van verzadiging en mogelijk van helderheid. Op getint papier kunnen de witten donkerder worden gemaakt om de tint gelijk te houden aan de oorspronkelijke tint. Bijvoorbeeld , Cyaan kan aan wit van een crèmekleurig papier worden toegevoegd waardoor het beeld donkerder wordt. Zelden interessant voor fotografen. </para>
+                    </listitem>
+
+                    <listitem
+><para
+><emphasis
+>Verzadiging</emphasis
+>, ook wel genoemd: "Grafisch," of "Behoud Verzadiging". Brengt verzadigde primaire kleuren van de bron over naar de verzadigde primaire kleuren van de bestemming met verwaarlozing van de verschillen in tint, verzadiging of helderheid.Voor blokgrafieken; zelden interessant voor fotografen.</para>
+                    </listitem>
+
+                </itemizedlist>
+
+           </sect3>
+
+           <sect3 id="iccprofile-links"
+>            <title
+>Koppelingen</title>
+               <itemizedlist>
+               <listitem
+><para
+><ulink url="http://www.oyranos.org/wiki/index.php?title=Main_Page"
+>Kleurwiki</ulink
+></para
+></listitem>
+               <listitem
+><para
+><ulink url="http://en.wikipedia.org/wiki/CIELAB"
+>CIELab</ulink
+></para
+></listitem>
+               <listitem
+><para
+><ulink url="http://en.wikipedia.org/wiki/Gamut"
+>Gamut verklaard</ulink
+></para
+></listitem>
+               </itemizedlist>
+           </sect3>
+
+      </sect2>
+
+ </sect1>
+
