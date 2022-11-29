@@ -37,8 +37,13 @@ include(FeatureSummary)
 
 find_package(KF5 ${KF5_MIN_VERSION}
              REQUIRED COMPONENTS
+             I18n
              DocTools
 )
 
 add_subdirectory(digikam)
 add_subdirectory(showfoto)
+
+if(KF5DocTools_FOUND)
+    kdoctools_install(po)
+endif()
