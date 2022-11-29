@@ -35,6 +35,8 @@ include(FeatureSummary)
 
 ############## Find Packages ###################
 
+find_package(Gettext REQUIRED)
+
 find_package(KF5 ${KF5_MIN_VERSION}
              REQUIRED COMPONENTS
              I18n
@@ -44,6 +46,4 @@ find_package(KF5 ${KF5_MIN_VERSION}
 add_subdirectory(digikam)
 add_subdirectory(showfoto)
 
-if(KF5DocTools_FOUND)
-    kdoctools_install(po)
-endif()
+kdoctools_install(po)

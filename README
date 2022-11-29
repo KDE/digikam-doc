@@ -4,7 +4,30 @@ DIGIKAM HANDBOOK README
 Dependencies
 ------------
 
-kf5doctools-devel
+To compile the documentation, install the following development packages:
+
+CMake           >= 3.16.0   https://www.cmake.org
+ECM             >= 5.55.0   https://invent.kde.org/frameworks/extra-cmake-modules
+KF5::I18n       >= 5.55.0   https://invent.kde.org/frameworks/ki18n
+KF5::DocTools   >= 5.55.0   https://invent.kde.org/frameworks/kdoctools
+GetText         >= 0.20.0   https://www.gnu.org/software/gettext
+
+Compilation
+-----------
+
+To compile the documentations under Linux run this step in a console:
+
+- bootstrap.sh
+- cd build
+- make
+
+To install the documentions on your system:
+
+- make install/fast
+
+To uninstall the documentations from your system:
+
+- make uninstall
 
 File Structures
 ---------------
