@@ -33,6 +33,8 @@ include(CMakePackageConfigHelpers)
 include(CheckFunctionExists)
 include(FeatureSummary)
 
+set_property(GLOBAL PROPERTY ALLOW_DUPLICATE_CUSTOM_TARGETS 1)
+
 ############## Find Packages ###################
 
 find_package(Gettext REQUIRED)
