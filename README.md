@@ -1,5 +1,7 @@
 This repository host digiKam handbook based on DocBook contents.
 
+This documentation is weekly generated and [published here](https://docs.kde.org/index.php?language=en&package=digikam-doc).
+
 # Dependencies
 
 To compile the documentation, install the following development packages:
@@ -12,7 +14,7 @@ To compile the documentation, install the following development packages:
 
 # Compilation
 
-To compile DocBook files under Linux run these steps from a console:
+If you checkout this git repository, DocBook files can be compiled under Linux from a console using this steps:
 
 - bootstrap.sh
 - cd build
@@ -34,8 +36,7 @@ Respect the file naming convension ordred by chapter name, main section, and tit
 
 The digiKam DocBook files are shared with the Showfoto handbook.
 
-How to make a screenshot for the manual with Alpha Blending 3D Border
----------------------------------------------------------------------
+# How to make a screenshot for the manual with Alpha Blending 3D Border
 
 - Never use advanced color theme to make screenshots. Always use desktop default color and icon set.
 
