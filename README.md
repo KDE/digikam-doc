@@ -68,7 +68,7 @@ To process all png files in one step : find *.png | xargs -0 ./makess.sh
 
 # Links
 
-- [Converting handbook in PDF or Epub](https://userbase.kde.org/How_To_Convert_a_UserBase_Manual_to_Docbook#Converting_into_PDF) :
+- [Converting handbook in PDF or Epub](https://userbase.kde.org/How_To_Convert_a_UserBase_Manual_to_Docbook#Converting_into_PDF)
 - [Documentation about DocBook format](https://community.kde.org/Get_Involved/documentation)
 
 # Credits
