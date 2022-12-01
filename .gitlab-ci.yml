@@ -1,0 +1,16 @@
+suse_tumbleweed_qt515:
+  stage: test
+  image: kdeorg/ci-suse-qt515:latest
+  only:
+    - branches
+    - merge_requests
+    - tags
+  tags:
+    - Linux
+  variables:
+    KDECI_CACHE_PATH: /mnt/artifacts/suse-qt5.15/
+    KDECI_GITLAB_SERVER: https://invent.kde.org/
+    KDECI_PACKAGE_PROJECT: teams/ci-artifacts/suse-qt5.15
+  script:
+    - bootstartp.sh
+    - make
