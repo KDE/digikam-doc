@@ -1,21 +1,16 @@
-DIGIKAM HANDBOOK README
------------------------
+This repository host digiKam handbook based on DocBook contents.
 
-digiKam handbook based of DocBook
-
-Dependencies
-------------
+# Dependencies
 
 To compile the documentation, install the following development packages:
 
-CMake           >= 3.16.0   https://www.cmake.org
-ECM             >= 5.55.0   https://invent.kde.org/frameworks/extra-cmake-modules
-KF5::I18n       >= 5.55.0   https://invent.kde.org/frameworks/ki18n
-KF5::DocTools   >= 5.55.0   https://invent.kde.org/frameworks/kdoctools
-GetText         >= 0.20.0   https://www.gnu.org/software/gettext
+* [CMake](https://www.cmake.org) >=3.16.0
+* [ECM](https://invent.kde.org/frameworks/extra-cmake-modules) >= 5.55.0
+* [KF5::I18n](https://invent.kde.org/frameworks/ki18n) >= 5.55.0
+* [KF5::DocTools](https://invent.kde.org/frameworks/kdoctools) >= 5.55.0
+* [GetText](https://www.gnu.org/software/gettext) >= 0.20.0
 
-Compilation
------------
+# Compilation
 
 To compile DocBook files under Linux run these steps from a console:
 
@@ -31,8 +26,7 @@ To uninstall the documentations from your system:
 
 - make uninstall
 
-File Structures
----------------
+# File Structures
 
 The substructure of the help files that develop as a tree are created by <chapter> tags.
 
@@ -60,8 +54,7 @@ $> screenshot-dropshadow.sh -b png
 where <png> is the file extenion to look for. The script can be used
 with additional arguments, see '-h' for more options.
 
-PNG screenshot optimizations
-----------------------------
+# PNG screenshot optimizations
 
 Since the documentation is very good it is also very demanding in terms of volume, 99% whereof are screenshots.
 
@@ -72,17 +65,12 @@ This script requires pngnq and optipng command line tools installed on the syste
 
 To process all png files in one step : find *.png | xargs -0 ./makess.sh
 
-Links
------
+# Links
 
-- Converting handbook in PDF or Epub :
+- [Converting handbook in PDF or Epub](https://userbase.kde.org/How_To_Convert_a_UserBase_Manual_to_Docbook#Converting_into_PDF) :
+- [Documentation about DocBook format](https://community.kde.org/Get_Involved/documentation)
 
-https://userbase.kde.org/How_To_Convert_a_UserBase_Manual_to_Docbook#Converting_into_PDF
+# Credits
 
-- Documentation about DocBook format :
-
-https://community.kde.org/Get_Involved/documentation
-
-digiKam team
-http://www.digikam.org
+[digiKam team](http://www.digikam.org)
 
