@@ -44,7 +44,7 @@ To uninstall the documentations from your system, enter the command below from t
 # Continuous Integration
 
 At all changes in this repository as commits and Merge Request, the [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
-will recompile automatically all the contents to check the validity of the DocNook files, including the current translations
+will recompile automatically all the contents to check the validity of the DocBook files, including the current translations
 of the documentations.
 
 See the [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) for details.
