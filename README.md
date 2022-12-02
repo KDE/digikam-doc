@@ -1,11 +1,6 @@
-This repository host the digiKam handbook based on [DocBook](https://en.wikipedia.org/wiki/DocBook) format.
+![](logo.png) This repository host the digiKam handbook based on [DocBook](https://en.wikipedia.org/wiki/DocBook) format.
 
 [digiKam](https://www.digikam.org/about/features/) is a powerful Open Source Photo Management software.
-
-
-[![](project/images/digiKam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digiKam_handbook_HTML.png)
-
-[![](project/images/digiKam_handbook_PDF.png "PDF Version of digiKam Handbook Shown in PDF Viewer")](project/images/digiKam_handbook_PDF.png)
 
 # Dependencies
 
@@ -55,6 +50,10 @@ This documentation in English is weekly generated and [published here as HTML an
 
 If the compilation of the internationalized versions can be completed with the Continuous Deployement workflow,
 you can show a translated version of this documentation by selecting a language from the left side of this page.
+
+[![](project/images/digiKam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digiKam_handbook_HTML.png)
+
+[![](project/images/digiKam_handbook_PDF.png "PDF Version of digiKam Handbook Shown in PDF Viewer")](project/images/digiKam_handbook_PDF.png)
 
 # Directories Hierarchy
 
