@@ -1,8 +1,10 @@
-![](logo.png) This repository host the digiKam handbook based on [DocBook](https://en.wikipedia.org/wiki/DocBook) format.
+![](logo.png) This repository host the digiKam handbook based on DocBook format.
 
 [digiKam](https://www.digikam.org/about/features/) is a powerful Open Source Photo Management software.
 
-# Dependencies
+# How to Build the Handbook
+
+## Dependencies
 
 To compile the documentation, install the following development packages:
 
@@ -18,7 +20,7 @@ Under Linux Ubuntu, run this command line to install relevant packages:
 sudo apt install cmake extra-cmake-modules gettext libkf5i18n-dev libkf5doctools-dev build-essential qttools5-dev-tools khelpcenter
 ```
 
-# Compilation
+## Compilation
 
 If you checkout this git repository, and if you resolve the dependencies, DocBook files can be compiled
 under Linux from a console using steps below which will create a build/ sub-directory to host documentation
@@ -42,7 +44,7 @@ To uninstall the documentations from your system, enter the command below from t
 sudo make uninstall
 ```
 
-# Displaying Installed Documentation
+## Displaying Installed Documentation
 
 With Linux KDE Plasma desktop, to start the KDE Help Center desktop application with the digiKam handbook, just enter this command line from a console:
 
@@ -58,7 +60,9 @@ khelpcenter help:/showfoto
 
 [![](project/images/showfoto_khelpcenter.png "KDE Help Center Desktop Application Displaying Showfoto Handbook")](project/images/showfoto_khelpcenter.png)
 
-# Continuous Integration
+# Working on this Project
+
+## Continuous Integration
 
 At all changes done in this repository, as commits and Merge Request, the [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
 will recompile automatically all the contents to check the validity of the DocBook files, including the current translations
@@ -66,7 +70,7 @@ of the documentations.
 
 See the [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) for details.
 
-# Continous Deployement
+## Continous Deployement
 
 This documentation in English is weekly generated and [published here as HTML and PDF](https://docs.kde.org/index.php?language=en&package=digikam-doc).
 
@@ -77,7 +81,7 @@ you can show a translated version of this documentation by selecting a language 
 
 [![](project/images/digikam_handbook_PDF.png "PDF Version of digiKam Handbook Shown in PDF Viewer")](project/images/digikam_handbook_PDF.png)
 
-# Directories Hierarchy
+## Directories Hierarchy
 
 - LICENSES : host all licenses used in the project.
 - digikam  : host the main digiKam docbook and png files for the handbook.
@@ -86,7 +90,7 @@ you can show a translated version of this documentation by selecting a language 
              Mostly of the Showfoto documentation are shared with the digiKam documentation implementation.
 - project  : host some helpers scripts.
 
-# Translations
+## Translations
 
 The documentations are internationalized by KDE translators teams. In this repository, only the native English
 version is maintained and text are writted in DocBook container. These files are parsed daily by scripts to
@@ -98,7 +102,7 @@ of DocBook files, linked in po/ sub-directories of this project for future conve
 This project is not involved to translations workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
 if you want to contribute to the documentation internationalization.
 
-# Contribute
+## Contribute Workflow
 
 To help to write this English documention, you must use a standard git worflow based on Merge request. You cannot have access to this repository directly.
 All new contributor must process as below:
@@ -120,11 +124,25 @@ and contributor can create a new Merge Request with new changes to integrate in 
 
 The git workflow is well [documented in KDE project](https://community.kde.org/Infrastructure/Git/Simple_Workflow).
 
-# Current Project Tasks
+## Current Project Tasks
 
 A list of pending tasks to do on this project is available in the [TODO file](TODO).
 
-# File Structures
+# Working on The Handbook Contents
+
+## The DocBook Format
+
+The documentation written in English use the [DocBook](https://en.wikipedia.org/wiki/DocBook) format.
+DocBook is based on XML and host contents by sections separated by Tags, similar than a simplified HTML.
+It includes hierarchical paragraphes, use title to identify section, and can host screenshots in PNG format.
+DocBook can be processed and exported to other format as HTML and PDF for exemple.
+
+Mostly of the documentation are full English text section written to describe the digiKam features, and are
+easy to create and maintain. A simple text editor with color syntaxing is enough to change a DocBook file.
+
+If you want to lear more about this format, take a look to [this KDE tutorial](https://l10n.kde.org/docs/doc-primer/index.html)
+
+## File Structures
 
 The substructure of the help files that develop as a tree are created by <chapter> tags.
 
@@ -132,7 +150,7 @@ Respect the file naming convension ordred by chapter name, main section, and tit
 
 The digiKam DocBook files are shared with the Showfoto handbook.
 
-# How to make a screenshot for the manual with Alpha Blending 3D Border
+## How to make a screenshot for the manual with Alpha Blending 3D Border
 
 - Never use advanced color theme to make screenshots. Always use desktop default color and icon set.
 
@@ -151,7 +169,7 @@ $> screenshot-dropshadow.sh -b png
 where <png> is the file extenion to look for. The script can be used
 with additional arguments, see '-h' for more options.
 
-# PNG screenshot optimizations
+## PNG screenshot optimizations
 
 Since the documentation is very good it is also very demanding in terms of volume, 99% whereof are screenshots.
 
