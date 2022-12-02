@@ -1,6 +1,9 @@
-This repository host digiKam handbook based on DocBook contents.
+This repository host digiKam handbook based on [DocBook](https://en.wikipedia.org/wiki/DocBook) format.
 
-This documentation is weekly generated and [published here](https://docs.kde.org/index.php?language=en&package=digikam-doc).
+This documentation is weekly generated and [published here as HTML and PDF](https://docs.kde.org/index.php?language=en&package=digikam-doc).
+
+[![](project/images/digiKam_handbook_HTML.png "digiKam Handbook HTML")](project/images/digiKam_handbook_HTML.png)
+[![](project/images/digiKam_handbook_PDF.png "digiKam Handbook PDF")](project/images/digiKam_handbook_PDF.png)
 
 # Dependencies
 
@@ -14,19 +17,33 @@ To compile the documentation, install the following development packages:
 
 # Compilation
 
-If you checkout this git repository, DocBook files can be compiled under Linux from a console using this steps:
+If you checkout this git repository, DocBook files can be compiled under Linux from a console using these steps:
 
-- bootstrap.sh
-- cd build
-- make
+```
+# bootstrap.sh
+# cd build
+# make
+```
 
 To install the documentions on your system:
 
-- make install/fast
+```
+# make install/fast
+```
 
 To uninstall the documentations from your system:
 
-- make uninstall
+```
+# make uninstall
+```
+
+# Continuous Integration
+
+At all changes in this repository as commits and Merge Request, the Continuous Integration will recompile
+automatically all the contents to check the validity of the DocNook files, including the current translations
+of the documentations.
+
+See the [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) for details.
 
 # File Structures
 
@@ -69,7 +86,7 @@ To process all png files in one step : find *.png | xargs -0 ./makess.sh
 # Links
 
 - [Converting handbook in PDF or Epub](https://userbase.kde.org/How_To_Convert_a_UserBase_Manual_to_Docbook#Converting_into_PDF)
-- [Documentation about DocBook format](https://community.kde.org/Get_Involved/documentation)
+- [Get Involved in the KDE Documentation workflow](https://community.kde.org/Get_Involved/documentation)
 
 # Credits
 
