@@ -164,21 +164,27 @@ This script requires ImageMagick command line tools installed on the system.
 The script can be run on a single file or in batch mode. To run in batch
 mode, call it like this from within the images folder:
 
-$> screenshot-dropshadow.sh -b png
+```
+screenshot-dropshadow.sh -b png
+```
 
 where <png> is the file extenion to look for. The script can be used
 with additional arguments, see '-h' for more options.
 
 ## PNG screenshot optimizations
 
-Since the documentation is very good it is also very demanding in terms of volume, 99% whereof are screenshots.
+Since the documentation is very good it is also very demanding in terms of volume, 80% whereof are screenshots.
 
 In order to limit the byte count to the minimum the following command chain shall be used to reduce the png file size.
 
 A factor of 2-4 can be gained. From within the folder where the png reside, use script project/optpng.sh.
 This script requires pngnq and optipng command line tools installed on the system.
 
-To process all png files in one step : find *.png | xargs -0 ./makess.sh
+To process all png files in one step use this command line:
+
+```
+find *.png | xargs -0 ./makess.sh
+```
 
 # Links
 
