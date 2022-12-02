@@ -20,7 +20,9 @@ To compile the documentation, install the following development packages:
 
 # Compilation
 
-If you checkout this git repository, DocBook files can be compiled under Linux from a console using these steps:
+If you checkout this git repository, and if you resolve the dependencies, DocBook files can be compiled
+under Linux from a console using steps below which will create a build/ sub-directory to host documentation
+temporary files:
 
 ```
 # bootstrap.sh
@@ -28,13 +30,13 @@ If you checkout this git repository, DocBook files can be compiled under Linux f
 # make
 ```
 
-To install the documentions on your system:
+To install the documentions on your system, enter the command below from the build/ sub-directory:
 
 ```
 # make install/fast
 ```
 
-To uninstall the documentations from your system:
+To uninstall the documentations from your system, enter the command below from the build/ sub-directory:
 
 ```
 # make uninstall
@@ -42,8 +44,8 @@ To uninstall the documentations from your system:
 
 # Continuous Integration
 
-At all changes in this repository as commits and Merge Request, the Continuous Integration will recompile
-automatically all the contents to check the validity of the DocNook files, including the current translations
+At all changes in this repository as commits and Merge Request, the [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
+will recompile automatically all the contents to check the validity of the DocNook files, including the current translations
 of the documentations.
 
 See the [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) for details.
