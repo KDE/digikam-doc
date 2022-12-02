@@ -2,7 +2,6 @@ This repository host the digiKam handbook based on [DocBook](https://en.wikipedi
 
 [digiKam](https://www.digikam.org/about/features/) is a powerful Open Source Photo Management software.
 
-This documentation is weekly generated and [published here as HTML and PDF](https://docs.kde.org/index.php?language=en&package=digikam-doc).
 
 [![](project/images/digiKam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digiKam_handbook_HTML.png)
 
@@ -49,6 +48,13 @@ will recompile automatically all the contents to check the validity of the DocNo
 of the documentations.
 
 See the [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) for details.
+
+# Continous Deployement
+
+This documentation in English is weekly generated and [published here as HTML and PDF](https://docs.kde.org/index.php?language=en&package=digikam-doc).
+
+If the compilation of the internationalized versions can be completed with the Continuous Deployement workflow,
+you can show a translated version of this documentation by selecting a language from the left side of this page.
 
 # Directories Hierarchy
 
