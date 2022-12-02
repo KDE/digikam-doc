@@ -98,6 +98,28 @@ of DocBook files, linked in po/ sub-directories of this project for future conve
 This project is not involved to translations workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
 if you want to contribute to the documentation internationalization.
 
+# Contribute
+
+To help to write this English documention, you must use a standard git worflow based on Merge request. You cannot have access to this repository directly.
+All new contributor must process as below:
+
+- Create an account to [KDE identity](https://identity.kde.org/)
+- Be logged with this account to [KDE git server](https://invent.kde.org/users/sign_in)
+- [Fork this project](https://invent.kde.org/documentation/digikam-doc/-/forks/new) to your account.
+
+All contributor changes must be performed in this fork. When all is done, a Merge Request must be send to the original (Central) project to:
+
+- Notify coordinator about the contribution
+- Coordinator will review the changes.
+- Coordinator can post comments in the Merge Request if something is wrong.
+- Contributor must adjust, comment, or rebase changes accordignly with coordinatopr feedbacks.
+- When all is ready, coordinator process to merge changes in original repository.
+
+Later contributor can re-use the forked repository to rebase contents with original. Forked repository will be up-to-date
+and contributor can create a new Merge Request with new changes to integrate in original repository.
+
+The git workflow is well [documented in KDE project](https://community.kde.org/Infrastructure/Git/Simple_Workflow).
+
 # Current Project Tasks
 
 A list of pending tasks to do on this project is available in the [TODO file](TODO).
