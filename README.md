@@ -104,11 +104,12 @@ if you want to contribute to the documentation internationalization.
 
 ## Contribute Workflow
 
-To help to write this English documention, you must use a standard git worflow based on Merge request. You cannot have access to this repository directly.
-All new contributor must process as below:
+To help to write this English documentation, you must use a standard git worflow based on Fork/Merge Request mechanism.
+You will not have an access to this repository directly.
+All new contributors must process as below:
 
-- Create an account to [KDE identity](https://identity.kde.org/)
-- Be logged with this account to [KDE git server](https://invent.kde.org/users/sign_in)
+- Create an account to [KDE identity](https://identity.kde.org/).
+- Be logged with this account to [KDE git server](https://invent.kde.org/users/sign_in).
 - [Fork this project](https://invent.kde.org/documentation/digikam-doc/-/forks/new) to your account.
 
 All contributor changes must be performed in this fork. When all is done, a Merge Request must be send to the original (Central) project to:
@@ -117,9 +118,9 @@ All contributor changes must be performed in this fork. When all is done, a Merg
 - Coordinator will review the changes.
 - Coordinator can post comments in the Merge Request if something is wrong (aka DocBook compilation fails with the Continuous Integration).
 - Contributor must adjust, comment, or rebase changes accordignly with coordinator feedbacks.
-- When all is ready, coordinator process to merge changes in original repository.
+- When all is ready, coordinator merge changes in original repository.
 
-Later contributor can re-use the forked repository to rebase contents with original. Forked repository will be up-to-date
+Later, a contributor can re-use the forked repository to rebase contents with original. Forked repository will be up-to-date
 and contributor can create a new Merge Request with new changes to integrate in original repository.
 
 The git workflow is well [documented in KDE project](https://community.kde.org/Infrastructure/Git/Simple_Workflow).
@@ -133,12 +134,12 @@ A list of pending tasks to do on this project is available in the [TODO file](TO
 ## The DocBook Format
 
 The documentation written in English use the [DocBook](https://en.wikipedia.org/wiki/DocBook) format.
-DocBook is based on XML and host contents by sections separated by Tags, similar than a simplified HTML.
-It includes hierarchical paragraphes, use title to identify section, and can host screenshots in PNG format.
-DocBook can be processed and exported to other format as HTML and PDF for exemple.
+DocBook is based on XML and host contents by sections separated by tags, similar than a simplified HTML.
+It includes hierarchical paragraphes, use titles to identify sections, and can host screenshots in PNG format.
+DocBook can be processed and exported to other format as HTML and PDF for example.
 
-Mostly of the documentation are full English text section written to describe the digiKam features, and are
-easy to create and maintain. A simple text editor with color syntaxing is enough to change a DocBook file.
+Mostly of the documentation are full English text section written to describe the digiKam features. There are
+easy to create and maintain. A simple text editor supporting colors syntax is enough to work on a DocBook file.
 
 If you want to lear more about this format, take a look to [this KDE tutorial](https://l10n.kde.org/docs/doc-primer/index.html)
 
@@ -150,16 +151,16 @@ Respect the file naming convension ordred by chapter name, main section, and tit
 
 The digiKam DocBook files are shared with the Showfoto handbook.
 
-## How to make a screenshot for the manual with Alpha Blending 3D Border
+## How to take a screenshot for the manual with Alpha Blending 3D Border
 
-- Never use advanced color theme to make screenshots. Always use desktop default color and icon set.
+- Never use advanced color theme to take screenshots. Always use desktop default color and icon set.
 
 - Use Festival Import to take a shot. Use region selection option to select only
   important area. Remove buttons and dialog header to limit image file size.
-  _ALWAYS use PNG file format to save image to prevent compression artifacts.
+  Always use PNG file format to save image to prevent compression artifacts.
 
 - Use script project/screenshot-dropshadow.sh to add border frame around the shot.
-This script requires ImageMagick command line tools installed on the system.
+  This script requires ImageMagick command line tools installed on the system.
 
 The script can be run on a single file or in batch mode. To run in batch
 mode, call it like this from within the images folder:
