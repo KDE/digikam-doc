@@ -1,4 +1,6 @@
-This repository host digiKam handbook based on [DocBook](https://en.wikipedia.org/wiki/DocBook) format.
+This repository host the digiKam handbook based on [DocBook](https://en.wikipedia.org/wiki/DocBook) format.
+
+[digiKam](https://www.digikam.org/about/features/) is a powerful Open Source Photo Management software.
 
 This documentation is weekly generated and [published here as HTML and PDF](https://docs.kde.org/index.php?language=en&package=digikam-doc).
 
@@ -112,5 +114,5 @@ To process all png files in one step : find *.png | xargs -0 ./makess.sh
 
 # Credits
 
-[digiKam team](http://www.digikam.org)
+[digiKam team](https://www.digikam.org/support/contact/)
 
