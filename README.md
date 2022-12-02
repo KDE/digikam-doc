@@ -15,7 +15,7 @@ To compile the documentation, install the following development packages:
 Under Linux Ubuntu, run this command line to install relevant packages:
 
 ```
-# sudo apt install cmake extra-cmake-modules gettext libkf5i18n-dev libkf5doctools-dev build-essential qttools5-dev-tools khelpcenter
+sudo apt install cmake extra-cmake-modules gettext libkf5i18n-dev libkf5doctools-dev build-essential qttools5-dev-tools khelpcenter
 ```
 
 # Compilation
@@ -25,21 +25,21 @@ under Linux from a console using steps below which will create a build/ sub-dire
 temporary files:
 
 ```
-# bootstrap.sh
-# cd build
-# make
+bootstrap.sh
+cd build
+make
 ```
 
 To install the documentions on your system, enter the command below from the build/ sub-directory:
 
 ```
-# sudo make install/fast
+sudo make install/fast
 ```
 
 To uninstall the documentations from your system, enter the command below from the build/ sub-directory:
 
 ```
-# sudo make uninstall
+sudo make uninstall
 ```
 
 # Displaying Installed Documentation
