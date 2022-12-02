@@ -15,7 +15,7 @@ To compile the documentation, install the following development packages:
 Under Linux Ubuntu, run this command line to install relevant packages:
 
 ```
-# sudo apt install cmake extra-cmake-modules gettext libkf5i18n-dev libkf5doctools-dev build-essential qttools5-dev-tools
+# sudo apt install cmake extra-cmake-modules gettext libkf5i18n-dev libkf5doctools-dev build-essential qttools5-dev-tools khelpcenter
 ```
 
 # Compilation
@@ -42,6 +42,22 @@ To uninstall the documentations from your system, enter the command below from t
 # sudo make uninstall
 ```
 
+# Displaying Installed Documentation
+
+With Linux KDE Plasma desktop, to start the KDE Help Center desktop application with the digiKam handbook, just enter this command line from a console:
+
+```
+khelpcenter help:/digikam
+```
+
+For the Showfoto handbook:
+
+```
+khelpcenter help:/showfoto
+```
+
+[![](project/images/showfoto_khelpcenter.png "KDE Help Center Desktop Application Displaying Showfoto Handbook")](project/images/showfoto_khelpcenter.png)
+
 # Continuous Integration
 
 At all changes done in this repository, as commits and Merge Request, the [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
@@ -57,9 +73,9 @@ This documentation in English is weekly generated and [published here as HTML an
 If the compilation of the internationalized versions can be completed with the Continuous Deployement workflow,
 you can show a translated version of this documentation by selecting a language from the left side of the publication page.
 
-[![](project/images/digiKam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digiKam_handbook_HTML.png)
+[![](project/images/digikam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digikam_handbook_HTML.png)
 
-[![](project/images/digiKam_handbook_PDF.png "PDF Version of digiKam Handbook Shown in PDF Viewer")](project/images/digiKam_handbook_PDF.png)
+[![](project/images/digikam_handbook_PDF.png "PDF Version of digiKam Handbook Shown in PDF Viewer")](project/images/digikam_handbook_PDF.png)
 
 # Directories Hierarchy
 
