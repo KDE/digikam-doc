@@ -109,10 +109,10 @@ All new contributor must process as below:
 
 All contributor changes must be performed in this fork. When all is done, a Merge Request must be send to the original (Central) project to:
 
-- Notify coordinator about the contribution
+- Notify coordinator about the contribution.
 - Coordinator will review the changes.
-- Coordinator can post comments in the Merge Request if something is wrong.
-- Contributor must adjust, comment, or rebase changes accordignly with coordinatopr feedbacks.
+- Coordinator can post comments in the Merge Request if something is wrong (aka DocBook compilation fails with the Continuous Integration).
+- Contributor must adjust, comment, or rebase changes accordignly with coordinator feedbacks.
 - When all is ready, coordinator process to merge changes in original repository.
 
 Later contributor can re-use the forked repository to rebase contents with original. Forked repository will be up-to-date
