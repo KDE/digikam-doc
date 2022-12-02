@@ -2,7 +2,7 @@ This repository host digiKam handbook based on [DocBook](https://en.wikipedia.or
 
 This documentation is weekly generated and [published here as HTML and PDF](https://docs.kde.org/index.php?language=en&package=digikam-doc).
 
-|[![](project/images/digiKam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digiKam_handbook_HTML.png)|[![](project/images/digiKam_handbook_PDF.png "PDF Version of digiKam Handbook Shown in PDF Viewer")](project/images/digiKam_handbook_PDF.png)
+|[![](project/images/digiKam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digiKam_handbook_HTML.png)|[![](project/images/digiKam_handbook_PDF.png "PDF Version of digiKam Handbook Shown in PDF Viewer")](project/images/digiKam_handbook_PDF.png)|
 
 # Dependencies
 
