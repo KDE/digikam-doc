@@ -12,6 +12,12 @@ To compile the documentation, install the following development packages:
 * [KF5::DocTools](https://invent.kde.org/frameworks/kdoctools) >= 5.55.0
 * [GetText](https://www.gnu.org/software/gettext) >= 0.20.0
 
+Under Linux Ubuntu, run this command line to install relevant packages:
+
+```
+# sudo apt install cmake extra-cmake-modules gettext libkf5i18n-dev libkf5doctools-dev build-essential qttools5-dev-tools
+```
+
 # Compilation
 
 If you checkout this git repository, and if you resolve the dependencies, DocBook files can be compiled
@@ -27,13 +33,13 @@ temporary files:
 To install the documentions on your system, enter the command below from the build/ sub-directory:
 
 ```
-# make install/fast
+# sudo make install/fast
 ```
 
 To uninstall the documentations from your system, enter the command below from the build/ sub-directory:
 
 ```
-# make uninstall
+# sudo make uninstall
 ```
 
 # Continuous Integration
