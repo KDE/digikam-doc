@@ -38,7 +38,7 @@ To uninstall the documentations from your system, enter the command below from t
 
 # Continuous Integration
 
-At all changes in this repository as commits and Merge Request, the [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
+At all changes done in this repository, as commits and Merge Request, the [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
 will recompile automatically all the contents to check the validity of the DocBook files, including the current translations
 of the documentations.
 
@@ -49,7 +49,7 @@ See the [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipel
 This documentation in English is weekly generated and [published here as HTML and PDF](https://docs.kde.org/index.php?language=en&package=digikam-doc).
 
 If the compilation of the internationalized versions can be completed with the Continuous Deployement workflow,
-you can show a translated version of this documentation by selecting a language from the left side of this page.
+you can show a translated version of this documentation by selecting a language from the left side of the publication page.
 
 [![](project/images/digiKam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digiKam_handbook_HTML.png)
 
@@ -67,7 +67,7 @@ you can show a translated version of this documentation by selecting a language 
 # Translations
 
 The documentations are internationalized by KDE translators teams. In this repository, only the native English
-version is maintenained and text are writted in DocBook container. These files are parsed daily by scripts to
+version is maintained and text are writted in DocBook container. These files are parsed daily by scripts to
 extract strings to translate. Contents is exported to dedicated containers for translators.
 
 When translations are updated, files are re-injected back by others scripts to compile internationalized versions
