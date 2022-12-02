@@ -46,6 +46,27 @@ of the documentations.
 
 See the [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) for details.
 
+# Directories Hierarchy
+
+- LICENSES : host all licenses used in the project.
+- digikam  : host the main digiKam docbook and png files for the handbook.
+- po       : link to handbook translations files.
+- showfoto : host the Showfoto docbook files, the digiKam Image Editor stand alone version.
+             Mostly of the Showfoto documentation are shared with the digiKam documentation implementation.
+- project  : host some helpers scripts.
+
+# Translations
+
+The documentations are internationalized by KDE translators teams. In this repository, only the native English
+version is maintenained and text are writted in DocBook container. These files are parsed daily by scripts to
+extract strings to translate. Contents is exported to dedicated containers for translators.
+
+When translations are updated, files are re-injected back by others scripts to compile internationalized versions
+of DocBook files, linked in po/ sub-directories of this project for future conversion to HTML/PDF or for packaging.
+
+This project is not involved to translations workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
+if you want to contribute to the documentation internationalization.
+
 # File Structures
 
 The substructure of the help files that develop as a tree are created by <chapter> tags.
