@@ -98,6 +98,10 @@ of DocBook files, linked in po/ sub-directories of this project for future conve
 This project is not involved to translations workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
 if you want to contribute to the documentation internationalization.
 
+# Current Project Tasks
+
+A list of pending tasks to do on this project is available in the [TODO file](TODO).
+
 # File Structures
 
 The substructure of the help files that develop as a tree are created by <chapter> tags.
