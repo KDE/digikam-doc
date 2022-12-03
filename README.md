@@ -1,6 +1,6 @@
 ![](logo.png) This repository host the digiKam handbook based on DocBook format.
 
-[digiKam](https://www.digikam.org/about/features/) is a powerful Open Source Photo Management software.
+[digiKam](https://www.digikam.org/about/features/) is a powerful Open Source Photo Management Software.
 
 # How to Build the Handbook
 
@@ -23,8 +23,8 @@ sudo apt install cmake extra-cmake-modules gettext libkf5i18n-dev libkf5doctools
 ## Compilation
 
 If you checkout this git repository, and if you resolve the dependencies, DocBook files can be compiled
-under Linux from a console using steps below which will create a build/ sub-directory to host documentation
-temporary files:
+under Linux from a console using steps below which will create a build/ sub-directory to store
+necessary files used during compilation:
 
 ```
 bootstrap.sh
@@ -32,7 +32,7 @@ cd build
 make
 ```
 
-To install the documentions on your system, enter the command below from the build/ sub-directory:
+To install the documentations on your system, enter the command below from the build/ sub-directory:
 
 ```
 sudo make install/fast
@@ -46,7 +46,9 @@ sudo make uninstall
 
 ## Displaying Installed Documentation
 
-With Linux KDE Plasma desktop, to start the KDE Help Center desktop application with the digiKam handbook, just enter this command line from a console:
+When the documentation is installed on the system, under Linux KDE Plasma desktop you can start the
+Help Center desktop application to display the contents. For the the digiKam handbook,
+just enter this command line from a console:
 
 ```
 khelpcenter help:/digikam
@@ -151,7 +153,7 @@ Respect the file naming convension ordred by chapter name, main section, and tit
 
 The digiKam DocBook files are shared with the Showfoto handbook.
 
-## How to take a screenshot for the manual with Alpha Blending 3D Border
+## Take a screenshot with Alpha Blending 3D Border
 
 - Never use advanced color theme to take screenshots. Always use desktop default color and icon set.
 
