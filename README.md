@@ -70,7 +70,8 @@ At all changes done in this repository, as commits and Merge Request, the [Conti
 will recompile automatically all the contents to check the validity of the DocBook files, including the current translations
 of the documentations.
 
-See the [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) for details.
+The [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) section list the history of
+the continuous integration pipelines.
 
 ## Continous Deployement
 
@@ -85,47 +86,52 @@ you can show a translated version of this documentation by selecting a language 
 
 ## Directories Hierarchy
 
-- LICENSES : host all licenses used in the project.
-- digikam  : host the main digiKam docbook and png files for the handbook.
+- LICENSES : all licenses used in the project.
+- digikam  : the main digiKam docbook and png files for the handbook.
 - po       : link to handbook translations files.
-- showfoto : host the Showfoto docbook files, the digiKam Image Editor stand alone version.
+- showfoto : the Showfoto docbook files, aka the digiKam Image Editor stand alone version.
              Mostly of the Showfoto documentation are shared with the digiKam documentation implementation.
-- project  : host some helpers scripts.
+- project  : some helpers scripts.
 
 ## Translations
 
-The documentations are internationalized by KDE translators teams. In this repository, only the native English
-version is maintained and text are writted in DocBook container. These files are parsed daily by scripts to
-extract strings to translate. Contents is exported to dedicated containers for translators.
+The documentations are internationalized by KDE translator teams. In this repository, only the native English
+version is maintained and text are writted in DocBook container. These files are parsed daily by scripts which
+extract strings to translate. Contents are finaly exported to dedicated containers for translators.
 
-When translations are updated, files are re-injected back by others scripts to compile internationalized versions
-of DocBook files, linked in po/ sub-directories of this project for future conversion to HTML/PDF or for packaging.
+When translations are updated by the transltor teams, files are re-injected back by others scripts to this project,
+in goal to compile internationalized versions of DocBook files. These files are linked in po/ sub-directories from
+this project for future conversion to HTML/PDF or for packaging.
 
 This project is not involved to translations workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
 if you want to contribute to the documentation internationalization.
 
 ## Contribute Workflow
 
-To help to write this English documentation, you must use a standard git worflow based on Fork/Merge Request mechanism.
-You will not have an access to this repository directly.
+To help us to write this English documentation, you must use a standard git worflow based on Fork/Merge Request mechanism.
+You will not have a direct access to this repository.
 All new contributors must process as below:
 
 - Create an account to [KDE identity](https://identity.kde.org/).
 - Be logged with this account to [KDE git server](https://invent.kde.org/users/sign_in).
 - [Fork this project](https://invent.kde.org/documentation/digikam-doc/-/forks/new) to your account.
 
-All contributor changes must be performed in this fork. When all is done, a Merge Request must be send to the original (Central) project to:
+All contributor changes must be performed in this forked repository. Contributors can use the web interface to edit
+existing files or to clone the repository on a computer to process advanced operations as to create new contents.
+At end, contributor commits new file in the forked repository.
+
+When all contributor tasks are done, a Merge Request must be send to the original (Central) project to:
 
 - Notify coordinator about the contribution.
 - Coordinator will review the changes.
 - Coordinator can post comments in the Merge Request if something is wrong (aka DocBook compilation fails with the Continuous Integration).
-- Contributor must adjust, comment, or rebase changes accordignly with coordinator feedbacks.
-- When all is ready, coordinator merge changes in original repository.
+- Contributor must adjust, comment, or rebase changes in the forked repository accordignly with coordinator feedbacks.
+- When all is ready, coordinator merge changes from the forked repository to the original repository.
 
-Later, a contributor can re-use the forked repository to rebase contents with original. Forked repository will be up-to-date
-and contributor can create a new Merge Request with new changes to integrate in original repository.
+Later, a contributor can re-use the forked repository to rebase contents with original. Forked repository
+will be up-to-date and contributor can create a new Merge Request with new changes to integrate in original repository.
 
-The git workflow is well [documented in KDE project](https://community.kde.org/Infrastructure/Git/Simple_Workflow).
+This git workflow is well [documented in KDE project](https://community.kde.org/Infrastructure/Git/Simple_Workflow).
 
 ## Current Project Tasks
 
