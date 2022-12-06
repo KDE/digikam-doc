@@ -1,206 +1,37 @@
-![](logo.png) This repository hosts the digiKam handbook based on DocBook format.
+# Official Documentation for digiKam
 
-[digiKam](https://www.digikam.org/about/features/) is a powerful Open Source Photo Management Software.
+[![Build Status](https://binary-factory.kde.org/job/Website_docs-kdenlive-org/badge/icon)](https://binary-factory.kde.org/job/Website_docs-kdenlive-org/)  
+[Link to Kdenlive Sphinx documentation](https://docs.digikam.org)
 
-# How to Build the Handbook
+digiKam documentation based on [Sphinx](https://www.sphinx-doc.org)
 
-## Dependencies
+## Setting up Development Environment
 
-To compile the documentation, install the following development packages:
+1. First you need to install [Python version 3](https://www.python.org) and PIP (`sudo apt install python3-pip`) as it is required to install Sphinx.
+2. You can check whether Python was installed successfully (and your version is 3 and not 2) by running `python --version`
+3. Now you can sphinx and the sphinx theme we are using with `python -m pip install --upgrade sphinx sphinx_rtd_theme`
+4. You can check whether sphinx was installed successfully by running `sphinx-build --version`
 
-* [CMake](https://www.cmake.org) >=3.16.0
-* [ECM](https://invent.kde.org/frameworks/extra-cmake-modules) >= 5.55.0
-* [KF5::I18n](https://invent.kde.org/frameworks/ki18n) >= 5.55.0
-* [KF5::DocTools](https://invent.kde.org/frameworks/kdoctools) >= 5.55.0
-* [GetText](https://www.gnu.org/software/gettext) >= 0.20.0
+## Running sphinx
 
-Under Linux Ubuntu, run this command line to install relevant packages:
+After you cloned this repository (only need to be done once), use a command line to go to its root folder (e.g. with `cd /path/to/digikam-docs`)
 
-```
-sudo apt install cmake extra-cmake-modules gettext libkf5i18n-dev libkf5doctools-dev build-essential qttools5-dev-tools khelpcenter
-```
+### To generate a html web documentation run
 
-## Compilation
+**Linux:** `make html`
 
-If you checkout this git repository, and if you resolve the dependencies, DocBook files can be compiled
-under Linux from a console using steps below which will create a build/ sub-directory to store
-necessary files used during compilation:
+The HTML is generated in `build/html` (e.g. with `/path/to/digikam-docs/build/html`). Open the web document by double click `index.html`.
 
-```
-bootstrap.sh
-cd build
-make
-```
+### To generate an epub ebook run
 
-To install the documentations on your system, enter the command below from the build/ sub-directory:
+**Linux:** `make epub`
 
-```
-sudo make install/fast
-```
+The epub ebook is generated in `build/epub` (e.g. with `/path/to/digikam-docs/build/epub`). Open the ebook by double click `index.xhtml`.
 
-To uninstall the documentations from your system, enter the command below from the build/ sub-directory:
+## Get involved
 
-```
-sudo make uninstall
-```
+Contribute to this Manual. [More details see here](https://community.kde.org/Kdenlive/Workgroup/Documentation).
 
-## Displaying Installed Documentation
+## Status of translation
 
-When the documentation is installed on the system, under Linux KDE Plasma desktop you can start the
-Help Center desktop application to display the contents. For the the digiKam handbook,
-just enter this command line from a console:
-
-```
-khelpcenter help:/digikam
-```
-
-For the Showfoto handbook:
-
-```
-khelpcenter help:/showfoto
-```
-
-[![](project/images/showfoto_khelpcenter.png "KDE Help Center Desktop Application Displaying Showfoto Handbook")](project/images/showfoto_khelpcenter.png)
-
-# Working on this Project
-
-## Continuous Integration
-
-At all changes done in this repository, as commits and Merge Requests, the [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
-will recompile automatically all the contents to check the validity of the DocBook files, including the current translations
-of the documentations.
-
-The [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) lists the history of
-the continuous integration pipelines.
-
-## Continous Deployement
-
-This documentation in English is weekly generated and [published here as HTML and PDF](https://docs.kde.org/index.php?language=en&package=digikam-doc).
-
-If the compilation of the internationalized versions can be completed with the Continuous Deployment workflow,
-you can show a translated version of this documentation by selecting a language from the left side of the publication page.
-
-[![](project/images/digikam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digikam_handbook_HTML.png)
-
-[![](project/images/digikam_handbook_PDF.png "PDF Version of digiKam Handbook Shown in PDF Viewer")](project/images/digikam_handbook_PDF.png)
-
-## Directories Hierarchy
-
-- LICENSES : all licenses used in the project.
-- digikam  : the main digiKam docbook and png files for the handbook.
-- po       : link to handbook translations files.
-- showfoto : the Showfoto docbook files, aka the digiKam Image Editor stand alone version.
-             Most of the Showfoto documentation is shared with the digiKam documentation implementation.
-- project  : some helpers scripts.
-
-## Translations
-
-The documentations are internationalized by KDE translator teams. In this repository, only the native English
-version is maintained and text is written in the DocBook container. These files are parsed daily by scripts which
-extract strings to translate. Contents are finaly exported to dedicated containers for translators.
-
-When translations are updated by the translator teams, files are re-injected back by other scripts to this project,
-in order to compile internationalized versions of DocBook files. These files are linked in po/ sub-directories from
-this project for future conversion to HTML/PDF or for packaging.
-
-This project is not involved in the translation workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
-if you want to contribute to the internationalization.
-
-## Contribute Workflow
-
-To help us to write this English documentation, you must use a standard git workflow based on the Fork/Merge Request mechanism.
-You will not have direct access to this repository.
-All new contributors must process as below:
-
-- Create an account at [KDE identity](https://identity.kde.org/).
-- Be logged with this account to [KDE git server](https://invent.kde.org/users/sign_in).
-- [Fork this project](https://invent.kde.org/documentation/digikam-doc/-/forks/new) to your account.
-
-All contributor changes must be performed in this forked repository. Contributors can use the web interface to edit
-existing files or to clone the repository on a computer to process advanced operations such as to create new contents.
-At the end, the contributor commits the new files in the forked repository.
-
-When all contributor tasks are done, a Merge Request must be send to the original (Central) project to:
-
-- Notify the coordinator about the contribution.
-- Coordinator will review the changes.
-- Coordinator can post comments in the Merge Request if something is wrong (aka DocBook compilation fails with the Continuous Integration).
-- Contributor must adjust, comment, or rebase changes in the forked repository accordingly with coordinator feedback.
-- When all is ready, coordinator merge changes from the forked repository to the original repository.
-
-Later, a contributor can re-use the forked repository to rebase contents with original. The forked repository
-will be up-to-date and the contributor can create a new Merge Request with new changes to integrate in the original repository.
-
-This git workflow is well [documented in KDE project](https://community.kde.org/Infrastructure/Git/Simple_Workflow).
-
-## Current Project Tasks
-
-A list of pending tasks to do on this project is available in the [TODO file](TODO).
-
-# Working on The Handbook Contents
-
-## The DocBook Format
-
-The documentation written in English uses the [DocBook](https://en.wikipedia.org/wiki/DocBook) format.
-DocBook is based on XML and host contents by sections separated by tags, similar to a simplified HTML.
-It includes hierarchical paragraphes, uses titles to identify sections, and can host screenshots in PNG format.
-DocBook can be processed and exported to other formats such as HTML and PDF for example.
-
-Most of the documentation are full English text sections written to describe the digiKam features. They are
-easy to create and maintain. A simple text editor supporting colors syntax is enough to work on a DocBook file.
-
-If you want to learn more about this format, take a look to [this KDE tutorial](https://l10n.kde.org/docs/doc-primer/index.html)
-
-## File Structures
-
-The substructure of the help files that develop as a tree are created by <chapter> tags.
-
-Respect the file naming convention ordered by chapter name, main section, and title resume, separated by minus.
-
-The digiKam DocBook files are shared with the Showfoto handbook.
-
-## Take screenshots with Alpha Blending 3D Border
-
-- Never use advanced color themes to take screenshots. Always use the desktop default color and icon set.
-
-- Use Festival Import to take a shot. Use the region selection option to select only
-  important areas. Remove buttons and dialog header to limit image file size.
-  Always use PNG file format to save images to prevent compression artifacts.
-
-- Use script project/screenshot-dropshadow.sh to add border frames around the shot.
-  This script requires ImageMagick command line tools installed on the system.
-
-The script can be run on a single file or in batch mode. To run in batch
-mode, call it like this from within the images folder:
-
-```
-screenshot-dropshadow.sh -b png
-```
-
-where <png> is the file extension to look for. The script can be used
-with additional arguments, see '-h' for more options.
-
-## PNG screenshot optimizations
-
-Since the documentation is very good it is also very demanding in terms of volume, 80% whereof are screenshots.
-
-In order to limit the byte count to the minimum the following command chain shall be used to reduce the png file size.
-
-A factor of 2-4 can be gained. From within the folder where the png resides, use script project/optpng.sh.
-This script requires pngnq and optipng command line tools installed on the system.
-
-To process all png files in one step use this command line:
-
-```
-find *.png | xargs -0 ./makess.sh
-```
-
-# Links
-
-- [Converting handbook in PDF or Epub](https://userbase.kde.org/How_To_Convert_a_UserBase_Manual_to_Docbook#Converting_into_PDF)
-- [Get Involved in the KDE Documentation workflow](https://community.kde.org/Get_Involved/documentation)
-
-# Credits
-
-[digiKam team](https://www.digikam.org/support/contact/)
-
+The status of the Kdenlive documentation you can see [here](https://l10n.kde.org/stats/gui/trunk-kf5/package/documentation-docs-kdenlive-org/).

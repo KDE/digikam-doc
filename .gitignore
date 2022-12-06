@@ -1,0 +1,12 @@
+build
+_build
+builds
+.vscode
+.DS_Store
+.*.kate-swp
+
+# Explicitly prevent KDE l10n scripty from copying translation files to `po/`:
+# We already copy the translations to `locale/` using the `StaticMessage.sh`
+# script, which also have extra logic to unflatten the directory structure.
+# Ref: https://mail.kde.org/pipermail/kde-devel/2022-October/001402.html
+po/
