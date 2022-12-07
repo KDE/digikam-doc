@@ -14,6 +14,11 @@ Under Ubuntu 22.04:
 3. Now you can sphinx and the sphinx theme we are using with `python -m pip install --upgrade sphinx sphinx_rtd_theme`
 4. You can check whether sphinx was installed successfully by running `sphinx-build --version`
 
+Under Ubuntu 22.10:
+
+1. Now you can sphinx and the sphinx theme we are using with `sudo apt install python3-sphinx`
+2. You can check whether sphinx was installed successfully by running `sphinx-build --version`
+
 ## Running sphinx
 
 After you cloned this repository (only need to be done once), use a command line to go to its root folder (e.g. with `cd /path/to/digikam-docs`)
