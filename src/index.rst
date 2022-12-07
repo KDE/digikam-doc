@@ -140,7 +140,7 @@ Troubleshooting, Glossary, Get Involved
 
    .. container:: tile
 
-      `Bug Reports <https://kdenlive.org/en/bug-reports/>`__
+      `Bug Reports <https://www.digikam.org/support/>`__
          How to file a bug.
 
    .. container:: tile
