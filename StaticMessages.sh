@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 EXPORTS_POT_DIR=1
-FILE_PREFIX=docs_kdenlive_org_
+FILE_PREFIX=docs_digikam_org_
 
 function export_pot_dir # First parameter will be the path of the directory where we have to store the pot files
 {
@@ -11,8 +11,8 @@ function export_pot_dir # First parameter will be the path of the directory wher
     cd build/gettext
     #rm -rf untranslatable_pages.pot untranslatable_pages
     # Flatten the dir structure
-    echo "> Add docs_kdenlive_org_ prefix"
-    find * -type f -exec bash -c 'new=$(echo "{}" | sed s#/#___#g); mv "{}" "docs_kdenlive_org_$new"' \;
+    echo "> Add docs_digikam_org_ prefix"
+    find * -type f -exec bash -c 'new=$(echo "{}" | sed s#/#___#g); mv "{}" "docs_digikam_org_$new"' \;
     echo "> Move files to $1"
     mv *.pot $potdir
     #echo "> clean up"
@@ -39,7 +39,7 @@ function import_po_dirs # First parameter will be a path that will be a director
             mv $podir/$lang/*.po locale/$lang/LC_MESSAGES
             cd locale/$lang/LC_MESSAGES
             # Recreate the dir structure
-            find * -type f -exec bash -c 'new=$(echo "{}" | sed s#docs_kdenlive_org_##g | sed s#___#/#g); mkdir -p `dirname $new`; mv "{}" $new' \;
+            find * -type f -exec bash -c 'new=$(echo "{}" | sed s#docs_digikam_org_##g | sed s#___#/#g); mkdir -p `dirname $new`; mv "{}" $new' \;
             cd ../../..
             rm -rf $podir/$lang
         fi
