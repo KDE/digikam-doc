@@ -151,7 +151,7 @@ Troubleshooting, Glossary, Get Involved
 
    .. container:: tile
 
-      `Get Involved <https://community.kde.org/Kdenlive/Workgroup/Documentation>`__
+      `Get Involved <https://www.digikam.org/contribute/>`__
          Contribute to this Manual.
 
 
