@@ -32,17 +32,7 @@ Getting started
 
     .. container:: tile no-descr
 
-        :ref:`Installation`
-
-
-    .. container:: tile
-
-        :ref:`quickstart`
-           Basic workflow with a video example.
-
-    .. container:: tile no-descr
-
-            :ref:`Tutorials`
+        :ref:`quick_start`
 
 
 ##############
@@ -159,7 +149,7 @@ Troubleshooting, Glossary, Get Involved
    :maxdepth: 2
    :hidden:
 
-   getting_started
+   01-getting_started
    user_interface
    importing_and_assets_management
    cutting_and_assembling
