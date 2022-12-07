@@ -1,11 +1,13 @@
 # Official Documentation for digiKam
 
-[![Build Status](https://binary-factory.kde.org/job/Website_docs-kdenlive-org/badge/icon)](https://binary-factory.kde.org/job/Website_docs-kdenlive-org/)  
-[Link to Kdenlive Sphinx documentation](https://docs.digikam.org)
+[![Build Status](https://binary-factory.kde.org/job/Website_docs-digikam-org/badge/icon)](https://binary-factory.kde.org/job/Website_docs-digikam-org/)
+[Link to digiKam Sphinx documentation](https://docs.digikam.org)
 
 digiKam documentation based on [Sphinx](https://www.sphinx-doc.org)
 
 ## Setting up Development Environment
+
+Under Ubuntu 22.04:
 
 1. First you need to install [Python version 3](https://www.python.org) and PIP (`sudo apt install python3-pip`) as it is required to install Sphinx.
 2. You can check whether Python was installed successfully (and your version is 3 and not 2) by running `python --version`
@@ -30,8 +32,8 @@ The epub ebook is generated in `build/epub` (e.g. with `/path/to/digikam-docs/bu
 
 ## Get involved
 
-Contribute to this Manual. [More details see here](https://community.kde.org/Kdenlive/Workgroup/Documentation).
+Contribute to this Manual. [More details see here](https://www.digikam.org/contribute/).
 
 ## Status of translation
 
-The status of the Kdenlive documentation you can see [here](https://l10n.kde.org/stats/gui/trunk-kf5/package/documentation-docs-kdenlive-org/).
+The status of the digiKam documentation you can see [here](https://l10n.kde.org/stats/doc/trunk-kf5/package/digikam-doc/).
