@@ -38,6 +38,8 @@ The epub ebook is generated in `build/epub` (e.g. with `/path/to/digikam-docs/bu
 
 ## Get involved
 
+Documentation ReStructuredText implementations are located in src/ subdirectory. The root entry of the manual is index.rst.
+
 A good place to learn ReStructuredText format used in this documentation, it's recommend to read [this quick-start](https://docutils.sourceforge.io/docs/user/rst/quickstart.html).
 
 To contribute to this Manual, see [details here](https://www.digikam.org/contribute/).
