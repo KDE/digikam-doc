@@ -1,9 +1,10 @@
-# Official Documentation for digiKam
+![](logo.png) This repository hosts the digiKam handbook based on [Sphinx](https://www.sphinx-doc.org) framework and [ReStructuredText](https://docutils.sourceforge.io/rst.html) format.
+
+[digiKam](https://www.digikam.org/about/features/) is a powerful Open Source Photo Management Software.
+Link to [digiKam Sphinx documentation](https://docs.digikam.org)
+
 
 [![Build Status](https://binary-factory.kde.org/job/Website_docs-digikam-org/badge/icon)](https://binary-factory.kde.org/job/Website_docs-digikam-org/)
-[Link to digiKam Sphinx documentation](https://docs.digikam.org)
-
-digiKam documentation based on [Sphinx](https://www.sphinx-doc.org)
 
 ## Setting up Development Environment
 
@@ -37,8 +38,8 @@ The epub ebook is generated in `build/epub` (e.g. with `/path/to/digikam-docs/bu
 
 ## Get involved
 
-Contribute to this Manual. [More details see here](https://www.digikam.org/contribute/).
+To contribute to this Manual, see [details here](https://www.digikam.org/contribute/).
 
-## Status of translation
+## Status of translations
 
-The status of the digiKam documentation you can see [here](https://l10n.kde.org/stats/doc/trunk-kf5/package/digikam-doc/).
+The status of the digiKam documentation translations is available [here](https://l10n.kde.org/stats/doc/trunk-kf5/package/digikam-doc/).
