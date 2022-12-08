@@ -114,8 +114,8 @@ html_last_updated_fmt = '%Y-%m-%dT%H:%M:%S'
 
 # -- Internationalization Options --------------------------------------------
 
-locale_dirs = ['locale/']   # Where the PO files will be stored at
-gettext_compact = False     # optional.
+locale_dirs = ['../locale/']   # Where the PO files will be stored at
+gettext_compact = False        # optional.
 #gettext_additional_targets = ['image', 'index', 'literal-block'] # allows images to be translatable
 #figure_language_filename = "{path}{language}/{basename}{ext}"
 
