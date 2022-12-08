@@ -1,6 +1,6 @@
 .. meta::
    :description: The digiKam User Manual
-   :keywords: KDE, digiKam, documentation, user manual, photo management, open source, free, help, learn
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
 
 .. metadata-placeholder
 
@@ -29,132 +29,14 @@ Getting started
 
         :ref:`Introduction`
 
-
     .. container:: tile no-descr
 
         :ref:`quick_start`
-
-
-##############
-User Interface
-##############
-
-.. container:: toctile
-
-    .. container:: tile
-
-       :ref:`user_interface`
-          Introduction to Kdenlive's window system and widgets
-
-    .. container:: tile
-
-       :ref:`Project_Settings`
-          Setting the correct project values
-
-    .. container:: tile
-
-       Key components
-          :ref:`Project_tree`
-
-          :ref:`Timeline`
-
-          :ref:`Monitors`
-
-          :ref:`toolbars`
-
-    .. container:: tile
-
-       :ref:`shortcuts`
-          Improve your workflow by using the keyboard
-
-
-########
-Workflow
-########
-
-.. container:: toctile
-
-    .. container:: tile
-
-        .. figure:: /images/intro_page/Index_Logging.png
-           :target: importing_and_assets_management.html
-
-        :ref:`importing_and_assets_management`
-           Load files into Kdenlive and be prepared
-
-           Starting video editing
-
-    .. container:: tile
-
-        .. figure:: /images/intro_page/Index_Editing.png
-           :target: cutting_and_assembling.html
-
-        :ref:`cutting_and_assembling`
-           Start editing in the Timeline
-
-           See how the time line and the monitors are working
-
-    .. container:: tile
-
-       .. figure:: /images/intro_page/Index_Effects.png
-          :target: /effects_and_compositions/effects.html
-
-       :ref:`effects`
-          Add video and audio effects and compositions.
-
-          Create Titles and Subtitles and use Speech to Text.
-
-          Make color correction.
-
-    .. container:: tile
-
-       .. figure:: /images/intro_page/Index_Rendering.png
-          :target: exporting.html
-
-       :ref:`exporting`
-          Render out your final video for distributing.
-
-
-#######################################
-Troubleshooting, Glossary, Get Involved
-#######################################
-
-.. container:: toctile
-
-   .. container:: tile
-
-      :ref:`troubleshooting`
-         Solving specific :ref:`windows_issues`
-
-         General problem solving
-
-   .. container:: tile
-
-      `Bug Reports <https://www.digikam.org/support/>`__
-         How to file a bug.
-
-   .. container:: tile
-
-      :ref:`Glossary`
-         References and further information.
-
-
-   .. container:: tile
-
-      `Get Involved <https://www.digikam.org/contribute/>`__
-         Contribute to this Manual.
-
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
-   01-getting_started
-   user_interface
-   importing_and_assets_management
-   cutting_and_assembling
-   effects_and_compositions
-   exporting
-   troubleshooting
-   glossary
-   get_involved
+   getting_started
+
+.. TODO Add more top level entries here...
