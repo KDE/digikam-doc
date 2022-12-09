@@ -52,8 +52,10 @@ The epub ebook is generated in `build/epub` (e.g. with `/path/to/digikam-docs/bu
 
 ## Get involved
 
-Documentation ReStructuredText implementations are located in top level directory in .rst files and sub-directories corresponding to sections.
-The root entry of the manual is index.rst.
+Documentation ReStructuredText implementations are located in top level directory in .rst files and sub-directories
+corresponding to handbook sections. The root entry of the manual is index.rst.
+
+Each handbook section includes screen-shots, taken in PNG format and are stored in images/ subdirectory.
 
 A good place to learn ReStructuredText format used in this documentation, it's recommend to read [this quick-start](https://docutils.sourceforge.io/docs/user/rst/quickstart.html).
 
