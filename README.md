@@ -54,7 +54,9 @@ The EPUB ebook is generated in `build/epub`. Open the ebook file by double click
 
 ## Get Involved
 
-Documentation ReStructuredText implementations are located in top level directory in .rst files and sub-directories
+### File Hierarchies
+
+ReStructuredText Documentation implementation is located in top level directory in .rst files and sub-directories
 corresponding to handbook sections. The root entry of the manual is **index.rst**.
 
 Each handbook section start with a .rst file from top level directory and a dedicated
@@ -80,8 +82,20 @@ screen-shots, taken in PNG format. For example, the **getting_started** section 
     ├── introduction.rst
     └── quick_start.rst
 ```
+### The ReStructuredText Format
 
-A good place to learn ReStructuredText format used in this documentation, it's recommend to read [this quick-start](https://docutils.sourceforge.io/docs/user/rst/quickstart.html).
+ReStructuredText is a simple file format for textual data used primarily in the Python programming language
+community for technical documentation. It can be edited with a simple Text Editor application as **Kate**
+featuring syntax highlighting help help documentation writers.
+
+ReStructuredText is part of the Docutils project of the Python Documentation Special Interest Group,
+aimed at creating a set of tools for Python. Docutils can extract comments and information from Python programs,
+and format them into various forms of program documentation.
+
+ReStructuredText is a lightweight markup language designed to be both processable by documentation-processing
+software such as Docutils, and easily readable by human programmers who are reading and writing Python source code.
+
+A good place to learn **ReStructuredText** format used in this documentation, it's recommend to read [this quick-start](https://docutils.sourceforge.io/docs/user/rst/quickstart.html).
 
 ### Contribute Workflow
 
