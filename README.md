@@ -12,13 +12,13 @@ Under Ubuntu 22.04:
 
 1. First you need to install [Python version 3](https://www.python.org) and PIP (`sudo apt install python3-pip`) as it is required to install Sphinx.
 2. You can check whether Python was installed successfully (and your version is 3 and not 2) by running `python --version`
-3. Now you can sphinx and the sphinx theme we are using with `python -m pip install --upgrade sphinx sphinx_rtd_theme`
-4. You can check whether sphinx was installed successfully by running `sphinx-build --version`
+3. Now you can install Sphinx and the Sphinx Theme by using `python -m pip install --upgrade sphinx sphinx_rtd_theme`
+4. You can check whether Sphinx was installed successfully by running `sphinx-build --version`
 
 Under Ubuntu 22.10:
 
-1. Now you can sphinx and the sphinx theme we are using with `sudo apt install python3-sphinx`
-2. You can check whether sphinx was installed successfully by running `sphinx-build --version`
+1. To install Sphinx and the Sphinx Theme use `sudo apt install python3-sphinx`
+2. You can check whether Sphinx was installed successfully by running `sphinx-build --version`
 
 ## Running Sphinx
 
@@ -28,7 +28,7 @@ After you cloned this repository (only need to be done once), use a command line
 
 **Linux:** `make html`
 
-The HTML is generated in `build/html` (e.g. with `/path/to/digikam-docs/build/html`). Open the web document by double click `index.html`.
+The HTML is generated in `build/html`. Open the web document by double click `index.html`.
 
 [![](project/images/digikam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digikam_handbook_HTML.png)
 
@@ -36,9 +36,9 @@ The HTML is generated in `build/html` (e.g. with `/path/to/digikam-docs/build/ht
 
 **Linux:** `make epub`
 
-The epub ebook is generated in `build/epub` (e.g. with `/path/to/digikam-docs/build/epub`). Open the ebook by double click `DigikamManual.epub`.
+The epub ebook is generated in `build/epub`. Open the ebook by double click `DigikamManual.epub`.
 
-[![](project/images/digikam_handbook_EPUB.png "EPUB Version of digiKam Handbook Shown in EPUB Viewer")](project/images/digikam_handbook_EPUB.png)
+[![](project/images/digikam_handbook_EPUB.png "EPUB Version of digiKam Handbook Shown in e-book Viewer")](project/images/digikam_handbook_EPUB.png)
 
 ## Directories Hierarchy
 
