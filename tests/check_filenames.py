@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 SPDX-FileCopyrightText: 2021 Julius Künzel <jk.kdedev@smartlab.uber.space>
+SPDX-License-Identifier: BSD-3-Clause
 """
 import os
 import unittest
