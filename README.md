@@ -22,15 +22,15 @@ Under Ubuntu 22.10:
 1. To install Sphinx and the Sphinx Theme use `sudo apt install python3-sphinx`
 2. You can check whether Sphinx was installed successfully by running `sphinx-build --version`
 
-## Running Sphinx On your Computer
+## Running Sphinx On Your Computer
 
 After you cloned this repository (only need to be done once), use a command line to go to its root folder (e.g. with `cd /path/to/digikam-docs`)
 
-### Generate an HTML web Documentation
+### Generate an HTML Web Documentation
 
 Under **Linux:** run `make html`
 
-The HTML is generated in `build/html`. Open the web document by double click `index.html`.
+The HTML is generated in `build/html`. Open the web document by double click `index.html`. It must look like this:
 
 [![](project/images/digikam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digikam_handbook_HTML.png)
 
@@ -38,7 +38,7 @@ The HTML is generated in `build/html`. Open the web document by double click `in
 
 Under **Linux:** run `make epub`
 
-The EPUB ebook is generated in `build/epub`. Open the ebook file by double click `DigikamManual.epub`.
+The EPUB ebook is generated in `build/epub`. Open the ebook file by double click `DigikamManual.epub`. It must look like this:
 
 [![](project/images/digikam_handbook_EPUB.png "EPUB Version of digiKam Handbook Shown in e-book Viewer")](project/images/digikam_handbook_EPUB.png)
 
