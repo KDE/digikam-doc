@@ -10,11 +10,11 @@
 
 .. _support_formats_devices:
 
-###############
-Getting started
-###############
+#############################
+Supported Formats And Devices
+#############################
 
-File dormats and devices supported in digiKam
+File formats and devices supported in digiKam
 
 .. toctree::
    :maxdepth: 2
