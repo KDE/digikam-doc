@@ -86,28 +86,31 @@ will be up-to-date and the contributor can create a new Merge Request with new c
 
 This git workflow is well [documented in KDE project](https://community.kde.org/Infrastructure/Git/Simple_Workflow).
 
-### Taking screenshots
+### Screenshots Capture
 
 - Never use advanced color themes to take screenshots. Always use the desktop default color and icon set.
 
-- Use Festival Import to take a shot. Use the region selection option to select only
-  important areas. Remove buttons and dialog header to limit image file size.
-  Always use PNG file format to save images to prevent compression artifacts.
+- Use a tool as Festival to take a shot. Use the region selection option to select only important areas.
 
-### PNG screenshot optimizations
+- Remove unecessary buttons and dialog header to limit image file size.
 
-Since the documentation is very good it is also very demanding in terms of volume, 80% whereof are screenshots.
+- Always use PNG file format to save images to prevent compression artifacts.
+
+### PNG Optimizations
+
+Since the documentation is very good it is also very demanding in terms of volume, 80% whereof are screen-shots.
 
 In order to limit the byte count to the minimum the following command chain shall be used to reduce the png file size.
 
 A factor of 2-4 can be gained. From within the folder where the png resides, use script project/optpng.sh.
-This script requires pngnq and optipng command line tools installed on the system.
+This script requires [pngnq](https://pngnq.sourceforge.net/) and [optipng](https://optipng.sourceforge.net/) command line tools installed on your system.
 
 To process all png files in one step use this command line:
 
 ```
 find *.png | xargs -0 ./makess.sh
 ```
+
 ### Status of translations
 
 The documentations are internationalized by KDE translator teams. In this repository, only the native English
