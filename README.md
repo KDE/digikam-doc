@@ -42,7 +42,6 @@ The epub ebook is generated in `build/epub` (e.g. with `/path/to/digikam-docs/bu
 - attic     : old DocBook implementations of this manual to backport as ReStructuredText.
 - build     : temporary dir created when documentation is compiled.
 - ressources: Sphinx templates customization.
-- digikam   : the main digiKam docbook and png files for the handbook.
 - po        : link to handbook translations files.
 - project   : some helpers scripts.
 - tests     : scripts to test repository contents with CI
