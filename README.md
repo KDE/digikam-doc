@@ -38,6 +38,8 @@ The HTML is generated in `build/html` (e.g. with `/path/to/digikam-docs/build/ht
 
 The epub ebook is generated in `build/epub` (e.g. with `/path/to/digikam-docs/build/epub`). Open the ebook by double click `DigikamManual.epub`.
 
+[![](project/images/digikam_handbook_EPUB.png "EPUB Version of digiKam Handbook Shown in EPUB Viewer")](project/images/digikam_handbook_EPUB.png)
+
 ## Directories Hierarchy
 
 - LICENSES  : all licenses used in the project.
