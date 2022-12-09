@@ -5,6 +5,7 @@
 // 1) It is a language-free URL and we need to send the user to the most language appropriate version for them
 // 2) The page has moved elsewhere and we need to send them to the appropriate page
 // 3) The request is for a legacy page that existed on the older Mediawiki based setup, in which case we need to once again send them to the most appropriate page
+// SPDX-License-Identifier: MIT
 
 // Our list of supported languages
 $supported_languages = array(

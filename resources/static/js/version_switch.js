@@ -1,3 +1,7 @@
+/*!
+ * SPDX-License-Identifier: MIT
+ */
+
 (function() {//switch: v1.2
 "use strict";
 

@@ -3,6 +3,8 @@
 # This file only contains a selection of the most common options. For a full
 # list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
+#
+ # SPDX-License-Identifier: BSD-3-Clause
 
 # -- Path setup --------------------------------------------------------------
 
