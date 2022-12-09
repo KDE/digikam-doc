@@ -22,23 +22,23 @@ Under Ubuntu 22.10:
 1. To install Sphinx and the Sphinx Theme use `sudo apt install python3-sphinx`
 2. You can check whether Sphinx was installed successfully by running `sphinx-build --version`
 
-## Running Sphinx
+## Running Sphinx On your Computer
 
 After you cloned this repository (only need to be done once), use a command line to go to its root folder (e.g. with `cd /path/to/digikam-docs`)
 
-### To generate a html web documentation run
+### Generate an HTML web Documentation
 
-**Linux:** `make html`
+Under **Linux:** run `make html`
 
 The HTML is generated in `build/html`. Open the web document by double click `index.html`.
 
 [![](project/images/digikam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digikam_handbook_HTML.png)
 
-### To generate an epub ebook run
+### Generate an EPUB E-book
 
-**Linux:** `make epub`
+Under **Linux:** run `make epub`
 
-The EPUB ebook is generated in `build/epub`. Open the ebook by double click `DigikamManual.epub`.
+The EPUB ebook is generated in `build/epub`. Open the ebook file by double click `DigikamManual.epub`.
 
 [![](project/images/digikam_handbook_EPUB.png "EPUB Version of digiKam Handbook Shown in e-book Viewer")](project/images/digikam_handbook_EPUB.png)
 
@@ -52,7 +52,7 @@ The EPUB ebook is generated in `build/epub`. Open the ebook by double click `Dig
 - project   : some helpers scripts.
 - tests     : scripts to test repository contents with CI
 
-## Get involved
+## Get Involved
 
 Documentation ReStructuredText implementations are located in top level directory in .rst files and sub-directories
 corresponding to handbook sections. The root entry of the manual is index.rst.
@@ -113,7 +113,7 @@ To process all png files in one step use this command line from the root directo
 find *.png | xargs -0 ./optpng.sh
 ```
 
-### Status of translations
+### Translations
 
 The documentations are internationalized by KDE translator teams. In this repository, only the native English
 version is maintained and text is written in the DocBook container. These files are parsed daily by scripts which
