@@ -2,7 +2,7 @@
 
 [digiKam](https://www.digikam.org/about/features/) is a powerful Open Source Photo Management Software.
 
-This documentation generated as HTML can be read online [here](https://docs.digikam.org).
+This documentation generated as HTML can be read online [here](https://docs.digikam.org/en/index.html).
 
 [![Build Status](https://binary-factory.kde.org/job/Website_docs-digikam-org/badge/icon)](https://binary-factory.kde.org/job/Website_docs-digikam-org/)
 
