@@ -30,6 +30,8 @@ After you cloned this repository (only need to be done once), use a command line
 
 The HTML is generated in `build/html` (e.g. with `/path/to/digikam-docs/build/html`). Open the web document by double click `index.html`.
 
+[![](project/images/digikam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digikam_handbook_HTML.png)
+
 ### To generate an epub ebook run
 
 **Linux:** `make epub`
