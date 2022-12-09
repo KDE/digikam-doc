@@ -105,10 +105,10 @@ In order to limit the byte count to the minimum the following command chain shal
 A factor of 2-4 can be gained. From within the folder where the png resides, use script project/optpng.sh.
 This script requires [pngnq](https://pngnq.sourceforge.net/) and [optipng](https://optipng.sourceforge.net/) command line tools installed on your system.
 
-To process all png files in one step use this command line:
+To process all png files in one step use this command line from the root directory of this project:
 
 ```
-find *.png | xargs -0 ./makess.sh
+find *.png | xargs -0 ./optpng.sh
 ```
 
 ### Status of translations
