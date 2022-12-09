@@ -39,4 +39,20 @@ Getting started
 
    getting_started
 
+#############################
+Supported Formats And Devices
+#############################
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`file_formats`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   support_formats_devices
+
 .. TODO Add more top level entries here...
