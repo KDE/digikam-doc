@@ -55,9 +55,31 @@ The EPUB ebook is generated in `build/epub`. Open the ebook file by double click
 ## Get Involved
 
 Documentation ReStructuredText implementations are located in top level directory in .rst files and sub-directories
-corresponding to handbook sections. The root entry of the manual is index.rst.
+corresponding to handbook sections. The root entry of the manual is **index.rst**.
 
-Each handbook section includes screen-shots, taken in PNG format and stored in images/ sub-directory.
+Each handbook section start with a .rst file from top level directory and a dedicated
+sub-directory with the same name including chapters .rst files and a nested **images** sub-directory to host
+screen-shots, taken in PNG format. For example, the **getting_started** section will be organized like this:
+
+```
+├── index.rst
+├── getting_started.rst
+└── getting_started
+    ├── images
+    │   ├── intro-firstrun-step1.png
+    │   ├── intro-firstrun-step2.png
+    │   ├── intro-firstrun-step3.png
+    │   ├── intro-firstrun-step4.png
+    │   ├── intro-firstrun-step5.png
+    │   ├── intro-firstrun-step6.png
+    │   ├── intro-firstrun-step7.png
+    │   ├── intro-firstrun-step8.png
+    │   ├── intro-firstrun-step9.png
+    │   ├── intro-scanprogress.png
+    │   └── intro-toolsinterface.png
+    ├── introduction.rst
+    └── quick_start.rst
+```
 
 A good place to learn ReStructuredText format used in this documentation, it's recommend to read [this quick-start](https://docutils.sourceforge.io/docs/user/rst/quickstart.html).
 
