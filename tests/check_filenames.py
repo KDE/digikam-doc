@@ -47,7 +47,7 @@ class TestFilenames(unittest.TestCase):
                 if not f.endswith('.rst'):
                     continue
 
-                pot = 'docs_kdenlive_org_'
+                pot = 'docs_digikam_org_'
                 pot = pot + dirpath.replace('./','').replace('/','__')
                 pot = pot + '__' + f.replace('.rst', '.pot')
 
