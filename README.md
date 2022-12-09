@@ -2,7 +2,9 @@
 
 [digiKam](https://www.digikam.org/about/features/) is a powerful Open Source Photo Management Software.
 
-This documentation generated as HTML can be read online [here](https://docs.digikam.org/en/index.html).
+This documentation generated as **HTML** can be read online [here](https://docs.digikam.org/en/index.html).
+
+This documentation generated as **EPUB** can be downloaded [here](https://docs.digikam.org/en/epub/DigikamManual.epub).
 
 [![Build Status](https://binary-factory.kde.org/job/Website_docs-digikam-org/badge/icon)](https://binary-factory.kde.org/job/Website_docs-digikam-org/)
 
@@ -10,7 +12,7 @@ This documentation generated as HTML can be read online [here](https://docs.digi
 
 Under Ubuntu 22.04:
 
-1. First you need to install [Python version 3](https://www.python.org) and PIP (`sudo apt install python3-pip`) as it is required to install Sphinx.
+1. First you need to install [Python version 3](https://www.python.org) and **PIP** (`sudo apt install python3-pip`) as it is required to install Sphinx.
 2. You can check whether Python was installed successfully (and your version is 3 and not 2) by running `python --version`
 3. Now you can install Sphinx and the Sphinx Theme by using `python -m pip install --upgrade sphinx sphinx_rtd_theme`
 4. You can check whether Sphinx was installed successfully by running `sphinx-build --version`
@@ -36,7 +38,7 @@ The HTML is generated in `build/html`. Open the web document by double click `in
 
 **Linux:** `make epub`
 
-The epub ebook is generated in `build/epub`. Open the ebook by double click `DigikamManual.epub`.
+The EPUB ebook is generated in `build/epub`. Open the ebook by double click `DigikamManual.epub`.
 
 [![](project/images/digikam_handbook_EPUB.png "EPUB Version of digiKam Handbook Shown in e-book Viewer")](project/images/digikam_handbook_EPUB.png)
 
@@ -55,7 +57,7 @@ The epub ebook is generated in `build/epub`. Open the ebook by double click `Dig
 Documentation ReStructuredText implementations are located in top level directory in .rst files and sub-directories
 corresponding to handbook sections. The root entry of the manual is index.rst.
 
-Each handbook section includes screen-shots, taken in PNG format and are stored in images/ subdirectory.
+Each handbook section includes screen-shots, taken in PNG format and stored in images/ sub-directory.
 
 A good place to learn ReStructuredText format used in this documentation, it's recommend to read [this quick-start](https://docutils.sourceforge.io/docs/user/rst/quickstart.html).
 
@@ -77,7 +79,7 @@ When all contributor tasks are done, a Merge Request must be send to the origina
 
 - Notify the coordinator about the contribution.
 - Coordinator will review the changes.
-- Coordinator can post comments in the Merge Request if something is wrong (aka DocBook compilation fails with the Continuous Integration).
+- Coordinator can post comments in the Merge Request if something is wrong (aka ReStructuredText compilation fails with the Continuous Integration).
 - Contributor must adjust, comment, or rebase changes in the forked repository accordingly with coordinator feedback.
 - When all is ready, coordinator merge changes from the forked repository to the original repository.
 
@@ -90,7 +92,7 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
 
 - Never use advanced color themes to take screenshots. Always use the desktop default color and icon set.
 
-- Use a tool as Festival to take a shot. Use the region selection option to select only important areas.
+- Use a tool as **Festival** to take a shot. Use the region selection option to select only important areas.
 
 - Remove unecessary buttons and dialog header to limit image file size.
 
@@ -119,7 +121,7 @@ extract strings to translate. Contents are finaly exported to dedicated containe
 
 When translations are updated by the translator teams, files are re-injected back by other scripts to this project,
 in order to compile internationalized versions of DocBook files. These files are linked in po/ sub-directories from
-this project for future conversion to HTML/PDF or for packaging.
+this project for future conversion to HTML/EPUB or for packaging.
 
 This project is not involved in the translation workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
 if you want to contribute to the internationalization.
