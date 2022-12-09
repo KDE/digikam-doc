@@ -24,7 +24,7 @@ This dependence on other libraries means that it is not possible to give a defin
 
 digiKam only displays files that are in formats that it understands. It does this by looking at the file extension on the files and checking this against a predefined list. If the file extension is in the list digiKam will show the file in the Image View, provided the appropriate library is installed. You can change the list of file extensions that digiKam will accept; see the Configuration section for more details.
 
-Almost all digital cameras store photographs in one of two formats: JPEG or TIFF. Many cameras enable you to select which of these formats to use. A full description of these formats can be found at the Wikipedia. digiKam supports both of these formats.
+Almost all digital cameras store photographs in one of two formats: JPEG or RAW. Many cameras enable you to select which of these formats to use. A full description of these formats can be found `at the Wikipedia <https://en.wikipedia.org/wiki/Image_file_formats>`_. digiKam supports both of these formats.
 
 Still Image Compression
 -----------------------
@@ -50,21 +50,21 @@ PNG
 
 PNG is an image format that was developed as a replacement for a number of older, in the 1990's widely used, image file formats. It is a lossless format like TIFF but it is much more compact and saves disk space. Although your camera is unlikely to support PNG, some people like to convert their photographs to PNG as soon as they get them on their computer. Unlike JPEG, PNG images do not lose quality every time you re-encode them after modification. digiKam fully supports PNG images and the Batch Queue Manager can convert a batch of images from any supported format to PNG (and other formats) in one step.
 
-PNG is an extensible file format for the lossless, portable, well-compressed storage of raster images. PNG provides a patent-free replacement for GIF and can also replace many common uses of TIFF. PNG is designed to work well in on-line viewing applications, such as the World Wide Web, so it is fully streamable with a progressive display option. Also, PNG can store gamma and chromaticity data for improved color matching on heterogeneous platforms. PNG supports 8 and 16 bits / colors /pixels depth. It's the perfect file format to archive your photographs. For more information about the PNG format see the PNG homepage.
+PNG is an extensible file format for the lossless, portable, well-compressed storage of raster images. PNG provides a patent-free replacement for GIF and can also replace many common uses of TIFF. PNG is designed to work well in on-line viewing applications, such as the World Wide Web, so it is fully streamable with a progressive display option. Also, PNG can store gamma and chromaticity data for improved color matching on heterogeneous platforms. PNG supports 8 and 16 bits / colors /pixels depth. It's the perfect file format to archive your photographs. For more information about the PNG format `see the PNG homepage <https://www.libpng.org/pub/png/>`_.
 
 PGF
 ---
 
-"Progressive Graphics File" is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited to the web but at the moment few browsers can display it. For more information about the PGF format see the libPGF homepage.
+"Progressive Graphics File" is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited to the web but at the moment few browsers can display it. For more information about the PGF format `see the libPGF homepage <https://www.libpgf.org/>`_.
 
 RAW
 ---
 
 Some, typically more expensive, cameras allow you to store images in RAW format. RAW format is not really an image standard at all. It is different for every make of camera. RAW format images contain all the data that is taken directly from the camera's image sensor before the software in the camera applies things like white balance, sharpening etc. Storing photographs in a camera's RAW format allows you to alter settings, such as white balance, after the photograph has been taken. Most professional photographers use RAW format, because it offers them maximum flexibility. The downside is that RAW image files can be very large indeed.
 
-If you want to learn more about RAW image format visit the very helpful guides Wikipedia, The Luminous Landscape, and Cambridge in Colour. You can convert RAW format images into JPEG, PNG, or TIFF in digiKam using the Image Editor.
+If you want to learn more about RAW image format visit the very helpful guides `Wikipedia <https://en.wikipedia.org/wiki/Raw_image_format>`_, `The Luminous Landscape <https://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml>`_, and `Cambridge in Colour <http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm>`_. You can convert RAW format images into JPEG, PNG, or TIFF in digiKam using the Image Editor.
 
-digiKam supports RAW image loading only, relying on the Libraw library which is included in digiKam core and supports over 100 RAW file formats. The table below shows a short list of camera RAW files supported by digiKam:
+digiKam supports RAW image loading only, relying on the `Libraw library <https://www.libraw.org/>`_ which is included in digiKam core and supports over 100 RAW file formats. The table below shows a short list of camera RAW files supported by digiKam:
 
 ==================  ======================================================
 RAW File Format     Description
