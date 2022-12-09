@@ -20,7 +20,7 @@ Under Ubuntu 22.10:
 1. Now you can sphinx and the sphinx theme we are using with `sudo apt install python3-sphinx`
 2. You can check whether sphinx was installed successfully by running `sphinx-build --version`
 
-## Running sphinx
+## Running Sphinx
 
 After you cloned this repository (only need to be done once), use a command line to go to its root folder (e.g. with `cd /path/to/digikam-docs`)
 
@@ -35,6 +35,17 @@ The HTML is generated in `build/html` (e.g. with `/path/to/digikam-docs/build/ht
 **Linux:** `make epub`
 
 The epub ebook is generated in `build/epub` (e.g. with `/path/to/digikam-docs/build/epub`). Open the ebook by double click `DigikamManual.epub`.
+
+## Directories Hierarchy
+
+- LICENSES  : all licenses used in the project.
+- attic     : old DocBook implementations of this manual to backport as ReStructuredText.
+- build     : temporary dir created when documentation is compiled.
+- ressources: Sphinx templates customization.
+- digikam   : the main digiKam docbook and png files for the handbook.
+- po        : link to handbook translations files.
+- project   : some helpers scripts.
+- tests     : scripts to test repository contents with CI
 
 ## Get involved
 
