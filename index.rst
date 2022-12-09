@@ -17,7 +17,7 @@ Welcome to the manual for `digiKam <https://www.digikam.org>`_, the free and ope
 
 The current digiKam version you get `here <https://www.digikam.org/download/>`_ .
 
-You can download this manual as an `EPUB <https://docs.digikam.org/en/epub/digiKamManual.epub>`_.
+You can download this manual as an `EPUB <https://docs.digikam.org/en/epub/DigikamManual.epub>`_.
 
 ###############
 Getting started
