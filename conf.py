@@ -20,7 +20,7 @@
 import os
 import subprocess
 
-project = 'digiKam Manual'
+project = 'Digikam Manual'
 description = 'The official digiKam Documentation'
 copyright = 'licensed under the  <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License SA 4.0</a> unless stated otherwise'
 author = 'digiKam Community'
