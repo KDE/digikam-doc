@@ -62,27 +62,33 @@ RAW
 
 Some, typically more expensive, cameras allow you to store images in RAW format. RAW format is not really an image standard at all. It is different for every make of camera. RAW format images contain all the data that is taken directly from the camera's image sensor before the software in the camera applies things like white balance, sharpening etc. Storing photographs in a camera's RAW format allows you to alter settings, such as white balance, after the photograph has been taken. Most professional photographers use RAW format, because it offers them maximum flexibility. The downside is that RAW image files can be very large indeed.
 
-If you want to learn more about RAW image format visit the very helpful guides `Wikipedia <https://en.wikipedia.org/wiki/Raw_image_format>`_, `The Luminous Landscape <https://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml>`_, and `Cambridge in Colour <http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm>`_. You can convert RAW format images into JPEG, PNG, or TIFF in digiKam using the Image Editor.
+If you want to learn more about RAW image format visit the very helpful guides `Wikipedia <https://en.wikipedia.org/wiki/Raw_image_format>`_, `The Luminous Landscape <https://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml>`_, and `Cambridge in Colour <http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm>`_. You can convert RAW format images into JPEG, PNG, or TIFF in digiKam using the Image Editor or the Batch Queue Manager.
 
-digiKam supports RAW image loading only, relying on the `Libraw library <https://www.libraw.org/>`_ which is included in digiKam core and supports over 100 RAW file formats. The table below shows a short list of camera RAW files supported by digiKam:
+digiKam supports RAW image loading only, relying on the `Libraw library <https://www.libraw.org/>`_ which is included in digiKam core and supports over **1000** RAW file formats. The table below shows a short list of camera RAW files supported by digiKam:
 
-==================  ======================================================
-RAW File Format     Description
-==================  ======================================================
-CRW, CR2, CR3       Canon digital camera RAW file formats
-NEF                 Nikon digital camera RAW file format
-ORF                 Olympus digital camera RAW file format
-RAF                 Fuji digital camera RAW file format
-RWL                 Leica camera RAW file format
-PEF, PTX            Pentax digital camera RAW file format
-X3F                 Sigma digital camera RAW file format
-DCR, KDC, DC2, K25  Kodak digital camera RAW file format
-SRF, ARW, MRW, MDC  Sony/Minolta digital camera RAW file format
-RAW                 Panasonic, Casio, Leica digital camera RAW file format
-DNG (CS1, HDR)      Adobe RAW file format (Digital Negative)
-BAY                 Casio RAW (Bayer)
-ERF                 Epson digital camera RAW file format
-FFF                 Imacon/Hasselblad RAW format
-PXN                 Fotoman RAW
-RDC                 Ricoh RAW format
-==================  ======================================================
+======================= ======================================================
+RAW File Format         Description
+======================= ======================================================
+CRW, CR2, CR3           Canon digital camera RAW file formats
+NEF, NRW                Nikon digital camera RAW file format
+ORF, ORI                Olympus digital camera RAW file format
+RAF                     Fuji digital camera RAW file format
+RWL                     Leica camera RAW file format
+PEF, PTX                Pentax digital camera RAW file format
+X3F                     Sigma digital camera RAW file format
+DCR, KDC, DC2, K25      Kodak digital camera RAW file format
+SRF, SR2, ARW, MRW, MDC Sony/Minolta digital camera RAW file format
+RAW                     Panasonic, Casio, Leica digital camera RAW file format
+DNG (CS1, HDR)          Adobe RAW file format (Digital Negative)
+BAY                     Casio RAW (Bayer)
+ERF                     Epson digital camera RAW file format
+FFF, 3FR                Imacon/Hasselblad RAW format
+RW2                     Panasonic RAW file format
+IIQ, CAP                Phase One digital camera Raw image format
+RDC                     Ricoh RAW format
+======================= ======================================================
+
+If you want to know if your camera RAW file is supported by digiKam, go to `Help --> Supported RAW Cameras` dialog for details.
+
+.. figure:: images/formats-raw-cameras.png
+

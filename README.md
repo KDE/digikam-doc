@@ -126,13 +126,19 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
 
 ### Screenshots Capture
 
-- Never use advanced color themes to take screenshots. Always use the desktop default color and icon set.
+- Always use digiKam AppImage version 8 and later under Linux/Plasma desktop to take screenshots.
 
-- Use a tool as **Festival** to take a shot. Use the region selection option to select only important areas.
+- Always use **White Balance** color theme to take screenshots with desktop default icon set (select color theme from Settings/Themes menu).
+
+- No face/people present in photo hosted in screenshots.
+
+- No digiKam version number must be present in screeshots.
+
+- Use a tool as [Spectacle](https://apps.kde.org/spectacle/) to take a shot. Use the region selection option to capture only important area.
 
 - Remove unecessary buttons and dialog header to limit image file size.
 
-- Always use PNG file format to save images to prevent compression artifacts.
+- Always use **PNG** file format to save images to prevent compression artifacts.
 
 ### PNG Optimizations
 
@@ -156,7 +162,7 @@ version is maintained and text is written in the DocBook container. These files 
 extract strings to translate. Contents are finaly exported to dedicated containers for translators.
 
 When translations are updated by the translator teams, files are re-injected back by other scripts to this project,
-in order to compile internationalized versions of DocBook files. These files are linked in po/ sub-directories from
+in order to compile internationalized versions of ReStructured files. These files are linked in po/ sub-directories from
 this project for future conversion to HTML/EPUB or for packaging.
 
 This project is not involved in the translation workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
