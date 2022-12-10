@@ -1,5 +1,5 @@
 .. meta::
-   :description: File Formats Supported by digiKam
+   :description: Image File Formats Supported by digiKam
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
 
 .. metadata-placeholder
@@ -8,9 +8,9 @@
 
    :license: Creative Commons License SA 4.0
 
-.. _file_formats:
+.. _image_formats:
 
-File Formats Supported
+Image Formats Supported
 ======================
 
 .. contents::
