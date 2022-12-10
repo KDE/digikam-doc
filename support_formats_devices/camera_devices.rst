@@ -20,20 +20,20 @@ Introduction
 
 .. note::
 
-     RAW file support: if you are using RAW shooting mode with your camera, digiKam is probably well able to deal with it. RAW support depends on the libraw library. To find out if your particular camera is supported, bring up the list of supported RAW cameras from the Help → Supported RAW Cameras menu.
+     RAW file support: if you are using RAW shooting mode with your camera, digiKam is probably well able to deal with it. RAW support depends on the libraw library. To find out if your particular camera is supported, bring up the list from the Help → Supported RAW Cameras menu.
 
      How to setup and work with RAW files is described in **RAW Decoding Settings** and **RAW Workflow** sections.
 
-An easy-to-use camera interface is provided that will connect to your digital camera and download photographs directly into digiKam Albums. More than `1000 digital cameras <https://www.gphoto.org/proj/libgphoto2/support.php>`_ are supported by the gPhoto2 library. Of course, any media or card reader supported by your operating system will interface with digiKam.
+An easy-to-use camera interface is provided that will connect to your digital camera and download photographs directly into digiKam Albums. More than `2500 digital cameras <http://www.gphoto.org/proj/libgphoto2/support.php>`_ are supported by the gPhoto2 library. Of course, any media or card reader supported by your operating system will interface with digiKam.
 
 Current digital cameras are characterized by the use of Compact Flash™ Memory cards and USB or FireWire (IEEE-1394 or i-link) for data transmission. The actual transfers to a host computer are commonly carried out using the USB Mass Storage device class (so that the camera appears as a disk drive) or using the Picture Transfer Protocol (PTP) and its derivatives. Older cameras may use the Serial Port (RS-232) connection.
 
 Transfers using gPhoto2: PTP and Serial Port
 --------------------------------------------
 
-digiKam employs the gPhoto2 program to communicate with digital still cameras. gPhoto2 is a free, redistributable set of digital camera software applications which supports a growing number of over 800 cameras. gPhoto2 has support for the Picture Transfer Protocol, which is a widely supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
+digiKam employs the gPhoto2 program to communicate with digital still cameras. gPhoto2 is a free, redistributable set of digital camera software applications which supports a growing number of cameras. gPhoto2 has support for the Picture Transfer Protocol, which is a widely supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
 
-Many old digital still cameras used Serial Port to communicate with host computers. Because photographs are big files and serial port transfers are slow, this connection is now obsolete. digiKam supports these cameras and performs image transfers using the gPhoto2 program. You can find a complete list of supported digital cameras at `this url <https://www.gphoto.org/proj/libgphoto2/support.php>`_.
+Many old digital still cameras used Serial Port to communicate with host computers. Because photographs are big files and serial port transfers are slow, this connection is now obsolete. digiKam supports these cameras and performs image transfers using the gPhoto2 program. You can find a complete list of supported digital cameras at `this url <http://www.gphoto.org/proj/libgphoto2/support.php>`_.
 
 .. note::
 
