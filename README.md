@@ -101,6 +101,8 @@ A good place to learn **ReStructuredText** format used in this documentation, it
 - [Cheat-sheet](http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt).
 - [Reference]([http://docutils.sourceforge.net/docs/user/rst/quickref.html).
 
+[This StackOverflow entry](https://stackoverflow.com/questions/2746692/restructuredtext-tool-support) list the tools avaialble to work with ResStructuredText files.
+
 ### Sphinx Framework
 
 The Python based Sphinx documentation generator translates a set of reStructuredText source files into various output formats,
