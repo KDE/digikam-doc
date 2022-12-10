@@ -101,6 +101,14 @@ A good place to learn **ReStructuredText** format used in this documentation, it
 - [Cheat-sheet](http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt).
 - [Reference]([http://docutils.sourceforge.net/docs/user/rst/quickref.html).
 
+### Sphinx Framework
+
+The Sphinx documentation generator translates a set of reStructuredText source files into various output formats,
+automatically producing cross-references, indices etc. It just used at run time with the **make** command to
+render contents, and check warnings/errors.
+
+Documentation writer will never touch the Sphix configuration.
+
 ### Contribute Workflow
 
 To help us to write this English documentation, you must use a standard git workflow based on the Fork/Merge Request mechanism.
