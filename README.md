@@ -103,11 +103,11 @@ A good place to learn **ReStructuredText** format used in this documentation, it
 
 ### Sphinx Framework
 
-The Sphinx documentation generator translates a set of reStructuredText source files into various output formats,
+The Python based Sphinx documentation generator translates a set of reStructuredText source files into various output formats,
 automatically producing cross-references, indices etc. It just used at run time with the **make** command to
 render contents, and check warnings/errors.
 
-Documentation writer will never touch the Sphix configuration.
+Documentation writer will never touch the Sphinx configuration.
 
 ### Contribute Workflow
 
