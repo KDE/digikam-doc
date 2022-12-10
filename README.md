@@ -95,7 +95,11 @@ and format them into various forms of program documentation.
 ReStructuredText is a lightweight markup language designed to be both processable by documentation-processing
 software such as Docutils, and easily readable by human programmers who are reading and writing Python source code.
 
-A good place to learn **ReStructuredText** format used in this documentation, it's recommend to read [this quick-start](https://docutils.sourceforge.io/docs/user/rst/quickstart.html).
+A good place to learn **ReStructuredText** format used in this documentation, it's recommended to read:
+
+- [Quick-start](https://docutils.sourceforge.io/docs/user/rst/quickstart.html).
+- [Cheat-sheet](http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt).
+- [Reference]([http://docutils.sourceforge.net/docs/user/rst/quickref.html).
 
 ### Contribute Workflow
 
