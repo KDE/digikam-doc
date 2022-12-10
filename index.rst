@@ -47,7 +47,11 @@ Supported Formats And Devices
 
     .. container:: tile no-descr
 
-        :ref:`file_formats`
+        :ref:`image_formats`
+
+    .. container:: tile no-descr
+
+        :ref:`movie_formats`
 
 .. toctree::
    :maxdepth: 2

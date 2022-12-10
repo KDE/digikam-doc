@@ -11,14 +11,14 @@
 .. _image_formats:
 
 Image Formats Supported
-======================
+=======================
 
 .. contents::
 
 Introduction
 ------------
 
-dgiKam relies on a number of libraries and support packages to load and save image formats. Which image formats are available will depend on the availability of these libraries on your system and, in some cases, on the way that those libraries have been compiled. On most distributions you will find that a wide range of image formats are viewable within digiKam.
+digiKam relies on a number of libraries and support packages to load and save image formats. Which image formats are available will depend on the availability of these libraries on your system and, in some cases, on the way that those libraries have been compiled. On most distributions you will find that a wide range of image formats are viewable within digiKam.
 
 This dependence on other libraries means that it is not possible to give a definitive list of all of the formats that will be available on your system. At the very least JPEG, PNG, and TIFF should be available.
 
