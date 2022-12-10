@@ -99,15 +99,15 @@ A good place to learn **ReStructuredText** format used in this documentation, it
 
 - [Quick-start](https://docutils.sourceforge.io/docs/user/rst/quickstart.html).
 - [Cheat-sheet](http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt).
-- [Reference]([http://docutils.sourceforge.net/docs/user/rst/quickref.html).
+- [Reference](http://docutils.sourceforge.net/docs/user/rst/quickref.html).
 
 [This StackOverflow entry](https://stackoverflow.com/questions/2746692/restructuredtext-tool-support) list the tools avaialble to work with ResStructuredText files.
 
 ### Sphinx Framework
 
 The Python based Sphinx documentation generator translates a set of reStructuredText source files into various output formats,
-automatically producing cross-references, indices etc. It just used at run time with the **make** command to
-render contents, and check warnings/errors.
+automatically producing cross-references, indices etc. It just used at run-time with the **make** command to
+render contents, and reports warnings/errors.
 
 Documentation writer will never touch the Sphinx configuration.
 
@@ -172,12 +172,13 @@ find *.png | xargs -0 ./optpng.sh
 ### Translations
 
 The documentations are internationalized by KDE translator teams. In this repository, only the native English
-version is maintained and text is written in the DocBook container. These files are parsed daily by scripts which
-extract strings to translate. Contents are finaly exported to dedicated containers for translators.
+version is maintained and text is written in ReStructuredText containers. These files are parsed daily by
+maintenance scripts which extract strings to translate. Processed contents are exported to dedicated
+containers for translators.
 
-When translations are updated by the translator teams, files are re-injected back by other scripts to this project,
-in order to compile internationalized versions of ReStructured files. These files are linked in po/ sub-directories from
-this project for future conversion to HTML/EPUB or for packaging.
+When translations are updated by the translator teams, files are send back by other maintenance scripts to this project,
+in order to compile internationalized versions of ReStructuredText files. These files are linked in po/ sub-directories
+from this project for conversion to HTML/EPUB.
 
 This project is not involved in the translation workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
 if you want to contribute to the internationalization.
