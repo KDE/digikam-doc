@@ -55,7 +55,7 @@ PNG is an extensible file format for the lossless, portable, well-compressed sto
 PGF
 ---
 
-"Progressive Graphics File" is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited to the web but at the moment few browsers can display it. For more information about the PGF format `see the libPGF homepage <https://www.libpgf.org/>`_.
+"Progressive Graphics File" is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited for photo archiving (digiKam uses this format in database to store thumbnails). For more information about the PGF format `see the libPGF homepage <https://www.libpgf.org/>`_.
 
 RAW
 ---
