@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
- # SPDX-License-Identifier: BSD-3-Clause
+# SPDX-License-Identifier: BSD-3-Clause
 
 EXPORTS_POT_DIR=1
 FILE_PREFIX=docs_digikam_org_
