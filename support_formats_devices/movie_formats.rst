@@ -10,8 +10,8 @@
 
 .. _movie_formats:
 
-Movie Formats Supported
-=======================
+Movie Files
+===========
 
 .. contents::
 

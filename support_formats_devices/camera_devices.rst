@@ -10,8 +10,8 @@
 
 .. _camera_devices:
 
-Camera Devices Supported
-========================
+Camera Devices
+==============
 
 .. contents::
 

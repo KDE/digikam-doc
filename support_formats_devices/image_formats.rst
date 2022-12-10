@@ -10,8 +10,8 @@
 
 .. _image_formats:
 
-Image Formats Supported
-=======================
+Image Files
+===========
 
 .. contents::
 
