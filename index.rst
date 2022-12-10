@@ -53,6 +53,10 @@ Supported Formats And Devices
 
         :ref:`movie_formats`
 
+    .. container:: tile no-descr
+
+        :ref:`camera_devices`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

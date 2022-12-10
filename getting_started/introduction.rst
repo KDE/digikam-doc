@@ -42,7 +42,7 @@ digiKam is a community supported project, which means that users and developers 
 
 `digiKam Users Mailing List joining instructions <https://mail.kde.org/mailman/listinfo/digikam-users>`_.
 
-You can also visit the `digiKam Home Page <https://www.digikam.org/>`_  for news of new releases and other digiKam related information.
+You can also visit the `digiKam Home Page <https://www.digikam.org/>`_ for news of new releases and other digiKam related information.
 
 Getting Involved
 ----------------
