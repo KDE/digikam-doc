@@ -169,6 +169,13 @@ To process all png files in one step use this command line from the root directo
 find *.png | xargs -0 ./optpng.sh
 ```
 
+### Gif Animations
+
+Another format supported inside the documentation is animated Gif. It can be used to present a region of screen
+from the application while an operation is under progress. It's perfect to write tutorials.
+
+A good tool to capture video from desktop is [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
+
 ### Translations
 
 The documentations are internationalized by KDE translator teams. In this repository, only the native English
