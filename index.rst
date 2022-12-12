@@ -33,6 +33,10 @@ Getting started
 
         :ref:`quick_start`
 
+    .. container:: tile no-descr
+
+        :ref:`database`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
