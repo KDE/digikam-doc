@@ -56,26 +56,26 @@ The window top shows the Menu Bar and the Main Toolbar below.
 
 .. figure:: images/using-mainwindow-toolbar.png
 
-    1. Open Image Editor with the selected image
+1. Open Image Editor with the selected image
 
-    2. Open Light Table (L)
+2. Open Light Table (L)
 
-    3. Open Batch Queue Manager (B)
+3. Open Batch Queue Manager (B)
 
-    4. Import (drop down menu showing all connected cameras and mass storage devices)
+4. Import (drop down menu showing all connected cameras and mass storage devices)
 
-    5. Switch to thumbnail view
+5. Switch to thumbnail view
 
-    6. Toggle preview of selected image
+6. Toggle preview of selected image
 
-    7. Switch to map view to display images with geolocation data
+7. Switch to map view to display images with geolocation data
 
-    8. Switch to configurable table view
+8. Switch to configurable table view
 
-    9. Slideshow drop down menu
+9. Slideshow drop down menu
 
-    10. Toggle Full Screen (Ctrl+Shift+F)
+10. Toggle Full Screen (Ctrl+Shift+F)
 
-    11. Link to digikam.org, also an indicator for ongoing processes
+11. Link to digikam.org, also an indicator for ongoing processes
 
 You can customize the Toolbar by choosing Settings → Configure Toolbars... or click with the right mouse button on it and choose Configure Toolbars... from the context menu.

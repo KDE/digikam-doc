@@ -85,6 +85,6 @@ The Main Window
    :maxdepth: 2
    :hidden:
 
-   support_formats_devices
+   main_window
 
 .. TODO Add more top level entries here...
