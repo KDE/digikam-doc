@@ -8,7 +8,7 @@
 
    :license: Creative Commons License SA 4.0
 
-.. _database:
+.. _database_intro:
 
 Database
 ========
@@ -27,6 +27,6 @@ The digiKam actually manages more than one database. For convenience, it is broa
 
     - Face database for storing face recognition metadata i.e. to host face histograms for faces recognition. 
 
-The whole details of database settings are mostly given in the **database setup section**.
+The whole details of database settings are mostly given in the :ref:`database setup section <using-setup-database>`.
 
-.. TODO Add link to setup database section
+.. TODO Check link to setup database section

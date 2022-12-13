@@ -20,9 +20,7 @@ Later on you can add as many locations as you like - digiKam will add them to th
 
 .. figure:: images/intro-firstrun-step2.png
 
-Then you have to specify a local folder that resides on your computer, in which the database will be stored. This path will be the same for all image folders. For details about the database type selection have a look at **The digiKam Database**. If you have a local installation and a collection of less than 30.000 photographs you may well keep the default setting (SQLite). 
-
-.. TODO Add link to digiKam database section
+Then you have to specify a local folder that resides on your computer, in which the database will be stored. This path will be the same for all image folders. For details about the database type selection have a look at :ref:`the digiKam Database <database_intro>`. If you have a local installation and a collection of less than 100.000 photographs you may well keep the default setting (SQLite).
 
 .. figure:: images/intro-firstrun-step3.png
 
@@ -61,14 +59,14 @@ Nothing really to select here. You can cancel or start the scan with Finish. Non
 
 As digiKam uses your folders on your hard disk directly, other applications like file managers can remove any albums outside a digiKam session. In this case digiKam will ask you at the next session whether all albums that have been removed from the digiKam photographs root path shall be deleted from albums database. If you want to move folders around and don't want to do that in digiKam, we suggest you do that while digiKam is running, so the database will be kept in sync and you do not lose any metadata.
 
-When you use an existing folder of photographs as the Album Library folder, you will notice that the Albums in the Album list do not have photographs as their icons. You can change that by dragging any photograph in the Album onto the folder icon in the left sidebar and use this as the Album icon. See **the Album section** for details of how to change the Album icon.
+When you use an existing folder of photographs as the Album Library folder, you will notice that the Albums in the Album list do not have photographs as their icons. You can change that by dragging any photograph in the Album onto the folder icon in the left sidebar and use this as the Album icon. See  :ref:`the Album section <using_mainwindow_albumsview>` for details of how to change the Album icon.
 
-.. TODO Add link to albums section
+.. TODO Check link to albums section
 
-digiKam uses a dedicated database to store thumbnails with an optimized wavelets compression algorithm (PGF). There is no way of hiding non-standard thumbnail folders from the “Albums” list. If you want to keep them you could create an Album Category that just contains all the thumbnail Folders and then view your Albums in View → Sort Albums → By Category order. See **the Album section** for more about Album Categories.
+digiKam uses a dedicated database to store thumbnails with an optimized wavelets compression algorithm (PGF). There is no way of hiding non-standard thumbnail folders from the “Albums” list. If you want to keep them you could create an Album Category that just contains all the thumbnail Folders and then view your Albums in View → Sort Albums → By Category order. See :ref:`the Album section <using_mainwindow_albumsview>` for more about Album Categories.
 
-.. TODO Add link to albums section
+.. TODO Check link to albums section
 
-Once you have configured the Album Library Folder you can set up digiKam to work with your digital camera and then learn how to use **Albums** and **Tags** to arrange your photograph Albums.
+Once you have configured the Album Library Folder you can set up digiKam to work with your digital camera and then learn how to use :ref:`the Album section <using_mainwindow_albumsview>` and :ref:`the Tags section <using_mainwindow_tagsview>` to arrange your photograph Albums.
 
-.. TODO Add link to albums and tags sections
+.. TODO Check link to albums and tags sections

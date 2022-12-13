@@ -35,7 +35,7 @@ Getting started
 
     .. container:: tile no-descr
 
-        :ref:`database`
+        :ref:`database_intro`
 
 .. toctree::
    :maxdepth: 2
