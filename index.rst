@@ -27,7 +27,7 @@ Getting started
 
     .. container:: tile no-descr
 
-        :ref:`Introduction`
+        :ref:`introduction_root`
 
     .. container:: tile no-descr
 
@@ -60,6 +60,26 @@ Supported Formats And Devices
     .. container:: tile no-descr
 
         :ref:`camera_devices`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   support_formats_devices
+
+###############
+The Main Window
+###############
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`interface_layout`
+
+    .. container:: tile no-descr
+
+        :ref:`image_area`
 
 .. toctree::
    :maxdepth: 2

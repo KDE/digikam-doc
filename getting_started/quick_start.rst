@@ -61,12 +61,6 @@ As digiKam uses your folders on your hard disk directly, other applications like
 
 When you use an existing folder of photographs as the Album Library folder, you will notice that the Albums in the Album list do not have photographs as their icons. You can change that by dragging any photograph in the Album onto the folder icon in the left sidebar and use this as the Album icon. See  :ref:`the Album section <using_mainwindow_albumsview>` for details of how to change the Album icon.
 
-.. TODO Check link to albums section
-
 digiKam uses a dedicated database to store thumbnails with an optimized wavelets compression algorithm (PGF). There is no way of hiding non-standard thumbnail folders from the “Albums” list. If you want to keep them you could create an Album Category that just contains all the thumbnail Folders and then view your Albums in View → Sort Albums → By Category order. See :ref:`the Album section <using_mainwindow_albumsview>` for more about Album Categories.
 
-.. TODO Check link to albums section
-
 Once you have configured the Album Library Folder you can set up digiKam to work with your digital camera and then learn how to use :ref:`the Album section <using_mainwindow_albumsview>` and :ref:`the Tags section <using_mainwindow_tagsview>` to arrange your photograph Albums.
-
-.. TODO Check link to albums and tags sections
