@@ -172,7 +172,11 @@ find *.png | xargs -0 ./optpng.sh
 ### Gif Animations
 
 Another format supported inside the documentation is animated Gif. It can be used to present a region of screen
-from the application while an operation is under progress. It's perfect to write tutorials.
+from the application while an operation is under progress. It's perfect to write tutorials. Animated Gif is also
+supported into EPUB container.
+
+To prevent huge Gif files, just capture the right area to present in application and limit capture to less than 10 seconds,
+with a frames rating set to 12 by seconds.
 
 A good tool to capture video from desktop is [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
 
