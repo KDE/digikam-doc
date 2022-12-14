@@ -21,4 +21,6 @@ An overview to start with digiKam.
    :caption: Contents:
    :glob:
 
-   getting_started/*
+   getting_started/introduction.rst
+   getting_started/quick_start.rst
+   getting_started/database_intro.rst

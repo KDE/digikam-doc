@@ -21,4 +21,5 @@ Using the digiKam main window
    :caption: Contents:
    :glob:
 
-   main_window/*
+   main_window/interface_layout.rst
+   main_window/image_area.rst

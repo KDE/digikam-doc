@@ -21,4 +21,6 @@ File formats and devices supported in digiKam
    :caption: Contents:
    :glob:
 
-   support_formats_devices/*
+   support_formats_devices/image_formats.rst
+   support_formats_devices/movie_formats.rst
+   support_formats_devices/camera_devices.rst 
