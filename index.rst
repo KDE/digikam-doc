@@ -43,9 +43,9 @@ Getting started
 
    getting_started
 
-#############################
-Supported Formats And Devices
-#############################
+###################
+Supported Materials
+###################
 
 .. container:: toctile
 
@@ -65,7 +65,7 @@ Supported Formats And Devices
    :maxdepth: 2
    :hidden:
 
-   support_formats_devices
+   supported_materials
 
 ###############
 The Main Window

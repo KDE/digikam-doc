@@ -8,11 +8,11 @@
 
    :license: Creative Commons License SA 4.0
 
-.. _support_formats_devices:
+.. _supported_materials:
 
-#############################
-Supported Formats And Devices
-#############################
+###################
+Supported Materials
+###################
 
 File formats and devices supported in digiKam
 
@@ -21,6 +21,6 @@ File formats and devices supported in digiKam
    :caption: Contents:
    :glob:
 
-   support_formats_devices/image_formats.rst
-   support_formats_devices/movie_formats.rst
-   support_formats_devices/camera_devices.rst 
+   supported_materials/image_formats.rst
+   supported_materials/movie_formats.rst
+   supported_materials/camera_devices.rst 
