@@ -97,6 +97,10 @@ The Main Window
 
         :ref:`similarity_view`
 
+    .. container:: tile no-descr
+
+        :ref:`map_view`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
