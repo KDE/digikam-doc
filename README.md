@@ -95,6 +95,9 @@ and format them into various forms of program documentation.
 ReStructuredText is a lightweight markup language designed to be both processable by documentation-processing
 software such as Docutils, and easily readable by human programmers who are reading and writing Python source code.
 
+Take a care that ReStructuredText is an indent featured markup language. respect well the spaces on front of blocks
+to prevent compilation warnings. Indent must be done with 4 spaces. Never use tabs at all.
+
 A good place to learn **ReStructuredText** format used in this documentation, it's recommended to read:
 
 - [Quick-start](https://docutils.sourceforge.io/docs/user/rst/quickstart.html).
