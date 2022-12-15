@@ -28,3 +28,4 @@ Using the digiKam main window
    main_window/labels_view.rst
    main_window/dates_view.rst
    main_window/timeline_view.rst
+   main_window/search_view.rst
