@@ -11,7 +11,7 @@
 .. _tags_view:
 
 Tags View
------------
+---------
 
 (Hierarchical) tagging provides a flexible and powerful way to organize and catalog your images. Tags (also called “keywords” in other applications) are labels that can be applied to individual images or whole groups. Once a tag has been set to an image the image can be found again by selecting the tag or doing a search.
 

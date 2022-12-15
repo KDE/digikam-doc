@@ -101,6 +101,10 @@ The Main Window
 
         :ref:`map_view`
 
+    .. container:: tile no-descr
+
+        :ref:`people_view`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

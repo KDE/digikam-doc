@@ -31,3 +31,4 @@ Using the digiKam main window
    main_window/search_view.rst
    main_window/similarity_view.rst
    main_window/map_view.rst
+   main_window/people_view.rst
