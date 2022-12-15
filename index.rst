@@ -83,7 +83,11 @@ The Main Window
 
     .. container:: tile no-descr
 
-        :ref:`albums_View`
+        :ref:`albums_view`
+
+    .. container:: tile no-descr
+
+        :ref:`tags_view`
 
 .. toctree::
    :maxdepth: 2

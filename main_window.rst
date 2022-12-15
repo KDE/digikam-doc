@@ -24,3 +24,4 @@ Using the digiKam main window
    main_window/interface_layout.rst
    main_window/image_area.rst
    main_window/albums_view.rst
+   main_window/tags_view.rst
