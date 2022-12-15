@@ -111,4 +111,20 @@ The Main Window
 
    main_window
 
+#################
+The Right Sidebar
+#################
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`sidebar_intro`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   right_sidebar
+
 .. TODO Add more top level entries here...
