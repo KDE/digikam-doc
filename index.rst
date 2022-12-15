@@ -81,6 +81,10 @@ The Main Window
 
         :ref:`image_area`
 
+    .. container:: tile no-descr
+
+        :ref:`albums_View`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

@@ -148,6 +148,8 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
 
 - No digiKam version number must be present in screeshots.
 
+- Desktop and application must be in English only. Do not mix languages.
+
 - Use a tool as [Spectacle](https://apps.kde.org/spectacle/) to take a shot. Use the region selection option to capture only important area.
 
 - Remove unecessary buttons and dialog header to limit image file size.
