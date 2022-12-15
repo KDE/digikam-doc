@@ -33,7 +33,7 @@ Usually you will begin searching for images by defining a region on the map. Fro
 
 The next button to the right is the Create-a-region-selection-from-a-thumbnail button which creates a small region around the position of a marker or thumbnail if you click on it. If there are other images hidden behind it because they have the same position or one very close to the image you click on they will be shown in the Image Area.
 
-The last button in this row is the Remove-the-current-region-selection button. Well, do I still have to explain that after all? O.k., I should mention that it, of course, only removes the selection, not your precious pics :-)
+The last button in this row is the Remove-the-current-region-selection button. Well, do I still have to explain that after all? O.k., I should mention that it, of course, only removes the selection, not your precious pics.
 
 Now let's have a look on the three buttons at the right end of the row right under the map. They control which images you see in the Image Area out of your defined region. Let's begin with the one at the very end of the row, the Select-images button. If you activate it, it will toggle the selection of a photograph (or a group of photographs if they are hidden behind each other) once you click on it on the map. This can be helpful to fine tune your selection before carrying out operations from the Right Sidebar or the menus.
 
