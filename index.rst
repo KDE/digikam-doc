@@ -119,7 +119,11 @@ The Right Sidebar
 
     .. container:: tile no-descr
 
-        :ref:`sidebar_intro`
+        :ref:`sidebar_overview`
+
+    .. container:: tile no-descr
+
+        :ref:`properties_view`
 
 .. toctree::
    :maxdepth: 2

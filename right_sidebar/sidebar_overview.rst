@@ -1,5 +1,5 @@
 .. meta::
-   :description: Introduction to digiKam Right Sidebar
+   :description: Overview to digiKam Right Sidebar
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
 
 .. metadata-placeholder
@@ -8,10 +8,10 @@
 
    :license: Creative Commons License SA 4.0
 
-.. _sidebar_intro:
+.. _sidebar_overview:
 
-Introduction
-============
+Overview
+========
 
 .. contents::
 

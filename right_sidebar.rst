@@ -21,4 +21,5 @@ Using the digiKam right sidebar
    :caption: Contents:
    :glob:
 
-   right_sidebar/sidebar_intro.rst
+   right_sidebar/sidebar_overview.rst
+   right_sidebar/properties_view.rst
