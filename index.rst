@@ -125,6 +125,10 @@ The Right Sidebar
 
         :ref:`properties_view`
 
+    .. container:: tile no-descr
+
+        :ref:`metadata_view`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
