@@ -35,6 +35,20 @@ Metadata, as shown in these four tabs, can be modified and enhanced in a number 
 
 .. figure:: images/using-sidebar-metadataexif.png
 
+For each metadata section, you can:
+
+    - Use different levels to display contents through the menu from the top/left button:
+
+        - No Filter: display all markers.
+        - Photograph: display only more important marker for photograph.
+        - Custom: a customized selection of marker set in configuration dialog (see Settings entry).
+
+    - Export contents through the menu from the top/right button:
+
+        - Copy to clipboard.
+        - Save to file.
+        - Print data.
+
 EXIF Tags
 ~~~~~~~~~
 
@@ -52,11 +66,6 @@ EXIF format contains a set of marker sections named Image File Directories (IFD)
 
 You can review embedded EXIF information for the selected image from the first sidebar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections. If there are more entries than space available, just scroll down with the mouse wheel.
 
-You can use two different levels to display EXIF marker sections:
-
-    - Simple: display only more important EXIF marker for photograph.
-
-    - Full: display all EXIF markers.
 
 Some vendors add additional EXIF sections, such as Canon, Fujifilm, Nikon, Minolta, and Sigma. These sections contain vendor and model specific notes. These will be displayed on the Makernote tab.
 
