@@ -35,15 +35,17 @@ Metadata, as shown in these four tabs, can be modified and enhanced in a number 
 
 .. figure:: images/using-sidebar-metadataexif.png
 
-For each metadata section, you can:
+For each metadata section, a bar is available on the top of view with:
 
-    - Use different levels to display contents through the menu from the top/left button:
+    - A menu from the left button to use different levels to display contents through :
 
         - No Filter: display all markers.
         - Photograph: display only more important marker for photograph.
         - Custom: a customized selection of marker set in configuration dialog (see Settings entry).
 
-    - Export contents through the menu from the top/right button:
+    - A text field to perform string search in contents.
+
+    - A menu from the right button to export contents:
 
         - Copy to clipboard.
         - Save to file.
