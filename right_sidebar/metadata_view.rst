@@ -17,11 +17,7 @@ Metadata View
 
 Metadata are data about the images or files, like technical data of camera setting during shooting, author info, copyrights, keywords, captions, and coordinates of location.
 
-The metadata sidebar is composed of four sub tabs EXIF, Makernote, IPTC and XMP data. On the left, two buttons let you choose between full and simplified data display. In the middle you will find a disk icon to save the metadata to the disk. Next to it are a printer and copy icon - they do just that: print or copy the respective tab metadata to the clipboard.
-
-A really nice feature is the live search box on the lower end of the metadata tabs. As you type in a keyword, the metadata on top of it will be successively filtered until you narrow down and what you are looking for. It is a quick way of accessing specific information.
-
-Metadata, as shown in these four tabs, can be modified and enhanced in a number of ways elsewhere:
+The metadata sidebar is composed of five sub tabs EXIF, Makernote, IPTC, XMP, and ExifTool. Metadata, as shown in these four tabs, can be modified and enhanced in a number of ways elsewhere:
 
     - With the camera interface.
 
@@ -43,13 +39,17 @@ For each metadata section, a bar is available on the top of view with:
         - Photograph: display only more important marker for photograph.
         - Custom: a customized selection of marker set in configuration dialog (see Settings entry).
 
-    - A text field to perform string search in contents.
+    - A really nice feature is the live search box on the middle end of bar. As you type in a keyword, the metadata on top of it will be successively filtered until you narrow down and what you are looking for. It is a quick way of accessing specific information.
 
     - A menu from the right button to export contents:
 
         - Copy to clipboard.
         - Save to file.
         - Print data.
+
+.. note::
+
+    The metadata view preverve the filter settings depending of the file selected. This allow to compare quickly metadata contents between items to identify the differences.
 
 EXIF Tags
 ~~~~~~~~~
@@ -67,7 +67,6 @@ EXIF format contains a set of marker sections named Image File Directories (IFD)
     - Interoperability: contains information to support interoperability between different EXIF implementations. 
 
 You can review embedded EXIF information for the selected image from the first sidebar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections. If there are more entries than space available, just scroll down with the mouse wheel.
-
 
 Some vendors add additional EXIF sections, such as Canon, Fujifilm, Nikon, Minolta, and Sigma. These sections contain vendor and model specific notes. These will be displayed on the Makernote tab.
 
