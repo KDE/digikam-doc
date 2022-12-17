@@ -25,3 +25,4 @@ Using the digiKam right sidebar
    right_sidebar/properties_view.rst
    right_sidebar/metadata_view.rst
    right_sidebar/colors_view.rst
+   right_sidebar/maps_view.rst
