@@ -15,7 +15,7 @@ Maps View
 
 .. contents::
 
- There are four tools regarding geolocation in digiKam and two in Showfoto:
+There are four tools regarding geolocation in digiKam and two in Showfoto:
 
     - The Map mode of the Image Area which displays images with GPS data on a map depending on the selection on the Left Sidebar, e.g. the images in the album you selected in the Album View, the images with a certain tag assigned (selected in the Tag View), with a certain label and so on. This is only available in digiKam.
 
@@ -28,7 +28,6 @@ Maps View
 All four are based on the Marble widget.
 
 This tab shows a map of orientation where you will find a marker or a thumbnail to indicate the GPS location of the selected image. The GPS coordinates and the time information are displayed below the widget. You can zoom in and out with the mouse wheel by either scrolling it or hold and drag it. Pan by holding down the left mouse button.
-
 
 .. figure:: images/using-sidebar-metadatagps.png
 
