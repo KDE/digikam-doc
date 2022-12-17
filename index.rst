@@ -141,6 +141,10 @@ The Right Sidebar
 
         :ref:`captions_view`
 
+    .. container:: tile no-descr
+
+        :ref:`versions_view`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
