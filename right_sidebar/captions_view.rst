@@ -55,8 +55,8 @@ The Rating section displays a 0...5 star rating scheme that can be used in searc
 
 The labels view allow to assign also the Color and the Pick tags that you can use in your workflow to classify items.
 
-Tag Tree
-~~~~~~~~
+Tags Tree
+~~~~~~~~~
 
 The tag view shows an adaptive filter tag search box, the tag tree and a combo-box containing the tags previously applied in this digiKam session.
 
