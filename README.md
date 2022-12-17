@@ -85,18 +85,19 @@ screen-shots, taken in PNG format. For example, the **getting_started** section 
 ### The ReStructuredText Format
 
 ReStructuredText is a simple file format for textual data used primarily in the Python programming language
-community for technical documentation. It can be edited with a simple Text Editor application as **Kate**
-featuring syntax highlighting help help documentation writers.
+community for technical documentation. It can be edited with a simple Text Editor application as
+[Kate](https://kate-editor.org/) featuring syntax highlighting to help documentation writers.
 
-ReStructuredText is part of the Docutils project of the Python Documentation Special Interest Group,
-aimed at creating a set of tools for Python. Docutils can extract comments and information from Python programs,
+ReStructuredText is part of the [Docutils project](https://docutils.sourceforge.io/) from the Python Documentation Special Interest Group,
+aimed at creating a set of tools for Python. Docutils can extract comments and information from programs,
 and format them into various forms of program documentation.
 
 ReStructuredText is a lightweight markup language designed to be both processable by documentation-processing
 software such as Docutils, and easily readable by human programmers who are reading and writing Python source code.
 
-Take a care that ReStructuredText is an indent featured markup language. respect well the spaces on front of blocks
-to prevent compilation warnings. Indent must be done with 4 spaces. Never use tabs at all.
+Take a care that ReStructuredText file (.rst) is an indent featured markup language. respect well the spaces on front of blocks
+to prevent compilation warnings. Indent must be done with **4 spaces**, never use tabs at all. Always save ResStructuredText
+file using **UNIX end-of-line**, check well your editor settings before.
 
 A good place to learn **ReStructuredText** format used in this documentation, it's recommended to read:
 
