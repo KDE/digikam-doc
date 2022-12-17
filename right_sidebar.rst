@@ -29,3 +29,4 @@ Using the digiKam right sidebar
    right_sidebar/captions_view.rst
    right_sidebar/versions_view.rst
    right_sidebar/filters_view.rst
+   right_sidebar/tools_view.rst

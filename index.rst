@@ -149,6 +149,10 @@ The Right Sidebar
 
         :ref:`filters_view`
 
+    .. container:: tile no-descr
+
+        :ref:`tools_view`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
