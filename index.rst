@@ -159,4 +159,20 @@ The Right Sidebar
 
    right_sidebar
 
+###############
+The Light Table
+###############
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`lighttable_overview`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   light_table
+
 .. TODO Add more top level entries here...
