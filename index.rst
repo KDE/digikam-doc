@@ -175,4 +175,20 @@ The Light Table
 
    light_table
 
+#######################
+The Batch Queue Manager
+#######################
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`batchqueue_overview`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   batch_queue
+
 .. TODO Add more top level entries here...
