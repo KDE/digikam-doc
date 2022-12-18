@@ -185,6 +185,10 @@ The Batch Queue Manager
 
         :ref:`batchqueue_overview`
 
+    .. container:: tile no-descr
+
+        :ref:`raw_converter`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
