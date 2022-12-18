@@ -195,4 +195,20 @@ The Batch Queue Manager
 
    batch_queue
 
+###############
+The Tag Manager
+###############
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`tagmanager_overview`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   tag_manager
+
 .. TODO Add more top level entries here...
