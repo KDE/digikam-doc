@@ -211,4 +211,20 @@ The Tag Manager
 
    tag_manager
 
+############################
+The Digital Asset Management
+############################
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`dam_overview`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   asset_management
+
 .. TODO Add more top level entries here...
