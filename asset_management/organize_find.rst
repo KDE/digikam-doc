@@ -10,8 +10,8 @@
 
 .. _organize_find:
 
-Build a System to Organize and Find Your Photographs
-====================================================
+Organize and Find
+=================
 
 .. contents::
 
