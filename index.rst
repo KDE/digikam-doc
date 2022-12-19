@@ -239,6 +239,12 @@ The Digital Asset Management
 
         :ref:`data_corruption`
 
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`dam_workflow`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

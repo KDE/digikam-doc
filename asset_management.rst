@@ -25,3 +25,4 @@ Using the digital asset management
    asset_management/organize_find.rst
    asset_management/authorship_copyright.rst
    asset_management/data_corruption.rst
+   asset_management/dam_workflow.rst
