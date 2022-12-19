@@ -227,6 +227,12 @@ The Digital Asset Management
 
         :ref:`organize_find`
 
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`authorship_copyright`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

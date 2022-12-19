@@ -23,3 +23,4 @@ Using the digital asset management
 
    asset_management/dam_overview.rst
    asset_management/organize_find.rst
+   asset_management/authorship_copyright.rst
