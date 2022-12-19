@@ -22,3 +22,4 @@ Using a Digital Camera With digiKam
    :glob:
 
    digital_camera/import_overview.rst
+   digital_camera/basic_import.rst
