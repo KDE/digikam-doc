@@ -221,6 +221,12 @@ The Digital Asset Management
 
         :ref:`dam_overview`
 
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`organize_find`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

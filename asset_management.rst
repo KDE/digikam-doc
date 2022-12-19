@@ -22,3 +22,4 @@ Using the digital asset management
    :glob:
 
    asset_management/dam_overview.rst
+   asset_management/organize_find.rst
