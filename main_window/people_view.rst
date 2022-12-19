@@ -67,3 +67,22 @@ Face Recognition is faster than Face Detection but it still makes sense to click
 In case of unsatisfying results it might be helpful to use Clear and rebuild all training data. One reason can be that there are too many face tags assigned to a person which shows this person in a way that doesn't really help the search algorithm, e.g. with sunglasses, blurred, unusual colors, carnival make up, dark shaded areas in the face, baby/kid/adult photographs mixed... Another reason to use that option can be false face recognition due to a wrong accuracy setting in the Parameters tab.
 
 To start the Face Recognition you click Scan. The process will tag every recognized face with the appropriate People tag out of your tag tree and the corresponding thumbnail will disappear from the "Unknown" tag selection.
+
+Manual Face tagging
+~~~~~~~~~~~~~~~~~~~
+
+digiKam allows for either manual face tagging.
+
+For more information about face tagging using digiKam's face recognition engine see The Face Management Tool.
+
+For tagging people manually, you can preview an image, click on Add a Face Tag icon or select option on context menu, as highlighted on the screenshot below.
+
+.. figure:: images/using-mainwindow-addfacetag.png
+
+And then draw a rectangle around the face while holding left mouse button followed by entering the person's name and pressing Enter.
+
+.. figure:: images/using-mainwindow-drawregion.png
+
+.. note::
+
+    Instead of clicking on Add a Face Tag icon you can draw a face region while holding Ctrl key.
