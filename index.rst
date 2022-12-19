@@ -233,6 +233,12 @@ The Digital Asset Management
 
         :ref:`authorship_copyright`
 
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`data_corruption`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
