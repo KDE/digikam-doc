@@ -251,4 +251,20 @@ The Digital Asset Management
 
    asset_management
 
+##############
+Digital Camera
+##############
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`import_overview`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   digital_camera
+
 .. TODO Add more top level entries here...

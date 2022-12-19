@@ -1,5 +1,5 @@
 .. meta::
-   :description: Using the digiKam light table
+   :description: Using a Digital Camera With digiKam
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
 
 .. metadata-placeholder
@@ -8,17 +8,17 @@
 
    :license: Creative Commons License SA 4.0
 
-.. _light_table:
+.. _digital_camera:
 
-###############
-The Light Table
-###############
+##############
+Digital Camera
+##############
 
-Using the digiKam light table
+Using a Digital Camera With digiKam
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
    :glob:
 
-   light_table/lighttable_overview.rst
+   digital_camera/import_overview.rst
