@@ -1,0 +1,18 @@
+.. meta::
+   :description: digiKam Collections Settings
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+
+.. metadata-placeholder
+
+   :authors: - Gilles Caulier <caulier dot gilles at gmail dot com>
+
+   :license: Creative Commons License SA 4.0
+
+.. _collections_settings:
+
+Collections Settings
+====================
+
+This view manages your Album Collections. Each Collection represents a root folder containing your photographs or videos. Usually the root folder will contain sub folders. All these folders we call Albums. How to work with them, create, delete, rename them etc. is described in detail in the Albums View section.
+
+.. figure:: images/setup_database_sqlite.png

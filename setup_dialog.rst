@@ -23,3 +23,5 @@ Using the digiKam setup dialog
 
    setup_dialog/config_overview.rst
    setup_dialog/database_settings.rst
+   setup_dialog/collections_settings.rst
+   setup_dialog/views_settings.rst
