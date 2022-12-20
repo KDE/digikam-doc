@@ -267,6 +267,12 @@ Digital Camera
 
         :ref:`basic_import`
 
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`advanced_import`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

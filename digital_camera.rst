@@ -23,3 +23,4 @@ Using a Digital Camera With digiKam
 
    digital_camera/import_overview.rst
    digital_camera/basic_import.rst
+   digital_camera/advanced_import.rst
