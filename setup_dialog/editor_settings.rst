@@ -85,7 +85,7 @@ A demosaicing algorithm is a digital image process used to interpolate a complet
 
 **Quality**: digiKam offer us three alternatives: bi-linear, VNG interpolation, AHD interpolation. It seems that AHD interpolation (for Adaptive Homogeneity-Directed) is the best choice for quality according to some test that I have performed and the paper of the person that implemented it. VNG interpolation (Variable Number of Gradients) was the first algorithm used by libraw but suffers from color artifacts on the edge. Bilinear is interesting if you are looking for speed with a acceptable result.
 
-**Pass**: Set here the passes used by the median filter applied after interpolation to Red-Green and Blue-Green channels. This setting is only available for specific Quality options: Bilinear, VNG, PPG, AHD, DCB, and VCD & AHD
+**Pass**: Set here the passes used by the median filter applied after interpolation to Red-Green and Blue-Green channels. This setting is only available for specific Quality options: Bilinear, VNG, PPG, AHD, DCB, and VCD & AHD.
 
 **Refine interpolation**: For DCB, turn on the enhance interpolated colors filter. For and VCD/AHD, turn on the enhanced effective color interpolation (EECI) refine to improve sharpness.
 
