@@ -22,3 +22,4 @@ Using the digiKam setup dialog
    :glob:
 
    setup_dialog/config_overview.rst
+   setup_dialog/database_settings.rst

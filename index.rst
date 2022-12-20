@@ -289,6 +289,12 @@ Setup Dialog
 
         :ref:`config_overview`
 
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`database_settings`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
