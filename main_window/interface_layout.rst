@@ -20,7 +20,7 @@ Areas and Bars
 
 digiKam's main window has two areas in the center showing your photographs. One is the Icon Area, showing thumbnails of the content of the selected album or of a search result, and the other one the Preview, showing the selected image. Together let's call them the Image Area. In the top left corner of the Preview we have a few buttons for moving back and forth through the content of the album, for rotating the image, for showing or adding face tags and to switch to full screen mode. By clicking on the preview you can make it disappear and by clicking on the picture area of a thumbnail open it again.
 
-.. figure:: images/using-mainwindow-iconview.png
+.. figure:: images/mainwindow_iconview.png
 
 The Image Area in the center is surrounded by the menu bar and the Main Toolbar at the top, the Status Bar at the bottom and the Left and Right Sidebar. The Left Sidebar lets you switch between nine “Views”: Albums (shown here), Tags, Labels, Dates, Timeline, Search, Fuzzy (Search), Map and People (Tags). The Right Sidebar can be used to show all information about your images and partly also to edit them. You can use all these views to organize and find your photographs. If you click on one of the buttons on the sidebars there will fold out another area, offering possibilities to select, to make inputs, e.g. for searches, to edit data and to show information.
 
@@ -56,7 +56,7 @@ Main Toolbar
 
 The window top shows the Menu Bar and the Main Toolbar below.
 
-.. figure:: images/using-mainwindow-toolbar.png
+.. figure:: images/mainwindow_toolbar.png
 
 1. Open Image Editor with the selected image
 

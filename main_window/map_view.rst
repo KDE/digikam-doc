@@ -25,7 +25,7 @@ Map View
 
 All four are based on the Marble widget.
 
-.. figure:: images/using-mainwindow-mapsearch.png
+.. figure:: images/mainwindow_mapsearch.png
 
 For navigating on the map refer to Marble handbook, Chapter 2. The meaning of “GPS” and functions and buttons that apply to all three geolocation parts are described in the Geolocation Editor chapter of this handbook. This applies to the context menu on the map and the first line of buttons under the map except the last three. The designations I use here for the buttons is the content of the respective tooltip.
 

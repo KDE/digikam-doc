@@ -90,5 +90,5 @@ RDC                     Ricoh RAW format
 
 If you want to know if your camera RAW file is supported by digiKam, go to `Help --> Supported RAW Cameras` dialog for details.
 
-.. figure:: images/formats-raw-cameras.png
+.. figure:: images/raw_cameras.png
 

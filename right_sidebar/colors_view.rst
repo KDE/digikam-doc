@@ -24,7 +24,7 @@ The histogram for an image shows the amount of each color that is present and th
 
 The Histogram Viewer shows the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram based color correction, use for example Color Balance, Levels Adjust or Curves Adjust in the Image Editor.
 
-.. figure:: images/using-sidebar-histogramview.png
+.. figure:: images/sidebar_histogramview.png
 
 An image can be decomposed into **Red**, **Green** and **Blue** color channels. **Alpha** channel is a Layer in the image that supports transparency (like PNG or GIF images). Each channel supports a range of intensity levels from 0 to 255 (integer valued). Thus, a black pixel is encoded by 0 on all color channels; a white pixel by 255 on all color channels. A transparent pixel is encoded by 0 on the alpha channel; an opaque pixel by 255.
 
@@ -77,21 +77,21 @@ Histograms are a graphical means to assess the accuracy of an image shown on the
 
     (3) : the highlights-tone on the right.
 
-.. figure:: images/using-sidebar-histogramdescription.png
+.. figure:: images/sidebar_histogramdescription.png
 
 The distribution of the graph, where the spikes and bulges are clustered, indicates whether the image is too dark, too bright, or well-balanced.
 
 With an under exposed photograph, the histogram will have a distribution of brightness that tends to be mostly on the left of the graph.
 
-.. figure:: images/using-sidebar-histogramsample1.png
+.. figure:: images/sidebar_histogramsample1.png
 
 With an over exposed photograph, the histogram will have the bulge showing the brightness distributed mostly towards the right of the graph.
 
-.. figure:: images/using-sidebar-histogramsample2.png
+.. figure:: images/sidebar_histogramsample2.png
 
 With a correctly exposed photograph, the histogram will have a distribution of brightness that will be most prominent near the center part of the graph.
 
-.. figure:: images/using-sidebar-histogramsample3.png
+.. figure:: images/sidebar_histogramsample3.png
 
 .. important:: Not all photographs have to exhibit this bulge in the center part of their histogram. Much depends on the subject of the photograph. In some cases, it might be appropriate for the histogram to show a peak at one end or the other, or both.
 
@@ -104,4 +104,4 @@ An ICC profile is a set of data that characterizes a color input or output devic
 
 Every files used to store captured image can be profiled. Camera manufacturers provide profiles for their products, and store them in image file as extra metadata. This ICC Profile viewer allows to display the textual information and a flat graph of color space.
 
-.. figure:: images/using-sidebar-iccprofileviewer.png
+.. figure:: images/sidebar_iccprofileviewer.png

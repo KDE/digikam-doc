@@ -13,7 +13,7 @@
 Albums View
 -----------
 
-.. figure:: images/using-mainwindow-albumsview.png
+.. figure:: images/mainwindow_albumsview.png
 
  By clicking the “Albums” button on the left side bar you toggle the “Albums” tree which provides an organized view of your photograph albums. The top item “Albums” just shows the “welcome to digiKam” screen in the view area. The next level of the “Albums” tree shows your different Collections  or at least one if you haven't added one or more yet in the Settings → Configure digiKam... Collections section. Each Collection represents a folder branch on your hard disk, on removable media or on network shares and the next levels in the tree show the structure of those folders, here called “Albums”. The albums can be sorted by their folder layout on the hard disk, by the Category that has been set in the Album Properties or by the Date of that Albums (this date can also be changed in the Properties of each Album). You can invert the sort order (ascending/descending) by clicking on the title bar of the album tree.
 
@@ -48,7 +48,7 @@ Managing Albums
 
 Album Properties can help you remember which kind of photographs are in an Album and can also help you to organize the “Albums” tree. To access the Album Properties, click with the right mouse button on an Album and select Properties (Alt+Enter) from the context menu.
 
-.. figure:: images/using-mainwindow-albumproperties.png
+.. figure:: images/mainwindow_albumproperties.png
 
 The Album Properties dialog allows you to set:
 

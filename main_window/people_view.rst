@@ -32,12 +32,12 @@ For the task we are talking about you check Detect faces, of course. Since face 
 
 Once you have chosen your options carefully you click Scan and after a while, depending on the scope of your selection, the result will be presented in the Image Area. In the Tags list of the Left Sidebar you will see the People branch of your tag tree. You will see the whole scan result only if the topmost tag “People” is selected. In the tree you will see a new virtual tag called “Unknown” which will show all those images where faces are recognized but not yet connected to a person. If you just scanned for the first time you will find the whole result also here. 
 
-.. figure:: images/using-mainwindow-facedetection.png
+.. figure:: images/mainwindow_facedetection.png
             :alt: Face Detection result
 
 Note that the thumbnails presented here are not showing the whole image. They show the area of the image where the scan algorithm put down a Face Tag. You can see that if you click on the thumbnail. In the preview that opens you will see the whole image with all the face tags on them. If you don't see them, click the people button in the upper left corner of the preview. If there is more than one face tag on the image it will also be represented by more than one thumbnail. In the screenshot above this is the case with the two topmost thumbnails.
 
-.. figure:: images/using-mainwindow-facetagedit.png
+.. figure:: images/mainwindow_facetagedit.png
 
 This screenshot image have been chosen because it shows one important issue: the algorithm will find inevitably details in an image that resemble a face but are actually something else. That's what the Remove button is for. It will remove the face tag from the photograph and if it is the only face tag (left) the photograph will disappear from the scan result.
 
@@ -77,11 +77,11 @@ For more information about face tagging using digiKam's face recognition engine 
 
 For tagging people manually, you can preview an image, click on Add a Face Tag icon or select option on context menu, as highlighted on the screenshot below.
 
-.. figure:: images/using-mainwindow-addfacetag.png
+.. figure:: images/mainwindow_addfacetag.png
 
 And then draw a rectangle around the face while holding left mouse button followed by entering the person's name and pressing Enter.
 
-.. figure:: images/using-mainwindow-drawregion.png
+.. figure:: images/mainwindow_drawregion.png
 
 .. note::
 

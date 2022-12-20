@@ -15,14 +15,14 @@ Basic Import
 
 .. contents::
 
-.. figure:: images/using-camera-maininterface.png
+.. figure:: images/camera_maininterface.png
 
 Getting information about the photographs
 -----------------------------------------
 
 Before downloading photographs to your computer, you may wish to see the camera item information. Using the Properties and Metadata tabs on the Right Sidebar will launch camera and photograph properties and metadata information.
 
-.. figure:: images/using-camera-itemproperties.png
+.. figure:: images/camera_itemproperties.png
 
 The Item Properties Sidebar Tab
 -------------------------------
@@ -51,8 +51,6 @@ Uploading Photographs to your camera
 To upload photographs from your computer to your camera click Item → Upload... (Ctrl+U) in the Import Interface menu. A standard file selection dialog will appear to select the files from your computer for copying to your camera. You can select more than one file using the standard selection methods.
 
 When images selection is done, digiKam will ask you to where you want to upload the files on your camera. A camera folder selection dialog will appear. Just select one folder and press OK to start uploading. No images will be removed from your computer.
-
-.. figure:: images/using-camera-folderselectiondialog.png
 
 .. note::
 

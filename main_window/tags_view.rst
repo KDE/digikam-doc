@@ -17,7 +17,7 @@ Tags View
 
 Tags can be arranged in a hierarchical tree. This allows you to organize your tags in a logical manner. You can collapse parts of the tree in the “Tags” list so that you can easily find the tags that you are looking for. 
 
-.. figure:: images/using-mainwindow-tagsview.png
+.. figure:: images/mainwindow_tagsview.png
 
 When a tag is selected in the Left Sidebar, all of the images that are marked with that tag are displayed in the View Area.
 
@@ -78,7 +78,7 @@ Context menu: by clicking with the right mouse button on the selected photograph
 
 When you delete an Album from digiKam it will be moved into the internal Trash Can. As an option you could change this behavior, so that delete really will remove the Album and all of the photographs in it. This can be changed by selecting Settings → Configure digiKam... and selecting the Miscellaneous page. At the top of this page are the settings that control what happens when a photograph is deleted. To delete an Album, click with the right mouse button over the Album in the “Albums” tree and select Delete Album from the context menu.
 
-.. figure:: images/using-mainwindow-assigntags.png
+.. figure:: images/mainwindow_assigntags.png
             :alt: Tagging Image with context menu
 
 You can remove a tag from a photograph by clicking with the right mouse button on the photograph and using the Remove Tag menu. This menu will only show those tags that have been set on this photograph.

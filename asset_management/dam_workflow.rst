@@ -33,4 +33,4 @@ DAM Workflow
 
 - Protect processed images for copyrights with Digital Watermarking. Export to web galleries, slide shows, MPEG encode, contact sheets, printing etc.
 
-.. figure:: images/using-dam-workflow.png
+.. figure:: images/dam_workflow.png

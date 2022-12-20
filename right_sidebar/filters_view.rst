@@ -25,7 +25,7 @@ On the other hand the tags in the tag filter and the individual labels within on
 
 Another use of this tab of the Right Sidebar is drag-and-drop tagging. Lets say you chose with the help of the Left Sidebar a number of images to tag them and they are now displayed in the Image Area. If the tag already exists, simply drag it from the Right Sidebar onto one of the icons. A dialog will pop-up and ask if this tag should be applied to this item only, to all items or, if there is more than one icon selected (highlighted), to the selected items.
 
-.. figure:: images/using-sidebar-filters.png
+.. figure:: images/sidebar_filters.png
 
 In the above example the main window shows the images from a calendar date, the tag filter is set to 'Oldtimer', which reduces the set to 3 images. In the Text Filter I typed “Funeral” which leaves only one picture of the only funeral car oldtimer in my collections. Then a tag is dragged from the Tag Filter over the icon and dropped. A pop-up dialog asks if the tag shall be applied to this item only or to all (displayed) items.
 
