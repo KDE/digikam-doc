@@ -296,6 +296,10 @@ Setup Dialog
 
         :ref:`metadata_settings`
 
+    .. container:: tile no-descr
+
+        :ref:`templates_settings`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

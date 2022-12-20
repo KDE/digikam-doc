@@ -27,3 +27,4 @@ Using the digiKam setup dialog
    setup_dialog/views_settings.rst
    setup_dialog/tooltip_settings.rst
    setup_dialog/metadata_settings.rst
+   setup_dialog/templates_settings.rst
