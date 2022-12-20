@@ -312,6 +312,10 @@ Setup Dialog
 
         :ref:`lighttable_settings`
 
+    .. container:: tile no-descr
+
+        :ref:`imgqsort_settings`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
