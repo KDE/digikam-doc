@@ -307,6 +307,12 @@ Setup Dialog
 
         :ref:`views_settings`
 
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`tooltip_settings`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

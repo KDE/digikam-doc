@@ -25,3 +25,4 @@ Using the digiKam setup dialog
    setup_dialog/database_settings.rst
    setup_dialog/collections_settings.rst
    setup_dialog/views_settings.rst
+   setup_dialog/tooltip_settings.rst
