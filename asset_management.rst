@@ -10,9 +10,9 @@
 
 .. _asset_management:
 
-######################
-The Digital Management
-######################
+#######
+The DAM
+#######
 
 Using the digital asset management
 
