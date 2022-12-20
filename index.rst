@@ -308,6 +308,10 @@ Setup Dialog
 
         :ref:`cm_settings`
 
+    .. container:: tile no-descr
+
+        :ref:`lighttable_settings`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
