@@ -90,7 +90,7 @@ Internal server uses two MySQL Binary Tools - mysql_install_db and mysqld. You c
 .. figure:: images/setup_database_mysqlinternal.png
 
 The MySQL Remote Server
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Obviously, to use digiKam with a remote MySQL, you would require a MySQL server. Or, you could also install MariaDB, which serves the purpose well. (Could be installed easily using this link.)
 
