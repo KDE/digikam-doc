@@ -56,8 +56,8 @@ In the third field you decide on which occasions you want the editor to save int
 
 In the last field you can adjust whether you want only the last version to be shown in the Image View (default, none of the boxes checked) or if you also want to see icons of the original version and/or intermediate steps.
 
-RAW Decoding Settings
----------------------
+RAW Behavior
+------------
 
 In the early versions of digiKam the Image Editor was just a viewer for photographs, but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you to control how the Image Editor will behave when opening RAW files.
 
