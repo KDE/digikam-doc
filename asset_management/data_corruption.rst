@@ -187,7 +187,7 @@ Panic is a factor in data loss
 
 Human error, as in everything, is a major problem in data loss. Take a deep breath and stop! Panic is a common reaction, and people do really stupid things. Experienced users will pull the wrong drive from a RAID array or reformat a drive, destroying all their information. Acting without thinking is dangerous to your data. Stop stressing about the loss and don’t do anything to the disk. Better yet, stop using the computer until you have a plan. Sit down and explain you plan to a laymen or better, laywoman. You will be amazed how many stupid ideas you'll discover yourself in such an exercise.
 
-If your disk is making weird noises, normal file recovery software isn’t going to work. Do a quick backup if that is going to happen to you. If the drive is still spinning and you can’t find your data, look for a data recovery utility and backup to another computer or drive. (Non-Linux® users: Google for "free data recovery software" for some options, including one from Ontrack). The important thing is to download them onto another drive, either on another computer, or onto a USB thumb drive or hard disk. It is good practice to save the recovered data to another disk. dd is your friend on *nix systems.
+If your disk is making weird noises, normal file recovery software isn’t going to work. Do a quick backup if that is going to happen to you. If the drive is still spinning and you can’t find your data, look for a data recovery utility and backup to another computer or drive. (Non-Linux users: Google for **free data recovery software** for some options, including one from Ontrack). The important thing is to download them onto another drive, either on another computer, or onto a USB thumb drive or hard disk. It is good practice to save the recovered data to another disk. dd is your friend on Linux systems.
 
 Common myths dispelled
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -297,7 +297,7 @@ Scalability
 
 Scalability is the tech-geek expression of the (easy) capability of a system to be resized, which always means up-sized.
 
-Lets assume you planned for scalability and dedicated the container you want to increase to a separate disk or partition. On *nix systems like Linux® you then can copy and resize the container to the new disk.
+Lets assume you planned for scalability and dedicated the container you want to increase to a separate disk or partition. On Linux system you then can copy and resize the container to the new disk.
 
 Use open, non-proprietary standards as file formats
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

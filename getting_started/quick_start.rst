@@ -39,7 +39,7 @@ Then choose how digiKam will load images in preview mode and light table. Reduce
 
 Now decide how digiKam will open images with a click of the right mouse button. Previews will load faster but you won't be able to make any corrections.
 
-.. figure:: images/firstrun=_step7.png
+.. figure:: images/firstrun_step7.png
 
 Tooltips are a fast and easy way to display important information about a photograph, they popup as the mouse hovers over a thumbnail. Select "Use tooltips" if you want to display them.
 
