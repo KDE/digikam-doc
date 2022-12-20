@@ -279,4 +279,20 @@ Digital Camera
 
    digital_camera
 
+############
+Setup Dialog
+############
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`config_overview`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   setup_dialog
+
 .. TODO Add more top level entries here...
