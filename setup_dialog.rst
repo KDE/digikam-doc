@@ -29,3 +29,4 @@ Using the digiKam setup dialog
    setup_dialog/metadata_settings.rst
    setup_dialog/templates_settings.rst
    setup_dialog/editor_settings.rst
+   setup_dialog/cm_settings.rst

@@ -13,6 +13,8 @@
 Views Settings
 ==============
 
+.. contents::
+
 In a number of tabs you can access the following groups of settings for the Views of digiKam (Albums, Tags, Labels, ...):
 
 Icon Settings

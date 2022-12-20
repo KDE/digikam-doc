@@ -13,6 +13,8 @@
 Templates Settings
 ==================
 
+.. contents::
+
 The Metadata Templates Manager is meant to create and manage metadata templates which can be used in:
 
     - The Information tab of the Captions view of the Right Sidebar

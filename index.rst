@@ -304,6 +304,10 @@ Setup Dialog
 
         :ref:`editor_settings`
 
+    .. container:: tile no-descr
+
+        :ref:`cm_settings`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

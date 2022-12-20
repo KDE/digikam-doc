@@ -13,6 +13,8 @@
 Tooltip Settings
 ================
 
+.. contents::
+
 This setup page covers all options of information appearing when the mouse hovers over a file icon in the Image Area. According to the checked options they will be shown or not.
 
 .. figure:: images/setup_tooltip.png

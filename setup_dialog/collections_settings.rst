@@ -13,6 +13,8 @@
 Collections Settings
 ====================
 
+.. contents::
+
 This view manages your Album Collections. Each Collection represents a root folder containing your photographs or videos. Usually the root folder will contain sub folders. All these folders we call Albums. How to work with them, create, delete, rename them etc. is described in detail in the Albums View section.
 
 .. figure:: images/setup_collections.png

@@ -13,6 +13,8 @@
 Metadata Settings
 =================
 
+.. contents::
+
 Image files can have some metadata embedded into the image file format. These metadata can be stored in a number of standard formats as JPEG, TIFF, PNG, JPEG2000, PGF, and RAW files. Metadata can be read and written in the EXIF, IPTC, and XMP formats if they are present in the file.
 
 Behavior Settings

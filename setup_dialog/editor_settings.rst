@@ -13,6 +13,8 @@
 Image Editor Settings
 =====================
 
+.. contents::
+
 Editor Window Settings
 ----------------------
 
