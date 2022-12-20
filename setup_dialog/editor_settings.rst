@@ -48,7 +48,7 @@ Non-Destructive Editing and Versioning gives you the freedom of editing your ima
 
 In the checkbox at the top you can enable or disable Non-Destructive Editing and Versioning.
 
-In the first field you can choose the file format used for saving the intermediate steps and the final result. Remember that JPEG - like in the screenshot above - is a lossy format. So if you need to start over from an intermediate step it wouldn't be really non-destructive. If you can afford it in terms of space on the harddisk and loading/saving speed you better choose a lossless format like PNG or PCF for instance. Please click the information button on the right side for more detailed information.
+In the first field you can choose the file format used for saving the intermediate steps and the final result. Remember that JPEG - like in the screenshot above - is a lossy format. So if you need to start over from an intermediate step it wouldn't be really non-destructive. If you can afford it in terms of space on the harddisk and loading/saving speed you better choose a lossless format like PNG or PGF for instance. Please click the information button on the right side for more detailed information.
 
 In the next field you can decide whether the editor will save changes automatically on exit or should ask first.
 
@@ -74,35 +74,40 @@ RAW Default Settings
 
 .. figure:: images/setup_editor_raw_settings.png
 
-**Demosaicing**: A demosaicing algorithm is a digital image process used to interpolate a complete image from the partial raw data received from the color-filtered image sensor internal to many digital cameras in form of a matrix of colored pixels. Also known as CFA interpolation or color reconstruction.
+Demosaicing
+~~~~~~~~~~~
+
+A demosaicing algorithm is a digital image process used to interpolate a complete image from the partial raw data received from the color-filtered image sensor internal to many digital cameras in form of a matrix of colored pixels. Also known as CFA interpolation or color reconstruction.
 
 **Interpolate RGB as four colors**: The default is to assume that all green pixels are the same. If even-row green pixels of the CCD sensor are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail. To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method.
 
-**Do not stretch or rotate pixels**: TODO
+**Do not stretch or rotate pixels**: For Fuji Super CCD cameras, show the image tilted 45 degrees. For cameras with non-square pixels, do not stretch the image to its correct aspect ratio. In any case, this option guarantees that each output pixel corresponds to one RAW pixel.
 
-**Quality**: digiKam offer us three alternatives: bi-linear, VNG interpolation, AHD interpolation. It seems that AHD interpolation (for Adaptive Homogeneity-Directed) is the best choice for quality according to some test that I have performed and the paper of the person that implemented it. VNG interpolation (Variable Number of Gradients) was the first algorithm used by Dcraw but suffers from color artifacts on the edge. Bilinear is interesting if you are looking for speed with a acceptable result.
+**Quality**: digiKam offer us three alternatives: bi-linear, VNG interpolation, AHD interpolation. It seems that AHD interpolation (for Adaptive Homogeneity-Directed) is the best choice for quality according to some test that I have performed and the paper of the person that implemented it. VNG interpolation (Variable Number of Gradients) was the first algorithm used by libraw but suffers from color artifacts on the edge. Bilinear is interesting if you are looking for speed with a acceptable result.
 
-**Pass**: TODO
+**Pass**: Set here the passes used by the median filter applied after interpolation to Red-Green and Blue-Green channels. This setting is only available for specific Quality options: Bilinear, VNG, PPG, AHD, DCB, and VCD & AHD
 
-**Refine interpolation**: This option is available only for DCB and VCD/AHD. TODO
+**Refine interpolation**: For DCB, turn on the enhance interpolated colors filter. For and VCD/AHD, turn on the enhanced effective color interpolation (EECI) refine to improve sharpness.
 
-**White Balance**:
+White Balance
+~~~~~~~~~~~~~
 
-    - Method: Four options are available here: Default D65, Camera, Automatic and Manual. “Default D65” reflects normal daylight conditions. “Camera” uses the camera's custom white-balance settings if set. ??? “Automatic” The default is to use a fixed color balance based on a white card photographed in sunlight. ??? “Manual” will adjust colors according to the T(K) (color temperature in degrees Kelvin) and Green settings. TODO
+**Method**: Four options are available here: Default D65, Camera, Automatic and Manual. “Default D65” reflects normal daylight conditions. “Camera” uses the camera's custom white-balance settings if set. “Automatic” The default is to use a fixed color balance based on a white card photographed in sunlight. “Manual” will adjust colors according to the T(K) (color temperature in degrees Kelvin) and Green settings.
 
-    - Highlights: This is the story of the three highlight options. Default is here to consider highlights (read: part of your images that are burned due to the inability of your camera to capture the highlights) as plain / solid white (solid white option). You can get some fancy results with the unclip option which will paint the highlights in various pinks. At last you can try to consider recovering some parts of the missing information from the highlights (reconstruct option). This is possible because the blue pixels tends to saturate less quickly than the greens and the reds. digiKam will try to reconstruct the missing green and red colors from the remaining none saturated blue pixels. Of course here everything is a question of tradeoff between how much color or white you want. If you select Reconstruct as the option, you will be given the choice to set a level. A value of 3 is a compromise and can/should be adapted on a per image basis.
+**Highlights**: This is the story of the three highlight options. Default is here to consider highlights (read: part of your images that are burned due to the inability of your camera to capture the highlights) as plain / solid white (solid white option). You can get some fancy results with the unclip option which will paint the highlights in various pinks. At last you can try to consider recovering some parts of the missing information from the highlights (reconstruct option). This is possible because the blue pixels tends to saturate less quickly than the greens and the reds. digiKam will try to reconstruct the missing green and red colors from the remaining none saturated blue pixels. Of course here everything is a question of tradeoff between how much color or white you want. If you select Reconstruct as the option, you will be given the choice to set a level. A value of 3 is a compromise and can/should be adapted on a per image basis.
 
 .. note::
 
     A small warning here, for the few curious that have read the man pages of Dcraw, the author says that 5 is the compromise, 0 is solid white and 1 unclip. This is because in digiKam 0 and 1 are the "solid white" and "unclip" options in the drop down menu (if you select these, the level slider will be grayed out). Therefore, the slider in digiKam with the "reconstruct" option will let you choose between 0 to 7 (instead of 0 to 9 in Dcraw command line) where 3 is the compromise instead of 5 in "native" Dcraw command line tool.
 
-**Exposure Correction (E.V)**: TODO
+**Exposure Correction (E.V)**: Turn on the exposure correction before interpolation.
 
-**Correct false colors in highlights**: TODO
+**Correct false colors in highlights**: If enabled, images with overblown channels are processed much more accurately, without 'pink clouds' (and blue highlights under tungsten lamps).
 
-**Auto Brightness**: TODO
+**Auto Brightness**: If disable, use a fixed white level and ignore the image histogram to adjust brightness.
 
 Corrections
+~~~~~~~~~~~
 
 **Noise Reduction**: While demosaicing your image you can additionally ask for noise reduction (at a slight speed penalty). This option applies a noise reduction algorithm while the image still is in CIE Lab color space. Because the noise is only applied to the Luminosity layer (the "L" of the Lab), it should not blur your image as traditional noise reduction algorithms do in RGB mode. So, if you converted an image from RAW and it appears noisy, rather than applying a denoiser, go back and re-convert with this option enabled. The defaults are: Threshold = 100. Higher values will increase the smoothing, lower will decrease smoothing.
 
