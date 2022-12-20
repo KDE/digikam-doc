@@ -95,9 +95,10 @@ and format them into various forms of program documentation.
 ReStructuredText is a lightweight markup language designed to be both processable by documentation-processing
 software such as Docutils, and easily readable by human programmers who are reading and writing Python source code.
 
-Take a care that ReStructuredText file (.rst) is an indent featured markup language. respect well the spaces on front of blocks
+Take a care that ReStructuredText file (.rst) is an indent featured markup language. Respect well the spaces on front of blocks
 to prevent compilation warnings. Indent must be done with **4 spaces**, never use tabs at all. Always save ResStructuredText
-file using **UNIX end-of-line**, check well your editor settings before.
+file using **UNIX end-of-line**, check well your editor settings before. Never use space or minus in file name, uses underscore instead.
+Never uses capitalized forms in filenames, always uses lowercase characters.
 
 A good place to learn **ReStructuredText** format used in this documentation, it's recommended to read:
 
