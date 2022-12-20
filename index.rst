@@ -221,25 +221,17 @@ The Digital Asset Management
 
         :ref:`dam_overview`
 
-.. container:: toctile
-
     .. container:: tile no-descr
 
         :ref:`organize_find`
-
-.. container:: toctile
 
     .. container:: tile no-descr
 
         :ref:`authorship_copyright`
 
-.. container:: toctile
-
     .. container:: tile no-descr
 
         :ref:`data_corruption`
-
-.. container:: toctile
 
     .. container:: tile no-descr
 
@@ -261,13 +253,9 @@ Digital Camera
 
         :ref:`import_overview`
 
-.. container:: toctile
-
     .. container:: tile no-descr
 
         :ref:`basic_import`
-
-.. container:: toctile
 
     .. container:: tile no-descr
 
@@ -289,31 +277,21 @@ Setup Dialog
 
         :ref:`config_overview`
 
-.. container:: toctile
-
     .. container:: tile no-descr
 
         :ref:`database_settings`
-
-.. container:: toctile
 
     .. container:: tile no-descr
 
         :ref:`collections_settings`
 
-.. container:: toctile
-
     .. container:: tile no-descr
 
         :ref:`views_settings`
 
-.. container:: toctile
-
     .. container:: tile no-descr
 
         :ref:`tooltip_settings`
-
-.. container:: toctile
 
     .. container:: tile no-descr
 
