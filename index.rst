@@ -8,14 +8,13 @@
 
    :license: Creative Commons License SA 4.0
 
-
 ###############
 digiKam Manual
 ###############
 
 Welcome to the manual for `digiKam <https://www.digikam.org>`_, the free and open source photo management program.
 
-The current digiKam version you get `here <https://www.digikam.org/download/>`_ .
+The current digiKam version you get `here <https://www.digikam.org/download/>`_.
 
 You can download this manual as an `EPUB <https://docs.digikam.org/en/epub/DigikamManual.epub>`_.
 
