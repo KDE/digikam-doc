@@ -20,7 +20,7 @@ Behavior Settings
 
 The Behavior tab allows you to select what information digiKam will write to the metadata and control how digiKam will deal with this embedded information.
 
-.. figure:: images/setup_metadata_behavior
+.. figure:: images/setup_metadata_behavior.png
 
 .. note::
 
@@ -31,7 +31,7 @@ Sidecars Settings
 
 The Sidecars tab allows user to control whether digiKam will read/write from/to XMP sidecars or not. Filename for the sidecars set to filename.ext.xmp. For example, image1.dng will have a sidecar file named image1.dng.xmp.
 
-.. figure:: images/setup_metadata_sidecars
+.. figure:: images/setup_metadata_sidecars.png
 
 .. note::
 
@@ -40,7 +40,7 @@ The Sidecars tab allows user to control whether digiKam will read/write from/to 
 Rotation Settings
 -----------------
 
-.. figure:: images/setup_metadata_rotation
+.. figure:: images/setup_metadata_rotation.png
 
 Show images/thumbnails rotated according to orientation tag : this will use any orientation information that your camera has included in the EXIF information to automatically rotate your photographs so that they are the correct way up when displayed. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can click with the right mouse button on the thumbnail and select Auto-rotate/flip according to EXIF orientation. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
 
@@ -51,12 +51,12 @@ Views Settings
 
 These settings allows to customize the metadata contents, in Exif, Makernotes, Iptc, XMP, and Exiftool views.
 
-.. figure:: images/setup_metadata_views
+.. figure:: images/setup_metadata_views.png
 
 Advanced Settings
 -----------------
 
 The Advanced tab allows you to manage namespaces used by digiKam to store and retrieve tags, ratings and comments. This functionality is often used by advanced users to synchronize metadata between different software. Please leave the default settings if you are not sure what to do here.
 
-.. figure:: images/setup_metadata_advanced
+.. figure:: images/setup_metadata_advanced.png
 
