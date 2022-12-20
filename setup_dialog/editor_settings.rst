@@ -1,0 +1,109 @@
+.. meta::
+   :description: digiKam Ilage Editor Settings
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+
+.. metadata-placeholder
+
+   :authors: - Gilles Caulier <caulier dot gilles at gmail dot com>
+
+   :license: Creative Commons License SA 4.0
+
+.. _editor_settings:
+
+Image Editor Settings
+=====================
+
+Editor Window Settings
+----------------------
+
+By default the Image Editor will use a black background behind photographs when they are displayed. If you prefer a different background color you can choose one here. You can also turn off the ToolBar when the Image Editor is in full screen mode.
+
+Over and underexposed areas of an image can be indicated by dark and light marker colors that can be defined here. In the editor this viewing mode can be switched on and off with F10 and F11 respectively. The thresholds for over- and under-exposure can be set by the adjustment bars "... percents". Check Indicate exposure as pure color if you want only pure black (RGB 0,0,0) indicated as under-exposure and only pure white (RGB 8 bit 255,255,255 respectively RGB 16 bit 65535, 65535, 65535) indicated as over-exposure.
+
+.. figure:: images/setup_editor_iface.png
+
+Save Image Options
+------------------
+
+When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the JPEG quality slider (1: low quality / 100: high quality and no compression). At the time of writing, metadata is supported.
+
+Chroma subsampling is the practice of encoding images by implementing more resolution for luminance information than for color information. Please read this Wikipedia article for a full explanation.
+
+.. figure:: images/setup_editor_save.png
+
+With PNG compression option, you can reduce PNG image files size. This operation does not reduce image quality because PNG uses a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value to use a high compression factor (1: low compression / 9: high compression). At the time of writing, metadata is supported.
+
+With Compress TIFF option, you can toggle to use Deflate compression algorithm with TIFF image files. This will reduce TIFF image files sizes. It has no image quality effect because Deflate is a lossless algorithm. At the time of writing, metadata is supported.
+
+With the LossLess JPEG 2000 files option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG. At the time of writing, metadata is supported.
+
+With the LossLess PGF files option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG-2000. At the time of writing, metadata is supported.
+
+Image Versioning Settings
+-------------------------
+
+Non-Destructive Editing and Versioning gives you the freedom of editing your images, trying out whatever you want without worrying that you might regret later what you did. digiKam takes care of the original and every important intermediate step if you want.
+
+.. figure:: images/setup_editor_version.png
+
+In the checkbox at the top you can enable or disable Non-Destructive Editing and Versioning.
+
+In the first field you can choose the file format used for saving the intermediate steps and the final result. Remember that JPEG - like in the screenshot above - is a lossy format. So if you need to start over from an intermediate step it wouldn't be really non-destructive. If you can afford it in terms of space on the harddisk and loading/saving speed you better choose a lossless format like PNG or PCF for instance. Please click the information button on the right side for more detailed information.
+
+In the next field you can decide whether the editor will save changes automatically on exit or should ask first.
+
+In the third field you decide on which occasions you want the editor to save intermediate steps. Please click the information button on the right side for more detailed information.
+
+In the last field you can adjust whether you want only the last version to be shown in the Image View (default, none of the boxes checked) or if you also want to see icons of the original version and/or intermediate steps.
+
+RAW Decoding Settings
+---------------------
+
+In the early versions of digiKam the Image Editor was just a viewer for photographs, but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you to control how the Image Editor will behave when opening RAW files.
+
+.. figure:: images/setup_editor_raw_behavior.png
+
+**Fast and simple, as 8 bit image**: RAW files will be decoded to 8-bit color depth with a BT.709 gamma curve and a 99th-percentile white point. This mode is faster than 16-bit decoding. In 8-bit mode only the Auto Brightness setting will be taken into account (dcraw limitation).
+
+**Use the default settings, in 16 bit**: If enabled, all RAW files will be decoded to 16-bit color depth using a linear gamma curve and according to the settings in the RAW Default Settings tab. To prevent dark image rendering in the editor, it is recommended to use Color Management in this mode.
+
+**Always open the Raw Import Tool to customize settings**: With this option checked the Raw Import Tool will open at the Right Side Bar in the Image Editor so that you can set individual parameters for every image you open.
+
+RAW Default Settings
+--------------------
+
+.. figure:: images/setup_editor_raw_settings.png
+
+**Demosaicing**: A demosaicing algorithm is a digital image process used to interpolate a complete image from the partial raw data received from the color-filtered image sensor internal to many digital cameras in form of a matrix of colored pixels. Also known as CFA interpolation or color reconstruction.
+
+**Interpolate RGB as four colors**: The default is to assume that all green pixels are the same. If even-row green pixels of the CCD sensor are more sensitive to ultraviolet light than odd-row this difference causes a mesh pattern in the output; using this option solves this problem with minimal loss of detail. To resume, this option blurs the image a little, but it eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD quality method.
+
+**Do not stretch or rotate pixels**: TODO
+
+**Quality**: digiKam offer us three alternatives: bi-linear, VNG interpolation, AHD interpolation. It seems that AHD interpolation (for Adaptive Homogeneity-Directed) is the best choice for quality according to some test that I have performed and the paper of the person that implemented it. VNG interpolation (Variable Number of Gradients) was the first algorithm used by Dcraw but suffers from color artifacts on the edge. Bilinear is interesting if you are looking for speed with a acceptable result.
+
+**Pass**: TODO
+
+**Refine interpolation**: This option is available only for DCB and VCD/AHD. TODO
+
+**White Balance**:
+
+    - Method: Four options are available here: Default D65, Camera, Automatic and Manual. “Default D65” reflects normal daylight conditions. “Camera” uses the camera's custom white-balance settings if set. ??? “Automatic” The default is to use a fixed color balance based on a white card photographed in sunlight. ??? “Manual” will adjust colors according to the T(K) (color temperature in degrees Kelvin) and Green settings. TODO
+
+    - Highlights: This is the story of the three highlight options. Default is here to consider highlights (read: part of your images that are burned due to the inability of your camera to capture the highlights) as plain / solid white (solid white option). You can get some fancy results with the unclip option which will paint the highlights in various pinks. At last you can try to consider recovering some parts of the missing information from the highlights (reconstruct option). This is possible because the blue pixels tends to saturate less quickly than the greens and the reds. digiKam will try to reconstruct the missing green and red colors from the remaining none saturated blue pixels. Of course here everything is a question of tradeoff between how much color or white you want. If you select Reconstruct as the option, you will be given the choice to set a level. A value of 3 is a compromise and can/should be adapted on a per image basis.
+
+.. note::
+
+    A small warning here, for the few curious that have read the man pages of Dcraw, the author says that 5 is the compromise, 0 is solid white and 1 unclip. This is because in digiKam 0 and 1 are the "solid white" and "unclip" options in the drop down menu (if you select these, the level slider will be grayed out). Therefore, the slider in digiKam with the "reconstruct" option will let you choose between 0 to 7 (instead of 0 to 9 in Dcraw command line) where 3 is the compromise instead of 5 in "native" Dcraw command line tool.
+
+**Exposure Correction (E.V)**: TODO
+
+**Correct false colors in highlights**: TODO
+
+**Auto Brightness**: TODO
+
+Corrections
+
+**Noise Reduction**: While demosaicing your image you can additionally ask for noise reduction (at a slight speed penalty). This option applies a noise reduction algorithm while the image still is in CIE Lab color space. Because the noise is only applied to the Luminosity layer (the "L" of the Lab), it should not blur your image as traditional noise reduction algorithms do in RGB mode. So, if you converted an image from RAW and it appears noisy, rather than applying a denoiser, go back and re-convert with this option enabled. The defaults are: Threshold = 100. Higher values will increase the smoothing, lower will decrease smoothing.
+
+**Enable chromatic aberration (CA) correction**: If you know the CA of your lenses you can set the red and blue correction values here. This is certainly the optimal method for CA correction as it is done during RAW conversion.

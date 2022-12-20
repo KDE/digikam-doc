@@ -300,6 +300,10 @@ Setup Dialog
 
         :ref:`templates_settings`
 
+    .. container:: tile no-descr
+
+        :ref:`editor_settings`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
