@@ -20,7 +20,22 @@ Behavior Settings
 
 .. figure:: images/setup_miscs_behavior.png
 
+Scan for new items at startup option will force digiKam to scan the album library tree for new items added or removed between digiKam sessions. This may slow down the start time of digiKam. If any items have been removed from album library, digiKam will ask you confirmation before to remove definitely item references in database.
+
 With the Scroll current item to center of thumbbar setting, you can force thumbbar to center current selected item with mouse pointer on the center of visible area.
+
+With the String comparison type setting, you can set the way in which strings are compared inside digiKam. This influences the sorting of the tree views. Natural tries to compare strings in a way that regards some normal conventions. The result will be sort naturally even if they have a different number of digits inside. Normal uses a more technical approach. Use this style if you want to entitle albums with ISO dates (201006 or 20090523) and the albums should be sorted according to these dates.
+
+With the Confirm when moving items to trash and Confirm when permanently deleting items settings you can set the verbosity of digiKam when you delete a photograph or an Album. See Deleting a Photograph and Deleting an Album sections for more details.
+
+The editorial changes done through the right sidebar can be quietly applied by digiKam when setting the Apply changes in the right sidebar without confirmation option. Otherwise the changes must be applied by pressing the Apply changes button.
+
+The updates settings allows to tune how the check for new application versions avaialble online.
+
+Appearance Settings
+-------------------
+
+.. figure:: images/setup_miscs_appearance.png
 
 With the Show splash screen at startup setting, you can switch off the display of the splash screen when application loads. This may speed up the start time slightly.
 
@@ -30,35 +45,30 @@ With the Widget style setting, you can choose the default application window dec
 
 With the Icon theme setting, you can choose the default application icon theme. Theme availability depends of desktop used to run digiKam.
 
-Appearance Settings
--------------------
-
-.. figure:: images/setup_miscs_appearance.png
-
-With the String comparison type setting, you can set the way in which strings are compared inside digiKam. This influences the sorting of the tree views. Natural tries to compare strings in a way that regards some normal conventions. The result will be sort naturally even if they have a different number of digits inside. Normal uses a more technical approach. Use this style if you want to entitle albums with ISO dates (201006 or 20090523) and the albums should be sorted according to these dates.
-
-With the Confirm when moving items to trash and Confirm when permanently deleting items settings you can set the verbosity of digiKam when you delete a photograph or an Album. See Deleting a Photograph and Deleting an Album sections for more details.
-
-The editorial changes done through the right sidebar can be quietly applied by digiKam when setting the Apply changes in the right sidebar without confirmation option. Otherwise the changes must be applied by pressing the Apply changes button.
-
-Scan for new items at startup option will force digiKam to scan the album library tree for new items added or removed between digiKam sessions. This may slow down the start time of digiKam. If any items have been removed from album library, digiKam will ask you confirmation before to remove definitely item references in database.
-
 Grouping Settings
 -----------------
+
+This section list the operations to perform on all grouped items depending on the usage context.
 
 .. figure:: images/setup_miscs_grouping.png
 
 Spellcheck Settings
 -------------------
 
+This section allows to control the speel-scheking operations done in background in all text edit widgets.
+
 .. figure:: images/setup_miscs_spellcheck.png
 
 Localize Settings
 -----------------
 
+This section allows to customize the rules to translate automatically strings from text edit widgets using online translator engine.
+
 .. figure:: images/setup_miscs_localize.png
 
 System Settings
 ---------------
+
+This section allows to tune special low level configurations used by application. Only change these settings if you know what you do.
 
 .. figure:: images/setup_miscs_system.png
