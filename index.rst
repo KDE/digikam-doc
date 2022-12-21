@@ -322,6 +322,10 @@ Setup Dialog
 
     .. container:: tile no-descr
 
+        :ref:`plugins_settings`
+
+    .. container:: tile no-descr
+
         :ref:`miscs_settings`
 
 .. toctree::
