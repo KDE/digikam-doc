@@ -65,6 +65,7 @@ Specific settings allows to emulate a number of famous black & white photographi
     - Generic.
     - Agfa 200X, Agfa Pan 25, Agfa Pan 100, Agfa Pan 400.
     - Ilford Delta 100, Ilford Delta 400, Ilford Delta 400 Pro 3200, Ilford FP4 Plus, Ilford HP5 Plus, Ilford PanF Plus, Ilford XP2 Super.
+    - Kodak Tmax 100, Kodak Tmax 400, Kodak TriX.
 
 A color filter can be simulated as placed on front of lens:
 
@@ -89,8 +90,8 @@ Simulating classical infrared film material (the effect is rendered in black and
 
 The filter tries to reproduce the famous Ilford(tm) SFX and Kodak Tmax infrared film series. These films has a sensitivity range of 200-800 ISO.
 
-    - Ilford SPX 200 (Infrared), Ilford SPX 400 (Infrared), Ilford SPX 800 (Infrared).
-    - Kodak Tmax 100, Kodak Tmax 400, Kodak TriX, Kodak HIE (Infrared).
+    - Ilford SPX 200, Ilford SPX 400, Ilford SPX 800.
+    - Kodak HIE.
 
 Because the filter mixes color channels to reproduce infrared film (with emphasis on green channel), one can not simulate infrared effect from black and white original photograph, since the color information is missing.
 
