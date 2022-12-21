@@ -326,7 +326,11 @@ Setup Application
 
     .. container:: tile no-descr
 
+    .. container:: tile no-descr
+
         :ref:`miscs_settings`
+
+        :ref:`theme_settings`
 
 .. toctree::
    :maxdepth: 2
