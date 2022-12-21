@@ -316,6 +316,10 @@ Setup Dialog
 
         :ref:`imgqsort_settings`
 
+    .. container:: tile no-descr
+
+        :ref:`camera_settings`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
