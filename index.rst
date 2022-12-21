@@ -266,9 +266,9 @@ Digital Camera
 
    digital_camera
 
-############
-Setup Dialog
-############
+#################
+Setup Application
+#################
 
 .. container:: toctile
 
@@ -332,6 +332,6 @@ Setup Dialog
    :maxdepth: 2
    :hidden:
 
-   setup_dialog
+   setup_application
 
 .. TODO Add more top level entries here...
