@@ -100,11 +100,13 @@ Follow the instructions below, if you don’t have a dedicated user account and 
 
     You can select any database name. (Here it is, “digikam”). Just remember to fill in the database name correctly in Core, Thumbs, Face database names from the dialog box shown below.
 
-                    CREATE USER ''@'%' IDENTIFIED BY 'password';
-                    GRANT ALL ON *.* TO ''@'%' IDENTIFIED BY 'password';
-                    CREATE DATABASE digikam;
-                    GRANT ALL PRIVILEGES ON digikam.* TO ''@'%';
-                    FLUSH PRIVILEGES;
+.. code:: sql
+
+    CREATE USER ''@'%' IDENTIFIED BY 'password';
+    GRANT ALL ON *.* TO ''@'%' IDENTIFIED BY 'password';
+    CREATE DATABASE digikam;
+    GRANT ALL PRIVILEGES ON digikam.* TO ''@'%';
+    FLUSH PRIVILEGES;
 
 .. note::
 
