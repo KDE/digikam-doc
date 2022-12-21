@@ -94,8 +94,8 @@ The filter tries to reproduce the famous Ilford(tm) SFX and Kodak Tmax infrared 
 
 Because the filter mixes color channels to reproduce infrared film (with emphasis on green channel), one can not simulate infrared effect from black and white original photograph, since the color information is missing.
 
-Correcting Colors
------------------
+Colors Balance
+--------------
 
 Digital cameras often have problems with lighting conditions and it is not unusual to want to correct the color contrast and brightness of a photograph. You can experiment with altering the levels of different aspects of your photographs using the tools under the Color menu. You can see any adjustments you make reflected in the preview. When you are happy with the results, press Ok and they will take effect. 
 
@@ -143,3 +143,56 @@ To the left, half of the original and the target preview image is shown. The tar
 The curves tool has several features that facilitate the positioning of points on the control curves. Clicking the mouse button in the original image preview area produces a vertical doted bar in the graph area of the curves tool. The bar position corresponds to the pixel value the mouse cursor is over in the image window. Clicking and dragging the mouse button interactively updates the position of the vertical bar. In this way, it is possible to see where different pixel values in the image are located on the control curve and helps to discover the locations of shadow, midtone, and highlight pixels.
 
 Using this way and the three Tone Color Picker buttons will automatically create control points on the curve in all channels for shadow, middle, and highlight tones. Enable the color picker button that you want to use, and click on the original image preview area to produce control points on each of the Red, Green, Blue, and Luminosity control curves.
+
+Adjust Levels
+-------------
+
+The digiKam Adjust Levels is a tool to manually adjust the histogram channels of an image.
+
+Situated between the more sophisticated Adjust Curves tool and the simpler Brightness/Contrast/Gamma Image Editor tool is this Adjust Levels tool for improving exposure. Although the dialog for this tool looks very complicated, for the basic usage we have in mind here, the only part you need to deal with is the Input Levels area, concretely the 3 sliders that appear below the histogram.
+
+This widget contains a visual graph of the intensity values of the active layer or selection (histogram). Below the graph are five sliders that can be clicked into and dragged to constrain and change the intensity level for the image. The left sliders position represents the dark areas and similarly, the right position represents the light areas.
+
+.. figure:: images/editor_levels_adjust.png
+
+Actually the easiest way to learn how to use it is to experiment by moving the three sliders around, and watching how the image is affected.
+
+On the right, both an original and a target preview image is available. The target preview is updated dynamically according to the slider positions. On the left, the following options are available:
+
+    Modify levels for Channel : this combo box allows the selection of the specific channel that will be modified by the tool:
+
+        Luminosity: this option makes intensity changes against all pixels in the image.
+
+        Red: this option makes Red saturation changes against all pixels in the image.
+
+        Green: this option makes Green saturation changes against all pixels in the image.
+
+        Blue: this option makes Blue saturation changes against all pixels in the image.
+
+        Alpha: this option makes transparency changes against all pixels in the image.
+
+    Set Scale for channel: this combo controls whether the histogram will be displayed using a linear or logarithmic amplitude. For images taken with a digital camera, the linear mode is usually the most useful. However, for images that contain substantial areas of constant color a linear histogram will often be dominated by a single bar. In this case a logarithmic histogram will often be more useful.
+
+    Input Levels: the input levels allow manual adjustments to be selected for each of the ranges. The main area is a graphic representation of image dark, mid and light tones content. They are on abscissa from level 0 (black) to level 255 (white). Pixel number for a level is on ordinate axis. The curve surface represents all the pixels of the image for the selected channel (histogram). A well balanced image is an image with levels (tones) distributed all over the whole range. An image with a predominant blue color, for example, will produce a histogram shifted to the left in Green and Red channels, manifested by green and red color lacking on highlights. The level ranges can be modified in three ways:
+
+        Three sliders: the first on the top for dark tones, the second one for light tones, and the last one on the bottom for midtones (often called Gamma value).
+
+        Three input boxes to enter values directly.
+
+        Three Color Picker buttons using the original photo preview to automatically adjust inputs levels settings for shadow, midtone and highlights. There is also a fully automated adjustment button available next to the reset button. 
+
+    Output Levels: the output levels allow manual selection of a narrowed-down output level range. There are also two sliders located here that can be used to interactively change the output levels like Input Levels. This output level compression may, for example, be used to create a bleached image as a background for some other subject to put into the foreground.
+
+    Auto: this button performs an automatic setting of the levels based on the pixel intensities of the image.
+
+    Save As... and Load...: these buttons are used to do just that. Any Levels that you have set can be saved to the filesystem and loaded later. The used file format is The Gimp Levels format.
+
+    Reset All: this button reset all Input Levels and Output Levels values for all channels.
+
+The Adjust Levels tool has several features to facilitate the positioning input levels sliders. Clicking the mouse button in the original image preview area produces a vertical doted bar in the graph area of the histogram. The bar position corresponds to the pixel value under the mouse cursor in the image window. Clicking and dragging the mouse button interactively updates the position of the vertical bar. In this way it is possible to see where different pixel values in the image are located on the input levels sliders and helps to discover the locations of shadow, midtone, and highlight pixels.
+
+Using in this mode and the three Color Picker buttons will automatically adjust input levels settings in all channels for shadow, middle, and highlight tones. Enable the color picker button that you want use, and click on the original image preview area to set input levels on each of the Red, Green, Blue, and Luminosity histogram channels.
+
+Over Exposure Indicator option checks all color channel to see if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of channel level settings. This feature is available as an indicator in the target preview area and has no effect on final rendering.
+
+
