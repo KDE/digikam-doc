@@ -25,3 +25,4 @@ Using the digiKam image editor
    image_editor/basic_operations.rst
    image_editor/workflow_tools.rst
    image_editor/colors_tools.rst
+   image_editor/enhancement_tools.rst
