@@ -195,4 +195,92 @@ Using in this mode and the three Color Picker buttons will automatically adjust 
 
 Over Exposure Indicator option checks all color channel to see if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of channel level settings. This feature is available as an indicator in the target preview area and has no effect on final rendering.
 
+Correcting Exposure
+-------------------
 
+The simplest tool to use is the Brightness/Contrast/Gamma tool. It is also the least powerful, but in many cases it does everything you need. This tool is often useful for images that are overexposed or underexposed; it is not useful for correcting color casts. The tool gives you three sliders to adjust, for "Brightness", "Contrast" and "Gamma". You can see any adjustments you make reflected in the preview image. When you are happy with the results, press Ok and they will take effect.
+
+.. figure:: images/editor_bcg_adjust.png
+
+.. note::
+
+    Another important tool called Levels Adjust provides also an integrated way of seeing the results of adjusting multiple levels and also enables you to save level settings for application to multiple photographs. This can be useful if your camera or scanner often makes the same mistakes and you want to apply the same corrections. See the dedicated Adjust Levels manual for more information.
+    See also a way of correcting exposure problems using the Adjust Curves tool.
+
+Channel Mixer
+-------------
+
+The digiKam image Channel Mixer is a tool to remix the color channels to improve or modify the photograph color shades.
+
+The Channel Mixer is an another sophisticated tool to refine the images' tonality. Start it from the Color → Channel Mixer Image Editor menu.
+
+.. figure:: images/editor_channel_mixer.png
+
+With the channel combo box you select and display the histogram per color. It gives a first hint of how to correct the channels by their relative distribution and amplitude. The left half of the dialog window always shows a preview of what you are doing. The original for comparison can be seen when selecting its own window tab.
+
+The target photo preview has a red marker available. If you place this marker somewhere in the image, a corresponding vertical bar will be drawn in the histogram indicating the color level value in the current channel selected.
+
+Now the controls are to the lower right: Red, Green and Blue slider controls enable you to mix the channels. If you check Preserve Luminosity the image will retain its overall luminosity despite you changing its color components. This feature is particularly useful when you also ticked the Monochrome box. Because the channel mixer is THE tool to make great black and white conversions of your photographs. Try to reduce the green channel for black and white portraits.
+
+.. note::
+
+    Sometimes, especially when doing monochrome mixing, reducing one color channel may increase visible noise, which actually originates in the chroma noise. Chroma noise means that the little noise specs do not appear at the same location in all the color channels, but the noise patterns looks different in every channel. If that is the case you can improve the monochrome conversion by reducing the chroma noise first.
+
+Save As... and Load... buttons are used to do just that. Any mixer settings that you have set can be saved to the filesystem and loaded later. The used file format is The Gimp channel mixer format.
+
+Over Exposure Indicator option adds up the colors if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of channel gain settings. This rule is applying to target preview area and haven't effect to final rendering.
+
+Reset All button resets all channel mixer settings to default values.
+
+White Balance
+-------------
+
+The digiKam White Balance is a semi-automatic tool to adjust the white-balance of a photograph.
+
+White Balance setting is a common hurdle for digital still cameras. In the 'good old time' of film rolls, the white balance was done by the photolab. Nowadays the poor little camera has to guess what is white and what is black. Most of the time, what the camera chooses as the white point, is not of the correct shade or hue. Using this tool it is easy to correct this problem. It provides a variety of parameters that can be trimmed to obtain a better result.
+
+.. note::
+
+    The White Balance correction is somewhat limited by the fact that we operate in 8bit per channel color space. So if you depart too much from the original, over exposure zones may appear. If you can adjust the whitebalance in raw conversion mode (which is done in 16 bit space), the margin for correction will be greater.
+
+The preview window can be resized. To the left, both an original and a target preview tab is shown. The target preview is updated dynamically according to the tool's settings. If you want to see the original whitebalance, just click on that tab.
+
+The target photo preview has a red marker available. The luminosity value of the pixel under the marker is shown as a vertical line in the histogram .
+
+To the top right, the widget displays a histogram that is dynamically updated when changing the parameters. This histogram is very instructive as it shows that even in well exposed photos, most of the pixels have very small luminosity. With a button you can select to show either one of the 3 colors (or the sum of it which is called luminosity).
+
+With Exposure you can digitally change the original photo exposure. Increasing the exposure is has the risk of making the pixel noise more visible and to blow out the highlights. Check the Over exposure indicator at the lower right to see if you run into saturation problems. The Black Point adjustment can be used to cut the histogram from the left. If your photograph looks foggy (histogram has empty space on the left, black side), you probably need to use this option. The Exposure and Black Point adjustments can be automatically estimated by pressing the Auto Exposure Adjustments button. This sets the black point quite accurately.
+
+The contrast of your output depends on Shadows, Saturation, and Gamma parameters. The Shadows adjustment lets you enhance or diminish the shadow details in your photo.
+
+Increasing the contrast of your photograph can have the side effect of reducing the apparent Saturation of the photo. Use a value larger than 1 to increase the saturation and a value of less than 1 to desaturate the photo. A value of 0 will give you a black and white photo. Don't be shy to bump up the saturation of your photos a little. The general rule is that for higher Contrast (lower Gamma) you need to apply more Saturation.
+
+The next set of options is the mainstay of White Balance settings, which controls the ratio between the three color channels. Here you can set the color Temperature, making your image warmer or colder. Higher temperature will result in a warmer tint. Setting the ratio between the three color channels requires two adjustments. Since the temperature adjustment mostly controls the ratio between the red and the blue channels, it is natural that the second adjustment will control the intensity of the Green channel.
+
+Instead of fiddling around with the above controls, you can simply use the Temperature Tone Color Picker button. Press on this button and click anywhere on the original preview image to get the output color of that area to calculate the white color balance temperature settings. This way, Temperature and Green values are automatically computed.
+
+In addition you can set the White Balance using the preset list. These are the white color balance temperature presets available:
+
+=================== =========================================================== =======
+Color Temperature   Description                                                 Kelvin
+=================== =========================================================== =======
+40W                 40 Watt incandescent lamp.                                  2680
+200W                200 Watt incandescent lamp, studio lights, photo floods.    3000
+Sunrise             Sunrise or sunset light.                                    3200
+Tungsten            Tungsten lamp or light at 1 hour from dusk or dawn.         3400
+Neutral             Neutral color temperature.                                  4750
+Xenon               Xenon lamp or light arc.                                    5000
+Sun                 Sunny daylight around noon.                                 5500
+Flash               Electronic photo flash.                                     5600
+Sky                 Overcast sky light.                                         6500
+=================== =========================================================== =======
+
+Color Temperature is a simplified way to characterize the spectral properties of a light source. While in reality the color of light is determined by how much each point on the spectral curve contributes to its output, the result can still be summarized on a linear scale. This value is useful e.g. for determining the correct white balance in digital photography, and for specifying the right light source types in architectural lighting design. Note, however, that light sources of the same color (metamers) can vary widely in the quality of light emitted.
+
+Low Color Temperature implies more yellow-red light while high color temperature implies more blue light. Daylight has a rather low color temperature near dawn, and a higher one during the day. Therefore it can be useful to install an electrical lighting system that can supply cooler light to supplement daylight when needed, and fill in with warmer light at night. This also correlates with human feelings towards the warm colors of light coming from candles or an open fireplace at night. Standard unit for color temperature is Kelvin (K).
+
+Over Exposure Indicator option adds up the colors if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of White Color Balance controls settings. This rule is applied to target preview area as an indication only and has no effect on the final rendering.
+
+Save As... and Load... buttons are used to do just that. Any White Color Balance settings that you have set can be saved to the filesystem in a text file and loaded later.
+
+Reset All button resets all filter settings to default values corresponding to Neutral White Balance color. (Attention, even the neutral setting might be different from your original photograph. If you save it, the white balance will be changed.)
