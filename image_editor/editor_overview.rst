@@ -21,7 +21,7 @@ The Image Editor provides a number of powerful tools that use you to adjust a ph
 
 .. figure:: images/editor_mainwindow.png
 
- The image editor has just one main window with:
+The image editor has just one main window with:
 
     A status at the bottom which shows the filename, the current file number, the current zoom level, and the current image size.
 
@@ -29,30 +29,20 @@ The Image Editor provides a number of powerful tools that use you to adjust a ph
 
 .. figure:: images/editor_toolbar.png
 
- The Image Editor Toolbar
+The Image Editor Toolbar
 
-    1. First Current Album Image.
+    1. Close image editor Window.
 
-    2. Previous Image.
+    2. Open original image from the versionning stack.
 
-    3. Next Image.
+    3. Export imgae to a new file format.
 
-    4. Last Current Album Image.
+    4. Save changes in versionning stack using default format.
 
-    5. Save the modified image.
+    5. Save the modified image in a new version using specific format.
 
-    6. Undoing last action.
+    6. Cancel all modifications done on image.
 
-    7. Redoing previous action.
+    7. Undoing last action.
 
-    8. Restore the Current Image From Disk.
-
-    9. Zoom Into the Image.
-
-    10. Zoom Out of the Image.
-
-    11. Toggle Auto Zooming (if selected image will fit in the window).
-
-    12. Rotate the Current Image.
-
-    13. Crop Image to the Selected Region.
+    8. Redoing previous action.
