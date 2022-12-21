@@ -49,7 +49,9 @@ All Image Editor tools like Sharpen, Blur, Noise Reduction, Refocus, Unsharp Mas
 
 .. figure:: images/editor_commondialogtools.png
 
-     (1): The seven buttons to the top left select the comparison style of the preview area. The modes are:
+See the list of common areas available in all tools:
+
+    - (1): The seven buttons to the top left select the comparison style of the preview area. The modes are:
 
         Original image.
 
@@ -65,17 +67,17 @@ All Image Editor tools like Sharpen, Blur, Noise Reduction, Refocus, Unsharp Mas
 
         'Mouse over' style: preview when mouse is off the preview (in the settings area), otherwise shows original.
 
-    (2): There are two buttons that can be toggled to show over or underexposure. The colors can be customized in the general setup page.
+    - (2): There are two buttons that can be toggled to show over or underexposure. The colors can be customized in the general setup page.
 
-    (3): The preview area. Click and drag with the mouse to move it on the image. The preview area on the left of dialog is updated accordingly.
+    - (3): The preview area. Click and drag with the mouse to move it on the image. The preview area on the left of dialog is updated accordingly.
 
-    (4): The filter or tool settings area.
+    - (4): The filter or tool settings area.
 
-    (5): The zoom slider and buttons to change the canvas and preview zoom level.
+    - (5): The zoom slider and buttons to change the canvas and preview zoom level.
 
-    (6): There is a progress indicator for tool with involved calculations at processing stage, else the current file-name is displayed.
+    - (6): There is a progress indicator for tool with involved calculations at processing stage, else the current file-name is displayed.
 
-The digiKam tool set
+The digiKam tool set are:
 
     Image Color
 

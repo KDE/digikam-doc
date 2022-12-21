@@ -11,7 +11,7 @@
 .. _shortcuts_settings:
 
 Shortcuts Settings
-================
+==================
 
 .. contents::
 
