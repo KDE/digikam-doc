@@ -1,4 +1,4 @@
-![](logo.png) This repository hosts the digiKam handbook based on [Sphinx](https://www.sphinx-doc.org) framework and [ReStructuredText](https://docutils.sourceforge.io/rst.html) format.
+![](project/images/logo.png) This repository hosts the digiKam handbook based on [Sphinx](https://www.sphinx-doc.org) framework and [ReStructuredText](https://docutils.sourceforge.io/rst.html) format.
 
 [digiKam](https://www.digikam.org/about/features/) is a powerful Open Source Photo Management Software.
 
