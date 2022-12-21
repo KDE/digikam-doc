@@ -1,5 +1,5 @@
 .. meta::
-   :description: digiKam Main Window Image Area
+   :description: digiKam Main Window Image View
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
 
 .. metadata-placeholder
@@ -8,15 +8,15 @@
 
    :license: Creative Commons License SA 4.0
 
-.. _image_area:
+.. _image_view:
 
-Image Area
+Image View
 ----------
 
 General Information
 ~~~~~~~~~~~~~~~~~~~
 
-In all eight views the Image Area shows the result of your selection or search on the Left Sidebar in the Icon Area. Each image is displayed as a thumbnail. You can alter the size of the thumbnails using the magnifier slider close to the right end of the status bar.
+In all eight areas the Image View shows the result of your selection or search on the Left Sidebar in the Icon Area. Each image is displayed as a thumbnail. You can alter the size of the thumbnails using the magnifier slider close to the right end of the status bar.
 
 .. figure:: images/mainwindow_zoombuttons.png
 

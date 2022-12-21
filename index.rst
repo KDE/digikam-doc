@@ -78,7 +78,7 @@ The Main Window
 
     .. container:: tile no-descr
 
-        :ref:`image_area`
+        :ref:`image_view`
 
     .. container:: tile no-descr
 
