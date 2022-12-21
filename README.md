@@ -45,19 +45,20 @@ The EPUB ebook is generated in `build/epub`. Open the ebook file by double click
 ## Directories Hierarchy
 
 - LICENSES  : all licenses used in the project.
-- attic     : old DocBook implementations of this manual to backport as ReStructuredText.
 - build     : temporary dir created when documentation is compiled.
 - ressources: Sphinx templates customization.
 - po        : link to handbook translations files.
 - project   : some helpers scripts.
 - tests     : scripts to test repository contents with CI
 
+All others directories are used to host sections of the documentation implmeented in ReStructuredText format.
+
 ## Get Involved
 
 ### File Hierarchies
 
-ReStructuredText Documentation implementation is located in top level directory in .rst files and sub-directories
-corresponding to handbook sections. The root entry of the manual is **index.rst**.
+ReStructuredText Documentation implementation is located in top level directory in .rst files and sub-directories with the same name
+corresponding to the handbook sections. The root entry of the manual is **index.rst**.
 
 Each handbook section start with a .rst file from top level directory and a dedicated
 sub-directory with the same name including chapters .rst files and a nested **images** sub-directory to host
@@ -85,20 +86,23 @@ screen-shots, taken in PNG format. For example, the **getting_started** section 
 ### The ReStructuredText Format
 
 ReStructuredText is a simple file format for textual data used primarily in the Python programming language
-community for technical documentation. It can be edited with a simple Text Editor application as
+community for technical documentations. It can be edited with a simple Text Editor application as
 [Kate](https://kate-editor.org/) featuring syntax highlighting to help documentation writers.
 
-ReStructuredText is part of the [Docutils project](https://docutils.sourceforge.io/) from the Python Documentation Special Interest Group,
-aimed at creating a set of tools for Python. Docutils can extract comments and information from programs,
+ReStructuredText is part of the [DocUtils project](https://docutils.sourceforge.io/) from the Python Documentation Special Interest Group,
+aimed at creating a set of tools for Python. DocUtils can extract comments and information from ReStructuredText,
 and format them into various forms of program documentation.
 
 ReStructuredText is a lightweight markup language designed to be both processable by documentation-processing
-software such as Docutils, and easily readable by human programmers who are reading and writing Python source code.
+software such as DocUtils, and easily readable by human who are reading and writing source code.
 
-Take a care that ReStructuredText file (.rst) is an indent featured markup language. Respect well the spaces on front of blocks
-to prevent compilation warnings. Indent must be done with **4 spaces**, never use tabs at all. Always save ResStructuredText
-file using **UNIX end-of-line**, check well your editor settings before. Never use space or minus in file name, uses underscore instead.
-Never uses capitalized forms in filenames, always uses lowercase characters.
+Take care that ReStructuredText file (.rst) specificities:
+
+- It's an indent featured markup language. Respect well the spaces on front of blocks to prevent compilation warnings.
+- Indent must be done with **4 spaces**, never use tabs at all.
+- Always save ResStructuredText file using **UNIX end-of-line**, check well your editor settings before.
+- Never use space or minus in file name, uses underscore instead.
+- Never uses capitalized forms in filenames, always uses lowercase characters.
 
 A good place to learn **ReStructuredText** format used in this documentation, it's recommended to read:
 
@@ -111,7 +115,7 @@ A good place to learn **ReStructuredText** format used in this documentation, it
 ### Sphinx Framework
 
 The Python based Sphinx documentation generator translates a set of reStructuredText source files into various output formats,
-automatically producing cross-references, indices etc. It just used at run-time with the **make** command to
+automatically producing cross-references, indices etc. It just used at run-time with the **make html** command to
 render contents, and reports warnings/errors.
 
 Documentation writer will never touch the Sphinx configuration.
