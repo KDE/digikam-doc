@@ -352,6 +352,10 @@ The Image Editor
 
         :ref:`editor_overview`
 
+    .. container:: tile no-descr
+
+        :ref:`basic_operations`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
