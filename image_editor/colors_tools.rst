@@ -58,7 +58,7 @@ The Legacy Black and White Films Emulation
 
 digiKam comes with a couple of black & white filters that you can use on your photographs. Under the Color → Black & White... menu you will find classic black & white chemical toning used in analog photography. The controls come on four drop-down items: Film, Lens Filters, Tone and Lightness as shown on the screenshot below. Film, filters and color toning can be applied independently of each other (on top of each other). The filters actually influence the RGB channel mixing, whereas the toning purely adds a uniform monochromatic tint to the black & white photograph. In the lightness tab you will find a tonal adjustment tool (like curve adjust), a contrast tool and an over-exposure indicator to improve the b&w rendering.
 
-.. figure:: images/editor_bwfilters.png
+.. figure:: images/editor_bw_filters.png
 
 Specific settings allows to emulate a number of famous black & white photographic films as:
 
