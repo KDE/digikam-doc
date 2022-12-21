@@ -36,3 +36,4 @@ Using the digiKam setup application
    setup_application/plugins_settings.rst
    setup_application/miscs_settings.rst
    setup_application/theme_settings.rst
+   setup_application/shortcuts_settings.rst
