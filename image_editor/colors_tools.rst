@@ -239,9 +239,7 @@ The digiKam White Balance is a semi-automatic tool to adjust the white-balance o
 
 White Balance setting is a common hurdle for digital still cameras. In the 'good old time' of film rolls, the white balance was done by the photolab. Nowadays the poor little camera has to guess what is white and what is black. Most of the time, what the camera chooses as the white point, is not of the correct shade or hue. Using this tool it is easy to correct this problem. It provides a variety of parameters that can be trimmed to obtain a better result.
 
-.. note::
-
-    The White Balance correction is somewhat limited by the fact that we operate in 8bit per channel color space. So if you depart too much from the original, over exposure zones may appear. If you can adjust the whitebalance in raw conversion mode (which is done in 16 bit space), the margin for correction will be greater.
+.. figure:: images/editor_white_balance.png
 
 The preview window can be resized. To the left, both an original and a target preview tab is shown. The target preview is updated dynamically according to the tool's settings. If you want to see the original whitebalance, just click on that tab.
 
