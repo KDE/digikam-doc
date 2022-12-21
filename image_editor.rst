@@ -24,3 +24,4 @@ Using the digiKam image editor
    image_editor/editor_overview.rst
    image_editor/basic_operations.rst
    image_editor/workflow_tools.rst
+   image_editor/raw_workflow.rst

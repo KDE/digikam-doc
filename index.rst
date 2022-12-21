@@ -360,6 +360,10 @@ The Image Editor
 
         :ref:`workflow_tools`
 
+    .. container:: tile no-descr
+
+        :ref:`raw_workflow`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
