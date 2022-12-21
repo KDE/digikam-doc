@@ -320,6 +320,10 @@ Setup Dialog
 
         :ref:`camera_settings`
 
+    .. container:: tile no-descr
+
+        :ref:`miscs_settings`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

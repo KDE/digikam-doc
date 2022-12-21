@@ -33,3 +33,4 @@ Using the digiKam setup dialog
    setup_dialog/lighttable_settings.rst
    setup_dialog/imgqsort_settings.rst
    setup_dialog/camera_settings.rst
+   setup_dialog/miscs_settings.rst
