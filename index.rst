@@ -342,4 +342,20 @@ Setup Application
 
    setup_application
 
+################
+The Image Editor
+################
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`editor_overview`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   image_editor
+
 .. TODO Add more top level entries here...
