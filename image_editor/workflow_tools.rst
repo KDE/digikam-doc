@@ -42,8 +42,8 @@ If you swap step 4. and 5., which is well possible if the initial contrast is al
 
 Many of the tools you may need for photographic editing are included with digiKam. Their description follows here.
 
-Introduction to common editing tools features
----------------------------------------------
+Common editing tools features
+-----------------------------
 
 All Image Editor tools like Sharpen, Blur, Noise Reduction, Refocus, Unsharp Mask, etc. use a common dialog style that previews the effect before applying the filter to the current image. Below you see the “Solarize” tool in action using this common dialog layout:
 
@@ -168,3 +168,32 @@ The digiKam tool set
         Blur FX
 
         Add Rain Drops
+
+Basic Raw Workflow
+------------------
+
+A typical RAW workflow with digiKam may follow these steps:
+
+    Setting up the RAW conversion and color management preferences:
+
+        Get the ICC color profiles for the camera, display and printer.
+
+        Setup digiKam correctly defining a color work space.
+
+    Camera whitepoint setting.
+
+    Demosaicing (includes interpolation, noise filtering and chromatic aberration correction).
+
+    Conversion to a color space.
+
+    Gamma correction, tone mapping.
+
+    Color profile assignment.
+
+    Dynamic range expansion (optional).
+
+    Continue with standard workflow.
+
+From there everything is simple, select a RAW image and open it in the editor. The Raw Import tool will be displayed after the image has been processed in order to adjust color rendering. Without color management all images are very dark, this is normal. You can experiment the various profiles you have in order to select the best input profile according to your image (some tends to be very neutral, even a bit dull, some gives more saturated results, etc.).
+
+.. figure:: images/editor_rawimport.png

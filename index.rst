@@ -362,7 +362,7 @@ The Image Editor
 
     .. container:: tile no-descr
 
-        :ref:`raw_workflow`
+        :ref:`colors_tools`
 
 .. toctree::
    :maxdepth: 2
