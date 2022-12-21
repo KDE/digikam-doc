@@ -19,7 +19,7 @@ digiKam incorporates a fast Image Editor with a few basic yet powerful image edi
 
 The Image Editor provides a number of powerful tools that use you to adjust a photograph. 
 
-.. figure:: images/editor-mainwindow.png
+.. figure:: images/editor_mainwindow.png
 
  The image editor has just one main window with:
 
@@ -27,7 +27,7 @@ The Image Editor provides a number of powerful tools that use you to adjust a ph
 
     A menu bar across the top and below that a tool bar that provides quick access to some commonly used functions.
 
-.. figure:: images/editor-toolbar.png
+.. figure:: images/editor_toolbar.png
 
  The Image Editor Toolbar
 
