@@ -376,6 +376,10 @@ The Image Editor
 
         :ref:`decorate_tools`
 
+    .. container:: tile no-descr
+
+        :ref:`effects_tools`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
