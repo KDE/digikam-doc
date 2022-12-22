@@ -275,3 +275,155 @@ The values used for this example are:
 
 .. figure:: images/editor_antivignetting_preview.png
 
+Remove Red Eyes in a Photograph
+-------------------------------
+
+Red eyes are caused when the camera flashlight is used to take photographs of people. The red is the reflection from the back of the eye which can be seen because the pupil cannot react quickly enough to the flash. By the way, with a separate flash light the red eye effect is less likely because of the different viewing angle of flash and lens. You can correct some of the worst effect of Red Eye by selecting the area of the eye on the photograph, in the same way as described for cropping above. Then select Enhance → Red Eye Reduction.
+
+How it works
+
+    - Set the preview mode to your liking. Adjust region of image to the eyes of face to fix.
+
+    - A neural network engine parse the image contents to localize automatically eyes and the red pupils.
+
+    - The **Red Level** setting adjusts the amount of red eyes removal, in aggressive mode or not.
+
+.. figure:: images/editor_redeyes_correction.png
+
+Image Sharpening
+----------------
+
+Overview
+~~~~~~~~
+
+digiKam provides three different tools for sharpening, with each having merits in a different area.
+
+    - **Sharpen** is a traditional sharpening tool, which is very fast and easy, but may quickly produce grainy images, in particular in dark areas.
+
+    - **Unsharp Mask** works on the edge contrast to make an image appear sharper, but it actually does not sharpen at all, it works rather psychovisually. It can be used to remove atmospheric haze, and here it does a real good job. The algorithm was taken from the Gimp, and it is copyrighted by Winston Chang.
+
+    - **Refocus** is probably the best of the three because it actually improves sharpness. It is a bit more involved in its application as is has several parameters to play with. 
+
+Out-of-focus photographs, as well as most digitized images, need correction of sharpness. This is due to the digitizing process that must chop up a color continuum in points with slightly different colors: elements thinner than sampling frequency will be averaged into an uniform color. Thus, sharp borders are rendered a little blurred. The same phenomenon appears when printing color dots on paper. SLR cameras need even more sharpening on a regular basis than consumer cameras.
+
+Whereas JPEG images have some camera-internal sharpening applied, RAW format images always need sharpening in their workflow.
+
+Some scanners apply a sharpen filter while scanning. It's worth to disable it so that you keep control over your image.
+
+Adjusting Sharpness
+~~~~~~~~~~~~~~~~~~~
+
+If the camera focus is not set perfectly or if the camera is moving when the image is taken the result is a blurred photograph. If there is a lot of blurring, you probably will not be able to do much about it with any technique. If there is only a moderate amount, you should be able to improve the image. Many good SLR cameras apply less image processing to the images than simpler cameras (which tend to artificially increase the contrast to make the images look crisp). This kind of slight blur can be easily improved with tools.
+
+In some situations, you may be able to get useful results by sharpening an photograph using the Sharpen tool by the Enhance → Sharpen menu entry.
+
+.. figure:: images/editor_sharpen.png
+
+You should be careful with this though, or the results will not look very natural: sharpening increases the apparent sharpness of edges in the photograph, but also amplifies noise. Generally, the most useful technique for sharpening a fuzzy photograph is the Refocus tool. You can access it with the Enhance → Refocus menu entry. Look at Refocus for more information and a comparison of all the sharpening techniques.
+
+Reducing Graininess In a Photograph
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+When you take a photograph in low-light conditions or with a very fast exposure time, the camera does not get enough data to make good estimates of the true color at each pixel, and consequently the resulting photograph looks grainy. You can "smooth out" the graininess by blurring the image, but then you will also lose sharpness. Probably the best approach - if the graininess is not too bad - is to use the filter Noise Reduction tool, and you can access it by the Enhance → Noise Reduction menu entry.
+
+Softening a Photograph
+~~~~~~~~~~~~~~~~~~~~~~
+
+Sometimes you have the opposite problem: an image is too crisp. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the Blur Tool with the Enhance → Blur menu entry and experiment with the level. The preview window on the right of the dialog shows the effect of the operation on your photograph.
+
+The Unsharp Masking Filter
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. note::
+
+    The Unsharp Mask filter is an excellent tool to remove haze from your photographs, see this url for a demonstration.
+
+.. figure:: images/editor_unsharpen_mask.png
+
+The image panel and the original preview help you to pan within the image. The preview window shows the filter output using the current settings.
+
+There are two important parameters, Radius and Amount. The default values often work pretty well, so you should try them first. Increasing either the Radius or the Amount increases the strength of the effect. Don't get carried away, though: if you make the unsharp mask too strong, it will amplify noise in the image and create the impressions of ridges next to sharp edges.
+
+The Radius allows you to set how many pixels on either side of an edge that will be affected by sharpening. High resolution images allow higher radius. You'd better always sharpen an image at its final resolution.
+
+The Amount control is the percentage of the difference between the original and the blur image that is added back into the original. It allows you to set strength of sharpening.
+
+The Threshold control is a fraction of the maximum RGB value, needed to apply the difference amount. It allows you to set the minimum difference in pixel values that indicates an edge where sharpening should be applied. That way, you can protect areas of smooth tonal transition from sharpening, and avoid creation of blemishes in face, sky or water surface.
+
+Refocus a Photograph
+~~~~~~~~~~~~~~~~~~~~
+
+digiKam The Refocus is a tool to refocus an image by enhancing the sharpness. It uses the Deconvolution Filter algorithm copyrighted by Ernst Lippe.
+
+This tool attempts to "refocus" an image by undoing the defocussing. This is better than just trying to sharpen a photograph. It is employing a technique called FIR Wiener Filtering. The traditional technique for sharpening images is to use unsharp masking. Refocus generally produces better results than Unsharp masking. Start it from the Enhance → Sharpen → Refocus Image Editor menu.
+
+The Refocus technique works differently from Unsharp Mask and is also unlike the Sharpen Filter which both increase the contrast of the edges of an image. Refocus rather reverses the process by which the image got blurred by the circular aperture of the camera. This method gives you as much of the original "in focus" image as possible. Refocus uses a very powerful deconvolution algorithm that will reclaim the data that has been mixed up. In mathematical terms, blurring is usually the result of a convolution, a deconvolution will reverse the process, this is exactly what Refocus is doing. Furthermore, the FIR filter technique allows to remove much of the noise and granularity that often gets accentuated in the sharpening process of all sharpening filters.
+
+.. figure:: images/editor_refocus.png
+
+The image panel and the original preview help you to pan within the image. The preview window shows the filter output using the current settings.
+
+In most cases (blurring by camera) a circular convolution caused the image degradation, but there are two convolutions available:
+
+    The circular convolution: this one spreads each source point uniformly across a small disk with a fixed radius. Technically this describes the effects of using a (ideal) lens that is not correctly focused.
+
+    The Gaussian convolution: this one is mathematically similar to the normal distribution, with its bell-shaped curve. Originates rather from unnatural blurring (software blurring). From a theoretical point of view the mathematical justification for using the Gaussian convolution is that when you a apply a large number of independent random convolutions the results will always approach a Gaussian convolution.
+
+The refocus tool supports both the Circular and the Gaussian convolution plus mixtures of both.
+
+In practice, in most cases the Circular convolution works much better than the Gaussian convolution. The Gaussian convolution has a very long tail, so mathematically the result of the convolution also depends on source pixels at a large distance from the original source pixel. The FIR Wiener inverse of a Gaussian convolution in most cases is heavily influenced by source pixels at a large distances, and in most cases this produces undesirable results.
+
+To set correctly the deconvolution filter, the plug-in has the following parameters:
+
+    Circular Sharpness: This is the radius of the Circular convolution filter. It is the most important parameter for using the plug-in. With most images the default value of 1 should give good results. Select a higher value when your image is very blurred, but beware of producing halos.
+
+    Correlation: Increasing the Correlation may help reducing artifacts. The correlation can range from 0-1. Useful values are 0.5 and values close to 1, e.g. 0.95 and 0.99. Using a high value for the correlation will reduce the sharpening effect of the plug-in.
+
+    Noise filter: Increasing the Noise filter parameter helps reducing artifacts. The Noise can range from 0-1 but values higher than 0.1 are rarely helpful. When the Noise value is too low, e.g. 0 the image quality will be horrible. A useful value is 0.03. Using a high value for the Noise will even blur the image further.
+
+    Gaussian Sharpness: This is the radius for the Gaussian convolution filter. Use this parameter when your blurring is Gaussian (mostly due to previous blur filtering). In most cases you should leave this parameter to 0, because it causes nasty artifacts. When you use non-zero values you will probably have to increase the Correlation and/or Noise filter parameters, too.
+
+    Matrix size: This parameter determines the size of the transformation matrix. Increasing the Matrix Size may give better results, especially when you have chosen large values for Circular Sharpness or Gaussian Sharpness. Note that the plug-in will become very slow when you select large values for this parameter. In most cases you should select a value in the range 3-10.
+
+    Save As... and Load...: these buttons are used to do just that. Any Refocus parameters that you have set can be saved to the filesystem and loaded later.
+
+    Defaults: this button resets all settings to default values.
+
+Below, you can see few hints to help you work with the refocus plug-in:
+
+    Preferably perform all cropping, color and intensity curve corrections on the image before using this plug-in.
+
+    Otherwise use this plug-in before performing any other operations on the image. The reason is that many operations on the image will leave boundaries that are not immediately visible but that will leave nasty artifacts.
+
+    When you are scanning images and compress them, e.g. to JPEG, you should use the plug-in on the uncompressed image.
+
+Refocus comparison with other techniques
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Comparison to two other techniques frequently used to enhance images are:
+
+    Sharpen Filter
+    Unsharp Mask 
+
+Sharpening applies a small convolution matrix that increases the difference between a source pixel and its immediate neighbors. FIR Wiener filtering is a more general technique because it allows a much larger neighborhood and better parameterizations. Sharpening only works when your images are very slightly blurred. Furthermore, for high values of the sharpening parameter the results frequently looks "noisy". With FIR Wiener filtering this noise can be greatly reduced by selecting higher values for the Correlation and Noise filter parameters.
+
+Unsharp masking is another very popular image enhancement technique. From a mathematical point of view its justification is a bit obscure but many people are very fond of it. The first step is to create a blurred copy of the source image. Then the difference between the source image and the blurred image is subtracted from the source image, hence the name unsharp masking. If fact, unsharp masking is more of a contrast enhancement on the important image feature than a sharpening. It does not undo the aperture pattern interference of the camera diaphragm as refocus does.
+
+In general, unsharp masking produces better results than sharpening. This is probably caused by the fact that unsharp masking uses a larger neighborhood than sharpening.
+
+From a theoretical point of view unsharp masking must always introduce artifacts. Even under optimal circumstances it can never completely undo the effect of blurring. For Wiener filtering it is possible to prove that it is the optimal linear filter. In practice, in all cases the results of the FIR Wiener filter were at least as good as those of unsharp masking. The FIR Wiener filter is frequently better in restoring small details.
+
+Below, you can see a comparison of different filter apply on a small unfocused image:
+
+=================================================== ====================================================================================================================================================================
+Preview                                             Type
+=================================================== ====================================================================================================================================================================
+.. figure:: images/editor_refocus_notsharpened.png  Original blurred color image to fix. This image have been taken with an analog still camera. The unfocusing result of an insufficient light for the auto-focus lens.
+.. figure:: images/editor_refocus_sharped.png       Fixed image using simple sharpening filter. Sharpness setting is 80.
+.. figure:: images/editor_refocus_unsharpmask.png   Fixed image using unsharp mask filter. Settings are Radius=50, Amount = 5, and Threshold=0.
+.. figure:: images/editor_refocus_refocus.png       Fixed image using Refocus filter. Settings are Circular Sharpness=1.3, Correlation=0.5, Noise Filter=0.020, Gaussian Sharpness=0 and Matrix Size=5.
+=================================================== ====================================================================================================================================================================
+
+.. note::
+
+    For more information about correction of sharpness methods used in digital imagery, you can find a technical comparison at this url.
