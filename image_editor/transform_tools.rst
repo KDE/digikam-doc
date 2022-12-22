@@ -159,3 +159,64 @@ To change the perspective, use the square areas at the image corners for draggin
 After you have adjusted the perspective of an image there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform → Crop Image Editor menu.
 
 .. figure:: images/editor_perspective_tool.png
+
+Change the image size
+---------------------
+
+Overview
+~~~~~~~~
+
+The digiKam resize Photograph is definitely one of the most advanced tools to increase a photograph's size with minimal loss in image quality.
+
+Rescaling an image to make it smaller is easy. The big question is: how can you blow up an image and keep the details sharp? How can one zoom in when the resolution boundary has been reached? How can one reinvent or guess the missing information to fill in the necessarily coarse image after upsizing? Well, the algorithm we use here does an excellent job, try it out and see for yourself!
+
+Resizing a Photograph
+~~~~~~~~~~~~~~~~~~~~~
+
+If the photograph has the wrong size, you can scale it to the size you would like by using Transform Resize tool. Select Transform → Resize and adjust the target values. The Resize tool dialog is available below.
+
+.. figure:: images/editor_resize.png
+
+This image resizing tool uses a standard linear interpolation method to approximate pixels. If you want to up-size a small image with a better quality, try the Blowup tool.
+
+Increasing image size (Restoration)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Many image editing programs use some kind of interpolation e.g. spline interpolation to scale-up an image. digiKam uses a more sophisticated approach.
+
+You have to tell the tool about the resizing you want to do. These settings are available in New Size tab and are listed below:
+
+    Maintain Aspect Ratio: if this option is enabled, setting the new image size will preserve the aspect ratio of the original image.
+
+    Width: the new image width to use for blowing up.
+
+    Height: the new image height to use for blowing up.
+
+If you want to set filter parameters for finer adjustments, use Smoothing Settings and Advanced Settings tabs:
+
+Photograph Resize Smoothing Settings:
+
+    Detail Preservation p [0, 100]: this controls the preservation of the curvatures (features). A low value forces an equal smoothing across the image, whereas bigger values preferably smooth the homogeneous regions and leaves the details sharper. A value of 0.9 should well preserve details so that no sharpening is required afterwards. Note that Detail Preservation must be always inferior to Anisotropy.
+
+    Anisotropy alpha [0, 100]: a low value smooths equally in all directions, whereas a value close to 1 smooths in one direction only. If you have film grain or CCD kind of noise a high value will result in wave-like pattern, whereas JPEG artifacts are suited for values close to 1.
+
+    Smoothing [0, 500]: this sets the maximum overall smoothing factor (when p defines the relative smoothing). Set it according to the noise level.
+
+    Regularity [0, 100]: this parameter is concerned with the bigger structures. The bigger this value, the more even the overall smoothing will be. This is necessary when much noise is present since it is then difficult to estimate the geometry. Also if you want to achieve a 'van Gogh' turbulence effect, setting it higher than 3 is recommended.
+
+    Filter Iterations: number of times the blurring algorithm is applied. Usually 1 or 2 is sufficient.
+
+Photograph Resize Advanced Settings:
+
+    Angular Step da [5, 90]: angular integration of the anisotropy alpha. If alpha is chosen small, da should also be chosen small. But beware, small angles result in long runs! Choose it as large as you can accept.
+
+    Integral Step [0.1, 10]: spatial integration step width in terms of pixels. Should remain less than 1 (sub-pixel smoothing) and never be higher than 2.
+
+    Use Linear Interpolation: The gain in quality if you select this option is only marginal and you lose a factor of 2 in speed. Our recommendation is to leave it off.
+
+Save As... and Load... buttons are used to do just that. Any Blowup Photograph filter settings that you have set can be saved to the filesystem in a text file and loaded later.
+
+.. warning::
+
+    Resize Photograph is very fast in what it is doing, but it can take a long time to run and cause high CPU load. You may always abort computation by pressing Cancel button during rendering.
+
