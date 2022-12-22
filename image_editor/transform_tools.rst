@@ -158,4 +158,4 @@ To change the perspective, use the square areas at the image corners for draggin
 
 After you have adjusted the perspective of an image there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform → Crop Image Editor menu.
 
-.. figure:: images/editor-perspective-tool.png
+.. figure:: images/editor_perspective_tool.png
