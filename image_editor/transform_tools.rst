@@ -10,8 +10,8 @@
 
 .. _transform_tools:
 
-Image Transformation Tools
-==========================
+Transform Tools
+===============
 
 .. contents::
 
