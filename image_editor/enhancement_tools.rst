@@ -123,3 +123,17 @@ Select an area to see bad pixels on preview and the filter result using 'Separat
     Quadratic: this is the default filtering method. The pixels which have a distance of 2 or less from the pixel block are used to calculate a bi-quadratic surface (2-dim), or a group of quadratic curves (1-dim), which is then used to assign interpolated colors to the pixels in the block.
 
     Cubic: the pixels which have a distance of 3 or less from the pixel block are used to calculate a bi-cubic surface (2-dim), or a group of cubic curves (1-dim), which is then used to assign interpolated colors to the pixels in the block.
+
+Local Contrast Tool
+-------------------
+
+The Local Contrast tool render pseudo-HDR image.
+
+There are multiple ways to render HDR image to improve photos containing under or overexposed areas. With camera devices, usual tools let you merge multiple shots with different exposures into one perfectly exposed photo. This work nicely but require some limitation, as for example the necessity to shot static subjects. But what if you have just in case of single image, or with dynamic subjects? You might want to give a try to the Local Contrast feature. It’s based on the LDR Tonemapping utility which is designed to improve the dynamic range of the photo by reducing its global contrast and increasing the local contrast. It does so by generating a desaturated and blurred version of the photo. It then combines the RGB channels of the original photo with the desaturated blurred image using either the Linear or Power function. Sounds complicated? Don’t worry, the Local Contrast tool is rather straightforward to use, so you don’t have to understand all its intricacies in order to achieve pleasing results.
+
+.. figure:: images/editor_local_contrast.png
+
+Open the photo you want in the editor and choose Enhance → Local Contrast. The tool lets you apply up to four tonemapping operations called stages. Each stage offers two parameters for you to tweak: Power and Blur. The former allows you to specify the desaturation level, while the latter lets you adjust the affected areas on the photo. To preview the result, hit the Try button. Once you are satisfied with the result, press OK to apply the process to the photo.
+
+While the Local Contrast tool may sound like an easy way to fix photos, you should use it with care: sometimes it can do more damage than good, producing unnaturally looking photos.
+
