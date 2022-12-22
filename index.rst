@@ -368,6 +368,10 @@ The Image Editor
 
         :ref:`enhancement_tools`
 
+    .. container:: tile no-descr
+
+        :ref:`transform_tools`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
