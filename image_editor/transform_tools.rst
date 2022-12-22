@@ -128,3 +128,34 @@ A more elegant way to crop the rotated image is to use the Auto-crop function. C
 Hold the mouse over the combo-box and scroll with the wheel between the two possibilities.
 
 The Anti-aliasing checkbox will smooth the image a bit after rotation. Please read the warning above.
+
+Perspective Adjustment
+----------------------
+
+The digiKam Perspective Adjustment is a tool for adjusting the image's perspective.
+
+With this tool you can work on the perspective in a photograph. This is very useful when working with photographs that contain keystone distortion. Keystone distortion occurs when an object is photographed from an angle rather than from a straight-on view. For example, if you take an image of a tall building from ground level, the edges of the building appear to meet each other at the far end. On the other hand you can use this tool to introduce a new perspective that is not a face-on view but to give the image a creative spin.
+
+All perspective transformations are performed around a fixed point called the reference point. This point is at the center of the item you are transforming and is displayed by a red circle.
+
+To change the perspective, use the square areas at the image corners for dragging. The perspective preview is rendered automatically. On the right of the dialog you'll find a set of information witch help you to control the perspective change:
+
+    New Width: show the new image width in pixels including the empty area around the image resulting from the geometrical transformation.
+
+    New Height: show the new image height in pixels including the empty area around the image resulting from the geometrical transformation.
+
+    Top Left Angle: show the current angle in degrees at the top left corner of the perspective area.
+
+    Top Right Angle: show the current angle in degrees at the top right corner of the perspective area.
+
+    Bottom Left Angle: show the current angle in degrees at the bottom left corner of the perspective area.
+
+    Bottom Right Angle: show the current angle in degrees at the bottom right corner of the perspective area.
+
+.. warning::
+
+    After applying the perspective adjustment, the image inevitably gets blurred a little bit. For a single adjustment, the amount of blurring is quite small, but two adjustments cause twice as much blurring as one, and there is no reason to blur things more than you have to.
+
+After you have adjusted the perspective of an image there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform → Crop Image Editor menu.
+
+.. figure:: images/editor-perspective-tool.png
