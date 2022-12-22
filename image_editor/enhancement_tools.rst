@@ -220,5 +220,58 @@ Save As... and Load... buttons are used to do just that. Any Photograph Restorat
 .. warning::
 
     Photograph restoration is (comparatively) very fast in what it is doing, but it can take a long time to run and cause high CPU load. You may always abort computation by pressing Abort button during preview rendering.
-    
-    
+
+Vignetting Correction
+---------------------
+
+Overview
+~~~~~~~~
+
+digiKam The Vignetting correction is a tool to correct image vignetting (under-exposure in the corners).
+
+Wide angle lenses, especially those used in medium and large format photography, frequently do not uniformly illuminate the entire sensor plane. Instead, they "vignette" (shade) the edges and corners of the image, substantially reducing the light reaching the sensor there. But telelenses may show vignetting too.
+
+The traditional solution for this is to attach a "center filter" to the lens. This is a neutral density filter with maximum density at the optical axis of the lens, clear at the periphery, with density varying inversely to the vignetting of the lens. A center filter has many advantages: not only does it automatically correct for full-frame images but, since it's fixed to the front of the lens, it also compensates for the off-center vignetting which occurs when camera movements are employed for perspective or plane of focus adjustment.
+
+But there are disadvantages as well. Many center filters require a 1.5 or 2 f-stop filter factor adjustment, which may in turn necessitate a shutter speed so slow (since wide angle lenses, even with center filters, are best used at apertures of f/16 or smaller) that hand-holding the camera is impossible and motion blur becomes a problem when photographing moving objects.
+
+With the wide exposure range of present-day film and the color (or grey-scale) depth of digital camera or film scanners, it is possible to simulate the effect of a center filter by applying an equivalent transform to a raw image taken without the filter.
+
+Using the vignetting correction tool
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: images/editor_vignetting_correction.png
+
+Five sliders give you control over the vignetting correction filter, and three more over the target image exposure:
+
+    Amount: this option controls the degree of luminosity attenuation by the filter at its point of maximum amount. The default amount is 2.0, which corresponds to an optical filter with a 1 f-stop filter factor (or, by no coincidence, a factor of 2 in luminosity). Increase the amount to compensate for a greater degree of vignetting; reduce it for less.
+
+    Feather: this option determines the rate at which the filter intensity falls off from the point of maximum amount toward the edges, expressed as a power factor. The default of 1 yields a linear reduction in filter amount with distance from the center. Power factors greater than 1.0 cause a faster fall-off (for example, a power of 2 causes the amount to decrease as the square of the distance from the center) and causes the effect of the filter to be concentrated near the center. Powers less than 1 spread out the amount of the filter toward the edges; a power of 0.5 causes the amount to fall as the square root of the distance from the center.
+
+    Radius: this option specifies the radius, as a multiple of the half diagonal measure of the image, at which the amount of the filter falls off to zero (or, in other words, becomes transparent). The default value of 1.0 specifies a filter which is transparent at its corners. A radius specification greater than 1 extends the effect of the center filter beyond the edges of the image, while a radius less than one limits the filter's action to a region smaller than the image. When compensating for vignetting by lenses used with large format and some medium format cameras, the default radius factor of 1 is rarely correct! These lenses often "cover" an image circle substantially larger than the film to permit camera movements to control perspective and focus, and consequently have a vignetting pattern which extends well beyond the edges of the film, requiring a radius setting greater than 1 to simulate a center filter covering the entire image circle.
+
+    X offset and Y offset settings: these options moves respectively the center of the filter horizontally or vertically up to the border of the image by the specified percentage. A negative value for the X offset will shift the filter to the left while a positive value will shift it to the right. A negative value for the Y offset will move the filter up, and finally a positive value will move it down.
+
+    Add Vignetting: many photographs looks flat because of a distracting background or another composition matter. While most of time you will want to remove vignetting it is a fact that a selective vignetting could improve the readability of a photograph and draw the eyes to the intended subject. As an artist you may choose this option, ticking it will invert the filter thus darkening the corners of a photograph.
+
+The only way to be sure which settings of Amount, Feather, and Radius best compensate for the actual optical characteristics of a given lens is to expose a uniformly illuminated scene (for example, a grey card lit by diffuse light) and perform densitometry on the resulting image (for example with Adjust Level tool histogram position bar). Failing that, or specifications by the lens manufacturer giving the precise degree of vignetting at one or more working apertures, you may have to experiment with different settings to find those which work best for each of your lenses. For help you in this task, the widget dialog provide a thumbnail mask rendering applied on the image. Fortunately, the response of the human eye is logarithmic, not linear like most digital imaging sensors, so you needn't precisely compensate for the actual vignetting to create images which viewers will perceive as uniformly illuminated.
+
+.. note::
+
+    If you want a finer exposure re-adjustment of the target image, use the Adjust Curve tool from Image Editor available under Color → Adjust Curve menu entry.
+
+The vignetting correction tool in action
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is an example of an anti vignetting correction applied to an image. The original image (1) shows vignetting in the corners, the corrected image (2) much less. A brightness and contrast correction is also applied to the target image by this tool.
+
+The values used for this example are:
+
+    Density = 2.6.
+
+    Power = 0.9.
+
+    Radius = 1.1.
+
+.. figure:: images/editor_antivignetting_preview.png
+
