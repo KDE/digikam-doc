@@ -137,3 +137,31 @@ Open the photo you want in the editor and choose Enhance → Local Contrast. The
 
 While the Local Contrast tool may sound like an easy way to fix photos, you should use it with care: sometimes it can do more damage than good, producing unnaturally looking photos.
 
+Noise Reduction
+---------------
+
+digiKam The Noise Reduction is a powerful tool to reduce the image noise.
+
+This tool provides selectable image filters to remove specks or other artifacts caused by junk such as dust or hair on the lens. It also can be used to remove Sensor Noise from the camera that maybe caused by high ISO settings, as well as the so-called Moiré Patterns on scanned images from books or magazines.
+
+If you want more information about what's digital camera sensor noise, please take a look in this tutorial.
+
+.. figure:: images/editor_noise_reduction.png
+
+The above screenshot shows a typical scene taken with an digital camera using a high sensitivity ISO setting. It shows grainy noise which can be reduced successfully with this tool.
+
+The re-sizeable image panel with the original preview helps you to pan within the image. Move the red rectangle around to select the area that lets you judge on the optimal filter settings. The preview window shows the filter output using the current settings. It can be rearranged in four different combinations as depicted in the icons below the original preview. This screenshot shows the first arrangement where the same cutout is shown for comparison. On the bottom of preview area, you can see Zoom Factor settings to magnify an area of the image.
+
+You can see below a full description of all parameters:
+
+    Estimate Noise: compute automatically all noise reduction settings by a parse of noise contained in image. By default it recommended to turn on this option and check the result. If reduction of noise is not enough efficient or danamge the image, turn off this option, and adjust the Luminance, Chrominance Blue, and Chrominance Red settings manually.
+
+    Threshold: use the slider for coarse adjustment, and the spin control for fine adjustment.
+    The threshold is the value below which everything is considered noise. This value should be set so that edges and details are clearly visible and noise is smoothed out. These settings exists for the Luminance, Chrominance Blue, and Chrominance Red channels. Simply adjust it and watch the preview. Adjustment must be made carefully, because the gap between noisy, smooth, and blur is very small. Adjust it as carefully as you would adjust the focus of a camera.
+
+    Softness: use the slider for coarse adjustment, and the spin control for fine adjustment. The softness adjusts the level of the thresholding (soft as opposed to hard thresholding). The higher the softness the more noise remains in the image. These settings exists for the Luminance, Chrominance Blue, and Chrominance Red channels. Simply adjust it and watch the preview. As for the Threshold settings, adjustment must be made carefully, because the gap between noisy, smooth, and blur is very small. Adjust it as carefully as you would adjust the focus of a camera.
+    
+    Save As... and Load...: these buttons are used to do just that. Any Noise Reduction parameters that you have set can be saved to the filesystem and loaded later.
+
+    Defaults: this button resets all settings to default values.
+
