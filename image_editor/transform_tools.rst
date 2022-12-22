@@ -75,4 +75,56 @@ At the very bottom line of the dialog, the Max. Ratio button lets you set the cr
 
     The Aspect Ratio Crop tool remembers the settings depending on image orientation (horizontal or vertical). When you use the crop tool next time, these settings will be used as default values depending on the image orientation. The changed image dimensions are stored into the EXIF tables so that the EXIF data reflects the cropped image and not the original one.
 
+Composition Guide
+~~~~~~~~~~~~~~~~~
 
+When first looking at an image, the eye of the viewer rarely settles at the center of the image, but moves instead from the top left to the right, and then from the lower left to the right again. This pattern is unconscious but has been well documented. It is probably associated with the western reading pattern. From the photographer's point of view, the goal then becomes to guide the gaze of the viewer to the subject, being aware of the way many people perceive an image.
+
+The Composition Guide settings provides guiding elements to better compose your images. These guides are:
+
+    - **Rule of Thirds**: a grid that divides the image into thirds in every direction (that makes for 9 parts). These proportions are close to the golden rule and are derived from the field of view of the human eye. They are often used with slight variations throughout a large number of commonly used objects. Within that frame there are precise areas where the important parts of the image should be placed. The same principle is used to determine the position of the horizon and the proportion of ground to sky. Many photographers and artists are aware of the Rule of Thirds, where an image is divided into three sections vertically and horizontally and the points of intersection represent places to position important visual elements. Moving a horizon in a landscape to the position of one third is often more effective than placing it in the middle, but it could also be placed near the bottom one quarter or sixth. There is nothing obligatory about applying the Rule of Thirds. In placing visual elements for effective composition, one must assess many factors including color, dominance, size and balance together with proportion. Often a certain amount of image balance or tension can make a composition more effective.
+
+    - **Harmonious Triangles**: harmonious divisions rely on the principle of similarity. Like the Rule of Thirds guide, Harmonious Triangles are another division of the image using a rectangle into equiangular harmonious triangles aligned with the diagonal.
+
+    - **Golden Mean**: the Golden Mean is a ratio underlying numerous growth patterns throughout nature (from the spiral of a Nautilus shell to the petals of a sunflower), it has an uncanny way of showing up in all kinds of things we deem beautiful. The Golden Ratio is the irrational number 1.618033988..., and it is usage dates back to the ancient Egyptians and Greeks who used it in the construction of their temples and pyramids. Artists and architects throughout time have used the Golden Ratio when composing their paintings, buildings, and even photographs, in order to give their creations a sense of natural order and beauty. The ratio is inherent in the Fibonacci series: 1, 1, 2, 3, 5, 8, 13, 21, 34 etc.., where each succeeding number after 1 is equal to the sum of the two preceding numbers. The ratio formed 1:1.618 is the Golden Mean. A composition following this rule is considered visually harmonious. The Golden Mean provides more fluid guidelines when used to compose an image. These guides are listed below:
+
+        - The **Golden Spiral** guide will increase your odds of getting captivating results in your photographs. As opposed to Rule of Thirds, the Golden Spiral forms a fluid line for the eye to trace through the image. This style of composition will invite the viewer's gaze into the image along the line of the spiral, creating a more symmetrical visual flow, and an overall compelling viewing experience. See below an image composition example using golden spiral.
+
+        - One more rule is a **Golden Spiral Sections** (or Golden Rectangles). These rectangles are used to build the Golden Spiral. There should be something leading the eye to the center of the composition. It could be a line or several subjects. This "something" could just be there without leading the eyes, but it would make its job.
+
+        - The **Golden Triangles** is a derivative of the Golden Spiral discussed above. Its vertices are the midpoints of the sides of the Golden Rectangle. Note that unlike Harmonious Triangles, Golden Triangles aren't equiangular triangles. Placing diagonals along these lines can make an otherwise static subject appear more dynamic. When you use Golden Triangles to break up your frame, you're creating an effect professional photographic experts call Dynamic Symmetry. Try to keep your focal subject on one of the intersecting points, and place other visual information into the triangles you've already divided out. The result will be a very attractive composition you may not have otherwise attained.
+
+        - Like the Rule of **Thirds the Golden Sections** affects the ratio of an image size as well as the placement of the main subjects on the photo. This ratio is close to the 35mm ratio, so you don't need to change the size of the photo in most cases. But you need to consider the composition: the main subject should lie on one of the four lines or four intersections (subject's eye for example). Truthfully speaking, these rules are not the same. Rule of Thirds is a simplified version of the Golden Mean.
+
+The Flip Horizontal and Flip Vertical options can be used to apply flip transformation to the harmonious divisions.
+
+The Color button lets you set the guidelines color. If you have an high color contrast image, the guidelines may become invisible. By the way, you can adapt the color guide to the current image.
+
+Free Rotation
+-------------
+
+The digiKam Free Rotation is a tool for image rotation by any arbitrary angle.
+
+When taking an image it is all too easy to hold the camera not quite perfectly vertical or horizontal, resulting in an image where things are tilted at an angle. The way to fix this with the digiKam Image Editor is to use the Free Rotation tool. Select Transform → Free Rotation and adjust to the target angle.
+
+Rotate your image by using the Angle slider (value in degrees). Press to Reset Values for reset the slider to zero. A rotating effect preview is available on the right side of the dialog. The new target image dimensions in pixels are shown.
+
+For better orientation, the Free Rotation tool provides a vertical and horizontal guide. Move the mouse cursor under image preview to display the dashed line guide. Move the cursor to an supposedly vertical or horizontal feature in the image like the sea or a building border and press the left mouse button for freeze the dashed lines position. Now, adjust the angle accordingly with the guide.
+
+.. warning::
+
+    After rotating the image, you often find that things are better but not quite perfect. One solution is to rotate a bit more, but there is a disadvantage to that approach. Each time you rotate an image, because the rotated pixels don't line up precisely with the original pixels, the image inevitably gets blurred a little bit. For a single rotation, the amount of blurring is quite small, but two rotations cause twice as much blurring as one, and there is no reason to blur things more than you have to. Sure, the guide tool available in the Free Rotation preview can help you to apply correctly at the first time an angle adjustment to an image.
+
+.. figure:: images/editor_free_rotation.png
+
+After you have rotated an image, there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform → Crop Image Editor menu.
+
+A more elegant way to crop the rotated image is to use the Auto-crop function. Choose anyone of the following options from the combo-box to your preference:
+
+    Widest area This option crops the rotated image to the widest possible (width) rectangular section.
+
+    Largest area This options crops the rotated image to the biggest surface.
+
+Hold the mouse over the combo-box and scroll with the wheel between the two possibilities.
+
+The Anti-aliasing checkbox will smooth the image a bit after rotation. Please read the warning above.
