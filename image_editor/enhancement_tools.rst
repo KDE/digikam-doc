@@ -108,7 +108,7 @@ Load this file to the widget using the Black Frame button. The tool will process
 Using the hotpixel tool
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: images/editor_hot_pixels.png
+.. figure:: images/editor_hotpixels_fixer.png
 
 At first, as explained in the previous section, you need to load a Black Frame corresponding to the image to correct. An automatic parsing will be processed on the Black Frame to find bad pixels. Note that the widget will remember the previous Black Frame used on the last session and it will be re-opened automatically with the next session.
 
