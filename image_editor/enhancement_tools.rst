@@ -160,8 +160,65 @@ You can see below a full description of all parameters:
     The threshold is the value below which everything is considered noise. This value should be set so that edges and details are clearly visible and noise is smoothed out. These settings exists for the Luminance, Chrominance Blue, and Chrominance Red channels. Simply adjust it and watch the preview. Adjustment must be made carefully, because the gap between noisy, smooth, and blur is very small. Adjust it as carefully as you would adjust the focus of a camera.
 
     Softness: use the slider for coarse adjustment, and the spin control for fine adjustment. The softness adjusts the level of the thresholding (soft as opposed to hard thresholding). The higher the softness the more noise remains in the image. These settings exists for the Luminance, Chrominance Blue, and Chrominance Red channels. Simply adjust it and watch the preview. As for the Threshold settings, adjustment must be made carefully, because the gap between noisy, smooth, and blur is very small. Adjust it as carefully as you would adjust the focus of a camera.
-    
+
     Save As... and Load...: these buttons are used to do just that. Any Noise Reduction parameters that you have set can be saved to the filesystem and loaded later.
 
     Defaults: this button resets all settings to default values.
 
+Blur Tool
+---------
+
+The Blur Tool is dedicated to soft an image.
+
+Sometimes an image is too crisp for your purposes. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the Blur Tool with the Enhance → Blur menu entry and experiment with the level. The preview window on the right of the dialog shows the effect of the operation on your photograph.
+
+.. figure:: images/editor_blur.png
+
+Photograph Restoration
+----------------------
+
+digiKam The Photograph Restoration is definitely one of the most advanced tools to reduce photograph artifacts.
+
+This fantastic restoration filter is a development providing unprecedented possibilities in the public domain to remove lots of unwanted stuff from your images. It is well adapted to deal with degraded images suffering from Gaussian noise, film grain, scratches or compression artifacts and local degradations usually encountered in digital (original or digitized) images. The smoothing happens along the image curvatures, thus preserving the meaningful content much alike our human eye would want it.
+
+.. figure:: images/editor_restoration.png
+
+The tool comes with several presets as starting points and to simplify the restoration. The preset settings available are listed below:
+
+    None: Using most common default filter settings not optimized for any particular purpose.
+
+    Reduce Uniform Noise: Optimum settings for image noise due to sensors.
+
+    Reduce JPEG Artifacts: JPEG's compression is not perfect, in fact for some types of images it is far from it. As a lossy compression algorithm, there are some compression "artifacts" - slight defaults showing in the decompressed image. This setting aims at correcting this problem.
+
+    Reduce Texturing: Optimized to remove artifacts from scanning, digitizing or Moire patterns.
+
+If you want to set filter parameters for finer adjustments, use Smoothing Settings and Advanced Settings tabs:
+
+.. figure:: images/editor_restoration_settings1.png
+
+    Detail Preservation p [0, 100]: this controls the preservation of the curvatures (features). A low value forces an equal smoothing across the image, whereas bigger values preferably smooth the homogeneous regions and leaves the details sharper. A value of 0.9 should well preserve details so that no sharpening is required afterwards. Note that Detail Preservation must be always inferior to Anisotropy.
+
+    Anisotropy alpha [0, 100]: a low value smooths equally in all directions, whereas a value close to 1 smooths in one direction only. If you have film grain or CCD kind of noise a high value will result in wave-like pattern, whereas JPEG artifacts are suited for values close to 1.
+
+    Smoothing [0, 500]: this sets the maximum overall smoothing factor (when p defines the relative smoothing). Set it according to the noise level.
+
+    Regularity [0, 100]: this parameter is concerned with the uniformity of the smoothing. Imagine the smoothing process as a combing of the image. Then the Regularity would correspond to the size of the comb. The bigger this value, the more even the overall smoothing will be. This is necessary when much noise is present since it is then difficult to estimate the local geometry. Also if you want to achieve a 'van Gogh' turbulence effect, setting it higher than 3 is recommended.
+
+    Filter Iterations: number of times the blurring algorithm is applied. Usually 1 or 2 is sufficient.
+
+.. figure:: images/editor_restoration_settings2.png
+
+    Angular Step da [5, 90]: angular integration of the anisotropy alpha. If alpha is chosen small, da should also be chosen small. But beware, small angles result in long runs! Choose it as large as you can accept.
+
+    Integral Step [0.1, 10]: spatial integration step width in terms of pixels. Should remain less than 1 (sub-pixel smoothing) and never be higher than 2.
+
+    Use Linear Interpolation: The gain in quality if you select this option is only marginal and you lose a factor of 2 in speed. Our recommendation is to leave it off.
+
+Save As... and Load... buttons are used to do just that. Any Photograph Restoration filter settings that you have set can be saved to the filesystem in a text file and loaded later.
+
+.. warning::
+
+    Photograph restoration is (comparatively) very fast in what it is doing, but it can take a long time to run and cause high CPU load. You may always abort computation by pressing Abort button during preview rendering.
+    
+    
