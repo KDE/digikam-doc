@@ -1,5 +1,5 @@
 .. meta::
-   :description: Using the digiKam tag manager
+   :description: Using the digiKam Tag Manager
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
 
 .. metadata-placeholder

@@ -1,5 +1,5 @@
 .. meta::
-   :description: Using the digiKam batch queue manager
+   :description: Using the digiKam Batch queue manager
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
 
 .. metadata-placeholder

@@ -1,5 +1,5 @@
 .. meta::
-   :description: Do your first steps with digiKam Photo Management Program
+   :description: Do Your First Steps >ith digiKam Photo Management Program
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
 
 .. metadata-placeholder
