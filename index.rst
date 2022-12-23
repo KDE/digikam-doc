@@ -404,6 +404,10 @@ The Geolocation Editor
 
         :ref:`geoeditor_overview`
 
+    .. container:: tile no-descr
+
+        :ref:`geoeditor_map`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

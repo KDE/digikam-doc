@@ -22,3 +22,4 @@ Using the digiKam geolocation editor
    :glob:
 
    geolocation_editor/geoeditor_overview.rst
+   geolocation_editor/geoeditor_map.rst
