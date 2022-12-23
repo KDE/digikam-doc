@@ -15,8 +15,8 @@ RAW Processing
 
 .. contents::
 
-Color Management Overview
--------------------------
+The Color Management
+--------------------
 
 The point of a color-managed workflow is to ensure that the colors coming from your camera or scanner have a predictable relationship with the colors you actually photographed or scanned, that the colors displayed on your monitor match the colors coming from your camera or scanner, and that the colors you print or display on the web match the colors you produced in your digital darkroom.
 
@@ -45,7 +45,7 @@ If your imaging workflow meets all six criteria listed below, then you don't nee
     Your only other image output is via email or the web, where sRGB is the de facto standard.
 
 More definitions about Color Management
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You've reached the end of this tutorial on color management. We've "color-managed" our way all the way from the camera and the monitor, to the working space, to the printer. I've learned a lot and I hope you have, too. What follow is some additional comments and definitions:
 
@@ -80,7 +80,7 @@ Copyrighted and copyleft working spaces: I will take it as given that all the or
 And quite a few other working spaces that could be added to this list, are all more or less suitable as working spaces. Which working space you should use depends only and solely on you, on your requirements as the editor of your digital images with your eventual output intentions (web, fine art print, etc.). However, as a critical aside, if you are using Adobe or other copyrighted working space profiles, these profiles contain copyright information that shows up in your image exif information. Lately I've been perusing the openicc mailing lists. Apparently LCMS can be used to produce nonbranded, copyleft working space profiles that are just the same as - actually indistinguishable from - the branded, copyrighted working space profiles. It would be a wonderful addition to digiKam if a set of "copyleft" working space profiles, including nonbranded, relabelled versions of ProPhotoRGB, AdobeRGB, and Adobe WidegamutRGB (perhaps in two flavors each: linear gamma and the usual gamma), could be bundled as part of the digiKam package.
 
 The Color Space Connections
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 So the question for each RGB trio of values in the (let us assume) 16-bit tiff produced by dcraw becomes, "What does a particular trio of RGB values for the pixels making up images produced by this particular (make and model) camera really mean in terms of some absolute standard referencing some ideal observer". This absolute standard referencing an ideal observer is more commonly called a Profile Connection Space. A camera profile is needed to accurately characterize or describe the response of a given camera's pixels to light entering that camera, so that the RGB values in the output file produced by the raw converter can be translated first into an absolute Profile Connection Space (PCS) and then from the PCS to your chosen working space. As a very important aside, for most of the open source world (including digikam), the software used to translate from the camera profile to the PCS and from the PCS to your chosen working space and eventually to your chosen output space (for printing or perhaps monitor display) is based on lcms (the little color management engine). For what it's worth, my own testing has shown that lcms does more accurate conversions than Adobe's proprietary color conversion engine. Further, for almost all raw conversion programs, including commercial closed source software such as Adobe Photoshop, the raw conversion is typically based on decoding of the proprietary raw file done by dcraw. David Coffin, author of dcraw, is the hero of raw conversion - without him we'd all be stuck using the usually windows/mac only proprietary software that comes with our digital cameras. The dcraw's interpolation algorithms (not to be confused with the aforementioned decoding of the proprietary raw file), which are part of digiKam if properly used, produce results equal or superior to commercial, closed source software. We in the world of Linux® and open source software are not second-class citizens when it comes to digital imaging. Far from.
 
@@ -97,19 +97,19 @@ There are two commonly used Profile Connection Spaces - CIELAB and CIEXYZ (see C
 To back up a little bit and look at the first color profile an image encounters, that is, the camera profile (see (1) immediately above) - dcraw can in fact apply your camera profile for you (dcraw uses lcms internally). But (i)the generating of the tiff composed of the interpolated RGB values derived from the camera raw file, and (ii)the application of the camera profile to the interpolated file, are two very distinct and totally separable (separable in theory and practice for dcraw; in theory only for most raw converters) steps. The dcraw command line output options "-o 0 [Raw color (unique to each camera)] -4 [16-bit linear] -T [tiff]" tell dcraw to output the RGB numbers from the raw interpolation into a tiff without applying a camera input profile (the words in brackets explain the options but should not be entered at the command line). Then, if you truly enjoy working from the command line, you can use the lcms utility tifficc to apply your camera profile yourself. The advantage of doing so is that you can tell lcms to use high quality conversion (dcraw seems to use the lcms default medium). The disadvantage, of course, is that applying your camera profile from the command line adds one extra step to your raw workflow.
 
 Where to find camera profiles
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 So where do we get these elusive and oh-so-necessary camera-specific profiles that we need to translate our interpolated raw files to a working color space? The UFRAW website section on color management has a bit of information on where to find ready-made camera profiles. It's an unfortunate fact of digital imaging that the camera profiles supplied by Canon, Nikon, and the like don't work as well with raw converters other than each camera manufacturer's own proprietary raw converter. Which is why Bibble and Phase One (and Adobe, but ACR hides the Adobe-made profiles inside the program code), for example, have to make their own profiles for all the cameras that they support - keep this proprietary propensity of your camera manufacturer in mind next time you buy a digital camera.
 
 But back to finding a camera profile for your camera - the real answer (assuming you don't find a ready-made profile that makes you happy) is to make your own camera profile or have one made for you. There are quite a few commercial services who provide profiling services (for a fee, of course). Or you can use LPRof or Argyll to profile your camera yourself. I haven't yet walked down that road so I cannot speak about how easy or difficult the process of profiling a camera might be. But I would imagine, knowing how very meticulous the people behind Argyll, LPRof, and lcms are about color management, that making your own camera profile is very do-able and very likely the results will be better than any proprietary profile. After all, Canon (and also Bibble and Phase One for that matter) didn't profile MY camera - they just profiled a camera like mine.
 
 Working Spaces
---------------
+~~~~~~~~~~~~~~
 
 So now your raw file has been interpolated by dcraw and you've obtained a camera profile and used lcms tifficc to apply your camera profile to the tiff produced by dcraw (or you've asked dcraw to apply it for you). What does all this mean? The real answer involves a lot of math and color science that goes way over my head and likely yours. The short, practical answer is that neither the camera profile space nor the Profile Connection Space is an appropriate space for image editing. Your next step is to choose a working space for image editing. And then you (or rather the lcms color management engine that your open source digital imaging software uses) actually perform a double translation. First lcms uses the camera profile to translate the RGB values of each pixel in the dcraw-output-image-without-camera-profile-applied into the aforementioned Profile Connection Space. Then it translates the RGB values of each pixel from the PCS to your chosen working space.
 
 Confusions and confusing terminology
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Before talking more about working spaces, some confusions and confusing terminology needs to be cleared up:
 
@@ -126,7 +126,7 @@ Sixth (and again, strictly for future reference), assign a profile means change 
 Finally, (and this is a crucially important point), color management is NOT only relevant if you shoot raw. Color management affects every stage of the image processing pipeline, whether you start with a raw file that you, yourself interpolate and translate into a tiff, or if you start with a jpeg or tiff produced by your camera.
 
 Copyrighted and copyleft working spaces
----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 I will take it as given that ALL the ordinarily encountered working spaces, such as:
 
@@ -143,7 +143,7 @@ I will take it as given that ALL the ordinarily encountered working spaces, such
 However, as a critical aside, if you are using Adobe (or other copyrighted) working space profiles, these profiles contain copyright information that shows up in your image exif information. Lately I've been perusing the openicc mailing lists. Apparently lcms can be used to produce nonbranded, copyleft working space profiles that are just the same as - actually indistinguishable from - the branded, copyrighted working space profiles. It would be a wonderful addition to digikam if a set of "copyleft" working space profiles, including nonbranded, relabelled versions of ProPhotoRGB, AdobeRGB, and Adobe WidegamutRGB (perhaps in two flavors each: linear gamma and the usual gamma), could be bundled as part of the digiKam package.
 
 Which working space: gamma
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now, the next question is: which working space should I use? Wikipedia says:
 
@@ -157,7 +157,7 @@ I am not aware of a list of other technical requirements for a suitable working 
 
     White point, usually D50 or D65, which dictates the total dynamic range of the working space, from 0,0,0 (total black) to the brightest possible white.
 
-    Gamma. 
+    Gamma.
 
 The practical consequences that result from using different RGB primaries, leading to larger or smaller working spaces, are discussed below. The practical consequences for different choices for the working space white point are beyond the scope of this tutorial. Here I will talk a little bit about the practical consequences of the working space gamma (for an excellent article and references, look up gamma on wikipedia).
 
@@ -176,7 +176,7 @@ In addition to gamma 1.8 and gamma 2.2 the only other gamma for a working space 
 Unfortunately and despite their undeniable mathematical advantages, linear gamma working spaces have so few tones in the shadows that (in my opinion) they are impossible to use for editing if one is working in 8-bits, and still problematic at 16-bits. When the day comes when we are all doing our editing on 32-bit files produced by our HDR cameras on our personal supercomputers, I predict that we will all be using working spaces with gamma 1; Adobe Lightroom is already using a linear gamma working space "under the hood" and Lightzone has always used a linear gamma working space.
 
 Which working space: large gamut or small gamut
------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 One major consideration in choosing a working space is that some working spaces are bigger than others, meaning they cover more of the visible spectrum (and perhaps even include some imaginary colors - mathematical constructs that don't really exist). These bigger spaces offer the advantage of allowing you to keep all the colors captured by your camera and preserved by the lcms conversion from your camera profile to the really big profile connection space.
 
@@ -195,12 +195,12 @@ In other words, large gamut working spaces, improperly handled, can lead to lost
 The whys of these bits of advice regarding which working space are beyond the scope of this tutorial. See Bruce Lindbloom's excellent website (Info, Information about RGB Working Spaces) for a visual comparison of the gamut (array of included colors) of the various working color spaces. See here and here for a pro and con presentation, respectively, of the merits of using large gamut working spaces. And while you are on the cambridgeincolour.com website, check out the tutorial on color management.
 
 Soft Proofing
--------------
+~~~~~~~~~~~~~
 
 Soft Proofing is a way of previewing on the screen (monitor) the result to be expected from an output on another device, typically a printer. Soft proofing will show you the difference to be expected before you actually do it (and waste your costly ink). So you can improve your settings without wasting time and money.
 
 Rendering intention
--------------------
+~~~~~~~~~~~~~~~~~~~
 
 Rendering intent refers to the way gamuts are handled when the intended target color space cannot handle the full gamut.
 
@@ -213,10 +213,157 @@ Rendering intent refers to the way gamuts are handled when the intended target c
     Saturation, also called Graphic or Preserve Saturation. Maps the saturated primary colors in the source to saturated primary colors in the destination, neglecting differences in hue, saturation, or lightness. For block graphics; rarely of interest to photographers. 
 
 Links
------
+~~~~~
 
     `Color wiki <http://www.oyranos.org/wiki/>`_
 
     `CIELab <https://en.wikipedia.org/wiki/CIELAB_color_space#CIELAB>`_
 
     `Gamut explained <https://en.wikipedia.org/wiki/Gamut>`_
+
+The Working Space
+-----------------
+
+Overview
+~~~~~~~~
+
+So I told digiKam where to find my monitor profile and I have a camera profile that I applied to the image file produced by my raw processing software. What's the next step in color management?
+
+You need to choose a working color space so you can edit your image. LCMS will transform your image from your camera color space to your chosen working space, via the PCS specified by your camera color profile.
+Why cannot I just edit my images in the color space described by the camera profile?
+
+After all, the camera profile should provide the best "fit" to the colors recorded by my camera, as processed by my raw processing procedure, right? Wikipedia says, "Working spaces, such as sRGB or Adobe RGB, are color spaces that facilitate good results while editing. For instance, pixels with equal values of RGB should appear neutral." "[P]ixels with equal values of RGB should appear neutral" just means that for any given pixel in an image that has been converted to a suitable working space, if R=G=B you should see grey or black or white on your screen. Many camera profiles violate this "neutral" condition. I am not aware of a list of other technical requirements for a suitable working space. However, I can think of another good reason why you wouldn't want to edit your image in your camera profile color space. If you look at the size of a typical camera profile, it is on the order of a quarter to a half a megabyte or more. It's got a lot of information about all the changes that need to be made at different regions of color and tonality in the original scene, to get accurate color rendition from the RGB values that come out of the raw processor. The camera profile is accurate (at least for colors in the original target) but not particularly mathematically smooth. Working space color profiles, on the other hand, are very small in size (half a kilobyte instead of half a megabyte) because they describe a color gamut in terms of smooth, continuous mathematical functions. Working space profiles don't need to make allowances for the "messiness" of real world sensors, so the mathematical manipulations performed during image editing will go much more smoothly and accurately than if you try to edit your image while it is still in the camera color space.
+
+Which working space should I choose?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Everyone has an opinion. I'm just going to lay out some of the bits of information needed to make an informed choice. Working space profiles are characterized by:
+
+    Gamma (or other transfer function), which dictates how much the original linear intensity values captured by the camera sensor (and subjected to the in-camera A-to-D conversion, then interpolated by the raw processing program to produce the image file) are altered to make editing easier or more precise.
+
+    RGB primaries which dictate the range of colors, that is, the color gamut, covered by a given profile.
+
+    White point (usually D50 or D65 though other values may be used), which specifies the color temperature of the white point of the working space. 
+
+What gamma should my working space have?
+
+The gamma of a color profile dictates what power transform needs to take place to properly convert from an image's embedded color profile (perhaps your working color space or your camera color profile) to another color profile with a different gamma, such as your chosen working space, or the display profile used to display the image on the screen or perhaps from one working space to another, or perhaps from your working space to your printer's color space. Dcraw outputs a 16-bit image with a linear gamma, which means that a histogram of the resulting image file shows the actual amount of light that each pixel on the camera sensor captured during the exposure (paraphrasing this page). (Which is why at present applying a camera profile to the dcraw output also requires applying an appropriate gamma transform to get to the desired working space, unless the camera profile also uses gamma=1.)
+
+One practical consequence of the gamma of a working space is that the higher the gamma, the more discrete tones are available for editing in the shadows, with consequently fewer tones available in the highlights. Changing the gamma of an image redistributes the number of tones available in the lighter and darker areas of an image. Theoretically, if you are working on a very dark-toned (low key) image you might want a working space with a higher gamma. And if you are working on a high key image, say a picture taken in full noon sunlight of a wedding dress with snow as a backdrop, you might want to choose a working space with a lower gamma, so you have more available tonal gradations in the highlights.
+
+Theory aside, in the real world of real image editing, almost everyone uses working spaces with either a gamma of either 1.8 or 2.2. sRGB and L*-RGB are two notable exceptions.
+
+sRGB uses a transfer function close to that of a CRT (and thus not necessarily relevant to image editing or to display on an LCD). As Wikipedia notes, "Unlike most other RGB color spaces the sRGB gamma can not be expressed as a single numerical value. The overall gamma is approximately 2.2, consisting of a linear (gamma 1.0) section near black, and a non-linear section elsewhere involving a 2.4 exponent and a gamma (slope of log output versus log input) changing from 1.0 through about 2.3" (cited from this page), which makes for some complicated math during image processing.
+
+L*-RGB uses as its transfer function the same perceptually uniform transfer function as the CIELab color space. "When storing colors in limited precision values" using a perceptually uniform transfer function "can improve the reproduction of tones" (cited from this page).
+
+In addition to gamma=1.8 and gamma=2.2, the only other gamma for a working space that gets much mention or use is linear gamma, or gamma=1.0. As noted above, dcraw outputs linear gamma files if you ask for 16-bit output. Linear gamma is used in HDR (high dynamic range) imaging and also if one wants to avoid introducing gamma-induced errors into one's regular low dynamic range editing.
+
+"Gamma-induced errors" is a topic outside the scope of this tutorial. But see "Gamma errors in picture scaling" (cited from this page) for gamma-induced tonality shifts; and of course see Timo Autiokari's informative (albeit somewhat infamous) website for a whole-hearted endorsement of using linear gamma working spaces (Timo's website seems to be down at present, though archived copies of his articles are still available through google). Bruce Lindbloom mentions a commonly-encountered gamma-induced error that is caused by incorrectly calculating luminance in a nonlinear RGB working space (see this page, sidenote 1). And in a similar vein, the calculations involved in mixing colors together to produce new colors (such as using a digital filter to add warmth to an image) result in gamma errors unless the new colors are calculated by first transforming all the relevant values back to their linear values.
+
+Unfortunately and despite their undeniable mathematical advantages, linear gamma working spaces have so few tones in the shadows that (in my opinion) they are impossible to use for editing if one is working in 8-bits, and still problematic at 16-bits. When the day comes when we are all doing our editing on 32-bit files produced by our HDR cameras on our personal supercomputers, I predict that we will all be using working spaces with gamma=1. Adobe Lightroom is already using a linear gamma working space "under the hood", CS2 allows the option of using linear gamma for mixing colors, and Lightzone has always used a linear gamma working space.
+
+How many discrete tonal steps are there in a digital image?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In an 8-bit image, you have 256 tonal steps from solid black to solid white. In a 16-bit image theoretically you have 65536 steps. But remember, those 16-bits started out as either 10 bits (=1024 steps), 12 bits (=4096 steps), or 14 bits (=16384 steps) as produced by the camera's A-to-D converter - the extra bits to reach 16-bits start out as just padding. The available tones are not distributed evenly from light to dark. In linear gamma mode (as the camera sensor sees things), there's a whole lot more tones in the highlights than in the shadows. Hence the advice, if you shoot raw, to "expose to the right but don't blow the highlights". See Ron Bigelow's articles on "why raw", for a full discussion of the distribution of available tones in a raw image.
+
+Should I use a large-gamut or a small-gamut working space?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+One major consideration in choosing a working space is that some working spaces are bigger than others, meaning they cover more of the visible spectrum (and as a consequence include some imaginary colors - mathematical constructs that don't really exist). These bigger spaces offer the advantage of allowing you to keep all the colors captured by your camera and preserved by the LCMS conversion from your camera profile to the super-wide-gamut profile connection space and out again to your chosen working space.
+
+But keeping all the possible colors comes at a price, as explained below. And it seems that any given digital image likely only contains a small subset of all the possible visible colors that your camera is capable of capturing. This small subset is easily contained in one of the smaller working spaces (an exception requiring a larger color gamut would be a picture of a highly saturated object such as yellow daffodil).
+
+Using a very large working space means that editing your image (applying curves, increasing saturation, etc.) can easily produce colors that your eventual output device (printer, monitor) simply cannot reproduce (you cannot see these colors while you're editing, either). So the conversion from your working space to your output device space (say your printer) will have to remap the out-of-gamut colors in your edited image, some of which might even be totally imaginary, to your printer color space with its much smaller color gamut. This remapping process will lead to inaccurate colors and loss of saturation at best. Even worse, the remapping can easily lead to banding (posterization - gaps in what should be a smooth color transition, say, across an expanse of blue sky) and clipping (e.g. your carefully crafted muted transitions across delicate shades of red, for example, might get remapped to a solid block of dull red after conversion to your printer's color space). Also, the experts say that 8-bit images just don't have enough tones to stretch across a wide gamut working space without banding and loss of saturation, even before conversion to an output space. So if you choose a large gamut working space, make sure you start with a 16-bit image.
+
+To summarize, large gamut working spaces, improperly handled, can lead to lost information on output. Small gamut working spaces can clip information on input. Medium-sized gamut working spaces try to strike a happy medium. Like Wikipedia says, it's a trade-off.
+
+Here are some oft-repeated bits of advice on choosing a working space:
+
+    For images intended for the web, use (or at least convert the final image to) sRGB.
+
+    For the most accuracy in your image editing (that is, making the most of your limited "bits" with the least risk of banding or clipping when you convert your image from your working space to an output space), use the smallest working space that includes all the colors in the scene that you photographed, plus a little extra room for those new colors you intentionally produce as you edit.
+
+    If you are working in 8-bits rather than 16-bits, choose a smaller rather than a larger working space to avoid clipping and banding.
+
+    For archival purposes, convert your raw file to a 16-bit tiff with a large gamut working space to avoid loosing color information. Then convert this archival tiff to your medium-gamut or large-gamut working space of choice (saving the converted working tiff under a new name, of course). 
+
+For more information on choosing a working space, see this page, Information about RGB Working Spaces for a visual comparison of the gamut (array of included colors) of the various working color spaces. See here and here for a pro- and con- presentation, respectively, of the merits of using large gamut working spaces. And while you are on the cambridgeincolour.com website, check out the tutorial on color management.
+
+The sRGB color space
+--------------------
+
+What is so special about the sRGB color space?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+sRGB is widely accepted as a standard color profile by virtually everyone involved with consumer-oriented imaging. sRGB was proposed in 1996 by Hewlett Packard and Microsoft as a standardized color space for consumer-oriented applications. As stated in the initial HP/MS proposal:
+
+    Hewlett-Packard and Microsoft propose the addition of support for a standard color space, sRGB, within the Microsoft operating systems, HP products, the Internet, and all other interested vendors. The aim of this color space is to complement the current color management strategies by enabling a third method of handling color in the operating systems, device drivers and the Internet that utilizes a simple and robust device independent color definition. This will provide good quality and backward compatibility with minimum transmission and system overhead. Based on a calibrated colorimetric RGB color space well suited to Cathode Ray Tube (CRT) monitors, television, scanners, digital cameras, and printing systems, such a space can be supported with minimum cost to software and hardware vendors... 
+
+    Currently, the ICC [International Color Consortium]... tracks and ensures that a color is correctly mapped from the input to the output color space... by attaching a profile for the input color space to the image in question. This is appropriate for high end users. However, there are a broad range of users that do not require this level of flexibility and control. Additionally, most existing file formats do not, and may never support color profile embedding, and finally, there are a broad range of uses [that] actually discourage people from appending any extra data to their files. A common standard RGB color space addresses these issues ... by merging the many standard and non-standard RGB monitor spaces into a single standard RGB color space. Such a standard could dramatically improve the color fidelity in the desktop environment. For example, if operating system vendors provide support for a standard RGB color space, the input and output device vendors that support this standard color space could easily and confidently communicate color without further color management overhead in the most common situations. (archived copy) 
+
+To summarize, the point of the by-now almost universally adopted sRGB color space was and is to make life easier for consumers (no need to worry about color management), less expensive for manufacturers (no need to worry about compatibility between consumer-level digital cameras or scanners, monitors, printers, and so forth), and more convenient for displaying images on the Internet (don't worry about embedding and reading icc profiles - just assume sRGB).
+
+So if sRGB works so well and makes life so easy for everyone, why use any other color space and thus be forced to worry about color management issues?
+
+sRGB was designed to contain colors easily displayed on consumer-oriented monitors and printed by consumer-oriented printers manufactured in 1996. This least-common-denominator set of viewable and printable colors - the technical term is "color gamut" - is much smaller than the set of colors we can see in the real world, much smaller than the set of colors today's digital cameras can capture, much smaller than the set of colors today's printers can print, and much smaller than the color gamut of the new wide gamut monitors that are beginning to enter the consumer market. For anyone who wants to make use of the wider color gamuts available today even at the consumer level, the gamut of sRGB is too small. Conversely, if you don't intend to make use of an expanded gamut of colors at any point in your digital imaging workflow, then you don't need to worry about non-sRGB color spaces and all the attending intricacies of color management.
+
+How small is sRGB?
+~~~~~~~~~~~~~~~~~~
+
+A visual representation of the limitations of sRGB compared to the colors we actually see in the real world is presented here after. It shows a two-dimensional representation of all the colors we can see (the horseshoe-shaped region) and the colors contained in the sRGB space (the smaller triangular region).
+
+.. figure:: images/editor_cm_542px_CIExy1931_sRGB.png
+
+If you would like to see a two-dimensional representation of sRGB compared to some of the larger working color spaces, see Bruce Lindbloom's excellent site, click on "Info" then on "Information About RGB Working Spaces".
+
+Calibrating and Profiling Your Monitor RGB
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If I choose to work exclusively in the sRGB color space, do I need to calibrate my monitor?
+
+Yes! Whether you stay within the color gamut provided by sRGB or not, you need a properly calibrated monitor because sRGB assumes that your monitor is calibrated to sRGB. Your monitor calibration closes the loop. If you work within the color gamut provided by sRGB then you need to calibrate your monitor to the sRGB standard (or produce and use an accurate monitor profile, or both).
+What are the consequences of working with an uncalibrated monitor?
+
+There are several possible consequences, none of them good. Every monitor, calibrated or otherwise, has a native (uncalibrated) white point, expressed as a temperature in degrees Kelvin. The white point of a monitor (calibrated or not) is the color you see when you are looking at a patch of pure white on your screen. Pure white is when the RGB values in your image all equal 255 (as expressed in 8-bits), such as the plain white background of a web page or an office document. You are thinking, "white is white" but if you were able to line up several monitors calibrated to different white points, you would see that the higher the temperature of the monitor's white point, the bluer the screen looks in comparison with monitors with lower white points. If you can find the controls of your own monitor, change the temperature up and down (remembering to put it back to its initial setting when you are done, unless you decide you want a different white point). Your eyes, which adapt quickly to a constant white point, will easily discern the screen getting bluer and yellower as you move the white point higher and lower. If your uncalibrated monitor is too blue (native CRT color temperature is typically 9300K and sRGB assumes 6500K), as you edit your image you will overcompensate and produce images that will look yellowish and too warm on a properly calibrated monitor. Conversely, if your monitor is too yellow because the color temperature is set too low (I believe LCD native color temperature is around 5500K), your images will look blueish/too cool on a properly calibrated monitor.
+
+Setting a proper white point is only part of monitor calibration. You also need a proper black point, brightness (luminance), and gamma (transfer) function. If your monitor is too dark because the black point is set too low, you will overcompensate and produce images that look washed out on a properly calibrated monitor. Conversely, if your monitor black point is set too high, your images will look took dark and overly saturated on a properly calibrated monitor.
+
+If the brightness/contrast is set too high, you will assume your images have a lot more "pop" than they really have when viewed on a properly calibrated monitor, plus your eyes will hurt and your LCD screen will burn out faster.
+
+If your monitor gamma is improperly set, your tonal variations from dark to light will be off. That is, the shadows or highlights might be overly compressed or expanded, leading you to compensate in the opposite direction. So when viewed on a properly calibrated monitor, the shadows might be too bright or dark (or the highlights too dark or bright), with the rest of the image suffering from tonal over-compression. And heaven help you if the internal R, G, and B guns (or LCD equivalent) of your monitor are improperly set (each gun has its own black point and gain), because the resulting color casts - too green, too magenta, too orange, etc. that you will inevitably create by "correcting" your image during editing - are very obvious when viewed on a properly calibrated monitor.
+
+Whether or not your monitor is properly calibrated, you might be surprised by the results of comparing an image you've edited on your home monitor to the same image as displayed by other monitors in your house or on your friend's and neighbor's monitors. We certainly were - we have two Sony Trinitron monitors in our home, one with a failing (too high) green gun and one with a failing (too high) blue gun. Every image edited on either monitor looked very wrong on the other monitor, until we purchased a spectrophotometer to calibrate and profile both monitors. Unfortunately, at this point neither of these two monitors can be calibrated to display a proper black point, so they are no longer used for image editing - the point being that an additional benefit of using a spectrophotometer is you know when it's time replace your monitor.
+The meaning of "black point" and "brightness" seems pretty clear, but what does "gamma" mean?
+
+See this Wikipedia article for an overview of the role of gamma in monitors and photography; the links at the bottom of the article are all excellent sources of additional information. Wikipedia says "Gamma compression, also known as gamma encoding, is used to encode linear luminance or RGB values into video signals or digital video file values; gamma expansion is the inverse, or decoding, process ... Gamma encoding helps to map data (both analog and digital) into a more perceptually uniform domain." Yeah, I know, clear as mud. Read the Wikipedia article and study the pictures. Eventually it will sink in. If you wade very deeply into image editing and color management, eventually you will need to make decisions about what gamma (or other encoding/decoding function) you want to use when you calibrate your monitor, profile your digital camera, and choose a working color space. When in doubt (for those of you who just want to know which button to push!), gamma=2.2 is a widely-used value, both for monitor calibration and working color spaces.
+What's the difference between calibrating a monitor and profiling a monitor?
+
+When first learning about color management, many people are confused about the difference between calibrating and profiling a monitor (I know I was). Quoting from Hal Engel's excellent discussion in the digiKam users forum:
+
+    Calibration is a process where a device is brought into some defined state by making adjustments to its controls or some other physical means. For example, the act of calibrating a monitor involves adjusting its white point, black level, luminosity and gamma to predetermined or standard values using the monitor's controls and by altering the video card gamma ramp... In contrast to calibration, the process of creating a profile is a characterization of the device that does not involve making any changes or adjustments to the device. Rather it is a measurement process that results in a file that contains a precise mathematical description of the device's color and tonality characteristics. This file is an ICC profile. These characteristics include the transfer function from the device's color space to a standardized absolute color space (this is called a Profile Color Space, PCS, in an ICC profile), the device's white point, black point, primaries and other information. Displays are normally characterized (profiled) in their calibrated state. To summarize, calibration makes changes to the device to alter it's color reproduction characteristics to conform to some predetermined state. Profiling or characterization is a measurement process that results in a detailed description of the device's (normally calibrated) color reproduction characteristics. (cited from here) 
+
+Calibrating your monitor technically is not really part of color management. But obviously a properly calibrated and/or profiled monitor is a prerequisite for a color-managed workflow. This tutorial does not cover the important topics of how to calibrate and profile a monitor. The ArgyllCMS and LProf documentations are very good and highly recommended reading. To use either of this software to calibrate and/or profile your monitor, you will need a spectrophotometer. A spectrophotometer (sometimes called a "spider") is a device for measuring the RGB values of color patches projected onto the monitor screen by calibration/profiling software such as Argyll and LProf. The Argyll website maintains an up-to-date list of supported spectrophotometers. I believe LProf can use all the spectrophotometers that Argyll can use, as the two programs share the relevant sections of code.
+
+Can I calibrate my monitor without a spectrophotometer?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There are various methods given on the Internet for calibrating a monitor without using a spectrophotometer. These "eye-ball" methods are better than not calibrating your monitor at all, and depending your eyeball and your monitor, can produce quite usable results. But the eye-ball methods are not a substitute for a properly calibrated and profiled monitor. For the record, calibrating and profiling a monitor with a spectrophotometer, though intimidating at first, is not difficult. Spectrophotometers can be obtained for well under $100 US (if you opt for a more expensive model, make sure you are paying for a better piece of hardware, rather than just a more fully-featured accompanying bit of manufacturer's software that won't run under Linux). Argyll and/or LProf documentation will guide you through the process of calibrating and profiling your monitor, without your having to learn very much color management theory. And if/when you learn enough about color management to realize that you want or need a more detailed monitor profile of a particular type, for a particular purpose, these two softwares have all the advanced capabilities you could possibly hope for.
+Assuming I've decided to work exclusively in the sRGB color space, what "digiKam buttons" should I push after I calibrate my monitor?
+
+If your monitor has been calibrated to the sRGB standard and you work exclusively in the sRGB color space, then you can disable color management in digikam. You don't need to tell digiKam what monitor profile to use because digiKam defaults to using the sRGB color space as the monitor color space profile. And you don't need to tell digiKam to use a color-managed workflow because digiKam defaults to using sRGB for your camera, printer, and working space, just as laid out by HP and MS back in 1996.
+
+But if you want to take the first steps toward a color-managed workflow, then refer to corresponding page of Settings, enable color management, and select sRGB as your monitor profile, your camera profile, your working space profile, and your printer profile. If you've also used Argyll or LProf to produce a monitor profile after you calibrated your monitor - perhaps named "mymonitorprofile.icc" - then tell digiKam to use "mymonitorprofile.icc" instead of sRGB as your monitor profile.
+
+Where are all the icc profiles are located on my computer?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Well, this is Linux® and it depends on where you put them. I put all my icc profiles in the /usr/share/color/icc folder, which is the closest there is at this moment to a standard Linux location for icc profiles. If you use this folder for your icc profiles, likely you will need to change permissions on the folder to allow your user read/write access. Then you just tell digiKam where your profiles are located.
+Does the lighting and wall/ceiling/drape/furniture colors near my monitor matter?
+
+Yes! Good lighting is a prerequisite for proper image editing and for comparing prints to the image on your screen. If the lighting near your workstation is too bright, colors on your monitor look too dark, and conversely. If the light from the fixtures in your workroom have a low CRI (color rendering index, meaning you don't have full spectrum bulbs), or if the light in your workroom comes from a window and so varies as the weather and time of day varies (or worse, is filtered through colored drapery), or if the walls and ceiling are creating color casts on your monitor, then your editing process will "correct" color casts that don't really exist. Best advice, as far as is consistent with maintaining harmony in the family: neutral grey walls and ceiling, cover the windows, wear neutral clothing, set appropriate light levels using appropriate bulbs and fixtures. For more information on what are the appropriate light levels, bulbs and fixtures for editing images and viewing prints, see the following articles:
+
+    `The Darkroom Makes a Comeback (part 1) <https://creativepro.com/the-darkroom-makes-a-comeback/>`_
+
+    `The Darkroom Makes a Comeback (part 2) <https://creativepro.com/the-darkroom-makes-a-comeback-part-2-/>`_
