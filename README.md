@@ -198,6 +198,8 @@ version is maintained and text is written in ReStructuredText containers. These 
 maintenance scripts which extract strings to translate. Processed contents are exported to dedicated
 containers for translators.
 
+The daily script is hosted in **l10n-scripty** repository and call **StaticMessages.sh** from there through [this script](https://invent.kde.org/sysadmin/l10n-scripty/-/blob/master/process-static-messages.sh).
+
 When translations are updated by the translator teams, files are send back by other maintenance scripts to this project,
 in order to compile internationalized versions of ReStructuredText files. These files are linked in po/ sub-directories
 from this project for conversion to HTML/EPUB.
