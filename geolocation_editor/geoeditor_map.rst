@@ -15,8 +15,8 @@ Geolocation Map
 
 .. contents::
 
-The Coordinate Utils
---------------------
+The Map Utils
+-------------
 
 The Geolocation Editor allows for adding and editing GPS coordinates of picture metadata. The geo-data is stored into the image (EXIF tags) and the location can be displayed in an internal or external browser map. The Geolocation Editor also offers a Reverse Geocoding tool.
 
