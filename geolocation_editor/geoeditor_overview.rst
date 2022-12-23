@@ -33,6 +33,8 @@ There are four tools regarding geolocation in digiKam and two in Showfoto:
 
     The Map tab on the Right Sidebar which shows the location of the image on a map and is purely informative. 
 
+.. figure:: images/geoeditor_tool.png
+
 .. note::
 
     These tools only work for image formats that have EXIF or XMP metadata supported by Exiv2 library.
