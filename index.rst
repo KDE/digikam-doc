@@ -26,7 +26,11 @@ Getting started
 
     .. container:: tile no-descr
 
-        :ref:`introduction_root`
+        :ref:`application_intro`
+
+    .. container:: tile no-descr
+
+        :ref:`application_install`
 
     .. container:: tile no-descr
 

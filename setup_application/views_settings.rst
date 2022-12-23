@@ -40,9 +40,13 @@ An example of an icon is given below:
 
 On the bottom side of this settings panel, you can tune the behavior of the icon with user actions.
 
+.. _preview_resolution:
+
 The Thumbnail click action option permits to choose what should happen when you click on a thumbnail. Two settings are available: **Show preview** to display the image in preview mode (F3) or **Start image editor** to open the image in a separate editor window (F4).
 
 The **Icon View font** option permits to select the font used to display text in icons.
+
+.. _thumbnails_resolution:
 
 The **Use large thumbnail size for high screen resolution** option renders the icon-view with large thumbnail size, for example in case of 4K monitor is used. By default this option is turned off and the maximum thumbnail size is limited to 256 x 256 pixels. When this option is enabled, the thumbnail size can be extended to 512 x 512 pixels. This option will store more data in the thumbnail database and will use more system memory. digiKam needs to be restarted for the option to take effect and the Rebuild Thumbnails option from the Maintenance tool needs to be processed over all collections.
 

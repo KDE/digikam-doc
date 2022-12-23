@@ -22,5 +22,6 @@ An overview to start with digiKam.
    :glob:
 
    getting_started/introduction.rst
+   getting_started/installation.rst
    getting_started/quick_start.rst
    getting_started/database_intro.rst
