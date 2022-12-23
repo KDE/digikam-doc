@@ -390,4 +390,20 @@ The Image Editor
 
    image_editor
 
+######################
+The Geolocation Editor
+######################
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`geoeditor_overview`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   geolocation_editor
+
 .. TODO Add more top level entries here...
