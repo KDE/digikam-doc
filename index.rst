@@ -426,4 +426,20 @@ The Geolocation Editor
 
    geolocation_editor
 
+####################
+The Maintenance Tool
+####################
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`maintenance_overview`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   maintenance_tool
+
 .. TODO Add more top level entries here...
