@@ -211,6 +211,6 @@ The status of the digiKam documentation translations is available [here](https:/
 
 The infrastrusture configuration to rule translations is located in docs-digikam-org section [of this file](https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json).
 
-### Rational
+### Rationale
 
 See the technical details from [this Phabricator entry](https://phabricator.kde.org/T16036) about the DocBook to Sphinx/ReStructuredText manual conversion.
