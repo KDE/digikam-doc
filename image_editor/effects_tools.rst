@@ -122,38 +122,49 @@ With this filter set, you can transform an ordinary photograph into a work of ar
 
 These are the distorting effects available:
 
-    **Fish Eyes**: warps the photograph around a 3D spherical shape to reproduce the common photograph 'Fish Eyes' effect.  
+    **Fish Eyes**: warps the photograph around a 3D spherical shape to reproduce the common photograph 'Fish Eyes' effect.
 
-    **Twirl**: spins the photograph to produce a Twirl pattern.     
+    **Twirl**: spins the photograph to produce a Twirl pattern.
 
-    **Cylinder Horizontal**: warps the photograph around a horizontal cylinder.     
+    **Cylinder Horizontal**: warps the photograph around a horizontal cylinder.
 
-    **Cylinder Vertical**: warps the photograph around a vertical cylinder.     
+    **Cylinder Vertical**: warps the photograph around a vertical cylinder.
 
-    **Cylinder H/V**: warps the photograph around a 2 cylinders, vertical and horizontal.   
+    **Cylinder H/V**: warps the photograph around a 2 cylinders, vertical and horizontal.
 
-    **Caricature**: distorts photograph with 'Fish Eyes' effect inverted.   
+    **Caricature**: distorts photograph with 'Fish Eyes' effect inverted.
 
-    **Multiple Corners**: splits the photograph like a multiple corners pattern.    
+    **Multiple Corners**: splits the photograph like a multiple corners pattern.
 
-    **Waves Horizontal**: distorts the photograph with horizontal waves.    
+    **Waves Horizontal**: distorts the photograph with horizontal waves.
 
-    **Waves Vertical**: distorts the photograph with vertical waves.    
+    **Waves Vertical**: distorts the photograph with vertical waves.
 
-    **Block Waves 1**: divides the image into cells and makes it look as if it is being viewed through glass blocks.    
+    **Block Waves 1**: divides the image into cells and makes it look as if it is being viewed through glass blocks.
 
-    **Block Waves 2**: like Block Waves 1 but with another version of glass blocks distortion.  
+    **Block Waves 2**: like Block Waves 1 but with another version of glass blocks distortion.
 
-    **Circular Waves 1**: distorts the photograph with circular waves.  
+    **Circular Waves 1**: distorts the photograph with circular waves.
 
-    **Circular Waves 2**: other variation of Circular Waves effect.     
+    **Circular Waves 2**: other variation of Circular Waves effect.
 
-    **Polar Coordinates**: converts the photograph from rectangular to polar coordinates.   
+    **Polar Coordinates**: converts the photograph from rectangular to polar coordinates.
 
-    **Unpolar Coordinates**: Polar Coordinate effect inverted.  
+    **Unpolar Coordinates**: Polar Coordinate effect inverted.
 
-    **Tiles**: splits the photograph into square blocks and move them randomly inside the image.    
+    **Tiles**: splits the photograph into square blocks and move them randomly inside the image.
 
 .. warning::
 
-    Some effects can take a long time to run and cause high CPU load. You can always abort an effect by pressing Abort button during preview rendering. 
+    Some effects can take a long time to run and cause high CPU load. You can always abort an effect by pressing Abort button during preview rendering.
+
+Emboss Image
+------------
+
+The digiKam Emboss filter sculptures your image into 3-D as if it were stamped into wax. It uses an algorithm copyrighted by Pieter Voloshyn.
+
+The digiKam Emboss filter is a quick tool to render your images in a 3-D effect. It works particularly well on images with simple structure where color is not the most important content. The filter uses the difference between colors and luminosity to convert it into a grey, moon-like landscape lit from 10 o'clock.
+
+The Depth control allows to define the contrast of the filtering. A value of 30 (10%) is the standard.
+
+.. figure:: images/editor_emboss.png
