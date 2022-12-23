@@ -275,8 +275,8 @@ The values used for this example are:
 
 .. figure:: images/editor_antivignetting_preview.png
 
-Remove Red Eyes in a Photograph
--------------------------------
+Remove Red Eyes
+---------------
 
 Red eyes are caused when the camera flashlight is used to take photographs of people. The red is the reflection from the back of the eye which can be seen because the pupil cannot react quickly enough to the flash. By the way, with a separate flash light the red eye effect is less likely because of the different viewing angle of flash and lens. You can correct some of the worst effect of Red Eye by selecting the area of the eye on the photograph, in the same way as described for cropping above. Then select Enhance → Red Eye Reduction.
 
