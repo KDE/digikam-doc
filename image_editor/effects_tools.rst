@@ -96,7 +96,7 @@ The neon filter simulates neon light along the contrast edges. The level paramet
 .. figure:: images/editor_neon.png
 
 The Find Edges Effect
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 The find edges filter detects the edges in a photograph and their strength.
 
