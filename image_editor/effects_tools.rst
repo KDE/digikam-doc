@@ -178,7 +178,7 @@ This filter is an easy tool to produce film grain on your images as known from c
 
 The film grain effect gives your shot a particular mood or seems to transport it in time. The treated image acquires a timeless atmosphere, detached from every day life. If you want that gritty, art-house, street-photography grainy film look, especially in monochromatic photos, use this filter.
 
-.. figure:: images/film_grain.png
+.. figure:: images/editor_film_grain.png
 
 As common settings, a slider allows control the grain size and you can turn on the granularity simulating a photographic distribution. For Luminance, Chrominance Blue, and Chrominance Red channels, you can adjust the grain intensity with a effects on shadows, middle-tones, and highlight.
 
@@ -189,11 +189,11 @@ As common settings, a slider allows control the grain size and you can turn on t
 Oil Paint
 ---------
 
-The digiKam Oil Paint filter gives your image the look of an oilpainting. It uses an algorithm copyrighted by Pieter Voloshyn.
+The digiKam Oil Paint filter gives your image the look of an oilpainting.
 
 This filter gives your digital images a nice oilpainting-like look. Images of nature and still lifes are well suited for this effect.
 
-.. figure:: images/oil_paint.png
+.. figure:: images/editor_oil_paint.png
 
 There are two sliders to control the effect. The upper slider selects the Brush Size between 1 and 5. Bigger brushes are better suited for large images. Smooth controls the smoothness or, seen from the other end, the jaggedness.
 
@@ -204,7 +204,7 @@ The digiKam Raindrops filter puts beautiful raindrops on your image.
 
 The Raindrops is nice little tool to put raindrops onto your images. Naturally, it renders your image in a kind of wet look.
 
-.. figure:: images/rain_drops.png
+.. figure:: images/editor_rain_drops.png
 
 Three sliders give you control over the effect filter:
 
