@@ -380,6 +380,10 @@ The Image Editor
 
         :ref:`effects_tools`
 
+    .. container:: tile no-descr
+
+        :ref:`raw_processing`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
