@@ -65,3 +65,49 @@ There are two sliders to control the effect on a scale of 1-100. The upper slide
 
     The result can be improved by adjusting the luminosity levels.
 
+Color Filter Effects
+--------------------
+
+The digiKam Color Effects tool provides four color effects: a Solarization effect, a Velvia filter, Neon effect, Edge filter, and Lut3D.
+
+In the age of chemical image processing, solarizing (also known as Sabatier) was an effect created by exposing a partially developed print to a brief flash of light, then completing the development. The colored, darker areas shield the additional light from the sensitive photo layers, which has the net effect of making the lighter areas darker and colors being inverted during the second exposure. The result resembles a partially negative image. The tool allows to adjust the interesting effect smoothly.
+
+The Solarization Effect
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The Intensity control helps to preview the solarization by simply increasing it. At about 50% intensity the image shows what was once chemically possible. If you further increase the effect it will finally become a negative image, a stage of inversion not achievable on photographic paper.
+
+.. figure:: images/editor_solarize.png
+
+The Vivid Effect
+~~~~~~~~~~~~~~~~
+
+The vivid filter simulates what is known as "Velvia" effect. It is different from saturation in that it has a more pronounced contrast effect that bring colors brilliantly alive and glowing. Try it, it renders beautiful for many subjects!
+
+Velvia is a brand of daylight-balanced color reversal film produced by the Japanese company Fujifilm. The name is a contraction of "Velvet Media", a reference to its smooth image structure. Velvia has very saturated colors under daylight, high contrast. These characteristics make it the slide film of choice for most nature photographers. Velvia's highly saturated colors are, however, considered overdone by some photographers, especially those who don't primarily shoot landscapes. 
+
+.. figure:: images/editor_vivid.png
+
+The Neon Effect
+~~~~~~~~~~~~~~~~
+
+The neon filter simulates neon light along the contrast edges. The level parameter controls the lightness of the result, whereas the interaction slider determines the thickness of the neon light. With big images, the filter might eat the CPU time for a moment.
+
+.. figure:: images/editor_neon.png
+
+The Find Edges Effect
+~~~~~~~~~~~~~~~~
+
+The find edges filter detects the edges in a photograph and their strength.
+
+.. figure:: images/editor_edges.png
+
+The Lut3D Effect
+~~~~~~~~~~~~~~~~
+
+The Lut3D filter coloring images by applying transformation based on a 3D lookup table. 
+
+In the film industry, 3D lookup tables are used to map one color space to another. They are commonly used to calculate preview colors for a monitor or digital projector of how an image will be reproduced on another display device, typically the final digitally projected image or release print of a movie. A 3D LUT is a 3D lattice of output RGB color values that can be indexed by sets of input RGB colour values. Each axis of the lattice represents one of the three input color components and the input color thus defines a point inside the lattice. Since the point may not be on a lattice point, the lattice values must be interpolated; most products use trilinear interpolation.
+
+.. figure:: images/editor_lut3d.png
+
