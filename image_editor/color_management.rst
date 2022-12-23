@@ -1,5 +1,5 @@
 .. meta::
-   :description: Raw Processing in digiKam Image Editor
+   :description: Color Management in digiKam Image Editor
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
 
 .. metadata-placeholder
@@ -8,15 +8,15 @@
 
    :license: Creative Commons License SA 4.0
 
-.. _raw_processing:
+.. _color_management:
 
-RAW Processing
-==============
+Color Management
+=================
 
 .. contents::
 
-The Color Management
---------------------
+RAW File Treatment and Color Management
+---------------------------------------
 
 The point of a color-managed workflow is to ensure that the colors coming from your camera or scanner have a predictable relationship with the colors you actually photographed or scanned, that the colors displayed on your monitor match the colors coming from your camera or scanner, and that the colors you print or display on the web match the colors you produced in your digital darkroom.
 

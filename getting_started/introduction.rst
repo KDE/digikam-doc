@@ -26,7 +26,7 @@ digiKam incorporates a fast Image Editor with many image editing tools. You can 
 
 .. figure:: images/tools_interface.png
 
-While digiKam remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available tools, supports RAW format conversion through libraw, DNG export and ICC color management :ref:`work flow <rawprocessing_workflow>`. 
+While digiKam remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available tools, supports RAW format conversion through libraw, DNG export and ICC color management :ref:`work flow <rawprocessing_workflow>`.
 
 Reporting Bugs
 --------------

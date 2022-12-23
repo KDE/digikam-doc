@@ -171,8 +171,10 @@ The digiKam tool set are:
 
         Add Rain Drops
 
-Basic Raw Workflow
-------------------
+.. _rawprocessing_workflow:
+
+Raw Workflow
+------------
 
 A typical RAW workflow with digiKam may follow these steps:
 

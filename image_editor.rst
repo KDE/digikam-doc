@@ -29,4 +29,4 @@ Using the digiKam image editor
    image_editor/transform_tools.rst
    image_editor/decorate_tools.rst
    image_editor/effects_tools.rst
-   image_editor/raw_processing.rst
+   image_editor/color_management.rst
