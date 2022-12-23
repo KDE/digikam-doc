@@ -168,3 +168,48 @@ The digiKam Emboss filter is a quick tool to render your images in a 3-D effect.
 The Depth control allows to define the contrast of the filtering. A value of 30 (10%) is the standard.
 
 .. figure:: images/editor_emboss.png
+
+Film Grain
+----------
+
+The digiKam Filmgrain filter reproduces traditional film grain techniques of high speed films.
+
+This filter is an easy tool to produce film grain on your images as known from classical high speed film material as, for example, the famous B/W KodaK Tri-X. In order to increase film sensitivity, manufacturers employed larger silver grains in the photo emulsion.
+
+The film grain effect gives your shot a particular mood or seems to transport it in time. The treated image acquires a timeless atmosphere, detached from every day life. If you want that gritty, art-house, street-photography grainy film look, especially in monochromatic photos, use this filter.
+
+.. figure:: images/film_grain.png
+
+As common settings, a slider allows control the grain size and you can turn on the granularity simulating a photographic distribution. For Luminance, Chrominance Blue, and Chrominance Red channels, you can adjust the grain intensity with a effects on shadows, middle-tones, and highlight.
+
+.. note::
+
+    If you process a black and white image, the grain needs to be applied only on Luminance channel.
+
+Oil Paint
+---------
+
+The digiKam Oil Paint filter gives your image the look of an oilpainting. It uses an algorithm copyrighted by Pieter Voloshyn.
+
+This filter gives your digital images a nice oilpainting-like look. Images of nature and still lifes are well suited for this effect.
+
+.. figure:: images/oil_paint.png
+
+There are two sliders to control the effect. The upper slider selects the Brush Size between 1 and 5. Bigger brushes are better suited for large images. Smooth controls the smoothness or, seen from the other end, the jaggedness.
+
+Rain Drops
+----------
+
+The digiKam Raindrops filter puts beautiful raindrops on your image.
+
+The Raindrops is nice little tool to put raindrops onto your images. Naturally, it renders your image in a kind of wet look.
+
+.. figure:: images/rain_drops.png
+
+Three sliders give you control over the effect filter:
+
+Drop size obviously allows to change the size of the drops. As the drop size doesn't automatically scale with the image size it is often necessary to reduce the size for small images. Number changes the number and density of drops. Fish eye changes the optical effect of the drops across the image.
+
+.. note::
+
+    You can keep a zone clear of raindrops with the digiKam Image Editor Select tool. Selecting the area to avoid (for example a face) before launching the Raindrops filter will keep it free from rain drops.
