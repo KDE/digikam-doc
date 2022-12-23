@@ -1,5 +1,5 @@
 .. meta::
-   :description: Using the digiKam Maintenance Tool
+   :description: Using the digiKam Maintenance Tools
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
 
 .. metadata-placeholder
@@ -8,13 +8,13 @@
 
    :license: Creative Commons License SA 4.0
 
-.. _maintenance_tool:
+.. _maintenance_tools:
 
-####################
-The Maintenance Tool
-####################
+#####################
+The Maintenance Tools
+#####################
 
-Using the digiKam maintenance tool
+Using the digiKam maintenance tools
 
 .. toctree::
    :maxdepth: 2

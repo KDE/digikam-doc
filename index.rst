@@ -426,9 +426,9 @@ The Geolocation Editor
 
    geolocation_editor
 
-####################
-The Maintenance Tool
-####################
+#####################
+The Maintenance Tools
+#####################
 
 .. container:: toctile
 
@@ -440,6 +440,6 @@ The Maintenance Tool
    :maxdepth: 2
    :hidden:
 
-   maintenance_tool
+   maintenance_tools
 
 .. TODO Add more top level entries here...
