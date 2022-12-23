@@ -111,3 +111,49 @@ In the film industry, 3D lookup tables are used to map one color space to anothe
 
 .. figure:: images/editor_lut3d.png
 
+Distortion FX
+-------------
+
+The digiKam Distortion FX is a series of distorting effects for digital still images.
+
+With this filter set, you can transform an ordinary photograph into a work of art suitable for framing using distorting operations.
+
+.. figure:: images/editor_distortion_fx.png
+
+These are the distorting effects available:
+
+    **Fish Eyes**: warps the photograph around a 3D spherical shape to reproduce the common photograph 'Fish Eyes' effect.  
+
+    **Twirl**: spins the photograph to produce a Twirl pattern.     
+
+    **Cylinder Horizontal**: warps the photograph around a horizontal cylinder.     
+
+    **Cylinder Vertical**: warps the photograph around a vertical cylinder.     
+
+    **Cylinder H/V**: warps the photograph around a 2 cylinders, vertical and horizontal.   
+
+    **Caricature**: distorts photograph with 'Fish Eyes' effect inverted.   
+
+    **Multiple Corners**: splits the photograph like a multiple corners pattern.    
+
+    **Waves Horizontal**: distorts the photograph with horizontal waves.    
+
+    **Waves Vertical**: distorts the photograph with vertical waves.    
+
+    **Block Waves 1**: divides the image into cells and makes it look as if it is being viewed through glass blocks.    
+
+    **Block Waves 2**: like Block Waves 1 but with another version of glass blocks distortion.  
+
+    **Circular Waves 1**: distorts the photograph with circular waves.  
+
+    **Circular Waves 2**: other variation of Circular Waves effect.     
+
+    **Polar Coordinates**: converts the photograph from rectangular to polar coordinates.   
+
+    **Unpolar Coordinates**: Polar Coordinate effect inverted.  
+
+    **Tiles**: splits the photograph into square blocks and move them randomly inside the image.    
+
+.. warning::
+
+    Some effects can take a long time to run and cause high CPU load. You can always abort an effect by pressing Abort button during preview rendering. 
