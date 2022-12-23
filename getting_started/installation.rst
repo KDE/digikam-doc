@@ -88,12 +88,9 @@ digiKam on macOS
 
 digiKam runs also on Mac M1 computers using Rosetta version 2 binary translator.
 
-Install procedure
-~~~~~~~~~~~~~~~~~
-
 When the dmg file is downloaded, to start the installer, give the rights to run from the MacOS Config Pannel/Security and Confidentiality. When installer is running, follow instructions from the assistant.
 
-.. _configuration:
+.. _configuration_requirements:
 
 Configuration Information
 -------------------------
