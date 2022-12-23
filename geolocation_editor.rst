@@ -23,3 +23,4 @@ Using the digiKam geolocation editor
 
    geolocation_editor/geoeditor_overview.rst
    geolocation_editor/geoeditor_map.rst
+   geolocation_editor/geoeditor_coordinates.rst

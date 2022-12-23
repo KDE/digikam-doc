@@ -408,6 +408,10 @@ The Geolocation Editor
 
         :ref:`geoeditor_map`
 
+    .. container:: tile no-descr
+
+        :ref:`geoeditor_coordinates`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
