@@ -460,6 +460,10 @@ The Maintenance Tools
 
         :ref:`maintenance_duplicates`
 
+    .. container:: tile no-descr
+
+        :ref:`maintenance_faces`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

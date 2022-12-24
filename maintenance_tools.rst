@@ -28,3 +28,4 @@ Using the digiKam maintenance tools
    maintenance_tools/maintenance_thumbnails.rst
    maintenance_tools/maintenance_fingerprints.rst
    maintenance_tools/maintenance_duplicates.rst
+   maintenance_tools/maintenance_faces.rst
