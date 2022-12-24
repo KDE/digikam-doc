@@ -17,7 +17,7 @@ Overview
 
 digiKam incorporates a fast Image Editor with a few basic yet powerful image editing tools. You can use the Image Editor to view your photographs and to make corrections and alterations. The Image Editor can be accessed either by clicking on a thumbnail in the Image Window or by clicking with the right mouse button over a thumbnail and selecting Edit from the context menu.
 
-The Image Editor provides a number of powerful tools that use you to adjust a photograph. 
+The Image Editor provides a number of powerful tools that use you to adjust a photograph.
 
 .. figure:: images/editor_mainwindow.png
 
@@ -26,6 +26,8 @@ The image editor has just one main window with:
     A status at the bottom which shows the filename, the current file number, the current zoom level, and the current image size.
 
     A menu bar across the top and below that a tool bar that provides quick access to some commonly used functions.
+
+    A thumb bar located on top of canvas (optional - see Settings menu entry) can be relocated on left, right, or bottom side. An anchor on the left side of thumb bar allows to move it with the mouse at the wanted place.
 
 .. figure:: images/editor_toolbar.png
 

@@ -41,6 +41,10 @@ There are several possibilities to view an image. You can either click on it, se
 
 .. figure:: images/mainwindow_preview.png
 
+.. note::
+
+    The thumb bar located on top of preview canvas (optional - see Settings menu entry) can be relocated on left, right, or bottom side. An anchor on the left side of thumb bar allows to move it with the mouse at the wanted place.
+
 You can also view your images in a slideshow using the “Slideshow” drop down menu from the Main Toolbar. You have the choice to start a slideshow with a selection of photographs, the whole content of the folder (or search result) or even including all subfolders.
 
 Editing a Photograph
