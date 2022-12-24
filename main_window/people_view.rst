@@ -18,7 +18,7 @@ As long as you are not just taking pictures from machines or stars or something 
 Face Detection
 ~~~~~~~~~~~~~~
 
- The first step is to have digiKam finding all those pics that show faces not even knowing yet who's face it is. To prepare that process you click Scan collection for faces which will open the Scanning faces dialog. Right under the header you have a drop down menu where you can choose between
+The first step is to have digiKam finding all those pics that show faces not even knowing yet who's face it is. To prepare that process you click on **People** tab from left sidebar. On the bottom you have a settings view with a drop down menu where you can choose between:
 
     - Skip images already scanned
 
@@ -26,7 +26,25 @@ Face Detection
 
     - Clear unconfirmed results and rescan
 
+.. figure:: images/mainwindow_faces_settings1.png
+
 The first one you would choose if you didn't scan yet or if you did with a satisfying result but added new photographs since then or if you already improved a search result, e.g. by removing face tags which obviously don't show a face. The second you would choose if you want the images already scanned to be included in the next scan. The third is more interesting in the context of Face Recognition since “unconfirmed results” means face tags that don't have a name assigned to them yet.
+
+.. note::
+
+   In the settings tab, you can also decide if you want to scan for face detection or for faces recognition.
+
+The settings view has another tab to tune where to search for new faces. You can make a selection of albums or tags to process the detection.
+
+.. figure:: images/mainwindow_faces_settings2.png
+
+The last tab from the settings view allows to tune advanced configuration, as the accuracy used to identify a face in image, the deep-learning model to use for the faces workflow, and the ability to use all CPU core while computing.
+
+.. figure:: images/mainwindow_faces_settings3.png
+
+.. note::
+
+   The deep-learning YOLO v3 model is more powerful for face workflow but it's time and CPU consuming. Only turn on this option if you hardware can supports intensive computations.
 
 For the task we are talking about you check Detect faces, of course. Since face detection is a time-consuming task you better don't hit Scan right away, rather Options. An additional area will fold out organized with three tabs. In Albums you can confine the scan to certain albums or tags. In Parameters you can try to find a balance between speed and accuracy that suits your needs. Under Advanced you will find two checkboxes. The first is explained by the text above it. The second is for face recognition, see next article.
 
