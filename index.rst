@@ -446,6 +446,10 @@ The Maintenance Tools
 
     .. container:: tile no-descr
 
+        :ref:`maintenance_database`
+
+    .. container:: tile no-descr
+
         :ref:`maintenance_thumbnails`
 
 .. toctree::
