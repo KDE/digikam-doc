@@ -21,4 +21,5 @@ Using the digiKam maintenance tools
    :caption: Contents:
    :glob:
 
-   maintenance_tool/maintenance_overview.rst
+   maintenance_tools/maintenance_overview.rst
+   maintenance_tools/maintenance_common.rst
