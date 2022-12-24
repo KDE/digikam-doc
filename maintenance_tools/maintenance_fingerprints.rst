@@ -21,6 +21,12 @@ Fingerprints are necessary for finding duplicates and similar items and for find
 
 This process provides only one option to rebuild the contents in the database: **Scan for Changed or Non-Cataloged Items**. This option will run the rebuild faster to prevent to process already register items in database.
 
+.. note::
+
+    This process can also be called from the Similary View from left sidebar by the button **Update Fingerprints**.
+
+    .. figure:: images/maintenance_update_fingerprints.png
+
 While the rebuild fingerprints process is under progress, notification on the bottom right of main windows will be visible to indicate the amount of items already done.
 
 .. figure:: images/maintenance_fingerprints_process.png
