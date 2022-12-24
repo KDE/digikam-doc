@@ -1,5 +1,5 @@
 .. meta::
-   :description: digiKam Maintenance Tool Rebuild fingerprints
+   :description: digiKam Maintenance Tool Rebuild Fingerprints
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
 
 .. metadata-placeholder
