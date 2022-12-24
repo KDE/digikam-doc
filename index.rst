@@ -444,6 +444,10 @@ The Maintenance Tools
 
         :ref:`maintenance_newitems`
 
+    .. container:: tile no-descr
+
+        :ref:`maintenance_thumbnails`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
