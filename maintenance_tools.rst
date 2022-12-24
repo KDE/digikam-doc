@@ -23,3 +23,4 @@ Using the digiKam maintenance tools
 
    maintenance_tools/maintenance_overview.rst
    maintenance_tools/maintenance_common.rst
+   maintenance_tools/maintenance_newitems.rst
