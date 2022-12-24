@@ -452,6 +452,10 @@ The Maintenance Tools
 
         :ref:`maintenance_thumbnails`
 
+    .. container:: tile no-descr
+
+        :ref:`maintenance_fingerprints`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

@@ -26,3 +26,4 @@ Using the digiKam maintenance tools
    maintenance_tools/maintenance_newitems.rst
    maintenance_tools/maintenance_database.rst
    maintenance_tools/maintenance_thumbnails.rst
+   maintenance_tools/maintenance_fingerprints.rst
