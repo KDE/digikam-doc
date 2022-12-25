@@ -15,7 +15,12 @@ Detect and Recognize Faces
 
 .. contents::
 
-This is the same process you can access in the People View with the Scan collection for faces button. Here you just cannot set the Fast - Accurate parameter and the option “Clear and rebuild all training data”. For more information about the Faces Data Management options see :ref:`the People View section <people_view>`.
-
 .. figure:: images/maintenance_faces_management.png
 
+This is the same process you can access in the People View with the **Scan Collection for Faces** button. Here you just cannot set the Fast - Accurate parameter but just the **Face Data Management** method and the option to **Clear and rebuild all training data**. For more information about the Faces Data Management options see :ref:`the People View section <people_view>`.
+
+.. figure:: images/maintenance_faces_scan.png
+
+While the faces management process is under progress, notification on the bottom right of main windows will be visible to indicate the amount of items already done.
+
+.. figure:: images/maintenance_faces_process.png
