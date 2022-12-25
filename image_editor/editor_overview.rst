@@ -27,7 +27,7 @@ The image editor has just one main window with:
 
     A menu bar across the top and below that a tool bar that provides quick access to some commonly used functions.
 
-    A thumb bar located on top of canvas (optional - see Settings menu entry) can be relocated on left, right, or bottom side. An anchor on the left side of thumb bar allows to move it with the mouse at the wanted place.
+    A thumb bar located on left of canvas (optional - see Settings menu entry) can be relocated on top, right, or bottom side. An anchor on the left side of thumb bar allows to move it with the mouse at the wanted place.
 
 .. figure:: images/editor_toolbar.png
 
@@ -37,7 +37,7 @@ The Image Editor Toolbar
 
     2. Open original image from the versionning stack.
 
-    3. Export imgae to a new file format.
+    3. Export image to a new file format.
 
     4. Save changes in versionning stack using default format.
 
