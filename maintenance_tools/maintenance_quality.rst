@@ -34,10 +34,12 @@ The Image Quality Sorter assigns Pick Labels to items according to the default s
 
 All the Image Quality Sorter settings is described in :ref:`the dedicated section <imgqsort_settings>` from Setup Application.
 
+The **Scan Mode** settings allows to configure how the database information for the items from the selected collection will be processed. **Clean all and re-scan** reset all data and scan items from scratch, **Scan non-assigned only** wil be faster to process non registered items with Pick Labels.
+
 While the image quality sorting process is under progress, notification on the bottom right of main windows will be visible to indicate the amount of items already done.
 
 .. figure:: images/maintenance_quality_process.png
 
-The quality sorting results will appears :ref:`the Labels view <labels_view>` from the right sidebar.
+The quality sorting results will appears in :ref:`the Labels view <labels_view>` from the right sidebar.
 
 .. figure:: images/maintenance_pick_labels.png
