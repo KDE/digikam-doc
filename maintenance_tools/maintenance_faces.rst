@@ -24,3 +24,7 @@ This is the same process you can access in the People View with the **Scan Colle
 While the faces management process is under progress, notification on the bottom right of main windows will be visible to indicate the amount of items already done.
 
 .. figure:: images/maintenance_faces_process.png
+
+.. important::
+
+   To run properly, the process needs the deep-learning model to download at the first run of digiKam. See :ref:`the Quick Start section <quick_start>` for details.

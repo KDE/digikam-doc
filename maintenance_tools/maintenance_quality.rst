@@ -26,7 +26,7 @@ The tool will parse the items to determine the quality and sort them with the Pi
 
 The Image Quality Sorter assigns Pick Labels to items according to the default settings in Settings → Configure digiKam... → Image Quality Sorter, or a dedicated settings tuned in this view.
 
-.. figure:: images/maintenance_quality_default.png
+The quality score to determine the Pick Label property can be evaluated by two ways: using four basic factors sabotaging the images (blur, noise, exposure, and compression), or using a deep learning neural network engine. The first one helps to determine whether images are distorted by the basic factors, however it demands some drawbacks as fine-tuning from the user’s side and it cannot work along the aesthetic image processing. The second one uses an IA approach based on `this model <https://expertphotography.com/aesthetic-photography/>`_ to predict the score. As deep learning is an end-to-end solution, it doesn’t require hyper-parameter settings, and make this feature easier to use.
 
 .. note::
 
@@ -43,3 +43,7 @@ While the image quality sorting process is under progress, notification on the b
 The quality sorting results will appears in :ref:`the Labels view <labels_view>` from the right sidebar.
 
 .. figure:: images/maintenance_pick_labels.png
+
+.. important::
+
+   To run properly, the process needs the deep-learning model to download at the first run of digiKam. See :ref:`the Quick Start section <quick_start>` for details.
