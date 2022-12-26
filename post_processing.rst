@@ -22,3 +22,4 @@ Using the digiKam post processing tools
    :glob:
 
    post_processing/metadata_editor.rst
+   post_processing/html_gallery.rst

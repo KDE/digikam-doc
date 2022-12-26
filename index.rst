@@ -488,6 +488,10 @@ Post Processing
 
         :ref:`metadata_editor`
 
+    .. container:: tile no-descr
+
+        :ref:`html_gallery`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
