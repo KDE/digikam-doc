@@ -65,7 +65,7 @@ digiKam is available as an install and as a standalone version.
 digiKam in a Windows domain
 ----------------------------
 
-If you want to use digiKam with domain users with using Windows Active Directory and/or Group Policies (GPOs) make sure all users have read/write rights to the following folders:
+If you want to use digiKam with domain users with using Windows Active Directory and/or Group Policies ( `GPOs <https://learn.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-policy-objects>`) make sure all users have read/write rights to the following folders:
 
 .. epigraph::
 
@@ -88,7 +88,17 @@ digiKam on macOS
 
 digiKam runs also on Mac M1 computers using Rosetta version 2 binary translator.
 
-When the dmg file is downloaded, to start the installer, give the rights to run from the MacOS Config Pannel/Security and Confidentiality. When installer is running, follow instructions from the assistant.
+When the pkg file is downloaded, to start the installer, a security warning will appears.
+
+.. figure:: images/macos_pkg_warning.webp
+
+You needs to give the rights to run from the **MacOS Config Pannel/Security and Confidentiality**.
+
+.. figure:: images/macos_pkg_security.webp
+
+When installer is running, follow instructions from the assistant to install application on your computer.
+
+.. figure:: images/macos_pkg_installer.webp
 
 .. _configuration_requirements:
 
