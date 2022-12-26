@@ -67,8 +67,6 @@ Documentation authors
 
     Kåre Särs (https://invent.kde.org/sars)
 
-    Anne-Marie Mahfouf
-
 - 2003-2005
 
     Tom Albers (https://invent.kde.org/toma)
@@ -84,6 +82,8 @@ Documentation authors
 - 2006
 
     Elle Stone
+
+    Anne-Marie Mahfouf
 
 - 2003-2010
 
