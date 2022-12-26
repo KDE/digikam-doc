@@ -25,9 +25,9 @@ The properties sidebar shows the essential information about the selected image 
 
     - digiKam Properties: optional view to show a summary of the most important values set in digiKam database.
 
-+------------------------------------------------------+------------------------------------------------------+
-|    .. figure:: images/sidebar_propertiesphoto.webp    |    .. figure:: images/sidebar_propertiesvideo.webp    |
-+------------------------------------------------------+------------------------------------------------------+
-|               File properties for a photo            |              File properties for a video             |
-+------------------------------------------------------+------------------------------------------------------+
++-------------------------------------------------------+------------------------------------------------------+
+|    .. figure:: images/sidebar_propertiesphoto.webp    |    .. figure:: images/sidebar_propertiesvideo.webp   |
++-------------------------------------------------------+------------------------------------------------------+
+|               File properties for a photo             |              File properties for a video             |
++-------------------------------------------------------+------------------------------------------------------+
 

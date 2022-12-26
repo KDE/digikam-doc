@@ -186,13 +186,14 @@ A good tool to capture video from desktop is [SimpleScreenRecorder](https://www.
 
 Configuration:
 
-    - Container : WEBM
-    - Codec : VP8
-    - Bitrate: 5000 kbit/s
+    - Container : WEBM.
+    - Codec : VP8.
+    - Bitrate: 5000 kbit/s.
+    - Record cursor.
 
 Do not use space and capitalized characters in file name.
 
-WEBP files must be hosted in **video/** sub-folders from each documentation section. 
+WEBP files must be hosted in **videos/** sub-folders from each documentation section.
 
 ### Translations
 
