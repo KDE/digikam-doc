@@ -17,7 +17,7 @@ Overview
 
 There are certain possibilities to manage tags from the context menu on tags in the digiKam sidebars like New Tag... or Delete Tag. The Tag Manager offers a more comfortable and comprehensive way to organize your tags. For general information about tags, why and how to use them see Tags View in the Main digiKam Window chapter.
 
-.. figure:: images/tag_manager.png
+.. figure:: images/tag_manager.webp
 
 The toolbar at the top offers:
 
