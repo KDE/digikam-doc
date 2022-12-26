@@ -15,3 +15,7 @@
  # ============================================================ */
 
 for f in *.png; do convert "$f"  $(basename "$f" | cut -d. -f1).webp ; done
+
+rm -fr *.png
+
+git add *.webp

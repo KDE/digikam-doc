@@ -73,7 +73,7 @@ Rating and Ranking
 
 A ranking systematic is implemented in digiKam by the 5 star rating tool. In fact there are 6 levels, zero through five stars (*) can be attributed (when saving them into IPTC metadata a translation of levels ensures compatibility with other programs). Rating is rapidly applied with digiKam using keyboard shortcuts or the mouse on single photographs or whole selections. The rating can then be entered as a search criterion or directly from the status bar quick filters. However, before you start attributing stars everywhere take a moment to establish personal criteria for ranking. Best practice is to write down your personal match of stars to some qualitative expression, that will define what you actually mean when giving 5 stars. Generally there should be much less images rated with increasing star assignment. A ratio of 3-10 between each level has proven useful. That will get you quite far in distinguishing your rating pyramid. Say, you choose a ratio of 7 between levels. For every 5 star image you'll then have 7 4 stars, 49 3 stars and so on, resulting in almost 20000 pictures. Amazing? Yes, and 16807 of them you didn't have to rate at all! You even can define a different rating scheme depending on the kind of use, 2 stars for commercial use, may mean something else than 2 stars holiday photos. It is also a good practice to define a neutral rating, everything below is actually a negative rating. This will help you culling and thinning your collection very efficiently. Or you could define purposes to ratings, say 0 stars for 'can throw away', 1 star for images in quarantine (decide later), 2 stars for gallery export, 3 stars for printing, 4 stars for selling, 5 stars for 'have to work on', as you please. It must suit your needs. The following table illustrates a possible evolution for a professional photographer using a ranking ratio of roughly 7 over the next 12 years. It is evident that the good shots can be easily found, even within millions of photos.
 
-.. figure:: images/dam_pyramid.png
+.. figure:: images/dam_pyramid.webp
 
 Lets continue with tags (or keywords as called by other applications, or categories, they are all synonymous).
 
@@ -92,7 +92,7 @@ When you import cataloged images from other sources having embedded tags already
 
 The graphics here shows how different metadata overlap. This is a very coarse representation, as each block of metadata will in itself be subdivided into many sections. File names and calendar data are properties of all images.
 
-.. figure:: images/dam_metadata.png
+.. figure:: images/dam_metadata.webp
 
 Enough of tags - lets move on to captions or comments, the third major tool for metadata cataloging.
 
@@ -107,7 +107,7 @@ So you might have the most beautiful portrait, sunset or landscape and nobody se
 
 Lets look at this panorama. From far it is not even a nice beach panorama. If you go closer you start to see some details, people, the space.
 
-.. figure:: images/dam_story.png
+.. figure:: images/dam_story.webp
 
 And now I tell you that this is the Allies landing site "Omaha Beach" in the French Normandie 60 years after the disembarkation. Wow! One starts to dream, have associations, memories, the historical time span is present, you may hear the silence. The caption has totally reframed to perception of this panorama.
 

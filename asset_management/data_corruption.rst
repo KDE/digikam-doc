@@ -146,7 +146,7 @@ Transmission Errors
 
 Data does not only get lost from storage devices, it also gets lost when traveling inside the computer or across networks (although the network traffic itself via TCP is error protected). Errors occur on buses and in memory spaces. Consumer hardware has no protection against those bit errors, whereas it is worthwhile to look into such. You can buy ECC (error code correction) protected memory (which is expensive, granted). With ECC RAM at least the memory will be scrubbed for single bit errors and corrected. Double bit errors would escape that scheme but they occur too infrequently.
 
-.. figure:: images/dam_transmission.png
+.. figure:: images/dam_transmission.webp
 
 This diagram depicts the transmission chain elements in a computer, all transitions are susceptible to transmission errors. The zfs and btrfs file system at least ensure the OS to disk path of data integrity.
 
@@ -156,7 +156,7 @@ The worst of all that is that nobody tells you when a transmission error occurs,
 
 Flaky power supplies are another source of transmission losses because they create interference with the data streams. With normal files systems those errors go unnoticed.
 
-.. figure:: images/dam_errors.png
+.. figure:: images/dam_errors.webp
 
  Even if you are not overly concerned today with transmission problems, have a look into the future at illustration. Already in 2010 we'll see thousands of errors per year!
 
