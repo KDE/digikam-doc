@@ -24,7 +24,7 @@ An easy-to-use Camera interface is provided, that will connect to your digital c
 
 digiKam incorporates a fast Image Editor with many image editing tools. You can use the Image Editor to view your photographs, comment and rate them, correct, enhance and alter them. The images post processing can be easily done by a set of tools though the Batch Queue Manager, or by many import and export tools dedicated to work with remote web services. 
 
-.. figure:: images/tools_interface.png
+.. figure:: images/tools_interface.webp
 
 While digiKam remains easy to use, it provides professional level features by the dozens. It is fully 16 bit enabled including all available tools, supports RAW format conversion through libraw, DNG export and ICC color management :ref:`work flow <rawprocessing_workflow>`.
 
