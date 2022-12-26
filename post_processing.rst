@@ -23,3 +23,4 @@ Using the digiKam post processing tools
 
    post_processing/metadata_editor.rst
    post_processing/html_gallery.rst
+   post_processing/share_dlna.rst

@@ -492,6 +492,10 @@ Post Processing
 
         :ref:`html_gallery`
 
+    .. container:: tile no-descr
+
+        :ref:`share_dlna`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
