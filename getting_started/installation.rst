@@ -39,7 +39,17 @@ digiKam on Linux
 
 **digiKam** can be installed on non-KDE Desktops without any issues.
 
-**Packages:** Minimum Ubuntu 18.04 for AppImage has no such minimal requirements. 
+**AppImage:** Minimum Ubuntu 18.04 has no such minimal requirements.
+
+AppImage is a bundle hosting all the necessary dependencies to run digiKam. Nothing is installed on your system.
+Turn on **executable** property of AppImage file and run it. That all...
+
+.. figure:: videos/appimage_startup.gif
+    :width: 600px
+    :alt:
+    :align: center
+
+    AppImage Startup Screencast
 
 .. _digikam_windows:
 
