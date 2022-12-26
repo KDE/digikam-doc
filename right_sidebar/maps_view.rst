@@ -29,7 +29,7 @@ All four are based on the Marble widget.
 
 This tab shows a map of orientation where you will find a marker or a thumbnail to indicate the GPS location of the selected image. The GPS coordinates and the time information are displayed below the widget. You can zoom in and out with the mouse wheel by either scrolling it or hold and drag it. Pan by holding down the left mouse button.
 
-.. figure:: images/sidebar_metadatagps.png
+.. figure:: images/sidebar_metadatagps.webp
 
 For navigating on the map refer to Marble handbook, Chapter 2. The meaning of “GPS” and functions and buttons that apply to all three geolocation parts are described in the Geolocation Editor chapter of this handbook. This applies to the context menu on the map and the line of buttons under the map except the last one.
 
