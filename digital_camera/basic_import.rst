@@ -15,14 +15,14 @@ Basic Import
 
 .. contents::
 
-.. figure:: images/camera_maininterface.png
+.. figure:: images/camera_maininterface.webp
 
 Getting information about the photographs
 -----------------------------------------
 
 Before downloading photographs to your computer, you may wish to see the camera item information. Using the Properties and Metadata tabs on the Right Sidebar will launch camera and photograph properties and metadata information.
 
-.. figure:: images/camera_itemproperties.png
+.. figure:: images/camera_itemproperties.webp
 
 The Item Properties Sidebar Tab
 -------------------------------
