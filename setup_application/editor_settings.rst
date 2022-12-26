@@ -65,7 +65,7 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 
 .. figure:: images/setup_editor_raw_behavior.png
 
-**Fast and simple, as 8 bit image**: RAW files will be decoded to 8-bit color depth with a BT.709 gamma curve and a 99th-percentile white point. This mode is faster than 16-bit decoding. In 8-bit mode only the Auto Brightness setting will be taken into account (dcraw limitation).
+**Fast and simple, as 8 bit image**: RAW files will be decoded to 8-bit color depth with a BT.709 gamma curve and a 99th-percentile white point. This mode is faster than 16-bit decoding. In 8-bit mode only the Auto Brightness setting will be taken into account.
 
 **Use the default settings, in 16 bit**: If enabled, all RAW files will be decoded to 16-bit color depth using a linear gamma curve and according to the settings in the RAW Default Settings tab. To prevent dark image rendering in the editor, it is recommended to use Color Management in this mode.
 
@@ -97,10 +97,6 @@ White Balance
 **Method**: Four options are available here: Default D65, Camera, Automatic and Manual. “Default D65” reflects normal daylight conditions. “Camera” uses the camera's custom white-balance settings if set. “Automatic” The default is to use a fixed color balance based on a white card photographed in sunlight. “Manual” will adjust colors according to the T(K) (color temperature in degrees Kelvin) and Green settings.
 
 **Highlights**: This is the story of the three highlight options. Default is here to consider highlights (read: part of your images that are burned due to the inability of your camera to capture the highlights) as plain / solid white (solid white option). You can get some fancy results with the unclip option which will paint the highlights in various pinks. At last you can try to consider recovering some parts of the missing information from the highlights (reconstruct option). This is possible because the blue pixels tends to saturate less quickly than the greens and the reds. digiKam will try to reconstruct the missing green and red colors from the remaining none saturated blue pixels. Of course here everything is a question of tradeoff between how much color or white you want. If you select Reconstruct as the option, you will be given the choice to set a level. A value of 3 is a compromise and can/should be adapted on a per image basis.
-
-.. note::
-
-    A small warning here, for the few curious that have read the man pages of Dcraw, the author says that 5 is the compromise, 0 is solid white and 1 unclip. This is because in digiKam 0 and 1 are the "solid white" and "unclip" options in the drop down menu (if you select these, the level slider will be grayed out). Therefore, the slider in digiKam with the "reconstruct" option will let you choose between 0 to 7 (instead of 0 to 9 in Dcraw command line) where 3 is the compromise instead of 5 in "native" Dcraw command line tool.
 
 **Exposure Correction (E.V)**: Turn on the exposure correction before interpolation.
 
