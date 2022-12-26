@@ -199,6 +199,8 @@ WEBP files must be hosted in **videos/** sub-folders from each documentation sec
 
 ```
 .. figure:: video/my_screen_cast.webm
+    :width: 600px
+    :alt:
 ```
 
 ### Translations

@@ -19,5 +19,6 @@ The Timeline View shows a timescale-adjustable histogram of the numbers of image
 
 .. figure:: videos/mainwindow-timeline-selection.webm
     :width: 600px
+    :alt:
 
 In the field right below you can enter a title and save your selection. It will then appear in the “Searches” list field below. But the best is still to come: the Timeline View offers a search for a search! If you have a lot more searches saved than my ridiculous four in the screenshot the adaptive search field at the bottom may help to find a certain search.
