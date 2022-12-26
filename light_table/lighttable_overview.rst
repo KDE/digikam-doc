@@ -31,4 +31,4 @@ In the lower right corner of each pane there you find a built-in panning action 
 
 Zooming works the same as in other views: use indifferently the zoom slider below the panes or Ctrl-scroll wheel to zoom in and out, with both images when in synchronous mode.
 
-.. figure:: images/light_table.png
+.. figure:: images/light_table.webp
