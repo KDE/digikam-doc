@@ -18,7 +18,7 @@ General Information
 
 In all eight areas the Image View shows the result of your selection or search on the Left Sidebar in the Icon Area. Each image is displayed as a thumbnail. You can alter the size of the thumbnails using the magnifier slider close to the right end of the status bar.
 
-.. figure:: images/mainwindow_zoombuttons.png
+.. figure:: images/mainwindow_zoombuttons.webp
 
 The first time you select an Album you may have to wait briefly while the thumbnails are generated.
 
@@ -26,7 +26,7 @@ Information about each photograph is displayed below each thumbnail. You can con
 
 The thumbnails have Tool Tips which will pop up if you allow the mouse to dwell over a thumbnail for a moment. The Tool Tip shows the most important properties of the photograph including any tags that you have applied.
 
-.. figure:: images/mainwindow_tooltip.png
+.. figure:: images/mainwindow_tooltip.webp
 
 The content of the Tool Tips can be configured in the Tool Tip section of Settings → Configure digiKam...
 
@@ -39,7 +39,7 @@ Viewing an image
 
 There are several possibilities to view an image. You can either click on it, select View → Preview Image (F3) from the menu bar or select Preview Image from the context menu. The Preview Area will open and the Icon Area will be reduced to one line. For viewing it larger, click the sidebars away (by just clicking on the active button on them). An even larger view you can achieve by clicking the “Show Fullscreen” icon either on the thumbnail or on the preview. While viewing images you can take action from the context menu at any time (not in fullscreen mode). To close the preview, just click again or press Esc or F3 or click the Table or Thumbnails button.
 
-.. figure:: images/mainwindow_preview.png
+.. figure:: images/mainwindow_preview.webp
 
 .. note::
 
@@ -89,7 +89,7 @@ Grouping Photographs
 
 Grouping items is a very useful way to organize Photographs and/or videos that are related to each other and to adjust the way they are displayed in the image area. This function is available through the context menu on a selection of items (more than one item selected).
 
-.. figure:: images/mainwindow_group.png
+.. figure:: images/mainwindow_group.webp
 
 You can put the whole selection into one group using Group Selected Here or you can create more than one group determined by time (seconds will be ignored) or by file name. Note that the latter will put items with the same name but different file types into one group. Use case see further below!
 

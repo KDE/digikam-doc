@@ -15,14 +15,14 @@ Search View
 
 We talked about quite a few views already and their searching capabilities, which are all kind of specialized. The Search View now offers a more versatile and general way of searching. There are two different approaches.
 
-.. figure:: images/mainwindow_searchview.png
+.. figure:: images/mainwindow_searchview.webp
 
 In the field right below you can enter a title and save your selection. It will then appear in the “Searches” list field below. But the best is still to come: the Timeline View offers a search for a search! If you have a lot more searches saved than my ridiculous four in the screenshot the adaptive search field at the bottom may help to find a certain search.
 
 The Quick Search
 ~~~~~~~~~~~~~~~~
 
-Quick Search is the adaptive search box at the top of the search dialog (Left Sidebar) and provides you with a simple means to search the digiKam database with a single query. You can enter any arguments in the Search: text field and it will be used to determine the results. For instance, you can enter the string 'birthday' to search the complete database for occurrences of the word 'birthday' in all metadata text fields, or '05.png' to search for a specific image file name '05.png' (no escaping as in regexpressions needed).
+Quick Search is the adaptive search box at the top of the search dialog (Left Sidebar) and provides you with a simple means to search the digiKam database with a single query. You can enter any arguments in the Search: text field and it will be used to determine the results. For instance, you can enter the string 'birthday' to search the complete database for occurrences of the word 'birthday' in all metadata text fields, or '05.webp' to search for a specific image file name '05.webp' (no escaping as in regexpressions needed).
 
 Search Properties:
 
@@ -43,13 +43,13 @@ The Advanced Search Tool
 
 Advanced Search tool provides an extended search form which can be used to search in specific fields of the digiKam database in a more sophisticated way. Click the Advanced Search... button and it will come up like this:
 
-.. figure:: images/mainwindow_advancedsearchtool.png
+.. figure:: images/mainwindow_advancedsearchtool.webp
 
 The field labeled “Find pictures that have associated all these words:” is just a duplicate of the Quick Search field.
 
 Click on one of the blue categories and there will fold out an area with all the fields you can search for in that very category. Depending on the kind of data each field contains different input fields for your search, sometimes more than one type for the same field. Simplest are selection buttons, e.g. for colors. Then you have plain fields of the “The field content contains” type, drop down lists and checkboxes. Many fields have two input fields allowing you to define a range, e.g. “Find pictures with a width between”. And often you find a link type thing called “Any” which opens a drop down field with checkboxes for the possible contents of that field.
 
-.. figure:: images/mainwindow_advancedsearchtool2.png
+.. figure:: images/mainwindow_advancedsearchtool2.webp
             :alt: Advanced Search Criteria
 
 Thanks to the labeling of the search fields they are pretty much self explaining. What we have to talk about is how they work together if you fill in or select more than one. On the right side of the header (blue area at the top) you find a little link “Options”. If you click on that one the header will change and you see four options.
