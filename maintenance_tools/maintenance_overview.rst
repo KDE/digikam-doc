@@ -19,7 +19,7 @@ Maintenance is a tool running processes in the background to maintain image coll
 
 Depending on your workflow, your digiKam settings and whether you work on your images collection also with other programs it might be necessary to run maintenance operations from time to time to update the digiKam databases and also your images regarding duplicates, face tags, quality labels, etc. The maintenance tool can do that for you, even more than one operation in one go depending on your requirements.
 
-.. figure:: images/maintenance_tool.png
+.. figure:: images/maintenance_tool.webp
 
 The list of tools is presented in a sequential order and cannot be changed. Only the tools to activate or desactivate during a maintenance session can be selected. The sequence of tools is relevant of the order to populate the information in database on the first time, and the way to use these information in a second time.
 

@@ -15,11 +15,11 @@ Find Duplicates
 
 .. contents::
 
-.. figure:: images/maintenance_find_duplicates.png
+.. figure:: images/maintenance_find_duplicates.webp
 
 The Find Duplicates Tool is doing the same as the Find duplicates button in the :ref:`the Similarity View <similarity_view>`, but here you can combine it with other maintenance operations and you have the chance to check “Work on all processor cores” under Common Options (see above) to speed up the process.
 
-.. figure:: images/maintenance_similarity_duplicates.png
+.. figure:: images/maintenance_similarity_duplicates.webp
 
 This process provides two options to find duplicates items:
 
@@ -29,4 +29,4 @@ This process provides two options to find duplicates items:
    
 While the find duplicates process is under progress, notification on the bottom right of main windows will be visible to indicate the amount of items already done.
 
-.. figure:: images/maintenance_duplicates_process.png
+.. figure:: images/maintenance_duplicates_process.webp

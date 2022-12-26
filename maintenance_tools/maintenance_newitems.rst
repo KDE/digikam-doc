@@ -15,13 +15,13 @@ Scan for New Items
 
 .. contents::
 
-.. figure:: images/maintenance_new_items.png
+.. figure:: images/maintenance_new_items.webp
 
 This process will scan the collections you defined in Settings → Configure digiKam... → Collections for new items, i.e. image files you added to your collections while digiKam was not running. You can run this process also automatically on digiKam startup by checking Scan for new items at startup in Settings → Configure digiKam... → Miscellaneous.
 
 While the scan for new items process is under progress, notification on the bottom right of main windows will be visible to indicate the amount of items already done.
 
-.. figure:: images/maintenance_scan_process.png
+.. figure:: images/maintenance_scan_process.webp
 
 .. note::
 
@@ -33,7 +33,7 @@ To be precise, this option will force digiKam to scan all collections for new it
 
 Another option from this setup pannel named **Fast scan (detects new, deleted and renamed items)** can also be turn on to significantly speed up the scan. New items, deleted and also renamed items are found. In order to find items that have been changed, this option must be deactivated.
 
-.. figure:: images/maintenance_scan_setup.png
+.. figure:: images/maintenance_scan_setup.webp
 
 .. note::
 

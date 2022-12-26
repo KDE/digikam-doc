@@ -15,7 +15,7 @@ Database Cleaning
 
 .. contents::
 
-.. figure:: images/maintenance_database_cleaning.png
+.. figure:: images/maintenance_database_cleaning.webp
 
 This process will analysis your database files to consolidate the contents. The Core database is always cleaned. You can select additional databases for cleaning by selecting one of the extra options listed below:
 
@@ -30,4 +30,4 @@ This process will analysis your database files to consolidate the contents. The 
 
 While the scan for new items process is under progress, as the the process may take much time and digiKam cannot be used, a non modal dialog appear to make sure that no database corruption occurs.
 
-.. figure:: images/maintenance_database_process.png
+.. figure:: images/maintenance_database_process.webp

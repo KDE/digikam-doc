@@ -15,7 +15,7 @@ Metadata Synchronizer
 
 .. contents::
 
-.. figure:: images/maintenance_metadata_synchronizer.png
+.. figure:: images/maintenance_metadata_synchronizer.webp
 
 This process synchronize items metadata with database contents. The operation **Direction** can be:
 
@@ -30,4 +30,4 @@ The synchronization depends of the settings from Settings → Configure digiKam.
 
 While the metadata synchronizer process is under progress, as the the process may take much time and digiKam cannot be used, a non modal dialog appear to make sure that no database corruption occurs.
 
-.. figure:: images/maintenance_metadata_process.png
+.. figure:: images/maintenance_metadata_process.webp

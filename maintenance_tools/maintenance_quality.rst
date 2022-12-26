@@ -15,7 +15,7 @@ Image Quality Sorter
 
 .. contents::
 
-.. figure:: images/maintenance_quality_sorter.png
+.. figure:: images/maintenance_quality_sorter.webp
 
 The tool will parse the items to determine the quality and sort them with the Pick Label properties in database as:
 
@@ -38,11 +38,11 @@ The **Scan Mode** settings allows to configure how the database information for 
 
 While the image quality sorting process is under progress, notification on the bottom right of main windows will be visible to indicate the amount of items already done.
 
-.. figure:: images/maintenance_quality_process.png
+.. figure:: images/maintenance_quality_process.webp
 
 The quality sorting results will appears in :ref:`the Labels view <labels_view>` from the right sidebar.
 
-.. figure:: images/maintenance_pick_labels.png
+.. figure:: images/maintenance_pick_labels.webp
 
 .. important::
 
