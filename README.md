@@ -69,17 +69,17 @@ screen-shots, taken in PNG format. For example, the **getting_started** section 
 ├── getting_started.rst
 └── getting_started
     ├── images
-    │   ├── intro-firstrun-step1.png
-    │   ├── intro-firstrun-step2.png
-    │   ├── intro-firstrun-step3.png
-    │   ├── intro-firstrun-step4.png
-    │   ├── intro-firstrun-step5.png
-    │   ├── intro-firstrun-step6.png
-    │   ├── intro-firstrun-step7.png
-    │   ├── intro-firstrun-step8.png
-    │   ├── intro-firstrun-step9.png
-    │   ├── intro-scanprogress.png
-    │   └── intro-toolsinterface.png
+    │   ├── intro-firstrun-step1.webp
+    │   ├── intro-firstrun-step2.webp
+    │   ├── intro-firstrun-step3.webp
+    │   ├── intro-firstrun-step4.webp
+    │   ├── intro-firstrun-step5.webp
+    │   ├── intro-firstrun-step6.webp
+    │   ├── intro-firstrun-step7.webp
+    │   ├── intro-firstrun-step8.webp
+    │   ├── intro-firstrun-step9.webp
+    │   ├── intro-scanprogress.webp
+    │   └── intro-toolsinterface.webp
     ├── introduction.rst
     └── quick_start.rst
 ```
@@ -147,7 +147,7 @@ will be up-to-date and the contributor can create a new Merge Request with new c
 
 This git workflow is well [documented in KDE project](https://community.kde.org/Infrastructure/Git/Simple_Workflow).
 
-### Screenshots Capture
+### WEBP Screenshot Capture
 
 - Always use digiKam AppImage version 8 and later under Linux/Plasma desktop to take screenshots.
 
@@ -163,33 +163,36 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
 
 - Remove unecessary buttons and dialog header to limit image file size.
 
-- Always use **PNG** file format to save images to prevent compression artifacts.
+- Always use **WEBP** file format to save images.
 
-### PNG Optimizations
+- Do not use space and capitalized characters in file name.
 
-Since the documentation is very good it is also very demanding in terms of volume, 80% whereof are screen-shots.
+- WEBP files must be hosted in **images/** sub-folders from each documentation section. 
 
-In order to limit the byte count to the minimum the following command chain shall be used to reduce the png file size.
-
-A factor of 2-4 can be gained. From within the folder where the png resides, use script project/optpng.sh.
-This script requires [pngnq](https://pngnq.sourceforge.net/) and [optipng](https://optipng.sourceforge.net/) command line tools installed on your system.
-
-To process all png files in one step use this command line from the root directory of this project:
+- To include the screenshot in a ReStructuredText file, use the syntax below;
 
 ```
-find *.png | xargs -0 ./optpng.sh
+.. figure:: images/my_screen_shot.webp
 ```
 
-### Gif Animations
+### WEBM Video Capture
 
-Another format supported inside the documentation is animated Gif. It can be used to present a region of screen
-from the application while an operation is under progress. It's perfect to write tutorials. Animated Gif is also
-supported into EPUB container.
+Another format supported inside the documentation is **WEBM** video. It can be used to present a region of screen
+from the application while an operation is under progress. It's perfect to write tutorials.
 
-To prevent huge Gif files, just capture the right area to present in application and limit capture to less than 10 seconds,
-with a frames rating set to 12 by seconds.
+To prevent huge WEBM files, just capture the right area to present in application and limit capture to less than 10 seconds,
 
 A good tool to capture video from desktop is [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
+
+Configuration:
+
+    - Container : WEBM
+    - Codec : VP8
+    - Bitrate: 5000 kbit/s
+
+Do not use space and capitalized characters in file name.
+
+WEBP files must be hosted in **video/** sub-folders from each documentation section. 
 
 ### Translations
 
