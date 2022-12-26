@@ -179,12 +179,12 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
     My Screenshot Legend
 ```
 
-### WEBM Screencast Capture
+### GIF Animated Screencast Capture
 
-Another format supported inside the documentation is **WEBM** video. It can be used to present a region of screen
+Another format supported inside the documentation is **GIFa** video. It can be used to present a region of screen
 from the application while an operation is under progress. It's perfect to write tutorials.
 
-To prevent huge WEBM files, just capture the right area to present in application and limit capture to less than 10 seconds,
+To prevent huge GIFa files, just capture the right area to present in application and limit capture to less than 10 seconds,
 
 A good tool to capture video from desktop is [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
 
@@ -197,12 +197,15 @@ Configuration:
 
 Do not use space and capitalized characters in file name.
 
-WEBP files must be hosted in **videos/** sub-folders from each documentation section.
+This will record a screencast in WEBM format. even if WEBM is supported in HTML, this is not the case for EPUB.
+Convert it to GIFa using **project/webm2gif.sh** script.
+
+GIFa files must be hosted in **videos/** sub-folders from each documentation section.
 
 - To include the screencast in a ReStructuredText file, use the syntax below;
 
 ```
-.. figure:: videos/my_screen_cast.webm
+.. figure:: videos/my_screen_cast.gif
     :width: 600px
     :alt:
     :align: center
