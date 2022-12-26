@@ -4,7 +4,7 @@
 
 .. metadata-placeholder
 
-   :authors: - Gilles Caulier <caulier dot gilles at gmail dot com>
+   :authors: - digiKam Team (see Credits and License for details)
 
    :license: Creative Commons License SA 4.0
 

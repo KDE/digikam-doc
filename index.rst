@@ -4,7 +4,7 @@
 
 .. metadata-placeholder
 
-   :authors: - Gilles Caulier <caulier dot gilles at gmail dot com>
+   :authors: - digiKam Team (see Credits and License for details)
 
    :license: Creative Commons License SA 4.0
 
@@ -477,5 +477,21 @@ The Maintenance Tools
    :hidden:
 
    maintenance_tools
+
+###################
+Credits and License
+###################
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`credits_license`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   credits_license
 
 .. TODO Add more top level entries here...
