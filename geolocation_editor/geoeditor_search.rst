@@ -17,7 +17,7 @@ Search Tool
 
 In the Search tab you can look up places by their geographic names using public geoname services (GeoNames and OpenStreetMap at the time of writing). You just type in a name of a place (city, monument, hotel, ...) into the input field at the top and click Search. In the result list below you will get something like this:
 
-.. figure:: images/geoeditor_search.png
+.. figure:: images/geoeditor_search.webp
 
 Obviously Paris does not only exist in France. So if you were looking for the capital of France you can either scroll down the list until you find an entry that undoubtedly belongs to there like "Arc de Triomphe" and click on it or specify your search a little bit more precise like "Paris, Arc de Triomphe" or "Paris, France". Once you click on an entry in the list the map will become centered to that place and you can now zoom in with the zoom-in button (second from the left below the map). Using this example with GeoNames you will notice that you still get a lot of results and even two labeled only "Arc de Triomphe", the second one a street a few hundred meters away from the arch. With OSM you get only one result. You got to play a bit with the different services in different regions, with more or less precise search terms and then you will get an idea about how to best conduct your searches.
 

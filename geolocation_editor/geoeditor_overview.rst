@@ -33,7 +33,7 @@ There are four tools regarding geolocation in digiKam and two in Showfoto:
 
     The Map tab on the Right Sidebar which shows the location of the image on a map and is purely informative. 
 
-.. figure:: images/geoeditor_tool.png
+.. figure:: images/geoeditor_tool.webp
 
 .. note::
 

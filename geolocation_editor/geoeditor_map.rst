@@ -22,7 +22,7 @@ The Geolocation Editor allows for adding and editing GPS coordinates of picture 
 
 Geolocation Editor can be opened via menu entry Item → Edit Geolocation or via pressing Ctrl+Shift+G. It requires at least one image to be selected otherwise it will not open.
 
-.. figure:: images/geoeditor_edit_coords.png
+.. figure:: images/geoeditor_edit_coords.webp
 
 The Geolocation Editor provides the tools to localize pictures geographically in the common spherical coordinate system (used by GPS/Galileo). Altitude, latitude and longitude, speed, number of satellites, fix type and DOP are editable.
 

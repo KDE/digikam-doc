@@ -31,7 +31,7 @@ The Correlator
 
 In order to correlate your images with geographic data you need to have a GPS tracking information available as a XML file in gpx format (gpsbabel and gpsman can download and convert tracking data from a GPS device for you). The idea is: while taking your pictures just keep a GPS device running and carry it around with the camera. Once you are done, download the pictures and the GPS tracks, and run the correlator.
 
-.. figure:: images/geoeditor_correlate.png
+.. figure:: images/geoeditor_correlate.webp
 
 Select the images you want to correlate in the application main view, then call the geolocation editor with (Ctrl+Shift+G) and switch to the GPS Correlator tab on the Right Sidebar. The above dialog will show up with the selected images in the list below the map. To indicate possible time/location correlation you have to load a track file with Load GPX File that contains GPS data taken at the same time and location as the pictures.
 
@@ -54,10 +54,10 @@ Undo and Redo
 
 In the Undo/Redo tab a history is being recorded about all the changes you apply to the images loaded into the Geolocation Editor. The history shows changes made in only one tab or in several tabs and will be deleted only once you leave the editor. After a few actions in the different tabs the record might look like this:
 
-.. figure:: images/geoeditor_undo1.png
+.. figure:: images/geoeditor_undo1.webp
 
 The last step is highlighted when you enter the tab. The first step is always labeled “empty” and represents the status the images had when they were loaded. You can click on every step and, depending on what kind of changes you did, you might see the images appearing, disappearing or moving on the map or see the differences in the list of images under the map. Note that the list is configurable by clicking with the right mouse button on the header.
 
 Now let's assume that you realize that the move in the last step was wrong. You just click on the step before (Details changed), you go to the Search tab (described further below) and you do another move. After returning to the Undo/Redo tab it might look like this:
 
-.. figure:: images/geoeditor_undo2.png
+.. figure:: images/geoeditor_undo2.webp
