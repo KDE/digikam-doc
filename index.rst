@@ -478,6 +478,22 @@ The Maintenance Tools
 
    maintenance_tools
 
+###############
+Post Processing
+###############
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`metadata_editor`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   post_processing
+
 ###################
 Credits and License
 ###################
