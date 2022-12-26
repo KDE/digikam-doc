@@ -13,7 +13,7 @@
 Dates View
 ----------
 
-.. figure:: images/mainwindow_datesview.png
+.. figure:: images/mainwindow_datesview.webp
 
 The Dates View organizes your photographs based on their dates. digiKam uses either the EXIF date or, if no EXIF date is available, the last modification time of the file.
 
