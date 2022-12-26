@@ -25,7 +25,7 @@ Color Management
 
 This tool allows to convert image from one color space to another one. Its use is the change and assignment of color profiles to an image. For detailed instructions on the use of color profiles, please refer to Color Management Settings chapter.
 
-.. figure:: images/editor_profile_converter.png
+.. figure:: images/editor_profile_converter.webp
 
 Auto-Correction
 ---------------
@@ -46,7 +46,7 @@ The Auto Levels, Normalize, Equalize, Stretch Contrast, and Auto Exposure availa
 
 The results of any adjustments you make will not be remembered until you save your photograph.
 
-.. figure:: images/editor_auto_corrections.png
+.. figure:: images/editor_auto_corrections.webp
 
 Black and White Conversion Filters
 ----------------------------------
@@ -58,7 +58,7 @@ The Legacy Black and White Films Emulation
 
 digiKam comes with a couple of black & white filters that you can use on your photographs. Under the Color → Black & White... menu you will find classic black & white chemical toning used in analog photography. The controls come on four drop-down items: Film, Lens Filters, Tone and Lightness as shown on the screenshot below. Film, filters and color toning can be applied independently of each other (on top of each other). The filters actually influence the RGB channel mixing, whereas the toning purely adds a uniform monochromatic tint to the black & white photograph. In the lightness tab you will find a tonal adjustment tool (like curve adjust), a contrast tool and an over-exposure indicator to improve the b&w rendering.
 
-.. figure:: images/editor_bw_filters.png
+.. figure:: images/editor_bw_filters.webp
 
 Specific settings allows to emulate a number of famous black & white photographic films as:
 
@@ -100,7 +100,7 @@ Colors Balance
 
 Digital cameras often have problems with lighting conditions and it is not unusual to want to correct the color contrast and brightness of a photograph. You can experiment with altering the levels of different aspects of your photographs using the tools under the Color menu. You can see any adjustments you make reflected in the preview. When you are happy with the results, press Ok and they will take effect. 
 
-.. figure:: images/editor_colors_balance.png
+.. figure:: images/editor_colors_balance.webp
 
 If your image is washed out (which can easily happen when you take images in bright light) try the Hue/Saturation/Lightness tool, which gives you four sliders to manipulate, for Hue, Saturation, Vibrance, and Lightness. Raising the saturation will probably make the image look better. In some cases, it is useful to adjust the lightness at the same time. ("Lightness" here is similar to "Brightness" in the Brightness/Contrast/Gamma tool, except that they are formed from different combinations of the red, green, and blue channels).
 
@@ -115,7 +115,7 @@ The Adjust Curves tool is the most sophisticated tool available to adjust the im
 
 This tool provides visual curves to modify the intensity values of the active layer displayed as a histogram non-linearily. In Curve smooth mode, you change the curves shape by adding new points to the curve or by moving end point positions. Another way, is to draw all the curve manually in Curve free mode. In both cases the effect is immediately displayed in the image preview area to the left, where the preview can be configured by clicking on the top left icons.
 
-.. figure:: images/editor_curves_adjust.png
+.. figure:: images/editor_curves_adjust.webp
 
 To the left, half of the original and the target preview image is shown. The target preview is updated dynamically according to the widget settings. On the right side the following options are available:
 
@@ -154,7 +154,7 @@ Situated between the more sophisticated Adjust Curves tool and the simpler Brigh
 
 This widget contains a visual graph of the intensity values of the active layer or selection (histogram). Below the graph are five sliders that can be clicked into and dragged to constrain and change the intensity level for the image. The left sliders position represents the dark areas and similarly, the right position represents the light areas.
 
-.. figure:: images/editor_levels_adjust.png
+.. figure:: images/editor_levels_adjust.webp
 
 Actually the easiest way to learn how to use it is to experiment by moving the three sliders around, and watching how the image is affected.
 
@@ -201,7 +201,7 @@ Correcting Exposure
 
 The simplest tool to use is the Brightness/Contrast/Gamma tool. It is also the least powerful, but in many cases it does everything you need. This tool is often useful for images that are overexposed or underexposed; it is not useful for correcting color casts. The tool gives you three sliders to adjust, for "Brightness", "Contrast" and "Gamma". You can see any adjustments you make reflected in the preview image. When you are happy with the results, press Ok and they will take effect.
 
-.. figure:: images/editor_bcg_adjust.png
+.. figure:: images/editor_bcg_adjust.webp
 
 .. note::
 
@@ -215,7 +215,7 @@ The digiKam image Channel Mixer is a tool to remix the color channels to improve
 
 The Channel Mixer is an another sophisticated tool to refine the images' tonality. Start it from the Color → Channel Mixer Image Editor menu.
 
-.. figure:: images/editor_channel_mixer.png
+.. figure:: images/editor_channel_mixer.webp
 
 With the channel combo box you select and display the histogram per color. It gives a first hint of how to correct the channels by their relative distribution and amplitude. The left half of the dialog window always shows a preview of what you are doing. The original for comparison can be seen when selecting its own window tab.
 
@@ -240,7 +240,7 @@ The digiKam White Balance is a semi-automatic tool to adjust the white-balance o
 
 White Balance setting is a common hurdle for digital still cameras. In the 'good old time' of film rolls, the white balance was done by the photolab. Nowadays the poor little camera has to guess what is white and what is black. Most of the time, what the camera chooses as the white point, is not of the correct shade or hue. Using this tool it is easy to correct this problem. It provides a variety of parameters that can be trimmed to obtain a better result.
 
-.. figure:: images/editor_white_balance.png
+.. figure:: images/editor_white_balance.webp
 
 The preview window can be resized. To the left, both an original and a target preview tab is shown. The target preview is updated dynamically according to the tool's settings. If you want to see the original whitebalance, just click on that tab.
 

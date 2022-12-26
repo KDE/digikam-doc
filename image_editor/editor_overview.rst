@@ -19,7 +19,7 @@ digiKam incorporates a fast Image Editor with a few basic yet powerful image edi
 
 The Image Editor provides a number of powerful tools that use you to adjust a photograph.
 
-.. figure:: images/editor_mainwindow.png
+.. figure:: images/editor_mainwindow.webp
 
 The image editor has just one main window with:
 
@@ -29,7 +29,7 @@ The image editor has just one main window with:
 
     A thumb bar located on left of canvas (optional - see Settings menu entry) can be relocated on top, right, or bottom side. An anchor on the left side of thumb bar allows to move it with the mouse at the wanted place.
 
-.. figure:: images/editor_toolbar.png
+.. figure:: images/editor_toolbar.webp
 
 The Image Editor Toolbar
 

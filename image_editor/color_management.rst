@@ -20,7 +20,7 @@ RAW File Treatment and Color Management
 
 The point of a color-managed workflow is to ensure that the colors coming from your camera or scanner have a predictable relationship with the colors you actually photographed or scanned, that the colors displayed on your monitor match the colors coming from your camera or scanner, and that the colors you print or display on the web match the colors you produced in your digital darkroom.
 
-.. figure:: images/editor_color_management.png
+.. figure:: images/editor_color_management.webp
 
 Which buttons do I push?
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -315,7 +315,7 @@ How small is sRGB?
 
 A visual representation of the limitations of sRGB compared to the colors we actually see in the real world is presented here after. It shows a two-dimensional representation of all the colors we can see (the horseshoe-shaped region) and the colors contained in the sRGB space (the smaller triangular region).
 
-.. figure:: images/editor_cm_542px_CIExy1931_sRGB.png
+.. figure:: images/editor_cm_542px_CIExy1931_sRGB.webp
 
 If you would like to see a two-dimensional representation of sRGB compared to some of the larger working color spaces, see Bruce Lindbloom's excellent site, click on "Info" then on "Information About RGB Working Spaces".
 
@@ -435,7 +435,7 @@ Where do I find a generic profile for my camera?
 
 This website section has information on where to find ready-made camera profiles. If you poke around the digiKam users forum archives, you'll find additional advice. If you keep hunting and experimenting, likely you will find a generic profile that works "well enough". However, as stated above, it's an unfortunate fact of digital imaging that the camera profiles supplied by Canon, Nikon, and the like don't work as well with raw converters other than each camera manufacturer's own proprietary raw converter. Which is why Bibble and Phase One, for example, have to make their own profiles for all the cameras that they support. So eventually you may decide that you want a camera profile that is specific to your camera, your lighting conditions, and your raw processing workflow.
 
-.. figure:: images/editor_cm_iccworkflowlogic.png
+.. figure:: images/editor_cm_iccworkflowlogic.webp
 
 How do I get a camera profile specific to my camera, lighting conditions, and raw workflow?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

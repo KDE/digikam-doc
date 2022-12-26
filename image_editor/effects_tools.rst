@@ -22,7 +22,7 @@ The digiKam Blur FX is a series of blurring effects for digital still images.
 
 With this filter set, you can transform an ordinary photograph into a work of art suitable for framing using blurring operations.
 
-.. figure:: images/editor_blur_fx.png
+.. figure:: images/editor_blur_fx.webp
 
 These are the blurring effects available:
 
@@ -57,7 +57,7 @@ The digiKam Charcoal is an effect filter that creates a charcoal sketch-like res
 
 The digiKam Charcoal filter uses the gradients of color and luminosity to produce a grey scale charcoal sketch. The lines defining the outline of the image are pronounced. Images with slowly changing gradients are not ideal for this effect. It is helpful to imagine what scene you would pick to do as a hand sketch yourself, in order to choose the image to start with.
 
-.. figure:: images/editor_charcoal.png
+.. figure:: images/editor_charcoal.webp
 
 There are two sliders to control the effect on a scale of 1-100. The upper slider selects the pencil size, whereas the second slider adjusts the contrast (smoothness).
 
@@ -77,7 +77,7 @@ The Solarization Effect
 
 The Intensity control helps to preview the solarization by simply increasing it. At about 50% intensity the image shows what was once chemically possible. If you further increase the effect it will finally become a negative image, a stage of inversion not achievable on photographic paper.
 
-.. figure:: images/editor_solarize.png
+.. figure:: images/editor_solarize.webp
 
 The Vivid Effect
 ~~~~~~~~~~~~~~~~
@@ -86,21 +86,21 @@ The vivid filter simulates what is known as "Velvia" effect. It is different fro
 
 Velvia is a brand of daylight-balanced color reversal film produced by the Japanese company Fujifilm. The name is a contraction of "Velvet Media", a reference to its smooth image structure. Velvia has very saturated colors under daylight, high contrast. These characteristics make it the slide film of choice for most nature photographers. Velvia's highly saturated colors are, however, considered overdone by some photographers, especially those who don't primarily shoot landscapes. 
 
-.. figure:: images/editor_vivid.png
+.. figure:: images/editor_vivid.webp
 
 The Neon Effect
 ~~~~~~~~~~~~~~~~
 
 The neon filter simulates neon light along the contrast edges. The level parameter controls the lightness of the result, whereas the interaction slider determines the thickness of the neon light. With big images, the filter might eat the CPU time for a moment.
 
-.. figure:: images/editor_neon.png
+.. figure:: images/editor_neon.webp
 
 The Find Edges Effect
 ~~~~~~~~~~~~~~~~~~~~~
 
 The find edges filter detects the edges in a photograph and their strength.
 
-.. figure:: images/editor_edges.png
+.. figure:: images/editor_edges.webp
 
 The Lut3D Effect
 ~~~~~~~~~~~~~~~~
@@ -109,7 +109,7 @@ The Lut3D filter coloring images by applying transformation based on a 3D lookup
 
 In the film industry, 3D lookup tables are used to map one color space to another. They are commonly used to calculate preview colors for a monitor or digital projector of how an image will be reproduced on another display device, typically the final digitally projected image or release print of a movie. A 3D LUT is a 3D lattice of output RGB color values that can be indexed by sets of input RGB colour values. Each axis of the lattice represents one of the three input color components and the input color thus defines a point inside the lattice. Since the point may not be on a lattice point, the lattice values must be interpolated; most products use trilinear interpolation.
 
-.. figure:: images/editor_lut3d.png
+.. figure:: images/editor_lut3d.webp
 
 Distortion FX
 -------------
@@ -118,7 +118,7 @@ The digiKam Distortion FX is a series of distorting effects for digital still im
 
 With this filter set, you can transform an ordinary photograph into a work of art suitable for framing using distorting operations.
 
-.. figure:: images/editor_distortion_fx.png
+.. figure:: images/editor_distortion_fx.webp
 
 These are the distorting effects available:
 
@@ -167,7 +167,7 @@ The digiKam Emboss filter is a quick tool to render your images in a 3-D effect.
 
 The Depth control allows to define the contrast of the filtering. A value of 30 (10%) is the standard.
 
-.. figure:: images/editor_emboss.png
+.. figure:: images/editor_emboss.webp
 
 Film Grain
 ----------
@@ -178,7 +178,7 @@ This filter is an easy tool to produce film grain on your images as known from c
 
 The film grain effect gives your shot a particular mood or seems to transport it in time. The treated image acquires a timeless atmosphere, detached from every day life. If you want that gritty, art-house, street-photography grainy film look, especially in monochromatic photos, use this filter.
 
-.. figure:: images/editor_film_grain.png
+.. figure:: images/editor_film_grain.webp
 
 As common settings, a slider allows control the grain size and you can turn on the granularity simulating a photographic distribution. For Luminance, Chrominance Blue, and Chrominance Red channels, you can adjust the grain intensity with a effects on shadows, middle-tones, and highlight.
 
@@ -193,7 +193,7 @@ The digiKam Oil Paint filter gives your image the look of an oilpainting.
 
 This filter gives your digital images a nice oilpainting-like look. Images of nature and still lifes are well suited for this effect.
 
-.. figure:: images/editor_oil_paint.png
+.. figure:: images/editor_oil_paint.webp
 
 There are two sliders to control the effect. The upper slider selects the Brush Size between 1 and 5. Bigger brushes are better suited for large images. Smooth controls the smoothness or, seen from the other end, the jaggedness.
 
@@ -204,7 +204,7 @@ The digiKam Raindrops filter puts beautiful raindrops on your image.
 
 The Raindrops is nice little tool to put raindrops onto your images. Naturally, it renders your image in a kind of wet look.
 
-.. figure:: images/editor_rain_drops.png
+.. figure:: images/editor_rain_drops.webp
 
 Three sliders give you control over the effect filter:
 

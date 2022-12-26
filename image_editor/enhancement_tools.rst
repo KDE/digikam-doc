@@ -34,7 +34,7 @@ The following figures explain the main types of geometrical distortions:
 
     (3): barrel distortion.
 
-.. figure:: images/editor_geometrical_distortions.png
+.. figure:: images/editor_geometrical_distortions.webp
 
 .. note::
 
@@ -48,7 +48,7 @@ The following figures explain the main types of geometrical distortions:
 
         The 4th-order coefficient corrects the far edges inversely to the 2nd-order rounding. Combining it with the 2nd-order correction the geometrical distortions can be almost completely eliminated.
 
-.. figure:: images/editor_lens_distortion.png
+.. figure:: images/editor_lens_distortion.webp
 
 Four sliders let you set the distortion correction filter:
 
@@ -108,7 +108,7 @@ Load this file to the widget using the Black Frame button. The tool will process
 Using the hotpixel tool
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: images/editor_hotpixels_fixer.png
+.. figure:: images/editor_hotpixels_fixer.webp
 
 At first, as explained in the previous section, you need to load a Black Frame corresponding to the image to correct. An automatic parsing will be processed on the Black Frame to find bad pixels. Note that the widget will remember the previous Black Frame used on the last session and it will be re-opened automatically with the next session.
 
@@ -131,7 +131,7 @@ The Local Contrast tool render pseudo-HDR image.
 
 There are multiple ways to render HDR image to improve photos containing under or overexposed areas. With camera devices, usual tools let you merge multiple shots with different exposures into one perfectly exposed photo. This work nicely but require some limitation, as for example the necessity to shot static subjects. But what if you have just in case of single image, or with dynamic subjects? You might want to give a try to the Local Contrast feature. It’s based on the LDR Tonemapping utility which is designed to improve the dynamic range of the photo by reducing its global contrast and increasing the local contrast. It does so by generating a desaturated and blurred version of the photo. It then combines the RGB channels of the original photo with the desaturated blurred image using either the Linear or Power function. Sounds complicated? Don’t worry, the Local Contrast tool is rather straightforward to use, so you don’t have to understand all its intricacies in order to achieve pleasing results.
 
-.. figure:: images/editor_local_contrast.png
+.. figure:: images/editor_local_contrast.webp
 
 Open the photo you want in the editor and choose Enhance → Local Contrast. The tool lets you apply up to four tonemapping operations called stages. Each stage offers two parameters for you to tweak: Power and Blur. The former allows you to specify the desaturation level, while the latter lets you adjust the affected areas on the photo. To preview the result, hit the Try button. Once you are satisfied with the result, press OK to apply the process to the photo.
 
@@ -146,7 +146,7 @@ This tool provides selectable image filters to remove specks or other artifacts 
 
 If you want more information about what's digital camera sensor noise, please take a look in this tutorial.
 
-.. figure:: images/editor_noise_reduction.png
+.. figure:: images/editor_noise_reduction.webp
 
 The above screenshot shows a typical scene taken with an digital camera using a high sensitivity ISO setting. It shows grainy noise which can be reduced successfully with this tool.
 
@@ -172,7 +172,7 @@ The Blur Tool is dedicated to soft an image.
 
 Sometimes an image is too crisp for your purposes. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the Blur Tool with the Enhance → Blur menu entry and experiment with the level. The preview window on the right of the dialog shows the effect of the operation on your photograph.
 
-.. figure:: images/editor_blur.png
+.. figure:: images/editor_blur.webp
 
 Photograph Restoration
 ----------------------
@@ -181,7 +181,7 @@ digiKam The Photograph Restoration is definitely one of the most advanced tools 
 
 This fantastic restoration filter is a development providing unprecedented possibilities in the public domain to remove lots of unwanted stuff from your images. It is well adapted to deal with degraded images suffering from Gaussian noise, film grain, scratches or compression artifacts and local degradations usually encountered in digital (original or digitized) images. The smoothing happens along the image curvatures, thus preserving the meaningful content much alike our human eye would want it.
 
-.. figure:: images/editor_restoration.png
+.. figure:: images/editor_restoration.webp
 
 The tool comes with several presets as starting points and to simplify the restoration. The preset settings available are listed below:
 
@@ -195,7 +195,7 @@ The tool comes with several presets as starting points and to simplify the resto
 
 If you want to set filter parameters for finer adjustments, use Smoothing Settings and Advanced Settings tabs:
 
-.. figure:: images/editor_restoration_settings1.png
+.. figure:: images/editor_restoration_settings1.webp
 
     Detail Preservation p [0, 100]: this controls the preservation of the curvatures (features). A low value forces an equal smoothing across the image, whereas bigger values preferably smooth the homogeneous regions and leaves the details sharper. A value of 0.9 should well preserve details so that no sharpening is required afterwards. Note that Detail Preservation must be always inferior to Anisotropy.
 
@@ -207,7 +207,7 @@ If you want to set filter parameters for finer adjustments, use Smoothing Settin
 
     Filter Iterations: number of times the blurring algorithm is applied. Usually 1 or 2 is sufficient.
 
-.. figure:: images/editor_restoration_settings2.png
+.. figure:: images/editor_restoration_settings2.webp
 
     Angular Step da [5, 90]: angular integration of the anisotropy alpha. If alpha is chosen small, da should also be chosen small. But beware, small angles result in long runs! Choose it as large as you can accept.
 
@@ -240,7 +240,7 @@ With the wide exposure range of present-day film and the color (or grey-scale) d
 Using the vignetting correction tool
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: images/editor_vignetting_correction.png
+.. figure:: images/editor_vignetting_correction.webp
 
 Five sliders give you control over the vignetting correction filter, and three more over the target image exposure:
 
@@ -273,7 +273,7 @@ The values used for this example are:
 
     Radius = 1.1.
 
-.. figure:: images/editor_antivignetting_preview.png
+.. figure:: images/editor_antivignetting_preview.webp
 
 Remove Red Eyes
 ---------------
@@ -288,7 +288,7 @@ How it works
 
     - The **Red Level** setting adjusts the amount of red eyes removal, in aggressive mode or not.
 
-.. figure:: images/editor_redeyes_correction.png
+.. figure:: images/editor_redeyes_correction.webp
 
 Image Sharpening
 ----------------
@@ -317,7 +317,7 @@ If the camera focus is not set perfectly or if the camera is moving when the ima
 
 In some situations, you may be able to get useful results by sharpening an photograph using the Sharpen tool by the Enhance → Sharpen menu entry.
 
-.. figure:: images/editor_sharpen.png
+.. figure:: images/editor_sharpen.webp
 
 You should be careful with this though, or the results will not look very natural: sharpening increases the apparent sharpness of edges in the photograph, but also amplifies noise. Generally, the most useful technique for sharpening a fuzzy photograph is the Refocus tool. You can access it with the Enhance → Refocus menu entry. Look at Refocus for more information and a comparison of all the sharpening techniques.
 
@@ -338,7 +338,7 @@ The Unsharp Masking Filter
 
     The Unsharp Mask filter is an excellent tool to remove haze from your photographs, see this url for a demonstration.
 
-.. figure:: images/editor_unsharpen_mask.png
+.. figure:: images/editor_unsharpen_mask.webp
 
 The image panel and the original preview help you to pan within the image. The preview window shows the filter output using the current settings.
 
@@ -359,7 +359,7 @@ This tool attempts to "refocus" an image by undoing the defocussing. This is bet
 
 The Refocus technique works differently from Unsharp Mask and is also unlike the Sharpen Filter which both increase the contrast of the edges of an image. Refocus rather reverses the process by which the image got blurred by the circular aperture of the camera. This method gives you as much of the original "in focus" image as possible. Refocus uses a very powerful deconvolution algorithm that will reclaim the data that has been mixed up. In mathematical terms, blurring is usually the result of a convolution, a deconvolution will reverse the process, this is exactly what Refocus is doing. Furthermore, the FIR filter technique allows to remove much of the noise and granularity that often gets accentuated in the sharpening process of all sharpening filters.
 
-.. figure:: images/editor_refocus.png
+.. figure:: images/editor_refocus.webp
 
 The image panel and the original preview help you to pan within the image. The preview window shows the filter output using the current settings.
 
@@ -418,10 +418,10 @@ Below, you can see a comparison of different filter apply on a small unfocused i
 =================================================== ====================================================================================================================================================================
 Preview                                             Type
 =================================================== ====================================================================================================================================================================
-.. figure:: images/editor_refocus_notsharpened.png  Original blurred color image to fix. This image have been taken with an analog still camera. The unfocusing result of an insufficient light for the auto-focus lens.
-.. figure:: images/editor_refocus_sharped.png       Fixed image using simple sharpening filter. Sharpness setting is 80.
-.. figure:: images/editor_refocus_unsharpmask.png   Fixed image using unsharp mask filter. Settings are Radius=50, Amount = 5, and Threshold=0.
-.. figure:: images/editor_refocus_refocus.png       Fixed image using Refocus filter. Settings are Circular Sharpness=1.3, Correlation=0.5, Noise Filter=0.020, Gaussian Sharpness=0 and Matrix Size=5.
+.. figure:: images/editor_refocus_notsharpened.webp  Original blurred color image to fix. This image have been taken with an analog still camera. The unfocusing result of an insufficient light for the auto-focus lens.
+.. figure:: images/editor_refocus_sharped.webp       Fixed image using simple sharpening filter. Sharpness setting is 80.
+.. figure:: images/editor_refocus_unsharpmask.webp   Fixed image using unsharp mask filter. Settings are Radius=50, Amount = 5, and Threshold=0.
+.. figure:: images/editor_refocus_refocus.webp       Fixed image using Refocus filter. Settings are Circular Sharpness=1.3, Correlation=0.5, Noise Filter=0.020, Gaussian Sharpness=0 and Matrix Size=5.
 =================================================== ====================================================================================================================================================================
 
 .. note::
