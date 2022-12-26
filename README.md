@@ -175,7 +175,7 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
 .. figure:: images/my_screen_shot.webp
 ```
 
-### WEBM Video Capture
+### WEBM Screencast Capture
 
 Another format supported inside the documentation is **WEBM** video. It can be used to present a region of screen
 from the application while an operation is under progress. It's perfect to write tutorials.
@@ -194,6 +194,12 @@ Configuration:
 Do not use space and capitalized characters in file name.
 
 WEBP files must be hosted in **videos/** sub-folders from each documentation section.
+
+- To include the screencast in a ReStructuredText file, use the syntax below;
+
+```
+.. figure:: video/my_screen_cast.webm
+```
 
 ### Translations
 
