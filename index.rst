@@ -468,6 +468,10 @@ The Maintenance Tools
 
         :ref:`maintenance_quality`
 
+    .. container:: tile no-descr
+
+        :ref:`maintenance_metadata`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
