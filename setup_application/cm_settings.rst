@@ -19,7 +19,7 @@ digiKam is color-management enabled. RAW files - as they come - are not color ma
 
 Basically, a profile "maps" the color information and gives information on how one should render them. It gives also information to LCMS and digiKam on how to translate the color information from one color space to an other in order to keep the colors as accurate as possible across all rendering media.
 
-.. figure:: images/setup_cm_behavior.png
+.. figure:: images/setup_cm_behavior.webp
 
 Behavior Ask when opening an image in image editor / Launch Color Management tool with RAW files
 
@@ -58,6 +58,6 @@ The Canon profile extension betray the target style: F for Faithful Style, L for
 
 Here you find a typical RAW workflow scenario.
 
-.. figure:: images/setup_cm_profiles.png
+.. figure:: images/setup_cm_profiles.webp
 
-.. figure:: images/setup_cm_advanced.png
+.. figure:: images/setup_cm_advanced.webp

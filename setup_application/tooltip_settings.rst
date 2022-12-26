@@ -17,8 +17,8 @@ Tooltip Settings
 
 This setup page covers all options of information appearing when the mouse hovers over a file icon in the Image Area. According to the checked options they will be shown or not.
 
-.. figure:: images/setup_tooltip.png
+.. figure:: images/setup_tooltip.webp
 
 This example present the information displayed in a tooltip over an icon with the relevant settings done in the configuration page. 
 
-.. figure:: images/setup_tooltip_icon.png
+.. figure:: images/setup_tooltip_icon.webp

@@ -17,7 +17,7 @@ Image Quality Sorting Settings
 
 These settings refer to the Image Quality Sorter tool which you can access via Tools → Maintenance. This tool is based on neural network to classify items by the aesthetic quality and assign a Pick Label value accordingly. By default the automatic sorting is enabled to simplify the workflow, but you can turn off this feature and use customized settings based on basic factors.
 
-.. figure:: images/setup_quality.png
+.. figure:: images/setup_quality.webp
 
 In the nanual configuration mode, the four “Detect ...” options you can choose which kind of fault should be factored in by the Image Quality Sorter. Talking about factoring in: the factors for blur, noise and compression can set with the help of the three “... Weight” adjustment bars on the right.
 

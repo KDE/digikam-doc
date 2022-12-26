@@ -18,7 +18,7 @@ Miscellaneous Settings
 Behavior Settings
 -----------------
 
-.. figure:: images/setup_miscs_behavior.png
+.. figure:: images/setup_miscs_behavior.webp
 
 Scan for new items at startup option will force digiKam to scan the album library tree for new items added or removed between digiKam sessions. This may slow down the start time of digiKam. If any items have been removed from album library, digiKam will ask you confirmation before to remove definitely item references in database.
 
@@ -35,7 +35,7 @@ The updates settings allows to tune how the check for new application versions a
 Appearance Settings
 -------------------
 
-.. figure:: images/setup_miscs_appearance.png
+.. figure:: images/setup_miscs_appearance.webp
 
 With the Show splash screen at startup setting, you can switch off the display of the splash screen when application loads. This may speed up the start time slightly.
 
@@ -50,25 +50,25 @@ Grouping Settings
 
 This section list the operations to perform on all grouped items depending on the usage context.
 
-.. figure:: images/setup_miscs_grouping.png
+.. figure:: images/setup_miscs_grouping.webp
 
 Spellcheck Settings
 -------------------
 
 This section allows to control the speel-scheking operations done in background in all text edit widgets.
 
-.. figure:: images/setup_miscs_spellcheck.png
+.. figure:: images/setup_miscs_spellcheck.webp
 
 Localize Settings
 -----------------
 
 This section allows to customize the rules to translate automatically strings from text edit widgets using online translator engine.
 
-.. figure:: images/setup_miscs_localize.png
+.. figure:: images/setup_miscs_localize.webp
 
 System Settings
 ---------------
 
 This section allows to tune special low level configurations used by application. Only change these settings if you know what you do.
 
-.. figure:: images/setup_miscs_system.png
+.. figure:: images/setup_miscs_system.webp

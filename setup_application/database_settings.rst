@@ -42,7 +42,7 @@ To make your application run fast and smoothly, it is recommended to check and o
 
 SQLite database files could be found in your “collection” folder, which you have added to digiKam. (By default, if you add your “Pictures” collection, the database files will be present in ~/Pictures folder).
 
-.. figure:: images/setup_database_sqlite.png
+.. figure:: images/setup_database_sqlite.webp
 
 The MySQL Database
 ------------------
@@ -87,7 +87,7 @@ Internal server creates a separate database that can be accessed (only while app
 
 Internal server uses two MySQL Binary Tools - mysql_install_db and mysqld. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system.
 
-.. figure:: images/setup_database_mysqlinternal.png
+.. figure:: images/setup_database_mysqlinternal.webp
 
 The MySQL Remote Server
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,7 +114,7 @@ Follow the instructions below, if you don’t have a dedicated user account and 
 
 Now, in digiKam, go to Settings → Configure digiKam... and then under Settings section, select MySQL Server from the drop down list.
 
-.. figure:: images/setup_database_remotemysql.png
+.. figure:: images/setup_database_remotemysql.webp
 
 Enter the IP address of your MySQL server in the Host Name field and specify the correct port in the Port field (the default port is 3306).
 
@@ -143,7 +143,7 @@ The photo management application comes up with an exclusive tool “Database Mig
 
 To migrate to another database, go to Settings → Database Migration.... A dialog box appears:
 
-.. figure:: images/setup_database_migration.png
+.. figure:: images/setup_database_migration.webp
 
 Now choose appropriate database types you want to convert to. Finally, click on Migrate button to convert the database from SQLite to MySQL (or vice versa).
 
@@ -163,4 +163,4 @@ digiKam provides a unique tool of maintaining the statistics of your collection.
 
 You can view your statistics by going to Help → Database Statistics. A dialog box like this will appear:
 
-.. figure:: images/setup_database_statistics.png
+.. figure:: images/setup_database_statistics.webp

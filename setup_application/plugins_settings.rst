@@ -22,8 +22,8 @@ This view allows to see the list of plugins available for different part of the 
 - Batch Queue Manager: specific tools to process item in batch.
 - Image Loaders: tools to load item contents in memory.
 
-.. figure:: images/setup_plugins_generic.png
+.. figure:: images/setup_plugins_generic.webp
 
 If you doucle-click on one plugin entry in a list, you will open a dialog showing details about the tool.
 
-.. figure:: images/setup_plugins_loaders.png
+.. figure:: images/setup_plugins_loaders.webp

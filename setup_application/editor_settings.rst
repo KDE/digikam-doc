@@ -22,7 +22,7 @@ By default the Image Editor will use a black background behind photographs when 
 
 Over and underexposed areas of an image can be indicated by dark and light marker colors that can be defined here. In the editor this viewing mode can be switched on and off with F10 and F11 respectively. The thresholds for over- and under-exposure can be set by the adjustment bars "... percents". Check Indicate exposure as pure color if you want only pure black (RGB 0,0,0) indicated as under-exposure and only pure white (RGB 8 bit 255,255,255 respectively RGB 16 bit 65535, 65535, 65535) indicated as over-exposure.
 
-.. figure:: images/setup_editor_iface.png
+.. figure:: images/setup_editor_iface.webp
 
 Save Image Options
 ------------------
@@ -31,7 +31,7 @@ When changes are made to JPEG files and they are saved back to the hard disk the
 
 Chroma subsampling is the practice of encoding images by implementing more resolution for luminance information than for color information. Please read this Wikipedia article for a full explanation.
 
-.. figure:: images/setup_editor_save.png
+.. figure:: images/setup_editor_save.webp
 
 With PNG compression option, you can reduce PNG image files size. This operation does not reduce image quality because PNG uses a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value to use a high compression factor (1: low compression / 9: high compression). At the time of writing, metadata is supported.
 
@@ -46,7 +46,7 @@ Image Versioning Settings
 
 Non-Destructive Editing and Versioning gives you the freedom of editing your images, trying out whatever you want without worrying that you might regret later what you did. digiKam takes care of the original and every important intermediate step if you want.
 
-.. figure:: images/setup_editor_version.png
+.. figure:: images/setup_editor_version.webp
 
 In the checkbox at the top you can enable or disable Non-Destructive Editing and Versioning.
 
@@ -63,7 +63,7 @@ RAW Behavior
 
 In the early versions of digiKam the Image Editor was just a viewer for photographs, but it is rapidly developing into a very useful photo manipulation tool. This dialog allows you to control how the Image Editor will behave when opening RAW files.
 
-.. figure:: images/setup_editor_raw_behavior.png
+.. figure:: images/setup_editor_raw_behavior.webp
 
 **Fast and simple, as 8 bit image**: RAW files will be decoded to 8-bit color depth with a BT.709 gamma curve and a 99th-percentile white point. This mode is faster than 16-bit decoding. In 8-bit mode only the Auto Brightness setting will be taken into account.
 
@@ -74,7 +74,7 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 RAW Default Settings
 --------------------
 
-.. figure:: images/setup_editor_raw_settings.png
+.. figure:: images/setup_editor_raw_settings.webp
 
 Demosaicing
 ~~~~~~~~~~~

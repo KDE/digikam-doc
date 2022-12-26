@@ -21,7 +21,7 @@ The Metadata Templates Manager is meant to create and manage metadata templates 
 
     - The On the Fly Operations (JPEG only) section of the Settings view of the Right Sidebar in the Import → Cameras → Cameras Window. 
 
-.. figure:: images/setup_template_rights.png
+.. figure:: images/setup_template_rights.webp
 
 The top part shows a list of the already existing templates. The first row shows the title of the template, the second row shows the name of the author(s) in the “Author Names” field of that very template. To the right you have three editing buttons, below an input field for the template title. To create a new template you type a title in the input field and click the Add... button. The new template will appear in the list. To edit an existing template you select it in the list, then you edit its fields (see next paragraph) and finally you click the Replace... button. You can as well type in a new title for the edited template and save the new version with the Add... button. To delete a template, very obviously, you select it in the list and click the Remove button.
 
@@ -47,15 +47,15 @@ The Rights tab (see above) contains the default identity and copyright data. Thi
 
     - Copyright Notice: The Copyright Notice should contain any necessary copyright notice for claiming the intellectual property, and should identify the current owner(s) of the copyright for the photograph. Usually, this would be the photographer, but if the image was done by an employee or as work-for-hire, then the agency or company should be listed. Use the form appropriate to your country. For the United States you would typically follow the form of (c) {date of first publication} name of copyright owner, as in "(c)2005 John Doe." Note, the word "copyright" or the abbreviation "copr" may be used in place of the (c) symbol. In some foreign countries only the copyright symbol is recognized and the abbreviation does not work. Furthermore the copyright symbol must be a full circle with a "c" inside; using something like (c) where the parentheses form a partial circle is not sufficient. For additional protection worldwide, use of the phrase, "all rights reserved" following the notice above is encouraged. In Europe you would use: Copyright {Year} {Copyright owner}, all rights reserved. In Japan, for maximum protection, the following three items should appear in the copyright field of the IPTC Core: (a) the word, Copyright; (b) year of the first publication; and (c) name of the author. You may also wish to include the phrase "all rights reserved."
 
-.. figure:: images/setup_template_location.png
+.. figure:: images/setup_template_location.webp
 
 The fields in the Location tab are self explaining by their title and the gray hints in the empty fields. A little bit more elaborate description can be found under Settings → Configure digiKam... → Metadata → Views → IPTC viewer.
 
-.. figure:: images/setup_template_contact.png
+.. figure:: images/setup_template_contact.webp
 
 The data in the Contact tab refer to the (lead) photographer under “Author Names” in the Rights tab.
 
-.. figure:: images/setup_template_subjects.png
+.. figure:: images/setup_template_subjects.webp
 
 In the Subjects tab you can assign one or more Subject Codes according to the IPTC Photo Metadata Standard to the template. If the first option “Use standard reference code” is selected you can choose a code from the drop down field and the meaning of it will then appear in the fields of the “Use custom definition” section. If you don't know the code for the subject you want to assign this way is a bit tedious since there are 1400 subjects in the standard. A better way is to look for your subject in this URL. There you select “Subject Codes” and your language (English recommended) and click “Show”. In the diagram you scroll and make additional levels of an item visible by clicking on one of the fields. In the field right of the diagram you can find the code of the selected subject.
 
