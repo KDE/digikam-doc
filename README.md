@@ -173,6 +173,10 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
 
 ```
 .. figure:: images/my_screen_shot.webp
+    :alt:
+    :align: center
+
+    My Screenshot Legend
 ```
 
 ### WEBM Screencast Capture
@@ -198,9 +202,12 @@ WEBP files must be hosted in **videos/** sub-folders from each documentation sec
 - To include the screencast in a ReStructuredText file, use the syntax below;
 
 ```
-.. figure:: video/my_screen_cast.webm
+.. figure:: videos/my_screen_cast.webm
     :width: 600px
     :alt:
+    :align: center
+
+    My Screencast Legend
 ```
 
 ### Translations
