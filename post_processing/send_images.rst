@@ -15,7 +15,7 @@ Send Images
 
 .. contents::
 
-This too can be used to send images directly by e-mail.
+This tool can be used to send images directly by e-mail.
 
 With this tool you can e-mail the selected images with your favorite e-mail agent. Resizing images is possible. You can use drag and drop to add more images to the list of images to send.
 
@@ -50,9 +50,10 @@ The next three items allow you to set-up the image properties to be sent. To ena
 The PNG file format in the **Image format** drop-down menu is not well adapted to reduce photographic images file size, but is best suited for compressing lossless items like the TIFF file format. PNG must be used if you use dialup speed Internet and you want to preserve the photo quality. Otherwise, JPEG is the recommended format.
 
 The **Image quality** can be chosen with the input box. 75% is the standard compression ratio for JPEG files. Setting compression to 100% will result in lossless compression at the cost of the largest file size. The difference in file size between 90% and 100% can be quite dramatic, whereas the gain in quality is minor. Very good quality is already obtained with 85% compression.
-Note
 
-If you choose JPEG as the Image file format and the original files were in JPEG format, the original Exif data included is preserved in e-mailed images.
+.. note::
+
+    If you choose JPEG as the Image file format and the original files were in JPEG format, the original Exif data included is preserved in e-mailed images.
 
 If you want to drop metadata, turn on **Remove all metadata** option.
 
