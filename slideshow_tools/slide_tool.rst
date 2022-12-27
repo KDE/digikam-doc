@@ -15,7 +15,7 @@ Basic Slide Show
 
 .. contents::
 
-This tool render a series of items as a basic slide-show. To run this tool you can use the menu entry View -> Slideshow or simply press the **slideshow** button on top of icon-view item.
+This tool render a series of items as a basic slide-show. To run this tool you can use the menu entry View -> Slideshow sub-menus or simply press the **Show FullScreen** button on top of icon-view item.
 
 .. figure:: images/slide_button.webp
 
