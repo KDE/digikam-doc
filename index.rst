@@ -506,6 +506,22 @@ Post Processing
 
    post_processing
 
+###############
+Slideshow Tools
+###############
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`slide_tool`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   slideshow_tools
+
 ###################
 Credits and License
 ###################
