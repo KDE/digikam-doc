@@ -1,6 +1,6 @@
 .. meta::
    :description: Using the digiKam Light Table
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, light, table
 
 .. metadata-placeholder
 
@@ -10,11 +10,11 @@
 
 .. _light_table:
 
-###############
-The Light Table
-###############
+###########
+Light Table
+###########
 
-Using the digiKam light table
+This section explain how to use the digiKam light table.
 
 .. toctree::
    :maxdepth: 2

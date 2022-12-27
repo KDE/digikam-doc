@@ -1,6 +1,6 @@
 .. meta::
    :description: Using the Digital Asset Management
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, asset, management
 
 .. metadata-placeholder
 
@@ -10,11 +10,11 @@
 
 .. _asset_management:
 
-#######
-The DAM
-#######
+########################
+Digital Asset Management
+########################
 
-Using the Digital Asset Management
+This section explain how to apply a digital asset Management in digiKam.
 
 .. toctree::
    :maxdepth: 2

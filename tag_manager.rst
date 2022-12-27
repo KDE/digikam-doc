@@ -1,6 +1,6 @@
 .. meta::
    :description: Using the digiKam Tag Manager
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, tags, manager
 
 .. metadata-placeholder
 
@@ -10,11 +10,11 @@
 
 .. _tag_manager:
 
-###############
-The Tag Manager
-###############
+###########
+Tag Manager
+###########
 
-Using the digiKam tag manager
+This section explain how to use the digiKam tag manager.
 
 .. toctree::
    :maxdepth: 2

@@ -70,9 +70,9 @@ Supported Materials
 
    supported_materials
 
-###############
-The Main Window
-###############
+###########
+Main Window
+###########
 
 .. container:: toctile
 
@@ -114,9 +114,9 @@ The Main Window
 
    main_window
 
-#################
-The Right Sidebar
-#################
+#############
+Right Sidebar
+#############
 
 .. container:: toctile
 
@@ -162,9 +162,9 @@ The Right Sidebar
 
    right_sidebar
 
-###############
-The Light Table
-###############
+###########
+Light Table
+###########
 
 .. container:: toctile
 
@@ -178,9 +178,9 @@ The Light Table
 
    light_table
 
-#######################
-The Batch Queue Manager
-#######################
+###################
+Batch Queue Manager
+###################
 
 .. container:: toctile
 
@@ -198,9 +198,9 @@ The Batch Queue Manager
 
    batch_queue
 
-###############
-The Tag Manager
-###############
+###########
+Tag Manager
+###########
 
 .. container:: toctile
 
@@ -214,9 +214,9 @@ The Tag Manager
 
    tag_manager
 
-############################
-The Digital Asset Management
-############################
+########################
+Digital Asset Management
+########################
 
 .. container:: toctile
 
@@ -246,9 +246,9 @@ The Digital Asset Management
 
    asset_management
 
-################
-The Import Tools
-################
+############
+Import Tools
+############
 
 .. container:: toctile
 
@@ -350,9 +350,9 @@ Setup Application
 
    setup_application
 
-################
-The Image Editor
-################
+############
+Image Editor
+############
 
 .. container:: toctile
 
@@ -398,9 +398,9 @@ The Image Editor
 
    image_editor
 
-######################
-The Geolocation Editor
-######################
+##################
+Geolocation Editor
+##################
 
 .. container:: toctile
 
@@ -430,9 +430,9 @@ The Geolocation Editor
 
    geolocation_editor
 
-#####################
-The Maintenance Tools
-#####################
+#################
+Maintenance Tools
+#################
 
 .. container:: toctile
 
@@ -521,5 +521,3 @@ Credits and License
    :hidden:
 
    credits_license
-
-.. TODO Add more top level entries here...

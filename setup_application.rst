@@ -1,6 +1,6 @@
 .. meta::
    :description: Using the digiKam Setup Application
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, setup
 
 .. metadata-placeholder
 
@@ -14,7 +14,7 @@
 Setup Application
 #################
 
-Using the digiKam setup application
+This section explain how to setup application.
 
 .. toctree::
    :maxdepth: 2

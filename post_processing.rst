@@ -1,6 +1,6 @@
 .. meta::
    :description: Using the digiKam Post Processing Tools
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, post, processing
 
 .. metadata-placeholder
 
@@ -10,11 +10,11 @@
 
 .. _post_processing:
 
-###################
-The Post Processing
-###################
+###############
+Post Processing
+###############
 
-Using the digiKam post processing tools
+This section explain how to use the digiKam post processing tools.
 
 .. toctree::
    :maxdepth: 2

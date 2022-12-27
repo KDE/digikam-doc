@@ -10,11 +10,11 @@
 
 .. _import_tools:
 
-################
-The Import Tools
-################
+############
+Import Tools
+############
 
-Using the digiKam import tools
+This section explain how to use the digiKam import tools.
 
 .. toctree::
    :maxdepth: 2

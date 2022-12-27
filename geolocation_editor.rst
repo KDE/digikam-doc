@@ -1,6 +1,6 @@
 .. meta::
    :description: Using the digiKam Geolocation Editor
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, geolocation
 
 .. metadata-placeholder
 
@@ -10,11 +10,11 @@
 
 .. _geolocation_editor:
 
-######################
-The Geolocation Editor
-######################
+##################
+Geolocation Editor
+##################
 
-Using the digiKam geolocation editor
+This section explain how to use the digiKam geolocation editor.
 
 .. toctree::
    :maxdepth: 2

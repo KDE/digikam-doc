@@ -1,6 +1,6 @@
 .. meta::
    :description: Using the digiKam main window
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, main window
 
 .. metadata-placeholder
 
@@ -10,11 +10,11 @@
 
 .. _main_window:
 
-###############
-The Main Window
-###############
+###########
+Main Window
+###########
 
-Using the digiKam main window
+This section explain how to use the digiKam main window.
 
 .. toctree::
    :maxdepth: 2

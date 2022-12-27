@@ -1,6 +1,6 @@
 .. meta::
    :description: Using the digiKam Right Sidebar
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, sidebar
 
 .. metadata-placeholder
 
@@ -10,11 +10,11 @@
 
 .. _right_sidebar:
 
-#################
-The Right Sidebar
-#################
+#############
+Right Sidebar
+#############
 
-Using the digiKam right sidebar
+This section explain how to use the digiKam right sidebar.
 
 .. toctree::
    :maxdepth: 2

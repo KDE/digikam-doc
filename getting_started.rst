@@ -14,7 +14,7 @@
 Getting started
 ###############
 
-An overview to start with digiKam.
+This section give an overview to start with digiKam.
 
 .. toctree::
    :maxdepth: 2

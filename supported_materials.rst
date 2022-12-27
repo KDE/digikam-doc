@@ -1,6 +1,6 @@
 .. meta::
    :description: File Formats and Devices Supported in digiKam
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, supported, materials
 
 .. metadata-placeholder
 
@@ -14,7 +14,7 @@
 Supported Materials
 ###################
 
-File formats and devices supported in digiKam
+This section explain the file formats and devices supported in digiKam.
 
 .. toctree::
    :maxdepth: 2
