@@ -23,3 +23,4 @@ This section explain how to use the digiKam slideshow tools.
 
    slideshow_tools/slide_tool.rst
    slideshow_tools/presentation_tool.rst
+   slideshow_tools/opengl_viewer.rst

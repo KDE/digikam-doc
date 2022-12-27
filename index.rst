@@ -520,6 +520,10 @@ Slideshow Tools
 
         :ref:`presentation_tool`
 
+    .. container:: tile no-descr
+
+        :ref:`opengl_viewer`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
