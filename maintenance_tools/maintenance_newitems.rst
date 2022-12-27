@@ -17,7 +17,7 @@ Scan for New Items
 
 .. figure:: images/maintenance_new_items.webp
 
-This process will scan the collections you defined in Settings → Configure digiKam... → Collections for new items, i.e. image files you added to your collections while digiKam was not running. You can run this process also automatically on digiKam startup by checking Scan for new items at startup in Settings → Configure digiKam... → Miscellaneous.
+This process will scan the collections you defined in Settings --> Configure digiKam... --> Collections for new items, i.e. image files you added to your collections while digiKam was not running. You can run this process also automatically on digiKam startup by checking Scan for new items at startup in Settings --> Configure digiKam... --> Miscellaneous.
 
 While the scan for new items process is under progress, notification on the bottom right of main windows will be visible to indicate the amount of items already done.
 
@@ -25,9 +25,9 @@ While the scan for new items process is under progress, notification on the bott
 
 .. note::
 
-    This process can also be directly called by the main menu, From Tools → Scan for New Items to scan all collections.
+    This process can also be directly called by the main menu, From Tools --> Scan for New Items to scan all collections.
 
-This process can be also called automatically at startup using the right option in Setup → Miscs → Behaviour tab. Take a care that scanning for new items at startup can take a while and slow-down application initialization.
+This process can be also called automatically at startup using the right option in Setup --> Miscs --> Behaviour tab. Take a care that scanning for new items at startup can take a while and slow-down application initialization.
 
 To be precise, this option will force digiKam to scan all collections for new items to register new elements in database. The scan is performed in the background through the progress manager available in the statusbar when digiKam main interface is loaded. If your computer is fast enough, this will have no effect on usability of digiKam while scanning. If your collections are huge or if you use a remote database, this can introduce low latency, and it is recommended to disable this option and to plan a manual scan through the maintenance tool at the right moment.
 

@@ -18,16 +18,16 @@ Basic Operations
 Restoring Your Original Photograph
 ----------------------------------
 
-The editing functions of the Image Editor will make changes to your photograph. None of the editing functions will change the original photograph unless you select File → Save or click the Save button in the tool bar. Note that once you have saved the changed version you will not be able to recover the original photograph.
+The editing functions of the Image Editor will make changes to your photograph. None of the editing functions will change the original photograph unless you select File --> Save or click the Save button in the tool bar. Note that once you have saved the changed version you will not be able to recover the original photograph.
 
-You might prefer to take a copy of your photograph before you make any changes. You can use File → Save As... to save a working copy.
+You might prefer to take a copy of your photograph before you make any changes. You can use File --> Save As... to save a working copy.
 
-At any time before you save your photograph you can restore the view to the original image by selecting File → Revert or clicking the The Image Editor Revert Button Revert button on the tool bar. You will lose any changes that you have made to the photograph since it was last saved.
+At any time before you save your photograph you can restore the view to the original image by selecting File --> Revert or clicking the The Image Editor Revert Button Revert button on the tool bar. You will lose any changes that you have made to the photograph since it was last saved.
 
 Undoing/Redoing Actions
 -----------------------
 
-Almost anything you do to an image in Image Editor can be undone/redone. You can undo the most recent action by choosing Edit → Undo, and redo by Edit → Redo.
+Almost anything you do to an image in Image Editor can be undone/redone. You can undo the most recent action by choosing Edit --> Undo, and redo by Edit --> Redo.
 
 If these are done frequently, you really should memorize the keyboard shortcuts, Ctrl+Z to undo an action, and Ctrl+Shift+Z to redo an action.
 
@@ -45,11 +45,11 @@ You can zoom in and out of a photograph using the Ctrl-scroll wheel, the toolbar
 
 To make a photograph fit the window use this button on the tool bar: Zoom Autofit The Image Editor AutoFit Button
 
-View → Full Screen Mode will display the photograph using the full screen mode. You can move back to the normal view by pressing the Esc key. By default the toolbar is still displayed even in Full Screen Mode. If you would prefer that the toolbar is not displayed you can turn it off in the Configure digiKam dialog accessed from the main digiKam window, see the Setup Image Editor Window Section.
+View --> Full Screen Mode will display the photograph using the full screen mode. You can move back to the normal view by pressing the Esc key. By default the toolbar is still displayed even in Full Screen Mode. If you would prefer that the toolbar is not displayed you can turn it off in the Configure digiKam dialog accessed from the main digiKam window, see the Setup Image Editor Window Section.
 
 Printing Images
 ---------------
 
-When you want to print the current image from the Image Editor, select File → Print image... (Ctrl+P) and you get the standard Print dialog, where you can adjust the settings before printing your photograph.
+When you want to print the current image from the Image Editor, select File --> Print image... (Ctrl+P) and you get the standard Print dialog, where you can adjust the settings before printing your photograph.
 
-From the main window view you can print single images or whole sets of them. Entire thumbnail pages can be printed with your selection. All you need to do is selecting images the standard way and call Item → Print Assistant.... Then follow the instructions and choices to make.
+From the main window view you can print single images or whole sets of them. Entire thumbnail pages can be printed with your selection. All you need to do is selecting images the standard way and call Item --> Print Assistant.... Then follow the instructions and choices to make.

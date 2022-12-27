@@ -20,7 +20,7 @@ The Map Utils
 
 The Geolocation Editor allows for adding and editing GPS coordinates of picture metadata. The geo-data is stored into the image (EXIF tags) and the location can be displayed in an internal or external browser map. The Geolocation Editor also offers a Reverse Geocoding tool.
 
-Geolocation Editor can be opened via menu entry Item → Edit Geolocation or via pressing Ctrl+Shift+G. It requires at least one image to be selected otherwise it will not open.
+Geolocation Editor can be opened via menu entry Item --> Edit Geolocation or via pressing Ctrl+Shift+G. It requires at least one image to be selected otherwise it will not open.
 
 .. figure:: images/geoeditor_edit_coords.webp
 
@@ -67,7 +67,7 @@ Right under the map you find a row of buttons. I shall use the tooltip texts as 
 
     The Select-images button toggles the selection of an image or a group of images in the list of images right below the buttons once you click on it on the map. The selection status of all other images in the list remain unchanged. Be aware of the fact that there is a kind of two-stage selection! If you click on a thumbnail or marker on the map the selected image(s) in the list of images will become a light blue background. If you click on it in the list the background will become a darker blue and if there where more than one image with light blue background before the others will become un-selected. Only clicking on an image in the list will let its preview appear to the right of the list.
 
-    The Display-bookmarked-positions-on-the-map button is not working at the time of writing because the whole bookmark issue needs to be reorganized. This also affects the Bookmarks → Edit Bookmarks... item in the context menu on the list of images below the map and the Add Bookmark item in the context menu on the map. 
+    The Display-bookmarked-positions-on-the-map button is not working at the time of writing because the whole bookmark issue needs to be reorganized. This also affects the Bookmarks --> Edit Bookmarks... item in the context menu on the list of images below the map and the Add Bookmark item in the context menu on the map. 
 
 .. warning::
 

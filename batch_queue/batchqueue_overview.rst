@@ -17,7 +17,7 @@ Overview
 
 digiKam features a batch queue manager in a separate window to easily process in batch items, aka filtering, converting, transforming, etc. It works with all supported image formats including RAW files.
 
-Select one or several images in any view from the main window, call Add on Current Queue (Ctrl+B) from the context menu. The selection will be added to the batch queue manager, and its separate window will open. When you are back to the digiKam main window you can quickly access the batch queue manager with Tools → Batch Queue (B).
+Select one or several images in any view from the main window, call Add on Current Queue (Ctrl+B) from the context menu. The selection will be added to the batch queue manager, and its separate window will open. When you are back to the digiKam main window you can quickly access the batch queue manager with Tools --> Batch Queue (B).
 
 On the top left side, the window show the list of queues to process. Queues are a stack of items to batch using the same tools and the same settings. Each queue will be processed sequentially, but queue contents can be processed in parallel, depending of the settings. In this view, the list is orderer in flat showing item thumbnail, the original filename, and the target filename corresponding of the result.
 

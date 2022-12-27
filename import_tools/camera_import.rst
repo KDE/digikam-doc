@@ -39,7 +39,7 @@ The Geolocation tab will open a map that allows you to see and edit the GPS loca
 Downloading photographs to your computer
 ----------------------------------------
 
-To download photographs from your camera to your computer click the Download button on the main toolbar and then click Download All (or use Item → Download All from the main menu). This will download all of the photographs on the camera with the settings you used with your last download (Settings tab). The download process will not remove the photographs from the camera. It is always advisable to check that the photographs have downloaded safely into the Album you were expecting before deleting them from the camera.
+To download photographs from your camera to your computer click the Download button on the main toolbar and then click Download All (or use Item --> Download All from the main menu). This will download all of the photographs on the camera with the settings you used with your last download (Settings tab). The download process will not remove the photographs from the camera. It is always advisable to check that the photographs have downloaded safely into the Album you were expecting before deleting them from the camera.
 
 If you do not want to download all of the photographs you can select just those that you need using the standard selection methods. Once you have the photographs selected, click Download and then Download Selected. The Download Selected button will be grayed out until you have selected some photographs.
 
@@ -48,7 +48,7 @@ Another option is Download new. New images are marked with a star in the upper r
 Uploading Photographs to your camera
 ------------------------------------
 
-To upload photographs from your computer to your camera click Item → Upload... (Ctrl+U) in the Import Interface menu. A standard file selection dialog will appear to select the files from your computer for copying to your camera. You can select more than one file using the standard selection methods.
+To upload photographs from your computer to your camera click Item --> Upload... (Ctrl+U) in the Import Interface menu. A standard file selection dialog will appear to select the files from your computer for copying to your camera. You can select more than one file using the standard selection methods.
 
 When images selection is done, digiKam will ask you to where you want to upload the files on your camera. A camera folder selection dialog will appear. Just select one folder and press OK to start uploading. No images will be removed from your computer.
 
@@ -59,7 +59,7 @@ When images selection is done, digiKam will ask you to where you want to upload 
 Deleting photographs from the camera
 ------------------------------------
 
-Once you are happy with the downloaded photographs that you wanted, you are ready to delete photographs from the Camera. You can delete all of the photographs at once by clicking the Item → Delete All button. If you just want to delete a selection of the photographs, you have to select those that you want to delete and click Item → Delete Selected. You may also select Item → Delete New, for example if you feel that the images marked with the star are not worth downloading.
+Once you are happy with the downloaded photographs that you wanted, you are ready to delete photographs from the Camera. You can delete all of the photographs at once by clicking the Item --> Delete All button. If you just want to delete a selection of the photographs, you have to select those that you want to delete and click Item --> Delete Selected. You may also select Item --> Delete New, for example if you feel that the images marked with the star are not worth downloading.
 
 .. caution::
 

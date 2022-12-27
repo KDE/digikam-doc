@@ -15,7 +15,7 @@ Theme Settings
 
 .. contents::
 
-Color schemes are supplied like themes to personalize digiKam main interface for you pleasure. To access these settings select Settings → Themes from the menubar and select your preferred theme to use.
+Color schemes are supplied like themes to personalize digiKam main interface for you pleasure. To access these settings select Settings --> Themes from the menubar and select your preferred theme to use.
 
 .. figure:: images/setup_theme_menu.webp
 

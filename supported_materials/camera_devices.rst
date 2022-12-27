@@ -20,7 +20,7 @@ Introduction
 
 .. note::
 
-     RAW file support: if you are using RAW shooting mode with your camera, digiKam is probably well able to deal with it. RAW support depends on the libraw library. To find out if your particular camera is supported, bring up the list from the Help → Supported RAW Cameras menu.
+     RAW file support: if you are using RAW shooting mode with your camera, digiKam is probably well able to deal with it. RAW support depends on the libraw library. To find out if your particular camera is supported, bring up the list from the Help --> Supported RAW Cameras menu.
 
      How to setup and work with RAW files is described in **RAW Decoding Settings** and **RAW Workflow** sections.
 
@@ -48,6 +48,6 @@ Transfers using Mass Storage device
 
     - **FireWire Mass Storage**: a computer interface using communication protocols developed primarily by Apple Computer in the 1990s. FireWire offers high-speed communications and isochronous real-time data services. Like USB Mass Storage, this standard provides an interface to a variety of storage devices, including digital still cameras. Almost all recent digital cameras support USB version 1 and eventually will support USB version 2; a very few support FireWire. 
 
-To use a generic Mass Storage device with digiKam, select Import → Camera → Add Camera Manually..., add your device and set the correct mount point path.
+To use a generic Mass Storage device with digiKam, select Import --> Camera --> Add Camera Manually..., add your device and set the correct mount point path.
 
 For details see the chapter **Configure digiKam**, into Section "Camera".

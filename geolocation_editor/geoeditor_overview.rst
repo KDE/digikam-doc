@@ -29,7 +29,7 @@ There are four tools regarding geolocation in digiKam and two in Showfoto:
 
     The Map View on the Left Sidebar of digiKam which is the search tool for finding images by their GPS data. This is also only available in digiKam.
 
-    The Geolocation Editor we describe a little bit further below and which is accessible via Item → Edit Geolocation... (Ctrl+Shift+G) (File → Edit Geolocation... in Showfoto).
+    The Geolocation Editor we describe a little bit further below and which is accessible via Item --> Edit Geolocation... (Ctrl+Shift+G) (File --> Edit Geolocation... in Showfoto).
 
     The Map tab on the Right Sidebar which shows the location of the image on a map and is purely informative. 
 

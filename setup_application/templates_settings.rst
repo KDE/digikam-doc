@@ -19,7 +19,7 @@ The Metadata Templates Manager is meant to create and manage metadata templates 
 
     - The Information tab of the Captions view of the Right Sidebar
 
-    - The On the Fly Operations (JPEG only) section of the Settings view of the Right Sidebar in the Import → Cameras → Cameras Window. 
+    - The On the Fly Operations (JPEG only) section of the Settings view of the Right Sidebar in the Import --> Cameras --> Cameras Window. 
 
 .. figure:: images/setup_template_rights.webp
 
@@ -49,7 +49,7 @@ The Rights tab (see above) contains the default identity and copyright data. Thi
 
 .. figure:: images/setup_template_location.webp
 
-The fields in the Location tab are self explaining by their title and the gray hints in the empty fields. A little bit more elaborate description can be found under Settings → Configure digiKam... → Metadata → Views → IPTC viewer.
+The fields in the Location tab are self explaining by their title and the gray hints in the empty fields. A little bit more elaborate description can be found under Settings --> Configure digiKam... --> Metadata --> Views --> IPTC viewer.
 
 .. figure:: images/setup_template_contact.webp
 

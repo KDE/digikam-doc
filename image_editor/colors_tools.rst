@@ -32,7 +32,7 @@ Auto-Correction
 
 This tool set provides five automatic correction levels that will improve an image in most cases. Use this tool before going into the more involved manual adjustments.
 
-The Auto Levels, Normalize, Equalize, Stretch Contrast, and Auto Exposure available from Correct → Auto-Correction... menu entry menu will attempt to work out the best color levels automatically. You will need to experiment with the effects of these functions to see what works best with your photograph. 
+The Auto Levels, Normalize, Equalize, Stretch Contrast, and Auto Exposure available from Correct --> Auto-Correction... menu entry menu will attempt to work out the best color levels automatically. You will need to experiment with the effects of these functions to see what works best with your photograph. 
 
    - Auto Levels: This option maximizes the tonal range in the Red, Green, and Blue channels. It searches the image shadow and highlight limit values and adjusts the Red, Green, and Blue channels to a full histogram range.
 
@@ -56,7 +56,7 @@ Black & White photography has always been fascinating in its abstraction capabil
 The Legacy Black and White Films Emulation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-digiKam comes with a couple of black & white filters that you can use on your photographs. Under the Color → Black & White... menu you will find classic black & white chemical toning used in analog photography. The controls come on four drop-down items: Film, Lens Filters, Tone and Lightness as shown on the screenshot below. Film, filters and color toning can be applied independently of each other (on top of each other). The filters actually influence the RGB channel mixing, whereas the toning purely adds a uniform monochromatic tint to the black & white photograph. In the lightness tab you will find a tonal adjustment tool (like curve adjust), a contrast tool and an over-exposure indicator to improve the b&w rendering.
+digiKam comes with a couple of black & white filters that you can use on your photographs. Under the Color --> Black & White... menu you will find classic black & white chemical toning used in analog photography. The controls come on four drop-down items: Film, Lens Filters, Tone and Lightness as shown on the screenshot below. Film, filters and color toning can be applied independently of each other (on top of each other). The filters actually influence the RGB channel mixing, whereas the toning purely adds a uniform monochromatic tint to the black & white photograph. In the lightness tab you will find a tonal adjustment tool (like curve adjust), a contrast tool and an over-exposure indicator to improve the b&w rendering.
 
 .. figure:: images/editor_bw_filters.webp
 
@@ -111,7 +111,7 @@ Adjust Curves
 
 The digiKam Adjust Curves is a tool to non-linearly adjust luminosity graduation and color channels.
 
-The Adjust Curves tool is the most sophisticated tool available to adjust the images' tonality. Start it from the Color → Curves Adjust... Image Editor menu. It allows you to click and drag control points on a curve to create a free function mapping input brightness levels to output brightness levels. The Adjust Curves tool can replicate any effect you can achieve with Brightness/Contrast/Gamma or the Adjust Levels tool, though it is more powerful than either one of them. But this tool can do more for you, it helps you to improve the tonal quality of your photographs to very finely stepped gray scales. And do not forget that the better the photographs are (good exposure, lossless format, 24 or 32 bit deep) the more you can improve them. Navigate to the "Achieving ultimate tonal quality" section of this instructive page: Tonal quality and dynamic range in digital cameras by Norman Koren. Use Adjust Curves tool to do just the same!
+The Adjust Curves tool is the most sophisticated tool available to adjust the images' tonality. Start it from the Color --> Curves Adjust... Image Editor menu. It allows you to click and drag control points on a curve to create a free function mapping input brightness levels to output brightness levels. The Adjust Curves tool can replicate any effect you can achieve with Brightness/Contrast/Gamma or the Adjust Levels tool, though it is more powerful than either one of them. But this tool can do more for you, it helps you to improve the tonal quality of your photographs to very finely stepped gray scales. And do not forget that the better the photographs are (good exposure, lossless format, 24 or 32 bit deep) the more you can improve them. Navigate to the "Achieving ultimate tonal quality" section of this instructive page: Tonal quality and dynamic range in digital cameras by Norman Koren. Use Adjust Curves tool to do just the same!
 
 This tool provides visual curves to modify the intensity values of the active layer displayed as a histogram non-linearily. In Curve smooth mode, you change the curves shape by adding new points to the curve or by moving end point positions. Another way, is to draw all the curve manually in Curve free mode. In both cases the effect is immediately displayed in the image preview area to the left, where the preview can be configured by clicking on the top left icons.
 
@@ -213,7 +213,7 @@ Channel Mixer
 
 The digiKam image Channel Mixer is a tool to remix the color channels to improve or modify the photograph color shades.
 
-The Channel Mixer is an another sophisticated tool to refine the images' tonality. Start it from the Color → Channel Mixer Image Editor menu.
+The Channel Mixer is an another sophisticated tool to refine the images' tonality. Start it from the Color --> Channel Mixer Image Editor menu.
 
 .. figure:: images/editor_channel_mixer.webp
 

@@ -19,7 +19,7 @@ Map View
 
     - This view which is the search tool for finding images by their GPS data.
 
-    - The Geolocation Editor which is accessible via Item → Edit Geolocation... (Ctrl+Shift+G) and allows to set and to edit GPS data.
+    - The Geolocation Editor which is accessible via Item --> Edit Geolocation... (Ctrl+Shift+G) and allows to set and to edit GPS data.
 
     - The Map tab on the Right Sidebar which shows the location of the image on a map and is purely informative.
 

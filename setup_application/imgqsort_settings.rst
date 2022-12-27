@@ -15,7 +15,7 @@ Image Quality Sorting Settings
 
 .. contents::
 
-These settings refer to the Image Quality Sorter tool which you can access via Tools → Maintenance. This tool is based on neural network to classify items by the aesthetic quality and assign a Pick Label value accordingly. By default the automatic sorting is enabled to simplify the workflow, but you can turn off this feature and use customized settings based on basic factors.
+These settings refer to the Image Quality Sorter tool which you can access via Tools --> Maintenance. This tool is based on neural network to classify items by the aesthetic quality and assign a Pick Label value accordingly. By default the automatic sorting is enabled to simplify the workflow, but you can turn off this feature and use customized settings based on basic factors.
 
 .. figure:: images/setup_quality.webp
 

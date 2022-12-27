@@ -68,7 +68,7 @@ To help you to choose the best filter settings, the widget dialog illustrates wi
 
 To help you finding the best correction the tool provides a vertical and horizontal guide. Move the mouse cursor in the image preview to display the dashed lines guide. Move the cursor to an important place in the image like the sea level or a building border and press the left mouse button for freeze the dashed lines position. Now, adjust the barrel/pincushion correction to align with the guide.
 
-When using pincushion correction the resulting image will have a black border in the corner. You will need to cut this out with a crop tool available in Transform → Crop Image Editor menu or via the zoom slider of this dialog.
+When using pincushion correction the resulting image will have a black border in the corner. You will need to cut this out with a crop tool available in Transform --> Crop Image Editor menu or via the zoom slider of this dialog.
 
 On most images using the barrel correction is enough, however with some shots such as front images, frames, paintings, the next logical step is to use perspective correction to make all the angles 90 degrees. Note that when you hold your camera by hand you almost always introduce some kind of slight perspective distortion.
 
@@ -133,7 +133,7 @@ There are multiple ways to render HDR image to improve photos containing under o
 
 .. figure:: images/editor_local_contrast.webp
 
-Open the photo you want in the editor and choose Enhance → Local Contrast. The tool lets you apply up to four tonemapping operations called stages. Each stage offers two parameters for you to tweak: Power and Blur. The former allows you to specify the desaturation level, while the latter lets you adjust the affected areas on the photo. To preview the result, hit the Try button. Once you are satisfied with the result, press OK to apply the process to the photo.
+Open the photo you want in the editor and choose Enhance --> Local Contrast. The tool lets you apply up to four tonemapping operations called stages. Each stage offers two parameters for you to tweak: Power and Blur. The former allows you to specify the desaturation level, while the latter lets you adjust the affected areas on the photo. To preview the result, hit the Try button. Once you are satisfied with the result, press OK to apply the process to the photo.
 
 While the Local Contrast tool may sound like an easy way to fix photos, you should use it with care: sometimes it can do more damage than good, producing unnaturally looking photos.
 
@@ -170,7 +170,7 @@ Blur Tool
 
 The Blur Tool is dedicated to soft an image.
 
-Sometimes an image is too crisp for your purposes. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the Blur Tool with the Enhance → Blur menu entry and experiment with the level. The preview window on the right of the dialog shows the effect of the operation on your photograph.
+Sometimes an image is too crisp for your purposes. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the Blur Tool with the Enhance --> Blur menu entry and experiment with the level. The preview window on the right of the dialog shows the effect of the operation on your photograph.
 
 .. figure:: images/editor_blur.webp
 
@@ -258,7 +258,7 @@ The only way to be sure which settings of Amount, Feather, and Radius best compe
 
 .. note::
 
-    If you want a finer exposure re-adjustment of the target image, use the Adjust Curve tool from Image Editor available under Color → Adjust Curve menu entry.
+    If you want a finer exposure re-adjustment of the target image, use the Adjust Curve tool from Image Editor available under Color --> Adjust Curve menu entry.
 
 The vignetting correction tool in action
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -278,7 +278,7 @@ The values used for this example are:
 Remove Red Eyes
 ---------------
 
-Red eyes are caused when the camera flashlight is used to take photographs of people. The red is the reflection from the back of the eye which can be seen because the pupil cannot react quickly enough to the flash. By the way, with a separate flash light the red eye effect is less likely because of the different viewing angle of flash and lens. You can correct some of the worst effect of Red Eye by selecting the area of the eye on the photograph, in the same way as described for cropping above. Then select Enhance → Red Eye Reduction.
+Red eyes are caused when the camera flashlight is used to take photographs of people. The red is the reflection from the back of the eye which can be seen because the pupil cannot react quickly enough to the flash. By the way, with a separate flash light the red eye effect is less likely because of the different viewing angle of flash and lens. You can correct some of the worst effect of Red Eye by selecting the area of the eye on the photograph, in the same way as described for cropping above. Then select Enhance --> Red Eye Reduction.
 
 How it works
 
@@ -315,21 +315,21 @@ Adjusting Sharpness
 
 If the camera focus is not set perfectly or if the camera is moving when the image is taken the result is a blurred photograph. If there is a lot of blurring, you probably will not be able to do much about it with any technique. If there is only a moderate amount, you should be able to improve the image. Many good SLR cameras apply less image processing to the images than simpler cameras (which tend to artificially increase the contrast to make the images look crisp). This kind of slight blur can be easily improved with tools.
 
-In some situations, you may be able to get useful results by sharpening an photograph using the Sharpen tool by the Enhance → Sharpen menu entry.
+In some situations, you may be able to get useful results by sharpening an photograph using the Sharpen tool by the Enhance --> Sharpen menu entry.
 
 .. figure:: images/editor_sharpen.webp
 
-You should be careful with this though, or the results will not look very natural: sharpening increases the apparent sharpness of edges in the photograph, but also amplifies noise. Generally, the most useful technique for sharpening a fuzzy photograph is the Refocus tool. You can access it with the Enhance → Refocus menu entry. Look at Refocus for more information and a comparison of all the sharpening techniques.
+You should be careful with this though, or the results will not look very natural: sharpening increases the apparent sharpness of edges in the photograph, but also amplifies noise. Generally, the most useful technique for sharpening a fuzzy photograph is the Refocus tool. You can access it with the Enhance --> Refocus menu entry. Look at Refocus for more information and a comparison of all the sharpening techniques.
 
 Reducing Graininess In a Photograph
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When you take a photograph in low-light conditions or with a very fast exposure time, the camera does not get enough data to make good estimates of the true color at each pixel, and consequently the resulting photograph looks grainy. You can "smooth out" the graininess by blurring the image, but then you will also lose sharpness. Probably the best approach - if the graininess is not too bad - is to use the filter Noise Reduction tool, and you can access it by the Enhance → Noise Reduction menu entry.
+When you take a photograph in low-light conditions or with a very fast exposure time, the camera does not get enough data to make good estimates of the true color at each pixel, and consequently the resulting photograph looks grainy. You can "smooth out" the graininess by blurring the image, but then you will also lose sharpness. Probably the best approach - if the graininess is not too bad - is to use the filter Noise Reduction tool, and you can access it by the Enhance --> Noise Reduction menu entry.
 
 Softening a Photograph
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Sometimes you have the opposite problem: an image is too crisp. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the Blur Tool with the Enhance → Blur menu entry and experiment with the level. The preview window on the right of the dialog shows the effect of the operation on your photograph.
+Sometimes you have the opposite problem: an image is too crisp. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the Blur Tool with the Enhance --> Blur menu entry and experiment with the level. The preview window on the right of the dialog shows the effect of the operation on your photograph.
 
 The Unsharp Masking Filter
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -355,7 +355,7 @@ Refocus a Photograph
 
 digiKam The Refocus is a tool to refocus an image by enhancing the sharpness. It uses the Deconvolution Filter algorithm copyrighted by Ernst Lippe.
 
-This tool attempts to "refocus" an image by undoing the defocussing. This is better than just trying to sharpen a photograph. It is employing a technique called FIR Wiener Filtering. The traditional technique for sharpening images is to use unsharp masking. Refocus generally produces better results than Unsharp masking. Start it from the Enhance → Sharpen → Refocus Image Editor menu.
+This tool attempts to "refocus" an image by undoing the defocussing. This is better than just trying to sharpen a photograph. It is employing a technique called FIR Wiener Filtering. The traditional technique for sharpening images is to use unsharp masking. Refocus generally produces better results than Unsharp masking. Start it from the Enhance --> Sharpen --> Refocus Image Editor menu.
 
 The Refocus technique works differently from Unsharp Mask and is also unlike the Sharpen Filter which both increase the contrast of the edges of an image. Refocus rather reverses the process by which the image got blurred by the circular aperture of the camera. This method gives you as much of the original "in focus" image as possible. Refocus uses a very powerful deconvolution algorithm that will reclaim the data that has been mixed up. In mathematical terms, blurring is usually the result of a convolution, a deconvolution will reverse the process, this is exactly what Refocus is doing. Furthermore, the FIR filter technique allows to remove much of the noise and granularity that often gets accentuated in the sharpening process of all sharpening filters.
 

@@ -15,7 +15,7 @@ Shortcuts Settings
 
 .. contents::
 
-digiKam has the common KDE shortcut configuration tool accessed via the Settings → Configure Shortcuts main menu item. For more information read the section about the shortcut configuration in KDE applications of the KDE Fundamentals.
+digiKam has the common KDE shortcut configuration tool accessed via the Settings --> Configure Shortcuts main menu item. For more information read the section about the shortcut configuration in KDE applications of the KDE Fundamentals.
 
 digiKam keyboard shortcuts by default:
 

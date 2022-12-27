@@ -26,7 +26,7 @@ This process synchronize items metadata with database contents. The operation **
 
     As synchronization is a time consuming process, especially when metadata are written in files, it's a good idea to restrict the job to certain albums or tags. 
 
-The synchronization depends of the settings from Settings → Configure digiKam... → Metadata. All these settings is described in :ref:`the dedicated section <metadata_settings>` from Setup Application.
+The synchronization depends of the settings from Settings --> Configure digiKam... --> Metadata. All these settings is described in :ref:`the dedicated section <metadata_settings>` from Setup Application.
 
 While the metadata synchronizer process is under progress, as the the process may take much time and digiKam cannot be used, a non modal dialog appear to make sure that no database corruption occurs.
 

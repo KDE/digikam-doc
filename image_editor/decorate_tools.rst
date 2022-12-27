@@ -20,7 +20,7 @@ Apply Texture
 
 The digiKam Apply Texture is a tool for applying decorative textures to an image.
 
-By adding texture to your image, whether color or black and white, you can make it look like an oil painting on canvas, an Old Masters etching, a Pop Art portrait composed of enlarged half-tone dots, or even a mural on a brick wall. The Decorate → Apply Texture Image Editor menu can be used for that. 
+By adding texture to your image, whether color or black and white, you can make it look like an oil painting on canvas, an Old Masters etching, a Pop Art portrait composed of enlarged half-tone dots, or even a mural on a brick wall. The Decorate --> Apply Texture Image Editor menu can be used for that. 
 
 .. figure:: images/editor_texture.webp
 
@@ -35,7 +35,7 @@ Add Border
 
 The digiKam Add Border is a tool to frame an image with decorative borders.
 
-Keeping the viewer's interest within the confines of the edges of a photograph is not a simple task. One of the simplest ways to hold the attention on an image is to incorporate a decorative frame around an image. It acts as a kind of psychological barrier to the straying eye. The Image → Add Border Image Editor menu can be used for that.
+Keeping the viewer's interest within the confines of the edges of a photograph is not a simple task. One of the simplest ways to hold the attention on an image is to incorporate a decorative frame around an image. It acts as a kind of psychological barrier to the straying eye. The Image --> Add Border Image Editor menu can be used for that.
 
 .. figure:: images/editor_border.webp
 

@@ -20,24 +20,24 @@ Introduction to the Import Interface
 
 The Import Interface helps you to get photographs into a digiKam Album, whether it is directly from your camera or a scanner, from a USB mass storage device, via a card reader or from a local or remote folder. You can access the Import Interface by
 
-Import → Cameras
+Import --> Cameras
 
     Select one of the cameras from the submenu or choose Add Camera Manually...
 
     The latter will open the dialog described in the Camera Settings section of this handbook. If you want to have more information about how digiKam supports digital cameras, please a take a look at this section..
 
-Import → USB Storage Devices
+Import --> USB Storage Devices
 
     Select one of the USB devices from the submenu.
 
-Import → Card Readers
+Import --> Card Readers
 
     Select one of the card readers from the submenu.
 
-Import → Add Images... (Ctrl+Alt+I)
+Import --> Add Images... (Ctrl+Alt+I)
 
     Select a source folder from the dialog that opens.
 
-Import → Import from Scanner
+Import --> Import from Scanner
 
     Tool to communicate with a digital scanner and import images.

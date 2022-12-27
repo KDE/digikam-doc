@@ -27,7 +27,7 @@ Cropping a photograph is not only a common operation, but an often underestimate
 
 When you release the button the area of the photograph that will be removed by a crop operation is greyed out. This allows you to get a good view of how your photograph will look once you have cropped it. You can change the size of the cropped area by dragging the corners of the rectangle, and you can create a new crop area simply by dragging out another rectangle.
 
-Once you are happy with the crop, click on the The Image Editor Crop Button button on the toolbar and the photograph will be cropped (Ctrl+X). Use the File → Save or File → Save As... entries in the File menu to save the newly cropped photograph. 
+Once you are happy with the crop, click on the The Image Editor Crop Button button on the toolbar and the photograph will be cropped (Ctrl+X). Use the File --> Save or File --> Save As... entries in the File menu to save the newly cropped photograph. 
 
 .. note::
 
@@ -105,7 +105,7 @@ Free Rotation
 
 The digiKam Free Rotation is a tool for image rotation by any arbitrary angle.
 
-When taking an image it is all too easy to hold the camera not quite perfectly vertical or horizontal, resulting in an image where things are tilted at an angle. The way to fix this with the digiKam Image Editor is to use the Free Rotation tool. Select Transform → Free Rotation and adjust to the target angle.
+When taking an image it is all too easy to hold the camera not quite perfectly vertical or horizontal, resulting in an image where things are tilted at an angle. The way to fix this with the digiKam Image Editor is to use the Free Rotation tool. Select Transform --> Free Rotation and adjust to the target angle.
 
 Rotate your image by using the Angle slider (value in degrees). Press to Reset Values for reset the slider to zero. A rotating effect preview is available on the right side of the dialog. The new target image dimensions in pixels are shown.
 
@@ -117,7 +117,7 @@ For better orientation, the Free Rotation tool provides a vertical and horizonta
 
 .. figure:: images/editor_free_rotation.webp
 
-After you have rotated an image, there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform → Crop Image Editor menu.
+After you have rotated an image, there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform --> Crop Image Editor menu.
 
 A more elegant way to crop the rotated image is to use the Auto-crop function. Choose anyone of the following options from the combo-box to your preference:
 
@@ -156,7 +156,7 @@ To change the perspective, use the square areas at the image corners for draggin
 
     After applying the perspective adjustment, the image inevitably gets blurred a little bit. For a single adjustment, the amount of blurring is quite small, but two adjustments cause twice as much blurring as one, and there is no reason to blur things more than you have to.
 
-After you have adjusted the perspective of an image there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform → Crop Image Editor menu.
+After you have adjusted the perspective of an image there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform --> Crop Image Editor menu.
 
 .. figure:: images/editor_perspective_tool.webp
 
@@ -173,7 +173,7 @@ Rescaling an image to make it smaller is easy. The big question is: how can you 
 Resizing a Photograph
 ~~~~~~~~~~~~~~~~~~~~~
 
-If the photograph has the wrong size, you can scale it to the size you would like by using Transform Resize tool. Select Transform → Resize and adjust the target values. The Resize tool dialog is available below.
+If the photograph has the wrong size, you can scale it to the size you would like by using Transform Resize tool. Select Transform --> Resize and adjust the target values. The Resize tool dialog is available below.
 
 .. figure:: images/editor_resize.webp
 
@@ -223,16 +223,16 @@ Save As... and Load... buttons are used to do just that. Any Blowup Photograph f
 Rotating or Flipping a Photograph
 ---------------------------------
 
-If the photograph shows a wrong orientation you can Flip or Rotate it to the orientation you would like by using Transform Flip/Rotate tools available in Transform → Rotate and Transform → Flip menus.
+If the photograph shows a wrong orientation you can Flip or Rotate it to the orientation you would like by using Transform Flip/Rotate tools available in Transform --> Rotate and Transform --> Flip menus.
 
-With flipping options, you can flip or turn over the image horizontally or vertically like a card deck. With the rotating options, you can rotate the image in 90 degrees steps clockwise. It can be used to change the display mode to Portrait or Landscape. Be aware that this rotation is not lossless when using JPEG format. You also can rotate more accurately to a finer degree by using the Free Rotation tool. You can access it by the Transform → Free Rotation menu entry. See the dedicated Free Rotation manual for more information.
+With flipping options, you can flip or turn over the image horizontally or vertically like a card deck. With the rotating options, you can rotate the image in 90 degrees steps clockwise. It can be used to change the display mode to Portrait or Landscape. Be aware that this rotation is not lossless when using JPEG format. You also can rotate more accurately to a finer degree by using the Free Rotation tool. You can access it by the Transform --> Free Rotation menu entry. See the dedicated Free Rotation manual for more information.
 
 Shearing Image
 --------------
 
 The digiKam Shearing Image is a tool for shearing an image horizontally or vertically.
 
-The Shear tool is used to shift one part of an image to one direction and the other part to the opposite direction. For instance, a horizontal shearing will shift the upper part to the right and the lower part to the left. This is not a rotation: the image is distorted. In other words, it will turn a rectangle into a parallelogram. This tool is available from Transform → Shear menu.
+The Shear tool is used to shift one part of an image to one direction and the other part to the opposite direction. For instance, a horizontal shearing will shift the upper part to the right and the lower part to the left. This is not a rotation: the image is distorted. In other words, it will turn a rectangle into a parallelogram. This tool is available from Transform --> Shear menu.
 Using the Sheartool
 
 Shear your image by using the Horizontal Angle and Vertical Angle sliders (values in degrees). You can shear along either Horizontally and vertically at the same time. Click on the Reset Values reset. A shearing effect preview is shown on the center of dialog window. The new target image dimensions in pixels are displayed at the right side of dialog.
@@ -243,6 +243,6 @@ To assist you in aligning, the tool provides a vertical and horizontal guide. Mo
 
     After applying a shearing adjustment, the image inevitably gets blurred a little bit. For a single shearing, the amount of blurring is quite small, but two shears cause twice as much blurring as one, and there is no reason to blur things more than you have to.
 
-After you have sheared an image, there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform → Crop Image Editor menu.
+After you have sheared an image, there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform --> Crop Image Editor menu.
 
 .. figure:: images/editor_shear.webp

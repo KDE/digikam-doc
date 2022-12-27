@@ -22,22 +22,22 @@ In all eight areas the Image View shows the result of your selection or search o
 
 The first time you select an Album you may have to wait briefly while the thumbnails are generated.
 
-Information about each photograph is displayed below each thumbnail. You can control what information is displayed from the Settings → Configure digiKam... dialog. Select the Album View page and look for the Icon-View Options section.
+Information about each photograph is displayed below each thumbnail. You can control what information is displayed from the Settings --> Configure digiKam... dialog. Select the Album View page and look for the Icon-View Options section.
 
 The thumbnails have Tool Tips which will pop up if you allow the mouse to dwell over a thumbnail for a moment. The Tool Tip shows the most important properties of the photograph including any tags that you have applied.
 
 .. figure:: images/mainwindow_tooltip.webp
 
-The content of the Tool Tips can be configured in the Tool Tip section of Settings → Configure digiKam...
+The content of the Tool Tips can be configured in the Tool Tip section of Settings --> Configure digiKam...
 
-As an alternative you can display the photographs in a table by hitting the Table button on the Main Toolbar or by selecting View → Table menu from the menu bar. This allows to see a lot of photographs at the same time (Tip: leave away the thumbnail column) in a way you can customize the usual way by clicking with the right mouse button on the headline bar and choosing the information you want to see. Clicking with the left mouse button on a line in the table will open the preview of that photograph.
+As an alternative you can display the photographs in a table by hitting the Table button on the Main Toolbar or by selecting View --> Table menu from the menu bar. This allows to see a lot of photographs at the same time (Tip: leave away the thumbnail column) in a way you can customize the usual way by clicking with the right mouse button on the headline bar and choosing the information you want to see. Clicking with the left mouse button on a line in the table will open the preview of that photograph.
 
 You can access most of the functions that digiKam can perform on a photograph by clicking with the right mouse button over the thumbnail or line in the table (context menu) or by selecting from the Item menu in the menu bar.
 
 Viewing an image
 ~~~~~~~~~~~~~~~~
 
-There are several possibilities to view an image. You can either click on it, select View → Preview Image (F3) from the menu bar or select Preview Image from the context menu. The Preview Area will open and the Icon Area will be reduced to one line. For viewing it larger, click the sidebars away (by just clicking on the active button on them). An even larger view you can achieve by clicking the “Show Fullscreen” icon either on the thumbnail or on the preview. While viewing images you can take action from the context menu at any time (not in fullscreen mode). To close the preview, just click again or press Esc or F3 or click the Table or Thumbnails button.
+There are several possibilities to view an image. You can either click on it, select View --> Preview Image (F3) from the menu bar or select Preview Image from the context menu. The Preview Area will open and the Icon Area will be reduced to one line. For viewing it larger, click the sidebars away (by just clicking on the active button on them). An even larger view you can achieve by clicking the “Show Fullscreen” icon either on the thumbnail or on the preview. While viewing images you can take action from the context menu at any time (not in fullscreen mode). To close the preview, just click again or press Esc or F3 or click the Table or Thumbnails button.
 
 .. figure:: images/mainwindow_preview.webp
 
@@ -50,7 +50,7 @@ You can also view your images in a slideshow using the “Slideshow” drop down
 Editing a Photograph
 ~~~~~~~~~~~~~~~~~~~~
 
-You can open the Image Editor on a photograph either clicking the Image Editor button on the Main Toolbar or by selecting Item → Open... (F4) from the menu bar or clicking with the right mouse button and selecting Open... from the context menu. See the digiKam Image Editor section for instructions on how to edit your photographs. The Image Editor offers a wide range of tools to enhance, decorate and/or modify your photographs.
+You can open the Image Editor on a photograph either clicking the Image Editor button on the Main Toolbar or by selecting Item --> Open... (F4) from the menu bar or clicking with the right mouse button and selecting Open... from the context menu. See the digiKam Image Editor section for instructions on how to edit your photographs. The Image Editor offers a wide range of tools to enhance, decorate and/or modify your photographs.
 Viewing or Editing a Photograph With Another Application
 
 Sometimes digiKam may not provide all of the capabilities you need. You can open a photograph in another application by clicking with the right mouse button on it and selecting from the Open With... sub-menu (At the moment this function is available only under Linux®). The list of applications that appear in this menu is controlled by the standard desktop file associations for the image format type of this photograph. Consult the desktop manual for instructions on changing these file associations if the application that you need is not listed.
@@ -66,7 +66,7 @@ Lossless Image Rotation
 
 digiKam provides two ways to get your photographs the right way up. The simplest method is to click one of the rotate icons on the thumbnail or the preview or to click with the right mouse button for the context menu and select Rotate and then pick the direction of rotation needed.
 
-The second method is to select Item → Auto Rotate/Flip Using EXIF Information from the menu bar. Most digital cameras have an orientation sensor. This sensor can detect how you hold the camera while taking an image. It stores this orientation information inside the image. This meta data is stored in an embedded meta-data section called EXIF. The cameras could rotate the image themselves right away, but they have limited processing power, so they leave this job to an application like digiKam. If the camera is storing the orientation, then digiKam can use it to automatically rotate your photographs so that they are the correct way up when you display them. digiKam will rotate the image on disk according to this orientation information.
+The second method is to select Item --> Auto Rotate/Flip Using EXIF Information from the menu bar. Most digital cameras have an orientation sensor. This sensor can detect how you hold the camera while taking an image. It stores this orientation information inside the image. This meta data is stored in an embedded meta-data section called EXIF. The cameras could rotate the image themselves right away, but they have limited processing power, so they leave this job to an application like digiKam. If the camera is storing the orientation, then digiKam can use it to automatically rotate your photographs so that they are the correct way up when you display them. digiKam will rotate the image on disk according to this orientation information.
 
 The photograph is rotated without loss of quality and the orientation information is set to normal, so that other EXIF-aware applications will handle it correctly. The Import Tool can perform this operation automatically when it uploads the photographs from your camera which will ensure that your photographs are always the right way up. The rotate operation will do nothing if your camera does not include this information in the photos.
 
@@ -80,7 +80,7 @@ You can also batch rename photographs. One method is to use the Batch Queue Mana
 Deleting a Photograph
 ~~~~~~~~~~~~~~~~~~~~~
 
-When you delete a photograph from digiKam with Item → Move to Trash (Del) it will be moved from its folder on the hard disk to the internal Trash Can.
+When you delete a photograph from digiKam with Item --> Move to Trash (Del) it will be moved from its folder on the hard disk to the internal Trash Can.
 
 Deleting works from anywhere in any digiKam window.
 

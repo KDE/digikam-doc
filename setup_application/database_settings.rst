@@ -112,7 +112,7 @@ Follow the instructions below, if you don’t have a dedicated user account and 
 
     If you have an enormous collection, you should start the MySQL server with mysql --max_allowed_packet = 128M
 
-Now, in digiKam, go to Settings → Configure digiKam... and then under Settings section, select MySQL Server from the drop down list.
+Now, in digiKam, go to Settings --> Configure digiKam... and then under Settings section, select MySQL Server from the drop down list.
 
 .. figure:: images/setup_database_remotemysql.webp
 
@@ -141,7 +141,7 @@ Database Migration
 
 The photo management application comes up with an exclusive tool “Database Migration”, that allows users to migrate their data. Suppose, you’re using SQLite and you wish to move all data to MySQL database, migration tool will help you do so. It can help you migrate data from SQLite to MySQL and vice versa.
 
-To migrate to another database, go to Settings → Database Migration.... A dialog box appears:
+To migrate to another database, go to Settings --> Database Migration.... A dialog box appears:
 
 .. figure:: images/setup_database_migration.webp
 
@@ -161,6 +161,6 @@ Database Statistics
 
 digiKam provides a unique tool of maintaining the statistics of your collection. It includes count of images, videos (including individual count by image format), tags etc. Also, includes the Database backend (QSQLITE or QMYSQL) and the Database Path (where your collection is located).
 
-You can view your statistics by going to Help → Database Statistics. A dialog box like this will appear:
+You can view your statistics by going to Help --> Database Statistics. A dialog box like this will appear:
 
 .. figure:: images/setup_database_statistics.webp

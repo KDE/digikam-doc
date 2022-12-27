@@ -53,7 +53,7 @@ The **Use large thumbnail size for high screen resolution** option renders the i
 Tree View Settings
 ------------------
 
-These settings allows to customize the tree views of the Left and Right Sidebar. The **Tree View icon size** option configures the size in pixels of the Tree View icons in digiKam's sidebars. Use large value for HiDPI screen. The Tree View font option sets the font used to display text in Tree Views. The option Show a count of items in Tree Views will display the number of items inside a folder or assigned to a tag behind the album/tag name. The count shown depends on whether the subfolders/-tags are folded out or not and on the View → Include Album Sub-Tree and the View → Include Tag Sub-Tree settings in the main menu.
+These settings allows to customize the tree views of the Left and Right Sidebar. The **Tree View icon size** option configures the size in pixels of the Tree View icons in digiKam's sidebars. Use large value for HiDPI screen. The Tree View font option sets the font used to display text in Tree Views. The option Show a count of items in Tree Views will display the number of items inside a folder or assigned to a tag behind the album/tag name. The count shown depends on whether the subfolders/-tags are folded out or not and on the View --> Include Album Sub-Tree and the View --> Include Tag Sub-Tree settings in the main menu.
 
 .. figure:: images/setup_album_folderview.webp
 
@@ -77,7 +77,7 @@ The option Show icons and text over preview will show icons for rotation, face t
 Full-Screen Settings
 --------------------
 
-The options in this tab apply only to the Full Screen Mode you can access via the Full Screen button on the Toolbar or via View → Full Screen Mode (Ctrl-Shift-F) in the main menu or the context menu. It does not apply to the Full Screen Mode you access by clicking the “Show Fullscreen” icon either on a thumbnail or on the preview.
+The options in this tab apply only to the Full Screen Mode you can access via the Full Screen button on the Toolbar or via View --> Full Screen Mode (Ctrl-Shift-F) in the main menu or the context menu. It does not apply to the Full Screen Mode you access by clicking the “Show Fullscreen” icon either on a thumbnail or on the preview.
 
 .. figure:: images/setup_album_fullscreen.webp
 
@@ -99,6 +99,6 @@ For more information, for example how to remove file types from the list, use th
 Album Categories Settings
 -------------------------
 
-In the Album View you can choose from View → Sort Albums → By Category to have the Albums in the Album Tree of the Left Sidebar sorted by category. Here you can manage these categories, which is add or remove categories or rename them by using the Replace button. To assign categories to an Album you got to use the Album Properties dialog.
+In the Album View you can choose from View --> Sort Albums --> By Category to have the Albums in the Album Tree of the Left Sidebar sorted by category. Here you can manage these categories, which is add or remove categories or rename them by using the Replace button. To assign categories to an Album you got to use the Album Properties dialog.
 
 .. figure:: images/setup_album_categories.webp

@@ -17,7 +17,7 @@ Rebuild Thumbnails
 
 .. figure:: images/maintenance_rebuild_thumbnails.webp
 
-Rebuilding the thumbnails might be necessary if you worked on your images with other applications or if you changed the thumbnail size in Settings → Configure digiKam... → Views → Tree-Views. The “ Scan for changed or non-cataloged items” option can speed up the process in the first case or if you just added pictures to your collection.
+Rebuilding the thumbnails might be necessary if you worked on your images with other applications or if you changed the thumbnail size in Settings --> Configure digiKam... --> Views --> Tree-Views. The “ Scan for changed or non-cataloged items” option can speed up the process in the first case or if you just added pictures to your collection.
 
 While the rebuild thumbnails process is under progress, notification on the bottom right of main windows will be visible to indicate the amount of items already done.
 
