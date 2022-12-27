@@ -29,6 +29,7 @@ author = 'digiKam Community'
 
 # The full version, including alpha/beta/rc tags
 release = '8.0.0'
+version = '8.0.0'
 
 # Get the git description if possible, to put it in the footer.
 
