@@ -197,7 +197,8 @@ Configuration:
 
 Do not use space and capitalized characters in file name.
 
-This will record a screencast in WEBM format. even if WEBM is supported in HTML, this is not the case for EPUB.
+This will record a screencast in WEBM format. Even if WEBM is supported in HTML and EPUB,
+Sphinx framework is not yet able to embed WEBM in EPUB.
 Convert it to GIFa using **project/webm2gif.sh** script.
 
 GIFa files must be hosted in **videos/** sub-folders from each documentation section.
