@@ -500,6 +500,10 @@ Post Processing
 
         :ref:`share_dlna`
 
+    .. container:: tile no-descr
+
+        :ref:`send_images`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
