@@ -56,7 +56,7 @@ If you choose JPEG as the Image file format and the original files were in JPEG 
 
 If you want to drop metadata, turn on **Remove all metadata** option.
 
-.. figure:: images/send_images_mail.webp
+.. figure:: images/send_images_email.webp
 
 The next page will show a progress dialog given a feedback on the progress of your operation to prepare item before e-mailing. Press the **Cancel** button during this stage if you want to abort the process.
 
