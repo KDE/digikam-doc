@@ -78,5 +78,5 @@ Usage from Keyboard and mouse to quickly navigate between items is listen below:
 
 - Others
 
-    Show this help:
+    Show help dialog:
         F1 key
