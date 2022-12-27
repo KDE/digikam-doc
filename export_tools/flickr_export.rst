@@ -23,7 +23,7 @@ The tool can be used to upload an image collection from your computer to the rem
 
 When accessing the tool for the first time you are taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched you will log in to Flickr:
 
-.. figure:: images/export_flickr_connection.webp
+.. figure:: images/export_flickr_login.webp
 
 After successful signup digiKam will be allowed to send photos to the flickr website. You will be presented with the following page on successful signup:
 
@@ -31,7 +31,7 @@ After successful signup digiKam will be allowed to send photos to the flickr web
 
 Then, simply authorize application and close the web browser. Return to the host application dialog, you will see the interface used to upload photos to Flickr, described in the next section.
 
-When the the tool is invoked for second time or later you are greeted with the following dialog, which shows the current aacount already used previously. Just select one from the list to be connected.
+When the the tool is invoked for second time or later you are greeted with the following dialog, which shows the current acount already used previously. Just select one from the list to be connected.
 
 .. figure:: images/export_flickr_account.webp
 
