@@ -21,17 +21,17 @@ With this tool you can create a perfect slide show with just three mouse clicks.
 
 .. figure:: images/presentation_main.webp
 
-The Use OpenGL Slideshow Transitions checkbox enables very smooth image transitions using the OpenGL display mode. Be sure you have OpenGL enabled on your graphics card, since otherwise the slideshow will be very slow.
+The **Use OpenGL Transitions** checkbox enables very smooth image transitions using the OpenGL display mode. Be sure you have OpenGL enabled on your graphics card, since otherwise the slideshow will be very slow.
 
-The Print Filename checkbox enables displaying the image filename in the lower left corner.
+The **Print Filename** checkbox enables displaying the image filename in the lower left corner.
 
-The Loop checkbox will enable running the whole show in an endless loop (until manually stopped with Esc).
+The **Loop** checkbox will enable running the whole show in an endless loop (until manually stopped with Esc).
 
-The Shuffle Image checkbox will enable displaying the images randomly (not using the current images collection order).
+The **Shuffle Images** checkbox will enable displaying the images randomly (not using the current images collection order).
 
-The Delay Between Images may be set in millisecond steps. 1500 milliseconds correspond to 1.5 seconds and is a good default value. The best timing depends also a bit on your computer power and the transition effect. Try it out before you show it to your friends!
+The **Delay Between Images** may be set in millisecond steps. 1500 milliseconds correspond to 1.5 seconds and is a good default value. The best timing depends also a bit on your computer power and the transition effect. Try it out before you show it to your friends!
 
-There are more than a dozen Transition Effects available to choose from. The Random selection will change the transition effect with every image. 
+There are more than a dozen **Transition Effects** available to choose from. The **Random** selection will change the transition effect with every image. 
 
 The **Caption** page from the tool allows to customize the font properties to render item description over the screen.
 
