@@ -504,6 +504,10 @@ Post Processing
 
         :ref:`send_images`
 
+    .. container:: tile no-descr
+
+        :ref:`print_creator`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
@@ -518,7 +522,7 @@ Export Tools
 
     .. container:: tile no-descr
 
-        :ref:`export_flickr`
+        :ref:`flickr_export`
 
 .. toctree::
    :maxdepth: 2
