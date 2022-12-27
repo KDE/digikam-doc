@@ -22,3 +22,4 @@ This section explain how to use the digiKam slideshow tools.
    :glob:
 
    slideshow_tools/slide_tool.rst
+   slideshow_tools/presentation_tool.rst

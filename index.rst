@@ -516,6 +516,10 @@ Slideshow Tools
 
         :ref:`slide_tool`
 
+    .. container:: tile no-descr
+
+        :ref:`presentation_tool`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
