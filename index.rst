@@ -506,6 +506,22 @@ Post Processing
 
    post_processing
 
+############
+Export Tools
+############
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`export_flickr`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   export_tools
+
 ###############
 Slideshow Tools
 ###############
