@@ -540,6 +540,10 @@ Menu Descriptions
 
         :ref:`menu_mainwindow`
 
+    .. container:: tile no-descr
+
+        :ref:`menu_imageeditor`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

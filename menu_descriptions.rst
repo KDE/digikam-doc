@@ -22,3 +22,4 @@ This section explain how to use the digiKam menu.
    :glob:
 
    menu_descriptions/menu_mainwindow.rst
+   menu_descriptions/menu_imageeditor.rst
