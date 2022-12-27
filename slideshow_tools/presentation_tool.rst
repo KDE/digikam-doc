@@ -17,7 +17,7 @@ Presentation Tool
 
 The “Presentation” tool creates a configurable full screen slide-show of your images using advanced visual effects.
 
-With this tool you can create a perfect slide show with just three mouse clicks. When opening the tool, the Presentation window **Main** page will appear asking questions as to how you want to stage your slide show. You can choose between the selected images or all images in the same album.
+With this tool you can create a perfect slide show with just three mouse clicks. When opening the tool from the View --> Presentation menu, the Presentation window **Main** page will appear asking questions as to how you want to stage your slide show. You can choose between the selected images or all images in the same album.
 
 .. figure:: images/presentation_main.webp
 
