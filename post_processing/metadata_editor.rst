@@ -1,6 +1,6 @@
 .. meta::
    :description: The digiKam Metadata Editor
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, metadata editor
 
 .. metadata-placeholder
 
@@ -10,8 +10,8 @@
 
 .. _metadata_editor:
 
-The Metadata Editor
-===================
+Metadata Editor
+===============
 
 .. contents::
 

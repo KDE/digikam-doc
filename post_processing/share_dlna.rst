@@ -1,6 +1,6 @@
 .. meta::
    :description: The digiKam Share With DLNA
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, DLNA, UPNP, share
 
 .. metadata-placeholder
 

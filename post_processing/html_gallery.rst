@@ -1,6 +1,6 @@
 .. meta::
    :description: The digiKam HTML Gallery
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, html, gallery
 
 .. metadata-placeholder
 
@@ -10,8 +10,8 @@
 
 .. _html_gallery:
 
-The HTML Gallery
-================
+HTML Gallery
+============
 
 .. contents::
 
