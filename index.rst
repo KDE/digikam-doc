@@ -530,6 +530,22 @@ Slideshow Tools
 
    slideshow_tools
 
+#################
+Menu Descriptions
+#################
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`menu_mainwindow`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   menu_descriptions
+
 ###################
 Credits and License
 ###################

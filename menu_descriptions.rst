@@ -21,4 +21,4 @@ This section explain how to use the digiKam menu.
    :caption: Contents:
    :glob:
 
-   tag_manager/main_window.rst
+   menu_descriptions/menu_mainwindow.rst

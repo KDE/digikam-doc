@@ -129,7 +129,7 @@ Item --> Rotate
 
 Item --> Flip
 
-    Menu entry for flipping the currently selected images lossless Horizontally (Ctrl-*) or Vertically (Ctrl-/) (see submenu). 
+    Menu entry for flipping the currently selected images lossless Horizontally (Ctrl-*) or Vertically (Ctrl-/) (see submenu).
 
 Item --> Auto Rotate/Flip using EXIF information
 
@@ -467,7 +467,7 @@ Help --> Components Information
 
     Displays an information panel with shared libraries and components.
 
-.. figure:: images/menu_components_information.webp
+.. figure:: images/menu_components_info.webp
 
 Help --> Database Statistics
 
