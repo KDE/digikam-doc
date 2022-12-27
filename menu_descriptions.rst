@@ -12,7 +12,7 @@
 
 #################
 Menu Descriptions
-################
+#################
 
 This section explain how to use the digiKam menu.
 
