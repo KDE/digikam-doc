@@ -246,9 +246,9 @@ The Digital Asset Management
 
    asset_management
 
-##############
-Digital Camera
-##############
+################
+The Import Tools
+################
 
 .. container:: toctile
 
@@ -258,17 +258,21 @@ Digital Camera
 
     .. container:: tile no-descr
 
-        :ref:`basic_import`
+        :ref:`camera_import`
 
     .. container:: tile no-descr
 
         :ref:`advanced_import`
 
+    .. container:: tile no-descr
+
+        :ref:`scanner_import`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
 
-   digital_camera
+   import_tools
 
 #################
 Setup Application

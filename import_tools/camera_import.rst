@@ -1,6 +1,6 @@
 .. meta::
-   :description: Basic Import Interface Operations
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :description: digiKam Import From Digital Camera
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, camera, import
 
 .. metadata-placeholder
 
@@ -8,10 +8,10 @@
 
    :license: Creative Commons License SA 4.0
 
-.. _basic_import:
+.. _camera_import:
 
-Basic Import
-============
+Import From Camera
+==================
 
 .. contents::
 

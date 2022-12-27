@@ -1,6 +1,6 @@
 .. meta::
-   :description: Advanced Import Interface Operations
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :description: digiKam Advanced Settings to Import From Digital Camera
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, import, camera
 
 .. metadata-placeholder
 
@@ -10,8 +10,8 @@
 
 .. _advanced_import:
 
-Advanced Import
-===============
+Advanced Import Settigns
+========================
 
 .. contents::
 
