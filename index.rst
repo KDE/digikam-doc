@@ -102,7 +102,7 @@ Main Window
 
     .. container:: tile no-descr
 
-        :ref:`map_view`
+        :ref:`mapsearch_view`
 
     .. container:: tile no-descr
 

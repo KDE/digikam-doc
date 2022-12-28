@@ -1,6 +1,6 @@
 .. meta::
-   :description: digiKam Main Window Map View
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :description: digiKam Main Window Map Search View
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, map, search
 
 .. metadata-placeholder
 
@@ -8,20 +8,20 @@
 
    :license: Creative Commons License SA 4.0
 
-.. _map_view:
+.. _mapsearch_view:
 
-Map View
----------
+Map Search View
+---------------
 
  The whole digiKam geolocation suite consists of four parts:
 
-    - The Map mode of the Image Area which displays images with GPS data on a map depending on the selection on the Left Sidebar, e.g. the images in the album you selected in the Album View, the images with a certain tag assigned (selected in the Tag View), with a certain label and so on.
+    - The **Map** mode of the Image Area which displays images with GPS data on a map depending on the selection on the Left Sidebar, e.g. the images in the album you selected in the Album View, the images with a certain tag assigned (selected in the Tag View), with a certain label and so on.
 
     - This view which is the search tool for finding images by their GPS data.
 
-    - The Geolocation Editor which is accessible via Item --> Edit Geolocation... (Ctrl+Shift+G) and allows to set and to edit GPS data.
+    - The :ref:`Geolocation Editor <geolocation_editor>` which is accessible via :menuselection:`Item --> Edit Geolocation...` :kbd:`Ctrl+Shift+G` and allows to set and to edit GPS data.
 
-    - The Map tab on the Right Sidebar which shows the location of the image on a map and is purely informative.
+    - The :ref:`Map tab <maps_view>` on the Right Sidebar which shows the location of the image on a map and is purely informative.
 
 All four are based on the Marble widget.
 
