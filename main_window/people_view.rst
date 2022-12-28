@@ -28,13 +28,17 @@ The first step is to have digiKam finding all those pics that show faces not eve
 
 .. figure:: images/mainwindow_faces_settings1.webp
 
+.. important::
+
+    On the **Worflow** tab, a button of the right/top can be used to show a help dialog about the Faces Management workflow.
+
 The first one you would choose if you didn't scan yet or if you did with a satisfying result but added new photographs since then or if you already improved a search result, e.g. by removing face tags which obviously don't show a face. The second you would choose if you want the images already scanned to be included in the next scan. The third is more interesting in the context of Face Recognition since **Unconfirmed results** means face tags that don't have a name assigned to them yet.
 
 .. note::
 
-   In the settings tab, you can also decide if you want to scan for face detection or for faces recognition.
+   In the **Settings** tab, you can also decide if you want to scan for face detection or for faces recognition.
 
-The settings view has another tab to tune where to search for new faces. You can make a selection of albums or tags to process the detection.
+The **Settings** tab has another tab to tune where to search for new faces. You can make a selection of albums or tags to process the detection.
 
 .. figure:: images/mainwindow_faces_settings2.webp
 
