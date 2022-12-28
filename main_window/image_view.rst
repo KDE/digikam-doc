@@ -22,22 +22,24 @@ In all eight areas the Image View shows the result of your selection or search o
 
 The first time you select an Album you may have to wait briefly while the thumbnails are generated.
 
-Information about each photograph is displayed below each thumbnail. You can control what information is displayed from the Settings --> Configure digiKam... dialog. Select the Album View page and look for the Icon-View Options section.
+Information about each photograph is displayed below each thumbnail. You can control what information is displayed from the :menuselection:`Settings --> Configure digiKam...` dialog. Select the Album View page and look for the Icon-View Options section.
 
 The thumbnails have Tool Tips which will pop up if you allow the mouse to dwell over a thumbnail for a moment. The Tool Tip shows the most important properties of the photograph including any tags that you have applied.
 
 .. figure:: images/mainwindow_tooltip.webp
 
-The content of the Tool Tips can be configured in the Tool Tip section of Settings --> Configure digiKam...
+The content of the Tool Tips can be configured in the Tool Tip section of :menuselection:`Settings --> Configure digiKam`...
 
-As an alternative you can display the photographs in a table by hitting the Table button on the Main Toolbar or by selecting View --> Table menu from the menu bar. This allows to see a lot of photographs at the same time (Tip: leave away the thumbnail column) in a way you can customize the usual way by clicking with the right mouse button on the headline bar and choosing the information you want to see. Clicking with the left mouse button on a line in the table will open the preview of that photograph.
+As an alternative you can display the photographs in a table by hitting the Table button on the Main Toolbar or by selecting :menuselection:`View --> Table` menu from the menu bar. This allows to see a lot of photographs at the same time (Tip: leave away the thumbnail column) in a way you can customize the usual way by clicking with the right mouse button on the headline bar and choosing the information you want to see. Clicking with the left mouse button on a line in the table will open the preview of that photograph.
 
 You can access most of the functions that digiKam can perform on a photograph by clicking with the right mouse button over the thumbnail or line in the table (context menu) or by selecting from the Item menu in the menu bar.
 
 Viewing an image
 ~~~~~~~~~~~~~~~~
 
-There are several possibilities to view an image. You can either click on it, select View --> Preview Image (F3) from the menu bar or select Preview Image from the context menu. The Preview Area will open and the Icon Area will be reduced to one line. For viewing it larger, click the sidebars away (by just clicking on the active button on them). An even larger view you can achieve by clicking the “Show Fullscreen” icon either on the thumbnail or on the preview. While viewing images you can take action from the context menu at any time (not in fullscreen mode). To close the preview, just click again or press Esc or F3 or click the Table or Thumbnails button.
+.. |icon_fullscreen| image:: images/mainwindow_icon_fullscreen.webp
+
+There are several possibilities to view an image. You can either click on it, select :menuselection:`View --> Preview Image` :kbd:`F3` from the menu bar or select **Preview Image** from the context menu. The Preview Area will open and the Icon Area will be reduced to one line. For viewing it larger, click the sidebars away (by just clicking on the active button on them). An even larger view you can achieve by clicking the **Show Fullscreen** icon |icon_fullscreen| either on the thumbnail or on the preview. While viewing images you can take action from the context menu at any time (not in fullscreen mode). To close the preview, just click again or press Esc or F3 or click the Table or Thumbnails button.
 
 .. figure:: images/mainwindow_preview.webp
 
