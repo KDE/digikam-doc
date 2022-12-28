@@ -123,7 +123,7 @@ A good place to learn **ReStructuredText** format used in this documentation, it
 ### ReStructuredText Syntax Reminders
 
 Type                                 | Syntax
--------------------------------------|------------------------------------------------------------------
+-------------------------------------|------------------------------------------------------------------------------
 Menu Entry                           | ``` :menuselection:`View --> Sort Albums --> By Category` ```
 Keyboard Shortcut                    | ``` :kbd:`CTRL + w` ```
 Internal Reference Definition        | ``` .. _album_view: ```
@@ -131,7 +131,9 @@ Link to Internal reference           | ``` :ref:`the Album section <albums_view>
 Link to External Url                 | ``` `digiKam Home Page <https://www.digikam.org/>`_ ```
 Bold Text                            | ``` **Ok buttun** ```
 File Name                            | ``` :file:`recogintion.db` ```
-Raw Text Section (as console output) | ```.. code-block:: text ```
+Raw Text Section (as console output) | ``` .. code-block:: text ```
+Inline Icon Declaration              | ``` .. |icon_fullscreen| image:: images/mainwindow_icon_fullscreen.webp ```
+Inline Icon Usage                    | ``` .. |icon_fullscreen| ```
 
 ### Contribute Workflow
 
