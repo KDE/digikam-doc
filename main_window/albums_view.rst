@@ -56,22 +56,22 @@ Album Properties can help you remember which kind of photographs are in an Album
 
 The Album Properties dialog allows you to set:
 
-    - The Album Title: Name of the Album, identical with the name of the folder on your hard disk. If you edit it here, the folder will also be renamed.
+    - The Album **Title**: Name of the Album, identical with the name of the folder on your hard disk. If you edit it here, the folder will also be renamed.
 
-    - The Album Category: this is a way of grouping your Albums together by a common label. The Category you set will be used to order your albums when you select By Category from the drop down box in the tool bar or using View --> Sort Albums --> By Category. If you want to add and delete Category labels, choose from the menu Settings --> Configure digiKam... and here the Album Category section.
+    - The Album **Category**: this is a way of grouping your Albums together by a common label. The Category you set will be used to order your albums when you select **By Category** from the drop down box in the tool bar or using :menuselection:`View --> Sort Albums --> By Category`. If you want to add and delete Category labels, choose from the menu :menuselection:`Settings --> Configure digiKam...` and here the Album Category section.
 
-    - The Caption for the Album: Usually a short description of the content, but of course you are free to abuse it in any conceivable way. But beware: this will be shown in the banner at the top of the main Image Window ;-)
+    - The **Caption** for the Album: Usually a short description of the content, but of course you are free to abuse it in any conceivable way. But beware: this will be shown in the banner at the top of the main Image Window ;-)
 
-    - The Album Date: this will be used when you order your Albums by date using View --> Sort Albums --> By Date.
+    - The Album **Date**: this will be used when you order your Albums by date using :menuselection:`View --> Sort Albums --> By Date`.
 
-    - Oldest, Average, Newest buttons: these will set the Date to the oldest, average or latest date of the images in that album. It will first try to calculate the average date of the images in the album based on the EXIF-headers. If that fails it will fall back to the modification date of the files in that folder. 
+    - **Oldest**, **Average**, and **Newest** buttons: these will set the **Date** to the oldest, average or latest date of the images in that album. It will first try to calculate the average date of the images in the album based on the EXIF-headers. If that fails it will fall back to the modification date of the files in that folder. 
 
 Setting the Album Icon
 ~~~~~~~~~~~~~~~~~~~~~~
 
-digiKam displays the usual folder icon in the “Albums” list. You can choose one of your photographs instead. This may help you to remember what kind of photographs are contained in an Album.
+digiKam displays the usual folder icon in the Albums list. You can choose one of your photographs instead. This may help you to remember what kind of photographs are contained in an Album.
 
-To select a photograph as the Album icon, click with the right mouse button on the photograph that you want to use as the Album icon and select Set as Album Thumbnail from the context menu. Additionally you can use drag and drop to set the Album icon. Drag the photographs icon from the thumbnail area and drop it on the currently selected Album in the Album list.
+To select a photograph as the Album icon, click with the right mouse button on the photograph that you want to use as the Album icon and select **Set as Album Thumbnail** from the context menu. Additionally you can use drag and drop to set the Album icon. Drag the photographs icon from the thumbnail area and drop it on the currently selected Album in the Album list.
 
 .. note::
 
