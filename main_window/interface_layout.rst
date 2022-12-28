@@ -18,15 +18,17 @@ Interface Layout
 Areas and Bars
 --------------
 
-digiKam's main window has two areas in the center showing your photographs. One is the Icon Area, showing thumbnails of the content of the selected album or of a search result, and the other one the Preview, showing the selected image. Together let's call them the Image Area. In the top left corner of the Preview we have a few buttons for moving back and forth through the content of the album, for rotating the image, for showing or adding face tags and to switch to full screen mode. By clicking on the preview you can make it disappear and by clicking on the picture area of a thumbnail open it again.
+digiKam's main window has two areas in the center showing your photographs. One is the **Icon Area**, showing thumbnails of the content of the selected album or of a search result, and the other one the **Preview**, showing the selected image. Together let's call them the :ref:`Image Area <image_view>`. In the top left corner of the preview we have a few buttons for moving back and forth through the content of the album, for rotating the image, for showing or adding face tags and to switch to full screen mode. By clicking on the preview you can make it disappear and by clicking on the picture area of a thumbnail open it again.
 
 .. figure:: images/mainwindow_iconview.webp
 
-The Image Area in the center is surrounded by the menu bar and the Main Toolbar at the top, the Status Bar at the bottom and the Left and Right Sidebar. The Left Sidebar lets you switch between nine “Views”: Albums (shown here), Tags, Labels, Dates, Timeline, Search, Fuzzy (Search), Map and People (Tags). The Right Sidebar can be used to show all information about your images and partly also to edit them. You can use all these views to organize and find your photographs. If you click on one of the buttons on the sidebars there will fold out another area, offering possibilities to select, to make inputs, e.g. for searches, to edit data and to show information.
+The Image Area in the center is surrounded by the menu bar and the :ref:`Main Toolbar <main_toolbar>` at the top, the :ref:`Status Bar <status_bar>` at the bottom and the Left and :ref:`Right Sidebar <right_sidebar>`. The Left Sidebar lets you switch between nine “Views”: Albums (shown here), Tags, Labels, Dates, Timeline, Search, Fuzzy (Search), Map and People (Tags). The Right Sidebar can be used to show all information about your images and partly also to edit them. You can use all these views to organize and find your photographs. If you click on one of the buttons on the sidebars there will fold out another area, offering possibilities to select, to make inputs, e.g. for searches, to edit data and to show information.
 
 Don't worry if your main window looks quite different at the moment. You will soon learn how to switch the different areas on and off and at some point you might get a look very similar to the above screenshot.
 
 Drag & Drop of images works about everywhere: d&d an image into another branch of the album tree, across the horizontal album separation line, or to another application window. The only restriction is that you cannot d&d into tag, date or searches.
+
+.. _status_bar:
 
 The Status Bar
 --------------
@@ -51,6 +53,8 @@ The status bar at the bottom shows in all eight views:
 
     - A size selection pop up list in % for the preview.
 
+.. _main_toolbar:
+
 Main Toolbar
 ------------
 
@@ -60,9 +64,9 @@ The window top shows the Menu Bar and the Main Toolbar below.
 
 1. Open Image Editor with the selected image
 
-2. Open Light Table (L)
+2. Open :ref:`Light Table <light_table>` :kbd:`L`
 
-3. Open Batch Queue Manager (B)
+3. Open :ref:`Batch Queue Manager <batch_queue>` :kbd:`B`
 
 4. Import (drop down menu showing all connected cameras and mass storage devices)
 
@@ -76,8 +80,8 @@ The window top shows the Menu Bar and the Main Toolbar below.
 
 9. Slideshow drop down menu
 
-10. Toggle Full Screen (Ctrl+Shift+F)
+10. Toggle Full Screen :kbd:`Ctrl+Shift+F`
 
 11. Link to digikam.org, also an indicator for ongoing processes
 
-You can customize the Toolbar by choosing Settings --> Configure Toolbars... or click with the right mouse button on it and choose Configure Toolbars... from the context menu.
+You can customize the Toolbar by choosing :menuentry:`Settings --> Configure Toolbars...` or click with the right mouse button on it and choose Configure Toolbars... from the context menu.
