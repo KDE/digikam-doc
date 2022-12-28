@@ -183,6 +183,7 @@ Edit --> Invert Selection (Ctrl+I)
     Invert the current selection
 
 The View Menu
+-------------
 
 View --> Thumbnails
 
@@ -252,7 +253,20 @@ View --> Sort Albums
 
 View --> Sort Images
 
-    Sort all images in current Album by Name, Path, Date, File Size, Rating, Image Size, Aspect Ratio or by Similarity, the latter only in the Fuzzy View.
+    Sort all images in current Album by:
+
+        - Name.
+        - Path.
+        - Creation Date.
+        - Modification Date.
+        - File Size.
+        - Rating.
+        - Image Size.
+        - Aspect Ratio.
+        - Face Type.
+        - Similarity (only in the Fuzzy View).
+        - Manual and Name.
+        - Manual and Date.
 
 View --> Image Sorting Order
 
