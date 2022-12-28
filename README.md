@@ -122,15 +122,16 @@ A good place to learn **ReStructuredText** format used in this documentation, it
 
 ### ReStructuredText Syntax Reminders
 
-Type                          | Syntax
-------------------------------|------------------------------------------------------------------
-Menu entry                    | ``` :menuselection:`View --> Sort Albums --> By Category` ```
-Keyboard shortcut             | ``` :kbd:`CTRL + w` ```
-Internal reference definition | ``` .. _album_view: ```
-Link to Internal reference    | ``` :ref:`the Album section <albums_view>` ```
-Link to External Url          | ``` `digiKam Home Page <https://www.digikam.org/>`_ ```
-Bold text                     | ``` **Ok buttun** ```
-File Name                     | ``` :file:`recogintion.db` ```
+Type                                 | Syntax
+-------------------------------------|------------------------------------------------------------------
+Menu Entry                           | ``` :menuselection:`View --> Sort Albums --> By Category` ```
+Keyboard Shortcut                    | ``` :kbd:`CTRL + w` ```
+Internal Reference Definition        | ``` .. _album_view: ```
+Link to Internal reference           | ``` :ref:`the Album section <albums_view>` ```
+Link to External Url                 | ``` `digiKam Home Page <https://www.digikam.org/>`_ ```
+Bold Text                            | ``` **Ok buttun** ```
+File Name                            | ``` :file:`recogintion.db` ```
+Raw Text Section (as console output) | ```.. code-block:: text ```
 
 ### Contribute Workflow
 
