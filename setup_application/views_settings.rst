@@ -83,6 +83,8 @@ The options in this tab apply only to the Full Screen Mode you can access via th
 
 If all three options are activated the only way to leave the Full Screen Mode is the context menu or Ctrl-Shift-F. You can work on the images also by choosing functions from the context menu of an icon or the preview.
 
+.. _mime_types_settings:
+
 Mime Types Settings
 -------------------
 

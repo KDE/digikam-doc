@@ -20,9 +20,9 @@ Introduction
 
 .. note::
 
-     RAW file support: if you are using RAW shooting mode with your camera, digiKam is probably well able to deal with it. RAW support depends on the libraw library. To find out if your particular camera is supported, bring up the list from the Help --> Supported RAW Cameras menu.
+     RAW file support: if you are using RAW shooting mode with your camera, digiKam is probably well able to deal with it. RAW support depends on the libraw library. To find out if your particular camera is supported, bring up the list from the :menuselection:`Help --> Supported RAW Cameras` menu.
 
-     How to setup and work with RAW files is described in **RAW Decoding Settings** and **RAW Workflow** sections.
+     How to setup and work with RAW files is described in :ref:`RAW Decoding Settings <setup_raw>` and :ref:`RAW Workflow <rawprocessing_workflow>` sections.
 
 An easy-to-use camera interface is provided that will connect to your digital camera and download photographs directly into digiKam Albums. More than `2500 digital cameras <http://www.gphoto.org/proj/libgphoto2/support.php>`_ are supported by the gPhoto2 library. Of course, any media or card reader supported by your operating system will interface with digiKam.
 
@@ -48,6 +48,6 @@ Transfers using Mass Storage device
 
     - **FireWire Mass Storage**: a computer interface using communication protocols developed primarily by Apple Computer in the 1990s. FireWire offers high-speed communications and isochronous real-time data services. Like USB Mass Storage, this standard provides an interface to a variety of storage devices, including digital still cameras. Almost all recent digital cameras support USB version 1 and eventually will support USB version 2; a very few support FireWire. 
 
-To use a generic Mass Storage device with digiKam, select Import --> Camera --> Add Camera Manually..., add your device and set the correct mount point path.
+To use a generic Mass Storage device with digiKam, select :menuselection:`Import --> Camera --> Add Camera Manually...`, add your device and set the correct mount point path.
 
-For details see the chapter **Configure digiKam**, into Section "Camera".
+For details see the chapter to configure digiKam, into :ref:`Section Camera <camera_settings>`.

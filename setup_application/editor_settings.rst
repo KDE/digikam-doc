@@ -58,6 +58,8 @@ In the third field you decide on which occasions you want the editor to save int
 
 In the last field you can adjust whether you want only the last version to be shown in the Image View (default, none of the boxes checked) or if you also want to see icons of the original version and/or intermediate steps.
 
+.. _setup_raw:
+
 RAW Behavior
 ------------
 

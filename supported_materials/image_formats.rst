@@ -22,7 +22,7 @@ digiKam relies on a number of libraries and support packages to load and save im
 
 This dependence on other libraries means that it is not possible to give a definitive list of all of the formats that will be available on your system. At the very least JPEG, PNG, and TIFF should be available.
 
-digiKam only displays files that are in formats that it understands. It does this by looking at the file extension on the files and checking this against a predefined list. If the file extension is in the list digiKam will show the file in the Image View, provided the appropriate library is installed. You can change the list of file extensions that digiKam will accept; see the Configuration section for more details.
+digiKam only displays files that are in formats that it understands. It does this by looking at the file extension on the files and checking this against a predefined list. If the file extension is in the list digiKam will show the file in the Image View, provided the appropriate library is installed. You can change the list of file extensions that digiKam will accept; see :ref:`this configuration section <mime_types_settings>` for more details.
 
 Almost all digital cameras store photographs in one of two formats: JPEG or RAW. Many cameras enable you to select which of these formats to use. A full description of these formats can be found `at the Wikipedia <https://en.wikipedia.org/wiki/Image_file_formats>`_. digiKam supports both of these formats.
 
@@ -62,7 +62,7 @@ RAW
 
 Some, typically more expensive, cameras allow you to store images in RAW format. RAW format is not really an image standard at all. It is different for every make of camera. RAW format images contain all the data that is taken directly from the camera's image sensor before the software in the camera applies things like white balance, sharpening etc. Storing photographs in a camera's RAW format allows you to alter settings, such as white balance, after the photograph has been taken. Most professional photographers use RAW format, because it offers them maximum flexibility. The downside is that RAW image files can be very large indeed.
 
-If you want to learn more about RAW image format visit the very helpful guides `Wikipedia <https://en.wikipedia.org/wiki/Raw_image_format>`_, `The Luminous Landscape <https://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml>`_, and `Cambridge in Colour <http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm>`_. You can convert RAW format images into JPEG, PNG, or TIFF in digiKam using the Image Editor or the Batch Queue Manager.
+If you want to learn more about RAW image format visit the very helpful guides `Wikipedia <https://en.wikipedia.org/wiki/Raw_image_format>`_, `The Luminous Landscape <https://www.luminous-landscape.com/tutorials/understanding-series/u-raw-files.shtml>`_, and `Cambridge in Colour <http://www.cambridgeincolour.com/tutorials/RAW-file-format.htm>`_. You can convert RAW format images into JPEG, PNG, or TIFF in digiKam using the :ref:`Image Editor <rawprocessing_workflow>` or the :ref:`Batch Queue Manager <raw_converter>`.
 
 digiKam supports RAW image loading only, relying on the `Libraw library <https://www.libraw.org/>`_ which is included in digiKam core and supports over **1000** RAW file formats. The table below shows a short list of camera RAW files supported by digiKam:
 
