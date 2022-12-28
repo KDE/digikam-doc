@@ -32,7 +32,7 @@ The basic slide show configuration should be easy to understand. The upper slide
 
 .. note::
 
-    The **Shuffle** mode is only available in automatic playback, i.e. when you start the slide show via the menu or toolbar button. It do not work in **Preview** mode when you start on the "play" button icon in the thumbnail or image preview.
+    The **Shuffle Images** mode is only available in automatic playback, i.e. when you start the slide show via the menu or toolbar button. It do not work in **Preview** mode when you start on the "play" button icon in the thumbnail or image preview.
 
 .. figure:: images/slide_config.webp
 
