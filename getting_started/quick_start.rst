@@ -15,8 +15,9 @@ Quick Start
 
 .. figure:: images/firstrun_step1.webp
 
-When you start digiKam for the very first time it will ask you where you store your photographs. You can choose any local, remote or removable folder. Just type in the path name of a folder or click on the Browse... icon to select a folder from the dialog.
-Later on you can add as many locations as you like - digiKam will add them to the album library. Settings --> Configure digiKam --> Collections 
+When you start digiKam for the very first time it will ask you where you store your photographs. You can choose any local, remote or removable folder. Just type in the path name of a folder or click on the **Browse...** icon to select a folder from the dialog.
+
+Later on you can add as many locations as you like - digiKam will add them to the album library. Look menu entry :menuselection:`Settings --> Configure digiKam --> Collections` 
 
 .. figure:: images/firstrun_step2.webp
 
@@ -29,7 +30,7 @@ If you don't know what is a RAW file or if your camera doesn't support RAW files
 
 .. figure:: images/firstrun_step4.webp
 
-Metadata information storage may be important if you plan to work with another photo management program and you should choose Add information to files. But if you don't want to alter your pictures, keep the default setting: Do nothing.
+Metadata information storage may be important if you plan to work with another photo management program and you should choose **Add information to files**. But if you don't want to alter your pictures, keep the default setting: **Do nothing**.
 
 .. figure:: images/firstrun_step5.webp
 
@@ -41,15 +42,15 @@ Now decide how digiKam will open images with a click of the right mouse button. 
 
 .. figure:: images/firstrun_step7.webp
 
-Tooltips are a fast and easy way to display important information about a photograph, they popup as the mouse hovers over a thumbnail. Select "Use tooltips" if you want to display them.
+Tooltips are a fast and easy way to display important information about a photograph, they popup as the mouse hovers over a thumbnail. Select **Use tooltip** if you want to display them.
 
 .. figure:: images/firstrun_step8.webp
 
-Click on Finish. DigiKam will now start to scan for photographs...
+Click on **Finish**, digiKam will now start to scan for photographs...
 
 .. figure:: images/firstrun_step9.webp
 
-Nothing really to select here. You can cancel or start the scan with Finish. None of the photographs will be altered. During folders parsing you can see a progress bar in the lower right corner like this:
+Nothing really to select here. You can cancel or start the scan with **Finish**. None of the photographs will be altered. During folders parsing you can see a progress bar in the lower right corner like this:
 
 .. figure:: images/scan_progress.webp
 
@@ -61,7 +62,7 @@ As digiKam uses your folders on your hard disk directly, other applications like
 
 When you use an existing folder of photographs as the Album Library folder, you will notice that the Albums in the Album list do not have photographs as their icons. You can change that by dragging any photograph in the Album onto the folder icon in the left sidebar and use this as the Album icon. See :ref:`the Album section <albums_view>` for details of how to change the Album icon.
 
-digiKam uses a dedicated database to store thumbnails with an optimized wavelets compression algorithm (PGF). There is no way of hiding non-standard thumbnail folders from the “Albums” list. If you want to keep them you could create an Album Category that just contains all the thumbnail Folders and then view your Albums in View --> Sort Albums --> By Category order. See :ref:`the Album section <albums_view>` for more about Album Categories.
+digiKam uses a dedicated database to store thumbnails with an optimized wavelets compression algorithm (PGF). There is no way of hiding non-standard thumbnail folders from the “Albums” list. If you want to keep them you could create an Album Category that just contains all the thumbnail Folders and then view your Albums in :menuselection:`View --> Sort Albums --> By Category` order. See :ref:`the Album section <albums_view>` for more about Album Categories.
 
 Once you have configured the Album Library Folder you can set up digiKam to work with your digital camera and then learn how to use :ref:`the Album section <albums_view>` and :ref:`the Tags section <tags_view>` to arrange your photograph Albums.
 
