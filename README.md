@@ -127,8 +127,8 @@ Type                          | Syntax
 Menu entry                    | ``` :menuselection:`View --> Sort Albums --> By Category` ```
 Keyboard shortcut             | ``` :kbd:`CTRL + w` ```
 Internal reference definition | ``` .. _album_view: ```
-Internal reference call       | ``` :ref:`the Album section <albums_view>` ```
-External Url                  | ``` `digiKam Home Page <https://www.digikam.org/>`_ ```
+Link to Internal reference    | ``` :ref:`the Album section <albums_view>` ```
+Link to External Url          | ``` `digiKam Home Page <https://www.digikam.org/>`_ ```
 Bold text                     | ``` **Ok buttun** ```
 
 ### Contribute Workflow
