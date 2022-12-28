@@ -55,6 +55,8 @@ The Rating section displays a 0...5 star rating scheme that can be used in searc
 
 The labels view allow to assign also the Color and the Pick tags that you can use in your workflow to classify items.
 
+.. _tags_tree:
+
 Tags Tree
 ~~~~~~~~~
 

@@ -77,6 +77,8 @@ A ranking systematic is implemented in digiKam by the 5 star rating tool. In fac
 
 Lets continue with tags (or keywords as called by other applications, or categories, they are all synonymous).
 
+.. _asset_tags:
+
 Tagging and Keyword Assignment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
