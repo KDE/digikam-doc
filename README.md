@@ -277,7 +277,7 @@ This project is not involved in the translation workflow. Please contact [KDE tr
 if you want to contribute to the internationalization.
 
 The template files to translate for this documentation must be located on [this i10n Subversion repository](https://websvn.kde.org/trunk/l10n-kf5/templates/messages/digikam-doc/).
-All POT file-names start with **docs_digikam_org**.
+All POT file-names starts with **docs_digikam_org** prefix.
 
 The status of the digiKam documentation translations is available [here](https://l10n.kde.org/stats/doc/trunk-kf5/package/digikam-doc/).
 
