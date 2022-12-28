@@ -22,17 +22,19 @@ In all eight areas the Image View shows the result of your selection or search o
 
 The first time you select an Album you may have to wait briefly while the thumbnails are generated.
 
-Information about each photograph is displayed below each thumbnail. You can control what information is displayed from the :menuselection:`Settings --> Configure digiKam...` dialog. Select the Album View page and look for the Icon-View Options section.
+Information about each photograph is displayed below each thumbnail. You can control what information is displayed from the :menuselection:`Settings --> Configure digiKam...` dialog. Select the **Album View** page and look for the **Icon-View Options** section.
 
 The thumbnails have Tool Tips which will pop up if you allow the mouse to dwell over a thumbnail for a moment. The Tool Tip shows the most important properties of the photograph including any tags that you have applied.
 
 .. figure:: images/mainwindow_tooltip.webp
 
-The content of the Tool Tips can be configured in the Tool Tip section of :menuselection:`Settings --> Configure digiKam`...
+The content of the Tool Tips can be configured in the **Tool Tip** section of :menuselection:`Settings --> Configure digiKam`...
 
-As an alternative you can display the photographs in a table by hitting the Table button on the Main Toolbar or by selecting :menuselection:`View --> Table` menu from the menu bar. This allows to see a lot of photographs at the same time (Tip: leave away the thumbnail column) in a way you can customize the usual way by clicking with the right mouse button on the headline bar and choosing the information you want to see. Clicking with the left mouse button on a line in the table will open the preview of that photograph.
+As an alternative you can display the photographs in a table by hitting the **Table** button on the Main Toolbar or by selecting :menuselection:`View --> Table` menu from the menu bar. This allows to see a lot of photographs at the same time (Tip: leave away the thumbnail column) in a way you can customize the usual way by clicking with the right mouse button on the headline bar and choosing the information you want to see. Clicking with the left mouse button on a line in the table will open the preview of that photograph.
 
-You can access most of the functions that digiKam can perform on a photograph by clicking with the right mouse button over the thumbnail or line in the table (context menu) or by selecting from the Item menu in the menu bar.
+.. figure:: images/mainwindow_table_view.webp
+
+You can access most of the functions that digiKam can perform on a photograph by clicking with the right mouse button over the thumbnail or line in the table (context menu) or by selecting from the **Item** menu in the menu bar.
 
 Viewing an image
 ~~~~~~~~~~~~~~~~
