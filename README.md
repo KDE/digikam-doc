@@ -134,6 +134,10 @@ File Name                            | ``` :file:`recogintion.db` ```
 Raw Text Section (as console output) | ``` .. code-block:: text ```
 Inline Icon Declaration              | ``` .. |icon_fullscreen| image:: images/mainwindow_icon_fullscreen.webp ```
 Inline Icon Usage                    | ``` .. |icon_fullscreen| ```
+GUI Elements (button, label, title)  | ``` :guilabel:`Start Encoding...` ```
+Section Title Level 1                | ``` ============ ```
+Section Title Level 2                | ``` ------------ ```
+Section Title Level 3                | ``` ~~~~~~~~~~~~ ```
 
 ### Contribute Workflow
 
