@@ -83,6 +83,14 @@ screen-shots, taken in PNG format. For example, the **getting_started** section 
     ├── introduction.rst
     └── quick_start.rst
 ```
+### Sphinx Framework
+
+The Python based Sphinx documentation generator translates a set of reStructuredText source files into various output formats,
+automatically producing cross-references, indices etc. It just used at run-time with the **make html** command to
+render contents, and reports warnings/errors.
+
+Documentation writer will never touch the Sphinx configuration.
+
 ### The ReStructuredText Format
 
 ReStructuredText is a simple file format for textual data used primarily in the Python programming language
@@ -112,13 +120,10 @@ A good place to learn **ReStructuredText** format used in this documentation, it
 
 [This StackOverflow entry](https://stackoverflow.com/questions/2746692/restructuredtext-tool-support) list the tools avaialble to work with ResStructuredText files.
 
-### Sphinx Framework
+### ReStructuredText Syntax Reminders
 
-The Python based Sphinx documentation generator translates a set of reStructuredText source files into various output formats,
-automatically producing cross-references, indices etc. It just used at run-time with the **make html** command to
-render contents, and reports warnings/errors.
+Menu entry: ``` :menuselection:`View --> Sort Albums --> By Category` ```
 
-Documentation writer will never touch the Sphinx configuration.
 
 ### Contribute Workflow
 
