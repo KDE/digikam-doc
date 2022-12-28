@@ -21,4 +21,4 @@ The Labels View allows you to select photographs by the Rating, Pick and Color l
 
 .. note::
 
-    The **Pick Labels** can be assigned automatically using the deep-learning tool **Image Quality sorter** by analysis the aesthestic score of items. See this :ref:`Maintenance Tool section <maintenance_quality>` for details.
+    The **Pick Labels** properties can be assigned automatically using the deep-learning tool **Image Quality Sorter** by analysis the aesthestic score of items. See this :ref:`Maintenance Tool section <maintenance_quality>` for details.
