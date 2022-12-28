@@ -1,112 +1,172 @@
-![](logo.png) This repository hosts the digiKam handbook based on DocBook format.
+![](project/images/logo.png) This repository hosts the digiKam handbook based on [Sphinx](https://www.sphinx-doc.org) framework and [ReStructuredText](https://docutils.sourceforge.io/rst.html) format.
 
 [digiKam](https://www.digikam.org/about/features/) is a powerful Open Source Photo Management Software.
 
-# How to Build the Handbook
+This documentation generated as **HTML** can be read online [here](https://docs.digikam.org/en/index.html).
 
-## Dependencies
+This documentation generated as **EPUB** can be downloaded [here](https://docs.digikam.org/en/epub/DigikamManual.epub).
 
-To compile the documentation, install the following development packages:
+[![Build Status](https://binary-factory.kde.org/job/Website_docs-digikam-org/badge/icon)](https://binary-factory.kde.org/job/Website_docs-digikam-org/)
 
-* [CMake](https://www.cmake.org) >=3.16.0
-* [ECM](https://invent.kde.org/frameworks/extra-cmake-modules) >= 5.55.0
-* [KF5::I18n](https://invent.kde.org/frameworks/ki18n) >= 5.55.0
-* [KF5::DocTools](https://invent.kde.org/frameworks/kdoctools) >= 5.55.0
-* [GetText](https://www.gnu.org/software/gettext) >= 0.20.0
+## Setting up Development Environment
 
-Under Linux Ubuntu, run this command line to install relevant packages:
+Under Ubuntu 22.04:
 
-```
-sudo apt install cmake extra-cmake-modules gettext libkf5i18n-dev libkf5doctools-dev build-essential qttools5-dev-tools khelpcenter
-```
+1. First you need to install [Python version 3](https://www.python.org) and **PIP** (`sudo apt install python3-pip`) as it is required to install Sphinx.
+2. You can check whether Python was installed successfully (and your version is 3 and not 2) by running `python --version`
+3. Now you can install Sphinx and the Sphinx Theme by using `python -m pip install --upgrade sphinx sphinx_rtd_theme`
+4. You can check whether Sphinx was installed successfully by running `sphinx-build --version`
 
-## Compilation
+Under Ubuntu 22.10:
 
-If you checkout this git repository, and if you resolve the dependencies, DocBook files can be compiled
-under Linux from a console using steps below which will create a build/ sub-directory to store
-necessary files used during compilation:
+1. To install Sphinx and the Sphinx Theme use `sudo apt install python3-sphinx`
+2. You can check whether Sphinx was installed successfully by running `sphinx-build --version`
 
-```
-bootstrap.sh
-cd build
-make
-```
+## Running Sphinx On Your Computer
 
-To install the documentations on your system, enter the command below from the build/ sub-directory:
+After you cloned this repository (only need to be done once), use a command line to go to its root folder (e.g. with `cd /path/to/digikam-docs`)
 
-```
-sudo make install/fast
-```
+### Generate an HTML Web Documentation
 
-To uninstall the documentations from your system, enter the command below from the build/ sub-directory:
+Under **Linux:** run `make html`
 
-```
-sudo make uninstall
-```
-
-## Displaying Installed Documentation
-
-When the documentation is installed on the system, under Linux KDE Plasma desktop you can start the
-Help Center desktop application to display the contents. For the the digiKam handbook,
-just enter this command line from a console:
-
-```
-khelpcenter help:/digikam
-```
-
-For the Showfoto handbook:
-
-```
-khelpcenter help:/showfoto
-```
-
-[![](project/images/showfoto_khelpcenter.png "KDE Help Center Desktop Application Displaying Showfoto Handbook")](project/images/showfoto_khelpcenter.png)
-
-# Working on this Project
-
-## Continuous Integration
-
-At all changes done in this repository, as commits and Merge Requests, the [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
-will recompile automatically all the contents to check the validity of the DocBook files, including the current translations
-of the documentations.
-
-The [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) lists the history of
-the continuous integration pipelines.
-
-## Continous Deployement
-
-This documentation in English is weekly generated and [published here as HTML and PDF](https://docs.kde.org/index.php?language=en&package=digikam-doc).
-
-If the compilation of the internationalized versions can be completed with the Continuous Deployment workflow,
-you can show a translated version of this documentation by selecting a language from the left side of the publication page.
+The HTML is generated in `build/html`. Open the web document by double click `index.html`. It must look like this:
 
 [![](project/images/digikam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digikam_handbook_HTML.png)
 
-[![](project/images/digikam_handbook_PDF.png "PDF Version of digiKam Handbook Shown in PDF Viewer")](project/images/digikam_handbook_PDF.png)
+### Generate an EPUB E-book
+
+Under **Linux:** run `make epub`
+
+The EPUB ebook is generated in `build/epub`. Open the ebook file by double click `DigikamManual.epub`. It must look like this:
+
+[![](project/images/digikam_handbook_EPUB.png "EPUB Version of digiKam Handbook Shown in e-book Viewer")](project/images/digikam_handbook_EPUB.png)
 
 ## Directories Hierarchy
 
-- LICENSES : all licenses used in the project.
-- digikam  : the main digiKam docbook and png files for the handbook.
-- po       : link to handbook translations files.
-- showfoto : the Showfoto docbook files, aka the digiKam Image Editor stand alone version.
-             Most of the Showfoto documentation is shared with the digiKam documentation implementation.
-- project  : some helpers scripts.
+- LICENSES  : all licenses used in the project.
+- build     : temporary dir created when documentation is compiled.
+- ressources: Sphinx templates customization.
+- po        : link to handbook translations files.
+- project   : some helpers scripts.
+- tests     : scripts to test repository contents with CI
 
-## Translations
+All others directories are used to host sections of the documentation implmeented in ReStructuredText format.
 
-The documentations are internationalized by KDE translator teams. In this repository, only the native English
-version is maintained and text is written in the DocBook container. These files are parsed daily by scripts which
-extract strings to translate. Contents are finaly exported to dedicated containers for translators.
+## Get Involved
 
-When translations are updated by the translator teams, files are re-injected back by other scripts to this project,
-in order to compile internationalized versions of DocBook files. These files are linked in po/ sub-directories from
-this project for future conversion to HTML/PDF or for packaging.
+### File Hierarchies
 
-This project is not involved in the translation workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
-if you want to contribute to the internationalization.
+ReStructuredText Documentation implementation is located in top level directory in .rst files and sub-directories with the same name
+corresponding to the handbook sections. The root entry of the manual is **index.rst**.
 
-## Contribute Workflow
+Each handbook section start with a .rst file from top level directory and a dedicated
+sub-directory with the same name including chapters .rst files and a nested **images** sub-directory to host
+screen-shots, taken in PNG format. For example, the **getting_started** section will be organized like this:
+
+```
+├── index.rst
+├── getting_started.rst
+└── getting_started
+    ├── images
+    │   ├── intro-firstrun-step1.webp
+    │   ├── intro-firstrun-step2.webp
+    │   ├── intro-firstrun-step3.webp
+    │   ├── intro-firstrun-step4.webp
+    │   ├── intro-firstrun-step5.webp
+    │   ├── intro-firstrun-step6.webp
+    │   ├── intro-firstrun-step7.webp
+    │   ├── intro-firstrun-step8.webp
+    │   ├── intro-firstrun-step9.webp
+    │   ├── intro-scanprogress.webp
+    │   └── intro-toolsinterface.webp
+    ├── introduction.rst
+    └── quick_start.rst
+```
+### Sphinx Framework
+
+The Python based Sphinx documentation generator translates a set of reStructuredText source files into various output formats,
+automatically producing cross-references, indices etc. It just used at run-time with the **make html** command to
+render contents, and reports warnings/errors.
+
+Documentation writer will never touch the Sphinx configuration.
+
+### The ReStructuredText Format
+
+ReStructuredText is a simple file format for textual data used primarily in the Python programming language
+community for technical documentations. It can be edited with a simple Text Editor application as
+[Kate](https://kate-editor.org/) featuring syntax highlighting to help documentation writers.
+
+ReStructuredText is part of the [DocUtils project](https://docutils.sourceforge.io/) from the Python Documentation Special Interest Group,
+aimed at creating a set of tools for Python. DocUtils can extract comments and information from ReStructuredText,
+and format them into various forms of program documentation.
+
+ReStructuredText is a lightweight markup language designed to be both processable by documentation-processing
+software such as DocUtils, and easily readable by human who are reading and writing source code.
+
+Take care that ReStructuredText file (.rst) specificities:
+
+- It's an indent featured markup language. Respect well the spaces on front of blocks to prevent compilation warnings.
+- Indent must be done with **4 spaces**, never use tabs at all.
+- Always save ResStructuredText file using **UNIX end-of-line**, check well your editor settings before.
+- Never use space or minus in file name, uses underscore instead.
+- Never uses capitalized forms in filenames, always uses lowercase characters.
+
+A good place to learn **ReStructuredText** format used in this documentation, it's recommended to read:
+
+- [Quick-start](https://docutils.sourceforge.io/docs/user/rst/quickstart.html).
+- [Cheat-sheet](http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt).
+- [Reference](http://docutils.sourceforge.net/docs/user/rst/quickref.html).
+
+[This StackOverflow entry](https://stackoverflow.com/questions/2746692/restructuredtext-tool-support) list the tools avaialble to work with ResStructuredText files.
+
+### ReStructuredText Syntax Reminders
+
+Type                                 | Syntax
+-------------------------------------|------------------------------------------------------------------------------
+Menu Entry                           | ``` :menuselection:`View --> Sort Albums --> By Category` ```
+Keyboard Shortcut                    | ``` :kbd:`CTRL + w` ```
+Internal Reference Definition        | ``` .. _album_view: ```
+Link to Internal reference           | ``` :ref:`the Album section <albums_view>` ```
+Link to External Url                 | ``` `digiKam Home Page <https://www.digikam.org/>`_ ```
+Italic Text                          | ``` *Cancel button* ```
+Bold Text                            | ``` **Ok button** ```
+File Name                            | ``` :file:`recogintion.db` ```
+Raw Text Section (as console output) | ``` .. code-block:: text ```
+Inline Icon Declaration              | ``` .. |icon_fullscreen| image:: images/mainwindow_icon_fullscreen.webp ```
+Inline Icon Usage                    | ``` .. |icon_fullscreen| ```
+GUI Elements (button, label, title)  | ``` :guilabel:`Start Encoding...` ```
+Section Title Level 1                | ``` ============ ```
+Section Title Level 2                | ``` ------------ ```
+Section Title Level 3                | ``` ~~~~~~~~~~~~ ```
+
+Table example:
+```
+============== ========== =======
+Title 1        Title 2    Title 3
+============== ========== =======
+Item 1         Value 1    Value 2
+Item 2         Value 1    Value 2
+Item 3         Value 1    Value 2
+Item 4         Value 1    Value 2
+Item 5         Value 1    Value 2
+============== ========== =======
+```
+Nested list
+```
+- Level 1
+
+    - Level 2
+    - Level 2
+
+- Level 1
+
+    - Level 2
+    - Level 2
+    - Level 2
+    - Level 2
+```
+### Contribute Workflow
 
 To help us to write this English documentation, you must use a standard git workflow based on the Fork/Merge Request mechanism.
 You will not have direct access to this repository.
@@ -124,7 +184,7 @@ When all contributor tasks are done, a Merge Request must be send to the origina
 
 - Notify the coordinator about the contribution.
 - Coordinator will review the changes.
-- Coordinator can post comments in the Merge Request if something is wrong (aka DocBook compilation fails with the Continuous Integration).
+- Coordinator can post comments in the Merge Request if something is wrong (aka ReStructuredText compilation fails with the Continuous Integration).
 - Contributor must adjust, comment, or rebase changes in the forked repository accordingly with coordinator feedback.
 - When all is ready, coordinator merge changes from the forked repository to the original repository.
 
@@ -133,74 +193,93 @@ will be up-to-date and the contributor can create a new Merge Request with new c
 
 This git workflow is well [documented in KDE project](https://community.kde.org/Infrastructure/Git/Simple_Workflow).
 
-## Current Project Tasks
+### WEBP Screenshot Capture
 
-A list of pending tasks to do on this project is available in the [TODO file](TODO).
+- Always use digiKam AppImage version 8 and later under Linux/Plasma desktop to take screenshots.
 
-# Working on The Handbook Contents
+- Always use **White Balance** color theme to take screenshots with desktop default icon set (select color theme from Settings/Themes menu).
 
-## The DocBook Format
+- No face/people present in photo hosted in screenshots.
 
-The documentation written in English uses the [DocBook](https://en.wikipedia.org/wiki/DocBook) format.
-DocBook is based on XML and host contents by sections separated by tags, similar to a simplified HTML.
-It includes hierarchical paragraphes, uses titles to identify sections, and can host screenshots in PNG format.
-DocBook can be processed and exported to other formats such as HTML and PDF for example.
+- No digiKam version number must be present in screeshots.
 
-Most of the documentation are full English text sections written to describe the digiKam features. They are
-easy to create and maintain. A simple text editor supporting colors syntax is enough to work on a DocBook file.
+- Desktop and application must be in English only. Do not mix languages.
 
-If you want to learn more about this format, take a look to [this KDE tutorial](https://l10n.kde.org/docs/doc-primer/index.html)
+- Use a tool as [Spectacle](https://apps.kde.org/spectacle/) to take a shot. Use the region selection option to capture only important area.
 
-## File Structures
+- Remove unecessary buttons and dialog header to limit image file size.
 
-The substructure of the help files that develop as a tree are created by <chapter> tags.
+- Always use **WEBP** file format to save images.
 
-Respect the file naming convention ordered by chapter name, main section, and title resume, separated by minus.
+- Do not use space and capitalized characters in file name.
 
-The digiKam DocBook files are shared with the Showfoto handbook.
+- WEBP files must be hosted in **images/** sub-folders from each documentation section. 
 
-## Take screenshots with Alpha Blending 3D Border
-
-- Never use advanced color themes to take screenshots. Always use the desktop default color and icon set.
-
-- Use Festival Import to take a shot. Use the region selection option to select only
-  important areas. Remove buttons and dialog header to limit image file size.
-  Always use PNG file format to save images to prevent compression artifacts.
-
-- Use script project/screenshot-dropshadow.sh to add border frames around the shot.
-  This script requires ImageMagick command line tools installed on the system.
-
-The script can be run on a single file or in batch mode. To run in batch
-mode, call it like this from within the images folder:
+- To include the screenshot in a ReStructuredText file, use the syntax below;
 
 ```
-screenshot-dropshadow.sh -b png
+.. figure:: images/my_screen_shot.webp
+    :alt:
+    :align: center
+
+    My Screenshot Legend
 ```
 
-where <png> is the file extension to look for. The script can be used
-with additional arguments, see '-h' for more options.
+### GIF Animated Screencast Capture
 
-## PNG screenshot optimizations
+Another format supported inside the documentation is **GIFa** video. It can be used to present a region of screen
+from the application while an operation is under progress. It's perfect to write tutorials.
 
-Since the documentation is very good it is also very demanding in terms of volume, 80% whereof are screenshots.
+To prevent huge GIFa files, just capture the right area to present in application and limit capture to less than 10 seconds,
 
-In order to limit the byte count to the minimum the following command chain shall be used to reduce the png file size.
+A good tool to capture video from desktop is [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
 
-A factor of 2-4 can be gained. From within the folder where the png resides, use script project/optpng.sh.
-This script requires pngnq and optipng command line tools installed on the system.
+Configuration:
 
-To process all png files in one step use this command line:
+    - Container : WEBM.
+    - Codec : VP8.
+    - Bitrate: 5000 kbit/s.
+    - Record cursor.
+
+Do not use space and capitalized characters in file name.
+
+This will record a screencast in WEBM format. Even if WEBM is supported in HTML and EPUB,
+Sphinx framework is not yet able to embed WEBM in EPUB.
+Convert it to GIFa using **project/webm2gif.sh** script.
+
+GIFa files must be hosted in **videos/** sub-folders from each documentation section.
+
+- To include the screencast in a ReStructuredText file, use the syntax below;
 
 ```
-find *.png | xargs -0 ./makess.sh
+.. figure:: videos/my_screen_cast.gif
+    :width: 600px
+    :alt:
+    :align: center
+
+    My Screencast Legend
 ```
 
-# Links
+### Translations
 
-- [Converting handbook in PDF or Epub](https://userbase.kde.org/How_To_Convert_a_UserBase_Manual_to_Docbook#Converting_into_PDF)
-- [Get Involved in the KDE Documentation workflow](https://community.kde.org/Get_Involved/documentation)
+The documentations are internationalized by KDE translator teams. In this repository, only the native English
+version is maintained and text is written in ReStructuredText containers. These files are parsed daily by
+maintenance scripts which extract strings to translate. Processed contents are exported to dedicated
+containers for translators.
 
-# Credits
+The daily script is hosted in **l10n-scripty** repository and call **StaticMessages.sh** from there through [this script](https://invent.kde.org/sysadmin/l10n-scripty/-/blob/master/process-static-messages.sh).
 
-[digiKam team](https://www.digikam.org/support/contact/)
+When translations are updated by the translator teams, files are send back by other maintenance scripts to this project,
+in order to compile internationalized versions of ReStructuredText files. These files are linked in po/ sub-directories
+from this project for conversion to HTML/EPUB.
 
+This project is not involved in the translation workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
+if you want to contribute to the internationalization.
+
+The status of the digiKam documentation translations is available [here](https://l10n.kde.org/stats/doc/trunk-kf5/package/digikam-doc/).
+
+The infrastrusture configuration to rule translations is located in docs-digikam-org section [of this file](https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json).
+
+### Rationale
+
+See the technical details from [this Phabricator entry](https://phabricator.kde.org/T16036) about the DocBook to Sphinx/ReStructuredText manual conversion.

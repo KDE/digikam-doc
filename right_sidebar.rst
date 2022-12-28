@@ -1,0 +1,32 @@
+.. meta::
+   :description: Using the digiKam Right Sidebar
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, sidebar
+
+.. metadata-placeholder
+
+   :authors: - digiKam Team (see Credits and License for details)
+
+   :license: Creative Commons License SA 4.0
+
+.. _right_sidebar:
+
+#############
+Right Sidebar
+#############
+
+This section explain how to use the digiKam right sidebar.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   :glob:
+
+   right_sidebar/sidebar_overview.rst
+   right_sidebar/properties_view.rst
+   right_sidebar/metadata_view.rst
+   right_sidebar/colors_view.rst
+   right_sidebar/maps_view.rst
+   right_sidebar/captions_view.rst
+   right_sidebar/versions_view.rst
+   right_sidebar/filters_view.rst
+   right_sidebar/tools_view.rst

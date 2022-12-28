@@ -1,0 +1,39 @@
+.. meta::
+   :description: Using the digiKam Setup Application
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, setup
+
+.. metadata-placeholder
+
+   :authors: - digiKam Team (see Credits and License for details)
+
+   :license: Creative Commons License SA 4.0
+
+.. _setup_application:
+
+#################
+Setup Application
+#################
+
+This section explain how to setup application.
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+   :glob:
+
+   setup_application/config_overview.rst
+   setup_application/database_settings.rst
+   setup_application/collections_settings.rst
+   setup_application/views_settings.rst
+   setup_application/tooltip_settings.rst
+   setup_application/metadata_settings.rst
+   setup_application/templates_settings.rst
+   setup_application/editor_settings.rst
+   setup_application/cm_settings.rst
+   setup_application/lighttable_settings.rst
+   setup_application/imgqsort_settings.rst
+   setup_application/camera_settings.rst
+   setup_application/plugins_settings.rst
+   setup_application/miscs_settings.rst
+   setup_application/theme_settings.rst
+   setup_application/shortcuts_settings.rst
