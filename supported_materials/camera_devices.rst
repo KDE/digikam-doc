@@ -50,4 +50,4 @@ Transfers using Mass Storage device
 
 To use a generic Mass Storage device with digiKam, select :menuselection:`Import --> Camera --> Add Camera Manually...`, add your device and set the correct mount point path.
 
-For details see the chapter to configure digiKam, into :ref:`Section Camera <camera_settings>`.
+For details see the chapter to configure digiKam, into :ref:`Camera section <camera_settings>`.
