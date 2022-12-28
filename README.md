@@ -130,6 +130,7 @@ Internal reference definition | ``` .. _album_view: ```
 Link to Internal reference    | ``` :ref:`the Album section <albums_view>` ```
 Link to External Url          | ``` `digiKam Home Page <https://www.digikam.org/>`_ ```
 Bold text                     | ``` **Ok buttun** ```
+File Name                     | ``` :file:`recogintion.db` ```
 
 ### Contribute Workflow
 
