@@ -127,6 +127,7 @@ Type                | Syntax
 Menu entry          | ``` :menuselection:`View --> Sort Albums --> By Category` ```
 Internal reference  | ``` :ref:`the Album section <albums_view>` ```
 External Url        | ``` `digiKam Home Page <https://www.digikam.org/>`_ ```
+Bold text           | ``` **Ok buttun** ```
 
 ### Contribute Workflow
 
