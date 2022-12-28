@@ -129,7 +129,8 @@ Keyboard Shortcut                    | ``` :kbd:`CTRL + w` ```
 Internal Reference Definition        | ``` .. _album_view: ```
 Link to Internal reference           | ``` :ref:`the Album section <albums_view>` ```
 Link to External Url                 | ``` `digiKam Home Page <https://www.digikam.org/>`_ ```
-Bold Text                            | ``` **Ok buttun** ```
+Italic Text                          | ``` *Cancel button* ```
+Bold Text                            | ``` **Ok button** ```
 File Name                            | ``` :file:`recogintion.db` ```
 Raw Text Section (as console output) | ``` .. code-block:: text ```
 Inline Icon Declaration              | ``` .. |icon_fullscreen| image:: images/mainwindow_icon_fullscreen.webp ```
@@ -139,6 +140,32 @@ Section Title Level 1                | ``` ============ ```
 Section Title Level 2                | ``` ------------ ```
 Section Title Level 3                | ``` ~~~~~~~~~~~~ ```
 
+Table example:
+```
+============== ========== =======
+Title 1        Title 2    Title 3
+============== ========== =======
+Item 1         Value 1    Value 2
+Item 2         Value 1    Value 2
+Item 3         Value 1    Value 2
+Item 4         Value 1    Value 2
+Item 5         Value 1    Value 2
+============== ========== =======
+```
+Nested list
+```
+- Level 1
+
+    - Level 2
+    - Level 2
+
+- Level 1
+
+    - Level 2
+    - Level 2
+    - Level 2
+    - Level 2
+```
 ### Contribute Workflow
 
 To help us to write this English documentation, you must use a standard git workflow based on the Fork/Merge Request mechanism.
