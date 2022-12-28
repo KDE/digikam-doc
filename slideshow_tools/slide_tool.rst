@@ -30,6 +30,10 @@ Plenty of items properties can be displayed as overlay while running. These one 
 
 The basic slide show configuration should be easy to understand. The upper slider adjusts the time between image transitions; usually a time of 4-5 seconds is good. The other check boxes enable/disable the metadata to be shown on the bottom of the slide show images during display.
 
+.. note::
+
+    The **Shuffle** mode is only available in automatic playback, i.e. when you start the slide show via the menu or toolbar button. It do not work in **Preview** mode when you start on the "play" button icon in the thumbnail or image preview.
+
 .. figure:: images/slide_config.webp
 
 Usage from Keyboard and mouse to quickly navigate between items is listen below:
