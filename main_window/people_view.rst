@@ -111,7 +111,7 @@ For tagging people manually, you can preview an image, click on **Add a Face Tag
 
 And then draw a rectangle around the face while holding left mouse button followed by entering the person's name and pressing :kbd:`Enter`.
 
-.. figure:: images/mainwindow_drawregion.webp
+.. figure:: images/mainwindow_face_region.webp
 
 .. note::
 
