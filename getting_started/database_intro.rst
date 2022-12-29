@@ -1,5 +1,5 @@
 .. meta::
-   :description: How to quickly start digiKam photo manageent program
+   :description: How to quickly start digiKam photo management program
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
 
 .. metadata-placeholder

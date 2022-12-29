@@ -154,7 +154,7 @@ The re-sizeable image panel with the original preview helps you to pan within th
 
 You can see below a full description of all parameters:
 
-    Estimate Noise: compute automatically all noise reduction settings by a parse of noise contained in image. By default it recommended to turn on this option and check the result. If reduction of noise is not enough efficient or danamge the image, turn off this option, and adjust the Luminance, Chrominance Blue, and Chrominance Red settings manually.
+    Estimate Noise: compute automatically all noise reduction settings by a parse of noise contained in image. By default it recommended to turn on this option and check the result. If reduction of noise is not enough efficient or damage the image, turn off this option, and adjust the Luminance, Chrominance Blue, and Chrominance Red settings manually.
 
     Threshold: use the slider for coarse adjustment, and the spin control for fine adjustment.
     The threshold is the value below which everything is considered noise. This value should be set so that edges and details are clearly visible and noise is smoothed out. These settings exists for the Luminance, Chrominance Blue, and Chrominance Red channels. Simply adjust it and watch the preview. Adjustment must be made carefully, because the gap between noisy, smooth, and blur is very small. Adjust it as carefully as you would adjust the focus of a camera.

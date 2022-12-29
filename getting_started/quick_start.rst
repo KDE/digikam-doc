@@ -1,5 +1,5 @@
 .. meta::
-   :description: How to quickly start digiKam photo manageent program
+   :description: How to quickly start digiKam photo management program
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
 
 .. metadata-placeholder
@@ -68,6 +68,6 @@ Once you have configured the Album Library Folder you can set up digiKam to work
 
 .. important::
 
-    At first run, digiKam will ask to download large files from Internet. These files are the deep-learning models used for the face managament, red eyes removal, and the image quality sorting features. If you pass this stage without downloading files, these features will not work properly.
+    At first run, digiKam will ask to download large files from Internet. These files are the deep-learning models used for the face management, red eyes removal, and the image quality sorting features. If you pass this stage without downloading files, these features will not work properly.
 
     .. figure:: images/models_downloader.webp

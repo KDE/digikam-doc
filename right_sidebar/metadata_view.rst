@@ -36,7 +36,7 @@ For each metadata section, a bar is available on the top of view with:
     - A menu from the left button to use different levels to display contents through:
 
         - **No Filter**: display all markers.
-        - **Photograp**: display only more important marker for photograph.
+        - **Photograph**: display only more important marker for photograph.
         - **Custom**: a customized selection of marker set in configuration dialog (see Settings entry).
 
     - A really nice feature is the live search box on the middle end of bar. As you type in a keyword, the metadata on top of it will be successively filtered until you narrow down and what you are looking for. It is a quick way of accessing specific information.

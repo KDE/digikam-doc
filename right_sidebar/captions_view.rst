@@ -79,6 +79,6 @@ Information View
 
 .. figure:: images/sidebar_information.webp
 
-The Information view allows to assign a template of textuals information to items in one pass. This information can be populated in Setup/Template dialog. They contains all strings descripting the contents, the scene, the authors, the rights, the place etc.
+The Information view allows to assign a template of textuals information to items in one pass. This information can be populated in Setup/Template dialog. They contains all strings describing the contents, the scene, the authors, the rights, the place etc.
 
 For more details about Template, see the description of the :ref:`Template Settings <templates_settings>` section.
