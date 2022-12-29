@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Right Sidebar Metadata View
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, sidebar, metadata, exif, iptc, xmp, makernotes, exiftool
 
 .. metadata-placeholder
 
@@ -17,35 +17,35 @@ Metadata View
 
 Metadata are data about the images or files, like technical data of camera setting during shooting, author info, copyrights, keywords, captions, and coordinates of location.
 
-The metadata sidebar is composed of five sub tabs EXIF, Makernote, IPTC, XMP, and ExifTool. Metadata, as shown in these four tabs, can be modified and enhanced in a number of ways elsewhere:
+The metadata sidebar is composed of five sub tabs **EXIF**, **Makernote**, **IPTC**, **XMP**, and **ExifTool** Metadata, as shown in these four tabs, can be modified and enhanced in a number of ways elsewhere:
 
-    - With the camera interface.
+    - With the :ref:`Camera interface <camera_import>`.
 
-    - The Metadata Editor.
+    - The :ref:`Metadata Editor <metadata_editor>`.
 
-    - The Geolocation tool.
+    - The :ref:`Geolocation tool <geoeditor_overview>`.
 
-    - Copying database metadata to files.
+    - Copying :ref:`database information to files metadata <maintenance_metadata>`.
 
-    - Copying file's metadata to the database.
+    - Copying :ref:`file's metadata to the database <maintenance_database>`.
 
 .. figure:: images/sidebar_metadataexif.webp
 
 For each metadata section, a bar is available on the top of view with:
 
-    - A menu from the left button to use different levels to display contents through :
+    - A menu from the left button to use different levels to display contents through:
 
-        - No Filter: display all markers.
-        - Photograph: display only more important marker for photograph.
-        - Custom: a customized selection of marker set in configuration dialog (see Settings entry).
+        - **No Filter**: display all markers.
+        - **Photograp**: display only more important marker for photograph.
+        - **Custom**: a customized selection of marker set in configuration dialog (see Settings entry).
 
     - A really nice feature is the live search box on the middle end of bar. As you type in a keyword, the metadata on top of it will be successively filtered until you narrow down and what you are looking for. It is a quick way of accessing specific information.
 
     - A menu from the right button to export contents:
 
-        - Copy to clipboard.
-        - Save to file.
-        - Print data.
+        - **Copy to clipboard**: share text information in memory to copy and paste in other application.
+        - **Save to file**: save chuck of information in data file.
+        - **Print data**: export information in PDF file or to your printer.
 
 .. note::
 
@@ -54,21 +54,21 @@ For each metadata section, a bar is available on the top of view with:
 EXIF Tags
 ~~~~~~~~~
 
-EXIF stands for Exchangeable image file format. It was designed specifically for digital cameras. It allows a large amount of information about the photograph to be stored. This information describes the camera which took the image along with the settings (including date and time) in use when the image was taken. An in-line thumbnail can be included.
+EXIF stands for `Exchangeable image file format <https://en.wikipedia.org/wiki/Exif>`. It was designed specifically for digital cameras. It allows a large amount of information about the photograph to be stored. This information describes the camera which took the image along with the settings (including date and time) in use when the image was taken. An in-line thumbnail can be included.
 
-EXIF format contains a set of marker sections named Image File Directories (IFD). The sections likely to be found in a normal EXIF file are as follows:
+EXIF format contains a set of marker sections named *Image File Directories* (IFD). The sections likely to be found in a normal EXIF file are as follows:
 
-    - Image Information: contains general information about the image.
+    - **Image Information**: contains general information about the image.
 
-    - Embedded Thumbnail: contains information about the embedded thumbnail image.
+    - **Embedded Thumbnail**: contains information about the embedded thumbnail image.
 
-    - Photograph Information: contains extended information about the photograph.
+    - **Photograph Information**: contains extended information about the photograph.
 
-    - Interoperability: contains information to support interoperability between different EXIF implementations. 
+    - **Interoperability**: contains information to support interoperability between different EXIF implementations. 
 
 You can review embedded EXIF information for the selected image from the first sidebar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections. If there are more entries than space available, just scroll down with the mouse wheel.
 
-Some vendors add additional EXIF sections, such as Canon, Fujifilm, Nikon, Minolta, and Sigma. These sections contain vendor and model specific notes. These will be displayed on the Makernote tab.
+Some vendors add additional EXIF sections, such as Canon, Fujifilm, Nikon, Minolta, and Sigma. These sections contain vendor and model specific notes. These will be displayed on the **Makernote** tab.
 
 Makernote Tags
 ~~~~~~~~~~~~~~
@@ -82,11 +82,11 @@ You can review embedded Makernote information for the selected image in this sid
 IPTC Tags
 ~~~~~~~~~
 
-The International Press Telecommunications Council, is a consortium of the world's major news agencies and news industry vendors. It develops and maintains technical standards for improved news exchange that are used by virtually every major news organization in the world.
+The `International Press Telecommunications Council <http://www.iptc.org>`, is a consortium of the world's major news agencies and news industry vendors. It develops and maintains technical standards for improved news exchange that are used by virtually every major news organization in the world.
 
 The IPTC was established in 1965 by a group of news organizations to safeguard the telecommunications interests of the world's press. Since the late 1970s IPTC's activities have primarily focused on developing and publishing industry standards for the interchange of news data.
 
-In particular, the IPTC defined a set of metadata attributes that can be applied to images. These were defined originally in 1979, and revised significantly in 1991 to be the "Information Interchange Model" (IIM), but the concept really advanced in 1994 when Adobe defined a specification for actually embedding the metadata into digital image files - known as "IPTC headers".
+In particular, the IPTC defined a set of metadata attributes that can be applied to images. These were defined originally in 1979, and revised significantly in 1991 to be the *Information Interchange Model* (IIM), but the concept really advanced in 1994 when Adobe defined a specification for actually embedding the metadata into digital image files - known as "IPTC headers".
 
 You can review embedded IPTC information for the selected image in this sidebar tab. The IPTC Viewer is purely informational: nothing you do with it will cause any change to the IPTC sections.
 
@@ -95,13 +95,13 @@ You can review embedded IPTC information for the selected image in this sidebar 
 XMP Tags
 ~~~~~~~~
 
-The Extensible Metadata Platform (XMP) is an ISO standard, originally created by Adobe Systems Inc., for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
+The `Extensible Metadata Platform <https://fr.wikipedia.org/wiki/Extensible_Metadata_Platform>` (XMP) is an ISO standard, originally created by Adobe Systems Inc., for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
 
 XMP standardizes a data model, a serialization format and core properties for the definition and processing of extensible metadata. It also provides guidelines for embedding XMP information into popular image, video and document file formats, without breaking their readability by applications that do not support XMP.
 
 Although metadata can alternatively be stored in a sidecar file, embedding metadata avoids problems that occur when metadata is stored separately.
 
-XMP is given to replace IPTC on the future.
+XMP is given to replace IPTC as well.
 
 You can review embedded XMP information for the selected image in this sidebar tab. The XMP Viewer is purely informational: nothing you do with it will cause any change to the XMP sections.
 
@@ -110,7 +110,7 @@ You can review embedded XMP information for the selected image in this sidebar t
 ExifTool View
 ~~~~~~~~~~~~~
 
-ExifTool is a free and open-source program for reading, writing, and manipulating image, audio, video, and PDF metadata. It is platform independent as a command-line Perl application. Prior, digiKam use Exiv2 library to handle metadata, but it can use also ExifTool as an alternative to incorporated different types of digital workflows not supported by Exiv2.
+`ExifTool <https://en.wikipedia.org/wiki/ExifTool>` is a free and open-source program for reading, writing, and manipulating image, audio, video, and PDF metadata. It is platform independent as a command-line Perl application. Prior, digiKam use Exiv2 library to handle metadata, but it can use also ExifTool as an alternative to incorporated different types of digital workflows not supported by Exiv2.
 
 ExifTool supports many types of metadata including Exif, IPTC, XMP, JFIF, GeoTIFF, ICC Profile, Photoshop IRB, FlashPix, AFCP and ID3, as well as the manufacturer-specific metadata formats of many digital cameras.
 
