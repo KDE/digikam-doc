@@ -1,6 +1,6 @@
 .. meta::
    :description: Overview to digiKam Right Sidebar
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, sidebar, properties, metadata, colors, maps, captions, versions, filters
 
 .. metadata-placeholder
 
@@ -15,22 +15,22 @@ Overview
 
 .. contents::
 
-The digiKam main window has a sidebar at the right border providing important information and actions of the selected images. This same sidebar is also available in the digiKam Image Editor (except the Filters tab). It can be displayed by respectively clicking on one of the eight tabs:
+The digiKam main window has a sidebar at the right border providing important information and actions of the selected images. This same sidebar is also available in the digiKam Image Editor (except the **Filters** tab). It can be displayed by respectively clicking on one of the eight tabs:
 
-    - Properties : File and image properties, key shooting parameters.
+    - :ref:`Properties <properties_view>`: File and image properties, key shooting parameters.
 
-    - Metadata : EXIF, Makernotes, IPTC, XMP, and ExifTool data.
+    - :ref:`Metadata <metadata_view>` : EXIF, Makernotes, IPTC, XMP, and ExifTool data.
 
-    - Colors : Histograms and embedded ICC profiles.
+    - :ref:`Colors <colors_view>` : Histograms and embedded ICC profiles.
 
-    - Maps : Marble widget shows GPS location.
+    - :ref:`Maps <maps_view>` : View to show GPS location.
 
-    - Captions : Comments, Date & Time setting, Labels, Rating, Tags, selected metadata.
+    - :ref:`Captions <captions_view>` : Comments, Date & Time setting, Labels, Rating, Tags, selected metadata.
 
-    - Versions : Image history.
+    - :ref:`Versions <versions_view>` : Image history.
 
-    - Filters : Filters to apply to icon-view selection.
+    - :ref:`Filters <filters_view>` : Filters to apply to icon-view selection.
 
-    - Tools : An optional contextual view dedicated to group by categories all main tools available.
+    - :ref:`Tools <tools_view>` : An optional contextual view dedicated to group by categories all main tools available.
 
 Clicking successively onto the same tab will make the sidebar pop up or fold back into the border.
