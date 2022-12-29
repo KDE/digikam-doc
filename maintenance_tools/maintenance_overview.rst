@@ -27,7 +27,7 @@ The tools available from the list are listed below:
 
    1. **Scan For New Items**: scan for albums and items to populate the database.
    
-   2. **Perform Database Cleaning**: scan albums and items for unrelevant entries in database.
+   2. **Perform Database Cleaning**: scan albums and items for irrelevant entries in database.
    
    3. **Rebuild Thumbnails**: scan albums to update the item thumbnails.
    
