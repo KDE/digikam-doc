@@ -27,4 +27,4 @@ While the faces management process is under progress, notification on the bottom
 
 .. important::
 
-   To run properly, the process needs the deep-learning model to download at the first run of digiKam. See :ref:`the Quick Start section <quick_start>` for details.
+   To run properly, the process needs the deep-learning models to download at the first run of digiKam. See :ref:`the Quick Start section <quick_start>` for details.
