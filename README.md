@@ -13,7 +13,7 @@ This documentation generated as **EPUB** can be downloaded [here](https://docs.d
 Under Ubuntu 22.04:
 
 1. First you need to install [Python version 3](https://www.python.org) and **PIP** (`sudo apt install python3-pip`) as it is required to install Sphinx.
-2. You can check whether Python was installed successfully (and your version is 3 and not 2) by running `python --version`
+2. You can check whether Python was installed successfully (and your version is 3 and not 2) by running `python --version`. If necessary run `sudo apt install python-is-python3`.
 3. Now you can install Sphinx and the Sphinx Theme by using `python -m pip install --upgrade sphinx sphinx_rtd_theme`
 4. You can check whether Sphinx was installed successfully by running `sphinx-build --version`
 
