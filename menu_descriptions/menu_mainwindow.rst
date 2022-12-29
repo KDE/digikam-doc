@@ -117,7 +117,7 @@ Item --> Find Similar...
 
 Item --> Write Metadata to Image
 
-    TODO
+    When editing files outside digiKam, the database will not be triggered to update information. If you want to scan items and backport changes in the database you got to use this function first.
 
 Item --> Reread Metadata from Image
 
@@ -331,11 +331,11 @@ Tools --> Maintenance...
 
 Tools --> Blend Bracketed or Focus Stack Images...
 
-    TODO 
+    This tool allows users to blend bracketed images together to create pseudo HDR photo.
 
 Tools --> Create Panorama...
 
-    TODO 
+    This tool allows users to assemble images together to create large panorama.
 
 Tools --> Create Calendar...
 
