@@ -54,7 +54,7 @@ For each metadata section, a bar is available on the top of view with:
 EXIF Tags
 ~~~~~~~~~
 
-EXIF stands for `Exchangeable image file format <https://en.wikipedia.org/wiki/Exif>`. It was designed specifically for digital cameras. It allows a large amount of information about the photograph to be stored. This information describes the camera which took the image along with the settings (including date and time) in use when the image was taken. An in-line thumbnail can be included.
+EXIF stands for `Exchangeable image file format <https://en.wikipedia.org/wiki/Exif>`_. It was designed specifically for digital cameras. It allows a large amount of information about the photograph to be stored. This information describes the camera which took the image along with the settings (including date and time) in use when the image was taken. An in-line thumbnail can be included.
 
 EXIF format contains a set of marker sections named *Image File Directories* (IFD). The sections likely to be found in a normal EXIF file are as follows:
 
@@ -82,7 +82,7 @@ You can review embedded Makernote information for the selected image in this sid
 IPTC Tags
 ~~~~~~~~~
 
-The `International Press Telecommunications Council <http://www.iptc.org>`, is a consortium of the world's major news agencies and news industry vendors. It develops and maintains technical standards for improved news exchange that are used by virtually every major news organization in the world.
+The `International Press Telecommunications Council <http://www.iptc.org>`_, is a consortium of the world's major news agencies and news industry vendors. It develops and maintains technical standards for improved news exchange that are used by virtually every major news organization in the world.
 
 The IPTC was established in 1965 by a group of news organizations to safeguard the telecommunications interests of the world's press. Since the late 1970s IPTC's activities have primarily focused on developing and publishing industry standards for the interchange of news data.
 
@@ -95,7 +95,7 @@ You can review embedded IPTC information for the selected image in this sidebar 
 XMP Tags
 ~~~~~~~~
 
-The `Extensible Metadata Platform <https://fr.wikipedia.org/wiki/Extensible_Metadata_Platform>` (XMP) is an ISO standard, originally created by Adobe Systems Inc., for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
+The `Extensible Metadata Platform <https://fr.wikipedia.org/wiki/Extensible_Metadata_Platform>`_ (XMP) is an ISO standard, originally created by Adobe Systems Inc., for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
 
 XMP standardizes a data model, a serialization format and core properties for the definition and processing of extensible metadata. It also provides guidelines for embedding XMP information into popular image, video and document file formats, without breaking their readability by applications that do not support XMP.
 
@@ -110,7 +110,7 @@ You can review embedded XMP information for the selected image in this sidebar t
 ExifTool View
 ~~~~~~~~~~~~~
 
-`ExifTool <https://en.wikipedia.org/wiki/ExifTool>` is a free and open-source program for reading, writing, and manipulating image, audio, video, and PDF metadata. It is platform independent as a command-line Perl application. Prior, digiKam use Exiv2 library to handle metadata, but it can use also ExifTool as an alternative to incorporated different types of digital workflows not supported by Exiv2.
+`ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_ is a free and open-source program for reading, writing, and manipulating image, audio, video, and PDF metadata. It is platform independent as a command-line Perl application. Prior, digiKam use Exiv2 library to handle metadata, but it can use also ExifTool as an alternative to incorporated different types of digital workflows not supported by Exiv2.
 
 ExifTool supports many types of metadata including Exif, IPTC, XMP, JFIF, GeoTIFF, ICC Profile, Photoshop IRB, FlashPix, AFCP and ID3, as well as the manufacturer-specific metadata formats of many digital cameras.
 
