@@ -87,27 +87,27 @@ The distribution of the graph, where the spikes and bulges are clustered, indica
 
 With an under exposed photograph, the histogram will have a distribution of brightness that tends to be mostly on the left of the graph.
 
-.. figure:: images/sidebar_histogram_under_expo.webp
+.. figure:: images/sidebar_histogram_underexpo.webp
     :alt:
     :align: center
 
     An Under Exposed Photograph
 
-With an over exposed photograph, the histogram will have the bulge showing the brightness distributed mostly towards the right of the graph.
-
-.. figure:: images/sidebar_histogram_over_expo.webp
-    :alt:
-    :align: center
-
-    An Over Exposed Photograph
-
 With a correctly exposed photograph, the histogram will have a distribution of brightness that will be most prominent near the center part of the graph.
 
-.. figure:: images/sidebar_histogram_right_expo.webp
+.. figure:: images/sidebar_histogram_rightexpo.webp
     :alt:
     :align: center
 
     A Correctly Exposed Photograph
+
+With an over exposed photograph, the histogram will have the bulge showing the brightness distributed mostly towards the right of the graph.
+
+.. figure:: images/sidebar_histogram_overexpo.webp
+    :alt:
+    :align: center
+
+    An Over Exposed Photograph
 
 .. important:: Not all photographs have to exhibit this bulge in the center part of their histogram. Much depends on the subject of the photograph. In some cases, it might be appropriate for the histogram to show a peak at one end or the other, or both.
 
