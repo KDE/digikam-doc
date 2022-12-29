@@ -68,6 +68,8 @@ Now we have a lot of stuff already in our database, but what if I need to change
 
 The real work begins here as we will apply tags, captions and a rating to every photograph. Of course, all images requiring the same attribute can be treated as a selection in one action. Lets start with rating or ranking. It's best to start with ranking because for further work you can concentrate on the good shots. 
 
+.. _rating_ranking:
+
 Rating and Ranking
 ~~~~~~~~~~~~~~~~~~
 
