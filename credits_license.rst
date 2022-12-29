@@ -35,6 +35,10 @@ Documentation authors
 
     Gilles Caulier (https://invent.kde.org/cgilles)
 
+- 2009-2023
+
+    Yuri Chornoivan (https://invent.kde.org/yurchor)
+
 - 2022
 
     Mike Morrison (https://invent.kde.org/mikemorr)
@@ -46,10 +50,6 @@ Documentation authors
 - 2017-2018
 
     Antoni Bella Pérez (https://invent.kde.org/bellaperez)
-
-- 2009-2019
-
-    Yuri Chornoivan (https://invent.kde.org/yurchor)
 
 - 2017
 
