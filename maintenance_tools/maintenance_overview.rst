@@ -21,7 +21,7 @@ Depending on your workflow, your digiKam settings and whether you work on your i
 
 .. figure:: images/maintenance_tool.webp
 
-The list of tools is presented in a sequential order and cannot be changed. Only the tools to activate or desactivate during a maintenance session can be selected. The sequence of tools is relevant of the order to populate the information in database on the first time, and the way to use these information in a second time.
+The list of tools is presented in a sequential order and cannot be changed. Only the tools to activate or deactivate during a maintenance session can be selected. The sequence of tools is relevant of the order to populate the information in database on the first time, and the way to use these information in a second time.
 
 The tools available from the list are listed below:
 

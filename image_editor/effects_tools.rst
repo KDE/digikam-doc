@@ -191,7 +191,7 @@ Oil Paint
 
 The digiKam Oil Paint filter gives your image the look of an oilpainting.
 
-This filter gives your digital images a nice oilpainting-like look. Images of nature and still lifes are well suited for this effect.
+This filter gives your digital images a nice oilpainting-like look. Images of nature and still lives are well suited for this effect.
 
 .. figure:: images/editor_oil_paint.webp
 

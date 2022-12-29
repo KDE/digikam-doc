@@ -30,7 +30,7 @@ With the Confirm when moving items to trash and Confirm when permanently deletin
 
 The editorial changes done through the right sidebar can be quietly applied by digiKam when setting the Apply changes in the right sidebar without confirmation option. Otherwise the changes must be applied by pressing the Apply changes button.
 
-The updates settings allows to tune how the check for new application versions avaialble online.
+The updates settings allows to tune how the check for new application versions available online.
 
 Appearance Settings
 -------------------
@@ -55,7 +55,7 @@ This section list the operations to perform on all grouped items depending on th
 Spellcheck Settings
 -------------------
 
-This section allows to control the speel-scheking operations done in background in all text edit widgets.
+This section allows to control the spellchecking operations done in background in all text edit widgets.
 
 .. figure:: images/setup_miscs_spellcheck.webp
 

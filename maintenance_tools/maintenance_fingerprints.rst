@@ -23,7 +23,7 @@ This process provides only one option to rebuild the contents in the database: *
 
 .. note::
 
-    This process can also be called from the Similary View from left sidebar by the button **Update Fingerprints**.
+    This process can also be called from the Similarity View from left sidebar by the button **Update Fingerprints**.
 
     .. figure:: images/maintenance_update_fingerprints.webp
 

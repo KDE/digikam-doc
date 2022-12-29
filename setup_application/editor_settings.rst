@@ -1,5 +1,5 @@
 .. meta::
-   :description: digiKam Ilage Editor Settings
+   :description: digiKam Image Editor Settings
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
 
 .. metadata-placeholder

@@ -21,4 +21,4 @@ Color schemes are supplied like themes to personalize digiKam main interface for
 
 .. note::
 
-    Dependening of the color theme used, it must be mandatory to restart application to load relevant icons-set working with color scheme.
+    Depending of the color theme used, it must be mandatory to restart application to load relevant icons-set working with color scheme.

@@ -33,7 +33,7 @@ Try and see if digiKam can auto-detect the camera; if not, you can set the camer
 
     You can choose any title you like for the camera in the setup and this title will be used in the main window Cameras menu. If you have more than one camera, you can add them through this setup interface.
 
-With the **Behavior** section, you can customize some main rules with your camera as how to deep in file to handle metadata, render high quality thubnails, use a default target album to download items, and to deal with alaready existing file-names while downloading.
+With the **Behavior** section, you can customize some main rules with your camera as how to deep in file to handle metadata, render high-quality thumbnails, use a default target album to download items, and to deal with already existing file-names while downloading.
 
 .. figure:: images/setup_camera_behavior.webp
 

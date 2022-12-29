@@ -25,6 +25,6 @@ Since many of the processes the maintenance tool can perform are time consuming 
 
 .. figure:: images/maintenance_common_options.webp
 
-The **Use the Last Saved Active Tools and Settings** allows to force to remmeber the options selection taken at last maintenance tool session.
+The **Use the Last Saved Active Tools and Settings** allows to force to remember the options selection taken at last maintenance tool session.
 
 

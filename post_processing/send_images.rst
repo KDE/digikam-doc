@@ -61,7 +61,7 @@ If you want to drop metadata, turn on **Remove all metadata** option.
 
 The next page will show a progress dialog given a feedback on the progress of your operation to prepare item before e-mailing. Press the **Cancel** button during this stage if you want to abort the process.
 
-When all jobs are completed, this dialog will not close automatically and you can consult the progress messages if any errors occured during this stage. The mail agent will be started automatically at the end.
+When all jobs are completed, this dialog will not close automatically and you can consult the progress messages if any errors occurred during this stage. The mail agent will be started automatically at the end.
 
 .. figure:: images/send_images_progress.webp
 

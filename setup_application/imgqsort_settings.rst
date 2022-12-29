@@ -19,7 +19,7 @@ These settings refer to the Image Quality Sorter tool which you can access via T
 
 .. figure:: images/setup_quality.webp
 
-In the nanual configuration mode, the four “Detect ...” options you can choose which kind of fault should be factored in by the Image Quality Sorter. Talking about factoring in: the factors for blur, noise and compression can set with the help of the three “... Weight” adjustment bars on the right.
+In the manual configuration mode, the four “Detect ...” options you can choose which kind of fault should be factored in by the Image Quality Sorter. Talking about factoring in: the factors for blur, noise and compression can set with the help of the three “... Weight” adjustment bars on the right.
 
 With the three “Assign ... Label ...” options you can decide to which image quality level a label should be assigned. Un-checking all three of them renders the Image Quality Sorter useless, of course. The thresholds for these levels can be set through the three “... threshold” adjustment bars. It will normally take some testing and trying out to find the settings that suits your needs. Note that the input, i.e. the images the process has to investigate, will have quite some influence. It's a difference whether you choose an album containing images which are all more or less o.k. and have only minor differences or if you present a collection of pictures where some of the pictures really have some bad blur, noise, ... You also have to consider at which point of your workflow you want to perform this operation. Right after importing the files from your camera is probably a good idea.
 

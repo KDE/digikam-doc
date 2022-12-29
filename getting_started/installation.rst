@@ -28,11 +28,11 @@ Minimum system requirements
 
 **GPU:** OpenGL 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible DirectX 9 or 11 drivers.
 
-**RAM:** At least 4 GB for standard photo precessing, 8 GB for large photo or panorama processing, 16 GB for depp-learning uses as with face detection and image quality sorting. Details see below.
+**RAM:** At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for depp-learning uses as with face detection and image quality sorting. Details see below.
 
 .. note::
 
-   If your computer is at the lower end of CPU and RAM requirements, you should use both :ref:`Small Thumnails Resolution <thumbnails_resolution>` and :ref:`Loading Embedded Preview <preview_resolution>` features to help reduce preview lag.
+   If your computer is at the lower end of CPU and RAM requirements, you should use both :ref:`Small Thumbnails Resolution <thumbnails_resolution>` and :ref:`Loading Embedded Preview <preview_resolution>` features to help reduce preview lag.
 
 digiKam on Linux
 -----------------

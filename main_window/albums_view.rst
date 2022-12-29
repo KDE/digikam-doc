@@ -24,7 +24,7 @@ You can switch between these sort orders using **Sort Albums** from the **View**
 Creating a New Album
 ~~~~~~~~~~~~~~~~~~~~
 
-There are a number of ways to create a new Album. You can create a new Album when you upload new photographs from the Camera using :menuselection:`Import --> Cameras`. You can also create a new empty Album with :menuselection:`Album --> New...` :kbd:`Ctrl+N` in the Albums view. As an additional option, you can create a new Album by importing an existing folder of photographs from your computer; just select :menuselection:`Import --> Add Folders...` from the menu bar and select the folder that you want to import. An Album will be created with the same name as the hard disk folder. You can use drag and drop to import a folder. Drag a folder icon, for example from your prefered files-manager. Then drop it on the album list on the left. A menu will appear that gives you the option to move or copy the folder into digiKam.
+There are a number of ways to create a new Album. You can create a new Album when you upload new photographs from the Camera using :menuselection:`Import --> Cameras`. You can also create a new empty Album with :menuselection:`Album --> New...` :kbd:`Ctrl+N` in the Albums view. As an additional option, you can create a new Album by importing an existing folder of photographs from your computer; just select :menuselection:`Import --> Add Folders...` from the menu bar and select the folder that you want to import. An Album will be created with the same name as the hard disk folder. You can use drag and drop to import a folder. Drag a folder icon, for example from your preferred files-manager. Then drop it on the album list on the left. A menu will appear that gives you the option to move or copy the folder into digiKam.
 
 Deleting an Album
 ~~~~~~~~~~~~~~~~~
@@ -36,7 +36,7 @@ Adding a Photograph to an Album
 
 Most of the time you will create new Albums and populate them with photographs directly from your camera using the Camera Tool. However, sometimes you may want to add a photograph that you already have on your computer to an existing Album. To add a photograph to an Album select :menuselection:`Import --> Add Images...` :kbd:`Ctrl+Alt+I` from the menu bar. Select a source folder from the dialog and click OK. An import window will open. Select the photographs that you want to add and choose **Download Selected** from the **Download** drop down menu. A dialog will open where you can choose the destination album. The photographs will be copied into the Album. **Download New** :kbd:`Ctrl+N` from the same menu will copy only those images which are not in the destination folder yet.
 
-Additionally, you can use drag and drop to import photographs. Drag the photographs icons, for example from your prefered file manager. Then drop it on the image list on the right hand side.
+Additionally, you can use drag and drop to import photographs. Drag the photographs icons, for example from your preferred file manager. Then drop it on the image list on the right hand side.
 
 If you have a scanner configured, you can also scan a photograph straight into an Album. Select menu entry :menuselection:`Import --> Import from Scanner...`.
 

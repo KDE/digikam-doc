@@ -24,6 +24,6 @@ This view allows to see the list of plugins available for different part of the 
 
 .. figure:: images/setup_plugins_generic.webp
 
-If you doucle-click on one plugin entry in a list, you will open a dialog showing details about the tool.
+If you double-click on one plugin entry in a list, you will open a dialog showing details about the tool.
 
 .. figure:: images/setup_plugins_loaders.webp

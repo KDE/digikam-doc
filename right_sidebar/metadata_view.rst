@@ -49,7 +49,7 @@ For each metadata section, a bar is available on the top of view with:
 
 .. note::
 
-    The metadata view preverve the filter settings depending of the file selected. This allow to compare quickly metadata contents between items to identify the differences.
+    The metadata view preserve the filter settings depending of the file selected. This allow to compare quickly metadata contents between items to identify the differences.
 
 EXIF Tags
 ~~~~~~~~~

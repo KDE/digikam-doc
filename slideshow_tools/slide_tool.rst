@@ -19,7 +19,7 @@ This tool render a series of items as a basic slide-show. To run this tool you c
 
 .. figure:: images/slide_button.webp
 
-The basic slideshow tool will render items on full screen without visual effects and without zomming support. It powerfull to review quickly album items.
+The basic slideshow tool will render items on full screen without visual effects and without zooming support. It powerfull to review quickly album items.
 This tool can play album contents in recursive mode with children albums if any.
 
 .. figure:: images/slide_view.webp
