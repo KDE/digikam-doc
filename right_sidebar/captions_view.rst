@@ -39,19 +39,19 @@ Title and caption editors are powerful tool which supports:
 
 The default language from an alternative strings stack is **x-default** and must be written by preference in English. If one strings must be enter in the stack, the x-default must be present in prior.
    
-After commenting, either choose the Apply button or go straight to the next image, the descriptions will be saved.
+After commenting, either choose the **Apply** button or go straight to the next image, the descriptions will be saved.
 
-Next to the Apply button there is the More button. From it you can either choose to read metadata from the selected file to the database, or the other way around, to write metadata to the files (the latter take place anyway if you chose a metadata setting so that all metadata is always saved to the images). 
+Next to the Apply button there is the **More** button. From it you can either choose to read metadata from the selected file to the database, or the other way around, to write metadata to the files (the latter take place anyway if you chose a metadata setting so that all metadata is always saved to the images). 
 
 Date and Time
 ~~~~~~~~~~~~~
 
-In the Date and Time section, which reflects the time of taking the photograph, you can change all values. From the date combo-box a calendar opens, and the time setting spin-box can also be written by directly typing the time. The dating is copied to the EXIF 'Date and Time' field. If you need to change a number of images for their creating time & date, there is a more comfortable method available in Batch Queue Manager. This latter option can be found under Image --> Adjust time & date.... Select the images to be changed in the main view and call the tool.
+In the Date and Time section, which reflects the time of taking the photograph, you can change all values. From the date combo-box a calendar opens, and the time setting spin-box can also be written by directly typing the time. The dating is copied to the EXIF 'Date and Time' field. If you need to change a number of images for their creating time & date, there is a more comfortable method available in Batch Queue Manager. This latter option can be found under :menuselection:`Image --> Adjust time & date...`. Select the images to be changed in the main view and call the tool.
 
 Labels
 ~~~~~~
 
-The Rating section displays a 0...5 star rating scheme that can be used in searches and sort orders. It can be applied by a single mouse click to the 5 stars in the sidebar or with a keyboard short-cut Ctrl+0...5. The rating from the sidebar is always applied to one image at a time. To rate a number of images, select them and pop-up the context menu (click with the right mouse button) to apply a common rating.
+The Rating section displays a 0...5 star rating scheme that can be used in searches and sort orders. It can be applied by a single mouse click to the 5 stars in the sidebar or with a keyboard short-cut :kbd:`Ctrl+0...5`. The rating from the sidebar is always applied to one image at a time. To rate a number of images, select them and pop-up the context menu (click with the right mouse button) to apply a common rating.
 
 The labels view allow to assign also the Color and the Pick tags that you can use in your workflow to classify items.
 
@@ -68,11 +68,11 @@ The tag tree will be adapted dynamically as a function of the search word as you
 
 The combo-box at the bottom is another ergonomic feature for easy tagging of an image series. As you apply different tags they will be memorized in this box for quick access.
 
-Otherwise tags are simply applied by checking the respective boxes in the tree. All tags of an image are transcribed into the XMP/IPTC 'keyword' data field.
+Otherwise tags are simply applied by checking the respective boxes in the tree. All tags of an image are transcribed into the XMP/IPTC *keywords* data field.
 
 .. note::
 
-   In case you have selected a number of images in the main view and you check a tag in the tag tree, this one is only applied to the highlighted image, and not to the whole selection. If you want to tag selections, refer to the Filters section. 
+   In case you have selected a number of images in the main view and you check a tag in the tag tree, this one is only applied to the highlighted image, and not to the whole selection. If you want to tag selections, refer to the :ref:`Filters <filters_view>` section. 
 
 Information View
 ~~~~~~~~~~~~~~~~
@@ -81,4 +81,4 @@ Information View
 
 The Information view allows to assign a template of textuals information to items in one pass. These information can be pupolated in Setup/Template dialog. They contains all strings descripting the contents, the scene, the authors, the rights, the place etc.
 
-For more details about Template, see the description of the Template management section.
+For more details about Template, see the description of the :ref:`Template Settings <templates_settings>` section.
