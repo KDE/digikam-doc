@@ -40,7 +40,7 @@ Under **Linux:** run `make epub`
 
 The EPUB ebook is generated in `build/epub`. Open the ebook file by double click `DigikamManual.epub`. It must look like this:
 
-[![](project/images/digikam_handbook_EPUB.png "EPUB Version of digiKam Handbook Shown in e-book Viewer")](project/images/digikam_handbook_EPUB.png)
+[![](project/images/handbook_EPUB.webp "EPUB Version of digiKam Handbook Shown in e-book Viewer")](project/images/handbook_EPUB.webp)
 
 ## Directories Hierarchy
 
