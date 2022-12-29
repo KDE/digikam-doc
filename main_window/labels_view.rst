@@ -25,7 +25,7 @@ The Labels View allows you to select photographs by the **Rating**, **Pick Label
 
     .. figure:: images/mainwindow_labels_captions_tab.webp
 
- You may select more than one label by :kbd:`Ctrl+left` click. The selected labels are connected by boolean AND, e.g. selecting Four Star and Yellow will display only photographs that have both labels assigned. You can perform even more sophisticated searches by using the **Filters** section of The :ref:`Right Sidebar <filters_view>`.
+You may select more than one label by :kbd:`Ctrl+left` click. The selected labels are connected by boolean AND, e.g. selecting Four Star and Yellow will display only photographs that have both labels assigned. You can perform even more sophisticated searches by using the **Filters** section of The :ref:`Right Sidebar <filters_view>`.
 
 .. figure:: images/mainwindow_labels_filters_tab.webp
 
