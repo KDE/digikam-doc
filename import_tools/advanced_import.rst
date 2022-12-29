@@ -10,7 +10,7 @@
 
 .. _advanced_import:
 
-Advanced Import Settigns
+Advanced Import Settings
 ========================
 
 .. contents::
