@@ -32,7 +32,7 @@ Under **Linux:** run `make html`
 
 The HTML is generated in `build/html`. Open the web document by double click `index.html`. It must look like this:
 
-[![](project/images/digikam_handbook_HTML.png "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/digikam_handbook_HTML.png)
+[![](project/images/handbook_HTML.webp "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/handbook_HTML.webp)
 
 ### Generate an EPUB E-book
 
