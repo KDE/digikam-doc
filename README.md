@@ -61,28 +61,41 @@ ReStructuredText Documentation implementation is located in top level directory 
 corresponding to the handbook sections. The root entry of the manual is **index.rst**.
 
 Each handbook section start with a .rst file from top level directory and a dedicated
-sub-directory with the same name including chapters .rst files and a nested **images** sub-directory to host
-screen-shots, taken in PNG format. For example, the **getting_started** section will be organized like this:
+sub-directory with the same name including chapters .rst files, a nested **images** sub-directory to host
+screen-shots, taken in WEBP format, and a nested **videos** sub-directory to host screen-casts in animated Gif format.
+For example, the **getting_started** section will be organized like this:
 
 ```
 ├── index.rst
 ├── getting_started.rst
 └── getting_started
     ├── images
-    │   ├── intro-firstrun-step1.webp
-    │   ├── intro-firstrun-step2.webp
-    │   ├── intro-firstrun-step3.webp
-    │   ├── intro-firstrun-step4.webp
-    │   ├── intro-firstrun-step5.webp
-    │   ├── intro-firstrun-step6.webp
-    │   ├── intro-firstrun-step7.webp
-    │   ├── intro-firstrun-step8.webp
-    │   ├── intro-firstrun-step9.webp
-    │   ├── intro-scanprogress.webp
-    │   └── intro-toolsinterface.webp
-    ├── introduction.rst
-    └── quick_start.rst
+    │   ├── firstrun_step1.webp
+    │   ├── firstrun_step2.webp
+    │   ├── firstrun_step3.webp
+    │   ├── firstrun_step4.webp
+    │   ├── firstrun_step5.webp
+    │   ├── firstrun_step6.webp
+    │   ├── firstrun_step7.webp
+    │   ├── firstrun_step8.webp
+    │   ├── firstrun_step9.webp
+    │   ├── macos_pkg_installer.webp
+    │   ├── macos_pkg_security.webp
+    │   ├── macos_pkg_warning.webp
+    │   ├── models_downloader.webp
+    │   ├── scan_progress.webp
+    │   └── tools_interface.webp
+    ├── installation.rst
+    ├── introduction.rst
+    ├── quick_start.rst
+    └── videos
+        └── appimage_startup.gif
+
 ```
+
+**getting_started.rst** is the root entry of the **Geting-Started** section of this manual.
+All others nested **.rst** files hosted in **getting_started** sub-directory are chapters in this section. 
+
 ### Sphinx Framework
 
 The Python based Sphinx documentation generator translates a set of reStructuredText source files into various output formats,
