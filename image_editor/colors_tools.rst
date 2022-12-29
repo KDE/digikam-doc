@@ -196,6 +196,8 @@ Using in this mode and the three Color Picker buttons will automatically adjust 
 
 Over Exposure Indicator option checks all color channel to see if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of channel level settings. This feature is available as an indicator in the target preview area and has no effect on final rendering.
 
+:: _exposure_correction
+
 Correcting Exposure
 -------------------
 

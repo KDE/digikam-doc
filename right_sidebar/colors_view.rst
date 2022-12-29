@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Right Sidebar Colors View
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, colors, histogram, icc, profile
 
 .. metadata-placeholder
 
@@ -15,7 +15,7 @@ Colors View
 
 .. contents::
 
-The colors sidebar has two sub tabs Color and ICC Profile. Here are more details about Color Management
+The colors sidebar has two sub tabs **Histogram** and **ICC Profile**. Here are more details about Color Management
 
 Histogram Viewer
 ~~~~~~~~~~~~~~~~
@@ -30,17 +30,17 @@ An image can be decomposed into **Red**, **Green** and **Blue** color channels. 
 
 The Histogram Viewer allows you to view each channel separately:
 
-    - Luminosity: shows the distribution of brightness values.
+    - **Luminosity**: shows the distribution of brightness values.
 
-    - Red, Green, Blue: show the distribution of intensity levels for the Red, Green, or Blue channels respectively.
+    - **Red**, **Green**, **Blue**: show the distribution of intensity levels for the Red, Green, or Blue channels respectively.
 
-    - Alpha: shows the distribution of opacity levels. If the layer is completely opaque or completely transparent, the histogram will consist of a single bar on the left or right edge.
+    - **Alpha**: shows the distribution of opacity levels. If the layer is completely opaque or completely transparent, the histogram will consist of a single bar on the left or right edge.
 
-    - Colors: shows the Red, Green, and Blue histograms superposed, so that you can see all of the color distribution information in a single view. 
+    - **Colors**: shows the **Red**, **Green**, and **Blue** histograms superposed, so that you can see all of the color distribution information in a single view.
 
-With the Scale option you can determine whether the histogram will be displayed using a linear or logarithmic Y axis. For images taken with a digital camera, the Linear mode is usually the most useful. However, for images that contain substantial areas of constant color a Linear histogram will often be dominated by a single bar. In this case a Logarithmic histogram will be more useful.
+With the **Scale** option you can determine whether the histogram will be displayed using a linear or logarithmic Y axis. For images taken with a digital camera, the **Linear** mode is usually the most useful. However, for images that contain substantial areas of constant color a **Linear** histogram will often be dominated by a single bar. In this case a **Logarithmic** histogram will be more useful.
 
-You can restrict the analysis of the Statistics field shown at the bottom of the dialog to a limited range of values if you wish. You can set the range in one of two ways:
+You can restrict the analysis of the **Statistics** field shown at the bottom of the dialog to a limited range of values if you wish. You can set the range in one of two ways:
 
     - Click and drag the pointer across the histogram display area, from the lowest level to the highest level of the range you want.
 
@@ -64,7 +64,7 @@ The statistics shown at the bottom of the Histogram Viewer describe the distribu
 
     - Alpha channel in the image.
 
-    - The source of the histogram, either Full Image or Image Region if you have selected an area of the image in the Editor.
+    - The source of the histogram, either **Full Image** or **Image Region** if you have selected an area of the image loaded in the Editor.
 
 How To Use an Histogram
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -78,24 +78,40 @@ Histograms are a graphical means to assess the accuracy of an image shown on the
     (3) : the highlights-tone on the right.
 
 .. figure:: images/sidebar_histogramdescription.webp
+    :alt:
+    :align: center
+
+    An Image Histogram in All Colors Mode
 
 The distribution of the graph, where the spikes and bulges are clustered, indicates whether the image is too dark, too bright, or well-balanced.
 
 With an under exposed photograph, the histogram will have a distribution of brightness that tends to be mostly on the left of the graph.
 
 .. figure:: images/sidebar_histogramsample1.webp
+    :alt:
+    :align: center
+
+    An Under Exposed Photograph
 
 With an over exposed photograph, the histogram will have the bulge showing the brightness distributed mostly towards the right of the graph.
 
 .. figure:: images/sidebar_histogramsample2.webp
+    :alt:
+    :align: center
+
+    An Over Exposed Photograph
 
 With a correctly exposed photograph, the histogram will have a distribution of brightness that will be most prominent near the center part of the graph.
 
 .. figure:: images/sidebar_histogramsample3.webp
+    :alt:
+    :align: center
+
+    A Correctly Exposed Photograph
 
 .. important:: Not all photographs have to exhibit this bulge in the center part of their histogram. Much depends on the subject of the photograph. In some cases, it might be appropriate for the histogram to show a peak at one end or the other, or both.
 
-The histogram is a reliable way of deciding whether or not a photograph is correctly exposed. Should the histogram show an over or under exposure, an Exposure Correction Tool should be used to fix the photograph.
+The histogram is a reliable way of deciding whether or not a photograph is correctly exposed. Should the histogram show an over or under exposure, an :ref:`Exposure Correction Tool <exposure_correction>` should be used to fix the photograph.
 
 ICC Profile Viewer
 ~~~~~~~~~~~~~~~~~~
