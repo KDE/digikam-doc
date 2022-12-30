@@ -234,7 +234,7 @@ Digital Asset Management
 
     .. container:: tile no-descr
 
-        :ref:`data_corruption`
+        :ref:`data_protection`
 
     .. container:: tile no-descr
 

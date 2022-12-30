@@ -8,7 +8,7 @@
 
    :license: Creative Commons License SA 4.0
 
-.. _data_corruption:
+.. _data_protection:
 
 Data Corruption and Loss
 ========================
@@ -18,7 +18,7 @@ Data Corruption and Loss
 Main factors of digital data loss
 ---------------------------------
 
-Of course we're not talking about losing BlueRays on the road or in a fire - that kind of loss is just the same as traditional paper copies or negatives. We are talking about problems with the so called "New Media".
+Of course we're not talking about losing BlueRays on the road or in a fire - that kind of loss is just the same as traditional paper copies or negatives. We are talking about problems with the so called *New Media*.
 
 Problems with digital data can roughly be categorized into the following areas of concern:
 
@@ -67,11 +67,11 @@ Best practice: burn them slowly with a good recorder on archive quality media in
 Hard disks (hard drives, HDD)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Disk manufacturers keep their statistics to themselves. A manufacturer guaranty buys you a new disk, but no data. Google for one has done a large scale study on HDD failure mechanisms: Disk Failures study
+Disk manufacturers keep their statistics to themselves. A manufacturer guaranty buys you a new disk, but no data. Google for one has done a large scale study on HDD failure mechanisms: `Disk Failures study <https://research.google.com/archive/disk_failures.pdf>`_.
 
 In a nutshell: Disks run longest when operating between 35°C and 45°C, at lower temperatures the error rates increases dramatically. Controller parts (electronics) are the foremost sources of failure, SMART does not diagnose any of this. Some SMART errors are indicative of imminent failure, in particular scan errors and relocation counts. Lifetime expectancy is 4-5 years.
 
-But all depends much on the real use case and some luck. For example I have a Fujitsu notebook that is running 24/7 since 1998, almost ten years without the slightest hick up. Just luck? In general and contrary to intuition or ecological considerations, running a hard drive permanently results in a longer lifetime than switching it on and off all the time. It has even been reported that aggressive power management spinning down the drive can harm it quickly. Making it working hard shortens the lifetime somewhat. The worst factors for HDD probably are vibrations, shocks, and cold temperatures.
+But all depends much on the real use case and some luck. For example We have a Fujitsu notebook that is running 24/7 since 1998, almost ten years without the slightest hick up. Just luck? In general and contrary to intuition or ecological considerations, running a hard drive permanently results in a longer lifetime than switching it on and off all the time. It has even been reported that aggressive power management spinning down the drive can harm it quickly. Making it working hard shortens the lifetime somewhat. The worst factors for HDD probably are vibrations, shocks, and cold temperatures.
 
 If your disk is making weird noises, normal file recovery software isn’t going to work. Do a quick backup if that is going to happen to you. (Use dd utility if possible, not a normal file backup since dd reads in a smooth, spiraling stream from beginning to end and doesn't stress the mechanics). There are specialist companies that can recover data from otherwise destroyed drive, but they are costly, plan for 2000$ minimum charge.
 
@@ -80,7 +80,7 @@ Power surges
 
 As much as 1% of all computers are affected by lightning and power surges every year.
 
-(This is about total data loss due to power surges. Of course you can have the occasional data loss due to power loss before saving files. But those losses can normally be restored without major difficulty.)
+This is about total data loss due to power surges. Of course you can have the occasional data loss due to power loss before saving files. But those losses can normally be restored without major difficulty.
 
 You don’t have to wait for the next thunderstorm to be concerned about how a sudden fluctuation in electric power may affect your computer system. Recent statistics have shown that as much as 63 percent of all electronics casualties are due to power problems, and most computers are subject to two or more power anomalies a day. Since power surges or blackouts can occur anywhere and at any time, it only makes sense to protect your computer by investing in some sort of surge protection device.
 
@@ -135,7 +135,7 @@ Amazon Web Services includes S3 - Simple Storage Service. With appropriate confi
 
 It is expensive compared to hard drives at home - 40 GB cost $75 a year, 400 GB cost $500. And you have to transfer the images over the (a comparatively slow) Internet.
 
-I think as a safeguard against localized data loss of the most essential images it's not a bad idea at all, but it is not a general backup solution, much too slow for that.
+We think as a safeguard against localized data loss of the most essential images it's not a bad idea at all, but it is not a general backup solution, much too slow for that.
 
 Google Photo, Flickr (Yahoo) and Foto-Community 23hq.com provide online storage services specialist on photographie. Their free space is limited to 1 GB and you don't want to have full resolution images online. But the pro-accounts offer more, in the case of Flickr, dramatically more. For a mere 25$ a year you get unlimited (sic! reality check needed here) space.
 
@@ -147,8 +147,10 @@ Transmission Errors
 Data does not only get lost from storage devices, it also gets lost when traveling inside the computer or across networks (although the network traffic itself via TCP is error protected). Errors occur on buses and in memory spaces. Consumer hardware has no protection against those bit errors, whereas it is worthwhile to look into such. You can buy ECC (error code correction) protected memory (which is expensive, granted). With ECC RAM at least the memory will be scrubbed for single bit errors and corrected. Double bit errors would escape that scheme but they occur too infrequently.
 
 .. figure:: images/dam_transmission.webp
+    :alt:
+    :align: center
 
-This diagram depicts the transmission chain elements in a computer, all transitions are susceptible to transmission errors. The zfs and btrfs file system at least ensure the OS to disk path of data integrity.
+This diagram depicts the transmission chain elements in a computer, all transitions are susceptible to transmission errors. The Linux ZFS and BTRFS file system at least ensure the OS to disk path of data integrity.
 
 The Byte Error Rate (BER) for memory and transmission channels is in the order of 1 in 10 Million (10E-7 bit). That just means that 1 in 3000 images has an error only due to transmission problems. Now how dramatic that is for an image is left to chance, it could mean that the image is destroyed or that a pixel somewhere changed its value, due to the compression used on almost all images one cannot predict the gravity of a single bit error impact. Often one sees some partial images instead of the full image.
 
@@ -157,8 +159,10 @@ The worst of all that is that nobody tells you when a transmission error occurs,
 Flaky power supplies are another source of transmission losses because they create interference with the data streams. With normal files systems those errors go unnoticed.
 
 .. figure:: images/dam_errors.webp
+    :alt:
+    :align: center
 
- Even if you are not overly concerned today with transmission problems, have a look into the future at illustration. Already in 2010 we'll see thousands of errors per year!
+Even if you are not overly concerned today with transmission problems, have a look into the future at illustration. Already in 2010 we'll see thousands of errors per year!
 
 Future of File-system with ZFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -205,7 +209,7 @@ I'd like to dispel some common myths:
 Make your budget: Data size, required storage volume estimation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Digital camera sensors are 1-2 aperture stops away from fundamental physical limitations. What I mean is this: as technology evolves, there is a natural limit to its progress. Sensitivity and noise characteristics for any kind of light sensor are not far from that limit.
+Digital camera sensors are 1-2 aperture stops away from fundamental physical limitations. What we mean is this: as technology evolves, there is a natural limit to its progress. Sensitivity and noise characteristics for any kind of light sensor are not far from that limit.
 
 Today's cameras tend towards 10 mega pixels sensors, although this resolution is already too high for compact cameras and deteriorates the end result. Given the sensor size and quality of optics, 6 mega pixels are optimum for compact cameras. Even DSLR cameras run into their limits at 10-12 mega pixels, for higher resolutions one has to go for full frame sensors (24x36mm) or even bigger formats.
 
@@ -234,22 +238,22 @@ There is another good aspect to the physical separation: as said above, panic is
 Some backup technicalities explained for laymen
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    Full Backup: A complete backup of all the files being backed up. It is a snapshot without history, it represents a full copy at one point in time.
+    - Full Backup: A complete backup of all the files being backed up. It is a snapshot without history, it represents a full copy at one point in time.
 
-    Differential Backup: A backup of only the files that have changed since the last full backup. Constitutes a full snapshot of two points in time: the full backup and the last differential one.
+    - Differential Backup: A backup of only the files that have changed since the last full backup. Constitutes a full snapshot of two points in time: the full backup and the last differential one.
 
-    Incremental Backup: A backup of only the files that have changed since last whatever backup. Constitutes multiple snapshots. You can recreate the original state at any point in time such a backup was made. This comes closest to a versioning system except that it is only sampled and not continuous. 
+    - Incremental Backup: A backup of only the files that have changed since last whatever backup. Constitutes multiple snapshots. You can recreate the original state at any point in time such a backup was made. This comes closest to a versioning system except that it is only sampled and not continuous. 
 
 Best practice: The IT-layman's backup cookbook
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    do a full backup in a external storage device.
+    - Do a full backup in a external storage device.
 
-    verify its data integrity and put it away (disaster control)
+    - Verify its data integrity and put it away (disaster control).
 
-    have another storage device for frequent backups
+    - Have another storage device for frequent backups.
 
-    swap the devices every other month after having verified data integrity
+    - Swap the devices every other month after having verified data integrity.
 
 A useful rsync recipe to backups
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -284,7 +288,7 @@ Keep up with technology
 
 As the future is unforeseeable by nature, everything said today is to be taken with caution, and to be reviewed as we advance. Unfortunately there is no shortcut possible to some basic vigilance. Every 5-8 years at least one should ask oneself the question of backwards compatibility of current systems. The less variants we used in the past the less questions are to be answered in the future.
 
-Of course every time you change your computer system (machine, operating system, applications, DRM) you have to ask yourself the same questions. Today, if you want to switch to Windows Vista, you have to ask yourself three times if you still can import your pictures, and, more important so, if you are ever able to move them onto some other system or machine. Chances are good that you cannot. I see many people struggling around me, because Vista enforces a strict DRM regime. How can you proof to Vista that you are actually the owner of your pictures copyright?
+Of course every time you change your computer system (machine, operating system, applications, DRM) you have to ask yourself the same questions. Today, if you want to switch to Windows, you have to ask yourself three times if you still can import your pictures, and, more important so, if you are ever able to move them onto some other system or machine. Chances are good that you cannot. We see many people struggling around us, because Windows enforces a strict DRM regime. How can you proof to Windows that you are actually the owner of your pictures copyright?
 
 Basically the questions should be answered along the line explained in this document: use and change to open standards supported by a manifold of applications.
 
@@ -308,56 +312,56 @@ Image formats have had a longer live time than office documents and are a bit le
 
 Open Source standards have the huge advantage of having an open specification. Even if one day in the future there'll be no software to read it anymore, one can recreate such software, a task becoming simpler every year.
 
-JPEG has been around for a while now, and whilst it's a lossy format losing a bit every time you make a modification and save it, it is ubiquitous, supports JFIF, EXIF, IPTC and XMP metadata, has good compression ratios and can be read by all imaging software. Because of its metadata limitation, lossy nature, absence of transparency and 8 bit color channel depth, we do not recommend it. JPEG2000 is better, can be employed lossless, but lacks in user base.
+**JPEG** has been around for a while now, and whilst it's a lossy format losing a bit every time you make a modification and save it, it is ubiquitous, supports JFIF, EXIF, IPTC and XMP metadata, has good compression ratios and can be read by all imaging software. Because of its metadata limitation, lossy nature, absence of transparency and 8 bit color channel depth, we do not recommend it. JPEG2000 is better, can be employed lossless, but lacks in user base.
 
-GIF is a proprietary. patented format and slowly disappearing from the market. Don't use it.
+**GIF** is a proprietary. patented format and slowly disappearing from the market. Don't use it.
 
-PNG has been invented as a Open Source standard to replace GIF, but it does much more. It is lossless, supports XMP, EXIF and IPTC metadata, 16 bit color encoding and full transparency. PNG can store gamma and chromaticity data for improved color matching on heterogeneous platforms. Its drawback are a relatively big footprints (but smaller than TIFF) and slow compression. We recommend it.
+**PNG** has been invented as a Open Source standard to replace GIF, but it does much more. It is lossless, supports XMP, EXIF and IPTC metadata, 16 bit color encoding and full transparency. PNG can store gamma and chromaticity data for improved color matching on heterogeneous platforms. Its drawback are a relatively big footprints (but smaller than TIFF) and slow compression. We recommend it.
 
-TIFF has been widely accepted as an image format. TIFF can exist in uncompressed form or in a container using a lossless compression algorithm (Deflate). It maintains high image quality but at the expense of much larger file sizes. Some cameras let you save your images in this format. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by all applications.
+**TIFF** has been widely accepted as an image format. TIFF can exist in uncompressed form or in a container using a lossless compression algorithm (Deflate). It maintains high image quality but at the expense of much larger file sizes. Some cameras let you save your images in this format. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by all applications.
 
-PGF "Progressive Graphics File" is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited to the web but at the moment few browsers can display it. For more information about the PGF format see the libPGF homepage.
+**PGF** "Progressive Graphics File" is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited to the web but at the moment few browsers can display it. For more information about the PGF format see the libPGF homepage.
 
-RAW format. Some, typically more expensive, cameras support RAW format shooting. The RAW format is not really an image standard at all, it is a container format which is different for every brand and camera model. RAW format images contain minimally processed data from the image sensor of a digital camera or image scanner. Raw image files are sometimes called digital negatives, as they fulfill the same role as film negatives in traditional chemical photography: that is, the negative is not directly usable as an image, but has all of the information needed to create an image. Storing photographs in a camera's RAW format provides for higher dynamic range and allows you to alter settings, such as white balance, after the photograph has been taken. Most professional photographers use RAW format, because it offers them maximum flexibility. The downside is that RAW image files can be very large indeed.
+**RAW** format. Some, typically more expensive, cameras support RAW format shooting. The RAW format is not really an image standard at all, it is a container format which is different for every brand and camera model. RAW format images contain minimally processed data from the image sensor of a digital camera or image scanner. Raw image files are sometimes called digital negatives, as they fulfill the same role as film negatives in traditional chemical photography: that is, the negative is not directly usable as an image, but has all of the information needed to create an image. Storing photographs in a camera's RAW format provides for higher dynamic range and allows you to alter settings, such as white balance, after the photograph has been taken. Most professional photographers use RAW format, because it offers them maximum flexibility. The downside is that RAW image files can be very large indeed.
 
-My recommendation is clearly to abstain from archiving in RAW format (as opposed to shooting in RAW format, which I recommend). It has all bad ingredients: many varieties and proprietary nature. It is clear that in a few years time you cannot use your old RAW files anymore. I have already seen people changing camera, losing their color profiles and having great difficulty to treat their old RAW files correctly. Better change to DNG format!
+We recommend clearly to **abstain from archiving in RAW format** (as opposed to shooting in RAW format, which we recommend). It has all bad ingredients: many varieties and proprietary nature. It is clear that in a few years time you cannot use your old RAW files anymore. We have already seen people changing camera, losing their color profiles and having great difficulty to treat their old RAW files correctly. Better change to DNG format!
 
-DNG Digital Negative file format is a royalty free and open RAW image format designed by Adobe Systems. DNG was a response to demand for a unifying camera raw file format. It is based on the TIFF/EP format, and mandates use of metadata. A handful of camera manufacturers have adopted DNG already, let's hope that the main contenders Canon and Nikon will use it one day.
+**DNG** Digital Negative file format is a royalty free and open RAW image format designed by Adobe Systems. DNG was a response to demand for a unifying camera raw file format. It is based on the TIFF/EP format, and mandates use of metadata. A handful of camera manufacturers have adopted DNG already, let's hope that the main contenders Canon and Nikon will use it one day.
 
-I strongly recommend converting RAW files to DNG for archiving. Despite the fact that DNG was created by Adobe, it is an open standard and widely embraced by the Open Source community (which is usually a good indicator of perennial properties). Some manufacturers have already adopted DNG as RAW format. And last not least, Adobe is the most important source of graphical software today, and they of course support their own invention. It is an ideal archival format, the raw sensor data will be preserved as such in TIFF format inside DNG, so that the risk associated with proprietary RAW formats is alleviated. All of this makes migration to another operating system a no-brainer. In the near future we'll see 'non-destructive editing', where files are not changed anymore but rather all editing steps will be recorded (into the DNG as it were). When you open such a file again, the editing script will be replayed. This takes computation power, but it is promising as it leaves the original intact and computing power increases all the time.
+We strongly recommend converting RAW files to DNG for archiving. Despite the fact that DNG was created by Adobe, it is an open standard and widely embraced by the Open Source community (which is usually a good indicator of perennial properties). Some manufacturers have already adopted DNG as RAW format. And last not least, Adobe is the most important source of graphical software today, and they of course support their own invention. It is an ideal archival format, the raw sensor data will be preserved as such in TIFF format inside DNG, so that the risk associated with proprietary RAW formats is alleviated. All of this makes migration to another operating system a no-brainer. In the near future we'll see 'non-destructive editing', where files are not changed anymore but rather all editing steps will be recorded (into the DNG as it were). When you open such a file again, the editing script will be replayed. This takes computation power, but it is promising as it leaves the original intact and computing power increases all the time.
 
-XML (Extensible Mark-up Language) or RDF (Resource Description Framework). XML is like HTML, but where HTML is mostly concerned with the presentation of data, XML is concerned with the "representation" of data. On top of that, XML is non-proprietary, operating-system-independent, fairly simple to interpret, text-based and cheap. RDF is the WC3's solution to integrate a variety of different applications such as library catalogs, world-wide directories, news feeds, software, as well as collections of music, images, and events using XML as an interchange syntax. Together the specifications provide a method that uses a lightweight ontology based on the Dublin Core which also supports the "Semantic Web" (easy exchange of knowledge on the Web).
+**XML** (Extensible Mark-up Language) or **RDF** (Resource Description Framework). XML is like HTML, but where HTML is mostly concerned with the presentation of data, XML is concerned with the "representation" of data. On top of that, XML is non-proprietary, operating-system-independent, fairly simple to interpret, text-based and cheap. RDF is the WC3's solution to integrate a variety of different applications such as library catalogs, world-wide directories, news feeds, software, as well as collections of music, images, and events using XML as an interchange syntax. Together the specifications provide a method that uses a lightweight ontology based on the Dublin Core which also supports the "Semantic Web" (easy exchange of knowledge on the Web).
 
 IPTC goes XMP
 ~~~~~~~~~~~~~
 
 That's probably one of the reasons why, around 2001, that Adobe introduced its XML based XMP technology to replace the "Image resource block" technology of the nineties. XMP stands for "Extensible Metadata Platform", a mixture of XML and RDF. It is a labeling technology that lets users embed data about a file in the file itself, the file info is saved using the extension".xmp" (signifying the use of XML/RDF).
 
-XMP. As much as ODF will be readable forever (since its containing text is written in clear text), XMP will preserve your metadata in a clearly understandable format XML. No danger here of not being able to read it later. It can be embedded into the image files or as a separate accompanying file (sidecar concept). XMP can be used in PDF, JPEG, JPEG2000, GIF, PNG, HTML, TIFF, Adobe Illustrator, PSD, PostScript, and Encapsulated PostScript. In a typical edited JPEG file, XMP information is typically included alongside Exif and IPTC data.
+**XMP**. As much as ODF will be readable forever (since its containing text is written in clear text), XMP will preserve your metadata in a clearly understandable format XML. No danger here of not being able to read it later. It can be embedded into the image files or as a separate accompanying file (sidecar concept). XMP can be used in PDF, JPEG, JPEG2000, GIF, PNG, HTML, TIFF, Adobe Illustrator, PSD, PostScript, and Encapsulated PostScript. In a typical edited JPEG file, XMP information is typically included alongside Exif and IPTC data.
 
 Embedding metadata in files allows easy sharing and transfer of files across products, vendors, platforms, customers, without metadata getting lost. The most common metadata tags recorded in XMP data are those from the Dublin Core Metadata Initiative, which include things like title, description, creator, and so on. The standard is designed to be extensible, allowing users to add their own custom types of metadata into the XMP data. XMP generally does not allow binary data types to be embedded. This means that any binary data one wants to carry in XMP, such as thumbnail images, must be encoded in some XML-friendly format, such as Base64.
 
-Many photographers prefer keeping an original of their shots (mostly RAW) for the archive. XMP suits that approach as it keeps metadata separate from the image file. I do not share this point of view. There could be problems linking metadata file and image file, and as said above, RAW formats will become obsolete. I recommend using DNG as a container and putting everything inside.
+Many photographers prefer keeping an original of their shots (mostly RAW) for the archive. XMP suits that approach as it keeps metadata separate from the image file. We do not share this point of view. There could be problems linking metadata file and image file, and as said above, RAW formats will become obsolete. We recommend using DNG as a container and putting everything inside.
 
-The Dublin Core Metadata Initiative is an open organization engaged in the development of interoperable online metadata standards that support a broad range of purposes and business models. DCMI's activities include work on architecture and modeling, discussions and collaborative work in DCMI Communities and DCMI Task Groups, annual conferences and workshops, standards liaison, and educational efforts to promote widespread acceptance of metadata standards and practices.
+The `Dublin Core Metadata Initiative <https://www.dublincore.org/>`_ is an open organization engaged in the development of interoperable online metadata standards that support a broad range of purposes and business models. DCMI's activities include work on architecture and modeling, discussions and collaborative work in DCMI Communities and DCMI Task Groups, annual conferences and workshops, standards liaison, and educational efforts to promote widespread acceptance of metadata standards and practices.
 
 Best practice: Data protection
 ------------------------------
 
-    Use surge protectors (UL 1449 standard), possibly combined with a UPS
+    - Use surge protectors (UL 1449 standard), possibly combined with a UPS.
 
-    use ECC memory to verify correct data transmission (even just saving files)
+    - Use ECC memory to verify correct data transmission (even just saving files).
 
-    watch your hard drives (temperature, noise...), make backups
+    - Watch your hard drives (temperature, noise...), make backups.
 
-    Keep backups at another location, locked up, use web storage space
+    - Keep backups at another location, locked up, use web storage space.
 
-    use archival media and burners
+    - Use archival media and burners.
 
-    Don't panic in case of data loss, explain your recovery plan to a layperson
+    - Don't panic in case of data loss, explain your recovery plan to a layperson.
 
-    choose you file system, partitions, folders to cater for easy scalability
+    - Choose you file system, partitions, folders to cater for easy scalability.
 
-    Use open, non-proprietary standards to manage and save photographs
+    - Use open, non-proprietary standards to manage and save photographs.
 
-    Do a technology/migration review at least every 5 years
+    - Do a technology/migration review at least every 5 years.

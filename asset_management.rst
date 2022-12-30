@@ -24,5 +24,5 @@ This section explain how to apply a digital asset Management in digiKam.
    asset_management/dam_overview.rst
    asset_management/organize_find.rst
    asset_management/authorship_copyright.rst
-   asset_management/data_corruption.rst
+   asset_management/data_protection.rst
    asset_management/dam_workflow.rst
