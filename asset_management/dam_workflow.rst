@@ -1,6 +1,6 @@
 .. meta::
    :description: A Typical Digital Asset Management Workflow
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, digitla, asset, management, workflow
 
 .. metadata-placeholder
 
@@ -31,6 +31,8 @@ DAM Workflow
 
 - Run the routine backup with following data-integrity checks.
 
-- Protect processed images for copyrights with Digital Watermarking. Export to web galleries, slide shows, MPEG encode, contact sheets, printing etc.
+- Protect processed images for copyrights with Digital Watermarking. Export to web galleries, slide shows, MPEG encode, contact sheets, printing, etc.
 
 .. figure:: images/dam_workflow.webp
+    :alt:
+    :align: center
