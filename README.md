@@ -46,9 +46,10 @@ The EPUB ebook is generated in `build/epub`. Open the ebook file by double click
 
 - LICENSES  : all licenses used in the project.
 - build     : temporary dir created when documentation is compiled.
-- ressources: Sphinx templates customization.
-- po        : link to handbook translations files.
+- locale    : link to updated handbook translations files.
+- po        : Obsolete, not used.
 - project   : some helpers scripts.
+- ressources: Sphinx templates customization.
 - tests     : scripts to test repository contents with CI
 
 All others directories are used to host sections of the documentation implmeented in ReStructuredText format.
@@ -284,7 +285,7 @@ maintenance scripts to extract strings and exported to dedicated containers for 
 In the background, a [top level script](https://invent.kde.org/sysadmin/l10n-scripty/-/blob/master/process-static-messages.sh) from **l10n-scripty** repository call **StaticMessages.sh** script from this repository.
 
 When translations are updated by the translator teams, files are send back by other maintenance scripts to this project,
-in goal to compile internationalized versions of ReStructuredText files. These files are linked in po/ sub-directories
+in goal to compile internationalized versions of ReStructuredText files. These files are linked in **locale/** sub-directories
 from this project for conversion to HTML/EPUB.
 
 This project is not involved in the translations workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
