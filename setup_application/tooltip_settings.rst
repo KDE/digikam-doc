@@ -19,6 +19,6 @@ This setup page covers all options of information appearing when the mouse hover
 
 .. figure:: images/setup_tooltip.webp
 
-This example present the information displayed in a tooltip over an icon with the relevant settings done in the configuration page. 
+This example presents the information displayed in a tooltip over an icon with the relevant settings done in the configuration page. 
 
 .. figure:: images/setup_tooltip_icon.webp
