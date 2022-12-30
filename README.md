@@ -275,26 +275,31 @@ GIFa files must be hosted in **videos/** sub-folders from each documentation sec
 
 ### Translations
 
-The documentations are internationalized by KDE translator teams. In this repository, only the native English
-version is maintained and text is written in ReStructuredText containers. These files are parsed daily by
-maintenance scripts which extract strings to translate. Processed contents are exported to dedicated
-containers for translators.
+#### Overview
 
-The daily script is hosted in **l10n-scripty** repository and call **StaticMessages.sh** from there through [this script](https://invent.kde.org/sysadmin/l10n-scripty/-/blob/master/process-static-messages.sh).
+The documentations are internationalized by KDE translator teams. In this repository, only the native English
+version is maintained and text is written in ReStructuredText containers. These files are daily parsed by
+maintenance scripts to extract strings and exported to dedicated containers for translators.
+
+In the background, a [top level script](https://invent.kde.org/sysadmin/l10n-scripty/-/blob/master/process-static-messages.sh) from **l10n-scripty** repository call **StaticMessages.sh** script from this repository.
 
 When translations are updated by the translator teams, files are send back by other maintenance scripts to this project,
-in order to compile internationalized versions of ReStructuredText files. These files are linked in po/ sub-directories
+in goal to compile internationalized versions of ReStructuredText files. These files are linked in po/ sub-directories
 from this project for conversion to HTML/EPUB.
 
-This project is not involved in the translation workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
+This project is not involved in the translations workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
 if you want to contribute to the internationalization.
 
 The template files to translate for this documentation must be located on [this i10n Subversion repository](https://websvn.kde.org/trunk/l10n-kf5/templates/messages/digikam-doc/).
 All POT file-names starts with **docs_digikam_org** prefix.
 
-The status of the digiKam documentation translations is available [here](https://l10n.kde.org/stats/doc/trunk-kf5/package/digikam-doc/).
+#### How to add a new target language
 
-The infrastrusture configuration to rule translations is located in docs-digikam-org section [of this file](https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json).
+The status of the digiKam documentation translations is available [here](https://l10n.kde.org/stats/doc/trunk-kf5/package/digikam-doc/).
+When a translation is complete, corresponding language can be listed as suitable in documentation web-site, Two files needs to be patched:
+
+- The section named **docs-digikam-org** from the [Json infrastrusture configuration](https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json) dedicated to rule translations.
+- The **alllang** list from the **resources/static/js/version_switch.js** JavaScript file located in this repository.
 
 ### Rationale
 
