@@ -1,0 +1,2006 @@
+# Copyright (C) licensed under the  <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License SA 4.0</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+#
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: Digikam Manual 8.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-29 00:45+0000\n"
+"PO-Revision-Date: 2022-12-29 13:49+0100\n"
+"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.12.0\n"
+
+#: ../../image_editor/enhancement_tools.rst:1
+msgid "digiKam Image Editor Enhancement Tools"
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free,"
+" learn, easy"
+msgstr ""
+"digiKam, documentatie, gebruikershandleiding, fotobeheer, open-source, "
+"vrij, leren, gemakkelijk"
+
+#: ../../image_editor/enhancement_tools.rst:14
+msgid "Enhancement Tools"
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:16
+msgid "Contents"
+msgstr "Inhoud"
+
+#: ../../image_editor/enhancement_tools.rst:19
+msgid "Lens Distortion Correction"
+msgstr "Lensvervorming corrigeren"
+
+#: ../../image_editor/enhancement_tools.rst:21
+msgid ""
+"digiKam The Lens Distortion is a tool to correct spherical lens"
+" aberrations on the photos."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:23
+#, fuzzy
+msgid ""
+"Barrel distortion is associated with wide angle (or minimal zoom) lenses."
+" It causes the images to appear slightly spherical (curved outward) like"
+" a barrel. You can notice this when you have straight features close to"
+" the image's peripheral sides. Pincushion distortion is the opposite"
+" defect and is associated with Telephoto lenses (maximum zoom) or"
+" underwater images. The images appear pinched (bent inward) toward the"
+" center. The Pincushion is often less noticeable than barrel but are"
+" equally visible near the edges. These distortions can easily be"
+" eliminated without visible loss in quality with this tool."
+msgstr ""
+"<emphasis>Tonvormige lensvervorming</emphasis> wordt vaak in verband "
+"gebracht met groothoek (of minimale zoom) lenzen. Het zorgt ervoor dat"
+" foto"
+"´s een beetje bolvormig lijken (naar buiten gebogen) zoals een ton. U"
+" kunt "
+"dit opmerken als er rechte voorwerpen vlakbij de randen van de foto te"
+" zien "
+"zijn. <emphasis>Kussenvormige lensvervorming</emphasis> is het "
+"tegenovergestelde defect en wordt vaak in verband gebracht met telelenzen "
+"(maximum zoom) of onderwater fotografie. De foto´s lijken samengeknepen "
+"(naar binnen gebogen) naar het middelpunt. De kussen is meestal minder "
+"zichtbaar dan ton maar vlakbij de randen net zo goed zichtbaar. Deze "
+"vervormingen kunt u makkelijk met dit gereedschap verwijderen zonder "
+"zichtbaar kwaliteitsverlies,"
+
+#: ../../image_editor/enhancement_tools.rst:27
+#, fuzzy
+msgid ""
+"This tool treats the geometrical distortions. Chromatic aberrations will"
+" not be corrected by this tool."
+msgstr ""
+"Dit gereedschap behandeld geometrische vervormingen. Dit gereedschap"
+" bewerkt "
+"geen chromatische afwijkingen."
+
+#: ../../image_editor/enhancement_tools.rst:29
+msgid ""
+"The following figures explain the main types of geometrical distortions:"
+msgstr ""
+"De volgende afbeeldingen tonen de verschillende soorten geometrische "
+"vervormingen:"
+
+#: ../../image_editor/enhancement_tools.rst:31
+msgid "(1): pincushion distortion."
+msgstr "(1): kussenvormige lensvervorming."
+
+#: ../../image_editor/enhancement_tools.rst:33
+msgid "(2): no distortion."
+msgstr "(2): geen vervorming."
+
+#: ../../image_editor/enhancement_tools.rst:35
+msgid "(3): barrel distortion."
+msgstr "(3): tonvormige lensvervorming."
+
+#: ../../image_editor/enhancement_tools.rst:41
+#, fuzzy
+msgid ""
+"A bit of explanation first. The geometrical corrections use 4th-order"
+" polynomial coefficients:"
+msgstr ""
+"Eerst nog enige uitleg. De geometrische correcties gebruiken vierde order "
+"polynoom coëfficiënten."
+
+#: ../../image_editor/enhancement_tools.rst:43
+#, fuzzy
+msgid ""
+"The 1st-order coefficient changes the size of the image. The tool calls"
+" this Zoom."
+msgstr ""
+"Het 1e-order coëfficiënt wijzigt het formaat van de foto. In het"
+" programma "
+"heet dit <guilabel>Zoom</guilabel>."
+
+#: ../../image_editor/enhancement_tools.rst:45
+#, fuzzy
+msgid ""
+"The 2nd-order coefficient treats the main geometrical distortion of"
+" lenses and can correct the convex or concave shape of the image."
+msgstr ""
+"Het 2de-order coëfficiënt behandeld de belangrijkste geometrische "
+"vervormingen van lenzen en kan de convexe of concave vorm van een foto "
+"corrigeren."
+
+#: ../../image_editor/enhancement_tools.rst:47
+#, fuzzy
+msgid ""
+"The 3rd-order coefficient has a similar rounding effect but levels off"
+" towards the edges. This correction is not employed in the tool."
+msgstr ""
+"Het 3de-order coëfficiënt heeft een vergelijkbaar effect maar werkt"
+" minder "
+"nabij de randen. Deze correctie is niet toegepast in dit gereedschap."
+
+#: ../../image_editor/enhancement_tools.rst:49
+#, fuzzy
+msgid ""
+"The 4th-order coefficient corrects the far edges inversely to the"
+" 2nd-order rounding. Combining it with the 2nd-order correction the"
+" geometrical distortions can be almost completely eliminated."
+msgstr ""
+"Het 4de-order coëfficiënt corrigeert de uiterste hoeken omgekeerd met de"
+" Het "
+"2de coëfficiënt. Gecombineerd met de 2de coëfficiënt correctie kan het"
+" bijna "
+"compleet de geometrische vervormingen elimineren."
+
+#: ../../image_editor/enhancement_tools.rst:53
+msgid "Four sliders let you set the distortion correction filter:"
+msgstr ""
+"Met vier schuifknoppen stelt u het correctiefilter voor vervorming in:"
+
+#: ../../image_editor/enhancement_tools.rst:55
+#, fuzzy
+msgid ""
+"Main: this value controls the amount of 2nd-order distortion. Negative"
+" values correct barrel distortions, while positive values correct"
+" pincushion distortion."
+msgstr ""
+"<guilabel>Hoofd</guilabel>: Deze waarde bepaalt de hoeveelheid 2de "
+"coëfficiënt vervorming. Negatieve waarden corrigeren tonvormige "
+"lensvervorming en positieve waarden corrigeren kussenvormige"
+" lensvervorming."
+
+#: ../../image_editor/enhancement_tools.rst:57
+#, fuzzy
+msgid ""
+"Edge: this value controls the amount of 4th-order distortion. The Edge"
+" control has more effect at the edges of the image than at the center."
+" For most lenses, the Edge parameter has the opposite sign of the Main"
+" parameter."
+msgstr ""
+"<guilabel>Rand</guilabel>: Deze waarde bepaalt de 4de-orde vervorming. De "
+"rand-instellingen hebben meer effect lang de randen van de foto dan in"
+" het "
+"middelpunt. Bij de meeste lenzen heeft de <guilabel>Rand</guilabel> "
+"parameter het tegenovergestelde effect van de <guilabel>Hoofd</guilabel> "
+"parameter."
+
+#: ../../image_editor/enhancement_tools.rst:59
+#, fuzzy
+msgid ""
+"Zoom: this value rescales the overall image size (1st-order correction)."
+" Negative values zoom out of the image, while positive values zoom in."
+msgstr ""
+"<guilabel>Zoomen</guilabel>: deze waarde herschaalt de totale "
+"afbeeldingsgrootte (eerste-orde correctie). Negatieve waarden zoomen uit"
+" en "
+"positieve waarden zoomen in."
+
+#: ../../image_editor/enhancement_tools.rst:61
+#, fuzzy
+msgid ""
+"Brighten: this control adjusts the brightness in image corners. Negative"
+" values decrease the brightness image corners, while positive values"
+" increase it."
+msgstr ""
+"<guilabel>Helder maken</guilabel>: deze waarde stelt de helderheid van de "
+"afbeeldingshoeken bij. Negatieve waarden verminderen de helderheid van de "
+"afbeeldingshoeken en positieve waarden verhogen het."
+
+#: ../../image_editor/enhancement_tools.rst:63
+#, fuzzy
+msgid ""
+"To help you to choose the best filter settings, the widget dialog"
+" illustrates with a thumbnail preview the distortion correction applied"
+" to a crossed mesh pattern. The values you apply to your image will be"
+" saved and come up with the same values as default the next time you call"
+" the tool."
+msgstr ""
+"Om u te ondersteunen bij het kiezen van de meest geschikte filter "
+"instellingen, is er in een klein voorbeeldje met een ruitjespatroon te"
+" zien "
+"toont wat het ingestelde correctie gaat doen. De ingestelde waarden"
+" worden "
+"voor de volgende keer bewaart en weer geladen als u de volgende keer dit "
+"dialoogvenster opent."
+
+#: ../../image_editor/enhancement_tools.rst:67
+#, fuzzy
+msgid ""
+"The barrel-pincushion correction should be done before any crop or size"
+" changes (including perspective correction). In fact the"
+" Barrel-Pincushion corrections should be the very first step on the"
+" original image. If you crop the image and then use barrel correction the"
+" effect would be obviously wrong."
+msgstr ""
+"De ton-kussen correctie moet u uitvoeren voordat u enige afsnijd of"
+" formaat "
+"wijziging (inclusief perspectief correctie) uitvoert. Eigenlijk moeten"
+" ton-"
+"kussen correcties de eerste bewerking op het originele foto zijn. Als u "
+"eerst de foto bijsnijdt en vervolgens de ton-correctie uitvoert dan zal"
+" het "
+"resultaat duidelijk fout zijn."
+
+#: ../../image_editor/enhancement_tools.rst:69
+msgid ""
+"To help you finding the best correction the tool provides a vertical and"
+" horizontal guide. Move the mouse cursor in the image preview to display"
+" the dashed lines guide. Move the cursor to an important place in the"
+" image like the sea level or a building border and press the left mouse"
+" button for freeze the dashed lines position. Now, adjust the"
+" barrel/pincushion correction to align with the guide."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:71
+#, fuzzy
+msgid ""
+"When using pincushion correction the resulting image will have a black"
+" border in the corner. You will need to cut this out with a crop tool"
+" available in Transform --> Crop Image Editor menu or via the zoom slider"
+" of this dialog."
+msgstr ""
+"Na het gebruik van de ton-kussen correctie, zal het resultaat een zwarte "
+"rand in de hoeken hebben. U kan dit afsnijden met een"
+" bijsnijd-gereedschap "
+"dat beschikbaar is via het menuitem <menuchoice> <guimenu>Transformeren</"
+"guimenu> <guimenuitem>Bijsnijden</guimenuitem> </menuchoice> of via the"
+" zoom "
+"schuifknoppen in dit dialoog."
+
+#: ../../image_editor/enhancement_tools.rst:73
+#, fuzzy
+msgid ""
+"On most images using the barrel correction is enough, however with some"
+" shots such as front images, frames, paintings, the next logical step is"
+" to use perspective correction to make all the angles 90 degrees. Note"
+" that when you hold your camera by hand you almost always introduce some"
+" kind of slight perspective distortion."
+msgstr ""
+"Bij de meeste foto´s is de ton-correctie voldoende, maar bij sommige"
+" foto´s "
+"van front-afbeeldingen, kaders, schilderijen is het logisch om de"
+" volgende "
+"stap van perspectief-correctie uit te voeren zodat alle hoeken weer 90 "
+"graden zijn. Vergeet niet dat bij het maken van foto´s uit de hand, u"
+" bijna "
+"altijd een vorm van perspectief vervorming introduceert."
+
+#: ../../image_editor/enhancement_tools.rst:76
+msgid "Hot Pixels Correction"
+msgstr "HotPixels-correctie"
+
+#: ../../image_editor/enhancement_tools.rst:79
+#: ../../image_editor/enhancement_tools.rst:228
+#: ../../image_editor/enhancement_tools.rst:297
+msgid "Overview"
+msgstr "Overzicht"
+
+#: ../../image_editor/enhancement_tools.rst:81
+#, fuzzy
+msgid ""
+"digiKam The Hot Pixels tool facilitates removing hot pixels from"
+" photographs taken with a CCD camera. It uses algorithms from the"
+" JPEGPixi project which are copyrighted by Martin Dickopp."
+msgstr ""
+"Het hulpmiddel <emphasis>Hot Pixels</emphasis> helpt bij het verwijderen"
+" van "
+"hot pixels van een met een CCD-camera genomen foto. Het gebruikt"
+" algoritmes "
+"van het JPEGPixi project met copyright bij Martin Dickopp."
+
+#: ../../image_editor/enhancement_tools.rst:83
+msgid ""
+"Most current digital cameras produce images with several brightly colored"
+" \"bad pixels\" when using slow shutter speeds. Night images can be"
+" ruined by these \"bad pixels\". There are three different types of \"bad"
+" pixels\":"
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:85
+msgid ""
+"Stuck pixels: it's a pixel that always reads high or is always on to"
+" maximum power on all exposures. This produces a bright pixel usually of"
+" red, blue or green color in the final image. A stuck pixel will occur"
+" regardless of shutter speed, aperture size or any other user settings."
+" It will occur on a normal exposure and tends to be more obvious under"
+" bright condition."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:87
+msgid ""
+"Dead pixels: it's a pixel that reads zero or is always off on all"
+" exposures. This state produces a black pixel in the final image. Similar"
+" to stuck pixel, a dead pixel will occur regardless of shutter speed,"
+" aperture size or any other user settings."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:89
+msgid ""
+"Hot pixels: it's a pixel that reads high (bright) on longer exposures as"
+" white, red, or green color. The longer the exposure time, the more"
+" visible hot pixels will become. These pixels will not be visible in"
+" bright conditions."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:91
+msgid ""
+"Note that stuck or dead pixels will occur at the same location for all"
+" images. If the location of the stuck or dead pixel occurs at different"
+" locations, it may be a Hot Pixel."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:93
+#, fuzzy
+msgid ""
+"Stuck, dead or hot pixels are a problem in particular when shooting in"
+" high quality raw mode since many cameras have built-in hot pixel"
+" suppression applied automatically when JPEG compression is used (which"
+" is mostly the case)."
+msgstr ""
+"Stuck, dead en hot pixels zijn met name een probleem wanneer u foto´s "
+"opslaat in hoge kwaliteit raw mode omdat veel camera´s een ingebouwde hot "
+"pixel onderdrukking heeft die automatisch werkt bij gebruik van JPEG "
+"compressie (wat meestal het geval is)."
+
+#: ../../image_editor/enhancement_tools.rst:95
+msgid ""
+"This tool can be used to fix the \"Hot pixels\" and \"Stuck Pixels\" on a"
+" photograph using a black frame subtraction method. There is no yet a"
+" manual editor to select bad pixels."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:98
+msgid "Create the Black Frames"
+msgstr "De zwart-frames aanmaken"
+
+#: ../../image_editor/enhancement_tools.rst:100
+msgid ""
+"The Black Frame subtraction method is the most accurate \"Hot Pixels\""
+" and \"Stuck Pixels\" removal. First you have to create a \"Black Frame\""
+" as a reference. This is easy to do. When you finish taking your long"
+" exposure shots, put a lens cap on the camera and take one \"dark\" image"
+" with the same exposure time as the images before. This image will be all"
+" dark, but with close examination you will see that it has the Hot and"
+" Stuck Pixels (colored dots). These are positioned at the same places as"
+" on your previous shots."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:102
+#, fuzzy
+msgid ""
+"Load this file to the widget using the Black Frame button. The tool will"
+" process an automatic detection of Hot and Stuck Pixels. They will be"
+" highlighted in the control panel preview areas."
+msgstr ""
+"U kunt dit bestand laden door het gebruik van de knop <guilabel"
+">Zwart-frame</"
+"guilabel>. Het hulpmiddel zal een automatisch detectie van Hot en Stuck "
+"Pixels opstarten. Deze zullen oplichten in het voorbeeldvenster van het "
+"controle paneel."
+
+#: ../../image_editor/enhancement_tools.rst:106
+#, fuzzy
+msgid ""
+"If you use an old digital camera, it is important to re-shoot the Black"
+" Frame next time you are taking a long exposure images to detect new Hot"
+" and Stuck Pixels on CCD defects."
+msgstr ""
+"Als u een oude digitale camera gebruikt, dan is het belangrijk dat u als"
+" u "
+"de volgende keer een foto met lange belichtingstijden maakt opnieuw een "
+"zwart-frame foto maakt om nieuwe Hot en Stuck Pixels te detecteren op een "
+"CCD met defecten."
+
+#: ../../image_editor/enhancement_tools.rst:109
+msgid "Using the hotpixel tool"
+msgstr "Het gebruik van het hotpixel hulpmiddel"
+
+#: ../../image_editor/enhancement_tools.rst:113
+#, fuzzy
+msgid ""
+"At first, as explained in the previous section, you need to load a Black"
+" Frame corresponding to the image to correct. An automatic parsing will"
+" be processed on the Black Frame to find bad pixels. Note that the widget"
+" will remember the previous Black Frame used on the last session and it"
+" will be re-opened automatically with the next session."
+msgstr ""
+"Om te beginnen, zoals uitgelegd in de vorige sectie, moet u een"
+" zwart-frame "
+"laden dat overeenkomt met de foto die u wilt corrigeren. Deze zal "
+"automatisch worden geanalyseerd om de bad pixels te vinden. Merk op dat"
+" het "
+"widget het laatst gebruikte zwarte frame zal herinneren en deze"
+" automatisch "
+"bij een volgende sessie zal openen."
+
+#: ../../image_editor/enhancement_tools.rst:115
+#, fuzzy
+msgid ""
+"The image panel and the original preview help you to pan within the"
+" image. The preview window shows the filter output using the current"
+" settings. Bad Pixels are highlighted on all preview areas."
+msgstr ""
+"De afbeeldingweergaves met het vergrootglas van het origineel helpen u om"
+" u "
+"door de foto te verplaatsen. Het voorbeeldvenster toont het resultaat van "
+"het filter met de huidige instellingen. Bad Pixels zijn gemarkeerd op de "
+"afbeeldingweergave."
+
+#: ../../image_editor/enhancement_tools.rst:117
+#, fuzzy
+msgid ""
+"Select an area to see bad pixels on preview and the filter result using"
+" 'Separate View' options of image panel. Choose the best Filter method to"
+" interpolate pixels or pixel blocks. These are the available filters:"
+msgstr ""
+"Selecteer een gebied waarvan u de bad pixels in de afbeeldingweergave"
+" wilt "
+"zien met daarnaast afhankelijk van de ´separate beeld´ het resultaat van"
+" het "
+"gekozen filter. Maak een keuze voor de meest geschikte <guilabel>Filter</"
+"guilabel>-methode voor het interpoleren van pixels of pixel blokken. Dit "
+"zijn de beschikbare filters:"
+
+#: ../../image_editor/enhancement_tools.rst:119
+#, fuzzy
+msgid ""
+"Average: the pixels adjacent to the pixel block are averaged. The"
+" resulting color is assigned to all pixels in the block. For"
+" 1-dimensional interpolation, this is done separately for one pixel-wide,"
+" horizontal or vertical stripes."
+msgstr ""
+"Gemiddelde: de pixels naast het pixel blok worden gemiddeld. De"
+" resulterende "
+"kleur worden vervolgens aan alle pixels in het blok toegewezen. Voor 1-"
+"dimensionale interpolatie, wordt dit separaat voor een pixel-brede, "
+"horizontale of verticale stroken uitgevoerd."
+
+#: ../../image_editor/enhancement_tools.rst:121
+#, fuzzy
+msgid ""
+"Linear: the pixels which have a distance of 1 from the pixel block are"
+" used to calculate a bi-linear surface (2-dim), or a group of linear"
+" curves (1-dim), which is then used to assign interpolated colors to the"
+" pixels in the block."
+msgstr ""
+"Lineair: de pixels die op een afstand van 1 van het pixel blok zijn,"
+" worden "
+"gebruikt voor het bereken van een bi-lineair oppervlak (2-dim), of een"
+" groep "
+"van lineaire curves (1-dim), welke vervolgens worden gebruikt om de "
+"geïnterpoleerde kleuren aan de pixels van het het blok toe te wijzen."
+
+#: ../../image_editor/enhancement_tools.rst:123
+#, fuzzy
+msgid ""
+"Quadratic: this is the default filtering method. The pixels which have a"
+" distance of 2 or less from the pixel block are used to calculate a"
+" bi-quadratic surface (2-dim), or a group of quadratic curves (1-dim),"
+" which is then used to assign interpolated colors to the pixels in the"
+" block."
+msgstr ""
+"Kwadratisch: dit is de standaard filter methode. de pixels die een"
+" afstand "
+"van 2 of minder van het pixel blok hebben, worden gebruikt voor het "
+"berekenen van een bi-kwadratisch oppervlak (2-dim) of een groep van "
+"kwadratische curves (1-dim), welke vervolgens worden gebruikt om de "
+"geïnterpoleerde kleuren aan de pixels van het het blok toe te wijzen."
+
+#: ../../image_editor/enhancement_tools.rst:125
+#, fuzzy
+msgid ""
+"Cubic: the pixels which have a distance of 3 or less from the pixel block"
+" are used to calculate a bi-cubic surface (2-dim), or a group of cubic"
+" curves (1-dim), which is then used to assign interpolated colors to the"
+" pixels in the block."
+msgstr ""
+"Kubisch: de pixels die op een afstand van 3 of minder van het pixel blok "
+"zijn, worden gebruikt voor het bereken van een bi-kubisch oppervlak"
+" (2-dim), "
+"of een groep van kubische curves (1-dim), welke vervolgens worden"
+" gebruikt "
+"om de geïnterpoleerde kleuren aan de pixels van het het blok toe te"
+" wijzen."
+
+#: ../../image_editor/enhancement_tools.rst:128
+msgid "Local Contrast Tool"
+msgstr "Hulpmiddel Lokaal contrast"
+
+#: ../../image_editor/enhancement_tools.rst:130
+#, fuzzy
+msgid "The Local Contrast tool render pseudo-HDR image."
+msgstr ""
+"Het hulpmiddel <emphasis>Lokaal contrast</emphasis> rendert een"
+" pseudo-HDR "
+"afbeelding."
+
+#: ../../image_editor/enhancement_tools.rst:132
+#, fuzzy
+msgid ""
+"There are multiple ways to render HDR image to improve photos containing"
+" under or overexposed areas. With camera devices, usual tools let you"
+" merge multiple shots with different exposures into one perfectly exposed"
+" photo. This work nicely but require some limitation, as for example the"
+" necessity to shot static subjects. But what if you have just in case of"
+" single image, or with dynamic subjects? You might want to give a try to"
+" the Local Contrast feature. It’s based on the LDR Tonemapping utility"
+" which is designed to improve the dynamic range of the photo by reducing"
+" its global contrast and increasing the local contrast. It does so by"
+" generating a desaturated and blurred version of the photo. It then"
+" combines the RGB channels of the original photo with the desaturated"
+" blurred image using either the Linear or Power function. Sounds"
+" complicated? Don’t worry, the Local Contrast tool is rather"
+" straightforward to use, so you don’t have to understand all its"
+" intricacies in order to achieve pleasing results."
+msgstr ""
+"Er zijn vele manieren om een HDR-afbeelding te renderen om foto's die"
+" onder "
+"of overbelichte gebieden bevatten te verbeteren. Met camera apparaten,"
+" laten "
+"gebruikelijke hulpmiddelen u meerdere opnamen met verschillende"
+" belichting "
+"mengen in één perfect belichte foto. Dit werkt goed maar vereist enige "
+"beperkingen, zoals bijvoorbeeld de noodzaak om statische onderwerpen te "
+"nemen. Maar wat in het geval dat u een enkele afbeelding hebt of met "
+"dynamische onderwerpen? U kunt het natuurlijk proberen met de functie"
+" Lokaal "
+"contrast. Het is gebaseerd op het hulpmiddel <ulink"
+" url=\"http://zynaddsubfx."
+"sourceforge.net/other/tonemapping/\">LDR Tonemapping</ulink>, die"
+" ontworpen "
+"is om het dynamische bereik van de foto te verbeteren door zijn globale "
+"contrast te verminderen. Het doet dat door een onverzadigde en een wazig "
+"gemaakte versie van de foto te maken. Daarna worden de RGB kanalen van de "
+"originele foto met de niet verzadigde wazig gemaakte afbeelding"
+" gecombineerd "
+"met afwel de lineaire of de power-functie. Klinkt gecompliceerd? Geen "
+"paniek, het hulpmiddel Lokaal contrast is tamelijk rechtuit te gebruiken, "
+"zodat u niet alle details hoeft te begrijpen om mooie resultaten te"
+" behalen."
+
+#: ../../image_editor/enhancement_tools.rst:136
+#, fuzzy
+msgid ""
+"Open the photo you want in the editor and choose Enhance --> Local"
+" Contrast. The tool lets you apply up to four tonemapping operations"
+" called stages. Each stage offers two parameters for you to tweak: Power"
+" and Blur. The former allows you to specify the desaturation level, while"
+" the latter lets you adjust the affected areas on the photo. To preview"
+" the result, hit the Try button. Once you are satisfied with the result,"
+" press OK to apply the process to the photo."
+msgstr ""
+"Open de gewenste foto in de bewerker en kies "
+"<menuchoice><guimenu>Verbeteren</guimenu><guimenuitem>Lokaal contrast</"
+"guimenuitem></menuchoice>. Het hulpmiddel laat u tot vier toon-mapping "
+"bewerkingen, genaamd stappen toepassen. Elke stap biedt twee parameters"
+" om "
+"door aan u te passen: kracht en wazig. De eerste biedt u het specificeren "
+"van het niveau van verminderde verzadiging, terwijl de laatste u de "
+"betrokken gebieden in de foto laat aanpassen. Om een vooruitblik op het "
+"resultaat te werpen, drukt u op de knop <guibutton>Proberen</guibutton>. "
+"Wanneer u tevreden bent met het resultaat, drukt u op <guibutton>OK</"
+"guibutton> om het proces toe te passen op de foto."
+
+#: ../../image_editor/enhancement_tools.rst:138
+#, fuzzy
+msgid ""
+"While the Local Contrast tool may sound like an easy way to fix photos,"
+" you should use it with care: sometimes it can do more damage than good,"
+" producing unnaturally looking photos."
+msgstr ""
+"Hoewel het hulpmiddel Lokaal contrast klinkt als gemakkelijk te gebruiken"
+" om "
+"foto's op te lappen, moet u het toch voorzichtig gebruiken: soms kan het "
+"meer schade aanrichten dan iets goeds, en onnatuurlijk ogende foto's "
+"produceren."
+
+#: ../../image_editor/enhancement_tools.rst:141
+msgid "Noise Reduction"
+msgstr "Ruisreductie"
+
+#: ../../image_editor/enhancement_tools.rst:143
+msgid ""
+"digiKam The Noise Reduction is a powerful tool to reduce the image noise."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:145
+msgid ""
+"This tool provides selectable image filters to remove specks or other"
+" artifacts caused by junk such as dust or hair on the lens. It also can"
+" be used to remove Sensor Noise from the camera that maybe caused by high"
+" ISO settings, as well as the so-called Moiré Patterns on scanned images"
+" from books or magazines."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:147
+#, fuzzy
+msgid ""
+"If you want more information about what's digital camera sensor noise,"
+" please take a look in this tutorial."
+msgstr ""
+"Meer informatie over sensorruis in digitale camera´s kunt u in deze <"
+"ulink "
+"url=\"http://www.cambridgeincolour.com/tutorials/noise.htm\">handleiding</"
+"ulink> lezen."
+
+#: ../../image_editor/enhancement_tools.rst:151
+#, fuzzy
+msgid ""
+"The above screenshot shows a typical scene taken with an digital camera"
+" using a high sensitivity ISO setting. It shows grainy noise which can be"
+" reduced successfully with this tool."
+msgstr ""
+"In de schermafdruk hierboven ziet u een veelvoorkomende scene genomen met "
+"een digitale camera waarbij de ISO hoog is ingesteld. U ziet korrelige"
+" ruis "
+"die u met dit gereedschap succesvol kan reduceren."
+
+#: ../../image_editor/enhancement_tools.rst:153
+#, fuzzy
+msgid ""
+"The re-sizeable image panel with the original preview helps you to pan"
+" within the image. Move the red rectangle around to select the area that"
+" lets you judge on the optimal filter settings. The preview window shows"
+" the filter output using the current settings. It can be rearranged in"
+" four different combinations as depicted in the icons below the original"
+" preview. This screenshot shows the first arrangement where the same"
+" cutout is shown for comparison. On the bottom of preview area, you can"
+" see Zoom Factor settings to magnify an area of the image."
+msgstr ""
+"Het in grootte instelbare weergavepaneel met het origineel helpt u om in"
+" de "
+"foto te verplaatsen. U kunt het rode rechthoekje verplaatsen om een"
+" gebied "
+"te selecteren dat u wilt beoordelen voor de optimale filter instellingen."
+" De "
+"voorbeeldweergave toont de uitkomst van het filter met de huidige "
+"instellingen. U kunt dit in de vier verschillende combinaties laten zien"
+" die "
+"de pictogrammen onderaan aangeven. Deze schermafdruk toont de eerste "
+"combinatie waar dezelfde uitsnede ter vergelijking getoond wordt."
+" Onderaan "
+"ziet u de <guilabel>Zoomfactor</guilabel> waarmee u een gedeelte van de"
+" foto "
+"voor bewerking kunt vergroten."
+
+#: ../../image_editor/enhancement_tools.rst:155
+msgid "You can see below a full description of all parameters:"
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:157
+msgid ""
+"Estimate Noise: compute automatically all noise reduction settings by a"
+" parse of noise contained in image. By default it recommended to turn on"
+" this option and check the result. If reduction of noise is not enough"
+" efficient or danamge the image, turn off this option, and adjust the"
+" Luminance, Chrominance Blue, and Chrominance Red settings manually."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:159
+msgid ""
+"Threshold: use the slider for coarse adjustment, and the spin control for"
+" fine adjustment. The threshold is the value below which everything is"
+" considered noise. This value should be set so that edges and details are"
+" clearly visible and noise is smoothed out. These settings exists for the"
+" Luminance, Chrominance Blue, and Chrominance Red channels. Simply adjust"
+" it and watch the preview. Adjustment must be made carefully, because the"
+" gap between noisy, smooth, and blur is very small. Adjust it as"
+" carefully as you would adjust the focus of a camera."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:162
+msgid ""
+"Softness: use the slider for coarse adjustment, and the spin control for"
+" fine adjustment. The softness adjusts the level of the thresholding"
+" (soft as opposed to hard thresholding). The higher the softness the more"
+" noise remains in the image. These settings exists for the Luminance,"
+" Chrominance Blue, and Chrominance Red channels. Simply adjust it and"
+" watch the preview. As for the Threshold settings, adjustment must be"
+" made carefully, because the gap between noisy, smooth, and blur is very"
+" small. Adjust it as carefully as you would adjust the focus of a camera."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:164
+#, fuzzy
+msgid ""
+"Save As... and Load...: these buttons are used to do just that. Any Noise"
+" Reduction parameters that you have set can be saved to the filesystem"
+" and loaded later."
+msgstr ""
+"De knoppen <guilabel>Opslaan als...</guilabel> en <guilabel>Laden...</"
+"guilabel> zijn precies voor dat doel in gebruik. Alle instellingen voor "
+"ruisreductie kunt u opslaan in een het bestandssysteem en later weer"
+" laden."
+
+#: ../../image_editor/enhancement_tools.rst:166
+#, fuzzy
+#: ../../image_editor/enhancement_tools.rst:390
+msgid "Defaults: this button resets all settings to default values."
+msgstr ""
+"<guilabel>Standaarden</guilabel>: zet alle instellingen terug naar de "
+"standaardwaarden."
+
+#: ../../image_editor/enhancement_tools.rst:169
+msgid "Blur Tool"
+msgstr "Hulpmiddel voor vervagen"
+
+#: ../../image_editor/enhancement_tools.rst:171
+#, fuzzy
+msgid "The Blur Tool is dedicated to soft an image."
+msgstr ""
+"Het <emphasis>Hulpmiddel voor vervagen</emphasis> toegespitst op het "
+"verzachten van een afbeelding."
+
+#: ../../image_editor/enhancement_tools.rst:173
+#, fuzzy
+msgid ""
+"Sometimes an image is too crisp for your purposes. The solution is to"
+" blur it a bit: fortunately blurring an image is much easier than"
+" sharpening it. Select the Blur Tool with the Enhance --> Blur menu entry"
+" and experiment with the level. The preview window on the right of the"
+" dialog shows the effect of the operation on your photograph."
+msgstr ""
+"Soms is een foto te scherp voor uw doel. De oplossing is het een beetje "
+"waziger maken: gelukkig is het veel makkelijker om een foto waziger te"
+" maken "
+"dan om het scherper te maken. Selecteer het gereedschap voor wazigheid"
+" via "
+"het menuitem <menuchoice> <guimenu>Verbeteren</guimenu> "
+"<guimenuitem>Vervagen</guimenuitem> </menuchoice> en experimenteer met de "
+"instellingen. In het voorbeeldvenster rechts in het dialoogvenster kunt u "
+"het effect op uw foto zien."
+
+#: ../../image_editor/enhancement_tools.rst:178
+msgid "Photograph Restoration"
+msgstr "Fotorestauratie"
+
+#: ../../image_editor/enhancement_tools.rst:180
+#, fuzzy
+msgid ""
+"digiKam The Photograph Restoration is definitely one of the most advanced"
+" tools to reduce photograph artifacts."
+msgstr ""
+"&digikam; De <emphasis>Fotorestauratie</emphasis> is beslist een van de "
+"meest geavanceerde hulpmiddelen voor het reduceren van fotografische "
+"artefacten."
+
+#: ../../image_editor/enhancement_tools.rst:182
+msgid ""
+"This fantastic restoration filter is a development providing"
+" unprecedented possibilities in the public domain to remove lots of"
+" unwanted stuff from your images. It is well adapted to deal with"
+" degraded images suffering from Gaussian noise, film grain, scratches or"
+" compression artifacts and local degradations usually encountered in"
+" digital (original or digitized) images. The smoothing happens along the"
+" image curvatures, thus preserving the meaningful content much alike our"
+" human eye would want it."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:186
+#, fuzzy
+msgid ""
+"The tool comes with several presets as starting points and to simplify"
+" the restoration. The preset settings available are listed below:"
+msgstr ""
+"Het hulpmiddel komt met aantal keuzemogelijkheden die u als startpunt"
+" kunt "
+"gebruiken en wat restauratie eenvoudiger maakt. Hieronder ziet u de lijst "
+"met keuzemogelijkheden:"
+
+#: ../../image_editor/enhancement_tools.rst:188
+#, fuzzy
+msgid ""
+"None: Using most common default filter settings not optimized for any"
+" particular purpose."
+msgstr ""
+"<guilabel>Geen</guilabel>: Gebruikt de meest algemene standaard "
+"filterinstellingen zonder enige optimalisatie voor wat voor doel dan ook."
+
+#: ../../image_editor/enhancement_tools.rst:190
+#, fuzzy
+msgid ""
+"Reduce Uniform Noise: Optimum settings for image noise due to sensors."
+msgstr ""
+"<guilabel>Uniforme ruis reduceren</guilabel>: Optimale instelling voor"
+" ruis "
+"veroorzaakt door sensors."
+
+#: ../../image_editor/enhancement_tools.rst:192
+msgid ""
+"Reduce JPEG Artifacts: JPEG's compression is not perfect, in fact for"
+" some types of images it is far from it. As a lossy compression"
+" algorithm, there are some compression \"artifacts\" - slight defaults"
+" showing in the decompressed image. This setting aims at correcting this"
+" problem."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:194
+#, fuzzy
+msgid ""
+"Reduce Texturing: Optimized to remove artifacts from scanning, digitizing"
+" or Moire patterns."
+msgstr ""
+"<guilabel>Reduceren van textuur</guilabel>: Geoptimaliseerd voor het "
+"verwijderen van artifacts veroorzaakt door scannen, digitaliseren of"
+" Moire "
+"patronen."
+
+#: ../../image_editor/enhancement_tools.rst:196
+#, fuzzy
+msgid ""
+"If you want to set filter parameters for finer adjustments, use Smoothing"
+" Settings and Advanced Settings tabs:"
+msgstr ""
+"Als u de filterparameters wilt instellen voor fijnere aanpassingen,"
+" gebruik "
+"dan de tabbladen: <guilabel>Gladheid</guilabel> en <guilabel>Geavanceerde "
+"instellingen</guilabel>:"
+
+#: ../../image_editor/enhancement_tools.rst:200
+#, fuzzy
+msgid ""
+"Detail Preservation p [0, 100]: this controls the preservation of the"
+" curvatures (features). A low value forces an equal smoothing across the"
+" image, whereas bigger values preferably smooth the homogeneous regions"
+" and leaves the details sharper. A value of 0.9 should well preserve"
+" details so that no sharpening is required afterwards. Note that Detail"
+" Preservation must be always inferior to Anisotropy."
+msgstr ""
+"<guilabel>Detailbehoud</guilabel> p [0, 100]: dit regelt het behoud van"
+" de "
+"krommingen (features). Een kleine waarde geeft over de gehele foto een"
+" egaal "
+"resultaat, terwijl grotere waarden homogene vlakken egaal maakt en toch"
+" de "
+"details scherp houdt. Een waarde van 0.9 zal details bewaren zodat daarna "
+"verscherpen niet nodig is. Let wel op dat <guilabel>Detailbehoud<"
+"/guilabel> "
+"altijd kleiner moet zijn dan <guilabel>Anisotropie</guilabel>."
+
+#: ../../image_editor/enhancement_tools.rst:202
+#, fuzzy
+msgid ""
+"Anisotropy alpha [0, 100]: a low value smooths equally in all directions,"
+" whereas a value close to 1 smooths in one direction only. If you have"
+" film grain or CCD kind of noise a high value will result in wave-like"
+" pattern, whereas JPEG artifacts are suited for values close to 1."
+msgstr ""
+"<guilabel>Anisotropie</guilabel> alpha [0, 100]: een kleine waarde geeft"
+" in "
+"alle richtingen een egaal resultaat, terwijl een waarde dicht bij 1 maar"
+" in "
+"een richting werkt. Als u een korrelige film heeft of sterke ruis bij een "
+"CCD dan krijgt u golfvormige patronen, terwijl JPEG artifacts vragen om "
+"waarden dicht bij 1."
+
+#: ../../image_editor/enhancement_tools.rst:204
+#, fuzzy
+msgid ""
+"Smoothing [0, 500]: this sets the maximum overall smoothing factor (when"
+" p defines the relative smoothing). Set it according to the noise level."
+msgstr ""
+"<guilabel>Gladheid</guilabel> [0, 500]: dit stelt de algemene maximale "
+"gladheidsfactor in (waarbij p de relatieve gladheid is). Stel het in "
+"overeenkomstig het ruis-niveau."
+
+#: ../../image_editor/enhancement_tools.rst:206
+#, fuzzy
+msgid ""
+"Regularity [0, 100]: this parameter is concerned with the uniformity of"
+" the smoothing. Imagine the smoothing process as a combing of the image."
+" Then the Regularity would correspond to the size of the comb. The bigger"
+" this value, the more even the overall smoothing will be. This is"
+" necessary when much noise is present since it is then difficult to"
+" estimate the local geometry. Also if you want to achieve a 'van Gogh'"
+" turbulence effect, setting it higher than 3 is recommended."
+msgstr ""
+"<guilabel>Regelmatigheid</guilabel> [0, 100]: deze waarde gaat over de "
+"gelijkmatigheid van het proces van gladmaken. Stelt u zich het proces van "
+"gladmaken voor als het kammen (of borstelen) van de foto. Dan komt de "
+"regelmatigheid overeen met de grootte van de kam. Hoe groter de waarde,"
+" hoe "
+"regelmatiger zal de algemene gladheid zijn. Dit is van belang als er veel "
+"ruis aanwezig is omdat het dan moeilijk is om de plaatselijke geometrie"
+" te "
+"bepalen. Maar als u een 'van Gogh' turbulent effect wilt bereiken, dan"
+" wordt "
+"aanbevolen om het groter dan 3 in te stellen."
+
+#: ../../image_editor/enhancement_tools.rst:208
+#, fuzzy
+msgid ""
+"Filter Iterations: number of times the blurring algorithm is applied."
+" Usually 1 or 2 is sufficient."
+msgstr ""
+"<guilabel>Filterherhalingen</guilabel>: het aantal keren dat het"
+" algoritme "
+"voor vervagen wordt toegepast. Meestal is 1 of 2 voldoende."
+
+#: ../../image_editor/enhancement_tools.rst:212
+#, fuzzy
+msgid ""
+"Angular Step da [5, 90]: angular integration of the anisotropy alpha. If"
+" alpha is chosen small, da should also be chosen small. But beware, small"
+" angles result in long runs! Choose it as large as you can accept."
+msgstr ""
+"<guilabel>Hoekstap</guilabel> da [5, 90]: hoek integratie van de"
+" anisotropie "
+"alpha. Als alpha klein is gekozen dan moet u da ook klein instellen. Maar "
+"pas op, kleine hoeken resulteren in lange rekentijden! Kies het zo groot "
+"mogelijk."
+
+#: ../../image_editor/enhancement_tools.rst:214
+#, fuzzy
+msgid ""
+"Integral Step [0.1, 10]: spatial integration step width in terms of"
+" pixels. Should remain less than 1 (sub-pixel smoothing) and never be"
+" higher than 2."
+msgstr ""
+"<guilabel>Integraalstap</guilabel> [0.1, 10]: spatiële integraalstap met"
+" de "
+"stap in pixels. Bij voorkeur kleiner dan 1 (subpixel vervaging) en nooit "
+"groter dan 2."
+
+#: ../../image_editor/enhancement_tools.rst:216
+#, fuzzy
+msgid ""
+"Use Linear Interpolation: The gain in quality if you select this option"
+" is only marginal and you lose a factor of 2 in speed. Our recommendation"
+" is to leave it off."
+msgstr ""
+"<guilabel>Lineaire interpolatie gebruiken</guilabel>: Het"
+" kwaliteitsvoordeel "
+"is bij gebruik marginaal en het gaat 2x zo langzaam. Ons advies is daarom"
+" om "
+"het uitgeschakeld te laten."
+
+#: ../../image_editor/enhancement_tools.rst:218
+#, fuzzy
+msgid ""
+"Save As... and Load... buttons are used to do just that. Any Photograph"
+" Restoration filter settings that you have set can be saved to the"
+" filesystem in a text file and loaded later."
+msgstr ""
+"De knoppen <guilabel>Opslaan als...</guilabel> en <guilabel>Laden...</"
+"guilabel> zijn precies voor dat doel in gebruik. Alle instellingen van "
+"Fotorestauratie kunt u opslaan in een tekstbestand en later weer laden."
+
+#: ../../image_editor/enhancement_tools.rst:222
+#, fuzzy
+msgid ""
+"Photograph restoration is (comparatively) very fast in what it is doing,"
+" but it can take a long time to run and cause high CPU load. You may"
+" always abort computation by pressing Abort button during preview"
+" rendering."
+msgstr ""
+"Fotorestauratie is (relatief) erg snel in wat het doet, maar het kan ook "
+"veel processortijd gebruiken. U kunt altijd de berekening afbreken door "
+"tijdens de berekening op de knop <guilabel>Afbreken</guilabel> te drukken."
+
+#: ../../image_editor/enhancement_tools.rst:225
+#, fuzzy
+msgid "Vignetting Correction"
+msgstr "Vignettering corrigeren"
+
+#: ../../image_editor/enhancement_tools.rst:230
+#, fuzzy
+msgid ""
+"digiKam The Vignetting correction is a tool to correct image vignetting"
+" (under-exposure in the corners)."
+msgstr ""
+"&digikam; De <emphasis>Vignetteringscorrectie</emphasis> is een"
+" hulpmiddel "
+"voor het corrigeren van vignettering van foto's (onderbelichting in de "
+"hoeken)."
+
+#: ../../image_editor/enhancement_tools.rst:232
+msgid ""
+"Wide angle lenses, especially those used in medium and large format"
+" photography, frequently do not uniformly illuminate the entire sensor"
+" plane. Instead, they \"vignette\" (shade) the edges and corners of the"
+" image, substantially reducing the light reaching the sensor there. But"
+" telelenses may show vignetting too."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:234
+msgid ""
+"The traditional solution for this is to attach a \"center filter\" to the"
+" lens. This is a neutral density filter with maximum density at the"
+" optical axis of the lens, clear at the periphery, with density varying"
+" inversely to the vignetting of the lens. A center filter has many"
+" advantages: not only does it automatically correct for full-frame images"
+" but, since it's fixed to the front of the lens, it also compensates for"
+" the off-center vignetting which occurs when camera movements are"
+" employed for perspective or plane of focus adjustment."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:236
+#, fuzzy
+msgid ""
+"But there are disadvantages as well. Many center filters require a 1.5 or"
+" 2 f-stop filter factor adjustment, which may in turn necessitate a"
+" shutter speed so slow (since wide angle lenses, even with center"
+" filters, are best used at apertures of f/16 or smaller) that"
+" hand-holding the camera is impossible and motion blur becomes a problem"
+" when photographing moving objects."
+msgstr ""
+"Maar er zijn ook nadelen. Veel center filters vereisen een 1.5 of 2"
+" f-stop "
+"filterfactor aanpassing, waarvoor op zijn beurt een zo langzame"
+" sluitertijd "
+"noodzakelijk kan zijn (omdat u bij groothoeklenzen, zelfs met center "
+"filters, beter diafragma's van f/16 of kleiner kunt gebruiken) dat een "
+"camera zonder statief onmogelijk is en bewegingsonscherpte een probleem "
+"wordt bij het fotograferen van bewegende objecten. "
+
+#: ../../image_editor/enhancement_tools.rst:238
+msgid ""
+"With the wide exposure range of present-day film and the color (or"
+" grey-scale) depth of digital camera or film scanners, it is possible to"
+" simulate the effect of a center filter by applying an equivalent"
+" transform to a raw image taken without the filter."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:241
+msgid "Using the vignetting correction tool"
+msgstr "Het gebruik van het hulpmiddel correctie van vignettering"
+
+#: ../../image_editor/enhancement_tools.rst:245
+#, fuzzy
+msgid ""
+"Five sliders give you control over the vignetting correction filter, and"
+" three more over the target image exposure:"
+msgstr ""
+"Met vijf schuifknoppen kunt u het vignettingcorrectiefilter instellen,"
+" met "
+"nog drie extra voor de belichting van het resultaat:"
+
+#: ../../image_editor/enhancement_tools.rst:247
+#, fuzzy
+msgid ""
+"Amount: this option controls the degree of luminosity attenuation by the"
+" filter at its point of maximum amount. The default amount is 2.0, which"
+" corresponds to an optical filter with a 1 f-stop filter factor (or, by"
+" no coincidence, a factor of 2 in luminosity). Increase the amount to"
+" compensate for a greater degree of vignetting; reduce it for less."
+msgstr ""
+"<guilabel>Hoeveelheid</guilabel>: hiermee stelt u de grootste hoeveelheid "
+"van verzwakking van het licht mee in. De standaardwaarde is 2.0, wat "
+"overeenkomt met een optisch filter met een 1 f-stop filter factor (of,"
+" niet "
+"bij toeval, een factor 2 in verlichtingssterkte). Vergroot deze waarde om"
+" te "
+"compenseren voor een grotere mate van vignetting; verklein het voor"
+" minder."
+
+#: ../../image_editor/enhancement_tools.rst:249
+#, fuzzy
+msgid ""
+"Feather: this option determines the rate at which the filter intensity"
+" falls off from the point of maximum amount toward the edges, expressed"
+" as a power factor. The default of 1 yields a linear reduction in filter"
+" amount with distance from the center. Power factors greater than 1.0"
+" cause a faster fall-off (for example, a power of 2 causes the amount to"
+" decrease as the square of the distance from the center) and causes the"
+" effect of the filter to be concentrated near the center. Powers less"
+" than 1 spread out the amount of the filter toward the edges; a power of"
+" 0.5 causes the amount to fall as the square root of the distance from"
+" the center."
+msgstr ""
+"<guilabel>Doezelen</guilabel>: hiermee stelt u het verloop mee in waarmee"
+" de "
+"intensiteit van het filter vanuit het middelpunt naar de randen verloopt, "
+"uitgedrukt als exponent. De standaardwaarde van 1 geeft een reductie van"
+" het "
+"filter dat lineair loopt met de afstand tot het middelpunt. Een exponent "
+"groter dan 1.0 veroorzaakt een snellere reductie (bijvoorbeeld, een"
+" exponent "
+"van 2 zorgt ervoor dat de reductie van het filter kwadratisch met de"
+" afstand "
+"van het middelpunt verloopt) zodat het effect geconcentreerd is nabij het "
+"middelpunt. Een exponent kleiner dan 1 verspreidt het effect van het"
+" filter "
+"meer naar de randen; een exponent van 0.5 zorgt dat de waarde vermindert"
+" met "
+"de wortel van de afstand tot het middelpunt."
+
+#: ../../image_editor/enhancement_tools.rst:251
+msgid ""
+"Radius: this option specifies the radius, as a multiple of the half"
+" diagonal measure of the image, at which the amount of the filter falls"
+" off to zero (or, in other words, becomes transparent). The default value"
+" of 1.0 specifies a filter which is transparent at its corners. A radius"
+" specification greater than 1 extends the effect of the center filter"
+" beyond the edges of the image, while a radius less than one limits the"
+" filter's action to a region smaller than the image. When compensating"
+" for vignetting by lenses used with large format and some medium format"
+" cameras, the default radius factor of 1 is rarely correct! These lenses"
+" often \"cover\" an image circle substantially larger than the film to"
+" permit camera movements to control perspective and focus, and"
+" consequently have a vignetting pattern which extends well beyond the"
+" edges of the film, requiring a radius setting greater than 1 to simulate"
+" a center filter covering the entire image circle."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:253
+#, fuzzy
+msgid ""
+"X offset and Y offset settings: these options moves respectively the"
+" center of the filter horizontally or vertically up to the border of the"
+" image by the specified percentage. A negative value for the X offset"
+" will shift the filter to the left while a positive value will shift it"
+" to the right. A negative value for the Y offset will move the filter up,"
+" and finally a positive value will move it down."
+msgstr ""
+"De instellingen <guilabel>Verplaatsing X</guilabel> en "
+"<guilabel>Verplaatsing Y</guilabel>: hiermee verplaatst u het middelpunt"
+" van "
+"het filter horizontaal respectievelijk verticaal naar de rand van de foto "
+"met een opgegeven percentage. Een negatieve waarde voor de X-waarde "
+"verschuift het filter naar links terwijl een positieve waarde het naar "
+"rechts verschuift. Een negatieve waarde voor de Y-waarde verschuift het "
+"filter omhoog, en tenslotte een positieve waarde zal het omlaag"
+" verschuiven."
+
+#: ../../image_editor/enhancement_tools.rst:255
+#, fuzzy
+msgid ""
+"Add Vignetting: many photographs looks flat because of a distracting"
+" background or another composition matter. While most of time you will"
+" want to remove vignetting it is a fact that a selective vignetting could"
+" improve the readability of a photograph and draw the eyes to the"
+" intended subject. As an artist you may choose this option, ticking it"
+" will invert the filter thus darkening the corners of a photograph."
+msgstr ""
+"<guilabel>Vignettering toevoegen</guilabel>: veel foto´s zien er vlak uit "
+"vanwege een achtergrond die teveel aandacht trekt of andere compositie "
+"problemen. Meestal wilt u vignetting juist verwijderen maar soms kan het "
+"selectief toevoegen van vignetting een foto juist verbeteren en de"
+" aandacht "
+"juist naar het gewenste onderwerp trekken. Als artiest kunt u deze keuze "
+"maken, als u dit inschakelt dan maakt dat de hoeken van de foto donkerder."
+
+#: ../../image_editor/enhancement_tools.rst:257
+#, fuzzy
+msgid ""
+"The only way to be sure which settings of Amount, Feather, and Radius"
+" best compensate for the actual optical characteristics of a given lens"
+" is to expose a uniformly illuminated scene (for example, a grey card lit"
+" by diffuse light) and perform densitometry on the resulting image (for"
+" example with Adjust Level tool histogram position bar). Failing that, or"
+" specifications by the lens manufacturer giving the precise degree of"
+" vignetting at one or more working apertures, you may have to experiment"
+" with different settings to find those which work best for each of your"
+" lenses. For help you in this task, the widget dialog provide a thumbnail"
+" mask rendering applied on the image. Fortunately, the response of the"
+" human eye is logarithmic, not linear like most digital imaging sensors,"
+" so you needn't precisely compensate for the actual vignetting to create"
+" images which viewers will perceive as uniformly illuminated."
+msgstr ""
+"De enige manier om te bepalen welke combinaties van <guilabel"
+">Hoeveelheid</"
+"guilabel>, <guilabel>Doezelen</guilabel>, en <guilabel>Straal</guilabel>"
+" het "
+"beste de werkelijke optische karakteristieken van een bepaalde lens "
+"compenseren, is door een foto te maken van een egaal verlichte scene "
+"(bijvoorbeeld, een grijze kaart belicht door diffuus licht) en een "
+"densitometing (meting van zwarting) van de resulterende foto uit te"
+" voeren "
+"(bijvoorbeeld met de histogram balk van Niveau Aanpassen). Als dat niet"
+" het "
+"geval is, en als in de door de fabrikant opgegeven specificaties van de"
+" lens "
+"niet precies de vignetting van een of meerdere openingen zijn te vinden,"
+" dan "
+"moet zelf experimenteren met verschillende instellingen om te bepalen"
+" welke "
+"het beste is voor elk van uw lenzen. Om u te helpen met deze taak is er"
+" in "
+"de voorbeeldweergave een masker toegevoegd die het vignetting voorstelt. "
+"Gelukkig is de gevoeligheid van het menselijk oog logaritmisch en niet "
+"lineair zoals de meeste digitale beeldsensors, daarom hoeft u niet "
+"nauwkeurig de werkelijke vignetting te compenseren om toch foto´s te"
+" creëren "
+"die kijkers als egaal belicht zal opvatten."
+
+#: ../../image_editor/enhancement_tools.rst:261
+msgid ""
+"If you want a finer exposure re-adjustment of the target image, use the"
+" Adjust Curve tool from Image Editor available under Color --> Adjust"
+" Curve menu entry."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:264
+msgid "The vignetting correction tool in action"
+msgstr "Het vignetting correctie gereedschap in actie"
+
+#: ../../image_editor/enhancement_tools.rst:266
+#, fuzzy
+msgid ""
+"This is an example of an anti vignetting correction applied to an image."
+" The original image (1) shows vignetting in the corners, the corrected"
+" image (2) much less. A brightness and contrast correction is also"
+" applied to the target image by this tool."
+msgstr ""
+"Dit is een voorbeeld van een anti vignetting correctie toegepast op een "
+"foto. Bij de originele foto (1) is vignetting in de hoeken zichtbaar, bij"
+" de "
+"gecorrigeerde foto (2) veel minder. Een helderheid en contrast correctie"
+" is "
+"ook met dit hulpmiddel op deze foto toegepast."
+
+#: ../../image_editor/enhancement_tools.rst:268
+msgid "The values used for this example are:"
+msgstr "De in dit voorbeeld gebruikte waarden zijn:"
+
+#: ../../image_editor/enhancement_tools.rst:270
+msgid "Density = 2.6."
+msgstr "Dichtheid = 2,6."
+
+#: ../../image_editor/enhancement_tools.rst:272
+#, fuzzy
+msgid "Power = 0.9."
+msgstr "Macht"
+
+#: ../../image_editor/enhancement_tools.rst:274
+msgid "Radius = 1.1."
+msgstr "Straal = 1,1."
+
+#: ../../image_editor/enhancement_tools.rst:279
+msgid "Remove Red Eyes"
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:281
+#, fuzzy
+msgid ""
+"Red eyes are caused when the camera flashlight is used to take"
+" photographs of people. The red is the reflection from the back of the"
+" eye which can be seen because the pupil cannot react quickly enough to"
+" the flash. By the way, with a separate flash light the red eye effect is"
+" less likely because of the different viewing angle of flash and lens."
+" You can correct some of the worst effect of Red Eye by selecting the"
+" area of the eye on the photograph, in the same way as described for"
+" cropping above. Then select Enhance --> Red Eye Reduction."
+msgstr ""
+"Het gebruik van flitslicht bij het maken van foto's veroorzaakt rode"
+" ogen. "
+"Het rood is de reflectie via de achterkant van het oog dat u kunt zien"
+" omdat "
+"de pupil niet snel genoeg op het flitslicht kan reageren. Overigens, met"
+" een "
+"separaat flitslicht is het effect van rode ogen minder waarschijnlijk"
+" omdat "
+"er een hoek is tussen het flitslicht en de lens. U kunt het ergste rode"
+" ogen "
+"effecten een beetje corrigeren door op de foto het gebied rond de ogen te "
+"selecteren, op dezelfde manier als beschreven bij afsnijden boven. En "
+"vervolgens <menuchoice> <guimenu>Verbeteren</guimenu> <guimenuitem>Rode"
+" ogen "
+"corrigeren</guimenuitem> </menuchoice> te selecteren."
+
+#: ../../image_editor/enhancement_tools.rst:283
+msgid "How it works"
+msgstr "Hoe het werkt"
+
+#: ../../image_editor/enhancement_tools.rst:285
+msgid ""
+"Set the preview mode to your liking. Adjust region of image to the eyes"
+" of face to fix."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:287
+msgid ""
+"A neural network engine parse the image contents to localize"
+" automatically eyes and the red pupils."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:289
+msgid ""
+"The **Red Level** setting adjusts the amount of red eyes removal, in"
+" aggressive mode or not."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:294
+msgid "Image Sharpening"
+msgstr "Verscherpen van een afbeelding"
+
+#: ../../image_editor/enhancement_tools.rst:299
+#, fuzzy
+msgid ""
+"digiKam provides three different tools for sharpening, with each having"
+" merits in a different area."
+msgstr ""
+"&digikam; levert drie verschillende hulpmiddelen voor verscherpen, elk"
+" met "
+"<link linkend=\"comparison-refocus\">eigenschappen</link> op een "
+"verschillend gebied."
+
+#: ../../image_editor/enhancement_tools.rst:301
+#, fuzzy
+msgid ""
+"**Sharpen** is a traditional sharpening tool, which is very fast and"
+" easy, but may quickly produce grainy images, in particular in dark areas."
+msgstr ""
+"<link linkend=\"using-adjustsharpness\">Sharpen</link> is een"
+" traditioneel "
+"hulpmiddel voor verscherpen, die erg snel en gemakkelijk is, maar snel "
+"korrelige afbeeldingen produceert, speciaal in donkere gebeiden."
+
+#: ../../image_editor/enhancement_tools.rst:303
+#, fuzzy
+msgid ""
+"**Unsharp Mask** works on the edge contrast to make an image appear"
+" sharper, but it actually does not sharpen at all, it works rather"
+" psychovisually. It can be used to remove atmospheric haze, and here it"
+" does a real good job. The algorithm was taken from the Gimp, and it is"
+" copyrighted by Winston Chang."
+msgstr ""
+"<link linkend=\"using-unsharp\">Unsharp Mask</link> werkt op het "
+"randcontrast om een afbeelding scherper te laten lijken, maar in "
+"werkelijkheid niets scherper maakt, het werkt tamelijk psychovisueel. Het "
+"kan worden gebruikt om een atmosferische waas te verwijderen en hier doet "
+"het echt goed werkt. Het algoritme komt uit \"the Gimp\" en het copyright "
+"behoort aan Winston Chang."
+
+#: ../../image_editor/enhancement_tools.rst:305
+#, fuzzy
+msgid ""
+"**Refocus** is probably the best of the three because it actually"
+" improves sharpness. It is a bit more involved in its application as is"
+" has several parameters to play with."
+msgstr ""
+"<link linkend=\"refocus\">Refocus</link> is waarschijnlijk het beste van"
+" de "
+"drie omdat het echt de scherpte verbeterd. Het is een beetje"
+" ingewikkelder "
+"in zijn toepassing omdat er verschillende parameters zijn om mee te"
+" spelen."
+
+#: ../../image_editor/enhancement_tools.rst:307
+#, fuzzy
+msgid ""
+"Out-of-focus photographs, as well as most digitized images, need"
+" correction of sharpness. This is due to the digitizing process that must"
+" chop up a color continuum in points with slightly different colors:"
+" elements thinner than sampling frequency will be averaged into an"
+" uniform color. Thus, sharp borders are rendered a little blurred. The"
+" same phenomenon appears when printing color dots on paper. SLR cameras"
+" need even more sharpening on a regular basis than consumer cameras."
+msgstr ""
+"Foto's die out-of-focus zijn, maar ook de meeste gedigitaliseerde "
+"afbeeldingen, hebben correctie voor de scherpte nodig. Dit komt door het "
+"digitaliseringsproces dat een kleurvlak bewerkt met punten die licht in "
+"kleur variëren: elementen kleiner dan de bemonsteringsfrequentie worden "
+"uitgemiddeld tot een continue kleur. Hierdoor zien scherpe begrenzingen"
+" er "
+"een beetje vaag uit. Hetzelfde fenomeen treedt ook op bij het op papier "
+"printen van gekleurde punten. Bij spiegelreflexcamera's is het zelfs"
+" vaker "
+"nodig een correctie op scherpte uit voeren dan bij consumentencamera's."
+
+#: ../../image_editor/enhancement_tools.rst:309
+#, fuzzy
+msgid ""
+"Whereas JPEG images have some camera-internal sharpening applied, RAW"
+" format images always need sharpening in their workflow."
+msgstr ""
+"Op JPEG afbeeldingen is al in de camera verscherping toegepast,"
+" afbeeldingen "
+"in RAW-formaat hebben altijd verscherping nodig in hun workflow."
+
+#: ../../image_editor/enhancement_tools.rst:311
+#, fuzzy
+msgid ""
+"Some scanners apply a sharpen filter while scanning. It's worth to"
+" disable it so that you keep control over your image."
+msgstr ""
+"Sommige scanners passen een verscherpingsfilter toe bij het scanning. Het "
+"kan het waard zijn om het uit te schakelen zodat u de controle houdt over"
+" uw "
+"afbeelding."
+
+#: ../../image_editor/enhancement_tools.rst:314
+msgid "Adjusting Sharpness"
+msgstr "Scherpte aanpassen"
+
+#: ../../image_editor/enhancement_tools.rst:316
+#, fuzzy
+msgid ""
+"If the camera focus is not set perfectly or if the camera is moving when"
+" the image is taken the result is a blurred photograph. If there is a lot"
+" of blurring, you probably will not be able to do much about it with any"
+" technique. If there is only a moderate amount, you should be able to"
+" improve the image. Many good SLR cameras apply less image processing to"
+" the images than simpler cameras (which tend to artificially increase the"
+" contrast to make the images look crisp). This kind of slight blur can be"
+" easily improved with tools."
+msgstr ""
+"Als de focus van de camera niet perfect is ingesteld of de camera beweegt "
+"bij het maken van de foto dan zal het resultaat een wazige foto zijn. Als "
+"deze erg wazig is dan kunt u er waarschijnlijk weinig eraan doen met"
+" welke "
+"techniek dan ook. Maar als de foto niet erg wazig is dan kunt u wellicht"
+" de "
+"foto minder wazig maken. Vele goede spiegelreflexcamera's passen minder "
+"beeldbewerking toe op de foto's dan eenvoudiger camera's (die de neiging "
+"hebben om kunstmatig het contrast te verhogen zodat de foto's er beter"
+" uit "
+"zien). Dit soort lichte wazigheid kunt u makkelijk met de juiste "
+"gereedschappen verbeteren."
+
+#: ../../image_editor/enhancement_tools.rst:318
+#, fuzzy
+msgid ""
+"In some situations, you may be able to get useful results by sharpening"
+" an photograph using the Sharpen tool by the Enhance --> Sharpen menu"
+" entry."
+msgstr ""
+"In sommige situaties kunt u misschien bruikbare resultaten krijgen bij"
+" het "
+"verscherpen van een foto met het hulpmiddel voor verscherpen via het menu-"
+"item <menuchoice> <guimenu>Verbeteren</guimenu> <guimenuitem>Verscherpen</"
+"guimenuitem> </menuchoice>."
+
+#: ../../image_editor/enhancement_tools.rst:322
+#, fuzzy
+msgid ""
+"You should be careful with this though, or the results will not look very"
+" natural: sharpening increases the apparent sharpness of edges in the"
+" photograph, but also amplifies noise. Generally, the most useful"
+" technique for sharpening a fuzzy photograph is the Refocus tool. You can"
+" access it with the Enhance --> Refocus menu entry. Look at Refocus for"
+" more information and a comparison of all the sharpening techniques."
+msgstr ""
+"U moet hier voorzichtig mee omspringen omdat het resultaat er anders niet "
+"natuurlijk uitziet: het verminderen van de wazigheid maakt de randen in"
+" de "
+"foto schijnbaar scherper, maar het versterkt ook de ruis. In het algemeen"
+" is "
+"de meest bruikbare techniek voor het verminderen van wazigheid op foto's"
+" het "
+"Refocus hulpmiddel. U krijgt hiertoe toegang via het menuitem "
+"<menuchoice><guimenu>Verbeteren</guimenu><guimenuitem>Verscherpen</"
+"guimenuitem></menuchoice>. Lees <link linkend=\"refocus\">Refocus</link> "
+"voor meer informatie over en vergelijkingen van verscherpingstechnieken."
+
+#: ../../image_editor/enhancement_tools.rst:325
+msgid "Reducing Graininess In a Photograph"
+msgstr "Korreligheid van een foto reduceren"
+
+#: ../../image_editor/enhancement_tools.rst:327
+msgid ""
+"When you take a photograph in low-light conditions or with a very fast"
+" exposure time, the camera does not get enough data to make good"
+" estimates of the true color at each pixel, and consequently the"
+" resulting photograph looks grainy. You can \"smooth out\" the graininess"
+" by blurring the image, but then you will also lose sharpness. Probably"
+" the best approach - if the graininess is not too bad - is to use the"
+" filter Noise Reduction tool, and you can access it by the Enhance -->"
+" Noise Reduction menu entry."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:330
+msgid "Softening a Photograph"
+msgstr "Een foto verzachten"
+
+#: ../../image_editor/enhancement_tools.rst:332
+#, fuzzy
+msgid ""
+"Sometimes you have the opposite problem: an image is too crisp. The"
+" solution is to blur it a bit: fortunately blurring an image is much"
+" easier than sharpening it. Select the Blur Tool with the Enhance -->"
+" Blur menu entry and experiment with the level. The preview window on the"
+" right of the dialog shows the effect of the operation on your photograph."
+msgstr ""
+"Soms is het probleem tegenovergesteld: een foto is te scherp. Een beetje "
+"waziger maken is dan de oplossing: gelukkig is het veel gemakkelijker om"
+" een "
+"foto waziger te maken dan om het scherper te maken. Selecteer het <link "
+"linkend=\"editor-enhance-blur\">Hulpmiddel voor vervagen</link> via het "
+"menuitem <menuchoice> <guimenu>Verbeteren</guimenu> <guimenuitem"
+">Vervagen</"
+"guimenuitem> </menuchoice> en experimenteer met het niveau. De "
+"voorbeeldweergave aan de rechterkant in het dialoogvenster toont het"
+" effect "
+"van de bewerking op uw foto."
+
+#: ../../image_editor/enhancement_tools.rst:335
+msgid "The Unsharp Masking Filter"
+msgstr "Het filter Onscherpte masker"
+
+#: ../../image_editor/enhancement_tools.rst:339
+#, fuzzy
+msgid ""
+"The Unsharp Mask filter is an excellent tool to remove haze from your"
+" photographs, see this url for a demonstration."
+msgstr ""
+"Het filter Unsharp Mask is een uitstekend hulpmiddel om een waas uit uw "
+"foto's te verwijderen, zie <ulink url=\"http://www.gimpguru.org/Tutorials/"
+"RemovingHaze\">deze url</ulink> voor een demonstratie."
+
+#: ../../image_editor/enhancement_tools.rst:343
+#, fuzzy
+#: ../../image_editor/enhancement_tools.rst:364
+msgid ""
+"The image panel and the original preview help you to pan within the"
+" image. The preview window shows the filter output using the current"
+" settings."
+msgstr ""
+"Het paneel met de afbeelding en het voorbeeld van het origineel helpen u"
+" om "
+"u door de foto te verplaatsen. Het voorbeeldvenster toont het resultaat"
+" van "
+"het filter met de huidige instellingen."
+
+#: ../../image_editor/enhancement_tools.rst:345
+#, fuzzy
+msgid ""
+"There are two important parameters, Radius and Amount. The default values"
+" often work pretty well, so you should try them first. Increasing either"
+" the Radius or the Amount increases the strength of the effect. Don't get"
+" carried away, though: if you make the unsharp mask too strong, it will"
+" amplify noise in the image and create the impressions of ridges next to"
+" sharp edges."
+msgstr ""
+"Er zijn twee belangrijke variabelen, <guilabel>Straal</guilabel> en "
+"<guilabel>Hoeveelheid</guilabel>. De standaard getallen werken meestal "
+"verbazend goed, probeer deze daarom eerst. Door het vergroten van de "
+"<guilabel>Straal</guilabel> of de <guilabel>Hoeveelheid</guilabel> maakt"
+" u "
+"het effect sterker. Maar laat u niet meeslepen: als u het masker voor "
+"onscherpte te sterk maakt dan versterkt het de ruis in de foto en creëert "
+"het de indruk van ribbels naast scherpe randen."
+
+#: ../../image_editor/enhancement_tools.rst:347
+#, fuzzy
+msgid ""
+"The Radius allows you to set how many pixels on either side of an edge"
+" that will be affected by sharpening. High resolution images allow higher"
+" radius. You'd better always sharpen an image at its final resolution."
+msgstr ""
+"Met de <guilabel>Straal</guilabel> kunt u instellen hoeveel pixels aan"
+" elke "
+"zijde van een rand wordt bewerkt door verscherping. Bij foto's met hoge "
+"resolutie is een grotere straal mogelijk. Het is beter om de verscherping "
+"bij de uiteindelijke resolutie van een foto uit te voeren."
+
+#: ../../image_editor/enhancement_tools.rst:349
+#, fuzzy
+msgid ""
+"The Amount control is the percentage of the difference between the"
+" original and the blur image that is added back into the original. It"
+" allows you to set strength of sharpening."
+msgstr ""
+"De variabele <guilabel>Hoeveelheid</guilabel> is het percentage voor het "
+"verschil tussen het origineel en de wazige afbeelding die wordt"
+" toegevoegd "
+"aan het origineel. Hiermee kunt u sterkte voor het verscherpen instellen."
+
+#: ../../image_editor/enhancement_tools.rst:351
+#, fuzzy
+msgid ""
+"The Threshold control is a fraction of the maximum RGB value, needed to"
+" apply the difference amount. It allows you to set the minimum difference"
+" in pixel values that indicates an edge where sharpening should be"
+" applied. That way, you can protect areas of smooth tonal transition from"
+" sharpening, and avoid creation of blemishes in face, sky or water"
+" surface."
+msgstr ""
+"De besturing van de <guilabel>Drempelwaarde</guilabel> is een gedeelte"
+" van "
+"de maximum RGB-waarde, nodig voor de verschilwaarde. Hiermee kunt u het "
+"minimum verschil in pixel-waarde instellen dat een rand voorstelt waar de "
+"verscherping op moet worden toegepast. Op deze manier kunt u gebieden "
+"beschermen tegen verscherpen, die geleidelijk van kleur veranderen, en "
+"vermijdt u daarmee rimpels en ribbels in gezichten, de lucht of het "
+"wateroppervlak."
+
+#: ../../image_editor/enhancement_tools.rst:354
+msgid "Refocus a Photograph"
+msgstr "Refocus toepassen op een foto"
+
+#: ../../image_editor/enhancement_tools.rst:356
+#, fuzzy
+msgid ""
+"digiKam The Refocus is a tool to refocus an image by enhancing the"
+" sharpness. It uses the Deconvolution Filter algorithm copyrighted by"
+" Ernst Lippe."
+msgstr ""
+"Het hulpmiddel <emphasis>Refocus</emphasis> van &digikam; is een"
+" hulpmiddel "
+"om de focussering van een afbeelding opnieuw te doen door de scherpte te "
+"verbeteren. Het gebruikt het algoritme <emphasis>Deconvolutie-filter</"
+"emphasis> met copyright bij Ernst Lippe."
+
+#: ../../image_editor/enhancement_tools.rst:358
+msgid ""
+"This tool attempts to \"refocus\" an image by undoing the defocussing."
+" This is better than just trying to sharpen a photograph. It is employing"
+" a technique called FIR Wiener Filtering. The traditional technique for"
+" sharpening images is to use unsharp masking. Refocus generally produces"
+" better results than Unsharp masking. Start it from the Enhance -->"
+" Sharpen --> Refocus Image Editor menu."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:360
+msgid ""
+"The Refocus technique works differently from Unsharp Mask and is also"
+" unlike the Sharpen Filter which both increase the contrast of the edges"
+" of an image. Refocus rather reverses the process by which the image got"
+" blurred by the circular aperture of the camera. This method gives you as"
+" much of the original \"in focus\" image as possible. Refocus uses a very"
+" powerful deconvolution algorithm that will reclaim the data that has"
+" been mixed up. In mathematical terms, blurring is usually the result of"
+" a convolution, a deconvolution will reverse the process, this is exactly"
+" what Refocus is doing. Furthermore, the FIR filter technique allows to"
+" remove much of the noise and granularity that often gets accentuated in"
+" the sharpening process of all sharpening filters."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:366
+msgid ""
+"In most cases (blurring by camera) a circular convolution caused the"
+" image degradation, but there are two convolutions available:"
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:368
+msgid ""
+"The circular convolution: this one spreads each source point uniformly"
+" across a small disk with a fixed radius. Technically this describes the"
+" effects of using a (ideal) lens that is not correctly focused."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:370
+msgid ""
+"The Gaussian convolution: this one is mathematically similar to the"
+" normal distribution, with its bell-shaped curve. Originates rather from"
+" unnatural blurring (software blurring). From a theoretical point of view"
+" the mathematical justification for using the Gaussian convolution is"
+" that when you a apply a large number of independent random convolutions"
+" the results will always approach a Gaussian convolution."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:372
+msgid ""
+"The refocus tool supports both the Circular and the Gaussian convolution"
+" plus mixtures of both."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:374
+#, fuzzy
+msgid ""
+"In practice, in most cases the Circular convolution works much better"
+" than the Gaussian convolution. The Gaussian convolution has a very long"
+" tail, so mathematically the result of the convolution also depends on"
+" source pixels at a large distance from the original source pixel. The"
+" FIR Wiener inverse of a Gaussian convolution in most cases is heavily"
+" influenced by source pixels at a large distances, and in most cases this"
+" produces undesirable results."
+msgstr ""
+"In praktijk werkt meestal de Circulaire verdeling veel beter dan de "
+"Gaussiaanse verdeling. De Gaussiaanse verdeling heeft een zeer lange "
+"uitloop, wiskundig is daarom het resultaat ook afhankelijk van pixels op"
+" een "
+"grote afstand van het oorspronkelijke pixel. De FIR Wiener inverse van"
+" een "
+"Gaussiaanse verdeling is vaak hevig beïnvloedt door pixels op grote"
+" afstand "
+"en geeft daarom vaak ongewenste resultaten."
+
+#: ../../image_editor/enhancement_tools.rst:376
+#, fuzzy
+msgid ""
+"To set correctly the deconvolution filter, the plug-in has the following"
+" parameters:"
+msgstr ""
+"Om het deconvolutie-filter correct in te stellen heeft de plug-in de "
+"volgende parameters:"
+
+#: ../../image_editor/enhancement_tools.rst:378
+#, fuzzy
+msgid ""
+"Circular Sharpness: This is the radius of the Circular convolution"
+" filter. It is the most important parameter for using the plug-in. With"
+" most images the default value of 1 should give good results. Select a"
+" higher value when your image is very blurred, but beware of producing"
+" halos."
+msgstr ""
+"<guilabel>Circulaire scherpte</guilabel>: Dit is de straal van het "
+"circulaire convolutie-filter. Dit is de meest belangrijke parameter van"
+" deze "
+"plug-in. Voor de meeste afbeeldingen geeft de standaardwaarde 1 goede "
+"resultaten. Selecteer een hogere waarde als uw afbeelding erg vaag is,"
+" maar "
+"let er op dat geen halo's worden gemaakt."
+
+#: ../../image_editor/enhancement_tools.rst:380
+msgid ""
+"Correlation: Increasing the Correlation may help reducing artifacts. The"
+" correlation can range from 0-1. Useful values are 0.5 and values close"
+" to 1, e.g. 0.95 and 0.99. Using a high value for the correlation will"
+" reduce the sharpening effect of the plug-in."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:382
+msgid ""
+"Noise filter: Increasing the Noise filter parameter helps reducing"
+" artifacts. The Noise can range from 0-1 but values higher than 0.1 are"
+" rarely helpful. When the Noise value is too low, e.g. 0 the image"
+" quality will be horrible. A useful value is 0.03. Using a high value for"
+" the Noise will even blur the image further."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:384
+#, fuzzy
+msgid ""
+"Gaussian Sharpness: This is the radius for the Gaussian convolution"
+" filter. Use this parameter when your blurring is Gaussian (mostly due to"
+" previous blur filtering). In most cases you should leave this parameter"
+" to 0, because it causes nasty artifacts. When you use non-zero values"
+" you will probably have to increase the Correlation and/or Noise filter"
+" parameters, too."
+msgstr ""
+"<guilabel>Gaussiaanse scherpheid</guilabel>: dit is de scherpheid voor de "
+"Gaussiaanse winding. Gebruik deze parameter als uw vervaging van het type "
+"Gaussiaans is (meestal vanwege eerdere ruisreductie). In de meeste"
+" gevallen "
+"laat u deze parameter op 0 staan, omdat het vreselijke artefacten "
+"veroorzaakt. Als u een hogere waarde kiest, dan dient u waarschijnlijk"
+" ook "
+"de parameters <guilabel>Correlatie</guilabel> en/of <guilabel>Ruisfilter</"
+"guilabel> te verhogen."
+
+#: ../../image_editor/enhancement_tools.rst:386
+#, fuzzy
+msgid ""
+"Matrix size: This parameter determines the size of the transformation"
+" matrix. Increasing the Matrix Size may give better results, especially"
+" when you have chosen large values for Circular Sharpness or Gaussian"
+" Sharpness. Note that the plug-in will become very slow when you select"
+" large values for this parameter. In most cases you should select a value"
+" in the range 3-10."
+msgstr ""
+"<guilabel>Matrixgrootte</guilabel>: deze parameter bepaalt de grootte van"
+" de "
+"transformatiematrix. Het verhogen van de <guilabel>Matrixgrootte<"
+"/guilabel> "
+"kan voor betere resultaten zorgen, in het bijzonder als u hoge waarden"
+" hebt "
+"gekozen voor <guilabel>Circulaire scherpte</guilabel> of "
+"<guilabel>Gaussiaanse scherpte</guilabel>. Merk op dat de plug-in zeer "
+"langzaam zal zijn bij het het kiezen van grote waarden. Meestal zou u een "
+"waarde tussen de 3 en de 10 moeten kiezen."
+
+#: ../../image_editor/enhancement_tools.rst:388
+#, fuzzy
+msgid ""
+"Save As... and Load...: these buttons are used to do just that. Any"
+" Refocus parameters that you have set can be saved to the filesystem and"
+" loaded later."
+msgstr ""
+"De knoppen <guilabel>Opslaan als...</guilabel> en <guilabel>Laden...</"
+"guilabel> zijn precies voor dat doel in gebruik. Alle parameters voor "
+"opnieuw focussen kunt u opslaan in het bestandssysteem en later weer"
+" laden."
+
+#: ../../image_editor/enhancement_tools.rst:392
+msgid ""
+"Below, you can see few hints to help you work with the refocus plug-in:"
+msgstr ""
+"Hieronder kunt u enkele aanwijzingen lezen voor het werken met de plug-in "
+"voor het opnieuw focussen:"
+
+#: ../../image_editor/enhancement_tools.rst:394
+#, fuzzy
+msgid ""
+"Preferably perform all cropping, color and intensity curve corrections on"
+" the image before using this plug-in."
+msgstr ""
+"Voer bij voorkeur op de foto alle gewenste correcties met bijsnijden,"
+" kleur- "
+"en intensiteit-curve uit voordat u deze plug-in gebruikt."
+
+#: ../../image_editor/enhancement_tools.rst:396
+#, fuzzy
+msgid ""
+"Otherwise use this plug-in before performing any other operations on the"
+" image. The reason is that many operations on the image will leave"
+" boundaries that are not immediately visible but that will leave nasty"
+" artifacts."
+msgstr ""
+"Gebruik anders deze plug-in voordat u enige andere bewerking op de foto "
+"uitvoert. De reden hiervoor is dat veel bewerkingen begrenzingen"
+" achterlaten "
+"die niet onmiddellijk zichtbaar zijn maar wel vervelende artefacten "
+"achterlaten."
+
+#: ../../image_editor/enhancement_tools.rst:398
+msgid ""
+"When you are scanning images and compress them, e.g. to JPEG, you should"
+" use the plug-in on the uncompressed image."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:401
+msgid "Refocus comparison with other techniques"
+msgstr "Opnieuw focusseren vergeleken met andere technieken"
+
+#: ../../image_editor/enhancement_tools.rst:403
+msgid ""
+"Comparison to two other techniques frequently used to enhance images are:"
+msgstr ""
+"Vergelijking met twee andere voor het verbeteren van foto's veelgebruikte "
+"technieken zijn:"
+
+#: ../../image_editor/enhancement_tools.rst:405
+msgid "Sharpen Filter Unsharp Mask"
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:408
+msgid ""
+"Sharpening applies a small convolution matrix that increases the"
+" difference between a source pixel and its immediate neighbors. FIR"
+" Wiener filtering is a more general technique because it allows a much"
+" larger neighborhood and better parameterizations. Sharpening only works"
+" when your images are very slightly blurred. Furthermore, for high values"
+" of the sharpening parameter the results frequently looks \"noisy\". With"
+" FIR Wiener filtering this noise can be greatly reduced by selecting"
+" higher values for the Correlation and Noise filter parameters."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:410
+#, fuzzy
+msgid ""
+"Unsharp masking is another very popular image enhancement technique. From"
+" a mathematical point of view its justification is a bit obscure but many"
+" people are very fond of it. The first step is to create a blurred copy"
+" of the source image. Then the difference between the source image and"
+" the blurred image is subtracted from the source image, hence the name"
+" unsharp masking. If fact, unsharp masking is more of a contrast"
+" enhancement on the important image feature than a sharpening. It does"
+" not undo the aperture pattern interference of the camera diaphragm as"
+" refocus does."
+msgstr ""
+"Onscherpte masker is nog een populair foto-verbetering techniek. Vanuit"
+" een "
+"wiskundig oogpunt is de onderbouwing een beetje vaag maar veel mensen"
+" zijn "
+"er toch tevreden mee. De eerste stap is het maken van een wazige kopie"
+" van "
+"de originele foto. Vervolgens trekken we het verschil tussen de originele "
+"foto en de wazige kopie af van de originele foto, vandaar de naam"
+" onscherpte "
+"masker. In feite is onscherpte masker meer een contrast verbeteren van de "
+"foto dan verscherping. Het maakt niet de interferentie van de lensopening"
+" en "
+"het diafragma van de camera ongedaan zoals opnieuw focusseren dat wel"
+" doet."
+
+#: ../../image_editor/enhancement_tools.rst:412
+#, fuzzy
+msgid ""
+"In general, unsharp masking produces better results than sharpening. This"
+" is probably caused by the fact that unsharp masking uses a larger"
+" neighborhood than sharpening."
+msgstr ""
+"In het algemeen geeft onscherp maskeren betere resultaten dan"
+" verscherpen. "
+"Dit komt waarschijnlijk door het feit dat onscherp maskeren naar een"
+" groter "
+"vlak kijkt dan verscherpen."
+
+#: ../../image_editor/enhancement_tools.rst:414
+#, fuzzy
+msgid ""
+"From a theoretical point of view unsharp masking must always introduce"
+" artifacts. Even under optimal circumstances it can never completely undo"
+" the effect of blurring. For Wiener filtering it is possible to prove"
+" that it is the optimal linear filter. In practice, in all cases the"
+" results of the FIR Wiener filter were at least as good as those of"
+" unsharp masking. The FIR Wiener filter is frequently better in restoring"
+" small details."
+msgstr ""
+"Op theoretische gronden moet onscherpte masker altijd artifacts "
+"introduceren. Zelfs onder optimale omstandigheden kan het nooit de"
+" wazigheid "
+"compleet verwijderen. Voor Wiener filtering kan men bewijzen dat het het "
+"optimale lineaire filter is. In de praktijk zijn in alle gevallen de "
+"resultaten van de FIR Wiener filter minstens zo goed als die van"
+" onscherpte "
+"masker. Het FIR Wiener filter is vaker beter in het restaureren van"
+" kleine "
+"details."
+
+#: ../../image_editor/enhancement_tools.rst:416
+#, fuzzy
+msgid ""
+"Below, you can see a comparison of different filter apply on a small"
+" unfocused image:"
+msgstr ""
+"Hieronder kunt u een vergelijking zien tussen verschillende filters "
+"toegepast op een kleine foto die uit focus is:"
+
+#: ../../image_editor/enhancement_tools.rst:419
+#, fuzzy
+msgid "Preview"
+msgstr "Voorbeeld"
+
+#: ../../image_editor/enhancement_tools.rst:419
+msgid "Type"
+msgstr "Type"
+
+#: ../../image_editor/enhancement_tools.rst:421
+#, fuzzy
+msgid ""
+"Original blurred color image to fix. This image have been taken with an"
+" analog still camera. The unfocusing result of an insufficient light for"
+" the auto-focus lens."
+msgstr ""
+"De originele wazige kleurenfoto voor de reparatie. Deze foto is genomen"
+" met "
+"een analoge fotocamera. Onvoldoende licht voor de auto-focus lens zorgde "
+"ervoor dat de foto niet in focus is."
+
+#: ../../image_editor/enhancement_tools.rst:422
+msgid ""
+"Fixed image using simple sharpening filter. Sharpness setting is 80."
+msgstr ""
+"Gerepareerde afbeelding door gebruik van verscherpen. Instelling voor "
+"scherpte is 80."
+
+#: ../../image_editor/enhancement_tools.rst:423
+#, fuzzy
+msgid ""
+"Fixed image using unsharp mask filter. Settings are Radius=50, Amount ="
+" 5, and Threshold=0."
+msgstr ""
+"Gerepareerde foto door gebruik van onscherpte masker. Straal=50, "
+"Hoeveelheid=5 en Drempel=0."
+
+#: ../../image_editor/enhancement_tools.rst:424
+#, fuzzy
+msgid ""
+"Fixed image using Refocus filter. Settings are Circular Sharpness=1.3,"
+" Correlation=0.5, Noise Filter=0.020, Gaussian Sharpness=0 and Matrix"
+" Size=5."
+msgstr ""
+"Gerepareerde afbeelding door gebruik van opnieuw focusseren. De"
+" instellingen "
+"zijn Circulaire scherpte=1,3, Correlatie=0,5, Ruisfilter=0,020,"
+" Gaussiaanse "
+"scherpte=0 en Matrixgrootte=5."
+
+#: ../../image_editor/enhancement_tools.rst:429
+#, fuzzy
+msgid ""
+"For more information about correction of sharpness methods used in"
+" digital imagery, you can find a technical comparison at this url."
+msgstr ""
+"Voor meer informatie over het gebruik van methodes voor verscherping in "
+"digitale fotografie kunt u een technische vergelijking vinden op <ulink"
+" url="
+"\"http://www.bialith.com/Research/BARclockblur.htm\">deze webpagina<"
+"/ulink>."
