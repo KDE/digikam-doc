@@ -122,7 +122,7 @@ Take care that ReStructuredText file (.rst) specificities:
 
 - It's an indent featured markup language. Respect well the spaces on front of blocks to prevent compilation warnings.
 - Indent must be done with **4 spaces**, never use tabs at all.
-- Always save ResStructuredText file using **UNIX end-of-line**, check well your editor settings before.
+- Always save ResStructuredText file using **UNIX end-of-line**, Check your editor settings before.
 - Never use space or minus in file name, uses underscore instead.
 - Never uses capitalized forms in filenames, always uses lowercase characters.
 
