@@ -1,6 +1,6 @@
 .. meta::
-   :description: Overview to digital Asset Management
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :description: Overview to Digital Asset Management
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, digital, asset, management
 
 .. metadata-placeholder
 
@@ -15,7 +15,7 @@ Overview
 
 .. contents::
 
-...in the end, photographs need a lot of care. I hope it's you who said this.
+...in the end, photographs need a lot of care. We hope it's you who said this.
 
 Can you find your digital photographs when you need them? Or do you spend more time sifting through your hard drive and file cabinets than you would like? Do you have a systematic approach for assigning and tracking content data on your photos? If you make a living as a photographer, do your images bear your copyright and contact information, or do they circulate in the marketplace unprotected? Do you want your future grandchildren to admire your photographs you have taken yesterday? How do you ensure backup and the correctness of your data? How to prepare to change your computer, your hard disk, the software, the operating system and still manage to find your pictures or movies?
 
