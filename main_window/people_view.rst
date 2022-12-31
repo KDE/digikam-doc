@@ -204,7 +204,7 @@ Once you have a tag assigned to a few photographs you can have digiKam looking i
 
 To start the Face Recognition you click Scan. The process will tag every recognized face with the appropriate People tag out of your tag tree and the corresponding thumbnail will disappear from the **Unknown** tag selection.
 
-.. figure:: images/mainwindow_faces_tag_recognizeded_iconview.webp
+.. figure:: images/mainwindow_faces_tag_recognized_iconview.webp
     :alt:
     :align: center
 
