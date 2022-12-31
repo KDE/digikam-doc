@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Main Window People View
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, faces, detection, recognition, management, deep-learning, people
 
 .. metadata-placeholder
 
@@ -85,7 +85,7 @@ Note that the thumbnails presented here are not showing the whole image. They sh
 
 If you don't see them, click the people button |icon_showfacetags| in the upper left corner of the preview. If there is more than one face tag on the image it will also be represented by more than one thumbnail. This is the case with the screenshot above take in preview mode.
 
-.. figure:: images/mainwindow_face_tag_edit.webp
+.. figure:: images/mainwindow_face_tag_editor_iconview.webp
     :alt:
     :align: center
 
