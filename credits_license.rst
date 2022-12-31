@@ -22,7 +22,7 @@ Screenshots and screencasts
     Copyright 2022-2023 licensed under the Creative Commons License SA 4.0 unless stated otherwise.
 
 Sphinx/ReStructuredText
-    Copyright 2001-2021 licensed under the terms of the GNU Free Documentation License 1.2+.
+    Copyright 2001-2023 licensed under the terms of the GNU Free Documentation License 1.2+.
 
 Documentation authors
 ---------------------
