@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-30 00:43+0000\n"
-"PO-Revision-Date: 2022-12-29 09:50+0200\n"
+"PO-Revision-Date: 2022-12-30 20:01+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -27,6 +27,8 @@ msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy"
 msgstr ""
+"digiKam, документація, підручник користувача, керування фотографій, "
+"відкритий код, вільний, навчання, простий"
 
 #: ../../image_editor/enhancement_tools.rst:14
 msgid "Enhancement Tools"
@@ -38,7 +40,7 @@ msgstr "Зміст"
 
 #: ../../image_editor/enhancement_tools.rst:19
 msgid "Lens Distortion Correction"
-msgstr ""
+msgstr "Виправлення викривлення, спричиненого об’єктивом"
 
 #: ../../image_editor/enhancement_tools.rst:21
 msgid ""
@@ -75,47 +77,59 @@ msgid ""
 "This tool treats the geometrical distortions. Chromatic aberrations will not "
 "be corrected by this tool."
 msgstr ""
+"За допомогою цього інструменту виконуються геометричні викривлення. Цей "
+"інструмент не може виправляти наслідки хроматичної аберації."
 
 #: ../../image_editor/enhancement_tools.rst:29
 msgid ""
 "The following figures explain the main types of geometrical distortions:"
 msgstr ""
+"На наступних зображеннях наведено основні типи геометричних викривлень:"
 
 #: ../../image_editor/enhancement_tools.rst:31
 msgid "(1): pincushion distortion."
-msgstr ""
+msgstr "(1): викривлення втягування."
 
 #: ../../image_editor/enhancement_tools.rst:33
 msgid "(2): no distortion."
-msgstr ""
+msgstr "(2): без викривлення."
 
 #: ../../image_editor/enhancement_tools.rst:35
 msgid "(3): barrel distortion."
-msgstr ""
+msgstr "(3): викривлення здуття."
 
 #: ../../image_editor/enhancement_tools.rst:41
 msgid ""
 "A bit of explanation first. The geometrical corrections use 4th-order "
 "polynomial coefficients:"
 msgstr ""
+"Спочатку трохи пояснень. Для геометричного виправлення використовуються "
+"коефіцієнти полінома четвертого степеня:"
 
 #: ../../image_editor/enhancement_tools.rst:43
 msgid ""
 "The 1st-order coefficient changes the size of the image. The tool calls this "
 "Zoom."
 msgstr ""
+"Коефіцієнт при змінній першого порядку визначає розмір зображення. У "
+"інструменті його названо «Масштаб»."
 
 #: ../../image_editor/enhancement_tools.rst:45
 msgid ""
 "The 2nd-order coefficient treats the main geometrical distortion of lenses "
 "and can correct the convex or concave shape of the image."
 msgstr ""
+"Коефіцієнт при змінній у другому степені визначає основне геометричне "
+"викривлення лінз і може виправити опуклу чи увігнуту форму зображення."
 
 #: ../../image_editor/enhancement_tools.rst:47
 msgid ""
 "The 3rd-order coefficient has a similar rounding effect but levels off "
 "towards the edges. This correction is not employed in the tool."
 msgstr ""
+"Коефіцієнт при змінній у третьому степені визначає подібний до попереднього "
+"коефіцієнта ефект округлення, але з ухилом до країв. Подібне виправлення не "
+"задіяне у роботі інструменту."
 
 #: ../../image_editor/enhancement_tools.rst:49
 msgid ""
@@ -123,10 +137,16 @@ msgid ""
 "rounding. Combining it with the 2nd-order correction the geometrical "
 "distortions can be almost completely eliminated."
 msgstr ""
+"Коефіцієнт при змінній у 4 степені виправляє дальні краї після заокруглення, "
+"яке виникає внаслідок використання степеня 2. У комбінації з виправленням "
+"другого степеня цей коефіцієнт може майже повністю усунути геометричні "
+"викривлення."
 
 #: ../../image_editor/enhancement_tools.rst:53
 msgid "Four sliders let you set the distortion correction filter:"
 msgstr ""
+"Керувати фільтром виправлення викривлення можна за допомогою чотирьох "
+"параметрів:"
 
 #: ../../image_editor/enhancement_tools.rst:55
 msgid ""
@@ -134,6 +154,9 @@ msgid ""
 "values correct barrel distortions, while positive values correct pincushion "
 "distortion."
 msgstr ""
+"Основне: це значення керує величиною плоского "
+"викривлення. Від’ємні значення виправляють викривлення здуття, а додатні "
+"значення виправляють викривлення втягування."
 
 #: ../../image_editor/enhancement_tools.rst:57
 msgid ""
@@ -141,12 +164,20 @@ msgid ""
 "control has more effect at the edges of the image than at the center. For "
 "most lenses, the Edge parameter has the opposite sign of the Main parameter."
 msgstr ""
+"Край: значення цього параметра керує величиною "
+"викривлення 4-го степеня. Це значення більшою мірою змінює вигляд зображення "
+"на краях, а не у центрі. Для більшості об’єктивів знак значення параметра "
+"Край має бути протилежним до знаку значення параметра "
+"Основне."
 
 #: ../../image_editor/enhancement_tools.rst:59
 msgid ""
 "Zoom: this value rescales the overall image size (1st-order correction). "
 "Negative values zoom out of the image, while positive values zoom in."
 msgstr ""
+"Масштаб: значення цього параметра змінює загальний "
+"масштаб зображення (виправлення 1-го степеня). Від’ємні значення призводять "
+"до зменшення зображення, додатні — до збільшення."
 
 #: ../../image_editor/enhancement_tools.rst:61
 msgid ""
@@ -154,6 +185,9 @@ msgid ""
 "values decrease the brightness image corners, while positive values increase "
 "it."
 msgstr ""
+"Підсвічування: за допомогою цього параметра можна "
+"визначити яскравість у кутах зображення. Від’ємні значення призведуть до "
+"зменшення яскравості у кутах, додатні — до збільшення."
 
 #: ../../image_editor/enhancement_tools.rst:63
 msgid ""
@@ -162,6 +196,11 @@ msgid ""
 "crossed mesh pattern. The values you apply to your image will be saved and "
 "come up with the same values as default the next time you call the tool."
 msgstr ""
+"Щоб допомогти вам у виборі найкращих параметрів фільтра, на панелі "
+"інструменту передбачено мініатюрну область перегляду, де виправлення "
+"викривлення застосовано до прямокутної сітки. Значення параметрів, які ви "
+"застосуєте до зображення, буде збережено. Програма використає їх як типові "
+"для наступних сеансів роботи з інструментом."
 
 #: ../../image_editor/enhancement_tools.rst:67
 msgid ""
@@ -170,6 +209,11 @@ msgid ""
 "corrections should be the very first step on the original image. If you crop "
 "the image and then use barrel correction the effect would be obviously wrong."
 msgstr ""
+"Виправлення викривлень здуття-втягування слід виконувати до обрізання або "
+"зміни розмірів зображення (зокрема до виправлення перспективи). Фактично, "
+"виправлення здуття-втягування має бути найпершим кроком у обробці знімка. "
+"Якщо ви обріжете зображення, а потім спробуєте виправити здуття, результат "
+"буде очевидно помилковим."
 
 #: ../../image_editor/enhancement_tools.rst:69
 msgid ""
@@ -180,6 +224,14 @@ msgid ""
 "freeze the dashed lines position. Now, adjust the barrel/pincushion "
 "correction to align with the guide."
 msgstr ""
+"Щоб допомогти вам у пошуках найкращого виправлення, у інструменті "
+"передбачено вертикальну і горизонтальну напрямні. Наведіть вказівник миші на "
+"область попереднього перегляду зображення. У відповідь програма покаже "
+"штрихові напрямні. Пересуньте вказівник на важливе місце на зображенні, "
+"наприклад, поверхню морі або стіну будинку, і клацніть лівою кнопкою миші, "
+"щоб зафіксувати розташування штрихових ліній. Після цього налаштуйте "
+"виправлення здуття-втягування так, щоб лінії об’єктів на зображенні було "
+"вирівняно за напрямними."
 
 #: ../../image_editor/enhancement_tools.rst:71
 msgid ""
@@ -197,6 +249,11 @@ msgid ""
 "you hold your camera by hand you almost always introduce some kind of slight "
 "perspective distortion."
 msgstr ""
+"Для більшості зображень буде достатньо скористатися виправленням здуття, але "
+"для деяких знімків, зокрема знімків для обкладинок, настінних зображень, "
+"картин наступним логічним кроком є виправлення перспективи, яке зробить всі "
+"кути прямими. Зауважте, що, якщо під час зйомки ви тримаєте фотоапарат в "
+"руках, майже завжди буде помітним деяке викривлення перспективи."
 
 #: ../../image_editor/enhancement_tools.rst:76
 msgid "Hot Pixels Correction"
@@ -407,7 +464,7 @@ msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:128
 msgid "Local Contrast Tool"
-msgstr ""
+msgstr "Засіб локальної контрастності"
 
 #: ../../image_editor/enhancement_tools.rst:130
 msgid "The Local Contrast tool render pseudo-HDR image."
@@ -430,6 +487,24 @@ msgid ""
 "rather straightforward to use, so you don’t have to understand all its "
 "intricacies in order to achieve pleasing results."
 msgstr ""
+"Існує декілька способів створення зображення із високим динамічним "
+"діапазоном для покращення фотографій з недо- і переекспонованими областями "
+"У фотокамерах звичайні інструменти надають вам змогу об’єднати декілька "
+"знімків із різними експозиціями у одну фотографію із ідеальною експозицією "
+"Ці інструменти дають добрі результати, але мають значні обмеження, зокрема "
+"працюють лише для статичних об’єктів. Що ж робити, якщо у вас лише один "
+"знімок або знімок із рухомими об’єктами? Ви можете спробувати скористатися "
+"інструментом локальної контрастності. Його дію засновано на засобах"
+" відображення "
+"тонів низького динамічного діапазону, які розроблено для покращення "
+"динамічного діапазону зменшенням його загальної контрастності із збільшенням "
+"локальної контрастності. Ці засоби створюють ненасичену і розмиту версію "
+"фотографії. Далі, вони поєднують канали RGB початкової фотографії зі "
+"каналами ненасиченого розмитого зображення із використанням лінійної або "
+"степеневої функції. Звучить складно? Не переймайтеся, користуватися "
+"інструментом локальної контрастності просто, отже вам не доведеться "
+"ознайомлюватися із усіма тонкощами його роботи, щоб отримати задовільні "
+"результати."
 
 #: ../../image_editor/enhancement_tools.rst:136
 msgid ""
@@ -448,6 +523,10 @@ msgid ""
 "should use it with care: sometimes it can do more damage than good, "
 "producing unnaturally looking photos."
 msgstr ""
+"Хоча інструмент локальної контрастності може здаватися простим інструментом "
+"покращення фотографій, вам слід бути обережним з його використанням: іноді "
+"він може завдати більше шкоди, ніж принести користі. Результат його "
+"застосування може виглядати неприродно."
 
 #: ../../image_editor/enhancement_tools.rst:141
 msgid "Noise Reduction"
@@ -472,6 +551,8 @@ msgid ""
 "If you want more information about what's digital camera sensor noise, "
 "please take a look in this tutorial."
 msgstr ""
+"Якщо ви бажаєте дізнатися більше про природу сенсорного шуму цифрових "
+"фотоапаратів, будь ласка, ознайомтеся з цим підручником."
 
 #: ../../image_editor/enhancement_tools.rst:151
 msgid ""
@@ -479,6 +560,10 @@ msgid ""
 "using a high sensitivity ISO setting. It shows grainy noise which can be "
 "reduced successfully with this tool."
 msgstr ""
+"Вище наведено типовий знімок, створений за допомогою цифрового фотоапарата з "
+"налаштуваннями на високу чутливість ISO. На знімку можна бачити зернистий "
+"шум, який успішно усувається за допомогою інструменту, який ми обговорювали "
+"вище."
 
 #: ../../image_editor/enhancement_tools.rst:153
 msgid ""
@@ -491,6 +576,17 @@ msgid ""
 "for comparison. On the bottom of preview area, you can see Zoom Factor "
 "settings to magnify an area of the image."
 msgstr ""
+"На панелі зображення, розміри якої ви можете змінити, буде показано "
+"попередній перегляд ділянки початкового зображення, за допомогою якого ви "
+"зможете здійснювати панорамування зображенням. Пересувайте червоний "
+"прямокутник, щоб вибрати ділянку, яка допоможе вам визначитися з "
+"оптимальними параметрами фільтрування. На панелі попереднього перегляду буде "
+"показано результат дії фільтра з поточними параметрами. Її розташування "
+"можна змінити за допомогою натискання піктограм, розташованих над попереднім "
+"переглядом початкового зображення. На знімку вікна показано перше з можливих "
+"компонувань, за якого показано однакову ділянку для порівняння. Під областю "
+"попереднього перегляду розташовано параметри «Масштабу», "
+"за допомогою яких можна змінити масштаб ділянки зображення."
 
 #: ../../image_editor/enhancement_tools.rst:155
 msgid "You can see below a full description of all parameters:"
@@ -540,14 +636,18 @@ msgstr ""
 #: ../../image_editor/enhancement_tools.rst:390
 msgid "Defaults: this button resets all settings to default values."
 msgstr ""
+"Типові: за допомогою цієї кнопки можна відновити типові "
+"значення параметрів."
 
 #: ../../image_editor/enhancement_tools.rst:169
 msgid "Blur Tool"
-msgstr ""
+msgstr "Інструмент розмивання"
 
 #: ../../image_editor/enhancement_tools.rst:171
 msgid "The Blur Tool is dedicated to soft an image."
 msgstr ""
+"Інструмент розмивання призначено для пом’якшення "
+"переходів між областями на зображенні."
 
 #: ../../image_editor/enhancement_tools.rst:173
 msgid ""
@@ -578,22 +678,37 @@ msgid ""
 "The smoothing happens along the image curvatures, thus preserving the "
 "meaningful content much alike our human eye would want it."
 msgstr ""
+"Цей фантастичний фільтр відновлення є новітньою розробкою, яка надає "
+"безпрецедентну можливість вилучати більшість небажаних елементів зображення "
+"без застосування професійних інструментів. Фільтр добре адаптовано до "
+"зображень низької якості з Гаусовим шумом, зернистістю плівки, подряпинами "
+"або дефектами стискання, а також локальними пошкодженнями, типовими для "
+"цифрових (оригінальних чи оцифрованих) зображень. Згладжування виконується "
+"вздовж кривих ліній зображення, отже змістовна частина зображення стає дуже "
+"подібною до того, що бажало б бачити людське око."
 
 #: ../../image_editor/enhancement_tools.rst:186
 msgid ""
 "The tool comes with several presets as starting points and to simplify the "
 "restoration. The preset settings available are listed below:"
 msgstr ""
+"У інструменті передбачено декілька типових наборів налаштувань, які можна "
+"використати як початкові для спрощення процесу відновлення. Ви можете "
+"змінювати такі параметри наборів налаштувань:"
 
 #: ../../image_editor/enhancement_tools.rst:188
 msgid ""
 "None: Using most common default filter settings not optimized for any "
 "particular purpose."
 msgstr ""
+"Жодного: використовувати найпоширеніші типові параметри "
+"фільтра не оптимізовані для жодної певної мети."
 
 #: ../../image_editor/enhancement_tools.rst:190
 msgid "Reduce Uniform Noise: Optimum settings for image noise due to sensors."
 msgstr ""
+"Прибрати однорідний шум: оптимальний набір параметрів "
+"для усування сенсорного шуму."
 
 #: ../../image_editor/enhancement_tools.rst:192
 msgid ""
@@ -602,12 +717,20 @@ msgid ""
 "are some compression \"artifacts\" - slight defaults showing in the "
 "decompressed image. This setting aims at correcting this problem."
 msgstr ""
+"Прибрати дефекти JPEG: стискання JPEG не є ідеальним, "
+"фактично, для зображень певних типів це стискання дає результати дуже далекі "
+"від ідеальних. Через алгоритм стискання з втратою якості під час стискання "
+"виникають «дефекти», які проявляються на розпакованому зображенні. Цей "
+"фільтр призначено для виправлення подібних проблем."
 
 #: ../../image_editor/enhancement_tools.rst:194
 msgid ""
 "Reduce Texturing: Optimized to remove artifacts from scanning, digitizing or "
 "Moire patterns."
 msgstr ""
+"Прибрати текстуризацію: оптимізовано для вилучення "
+"дефектів, які є наслідком сканування, цифрування або появи муарових "
+"візерунків."
 
 #: ../../image_editor/enhancement_tools.rst:196
 msgid ""
@@ -624,6 +747,14 @@ msgid ""
 "that no sharpening is required afterwards. Note that Detail Preservation "
 "must be always inferior to Anisotropy."
 msgstr ""
+"Параметр «Рівень деталізації» p [0, 100]: керує рівнем "
+"збереження викривлень (елементів зображення). За використання менших значень "
+"буде застосовано рівномірне згладжування, більші ж значення призведуть до "
+"переважного згладжування однорідних ділянок і збільшення різкості на деталях "
+"(невеличких елементах зображення). Якщо скористатися значенням 0,9, програма "
+"достатньо добре збереже деталі, отже збільшення різкості під час наступної "
+"обробки не знадобиться. Зауважте, що «Рівень деталізації» "
+"є лише допоміжним параметром до пункту «Анізотропія»."
 
 #: ../../image_editor/enhancement_tools.rst:202
 msgid ""
@@ -632,12 +763,23 @@ msgid ""
 "grain or CCD kind of noise a high value will result in wave-like pattern, "
 "whereas JPEG artifacts are suited for values close to 1."
 msgstr ""
+"Анізотропія alpha [0, 100]: малі значення призведуть до "
+"рівномірного згладжування у всіх напрямках, а значення, близькі до 1 — до "
+"згладжування лише у одному напрямку. Якщо на вашому зображенні присутні "
+"ефекти, які є наслідком зернистості плівки або шумності ПЗЗ, використання "
+"великих значень цього параметра призведе до утворення хвилеподібних "
+"візерунків, а з дефекти JPEG краще боротися саме за допомогою значень, "
+"близьких до 1."
 
 #: ../../image_editor/enhancement_tools.rst:204
 msgid ""
 "Smoothing [0, 500]: this sets the maximum overall smoothing factor (when p "
 "defines the relative smoothing). Set it according to the noise level."
 msgstr ""
+"Згладжування [0, 500]: за допомогою цього параметра "
+"можна встановити максимальний загальний коефіцієнт згладжування (якщо p "
+"визначає відносне згладжування). Встановіть його відповідно до рівня "
+"шумності."
 
 #: ../../image_editor/enhancement_tools.rst:206
 msgid ""
@@ -649,12 +791,22 @@ msgid ""
 "Also if you want to achieve a 'van Gogh' turbulence effect, setting it "
 "higher than 3 is recommended."
 msgstr ""
+"Регулярність [0, 100]: цей параметр, пов’язано з "
+"однорідністю згладжування. Уявіть собі процес згладжування як складання "
+"зображення елементів стільників. Тоді параметр регулярності відповідатиме "
+"розміру стільника. Збільшення цього значення призведе до збільшення "
+"рівномірності згладжування. Цей параметр є важливим, якщо на зображенні "
+"багато шуму, оскільки у такому разі програмі важко оцінити геометрію "
+"об’єктів. Крім того, якщо ви бажаєте отримати ефекти вихорів у стилі ван "
+"Гога, рекомендуємо вам використати значення більші за 3."
 
 #: ../../image_editor/enhancement_tools.rst:208
 msgid ""
 "Filter Iterations: number of times the blurring algorithm is applied. "
 "Usually 1 or 2 is sufficient."
 msgstr ""
+"Кількість ітерацій: кількість послідовних застосувань "
+"розмивання. Зазвичай, достатньо 1 або 2."
 
 #: ../../image_editor/enhancement_tools.rst:212
 msgid ""
@@ -662,12 +814,20 @@ msgid ""
 "alpha is chosen small, da should also be chosen small. But beware, small "
 "angles result in long runs! Choose it as large as you can accept."
 msgstr ""
+"Крок зміни кута da [5, 90]: кутова інтеграція параметра "
+"анізотропії alpha. Якщо вибрано мале значення alpha, слід вибрати мале "
+"значення da. Але майте на увазі: малі кути збільшують час обробки! Оберіть "
+"найбільше з прийнятних значень."
 
 #: ../../image_editor/enhancement_tools.rst:214
 msgid ""
 "Integral Step [0.1, 10]: spatial integration step width in terms of pixels. "
 "Should remain less than 1 (sub-pixel smoothing) and never be higher than 2."
 msgstr ""
+"Крок інтегрування [0,1; 10]: крок просторового "
+"інтегрування у пікселях. Варто вказувати значення, що не перевищують 1 "
+"(субпіксельне згладжування). Використовувати значення, вищі за 2, взагалі не "
+"варто."
 
 #: ../../image_editor/enhancement_tools.rst:216
 msgid ""
@@ -675,6 +835,9 @@ msgid ""
 "only marginal and you lose a factor of 2 in speed. Our recommendation is to "
 "leave it off."
 msgstr ""
+"Використовувати лінійну інтерполяцію: виграш у якості, "
+"у разі позначення цього пункту, буде незначним, але призведе до зменшення "
+"швидкості у 2 рази. Рекомендуємо вам не позначати цей пункт."
 
 #: ../../image_editor/enhancement_tools.rst:218
 msgid ""
@@ -682,6 +845,10 @@ msgid ""
 "Restoration filter settings that you have set can be saved to the filesystem "
 "in a text file and loaded later."
 msgstr ""
+"Кнопки «Зберегти як» і «Завантажити» "
+"використовуються для виконання відповідних дій. Будь-які параметри фільтра "
+"відновлення фотографій, які ви встановили, може бути збережено у текстовому "
+"файлі файлової системи, а потім знову завантажено."
 
 #: ../../image_editor/enhancement_tools.rst:222
 msgid ""
@@ -689,6 +856,10 @@ msgid ""
 "it can take a long time to run and cause high CPU load. You may always abort "
 "computation by pressing Abort button during preview rendering."
 msgstr ""
+"Інструмент відновлення фотографії сам є (порівняно) швидким, але через обсяг "
+"завдання може працювати досить довго і значно навантажувати процесор. Ви "
+"будь-коли можете перервати процедуру обчислення натисканням кнопки "
+"«Перервати»."
 
 #: ../../image_editor/enhancement_tools.rst:225
 msgid "Vignetting Correction"
@@ -708,6 +879,13 @@ msgid ""
 "substantially reducing the light reaching the sensor there. But telelenses "
 "may show vignetting too."
 msgstr ""
+"Широкоформатні об’єктиви, особливо ті з них, що використовуються для "
+"створення фотографій середнього або великого формату, часто мають дефекти "
+"пов’язані з нерівномірним освітленням площини світлочутливої матриці "
+"фотоапарата. Це призводить до «віньєтування» (затінення) країв і кутів "
+"знімка, суттєво зменшуючи світловий потік, що падає на датчики матриці у "
+"відповідних точках. Об’єктиви приладів відеозапису також мають подібні "
+"дефекти віньєтування."
 
 #: ../../image_editor/enhancement_tools.rst:234
 msgid ""
@@ -720,6 +898,14 @@ msgid ""
 "which occurs when camera movements are employed for perspective or plane of "
 "focus adjustment."
 msgstr ""
+"Традиційним вирішенням проблеми є додавання до об’єктива «центрального "
+"фільтра». Це фільтр нейтральний фільтр щільності на оптичній вісі об’єктива, "
+"прозорий на периметрі зі щільністю, що змінюється обернено до віньєтування "
+"об’єктивом. Центральний фільтр має багато переваг: оскільки виправлення "
+"відбувається на передньому плані об’єктива, він не лише автоматично "
+"виправляє знімки на всій площі кадру, але і компенсує позацентрове "
+"віньєтування, яке є наслідком руху фотоапарата під час пошуку перспективи "
+"або площини фокусування."
 
 #: ../../image_editor/enhancement_tools.rst:236
 msgid ""
@@ -730,6 +916,12 @@ msgid ""
 "impossible and motion blur becomes a problem when photographing moving "
 "objects."
 msgstr ""
+"Але у цього способу є і недоліки. Для багатьох центральних фільтрів потребує "
+"використання діафрагмових чисел 1,5 або 2, що, у свою чергу, може вимагати "
+"значного сповільнення руху затвора (оскільки широкоформатні об’єктиви, "
+"навіть з центральними фільтрами, найкраще використовувати для апертур f/16 "
+"або навіть менших), який робить неможливим зйомку без штатива. Крім того, "
+"постає проблема розмивання на фотографії об’єктів, що рухаються."
 
 #: ../../image_editor/enhancement_tools.rst:238
 msgid ""
@@ -741,13 +933,16 @@ msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:241
 msgid "Using the vignetting correction tool"
-msgstr ""
+msgstr "Користування інструментом виправлення віньєтування"
 
 #: ../../image_editor/enhancement_tools.rst:245
 msgid ""
 "Five sliders give you control over the vignetting correction filter, and "
 "three more over the target image exposure:"
 msgstr ""
+"Керувати фільтром виправлення віньєтування можна за допомогою п’яти "
+"повзунків та ще трьох повзунків, призначених для керування експозицією "
+"зміненого зображення:"
 
 #: ../../image_editor/enhancement_tools.rst:247
 msgid ""
@@ -757,6 +952,12 @@ msgid ""
 "coincidence, a factor of 2 in luminosity). Increase the amount to compensate "
 "for a greater degree of vignetting; reduce it for less."
 msgstr ""
+"Потужність: значення цього параметри визначає ступінь "
+"послаблення яскравості світла фільтром у точці максимальної потужності. "
+"Типовим значенням потужності є 2,0, що відповідає оптичному фільтру з "
+"апертурою фільтра 1 f (або, за невідповідності, коефіцієнту 2 у яскравості "
+"світла). Збільште значення потужності, щоб виправити сильніше віньєтування, "
+"зменшіть, якщо віньєтування є незначним."
 
 #: ../../image_editor/enhancement_tools.rst:249
 msgid ""
@@ -770,6 +971,16 @@ msgid ""
 "the filter toward the edges; a power of 0.5 causes the amount to fall as the "
 "square root of the distance from the center."
 msgstr ""
+"Степінь: значення цього параметра визначає показник "
+"степеневої функції, за якою інтенсивність фільтра спадає від точки "
+"максимальної величини до периметра. Типове значення 1 визначає лінійне "
+"відносно відстані від центра спадання потужності фільтра. Показники, більші "
+"за 1,0, спричиняють швидше спадання (наприклад, показник, рівний 2, дає "
+"спадання потужності за квадратичною функцією відстані від центра) і "
+"концентрують ефект фільтрування у центрі фільтра. Показники зі значеннями "
+"меншими за 1 розподіляють потужність фільтра у напрямку периметра; якщо "
+"вибрати показник рівний 0,5, потужність спадатиме як функція кореня "
+"квадратного з відстані від центра."
 
 #: ../../image_editor/enhancement_tools.rst:251
 msgid ""
@@ -787,6 +998,21 @@ msgid ""
 "which extends well beyond the edges of the film, requiring a radius setting "
 "greater than 1 to simulate a center filter covering the entire image circle."
 msgstr ""
+"Радіус: значення цього параметра визначає радіус, "
+"відносно половини діагоналі знімка, на якому потужність фільтра спадає до "
+"нуля (або, іншими словами, фільтр стає прозорим). Типове значення, рівне "
+"1,0, вказує на прозорість фільтра у кутах знімка. Визначення радіуса "
+"більшого за 1 поширює вплив ефекту центрального фільтрування на точки, "
+"розташовані поза межами знімка. Значення ж радіуса менші за одиницю "
+"обмежують дію фільтра лише частиною зображення. Якщо компенсація "
+"віньєтування об’єктивом використовується для виправлення дефектів "
+"фотоапаратів з широкоформатними або середньоформатними об’єктивами, типове "
+"значення параметра радіуса, 1, рідко буває правильним! Такі об’єктиви часто "
+"«вкривають» коло зображення, значно більше за область кадру плівки, щоб "
+"уможливити рух фотоапарата, призначені для керування перспективою і фокусом, "
+"а отже мають область віньєтування, яка є значно ширшою за кадр плівки. Отже, "
+"у такому разі слід використовувати значення радіуса більші за 1, щоб "
+"зімітувати центральний фільтр, що вкриває всю область зйомки."
 
 #: ../../image_editor/enhancement_tools.rst:253
 msgid ""
@@ -834,7 +1060,7 @@ msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:264
 msgid "The vignetting correction tool in action"
-msgstr ""
+msgstr "Робота інструменту виправлення віньєтування"
 
 #: ../../image_editor/enhancement_tools.rst:266
 msgid ""
@@ -843,10 +1069,16 @@ msgid ""
 "much less. A brightness and contrast correction is also applied to the "
 "target image by this tool."
 msgstr ""
+"Нижче наведено приклад застосування фільтра усування віньєтування, "
+"застосованого до зображення. На початковому зображенні, позначеному (1), "
+"помітне віньєтування у кутах, на виправленому зображення, позначеному (2), "
+"віньєтування значно зменшено. За допомогою інструмента усування віньєтування "
+"до виправленого зображення також було застосовано корекцію яскравості та "
+"контрастності."
 
 #: ../../image_editor/enhancement_tools.rst:268
 msgid "The values used for this example are:"
-msgstr ""
+msgstr "Для цього прикладу було використано такі значення:"
 
 #: ../../image_editor/enhancement_tools.rst:270
 msgid "Density = 2.6."
@@ -1002,7 +1234,7 @@ msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:330
 msgid "Softening a Photograph"
-msgstr ""
+msgstr "Пом’якшення переходів між кольорами на фотографії"
 
 #: ../../image_editor/enhancement_tools.rst:332
 msgid ""
@@ -1194,7 +1426,8 @@ msgid ""
 msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:392
-msgid "Below, you can see few hints to help you work with the refocus plug-in:"
+msgid ""
+"Below, you can see few hints to help you work with the refocus plug-in:"
 msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:394
