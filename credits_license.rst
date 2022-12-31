@@ -18,11 +18,11 @@ Credits and License
 Documentation copyright
 -----------------------
 
-Sphinx/RestructuredText version
+Screenshots and screencasts
     Copyright 2022-2023 licensed under the Creative Commons License SA 4.0 unless stated otherwise.
 
-DocBook version
-    Copyright 2001-2021 licensed under the terms of the GNU Free Documentation License.
+Sphinx/ReStructuredText
+    Copyright 2001-2021 licensed under the terms of the GNU Free Documentation License 1.2+.
 
 Documentation authors
 ---------------------
