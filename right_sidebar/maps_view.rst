@@ -19,7 +19,7 @@ There are four tools regarding geolocation in digiKam and two in Showfoto:
 
     - The **Map Mode** of the Image Area which displays images with GPS data on a map depending on the selection on the Left Sidebar, e.g. the images in the album you selected in the Album View, the images with a certain tag assigned (selected in the Tag View), with a certain label and so on. This is only available in digiKam.
 
-    - The :ref:`this handbook section <mapsearch_view>` on the Left Sidebar of digiKam which is the search tool for finding images by their GPS data. This is also only available in digiKam.
+    - The :ref:`Maps Search section <mapsearch_view>` on the Left Sidebar of digiKam which is the search tool for finding images by their GPS data. This is also only available in digiKam.
 
     - The :ref:`Geolocation Editor <geoeditor_overview>` which is accessible via :menuselection:`Item --> Edit Geolocation...` :kbd:`Ctrl+Shift+G` (:menuselection:`File --> Edit Geolocation...` in Showfoto) and allows to set and to edit GPS data.
 

@@ -1,6 +1,6 @@
 .. meta::
    :description: A Typical Digital Asset Management Workflow
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, digitla, asset, management, workflow
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, digital, asset, management, workflow
 
 .. metadata-placeholder
 
