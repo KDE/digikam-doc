@@ -29,6 +29,12 @@ digiKam relies on `FFMpeg Multimedia framework <https://ffmpeg.org/>`_ to handle
 
 FFmpeg codec is available under Linux® desktop, MacOS, and Windows. You don't need to install extra video codecs on your computer.
 
+.. figure:: images/ffmpeg_features_list.webp
+    :alt:
+    :align: center
+
+    FFmpeg Features List is Available in digiKam :menuselection:`Help --> Components Info Dialog`
+
 Video Features
 --------------
 
