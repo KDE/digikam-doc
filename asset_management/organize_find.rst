@@ -53,12 +53,6 @@ The organization should be simple, unified and scalable, and it should be indepe
 
 Maybe you'll be happy with this structure. Holiday pictures can be quickly found by its location (unless you go to the same place every year), the rest will be organized by date. If you shoot enough pictures you want to create sub folders below the years as months e.g. 2008-01, 2008-02 etc. 'Export' would be a container for images to print or to put onto a website.
 
-.. figure:: images/dam_date_export_gdrive.webp
-    :alt:
-    :align: center
-
-    digiKam Propose a Hierarchical View of Shooting Dates to Export Items to a Remote Web Service
-
 The more professional photographer will have very different needs as there will be versions of photographs, archives, workflows, a constant influx of images of diverging themes, and a large quantity of everything. Within 10 year you'll have 95% archives and 5% work space files and you don't want to organize your structure around content!
 
 The consideration are these:
@@ -72,7 +66,15 @@ The consideration are these:
 Automatic Metadata Generation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-How to go about all this metadata business? Firstly, there are already a lot of **automatically generated metadata**: EXIF data and Makernotes. If you have configured digiKam with your identity section all imported images will be imprinted with this data set which includes copyrights, all automatic. If you have a GPS track recorded in parallel to your taking the photographs, you can geolocate those images in a single action using the Geolocation tool. Even if you brought back 1000 images from a shooting session, so far you'll not have spent more than 10 minutes to do all that. And by now you have all camera settings of every shot, lens data like zoom, focus, aperture etc., date and time, shooting location, copyrights, authorship, program used, and more. Not bad, isn't it? But we could have done more during the importing, we could have changed the file names to include the date, or place or theme, we could have changed the format to a lossless 16 bit per channel format, we could have automatically separated JPEG and RAW files into their folders. We actually recommend to auto-rename to match an event, a place or a theme. digiKam provides all date/calendar related grouping so that there's hardly a need for coding the date into the file name. Unless you'd like to do just that to browse your albums with another application that is not calendar savvy. You will buy a new camera one day or you have a second one already, sooner than you believe. The numbering scheme of that new camera will start over at typically IMG_0001.JPG again, creating identical file names to the ones you have already if you do not rename them. By renaming you lessen the chance of inadvertently overwriting them at a later date. Keep the new names clean, use alphanumerics, dashes, underscores and a single period prior to the file extension.
+How to go about all this metadata business? Firstly, there are already a lot of **automatically generated metadata**: EXIF data and Makernotes. If you have configured digiKam with your identity section all imported images will be imprinted with this data set which includes copyrights, all automatic. If you have a GPS track recorded in parallel to your taking the photographs, you can geolocate those images in a single action using the Geolocation tool. Even if you brought back 1000 images from a shooting session, so far you'll not have spent more than 10 minutes to do all that. And by now you have all camera settings of every shot, lens data like zoom, focus, aperture etc., date and time, shooting location, copyrights, authorship, program used, and more. Not bad, isn't it? But we could have done more during the importing, we could have changed the file names to include the date, or place or theme, we could have changed the format to a lossless 16 bit per channel format, we could have automatically separated JPEG and RAW files into their folders.
+
+.. figure:: images/dam_date_export_gdrive.webp
+    :alt:
+    :align: center
+
+    digiKam Propose a Hierarchical View of Shooting Dates Which can be Exported to a Remote Web Service Easily
+
+We actually recommend to auto-rename to match an event, a place or a theme. digiKam provides all date/calendar related grouping so that there's hardly a need for coding the date into the file name. Unless you'd like to do just that to browse your albums with another application that is not calendar savvy. You will buy a new camera one day or you have a second one already, sooner than you believe. The numbering scheme of that new camera will start over at typically IMG_0001.JPG again, creating identical file names to the ones you have already if you do not rename them. By renaming you lessen the chance of inadvertently overwriting them at a later date. Keep the new names clean, use alphanumerics, dashes, underscores and a single period prior to the file extension.
 
 We also recommend to switch-on the **Save Metadata** options in the digiKam settings page for metadata. This will ensure that EXIF, IPTC and XMP information is written into the file. If you forgot to do that you can always catch up by copying the metadata in the database to the files in one go (from the Album menu).
 
