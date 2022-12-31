@@ -138,7 +138,7 @@ Tagging and Keyword Assignment
 
 Tags are a hierarchical labeling system that you create as you add to it. The important thing to do is to create a system that suits your needs and habits. Are you a (semi)professional who wants to sell photographs to agencies, do you want to publish on a web gallery, or are you just the occasional amateur managing the visual family memory? For all these different use cases you want to design a tag structure that is adapted to it. If you configure it so, digiKam will write the whole hierarchy into XMP fields so that they can be used by your photographic agency using a different application of to automatically create title and caption for web exports. In any case it will serve you well to quickly find a specific picture again.
 
-.. figure:: images/dam_assign_tag.webp
+.. figure:: images/dam_assign_tags.webp
     :alt:
     :align: center
 
