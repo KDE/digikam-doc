@@ -63,6 +63,12 @@ The consideration are these:
 
     - Segregation of original and working files makes it easier to allocate the backup strategy and migration. You will always know if you look for an original or a derivative.
 
+.. figure:: images/dam_import_rename.webp
+    :alt:
+    :align: center
+
+    The digiKam Import Tool Allows to Create Albums and Rename Files Based on Items Properties
+
 Automatic Metadata Generation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
