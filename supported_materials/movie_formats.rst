@@ -1,6 +1,6 @@
 .. meta::
    :description: Movie File Formats Supported by digiKam
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, movies, formats
 
 .. metadata-placeholder
 
@@ -33,3 +33,9 @@ Video Features
 --------------
 
 With digiKam, you will be able to read video metadata, such as movie length, video frames per second, video size, and encoding options, in order to populate the database at scanning and to perform searches on your collection about video properties. You will be able to play video in embedded preview mode, and in a slideshow. This includes previewing video from your camera device before downloading (only with USB Mass Storage connection mode).
+
+.. figure:: images/preview_video_player.webp
+    :alt:
+    :align: center
+
+    digiKam Preview Mode Can Play Video With All Supported Movie Formats
