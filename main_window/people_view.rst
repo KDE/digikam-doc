@@ -176,7 +176,7 @@ Face Recognition
 
 Assigning People tags to face tags is an important prerequisite to Face Recognition. Very obviously digiKam can only recognize faces if it has something to compare with. So it's up to you to show it the ropes, which means in this case to tell digiKam: This is Lara, this is Juan, this is Peter and so forth. For that you would, after performing a Face Detection as described in the previous article, typically select the **unknown** tag on the Left Sidebar, click on a thumbnail and click, if necessary, on the Show Face Tags button |icon_showfacetags|.
 
-.. figure:: images/mainwindow_face_tag_assign_iconview.webp
+.. figure:: images/mainwindow_faces_tag_assign_iconview.webp
     :alt:
     :align: center
 
@@ -184,7 +184,7 @@ Assigning People tags to face tags is an important prerequisite to Face Recognit
 
 Now you should see the face tags of that photograph. Those which have a people (or other) tag already assigned will simply show the name of that tag. The others, showing **unknown** faces, will show a field and two buttons as in the screenshot of the previous article. In the field labeled **Who is this?** you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With **Confirm** you can save that to the database.
 
-.. figure:: images/mainwindow_face_tag_confirmed_iconview.webp
+.. figure:: images/mainwindow_faces_tag_confirmed_iconview.webp
     :alt:
     :align: center
 
