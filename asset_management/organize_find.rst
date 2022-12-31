@@ -19,17 +19,23 @@ We dare-say if you have more than 1000 photographs on your computer in no-DAM fa
 
 But as much as there is no such thing as a free lunch, there is no free cataloging or DAM - those who spend the initial time of building a systematic method of their own will be better off as time passes and the number of photographs multiplies. The ROI (return on investment) of DAM has been estimated in different studies to be better than 10. Keep in mind to be **concise, plan for the future (30-50y)**, do it once. The upcoming semantic web will totally integrate into and add value to a DAM environment.
 
-A case for doing DAM with digiKam
+A Case for Doing DAM with digiKam
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-digiKam provides a number of methods to classify photographs: filenames, albums, collections, time-stamp, tags, rating, GPS position and captions. As if this was not enough, you can search many standard metadata items like camera model, lens, coordinates, image size and many more. Metadata categories as listed here are in fact different **views** of your photo library. Combining these views is the very powerful method to narrow down the search for a file and to find it quickly. Imagine having 800 photos of your loved one. Searching for **Mary**, having more than **3 rating stars**, shot in **France** will surely leave you with very few candidates. In terms of selection criteria for a DAM system, digiKam fares very well in terms of completeness, versatility, speed, scalability, accuracy and openness.
+digiKam provides a number of methods to classify photographs: filenames, albums, collections, time-stamp, tags, rating, GPS position and captions. As if this was not enough, you can search many standard metadata items like camera model, lens, coordinates, image size and many more. Metadata categories as listed here are in fact different **views** of your photo library. Combining these views is the very powerful method to narrow down the search for a file and to find it quickly. Imagine having 800 photos of your loved one. Searching for **Salagou**, having more than **3 rating stars**, shot in **France** will surely leave you with very few candidates. In terms of selection criteria for a DAM system, digiKam fares very well in terms of completeness, versatility, speed, scalability, accuracy and openness.
+
+.. figure:: images/dam_geo_search_filtered.webp
+    :alt:
+    :align: center
+
+    A Geolocation Search Results in France Filtered by a String and Rating
 
 The key thing to remember is that you don't know how you or somebody else will try to find an image 2 years ahead of our time. You will remember past events in a different context, it's a fact of life. So if you can narrow down your search by remembering place or time or camera or theme or rating or owner you stand an infinitely better chance to find it quickly than by just one of those criteria or none. At the beginning, at the time of taking a photograph, all metadata is in your head (except for the EXIF data). If you do not transcribe some of it into your DAM system, it will be lost eventually as much as every event fades into oblivion over time.
 
 One distinction has to be interjected here between **private** and **public metadata**. One could say that all file-embedded attributes are potentially public since the images may be exported, sold, and copied to other places and people. On the other hand all non-embedded metadata in the database can be considered private as they stay in the database and go nowhere else. By adjusting digiKam's settings accordingly you can control what kind of data remains private and what will be embedded and eventually become public.
 
-Build the archive: Folder organization, physical layout as information
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Folder Organization as The Physical Information Layout
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The first thing to do and to know before you put anything onto your system is to build an information structure (as opposed to data structure). Your image files have to be somehow organized within the computer, you have to decide if others should have access to your photographs (sharing), if you put them on a dedicated drive, on a network drive etc. Keep in mind that you have to migrate one day onto some bigger volume.
 
@@ -47,6 +53,12 @@ The organization should be simple, unified and scalable, and it should be indepe
 
 Maybe you'll be happy with this structure. Holiday pictures can be quickly found by its location (unless you go to the same place every year), the rest will be organized by date. If you shoot enough pictures you want to create sub folders below the years as months e.g. 2008-01, 2008-02 etc. 'Export' would be a container for images to print or to put onto a website.
 
+.. figure:: images/dam_date_view_hierarchy.webp
+    :alt:
+    :align: center
+
+    digiKam Propose a Hierarchical View of Shooting Dates to Find Items in Your Collections
+
 The more professional photographer will have very different needs as there will be versions of photographs, archives, workflows, a constant influx of images of diverging themes, and a large quantity of everything. Within 10 year you'll have 95% archives and 5% work space files and you don't want to organize your structure around content!
 
 The consideration are these:
@@ -57,14 +69,27 @@ The consideration are these:
 
     - Segregation of original and working files makes it easier to allocate the backup strategy and migration. You will always know if you look for an original or a derivative.
 
-Automatic metadata generation
+Automatic Metadata Generation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 How to go about all this metadata business? Firstly, there are already a lot of **automatically generated metadata**: EXIF data and Makernotes. If you have configured digiKam with your identity section all imported images will be imprinted with this data set which includes copyrights, all automatic. If you have a GPS track recorded in parallel to your taking the photographs, you can geolocate those images in a single action using the Geolocation tool. Even if you brought back 1000 images from a shooting session, so far you'll not have spent more than 10 minutes to do all that. And by now you have all camera settings of every shot, lens data like zoom, focus, aperture etc., date and time, shooting location, copyrights, authorship, program used, and more. Not bad, isn't it? But we could have done more during the importing, we could have changed the file names to include the date, or place or theme, we could have changed the format to a lossless 16 bit per channel format, we could have automatically separated JPEG and RAW files into their folders. We actually recommend to auto-rename to match an event, a place or a theme. digiKam provides all date/calendar related grouping so that there's hardly a need for coding the date into the file name. Unless you'd like to do just that to browse your albums with another application that is not calendar savvy. You will buy a new camera one day or you have a second one already, sooner than you believe. The numbering scheme of that new camera will start over at typically IMG_0001.JPG again, creating identical file names to the ones you have already if you do not rename them. By renaming you lessen the chance of inadvertently overwriting them at a later date. Keep the new names clean, use alphanumerics, dashes, underscores and a single period prior to the file extension.
 
-We also recommend to switch-on the 'save metadata' options in the digiKam settings page for metadata. This will ensure that EXIF and IPTC data is written into the file. If you forgot to do that you can always catch up by copying the metadata in the database to the files in one go (from the Album menu).
+We also recommend to switch-on the **Save Metadata** options in the digiKam settings page for metadata. This will ensure that EXIF, IPTC and XMP information is written into the file. If you forgot to do that you can always catch up by copying the metadata in the database to the files in one go (from the Album menu).
 
-Now we have a lot of stuff already in our database, but what if we need to change some of it? digiKam provides a metadata editor for a selected number of attributes, the most important ones of course.
+.. figure:: images/dam_metadata_workflow.webp
+    :alt:
+    :align: center
+
+    The digiKam Metadata Workflow Settings Panel
+
+
+Now we have a lot of stuff already in our database, but what if we need to change some of it? digiKam provides a **Metadata Editor** for a selected number of attributes, the most important ones of course.
+
+.. figure:: images/dam_metadata_editor.webp
+    :alt:
+    :align: center
+
+    The digiKam Metadata Editor Modify XMP Properties
 
 The real work begins here as we will apply tags, captions and a rating to every photograph. Of course, all images requiring the same attribute can be treated as a selection in one action. Lets start with rating or ranking. It's best to start with ranking because for further work you can concentrate on the good shots. 
 
@@ -73,11 +98,22 @@ The real work begins here as we will apply tags, captions and a rating to every 
 Rating and Ranking
 ~~~~~~~~~~~~~~~~~~
 
-A ranking systematic is implemented in digiKam by the 5 star rating tool. In fact there are 6 levels, zero through five stars (*) can be attributed (when saving them into IPTC metadata a translation of levels ensures compatibility with other programs). Rating is rapidly applied with digiKam using keyboard shortcuts or the mouse on single photographs or whole selections. The rating can then be entered as a search criterion or directly from the status bar quick filters. However, before you start attributing stars everywhere take a moment to establish personal criteria for ranking. Best practice is to write down your personal match of stars to some qualitative expression, that will define what you actually mean when giving 5 stars. Generally there should be much less images rated with increasing star assignment. A ratio of 3-10 between each level has proven useful. That will get you quite far in distinguishing your rating pyramid. Say, you choose a ratio of 7 between levels. For every 5 star image you'll then have 7 4 stars, 49 3 stars and so on, resulting in almost 20000 pictures. Amazing? Yes, and 16807 of them you didn't have to rate at all! You even can define a different rating scheme depending on the kind of use, 2 stars for commercial use, may mean something else than 2 stars holiday photos. It is also a good practice to define a neutral rating, everything below is actually a negative rating. This will help you culling and thinning your collection very efficiently. Or you could define purposes to ratings, say 0 stars for 'can throw away', 1 star for images in quarantine (decide later), 2 stars for gallery export, 3 stars for printing, 4 stars for selling, 5 stars for 'have to work on', as you please. It must suit your needs. The following table illustrates a possible evolution for a professional photographer using a ranking ratio of roughly 7 over the next 12 years. It is evident that the good shots can be easily found, even within millions of photos.
+A ranking systematic is implemented in digiKam by the 5 star rating tool. In fact there are 6 levels, zero through five stars (*) can be attributed (when saving them into IPTC metadata a translation of levels ensures compatibility with other programs). Rating is rapidly applied with digiKam using keyboard shortcuts or the mouse on single photographs or whole selections. The rating can then be entered as a search criterion or directly from the status bar quick filters. However, before you start attributing stars everywhere take a moment to establish personal criteria for ranking. Best practice is to write down your personal match of stars to some qualitative expression, that will define what you actually mean when giving 5 stars. Generally there should be much less images rated with increasing star assignment. A ratio of 3-10 between each level has proven useful.
+
+.. figure:: images/dam_rating_edit.webp
+    :alt:
+    :align: center
+
+    The Edit Rating Properting From Thumbbar
+
+
+That will get you quite far in distinguishing your rating pyramid. Say, you choose a ratio of 7 between levels. For every 5 star image you'll then have 7 4 stars, 49 3 stars and so on, resulting in almost 20000 pictures. Amazing? Yes, and 16807 of them you didn't have to rate at all! You even can define a different rating scheme depending on the kind of use, 2 stars for commercial use, may mean something else than 2 stars holiday photos. It is also a good practice to define a neutral rating, everything below is actually a negative rating. This will help you culling and thinning your collection very efficiently. Or you could define purposes to ratings, say 0 stars for 'can throw away', 1 star for images in quarantine (decide later), 2 stars for gallery export, 3 stars for printing, 4 stars for selling, 5 stars for 'have to work on', as you please. It must suit your needs. The following table illustrates a possible evolution for a professional photographer using a ranking ratio of roughly 7 over the next 12 years. It is evident that the good shots can be easily found, even within millions of photos.
 
 .. figure:: images/dam_pyramid.webp
     :alt:
     :align: center
+
+    The Rating Pyramid
 
 Lets continue with tags (or keywords as called by other applications, or categories, they are all synonymous).
 
@@ -86,13 +122,25 @@ Lets continue with tags (or keywords as called by other applications, or categor
 Tagging and Keyword Assignment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Tags are a hierarchical labeling system that you create as you add to it. The important thing to do is to create a system that suits your needs and habits. Are you a (semi)professional who wants to sell photographs to agencies, do you want to publish on a web gallery, or are you just the occasional amateur managing the visual family memory? For all these different use cases you want to design a tag structure that is adapted to it. If you configure it so, digiKam will write the whole hierarchy into IPTC fields so that they can be used by your photographic agency using a different application of to automatically create title and caption for web exports. In any case it will serve you well to quickly find a specific picture again.
+Tags are a hierarchical labeling system that you create as you add to it. The important thing to do is to create a system that suits your needs and habits. Are you a (semi)professional who wants to sell photographs to agencies, do you want to publish on a web gallery, or are you just the occasional amateur managing the visual family memory? For all these different use cases you want to design a tag structure that is adapted to it. If you configure it so, digiKam will write the whole hierarchy into XMP fields so that they can be used by your photographic agency using a different application of to automatically create title and caption for web exports. In any case it will serve you well to quickly find a specific picture again.
 
 The hierarchy will provide you with automatic groupings. For example, if you start a typical private use hierarchy with *Activities*, *People*, *Places*, *Themes* and *Projects* on the top level, everything you tag with a sub-tag of these will be grouped together into a virtual album. digiKam has a dedicated view in the left sidebar for these virtual albums. But it comes even better! As you continue adding sub-tags into the hierarchies, not only will you be able to search and quick-filter for them, the right sidebar tag filter allows you to select combinations of tag groups. Lets say in the left sidebar tag panel you select the virtual album *People* and you have 12 different tags for people in there, then you can combine it with the right sidebar and just choose *Peter*, *Paul* and *Mary* out of the 12.
 
+.. figure:: images/dam_tag_properties.webp
+    :alt:
+    :align: center
+
+    The digiKam Tag Properties Dialog
+
 In the long run you will not remember the details of your pictures and their subject (essentially the metadata in your brain will break down). It is therefore paramount that you **choose general and generic categories**. You will always remember that a particular shot was set at a river bank in a country or continent (aka river, continent), but you'll have forgotten which river it was. Instead of only tagging it with *Okavango* you tag it with river/Africa or river/South Africa. The details you can either put into a tag as well or into the captions. A trick may help you: How would you search for that river with an Internet search engine? That's the way to go!
 
-Another categorization might be task-oriented as in *print jobs*, *web export*, *personal*, *galleryXYZ*, *clients*, *slideshow*, etc. Create groups as you need them but not more, you should be able to remember by heart the top level tags at least, otherwise the differentiation will become useless. Don't forget that you have all the other attributes to narrow down the search. The right sidebar tag filter combines with any view of left sidebar (albums, calendar, timeline, tag and search).
+Another categorization might be task-oriented as in *print jobs*, *web export*, *personal*, *galleryXYZ*, *clients*, *slideshow*, etc. Create groups as you need them but not more, you should be able to remember by heart the top level tags at least, otherwise the differentiation will become useless. Don't forget that you have all the other attributes to narrow down the search. The right sidebar tag filter combines with any view of left sidebar (albums, calendar, timeline, tag and search). This workflow categorizations can be easily delegated to Color Labels in digiKam.
+
+.. figure:: images/dam_color_labels.webp
+    :alt:
+    :align: center
+
+    The digiKam Color Labels Can be Used to Group Items For Your Worflow Stages
 
 When you import cataloged images from other sources having embedded tags already, digiKam will automatically create the trees for you, respectively insert it into the right place. Rearranging the hierarchy within the tree is no problem, you can do that easily by dragging and dropping a sub-tree to another place in the hierarchy. The changed tags will be updated as digiKam ripples down the branches.
 
@@ -115,13 +163,15 @@ So you might have the most beautiful portrait, sunset or landscape and nobody se
 
 Lets look at this panorama. From far it is not even a nice beach panorama. If you go closer you start to see some details, people, the space.
 
-.. figure:: images/dam_story.webp
+.. figure:: images/dam_captions_titles.webp
     :alt:
     :align: center
 
-And now we tell you that this is the Allies landing site *Omaha Beach* in the French Normandie 60 years after the disembarkation. Wow! One starts to dream, have associations, memories, the historical time span is present, you may hear the silence. The caption has totally reframed to perception of this panorama.
+    digiKam Editing Panorama Title From Captions Sidebar Tab Within Image Editor
+    
+And now we tell you that this is the Allies landing site *Omaha Beach* in the French Normandie 60 years after the disembarkation. One starts to dream, have associations, memories, the historical time span is present, you may hear the silence. The caption has totally reframed to perception of this panorama.
 
-For others to appreciate your photographs, the title is probably more important than the image itself for the interest it creates. When you show pictures, tell a story. Remember that the key is to convey the meaning to viewers, to help them understand what you understand about the subject and what moved you.
+For others to appreciate your photographs, the **Title** is probably more important than the image itself for the interest it creates. When you show pictures, tell a story. Remember that the key is to convey the meaning to viewers, to help them understand what you understand about the subject and what moved you.
 
     - Let people know what you understand about the subject, why you love it.
 
@@ -143,5 +193,11 @@ Geolocation and Geo-tagging
 Do you still remember the times before GPS? When you would find your way to another city without navigation system? Wasn't the earth a dull blue ball before GoogleEarth? Well then, with images, the train of spatial representation is running at cruising speed alright.
 
 A few cameras have a GPS receiver built-in, the images come tagged with 3-dimensional coordinates. And with almost any GPS device you're able to extract a trace (of course the receiver needs to be switched-on and carried with you whilst taking the photographs, and for good matching the camera time must be accurately set) and save it onto a computer. You have to store it in gpx format, that's easily done with gpsbabel, gpsman and other tools. You then can automatically match a whole bunch of photos with that track using digiKam. The coordinates are written into the JFIF part of JPG files (settings choice) and into the database. digiKam will enable searches based on locations and coordinates, you can create virtual albums of geographical areas! In the right sidebar under the metadata tab you'll find your image located on a local zoom of the world map. A further click brings on anyone of several mapping services on the web, zooming in on details. Even if you don't have a GPS trace you can geo-tag multiple images with a geo-editor. Just navigate on the map to the spot of shooting and click to fix it as a geo-tag.
+
+.. figure:: images/dam_reverse_geocoding.webp
+    :alt:
+    :align: center
+
+    digiKam Editing Geolocation and Processing Reverse Geocoding with OpenStreetMap
 
 The possibilities of exploiting this geolocation are already innumerable and will become pervasive in the future. I'm sure one day not too far away we can revisit in a virtual reality our travels through geo-tagged pictures. The digiKam features include exporting to KML files that can be opened by GoogleEarth (which in turn will show the photos on their shooting site), exporting to Piwigo, Google Photo, Flickr etc. with OpenStreetMap viewer and more.
