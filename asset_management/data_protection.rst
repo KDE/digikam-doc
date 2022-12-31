@@ -45,8 +45,8 @@ Disaster                       1-2%        1-2%
 
 So let us analyze those cases step by step!
 
-Physical Deterioration
-----------------------
+Storage Physical Deterioration
+------------------------------
 
 CD, DVD, Blue Ray, Optical Drives
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -77,6 +77,23 @@ But all depends much on the real use case and some luck. For example We have a F
 If your disk is making weird noises, normal file recovery software isn’t going to work. Do a quick backup if that is going to happen to you. (Use dd utility if possible, not a normal file backup since dd reads in a smooth, spiraling stream from beginning to end and doesn't stress the mechanics). There are specialist companies that can recover data from otherwise destroyed drive, but they are costly, plan for 2000$ minimum charge.
 
 Linux `SmartMonTools <https://en.wikipedia.org/wiki/Smartmontools>`_ suite allows to query the storage hardware devices for future failure. We hightly recommend to use this kind of tool on your computer.
+
+Solid State Drives: USB Sticks, Memory Cards, Flash Disks
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SSDs are mechanically more robust than HDDs and suffer much less on that front when they are plugged into the computer. They will replace HDD in time as capacity, robustest, and price become more and more a good solution as permanent data storage devices.
+
+In case of use as external device, one major cause for data loss (often recoverable) is the unsafe removal of SDDs from a computer. Before data is saved from a computer memory to any attached device, it remains for some time in buffers. In hard drives this means seconds at most, whereas with SDDs it can be tens of minutes. Therefore, before you disconnect a flash device, always activate data flushing through software (often called *safely remove device*).
+
+So, in all cases SSDs as internal devices are the solution to host the database and the collections.
+
+Magnetic Media
+~~~~~~~~~~~~~~
+
+Magnetic tapes are used in backup systems, much more in professional environments than in home use. Tapes have issues with data retention and changing technology, but they are safer in one aspect than CDs and DVDs: they are less exposed to scratches and dirt and writing deficiencies. On the other hand they are susceptible to magnetic fields. Throw a magnet next to a tape and it's gone! Tapes should be re-copied every 5-8 years, otherwise too many bits will fail and escape the checksum protection. The downside of magnetic tapes is often the recorder price and the restore time (20x longer than from HDD). Tape backup system have seen their best days.
+
+Power Supply Failures
+---------------------
 
 Power Surges
 ~~~~~~~~~~~~
@@ -113,20 +130,6 @@ While a surge suppressor will protect your system from minor fluctuations in the
 Besides serving as surge suppressors, these devices automatically switch to battery power when a power outage occurs, giving you the opportunity to save data and shut down your system. Some models will even allow you to keep working until power is restored. When purchasing a UPS, be sure that it has the same qualities that you would seek in a surge suppressor, but also check out the battery life and included software.
 
 Considering the potential risk to your computing system, ensuring its safety from power disturbances is a worthwhile investment. A quality surge suppressor will cost you upward of €20, a 500W UPS can be had for less than €40. It’s a small cost to pay for the peace of mind you’ll gain knowing your computer is well protected. In the very least pull all lines to your computer when you go on holidays.
-
-Solid State Drives: USB Sticks, Memory Cards, Flash Disks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-SSDs are mechanically more robust than HDDs and suffer much less on that front when they are plugged into the computer. But since they are mostly mobile devices, their exposure to drops, accidents and electrostatic discharges is much higher. So, for different reasons, SDDs are as likely to fail if not more than hard drives. Add the danger of theft and longevity and limited capacity, and SDDs will become prohibitive as permanent data storage devices.
-
-One major cause for data loss (often recoverable) is the unsafe removal of SDDs from a computer. Before data is saved from a computer memory to any attached device, it remains for some time in buffers. In hard drives this means seconds at most, whereas with SDDs it can be tens of minutes. Therefore, before you disconnect a flash device, always activate data flushing through software (often called "safely remove device").
-
-There is a new technology trend coming up, to replace hard drives with SSD flash drives. By 2010 they may be competitive in price to HDDs. Data retention is an issue with SDDs, it cannot be overwritten an infinite amount of times. SDDs wear in use. Wear then depends much on the location data is written, and how often it is written. Linux® has developed a special driver avoiding writing to the same spot too often. But this is all premature information. Keep your eyes and ears open.
-
-Magnetic Media
-~~~~~~~~~~~~~~
-
-Magnetic tapes are used in backup systems, much more in professional environments than in home use. Tapes have issues with data retention and changing technology, but they are safer in one aspect than CDs and DVDs: they are less exposed to scratches and dirt and writing deficiencies. On the other hand they are susceptible to magnetic fields. Throw a magnet next to a tape and it's gone! Tapes should be re-copied every 5-8 years, otherwise too many bits will fail and escape the checksum protection. The downside of magnetic tapes is often the recorder price and the restore time (20x longer than from HDD). Tape backup system have seen their best days.
 
 Saveguarding Against Logical Errors
 -----------------------------------
