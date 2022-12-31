@@ -333,6 +333,12 @@ We recommend clearly to **abstain from archiving in RAW format** (as opposed to 
 
 **DNG** Digital Negative file format is a royalty free and open RAW image format designed by Adobe Systems. DNG was a response to demand for a unifying camera raw file format. It is based on the TIFF/EP format, and mandates use of metadata. A handful of camera manufacturers have adopted DNG already, let's hope that the main contenders Canon and Nikon will use it one day.
 
+.. figure:: images/dam_dng_converter.webp
+    :alt:
+    :align: center
+
+    digiKam Provide a Tool to Convert in Batch RAW to DNG
+
 We strongly recommend converting RAW files to DNG for archiving. Despite the fact that DNG was created by Adobe, it is an open standard and widely embraced by the Open Source community (which is usually a good indicator of perennial properties). Some manufacturers have already adopted DNG as RAW format. And last not least, Adobe is the most important source of graphical software today, and they of course support their own invention. It is an ideal archival format, the raw sensor data will be preserved as such in TIFF format inside DNG, so that the risk associated with proprietary RAW formats is alleviated. All of this makes migration to another operating system a no-brainer. In the near future we'll see 'non-destructive editing', where files are not changed anymore but rather all editing steps will be recorded (into the DNG as it were). When you open such a file again, the editing script will be replayed. This takes computation power, but it is promising as it leaves the original intact and computing power increases all the time.
 
 **XML** (Extensible Mark-up Language) or **RDF** (Resource Description Framework). XML is like HTML, but where HTML is mostly concerned with the presentation of data, XML is concerned with the "representation" of data. On top of that, XML is non-proprietary, operating-system-independent, fairly simple to interpret, text-based and cheap. RDF is the WC3's solution to integrate a variety of different applications such as library catalogs, world-wide directories, news feeds, software, as well as collections of music, images, and events using XML as an interchange syntax. Together the specifications provide a method that uses a lightweight ontology based on the Dublin Core which also supports the "Semantic Web" (easy exchange of knowledge on the Web).
