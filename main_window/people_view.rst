@@ -202,6 +202,8 @@ Once you have a tag assigned to a few photographs you can have digiKam looking i
 
     To be able to recognize a new face automatically, a minimum of 4 similar faces tagged in different images need to be previously trained using manual face management workflow.
 
+To start the Face Recognition you click Scan. The process will tag every recognized face with the appropriate People tag out of your tag tree and the corresponding thumbnail will disappear from the **Unknown** tag selection.
+
 .. figure:: images/mainwindow_faces_tag_recognizeded_iconview.webp
     :alt:
     :align: center
@@ -211,8 +213,6 @@ Once you have a tag assigned to a few photographs you can have digiKam looking i
 Face Recognition is faster than Face Detection but it still makes sense to click **Settings** and confine the scan to certain albums or tags in the Albums tab, e.g. to the **Unknown** tag. In the **Settings** tab we can play with the balance between speed and accuracy and two checkboxes. The first is explained by the text above it.
 
 In case of unsatisfying results it might be helpful to use **Clear and rebuild all training data**. One reason can be that there are too many face tags assigned to a person which shows this person in a way that doesn't really help the search algorithm, e.g. with sunglasses, blurred, unusual colors, carnival make up, dark shaded areas in the face, baby/kid/adult photographs mixed... Another reason to use that option can be false face recognition due to a wrong accuracy setting in the **Settings** tab.
-
-To start the Face Recognition you click Scan. The process will tag every recognized face with the appropriate People tag out of your tag tree and the corresponding thumbnail will disappear from the **Unknown** tag selection.
 
 Manual Face tagging
 ~~~~~~~~~~~~~~~~~~~
