@@ -84,7 +84,6 @@ We also recommend to switch-on the **Save Metadata** options in the digiKam sett
 
     The digiKam Metadata Workflow Settings Panel
 
-
 Now we have a lot of stuff already in our database, but what if we need to change some of it? digiKam provides a **Metadata Editor** for a selected number of attributes, the most important ones of course.
 
 .. figure:: images/dam_metadata_editor.webp
@@ -97,6 +96,20 @@ The real work begins here as we will apply tags, captions and a rating to every 
 
 .. _rating_ranking:
 
+digiKam also provides automatic tagging features based on deep-learning:
+
+    - :ref:`Image Quality Sorting <maintenance_quality>` to assign automatically a **Pick Label** to item based on aesthetic factors.
+    - :ref:`Face Detection <face_detection>` to detect faces on image and record areas on database.
+    - :ref:`Face recognition <face_recognition>` to assigned people tags automatically based on already tagged ones 
+
+    .. figure:: images/dam_maintenance_tool.webp
+        :alt:
+        :align: center
+
+        digiKam Maintenance Tool is The Best Way to Auto-tag items by Quality or for Faces
+
+These kind of tools requires extra data model files to run. digiKam will ask you to donwload models at first start.
+
 Rating and Ranking
 ~~~~~~~~~~~~~~~~~~
 
@@ -107,7 +120,6 @@ A ranking systematic is implemented in digiKam by the 5 star rating tool. In fac
     :align: center
 
     The Edit Rating Properting From Thumbbar
-
 
 That will get you quite far in distinguishing your rating pyramid. Say, you choose a ratio of 7 between levels. For every 5 star image you'll then have 7 4 stars, 49 3 stars and so on, resulting in almost 20000 pictures. Amazing? Yes, and 16807 of them you didn't have to rate at all! You even can define a different rating scheme depending on the kind of use, 2 stars for commercial use, may mean something else than 2 stars holiday photos. It is also a good practice to define a neutral rating, everything below is actually a negative rating. This will help you culling and thinning your collection very efficiently. Or you could define purposes to ratings, say 0 stars for 'can throw away', 1 star for images in quarantine (decide later), 2 stars for gallery export, 3 stars for printing, 4 stars for selling, 5 stars for 'have to work on', as you please. It must suit your needs. The following table illustrates a possible evolution for a professional photographer using a ranking ratio of roughly 7 over the next 12 years. It is evident that the good shots can be easily found, even within millions of photos.
 

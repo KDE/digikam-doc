@@ -76,6 +76,8 @@ But all depends much on the real use case and some luck. For example We have a F
 
 If your disk is making weird noises, normal file recovery software isn’t going to work. Do a quick backup if that is going to happen to you. (Use dd utility if possible, not a normal file backup since dd reads in a smooth, spiraling stream from beginning to end and doesn't stress the mechanics). There are specialist companies that can recover data from otherwise destroyed drive, but they are costly, plan for 2000$ minimum charge.
 
+Linux `SmartMonTools <https://en.wikipedia.org/wiki/Smartmontools>`_ suite allows to query the storage hardware devices for future failure. We hightly recommend to use this kind of tool on your computer.
+
 Power Surges
 ~~~~~~~~~~~~
 
@@ -242,8 +244,8 @@ Therefore disaster control means de-localized storage. Move your backups upstair
 
 There is another good aspect to the physical separation: as said above, panic is often the cause of destroying data, even the backup data. Having a backup not at hand right away may safe your ass one day.
 
-Some Backup Technicalities Explained for Laymen
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Some Backup Technicalities Explained
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     - Full Backup: A complete backup of all the files being backed up. It is a snapshot without history, it represents a full copy at one point in time.
 
@@ -251,8 +253,10 @@ Some Backup Technicalities Explained for Laymen
 
     - Incremental Backup: A backup of only the files that have changed since last whatever backup. Constitutes multiple snapshots. You can recreate the original state at any point in time such a backup was made. This comes closest to a versioning system except that it is only sampled and not continuous. 
 
-Best Practice: The IT-layman's Backup Cookbook
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Backup The Data
+~~~~~~~~~~~~~~~
+
+The Best practice at all is to backup the data:
 
     - Do a full backup in a external storage device.
 
@@ -262,10 +266,10 @@ Best Practice: The IT-layman's Backup Cookbook
 
     - Swap the devices every other month after having verified data integrity.
 
-A Useful Rsync Recipe to Backups
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+A Useful Tool to Backups
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-Rsync is a wonderful little utility that's amazingly easy to set up on your machines. Rather than have a scripted FTP session, or some other form of file transfer script - rsync copies only the differences of files that have actually changed, compressed and through ssh if you want to for security. That's a mouthful.
+Linux `rsync <https://en.wikipedia.org/wiki/Rsync>`_ is a wonderful little utility that's amazingly easy to set up on your machines. Rather than have a scripted FTP session, or some other form of file transfer script - rsync copies only the differences of files that have actually changed, compressed and through ssh if you want to for security. That's a mouthful.
 
 A reasonable backup approach for images could be this one:
 
@@ -368,8 +372,8 @@ Many photographers prefer keeping an original of their shots (mostly RAW) for th
 
 The `Dublin Core Metadata Initiative <https://www.dublincore.org/>`_ is an open organization engaged in the development of interoperable online metadata standards that support a broad range of purposes and business models. DCMI's activities include work on architecture and modeling, discussions and collaborative work in DCMI Communities and DCMI Task Groups, annual conferences and workshops, standards liaison, and educational efforts to promote widespread acceptance of metadata standards and practices.
 
-Best Practice: Data Protection
-------------------------------
+Protect Your Data
+-----------------
 
     - Use surge protectors (UL 1449 standard), possibly combined with a UPS.
 

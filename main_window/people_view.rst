@@ -19,6 +19,8 @@ As long as you are not just taking pictures from machines or stars or something 
 
    To run properly, the face management needs the deep-learning models to download at the first run of digiKam. See :ref:`the Quick Start section <quick_start>` for details.
 
+.. _face_detection:
+
 Face Detection
 ~~~~~~~~~~~~~~
 
@@ -74,6 +76,8 @@ This screenshot image have been chosen because it shows one important issue: the
 If it really is a face the field labeled **Who is this?** comes into play. Here you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With **Confirm** you can save that to the database. If it was the only face tag (left) the image will disappear from the **Unknown** selection and you will find it once you select either the “People” tag or one of the tags you assigned to one of the face tags in that image.
 
 In the context menu of the preview there are two more items related to face tags: **Add a Face Tag** and **Clear all faces** on this image.
+
+.. _face_recognition:
 
 Face Recognition
 ~~~~~~~~~~~~~~~~
