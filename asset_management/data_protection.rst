@@ -162,6 +162,8 @@ Data does not only get lost from storage devices, it also gets lost when traveli
     :alt:
     :align: center
 
+    The Data Workflow Between Application and Storage Media
+
 This diagram depicts the transmission chain elements in a computer, all transitions are susceptible to transmission errors. The Linux ZFS and BTRFS file system at least ensure the OS to disk path of data integrity.
 
 The Byte Error Rate (BER) for memory and transmission channels is in the order of 1 in 10 Million (10E-7 bit). That just means that 1 in 3000 images has an error only due to transmission problems. Now how dramatic that is for an image is left to chance, it could mean that the image is destroyed or that a pixel somewhere changed its value, due to the compression used on almost all images one cannot predict the gravity of a single bit error impact. Often one sees some partial images instead of the full image.
@@ -173,6 +175,8 @@ Flaky power supplies are another source of transmission losses because they crea
 .. figure:: images/dam_errors.webp
     :alt:
     :align: center
+
+    The Storage Media Number of Failure Per Year
 
 Even if you are not overly concerned today with transmission problems, have a look into the future at illustration. Already in 2010 we'll see thousands of errors per year!
 
