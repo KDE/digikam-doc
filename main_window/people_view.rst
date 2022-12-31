@@ -214,6 +214,14 @@ Face Recognition is faster than Face Detection but it still makes sense to click
 
 In case of unsatisfying results it might be helpful to use **Clear and rebuild all training data**. One reason can be that there are too many face tags assigned to a person which shows this person in a way that doesn't really help the search algorithm, e.g. with sunglasses, blurred, unusual colors, carnival make up, dark shaded areas in the face, baby/kid/adult photographs mixed... Another reason to use that option can be false face recognition due to a wrong accuracy value in the **Settings** tab.
 
+.. figure:: images/mainwindow_faces_tag_validate_iconview.webp
+    :alt:
+    :align: center
+
+    The digiKam Face Management Icon-View With New Recognized Faces to Confirm as **Agnès** Name
+
+To Complete the Recognition Process, you will need to **Confirm** the new recognized faces. By applying the properties, new faces will be moved to the face tag definitively.
+
 Manual Face tagging
 ~~~~~~~~~~~~~~~~~~~
 
