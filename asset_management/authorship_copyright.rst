@@ -24,6 +24,12 @@ This will be the last chapter and step to mark your digital library with authors
 
     - Copyleft is a form of licensing and may be used to modify copyrights for works such as ... music, and art. In general, copyright law allows an author to prohibit others from reproducing, adapting, or distributing copies of the author's work. In contrast, an author may, through a copyleft licensing scheme, give every person who receives a copy of a work permission to reproduce, adapt or distribute the work as long as any resulting copies or adaptations are also bound by the same copyleft licensing scheme. A widely used and originating copyleft license is the GNU General Public License. Similar licenses are available through Creative Commons - called Share-alike. 
 
+.. figure:: images/dam_template_metadata.webp
+    :alt:
+    :align: center
+
+    The digiKam Template Metadata Settings Panel
+
 And here follows a description of what should be supplied to digiKam's setup page as information:
 
 **Author** (synonymous with Creator and By-line): This field should contain your name, or the name of the person who created the photograph. If it is not appropriate to add the name of the photographer (for example, if the identity of the photographer needs to be protected) the name of a company or organization can also be used. Once saved, this field should not be changed by anyone. This field does not support the use of commas or semi-colons as separator.
@@ -38,9 +44,13 @@ And here follows a description of what should be supplied to digiKam's setup pag
 
 Whereas it is paramount to fill-in the author and copyright sections, they represent no protection against fraud. Anyone with a bit more than basic computer knowledge is able to delete or modify image embedded metadata. The solution to this problem is called 'digital watermarking'. To private persons this might be of little interest for the majority of photographs, but for professionals ans semi-professionals this protection is really important.
 
+.. figure:: images/dam_edit_copyrights.webp
+    :alt:
+    :align: center
+
+    The digiKam Copyrights View From Metadata Editor
+
 Digital Watermarking
 ~~~~~~~~~~~~~~~~~~~~
 
-Digital Watermarking refers to an invisible digital watermark that is being impressed on photographs as an element of digital rights management (DRM). The watermark contains the same information of authorship and copyright as described above, but the metadata is encrypted and saved in the actual image data (as opposed to the metadata section which is a separate section within the image file). This invisible imprint has holographic properties so that modifications done to an image (size, color, crop, up to a certain limit) will not destroy the copyright information. Only when an image is resized to a very small fraction like a thumbnail will the embedded information be lost, but then the image is of no value anymore to the copyright infringing party.
-
-The digital watermark will be unique per image. digiKam will provide a tool for DW in the near future that features batch processing.
+Digital Watermarking refers to an invisible digital watermark that is being impressed on photographs as an element of digital rights management (DRM). The watermark contains the same information of authorship and copyright as described above, but the metadata is encrypted and saved in the actual image data (as opposed to the metadata section which is a separate section within the image file). This invisible imprint has holographic properties so that modifications done to an image (size, color, crop, up to a certain limit) will not destroy the copyright information. Only when an image is resized to a very small fraction like a thumbnail will the embedded information be lost, but then the image is of no value anymore to the copyright infringing party. The digital watermark will be unique per image.
