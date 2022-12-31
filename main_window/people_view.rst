@@ -202,7 +202,7 @@ Once you have a tag assigned to a few photographs you can have digiKam looking i
 
     To be able to recognize a new face automatically, a minimum of 4 similar faces tagged in different images need to be previously trained using manual face management workflow.
 
-To start the Face Recognition you click Scan. The process will tag every recognized face with the appropriate People tag out of your tag tree and the corresponding thumbnail will disappear from the **Unknown** tag selection.
+To start the Face Recognition you click **Scan Collection for Faces** button. The process will tag every recognized face with the appropriate People tag out of your tag tree and the corresponding thumbnail will disappear from the **Unknown** tag selection.
 
 .. figure:: images/mainwindow_faces_tag_recognized_iconview.webp
     :alt:
