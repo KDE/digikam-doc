@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Main Window Image View
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image, view, tool-tip, table, group
 
 .. metadata-placeholder
 
@@ -19,6 +19,10 @@ General Information
 In all eight areas the Image View shows the result of your selection or search on the Left Sidebar in the Icon Area. Each image is displayed as a thumbnail. You can alter the size of the thumbnails using the magnifier slider close to the right end of the status bar.
 
 .. figure:: images/mainwindow_zoombuttons.webp
+    :alt:
+    :align: center
+
+    The digiKam Main Window Zoom Bar Located in Status Bar
 
 The first time you select an Album you may have to wait briefly while the thumbnails are generated.
 
@@ -27,12 +31,20 @@ Information about each photograph is displayed below each thumbnail. You can con
 The thumbnails have Tool Tips which will pop up if you allow the mouse to dwell over a thumbnail for a moment. The Tool Tip shows the most important properties of the photograph including any tags that you have applied.
 
 .. figure:: images/mainwindow_tooltip.webp
+    :alt:
+    :align: center
+
+    The digiKam Main Window Tool Tip
 
 The content of the Tool Tips can be configured in the **Tool Tip** section of :menuselection:`Settings --> Configure digiKam`...
 
 As an alternative you can display the photographs in a table by hitting the **Table** button on the Main Toolbar or by selecting :menuselection:`View --> Table` menu from the menu bar. This allows to see a lot of photographs at the same time (Tip: leave away the thumbnail column) in a way you can customize the usual way by clicking with the right mouse button on the headline bar and choosing the information you want to see. Clicking with the left mouse button on a line in the table will open the preview of that photograph.
 
 .. figure:: images/mainwindow_table_view.webp
+    :alt:
+    :align: center
+
+    The digiKam Main Window Table Mode
 
 You can access most of the functions that digiKam can perform on a photograph by clicking with the right mouse button over the thumbnail or line in the table (context menu) or by selecting from the **Item** menu in the menu bar.
 
@@ -44,6 +56,10 @@ Viewing an image
 There are several possibilities to view an image. You can either click on it, select :menuselection:`View --> Preview Image` :kbd:`F3` from the menu bar or select **Preview Image** from the context menu. The Preview Area will open and the Icon Area will be reduced to one line. For viewing it larger, click the sidebars away (by just clicking on the active button on them). An even larger view you can achieve by clicking the **Show Fullscreen** icon |icon_fullscreen| either on the thumbnail or on the preview. While viewing images you can take action from the context menu at any time (not in fullscreen mode). To close the preview, just click again or press Esc or F3 or click the Table or Thumbnails button.
 
 .. figure:: images/mainwindow_preview.webp
+    :alt:
+    :align: center
+
+    The digiKam Main Window Preview Mode
 
 .. note::
 
@@ -84,6 +100,10 @@ You can change the filename for a photograph by clicking with the right mouse bu
 You can also batch rename photographs. One method is to use the :ref:`Batch Queue Manager <batch_queue>` :kbd:`B`. Another one is to select multiple photographs and then press :kbd:`F2`. A dialog will open showing the list of selected photographs with their current name and the new name. These two are identical at first until you place the cursor in the input field, type in something and/or select a modifier from the buttons below. Make use of the tooltips!
 
 .. figure:: images/mainwindow_advanced_rename.webp
+    :alt:
+    :align: center
+
+    The digiKam Advanced Rename Tool
 
 Deleting a Photograph
 ~~~~~~~~~~~~~~~~~~~~~
@@ -95,6 +115,10 @@ Deleting works from anywhere in any digiKam window.
 digiKam will ask you confirmation before to move items to trash with the dialog below.
 
 .. figure:: images/mainwindow_move_trash.webp
+    :alt:
+    :align: center
+
+    The digiKam Move to Trash Dialog
 
 Grouping Photographs
 ~~~~~~~~~~~~~~~~~~~~
@@ -102,14 +126,26 @@ Grouping Photographs
 Grouping items is a very useful way to organize Photographs and/or videos that are related to each other and to adjust the way they are displayed in the image area. This function is available through the context menu on a selection of items (more than one item selected).
 
 .. figure:: images/mainwindow_group_menu.webp
+    :alt:
+    :align: center
+
+    The digiKam Icon-View Grouped Items Options From Context Menu
 
 You can put the whole selection into one group using **Group Selected Here** or you can create more than one group determined by time (seconds will be ignored) or by file name. Note that the latter will put items with the same name but different file types into one group. Use case see further below!
 
 .. figure:: images/mainwindow_grouped_items.webp
+    :alt:
+    :align: center
+
+    The digiKam Icon-View Grouped Mode From Icon-View
 
 The next group in the menu is to control whether only the reference icon of the group (the first of the group according to the sorting order at the moment of grouping) is displayed or all of them. These two functions can also be accessed by the little grouping indicator (folder symbol with number) on the reference icon (see upper left icon on the screenshot). While the mouse pointer is hovering over it there will pop up an information “n grouped items. Group is closed/open.” where n indicates the number of items in the group which are invisible if the group is closed. Clicking on the indicator toggles between open and closed. In the Table mode of the Image Area groups are indicated the way we know from many other lists and tables: with a little triangle in front of the reference item. Clicking on this triangle will fold out/in the grouped items.
 
 .. figure:: images/mainwindow_grouped_table.webp
+    :alt:
+    :align: center
+
+    The digiKam Icon-View Grouped Mode From Table View
 
 The last group in the Group context menu allows to remove individual items from the group or to disband the whole group. The content of the menu will change depending on whether you use it on a selection of still un-grouped items, on a group or on single items of a group.
 
