@@ -40,7 +40,7 @@ Minimum system requirements
     :alt:
     :align: center
 
-    A Double-screens Linux Station With Main Window on the Left and Light Table on The Right
+    A Double-screens Linux Station With Main Window on the Left and Light Table on the Right
 
 digiKam on Linux
 -----------------
@@ -49,7 +49,7 @@ digiKam on Linux
 
 **AppImage:** Minimum Ubuntu 18.04 has no such minimal requirements.
 
-AppImage is a bundle hosting all the necessary dependencies to run digiKam. Nothing is installed on your system.
+`AppImage <https://en.wikipedia.org/wiki/AppImage>`_ is a bundle hosting all the necessary dependencies to run digiKam. Nothing is installed on your system.
 Turn on **executable** property of AppImage file and run it. That all...
 
 .. figure:: videos/appimage_startup.gif
