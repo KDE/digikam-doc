@@ -138,6 +138,12 @@ Tagging and Keyword Assignment
 
 Tags are a hierarchical labeling system that you create as you add to it. The important thing to do is to create a system that suits your needs and habits. Are you a (semi)professional who wants to sell photographs to agencies, do you want to publish on a web gallery, or are you just the occasional amateur managing the visual family memory? For all these different use cases you want to design a tag structure that is adapted to it. If you configure it so, digiKam will write the whole hierarchy into XMP fields so that they can be used by your photographic agency using a different application of to automatically create title and caption for web exports. In any case it will serve you well to quickly find a specific picture again.
 
+.. figure:: images/dam_assign_tag.webp
+    :alt:
+    :align: center
+
+    The digiKam Image Editor Assigning More Than One Tag at The Same Time Within Right Sidebar
+
 The hierarchy will provide you with automatic groupings. For example, if you start a typical private use hierarchy with *Activities*, *People*, *Places*, *Themes* and *Projects* on the top level, everything you tag with a sub-tag of these will be grouped together into a virtual album. digiKam has a dedicated view in the left sidebar for these virtual albums. But it comes even better! As you continue adding sub-tags into the hierarchies, not only will you be able to search and quick-filter for them, the right sidebar tag filter allows you to select combinations of tag groups. Lets say in the left sidebar tag panel you select the virtual album *People* and you have 12 different tags for people in there, then you can combine it with the right sidebar and just choose *Peter*, *Paul* and *Mary* out of the 12.
 
 .. figure:: images/dam_tag_properties.webp
