@@ -379,6 +379,13 @@ Many photographers prefer keeping an original of their shots (mostly RAW) for th
 
 The `Dublin Core Metadata Initiative <https://www.dublincore.org/>`_ is an open organization engaged in the development of interoperable online metadata standards that support a broad range of purposes and business models. DCMI's activities include work on architecture and modeling, discussions and collaborative work in DCMI Communities and DCMI Task Groups, annual conferences and workshops, standards liaison, and educational efforts to promote widespread acceptance of metadata standards and practices.
 
+.. figure:: images/dam_metadata_sidecars.webp
+    :alt:
+    :align: center
+
+    digiKam Support Sidecar Files With many Options From Settings Panel
+
+
 Protect Your Data
 -----------------
 
