@@ -53,11 +53,11 @@ The organization should be simple, unified and scalable, and it should be indepe
 
 Maybe you'll be happy with this structure. Holiday pictures can be quickly found by its location (unless you go to the same place every year), the rest will be organized by date. If you shoot enough pictures you want to create sub folders below the years as months e.g. 2008-01, 2008-02 etc. 'Export' would be a container for images to print or to put onto a website.
 
-.. figure:: images/dam_date_view_hierarchy.webp
+.. figure:: images/dam_date_export_gdrive.webp
     :alt:
     :align: center
 
-    digiKam Propose a Hierarchical View of Shooting Dates to Find Items in Your Collections
+    digiKam Propose a Hierarchical View of Shooting Dates to Export Items to a Remote Web Service
 
 The more professional photographer will have very different needs as there will be versions of photographs, archives, workflows, a constant influx of images of diverging themes, and a large quantity of everything. Within 10 year you'll have 95% archives and 5% work space files and you don't want to organize your structure around content!
 
