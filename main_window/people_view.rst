@@ -95,22 +95,69 @@ If it really is a face the field labeled **Who is this?** comes into play. Here 
 
 The list of detection samples below come from a huge collection of photo scanned with the Yolo v3 deep-learning model.
 
-==== ========================================================== =============================================
- ID  Face Detected Samples                                      Comments
-==== ========================================================== =============================================
- 01  .. figure:: images/mainwindow_face_detection_sample01.webp An under-exposed face
- 02  .. figure:: images/mainwindow_face_detection_sample02.webp A closed dog face
- 03  .. figure:: images/mainwindow_face_detection_sample03.webp A blured child face
- 04  .. figure:: images/mainwindow_face_detection_sample04.webp A non human face
- 05  .. figure:: images/mainwindow_face_detection_sample05.webp A very blured and partial face
- 06  .. figure:: images/mainwindow_face_detection_sample06.webp A rotated face
- 07  .. figure:: images/mainwindow_face_detection_sample07.webp A covered face with a hood
- 08  .. figure:: images/mainwindow_face_detection_sample08.webp An aside face
- 09  .. figure:: images/mainwindow_face_detection_sample09.webp An under-exposed and partial face
- 10  .. figure:: images/mainwindow_face_detection_sample10.webp A false positive detection
- 11  .. figure:: images/mainwindow_face_detection_sample11.webp A puppy's mouth
- 12  .. figure:: images/mainwindow_face_detection_sample12.webp A face covered by a racket
-==== ========================================================== =============================================
+==== =========================================================== =============================================
+ ID  Face Detected Samples                                       Comments
+==== =========================================================== =============================================
+ 01  .. figure:: images/mainwindow_face_detection_sample_01.webp An under-exposed face
+        :width: 64px
+        :alt:
+        :align: center
+---- ----------------------------------------------------------- ---------------------------------------------
+ 02  .. figure:: images/mainwindow_face_detection_sample_02.webp A closed dog face
+        :width: 64px
+        :alt:
+        :align: center
+---- ----------------------------------------------------------- ---------------------------------------------
+ 03  .. figure:: images/mainwindow_face_detection_sample_03.webp A blured child face
+        :width: 64px
+        :alt:
+        :align: center
+---- ----------------------------------------------------------- ---------------------------------------------
+ 04  .. figure:: images/mainwindow_face_detection_sample_04.webp A non human face
+        :width: 64px
+        :alt:
+        :align: center
+---- ----------------------------------------------------------- ---------------------------------------------
+ 05  .. figure:: images/mainwindow_face_detection_sample_05.webp A very blured and partial face
+        :width: 64px
+        :alt:
+        :align: center
+---- ----------------------------------------------------------- ---------------------------------------------
+ 06  .. figure:: images/mainwindow_face_detection_sample_06.webp A rotated face
+        :width: 64px
+        :alt:
+        :align: center
+---- ----------------------------------------------------------- ---------------------------------------------
+ 07  .. figure:: images/mainwindow_face_detection_sample_07.webp A covered face with a hood
+        :width: 64px
+        :alt:
+        :align: center
+---- ----------------------------------------------------------- ---------------------------------------------
+ 08  .. figure:: images/mainwindow_face_detection_sample_08.webp An aside face
+        :width: 64px
+        :alt:
+        :align: center
+---- ----------------------------------------------------------- ---------------------------------------------
+ 09  .. figure:: images/mainwindow_face_detection_sample_09.webp An under-exposed and partial face
+        :width: 64px
+        :alt:
+        :align: center
+---- ----------------------------------------------------------- ---------------------------------------------
+ 10  .. figure:: images/mainwindow_face_detection_sample_10.webp A false positive detection
+        :width: 64px
+        :alt:
+        :align: center
+---- ----------------------------------------------------------- ---------------------------------------------
+ 11  .. figure:: images/mainwindow_face_detection_sample_11.webp A puppy's mouth
+        :width: 64px
+        :alt:
+        :align: center
+---- ----------------------------------------------------------- ---------------------------------------------
+ 12  .. figure:: images/mainwindow_face_detection_sample_12.webp A face covered by a racket
+        :width: 64px
+        :alt:
+        :align: center
+==== =========================================================== =============================================
 
 The screenshots **02** and **11** have been chosen because they shows one important feature: the algorithm is able to find animal faces, and this is not a false positive, excepted if you want to see only human faces on your collection of course.
 
