@@ -176,7 +176,7 @@ Face Recognition
 
 Assigning People tags to face tags is an important prerequisite to Face Recognition. Very obviously digiKam can only recognize faces if it has something to compare with. So it's up to you to show it the ropes, which means in this case to tell digiKam: This is Lara, this is Juan, this is Peter and so forth. For that you would, after performing a Face Detection as described in the previous article, typically select the **unknown** tag on the Left Sidebar, click on a thumbnail and click, if necessary, on the Show Face Tags button |icon_showfacetags|.
 
-.. figure:: images/mainwindow_faces_tag_assign_iconview.webp
+.. figure:: images/mainwindow_faces_tag_assigned_iconview.webp
     :alt:
     :align: center
 
@@ -201,6 +201,12 @@ Once you have a tag assigned to a few photographs you can have digiKam looking i
 .. note::
 
     To be able to recognize a new face automatically, a minimum of 4 similar faces tagged in different images need to be previously trained using manual face management workflow.
+
+.. figure:: images/mainwindow_faces_tag_recognizeded_iconview.webp
+    :alt:
+    :align: center
+
+    The digiKam Face Management Icon-View With New Recognized Faces as **Agnès** Name
 
 Face Recognition is faster than Face Detection but it still makes sense to click **Settings** and confine the scan to certain albums or tags in the Albums tab, e.g. to the **Unknown** tag. In the **Settings** tab we can play with the balance between speed and accuracy and two checkboxes. The first is explained by the text above it.
 
