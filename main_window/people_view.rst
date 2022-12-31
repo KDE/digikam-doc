@@ -77,7 +77,7 @@ Once you have chosen your options carefully you click **Scan** and after a while
     :alt:
     :align: center
 
-    digiKam Running Faces Detection Process Over Collections
+    Screencast of digiKam Faces Detection Process Running Over Collections
 
 Note that the thumbnails presented here are not showing the whole image. They show the area of the image where the scan algorithm put down a **Face Tag**. You can see that if you click on the thumbnail. In the preview that opens you will see the whole image with all the face tags on them.
 
@@ -85,7 +85,7 @@ Note that the thumbnails presented here are not showing the whole image. They sh
 
 If you don't see them, click the people button |icon_showfacetags| in the upper left corner of the preview. If there is more than one face tag on the image it will also be represented by more than one thumbnail. In the screenshot above this is the case with the two topmost thumbnails.
 
-.. figure:: images/mainwindow_facetagedit.webp
+.. figure:: images/mainwindow_face_tag_edit.webp
     :alt:
     :align: center
 
