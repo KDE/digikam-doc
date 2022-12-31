@@ -91,7 +91,26 @@ If you don't see them, click the people button |icon_showfacetags| in the upper 
 
     The digiKam Face Tags Edit View
 
-This screenshot image have been chosen because it shows one important issue: the algorithm will find inevitably details in an image that resemble a face but are actually something else. That's what the **Remove** button is for. It will remove the face tag from the photograph and if it is the only face tag (left) the photograph will disappear from the scan result.
+==== ========================================================== =============================================
+ ID  Face Detected Samples                                      Comments       
+==== ========================================================== =============================================
+ 01  .. figure:: images/mainwindow_face_detection_sample01.webp An under-exposed face
+ 02  .. figure:: images/mainwindow_face_detection_sample02.webp A closed dog face
+ 03  .. figure:: images/mainwindow_face_detection_sample03.webp A blured child face
+ 04  .. figure:: images/mainwindow_face_detection_sample04.webp A non human face
+ 05  .. figure:: images/mainwindow_face_detection_sample05.webp A very blured and partial face
+ 06  .. figure:: images/mainwindow_face_detection_sample06.webp A rotated face
+ 07  .. figure:: images/mainwindow_face_detection_sample07.webp A covered face with a hood
+ 08  .. figure:: images/mainwindow_face_detection_sample08.webp An aside face
+ 09  .. figure:: images/mainwindow_face_detection_sample09.webp An under-exposed and partial face
+ 10  .. figure:: images/mainwindow_face_detection_sample10.webp A false positive detection
+ 11  .. figure:: images/mainwindow_face_detection_sample11.webp A puppy's mouth
+ 12  .. figure:: images/mainwindow_face_detection_sample12.webp A face covered by a racket
+==== ========================================================== =============================================
+    
+The screenshots **02** and **11** have been chosen because they shows one important feature: the algorithm is able to find animal faces, and this is not a false positive, excepted if you want to see only human faces on your collection of course.
+
+The screenshot **10** is another example shows one important issue: the algorithm will find inevitably details in an image that resemble a face but are actually something else. That's what the **Remove** button is for. It will remove the face tag from the photograph and if it is the only face tag (left) the photograph will disappear from the scan result.
 
 If it really is a face the field labeled **Who is this?** comes into play. Here you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With **Confirm** you can save that to the database. If it was the only face tag (left) the image will disappear from the **Unknown** selection and you will find it once you select either the “People” tag or one of the tags you assigned to one of the face tags in that image.
 
