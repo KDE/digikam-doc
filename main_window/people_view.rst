@@ -70,7 +70,7 @@ The last tab from the settings view allows to tune advanced configuration, as th
 
 For the task we are talking about you check **Detect faces**, of course. Since face detection is a time-consuming task you better don't hit **Scan** right away, rather **Options**. An additional area will fold out organized with three tabs. In **Search-In** you can confine the scan to certain albums or tags. In **Settings** you can try to find a balance between speed and accuracy that suits your needs. Under Advanced you will find two checkboxes. The first is explained by the text above it. The second is for face recognition, see next article.
 
-Once you have chosen your options carefully you click **Scan** and after a while, depending on the scope of your selection, the result will be presented in the Image Area. In the Tags list of the Left Sidebar you will see the People branch of your tag tree. You will see the whole scan result only if the topmost tag **People** is selected. In the tree you will see a new virtual tag called **Unknown** which will show all those images where faces are recognized but not yet connected to a person. If you just scanned for the first time you will find the whole result also here. 
+Once you have chosen your options carefully you click **Scan** and after a while, depending on the scope of your selection, the result will be presented in the Image Area. In the Tags list of the Left Sidebar you will see the People branch of your tag tree. You will see the whole scan result only if the topmost tag **People** is selected. In the tree you will see a new virtual tag called **Unknown** which will show all those images where faces are recognized but not yet connected to a person. If you just scanned for the first time you will find the whole result also here.
 
 .. figure:: videos/mainwindow_faces_detection.gif
     :width: 600px
@@ -174,7 +174,21 @@ In the context menu of the preview there are two more items related to face tags
 Face Recognition
 ~~~~~~~~~~~~~~~~
 
-Assigning People tags to face tags is an important prerequisite to Face Recognition. Very obviously digiKam can only recognize faces if it has something to compare with. So it's up to you to show it the ropes, which means in this case to tell digiKam: This is Lara, this is Juan, this is Peter and so forth. For that you would, after performing a Face Detection as described in the previous article, typically select the **unknown** tag on the Left Sidebar, click on a thumbnail and click, if necessary, on the Show Face Tags button |icon_showfacetags|. Now you should see the face tags of that photograph. Those which have a people (or other) tag already assigned will simply show the name of that tag. The others, showing **unknown** faces, will show a field and two buttons as in the screenshot of the previous article. In the field labeled **Who is this?** you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With **Confirm** you can save that to the database.
+Assigning People tags to face tags is an important prerequisite to Face Recognition. Very obviously digiKam can only recognize faces if it has something to compare with. So it's up to you to show it the ropes, which means in this case to tell digiKam: This is Lara, this is Juan, this is Peter and so forth. For that you would, after performing a Face Detection as described in the previous article, typically select the **unknown** tag on the Left Sidebar, click on a thumbnail and click, if necessary, on the Show Face Tags button |icon_showfacetags|.
+
+.. figure:: images/mainwindow_face_tag_assign_iconview.webp
+    :alt:
+    :align: center
+
+    The digiKam Face Management Icon-View With Multiple Selection of Similar Faces to Tag With The Same Name
+
+Now you should see the face tags of that photograph. Those which have a people (or other) tag already assigned will simply show the name of that tag. The others, showing **unknown** faces, will show a field and two buttons as in the screenshot of the previous article. In the field labeled **Who is this?** you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With **Confirm** you can save that to the database.
+
+.. figure:: images/mainwindow_face_tag_confirmed_iconview.webp
+    :alt:
+    :align: center
+
+    The digiKam Face Management Icon-View With a Confirmed Set of 12 Faces Using **Agnès** Name
 
 .. note::
 
