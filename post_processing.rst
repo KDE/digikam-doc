@@ -4,9 +4,9 @@
 
 .. metadata-placeholder
 
-   :authors: - digiKam Team (see Credits and License for details)
+   :authors: - digiKam Team
 
-   :license: Creative Commons License SA 4.0
+   :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
 .. _post_processing:
 
