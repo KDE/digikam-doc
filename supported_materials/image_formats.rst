@@ -1,6 +1,6 @@
 .. meta::
    :description: Image File Formats Supported by digiKam
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, JPEG, PNG, TIFF, PGF, RAW
 
 .. metadata-placeholder
 
@@ -55,7 +55,17 @@ PNG is an extensible file format for the lossless, portable, well-compressed sto
 PGF
 ---
 
-"Progressive Graphics File" is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited for photo archiving (digiKam uses this format in database to store thumbnails). For more information about the PGF format `see the libPGF homepage <https://www.libpgf.org/>`_.
+*Progressive Graphics File* is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited for photo archiving (digiKam uses this format in database to store thumbnails). For more information about the PGF format `see the libPGF homepage <https://www.libpgf.org/>`_.
+
+.. note::
+
+    Digital still image formats supports is provided by digiKam Loader Plugins. You can see a list of available plugins in **Plugins/Image Loaders** section from Setup dialog.
+
+    .. figure:: images/setup_image_loaders.webp
+        :alt:
+        :align: center
+
+        The Image Loaders list from digiKam Setup dialog
 
 RAW
 ---
@@ -88,7 +98,10 @@ IIQ, CAP                Phase One digital camera Raw image format
 RDC                     Ricoh RAW format
 ======================= ======================================================
 
-If you want to know if your camera RAW file is supported by digiKam, go to `Help --> Supported RAW Cameras` dialog for details.
+If you want to know if your camera RAW file is supported by digiKam, go to :menuselection:`Help --> Supported RAW Cameras` dialog for details.
 
 .. figure:: images/raw_cameras.webp
+    :alt:
+    :align: center
 
+    List of RAW Camera Formats Supported in digiKam
