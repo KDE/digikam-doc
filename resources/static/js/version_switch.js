@@ -5,21 +5,23 @@
 (function() {//switch: v1.2
 "use strict";
 
+// NOTE: enable more languages in dropbox selector from HTML target by disabling corresponding lines.
+
 var all_langs = {
     "en": "English",
     //"ar": "&#1575;&#1614;&#1604;&#1618;&#1593;&#1614;&#1585;&#1614;&#1576;&#1616;&#1610;&#1614;&#1617;&#1577;&#1615;",
     //"ca": "Catal&agrave;",
     //"da": "‎dansk",
     //"de": "Deutsch",
-    //"es": "Espa&ntilde;ol",
+    "es": "Espa&ntilde;ol",
     //"fi": "Suomeksi",
-    //"fr": "Fran&ccedil;ais",
+    "fr": "Fran&ccedil;ais",
     //"id": "Bahasa Indonesia",
     //"it": "Italiano",
     //"ja": "&#x65E5;&#x672C;&#x8A9E;",
     //"ko": "&#xD55C;&#xAD6D;&#xC5B4;",
     //"nb": "Norsk Bokm&#x00E5;l",
-    //"nl": "‎Nederlands",
+    "nl": "‎Nederlands",
     //"pt_BR": "Portugu&ecirc;s",
     //"ru": "&#x3A1;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;",
     //"sk": "Sloven&#269;ina",
@@ -27,7 +29,7 @@ var all_langs = {
     //"sr": "&#1089;&#1088;&#1087;&#1089;&#1082;&#1080;",
     //"sv": "Svenska",
     //"tr": "‎Türk&ccedil;e",
-    //"uk_UA": "&#x423;&#x43A;&#x440;&#x430;&#x457;&#x43D;&#x441;&#x44C;&#x43A;&#x430;",
+    "uk_UA": "&#x423;&#x43A;&#x440;&#x430;&#x457;&#x43D;&#x441;&#x44C;&#x43A;&#x430;",
     //"vi": "Ti&#x1EBF;ng Vi&#x1EC7;t",
     //"zh_CN": "&#x4E2D;&#x6587;(&#x7B80;&#x4F53;)",
     //"zh_TW": "&#x4E2D;&#x6587;(&#x7E41;&#x9AD4;)",
