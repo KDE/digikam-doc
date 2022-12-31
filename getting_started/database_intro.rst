@@ -1,6 +1,6 @@
 .. meta::
    :description: How to quickly start digiKam photo management program
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, database, intro
 
 .. metadata-placeholder
 
@@ -26,5 +26,11 @@ The digiKam actually manages more than one database. For convenience, it is broa
     - Similarity database to store image finger-prints for fuzzy search engine.
 
     - Face database for storing face recognition metadata i.e. to host face histograms for faces recognition. 
+
+.. figure:: images/database_remote_mysql_config.webp
+    :alt:
+    :align: center
+
+    Example of digiKam Remote Mysql Configuration Hosted on a NAS From The Local Network
 
 The whole details of database settings are mostly given in the :ref:`database setup section <database_settings>`.
