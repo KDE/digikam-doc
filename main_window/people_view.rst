@@ -83,7 +83,7 @@ Note that the thumbnails presented here are not showing the whole image. They sh
 
 .. |icon_showfacetags| image:: images/mainwindow_icon_showfacetags.webp
 
-If you don't see them, click the people button |icon_showfacetags| in the upper left corner of the preview. If there is more than one face tag on the image it will also be represented by more than one thumbnail. In the screenshot above this is the case with the two topmost thumbnails.
+If you don't see them, click the people button |icon_showfacetags| in the upper left corner of the preview. If there is more than one face tag on the image it will also be represented by more than one thumbnail. This is the case with the screenshot above take in preview mode.
 
 .. figure:: images/mainwindow_face_tag_edit.webp
     :alt:
@@ -91,7 +91,7 @@ If you don't see them, click the people button |icon_showfacetags| in the upper 
 
     The digiKam Face Tags Edit View
 
-If it really is a face the field labeled **Who is this?** comes into play. Here you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With **Confirm** you can save that to the database. If it was the only face tag (left) the image will disappear from the **Unknown** selection and you will find it once you select either the “People” tag or one of the tags you assigned to one of the face tags in that image.
+If it really is a face the field labeled **Who is this?** comes into play. Here you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With **Confirm** you can save that to the database. If it was the only face tag (left) the image will disappear from the **Unknown** selection and you will find it once you select either the **People** tag or one of the tags you assigned to one of the face tags in that image.
 
 The list of detection samples below come from a huge collection of photo scanned with the Yolo v3 deep-learning model.
 
