@@ -22,25 +22,27 @@ You’ll find all previous digiKam versions in the `attic <https://download.kde.
 Minimum system requirements
 ---------------------------
 
-**Operating System**: 64-bit Windows 7 or newer, Apple macOS 10.15 (Catalina) or newer and on M1, 64-bit Linux. Details see below.
+- **Operating System**: 64-bit Windows 7 or newer, Apple macOS 10.15 (Catalina) or newer and on M1, 64-bit Linux. Details see below.
 
-**CPU**: x86 Intel or AMD; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for depp-learning uses as with face detection and image quality sorting. Details see below.
+- **CPU**: x86 Intel or AMD; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for depp-learning uses as with face detection and image quality sorting. Details see below.
 
-**GPU**: OpenGL 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible DirectX 9 or 11 drivers.
+- **GPU**: OpenGL 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible DirectX 9 or 11 drivers.
 
-**RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for depp-learning uses as with face detection and image quality sorting. Details see below.
+- **RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for depp-learning uses as with face detection and image quality sorting. Details see below.
 
 .. note::
 
    If your computer is at the lower end of CPU and RAM requirements, you should use both :ref:`Small Thumbnails Resolution <thumbnails_resolution>` and :ref:`Loading Embedded Preview <preview_resolution>` features to help reduce preview lag.
 
-**Monitors**: If the application can be used without problem on a single screen, using multi-screens will improve the experience especially with the workflow to review items.
+- **Monitors**: If the application can be used without problem on a single screen, using multi-screens will improve the experience especially with the workflow to review items.
 
 .. figure:: images/multi_screens_linux_station.webp
     :alt:
     :align: center
 
-    A Double-screens Linux Station With Main Window on the Left and Light Table on The Right
+    A Double-screens Linux Station With Main Window on the Left and Light Table on the Right
+
+- **Storage**: SSDs will be the best choice for robustness and speed to host database and collection.
 
 digiKam on Linux
 -----------------
@@ -49,7 +51,7 @@ digiKam on Linux
 
 **AppImage:** Minimum Ubuntu 18.04 has no such minimal requirements.
 
-AppImage is a bundle hosting all the necessary dependencies to run digiKam. Nothing is installed on your system.
+`AppImage <https://en.wikipedia.org/wiki/AppImage>`_ is a bundle hosting all the necessary dependencies to run digiKam. Nothing is installed on your system.
 Turn on **executable** property of AppImage file and run it. That all...
 
 .. figure:: videos/appimage_startup.gif
