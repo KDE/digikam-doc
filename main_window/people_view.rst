@@ -227,24 +227,28 @@ Manual Face tagging
 
 digiKam allows for either manual face tagging.
 
-For more information about face tagging using digiKam's face recognition engine see the previous section of this manual.
+For more information about automatic face tagging using digiKam's face recognition engine see the previous section of this manual.
 
-For tagging people manually, you can preview an image, click on **Add a Face Tag** icon or select option on context menu, as highlighted on the screenshot below.
+To tag people manually, you can do it by by different way:
 
-.. figure:: images/mainwindow_addfacetag.webp
-    :alt:
-    :align: center
+- From **Preview Mode**: click on **Add a Face Tag** icon or select option on context menu, as highlighted on the screenshot below.
 
-    The digiKam Manual Face Tagging From Context Menu
+    .. figure:: images/mainwindow_addfacetag.webp
+        :alt:
+        :align: center
 
-And then draw a rectangle around the face while holding left mouse button followed by entering the person's name and pressing :kbd:`Enter`.
+        The digiKam Manual Face Tagging From Context Menu
 
-.. figure:: images/mainwindow_face_region.webp
-    :alt:
-    :align: center
+    And then draw a rectangle around the face while holding left mouse button followed by entering the person's name and pressing :kbd:`Enter`.
 
-    The digiKam Manual Face Tagging Editor
+    .. figure:: images/mainwindow_face_region.webp
+        :alt:
+        :align: center
 
-.. note::
+        The digiKam Manual Face Tagging Editor
 
-    Instead of clicking on **Add a Face Tag** icon you can draw a face region while holding :kbd:`Ctrl` key.
+    .. note::
+
+        Instead of clicking on **Add a Face Tag** icon you can draw a face region while holding :kbd:`Ctrl` key.
+
+- From Left Sidebar **People** tab: use drag and drop between Icon-View and face-tags tree-view. Select items to assign to a face-tag and perform a move move to the **People** items hierarchy. A pop-up menu will appears to confirm assignement.
