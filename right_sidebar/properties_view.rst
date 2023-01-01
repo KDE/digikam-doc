@@ -27,6 +27,8 @@ The properties sidebar shows the essential information about the selected image 
 
 +-------------------------------------------------------+------------------------------------------------------+
 |    .. figure:: images/sidebar_propertiesphoto.webp    |    .. figure:: images/sidebar_propertiesvideo.webp   |
+|       :alt:                                           |        :alt:                                         |
+|       :align: center                                  |        :align: center                                |
 +-------------------------------------------------------+------------------------------------------------------+
 |               File properties for a photo             |              File properties for a video             |
 +-------------------------------------------------------+------------------------------------------------------+

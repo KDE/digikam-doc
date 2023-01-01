@@ -498,7 +498,7 @@ Post Processing
 
     .. container:: tile no-descr
 
-        :ref:`share_dlna`
+        :ref:`media_server`
 
     .. container:: tile no-descr
 

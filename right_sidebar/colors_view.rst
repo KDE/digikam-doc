@@ -25,6 +25,10 @@ The histogram for an image shows the amount of each color that is present and th
 The Histogram Viewer shows the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram based color correction, use for example Color Balance, Levels Adjust or Curves Adjust in the Image Editor.
 
 .. figure:: images/sidebar_histogramview.webp
+    :alt:
+    :align: center
+
+    The Color View From Right Sidebar Displaying Histogram Information
 
 An image can be decomposed into **Red**, **Green** and **Blue** color channels. **Alpha** channel is a Layer in the image that supports transparency (like PNG or GIF images). Each channel supports a range of intensity levels from 0 to 255 (integer valued). Thus, a black pixel is encoded by 0 on all color channels; a white pixel by 255 on all color channels. A transparent pixel is encoded by 0 on the alpha channel; an opaque pixel by 255.
 
@@ -121,3 +125,8 @@ An ICC profile is a set of data that characterizes a color input or output devic
 Every files used to store captured image can be profiled. Camera manufacturers provide profiles for their products, and store them in image file as extra metadata. This ICC Profile viewer allows to display the textual information and a flat graph of color space.
 
 .. figure:: images/sidebar_iccprofileviewer.webp
+    :alt:
+    :align: center
+
+
+    The Color View From Right Sidebar Displaying Color Profile Information

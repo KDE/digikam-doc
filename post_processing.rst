@@ -23,6 +23,6 @@ This section explain how to use the digiKam post processing tools.
 
    post_processing/metadata_editor.rst
    post_processing/html_gallery.rst
-   post_processing/share_dlna.rst
+   post_processing/media_server.rst
    post_processing/send_images.rst
    post_processing/print_creator.rst

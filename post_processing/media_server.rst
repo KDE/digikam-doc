@@ -8,10 +8,10 @@
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
-.. _share_dlna:
+.. _media_server:
 
-Share With DLNA
-===============
+Media Server
+============
 
 .. contents::
 

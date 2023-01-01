@@ -30,6 +30,10 @@ The metadata sidebar is composed of five sub tabs **EXIF**, **Makernote**, **IPT
     - Copying :ref:`file's metadata to the database <maintenance_database>`.
 
 .. figure:: images/sidebar_metadataexif.webp
+    :alt:
+    :align: center
+
+    The Metadata View From Right Sidebar Displaying Exif Information
 
 For each metadata section, a bar is available on the top of view with:
 
@@ -78,6 +82,10 @@ The EXIF standard defines a Makernote tag, which allows camera manufacturers to 
 You can review embedded Makernote information for the selected image in this sidebar tab. The Makernote Viewer is purely informational: nothing you do with it will cause any change to the Makernote sections.
 
 .. figure:: images/sidebar_metadatamakernotes.webp
+    :alt:
+    :align: center
+
+    The Metadata View From Right Sidebar Displaying Markernote Information
 
 IPTC Tags
 ~~~~~~~~~
@@ -91,6 +99,10 @@ In particular, the IPTC defined a set of metadata attributes that can be applied
 You can review embedded IPTC information for the selected image in this sidebar tab. The IPTC Viewer is purely informational: nothing you do with it will cause any change to the IPTC sections.
 
 .. figure:: images/sidebar_metadataiptc.webp
+    :alt:
+    :align: center
+
+    The Metadata View From Right Sidebar Displaying IPTC Information
 
 XMP Tags
 ~~~~~~~~
@@ -106,6 +118,10 @@ XMP is given to replace IPTC as well.
 You can review embedded XMP information for the selected image in this sidebar tab. The XMP Viewer is purely informational: nothing you do with it will cause any change to the XMP sections.
 
 .. figure:: images/sidebar_metadataxmp.webp
+    :alt:
+    :align: center
+
+    The Metadata View From Right Sidebar Displaying XMP Information
 
 ExifTool View
 ~~~~~~~~~~~~~
@@ -117,3 +133,7 @@ ExifTool supports many types of metadata including Exif, IPTC, XMP, JFIF, GeoTIF
 You can review information decoded by ExifTool for the selected image in this sidebar tab. The ExifTool Viewer is purely informational: nothing you do with it will cause any change to the information.
 
 .. figure:: images/sidebar_metadataexiftool.webp
+    :alt:
+    :align: center
+
+    The Metadata View From Right Sidebar Displaying ExifTool Information
