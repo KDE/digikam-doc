@@ -121,6 +121,10 @@ Main Window
 #############
 Right Sidebar
 #############
+.. figure:: images/right_sidebar.webp
+    :width: 300px
+    :alt:
+    :target: right_sidebar.html
 
 .. container:: toctile
 
