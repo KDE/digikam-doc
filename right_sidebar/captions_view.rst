@@ -42,7 +42,7 @@ Title and caption editors are powerful tool which supports:
    - Author strings definition.
 
 The default language from an alternative strings stack is **x-default** and must be written by preference in English. If one strings must be enter in the stack, the x-default must be present in prior.
-   
+
 After commenting, either choose the **Apply** button or go straight to the next image, the descriptions will be saved.
 
 Next to the Apply button there is the **More** button. From it you can either choose to read metadata from the selected file to the database, or the other way around, to write metadata to the files (the latter take place anyway if you chose a metadata setting so that all metadata is always saved to the images). 
@@ -64,14 +64,14 @@ The rating is then transcribed into the IPTC *urgency* data field. The transcodi
 ============== ============
 digiKam Rating IPTC Urgency
 ============== ============
--              8
-*              7
-*              6
-**             5
-***            4
-****           3
-****           2
-*****          1
+no star        8
+1 star         7
+1 star         6
+2 stars        5
+3 stars        4
+4 stars        3
+4 stars        2
+5 stars        1
 ============== ============
 
 .. _tags_tree:
