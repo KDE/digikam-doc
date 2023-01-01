@@ -70,9 +70,13 @@ Supported Materials
 
    supported_materials
 
+
 ###########
 Main Window
 ###########
+.. image:: images/main_window.webp
+    :width: 300px
+    :alt:
 
 .. container:: toctile
 
