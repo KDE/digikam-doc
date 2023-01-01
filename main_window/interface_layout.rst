@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Main Window Interface Layout
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, main, window, toolbar, icon-view
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, main, window, tool-bar, icon-view, status-bar
 
 .. metadata-placeholder
 
@@ -37,6 +37,12 @@ Drag & Drop of images works about everywhere: d&d an image into another branch o
 The Status Bar
 --------------
 
+.. figure:: images/mainwindow_status_bar.webp
+    :alt:
+    :align: center
+
+    The digiKam Main Window Status-Bar
+
 The status bar at the bottom shows in all eight views:
 
     - The file name when selecting a single file.
@@ -51,7 +57,7 @@ The status bar at the bottom shows in all eight views:
 
         - A funnel button to open the filter settings panel.
 
-    - A progress bar for batch processes, e.g. assigning tags.
+    - A progress bar for batch processes, e.g. assigning tags or rebuild fingerprints.
 
     - A thumbnail and preview size slider with buttons for "Fit to Window" and "Zoom to 100%".
 
