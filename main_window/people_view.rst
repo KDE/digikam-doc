@@ -251,4 +251,11 @@ To tag people manually, you can do it by by different way:
 
         Instead of clicking on **Add a Face Tag** icon you can draw a face region while holding :kbd:`Ctrl` key.
 
-- From Left Sidebar **People** tab: use drag and drop between Icon-View and face-tags tree-view. Select items to assign to a face-tag and perform a move move to the **People** items hierarchy. A pop-up menu will appears to confirm assignement.
+- From Left Sidebar **People** tab: use drag and drop between icon-view and face-tags tree-view. Select items labeled **Unknown** that you want to assign a face-tag. Perform a move with the mouse to the **People** items hierarchy. A pop-up menu will appears to confirm face assignement.
+
+    .. figure:: videos/mainwindow_faces_drag_drop.gif
+        :width: 600px
+        :alt:
+        :align: center
+
+    Screencast of Manual Faces Assignment Using Drag And Drop
