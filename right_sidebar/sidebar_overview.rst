@@ -15,7 +15,7 @@ Overview
 
 .. contents::
 
-The digiKam main window has a sidebar at the right border providing important information and actions of the selected images. This same sidebar is also available in the digiKam Image Editor (except the **Filters** tab). It can be displayed by respectively clicking on one of the eight tabs:
+The digiKam main window has a sidebar at the right border providing important information and actions of the selected images. This same sidebar is also available in the digiKam Image Editor and the Light Table (except the **Filters** tab). It can be displayed by respectively clicking on one of the eight tabs:
 
     - :ref:`Properties <properties_view>`: File and image properties, key shooting parameters.
 

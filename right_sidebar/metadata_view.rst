@@ -86,7 +86,7 @@ The `International Press Telecommunications Council <http://www.iptc.org>`_, is 
 
 The IPTC was established in 1965 by a group of news organizations to safeguard the telecommunications interests of the world's press. Since the late 1970s IPTC's activities have primarily focused on developing and publishing industry standards for the interchange of news data.
 
-In particular, the IPTC defined a set of metadata attributes that can be applied to images. These were defined originally in 1979, and revised significantly in 1991 to be the *Information Interchange Model* (IIM), but the concept really advanced in 1994 when Adobe defined a specification for actually embedding the metadata into digital image files - known as "IPTC headers".
+In particular, the IPTC defined a set of metadata attributes that can be applied to images. These were defined originally in 1979, and revised significantly in 1991 to be the *Information Interchange Model* (IIM), but the concept really advanced in 1994 when Adobe defined a specification for actually embedding the metadata into digital image files - known as *IPTC headers*.
 
 You can review embedded IPTC information for the selected image in this sidebar tab. The IPTC Viewer is purely informational: nothing you do with it will cause any change to the IPTC sections.
 

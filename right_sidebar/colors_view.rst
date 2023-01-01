@@ -15,7 +15,7 @@ Colors View
 
 .. contents::
 
-The colors sidebar has two sub tabs **Histogram** and **ICC Profile**. Here are more details about Color Management
+The colors sidebar has two sub tabs **Histogram** and **ICC Profile**. Here are more details about :ref:`Color Management <color_management>`
 
 Histogram Viewer
 ~~~~~~~~~~~~~~~~
