@@ -211,11 +211,13 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
 
 - Always use digiKam AppImage version 8 and later under Linux/Plasma desktop to take screenshots.
 
-- Always use **White Balance** color theme to take screenshots with desktop default icon set (select color theme from Settings/Themes menu).
+- Always use **White Balance** color theme to take screenshots. Select theme from Settings/Themes menu.
 
-- No face/people present in photo hosted in screenshots.
+- Always use **Breeze** widget style and icon theme. Select widget/icon theme from Setup/Miscs/Appearance configuration dialog page.
 
-- No digiKam version number must be present in screeshots.
+- No face/people present as possible in photo hosted in screenshots.
+
+- No digiKam version number must be present in screenshots.
 
 - Desktop and application must be in English only. Do not mix languages.
 
@@ -244,7 +246,9 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
 Another format supported inside the documentation is **GIFa** video. It can be used to present a region of screen
 from the application while an operation is under progress. It's perfect to write tutorials.
 
-To prevent huge GIFa files, just capture the right area to present in application and limit capture to less than 10 seconds,
+Use the same specifications to take screencast than for screenshot, aka color theme, widget style, icon theme, etc.
+
+To prevent huge GIFa files, just capture the right area from application and limit capture to less than 10 seconds.
 
 A good tool to capture video from desktop is [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
 
