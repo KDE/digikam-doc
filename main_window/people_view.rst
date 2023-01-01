@@ -259,3 +259,11 @@ To tag people manually, you can do it by by different way:
         :align: center
 
     Screencast of Manual Faces Assignment Using Drag And Drop
+
+- From keyboard shorcut: you can assign a magic key to a face-tag and quickly uses the keyboard to switch on the face-tag name to selected items.
+
+    .. figure:: images/mainwindow_face_tag_properties.webp
+        :alt:
+        :align: center
+
+        The digiKam Face Tag Properties Dialog With a Keyboard Shortcut Assigned
