@@ -26,6 +26,10 @@ On the other hand the tags in the tag filter and the individual labels within on
 Another use of this tab of the Right Sidebar is drag and drop tagging. Let's say you chose with the help of the Left Sidebar a number of images to tag them and they are now displayed in the Image Area. If the tag already exists, simply drag it from the Right Sidebar onto one of the icons. A dialog will pop-up and ask if this tag should be applied to this item only, to all items or, if there is more than one icon selected (highlighted), to the selected items.
 
 .. figure:: images/sidebar_filters_view.webp
+    :alt:
+    :align: center
+
+    The Filters View From Right Sidebar
 
 In the above example the main window shows the images from an album, the tag filter is set to 'Lieux', which reduces the set to 3 images. In the **Geolocation Filter**, we select **Images With Coordinates** which leaves only one picture from the list of items including GPS information. Then a tag is dragged from the **Tag Filter** over the icon and dropped. A pop-up dialog asks if the tag shall be applied to this item only or to all (displayed) items.
 
