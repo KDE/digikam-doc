@@ -21,6 +21,11 @@ You can download this manual as an `EPUB <https://docs.digikam.org/en/epub/Digik
 ###############
 Getting started
 ###############
+.. figure:: images/index_getting_started.webp
+    :width: 300px
+    :alt:
+    :target: getting_started.html
+
 
 .. container:: toctile
 
