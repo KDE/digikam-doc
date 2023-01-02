@@ -140,6 +140,67 @@ Getting started                                         Section title declared o
    getting_started                                      The name of the rst file implementing the section
 ```
 
+Next file is the **getting_started.rst** listing all chapters from the section:
+
+```
+Implementation                                                                                              Comments
+
+.. meta::                                                                                                   The metadata section of the document
+   :description: Do Your First Steps in digiKam Photo Management Program                                    Some words to describe the section
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn         Words list used with the search engine
+
+.. metadata-placeholder                                                                                     The license/credit lists (same for all rst files)
+
+   :authors: - digiKam Team
+
+   :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
+
+.. _getting_started:                                                                                        Internal anchor for this section
+
+###############
+Getting started                                                                                             Section title
+###############
+
+This section give an overview to start with digiKam.                                                        A small description visible on the page
+
+.. toctree::                                                                                                List of chapters in this section
+   :maxdepth: 2
+   :caption: Contents:
+   :glob:
+
+   getting_started/introduction.rst                                                                         Rst files hierarchy ordered.
+   getting_started/installation.rst
+   getting_started/quick_start.rst
+   getting_started/database_intro.rst
+```
+
+And finaly, the chapter implementation of the section, here the first one, as all others uses the same kind of code:
+
+```
+Implementation                                                                                              Comments
+
+.. meta::                                                                                                   The metadata section of the document
+   :description: Introduction to digiKam Photo Management Program                                           Some words to describe the chapter
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy         Words list used with the search engine
+
+.. metadata-placeholder                                                                                     The license/credit lists (same for all rst files)
+
+   :authors: - digiKam Team
+
+   :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
+
+.. _application_intro:                                                                                      Internal anchor for this chapter
+
+Introduction                                                                                                Chapter title
+============
+
+.. contents::
+
+Background                                                                                                  First sub title of this chapter
+----------
+...                                                                                                         The implementation continue here...
+```
+
 ### Sphinx Framework
 
 The Python based Sphinx documentation generator translates a set of reStructuredText source files into various output formats,
@@ -273,7 +334,7 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
 
 - Do not use space and capitalized characters in file name.
 
-- WEBP files must be hosted in **images/** sub-folders from each documentation section. 
+- WEBP files must be hosted in **images/** sub-folders from each documentation section.
 
 - To include the screenshot in a ReStructuredText file, use the syntax below;
 
