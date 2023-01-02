@@ -40,7 +40,7 @@ Minimum system requirements
     :alt:
     :align: center
 
-    A Double-screens Linux Station With Main Window on the Left and Light Table on the Right
+    A Double-Screens Linux Station With **Main Window** On The Left And **Light Table** On The Right
 
 - **Storage**: SSDs will be the best choice for robustness and speed to host database and collection.
 
