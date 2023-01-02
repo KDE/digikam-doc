@@ -103,9 +103,10 @@ As example, we will develop how the **getting_started** section of the manual is
 
 - From the top level **index.rst**, the section is declared like this:
 
-Implementation                                          Comments
-------------------------------------------------------------------------------------------------------------------------
+
 ```
+Implementation                                          Comments
+
 ###############
 Getting started                                         Section title declared on the front page
 ###############
@@ -136,9 +137,8 @@ Getting started                                         Section title declared o
    :maxdepth: 2                                         We will descend to the 2 level from nested hierarchy
    :hidden:
 
-   getting_started                                      The name of the rst file point on the section implementation
+   getting_started                                      The name of the rst file implementing the section
 ```
-
 
 ### Sphinx Framework
 
