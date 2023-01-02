@@ -46,7 +46,7 @@ The EPUB ebook is generated in `build/epub`. Open the ebook file by double click
 
 - LICENSES  : all licenses used in the project.
 - build     : temporary dir created when documentation is compiled.
-- locale    : link to updated handbook translations files.
+- locale    : link to updated handbook translations files. Files are updated all nights.
 - po        : Obsolete, not used. Replaced by locale directory.
 - project   : some helpers scripts.
 - ressources: Sphinx templates customization.
