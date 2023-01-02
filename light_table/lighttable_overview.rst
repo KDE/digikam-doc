@@ -53,6 +53,6 @@ Of course, the usual edit actions work from the light table directly using :menu
 
 All image information from the main window right sidebar is available for each of the two previews in the light table. This makes it easy to link visual differences to exposure data for example.
 
-In the lower right corner of each pane there you find a built-in panning action (crossed arrows). Click on it and keep the left mouse button pressed to pan across the image (in synchronous mode both images will show the same viewing point).
+In the lower right corner of each pane there you find a built-in panning action (crossed arrows). Click on it and keep the left mouse button pressed to pan across the image (with **Synchrone** mode, both images will show the same viewing point).
 
-Zooming works the same as in other views: use indifferently the zoom slider below the panes or **Ctrl-scroll wheel** to zoom in and out, with both images when in synchronous mode.
+Zooming works the same as in other views: use indifferently the zoom slider below the panes or **Ctrl-scroll wheel** to zoom in and out, with both images when **Synchrone** mode is selected.
