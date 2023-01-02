@@ -95,7 +95,52 @@ For example, the **getting_started** section will be organized like this:
 ```
 
 **getting_started.rst** is the root entry of the **Geting-Started** section of this manual.
-All others nested **.rst** files hosted in **getting_started** sub-directory are chapters in this section. 
+All others nested **.rst** files hosted in **getting_started** sub-directory are chapters in this section.
+
+### ReStructuredText Section/Chapters Implementation
+
+As example, we will develop how the **getting_started** section of the manual is implemented.
+
+- From the **index.rst**, the section is declared like this:
+
+================================================= ============================================================
+Implementation                                    Comments
+================================================= ============================================================
+```
+###############
+Getting started                                   Section title declared on the front page
+###############
+.. figure:: images/index_getting_started.webp     Visual preview of the section
+    :width: 300px                                 Limit preview size
+    :alt:                                         No alternative description
+    :target: getting_started.html                 Preview link on the documentation
+
+.. container:: toctile                            Chapter from the section will be hosted in a container
+
+    .. container:: tile no-descr                  A sub-container for a chapter
+
+        :ref:`application_intro`                  Link to the 1st chapter
+
+    .. container:: tile no-descr
+
+        :ref:`application_install`                Link to the 2nd chapter
+
+    .. container:: tile no-descr
+
+        :ref:`quick_start`                        Link to the 3rd chapter
+
+    .. container:: tile no-descr
+
+        :ref:`database_intro`                     Link to the last chapter
+
+.. toctree::
+   :maxdepth: 2                                   We will descend to the 2 level from nested hierarchy
+   :hidden:
+
+   getting_started                                The name of the rst file point on the section implementation
+```
+================================================= ============================================================
+
 
 ### Sphinx Framework
 
@@ -180,6 +225,7 @@ Nested list
     - Level 2
     - Level 2
 ```
+
 ### Contribute Workflow
 
 To help us to write this English documentation, you must use a standard git workflow based on the Fork/Merge Request mechanism.

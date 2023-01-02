@@ -19,13 +19,12 @@ The current digiKam version you get `here <https://www.digikam.org/download/>`_.
 You can download this manual as an `EPUB <https://docs.digikam.org/en/epub/DigikamManual.epub>`_.
 
 ###############
-Getting started
+Getting Started
 ###############
 .. figure:: images/index_getting_started.webp
     :width: 300px
     :alt:
     :target: getting_started.html
-
 
 .. container:: toctile
 
