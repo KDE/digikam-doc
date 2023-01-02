@@ -57,10 +57,10 @@ One particularity on digiKam Light Table is the sidbar views avaialble on the ri
 
     - :ref:`Versions <versions_view>`: Image history.
 
-If both left and right sidebar are visible in Light Table, they can be used to compare images information loaded in left and right canvas preview. When you change the item on the right side, right sidebar contents will be updated. In opposite, left side contents will still the same. If both sidebar show the same tab view (as metadata for example), they can be used to compare visually the difference and select the best shot to mark in your workflow.
+If both left and right sidebar are visible in Light Table, they can be used to compare images information loaded in left and right canvas preview. When you change the item on the right side, right sidebar contents will be updated. In opposite, left side contents will still the same. If both sidebar show the same tab view (as metadata for example), they can be used to compare visually the differences and select the best shot to mark in your workflow.
 
 .. figure:: images/light_table_comparing_sidebars.webp
     :alt:
     :align: center
 
-    The digiKam Light Table Used To Compare Left And Right Sidebars Contents
+    The digiKam Light Table Used To Compare Left And Right Metadata Contents
