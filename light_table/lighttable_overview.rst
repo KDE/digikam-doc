@@ -56,3 +56,7 @@ All image information from the main window right sidebar is available for each o
 In the lower right corner of each pane there you find a built-in panning action (crossed arrows). Click on it and keep the left mouse button pressed to pan across the image (with **Synchrone** mode, both images will show the same viewing point).
 
 Zooming works the same as in other views: use indifferently the zoom slider below the panes or **Ctrl-scroll wheel** to zoom in and out, with both images when **Synchrone** mode is selected.
+
+.. note::
+
+    If you use mutiscreen on your computer, it's a good idea to place **Main Window** on a screen and the **Light Table** on other one to increase your experience.
