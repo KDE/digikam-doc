@@ -621,6 +621,10 @@ Menu Descriptions
 ###################
 Credits and License
 ###################
+.. figure:: images/index_credits_license.webp
+    :width: 300px
+    :alt:
+    :target: credits_license.html
 
 .. container:: toctile
 
