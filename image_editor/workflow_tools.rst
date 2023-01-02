@@ -42,7 +42,7 @@ If you swap step 4. and 5., which is well possible if the initial contrast is al
 
 Many of the tools you may need for photographic editing are included with digiKam. Their description follows here.
 
-Common editing tools features
+Common Editing Tools Features
 -----------------------------
 
 All Image Editor tools like Sharpen, Blur, Noise Reduction, Refocus, Unsharp Mask, etc. use a common dialog style that previews the effect before applying the filter to the current image. Below you see the “Solarize” tool in action using this common dialog layout:

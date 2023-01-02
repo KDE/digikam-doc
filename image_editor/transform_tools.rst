@@ -160,7 +160,7 @@ After you have adjusted the perspective of an image there will be unpleasant tri
 
 .. figure:: images/editor_perspective_tool.webp
 
-Change the image size
+Change The Image Size
 ---------------------
 
 Overview
@@ -179,7 +179,7 @@ If the photograph has the wrong size, you can scale it to the size you would lik
 
 This image resizing tool uses a standard linear interpolation method to approximate pixels. If you want to up-size a small image with a better quality, try the Blowup tool.
 
-Increasing image size (Restoration)
+Increasing Image Size (Restoration)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Many image editing programs use some kind of interpolation e.g. spline interpolation to scale-up an image. digiKam uses a more sophisticated approach.
