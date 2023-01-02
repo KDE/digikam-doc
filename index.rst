@@ -193,6 +193,10 @@ Light Table
 
         :ref:`lighttable_overview`
 
+    .. container:: tile no-descr
+
+        :ref:`lighttable_advanced`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

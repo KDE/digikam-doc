@@ -33,7 +33,7 @@ Select one or several images in any view from the main window, call **Place onto
 
 From the thumbbar drag & drop images to the left and right comparison pane below. A little arrow will indicate which copy is shown in which pane. If you choose **Synchronize** from the toolbar, any zoom and panning in one window will be synchronously executed in the other pane, so that you can compare the same areas of two images.
 
-.. figure:: videos/lighttable_views_synchronized.gif
+.. figure:: videos/light_table_views_synchronized.gif
     :width: 600px
     :alt:
     :align: center
