@@ -73,7 +73,7 @@ Supported Materials
 ###########
 Main Window
 ###########
-.. figure:: images/main_window.webp
+.. figure:: images/index_main_window.webp
     :width: 300px
     :alt:
     :target: main_window.html
@@ -121,7 +121,7 @@ Main Window
 #############
 Right Sidebar
 #############
-.. figure:: images/right_sidebar.webp
+.. figure:: images/index_right_sidebar.webp
     :width: 300px
     :alt:
     :target: right_sidebar.html
@@ -173,6 +173,10 @@ Right Sidebar
 ###########
 Light Table
 ###########
+.. figure:: images/index_light_table.webp
+    :width: 300px
+    :alt:
+    :target: light_table.html
 
 .. container:: toctile
 
@@ -189,6 +193,10 @@ Light Table
 ###################
 Batch Queue Manager
 ###################
+.. figure:: images/index_batch_queue.webp
+    :width: 300px
+    :alt:
+    :target: batch_queue.html
 
 .. container:: toctile
 
@@ -209,6 +217,10 @@ Batch Queue Manager
 ###########
 Tag Manager
 ###########
+.. figure:: images/index_tag_manager.webp
+    :width: 300px
+    :alt:
+    :target: tag_manager.html
 
 .. container:: toctile
 
@@ -257,6 +269,10 @@ Digital Asset Management
 ############
 Import Tools
 ############
+.. figure:: images/index_import_tools.webp
+    :width: 300px
+    :alt:
+    :target: import_tools.html
 
 .. container:: toctile
 
@@ -285,6 +301,10 @@ Import Tools
 #################
 Setup Application
 #################
+.. figure:: images/index_setup_application.webp
+    :width: 300px
+    :alt:
+    :target: setup_application.html
 
 .. container:: toctile
 
@@ -361,6 +381,10 @@ Setup Application
 ############
 Image Editor
 ############
+.. figure:: images/index_image_editor.webp
+    :width: 300px
+    :alt:
+    :target: image_editor.html
 
 .. container:: toctile
 
@@ -409,6 +433,10 @@ Image Editor
 ##################
 Geolocation Editor
 ##################
+.. figure:: images/index_geolocation_editor.webp
+    :width: 300px
+    :alt:
+    :target: geolocation_editor.html
 
 .. container:: toctile
 
@@ -441,6 +469,10 @@ Geolocation Editor
 #################
 Maintenance Tools
 #################
+.. figure:: images/index_maintenance_tools.webp
+    :width: 300px
+    :alt:
+    :target: maintenance_tools.html
 
 .. container:: toctile
 
@@ -493,6 +525,10 @@ Maintenance Tools
 ###############
 Post Processing
 ###############
+.. figure:: images/index_post_processing.webp
+    :width: 300px
+    :alt:
+    :target: post_processing.html
 
 .. container:: toctile
 
@@ -525,6 +561,10 @@ Post Processing
 ############
 Export Tools
 ############
+.. figure:: images/index_export_tools.webp
+    :width: 300px
+    :alt:
+    :target: export_tools.html
 
 .. container:: toctile
 
@@ -541,6 +581,10 @@ Export Tools
 ###############
 Slideshow Tools
 ###############
+.. figure:: images/index_slideshow_tools.webp
+    :width: 300px
+    :alt:
+    :target: slideshow_tools.html
 
 .. container:: toctile
 
@@ -565,6 +609,10 @@ Slideshow Tools
 #################
 Menu Descriptions
 #################
+.. figure:: images/index_menu_descriptions.webp
+    :width: 300px
+    :alt:
+    :target: menu_descriptions.html
 
 .. container:: toctile
 
