@@ -53,7 +53,7 @@ Auto-Creation of Albums
 
 Check Extension-based sub-albums and digiKam will create subalbums based on the file extensions of the imported images in the target album. digiKam will open a dialog where you can choose the target album once you click one of the download options either from the toolbar or from the Item menu. If you want to create a new Album, into which you could download the photographs, click the New Album button. The new Album will be created as a sub-folder of the Album that is currently selected in the existing Album list. This means that if you do not want your new Album to be a sub-folder of an existing folder you must first select the collection where you want to create the new album. Collections are indicated by the icon.
 
-If your camera provides information about the date of the photograph's taking or, if you import from a USB device or a folder, the images contain EXIF metadata with date/time information, digiKam can use this to automatically create subalbums in the target album during import. Subalbums names will be based on the image dates. All images which have the same date will be downloaded into the same subalbum if you check Date-based sub-albums. Not all cameras include this information. See the sidebar Metadata section for more detail about information your camera may have embedded in your photographs.
+If your camera provides information about the date of the photograph's taking or, if you import from a USB device or a folder, the images contain Exif metadata with date/time information, digiKam can use this to automatically create subalbums in the target album during import. Subalbums names will be based on the image dates. All images which have the same date will be downloaded into the same subalbum if you check Date-based sub-albums. Not all cameras include this information. See the sidebar Metadata section for more detail about information your camera may have embedded in your photographs.
 
 On the Fly Operations
 ---------------------
@@ -62,7 +62,7 @@ On the Fly Operations
 
 This section of the Settings tab offers several options for JPEG images. The Template: drop-down field lets you choose one of your metadata templates you customized in Templates Settings. You can access the Template Manager also with the edit button to the right of the drop-down field.
 
-Write the document name to EXIF and Fix internal date & time writes this information into the respective EXIF tags and XMP fields.
+Write the document name to Exif and Fix internal date & time writes this information into the respective Exif tags and XMP fields.
 
 If you check the next box digiKam will perform the auto-rotate/flip action described in Lossless Image Rotation.
 

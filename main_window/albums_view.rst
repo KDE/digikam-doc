@@ -72,7 +72,7 @@ The Album Properties dialog allows you to set:
 
     - The Album **Date**: this will be used when you order your Albums by date using :menuselection:`View --> Sort Albums --> By Date`.
 
-    - **Oldest**, **Average**, and **Newest** buttons: these will set the **Date** to the oldest, average or latest date of the images in that album. It will first try to calculate the average date of the images in the album based on the EXIF-headers. If that fails it will fall back to the modification date of the files in that folder. 
+    - **Oldest**, **Average**, and **Newest** buttons: these will set the **Date** to the oldest, average or latest date of the images in that album. It will first try to calculate the average date of the images in the album based on the Exif-headers. If that fails it will fall back to the modification date of the files in that folder.
 
 Setting the Album Icon
 ~~~~~~~~~~~~~~~~~~~~~~

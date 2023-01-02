@@ -37,4 +37,4 @@ For navigating on the map, refer to the :ref:`Map Search section <mapsearch_view
 
 For information about the different map services you can use the drop-down field under the line of buttons. Choose a service here and then click the **See more information on the Internet** button to the right.
 
-The displayed positioning data are actually stored in the image's EXIF tags. That allows the location to be read by any other application that can understand EXIF GPS data.
+The displayed positioning data are actually stored in the image's Exif tags. That allows the location to be read by any other application that can understand Exif GPS data.

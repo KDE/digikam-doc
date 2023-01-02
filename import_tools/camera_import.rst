@@ -29,7 +29,7 @@ The Item Properties Sidebar Tab
 
 The Properties tab displays file information recorded by the camera and a selection of photograph information to describe how the image has been taken. A flag indicates if the image has not yet been downloaded to the computer. Note that all this information may be unavailable with some digital cameras.
 
-The Metadata tab displays internal picture's metadata like EXIF, Makernotes, GPS, etc. This information is the same as Metadata from the digiKam Right Sidebar. Note that all these metadata can be unavailable with some digital cameras.
+The Metadata tab displays internal picture's metadata like Exif, Makernotes, GPS, etc. This information is the same as Metadata from the digiKam Right Sidebar. Note that all these metadata can be unavailable with some digital cameras.
 
 Geolocation Tab
 ---------------

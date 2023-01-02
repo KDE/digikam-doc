@@ -21,7 +21,7 @@ The properties sidebar shows the essential information about the selected image 
 
     - **Image Properties**: shows the image and format properties like dimension, compression, color-depth, etc.
 
-    - **Photograph Properties**: shows a summary of the most important parameters when taking the photograph. These data are taken from the EXIF or XMP data fields if available.
+    - **Photograph Properties**: shows a summary of the most important parameters when taking the photograph. These data are taken from the Exif or XMP data fields if available.
 
     - **digiKam Properties**: optional view to show a summary of the most important values set in digiKam database.
 

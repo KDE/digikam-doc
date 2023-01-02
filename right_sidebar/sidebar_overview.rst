@@ -19,7 +19,7 @@ The digiKam main window has a sidebar at the right border providing important in
 
     - :ref:`Properties <properties_view>`: File and image properties, key shooting parameters.
 
-    - :ref:`Metadata <metadata_view>`: EXIF, Makernotes, IPTC, XMP, and ExifTool data.
+    - :ref:`Metadata <metadata_view>`: Exif, Makernotes, IPTC, XMP, and ExifTool data.
 
     - :ref:`Colors <colors_view>`: Histograms and embedded ICC profiles.
 

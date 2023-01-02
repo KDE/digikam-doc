@@ -37,7 +37,7 @@ Many old digital still cameras used Serial Port to communicate with host compute
 
 .. note::
 
-    Gphoto needs to be built with libexif to retrieve thumbnails to digiKam properly. EXIF support is required for thumbnail retrieval on some libgphoto2 camera drivers. If EXIF support is not set with Gphoto, you might not see thumbnails or the thumbnail extraction may be very slow.
+    Gphoto needs to be built with libexif to retrieve thumbnails to digiKam properly. Exif support is required for thumbnail retrieval on some libgphoto2 camera drivers. If Exif support is not set with Gphoto, you might not see thumbnails or the thumbnail extraction may be very slow.
 
 .. figure:: images/setup_gphoto_camera.webp
     :alt:

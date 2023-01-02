@@ -41,4 +41,4 @@ There are four tools regarding geolocation in digiKam and two in Showfoto:
 
 .. note::
 
-    These tools work for image formats that have EXIF or XMP metadata supports or with items using sidecar file.
+    These tools work for image formats that have Exif or XMP metadata supports or with items using sidecar file.

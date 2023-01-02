@@ -17,7 +17,7 @@ Metadata View
 
 Metadata are data about the images or files, like technical data of camera setting during shooting, author info, copyrights, keywords, captions, and coordinates of location.
 
-The metadata sidebar is composed of five sub tabs **EXIF**, **Makernote**, **IPTC**, **XMP**, and **ExifTool** Metadata, as shown in these four tabs, can be modified and enhanced in a number of ways elsewhere:
+The metadata sidebar is composed of five sub tabs **Exif**, **Makernote**, **IPTC**, **XMP**, and **ExifTool** Metadata, as shown in these four tabs, can be modified and enhanced in a number of ways elsewhere:
 
     - With the :ref:`Camera interface <camera_import>`.
 
@@ -55,12 +55,12 @@ For each metadata section, a bar is available on the top of view with:
 
     The metadata view preserve the filter settings depending of the file selected. This allow to compare quickly metadata contents between items to identify the differences.
 
-EXIF Tags
+Exif Tags
 ~~~~~~~~~
 
-EXIF stands for `Exchangeable image file format <https://en.wikipedia.org/wiki/Exif>`_. It was designed specifically for digital cameras. It allows a large amount of information about the photograph to be stored. This information describes the camera which took the image along with the settings (including date and time) in use when the image was taken. An in-line thumbnail can be included.
+Exif stands for `Exchangeable image file format <https://en.wikipedia.org/wiki/Exif>`_. It was designed specifically for digital cameras. It allows a large amount of information about the photograph to be stored. This information describes the camera which took the image along with the settings (including date and time) in use when the image was taken. An in-line thumbnail can be included.
 
-EXIF format contains a set of marker sections named *Image File Directories* (IFD). The sections likely to be found in a normal EXIF file are as follows:
+Exif format contains a set of marker sections named *Image File Directories* (IFD). The sections likely to be found in a normal Exif file are as follows:
 
     - **Image Information**: contains general information about the image.
 
@@ -68,16 +68,16 @@ EXIF format contains a set of marker sections named *Image File Directories* (IF
 
     - **Photograph Information**: contains extended information about the photograph.
 
-    - **Interoperability**: contains information to support interoperability between different EXIF implementations. 
+    - **Interoperability**: contains information to support interoperability between different Exif implementations.
 
-You can review embedded EXIF information for the selected image from the first sidebar tab. The EXIF Viewer is purely informational: nothing you do with it will cause any change to the EXIF sections. If there are more entries than space available, just scroll down with the mouse wheel.
+You can review embedded Exif information for the selected image from the first sidebar tab. The Exif Viewer is purely informational: nothing you do with it will cause any change to the Exif sections. If there are more entries than space available, just scroll down with the mouse wheel.
 
-Some vendors add additional EXIF sections, such as Canon, Fujifilm, Nikon, Minolta, and Sigma. These sections contain vendor and model specific notes. These will be displayed on the **Makernote** tab.
+Some vendors add additional Exif sections, such as Canon, Fujifilm, Nikon, Minolta, and Sigma. These sections contain vendor and model specific notes. These will be displayed on the **Makernote** tab.
 
 Makernote Tags
 ~~~~~~~~~~~~~~
 
-The EXIF standard defines a Makernote tag, which allows camera manufacturers to place any custom format metadata in the file. This is used increasingly by camera manufacturers to store a myriad of camera settings not listed in the EXIF standard, such as shooting modes, post-processing settings, serial number, focusing modes, etc. but this tag format is proprietary and manufacturer specific.
+The Exif standard defines a Makernote tag, which allows camera manufacturers to place any custom format metadata in the file. This is used increasingly by camera manufacturers to store a myriad of camera settings not listed in the Exif standard, such as shooting modes, post-processing settings, serial number, focusing modes, etc. but this tag format is proprietary and manufacturer specific.
 
 You can review embedded Makernote information for the selected image in this sidebar tab. The Makernote Viewer is purely informational: nothing you do with it will cause any change to the Makernote sections.
 

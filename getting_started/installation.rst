@@ -1,6 +1,6 @@
 .. meta::
    :description: How to Install digiKam Photo Management Program
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, install, Linux, Windows, MacOS, requirements, configurations
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, install, Linux, Windows, macOS, requirements, configurations
 
 .. metadata-placeholder
 
@@ -114,15 +114,15 @@ When the pkg file is downloaded, to start the installer, a security warning will
     :alt:
     :align: center
 
-    The MacOS Warning When you try to Run digiKam PKG After Downloading
+    The macOS Warning When you try to Run digiKam PKG After Downloading
 
-You needs to give the rights to run from the **MacOS Config Pannel/Security and Confidentiality**.
+You needs to give the rights to run from the **macOS Config Pannel/Security and Confidentiality**.
 
 .. figure:: images/macos_pkg_security.webp
     :alt:
     :align: center
 
-    The MacOS Security Panel to Authorize digiKam PKG Installation
+    The macOS Security Panel to Authorize digiKam PKG Installation
 
 When installer is running, follow instructions from the assistant to install application on your computer.
 
@@ -130,7 +130,7 @@ When installer is running, follow instructions from the assistant to install app
     :alt:
     :align: center
 
-    The digiKam MacOS PKG is Started And Ready to Install
+    The digiKam macOS PKG is Started And Ready to Install
 
 .. _configuration_requirements:
 
@@ -149,7 +149,7 @@ digiKam's application-wide persistent settings are stored in the following locat
    * - :file:`~/.config/digikamrc`
      - :file:`%LocalAppData%\\digikamrc`
      - :file:`~/Library/Preferences/digikamrc`
-     - General settings of the application. Delete this and restart Kdenlive to reset the application to "factory" settings
+     - General settings of the application. Delete this and restart digiKam to reset the application to "factory" settings
    * - :file:`~/.cache/digikam`
      - :file:`%LocalAppData%\\digikam`
      - :file:`~/Library/Caches/digikam`

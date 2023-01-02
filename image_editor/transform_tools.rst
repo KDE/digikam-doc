@@ -73,7 +73,7 @@ At the very bottom line of the dialog, the Max. Ratio button lets you set the cr
 
 .. note::
 
-    The Aspect Ratio Crop tool remembers the settings depending on image orientation (horizontal or vertical). When you use the crop tool next time, these settings will be used as default values depending on the image orientation. The changed image dimensions are stored into the EXIF tables so that the EXIF data reflects the cropped image and not the original one.
+    The Aspect Ratio Crop tool remembers the settings depending on image orientation (horizontal or vertical). When you use the crop tool next time, these settings will be used as default values depending on the image orientation. The changed image dimensions are stored into the Exif tables so that the Exif data reflects the cropped image and not the original one.
 
 Composition Guide
 ~~~~~~~~~~~~~~~~~

@@ -15,7 +15,7 @@ Metadata Settings
 
 .. contents::
 
-Image files can have some metadata embedded into the image file format. These metadata can be stored in a number of standard formats as JPEG, TIFF, PNG, JPEG2000, PGF, and RAW files. Metadata can be read and written in the EXIF, IPTC, and XMP formats if they are present in the file.
+Image files can have some metadata embedded into the image file format. These metadata can be stored in a number of standard formats as JPEG, TIFF, PNG, JPEG2000, PGF, and RAW files. Metadata can be read and written in the Exif, IPTC, and XMP formats if they are present in the file.
 
 Behavior Settings
 -----------------
@@ -44,9 +44,9 @@ Rotation Settings
 
 .. figure:: images/setup_metadata_rotation.webp
 
-Show images/thumbnails rotated according to orientation tag : this will use any orientation information that your camera has included in the EXIF information to automatically rotate your photographs so that they are the correct way up when displayed. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can click with the right mouse button on the thumbnail and select Auto-rotate/flip according to EXIF orientation. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
+Show images/thumbnails rotated according to orientation tag : this will use any orientation information that your camera has included in the Exif information to automatically rotate your photographs so that they are the correct way up when displayed. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can click with the right mouse button on the thumbnail and select Auto-rotate/flip according to Exif orientation. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
 
-Set orientation tag to normal after rotate/flip : the Auto Rotate option automatically corrects the orientation of images taken with digital cameras that have an orientation sensor. The camera adds an orientation tag to the image's EXIF metadata. digiKam can read this tag to adjust the image accordingly. If you manually rotate an image, these metadata will be incorrect. This option will set the orientation tag to "Normal" after an adjustment, assuming that you rotated it to the correct orientation. Switch this off if you don't want digiKam to make changes to the orientation tag, when you rotate or flip the image.
+Set orientation tag to normal after rotate/flip : the Auto Rotate option automatically corrects the orientation of images taken with digital cameras that have an orientation sensor. The camera adds an orientation tag to the image's Exif metadata. digiKam can read this tag to adjust the image accordingly. If you manually rotate an image, these metadata will be incorrect. This option will set the orientation tag to "Normal" after an adjustment, assuming that you rotated it to the correct orientation. Switch this off if you don't want digiKam to make changes to the orientation tag, when you rotate or flip the image.
 
 Views Settings
 --------------

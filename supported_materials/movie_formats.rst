@@ -27,7 +27,7 @@ Video Formats
 
 digiKam relies on `FFMpeg Multimedia framework <https://ffmpeg.org/>`_ to handle video files. FFmpeg is a powerful video toolkit, which include all codecs that digiKam needs to play video files.
 
-FFmpeg codec is available under Linux® desktop, MacOS, and Windows. You don't need to install extra video codecs on your computer.
+FFmpeg codec is available under Linux® desktop, macOS, and Windows. You don't need to install extra video codecs on your computer.
 
 .. figure:: images/ffmpeg_features_list.webp
     :alt:

@@ -47,7 +47,7 @@ One particularity on digiKam Light Table is the sidbar views avaialble on the ri
 
     - :ref:`Properties <properties_view>`: File and image properties, key shooting parameters.
 
-    - :ref:`Metadata <metadata_view>`: EXIF, Makernotes, IPTC, XMP, and ExifTool data.
+    - :ref:`Metadata <metadata_view>`: Exif, Makernotes, IPTC, XMP, and ExifTool data.
 
     - :ref:`Colors <colors_view>`: Histograms and embedded ICC profiles.
 

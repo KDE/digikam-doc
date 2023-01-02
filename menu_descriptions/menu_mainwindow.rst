@@ -131,17 +131,17 @@ Item --> Flip
 
     Menu entry for flipping the currently selected images lossless Horizontally (Ctrl-\*) or Vertically (Ctrl-/) (see submenu).
 
-Item --> Auto Rotate/Flip using EXIF information
+Item --> Auto Rotate/Flip using Exif information
 
-    Menu entry to manually activate the auto rotate/flip feature for the currently selected images using the EXIF orientation tag. For a more detailed description see Lossless Image Rotation. 
+    Menu entry to manually activate the auto rotate/flip feature for the currently selected images using the Exif orientation tag. For a more detailed description see Lossless Image Rotation.
 
-Item --> Adjust EXIF Orientation Tag
+Item --> Adjust Exif Orientation Tag
 
-    The EXIF Orientation Tag of the current selection will be changed depending on the option you choose from the submenu. The thumbnail(s) and preview(s) will be rotated accordingly if Show images/thumbnails rotated according to orientation tag is checked in Settings --> Configure digiKam... --> Metadata --> Rotation --> Rotate actions , but not the actual image file. If you want to rotate that as well you got to use the function Item --> Auto Rotate/Flip using EXIF information described above additionally. If you open the file in the digiKam Image Editor it will also come up in the rotated version and will be stored that way on disc if you save it. But be aware of the fact that this would be a lossy operation as long as it is not a lossless file format.
+    The Exif Orientation Tag of the current selection will be changed depending on the option you choose from the submenu. The thumbnail(s) and preview(s) will be rotated accordingly if Show images/thumbnails rotated according to orientation tag is checked in Settings --> Configure digiKam... --> Metadata --> Rotation --> Rotate actions , but not the actual image file. If you want to rotate that as well you got to use the function Item --> Auto Rotate/Flip using Exif information described above additionally. If you open the file in the digiKam Image Editor it will also come up in the rotated version and will be stored that way on disc if you save it. But be aware of the fact that this would be a lossy operation as long as it is not a lossless file format.
 
 Item --> Edit Metadata...
 
-    Opens the digiKam Metadata Editor to handle meta data of the image (EXIF, IPTC, XMP).
+    Opens the digiKam Metadata Editor to handle meta data of the image (Exif, IPTC, XMP).
 
     See the dedicated Metadata Editor chapter for more information. 
 

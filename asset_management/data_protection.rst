@@ -334,11 +334,11 @@ Open Source standards have the huge advantage of having an open specification. E
 
     digiKam Image Editor Default Save Setttings For Common Image Formats
 
-**JPEG** has been around for a while now, and whilst it's a lossy format losing a bit every time you make a modification and save it, it is ubiquitous, supports JFIF, EXIF, IPTC and XMP metadata, has good compression ratios and can be read by all imaging software. Because of its metadata limitation, lossy nature, absence of transparency and 8 bit color channel depth, we do not recommend it. JPEG2000 is better, can be employed lossless, but lacks in user base.
+**JPEG** has been around for a while now, and whilst it's a lossy format losing a bit every time you make a modification and save it, it is ubiquitous, supports JFIF, Exif, IPTC and XMP metadata, has good compression ratios and can be read by all imaging software. Because of its metadata limitation, lossy nature, absence of transparency and 8 bit color channel depth, we do not recommend it. JPEG2000 is better, can be employed lossless, but lacks in user base.
 
 **GIF** is a proprietary. patented format and slowly disappearing from the market. Don't use it.
 
-**PNG** has been invented as a Open Source standard to replace GIF, but it does much more. It is lossless, supports XMP, EXIF and IPTC metadata, 16 bit color encoding and full transparency. PNG can store gamma and chromaticity data for improved color matching on heterogeneous platforms. Its drawback are a relatively big footprints (but smaller than TIFF) and slow compression. We recommend it.
+**PNG** has been invented as a Open Source standard to replace GIF, but it does much more. It is lossless, supports XMP, Exif and IPTC metadata, 16 bit color encoding and full transparency. PNG can store gamma and chromaticity data for improved color matching on heterogeneous platforms. Its drawback are a relatively big footprints (but smaller than TIFF) and slow compression. We recommend it.
 
 **TIFF** has been widely accepted as an image format. TIFF can exist in uncompressed form or in a container using a lossless compression algorithm (Deflate). It maintains high image quality but at the expense of much larger file sizes. Some cameras let you save your images in this format. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by all applications.
 

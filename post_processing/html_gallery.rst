@@ -49,7 +49,7 @@ Checking the Max. size box you can fix the maximum target image size (in pixels)
 
 .. note::
 
-    If JPEG file format is selected for target resizing images, all EXIF information will be preserved from the original JPEG files.
+    If JPEG file format is selected for target resizing images, all Exif information will be preserved from the original JPEG files.
 
 The Thumbnails section allows to set the Format, Quality and Size for the thumbnails in the gallery.
 
