@@ -55,6 +55,19 @@ Right under the map you find a row of buttons. I shall use the tooltip texts as 
 
     The Switch-between-markers-and-thumbnails button lets you choose whether you want the positions of your images indicated by a marker symbol or by a thumbnail on the map. If you choose thumbnails the next two buttons are of particular interest.
 
+    .. notes::
+
+        The Marker color depends of the precision of GPS device information taken from item metadata. See the list given below for details:
+
+        =========== =========
+        Color       Precision
+        =========== =========
+        Green       Very good
+        Yellow      Good
+        Orange      Medium
+        Red         Bad
+        =========== =========
+
     The Increase-the-thumbnail-size-on-the-map button is doing just that and ...
 
     ... the Decrease-the-thumbnail-size-on-the-map button as well.
@@ -69,9 +82,9 @@ Right under the map you find a row of buttons. I shall use the tooltip texts as 
 
     The Display-bookmarked-positions-on-the-map button is not working at the time of writing because the whole bookmark issue needs to be reorganized. This also affects the Bookmarks --> Edit Bookmarks... item in the context menu on the list of images below the map and the Add Bookmark item in the context menu on the map. 
 
-.. warning::
+    .. warning::
 
-    The use of Add Bookmark in the context menu on the map can lead to loss of your bookmarks in Marble!
+        The use of Add Bookmark in the context menu on the map can lead to loss of your bookmarks in Marble!
 
 From the context menu on the map only Copy Coordinates is of interest for geotagging. It copies the geographic coordinates at the cursor position to the clipboard. For all other menu items see Marble handbook.
 
