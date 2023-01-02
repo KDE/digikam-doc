@@ -55,7 +55,7 @@ Right under the map you find a row of buttons. I shall use the tooltip texts as 
 
     The Switch-between-markers-and-thumbnails button lets you choose whether you want the positions of your images indicated by a marker symbol or by a thumbnail on the map. If you choose thumbnails the next two buttons are of particular interest.
 
-    .. notes::
+    .. note::
 
         The Marker color depends of the precision of GPS device information taken from item metadata. See the list given below for details:
 

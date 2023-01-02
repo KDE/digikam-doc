@@ -138,7 +138,7 @@ Before you can get the most out of digiKam's tagging capabilities, you must firs
 
 Drag and Drop: works with both sidebars provided they are showing tags of course. With the Right Sidebar it works the obvious way: you drag the tag and drop it onto the photograph or selection of photographs you want to tag. With the Left Sidebar you have to drag the photographs to the tags. You want to know why? Just try it the other way and you will see.
 
-.. tips::
+.. tip::
 
     You can also use drag and drop between tabs from same sidebar, for example dragging a icon-view item from **Albums** to the **Tags** view. To switch from one tab to another one, just let's the mouse over the tab tile few second while dragging, the new view will be enabled and dragging operation can continue.
 
