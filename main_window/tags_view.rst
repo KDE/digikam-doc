@@ -17,7 +17,7 @@ Hierarchical tagging provides a flexible and powerful way to organize and catalo
 
 Tags can be arranged in a hierarchical tree. This allows you to organize your tags in a logical manner. You can collapse parts of the tree in the **Tags** list so that you can easily find the tags that you are looking for. 
 
-.. figure:: images/mainwindow_tagsview.webp
+.. figure:: images/mainwindow_tags_view.webp
     :alt:
     :align: center
 
@@ -85,7 +85,7 @@ Tags Manager
 
 There are certain possibilities to manage tags from the context menu on tags in the digiKam sidebars like **New Tag...** or **Delete Tag**. The Tag Manager offers a more comfortable and comprehensive way to organize your tags. For general information about tags, why and how to use them see Tags View in the Main digiKam Window chapter.
 
-.. figure:: images/tag_manager.webp
+.. figure:: images/mainwindow_tag_manager.webp
     :alt:
     :align: center
 
