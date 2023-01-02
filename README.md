@@ -105,39 +105,39 @@ As example, we will develop how the **getting_started** section of the manual is
 
 
 ```
-Implementation                                          Comments
+Implementation                                                                                              Comments
 
 ###############
-Getting started                                         Section title declared on the front page
+Getting started                                                                                             Section title declared on the front page
 ###############
-.. figure:: images/index_getting_started.webp           Visual preview of the section
-    :width: 300px                                       Limit preview size
-    :alt:                                               No alternative description
-    :target: getting_started.html                       Preview link on the documentation
+.. figure:: images/index_getting_started.webp                                                               Visual preview of the section
+    :width: 300px                                                                                           Limit preview size
+    :alt:                                                                                                   No alternative description
+    :target: getting_started.html                                                                           Preview link on the documentation
 
-.. container:: toctile                                  Chapter from the section will be hosted in a container
+.. container:: toctile                                                                                      Chapter from the section will be hosted in a container
 
-    .. container:: tile no-descr                        A sub-container for a chapter
+    .. container:: tile no-descr                                                                            A sub-container for a chapter
 
-        :ref:`application_intro`                        Link to the 1st chapter
-
-    .. container:: tile no-descr
-
-        :ref:`application_install`                      Link to the 2nd chapter
+        :ref:`application_intro`                                                                            Link to the 1st chapter
 
     .. container:: tile no-descr
 
-       :ref:`quick_start`                               Link to the 3rd chapter
+        :ref:`application_install`                                                                          Link to the 2nd chapter
 
     .. container:: tile no-descr
 
-        :ref:`database_intro`                           Link to the last chapter
+       :ref:`quick_start`                                                                                   Link to the 3rd chapter
+
+    .. container:: tile no-descr
+
+        :ref:`database_intro`                                                                               Link to the last chapter
 
 .. toctree::
-   :maxdepth: 2                                         We will descend to the 2 level from nested hierarchy
+   :maxdepth: 2                                                                                             We will descend to the 2 level from nested hierarchy
    :hidden:
 
-   getting_started                                      The name of the rst file implementing the section
+   getting_started                                                                                          The name of the rst file implementing the section
 ```
 
 Next file is the **getting_started.rst** listing all chapters from the section:
