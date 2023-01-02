@@ -49,6 +49,10 @@ Getting started
 ###################
 Supported Materials
 ###################
+.. figure:: images/index_supported_materials.webp
+    :width: 300px
+    :alt:
+    :target: supported_materials.html
 
 .. container:: toctile
 
@@ -217,6 +221,10 @@ Batch Queue Manager
 ########################
 Digital Asset Management
 ########################
+.. figure:: images/index_asset_management.webp
+    :width: 300px
+    :alt:
+    :target: asset_management.html
 
 .. container:: toctile
 
