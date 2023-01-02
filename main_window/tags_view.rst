@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Main Window Tags View
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, tags, manager
 
 .. metadata-placeholder
 
@@ -38,7 +38,7 @@ You can set the Tag Properties by clicking with the right mouse button on a tag 
 
 To select a photograph as the tag icon, click with the right mouse button on the photograph that you want to use as the tag icon and select **Set as Tag Thumbnail** from the context menu. Additionally you can use drag and drop to set the tag icon. Drag the images icon and drop it on the currently selected tag in the tag list.
 
-A tool for more elaborate work on big tag trees is the :ref:`Tags Manager <tag_manager>` which you can access by clicking the **Open Tag Manager** button at the top of the Tags tree.
+A tool for more elaborate work on big tag trees is the :ref:`Tags Manager <tags_manager>` which you can access by clicking the **Open Tag Manager** button at the top of the Tags tree.
 
 In the :ref:`Digital Asset Management (DAM) <asset_tags>` chapter of this handbook you can find some useful considerations about how to build your Tags tree.
 
@@ -94,3 +94,56 @@ Once you have tagged a photograph, the tag name will appear under the thumbnail 
 .. tip::
 
       Tags are stored in a database for fast access, and, the applied tags are written into IPTC data fields of the image (at least for JPEG). So you can use your tags with other programs or, in case of loss of that data in the database, the tags will be re-imported when the image is noticed by digiKam.
+
+.. _tags_manager:
+
+Tags Manager
+~~~~~~~~~~~~
+
+There are certain possibilities to manage tags from the context menu on tags in the digiKam sidebars like **New Tag...** or **Delete Tag**. The Tag Manager offers a more comfortable and comprehensive way to organize your tags. For general information about tags, why and how to use them see Tags View in the Main digiKam Window chapter.
+
+.. figure:: images/tag_manager.webp
+    :alt:
+    :align: center
+
+    The Tag Manager Window
+
+The toolbar at the top offers:
+
+    - An adaptive search field to find certain tags in a big tree.
+
+    - A button to add a tag as a sub-tag to the current (last clicked) tag.
+
+    - A button to delete a tag or a selection of tags.
+
+    - The drop down menu **Organize** which contains:
+
+        - **Edit Tag Title** to modify tag name.
+
+        - **Reset Tag Icon** to the standard tag icon.
+
+        - **Create Tag from Address Book** to import adress book items as new tags.
+
+        - **Invert Selection**, useful if you want to select most but not all of your tags.
+
+        - **Expand Tag Tree** expands all of the nodes of the tag tree.
+
+        - **Expand Selected Nodes** expands only the selected nodes from the tag tree.
+
+        - **Remove Tag from Images** un-assigns selected tag(s) from all images.
+
+        - **Delete Unassigned Tags**, useful to clean up your tag tree.
+
+    - And the drop down menu **Sync Export** which contains:
+
+        - **Write Tags from Database to Image** to sync image metadata with tags from database.
+
+        - **Read Tags from Image** to write tags in database using image metadata.
+
+        - **Wipe all Tags from Database only**.
+
+The Tag Manager window consists of two parts, the Quick Access List to the left and the Tag Tree (or parts of it) to the right. On the right sidebar you fold out additionally the properties dialog for the selected tag.
+
+The Quick Access List allows you to display only a certain node (and its sub-nodes) in the tag tree window. Select a tag in the tag tree and click **Add to List**. The tag will appear in the Quick Access List. If you select it there the tag tree will show only that node which you can still expand to see the sub-nodes. Note that the tag tree will also show only a limited number of tags while using the search field. It will show only those tags that contain the string in the search field.
+
+The Tag Properties dialog allows you to change the name of the tag, the icon used in the Tag tree and the shortcut.

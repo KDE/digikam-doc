@@ -214,26 +214,6 @@ Batch Queue Manager
 
    batch_queue
 
-###########
-Tag Manager
-###########
-.. figure:: images/index_tag_manager.webp
-    :width: 300px
-    :alt:
-    :target: tag_manager.html
-
-.. container:: toctile
-
-    .. container:: tile no-descr
-
-        :ref:`tagmanager_overview`
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   tag_manager
-
 ########################
 Digital Asset Management
 ########################
