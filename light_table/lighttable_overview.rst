@@ -38,9 +38,16 @@ From the thumbbar drag & drop images to the left and right comparison pane below
     :alt:
     :align: center
 
-    The digiKam Light Table Using Synchonized Side By Side Views
+    Screencast Of the digiKam Light Table Using The **Synchonize** Mode With Side By Side Views
 
 Another mode is better suited for quickly culling from a series of images. If you choose **By Pair** from the toolbar, the first two images will be automatically inserted into the comparison panes. Click on any thumbnail to make it the left side preview, the adjacent thumbnail to the right will be inserted into the right pane. That make it easy to sift through a series of similar images.
+
+.. figure:: videos/light_table_views_bypair.gif
+    :width: 600px
+    :alt:
+    :align: center
+
+    Screencast of the digiKam Light Table Using The **By-Pair** Mode With Side By Side Views
 
 Of course, the usual delete actions work from the light table directly as well as :menuselection:`File --> Edit...` :kbd:`F4`
 
