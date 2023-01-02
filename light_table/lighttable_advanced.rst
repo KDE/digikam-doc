@@ -28,7 +28,7 @@ Camera can use some points (name auto focus points) on image to make the region 
 
     The digiKam Light Table Comparing Focus Points From a Serie Of Shots
 
-Using the focus points visualization while previewing image side by side allows to be sure that the best image was taken with right in-focus shot conditions.
+Each point is not only a point on the image but a rectangle. FocusPoint is used to recognized focus region of image. This is a region where user expected to be clear. Using the focus points visualization while previewing image side by side allows to be sure that the best image was taken with right in-focus shot conditions.
 
 To Show the focus points over the preview canvas, select **Show Focus Points** from context menu.
 
