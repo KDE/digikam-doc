@@ -301,10 +301,12 @@ All POT file-names starts with **docs_digikam_org** prefix.
 #### How to Add a New Target Language
 
 The status of the digiKam documentation translations is available [here](https://l10n.kde.org/stats/doc/trunk-kf5/package/digikam-doc/).
-When a translation is complete, corresponding language can be listed as suitable in documentation web-site, Two files needs to be patched:
+When a translation is complete, corresponding language can be listed as suitable in documentation web-site, two files needs to be patched:
 
 - The section named **docs-digikam-org** from the [Json infrastrusture configuration](https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json) dedicated to rule translations.
 - The **alllang** list from the **resources/static/js/version_switch.js** JavaScript file located in this repository.
+
+Note: in the **locale/** sub-directory, you will see the list of current translated languages for the documentation. This list and the languages used in the Json and Javascript files must be the same.
 
 ### TODO List
 
