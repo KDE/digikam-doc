@@ -105,9 +105,9 @@ As example, we will develop how the **getting_started** section of the manual is
 
 Implementation                                  | Comments
 ------------------------------------------------|----------------------------------------------------------
-```                                             |
-###############                                 |
-Getting started                                 | Section title declared on the front page
+```                                            \|
+###############                                \|
+Getting started                                \| Section title declared on the front page
 ###############                                 |
 .. figure:: images/index_getting_started.webp   | Visual preview of the section
     :width: 300px                               | Limit preview size
