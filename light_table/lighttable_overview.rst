@@ -1,6 +1,6 @@
 .. meta::
    :description: Overview to digiKam Light Table
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, light table
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, light table, synchronize, by-pair, compare
 
 .. metadata-placeholder
 
@@ -49,7 +49,7 @@ Another mode is better suited for quickly culling from a series of images. If yo
 
     Screencast of the digiKam Light Table Using The **By-Pair** Mode With Side By Side Views
 
-Of course, the usual delete actions work from the light table directly as well as :menuselection:`File --> Edit...` :kbd:`F4`
+Of course, the usual edit actions work from the light table directly using :menuselection:`File --> Edit...` :kbd:`F4`. This open current selected preview canvas in **Image Editor**.
 
 All image information from the main window right sidebar is available for each of the two previews in the light table. This makes it easy to link visual differences to exposure data for example.
 
