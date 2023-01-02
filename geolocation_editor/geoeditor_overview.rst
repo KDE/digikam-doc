@@ -1,6 +1,6 @@
 .. meta::
    :description: Overview to digiKam Geolocation Editor
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, gps, geolocation, editor, coordinates
 
 .. metadata-placeholder
 
@@ -29,12 +29,16 @@ There are four tools regarding geolocation in digiKam and two in Showfoto:
 
     The Map View on the Left Sidebar of digiKam which is the search tool for finding images by their GPS data. This is also only available in digiKam.
 
-    The Geolocation Editor we describe a little bit further below and which is accessible via Item --> Edit Geolocation... (Ctrl+Shift+G) (File --> Edit Geolocation... in Showfoto).
+    The Geolocation Editor we describe a little bit further below and which is accessible via :menuselection:`Item --> Edit Geolocation...` :kbd:`(Ctrl+Shift+G)` (:menuselection:`File --> Edit Geolocation...` in Showfoto).
 
-    The Map tab on the Right Sidebar which shows the location of the image on a map and is purely informative. 
+    The Map tab on the Right Sidebar which shows the location of the image on a map and is purely informative.
 
-.. figure:: images/geoeditor_tool.webp
+.. figure:: images/geoeditor_main_view.webp
+    :alt:
+    :align: center
+
+    The digiKam Geolocation Editor Main Dialog
 
 .. note::
 
-    These tools only work for image formats that have EXIF or XMP metadata supported by Exiv2 library.
+    These tools work for image formats that have EXIF or XMP metadata supports or with items using sidecar file.

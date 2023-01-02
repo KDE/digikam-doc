@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Geolocation Editor Map
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, gps, geolocation, map, world
 
 .. metadata-placeholder
 
@@ -22,7 +22,11 @@ The Geolocation Editor allows for adding and editing GPS coordinates of picture 
 
 Geolocation Editor can be opened via menu entry Item --> Edit Geolocation or via pressing Ctrl+Shift+G. It requires at least one image to be selected otherwise it will not open.
 
-.. figure:: images/geoeditor_edit_coords.webp
+.. figure:: images/geoeditor_edit_coordinates.webp
+    :alt:
+    :align: center
+
+    The digiKam Geolocation Tool Used to Edit Item Coordinates
 
 The Geolocation Editor provides the tools to localize pictures geographically in the common spherical coordinate system (used by GPS/Galileo). Altitude, latitude and longitude, speed, number of satellites, fix type and DOP are editable.
 

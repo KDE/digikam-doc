@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Geolocation Editor Coordinates
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, gps, geolocation, coordinates, editor, correlator, gpx, trace
 
 .. metadata-placeholder
 
