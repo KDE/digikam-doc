@@ -39,3 +39,28 @@ To Show the focus points over the preview canvas, select **Show Focus Points** f
     :align: center
 
     The digiKam Light Table Preview Canvas Context Menu
+
+Comparing The Sidebars Contents
+-------------------------------
+
+One particularity on digiKam Light Table is the sidbar views avaialble on the right and on the left sides. Both visualize provide the same contents as with **Main Window** right sidebar:
+
+    - :ref:`Properties <properties_view>`: File and image properties, key shooting parameters.
+
+    - :ref:`Metadata <metadata_view>`: EXIF, Makernotes, IPTC, XMP, and ExifTool data.
+
+    - :ref:`Colors <colors_view>`: Histograms and embedded ICC profiles.
+
+    - :ref:`Maps <maps_view>`: View to show GPS location.
+
+    - :ref:`Captions <captions_view>`: Comments, Date & Time setting, Labels, Rating, Tags, selected metadata.
+
+    - :ref:`Versions <versions_view>`: Image history.
+
+If both left and right sidebar are visible in Light Table, they can be used to compare images information loaded in left and right canvas preview. When you change the item on the right side, right sidebar contents will be updated. In opposite, left side contents will still the same. If both sidebar show the same tab view (as metadata for example), they can be used to compare visually the difference and select the best shot to mark in your workflow.
+
+.. figure:: images/light_table_comparing_sidebars.webp
+    :alt:
+    :align: center
+
+    The digiKam Light Table Used To Compare Left And Right Sidebars Contents
