@@ -15,6 +15,8 @@ Advanced Features
 
 .. contents::
 
+.. _comparing_focuspoints:
+
 Comparing The Focus Points
 --------------------------
 
