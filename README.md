@@ -103,42 +103,39 @@ As example, we will develop how the **getting_started** section of the manual is
 
 - From the top level **index.rst**, the section is declared like this:
 
-Implementation                                  | Comments
-------------------------------------------------|----------------------------------------------------------
-```                                            \|
-###############                                \|
-Getting started                                \| Section title declared on the front page
-###############                                 |
-.. figure:: images/index_getting_started.webp   | Visual preview of the section
-    :width: 300px                               | Limit preview size
-    :alt:                                       | No alternative description
-    :target: getting_started.html               | Preview link on the documentation
-                                                |
-.. container:: toctile                          | Chapter from the section will be hosted in a container
-                                                |
-    .. container:: tile no-descr                | A sub-container for a chapter
-                                                |
-        :ref:`application_intro`                | Link to the 1st chapter
-                                                |
-    .. container:: tile no-descr                |
-                                                |
-        :ref:`application_install`              | Link to the 2nd chapter
-                                                |
-    .. container:: tile no-descr                |
-                                                |
-        :ref:`quick_start`                      | Link to the 3rd chapter
-                                                |
-    .. container:: tile no-descr                |
-                                                |
-        :ref:`database_intro`                   | Link to the last chapter
-                                                |
-.. toctree::                                    |
-   :maxdepth: 2                                 | We will descend to the 2 level from nested hierarchy
-   :hidden:                                     |
-                                                |
-   getting_started                              | The name of the rst file point on the section implementation
-```
-================================================= ============================================================
+Implementation                                          | Comments
+--------------------------------------------------------|----------------------------------------------------------
+``` ############### ```                                 |
+``` Getting started ```                                 | Section title declared on the front page
+``` ############### ```                                 |
+``` .. figure:: images/index_getting_started.webp ```   | Visual preview of the section
+```     :width: 300px ```                               | Limit preview size
+```     :alt: ```                                       | No alternative description
+```     :target: getting_started.html ```               | Preview link on the documentation
+``` ```                                                 |
+``` .. container:: toctile ```                          | Chapter from the section will be hosted in a container
+``` ```                                                 |
+```     .. container:: tile no-descr ```                | A sub-container for a chapter
+``` ```                                                 |
+```         :ref:`application_intro` ```                | Link to the 1st chapter
+``` ```                                                 |
+```     .. container:: tile no-descr ```                |
+``` ```                                                 |
+```         :ref:`application_install` ```              | Link to the 2nd chapter
+``` ```                                                 |
+```     .. container:: tile no-descr ```                |
+``` ```                                                 |
+```         :ref:`quick_start` ```                      | Link to the 3rd chapter
+``` ```                                                 |
+```     .. container:: tile no-descr ```                |
+``` ```                                                 |
+```         :ref:`database_intro` ```                   | Link to the last chapter
+``` ```                                                 |
+``` .. toctree:: ```                                    |
+```    :maxdepth: 2 ```                                 | We will descend to the 2 level from nested hierarchy
+```    :hidden: ```                                     |
+``` ```                                                 |
+```    getting_started ```                              | The name of the rst file point on the section implementation
 
 
 ### Sphinx Framework
