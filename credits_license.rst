@@ -39,6 +39,10 @@ Documentation authors
 
     Yuri Chornoivan (https://invent.kde.org/yurchor)
 
+- 2017-2023
+
+    Antoni Bella Pérez (https://invent.kde.org/bellaperez)
+
 - 2022
 
     Mike Morrison (https://invent.kde.org/mikemorr)
@@ -46,10 +50,6 @@ Documentation authors
 - 2017-2019
 
     Andrey Goreev (https://invent.kde.org/agoreev)
-
-- 2017-2018
-
-    Antoni Bella Pérez (https://invent.kde.org/bellaperez)
 
 - 2017
 
