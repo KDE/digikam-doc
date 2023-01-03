@@ -26,7 +26,7 @@ To the right of the map there are, beside latitude and longitude, fields for alt
 
 To delete geolocation data you got to un-check the relevant checkbox and click the Apply button right under the DOP field. Other than that the context menu on the list of images offer items to remove some of the data from the image. Regarding the last item Bookmarks see here.
 
-.. _gps_correlator::
+.. _gps_correlator:
 
 The Correlator
 --------------
