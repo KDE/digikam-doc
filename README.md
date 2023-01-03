@@ -44,13 +44,13 @@ The EPUB ebook is generated in `build/epub`. Open the file `DigikamManual.epub` 
 
 ## Directories Hierarchy
 
-- LICENSES  : all licenses used in the project.
-- build     : temporary dir created when documentation is compiled.
-- locale    : link to updated handbook translations files. Files are updated all nights.
-- po        : Obsolete, not used. Replaced by locale directory.
-- project   : some helpers scripts.
-- ressources: Sphinx templates customization.
-- tests     : scripts to test repository contents with CI
+- [LICENSES](LICENSES)    : all licenses used in the project.
+- build                   : temporary dir created when documentation is compiled.
+- [locale](locale)        : link to updated handbook translations files. Files are updated all nights.
+- po                      : Obsolete, not used. Replaced by locale directory.
+- [project](project)      : some helpers scripts.
+- [ressources](ressources): Sphinx templates customization.
+- [tests](tests)          : scripts to test repository contents with CI
 
 All others directories are used to host sections of the documentation implemented in ReStructuredText format.
 
@@ -59,7 +59,7 @@ All others directories are used to host sections of the documentation implemente
 ### File Hierarchies
 
 ReStructuredText Documentation implementation is located in top level directory in .rst files and sub-directories with the same name
-corresponding to the handbook sections. The root entry of the manual is **index.rst**.
+corresponding to the handbook sections. The root entry of the manual is [index.rst](index.rst).
 
 Each handbook section start with a .rst file from top level directory and a dedicated
 sub-directory with the same name including chapters .rst files, a nested **images** sub-directory to host
@@ -94,7 +94,7 @@ For example, the **getting_started** section will be organized like this:
 
 ```
 
-**getting_started.rst** is the root entry of the **Geting-Started** section of this manual.
+**getting_started.rst** is the root entry of the **Geting Started** section of this manual.
 All others nested **.rst** files hosted in **getting_started** sub-directory are chapters in this section.
 
 ### ReStructuredText Section/Chapters Implementation
@@ -209,7 +209,7 @@ Background                                                                      
 
 The Python based Sphinx documentation generator translates a set of reStructuredText source files into various output formats,
 automatically producing cross-references, indices etc. It just used at run-time with the **make html** command to
-render contents, and reports warnings/errors.
+render contents, and reports warnings and errors.
 
 Documentation writer will never touch the Sphinx configuration.
 
@@ -320,9 +320,9 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
 
 - Always use digiKam AppImage version 8 and later under Linux/Plasma desktop to take screenshots.
 
-- Always use **White Balance** color theme to take screenshots. Select theme from Settings/Themes menu.
+- Always use **White Balance** color theme to take screenshots. Select theme from **Settings/Themes** menu.
 
-- Always use **Breeze** widget style and icon theme. Select widget/icon theme from Setup/Miscs/Appearance configuration dialog page.
+- Always use **Breeze** widget style and icon theme. Select widget/icon theme from **Setup/Miscs/Appearance** configuration dialog page.
 
 - No face/people present as possible in photo hosted in screenshots.
 
@@ -372,7 +372,7 @@ Do not use space and capitalized characters in file name.
 
 This will record a screencast in WEBM format. Even if WEBM is supported in HTML and EPUB,
 Sphinx framework is not yet able to embed WEBM in EPUB.
-Convert it to GIFa using **project/webm2gif.sh** script.
+Convert it to GIFa using [project/webm2gif.sh](project/webm2gif.sh) script.
 
 GIFa files must be hosted in **videos/** sub-folders from each documentation section.
 
@@ -398,7 +398,7 @@ maintenance scripts to extract strings and exported to dedicated containers for 
 In the background, a [top level script](https://invent.kde.org/sysadmin/l10n-scripty/-/blob/master/process-static-messages.sh) from **l10n-scripty** repository call **StaticMessages.sh** script from this repository.
 
 When translations are updated by the translator teams, files are send back by other maintenance scripts to this project,
-in goal to compile internationalized versions of ReStructuredText files. These files are linked in **locale/** sub-directories
+in goal to compile internationalized versions of ReStructuredText files. These files are linked in [locale/](locale) sub-directories
 from this project for conversion to HTML/EPUB.
 
 This project is not involved in the translations workflow. Please contact [KDE translation teams](https://l10n.kde.org/docs/index-script.php)
@@ -413,13 +413,13 @@ The status of the digiKam documentation translations is [available here](https:/
 When a translation is complete, corresponding languages can be listed as suitable in documentation web-site, two files needs to be patched:
 
 - The section named **docs-digikam-org** from the [Json infrastrusture configuration](https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json) dedicated to rule translations.
-- The **alllang** list from the **resources/static/js/version_switch.js** JavaScript file located in this repository.
+- The **alllang** list from the [JavaScript file](resources/static/js/version_switch.js) located in this repository.
 
-Note: in the **locale/** sub-directory, you will see the list of current translated languages for the documentation. This list and the languages used in the Json and Javascript files must be the same.
+Note: in the [locale/](locale) sub-directory, you will see the list of current translated languages for the documentation. This list and the languages used in the Json and Javascript files must be the same.
 
 ## TODO List
 
-See [TODO](todo) file from this repository.
+See [TODO](TODO) file from this repository.
 
 ## Continuous Integration
 
