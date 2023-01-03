@@ -270,7 +270,7 @@ To tag people manually, you can do it by by different way:
 
         The digiKam Face Tag Properties Dialog With a Keyboard Shortcut Assigned
 
-The **Preview** mode context menu include also two other options:
+The **Preview** mode context menu include also two other options to use during manual face tagging:
 
 - **Scan for Faces**: this option will call the face detection algorithm to set face areas automatically over the image. The faces are assigned by default to **Unknown** in the database. The last used **Faces Detection** settings will configure the process. If faces are found, you can edit manually the face name as explained previously.
 
