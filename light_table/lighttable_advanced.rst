@@ -68,7 +68,7 @@ If both left and right sidebar are visible in Light Table, they can be used to c
 Face Management In Light Table
 ------------------------------
 
-The left and right Light Tabe preview canvas propose standard options from context menu to manage face information:
+As with the **Main Window** **Preview** Mode, the left and right Light Tabe preview canvas propose the standard options from context menu to manage face information:
 
 - **Show Face Tags** to highlight face areas over the image.
 - **Scan For Faces** to start an automatic faces detection on image.
@@ -80,4 +80,4 @@ The left and right Light Tabe preview canvas propose standard options from conte
 
     The digiKam Light Table Editing A Face Tag From The Preview Canvas
 
-The tool bar on top left corner of preview canvas provide also the same options to manage face. For more details about the Face Management, please consult :ref:`the relevant section <manual_face_tagging>` of this manual.
+The tool-bar on top left corner of preview canvas provide also the same options to manage faces. For more details about the manual face tagging, please consult :ref:`the relevant section <manual_face_tagging>` of this manual.
