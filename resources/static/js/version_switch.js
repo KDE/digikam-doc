@@ -6,13 +6,17 @@
 "use strict";
 
 // NOTE: enable more languages in dropbox selector from HTML target by disabling corresponding lines.
+//       English is always enabled
+//       Other languages must be listed in locale/ sub-directory from root directory of this git repository.
+//       All changes from this list must be also applied to the docs-digikam-org section from the JSON config file in binary-factory-tooling repository
+//       https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json
 
 var all_langs = {
     "en": "English",
     //"ar": "&#1575;&#1614;&#1604;&#1618;&#1593;&#1614;&#1585;&#1614;&#1576;&#1616;&#1610;&#1614;&#1617;&#1577;&#1615;",
-    //"ca": "Catal&agrave;",
+    "ca": "Catal&agrave;",
     //"da": "‎dansk",
-    //"de": "Deutsch",
+    "de": "Deutsch",
     "es": "Espa&ntilde;ol",
     //"fi": "Suomeksi",
     "fr": "Fran&ccedil;ais",
@@ -31,7 +35,7 @@ var all_langs = {
     //"tr": "‎Türk&ccedil;e",
     "uk_UA": "&#x423;&#x43A;&#x440;&#x430;&#x457;&#x43D;&#x441;&#x44C;&#x43A;&#x430;",
     //"vi": "Ti&#x1EBF;ng Vi&#x1EC7;t",
-    //"zh_CN": "&#x4E2D;&#x6587;(&#x7B80;&#x4F53;)",
+    "zh_CN": "&#x4E2D;&#x6587;(&#x7B80;&#x4F53;)",
     //"zh_TW": "&#x4E2D;&#x6587;(&#x7E41;&#x9AD4;)",
 };
 
