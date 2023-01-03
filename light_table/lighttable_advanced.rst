@@ -64,3 +64,20 @@ If both left and right sidebar are visible in Light Table, they can be used to c
     :align: center
 
     The digiKam Light Table Used To Compare Left And Right Metadata Contents
+
+Face Management In Light Table
+------------------------------
+
+The left and right Light Tabe preview canvas propose standard options from context menu to manage face information:
+
+- **Show Face Tags** to highlight face areas over the image.
+- **Scan For Faces** to start an automatic faces detection on image.
+- **Add a Face Tag** to add manually a face area over the image.
+
+.. figure:: images/light_table_face_management.webp
+    :alt:
+    :align: center
+
+    The digiKam Light Table Editing A Face Tag From The Preview Canvas
+
+The tool bar on top left corner of preview canvas provide also the same options to manage face. For more details about the Face Management, please consult :ref:`the relevant section <manual_face_tagging>` of this manual.

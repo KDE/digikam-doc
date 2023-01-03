@@ -222,6 +222,8 @@ In case of unsatisfying results it might be helpful to use **Clear and rebuild a
 
 To Complete the Recognition Process, you will need to **Confirm** the new recognized faces. By applying the properties, new faces will be moved to the face tag definitively.
 
+.. _manual_face_tagging:
+
 Manual Face tagging
 ~~~~~~~~~~~~~~~~~~~
 
