@@ -417,10 +417,26 @@ When a translation is complete, corresponding languages can be listed as suitabl
 
 Note: in the **locale/** sub-directory, you will see the list of current translated languages for the documentation. This list and the languages used in the Json and Javascript files must be the same.
 
-### TODO List
+## TODO List
 
 See **TODO** file from this repository.
 
-### Rationale
+## Continuous Integration
+
+At all changes done in this repository, as commits and Merge Requests, the [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
+will recompile automatically all the contents to check the validity of the DoReStructuredText files, including the current translations
+of the documentations.
+
+The [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) lists the history of
+the continuous integration pipelines.
+
+## Continous Deployement
+
+This documentation is automatically updated online (including translations) at each changes passing the CI.
+
+If the compilation of the internationalized versions can be completed with the Continuous Deployment workflow,
+you can show a translated version of this documentation by selecting a language from the left side of the publication page.
+
+## Rationale
 
 See the technical details from [this Phabricator entry](https://phabricator.kde.org/T16036) about the DocBook to Sphinx/ReStructuredText manual conversion.
