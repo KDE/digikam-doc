@@ -71,24 +71,24 @@ Documentation authors
 
     Tom Albers (https://invent.kde.org/toma)
 
-    Richard Taylor
+    Richard Taylor (https://www.linkedin.com/in/richard-taylor-1300049/)
+
+    Joern Ahrens (https://www.jokele.de)
+
+    Oliver Doerr (http://www.doerr-privat.de/)
 
     Ralf Hoelzer
 
-    Joern Ahrens
-
-    Oliver Doerr
-
 - 2006
 
-    Elle Stone
+    Elle Stone (https://ninedegreesbelow.com/about/about.html)
 
-    Anne-Marie Mahfouf
+    Anne-Marie Mahfouf (https://behindkde.org/anne-marie-mahfouf)
 
 - 2003-2010
 
-    Gerhard Kulzer
+    Gerhard Kulzer (https://www.linkedin.com/in/gerhard-kulzer-8931301)
 
 - 2001-2005
 
-    Renchi Raju
+    Renchi Raju (https://www.facebook.com/renchi.raju)
