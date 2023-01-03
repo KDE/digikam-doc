@@ -1,7 +1,7 @@
 .. meta::
    :description: Protect Your Images from Data Corruption and Loss
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, disk errors, disk failures, power surges, ECC, transmission errors, storage media deterioration, recovery, redundancy, disaster prevention, lifetime, temperature, data size, common myths
-              metadata, IPTC stored in image files, XMP files associated, keep the originals, storage, scalability, media, retrieval of images and metadata, copying image data over to the next generation of media, applications, operating systems, virtualization, viewing device, use of the www.
+              metadata, IPTC stored in image files, XMP files associated, keep the originals, storage, scalability, media, retrieval of images and metadata, copying image data over to the next generation of media, applications, operating systems, virtualization, viewing device, use of the www
 
 .. metadata-placeholder
 
@@ -68,7 +68,7 @@ Best practice: burn them slowly with a good recorder on archive quality media in
 Hard Disks (HDD)
 ~~~~~~~~~~~~~~~~
 
-Disk manufacturers keep their statistics to themselves. A manufacturer guaranty buys you a new disk, but no data. Google for one has done a large scale study on HDD failure mechanisms: `Disk Failures study <https://research.google.com/archive/disk_failures.pdf>`_.
+Disk manufacturers keep their statistics to themselves. A manufacturer guaranty buys you a new disk, but no data. Google for One has done a large scale study on HDD failure mechanisms: `Disk Failures study <https://research.google.com/archive/disk_failures.pdf>`_.
 
 In a nutshell: Disks run longest when operating between 35°C and 45°C, at lower temperatures the error rates increases dramatically. Controller parts (electronics) are the foremost sources of failure, SMART does not diagnose any of this. Some SMART errors are indicative of imminent failure, in particular scan errors and relocation counts. Lifetime expectancy is 4-5 years.
 
@@ -332,7 +332,7 @@ Open Source standards have the huge advantage of having an open specification. E
     :alt:
     :align: center
 
-    digiKam Image Editor Default Save Setttings For Common Image Formats
+    digiKam Image Editor Default Save Settings For Common Image Formats
 
 **JPEG** has been around for a while now, and whilst it's a lossy format losing a bit every time you make a modification and save it, it is ubiquitous, supports JFIF, Exif, IPTC and XMP metadata, has good compression ratios and can be read by all imaging software. Because of its metadata limitation, lossy nature, absence of transparency and 8 bit color channel depth, we do not recommend it. JPEG2000 is better, can be employed lossless, but lacks in user base.
 
