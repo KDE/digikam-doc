@@ -103,9 +103,10 @@ As example, we will develop how the **getting_started** section of the manual is
 
 - From the top level **index.rst**, the section is declared like this:
 
-
 ```
 Implementation                                                                                              Comments
+
+...                                                                                                         Other previous sections are there
 
 ###############
 Getting started                                                                                             Section title declared on the front page
@@ -138,6 +139,8 @@ Getting started                                                                 
    :hidden:
 
    getting_started                                                                                          The name of the rst file implementing the section
+
+...                                                                                                         Other next sections are there
 ```
 
 Next file is the **getting_started.rst** listing all chapters from the section:
@@ -155,7 +158,7 @@ Implementation                                                                  
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
-.. _getting_started:                                                                                        Internal anchor for this section
+.. _getting_started:                                                                                        Internal reference for this section
 
 ###############
 Getting started                                                                                             Section title
@@ -189,7 +192,7 @@ Implementation                                                                  
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
-.. _application_intro:                                                                                      Internal anchor for this chapter
+.. _application_intro:                                                                                      Internal reference for this chapter
 
 Introduction                                                                                                Chapter title
 ============
@@ -198,6 +201,7 @@ Introduction                                                                    
 
 Background                                                                                                  First sub title of this chapter
 ----------
+
 ...                                                                                                         The implementation continue here...
 ```
 
