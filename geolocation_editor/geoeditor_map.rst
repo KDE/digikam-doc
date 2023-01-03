@@ -42,7 +42,7 @@ Furthermore the Right Sidebar offers three more tools:
 
     - The **Reverse Geocoding** tab which allows to find geographic names (cities, street names, ...) by using a public reverse geocoding service and the GPS data of an image.
 
-    - The **Search* tab which allows to find positions on the map from geographic names (cities, monuments, ...) by using a public geoname service (GeoNames and OpenStreetMap at the time of writing). 
+    - The **Search** tab which allows to find positions on the map from geographic names (cities, monuments, ...) by using a public geoname service (GeoNames and OpenStreetMap at the time of writing).
 
 The Map View
 ------------

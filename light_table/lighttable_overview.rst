@@ -15,6 +15,12 @@ Overview
 
 .. contents::
 
+.. figure:: images/light_table_main_view.webp
+    :alt:
+    :align: center
+
+    The Light Table Comparing Side By Side Two RAW Files
+
 digiKam features a light table in a separate window to easily compare images. It works with all supported image formats including RAW files.
 
 .. figure:: images/light_table_context_menu.webp
@@ -25,20 +31,22 @@ digiKam features a light table in a separate window to easily compare images. It
 
 Select one or several images in any view from the main window, call **Place onto Light Table** :kbd:`Ctrl+L` from the context menu. The selection will be added to the light table, and its separate window will open. When you are back to the digiKam main window you can quickly access the light table with :menuselection:`Tools --> Light Table` :kbd:`L`.
 
-.. figure:: images/light_table_main_view.webp
+
+.. figure:: videos/light_table_item_selection.gif
+    :width: 600px
     :alt:
     :align: center
 
-    The Light Table Comparing Side By Side Two RAW Files
+    Screencast Of The digiKam Light Table Item Selection From the Thumbbar
 
-From the thumbbar drag & drop images to the left and right comparison pane below. A little arrow will indicate which copy is shown in which pane. If you choose **Synchronize** from the toolbar, any zoom and panning in one window will be synchronously executed in the other pane, so that you can compare the same areas of two images.
+From the thumbbar drag & drop images to the left and right comparison pane below. A little arrow will indicate which copy is shown in which pane. The current selected pane will be highlighted by frame. If you choose **Synchronize** from the toolbar, any zoom and panning in one window will be synchronously executed in the other pane, so that you can compare the same areas of two images.
 
 .. figure:: videos/light_table_views_synchronized.gif
     :width: 600px
     :alt:
     :align: center
 
-    Screencast Of the digiKam Light Table Using The **Synchonize** Mode With Side By Side Views
+    Screencast Of The digiKam Light Table Using The **Synchonize** Mode With Side By Side Views
 
 Another mode is better suited for quickly culling from a series of images. If you choose **By Pair** from the toolbar, the first two images will be automatically inserted into the comparison panes. Click on any thumbnail to make it the left side preview, the adjacent thumbnail to the right will be inserted into the right pane. That make it easy to sift through a series of similar images.
 
