@@ -30,7 +30,7 @@ After you cloned this repository (only need to be done once), use a command line
 
 Under **Linux:** run `make html`
 
-The HTML is generated in `build/html`. Open the web document by double click `index.html`. It must look like this:
+The HTML is generated in `build/html`. Open the file `index.html` in your prefered web browser. It must look like this:
 
 [![](project/images/handbook_HTML.webp "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/handbook_HTML.webp)
 
@@ -38,7 +38,7 @@ The HTML is generated in `build/html`. Open the web document by double click `in
 
 Under **Linux:** run `make epub`
 
-The EPUB ebook is generated in `build/epub`. Open the ebook file by double click `DigikamManual.epub`. It must look like this:
+The EPUB ebook is generated in `build/epub`. Open the file `DigikamManual.epub` in your prefered ebook reader. It must look like this:
 
 [![](project/images/handbook_EPUB.webp "EPUB Version of digiKam Handbook Shown in e-book Viewer")](project/images/handbook_EPUB.webp)
 
@@ -419,7 +419,7 @@ Note: in the **locale/** sub-directory, you will see the list of current transla
 
 ## TODO List
 
-See **TODO** file from this repository.
+See [TODO](todo) file from this repository.
 
 ## Continuous Integration
 
