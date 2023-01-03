@@ -1,6 +1,6 @@
 .. meta::
    :description: How to Install digiKam Photo Management Program
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, install, Linux, Windows, macOS, requirements, configurations
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, install, Linux, Windows, macOS, requirements, configurations, update
 
 .. metadata-placeholder
 
@@ -162,3 +162,12 @@ digiKam's application-wide persistent settings are stored in the following locat
      - :file:`%LocalAppData%\\kxmlgui5\digikam\\digikamui5.rc` 
      - :file:`~/Library/Application Support/digikam/kxmlgui5/digikam/digikamui5.rc`
      - contains UI configuration, if your UI is broken, delete this file
+
+Updates
+-------
+
+.. important::
+
+    If you process a major version update, as for example from 7 to 8, we recommend to backup :ref:`your database files <database_intro>`, as generaly internal schema can changes. Typically, digiKam is able to migrate tables from an older version to a new one, and all is done automatically at startup, but in all cases, it's always better to save these importants digiKam files before to upgrade the application.
+
+If you use a bundle as offcial AppImage, macOS package, or Windows installer, the application can be updated using the :menuselection:`Help --> Check For New Version menu entry`.
