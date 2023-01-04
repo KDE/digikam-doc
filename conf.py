@@ -23,8 +23,8 @@ import os
 import subprocess
 
 project = 'Digikam Manual'
-description = 'The official digiKam Documentation'
-copyright = 'licensed under the  <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License SA 4.0</a> unless stated otherwise'
+description = 'The Official digiKam Documentation'
+copyright = 'licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise'
 author = 'digiKam Community'
 
 # The full version, including alpha/beta/rc tags
