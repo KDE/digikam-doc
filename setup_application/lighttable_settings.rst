@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Light Table Settings
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, light, table, configuration
 
 .. metadata-placeholder
 
@@ -18,5 +18,9 @@ Light Table Settings
 The setting of the digiKam Light Table can be set to default values on this page so that every time you open the Light Table, these settings are activated (if possible, because for images having different sizes the synchronous mode does not work).
 
 .. figure:: images/setup_lighttable.webp
+    :alt:
+    :align: center
 
-Synchronize panels automatically refers to the Synchronize button on the Light Table toolbar which is to say that you can still switch off this option there. If the next option is not checked you have to load the images from the thumbbar to the two panels of the Light Table by drag+drop or with the On left or On right buttons.
+    The digiKam Light Table Configuration Page
+
+**Synchronize Panels Automatically** refers to the **Synchronize** button on the Light Table toolbar which is to say that you can still switch off this option there. If the next option is not checked you have to load the images from the thumbbar to the two panels of the Light Table by drag+drop or with the **On Left** or **On Right** buttons.

@@ -31,7 +31,6 @@ digiKam features a light table in a separate window to easily compare images. It
 
 Select one or several images in any view from the main window, call **Place onto Light Table** :kbd:`Ctrl+L` from the context menu. The selection will be added to the light table, and its separate window will open. When you are back to the digiKam main window you can quickly access the light table with :menuselection:`Tools --> Light Table` :kbd:`L`.
 
-
 .. figure:: videos/light_table_item_selection.gif
     :width: 600px
     :alt:
@@ -65,6 +64,10 @@ In the lower right corner of each pane there you find a built-in panning action 
 
 Zooming works the same as in other views: use indifferently the zoom slider below the panes or **Ctrl-scroll wheel** to zoom in and out, with both images when **Synchrone** mode is selected.
 
-.. note::
+.. tip::
 
     If you use mutiscreen on your computer, it's a good idea to place **Main Window** on a screen and the **Light Table** on other one to increase your experience.
+
+.. note::
+
+    Light Table has a specific configuration page from digiKam setup dialog. For more details, read :ref:`this section <lighttable_settings>` from the manual.
