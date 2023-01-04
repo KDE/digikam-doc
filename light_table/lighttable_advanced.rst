@@ -86,3 +86,16 @@ To manage faces information, the options below are available:
     The digiKam Light Table Editing A Face Tag From The Preview Canvas
 
 The tool-bar on top left corner of preview canvas provide also the same options to manage faces. For more details about the manual face tagging, please consult :ref:`the relevant section <manual_face_tagging>` of this manual.
+
+Assigning Rate Labels and Tags
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To manage Rate, Labels, and Tags, you can use the preview canvas context menu where the relevant entries allows to assign easily this properties. Of course this menu is available to the left and right pane. You can also use the **Caption** tab avaialble on the left sidebar and on the right sidebar. More details about this tab is given in the :ref:`Caption View section <captions_view>` of this manual.
+
+After assigning these kind of properties, you can found the marked items to the **Labels** and **Tags** tabs from the Main Window left sidebar. This will allows you to post-process quickly these items in your workflow, after a triaging with the Light table.
+
+.. figure:: images/light_table_assign_labels.webp
+    :alt:
+    :align: center
+
+    The digiKam Light Table Assigning A Color Label On The Left Context Menu
