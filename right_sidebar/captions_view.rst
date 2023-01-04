@@ -41,7 +41,7 @@ Title and caption editors are powerful tool which supports:
    - Translate strings online to another language.
    - Author strings definition.
 
-The default language from an alternative strings stack is **x-default** and must be written by preference in English. If one strings must be enter in the stack, the x-default must be present in prior.
+The default language from an alternative strings stack is **x-default** and must be written by preference in English. If one string must be entered in the stack, the x-default must be present in prior.
 
 After commenting, either choose the **Apply** button or go straight to the next image, the descriptions will be saved.
 
@@ -106,6 +106,6 @@ Information View
 
     The Metadata View From Right Sidebar Displaying Template Information
 
-The Information view allows to assign a template of textuals information to items in one pass. This information can be populated in Setup/Template dialog. They contains all strings describing the contents, the scene, the authors, the rights, the place etc.
+The Information view allows to assign a template of textuals information to items in one pass. This information can be populated in Setup/Template dialog. They contain all strings describing the contents, the scene, the authors, the rights, the place etc.
 
 For more details about Template, see the description of the :ref:`Template Settings <templates_settings>` section.

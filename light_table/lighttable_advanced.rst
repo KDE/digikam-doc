@@ -20,15 +20,15 @@ Advanced Features
 Comparing The Focus Points
 --------------------------
 
-digiKam Light Table inherits of the **Preview Mode** capabilities as it share same tools used in background by **Main Window**. One very powerfull feature is the Focus Points visualization while comparing images side by side.
+digiKam Light Table inherits of the **Preview Mode** capabilities as it share same tools used in background by **Main Window**. One very powerful feature is the Focus Points visualization while comparing images side by side.
 
-Camera can use some points (name auto focus points) on image to make the region around sharper. Besides, it blurs the futher region, in order to make an aristic product. These points are named AF points. They can be pre-defined by camera or by user, depend on model of camera. There are only two cases supported by digiKam for AF points: infocused and selected. Infocues points are the points sharpenned by camera, when selected points are the points expected to be clear by user. An point can be both in 2 cases (infocus-selected) or neither both (inactive).
+Camera can use some points (name auto focus points) on image to make the region around sharper. Besides, it blurs the further region, in order to make an artistic product. These points are named AF points. They can be pre-defined by camera or by user, depend on model of camera. There are only two cases supported by digiKam for AF points: infocused and selected. Infocuses points are the points sharpened by camera, when selected points are the points expected to be clear by user. An point can be both in 2 cases (infocus-selected) or neither both (inactive).
 
 .. figure:: images/light_table_comparing_focus_points.webp
     :alt:
     :align: center
 
-    The digiKam Light Table Comparing Focus Points From a Serie Of Shots
+    The digiKam Light Table Comparing Focus Points From a Series Of Shots
 
 Each point is not only a point on the image but a rectangle. FocusPoint is used to recognized focus region of image. This is a region where user expected to be clear. Using the focus points visualization while previewing image side by side allows to be sure that the best image was taken with right in-focus shot conditions.
 
@@ -43,7 +43,7 @@ To Show the focus points over the preview canvas, select **Show Focus Points** f
 Comparing The Sidebars Contents
 -------------------------------
 
-One particularity on digiKam Light Table is the sidbar views avaialble on the right and on the left sides. Both visualize provide the same contents as with **Main Window** right sidebar:
+One particularity on digiKam Light Table is the sidebar views available on the right and on the left sides. Both visualize provide the same contents as with **Main Window** right sidebar:
 
     - :ref:`Properties <properties_view>`: File and image properties, key shooting parameters.
 

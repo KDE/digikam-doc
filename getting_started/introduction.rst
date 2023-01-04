@@ -24,7 +24,7 @@ An easy-to-use camera interface is provided as **Import Tool**, that will connec
 
 digiKam incorporates a fast **Image Editor** with many image editing tools. You can use the Image Editor to view your photographs, comment and rate them, correct, enhance and alter them. The images post processing can be easily done by a set of tools though the **Batch Queue Manager**, or by many import and export tools dedicated to work with remote web services.
 
-To compare visually images side by side, one other tool named **Light Table** is provided to select the best shots taken from a serie.
+To compare visually images side by side, one other tool named **Light Table** is provided to select the best shots taken from a series.
 
 .. figure:: images/architecture.webp
     :alt:

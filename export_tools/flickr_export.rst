@@ -31,7 +31,7 @@ After successful signup digiKam will be allowed to send photos to the flickr web
 
 Then, simply authorize application and close the web browser. Return to the host application dialog, you will see the interface used to upload photos to Flickr, described in the next section.
 
-When the the tool is invoked for second time or later you are greeted with the following dialog, which shows the current acount already used previously. Just select one from the list to be connected.
+When the the tool is invoked for second time or later you are greeted with the following dialog, which shows the current account already used previously. Just select one from the list to be connected.
 
 .. figure:: images/export_flickr_account.webp
 
@@ -41,11 +41,11 @@ The Main upload dialog is shown below:
 
 By default, the tool propose to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
 
-The **Tag options** section can bused to apply digiKam keywords to the flickr upload. More keyworkds can be assigned with a series of words (comma separated).
+The **Tag options** section can bused to apply digiKam keywords to the flickr upload. More keywords can be assigned with a series of words (comma separated).
 
 The **Public**, **Friends**, and **Family** checkboxes can be turned on to assign appropriate access permissions to the images you upload. By default the images uploaded are private.
 
-If the **Resize photos before uploading** option is selected, the photos will be resized before transfering to Flickr. The values will be read from the **Maximum Dimension** combobox, which can be used to adjust the maximum height. The width calculation will be done so as to have the aspect ratio conserved.
+If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to Flickr. The values will be read from the **Maximum Dimension** combobox, which can be used to adjust the maximum height. The width calculation will be done so as to have the aspect ratio conserved.
 
 .. figure:: images/export_flickr_progress.webp
 
