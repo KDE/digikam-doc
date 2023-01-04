@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Database Settings
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, database, setup, mysql, mariadb, sqlite, migration, local, remote
 
 .. metadata-placeholder
 
@@ -17,7 +17,7 @@ Database Settings
 
 .. note::
 
-    For an introduction of internal data storage, please refer to Introduction of digiKam Databases section.
+    For an introduction of internal data storage, please refer to :ref:`Introduction of digiKam Databases <database_intro>` section.
 
 The Sqlite Database
 -------------------
@@ -43,6 +43,10 @@ To make your application run fast and smoothly, it is recommended to check and o
 SQLite database files could be found in your “collection” folder, which you have added to digiKam. (By default, if you add your “Pictures” collection, the database files will be present in ~/Pictures folder).
 
 .. figure:: images/setup_database_sqlite.webp
+    :alt:
+    :align: center
+
+    The digiKam Sqlite Configuration Page
 
 The MySQL Database
 ------------------
@@ -88,6 +92,10 @@ Internal server creates a separate database that can be accessed (only while app
 Internal server uses two MySQL Binary Tools - mysql_install_db and mysqld. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system.
 
 .. figure:: images/setup_database_mysqlinternal.webp
+    :alt:
+    :align: center
+
+    The digiKam Mysql Internal Configuration Page
 
 The MySQL Remote Server
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -115,6 +123,10 @@ Follow the instructions below, if you don’t have a dedicated user account and 
 Now, in digiKam, go to Settings --> Configure digiKam... and then under Settings section, select MySQL Server from the drop down list.
 
 .. figure:: images/setup_database_remotemysql.webp
+    :alt:
+    :align: center
+
+    The digiKam Remote Mysql Configuration Page
 
 Enter the IP address of your MySQL server in the Host Name field and specify the correct port in the Port field (the default port is 3306).
 
@@ -144,6 +156,10 @@ The photo management application comes up with an exclusive tool “Database Mig
 To migrate to another database, go to Settings --> Database Migration.... A dialog box appears:
 
 .. figure:: images/setup_database_migration.webp
+    :alt:
+    :align: center
+
+    The digiKam Database Migration Tool
 
 Now choose appropriate database types you want to convert to. Finally, click on Migrate button to convert the database from SQLite to MySQL (or vice versa).
 
@@ -164,3 +180,7 @@ digiKam provides a unique tool of maintaining the statistics of your collection.
 You can view your statistics by going to Help --> Database Statistics. A dialog box like this will appear:
 
 .. figure:: images/setup_database_statistics.webp
+    :alt:
+    :align: center
+
+    The digiKam Database Statistics Dialog
