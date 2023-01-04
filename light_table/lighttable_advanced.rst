@@ -65,10 +65,15 @@ If both left and right sidebar are visible in Light Table, they can be used to c
 
     The digiKam Light Table Used To Compare Left And Right Metadata Contents
 
-Face Management In Light Table
-------------------------------
+Asset Management In Light Table
+-------------------------------
 
-As with the **Main Window** **Preview** Mode, the left and right Light Tabe preview canvas propose the standard options from context menu to manage face information:
+As with the **Main Window** **Preview** Mode, the left and right Light Table preview canvas propose the standard options from the context menu to apply the :ref:`digital asset management <organize_find>` with your images.
+
+Faces Tagging
+~~~~~~~~~~~~~
+
+To manage faces information, the options below are available:
 
 - **Show Face Tags** to highlight face areas over the image.
 - **Scan For Faces** to start an automatic faces detection on image.
