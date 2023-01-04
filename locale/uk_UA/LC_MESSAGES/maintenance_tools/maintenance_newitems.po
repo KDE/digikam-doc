@@ -1,13 +1,13 @@
 # Copyright (C) licensed under the  <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License SA 4.0</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2022.
+# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-29 00:45+0000\n"
-"PO-Revision-Date: 2022-12-29 22:58+0200\n"
+"PO-Revision-Date: 2023-01-03 20:41+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../maintenance_tools/maintenance_newitems.rst:1
 msgid "digiKam Maintenance Tool Scan for New Items"
-msgstr ""
+msgstr "Пошук нових записів за допомогою засобу супроводу збірки digiKam"
 
 #: ../../maintenance_tools/maintenance_newitems.rst:1
 msgid ""
@@ -46,6 +46,13 @@ msgid ""
 "automatically on digiKam startup by checking Scan for new items at startup "
 "in Settings --> Configure digiKam... --> Miscellaneous."
 msgstr ""
+"Цей процес виконає сканування збірок, визначених на сторінці «Параметри -->"
+" Налаштувати digiKam --> Збірки», на наявність "
+"нових записів, тобто файлів зображень, які було додано до збірки у період "
+"бездіяльності digiKam. Ви також можете запускати цей процес автоматично "
+"під час запуску digiKam. Для цього слід позначити пункт «Під час запуску"
+" виявляти нові елементи» на сторінці «Параметри --> Налаштувати digiKam -->"
+" Різне»."
 
 #: ../../maintenance_tools/maintenance_newitems.rst:22
 msgid ""
@@ -53,12 +60,17 @@ msgid ""
 "bottom right of main windows will be visible to indicate the amount of items "
 "already done."
 msgstr ""
+"Протягом процедури пошуку нових записів програма показуватиме сповіщення у"
+" нижній правій частині основного вікна для показу кількості оброблених"
+" записів."
 
 #: ../../maintenance_tools/maintenance_newitems.rst:28
 msgid ""
 "This process can also be directly called by the main menu, From Tools --> "
 "Scan for New Items to scan all collections."
 msgstr ""
+"Цю дію з пошуку в усіх збірках можна також безпосередньо викликати з"
+" основного меню: «Інструменти --> Виявити нові зображення»."
 
 #: ../../maintenance_tools/maintenance_newitems.rst:30
 msgid ""
@@ -67,6 +79,10 @@ msgid ""
 "new items at startup can take a while and slow-down application "
 "initialization."
 msgstr ""
+"Виконати цю дію можна автоматично під час запуску програми за допомогою"
+" належного пункту на вкладці «Налаштування --> Інше --> Поведінка». Зверніть"
+" увагу, що пошук нових записів під час запуску може тривати певний час і"
+" дещо уповільнити запуск програми."
 
 #: ../../maintenance_tools/maintenance_newitems.rst:32
 msgid ""
@@ -79,6 +95,15 @@ msgid ""
 "and it is recommended to disable this option and to plan a manual scan "
 "through the maintenance tool at the right moment."
 msgstr ""
+"Якщо бути точним, позначення цього пункту наказує digiKam шукати нові записи"
+" у всіх збірках з метою реєстрації нових зображень у базі даних. Пошук"
+" виконується у фоновому режимі і керується за допомогою засобів смужки стану"
+" після завантаження основного інтерфейсу digiKam. Якщо ваш комп'ютер"
+" достатньо потужний, під час сканування digiKam можна буде користуватися без"
+" проблем. Якщо ж ваша збірка є надто великою або ви користуєтеся віддаленою"
+" базою даних, можливе певне уповільнення роботи програми, тому рекомендуємо"
+" зняти позначку з цього пункту і запланувати оновлення збірку вручну за"
+" допомогою засобів програми у належний момент часу."
 
 #: ../../maintenance_tools/maintenance_newitems.rst:34
 msgid ""
@@ -87,6 +112,11 @@ msgid ""
 "the scan. New items, deleted and also renamed items are found. In order to "
 "find items that have been changed, this option must be deactivated."
 msgstr ""
+"Інший пункт цієї панелі налаштування із назвою **Швидке сканування (виявляє"
+" нові, вилучені і перейменовані записи)** можна використати для значного"
+" пришвидшення сканування. Буде знайдено нові записи, вилучені записи або"
+" перейменовані записи. Щоб виявити записи, до яких було внесено зміни,"
+" позначення з цього пункту слід зняти."
 
 #: ../../maintenance_tools/maintenance_newitems.rst:40
 msgid ""
@@ -98,3 +128,11 @@ msgid ""
 "the most efficient, we recommend doing file operations within digiKam, not "
 "by an external application as a file manager."
 msgstr ""
+"Для швидкого виявлення та реєстрації змін у записах у базі даних під час"
+" сканування digiKam використовує хеш-суми. Це не повні хеш-суми файла, з"
+" міркувань швидкодії, але є достатньо надійними. Тому до неї буде включено"
+" розмір файла. digiKam використовує ці параметри для того, щоб спробувати"
+" знайти файли, якщо їх було пересунуто або перейменовано в іншій програмі."
+" Щоб зробити процедуру сканування найефективнішою, ми рекомендуємо"
+" виконувати дії з файлами у digiKam, а не у зовнішній програмі, зокрема"
+" програмі для керування файлами."
