@@ -10,14 +10,7 @@ This documentation generated as **EPUB** can be downloaded [here](https://docs.d
 
 ## Setting up Development Environment
 
-Under Ubuntu 22.04:
-
-1. First you need to install [Python version 3](https://www.python.org) and **PIP** (`sudo apt install python3-pip`) as it is required to install Sphinx.
-2. You can check whether Python was installed successfully (and your version is 3 and not 2) by running `python --version`. If necessary run `sudo apt install python-is-python3`.
-3. Now you can install Sphinx and the Sphinx Theme by using `python -m pip install --upgrade sphinx sphinx_rtd_theme`
-4. You can check whether Sphinx was installed successfully by running `sphinx-build --version`
-
-Under Ubuntu 22.10:
+Under Ubuntu 22.04 and later:
 
 1. To install Sphinx and the Sphinx Theme use `sudo apt install python3-sphinx`
 2. You can check whether Sphinx was installed successfully by running `sphinx-build --version`
@@ -436,6 +429,18 @@ This documentation is automatically updated online (including translations) at e
 
 If the compilation of the internationalized versions can be completed with the Continuous Deployment workflow,
 you can show a translated version of this documentation by selecting a language from the left side of the publication page.
+
+## Convert EPUB to PDF
+
+Sphinx allows to generate PDF using Latex engine in background, but it converter as several limitations, as the non support of WEBP and GIF formats used for screenshots and screencast.
+
+An alternative is to install [Calibre](https://calibre-ebook.com/) and to convert the EPUB target to PDF like this:
+
+`ebook-convert build/epub/DigikamManual.epub build/epub/DigikamManual.pdf`
+
+The PDF file is generated in `build/epub`. Open the file `DigikamManual.pdf` in your prefered PDF reader.
+
+Note: unlike EPUB, PDF is only for Print. During conversion video screencasts will be converted as simple images, and all Internet links will be dropped.
 
 ## Rationale
 
