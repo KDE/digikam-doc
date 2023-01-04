@@ -99,3 +99,18 @@ After assigning these kind of properties, you can found the marked items to the 
     :align: center
 
     The digiKam Light Table Assigning A Color Label On The Left Context Menu
+
+Working With Tools From Light Table
+-----------------------------------
+
+As **Main Window**, The digiKam Light Table allows to call the tools from the **View**, **Tools**, **Import**, or **Export** menus. Unlike Main Window, Light Table do not have the conept of albums or an icon-view where you can select items to process. Light Table has a thumbbar which is a flat list of items to review with the left and right panes.
+
+For the tools working with pre-selected list of items from Main Window icon-view, the **View**, **Tools**, and **Export** menu options will use the current contents from the thumbbar. For tools working with albums, nothing change, as albums still selectable at tool sessions independently than thumbbar content.
+
+The **Import** tools will simply append to the thumbbar the new contents.
+
+.. figure:: images/light_table_post_processing.webp
+    :alt:
+    :align: center
+
+    The digiKam Light Table Running Print Creator Tool
