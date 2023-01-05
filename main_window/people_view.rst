@@ -15,6 +15,8 @@ People View
 
 As long as you are not just taking pictures from machines or stars or something like that, Face Management might be an interesting feature for you (even with a machine there might be a human being operating it). In digiKam it consists of two tasks: Face Detection and Face Recognition.
 
+The face management workflow allows you to Detect and Recognize people in your photographs. **Face Detection** allows digiKam to detect faces in your images. This step is required before being able to recognize faces. **Face Recognition** will automatically recognize people in your images.
+
 .. important::
 
    To run properly, the face management needs the deep-learning models to download at the first run of digiKam. See :ref:`the Quick Start section <quick_start>` for details.
@@ -26,11 +28,11 @@ Face Detection
 
 The first step is to have digiKam finding all those pics that show faces not even knowing yet who's face it is. To prepare that process you click on **People** tab from left sidebar. On the bottom you have a settings view with a drop down menu where you can choose between:
 
-    - **Skip images already scanned**.
+    - **Skip Images Already Scanned**: choose this option if you haven't scanned yet or if the last scan yielded good results but you would like to scan new images.
 
-    - **Scan again and merge results**.
+    - **Scan Again and Merge Results**: choose this option if the results of the previous scan weren't accurate. This would rescan all images again, and is time consuming.
 
-    - **Clear unconfirmed results and rescan**.
+    - **Clear Unconfirmed Results And Rescan**: remove all faces registered in database with no name and process again an analysis.
 
 .. figure:: images/mainwindow_faces_settings1.webp
     :alt:
@@ -38,11 +40,9 @@ The first step is to have digiKam finding all those pics that show faces not eve
 
     The digiKam Face Management Workflow View
 
-.. tip::
-
-    On the **Workflow** tab, a button of the right/top can be used to show a help dialog to guide you about the Faces Management workflow.
-
 The first option you would choose if you didn't scan yet or if you did with a satisfying result but added new photographs since then or if you already improved a search result, e.g. by removing face tags which obviously don't show a face. The second you would choose if you want the images already scanned to be included in the next scan. The third is more interesting in the context of Face Recognition since **Unconfirmed results** means face tags that don't have a name assigned to them yet.
+
+After the Face Scan is complete, you should see a new tag **Unknown** where the results of the face scan will appear. You may now manually identify a few of these faces and then proceed for face recognition. At least a minimum of **4 similar faces tagged** in different images must be trained for an automatic recognition workflow.
 
 .. note::
 
@@ -182,7 +182,7 @@ Assigning People tags to face tags is an important prerequisite to Face Recognit
 
     The digiKam Face Management Icon-View With Multiple Selection of Similar Faces to Tag With The Same **Agnès** Name
 
-Now you should see the face tags of that photograph. Those which have a people (or other) tag already assigned will simply show the name of that tag. The others, showing **unknown** faces, will show a field and two buttons as in the screenshot of the previous article. In the field labeled **Who is this?** you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With **Confirm** you can save that to the database.
+Now you should see the face tags of that photograph. Those which have a people (or other) tag already assigned will simply show the name of that tag. The others, showing **Unknown** faces, will show a field and two buttons as in the screenshot of the previous article. In the field labeled **Who is this?** you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With **Confirm** you can save that to the database.
 
 .. figure:: images/mainwindow_faces_tag_confirmed_iconview.webp
     :alt:
@@ -198,7 +198,7 @@ If a face tag is confirmed and thus showing only the name of the tag but not the
 
 Once you have a tag assigned to a few photographs you can have digiKam looking if it can find more photographs showing the same face. To prepare that process you click **Scan collection for faces** but this time you select **Recognize faces**.
 
-.. note::
+.. important::
 
     To be able to recognize a new face automatically, a minimum of 4 similar faces tagged in different images need to be previously trained using manual face management workflow.
 
@@ -253,6 +253,12 @@ To tag people manually, you can do it by by different way:
 
         Instead of clicking on **Add a Face Tag** icon you can draw a face region while holding :kbd:`Ctrl` key.
 
+    The **Preview Mode** context menu include also two other options to use during manual face tagging:
+
+        - **Scan for Faces**: this option will call the face detection algorithm to set face areas automatically over the image. The faces are assigned by default to **Unknown** in the database. The last used **Faces Detection** settings will configure the process. If faces are found, you can edit manually the face name as explained previously.
+
+        - **Show Face Tags**: this show the face areas visible and switch automatically in edit mode when mouse move over the areas.
+
 - From Left Sidebar **People** tab: use drag and drop between icon-view and face-tags tree-view. Select items labeled **Unknown** that you want to assign a face-tag. Perform a move with the mouse to the **People** items hierarchy. A pop-up menu will appears to confirm face assignement.
 
     .. figure:: videos/mainwindow_faces_drag_drop.gif
@@ -270,8 +276,19 @@ To tag people manually, you can do it by by different way:
 
         The digiKam Face Tag Properties Dialog With a Keyboard Shortcut Assigned
 
-The **Preview** mode context menu include also two other options to use during manual face tagging:
+- From The **Unknown** tag from **People** view: to manually identify a face, hover on any **Unknown** face form icon-view and use the text box to give it a name. This will lead to the creation of a face tag in case a person of that name doesn't exist already. For best results identify at least 4 faces for each person you want the scan to recognize.
 
-- **Scan for Faces**: this option will call the face detection algorithm to set face areas automatically over the image. The faces are assigned by default to **Unknown** in the database. The last used **Faces Detection** settings will configure the process. If faces are found, you can edit manually the face name as explained previously.
+    .. figure:: videos/mainwindow_face_tagging.gif
+        :width: 600px
+        :alt:
+        :align: center
 
-- **Show Face Tags**: this show the face areas visible and switch automatically in edit mode when mouse move over the areas.
+    Screencast of Manual Face Tagging From Icon-View
+
+In case there's a face you don't wish to be recognized, you can mark it as ignored. This leads to the creation of a new **Ignored** tag, you can later unmark the face if needed.
+
+    .. figure:: images/mainwindow_faces_tag_ignored_iconview.webp
+        :alt:
+        :align: center
+
+        A Face Marked as **Ignored** From Icon-View
