@@ -30,7 +30,7 @@ The first step is to have digiKam finding all those pics that show faces not eve
 
     - **Skip Images Already Scanned**: choose this option if you haven't scanned yet or if the last scan yielded good results but you would like to scan new images.
 
-    - **Scan Again and Merge Results**: choose this option if the results of the previous scan weren't accurate. This would rescan all images again, and is time consuming.
+    - **Scan Again And Merge Results**: choose this option if the results of the previous scan weren't accurate. This would rescan all images again, and is time consuming.
 
     - **Clear Unconfirmed Results And Rescan**: remove all faces registered in database with no name and process again an analysis.
 
@@ -68,7 +68,7 @@ The last tab from the settings view allows to tune advanced configuration, as th
 
    The deep-learning YOLO v3 model is more powerful for face workflow but it's time and CPU consuming. Only turn on this option if you hardware can supports intensive computations.
 
-For the task we are talking about you check **Detect faces**, of course. Since face detection is a time-consuming task you better don't hit **Scan** right away, rather **Options**. An additional area will fold out organized with three tabs. In **Search-In** you can confine the scan to certain albums or tags. In **Settings** you can adjust the **Face Accurary** with a balance between **Sensitivity** and **Specificity** that suits your needs. A higher specificity implies higher accuracy, however this results in a smaller set of results. Under Advanced you will find two checkboxes. The first is explained by the text above it. The second is for face recognition, see next article.
+For the task we are talking about you check **Detect Faces**, of course. Since face detection is a time-consuming task you better don't hit **Scan** right away, rather **Options**. An additional area will fold out organized with three tabs. In **Search-In** you can confine the scan to certain albums or tags. In **Settings** you can adjust the **Face Accurary** with a balance between **Sensitivity** and **Specificity** that suits your needs. A higher specificity implies higher accuracy, however this results in a smaller set of results. Under Advanced you will find two checkboxes. The first is explained by the text above it. The second is for face recognition, see next article.
 
 Once you have chosen your options carefully you click **Scan** and after a while, depending on the scope of your selection, the result will be presented in the Image Area. In the Tags list of the Left Sidebar you will see the People branch of your tag tree. You will see the whole scan result only if the topmost tag **People** is selected. In the tree you will see a new virtual tag called **Unknown** which will show all those images where faces are recognized but not yet connected to a person. If you just scanned for the first time you will find the whole result also here.
 
@@ -91,7 +91,7 @@ If you don't see them, click the people button |icon_showfacetags| in the upper 
 
     The digiKam Face Tags Edit From Icon-View
 
-If it really is a face the field labeled **Who is this?** comes into play. Here you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With **Confirm** you can save that to the database. If it was the only face tag (left) the image will disappear from the **Unknown** selection and you will find it once you select either the **People** tag or one of the tags you assigned to one of the face tags in that image.
+If it really is a face the field labeled **Who Is This?** comes into play. Here you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With **Confirm** you can save that to the database. If it was the only face tag (left) the image will disappear from the **Unknown** selection and you will find it once you select either the **People** tag or one of the tags you assigned to one of the face tags in that image.
 
 The list of detection samples below come from a huge collection of photo scanned with the Yolo v3 deep-learning model.
 
@@ -167,14 +167,14 @@ The screnshots **01**, **03**, **05**, **08**, **09**, and **12** can be conside
 
 The screenshots **04** and **10** are definitively false positive results.
 
-In the context menu of the preview there are two more items related to face tags: **Add a Face Tag** and **Clear all faces** on this image.
+In the context menu of the preview there are two more items related to face tags: **Add A Face Tag** and **Clear All Faces** on this image.
 
 .. _face_recognition:
 
 Face Recognition
 ~~~~~~~~~~~~~~~~
 
-Assigning People tags to face tags is an important prerequisite to Face Recognition. Very obviously digiKam can only recognize faces if it has something to compare with. So it's up to you to show it the ropes, which means in this case to tell digiKam: This is Lara, this is Juan, this is Peter and so forth. For that you would, after performing a Face Detection as described in the previous article, typically select the **unknown** tag on the Left Sidebar, click on a thumbnail and click, if necessary, on the Show Face Tags button |icon_showfacetags|.
+Assigning People tags to face tags is an important prerequisite to Face Recognition. Very obviously digiKam can only recognize faces if it has something to compare with. So it's up to you to show it the ropes, which means in this case to tell digiKam: This is Lara, this is Juan, this is Peter and so forth. For that you would, after performing a Face Detection as described in the previous article, typically select the **Unknown** tag on the Left Sidebar, click on a thumbnail and click, if necessary, on the Show Face Tags button |icon_showfacetags|.
 
 .. figure:: images/mainwindow_faces_tag_assigned_iconview.webp
     :alt:
@@ -182,7 +182,7 @@ Assigning People tags to face tags is an important prerequisite to Face Recognit
 
     The digiKam Face Management Icon-View With Multiple Selection of Similar Faces to Tag With The Same **Agnès** Name
 
-Now you should see the face tags of that photograph. Those which have a people (or other) tag already assigned will simply show the name of that tag. The others, showing **Unknown** faces, will show a field and two buttons as in the screenshot of the previous article. In the field labeled **Who is this?** you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With **Confirm** you can save that to the database.
+Now you should see the face tags of that photograph. Those which have a people (or other) tag already assigned will simply show the name of that tag. The others, showing **Unknown** faces, will show a field and two buttons as in the screenshot of the previous article. In the field labeled **Who Is This?** you can either type in the name of an existing People tag out of your tag tree or use the drop down function to show your tag tree and select a tag. With **Confirm** you can save that to the database.
 
 .. figure:: images/mainwindow_faces_tag_confirmed_iconview.webp
     :alt:
@@ -196,13 +196,13 @@ Now you should see the face tags of that photograph. Those which have a people (
 
 If a face tag is confirmed and thus showing only the name of the tag but not the buttons to remove, edit or confirm it, but you need this buttons because e.g. it's wrong and you want to edit or remove it, just double-click on the name and the buttons will re-appear.
 
-Once you have a tag assigned to a few photographs you can have digiKam looking if it can find more photographs showing the same face. To prepare that process you click **Scan collection for faces** but this time you select **Recognize faces**.
+Once you have a tag assigned to a few photographs you can have digiKam looking if it can find more photographs showing the same face. To prepare that process you click **Scan Collection For Faces** but this time you select **Recognize Faces**.
 
 .. important::
 
     To be able to recognize a new face automatically, a minimum of 4 similar faces tagged in different images need to be previously trained using manual face management workflow.
 
-To start the Face Recognition you click **Scan Collection for Faces** button. The process will tag every recognized face with the appropriate People tag out of your tag tree and the corresponding thumbnail will disappear from the **Unknown** tag selection.
+To start the Face Recognition you click **Scan Collection For Faces** button. The process will tag every recognized face with the appropriate People tag out of your tag tree and the corresponding thumbnail will disappear from the **Unknown** tag selection.
 
 .. figure:: images/mainwindow_faces_tag_recognized_iconview.webp
     :alt:
@@ -212,7 +212,7 @@ To start the Face Recognition you click **Scan Collection for Faces** button. Th
 
 Face Recognition is faster than Face Detection but it still makes sense to click **Settings** and confine the scan to certain albums or tags in the Albums tab, e.g. to the **Unknown** tag. In the **Settings** tab we can play with the balance between speed and accuracy and two checkboxes. The first is explained by the text above it.
 
-In case of unsatisfying results it might be helpful to use **Clear and rebuild all training data**. One reason can be that there are too many face tags assigned to a person which shows this person in a way that doesn't really help the search algorithm, e.g. with sunglasses, blurred, unusual colors, carnival make up, dark shaded areas in the face, baby/kid/adult photographs mixed... Another reason to use that option can be false face recognition due to a wrong accuracy value in the **Settings** tab.
+In case of unsatisfying results it might be helpful to use **Clear And Rebuild All Training Data**. One reason can be that there are too many face tags assigned to a person which shows this person in a way that doesn't really help the search algorithm, e.g. with sunglasses, blurred, unusual colors, carnival make up, dark shaded areas in the face, baby/kid/adult photographs mixed... Another reason to use that option can be false face recognition due to a wrong accuracy value in the **Settings** tab.
 
 .. figure:: images/mainwindow_faces_tag_validate_iconview.webp
     :alt:
@@ -234,14 +234,14 @@ To improve results of face recognition, apart from using the settings mentioned 
 
 .. _manual_face_tagging:
 
-Manual Face tagging
+Manual Face Tagging
 ~~~~~~~~~~~~~~~~~~~
 
 digiKam allows for either manual face tagging.
 
-For more information about automatic face tagging using digiKam's face recognition engine see the previous section of this manual.
+For more information about automatic face tagging using digiKam's face recognition engine see :ref:`the previous section <face_recognition>` of this manual.
 
-To tag people manually, you can do it by by different way:
+You can tag people manually by different way:
 
 - From **Preview Mode**: click on **Add a Face Tag** icon or select option on context menu, as highlighted on the screenshot below.
 
@@ -261,11 +261,11 @@ To tag people manually, you can do it by by different way:
 
     .. note::
 
-        Instead of clicking on **Add a Face Tag** icon you can draw a face region while holding :kbd:`Ctrl` key.
+        Instead of clicking on **Add A Face Tag** icon you can draw a face region while holding :kbd:`Ctrl` key.
 
     The **Preview Mode** context menu include also two other options to use during manual face tagging:
 
-        - **Scan for Faces**: this option will call the face detection algorithm to set face areas automatically over the image. The faces are assigned by default to **Unknown** in the database. The last used **Faces Detection** settings will configure the process. If faces are found, you can edit manually the face name as explained previously.
+        - **Scan For Faces**: this option will call the face detection algorithm to set face areas automatically over the image. The faces are assigned by default to **Unknown** in the database. The last used **Faces Detection** settings will configure the process. If faces are found, you can edit manually the face name as explained previously.
 
         - **Show Face Tags**: this show the face areas visible and switch automatically in edit mode when mouse move over the areas.
 
