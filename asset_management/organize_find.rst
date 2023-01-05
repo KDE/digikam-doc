@@ -114,7 +114,7 @@ digiKam also provides automatic tagging features based on deep-learning:
 
         digiKam Maintenance Tool is The Best Way to Auto-tag items by Quality or for Faces
 
-These kind of tools requires extra data model files to run. digiKam will ask you to donwload models at first start.
+These kind of tools requires extra data model files to run. digiKam will ask you to download models at first start.
 
 Rating and Ranking
 ~~~~~~~~~~~~~~~~~~
