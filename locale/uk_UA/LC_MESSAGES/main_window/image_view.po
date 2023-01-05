@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 00:45+0000\n"
-"PO-Revision-Date: 2023-01-01 10:58+0200\n"
+"POT-Creation-Date: 2023-01-04 00:40+0000\n"
+"PO-Revision-Date: 2023-01-04 20:51+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -108,7 +108,7 @@ msgstr ""
 
 #: ../../main_window/image_view.rst:52
 msgid "Viewing an image"
-msgstr ""
+msgstr "Перегляд зображення"
 
 #: ../../main_window/image_view.rst:56
 msgid ""
@@ -134,6 +134,10 @@ msgid ""
 "entry) can be relocated on left, right, or bottom side. An anchor on the "
 "left side of thumb bar allows to move it with the mouse at the wanted place."
 msgstr ""
+"Панель мініатюр, яку розташовано у верхній частині полотна (необов'язкове –"
+" див. пункт меню «Параметри»), можна пересунути у ліву, праву або нижню"
+" частину вікна. За допомогою прив'язки у лівій частині панелі мініатюр можна"
+" пересунути панель за допомогою миші у бажане місце."
 
 #: ../../main_window/image_view.rst:68
 msgid ""
@@ -178,24 +182,31 @@ msgid ""
 msgstr ""
 
 #: ../../main_window/image_view.rst:80
+#| msgid ""
+#| "Note that there can be a problem with meta-data embedded in photographs "
+#| "when they are edited by other image manipulation applications. Some "
+#| "applications do not retain the photograph's meta-data when you save a "
+#| "modified image. This means that if you modify a photograph using one of "
+#| "these programs you will lose information such as orientation, aperture "
+#| "etc. that are stored in the EXIF, IPTC, and XMP tags."
 msgid ""
 "Note that there can be a problem with meta-data embedded in photographs when "
 "they are edited by other image manipulation applications. Some applications "
 "do not retain the photograph's meta-data when you save a modified image. "
 "This means that if you modify a photograph using one of these programs you "
 "will lose information such as orientation, aperture etc. that are stored in "
-"the EXIF, IPTC, and XMP tags."
+"the Exif, IPTC, and XMP tags."
 msgstr ""
 "Зауважте, що, якщо ви виконуватимете редагування у інших програмах для "
 "роботи з зображеннями, може виникнути проблема з метаданими, вбудованими до "
 "файла фотографії. У деяких з програм під час збереження зміненої фотографії "
 "метадані відкидаються. Це означає, що, якщо ви будете змінювати фотографію у "
 "такій програмі, ви втратите дані щодо орієнтації, апертури тощо, як було "
-"збережено у мітках EXIF, IPTC та XMP."
+"збережено у мітках Exif, IPTC та XMP."
 
 #: ../../main_window/image_view.rst:83
 msgid "Lossless Image Rotation"
-msgstr ""
+msgstr "Обертання зображень без втрати якості"
 
 #: ../../main_window/image_view.rst:87
 msgid ""
@@ -206,6 +217,14 @@ msgid ""
 "picture as JPEG. The rotation methods described here preserve the original "
 "quality of the photograph also in JPEG - Files."
 msgstr ""
+"Існує відмінність між обертанням фотографій у одній з областей перегляду"
+" digiKam"
+" і у редакторі зображень. У редакторі зображень використано інший "
+"спосіб обертання зображень. Можливо, ви навіть не помітите відмінностей, але "
+"за використання методу обертання редактора зображень можлива втрата якості "
+"фотографії, збереженої у форматі JPEG. Описані у цьому підручнику способи "
+"обертання засновані на алгоритмі, використання якого не змінює рівня якості "
+"початкової фотографії навіть у файлах JPEG."
 
 #: ../../main_window/image_view.rst:89
 msgid ""
@@ -214,14 +233,20 @@ msgid ""
 "preview or to click with the right mouse button for the context menu and "
 "select **Rotate** and then pick the direction of rotation needed."
 msgstr ""
+"У digiKam передбачено два способи надання вашим фотографіями належної "
+"орієнтації. Найпростішим способом є натискання кнопок обертання на мініатюрі "
+"або панелі області попереднього перегляду або наведення вказівника миші на "
+"зображення, клацання правою кнопкою миші і вибір пункту контекстного меню "
+"**Обернути** з наступним визначенням точного значення кута "
+"повороту."
 
 #: ../../main_window/image_view.rst:91
 msgid ""
 "The second method is to select :menuselection:`Item --> Auto Rotate/Flip "
-"Using EXIF Information` from the menu bar. Most digital cameras have an "
+"Using Exif Information` from the menu bar. Most digital cameras have an "
 "orientation sensor. This sensor can detect how you hold the camera while "
 "taking an image. It stores this orientation information inside the image. "
-"This meta data is stored in an embedded meta-data section called EXIF. The "
+"This meta data is stored in an embedded meta-data section called Exif. The "
 "cameras could rotate the image themselves right away, but they have limited "
 "processing power, so they leave this job to an application like digiKam. If "
 "the camera is storing the orientation, then digiKam can use it to "
@@ -233,7 +258,7 @@ msgstr ""
 #: ../../main_window/image_view.rst:93
 msgid ""
 "The photograph is rotated without loss of quality and the orientation "
-"information is set to normal, so that other EXIF-aware applications will "
+"information is set to normal, so that other Exif-aware applications will "
 "handle it correctly. The :ref:`Import Tool <advanced_import>` can perform "
 "this operation automatically when it uploads the photographs from your "
 "camera which will ensure that your photographs are always the right way up. "
@@ -243,7 +268,7 @@ msgstr ""
 
 #: ../../main_window/image_view.rst:96
 msgid "Renaming a Photograph"
-msgstr ""
+msgstr "Перейменування фотографій"
 
 #: ../../main_window/image_view.rst:98
 msgid ""
@@ -269,7 +294,7 @@ msgstr ""
 
 #: ../../main_window/image_view.rst:109
 msgid "Deleting a Photograph"
-msgstr ""
+msgstr "Вилучення фотографії"
 
 #: ../../main_window/image_view.rst:111
 msgid ""
@@ -280,7 +305,7 @@ msgstr ""
 
 #: ../../main_window/image_view.rst:113
 msgid "Deleting works from anywhere in any digiKam window."
-msgstr ""
+msgstr "Вилучення працює з будь-якого з елементів будь-якого з вікон digiKam."
 
 #: ../../main_window/image_view.rst:115
 msgid ""
@@ -294,7 +319,7 @@ msgstr ""
 
 #: ../../main_window/image_view.rst:124
 msgid "Grouping Photographs"
-msgstr ""
+msgstr "Групування фотографій"
 
 #: ../../main_window/image_view.rst:126
 msgid ""
@@ -303,6 +328,11 @@ msgid ""
 "the image area. This function is available through the context menu on a "
 "selection of items (more than one item selected)."
 msgstr ""
+"Групування записів є дуже зручним способом упорядковування фотографій і/або "
+"відео, які пов’язано між собою, та коригування способу показу записів у "
+"області зображень. Скористатися цією функціональною можливістю можна за "
+"допомогою контекстного меню позначеної групи записів (слід позначити "
+"декілька записів у списку)."
 
 #: ../../main_window/image_view.rst:132
 msgid "The digiKam Icon-View Grouped Items Options From Context Menu"
@@ -315,6 +345,12 @@ msgid ""
 "ignored) or by file name. Note that the latter will put items with the same "
 "name but different file types into one group. Use case see further below!"
 msgstr ""
+"Додати усі позначені запис до однієї групи можна за допомогою пункту"
+" **Згрупувати позначені тут**. Ви також можете створити "
+"декілька груп за часом (секунди до уваги не братимуться) або назвою файлів. "
+"Зауважте, що у випадку групування за назвою до груп буде об’єднано файли з "
+"однаковими назвами, але різними типами. Нижче наведено приклад використання "
+"такого групування."
 
 #: ../../main_window/image_view.rst:140
 msgid "The digiKam Icon-View Grouped Mode From Icon-View"
@@ -347,6 +383,10 @@ msgid ""
 "change depending on whether you use it on a selection of still un-grouped "
 "items, on a group or on single items of a group."
 msgstr ""
+"За допомогою останньої групи у контекстному меню ви можете вилучити окремі "
+"записи з групи або скасувати групування. Вміст меню залежатиме від того, "
+"використовуватимете ви його для позначених записів, які ще не належать до "
+"жодної групи, чи для окремих записів у групі."
 
 #: ../../main_window/image_view.rst:152
 msgid ""
@@ -383,3 +423,7 @@ msgid ""
 "Images** in the View menu. That function doesn't form permanent groups of "
 "items, it only organizes the way icons are displayed in the Image Area."
 msgstr ""
+"Описане у цьому розділі щодо групування не стосується пункту "
+"**Групувати зображення** у меню **Перегляд**. Ця функціональна можливість не"
+" формує сталі групи записів, її "
+"призначено лише для упорядковування мініатюр, показаних у області зображень."
