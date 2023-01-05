@@ -84,7 +84,7 @@ These settings allows to customize the metadata contents displayed in Exif, Make
 ExifTool Settings
 -----------------
 
-ExifTool is a backend engine that digiKam can use to process operations on metadata, as wiew, read, and write. This panel only show the detection of the ExifTool binary program, and the supported formats with the respective read and write features.
+ExifTool is a backend engine that digiKam can use to process operations on metadata, as view, read, and write. This panel only show the detection of the ExifTool binary program, and the supported formats with the respective read and write features.
 
 .. figure:: images/setup_metadata_exiftool.webp
     :alt:
@@ -94,7 +94,7 @@ ExifTool is a backend engine that digiKam can use to process operations on metad
 
 .. note::
 
-    To remplace the Exiv2 backend by ExifTool with all read and write metadata operations, see the :ref:`Metadata Behavior <metadata_behavior>` section of this manual.
+    To replace the Exiv2 backend by ExifTool with all read and write metadata operations, see the :ref:`Metadata Behavior <metadata_behavior>` section of this manual.
 
 .. _metadata_advanced:
 
@@ -120,7 +120,7 @@ Advanced Settings
 
 The **Advanced** tab allows you to manage namespaces used by digiKam to store and retrieve tags, ratings and comments. This functionality is often used by advanced users to synchronize metadata between different software. Please leave the default settings if you are not sure what to do here.
 
-The categories that you can manages with these adavanced settings are:
+The categories that you can manages with these advanced settings are:
 
     - **Caption**: all languages-alternative comments (supported by XMP only), else the simple comments values (Exif and IPTC).
     - **Color Label**: the color labels properties to apply on items in your workflow.
@@ -136,12 +136,12 @@ For each category you can set the read and write behavior in metadata. The defau
 
     The digiKam Advanced Metadata Settings For the **Caption** Category
 
-On this example, the top **Caption* entry in the list is **Xmp.dc.description**, and it will be read by digiKam first. If it contains a valid value it will be used, otherwise the next entry named **Xmp.exif.UserComment**, etc. The entries list priority is hight on the top and low on the bottom. The entry in the list are used only if item is enabled with the checkbox preceding the name.
+On this example, the top **Caption* entry in the list is **Xmp.dc.description**, and it will be read by digiKam first. If it contains a valid value it will be used, otherwise the next entry named **Xmp.exif.UserComment**, etc. The entries list priority is high on the top and low on the bottom. The entry in the list are used only if item is enabled with the checkbox preceding the name.
 
 With the buttons on the right side, you can customize the list:
 
     - **Add**: allows to add a new entry in the tags list.
-    - **Edit**: allows to modifiy the current select entry in the list.
+    - **Edit**: allows to modify the current select entry in the list.
     - **Delete**: allows to remove the current select entry in the list.
     - **Move up**: allows to move the current select entry in the list to a higher priority.
     - **Move Down**: allows to move the current select entry in the list to a lower priority.
