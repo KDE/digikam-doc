@@ -102,7 +102,7 @@ White Balance
 
 **Exposure Correction (E.V)**: Turn on the exposure correction before interpolation.
 
-**Correct false colors in highlights**: If enabled, images with overblown channels are processed much more accurately, without 'pink clouds' (and blue highlights under tungsten lamps).
+**Correct False Colors In Highlights**: If enabled, images with overblown channels are processed much more accurately, without 'pink clouds' (and blue highlights under tungsten lamps).
 
 **Auto Brightness**: If disable, use a fixed white level and ignore the image histogram to adjust brightness.
 
@@ -111,4 +111,4 @@ Corrections
 
 **Noise Reduction**: While demosaicing your image you can additionally ask for noise reduction (at a slight speed penalty). This option applies a noise reduction algorithm while the image still is in CIE Lab color space. Because the noise is only applied to the Luminosity layer (the "L" of the Lab), it should not blur your image as traditional noise reduction algorithms do in RGB mode. So, if you converted an image from RAW and it appears noisy, rather than applying a denoiser, go back and re-convert with this option enabled. The defaults are: Threshold = 100. Higher values will increase the smoothing, lower will decrease smoothing.
 
-**Enable chromatic aberration (CA) correction**: If you know the CA of your lenses you can set the red and blue correction values here. This is certainly the optimal method for CA correction as it is done during RAW conversion.
+**Enable Chromatic Aberration (CA) Correction**: If you know the CA of your lenses you can set the red and blue correction values here. This is certainly the optimal method for CA correction as it is done during RAW conversion.
