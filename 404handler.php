@@ -8,26 +8,36 @@
 //
 // SPDX-License-Identifier: MIT
 
-// Our list of supported languages
+// NOTE: enable supported languages.
+//       English is always enabled
+//       Other languages must be listed in locale/ sub-directory from root directory of this git repository.
+//       All changes from this list must be also applied to the docs-digikam-org section from the JSON config file in binary-factory-tooling repository
+//       https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json
+//       all_langs list in ressources/static/js/version_switch.js file from this repository needs to be also updated.
+
 $supported_languages = array(
-    "en"
-//    ,"ca"
-//    ,"de"
-//    ,"fr"
-//    ,"it"
-//    ,"nl"
-//    ,"es"
-//    ,"tr"
-//    ,"da"
-//    ,"pt_BR"
-//    ,"ru"
-//    ,"sk"
-//    ,"sv"
-//    ,"uk_UA"
-//    ,"zh_CN"
-//    ,"zh_TW"
-//    ,"ja"
-//    ,"ko"
+    "en",
+    "ca",
+    "cs",
+    "de",
+    "fr",
+    "it",
+    "nl",
+    "es",
+    "tr",
+    "da",
+    "pl",
+    "pt_BR",
+    "pt_PT",
+    "ru",
+    "sk",
+    "sl",
+    "sv",
+    "uk_UA",
+    "zh_CN",
+    "zh_TW",
+    "ja",
+    "ko"
 );
 
 // List of page redirect rules

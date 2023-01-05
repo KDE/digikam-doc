@@ -400,15 +400,16 @@ if you want to contribute to the internationalization.
 The template files to translate for this documentation must be located on [this i10n Subversion repository](https://websvn.kde.org/trunk/l10n-kf5/templates/messages/digikam-doc/).
 All POT file-names starts with **docs_digikam_org** prefix.
 
+The status of the digiKam documentation translations is [available here](https://l10n.kde.org/stats/gui/trunk-kf5/package/digikam-doc/).
+
 #### How to Add a New Target Language
 
-The status of the digiKam documentation translations is [available here](https://l10n.kde.org/stats/gui/trunk-kf5/package/digikam-doc/).
-When a translation is complete, corresponding languages can be listed as suitable in documentation web-site, two files needs to be patched:
+The list of current enabled translation languages are in the [locale/](locale) sub-directory.
+Corresponding languages must be listed as suitable in documentation web-site following this list. For that, 3 files needs to be patched:
 
-- The section named **docs-digikam-org** from the [Json infrastrusture configuration](https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json) dedicated to rule translations.
-- The **alllang** list from the [JavaScript file](resources/static/js/version_switch.js) located in this repository.
-
-Note: in the [locale/](locale) sub-directory, you will see the list of current translated languages for the documentation. This list and the languages used in the Json and Javascript files must be the same.
+- The **alllang** list from the [version_switch JavaScript file](resources/static/js/version_switch.js) located in this repository.
+- The **supported_languages** list from the [404handler PHP file](404handler.php) located in this repository.
+- The section named **docs-digikam-org** from the [custom-jobs Json infrastrusture configuration](https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json) dedicated to rule translations.
 
 ## TODO List
 

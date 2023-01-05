@@ -10,7 +10,7 @@
 //       Other languages must be listed in locale/ sub-directory from root directory of this git repository.
 //       All changes from this list must be also applied to the docs-digikam-org section from the JSON config file in binary-factory-tooling repository
 //       https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json
-
+//       supporte_languages array in 404handler.php file from this repository needs to be also updated.
 var all_langs = {
     "en": "English",
     //"ar": "&#1575;&#1614;&#1604;&#1618;&#1593;&#1614;&#1585;&#1614;&#1576;&#1616;&#1610;&#1614;&#1617;&#1577;&#1615;",
@@ -28,7 +28,8 @@ var all_langs = {
     //"nb": "Norsk Bokm&#x00E5;l",
     "nl": "‎Nederlands",
     //"pl": "Polski",
-    //"pt_BR": "Portugu&ecirc;s",
+    //"pt_BR": "Portugu&ecirc;s (Brazil)",
+    "pt_PT": "Portugu&ecirc;s",
     //"ru": "&#x3A1;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;",
     //"sk": "Sloven&#269;ina",
     //"sl": "Sloven&#353;&#269;ina",
