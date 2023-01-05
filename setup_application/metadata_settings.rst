@@ -144,13 +144,13 @@ With the buttons on the right side, you can customize the list:
     - **Edit**: allows to modify the current select entry in the list.
     - **Delete**: allows to remove the current select entry in the list.
     - **Move up**: allows to move the current select entry in the list to a higher priority.
-    - **Move Down**: allows to move the current select entry in the list to a lower priority.
+    - **Move Down**: allows to move the current selected entry in the list to a lower priority.
     - **Revert Changes**: allows to revert last changes done on the list.
     - **Revert To Default**: allows to reset the current list to the default values.
 
 .. important::
 
-    We recommend to always put XMP tags to the top priority on this lists, as XMP has better features than IPC and Exif.
+    We recommend to always put XMP tags to the top priority on this list, as XMP has better features than IPC and Exif.
 
 .. note::
 

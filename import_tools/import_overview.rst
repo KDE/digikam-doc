@@ -16,7 +16,6 @@ Overview
 .. contents::
 
 To be able to use your digital camera with digiKam, connect the camera to your computer, switch the camera to the image display mode and turn it on. See your camera's user manual if you need more information.
-Introduction to the Import Interface
 
 The Import Interface helps you to get photographs into a digiKam Album, whether it is directly from your camera or a scanner, from a USB mass storage device, via a card reader or from a local or remote folder. You can access the Import Interface by
 
