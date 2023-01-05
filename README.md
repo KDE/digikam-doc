@@ -304,8 +304,11 @@ When all contributor tasks are done, a Merge Request must be send to the origina
 - Contributor must adjust, comment, or rebase changes in the forked repository accordingly with coordinator feedback.
 - When all is ready, coordinator merge changes from the forked repository to the original repository.
 
-Later, a contributor can re-use the forked repository to rebase contents with original. The forked repository
+Later, a contributor can re-use the forked repository to rebase contents with original repository. The forked repository
 will be up-to-date and the contributor can create a new Merge Request with new changes to integrate in the original repository.
+
+To have the forked repository sync with the original upstream, uses this git command in your fork: `git fetch upstream`
+And to rebase your fork just call this git command: `git merge upstream/master`
 
 This git workflow is well [documented in KDE project](https://community.kde.org/Infrastructure/Git/Simple_Workflow).
 
