@@ -13,9 +13,9 @@
 People View
 -----------
 
-As long as you are not just taking pictures from machines or stars or something like that, Face Management might be an interesting feature for you (even with a machine there might be a human being operating it). In digiKam it consists of two tasks: Face Detection and Face Recognition.
+As long as you are not just taking pictures from machines or stars or something like that, Face Management might be an interesting feature for you (even with a machine there might be a human being operating it). In digiKam it consists of two tasks: **Face Detection** and **Face Recognition**.
 
-The face management workflow allows you to Detect and Recognize people in your photographs. **Face Detection** allows digiKam to detect faces in your images. This step is required before being able to recognize faces. **Face Recognition** will automatically recognize people in your images.
+The face management workflow allows you to detect and recognize people in your photographs. Both features use a deep learning neural network in background. **Face Detection** allows digiKam to detect faces in your images. This step is required before being able to recognize faces. **Face Recognition** will automatically recognize people in your images, but it needs few items already trained for a same face name to be able to recognize new ones.
 
 .. important::
 
