@@ -222,6 +222,16 @@ In case of unsatisfying results it might be helpful to use **Clear and rebuild a
 
 To Complete the Recognition Process, you will need to **Confirm** the new recognized faces. By applying the properties, new faces will be moved to the face tag definitively.
 
+The results of facial recognition appear in the form of unconfirmed results. These results will show up in the **Unconfirmed** tag, as well as in the tag of the person suggested for each face. Hovering over unconfirmed faces will display a few options:
+
+    - The **Confirm** button allows you to confirm the suggestion. This would assign the suggested name to the face.
+    - Use the **Reject** button, if the suggestion is incorrect. This would move the face back to **Unknown**.
+    - Use the **Delete** button, if the suggestion is not a face. This will remove the face region from the database.
+    
+About the face categorization and sorting, faces will appear by default categorized based on their name. You may change this behaviour, by going to :menuselection:`View -> Separate Items`. Note that using a different categorization order will lead to **Confirmed** and **Unconfirmed** faces appearing mixed with one another. To change this behaviour you may modify the sorting order within each category by going to :menuselection:`View -> Sort Items -> By Face Type`.
+
+To improve results of face recognition, apart from using the settings mentioned previously, face results may also be improved by rebuilding the training data. This may be done through :menuselection:`Tools -> Maintenance -> Detect And Recognize Faces -> Clear And Rebuild All Training Data`.
+
 .. _manual_face_tagging:
 
 Manual Face tagging
