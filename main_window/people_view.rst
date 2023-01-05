@@ -266,7 +266,7 @@ To tag people manually, you can do it by by different way:
         :alt:
         :align: center
 
-    Screencast of Manual Faces Assignment Using Drag And Drop
+        Screencast of Manual Faces Assignment Using Drag And Drop
 
 - From keyboard shorcut: you can assign a magic key to a face-tag and quickly uses the keyboard to switch on the face-tag name to selected items.
 
@@ -279,11 +279,10 @@ To tag people manually, you can do it by by different way:
 - From The **Unknown** tag from **People** view: to manually identify a face, hover on any **Unknown** face form icon-view and use the text box to give it a name. This will lead to the creation of a face tag in case a person of that name doesn't exist already. For best results identify at least 4 faces for each person you want the scan to recognize.
 
     .. figure:: videos/mainwindow_face_tagging.gif
-        :width: 600px
         :alt:
         :align: center
 
-    Screencast of Manual Face Tagging From Icon-View
+        Screencast of Manual Face Tagging From Icon-View
 
 In case there's a face you don't wish to be recognized, you can mark it as ignored. This leads to the creation of a new **Ignored** tag, you can later unmark the face if needed.
 
