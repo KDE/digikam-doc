@@ -15,7 +15,7 @@ KML Export Tool
 
 .. contents::
 
-`KML <https://en.wikipedia.org/wiki/Keyhole_Markup_Language>`_ for **Keyhole Markup Language** is an XML notation for expressing geographic annotation and visualization within two-dimensional maps and three-dimensional Earth browsers. KML was developed for use with Google Earth but Open Source Applications can also use this kind of container. KML is an international standard from the Open Geospatial Consortium.
+`KML <https://en.wikipedia.org/wiki/Keyhole_Markup_Language>`_ for **Keyhole Markup Language** is an XML notation for expressing geographic annotation and visualization within two-dimensional maps and three-dimensional Earth browsers. KML was developed for use with Google Earth but Open Source Applications can also use this kind of container. KML is an open standard from the `Open Geospatial Consortium <https://en.wikipedia.org/wiki/Open_Geospatial_Consortium>`_.
 
 .. figure:: images/geoeditor_kml_export.webp
     :alt:
@@ -59,4 +59,4 @@ Press **Generate KML File** button to render the container. If errors occurs, a 
     :alt:
     :align: center
 
-    The `Open Source Marble Application <https://marble.kde.org/>`_ Importing A KML Container Generated from digiKam
+    The `Open Source Marble Application <https://marble.kde.org/>`_ Importing A KML Container Generated From digiKam
