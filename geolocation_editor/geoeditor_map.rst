@@ -34,7 +34,7 @@ The editor has two methods to mark the pictures with coordinates:
 
     - Semi-automatic coordinate attribution to single pictures, accessible via the **Details** tab on the Right Sidebar.
 
-    - Batch correlation of GPS tracking data with a series of images you will find in the :ref:`GPS Correlator <gps_correlator>` tab. 
+    - Batch correlation of GPS tracking data with a series of images you will find in the :ref:`GPS Correlator <gps_correlator>` tab.
 
 Furthermore the Right Sidebar offers three more tools:
 
@@ -81,11 +81,13 @@ Right under the map you find a row of buttons. I shall use the tooltip texts as 
 
     .. note::
 
-        **group** in this context here has nothing to do with grouped images as described in chapter 2 of the digiKam Handbook. Here the term refers to images which are very close to each other on the map (depending on the zoom factor) or have exactly the same geographic position.
+        **Group** in this context here has nothing to do with grouped images as described in chapter 2 of the digiKam Handbook. Here the term refers to images which are very close to each other on the map (depending on the zoom factor) or have exactly the same geographic position.
 
     - The Select-images button toggles the selection of an image or a group of images in the list of images right below the buttons once you click on it on the map. The selection status of all other images in the list remain unchanged. Be aware of the fact that there is a kind of two-stage selection! If you click on a thumbnail or marker on the map the selected image(s) in the list of images will become a light blue background. If you click on it in the list the background will become a darker blue and if there where more than one image with light blue background before the others will become un-selected. Only clicking on an image in the list will let its preview appear to the right of the list.
 
-    - The Display-bookmarked-positions-on-the-map button is not working at the time of writing because the whole bookmark issue needs to be reorganized. This also affects the Bookmarks --> Edit Bookmarks... item in the context menu on the list of images below the map and the Add Bookmark item in the context menu on the map. 
+    .. _geoeditor_bookmarks
+
+    - The Display-bookmarked-positions-on-the-map button is not working at the time of writing because the whole bookmark issue needs to be reorganized. This also affects the Bookmarks --> Edit Bookmarks... item in the context menu on the list of images below the map and the Add Bookmark item in the context menu on the map.
 
     .. warning::
 
