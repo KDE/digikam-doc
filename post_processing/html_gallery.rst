@@ -23,7 +23,7 @@ This powerful tool can export your Albums into a HTML compliant web image galler
 
 .. figure:: images/html_gallery_page2.webp
 
-Launching the tool from within digiKam displays a view to select the contents to export: from current items selection, or from a list of albums. The Albums selection mode allows you to select items from Albums that you want to export to HTML. Just check the respective Albums displayed with hierarchical nesting. On the next tree tabs Tags, Searches, and Labels you can refine your selection using tags, labels, or previous search results in digiKam. 
+Launching the tool from within digiKam displays a view to select the contents to export: from current items selection, or from a list of albums. The Albums selection mode allows you to select items from Albums that you want to export to HTML. Just check the respective Albums displayed with hierarchical nesting. On the next three tabs Tags, Searches, and Labels you can refine your selection using tags, labels, or previous search results in digiKam. 
 
 .. figure:: images/html_gallery_page3.webp
 
@@ -61,4 +61,4 @@ A progress dialog giving a feedback indicate to user. Press Cancel button during
 
 .. figure:: images/html_gallery_page8.webp
 
-Finaly, the HTML gallery generated is displayed in a browser.
+Finally, the HTML gallery generated is displayed in a browser.

@@ -120,7 +120,7 @@ Advanced Settings
 
 The **Advanced** tab allows you to manage namespaces used by digiKam to store and retrieve tags, ratings and comments. This functionality is often used by advanced users to synchronize metadata between different software. Please leave the default settings if you are not sure what to do here.
 
-The categories that you can manages with these advanced settings are:
+The categories that you can manage with these advanced settings are:
 
     - **Caption**: all languages-alternative comments (supported by XMP only), else the simple comments values (Exif and IPTC).
     - **Color Label**: the color labels properties to apply on items in your workflow.

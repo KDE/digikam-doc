@@ -24,11 +24,11 @@ Minimum system requirements
 
 - **Operating System**: 64-bit Windows 7 or newer, Apple macOS 10.15 (Catalina) or newer and on M1, 64-bit Linux. Details see below.
 
-- **CPU**: x86 Intel or AMD; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for depp-learning uses as with face detection and image quality sorting. Details see below.
+- **CPU**: x86 Intel or AMD; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for deep-learning uses as with face detection and image quality sorting. Details see below.
 
 - **GPU**: OpenGL 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible DirectX 9 or 11 drivers.
 
-- **RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for depp-learning uses as with face detection and image quality sorting. Details see below.
+- **RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for deep-learning uses as with face detection and image quality sorting. Details see below.
 
 .. note::
 
