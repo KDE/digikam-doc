@@ -1,5 +1,5 @@
 .. meta::
-   :description: Using the digiKam Image Editor
+   :description: Using digiKam to Edit Your Photographs
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, image editor
 
 .. metadata-placeholder

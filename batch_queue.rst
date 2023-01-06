@@ -1,5 +1,5 @@
 .. meta::
-   :description: Using the digiKam Batch queue manager
+   :description: Using the digiKam Batch Queue Manager To Process Items in Parallel
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, batch, queue, manager
 
 .. metadata-placeholder

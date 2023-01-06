@@ -1,5 +1,5 @@
 .. meta::
-   :description: Using The digiKam Import Tools
+   :description: How to Import New Items in Your Collections With digiKam
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, import, camera, scanner
 
 .. metadata-placeholder

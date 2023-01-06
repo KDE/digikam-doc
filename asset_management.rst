@@ -1,5 +1,5 @@
 .. meta::
-   :description: Using the Digital Asset Management
+   :description: Learn The Basis to Handle Safety Large Digital Photography Collections In Time
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, asset, management
 
 .. metadata-placeholder

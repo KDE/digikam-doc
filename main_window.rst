@@ -1,6 +1,6 @@
 .. meta::
-   :description: Using the digiKam main window
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, main window
+   :description: Using the digiKam Main Window to Show Collection Contents
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, main window, search, tags, labels, maps, date, timeline, similarity, face, management
 
 .. metadata-placeholder
 

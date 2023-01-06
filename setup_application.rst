@@ -1,5 +1,5 @@
 .. meta::
-   :description: Using the digiKam Setup Application
+   :description: Using the digiKam Configuration Panel to Customize Application
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, setup
 
 .. metadata-placeholder

@@ -1,5 +1,5 @@
 .. meta::
-   :description: Using the digiKam Light Table
+   :description: Using the digiKam Light Table to Compare Items Side by Side
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, light, table
 
 .. metadata-placeholder

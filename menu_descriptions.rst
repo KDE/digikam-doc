@@ -1,5 +1,5 @@
 .. meta::
-   :description: digiKam Menu Description
+   :description: Learn Details About All digiKam Menus
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, menu
 
 .. metadata-placeholder

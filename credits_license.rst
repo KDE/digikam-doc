@@ -1,5 +1,5 @@
 .. meta::
-   :description: Credits and License
+   :description: Copyrights And Notices About This document
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, credits, license, authors, copyright
 
 .. metadata-placeholder

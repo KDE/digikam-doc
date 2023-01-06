@@ -1,5 +1,5 @@
 .. meta::
-   :description: Using The digiKam Export Tools
+   :description: Export Items From Your Collections To External Media
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, export, flickr
 
 .. metadata-placeholder

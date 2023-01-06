@@ -26,6 +26,8 @@ Getting Started
     :alt:
     :target: getting_started.html
 
+    Do Your First Steps in digiKam Photo Management Program
+
 .. container:: toctile
 
     .. container:: tile no-descr
@@ -58,6 +60,8 @@ Supported Materials
     :alt:
     :target: supported_materials.html
 
+    File Formats and Devices Supported in digiKam
+
 .. container:: toctile
 
     .. container:: tile no-descr
@@ -85,6 +89,8 @@ Main Window
     :width: 300px
     :alt:
     :target: main_window.html
+
+    Using the digiKam Main Window to Show Collection Contents
 
 .. container:: toctile
 
@@ -133,6 +139,8 @@ Right Sidebar
     :width: 300px
     :alt:
     :target: right_sidebar.html
+
+    Using the digiKam Right Sidebar to Play with Item Properties
 
 .. container:: toctile
 
@@ -186,6 +194,8 @@ Light Table
     :alt:
     :target: light_table.html
 
+    Using the digiKam Light Table to Compare Items Side by Side
+
 .. container:: toctile
 
     .. container:: tile no-descr
@@ -210,6 +220,8 @@ Batch Queue Manager
     :alt:
     :target: batch_queue.html
 
+    Using the digiKam Batch Queue Manager To Process Items in Parallel
+
 .. container:: toctile
 
     .. container:: tile no-descr
@@ -233,6 +245,8 @@ Digital Asset Management
     :width: 300px
     :alt:
     :target: asset_management.html
+
+    Learn The Basis to Handle Safety Large Digital Photography Collections In Time
 
 .. container:: toctile
 
@@ -270,6 +284,8 @@ Import Tools
     :alt:
     :target: import_tools.html
 
+    How to Import New Items in Your Collections With digiKam
+
 .. container:: toctile
 
     .. container:: tile no-descr
@@ -301,6 +317,8 @@ Setup Application
     :width: 300px
     :alt:
     :target: setup_application.html
+
+    Using the digiKam Configuration Panel to Customize Application
 
 .. container:: toctile
 
@@ -382,6 +400,8 @@ Image Editor
     :alt:
     :target: image_editor.html
 
+    Using digiKam to Edit and Improve Your Photographs
+
 .. container:: toctile
 
     .. container:: tile no-descr
@@ -434,6 +454,8 @@ Geolocation Editor
     :alt:
     :target: geolocation_editor.html
 
+    Edit Geolocation Information to Search And Visualize Items on a Map
+
 .. container:: toctile
 
     .. container:: tile no-descr
@@ -469,6 +491,8 @@ Maintenance Tools
     :width: 300px
     :alt:
     :target: maintenance_tools.html
+
+    Maintening and Optimize Data From Your Collections
 
 .. container:: toctile
 
@@ -526,6 +550,8 @@ Post Processing
     :alt:
     :target: post_processing.html
 
+    Post Process Items From Your Collections
+
 .. container:: toctile
 
     .. container:: tile no-descr
@@ -562,6 +588,8 @@ Export Tools
     :alt:
     :target: export_tools.html
 
+    Export Items From Your Collections To External Media
+
 .. container:: toctile
 
     .. container:: tile no-descr
@@ -581,6 +609,8 @@ Slideshow Tools
     :width: 300px
     :alt:
     :target: slideshow_tools.html
+
+    How to Uses Tools to Present Your Items
 
 .. container:: toctile
 
@@ -610,6 +640,8 @@ Menu Descriptions
     :alt:
     :target: menu_descriptions.html
 
+    Learn Details About All digiKam Menus
+
 .. container:: toctile
 
     .. container:: tile no-descr
@@ -633,6 +665,8 @@ Credits and License
     :width: 300px
     :alt:
     :target: credits_license.html
+
+    Copyrights and Notices About This Document
 
 .. container:: toctile
 

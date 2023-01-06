@@ -1,5 +1,5 @@
 .. meta::
-   :description: Using the digiKam Geolocation Editor
+   :description: Edit Geolocation Information to Search And Visualize Items on a Map
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, geolocation
 
 .. metadata-placeholder

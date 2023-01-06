@@ -1,5 +1,5 @@
 .. meta::
-   :description: Using the digiKam Right Sidebar
+   :description: Using the digiKam Right Sidebar to Play With Item Properties
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, sidebar
 
 .. metadata-placeholder
