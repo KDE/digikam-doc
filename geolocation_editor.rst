@@ -1,6 +1,6 @@
 .. meta::
    :description: Edit Geolocation Information to Search And Visualize Items on a Map
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, geolocation
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, geolocation, coordinates, map, search, reverse, geocoding, kml, export
 
 .. metadata-placeholder
 
@@ -26,3 +26,4 @@ This section explain how to use the digiKam geolocation editor.
    geolocation_editor/geoeditor_coordinates.rst
    geolocation_editor/geoeditor_reverse.rst
    geolocation_editor/geoeditor_search.rst
+   geolocation_editor/geoeditor_kmlexport.rst

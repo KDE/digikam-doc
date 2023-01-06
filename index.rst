@@ -478,6 +478,10 @@ Geolocation Editor
 
         :ref:`geoeditor_search`
 
+    .. container:: tile no-descr
+
+        :ref:`geoeditor_kmlexport`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

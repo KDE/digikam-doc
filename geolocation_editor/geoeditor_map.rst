@@ -85,7 +85,7 @@ Right under the map you find a row of buttons. I shall use the tooltip texts as 
 
     - The **Select Images** button toggles the selection of an image or a group of images in the list of images right below the buttons once you click on it on the map. The selection status of all other images in the list remain unchanged. Be aware of the fact that there is a kind of two-stage selection! If you click on a thumbnail or marker on the map the selected image(s) in the list of images will become a light blue background. If you click on it in the list the background will become a darker blue and if there where more than one image with light blue background before the others will become un-selected. Only clicking on an image in the list will let its preview appear to the right of the list.
 
-    - The **Display Bookmarked Positions On The Map** button can be used to display on the map the places already registered in the :ref:`Bookmarks Manager <_geoeditor_bookmarks>`.
+    - The **Display Bookmarked Positions On The Map** button can be used to display on the map the places already registered in the :ref:`Bookmarks Manager <geoeditor_bookmarks>`.
 
 From the context menu on the map only Copy Coordinates is of interest for geotagging. It copies the geographic coordinates at the cursor position to the clipboard. For all other menu items see Marble handbook.
 
