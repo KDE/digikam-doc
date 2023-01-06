@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-01 00:45+0000\n"
-"PO-Revision-Date: 2023-01-03 22:47+0200\n"
+"POT-Creation-Date: 2023-01-05 00:40+0000\n"
+"PO-Revision-Date: 2023-01-05 17:45+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -27,6 +27,8 @@ msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, JPEG, PNG, TIFF, PGF, RAW"
 msgstr ""
+"digiKam, документація, підручник користувача, керування фотографій,"
+" відкритий код, вільний, навчання, простий, JPEG, PNG, TIFF, PGF, RAW"
 
 #: ../../supported_materials/image_formats.rst:14
 msgid "Image Files"
@@ -48,6 +50,12 @@ msgid ""
 "way that those libraries have been compiled. On most distributions you will "
 "find that a wide range of image formats are viewable within digiKam."
 msgstr ""
+"Для роботи digiKam використовує декілька бібліотек і пакунків підтримки, "
+"які забезпечують завантаження і збереження зображень у різних форматах "
+"Перелік доступних форматів залежить від наявності цих бібліотек у вашій "
+"системі, а також, у певних випадках, від способу, у який було зібрано ці "
+"бібліотеки. У більшості дистрибутивів за допомогою digiKam ви зможете "
+"працювати з широким спектром форматів зображень."
 
 #: ../../supported_materials/image_formats.rst:23
 msgid ""
@@ -55,6 +63,9 @@ msgid ""
 "definitive list of all of the formats that will be available on your system. "
 "At the very least JPEG, PNG, and TIFF should be available."
 msgstr ""
+"Залежність від інших бібліотек призводить до неможливості отримання точного "
+"списку всіх форматів зображень, доступних у вашій системі. Доступними мають "
+"бути принаймні формати JPEG, PNG і TIFF."
 
 #: ../../supported_materials/image_formats.rst:25
 msgid ""
@@ -65,6 +76,13 @@ msgid ""
 "You can change the list of file extensions that digiKam will accept; see :"
 "ref:`this configuration section <mime_types_settings>` for more details."
 msgstr ""
+"digiKam показує лише ті файли, формат яких зрозумілий програмі. Визначення "
+"можливості показу відбувається шляхом порівняння суфіксів назв файлів зі "
+"списком наявних форматів. Якщо суфікс назви буде виявлено у списку digiKam,"
+" відповідне зображення буде показано у області перегляду "
+"зображень, якщо встановлено відповідну бібліотеку. Ви можете змінити список "
+"суфіксів файлів, які сприймаються digiKam, докладніше про це можна дізнатися"
+" з :ref:`розділу «Налаштування» <mime_types_settings>`."
 
 #: ../../supported_materials/image_formats.rst:27
 msgid ""
@@ -74,10 +92,16 @@ msgid ""
 "wikipedia.org/wiki/Image_file_formats>`_. digiKam supports both of these "
 "formats."
 msgstr ""
+"Майже всі цифрові фотокамери зберігають фотографії у одному з двох форматів: "
+"JPEG або RAW У багатьох фотоапаратах ви можете обирати, який з двох "
+"форматів ви бажаєте використовувати Повний опис цих форматів можна знайти у"
+" `Вікіпедії <ulink url=\"https://uk.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D1"
+"%84%D1%96%D1%87%D0%BD%D1%96_%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8\">`_."
+" У digiKam передбачено підтримку файлів у обох форматах."
 
 #: ../../supported_materials/image_formats.rst:30
 msgid "Still Image Compression"
-msgstr ""
+msgstr "Стискання статичних зображень"
 
 #: ../../supported_materials/image_formats.rst:32
 msgid ""
@@ -85,6 +109,10 @@ msgid ""
 "images. It is done through reducing redundancy of the image data in order to "
 "be able to store or transmit data in an efficient form."
 msgstr ""
+"Стикання зображень — це застосування схем стискання даних до цифрових "
+"зображень. Таке стискання відбувається шляхом зменшення надлишковості у "
+"даних зображення, метою стискання є зберігання і передавання даних у "
+"раціональнішій формі."
 
 #: ../../supported_materials/image_formats.rst:34
 msgid ""
@@ -98,6 +126,17 @@ msgid ""
 "reduction in file size. Lossy compression is good for image publishing on "
 "the Internet."
 msgstr ""
+"Стискання зображень може відбуватися як з втратами, так і без них. Методи "
+"стискання зображень без втрати якості завжди є бажанішими для зберігання "
+"необроблених зображень до застосування до них перетворень на зразок "
+"обрізання, зміни розмірів, виправлення кольорів тощо. Причиною цього є те, "
+"що методи стискання з втратою якості, особливо за використання високих "
+"ступенів стискання, призводять до появи артефактів (викривлення зображення). "
+"Методи стискання з втратою якості можна застосовувати до природних "
+"зображень, зокрема фотографій, у випадках, коли незначна (іноді просто "
+"непомітна) втрата якості є прийнятною для створення файлів меншого розміру. "
+"Чудовим застосуванням стискання з втратами є оприлюднення зображень у "
+"інтернеті."
 
 #: ../../supported_materials/image_formats.rst:37
 msgid "JPEG"
@@ -116,6 +155,18 @@ msgid ""
 "two or three choices equivalent to good, better, best, although the names "
 "vary."
 msgstr ""
+"JPEG — є форматом стискання, у якому зменшення розмірів файла зображення "
+"досягається деякою втратою якості зображення. Фактично, у цьому форматі за "
+"типових налаштувань зберігають зображення більшість фотоапаратів. Зображення "
+"JPEG зберігається з використанням стискання з втратою якості, ви можете "
+"змінювати рівень стискання. Таким чином, ви можете обирати між низьким "
+"рівнем стискання з високою якістю зображення і високим рівнем стискання з "
+"гіршою якістю. Єдиною причиною вибору вищого рівня стискання є менші розміри "
+"отриманих файлів, отже ви зможете зберігати більше зображень, подібні "
+"зображення простіше надсилати електронною поштою і оприлюднювати у "
+"інтернеті. У більшості фотоапаратів ви можете обирати між двома або трьома "
+"варіантами: гарна якість (good), краща якість (better) і найкраща якість "
+"(best), хоча назви варіантів можуть бути і іншими."
 
 #: ../../supported_materials/image_formats.rst:41
 msgid ""
@@ -123,6 +174,10 @@ msgid ""
 "with better (smoother) results compared to JPEG. The 2000 version has the "
 "option of being lossless if so specified in the settings."
 msgstr ""
+"Програма підтримує і файли у форматі JPEG 2000. Використання цього формату "
+"дає кращі (плавніші) зображення за однакового рівня стискання порівняно з "
+"JPEG. Версія 2000 може створювати і зображення без втрати якості, якщо "
+"вказано відповідні параметри."
 
 #: ../../supported_materials/image_formats.rst:44
 msgid "TIFF"
@@ -139,6 +194,15 @@ msgid ""
 "many people that there are now 50 or more flavors and not all are "
 "recognizable by programs."
 msgstr ""
+"Формат файлів зображень TIFF є широковизнаним і повсюдно підтримуваним "
+"форматом. Зазвичай, TIFF може бути збережено фотоапаратом у нестиснутій "
+"формі або з використанням алгоритму стискання без втрат (Deflate). Формат "
+"зберігання забезпечує високу якість зображень, але ціною значного збільшення "
+"розміру файлів. Деякі фотоапарати надають вам змогу зберігати зображення у "
+"цьому форматі, формат є популярним через те, що стискання відбувається без "
+"втрат. Проблеми з цим форматом полягають у тому, що його багато разів "
+"змінювали різні люди і зараз існує 50 або більше його різновидів, не всі з "
+"яких розпізнаються програмами."
 
 #: ../../supported_materials/image_formats.rst:49
 msgid "PNG"
@@ -156,6 +220,18 @@ msgid ""
 "can convert a batch of images from any supported format to PNG (and other "
 "formats) in one step."
 msgstr ""
+"PNG — формат зображень, який було розроблено для заміни багатьох старіших, "
+"широко використовуваних у 1990-их роках форматів файлів зображень. Цей "
+"формат призначено, як і формат TIFF, для зберігання даних без втрат, але "
+"файли у цьому форматі набагато компактніші, а отже економлять місце на "
+"диску. Хоча ваш фотоапарат може і не підтримувати PNG, дехто з користувачів "
+"надає перевагу перетворенню власних фотографій на файли зображень у форматі "
+"PNG після отримання цих зображень на комп’ютер. На відміну від зображень у "
+"форматі JPEG, зображення PNG не втрачають якості після кожного наступного "
+"перекодування після зміни. digiKam повністю підтримує зображення PNG, а "
+"засіб пакетної обробки зображень може здійснити пакетне перетворення "
+"зображень з будь-якого з підтримуваних форматів до PNG (або інших форматів) "
+"за один крок."
 
 #: ../../supported_materials/image_formats.rst:53
 msgid ""
@@ -169,6 +245,17 @@ msgid ""
 "format to archive your photographs. For more information about the PNG "
 "format `see the PNG homepage <https://www.libpng.org/pub/png/>`_."
 msgstr ""
+"PNG — придатний до розширення формат файлів для машинонезалежного зберігання "
+"растрових зображень без втрат і з високим рівнем стискання PNG є вільним "
+"від патентних обмежень замінником GIF, а також у багатьох випадках може "
+"замінити і TIFF PNG розроблено придатним для використання у програмах для "
+"перегляду зображень у мережі, зокрема у інтернеті, отже цей формат придатний "
+"для потокового передавання зображення з його поступовим показомg. Крім того, "
+"у PNG передбачено зберігання гами і хроматичних даних для покращення "
+"відтворення кольорів на різних платформах. PNG підтримує глибини кольорів 8 "
+"і 16 бітів / колір / піксель. Цей форма є ідеальним для вашого фотоархіву. "
+"Докладніші відомості щодо формату PNG можна знайти на `домашній сторінці PNG"
+" <https://www.libpng.org/pub/png/>`_."
 
 #: ../../supported_materials/image_formats.rst:56
 msgid "PGF"
@@ -186,6 +273,17 @@ msgid ""
 "thumbnails). For more information about the PGF format `see the libPGF "
 "homepage <https://www.libpgf.org/>`_."
 msgstr ""
+"*Progressive Graphics File* (прогресивний графічний файл) є ще одним з не "
+"дуже відомих, але відкрити форматів зберігання графічних даних Формат "
+"засновано на використанні вейвлетів, його можна використовувати для "
+"зберігання файлів з втратами і без втрат PGF можна порівняти з JPEG 2000, "
+"але основною метою його розробки була швидкість обробки (стискання та "
+"видобування), а не максимальний коефіцієнт стискання За однакового розміру "
+"файлів, файл PGF виглядає значно краще за файл JPEG, зберігаючи при цьому "
+"дуже високу швидкість поступового (прогресивного) показу. Подібні "
+"характеристики дуже корисні для архівування фотографій (digiKam використовує"
+" цей формат у базі даних для зберігання мініатюр). Докладніше про формат PGF"
+" можна дізнатися з `домашньої сторінки libPGF <https://www.libpgf.org/>`_."
 
 #: ../../supported_materials/image_formats.rst:62
 msgid ""
@@ -193,10 +291,14 @@ msgid ""
 "You can see a list of available plugins in **Plugins/Image Loaders** section "
 "from Setup dialog."
 msgstr ""
+"Доступ до форматів цифрових фотознімків реалізується у digiKam за допомогою"
+" додатків завантаження. Ви можете ознайомитися зі списком доступних додатків"
+" за допомогою розділу **Додатки/Завантажувачі зображень** у вікні"
+" налаштовування програми."
 
 #: ../../supported_materials/image_formats.rst:68
 msgid "The Image Loaders list from digiKam Setup dialog"
-msgstr ""
+msgstr "Список завантажувачів зображень з вікна налаштовування digiKam"
 
 #: ../../supported_materials/image_formats.rst:71
 #: ../../supported_materials/image_formats.rst:91
@@ -215,6 +317,17 @@ msgid ""
 "photographers use RAW format, because it offers them maximum flexibility. "
 "The downside is that RAW image files can be very large indeed."
 msgstr ""
+"Деякі, зазвичай найдорожчі, фотоапарати надають вам змогу зберігати "
+"зображення у форматі RAW. Формат RAW взагалі не є стандартом зберігання "
+"зображень. Кожен з виробників фотоапаратів має власні уявлення щодо цього "
+"формату. У зображеннях формату RAW зберігаються всі дані, які було отримати "
+"безпосередньо з датчика зображення фотоапарата, перш ніж програмне "
+"забезпечення фотоапарата застосувало фільтри на зразок балансу білого, "
+"збільшення різкості тощо. Зберігання зображень у форматі цифрових негативів "
+"фотоапарата (RAW) надасть вам можливість змінити параметри, зокрема баланс "
+"білого, після зйомки. Найпрофесійніші фотографи використовують формат RAW, "
+"оскільки він забезпечує максимальну гнучкість. Зворотнім боком такого "
+"зберігання є те, що файли зображень RAW мають дуже великі розміри."
 
 #: ../../supported_materials/image_formats.rst:75
 msgid ""
@@ -227,6 +340,16 @@ msgid ""
 "Editor <rawprocessing_workflow>` or the :ref:`Batch Queue Manager "
 "<raw_converter>`."
 msgstr ""
+"Якщо ви хочете розширити свої знання щодо формату зображень цифрових"
+" негативів (RAW), відвідайте дуже корисні сторінки `Вікіпедії <"
+"https://en.wikipedia.org/wiki/Raw_image_format>`_, `The "
+"Luminous Landscape <https://www.luminous-landscape.com/tutorials/"
+"understanding-series/u-raw-files.shtml>`_ та `Cambridge in Colour <http://"
+"www.cambridgeincolour.com/tutorials/RAW-file-format.htm>`_. У digiKam ви"
+" можете перетворити зображення у форматі цифрових негативів на зображення у"
+" форматі JPEG, PNG або TIFF за допомогою :ref:`редактора зображень <"
+"rawprocessing_workflow>` або :ref:`засобу керування пакетною обробкою <"
+"raw_converter>`."
 
 #: ../../supported_materials/image_formats.rst:77
 msgid ""
@@ -235,10 +358,17 @@ msgid ""
 "over **1000** RAW file formats. The table below shows a short list of camera "
 "RAW files supported by digiKam:"
 msgstr ""
+"У digiKam реалізовано підтримку лише завантаження зображень RAW; у цьому"
+" програма "
+"покладається на іншу програму, `бібліотеку libraw <https://www.libraw.org/"
+">`_, яку включено до ядра , і яка "
+"підтримує понад **1000** форматів файлів RAW. У наведеній нижче таблиці"
+" показано короткий список файлів RAW фотоапаратів, підтримку яких"
+" передбачено у digiKam:"
 
 #: ../../supported_materials/image_formats.rst:80
 msgid "RAW File Format"
-msgstr ""
+msgstr "Формат файлів цифрових негативів (RAW)"
 
 #: ../../supported_materials/image_formats.rst:80
 msgid "Description"
@@ -246,51 +376,51 @@ msgstr "Опис"
 
 #: ../../supported_materials/image_formats.rst:82
 msgid "CRW, CR2, CR3"
-msgstr ""
+msgstr "CRW, CR2, CR3"
 
 #: ../../supported_materials/image_formats.rst:82
 msgid "Canon digital camera RAW file formats"
-msgstr ""
+msgstr "Формат файлів цифрових негативів фотоапаратів виробництва Canon"
 
 #: ../../supported_materials/image_formats.rst:83
 msgid "NEF, NRW"
-msgstr ""
+msgstr "NEF, NRW"
 
 #: ../../supported_materials/image_formats.rst:83
 msgid "Nikon digital camera RAW file format"
-msgstr ""
+msgstr "Формат файлів цифрових негативів фотоапаратів виробництва Nikon"
 
 #: ../../supported_materials/image_formats.rst:84
 msgid "ORF, ORI"
-msgstr ""
+msgstr "ORF, ORI"
 
 #: ../../supported_materials/image_formats.rst:84
 msgid "Olympus digital camera RAW file format"
-msgstr ""
+msgstr "Формат файлів цифрових негативів фотоапаратів виробництва Olympus"
 
 #: ../../supported_materials/image_formats.rst:85
 msgid "RAF"
-msgstr ""
+msgstr "RAF"
 
 #: ../../supported_materials/image_formats.rst:85
 msgid "Fuji digital camera RAW file format"
-msgstr ""
+msgstr "Формат файлів цифрових негативів фотоапаратів виробництва Fuji"
 
 #: ../../supported_materials/image_formats.rst:86
 msgid "RWL"
-msgstr ""
+msgstr "RWL"
 
 #: ../../supported_materials/image_formats.rst:86
 msgid "Leica camera RAW file format"
-msgstr ""
+msgstr "Формат файлів цифрових негативів фотоапаратів виробництва Leica"
 
 #: ../../supported_materials/image_formats.rst:87
 msgid "PEF, PTX"
-msgstr ""
+msgstr "PEF, PTX"
 
 #: ../../supported_materials/image_formats.rst:87
 msgid "Pentax digital camera RAW file format"
-msgstr ""
+msgstr "Формат файлів цифрових негативів фотоапаратів виробництва Pentax"
 
 #: ../../supported_materials/image_formats.rst:88
 msgid "X3F"
@@ -298,35 +428,39 @@ msgstr "X3F"
 
 #: ../../supported_materials/image_formats.rst:88
 msgid "Sigma digital camera RAW file format"
-msgstr ""
+msgstr "Формат файлів цифрових негативів фотоапаратів виробництва Sigma"
 
 #: ../../supported_materials/image_formats.rst:89
 msgid "DCR, KDC, DC2, K25"
-msgstr ""
+msgstr "DCR, KDC, DC2, K25"
 
 #: ../../supported_materials/image_formats.rst:89
 msgid "Kodak digital camera RAW file format"
-msgstr ""
+msgstr "Формат файлів цифрових негативів фотоапаратів виробництва Kodak"
 
 #: ../../supported_materials/image_formats.rst:90
 msgid "SRF, SR2, ARW, MRW, MDC"
-msgstr ""
+msgstr "SRF, SR2, ARW, MRW, MDC"
 
 #: ../../supported_materials/image_formats.rst:90
 msgid "Sony/Minolta digital camera RAW file format"
 msgstr ""
+"Формат файлів цифрових негативів фотоапаратів виробництва Sony/Minolta"
 
 #: ../../supported_materials/image_formats.rst:91
 msgid "Panasonic, Casio, Leica digital camera RAW file format"
 msgstr ""
+"Формат файлів цифрових негативів фотоапаратів виробництва Panasonic, Casio, "
+"Leica"
 
 #: ../../supported_materials/image_formats.rst:92
 msgid "DNG (CS1, HDR)"
-msgstr ""
+msgstr "DNG (CS1, HDR)"
 
 #: ../../supported_materials/image_formats.rst:92
 msgid "Adobe RAW file format (Digital Negative)"
 msgstr ""
+"Формат файлів цифрових негативів Adobe RAW (скорочення від Digital Negative)"
 
 #: ../../supported_materials/image_formats.rst:93
 msgid "BAY"
@@ -334,23 +468,23 @@ msgstr "BAY"
 
 #: ../../supported_materials/image_formats.rst:93
 msgid "Casio RAW (Bayer)"
-msgstr ""
+msgstr "Цифрові негативи Casio (Bayer)"
 
 #: ../../supported_materials/image_formats.rst:94
 msgid "ERF"
-msgstr ""
+msgstr "ERF"
 
 #: ../../supported_materials/image_formats.rst:94
 msgid "Epson digital camera RAW file format"
-msgstr ""
+msgstr "Формат файлів цифрових негативів фотоапаратів виробництва Epson"
 
 #: ../../supported_materials/image_formats.rst:95
 msgid "FFF, 3FR"
-msgstr ""
+msgstr "FFF, 3FR"
 
 #: ../../supported_materials/image_formats.rst:95
 msgid "Imacon/Hasselblad RAW format"
-msgstr ""
+msgstr "Формат файлів цифрових негативів Imacon/Hasselblad"
 
 #: ../../supported_materials/image_formats.rst:96
 msgid "RW2"
@@ -358,7 +492,7 @@ msgstr "RW2"
 
 #: ../../supported_materials/image_formats.rst:96
 msgid "Panasonic RAW file format"
-msgstr ""
+msgstr "Формат файлів цифрових негативів Panasonic"
 
 #: ../../supported_materials/image_formats.rst:97
 msgid "IIQ, CAP"
@@ -370,18 +504,24 @@ msgstr "Формат зображень цифрових негативів фо
 
 #: ../../supported_materials/image_formats.rst:98
 msgid "RDC"
-msgstr ""
+msgstr "RDC"
 
 #: ../../supported_materials/image_formats.rst:98
 msgid "Ricoh RAW format"
-msgstr ""
+msgstr "Формат файлів цифрових негативів Ricoh"
 
 #: ../../supported_materials/image_formats.rst:101
 msgid ""
 "If you want to know if your camera RAW file is supported by digiKam, go to :"
 "menuselection:`Help --> Supported RAW Cameras` dialog for details."
 msgstr ""
+"Якщо ви хочете дізнатися, чи передбачено підтримку файлів цифрових негативів"
+" вашого фотоапарата у digiKam, скористайтеся вікном, яке відкриває пункт"
+" меню :menuselection:`Довідка --> Підтримувані фотоапарати з цифровими"
+" негативами`."
 
 #: ../../supported_materials/image_formats.rst:107
 msgid "List of RAW Camera Formats Supported in digiKam"
 msgstr ""
+"Список форматів цифрових негативів фотоапараів, підтримку яких передбачено у"
+" digiKam"
