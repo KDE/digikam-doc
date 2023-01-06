@@ -84,7 +84,7 @@ Lossless Image Rotation
 
 .. note::
 
-     There is a difference between rotating a photograph in one of the Views of digiKam or in the Image Editor. The Image Editor uses a different method of rotating an image, you may not notice any difference but the Image Editor method can cause some loss of quality in the photograph when saving the picture as JPEG. The rotation methods described here preserve the original quality of the photograph also in JPEG - Files. 
+     There is a difference between rotating a photograph in one of the Views of digiKam or in the Image Editor. The Image Editor uses a different method of rotating an image, you may not notice any difference but the Image Editor method can cause some loss of quality in the photograph when saving the picture as JPEG. The rotation methods described here preserve the original quality of the photograph also in JPEG - Files.
 
 digiKam provides two ways to get your photographs the right way up. The simplest method is to click one of the rotate icons on the thumbnail or the preview or to click with the right mouse button for the context menu and select **Rotate** and then pick the direction of rotation needed.
 
@@ -119,6 +119,8 @@ digiKam will ask you confirmation before to move items to trash with the dialog 
     :align: center
 
     The digiKam Move to Trash Dialog
+
+.. _grouping_photograph:
 
 Grouping Photographs
 ~~~~~~~~~~~~~~~~~~~~

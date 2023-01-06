@@ -20,7 +20,7 @@ Edit Coordinates
 
 The coordinates can be set manually in the **Details** tab. The location can be found and fixed iteratively with the displayed map. Move the mouse cursor to the region of interest, zoom in, adjust location, zoom in again, and so on until sufficient accuracy is achieved. Note that the zoom center will always be at the cursor position. Eventually you click with the right mouse button at the desired position and choose **Copy Coordinates**. Now you can go to the list of images below the map, select one or more images, click with the right mouse button on them and choose **Paste Coordinates**. The coordinates will then be displayed in the **Latitude** and **Longitude** fields to the right of the map. To save your changes you click the **Apply** button right under the DOP field.
 
-.. figure:: images/geoeditor_details.webp
+.. figure:: images/geoeditor_details_view.webp
     :alt:
     :align: center
 
