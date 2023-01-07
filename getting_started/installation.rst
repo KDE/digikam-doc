@@ -22,7 +22,7 @@ You’ll find all previous digiKam versions in the `attic <https://download.kde.
 Minimum system requirements
 ---------------------------
 
-- **Operating System**: 64-bit Windows 7 or newer, Apple macOS 10.15 (Catalina) or newer and on M1, 64-bit Linux. Details see below.
+- **Operating System**: 64-bit Windows 7 or newer, Apple macOS 10.13 (High Sierra) or newer based on Intel or M1 architecture, 64-bit Linux. Details see below.
 
 - **CPU**: x86 Intel or AMD; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for deep-learning uses as with face detection and image quality sorting. Details see below.
 
@@ -104,9 +104,7 @@ Do also make sure no GPO is blocking the access to these folders.
 digiKam on macOS
 -----------------
 
-**digiKam** runs with Intel based Mac's on macOS 10.13 (High Sierra) and newer.
-
-digiKam runs also on Mac M1 computers using Rosetta version 2 binary translator.
+**digiKam** runs with Intel based Mac's on macOS 10.13 (High Sierra) and newer. For M1 based Mac's, you needs to use `Apple Roseta 2 <https://support.apple.com/en-us/HT211861>`_ instructions translator.
 
 When the pkg file is downloaded, to start the installer, a security warning will appears.
 
