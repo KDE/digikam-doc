@@ -413,7 +413,7 @@ Corresponding languages must be listed as suitable in documentation web-site fol
 - The **alllang** list from the [version_switch JavaScript file](resources/static/js/version_switch.js) located in this repository.
 - The **supported_languages** list from the [404handler PHP file](404handler.php) located in this repository.
 - The section named **docs-digikam-org** from the [custom-jobs Json infrastrusture configuration](https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json) dedicated to rule translations.
-- The **script** section from [gitlab CI Yaml config file](.gitlab) where a new line must be add to genrate the new supported language in the Continuous Integration workflow.
+- The **script** section from [gitlab CI Yaml config file](.gitlab-ci.yml) where a new line must be add to genrate the new supported language in the Continuous Integration workflow.
 
 #### How to Compile a Supported Langauge
 
