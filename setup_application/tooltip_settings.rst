@@ -38,3 +38,7 @@ Two other configuration views exists to customize:
     - The tooltips visible over the **Album Items**, as the **Albums** or **Tags** tree-views from **Main Window**.
 
     - The tooltips visible over the **Import Items** from the camera import tool icon-view.
+
+.. note::
+
+    Enabling the **Import Items** tooltips can requires to turn on the **Use File Metadata** option from the **Camera Behavior** settings panel. Look :ref:`this section <camera_behavior>` from this manual for more details.
