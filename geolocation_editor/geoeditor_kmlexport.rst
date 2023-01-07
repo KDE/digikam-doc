@@ -23,21 +23,21 @@ KML Export Tool
 
     The digiKam Geolocation Editor Exporting GPS Info Into A KML Container
 
-From the right sidebar tab **KML Export** severals settings are available to process the list of items loaded in Geolocation Editor, in goal to generate a target as KML container.
+From the right sidebar tab **KML Export** several settings are available to process the list of items loaded in Geolocation Editor, in goal to generate a target as KML container.
 
-    - **Target Type**: two kind of container canbe generate, one for a local application as Google Earth running on your computer, or another one for a Web Application as Google Maps.
+    - **Target Type**: two kind of container can be generated, one for a local application as Google Earth running on your computer, or another one for a Web Application as Google Maps.
 
     - **Picture Altitude**: configure how the altitude of items to process must be interpreted, as **Clamp To The Ground**, **Relative To Ground**, or in **Absolute**.
 
     - **Destination Directory**: configure the folder from your computer where you want to store the KML container.
 
-    - **Destination Path**: confire the url where you want to store the KML container. This option is enabled only if the Target Type is a Web Application.
+    - **Destination Path**: configure the url where you want to store the KML container. This option is enabled only if the Target Type is a Web Application.
 
     - **Filename**: the name used to record the KML container.
 
-    - **Icon Size**: The icon dimmensions registered in KML container and used by KML viewer application to thumbnails on the map.
+    - **Icon Size**: The icon dimensions registered in KML container and used by KML viewer application to thumbnails on the map.
 
-    - **Image Size**: The image dimmensions registered in KML container and used by KML viewer application to render contents on the map.
+    - **Image Size**: The image dimensions registered in KML container and used by KML viewer application to render contents on the map.
 
     - **Draw GPX Track**: enable this option to include information from a GPX trace in your KML container.
 
@@ -53,7 +53,7 @@ From the right sidebar tab **KML Export** severals settings are available to pro
 
     - **Track Altitude**: configure how the altitude of GPX trace items must be interpreted, as **Clamp To The Ground**, **Relative To Ground**, or in **Absolute**.
 
-Press **Generate KML File** button to render the container. If errors occurs, a resume dialog must appear with the list of problems. Finaly, the exported KML container can be open in a Viewer as in the screenshot below.
+Press **Generate KML File** button to render the container. If errors occurs, a resume dialog must appear with the list of problems. Finally, the exported KML container can be open in a Viewer as in the screenshot below.
 
 .. figure:: images/geoeditor_kml_viewer.webp
     :alt:

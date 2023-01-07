@@ -614,7 +614,7 @@ Slideshow Tools
     :alt:
     :target: slideshow_tools.html
 
-    How to Uses Tools to Present Your Items
+    How to Use Tools to Present Your Items
 
 .. container:: toctile
 
