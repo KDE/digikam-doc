@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:40+0000\n"
+"POT-Creation-Date: 2023-01-06 00:40+0000\n"
 "PO-Revision-Date: 2022-12-29 06:58+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -36,21 +36,32 @@ msgid ""
 "As long as you are not just taking pictures from machines or stars or "
 "something like that, Face Management might be an interesting feature for you "
 "(even with a machine there might be a human being operating it). In digiKam "
-"it consists of two tasks: Face Detection and Face Recognition."
+"it consists of two tasks: **Face Detection** and **Face Recognition**."
 msgstr ""
 
-#: ../../main_window/people_view.rst:20
+#: ../../main_window/people_view.rst:18
+msgid ""
+"The face management workflow allows you to detect and recognize people in "
+"your photographs. Both features use a deep learning neural network in "
+"background. **Face Detection** allows digiKam to detect faces in your "
+"images. This step is required before being able to recognize faces. **Face "
+"Recognition** will automatically recognize people in your images, but it "
+"needs few items already trained for a same face name to be able to recognize "
+"new ones."
+msgstr ""
+
+#: ../../main_window/people_view.rst:22
 msgid ""
 "To run properly, the face management needs the deep-learning models to "
 "download at the first run of digiKam. See :ref:`the Quick Start section "
 "<quick_start>` for details."
 msgstr ""
 
-#: ../../main_window/people_view.rst:25
+#: ../../main_window/people_view.rst:27
 msgid "Face Detection"
 msgstr "Detecção de Caras"
 
-#: ../../main_window/people_view.rst:27
+#: ../../main_window/people_view.rst:29
 msgid ""
 "The first step is to have digiKam finding all those pics that show faces not "
 "even knowing yet who's face it is. To prepare that process you click on "
@@ -58,29 +69,31 @@ msgid ""
 "with a drop down menu where you can choose between:"
 msgstr ""
 
-#: ../../main_window/people_view.rst:29
-msgid "**Skip images already scanned**."
-msgstr ""
-
 #: ../../main_window/people_view.rst:31
-msgid "**Scan again and merge results**."
+msgid ""
+"**Skip Images Already Scanned**: choose this option if you haven't scanned "
+"yet or if the last scan yielded good results but you would like to scan new "
+"images."
 msgstr ""
 
 #: ../../main_window/people_view.rst:33
-msgid "**Clear unconfirmed results and rescan**."
+msgid ""
+"**Scan Again And Merge Results**: choose this option if the results of the "
+"previous scan weren't accurate. This would rescan all images again, and is "
+"time consuming."
 msgstr ""
 
-#: ../../main_window/people_view.rst:39
+#: ../../main_window/people_view.rst:35
+msgid ""
+"**Clear Unconfirmed Results And Rescan**: remove all faces registered in "
+"database with no name and process again an analysis."
+msgstr ""
+
+#: ../../main_window/people_view.rst:41
 msgid "The digiKam Face Management Workflow View"
 msgstr ""
 
 #: ../../main_window/people_view.rst:43
-msgid ""
-"On the **Workflow** tab, a button of the right/top can be used to show a "
-"help dialog to guide you about the Faces Management workflow."
-msgstr ""
-
-#: ../../main_window/people_view.rst:45
 msgid ""
 "The first option you would choose if you didn't scan yet or if you did with "
 "a satisfying result but added new photographs since then or if you already "
@@ -89,6 +102,15 @@ msgid ""
 "scanned to be included in the next scan. The third is more interesting in "
 "the context of Face Recognition since **Unconfirmed results** means face "
 "tags that don't have a name assigned to them yet."
+msgstr ""
+
+#: ../../main_window/people_view.rst:45
+msgid ""
+"After the Face Scan is complete, you should see a new tag **Unknown** where "
+"the results of the face scan will appear. You may now manually identify a "
+"few of these faces and then proceed for face recognition. At least a minimum "
+"of **4 similar faces tagged** in different images must be trained for an "
+"automatic recognition workflow."
 msgstr ""
 
 #: ../../main_window/people_view.rst:49
@@ -128,14 +150,16 @@ msgstr ""
 
 #: ../../main_window/people_view.rst:71
 msgid ""
-"For the task we are talking about you check **Detect faces**, of course. "
+"For the task we are talking about you check **Detect Faces**, of course. "
 "Since face detection is a time-consuming task you better don't hit **Scan** "
 "right away, rather **Options**. An additional area will fold out organized "
 "with three tabs. In **Search-In** you can confine the scan to certain albums "
-"or tags. In **Settings** you can try to find a balance between speed and "
-"accuracy that suits your needs. Under Advanced you will find two checkboxes. "
-"The first is explained by the text above it. The second is for face "
-"recognition, see next article."
+"or tags. In **Settings** you can adjust the **Face Accurary** with a balance "
+"between **Sensitivity** and **Specificity** that suits your needs. A higher "
+"specificity implies higher accuracy, however this results in a smaller set "
+"of results. Under Advanced you will find two checkboxes. The first is "
+"explained by the text above it. The second is for face recognition, see next "
+"article."
 msgstr ""
 
 #: ../../main_window/people_view.rst:73
@@ -178,7 +202,7 @@ msgstr ""
 
 #: ../../main_window/people_view.rst:94
 msgid ""
-"If it really is a face the field labeled **Who is this?** comes into play. "
+"If it really is a face the field labeled **Who Is This?** comes into play. "
 "Here you can either type in the name of an existing People tag out of your "
 "tag tree or use the drop down function to show your tag tree and select a "
 "tag. With **Confirm** you can save that to the database. If it was the only "
@@ -336,7 +360,7 @@ msgstr ""
 #: ../../main_window/people_view.rst:170
 msgid ""
 "In the context menu of the preview there are two more items related to face "
-"tags: **Add a Face Tag** and **Clear all faces** on this image."
+"tags: **Add A Face Tag** and **Clear All Faces** on this image."
 msgstr ""
 
 #: ../../main_window/people_view.rst:175
@@ -350,7 +374,7 @@ msgid ""
 "something to compare with. So it's up to you to show it the ropes, which "
 "means in this case to tell digiKam: This is Lara, this is Juan, this is "
 "Peter and so forth. For that you would, after performing a Face Detection as "
-"described in the previous article, typically select the **unknown** tag on "
+"described in the previous article, typically select the **Unknown** tag on "
 "the Left Sidebar, click on a thumbnail and click, if necessary, on the Show "
 "Face Tags button |icon_showfacetags|."
 msgstr ""
@@ -365,9 +389,9 @@ msgstr ""
 msgid ""
 "Now you should see the face tags of that photograph. Those which have a "
 "people (or other) tag already assigned will simply show the name of that "
-"tag. The others, showing **unknown** faces, will show a field and two "
+"tag. The others, showing **Unknown** faces, will show a field and two "
 "buttons as in the screenshot of the previous article. In the field labeled "
-"**Who is this?** you can either type in the name of an existing People tag "
+"**Who Is This?** you can either type in the name of an existing People tag "
 "out of your tag tree or use the drop down function to show your tag tree and "
 "select a tag. With **Confirm** you can save that to the database."
 msgstr ""
@@ -397,8 +421,8 @@ msgstr ""
 msgid ""
 "Once you have a tag assigned to a few photographs you can have digiKam "
 "looking if it can find more photographs showing the same face. To prepare "
-"that process you click **Scan collection for faces** but this time you "
-"select **Recognize faces**."
+"that process you click **Scan Collection For Faces** but this time you "
+"select **Recognize Faces**."
 msgstr ""
 
 #: ../../main_window/people_view.rst:203
@@ -413,7 +437,7 @@ msgstr ""
 
 #: ../../main_window/people_view.rst:205
 msgid ""
-"To start the Face Recognition you click **Scan Collection for Faces** "
+"To start the Face Recognition you click **Scan Collection For Faces** "
 "button. The process will tag every recognized face with the appropriate "
 "People tag out of your tag tree and the corresponding thumbnail will "
 "disappear from the **Unknown** tag selection."
@@ -436,8 +460,8 @@ msgstr ""
 
 #: ../../main_window/people_view.rst:215
 msgid ""
-"In case of unsatisfying results it might be helpful to use **Clear and "
-"rebuild all training data**. One reason can be that there are too many face "
+"In case of unsatisfying results it might be helpful to use **Clear And "
+"Rebuild All Training Data**. One reason can be that there are too many face "
 "tags assigned to a person which shows this person in a way that doesn't "
 "really help the search algorithm, e.g. with sunglasses, blurred, unusual "
 "colors, carnival make up, dark shaded areas in the face, baby/kid/adult "
@@ -458,51 +482,118 @@ msgid ""
 "face tag definitively."
 msgstr ""
 
-#: ../../main_window/people_view.rst:228
-msgid "Manual Face tagging"
+#: ../../main_window/people_view.rst:225
+msgid ""
+"The results of facial recognition appear in the form of unconfirmed results. "
+"These results will show up in the **Unconfirmed** tag, as well as in the tag "
+"of the person suggested for each face. Hovering over unconfirmed faces will "
+"display a few options:"
 msgstr ""
 
-#: ../../main_window/people_view.rst:230
+#: ../../main_window/people_view.rst:227
+msgid ""
+"The **Confirm** button allows you to confirm the suggestion. This would "
+"assign the suggested name to the face."
+msgstr ""
+
+#: ../../main_window/people_view.rst:228
+msgid ""
+"Use the **Reject** button, if the suggestion is incorrect. This would move "
+"the face back to **Unknown**."
+msgstr ""
+
+#: ../../main_window/people_view.rst:229
+msgid ""
+"Use the **Delete** button, if the suggestion is not a face. This will remove "
+"the face region from the database."
+msgstr ""
+
+#: ../../main_window/people_view.rst:231
+msgid ""
+"About the face categorization and sorting, faces will appear by default "
+"categorized based on their name. You may change this behaviour, by going to :"
+"menuselection:`View -> Separate Items`. Note that using a different "
+"categorization order will lead to **Confirmed** and **Unconfirmed** faces "
+"appearing mixed with one another. To change this behaviour you may modify "
+"the sorting order within each category by going to :menuselection:`View -> "
+"Sort Items -> By Face Type`."
+msgstr ""
+
+#: ../../main_window/people_view.rst:233
+msgid ""
+"To improve results of face recognition, apart from using the settings "
+"mentioned previously, face results may also be improved by rebuilding the "
+"training data. This may be done through :menuselection:`Tools -> Maintenance "
+"-> Detect And Recognize Faces -> Clear And Rebuild All Training Data`."
+msgstr ""
+
+#: ../../main_window/people_view.rst:238
+msgid "Manual Face Tagging"
+msgstr ""
+
+#: ../../main_window/people_view.rst:240
 msgid "digiKam allows for either manual face tagging."
 msgstr ""
 
-#: ../../main_window/people_view.rst:232
+#: ../../main_window/people_view.rst:242
 msgid ""
 "For more information about automatic face tagging using digiKam's face "
-"recognition engine see the previous section of this manual."
+"recognition engine see :ref:`the previous section <face_recognition>` of "
+"this manual."
 msgstr ""
 
-#: ../../main_window/people_view.rst:234
-msgid "To tag people manually, you can do it by by different way:"
+#: ../../main_window/people_view.rst:244
+msgid "You can tag people manually by different way:"
 msgstr ""
 
-#: ../../main_window/people_view.rst:236
+#: ../../main_window/people_view.rst:246
 msgid ""
 "From **Preview Mode**: click on **Add a Face Tag** icon or select option on "
 "context menu, as highlighted on the screenshot below."
 msgstr ""
 
-#: ../../main_window/people_view.rst:242
+#: ../../main_window/people_view.rst:252
 msgid "The digiKam Manual Face Tagging From Context Menu"
 msgstr ""
 
-#: ../../main_window/people_view.rst:244
+#: ../../main_window/people_view.rst:254
 msgid ""
 "And then draw a rectangle around the face while holding left mouse button "
 "followed by entering the person's name and pressing :kbd:`Enter`."
 msgstr ""
 
-#: ../../main_window/people_view.rst:250
+#: ../../main_window/people_view.rst:260
 msgid "The digiKam Manual Face Tagging Editor"
 msgstr ""
 
-#: ../../main_window/people_view.rst:254
+#: ../../main_window/people_view.rst:264
 msgid ""
-"Instead of clicking on **Add a Face Tag** icon you can draw a face region "
+"Instead of clicking on **Add A Face Tag** icon you can draw a face region "
 "while holding :kbd:`Ctrl` key."
 msgstr ""
 
-#: ../../main_window/people_view.rst:256
+#: ../../main_window/people_view.rst:266
+msgid ""
+"The **Preview Mode** context menu include also two other options to use "
+"during manual face tagging:"
+msgstr ""
+
+#: ../../main_window/people_view.rst:268
+msgid ""
+"**Scan For Faces**: this option will call the face detection algorithm to "
+"set face areas automatically over the image. The faces are assigned by "
+"default to **Unknown** in the database. The last used **Faces Detection** "
+"settings will configure the process. If faces are found, you can edit "
+"manually the face name as explained previously."
+msgstr ""
+
+#: ../../main_window/people_view.rst:270
+msgid ""
+"**Show Face Tags**: this show the face areas visible and switch "
+"automatically in edit mode when mouse move over the areas."
+msgstr ""
+
+#: ../../main_window/people_view.rst:272
 msgid ""
 "From Left Sidebar **People** tab: use drag and drop between icon-view and "
 "face-tags tree-view. Select items labeled **Unknown** that you want to "
@@ -510,38 +601,41 @@ msgid ""
 "hierarchy. A pop-up menu will appears to confirm face assignement."
 msgstr ""
 
-#: ../../main_window/people_view.rst:263
+#: ../../main_window/people_view.rst:279
 msgid "Screencast of Manual Faces Assignment Using Drag And Drop"
 msgstr ""
 
-#: ../../main_window/people_view.rst:265
+#: ../../main_window/people_view.rst:281
 msgid ""
 "From keyboard shorcut: you can assign a magic key to a face-tag and quickly "
 "uses the keyboard to switch on the face-tag name to selected items."
 msgstr ""
 
-#: ../../main_window/people_view.rst:271
+#: ../../main_window/people_view.rst:287
 msgid ""
 "The digiKam Face Tag Properties Dialog With a Keyboard Shortcut Assigned"
 msgstr ""
 
-#: ../../main_window/people_view.rst:273
+#: ../../main_window/people_view.rst:289
 msgid ""
-"The **Preview** mode context menu include also two other options to use "
-"during manual face tagging:"
+"From The **Unknown** tag from **People** view: to manually identify a face, "
+"hover on any **Unknown** face form icon-view and use the text box to give it "
+"a name. This will lead to the creation of a face tag in case a person of "
+"that name doesn't exist already. For best results identify at least 4 faces "
+"for each person you want the scan to recognize."
 msgstr ""
 
-#: ../../main_window/people_view.rst:275
-msgid ""
-"**Scan for Faces**: this option will call the face detection algorithm to "
-"set face areas automatically over the image. The faces are assigned by "
-"default to **Unknown** in the database. The last used **Faces Detection** "
-"settings will configure the process. If faces are found, you can edit "
-"manually the face name as explained previously."
+#: ../../main_window/people_view.rst:295
+msgid "Screencast of Manual Face Tagging From Icon-View"
 msgstr ""
 
-#: ../../main_window/people_view.rst:277
+#: ../../main_window/people_view.rst:297
 msgid ""
-"**Show Face Tags**: this show the face areas visible and switch "
-"automatically in edit mode when mouse move over the areas."
+"In case there's a face you don't wish to be recognized, you can mark it as "
+"ignored. This leads to the creation of a new **Ignored** tag, you can later "
+"unmark the face if needed."
+msgstr ""
+
+#: ../../main_window/people_view.rst:303
+msgid "A Face Marked as **Ignored** From Icon-View"
 msgstr ""
