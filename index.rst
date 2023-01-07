@@ -496,7 +496,7 @@ Maintenance Tools
     :alt:
     :target: maintenance_tools.html
 
-    Maintening and Optimize Data From Your Collections
+    Maintaining and Optimize Data From Your Collections
 
 .. container:: toctile
 
