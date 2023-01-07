@@ -140,7 +140,7 @@ Drag and Drop: works with both sidebars provided they are showing tags of course
 
 .. tip::
 
-    You can also use drag and drop between tabs from same sidebar, for example dragging a icon-view item from **Albums** to the **Tags** view. To switch from one tab to another one, just let's the mouse over the tab tile few second while dragging, the new view will be enabled and dragging operation can continue.
+    You can also use drag and drop between tabs from same sidebar, for example dragging a icon-view item from **Albums** to the **Tags** view. To switch from one tab to another one, just move the mouse over the tab title for a few seconds while dragging, the new view will be enabled and dragging operation can continue.
 
 Shortcuts: as mentioned earlier in this chapter you can assign keyboard shortcuts in the Tag Properties. With these you can assign or un-assign a tag to the selected photograph(s).
 

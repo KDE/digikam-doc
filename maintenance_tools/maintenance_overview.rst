@@ -35,8 +35,8 @@ The tools available from the list are listed below:
    
    5. **Find Duplicate Items**: scan albums to update list of duplicates items based on Similarity finger-prints.
    
-   6. **Detect and Recognize Faces**: perform an automatic faces management updates.
+   6. **Detect and Recognize Faces**: perform automatic faces management updates.
    
    7. **Image Quality Sorter**: perform an automatic scan of items to sort items by quality and apply Pick Labels in database.
    
-   8. **Sync Metadata and Database**: perform synchronization of items metadata with database contents or vis-versa.
+   8. **Sync Metadata and Database**: perform synchronization of items metadata with database contents or vice versa.
