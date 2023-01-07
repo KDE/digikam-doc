@@ -105,7 +105,7 @@ The toolbar at the top offers:
 
         - **Reset Tag Icon** to the standard tag icon.
 
-        - **Create Tag from Address Book** to import adress book items as new tags.
+        - **Create Tag from Address Book** to import address book items as new tags.
 
         - **Invert Selection**, useful if you want to select most but not all of your tags.
 
