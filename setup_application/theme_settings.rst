@@ -29,4 +29,4 @@ When theme is selected all elements from the graphical interface must change acc
 
     Depending of the color theme used, it must be mandatory to restart application to load relevant icons-set working with colors scheme.
 
-    Pairing some application colors scheme and widget style can give a wrong user experience. We recommend to adjust if necessary the **Widget Style** from the **Setup / Misc /Appearance** configuration panel, especially with dark color schemes. See :ref:`this section <appearance_settings>` from this manual for more details about the **Appearance** options.
+    Pairing some application colors scheme and widget style can give a wrong user experience. We recommend to adjust if necessary the **Widget Style** from the **Setup / Misc / Appearance** configuration panel, especially with dark color schemes. See :ref:`this section <appearance_settings>` from this manual for more details about the **Appearance** options.
