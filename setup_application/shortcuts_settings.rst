@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Shortcuts Settings
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, keyboard, shortcuts, setup, configure
 
 .. metadata-placeholder
 
@@ -15,16 +15,24 @@ Shortcuts Settings
 
 .. contents::
 
-digiKam has the common KDE shortcut configuration tool accessed via the Settings --> Configure Shortcuts main menu item. For more information read the section about the shortcut configuration in KDE applications of the KDE Fundamentals.
+digiKam provide keyboard shortcuts that allow you to perform many tasks without touching your mouse. If you use your keyboard frequently, using these can save you lots of time.
 
-digiKam keyboard shortcuts by default:
+digiKam has dedicated keyboard shortcut configuration dialog accessed via the :menuselection:`Settings --> Configure Shortcuts` main menu item.
 
-- Rating assignment
+.. figure:: images/setup_keyboard_shortcuts.webp
+    :alt:
+    :align: center
+
+    The digiKam Dialog To Configure The Keyboard Shortcuts
+
+digiKam define these keyboard shortcuts by default:
+
+- Rating assignment:
 
 =========== ========
 Rating      Shortcut
 =========== ========
-no rating   Ctrl+0
+No rating   Ctrl+0
 1 star      Ctrl+1
 2 stars     Ctrl+2
 3 stars     Ctrl+3
@@ -32,35 +40,35 @@ no rating   Ctrl+0
 5 stars     Ctrl+5
 =========== ========
 
-- Pick label assignment
+- Pick label assignment:
 
 =========== ========
 Pick Label  Shortcut
 =========== ========
-none        Alt+0
-rejected    Alt+1
-pending     Alt+2
-accepted    Alt+3
+None        Alt+0
+Rejected    Alt+1
+Pending     Alt+2
+Accepted    Alt+3
 =========== ========
 
-- Color label assignment
+- Color label assignment:
 
 =========== ==========
 Color Label Shortcut
 =========== ==========
-none        Ctrl+Alt+0
-red         Ctrl+Alt+1
-orange      Ctrl+Alt+2
-yellow      Ctrl+Alt+3
-green       Ctrl+Alt+4
-blue        Ctrl+Alt+5
-magenta     Ctrl+Alt+6
-gray        Ctrl+Alt+7
-black       Ctrl+Alt+8
-white       Ctrl+Alt+9
+None        Ctrl+Alt+0
+Red         Ctrl+Alt+1
+Orange      Ctrl+Alt+2
+Yellow      Ctrl+Alt+3
+Green       Ctrl+Alt+4
+Blue        Ctrl+Alt+5
+Magenta     Ctrl+Alt+6
+Gray        Ctrl+Alt+7
+Black       Ctrl+Alt+8
+White       Ctrl+Alt+9
 =========== ==========
 
-- Zooming
+- Zooming:
 
 =================== ==========
 Action              Shortcut
@@ -72,10 +80,12 @@ Fit to window       Ctrl+Alt+E
 Fit to selection    Ctrl+Alt+S
 =================== ==========
 
-General shortcuts
+General Shortcuts:
 
-=========================== =========
+=========================== ==============
 Action                      Shortcut
-=========================== =========
+=========================== ==============
+Close                       Alt+F4
+Quit                        Ctrl+Q
 Delete items permanently    Shift+Del
-=========================== =========
+=========================== ==============
