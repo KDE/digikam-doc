@@ -413,6 +413,16 @@ Corresponding languages must be listed as suitable in documentation web-site fol
 - The **alllang** list from the [version_switch JavaScript file](resources/static/js/version_switch.js) located in this repository.
 - The **supported_languages** list from the [404handler PHP file](404handler.php) located in this repository.
 - The section named **docs-digikam-org** from the [custom-jobs Json infrastrusture configuration](https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json) dedicated to rule translations.
+- The **script** section from [gitlab CI Yaml config file](.gitlab-ci.yml) where a new line must be add to genrate the new supported language in the Continuous Integration workflow.
+
+#### How to Compile a Supported Langauge
+
+By defaualt the make command generate the English version. If you want to test an internationalized version using transaltions hosted from **locale** disrectory,
+use the syntax below:
+
+`make -e SPHINXOPTS="-D language='fr'" html`
+
+This will generate the French version of the document in HTML. Replace 'fr' by another code to build a translated version, as 'es', 'de', etc.
 
 ## TODO List
 
@@ -424,8 +434,7 @@ At all changes done in this repository, as commits and Merge Requests, the [Cont
 will recompile automatically all the contents to check the validity of the DoReStructuredText files, including the current translations
 of the documentations.
 
-The [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) lists the history of
-the continuous integration pipelines.
+The [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) lists the history of the continuous integration pipelines.
 
 ## Continous Deployement
 

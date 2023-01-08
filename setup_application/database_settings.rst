@@ -19,6 +19,8 @@ Database Settings
 
     For an introduction of internal data storage, please refer to :ref:`Introduction of digiKam Databases <database_intro>` section.
 
+.. _sqlite_database:
+
 The Sqlite Database
 -------------------
 
@@ -47,6 +49,8 @@ SQLite database files could be found in your “collection” folder, which you 
     :align: center
 
     The digiKam Sqlite Configuration Page
+
+.. _mysql_database:
 
 The MySQL Database
 ------------------
@@ -80,6 +84,8 @@ To switch from SQLite to MySQL database, go to Settings / Configure digiKam... a
 
     - MySQL Remote: Use this if you’ve your data on remote server and you’re on a different machine trying to access the collection. 
 
+.. _mysql_internal:
+
 The MySQL Internal Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -96,6 +102,8 @@ Internal server uses two MySQL Binary Tools - mysql_install_db and mysqld. You c
     :align: center
 
     The digiKam Mysql Internal Configuration Page
+
+.. _mysql_remote:
 
 The MySQL Remote Server
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -148,6 +156,8 @@ With slow network, digiKam hangs a lot of time especially when album contains ma
 
 Also, if you have an enormous collection, you should start the MySQL server with mysql --max_allowed_packet = 128M. (If you’re well acquainted with using MySQL, you could also change your settings in my.ini or ~/.my.cnf files).
 
+.. _database_migration:
+
 Database Migration
 ------------------
 
@@ -163,6 +173,8 @@ To migrate to another database, go to Settings --> Database Migration.... A dial
 
 Now choose appropriate database types you want to convert to. Finally, click on Migrate button to convert the database from SQLite to MySQL (or vice versa).
 
+.. _database_backup:
+
 Database Backup Recommendation
 ------------------------------
 
@@ -171,6 +183,8 @@ For security reasons, planing a database backup using crontab over the network c
 Each database can be named with a different name, not only "digikam". This permits user to backup only what is needed. For instance, naming “core” database as digikamCore, permits to isolate only this table (the most important file). Thumbnails and recognition databases can always be regenerated for scratch.
 
 The chapter about digiKam Maintenance tool will explain how to maintain in time the database contents and how to synchronize the collections with databases information (and vice versa).
+
+.. _database_stats:
 
 Database Statistics
 -------------------

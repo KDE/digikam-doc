@@ -28,6 +28,6 @@ This process will analysis your database files to consolidate the contents. The 
 
    The last option leads to the vacuuming (shrinking) of the databases. Vacuuming is supported both for SQLite and MySQL.
 
-While the scan for new items process is under progress, as the the process may take much time and digiKam cannot be used, a non modal dialog appear to make sure that no database corruption occurs.
+While the scan for new items process is under progress, as the process may take much time and digiKam cannot be used, a non modal dialog appear to make sure that no database corruption occurs.
 
 .. figure:: images/maintenance_database_process.webp

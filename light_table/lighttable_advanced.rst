@@ -90,9 +90,9 @@ The tool-bar on top left corner of preview canvas provide also the same options 
 Assigning Rate Labels and Tags
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To manage Rate, Labels, and Tags, you can use the preview canvas context menu where the relevant entries allows to assign easily this properties. Of course this menu is available to the left and right pane. You can also use the **Caption** tab avaialble on the left sidebar and on the right sidebar. More details about this tab is given in the :ref:`Caption View section <captions_view>` of this manual.
+To manage Rate, Labels, and Tags, you can use the preview canvas context menu where the relevant entries allows to assign easily this properties. Of course this menu is available to the left and right pane. You can also use the **Caption** tab available on the left sidebar and on the right sidebar. More details about this tab is given in the :ref:`Caption View section <captions_view>` of this manual.
 
-After assigning these kind of properties, you can found the marked items to the **Labels** and **Tags** tabs from the Main Window left sidebar. This will allows you to post-process quickly these items in your workflow, after a triaging with the Light table.
+After assigning these kind of properties, you can found the marked items to the **Labels** and **Tags** tabs from the Main Window left sidebar. This will allows you to post-process quickly these items in your workflow, after a triagging with the Light table.
 
 .. figure:: images/light_table_assign_labels.webp
     :alt:
@@ -103,7 +103,7 @@ After assigning these kind of properties, you can found the marked items to the 
 Working With Tools From Light Table
 -----------------------------------
 
-As **Main Window**, The digiKam Light Table allows to call the tools from the **View**, **Tools**, **Import**, or **Export** menus. Unlike Main Window, Light Table do not have the conept of albums or an icon-view where you can select items to process. Light Table has a thumbbar which is a flat list of items to review with the left and right panes.
+As **Main Window**, The digiKam Light Table allows to call the tools from the **View**, **Tools**, **Import**, or **Export** menus. Unlike Main Window, Light Table does not have the concept of albums or an icon-view where you can select items to process. Light Table has a thumbbar which is a flat list of items to review with the left and right panes.
 
 For the tools working with pre-selected list of items from Main Window icon-view, the **View**, **Tools**, and **Export** menu options will use the current contents from the thumbbar. For tools working with albums, nothing change, as albums still selectable at tool sessions independently than thumbbar content.
 

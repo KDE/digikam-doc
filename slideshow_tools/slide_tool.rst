@@ -24,7 +24,7 @@ This tool can play album contents in recursive mode with children albums if any.
 
 .. figure:: images/slide_view.webp
 
-Plenty of items properties can be displayed as overlay while running. These one are show on bottom left side as an OSD (On Screen Display).
+Plenty of items properties can be displayed as overlay while running. These ones are shown on the bottom left side as an OSD (On Screen Display).
 
 .. figure:: images/slide_osd.webp
 
@@ -32,7 +32,7 @@ The basic slide show configuration should be easy to understand. The upper slide
 
 .. note::
 
-    The **Shuffle Images** mode is only available in automatic playback, i.e. when you start the slide show via the menu or toolbar button. It do not work in **Preview** mode when you start on the "play" button icon in the thumbnail or image preview.
+    The **Shuffle Images** mode is only available in automatic playback, i.e. when you start the slide show via the menu or toolbar button. It does not work in **Preview** mode when you start on the "play" button icon in the thumbnail or image preview.
 
 .. figure:: images/slide_config.webp
 

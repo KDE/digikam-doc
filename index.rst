@@ -496,7 +496,7 @@ Maintenance Tools
     :alt:
     :target: maintenance_tools.html
 
-    Maintening and Optimize Data From Your Collections
+    Maintaining and Optimize Data From Your Collections
 
 .. container:: toctile
 
@@ -614,7 +614,7 @@ Slideshow Tools
     :alt:
     :target: slideshow_tools.html
 
-    How to Uses Tools to Present Your Items
+    How to Use Tools to Present Your Items
 
 .. container:: toctile
 

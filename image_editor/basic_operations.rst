@@ -22,7 +22,7 @@ The editing functions of the Image Editor will make changes to your photograph. 
 
 You might prefer to take a copy of your photograph before you make any changes. You can use File --> Save As... to save a working copy.
 
-At any time before you save your photograph you can restore the view to the original image by selecting File --> Revert or clicking the The Image Editor Revert Button Revert button on the tool bar. You will lose any changes that you have made to the photograph since it was last saved.
+At any time before you save your photograph you can restore the view to the original image by selecting File --> Revert or clicking the Image Editor Revert button on the tool bar. You will lose any changes that you have made to the photograph since it was last saved.
 
 Undoing/Redoing Actions
 -----------------------

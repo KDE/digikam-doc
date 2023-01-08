@@ -1,5 +1,5 @@
 .. meta::
-   :description: Maintening and Optimize Data From Your Collections
+   :description: Maintaining and Optimize Data From Your Collections
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, maintenance
 
 .. metadata-placeholder

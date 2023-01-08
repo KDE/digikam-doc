@@ -19,16 +19,16 @@ Visit `the download page <https://www.digikam.org/download/>`_ of the digiKam We
 
 You’ll find all previous digiKam versions in the `attic <https://download.kde.org/Attic/digikam/>`_.
 
-Minimum system requirements
+Minimum System Requirements
 ---------------------------
 
-- **Operating System**: 64-bit Windows 7 or newer, Apple macOS 10.15 (Catalina) or newer and on M1, 64-bit Linux. Details see below.
+- **Operating System**: 64-bit Windows 7 or newer, Apple macOS 10.13 (High Sierra) or newer based on Intel or M1 architecture, 64-bit Linux. Details see below.
 
-- **CPU**: x86 Intel or AMD; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for depp-learning uses as with face detection and image quality sorting. Details see below.
+- **CPU**: x86 Intel or AMD; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for deep-learning uses as with face detection and image quality sorting. Details see below.
 
 - **GPU**: OpenGL 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible DirectX 9 or 11 drivers.
 
-- **RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for depp-learning uses as with face detection and image quality sorting. Details see below.
+- **RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for deep-learning uses as with face detection and image quality sorting. Details see below.
 
 .. note::
 
@@ -44,7 +44,9 @@ Minimum system requirements
 
 - **Storage**: SSDs will be the best choice for robustness and speed to host database and collection.
 
-digiKam on Linux
+.. _linux_requirements:
+
+digiKam On Linux
 -----------------
 
 **digiKam** can be installed on non-KDE Desktops without any issues.
@@ -55,16 +57,19 @@ digiKam on Linux
 Turn on **executable** property of AppImage file and run it. That all...
 
 .. figure:: videos/appimage_startup.gif
-    :width: 600px
+    :width: 500px
     :alt:
     :align: center
 
     AppImage Startup Screencast
 
-.. _digikam_windows:
+.. _windows_requirements:
 
-digiKam on Windows
+digiKam On Windows
 -------------------
+
+Using On Standard Desktop
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **digiKam** runs only on 64bit version of Windows. digiKam runs on Windows 7 and newer. We cannot guarantee that digiKam runs on server or embedded Windows version.
 
@@ -82,8 +87,8 @@ digiKam is available as an install and as a standalone version.
 
    - You can copy the digiKam folder on any external drive and run it on a different computer without installing it. However, your personal settings and downloads within digiKam are related to the computer you work on.   
 
-digiKam in a Windows domain
-----------------------------
+Using In A Windows Domain
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want to use digiKam with domain users with using Windows Active Directory and/or Group Policies ( `GPOs <https://learn.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-policy-objects>`) make sure all users have read/write rights to the following folders:
 
@@ -99,43 +104,98 @@ If you want to use digiKam with domain users with using Windows Active Directory
 
 Do also make sure no GPO is blocking the access to these folders.
 
-.. _digikam_macos:
+.. _macos_requirements:
 
-digiKam on macOS
+digiKam On macOS
 -----------------
 
-**digiKam** runs with Intel based Mac's on macOS 10.13 (High Sierra) and newer.
+The Non Signed Package
+~~~~~~~~~~~~~~~~~~~~~~
 
-digiKam runs also on Mac M1 computers using Rosetta version 2 binary translator.
+**digiKam** runs with Intel based Mac's on macOS 10.13 (High Sierra) and newer. For M1 based Mac's, you needs to use `Apple Roseta 2 <https://support.apple.com/en-us/HT211861>`_ instructions translator.
 
-When the pkg file is downloaded, to start the installer, a security warning will appears.
+When the **PKG** file is downloaded, to start the installer, a security warning will appears, because the package is not signed for the Apple Gatekeeper.
 
 .. figure:: images/macos_pkg_warning.webp
+    :width: 300px
     :alt:
     :align: center
 
-    The macOS Warning When you try to Run digiKam PKG After Downloading
+    The macOS Warning When You Try To Run digiKam PKG After Downloading
 
-You needs to give the rights to run from the **macOS Config Pannel/Security and Confidentiality**.
+You needs to give the rights to run from the **macOS Config Panel/Security and Confidentiality** to confirm to Gatekeeper that all is safe here.
 
 .. figure:: images/macos_pkg_security.webp
+    :width: 300px
     :alt:
     :align: center
 
-    The macOS Security Panel to Authorize digiKam PKG Installation
+    The macOS Security Panel To Authorize digiKam PKG Installation
 
 When installer is running, follow instructions from the assistant to install application on your computer.
 
 .. figure:: images/macos_pkg_installer.webp
+    :width: 300px
     :alt:
     :align: center
 
-    The digiKam macOS PKG is Started And Ready to Install
+    The digiKam macOS PKG is Started And Ready To Install
 
-.. _configuration_requirements:
+Application Rights
+~~~~~~~~~~~~~~~~~~
 
-Configuration Information
--------------------------
+When the installation is done, digiKam will need to access on system ressources to run properly. This will be ask by the system when digiKam run, depending of actions performed by user.
+See below some examples of rights set in the macOS **Security and Privacy** policy configuration panel:
+
+- **Automation**: This right is set when you try to open an album in Apple Finder file manager through digiKam.
+
+.. figure:: images/macos_privacy_automation.webp
+    :width: 300px
+    :alt:
+    :align: center
+
+    The macOS Security and Privacy Panel With The Automation Rights
+
+- **Accessibility**: If you want to change the desktop wallpaper with digiKam, this right must be turned on.
+
+.. figure:: images/macos_privacy_accessibility.webp
+    :width: 300px
+    :alt:
+    :align: center
+
+    The macOS Security and Privacy Panel With The Accessibility Rights
+
+- **Files And Folders**: if you a place your collections on your computer outside the Photos directory from your personal account, digiKam needs special right to access to contents.
+
+.. figure:: images/macos_privacy_filesfolders.webp
+    :width: 300px
+    :alt:
+    :align: center
+
+    The macOS Security and Privacy Panel With The Files And Folders Access Rights
+
+- **Full Disk**: This right is mandatory if you use Gphoto2 driver to access on system places to communicate with the device.
+
+.. figure:: images/macos_privacy_fulldisk.webp
+    :width: 300px
+    :alt:
+    :align: center
+
+    The macOS Security and Privacy Panel With The Full Disk Access Rights
+
+- **Photos**: if you want to share Apple Photos collection from your personal account, you will needs to turn on this rights.
+
+.. figure:: images/macos_privacy_photos.webp
+    :width: 300px
+    :alt:
+    :align: center
+
+    The macOS Security and Privacy Panel With The Photos Access Rights
+
+.. _configuration_files:
+
+Configuration Files
+-------------------
 
 digiKam's application-wide persistent settings are stored in the following locations, depending on your platform. 
 

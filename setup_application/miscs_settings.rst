@@ -32,6 +32,8 @@ The editorial changes done through the right sidebar can be quietly applied by d
 
 The updates settings allows to tune how the check for new application versions available online.
 
+.. _appearance_settings:
+
 Appearance Settings
 -------------------
 

@@ -1,5 +1,5 @@
 .. meta::
-   :description: How to Uses Tools to Present Your Items
+   :description: How to Use Tools to Present Your Items
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, slideshow, presentation
 
 .. metadata-placeholder

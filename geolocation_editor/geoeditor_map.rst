@@ -118,7 +118,7 @@ From this menu you can:
 
     You can customize the name, a comment to describe the location, and the place in the bookmarks hierarchy
 
-    - **Edit BookMarks**: this will show you a dialog with the comple hierarchy of bookmarks managed. You can change items properties, the place in hierarchy using drag and drop, and display the corresponding location on a maps from the right side. In the Hierarchy you can append new branches using **Add Folder** button. The **Remove** button allows you to delete an item in the hierarchy.
+    - **Edit Bookmarks**: this will show you a dialog with the complete hierarchy of bookmarks managed. You can change item properties, the place in hierarchy using drag and drop, and display the corresponding location on a map from the right side. In the Hierarchy you can append new branches using **Add Folder** button. The **Remove** button allows you to delete an item in the hierarchy.
 
     .. figure:: images/geoeditor_bookmark_edit.webp
         :alt:
@@ -130,4 +130,4 @@ From this menu you can:
 
 .. important::
 
-    The **Map View** provide also a **Add Bookmark** option in the context menu available over the map. This feature do not come from digiKam and works independntly of the digiKam **Bookmarks Manager** feature.
+    The **Map View** provide also a **Add Bookmark** option in the context menu available over the map. This feature do not come from digiKam and works independently of the digiKam **Bookmarks Manager** feature.

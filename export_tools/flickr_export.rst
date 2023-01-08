@@ -31,7 +31,7 @@ After successful signup digiKam will be allowed to send photos to the flickr web
 
 Then, simply authorize application and close the web browser. Return to the host application dialog, you will see the interface used to upload photos to Flickr, described in the next section.
 
-When the the tool is invoked for second time or later you are greeted with the following dialog, which shows the current account already used previously. Just select one from the list to be connected.
+When the tool is invoked for second time or later you are greeted with the following dialog, which shows the current account already used previously. Just select one from the list to be connected.
 
 .. figure:: images/export_flickr_account.webp
 
