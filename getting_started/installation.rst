@@ -19,7 +19,7 @@ Visit `the download page <https://www.digikam.org/download/>`_ of the digiKam We
 
 You’ll find all previous digiKam versions in the `attic <https://download.kde.org/Attic/digikam/>`_.
 
-Minimum system requirements
+Minimum System Requirements
 ---------------------------
 
 - **Operating System**: 64-bit Windows 7 or newer, Apple macOS 10.13 (High Sierra) or newer based on Intel or M1 architecture, 64-bit Linux. Details see below.
@@ -44,7 +44,9 @@ Minimum system requirements
 
 - **Storage**: SSDs will be the best choice for robustness and speed to host database and collection.
 
-digiKam on Linux
+.. _linux_requirements:
+
+digiKam On Linux
 -----------------
 
 **digiKam** can be installed on non-KDE Desktops without any issues.
@@ -55,16 +57,19 @@ digiKam on Linux
 Turn on **executable** property of AppImage file and run it. That all...
 
 .. figure:: videos/appimage_startup.gif
-    :width: 600px
+    :width: 500px
     :alt:
     :align: center
 
     AppImage Startup Screencast
 
-.. _digikam_windows:
+.. _windows_requirements:
 
-digiKam on Windows
+digiKam On Windows
 -------------------
+
+Using On Standard Desktop
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **digiKam** runs only on 64bit version of Windows. digiKam runs on Windows 7 and newer. We cannot guarantee that digiKam runs on server or embedded Windows version.
 
@@ -82,8 +87,8 @@ digiKam is available as an install and as a standalone version.
 
    - You can copy the digiKam folder on any external drive and run it on a different computer without installing it. However, your personal settings and downloads within digiKam are related to the computer you work on.   
 
-digiKam in a Windows domain
-----------------------------
+Using In A Windows Domain
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want to use digiKam with domain users with using Windows Active Directory and/or Group Policies ( `GPOs <https://learn.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-policy-objects>`) make sure all users have read/write rights to the following folders:
 
@@ -99,20 +104,21 @@ If you want to use digiKam with domain users with using Windows Active Directory
 
 Do also make sure no GPO is blocking the access to these folders.
 
-.. _digikam_macos:
+.. _macos_requirements:
 
-digiKam on macOS
+digiKam On macOS
 -----------------
 
 **digiKam** runs with Intel based Mac's on macOS 10.13 (High Sierra) and newer. For M1 based Mac's, you needs to use `Apple Roseta 2 <https://support.apple.com/en-us/HT211861>`_ instructions translator.
 
-When the pkg file is downloaded, to start the installer, a security warning will appears.
+When the **PKG** file is downloaded, to start the installer, a security warning will appears, because the package is not signed to Apple.
 
 .. figure:: images/macos_pkg_warning.webp
+    :width: 300px
     :alt:
     :align: center
 
-    The macOS Warning When you try to Run digiKam PKG After Downloading
+    The macOS Warning When You Try To Run digiKam PKG After Downloading
 
 You needs to give the rights to run from the **macOS Config Pannel/Security and Confidentiality**.
 
@@ -120,7 +126,7 @@ You needs to give the rights to run from the **macOS Config Pannel/Security and 
     :alt:
     :align: center
 
-    The macOS Security Panel to Authorize digiKam PKG Installation
+    The macOS Security Panel To Authorize digiKam PKG Installation
 
 When installer is running, follow instructions from the assistant to install application on your computer.
 
@@ -128,12 +134,12 @@ When installer is running, follow instructions from the assistant to install app
     :alt:
     :align: center
 
-    The digiKam macOS PKG is Started And Ready to Install
+    The digiKam macOS PKG is Started And Ready To Install
 
-.. _configuration_requirements:
+.. _configuration_files:
 
-Configuration Information
--------------------------
+Configuration Files
+-------------------
 
 digiKam's application-wide persistent settings are stored in the following locations, depending on your platform. 
 
