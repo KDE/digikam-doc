@@ -136,6 +136,39 @@ When installer is running, follow instructions from the assistant to install app
 
     The digiKam macOS PKG is Started And Ready To Install
 
+When the installation is done, digiKam will need to access on system ressources to run properly. This will be ask by the system when digiKam run, depending of actions performed by user.
+This rights are listed on the macOS **Security and Privacy** policy configuration panel, as you can see below.
+
+.. figure:: images/macos_privacy_automation.webp
+    :alt:
+    :align: center
+
+    The macOS Security and Privacy Panel With The Automation Rights
+
+.. figure:: images/macos_privacy_accessibility.webp
+    :alt:
+    :align: center
+
+    The macOS Security and Privacy Panel With The Accessibility Rights
+
+.. figure:: images/macos_privacy_filesfolders.webp
+    :alt:
+    :align: center
+
+    The macOS Security and Privacy Panel With The Files And Folders Access Rights
+
+.. figure:: images/macos_privacy_fulldisk.webp
+    :alt:
+    :align: center
+
+    The macOS Security and Privacy Panel With The Full Disk Access Rights
+
+.. figure:: images/macos_privacy_photos.webp
+    :alt:
+    :align: center
+
+    The macOS Security and Privacy Panel With The Photos Access Rights
+
 .. _configuration_files:
 
 Configuration Files
