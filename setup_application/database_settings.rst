@@ -63,9 +63,9 @@ MySQL Versus SQLite
 
 `MySQL <https://www.mysql.com/>`_ is an open-source, relational database management system, written in C and C++. Original development of MySQL by Michael Widenius and David Axmark beginning in 1994. Sun Microsystems acquired MySQL in 2008, which was later acquired by Oracle in 2010. MySQL currently works on almost all system platforms (Linux, Microsoft Windows, OS X, SunOS …).
 
-MariaDB server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry.
+`MariaDB <https://mariadb.org/>`_ server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry.
 
-`MariaDB <https://mariadb.org/>`_ has actually overtaken MySQL, ‘cause of few basic reasons:
+MariaDB has actually overtaken MySQL, ‘cause of few basic reasons:
 
     - MariaDB development is more open and vibrant.
 
@@ -77,7 +77,7 @@ MariaDB server is a community developed fork of MySQL server. Started by core me
 
     - Compatible and easy to migrate.
 
-digiKam also provides support for popular MySQL database engine. Of course, you might wonder why you’d want to switch to MySQL when SQLite already does a good job of managing the data? MySQL offers many advantages for storing digiKam data, especially when collections include more than 100,000 items. With such large collections, SQLite introduces latency which slows down the application.
+digiKam also provides support for popular MySQL database engine. Of course, you might wonder why you’d want to switch to MySQL when SQLite already does a good job of managing the data? MySQL offers many advantages for storing digiKam data, especially when collections include **more than 100,000 items**. With such large collections, SQLite introduces latency which slows down the application.
 
 Using MySQL as digiKam’s database back-end allows you to store the data on local as well as remote server. Local, to replace the local SQLite storage and latter, to use a shared computer through network. Using MySQL as digiKam’s database back-end allows you to store the data on a remote server. This way, you can use multiple digiKam installations (For instance,on your notebook and PC) to access and manage your photo collections. You can also use MySQL tools to backup and analyze digiKam’s data.
 
@@ -92,7 +92,7 @@ To switch from SQLite to MySQL database, go to :menuselection:`Settings --> Conf
 The MySQL Internal Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-While using a large collection, of size greater than 100,000 items, the application tends to slow down. To avoid the delay and maintain efficiency, digiKam provides option of using **MySQL Internal**. To be clear, this isn’t an actual server, or a public network. Instead, it is a server that runs only while application is running.
+While using a large collection, of size **greater than 100,000 items**, the application tends to slow down. To avoid the delay and maintain efficiency, digiKam provides option of using **MySQL Internal**. To be clear, this isn’t an actual server, or a public network. Instead, it is a server that runs only while application is running.
 
 Internal server creates a separate database that can be accessed (only while application is running) using the command:
 
@@ -100,7 +100,7 @@ Internal server creates a separate database that can be accessed (only while app
 
     mysql --socket=/home/[user_name]/.local/share/digikam/db_misc/mysql.socket digikam
 
-Internal server uses 3 MySQL Binary Tools: file:`mysql_install_db`, :file:`mysqladmin`, and :file:`mysqld`. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system.
+Internal server uses 3 MySQL Binary Tools: :file:`mysql_install_db`, :file:`mysqladmin`, and :file:`mysqld`. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system.
 
 .. figure:: images/setup_database_mysqlinternal.webp
     :alt:
@@ -115,7 +115,7 @@ The MySQL Remote Server
 
 Obviously, to use digiKam with a remote MySQL, you would require a MySQL server. Or, you could also install MariaDB, which serves the purpose well. (Could be installed easily using `this link <https://www.cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-ubuntu-20-04>`_.)
 
-Follow the instructions below, if you don’t have a dedicated user account and a digiKam database already set up. Run the commands in MySQL server (after replacing password with correct one):
+Follow the instructions below, if you don’t have a dedicated user account and a digiKam database already set up. Run the commands in MySQL server, after replacing *password* with correct one.
 
 .. note::
 
@@ -185,7 +185,7 @@ Database Backup Recommendation
 
 For security reasons, planing a database backup using crontab over the network can help against device dysfunctions. A NAS or an external drive can also be used for that.
 
-Each database can be named with a different name, not only *digikam*. This allows to users to backup only what is needed. For instance, naming **Core** database as digikamCore, allows to isolate only this table (the most important file). **Thumbnails**, **Similarity** and **Face Recognition** databases can always be regenerated for scratch.
+Each database can be named with a different name, not only *digikam*. This allows to users to backup only what is needed. For instance, naming **Core** database as *digiKam_Core*, allows to isolate only this table (the most important file). **Thumbnails**, **Similarity** and **Face Recognition** databases can always be regenerated for scratch.
 
 The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will explain how to maintain in time the database contents and how to synchronize the collections with databases information (and vice versa).
 
