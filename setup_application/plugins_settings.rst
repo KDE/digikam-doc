@@ -33,7 +33,7 @@ This view allows to see the list of plugins available for different part of the 
 
         The Image Editor Plugins Setup Page
 
-    - Batch Queue Manager: specific tools to process item in batch.
+    - Batch Queue Manager: specific digiKam tools to process item in batch.
 
     .. figure:: images/setup_plugins_batch.webp
         :alt:
@@ -41,7 +41,7 @@ This view allows to see the list of plugins available for different part of the 
 
         The Batch Queue Manager Plugins Setup Page
 
-    - Image Loaders: tools to load item contents in memory.
+    - Image Loaders: tools to load item contents in memory. These tools are also available in Showfoto.
 
     .. figure:: images/setup_plugins_loaders.webp
         :alt:
