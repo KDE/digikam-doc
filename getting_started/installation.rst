@@ -109,9 +109,12 @@ Do also make sure no GPO is blocking the access to these folders.
 digiKam On macOS
 -----------------
 
+The Non Signed Package
+~~~~~~~~~~~~~~~~~~~~~~
+
 **digiKam** runs with Intel based Mac's on macOS 10.13 (High Sierra) and newer. For M1 based Mac's, you needs to use `Apple Roseta 2 <https://support.apple.com/en-us/HT211861>`_ instructions translator.
 
-When the **PKG** file is downloaded, to start the installer, a security warning will appears, because the package is not signed to Apple.
+When the **PKG** file is downloaded, to start the installer, a security warning will appears, because the package is not signed for the Apple Gatekeeper.
 
 .. figure:: images/macos_pkg_warning.webp
     :width: 300px
@@ -120,9 +123,10 @@ When the **PKG** file is downloaded, to start the installer, a security warning 
 
     The macOS Warning When You Try To Run digiKam PKG After Downloading
 
-You needs to give the rights to run from the **macOS Config Pannel/Security and Confidentiality**.
+You needs to give the rights to run from the **macOS Config Panel/Security and Confidentiality** to confirm to Gatekeeper that all is safe here.
 
 .. figure:: images/macos_pkg_security.webp
+    :width: 300px
     :alt:
     :align: center
 
@@ -131,39 +135,58 @@ You needs to give the rights to run from the **macOS Config Pannel/Security and 
 When installer is running, follow instructions from the assistant to install application on your computer.
 
 .. figure:: images/macos_pkg_installer.webp
+    :width: 300px
     :alt:
     :align: center
 
     The digiKam macOS PKG is Started And Ready To Install
 
+Application Rights
+~~~~~~~~~~~~~~~~~~
+
 When the installation is done, digiKam will need to access on system ressources to run properly. This will be ask by the system when digiKam run, depending of actions performed by user.
-This rights are listed on the macOS **Security and Privacy** policy configuration panel, as you can see below.
+See below some examples of rights set in the macOS **Security and Privacy** policy configuration panel:
+
+- **Automation**: This right is set when you try to open an album in Apple Finder file manager through digiKam.
 
 .. figure:: images/macos_privacy_automation.webp
+    :width: 300px
     :alt:
     :align: center
 
     The macOS Security and Privacy Panel With The Automation Rights
 
+- **Accessibility**: If you want to change the desktop wallpaper with digiKam, this right must be turned on.
+
 .. figure:: images/macos_privacy_accessibility.webp
+    :width: 300px
     :alt:
     :align: center
 
     The macOS Security and Privacy Panel With The Accessibility Rights
 
+- **Files And Folders: if you a place your collections on your computer outside the Photos directory from your personal account, digiKam needs special right to access to contents.
+
 .. figure:: images/macos_privacy_filesfolders.webp
+    :width: 300px
     :alt:
     :align: center
 
     The macOS Security and Privacy Panel With The Files And Folders Access Rights
 
+- **Full Disk**: This right is mandatory if you use Gphoto2 driver to access on system places to communicate with the device.
+
 .. figure:: images/macos_privacy_fulldisk.webp
+    :width: 300px
     :alt:
     :align: center
 
     The macOS Security and Privacy Panel With The Full Disk Access Rights
 
+- **Photos**: if you want to share Apple Photos collection from your personal account, you will needs to turn on this rights.
+
 .. figure:: images/macos_privacy_photos.webp
+    :width: 300px
     :alt:
     :align: center
 
