@@ -165,7 +165,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
 
     The macOS Security and Privacy Panel With The Accessibility Rights
 
-- **Files And Folders: if you a place your collections on your computer outside the Photos directory from your personal account, digiKam needs special right to access to contents.
+- **Files And Folders**: if you a place your collections on your computer outside the Photos directory from your personal account, digiKam needs special right to access to contents.
 
 .. figure:: images/macos_privacy_filesfolders.webp
     :width: 300px
