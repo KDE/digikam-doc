@@ -20,7 +20,7 @@ Introduction
 
 Many digital cameras support taking of short movie clips. These clips are usually stored in AVI, MOV, or MP4 format. digiKam understands metadata from these formats and will generate thumbnails for the movie files.
 
-However, digiKam is not a movie editing application and it does not have any built-in movie editing capabilities. If you double click on a movie file digiKam you can preview video or choose a dedicated viewing / editing application through your desktop settings.
+However, digiKam is not a movie editing application and it does not have any built-in movie editing capabilities. If you double click on a movie file digiKam you can preview video or choose a dedicated viewing / editing application through your desktop settings. Viewing your movie files while a slideshow is also supported.
 
 Video Formats
 -------------
@@ -40,8 +40,8 @@ Video Features
 
 With digiKam, you will be able to read video metadata, such as movie length, video frames per second, video size, and encoding options, in order to populate the database at scanning and to perform searches on your collection about video properties. You will be able to play video in embedded preview mode, and in a slideshow. This includes previewing video from your camera device before downloading (only with USB Mass Storage connection mode).
 
-.. figure:: images/preview_video_player.webp
+.. figure:: videos/preview_video_player.gif
     :alt:
     :align: center
 
-    digiKam Preview Mode Can Play Video With All Supported Movie Formats
+    Screencast of digiKam Preview Mode Playing A Record Taken with An iPhone
