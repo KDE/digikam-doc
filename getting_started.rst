@@ -11,7 +11,7 @@
 .. _getting_started:
 
 ###############
-Getting started
+Getting Started
 ###############
 
 This section give an overview to start with digiKam.
