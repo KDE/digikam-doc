@@ -15,11 +15,11 @@ Under Ubuntu 22.04 and later:
 1. To install Sphinx and the Sphinx Theme use `sudo apt install python3-sphinx`
 2. You can check whether Sphinx was installed successfully by running `sphinx-build --version`
 
-## Running Sphinx On Your Computer
+## Running Sphinx on Your Computer
 
 After you cloned this repository (only need to be done once), use a command line to go to its root folder (e.g. with `cd /path/to/digikam-docs`)
 
-### Generate An HTML Web Documentation
+### Generate an HTML Web Documentation
 
 Under **Linux:** run `make html`
 
@@ -27,7 +27,7 @@ The HTML is generated in `build/html`. Open the file `index.html` in your prefer
 
 [![](project/images/handbook_HTML.webp "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/handbook_HTML.webp)
 
-### Generate An EPUB E-book
+### Generate an EPUB E-book
 
 Under **Linux:** run `make epub`
 
@@ -406,7 +406,7 @@ All POT file-names starts with **docs_digikam_org** prefix.
 
 The status of the digiKam documentation translations is [available here](https://l10n.kde.org/stats/gui/trunk-kf5/package/digikam-doc/).
 
-#### How To Add A New Target Language
+#### How to Add a New Target Language
 
 The list of current enabled translation languages are in the [locale/](locale) sub-directory.
 Corresponding languages must be enabled in the documentation web-site following this list. 4 files needs to be patched:
@@ -416,7 +416,7 @@ Corresponding languages must be enabled in the documentation web-site following 
 - The section named **docs-digikam-org** from the [custom-jobs Json infrastrusture configuration](https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json) dedicated to rule translations.
 - The **script** section from [gitlab CI Yaml config file](.gitlab-ci.yml) where a new line must be add to generate the supported language in the Continuous Integration workflow.
 
-#### How To Compile A Supported Langauge
+#### How to Compile a Supported Langauge
 
 By defaualt the make command generate the English version. If you want to test an internationalized version using transaltions hosted from **locale** disrectory,
 use the syntax below:
@@ -444,7 +444,7 @@ This documentation is automatically updated online (including translations) at e
 If the compilation of the internationalized versions can be completed with the Continuous Deployment workflow,
 you can show a translated version of this documentation by selecting a language from the left side of the publication page.
 
-## Convert EPUB To PDF
+## Convert EPUB to PDF
 
 Sphinx allows to generate PDF using Latex engine in background, but it converter as several limitations, as the non support of WEBP and GIF formats used for screenshots and screencast.
 
