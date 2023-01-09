@@ -22,6 +22,9 @@ These settings group all application rules customizable by users but not covered
 Behavior Settings
 -----------------
 
+Scan Operations
+~~~~~~~~~~~~~~~
+
 .. figure:: images/setup_miscs_behavior.webp
     :alt:
     :align: center
@@ -35,6 +38,9 @@ Set the option **Fast Scan** to significantly speed up the scan. New items, dele
 **Detect faces in newly added images** option will perform automatically a face detection on items imported to the collections.
 
 Set the option **Remove obsolete core database objects** to force digiKam to clean up the core database from obsolete item entries. Entries are only deleted if the connected item file was already removed, i.e. the database object wastes space. This option does not clean up other databases as the thumbnails or recognition db. For clean up routines for other databases, please use the maintenance tool. Take a care that option slow down startup stages.
+
+Generic Rules
+~~~~~~~~~~~~~
 
 With the **Confirm when moving items to trash** and **Confirm when permanently deleting items** settings you can set the verbosity of digiKam when you delete a photograph or an Album. See the :ref:`Deleting a Photograph <deleting_photograph>` and the :ref:`Deleting an Album <deleting_album>` sections for more details.
 
@@ -60,6 +66,9 @@ With the **String comparison type** setting, you can set the way in which string
     - **Normal** uses a more technical approach. Use this style if you want to entitle albums with ISO dates (as *201006* or *20090523*) and the albums should be sorted according to these dates.
 
 With the **Lower bound for minimum similarity** option, you can select the lower bound of the minimum similarity threshold for fuzzy and duplicates searches. The default value is 40. Selecting a lower value than 40 can make the search really slow.
+
+Application Updates
+~~~~~~~~~~~~~~~~~~~
 
 The **Updates** settings allows to tune how the check the online availablity of a new application version. You can select **Only For Stable Releases** which are official versions safe to use in production. Another choice is **Weekly Pre-Releases** which are proposed to tests quickly new features but not recommended to use in production as bugs can remain.
 
