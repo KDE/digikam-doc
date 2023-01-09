@@ -46,7 +46,7 @@ Minimum System Requirements
 
 .. _linux_requirements:
 
-digiKam On Linux
+digiKam on Linux
 -----------------
 
 **digiKam** can be installed on non-KDE Desktops without any issues.
@@ -65,10 +65,10 @@ Turn on **executable** property of AppImage file and run it. That all...
 
 .. _windows_requirements:
 
-digiKam On Windows
+digiKam on Windows
 -------------------
 
-Using On Standard Desktop
+Using on Standard Desktop
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **digiKam** runs only on 64bit version of Windows. digiKam runs on Windows 7 and newer. We cannot guarantee that digiKam runs on server or embedded Windows version.
@@ -87,7 +87,7 @@ digiKam is available as an install and as a standalone version.
 
    - You can copy the digiKam folder on any external drive and run it on a different computer without installing it. However, your personal settings and downloads within digiKam are related to the computer you work on.   
 
-Using In A Windows Domain
+Using in a Windows Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want to use digiKam with domain users with using Windows Active Directory and/or Group Policies ( `GPOs <https://learn.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-policy-objects>`) make sure all users have read/write rights to the following folders:
@@ -106,10 +106,10 @@ Do also make sure no GPO is blocking the access to these folders.
 
 .. _macos_requirements:
 
-digiKam On macOS
+digiKam on macOS
 -----------------
 
-The Non Signed Package
+The non Signed Package
 ~~~~~~~~~~~~~~~~~~~~~~
 
 **digiKam** runs with Intel based Mac's on macOS 10.13 (High Sierra) and newer. For M1 based Mac's, you needs to use `Apple Roseta 2 <https://support.apple.com/en-us/HT211861>`_ instructions translator.
