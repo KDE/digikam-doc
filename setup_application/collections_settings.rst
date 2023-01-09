@@ -44,6 +44,8 @@ For each type, the **Add Collection** button allows to append an entry in the li
 
     The digiKam Collections Configuration Page with the List of Root Album Folders
 
+.. _ignored_directories:
+
 Ignore Directories from your Collections
 ----------------------------------------
 

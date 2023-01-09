@@ -96,7 +96,7 @@ Nothing really to select here. You can cancel or start the scan with **Finish**.
 
 .. note::
 
-    digiKam will recurse the library path to its full depth. You cannot exclude (prune) any sub-path unless you make that sub-path hidden. You have to do that from outside of digiKam by putting a dot in front of the sub-path.
+    digiKam will recurse the library path to its full depth. You cannot exclude (prune) any sub-path unless you make that sub-path hidden. You have to do that from outside of digiKam by putting a dot in front of the sub-path. Later in digiKam configuration panel, you can list folders to exclude with the :ref:`Ignored Directories <ignored_directories>` settings.
 
 As digiKam uses your folders on your hard disk directly, other applications like file managers can remove any albums outside a digiKam session. In this case digiKam will ask you at the next session whether all albums that have been removed from the digiKam photographs root path shall be deleted from albums database. If you want to move folders around and don't want to do that in digiKam, we suggest you do that while digiKam is running, so the database will be kept in sync and you do not lose any metadata.
 
