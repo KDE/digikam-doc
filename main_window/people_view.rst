@@ -230,10 +230,6 @@ The results of facial recognition appear in the form of unconfirmed results. The
 
 About the face categorization and sorting, faces will appear by default categorized based on their name. You may change this behaviour, by going to :menuselection:`View --> Separate Items`. Note that using a different categorization order will lead to **Confirmed** and **Unconfirmed** faces appearing mixed with one another. To change this behaviour you may modify the sorting order within each category by going to :menuselection:`View --> Sort Items --> By Face Type`.
 
-.. note::
-
-    In the :ref:`Miscs Behavior <behavior_settings>` view of the configution dialog another option can be used to only show the face tags where a name have been assigned in the tree-view.
-
 To improve results of face recognition, apart from using the settings mentioned previously, face results may also be improved by rebuilding the training data. This may be done through :menuselection:`Tools --> Maintenance --> Detect And Recognize Faces -> Clear And Rebuild All Training Data`.
 
 .. _manual_face_tagging:
@@ -297,6 +293,10 @@ You can tag people manually by different way:
         :align: center
 
         Screencast of Manual Face Tagging From Icon-View
+
+    .. note::
+
+        In the :ref:`Miscs Behavior <behavior_settings>` view of the configution dialog, an option can be turned on to only populate the tags tree-view with the face tags assigned to a face while you enter a name.
 
 In case there's a face you don't wish to be recognized, you can mark it as ignored. This leads to the creation of a new **Ignored** tag, you can later unmark the face if needed.
 

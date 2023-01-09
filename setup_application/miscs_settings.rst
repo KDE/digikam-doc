@@ -15,7 +15,7 @@ Miscellaneous Settings
 
 .. contents::
 
-These settings group all application rules customizable by users but not categorized in previous chapters.
+These settings group all application rules customizable by users but not covered in previous setting categories.
 
 .. _behavior_settings:
 
@@ -40,7 +40,7 @@ With the **Confirm when moving items to trash** and **Confirm when permanently d
 
 The editorial changes done through the right sidebar can be quietly applied by digiKam when setting the **Do not confirm when applying changes in the right sidebar** option. Otherwise the changes must be applied by pressing the **Apply changes** button.
 
-The option **Show only face tags for assigning names in people sidebar** will restrict people tree-view contents to face tags where the name property is set.
+The option **Show only face tags for assigning names in people sidebar** will restrict people tree-view contents to face tags available when you assign a name to an **Unconfirmed** face. If you want to learn more details about face management, take a look to :ref:`this section of the manual <people_view>`.
 
 The option **Expand current tree item with a single mouse click** allows to customize how the mouse button will be used to expand a nested album branch.
 
@@ -84,13 +84,15 @@ Appearance Settings
 
     The digiKam Appearance Configuration Page
 
-With the Show splash screen at startup setting, you can switch off the display of the splash screen when application loads. This may speed up the start time slightly.
+With the **Show splash screen at startup** setting, you can switch off the display of the splash screen when application loads. This may speed up the start time slightly.
 
-With the Sidebar tab title setting, you can set how sidebars on the sides will show the tab titles. Use Only For Active Tab option only if you use a small screen resolution as with a laptop computer. Else For All Tabs will be a best choice to discover quickly all internal features of digiKam.
+With the **Use native file dialogs from system** setting, you can switch from the basic (but universal) open file dialog included in the application, to the more powerful open file dialog provided by the desktop.
 
-With the Widget style setting, you can choose the default application window decoration and looks. Fusion style is the best choice under all desktop.
+With the **Sidebar tab title** setting, you can set how sidebars on the sides will show the tab titles. Use **Only For Active Tab** option only if you use a small screen resolution as with a laptop computer. Else **For All Tabs* will be a best choice to discover quickly all internal features of digiKam.
 
-With the Icon theme setting, you can choose the default application icon theme. Theme availability depends of desktop used to run digiKam.
+With the **Widget style** setting, you can choose the default application window decoration and looks. **Fusion** style is the best choice under all desktop.
+
+With the **Icon theme** setting, you can choose the default application icon theme. Theme availability depends of desktop used to run digiKam.
 
 .. _grouping_settings:
 
