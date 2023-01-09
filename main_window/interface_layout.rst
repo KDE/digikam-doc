@@ -98,4 +98,4 @@ The window top shows the Menu Bar and the Main Toolbar below.
 
 11. Link to digikam.org, also an indicator for ongoing processes
 
-You can customize the Toolbar by choosing :menuselection:`Settings --> Configure Toolbars...` or click with the right mouse button on it and choose Configure Toolbars... from the context menu.
+You can customize the Toolbar by choosing :menuselection:`Settings --> Configure Toolbars...` or click with the right mouse button on it and choose **Configure Toolbars...** from the context menu.

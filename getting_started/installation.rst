@@ -90,7 +90,7 @@ digiKam is available as an install and as a standalone version.
 Using in a Windows Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you want to use digiKam with domain users with using Windows Active Directory and/or Group Policies ( `GPOs <https://learn.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-policy-objects>`) make sure all users have read/write rights to the following folders:
+If you want to use digiKam with domain users with using Windows Active Directory and/or Group Policies (`GPOs <https://learn.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-policy-objects>`_) make sure all users have read/write rights to the following folders:
 
 .. epigraph::
 
