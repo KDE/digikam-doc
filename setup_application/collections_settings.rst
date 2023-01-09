@@ -27,6 +27,10 @@ The **Root Album Folders** list three types of collection which can be reference
 
 For each type, the **Add Collection** button allows to append an entry in the list. Entry properties are the root album folder **name** and the root album folder **path**. To edit the properties of an entry, use the **update button** on the right of the path.To remove an entry, use the **red trash button** on right side. 
 
+.. important::
+
+    The **Monitor the Albums for External Changes** option will trigger the database to update information. This can be a time-consuming operation especially undr macOS and with network file system.
+
 .. note::
 
     File write acess in collection is necessary to change items and metadata.
