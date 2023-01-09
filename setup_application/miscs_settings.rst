@@ -239,6 +239,12 @@ System Settings
 
 This section allows to tune special low level configurations used by application. Only change these settings if you know what you do.
 
+    - **Use high DPI scaling from the screen factor**: with this option application will scale coordinates in device independent maneer according to display scale factors provided by the operating system.
+    - **Use pixmaps with high DPI resolution**: with this option, pixmaps sizes used internally by application will have a device-independent layout geometry. To use in multi-screen context when resolutions are not the same.
+    - **Disable hardware acceleration OpenCL**: this option will disable GPU accelerations, especially with faces management.
+    - **Enable internal debug logging**: this options will turn one the debug trace on the console used to investiguate dysfunctions.
+    - **Download Face Engine Data**: With this button you can load face engine deep-learning model files if you pass this stage at first-run.
+
 .. figure:: images/setup_miscs_system.webp
     :alt:
     :align: center
