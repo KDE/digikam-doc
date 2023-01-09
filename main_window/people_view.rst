@@ -228,7 +228,7 @@ The results of facial recognition appear in the form of unconfirmed results. The
     - Use the **Reject** button, if the suggestion is incorrect. This would move the face back to **Unknown**.
     - Use the **Delete** button, if the suggestion is not a face. This will remove the face region from the database.
 
-About the face categorization and sorting, faces will appear by default categorized based on their name. You may change this behaviour, by going to :menuselection:`View --> Separate Items`. Note that using a different categorization order will lead to **Confirmed** and **Unconfirmed** faces appearing mixed with one another. To change this behaviour you may modify the sorting order within each category by going to :menuselection:`View --> Sort Items --> By Face Type`.
+About the face categorization and sorting, faces will appear by default categorized based on their name. You may change this behavior, by going to :menuselection:`View --> Separate Items`. Note that using a different categorization order will lead to **Confirmed** and **Unconfirmed** faces appearing mixed with one another. To change this behaviour you may modify the sorting order within each category by going to :menuselection:`View --> Sort Items --> By Face Type`.
 
 To improve results of face recognition, apart from using the settings mentioned previously, face results may also be improved by rebuilding the training data. This may be done through :menuselection:`Tools --> Maintenance --> Detect And Recognize Faces -> Clear And Rebuild All Training Data`.
 

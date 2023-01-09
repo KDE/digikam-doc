@@ -43,4 +43,4 @@ Two other configuration views exists to customize:
 
 .. note::
 
-    Enabling the **Import Items** tooltips can requires to turn on the **Use File Metadata** option from the **Camera Behavior** settings panel. Look :ref:`this section <camera_behavior>` from this manual for more details.
+    Enabling the **Import Items** tooltips can require to turn on the **Use File Metadata** option from the **Camera Behavior** settings panel. Look :ref:`this section <camera_behavior>` from this manual for more details.
