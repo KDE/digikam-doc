@@ -67,11 +67,33 @@ The option **Use Version With Debug Symbols** allows to download version includi
 
 Finally, on the bottom, a **Check Now** button allow to send a request for an update. The **Last check** date is indicated on the left side. If a new version is avaialble online, a dialog will appears as below.
 
-.. figure:: images/setup_new_version.webp
+.. figure:: images/setup_update_new.webp
     :alt:
     :align: center
 
     Dialog When a new digiKam Version is Available Online
+
+From this dialog, press the **Download** button to process. A new progress dialog will appears as below.
+
+.. figure:: images/setup_update_download.webp
+    :alt:
+    :align: center
+
+    Progress Dialog to Get the new Version Available Online
+
+When the download is complete, a checksum is computed to be sure that files is not corrupted. If all is fine, a new dialog appears as below.
+
+.. figure:: images/setup_update_install.webp
+    :alt:
+    :align: center
+
+    Dialog When Install is Ready to be Processed
+
+Just press **Install** button to process. The current session will be close and installer will be started to install application.
+
+.. note::
+
+    AppImage Linux bundle do not require installation on the system. File is downloaded and ready to use. The dialog propose to open desktop files-manager at the download place instead.
 
 .. _appearance_settings:
 
