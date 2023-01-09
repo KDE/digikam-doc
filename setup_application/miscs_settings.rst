@@ -86,6 +86,12 @@ Appearance Settings
 
 With the **Show splash screen at startup** setting, you can switch off the display of the splash screen when application loads. This may speed up the start time slightly.
 
+.. figure:: images/setup_splash_screen.webp
+    :alt:
+    :align: center
+
+    The Splash Screen Visible at Startup of a digiKam Session
+
 With the **Use native file dialogs from system** setting, you can switch from the basic (but universal) open-file dialog included in the application to the more powerful open-file dialog provided by the desktop.
 
 +-------------------------------------------------------+------------------------------------------------------+
