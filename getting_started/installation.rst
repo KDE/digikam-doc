@@ -40,7 +40,7 @@ Minimum System Requirements
     :alt:
     :align: center
 
-    A Double-Screens Linux Station With **Main Window** On The Left And **Light Table** On The Right
+    A Double-Screens Linux Station with **Main Window** on the Left and **Light Table** on the Right
 
 - **Storage**: SSDs will be the best choice for robustness and speed to host database and collection.
 
@@ -61,7 +61,7 @@ Turn on **executable** property of AppImage file and run it. That all...
     :alt:
     :align: center
 
-    AppImage Startup Screencast
+    Screencast of AppImage Startup
 
 .. _windows_requirements:
 
@@ -121,7 +121,7 @@ When the **PKG** file is downloaded, to start the installer, a security warning 
     :alt:
     :align: center
 
-    The macOS Warning When You Try To Run digiKam PKG After Downloading
+    The macOS Warning When you Try to Run digiKam PKG after Downloading
 
 You needs to give the rights to run from the **macOS Config Panel/Security and Confidentiality** to confirm to Gatekeeper that all is safe here.
 
@@ -130,7 +130,7 @@ You needs to give the rights to run from the **macOS Config Panel/Security and C
     :alt:
     :align: center
 
-    The macOS Security Panel To Authorize digiKam PKG Installation
+    The macOS Security Panel to Authorize digiKam PKG Installation
 
 When installer is running, follow instructions from the assistant to install application on your computer.
 
@@ -139,7 +139,7 @@ When installer is running, follow instructions from the assistant to install app
     :alt:
     :align: center
 
-    The digiKam macOS PKG is Started And Ready To Install
+    The digiKam macOS PKG is Started and Ready to Install
 
 Application Rights
 ~~~~~~~~~~~~~~~~~~
@@ -154,7 +154,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
     :alt:
     :align: center
 
-    The macOS Security and Privacy Panel With The Automation Rights
+    The macOS Security and Privacy Panel with the Automation Rights
 
 - **Accessibility**: If you want to change the desktop wallpaper with digiKam, this right must be turned on.
 
@@ -163,7 +163,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
     :alt:
     :align: center
 
-    The macOS Security and Privacy Panel With The Accessibility Rights
+    The macOS Security and Privacy Panel with the Accessibility Rights
 
 - **Files And Folders**: if you a place your collections on your computer outside the Photos directory from your personal account, digiKam needs special right to access to contents.
 
@@ -172,7 +172,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
     :alt:
     :align: center
 
-    The macOS Security and Privacy Panel With The Files And Folders Access Rights
+    The macOS Security and Privacy Panel with the Files and Folders Access Rights
 
 - **Full Disk**: This right is mandatory if you use Gphoto2 driver to access on system places to communicate with the device.
 
@@ -181,7 +181,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
     :alt:
     :align: center
 
-    The macOS Security and Privacy Panel With The Full Disk Access Rights
+    The macOS Security and Privacy Panel with the Full Disk Access Rights
 
 - **Photos**: if you want to share Apple Photos collection from your personal account, you will needs to turn on this rights.
 
@@ -190,7 +190,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
     :alt:
     :align: center
 
-    The macOS Security and Privacy Panel With The Photos Access Rights
+    The macOS Security and Privacy Panel with the Photos Access Rights
 
 .. _configuration_files:
 
@@ -228,7 +228,12 @@ Application Updates
 
 .. important::
 
-    If you process a major version update, as for example from version 7 to version 8, we recommend to backup :ref:`your database files <database_intro>`, as generaly internal schema can changes. Typically, digiKam is able to migrate tables from an older version to a new one, and all is done automatically at startup, but in all cases, it's always better to save these importants digiKam files before to upgrade the application.
+    If you process a major version update, as for example from version 7 to version 8, we recommend to backup :ref:`your database files <database_intro>`, as generaly internal schema can changes. Typically, digiKam is able to migrate tables from an older version to a new one, and all is done automatically at startup, but in all cases, it's always better to save these importants digiKam files before to upgrade the application. Look also the :ref:`Database Backup <database_backup>` section from this manual for more recommendations.
 
-If you use a bundle as offcial Linux AppImage, macOS package, or Windows installer, the application can be updated using the :menuselection:`Help --> Check For New Version menu entry`. Look also the updates settings :ref:`in Behavior page <behavior_settings>` from the configuration dialog.
+If you use a bundle as official Linux AppImage, macOS package, or Windows installer, the application can be updated using the :menuselection:`Help --> Check For New Version menu entry`. Look also the updates settings :ref:`in Behavior page <behavior_settings>` from the configuration dialog.
 
+.. figure:: images/updates_new_version.webp
+    :alt:
+    :align: center
+
+    The Dialog to Update Application Using Online Weekly Builds
