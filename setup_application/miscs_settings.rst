@@ -149,14 +149,12 @@ With the **Widget style** setting, you can choose the default application window
 
 With the **Icon theme** setting, you can choose the default application icon theme. Theme availability depends of desktop used to run digiKam.
 
-Finaly, the **Application font** allow to customize the font to use everywhere in the application. Note that extra options exists also to customize fonts for the :ref:`album tree-view <treeview_font>`, the :ref:`icon-view <iconview_font>`, and the :ref:`tooltip <tooltip_font>`.
+Finaly, the **Application font** option allow to customize the font to use everywhere in the application. Note that extra options exists also to customize fonts for the :ref:`album tree-view <treeview_font>`, the :ref:`icon-view <iconview_font>`, and the :ref:`tooltip <tooltip_font>`.
 
 .. _grouping_settings:
 
 Grouping Settings
 -----------------
-
-This section list the operations to perform on all grouped items depending on the usage context.
 
 .. figure:: images/setup_miscs_grouping.webp
     :alt:
@@ -164,6 +162,28 @@ This section list the operations to perform on all grouped items depending on th
 
     The digiKam Grouping Configuration Page
 
+This section list the operations to perform on all grouped items depending on the usage context. Operations supported are:
+
+    - **Metadata**: when you change information to store in files or in the database.
+    - **Import/Export Tools**: to import and export items. 
+    - **Batch Queue Manager**: to process all items from a group.
+    - **Light Table**: to display grouped items when reviewing by pair.
+    - **Slideshow**: to show all grouped items on the screen.
+    - **Renaming**: to all items from a group. 
+    - **Tools**: to post process all items from a group.
+
+For each case, you can select if digiKam can:
+
+- **No**: do nothing.
+- **yes**: operate items.
+- **Ask**: ask to confirm before to continue.
+
+.. figure:: images/setup_operation_warning.webp
+    :alt:
+    :align: center
+
+    The Dialog to Warn about Grouped Operation
+    
 .. _spellcheck_settings:
 
 Spellcheck Settings
