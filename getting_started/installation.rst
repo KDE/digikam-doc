@@ -230,4 +230,5 @@ Application Updates
 
     If you process a major version update, as for example from version 7 to version 8, we recommend to backup :ref:`your database files <database_intro>`, as generaly internal schema can changes. Typically, digiKam is able to migrate tables from an older version to a new one, and all is done automatically at startup, but in all cases, it's always better to save these importants digiKam files before to upgrade the application.
 
-If you use a bundle as offcial Linux AppImage, macOS package, or Windows installer, the application can be updated using the :menuselection:`Help --> Check For New Version menu entry`.
+If you use a bundle as offcial Linux AppImage, macOS package, or Windows installer, the application can be updated using the :menuselection:`Help --> Check For New Version menu entry`. Look also the updates settings :ref:`in Behavior page <behavior_settings>` from the configuration dialog.
+

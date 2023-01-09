@@ -17,6 +17,8 @@ Miscellaneous Settings
 
 These settings group all application rules customizable by users but not categorized in previous chapters.
 
+.. _behavior_settings:
+
 Behavior Settings
 -----------------
 
