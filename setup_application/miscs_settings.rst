@@ -71,7 +71,7 @@ Finally, on the bottom, a **Check Now** button allow to send a request for an up
     :alt:
     :align: center
 
-    Dialog When a new digiKam Version is Avaialble Online
+    Dialog When a new digiKam Version is Available Online
 
 .. _appearance_settings:
 
