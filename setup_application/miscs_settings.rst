@@ -28,15 +28,34 @@ Behavior Settings
 
     The digiKam Behavior Configuration Page
 
-**Scan for new items at startup** option will force digiKam to scan the album library tree for new items added or removed between digiKam sessions. This may slow down the start time of digiKam. If any items have been removed from album library, digiKam will ask you confirmation before to remove definitely item references in database. To be faster, uses the **Fast Scan** option which will limits the database updates operations.
+Set the option **Scan for new items at startup** to force digiKam to scan all collections for new items to register new elements in database. The scan is performed in the background throughthe progress manager available in the statusbar when digiKam main interface is loaded. If your computer is fast enough, this will have no effect on usability of digiKam while scanning. If your collections are huge or if you use a remote database, this can introduce low latency, and it is recommended to disable this option and to plan a manual scan through the maintenance tool at the right moment.
 
-With the **Scroll current item to center of thumbbar** setting, you can force thumbbar to center current selected item with mouse pointer on the center of visible area.
+Set the option **Fast Scan** to significantly speed up the scan. New items, deleted and also renamed items are found. In order to find items that have been changed, this option must be deactivated.
 
-With the **String comparison type** setting, you can set the way in which strings are compared inside digiKam. This influences the sorting of the tree views. **Natural** tries to compare strings in a way that regards some normal conventions. The result will be sort naturally even if they have a different number of digits inside. **Normal** uses a more technical approach. Use this style if you want to entitle albums with ISO dates (201006 or 20090523) and the albums should be sorted according to these dates.
+**Detect faces in newly added images** option will perform automatically a face detection on items imported to the collections.
+
+Set the option **Remove obsolete core database objects** to force digiKam to clean up the core database from obsolete item entries. Entries are only deleted if the connected item file was already removed, i.e. the database object wastes space. This option does not clean up other databases as the thumbnails or recognition db. For clean up routines for other databases, please use the maintenance tool. Take a care that option slow down startup stages.
 
 With the **Confirm when moving items to trash** and **Confirm when permanently deleting items** settings you can set the verbosity of digiKam when you delete a photograph or an Album. See the :ref:`Deleting a Photograph <deleting_photograph>` and the :ref:`Deleting an Album <deleting_album>` sections for more details.
 
-The editorial changes done through the right sidebar can be quietly applied by digiKam when setting the **Apply changes in the right sidebar without confirmation** option. Otherwise the changes must be applied by pressing the **Apply changes** button.
+The editorial changes done through the right sidebar can be quietly applied by digiKam when setting the **Do not confirm when applying changes in the right sidebar** option. Otherwise the changes must be applied by pressing the **Apply changes** button.
+
+The option **Show only face tags for assigning names in people sidebar**
+
+The option **Expand current tree item with a single mouse click** allows to customize how the mouse button will be used to expand a nested album branch.
+
+With the **Scroll current item to center of thumbbar** setting, you can force thumbbar to center current selected item with mouse pointer on the center of visible area.
+
+The **Get album date source** option allows to adjust the album date depending on the option set when new items are found during scanning. Possible values are:
+
+    - **From The Newest Item Date**: to take the date from the newest item hosted in album.
+    - **From The Oldest Item Date**: to take the date from the oldest item hosted in album.
+    - **From The Average Date**: to compute the date from an average of all items hosted in album.
+    - **From The Folder Date**: to take the file system date.
+    - **No Change Of Date**: do not modify the date.
+
+With the **String comparison type** setting, you can set the way in which strings are compared inside digiKam. This influences the sorting of the tree views. **Natural** tries to compare strings in a way that regards some normal conventions. The result will be sort naturally even if they have a different number of digits inside. **Normal** uses a more technical approach. Use this style if you want to entitle albums with ISO dates (201006 or 20090523) and the albums should be sorted according to these dates.
+
 
 The **Updates** settings allows to tune how the check for new application versions available online.
 
