@@ -182,7 +182,7 @@ For each case, you can select if digiKam can:
     :alt:
     :align: center
 
-    The Dialog to Warn about Grouped Operation
+    The Dialog to Warn about Grouped Renaming File Operations
     
 .. _spellcheck_settings:
 
@@ -197,7 +197,17 @@ This section allows to control the spellchecking operations done in background i
 
     The digiKam Spellcheck Configuration Page
 
+Spellcheck can be used on captions, titles, and other text-edit widgets to auto-detect the current language used in text and will propose alternative with miss-spelled words. With entries where alternative language can be specified, the contextual language will be used to parse text. Spellcheck depends of open-source **Backends**, including **Language Dictionaries**, to operate sentence analysis. Availabilities of both are listed in this view for information. If you want to add new language or dictionnaries, you need to install relevant packages on your system.
+
+.. figure:: images/setup_captions_spellcheck.webp
+    :alt:
+    :align: center
+
+    The Titles Text Edit with Spellcheck Feature
+
 .. _localize_settings:
+
+You can edit a list of words that Spellcheck must ignore during operations. digiKam already provide a list usual keywords to not verify.
 
 Localize Settings
 -----------------
@@ -210,6 +220,17 @@ This section allows to customize the rules to translate automatically strings fr
 
     The digiKam Localize Configuration Page
 
+A list of **Alternative Languages** supported by digiKam is provided where you can select your prefered entries to found in text edit widgets.  
+
+Another list allows to know the **Available Translator Languagas**, supported by the **Online Translator** engine selected.
+
+As number of entries are huge, for the both lists, a search engine is available and and option allows to show only the current selection.
+
+.. figure:: images/setup_captions_localize.webp
+    :alt:
+    :align: center
+
+    The Captions Text Edit with Translation Feature
 
 .. _system_settings:
 
