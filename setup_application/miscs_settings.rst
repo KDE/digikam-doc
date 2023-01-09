@@ -40,7 +40,7 @@ With the **Confirm when moving items to trash** and **Confirm when permanently d
 
 The editorial changes done through the right sidebar can be quietly applied by digiKam when setting the **Do not confirm when applying changes in the right sidebar** option. Otherwise the changes must be applied by pressing the **Apply changes** button.
 
-The option **Show only face tags for assigning names in people sidebar**
+The option **Show only face tags for assigning names in people sidebar** will restrict people tree-view contents to face tags where the name property is set.
 
 The option **Expand current tree item with a single mouse click** allows to customize how the mouse button will be used to expand a nested album branch.
 
@@ -54,10 +54,24 @@ The **Get album date source** option allows to adjust the album date depending o
     - **From The Folder Date**: to take the file system date.
     - **No Change Of Date**: do not modify the date.
 
-With the **String comparison type** setting, you can set the way in which strings are compared inside digiKam. This influences the sorting of the tree views. **Natural** tries to compare strings in a way that regards some normal conventions. The result will be sort naturally even if they have a different number of digits inside. **Normal** uses a more technical approach. Use this style if you want to entitle albums with ISO dates (201006 or 20090523) and the albums should be sorted according to these dates.
+With the **String comparison type** setting, you can set the way in which strings are compared inside digiKam. This influences the sorting of the tree views. Possible values are:
 
+    - **Natural** tries to compare strings in a way that regards some normal conventions. The result will be sort naturally even if they have a different number of digits inside.
+    - **Normal** uses a more technical approach. Use this style if you want to entitle albums with ISO dates (201006 or 20090523) and the albums should be sorted according to these dates.
 
-The **Updates** settings allows to tune how the check for new application versions available online.
+With the **Lower bound for minimum similarity** option, you can select the lower bound of the minimum similarity threshold for fuzzy and duplicates searches. The default value is 40. Selecting a lower value than 40 can make the search really slow.
+
+The **Updates** settings allows to tune how the check the online availablity of a new application version. You can select **Only For Stable Releases** which are official versions safe to use in production. Another choice is **Weekly Pre-Releases** which are proposed to tests quickly new features but not recommended to use in production as bugs can remain.
+
+The option **Use Version With Debug Symbols** allows to download version including debug symbols. This version is more heavy but can help developers to trace dysfunctions in debugger.
+
+Finally, on the bottom, a **Check Now** button allow to send a request for an update. The **Last check** date is indicated on the left side. If a new version is avaialble online, a dialog will appears as below.
+
+.. figure:: images/setup_new_version.webp
+    :alt:
+    :align: center
+
+    Dialog When a new digiKam Version is Avaialble Online
 
 .. _appearance_settings:
 
