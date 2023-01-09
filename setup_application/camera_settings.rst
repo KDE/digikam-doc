@@ -15,13 +15,16 @@ Camera Settings
 
 .. contents::
 
+Setup a Device
+--------------
+
 The camera settings shows on the left of the list of the currently supported cameras. On the right at the top there is an auto-detect button, which tries to identify the camera connected to your computer (make sure that the camera is connected properly to the computer and turned on in the image display mode). Below this are the port settings, the currently supported are **Serial**, **USB**, **Network**, and **Mass Storage**. 
 
 .. figure:: images/setup_camera_device.webp
     :alt:
     :align: center
 
-    The digiKam Camera Configuration Panel With The Gphoto View
+    The digiKam Camera Configuration Panel with the Gphoto View
 
 Clicking on a camera in the list from the left will display the supported ports which you can then select. If there is only one supported port it will be automatically selected. At the bottom on the right there is a box for setting the exact path in case of a serial port. Please note that USB interface does not need any paths to be set. If you cannot find your camera on the list, you can try to use a generic **Mass Storage** device selecting Mounted Camera item in the list.
 
@@ -31,7 +34,7 @@ At the very bottom is where you set the path for a USB or FireWire (IEEE-1394 or
     :alt:
     :align: center
 
-    Dialog To Add A Camera Device Using Gphoto Drivers
+    Dialog to Add a Camera Device Using Gphoto Drivers
 
 To be able to use your digital camera with digiKam, connect the camera to your computer, switch the camera to the image display mode and turn it on.
 
@@ -43,6 +46,9 @@ Try and see if digiKam can auto-detect the camera; if not, you can set the camer
 
 .. _camera_behavior:
 
+Customize the Behavior
+----------------------
+
 With the **Behavior** section, you can customize some main rules with your camera as how to deep in file to handle metadata, render high-quality thumbnails, use a default target album to download items, and to deal with already existing file-names while downloading.
 
 .. important::
@@ -53,7 +59,10 @@ With the **Behavior** section, you can customize some main rules with your camer
     :alt:
     :align: center
 
-    The digiKam Camera Configuration Panel With The Behavior View
+    The digiKam Camera Configuration Panel with the Behavior View
+
+Running Filters at Download
+---------------------------
 
 With the **Import Filter** section, you can customize the list of type mime filters, and list the file patterns to ignore while downloading.
 
@@ -61,7 +70,10 @@ With the **Import Filter** section, you can customize the list of type mime filt
     :alt:
     :align: center
 
-    The digiKam Camera Configuration Panel With The Import Filters View
+    The digiKam Camera Configuration Panel with the Import Filters View
+
+Customize Import Interface
+--------------------------
 
 With the **Import Window** section, you can customize options for icon-view information, the preview behavior, and the full-screen elements to show.
 
@@ -69,4 +81,4 @@ With the **Import Window** section, you can customize options for icon-view info
     :alt:
     :align: center
 
-    The digiKam Camera Configuration Panel With The Import Window View
+    The digiKam Camera Configuration Panel with the Import Window View
