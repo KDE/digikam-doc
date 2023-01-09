@@ -1,4 +1,4 @@
-![](project/images/logo.png) This repository hosts the digiKam handbook based on [Sphinx](https://www.sphinx-doc.org) framework and [ReStructuredText](https://docutils.sourceforge.io/rst.html) format.
+![](logo.png) This repository hosts the digiKam handbook based on [Sphinx](https://www.sphinx-doc.org) framework and [ReStructuredText](https://docutils.sourceforge.io/rst.html) format.
 
 [digiKam](https://www.digikam.org/about/features/) is a powerful Open Source Photo Management Software.
 
@@ -8,7 +8,7 @@ This documentation generated as **EPUB** can be downloaded [here](https://docs.d
 
 [![Build Status](https://binary-factory.kde.org/job/Website_docs-digikam-org/badge/icon)](https://binary-factory.kde.org/job/Website_docs-digikam-org/)
 
-## Setting up Development Environment
+## Setting Up Development Environment
 
 Under Ubuntu 22.04 and later:
 
@@ -19,7 +19,7 @@ Under Ubuntu 22.04 and later:
 
 After you cloned this repository (only need to be done once), use a command line to go to its root folder (e.g. with `cd /path/to/digikam-docs`)
 
-### Generate an HTML Web Documentation
+### Generate An HTML Web Documentation
 
 Under **Linux:** run `make html`
 
@@ -27,7 +27,7 @@ The HTML is generated in `build/html`. Open the file `index.html` in your prefer
 
 [![](project/images/handbook_HTML.webp "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/handbook_HTML.webp)
 
-### Generate an EPUB E-book
+### Generate An EPUB E-book
 
 Under **Linux:** run `make epub`
 
@@ -57,6 +57,7 @@ corresponding to the handbook sections. The root entry of the manual is [index.r
 Each handbook section start with a .rst file from top level directory and a dedicated
 sub-directory with the same name including chapters .rst files, a nested **images** sub-directory to host
 screen-shots, taken in WEBP format, and a nested **videos** sub-directory to host screen-casts in animated Gif format.
+
 For example, the **getting_started** section will be organized like this:
 
 ```
@@ -90,7 +91,7 @@ For example, the **getting_started** section will be organized like this:
 **getting_started.rst** is the root entry of the **Geting Started** section of this manual.
 All others nested **.rst** files hosted in **getting_started** sub-directory are chapters in this section.
 
-### ReStructuredText Section/Chapters Implementation
+### ReStructuredText Sections/Chapters/References Implementation
 
 As example, we will develop how the **getting_started** section of the manual is implemented.
 
@@ -405,7 +406,7 @@ All POT file-names starts with **docs_digikam_org** prefix.
 
 The status of the digiKam documentation translations is [available here](https://l10n.kde.org/stats/gui/trunk-kf5/package/digikam-doc/).
 
-#### How to Add a New Target Language
+#### How To Add A New Target Language
 
 The list of current enabled translation languages are in the [locale/](locale) sub-directory.
 Corresponding languages must be enabled in the documentation web-site following this list. 4 files needs to be patched:
@@ -415,7 +416,7 @@ Corresponding languages must be enabled in the documentation web-site following 
 - The section named **docs-digikam-org** from the [custom-jobs Json infrastrusture configuration](https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json) dedicated to rule translations.
 - The **script** section from [gitlab CI Yaml config file](.gitlab-ci.yml) where a new line must be add to generate the supported language in the Continuous Integration workflow.
 
-#### How to Compile a Supported Langauge
+#### How To Compile A Supported Langauge
 
 By defaualt the make command generate the English version. If you want to test an internationalized version using transaltions hosted from **locale** disrectory,
 use the syntax below:
@@ -443,7 +444,7 @@ This documentation is automatically updated online (including translations) at e
 If the compilation of the internationalized versions can be completed with the Continuous Deployment workflow,
 you can show a translated version of this documentation by selecting a language from the left side of the publication page.
 
-## Convert EPUB to PDF
+## Convert EPUB To PDF
 
 Sphinx allows to generate PDF using Latex engine in background, but it converter as several limitations, as the non support of WEBP and GIF formats used for screenshots and screencast.
 
