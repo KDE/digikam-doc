@@ -68,7 +68,7 @@ The last tab from the settings view allows to tune advanced configuration, as th
 
    The deep-learning YOLO v3 model is more powerful for face workflow but it's time and CPU consuming. Only turn on this option if you hardware can supports intensive computations.
 
-For the task we are talking about you check **Detect Faces**, of course. Since face detection is a time-consuming task you better don't hit **Scan** right away, rather **Options**. An additional area will fold out organized with three tabs. In **Search-In** you can confine the scan to certain albums or tags. In **Settings** you can adjust the **Face Accurary** with a balance between **Sensitivity** and **Specificity** that suits your needs. A higher specificity implies higher accuracy, however this results in a smaller set of results. Under Advanced you will find two checkboxes. The first is explained by the text above it. The second is for face recognition, see next article.
+For the task we are talking about you check **Detect Faces**, of course. Since face detection is a time-consuming task you better don't hit **Scan** right away, rather **Options**. An additional area will fold out organized with three tabs. In **Search-In** you can confine the scan to certain albums or tags. In **Settings** you can adjust the **Face Accuracy** with a balance between **Sensitivity** and **Specificity** that suits your needs. A higher specificity implies higher accuracy, however this results in a smaller set of results. Under Advanced you will find two checkboxes. The first is explained by the text above it. The second is for face recognition, see next article.
 
 Once you have chosen your options carefully you click **Scan** and after a while, depending on the scope of your selection, the result will be presented in the Image Area. In the Tags list of the Left Sidebar you will see the People branch of your tag tree. You will see the whole scan result only if the topmost tag **People** is selected. In the tree you will see a new virtual tag called **Unknown** which will show all those images where faces are recognized but not yet connected to a person. If you just scanned for the first time you will find the whole result also here.
 
@@ -163,7 +163,7 @@ The screenshots **02** and **11** have been chosen because they shows one import
 
 The screenshot **10** is another example shows one important issue: the algorithm will find inevitably details in an image that resemble a face but are actually something else. That's what the **Remove** button is for. It will remove the face tag from the photograph and if it is the only face tag (left) the photograph will disappear from the scan result.
 
-The screnshots **01**, **03**, **05**, **08**, **09**, and **12** can be considerated as non faces, or be prevented by reducing the **Accuracy** of detection in face management** Settings** view. But these example proof the capabilty of algorithm to detect faces in critical shots conditions.
+The screnshots **01**, **03**, **05**, **08**, **09**, and **12** can be considered as non faces, or be prevented by reducing the **Accuracy** of detection in face management **Settings** view. But these example proof the capability of algorithm to detect faces in critical shots conditions.
 
 The screenshots **04** and **10** are definitively false positive results.
 
@@ -278,7 +278,7 @@ You can tag people manually by different way:
 
         Screencast of Manual Faces Assignment Using Drag And Drop
 
-- From keyboard shorcut: you can assign a magic key to a face-tag and quickly uses the keyboard to switch on the face-tag name to selected items.
+- From keyboard shortcut: you can assign a magic key to a face-tag and quickly uses the keyboard to switch on the face-tag name to selected items.
 
     .. figure:: images/mainwindow_face_tag_properties.webp
         :alt:

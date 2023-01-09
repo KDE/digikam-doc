@@ -112,7 +112,7 @@ digiKam on macOS
 The non Signed Package
 ~~~~~~~~~~~~~~~~~~~~~~
 
-**digiKam** runs with Intel based Mac's on macOS 10.13 (High Sierra) and newer. For M1 based Mac's, you needs to use `Apple Roseta 2 <https://support.apple.com/en-us/HT211861>`_ instructions translator.
+**digiKam** runs with Intel based Mac's on macOS 10.13 (High Sierra) and newer. For M1 based Mac's, you needs to use `Apple Rosetta 2 <https://support.apple.com/en-us/HT211861>`_ instructions translator.
 
 When the **PKG** file is downloaded, to start the installer, a security warning will appears, because the package is not signed for the Apple Gatekeeper.
 
@@ -144,7 +144,7 @@ When installer is running, follow instructions from the assistant to install app
 Application Rights
 ~~~~~~~~~~~~~~~~~~
 
-When the installation is done, digiKam will need to access on system ressources to run properly. This will be ask by the system when digiKam run, depending of actions performed by user.
+When the installation is done, digiKam will need to access on system resources to run properly. This will be ask by the system when digiKam run, depending of actions performed by user.
 See below some examples of rights set in the macOS **Security and Privacy** policy configuration panel:
 
 - **Automation**: This right is set when you try to open an album in Apple Finder file manager through digiKam.
@@ -228,7 +228,7 @@ Application Updates
 
 .. important::
 
-    If you process a major version update, as for example from version 7 to version 8, we recommend to backup :ref:`your database files <database_intro>`, as generaly internal schema can changes. Typically, digiKam is able to migrate tables from an older version to a new one, and all is done automatically at startup, but in all cases, it's always better to save these importants digiKam files before to upgrade the application. Look also the :ref:`Database Backup <database_backup>` section from this manual for more recommendations.
+    If you process a major version update, as for example from version 7 to version 8, we recommend to backup :ref:`your database files <database_intro>`, as generally internal schema can changes. Typically, digiKam is able to migrate tables from an older version to a new one, and all is done automatically at startup, but in all cases, it's always better to save these important digiKam files before to upgrade the application. Look also the :ref:`Database Backup <database_backup>` section from this manual for more recommendations.
 
 If you use a bundle as official Linux AppImage, macOS package, or Windows installer, the application can be updated using the :menuselection:`Help --> Check For New Version menu entry`. Look also the updates settings :ref:`in Behavior page <behavior_settings>` from the configuration dialog.
 
