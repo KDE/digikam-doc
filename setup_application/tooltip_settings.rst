@@ -31,6 +31,8 @@ This view presents the information displayed in a tooltip over the **Icon Items*
 
     The Icon Items Tooltip Configuration View
 
+.. _tooltip_font:
+
 On the top a common option is available to customize the **Font** used to render tooltips everywhere in the application.
 
 Two other configuration views exists to customize:

@@ -86,13 +86,17 @@ Appearance Settings
 
 With the **Show splash screen at startup** setting, you can switch off the display of the splash screen when application loads. This may speed up the start time slightly.
 
-With the **Use native file dialogs from system** setting, you can switch from the basic (but universal) open file dialog included in the application, to the more powerful open file dialog provided by the desktop.
+With the **Use native file dialogs from system** setting, you can switch from the basic (but universal) open file dialog included in the application to the more powerful open file dialog provided by the desktop.
 
-With the **Sidebar tab title** setting, you can set how sidebars on the sides will show the tab titles. Use **Only For Active Tab** option only if you use a small screen resolution as with a laptop computer. Else **For All Tabs* will be a best choice to discover quickly all internal features of digiKam.
+With the **Draw frames around grouped items** setting, a more visible decoration will be applied to the items grouped in icon-view.
+
+With the **Sidebar tab title** setting, you can set how sidebars on the sides will show the tab titles. Use **Only For Active Tab** option only if you use a small screen resolution as with a laptop computer. Else **For All Tabs** will be a best choice to discover quickly all internal features of digiKam.
 
 With the **Widget style** setting, you can choose the default application window decoration and looks. **Fusion** style is the best choice under all desktop.
 
 With the **Icon theme** setting, you can choose the default application icon theme. Theme availability depends of desktop used to run digiKam.
+
+Finaly, the **Application font** allow to customize the font to use everywhere in the application. Note that extra options exists also to customize fonts for :ref:`the album tree-view <treeview_font>`, :ref:`the icon-view <iconview_font>`, and :ref:`the tooltip <tooltip_font>`.
 
 .. _grouping_settings:
 

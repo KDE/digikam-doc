@@ -44,6 +44,8 @@ On the bottom side of this settings panel, you can tune the behavior of the icon
 
 The Thumbnail click action option permits to choose what should happen when you click on a thumbnail. Two settings are available: **Show preview** to display the image in preview mode (F3) or **Start image editor** to open the image in a separate editor window (F4).
 
+.. _iconview_font:
+
 The **Icon View font** option permits to select the font used to display text in icons.
 
 .. _thumbnails_resolution:
@@ -53,7 +55,15 @@ The **Use large thumbnail size for high screen resolution** option renders the i
 Tree View Settings
 ------------------
 
-These settings allows to customize the tree views of the Left and Right Sidebar. The **Tree View icon size** option configures the size in pixels of the Tree View icons in digiKam's sidebars. Use large value for HiDPI screen. The Tree View font option sets the font used to display text in Tree Views. The option Show a count of items in Tree Views will display the number of items inside a folder or assigned to a tag behind the album/tag name. The count shown depends on whether the subfolders/-tags are folded out or not and on the View --> Include Album Sub-Tree and the View --> Include Tag Sub-Tree settings in the main menu.
+These settings allows to customize the tree views of the Left and Right Sidebar.
+
+The **Tree View icon size** option configures the size in pixels of the Tree View icons in digiKam's sidebars. Use large value for HiDPI screen.
+
+.. _treeview_font:
+
+The Tree View font option sets the font used to display text in Tree Views.
+
+The option Show a count of items in Tree Views will display the number of items inside a folder or assigned to a tag behind the album/tag name. The count shown depends on whether the subfolders/-tags are folded out or not and on the View --> Include Album Sub-Tree and the View --> Include Tag Sub-Tree settings in the main menu.
 
 .. figure:: images/setup_album_folderview.webp
 
