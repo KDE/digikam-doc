@@ -98,6 +98,14 @@ With the **Use native file dialogs from system** setting, you can switch from th
 
 With the **Draw frames around grouped items** setting, a more visible decoration will be applied to the items grouped in icon-view.
 
++-------------------------------------------------------+------------------------------------------------------+
+|    .. figure:: images/setup_grouped_noframe.webp      |    .. figure:: images/setup_grouped_frame.webp       |
+|       :alt:                                           |        :alt:                                         |
+|       :align: center                                  |        :align: center                                |
++-------------------------------------------------------+------------------------------------------------------+
+|       Icon-View Grouped Items with no Frame           |        Icon-View Grouped Items with Frame            |
++-------------------------------------------------------+------------------------------------------------------+
+
 With the **Sidebar tab title** setting, you can set how sidebars on the sides will show the tab titles. Use **Only For Active Tab** option only if you use a small screen resolution as with a laptop computer. Else **For All Tabs** will be a best choice to discover quickly all internal features of digiKam.
 
 With the **Widget style** setting, you can choose the default application window decoration and looks. **Fusion** style is the best choice under all desktop.
