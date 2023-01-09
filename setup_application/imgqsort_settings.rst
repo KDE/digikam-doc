@@ -29,4 +29,4 @@ With the three **Assign ... Label ...** options you can decide to which image qu
 
 With the topmost of the adjustment bars you can adjust the speed of the process in three steps. Slow speed **1** should lead to better results.
 
-For more details about the Maintenance Quuality Sorter tool, see :ref:`this section <maintenance_quality>` from the manual.
+For more details about the Maintenance Quality Sorter tool, see :ref:`this section <maintenance_quality>` from the manual.

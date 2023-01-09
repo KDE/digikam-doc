@@ -37,7 +37,7 @@ By default, digiKam uses SQLite as its back-end for storing important metadata a
     - Faces: :file:`recognition.db`.
 
 To make your application run fast and smoothly, it is recommended to check and optimize your databases once in awhile. This could be achieved with the menu option :menuselection:`Tools --> Maintenance...` and the stage **Perform Database Cleaning**. See this
-:ref:`Maintenance tool section <maintenance_database>` for details. A recommended tool is `Sqlite Browser <https://sqlitebrowser.org/>`_, an high quality and easy to use visual tool for managing database objects. For Ubuntu and its derivatives, it could be retrieved using `sudo apt install sqlitebrowser`. Now you can switch to the directory where databases are stored and visualize the database contents.
+:ref:`Maintenance tool section <maintenance_database>` for details. A recommended tool is `Sqlite Browser <https://sqlitebrowser.org/>`_, a high quality and easy to use visual tool for managing database objects. For Ubuntu and its derivatives, it could be retrieved using `sudo apt install sqlitebrowser`. Now you can switch to the directory where databases are stored and visualize the database contents.
 
 .. note::
 
