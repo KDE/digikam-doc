@@ -15,6 +15,9 @@ Collections Settings
 
 .. contents::
 
+Setup Root Album Folders
+------------------------
+
 This view manages your **Album Collections** handled by the database. Each Collection represents a **Root Album Folder** containing your photographs or videos. Usually the root folder will contain sub folders. All these folders we call **Albums**. How to work with them, create, delete, rename them etc. is described in detail to :ref:`the Album section <albums_view>`.
 
 The **Root Album Folders** list three types of collection which can be referenced in digiKam:
@@ -40,6 +43,9 @@ For each type, the **Add Collection** button allows to append an entry in the li
     :align: center
 
     The digiKam Collections Configuration Page with the List of Root Album Folders
+
+Ignore Directories from your Collections
+----------------------------------------
 
 The **Ignored Directories** view allows to setup the list of the directories to ignore while scanning collection contents. The directory names are case sensitive and must be separated by semicolon.
 
