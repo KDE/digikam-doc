@@ -48,6 +48,8 @@ As an alternative you can display the photographs in a table by hitting the **Ta
 
 You can access most of the functions that digiKam can perform on a photograph by clicking with the right mouse button over the thumbnail or line in the table (context menu) or by selecting from the **Item** menu in the menu bar.
 
+.. _viewing_photograph:
+
 Viewing an image
 ~~~~~~~~~~~~~~~~
 
@@ -67,10 +69,14 @@ There are several possibilities to view an image. You can either click on it, se
 
 You can also view your images in a :ref:`slideshow <slide_tool>` using the **Slideshow** drop down menu from the Main Toolbar. You have the choice to start a slideshow with a selection of photographs, the whole content of the folder (or search result) or even including all subfolders.
 
+.. _editing_photograph:
+
 Editing a Photograph
 ~~~~~~~~~~~~~~~~~~~~
 
 You can open the Image Editor on a photograph either clicking the **Image Editor** button on the Main Toolbar or by selecting :menuselection:`Item --> Open...` :kbd:`F4` from the menu bar or clicking with the right mouse button and selecting **Open...** from the context menu. See the digiKam :ref:`Image Editor <image_editor>` section for instructions on how to edit your photographs. The Image Editor offers a wide range of tools to enhance, decorate and/or modify your photographs.
+
+.. _editing_external:
 
 Viewing or Editing a Photograph With Another Application
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -78,6 +84,8 @@ Viewing or Editing a Photograph With Another Application
 Sometimes digiKam may not provide all of the capabilities you need. You can open a photograph in another application by clicking with the right mouse button on it and selecting from the **Open With...** sub-menu. The list of applications that appear in this menu is controlled by the standard desktop file associations for the image format type of this photograph. Consult the desktop manual for instructions on changing these file associations if the application that you need is not listed.
 
 Note that there can be a problem with meta-data embedded in photographs when they are edited by other image manipulation applications. Some applications do not retain the photograph's meta-data when you save a modified image. This means that if you modify a photograph using one of these programs you will lose information such as orientation, aperture etc. that are stored in the Exif, IPTC, and XMP tags.
+
+.. _lossless_rotation:
 
 Lossless Image Rotation
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -92,6 +100,8 @@ The second method is to select :menuselection:`Item --> Auto Rotate/Flip Using E
 
 The photograph is rotated without loss of quality and the orientation information is set to normal, so that other Exif-aware applications will handle it correctly. The :ref:`Import Tool <advanced_import>` can perform this operation automatically when it uploads the photographs from your camera which will ensure that your photographs are always the right way up. The rotate operation will do nothing if your camera does not include this information in the photos.
 
+.. _renaming_photograph:
+
 Renaming a Photograph
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -104,6 +114,8 @@ You can also batch rename photographs. One method is to use the :ref:`Batch Queu
     :align: center
 
     The digiKam Advanced Rename Tool
+
+.. _deleting_photograph:
 
 Deleting a Photograph
 ~~~~~~~~~~~~~~~~~~~~~

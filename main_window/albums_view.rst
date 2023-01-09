@@ -25,15 +25,21 @@ By clicking the **Albums** button on the left side bar you toggle the Albums tre
 
 You can switch between these sort orders using **Sort Albums** from the **View** menu. 
 
+.. _creating_album:
+
 Creating a New Album
 ~~~~~~~~~~~~~~~~~~~~
 
 There are a number of ways to create a new Album. You can create a new Album when you upload new photographs from the Camera using :menuselection:`Import --> Cameras`. You can also create a new empty Album with :menuselection:`Album --> New...` :kbd:`Ctrl+N` in the Albums view. As an additional option, you can create a new Album by importing an existing folder of photographs from your computer; just select :menuselection:`Import --> Add Folders...` from the menu bar and select the folder that you want to import. An Album will be created with the same name as the hard disk folder. You can use drag and drop to import a folder. Drag a folder icon, for example from your preferred files-manager. Then drop it on the album list on the left. A menu will appear that gives you the option to move or copy the folder into digiKam.
 
+.. _deleting_album:
+
 Deleting an Album
 ~~~~~~~~~~~~~~~~~
 
 When you delete an Album from digiKam it will be moved into the internal Trash Can. As an option you could change this behavior, so that delete really will remove the Album and all of the photographs in it. This can be changed by selecting :menuselection:`Settings --> Configure digiKam...` and selecting the **Miscellaneous** page. At the top of this page are the settings that control what happens when a photograph is deleted. To delete an Album, click with the right mouse button over the Album in the Albums tree and select **Delete Album** from the context menu.
+
+.. _adding_photograph:
 
 Adding a Photograph to an Album
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -43,6 +49,8 @@ Most of the time you will create new Albums and populate them with photographs d
 Additionally, you can use drag and drop to import photographs. Drag the photographs icons, for example from your preferred file manager. Then drop it on the image list on the right hand side.
 
 If you have a scanner configured, you can also scan a photograph straight into an Album. Select menu entry :menuselection:`Import --> Import from Scanner...`.
+
+.. _moving_copying:
 
 Moving or Copying Photographs Between Albums
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -73,6 +81,8 @@ The Album Properties dialog allows you to set:
     - The Album **Date**: this will be used when you order your Albums by date using :menuselection:`View --> Sort Albums --> By Date`.
 
     - **Oldest**, **Average**, and **Newest** buttons: these will set the **Date** to the oldest, average or latest date of the images in that album. It will first try to calculate the average date of the images in the album based on the Exif-headers. If that fails it will fall back to the modification date of the files in that folder.
+
+.. _album_icon:
 
 Setting the Album Icon
 ~~~~~~~~~~~~~~~~~~~~~~
