@@ -86,7 +86,15 @@ Appearance Settings
 
 With the **Show splash screen at startup** setting, you can switch off the display of the splash screen when application loads. This may speed up the start time slightly.
 
-With the **Use native file dialogs from system** setting, you can switch from the basic (but universal) open file dialog included in the application to the more powerful open file dialog provided by the desktop.
+With the **Use native file dialogs from system** setting, you can switch from the basic (but universal) open-file dialog included in the application to the more powerful open-file dialog provided by the desktop.
+
++-------------------------------------------------------+------------------------------------------------------+
+|    .. figure:: images/setup_openfile_basic.webp       |    .. figure:: images/setup_openfile_native.webp     |
+|       :alt:                                           |        :alt:                                         |
+|       :align: center                                  |        :align: center                                |
++-------------------------------------------------------+------------------------------------------------------+
+|       Basic Open-File Dialog under macOS              |        Native Open-File Dialog under macOS           |
++-------------------------------------------------------+------------------------------------------------------+
 
 With the **Draw frames around grouped items** setting, a more visible decoration will be applied to the items grouped in icon-view.
 
