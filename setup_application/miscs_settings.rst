@@ -15,6 +15,8 @@ Miscellaneous Settings
 
 .. contents::
 
+These settings group all application rules customizable by users but not categorized in previous chapters.
+
 Behavior Settings
 -----------------
 
@@ -24,7 +26,7 @@ Behavior Settings
 
     The digiKam Behavior Configuration Page
 
-**Scan for new items at startup** option will force digiKam to scan the album library tree for new items added or removed between digiKam sessions. This may slow down the start time of digiKam. If any items have been removed from album library, digiKam will ask you confirmation before to remove definitely item references in database.
+**Scan for new items at startup** option will force digiKam to scan the album library tree for new items added or removed between digiKam sessions. This may slow down the start time of digiKam. If any items have been removed from album library, digiKam will ask you confirmation before to remove definitely item references in database. To be faster, uses the **Fast Scan** option which will limits the database updates operations.
 
 With the **Scroll current item to center of thumbbar** setting, you can force thumbbar to center current selected item with mouse pointer on the center of visible area.
 
