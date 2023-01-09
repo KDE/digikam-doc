@@ -118,7 +118,7 @@ With the **Widget style** setting, you can choose the default application window
 
 With the **Icon theme** setting, you can choose the default application icon theme. Theme availability depends of desktop used to run digiKam.
 
-Finaly, the **Application font** allow to customize the font to use everywhere in the application. Note that extra options exists also to customize fonts for :ref:`the album tree-view <treeview_font>`, :ref:`the icon-view <iconview_font>`, and :ref:`the tooltip <tooltip_font>`.
+Finaly, the **Application font** allow to customize the font to use everywhere in the application. Note that extra options exists also to customize fonts for the :ref:`album tree-view <treeview_font>`, the :ref:`icon-view <iconview_font>`, and the :ref:`tooltip <tooltip_font>`.
 
 .. _grouping_settings:
 
