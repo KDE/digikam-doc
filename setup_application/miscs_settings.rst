@@ -15,7 +15,7 @@ Miscellaneous Settings
 
 .. contents::
 
-These settings group all application rules customizable by users but not covered in previous setting categories.
+These settings group all application rules customizable by users but not covered in previous setting categories from the setup dialog.
 
 .. _behavior_settings:
 
