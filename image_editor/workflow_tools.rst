@@ -85,31 +85,31 @@ The digiKam tool set are:
 
     - Image Color
 
-        - Encoding Depth
+        - :ref:`Encoding Depth <color_depth>`
 
-        - Color-Space Converter
+        - :ref:`Color-Space Converter <color_cm>`
 
-        vAuto Correction
+        - :ref:`Auto Correction <color_auto>`
 
-        - Brightness/Contrast/Gamma
+        - :ref:`Brightness / Contrast / Gamma <color_bcg>`
 
-        - Hue/Saturation/Lightness
+        - :ref:`Hue / Saturation / Lightness <color_hsl>`
 
-        - Color Balance
+        - :ref:`Colors Balance <color_balance>`
 
-        - Levels Adjust
+        - :ref:`Adjust Levels <color_levels>`
 
-        - White Balance/Exposure/Saturation
+        - :ref:`White Balance <color_wb>`
 
-        - Curves Adjust
+        - :ref:`Curves Adjust <color_curves>`
 
-        - Channel Mixer
+        - :ref:`Channels Mixer <color_mixer>`
 
-        - Black and White
+        - :ref:`Black and White <color_bw>`
 
-        - Simulate Infrared Film
+        - :ref:`Simulate Infrared Film <color_infrared>`
 
-        - Color Negative
+        - :ref:`Color Negative <color_negative>`
 
     - Image Enhancement
 

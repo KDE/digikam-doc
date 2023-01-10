@@ -22,6 +22,11 @@ Encoding Depth
 
 Here you can change the encoding depth per color channel of the edited image. 8 bit encoding is the common JPEG format, 16 bit encoding is better suited for high quality images, but this format needs more storage space, calculation time and is currently available with PNG, PGF, TIFF, and JPEG-2000 formats only.
 
+.. _color_negative:
+
+Color Negative
+--------------
+
 .. _color_cm:
 
 Color Management
@@ -212,7 +217,7 @@ Using in this mode and the three Color Picker buttons will automatically adjust 
 
 Over Exposure Indicator option checks all color channel to see if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of channel level settings. This feature is available as an indicator in the target preview area and has no effect on final rendering.
 
-.. _color_exposure:
+.. _color_bcg:
 
 Correcting Exposure
 -------------------
