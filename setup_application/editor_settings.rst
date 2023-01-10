@@ -165,6 +165,6 @@ Corrections
 
 **Noise Reduction** can be applied while demosaicing your image at a slight speed penalty. This option applies a noise reduction algorithm while the image still is in CIE Lab color space. Because the noise is only applied to the Luminosity layer (the *L* of the Lab), it should not blur your image as traditional noise reduction algorithms do in RGB mode. If you converted an image from RAW and it appears noisy, rather than applying a denoiser, go back and re-convert with this option enabled.
 
-You can select a noise reduction method to apply during RAW decoding. **None** do no apply the noise reduction. **Wavelets** apply after interpolation a wavelets correction method to erase noise while preserving real detail. **FBDD** for Fake Before Demosaicing Denoising is an experimental noise reduction method applied before interpolation.
+You can select a noise reduction method to apply during RAW decoding. **None** do no apply the noise reduction. **Wavelets** apply after interpolation a wavelets correction method to erase noise while preserving real details. **FBDD** for Fake Before Demosaicing Denoising is an experimental noise reduction method applied before interpolation.
 
 The defaults **Threshold** value is 100. Higher values will increase the smoothing, and lower values will decrease it.
