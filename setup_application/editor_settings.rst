@@ -103,7 +103,13 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 
 **Use the default settings, in 16 bit**: If enabled, all RAW files will be decoded to 16-bit color depth using a linear gamma curve and according to the settings in the RAW Default Settings tab. To prevent dark image rendering in the editor, it is recommended to use Color Management in this mode.
 
-**Always open the Raw Import Tool to customize settings**: With this option checked the Raw Import Tool will open at the Right Side Bar in the Image Editor so that you can set individual parameters for every image you open.
+**Always open the Raw Import Tool to customize settings**: With this option you can select which Raw Import Tool will used to open RAW files. Default is the digiKam **Import RAW using LibRaw** plugin which will provide a fully integrated module at the Right Side Bar in the Image Editor where you can set individual parameters for every image you open. Other choice are external RAW processing application which must be installed on your computer, e.g **DarkTable**, **RawTherapee**, and **UFRaw**
+
+.. figure:: images/setup_editor_raw_import.webp
+    :alt:
+    :align: center
+
+    The digiKam RAW Import Tool Processing a Nikon NEF File
 
 RAW Default Settings
 --------------------
