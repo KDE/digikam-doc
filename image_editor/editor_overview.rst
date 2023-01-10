@@ -40,7 +40,7 @@ The image editor has just one main window with:
 
         Screencast of Image Editor Thumbbar Placed at Different Canvas Sides
 
-The Image Editor Toolbar:
+Form left to right, the Image Editor Toolbar includes these actions:
 
     1. Close image editor Window.
 
