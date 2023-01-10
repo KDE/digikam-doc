@@ -74,11 +74,17 @@ The ICC **Profiles Settings**: here you are given the ability to provide *defaul
 
     The Color Management Profiles Configuration Page 
 
-The **Use color managed view** is an alternative to using desktop color management. Only your image will be color managed, not your entire screen.
+The **Monitor profile** option allows to select the color profile for your screen.
+    
+The **Use color managed view** is an alternative to using desktop color management. Only your image in editor will be color managed, not your entire screen. You can at any time toggle this option everywhere in digiKam. This can slow down rendering of the image, depending on the speed of your computer.
 
-The **Input color profile** should match the camera maker and model you are using. 'Not all profiles are created equal', there are some that have no tone mapping/gamma correction included (For example Canon camera). In some conditions gamma can be not corrected for 16 bit depth conversion, which means that you have to do the tone mapping yourself.
+**Use color managed view for previews and thumbnails**: with this option, you can also use the color managament to render previews and thumbnails in Icon-View, Light-Table, and Import Tool; 
 
-The **Color Profiles Repository**: set this to the folder where you store all your profiles e.g. :file:`/usr/share/color/icc` or :file:`/home/user/.color/icc`. digiKam will scan these folders when starting up.
+The **Default Input color profile** should match the camera maker and model you are using. *Not all profiles are created equal*, there are some that have no tone mapping/gamma correction included (For example Canon camera). In some conditions gamma can be not corrected for 16 bit depth conversion, which means that you have to do the tone mapping yourself.
+
+The **Output device profile** should match the profile for your output device, usually your printer. This profile will be used to do a :ref:`soft proof <soft_proof>`, so you will be able to preview how an image will be rendered via an output device. It enables you to emulate, granted that you have a profile for it, how your image will render for a particular device. It is useful before printing for instance because your printer has a smaller gamut than your camera and some colors might look saturated. You may want to fix this manually instead of relying on the "blind" algorithm of your printer. 
+
+The **Color Profiles Repository**: digiKam looks for ICC profiles in a number of default locations e.g. :file:`/usr/share/color/icc` or. Set this to the folder where you store extra profiles e.g :file:`/home/user/.color/icc`. digiKam will scan these folders when starting up.
 
 .. note::
 
