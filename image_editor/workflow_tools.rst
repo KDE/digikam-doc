@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Image Editor Workflow Tools
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image, editor, workflow, tools
 
 .. metadata-placeholder
 
@@ -20,21 +20,21 @@ A Standard Workflow Proposal
 
 When performing a basic workflow, the primary areas for consideration are:
 
-    1. Exposure: White Balance.
+    1. Exposure: :ref:`White Balance <color_wb>`.
 
-    2. Color: White Balance.
+    2. Color: :ref:`White Balance <color_wb>`.
 
-    3. Black and white points: White Balance or Adjust Levels.
+    3. Black and white points: :ref:`White Balance <color_wb>` or :ref:`Adjust Levels <color_levels>`.
 
-    4. Contrast: Adjust Curves.
+    4. Contrast: :ref:`Adjust Curves <color_levels>`.
 
-    5. Saturation: White Balance or Vivid or Hue/Saturation/Lightness.
+    5. Saturation: :ref:`White Balance <color_wb>`, :ref:`Vivid <color_effects>` or :ref:`Hue/Saturation/Lightness <color_hsl>`.
 
-    6. Resizing (interpolation): Change Size.
+    6. Resizing (interpolation): :ref:`Change Size <transform_resize>`.
 
-    7. Sharpening.
+    7. :ref:`Sharpening <enhance_sharpen>`.
 
-    8. Digital Asset Management (applying tags, captions, rating, geolocation, save under new name).
+    8. :ref:`Digital Asset Management <organize_find>` (applying tags, captions, rating, geolocation, save under new name).
 
 We recommend this sequence of image editing steps to ensure optimum photographic quality for the end product. In particular, never do sharpening before the last step. And we recommend using a lossless format like PNG or TIFF for storing photographs. Otherwise you'll lose a bit every time you save the results. If you can afford it, use 16 bit/channel for your best shots. If you want to change color space, in particular if you want to work in CIEL*a*b, 16 bit per channel are required to avoid truncation effects.
 
@@ -45,131 +45,133 @@ Many of the tools you may need for photographic editing are included with digiKa
 Common Editing Tools Features
 -----------------------------
 
-All Image Editor tools like Sharpen, Blur, Noise Reduction, Refocus, Unsharp Mask, etc. use a common dialog style that previews the effect before applying the filter to the current image. Below you see the “Solarize” tool in action using this common dialog layout:
+All Image Editor tools like Sharpen, Blur, Noise Reduction, Refocus, Unsharp Mask, etc. use a common dialog style that previews the effect before applying the filter to the current image. Below you see the **Solarize** tool in action using this common dialog layout:
 
 .. figure:: images/editor_commondialogtools.webp
+    :alt:
+    :align: center
+
+    The Solarize Effect is a Common Tool to Edit Photograph
 
 See the list of common areas available in all tools:
 
     - (1): The seven buttons to the top left select the comparison style of the preview area. The modes are:
 
-        Original image.
+        - **Original** image.
 
-        Split vertically without duplication. The left area shows the original whereas the right side shows the filter applied to the continuation of the selected zoom.
+        - **Split vertically without duplication**: The left area shows the original whereas the right side shows the filter applied to the continuation of the selected zoom.
 
-        Split horizontally without duplication. The top area shows the original whereas the lower area shows the filter applied to the continuation of the selected zoom.
+        - **Split horizontally without duplication**: The top area shows the original whereas the lower area shows the filter applied to the continuation of the selected zoom.
 
-        Split vertically. The left area shows the original and the right one the filter effect for comparison.
+        - **Split vertically**: The left area shows the original and the right one the filter effect for comparison.
 
-        Split horizontally. The top area shows the original and the lower one the filter effect for comparison.
+        - **Split horizontally**: The top area shows the original and the lower one the filter effect for comparison.
 
-        Effect preview. This is a live effect preview without comparison.
+        - **Effect preview**: This is a live effect preview without comparison.
 
-        'Mouse over' style: preview when mouse is off the preview (in the settings area), otherwise shows original.
+        - **Mouse over** style: preview when mouse is off the preview (in the settings area), otherwise shows original.
 
-    - (2): There are two buttons that can be toggled to show over or underexposure. The colors can be customized in the general setup page.
+    - (2): There are two buttons that can be toggled to show **over-exposure** or **under-exposure**. The colors can be customized in the :ref:`Editor Window Settings <editor_settings>` from Setup dialog.
 
-    - (3): The preview area. Click and drag with the mouse to move it on the image. The preview area on the left of dialog is updated accordingly.
+    - (3): The **preview** area. Click and drag with the mouse to move it on the image. The preview area on the left of dialog is updated accordingly.
 
-    - (4): The filter or tool settings area.
+    - (4): The filter or tool **settings** area.
 
-    - (5): The zoom slider and buttons to change the canvas and preview zoom level.
+    - (5): The **zoom** slider and buttons to change the canvas and preview zoom level.
 
-    - (6): There is a progress indicator for tool with involved calculations at processing stage, else the current file-name is displayed.
+    - (6): There is a **progress indicator** for tool with involved calculations at processing stage, else the current **file-name** is displayed.
 
 The digiKam tool set are:
 
-    Image Color
+    - Image Color
 
-        Encoding Depth
+        - Encoding Depth
 
-        Color-Space Converter
+        - Color-Space Converter
 
-        Auto Correction
+        vAuto Correction
 
-        Brightness/Contrast/Gamma
+        - Brightness/Contrast/Gamma
 
-        Hue/Saturation/Lightness
+        - Hue/Saturation/Lightness
 
-        Color Balance
+        - Color Balance
 
-        Levels Adjust
+        - Levels Adjust
 
-        White Balance/Exposure/Saturation
+        - White Balance/Exposure/Saturation
 
-        Curves Adjust
+        - Curves Adjust
 
-        Channel Mixer
+        - Channel Mixer
 
-        Black and White
+        - Black and White
 
-        Simulate Infrared Film
+        - Simulate Infrared Film
 
-        Color Negative
+        - Color Negative
 
-    Image Enhancement
+    - Image Enhancement
 
-        Sharpening (sharpen, unsharp mask, refocus)
+        - Sharpening (sharpen, unsharp mask, refocus)
 
-        Blur Tool
+        - Blur Tool
 
-        Red Eyes Removal
+        - Red Eyes Removal
 
-        Local Contrast
+        - Local Contrast
 
-        Noise Reduction
+        - Noise Reduction
 
-        Hot Pixel Correction
+        - Hot Pixel Correction
 
-        Lens Distortion Correction
+        - Lens Distortion Correction
 
-        Photograph Restoration
+        - Photograph Restoration
 
-        Vignetting Correction Tool
+        - Vignetting Correction Tool
 
-        Lens Auto-Correction Tool
+        - Lens Auto-Correction Tool
 
-    Image Transformation Tools
+    - Image Transformation Tools
 
-        Crop Tool
+        - Crop Tool
 
-        Change Size
+        - Change Size
 
-        Liquid Resizement
+        - Liquid Resizement
 
-        Change Size
+        - Free Rotation
 
-        Free Rotation
+        - Perspective Adjustment
 
-        Perspective Adjustment
+        - Shearing Tool
 
-        Shearing Tool
+    - Image Decoration
 
-    Image Decoration
+        - Add Border
 
-        Add Border
+        - Insert Text
 
-        Insert Text
+        - Apply Texture
 
-        Apply Texture
+    - Special Effect Filters
 
-    Special Effect Filters
+        - Color Effects
 
-        Color Effects
+        - Add Film Grain
 
-        Add Film Grain
+        - Simulate Oil Painting
 
-        Simulate Oil Painting
+        - Simulate Charcoal Drawing
 
-        Simulate Charcoal Drawing
+        - Emboss Photograph
 
-        Emboss Photograph
+        - Distortion FX
 
-        Distortion FX
+        - Blur FX
 
-        Blur FX
-
-        Add Rain Drops
+        - Add Rain Drops
 
 .. _rawprocessing_workflow:
 
@@ -178,26 +180,30 @@ Raw Workflow
 
 A typical RAW workflow with digiKam may follow these steps:
 
-    Setting up the RAW conversion and color management preferences:
+    - Setting up the RAW conversion and color management preferences:
 
-        Get the ICC color profiles for the camera, display and printer.
+        - Get the ICC color profiles for the camera, display and printer.
 
-        Setup digiKam correctly defining a color work space.
+        - Setup digiKam correctly defining a color work space.
 
-    Camera whitepoint setting.
+    - Camera whitepoint setting.
 
-    Demosaicing (includes interpolation, noise filtering and chromatic aberration correction).
+    - Demosaicing (includes interpolation, noise filtering and chromatic aberration correction).
 
-    Conversion to a color space.
+    - Conversion to a color space.
 
-    Gamma correction, tone mapping.
+    - Gamma correction, tone mapping.
 
-    Color profile assignment.
+    - Color profile assignment.
 
-    Dynamic range expansion (optional).
+    - Dynamic range expansion (optional).
 
-    Continue with standard workflow.
+    - Continue with standard workflow.
 
 From there everything is simple, select a RAW image and open it in the editor. The Raw Import tool will be displayed after the image has been processed in order to adjust color rendering. Without color management all images are very dark, this is normal. You can experiment the various profiles you have in order to select the best input profile according to your image (some tends to be very neutral, even a bit dull, some gives more saturated results, etc.).
 
 .. figure:: images/editor_rawimport.webp
+    :alt:
+    :align: center
+
+    The RAW Import Tool Allow to Load Digital Negative in Image Editor
