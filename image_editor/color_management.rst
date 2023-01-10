@@ -1,6 +1,6 @@
 .. meta::
    :description: Color Management in digiKam Image Editor
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image editor, color management, icc, profile
 
 .. metadata-placeholder
 
@@ -479,6 +479,8 @@ After extensive testing, the ICC produced the CIE-XYZ color space which mathemat
 CIE-XYZ is not the only PCS. Another commonly used PCS is CIE-Lab, which is mathematically derived from the CIE-XYZ space. CIE-Lab is intended to be "perceptually uniform", meaning "a change of the same amount in a color value should produce a change of about the same visual importance" (cited from Wikipedia article). Wikipedia says "The three coordinates of CIELAB represent the lightness of the color (L* = 0 yields black and L* = 100 indicates diffuse white; specular white may be higher), its position between red/magenta and green (a*, negative values indicate green while positive values indicate magenta) and its position between yellow and blue (b*, negative values indicate blue and positive values indicate yellow)" (cited from Wikipedia article).
 
 To be useful, color profiles need to be coupled with software that performs the translation from one color space to another via the PCS. In the world of Linux® open source software (and also many closed source, commercial softwares), translation from one color space to another usually is done by LCMS, the "little color management software". For what it's worth, my own testing has shown that LCMS does more accurate color space conversions than Adobe's proprietary color conversion engine.
+
+.. _soft_proof:
 
 Printer Profiles with Rendering Intents and Soft-Proofing
 ---------------------------------------------------------

@@ -157,7 +157,7 @@ The next group in the menu is to control whether only the reference icon of the 
 
 .. note::
 
-    In Icon View, you can turn on/off the frame over goupped item thumbnails with an option from :ref:`Setup/Miscs/Appearance <settings_appearance> settings. 
+    In Icon View, you can turn on/off the frame over goupped item thumbnails with an option from :ref:`Setup/Miscs/Appearance <appearance_settings>` settings.
 
 While the mouse pointer is hovering over it there will pop up an information **n grouped items. Group is closed/open.** where *n* indicates the number of items in the group which are invisible if the group is closed. Clicking on the indicator toggles between **open** and **closed**.
 
