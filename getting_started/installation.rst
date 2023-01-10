@@ -32,7 +32,7 @@ Minimum System Requirements
 
 .. note::
 
-   If your computer is at the lower end of CPU and RAM requirements, you should use both :ref:`Small Thumbnails Resolution <thumbnails_resolution>` and :ref:`Loading Embedded Preview <preview_resolution>` features to help reduce preview lag.
+   If your computer is at the lower end of CPU and RAM requirements, you should use both :ref:`Small Thumbnails Resolution <thumbnails_resolution>` and :ref:`Loading Embedded Preview <preview_settings>` features to help reduce preview lag.
 
 - **Monitors**: If the application can be used without problem on a single screen, using multi-screens will improve the experience especially with the workflow to review items.
 
@@ -81,7 +81,7 @@ digiKam is available as an install and as a standalone version.
 
    - The digiKam files are always located in the same folder.
 
-- Standalone version: **Doesn't** need administrator rights and isn't installed. It's **not** listed as a program. Is only accessible for the user who has downloaded the file.  
+- Standalone version: **Doesn't** need administrator rights and isn't installed. It's **not** listed as a program. Is only accessible for the user who has downloaded the file.
 
    - If you work with a normal user on your computer, you can use digiKam.
 
