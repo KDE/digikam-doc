@@ -45,15 +45,15 @@ Non-Destructive Editing and Versioning gives you the freedom of editing your ima
 
     The digiKam Image Versioning Configuration Page
 
-In the checkbox at the top you can enable or disable Non-Destructive Editing and Versioning.
+In the checkbox at the top you can **Enable Non-Destructive Editing and Versioning** feature globaly.
 
-In the first field you can choose the file format used for saving the intermediate steps and the final result. Remember that JPEG - like in the screenshot above - is a lossy format. So if you need to start over from an intermediate step it wouldn't be really non-destructive. If you can afford it in terms of space on the harddisk and loading/saving speed you better choose a lossless format like PNG or PGF for instance. Please click the information button on the right side for more detailed information.
+In the first field **Save files as**, you can choose the file format used for saving the intermediate steps and the final result. Remember that **JPEG** is a lossy format. So if you need to start over from an intermediate step it wouldn't be really non-destructive. If you can afford it in terms of space on the harddisk and loading/saving speed you better choose a lossless format like **PNG** or **PGF** for instance. Please click the information button on the right side for more detailed information.
 
-In the next field you can decide whether the editor will save changes automatically on exit or should ask first.
+In the next field you can decide whether the application will save changes automatically **When Closing Editor** or should ask first.
 
-In the third field you decide on which occasions you want the editor to save intermediate steps. Please click the information button on the right side for more detailed information.
+In the third field named **Keep a snapshot of an edited image**, you decide on which occasions you want the editor to save intermediate steps. Please click the information button on the right side for more detailed information.
 
-In the last field you can adjust whether you want only the last version to be shown in the Image View (default, none of the boxes checked) or if you also want to see icons of the original version and/or intermediate steps.
+In the last field you can adjust whether you want only the last version to be shown from the Icon-View visible **In Main View** (default, none of the boxes checked) or if you also want to see icons of the original version and/or intermediate steps.
 
 .. _save_settings:
 
