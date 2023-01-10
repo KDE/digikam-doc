@@ -114,14 +114,14 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 RAW Default Settings
 --------------------
 
-.. figure:: images/setup_editor_raw_settings.webp
+Demosaicing
+~~~~~~~~~~~
+
+.. figure:: images/setup_editor_raw_demosaicing.webp
     :alt:
     :align: center
 
-    The digiKam Default RAW Decoding Configuration Page
-
-Demosaicing
-~~~~~~~~~~~
+    The digiKam Default RAW Demosaicing Configuration View
 
 A `demosaicing algorithm <https://en.wikipedia.org/wiki/Demosaicing>`_ is a digital image process used to interpolate a complete image from the partial raw data received from the color-filtered image sensor internal to many digital cameras in form of a matrix of colored pixels. Also known as CFA interpolation or color reconstruction.
 
@@ -138,6 +138,12 @@ A `demosaicing algorithm <https://en.wikipedia.org/wiki/Demosaicing>`_ is a digi
 White Balance
 ~~~~~~~~~~~~~
 
+.. figure:: images/setup_editor_raw_wb.webp
+    :alt:
+    :align: center
+
+    The digiKam Default RAW White Balance Configuration View
+
 **Method**: Four options are available here: **Default D65**, **Camera**, **Automatic**, and **Manual**. *Default D65* reflects normal daylight conditions. *Camera* uses the camera's custom white-balance settings if set. *Automatic* uses by default a fixed color balance based on a white card photographed in sunlight. *Manual* will adjust colors according to the **T(K)** (for color temperature in degrees Kelvin) and the **Green** settings to set the green component adjusting the magenta color cast removal level.
 
 **Highlights**: Default is here to consider highlights (read: part of your images that are burned due to the inability of your camera to capture the highlights) as plain / **Solid white**. You can get some fancy results with the unclip option which will paint the highlights in various pinks. At last you can try to consider recovering some parts of the missing information from the highlights with **Rebuild** option. This is possible because the blue pixels tends to saturate less quickly than the greens and the reds. digiKam will try to reconstruct the missing green and red colors from the remaining none saturated blue pixels. Of course here everything is a question of tradeoff between how much color or white you want. If you select Reconstruct as the option, you will be given the choice to set a **Level**. A value of 3 is a compromise and can/should be adapted on a per image basis. **Unclip** leave highlights unclipped in various shades of pink, and **Blend** clipp and unclip values together for a gradual fade to white.
@@ -151,8 +157,14 @@ White Balance
 Corrections
 ~~~~~~~~~~~
 
-**Noise Reduction**: While demosaicing your image you can additionally ask for noise reduction (at a slight speed penalty). This option applies a noise reduction algorithm while the image still is in CIE Lab color space. Because the noise is only applied to the Luminosity layer (the "L" of the Lab), it should not blur your image as traditional noise reduction algorithms do in RGB mode. So, if you converted an image from RAW and it appears noisy, rather than applying a denoiser, go back and re-convert with this option enabled. The defaults are: Threshold = 100. Higher values will increase the smoothing, lower will decrease smoothing.
+.. figure:: images/setup_editor_raw_corrections.webp
+    :alt:
+    :align: center
 
-**Camera Profile**: Select here the input color space used to decode RAW data. **None** do not use input color profile during RAW decoding. **Embedded** use embedded color profile from RAW file, if it exists. **Custom** allows to use a specific input color space profile file from on your computer.
+    The digiKam Default RAW Corrections Configuration View
 
-**Workspace**: Select here the output color space used to decode RAW data. In **Raw (linear)** mode, no output color space is used during RAW decoding. **sRGB** is the best choice for images destined for the Internet and portrait photography. **Adobe RGB** is an extended RGB color space and is used for photography applications such as advertising and fine art. **Wide Gamut** is an expanded version of the Adobe RGB color space. **Pro-Photo** is an RGB color space developed by Kodak, that offers an especially large gamut designed for use with photographic outputs in mind. **Custom** allows to use a specific output color space profile file from your computer.
+**Noise Reduction** can be applied while demosaicing your image at a slight speed penalty. This option applies a noise reduction algorithm while the image still is in CIE Lab color space. Because the noise is only applied to the Luminosity layer (the *L* of the Lab), it should not blur your image as traditional noise reduction algorithms do in RGB mode. If you converted an image from RAW and it appears noisy, rather than applying a denoiser, go back and re-convert with this option enabled.
+
+You can select a noise reduction method to apply during RAW decoding. **None** do no apply the noise reduction. **Wavelets** apply after interpolation a wavelets correction method to erase noise while preserving real detail. **FBDD** for Fake Before Demosaicing Denoising is an experimental noise reduction method applied before interpolation.
+
+The defaults **Threshold** value is 100. Higher values will increase the smoothing, and lower values will decrease it.
