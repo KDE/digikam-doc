@@ -25,7 +25,7 @@ Basically, a profile *maps* the color information and gives information on how o
 Behavior Settings
 -----------------
 
-The **Behavior** view Ask when opening an image in image editor / Launch Color Management tool with RAW files
+The **Behavior** view ask when opening an image in Image Editor or when you use the Color Management tool with RAW files.
 
 .. figure:: images/setup_cm_behavior.webp
     :alt:
@@ -33,7 +33,35 @@ The **Behavior** view Ask when opening an image in image editor / Launch Color M
 
     The Color Management Behavior Configuration Page 
 
-You have to provide a **Working color space** profile (linear profiles such as sRGB, ECI-RGB, LStar-RGB, Adobe-RGB or CIE-RGB). If you want to print your images, you may want to opt for Adobe RGB, if it is only for web publishing, sRGB is better (Adobe RGB will be displayed slightly dull in non color managed enabled software such as browsers). However you may change this later of course (by attributing another profile), therefore Adobe RGB can be a good choice for storing and image handling as you can always change it to sRGB before releasing an image for your blog. Note: Do not use non-linear profiles as they will change the color-balance.
+**Enable Color Management** is the lead option to turn on/off this feature.
+    
+You have to provide a **Working Color Space** profile (linear profiles such as sRGB, ECI-RGB, LStar-RGB, Adobe-RGB or CIE-RGB). If you want to print your images, you may want to opt for Adobe RGB, if it is only for web publishing, sRGB is better (Adobe RGB will be displayed slightly dull in non color managed enabled software such as browsers). However you may change this later of course (by attributing another profile), therefore Adobe RGB can be a good choice for storing and image handling as you can always change it to sRGB before releasing an image for your blog. Note: Do not use non-linear profiles as they will change the color-balance.
+
+The tree next sections from this view set the rules for different use cases:
+
+    - **When the profile of an image does not match the working color space**: this condition provide two options listed below.
+    
+        - **Ask when opening the image**: If an image has an embedded color profile not matching the working space profile, digiKam will ask if you want to convert to the working space, keep the embedded profile or discard the embedded profile and assign a different one.
+
+        - **Convert the image to the working color space**: If an image has an embedded color profile not matching the working space profile, digiKam will convert the image's color information to the working color space. This changes the pixel data, but not the appearance of the image.
+
+    - **When an image has no color profile information**: this condition provide four options listed below.
+    
+        - **Ask when opening the image**: If an image has no embedded color profile, digiKam will ask which color space shall be used to interpret the image and to which color space it shall be transformed for editing.
+
+        - **Assume it is using the sRGB color space**: in this case, the image is target for an Internet usage. The **and convert it to the working color space** allows to force conversion to the **Working Color Space** previously defined.
+
+        - **Assume it is using the working color space**: in this case, the image is not target for a specific usage, and **Working Color Space** is used for the conversion.
+
+        - **Convert it from default input color space to working space**: in this case, the convertion to the **Working Color Space** will be done to include the **Default input color profile** defined in the next settings view.
+
+    - **When loading a RAW file with uncalibrated colors**: this condition provide tree options listed below.
+    
+        - **Ask for the input profile**: digiKam propmt a question to the user to select right **Input color profile** to use.
+
+        - **Automatic color correction**: digiKam will perform an automatic colors auto-correction based of image historgram analysis.
+
+        - **Convert it from the default input profile**: digiKam will use the **Default input color profile** defined in the next settings view.
 
 Profiles Settings
 -----------------
