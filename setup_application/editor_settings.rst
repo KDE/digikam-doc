@@ -55,14 +55,14 @@ In the third field named **Keep a snapshot of an edited image**, you decide on w
 
 In the last field you can adjust whether you want only the last version to be shown from the Icon-View visible **In Main View** (default, none of the boxes checked) or if you also want to see icons of the original version and/or intermediate steps.
 
-.. _save_settings:
+.. _saveimage_settings:
 
 Save Image Options
 ------------------
 
-When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of quality that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the JPEG quality slider (1: low quality / 100: high quality and no compression). At the time of writing, metadata is supported.
+When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of **JPEG quality** that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the JPEG quality slider (1: low quality / 100: high quality and no compression). At the time of writing, metadata is supported.
 
-Chroma subsampling is the practice of encoding images by implementing more resolution for luminance information than for color information. Please read this Wikipedia article for a full explanation.
+**Chroma subsampling** is the practice of encoding images by implementing more resolution for luminance information than for color information. Please read this Wikipedia article for a full explanation.
 
 .. figure:: images/setup_editor_save.webp
     :alt:
@@ -70,13 +70,21 @@ Chroma subsampling is the practice of encoding images by implementing more resol
 
     The digiKam Default File Save Configuration Page
 
-With PNG compression option, you can reduce PNG image files size. This operation does not reduce image quality because PNG uses a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value to use a high compression factor (1: low compression / 9: high compression). At the time of writing, metadata is supported.
+With **PNG compression** option, you can reduce PNG image files size. This operation does not reduce image quality because PNG uses a lossless algorithm. The only effect is that image data needs more time to compress/decompress. If you have a fast computer you can change this value to use a high compression factor (1: low compression / 9: high compression), and metadata is supported.
 
-With Compress TIFF option, you can toggle to use Deflate compression algorithm with TIFF image files. This will reduce TIFF image files sizes. It has no image quality effect because Deflate is a lossless algorithm. At the time of writing, metadata is supported.
+With **Compress TIFF** option, you can toggle to use Deflate compression algorithm with TIFF image files. This will reduce TIFF image files sizes. It has no image quality effect because Deflate is a lossless algorithm and metadata is supported.
 
-With the LossLess JPEG 2000 files option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG. At the time of writing, metadata is supported.
+With the **LossLess JPEG 2000** files option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG, and metadata is supported.
 
-With the LossLess PGF files option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG-2000. At the time of writing, metadata is supported.
+With the **LossLess PGF files** option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG-2000 and very fast to process encoding decoding. At the time of writing, metadata is supported.
+
+With the **LossLess HEIF files** option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG-2000, but it slower to encode and decode and it support only 8-12 bits colors depth. This image format dedicated to remplace JPEG on smartphone, not all metadata is supported.
+
+With the **LossLess WEBP files** option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG-2000, but it only support 8 bits colors depth. This image format dedicated to replace PNG and JPEG on the Internet, not all metadata is supported.
+
+With the **LossLess AVIF files** option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG-2000, but it slower to encode and decode and it support only 8-12 bits colors depth. This image format dedicated to be a concurent of HEIF, not all metadata is supported.
+
+When the option **Show Settings Dialog when Saving Image Files** is checked, digiKam will show a dialog where settings can be changed when saving image files, else default settings are used when saving image files.
 
 .. _setup_raw:
 
