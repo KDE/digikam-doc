@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Views Settings
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, setup, configure, icon-view, tree-view, preview, full-screen, mime-type, categories
 
 .. metadata-placeholder
 
@@ -21,6 +21,10 @@ Icon Settings
 -------------
 
 .. figure:: images/setup_album_iconview.webp
+    :alt:
+    :align: center
+
+    The digiKam Icon-View Configuration Page
 
 The first series of settings on the left side of this view permit to customize the technical information shown below the icon thumbnail, as the filename, the file size, the creation date, the image dimensions, and the aspect ratio.
 
@@ -37,6 +41,10 @@ The **Show Geolocation Indicator** option shows an icon over the image thumbnail
 An example of an icon is given below:
 
 .. figure:: images/setup_album_iconview_item.webp
+    :alt:
+    :align: center
+
+    An Icon-View Item Example
 
 On the bottom side of this settings panel, you can tune the behavior of the icon with user actions.
 
@@ -65,7 +73,11 @@ The Tree View font option sets the font used to display text in Tree Views.
 
 The option Show a count of items in Tree Views will display the number of items inside a folder or assigned to a tag behind the album/tag name. The count shown depends on whether the subfolders/-tags are folded out or not and on the View --> Include Album Sub-Tree and the View --> Include Tag Sub-Tree settings in the main menu.
 
-.. figure:: images/setup_album_folderview.webp
+.. figure:: images/setup_album_treeview.webp
+    :alt:
+    :align: center
+
+    The digiKam Tree-View Configuration Page
 
 Preview Settings
 ----------------
@@ -83,6 +95,10 @@ The option Preview is zoomed to the original image size is related to the first 
 The option Show icons and text over preview will show icons for rotation, face tags, full screen mode, etc. in the top left corner of the image preview and a text indicating which data the preview is showing in the top right corner.
 
 .. figure:: images/setup_album_preview.webp
+    :alt:
+    :align: center
+
+    The digiKam Preview Configuration Page
 
 Full-Screen Settings
 --------------------
@@ -90,6 +106,10 @@ Full-Screen Settings
 The options in this tab apply only to the Full Screen Mode you can access via the Full Screen button on the Toolbar or via View --> Full Screen Mode (Ctrl-Shift-F) in the main menu or the context menu. It does not apply to the Full Screen Mode you access by clicking the “Show Fullscreen” icon either on a thumbnail or on the preview.
 
 .. figure:: images/setup_album_fullscreen.webp
+    :alt:
+    :align: center
+
+    The digiKam Full-Screen Configuration Page
 
 If all three options are activated the only way to leave the Full Screen Mode is the context menu or Ctrl-Shift-F. You can work on the images also by choosing functions from the context menu of an icon or the preview.
 
@@ -105,6 +125,10 @@ digiKam can understand lots of different image file types as well as some video 
     The default settings can be easily restored by clicking on the update buttons to the right of each category.
 
 .. figure:: images/setup_album_mimetypes.webp
+    :alt:
+    :align: center
+
+    The digiKam Mime-Type Configuration Page
 
 For more information, for example how to remove file types from the list, use the context help with the question mark from the window header.
 
@@ -114,3 +138,7 @@ Album Categories Settings
 In the Album View you can choose from View --> Sort Albums --> By Category to have the Albums in the Album Tree of the Left Sidebar sorted by category. Here you can manage these categories, which is add or remove categories or rename them by using the Replace button. To assign categories to an Album you got to use the Album Properties dialog.
 
 .. figure:: images/setup_album_categories.webp
+    :alt:
+    :align: center
+
+    The digiKam Album Categories Configuration Page
