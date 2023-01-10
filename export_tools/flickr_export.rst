@@ -39,9 +39,9 @@ The Main upload dialog is shown below:
 
 .. figure:: images/export_flickr_dialog.webp
 
-By default, the tool propose to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
+By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
 
-The **Tag options** section can bused to apply digiKam keywords to the flickr upload. More keywords can be assigned with a series of words (comma separated).
+The **Tag options** section can be used to apply digiKam keywords to the flickr upload. More keywords can be assigned with a series of words (comma separated).
 
 The **Public**, **Friends**, and **Family** checkboxes can be turned on to assign appropriate access permissions to the images you upload. By default the images uploaded are private.
 
