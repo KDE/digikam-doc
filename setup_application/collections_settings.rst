@@ -32,11 +32,11 @@ For each type, the **Add Collection** button allows to append an entry in the li
 
 .. important::
 
-    The **Monitor the Albums for External Changes** option will trigger the database to update information. This can be a time-consuming operation especially undr macOS and with network file system.
+    The **Monitor the Albums for External Changes** option will trigger the database to update information. This can be a time-consuming operation especially under macOS and with network file system.
 
 .. note::
 
-    File write acess in collection is necessary to change items and metadata.
+    File write access in collection is necessary to change items and metadata.
 
 .. figure:: images/setup_collection_entries.webp
     :alt:

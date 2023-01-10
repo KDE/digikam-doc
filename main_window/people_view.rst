@@ -269,7 +269,7 @@ You can tag people manually by different way:
 
         - **Show Face Tags**: this show the face areas visible and switch automatically in edit mode when mouse move over the areas.
 
-- From Left Sidebar **People** tab: use drag and drop between icon-view and face-tags tree-view. Select items labeled **Unknown** that you want to assign a face-tag. Perform a move with the mouse to the **People** items hierarchy. A pop-up menu will appears to confirm face assignement.
+- From Left Sidebar **People** tab: use drag and drop between icon-view and face-tags tree-view. Select items labeled **Unknown** that you want to assign a face-tag. Perform a move with the mouse to the **People** items hierarchy. A pop-up menu will appears to confirm face assignment.
 
     .. figure:: videos/mainwindow_faces_drag_drop.gif
         :width: 600px
@@ -296,7 +296,7 @@ You can tag people manually by different way:
 
     .. note::
 
-        In the :ref:`Miscs Behavior <behavior_settings>` view of the configution dialog, an option can be turned on to only populate the tags tree-view with the face tags assigned to a face while you enter a name.
+        In the :ref:`Miscs Behavior <behavior_settings>` view of the configuration dialog, an option can be turned on to only populate the tags tree-view with the face tags assigned to a face while you enter a name.
 
 In case there's a face you don't wish to be recognized, you can mark it as ignored. This leads to the creation of a new **Ignored** tag, you can later unmark the face if needed.
 

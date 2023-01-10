@@ -31,7 +31,7 @@ Scan Operations
 
     The digiKam Behavior Configuration Page
 
-Set the option **Scan for new items at startup** to force digiKam to scan all collections for new items to register new elements in database. The scan is performed in the background throughthe progress manager available in the statusbar when digiKam main interface is loaded. If your computer is fast enough, this will have no effect on usability of digiKam while scanning. If your collections are huge or if you use a remote database, this can introduce low latency, and it is recommended to disable this option and to plan a manual scan through the maintenance tool at the right moment.
+Set the option **Scan for new items at startup** to force digiKam to scan all collections for new items to register new elements in database. The scan is performed in the background through the progress manager available in the statusbar when digiKam main interface is loaded. If your computer is fast enough, this will have no effect on usability of digiKam while scanning. If your collections are huge or if you use a remote database, this can introduce low latency, and it is recommended to disable this option and to plan a manual scan through the maintenance tool at the right moment.
 
 Set the option **Fast Scan** to significantly speed up the scan. New items, deleted and also renamed items are found. In order to find items that have been changed, this option must be deactivated.
 
@@ -70,11 +70,11 @@ With the **Lower bound for minimum similarity** option, you can select the lower
 Application Updates
 ~~~~~~~~~~~~~~~~~~~
 
-The **Updates** settings allows to tune how the check the online availablity of a new application version. You can select **Only For Stable Releases** which are official versions safe to use in production. Another choice is **Weekly Pre-Releases** which is proposed to tests quickly new features but not recommended to use in production as bugs can remain.
+The **Updates** settings allows to tune how the check the online availability of a new application version. You can select **Only For Stable Releases** which are official versions safe to use in production. Another choice is **Weekly Pre-Releases** which is proposed to tests quickly new features but not recommended to use in production as bugs can remain.
 
 The option **Use Version With Debug Symbols** allows to download version including debug symbols. This version is more heavy but can help developers to trace dysfunctions in debugger.
 
-Finally, on the bottom, a **Check Now** button allow to send a request for an update. The **Last check** date is indicated on the left side. If a new version is avaialble online, a dialog will appears as below.
+Finally, on the bottom, a **Check Now** button allow to send a request for an update. The **Last check** date is indicated on the left side. If a new version is available online, a dialog will appears as below.
 
 .. figure:: images/setup_update_new.webp
     :alt:
@@ -149,7 +149,7 @@ With the **Widget style** setting, you can choose the default application window
 
 With the **Icon theme** setting, you can choose the default application icon theme. Theme availability depends of desktop used to run digiKam.
 
-Finaly, the **Application font** option allow to customize the font to use everywhere in the application. Note that extra options exists also to customize fonts for the :ref:`album tree-view <treeview_font>`, the :ref:`icon-view <iconview_font>`, and the :ref:`tooltip <tooltip_font>`.
+Finally, the **Application font** option allow to customize the font to use everywhere in the application. Note that extra options exists also to customize fonts for the :ref:`album tree-view <treeview_font>`, the :ref:`icon-view <iconview_font>`, and the :ref:`tooltip <tooltip_font>`.
 
 .. _grouping_settings:
 
@@ -199,7 +199,7 @@ This section allows to control the spellchecking operations done in background i
 
     The digiKam Spellcheck Configuration Page
 
-Spellcheck can be used on captions, titles, and other text-edit widgets to auto-detect the current language used in text and will propose alternative with miss-spelled words. With entries where alternative language can be specified, the contextual language will be used to parse text. Spellcheck depends of open-source **Backends**, including **Language Dictionaries**, to operate sentence analysis. Availabilities of both are listed in this view for information. If you want to add new language or dictionnaries, you need to install relevant packages on your system.
+Spellcheck can be used on captions, titles, and other text-edit widgets to auto-detect the current language used in text and will propose alternative with miss-spelled words. With entries where alternative language can be specified, the contextual language will be used to parse text. Spellcheck depends of open-source **Backends**, including **Language Dictionaries**, to operate sentence analysis. Availability of both are listed in this view for information. If you want to add new language or dictionaries, you need to install relevant packages on your system.
 
 .. figure:: images/setup_captions_spellcheck.webp
     :alt:
@@ -222,9 +222,9 @@ This section allows to customize the rules to translate automatically strings fr
 
     The digiKam Localize Configuration Page
 
-A list of **Alternative Languages** supported by digiKam is provided where you can select your prefered entries to found in text edit widgets.
+A list of **Alternative Languages** supported by digiKam is provided where you can select your preferred entries to found in text edit widgets.
 
-Another list allows to know the **Available Translator Languagas**, supported by the **Online Translator** engine selected.
+Another list allows to know the **Available Translator Languages**, supported by the **Online Translator** engine selected.
 
 As number of entries are huge, for the both lists, a search engine is available and and option allows to show only the current selection.
 
@@ -241,13 +241,13 @@ System Settings
 
 This section allows to tune special low level configurations used by application. Only change these settings if you know what you do.
 
-    - **Use high DPI scaling from the screen factor**: with this option application will scale coordinates in device independent maneer according to display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and are therefore theoretically just as large as the graphical interface elements of the system.
+    - **Use high DPI scaling from the screen factor**: with this option application will scale coordinates in device independent manner according to display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and are therefore theoretically just as large as the graphical interface elements of the system.
 
     - **Use pixmaps with high DPI resolution**: with this option, pixmaps sizes used internally by application will have a device-independent layout geometry. It activates high-resolution icons, otherwise the elements in digiKam would look very blurry under high resolutions. ALso, it's recommended to use this option in multi-screen context when resolutions are not the same.
 
     - **Disable hardware acceleration OpenCL**: this option will disable GPU accelerations, especially with faces management.
 
-    - **Enable internal debug logging**: this options will turn one the debug trace on the console used to investiguate dysfunctions.
+    - **Enable internal debug logging**: this options will turn one the debug trace on the console used to investigate dysfunctions.
 
     - **Download Face Engine Data**: With this button you can load face engine deep-learning model files if you pass this stage at first-run.
 
