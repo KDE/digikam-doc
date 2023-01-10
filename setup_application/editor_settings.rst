@@ -57,8 +57,8 @@ In the last field you can adjust whether you want only the last version to be sh
 
 .. _saveimage_settings:
 
-Save Image Options
-------------------
+Save Image Settings
+-------------------
 
 When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of **JPEG quality** that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the JPEG quality slider (1: low quality / 100: high quality and no compression). JPEG metadata is fully supported.
 
