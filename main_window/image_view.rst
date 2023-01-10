@@ -145,7 +145,7 @@ Grouping items is a very useful way to organize Photographs and/or videos that a
 
     The digiKam Icon-View Grouped Items Options From Context Menu
 
-You can put the whole selection into one group using **Group Selected Here** or you can create more than one group determined by time (seconds will be ignored) or by file name. Note that the latter will put items with the same name but different file types into one group. Use case see further below!
+You can put the whole selection into one group using **Group Selected Here** or you can create more than one group determined by time (seconds will be ignored) or by file name. Note that the latter will put items with the same name but different file types into one group. Use case see further below.
 
 .. figure:: images/mainwindow_grouped_items.webp
     :alt:
@@ -153,7 +153,15 @@ You can put the whole selection into one group using **Group Selected Here** or 
 
     The digiKam Icon-View Grouped Mode From Icon-View
 
-The next group in the menu is to control whether only the reference icon of the group (the first of the group according to the sorting order at the moment of grouping) is displayed or all of them. These two functions can also be accessed by the little grouping indicator (folder symbol with number) on the reference icon (see upper left icon on the screenshot). While the mouse pointer is hovering over it there will pop up an information “n grouped items. Group is closed/open.” where n indicates the number of items in the group which are invisible if the group is closed. Clicking on the indicator toggles between open and closed. In the Table mode of the Image Area groups are indicated the way we know from many other lists and tables: with a little triangle in front of the reference item. Clicking on this triangle will fold out/in the grouped items.
+The next group in the menu is to control whether only the reference icon of the group (the first of the group according to the sorting order at the moment of grouping) is displayed or all of them. These two functions can also be accessed by the little grouping indicator (folder symbol with number) on the reference icon.
+
+.. note::
+
+    In Icon View, you can turn on/off the frame over goupped item thumbnails with an option from :ref:`Setup/Miscs/Appearance <settings_appearance> settings. 
+
+While the mouse pointer is hovering over it there will pop up an information **n grouped items. Group is closed/open.** where *n* indicates the number of items in the group which are invisible if the group is closed. Clicking on the indicator toggles between **open** and **closed**.
+
+In the **Table Mode** of the Image Area groups are indicated the way we know from many other lists and tables: with a little triangle in front of the reference item. Clicking on this triangle will fold out/in the grouped items.
 
 .. figure:: images/mainwindow_grouped_table.webp
     :alt:
@@ -161,12 +169,16 @@ The next group in the menu is to control whether only the reference icon of the 
 
     The digiKam Icon-View Grouped Mode From Table View
 
-The last group in the Group context menu allows to remove individual items from the group or to disband the whole group. The content of the menu will change depending on whether you use it on a selection of still un-grouped items, on a group or on single items of a group.
+The last group in the **Group** context menu allows to remove individual items from the group or to disband the whole group. The content of the menu will change depending on whether you use it on a selection of still un-grouped items, on a group or on single items of a group.
 
-What can you do with a group? In terms of functions of digiKam you can perform a lot of operations like copy, delete, move, rotate on the whole group by selecting only the reference icon provided the group is closed. The same way you can load the whole group into tools like Light Table or the Batch Queue Manager, even into the Image Editor where you can navigate through the group members with the page keys on your keyboard. You can assign tags and labels (see further below in this chapter) and also write descriptions (see :ref:`Captions <captions_view>`). Give it a try!
-
-In terms of use cases you can for instance group videos together with the .jpg - images related to them which most cameras provide or RAW images with their JPG counterpart. This is made easy by **Group Selected By Filename**. In the screenshot above exposure bracketed images are being grouped. One could do the same for archiving purposes with images used for a panorama. If you have very specific requirements for documenting of editing steps the :ref:`Versions <versions_view>` function of digiKam cannot meet you may find a solution using grouping. We can think of more use cases for grouping but We don't want to overload this section of the handbook here. Maybe a last hint for your own ideas: grouping is not restricted to items out of the same album. The whole group (open or closed) will only be visible in the album of the reference item. The other members of the group will be visible in their own albums only if the group is open. Can be confusing, use with care!
+What can you do with a group? In terms of functions of digiKam you can perform a lot of operations like copy, delete, move, rotate on the whole group by selecting only the reference icon provided the group is closed. The same way you can load the whole group into tools like Light Table or the Batch Queue Manager, even into the Image Editor where you can navigate through the group members with the page keys on your keyboard. You can assign tags and labels (see further in this manual) and also write descriptions (see :ref:`Captions <captions_view>`). Give it a try.
 
 .. note::
 
-     Everything described in this Grouping section has nothing to do with **Group Images** in the View menu. That function doesn't form permanent groups of items, it only organizes the way icons are displayed in the Image Area.
+    Operations to perform over grouped items are managed by Setup/Miscs/Grouping settings. See :ref:`this section <grouping_settings>` from the manual for details. 
+
+In terms of use cases you can for instance group videos together with the .jpg - images related to them which most cameras provide or RAW images with their JPG counterpart. This is made easy by **Group Selected By Filename**. In the screenshot above exposure bracketed images are being grouped. One could do the same for archiving purposes with images used for a panorama. If you have very specific requirements for documenting of editing steps the :ref:`Versions <versions_view>` function of digiKam cannot meet you may find a solution using grouping. We can think of more use cases for grouping but We don't want to overload this section of the handbook here. Maybe a last hint for your own ideas: grouping is not restricted to items out of the same album. The whole group (open or closed) will only be visible in the album of the reference item. The other members of the group will be visible in their own albums only if the group is open. Can be confusing, use with care.
+
+.. note::
+
+     Everything described in this Grouping section has nothing to do with **Group Images** in the **View** menu. That function doesn't form permanent groups of items, it only organizes the way icons are displayed in the Image Area.

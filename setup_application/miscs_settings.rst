@@ -70,7 +70,7 @@ With the **Lower bound for minimum similarity** option, you can select the lower
 Application Updates
 ~~~~~~~~~~~~~~~~~~~
 
-The **Updates** settings allows to tune how the check the online availablity of a new application version. You can select **Only For Stable Releases** which are official versions safe to use in production. Another choice is **Weekly Pre-Releases** which are proposed to tests quickly new features but not recommended to use in production as bugs can remain.
+The **Updates** settings allows to tune how the check the online availablity of a new application version. You can select **Only For Stable Releases** which are official versions safe to use in production. Another choice is **Weekly Pre-Releases** which is proposed to tests quickly new features but not recommended to use in production as bugs can remain.
 
 The option **Use Version With Debug Symbols** allows to download version including debug symbols. This version is more heavy but can help developers to trace dysfunctions in debugger.
 
@@ -177,6 +177,8 @@ For each case, you can select if digiKam can:
 - **No**: do nothing.
 - **yes**: operate items.
 - **Ask**: ask to confirm before to continue.
+
+For this last case, a dialog as below will appears during operation. You can remember your choice for the next time, this will adjust the operation settings accordingly.
 
 .. figure:: images/setup_operation_warning.webp
     :alt:
