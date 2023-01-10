@@ -60,7 +60,7 @@ In the last field you can adjust whether you want only the last version to be sh
 Save Image Options
 ------------------
 
-When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of **JPEG quality** that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the JPEG quality slider (1: low quality / 100: high quality and no compression). At the time of writing, metadata is supported.
+When changes are made to JPEG files and they are saved back to the hard disk the JPEG file must be re-encoded. Each time a JPEG file is encoded a decision must be made on the level of **JPEG quality** that is to be applied. Unfortunately the level of quality applied is not recorded in the image file. This means that the Image Editor cannot use the same quality ratio when saving an altered image as was used for the original image. You can change the default level of quality that the Image Editor will apply when it saves altered images by moving the JPEG quality slider (1: low quality / 100: high quality and no compression). JPEG metadata is fully supported.
 
 **Chroma subsampling** is the practice of encoding images by implementing more resolution for luminance information than for color information. Please read this Wikipedia article for a full explanation.
 
@@ -76,7 +76,7 @@ With **Compress TIFF** option, you can toggle to use Deflate compression algorit
 
 With the **LossLess JPEG 2000** files option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG, and metadata is supported.
 
-With the **LossLess PGF files** option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG-2000 and very fast to process encoding decoding. At the time of writing, metadata is supported.
+With the **LossLess PGF files** option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG-2000 and very fast to process encoding decoding and metadata is supported.
 
 With the **LossLess HEIF files** option allows for lossless storage, or, if the lossy options is selected, even then the quality for comparative files size is much better than normal JPEG-2000, but it slower to encode and decode and it support only 8-12 bits colors depth. This image format dedicated to remplace JPEG on smartphone, not all metadata is supported.
 
