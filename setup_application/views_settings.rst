@@ -15,7 +15,7 @@ Views Settings
 
 .. contents::
 
-In a number of tabs you can access the following groups of settings for the Views of digiKam (Albums, Tags, Labels, ...):
+With this settings page, you can customize by the following groups of settings for the Views of digiKam as Albums tree-view, Tags tree-view, icon-view, preview, full-screen, etc.
 
 .. _iconview_settings:
 
