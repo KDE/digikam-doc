@@ -55,6 +55,8 @@ For each metadata section, a bar is available on the top of view with:
 
     The metadata view preserve the filter settings depending of the file selected. This allow to compare quickly metadata contents between items to identify the differences.
 
+.. _exif_tags:
+
 Exif Tags
 ~~~~~~~~~
 
@@ -74,6 +76,8 @@ You can review embedded Exif information for the selected image from the first s
 
 Some vendors add additional Exif sections, such as Canon, Fujifilm, Nikon, Minolta, and Sigma. These sections contain vendor and model specific notes. These will be displayed on the **Makernote** tab.
 
+.. _markernotes_tags:
+
 Makernote Tags
 ~~~~~~~~~~~~~~
 
@@ -86,6 +90,8 @@ You can review embedded Makernote information for the selected image in this sid
     :align: center
 
     The Metadata View From Right Sidebar Displaying Markernote Information
+
+.. _iptc_tags:
 
 IPTC Tags
 ~~~~~~~~~
@@ -103,6 +109,8 @@ You can review embedded IPTC information for the selected image in this sidebar 
     :align: center
 
     The Metadata View From Right Sidebar Displaying IPTC Information
+
+.. _xmp_tags:
 
 XMP Tags
 ~~~~~~~~
@@ -122,6 +130,8 @@ You can review embedded XMP information for the selected image in this sidebar t
     :align: center
 
     The Metadata View From Right Sidebar Displaying XMP Information
+
+.. _exiftool_view:
 
 ExifTool View
 ~~~~~~~~~~~~~

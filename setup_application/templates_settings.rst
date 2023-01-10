@@ -25,7 +25,7 @@ The **Metadata Templates Manager** is meant to create and manage metadata templa
     - The **On the Fly Operations (JPEG only)** section of the **Settings** view from the Right Sidebar in the :menuselection:`Import --> Cameras` Window.
 
 The goal of templates is to apply more than one metadata information at the same time to items. You can create many profiles
-corresponding to your workflow.
+corresponding to your workflow. In all cases, the information will be hosted in file to XMP metadata, and for some fields, in IPTC when possible. Remember that XMP is a replacement of IPTC as explained :ref:`in this section <iptc_tags>` of the manual.
 
 The top part shows a list of the already existing templates. The first row shows the title of the template, the second row shows the name of the author(s) in the “Author Names” field of that very template. To the right you have three editing buttons, below an input field for the template title. To create a new template you type a title in the input field and click the **Add** button. The new template will appear in the list. To edit an existing template you select it in the list, then you edit its fields (see next paragraph) and finally you click the **Replace** button. You can as well type in a new title for the edited template and save the new version with the **Add** button. To delete a template, very obviously, you select it in the list and click the **Remove** button.
 
@@ -92,23 +92,23 @@ The Contact Information
 
     The digiKam Template Contact Configuration Page
 
-The data in the Contact tab refer to the (lead) photographer under **Author Names** in the Rights tab. This is an extract of the IPTC/XMP specifications for these fields:
+The data in the Contact tab refer to the (lead) photographer under **Author Names** in the **Rights** tab. As these information do not exists in IPTC, see below an extract of the XMP specifications for these fields:
 
-    - **Address**:
+    - **Address**: This field should contain the address where the lead author lives.
 
-    - **Postal Code**:
+    - **Postal Code**: This field should contain the postal code where the lead author lives.
 
-    - **City**:
+    - **City**: This field should contain the city name where the lead author lives.
 
-    - **Province**:
+    - **Province**: This field should contain the province where the lead author lives.
 
-    - **Country**:
+    - **Country**: This field should contain the country name where the lead author lives.
 
-    - **Phone**:
+    - **Phone**: This field should contain the phone number of the lead author.
 
-    - **Email**:
+    - **Email**: This field should contain the email of the lead author.
 
-    - **URL**:
+    - **URL**: This field should contain the web site URL of the lead author.
 
 The Subjects Information
 ------------------------
@@ -119,6 +119,6 @@ The Subjects Information
 
     The digiKam Template Subjects Configuration Page
 
-In the Subjects tab you can assign one or more Subject Codes according to the IPTC Photo Metadata Standard to the template. If the first option “Use standard reference code” is selected you can choose a code from the drop down field and the meaning of it will then appear in the fields of the “Use custom definition” section. If you don't know the code for the subject you want to assign this way is a bit tedious since there are 1400 subjects in the standard. A better way is to look for your subject in this URL. There you select “Subject Codes” and your language (English recommended) and click “Show”. In the diagram you scroll and make additional levels of an item visible by clicking on one of the fields. In the field right of the diagram you can find the code of the selected subject.
+In the **Subjects** tab you can assign one or more Subject Codes according to the IPTC Photo Metadata Standard to the template. If the first option **Use standard reference code** is selected you can choose a code from the drop down field and the meaning of it will then appear in the fields of the **Use custom definition** section. If you don't know the code for the subject you want to assign this way is a bit tedious since there are 1400 subjects in the standard. A better way is to look for your subject in this URL. There you select **Subject Codes** and your language (English recommended) and click *Show*. In the diagram you scroll and make additional levels of an item visible by clicking on one of the fields. In the field right of the diagram you can find the code of the selected subject.
 
-In general the IPTC Subject Codes are quite comprehensive but on the other hand a bit incomplete in some fields, e.g. under Lifestyle and Leisure/Games you find just Go, chess, bridge and shogi. So you may want to add own subjects, even though they always remain private (or company) subjects. A way to do that in digiKam is to first check “Use standard reference code” and select 10001004 which brings you to Lifestyle and Leisure/Games/shogi - just to stay in our example. Then you check “Use custom definition” and change the last digit of “Reference:” to 5 and the text in the “Detail:” field to - say “domino”. You save this custom definition to the template by clicking Add... at the right side of the subjects list. Then you type in a template title (if it's a new template) and save the template by clicking Add... at the right side of the templates list. Don't mix up these two!
+In general the IPTC Subject Codes are quite comprehensive but on the other hand a bit incomplete in some fields, e.g. under Lifestyle and Leisure/Games you find just Go, Chess, Bridge and Shogi. So you may want to add own subjects, even though they always remain private (or company) subjects. A way to do that in digiKam is to first check **Use standard reference code** and select *10001004* which brings you to *Lifestyle* and *Leisure/Games/shogi* - just to stay in our example. Then you check **Use custom definition** and change the last digit of **Reference** to 5 and the text in the **Detail**” field to - say *domino*. You save this custom definition to the template by clicking **Add** button at the right side of the subjects list. Then you type in a template title (if it's a new template) and save the template by clicking **Add** button at the right side of the templates list. Don't mix up these two.
