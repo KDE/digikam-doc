@@ -115,7 +115,7 @@ With an over exposed photograph, the histogram will have the bulge showing the b
 
 .. important:: Not all photographs have to exhibit this bulge in the center part of their histogram. Much depends on the subject of the photograph. In some cases, it might be appropriate for the histogram to show a peak at one end or the other, or both.
 
-The histogram is a reliable way of deciding whether or not a photograph is correctly exposed. Should the histogram show an over or under exposure, an :ref:`Exposure Correction Tool <exposure_correction>` should be used to fix the photograph.
+The histogram is a reliable way of deciding whether or not a photograph is correctly exposed. Should the histogram show an over or under exposure, an :ref:`Exposure Correction Tool <color_exposure>` should be used to fix the photograph.
 
 ICC Profile Viewer
 ~~~~~~~~~~~~~~~~~~

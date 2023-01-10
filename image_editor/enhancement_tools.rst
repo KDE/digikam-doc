@@ -15,6 +15,8 @@ Enhancement Tools
 
 .. contents::
 
+.. _enhance_lensdistortsion:
+
 Lens Distortion Correction
 --------------------------
 
@@ -72,6 +74,8 @@ When using pincushion correction the resulting image will have a black border in
 
 On most images using the barrel correction is enough, however with some shots such as front images, frames, paintings, the next logical step is to use perspective correction to make all the angles 90 degrees. Note that when you hold your camera by hand you almost always introduce some kind of slight perspective distortion.
 
+.. _enhance_hotpixels:
+
 Hot Pixels Correction
 ---------------------
 
@@ -124,6 +128,8 @@ Select an area to see bad pixels on preview and the filter result using 'Separat
 
     Cubic: the pixels which have a distance of 3 or less from the pixel block are used to calculate a bi-cubic surface (2-dim), or a group of cubic curves (1-dim), which is then used to assign interpolated colors to the pixels in the block.
 
+.. _enhance_localcontrast:
+
 Local Contrast Tool
 -------------------
 
@@ -136,6 +142,8 @@ There are multiple ways to render HDR image to improve photos containing under o
 Open the photo you want in the editor and choose Enhance --> Local Contrast. The tool lets you apply up to four tonemapping operations called stages. Each stage offers two parameters for you to tweak: Power and Blur. The former allows you to specify the desaturation level, while the latter lets you adjust the affected areas on the photo. To preview the result, hit the Try button. Once you are satisfied with the result, press OK to apply the process to the photo.
 
 While the Local Contrast tool may sound like an easy way to fix photos, you should use it with care: sometimes it can do more damage than good, producing unnaturally looking photos.
+
+.. _enhance_nr:
 
 Noise Reduction
 ---------------
@@ -165,6 +173,8 @@ You can see below a full description of all parameters:
 
     Defaults: this button resets all settings to default values.
 
+.. _enhance_blur:
+
 Blur Tool
 ---------
 
@@ -173,6 +183,8 @@ The Blur Tool is dedicated to soft an image.
 Sometimes an image is too crisp for your purposes. The solution is to blur it a bit: fortunately blurring an image is much easier than sharpening it. Select the Blur Tool with the Enhance --> Blur menu entry and experiment with the level. The preview window on the right of the dialog shows the effect of the operation on your photograph.
 
 .. figure:: images/editor_blur.webp
+
+.. _enhance_restoration:
 
 Photograph Restoration
 ----------------------
@@ -220,6 +232,8 @@ Save As... and Load... buttons are used to do just that. Any Photograph Restorat
 .. warning::
 
     Photograph restoration is (comparatively) very fast in what it is doing, but it can take a long time to run and cause high CPU load. You may always abort computation by pressing Abort button during preview rendering.
+
+.. _enhance_vignetting:
 
 Vignetting Correction
 ---------------------
@@ -275,6 +289,8 @@ The values used for this example are:
 
 .. figure:: images/editor_antivignetting_preview.webp
 
+.. _enhance_redeyes:
+
 Remove Red Eyes
 ---------------
 
@@ -289,6 +305,8 @@ How it works
     - The **Red Level** setting adjusts the amount of red eyes removal, in aggressive mode or not.
 
 .. figure:: images/editor_redeyes_correction.webp
+
+.. _enhance_sharpen:
 
 Image Sharpening
 ----------------

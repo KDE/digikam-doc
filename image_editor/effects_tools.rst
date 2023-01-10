@@ -15,6 +15,8 @@ Effects Tools
 
 .. contents::
 
+.. _effect_blurfx:
+
 Blur FX
 -------
 
@@ -50,6 +52,8 @@ These are the blurring effects available:
 
     Some effects can take a long time to run and cause high CPU load. You can always abort an effect by pressing the Abort button during preview rendering.
 
+.. _effects_charcoal:
+
 Charcoal Drawing
 ----------------
 
@@ -65,6 +69,8 @@ There are two sliders to control the effect on a scale of 1-100. The upper slide
 
     The result can be improved by adjusting the luminosity levels.
 
+.. _effects_color:
+
 Color Filter Effects
 --------------------
 
@@ -72,12 +78,16 @@ The digiKam Color Effects tool provides four color effects: a Solarization effec
 
 In the age of chemical image processing, solarizing (also known as Sabatier) was an effect created by exposing a partially developed print to a brief flash of light, then completing the development. The colored, darker areas shield the additional light from the sensitive photo layers, which has the net effect of making the lighter areas darker and colors being inverted during the second exposure. The result resembles a partially negative image. The tool allows to adjust the interesting effect smoothly.
 
+.. _effects_solarize:
+
 The Solarization Effect
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 The Intensity control helps to preview the solarization by simply increasing it. At about 50% intensity the image shows what was once chemically possible. If you further increase the effect it will finally become a negative image, a stage of inversion not achievable on photographic paper.
 
 .. figure:: images/editor_solarize.webp
+
+.. _effects_vivid:
 
 The Vivid Effect
 ~~~~~~~~~~~~~~~~
@@ -88,6 +98,8 @@ Velvia is a brand of daylight-balanced color reversal film produced by the Japan
 
 .. figure:: images/editor_vivid.webp
 
+.. _effects_neon:
+
 The Neon Effect
 ~~~~~~~~~~~~~~~~
 
@@ -95,12 +107,16 @@ The neon filter simulates neon light along the contrast edges. The level paramet
 
 .. figure:: images/editor_neon.webp
 
+.. _effects_edges:
+
 The Find Edges Effect
 ~~~~~~~~~~~~~~~~~~~~~
 
 The find edges filter detects the edges in a photograph and their strength.
 
 .. figure:: images/editor_edges.webp
+
+.. _effects_lut3d:
 
 The Lut3D Effect
 ~~~~~~~~~~~~~~~~
@@ -110,6 +126,8 @@ The Lut3D filter coloring images by applying transformation based on a 3D lookup
 In the film industry, 3D lookup tables are used to map one color space to another. They are commonly used to calculate preview colors for a monitor or digital projector of how an image will be reproduced on another display device, typically the final digitally projected image or release print of a movie. A 3D LUT is a 3D lattice of output RGB color values that can be indexed by sets of input RGB colour values. Each axis of the lattice represents one of the three input color components and the input color thus defines a point inside the lattice. Since the point may not be on a lattice point, the lattice values must be interpolated; most products use trilinear interpolation.
 
 .. figure:: images/editor_lut3d.webp
+
+.. _effects_distortion:
 
 Distortion FX
 -------------
@@ -158,6 +176,8 @@ These are the distorting effects available:
 
     Some effects can take a long time to run and cause high CPU load. You can always abort an effect by pressing Abort button during preview rendering.
 
+.. _effects_emboss:
+
 Emboss Image
 ------------
 
@@ -168,6 +188,8 @@ The digiKam Emboss filter is a quick tool to render your images in a 3-D effect.
 The Depth control allows to define the contrast of the filtering. A value of 30 (10%) is the standard.
 
 .. figure:: images/editor_emboss.webp
+
+.. _effects_filmgrain:
 
 Film Grain
 ----------
@@ -186,6 +208,8 @@ As common settings, a slider allows control the grain size and you can turn on t
 
     If you process a black and white image, the grain needs to be applied only on Luminance channel.
 
+.. _effects_oilpaint:
+
 Oil Paint
 ---------
 
@@ -196,6 +220,8 @@ This filter gives your digital images a nice oilpainting-like look. Images of na
 .. figure:: images/editor_oil_paint.webp
 
 There are two sliders to control the effect. The upper slider selects the Brush Size between 1 and 5. Bigger brushes are better suited for large images. Smooth controls the smoothness or, seen from the other end, the jaggedness.
+
+.. _effects_raindrops:
 
 Rain Drops
 ----------

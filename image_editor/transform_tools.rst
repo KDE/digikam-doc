@@ -18,6 +18,8 @@ Transform Tools
 Cropping a Photograph
 ---------------------
 
+.. _transform_crop:
+
 Manual Crop
 ~~~~~~~~~~~
 
@@ -33,6 +35,8 @@ Once you are happy with the crop, click on the Image Editor Crop button on the t
 
     The Histogram tab from the right sidebar will recompute the color statistics accordingly with the current selection on image.
 
+.. _transform_autocrop:
+
 Auto Crop
 ~~~~~~~~~
 
@@ -43,6 +47,8 @@ This tool can be used for example to crop a stitched panorama, assembly with man
 See below a stitched Panorama Processed With Auto Crop.
 
 .. figure:: images/editor_autocrop.webp
+
+.. _transform_proportionalcrop:
 
 Proportional Crop
 ~~~~~~~~~~~~~~~~~
@@ -75,6 +81,8 @@ At the very bottom line of the dialog, the Max. Ratio button lets you set the cr
 
     The Aspect Ratio Crop tool remembers the settings depending on image orientation (horizontal or vertical). When you use the crop tool next time, these settings will be used as default values depending on the image orientation. The changed image dimensions are stored into the Exif tables so that the Exif data reflects the cropped image and not the original one.
 
+.. _transform_composition:
+
 Composition Guide
 ~~~~~~~~~~~~~~~~~
 
@@ -99,6 +107,8 @@ The Composition Guide settings provides guiding elements to better compose your 
 The Flip Horizontal and Flip Vertical options can be used to apply flip transformation to the harmonious divisions.
 
 The Color button lets you set the guidelines color. If you have an high color contrast image, the guidelines may become invisible. By the way, you can adapt the color guide to the current image.
+
+.. _transform_freerotation:
 
 Free Rotation
 -------------
@@ -128,6 +138,8 @@ A more elegant way to crop the rotated image is to use the Auto-crop function. C
 Hold the mouse over the combo-box and scroll with the wheel between the two possibilities.
 
 The Anti-aliasing checkbox will smooth the image a bit after rotation. Please read the warning above.
+
+.. _transform_perspective:
 
 Perspective Adjustment
 ----------------------
@@ -159,6 +171,8 @@ To change the perspective, use the square areas at the image corners for draggin
 After you have adjusted the perspective of an image there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform --> Crop Image Editor menu.
 
 .. figure:: images/editor_perspective_tool.webp
+
+.. _transform_resize:
 
 Change The Image Size
 ---------------------
@@ -220,6 +234,8 @@ Save As... and Load... buttons are used to do just that. Any Blowup Photograph f
 
     Resize Photograph is very fast in what it is doing, but it can take a long time to run and cause high CPU load. You may always abort computation by pressing Cancel button during rendering.
 
+.. _transform_rotationflip:
+
 Rotating or Flipping a Photograph
 ---------------------------------
 
@@ -227,15 +243,14 @@ If the photograph shows a wrong orientation you can Flip or Rotate it to the ori
 
 With flipping options, you can flip or turn over the image horizontally or vertically like a card deck. With the rotating options, you can rotate the image in 90 degrees steps clockwise. It can be used to change the display mode to Portrait or Landscape. Be aware that this rotation is not lossless when using JPEG format. You also can rotate more accurately to a finer degree by using the Free Rotation tool. You can access it by the Transform --> Free Rotation menu entry. See the dedicated Free Rotation manual for more information.
 
+.. _transform_shear:
+
 Shearing Image
 --------------
 
 The digiKam Shearing Image is a tool for shearing an image horizontally or vertically.
 
 The Shear tool is used to shift one part of an image to one direction and the other part to the opposite direction. For instance, a horizontal shearing will shift the upper part to the right and the lower part to the left. This is not a rotation: the image is distorted. In other words, it will turn a rectangle into a parallelogram. This tool is available from Transform --> Shear menu.
-
-Using the Sheartool
--------------------
 
 Shear your image by using the Horizontal Angle and Vertical Angle sliders (values in degrees). You can shear along either Horizontally and vertically at the same time. Click on the Reset Values reset. A shearing effect preview is shown on the center of dialog window. The new target image dimensions in pixels are displayed at the right side of dialog.
 

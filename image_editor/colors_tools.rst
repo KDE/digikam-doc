@@ -15,10 +15,14 @@ Colors Tools
 
 .. contents::
 
+.. _color_depth:
+
 Encoding Depth
 --------------
 
 Here you can change the encoding depth per color channel of the edited image. 8 bit encoding is the common JPEG format, 16 bit encoding is better suited for high quality images, but this format needs more storage space, calculation time and is currently available with PNG, PGF, TIFF, and JPEG-2000 formats only.
+
+.. _color_cm:
 
 Color Management
 ----------------
@@ -26,6 +30,8 @@ Color Management
 This tool allows to convert image from one color space to another one. Its use is the change and assignment of color profiles to an image. For detailed instructions on the use of color profiles, please refer to Color Management Settings chapter.
 
 .. figure:: images/editor_profile_converter.webp
+
+.. _color_auto:
 
 Auto-Correction
 ---------------
@@ -52,6 +58,8 @@ Black and White Conversion Filters
 ----------------------------------
 
 Black & White photography has always been fascinating in its abstraction capability. With the advent of digital photography, B&W has almost become a desktop activity, as color images can be easily converted on the computer into black and white, even providing a set of vintage film roll profiles. This filter is also able to simulates traditional infrared film material.
+
+.. _color_bw:
 
 The Legacy Black and White Films Emulation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -83,6 +91,8 @@ A color tint can be applied to the image:
     - Selenium Filter: effect that replicates traditional selenium chemical toning done in the darkroom.
     - Platinum Filter: effect that replicates traditional platinum chemical toning done in the darkroom.
 
+.. _color_infrared:
+
 Simulate Infrared Film
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -95,6 +105,8 @@ The filter tries to reproduce the famous Ilford(tm) SFX and Kodak Tmax infrared 
 
 Because the filter mixes color channels to reproduce infrared film (with emphasis on green channel), one can not simulate infrared effect from black and white original photograph, since the color information is missing.
 
+.. _color_balance:
+
 Colors Balance
 --------------
 
@@ -105,6 +117,8 @@ Digital cameras often have problems with lighting conditions and it is not unusu
 If your image is washed out (which can easily happen when you take images in bright light) try the Hue/Saturation/Lightness tool, which gives you four sliders to manipulate, for Hue, Saturation, Vibrance, and Lightness. Raising the saturation will probably make the image look better. In some cases, it is useful to adjust the lightness at the same time. ("Lightness" here is similar to "Brightness" in the Brightness/Contrast/Gamma tool, except that they are formed from different combinations of the red, green, and blue channels).
 
 When you take images in low light conditions, you could get the opposite problem: too much saturation. In this case the Hue/Saturation tool is again a good one to use, only by reducing the saturation instead of increasing it. You can see any adjustments you make reflected in the preview image. When you are happy with the results, press Ok and they will take effect.
+
+.. _color_curves:
 
 Adjust Curves
 -------------
@@ -144,6 +158,8 @@ To the left, half of the original and the target preview image is shown. The tar
 The curves tool has several features that facilitate the positioning of points on the control curves. Clicking the mouse button in the original image preview area produces a vertical doted bar in the graph area of the curves tool. The bar position corresponds to the pixel value the mouse cursor is over in the image window. Clicking and dragging the mouse button interactively updates the position of the vertical bar. In this way, it is possible to see where different pixel values in the image are located on the control curve and helps to discover the locations of shadow, midtone, and highlight pixels.
 
 Using this way and the three Tone Color Picker buttons will automatically create control points on the curve in all channels for shadow, middle, and highlight tones. Enable the color picker button that you want to use, and click on the original image preview area to produce control points on each of the Red, Green, Blue, and Luminosity control curves.
+
+.. _color_levels:
 
 Adjust Levels
 -------------
@@ -196,7 +212,7 @@ Using in this mode and the three Color Picker buttons will automatically adjust 
 
 Over Exposure Indicator option checks all color channel to see if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of channel level settings. This feature is available as an indicator in the target preview area and has no effect on final rendering.
 
-.. _exposure_correction:
+.. _color_exposure:
 
 Correcting Exposure
 -------------------
@@ -209,6 +225,15 @@ The simplest tool to use is the Brightness/Contrast/Gamma tool. It is also the l
 
     Another important tool called Levels Adjust provides also an integrated way of seeing the results of adjusting multiple levels and also enables you to save level settings for application to multiple photographs. This can be useful if your camera or scanner often makes the same mistakes and you want to apply the same corrections. See the dedicated Adjust Levels manual for more information.
     See also a way of correcting exposure problems using the Adjust Curves tool.
+
+.. _color_hsl:
+
+Hue Saturation Lightness
+------------------------
+
+.. figure:: images/editor_hsl_adjust.webp
+
+.. _color_mixer:
 
 Channel Mixer
 -------------
@@ -234,6 +259,8 @@ Save As... and Load... buttons are used to do just that. Any mixer settings that
 Over Exposure Indicator option adds up the colors if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of channel gain settings. This rule is applying to target preview area and haven't effect to final rendering.
 
 Reset All button resets all channel mixer settings to default values.
+
+.. _color_wb:
 
 White Balance
 -------------

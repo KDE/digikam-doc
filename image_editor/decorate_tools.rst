@@ -15,6 +15,8 @@ Decorate Tools
 
 .. contents::
 
+.. _decorate_texture:
+
 Apply Texture
 -------------
 
@@ -29,6 +31,8 @@ Two options give you control over the texture applying on image:
     Type: this option specifies the decorative texture style to apply under the image.
 
     Relief: dragging this option to the right increases the appearance of depth or three-dimensionality of the texture on image.
+
+.. _decorate_border:
 
 Add Border
 ----------
@@ -54,6 +58,8 @@ Click on the OK button to apply the border around the current image.
 .. note::
 
     The border decorated target image will be bigger than the original, but it will retain the same aspect ratio. This is important for printing images, especially if you have used the Aspect Ratio Crop tool before.
+
+.. _decorate_inserttext:
 
 Insert Text
 -----------

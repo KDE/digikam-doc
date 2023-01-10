@@ -28,7 +28,7 @@ When performing a basic workflow, the primary areas for consideration are:
 
     4. Contrast: :ref:`Adjust Curves <color_levels>`.
 
-    5. Saturation: :ref:`White Balance <color_wb>`, :ref:`Vivid <color_effects>` or :ref:`Hue/Saturation/Lightness <color_hsl>`.
+    5. Saturation: :ref:`White Balance <color_wb>`, :ref:`Vivid <effects_color>` or :ref:`Hue/Saturation/Lightness <color_hsl>`.
 
     6. Resizing (interpolation): :ref:`Change Size <transform_resize>`.
 
