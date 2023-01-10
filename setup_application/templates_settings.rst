@@ -15,11 +15,14 @@ Templates Settings
 
 .. contents::
 
-The Metadata Templates Manager is meant to create and manage metadata templates which can be used in:
+The **Metadata Templates Manager** is meant to create and manage metadata templates which can be used in:
 
-    - The Information tab of the Captions view of the Right Sidebar
+    - The **Information** tab of the **Captions** view from the Right Sidebar.
 
-    - The On the Fly Operations (JPEG only) section of the Settings view of the Right Sidebar in the Import --> Cameras --> Cameras Window.
+    - The **On the Fly Operations (JPEG only)** section of the **Settings** view from the Right Sidebar in the :menuselection:`Import --> Cameras` Window.
+    
+The goal of templates is to apply more than one metadata information at the same time to items. You can create many profiles
+corresponding to your workflow.
 
 The Rights Information
 ----------------------
@@ -30,15 +33,15 @@ The Rights Information
 
     The digiKam Template Rights Configuration Page
 
-The top part shows a list of the already existing templates. The first row shows the title of the template, the second row shows the name of the author(s) in the “Author Names” field of that very template. To the right you have three editing buttons, below an input field for the template title. To create a new template you type a title in the input field and click the Add... button. The new template will appear in the list. To edit an existing template you select it in the list, then you edit its fields (see next paragraph) and finally you click the Replace... button. You can as well type in a new title for the edited template and save the new version with the Add... button. To delete a template, very obviously, you select it in the list and click the Remove button.
+The top part shows a list of the already existing templates. The first row shows the title of the template, the second row shows the name of the author(s) in the “Author Names” field of that very template. To the right you have three editing buttons, below an input field for the template title. To create a new template you type a title in the input field and click the **Add** button. The new template will appear in the list. To edit an existing template you select it in the list, then you edit its fields (see next paragraph) and finally you click the **Replace** button. You can as well type in a new title for the edited template and save the new version with the **Add** button. To delete a template, very obviously, you select it in the list and click the **Remove** button.
 
 .. warning::
 
-    Note that all the changes you made to the templates will only be stored in the template file if you exit the settings dialog with OK! The Add... and Replace... buttons only change the template list in the RAM.
+    Note that all the changes you made to the templates will only be stored in the template file if you exit the settings dialog with **OK** button. The **Add** and **Replace** buttons only change the template list in the memory.
 
 .. tip::
 
-    The template file can be found in ~/.local/share/digikam/ for manual backup or for managing different template sets by means of the file system.
+    The template file can be found in :file:`~/.local/share/digikam/` for manual backup or for managing different template sets by means of the file system.
 
 The rest of the window is divided into four tabs, grouping the metadata fields into Rights, Location, Contact and Subjects.
 
