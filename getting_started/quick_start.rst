@@ -21,7 +21,7 @@ Quick Start
 
 When you start digiKam for the very first time it will ask you where you store your photographs. You can choose any local, remote or removable folder. Just type in the path name of a folder or click on the **Browse...** icon to select a folder from the dialog.
 
-Later on you can add as many locations as you like - digiKam will add them to the album library. Look menu entry :menuselection:`Settings --> Configure digiKam --> Collections` 
+Later on you can add as many locations as you like - digiKam will add them to the album library. Look menu entry :menuselection:`Settings --> Configure digiKam --> Collections`
 
 .. figure:: images/firstrun_step2.webp
     :alt:
@@ -108,7 +108,7 @@ Once you have configured the Album Library Folder you can set up digiKam to work
 
 .. important::
 
-    At first run, digiKam will ask to download large files from Internet. These files are the deep-learning models used for the face management, red eyes removal, and the image quality sorting features. If you pass this stage without downloading files, these features will not work properly.
+    At first run, digiKam will ask to download large files from Internet. These files are the deep-learning models used for the face management, red eyes removal, and the image quality sorting features. If you pass this stage without downloading files, these features will not work properly, but you can reload this file later using option from the :ref:`Setup/Miscs/System <system_settings>` dialog page.
 
     .. figure:: images/models_downloader.webp
         :alt:

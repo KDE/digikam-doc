@@ -165,11 +165,11 @@ Grouping Settings
 This section list the operations to perform on all grouped items depending on the usage context. Operations supported are:
 
     - **Metadata**: when you change information to store in files or in the database.
-    - **Import/Export Tools**: to import and export items. 
+    - **Import/Export Tools**: to import and export items.
     - **Batch Queue Manager**: to process all items from a group.
     - **Light Table**: to display grouped items when reviewing by pair.
     - **Slideshow**: to show all grouped items on the screen.
-    - **Renaming**: to all items from a group. 
+    - **Renaming**: to all items from a group.
     - **Tools**: to post process all items from a group.
 
 For each case, you can select if digiKam can:
@@ -185,7 +185,7 @@ For this last case, a dialog as below will appears during operation. You can rem
     :align: center
 
     The Dialog to Warn about Grouped Renaming File Operations
-    
+
 .. _spellcheck_settings:
 
 Spellcheck Settings
@@ -222,7 +222,7 @@ This section allows to customize the rules to translate automatically strings fr
 
     The digiKam Localize Configuration Page
 
-A list of **Alternative Languages** supported by digiKam is provided where you can select your prefered entries to found in text edit widgets.  
+A list of **Alternative Languages** supported by digiKam is provided where you can select your prefered entries to found in text edit widgets.
 
 Another list allows to know the **Available Translator Languagas**, supported by the **Online Translator** engine selected.
 
@@ -241,10 +241,14 @@ System Settings
 
 This section allows to tune special low level configurations used by application. Only change these settings if you know what you do.
 
-    - **Use high DPI scaling from the screen factor**: with this option application will scale coordinates in device independent maneer according to display scale factors provided by the operating system.
-    - **Use pixmaps with high DPI resolution**: with this option, pixmaps sizes used internally by application will have a device-independent layout geometry. To use in multi-screen context when resolutions are not the same.
+    - **Use high DPI scaling from the screen factor**: with this option application will scale coordinates in device independent maneer according to display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and are therefore theoretically just as large as the graphical interface elements of the system.
+
+    - **Use pixmaps with high DPI resolution**: with this option, pixmaps sizes used internally by application will have a device-independent layout geometry. It activates high-resolution icons, otherwise the elements in digiKam would look very blurry under high resolutions. ALso, it's recommended to use this option in multi-screen context when resolutions are not the same.
+
     - **Disable hardware acceleration OpenCL**: this option will disable GPU accelerations, especially with faces management.
+
     - **Enable internal debug logging**: this options will turn one the debug trace on the console used to investiguate dysfunctions.
+
     - **Download Face Engine Data**: With this button you can load face engine deep-learning model files if you pass this stage at first-run.
 
 .. figure:: images/setup_miscs_system.webp
