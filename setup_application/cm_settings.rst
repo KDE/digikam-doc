@@ -86,12 +86,20 @@ The **Output device profile** should match the profile for your output device, u
 
 The **Color Profiles Repository**: digiKam looks for ICC profiles in a number of default locations e.g. :file:`/usr/share/color/icc` or. Set this to the folder where you store extra profiles e.g :file:`/home/user/.color/icc`. digiKam will scan these folders when starting up.
 
-.. note::
-
-    There are some other options such as the :ref:`soft proof profile <soft_proof>` which enables you to emulate, granted that you have a profile for it, how your image will render for a particular device. It is useful before printing for instance because your printer has a smaller gamut than your camera and some colors might look saturated. You may want to fix this manually instead of relying on the "blind" algorithm of your printer. 
-
 Advanced Settings
 -----------------
+
+**Use black point compensation**: this setting is a way to make adjustments between the maximum black levels of digital files and the black capabilities of various digital devices.
+
+**Rendering Intents**: this setting provide four options listed below.
+
+    - **Perceptual**: causes the full gamut of the image to be compressed or expanded to fill the gamut of the destination device, so that gray balance is preserved but colorimetric accuracy may not be preserved. In other words, if certain colors in an image fall outside of the range of colors that the output device can render, the image intent will cause all the colors in the image to be adjusted so that the every color in the image falls within the range that can be rendered and so that the relationship between colors is preserved as much as possible. This intent is most suitable for display of photographs and images, and is the default intent.
+
+    - **Relative Colorimetric**: is defined such that any colors that fall outside the range that the output device can render are adjusted to the closest color that can be rendered, while all other colors are left unchanged. Proof intent does not preserve the white point.
+
+    - **Absolute Colorimetric**: causes any colors that fall outside the range that the output device can render to be adjusted to the closest color that can be rendered, while all other colors are left unchanged. This intent preserves the white point and is most suitable for spot colors (Pantone, TruMatch, logo colors, etc.).
+
+    - **Saturation**: preserves the saturation of colors in the image at the possible expense of hue and lightness. Implementation of this intent remains somewhat problematic, and the ICC is still working on methods to achieve the desired effects. This intent is most suitable for business graphics such as charts, where it is more important that the colors be vivid and contrast well with each other rather than a specific color.
 
 .. figure:: images/setup_cm_advanced.webp
     :alt:
@@ -122,4 +130,4 @@ Advanced Settings
 
     The Canon profile extension betray the target style: F for Faithful Style, L for Landscape Style, N for Neutral Style, P for Portrait Style, S for Standard Style.
 
-Here you find a typical RAW workflow scenario.
+Here you find a typical :ref:`RAW workflow <rawprocessing_workflow>` scenario with Image Editor.
