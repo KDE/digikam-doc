@@ -43,10 +43,11 @@ The **Show Geolocation Indicator** option shows an icon over the image thumbnail
 An example of an icon-view item is given below:
 
 .. figure:: images/setup_album_iconview_item.webp
+    :width: 500px
     :alt:
     :align: center
 
-    An Icon-View Item Example
+    An Icon-View Item Example **Using Large Thumbnail Size** Option
 
 On the bottom side of this settings panel, you can tune the behavior of the icon with user actions.
 
