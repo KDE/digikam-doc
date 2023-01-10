@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Templates Settings
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, configure, setup, template, metadata, copyright, author, title, credit, source, IPTC
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, configure, setup, template, metadata, copyright, author, title, credit, source, IPTC, XMP
 
 .. metadata-placeholder
 
@@ -15,23 +15,17 @@ Templates Settings
 
 .. contents::
 
+Overview
+--------
+
 The **Metadata Templates Manager** is meant to create and manage metadata templates which can be used in:
 
     - The **Information** tab of the **Captions** view from the Right Sidebar.
 
     - The **On the Fly Operations (JPEG only)** section of the **Settings** view from the Right Sidebar in the :menuselection:`Import --> Cameras` Window.
-    
+
 The goal of templates is to apply more than one metadata information at the same time to items. You can create many profiles
 corresponding to your workflow.
-
-The Rights Information
-----------------------
-
-.. figure:: images/setup_template_rights.webp
-    :alt:
-    :align: center
-
-    The digiKam Template Rights Configuration Page
 
 The top part shows a list of the already existing templates. The first row shows the title of the template, the second row shows the name of the author(s) in the “Author Names” field of that very template. To the right you have three editing buttons, below an input field for the template title. To create a new template you type a title in the input field and click the **Add** button. The new template will appear in the list. To edit an existing template you select it in the list, then you edit its fields (see next paragraph) and finally you click the **Replace** button. You can as well type in a new title for the edited template and save the new version with the **Add** button. To delete a template, very obviously, you select it in the list and click the **Remove** button.
 
@@ -43,19 +37,32 @@ The top part shows a list of the already existing templates. The first row shows
 
     The template file can be found in :file:`~/.local/share/digikam/` for manual backup or for managing different template sets by means of the file system.
 
-The rest of the window is divided into four tabs, grouping the metadata fields into Rights, Location, Contact and Subjects.
+The rest of the window is divided into four tabs, grouping the metadata fields into **Rights**, **Location**, **Contact** and **Subjects**.
 
-The Rights tab (see above) contains the default identity and copyright data. This is an extract of the IPTC specifications for these fields:
+The Rights Information
+----------------------
 
-    - Author (is synonymous to Creator and By-line): This field should contain your name, or the name of the person who created the photograph. If it is not appropriate to add the name of the photographer (for example, if the identity of the photographer needs to be protected) the name of a company or organization can also be used. Once saved, this field should not be changed by anyone. This field does not support the use of commas or semi-colons as separator.
+.. figure:: images/setup_template_rights.webp
+    :alt:
+    :align: center
 
-    - Author title (synonymous with By-line title): This field should contain the job title of the photographer. Examples might include titles such as: Staff Photographer, Freelance Photographer, or Independent Commercial Photographer. Since this is a qualifier for the Author field, the Author field must also be filled out.
+    The digiKam Template Rights Configuration Page
 
-    - Credit (synonymous with Provider): Use the credit field to identify who is providing the photograph. This does not necessarily have to be the author. If a photographer is working for a news agency such as Reuters or the Associated Press, these organizations could be listed here as they are "providing" the image for use by others. If the image is a stock photograph, then the group (agency) involved in supplying the image should be listed here.
+The **Rights** tab contains the default identity and copyright data. This is an extract of the IPTC/XMP specifications for these fields:
 
-    - Source: The Source field should be used to identify the original owner or copyright holder of the photograph. The value of this field should never be changed after the information is entered following the image's creation. While not yet enforced by the custom panels, you should consider this to be a "write-once" field. The source could be an individual, an agency, or a member of an agency. To aid in later searches, it is suggested to separate any slashes "/" with a blank space. Use the form "photographer / agency" rather than "photographer/agency." Source may also be different from Creator and from the names listed in the Copyright Notice.
+    - **Authors** (synonymous to *Creator and By-line*): This field should contain your name, or the name of the person who created the photograph. If it is not appropriate to add the name of the photographer (for example, if the identity of the photographer needs to be protected) the name of a company or organization can also be used. Once saved, this field should not be changed by anyone. This field does not support the use of commas or semi-colons as separator. With IPTC, this field is limited to 32 characters.
 
-    - Copyright Notice: The Copyright Notice should contain any necessary copyright notice for claiming the intellectual property, and should identify the current owner(s) of the copyright for the photograph. Usually, this would be the photographer, but if the image was done by an employee or as work-for-hire, then the agency or company should be listed. Use the form appropriate to your country. For the United States you would typically follow the form of (c) {date of first publication} name of copyright owner, as in "(c)2005 John Doe." Note, the word "copyright" or the abbreviation "copr" may be used in place of the (c) symbol. In some foreign countries only the copyright symbol is recognized and the abbreviation does not work. Furthermore the copyright symbol must be a full circle with a "c" inside; using something like (c) where the parentheses form a partial circle is not sufficient. For additional protection worldwide, use of the phrase, "all rights reserved" following the notice above is encouraged. In Europe you would use: Copyright {Year} {Copyright owner}, all rights reserved. In Japan, for maximum protection, the following three items should appear in the copyright field of the IPTC Core: (a) the word, Copyright; (b) year of the first publication; and (c) name of the author. You may also wish to include the phrase "all rights reserved."
+    - **Author Positions** (synonymous with *By-line title*): This field should contain the job title of the photographer. Examples might include titles such as: Staff Photographer, Freelance Photographer, or Independent Commercial Photographer. Since this is a qualifier for the Author field, the Author field must also be filled out. With IPTC, this field is limited to 32 characters.
+
+    - **Credit** (synonymous with *Provider*): Use the credit field to identify who is providing the photograph. This does not necessarily have to be the author. If a photographer is working for a news agency such as Reuters or the Associated Press, these organizations could be listed here as they are "providing" the image for use by others. If the image is a stock photograph, then the group (agency) involved in supplying the image should be listed here. With IPTC, this field is limited to 32 characters.
+
+    - **Copyright**: The Copyright Notice should contain any necessary copyright notice for claiming the intellectual property, and should identify the current owner(s) of the copyright for the photograph. Usually, this would be the photographer, but if the image was done by an employee or as work-for-hire, then the agency or company should be listed. Use the form appropriate to your country. For the United States you would typically follow the form of (c) {date of first publication} name of copyright owner, as in *(c) 2005 John Doe.* Note, the word *copyright* or the abbreviation *copr* may be used in place of the (c) symbol. In some foreign countries only the copyright symbol is recognized and the abbreviation does not work. Furthermore the copyright symbol must be a full circle with a *c* inside; using something like (c) where the parentheses form a partial circle is not sufficient. For additional protection worldwide, use of the phrase, "all rights reserved" following the notice above is encouraged. In Europe you would use: Copyright {Year} {Copyright owner}, all rights reserved. In Japan, for maximum protection, the following three items should appear in the copyright field of the IPTC Core: (a) the word, Copyright; (b) year of the first publication; and (c) name of the author. You may also wish to include the phrase *all rights reserved*. With XMP, you can include more than one copyright string using different languages. With IPTC, this field is limited to 128 characters.
+
+    - **Right Usage Terms**: The Right Usage Terms field should be used to list instructions on how a resource can be legally used. With XMP, you can include more than one right usage terms string using different languages. This field does not exist with IPTC.
+
+    - **Source**: The Source field should be used to identify the original owner or copyright holder of the photograph. The value of this field should never be changed after the information is entered following the image's creation. While not yet enforced by the custom panels, you should consider this to be a "write-once" field. The source could be an individual, an agency, or a member of an agency. To aid in later searches, it is suggested to separate any slashes */* with a blank space. Use the form *photographer / agency* rather than *photographer/agency*. Source may also be different from Creator and from the names listed in the **Copyright Notice**. With IPTC, this field is limited to 32 characters.
+
+    - **Instructions**: The Instructions field should be used to list editorial instructions concerning the use of photograph. With IPTC, this field is limited to 256 characters.
 
 The Location Information
 ------------------------
@@ -66,7 +73,15 @@ The Location Information
 
     The digiKam Template Location Configuration Page
 
-The fields in the Location tab are self explaining by their title and the gray hints in the empty fields. A little bit more elaborate description can be found under Settings --> Configure digiKam... --> Metadata --> Views --> IPTC viewer.
+The **Location** tab contains the default data about the place in the world describing the contents. This is an extract of the IPTC/XMP specifications for these fields:
+
+    - **City**: This field should contain the name of the city where the photograph was taken. With IPTC, this field is limited to 32 characters.
+
+    - **Sublocation**: This field should contain the sublocation of the city where the photograph was taken. With IPTC, this field is limited to 32 characters.
+
+    - **State/Province**: This field should contain the province or state where the photograph was taken. With IPTC, this field is limited to 32 characters.
+
+    - **Country**: Select here the country where the photograph was taken. With IPTC, this field is limited to 64 characters.
 
 The Contact Information
 -----------------------
@@ -77,7 +92,23 @@ The Contact Information
 
     The digiKam Template Contact Configuration Page
 
-The data in the Contact tab refer to the (lead) photographer under **Author Names** in the Rights tab.
+The data in the Contact tab refer to the (lead) photographer under **Author Names** in the Rights tab. This is an extract of the IPTC/XMP specifications for these fields:
+
+    - **Address**:
+
+    - **Postal Code**:
+
+    - **City**:
+
+    - **Province**:
+
+    - **Country**:
+
+    - **Phone**:
+
+    - **Email**:
+
+    - **URL**:
 
 The Subjects Information
 ------------------------
