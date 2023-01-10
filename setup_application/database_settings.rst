@@ -65,7 +65,7 @@ MySQL Versus SQLite
 
 `MariaDB <https://mariadb.org/>`_ server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry.
 
-MariaDB has actually overtaken MySQL, ‘cause of few basic reasons:
+MariaDB has actually overtaken MySQL, because of few basic reasons:
 
     - MariaDB development is more open and vibrant.
 
@@ -100,7 +100,7 @@ Internal server creates a separate database that can be accessed (only while app
 
     mysql --socket=/home/[user_name]/.local/share/digikam/db_misc/mysql.socket digikam
 
-Internal server uses 3 MySQL Binary Tools: :file:`mysql_install_db`, :file:`mysqladmin`, and :file:`mysqld`. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system.
+Internal server uses tree MySQL Binary Tools: :file:`mysql_install_db`, :file:`mysqladmin`, and :file:`mysqld`. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system.
 
 .. figure:: images/setup_database_mysqlinternal.webp
     :alt:
