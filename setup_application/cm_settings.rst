@@ -53,11 +53,11 @@ The tree next sections from this view set the rules for different use cases:
 
         - **Assume it is using the working color space**: in this case, the image is not target for a specific usage, and **Working Color Space** is used for the conversion.
 
-        - **Convert it from default input color space to working space**: in this case, the convertion to the **Working Color Space** will be done to include the **Default input color profile** defined in the next settings view.
+        - **Convert it from default input color space to working space**: in this case, the conversion to the **Working Color Space** will be done to include the **Default input color profile** defined in the next settings view.
 
     - **When loading a RAW file with uncalibrated colors**: this condition provide tree options listed below.
     
-        - **Ask for the input profile**: digiKam propmt a question to the user to select right **Input color profile** to use.
+        - **Ask for the input profile**: digiKam prompt a question to the user to select right **Input color profile** to use.
 
         - **Automatic color correction**: digiKam will perform an automatic colors auto-correction based of image historgram analysis.
 
@@ -78,7 +78,7 @@ The **Monitor profile** option allows to select the color profile for your scree
     
 The **Use color managed view** is an alternative to using desktop color management. Only your image in editor will be color managed, not your entire screen. You can at any time toggle this option everywhere in digiKam. This can slow down rendering of the image, depending on the speed of your computer.
 
-**Use color managed view for previews and thumbnails**: with this option, you can also use the color managament to render previews and thumbnails in Icon-View, Light-Table, and Import Tool; 
+**Use color managed view for previews and thumbnails**: with this option, you can also use the color management to render previews and thumbnails in Icon-View, Light-Table, and Import Tool; 
 
 The **Default Input color profile** should match the camera maker and model you are using. *Not all profiles are created equal*, there are some that have no tone mapping/gamma correction included (For example Canon camera). In some conditions gamma can be not corrected for 16 bit depth conversion, which means that you have to do the tone mapping yourself.
 
