@@ -15,6 +15,8 @@ Workflow Tools
 
 .. contents::
 
+.. _standard_workflow:
+
 A Standard Workflow Proposal
 ----------------------------
 
@@ -208,7 +210,7 @@ A typical RAW workflow with digiKam may follow these steps:
 
     - Dynamic range expansion (optional).
 
-    - Continue with standard workflow.
+    - Continue with :ref:`standard workflow <standard_workflow>`.
 
 From there everything is simple, select a RAW image and open it in the editor. The Raw Import tool will be displayed after the image has been processed in order to adjust color rendering. Without color management all images are very dark, this is normal. You can experiment the various profiles you have in order to select the best input profile according to your image (some tends to be very neutral, even a bit dull, some gives more saturated results, etc.).
 
