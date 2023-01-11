@@ -81,7 +81,7 @@ See the list of common areas available in all tools:
 
     - (6): There is a **progress indicator** for tool with involved calculations at processing stage, else the current **file-name** is displayed.
 
-The digiKam tool set are:
+The Image Editor tools are avaiable as plugins loaded dynamically at startup and configurable in :ref:`Setup dialog <plugins_settings>`. List of tools is given below:
 
     - Image Color
 
@@ -149,11 +149,11 @@ The digiKam tool set are:
 
     - Image Decoration
 
-        - Add Border
+        - :ref:`Add Border <decorate_border>`
 
-        - Insert Text
+        - :ref:`Insert Text <decorate_inserttext>`
 
-        - Apply Texture
+        - :ref:`Apply Texture <decorate_texture>`
 
     - Special Effect Filters
 
