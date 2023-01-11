@@ -528,6 +528,8 @@ You can either enable or disable the grid lines. Select the corrections you want
 Healing Clone Tool
 ------------------
 
+The healing tool aims to copy pixel colors from a specific portion of the image, and paste them in another portion of the image using a brush, then apply smoothing. This helps fix artifacts in images, like unwanted spots on someone’s face that can be replaced with more clear skin from a close region of his/her face.
+
 .. figure:: images/editor_healing_clone.webp
     :alt:
     :align: center
