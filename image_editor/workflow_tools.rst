@@ -83,7 +83,7 @@ See the list of common areas available in all tools:
 
 The Image Editor tools are avaiable as plugins loaded dynamically at startup and configurable in :ref:`Setup dialog <plugins_settings>`. List of tools is given below:
 
-    - Image Color
+    - Image Color Corrections:
 
         - :ref:`Encoding Depth <color_depth>`
 
@@ -111,7 +111,7 @@ The Image Editor tools are avaiable as plugins loaded dynamically at startup and
 
         - :ref:`Invert Colors <color_invert>`
 
-    - Image Enhancement
+    - Image Enhancement:
 
         - :ref:`Sharpening (sharpen, unsharp mask, refocus) <enhance_sharpen>`
 
@@ -133,7 +133,7 @@ The Image Editor tools are avaiable as plugins loaded dynamically at startup and
 
         - :ref:`Lens Auto-Correction Tool <enhance_lensauto>`
 
-    - Image Transformation Tools
+    - Image Transformation Tools:
 
         - :ref:`Crop Tool <transform_crop>`
 
@@ -147,7 +147,7 @@ The Image Editor tools are avaiable as plugins loaded dynamically at startup and
 
         - :ref:`Shearing Tool <transform_shear>`
 
-    - Image Decoration
+    - Image Decoration Tools:
 
         - :ref:`Add Border <decorate_border>`
 
@@ -155,23 +155,23 @@ The Image Editor tools are avaiable as plugins loaded dynamically at startup and
 
         - :ref:`Apply Texture <decorate_texture>`
 
-    - Special Effect Filters
+    - Special Effect Filters:
 
-        - Color Effects
+        - :ref:`Color Effects <effects_color>`
 
-        - Add Film Grain
+        - :ref:`Add Film Grain <effects_filmgrain>`
 
-        - Simulate Oil Painting
+        - :ref:`Simulate Oil Painting <effects_oilpaint>`
 
-        - Simulate Charcoal Drawing
+        - :ref:`Simulate Charcoal Drawing <effects_charcoal>`
 
-        - Emboss Photograph
+        - :ref:`Emboss Photograph <effects_emboss>`
 
-        - Distortion FX
+        - :ref:`Distortion FX <effects_distortion>`
 
-        - Blur FX
+        - :ref:`Blur FX <effects_blur>`
 
-        - Add Rain Drops
+        - :ref:`Add Rain Drops <effects_raindrops>`
 
 .. _rawprocessing_workflow:
 

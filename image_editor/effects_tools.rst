@@ -15,7 +15,7 @@ Effects Tools
 
 .. contents::
 
-.. _effect_blurfx:
+.. _effects_blur:
 
 Blur FX
 -------
