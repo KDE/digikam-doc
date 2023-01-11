@@ -37,15 +37,15 @@ The **Behavior** view ask when opening an image in Image Editor or when you use 
     
 You have to provide a **Working Color Space** profile (linear profiles such as sRGB, ECI-RGB, LStar-RGB, Adobe-RGB or CIE-RGB). If you want to print your images, you may want to opt for Adobe RGB, if it is only for web publishing, sRGB is better (Adobe RGB will be displayed slightly dull in non color managed enabled software such as browsers). However you may change this later of course (by attributing another profile), therefore Adobe RGB can be a good choice for storing and image handling as you can always change it to sRGB before releasing an image for your blog. Note: Do not use non-linear profiles as they will change the color-balance.
 
-The tree next sections from this view set the rules for different use cases:
+The three next sections from this view set the rules for different use cases:
 
-    - **When the profile of an image does not match the working color space**: this condition provide two options listed below.
+    - **When the profile of an image does not match the working color space**: this condition provides two options listed below.
     
         - **Ask when opening the image**: If an image has an embedded color profile not matching the working space profile, digiKam will ask if you want to convert to the working space, keep the embedded profile or discard the embedded profile and assign a different one.
 
         - **Convert the image to the working color space**: If an image has an embedded color profile not matching the working space profile, digiKam will convert the image's color information to the working color space. This changes the pixel data, but not the appearance of the image.
 
-    - **When an image has no color profile information**: this condition provide four options listed below.
+    - **When an image has no color profile information**: this condition provides four options listed below.
     
         - **Ask when opening the image**: If an image has no embedded color profile, digiKam will ask which color space shall be used to interpret the image and to which color space it shall be transformed for editing.
 
@@ -55,9 +55,9 @@ The tree next sections from this view set the rules for different use cases:
 
         - **Convert it from default input color space to working space**: in this case, the conversion to the **Working Color Space** will be done to include the **Default input color profile** defined in the next settings view.
 
-    - **When loading a RAW file with uncalibrated colors**: this condition provide tree options listed below.
+    - **When loading a RAW file with uncalibrated colors**: this condition provides three options listed below.
     
-        - **Ask for the input profile**: digiKam prompt a question to the user to select right **Input color profile** to use.
+        - **Ask for the input profile**: digiKam prompts a question to the user to select right **Input color profile** to use.
 
         - **Automatic color correction**: digiKam will perform an automatic colors auto-correction based of image historgram analysis.
 
@@ -84,14 +84,14 @@ The **Default Input color profile** should match the camera maker and model you 
 
 The **Output device profile** should match the profile for your output device, usually your printer. This profile will be used to do a :ref:`soft proof <soft_proof>`, so you will be able to preview how an image will be rendered via an output device. It enables you to emulate, granted that you have a profile for it, how your image will render for a particular device. It is useful before printing for instance because your printer has a smaller gamut than your camera and some colors might look saturated. You may want to fix this manually instead of relying on the "blind" algorithm of your printer. 
 
-The **Color Profiles Repository**: digiKam looks for ICC profiles in a number of default locations e.g. :file:`/usr/share/color/icc` or. Set this to the folder where you store extra profiles e.g :file:`/home/user/.color/icc`. digiKam will scan these folders when starting up.
+The **Color Profiles Repository**: digiKam looks for ICC profiles in a number of default locations e.g. :file:`/usr/share/color/icc`. Set this to the folder where you store extra profiles e.g. :file:`/home/user/.color/icc`. digiKam will scan these folders when starting up.
 
 Advanced Settings
 -----------------
 
 **Use black point compensation**: this setting is a way to make adjustments between the maximum black levels of digital files and the black capabilities of various digital devices.
 
-**Rendering Intents**: this setting provide four options listed below.
+**Rendering Intents**: this setting provides four options listed below.
 
     - **Perceptual**: causes the full gamut of the image to be compressed or expanded to fill the gamut of the destination device, so that gray balance is preserved but colorimetric accuracy may not be preserved. In other words, if certain colors in an image fall outside of the range of colors that the output device can render, the image intent will cause all the colors in the image to be adjusted so that the every color in the image falls within the range that can be rendered and so that the relationship between colors is preserved as much as possible. This intent is most suitable for display of photographs and images, and is the default intent.
 
