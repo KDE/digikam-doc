@@ -125,7 +125,7 @@ The digiKam tool set are:
 
         - :ref:`Hot Pixel Correction <enhance_hotpixels>`
 
-        - :ref:`Lens Distortion Correction <enhance_lensdistorsion>`
+        - :ref:`Lens Distortion Correction <enhance_lensdistortion>`
 
         - :ref:`Photograph Restoration <enhance_restoration>`
 
