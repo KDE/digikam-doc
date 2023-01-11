@@ -63,6 +63,14 @@ Documentation authors
 
     Burkhard Lück (https://invent.kde.org/lueck)
 
+- 2013
+
+    Dmitri Popov (https://scribblesandsnaps.wordpress.com/author/dmpop/)
+
+- 2011
+
+    Mohamed Malik (https://www.mohammedmalik.com/)
+
 - 2007
 
     Kåre Särs (https://invent.kde.org/sars)

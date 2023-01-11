@@ -22,15 +22,6 @@ Encoding Depth
 
 Here you can change the encoding depth per color channel of the edited image. 8 bit encoding is the common JPEG format, 16 bit encoding is better suited for high quality images, but this format needs more storage space, calculation time and is currently available with PNG, PGF, TIFF, and JPEG-2000 formats only.
 
-.. _color_invert:
-
-Inverting Colors
-----------------
-
-In case of digitalize analog film with a scanner, color can appear inverted compared to the reality. This tool allows to reverse the colors into their respective `complementary colors <https://en.wikipedia.org/wiki/Complementary_colors>`_.
-
-Invert color to a complementary color (or opposite color of color on the color wheel), consist to have cyan as the opposite color of red, yellow as opposite color for blue, and magenta as the opposite color of green. With :menuselection:`Color --> Invert` option, we can inverts all the pixel colors and brightness values in the image, as if the image were converted into a negative. Dark areas become bright and bright areas become dark. Hues are replaced by their complementary colors.
-
 .. _color_cm:
 
 Color Management
@@ -114,14 +105,31 @@ The filter tries to reproduce the famous Ilford(tm) SFX and Kodak Tmax infrared 
 
 Because the filter mixes color channels to reproduce infrared film (with emphasis on green channel), one can not simulate infrared effect from black and white original photograph, since the color information is missing.
 
+.. _color_invert:
+
+Inverting Colors
+----------------
+
+In case of digitalize analog film with a scanner, color can appear inverted compared to the reality. This tool allows to reverse the colors into their respective `complementary colors <https://en.wikipedia.org/wiki/Complementary_colors>`_.
+
+Invert color to a complementary color (or opposite color of color on the color wheel), consist to have cyan as the opposite color of red, yellow as opposite color for blue, and magenta as the opposite color of green. With :menuselection:`Color --> Invert` option, we can inverts all the pixel colors and brightness values in the image, as if the image were converted into a negative. Dark areas become bright and bright areas become dark. Hues are replaced by their complementary colors.
+
 .. _color_negative:
 
 Simulate Negative Film
 ----------------------
 
-.. todo: https://userbase.kde.org/Digikam/Negatives
+While digiKam is first and foremost an application for processing and organizing digital photos, it also features tools for working with film negatives.
+
+Before you can process negatives in digiKam, you need to digitize them. If you don’t have access to a film scanner or a lab that offers film scanning services, you can digitize film using a DSLR camera (there are plenty of tutorials on how to do that on the Web). The rest of the process assumes that you are using the latter way to digitize film negatives.
+
+Open a RAW file containing a film negative in the editor. Crop the original file and apply lens correction if necessary. Choose then :menuselection:`Color -> Invert` to transform the negative into a positive image. In case you work with the color negative, the converted image most likely requires some additional tweaking. First of all, the converted image is likely to have a strong blue tint. The easiest way to remove it is to use digiKam’s **Auto-Correction** tool. Choose :menuselection:`Color -> Auto-Correction` and select one of the presets. In many cases, the **Auto Levels** or **Equalize** presets do a decent job of correcting the colors. If the colors still look slightly off, you can adjust them further using the :menuselection:`Colors -> Color Balance` tool.
 
 .. figure:: images/editor_negative.webp
+
+The **Invert** feature in combination with an **Auto-Correction** preset provides a quick-and-dirty way of converting negatives, but digiKam has another tool designed specifically for processing color negatives. To access it, choose the :menuselection:`Color -> Color Negative` menu entry. The Color **Negative** Film interface contains several handy features that can help you to convert the negative and tweak the resulting image. While the **Invert** tool uses a generic profile for converting negatives, the Color Negative Film interface offers profiles for many popular film types. So the first step is to select the appropriate profile. For better results, try to enable the **Color Balance** option, too. If the used film is not in the list, you can use the **Neutral** profile as a fall back.
+
+Although choosing the matching film profile may yield a better result, the converted image may still require some work. In most cases, you may need to adjust the white point to remove the remaining blue tint. You can do this either manually or automatically using the appropriate tools. Usually, the automatic white point adjustment does the job, but the resulting image needs to be brightened up by adjusting the **Exposure** and the **Gamma** sliders.
 
 .. _color_balance:
 
