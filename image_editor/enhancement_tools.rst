@@ -534,5 +534,12 @@ Healing Clone Tool
 
     The Image Editor Healing Clone Tool to Remove Unwanted Artifacts
 
+.. figure:: videos/editor_clone_tool.gif
+    :width: 300px
+    :alt:
+    :align: center
+
+    Screencast of Image Editor Clone Tool Fixing an Artifact
+
 .. todo:
     https://ahmedfathishabanblog.wordpress.com/2019/08/21/healing-clone-tool-project-digikam-gsoc-2019/
