@@ -269,4 +269,7 @@ After you have sheared an image, there will be unpleasant triangular "holes" at 
 Liquid Rescale
 --------------
 
-.. todo: https://www.digikam.org/news/2009-04-25_new_liquid_rescale_tool_under_construction/
+.. todo:
+    https://www.digikam.org/news/2009-04-25_new_liquid_rescale_tool_under_construction/
+    https://en.wikipedia.org/wiki/Seam_carving
+
