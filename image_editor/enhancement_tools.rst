@@ -528,7 +528,19 @@ You can either enable or disable the grid lines. Select the corrections you want
 Healing Clone Tool
 ------------------
 
-The healing tool aims to copy pixel colors from a specific portion of the image, and paste them in another portion of the image using a brush, then apply smoothing. This helps fix artifacts in images, like unwanted spots on someone’s face that can be replaced with more clear skin from a close region of his/her face.
+The healing tool aims to copy pixel colors from a specific portion of the image, and paste them in another portion of the image using a brush, then apply smoothing. This helps fix artifacts in images, like unwanted spots on someone’s face that can be replaced with more clear skin from a close region of face.
+
+The tool settings view on the right side provide a toolbar with 5 buttons. From left to right:
+
+    - Select Source Point.
+    - Polygon Selection With Lasso.
+    - Move Image.
+    - Undo clone operation.
+    - Redo clone operation.
+
+Below the toolbar, two sliders allows to tune the clone tool properties. First one select the **Brush Radius** to adjust the size of cloned area from the canvas. A radius of 0 has no effect, 1 and above determine the brush radius configuring the size of parts copied in the image.
+
+Second one is the amount of **Radius Blur** effect in percent applied on data cloned over the canvas. A percent of 0 has no effect, values above 0 represent a factor for mixing the destination color with source color this is done radially i.e. the inner part of the brush radius is totally from source and mixing with destination is done gradually till the outer part of the circle.
 
 .. figure:: images/editor_healing_clone.webp
     :alt:
@@ -536,7 +548,7 @@ The healing tool aims to copy pixel colors from a specific portion of the image,
 
     The Image Editor Healing Clone Tool to Remove Unwanted Artifacts
 
-To select the source of image to clone, press **S**, or the **Source selection* button from the toolbar on the top of settings view. The cursor will change to aim-shape, to let you decide the central source button where you will start cloning from.
+To select the source of image to clone, press **S**, or the **Source selection** button from the toolbar on the top of settings view. The cursor will change to aim-shape, to let you decide the central source button where you will start cloning from.
 
 .. figure:: videos/editor_clone_tool.gif
     :width: 300px
@@ -545,7 +557,7 @@ To select the source of image to clone, press **S**, or the **Source selection* 
 
     Screencast of Image Editor Clone Tool Fixing an Artifact
 
-The tool provide also a **Lasso** and **Polygon** selector for the healing clone tool. You can either press **L** or the **Lasso selector** button from the toolbar on the top of settings view. The cursor will change to a pen shape, and you can select discrete points as you like. The polygon edges will be drawn, you just need to press and move your mouse to complete the selection form. You don’t have to draw all the region in one time. The polygon will close on itself if you press **L** again.
+The tool provide also a **Lasso** and **Polygon** selector for the healing clone operations. You can either press **L** or the **Lasso selector** button from the toolbar on the top of settings view. The cursor will change to a pen shape, and you can select discrete points as you like. The polygon edges will be drawn, you just need to press and move your mouse to complete the selection form. You don’t have to draw all the region in one time. The polygon will close on itself if you press **L** again.
 
 Now only cloning inside the selected region will happens, cloning outside will be ignored, unless you press **L** again or **ESC** to de-activate the lasso mode. Once you do that, you can clone anywhere in the screen as usual. Also pressing **ESC** while in the process of drawing the lasso polygon will cancel the lasso operation. Here is a screenshot of a lasso polygon selection, and a large portion of the image cloned inside this lasso portion. Of course pressing **L** or **ESC** again will remove the lasso boundary, keeping the cloned pixels in place, as expected.
 
