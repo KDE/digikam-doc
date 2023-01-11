@@ -111,6 +111,8 @@ The Image Editor tools are avaiable as plugins loaded dynamically at startup and
 
         - :ref:`Simulate Infrared Film <color_infrared>`
 
+        - :ref:`Simulate Negative Film <color_negative>`
+
         - :ref:`Invert Colors <color_invert>`
 
     - Image Enhancement:

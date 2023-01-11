@@ -114,6 +114,15 @@ The filter tries to reproduce the famous Ilford(tm) SFX and Kodak Tmax infrared 
 
 Because the filter mixes color channels to reproduce infrared film (with emphasis on green channel), one can not simulate infrared effect from black and white original photograph, since the color information is missing.
 
+.. _color_negative:
+
+Simulate Negative Film
+----------------------
+
+.. todo: https://userbase.kde.org/Digikam/Negatives
+
+.. figure:: images/editor_negative.webp
+
 .. _color_balance:
 
 Colors Balance
