@@ -80,7 +80,7 @@ These settings allows to customize the tree views of the Left and Right Sidebar.
 
 The **Tree View icon size** option configures the size in pixels of the Tree View icons in digiKam's sidebars. Use large value for HiDPI screen.
 
-The **People Tree View icon size** option configure the size in pixels of the Tree View icons in digiKam's people sidebar.
+The **People Tree View icon size** option configures the size in pixels of the Tree View icons in digiKam's people sidebar.
 
 .. _treeview_font:
 
@@ -103,7 +103,7 @@ Instead of opening the image in the editor, the digiKam preview mode :kbd:`F3` w
 
 The option **Preview shows embedded view if available** will try to open a small version of the photograph embedded in the file. It will be found in all RAW files and can be found in all files that support IPTC or XMP like PNG, JPEG, TIFF, JPEG2000, PGF. If an embedded preview cannot be found some image decoders (JPEG, JPEG2000, and PGF, WebP) are able to create a reduced version of the photograph by themselves which is still faster than using the whole image. Depending on the size of the image, the size of the embedded preview and the size available for the preview on your screen the effect of this option can be visible or not.
 
-The option **Preview shows the fumm image** will always use the full image data for the preview regardless of whether there is a reduced version embedded in the file or not. This can result in a better quality of the preview but is usually slower.
+The option **Preview shows the full image** will always use the full image data for the preview regardless of whether there is a reduced version embedded in the file or not. This can result in a better quality of the preview but is usually slower.
 
 Only if the last option is checked, the drop down field to the right of **Raw images** is accessible. It offers three options: with **Automatic** selected, the Libraw decoder will decode the RAW data automatically without any adjustments from the user. This may lead to weird results sometimes. The algorithm also takes screen resolution and CPU speed into account to achieve an optimum regarding speed and rendering quality. **Embedded preview** will try to use the (JPEG) preview embedded in RAW files. **Raw data in half size** will show unprocessed RAW data in reduced size.
 
