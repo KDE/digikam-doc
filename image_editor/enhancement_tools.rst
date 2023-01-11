@@ -15,7 +15,7 @@ Enhancement Tools
 
 .. contents::
 
-.. _enhance_lensdistortsion:
+.. _enhance_lensdistortion:
 
 Lens Distortion Correction
 --------------------------
@@ -445,3 +445,20 @@ Preview                                             Type
 .. note::
 
     For more information about correction of sharpness methods used in digital imagery, you can find a technical comparison at this url.
+
+.. _enhance_lensauto:
+
+Lens Auto Correction
+--------------------
+
+No lens is optically perfect. Even the most expensive lenses have there own imperfections, however digiKam can correct lens imperfections such as **Distortion**, **Chromatic aberration**, **Vignetting**, and **Geometry**.
+
+From Image Editor go to :menuselection:`Enhance --> Lens --> Auto Corrections` menu entry to start the automatic lens correction tool. This feature uses lens data from the `Lensfun library <https://lensfun.github.io/>`_ and it has a very much up to date database of lenses which are available. It has more than a hundred lenses in its current databases. It also uses the metadata from the image to find-out which lens is used. If the exact used to take the picture is available it will mention that it matches with the meta-data, however if the exact match is not available it will choose the settings from the most closes match. In this case it also allows users to select the lens themselves.
+
+You can either enable or disable the grid lines. Select the corrections you want to apply move you mouse inwards and outwards of the preview window which will show you before and after. When you are satisfied with the result press **OK**. 
+
+.. figure:: images/editor_lens_auto.webp
+    :alt:
+    :align: center
+
+    The Lens Auto-Correction Tool from digiKam Image Editor

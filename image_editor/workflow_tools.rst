@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Image Editor Workflow Tools
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image, editor, workflow, tools
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image, editor, workflow, tools, color, enhance, transform, effects, decorate
 
 .. metadata-placeholder
 
@@ -38,7 +38,7 @@ When performing a basic workflow, the primary areas for consideration are:
 
 We recommend this sequence of image editing steps to ensure optimum photographic quality for the end product. In particular, never do sharpening before the last step. And we recommend using a lossless format like PNG or TIFF for storing photographs. Otherwise you'll lose a bit every time you save the results. If you can afford it, use 16 bit/channel for your best shots. If you want to change color space, in particular if you want to work in CIEL*a*b, 16 bit per channel are required to avoid truncation effects.
 
-If you swap step 4. and 5., which is well possible if the initial contrast is already very good, you can do the first 4. adjustment in the same tool, the white balance
+If you swap step 4. and 5., which is well possible if the initial contrast is already very good, you can do the first 4. adjustment in the same tool, the **White Balance**.
 
 Many of the tools you may need for photographic editing are included with digiKam. Their description follows here.
 
@@ -113,25 +113,25 @@ The digiKam tool set are:
 
     - Image Enhancement
 
-        - Sharpening (sharpen, unsharp mask, refocus)
+        - :ref:`Sharpening (sharpen, unsharp mask, refocus) <enhance_sharpen>`
 
-        - Blur Tool
+        - :ref:`Blur Tool <enhance_blur>`
 
-        - Red Eyes Removal
+        - :ref:`Red Eyes Removal <enhance_redeyes>`
 
-        - Local Contrast
+        - :ref:`Local Contrast <enhance_localcontrast>`
 
-        - Noise Reduction
+        - :ref:`Noise Reduction <enhance_nr>`
 
-        - Hot Pixel Correction
+        - :ref:`Hot Pixel Correction <enhance_hotpixels>`
 
-        - Lens Distortion Correction
+        - :ref:`Lens Distortion Correction <enhance_lensdistorsion>`
 
-        - Photograph Restoration
+        - :ref:`Photograph Restoration <enhance_restoration>`
 
-        - Vignetting Correction Tool
+        - :ref:`Vignetting Correction Tool <enhance_vignetting>`
 
-        - Lens Auto-Correction Tool
+        - :ref:`Lens Auto-Correction Tool <enhance_lensauto>`
 
     - Image Transformation Tools
 
