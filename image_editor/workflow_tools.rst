@@ -173,6 +173,16 @@ The Image Editor tools are avaiable as plugins loaded dynamically at startup and
 
         - :ref:`Add Rain Drops <effects_raindrops>`
 
+.. note::
+
+    All these tools are also available into the **Tools** tab from the Image Editor right sidebar.
+    
+    .. figure:: images/editor_tools_sidebar.webp
+        :alt:
+        :align: center
+
+        The digiKam Image Editor Tools Tab from the Right Sidebar
+
 .. _rawprocessing_workflow:
 
 Raw Workflow
