@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Image Editor Colors Tools
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image, editor, color, depth, space, correction, auto, black, white, filters, emultation, infrared, invert, negative, balance, curves, levels, hue, saturation, lightness, channel, mixer
 
 .. metadata-placeholder
 
@@ -30,6 +30,10 @@ Color Management
 This tool allows to convert image from one color space to another one. Its use is the change and assignment of color profiles to an image. For detailed instructions on the use of color profiles, please refer to Color Management Settings chapter.
 
 .. figure:: images/editor_profile_converter.webp
+    :alt:
+    :align: center
+
+    The Image Editor to Change Image Color Space
 
 .. _color_auto:
 
@@ -53,6 +57,10 @@ The Auto Levels, Normalize, Equalize, Stretch Contrast, and Auto Exposure availa
 The results of any adjustments you make will not be remembered until you save your photograph.
 
 .. figure:: images/editor_auto_corrections.webp
+    :alt:
+    :align: center
+
+    The Image Editor to Process Auto Color Corrections
 
 Black and White Conversion Filters
 ----------------------------------
@@ -67,6 +75,10 @@ The Legacy Black and White Films Emulation
 digiKam comes with a couple of black & white filters that you can use on your photographs. Under the Color --> Black & White... menu you will find classic black & white chemical toning used in analog photography. The controls come on four drop-down items: Film, Lens Filters, Tone and Lightness as shown on the screenshot below. Film, filters and color toning can be applied independently of each other (on top of each other). The filters actually influence the RGB channel mixing, whereas the toning purely adds a uniform monochromatic tint to the black & white photograph. In the lightness tab you will find a tonal adjustment tool (like curve adjust), a contrast tool and an over-exposure indicator to improve the b&w rendering.
 
 .. figure:: images/editor_bw_filters.webp
+    :alt:
+    :align: center
+
+    The Image Editor to Emulate Black and White Films
 
 Specific settings allows to emulate a number of famous black & white photographic films as:
 
@@ -123,9 +135,13 @@ While digiKam is first and foremost an application for processing and organizing
 
 Before you can process negatives in digiKam, you need to digitize them. If you don’t have access to a film scanner or a lab that offers film scanning services, you can digitize film using a DSLR camera (there are plenty of tutorials on how to do that on the Web, as `this one <https://petapixel.com/2013/03/25/digitizing-your-film-using-your-dslr/>`_). The rest of the process assumes that you are using the latter way to digitize film negatives.
 
-Open a RAW file containing a film negative in the editor. Crop the original file and apply lens correction if necessary. Choose then :menuselection:`Color --> Invert` to transform the negative into a positive image. In case you work with the color negative, the converted image most likely requires some additional tweaking. First of all, the converted image is likely to have a strong blue tint. The easiest way to remove it is to use digiKam’s **Auto-Correction** tool. Choose :menuselection:`Color -> Auto-Correction` and select one of the presets. In many cases, the **Auto Levels** or **Equalize** presets do a decent job of correcting the colors. If the colors still look slightly off, you can adjust them further using the :menuselection:`Colors --> Color Balance` tool.
+Open a RAW file containing a film negative in the editor. Crop the original file and apply lens correction if necessary. Choose then :menuselection:`Color --> Invert` to transform the negative into a positive image. In case you work with the color negative, the converted image most likely requires some additional tweaking. First of all, the converted image is likely to have a strong blue tint. The easiest way to remove it is to use digiKam’s **Auto-Correction** tool. Choose :menuselection:`Color --> Auto-Correction` and select one of the presets. In many cases, the **Auto Levels** or **Equalize** presets do a decent job of correcting the colors. If the colors still look slightly off, you can adjust them further using the :menuselection:`Colors --> Color Balance` tool.
 
 .. figure:: images/editor_negative.webp
+    :alt:
+    :align: center
+
+    The Image Editor Tool to Simulate Negative Film
 
 The **Invert** feature in combination with an **Auto-Correction** preset provides a quick-and-dirty way of converting negatives, but digiKam has another tool designed specifically for processing color negatives. To access it, choose the :menuselection:`Color --> Color Negative` menu entry. The Color **Negative** Film interface contains several handy features that can help you to convert the negative and tweak the resulting image. While the **Invert** tool uses a generic profile for converting negatives, the Color Negative Film interface offers profiles for many popular film types. So the first step is to select the appropriate profile. For better results, try to enable the **Color Balance** option, too. If the used film is not in the list, you can use the **Neutral** profile as a fall back.
 
@@ -139,6 +155,10 @@ Colors Balance
 Digital cameras often have problems with lighting conditions and it is not unusual to want to correct the color contrast and brightness of a photograph. You can experiment with altering the levels of different aspects of your photographs using the tools under the Color menu. You can see any adjustments you make reflected in the preview. When you are happy with the results, press Ok and they will take effect. 
 
 .. figure:: images/editor_colors_balance.webp
+    :alt:
+    :align: center
+
+    The Image Editor Colors Balance Tool
 
 If your image is washed out (which can easily happen when you take images in bright light) try the Hue/Saturation/Lightness tool, which gives you four sliders to manipulate, for Hue, Saturation, Vibrance, and Lightness. Raising the saturation will probably make the image look better. In some cases, it is useful to adjust the lightness at the same time. ("Lightness" here is similar to "Brightness" in the Brightness/Contrast/Gamma tool, except that they are formed from different combinations of the red, green, and blue channels).
 
@@ -156,6 +176,10 @@ The Adjust Curves tool is the most sophisticated tool available to adjust the im
 This tool provides visual curves to modify the intensity values of the active layer displayed as a histogram non-linearily. In Curve smooth mode, you change the curves shape by adding new points to the curve or by moving end point positions. Another way, is to draw all the curve manually in Curve free mode. In both cases the effect is immediately displayed in the image preview area to the left, where the preview can be configured by clicking on the top left icons.
 
 .. figure:: images/editor_curves_adjust.webp
+    :alt:
+    :align: center
+
+    The Image Editor Adjust Curves Tool
 
 To the left, half of the original and the target preview image is shown. The target preview is updated dynamically according to the widget settings. On the right side the following options are available:
 
@@ -197,6 +221,10 @@ Situated between the more sophisticated Adjust Curves tool and the simpler Brigh
 This widget contains a visual graph of the intensity values of the active layer or selection (histogram). Below the graph are five sliders that can be clicked into and dragged to constrain and change the intensity level for the image. The left sliders position represents the dark areas and similarly, the right position represents the light areas.
 
 .. figure:: images/editor_levels_adjust.webp
+    :alt:
+    :align: center
+
+    The Image Editor Adjust Level Tool
 
 Actually the easiest way to learn how to use it is to experiment by moving the three sliders around, and watching how the image is affected.
 
@@ -246,6 +274,10 @@ Correcting Exposure
 The simplest tool to use is the Brightness/Contrast/Gamma tool. It is also the least powerful, but in many cases it does everything you need. This tool is often useful for images that are overexposed or underexposed; it is not useful for correcting color casts. The tool gives you three sliders to adjust, for **Brightness**, **Contrast** and **Gamma**. You can see any adjustments you make reflected in the preview image. When you are happy with the results, press Ok and they will take effect.
 
 .. figure:: images/editor_bcg_adjust.webp
+    :alt:
+    :align: center
+
+    The Image Editor Tool to Correct Exposure
 
 .. note::
 
@@ -274,6 +306,10 @@ The tool settings are listed below:
  You can see any adjustments you make reflected in the preview image. When you are happy with the results, press Ok and they will take effect.
  
 .. figure:: images/editor_hsl_adjust.webp
+    :alt:
+    :align: center
+
+    The Image Editor Tool to Adjust Hue Saturation and Lightness
 
 .. _color_mixer:
 
@@ -285,6 +321,10 @@ The digiKam image Channel Mixer is a tool to remix the color channels to improve
 The Channel Mixer is an another sophisticated tool to refine the images' tonality. Start it from the Color --> Channel Mixer Image Editor menu.
 
 .. figure:: images/editor_channel_mixer.webp
+    :alt:
+    :align: center
+
+    The Image Editor Channel Mixer Tool
 
 With the channel combo box you select and display the histogram per color. It gives a first hint of how to correct the channels by their relative distribution and amplitude. The left half of the dialog window always shows a preview of what you are doing. The original for comparison can be seen when selecting its own window tab.
 
@@ -312,6 +352,10 @@ The digiKam White Balance is a semi-automatic tool to adjust the white-balance o
 White Balance setting is a common hurdle for digital still cameras. In the 'good old time' of film rolls, the white balance was done by the photolab. Nowadays the poor little camera has to guess what is white and what is black. Most of the time, what the camera chooses as the white point, is not of the correct shade or hue. Using this tool it is easy to correct this problem. It provides a variety of parameters that can be trimmed to obtain a better result.
 
 .. figure:: images/editor_white_balance.webp
+    :alt:
+    :align: center
+
+    The Image Editor White Balance Tool
 
 The preview window can be resized. To the left, both an original and a target preview tab is shown. The target preview is updated dynamically according to the tool's settings. If you want to see the original whitebalance, just click on that tab.
 
@@ -353,4 +397,4 @@ Over Exposure Indicator option adds up the colors if more than one channel in a 
 
 Save As... and Load... buttons are used to do just that. Any White Color Balance settings that you have set can be saved to the filesystem in a text file and loaded later.
 
-Reset All button resets all filter settings to default values corresponding to Neutral White Balance color. (Attention, even the neutral setting might be different from your original photograph. If you save it, the white balance will be changed.)
+Reset All button resets all filter settings to default values corresponding to Neutral White Balance color. Attention, even the neutral setting might be different from your original photograph. If you save it, the white balance will be changed.
