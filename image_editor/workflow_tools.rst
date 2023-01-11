@@ -137,6 +137,8 @@ The Image Editor tools are avaiable as plugins loaded dynamically at startup and
 
         - :ref:`Lens Auto-Correction Tool <enhance_lensauto>`
 
+        - :ref:`Healing Clone Tool <enhance_clone>`
+
     - Image Transformation Tools:
 
         - :ref:`Crop Tool <transform_crop>`
@@ -180,7 +182,7 @@ The Image Editor tools are avaiable as plugins loaded dynamically at startup and
 .. note::
 
     All these tools are also available into the **Tools** tab from the Image Editor right sidebar.
-    
+
     .. figure:: images/editor_tools_sidebar.webp
         :alt:
         :align: center

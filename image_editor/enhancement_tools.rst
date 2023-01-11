@@ -462,3 +462,11 @@ You can either enable or disable the grid lines. Select the corrections you want
     :align: center
 
     The Lens Auto-Correction Tool from digiKam Image Editor
+
+.. _enhance_clone:
+
+Healing Clone Tool
+------------------
+
+.. todo:
+    https://ahmedfathishabanblog.wordpress.com/2019/08/21/healing-clone-tool-project-digikam-gsoc-2019/
