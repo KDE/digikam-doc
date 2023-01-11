@@ -263,3 +263,10 @@ To assist you in aligning, the tool provides a vertical and horizontal guide. Mo
 After you have sheared an image, there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform --> Crop Image Editor menu.
 
 .. figure:: images/editor_shear.webp
+
+.. _transform_liquidrescale:
+
+Liquid Rescale
+--------------
+
+.. todo: https://www.digikam.org/news/2009-04-25_new_liquid_rescale_tool_under_construction/

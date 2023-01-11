@@ -135,17 +135,17 @@ The digiKam tool set are:
 
     - Image Transformation Tools
 
-        - Crop Tool
+        - :ref:`Crop Tool <transform_crop>`
 
-        - Change Size
+        - :ref:`Change Size <transform_resize>`
 
-        - Liquid Resizement
+        - :ref:`Liquid Rescale <transform_liquidrescale>`
 
-        - Free Rotation
+        - :ref:`Free Rotation <transform_freerotation>`
 
-        - Perspective Adjustment
+        - :ref:`Perspective Adjustment <transform_perspective>`
 
-        - Shearing Tool
+        - :ref:`Shearing Tool <transform_shear>`
 
     - Image Decoration
 
