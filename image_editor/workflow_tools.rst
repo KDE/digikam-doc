@@ -109,7 +109,7 @@ The digiKam tool set are:
 
         - :ref:`Simulate Infrared Film <color_infrared>`
 
-        - :ref:`Color Negative <color_negative>`
+        - :ref:`Invert Colors <color_invert>`
 
     - Image Enhancement
 

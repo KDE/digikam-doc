@@ -22,10 +22,14 @@ Encoding Depth
 
 Here you can change the encoding depth per color channel of the edited image. 8 bit encoding is the common JPEG format, 16 bit encoding is better suited for high quality images, but this format needs more storage space, calculation time and is currently available with PNG, PGF, TIFF, and JPEG-2000 formats only.
 
-.. _color_negative:
+.. _color_invert:
 
-Color Negative
---------------
+Inverting Colors
+----------------
+
+In case of digitalize analog film with a scanner, color can appear inverted compared to the reality. This tool allows to reverse the colors into their respective `complementary colors <https://en.wikipedia.org/wiki/Complementary_colors>`_.
+
+Invert color to a complementary color (or opposite color of color on the color wheel), consist to have cyan as the opposite color of red, yellow as opposite color for blue, and magenta as the opposite color of green. With :menuselection:`Color --> Invert` option, we can inverts all the pixel colors and brightness values in the image, as if the image were converted into a negative. Dark areas become bright and bright areas become dark. Hues are replaced by their complementary colors.
 
 .. _color_cm:
 
@@ -222,13 +226,13 @@ Over Exposure Indicator option checks all color channel to see if more than one 
 Correcting Exposure
 -------------------
 
-The simplest tool to use is the Brightness/Contrast/Gamma tool. It is also the least powerful, but in many cases it does everything you need. This tool is often useful for images that are overexposed or underexposed; it is not useful for correcting color casts. The tool gives you three sliders to adjust, for "Brightness", "Contrast" and "Gamma". You can see any adjustments you make reflected in the preview image. When you are happy with the results, press Ok and they will take effect.
+The simplest tool to use is the Brightness/Contrast/Gamma tool. It is also the least powerful, but in many cases it does everything you need. This tool is often useful for images that are overexposed or underexposed; it is not useful for correcting color casts. The tool gives you three sliders to adjust, for **Brightness**, **Contrast** and **Gamma**. You can see any adjustments you make reflected in the preview image. When you are happy with the results, press Ok and they will take effect.
 
 .. figure:: images/editor_bcg_adjust.webp
 
 .. note::
 
-    Another important tool called Levels Adjust provides also an integrated way of seeing the results of adjusting multiple levels and also enables you to save level settings for application to multiple photographs. This can be useful if your camera or scanner often makes the same mistakes and you want to apply the same corrections. See the dedicated Adjust Levels manual for more information.
+    Another important tool called **Levels Adjust** provides also an integrated way of seeing the results of adjusting multiple levels and also enables you to save level settings for application to multiple photographs. This can be useful if your camera or scanner often makes the same mistakes and you want to apply the same corrections. See the dedicated Adjust Levels manual for more information.
     See also a way of correcting exposure problems using the Adjust Curves tool.
 
 .. _color_hsl:
@@ -236,6 +240,22 @@ The simplest tool to use is the Brightness/Contrast/Gamma tool. It is also the l
 Hue Saturation Lightness
 ------------------------
 
+This tool is used to adjust hue, saturation, and lightness levels on a range of color weights for the current image. You can access tp the tool by the menu entry :menuselection:`Color --> Hue/Saturation/Lightness`
+
+The tool settings are listed below:
+
+    - A Hue / Saturation color map to select visualy the respective primary color to adjust. Just move and click with the mouse to set **Hue** and **Saturation** values in sliders below the map.
+    
+    - **Hue**: The slider allow you to select a hue in the color circle (-180, 180). 
+
+    - **Saturation**: The slider allow you to select a saturation (-100, 100). 
+
+    - **Vibrance**: The slider allow you to adjust the vibrance of the image. Vibrance performs selective saturation on less saturated colors and avoiding skin tones.
+    
+    - **Lightness**: The slider allow you to select a luminosity value (-100, 100). Lightness changes here concern a color range, while they concern a color tone with **Curves Adjust** and **Levels Adjust** tools, which work on color channels. If you change the Red lightness with this tool, all red pixels will be changed. With **Curves Adjust** and **Levels Adjust** tools, only dark, bright, or medium pixels luminosity will be changed.
+
+ You can see any adjustments you make reflected in the preview image. When you are happy with the results, press Ok and they will take effect.
+ 
 .. figure:: images/editor_hsl_adjust.webp
 
 .. _color_mixer:
