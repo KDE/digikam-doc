@@ -78,7 +78,7 @@ The **Monitor profile** option allows to select the color profile for your scree
     
 The **Use color managed view** is an alternative to using desktop color management. Only your image in editor will be color managed, not your entire screen. You can at any time toggle this option everywhere in digiKam. This can slow down rendering of the image, depending on the speed of your computer.
 
-**Use color managed view for previews and thumbnails**: with this option, you can also use the color management to render previews and thumbnails in Icon-View, Light-Table, and Import Tool; 
+**Use color managed view for previews and thumbnails**: with this option, you can also use the color management to render previews and thumbnails in Icon-View, Light-Table, and Import Tool.
 
 The **Default Input color profile** should match the camera maker and model you are using. *Not all profiles are created equal*, there are some that have no tone mapping/gamma correction included (For example Canon camera). In some conditions gamma can be not corrected for 16 bit depth conversion, which means that you have to do the tone mapping yourself.
 
