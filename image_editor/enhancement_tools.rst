@@ -550,21 +550,22 @@ Second one is the amount of **Radius Blur** effect in percent applied on data cl
 
 To select the source of image to clone, press **S**, or the **Source selection** button from the toolbar on the top of settings view. The cursor will change to aim-shape, to let you decide the central source button where you will start cloning from.
 
-.. figure:: videos/editor_clone_tool.gif
+.. figure:: videos/editor_clone_spot.gif
     :width: 300px
     :alt:
     :align: center
 
-    Screencast of Image Editor Clone Tool Fixing an Artifact
+    Screencast of Image Editor Healing Clone Fixing an Artifact with Spot Tool
 
 The tool provide also a **Lasso** and **Polygon** selector for the healing clone operations. You can either press **L** or the **Lasso selector** button from the toolbar on the top of settings view. The cursor will change to a pen shape, and you can select discrete points as you like. The polygon edges will be drawn, you just need to press and move your mouse to complete the selection form. You don’t have to draw all the region in one time. The polygon will close on itself if you press **L** again.
 
 Now only cloning inside the selected region will happens, cloning outside will be ignored, unless you press **L** again or **ESC** to de-activate the lasso mode. Once you do that, you can clone anywhere in the screen as usual. Also pressing **ESC** while in the process of drawing the lasso polygon will cancel the lasso operation. Here is a screenshot of a lasso polygon selection, and a large portion of the image cloned inside this lasso portion. Of course pressing **L** or **ESC** again will remove the lasso boundary, keeping the cloned pixels in place, as expected.
 
-.. figure:: images/editor_clone_lasso.webp
+.. figure:: videos/editor_clone_lasso.gif
+    :width: 600px
     :alt:
     :align: center
 
-    The Image Editor Healing Clone Tool Using Lasso Mode
+    Screencast of Image Editor Healing Clone Fixing an Aera Using Lasso
 
 You can undo and redo using toolbar buttons from the toolbar on the top of settings view. Two keyboard shortcuts are assigned to the tool: :kbd:`CTRL-Z` for undo and :kbd:`CTRL-shift-Z` for redo. You can undo and redo without limitation.
