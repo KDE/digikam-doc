@@ -269,7 +269,12 @@ After you have sheared an image, there will be unpleasant triangular "holes" at 
 Liquid Rescale
 --------------
 
-.. todo:
-    https://www.digikam.org/news/2009-04-25_new_liquid_rescale_tool_under_construction/
-    https://en.wikipedia.org/wiki/Seam_carving
+This tool is an Image Editor using the `Seam Carving method <https://en.wikipedia.org/wiki/Seam_carving>`.
 
+The Seam Carving procedure aims at resizing pictures non uniformly while preserving their features, i.e. avoiding distortion of the important parts.
+The tool supports manual feature selection, and can also be used to remove portions of the picture in a consistent way.
+
+
+.. todo:
+
+    http://liquidrescale.wikidot.com/en:manual-0-7
