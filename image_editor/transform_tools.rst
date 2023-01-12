@@ -425,4 +425,4 @@ Since in many cases this simple contrast-based method is not optimal, the energy
     :alt:
     :align: center
 
-    **Step 3**:The Sample Image Width Finally Resized Down With Liquid Rescale Masks Applied
+    **Step 3**:The Sample Image Width Finally Reduced With Liquid Rescale Masks Applied
