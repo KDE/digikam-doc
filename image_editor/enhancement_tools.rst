@@ -492,29 +492,29 @@ From a theoretical point of view unsharp masking must always introduce artifacts
 
 Below, you can see a comparison of different filter apply on a small unfocused image:
 
-=================================================== ====================================================================================================================================================================
-Preview                                             Type
-=================================================== ====================================================================================================================================================================
-.. figure:: images/editor_refocus_notsharpened.webp  Original blurred color image to fix. This image have been taken with an analog still camera. The unfocusing result of an insufficient light for the auto-focus lens.
-    :width: 300px
-    :alt:
-    :align: center
---------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-.. figure:: images/editor_refocus_sharped.webp       Fixed image using simple sharpening filter. Sharpness setting is 80.
-    :width: 300px
-    :alt:
-    :align: center
---------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-.. figure:: images/editor_refocus_unsharpmask.webp   Fixed image using unsharp mask filter. Settings are Radius=50, Amount = 5, and Threshold=0.
-    :width: 300px
-    :alt:
-    :align: center
---------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-.. figure:: images/editor_refocus_refocus.webp       Fixed image using Refocus filter. Settings are Circular Sharpness=1.3, Correlation=0.5, Noise Filter=0.020, Gaussian Sharpness=0 and Matrix Size=5.
-    :width: 300px
-    :alt:
-    :align: center
-=================================================== ====================================================================================================================================================================
+++===================================================+====================================================================================================================================================================+
+| Preview                                            | Type
+++===================================================+====================================================================================================================================================================+
+|.. figure:: images/editor_refocus_notsharpened.webp | Original blurred color image to fix. This image have been taken with an analog still camera. The unfocusing result of an insufficient light for the auto-focus lens.
+|    :width: 300px                                   |
+|    :alt:                                           |
+|    :align: center                                  |
++----------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|.. figure:: images/editor_refocus_sharped.webp      | Fixed image using simple sharpening filter. Sharpness setting is 80.
+|    :width: 300px                                   |
+|    :alt:                                           |
+|    :align: center                                  |
++----------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|.. figure:: images/editor_refocus_unsharpmask.webp  | Fixed image using unsharp mask filter. Settings are Radius=50, Amount = 5, and Threshold=0.
+|    :width: 300px                                   |
+|    :alt:                                           |
+|    :align: center                                  |
++----------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|.. figure:: images/editor_refocus_refocus.webp      | Fixed image using Refocus filter. Settings are Circular Sharpness=1.3, Correlation=0.5, Noise Filter=0.020, Gaussian Sharpness=0 and Matrix Size=5.
+|    :width: 300px                                   |
+|    :alt:                                           |
+|    :align: center                                  |
++====================================================+====================================================================================================================================================================+
 
 .. note::
 
