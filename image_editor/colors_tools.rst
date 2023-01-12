@@ -289,7 +289,7 @@ The simplest tool to use is the Brightness/Contrast/Gamma tool. It is also the l
 Hue Saturation Lightness
 ------------------------
 
-This tool is used to adjust hue, saturation, and lightness levels on a range of color weights for the current image. You can access tp the tool by the menu entry :menuselection:`Color --> Hue/Saturation/Lightness`
+This tool is used to adjust hue, saturation, and lightness levels on a range of color weights for the current image. You can access the tool by the menu entry :menuselection:`Color --> Hue/Saturation/Lightness`
 
 The tool settings are listed below:
 
@@ -301,7 +301,7 @@ The tool settings are listed below:
 
     - **Vibrance**: The slider allow you to adjust the vibrance of the image. Vibrance performs selective saturation on less saturated colors and avoiding skin tones.
     
-    - **Lightness**: The slider allow you to select a luminosity value (-100, 100). Lightness changes here concern a color range, while they concern a color tone with **Curves Adjust** and **Levels Adjust** tools, which work on color channels. If you change the Red lightness with this tool, all red pixels will be changed. With **Curves Adjust** and **Levels Adjust** tools, only dark, bright, or medium pixels luminosity will be changed.
+    - **Lightness**: The slider allows you to select a luminosity value (-100, 100). Lightness changes here concern a color range, while they concern a color tone with **Curves Adjust** and **Levels Adjust** tools, which work on color channels. If you change the Red lightness with this tool, all red pixels will be changed. With **Curves Adjust** and **Levels Adjust** tools, only dark, bright, or medium pixels luminosity will be changed.
 
  You can see any adjustments you make reflected in the preview image. When you are happy with the results, press Ok and they will take effect.
  
