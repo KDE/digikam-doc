@@ -48,7 +48,7 @@ For each metadata section, a bar is available on the top of view with:
     - A menu from the right button to export contents:
 
         - **Copy to clipboard**: share text information in memory to copy and paste in other application.
-        - **Save to file**: save chuck of information in data file.
+        - **Save to file**: save chunk of information in data file.
         - **Print data**: export information in PDF file or to your printer.
 
 .. note::
@@ -136,7 +136,7 @@ You can review embedded XMP information for the selected image in this sidebar t
 ExifTool View
 ~~~~~~~~~~~~~
 
-`ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_ is a free and open-source program for reading, writing, and manipulating image, audio, video, and PDF metadata. It is platform independent as a command-line Perl application. Prior, digiKam use Exiv2 library to handle metadata, but it can use also ExifTool as an alternative to incorporated different types of digital workflows not supported by Exiv2.
+`ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_ is a free and open-source program for reading, writing, and manipulating image, audio, video, and PDF metadata. It is platform independent as a command-line Perl application. Prior, digiKam use Exiv2 library to handle metadata, but it can use also ExifTool as an alternative to incorporate different types of digital workflows not supported by Exiv2.
 
 ExifTool supports many types of metadata including Exif, IPTC, XMP, JFIF, GeoTIFF, ICC Profile, Photoshop IRB, FlashPix, AFCP and ID3, as well as the manufacturer-specific metadata formats of many digital cameras.
 
