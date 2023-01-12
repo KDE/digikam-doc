@@ -306,6 +306,8 @@ The Seam Carving procedure aims at resizing pictures non uniformly while preserv
 
 It works both ways, shrinking and enlarging, and it can use **masks** to select which features of the image should be preserved and which should be discarded.
 
+See below a sample image loaded in Liquid Rescale to illustrate the usage of this tool.
+
 .. figure:: images/editor_liquid_rescale_before.webp
     :alt:
     :align: center
