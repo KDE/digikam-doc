@@ -310,7 +310,7 @@ It works both ways, shrinking and enlarging, and it can use **masks** to select 
     :alt:
     :align: center
 
-    A Sample Image Before Resizing Using Liquid Rescale Tool
+    **Step 1**: A Sample Image Before Resizing Using Liquid Rescale Tool
 
 Target Size
 ~~~~~~~~~~~
@@ -361,7 +361,7 @@ You can change the **Brush size** to paint masks on the canvas. To change a mask
     :alt:
     :align: center
 
-    Liquid Rescale Preservation and Suppression Masks Applied Over the Sample Image Before Resizing
+    **Step 2**: Liquid Rescale Preservation and Suppression Masks Applied Over the Sample Image Before Resizing
 
 Energy Function
 ~~~~~~~~~~~~~~~
@@ -423,4 +423,4 @@ Since in many cases this simple contrast-based method is not optimal, the energy
     :alt:
     :align: center
 
-    The Sample Image Width Resized Down Using Liquid Rescale Tool
+    **Step 3**:The Sample Image Width Finally Resized Down With Liquid Rescale Masks Applied
