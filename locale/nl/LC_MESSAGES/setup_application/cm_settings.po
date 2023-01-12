@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:40+0000\n"
+"POT-Creation-Date: 2023-01-11 00:50+0000\n"
 "PO-Revision-Date: 2022-12-29 13:55+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -22,9 +22,13 @@ msgid "digiKam Color Management Settings"
 msgstr ""
 
 #: ../../setup_application/cm_settings.rst:1
+#, fuzzy
+#| msgid ""
+#| "digiKam, documentation, user manual, photo management, open source, free, "
+#| "learn, easy"
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
-"learn, easy"
+"learn, easy, configure, setup, color management, icc, profile"
 msgstr ""
 "digiKam, documentatie, gebruikershandleiding, fotobeheer, open-source, vrij, "
 "leren, gemakkelijk"
@@ -37,15 +41,20 @@ msgstr "Kleurbeheerinstellingen"
 msgid "Contents"
 msgstr "Inhoud"
 
-#: ../../setup_application/cm_settings.rst:18
+#: ../../setup_application/cm_settings.rst:19
+msgid "Overview"
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:21
 #, fuzzy
 msgid ""
-"digiKam is color-management enabled. RAW files - as they come - are not "
-"color managed at all. Your camera provides the data it has captured in a raw "
-"format and will let you manage all the processing. Every camera has its "
-"specifics as to how it captures color information, therefore you will need "
-"to apply a specific profile to the images you want to process. Please refer "
-"to the section ICC color profile management for more details an explanations."
+"digiKam is color-management enabled application. RAW files - as they come - "
+"are not color managed at all. Your camera provides the data it has captured "
+"in a raw format and will let you manage all the processing. Every camera has "
+"its specifics as to how it captures color information, therefore you will "
+"need to apply a specific profile to the images you want to process. Please "
+"refer to the section :ref:`ICC color profile management <color_management>` "
+"for more details an explanations."
 msgstr ""
 "&digikam; geschikt voor kleurbeheer. RAW bestanden zoals ze aangemaakt "
 "worden zijn niet voor kleur bewerkt. Uw camera levert de gegevens die hij "
@@ -55,13 +64,14 @@ msgstr ""
 "bewerken. Kijk daarvoor op: <link linkend=\"using-iccprofile\">ICC "
 "kleurprofielbeheer</link> voor meer details en uitleg."
 
-#: ../../setup_application/cm_settings.rst:20
+#: ../../setup_application/cm_settings.rst:23
 #, fuzzy
 msgid ""
-"Basically, a profile \"maps\" the color information and gives information on "
-"how one should render them. It gives also information to LCMS and digiKam on "
-"how to translate the color information from one color space to an other in "
-"order to keep the colors as accurate as possible across all rendering media."
+"Basically, a profile *maps* the color information and gives information on "
+"how one should render them. It gives also information to LCMS backend and "
+"digiKam on how to translate the color information from one color space to an "
+"other in order to keep the colors as accurate as possible across all "
+"rendering media."
 msgstr ""
 "Kortom, een profiel plaatst kleurinformatie en verstrekt informatie over hoe "
 "de kleuren moeten worden weergeven. Het geeft ook informatie aan LCMS en "
@@ -69,51 +79,42 @@ msgstr ""
 "andere vertaald moet worden om de kleuren zo nauwkeurig mogelijk te houden "
 "voor alle media voor weergave."
 
-#: ../../setup_application/cm_settings.rst:24
+#: ../../setup_application/cm_settings.rst:26
+msgid "Behavior Settings"
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:28
 #, fuzzy
 msgid ""
-"Behavior Ask when opening an image in image editor / Launch Color Management "
-"tool with RAW files"
+"The **Behavior** view ask when opening an image in Image Editor or when you "
+"use the Color Management tool with RAW files."
 msgstr ""
 "<guilabel>Werkwijze </guilabel> vraag bij het openen van een afbeelding in "
 "de beeldbewerker/start kleurbeheertoepassing met RAW bestanden."
 
-#: ../../setup_application/cm_settings.rst:26
+#: ../../setup_application/cm_settings.rst:34
+#, fuzzy
+#| msgid "Color Management Settings"
+msgid "The Color Management Behavior Configuration Page"
+msgstr "Kleurbeheerinstellingen"
+
+#: ../../setup_application/cm_settings.rst:36
 msgid ""
-"Color Profiles Directory : set this to the folder where you store all your "
-"profiles e.g. \"/usr/share/color/icc\" or \"/home/user/.color/icc\". digiKam "
-"will scan this folder when starting up."
+"**Enable Color Management** is the lead option to turn on/off this feature."
 msgstr ""
 
-#: ../../setup_application/cm_settings.rst:28
-msgid ""
-"ICC Profiles Settings : here you are given the ability to provide \"default"
-"\" choices for your profiles. Everything is adaptable later-on at the "
-"opening of a RAW file."
-msgstr ""
-
-#: ../../setup_application/cm_settings.rst:30
+#: ../../setup_application/cm_settings.rst:38
 #, fuzzy
 msgid ""
-"The Use color managed view is an alternative to using Xcalib or Argyll. Only "
-"your image will be color managed, not your entire screen!"
-msgstr ""
-"De <guilabel>Kleurbeheerweergave gebruiken</guilabel> is een alternatief "
-"voor gebruik van Xcalib of Argyll. Kleurbeheer heeft alleen invloed op uw "
-"beeld, niet op het gehele scherm."
-
-#: ../../setup_application/cm_settings.rst:32
-#, fuzzy
-msgid ""
-"You have to provide a workspace profile (linear profiles such as sRGB, ECI-"
-"RGB, LStar-RGB, Adobe-RGB or CIE-RGB). If you want to print your images, you "
-"may want to opt for Adobe RGB, if it is only for web publishing, sRGB is "
-"better (Adobe RGB will be displayed slightly dull in non color managed "
-"enabled software such as browsers). However you may change this later of "
-"course (by attributing another profile), therefore Adobe RGB can be a good "
-"choice for storing and image handling as you can always change it to sRGB "
-"before releasing an image for your blog. Note: Do not use non-linear "
-"profiles as they will change the color-balance."
+"You have to provide a **Working Color Space** profile (linear profiles such "
+"as sRGB, ECI-RGB, LStar-RGB, Adobe-RGB or CIE-RGB). If you want to print "
+"your images, you may want to opt for Adobe RGB, if it is only for web "
+"publishing, sRGB is better (Adobe RGB will be displayed slightly dull in non "
+"color managed enabled software such as browsers). However you may change "
+"this later of course (by attributing another profile), therefore Adobe RGB "
+"can be a good choice for storing and image handling as you can always change "
+"it to sRGB before releasing an image for your blog. Note: Do not use non-"
+"linear profiles as they will change the color-balance."
 msgstr ""
 "U moet een werkruimteprofiel aangeven (lineaire profielen als sRGB, ECI-RGB, "
 "LStar-,RGB, Adobe-RGB of CIE-RGB). Als u uw afbeeldingen wilt afdrukken kunt "
@@ -125,24 +126,154 @@ msgstr ""
 "op uw blog wordt geplaatst. Opmerking: gebruik geen niet-lineaire profielen "
 "omdat ze de kleurbalans zullen wijzigen."
 
-#: ../../setup_application/cm_settings.rst:34
+#: ../../setup_application/cm_settings.rst:40
 msgid ""
-"The input profile should match the camera maker and model you are using. "
-"'Not all profiles are created equal', there are some that have no tone "
-"mapping/gamma correction included (Canon). In some conditions gamma can be  "
-"not corrected for 16 bit depth conversion, which means that you have to do "
-"the tone mapping yourself."
+"The tree next sections from this view set the rules for different use cases:"
 msgstr ""
 
-#: ../../setup_application/cm_settings.rst:36
+#: ../../setup_application/cm_settings.rst:42
+msgid ""
+"**When the profile of an image does not match the working color space**: "
+"this condition provide two options listed below."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:44
+msgid ""
+"**Ask when opening the image**: If an image has an embedded color profile "
+"not matching the working space profile, digiKam will ask if you want to "
+"convert to the working space, keep the embedded profile or discard the "
+"embedded profile and assign a different one."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:46
+msgid ""
+"**Convert the image to the working color space**: If an image has an "
+"embedded color profile not matching the working space profile, digiKam will "
+"convert the image's color information to the working color space. This "
+"changes the pixel data, but not the appearance of the image."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:48
+msgid ""
+"**When an image has no color profile information**: this condition provide "
+"four options listed below."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:50
+msgid ""
+"**Ask when opening the image**: If an image has no embedded color profile, "
+"digiKam will ask which color space shall be used to interpret the image and "
+"to which color space it shall be transformed for editing."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:52
+msgid ""
+"**Assume it is using the sRGB color space**: in this case, the image is "
+"target for an Internet usage. The **and convert it to the working color "
+"space** allows to force conversion to the **Working Color Space** previously "
+"defined."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:54
+msgid ""
+"**Assume it is using the working color space**: in this case, the image is "
+"not target for a specific usage, and **Working Color Space** is used for the "
+"conversion."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:56
+msgid ""
+"**Convert it from default input color space to working space**: in this "
+"case, the convertion to the **Working Color Space** will be done to include "
+"the **Default input color profile** defined in the next settings view."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:58
+msgid ""
+"**When loading a RAW file with uncalibrated colors**: this condition provide "
+"tree options listed below."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:60
+msgid ""
+"**Ask for the input profile**: digiKam propmt a question to the user to "
+"select right **Input color profile** to use."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:62
+msgid ""
+"**Automatic color correction**: digiKam will perform an automatic colors "
+"auto-correction based of image historgram analysis."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:64
+msgid ""
+"**Convert it from the default input profile**: digiKam will use the "
+"**Default input color profile** defined in the next settings view."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:67
+#, fuzzy
+#| msgid "Profile series"
+msgid "Profiles Settings"
+msgstr "Profielserie"
+
+#: ../../setup_application/cm_settings.rst:69
+msgid ""
+"The ICC **Profiles Settings**: here you are given the ability to provide "
+"*default* choices for your profiles. Everything is adaptable later-on at the "
+"opening of a RAW file."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:75
+#, fuzzy
+#| msgid "Color Management Settings"
+msgid "The Color Management Profiles Configuration Page"
+msgstr "Kleurbeheerinstellingen"
+
+#: ../../setup_application/cm_settings.rst:77
+msgid ""
+"The **Monitor profile** option allows to select the color profile for your "
+"screen."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:79
+msgid ""
+"The **Use color managed view** is an alternative to using desktop color "
+"management. Only your image in editor will be color managed, not your entire "
+"screen. You can at any time toggle this option everywhere in digiKam. This "
+"can slow down rendering of the image, depending on the speed of your "
+"computer."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:81
+msgid ""
+"**Use color managed view for previews and thumbnails**: with this option, "
+"you can also use the color managament to render previews and thumbnails in "
+"Icon-View, Light-Table, and Import Tool;"
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:83
+msgid ""
+"The **Default Input color profile** should match the camera maker and model "
+"you are using. *Not all profiles are created equal*, there are some that "
+"have no tone mapping/gamma correction included (For example Canon camera). "
+"In some conditions gamma can be not corrected for 16 bit depth conversion, "
+"which means that you have to do the tone mapping yourself."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:85
 #, fuzzy
 msgid ""
-"There are some other options such as the soft proof profile which enables "
-"you to emulate, granted that you have a profile for it, how your image will "
-"render for a particular device. It is useful before printing for instance "
-"because your printer has a smaller gamut than your camera and some colors "
-"might look saturated. You may want to fix this manually instead of relying "
-"on the \"blind\" algorithm of your printer."
+"The **Output device profile** should match the profile for your output "
+"device, usually your printer. This profile will be used to do a :ref:`soft "
+"proof <soft_proof>`, so you will be able to preview how an image will be "
+"rendered via an output device. It enables you to emulate, granted that you "
+"have a profile for it, how your image will render for a particular device. "
+"It is useful before printing for instance because your printer has a smaller "
+"gamut than your camera and some colors might look saturated. You may want to "
+"fix this manually instead of relying on the \"blind\" algorithm of your "
+"printer."
 msgstr ""
 "Er zijn een aantal andere opties, zoals het soft proof-profiel waarmee u "
 "vooraf kunt beoordelen, er van uitgaande dat u er een profiel voor heeft, "
@@ -152,7 +283,76 @@ msgstr ""
 "bepalen in plaats van te vertrouwen op het \"blinde\" algoritme van uw "
 "printer."
 
-#: ../../setup_application/cm_settings.rst:38
+#: ../../setup_application/cm_settings.rst:87
+msgid ""
+"The **Color Profiles Repository**: digiKam looks for ICC profiles in a "
+"number of default locations e.g. :file:`/usr/share/color/icc` or. Set this "
+"to the folder where you store extra profiles e.g :file:`/home/user/.color/"
+"icc`. digiKam will scan these folders when starting up."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:90
+msgid "Advanced Settings"
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:92
+msgid ""
+"**Use black point compensation**: this setting is a way to make adjustments "
+"between the maximum black levels of digital files and the black capabilities "
+"of various digital devices."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:94
+msgid "**Rendering Intents**: this setting provide four options listed below."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:96
+msgid ""
+"**Perceptual**: causes the full gamut of the image to be compressed or "
+"expanded to fill the gamut of the destination device, so that gray balance "
+"is preserved but colorimetric accuracy may not be preserved. In other words, "
+"if certain colors in an image fall outside of the range of colors that the "
+"output device can render, the image intent will cause all the colors in the "
+"image to be adjusted so that the every color in the image falls within the "
+"range that can be rendered and so that the relationship between colors is "
+"preserved as much as possible. This intent is most suitable for display of "
+"photographs and images, and is the default intent."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:98
+msgid ""
+"**Relative Colorimetric**: is defined such that any colors that fall outside "
+"the range that the output device can render are adjusted to the closest "
+"color that can be rendered, while all other colors are left unchanged. Proof "
+"intent does not preserve the white point."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:100
+msgid ""
+"**Absolute Colorimetric**: causes any colors that fall outside the range "
+"that the output device can render to be adjusted to the closest color that "
+"can be rendered, while all other colors are left unchanged. This intent "
+"preserves the white point and is most suitable for spot colors (Pantone, "
+"TruMatch, logo colors, etc.)."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:102
+msgid ""
+"**Saturation**: preserves the saturation of colors in the image at the "
+"possible expense of hue and lightness. Implementation of this intent remains "
+"somewhat problematic, and the ICC is still working on methods to achieve the "
+"desired effects. This intent is most suitable for business graphics such as "
+"charts, where it is more important that the colors be vivid and contrast "
+"well with each other rather than a specific color."
+msgstr ""
+
+#: ../../setup_application/cm_settings.rst:108
+#, fuzzy
+#| msgid "Color Management Settings"
+msgid "The Color Management Advanced Configuration Page"
+msgstr "Kleurbeheerinstellingen"
+
+#: ../../setup_application/cm_settings.rst:112
 #, fuzzy
 msgid ""
 "For most cameras it is pretty obvious what color profile they propose for "
@@ -164,106 +364,106 @@ msgstr ""
 "een tabel van de camera's en bijpassende profielen, het niet-verplichtend "
 "natuurlijk:"
 
-#: ../../setup_application/cm_settings.rst:41
+#: ../../setup_application/cm_settings.rst:115
 msgid "Camera"
 msgstr "Camera"
 
-#: ../../setup_application/cm_settings.rst:41
+#: ../../setup_application/cm_settings.rst:115
 msgid "Profile series"
 msgstr "Profielserie"
 
-#: ../../setup_application/cm_settings.rst:43
-#: ../../setup_application/cm_settings.rst:44
+#: ../../setup_application/cm_settings.rst:117
+#: ../../setup_application/cm_settings.rst:118
 msgid "Canon 1D mark II"
 msgstr "Canon 1D mark II"
 
-#: ../../setup_application/cm_settings.rst:43
+#: ../../setup_application/cm_settings.rst:117
 msgid "6051"
 msgstr ""
 
-#: ../../setup_application/cm_settings.rst:44
+#: ../../setup_application/cm_settings.rst:118
 msgid "6111"
 msgstr ""
 
-#: ../../setup_application/cm_settings.rst:45
+#: ../../setup_application/cm_settings.rst:119
 msgid "Canon 1Ds"
 msgstr "Canon 1Ds"
 
-#: ../../setup_application/cm_settings.rst:45
+#: ../../setup_application/cm_settings.rst:119
 msgid "6021"
 msgstr ""
 
-#: ../../setup_application/cm_settings.rst:46
+#: ../../setup_application/cm_settings.rst:120
 msgid "Canon 1Ds mark II"
 msgstr "Canon 1Ds mark II"
 
-#: ../../setup_application/cm_settings.rst:46
+#: ../../setup_application/cm_settings.rst:120
 msgid "6081"
 msgstr ""
 
-#: ../../setup_application/cm_settings.rst:47
+#: ../../setup_application/cm_settings.rst:121
 msgid "Canon 5D"
 msgstr "Canon 5D"
 
-#: ../../setup_application/cm_settings.rst:47
+#: ../../setup_application/cm_settings.rst:121
 msgid "6091"
 msgstr ""
 
-#: ../../setup_application/cm_settings.rst:48
+#: ../../setup_application/cm_settings.rst:122
 msgid "Canon 10D"
 msgstr "Canon 10D"
 
-#: ../../setup_application/cm_settings.rst:48
-#: ../../setup_application/cm_settings.rst:52
+#: ../../setup_application/cm_settings.rst:122
+#: ../../setup_application/cm_settings.rst:126
 msgid "6031"
 msgstr ""
 
-#: ../../setup_application/cm_settings.rst:49
+#: ../../setup_application/cm_settings.rst:123
 msgid "Canon 20D"
 msgstr "Canon 20D"
 
-#: ../../setup_application/cm_settings.rst:49
+#: ../../setup_application/cm_settings.rst:123
 msgid "6061"
 msgstr ""
 
-#: ../../setup_application/cm_settings.rst:50
+#: ../../setup_application/cm_settings.rst:124
 msgid "Canon 30D"
 msgstr "Canon 30D"
 
-#: ../../setup_application/cm_settings.rst:50
+#: ../../setup_application/cm_settings.rst:124
 msgid "6112"
 msgstr ""
 
-#: ../../setup_application/cm_settings.rst:51
+#: ../../setup_application/cm_settings.rst:125
 msgid "Canon 40D"
 msgstr "Canon 40D"
 
-#: ../../setup_application/cm_settings.rst:51
+#: ../../setup_application/cm_settings.rst:125
 msgid "6101"
 msgstr ""
 
-#: ../../setup_application/cm_settings.rst:52
+#: ../../setup_application/cm_settings.rst:126
 msgid "Canon 300D"
 msgstr "Canon 300D"
 
-#: ../../setup_application/cm_settings.rst:53
+#: ../../setup_application/cm_settings.rst:127
 msgid "Canon 350D"
 msgstr "Canon 350D"
 
-#: ../../setup_application/cm_settings.rst:53
+#: ../../setup_application/cm_settings.rst:127
 #, fuzzy
 msgid "6111 or 6071"
 msgstr "of"
 
-#: ../../setup_application/cm_settings.rst:54
+#: ../../setup_application/cm_settings.rst:128
 msgid "Canon 400D"
 msgstr "Canon 400D"
 
-#: ../../setup_application/cm_settings.rst:54
+#: ../../setup_application/cm_settings.rst:128
 msgid "6131"
 msgstr ""
 
-#: ../../setup_application/cm_settings.rst:57
+#: ../../setup_application/cm_settings.rst:131
 #, fuzzy
 msgid ""
 "The Canon profile extension betray the target style: F for Faithful Style, L "
@@ -274,9 +474,20 @@ msgstr ""
 "natuurgetrouw, L voor landschap, N voor neutraal, P voor Portret Stijl en S "
 "voor standaard stijl."
 
-#: ../../setup_application/cm_settings.rst:59
+#: ../../setup_application/cm_settings.rst:133
 #, fuzzy
-msgid "Here you find a typical RAW workflow scenario."
+msgid ""
+"Here you find a typical :ref:`RAW workflow <rawprocessing_workflow>` "
+"scenario with Image Editor."
 msgstr ""
 "Hier vind u een typisch <link linkend=\"raw-workflow\">RAW workflow</link> "
 "scenario."
+
+#, fuzzy
+#~ msgid ""
+#~ "The Use color managed view is an alternative to using Xcalib or Argyll. "
+#~ "Only your image will be color managed, not your entire screen!"
+#~ msgstr ""
+#~ "De <guilabel>Kleurbeheerweergave gebruiken</guilabel> is een alternatief "
+#~ "voor gebruik van Xcalib of Argyll. Kleurbeheer heeft alleen invloed op uw "
+#~ "beeld, niet op het gehele scherm."

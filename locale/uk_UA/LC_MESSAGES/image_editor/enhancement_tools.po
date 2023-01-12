@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:40+0000\n"
+"POT-Creation-Date: 2023-01-11 00:50+0000\n"
 "PO-Revision-Date: 2023-01-08 09:26+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -38,11 +38,11 @@ msgstr "Інструменти удосконалення"
 msgid "Contents"
 msgstr "Зміст"
 
-#: ../../image_editor/enhancement_tools.rst:19
+#: ../../image_editor/enhancement_tools.rst:21
 msgid "Lens Distortion Correction"
 msgstr "Виправлення викривлення, спричиненого об’єктивом"
 
-#: ../../image_editor/enhancement_tools.rst:21
+#: ../../image_editor/enhancement_tools.rst:23
 msgid ""
 "digiKam The Lens Distortion is a tool to correct spherical lens aberrations "
 "on the photos."
@@ -50,7 +50,7 @@ msgstr ""
 "Інструмент «Виправлення викривлень об’єктивом» digiKam призначено для "
 "виправлення наслідків сферичної аберації на фотографіях."
 
-#: ../../image_editor/enhancement_tools.rst:23
+#: ../../image_editor/enhancement_tools.rst:25
 msgid ""
 "Barrel distortion is associated with wide angle (or minimal zoom) lenses. It "
 "causes the images to appear slightly spherical (curved outward) like a "
@@ -74,7 +74,7 @@ msgstr ""
 "розташованих поряд з краєм. Такі викривлення може бути просто вилучено без "
 "видимої втрати якості за допомогою відповідного інструменту програми."
 
-#: ../../image_editor/enhancement_tools.rst:27
+#: ../../image_editor/enhancement_tools.rst:29
 msgid ""
 "This tool treats the geometrical distortions. Chromatic aberrations will not "
 "be corrected by this tool."
@@ -82,25 +82,25 @@ msgstr ""
 "За допомогою цього інструменту виконуються геометричні викривлення. Цей "
 "інструмент не може виправляти наслідки хроматичної аберації."
 
-#: ../../image_editor/enhancement_tools.rst:29
+#: ../../image_editor/enhancement_tools.rst:31
 msgid ""
 "The following figures explain the main types of geometrical distortions:"
 msgstr ""
 "На наступних зображеннях наведено основні типи геометричних викривлень:"
 
-#: ../../image_editor/enhancement_tools.rst:31
+#: ../../image_editor/enhancement_tools.rst:33
 msgid "(1): pincushion distortion."
 msgstr "(1): викривлення втягування."
 
-#: ../../image_editor/enhancement_tools.rst:33
+#: ../../image_editor/enhancement_tools.rst:35
 msgid "(2): no distortion."
 msgstr "(2): без викривлення."
 
-#: ../../image_editor/enhancement_tools.rst:35
+#: ../../image_editor/enhancement_tools.rst:37
 msgid "(3): barrel distortion."
 msgstr "(3): викривлення здуття."
 
-#: ../../image_editor/enhancement_tools.rst:41
+#: ../../image_editor/enhancement_tools.rst:43
 msgid ""
 "A bit of explanation first. The geometrical corrections use 4th-order "
 "polynomial coefficients:"
@@ -108,7 +108,7 @@ msgstr ""
 "Спочатку трохи пояснень. Для геометричного виправлення використовуються "
 "коефіцієнти полінома четвертого степеня:"
 
-#: ../../image_editor/enhancement_tools.rst:43
+#: ../../image_editor/enhancement_tools.rst:45
 msgid ""
 "The 1st-order coefficient changes the size of the image. The tool calls this "
 "Zoom."
@@ -116,7 +116,7 @@ msgstr ""
 "Коефіцієнт при змінній першого порядку визначає розмір зображення. У "
 "інструменті його названо «Масштаб»."
 
-#: ../../image_editor/enhancement_tools.rst:45
+#: ../../image_editor/enhancement_tools.rst:47
 msgid ""
 "The 2nd-order coefficient treats the main geometrical distortion of lenses "
 "and can correct the convex or concave shape of the image."
@@ -124,7 +124,7 @@ msgstr ""
 "Коефіцієнт при змінній у другому степені визначає основне геометричне "
 "викривлення лінз і може виправити опуклу чи увігнуту форму зображення."
 
-#: ../../image_editor/enhancement_tools.rst:47
+#: ../../image_editor/enhancement_tools.rst:49
 msgid ""
 "The 3rd-order coefficient has a similar rounding effect but levels off "
 "towards the edges. This correction is not employed in the tool."
@@ -133,7 +133,7 @@ msgstr ""
 "коефіцієнта ефект округлення, але з ухилом до країв. Подібне виправлення не "
 "задіяне у роботі інструменту."
 
-#: ../../image_editor/enhancement_tools.rst:49
+#: ../../image_editor/enhancement_tools.rst:51
 msgid ""
 "The 4th-order coefficient corrects the far edges inversely to the 2nd-order "
 "rounding. Combining it with the 2nd-order correction the geometrical "
@@ -144,13 +144,13 @@ msgstr ""
 "другого степеня цей коефіцієнт може майже повністю усунути геометричні "
 "викривлення."
 
-#: ../../image_editor/enhancement_tools.rst:53
+#: ../../image_editor/enhancement_tools.rst:55
 msgid "Four sliders let you set the distortion correction filter:"
 msgstr ""
 "Керувати фільтром виправлення викривлення можна за допомогою чотирьох "
 "параметрів:"
 
-#: ../../image_editor/enhancement_tools.rst:55
+#: ../../image_editor/enhancement_tools.rst:57
 msgid ""
 "Main: this value controls the amount of 2nd-order distortion. Negative "
 "values correct barrel distortions, while positive values correct pincushion "
@@ -160,7 +160,7 @@ msgstr ""
 "виправляють викривлення здуття, а додатні значення виправляють викривлення "
 "втягування."
 
-#: ../../image_editor/enhancement_tools.rst:57
+#: ../../image_editor/enhancement_tools.rst:59
 msgid ""
 "Edge: this value controls the amount of 4th-order distortion. The Edge "
 "control has more effect at the edges of the image than at the center. For "
@@ -171,7 +171,7 @@ msgstr ""
 "більшості об’єктивів знак значення параметра Край має бути протилежним до "
 "знаку значення параметра Основне."
 
-#: ../../image_editor/enhancement_tools.rst:59
+#: ../../image_editor/enhancement_tools.rst:61
 msgid ""
 "Zoom: this value rescales the overall image size (1st-order correction). "
 "Negative values zoom out of the image, while positive values zoom in."
@@ -180,7 +180,7 @@ msgstr ""
 "(виправлення 1-го степеня). Від’ємні значення призводять до зменшення "
 "зображення, додатні — до збільшення."
 
-#: ../../image_editor/enhancement_tools.rst:61
+#: ../../image_editor/enhancement_tools.rst:63
 msgid ""
 "Brighten: this control adjusts the brightness in image corners. Negative "
 "values decrease the brightness image corners, while positive values increase "
@@ -190,7 +190,7 @@ msgstr ""
 "кутах зображення. Від’ємні значення призведуть до зменшення яскравості у "
 "кутах, додатні — до збільшення."
 
-#: ../../image_editor/enhancement_tools.rst:63
+#: ../../image_editor/enhancement_tools.rst:65
 msgid ""
 "To help you to choose the best filter settings, the widget dialog "
 "illustrates with a thumbnail preview the distortion correction applied to a "
@@ -203,7 +203,7 @@ msgstr ""
 "застосуєте до зображення, буде збережено. Програма використає їх як типові "
 "для наступних сеансів роботи з інструментом."
 
-#: ../../image_editor/enhancement_tools.rst:67
+#: ../../image_editor/enhancement_tools.rst:69
 msgid ""
 "The barrel-pincushion correction should be done before any crop or size "
 "changes (including perspective correction). In fact the Barrel-Pincushion "
@@ -216,7 +216,7 @@ msgstr ""
 "Якщо ви обріжете зображення, а потім спробуєте виправити здуття, результат "
 "буде очевидно помилковим."
 
-#: ../../image_editor/enhancement_tools.rst:69
+#: ../../image_editor/enhancement_tools.rst:71
 msgid ""
 "To help you finding the best correction the tool provides a vertical and "
 "horizontal guide. Move the mouse cursor in the image preview to display the "
@@ -234,7 +234,7 @@ msgstr ""
 "виправлення здуття-втягування так, щоб лінії об’єктів на зображенні було "
 "вирівняно за напрямними."
 
-#: ../../image_editor/enhancement_tools.rst:71
+#: ../../image_editor/enhancement_tools.rst:73
 msgid ""
 "When using pincushion correction the resulting image will have a black "
 "border in the corner. You will need to cut this out with a crop tool "
@@ -245,7 +245,7 @@ msgstr ""
 "слід обрізати її за допомогою інструменту, скористатися яким можна відкривши "
 "пункт меню редактора зображень «Перетворення --> Обрізати»."
 
-#: ../../image_editor/enhancement_tools.rst:73
+#: ../../image_editor/enhancement_tools.rst:75
 msgid ""
 "On most images using the barrel correction is enough, however with some "
 "shots such as front images, frames, paintings, the next logical step is to "
@@ -259,17 +259,17 @@ msgstr ""
 "кути прямими. Зауважте, що, якщо під час зйомки ви тримаєте фотоапарат в "
 "руках, майже завжди буде помітним деяке викривлення перспективи."
 
-#: ../../image_editor/enhancement_tools.rst:76
+#: ../../image_editor/enhancement_tools.rst:80
 msgid "Hot Pixels Correction"
 msgstr "Прибирання яскравих точок"
 
-#: ../../image_editor/enhancement_tools.rst:79
-#: ../../image_editor/enhancement_tools.rst:228
-#: ../../image_editor/enhancement_tools.rst:297
+#: ../../image_editor/enhancement_tools.rst:83
+#: ../../image_editor/enhancement_tools.rst:242
+#: ../../image_editor/enhancement_tools.rst:315
 msgid "Overview"
 msgstr "Огляд"
 
-#: ../../image_editor/enhancement_tools.rst:81
+#: ../../image_editor/enhancement_tools.rst:85
 msgid ""
 "digiKam The Hot Pixels tool facilitates removing hot pixels from photographs "
 "taken with a CCD camera. It uses algorithms from the JPEGPixi project which "
@@ -280,7 +280,7 @@ msgstr ""
 "Для створення інструменту використано алгоритми з проєкту JPEGPixi, "
 "авторські права на які належать Мартіну Дікопу (Martin Dickopp)."
 
-#: ../../image_editor/enhancement_tools.rst:83
+#: ../../image_editor/enhancement_tools.rst:87
 msgid ""
 "Most current digital cameras produce images with several brightly colored "
 "\"bad pixels\" when using slow shutter speeds. Night images can be ruined by "
@@ -291,7 +291,7 @@ msgstr ""
 "повільного руху затвора. Нічні знімки може бути спотворено такими "
 "«дефектними пікселями». Існує три різновиди «дефектних пікселів»:"
 
-#: ../../image_editor/enhancement_tools.rst:85
+#: ../../image_editor/enhancement_tools.rst:89
 msgid ""
 "Stuck pixels: it's a pixel that always reads high or is always on to maximum "
 "power on all exposures. This produces a bright pixel usually of red, blue or "
@@ -308,7 +308,7 @@ msgstr ""
 "за звичайної експозиції, вони стають помітнішими за умови яскравого "
 "освітлення."
 
-#: ../../image_editor/enhancement_tools.rst:87
+#: ../../image_editor/enhancement_tools.rst:91
 msgid ""
 "Dead pixels: it's a pixel that reads zero or is always off on all exposures. "
 "This state produces a black pixel in the final image. Similar to stuck "
@@ -321,7 +321,7 @@ msgstr ""
 "залиплих пікселів, мертві пікселі проявляються незалежно від швидкості руху "
 "затвора, розмірів діафрагми або інших визначених користувачем параметрів."
 
-#: ../../image_editor/enhancement_tools.rst:89
+#: ../../image_editor/enhancement_tools.rst:93
 msgid ""
 "Hot pixels: it's a pixel that reads high (bright) on longer exposures as "
 "white, red, or green color. The longer the exposure time, the more visible "
@@ -333,7 +333,7 @@ msgstr ""
 "зелений колір. Чим довшим буде час експозиції, тим помітнішими ставатимуть "
 "«гарячі пікселі». Подібні пікселі є непомітним за умов яскравого освітлення."
 
-#: ../../image_editor/enhancement_tools.rst:91
+#: ../../image_editor/enhancement_tools.rst:95
 msgid ""
 "Note that stuck or dead pixels will occur at the same location for all "
 "images. If the location of the stuck or dead pixel occurs at different "
@@ -343,7 +343,7 @@ msgstr ""
 "місцях зображення. Якщо залиплий або мертвий піксель змінює розташування, "
 "цей піксель є за нашою класифікацією «гарячим»."
 
-#: ../../image_editor/enhancement_tools.rst:93
+#: ../../image_editor/enhancement_tools.rst:97
 msgid ""
 "Stuck, dead or hot pixels are a problem in particular when shooting in high "
 "quality raw mode since many cameras have built-in hot pixel suppression "
@@ -356,7 +356,7 @@ msgstr ""
 "застосовується під час стиснення JPEG (що є типовою дією під час "
 "фотографування)."
 
-#: ../../image_editor/enhancement_tools.rst:95
+#: ../../image_editor/enhancement_tools.rst:99
 msgid ""
 "This tool can be used to fix the \"Hot pixels\" and \"Stuck Pixels\" on a "
 "photograph using a black frame subtraction method. There is no yet a manual "
@@ -367,11 +367,11 @@ msgstr ""
 "кадру. Окремого редактора для вибору дефектних пікселів вручну ще не "
 "реалізовано."
 
-#: ../../image_editor/enhancement_tools.rst:98
+#: ../../image_editor/enhancement_tools.rst:102
 msgid "Create the Black Frames"
 msgstr "Створення чорних кадрів"
 
-#: ../../image_editor/enhancement_tools.rst:100
+#: ../../image_editor/enhancement_tools.rst:104
 msgid ""
 "The Black Frame subtraction method is the most accurate \"Hot Pixels\" and "
 "\"Stuck Pixels\" removal. First you have to create a \"Black Frame\" as a "
@@ -391,7 +391,7 @@ msgstr ""
 "пікселі (кольорові точки). Їх буде розташовано у тих самих місцях, що і на "
 "попередніх знімках."
 
-#: ../../image_editor/enhancement_tools.rst:102
+#: ../../image_editor/enhancement_tools.rst:106
 msgid ""
 "Load this file to the widget using the Black Frame button. The tool will "
 "process an automatic detection of Hot and Stuck Pixels. They will be "
@@ -401,7 +401,7 @@ msgstr ""
 "виконає автоматичне визначення «гарячих» та «залиплих» пікселів. Після цього "
 "їх буде підсвічено у області попереднього перегляду панелі керування."
 
-#: ../../image_editor/enhancement_tools.rst:106
+#: ../../image_editor/enhancement_tools.rst:110
 msgid ""
 "If you use an old digital camera, it is important to re-shoot the Black "
 "Frame next time you are taking a long exposure images to detect new Hot and "
@@ -411,11 +411,11 @@ msgstr ""
 "кадр» наступного разу, коли ви зніматимете зображення з довгою експозицією "
 "для виявлення нових «гарячих» і «залиплих» пікселів на дефектах ПЗЗ."
 
-#: ../../image_editor/enhancement_tools.rst:109
+#: ../../image_editor/enhancement_tools.rst:113
 msgid "Using the hotpixel tool"
 msgstr "Користування інструментом усування яскравих точок"
 
-#: ../../image_editor/enhancement_tools.rst:113
+#: ../../image_editor/enhancement_tools.rst:117
 msgid ""
 "At first, as explained in the previous section, you need to load a Black "
 "Frame corresponding to the image to correct. An automatic parsing will be "
@@ -430,7 +430,7 @@ msgstr ""
 "час попереднього сеансу обробки, і автоматично відкриває зображення цього "
 "кадру під час наступного сеансу."
 
-#: ../../image_editor/enhancement_tools.rst:115
+#: ../../image_editor/enhancement_tools.rst:119
 msgid ""
 "The image panel and the original preview help you to pan within the image. "
 "The preview window shows the filter output using the current settings. Bad "
@@ -441,7 +441,7 @@ msgstr ""
 "спостерігати за наслідками застосування фільтра з поточними параметрами. "
 "Пошкоджені пікселі буде підсвічено у всіх областях попереднього перегляду."
 
-#: ../../image_editor/enhancement_tools.rst:117
+#: ../../image_editor/enhancement_tools.rst:121
 msgid ""
 "Select an area to see bad pixels on preview and the filter result using "
 "'Separate View' options of image panel. Choose the best Filter method to "
@@ -453,7 +453,7 @@ msgstr ""
 "інтерполяції пікселів або блоків пікселів у полі «Фільтр». Ви можете "
 "скористатися одним з таких фільтрів:"
 
-#: ../../image_editor/enhancement_tools.rst:119
+#: ../../image_editor/enhancement_tools.rst:123
 msgid ""
 "Average: the pixels adjacent to the pixel block are averaged. The resulting "
 "color is assigned to all pixels in the block. For 1-dimensional "
@@ -465,7 +465,7 @@ msgstr ""
 "одновимірної інтерполяції цю процедуру буде виконано окремо для "
 "горизонтальної і вертикальної смуг товщиною у один піксель."
 
-#: ../../image_editor/enhancement_tools.rst:121
+#: ../../image_editor/enhancement_tools.rst:125
 msgid ""
 "Linear: the pixels which have a distance of 1 from the pixel block are used "
 "to calculate a bi-linear surface (2-dim), or a group of linear curves (1-"
@@ -477,7 +477,7 @@ msgstr ""
 "лінійних кривих (одновимірної), яку згодом буде використано для призначення "
 "наближених кольорів пікселям блоку."
 
-#: ../../image_editor/enhancement_tools.rst:123
+#: ../../image_editor/enhancement_tools.rst:127
 msgid ""
 "Quadratic: this is the default filtering method. The pixels which have a "
 "distance of 2 or less from the pixel block are used to calculate a bi-"
@@ -490,7 +490,7 @@ msgstr ""
 "квадратичних кривих (одновимірної), після цього обчислені параметри буде "
 "використано для призначення наближених кольорів пікселям блоку."
 
-#: ../../image_editor/enhancement_tools.rst:125
+#: ../../image_editor/enhancement_tools.rst:129
 msgid ""
 "Cubic: the pixels which have a distance of 3 or less from the pixel block "
 "are used to calculate a bi-cubic surface (2-dim), or a group of cubic curves "
@@ -502,17 +502,17 @@ msgstr ""
 "групи кубічних кривих (одновимірних), після цього обчислені параметри буде "
 "використано для призначення наближених кольорів пікселям блоку."
 
-#: ../../image_editor/enhancement_tools.rst:128
+#: ../../image_editor/enhancement_tools.rst:134
 msgid "Local Contrast Tool"
 msgstr "Засіб локальної контрастності"
 
-#: ../../image_editor/enhancement_tools.rst:130
+#: ../../image_editor/enhancement_tools.rst:136
 msgid "The Local Contrast tool render pseudo-HDR image."
 msgstr ""
 "Інструмент «Локальна контрастність» призначений для імітації широкого "
 "динамічного діапазону кольорів на зображенні."
 
-#: ../../image_editor/enhancement_tools.rst:132
+#: ../../image_editor/enhancement_tools.rst:138
 msgid ""
 "There are multiple ways to render HDR image to improve photos containing "
 "under or overexposed areas. With camera devices, usual tools let you merge "
@@ -547,7 +547,7 @@ msgstr ""
 "доведеться ознайомлюватися із усіма тонкощами його роботи, щоб отримати "
 "задовільні результати."
 
-#: ../../image_editor/enhancement_tools.rst:136
+#: ../../image_editor/enhancement_tools.rst:142
 msgid ""
 "Open the photo you want in the editor and choose Enhance --> Local Contrast. "
 "The tool lets you apply up to four tonemapping operations called stages. "
@@ -567,7 +567,7 @@ msgstr ""
 "«Спробувати». Коли буде отримано задовільні результати, натисніть кнопку "
 "«Гаразд», щоб обробити фотографію відповідним чином."
 
-#: ../../image_editor/enhancement_tools.rst:138
+#: ../../image_editor/enhancement_tools.rst:144
 msgid ""
 "While the Local Contrast tool may sound like an easy way to fix photos, you "
 "should use it with care: sometimes it can do more damage than good, "
@@ -578,18 +578,18 @@ msgstr ""
 "він може завдати більше шкоди, ніж принести користі. Результат його "
 "застосування може виглядати неприродно."
 
-#: ../../image_editor/enhancement_tools.rst:141
+#: ../../image_editor/enhancement_tools.rst:149
 msgid "Noise Reduction"
 msgstr "Зменшення шумності"
 
-#: ../../image_editor/enhancement_tools.rst:143
+#: ../../image_editor/enhancement_tools.rst:151
 msgid ""
 "digiKam The Noise Reduction is a powerful tool to reduce the image noise."
 msgstr ""
 "Інструмент вилучення шумів digiKam є потужним інструментом для зменшення "
 "шумності зображенн."
 
-#: ../../image_editor/enhancement_tools.rst:145
+#: ../../image_editor/enhancement_tools.rst:153
 msgid ""
 "This tool provides selectable image filters to remove specks or other "
 "artifacts caused by junk such as dust or hair on the lens. It also can be "
@@ -604,7 +604,7 @@ msgstr ""
 "характеристиками самого фотоапарата, зокрема завищеними параметрами ISO, а "
 "також так званим муаром на сканованих зображеннях з книжок та журналів."
 
-#: ../../image_editor/enhancement_tools.rst:147
+#: ../../image_editor/enhancement_tools.rst:155
 msgid ""
 "If you want more information about what's digital camera sensor noise, "
 "please take a look in this tutorial."
@@ -612,7 +612,7 @@ msgstr ""
 "Якщо ви бажаєте дізнатися більше про природу сенсорного шуму цифрових "
 "фотоапаратів, будь ласка, ознайомтеся з цим підручником."
 
-#: ../../image_editor/enhancement_tools.rst:151
+#: ../../image_editor/enhancement_tools.rst:159
 msgid ""
 "The above screenshot shows a typical scene taken with an digital camera "
 "using a high sensitivity ISO setting. It shows grainy noise which can be "
@@ -623,7 +623,7 @@ msgstr ""
 "шум, який успішно усувається за допомогою інструменту, який ми обговорювали "
 "вище."
 
-#: ../../image_editor/enhancement_tools.rst:153
+#: ../../image_editor/enhancement_tools.rst:161
 msgid ""
 "The re-sizeable image panel with the original preview helps you to pan "
 "within the image. Move the red rectangle around to select the area that lets "
@@ -646,11 +646,11 @@ msgstr ""
 "попереднього перегляду розташовано параметри «Масштабу», за допомогою яких "
 "можна змінити масштаб ділянки зображення."
 
-#: ../../image_editor/enhancement_tools.rst:155
+#: ../../image_editor/enhancement_tools.rst:163
 msgid "You can see below a full description of all parameters:"
 msgstr "Нижче наведено повний опис усіх параметрів:"
 
-#: ../../image_editor/enhancement_tools.rst:157
+#: ../../image_editor/enhancement_tools.rst:165
 msgid ""
 "Estimate Noise: compute automatically all noise reduction settings by a "
 "parse of noise contained in image. By default it recommended to turn on this "
@@ -665,7 +665,7 @@ msgstr ""
 "скоригуйте параметри «Освітленість», «Колірність синього» і «Колірність "
 "червоного» вручну."
 
-#: ../../image_editor/enhancement_tools.rst:159
+#: ../../image_editor/enhancement_tools.rst:167
 msgid ""
 "Threshold: use the slider for coarse adjustment, and the spin control for "
 "fine adjustment. The threshold is the value below which everything is "
@@ -687,7 +687,7 @@ msgstr ""
 "Коригування слід виконувати так само обережно, як коригування фокусування "
 "фотоапарата."
 
-#: ../../image_editor/enhancement_tools.rst:162
+#: ../../image_editor/enhancement_tools.rst:170
 msgid ""
 "Softness: use the slider for coarse adjustment, and the spin control for "
 "fine adjustment. The softness adjusts the level of the thresholding (soft as "
@@ -709,7 +709,7 @@ msgstr ""
 "Коригування слід виконувати так само обережно, як коригування фокусування "
 "фотоапарата."
 
-#: ../../image_editor/enhancement_tools.rst:164
+#: ../../image_editor/enhancement_tools.rst:172
 msgid ""
 "Save As... and Load...: these buttons are used to do just that. Any Noise "
 "Reduction parameters that you have set can be saved to the filesystem and "
@@ -719,23 +719,23 @@ msgstr ""
 "відповідних дій. Будь-які параметри зменшення шумності, які ви встановили, "
 "може бути збережено у файловій системі, а потім знову завантажено."
 
-#: ../../image_editor/enhancement_tools.rst:166
-#: ../../image_editor/enhancement_tools.rst:390
+#: ../../image_editor/enhancement_tools.rst:174
+#: ../../image_editor/enhancement_tools.rst:408
 msgid "Defaults: this button resets all settings to default values."
 msgstr ""
 "Типові: за допомогою цієї кнопки можна відновити типові значення параметрів."
 
-#: ../../image_editor/enhancement_tools.rst:169
+#: ../../image_editor/enhancement_tools.rst:179
 msgid "Blur Tool"
 msgstr "Інструмент розмивання"
 
-#: ../../image_editor/enhancement_tools.rst:171
+#: ../../image_editor/enhancement_tools.rst:181
 msgid "The Blur Tool is dedicated to soft an image."
 msgstr ""
 "Інструмент розмивання призначено для пом’якшення переходів між областями на "
 "зображенні."
 
-#: ../../image_editor/enhancement_tools.rst:173
+#: ../../image_editor/enhancement_tools.rst:183
 msgid ""
 "Sometimes an image is too crisp for your purposes. The solution is to blur "
 "it a bit: fortunately blurring an image is much easier than sharpening it. "
@@ -751,11 +751,11 @@ msgstr ""
 "вікні, ви зможете спостерігати за наслідками зміни рівня для вашої "
 "фотографії."
 
-#: ../../image_editor/enhancement_tools.rst:178
+#: ../../image_editor/enhancement_tools.rst:190
 msgid "Photograph Restoration"
 msgstr "Реставрація фотографій"
 
-#: ../../image_editor/enhancement_tools.rst:180
+#: ../../image_editor/enhancement_tools.rst:192
 msgid ""
 "digiKam The Photograph Restoration is definitely one of the most advanced "
 "tools to reduce photograph artifacts."
@@ -763,7 +763,7 @@ msgstr ""
 "Інструмент «Відновлення фотографій» є, напевне, одним з найдосконаліших "
 "інструментів, призначених для усування артефактів з фотографії."
 
-#: ../../image_editor/enhancement_tools.rst:182
+#: ../../image_editor/enhancement_tools.rst:194
 msgid ""
 "This fantastic restoration filter is a development providing unprecedented "
 "possibilities in the public domain to remove lots of unwanted stuff from "
@@ -782,7 +782,7 @@ msgstr ""
 "вздовж кривих ліній зображення, отже змістовна частина зображення стає дуже "
 "подібною до того, що бажало б бачити людське око."
 
-#: ../../image_editor/enhancement_tools.rst:186
+#: ../../image_editor/enhancement_tools.rst:198
 msgid ""
 "The tool comes with several presets as starting points and to simplify the "
 "restoration. The preset settings available are listed below:"
@@ -791,7 +791,7 @@ msgstr ""
 "використати як початкові для спрощення процесу відновлення. Ви можете "
 "змінювати такі параметри наборів налаштувань:"
 
-#: ../../image_editor/enhancement_tools.rst:188
+#: ../../image_editor/enhancement_tools.rst:200
 msgid ""
 "None: Using most common default filter settings not optimized for any "
 "particular purpose."
@@ -799,13 +799,13 @@ msgstr ""
 "Жодного: використовувати найпоширеніші типові параметри фільтра не "
 "оптимізовані для жодної певної мети."
 
-#: ../../image_editor/enhancement_tools.rst:190
+#: ../../image_editor/enhancement_tools.rst:202
 msgid "Reduce Uniform Noise: Optimum settings for image noise due to sensors."
 msgstr ""
 "Прибрати однорідний шум: оптимальний набір параметрів для усування "
 "сенсорного шуму."
 
-#: ../../image_editor/enhancement_tools.rst:192
+#: ../../image_editor/enhancement_tools.rst:204
 msgid ""
 "Reduce JPEG Artifacts: JPEG's compression is not perfect, in fact for some "
 "types of images it is far from it. As a lossy compression algorithm, there "
@@ -818,7 +818,7 @@ msgstr ""
 "виникають «дефекти», які проявляються на розпакованому зображенні. Цей "
 "фільтр призначено для виправлення подібних проблем."
 
-#: ../../image_editor/enhancement_tools.rst:194
+#: ../../image_editor/enhancement_tools.rst:206
 msgid ""
 "Reduce Texturing: Optimized to remove artifacts from scanning, digitizing or "
 "Moire patterns."
@@ -826,7 +826,7 @@ msgstr ""
 "Прибрати текстуризацію: оптимізовано для вилучення дефектів, які є наслідком "
 "сканування, цифрування або появи муарових візерунків."
 
-#: ../../image_editor/enhancement_tools.rst:196
+#: ../../image_editor/enhancement_tools.rst:208
 msgid ""
 "If you want to set filter parameters for finer adjustments, use Smoothing "
 "Settings and Advanced Settings tabs:"
@@ -834,7 +834,7 @@ msgstr ""
 "Якщо ви бажаєте встановити точніші параметри фільтрів, скористайтеся "
 "вкладками «Параметри згладжування» і «Додаткові параметри»:"
 
-#: ../../image_editor/enhancement_tools.rst:200
+#: ../../image_editor/enhancement_tools.rst:212
 msgid ""
 "Detail Preservation p [0, 100]: this controls the preservation of the "
 "curvatures (features). A low value forces an equal smoothing across the "
@@ -852,7 +852,7 @@ msgstr ""
 "знадобиться. Зауважте, що «Рівень деталізації» є лише допоміжним параметром "
 "до пункту «Анізотропія»."
 
-#: ../../image_editor/enhancement_tools.rst:202
+#: ../../image_editor/enhancement_tools.rst:214
 msgid ""
 "Anisotropy alpha [0, 100]: a low value smooths equally in all directions, "
 "whereas a value close to 1 smooths in one direction only. If you have film "
@@ -866,7 +866,7 @@ msgstr ""
 "цього параметра призведе до утворення хвилеподібних візерунків, а з дефекти "
 "JPEG краще боротися саме за допомогою значень, близьких до 1."
 
-#: ../../image_editor/enhancement_tools.rst:204
+#: ../../image_editor/enhancement_tools.rst:216
 msgid ""
 "Smoothing [0, 500]: this sets the maximum overall smoothing factor (when p "
 "defines the relative smoothing). Set it according to the noise level."
@@ -875,7 +875,7 @@ msgstr ""
 "максимальний загальний коефіцієнт згладжування (якщо p визначає відносне "
 "згладжування). Встановіть його відповідно до рівня шумності."
 
-#: ../../image_editor/enhancement_tools.rst:206
+#: ../../image_editor/enhancement_tools.rst:218
 msgid ""
 "Regularity [0, 100]: this parameter is concerned with the uniformity of the "
 "smoothing. Imagine the smoothing process as a combing of the image. Then the "
@@ -894,7 +894,7 @@ msgstr ""
 "отримати ефекти вихорів у стилі ван Гога, рекомендуємо вам використати "
 "значення більші за 3."
 
-#: ../../image_editor/enhancement_tools.rst:208
+#: ../../image_editor/enhancement_tools.rst:220
 msgid ""
 "Filter Iterations: number of times the blurring algorithm is applied. "
 "Usually 1 or 2 is sufficient."
@@ -902,7 +902,7 @@ msgstr ""
 "Кількість ітерацій: кількість послідовних застосувань розмивання. Зазвичай, "
 "достатньо 1 або 2."
 
-#: ../../image_editor/enhancement_tools.rst:212
+#: ../../image_editor/enhancement_tools.rst:224
 msgid ""
 "Angular Step da [5, 90]: angular integration of the anisotropy alpha. If "
 "alpha is chosen small, da should also be chosen small. But beware, small "
@@ -913,7 +913,7 @@ msgstr ""
 "на увазі: малі кути збільшують час обробки! Оберіть найбільше з прийнятних "
 "значень."
 
-#: ../../image_editor/enhancement_tools.rst:214
+#: ../../image_editor/enhancement_tools.rst:226
 msgid ""
 "Integral Step [0.1, 10]: spatial integration step width in terms of pixels. "
 "Should remain less than 1 (sub-pixel smoothing) and never be higher than 2."
@@ -922,7 +922,7 @@ msgstr ""
 "Варто вказувати значення, що не перевищують 1 (субпіксельне згладжування). "
 "Використовувати значення, вищі за 2, взагалі не варто."
 
-#: ../../image_editor/enhancement_tools.rst:216
+#: ../../image_editor/enhancement_tools.rst:228
 msgid ""
 "Use Linear Interpolation: The gain in quality if you select this option is "
 "only marginal and you lose a factor of 2 in speed. Our recommendation is to "
@@ -932,7 +932,7 @@ msgstr ""
 "цього пункту, буде незначним, але призведе до зменшення швидкості у 2 рази. "
 "Рекомендуємо вам не позначати цей пункт."
 
-#: ../../image_editor/enhancement_tools.rst:218
+#: ../../image_editor/enhancement_tools.rst:230
 msgid ""
 "Save As... and Load... buttons are used to do just that. Any Photograph "
 "Restoration filter settings that you have set can be saved to the filesystem "
@@ -943,7 +943,7 @@ msgstr ""
 "встановили, може бути збережено у текстовому файлі файлової системи, а потім "
 "знову завантажено."
 
-#: ../../image_editor/enhancement_tools.rst:222
+#: ../../image_editor/enhancement_tools.rst:234
 msgid ""
 "Photograph restoration is (comparatively) very fast in what it is doing, but "
 "it can take a long time to run and cause high CPU load. You may always abort "
@@ -954,11 +954,11 @@ msgstr ""
 "будь-коли можете перервати процедуру обчислення натисканням кнопки "
 "«Перервати»."
 
-#: ../../image_editor/enhancement_tools.rst:225
+#: ../../image_editor/enhancement_tools.rst:239
 msgid "Vignetting Correction"
 msgstr "Виправлення віньєтування"
 
-#: ../../image_editor/enhancement_tools.rst:230
+#: ../../image_editor/enhancement_tools.rst:244
 msgid ""
 "digiKam The Vignetting correction is a tool to correct image vignetting "
 "(under-exposure in the corners)."
@@ -966,7 +966,7 @@ msgstr ""
 "Інструмент «Виправлення віньєтування» програми  призначено для виправлення "
 "віньєтування зображення (недостатнього експонування у кутах зображення)."
 
-#: ../../image_editor/enhancement_tools.rst:232
+#: ../../image_editor/enhancement_tools.rst:246
 msgid ""
 "Wide angle lenses, especially those used in medium and large format "
 "photography, frequently do not uniformly illuminate the entire sensor plane. "
@@ -982,7 +982,7 @@ msgstr ""
 "відповідних точках. Об’єктиви приладів відеозапису також мають подібні "
 "дефекти віньєтування."
 
-#: ../../image_editor/enhancement_tools.rst:234
+#: ../../image_editor/enhancement_tools.rst:248
 msgid ""
 "The traditional solution for this is to attach a \"center filter\" to the "
 "lens. This is a neutral density filter with maximum density at the optical "
@@ -1002,7 +1002,7 @@ msgstr ""
 "віньєтування, яке є наслідком руху фотоапарата під час пошуку перспективи "
 "або площини фокусування."
 
-#: ../../image_editor/enhancement_tools.rst:236
+#: ../../image_editor/enhancement_tools.rst:250
 msgid ""
 "But there are disadvantages as well. Many center filters require a 1.5 or 2 "
 "f-stop filter factor adjustment, which may in turn necessitate a shutter "
@@ -1018,7 +1018,7 @@ msgstr ""
 "або навіть менших), який робить неможливим зйомку без штатива. Крім того, "
 "постає проблема розмивання на фотографії об’єктів, що рухаються."
 
-#: ../../image_editor/enhancement_tools.rst:238
+#: ../../image_editor/enhancement_tools.rst:252
 msgid ""
 "With the wide exposure range of present-day film and the color (or grey-"
 "scale) depth of digital camera or film scanners, it is possible to simulate "
@@ -1031,11 +1031,11 @@ msgstr ""
 "еквівалентного перетворення до зображення цифрового негатива, отриманого без "
 "застосування фільтра."
 
-#: ../../image_editor/enhancement_tools.rst:241
+#: ../../image_editor/enhancement_tools.rst:255
 msgid "Using the vignetting correction tool"
 msgstr "Користування інструментом виправлення віньєтування"
 
-#: ../../image_editor/enhancement_tools.rst:245
+#: ../../image_editor/enhancement_tools.rst:259
 msgid ""
 "Five sliders give you control over the vignetting correction filter, and "
 "three more over the target image exposure:"
@@ -1044,7 +1044,7 @@ msgstr ""
 "повзунків та ще трьох повзунків, призначених для керування експозицією "
 "зміненого зображення:"
 
-#: ../../image_editor/enhancement_tools.rst:247
+#: ../../image_editor/enhancement_tools.rst:261
 msgid ""
 "Amount: this option controls the degree of luminosity attenuation by the "
 "filter at its point of maximum amount. The default amount is 2.0, which "
@@ -1059,7 +1059,7 @@ msgstr ""
 "значення потужності, щоб виправити сильніше віньєтування, зменшіть, якщо "
 "віньєтування є незначним."
 
-#: ../../image_editor/enhancement_tools.rst:249
+#: ../../image_editor/enhancement_tools.rst:263
 msgid ""
 "Feather: this option determines the rate at which the filter intensity falls "
 "off from the point of maximum amount toward the edges, expressed as a power "
@@ -1081,7 +1081,7 @@ msgstr ""
 "потужність фільтра у напрямку периметра; якщо вибрати показник рівний 0,5, "
 "потужність спадатиме як функція кореня квадратного з відстані від центра."
 
-#: ../../image_editor/enhancement_tools.rst:251
+#: ../../image_editor/enhancement_tools.rst:265
 msgid ""
 "Radius: this option specifies the radius, as a multiple of the half diagonal "
 "measure of the image, at which the amount of the filter falls off to zero "
@@ -1113,7 +1113,7 @@ msgstr ""
 "використовувати значення радіуса більші за 1, щоб зімітувати центральний "
 "фільтр, що вкриває всю область зйомки."
 
-#: ../../image_editor/enhancement_tools.rst:253
+#: ../../image_editor/enhancement_tools.rst:267
 msgid ""
 "X offset and Y offset settings: these options moves respectively the center "
 "of the filter horizontally or vertically up to the border of the image by "
@@ -1128,7 +1128,7 @@ msgstr ""
 "відступу за X пересуне фільтрування ліворуч, а додатне значення — праворуч. "
 "Від’ємне значення за Y пересуне фільтрування вгору, а додатне — вниз."
 
-#: ../../image_editor/enhancement_tools.rst:255
+#: ../../image_editor/enhancement_tools.rst:269
 msgid ""
 "Add Vignetting: many photographs looks flat because of a distracting "
 "background or another composition matter. While most of time you will want "
@@ -1144,7 +1144,7 @@ msgstr ""
 "поціновувачем фотомистецтва, ви можете скористатися цим пунктом, щоб "
 "затемнити кути фотографії."
 
-#: ../../image_editor/enhancement_tools.rst:257
+#: ../../image_editor/enhancement_tools.rst:271
 msgid ""
 "The only way to be sure which settings of Amount, Feather, and Radius best "
 "compensate for the actual optical characteristics of a given lens is to "
@@ -1176,7 +1176,7 @@ msgstr ""
 "фотоапаратів, отже, потреби у точному компенсуванні віньєтування для "
 "створення зображень, які спостерігач вважатиме рівномірно освітленими, немає."
 
-#: ../../image_editor/enhancement_tools.rst:261
+#: ../../image_editor/enhancement_tools.rst:275
 msgid ""
 "If you want a finer exposure re-adjustment of the target image, use the "
 "Adjust Curve tool from Image Editor available under Color --> Adjust Curve "
@@ -1186,11 +1186,11 @@ msgstr ""
 "скористайтеся інструментом «Виправити криві», доступ до якого можна отримати "
 "за допомогою пункту меню редактора зображень «Колір --> Виправлення кривих»."
 
-#: ../../image_editor/enhancement_tools.rst:264
+#: ../../image_editor/enhancement_tools.rst:278
 msgid "The vignetting correction tool in action"
 msgstr "Робота інструменту виправлення віньєтування"
 
-#: ../../image_editor/enhancement_tools.rst:266
+#: ../../image_editor/enhancement_tools.rst:280
 msgid ""
 "This is an example of an anti vignetting correction applied to an image. The "
 "original image (1) shows vignetting in the corners, the corrected image (2) "
@@ -1204,27 +1204,27 @@ msgstr ""
 "до виправленого зображення також було застосовано корекцію яскравості та "
 "контрастності."
 
-#: ../../image_editor/enhancement_tools.rst:268
+#: ../../image_editor/enhancement_tools.rst:282
 msgid "The values used for this example are:"
 msgstr "Для цього прикладу було використано такі значення:"
 
-#: ../../image_editor/enhancement_tools.rst:270
+#: ../../image_editor/enhancement_tools.rst:284
 msgid "Density = 2.6."
 msgstr "Щільність = 2.6."
 
-#: ../../image_editor/enhancement_tools.rst:272
+#: ../../image_editor/enhancement_tools.rst:286
 msgid "Power = 0.9."
 msgstr "Потужність = 0.9."
 
-#: ../../image_editor/enhancement_tools.rst:274
+#: ../../image_editor/enhancement_tools.rst:288
 msgid "Radius = 1.1."
 msgstr "Радіус = 1.1."
 
-#: ../../image_editor/enhancement_tools.rst:279
+#: ../../image_editor/enhancement_tools.rst:295
 msgid "Remove Red Eyes"
 msgstr "Коригування ефекту «червоних очей»"
 
-#: ../../image_editor/enhancement_tools.rst:281
+#: ../../image_editor/enhancement_tools.rst:297
 msgid ""
 "Red eyes are caused when the camera flashlight is used to take photographs "
 "of people. The red is the reflection from the back of the eye which can be "
@@ -1246,11 +1246,11 @@ msgstr ""
 "обрізання, а потім скористайтеся пунктом меню «Покращення --> Засіб для "
 "вилучення ефекту \"червоних очей\"»."
 
-#: ../../image_editor/enhancement_tools.rst:283
+#: ../../image_editor/enhancement_tools.rst:299
 msgid "How it works"
 msgstr "Як це працює"
 
-#: ../../image_editor/enhancement_tools.rst:285
+#: ../../image_editor/enhancement_tools.rst:301
 msgid ""
 "Set the preview mode to your liking. Adjust region of image to the eyes of "
 "face to fix."
@@ -1258,7 +1258,7 @@ msgstr ""
 "Встановлення бажаних налаштувань у режимі перегляду. Для виправлення "
 "скоригуйте область зображення до очей на обличчі."
 
-#: ../../image_editor/enhancement_tools.rst:287
+#: ../../image_editor/enhancement_tools.rst:303
 msgid ""
 "A neural network engine parse the image contents to localize automatically "
 "eyes and the red pupils."
@@ -1266,7 +1266,7 @@ msgstr ""
 "Нейронна мережа обробляє дані зображення для автоматичної локалізації очей "
 "та червоних зіниць."
 
-#: ../../image_editor/enhancement_tools.rst:289
+#: ../../image_editor/enhancement_tools.rst:305
 msgid ""
 "The **Red Level** setting adjusts the amount of red eyes removal, in "
 "aggressive mode or not."
@@ -1274,11 +1274,11 @@ msgstr ""
 "Параметр **Рівень червоного** визначає потужність вилучення ефекту «червоних "
 "очей», тобто, буде вилучення агресивним чи ні."
 
-#: ../../image_editor/enhancement_tools.rst:294
+#: ../../image_editor/enhancement_tools.rst:312
 msgid "Image Sharpening"
 msgstr "Збільшення різкості зображення"
 
-#: ../../image_editor/enhancement_tools.rst:299
+#: ../../image_editor/enhancement_tools.rst:317
 msgid ""
 "digiKam provides three different tools for sharpening, with each having "
 "merits in a different area."
@@ -1286,7 +1286,7 @@ msgstr ""
 "У digiKam передбачено три різних інструменти для збільшення різкості, кожен "
 "з яких має певні переваги у власній області застосування."
 
-#: ../../image_editor/enhancement_tools.rst:301
+#: ../../image_editor/enhancement_tools.rst:319
 msgid ""
 "**Sharpen** is a traditional sharpening tool, which is very fast and easy, "
 "but may quickly produce grainy images, in particular in dark areas."
@@ -1295,7 +1295,7 @@ msgstr ""
 "швидким і простим у користуванні, але може створити зернистість на "
 "зображенні, особливо у темних частинах зображення."
 
-#: ../../image_editor/enhancement_tools.rst:303
+#: ../../image_editor/enhancement_tools.rst:321
 msgid ""
 "**Unsharp Mask** works on the edge contrast to make an image appear sharper, "
 "but it actually does not sharpen at all, it works rather psychovisually. It "
@@ -1311,7 +1311,7 @@ msgstr ""
 "програми Gimp, авторські права на нього належать Вінстону Чену (Winston "
 "Chang)."
 
-#: ../../image_editor/enhancement_tools.rst:305
+#: ../../image_editor/enhancement_tools.rst:323
 msgid ""
 "**Refocus** is probably the best of the three because it actually improves "
 "sharpness. It is a bit more involved in its application as is has several "
@@ -1322,7 +1322,7 @@ msgstr ""
 "застосуванні, оскільки у ньому передбачено декілька параметрів, які ви "
 "можете змінювати."
 
-#: ../../image_editor/enhancement_tools.rst:307
+#: ../../image_editor/enhancement_tools.rst:325
 msgid ""
 "Out-of-focus photographs, as well as most digitized images, need correction "
 "of sharpness. This is due to the digitizing process that must chop up a "
@@ -1343,7 +1343,7 @@ msgstr ""
 "навіть частіше за зображення, зняті звичайними фотоапаратами масового "
 "споживання."
 
-#: ../../image_editor/enhancement_tools.rst:309
+#: ../../image_editor/enhancement_tools.rst:327
 msgid ""
 "Whereas JPEG images have some camera-internal sharpening applied, RAW format "
 "images always need sharpening in their workflow."
@@ -1352,7 +1352,7 @@ msgstr ""
 "збільшення різкості, різкість зображень цифрових негативів завжди слід "
 "збільшувати під час обробки."
 
-#: ../../image_editor/enhancement_tools.rst:311
+#: ../../image_editor/enhancement_tools.rst:329
 msgid ""
 "Some scanners apply a sharpen filter while scanning. It's worth to disable "
 "it so that you keep control over your image."
@@ -1361,11 +1361,11 @@ msgstr ""
 "Варто вимкнути цей фільтр, щоб мати змогу встановити потрібну різкість "
 "власноруч."
 
-#: ../../image_editor/enhancement_tools.rst:314
+#: ../../image_editor/enhancement_tools.rst:332
 msgid "Adjusting Sharpness"
 msgstr "Коригування різкості"
 
-#: ../../image_editor/enhancement_tools.rst:316
+#: ../../image_editor/enhancement_tools.rst:334
 msgid ""
 "If the camera focus is not set perfectly or if the camera is moving when the "
 "image is taken the result is a blurred photograph. If there is a lot of "
@@ -1386,7 +1386,7 @@ msgstr ""
 "пістрявим). Якщо подібна недостатня обробка спричинила незначне розмивання, "
 "його легко можна усунути за допомогою інструментів програми."
 
-#: ../../image_editor/enhancement_tools.rst:318
+#: ../../image_editor/enhancement_tools.rst:336
 msgid ""
 "In some situations, you may be able to get useful results by sharpening an "
 "photograph using the Sharpen tool by the Enhance --> Sharpen menu entry."
@@ -1395,7 +1395,7 @@ msgstr ""
 "допомогою інструменту збільшення різкості, який можна викликати «Покращення "
 "--> Збільшити різкість»."
 
-#: ../../image_editor/enhancement_tools.rst:322
+#: ../../image_editor/enhancement_tools.rst:340
 msgid ""
 "You should be careful with this though, or the results will not look very "
 "natural: sharpening increases the apparent sharpness of edges in the "
@@ -1413,11 +1413,11 @@ msgstr ""
 "Докладніший опис та порівняння з іншими методиками викладено у розділі "
 "«Зміна фокуса»."
 
-#: ../../image_editor/enhancement_tools.rst:325
+#: ../../image_editor/enhancement_tools.rst:343
 msgid "Reducing Graininess In a Photograph"
 msgstr "Зменшення зернистості на фотографії"
 
-#: ../../image_editor/enhancement_tools.rst:327
+#: ../../image_editor/enhancement_tools.rst:345
 msgid ""
 "When you take a photograph in low-light conditions or with a very fast "
 "exposure time, the camera does not get enough data to make good estimates of "
@@ -1436,11 +1436,11 @@ msgstr ""
 "до якого можна отримати за допомогою пункту меню «Покращення --> Вилучення "
 "шумів»."
 
-#: ../../image_editor/enhancement_tools.rst:330
+#: ../../image_editor/enhancement_tools.rst:348
 msgid "Softening a Photograph"
 msgstr "Пом’якшення переходів між кольорами на фотографії"
 
-#: ../../image_editor/enhancement_tools.rst:332
+#: ../../image_editor/enhancement_tools.rst:350
 msgid ""
 "Sometimes you have the opposite problem: an image is too crisp. The solution "
 "is to blur it a bit: fortunately blurring an image is much easier than "
@@ -1456,11 +1456,11 @@ msgstr ""
 "побачите результат застосування до вашої фотографії розмивання з вказаними "
 "вами параметрами."
 
-#: ../../image_editor/enhancement_tools.rst:335
+#: ../../image_editor/enhancement_tools.rst:353
 msgid "The Unsharp Masking Filter"
 msgstr "Фільтр маски зменшення різкості"
 
-#: ../../image_editor/enhancement_tools.rst:339
+#: ../../image_editor/enhancement_tools.rst:357
 msgid ""
 "The Unsharp Mask filter is an excellent tool to remove haze from your "
 "photographs, see this url for a demonstration."
@@ -1468,8 +1468,8 @@ msgstr ""
 "Фільтр маски зменшення різкості є чудовим інструментом для вилучення димки з "
 "ваших фотографій, зразок застосування можна знайти за цією адресою."
 
-#: ../../image_editor/enhancement_tools.rst:343
-#: ../../image_editor/enhancement_tools.rst:364
+#: ../../image_editor/enhancement_tools.rst:361
+#: ../../image_editor/enhancement_tools.rst:382
 msgid ""
 "The image panel and the original preview help you to pan within the image. "
 "The preview window shows the filter output using the current settings."
@@ -1478,7 +1478,7 @@ msgstr ""
 "зображенням. За допомогою вікна попереднього перегляду ви зможете "
 "спостерігати за наслідками застосування фільтра з поточними параметрами."
 
-#: ../../image_editor/enhancement_tools.rst:345
+#: ../../image_editor/enhancement_tools.rst:363
 msgid ""
 "There are two important parameters, Radius and Amount. The default values "
 "often work pretty well, so you should try them first. Increasing either the "
@@ -1494,7 +1494,7 @@ msgstr ""
 "переходами кольорів з’являться видимі викривлення зображення, зокрема "
 "кольорові рубці."
 
-#: ../../image_editor/enhancement_tools.rst:347
+#: ../../image_editor/enhancement_tools.rst:365
 msgid ""
 "The Radius allows you to set how many pixels on either side of an edge that "
 "will be affected by sharpening. High resolution images allow higher radius. "
@@ -1506,7 +1506,7 @@ msgstr ""
 "Збільшення різкості завжди краще виконувати для зображення з остаточним "
 "значенням роздільної здатності."
 
-#: ../../image_editor/enhancement_tools.rst:349
+#: ../../image_editor/enhancement_tools.rst:367
 msgid ""
 "The Amount control is the percentage of the difference between the original "
 "and the blur image that is added back into the original. It allows you to "
@@ -1517,7 +1517,7 @@ msgstr ""
 "цю відмінність буде додано до початкового зображення. Таким чином ви можете "
 "встановити силу ефекту збільшення різкості."
 
-#: ../../image_editor/enhancement_tools.rst:351
+#: ../../image_editor/enhancement_tools.rst:369
 msgid ""
 "The Threshold control is a fraction of the maximum RGB value, needed to "
 "apply the difference amount. It allows you to set the minimum difference in "
@@ -1533,11 +1533,11 @@ msgstr ""
 "області плавного переходу тонів від збільшення різкості та уникнути "
 "створення плям на обличчях, небі або поверхні води."
 
-#: ../../image_editor/enhancement_tools.rst:354
+#: ../../image_editor/enhancement_tools.rst:372
 msgid "Refocus a Photograph"
 msgstr "Зміна фокуса на фотографії"
 
-#: ../../image_editor/enhancement_tools.rst:356
+#: ../../image_editor/enhancement_tools.rst:374
 msgid ""
 "digiKam The Refocus is a tool to refocus an image by enhancing the "
 "sharpness. It uses the Deconvolution Filter algorithm copyrighted by Ernst "
@@ -1547,7 +1547,7 @@ msgstr ""
 "зображення покращенням його різкості. Цей інструмент використовує алгоритм "
 "«Фільтра розгортання», автором якого є Ернст Ліппе (Ernst Lippe)."
 
-#: ../../image_editor/enhancement_tools.rst:358
+#: ../../image_editor/enhancement_tools.rst:376
 msgid ""
 "This tool attempts to \"refocus\" an image by undoing the defocussing. This "
 "is better than just trying to sharpen a photograph. It is employing a "
@@ -1566,7 +1566,7 @@ msgstr ""
 "інструментом можна за допомогою пункту меню редактора зображення «Покращення "
 "--> Різкість --> Зміна фокуса»."
 
-#: ../../image_editor/enhancement_tools.rst:360
+#: ../../image_editor/enhancement_tools.rst:378
 msgid ""
 "The Refocus technique works differently from Unsharp Mask and is also unlike "
 "the Sharpen Filter which both increase the contrast of the edges of an "
@@ -1595,7 +1595,7 @@ msgstr ""
 "шуму і зернистості, який часто стає видимим у процесі збільшення різкості за "
 "допомогою будь-якого з фільтрів збільшення різкості."
 
-#: ../../image_editor/enhancement_tools.rst:366
+#: ../../image_editor/enhancement_tools.rst:384
 msgid ""
 "In most cases (blurring by camera) a circular convolution caused the image "
 "degradation, but there are two convolutions available:"
@@ -1603,7 +1603,7 @@ msgstr ""
 "Здебільшого (розмивання об’єктивом фотоапарата) погіршення зображення "
 "спричиняється кільцевою згорткою, але існує два різновиди згортки:"
 
-#: ../../image_editor/enhancement_tools.rst:368
+#: ../../image_editor/enhancement_tools.rst:386
 msgid ""
 "The circular convolution: this one spreads each source point uniformly "
 "across a small disk with a fixed radius. Technically this describes the "
@@ -1614,7 +1614,7 @@ msgstr ""
 "так описуються ефекти використання (ідеального) об’єктива з неправильним "
 "фокусуванням."
 
-#: ../../image_editor/enhancement_tools.rst:370
+#: ../../image_editor/enhancement_tools.rst:388
 msgid ""
 "The Gaussian convolution: this one is mathematically similar to the normal "
 "distribution, with its bell-shaped curve. Originates rather from unnatural "
@@ -1628,7 +1628,7 @@ msgstr ""
 "розмивання). З теоретичної точки зору, Гаусова згортка є наслідком "
 "застосування великої кількості незалежних випадкових згорток."
 
-#: ../../image_editor/enhancement_tools.rst:372
+#: ../../image_editor/enhancement_tools.rst:390
 msgid ""
 "The refocus tool supports both the Circular and the Gaussian convolution "
 "plus mixtures of both."
@@ -1636,7 +1636,7 @@ msgstr ""
 "У інструменті зміни фокусування підтримуються обидва типи (кільцева та "
 "гаусова) згорток, а також суміші цих двох типів."
 
-#: ../../image_editor/enhancement_tools.rst:374
+#: ../../image_editor/enhancement_tools.rst:392
 msgid ""
 "In practice, in most cases the Circular convolution works much better than "
 "the Gaussian convolution. The Gaussian convolution has a very long tail, so "
@@ -1654,7 +1654,7 @@ msgstr ""
 "Вінера Гаусової згортки, здебільшого мають саме віддалені точки, отже "
 "використання відповідного фільтра призводить до небажаних результатів."
 
-#: ../../image_editor/enhancement_tools.rst:376
+#: ../../image_editor/enhancement_tools.rst:394
 msgid ""
 "To set correctly the deconvolution filter, the plug-in has the following "
 "parameters:"
@@ -1662,7 +1662,7 @@ msgstr ""
 "Для правильного налаштування фільтра розгортання у додатку передбачено такі "
 "параметри:"
 
-#: ../../image_editor/enhancement_tools.rst:378
+#: ../../image_editor/enhancement_tools.rst:396
 msgid ""
 "Circular Sharpness: This is the radius of the Circular convolution filter. "
 "It is the most important parameter for using the plug-in. With most images "
@@ -1675,7 +1675,7 @@ msgstr ""
 "використовувати для зображень з сильним розмиванням, але остерігайтесь "
 "створення німбів."
 
-#: ../../image_editor/enhancement_tools.rst:380
+#: ../../image_editor/enhancement_tools.rst:398
 msgid ""
 "Correlation: Increasing the Correlation may help reducing artifacts. The "
 "correlation can range from 0-1. Useful values are 0.5 and values close to 1, "
@@ -1687,7 +1687,7 @@ msgstr ""
 "близько до 0.5 і значень близьких до 1, наприклад, 0.95 і 0.99. Використання "
 "вищих значень кореляції зменшить ефект збільшення різкості додатка."
 
-#: ../../image_editor/enhancement_tools.rst:382
+#: ../../image_editor/enhancement_tools.rst:400
 msgid ""
 "Noise filter: Increasing the Noise filter parameter helps reducing "
 "artifacts. The Noise can range from 0-1 but values higher than 0.1 are "
@@ -1702,7 +1702,7 @@ msgstr ""
 "початку, ви можете скористатися значенням рівним 0,03. Якщо ви скористаєтеся "
 "більшим значенням, зросте рівень розмивання зображення."
 
-#: ../../image_editor/enhancement_tools.rst:384
+#: ../../image_editor/enhancement_tools.rst:402
 msgid ""
 "Gaussian Sharpness: This is the radius for the Gaussian convolution filter. "
 "Use this parameter when your blurring is Gaussian (mostly due to previous "
@@ -1717,7 +1717,7 @@ msgstr ""
 "дефектів зображення. Якщо ви використовуєте ненульові значення, вам, "
 "ймовірно, слід збільшити також і параметри «Кореляція» і/або «Фільтр шуму»."
 
-#: ../../image_editor/enhancement_tools.rst:386
+#: ../../image_editor/enhancement_tools.rst:404
 msgid ""
 "Matrix size: This parameter determines the size of the transformation "
 "matrix. Increasing the Matrix Size may give better results, especially when "
@@ -1732,7 +1732,7 @@ msgstr ""
 "параметра велике значення. Здебільшого вам слід використовувати значення у "
 "діапазоні 3-10."
 
-#: ../../image_editor/enhancement_tools.rst:388
+#: ../../image_editor/enhancement_tools.rst:406
 msgid ""
 "Save As... and Load...: these buttons are used to do just that. Any Refocus "
 "parameters that you have set can be saved to the filesystem and loaded later."
@@ -1741,13 +1741,13 @@ msgstr ""
 "відповідних дій. Будь-які параметри зміни фокусування, які ви встановили, "
 "може бути збережено у файловій системі, а потім знову завантажено."
 
-#: ../../image_editor/enhancement_tools.rst:392
+#: ../../image_editor/enhancement_tools.rst:410
 msgid "Below, you can see few hints to help you work with the refocus plug-in:"
 msgstr ""
 "Нижче наведено декілька порад, які допоможуть вам якнайкраще використати "
 "додаток зміни фокусування:"
 
-#: ../../image_editor/enhancement_tools.rst:394
+#: ../../image_editor/enhancement_tools.rst:412
 msgid ""
 "Preferably perform all cropping, color and intensity curve corrections on "
 "the image before using this plug-in."
@@ -1755,7 +1755,7 @@ msgstr ""
 "Бажано виконати обрізання і виправлення кольорів та кривої інтенсивності "
 "зображення до використання додатка."
 
-#: ../../image_editor/enhancement_tools.rst:396
+#: ../../image_editor/enhancement_tools.rst:414
 msgid ""
 "Otherwise use this plug-in before performing any other operations on the "
 "image. The reason is that many operations on the image will leave boundaries "
@@ -1767,7 +1767,7 @@ msgstr ""
 "спричинитися до появи помітних дефектів зображення після застосування "
 "додатка."
 
-#: ../../image_editor/enhancement_tools.rst:398
+#: ../../image_editor/enhancement_tools.rst:416
 msgid ""
 "When you are scanning images and compress them, e.g. to JPEG, you should use "
 "the plug-in on the uncompressed image."
@@ -1776,22 +1776,22 @@ msgstr ""
 "у форматі JPEG, вам слід скористатися цим додатком для розпакування "
 "зображення."
 
-#: ../../image_editor/enhancement_tools.rst:401
+#: ../../image_editor/enhancement_tools.rst:419
 msgid "Refocus comparison with other techniques"
 msgstr "Порівняння методики зміни фокусування з іншими методиками"
 
-#: ../../image_editor/enhancement_tools.rst:403
+#: ../../image_editor/enhancement_tools.rst:421
 msgid ""
 "Comparison to two other techniques frequently used to enhance images are:"
 msgstr ""
 "Порівняємо з двома іншими методиками, які часто використовуються для "
 "покращення зображення, а саме:"
 
-#: ../../image_editor/enhancement_tools.rst:405
+#: ../../image_editor/enhancement_tools.rst:423
 msgid "Sharpen Filter Unsharp Mask"
 msgstr "Різкість (маска зменшення різкості"
 
-#: ../../image_editor/enhancement_tools.rst:408
+#: ../../image_editor/enhancement_tools.rst:426
 msgid ""
 "Sharpening applies a small convolution matrix that increases the difference "
 "between a source pixel and its immediate neighbors. FIR Wiener filtering is "
@@ -1814,7 +1814,7 @@ msgstr ""
 "значно зменшити вибором більших значень параметрів «Кореляція» та «Фільтру "
 "шуму»."
 
-#: ../../image_editor/enhancement_tools.rst:410
+#: ../../image_editor/enhancement_tools.rst:428
 msgid ""
 "Unsharp masking is another very popular image enhancement technique. From a "
 "mathematical point of view its justification is a bit obscure but many "
@@ -1835,7 +1835,7 @@ msgstr ""
 "збільшення різкості. Цей інструмент не усуває ефекти, що виникають внаслідок "
 "інтерференції у діафрагмі, як ще робить інструмент зміни фокусування."
 
-#: ../../image_editor/enhancement_tools.rst:412
+#: ../../image_editor/enhancement_tools.rst:430
 msgid ""
 "In general, unsharp masking produces better results than sharpening. This is "
 "probably caused by the fact that unsharp masking uses a larger neighborhood "
@@ -1846,7 +1846,7 @@ msgstr ""
 "маски зменшення різкості буде використано більшу сусідню область, ніж за "
 "збільшення різкості."
 
-#: ../../image_editor/enhancement_tools.rst:414
+#: ../../image_editor/enhancement_tools.rst:432
 msgid ""
 "From a theoretical point of view unsharp masking must always introduce "
 "artifacts. Even under optimal circumstances it can never completely undo the "
@@ -1865,7 +1865,7 @@ msgstr ""
 "фільтрування Вінера за допомогою фільтра зі скінченною імпульсною "
 "характеристикою дає кращі результати у відновленні невеличких деталей."
 
-#: ../../image_editor/enhancement_tools.rst:416
+#: ../../image_editor/enhancement_tools.rst:434
 msgid ""
 "Below, you can see a comparison of different filter apply on a small "
 "unfocused image:"
@@ -1873,15 +1873,15 @@ msgstr ""
 "Нижче наведено порівняння застосування різних фільтрів до невеличкого "
 "розфокусованого зображення:"
 
-#: ../../image_editor/enhancement_tools.rst:419
+#: ../../image_editor/enhancement_tools.rst:437
 msgid "Preview"
 msgstr "Перегляд"
 
-#: ../../image_editor/enhancement_tools.rst:419
+#: ../../image_editor/enhancement_tools.rst:437
 msgid "Type"
 msgstr "Тип"
 
-#: ../../image_editor/enhancement_tools.rst:421
+#: ../../image_editor/enhancement_tools.rst:439
 msgid ""
 "Original blurred color image to fix. This image have been taken with an "
 "analog still camera. The unfocusing result of an insufficient light for the "
@@ -1891,13 +1891,13 @@ msgstr ""
 "аналогового фотоапарата. Втрату фокусування спричинено недостатнім "
 "освітленням для автофокусування об’єктива."
 
-#: ../../image_editor/enhancement_tools.rst:422
+#: ../../image_editor/enhancement_tools.rst:440
 msgid "Fixed image using simple sharpening filter. Sharpness setting is 80."
 msgstr ""
 "Знімок, виправлений за допомогою простого фільтра збільшення різкості. "
 "Встановлено значення різкості рівне 80."
 
-#: ../../image_editor/enhancement_tools.rst:423
+#: ../../image_editor/enhancement_tools.rst:441
 msgid ""
 "Fixed image using unsharp mask filter. Settings are Radius=50, Amount = 5, "
 "and Threshold=0."
@@ -1905,7 +1905,7 @@ msgstr ""
 "Зображення, виправлене за допомогою фільтра маски зменшення різкості. "
 "Використано такі параметри: Радіус=50, Величина=5 і Поріг=0."
 
-#: ../../image_editor/enhancement_tools.rst:424
+#: ../../image_editor/enhancement_tools.rst:442
 msgid ""
 "Fixed image using Refocus filter. Settings are Circular Sharpness=1.3, "
 "Correlation=0.5, Noise Filter=0.020, Gaussian Sharpness=0 and Matrix Size=5."
@@ -1914,7 +1914,7 @@ msgstr ""
 "параметри: Кругова різкість=1,3, Кореляція=0,5, Фільтр шуму=0,020, Гаусова "
 "різкість=0 і Розмір матриці=5."
 
-#: ../../image_editor/enhancement_tools.rst:429
+#: ../../image_editor/enhancement_tools.rst:447
 msgid ""
 "For more information about correction of sharpness methods used in digital "
 "imagery, you can find a technical comparison at this url."

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:40+0000\n"
-"PO-Revision-Date: 2023-01-10 22:38+0200\n"
+"POT-Creation-Date: 2023-01-11 00:50+0000\n"
+"PO-Revision-Date: 2023-01-11 09:19+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -23,12 +23,16 @@ msgid "Color Management in digiKam Image Editor"
 msgstr "Керування кольорами у редакторі digiKam"
 
 #: ../../image_editor/color_management.rst:1
+#| msgid ""
+#| "digiKam, documentation, user manual, photo management, open source, free, "
+#| "learn, easy"
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
-"learn, easy"
+"learn, easy, image editor, color management, icc, profile"
 msgstr ""
 "digiKam, документація, підручник користувача, керування фотографій, "
-"відкритий код, вільний, навчання, простий"
+"відкритий код, вільний, навчання, простий, редактор зображень, керування"
+" кольорами, icc, профіль"
 
 #: ../../image_editor/color_management.rst:14
 msgid "Color Management"
@@ -2828,6 +2832,18 @@ msgid ""
 "RGB values for each pixel in the image. Given the same raw file, different "
 "raw processors will output different RGB values."
 msgstr ""
+"Основною метою застосування інтерполяції на основі алгоритмів усування "
+"мозаїчності, подібних до використаного у libraw типового алгоритму AHD, є "
+"визначення кольору та інтенсивності світла, які спостерігаються у вказаній "
+"точці, шляхом інтерполяції даних, зібраних з окремого датчика та сусідніх з "
+"ним датчиків (див. статтю у Вікіпедії). Будь-яка програма з обробки цифрових "
+"негативів робить додаткові припущення, наприклад, щодо того, як відрізнити "
+"сигнал від фонового шуму, де розташовано точку повної насиченості датчика "
+"тощо. Результатом застосування всіх алгоритмів та припущень, використаних "
+"під час розробки програмного забезпечення з обробки цифрових негативів, буде "
+"трійка значень RGB для кожного з пікселів зображення. Таким чином, у "
+"результаті обробки одного файла цифрового негатива різними інструментами "
+"обробки буде отримано різні значення RGB."
 
 #: ../../image_editor/color_management.rst:434
 msgid "Where do I find a generic profile for my camera?"
@@ -3086,19 +3102,18 @@ msgid ""
 "negative values indicate blue and positive values indicate yellow)\" (cited "
 "from Wikipedia article)."
 msgstr ""
-"CIE-XYZ не є єдиним PCS Іншим поширеним PCS є CIE-Lab, який було "
-"математично виведено з простору CIE-XYZ Метою створення CIE-Lab було "
-"досягнення «відчуттєвої однорідності», тобто реалізації формули «однакові "
-"зміни у значенні кольору мають призводити до таких самих однакових змін у "
-"візуальному сприйнятті» (цитата зі статті у Вікіпедії). Вікіпедія"
-" повідомляє: «Три координати "
-"простору CIELAB відповідають освітленості (lightness) кольору (L* = 0 дає "
-"чорний колір, а L* = 100 відповідає розсіяному білому; дзеркально білий може "
-"мати вищі значення), розташуванню кольору між червоним/малиновим і зеленим "
-"(a*, від’ємні значення відповідають зеленішим кольорам, а додатні — "
-"червонішим) і розташуванню кольору між жовтим і синім (b*, від’ємні значення "
-"відповідають синішим кольорам, а додатні — жовтішим)» (цитата зі статті у"
-" Вікіпедії)."
+"CIE-XYZ не є єдиним PCS Іншим поширеним PCS є CIE-Lab, який було математично "
+"виведено з простору CIE-XYZ Метою створення CIE-Lab було досягнення "
+"«відчуттєвої однорідності», тобто реалізації формули «однакові зміни у "
+"значенні кольору мають призводити до таких самих однакових змін у "
+"візуальному сприйнятті» (цитата зі статті у Вікіпедії). Вікіпедія "
+"повідомляє: «Три координати простору CIELAB відповідають освітленості "
+"(lightness) кольору (L* = 0 дає чорний колір, а L* = 100 відповідає "
+"розсіяному білому; дзеркально білий може мати вищі значення), розташуванню "
+"кольору між червоним/малиновим і зеленим (a*, від’ємні значення відповідають "
+"зеленішим кольорам, а додатні — червонішим) і розташуванню кольору між "
+"жовтим і синім (b*, від’ємні значення відповідають синішим кольорам, а "
+"додатні — жовтішим)» (цитата зі статті у Вікіпедії)."
 
 #: ../../image_editor/color_management.rst:481
 msgid ""
@@ -3111,15 +3126,15 @@ msgid ""
 "Adobe's proprietary color conversion engine."
 msgstr ""
 
-#: ../../image_editor/color_management.rst:484
+#: ../../image_editor/color_management.rst:486
 msgid "Printer Profiles with Rendering Intents and Soft-Proofing"
 msgstr "Профілі принтерів, відтворення кольорів і проба кольорів"
 
-#: ../../image_editor/color_management.rst:487
+#: ../../image_editor/color_management.rst:489
 msgid "Where do I get a printer profile?"
 msgstr "Де можна дістати профіль принтера?"
 
-#: ../../image_editor/color_management.rst:489
+#: ../../image_editor/color_management.rst:491
 msgid ""
 "Whew! We've come a long way - almost ready to print that image! Where do I "
 "get a printer profile? Well, you already know the answer. You can use the "
@@ -3138,12 +3153,29 @@ msgid ""
 "resoundingly positive endorsement of using Argyll for making your printer "
 "profile."
 msgstr ""
+"Хух! Ми пройшли довгою дорогою і майже готові до друку зображення! Де ж "
+"взяти профіль принтера? Гаразд, певно ви вже знаєте відповідь. Ви можете "
+"скористатися загальним профілем, що постачається разом з вашим принтером. Ви "
+"можете придбати профіль, створений професійно. Якщо ви надішлете прохання, "
+"комерційні виробники надішлють вам свій профіль принтера (який може не "
+"працювати для вашого принтера!). Ви можете створити власний профіль принтера "
+"за допомогою програми Argyll. У такому випадку ваш профіль буде прив’язано "
+"до вашого типу паперу, чорнила і навіть характеристик зображення (якщо ви "
+"друкуєте серію зображень з палітрою кольорів, обмеженою м’якими коричневими "
+"тонами, вам не потрібен профіль принтера, який надає простір для насиченого "
+"блакитного і синього кольорів). Автор не може запропонувати вам ніяких порад "
+"і посилань на докладніші відомості з цього питання, оскільки сам лише почав "
+"вивчення друку зображень (раніше він лише переглядав та ділився з друзями "
+"зображеннями для показу на моніторі). Але за  цією адресою ви зможете знайти"
+" чудову презентацію, у якій описано переваги створення "
+"вашого власного профілю принтера та наведено вражаючий вступ до "
+"використання  Argyll для створення профілю вашого принтера."
 
-#: ../../image_editor/color_management.rst:492
+#: ../../image_editor/color_management.rst:494
 msgid "What about rendering intents?"
 msgstr "А як щодо відтворення кольорів?"
 
-#: ../../image_editor/color_management.rst:494
+#: ../../image_editor/color_management.rst:496
 msgid ""
 "\"Rendering intent\" refers to the way color gamuts are handled when the "
 "intended target color space (for example, the monitor or the printer) cannot "
@@ -3155,7 +3187,7 @@ msgstr ""
 "принтера) не може вмістити повністю палітру простору кольорів джерела "
 "(наприклад, робочого простору)."
 
-#: ../../image_editor/color_management.rst:496
+#: ../../image_editor/color_management.rst:498
 msgid ""
 "There are four commonly-used rendering intents: perceptual, relative "
 "colorimetric, absolute colorimetric, and saturation. I have searched the "
@@ -3164,8 +3196,15 @@ msgid ""
 "found that article. See this page. Briefly quoting from the Cambridge in "
 "Color article on color space conversion:"
 msgstr ""
+"Існує чотири поширених способів відтворення кольорів: відчуттєвий "
+"(перцептуальний), відносний колориметричний, абсолютний колориметричний та "
+"за насиченістю Автор виконав пошук найкращого опису щодо відтворення "
+"кольорів та компромісів, пов’язаних з вибором способу відтворення кольорів "
+"Здається, йому вдалося знайти таку статтю. Див. цю сторінку. Наведемо"
+" короткий реферат зі статті з сайта Cambridge in Color щодо "
+"перетворення просторів кольорів:"
 
-#: ../../image_editor/color_management.rst:498
+#: ../../image_editor/color_management.rst:500
 msgid ""
 "Perceptual and relative colorimetric rendering are probably the most useful "
 "conversion types for digital photography. Each places a different priority "
@@ -3176,7 +3215,7 @@ msgstr ""
 "фотографії. Кожне з них використовує різні пріоритети щодо представлення "
 "кольорів у області розбіжності палітри."
 
-#: ../../image_editor/color_management.rst:500
+#: ../../image_editor/color_management.rst:502
 msgid ""
 "Relative colorimetric maintains a near exact relationship between in gamut "
 "colors, even if this clips out of gamut colors."
@@ -3184,7 +3223,7 @@ msgstr ""
 "Відносне колориметричне майже точно зберігає співвідношення між кольорами з "
 "палітри, навіть якщо це призводить до обрізання кольорів палітри."
 
-#: ../../image_editor/color_management.rst:502
+#: ../../image_editor/color_management.rst:504
 msgid ""
 "In contrast, perceptual rendering tries to also preserve some relationship "
 "between out of gamut colors, even if this results in inaccuracies for in "
@@ -3194,7 +3233,7 @@ msgstr ""
 "намагається зберегти певний зв’язок між кольорами поза палітрою, навіть якщо "
 "це спричиняє неточності у кольорах, що містяться у палітрі..."
 
-#: ../../image_editor/color_management.rst:504
+#: ../../image_editor/color_management.rst:506
 msgid ""
 "Absolute is similar to relative colorimetric in that it preserves in gamut "
 "colors and clips those out of gamut, but they differ in how each handles the "
@@ -3211,13 +3250,13 @@ msgstr ""
 "абсолютного колориметричного відтворення кольори зберігаються точно "
 "(безвідносно до зміни розташування точки білого)..."
 
-#: ../../image_editor/color_management.rst:506
+#: ../../image_editor/color_management.rst:508
 msgid "Saturation rendering intent tries to preserve saturated colors."
 msgstr ""
 "За використання відтворення насиченості кольорів буде зроблено спробу "
 "зберегти насичені кольори."
 
-#: ../../image_editor/color_management.rst:508
+#: ../../image_editor/color_management.rst:510
 msgid ""
 "I would quote the entire article (it's that good), but that would involve "
 "\"unfair usage\" I am sure. So go check out the article for yourself. The "
@@ -3231,30 +3270,35 @@ msgstr ""
 "яким чином працюють різні відтворення кольорів і які компроміси пов’язано з "
 "вибором кожного зі способів відтворення кольорів."
 
-#: ../../image_editor/color_management.rst:510
+#: ../../image_editor/color_management.rst:512
 msgid ""
 "For another excellent source of information on rendering intents with "
 "accompanying illustrations, see this page."
 msgstr ""
+"Ще одне чудове джерело відомостей про відтворення кольорів разом з "
+"ілюстраціями можна знайти за цією адресою."
 
-#: ../../image_editor/color_management.rst:513
+#: ../../image_editor/color_management.rst:515
 msgid ""
 "What rendering intent should I use for displaying images on my monitor?"
 msgstr ""
 "Яке відтворення кольорів мені слід вибрати для перегляду зображень на "
 "моніторі мого комп’ютера?"
 
-#: ../../image_editor/color_management.rst:515
+#: ../../image_editor/color_management.rst:517
 msgid ""
 "The usual choice is relative colorimetric. I would suggest that you not use "
 "absolute colorimetric unless you want very strange results."
 msgstr ""
+"Типовим вибором є відносне колориметричне. Не раджу вам використовувати "
+"абсолютне колориметричне, якщо, звичайно, вам не "
+"потрібні дуже дивні результати."
 
-#: ../../image_editor/color_management.rst:518
+#: ../../image_editor/color_management.rst:520
 msgid "What is soft-proofing?"
 msgstr "Що таке проба кольорів?"
 
-#: ../../image_editor/color_management.rst:520
+#: ../../image_editor/color_management.rst:522
 msgid ""
 "Soft-proofing will show you the differences to be expected between what you "
 "see on your screen and what you will see when you make a print. To soft-"
@@ -3266,7 +3310,7 @@ msgid ""
 "to look. What rendering intent should I use when I soft-proof?"
 msgstr ""
 
-#: ../../image_editor/color_management.rst:523
+#: ../../image_editor/color_management.rst:525
 msgid ""
 "I've always heard that you ought to use \"perceptual intent\" when "
 "transforming an image from a larger working space to a smaller printer "
@@ -3295,19 +3339,24 @@ msgstr ""
 "статей, присвячених фотографії, призводить до висновку, що відчуттєве "
 "відтворення є лише одним з варіантів, але не обов’язково найкращим варіантом."
 
-#: ../../image_editor/color_management.rst:526
+#: ../../image_editor/color_management.rst:528
 msgid "And what about black point compensation?"
 msgstr "Якщо щодо компенсації точки чорного?"
 
-#: ../../image_editor/color_management.rst:528
+#: ../../image_editor/color_management.rst:530
 msgid ""
 "The clearest definition I could find about black point compensation is as "
 "follows: \"BPC is a way to make adjustments between the maximum black levels "
 "of digital files and the black capabilities of various digital devices [such "
 "as a printer]\" (cited from this page)."
 msgstr ""
+"Найзрозумілішим визначенням компенсації чорної точки, яке вдалося відшукати "
+"авторові, є таке визначення: «Компенсація чорної точки — це спосіб "
+"узгодження між максимальними рівнями чорного у цифрових файлах та "
+"можливостями відтворення чорного кольору у різноманітних цифрових пристроях "
+"[зокрема принтерах]» (взято звідси)."
 
-#: ../../image_editor/color_management.rst:530
+#: ../../image_editor/color_management.rst:532
 msgid ""
 "The article from which this definition comes offers a very clear explanation "
 "(albeit Adobe-centric) of how black point compensation works and the "
@@ -3322,7 +3371,7 @@ msgstr ""
 "обставинами. Спробуйте створити пробу кольорів з компенсацією чорної точки. "
 "Якщо сподобається, використовуйте. Якщо ні, не використовуйте."
 
-#: ../../image_editor/color_management.rst:533
+#: ../../image_editor/color_management.rst:535
 msgid ""
 "Can all of the rendering intents be used when converting from one color "
 "space to another?"
@@ -3330,7 +3379,7 @@ msgstr ""
 "Чи можна використовувати схеми відтворення кольорів під час зміни простору "
 "кольорів?"
 
-#: ../../image_editor/color_management.rst:535
+#: ../../image_editor/color_management.rst:537
 msgid ""
 "In a word, no. Which rendering intents are available when converting from "
 "one profile to another depends on the destination profile. Not every profile "
@@ -3344,13 +3393,13 @@ msgstr ""
 "відтворення кольорів, яке не підтримується, LCMS без надсилання додаткових "
 "запитів використає типове відтворення кольорів профілю."
 
-#: ../../image_editor/color_management.rst:537
+#: ../../image_editor/color_management.rst:539
 msgid ""
 "For an informative and humorous discussion of myths surrounding the use of "
 "various rendering intents, see here and here."
 msgstr ""
 
-#: ../../image_editor/color_management.rst:540
+#: ../../image_editor/color_management.rst:542
 msgid ""
 "Why does the perceptual rendering intent get recommended so often as the "
 "\"photographic\" rendering intent?"
@@ -3358,7 +3407,7 @@ msgstr ""
 "Чому придатне для сприйняття (перцептуальне) відтворення кольорів так часто "
 "рекомендують як «фотографічне» відтворення кольорів?"
 
-#: ../../image_editor/color_management.rst:542
+#: ../../image_editor/color_management.rst:544
 msgid ""
 "It's a safe choice because it prevents clipping of shadows and highlights, "
 "although possibly at the expense of desaturating all your colors. So if you "
