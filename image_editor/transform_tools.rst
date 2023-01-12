@@ -33,7 +33,7 @@ Cropping a photograph is not only a common operation, but an often underestimate
 
 When you release the button the area of the photograph that will be removed by a crop operation is greyed out. This allows you to get a good view of how your photograph will look once you have cropped it. You can change the size of the cropped area by dragging the corners of the rectangle, and you can create a new crop area simply by dragging out another rectangle.
 
-Once you are happy with the crop, click on the Image Editor Crop button on the toolbar and the photograph will be cropped (Ctrl+X). Use the File --> Save or File --> Save As... entries in the File menu to save the newly cropped photograph. 
+Once you are happy with the crop, click on the Image Editor **Crop** button on the toolbar and the photograph will be cropped :kbd:`Ctrl+X`. Use the :menuselection:`File --> Save` or :menuselection:`File --> Save As...` entries in the File menu to save the newly cropped photograph.
 
 .. note::
 
@@ -48,7 +48,7 @@ The Auto Crop tool removes the borders from an image. It searches the largest po
 
 This tool can be used for example to crop a stitched panorama, assembly with many images, which generate black borders around.
 
-See below a stitched Panorama Processed With Auto Crop.
+See below a stitched Panorama processed with auto crop tool.
 
 .. figure:: images/editor_autocrop.webp
     :alt:
@@ -71,7 +71,7 @@ The Aspect Ratio Crop tool goes further. While you are editing digital images, i
 
 In the preview area you can resize the cropping rectangle by moving the corners with the mouse. It will keep the ratio value set in the bottom of dialog.
 
-In the Aspect Ratio Crop tool settings, you specify the Orientation as Portrait or Landscape. Portrait will always have the larger size assigned to the Height and Landscape to the Width.
+In the Aspect Ratio Crop tool settings, you specify the **Orientation** as **Portrait** or **Landscape**. Portrait will always have the larger size assigned to the **Height** and Landscape to the **Width**.
 
 Aspect Ratio Crop tool uses a relative ratio. That means it is the same if you use centimeters or inches and it doesn't specify the physical size. For example, you can see below a correspondence list of traditional photographic paper sizes and aspect ratio crop.
 
@@ -87,7 +87,7 @@ Standard Photograph Paper Size                                  Aspect Ratio Cro
 
 At the far right of the dialog two buttons are available to move the crop selection automatically to the horizontal or vertical center of the image.
 
-At the very bottom line of the dialog, the Max. Ratio button lets you set the crop area size to the maximum size according to the current aspect ratio settings and orientation.
+At the very bottom line of the dialog, the **Max. Ratio** button lets you set the crop area size to the maximum size according to the current aspect ratio settings and orientation.
 
 .. note::
 
@@ -100,7 +100,7 @@ Composition Guide
 
 When first looking at an image, the eye of the viewer rarely settles at the center of the image, but moves instead from the top left to the right, and then from the lower left to the right again. This pattern is unconscious but has been well documented. It is probably associated with the western reading pattern. From the photographer's point of view, the goal then becomes to guide the gaze of the viewer to the subject, being aware of the way many people perceive an image.
 
-The Composition Guide settings provides guiding elements to better compose your images. These guides are:
+The **Composition Guide** settings provides guiding elements to better compose your images. These guides are:
 
     - **Rule of Thirds**: a grid that divides the image into thirds in every direction (that makes for 9 parts). These proportions are close to the golden rule and are derived from the field of view of the human eye. They are often used with slight variations throughout a large number of commonly used objects. Within that frame there are precise areas where the important parts of the image should be placed. The same principle is used to determine the position of the horizon and the proportion of ground to sky. Many photographers and artists are aware of the Rule of Thirds, where an image is divided into three sections vertically and horizontally and the points of intersection represent places to position important visual elements. Moving a horizon in a landscape to the position of one third is often more effective than placing it in the middle, but it could also be placed near the bottom one quarter or sixth. There is nothing obligatory about applying the Rule of Thirds. In placing visual elements for effective composition, one must assess many factors including color, dominance, size and balance together with proportion. Often a certain amount of image balance or tension can make a composition more effective.
 
@@ -114,20 +114,20 @@ The Composition Guide settings provides guiding elements to better compose your 
 
         - The **Golden Triangles** is a derivative of the Golden Spiral discussed above. Its vertices are the midpoints of the sides of the Golden Rectangle. Note that unlike Harmonious Triangles, Golden Triangles aren't equiangular triangles. Placing diagonals along these lines can make an otherwise static subject appear more dynamic. When you use Golden Triangles to break up your frame, you're creating an effect professional photographic experts call Dynamic Symmetry. Try to keep your focal subject on one of the intersecting points, and place other visual information into the triangles you've already divided out. The result will be a very attractive composition you may not have otherwise attained.
 
-        - Like the Rule of **Thirds the Golden Sections** affects the ratio of an image size as well as the placement of the main subjects on the photo. This ratio is close to the 35mm ratio, so you don't need to change the size of the photo in most cases. But you need to consider the composition: the main subject should lie on one of the four lines or four intersections (subject's eye for example). Truthfully speaking, these rules are not the same. Rule of Thirds is a simplified version of the Golden Mean.
+        - Like the Rule of Thirds the **Golden Sections** affects the ratio of an image size as well as the placement of the main subjects on the photo. This ratio is close to the 35mm ratio, so you don't need to change the size of the photo in most cases. But you need to consider the composition: the main subject should lie on one of the four lines or four intersections (subject's eye for example). Truthfully speaking, these rules are not the same. Rule of Thirds is a simplified version of the Golden Mean.
 
-The Flip Horizontal and Flip Vertical options can be used to apply flip transformation to the harmonious divisions.
+The **Flip Horizontal** and **Flip Vertical** options can be used to apply flip transformation to the harmonious divisions.
 
-The Color button lets you set the guidelines color. If you have an high color contrast image, the guidelines may become invisible. By the way, you can adapt the color guide to the current image.
+The **Color** button lets you set the guidelines color. If you have an high color contrast image, the guidelines may become invisible. By the way, you can adapt the color guide to the current image.
 
 .. _transform_rotationflip:
 
 Rotating or Flipping a Photograph
 ---------------------------------
 
-If the photograph shows a wrong orientation you can Flip or Rotate it to the orientation you would like by using Transform Flip/Rotate tools available in Transform --> Rotate and Transform --> Flip menus.
+If the photograph shows a wrong orientation you can **Flip** or **Rotate** it to the orientation you would like by using Transform Flip/Rotate tools available in :menuselection:`Transform --> Rotate and Transform --> Flip` menus.
 
-With flipping options, you can flip or turn over the image horizontally or vertically like a card deck. With the rotating options, you can rotate the image in 90 degrees steps clockwise. It can be used to change the display mode to Portrait or Landscape. Be aware that this rotation is not lossless when using JPEG format. You also can rotate more accurately to a finer degree by using the Free Rotation tool. You can access it by the Transform --> Free Rotation menu entry. See the dedicated Free Rotation manual for more information.
+With flipping options, you can flip or turn over the image horizontally or vertically like a card deck. With the rotating options, you can rotate the image in 90 degrees steps clockwise. It can be used to change the display mode to Portrait or Landscape. Be aware that this rotation is not lossless when using JPEG format. You also can rotate more accurately to a finer degree by using the Free Rotation tool. You can access it by the :menuselection:`Transform --> Free Rotation` menu entry. See the dedicated Free Rotation seection below for more information.
 
 .. _transform_freerotation:
 
@@ -136,9 +136,9 @@ Free Rotation
 
 The digiKam Free Rotation is a tool for image rotation by any arbitrary angle.
 
-When taking an image it is all too easy to hold the camera not quite perfectly vertical or horizontal, resulting in an image where things are tilted at an angle. The way to fix this with the digiKam Image Editor is to use the Free Rotation tool. Select Transform --> Free Rotation and adjust to the target angle.
+When taking an image it is all too easy to hold the camera not quite perfectly vertical or horizontal, resulting in an image where things are tilted at an angle. The way to fix this with the digiKam Image Editor is to use the Free Rotation tool. Select :menuselection:`Transform --> Free Rotation` and adjust to the target angle.
 
-Rotate your image by using the Angle slider (value in degrees). Press to Reset Values for reset the slider to zero. A rotating effect preview is available on the right side of the dialog. The new target image dimensions in pixels are shown.
+Rotate your image by using the **Angle** slider (value in degrees). Press to **Reset Values** for reset the slider to zero. A rotating effect preview is available on the right side of the dialog. The new target image dimensions in pixels are shown.
 
 For better orientation, the Free Rotation tool provides a vertical and horizontal guide. Move the mouse cursor under image preview to display the dashed line guide. Move the cursor to an supposedly vertical or horizontal feature in the image like the sea or a building border and press the left mouse button for freeze the dashed lines position. Now, adjust the angle accordingly with the guide.
 
@@ -152,17 +152,17 @@ For better orientation, the Free Rotation tool provides a vertical and horizonta
 
     The digiKam Image Editor Free Rotation Tool
 
-After you have rotated an image, there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform --> Crop Image Editor menu.
+After you have rotated an image, there will be unpleasant triangular *holes* at the corners. One way to fix them is to crop the image with :menuselection:`Transform --> Crop` Image Editor menu.
 
-A more elegant way to crop the rotated image is to use the Auto-crop function. Choose anyone of the following options from the combo-box to your preference:
+A more elegant way to crop the rotated image is to use the **Auto-Crop** function. Choose anyone of the following options from the combo-box to your preference:
 
-    - Widest area This option crops the rotated image to the widest possible (width) rectangular section.
+    - **Widest area**: This option crops the rotated image to the widest possible (width) rectangular section.
 
-    - Largest area This options crops the rotated image to the biggest surface.
+    - **Largest area**: This options crops the rotated image to the biggest surface.
 
 Hold the mouse over the combo-box and scroll with the wheel between the two possibilities.
 
-The Anti-aliasing checkbox will smooth the image a bit after rotation. Please read the warning above.
+The **Anti-aliasing** checkbox will smooth the image a bit after rotation. Please read the warning above.
 
 .. _transform_perspective:
 
@@ -177,23 +177,23 @@ All perspective transformations are performed around a fixed point called the re
 
 To change the perspective, use the square areas at the image corners for dragging. The perspective preview is rendered automatically. On the right of the dialog you'll find a set of information witch help you to control the perspective change:
 
-    New Width: show the new image width in pixels including the empty area around the image resulting from the geometrical transformation.
+    - **New Width**: show the new image width in pixels including the empty area around the image resulting from the geometrical transformation.
 
-    New Height: show the new image height in pixels including the empty area around the image resulting from the geometrical transformation.
+    - **New Height**: show the new image height in pixels including the empty area around the image resulting from the geometrical transformation.
 
-    Top Left Angle: show the current angle in degrees at the top left corner of the perspective area.
+    - **Top Left Angle**: show the current angle in degrees at the top left corner of the perspective area.
 
-    Top Right Angle: show the current angle in degrees at the top right corner of the perspective area.
+    - **Top Right Angle**: show the current angle in degrees at the top right corner of the perspective area.
 
-    Bottom Left Angle: show the current angle in degrees at the bottom left corner of the perspective area.
+    - **Bottom Left Angle**: show the current angle in degrees at the bottom left corner of the perspective area.
 
-    Bottom Right Angle: show the current angle in degrees at the bottom right corner of the perspective area.
+    - **Bottom Right Angle**: show the current angle in degrees at the bottom right corner of the perspective area.
 
 .. warning::
 
     After applying the perspective adjustment, the image inevitably gets blurred a little bit. For a single adjustment, the amount of blurring is quite small, but two adjustments cause twice as much blurring as one, and there is no reason to blur things more than you have to.
 
-After you have adjusted the perspective of an image there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform --> Crop Image Editor menu.
+After you have adjusted the perspective of an image there will be unpleasant triangular *holes* at the corners. One way to fix them is to crop the image with :menuselection:`Transform --> Crop` Image Editor menu.
 
 .. figure:: images/editor_perspective_tool.webp
     :alt:
@@ -208,9 +208,9 @@ Shearing Image
 
 The digiKam Shearing Image is a tool for shearing an image horizontally or vertically.
 
-The Shear tool is used to shift one part of an image to one direction and the other part to the opposite direction. For instance, a horizontal shearing will shift the upper part to the right and the lower part to the left. This is not a rotation: the image is distorted. In other words, it will turn a rectangle into a parallelogram. This tool is available from Transform --> Shear menu.
+The Shear tool is used to shift one part of an image to one direction and the other part to the opposite direction. For instance, a horizontal shearing will shift the upper part to the right and the lower part to the left. This is not a rotation: the image is distorted. In other words, it will turn a rectangle into a parallelogram. This tool is available from :menuselection:`Transform --> Shear` menu.
 
-Shear your image by using the Horizontal Angle and Vertical Angle sliders (values in degrees). You can shear along either Horizontally and vertically at the same time. Click on the Reset Values reset. A shearing effect preview is shown on the center of dialog window. The new target image dimensions in pixels are displayed at the right side of dialog.
+Shear your image by using the **Horizontal Angle** and **Vertical Angle** sliders (values in degrees). You can shear along either Horizontally and vertically at the same time. Click on the **Reset Values** to reset. A shearing effect preview is shown on the center of dialog window. The new target image dimensions in pixels are displayed at the right side of dialog.
 
 To assist you in aligning, the tool provides a vertical and horizontal guide. Move the mouse cursor under image preview for display the dashed lines guide. Move the cursor to an important place in the image like the sea or a building border and press the left mouse button for freeze the dashed lines position. Now, adjust the shear correction according with the guide.
 
@@ -218,7 +218,7 @@ To assist you in aligning, the tool provides a vertical and horizontal guide. Mo
 
     After applying a shearing adjustment, the image inevitably gets blurred a little bit. For a single shearing, the amount of blurring is quite small, but two shears cause twice as much blurring as one, and there is no reason to blur things more than you have to.
 
-After you have sheared an image, there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform --> Crop Image Editor menu.
+After you have sheared an image, there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with :menuselection:`Transform --> Crop` Image Editor menu.
 
 .. figure:: images/editor_shear.webp
     :alt:
@@ -236,12 +236,12 @@ Overview
 
 The digiKam resize Photograph is definitely one of the most advanced tools to increase a photograph's size with minimal loss in image quality.
 
-Rescaling an image to make it smaller is easy. The big question is: how can you blow up an image and keep the details sharp? How can one zoom in when the resolution boundary has been reached? How can one reinvent or guess the missing information to fill in the necessarily coarse image after upsizing? Well, the algorithm we use here does an excellent job, try it out and see for yourself!
+Rescaling an image to make it smaller is easy. The big question is: how can you blow up an image and keep the details sharp? How can one zoom in when the resolution boundary has been reached? How can one reinvent or guess the missing information to fill in the necessarily coarse image after upsizing? Well, the algorithm we use here does an excellent job, try it out and see for yourself.
 
 Resizing a Photograph
 ~~~~~~~~~~~~~~~~~~~~~
 
-If the photograph has the wrong size, you can scale it to the size you would like by using Transform Resize tool. Select Transform --> Resize and adjust the target values. The Resize tool dialog is available below.
+If the photograph has the wrong size, you can scale it to the size you would like by using Transform Resize tool. Select :menuselection:`Transform --> Resize` and adjust the target values. The Resize tool dialog is available below.
 
 .. figure:: images/editor_resize.webp
     :alt:
@@ -256,41 +256,41 @@ Increasing Image Size (Restoration)
 
 Many image editing programs use some kind of interpolation e.g. spline interpolation to scale-up an image. digiKam uses a more sophisticated approach.
 
-You have to tell the tool about the resizing you want to do. These settings are available in New Size tab and are listed below:
+You have to tell the tool about the resizing you want to do. These settings are available in **New Size** tab and are listed below:
 
-    Maintain Aspect Ratio: if this option is enabled, setting the new image size will preserve the aspect ratio of the original image.
+    - **Maintain Aspect Ratio**: if this option is enabled, setting the new image size will preserve the aspect ratio of the original image.
 
-    Width: the new image width to use for blowing up.
+    - **Width**: the new image width to use for blowing up.
 
-    Height: the new image height to use for blowing up.
+    - **Height**: the new image height to use for blowing up.
 
-If you want to set filter parameters for finer adjustments, use Smoothing Settings and Advanced Settings tabs:
+If you want to set filter parameters for finer adjustments, use **Smoothing Settings** and **Advanced Settings** tabs:
 
 Photograph Resize Smoothing Settings:
 
-    Detail Preservation p [0, 100]: this controls the preservation of the curvatures (features). A low value forces an equal smoothing across the image, whereas bigger values preferably smooth the homogeneous regions and leaves the details sharper. A value of 0.9 should well preserve details so that no sharpening is required afterwards. Note that Detail Preservation must be always inferior to Anisotropy.
+    - **Detail Preservation** p [0, 100]: this controls the preservation of the curvatures (features). A low value forces an equal smoothing across the image, whereas bigger values preferably smooth the homogeneous regions and leaves the details sharper. A value of 0.9 should well preserve details so that no sharpening is required afterwards. Note that **Detail Preservation** must be always inferior to **Anisotropy**.
 
-    Anisotropy alpha [0, 100]: a low value smooths equally in all directions, whereas a value close to 1 smooths in one direction only. If you have film grain or CCD kind of noise a high value will result in wave-like pattern, whereas JPEG artifacts are suited for values close to 1.
+    - **Anisotropy alpha** [0, 100]: a low value smooths equally in all directions, whereas a value close to 1 smooths in one direction only. If you have film grain or CCD kind of noise a high value will result in wave-like pattern, whereas JPEG artifacts are suited for values close to 1.
 
-    Smoothing [0, 500]: this sets the maximum overall smoothing factor (when p defines the relative smoothing). Set it according to the noise level.
+    - **Smoothing** [0, 500]: this sets the maximum overall smoothing factor (when p defines the relative smoothing). Set it according to the noise level.
 
-    Regularity [0, 100]: this parameter is concerned with the bigger structures. The bigger this value, the more even the overall smoothing will be. This is necessary when much noise is present since it is then difficult to estimate the geometry. Also if you want to achieve a 'van Gogh' turbulence effect, setting it higher than 3 is recommended.
+    - **Regularity** [0, 100]: this parameter is concerned with the bigger structures. The bigger this value, the more even the overall smoothing will be. This is necessary when much noise is present since it is then difficult to estimate the geometry. Also if you want to achieve a 'van Gogh' turbulence effect, setting it higher than 3 is recommended.
 
-    Filter Iterations: number of times the blurring algorithm is applied. Usually 1 or 2 is sufficient.
+    - **Filter Iterations**: number of times the blurring algorithm is applied. Usually 1 or 2 is sufficient.
 
 Photograph Resize Advanced Settings:
 
-    Angular Step da [5, 90]: angular integration of the anisotropy alpha. If alpha is chosen small, da should also be chosen small. But beware, small angles result in long runs! Choose it as large as you can accept.
+    - **Angular Step** da [5, 90]: angular integration of the anisotropy alpha. If alpha is chosen small, da should also be chosen small. But beware, small angles result in long runs! Choose it as large as you can accept.
 
-    Integral Step [0.1, 10]: spatial integration step width in terms of pixels. Should remain less than 1 (sub-pixel smoothing) and never be higher than 2.
+    - **Integral Step** [0.1, 10]: spatial integration step width in terms of pixels. Should remain less than 1 (sub-pixel smoothing) and never be higher than 2.
 
-    Use Linear Interpolation: The gain in quality if you select this option is only marginal and you lose a factor of 2 in speed. Our recommendation is to leave it off.
+    - **Use Linear Interpolation**: The gain in quality if you select this option is only marginal and you lose a factor of 2 in speed. Our recommendation is to leave it off.
 
-Save As... and Load... buttons are used to do just that. Any Blowup Photograph filter settings that you have set can be saved to the filesystem in a text file and loaded later.
+**Save As** and **Load** buttons are used to do just that. Any Blowup Photograph filter settings that you have set can be saved to the filesystem in a text file and loaded later.
 
 .. warning::
 
-    Resize Photograph is very fast in what it is doing, but it can take a long time to run and cause high CPU load. You may always abort computation by pressing Cancel button during rendering.
+    Resize Photograph is very fast in what it is doing, but it can take a long time to run and cause high CPU load. You may always abort computation by pressing **Cancel** button during rendering.
 
 .. _transform_liquidrescale:
 
