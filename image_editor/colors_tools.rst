@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Image Editor Colors Tools
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image, editor, color, depth, space, correction, auto, black, white, filters, emultation, infrared, invert, negative, balance, curves, levels, hue, saturation, lightness, channel, mixer
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image, editor, color, depth, space, correction, auto, black, white, filters, emulation, infrared, invert, negative, balance, curves, levels, hue, saturation, lightness, channel, mixer
 
 .. metadata-placeholder
 
@@ -293,7 +293,7 @@ This tool is used to adjust hue, saturation, and lightness levels on a range of 
 
 The tool settings are listed below:
 
-    - A Hue / Saturation color map to select visualy the respective primary color to adjust. Just move and click with the mouse to set **Hue** and **Saturation** values in sliders below the map.
+    - A Hue / Saturation color map to select visually the respective primary color to adjust. Just move and click with the mouse to set **Hue** and **Saturation** values in sliders below the map.
     
     - **Hue**: The slider allow you to select a hue in the color circle (-180, 180). 
 

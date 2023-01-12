@@ -83,7 +83,7 @@ See the list of common areas available in all tools:
 
     - (6): There is a **progress indicator** for tool with involved calculations at processing stage, else the current **file-name** is displayed.
 
-The Image Editor tools are avaiable as plugins loaded dynamically at startup and configurable in :ref:`Setup dialog <plugins_settings>`. List of tools is given below:
+The Image Editor tools are available as plugins loaded dynamically at startup and configurable in :ref:`Setup dialog <plugins_settings>`. List of tools is given below:
 
     - Image Color Corrections:
 
