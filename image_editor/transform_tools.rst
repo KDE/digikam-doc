@@ -120,6 +120,15 @@ The Flip Horizontal and Flip Vertical options can be used to apply flip transfor
 
 The Color button lets you set the guidelines color. If you have an high color contrast image, the guidelines may become invisible. By the way, you can adapt the color guide to the current image.
 
+.. _transform_rotationflip:
+
+Rotating or Flipping a Photograph
+---------------------------------
+
+If the photograph shows a wrong orientation you can Flip or Rotate it to the orientation you would like by using Transform Flip/Rotate tools available in Transform --> Rotate and Transform --> Flip menus.
+
+With flipping options, you can flip or turn over the image horizontally or vertically like a card deck. With the rotating options, you can rotate the image in 90 degrees steps clockwise. It can be used to change the display mode to Portrait or Landscape. Be aware that this rotation is not lossless when using JPEG format. You also can rotate more accurately to a finer degree by using the Free Rotation tool. You can access it by the Transform --> Free Rotation menu entry. See the dedicated Free Rotation manual for more information.
+
 .. _transform_freerotation:
 
 Free Rotation
@@ -191,15 +200,6 @@ After you have adjusted the perspective of an image there will be unpleasant tri
     :align: center
 
     The digiKam Image Editor Perspective Tool
-
-.. _transform_rotationflip:
-
-Rotating or Flipping a Photograph
----------------------------------
-
-If the photograph shows a wrong orientation you can Flip or Rotate it to the orientation you would like by using Transform Flip/Rotate tools available in Transform --> Rotate and Transform --> Flip menus.
-
-With flipping options, you can flip or turn over the image horizontally or vertically like a card deck. With the rotating options, you can rotate the image in 90 degrees steps clockwise. It can be used to change the display mode to Portrait or Landscape. Be aware that this rotation is not lossless when using JPEG format. You also can rotate more accurately to a finer degree by using the Free Rotation tool. You can access it by the Transform --> Free Rotation menu entry. See the dedicated Free Rotation manual for more information.
 
 .. _transform_shear:
 
