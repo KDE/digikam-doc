@@ -318,7 +318,7 @@ The Target Size
 
     The digiKam Liquid Rescale Tool Size Settings
 
-In the **Target Size** section, it is possible to choose the final size. It is advisable to rescale always in one direction at a time. If both the **width** and the **height** are changed, rescaling is performed by default on the width first, then on the height. You can also **Preserve aspect ratio** from the original image. Dimensions can be set in pixels (**px**) or in **percents**.
+In this section, it is possible to choose the final size. It is advisable to rescale always in one direction at a time. If both the **width** and the **height** are changed, rescaling is performed by default on the width first, then on the height. You can also **Preserve aspect ratio** from the original image. Dimensions can be set in pixels (**px**) or in **percents**.
 
 The Rescale Percentage
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -329,8 +329,10 @@ The Rescale Percentage
 
     The digiKam Liquid Rescale Tool Percentage Settings
 
-The Masks
-~~~~~~~~~
+In this section, you can specify here your desired content-aware rescaling percentage. This option sets the maximum enlargement which will be performed in a single rescale step. When the final size is greater than this, the tool will automatically stop and restart the rescaling as many times as needed. You might need to reduce this value if you have large preservation masks. Note that in this case, the same areas will be affected over and over by the rescaling.
+
+The Feature Masks
+~~~~~~~~~~~~~~~~~
 
 .. figure:: images/editor_liquid_rescale_mask_settings.webp
     :alt:
@@ -338,6 +340,25 @@ The Masks
 
     The digiKam Liquid Rescale Tool Mask Settings
 
+The masks are the easiest way to manually select the features of the image that you want to protect or discard. Turn on the **Add weight masks** option switch in mask edit mode.
+
+To discard portion of image, press the **Suppresion weight mask** button and paint the mask over the canvas. The mask is a virtual transparent layer using **Red** color, with 50% opacity to indicate the area to discard.
+
+To protect portion of image, press the **Preservation weight mask** button and paint the mask over the canvas. The mask is a virtual transparent layer using **Green** color, with 50% opacity to indicate the area to protect.
+
+You can change the **Brush size** to paint masks on the canvas.
+
+.. note::
+
+    Object removal is only possible when shrinking. By default, feature discard masks are ignored when enlarging, because in that case the masked areas would be inflated rather then removed. If you actually want to get this effect, you need to unset the corresponding option in the **Advanced Settings** tab.
+
+    Preservation of features is not possible if enlarging too much, because the inflation process is the exact reverse of the shrinking process, so the maximum amount of pixels you can add to a layer corresponds to the amount of pixels which are not protected. For example, if you have a 1000 pixel wide image and you have marked a 800 pixel wide area for protection, the final width should be less than 1200.
+
+.. figure:: images/editor_liquid_rescale_masks.webp
+    :alt:
+    :align: center
+
+    Liquid Rescale Preservation and Suppression Masks Applied Over the Image Before Resizing
 
 The Energy Function
 ~~~~~~~~~~~~~~~~~~~
@@ -357,12 +378,6 @@ The Advanced Settings
 
     The digiKam Liquid Rescale Advanced Settings
 
-
-.. figure:: images/editor_liquid_rescale_masks.webp
-    :alt:
-    :align: center
-
-    Liquid Rescale Preservation and Suppression Masks Applied Over the Image Before Resizing
 
 .. figure:: images/editor_liquid_rescale_after.webp
     :alt:
