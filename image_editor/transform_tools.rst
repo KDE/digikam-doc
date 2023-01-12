@@ -312,8 +312,8 @@ It works both ways, shrinking and enlarging, and it can use **masks** to select 
 
     A Sample Image Before Resizing Using Liquid Rescale Tool
 
-The Target Size
-~~~~~~~~~~~~~~~
+Target Size
+~~~~~~~~~~~
 
 .. figure:: images/editor_liquid_rescale_size_settings.webp
     :alt:
@@ -323,8 +323,8 @@ The Target Size
 
 In this section, it is possible to choose the final size. It is advisable to rescale always in one direction at a time. If both the **width** and the **height** are changed, rescaling is performed by default on the width first, then on the height. You can also **Preserve aspect ratio** from the original image. Dimensions can be set in pixels (**px**) or in **percents**.
 
-The Rescale Percentage
-~~~~~~~~~~~~~~~~~~~~~~
+Rescale Percentage
+~~~~~~~~~~~~~~~~~~
 
 .. figure:: images/editor_liquid_rescale_percentage_settings.webp
     :alt:
@@ -363,8 +363,8 @@ You can change the **Brush size** to paint masks on the canvas. To change a mask
 
     Liquid Rescale Preservation and Suppression Masks Applied Over the Sample Image Before Resizing
 
-The Energy Function
-~~~~~~~~~~~~~~~~~~~
+Energy Function
+~~~~~~~~~~~~~~~
 
 .. figure:: images/editor_liquid_rescale_energy_settings.webp
     :alt:
@@ -383,8 +383,8 @@ In this section, you can choose a gradient function applied while rescaling. Thi
 
 The **Preserve Skin Tones** option allows to preserve pixels whose color is close to a skin tone.
 
-The Advanced Settings
-~~~~~~~~~~~~~~~~~~~~~
+Advanced Settings
+~~~~~~~~~~~~~~~~~
 
 .. figure:: images/editor_liquid_rescale_advanced_settings.webp
     :alt:
@@ -406,8 +406,8 @@ In this section, you can tune some advanced values to tweak the tool.
 
 **Resize Order**: Here you can set whether to resize **horizontally first** or **vertically first**.
 
-The Seam Carving Technique in Brief
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+More Details About the Seam Carving Technique
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The tool works by finding so-called *seams* over an image, i.e. continuous, zig-zagged lines transversing the image from top to bottom (*vertical* seams), or from left to right (*horizontal* seams). When one such seam, say a vertical one, is removed from an image (the *carving* operation), the width of the image is reduced by one pixel. Removing horizontal seams reduces the height. Iterating such operations (find a seam and remove it), one can reduce the image size at will. Collecting together all the seams which were carved from an image, in their respective order, constitutes what is called a *seams map*.
 
