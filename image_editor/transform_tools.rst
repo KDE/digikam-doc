@@ -26,6 +26,10 @@ Manual Crop
 Cropping a photograph is not only a common operation, but an often underestimated photographer's tool to compose an image. The Image Editor makes it very easy. To crop a photograph simply drag a rectangle over the image by holding down the left mouse button and moving the mouse. You will see a wire frame rectangle appear as you move the mouse. 
 
 .. figure:: images/editor_crop_selection.webp
+    :alt:
+    :align: center
+
+    A Region from Image Editor Canvas Ready for Manual Crop
 
 When you release the button the area of the photograph that will be removed by a crop operation is greyed out. This allows you to get a good view of how your photograph will look once you have cropped it. You can change the size of the cropped area by dragging the corners of the rectangle, and you can create a new crop area simply by dragging out another rectangle.
 
@@ -47,6 +51,10 @@ This tool can be used for example to crop a stitched panorama, assembly with man
 See below a stitched Panorama Processed With Auto Crop.
 
 .. figure:: images/editor_autocrop.webp
+    :alt:
+    :align: center
+
+    A Panorama Processed by Auto-Crop to Drop the Black Frame Around the Image
 
 .. _transform_proportionalcrop:
 
@@ -56,6 +64,10 @@ Proportional Crop
 The Aspect Ratio Crop tool goes further. While you are editing digital images, it is often necessary to create a compatible format with, for example, your photo album or paper formats. If you print an image from your digital camera and then try to put it in your photo album, you may notice that the camera has a different width or height ratio than a normal photographic film format so you need to crop your digital images in a predefined ratio (for example 5:7 or 2:3 which is a standard photo ratio). 
 
 .. figure:: images/editor_ratio_crop.webp
+    :alt:
+    :align: center
+
+    The digiKam Image Editor Ratio Crop Tool
 
 In the preview area you can resize the cropping rectangle by moving the corners with the mouse. It will keep the ratio value set in the bottom of dialog.
 
@@ -126,14 +138,18 @@ For better orientation, the Free Rotation tool provides a vertical and horizonta
     After rotating the image, you often find that things are better but not quite perfect. One solution is to rotate a bit more, but there is a disadvantage to that approach. Each time you rotate an image, because the rotated pixels don't line up precisely with the original pixels, the image inevitably gets blurred a little bit. For a single rotation, the amount of blurring is quite small, but two rotations cause twice as much blurring as one, and there is no reason to blur things more than you have to. Sure, the guide tool available in the Free Rotation preview can help you to apply correctly at the first time an angle adjustment to an image.
 
 .. figure:: images/editor_free_rotation.webp
+    :alt:
+    :align: center
+
+    The digiKam Image Editor Free Rotation Tool
 
 After you have rotated an image, there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform --> Crop Image Editor menu.
 
 A more elegant way to crop the rotated image is to use the Auto-crop function. Choose anyone of the following options from the combo-box to your preference:
 
-    Widest area This option crops the rotated image to the widest possible (width) rectangular section.
+    - Widest area This option crops the rotated image to the widest possible (width) rectangular section.
 
-    Largest area This options crops the rotated image to the biggest surface.
+    - Largest area This options crops the rotated image to the biggest surface.
 
 Hold the mouse over the combo-box and scroll with the wheel between the two possibilities.
 
@@ -171,6 +187,10 @@ To change the perspective, use the square areas at the image corners for draggin
 After you have adjusted the perspective of an image there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform --> Crop Image Editor menu.
 
 .. figure:: images/editor_perspective_tool.webp
+    :alt:
+    :align: center
+
+    The digiKam Image Editor Perspective Tool
 
 .. _transform_resize:
 
@@ -190,6 +210,10 @@ Resizing a Photograph
 If the photograph has the wrong size, you can scale it to the size you would like by using Transform Resize tool. Select Transform --> Resize and adjust the target values. The Resize tool dialog is available below.
 
 .. figure:: images/editor_resize.webp
+    :alt:
+    :align: center
+
+    The digiKam Image Editor Resize Tool
 
 This image resizing tool uses a standard linear interpolation method to approximate pixels. If you want to up-size a small image with a better quality, try the Blowup tool.
 
@@ -263,6 +287,10 @@ To assist you in aligning, the tool provides a vertical and horizontal guide. Mo
 After you have sheared an image, there will be unpleasant triangular "holes" at the corners. One way to fix them is to crop the image with Transform --> Crop Image Editor menu.
 
 .. figure:: images/editor_shear.webp
+    :alt:
+    :align: center
+
+    The digiKam Image Editor Shear Tool
 
 .. _transform_liquidrescale:
 
@@ -271,8 +299,7 @@ Liquid Rescale
 
 This tool is an Image Editor using the `Seam Carving method <https://en.wikipedia.org/wiki/Seam_carving>`.
 
-The Seam Carving procedure aims at resizing pictures non uniformly while preserving their features, i.e. avoiding distortion of the important parts.
-The tool supports manual feature selection, and can also be used to remove portions of the picture in a consistent way.
+The Seam Carving procedure aims at resizing pictures non uniformly while preserving their features, i.e. avoiding distortion of the important parts. The tool supports manual feature selection, and can also be used to remove portions of the picture in a consistent way.
 
 
 .. todo:
