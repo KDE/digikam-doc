@@ -297,16 +297,66 @@ After you have sheared an image, there will be unpleasant triangular "holes" at 
 Liquid Rescale
 --------------
 
-This tool is an Image Editor using the `Seam Carving method <https://en.wikipedia.org/wiki/Seam_carving>`.
+This tool is an Image Editor using the `Seam Carving method <https://en.wikipedia.org/wiki/Seam_carving>`_.
 
 The Seam Carving procedure aims at resizing pictures non uniformly while preserving their features, i.e. avoiding distortion of the important parts. The tool supports manual feature selection, and can also be used to remove portions of the picture in a consistent way.
 
+It works both ways, shrinking and enlarging, and it can use **masks** to select which features of the image should be preserved and which should be discarded.
 
 .. figure:: images/editor_liquid_rescale_before.webp
     :alt:
     :align: center
 
     An Image Before Resizing Using Liquid Rescale Tool
+
+The Target Size
+~~~~~~~~~~~~~~~
+
+.. figure:: images/editor_liquid_rescale_size_settings.webp
+    :alt:
+    :align: center
+
+    The digiKam Liquid Rescale Tool Size Settings
+
+In the **Target Size** section, it is possible to choose the final size. It is advisable to rescale always in one direction at a time. If both the **width** and the **height** are changed, rescaling is performed by default on the width first, then on the height. You can also **Preserve aspect ratio** from the original image. Dimensions can be set in pixels (**px**) or in **percents**.
+
+The Rescale Percentage
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: images/editor_liquid_rescale_percentage_settings.webp
+    :alt:
+    :align: center
+
+    The digiKam Liquid Rescale Tool Percentage Settings
+
+The Masks
+~~~~~~~~~
+
+.. figure:: images/editor_liquid_rescale_mask_settings.webp
+    :alt:
+    :align: center
+
+    The digiKam Liquid Rescale Tool Mask Settings
+
+
+The Energy Function
+~~~~~~~~~~~~~~~~~~~
+
+.. figure:: images/editor_liquid_rescale_energy_settings.webp
+    :alt:
+    :align: center
+
+    The digiKam Liquid Rescale Energy Function Settings
+
+The Advanced Settings
+~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: images/editor_liquid_rescale_advanced_settings.webp
+    :alt:
+    :align: center
+
+    The digiKam Liquid Rescale Advanced Settings
+
 
 .. figure:: images/editor_liquid_rescale_masks.webp
     :alt:
