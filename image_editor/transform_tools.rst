@@ -297,6 +297,9 @@ After you have sheared an image, there will be unpleasant triangular "holes" at 
 Liquid Rescale
 --------------
 
+Overview
+~~~~~~~~
+
 This tool is an Image Editor using the `Seam Carving method <https://en.wikipedia.org/wiki/Seam_carving>`_.
 
 The Seam Carving procedure aims at resizing pictures non uniformly while preserving their features, i.e. avoiding distortion of the important parts. The tool supports manual feature selection, and can also be used to remove portions of the picture in a consistent way.
@@ -307,7 +310,7 @@ It works both ways, shrinking and enlarging, and it can use **masks** to select 
     :alt:
     :align: center
 
-    An Image Before Resizing Using Liquid Rescale Tool
+    A Sample Image Before Resizing Using Liquid Rescale Tool
 
 The Target Size
 ~~~~~~~~~~~~~~~
@@ -346,7 +349,7 @@ To discard portion of image, press the **Suppresion weight mask** button and pai
 
 To protect portion of image, press the **Preservation weight mask** button and paint the mask over the canvas. The mask is a virtual transparent layer using **Green** color, with 50% opacity to indicate the area to protect.
 
-You can change the **Brush size** to paint masks on the canvas.
+You can change the **Brush size** to paint masks on the canvas. To change a mask regions, use the **Erase mask** button and clean desired portion of masks over the canvas.
 
 .. note::
 
@@ -358,7 +361,7 @@ You can change the **Brush size** to paint masks on the canvas.
     :alt:
     :align: center
 
-    Liquid Rescale Preservation and Suppression Masks Applied Over the Image Before Resizing
+    Liquid Rescale Preservation and Suppression Masks Applied Over the Sample Image Before Resizing
 
 The Energy Function
 ~~~~~~~~~~~~~~~~~~~
@@ -369,6 +372,17 @@ The Energy Function
 
     The digiKam Liquid Rescale Energy Function Settings
 
+In this section, you can choose a gradient function applied while rescaling. This function is used to determine which pixels should be removed or kept. Possible values are listed below:
+
+    - **Norm of brightness gradient**.
+    - **Sum of absolute values of brightness gradients**.
+    - **Absolute value of brightness gradient**.
+    - **Norm of luma gradient**.
+    - **Sum of absolute values of luma gradients**.
+    - **Absolute value of luma gradient**.
+
+The **Preserve Skin Tones** option allows to preserve pixels whose color is close to a skin tone.
+
 The Advanced Settings
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -378,13 +392,35 @@ The Advanced Settings
 
     The digiKam Liquid Rescale Advanced Settings
 
+In this section, you can tune some advanced values to tweak the tool.
+
+**Overall rigidity of the seams**: Use this value to give a negative bias to the seams which are not straight. May be useful to prevent distortions in some situations, or to avoid artifacts from pixel skipping (it is better to use low values in such case). This setting applies to the whole selected layer if no rigidity mask is used.
+
+.. note::
+
+    The bias is proportional to the difference in the transversal coordinate between each two successive points, elevated to the power of 1.5, and summed up for the whole seam.
+
+**Maximum number of transversal steps**: This option lets you choose the maximum transversal step that the pixels in the seams can take. In the standard algorithm, corresponding to the default value step = 1, each pixel in a seam can be shifted by at most one pixel with respect to its neighbors. This implies that the seams can form an angle of at most 45 degrees with respect to their base line. Increasing the step value lets you overcome this limit, but may lead to the introduction of artifacts. In order to balance the situation, you can use the rigidity setting.
+
+**Side switch frequency**: During the carving process, at each step the optimal seam to be carved is chosen based on the relevance value for each pixel. However, in the case where two seams are equivalent (which may happen, for instance, when large portions of the image have the same color), the algorithm always chooses the seams from one side.  In some cases, this can pose problems, e.g. an object centered in the original image might not be centered in the resulting image. In order to overcome this effect, this setting allows the favored side to be switched automatically during rescaling, at the cost of slightly worse performance.
+
+**Resize Order**: Here you can set whether to resize **horizontally first** or **vertically first**.
+
+The Seam Carving Technique in Brief
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The tool works by finding so-called *seams* over an image, i.e. continuous, zig-zagged lines transversing the image from top to bottom (*vertical* seams), or from left to right (*horizontal* seams). When one such seam, say a vertical one, is removed from an image (the *carving* operation), the width of the image is reduced by one pixel. Removing horizontal seams reduces the height. Iterating such operations (find a seam and remove it), one can reduce the image size at will. Collecting together all the seams which were carved from an image, in their respective order, constitutes what is called a *seams map*.
+
+Mirroring the carving process, by inserting additional seams besides the ones which are found by the algorithm, instead of removing them, image enlargement can be obtained, too. The meaning of the seam map is reversed in this case.
+
+In order to get good results form this technique, the main issue is finding which are the most suitable seams to carve or to insert. If the aim is simply to change the proportions of the image without affecting too much the content, for example, *good* seams will be those which don't cross important features of the image, and instead pass through a background landscape.
+
+By default, the tool tries to find the seams which cross the lowest-contrast areas (how this happens exactly is specified by the energy function settings). Therefore, each pixel of the image is assigned a so-called *energy value*, as the higher the contrast, the higher the energy, and seams are less likely to cross high-energy areas.
+
+Since in many cases this simple contrast-based method is not optimal, the energy function can be *biased* by the user, who can decide that some areas should have a higher energy (using a preservation masks) or, on the contrary, that they should have a lower energy (using a suppression mask), and therefore effectively *drive* the seams and the whole process.
 
 .. figure:: images/editor_liquid_rescale_after.webp
     :alt:
     :align: center
 
-    Image Width Resized Down Using Liquid Rescale Tool
-
-.. todo:
-
-    http://liquidrescale.wikidot.com/en:manual-0-7
+    The Sample Image Width Resized Down Using Liquid Rescale Tool
