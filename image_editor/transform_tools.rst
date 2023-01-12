@@ -376,12 +376,12 @@ Energy Function
 
 In this section, you can choose a gradient function applied while rescaling. This function is used to determine which pixels should be removed or kept. Possible values are listed below:
 
-    - **Norm of brightness gradient**.
-    - **Sum of absolute values of brightness gradients**.
-    - **Absolute value of brightness gradient**.
-    - **Norm of luma gradient**.
-    - **Sum of absolute values of luma gradients**.
-    - **Absolute value of luma gradient**.
+    - **Norm of brightness gradient**: norm of the brightness gradient.
+    - **Sum of absolute values of brightness gradients**: sum of absolute values of the brightness gradients in both directions.
+    - **Absolute value of brightness gradient**: absolute value of the brightness gradient in the direction of the rescaling (this is the default).
+    - **Norm of luma gradient**: norm of the luma gradient.
+    - **Sum of absolute values of luma gradients**: sum of absolute values of the luma gradients in both directions.
+    - **Absolute value of luma gradient**: absolute value of the luma gradient in the direction of the rescaling.
 
 The **Preserve Skin Tones** option allows to preserve pixels whose color is close to a skin tone.
 
