@@ -125,7 +125,7 @@ A ranking systematic is implemented in digiKam by the 5 star rating tool. In fac
     :alt:
     :align: center
 
-    The Edit Rating Properting From Thumbbar
+    The Edit Rating Properties From Thumbbar
 
 That will get you quite far in distinguishing your rating pyramid. Say, you choose a ratio of 7 between levels. For every 5 star image you'll then have 7 4 stars, 49 3 stars and so on, resulting in almost 20000 pictures. Amazing? Yes, and 16807 of them you didn't have to rate at all! You even can define a different rating scheme depending on the kind of use, 2 stars for commercial use, may mean something else than 2 stars holiday photos. It is also a good practice to define a neutral rating, everything below is actually a negative rating. This will help you culling and thinning your collection very efficiently. Or you could define purposes to ratings, say 0 stars for 'can throw away', 1 star for images in quarantine (decide later), 2 stars for gallery export, 3 stars for printing, 4 stars for selling, 5 stars for 'have to work on', as you please. It must suit your needs. The following table illustrates a possible evolution for a professional photographer using a ranking ratio of roughly 7 over the next 12 years. It is evident that the good shots can be easily found, even within millions of photos.
 
@@ -166,7 +166,7 @@ Another categorization might be task-oriented as in *print jobs*, *web export*, 
     :alt:
     :align: center
 
-    The digiKam Color Labels Can be Used to Group Items For Your Worflow Stages
+    The digiKam Color Labels Can be Used to Group Items For Your Workflow Stages
 
 When you import cataloged images from other sources having embedded tags already, digiKam will automatically create the trees for you, respectively insert it into the right place. Rearranging the hierarchy within the tree is no problem, you can do that easily by dragging and dropping a sub-tree to another place in the hierarchy. The changed tags will be updated as digiKam ripples down the branches.
 
