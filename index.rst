@@ -436,15 +436,49 @@ Image Editor
 
         :ref:`effects_tools`
 
-    .. container:: tile no-descr
-
-        :ref:`color_management`
-
 .. toctree::
    :maxdepth: 2
    :hidden:
 
    image_editor
+
+################
+Color Management
+################
+.. figure:: images/index_color_management.webp
+    :width: 300px
+    :alt:
+    :target: color_management.html
+
+    Learn The Fondamental Rules of Color Management
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`raw_treatment`
+
+    .. container:: tile no-descr
+
+        :ref:`working_space`
+
+    .. container:: tile no-descr
+
+        :ref:`srgb_colorspace`
+
+    .. container:: tile no-descr
+
+        :ref:`camera_profiles`
+
+    .. container:: tile no-descr
+
+        :ref:`printer_profiles`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   color_management
 
 ##################
 Geolocation Editor
