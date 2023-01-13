@@ -423,7 +423,7 @@ By default, the tool tries to find the seams which cross the lowest-contrast are
 
 Since in many cases this simple contrast-based method is not optimal, the energy function can be *biased* by the user, who can decide that some areas should have a higher energy (using a preservation masks) or, on the contrary, that they should have a lower energy (using a suppression mask), and therefore effectively *drive* the seams and the whole process.
 
-See below the sample image resized where width have been reduced to 30M. The height still the same. Look like presered areas are not deformed while operation and the unwanted disapear magicaly.
+See below the sample image resized where width have been reduced by 30%. The height still the same. Look like presered areas are not deformed while operation and the unwanted disapear magicaly.
 
 .. figure:: images/editor_liquid_rescale_after.webp
     :alt:
