@@ -54,7 +54,7 @@ See below a stitched Panorama processed with auto crop tool.
     :alt:
     :align: center
 
-    A Panorama Processed by Auto-Crop to Drop the Black Frame Around the Image
+    A Panorama Processed on the Bottom by Auto-Crop to Drop the Black Frame Around the Original Image on the Top.
 
 .. _transform_proportionalcrop:
 
