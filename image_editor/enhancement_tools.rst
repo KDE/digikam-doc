@@ -130,15 +130,13 @@ The only way to be sure which settings of **Amount**, **Feather**, and **Radius*
 The vignetting correction tool in action
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This is an example of an anti vignetting correction applied to an image. The original image (1) shows vignetting in the corners, the corrected image (2) much less. A brightness and contrast correction is also applied to the target image by this tool.
+This is an example of an anti vignetting correction applied to an image. The original image on the top shows vignetting in the corners, the corrected image on the bottom much less. The values used for this example are:
 
-The values used for this example are:
+    - Density = 2.6.
 
-    Density = 2.6.
+    - Power = 0.9.
 
-    Power = 0.9.
-
-    Radius = 1.1.
+    - Radius = 1.1.
 
 .. figure:: images/editor_antivignetting_preview.webp
     :alt:
