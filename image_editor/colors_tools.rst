@@ -289,7 +289,7 @@ The simplest tool to use is the **Brightness/Contrast/Gamma** tool. It is also t
     :alt:
     :align: center
 
-    The Image Editor Tool to Correct Exposure
+    The Image Editor Tool Correcting Exposure
 
 .. note::
 
@@ -305,22 +305,22 @@ This tool is used to adjust hue, saturation, and lightness levels on a range of 
 The tool settings are listed below:
 
     - A Hue / Saturation color map to select visually the respective primary color to adjust. Just move and click with the mouse to set **Hue** and **Saturation** values in sliders below the map.
-    
+
     - **Hue**: The slider allow you to select a hue in the color circle (-180, 180). 
 
     - **Saturation**: The slider allow you to select a saturation (-100, 100). 
 
     - **Vibrance**: The slider allow you to adjust the vibrance of the image. Vibrance performs selective saturation on less saturated colors and avoiding skin tones.
-    
+
     - **Lightness**: The slider allows you to select a luminosity value (-100, 100). Lightness changes here concern a color range, while they concern a color tone with **Curves Adjust** and **Levels Adjust** tools, which work on color channels. If you change the Red lightness with this tool, all red pixels will be changed. With **Curves Adjust** and **Levels Adjust** tools, only dark, bright, or medium pixels luminosity will be changed.
 
  You can see any adjustments you make reflected in the preview image. When you are happy with the results, press Ok and they will take effect.
- 
+
 .. figure:: images/editor_hsl_adjust.webp
     :alt:
     :align: center
 
-    The Image Editor Tool to Adjust Hue Saturation and Lightness
+    The Image Editor Tool Correcting Colors
 
 .. _color_mixer:
 
