@@ -136,7 +136,7 @@ Inverting Colors
 
 In case of digitalize analog film with a scanner, color can appear inverted compared to the reality. This tool allows to reverse the colors into their respective `complementary colors <https://en.wikipedia.org/wiki/Complementary_colors>`_.
 
-Invert color to a complementary color (or opposite color of color on the color wheel), consist to have cyan as the opposite color of red, yellow as opposite color for blue, and magenta as the opposite color of green. With :menuselection:`Color --> Invert` option, we can inverts all the pixel colors and brightness values in the image, as if the image were converted into a negative. Dark areas become bright and bright areas become dark. Hues are replaced by their complementary colors.
+Invert color to a complementary color (or opposite color of color on the color wheel), consist to have cyan as the opposite color of red, yellow as opposite color for blue, and magenta as the opposite color of green. With :menuselection:`Color --> Invert` option, we can invert all the pixel colors and brightness values in the image, as if the image was converted into a negative. Dark areas become bright and bright areas become dark. Hues are replaced by their complementary colors.
 
 .. _color_negative:
 

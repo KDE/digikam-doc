@@ -22,11 +22,11 @@ This view manages your **Album Collections** handled by the database. Each Colle
 
 The **Root Album Folders** list three types of collection which can be referenced in digiKam:
 
-    - **Local Collections**: there are root album folders stored physically on your computer drives.
+    - **Local Collections**: these are root album folders stored physically on your computer drives.
 
-    - **Collections on Removable Media**: there are root album folders stored on media which can be removed from your computer, as USB keys, external drives, DVD.
+    - **Collections on Removable Media**: these are root album folders stored on media which can be removed from your computer, as USB keys, external drives, DVD.
 
-    - **Collections on Network Shares**: there are root album folders stored remote file systems as Samba or NFS and mounted natively on your system. 
+    - **Collections on Network Shares**: these are root album folders stored remote file systems as Samba or NFS and mounted natively on your system. 
 
 For each type, the **Add Collection** button allows to append an entry in the list. Entry properties are the root album folder **name** and the root album folder **path**. To edit the properties of an entry, use the **update button** on the right of the path. To remove an entry, use the **red trash button** on right side. 
 

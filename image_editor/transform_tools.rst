@@ -127,7 +127,7 @@ Rotating or Flipping a Photograph
 
 If the photograph shows a wrong orientation you can **Flip** or **Rotate** it to the orientation you would like by using Transform Flip/Rotate tools available in :menuselection:`Transform --> Rotate and Transform --> Flip` menus.
 
-With flipping options, you can flip or turn over the image horizontally or vertically like a card deck. With the rotating options, you can rotate the image in 90 degrees steps clockwise. It can be used to change the display mode to Portrait or Landscape. Be aware that this rotation is not lossless when using JPEG format. You also can rotate more accurately to a finer degree by using the Free Rotation tool. You can access it by the :menuselection:`Transform --> Free Rotation` menu entry. See the dedicated Free Rotation seection below for more information.
+With flipping options, you can flip or turn over the image horizontally or vertically like a card deck. With the rotating options, you can rotate the image in 90 degrees steps clockwise. It can be used to change the display mode to Portrait or Landscape. Be aware that this rotation is not lossless when using JPEG format. You also can rotate more accurately to a finer degree by using the Free Rotation tool. You can access it by the :menuselection:`Transform --> Free Rotation` menu entry. See the dedicated Free Rotation section below for more information.
 
 .. _transform_freerotation:
 
