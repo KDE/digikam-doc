@@ -1,5 +1,5 @@
 .. meta::
-   :description: Color Management and RAW File Treatment
+   :description: Color Management Basis
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image editor, color management, icc, profile
 
 .. metadata-placeholder
@@ -8,10 +8,10 @@
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
-.. _raw_treatment:
+.. _cm_basis:
 
-RAW File Treatment
-==================
+Color Management Basis
+======================
 
 .. contents::
 

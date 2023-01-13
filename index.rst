@@ -238,6 +238,40 @@ Batch Queue Manager
 
    batch_queue
 
+############
+Import Tools
+############
+.. figure:: images/index_import_tools.webp
+    :width: 300px
+    :alt:
+    :target: import_tools.html
+
+    How to Import New Items in Your Collections With digiKam
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`import_overview`
+
+    .. container:: tile no-descr
+
+        :ref:`camera_import`
+
+    .. container:: tile no-descr
+
+        :ref:`advanced_import`
+
+    .. container:: tile no-descr
+
+        :ref:`scanner_import`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   import_tools
+
 ########################
 Digital Asset Management
 ########################
@@ -276,39 +310,93 @@ Digital Asset Management
 
    asset_management
 
-############
-Import Tools
-############
-.. figure:: images/index_import_tools.webp
+################
+Color Management
+################
+.. figure:: images/index_color_management.webp
     :width: 300px
     :alt:
-    :target: import_tools.html
+    :target: color_management.html
 
-    How to Import New Items in Your Collections With digiKam
+    Learn The Fondamental Rules of Color Management
 
 .. container:: toctile
 
     .. container:: tile no-descr
 
-        :ref:`import_overview`
+        :ref:`cm_basis`
 
     .. container:: tile no-descr
 
-        :ref:`camera_import`
+        :ref:`working_space`
 
     .. container:: tile no-descr
 
-        :ref:`advanced_import`
+        :ref:`srgb_colorspace`
 
     .. container:: tile no-descr
 
-        :ref:`scanner_import`
+        :ref:`camera_profiles`
+
+    .. container:: tile no-descr
+
+        :ref:`printer_profiles`
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
-   import_tools
+   color_management
+
+############
+Image Editor
+############
+.. figure:: images/index_image_editor.webp
+    :width: 300px
+    :alt:
+    :target: image_editor.html
+
+    Using digiKam to Edit and Improve Your Photographs
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`editor_overview`
+
+    .. container:: tile no-descr
+
+        :ref:`basic_operations`
+
+    .. container:: tile no-descr
+
+        :ref:`workflow_tools`
+
+    .. container:: tile no-descr
+
+        :ref:`colors_tools`
+
+    .. container:: tile no-descr
+
+        :ref:`enhancement_tools`
+
+    .. container:: tile no-descr
+
+        :ref:`transform_tools`
+
+    .. container:: tile no-descr
+
+        :ref:`decorate_tools`
+
+    .. container:: tile no-descr
+
+        :ref:`effects_tools`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   image_editor
 
 #################
 Setup Application
@@ -391,94 +479,6 @@ Setup Application
    :hidden:
 
    setup_application
-
-############
-Image Editor
-############
-.. figure:: images/index_image_editor.webp
-    :width: 300px
-    :alt:
-    :target: image_editor.html
-
-    Using digiKam to Edit and Improve Your Photographs
-
-.. container:: toctile
-
-    .. container:: tile no-descr
-
-        :ref:`editor_overview`
-
-    .. container:: tile no-descr
-
-        :ref:`basic_operations`
-
-    .. container:: tile no-descr
-
-        :ref:`workflow_tools`
-
-    .. container:: tile no-descr
-
-        :ref:`colors_tools`
-
-    .. container:: tile no-descr
-
-        :ref:`enhancement_tools`
-
-    .. container:: tile no-descr
-
-        :ref:`transform_tools`
-
-    .. container:: tile no-descr
-
-        :ref:`decorate_tools`
-
-    .. container:: tile no-descr
-
-        :ref:`effects_tools`
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   image_editor
-
-################
-Color Management
-################
-.. figure:: images/index_color_management.webp
-    :width: 300px
-    :alt:
-    :target: color_management.html
-
-    Learn The Fondamental Rules of Color Management
-
-.. container:: toctile
-
-    .. container:: tile no-descr
-
-        :ref:`raw_treatment`
-
-    .. container:: tile no-descr
-
-        :ref:`working_space`
-
-    .. container:: tile no-descr
-
-        :ref:`srgb_colorspace`
-
-    .. container:: tile no-descr
-
-        :ref:`camera_profiles`
-
-    .. container:: tile no-descr
-
-        :ref:`printer_profiles`
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   color_management
 
 ##################
 Geolocation Editor

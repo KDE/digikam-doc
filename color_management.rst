@@ -21,7 +21,7 @@ This section explain all the fondamental rules of color management and how to us
    :caption: Contents:
    :glob:
 
-   color_management/raw_treatment.rst
+   color_management/cm_basis.rst
    color_management/working_space.rst
    color_management/srgb_colorspace.rst
    color_management/camera_profiles.rst
