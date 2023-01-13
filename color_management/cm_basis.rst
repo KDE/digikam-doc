@@ -24,8 +24,8 @@ Overview
 
 When it comes to color management, everyone wants to know, *which buttons do I push to get the results I want*. Unfortunately, color management of necessity involves making informed choices at every step along the image-processing workflow. The purpose of this section is to provide sufficient background information on color management, along with links to more in-depth information, to enable you to begin to make your own informed decisions, based on your own desired results.
 
-Conditions to not Use Color Management
---------------------------------------
+Conditions to Ignore
+--------------------
 
 If your imaging workflow meets all six criteria listed below, then you don't need to worry about color management:
 
