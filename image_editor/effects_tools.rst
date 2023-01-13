@@ -265,7 +265,7 @@ This filter gives your digital images a nice oilpainting-like look. Images of na
 
     The digiKam Image Editor Oil Paint Tool
 
-There are two sliders to control the effect. The upper slider selects the Brush Size between 1 and 5. Bigger brushes are better suited for large images. Smooth controls the smoothness or, seen from the other end, the jaggedness.
+There are two sliders to control the effect. The upper slider selects the **Brush Size** between 1 and 5. Bigger brushes are better suited for large images. **Smooth** controls the smoothness or, seen from the other end, the jaggedness.
 
 .. _effects_raindrops:
 
