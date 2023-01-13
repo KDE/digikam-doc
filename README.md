@@ -406,6 +406,8 @@ All POT file-names starts with **docs_digikam_org** prefix.
 
 The status of the digiKam documentation translations is [available here](https://l10n.kde.org/stats/gui/trunk-kf5/package/digikam-doc/).
 
+Important: Only files listed as **Reviewed** in [TODO](TODO) list are ready for translations.
+
 #### How to Add a New Target Language
 
 The list of current enabled translation languages are in the [locale/](locale) sub-directory.
