@@ -359,6 +359,8 @@ You can change the **Brush size** to paint masks on the canvas. To change a mask
 
     Preservation of features is not possible if enlarging too much, because the inflation process is the exact reverse of the shrinking process, so the maximum amount of pixels you can add to a layer corresponds to the amount of pixels which are not protected. For example, if you have a 1000 pixel wide image and you have marked a 800 pixel wide area for protection, the final width should be less than 1200.
 
+See below the sample image where masks have been applied to preserve important areas in green and remove unwanted in red.
+
 .. figure:: images/editor_liquid_rescale_masks.webp
     :alt:
     :align: center
@@ -420,6 +422,8 @@ In order to get good results form this technique, the main issue is finding whic
 By default, the tool tries to find the seams which cross the lowest-contrast areas (how this happens exactly is specified by the energy function settings). Therefore, each pixel of the image is assigned a so-called *energy value*, as the higher the contrast, the higher the energy, and seams are less likely to cross high-energy areas.
 
 Since in many cases this simple contrast-based method is not optimal, the energy function can be *biased* by the user, who can decide that some areas should have a higher energy (using a preservation masks) or, on the contrary, that they should have a lower energy (using a suppression mask), and therefore effectively *drive* the seams and the whole process.
+
+See below the sample image resized where width have been reduced to 30M. The height still the same. Look like presered areas are not deformed while operation and the unwanted disapear magicaly.
 
 .. figure:: images/editor_liquid_rescale_after.webp
     :alt:
