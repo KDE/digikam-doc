@@ -54,7 +54,7 @@ These are the blurring effects available:
 
 .. warning::
 
-    Some effects can take a long time to run and cause high CPU load. You can always abort an effect by pressing the Abort button during preview rendering.
+    Some effects can take a long time to run and cause high CPU load. You can always abort an effect by pressing the **Abort** button during preview rendering.
 
 .. _effects_charcoal:
 
@@ -71,7 +71,7 @@ The digiKam Charcoal filter uses the gradients of color and luminosity to produc
 
     The digiKam Image Editor Charcoal Tool
 
-There are two sliders to control the effect on a scale of 1-100. The upper slider selects the pencil size, whereas the second slider adjusts the contrast (smoothness).
+There are two sliders to control the effect on a scale of 1-100. The upper slider selects the **Pencil size**, whereas the second slider adjusts the contrast (**Smooth**).
 
 .. note ::
 
@@ -91,7 +91,7 @@ In the age of chemical image processing, solarizing (also known as Sabatier) was
 The Solarization Effect
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The Intensity control helps to preview the solarization by simply increasing it. At about 50% intensity the image shows what was once chemically possible. If you further increase the effect it will finally become a negative image, a stage of inversion not achievable on photographic paper.
+The **Level** control helps to preview the solarization by simply increasing it. At about 50% intensity the image shows what was once chemically possible. If you further increase the effect it will finally become a negative image, a stage of inversion not achievable on photographic paper.
 
 .. figure:: images/editor_solarize.webp
     :alt:
@@ -104,9 +104,9 @@ The Intensity control helps to preview the solarization by simply increasing it.
 The Vivid Effect
 ~~~~~~~~~~~~~~~~
 
-The vivid filter simulates what is known as "Velvia" effect. It is different from saturation in that it has a more pronounced contrast effect that bring colors brilliantly alive and glowing. Try it, it renders beautiful for many subjects!
+The vivid filter simulates what is known as *Velvia* effect. It is different from saturation in that it has a more pronounced contrast effect that bring colors brilliantly alive and glowing. Try it, it renders beautiful for many subjects.
 
-Velvia is a brand of daylight-balanced color reversal film produced by the Japanese company Fujifilm. The name is a contraction of *Velvet Media*, a reference to its smooth image structure. Velvia has very saturated colors under daylight, high contrast. These characteristics make it the slide film of choice for most nature photographers. Velvia's highly saturated colors are, however, considered overdone by some photographers, especially those who don't primarily shoot landscapes. 
+Velvia is a brand of daylight-balanced color reversal film produced by the Japanese company Fujifilm. The name is a contraction of *Velvet Media*, a reference to its smooth image structure. Velvia has very saturated colors under daylight, high contrast. These characteristics make it the slide film of choice for most nature photographers. Velvia's highly saturated colors are, however, considered overdone by some photographers, especially those who don't primarily shoot landscapes. You can controls the Velvia intensity with the **level** setting.
 
 .. figure:: images/editor_vivid.webp
     :alt:
@@ -119,7 +119,7 @@ Velvia is a brand of daylight-balanced color reversal film produced by the Japan
 The Neon Effect
 ~~~~~~~~~~~~~~~
 
-The neon filter simulates neon light along the contrast edges. The level parameter controls the lightness of the result, whereas the interaction slider determines the thickness of the neon light. With big images, the filter might eat the CPU time for a moment.
+The neon filter simulates neon light along the contrast edges. The **Level** parameter controls the lightness of the result, whereas the **Iteraction** slider determines the thickness of the neon light. With big images, the filter might eat the CPU time for a moment.
 
 .. figure:: images/editor_neon.webp
     :alt:
@@ -132,7 +132,7 @@ The neon filter simulates neon light along the contrast edges. The level paramet
 The Find Edges Effect
 ~~~~~~~~~~~~~~~~~~~~~
 
-The find edges filter detects the edges in a photograph and their strength.
+The find edges filter detects the edges in a photograph and their strength. With the **Level** parameter, a low value results in black, high-contrasted image with thin edges. A high value results in thick edges with low contrast and many colors in dark areas. **Iteration** allows to increase or decrease the frame presence in image.
 
 .. figure:: images/editor_edges.webp
     :alt:
@@ -148,6 +148,8 @@ The Lut3D Effect
 The Lut3D filter coloring images by applying transformation based on a 3D lookup table. 
 
 In the film industry, 3D lookup tables are used to map one color space to another. They are commonly used to calculate preview colors for a monitor or digital projector of how an image will be reproduced on another display device, typically the final digitally projected image or release print of a movie. A 3D LUT is a 3D lattice of output RGB color values that can be indexed by sets of input RGB colour values. Each axis of the lattice represents one of the three input color components and the input color thus defines a point inside the lattice. Since the point may not be on a lattice point, the lattice values must be interpolated; most products use trilinear interpolation.
+
+The tool provide a list of Lut3D to apply on the image, including preview thumbnail of the effect. **Intensity** setting allows to adjust the colors overall of the effect on image.
 
 .. figure:: images/editor_lut3d.webp
     :alt:
@@ -206,18 +208,18 @@ These are the distorting effects available:
 
 .. warning::
 
-    Some effects can take a long time to run and cause high CPU load. You can always abort an effect by pressing Abort button during preview rendering.
+    Some effects can take a long time to run and cause high CPU load. You can always abort an effect by pressing **Abort** button during preview rendering.
 
 .. _effects_emboss:
 
 Emboss Image
 ------------
 
-The digiKam Emboss filter sculptures your image into 3-D as if it were stamped into wax. It uses an algorithm copyrighted by Pieter Voloshyn.
+The digiKam Emboss filter sculptures your image into 3-D as if it were stamped into wax.
 
 The digiKam Emboss filter is a quick tool to render your images in a 3-D effect. It works particularly well on images with simple structure where color is not the most important content. The filter uses the difference between colors and luminosity to convert it into a grey, moon-like landscape lit from 10 o'clock.
 
-The Depth control allows to define the contrast of the filtering. A value of 30 (10%) is the standard.
+The **Depth** control allows to define the contrast of the filtering. A value of 30 (10%) is the standard.
 
 .. figure:: images/editor_emboss.webp
     :alt:
@@ -242,11 +244,11 @@ The film grain effect gives your shot a particular mood or seems to transport it
 
     The digiKam Image Editor Film Grain Tool
 
-As common settings, a slider allows control the grain size and you can turn on the granularity simulating a photographic distribution. For Luminance, Chrominance Blue, and Chrominance Red channels, you can adjust the grain intensity with a effects on shadows, middle-tones, and highlight.
+As common settings, a slider allows control the **Grain size** and you can turn on the granularity simulating a photographic distribution. For **Luminance**, **Chrominance Blue**, and **Chrominance Red** channels, you can adjust the grain **Intensity** with a effects on **Shadows**, **Middletones**, and **Highlight**.
 
 .. note::
 
-    If you process a black and white image, the grain needs to be applied only on Luminance channel.
+    If you process a black and white image, the grain needs to be applied only on **Luminance** channel.
 
 .. _effects_oilpaint:
 
@@ -274,16 +276,14 @@ The digiKam Raindrops filter puts beautiful raindrops on your image.
 
 The Raindrops is nice little tool to put raindrops onto your images. Naturally, it renders your image in a kind of wet look.
 
+Three sliders give you control over the effect filter: **Drop size** obviously allows to change the size of the drops. As the drop size doesn't automatically scale with the image size it is often necessary to reduce the size for small images. **Number** changes the number and density of drops. **Fish eye** changes the optical effect of the drops across the image.
+
+.. note::
+
+    You can keep a zone clear of raindrops with the digiKam Image Editor **Select** tool. Selecting the area to avoid (for example a face) before launching the Raindrops filter will keep it free from rain drops.
+
 .. figure:: images/editor_rain_drops.webp
     :alt:
     :align: center
 
-    The digiKam Image Editor Rain Drops Tool
-
-Three sliders give you control over the effect filter:
-
-Drop size obviously allows to change the size of the drops. As the drop size doesn't automatically scale with the image size it is often necessary to reduce the size for small images. Number changes the number and density of drops. Fish eye changes the optical effect of the drops across the image.
-
-.. note::
-
-    You can keep a zone clear of raindrops with the digiKam Image Editor Select tool. Selecting the area to avoid (for example a face) before launching the Raindrops filter will keep it free from rain drops.
+    Rain Drops Tool Applying Effect to Whole Image Excepted on Dog Face
