@@ -144,7 +144,7 @@ When installer is running, follow instructions from the assistant to install app
 Application Rights
 ~~~~~~~~~~~~~~~~~~
 
-When the installation is done, digiKam will need to access on system resources to run properly. This will be ask by the system when digiKam run, depending of actions performed by user.
+When the installation is done, digiKam will need to access on system resources to run properly. This will be asked by the system when digiKam run, depending of actions performed by user.
 See below some examples of rights set in the macOS **Security and Privacy** policy configuration panel:
 
 - **Automation**: This right is set when you try to open an album in Apple Finder file manager through digiKam.
@@ -165,7 +165,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
 
     The macOS Security and Privacy Panel with the Accessibility Rights
 
-- **Files And Folders**: if you a place your collections on your computer outside the Photos directory from your personal account, digiKam needs special right to access to contents.
+- **Files And Folders**: if you place your collections on your computer outside the Photos directory from your personal account, digiKam needs special right to access to contents.
 
 .. figure:: images/macos_privacy_filesfolders.webp
     :width: 300px
@@ -183,7 +183,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
 
     The macOS Security and Privacy Panel with the Full Disk Access Rights
 
-- **Photos**: if you want to share Apple Photos collection from your personal account, you will needs to turn on this rights.
+- **Photos**: if you want to share Apple Photos collection from your personal account, you will needs to turn on these rights.
 
 .. figure:: images/macos_privacy_photos.webp
     :width: 300px

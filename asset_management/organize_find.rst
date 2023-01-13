@@ -106,7 +106,7 @@ digiKam also provides automatic tagging features based on deep-learning:
 
     - :ref:`Image Quality Sorting <maintenance_quality>` to assign automatically a **Pick Label** to item based on aesthetic factors.
     - :ref:`Face Detection <face_detection>` to detect faces on image and record areas on database.
-    - :ref:`Face recognition <face_recognition>` to assigned people tags automatically based on already tagged ones 
+    - :ref:`Face recognition <face_recognition>` to assign people tags automatically based on already tagged ones 
 
     .. figure:: images/dam_maintenance_tool.webp
         :alt:
