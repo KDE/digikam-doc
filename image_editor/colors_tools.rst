@@ -114,6 +114,12 @@ Simulate Infrared Film
 
 Simulating classical infrared film material (the effect is rendered in black and white) is an interesting alienation effect that is even stronger and more dramatic than pure black and white conversion. Contrast and an abstract touch are improved, which can underpin the expression of the photographer as an artist. It is like taking an image in black and white with a red filter on the camera lense. Areas which reflect little red light, e.g. the sky, will show as low density, dark areas. Areas which are excellent reflectors of red light, e.g. most green foliage, will be high density areas. And snow landscapes are really dramatic.
 
+.. figure:: images/editor_infrared.webp
+    :alt:
+    :align: center
+
+    The Image Editor to Emulate Infrared Films
+
 The filter tries to reproduce the famous Ilford(tm) SFX and Kodak Tmax infrared film series. These films has a sensitivity range of 200-800 ISO:
 
     - Ilford SPX 200, Ilford SPX 400, Ilford SPX 800.
