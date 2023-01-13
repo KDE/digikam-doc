@@ -14,7 +14,7 @@
 Color Management
 ################
 
-This section explain how to use the Color Management in digiKam.
+This section explain all the fondamental rules of color management and how to use it in digiKam.
 
 .. toctree::
    :maxdepth: 2
