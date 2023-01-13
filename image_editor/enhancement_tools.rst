@@ -161,14 +161,13 @@ From Image Editor go to :menuselection:`Enhance --> Lens --> Auto Corrections` m
 
 If the exact used to take the picture is available it will mention that it matches with the metadata (annoted in **Green**), however if the exact match is not available it will choose the settings from the most closes match (annoted in **Orange**). In this case it also allows users to select the lens themselves.
 
-+---------------------------------------------------------+---------------------------------------------------------------+
-| .. figure:: images/editor_lens_auto_metadata_match.webp | .. figure:: images/editor_lens_auto_metadata_partial.webp     |
-|    :width: 250px                                        |    :width: 250px                                              |
-|    :alt:                                                |    :alt:                                                      |
-|    :align: center                                       |    :align: center                                             |
-+---------------------------------------------------------+---------------------------------------------------------------+
-| Uses File Metadata Match with LensFun Database Content  | Uses File Metadata do not Match with LensFun Database Content |
-+---------------------------------------------------------+---------------------------------------------------------------+
++---------------------------------------------------------+-----------------------------------------------------------+
+| .. figure:: images/editor_lens_auto_metadata_match.webp | .. figure:: images/editor_lens_auto_metadata_partial.webp |
+|    :alt:                                                |    :alt:                                                  |
+|    :align: center                                       |    :align: center                                         |
++---------------------------------------------------------+-----------------------------------------------------------+
+|    Metadata Match with LensFun Database                 |    Metadata do not Match with LensFun Database            |
++---------------------------------------------------------+-----------------------------------------------------------+
 
 You can either enable or disable the helper **Grid** lines to visualise how the geometrical distortion are corrected on image.
 
