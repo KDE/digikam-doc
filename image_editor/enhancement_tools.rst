@@ -165,6 +165,7 @@ If the exact used to take the picture is available it will mention that it match
 
 +---------------------------------------------------------+---------------------------------------------------------------+
 | .. figure:: images/editor_lens_auto_metadata_match.webp | .. figure:: images/editor_lens_auto_metadata_partial.webp     |
+|    :width: 250px                                        |    :width: 250px                                              |
 |    :alt:                                                |    :alt:                                                      |
 |    :align: center                                       |    :align: center                                             |
 +---------------------------------------------------------+---------------------------------------------------------------+
