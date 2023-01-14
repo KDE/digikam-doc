@@ -31,8 +31,8 @@ Working space profiles are characterized by:
 
     - White point (usually D50 or D65 though other values may be used), which specifies the color temperature of the white point of the working space. 
 
-Gamma for a Working Space
--------------------------
+Gamma Properties
+----------------
 
 The gamma of a color profile dictates what power transform needs to take place to properly convert from an image's embedded color profile (perhaps your working color space or your camera color profile) to another color profile with a different gamma, such as your chosen working space, or the display profile used to display the image on the screen or perhaps from one working space to another, or perhaps from your working space to your printer's color space. Libraw outputs a 16-bit image with a linear gamma, which means that a histogram of the resulting image file shows the actual amount of light that each pixel on the camera sensor captured during the exposure (paraphrasing this page). (Which is why at present applying a camera profile to the Libraw output also requires applying an appropriate gamma transform to get to the desired working space, unless the camera profile also uses gamma=1.)
 
@@ -50,10 +50,10 @@ In addition to gamma=1.8 and gamma=2.2, the only other gamma for a working space
 
 Unfortunately and despite their undeniable mathematical advantages, linear gamma working spaces have so few tones in the shadows that (in my opinion) they are impossible to use for editing if one is working in 8-bits, and still problematic at 16-bits. When the day comes when we are all doing our editing on 32-bit files produced by our HDR cameras on our personal supercomputers, I predict that we will all be using working spaces with gamma=1. Adobe Lightroom is already using a linear gamma working space "under the hood", CS2 allows the option of using linear gamma for mixing colors, and Lightzone has always used a linear gamma working space.
 
-How many discrete tonal steps are there in a digital image? In an 8-bit image, you have 256 tonal steps from solid black to solid white. In a 16-bit image theoretically you have 65536 steps. But remember, those 16-bits started out as either 10 bits (=1024 steps), 12 bits (=4096 steps), or 14 bits (=16384 steps) as produced by the camera's A-to-D converter - the extra bits to reach 16-bits start out as just padding. The available tones are not distributed evenly from light to dark. In linear gamma mode (as the camera sensor sees things), there's a whole lot more tones in the highlights than in the shadows. Hence the advice, if you shoot raw, to "expose to the right but don't blow the highlights". See Ron Bigelow's articles on "why raw", for a full discussion of the distribution of available tones in a raw image.
+Image Tonal Steps and Gamut Size
+--------------------------------
 
-Should I use a large-gamut or a small-gamut working space?
-----------------------------------------------------------
+How many discrete tonal steps are there in a digital image? In an 8-bit image, you have 256 tonal steps from solid black to solid white. In a 16-bit image theoretically you have 65536 steps. But remember, those 16-bits started out as either 10 bits (=1024 steps), 12 bits (=4096 steps), or 14 bits (=16384 steps) as produced by the camera's A-to-D converter - the extra bits to reach 16-bits start out as just padding. The available tones are not distributed evenly from light to dark. In linear gamma mode (as the camera sensor sees things), there's a whole lot more tones in the highlights than in the shadows. Hence the advice, if you shoot raw, to "expose to the right but don't blow the highlights". See Ron Bigelow's articles on "why raw", for a full discussion of the distribution of available tones in a raw image.
 
 One major consideration in choosing a working space is that some working spaces are bigger than others, meaning they cover more of the visible spectrum (and as a consequence include some imaginary colors - mathematical constructs that don't really exist). These bigger spaces offer the advantage of allowing you to keep all the colors captured by your camera and preserved by the Lcms conversion from your camera profile to the super-wide-gamut profile connection space and out again to your chosen working space.
 
