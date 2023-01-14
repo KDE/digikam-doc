@@ -339,7 +339,7 @@ The tool comes with several presets as starting points and to simplify the resto
 
     - **Reduce Texturing**: Optimized to remove artifacts from scanning, digitizing or Moire patterns.
 
-If you want to set filter parameters for finer adjustments, use **SGeneral** and **Advanced Settings** tabs:
+If you want to set filter parameters for finer adjustments, use **General** and **Advanced Settings** tabs:
 
     .. figure:: images/editor_restoration_settings1.webp
         :alt:
