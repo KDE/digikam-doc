@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-13 00:49+0000\n"
+"POT-Creation-Date: 2023-01-14 00:49+0000\n"
 "PO-Revision-Date: 2022-12-31 13:03+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -15,7 +15,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../image_editor/transform_tools.rst:1
 msgid "digiKam Image Editor Transform Tools"
@@ -102,7 +102,8 @@ msgstr ""
 
 #: ../../image_editor/transform_tools.rst:57
 msgid ""
-"A Panorama Processed by Auto-Crop to Drop the Black Frame Around the Image"
+"A Panorama Processed on the Bottom by Auto-Crop to Drop the Black Frame "
+"Around the Original Image on the Top."
 msgstr ""
 
 #: ../../image_editor/transform_tools.rst:62
@@ -363,7 +364,7 @@ msgid ""
 "when using JPEG format. You also can rotate more accurately to a finer "
 "degree by using the Free Rotation tool. You can access it by the :"
 "menuselection:`Transform --> Free Rotation` menu entry. See the dedicated "
-"Free Rotation seection below for more information."
+"Free Rotation section below for more information."
 msgstr ""
 
 #: ../../image_editor/transform_tools.rst:135
@@ -900,78 +901,84 @@ msgid ""
 "width should be less than 1200."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:366
+#: ../../image_editor/transform_tools.rst:362
+msgid ""
+"See below the sample image where masks have been applied to preserve "
+"important areas in green and remove unwanted in red."
+msgstr ""
+
+#: ../../image_editor/transform_tools.rst:368
 msgid ""
 "**Step 2**: Liquid Rescale Preservation and Suppression Masks Applied Over "
 "the Sample Image Before Resizing"
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:369
+#: ../../image_editor/transform_tools.rst:371
 msgid "Energy Function"
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:375
+#: ../../image_editor/transform_tools.rst:377
 msgid "The digiKam Liquid Rescale Energy Function Settings"
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:377
+#: ../../image_editor/transform_tools.rst:379
 msgid ""
 "In this section, you can choose a gradient function applied while rescaling. "
 "This function is used to determine which pixels should be removed or kept. "
 "Possible values are listed below:"
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:379
+#: ../../image_editor/transform_tools.rst:381
 msgid "**Norm of brightness gradient**: norm of the brightness gradient."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:380
+#: ../../image_editor/transform_tools.rst:382
 msgid ""
 "**Sum of absolute values of brightness gradients**: sum of absolute values "
 "of the brightness gradients in both directions."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:381
+#: ../../image_editor/transform_tools.rst:383
 msgid ""
 "**Absolute value of brightness gradient**: absolute value of the brightness "
 "gradient in the direction of the rescaling (this is the default)."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:382
+#: ../../image_editor/transform_tools.rst:384
 msgid "**Norm of luma gradient**: norm of the luma gradient."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:383
+#: ../../image_editor/transform_tools.rst:385
 msgid ""
 "**Sum of absolute values of luma gradients**: sum of absolute values of the "
 "luma gradients in both directions."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:384
+#: ../../image_editor/transform_tools.rst:386
 msgid ""
 "**Absolute value of luma gradient**: absolute value of the luma gradient in "
 "the direction of the rescaling."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:386
+#: ../../image_editor/transform_tools.rst:388
 msgid ""
 "The **Preserve Skin Tones** option allows to preserve pixels whose color is "
 "close to a skin tone."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:389
+#: ../../image_editor/transform_tools.rst:391
 msgid "Advanced Settings"
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:395
+#: ../../image_editor/transform_tools.rst:397
 msgid "The digiKam Liquid Rescale Advanced Settings"
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:397
+#: ../../image_editor/transform_tools.rst:399
 msgid "In this section, you can tune some advanced values to tweak the tool."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:399
+#: ../../image_editor/transform_tools.rst:401
 msgid ""
 "**Overall rigidity of the seams**: Use this value to give a negative bias to "
 "the seams which are not straight. May be useful to prevent distortions in "
@@ -980,14 +987,14 @@ msgid ""
 "layer if no rigidity mask is used."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:403
+#: ../../image_editor/transform_tools.rst:405
 msgid ""
 "The bias is proportional to the difference in the transversal coordinate "
 "between each two successive points, elevated to the power of 1.5, and summed "
 "up for the whole seam."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:405
+#: ../../image_editor/transform_tools.rst:407
 msgid ""
 "**Maximum number of transversal steps**: This option lets you choose the "
 "maximum transversal step that the pixels in the seams can take. In the "
@@ -999,7 +1006,7 @@ msgid ""
 "the situation, you can use the rigidity setting."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:407
+#: ../../image_editor/transform_tools.rst:409
 msgid ""
 "**Side switch frequency**: During the carving process, at each step the "
 "optimal seam to be carved is chosen based on the relevance value for each "
@@ -1012,17 +1019,17 @@ msgid ""
 "rescaling, at the cost of slightly worse performance."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:409
+#: ../../image_editor/transform_tools.rst:411
 msgid ""
 "**Resize Order**: Here you can set whether to resize **horizontally first** "
 "or **vertically first**."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:412
+#: ../../image_editor/transform_tools.rst:414
 msgid "More Details About the Seam Carving Technique"
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:414
+#: ../../image_editor/transform_tools.rst:416
 msgid ""
 "The tool works by finding so-called *seams* over an image, i.e. continuous, "
 "zig-zagged lines transversing the image from top to bottom (*vertical* "
@@ -1035,7 +1042,7 @@ msgid ""
 "is called a *seams map*."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:416
+#: ../../image_editor/transform_tools.rst:418
 msgid ""
 "Mirroring the carving process, by inserting additional seams besides the "
 "ones which are found by the algorithm, instead of removing them, image "
@@ -1043,7 +1050,7 @@ msgid ""
 "this case."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:418
+#: ../../image_editor/transform_tools.rst:420
 msgid ""
 "In order to get good results form this technique, the main issue is finding "
 "which are the most suitable seams to carve or to insert. If the aim is "
@@ -1052,7 +1059,7 @@ msgid ""
 "features of the image, and instead pass through a background landscape."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:420
+#: ../../image_editor/transform_tools.rst:422
 msgid ""
 "By default, the tool tries to find the seams which cross the lowest-contrast "
 "areas (how this happens exactly is specified by the energy function "
@@ -1061,7 +1068,7 @@ msgid ""
 "are less likely to cross high-energy areas."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:422
+#: ../../image_editor/transform_tools.rst:424
 msgid ""
 "Since in many cases this simple contrast-based method is not optimal, the "
 "energy function can be *biased* by the user, who can decide that some areas "
@@ -1070,7 +1077,14 @@ msgid ""
 "and therefore effectively *drive* the seams and the whole process."
 msgstr ""
 
-#: ../../image_editor/transform_tools.rst:428
+#: ../../image_editor/transform_tools.rst:426
+msgid ""
+"See below the sample image resized where width have been reduced by 30%. The "
+"height still the same. Look like presered areas are not deformed while "
+"operation and the unwanted disapear magicaly."
+msgstr ""
+
+#: ../../image_editor/transform_tools.rst:432
 msgid ""
 "**Step 3**:The Sample Image Width Finally Reduced With Liquid Rescale Masks "
 "Applied"
