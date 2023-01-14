@@ -332,7 +332,7 @@ Color Management
 
     .. container:: tile no-descr
 
-        :ref:`srgb_colorspace`
+        :ref:`monitor_profiles`
 
     .. container:: tile no-descr
 

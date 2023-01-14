@@ -1,6 +1,6 @@
 .. meta::
-   :description: Color Management and sRGB Color Space
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image editor, color management, icc, profile
+   :description: Color Management and Monitor Profiles
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image editor, color management, icc, profile, srgb
 
 .. metadata-placeholder
 
@@ -8,9 +8,9 @@
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
-.. _srgb_colorspace:
+.. _monitor_profiles:
 
-The sRGB Color Space
+The Monitor Profiles
 ====================
 
 What is so special about the sRGB color space?

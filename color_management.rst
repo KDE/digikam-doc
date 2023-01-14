@@ -1,6 +1,6 @@
 .. meta::
    :description: Learn The Fondamental Rules of Color Management
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, color, management
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, color, management, profile
 
 .. metadata-placeholder
 
@@ -23,6 +23,6 @@ This section explain all the fondamental rules of color management and how to us
 
    color_management/cm_basis.rst
    color_management/working_space.rst
-   color_management/srgb_colorspace.rst
+   color_management/monitor_profiles.rst
    color_management/camera_profiles.rst
    color_management/printer_profiles.rst

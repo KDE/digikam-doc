@@ -1,5 +1,5 @@
 .. meta::
-   :description: Color Management and Soft Proofing
+   :description: Color Management and Printer Profiles
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
 
 .. metadata-placeholder
