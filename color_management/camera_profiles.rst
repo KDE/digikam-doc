@@ -13,12 +13,24 @@
 The Camera Profiles
 ===================
 
-Using Camera Profile during Shoots
-----------------------------------
+Using Camera Profile
+--------------------
 
-First and for the record, many excellent professional and amateur photographers save all their images as in-camera Jpegs and work exclusively in the sRGB color space. But if you want to work in a larger color space, or if you want to work with RAW files (even if you output sRGB image files from your RAW files), read on.
+Many excellent professional and amateur photographers save all their images as in-camera Jpegs and work exclusively in the sRGB color space. But if you want to work in a larger color space, or if you want to work with RAW files (even if you output sRGB image files from your RAW files), read on.
 
 If you are reading this manual you probably are shooting RAW images with a digital dSLR and you are hoping that somewhere in the arcane waters of color management lies the answer to how to get a nice picture from your RAW image file. And you're right! The next thing you need is the right camera profile for developing your RAW image. But first let's answer the question you really might have been asking.
+
+.. figure:: images/cm_raw_preview_embedded.webp
+    :alt:
+    :align: center
+
+    digiKam Raw Preview Using Embedded JPEG Image.
+
+.. figure:: images/cm_raw_import_default.webp
+    :alt:
+    :align: center
+
+    digiKam Raw Import Tool from Image Editor Demosaicing the Same RAW file with Default Settings.
 
 Why doesn't the image produced by RAW converters like Libraw look like the embedded preview displayed by digiKam? All digital camera images start out as RAW files, whether or not the camera allows the user the option to save the image as a RAW file. When you ask the camera to save Jpegs instead of RAW files, the camera uses its on-board processor to convert the RAW file to a Jpeg. That embedded preview is what your final image would have looked like if you had set your camera to save Jpegs instead of RAW files.
 
@@ -34,9 +46,9 @@ The embedded Jpeg preview looks so much nicer than Libraw's output. What is the 
 
     digiKam Raw Import Tool from Image Editor Allows to Post Process Exposures and Curves just After the Demosaicing.
 
-It seems to me that the heart and soul of image processing is the deliberate manipulation of image tonality, color, selective sharpening, and so forth, such that the viewer focuses in on what you, the photographer, found of particular interest when you took the picture. Why give the art of image processing over to some proprietary RAW processing software? In other words, *flat is good* if you'd rather give your images your own artistic interpretation. The alternative is to let the canned, proprietary algorithms produced by Canon, Nikon, Sony, etc. interpret your images for you. (On the other hand, there is no denying that for many images, those canned algorithms are really pretty good).
+It seems to me that the heart and soul of image processing is the deliberate manipulation of image tonality, color, selective sharpening, and so forth, such that the viewer focuses in on what you, the photographer, found of particular interest when you took the picture. Why give the art of image processing over to some proprietary RAW processing software? In other words, *flat is good* if you'd rather give your images your own artistic interpretation. The alternative is to let the canned, proprietary algorithms produced by Canon, Nikon, Sony, etc. interpret your images for you. On the other hand, there is no denying that for many images, those canned algorithms are really pretty good.
 
-I can see the value in starting my image-editing with a scene-referred rendition instead of the eye-popping rendition that I see in the embedded Jpeg. But the images produced by digiKam and Libraw look really different. If the image looks very dark, then you asked Libraw to output a 16-bit file and you have run into a problem with Libraw not applying a gamma transform before outputting the image file. You can use the Image Editor to apply the appropriate gamma transform to the image file produced by Libraw. Or you can find or make a camera profile with a gamma of 1.
+You can can see the value in starting my image-editing with a scene-referred rendition instead of the eye-popping rendition that you see in the embedded Jpeg. But the images produced by digiKam and Libraw look a little bit different. If the image looks very dark, then you asked Libraw to output a 16-bit file and you have run into a problem with Libraw not applying a gamma transform before outputting the image file. You can use the Image Editor to apply the appropriate gamma transform to the image file produced by Libraw. Or you can find or make a camera profile with a gamma of 1.
 
 If your image has pink highlights, Check you **White Balance** settings in RAW Import tool, especially the **highlights** options.
 
