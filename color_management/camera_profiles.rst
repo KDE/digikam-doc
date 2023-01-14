@@ -64,7 +64,7 @@ Camera Profile and RAW Treatment
 
 The whole point of interpolation using demosaicing algorithms such as Libraw's default AHD is to guess what color and intensity of light actually fell on any given pixel by interpolating information gathered from that single pixel plus its neighboring pixels (see Wikipedia article). Every RAW processing program makes additional assumptions such as "when is it signal and when is it background noise?", "at what point has the sensor well reached full saturation?", and so forth. The resulting output of all these algorithms and assumptions that RAW processing software makes is a trio of RGB values for each pixel in the image. Given the same RAW file, different RAW processors will output different RGB values.
 
-.. figure:: images/cm_RAW_import_tool.webpp
+.. figure:: images/cm_RAW_import_tool.webp
     :alt:
     :align: center
 
