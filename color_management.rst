@@ -1,5 +1,5 @@
 .. meta::
-   :description: Learn The Fondamental Rules of Color Management
+   :description: Learn The Fundamental Rules of Color Management
    :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, color, management, profile
 
 .. metadata-placeholder
@@ -14,7 +14,7 @@
 Color Management
 ################
 
-This section explain all the fondamental rules of color management and how to use it in digiKam.
+This section explain all the fundamental rules of color management and how to use it in digiKam.
 
 .. toctree::
    :maxdepth: 2

@@ -159,7 +159,7 @@ No lens is optically perfect. Even the most expensive lenses have there own impe
 
 From Image Editor go to :menuselection:`Enhance --> Lens --> Auto Corrections` menu entry to start the automatic lens correction tool. This feature uses lens data from the `Lensfun library <https://lensfun.github.io/>`_ and it has a very much up to date database of lenses which are available. It has more than a hundred lenses in its current databases. It also uses the **Metadata** from the image to find-out which lens is used.
 
-If the exact used to take the picture is available it will mention that it matches with the metadata (annoted in **Green**), however if the exact match is not available it will choose the settings from the most closes match (annoted in **Orange**). In this case it also allows users to select the lens themselves. If metadata do not match at all, it' will be annoted in **Red**.
+If the exact used to take the picture is available it will mention that it matches with the metadata (annoted in **Green**), however if the exact match is not available it will choose the settings from the most closes match (annoted in **Orange**). In this case it also allows users to select the lens themselves. If metadata do not match at all, it will be annoted in **Red**.
 
 .. figure:: images/editor_lens_auto_metadata_match.webp
    :alt:
@@ -607,9 +607,9 @@ To select the source of image to clone, press **S**, or the **Source selection**
 
     Screencast of Image Editor Healing Clone Fixing an Artifact with Spot Tool
 
-The tool provide also a **Lasso** and **Polygon** selector for the healing clone operations. You can either press **L** or the **Lasso selector** button from the toolbar on the top of settings view. The cursor will change to a pen shape, and you can select discrete points as you like. The polygon edges will be drawn, you just need to press and move your mouse to complete the selection form. You don’t have to draw all the region in one time. The polygon will close on itself if you press **L** again.
+The tool provide also a **Lasso** and **Polygon** selector for the healing clone operations. You can either press :kbd:`L` or the **Lasso selector** button from the toolbar on the top of settings view. The cursor will change to a pen shape, and you can select discrete points as you like. The polygon edges will be drawn, you just need to press and move your mouse to complete the selection form. You don’t have to draw all the region in one time. The polygon will close on itself if you press :kbd:`L` again.
 
-Now only cloning inside the selected region will happens, cloning outside will be ignored, unless you press **L** again or **ESC** to de-activate the lasso mode. Once you do that, you can clone anywhere in the screen as usual. Also pressing **ESC** while in the process of drawing the lasso polygon will cancel the lasso operation. Here is a screenshot of a lasso polygon selection, and a large portion of the image cloned inside this lasso portion. Of course pressing **L** or **ESC** again will remove the lasso boundary, keeping the cloned pixels in place, as expected.
+Now only cloning inside the selected region will happens, cloning outside will be ignored, unless you press :kbd:`L` again or :kbd:`Esc` to deactivate the lasso mode. Once you do that, you can clone anywhere in the screen as usual. Also pressing **ESC** while in the process of drawing the lasso polygon will cancel the lasso operation. Here is a screenshot of a lasso polygon selection, and a large portion of the image cloned inside this lasso portion. Of course pressing :kbd:`L` or :kbd:`Esc` again will remove the lasso boundary, keeping the cloned pixels in place, as expected.
 
 .. figure:: videos/editor_clone_lasso.gif
     :width: 600px
@@ -618,4 +618,4 @@ Now only cloning inside the selected region will happens, cloning outside will b
 
     Screencast of Image Editor Healing Clone Fixing an Aera Using Lasso
 
-You can undo and redo using toolbar buttons from the toolbar on the top of settings view. Two keyboard shortcuts are assigned to the tool: :kbd:`CTRL-Z` for undo and :kbd:`CTRL-shift-Z` for redo. You can undo and redo without limitation.
+You can undo and redo using toolbar buttons from the toolbar on the top of settings view. Two keyboard shortcuts are assigned to the tool: :kbd:`Ctrl+Z` for undo and :kbd:`Ctrl+Shift+Z` for redo. You can undo and redo without limitation.

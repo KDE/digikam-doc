@@ -98,7 +98,7 @@ When the download is complete, a checksum is computed to be sure that files is n
 
     Dialog under Windows When Install is Ready to be Processed
 
-Just press **Install** button to process finak stage. The current digiKam session will be closed and installer will be started.
+Just press **Install** button to process the final stage. The current digiKam session will be closed and installer will be started.
 
 .. note::
 

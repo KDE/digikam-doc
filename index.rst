@@ -318,7 +318,7 @@ Color Management
     :alt:
     :target: color_management.html
 
-    Learn The Fondamental Rules of Color Management
+    Learn The Fundamental Rules of Color Management
 
 .. container:: toctile
 
