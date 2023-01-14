@@ -95,12 +95,12 @@ In other words, large gamut working spaces, improperly handled, can lead to lost
 
     - For archival purposes, convert your RAW file to a 16-bit TIFF with a large gamut working space to avoid loosing color information. Then convert this archival TIFF to your working space of choice (saving the converted working TIFF under a new name, of course). See here for more details. 
 
-    .. figure:: images/cm_bqm_convert_space.webp.webp
+    .. figure:: images/cm_bqm_convert_space.webp
         :alt:
         :align: center
 
         digiKam Queue Manager Allows to Batch Convert Color Space in Batch
-    
+
 The whys of these bits of advice regarding which working space are beyond the scope of this manual. See Bruce Lindbloom's excellent website (Info, Information about RGB Working Spaces) for a visual comparison of the gamut (array of included colors) of the various working color spaces. See here and here for a pro and con presentation, respectively, of the merits of using large gamut working spaces. And while you are on the cambridgeincolour.com website, check out the tutorial on color management.
 
 Gamma Properties
