@@ -56,9 +56,9 @@ Now, the next question is: which working space should I use? Working spaces, suc
 
 Most working space profiles are characterized by:
 
-    - The **Gamut** to define the rage of colors of the profile.
+    - The **Gamut** to define the range of colors of the profile.
 
-    - The **White point** to define the total dynamic range of the profile..
+    - The **White point** to define the total dynamic range of the profile.
 
     - The **Gamma** to define the transfer function of the profile.
 
@@ -68,7 +68,7 @@ The gamma of a color profile dictates what power transform needs to take place t
 
 .. tip::
 
-    Mathematically speaking, for a power transform you normalize the RGB numbers and raise the resulting numbers to an appropriate power depending on the respective gammas of the starting and ending color space, then renormalize the results to a new set of RGB numbers. Lcms does this for you when you ask to you workflow to convert from one color space to another.
+    Mathematically speaking, for a power transform you normalize the RGB numbers and raise the resulting numbers to an appropriate power depending on the respective gammas of the starting and ending color space, then renormalize the results to a new set of RGB numbers. Lcms does this for you when there is a need to convert from one color space to another in your workflow.
 
 One practical consequence of the gamma of a working space is that the higher the gamma, the more tones are available for editing in the shadows, with consequently fewer tones available in the highlights. So theoretically, if you are working on a very dark-toned (low key) image you might want a working space with a higher gamma. And if you are working on a high key image, say a picture taken in full noon sunlight of a wedding dress with snow as a backdrop, you might want to choose a working space with a lower gamma, so you have more available tonal gradations in the highlights. But in the real world of real image editing, almost everyone uses working spaces with either gamma 1.8 or 2.2.
 
@@ -99,7 +99,7 @@ In other words, large gamut working spaces, improperly handled, can lead to lost
         :alt:
         :align: center
 
-        digiKam Queue Manager Allows to Batch Convert Color Space in Batch
+        digiKam Queue Manager Allows to Batch Convert Color Space
 
 The whys of these bits of advice regarding which working space are beyond the scope of this manual. See Bruce Lindbloom's excellent website (Info, Information about RGB Working Spaces) for a visual comparison of the gamut (array of included colors) of the various working color spaces. See here and here for a pro and con presentation, respectively, of the merits of using large gamut working spaces. And while you are on the cambridgeincolour.com website, check out the tutorial on color management.
 

@@ -24,7 +24,7 @@ See this page for an excellent presentation of the benefits of producing your ow
     :alt:
     :align: center
 
-    digiKam Image Editor Print Feature Allow to use your Prefered Printer Color Profile and Tune the Black Point Compensation.
+    digiKam Image Editor Print Feature Allows Using Your Preferred Printer Color Profile and Tune the Black Point Compensation.
 
 The Rendering intents
 ---------------------

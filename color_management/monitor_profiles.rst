@@ -58,7 +58,7 @@ If the brightness/contrast is set too high, you will assume your images have a l
     :alt:
     :align: center
 
-    :kbd:`F12` Shortcuts Allows to Turn On/Off the Color Management in Image Editor and all digiKam Thumbnail Views
+    :kbd:`F12` Shortcut Allows to Turn On/Off the Color Management in Image Editor and all digiKam Thumbnail Views
 
 If your monitor gamma is improperly set, your tonal variations from dark to light will be off. That is, the shadows or highlights might be overly compressed or expanded, leading you to compensate in the opposite direction. So when viewed on a properly calibrated monitor, the shadows might be too bright or dark (or the highlights too dark or bright), with the rest of the image suffering from tonal over-compression. And heaven help you if the internal R, G, and B guns (or LCD equivalent) of your monitor are improperly set (each gun has its own black point and gain), because the resulting color casts - too green, too magenta, too orange, etc. that you will inevitably create by "correcting" your image during editing - are very obvious when viewed on a properly calibrated monitor.
 
@@ -97,7 +97,7 @@ Under Linux, icc profiles are generally located in the /usr/share/color/icc fold
 
     digiKam Allows to Setup Customized Places Where you can Store your Personal Color Profile
 
-Ambiant Light and Monitor
+Ambient Light and Monitor
 -------------------------
 
 Does the lighting and wall/ceiling/drape/furniture colors near my monitor matter? Good lighting is a prerequisite for proper image editing and for comparing prints to the image on your screen. If the lighting near your workstation is too bright, colors on your monitor look too dark, and conversely. If the light from the fixtures in your workroom have a low CRI (color rendering index, meaning you don't have full spectrum bulbs), or if the light in your workroom comes from a window and so varies as the weather and time of day varies (or worse, is filtered through colored drapery), or if the walls and ceiling are creating color casts on your monitor, then your editing process will "correct" color casts that don't really exist. Best advice, as far as is consistent with maintaining harmony in the family: neutral grey walls and ceiling, cover the windows, wear neutral clothing, set appropriate light levels using appropriate bulbs and fixtures. For more information on what are the appropriate light levels, bulbs and fixtures for editing images and viewing prints, see the following articles:
