@@ -18,7 +18,7 @@ Using Printer Profile
 
 We are now almost ready to print that image. Where do I get a printer profile? you already know the answer. You can use the generic profile that comes with your printer. You can purchase a professionally produced profile. If you ask, some commercial printing establishments will send you their printer profiles (which won't work with your printer!). You can make your own printer profile using Argyll, in which case your profile can be tailored to your particular paper, inks, and even image characteristics (if you are printing a series of images with a color palette limited to subdued browns, you don't need a printer profile that tries to make room for saturated cyans and blues). I cannot offer any more advice or links to more information on this subject because I've just started to learn about printing images (previously I've only viewed and shared my images via monitor display). But do see this page for an excellent presentation of the benefits of producing your own printer profile, plus a resoundingly positive endorsement of using Argyll for making your printer profile.
 
-.. figure:: cm_editor_print_advanced_settings.webp
+.. figure:: images/cm_editor_print_advanced_settings.webp
     :alt:
     :align: center
 
@@ -41,7 +41,7 @@ There are four commonly-used rendering intents: perceptual, relative colorimetri
 
     - Saturation rendering intent tries to preserve saturated colors. 
 
-.. figure:: cm_rendering_indents.webp
+.. figure:: images/cm_rendering_indents.webp
     :alt:
     :align: center
 
@@ -66,7 +66,7 @@ What rendering intent should I use when I soft-proof?
 
 I've always heard that you ought to use "perceptual intent" when transforming an image from a larger working space to a smaller printer space. But especially in light of reading the aforementioned Cambridge in Color article, it seems that perceptual intent may or may not give the best results, depending on the respective gamuts of the image and printer/paper combination in question. I've been experimenting quite a bit lately with output intents for printing. I find that for my images, the colorimetric intents give clearer, brighter colors, albeit at the cost of having to carefully re-edit the image to avoid clipping highlights and shadows. Perusal of the various photography forums and articles available on the Internet indicates that "perceptual intent" is just an option, not by any means always "the best" option.
 
-.. figure:: cm_printer_soft_proofing.webp
+.. figure:: images/cm_printer_soft_proofing.webp
     :alt:
     :align: center
 

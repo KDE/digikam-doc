@@ -74,7 +74,7 @@ Useful mathematical information if you are dealing with Libraw's linear gamma ou
 
     - **AdobeRGB**, Adobe **WideGamutRGB**, and Kodak/Adobe **ProPhotoRGB** (Kodak and Adobe ProPhoto are the same, just branded differently) and their non-branded, non-copyrighted counterparts. 
 
-    .. figure:: cm_editor_convert_prorgb.webp
+    .. figure:: images/cm_editor_convert_prorgb.webp
         :alt:
         :align: center
 
