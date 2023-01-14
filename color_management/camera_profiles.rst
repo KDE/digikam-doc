@@ -13,8 +13,8 @@
 The Camera Profiles
 ===================
 
-Color Management During Shooting Session
-----------------------------------------
+Color Management and Camera Shooting
+------------------------------------
 
 First and for the record, many excellent professional and amateur photographers save all their images as in-camera jpegs and work exclusively in the sRGB color space. But if you want to work in a larger color space, or if you want to work with raw files (even if you output sRGB image files from your raw files), read on.
 
@@ -41,7 +41,7 @@ If your image has pink highlights, there's a solution. For an explanation of the
 
 If the image isn't dark but it looks really weird, probably you made some injudicious choices in the Libraw user-interface. The Libraw interface conveniently allows you to "dial in" options that you would otherwise have to specify at the command line. However, convenience always comes at a price. First, the interface might not provide access to all the options that are available at the command line. And second, to get the most from the Libraw interface, you have to know what the buttons, sliders, etc. in the interface actually do. Which means you need to know what happens at the command line if you want to get the best results from using the interface.
 
-Digital noise
+Digital Noise
 -------------
 
 See the following excellent articles:
@@ -54,8 +54,8 @@ Why are the Canon and Nikon colors better than the colors produced by Libraw?
 
 Color rendition is one place where the Canon (and presumably Nikon) proprietary raw developing software does a really, really good job. Why? Because the proprietary raw processing software is coupled with camera profiles that are specific to raw images coming from your make and model of camera, when processed using your make and model camera's proprietary raw processing software. I've checked extensively, using an "eyedropper" to compare the output of various raw developers using various camera profiles from various sources - a very tedious though instructive process. With digikam's Libraw user interface, you can apply Canon's camera-model-picture-style-specific color profile(s) to the Libraw output during the raw development process, and the colors will still NOT be exactly the same as what Canon produces.
 
-Camera Profile Specificity
---------------------------
+Camera Profile Specificities
+----------------------------
 
 Digital cameras have an array of millions of little light sensors inside, making up either a CCD or a CMOS chip. These light-sensing pixels are color-blind - they only record the amount, not the color, of light falling on them. So to allow pixels to record color information, each pixel is capped by a transparent red, green, or blue lens, usually alternating in what is called a Bayer array (except for Faveon sensors, which work differently). A raw image is nothing more than an array of values indicating "how much light" passed through the red, blue, or green lens cap to reach the sensor.
 
