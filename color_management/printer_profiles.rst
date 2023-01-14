@@ -24,7 +24,7 @@ See this page for an excellent presentation of the benefits of producing your ow
     :alt:
     :align: center
 
-    digiKam Image Editor Print Feature Allow to use your Prefered Printer Color Profile
+    digiKam Image Editor Print Feature Allow to use your Prefered Printer Color Profile and Tune the Black Point Compensation.
 
 The Rendering intents
 ---------------------
@@ -41,7 +41,7 @@ There are four commonly-used rendering intents:
 
     - **Absolute** is similar to relative colorimetric in that it preserves in gamut colors and clips those out of gamut, but they differ in how each handles the white point... Relative colorimetric skews the colors within gamut so that the white point of one space aligns with that of the other, while absolute colorimetric preserves colors exactly (without regard to changing white point)...
 
-    - **Saturation** rendering intent tries to preserve saturated colors. 
+    - **Saturation** rendering intent tries to preserve saturated colors.
 
 .. figure:: images/cm_rendering_indents.webp
     :alt:
