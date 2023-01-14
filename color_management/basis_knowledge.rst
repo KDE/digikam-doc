@@ -1,5 +1,5 @@
 .. meta::
-   :description: Color Management Basis
+   :description: Basis Knowledge about Color Management
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image editor, color management, icc, profile
 
 .. metadata-placeholder
@@ -8,10 +8,10 @@
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
-.. _cm_basis:
+.. _basis_knowledge:
 
-Color Management Basis
-======================
+Basis Knowledge
+===============
 
 .. contents::
 
@@ -66,7 +66,7 @@ Useful mathematical information if you are dealing with Libraw's linear gamma ou
 
 **Copyrighted and copyleft working spaces**: I will take it as given that all the ordinarily encountered working spaces, such as:
 
-    - The several variants of **sRGB**. See :ref:`the chapter <srgb_colorspace>` dedicated to this color space.
+    - The several variants of **sRGB**. See :ref:`the chapter <monitor_profiles>` dedicated to this color space.
 
     - BruceRGB or BestRGB.
 

@@ -324,7 +324,7 @@ Color Management
 
     .. container:: tile no-descr
 
-        :ref:`cm_basis`
+        :ref:`basis_knowledge`
 
     .. container:: tile no-descr
 
