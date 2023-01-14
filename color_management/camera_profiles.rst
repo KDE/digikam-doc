@@ -13,12 +13,12 @@
 The Camera Profiles
 ===================
 
-Color Management and Camera Shooting
-------------------------------------
+Using Camera Profile during Shoots
+----------------------------------
 
 First and for the record, many excellent professional and amateur photographers save all their images as in-camera jpegs and work exclusively in the sRGB color space. But if you want to work in a larger color space, or if you want to work with raw files (even if you output sRGB image files from your raw files), read on.
 
-Judging from questions asked in the digiKam user's forum, if you are reading this tutorial you probably are shooting raw images with a digital dSLR and you are hoping that somewhere in the arcane waters of color management lies the answer to how to get a nice picture from your raw image file. And you're right! The next thing you need is the right camera profile for developing your raw image. But first let's answer the question you really might have been asking.
+Judging from questions asked in the digiKam user's forum, if you are reading this manual you probably are shooting raw images with a digital dSLR and you are hoping that somewhere in the arcane waters of color management lies the answer to how to get a nice picture from your raw image file. And you're right! The next thing you need is the right camera profile for developing your raw image. But first let's answer the question you really might have been asking.
 
 Why doesn't the image produced by raw converters like Libraw look like the embedded preview displayed by digikam?
 
@@ -110,4 +110,4 @@ After extensive testing, the ICC produced the CIE-XYZ color space which mathemat
 
 CIE-XYZ is not the only PCS. Another commonly used PCS is CIE-Lab, which is mathematically derived from the CIE-XYZ space. CIE-Lab is intended to be "perceptually uniform", meaning "a change of the same amount in a color value should produce a change of about the same visual importance" (cited from Wikipedia article). Wikipedia says "The three coordinates of CIELAB represent the lightness of the color (L* = 0 yields black and L* = 100 indicates diffuse white; specular white may be higher), its position between red/magenta and green (a*, negative values indicate green while positive values indicate magenta) and its position between yellow and blue (b*, negative values indicate blue and positive values indicate yellow)" (cited from Wikipedia article).
 
-To be useful, color profiles need to be coupled with software that performs the translation from one color space to another via the PCS. In the world of Linux® open source software (and also many closed source, commercial softwares), translation from one color space to another usually is done by LCMS, the "little color management software". For what it's worth, my own testing has shown that LCMS does more accurate color space conversions than Adobe's proprietary color conversion engine.
+To be useful, color profiles need to be coupled with software that performs the translation from one color space to another via the PCS. In the world of Linux® open source software (and also many closed source, commercial softwares), translation from one color space to another usually is done by Lcms, the "little color management software". For what it's worth, my own testing has shown that Lcms does more accurate color space conversions than Adobe's proprietary color conversion engine.

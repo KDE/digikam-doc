@@ -64,7 +64,7 @@ The article from which this definition comes offers a very clear explanation (al
 Color Spaces Conversion and Rendering Intents
 ---------------------------------------------
 
-Rendering intents are available when converting from one profile to another depends on the destination profile. Not every profile supports every rendering intent. What happens when you select an unsupported rendering intent is that LCMS quietly uses the profile's default rendering intent.
+Rendering intents are available when converting from one profile to another depends on the destination profile. Not every profile supports every rendering intent. What happens when you select an unsupported rendering intent is that Lcms quietly uses the profile's default rendering intent.
 
 For an informative and humorous discussion of myths surrounding the use of various rendering intents, see here and here.
 

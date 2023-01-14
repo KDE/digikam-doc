@@ -20,7 +20,7 @@ Overview
 
 digiKam is color-management enabled application. RAW files - as they come - are not color managed at all. Your camera provides the data it has captured in a raw format and will let you manage all the processing. Every camera has its specifics as to how it captures color information, therefore you will need to apply a specific profile to the images you want to process. Please refer to the section :ref:`ICC color profile management <color_management>` for more details an explanations.
 
-Basically, a profile *maps* the color information and gives information on how one should render them. It gives also information to LCMS backend and digiKam on how to translate the color information from one color space to an other in order to keep the colors as accurate as possible across all rendering media.
+Basically, a profile *maps* the color information and gives information on how one should render them. It gives also information to Lcms backend and digiKam on how to translate the color information from one color space to an other in order to keep the colors as accurate as possible across all rendering media.
 
 Behavior Settings
 -----------------
