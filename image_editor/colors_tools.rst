@@ -86,26 +86,26 @@ digiKam comes with a couple of black & white filters that you can use on your ph
 
 With **Film** setting, a specific settings allows to emulate a number of famous Black and White photographic films as:
 
-    - Generic.
-    - Agfa 200X, Agfa Pan 25, Agfa Pan 100, Agfa Pan 400.
-    - Ilford Delta 100, Ilford Delta 400, Ilford Delta 400 Pro 3200, Ilford FP4 Plus, Ilford HP5 Plus, Ilford PanF Plus, Ilford XP2 Super.
-    - Kodak Tmax 100, Kodak Tmax 400, Kodak TriX.
+    - **Generic**.
+    - **Agfa**: 200X, Pan 25, Pan 100, Pan 400.
+    - **Ilford**: Delta 100, Delta 400, Delta 400 Pro 3200, FP4 Plus, HP5 Plus, PanF Plus, XP2 Super.
+    - **Kodak**: Tmax 100, Tmax 400, TriX.
 
 With **Lens Filters** setting, a color filter can be simulated as placed on front of lens:
 
-    - No Lens Filter: simulate black & white neutral film exposure. 
-    - Green Filter: simulates black & white film exposure with green lens filter. This comes good with all scenic images, especially suited for portraits taken against the sky (similar to 004 Cokin(tm) Green filter).
-    - Orange Filter: simulates black & white film exposure with an orange lens filter. This will enhance landscapes, marine scenes and aerial photography (similar to 002 Cokin(tm) Orange filter).
-    - Red Filter: simulates black & white film exposure with red lens filter. Creates dramatic sky effects and can simulate moonlight scenes in daytime (similar to 003 Cokin(tm) Red filter).
-    - Yellow Filter: simulates black & white film exposure with yellow lens filter. Most natural tonal correction, improves contrast. Ideal for landscapes (similar to 001 Cokin(tm) Yellow filter).
+    - **No Lens Filter**: simulate black & white neutral film exposure. 
+    - **Green Filter**: simulates black & white film exposure with green lens filter. This comes good with all scenic images, especially suited for portraits taken against the sky (similar to 004 Cokin(tm) Green filter).
+    - **Orange Filter**: simulates black & white film exposure with an orange lens filter. This will enhance landscapes, marine scenes and aerial photography (similar to 002 Cokin(tm) Orange filter).
+    - **Red Filter**: simulates black & white film exposure with red lens filter. Creates dramatic sky effects and can simulate moonlight scenes in daytime (similar to 003 Cokin(tm) Red filter).
+    - **Yellow Filter**: simulates black & white film exposure with yellow lens filter. Most natural tonal correction, improves contrast. Ideal for landscapes (similar to 001 Cokin(tm) Yellow filter).
 
 With **Tone** setting, a color tint can be applied to the image:
 
-    - Sepia Filter: gives a warm highlight and mid-tone while adding a bit of coolness to the shadows - very similar to the process of bleaching a print and re-developing in a sepia toner (typical for your grandmothers photographs). Similar to 005 Cokin(tm) Sepia filter.
-    - Brown Filter: similar to Sepia Tone filter, but less pronounced.
-    - Cold Filter: start subtle and replicate printing on a cold tone black & white paper such as a bromide enlarging paper.
-    - Selenium Filter: effect that replicates traditional selenium chemical toning done in the darkroom.
-    - Platinum Filter: effect that replicates traditional platinum chemical toning done in the darkroom.
+    - **Sepia Filter**: gives a warm highlight and mid-tone while adding a bit of coolness to the shadows - very similar to the process of bleaching a print and re-developing in a sepia toner (typical for your grandmothers photographs). Similar to 005 Cokin(tm) Sepia filter.
+    - **Brown Filter**: similar to Sepia Tone filter, but less pronounced.
+    - **Cold Filter**: start subtle and replicate printing on a cold tone black & white paper such as a bromide enlarging paper.
+    - **Selenium Filter**: effect that replicates traditional selenium chemical toning done in the darkroom.
+    - **Platinum Filter**: effect that replicates traditional platinum chemical toning done in the darkroom.
 
 .. _color_infrared:
 
@@ -122,8 +122,8 @@ Simulating classical infrared film material (the effect is rendered in black and
 
 The filter tries to reproduce the famous Ilford(tm) SFX and Kodak Tmax infrared film series. These films has a sensitivity range of 200-800 ISO:
 
-    - Ilford SPX 200, Ilford SPX 400, Ilford SPX 800.
-    - Kodak HIE.
+    - **Ilford**: SPX 200, SPX 400, SPX 800.
+    - **Kodak**: HIE.
 
 .. note::
 
@@ -211,7 +211,7 @@ To the left, half of the original and the target preview image is shown. The tar
 
     - **Main Curves Editing Area**: the horizontal bar (x-axis) represents input values (they are value levels from 0 to 255). The vertical bar (y-axis) is only a scale for output colors of the selected channel. The control curve is drawn on a grid and crosses the histogram diagonally. The pointer x/y position is permanently displayed above the grid. If you click on the curve, a control point is created. You can move it to bend the curve. If you click outside the curve, a control point is also created, and the curve includes it automatically. So each point of the curve represents an 'x' translated into a 'y' output level.
 
-    - Curve **Type** for channel: below the editing area are several icons that determine whether the curve can be edited using **Curve smooth mode** or **Curve free mode**. Smooth mode constrains the curve type to a smooth line with tension and provides a realistic rendering. Free mode lets you draw your curve free-hand with the mouse. With curve segments scattered all over the grid, result will be surprising but hardly repeatable. A reset-to-defaults button is also available. If, for example, you move a curve segment to the right, i.e. to highlights, you can see that these highlights are corresponding to darker output tones and that image pixels corresponding to this curve segment will go darker. With color channels, moving right will decrease saturation up to reaching complementary color. To delete all control points (apart from both end points), click on the Reset button. To delete only one point, move it onto another point. Just ply with the curves and watch the results. You even can solarize the image on part of its tonal range. This happens when the curve is inverted in some part. The original photo preview has a red marker on it. If you place this marker to a zone you want to modify, a corresponding line will be drawn on the curve grid indicating the original value. Create a point on that line and move it up or down to adjust it to your pleasing.
+    - Curve **Type** for channel: below the editing area are several icons that determine whether the curve can be edited using **Curve smooth mode** or **Curve free mode**. Smooth mode constrains the curve type to a smooth line with tension and provides a realistic rendering. Free mode lets you draw your curve free-hand with the mouse. With curve segments scattered all over the grid, result will be surprising but hardly repeatable. A **Reset to defaults** button is also available. If, for example, you move a curve segment to the right, i.e. to highlights, you can see that these highlights are corresponding to darker output tones and that image pixels corresponding to this curve segment will go darker. With color channels, moving right will decrease saturation up to reaching complementary color. To delete all control points (apart from both end points), click on the **Reset** button. To delete only one point, move it onto another point. Just ply with the curves and watch the results. You even can solarize the image on part of its tonal range. This happens when the curve is inverted in some part. The original photo preview has a red marker on it. If you place this marker to a zone you want to modify, a corresponding line will be drawn on the curve grid indicating the original value. Create a point on that line and move it up or down to adjust it to your pleasing.
 
     - **Save As** and **Load**: these buttons are used to do just that. Any curves that you have set can be saved to the filesystem and loaded later. The used file format is The Gimp Curves format.
 
@@ -314,7 +314,7 @@ The tool settings are listed below:
 
     - **Lightness**: The slider allows you to select a luminosity value (-100, 100). Lightness changes here concern a color range, while they concern a color tone with **Curves Adjust** and **Levels Adjust** tools, which work on color channels. If you change the Red lightness with this tool, all red pixels will be changed. With **Curves Adjust** and **Levels Adjust** tools, only dark, bright, or medium pixels luminosity will be changed.
 
- You can see any adjustments you make reflected in the preview image. When you are happy with the results, press Ok and they will take effect.
+ You can see any adjustments you make reflected in the preview image. When you are happy with the results, press **Ok** and they will take effect.
 
 .. figure:: images/editor_hsl_adjust.webp
     :alt:
@@ -345,7 +345,7 @@ Now the controls are to the lower right: **Red**, **Green** and **Blue** slider 
 
 .. note::
 
-    Sometimes, especially when doing monochrome mixing, reducing one color channel may increase visible noise, which actually originates in the chroma noise. Chroma noise means that the little noise specs do not appear at the same location in all the color channels, but the noise patterns looks different in every channel. If that is the case you can improve the monochrome conversion by reducing the chroma noise first.
+    Sometimes, especially when doing **Monochrome** mixing, reducing one color channel may increase visible noise, which actually originates in the chroma noise. Chroma noise means that the little noise specs do not appear at the same location in all the color channels, but the noise patterns looks different in every channel. If that is the case you can improve the monochrome conversion by reducing the chroma noise first.
 
 **Save As** and **Load** buttons are used to do just that. Any mixer settings that you have set can be saved to the filesystem and loaded later. The used file format is The Gimp channel mixer format.
 
