@@ -13,8 +13,8 @@
 The Monitor Profiles
 ====================
 
-What is so special about the sRGB color space?
-----------------------------------------------
+sRGB Color space
+----------------
 
 sRGB is widely accepted as a standard color profile by virtually everyone involved with consumer-oriented imaging. sRGB was proposed in 1996 by Hewlett Packard and Microsoft as a standardized color space for consumer-oriented applications. As stated in the initial HP/MS proposal:
 
@@ -28,8 +28,8 @@ So if sRGB works so well and makes life so easy for everyone, why use any other 
 
 sRGB was designed to contain colors easily displayed on consumer-oriented monitors and printed by consumer-oriented printers manufactured in 1996. This least-common-denominator set of viewable and printable colors - the technical term is "color gamut" - is much smaller than the set of colors we can see in the real world, much smaller than the set of colors today's digital cameras can capture, much smaller than the set of colors today's printers can print, and much smaller than the color gamut of the new wide gamut monitors that are beginning to enter the consumer market. For anyone who wants to make use of the wider color gamuts available today even at the consumer level, the gamut of sRGB is too small. Conversely, if you don't intend to make use of an expanded gamut of colors at any point in your digital imaging workflow, then you don't need to worry about non-sRGB color spaces and all the attending intricacies of color management.
 
-How small is sRGB?
-------------------
+sRGB Limitations
+----------------
 
 A visual representation of the limitations of sRGB compared to the colors we actually see in the real world is presented here after. It shows a two-dimensional representation of all the colors we can see (the horseshoe-shaped region) and the colors contained in the sRGB space (the smaller triangular region).
 
@@ -37,8 +37,8 @@ A visual representation of the limitations of sRGB compared to the colors we act
 
 If you would like to see a two-dimensional representation of sRGB compared to some of the larger working color spaces, see Bruce Lindbloom's excellent site, click on "Info" then on "Information About RGB Working Spaces".
 
-Calibrating and Profiling Your Monitor RGB
-------------------------------------------
+Profiling Your Monitor
+----------------------
 
 If I choose to work exclusively in the sRGB color space, do I need to calibrate my monitor?
 
@@ -65,8 +65,8 @@ When first learning about color management, many people are confused about the d
 
 Calibrating your monitor technically is not really part of color management. But obviously a properly calibrated and/or profiled monitor is a prerequisite for a color-managed workflow. This tutorial does not cover the important topics of how to calibrate and profile a monitor. The ArgyllCMS and LProf documentations are very good and highly recommended reading. To use either of this software to calibrate and/or profile your monitor, you will need a spectrophotometer. A spectrophotometer (sometimes called a "spider") is a device for measuring the RGB values of color patches projected onto the monitor screen by calibration/profiling software such as Argyll and LProf. The Argyll website maintains an up-to-date list of supported spectrophotometers. I believe LProf can use all the spectrophotometers that Argyll can use, as the two programs share the relevant sections of code.
 
-Can I calibrate my monitor without a spectrophotometer?
--------------------------------------------------------
+Calibrating your Monitor
+------------------------
 
 There are various methods given on the Internet for calibrating a monitor without using a spectrophotometer. These "eye-ball" methods are better than not calibrating your monitor at all, and depending your eyeball and your monitor, can produce quite usable results. But the eye-ball methods are not a substitute for a properly calibrated and profiled monitor. For the record, calibrating and profiling a monitor with a spectrophotometer, though intimidating at first, is not difficult. Spectrophotometers can be obtained for well under $100 US (if you opt for a more expensive model, make sure you are paying for a better piece of hardware, rather than just a more fully-featured accompanying bit of manufacturer's software that won't run under Linux). Argyll and/or LProf documentation will guide you through the process of calibrating and profiling your monitor, without your having to learn very much color management theory. And if/when you learn enough about color management to realize that you want or need a more detailed monitor profile of a particular type, for a particular purpose, these two softwares have all the advanced capabilities you could possibly hope for.
 Assuming I've decided to work exclusively in the sRGB color space, what "digiKam buttons" should I push after I calibrate my monitor?
@@ -75,14 +75,12 @@ If your monitor has been calibrated to the sRGB standard and you work exclusivel
 
 But if you want to take the first steps toward a color-managed workflow, then refer to corresponding page of Settings, enable color management, and select sRGB as your monitor profile, your camera profile, your working space profile, and your printer profile. If you've also used Argyll or LProf to produce a monitor profile after you calibrated your monitor - perhaps named "mymonitorprofile.icc" - then tell digiKam to use "mymonitorprofile.icc" instead of sRGB as your monitor profile.
 
-Where are all the icc profiles are located on my computer?
-----------------------------------------------------------
+Monitor profiles Storage
+------------------------
 
-Well, this is Linux® and it depends on where you put them. I put all my icc profiles in the /usr/share/color/icc folder, which is the closest there is at this moment to a standard Linux location for icc profiles. If you use this folder for your icc profiles, likely you will need to change permissions on the folder to allow your user read/write access. Then you just tell digiKam where your profiles are located.
-Does the lighting and wall/ceiling/drape/furniture colors near my monitor matter?
+Under Linux, icc profiles are generally located in the /usr/share/color/icc folder, which is the closest there is at this moment to a standard Linux location for icc profiles. If you use this folder for your icc profiles, likely you will need to change permissions on the folder to allow your user read/write access. Then you just tell digiKam where your profiles are located.
 
-Yes! Good lighting is a prerequisite for proper image editing and for comparing prints to the image on your screen. If the lighting near your workstation is too bright, colors on your monitor look too dark, and conversely. If the light from the fixtures in your workroom have a low CRI (color rendering index, meaning you don't have full spectrum bulbs), or if the light in your workroom comes from a window and so varies as the weather and time of day varies (or worse, is filtered through colored drapery), or if the walls and ceiling are creating color casts on your monitor, then your editing process will "correct" color casts that don't really exist. Best advice, as far as is consistent with maintaining harmony in the family: neutral grey walls and ceiling, cover the windows, wear neutral clothing, set appropriate light levels using appropriate bulbs and fixtures. For more information on what are the appropriate light levels, bulbs and fixtures for editing images and viewing prints, see the following articles:
+Ambiant Light and Monitor
+-------------------------
 
-    `The Darkroom Makes a Comeback (part 1) <https://creativepro.com/the-darkroom-makes-a-comeback/>`_
-
-    `The Darkroom Makes a Comeback (part 2) <https://creativepro.com/the-darkroom-makes-a-comeback-part-2-/>`_
+Does the lighting and wall/ceiling/drape/furniture colors near my monitor matter? Good lighting is a prerequisite for proper image editing and for comparing prints to the image on your screen. If the lighting near your workstation is too bright, colors on your monitor look too dark, and conversely. If the light from the fixtures in your workroom have a low CRI (color rendering index, meaning you don't have full spectrum bulbs), or if the light in your workroom comes from a window and so varies as the weather and time of day varies (or worse, is filtered through colored drapery), or if the walls and ceiling are creating color casts on your monitor, then your editing process will "correct" color casts that don't really exist. Best advice, as far as is consistent with maintaining harmony in the family: neutral grey walls and ceiling, cover the windows, wear neutral clothing, set appropriate light levels using appropriate bulbs and fixtures. For more information on what are the appropriate light levels, bulbs and fixtures for editing images and viewing prints, see the following articles:
