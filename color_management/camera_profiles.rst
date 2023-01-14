@@ -122,6 +122,12 @@ Here is a link to a "how to" for using LProf to produce a camera profile. And he
 
 How do I apply a camera profile to the 16-bit image file produced by my open source RAW processing software? If you are using the Libraw interface from digiKam, here is how to tell digiKam which camera profile to use.
 
+.. figure:: images/cm_bqm_raw_converter.webp
+    :alt:
+    :align: center
+
+    The digiKam Batch Queue Manager Raw Converter has also the Same Noise Reduction and Color Proiles Options than Image Editor
+
 Profiles Point to Real Colors
 -----------------------------
 
