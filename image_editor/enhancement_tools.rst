@@ -616,6 +616,6 @@ Now only cloning inside the selected region will happens, cloning outside will b
     :alt:
     :align: center
 
-    Screencast of Image Editor Healing Clone Fixing an Aera Using Lasso
+    Screencast of Image Editor Healing Clone Fixing an Area Using Lasso
 
 You can undo and redo using toolbar buttons from the toolbar on the top of settings view. Two keyboard shortcuts are assigned to the tool: :kbd:`Ctrl+Z` for undo and :kbd:`Ctrl+Shift+Z` for redo. You can undo and redo without limitation.

@@ -341,7 +341,7 @@ With the channel combo box you select and display the histogram per color. It gi
 
 The target photo preview has a red marker available. If you place this marker somewhere in the image, a corresponding vertical bar will be drawn in the histogram indicating the color level value in the current channel selected.
 
-Now the controls are to the lower right: **Red**, **Green** and **Blue** slider controls enable you to mix the channels. If you check **Preserve Luminosity** the image will retain its overall luminosity despite you changing its color components. This feature is particularly useful when you also ticked the **Monochrome** box. Because the channel mixer is the tool to make great Black and wWite conversions of your photographs. Try to reduce the green channel for Black and White portraits.
+Now the controls are to the lower right: **Red**, **Green** and **Blue** slider controls enable you to mix the channels. If you check **Preserve Luminosity** the image will retain its overall luminosity despite you changing its color components. This feature is particularly useful when you also ticked the **Monochrome** box. Because the channel mixer is the tool to make great Black and White conversions of your photographs. Try to reduce the green channel for Black and White portraits.
 
 .. note::
 
@@ -370,7 +370,7 @@ White Balance setting is a common hurdle for digital still cameras. In the 'good
 
 .. note::
 
-    Even if the White Balance correction is not limited to 8 bit per channel, if you depart too much from the original, over exposure zones may appear. If you can adjust the White Balance in RAW conversion mode, the margin for correction will be greater as it process correction while demoaicing.
+    Even if the White Balance correction is not limited to 8 bit per channel, if you depart too much from the original, over exposure zones may appear. If you can adjust the White Balance in RAW conversion mode, the margin for correction will be greater as it processes correction while demosaicing.
 
 The preview window can be resized. To the left, both an original and a target preview tab is shown. The target preview is updated dynamically according to the tool's settings. If you want to see the original White Balance, just click on that tab.
 
