@@ -18,7 +18,7 @@ Using Camera Profile
 
 Many excellent professional and amateur photographers save all their images as in-camera Jpegs and work exclusively in the sRGB color space. But if you want to work in a larger color space, or if you want to work with RAW files (even if you output sRGB image files from your RAW files), read on.
 
-If you are reading this manual you probably are shooting RAW images with a digital dSLR and you are hoping that somewhere in the arcane waters of color management lies the answer to how to get a nice picture from your RAW image file. And you're right! The next thing you need is the right camera profile for developing your RAW image. But first let's answer the question you really might have been asking.
+If you are reading this manual you probably are shooting RAW images with a digital dSLR and you are hoping that somewhere in the arcane waters of color management lies the answer to how to get a nice picture from your RAW image file. The next thing you need is the right camera profile for developing your RAW image. But first let's answer the question you really might have been asking.
 
 .. figure:: images/cm_raw_preview_embedded.webp
     :alt:
@@ -90,7 +90,7 @@ Analog to Digital Conversion
 Camera Profile and RAW Treatment
 --------------------------------
 
-The whole point of interpolation using demosaicing algorithms such as Libraw's default AHD is to guess what color and intensity of light actually fell on any given pixel by interpolating information gathered from that single pixel plus its neighboring pixels (see Wikipedia article). Every RAW processing program makes additional assumptions such as "when is it signal and when is it background noise?", "at what point has the sensor well reached full saturation?", and so forth. The resulting output of all these algorithms and assumptions that RAW processing software makes is a trio of RGB values for each pixel in the image. Given the same RAW file, different RAW processors will output different RGB values.
+The whole point of interpolation using demosaicing algorithms such as Libraw's default AHD is to guess what color and intensity of light actually fell on any given pixel by interpolating information gathered from that single pixel plus its neighboring pixels. Every RAW processing program makes additional assumptions such as "when is it signal and when is it background noise?", "at what point has the sensor well reached full saturation?", and so forth. The resulting output of all these algorithms and assumptions that RAW processing software makes is a trio of RGB values for each pixel in the image. Given the same RAW file, different RAW processors will output different RGB values.
 
 .. figure:: images/cm_raw_import_tool.webp
     :alt:
@@ -137,6 +137,6 @@ Real people don't even see the same colors when they look at the world, do they?
 
 After extensive testing, the ICC produced the CIE-XYZ color space which mathematically describes and models all the colors visible to an ideal human observer ("ideal" in the sense of modeling the tested responses of lots of individual humans). This color space is NOT a color profile in the normal sense of the word. Rather it provides an absolute "Profile Connecting Space" (PCS) for translating color RGB values from one color space to another. (See here and here.)
 
-CIE-XYZ is not the only PCS. Another commonly used PCS is CIE-Lab, which is mathematically derived from the CIE-XYZ space. CIE-Lab is intended to be "perceptually uniform", meaning "a change of the same amount in a color value should produce a change of about the same visual importance" (cited from Wikipedia article). Wikipedia says "The three coordinates of CIELAB represent the lightness of the color (L* = 0 yields black and L* = 100 indicates diffuse white; specular white may be higher), its position between red/magenta and green (a*, negative values indicate green while positive values indicate magenta) and its position between yellow and blue (b*, negative values indicate blue and positive values indicate yellow)" (cited from Wikipedia article).
+CIE-XYZ is not the only PCS. Another commonly used PCS is CIE-Lab, which is mathematically derived from the CIE-XYZ space. CIE-Lab is intended to be "perceptually uniform", meaning "a change of the same amount in a color value should produce a change of about the same visual importance". The three coordinates of CIELAB represent the lightness of the color (L* = 0 yields black and L* = 100 indicates diffuse white; specular white may be higher), its position between red/magenta and green (a*, negative values indicate green while positive values indicate magenta) and its position between yellow and blue (b*, negative values indicate blue and positive values indicate yellow).
 
 To be useful, color profiles need to be coupled with software that performs the translation from one color space to another via the PCS. In digiKam, translation from one color space to another usually is done by Lcms, the "little color management software".
