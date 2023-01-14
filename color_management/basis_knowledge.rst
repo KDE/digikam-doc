@@ -75,11 +75,11 @@ Useful mathematical information if you are dealing with Libraw's linear gamma ou
     - **AdobeRGB**, Adobe **WideGamutRGB**, and Kodak/Adobe **ProPhotoRGB** (Kodak and Adobe ProPhoto are the same, just branded differently) and their non-branded, non-copyrighted counterparts. 
 
     .. figure:: cm_editor_convert_prorgb.webp
-    :alt:
-    :align: center
+        :alt:
+        :align: center
 
-    digiKam Image Editor Color Space Converter Allows to Switch to Another Color Profile
-    
+        digiKam Image Editor Color Space Converter Allows to Switch to Another Color Profile
+
 And quite a few other working spaces that could be added to this list, are all more or less suitable as working spaces. Which working space you should use depends only and solely on you, on your requirements on the Image Editor with your eventual output intentions (web, fine art print, etc.). However, as a critical aside, if you are using Adobe or other copyrighted working space profiles, these profiles contain copyright information that shows up in your image Exif information.
 
 The Color Space Connections
