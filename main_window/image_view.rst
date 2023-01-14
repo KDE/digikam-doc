@@ -132,6 +132,22 @@ digiKam will ask you confirmation before to move items to trash with the dialog 
 
     The digiKam Move to Trash Dialog
 
+digiKam will ask you confirmation before to move items to trash with the dialog below.
+
+For each collection registered in the database, digiKam handle an internal trash-bin. Physically, the trash is located at the root album corresponding to the collection entry. It's an hidden folder storing files and information about the deletion stored in a sidecar. Deleting a file in the collection do not remove the file from the media, but move the file in this container. This one is accessible from the left sidebar as the last entry of the tree-view corresponding to a collection and is named **Trash**.  
+
+On the bottom of the trash-bin view, a serie of buttons allows to restore files in collection or delete them permanently.
+
+.. note::
+
+    If you backup a collection on a separated media, you will backup also the corresponding trash container safety.
+
+.. figure:: images/mainwindow_trashbin.webp
+    :alt:
+    :align: center
+
+    The digiKam Internal Trash-Bin Exists for All Collections Registered in the Database
+
 .. _grouping_photograph:
 
 Grouping Photographs
