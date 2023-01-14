@@ -23,19 +23,16 @@ Why cannot I just edit my images in the color space described by the camera prof
 
 After all, the camera profile should provide the best "fit" to the colors recorded by my camera, as processed by my raw processing procedure, right? Wikipedia says, "Working spaces, such as sRGB or Adobe RGB, are color spaces that facilitate good results while editing. For instance, pixels with equal values of RGB should appear neutral." "[P]ixels with equal values of RGB should appear neutral" just means that for any given pixel in an image that has been converted to a suitable working space, if R=G=B you should see grey or black or white on your screen. Many camera profiles violate this "neutral" condition. I am not aware of a list of other technical requirements for a suitable working space. However, I can think of another good reason why you wouldn't want to edit your image in your camera profile color space. If you look at the size of a typical camera profile, it is on the order of a quarter to a half a megabyte or more. It's got a lot of information about all the changes that need to be made at different regions of color and tonality in the original scene, to get accurate color rendition from the RGB values that come out of the raw processor. The camera profile is accurate (at least for colors in the original target) but not particularly mathematically smooth. Working space color profiles, on the other hand, are very small in size (half a kilobyte instead of half a megabyte) because they describe a color gamut in terms of smooth, continuous mathematical functions. Working space profiles don't need to make allowances for the "messiness" of real world sensors, so the mathematical manipulations performed during image editing will go much more smoothly and accurately than if you try to edit your image while it is still in the camera color space.
 
-Which working space should I choose?
-------------------------------------
+Working space profiles are characterized by:
 
-Everyone has an opinion. I'm just going to lay out some of the bits of information needed to make an informed choice. Working space profiles are characterized by:
+    - Gamma (or other transfer function), which dictates how much the original linear intensity values captured by the camera sensor (and subjected to the in-camera A-to-D conversion, then interpolated by the raw processing program to produce the image file) are altered to make editing easier or more precise.
 
-    Gamma (or other transfer function), which dictates how much the original linear intensity values captured by the camera sensor (and subjected to the in-camera A-to-D conversion, then interpolated by the raw processing program to produce the image file) are altered to make editing easier or more precise.
+    - RGB primaries which dictate the range of colors, that is, the color gamut, covered by a given profile.
 
-    RGB primaries which dictate the range of colors, that is, the color gamut, covered by a given profile.
+    - White point (usually D50 or D65 though other values may be used), which specifies the color temperature of the white point of the working space. 
 
-    White point (usually D50 or D65 though other values may be used), which specifies the color temperature of the white point of the working space. 
-
-What gamma should my working space have?
-----------------------------------------
+Gamma for a Working Space
+-------------------------
 
 The gamma of a color profile dictates what power transform needs to take place to properly convert from an image's embedded color profile (perhaps your working color space or your camera color profile) to another color profile with a different gamma, such as your chosen working space, or the display profile used to display the image on the screen or perhaps from one working space to another, or perhaps from your working space to your printer's color space. Libraw outputs a 16-bit image with a linear gamma, which means that a histogram of the resulting image file shows the actual amount of light that each pixel on the camera sensor captured during the exposure (paraphrasing this page). (Which is why at present applying a camera profile to the Libraw output also requires applying an appropriate gamma transform to get to the desired working space, unless the camera profile also uses gamma=1.)
 
@@ -53,10 +50,7 @@ In addition to gamma=1.8 and gamma=2.2, the only other gamma for a working space
 
 Unfortunately and despite their undeniable mathematical advantages, linear gamma working spaces have so few tones in the shadows that (in my opinion) they are impossible to use for editing if one is working in 8-bits, and still problematic at 16-bits. When the day comes when we are all doing our editing on 32-bit files produced by our HDR cameras on our personal supercomputers, I predict that we will all be using working spaces with gamma=1. Adobe Lightroom is already using a linear gamma working space "under the hood", CS2 allows the option of using linear gamma for mixing colors, and Lightzone has always used a linear gamma working space.
 
-How many discrete tonal steps are there in a digital image?
------------------------------------------------------------
-
-In an 8-bit image, you have 256 tonal steps from solid black to solid white. In a 16-bit image theoretically you have 65536 steps. But remember, those 16-bits started out as either 10 bits (=1024 steps), 12 bits (=4096 steps), or 14 bits (=16384 steps) as produced by the camera's A-to-D converter - the extra bits to reach 16-bits start out as just padding. The available tones are not distributed evenly from light to dark. In linear gamma mode (as the camera sensor sees things), there's a whole lot more tones in the highlights than in the shadows. Hence the advice, if you shoot raw, to "expose to the right but don't blow the highlights". See Ron Bigelow's articles on "why raw", for a full discussion of the distribution of available tones in a raw image.
+How many discrete tonal steps are there in a digital image? In an 8-bit image, you have 256 tonal steps from solid black to solid white. In a 16-bit image theoretically you have 65536 steps. But remember, those 16-bits started out as either 10 bits (=1024 steps), 12 bits (=4096 steps), or 14 bits (=16384 steps) as produced by the camera's A-to-D converter - the extra bits to reach 16-bits start out as just padding. The available tones are not distributed evenly from light to dark. In linear gamma mode (as the camera sensor sees things), there's a whole lot more tones in the highlights than in the shadows. Hence the advice, if you shoot raw, to "expose to the right but don't blow the highlights". See Ron Bigelow's articles on "why raw", for a full discussion of the distribution of available tones in a raw image.
 
 Should I use a large-gamut or a small-gamut working space?
 ----------------------------------------------------------
