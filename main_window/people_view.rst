@@ -163,7 +163,7 @@ The screenshots **02** and **11** have been chosen because they shows one import
 
 The screenshot **10** is another example shows one important issue: the algorithm will find inevitably details in an image that resemble a face but are actually something else. That's what the **Remove** button is for. It will remove the face tag from the photograph and if it is the only face tag (left) the photograph will disappear from the scan result.
 
-The screnshots **01**, **03**, **05**, **08**, **09**, and **12** can be considered as non faces, or be prevented by reducing the **Accuracy** of detection in face management **Settings** view. But these example proof the capability of algorithm to detect faces in critical shots conditions.
+The screenshots **01**, **03**, **05**, **08**, **09**, and **12** can be considered as non faces, or be prevented by reducing the **Accuracy** of detection in face management **Settings** view. But these example proof the capability of algorithm to detect faces in critical shots conditions.
 
 The screenshots **04** and **10** are definitively false positive results.
 
