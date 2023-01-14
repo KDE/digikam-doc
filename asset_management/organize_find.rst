@@ -194,7 +194,7 @@ Lets look at this panorama. From far it is not even a nice beach panorama. If yo
     :align: center
 
     digiKam Editing Panorama Title From Captions Sidebar Tab Within Image Editor
-    
+
 And now we tell you that this is the Allies landing site *Omaha Beach* in the French Normandie 60 years after the disembarkation. One starts to dream, have associations, memories, the historical time span is present, you may hear the silence. The caption has totally reframed to perception of this panorama.
 
 For others to appreciate your photographs, the **Title** is probably more important than the image itself for the interest it creates. When you show pictures, tell a story. Remember that the key is to convey the meaning to viewers, to help them understand what you understand about the subject and what moved you.

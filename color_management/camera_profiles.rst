@@ -28,24 +28,40 @@ Libraw which digiKam uses to convert RAW files to image files doesn't add an S-c
 
 The embedded Jpeg preview looks so much nicer than Libraw's output. What is the value in scene-referred tonality? When you take a picture, presumably you have an idea of what you want the final image to look like. It is much easier to achieve that final image if you don't have to "undo" stuff that has already been done to your image. Once Canon (or Nikon, or Sony, etc.) has applied their proprietary S-curves and shadow-denoising, sharpening, etc. to your image, then your shadows, highlights, edge detail, etc. are already squashed, clipped, chopped, and otherwise altered and mangled. You've thrown information away and you cannot get it back. Especially in the shadows, even with 16-bit images (actually, 12- or 14-bits, depending on the camera, but it's encoded as 16-bits for the computer's convenience), there just isn't that much information to begin with.
 
+.. figure:: images/cm_raw_import_post.webp
+    :alt:
+    :align: center
+
+    digiKam Raw Import Tool from Image Editor Allows to Post Process Exposures and Curves just After the Demosaicing.
+
 It seems to me that the heart and soul of image processing is the deliberate manipulation of image tonality, color, selective sharpening, and so forth, such that the viewer focuses in on what you, the photographer, found of particular interest when you took the picture. Why give the art of image processing over to some proprietary RAW processing software? In other words, *flat is good* if you'd rather give your images your own artistic interpretation. The alternative is to let the canned, proprietary algorithms produced by Canon, Nikon, Sony, etc. interpret your images for you. (On the other hand, there is no denying that for many images, those canned algorithms are really pretty good).
 
 I can see the value in starting my image-editing with a scene-referred rendition instead of the eye-popping rendition that I see in the embedded Jpeg. But the images produced by digiKam and Libraw look really different. If the image looks very dark, then you asked Libraw to output a 16-bit file and you have run into a problem with Libraw not applying a gamma transform before outputting the image file. You can use the Image Editor to apply the appropriate gamma transform to the image file produced by Libraw. Or you can find or make a camera profile with a gamma of 1.
 
-If your image has pink highlights, there's a solution. For an explanation of the problem, see this "Luminous Landscape" forum post.
+If your image has pink highlights, Check you **White Balance** settings in RAW Import tool, especially the **highlights** options.
+
+.. figure:: images/cm_raw_import_wb.webp
+    :alt:
+    :align: center
+
+    digiKam Raw Import Tool from Image Editor Allows to Tune Many Options about the Camera Colorimetry.
 
 If the image isn't dark but it looks really weird, probably you made some injudicious choices in the Raw Import user-interface from Image Editor. The Libraw interface conveniently allows you to *dial in* options. However, convenience always comes at a price. First, the interface might not provide access to all the options. And second, to get the most from the Libraw interface, you have to know what the buttons, sliders, etc. in the interface actually do. 
 
 Digital Noise
 -------------
 
-See the following excellent articles:
+Why are the Canon and Nikon colors better than the colors produced by Libraw? Color rendition is one place where the Canon (and presumably Nikon) proprietary RAW developing software does a really good job, especially with noise reduction in pictures taken with low light conditions. 
 
-    `The Digital camera image noise <https://www.cambridgeincolour.com/tutorials/image-noise.htm>`_
+The proprietary RAW processing software is coupled with camera profiles that are specific to RAW images coming from your make and model of camera, when processed using your make and model camera's proprietary RAW processing software. With digikam's Libraw user interface, you can apply Canon's camera-model-picture-style-specific color profile(s) to the Libraw output during the RAW development process, and the colors will still not be exactly the same as what Canon produces.
 
-    `The Signal-to-Noise of Digital Camera images and Comparison to Film <https://clarkvision.com/imagedetail/digital.signal.to.noise/>`_
+Anyway, digiKam and Libraw interface provides a Noise Reduction correction based on wavelets which can be applied while demosaicing.
 
-Why are the Canon and Nikon colors better than the colors produced by Libraw? Color rendition is one place where the Canon (and presumably Nikon) proprietary RAW developing software does a really, really good job. Why? Because the proprietary RAW processing software is coupled with camera profiles that are specific to RAW images coming from your make and model of camera, when processed using your make and model camera's proprietary RAW processing software. I've checked extensively, using an "eyedropper" to compare the output of various RAW developers using various camera profiles from various sources - a very tedious though instructive process. With digikam's Libraw user interface, you can apply Canon's camera-model-picture-style-specific color profile(s) to the Libraw output during the RAW development process, and the colors will still NOT be exactly the same as what Canon produces.
+.. figure:: images/cm_raw_import_noise.webp
+    :alt:
+    :align: center
+
+    digiKam Raw Import Tool from Image Editor Allows Wavelets Noise Reduction While Demosaicing.
 
 Camera Profile Specificities
 ----------------------------
@@ -57,7 +73,7 @@ Clearly, pixel response to light is the result of lots of camera-specific factor
 Analog to Digital Conversion
 ----------------------------
 
-"Analog" means continuously varying, like how much water you can put in a glass. "Digitizing" an analog signal means that the continuously changing levels from the analog signal source are "rounded" to discrete quantities convenient to the binary numbers used by computers. The analog-to-digital conversion that takes place inside the camera is necessary because the light-sensing pixels are analog in nature - they collect a charge proportionate to the amount of light that reaches them. The accumulated charge on each pixel is then turned into a discrete, digital quantity by the camera's analog-to-digital converter. Which by the way explains why a 14-bit converter is better than a 12-bit converter - more precision in the conversion output means less information is thrown away in the conversion process.
+*Analog* means continuously varying, like how much water you can put in a glass. "Digitizing" an analog signal means that the continuously changing levels from the analog signal source are "rounded" to discrete quantities convenient to the binary numbers used by computers. The analog-to-digital conversion that takes place inside the camera is necessary because the light-sensing pixels are analog in nature - they collect a charge proportionate to the amount of light that reaches them. The accumulated charge on each pixel is then turned into a discrete, digital quantity by the camera's analog-to-digital converter. Which by the way explains why a 14-bit converter is better than a 12-bit converter - more precision in the conversion output means less information is thrown away in the conversion process.
 
 Camera Profile and RAW Treatment
 --------------------------------
