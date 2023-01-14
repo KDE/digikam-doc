@@ -13,8 +13,8 @@
 The Camera Profiles
 ===================
 
-What's the next step in color management?
------------------------------------------
+Color Management During Shooting Session
+----------------------------------------
 
 First and for the record, many excellent professional and amateur photographers save all their images as in-camera jpegs and work exclusively in the sRGB color space. But if you want to work in a larger color space, or if you want to work with raw files (even if you output sRGB image files from your raw files), read on.
 
@@ -41,8 +41,8 @@ If your image has pink highlights, there's a solution. For an explanation of the
 
 If the image isn't dark but it looks really weird, probably you made some injudicious choices in the Libraw user-interface. The Libraw interface conveniently allows you to "dial in" options that you would otherwise have to specify at the command line. However, convenience always comes at a price. First, the interface might not provide access to all the options that are available at the command line. And second, to get the most from the Libraw interface, you have to know what the buttons, sliders, etc. in the interface actually do. Which means you need to know what happens at the command line if you want to get the best results from using the interface.
 
-Where do I find good information on digital noise?
---------------------------------------------------
+Digital noise
+-------------
 
 See the following excellent articles:
 
@@ -54,32 +54,32 @@ Why are the Canon and Nikon colors better than the colors produced by Libraw?
 
 Color rendition is one place where the Canon (and presumably Nikon) proprietary raw developing software does a really, really good job. Why? Because the proprietary raw processing software is coupled with camera profiles that are specific to raw images coming from your make and model of camera, when processed using your make and model camera's proprietary raw processing software. I've checked extensively, using an "eyedropper" to compare the output of various raw developers using various camera profiles from various sources - a very tedious though instructive process. With digikam's Libraw user interface, you can apply Canon's camera-model-picture-style-specific color profile(s) to the Libraw output during the raw development process, and the colors will still NOT be exactly the same as what Canon produces.
 
-Why is a camera profile specific to a given make and model of camera?
----------------------------------------------------------------------
+Camera Profile Specificity
+--------------------------
 
 Digital cameras have an array of millions of little light sensors inside, making up either a CCD or a CMOS chip. These light-sensing pixels are color-blind - they only record the amount, not the color, of light falling on them. So to allow pixels to record color information, each pixel is capped by a transparent red, green, or blue lens, usually alternating in what is called a Bayer array (except for Faveon sensors, which work differently). A raw image is nothing more than an array of values indicating "how much light" passed through the red, blue, or green lens cap to reach the sensor.
 
 Clearly, pixel response to light is the result of lots of camera-specific factors including: the nature of the sensor array itself, the precise coloring/transmissive qualities of the lens caps, and the particular analog-to-digital conversion and post-conversion processing that happens inside the camera to produce the raw image that gets stored on the card.
 
-What does "analog-to-digital conversion" mean?
-----------------------------------------------
+Analog to Digital Conversion
+----------------------------
 
 "Analog" means continuously varying, like how much water you can put in a glass. "Digitizing" an analog signal means that the continuously changing levels from the analog signal source are "rounded" to discrete quantities convenient to the binary numbers used by computers. The analog-to-digital conversion that takes place inside the camera is necessary because the light-sensing pixels are analog in nature - they collect a charge proportionate to the amount of light that reaches them. The accumulated charge on each pixel is then turned into a discrete, digital quantity by the camera's analog-to-digital converter. Which by the way explains why a 14-bit converter is better than a 12-bit converter - more precision in the conversion output means less information is thrown away in the conversion process.
 
-Why is a camera profile specific to the raw processing program used to develop the raw file?
---------------------------------------------------------------------------------------------
+Camera Profile and RAW Treatment
+--------------------------------
 
 The whole point of interpolation using demosaicing algorithms such as Libraw's default AHD is to guess what color and intensity of light actually fell on any given pixel by interpolating information gathered from that single pixel plus its neighboring pixels (see Wikipedia article). Every raw processing program makes additional assumptions such as "when is it signal and when is it background noise?", "at what point has the sensor well reached full saturation?", and so forth. The resulting output of all these algorithms and assumptions that raw processing software makes is a trio of RGB values for each pixel in the image. Given the same raw file, different raw processors will output different RGB values.
 
-Where do I find a generic profile for my camera?
-------------------------------------------------
+Generic Camera Profile
+----------------------
 
 This website section has information on where to find ready-made camera profiles. If you poke around the digiKam users forum archives, you'll find additional advice. If you keep hunting and experimenting, likely you will find a generic profile that works "well enough". However, as stated above, it's an unfortunate fact of digital imaging that the camera profiles supplied by Canon, Nikon, and the like don't work as well with raw converters other than each camera manufacturer's own proprietary raw converter. Which is why Bibble and Phase One, for example, have to make their own profiles for all the cameras that they support. So eventually you may decide that you want a camera profile that is specific to your camera, your lighting conditions, and your raw processing workflow.
 
 .. figure:: images/cm_icc_workflow_logic.webp
 
-How do I get a camera profile specific to my camera, lighting conditions, and raw workflow?
--------------------------------------------------------------------------------------------
+Lighting Conditions and RAW Workflow
+------------------------------------
 
 Many commercial services provide profiling services, for a fee, of course. Or you can use LPRof to profile your camera yourself. If you want to profile your own camera, you will need an "IT8 target", that is, an image containing squares of known colors. Along with the IT8 target, you will receive the appropriate set of known values for each square of color on the target.
 
@@ -89,16 +89,10 @@ Profiling a camera is exactly analogous to profiling a monitor. When profiling a
 
 Here is a link to a "how to" for using LProf to produce a camera profile. And here is a link to an affordable, well-regarded IT8 target.
 
-How do I apply a camera profile to the 16-bit image file produced by my open source raw processing software?
-------------------------------------------------------------------------------------------------------------
+How do I apply a camera profile to the 16-bit image file produced by my open source raw processing software? If you are using the Libraw interface from digiKam, here is how to tell digiKam which camera profile to use.
 
-If you are using the Libraw interface, here is how to tell digiKam which camera profile to use.
-
-The Profiles Point to Real Colors in the Real World
----------------------------------------------------
-
-Camera, scanner, working space, monitor, printer - what do all these color profiles really do?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Profiles Point to Real Colors
+-----------------------------
 
 A color profile describes the color gamut of the device or space to which it belongs by specifying what real color in the real world corresponds to each trio of RGB values in the color space of the device (camera, monitor, printer) or working space.
 
@@ -107,9 +101,6 @@ The camera profile essentially says, "for every RGB trio of values associated wi
 You cannot see an image by looking at its RGB values. Rather you see an image by displaying it on a monitor or by printing it. When you profile your monitor, you produce a monitor profile that says "this RGB trio of values that the graphics card sends to the screen" will produce on the screen "that real color as seen by a real observer in the real world".
 
 What the monitor profile and the camera profile have in common is the part (in italics above) about "that real color as seen by a real observer in the real world." Different trios of RGB numbers in, respectively, the monitor and camera color spaces point to the same real, visible color in the real world. Real colors in the real world provide the reference point for translating between all the color profiles your image will ever encounter on its way from camera to screen to editing program to print or the web.
-
-How can a color profile point to a real color in the real world?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Real people don't even see the same colors when they look at the world, do they?
 

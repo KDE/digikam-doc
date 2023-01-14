@@ -1,6 +1,6 @@
 .. meta::
    :description: Color Management and Printer Profiles
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, icc, color, management, profile, printer
 
 .. metadata-placeholder
 
@@ -13,13 +13,13 @@
 The Printer Profiles
 ====================
 
-Where do I get a printer profile?
----------------------------------
+Using Printer Profile
+---------------------
 
-Whew! We've come a long way - almost ready to print that image! Where do I get a printer profile? Well, you already know the answer. You can use the generic profile that comes with your printer. You can purchase a professionally produced profile. If you ask, some commercial printing establishments will send you their printer profiles (which won't work with your printer!). You can make your own printer profile using Argyll, in which case your profile can be tailored to your particular paper, inks, and even image characteristics (if you are printing a series of images with a color palette limited to subdued browns, you don't need a printer profile that tries to make room for saturated cyans and blues). I cannot offer any more advice or links to more information on this subject because I've just started to learn about printing images (previously I've only viewed and shared my images via monitor display). But do see this page for an excellent presentation of the benefits of producing your own printer profile, plus a resoundingly positive endorsement of using Argyll for making your printer profile.
+We are now almost ready to print that image. Where do I get a printer profile? you already know the answer. You can use the generic profile that comes with your printer. You can purchase a professionally produced profile. If you ask, some commercial printing establishments will send you their printer profiles (which won't work with your printer!). You can make your own printer profile using Argyll, in which case your profile can be tailored to your particular paper, inks, and even image characteristics (if you are printing a series of images with a color palette limited to subdued browns, you don't need a printer profile that tries to make room for saturated cyans and blues). I cannot offer any more advice or links to more information on this subject because I've just started to learn about printing images (previously I've only viewed and shared my images via monitor display). But do see this page for an excellent presentation of the benefits of producing your own printer profile, plus a resoundingly positive endorsement of using Argyll for making your printer profile.
 
-What about rendering intents?
------------------------------
+The Rendering intents
+---------------------
 
 "Rendering intent" refers to the way color gamuts are handled when the intended target color space (for example, the monitor or the printer) cannot handle the full gamut of the source color space (for example the working space).
 
@@ -39,36 +39,36 @@ I would quote the entire article (it's that good), but that would involve "unfai
 
 For another excellent source of information on rendering intents with accompanying illustrations, see this page.
 
-What rendering intent should I use for displaying images on my monitor?
------------------------------------------------------------------------
+Rendering Intent to Display on Monitor
+--------------------------------------
 
 The usual choice is relative colorimetric. I would suggest that you not use absolute colorimetric unless you want very strange results.
 
 .. _soft_proof:
 
-What is soft-proofing?
-----------------------
+The Soft Proofing
+-----------------
 
 Soft-proofing will show you the differences to be expected between what you see on your screen and what you will see when you make a print. To soft-proof, you need a profile for your printer (actually, for your printer-paper combination, as the paper used affects the ink colors and the white point). If you don't like the soft-proofed image, you can make changes (in your working space, not after converting the image to your printer space!) to bring the soft-proofed image more in line with how you want the final print to look.
 What rendering intent should I use when I soft-proof?
 
 I've always heard that you ought to use "perceptual intent" when transforming an image from a larger working space to a smaller printer space. But especially in light of reading the aforementioned Cambridge in Color article, it seems that perceptual intent may or may not give the best results, depending on the respective gamuts of the image and printer/paper combination in question. I've been experimenting quite a bit lately with output intents for printing. I find that for my images, the colorimetric intents give clearer, brighter colors, albeit at the cost of having to carefully re-edit the image to avoid clipping highlights and shadows. Perusal of the various photography forums and articles available on the Internet indicates that "perceptual intent" is just an option, not by any means always "the best" option.
 
-And what about black point compensation?
-----------------------------------------
+Black Point Compensation
+------------------------
 
 The clearest definition I could find about black point compensation is as follows: "BPC is a way to make adjustments between the maximum black levels of digital files and the black capabilities of various digital devices [such as a printer]" (cited from this page).
 
 The article from which this definition comes offers a very clear explanation (albeit Adobe-centric) of how black point compensation works and the practical consequences of using or not using it. The bottom line advice is, it depends. Try soft-proofing with black point compensation on. If you like it, use it. Otherwise, don't use it.
 
-Can all of the rendering intents be used when converting from one color space to another?
------------------------------------------------------------------------------------------
+Convert Between Color Spaces and Rendering Intents
+--------------------------------------------------
 
-In a word, no. Which rendering intents are available when converting from one profile to another depends on the destination profile. Not every profile supports every rendering intent. What happens when you select an unsupported rendering intent is that LCMS quietly uses the profile's default rendering intent.
+Rendering intents are available when converting from one profile to another depends on the destination profile. Not every profile supports every rendering intent. What happens when you select an unsupported rendering intent is that LCMS quietly uses the profile's default rendering intent.
 
 For an informative and humorous discussion of myths surrounding the use of various rendering intents, see here and here.
 
-Why does the perceptual rendering intent get recommended so often as the "photographic" rendering intent?
----------------------------------------------------------------------------------------------------------
+Perceptual Rendering Intent
+---------------------------
 
-It's a safe choice because it prevents clipping of shadows and highlights, although possibly at the expense of desaturating all your colors. So if you don't want to bother doing any soft-proofing, choose the perceptual rendering intent (if you don't want to soft-proof, probably you should also stick with sRGB).
+Perceptual rendering intent a safe choice because it prevents clipping of shadows and highlights, although possibly at the expense of desaturating all your colors. So if you don't want to bother doing any soft-proofing, choose the perceptual rendering intent (if you don't want to soft-proof, probably you should also stick with sRGB).
