@@ -97,8 +97,8 @@ There are two commonly used Profile Connection Spaces - **CIELAB** and **CIEXYZ*
 
 To back up a little bit and look at the first color profile an image encounters, that is, the camera profile (see (1) immediately above) - Libraw can in fact apply your camera profile for you (Libraw uses Lcms internally). But (i)the generating of the tiff composed of the interpolated RGB values derived from the camera raw file, and (ii)the application of the camera profile to the interpolated file, are two very distinct and totally separable (separable in theory and practice for Libraw; in theory only for most raw converters) steps. .
 
-Where to Find Camera Profiles
------------------------------
+Camera Profiles
+---------------
 
 This manual section has a bit of information on where to find ready-made camera profiles. It's an unfortunate fact of digital imaging that the camera profiles supplied by Canon, Nikon, and the like don't work as well with RAW converters other than each camera manufacturer's own proprietary RAW converter. They have to make their own profiles for all the cameras that they support - keep this proprietary propensity of your camera manufacturer in mind next time you buy a digital camera.
 
@@ -110,73 +110,6 @@ Working Spaces
 So now your RAW file has been interpolated by Libraw and you've obtained a camera profile and used Lcms to apply your camera profile. What does all this mean? The real answer involves a lot of math and color science that goes way over my head and likely yours. The short, practical answer is that neither the camera profile space nor the Profile Connection Space is an appropriate space for image editing.
 
 Your next step is to choose a working space for image editing. And then you (or rather the Lcms color management engine that digiKam uses) actually perform a double translation. First Lcms uses the camera profile to translate the RGB values of each pixel in the Libraw-output-image-without-camera-profile-applied into the aforementioned Profile Connection Space. Then it translates the RGB values of each pixel from the PCS to your chosen working space.
-
-Confusions Terminology
-----------------------
-
-Before talking more about working spaces, some confusions and confusing terminology needs to be cleared up:
-
-    - First, sRGB is both a working color space and an output color space for images intended for the web and for monitor display. If you have a spiffy new monitor with a gamut larger than the gamut covered by sRGB, obviously you might want to reconsider what output profile to use to best take advantage of your wonderful and hopefully calibrated and profiled monitor, but please convert your image to sRGB before sending it on to your friends. sRGB is also the color space that a lot of home and mass-production commercial printers expect image files to be in when sent to the printer. It is also the color space that most programs assume if an image does not have an embedded color profile telling the program what color space should be used to interpret (translate) the RGB numbers. So if you choose to not use color-management, your color-management choices are simple - set everything to sRGB.
-
-    - Second, all Jpegs coming straight out of a camera (even if produced by point-and-shoots cameras that don't allow you to save a RAW file) start life inside the camera as a RAW file produced by the camera's A to D converter. The processor inside the camera interpolates the RAW file, assigns a camera profile, translates the resulting RGB numbers to a working space (usually sRGB but sometimes you can choose AdobeRGB, depending on the camera), does the Jpeg compression, and stores the Jpeg file on your camera card. So Jpegs from your camera never need to be assigned a camera or input profile which is then translated to a working space via a PCS. Jpegs from a camera are already in a working space.
-
-    - Third, in case anyone is unsure on this point, note that an interpolated raw file is no longer a raw file - it has been interpolated and then output as a tiff whose RGB values need to be translated to a working space, using the camera profile, the PCS, and Lcms.
-    
-    - Fourth, to introduce a bit of commonly heard color-management terminology here - the camera profile and your printer's color profile are both device dependent, whereas the working space will be device-independent - it can be used with any image, with any properly color-managed software, without regard for where the image originated.
-
-    - Fifth, above I have used the words translate and translation as a descriptive metaphor for what Lcms does when it translates RGB values from one color space to another via the PCS. The usual and correct terminology is convert and conversion, which I will use below. The four methods of conversion from one color space to another are: perceptual, relative colorimetric, absolute colorimetric, and saturation. Which method of conversion you should use for any given image processing step from raw file to final output image is beyond the scope of this manual. The standard advice is: when in doubt, use perceptual.
-
-    - Sixth, assign a profile means change the meaning of the RGB numbers in an image by embedding a new profile without changing the actual RGB numbers associated with each pixel in the image; convert means embed a new profile, but also change the RGB numbers at the same time so that the meaning of the RGB values - that is, the real-world visible color represented by the trio of RGB numbers associated with each pixel in an image - remains the same before and after the conversion from one space to another. You should be able to do multiple conversions of an image from one working space to another, and with a properly color-managed image editor, even though all the RGB numbers in the image will change with each conversion, the image on your screen should look the same (leaving aside the usually unnoticeable small but inevitable changes from accumulated gamut mismatches and mathematical rounding errors). However, every time you assign a new working space profile rather than convert to a new working space, the appearance of the image should more or less drastically change.
-
-    - Finally, color management is not only relevant if you shoot RAW. Color management affects every stage of the image processing pipeline, whether you start with a RAW file that you, yourself interpolate and translate into a TIFF, or if you start with a Jpeg or TIFF produced by your camera.
-
-Selecting a Working Space
--------------------------
-
-Now, the next question is: which working space should I use? Working spaces, such as sRGB or Adobe RGB, are color spaces that facilitate good results while editing. For instance, pixels with equal values of RGB should appear neutral. Using a large gamut working space will lead to posterization, while using a small working space will lead to clipping. This trade-off is a consideration for the Image Editor.
-
-We am not aware of a list of other technical requirements for a suitable working space, though undoubtedly someone has produced such a list. But most working space profiles are characterized by:
-
-    - RGB primaries which dictate the range of colors, that is, the **Gamut** covered by a given profile.
-
-    - **White point**: usually D50 or D65, which dictates the total dynamic range of the working space, from 0,0,0 (total black) to the brightest possible white.
-
-    - **Gamma**.
-
-The practical consequences that result from using different RGB primaries, leading to larger or smaller working spaces, are discussed below. The practical consequences for different choices for the working space white point are beyond the scope of this manual. Here we will talk a little bit about the practical consequences of the working space gamma.
-
-The gamma of a color profile dictates what power transform needs to take place to properly convert from an image's embedded color profile (perhaps your working color space) to another color profile with a different gamma, such as (i) the display profile used to display the image on the screen or (ii) perhaps to a new working space, or (iii) perhaps from your working space to your printer's color space.
-
-.. tip::
-
-    Mathematically speaking, for a power transform you normalize the RGB numbers and raise the resulting numbers to an appropriate power depending on the respective gammas of the starting and ending color space, then renormalize the results to a new set of RGB numbers. Lcms does this for you when you ask Lcms to convert from one color space to another; however, if ALL you are doing is a power transform, use imagemagick instead of Lcms and just manipulate the RGB numbers directly - the results will be more accurate.
-
-One practical consequence of the gamma of a working space is that the higher the gamma, the more tones are available for editing in the shadows, with consequently fewer tones available in the highlights. So theoretically, if you are working on a very dark-toned (low key) image you might want a working space with a higher gamma. And if you are working on a high key image, say a picture taken in full noon sunlight of a wedding dress with snow as a backdrop, you might want to choose a working space with a lower gamma, so you have more available tonal gradations in the highlights. But in the real world of real image editing, almost everyone uses working spaces with either gamma 1.8 or 2.2.
-
-Some people are trying to standardize on gamma 2.0. sRGB and LStar-RGB are not gamma-based working spaces. Rather, sRGB uses a hybrid gamma, and LStar-RGB uses a luminosity-based tonal response curve instead of a gamma value.
-
-In addition to gamma 1.8 and gamma 2.2 the only other gamma for a working space that gets much mention or use is gamma 1.0, also called linear gamma. Linear gamma is used in HDR (high dynamic range) imaging and also if one wants to avoid introducing gamma-induced errors into one's regular low dynamic range editing. Gamma-induced errors is a topic outside the scope of this manual, but see Gamma errors in picture scaling, for gamma-induced color shifts.
-
-Unfortunately and despite their undeniable mathematical advantages, linear gamma working spaces have so few tones in the shadows that they are impossible to use for editing if one is working in 8-bits, and still problematic at 16-bits. When the day comes when we are all doing our editing on 32-bit files produced by our HDR cameras on our personal supercomputers, we predict that we will all be using working spaces with gamma 1.
-
-Large or Small Gamut
---------------------
-
-One major consideration in choosing a working space is that some working spaces are bigger than others, meaning they cover more of the visible spectrum (and perhaps even include some imaginary colors - mathematical constructs that don't really exist). These bigger spaces offer the advantage of allowing you to keep all the colors captured by your camera and preserved by the Lcms conversion from your camera profile to the really big profile connection space.
-
-But keeping all the possible colors comes at a price. It seems that any given digital image (pictures of daffodils with saturated yellows being one common exception) likely only contains a small subset of all the possible visible colors that your camera is capable of capturing. This small subset is easily contained in one of the smaller working spaces. Using a very large working space mean that editing your image (applying curves, saturation, etc.) can easily produce colors that your eventual output device (printer, monitor) simply cannot display. So the conversion from your working space to your output device space (say your printer) will have to remap the out of gamut colors in your edited image, some of which might even be totally imaginary, to your printer color space with its much smaller gamut, leading to inaccurate colors at best and at worst to banding (posterization - gaps in what should be a smooth color transition, say, across an expanse of blue sky) and clipping (your carefully crafted muted transitions across delicate shades of red, for example, might get remapped to a solid block of dull red after conversion to your printer's color space).
-
-In other words, large gamut working spaces, improperly handled, can lead to lost information on output. Small gamut working spaces can clip information on input. Here is some oft-repeated advice:
-
-    - For images intended for the web, use sRGB.
-
-    - For the most accuracy in your image editing (that is, making the most of your *bits* with the least risk of banding or clipping when you convert your image from your working space to an output space), use the smallest working space that includes all the colors in the scene that you photographed, plus a little extra room for those new colors you intentionally produce as you edit.
-
-    - If you are working in 8-bits rather than 16-bits, choose a smaller space rather than a larger space.
-
-    - For archival purposes, convert your RAW file to a 16-bit TIFF with a large gamut working space to avoid loosing color information. Then convert this archival TIFF to your working space of choice (saving the converted working TIFF under a new name, of course). See here for more details. 
-
-The whys of these bits of advice regarding which working space are beyond the scope of this manual. See Bruce Lindbloom's excellent website (Info, Information about RGB Working Spaces) for a visual comparison of the gamut (array of included colors) of the various working color spaces. See here and here for a pro and con presentation, respectively, of the merits of using large gamut working spaces. And while you are on the cambridgeincolour.com website, check out the tutorial on color management.
 
 Soft Proofing
 -------------
