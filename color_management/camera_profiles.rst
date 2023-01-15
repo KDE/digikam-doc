@@ -24,13 +24,19 @@ If you are reading this manual you probably are shooting RAW images with a digit
     :alt:
     :align: center
 
-    digiKam Raw Preview Using Embedded JPEG Image.
+    digiKam RAW Preview Using **Embedded JPEG Image**.
+
+.. figure:: images/cm_raw_preview_halfsize.webp
+    :alt:
+    :align: center
+
+    digiKam RAW Preview Using an Half Sized Demosaiced in 8 bits and **Bilinear** Method.
 
 .. figure:: images/cm_raw_import_default.webp
     :alt:
     :align: center
 
-    digiKam Raw Import Tool from Image Editor Demosaicing the Same RAW file with Default Settings.
+    digiKam RAW Import Tool from Image Editor Loading RAW file Demosaiced in 16-bit and **AHD** method.
 
 Why doesn't the image produced by RAW converters like `Libraw <https://www.libraw.org/>`_ look like the embedded preview displayed by digiKam? All digital camera images start out as RAW files, whether or not the camera allows the user the option to save the image as a RAW file. When you ask the camera to save Jpegs instead of RAW files, the camera uses its on-board processor to convert the RAW file to a Jpeg. That embedded preview is what your final image would have looked like if you had set your camera to save Jpegs instead of RAW files.
 
@@ -38,7 +44,7 @@ Canon for example offers the user several picture styles - neutral, standard, po
 
 Libraw which digiKam uses to convert RAW files to image files doesn't add an S-curve to your image tonality. Libraw gives you the lights and darks that are actually recorded by the camera sensor. Libraw is one of only a handful of RAW developers that actually gives you the *scene-referred* tonality. And the Libraw scene-referred image is flat-looking, because the camera sensor records light linearly, whereas our eyes are constantly interacting with our brain to accommodate dim and bright areas in a scene, meaning our brain to some extent *applies an S-curve* to the scene to enable us to better focus in on the areas of particular interest as we look around.
 
-The embedded Jpeg preview looks so much nicer than Libraw's output. What is the value in scene-referred tonality? When you take a picture, presumably you have an idea of what you want the final image to look like. It is much easier to achieve that final image if you don't have to "undo" stuff that has already been done to your image. Once Canon (or Nikon, or Sony, etc.) has applied their proprietary S-curves and shadow-denoising, sharpening, etc. to your image, then your shadows, highlights, edge detail, etc. are already squashed, clipped, chopped, and otherwise altered and mangled. You've thrown information away and you cannot get it back. Especially in the shadows, even with 16-bit images (actually, 12- or 14-bits, depending on the camera, but it's encoded as 16-bits for the computer's convenience), there just isn't that much information to begin with.
+The embedded Jpeg preview looks so much nicer than Libraw's output. What is the value in scene-referred tonality? When you take a picture, presumably you have an idea of what you want the final image to look like. It is much easier to achieve that final image if you don't have to *undo* stuff that has already been done to your image. Once Canon (or Nikon, or Sony, etc.) has applied their proprietary S-curves and shadow-denoising, sharpening, etc. to your image, then your shadows, highlights, edge detail, etc. are already squashed, clipped, chopped, and otherwise altered and mangled. You've thrown information away and you cannot get it back. Especially in the shadows, even with 16-bit images (actually, 12- or 14-bits, depending on the camera, but it's encoded as 16-bits for the computer's convenience), there just isn't that much information to begin with.
 
 .. figure:: images/cm_raw_import_post.webp
     :alt:
