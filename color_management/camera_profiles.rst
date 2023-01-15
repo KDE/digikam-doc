@@ -48,9 +48,9 @@ The embedded Jpeg preview looks so much nicer than Libraw's output. What is the 
 
 It seems to me that the heart and soul of image processing is the deliberate manipulation of image tonality, color, selective sharpening, and so forth, such that the viewer focuses in on what you, the photographer, found of particular interest when you took the picture. Why give the art of image processing over to some proprietary RAW processing software? In other words, *flat is good* if you'd rather give your images your own artistic interpretation. The alternative is to let the canned, proprietary algorithms produced by Canon, Nikon, Sony, etc. interpret your images for you. On the other hand, there is no denying that for many images, those canned algorithms are really pretty good.
 
-You can can see the value in starting my image-editing with a scene-referred rendition instead of the eye-popping rendition that you see in the embedded Jpeg. But the images produced by digiKam and Libraw look a little bit different. If the image looks very dark, then you asked Libraw to output a 16-bit file and you have run into a problem with Libraw not applying a gamma transform before outputting the image file. You can use the Image Editor to apply the appropriate gamma transform to the image file produced by Libraw. Or you can find or make a camera profile with a gamma of 1.
+You can see the value in starting my image-editing with a scene-referred rendition instead of the eye-popping rendition that you see in the embedded Jpeg. But the images produced by digiKam and Libraw look a little bit different. If the image looks very dark, then you asked Libraw to output a 16-bit file and you have run into a problem with Libraw not applying a gamma transform before outputting the image file. You can use the Image Editor to apply the appropriate gamma transform to the image file produced by Libraw. Or you can find or make a camera profile with a gamma of 1.
 
-If your image has pink highlights, Check you **White Balance** settings in RAW Import tool, especially the **highlights** options.
+If your image has pink highlights, check your **White Balance** settings in the RAW Import tool, especially the **highlights** options.
 
 .. figure:: images/cm_raw_import_wb.webp
     :alt:
@@ -126,7 +126,7 @@ How to apply a camera profile to the 16-bit image file produced by my open sourc
     :alt:
     :align: center
 
-    The digiKam Batch Queue Manager Raw Converter has also the Same Noise Reduction and Color Proiles Options than Image Editor
+    The digiKam Batch Queue Manager Raw Converter has also the Same Noise Reduction and Color Profiles Options than Image Editor
 
 Profiles Point to Real Colors
 -----------------------------

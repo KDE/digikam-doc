@@ -138,7 +138,7 @@ digiKam will ask you confirmation before to move items to trash with the dialog 
 
 digiKam will ask you confirmation before to move items to trash with the dialog below.
 
-For each collection registered in the database, digiKam handle an internal trash-bin. Physically, the trash is located at the root album corresponding to the collection entry. It's an hidden folder :file:`.dtrash` storing deleted items in a sub-directory named :file:`files`, and information about the deletion stored in another sub-directory named :file:`info`with  Json sidecars (:file:`.dtrashinfo`). Deleting a file in the collection do not remove the file from the media, but move the file in this container. This one is accessible from the left sidebar tab **Albums** as the last entry of the tree-view corresponding to a collection and is named **Trash**.
+For each collection registered in the database, digiKam handle an internal trash-bin. Physically, the trash is located at the root album corresponding to the collection entry. It's a hidden folder :file:`.dtrash` storing deleted items in a sub-directory named :file:`files`, and information about the deletion stored in another sub-directory named :file:`info`with  Json sidecars (:file:`.dtrashinfo`). Deleting a file in the collection does not remove the file from the media, but moves the file into this container. This one is accessible from the left sidebar tab **Albums** as the last entry of the tree-view corresponding to a collection and is named **Trash**.
 
 .. figure:: images/mainwindow_trashbin.webp
     :alt:
@@ -150,7 +150,7 @@ For each collection registered in the database, digiKam handle an internal trash
 
     digiKam do not use the Desktop recycler as operations to move files to delete from a network collection will take a while. It will be exactly the same problem with a collection hosted in a different disk partition than your home directory managed by the Desktop. Moving items to delete to a self-contained trash-bin from the collection will be universal and fast.  
 
-On the bottom of the trash-bin view, a serie of buttons allows to restore files in collection or delete them permanently. There are:
+On the bottom of the trash-bin view, a series of buttons allows to restore files in collection or delete them permanently. There are:
 
     - **Undo**: to restore only the last entry in the trash-bin.
     - **Restore¨**: to restore seclection of files from the trash-bin.
