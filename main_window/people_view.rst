@@ -159,11 +159,11 @@ The list of detection samples below come from a huge collection of photo scanned
         :align: center
 ==== =========================================================== =============================================
 
-The screenshots **02** and **11** have been chosen because they shows one important feature: the algorithm is able to find animal faces, and this is not a false positive, excepted if you want to see only human faces on your collection of course.
+The screenshots **02** and **11** have been chosen because they show one important feature: the algorithm is able to find animal faces, and this is not a false positive, except if you want to see only human faces on your collection of course.
 
 The screenshot **10** is another example shows one important issue: the algorithm will find inevitably details in an image that resemble a face but are actually something else. That's what the **Remove** button is for. It will remove the face tag from the photograph and if it is the only face tag (left) the photograph will disappear from the scan result.
 
-The screenshots **01**, **03**, **05**, **08**, **09**, and **12** can be considered as non faces, or be prevented by reducing the **Accuracy** of detection in face management **Settings** view. But these example proof the capability of algorithm to detect faces in critical shots conditions.
+The screenshots **01**, **03**, **05**, **08**, **09**, and **12** can be considered as non faces, or be prevented by reducing the **Accuracy** of detection in face management **Settings** view. But these examples prove the capability of algorithm to detect faces in critical shots conditions.
 
 The screenshots **04** and **10** are definitively false positive results.
 
@@ -286,7 +286,7 @@ You can tag people manually by different way:
 
         The digiKam Face Tag Properties Dialog With a Keyboard Shortcut Assigned
 
-- From The **Unknown** tag from **People** view: to manually identify a face, hover on any **Unknown** face form icon-view and use the text box to give it a name. This will lead to the creation of a face tag in case a person of that name doesn't exist already. For best results identify at least 4 faces for each person you want the scan to recognize.
+- From The **Unknown** tag from **People** view: to manually identify a face, hover on any **Unknown** face from icon-view and use the text box to give it a name. This will lead to the creation of a face tag in case a person of that name doesn't exist already. For best results identify at least 4 faces for each person you want the scan to recognize.
 
     .. figure:: videos/mainwindow_face_tagging.gif
         :alt:
