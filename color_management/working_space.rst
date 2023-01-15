@@ -18,7 +18,7 @@ Color Workflow
 
 So we told digiKam where to find my monitor profile and we have a camera profile that we applied to the image file produced by my RAW processing software. What's the next step in color management?
 
-You need to choose a working color space so you can edit your image. Lcms will transform your image from your camera color space to your chosen working space, via the PCS specified by your camera color profile. Why cannot to just edit images in the color space described by the camera profile?
+You need to choose a working color space so you can edit your image. `Lcms <https://www.littlecms.com/>`_ will transform your image from your camera color space to your chosen working space, via the PCS specified by your camera color profile. Why cannot to just edit images in the color space described by the camera profile?
 
 After all, the camera profile should provide the best *fit* to the colors recorded by my camera, as processed by my RAW processing procedure, right? Working spaces, such as sRGB or Adobe RGB, are color spaces that facilitate good results while editing. For instance, pixels with equal values of RGB should appear neutral. This just want means that for any given pixel in an image that has been converted to a suitable working space, if R=G=B you should see grey or black or white on your screen. Many camera profiles violate this *neutral* condition.
 
@@ -36,7 +36,7 @@ Working space profiles are characterized by:
 
     - RGB primaries which dictate the range of colors, that is, the color **Gamut**, covered by a given profile.
 
-    - **White point** (usually D50 or D65 though other values may be used), which specifies the color temperature of the white point of the working space. 
+    - **White point** (usually D50 or D65 though other values may be used), which specifies the color temperature of the white point of the working space.
 
 Confusions Terminology
 ----------------------
@@ -76,7 +76,7 @@ Most working space profiles are characterized by:
     :alt:
     :align: center
 
-    The Color Profile Details of CIE Chromacity Diagram Show in digiKam 
+    The Color Profile Details of CIE Chromacity Diagram Show in digiKam
 
 The practical consequences that result from using different RGB primaries, leading to larger or smaller working spaces, are discussed below. The practical consequences for different choices for the working space white point are beyond the scope of this manual. Here we will talk a little bit about the practical consequences of the working space gamma.
 
@@ -84,7 +84,7 @@ The gamma of a color profile dictates what power transform needs to take place t
 
 .. tip::
 
-    Mathematically speaking, for a power transform you normalize the RGB numbers and raise the resulting numbers to an appropriate power depending on the respective gammas of the starting and ending color space, then renormalize the results to a new set of RGB numbers. Lcms does this for you when there is a need to convert from one color space to another in your workflow.
+    Mathematically speaking, for a power transform you normalize the RGB numbers and raise the resulting numbers to an appropriate power depending on the respective gammas of the starting and ending color space, then renormalize the results to a new set of RGB numbers. `Lcms <https://www.littlecms.com/>`_ does this for you when there is a need to convert from one color space to another in your workflow.
 
 One practical consequence of the gamma of a working space is that the higher the gamma, the more tones are available for editing in the shadows, with consequently fewer tones available in the highlights. So theoretically, if you are working on a very dark-toned (low key) image you might want a working space with a higher gamma. And if you are working on a high key image, say a picture taken in full noon sunlight of a wedding dress with snow as a backdrop, you might want to choose a working space with a lower gamma, so you have more available tonal gradations in the highlights. But in the real world of real image editing, almost everyone uses working spaces with either gamma 1.8 or 2.2.
 
@@ -121,7 +121,7 @@ In other words, large gamut working spaces, improperly handled, can lead to lost
 
     - If you are working in 8-bits rather than 16-bits, choose a smaller space rather than a larger space.
 
-    - For archival purposes, convert your RAW file to a 16-bit TIFF with a large gamut working space to avoid loosing color information. Then convert this archival TIFF to your working space of choice (saving the converted working TIFF under a new name, of course). See here for more details. 
+    - For archival purposes, convert your RAW file to a 16-bit TIFF with a large gamut working space to avoid loosing color information. Then convert this archival TIFF to your working space of choice (saving the converted working TIFF under a new name, of course). See here for more details.
 
     .. figure:: images/cm_bqm_convert_space.webp
         :alt:
@@ -134,7 +134,7 @@ The whys of these bits of advice regarding which working space are beyond the sc
 Gamma Properties
 ----------------
 
-The gamma of a color profile dictates what power transform needs to take place to properly convert from an image's embedded color profile (perhaps your working color space or your camera color profile) to another color profile with a different gamma, such as your chosen working space, or the display profile used to display the image on the screen or perhaps from one working space to another, or perhaps from your working space to your printer's color space. Libraw outputs a 16-bit image with a linear gamma, which means that a histogram of the resulting image file shows the actual amount of light that each pixel on the camera sensor captured during the exposure (paraphrasing this page). (Which is why at present applying a camera profile to the Libraw output also requires applying an appropriate gamma transform to get to the desired working space, unless the camera profile also uses gamma=1.)
+The gamma of a color profile dictates what power transform needs to take place to properly convert from an image's embedded color profile (perhaps your working color space or your camera color profile) to another color profile with a different gamma, such as your chosen working space, or the display profile used to display the image on the screen or perhaps from one working space to another, or perhaps from your working space to your printer's color space. `Libraw <https://www.libraw.org/>`_ outputs a 16-bit image with a linear gamma, which means that a histogram of the resulting image file shows the actual amount of light that each pixel on the camera sensor captured during the exposure (paraphrasing this page). (Which is why at present applying a camera profile to the Libraw output also requires applying an appropriate gamma transform to get to the desired working space, unless the camera profile also uses gamma=1.)
 
 One practical consequence of the gamma of a working space is that the higher the gamma, the more discrete tones are available for editing in the shadows, with consequently fewer tones available in the highlights. Changing the gamma of an image redistributes the number of tones available in the lighter and darker areas of an image. Theoretically, if you are working on a very dark-toned (low key) image you might want a working space with a higher gamma. And if you are working on a high key image, say a picture taken in full noon sunlight of a wedding dress with snow as a backdrop, you might want to choose a working space with a lower gamma, so you have more available tonal gradations in the highlights.
 
@@ -144,7 +144,7 @@ sRGB uses a transfer function close to that of a CRT (and thus not necessarily r
 
 L*-RGB uses as its transfer function the same perceptually uniform transfer function as the CIELab color space. "When storing colors in limited precision values" using a perceptually uniform transfer function "can improve the reproduction of tones" (cited from this page).
 
-In addition to gamma=1.8 and gamma=2.2, the only other gamma for a working space that gets much mention or use is linear gamma, or gamma=1.0. As noted above, Libraw outputs linear gamma files if you ask for 16-bit output. Linear gamma is used in HDR (high dynamic range) imaging and also if one wants to avoid introducing gamma-induced errors into one's regular low dynamic range editing.
+In addition to gamma=1.8 and gamma=2.2, the only other gamma for a working space that gets much mention or use is linear gamma, or gamma=1.0. As noted above, `Libraw <https://www.libraw.org/>`_ outputs linear gamma files if you ask for 16-bit output. Linear gamma is used in HDR (high dynamic range) imaging and also if one wants to avoid introducing gamma-induced errors into one's regular low dynamic range editing.
 
 "Gamma-induced errors" is a topic outside the scope of this manual. But see "Gamma errors in picture scaling" (cited from this page) for gamma-induced tonality shifts; and of course see Timo Autiokari's informative (albeit somewhat infamous) website for a whole-hearted endorsement of using linear gamma working spaces (Timo's website seems to be down at present, though archived copies of his articles are still available through google). Bruce Lindbloom mentions a commonly-encountered gamma-induced error that is caused by incorrectly calculating luminance in a nonlinear RGB working space (see this page, sidenote 1). And in a similar vein, the calculations involved in mixing colors together to produce new colors (such as using a digital filter to add warmth to an image) result in gamma errors unless the new colors are calculated by first transforming all the relevant values back to their linear values.
 
@@ -155,7 +155,7 @@ Image Tonal Steps and Gamut Size
 
 How many discrete tonal steps are there in a digital image? In an 8-bit image, you have 256 tonal steps from solid black to solid white. In a 16-bit image theoretically you have 65536 steps. But remember, those 16-bits started out as either 10 bits (=1024 steps), 12 bits (=4096 steps), or 14 bits (=16384 steps) as produced by the camera's A-to-D converter - the extra bits to reach 16-bits start out as just padding. The available tones are not distributed evenly from light to dark. In linear gamma mode (as the camera sensor sees things), there's a whole lot more tones in the highlights than in the shadows. Hence the advice, if you shoot RAW, to "expose to the right but don't blow the highlights". See Ron Bigelow's articles on "why RAW", for a full discussion of the distribution of available tones in a RAW image.
 
-One major consideration in choosing a working space is that some working spaces are bigger than others, meaning they cover more of the visible spectrum (and as a consequence include some imaginary colors - mathematical constructs that don't really exist). These bigger spaces offer the advantage of allowing you to keep all the colors captured by your camera and preserved by the Lcms conversion from your camera profile to the super-wide-gamut profile connection space and out again to your chosen working space.
+One major consideration in choosing a working space is that some working spaces are bigger than others, meaning they cover more of the visible spectrum (and as a consequence include some imaginary colors - mathematical constructs that don't really exist). These bigger spaces offer the advantage of allowing you to keep all the colors captured by your camera and preserved by the `Lcms <https://www.littlecms.com/>`_ conversion from your camera profile to the super-wide-gamut profile connection space and out again to your chosen working space.
 
 But keeping all the possible colors comes at a price, as explained below. And it seems that any given digital image likely only contains a small subset of all the possible visible colors that your camera is capable of capturing. This small subset is easily contained in one of the smaller working spaces (an exception requiring a larger color gamut would be a picture of a highly saturated object such as yellow daffodil).
 
@@ -178,6 +178,6 @@ Here are some oft-repeated bits of advice on choosing a working space:
 
     - If you are working in 8-bits rather than 16-bits, choose a smaller rather than a larger working space to avoid clipping and banding.
 
-    - For archival purposes, convert your RAW file to a 16-bit TIFF with a large gamut working space to avoid loosing color information. Then convert this archival TIFF to your medium-gamut or large-gamut working space of choice (saving the converted working TIFF under a new name, of course). 
+    - For archival purposes, convert your RAW file to a 16-bit TIFF with a large gamut working space to avoid loosing color information. Then convert this archival TIFF to your medium-gamut or large-gamut working space of choice (saving the converted working TIFF under a new name, of course).
 
 For more information on choosing a working space, see this page, Information about RGB Working Spaces for a visual comparison of the gamut (array of included colors) of the various working color spaces. See here and here for a pro- and con- presentation, respectively, of the merits of using large gamut working spaces. And while you are on the cambridgeincolour.com website, check out the tutorial on color management.
