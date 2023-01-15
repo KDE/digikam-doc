@@ -345,13 +345,13 @@ The Feature Masks
 
     The digiKam Liquid Rescale Tool Mask Settings
 
-The masks are the easiest way to manually select the features of the image that you want to protect or discard. Turn on the **Add weight masks** option switch in mask edit mode.
+The masks are the easiest way to manually select the features of the image that you want to protect or discard. Turn on the **Add weight masks** option to switch in mask edit mode.
 
-To discard portion of image, press the **Suppresion weight mask** button and paint the mask over the canvas. The mask is a virtual transparent layer using **Red** color, with 50% opacity to indicate the area to discard.
+To discard portion of image, press the **Suppression weight mask** button and paint the mask over the canvas. The mask is a virtual transparent layer using **Red** color, with 50% opacity to indicate the area to discard.
 
 To protect portion of image, press the **Preservation weight mask** button and paint the mask over the canvas. The mask is a virtual transparent layer using **Green** color, with 50% opacity to indicate the area to protect.
 
-You can change the **Brush size** to paint masks on the canvas. To change a mask regions, use the **Erase mask** button and clean desired portion of masks over the canvas.
+You can change the **Brush size** to paint masks on the canvas. To change mask regions, use the **Erase mask** button and clean desired portion of masks over the canvas.
 
 .. note::
 
