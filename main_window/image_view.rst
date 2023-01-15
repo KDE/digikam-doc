@@ -191,8 +191,9 @@ You can put the whole selection into one group using **Group Selected Here** or 
 
 .. important::
 
-    The smaller file size from the group is preferrend as the leading item. The idea is that when previewing, faster loading of the image will allow for a quick preview.
-
+    If you Group files automatically (based on time or filename for example), the smaller file size from the group is preferrend as the leading item. The idea is that when previewing, faster loading of the image will allow for a quick preview.
+    
+    If you group files manually from icon-view, the selected item used to show context menu and group files will be used as leading item.
 
 The next group in the menu is to control whether only the reference icon of the group (the first of the group according to the sorting order at the moment of grouping) is displayed or all of them. These two functions can also be accessed by the little grouping indicator (folder symbol with number) on the reference icon.
 
