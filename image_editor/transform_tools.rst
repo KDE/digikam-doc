@@ -417,16 +417,16 @@ The tool works by finding so-called *seams* over an image, i.e. continuous, zig-
 
 Mirroring the carving process, by inserting additional seams besides the ones which are found by the algorithm, instead of removing them, image enlargement can be obtained, too. The meaning of the seam map is reversed in this case.
 
-In order to get good results form this technique, the main issue is finding which are the most suitable seams to carve or to insert. If the aim is simply to change the proportions of the image without affecting too much the content, for example, *good* seams will be those which don't cross important features of the image, and instead pass through a background landscape.
+In order to get good results from this technique, the main issue is finding which are the most suitable seams to carve or to insert. If the aim is simply to change the proportions of the image without affecting too much the content, for example, *good* seams will be those which don't cross important features of the image, and instead pass through a background landscape.
 
 By default, the tool tries to find the seams which cross the lowest-contrast areas (how this happens exactly is specified by the energy function settings). Therefore, each pixel of the image is assigned a so-called *energy value*, as the higher the contrast, the higher the energy, and seams are less likely to cross high-energy areas.
 
 Since in many cases this simple contrast-based method is not optimal, the energy function can be *biased* by the user, who can decide that some areas should have a higher energy (using a preservation masks) or, on the contrary, that they should have a lower energy (using a suppression mask), and therefore effectively *drive* the seams and the whole process.
 
-See below the sample image resized where width have been reduced by 30%. The height still the same. Look like presered areas are not deformed while operation and the unwanted disapear magicaly.
+See below the sample image resized where width have been reduced by 30%. The height still the same. Look like preserved areas are not deformed while operation and the unwanted disappear magically.
 
 .. figure:: images/editor_liquid_rescale_after.webp
     :alt:
     :align: center
 
-    **Step 3**:The Sample Image Width Finally Reduced With Liquid Rescale Masks Applied
+    **Step 3**: The Sample Image Width Finally Reduced With Liquid Rescale Masks Applied
