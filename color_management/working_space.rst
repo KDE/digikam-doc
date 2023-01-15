@@ -48,7 +48,7 @@ Before talking more about working spaces, some confusions and confusing terminol
     2. All Jpegs coming straight out of a camera (even if produced by point-and-shoots cameras that don't allow you to save a RAW file) start life inside the camera as a RAW file produced by the camera's A to D converter. The processor inside the camera interpolates the RAW file, assigns a camera profile, translates the resulting RGB numbers to a working space (usually sRGB but sometimes you can choose AdobeRGB, depending on the camera), does the Jpeg compression, and stores the Jpeg file on your camera card. So Jpegs from your camera never need to be assigned a camera or input profile which is then translated to a working space via a PCS. Jpegs from a camera are already in a working space.
 
     3. In case anyone is unsure on this point, note that an interpolated RAW file is no longer a RAW file - it has been interpolated and then output as a TIFF whose RGB values need to be translated to a working space, using the camera profile, the PCS, and Lcms.
-    
+
     4. To introduce a bit of commonly heard color-management terminology here - the camera profile and your printer's color profile are both device dependent, whereas the working space will be device-independent - it can be used with any image, with any properly color-managed software, without regard for where the image originated.
 
     5. Above we have used the words translate and translation as a descriptive metaphor for what Lcms does when it translates RGB values from one color space to another via the PCS. The usual and correct terminology is convert and conversion. The four methods of conversion from one color space to another are: perceptual, relative colorimetric, absolute colorimetric, and saturation. Which method of conversion you should use for any given image processing step from RAW file to final output image is beyond the scope of this manual. The standard advice is: when in doubt, use perceptual.
@@ -67,7 +67,7 @@ Most working space profiles are characterized by:
     - The place of the gamut into the **Diagram** :guilabel:`(1)` of all colors visible to the average human eyes.
 
     - The **Gamut** :guilabel:`(2)` triangle to define the range of RGB colors of the profile. Red point is on the bottom right corner, Green is on the top, Blue is on the left bottom. Values given around the edge of the gamut passing from the blue, the green and the red points, are the spectral colors in nanometers.
-   
+
     - The **White point** :guilabel:`(3)` to define the total dynamic range of the profile.
 
     - The **Gamma** to define the transfer function of the profile (not displayed in the gamut).
@@ -77,7 +77,7 @@ Most working space profiles are characterized by:
     :align: center
 
     The Color Profile Details of CIE Chromacity Diagram Show in digiKam 
-    
+
 The practical consequences that result from using different RGB primaries, leading to larger or smaller working spaces, are discussed below. The practical consequences for different choices for the working space white point are beyond the scope of this manual. Here we will talk a little bit about the practical consequences of the working space gamma.
 
 The gamma of a color profile dictates what power transform needs to take place to properly convert from an image's embedded color profile (perhaps your working color space) to another color profile with a different gamma, such as (i) the display profile used to display the image on the screen or (ii) perhaps to a new working space, or (iii) perhaps from your working space to your printer's color space.
@@ -109,7 +109,7 @@ One major consideration in choosing a working space is that some working spaces 
     :alt:
     :align: center
 
-    For the Left to Right: sRGB, AbodeRGB, WideGammutRGB, and ProPhotoRGB 
+    For the Left to Right: sRGB, AbodeRGB, WideGammutRGB, and ProPhotoRGB Color Profile Show in digiKam
 
 But keeping all the possible colors comes at a price. It seems that any given digital image (pictures of daffodils with saturated yellows being one common exception) likely only contains a small subset of all the possible visible colors that your camera is capable of capturing. This small subset is easily contained in one of the smaller working spaces. Using a very large working space mean that editing your image (applying curves, saturation, etc.) can easily produce colors that your eventual output device (printer, monitor) simply cannot display. So the conversion from your working space to your output device space (say your printer) will have to remap the out of gamut colors in your edited image, some of which might even be totally imaginary, to your printer color space with its much smaller gamut, leading to inaccurate colors at best and at worst to banding (posterization - gaps in what should be a smooth color transition, say, across an expanse of blue sky) and clipping (your carefully crafted muted transitions across delicate shades of red, for example, might get remapped to a solid block of dull red after conversion to your printer's color space).
 
