@@ -189,6 +189,11 @@ You can put the whole selection into one group using **Group Selected Here** or 
 
     The digiKam Icon-View Grouped Mode From Icon-View
 
+.. important::
+
+    The smaller file size from the group is preferrend as the leading item. The idea is that when previewing, faster loading of the image will allow for a quick preview.
+
+
 The next group in the menu is to control whether only the reference icon of the group (the first of the group according to the sorting order at the moment of grouping) is displayed or all of them. These two functions can also be accessed by the little grouping indicator (folder symbol with number) on the reference icon.
 
 .. note::
