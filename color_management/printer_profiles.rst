@@ -20,11 +20,19 @@ We are now almost ready to print that image. Where to get a printer profile? you
 
 See this page for an excellent presentation of the benefits of producing your own printer profile, plus a resoundingly positive endorsement of using Argyll for making your printer profile.
 
-.. figure:: images/cm_editor_print_advanced_settings.webp
+.. figure:: images/cm_editor_soft_proofing_menu.webp
     :alt:
     :align: center
 
-    digiKam Image Editor Print Feature Allows Using Your Preferred Printer Color Profile and Tune the Black Point Compensation.
+    digiKam Image Editor Soft-Proofing Menu Entries
+
+In digiKam Image Editor, Soft-Proofing can be configured to render over the canvas a preview of a printing job using your printer color profile.
+
+.. figure:: images/cm_editor_soft_proofing_options.webp
+    :alt:
+    :align: center
+
+    digiKam Image Editor Soft-Proofing Options
 
 The Rendering intents
 ---------------------
@@ -79,3 +87,8 @@ Black Point Compensation
 
 Black point compensation results depends of the context. Try soft-proofing with black point compensation on. If you like it, use it. Otherwise, don't use it.
 
+.. figure:: images/cm_editor_print_advanced_settings.webp
+    :alt:
+    :align: center
+
+    digiKam Image Editor Print Feature Allows Using Your Preferred Printer Color Profile and Tune the Black Point Compensation.
