@@ -58,12 +58,12 @@ If your image has pink highlights, check your **White Balance** settings in the 
 
     digiKam Raw Import Tool from Image Editor Allows to Tune Many Options about the Camera Colorimetry.
 
-If the image isn't dark but it looks really weird, probably you made some injudicious choices in the Raw Import user-interface from Image Editor. The Libraw interface conveniently allows you to *dial in* options. However, convenience always comes at a price. First, the interface might not provide access to all the options. And second, to get the most from the Libraw interface, you have to know what the buttons, sliders, etc. in the interface actually do. 
+If the image isn't dark but it looks really weird, probably you made some injudicious choices in the Raw Import user-interface from Image Editor. The Libraw interface conveniently allows you to *dial in* options. However, convenience always comes at a price. First, the interface might not provide access to all the options. And second, to get the most from the Libraw interface, you have to know what the buttons, sliders, etc. in the interface actually do.
 
 Digital Noise
 -------------
 
-Why are the Canon and Nikon colors better than the colors produced by Libraw? Color rendition is one place where the Canon (and presumably Nikon) proprietary RAW developing software does a really good job, especially with noise reduction in pictures taken with low light conditions. 
+Why are the Canon and Nikon colors better than the colors produced by Libraw? Color rendition is one place where the Canon (and presumably Nikon) proprietary RAW developing software does a really good job, especially with noise reduction in pictures taken with low light conditions.
 
 The proprietary RAW processing software is coupled with camera profiles that are specific to RAW images coming from your make and model of camera, when processed using your make and model camera's proprietary RAW processing software. With digikam's Libraw user interface, you can apply Canon's camera-model-picture-style-specific color profile(s) to the Libraw output during the RAW development process, and the colors will still not be exactly the same as what Canon produces.
 
@@ -114,11 +114,9 @@ Lighting Conditions and RAW Workflow
 
 Many commercial services provide profiling services, for a fee, of course. Or you can use LPRof to profile your camera yourself. If you want to profile your own camera, you will need an "IT8 target", that is, an image containing squares of known colors. Along with the IT8 target, you will receive the appropriate set of known values for each square of color on the target.
 
-If you plan to use LProf to profile your camera, check the documentation for a list of recommended targets. To profile your camera, you photograph the IT8 target under specified lighting conditions (for example, in daylight, usually taken to mean noon on a sunny day in the summer, with nothing nearby that might cast shadows or reflect color casts) and save the image as a RAW file. Then you process the RAW file using your particular RAW processing software+settings and run the resulting image file through the profiling software. The profiling software compares the RGB values in the image produced by your camera+lighting conditions+RAW processing routine with the RGB values in the original target and then produces your camera (icc) profile.
+If you plan to use Argyll to profile your camera, check the documentation for a list of recommended targets. To profile your camera, you photograph the IT8 target under specified lighting conditions (for example, in daylight, usually taken to mean noon on a sunny day in the summer, with nothing nearby that might cast shadows or reflect color casts) and save the image as a RAW file. Then you process the RAW file using your particular RAW processing software+settings and run the resulting image file through the profiling software. The profiling software compares the RGB values in the image produced by your camera+lighting conditions+RAW processing routine with the RGB values in the original target and then produces your camera (icc) profile.
 
 Profiling a camera is exactly analogous to profiling a monitor. When profiling a monitor, the profiling software tells the graphics card to send squares of color with particular RGB values to the screen. The spectrophotometer measures the actual color that is produced on the screen. When profiling a camera, the known colors are the RGB colors in the original patches on the IT8 target, which the profiling software compares to the colors produced by the digital image of the target, which was photographed in selected lighting conditions, saved as RAW, then processed with specific RAW processing software plus settings.
-
-Here is a link to a "how to" for using LProf to produce a camera profile. And here is a link to an affordable, well-regarded IT8 target.
 
 How to apply a camera profile to the 16-bit image file produced by my open source RAW processing software? If you are using the Libraw interface from digiKam, here is how to tell digiKam which camera profile to use.
 

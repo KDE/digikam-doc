@@ -33,7 +33,7 @@ Conditions to Ignore
 
 If your imaging workflow meets all six criteria listed below, then you don't need to worry about color management:
 
-    - You are working at a monitor properly calibrated to the sRGB color space (more about that below).
+    - You are working at a monitor properly calibrated to the sRGB color space (more about int :ref:`this section <monitor_profiles>` of this manual).
 
     - Your imaging workflow starts with an in-camera-produced Jpeg already in the sRGB color space.
 
@@ -74,9 +74,9 @@ An **interpolated RAW file** isn't a RAW file. For some reason this simple point
 
     - BruceRGB or BestRGB.
 
-    - The various ECI (European color initiative) working space profiles.
+    - The various ECI (`European color initiative <https://en.wikipedia.org/wiki/European_Color_Initiative>`_) working space profiles.
 
-    - **AdobeRGB**, Adobe **WideGamutRGB**, and Kodak/Adobe **ProPhotoRGB** (Kodak and Adobe ProPhoto are the same, just branded differently) and their non-branded, non-copyrighted counterparts. 
+    - **AdobeRGB**, Adobe **WideGamutRGB**, and Kodak/Adobe **ProPhotoRGB** (Kodak and Adobe ProPhoto are the same, just branded differently) and their non-branded, non-copyrighted counterparts.
 
     .. figure:: images/cm_editor_convert_prorgb.webp
         :alt:
@@ -85,6 +85,10 @@ An **interpolated RAW file** isn't a RAW file. For some reason this simple point
         digiKam Image Editor Color Space Converter Allows to Switch to Another Color Profile
 
 And quite a few other working spaces that could be added to this list, are all more or less suitable as working spaces. Which working space you should use depends only and solely on you, on your requirements on the Image Editor with your eventual output intentions (web, fine art print, etc.). However, as a critical aside, if you are using Adobe or other copyrighted working space profiles, these profiles contain copyright information that shows up in your image Exif information.
+
+**Soft Proofing** is a way of previewing on the screen the result to be expected from an output on another device, typically a printer. Soft proofing will show you the difference to be expected before you actually do it (and waste your costly ink). So you can improve your settings without wasting time and money. For more information take a look to the dedicated :ref:`section from this manual <soft_proof>`.
+
+**Rendering intent** refers to the way gamuts are handled when the intended target color space cannot handle the full gamut. For more information take a look to the dedicated :ref:`section from this manual <working_space>`.
 
 The Color Space Connections
 ---------------------------
@@ -103,7 +107,7 @@ There are two commonly used Profile Connection Spaces - **CIELAB** and **CIEXYZ*
 
     - While you are editing your image in your chosen **Working space**, then Lcms should translate all the working space RGB numbers back to the PCS, and then over to the correct RGB numbers that enable your monitor (your display device) to give you the most accurate possible display representation of your image as it is being edited. This translation for display is done on the fly and you should never even notice it happening, unless it doesn't happen correctly - then the displayed image will look wrong.
 
-    - When you are satisfied that your edited image is ready to share with the world, Lcms translates the **Working space** RGB numbers back into the PCS space and out again to a **Printer color space** using a **Printer profile** characterizing your printer/paper combination (if you plan on printing the image) or to sRGB (if you plan on displaying the image on the web or emailing it to friends or perhaps creating a slide-show to play on monitors other than your own). 
+    - When you are satisfied that your edited image is ready to share with the world, Lcms translates the **Working space** RGB numbers back into the PCS space and out again to a **Printer color space** using a **Printer profile** characterizing your printer/paper combination (if you plan on printing the image) or to sRGB (if you plan on displaying the image on the web or emailing it to friends or perhaps creating a slide-show to play on monitors other than your own).
 
 To back up a little bit and look at the first color profile an image encounters, that is, the camera profile (see point 1. immediately above) - Libraw can in fact apply your camera profile for you (Libraw uses Lcms internally). But the generating data composed of the interpolated RGB values derived from the camera RAW file, and the application of the camera profile to the interpolated file, are two very distinct and totally separable (separable in theory and practice for Libraw; in theory only for most RAW converters) steps.
 
@@ -113,6 +117,8 @@ Camera Profiles
 This manual section has a bit of information on where to find ready-made camera profiles. It's an unfortunate fact of digital imaging that the camera profiles supplied by Canon, Nikon, and the like don't work as well with RAW converters other than each camera manufacturer's own proprietary RAW converter. They have to make their own profiles for all the cameras that they support - keep this proprietary propensity of your camera manufacturer in mind next time you buy a digital camera.
 
 To finding a camera profile for your camera is to make your own camera profile or have one made for you. There are quite a few commercial services who provide profiling services (for a fee, of course). Or you can use `Argyll <http://www.argyllcms.com/>`_ to profile your camera yourself. We cannot speak about how easy or difficult the process of profiling a camera might be. But we would imagine, knowing how very meticulous the people behind Argyll, and Lcms are about color management, that making your own camera profile is very do-able and very likely the results will be better than any proprietary profile. After all, Canon didn't profile your camera, they just profiled a camera like your.
+
+For more information take a look to the dedicated :ref:`section from this manual <camera_profiles>`.
 
 Working Spaces
 --------------
@@ -125,22 +131,6 @@ Your next step is to choose a working space for image editing. Lcms, the color m
     :alt:
     :align: center
 
-    digiKam Knows Where to Find the Color Profiles Installed on Your System and list Files in Setup Dialog For Selection 
+    digiKam Knows Where to Find the Color Profiles Installed on Your System and list Files in Setup Dialog For Selection
 
-Soft Proofing
--------------
-
-**Soft Proofing** is a way of previewing on the screen the result to be expected from an output on another device, typically a printer. Soft proofing will show you the difference to be expected before you actually do it (and waste your costly ink). So you can improve your settings without wasting time and money.
-
-Rendering Intention
--------------------
-
-**Rendering intent** refers to the way gamuts are handled when the intended target color space cannot handle the full gamut.
-
-    - **Perceptual**, also called Image or **Maintain Full Gamut**. This is generally recommended for photographic images. The color gamut is expanded or compressed when moving between color spaces to maintain consistent overall appearance. Low saturation colors are changed very little. More saturated colors within the gamuts of both spaces may be altered to differentiate them from saturated colors outside the smaller gamut space. Perceptual rendering applies the same gamut compression to all images, even when the image contains no significant out-of-gamut colors.
-
-    - **Relative Colorimetric**, also called **Proof or Preserve Identical Color and White Point**. Reproduces in-gamut colors exactly and clips out-of-gamut colors to the nearest reproducible hue.
-
-    - **Absolute Colorimetric**, also called **Match or Preserve Identical Colors**. Reproduces in-gamut colors exactly and clips out-of-gamut colors to the nearest reproducible hue, sacrificing saturation and possibly lightness. On tinted papers, whites may be darkened to keep the hue identical to the original. For example, cyan may be added to the white of a cream-colored paper, effectively darkening the image. Rarely of interest to photographers.
-
-    - **Saturation**, also called **Graphic or Preserve Saturation. Maps** the saturated primary colors in the source to saturated primary colors in the destination, neglecting differences in hue, saturation, or lightness. For block graphics; rarely of interest to photographers. 
+For more information take a look to the dedicated :ref:`section from this manual <working_space>`.

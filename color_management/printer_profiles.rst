@@ -34,6 +34,8 @@ In digiKam Image Editor, Soft-Proofing can be configured to render over the canv
 
     digiKam Image Editor Soft-Proofing Options
 
+.. _rendering_intents:
+
 The Rendering intents
 ---------------------
 
@@ -41,15 +43,17 @@ The Rendering intents
 
 There are four commonly-used rendering intents:
 
-    - **Perceptual** and **Relative colorimetric** rendering are probably the most useful conversion types for digital photography. Each places a different priority on how they render colors within the gamut mismatch region.
+    - **Perceptual**, also called Image or **Maintain Full Gamut**. This is generally recommended for photographic images. The color gamut is expanded or compressed when moving between color spaces to maintain consistent overall appearance. Low saturation colors are changed very little. More saturated colors within the gamuts of both spaces may be altered to differentiate them from saturated colors outside the smaller gamut space. Perceptual rendering applies the same gamut compression to all images, even when the image contains no significant out-of-gamut colors.
 
-    - **Relative colorimetric** maintains a near exact relationship between in gamut colors, even if this clips out of gamut colors.
+    - **Relative Colorimetric**, also called **Proof or Preserve Identical Color and White Point**. Reproduces in-gamut colors exactly and clips out-of-gamut colors to the nearest reproducible hue.
 
-    - In contrast, **Perceptual** rendering tries to also preserve some relationship between out of gamut colors, even if this results in inaccuracies for in gamut colors...
+    - **Absolute Colorimetric**, also called **Match or Preserve Identical Colors**. Reproduces in-gamut colors exactly and clips out-of-gamut colors to the nearest reproducible hue, sacrificing saturation and possibly lightness. On tinted papers, whites may be darkened to keep the hue identical to the original. For example, cyan may be added to the white of a cream-colored paper, effectively darkening the image. Rarely of interest to photographers.
 
-    - **Absolute** is similar to relative colorimetric in that it preserves in gamut colors and clips those out of gamut, but they differ in how each handles the white point... Relative colorimetric skews the colors within gamut so that the white point of one space aligns with that of the other, while absolute colorimetric preserves colors exactly (without regard to changing white point)...
+    - **Saturation**, also called **Graphic or Preserve Saturation. Maps** the saturated primary colors in the source to saturated primary colors in the destination, neglecting differences in hue, saturation, or lightness. For block graphics; rarely of interest to photographers.
 
-    - **Saturation** rendering intent tries to preserve saturated colors.
+**Perceptual** and **Relative colorimetric** rendering are probably the most useful conversion types for digital photography. Each places a different priority on how they render colors within the gamut mismatch region. **Relative colorimetric** maintains a near exact relationship between in gamut colors, even if this clips out of gamut colors. In contrast, **Perceptual** rendering tries to also preserve some relationship between out of gamut colors, even if this results in inaccuracies for in gamut colors.
+
+**Absolute** is similar to relative colorimetric in that it preserves in gamut colors and clips those out of gamut, but they differ in how each handles the white point... Relative colorimetric skews the colors within gamut so that the white point of one space aligns with that of the other, while absolute colorimetric preserves colors exactly (without regard to changing white point). **Saturation** rendering intent tries to preserve saturated colors.
 
 .. figure:: images/cm_rendering_indents.webp
     :alt:
@@ -68,7 +72,7 @@ The usual choice to use Rendering Intent to display contents on monitor is relat
 The Soft Proofing
 -----------------
 
-Soft-proofing will show you the differences to be expected between what you see on your screen and what you will see when you make a print. To soft-proof, you need a profile for your printer (actually, for your printer-paper combination, as the paper used affects the ink colors and the white point). If you don't like the soft-proofed image, you can make changes in your working space, not after converting the image to your printer space. 
+Soft-proofing will show you the differences to be expected between what you see on your screen and what you will see when you make a print. To soft-proof, you need a profile for your printer (actually, for your printer-paper combination, as the paper used affects the ink colors and the white point). If you don't like the soft-proofed image, you can make changes in your working space, not after converting the image to your printer space.
 
 **Perceptual** intent may or may not give the best results with soft-proof, depending on the respective gamuts of the image and printer/paper combination in question. Usualy, the **Colorimetric** intents give clearer, brighter colors, albeit at the cost of having to carefully re-edit the image to avoid clipping highlights and shadows. **Perceptual** is just an option, not by any means always *the best* option.
 
@@ -79,6 +83,8 @@ Soft-proofing will show you the differences to be expected between what you see 
     :align: center
 
     digiKam Color Management Setup Dialog Page Allows to Customize the Printer and Soft Proofing Color Profile
+
+.. _blackpoint_conpensation:
 
 Black Point Compensation
 ------------------------
