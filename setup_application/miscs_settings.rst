@@ -226,7 +226,7 @@ A list of **Alternative Languages** supported by digiKam is provided where you c
 
 Another list allows to know the **Available Translator Languages**, supported by the **Online Translator** engine selected.
 
-As number of entries are huge, for the both lists, a search engine is available and and option allows to show only the current selection.
+As number of entries are huge, for the both lists, a search engine is available and an option that allows to show only the current selection.
 
 .. figure:: images/setup_captions_localize.webp
     :alt:
@@ -243,11 +243,11 @@ This section allows to tune special low level configurations used by application
 
     - **Use high DPI scaling from the screen factor**: with this option application will scale coordinates in device independent manner according to display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and are therefore theoretically just as large as the graphical interface elements of the system.
 
-    - **Use pixmaps with high DPI resolution**: with this option, pixmaps sizes used internally by application will have a device-independent layout geometry. It activates high-resolution icons, otherwise the elements in digiKam would look very blurry under high resolutions. ALso, it's recommended to use this option in multi-screen context when resolutions are not the same.
+    - **Use pixmaps with high DPI resolution**: with this option, pixmaps sizes used internally by application will have a device-independent layout geometry. It activates high-resolution icons, otherwise the elements in digiKam would look very blurry under high resolutions. Also, it's recommended to use this option in multi-screen context when resolutions are not the same.
 
     - **Disable hardware acceleration OpenCL**: this option will disable GPU accelerations, especially with faces management.
 
-    - **Enable internal debug logging**: this options will turn one the debug trace on the console used to investigate dysfunctions.
+    - **Enable internal debug logging**: this option will turn one the debug trace on the console used to investigate dysfunctions.
 
     - **Download Face Engine Data**: With this button you can load face engine deep-learning model files if you pass this stage at first-run.
 
