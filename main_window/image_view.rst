@@ -134,19 +134,35 @@ digiKam will ask you confirmation before to move items to trash with the dialog 
 
 digiKam will ask you confirmation before to move items to trash with the dialog below.
 
-For each collection registered in the database, digiKam handle an internal trash-bin. Physically, the trash is located at the root album corresponding to the collection entry. It's an hidden folder storing files and information about the deletion stored in a sidecar. Deleting a file in the collection do not remove the file from the media, but move the file in this container. This one is accessible from the left sidebar as the last entry of the tree-view corresponding to a collection and is named **Trash**.  
-
-On the bottom of the trash-bin view, a serie of buttons allows to restore files in collection or delete them permanently.
-
-.. note::
-
-    If you backup a collection on a separated media, you will backup also the corresponding trash container safety.
+For each collection registered in the database, digiKam handle an internal trash-bin. Physically, the trash is located at the root album corresponding to the collection entry. It's an hidden folder :file:`.dtrash` storing deleted items in a sub-directory named :file:`files`, and information about the deletion stored in another sub-directory named :file:`info`with  Json sidecars (:file:`.dtrashinfo`). Deleting a file in the collection do not remove the file from the media, but move the file in this container. This one is accessible from the left sidebar tab **Albums** as the last entry of the tree-view corresponding to a collection and is named **Trash**.
 
 .. figure:: images/mainwindow_trashbin.webp
     :alt:
     :align: center
 
     The digiKam Internal Trash-Bin Exists for All Collections Registered in the Database
+
+.. note::
+
+    digiKam do not use the Desktop recycler as operations to move files to delete from a network collection will take a while. It will be exactly the same problem with a collection hosted in a different disk partition than your home directory managed by the Desktop. Moving items to delete to a self-contained trash-bin from the collection will be universal and fast.  
+
+On the bottom of the trash-bin view, a serie of buttons allows to restore files in collection or delete them permanently. There are:
+
+    - **Undo**: to restore only the last entry in the trash-bin.
+    - **Restore¨**: to restore seclection of files from the trash-bin.
+    - **Delete**: to remove **permanently** the items selection or all items from the trash-bin.
+
+All operations processed on trash-bin items will be confirmed to the user.
+
+.. figure:: images/mainwindow_trashbin_confirm.webp
+    :alt:
+    :align: center
+
+    The digiKam Internal Trash-Bin Ask to Confirm the Permanently Deletion of Items
+
+.. important::
+
+    As physically the trash-bin container is located in the root album from a collection, if you backup a collection on a separated media, you will backup also the corresponding trash-bin container safety.
 
 .. _grouping_photograph:
 
