@@ -64,12 +64,20 @@ Now, the next question is: which working space must be used? Working spaces, suc
 
 Most working space profiles are characterized by:
 
-    - The **Gamut** to define the range of colors of the profile.
+    - The place of the gamut into the **Diagram** :guilabel:`(1)` of all colors visible to the average human eyes.
 
-    - The **White point** to define the total dynamic range of the profile.
+    - The **Gamut** :guilabel:`(2)` triangle to define the range of RGB colors of the profile. Red point is on the bottom right corner, Green is on the top, Blue is on the left bottom. Values given around the edge of the gamut passing from the blue, the green and the red points, are the spectral colors in nanometers.
+   
+    - The **White point** :guilabel:`(3)` to define the total dynamic range of the profile.
 
-    - The **Gamma** to define the transfer function of the profile.
+    - The **Gamma** to define the transfer function of the profile (not displayed in the gamut).
 
+.. figure:: images/cm_gamut_details.webp
+    :alt:
+    :align: center
+
+    The Color Profile Details of CIE Chromacity Diagram Show in digiKam 
+    
 The practical consequences that result from using different RGB primaries, leading to larger or smaller working spaces, are discussed below. The practical consequences for different choices for the working space white point are beyond the scope of this manual. Here we will talk a little bit about the practical consequences of the working space gamma.
 
 The gamma of a color profile dictates what power transform needs to take place to properly convert from an image's embedded color profile (perhaps your working color space) to another color profile with a different gamma, such as (i) the display profile used to display the image on the screen or (ii) perhaps to a new working space, or (iii) perhaps from your working space to your printer's color space.
