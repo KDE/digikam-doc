@@ -18,8 +18,6 @@ Using Printer Profile
 
 We are now almost ready to print that image. Where to get a printer profile? you already know the answer. You can use the generic profile that comes with your printer. You can purchase a professionally produced profile. Some commercial printing establishments will send you their printer profiles (which won't work with your printer). You can make your own printer profile using `Argyll <http://www.argyllcms.com/>`_, in which case your profile can be tailored to your particular paper, inks, and even image characteristics (if you are printing a series of images with a color palette limited to subdued browns, you don't need a printer profile that tries to make room for saturated cyans and blues).
 
-See this page for an excellent presentation of the benefits of producing your own printer profile, plus a resoundingly positive endorsement of using Argyll for making your printer profile.
-
 .. figure:: images/cm_editor_soft_proofing_menu.webp
     :alt:
     :align: center

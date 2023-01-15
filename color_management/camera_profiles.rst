@@ -112,7 +112,7 @@ This website section has information on where to find ready-made camera profiles
 Lighting Conditions and RAW Workflow
 ------------------------------------
 
-Many commercial services provide profiling services, for a fee, of course. Or you can use LPRof to profile your camera yourself. If you want to profile your own camera, you will need an "IT8 target", that is, an image containing squares of known colors. Along with the IT8 target, you will receive the appropriate set of known values for each square of color on the target.
+Many commercial services provide profiling services, for a fee, of course. Or you can use Argyll to profile your camera yourself. If you want to profile your own camera, you will need an "IT8 target", that is, an image containing squares of known colors. Along with the IT8 target, you will receive the appropriate set of known values for each square of color on the target.
 
 If you plan to use `Argyll <http://www.argyllcms.com/>`_ to profile your camera, check the documentation for a list of recommended targets. To profile your camera, you photograph the IT8 target under specified lighting conditions (for example, in daylight, usually taken to mean noon on a sunny day in the summer, with nothing nearby that might cast shadows or reflect color casts) and save the image as a RAW file. Then you process the RAW file using your particular RAW processing software+settings and run the resulting image file through the profiling software. The profiling software compares the RGB values in the image produced by your camera+lighting conditions+RAW processing routine with the RGB values in the original target and then produces your camera (icc) profile.
 
