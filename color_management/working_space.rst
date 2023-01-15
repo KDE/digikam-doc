@@ -16,11 +16,11 @@ The Working Space
 Color Workflow
 --------------
 
-So we told digiKam where to find my monitor profile and I have a camera profile that we applied to the image file produced by my RAW processing software. What's the next step in color management?
+So we told digiKam where to find my monitor profile and we have a camera profile that we applied to the image file produced by my RAW processing software. What's the next step in color management?
 
 You need to choose a working color space so you can edit your image. Lcms will transform your image from your camera color space to your chosen working space, via the PCS specified by your camera color profile. Why cannot to just edit images in the color space described by the camera profile?
 
-After all, the camera profile should provide the best *fit* to the colors recorded by my camera, as processed by my RAW processing procedure, right? Working spaces, such as sRGB or Adobe RGB, are color spaces that facilitate good results while editing. For instance, pixels with equal values of RGB should appear neutral. This just want means that for any given pixel in an image that has been converted to a suitable working space, if R=G=B you should see grey or black or white on your screen. Many camera profiles violate this "neutral" condition. I am not aware of a list of other technical requirements for a suitable working space.
+After all, the camera profile should provide the best *fit* to the colors recorded by my camera, as processed by my RAW processing procedure, right? Working spaces, such as sRGB or Adobe RGB, are color spaces that facilitate good results while editing. For instance, pixels with equal values of RGB should appear neutral. This just want means that for any given pixel in an image that has been converted to a suitable working space, if R=G=B you should see grey or black or white on your screen. Many camera profiles violate this *neutral* condition.
 
 .. figure:: images/cm_editor_convert_menu.webp
     :alt:
@@ -51,7 +51,7 @@ Before talking more about working spaces, some confusions and confusing terminol
     
     4. To introduce a bit of commonly heard color-management terminology here - the camera profile and your printer's color profile are both device dependent, whereas the working space will be device-independent - it can be used with any image, with any properly color-managed software, without regard for where the image originated.
 
-    5. Above I have used the words translate and translation as a descriptive metaphor for what Lcms does when it translates RGB values from one color space to another via the PCS. The usual and correct terminology is convert and conversion, which I will use below. The four methods of conversion from one color space to another are: perceptual, relative colorimetric, absolute colorimetric, and saturation. Which method of conversion you should use for any given image processing step from RAW file to final output image is beyond the scope of this manual. The standard advice is: when in doubt, use perceptual.
+    5. Above we have used the words translate and translation as a descriptive metaphor for what Lcms does when it translates RGB values from one color space to another via the PCS. The usual and correct terminology is convert and conversion. The four methods of conversion from one color space to another are: perceptual, relative colorimetric, absolute colorimetric, and saturation. Which method of conversion you should use for any given image processing step from RAW file to final output image is beyond the scope of this manual. The standard advice is: when in doubt, use perceptual.
 
     6. Assign a profile means change the meaning of the RGB numbers in an image by embedding a new profile without changing the actual RGB numbers associated with each pixel in the image; convert means embed a new profile, but also change the RGB numbers at the same time so that the meaning of the RGB values - that is, the real-world visible color represented by the trio of RGB numbers associated with each pixel in an image - remains the same before and after the conversion from one space to another. You should be able to do multiple conversions of an image from one working space to another, and with a properly color-managed image editor, even though all the RGB numbers in the image will change with each conversion, the image on your screen should look the same (leaving aside the usually unnoticeable small but inevitable changes from accumulated gamut mismatches and mathematical rounding errors). However, every time you assign a new working space profile rather than convert to a new working space, the appearance of the image should more or less drastically change.
 
@@ -60,7 +60,7 @@ Before talking more about working spaces, some confusions and confusing terminol
 Selecting a Working Space
 -------------------------
 
-Now, the next question is: which working space should I use? Working spaces, such as sRGB or Adobe RGB, are color spaces that facilitate good results while editing. For instance, pixels with equal values of RGB should appear neutral. Using a large gamut working space will lead to posterization, while using a small working space will lead to clipping. This trade-off is a consideration for the Image Editor.
+Now, the next question is: which working space must be used? Working spaces, such as sRGB or Adobe RGB, are color spaces that facilitate good results while editing. For instance, pixels with equal values of RGB should appear neutral. Using a large gamut working space will lead to posterization, while using a small working space will lead to clipping. This trade-off is a consideration for the Image Editor.
 
 Most working space profiles are characterized by:
 
@@ -128,7 +128,7 @@ In addition to gamma=1.8 and gamma=2.2, the only other gamma for a working space
 
 "Gamma-induced errors" is a topic outside the scope of this manual. But see "Gamma errors in picture scaling" (cited from this page) for gamma-induced tonality shifts; and of course see Timo Autiokari's informative (albeit somewhat infamous) website for a whole-hearted endorsement of using linear gamma working spaces (Timo's website seems to be down at present, though archived copies of his articles are still available through google). Bruce Lindbloom mentions a commonly-encountered gamma-induced error that is caused by incorrectly calculating luminance in a nonlinear RGB working space (see this page, sidenote 1). And in a similar vein, the calculations involved in mixing colors together to produce new colors (such as using a digital filter to add warmth to an image) result in gamma errors unless the new colors are calculated by first transforming all the relevant values back to their linear values.
 
-Unfortunately and despite their undeniable mathematical advantages, linear gamma working spaces have so few tones in the shadows that (in my opinion) they are impossible to use for editing if one is working in 8-bits, and still problematic at 16-bits. When the day comes when we are all doing our editing on 32-bit files produced by our HDR cameras on our personal supercomputers, I predict that we will all be using working spaces with gamma=1. Adobe Lightroom is already using a linear gamma working space "under the hood", CS2 allows the option of using linear gamma for mixing colors, and Lightzone has always used a linear gamma working space.
+Unfortunately and despite their undeniable mathematical advantages, linear gamma working spaces have so few tones in the shadows that (in my opinion) they are impossible to use for editing if one is working in 8-bits, and still problematic at 16-bits. When the day comes when we are all doing our editing on 32-bit files produced by our HDR cameras on our personal supercomputers, We can predict that we will all be using working spaces with gamma=1. Adobe Lightroom is already using a linear gamma working space "under the hood", CS2 allows the option of using linear gamma for mixing colors, and Lightzone has always used a linear gamma working space.
 
 Image Tonal Steps and Gamut Size
 --------------------------------

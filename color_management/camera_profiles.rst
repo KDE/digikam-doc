@@ -120,7 +120,7 @@ Profiling a camera is exactly analogous to profiling a monitor. When profiling a
 
 Here is a link to a "how to" for using LProf to produce a camera profile. And here is a link to an affordable, well-regarded IT8 target.
 
-How do I apply a camera profile to the 16-bit image file produced by my open source RAW processing software? If you are using the Libraw interface from digiKam, here is how to tell digiKam which camera profile to use.
+How to apply a camera profile to the 16-bit image file produced by my open source RAW processing software? If you are using the Libraw interface from digiKam, here is how to tell digiKam which camera profile to use.
 
 .. figure:: images/cm_bqm_raw_converter.webp
     :alt:

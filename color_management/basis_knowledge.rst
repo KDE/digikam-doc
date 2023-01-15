@@ -26,7 +26,7 @@ The point of a color-managed workflow is to ensure that the colors coming from y
 
     The Overall Scheme of Color Spaces Used in a Color Managed Application as digiKam
 
-When it comes to color management, everyone wants to know, *which buttons do I push to get the results I want*. Unfortunately, color management of necessity involves making informed choices at every step along the image-processing workflow. The purpose of this section is to provide sufficient background information on color management, along with links to more in-depth information, to enable you to begin to make your own informed decisions, based on your own desired results.
+When it comes to color management, everyone wants to know, *which buttons to push to get the wanted results*. Unfortunately, color management of necessity involves making informed choices at every step along the image-processing workflow. The purpose of this section is to provide sufficient background information on color management, along with links to more in-depth information, to enable you to begin to make your own informed decisions, based on your own desired results.
 
 Conditions to Ignore
 --------------------
@@ -68,7 +68,7 @@ In-camera produced Jpegs don't need a camera profile. All Jpegs (or TIFFs) comin
 
 Useful mathematical information if you are dealing with Libraw's linear gamma output: Mathematically speaking, when doing a gamma transform you normalize (that is, divide by 256 if you are working with 8-bit values) the RGB numbers and raise the resulting numbers to an appropriate power depending on the respective gammas of the starting and ending color space, then renormalize the results to a new set of RGB numbers. It's not hard, and very instructive, to do this with a calculator for a few sets of RGB numbers spaced from (0,0,0) to (255,255,255) to see how RGB numbers change from one gamma encoding to another. Lcms does this for you when you ask Lcms to convert from one color space to another.
 
-**Copyrighted and copyleft working spaces**: I will take it as given that all the ordinarily encountered working spaces, such as:
+**Copyrighted and copyleft working spaces**:
 
     - The several variants of **sRGB**. See :ref:`the chapter <monitor_profiles>` dedicated to this color space.
 
