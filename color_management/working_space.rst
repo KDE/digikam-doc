@@ -86,6 +86,12 @@ In addition to gamma 1.8 and gamma 2.2 the only other gamma for a working space 
 
 Unfortunately and despite their undeniable mathematical advantages, linear gamma working spaces have so few tones in the shadows that they are impossible to use for editing if one is working in 8-bits, and still problematic at 16-bits. When the day comes when we are all doing our editing on 32-bit files produced by our HDR cameras on our personal supercomputers, we predict that we will all be using working spaces with gamma 1.
 
+.. figure:: images/cm_editor_profile_missmatch.webp
+    :alt:
+    :align: center
+
+    Depending of the Settings digiKam Can Ask you to Convert to Working Space When Loading in Image Editor
+
 Large or Small Gamut
 --------------------
 
