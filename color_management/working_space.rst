@@ -97,6 +97,12 @@ Large or Small Gamut
 
 One major consideration in choosing a working space is that some working spaces are bigger than others, meaning they cover more of the visible spectrum (and perhaps even include some imaginary colors - mathematical constructs that don't really exist). These bigger spaces offer the advantage of allowing you to keep all the colors captured by your camera and preserved by the Lcms conversion from your camera profile to the really big profile connection space.
 
+.. figure:: images/cm_working_space_gamuts.webp
+    :alt:
+    :align: center
+
+    For the Left to Right: sRGB, AbodeRGB, WideGammutRGB, and ProPhotoRGB 
+
 But keeping all the possible colors comes at a price. It seems that any given digital image (pictures of daffodils with saturated yellows being one common exception) likely only contains a small subset of all the possible visible colors that your camera is capable of capturing. This small subset is easily contained in one of the smaller working spaces. Using a very large working space mean that editing your image (applying curves, saturation, etc.) can easily produce colors that your eventual output device (printer, monitor) simply cannot display. So the conversion from your working space to your output device space (say your printer) will have to remap the out of gamut colors in your edited image, some of which might even be totally imaginary, to your printer color space with its much smaller gamut, leading to inaccurate colors at best and at worst to banding (posterization - gaps in what should be a smooth color transition, say, across an expanse of blue sky) and clipping (your carefully crafted muted transitions across delicate shades of red, for example, might get remapped to a solid block of dull red after conversion to your printer's color space).
 
 In other words, large gamut working spaces, improperly handled, can lead to lost information on output. Small gamut working spaces can clip information on input. Here is some oft-repeated advice:
