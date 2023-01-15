@@ -40,7 +40,7 @@ If you are reading this manual you probably are shooting RAW images with a digit
 
 Why doesn't the image produced by RAW converters like `Libraw <https://www.libraw.org/>`_ look like the embedded preview displayed by digiKam? All digital camera images start out as RAW files, whether or not the camera allows the user the option to save the image as a RAW file. When you ask the camera to save Jpegs instead of RAW files, the camera uses its on-board processor to convert the RAW file to a Jpeg. That embedded preview is what your final image would have looked like if you had set your camera to save Jpegs instead of RAW files.
 
-Canon for example offers the user several picture styles - neutral, standard, portrait, landscape, and so forth - that determine what kind of processing will be done to the RAW image file to produce the final image, whether or not the processing is done "in-camera" or later, using the proprietary Canon software. This processing software does give the user additional control, but still manipulates the RAW image file in accordance with the chosen picture style. Most of the Canon picture styles add a heavy S-curve and extra color saturation to give the picture more *pop*. Even if you choose the *neutral* picture style (the Canon picture style that gives you the least modified tonality); and select *less contrast*, *less saturation*, *no noise reduction*, and *no sharpening* in the Cannon RAW development software, you will find, if you know what to look for, that an S-curve and also shadow denoising has been applied to your image.
+Canon for example offers the user several picture styles - neutral, standard, portrait, landscape, and so forth - that determine what kind of processing will be done to the RAW image file to produce the final image, whether or not the processing is done *in-camera* or later, using the proprietary Canon software. This processing software does give the user additional control, but still manipulates the RAW image file in accordance with the chosen picture style. Most of the Canon picture styles add a heavy S-curve and extra color saturation to give the picture more *pop*. Even if you choose the *neutral* picture style (the Canon picture style that gives you the least modified tonality); and select *less contrast*, *less saturation*, *no noise reduction*, and *no sharpening* in the Cannon RAW development software, you will find, if you know what to look for, that an S-curve and also shadow denoising has been applied to your image.
 
 Libraw which digiKam uses to convert RAW files to image files doesn't add an S-curve to your image tonality. Libraw gives you the lights and darks that are actually recorded by the camera sensor. Libraw is one of only a handful of RAW developers that actually gives you the *scene-referred* tonality. And the Libraw scene-referred image is flat-looking, because the camera sensor records light linearly, whereas our eyes are constantly interacting with our brain to accommodate dim and bright areas in a scene, meaning our brain to some extent *applies an S-curve* to the scene to enable us to better focus in on the areas of particular interest as we look around.
 
@@ -66,32 +66,31 @@ If your image has pink highlights, check your **White Balance** settings in the 
 
 If the image isn't dark but it looks really weird, probably you made some injudicious choices in the Raw Import user-interface from Image Editor. The Libraw interface conveniently allows you to *dial in* options. However, convenience always comes at a price. First, the interface might not provide access to all the options. And second, to get the most from the Libraw interface, you have to know what the buttons, sliders, etc. in the interface actually do.
 
-Digital Noise
--------------
+Camera Profile Specificities
+----------------------------
 
-Why are the Canon and Nikon colors better than the colors produced by Libraw? Color rendition is one place where the Canon (and presumably Nikon) proprietary RAW developing software does a really good job, especially with noise reduction in pictures taken with low light conditions.
+Why are the Canon and Nikon colors better than the colors produced by Libraw? Color rendition is one place where the Canon (and presumably Nikon) proprietary RAW developing software does a really good job.
 
-The proprietary RAW processing software is coupled with camera profiles that are specific to RAW images coming from your make and model of camera, when processed using your make and model camera's proprietary RAW processing software. With digikam's Libraw user interface, you can apply Canon's camera-model-picture-style-specific color profile(s) to the Libraw output during the RAW development process, and the colors will still not be exactly the same as what Canon produces.
+The proprietary RAW processing software is coupled with camera profiles that are specific to RAW images coming from your make and model of camera, when processed using your make and model camera's proprietary RAW processing software. With digikam's Libraw user interface, you can apply Canon's camera model picture style specific color profile to the Libraw output during the RAW development process, and the colors will still not be exactly the same as what Canon produces.
 
-Anyway, digiKam and Libraw interface provides a Noise Reduction correction based on wavelets which can be applied while demosaicing.
+Digital cameras have an array of millions of little light sensors inside, making up either a CCD or a CMOS chip. These light-sensing pixels are color-blind - they only record the amount, not the color, of light falling on them. So to allow pixels to record color information, each pixel is capped by a transparent red, green, or blue lens, usually alternating in what is called a Bayer array (except for Sigma Faveon sensors, which work differently). A RAW image is nothing more than an array of values indicating *how much light* passed through the red, blue, or green lens cap to reach the sensor.
+
+Clearly, pixel response to light is the result of lots of camera specific factors including: the nature of the sensor array itself, the precise coloring/transmissive qualities of the lens caps, and the particular analog to digital conversion and post-conversion processing that happens inside the camera to produce the RAW image that gets stored on the card.
+
+Analog to Digital Conversion
+----------------------------
+
+*Analog* means continuously varying, like how much water you can put in a glass. *Digitizing* an analog signal means that the continuously changing levels from the analog signal source are *rounded* to discrete quantities convenient to the binary numbers used by computers. The analog to digital conversion that takes place inside the camera is necessary because the light-sensing pixels are analog in nature - they collect a charge proportionate to the amount of light that reaches them.
+
+The accumulated charge on each pixel is then turned into a discrete, digital quantity by the camera's analog to digital converter. Which by the way explains why a 14-bit converter is better than a 12-bit converter - more precision in the conversion output means less information is thrown away in the conversion process.
+
+Especially in pictures taken with low light conditions, a noise is integrated while the analog to digital conversion. digiKam and Libraw interface provides a Noise Reduction correction based on wavelets which can be applied while demosaicing.
 
 .. figure:: images/cm_raw_import_noise.webp
     :alt:
     :align: center
 
     digiKam Raw Import Tool from Image Editor Allows Wavelets Noise Reduction While Demosaicing.
-
-Camera Profile Specificities
-----------------------------
-
-Digital cameras have an array of millions of little light sensors inside, making up either a CCD or a CMOS chip. These light-sensing pixels are color-blind - they only record the amount, not the color, of light falling on them. So to allow pixels to record color information, each pixel is capped by a transparent red, green, or blue lens, usually alternating in what is called a Bayer array (except for Sigma Faveon sensors, which work differently). A RAW image is nothing more than an array of values indicating "how much light" passed through the red, blue, or green lens cap to reach the sensor.
-
-Clearly, pixel response to light is the result of lots of camera-specific factors including: the nature of the sensor array itself, the precise coloring/transmissive qualities of the lens caps, and the particular analog-to-digital conversion and post-conversion processing that happens inside the camera to produce the RAW image that gets stored on the card.
-
-Analog to Digital Conversion
-----------------------------
-
-*Analog* means continuously varying, like how much water you can put in a glass. *Digitizing* an analog signal means that the continuously changing levels from the analog signal source are "rounded" to discrete quantities convenient to the binary numbers used by computers. The analog-to-digital conversion that takes place inside the camera is necessary because the light-sensing pixels are analog in nature - they collect a charge proportionate to the amount of light that reaches them. The accumulated charge on each pixel is then turned into a discrete, digital quantity by the camera's analog-to-digital converter. Which by the way explains why a 14-bit converter is better than a 12-bit converter - more precision in the conversion output means less information is thrown away in the conversion process.
 
 Camera Profile and RAW Treatment
 --------------------------------
@@ -107,7 +106,7 @@ The whole point of interpolation using demosaicing algorithms such as `Libraw <h
 Generic Camera Profile
 ----------------------
 
-This website section has information on where to find ready-made camera profiles. If you poke around the digiKam users forum archives, you'll find additional advice. If you keep hunting and experimenting, likely you will find a generic profile that works "well enough". However, as stated above, it's an unfortunate fact of digital imaging that the camera profiles supplied by Canon, Nikon, and the like don't work as well with RAW converters other than each camera manufacturer's own proprietary RAW converter. Which is why proprietary programs, have to make their own profiles for all the cameras that they support. So eventually you may decide that you want a camera profile that is specific to your camera, your lighting conditions, and your RAW processing workflow.
+This website section has information on where to find ready-made camera profiles. If you poke around the digiKam users forum archives, you'll find additional advice. If you keep hunting and experimenting, likely you will find a generic profile that works *well enough*. However, as stated above, it's an unfortunate fact of digital imaging that the camera profiles supplied by Canon, Nikon, and the like don't work as well with RAW converters other than each camera manufacturer's own proprietary RAW converter. Which is why proprietary programs, have to make their own profiles for all the cameras that they support. So eventually you may decide that you want a camera profile that is specific to your camera, your lighting conditions, and your RAW processing workflow.
 
 .. figure:: images/cm_icc_workflow_logic.webp
     :alt:
@@ -139,7 +138,7 @@ A color profile describes the color gamut of the device or space to which it bel
 
 With a camera profile, for every RGB trio of values associated with every pixel in the image file produced from the RAW file by the RAW processing software, this RGB image file trio corresponds to real color as seen by a real observer in the real world (or rather, as displayed on the IT8 target if you produced your own camera profile, but it amounts to the same thing - the goal of profiling your camera is to make the picture of the target look like the target).
 
-You cannot see an image by looking at its RGB values. Rather you see an image by displaying it on a monitor or by printing it. When you profile your monitor, you produce a monitor profile that says "this RGB trio of values that the graphics card sends to the screen" will produce on the screen "that real color as seen by a real observer in the real world".
+You cannot see an image by looking at its RGB values. Rather you see an image by displaying it on a monitor or by printing it. When you profile your monitor, you produce a monitor profile which RGB trio of values that the graphics card sends to the screen will produce on the screen with real color as seen by a real observer in the real world.
 
 What the monitor profile and the camera profile have in common is the part about that real color as seen by a real observer in the real world. Different trios of RGB numbers in, respectively, the monitor and camera color spaces point to the same real, visible color in the real world. Real colors in the real world provide the reference point for translating between all the color profiles your image will ever encounter on its way from camera to screen to editing program to print or the web.
 
@@ -147,6 +146,8 @@ Real people don't even see the same colors when they look at the world, do they?
 
 The ICC produced the `CIE-XYZ color space <https://en.wikipedia.org/wiki/CIE_1931_color_space#Tristimulus_value>`_ s which mathematically describes and models all the `colors visible to an ideal human <https://en.wikipedia.org/wiki/Color_vision>`_ observer (*ideal* in the sense of modeling the tested responses of lots of individual humans). This color space is not a color profile in the normal sense of the word. Rather it provides an absolute **Profile Connecting Space** (PCS) for translating color RGB values from one color space to another.
 
-CIE-XYZ is not the only PCS. Another commonly used PCS is `CIE-Lab <https://en.wikipedia.org/wiki/Lab_color_space>`_, which is mathematically derived from the CIE-XYZ space. CIE-Lab is intended to be "perceptually uniform", meaning "a change of the same amount in a color value should produce a change of about the same visual importance". The three coordinates of CIELAB represent the lightness of the color (L* = 0 yields black and L* = 100 indicates diffuse white; specular white may be higher), its position between red/magenta and green (a*, negative values indicate green while positive values indicate magenta) and its position between yellow and blue (b*, negative values indicate blue and positive values indicate yellow).
+CIE-XYZ is not the only PCS. Another commonly used PCS is `CIE-Lab <https://en.wikipedia.org/wiki/Lab_color_space>`_, which is mathematically derived from the CIE-XYZ space. CIE-Lab is intended to be **perceptually uniform**, meaning a change of the same amount in a color value should produce a change of about the same visual importance.
+
+The three coordinates of CIELAB represent the lightness of the color (L* = 0 yields black and L* = 100 indicates diffuse white; specular white may be higher), its position between red/magenta and green (a*, negative values indicate green while positive values indicate magenta) and its position between yellow and blue (b*, negative values indicate blue and positive values indicate yellow).
 
 To be useful, color profiles need to be coupled with software that performs the translation from one color space to another via the PCS. In digiKam, translation from one color space to another usually is done by `Lcms <https://www.littlecms.com/>`_, the "little color management software".
