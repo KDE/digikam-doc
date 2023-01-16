@@ -22,7 +22,7 @@ var all_langs = {
     //"fi": "Suomeksi",
     "fr": "Fran&ccedil;ais",
     //"id": "Bahasa Indonesia",
-    //"it": "Italiano",
+    "it": "Italiano",
     //"ja": "&#x65E5;&#x672C;&#x8A9E;",
     //"ko": "&#xD55C;&#xAD6D;&#xC5B4;",
     //"nb": "Norsk Bokm&#x00E5;l",
