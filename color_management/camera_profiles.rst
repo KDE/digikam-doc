@@ -84,7 +84,7 @@ Analog to Digital Conversion
 
 The accumulated charge on each pixel is then turned into a discrete, digital quantity by the camera's analog to digital converter. Which by the way explains why a 14-bit converter is better than a 12-bit converter - more precision in the conversion output means less information is thrown away in the conversion process.
 
-Especially in pictures taken with low light conditions, a noise is integrated while the analog to digital conversion. digiKam and Libraw interface provides a Noise Reduction correction based on wavelets which can be applied while demosaicing.
+Especially in pictures taken with low light conditions, a noise is integrated while the analog to digital conversion. digiKam and Libraw interface provides a **Noise Reduction** correction based on wavelets which can be applied while demosaicing.
 
 .. figure:: images/cm_raw_import_noise.webp
     :alt:
@@ -148,6 +148,6 @@ The ICC produced the `CIE-XYZ color space <https://en.wikipedia.org/wiki/CIE_193
 
 CIE-XYZ is not the only PCS. Another commonly used PCS is `CIE-Lab <https://en.wikipedia.org/wiki/Lab_color_space>`_, which is mathematically derived from the CIE-XYZ space. CIE-Lab is intended to be **perceptually uniform**, meaning a change of the same amount in a color value should produce a change of about the same visual importance.
 
-The three coordinates of CIELAB represent the lightness of the color (L* = 0 yields black and L* = 100 indicates diffuse white; specular white may be higher), its position between red/magenta and green (a*, negative values indicate green while positive values indicate magenta) and its position between yellow and blue (b*, negative values indicate blue and positive values indicate yellow).
+The three coordinates of CIE-Lab represent the lightness of the color (L* = 0 yields black and L* = 100 indicates diffuse white; specular white may be higher), its position between red/magenta and green (a*, negative values indicate green while positive values indicate magenta) and its position between yellow and blue (b*, negative values indicate blue and positive values indicate yellow).
 
 To be useful, color profiles need to be coupled with software that performs the translation from one color space to another via the PCS. In digiKam, translation from one color space to another usually is done by `Lcms <https://www.littlecms.com/>`_, the "little color management software".
