@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-14 16:27+0000\n"
-"PO-Revision-Date: 2023-01-14 22:45+0200\n"
+"POT-Creation-Date: 2023-01-15 00:49+0000\n"
+"PO-Revision-Date: 2023-01-15 08:42+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -39,7 +39,11 @@ msgstr "Базові відомості"
 msgid "Contents"
 msgstr "Зміст"
 
-#: ../../color_management/basis_knowledge.rst:18
+#: ../../color_management/basis_knowledge.rst:19
+msgid "Overview"
+msgstr "Огляд"
+
+#: ../../color_management/basis_knowledge.rst:21
 msgid ""
 "The point of a color-managed workflow is to ensure that the colors coming "
 "from your camera or scanner have a predictable relationship with the colors "
@@ -56,11 +60,15 @@ msgstr ""
 "надрукованих або оприлюднених у мережі зображень кольорам зображень, "
 "створених у результаті цифрової обробки знімків."
 
-#: ../../color_management/basis_knowledge.rst:23
-msgid "Overview"
-msgstr "Огляд"
+#: ../../color_management/basis_knowledge.rst:27
+msgid ""
+"The Overall Scheme of Color Spaces Used in a Color Managed Application as "
+"digiKam"
+msgstr ""
+"Загальна схема просторів кольорів, яку використано у програмі з керуванням"
+" кольорами, зокрема digiKam"
 
-#: ../../color_management/basis_knowledge.rst:25
+#: ../../color_management/basis_knowledge.rst:29
 msgid ""
 "When it comes to color management, everyone wants to know, *which buttons do "
 "I push to get the results I want*. Unfortunately, color management of "
@@ -79,11 +87,11 @@ msgstr ""
 "зможете робити обґрунтований вибір, який залежатиме від потрібних вам "
 "результатів."
 
-#: ../../color_management/basis_knowledge.rst:28
+#: ../../color_management/basis_knowledge.rst:32
 msgid "Conditions to Ignore"
 msgstr "Умови ігнорування"
 
-#: ../../color_management/basis_knowledge.rst:30
+#: ../../color_management/basis_knowledge.rst:34
 msgid ""
 "If your imaging workflow meets all six criteria listed below, then you don't "
 "need to worry about color management:"
@@ -91,7 +99,7 @@ msgstr ""
 "Якщо ваш спосіб обробки зображень відповідає шістьом переліченим нижче "
 "критеріями, вам не потрібно перейматися керуванням кольорами:"
 
-#: ../../color_management/basis_knowledge.rst:32
+#: ../../color_management/basis_knowledge.rst:36
 msgid ""
 "You are working at a monitor properly calibrated to the sRGB color space "
 "(more about that below)."
@@ -99,10 +107,7 @@ msgstr ""
 "Ви працюєте за монітором, який належним чином відкалібровано для простору "
 "кольорів sRGB (докладніше про це нижче)."
 
-#: ../../color_management/basis_knowledge.rst:34
-#| msgid ""
-#| "Your imaging workflow starts with an in-camera-produced jpeg already in "
-#| "the sRGB color space."
+#: ../../color_management/basis_knowledge.rst:38
 msgid ""
 "Your imaging workflow starts with an in-camera-produced Jpeg already in the "
 "sRGB color space."
@@ -110,19 +115,19 @@ msgstr ""
 "Ваш процес обробки зображень починається з файла jpeg, створеного "
 "фотоапаратом, який працює у просторі кольорів sRGB."
 
-#: ../../color_management/basis_knowledge.rst:36
+#: ../../color_management/basis_knowledge.rst:40
 msgid "You work exclusively in the sRGB color space for editing."
 msgstr "Ви працюєте лише з простором sRGB під час редагування."
 
-#: ../../color_management/basis_knowledge.rst:38
+#: ../../color_management/basis_knowledge.rst:42
 msgid "Your printer wants images in the sRGB color space."
 msgstr "Для вашого принтера потрібні зображення у просторі кольорів sRGB."
 
-#: ../../color_management/basis_knowledge.rst:40
+#: ../../color_management/basis_knowledge.rst:44
 msgid "Your scanner produces images in the sRGB color space."
 msgstr "Ваш сканер створює зображення у просторі кольорів sRGB."
 
-#: ../../color_management/basis_knowledge.rst:42
+#: ../../color_management/basis_knowledge.rst:46
 msgid ""
 "Your only other image output is via email or the web, where sRGB is the de "
 "facto standard."
@@ -130,11 +135,11 @@ msgstr ""
 "Іншими джерелами потрібних вам зображень є електронна пошта та інтернет, де "
 "sRGB є фактичним стандартом."
 
-#: ../../color_management/basis_knowledge.rst:45
+#: ../../color_management/basis_knowledge.rst:49
 msgid "Color Management Definitions"
 msgstr "Визначення керування кольорами"
 
-#: ../../color_management/basis_knowledge.rst:47
+#: ../../color_management/basis_knowledge.rst:51
 msgid ""
 "What follow is some additional comments and definitions to understand the "
 "Color Management:"
@@ -142,7 +147,7 @@ msgstr ""
 "Нижче наведено деякі додаткові коментарі та визначення, які допоможуть "
 "розібратися у керуванні кольорами."
 
-#: ../../color_management/basis_knowledge.rst:49
+#: ../../color_management/basis_knowledge.rst:53
 msgid ""
 "**Assign** a profile means change the meaning of the RGB numbers in an image "
 "by embedding a new profile without changing the actual RGB numbers "
@@ -161,14 +166,7 @@ msgstr ""
 "пов'язані з кожним з пікселів зображення, — так, щоб вони були однаковими до "
 "і після перетворення з одного простору у інший."
 
-#: ../../color_management/basis_knowledge.rst:51
-#| msgid ""
-#| "On the other hand, every time you assign a new working space profile "
-#| "rather than convert to a new working space (except when initially "
-#| "assigning a camera profile to the image file you get from your raw "
-#| "processing software), the appearance of the image should more or less "
-#| "drastically change (usually for the worse, unless the wrong profile had "
-#| "previously been inadvertently embedded in the image)."
+#: ../../color_management/basis_knowledge.rst:55
 msgid ""
 "On the other hand, every time you assign a new working space profile rather "
 "than convert to a new working space (except when initially assigning a "
@@ -184,7 +182,7 @@ msgstr ""
 "зображення має більшою чи меншою мірою змінитися (зазвичай, погіршитися, "
 "якщо до зображення раніше не було ненавмисно вбудовано помилковий профіль)."
 
-#: ../../color_management/basis_knowledge.rst:53
+#: ../../color_management/basis_knowledge.rst:57
 msgid ""
 "In theory, you should be able to do multiple conversions of an image from "
 "one working space to another, and if you are using a color-managed image "
@@ -203,18 +201,7 @@ msgstr ""
 "перетворень з одного простору у інший призводитиме до втрати якості "
 "зображення."
 
-#: ../../color_management/basis_knowledge.rst:55
-#| msgid ""
-#| "**Device-dependent** and **device-independent** profiles: The camera "
-#| "profile, a scanner profile, your monitor's profile, and your printer's "
-#| "color profile are all device-dependent profiles - these profiles only "
-#| "work with the specific device for which they were produced by means of "
-#| "profiling. Working space profiles and the PCS's are *device-independent*. "
-#| "Once an image file has been translated by LCMS to a device-independent "
-#| "working space, in a sense it no longer matters what device originally "
-#| "produced the image. But as soon as you want to display or print the "
-#| "image, then the device (monitor, printer) used matters a great deal and "
-#| "requires a device-dependent profile."
+#: ../../color_management/basis_knowledge.rst:59
 msgid ""
 "**Device-dependent** and **device-independent** profiles: The camera "
 "profile, a scanner profile, your monitor's profile, and your printer's color "
@@ -238,13 +225,7 @@ msgstr ""
 "(монітора, принтера) матимуть велике значення, а для показу чи друку "
 "знадобиться залежний від пристрою профіль."
 
-#: ../../color_management/basis_knowledge.rst:57
-#| msgid ""
-#| "An **interpolated** raw file isn't a raw file. For some reason this "
-#| "simple point causes a lot of confusion. But after a raw file has been "
-#| "interpolated by raw processing software and then output as a tiff or "
-#| "jpeg, the original raw file is still a raw file, of course, but the "
-#| "interpolated file is just an image file. It isn't a raw file."
+#: ../../color_management/basis_knowledge.rst:61
 msgid ""
 "An **interpolated** RAW file isn't a RAW file. For some reason this simple "
 "point causes a lot of confusion. But after a RAW file has been interpolated "
@@ -260,17 +241,7 @@ msgstr ""
 "але наближений файл буде лише файлом зображення. Цей файл вже не буде файлом "
 "цифрового негатива."
 
-#: ../../color_management/basis_knowledge.rst:59
-#| msgid ""
-#| "**Linear** has two related and easily confused definitions. *Linear* can "
-#| "mean that the image tonality reflects the tonality in the original scene "
-#| "as photographed instead of being altered by the application of an S-curve "
-#| "or other means of changing local and global tonality. It can also mean "
-#| "that the gamma transfer curve of the color space is linear. An image can "
-#| "be *linear* in either, both, or neither of these two senses. A raw image "
-#| "as developed by Libraw is linear in both senses. The same image as "
-#| "developed by Canon's RAW processing software won't be linear in either "
-#| "sense."
+#: ../../color_management/basis_knowledge.rst:63
 msgid ""
 "**Linear** has two related and easily confused definitions. *Linear* can "
 "mean that the image tonality reflects the tonality in the original scene as "
@@ -293,7 +264,7 @@ msgstr ""
 "програми для обробки цифрових негативів від Canon, не буде лінійним за "
 "жодного з означень."
 
-#: ../../color_management/basis_knowledge.rst:61
+#: ../../color_management/basis_knowledge.rst:65
 msgid ""
 "**HDR** and **LDR** do not refer to the bit-depth of the image. **High "
 "dynamic range** and **low dynamic range** refer to the total dynamic range "
@@ -328,20 +299,7 @@ msgstr ""
 "монітор) через відносно невелику кількість доступних дискретних тональних "
 "кроків від найсвітлішого до найтемнішого тонів зображення."
 
-#: ../../color_management/basis_knowledge.rst:63
-#| msgid ""
-#| "In-camera produced jpegs don't need a camera profile. All jpegs (or "
-#| "TIFFs) coming straight out of a camera (even if produced by point-and-"
-#| "shoots cameras that don't allow you to save a RAW file) start life inside "
-#| "the camera as a RAW file produced by the camera's Analog to Digital "
-#| "converter. If you save your images as jpegs, then the processor inside "
-#| "the camera interpolates the RAW file, assigns a camera profile, "
-#| "translates the resulting RGB numbers to a working space (usually **sRGB** "
-#| "but sometimes you can choose **AdobeRGB**, depending on the camera), does "
-#| "the jpeg compression, and stores the jpeg file on your camera card. So "
-#| "jpegs (or TIFFs) from your camera don't need to be assigned a camera "
-#| "profile which is then translated to a working space. Jpegs from a camera "
-#| "are already in a working space."
+#: ../../color_management/basis_knowledge.rst:67
 msgid ""
 "In-camera produced Jpegs don't need a camera profile. All Jpegs (or TIFFs) "
 "coming straight out of a camera (even if produced by point-and-shoots "
@@ -371,18 +329,7 @@ msgstr ""
 "робочий простір. Кольори файлів jpeg з фотоапарата вже перебувають у "
 "робочому просторі."
 
-#: ../../color_management/basis_knowledge.rst:65
-#| msgid ""
-#| "Useful mathematical information if you are dealing with Libraw's linear "
-#| "gamma output: Mathematically speaking, when doing a gamma transform you "
-#| "normalize (that is, divide by 256 if you are working with 8-bit values) "
-#| "the RGB numbers and raise the resulting numbers to an appropriate power "
-#| "depending on the respective gammas of the starting and ending color "
-#| "space, then renormalize the results to a new set of RGB numbers. It's not "
-#| "hard, and very instructive, to do this with a calculator for a few sets "
-#| "of RGB numbers spaced from (0,0,0) to (255,255,255) to see how RGB "
-#| "numbers change from one gamma encoding to another. LCMS does this for you "
-#| "when you ask LCMS to convert from one color space to another."
+#: ../../color_management/basis_knowledge.rst:69
 msgid ""
 "Useful mathematical information if you are dealing with Libraw's linear "
 "gamma output: Mathematically speaking, when doing a gamma transform you "
@@ -407,7 +354,7 @@ msgstr ""
 "Lcms виконує це завдання, коли ви наказуєте Lcms перетворити зображення з "
 "одного простору кольорів у інший."
 
-#: ../../color_management/basis_knowledge.rst:67
+#: ../../color_management/basis_knowledge.rst:71
 msgid ""
 "**Copyrighted and copyleft working spaces**: I will take it as given that "
 "all the ordinarily encountered working spaces, such as:"
@@ -416,10 +363,7 @@ msgstr ""
 "можливістю законного лівого копіювання**: вважається, що це ВСІ поширені "
 "робочі простори, зокрема:"
 
-#: ../../color_management/basis_knowledge.rst:69
-#| msgid ""
-#| "The several variants of **sRGB**. See :ref:`the chapter "
-#| "<srgb_colorspace>` dedicated to this color space."
+#: ../../color_management/basis_knowledge.rst:73
 msgid ""
 "The several variants of **sRGB**. See :ref:`the chapter <monitor_profiles>` "
 "dedicated to this color space."
@@ -427,16 +371,16 @@ msgstr ""
 "декілька варіантів **sRGB**. Див. :ref:`присвячену цьому простору кольорів "
 "главу <monitor_profiles>`."
 
-#: ../../color_management/basis_knowledge.rst:71
+#: ../../color_management/basis_knowledge.rst:75
 msgid "BruceRGB or BestRGB."
 msgstr "BruceRGB або BestRGB."
 
-#: ../../color_management/basis_knowledge.rst:73
+#: ../../color_management/basis_knowledge.rst:77
 msgid "The various ECI (European color initiative) working space profiles."
 msgstr ""
 "різноманітні профілі робочого простору ECI (European color initiative)."
 
-#: ../../color_management/basis_knowledge.rst:75
+#: ../../color_management/basis_knowledge.rst:79
 msgid ""
 "**AdobeRGB**, Adobe **WideGamutRGB**, and Kodak/Adobe **ProPhotoRGB** (Kodak "
 "and Adobe ProPhoto are the same, just branded differently) and their non-"
@@ -446,15 +390,15 @@ msgstr ""
 "Adobe ProPhoto є одним простором кольорів, але з різними фірмовими назвами) "
 "та їх незапатентовані відповідники без фірмових назв."
 
-#: ../../color_management/basis_knowledge.rst:81
+#: ../../color_management/basis_knowledge.rst:85
 msgid ""
 "digiKam Image Editor Color Space Converter Allows to Switch to Another Color "
 "Profile"
 msgstr ""
-"За допомогою засобу перетворення просторів кольорів digiKam ви можете"
-" перемикатися на інший профіль кольорів"
+"За допомогою засобу перетворення просторів кольорів digiKam ви можете "
+"перемикатися на інший профіль кольорів"
 
-#: ../../color_management/basis_knowledge.rst:83
+#: ../../color_management/basis_knowledge.rst:87
 msgid ""
 "And quite a few other working spaces that could be added to this list, are "
 "all more or less suitable as working spaces. Which working space you should "
@@ -473,11 +417,11 @@ msgstr ""
 "авторським правом профілів робочих просторів, дані Exif вашого зображення "
 "міститимуть відповідну інформацію щодо авторських прав."
 
-#: ../../color_management/basis_knowledge.rst:86
+#: ../../color_management/basis_knowledge.rst:90
 msgid "The Color Space Connections"
 msgstr "Зв’язки між просторами кольорів"
 
-#: ../../color_management/basis_knowledge.rst:88
+#: ../../color_management/basis_knowledge.rst:92
 msgid ""
 "The question for each RGB trio of values in the (let us assume) 16-bit TIFF "
 "produced by Libraw becomes, what does a particular trio of RGB values for "
@@ -492,15 +436,7 @@ msgstr ""
 "моделі), з точки зору певного абсолютного стандартного еталонного або "
 "ідеального спостерігача»."
 
-#: ../../color_management/basis_knowledge.rst:90
-#| msgid ""
-#| "This absolute standard referencing an ideal observer is more commonly "
-#| "called a Profile Connection Space. A camera profile is needed to "
-#| "accurately characterize or describe the response of a given camera's "
-#| "pixels to light entering that camera, so that the RGB values in the "
-#| "output file produced by the raw converter can be translated first into an "
-#| "absolute **Profile Connection Space** (PCS) and then from the PCS to your "
-#| "chosen working space."
+#: ../../color_management/basis_knowledge.rst:94
 msgid ""
 "This absolute standard referencing an ideal observer is more commonly called "
 "a Profile Connection Space. A camera profile is needed to accurately "
@@ -519,24 +455,7 @@ msgstr ""
 "(PCS), а потім вже перетворити значення PCS на значення у вибраному вами "
 "просторі кольорів."
 
-#: ../../color_management/basis_knowledge.rst:92
-#| msgid ""
-#| "As a very important aside, In digiKam the software used to translate from "
-#| "the camera profile to the PCS and from the PCS to your chosen working "
-#| "space and eventually to your chosen output space (for printing or perhaps "
-#| "monitor display) is based on `Lcms <https://www.littlecms.com/>`_ (the "
-#| "**Little Color Management** engine). For what it's worth, Lcms does more "
-#| "accurate conversions than Adobe's proprietary color conversion engine. "
-#| "Further, the RAW conversion in digiKam is based on decoding of the "
-#| "proprietary RAW file done by **Libraw**. This library, is the hero of raw "
-#| "conversion as without it we'd all be stuck using the usually Windows or "
-#| "Mac only proprietary softwares that comes with our digital cameras. The "
-#| "Libraw's interpolation algorithms (not to be confused with the "
-#| "aforementioned decoding of the proprietary RAW file), which are part of "
-#| "digiKam if properly used, produce results equal or superior to "
-#| "commercial, closed source software. We in the world of Linux® and open "
-#| "source software are not second-class citizens when it comes to digital "
-#| "imaging."
+#: ../../color_management/basis_knowledge.rst:96
 msgid ""
 "As a very important aside, in digiKam the software used to translate from "
 "the camera profile to the PCS and from the PCS to your chosen working space "
@@ -576,19 +495,7 @@ msgstr ""
 "відкритого програмного забезпечення НЕ є громадянами другого сорту, коли "
 "йдеться про цифрову фотографію. Зовсім не є."
 
-#: ../../color_management/basis_knowledge.rst:94
-#| msgid ""
-#| "There are two commonly used Profile Connection Spaces - **CIELAB** and "
-#| "**CIEXYZ** (see this `wikipedia Color management section <https://en."
-#| "wikipedia.org/wiki/Color_management#Color_transformation>`_ for details). "
-#| "Lcms uses the camera profile to translate the RGB values from the "
-#| "interpolated RAW file, into the appropriate Profile Connection Space "
-#| "(usually CIEXYZ). A profile connection space is not itself a working "
-#| "space. Rather a PCS is an absolute reference space used only for "
-#| "translating from one color space to another - think of a PCS as a "
-#| "**Universal Translator** for all the color profiles that an image might "
-#| "encounter in the course of its journey from camera raw file to final "
-#| "output:"
+#: ../../color_management/basis_knowledge.rst:98
 msgid ""
 "There are two commonly used Profile Connection Spaces - **CIELAB** and "
 "**CIEXYZ** (see this `wikipedia Color management section <https://en."
@@ -615,7 +522,7 @@ msgstr ""
 "перетворення для всіх профілів кольорів, які можуть зустрітися у зображенні "
 "на його шляху з файла цифрового негатива фотоапарата до остаточного відбитка:"
 
-#: ../../color_management/basis_knowledge.rst:96
+#: ../../color_management/basis_knowledge.rst:100
 msgid ""
 "Lcms uses the camera profile, also called an **Input profile**, to translate "
 "the interpolated Libraw-produced RGB numbers, which only have meaning "
@@ -628,7 +535,7 @@ msgstr ""
 "виробника та моделі), на інший набір чисел RGB, який має значення лише у "
 "**просторі з’єднання профілів (PCS)**."
 
-#: ../../color_management/basis_knowledge.rst:98
+#: ../../color_management/basis_knowledge.rst:102
 msgid ""
 "Lcms translates the **Profile Connection Space** RGB numbers to the "
 "corresponding numbers in your chosen **Working space** so you can edit your "
@@ -647,7 +554,7 @@ msgstr ""
 "виглядатиме неправильно. Лише трохи неправильно чи дуже неправильно, "
 "залежить від відмінностей між двома профілями."
 
-#: ../../color_management/basis_knowledge.rst:100
+#: ../../color_management/basis_knowledge.rst:104
 msgid ""
 "While you are editing your image in your chosen **Working space**, then Lcms "
 "should translate all the working space RGB numbers back to the PCS, and then "
@@ -666,7 +573,7 @@ msgstr ""
 "Якщо у діях з певної причини виникає помилка, зображення може бути "
 "неправильним, трохи неправильним або дуже, дуже, дуже неправильним."
 
-#: ../../color_management/basis_knowledge.rst:102
+#: ../../color_management/basis_knowledge.rst:106
 msgid ""
 "When you are satisfied that your edited image is ready to share with the "
 "world, Lcms translates the **Working space** RGB numbers back into the PCS "
@@ -684,16 +591,7 @@ msgstr ""
 "мережі або надсилання його електронною поштою друзям або, можливо, створення "
 "показу слайдів на моніторах, відмінних від вашого)."
 
-#: ../../color_management/basis_knowledge.rst:104
-#| msgid ""
-#| "To back up a little bit and look at the first color profile an image "
-#| "encounters, that is, the camera profile (see (1) immediately above) - "
-#| "Libraw can in fact apply your camera profile for you (Libraw uses lcms "
-#| "internally). But (i)the generating of the tiff composed of the "
-#| "interpolated RGB values derived from the camera raw file, and (ii)the "
-#| "application of the camera profile to the interpolated file, are two very "
-#| "distinct and totally separable (separable in theory and practice for "
-#| "Libraw; in theory only for most raw converters) steps. ."
+#: ../../color_management/basis_knowledge.rst:108
 msgid ""
 "To back up a little bit and look at the first color profile an image "
 "encounters, that is, the camera profile (see (1) immediately above) - Libraw "
@@ -714,12 +612,11 @@ msgstr ""
 "(відокремлюваними теоретично і практично для dcraw і лише теоретично для "
 "більшості інших інструментів перетворення цифрових негативів) кроками."
 
-#: ../../color_management/basis_knowledge.rst:107
-#| msgid "Where to Find Camera Profiles"
+#: ../../color_management/basis_knowledge.rst:111
 msgid "Camera Profiles"
 msgstr "Профілі фотоапаратів"
 
-#: ../../color_management/basis_knowledge.rst:109
+#: ../../color_management/basis_knowledge.rst:113
 msgid ""
 "This manual section has a bit of information on where to find ready-made "
 "camera profiles. It's an unfortunate fact of digital imaging that the camera "
@@ -740,18 +637,7 @@ msgstr ""
 "схильність виробників до приховування, коли наступного разу купуватимете "
 "цифровий фотоапарат."
 
-#: ../../color_management/basis_knowledge.rst:111
-#| msgid ""
-#| "To finding a camera profile for your camera is to make your own camera "
-#| "profile or have one made for you. There are quite a few commercial "
-#| "services who provide profiling services (for a fee, of course). Or you "
-#| "can use LPRof or Argyll to profile your camera yourself. We cannot speak "
-#| "about how easy or difficult the process of profiling a camera might be. "
-#| "But we would imagine, knowing how very meticulous the people behind "
-#| "Argyll, LPRof, and lcms are about color management, that making your own "
-#| "camera profile is very do-able and very likely the results will be better "
-#| "than any proprietary profile. After all, Canon  didn't profile your "
-#| "camera, they just profiled a camera like your."
+#: ../../color_management/basis_knowledge.rst:115
 msgid ""
 "To finding a camera profile for your camera is to make your own camera "
 "profile or have one made for you. There are quite a few commercial services "
@@ -779,18 +665,11 @@ msgstr ""
 "Canon не створюватиме профілів саме для ВАШОГО фотоапарата, — вони "
 "профілюватимуть фотоапарат, ПОДІБНИЙ до вашого."
 
-#: ../../color_management/basis_knowledge.rst:114
+#: ../../color_management/basis_knowledge.rst:118
 msgid "Working Spaces"
 msgstr "Робочі простори"
 
-#: ../../color_management/basis_knowledge.rst:116
-#| msgid ""
-#| "So now your RAW file has been interpolated by Libraw and you've obtained "
-#| "a camera profile and used lcms to apply your camera profile. What does "
-#| "all this mean? The real answer involves a lot of math and color science "
-#| "that goes way over my head and likely yours. The short, practical answer "
-#| "is that neither the camera profile space nor the Profile Connection Space "
-#| "is an appropriate space for image editing."
+#: ../../color_management/basis_knowledge.rst:120
 msgid ""
 "So now your RAW file has been interpolated by Libraw and you've obtained a "
 "camera profile and used Lcms to apply your camera profile. What does all "
@@ -808,15 +687,7 @@ msgstr ""
 "профілю фотоапарата, ні простір з’єднання профілів (PCS) не є зручними "
 "просторами для редагування зображення."
 
-#: ../../color_management/basis_knowledge.rst:118
-#| msgid ""
-#| "Your next step is to choose a working space for image editing. And then "
-#| "you (or rather the Lcms color management engine that digiKam uses) "
-#| "actually perform a double translation. First Lcms uses the camera profile "
-#| "to translate the RGB values of each pixel in the Libraw-output-image-"
-#| "without-camera-profile-applied into the aforementioned Profile Connection "
-#| "Space. Then it translates the RGB values of each pixel from the PCS to "
-#| "your chosen working space."
+#: ../../color_management/basis_knowledge.rst:122
 msgid ""
 "Your next step is to choose a working space for image editing. Lcms, the "
 "color management engine that digiKam uses, perform a double translation. "
@@ -826,28 +697,27 @@ msgid ""
 "of each pixel from the PCS to your chosen working space."
 msgstr ""
 "Вашим наступним кроком є вибір робочого простору для редагування зображення. "
-"Отже, ви (або, точніше, рушій керування кольорами lcms, який використовує"
-" ваше "
-"програмне забезпечення з відкритим кодом для роботи з цифровими "
+"Отже, ви (або, точніше, рушій керування кольорами lcms, який використовує "
+"ваше програмне забезпечення з відкритим кодом для роботи з цифровими "
 "фотографіями) насправді виконуватимете подвійне перетворення. Спочатку lcms "
 "використає профіль фотоапарата для перетворення значень RGB для кожного "
 "пікселя у виведеному libraw зображенні без застосування профілю фотоапарата "
 "до згаданого раніше простору з’єднання профілів, потім lcms перетворить "
 "значення RGB кожного з пікселів з PCS до вибраного вами робочого простору."
 
-#: ../../color_management/basis_knowledge.rst:124
+#: ../../color_management/basis_knowledge.rst:128
 msgid ""
 "digiKam Knows Where to Find the Color Profiles Installed on Your System and "
 "list Files in Setup Dialog For Selection"
 msgstr ""
-"digiKam може знаходити профілі кольорів, які встановлено у вашій системі і"
-" показувати список файлів у вікні налаштовування"
+"digiKam може знаходити профілі кольорів, які встановлено у вашій системі і "
+"показувати список файлів у вікні налаштовування"
 
-#: ../../color_management/basis_knowledge.rst:127
+#: ../../color_management/basis_knowledge.rst:131
 msgid "Soft Proofing"
 msgstr "Проба кольорів"
 
-#: ../../color_management/basis_knowledge.rst:129
+#: ../../color_management/basis_knowledge.rst:133
 msgid ""
 "**Soft Proofing** is a way of previewing on the screen the result to be "
 "expected from an output on another device, typically a printer. Soft "
@@ -862,11 +732,11 @@ msgstr ""
 "чином, ви зможете покращити параметри відтворення без зайвих витрат часу та "
 "грошей."
 
-#: ../../color_management/basis_knowledge.rst:132
+#: ../../color_management/basis_knowledge.rst:136
 msgid "Rendering Intention"
 msgstr "Пристрій відтворення"
 
-#: ../../color_management/basis_knowledge.rst:134
+#: ../../color_management/basis_knowledge.rst:138
 msgid ""
 "**Rendering intent** refers to the way gamuts are handled when the intended "
 "target color space cannot handle the full gamut."
@@ -874,7 +744,7 @@ msgstr ""
 "**Відтворення кольорів** — це спосіб обробки палітри у разі, якщо простір "
 "кольорів призначення не може вмістити всю поточну палітру кольорів."
 
-#: ../../color_management/basis_knowledge.rst:136
+#: ../../color_management/basis_knowledge.rst:140
 msgid ""
 "**Perceptual**, also called Image or Maintain Full Gamut. This is generally "
 "recommended for photographic images. The color gamut is expanded or "
@@ -897,7 +767,7 @@ msgstr ""
 "палітри, навіть якщо зображення не містить значних ділянок кольорів поза "
 "палітрою."
 
-#: ../../color_management/basis_knowledge.rst:138
+#: ../../color_management/basis_knowledge.rst:142
 msgid ""
 "**Relative Colorimetric**, also called Proof or Preserve Identical Color and "
 "White Point. Reproduces in-gamut colors exactly and clips out-of-gamut "
@@ -907,7 +777,7 @@ msgstr ""
 "зберігає ідентичні кольори і точку білого. Точно відтворює кольори у межах "
 "палітри і обрізає кольори поза палітрою до найближчих у палітрі за відтінком."
 
-#: ../../color_management/basis_knowledge.rst:140
+#: ../../color_management/basis_knowledge.rst:144
 msgid ""
 "**Absolute Colorimetric**, also called Match or Preserve Identical Colors. "
 "Reproduces in-gamut colors exactly and clips out-of-gamut colors to the "
@@ -926,7 +796,7 @@ msgstr ""
 "до помітного затемнення зображення. Це відтворення не дуже цікаве у цифровій "
 "фотографії."
 
-#: ../../color_management/basis_knowledge.rst:142
+#: ../../color_management/basis_knowledge.rst:146
 msgid ""
 "**Saturation**, also called Graphic or Preserve Saturation. Maps the "
 "saturated primary colors in the source to saturated primary colors in the "
