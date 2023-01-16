@@ -251,7 +251,7 @@ You can tag people manually by different way:
 
         The digiKam Manual Face Tagging From Context Menu
 
-    And then draw a rectangle around the face while holding left mouse button followed by entering the person's name and pressing :kbd:`Enter`.
+    And then draw a rectangle around the face while holding left mouse button followed by entering the person's name and pressing :kbd:`Enter` key. If you press :kbd:`ESC` key, this will leaves the the person's name editor.
 
     .. figure:: images/mainwindow_face_region.webp
         :alt:
