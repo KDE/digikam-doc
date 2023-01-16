@@ -39,6 +39,8 @@ Set the option **Fast Scan** to significantly speed up the scan. New items, dele
 
 Set the option **Remove obsolete core database objects** to force digiKam to clean up the core database from obsolete item entries. Entries are only deleted if the connected item file was already removed, i.e. the database object wastes space. This option does not clean up other databases as the thumbnails or recognition db. For clean up routines for other databases, please use the maintenance tool. Take a care that option slow down startup stages.
 
+.. _genericrules_settings:
+
 Generic Rules
 ~~~~~~~~~~~~~
 
@@ -66,6 +68,8 @@ With the **String comparison type** setting, you can set the way in which string
     - **Normal** uses a more technical approach. Use this style if you want to entitle albums with ISO dates (as *201006* or *20090523*) and the albums should be sorted according to these dates.
 
 With the **Lower bound for minimum similarity** option, you can select the lower bound of the minimum similarity threshold for fuzzy and duplicates searches. The default value is 40. Selecting a lower value than 40 can make the search really slow.
+
+.. _updates_settings:
 
 Application Updates
 ~~~~~~~~~~~~~~~~~~~
@@ -207,9 +211,9 @@ Spellcheck can be used on captions, titles, and other text-edit widgets to auto-
 
     The Titles Text Edit with Spellcheck Feature
 
-.. _localize_settings:
-
 You can edit a list of words that Spellcheck must ignore during operations. digiKam already provide a list usual keywords to not verify.
+
+.. _localize_settings:
 
 Localize Settings
 -----------------
