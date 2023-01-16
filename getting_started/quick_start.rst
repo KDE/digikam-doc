@@ -106,7 +106,7 @@ digiKam uses a dedicated database to store thumbnails with an optimized wavelets
 
 Once you have configured the Album Library Folder you can set up digiKam to work with your digital camera and then learn how to use :ref:`the Album section <albums_view>` and :ref:`the Tags section <tags_view>` to arrange your photograph Albums.
 
-.. _firstrun_downloads::
+.. _firstrun_downloads:
 
 .. important::
 
