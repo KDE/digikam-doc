@@ -1,6 +1,6 @@
 .. meta::
    :description: Color Management and Working Space
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image editor, color management, icc, profile
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image editor, color management, icc, profile, working space
 
 .. metadata-placeholder
 

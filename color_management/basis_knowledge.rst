@@ -1,6 +1,6 @@
 .. meta::
    :description: Basis Knowledge about Color Management
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image editor, color management, icc, profile
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image editor, color management, icc, profile, basis
 
 .. metadata-placeholder
 

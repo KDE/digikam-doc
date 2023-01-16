@@ -1,6 +1,6 @@
 .. meta::
    :description: Color Management and Camera Profiles
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image editor, color management, icc, profile
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image editor, color management, icc, profile, camera
 
 .. metadata-placeholder
 
