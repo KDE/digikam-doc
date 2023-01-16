@@ -61,6 +61,8 @@ With the **Behavior** section, you can customize some main rules with your camer
 
     The digiKam Camera Configuration Panel with the Behavior View
 
+.. _camera_fiters:
+
 Running Filters at Download
 ---------------------------
 
@@ -71,6 +73,8 @@ With the **Import Filter** section, you can customize the list of type mime filt
     :align: center
 
     The digiKam Camera Configuration Panel with the Import Filters View
+
+.. _camera_interface:
 
 Customize Import Interface
 --------------------------
