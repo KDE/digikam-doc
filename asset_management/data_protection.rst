@@ -342,7 +342,7 @@ Open Source standards have the huge advantage of having an open specification. E
 
 **TIFF** has been widely accepted as an image format. TIFF can exist in uncompressed form or in a container using a lossless compression algorithm (Deflate). It maintains high image quality but at the expense of much larger file sizes. Some cameras let you save your images in this format. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by all applications.
 
-**PGF** "Progressive Graphics File" is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited to the web but at the moment few browsers can display it. For more information about the PGF format see the libPGF homepage.
+**PGF** "Progressive Graphics File" is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited to the web but at the moment few browsers can display it. For more information about the PGF format see the `libPGF homepage <https://libpgf.org/>`_
 
 .. figure:: images/dam_raw_import.webp
     :alt:
