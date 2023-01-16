@@ -96,7 +96,7 @@ ExifTool is a backend engine that digiKam can use to process operations on metad
 
     To replace the Exiv2 backend by ExifTool with all read and write metadata operations, see the :ref:`Metadata Behavior <metadata_behavior>` section of this manual.
 
-.. _metadata_advanced:
+.. _metadata_baloo:
 
 Baloo Settings
 --------------
@@ -114,6 +114,8 @@ This page allows to share metadata stored in digiKam database with the Baloo sea
 .. note::
 
     This page is only available under Linux, not Windows and macOS. The KDE Plasma **Files Indexer** feature must be enabled in the KDE Plasma control Panel.
+
+.. _metadata_advanced:
 
 Advanced Settings
 -----------------

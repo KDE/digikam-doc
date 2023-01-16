@@ -105,6 +105,12 @@ The photograph is rotated without loss of quality and the orientation informatio
 Renaming a Photograph
 ~~~~~~~~~~~~~~~~~~~~~
 
+.. figure:: images/mainwindow_advanced_rename.webp
+    :alt:
+    :align: center
+
+    The digiKam Advanced Rename Tool
+
 You can change the filename for a photograph by clicking with the right mouse button over a thumbnail and selecting **Rename** :kbd:`F2`. Remember to keep the file extension (.jpg, .tif, etc.).
 
 You can also batch rename photographs. One method is to use the :ref:`Batch Queue Manager <batch_queue>` :kbd:`B`. Another one is to select multiple photographs and then press :kbd:`F2`. A dialog will open showing the list of selected photographs with their current name and the new name. These two are identical at first until you place the cursor in the input field, type in something and/or select a modifier from the buttons below.
@@ -113,11 +119,11 @@ You can also batch rename photographs. One method is to use the :ref:`Batch Queu
 
     The powerful rename tool has a self description of all features available to process renaming. Take a look of context help from the tooltip button on the right side of the text field used to enter rename modifiers.
 
-.. figure:: images/mainwindow_advanced_rename.webp
-    :alt:
-    :align: center
+    .. figure:: images/mainwindow_advanced_rename_help.webp
+        :alt:
+        :align: center
 
-    The digiKam Advanced Rename Tool
+        The Advanced Rename Helper View
 
 .. _deleting_photograph:
 
@@ -138,7 +144,7 @@ digiKam will ask you confirmation before to move items to trash with the dialog 
 
 digiKam will ask you confirmation before to move items to trash with the dialog below.
 
-For each collection registered in the database, digiKam handle an internal trash-bin. Physically, the trash is located at the root album corresponding to the collection entry. It's a hidden folder :file:`.dtrash` storing deleted items in a sub-directory named :file:`files`, and information about the deletion stored in another sub-directory named :file:`info`with  Json sidecars (:file:`.dtrashinfo`). Deleting a file in the collection does not remove the file from the media, but moves the file into this container. This one is accessible from the left sidebar tab **Albums** as the last entry of the tree-view corresponding to a collection and is named **Trash**.
+For each collection registered in the database, digiKam handles an internal trash-bin. Physically, the trash is located at the root album corresponding to the collection entry. It's a hidden folder :file:`.dtrash` storing deleted items in a subdirectory named :file:`files`, and information about the deletion stored in another subdirectory named :file:`info` with Json sidecars (:file:`.dtrashinfo`). Deleting a file in the collection does not remove the file from the media, but moves the file into this container. This one is accessible from the left sidebar tab **Albums** as the last entry of the tree-view corresponding to a collection and is named **Trash**.
 
 .. figure:: images/mainwindow_trashbin.webp
     :alt:
@@ -148,12 +154,12 @@ For each collection registered in the database, digiKam handle an internal trash
 
 .. note::
 
-    digiKam do not use the Desktop recycler as operations to move files to delete from a network collection will take a while. It will be exactly the same problem with a collection hosted in a different disk partition than your home directory managed by the Desktop. Moving items to delete to a self-contained trash-bin from the collection will be universal and fast.  
+    digiKam does not use the Desktop recycler as operations to move files to delete from a network collection will take a while. It will be exactly the same problem with a collection hosted in a different disk partition than your home directory managed by the Desktop. Moving items to delete to a self-contained trash-bin from the collection will be universal and fast.  
 
-On the bottom of the trash-bin view, a series of buttons allows to restore files in collection or delete them permanently. There are:
+On the bottom of the trash-bin view, a series of buttons allows to restore files in collection or delete them permanently. These are:
 
     - **Undo**: to restore only the last entry in the trash-bin.
-    - **Restore¨**: to restore seclection of files from the trash-bin.
+    - **Restore¨**: to restore selection of files from the trash-bin.
     - **Delete**: to remove **permanently** the items selection or all items from the trash-bin.
 
 All operations processed on trash-bin items will be confirmed to the user.
@@ -162,7 +168,7 @@ All operations processed on trash-bin items will be confirmed to the user.
     :alt:
     :align: center
 
-    The digiKam Internal Trash-Bin Ask to Confirm the Permanently Deletion of Items
+    The digiKam Internal Trash-Bin Asks to Confirm the Permanently Deletion of Items
 
 .. important::
 
@@ -191,7 +197,7 @@ You can put the whole selection into one group using **Group Selected Here** or 
 
 .. important::
 
-    If you Group files automatically (based on time or filename for example), the smaller file size from the group is preferrend as the leading item. The idea is that when previewing, faster loading of the image will allow for a quick preview.
+    If you Group files automatically (based on time or filename for example), the smaller file size from the group is preferred as the leading item. The idea is that when previewing, faster loading of the image will allow for a quick preview.
     
     If you group files manually from icon-view, the selected item used to show context menu and group files will be used as leading item.
 

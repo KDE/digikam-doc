@@ -22,7 +22,11 @@ File Renaming Options
 
 Cameras often do not use very meaningful filenames for photographs. The filenames are usually reused once the photographs have been deleted from the camera. This can lead to filename clashes if you download photographs from many shootings into the same Album. It can also be useful to include the date and time that an image was taken into the filename.
 
-.. figure:: images/camera_settings1.webp
+.. figure:: images/camera_settings_files_rename.webp
+    :alt:
+    :align: center
+
+    The Import Tool File Renames Advanced Settings
 
 If you select Camera filenames the image filenames will not be altered. But you have the option to change their case to upper or lower case with the “Change case to:” drop down field. If you select Customize you will be able to put together a renaming pattern from the Options drop down menu which contains original file name, file extension, owner and group, directory, a dialog for defining a sequence number and a dialog for adding date and time information, either fixed or based on the time information written by the camera into the image file.
 
@@ -30,7 +34,11 @@ In the sequence number dialog you will find two options: Extension aware numberi
 
 The Date & Time dialog looks like this:
 
-.. figure:: images/camera_datetime.webp
+.. figure:: images/camera_date_time_selector.webp
+    :alt:
+    :align: center
+
+    The Import Tool File Renames Date-Time Selector
 
 The calendar is active only if “Fixed Date” is selected from the Source: drop down field. This way you can add the same date and time information to the filenames of all imported images or videos. If “Image” is selected instead digiKam will use the time information from the metadata of the image files. With the Format: drop down field you can choose from several standard date/time formats and a custom format. For the latter choose Custom in Format: drop-down list and fill in for example "dd.MM.yyyy hh:mm:ss". For more information, read QDateTime class reference.
 
@@ -49,7 +57,11 @@ The new filename that digiKam will use for the photographs when they are downloa
 Auto-Creation of Albums
 -----------------------
 
-.. figure:: images/camera_settings3.webp
+.. figure:: images/camera_settings_auto_albums.webp
+    :alt:
+    :align: center
+
+    The Import Tool Albums Auto-Creation Advanced Settings
 
 Check Extension-based sub-albums and digiKam will create subalbums based on the file extensions of the imported images in the target album. digiKam will open a dialog where you can choose the target album once you click one of the download options either from the toolbar or from the Item menu. If you want to create a new Album, into which you could download the photographs, click the New Album button. The new Album will be created as a sub-folder of the Album that is currently selected in the existing Album list. This means that if you do not want your new Album to be a sub-folder of an existing folder you must first select the collection where you want to create the new album. Collections are indicated by the icon.
 
@@ -58,7 +70,11 @@ If your camera provides information about the date of the photograph's taking or
 On the Fly Operations
 ---------------------
 
-.. figure:: images/camera_settings2.webp
+.. figure:: images/camera_settings_on_the_fly.webp
+    :alt:
+    :align: center
+
+    The Import Tool on the Fly Operations Advanced Settings
 
 This section of the Settings tab offers several options for JPEG images. The Template: drop-down field lets you choose one of your metadata templates you customized in Templates Settings. You can access the Template Manager also with the edit button to the right of the drop-down field.
 
@@ -71,17 +87,27 @@ Convert to lossless file format allows you to convert the images to PNG, TIFF, P
 DNG Convert Options
 -------------------
 
-.. figure:: images/camera_settings4.webp
+.. figure:: images/camera_settings_dng_convert.webp
+    :alt:
+    :align: center
+
+    The Import Tool DNG Convert Advanced Settings
 
 This section allows to enable the DNG conversion of RAW images by checking Convert RAW images to DNG container and to select options for that conversion. To learn more about Digital Negative (DNG) use the link “DNG container”.
 
-- Embed original file: Embeds the original RAW file into the DNG container. 
+- Embed original file: Embeds the original RAW file into the DNG container.
 
-- Lossless Compression: Enables lossless compression. The difference between lossy and lossless compression is said to be practically indistinguishable with DNG. 
+- Lossless Compression: Enables lossless compression. The difference between lossy and lossless compression is said to be practically indistinguishable with DNG.
 
 - JPEG preview: Choose whether you want a medium or full size JPEG preview to be embedded into the DNG container or none at all. 
 
 Scripting
 ---------
+
+.. figure:: images/camera_settings_scripting.webp
+    :alt:
+    :align: center
+
+    The Import Tool Scripting Advanced Settings
 
 This last section of the Settings tab offers to run scripts to manipulate the images during import. You can type the filename of the script into the input field or search for it using the Browse... button. Check out the info button for additional expressions to customize the command line!

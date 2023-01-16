@@ -120,6 +120,12 @@ To finding a camera profile for your camera is to make your own camera profile o
 
 For more information take a look to the dedicated :ref:`section from this manual <camera_profiles>`.
 
+.. figure:: images/cm_mainwindow_colors_tab.webp
+    :alt:
+    :align: center
+
+    If your Photograph Include a Color Profile from your Camera digiKam Can show this in Colors Sidebar Tab
+
 Working Spaces
 --------------
 

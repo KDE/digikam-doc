@@ -15,14 +15,22 @@ Import From Camera
 
 .. contents::
 
-.. figure:: images/camera_maininterface.webp
+.. figure:: images/camera_main_interface.webp
+    :alt:
+    :align: center
+
+    The digiKam Import Tool Main Interface
 
 Getting Information About The Photographs
 -----------------------------------------
 
 Before downloading photographs to your computer, you may wish to see the camera item information. Using the Properties and Metadata tabs on the Right Sidebar will launch camera and photograph properties and metadata information.
 
-.. figure:: images/camera_itemproperties.webp
+.. figure:: images/camera_item_properties.webp
+    :alt:
+    :align: center
+
+    The Item Properties Sidebar Tab from Import Tool
 
 The Item Properties Sidebar Tab
 -------------------------------

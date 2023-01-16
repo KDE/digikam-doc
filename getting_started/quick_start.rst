@@ -106,6 +106,8 @@ digiKam uses a dedicated database to store thumbnails with an optimized wavelets
 
 Once you have configured the Album Library Folder you can set up digiKam to work with your digital camera and then learn how to use :ref:`the Album section <albums_view>` and :ref:`the Tags section <tags_view>` to arrange your photograph Albums.
 
+.. _firstrun_downloads:
+
 .. important::
 
     At first run, digiKam will ask to download large files from Internet. These files are the deep-learning models used for the face management, red eyes removal, and the image quality sorting features. If you pass this stage without downloading files, these features will not work properly, but you can reload this file later using option from the :ref:`Setup/Miscs/System <system_settings>` dialog page.
