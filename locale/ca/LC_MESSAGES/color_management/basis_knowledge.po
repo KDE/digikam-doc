@@ -1,0 +1,613 @@
+# Translation of docs_digikam_org_color_management___basis_knowledge.po to Catalan
+# Copyright (C) 2023 This_file_is_part_of_KDE
+# Licensed under the <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">terms of the GNU Free Documentation License 1.2</a> unless stated otherwise
+# This file is distributed under the same license as the digiKam Manual package.
+#
+# Antoni Bella Pérez <antonibella5@yahoo.com>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: digikam-doc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-15 00:49+0000\n"
+"PO-Revision-Date: 2023-01-15 19:14+0100\n"
+"Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: ../../color_management/basis_knowledge.rst:1
+msgid "Basis Knowledge about Color Management"
+msgstr "Coneixements bàsics sobre la gestió del color"
+
+#: ../../color_management/basis_knowledge.rst:1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, image editor, color management, icc, profile"
+msgstr ""
+"digiKam, documentació, manual d'usuari, gestió de les fotografies, codi "
+"obert, lliure, aprenentatge, fàcil, editor d'imatges, gestió del color, icc, "
+"perfil"
+
+#: ../../color_management/basis_knowledge.rst:14
+msgid "Basis Knowledge"
+msgstr "Coneixement bàsic"
+
+#: ../../color_management/basis_knowledge.rst:16
+msgid "Contents"
+msgstr "Contingut"
+
+#: ../../color_management/basis_knowledge.rst:19
+msgid "Overview"
+msgstr "Vista general"
+
+#: ../../color_management/basis_knowledge.rst:21
+msgid ""
+"The point of a color-managed workflow is to ensure that the colors coming "
+"from your camera or scanner have a predictable relationship with the colors "
+"you actually photographed or scanned, that the colors displayed on your "
+"monitor match the colors coming from your camera or scanner, and that the "
+"colors you print or display on the web match the colors you produced in your "
+"digital darkroom."
+msgstr ""
+"El punt d'un flux de treball per a la gestió del color és garantir que els "
+"colors que arriben des de la càmera o escàner tenen una relació predictible "
+"amb els colors que realment heu fotografiat o escanejat, que els colors que "
+"es mostren en el monitor coincideixin amb els colors que arriben des de la "
+"càmera o escàner, i que els colors que imprimiu o mostreu al web "
+"coincideixen amb els colors que es produeixen en la cambra fosca digital."
+
+#: ../../color_management/basis_knowledge.rst:27
+msgid ""
+"The Overall Scheme of Color Spaces Used in a Color Managed Application as "
+"digiKam"
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:29
+msgid ""
+"When it comes to color management, everyone wants to know, *which buttons do "
+"I push to get the results I want*. Unfortunately, color management of "
+"necessity involves making informed choices at every step along the image-"
+"processing workflow. The purpose of this section is to provide sufficient "
+"background information on color management, along with links to more in-"
+"depth information, to enable you to begin to make your own informed "
+"decisions, based on your own desired results."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:32
+msgid "Conditions to Ignore"
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:34
+msgid ""
+"If your imaging workflow meets all six criteria listed below, then you don't "
+"need to worry about color management:"
+msgstr ""
+"Si el flux de treball amb les imatges compleix els sis criteris llistats a "
+"continuació, llavors no haureu de preocupar-vos per la gestió del color."
+
+#: ../../color_management/basis_knowledge.rst:36
+msgid ""
+"You are working at a monitor properly calibrated to the sRGB color space "
+"(more about that below)."
+msgstr ""
+"Esteu treballant en un monitor calibrat correctament a l'espai de color sRGB "
+"(més sobre això més endavant)."
+
+#: ../../color_management/basis_knowledge.rst:38
+msgid ""
+"Your imaging workflow starts with an in-camera-produced Jpeg already in the "
+"sRGB color space."
+msgstr ""
+"El vostre flux de treball amb les imatges comença amb una càmera que "
+"produeix JPEG en l'espai de color sRGB."
+
+#: ../../color_management/basis_knowledge.rst:40
+msgid "You work exclusively in the sRGB color space for editing."
+msgstr "Treballeu exclusivament en l'espai de color sRGB per a l'edició."
+
+#: ../../color_management/basis_knowledge.rst:42
+msgid "Your printer wants images in the sRGB color space."
+msgstr "La vostra impressora vol imatges en l'espai de color sRGB."
+
+#: ../../color_management/basis_knowledge.rst:44
+msgid "Your scanner produces images in the sRGB color space."
+msgstr "El vostre escàner produeix imatges en l'espai de color sRGB."
+
+#: ../../color_management/basis_knowledge.rst:46
+msgid ""
+"Your only other image output is via email or the web, where sRGB is the de "
+"facto standard."
+msgstr ""
+"La vostra única altra sortida de la imatge és a través de correu electrònic "
+"o el web, on sRGB és l'estàndard de facto."
+
+#: ../../color_management/basis_knowledge.rst:49
+msgid "Color Management Definitions"
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:51
+msgid ""
+"What follow is some additional comments and definitions to understand the "
+"Color Management:"
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:53
+msgid ""
+"**Assign** a profile means change the meaning of the RGB numbers in an image "
+"by embedding a new profile without changing the actual RGB numbers "
+"associated with each pixel in the image. **Convert** to a profile means "
+"embed a new profile, but also change the RGB numbers at the same time so "
+"that the meaning of the RGB values - that is, the real-world visible color "
+"represented by the trio of RGB numbers associated with each pixel in an "
+"image - remains the same before and after the conversion from one space to "
+"another."
+msgstr ""
+"**Assignar** un perfil significa canviar el significat dels números RGB en "
+"una imatge mitjançant l'incrustat d'un perfil nou sense canviar els números "
+"RGB reals associats amb cada píxel a la imatge. **Convertir** a un perfil, "
+"vol dir inserir un perfil nou, però també canviar alhora els números RGB de "
+"manera que el significat dels valors RGB -és a dir, el color visible en el "
+"món real representat pel trio de números RGB associats amb cada píxel en una "
+"imatge- segueixi sent el mateix abans i després de la conversió d'un espai a "
+"un altre."
+
+#: ../../color_management/basis_knowledge.rst:55
+msgid ""
+"On the other hand, every time you assign a new working space profile rather "
+"than convert to a new working space (except when initially assigning a "
+"camera profile to the image file you get from your RAW processing software), "
+"the appearance of the image should more or less drastically change (usually "
+"for the worse, unless the wrong profile had previously been inadvertently "
+"embedded in the image)."
+msgstr ""
+"D'altra banda, cada vegada que assigneu un perfil nou de l'espai de treball "
+"en lloc de convertir a un espai de treball nou (excepte quan s'assigna "
+"inicialment un perfil de càmera al fitxer d'imatge que rebeu des del vostre "
+"programari de processament RAW), l'aparença de la imatge canviarà més o "
+"menys dràsticament (en general empitjora, llevat que prèviament el perfil "
+"equivocat hagi estat inadvertidament incrustat a la imatge)."
+
+#: ../../color_management/basis_knowledge.rst:57
+msgid ""
+"In theory, you should be able to do multiple conversions of an image from "
+"one working space to another, and if you are using a color-managed image "
+"editor, even though all the RGB numbers in the image will change with each "
+"conversion, the image displayed on your screen should look the same. In "
+"actual fact, because of rounding errors upon each conversion, not to mention "
+"gamut-clipping when going from a larger to a smaller working space, every "
+"time you convert from one space to another the image degrades a bit."
+msgstr ""
+"En teoria, hauríeu de ser capaç de fer múltiples conversions d'una imatge "
+"des d'un espai de treball a un altre, i si esteu utilitzant un editor "
+"d'imatges amb gestió del color, tot i que tots els números RGB de la imatge "
+"canviaran amb cada conversió, la imatge que aparegui a la pantalla hauria de "
+"ser la mateixa. En realitat, per culpa dels errors d'arrodoniment sobre cada "
+"conversió, per no mencionar el retallat de la gamma quan es passa d'un espai "
+"de treball més gran a un de més petit, cada vegada que convertiu des d'un "
+"espai a un altre, la imatge es degradarà una mica."
+
+#: ../../color_management/basis_knowledge.rst:59
+msgid ""
+"**Device-dependent** and **device-independent** profiles: The camera "
+"profile, a scanner profile, your monitor's profile, and your printer's color "
+"profile are all device-dependent profiles - these profiles only work with "
+"the specific device for which they were produced by means of profiling. "
+"Working space profiles and the PCS's are *device-independent*. Once an image "
+"file has been translated by Lcms to a device-independent working space, in a "
+"sense it no longer matters what device originally produced the image. But as "
+"soon as you want to display or print the image, then the device (monitor, "
+"printer) used matters a great deal and requires a device-dependent profile."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:61
+msgid ""
+"An **interpolated** RAW file isn't a RAW file. For some reason this simple "
+"point causes a lot of confusion. But after a RAW file has been interpolated "
+"by RAW processing software and then output as a TIFF or Jpeg, the original "
+"RAW file is still a RAW file, of course, but the interpolated file is just "
+"an image file. It isn't a RAW file."
+msgstr ""
+"Un **fitxer RAW interpolat** no és un fitxer RAW. Per alguna raó, aquest "
+"punt senzill provoca una gran confusió. No obstant això, després que un "
+"fitxer RAW hagi estat interpolat pel programari de processament RAW i "
+"després la sortida com a TIFF o JPEG, el fitxer RAW original seguirà sent un "
+"fitxer RAW, per descomptat, però el fitxer interpolat només serà un fitxer "
+"d'imatge. No serà un fitxer RAW."
+
+#: ../../color_management/basis_knowledge.rst:63
+msgid ""
+"**Linear** has two related and easily confused definitions. *Linear* can "
+"mean that the image tonality reflects the tonality in the original scene as "
+"photographed instead of being altered by the application of an S-curve or "
+"other means of changing local and global tonality. It can also mean that the "
+"gamma transfer curve of the color space is linear. An image can be *linear* "
+"in either, both, or neither of these two senses. A RAW image as developed by "
+"Libraw is linear in both senses. The same image as developed by Canon's RAW "
+"processing software won't be linear in either sense."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:65
+msgid ""
+"**HDR** and **LDR** do not refer to the bit-depth of the image. **High "
+"dynamic range** and **low dynamic range** refer to the total dynamic range "
+"encompassed by an image. A regular low dynamic range image, say encompassing "
+"a mere 5 *stops* (the average digital camera these days can easily "
+"accommodate 8 or 9 stops), can be saved as an 8-, 16-, 32-, or even 64-bit "
+"image, depending on your software, but the dynamic range of the image isn't "
+"thereby increased. Only the number of discrete steps from the brightest to "
+"the darkest tone in the image has changed. Conversely, a 22-stop scene (way "
+"beyond the capacity of a consumer-oriented digital camera without using "
+"multiple exposures) can be saved as an 8- or 16-bit image, but the resulting "
+"image will exhibit extreme banding (that is, it will display extreme banding "
+"in any given tonal range that can actually be displayed on a typical monitor "
+"at one time) because of the relatively few available discrete tonal steps "
+"from the lightest to the darkest tone in the image."
+msgstr ""
+"**HDR i LDR** no es refereixen a la profunditat de bits de la imatge. "
+"**Marge dinàmic elevat** i **marge dinàmic baix** es refereixen a la gamma "
+"dinàmica total abastada per una imatge. Una imatge de marge dinàmic baix "
+"normal, diu que abasta unes 5 *parades* (la càmera digital mitjana en "
+"aquests dies pot acomodar fàcilment 8 o 9 parades), es poden desar com una "
+"imatge de 8, 16, 32, o fins i tot de 64 bits, depenent del vostre "
+"programari, però el marge dinàmic de la imatge no es veurà alterat per "
+"aquest fet. Només canviaran el nombre de passos discrets des dels tons més "
+"brillants fins els tons més foscos de la imatge. Per contra, una escena de "
+"22 parades (molt més enllà de la capacitat d'una càmera digital orientada al "
+"consumidor, sense utilitzar múltiples exposicions) es pot desar com una "
+"imatge de 8 o de 16 bits, però la imatge resultant exhibirà un efecte de "
+"cartell extrem (és a dir, mostrarà un efecte de cartell en qualsevol abast "
+"tonal donat, ja que en realitat es pot mostrar en un monitor típic alhora), "
+"a causa dels relativament pocs passos tonals discrets disponibles des del to "
+"més brillant fins al més fosc de la imatge."
+
+#: ../../color_management/basis_knowledge.rst:67
+msgid ""
+"In-camera produced Jpegs don't need a camera profile. All Jpegs (or TIFFs) "
+"coming straight out of a camera (even if produced by point-and-shoots "
+"cameras that don't allow you to save a RAW file) start life inside the "
+"camera as a RAW file produced by the camera's Analog to Digital converter. "
+"If you save your images as Jpegs, then the processor inside the camera "
+"interpolates the RAW file, assigns a camera profile, translates the "
+"resulting RGB numbers to a working space (usually **sRGB** but sometimes you "
+"can choose **AdobeRGB**, depending on the camera), does the Jpeg "
+"compression, and stores the Jpeg file on your camera card. So Jpegs (or "
+"TIFFs) from your camera don't need to be assigned a camera profile which is "
+"then translated to a working space. Jpegs from a camera are already in a "
+"working space."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:69
+msgid ""
+"Useful mathematical information if you are dealing with Libraw's linear "
+"gamma output: Mathematically speaking, when doing a gamma transform you "
+"normalize (that is, divide by 256 if you are working with 8-bit values) the "
+"RGB numbers and raise the resulting numbers to an appropriate power "
+"depending on the respective gammas of the starting and ending color space, "
+"then renormalize the results to a new set of RGB numbers. It's not hard, and "
+"very instructive, to do this with a calculator for a few sets of RGB numbers "
+"spaced from (0,0,0) to (255,255,255) to see how RGB numbers change from one "
+"gamma encoding to another. Lcms does this for you when you ask Lcms to "
+"convert from one color space to another."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:71
+msgid ""
+"**Copyrighted and copyleft working spaces**: I will take it as given that "
+"all the ordinarily encountered working spaces, such as:"
+msgstr ""
+"**Drets d'autor i espais de treball lliures de còpia**: donaré per fet que "
+"tots els espais de treball que es troben normalment, com ara:"
+
+#: ../../color_management/basis_knowledge.rst:73
+msgid ""
+"The several variants of **sRGB**. See :ref:`the chapter <monitor_profiles>` "
+"dedicated to this color space."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:75
+msgid "BruceRGB or BestRGB."
+msgstr "BruceRGB o BestRGB."
+
+#: ../../color_management/basis_knowledge.rst:77
+msgid "The various ECI (European color initiative) working space profiles."
+msgstr ""
+"Els diversos perfils de l'espai de treball ECI (iniciativa europea del "
+"color)."
+
+#: ../../color_management/basis_knowledge.rst:79
+msgid ""
+"**AdobeRGB**, Adobe **WideGamutRGB**, and Kodak/Adobe **ProPhotoRGB** (Kodak "
+"and Adobe ProPhoto are the same, just branded differently) and their non-"
+"branded, non-copyrighted counterparts."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:85
+msgid ""
+"digiKam Image Editor Color Space Converter Allows to Switch to Another Color "
+"Profile"
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:87
+msgid ""
+"And quite a few other working spaces that could be added to this list, are "
+"all more or less suitable as working spaces. Which working space you should "
+"use depends only and solely on you, on your requirements on the Image Editor "
+"with your eventual output intentions (web, fine art print, etc.). However, "
+"as a critical aside, if you are using Adobe or other copyrighted working "
+"space profiles, these profiles contain copyright information that shows up "
+"in your image Exif information."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:90
+msgid "The Color Space Connections"
+msgstr "Les connexions de l'espai de color"
+
+#: ../../color_management/basis_knowledge.rst:92
+msgid ""
+"The question for each RGB trio of values in the (let us assume) 16-bit TIFF "
+"produced by Libraw becomes, what does a particular trio of RGB values for "
+"the pixels making up images produced by this particular (make and model) "
+"camera really mean in terms of some absolute standard referencing some ideal "
+"observer."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:94
+msgid ""
+"This absolute standard referencing an ideal observer is more commonly called "
+"a Profile Connection Space. A camera profile is needed to accurately "
+"characterize or describe the response of a given camera's pixels to light "
+"entering that camera, so that the RGB values in the output file produced by "
+"the RAW converter can be translated first into an absolute **Profile "
+"Connection Space** (PCS) and then from the PCS to your chosen working space."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:96
+msgid ""
+"As a very important aside, in digiKam the software used to translate from "
+"the camera profile to the PCS and from the PCS to your chosen working space "
+"and eventually to your chosen output space (for printing or perhaps monitor "
+"display) is based on `Lcms <https://www.littlecms.com/>`_ (the **Little "
+"Color Management** engine). For what it's worth, Lcms does more accurate "
+"conversions than Adobe's proprietary color conversion engine. Further, the "
+"RAW conversion in digiKam is based on decoding of the proprietary RAW file "
+"done by **Libraw**. This library, is the hero of RAW conversion as without "
+"it we'd all be stuck using the usually Windows or Mac only proprietary "
+"softwares that comes with our digital cameras. The Libraw's interpolation "
+"algorithms (not to be confused with the aforementioned decoding of the "
+"proprietary RAW file), which are part of digiKam if properly used, produce "
+"results equal or superior to commercial, closed source software. We in the "
+"world of Linux® and open source software are not second-class citizens when "
+"it comes to digital imaging."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:98
+msgid ""
+"There are two commonly used Profile Connection Spaces - **CIELAB** and "
+"**CIEXYZ** (see this `wikipedia Color management section <https://en."
+"wikipedia.org/wiki/Color_management#Color_transformation>`_ for details). "
+"Lcms uses the camera profile to translate the RGB values from the "
+"interpolated RAW file, into the appropriate Profile Connection Space "
+"(usually CIEXYZ). A profile connection space is not itself a working space. "
+"Rather a PCS is an absolute reference space used only for translating from "
+"one color space to another - think of a PCS as a **Universal Translator** "
+"for all the color profiles that an image might encounter in the course of "
+"its journey from camera RAW file to final output:"
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:100
+msgid ""
+"Lcms uses the camera profile, also called an **Input profile**, to translate "
+"the interpolated Libraw-produced RGB numbers, which only have meaning "
+"relative to your (make and model of) camera, to a second set of RGB numbers "
+"that only have meaning in the **Profile Connection Space**."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:102
+msgid ""
+"Lcms translates the **Profile Connection Space** RGB numbers to the "
+"corresponding numbers in your chosen **Working space** so you can edit your "
+"image. And again, these working space numbers only have meaning relative to "
+"a given working space. The same red, visually speaking, is represented by "
+"different trios of RGB numbers in different working spaces; and if you "
+"assign the wrong profile the image will look wrong, slightly wrong or very "
+"wrong depending on the differences between the two profiles."
+msgstr ""
+"«Lcms» tradueix els números RGB de l'**espai de connexió del perfil** als "
+"números corresponents en el vostre **espai de treball**, triat de manera que "
+"pugueu editar la imatge. I una vegada més, aquests números d'espai de "
+"treball només tenen sentit en relació amb un espai de treball determinat. El "
+"mateix vermell, parlant a un nivell visual, és representat per trios "
+"diferents de números RGB en espais de treball diferents; i si assigneu el "
+"perfil equivocat, la imatge es veurà malament, una mica malament o molt "
+"malament en funció de les diferències entre els dos perfils."
+
+#: ../../color_management/basis_knowledge.rst:104
+msgid ""
+"While you are editing your image in your chosen **Working space**, then Lcms "
+"should translate all the working space RGB numbers back to the PCS, and then "
+"over to the correct RGB numbers that enable your monitor (your display "
+"device) to give you the most accurate possible display representation of "
+"your image as it is being edited. This translation for display is done on "
+"the fly and you should never even notice it happening, unless it doesn't "
+"happen correctly - then the displayed image will look wrong."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:106
+msgid ""
+"When you are satisfied that your edited image is ready to share with the "
+"world, Lcms translates the **Working space** RGB numbers back into the PCS "
+"space and out again to a **Printer color space** using a **Printer profile** "
+"characterizing your printer/paper combination (if you plan on printing the "
+"image) or to sRGB (if you plan on displaying the image on the web or "
+"emailing it to friends or perhaps creating a slide-show to play on monitors "
+"other than your own)."
+msgstr ""
+"Quan estigueu satisfet amb la vostra imatge editada estareu a punt per a "
+"compartir-la amb el món, «lcms» tradueix els números RGB de l'**espai de "
+"treball** cap a l'espai del PCS i de nou a un **espai de color de la "
+"impressora** utilitzant un **perfil d'impressora** que caracteritzi la "
+"vostra combinació d'impressora/paper (si penseu en imprimir la imatge) o "
+"sRGB (si penseu en mostrar la imatge al web o enviar-la per correu "
+"electrònic a amics o potser crear un passi de diapositives per a reproduir-"
+"la en altres monitors)."
+
+#: ../../color_management/basis_knowledge.rst:108
+msgid ""
+"To back up a little bit and look at the first color profile an image "
+"encounters, that is, the camera profile (see (1) immediately above) - Libraw "
+"can in fact apply your camera profile for you (Libraw uses Lcms internally). "
+"But (i)the generating of the TIFF composed of the interpolated RGB values "
+"derived from the camera RAW file, and (ii)the application of the camera "
+"profile to the interpolated file, are two very distinct and totally "
+"separable (separable in theory and practice for Libraw; in theory only for "
+"most RAW converters) steps. ."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:111
+msgid "Camera Profiles"
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:113
+msgid ""
+"This manual section has a bit of information on where to find ready-made "
+"camera profiles. It's an unfortunate fact of digital imaging that the camera "
+"profiles supplied by Canon, Nikon, and the like don't work as well with RAW "
+"converters other than each camera manufacturer's own proprietary RAW "
+"converter. They have to make their own profiles for all the cameras that "
+"they support - keep this proprietary propensity of your camera manufacturer "
+"in mind next time you buy a digital camera."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:115
+msgid ""
+"To finding a camera profile for your camera is to make your own camera "
+"profile or have one made for you. There are quite a few commercial services "
+"who provide profiling services (for a fee, of course). Or you can use LPRof "
+"or Argyll to profile your camera yourself. We cannot speak about how easy or "
+"difficult the process of profiling a camera might be. But we would imagine, "
+"knowing how very meticulous the people behind Argyll, LPRof, and Lcms are "
+"about color management, that making your own camera profile is very do-able "
+"and very likely the results will be better than any proprietary profile. "
+"After all, Canon didn't profile your camera, they just profiled a camera "
+"like your."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:118
+msgid "Working Spaces"
+msgstr "Espais de treball:"
+
+#: ../../color_management/basis_knowledge.rst:120
+msgid ""
+"So now your RAW file has been interpolated by Libraw and you've obtained a "
+"camera profile and used Lcms to apply your camera profile. What does all "
+"this mean? The real answer involves a lot of math and color science that "
+"goes way over my head and likely yours. The short, practical answer is that "
+"neither the camera profile space nor the Profile Connection Space is an "
+"appropriate space for image editing."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:122
+msgid ""
+"Your next step is to choose a working space for image editing. Lcms, the "
+"color management engine that digiKam uses, perform a double translation. "
+"First Lcms uses the camera profile to translate the RGB values of each pixel "
+"in the Libraw-output-image-without-camera-profile-applied into the "
+"aforementioned Profile Connection Space. Then it translates the RGB values "
+"of each pixel from the PCS to your chosen working space."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:128
+msgid ""
+"digiKam Knows Where to Find the Color Profiles Installed on Your System and "
+"list Files in Setup Dialog For Selection"
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:131
+msgid "Soft Proofing"
+msgstr "Provatura suau"
+
+#: ../../color_management/basis_knowledge.rst:133
+msgid ""
+"**Soft Proofing** is a way of previewing on the screen the result to be "
+"expected from an output on another device, typically a printer. Soft "
+"proofing will show you the difference to be expected before you actually do "
+"it (and waste your costly ink). So you can improve your settings without "
+"wasting time and money."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:136
+msgid "Rendering Intention"
+msgstr "Propòsit de la representació"
+
+#: ../../color_management/basis_knowledge.rst:138
+msgid ""
+"**Rendering intent** refers to the way gamuts are handled when the intended "
+"target color space cannot handle the full gamut."
+msgstr ""
+"El propòsit de la representació es refereix a la manera com són gestionades "
+"les gammes quan l'espai de color de destinació no pot gestionar tota la "
+"gamma."
+
+#: ../../color_management/basis_knowledge.rst:140
+msgid ""
+"**Perceptual**, also called Image or Maintain Full Gamut. This is generally "
+"recommended for photographic images. The color gamut is expanded or "
+"compressed when moving between color spaces to maintain consistent overall "
+"appearance. Low saturation colors are changed very little. More saturated "
+"colors within the gamuts of both spaces may be altered to differentiate them "
+"from saturated colors outside the smaller gamut space. Perceptual rendering "
+"applies the same gamut compression to all images, even when the image "
+"contains no significant out-of-gamut colors."
+msgstr ""
+"**Perceptiva**, també anomenada «imatge» o «mantén la gamma completa». En "
+"general, això es recomana per a imatges fotogràfiques. La gamma de colors "
+"s'expandeix o comprimeix quan es mou entre els espais de color per a "
+"mantenir una aparença general compatible. Els colors de baixa saturació es "
+"canvien molt poc. Els colors més saturats dins de les gammes dels dos espais "
+"es poden alterar per a diferenciar-los dels colors saturats fora de l'espai "
+"de gamma més petit. La representació perceptiva aplica la mateixa gamma de "
+"compressió a totes les imatges, fins i tot quan la imatge no conté colors "
+"significatius fora de la gamma."
+
+#: ../../color_management/basis_knowledge.rst:142
+msgid ""
+"**Relative Colorimetric**, also called Proof or Preserve Identical Color and "
+"White Point. Reproduces in-gamut colors exactly and clips out-of-gamut "
+"colors to the nearest reproducible hue."
+msgstr ""
+"**Colorimetria relativa**, també anomenada «provatura» o «conserva el color "
+"idèntic» i «punt blanc». Reprodueix els colors en la gamma amb exactitud i "
+"canvia els colors fora de la gamma per la tonalitat reproduïble més propera."
+
+#: ../../color_management/basis_knowledge.rst:144
+msgid ""
+"**Absolute Colorimetric**, also called Match or Preserve Identical Colors. "
+"Reproduces in-gamut colors exactly and clips out-of-gamut colors to the "
+"nearest reproducible hue, sacrificing saturation and possibly lightness. On "
+"tinted papers, whites may be darkened to keep the hue identical to the "
+"original. For example, cyan may be added to the white of a cream-colored "
+"paper, effectively darkening the image. Rarely of interest to photographers."
+msgstr ""
+"**Colorimetria absoluta**, també anomenada «coincident» o «conserva el color "
+"idèntic». Reprodueix els colors en la gamma amb exactitud i canvia els "
+"colors fora de la gamma per la tonalitat reproduïble més propera, "
+"sacrificant la saturació i possiblement la lluminositat. En els papers "
+"tintats, els blancs es poden enfosquir per a mantenir el to idèntic a "
+"l'original. Per exemple, es pot afegir cian al blanc d'un paper de color "
+"crema, enfosquint la imatge. Rares vegades és d'interès per als fotògrafs."
+
+#: ../../color_management/basis_knowledge.rst:146
+msgid ""
+"**Saturation**, also called Graphic or Preserve Saturation. Maps the "
+"saturated primary colors in the source to saturated primary colors in the "
+"destination, neglecting differences in hue, saturation, or lightness. For "
+"block graphics; rarely of interest to photographers."
+msgstr ""
+"**Saturació**, també anomenada «gràfic» o «conserva la saturació». Mapes "
+"dels colors primaris saturats en la font cap als colors primaris saturats en "
+"la destinació, descuidant les diferències de to, saturació i lluminositat. "
+"Per a gràfics de bloc, poques vegades d'interès per als fotògrafs."
