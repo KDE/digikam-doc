@@ -420,7 +420,7 @@ Corresponding languages must be enabled in the documentation web-site following 
 
 #### How to Compile a Supported Langauge
 
-By defaualt the make command generate the English version. If you want to test an internationalized version using transaltions hosted from **locale** disrectory,
+By default the make command generate the English version. If you want to test an internationalized version using transaltions hosted from **locale** disrectory,
 use the syntax below:
 
 `make -e SPHINXOPTS="-D language='fr'" html`
