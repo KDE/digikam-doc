@@ -109,9 +109,9 @@ People View          Shift+Ctrl+F9
 
 - General Shortcuts:
 
-===========================       ==============
+================================= ==============
 Action                            Shortcut
-===========================       ==============
+================================= ==============
 Close                             Alt+F4
 Quit                              Ctrl+Q
 Delete items permanently          Shift+Del
