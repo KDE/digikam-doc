@@ -80,12 +80,40 @@ Fit to window       Ctrl+Alt+E
 Fit to selection    Ctrl+Alt+S
 =================== ==========
 
-General Shortcuts:
+- Slide-Show:
 
-=========================== ==============
-Action                      Shortcut
-=========================== ==============
-Close                       Alt+F4
-Quit                        Ctrl+Q
-Delete items permanently    Shift+Del
-=========================== ==============
+==================== ===========
+Action               Shortcut
+==================== ===========
+Play All             F9
+Play Selection       Alt+F9
+Play with Sub-Albums Shift+F9
+Presentation         Shif+Alt+F9
+==================== ===========
+
+- Main Window:
+
+==================== =============
+Action               Shortcut
+==================== =============
+Albums View          Shift+Ctrl+F1
+Tags View            Shift+Ctrl+F2
+Labels View          Shift+Ctrl+F3
+Dates view           Shift+Ctrl+F4
+Timeline View        Shift+Ctrl+F5
+Search View          Shift+Ctrl+F6
+Similarity View      Shift+Ctrl+F7
+Map View             Shift+Ctrl+F8
+People View          Shift+Ctrl+F9
+==================== =============
+
+- General Shortcuts:
+
+===========================       ==============
+Action                            Shortcut
+===========================       ==============
+Close                             Alt+F4
+Quit                              Ctrl+Q
+Delete items permanently          Shift+Del
+Turn On/Off Color Management View F12
+================================= ==============
