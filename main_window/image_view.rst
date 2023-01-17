@@ -115,7 +115,13 @@ You can change the filename for a photograph by clicking with the right mouse bu
 
 The renaming pattern can be customize with the **Options** collection on the botton which contains original file name, file extension, owner and group, directory, a dialog for defining a sequence number and a dialog for adding date and time information, either fixed or based on the time information written by the camera into the image file. Each option appended to the renaming pattern can be customized with the **Modifier** button on the right side of pattern editor.
 
-In the sequence number dialog you will find two options: **Extension aware numbering** and **Folder aware numbering**. If they are checked digiKam will start a new sequence for every file extension and / or folder.
+.. figure:: images/mainwindow_advanced_rename_number.webp
+    :alt:
+    :align: center
+
+    The Avanced Rename Sequence Number Dialog to Setup Modifiers
+
+In the sequence **Number** dialog you will find two options: **Extension aware numbering** and **Folder aware numbering**. If they are checked digiKam will start a new sequence for every file extension and / or folder.
 
 The Date and Time selection dialog looks like this:
 
@@ -123,7 +129,7 @@ The Date and Time selection dialog looks like this:
     :alt:
     :align: center
 
-    The Avanced Rename Date Selector to Setup Modifier
+    The Avanced Rename Date Selector to Setup Modifiers
 
 The calendar is active only if **Fixed Date** is selected from the **Source** drop down field. This way you can add the same date and time information to the filenames of all imported images or videos. If **Image** is selected instead digiKam will use the time information from the metadata of the image files. With the **Format** drop down field you can choose from several standard date/time formats and a custom format. For the latter choose **Custom** in **Format** drop-down list and fill in.
 
