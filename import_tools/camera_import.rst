@@ -55,6 +55,8 @@ The **Geolocation** tab will open a map that allows you to see and edit the GPS 
 
     The Item Geolocation Sidebar Tab from Import Tool
 
+.. _camera_download:
+
 Downloading Photographs To Your Computer
 ----------------------------------------
 
@@ -79,6 +81,8 @@ Another option is **Download New**. New images are marked with a **star** in the
 
 While downloading items on your computer, on the status bar you will seen the operations in progress.
 
+.. _camera_upload:
+
 Uploading Photographs To Your Camera
 ------------------------------------
 
@@ -95,6 +99,8 @@ When images selection is done, digiKam will ask you to where you want to upload 
 .. note::
 
     Uploading feature is not supported by all camera drivers.
+
+.. _camera_delete:
 
 Deleting Photographs From The Camera
 ------------------------------------

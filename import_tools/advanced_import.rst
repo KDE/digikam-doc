@@ -15,7 +15,7 @@ Advanced Import Settings
 
 .. contents::
 
-The Settings tab of the Right Sidebar in the Import Interface opens five sections with advanced options for the import processing. 
+The Settings tab of the Right Sidebar in the Import Interface opens five sections with advanced options for the import processing.
 
 File Renaming Options
 ---------------------
@@ -38,6 +38,8 @@ The new filename that digiKam will use for the photographs when they are downloa
 
     At the moment digiKam cannot read metadata of RAW files during the import. You might want to import the files while preserving camera filenames first and then rename them after the import using the rename function (F2).
 
+.. _camera_autoalbums:
+
 Auto-Creation of Albums
 -----------------------
 
@@ -57,6 +59,8 @@ If your camera provides information about the date of the photograph's taking or
 
     The Import Tool Albums Auto-Creation Helper Dialog
 
+.. _camera_onthefly:
+
 On the Fly Operations
 ---------------------
 
@@ -74,6 +78,8 @@ If you check the next box digiKam will perform the auto-rotate/flip action descr
 
 Convert to lossless file format allows you to convert the images to PNG, TIFF, PGF or JPEG2000 during import.
 
+.. _camera_dngconvert:
+
 DNG Convert Options
 -------------------
 
@@ -90,6 +96,8 @@ This section allows to enable the DNG conversion of RAW images by checking Conve
 - Lossless Compression: Enables lossless compression. The difference between lossy and lossless compression is said to be practically indistinguishable with DNG.
 
 - JPEG preview: Choose whether you want a medium or full size JPEG preview to be embedded into the DNG container or none at all. 
+
+.. _camera_scripting:
 
 Scripting
 ---------
