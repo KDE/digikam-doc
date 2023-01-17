@@ -377,7 +377,13 @@ IPTC Goes XMP
 
 That's probably one of the reasons why, around 2001, that Adobe introduced its XML based XMP technology to replace the "Image resource block" technology of the nineties. XMP stands for "Extensible Metadata Platform", a mixture of XML and RDF. It is a labeling technology that lets users embed data about a file in the file itself, the file info is saved using the extension".xmp" (signifying the use of XML/RDF).
 
-**XMP**. As much as ODF will be readable forever (since its containing text is written in clear text), XMP will preserve your metadata in a clearly understandable format XML. No danger here of not being able to read it later. It can be embedded into the image files or as a separate accompanying file (sidecar concept). XMP can be used in PDF, JPEG, JPEG2000, GIF, PNG, HTML, TIFF, Adobe Illustrator, PSD, PostScript, and Encapsulated PostScript. In a typical edited JPEG file, XMP information is typically included alongside Exif and IPTC data.
+**XMP**. As much as ODF will be readable forever (since its containing text is written in clear text), XMP will preserve your metadata in a clearly understandable format XML. No danger here of not being able to read it later. It can be embedded into the image files or as a separate accompanying file (sidecar concept). XMP can be used in PDF, JPEG, JPEG2000, GIF, PNG, HTML, TIFF, Adobe Illustrator, PSD, PostScript, Encapsulated PostScript, and video files. In a typical edited JPEG file, XMP information is typically included alongside Exif and IPTC data.
+
+.. figure:: images/dam_xmp_viewer.webp
+    :alt:
+    :align: center
+
+    digiKam can display XMP Contents from Image and Video
 
 Embedding metadata in files allows easy sharing and transfer of files across products, vendors, platforms, customers, without metadata getting lost. The most common metadata tags recorded in XMP data are those from the Dublin Core Metadata Initiative, which include things like title, description, creator, and so on. The standard is designed to be extensible, allowing users to add their own custom types of metadata into the XMP data. XMP generally does not allow binary data types to be embedded. This means that any binary data one wants to carry in XMP, such as thumbnail images, must be encoded in some XML-friendly format, such as Base64.
 
@@ -390,7 +396,6 @@ The `Dublin Core Metadata Initiative <https://www.dublincore.org/>`_ is an open 
     :align: center
 
     digiKam Support Sidecar Files With many Options From Settings Panel
-
 
 Protect Your Data
 -----------------
