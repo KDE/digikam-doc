@@ -133,23 +133,7 @@ The **Date and Time** selection dialog looks like this:
 
 The calendar is active only if **Fixed Date** is selected from the **Source** drop down field. This way you can add the same date and time information to the filenames of all imported images or videos. If **Image** is selected instead digiKam will use the time information from the metadata of the image files. With the **Format** drop down field you can choose from several standard date/time formats and a custom format. For the latter choose **Custom** in **Format** drop-down list and fill in.
 
-The **Database** dialog allows to select items information registered in database.
-
-.. figure:: images/mainwindow_advanced_rename_database.webp
-    :alt:
-    :align: center
-
-    The Avanced Rename Date Selector to Setup Modifiers
-
-The **Metadata** dialog allows to select files metadata information taken from **Exif**, *IPTC**, **XMP**, etc.
-
-.. figure:: images/mainwindow_advanced_rename_metadata.webp
-    :alt:
-    :align: center
-
-    The Avanced Rename Date Selector to Setup Modifiers
-
-The **Format** string determines the content of the date generated during download. Any sequence of characters enclosed in single quotes will be included verbatim in the output string, even if it contains formatting characters. Two consecutive single quotes ("''") are replaced by a single quote in the output. All other characters in the format string are included verbatim in the output string.
+The **Format** string from **Date and Time** dialog determines the content of the date generated during download. Any sequence of characters enclosed in single quotes will be included verbatim in the output string, even if it contains formatting characters. Two consecutive single quotes ("''") are replaced by a single quote in the output. All other characters in the format string are included verbatim in the output string.
 
 Formats without separators (e.g. *ddMM*) are supported but must be used with care, as the resulting strings aren't always reliably readable (e.g. if *dM* produces *212* it could mean either the 2nd of December or the 21st of February). Example format strings, assumed that the date is *21 May 2001 14:13:09.120*:
 
@@ -162,6 +146,22 @@ hh:mm:ss.zzz   14:13:09.120
 hh:mm:ss.z     14:13:09.12
 h:m:s ap       2:13:9 pm
 ============== =============
+
+The **Database** dialog allows to select items information registered in database as **Modifiers**.
+
+.. figure:: images/mainwindow_advanced_rename_database.webp
+    :alt:
+    :align: center
+
+    The Avanced Rename Date Selector to Setup Modifiers
+
+The **Metadata** dialog allows to select files metadata information taken from **Exif**, **IPTC**, **XMP**, etc, as **Modifiers**.
+
+.. figure:: images/mainwindow_advanced_rename_metadata.webp
+    :alt:
+    :align: center
+
+    The Avanced Rename Date Selector to Setup Modifiers
 
 In addition these options can be customized further with the help of a number of **Modifiers**. A list of all options and modifiers together with a short explanations will open when clicking the info button.
 
