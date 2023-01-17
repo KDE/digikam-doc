@@ -82,7 +82,11 @@ While downloading items on your computer, on the status bar you will seen the op
 
 .. tip::
 
-    To download quickly on from your camera, you can setup a common target album from your collection where all new files will be stored automatically. See :ref:`this section <camera_behavior>` from the manual for details.
+    To download quickly on from your camera, you can setup a common target album from your collection where all new files will be stored automatically.
+
+    If files to download already exists on your computer, Import Tool has few options available to operate autoamtically in these cases.
+
+    See :ref:`this section <camera_behavior>` from the manual for details.
 
 .. _camera_upload:
 
