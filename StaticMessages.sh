@@ -23,15 +23,21 @@ function export_pot_dir # First parameter will be the path of the directory wher
 
 function import_po_dirs # First parameter will be a path that will be a directory to the dirs for each lang and then all the .po files inside
 {
-    echo "Import PO dirs: $1"
+    # echo "Import PO dirs: $1"
     podir=$1
     mkdir -p locale
     # for some reason sphinx uses nb_NO instead of nb
-    mv $podir/nb $podir/nb_NO
+    if [ -d $podir/nb ]; then
+        mv $podir/nb $podir/nb_NO
+    fi
     # for some reason sphinx uses uk_UA instead of uk
-    mv $podir/uk $podir/uk_UA
+    if [ -d $podir/uk ]; then
+        mv $podir/uk $podir/uk_UA
+    fi
     # for some reason sphinx uses pt_PT instead of pt
-    mv $podir/pt $podir/pt_PT
+    if [ -d $podir/pt ]; then
+        mv $podir/pt $podir/pt_PT
+    fi
     # These are the language codes that sphinx supports.
     # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
     # -> Languages supported by sphinx, but not supported by KDEs l10n: cak – Kaqchikel, hi_IN – Hindi (India),
