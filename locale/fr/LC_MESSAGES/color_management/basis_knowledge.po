@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-15 00:49+0000\n"
+"POT-Creation-Date: 2023-01-16 00:49+0000\n"
 "PO-Revision-Date: 2023-01-14 18:31+0100\n"
 "Last-Translator: KDE Francophone <kde-francophone@kde.org>\n"
 "Language-Team: KDE Francophone <kde-francophone@kde.org>\n"
@@ -52,8 +52,8 @@ msgstr ""
 
 #: ../../color_management/basis_knowledge.rst:29
 msgid ""
-"When it comes to color management, everyone wants to know, *which buttons do "
-"I push to get the results I want*. Unfortunately, color management of "
+"When it comes to color management, everyone wants to know, *which buttons to "
+"push to get the wanted results*. Unfortunately, color management of "
 "necessity involves making informed choices at every step along the image-"
 "processing workflow. The purpose of this section is to provide sufficient "
 "background information on color management, along with links to more in-"
@@ -74,7 +74,7 @@ msgstr ""
 #: ../../color_management/basis_knowledge.rst:36
 msgid ""
 "You are working at a monitor properly calibrated to the sRGB color space "
-"(more about that below)."
+"(more about int :ref:`this section <monitor_profiles>` of this manual)."
 msgstr ""
 
 #: ../../color_management/basis_knowledge.rst:38
@@ -159,7 +159,7 @@ msgstr ""
 
 #: ../../color_management/basis_knowledge.rst:61
 msgid ""
-"An **interpolated** RAW file isn't a RAW file. For some reason this simple "
+"An **interpolated RAW file** isn't a RAW file. For some reason this simple "
 "point causes a lot of confusion. But after a RAW file has been interpolated "
 "by RAW processing software and then output as a TIFF or Jpeg, the original "
 "RAW file is still a RAW file, of course, but the interpolated file is just "
@@ -181,7 +181,7 @@ msgstr ""
 #: ../../color_management/basis_knowledge.rst:65
 msgid ""
 "**HDR** and **LDR** do not refer to the bit-depth of the image. **High "
-"dynamic range** and **low dynamic range** refer to the total dynamic range "
+"dynamic range** and **Low dynamic range** refer to the total dynamic range "
 "encompassed by an image. A regular low dynamic range image, say encompassing "
 "a mere 5 *stops* (the average digital camera these days can easily "
 "accommodate 8 or 9 stops), can be saved as an 8-, 16-, 32-, or even 64-bit "
@@ -198,8 +198,8 @@ msgstr ""
 
 #: ../../color_management/basis_knowledge.rst:67
 msgid ""
-"In-camera produced Jpegs don't need a camera profile. All Jpegs (or TIFFs) "
-"coming straight out of a camera (even if produced by point-and-shoots "
+"**In-camera produced Jpegs don't need a camera profile**: All Jpegs (or "
+"TIFFs) coming straight out of a camera (even if produced by point-and-shoots "
 "cameras that don't allow you to save a RAW file) start life inside the "
 "camera as a RAW file produced by the camera's Analog to Digital converter. "
 "If you save your images as Jpegs, then the processor inside the camera "
@@ -214,7 +214,7 @@ msgstr ""
 
 #: ../../color_management/basis_knowledge.rst:69
 msgid ""
-"Useful mathematical information if you are dealing with Libraw's linear "
+"**Useful mathematical information**: If you are dealing with Libraw's linear "
 "gamma output: Mathematically speaking, when doing a gamma transform you "
 "normalize (that is, divide by 256 if you are working with 8-bit values) the "
 "RGB numbers and raise the resulting numbers to an appropriate power "
@@ -227,9 +227,7 @@ msgid ""
 msgstr ""
 
 #: ../../color_management/basis_knowledge.rst:71
-msgid ""
-"**Copyrighted and copyleft working spaces**: I will take it as given that "
-"all the ordinarily encountered working spaces, such as:"
+msgid "**Copyrighted and copyleft working spaces**:"
 msgstr ""
 
 #: ../../color_management/basis_knowledge.rst:73
@@ -243,7 +241,9 @@ msgid "BruceRGB or BestRGB."
 msgstr ""
 
 #: ../../color_management/basis_knowledge.rst:77
-msgid "The various ECI (European color initiative) working space profiles."
+msgid ""
+"The various ECI (`European color initiative <https://en.wikipedia.org/wiki/"
+"European_Color_Initiative>`_) working space profiles."
 msgstr ""
 
 #: ../../color_management/basis_knowledge.rst:79
@@ -270,11 +270,28 @@ msgid ""
 "in your image Exif information."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:90
+#: ../../color_management/basis_knowledge.rst:89
+msgid ""
+"**Soft Proofing** is a way of previewing on the screen the result to be "
+"expected from an output on another device, typically a printer. Soft "
+"proofing will show you the difference to be expected before you actually do "
+"it (and waste your costly ink). So you can improve your settings without "
+"wasting time and money. For more information take a look to the dedicated :"
+"ref:`section from this manual <soft_proof>`."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:91
+msgid ""
+"**Rendering intent** refers to the way gamuts are handled when the intended "
+"target color space cannot handle the full gamut. For more information take a "
+"look to the dedicated :ref:`section from this manual <working_space>`."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:94
 msgid "The Color Space Connections"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:92
+#: ../../color_management/basis_knowledge.rst:96
 msgid ""
 "The question for each RGB trio of values in the (let us assume) 16-bit TIFF "
 "produced by Libraw becomes, what does a particular trio of RGB values for "
@@ -283,7 +300,7 @@ msgid ""
 "observer."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:94
+#: ../../color_management/basis_knowledge.rst:98
 msgid ""
 "This absolute standard referencing an ideal observer is more commonly called "
 "a Profile Connection Space. A camera profile is needed to accurately "
@@ -293,7 +310,7 @@ msgid ""
 "Connection Space** (PCS) and then from the PCS to your chosen working space."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:96
+#: ../../color_management/basis_knowledge.rst:100
 msgid ""
 "As a very important aside, in digiKam the software used to translate from "
 "the camera profile to the PCS and from the PCS to your chosen working space "
@@ -302,17 +319,16 @@ msgid ""
 "Color Management** engine). For what it's worth, Lcms does more accurate "
 "conversions than Adobe's proprietary color conversion engine. Further, the "
 "RAW conversion in digiKam is based on decoding of the proprietary RAW file "
-"done by **Libraw**. This library, is the hero of RAW conversion as without "
-"it we'd all be stuck using the usually Windows or Mac only proprietary "
-"softwares that comes with our digital cameras. The Libraw's interpolation "
-"algorithms (not to be confused with the aforementioned decoding of the "
-"proprietary RAW file), which are part of digiKam if properly used, produce "
-"results equal or superior to commercial, closed source software. We in the "
-"world of Linux® and open source software are not second-class citizens when "
-"it comes to digital imaging."
+"done by **Libraw**. `This library <https://www.libraw.org/>`_, is a great "
+"open-source component as without it we'd all be stuck using the usually "
+"Windows or Mac only proprietary softwares that comes with our digital "
+"cameras. The Libraw's interpolation algorithms (not to be confused with the "
+"aforementioned decoding of the proprietary RAW file), which are part of "
+"digiKam if properly used, produce results equal or superior to commercial, "
+"closed source software."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:98
+#: ../../color_management/basis_knowledge.rst:102
 msgid ""
 "There are two commonly used Profile Connection Spaces - **CIELAB** and "
 "**CIEXYZ** (see this `wikipedia Color management section <https://en."
@@ -326,7 +342,7 @@ msgid ""
 "its journey from camera RAW file to final output:"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:100
+#: ../../color_management/basis_knowledge.rst:104
 msgid ""
 "Lcms uses the camera profile, also called an **Input profile**, to translate "
 "the interpolated Libraw-produced RGB numbers, which only have meaning "
@@ -334,7 +350,7 @@ msgid ""
 "that only have meaning in the **Profile Connection Space**."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:102
+#: ../../color_management/basis_knowledge.rst:106
 msgid ""
 "Lcms translates the **Profile Connection Space** RGB numbers to the "
 "corresponding numbers in your chosen **Working space** so you can edit your "
@@ -345,7 +361,7 @@ msgid ""
 "wrong depending on the differences between the two profiles."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:104
+#: ../../color_management/basis_knowledge.rst:108
 msgid ""
 "While you are editing your image in your chosen **Working space**, then Lcms "
 "should translate all the working space RGB numbers back to the PCS, and then "
@@ -356,7 +372,7 @@ msgid ""
 "happen correctly - then the displayed image will look wrong."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:106
+#: ../../color_management/basis_knowledge.rst:110
 msgid ""
 "When you are satisfied that your edited image is ready to share with the "
 "world, Lcms translates the **Working space** RGB numbers back into the PCS "
@@ -367,23 +383,23 @@ msgid ""
 "other than your own)."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:108
+#: ../../color_management/basis_knowledge.rst:112
 msgid ""
 "To back up a little bit and look at the first color profile an image "
-"encounters, that is, the camera profile (see (1) immediately above) - Libraw "
-"can in fact apply your camera profile for you (Libraw uses Lcms internally). "
-"But (i)the generating of the TIFF composed of the interpolated RGB values "
-"derived from the camera RAW file, and (ii)the application of the camera "
-"profile to the interpolated file, are two very distinct and totally "
-"separable (separable in theory and practice for Libraw; in theory only for "
-"most RAW converters) steps. ."
+"encounters, that is, the camera profile (see point 1. immediately above) - "
+"Libraw can in fact apply your camera profile for you (Libraw uses Lcms "
+"internally). But the generating data composed of the interpolated RGB values "
+"derived from the camera RAW file, and the application of the camera profile "
+"to the interpolated file, are two very distinct and totally separable "
+"(separable in theory and practice for Libraw; in theory only for most RAW "
+"converters) steps."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:111
+#: ../../color_management/basis_knowledge.rst:115
 msgid "Camera Profiles"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:113
+#: ../../color_management/basis_knowledge.rst:117
 msgid ""
 "This manual section has a bit of information on where to find ready-made "
 "camera profiles. It's an unfortunate fact of digital imaging that the camera "
@@ -394,25 +410,31 @@ msgid ""
 "in mind next time you buy a digital camera."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:115
+#: ../../color_management/basis_knowledge.rst:119
 msgid ""
 "To finding a camera profile for your camera is to make your own camera "
 "profile or have one made for you. There are quite a few commercial services "
-"who provide profiling services (for a fee, of course). Or you can use LPRof "
-"or Argyll to profile your camera yourself. We cannot speak about how easy or "
-"difficult the process of profiling a camera might be. But we would imagine, "
-"knowing how very meticulous the people behind Argyll, LPRof, and Lcms are "
-"about color management, that making your own camera profile is very do-able "
-"and very likely the results will be better than any proprietary profile. "
-"After all, Canon didn't profile your camera, they just profiled a camera "
-"like your."
+"who provide profiling services (for a fee, of course). Or you can use "
+"`Argyll <http://www.argyllcms.com/>`_ to profile your camera yourself. We "
+"cannot speak about how easy or difficult the process of profiling a camera "
+"might be. But we would imagine, knowing how very meticulous the people "
+"behind Argyll, and Lcms are about color management, that making your own "
+"camera profile is very do-able and very likely the results will be better "
+"than any proprietary profile. After all, Canon didn't profile your camera, "
+"they just profiled a camera like your."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:118
+#: ../../color_management/basis_knowledge.rst:121
+msgid ""
+"For more information take a look to the dedicated :ref:`section from this "
+"manual <camera_profiles>`."
+msgstr ""
+
+#: ../../color_management/basis_knowledge.rst:124
 msgid "Working Spaces"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:120
+#: ../../color_management/basis_knowledge.rst:126
 msgid ""
 "So now your RAW file has been interpolated by Libraw and you've obtained a "
 "camera profile and used Lcms to apply your camera profile. What does all "
@@ -422,78 +444,24 @@ msgid ""
 "appropriate space for image editing."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:122
+#: ../../color_management/basis_knowledge.rst:128
 msgid ""
 "Your next step is to choose a working space for image editing. Lcms, the "
 "color management engine that digiKam uses, perform a double translation. "
 "First Lcms uses the camera profile to translate the RGB values of each pixel "
-"in the Libraw-output-image-without-camera-profile-applied into the "
+"in the Libraw output image without camera-profile applied into the "
 "aforementioned Profile Connection Space. Then it translates the RGB values "
 "of each pixel from the PCS to your chosen working space."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:128
+#: ../../color_management/basis_knowledge.rst:134
 msgid ""
 "digiKam Knows Where to Find the Color Profiles Installed on Your System and "
 "list Files in Setup Dialog For Selection"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:131
-msgid "Soft Proofing"
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:133
-msgid ""
-"**Soft Proofing** is a way of previewing on the screen the result to be "
-"expected from an output on another device, typically a printer. Soft "
-"proofing will show you the difference to be expected before you actually do "
-"it (and waste your costly ink). So you can improve your settings without "
-"wasting time and money."
-msgstr ""
-
 #: ../../color_management/basis_knowledge.rst:136
-msgid "Rendering Intention"
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:138
 msgid ""
-"**Rendering intent** refers to the way gamuts are handled when the intended "
-"target color space cannot handle the full gamut."
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:140
-msgid ""
-"**Perceptual**, also called Image or Maintain Full Gamut. This is generally "
-"recommended for photographic images. The color gamut is expanded or "
-"compressed when moving between color spaces to maintain consistent overall "
-"appearance. Low saturation colors are changed very little. More saturated "
-"colors within the gamuts of both spaces may be altered to differentiate them "
-"from saturated colors outside the smaller gamut space. Perceptual rendering "
-"applies the same gamut compression to all images, even when the image "
-"contains no significant out-of-gamut colors."
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:142
-msgid ""
-"**Relative Colorimetric**, also called Proof or Preserve Identical Color and "
-"White Point. Reproduces in-gamut colors exactly and clips out-of-gamut "
-"colors to the nearest reproducible hue."
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:144
-msgid ""
-"**Absolute Colorimetric**, also called Match or Preserve Identical Colors. "
-"Reproduces in-gamut colors exactly and clips out-of-gamut colors to the "
-"nearest reproducible hue, sacrificing saturation and possibly lightness. On "
-"tinted papers, whites may be darkened to keep the hue identical to the "
-"original. For example, cyan may be added to the white of a cream-colored "
-"paper, effectively darkening the image. Rarely of interest to photographers."
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:146
-msgid ""
-"**Saturation**, also called Graphic or Preserve Saturation. Maps the "
-"saturated primary colors in the source to saturated primary colors in the "
-"destination, neglecting differences in hue, saturation, or lightness. For "
-"block graphics; rarely of interest to photographers."
+"For more information take a look to the dedicated :ref:`section from this "
+"manual <working_space>`."
 msgstr ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-15 00:49+0000\n"
+"POT-Creation-Date: 2023-01-16 00:49+0000\n"
 "PO-Revision-Date: 2023-01-14 13:37+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -44,7 +44,7 @@ msgstr ""
 #| "profile that I applied to the image file produced by my raw processing "
 #| "software. What's the next step in color management?"
 msgid ""
-"So we told digiKam where to find my monitor profile and I have a camera "
+"So we told digiKam where to find my monitor profile and we have a camera "
 "profile that we applied to the image file produced by my RAW processing "
 "software. What's the next step in color management?"
 msgstr ""
@@ -61,11 +61,11 @@ msgstr ""
 #| "cannot I just edit my images in the color space described by the camera "
 #| "profile?"
 msgid ""
-"You need to choose a working color space so you can edit your image. Lcms "
-"will transform your image from your camera color space to your chosen "
-"working space, via the PCS specified by your camera color profile. Why "
-"cannot I just edit my images in the color space described by the camera "
-"profile?"
+"You need to choose a working color space so you can edit your image. `Lcms "
+"<https://www.littlecms.com/>`_ will transform your image from your camera "
+"color space to your chosen working space, via the PCS specified by your "
+"camera color profile. Why cannot to just edit images in the color space "
+"described by the camera profile?"
 msgstr ""
 "U moet een kleurruimte kiezen zodat u uw beeld kunt bewerken LCMS zal uw "
 "beeld transformeren van de camerakleurruimte naar de door u gekozen "
@@ -74,6 +74,24 @@ msgstr ""
 "bewerken zoals beschreven door het profiel van de camera?"
 
 #: ../../color_management/working_space.rst:23
+msgid ""
+"After all, the camera profile should provide the best *fit* to the colors "
+"recorded by my camera, as processed by my RAW processing procedure, right? "
+"Working spaces, such as sRGB or Adobe RGB, are color spaces that facilitate "
+"good results while editing. For instance, pixels with equal values of RGB "
+"should appear neutral. This just want means that for any given pixel in an "
+"image that has been converted to a suitable working space, if R=G=B you "
+"should see grey or black or white on your screen. Many camera profiles "
+"violate this *neutral* condition."
+msgstr ""
+
+#: ../../color_management/working_space.rst:29
+msgid ""
+"digiKam Image Editor has a Menu to Switch Quickly an Image from a Color "
+"Space to Another one"
+msgstr ""
+
+#: ../../color_management/working_space.rst:31
 #, fuzzy
 #| msgid ""
 #| "After all, the camera profile should provide the best \"fit\" to the "
@@ -103,30 +121,21 @@ msgstr ""
 #| "more smoothly and accurately than if you try to edit your image while it "
 #| "is still in the camera color space."
 msgid ""
-"After all, the camera profile should provide the best *fit* to the colors "
-"recorded by my camera, as processed by my RAW processing procedure, right? "
-"Working spaces, such as sRGB or Adobe RGB, are color spaces that facilitate "
-"good results while editing. For instance, pixels with equal values of RGB "
-"should appear neutral. This just want means that for any given pixel in an "
-"image that has been converted to a suitable working space, if R=G=B you "
-"should see grey or black or white on your screen. Many camera profiles "
-"violate this \"neutral\" condition. I am not aware of a list of other "
-"technical requirements for a suitable working space. However, I can think of "
-"another good reason why you wouldn't want to edit your image in your camera "
-"profile color space. If you look at the size of a typical camera profile, it "
-"is on the order of a quarter to a half a megabyte or more. It's got a lot of "
-"information about all the changes that need to be made at different regions "
-"of color and tonality in the original scene, to get accurate color rendition "
-"from the RGB values that come out of the RAW processor. The camera profile "
-"is accurate (at least for colors in the original target) but not "
-"particularly mathematically smooth. Working space color profiles, on the "
-"other hand, are very small in size (half a kilobyte instead of half a "
-"megabyte) because they describe a color gamut in terms of smooth, continuous "
-"mathematical functions. Working space profiles don't need to make allowances "
-"for the \"messiness\" of real world sensors, so the mathematical "
-"manipulations performed during image editing will go much more smoothly and "
-"accurately than if you try to edit your image while it is still in the "
-"camera color space."
+"However, there is one other good reason to not want to edit your image in "
+"your camera profile color space. If you look at the size of a typical camera "
+"profile, it is on the order of a quarter to a half a megabyte or more. It's "
+"got a lot of information about all the changes that need to be made at "
+"different regions of color and tonality in the original scene, to get "
+"accurate color rendition from the RGB values that come out of the RAW "
+"processor. The camera profile is accurate (at least for colors in the "
+"original target) but not particularly mathematically smooth. Working space "
+"color profiles, on the other hand, are very small in size (half a kilobyte "
+"instead of half a megabyte) because they describe a color gamut in terms of "
+"smooth, continuous mathematical functions. Working space profiles don't need "
+"to make allowances for the *messiness* of real world sensors, so the "
+"mathematical manipulations performed during image editing will go much more "
+"smoothly and accurately than if you try to edit your image while it is still "
+"in the camera color space."
 msgstr ""
 "Uiteindelijk zal het cameraprofiel toch wel het beste passen bij de kleuren "
 "die door mijn camera werden geregistreerd en door mijn raw-verwerkende-"
@@ -155,11 +164,11 @@ msgstr ""
 "en nauwkeuriger zullen verlopen dan wanneer u probeert om uw afbeelding te "
 "bewerken terwijl die zich nog in de camerakleurruimte bevindt."
 
-#: ../../color_management/working_space.rst:25
+#: ../../color_management/working_space.rst:33
 msgid "Working space profiles are characterized by:"
 msgstr ""
 
-#: ../../color_management/working_space.rst:27
+#: ../../color_management/working_space.rst:35
 #, fuzzy
 #| msgid ""
 #| "Gamma (or other transfer function), which dictates how much the original "
@@ -181,7 +190,7 @@ msgstr ""
 "verwerkingsprogramma) moet worden gewijzigd om het bewerken gemakkelijker of "
 "nauwkeuriger te maken."
 
-#: ../../color_management/working_space.rst:29
+#: ../../color_management/working_space.rst:37
 #, fuzzy
 #| msgid ""
 #| "RGB primaries which dictate the range of colors, that is, the color "
@@ -193,7 +202,7 @@ msgstr ""
 "RGB primaire kleuren die het kleurengamma bepalen dat binnen het bereik van "
 "een bepaald kleurprofiel ligt."
 
-#: ../../color_management/working_space.rst:31
+#: ../../color_management/working_space.rst:39
 #, fuzzy
 #| msgid ""
 #| "White point (usually D50 or D65 though other values may be used), which "
@@ -206,17 +215,17 @@ msgstr ""
 "worden), dat de kleurtemperatuur van het witpunt in de werkruimte "
 "specificeert."
 
-#: ../../color_management/working_space.rst:34
+#: ../../color_management/working_space.rst:42
 msgid "Confusions Terminology"
 msgstr ""
 
-#: ../../color_management/working_space.rst:36
+#: ../../color_management/working_space.rst:44
 msgid ""
 "Before talking more about working spaces, some confusions and confusing "
 "terminology needs to be cleared up:"
 msgstr ""
 
-#: ../../color_management/working_space.rst:38
+#: ../../color_management/working_space.rst:46
 msgid ""
 "sRGB is both a working color space and an output color space for images "
 "intended for the web and for monitor display. If you have a spiffy new "
@@ -233,7 +242,7 @@ msgid ""
 "sRGB."
 msgstr ""
 
-#: ../../color_management/working_space.rst:40
+#: ../../color_management/working_space.rst:48
 msgid ""
 "All Jpegs coming straight out of a camera (even if produced by point-and-"
 "shoots cameras that don't allow you to save a RAW file) start life inside "
@@ -247,7 +256,7 @@ msgid ""
 "already in a working space."
 msgstr ""
 
-#: ../../color_management/working_space.rst:42
+#: ../../color_management/working_space.rst:50
 msgid ""
 "In case anyone is unsure on this point, note that an interpolated RAW file "
 "is no longer a RAW file - it has been interpolated and then output as a TIFF "
@@ -255,7 +264,7 @@ msgid ""
 "profile, the PCS, and Lcms."
 msgstr ""
 
-#: ../../color_management/working_space.rst:44
+#: ../../color_management/working_space.rst:52
 msgid ""
 "To introduce a bit of commonly heard color-management terminology here - the "
 "camera profile and your printer's color profile are both device dependent, "
@@ -264,20 +273,19 @@ msgid ""
 "where the image originated."
 msgstr ""
 
-#: ../../color_management/working_space.rst:46
+#: ../../color_management/working_space.rst:54
 msgid ""
-"Above I have used the words translate and translation as a descriptive "
+"Above we have used the words translate and translation as a descriptive "
 "metaphor for what Lcms does when it translates RGB values from one color "
 "space to another via the PCS. The usual and correct terminology is convert "
-"and conversion, which I will use below. The four methods of conversion from "
-"one color space to another are: perceptual, relative colorimetric, absolute "
-"colorimetric, and saturation. Which method of conversion you should use for "
-"any given image processing step from RAW file to final output image is "
-"beyond the scope of this manual. The standard advice is: when in doubt, use "
-"perceptual."
+"and conversion. The four methods of conversion from one color space to "
+"another are: perceptual, relative colorimetric, absolute colorimetric, and "
+"saturation. Which method of conversion you should use for any given image "
+"processing step from RAW file to final output image is beyond the scope of "
+"this manual. The standard advice is: when in doubt, use perceptual."
 msgstr ""
 
-#: ../../color_management/working_space.rst:48
+#: ../../color_management/working_space.rst:56
 msgid ""
 "Assign a profile means change the meaning of the RGB numbers in an image by "
 "embedding a new profile without changing the actual RGB numbers associated "
@@ -296,7 +304,7 @@ msgid ""
 "less drastically change."
 msgstr ""
 
-#: ../../color_management/working_space.rst:50
+#: ../../color_management/working_space.rst:58
 msgid ""
 "Color management is not only relevant if you shoot RAW. Color management "
 "affects every stage of the image processing pipeline, whether you start with "
@@ -304,39 +312,58 @@ msgid ""
 "you start with a Jpeg or TIFF produced by your camera."
 msgstr ""
 
-#: ../../color_management/working_space.rst:53
+#: ../../color_management/working_space.rst:61
 #, fuzzy
 #| msgid "The Working Space"
 msgid "Selecting a Working Space"
 msgstr "De werkruimte"
 
-#: ../../color_management/working_space.rst:55
+#: ../../color_management/working_space.rst:63
 msgid ""
-"Now, the next question is: which working space should I use? Working spaces, "
-"such as sRGB or Adobe RGB, are color spaces that facilitate good results "
-"while editing. For instance, pixels with equal values of RGB should appear "
+"Which working space do you need to use in digiKam? Working spaces, such as "
+"sRGB or Adobe RGB, are color spaces that facilitate good results while "
+"editing. For instance, pixels with equal values of RGB should appear "
 "neutral. Using a large gamut working space will lead to posterization, while "
 "using a small working space will lead to clipping. This trade-off is a "
 "consideration for the Image Editor."
 msgstr ""
 
-#: ../../color_management/working_space.rst:57
+#: ../../color_management/working_space.rst:65
 msgid "Most working space profiles are characterized by:"
 msgstr ""
 
-#: ../../color_management/working_space.rst:59
-msgid "The **Gamut** to define the range of colors of the profile."
+#: ../../color_management/working_space.rst:67
+msgid ""
+"The place of the gamut into the **Diagram** :guilabel:`(1)` of all colors "
+"visible to the average human eyes."
 msgstr ""
 
-#: ../../color_management/working_space.rst:61
-msgid "The **White point** to define the total dynamic range of the profile."
+#: ../../color_management/working_space.rst:69
+msgid ""
+"The **Gamut** :guilabel:`(2)` triangle to define the range of RGB colors of "
+"the profile. Red point is on the bottom right corner, Green is on the top, "
+"Blue is on the left bottom. Values given around the edge of the gamut "
+"passing from the blue, the green and the red points, are the spectral colors "
+"in nanometers."
 msgstr ""
 
-#: ../../color_management/working_space.rst:63
-msgid "The **Gamma** to define the transfer function of the profile."
+#: ../../color_management/working_space.rst:71
+msgid ""
+"The **White point** :guilabel:`(3)` to define the total dynamic range of the "
+"profile."
 msgstr ""
 
-#: ../../color_management/working_space.rst:65
+#: ../../color_management/working_space.rst:73
+msgid ""
+"The **Gamma** to define the transfer function of the profile (not displayed "
+"in the gamut)."
+msgstr ""
+
+#: ../../color_management/working_space.rst:79
+msgid "The Color Profile Details of CIE Chromacity Diagram Show in digiKam"
+msgstr ""
+
+#: ../../color_management/working_space.rst:81
 msgid ""
 "The practical consequences that result from using different RGB primaries, "
 "leading to larger or smaller working spaces, are discussed below. The "
@@ -345,7 +372,7 @@ msgid ""
 "about the practical consequences of the working space gamma."
 msgstr ""
 
-#: ../../color_management/working_space.rst:67
+#: ../../color_management/working_space.rst:83
 msgid ""
 "The gamma of a color profile dictates what power transform needs to take "
 "place to properly convert from an image's embedded color profile (perhaps "
@@ -355,16 +382,17 @@ msgid ""
 "space to your printer's color space."
 msgstr ""
 
-#: ../../color_management/working_space.rst:71
+#: ../../color_management/working_space.rst:87
 msgid ""
 "Mathematically speaking, for a power transform you normalize the RGB numbers "
 "and raise the resulting numbers to an appropriate power depending on the "
 "respective gammas of the starting and ending color space, then renormalize "
-"the results to a new set of RGB numbers. Lcms does this for you when there "
-"is a need to convert from one color space to another in your workflow."
+"the results to a new set of RGB numbers. `Lcms <https://www.littlecms.com/"
+">`_ does this for you when there is a need to convert from one color space "
+"to another in your workflow."
 msgstr ""
 
-#: ../../color_management/working_space.rst:73
+#: ../../color_management/working_space.rst:89
 #, fuzzy
 #| msgid ""
 #| "One practical consequence of the gamma of a working space is that the "
@@ -400,14 +428,14 @@ msgstr ""
 "een werkruimte willen met een lager gamma  zodat u meer toongradaties "
 "beschikbaar heeft in de heldere delen."
 
-#: ../../color_management/working_space.rst:75
+#: ../../color_management/working_space.rst:91
 msgid ""
 "Some people are trying to standardize on gamma 2.0. sRGB and LStar-RGB are "
 "not gamma-based working spaces. Rather, sRGB uses a hybrid gamma, and LStar-"
 "RGB uses a luminosity-based tonal response curve instead of a gamma value."
 msgstr ""
 
-#: ../../color_management/working_space.rst:77
+#: ../../color_management/working_space.rst:93
 #, fuzzy
 #| msgid ""
 #| "In addition to gamma=1.8 and gamma=2.2, the only other gamma for a "
@@ -432,7 +460,7 @@ msgstr ""
 "vermijden dat er door gamma veroorzaakte fouten komen in de gewone \"low "
 "dynamic range\" bewerking."
 
-#: ../../color_management/working_space.rst:79
+#: ../../color_management/working_space.rst:95
 #, fuzzy
 #| msgid ""
 #| "Unfortunately and despite their undeniable mathematical advantages, "
@@ -464,11 +492,17 @@ msgstr ""
 "gamma te gebruiken voor het mengen van kleuren en Lightzone heeft altijd al "
 "een lineaire gamma werkruimte gebruikt."
 
-#: ../../color_management/working_space.rst:82
+#: ../../color_management/working_space.rst:101
+msgid ""
+"Depending of the Settings digiKam Can Ask you to Convert to Working Space "
+"When Loading in Image Editor"
+msgstr ""
+
+#: ../../color_management/working_space.rst:104
 msgid "Large or Small Gamut"
 msgstr ""
 
-#: ../../color_management/working_space.rst:84
+#: ../../color_management/working_space.rst:106
 #, fuzzy
 #| msgid ""
 #| "One major consideration in choosing a working space is that some working "
@@ -497,7 +531,39 @@ msgstr ""
 "cameraprofiel naar het super-brede-gamma profiel, aansluitend op de door u "
 "gekozen werkruimte."
 
-#: ../../color_management/working_space.rst:86
+#: ../../color_management/working_space.rst:112
+msgid ""
+"For the Left to Right: sRGB, AbodeRGB, WideGammutRGB, and ProPhotoRGB Color "
+"Profile Show in digiKam"
+msgstr ""
+
+#: ../../color_management/working_space.rst:114
+#, fuzzy
+#| msgid ""
+#| "But keeping all the possible colors comes at a price, as explained below. "
+#| "And it seems that any given digital image likely only contains a small "
+#| "subset of all the possible visible colors that your camera is capable of "
+#| "capturing. This small subset is easily contained in one of the smaller "
+#| "working spaces (an exception requiring a larger color gamut would be a "
+#| "picture of a highly saturated object such as yellow daffodil)."
+msgid ""
+"But keeping all the possible colors comes at a price. It seems that any "
+"given digital image (pictures of daffodils with saturated yellows being one "
+"common exception) likely only contains a small subset of all the possible "
+"visible colors that your camera is capable of capturing. This small subset "
+"is easily contained in one of the smaller working spaces. Using a very large "
+"working space mean that editing your image (applying curves, saturation, "
+"etc.) can easily produce colors that your eventual output device (printer, "
+"monitor) simply cannot display."
+msgstr ""
+"Maar het behoud van alle mogelijke kleuren is niet zonder consequenties "
+"zoals u zult zien. En het lijkt er op dat elk digitaal beeld een kleine "
+"reeks bevat van alle mogelijke zichtbare kleuren die uw camera kan "
+"vastleggen. Deze reeks past gemakkelijk in een van de kleinere werkruimten "
+"(een uitzondering die een groter kleurengamma vereist zou een opname zijn "
+"van een hoog verzadigd onderwerp zoals een gele narcis). "
+
+#: ../../color_management/working_space.rst:116
 #, fuzzy
 #| msgid ""
 #| "Using a very large working space means that editing your image (applying "
@@ -519,22 +585,15 @@ msgstr ""
 #| "before conversion to an output space. So if you choose a large gamut "
 #| "working space, make sure you start with a 16-bit image."
 msgid ""
-"But keeping all the possible colors comes at a price. It seems that any "
-"given digital image (pictures of daffodils with saturated yellows being one "
-"common exception) likely only contains a small subset of all the possible "
-"visible colors that your camera is capable of capturing. This small subset "
-"is easily contained in one of the smaller working spaces. Using a very large "
-"working space mean that editing your image (applying curves, saturation, "
-"etc.) can easily produce colors that your eventual output device (printer, "
-"monitor) simply cannot display. So the conversion from your working space to "
-"your output device space (say your printer) will have to remap the out of "
-"gamut colors in your edited image, some of which might even be totally "
-"imaginary, to your printer color space with its much smaller gamut, leading "
-"to inaccurate colors at best and at worst to banding (posterization - gaps "
-"in what should be a smooth color transition, say, across an expanse of blue "
-"sky) and clipping (your carefully crafted muted transitions across delicate "
-"shades of red, for example, might get remapped to a solid block of dull red "
-"after conversion to your printer's color space)."
+"So the conversion from your working space to your output device space (say "
+"your printer) will have to remap the out of gamut colors in your edited "
+"image, some of which might even be totally imaginary, to your printer color "
+"space with its much smaller gamut, leading to inaccurate colors at best and "
+"at worst to banding (posterization - gaps in what should be a smooth color "
+"transition, say, across an expanse of blue sky) and clipping (your carefully "
+"crafted muted transitions across delicate shades of red, for example, might "
+"get remapped to a solid block of dull red after conversion to your printer's "
+"color space)."
 msgstr ""
 "Werken met een erg grote kleurruimte betekent dat bij de bewerking (gebruik "
 "van krommen, verhogen van verzadiging) kleuren gemaakt kunnen worden die "
@@ -554,7 +613,7 @@ msgstr ""
 "naar een andere kleurruimte. Dus als u kiest voor een werkruimte met een "
 "breed gamma, begin dan met een 16-bits beeld."
 
-#: ../../color_management/working_space.rst:88
+#: ../../color_management/working_space.rst:118
 #, fuzzy
 #| msgid ""
 #| "To summarize, large gamut working spaces, improperly handled, can lead to "
@@ -572,7 +631,7 @@ msgstr ""
 "trachten de gulden middenweg te vinden. Zoals wikipedia stelt, het is een "
 "kwestie van kiezen. "
 
-#: ../../color_management/working_space.rst:90
+#: ../../color_management/working_space.rst:120
 #, fuzzy
 #| msgid ""
 #| "For images intended for the web, use (or at least convert the final image "
@@ -582,7 +641,7 @@ msgstr ""
 "Voor beelden bestemd voor het web, gebruik (of transformeer het beeld naar) "
 "sRGB.  "
 
-#: ../../color_management/working_space.rst:92
+#: ../../color_management/working_space.rst:122
 #, fuzzy
 #| msgid ""
 #| "For the most accuracy in your image editing (that is, making the most of "
@@ -606,7 +665,7 @@ msgstr ""
 "aftoppen het meeste uit de beperkte hoeveelheid bits van uw afbeelding bij "
 "de conversie van uw werkruimte naar de uiteindelijke kleurruimte."
 
-#: ../../color_management/working_space.rst:94
+#: ../../color_management/working_space.rst:124
 #, fuzzy
 #| msgid ""
 #| "If you are working in 8-bits rather than 16-bits, choose a smaller rather "
@@ -618,7 +677,7 @@ msgstr ""
 "Als u werkt in 8-bits i.p.v. 16-bits, kiest u een kleinere werkruimte in "
 "plaats van een grotere om afkapping en bandvorming te voorkomen."
 
-#: ../../color_management/working_space.rst:96
+#: ../../color_management/working_space.rst:126
 #, fuzzy
 #| msgid ""
 #| "For archival purposes, convert your raw file to a 16-bit tiff with a "
@@ -638,11 +697,11 @@ msgstr ""
 "gewenste middel- of grote gamma-werkruimte. (sla het geconverteerde tiff "
 "bestand onder een nieuwe naam op)"
 
-#: ../../color_management/working_space.rst:102
+#: ../../color_management/working_space.rst:132
 msgid "digiKam Queue Manager Allows to Batch Convert Color Space"
 msgstr ""
 
-#: ../../color_management/working_space.rst:104
+#: ../../color_management/working_space.rst:134
 #, fuzzy
 #| msgid ""
 #| "For more information on choosing a working space, see this page, "
@@ -667,11 +726,26 @@ msgstr ""
 "werkruimten. En als u op de website cambridgeincolour.com bent, bekijk dan "
 "de zelfstudie over kleurbeheer."
 
-#: ../../color_management/working_space.rst:107
+#: ../../color_management/working_space.rst:137
 msgid "Gamma Properties"
 msgstr ""
 
-#: ../../color_management/working_space.rst:109
+#: ../../color_management/working_space.rst:139
+#, fuzzy
+#| msgid ""
+#| "The gamma of a color profile dictates what power transform needs to take "
+#| "place to properly convert from an image's embedded color profile (perhaps "
+#| "your working color space or your camera color profile) to another color "
+#| "profile with a different gamma, such as your chosen working space, or the "
+#| "display profile used to display the image on the screen or perhaps from "
+#| "one working space to another, or perhaps from your working space to your "
+#| "printer's color space. Libraw outputs a 16-bit image with a linear gamma, "
+#| "which means that a histogram of the resulting image file shows the actual "
+#| "amount of light that each pixel on the camera sensor captured during the "
+#| "exposure (paraphrasing this page). (Which is why at present applying a "
+#| "camera profile to the Libraw output also requires applying an appropriate "
+#| "gamma transform to get to the desired working space, unless the camera "
+#| "profile also uses gamma=1.)"
 msgid ""
 "The gamma of a color profile dictates what power transform needs to take "
 "place to properly convert from an image's embedded color profile (perhaps "
@@ -679,13 +753,13 @@ msgid ""
 "profile with a different gamma, such as your chosen working space, or the "
 "display profile used to display the image on the screen or perhaps from one "
 "working space to another, or perhaps from your working space to your "
-"printer's color space. Libraw outputs a 16-bit image with a linear gamma, "
-"which means that a histogram of the resulting image file shows the actual "
-"amount of light that each pixel on the camera sensor captured during the "
-"exposure (paraphrasing this page). (Which is why at present applying a "
-"camera profile to the Libraw output also requires applying an appropriate "
-"gamma transform to get to the desired working space, unless the camera "
-"profile also uses gamma=1.)"
+"printer's color space. `Libraw <https://www.libraw.org/>`_ outputs a 16-bit "
+"image with a linear gamma, which means that a histogram of the resulting "
+"image file shows the actual amount of light that each pixel on the camera "
+"sensor captured during the exposure (paraphrasing this page). (Which is why "
+"at present applying a camera profile to the Libraw output also requires "
+"applying an appropriate gamma transform to get to the desired working space, "
+"unless the camera profile also uses gamma=1.)"
 msgstr ""
 "Het gamma van een kleurprofiel bepaalt welke omzetting nodig is voor de "
 "conversie van het ingebedde kleurprofiel van een beeld naar een ander "
@@ -698,7 +772,7 @@ msgstr ""
 "ook de juiste gammatransformatie om in de gewenste werkruimte te komen, "
 "behalve als het cameraprofiel ook gamma=1 gebruikt)."
 
-#: ../../color_management/working_space.rst:111
+#: ../../color_management/working_space.rst:141
 msgid ""
 "One practical consequence of the gamma of a working space is that the higher "
 "the gamma, the more discrete tones are available for editing in the shadows, "
@@ -722,7 +796,7 @@ msgstr ""
 "een werkruimte willen met een lager gamma  zodat u meer toongradaties "
 "beschikbaar heeft in de heldere delen."
 
-#: ../../color_management/working_space.rst:113
+#: ../../color_management/working_space.rst:143
 msgid ""
 "Theory aside, in the real world of real image editing, almost everyone uses "
 "working spaces with either a gamma of either 1.8 or 2.2. sRGB and L*-RGB are "
@@ -732,7 +806,7 @@ msgstr ""
 "iedereen werkruimten met een gamma van ofwel 1,8 of 2,2. Twee opvallende "
 "uitzonderingen vormen sRGB en L*-RGB."
 
-#: ../../color_management/working_space.rst:115
+#: ../../color_management/working_space.rst:145
 #, fuzzy
 #| msgid ""
 #| "sRGB uses a transfer function close to that of a CRT (and thus not "
@@ -764,12 +838,18 @@ msgstr ""
 "\" (citaat van : deze pagina), hetgeen zorgt voor enig gecompliceerd "
 "rekenwerk gedurende de beeldbewerking."
 
-#: ../../color_management/working_space.rst:117
+#: ../../color_management/working_space.rst:147
+#, fuzzy
+#| msgid ""
+#| "L*-RGB uses as its transfer function the same perceptually uniform "
+#| "transfer function as the CIELab color space. \"When storing colors in "
+#| "limited precision values\" using a perceptually uniform transfer function "
+#| "\"can improve the reproduction of tones\" (cited from this page)."
 msgid ""
 "L*-RGB uses as its transfer function the same perceptually uniform transfer "
-"function as the CIELab color space. \"When storing colors in limited "
-"precision values\" using a perceptually uniform transfer function \"can "
-"improve the reproduction of tones\" (cited from this page)."
+"function as the CIELab color space. *When storing colors in limited "
+"precision values* using a perceptually uniform transfer function *can "
+"improve the reproduction of tones*."
 msgstr ""
 "L*-RGB hanteert als transferfunctie dezelfde perceptueel uniforme "
 "overdrachtsfunctie als de CIELab kleurruimte \"Bij het opslaan van kleuren "
@@ -777,14 +857,22 @@ msgstr ""
 "uniforme functie de weergave van kleurtonen verbeteren\" (citaat van deze "
 "pagina)."
 
-#: ../../color_management/working_space.rst:119
+#: ../../color_management/working_space.rst:149
+#, fuzzy
+#| msgid ""
+#| "In addition to gamma=1.8 and gamma=2.2, the only other gamma for a "
+#| "working space that gets much mention or use is linear gamma, or "
+#| "gamma=1.0. As noted above, Libraw outputs linear gamma files if you ask "
+#| "for 16-bit output. Linear gamma is used in HDR (high dynamic range) "
+#| "imaging and also if one wants to avoid introducing gamma-induced errors "
+#| "into one's regular low dynamic range editing."
 msgid ""
 "In addition to gamma=1.8 and gamma=2.2, the only other gamma for a working "
 "space that gets much mention or use is linear gamma, or gamma=1.0. As noted "
-"above, Libraw outputs linear gamma files if you ask for 16-bit output. "
-"Linear gamma is used in HDR (high dynamic range) imaging and also if one "
-"wants to avoid introducing gamma-induced errors into one's regular low "
-"dynamic range editing."
+"above, `Libraw <https://www.libraw.org/>`_ outputs linear gamma files if you "
+"ask for 16-bit output. Linear gamma is used in HDR (high dynamic range) "
+"imaging and also if one wants to avoid introducing gamma-induced errors into "
+"one's regular low dynamic range editing."
 msgstr ""
 "Als aanvulling op gamma=1,8 en gamma=2,2 is er nog het lineaire gamma=1.0 "
 "dat vaak genoemd of gebruikt wordt. Zoals vermeld, levert Libraw lineaire "
@@ -793,7 +881,7 @@ msgstr ""
 "vermijden dat er door gamma veroorzaakte fouten komen in de gewone \"low "
 "dynamic range\" bewerking."
 
-#: ../../color_management/working_space.rst:121
+#: ../../color_management/working_space.rst:151
 #, fuzzy
 #| msgid ""
 #| "\"Gamma-induced errors\" is a topic outside the scope of this tutorial. "
@@ -811,19 +899,13 @@ msgstr ""
 #| "calculated by first transforming all the relevant values back to their "
 #| "linear values."
 msgid ""
-"\"Gamma-induced errors\" is a topic outside the scope of this manual. But "
-"see \"Gamma errors in picture scaling\" (cited from this page) for gamma-"
-"induced tonality shifts; and of course see Timo Autiokari's informative "
-"(albeit somewhat infamous) website for a whole-hearted endorsement of using "
-"linear gamma working spaces (Timo's website seems to be down at present, "
-"though archived copies of his articles are still available through google). "
-"Bruce Lindbloom mentions a commonly-encountered gamma-induced error that is "
-"caused by incorrectly calculating luminance in a nonlinear RGB working space "
-"(see this page, sidenote 1). And in a similar vein, the calculations "
-"involved in mixing colors together to produce new colors (such as using a "
-"digital filter to add warmth to an image) result in gamma errors unless the "
-"new colors are calculated by first transforming all the relevant values back "
-"to their linear values."
+"**Gamma-induced errors** is a topic outside the scope of this manual but "
+"it's commonly-encountered that gamma-induced error that is caused by "
+"incorrectly calculating luminance in a nonlinear RGB working space. And in a "
+"similar vein, the calculations involved in mixing colors together to produce "
+"new colors (such as using a digital filter to add warmth to an image) result "
+"in gamma errors unless the new colors are calculated by first transforming "
+"all the relevant values back to their linear values."
 msgstr ""
 "\"Door gamma veroorzaakte fouten\" is een onderwerp dat eigenlijk buiten de "
 "strekking van deze zelfstudie ligt. Maar bekijk \"Gamma fouten in herschalen "
@@ -839,17 +921,26 @@ msgstr ""
 "gamma-fouten tenzij de nieuwe kleuren worden berekend door vooraf alle "
 "relevante waarden terug om te zetten naar hun lineaire waarden."
 
-#: ../../color_management/working_space.rst:123
+#: ../../color_management/working_space.rst:153
+#, fuzzy
+#| msgid ""
+#| "Unfortunately and despite their undeniable mathematical advantages, "
+#| "linear gamma working spaces have so few tones in the shadows that (in my "
+#| "opinion) they are impossible to use for editing if one is working in 8-"
+#| "bits, and still problematic at 16-bits. When the day comes when we are "
+#| "all doing our editing on 32-bit files produced by our HDR cameras on our "
+#| "personal supercomputers, I predict that we will all be using working "
+#| "spaces with gamma=1. Adobe Lightroom is already using a linear gamma "
+#| "working space \"under the hood\", CS2 allows the option of using linear "
+#| "gamma for mixing colors, and Lightzone has always used a linear gamma "
+#| "working space."
 msgid ""
 "Unfortunately and despite their undeniable mathematical advantages, linear "
-"gamma working spaces have so few tones in the shadows that (in my opinion) "
-"they are impossible to use for editing if one is working in 8-bits, and "
-"still problematic at 16-bits. When the day comes when we are all doing our "
-"editing on 32-bit files produced by our HDR cameras on our personal "
-"supercomputers, I predict that we will all be using working spaces with "
-"gamma=1. Adobe Lightroom is already using a linear gamma working space "
-"\"under the hood\", CS2 allows the option of using linear gamma for mixing "
-"colors, and Lightzone has always used a linear gamma working space."
+"gamma working spaces have so few tones in the shadows that they are "
+"impossible to use for editing if one is working in 8-bits, and still "
+"problematic at 16-bits. When the day comes when we are all doing our editing "
+"on 32-bit files produced by our HDR cameras on our personal supercomputers, "
+"We can predict that we will all be using working spaces with gamma=1."
 msgstr ""
 "Helaas, en ondanks hun ontegenzeggelijke rekenkundige voordelen, beschikken "
 "werkruimten met lineaire gamma over zo weinig kleurtonen in de schaduwen dat "
@@ -862,11 +953,11 @@ msgstr ""
 "gamma te gebruiken voor het mengen van kleuren en Lightzone heeft altijd al "
 "een lineaire gamma werkruimte gebruikt."
 
-#: ../../color_management/working_space.rst:126
+#: ../../color_management/working_space.rst:156
 msgid "Image Tonal Steps and Gamut Size"
 msgstr ""
 
-#: ../../color_management/working_space.rst:128
+#: ../../color_management/working_space.rst:158
 #, fuzzy
 #| msgid ""
 #| "In an 8-bit image, you have 256 tonal steps from solid black to solid "
@@ -889,9 +980,8 @@ msgid ""
 "bits to reach 16-bits start out as just padding. The available tones are not "
 "distributed evenly from light to dark. In linear gamma mode (as the camera "
 "sensor sees things), there's a whole lot more tones in the highlights than "
-"in the shadows. Hence the advice, if you shoot RAW, to \"expose to the right "
-"but don't blow the highlights\". See Ron Bigelow's articles on \"why RAW\", "
-"for a full discussion of the distribution of available tones in a RAW image."
+"in the shadows. Hence the advice, if you shoot RAW, to expose to the right "
+"but don't blow the highlights."
 msgstr ""
 "In een 8-bits beeld zitten 256 tonale stapjes van pikzwart tot helderwit. In "
 "een 16-bits beeld, theoretisch, 65536 stapjes. Maar de 16-bits begonnen als: "
@@ -905,7 +995,7 @@ msgstr ""
 "Zie Ron Bigelow's artikel over \"waarom in RAW\", voor een uitgebreide "
 "discussie over de distributie van beschikbare tonen in een RAW-opname."
 
-#: ../../color_management/working_space.rst:130
+#: ../../color_management/working_space.rst:160
 #, fuzzy
 #| msgid ""
 #| "One major consideration in choosing a working space is that some working "
@@ -922,8 +1012,9 @@ msgid ""
 "spectrum (and as a consequence include some imaginary colors - mathematical "
 "constructs that don't really exist). These bigger spaces offer the advantage "
 "of allowing you to keep all the colors captured by your camera and preserved "
-"by the Lcms conversion from your camera profile to the super-wide-gamut "
-"profile connection space and out again to your chosen working space."
+"by the `Lcms <https://www.littlecms.com/>`_ conversion from your camera "
+"profile to the super-wide-gamut profile connection space and out again to "
+"your chosen working space."
 msgstr ""
 "Een belangrijke overweging bij het kiezen van een werkruimte is dat sommige "
 "werkruimten groter zijn dan andere. Dat betekent dat ze een groter deel van "
@@ -934,14 +1025,21 @@ msgstr ""
 "cameraprofiel naar het super-brede-gamma profiel, aansluitend op de door u "
 "gekozen werkruimte."
 
-#: ../../color_management/working_space.rst:132
+#: ../../color_management/working_space.rst:162
+#, fuzzy
+#| msgid ""
+#| "But keeping all the possible colors comes at a price, as explained below. "
+#| "And it seems that any given digital image likely only contains a small "
+#| "subset of all the possible visible colors that your camera is capable of "
+#| "capturing. This small subset is easily contained in one of the smaller "
+#| "working spaces (an exception requiring a larger color gamut would be a "
+#| "picture of a highly saturated object such as yellow daffodil)."
 msgid ""
 "But keeping all the possible colors comes at a price, as explained below. "
 "And it seems that any given digital image likely only contains a small "
 "subset of all the possible visible colors that your camera is capable of "
 "capturing. This small subset is easily contained in one of the smaller "
-"working spaces (an exception requiring a larger color gamut would be a "
-"picture of a highly saturated object such as yellow daffodil)."
+"working spaces."
 msgstr ""
 "Maar het behoud van alle mogelijke kleuren is niet zonder consequenties "
 "zoals u zult zien. En het lijkt er op dat elk digitaal beeld een kleine "
@@ -950,7 +1048,7 @@ msgstr ""
 "(een uitzondering die een groter kleurengamma vereist zou een opname zijn "
 "van een hoog verzadigd onderwerp zoals een gele narcis). "
 
-#: ../../color_management/working_space.rst:134
+#: ../../color_management/working_space.rst:164
 msgid ""
 "Using a very large working space means that editing your image (applying "
 "curves, increasing saturation, etc.) can easily produce colors that your "
@@ -959,16 +1057,41 @@ msgid ""
 "from your working space to your output device space (say your printer) will "
 "have to remap the out-of-gamut colors in your edited image, some of which "
 "might even be totally imaginary, to your printer color space with its much "
-"smaller color gamut. This remapping process will lead to inaccurate colors "
-"and loss of saturation at best. Even worse, the remapping can easily lead to "
-"banding (posterization - gaps in what should be a smooth color transition, "
-"say, across an expanse of blue sky) and clipping (e.g. your carefully "
-"crafted muted transitions across delicate shades of red, for example, might "
-"get remapped to a solid block of dull red after conversion to your printer's "
-"color space). Also, the experts say that 8-bit images just don't have enough "
-"tones to stretch across a wide gamut working space without banding and loss "
-"of saturation, even before conversion to an output space. So if you choose a "
-"large gamut working space, make sure you start with a 16-bit image."
+"smaller color gamut."
+msgstr ""
+
+#: ../../color_management/working_space.rst:166
+#, fuzzy
+#| msgid ""
+#| "Using a very large working space means that editing your image (applying "
+#| "curves, increasing saturation, etc.) can easily produce colors that your "
+#| "eventual output device (printer, monitor) simply cannot reproduce (you "
+#| "cannot see these colors while you're editing, either). So the conversion "
+#| "from your working space to your output device space (say your printer) "
+#| "will have to remap the out-of-gamut colors in your edited image, some of "
+#| "which might even be totally imaginary, to your printer color space with "
+#| "its much smaller color gamut. This remapping process will lead to "
+#| "inaccurate colors and loss of saturation at best. Even worse, the "
+#| "remapping can easily lead to banding (posterization - gaps in what should "
+#| "be a smooth color transition, say, across an expanse of blue sky) and "
+#| "clipping (e.g. your carefully crafted muted transitions across delicate "
+#| "shades of red, for example, might get remapped to a solid block of dull "
+#| "red after conversion to your printer's color space). Also, the experts "
+#| "say that 8-bit images just don't have enough tones to stretch across a "
+#| "wide gamut working space without banding and loss of saturation, even "
+#| "before conversion to an output space. So if you choose a large gamut "
+#| "working space, make sure you start with a 16-bit image."
+msgid ""
+"This remapping process will lead to inaccurate colors and loss of saturation "
+"at best. Even worse, the remapping can easily lead to banding (posterization "
+"- gaps in what should be a smooth color transition, across an expanse of "
+"blue sky) and clipping (e.g. your carefully crafted muted transitions across "
+"delicate shades of red, for example, might get remapped to a solid block of "
+"dull red after conversion to your printer's color space). Also, the experts "
+"say that 8-bit images just don't have enough tones to stretch across a wide "
+"gamut working space without banding and loss of saturation, even before "
+"conversion to an output space. So if you choose a large gamut working space, "
+"make sure you start with a 16-bit image."
 msgstr ""
 "Werken met een erg grote kleurruimte betekent dat bij de bewerking (gebruik "
 "van krommen, verhogen van verzadiging) kleuren gemaakt kunnen worden die "
@@ -988,12 +1111,12 @@ msgstr ""
 "naar een andere kleurruimte. Dus als u kiest voor een werkruimte met een "
 "breed gamma, begin dan met een 16-bits beeld."
 
-#: ../../color_management/working_space.rst:141
+#: ../../color_management/working_space.rst:173
 msgid ""
-"digiKam Allows to Display the Color Profile Properties as this AdodeRGB File"
+"The digiKam Color Profile Properties Dialog Displaying BestRGB Information"
 msgstr ""
 
-#: ../../color_management/working_space.rst:143
+#: ../../color_management/working_space.rst:175
 #, fuzzy
 #| msgid ""
 #| "To summarize, large gamut working spaces, improperly handled, can lead to "
@@ -1011,12 +1134,12 @@ msgstr ""
 "trachten de gulden middenweg te vinden. Zoals wikipedia stelt, het is een "
 "kwestie van kiezen. "
 
-#: ../../color_management/working_space.rst:145
+#: ../../color_management/working_space.rst:177
 msgid "Here are some oft-repeated bits of advice on choosing a working space:"
 msgstr ""
 "Hier zijn enkele vaak herhaalde tips bij het kiezen van een werkruimte:"
 
-#: ../../color_management/working_space.rst:147
+#: ../../color_management/working_space.rst:179
 msgid ""
 "For images intended for the web, use (or at least convert the final image "
 "to) sRGB."
@@ -1024,10 +1147,18 @@ msgstr ""
 "Voor beelden bestemd voor het web, gebruik (of transformeer het beeld naar) "
 "sRGB.  "
 
-#: ../../color_management/working_space.rst:149
+#: ../../color_management/working_space.rst:181
+#, fuzzy
+#| msgid ""
+#| "For the most accuracy in your image editing (that is, making the most of "
+#| "your limited \"bits\" with the least risk of banding or clipping when you "
+#| "convert your image from your working space to an output space), use the "
+#| "smallest working space that includes all the colors in the scene that you "
+#| "photographed, plus a little extra room for those new colors you "
+#| "intentionally produce as you edit."
 msgid ""
 "For the most accuracy in your image editing (that is, making the most of "
-"your limited \"bits\" with the least risk of banding or clipping when you "
+"your limited *bits* with the least risk of banding or clipping when you "
 "convert your image from your working space to an output space), use the "
 "smallest working space that includes all the colors in the scene that you "
 "photographed, plus a little extra room for those new colors you "
@@ -1040,7 +1171,7 @@ msgstr ""
 "aftoppen het meeste uit de beperkte hoeveelheid bits van uw afbeelding bij "
 "de conversie van uw werkruimte naar de uiteindelijke kleurruimte."
 
-#: ../../color_management/working_space.rst:151
+#: ../../color_management/working_space.rst:183
 msgid ""
 "If you are working in 8-bits rather than 16-bits, choose a smaller rather "
 "than a larger working space to avoid clipping and banding."
@@ -1048,7 +1179,7 @@ msgstr ""
 "Als u werkt in 8-bits i.p.v. 16-bits, kiest u een kleinere werkruimte in "
 "plaats van een grotere om afkapping en bandvorming te voorkomen."
 
-#: ../../color_management/working_space.rst:153
+#: ../../color_management/working_space.rst:185
 #, fuzzy
 #| msgid ""
 #| "For archival purposes, convert your raw file to a 16-bit tiff with a "
@@ -1068,21 +1199,44 @@ msgstr ""
 "gewenste middel- of grote gamma-werkruimte. (sla het geconverteerde tiff "
 "bestand onder een nieuwe naam op)"
 
-#: ../../color_management/working_space.rst:155
-msgid ""
-"For more information on choosing a working space, see this page, Information "
-"about RGB Working Spaces for a visual comparison of the gamut (array of "
-"included colors) of the various working color spaces. See here and here for "
-"a pro- and con- presentation, respectively, of the merits of using large "
-"gamut working spaces. And while you are on the cambridgeincolour.com "
-"website, check out the tutorial on color management."
-msgstr ""
-"Kijk voor meer informatie over het kiezen van een werkruimte op deze pagina, "
-"informatie over RGB werkruimten voor visuele vergelijking van gamma (reeks "
-"van bijbehorende kleuren) van de diverse kleurruimten. Zie hier en hier voor "
-"een overzicht van argumenten voor en tegen het gebruik van brede gamma-"
-"werkruimten. En als u op de website cambridgeincolour.com bent, bekijk dan "
-"de zelfstudie over kleurbeheer."
+#~ msgid ""
+#~ "Unfortunately and despite their undeniable mathematical advantages, "
+#~ "linear gamma working spaces have so few tones in the shadows that (in my "
+#~ "opinion) they are impossible to use for editing if one is working in 8-"
+#~ "bits, and still problematic at 16-bits. When the day comes when we are "
+#~ "all doing our editing on 32-bit files produced by our HDR cameras on our "
+#~ "personal supercomputers, I predict that we will all be using working "
+#~ "spaces with gamma=1. Adobe Lightroom is already using a linear gamma "
+#~ "working space \"under the hood\", CS2 allows the option of using linear "
+#~ "gamma for mixing colors, and Lightzone has always used a linear gamma "
+#~ "working space."
+#~ msgstr ""
+#~ "Helaas, en ondanks hun ontegenzeggelijke rekenkundige voordelen, "
+#~ "beschikken werkruimten met lineaire gamma over zo weinig kleurtonen in de "
+#~ "schaduwen dat (naar mijn mening) ze onmogelijk te gebruiken zijn voor "
+#~ "bewerking als we in 8-bits werken en ook nog maar met moeite in 16-bits. "
+#~ "Ik voorzie dat we in de toekomst voor het bewerken (op super pc's) van, "
+#~ "door onze HDR camera's geleverde, 32-bits bestanden, allemaal werkruimten "
+#~ "met gamma=1 zullen gebruiken. Adobe Lightroom maakt al gebruik van "
+#~ "lineaire gamma werkruimten (zonder dat dat vermeld word), CS2 biedt de "
+#~ "mogelijkheid om een lineaire gamma te gebruiken voor het mengen van "
+#~ "kleuren en Lightzone heeft altijd al een lineaire gamma werkruimte "
+#~ "gebruikt."
+
+#~ msgid ""
+#~ "For more information on choosing a working space, see this page, "
+#~ "Information about RGB Working Spaces for a visual comparison of the gamut "
+#~ "(array of included colors) of the various working color spaces. See here "
+#~ "and here for a pro- and con- presentation, respectively, of the merits of "
+#~ "using large gamut working spaces. And while you are on the "
+#~ "cambridgeincolour.com website, check out the tutorial on color management."
+#~ msgstr ""
+#~ "Kijk voor meer informatie over het kiezen van een werkruimte op deze "
+#~ "pagina, informatie over RGB werkruimten voor visuele vergelijking van "
+#~ "gamma (reeks van bijbehorende kleuren) van de diverse kleurruimten. Zie "
+#~ "hier en hier voor een overzicht van argumenten voor en tegen het gebruik "
+#~ "van brede gamma-werkruimten. En als u op de website cambridgeincolour.com "
+#~ "bent, bekijk dan de zelfstudie over kleurbeheer."
 
 #~ msgid "Overview"
 #~ msgstr "Overzicht"

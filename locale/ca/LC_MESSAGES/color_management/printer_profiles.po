@@ -8,16 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-15 00:49+0000\n"
-"PO-Revision-Date: 2023-01-15 19:43+0100\n"
-"Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
+"POT-Creation-Date: 2023-01-16 00:49+0000\n"
+"PO-Revision-Date: 2023-01-16 18:56+0100\n"
+"Last-Translator: Antoni Bella <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Kate 22.08.3\n"
 
 #: ../../color_management/printer_profiles.rst:1
 msgid "Color Management and Printer Profiles"
@@ -41,35 +41,37 @@ msgstr "Ús del perfil de la impressora"
 
 #: ../../color_management/printer_profiles.rst:19
 msgid ""
-"We are now almost ready to print that image. Where do I get a printer "
-"profile? you already know the answer. You can use the generic profile that "
-"comes with your printer. You can purchase a professionally produced profile. "
-"Some commercial printing establishments will send you their printer profiles "
+"We are now almost ready to print that image. Where to get a printer profile? "
+"you already know the answer. You can use the generic profile that comes with "
+"your printer. You can purchase a professionally produced profile. Some "
+"commercial printing establishments will send you their printer profiles "
 "(which won't work with your printer). You can make your own printer profile "
-"using Argyll, in which case your profile can be tailored to your particular "
-"paper, inks, and even image characteristics (if you are printing a series of "
-"images with a color palette limited to subdued browns, you don't need a "
-"printer profile that tries to make room for saturated cyans and blues)."
+"using `Argyll <http://www.argyllcms.com/>`_, in which case your profile can "
+"be tailored to your particular paper, inks, and even image characteristics "
+"(if you are printing a series of images with a color palette limited to "
+"subdued browns, you don't need a printer profile that tries to make room for "
+"saturated cyans and blues)."
 msgstr ""
 
-#: ../../color_management/printer_profiles.rst:21
-msgid ""
-"See this page for an excellent presentation of the benefits of producing "
-"your own printer profile, plus a resoundingly positive endorsement of using "
-"Argyll for making your printer profile."
+#: ../../color_management/printer_profiles.rst:25
+msgid "digiKam Image Editor Soft-Proofing Menu Entries"
 msgstr ""
 
 #: ../../color_management/printer_profiles.rst:27
 msgid ""
-"digiKam Image Editor Print Feature Allows Using Your Preferred Printer Color "
-"Profile and Tune the Black Point Compensation."
+"In digiKam Image Editor, Soft-Proofing can be configured to render over the "
+"canvas a preview of a printing job using your printer color profile."
 msgstr ""
 
-#: ../../color_management/printer_profiles.rst:30
+#: ../../color_management/printer_profiles.rst:33
+msgid "digiKam Image Editor Soft-Proofing Options"
+msgstr ""
+
+#: ../../color_management/printer_profiles.rst:38
 msgid "The Rendering intents"
 msgstr "El propòsit de la representació"
 
-#: ../../color_management/printer_profiles.rst:32
+#: ../../color_management/printer_profiles.rst:40
 msgid ""
 "**Rendering intent** refers to the way color gamuts are handled when the "
 "intended target color space (for example, the monitor or the printer) cannot "
@@ -81,90 +83,106 @@ msgstr ""
 "exemple, el monitor o la impressora) no pot gestionar tota la gamma de "
 "l'espai de color d'origen (per exemple, l'espai de treball)."
 
-#: ../../color_management/printer_profiles.rst:34
+#: ../../color_management/printer_profiles.rst:42
 msgid "There are four commonly-used rendering intents:"
-msgstr "Hi ha quatre propòsits de renderització d'ús habitual:"
+msgstr "Hi ha quatre propòsits de la representació d'ús habitual:"
 
-#: ../../color_management/printer_profiles.rst:36
+#: ../../color_management/printer_profiles.rst:44
+msgid ""
+"**Perceptual**, also called Image or **Maintain Full Gamut**. This is "
+"generally recommended for photographic images. The color gamut is expanded "
+"or compressed when moving between color spaces to maintain consistent "
+"overall appearance. Low saturation colors are changed very little. More "
+"saturated colors within the gamuts of both spaces may be altered to "
+"differentiate them from saturated colors outside the smaller gamut space. "
+"Perceptual rendering applies the same gamut compression to all images, even "
+"when the image contains no significant out-of-gamut colors."
+msgstr ""
+
+#: ../../color_management/printer_profiles.rst:46
+msgid ""
+"**Relative Colorimetric**, also called **Proof or Preserve Identical Color "
+"and White Point**. Reproduces in-gamut colors exactly and clips out-of-gamut "
+"colors to the nearest reproducible hue."
+msgstr ""
+
+#: ../../color_management/printer_profiles.rst:48
+msgid ""
+"**Absolute Colorimetric**, also called **Match or Preserve Identical "
+"Colors**. Reproduces in-gamut colors exactly and clips out-of-gamut colors "
+"to the nearest reproducible hue, sacrificing saturation and possibly "
+"lightness. On tinted papers, whites may be darkened to keep the hue "
+"identical to the original. For example, cyan may be added to the white of a "
+"cream-colored paper, effectively darkening the image. Rarely of interest to "
+"photographers."
+msgstr ""
+
+#: ../../color_management/printer_profiles.rst:50
+msgid ""
+"**Saturation**, also called **Graphic or Preserve Saturation. Maps** the "
+"saturated primary colors in the source to saturated primary colors in the "
+"destination, neglecting differences in hue, saturation, or lightness. For "
+"block graphics; rarely of interest to photographers."
+msgstr ""
+
+#: ../../color_management/printer_profiles.rst:52
 msgid ""
 "**Perceptual** and **Relative colorimetric** rendering are probably the most "
 "useful conversion types for digital photography. Each places a different "
-"priority on how they render colors within the gamut mismatch region."
-msgstr ""
-"La representació de la **colorimetria perceptiva** i de la **relativa** són "
-"probablement els tipus de conversió més útils per a la fotografia digital. "
-"Cadascun posa una prioritat diferent en la forma en què es renderitzen els "
-"colors dins de la regió coincident de la gamma."
-
-#: ../../color_management/printer_profiles.rst:38
-msgid ""
+"priority on how they render colors within the gamut mismatch region. "
 "**Relative colorimetric** maintains a near exact relationship between in "
-"gamut colors, even if this clips out of gamut colors."
+"gamut colors, even if this clips out of gamut colors. In contrast, "
+"**Perceptual** rendering tries to also preserve some relationship between "
+"out of gamut colors, even if this results in inaccuracies for in gamut "
+"colors."
 msgstr ""
-"Una **colorimetria relativa** manté una relació gairebé exacta entre els "
-"colors en la gamma, encara que això tregui els colors que estan fora de la "
-"gamma."
 
-#: ../../color_management/printer_profiles.rst:40
-msgid ""
-"In contrast, **Perceptual** rendering tries to also preserve some "
-"relationship between out of gamut colors, even if this results in "
-"inaccuracies for in gamut colors..."
-msgstr ""
-"Per contra, la representació **perceptiva** també intenta conservar una "
-"certa relació entre els colors fora de la gamma, fins i tot si això dona "
-"lloc a imprecisions en els colors en la gamma..."
-
-#: ../../color_management/printer_profiles.rst:42
+#: ../../color_management/printer_profiles.rst:54
 msgid ""
 "**Absolute** is similar to relative colorimetric in that it preserves in "
 "gamut colors and clips those out of gamut, but they differ in how each "
 "handles the white point... Relative colorimetric skews the colors within "
 "gamut so that the white point of one space aligns with that of the other, "
 "while absolute colorimetric preserves colors exactly (without regard to "
-"changing white point)..."
+"changing white point). **Saturation** rendering intent tries to preserve "
+"saturated colors."
 msgstr ""
 "La colorimetria **absoluta** és similar a la relativa en la mesura que "
-"conserva els colors de la gamma i treu els que estan fora de la gamma, però "
+"conserva els colors de la gamma i retalla els que estan fora de la gamma, però "
 "difereixen en la forma en què gestionen el punt blanc... La colorimetria "
-"relativa canvia els colors dins de la gamma de manera que el punt blanc d'un "
+"relativa distorsiona els colors dins de la gamma de manera que el punt blanc d'un "
 "espai s'alinearà amb la de l'altra, mentre que la colorimetria absoluta "
 "conservarà els colors exactes (sense tenir en compte el canvi del punt "
-"blanc)..."
+"blanc). El propòsit de la representació de la **saturació** intentarà conservar "
+"els colors saturats."
 
-#: ../../color_management/printer_profiles.rst:44
-msgid "**Saturation** rendering intent tries to preserve saturated colors."
-msgstr ""
-"El propòsit de la representació de la **saturació** tracta de conservar "
-"saturats els colors."
-
-#: ../../color_management/printer_profiles.rst:50
+#: ../../color_management/printer_profiles.rst:60
 msgid ""
 "digiKam Color Management Setup Dialog Page Allows to Customize the Rendering "
 "Intents"
 msgstr ""
 
-#: ../../color_management/printer_profiles.rst:52
+#: ../../color_management/printer_profiles.rst:62
 msgid ""
 "The usual choice to use Rendering Intent to display contents on monitor is "
 "relative colorimetric. We would suggest that you not use absolute "
 "colorimetric unless you want very strange results."
 msgstr ""
 
-#: ../../color_management/printer_profiles.rst:56
+#: ../../color_management/printer_profiles.rst:66
 msgid ""
 "Rendering intents are available when converting from one profile to another "
 "depends on the destination profile. Not every profile supports every "
 "rendering intent. Problems can occurs  when you select an unsupported "
-"rendering intent is that Lcms quietly uses the profile's default rendering "
-"intent."
+"rendering intent is that `Lcms <https://www.littlecms.com/>`_ quietly uses "
+"the profile's default rendering intent."
 msgstr ""
 
-#: ../../color_management/printer_profiles.rst:61
+#: ../../color_management/printer_profiles.rst:71
 msgid "The Soft Proofing"
 msgstr ""
 
-#: ../../color_management/printer_profiles.rst:63
+#: ../../color_management/printer_profiles.rst:73
 msgid ""
 "Soft-proofing will show you the differences to be expected between what you "
 "see on your screen and what you will see when you make a print. To soft-"
@@ -174,7 +192,7 @@ msgid ""
 "working space, not after converting the image to your printer space."
 msgstr ""
 
-#: ../../color_management/printer_profiles.rst:65
+#: ../../color_management/printer_profiles.rst:75
 msgid ""
 "**Perceptual** intent may or may not give the best results with soft-proof, "
 "depending on the respective gamuts of the image and printer/paper "
@@ -184,7 +202,7 @@ msgid ""
 "not by any means always *the best* option."
 msgstr ""
 
-#: ../../color_management/printer_profiles.rst:67
+#: ../../color_management/printer_profiles.rst:77
 msgid ""
 "**Perceptual** rendering intent is a safe choice because it prevents "
 "clipping of shadows and highlights, although possibly at the expense of "
@@ -193,26 +211,32 @@ msgid ""
 "proof, probably you should also stick with sRGB)."
 msgstr ""
 
-#: ../../color_management/printer_profiles.rst:73
+#: ../../color_management/printer_profiles.rst:83
 msgid ""
 "digiKam Color Management Setup Dialog Page Allows to Customize the Printer "
 "and Soft Proofing Color Profile"
 msgstr ""
 
-#: ../../color_management/printer_profiles.rst:76
+#: ../../color_management/printer_profiles.rst:88
 msgid "Black Point Compensation"
 msgstr ""
 
-#: ../../color_management/printer_profiles.rst:78
+#: ../../color_management/printer_profiles.rst:90
 msgid ""
 "**Black point compensation** is a way to make adjustments between the "
 "maximum black levels of digital files and the black capabilities of various "
 "digital devices, such as a printer."
 msgstr ""
 
-#: ../../color_management/printer_profiles.rst:80
+#: ../../color_management/printer_profiles.rst:92
 msgid ""
 "Black point compensation results depends of the context. Try soft-proofing "
 "with black point compensation on. If you like it, use it. Otherwise, don't "
 "use it."
+msgstr ""
+
+#: ../../color_management/printer_profiles.rst:98
+msgid ""
+"digiKam Image Editor Print Feature Allows Using Your Preferred Printer Color "
+"Profile and Tune the Black Point Compensation."
 msgstr ""
