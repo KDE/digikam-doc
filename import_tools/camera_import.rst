@@ -36,7 +36,6 @@ The **Properties** tab displays file information recorded by the camera and a se
 
 The **Metadata** tab displays internal picture's metadata like Exif, Makernotes, GPS, etc. This information is the same as :ref:`Metadata <metadata_view>` from the digiKam Right Sidebar. Note that all these metadata can be unavailable with some digital cameras.
 
-
 .. figure:: images/camera_item_metadata.webp
     :alt:
     :align: center
@@ -81,6 +80,10 @@ Another option is **Download New**. New images are marked with a **star** in the
 
 While downloading items on your computer, on the status bar you will seen the operations in progress.
 
+.. tip::
+
+    To download quickly on from your camera, you can setup a common target album from your collection where all new files will be stored automatically. See :ref:`this section <camera_behavior>` from the manual for details.
+
 .. _camera_upload:
 
 Uploading Photographs To Your Camera
@@ -105,6 +108,8 @@ When images selection is done, digiKam will ask you to where you want to upload 
 .. note::
 
     Uploading feature is not supported by all camera drivers.
+
+While uploading items to your camera, on the status bar you will seen the operations in progress.
 
 .. _camera_delete:
 
