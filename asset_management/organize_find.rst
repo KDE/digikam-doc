@@ -98,7 +98,7 @@ Now we have a lot of stuff already in our database, but what if we need to chang
 
     The digiKam Metadata Editor Modify XMP Properties
 
-The real work begins here as we will apply tags, captions and a rating to every photograph. Of course, all images requiring the same attribute can be treated as a selection in one action. Lets start with rating or ranking. It's best to start with ranking because for further work you can concentrate on the good shots. 
+The real work begins here as we will apply **Tags**, **Captions** and a **Rating** to every photograph. Of course, all images requiring the same attribute can be treated as a selection in one action. Lets start with rating or ranking. It's best to start with ranking because for further work you can concentrate on the good shots. 
 
 .. _rating_ranking:
 
@@ -142,7 +142,7 @@ Lets continue with tags (or keywords as called by other applications, or categor
 Tagging and Keyword Assignment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Tags are a hierarchical labeling system that you create as you add to it. The important thing to do is to create a system that suits your needs and habits. Are you a (semi)professional who wants to sell photographs to agencies, do you want to publish on a web gallery, or are you just the occasional amateur managing the visual family memory? For all these different use cases you want to design a tag structure that is adapted to it. If you configure it so, digiKam will write the whole hierarchy into XMP fields so that they can be used by your photographic agency using a different application of to automatically create title and caption for web exports. In any case it will serve you well to quickly find a specific picture again.
+Tags are a hierarchical labeling system that you create as you add to it. The important thing to do is to create a system that suits your needs and habits. Are you a (semi)professional who wants to sell photographs to agencies, do you want to publish on a web gallery, or are you just the occasional amateur managing the visual family memory? For all these different use cases you want to design a tag structure that is adapted to it. If you configure it so, digiKam will write the whole hierarchy into XMP fields so that they can be used by your photographic agency using a different application of to automatically create **Title** and **Caption** for web exports. In any case it will serve you well to quickly find a specific picture again.
 
 .. figure:: images/dam_assign_tags.webp
     :alt:
@@ -158,9 +158,9 @@ The hierarchy will provide you with automatic groupings. For example, if you sta
 
     The digiKam Tag Properties Dialog
 
-In the long run you will not remember the details of your pictures and their subject (essentially the metadata in your brain will break down). It is therefore paramount that you **choose general and generic categories**. You will always remember that a particular shot was set at a river bank in a country or continent (aka river, continent), but you'll have forgotten which river it was. Instead of only tagging it with *Okavango* you tag it with river/Africa or river/South Africa. The details you can either put into a tag as well or into the captions. A trick may help you: How would you search for that river with an Internet search engine? That's the way to go!
+In the long run you will not remember the details of your pictures and their subject (essentially the metadata in your brain will break down). It is therefore paramount that you **choose general and generic categories**. You will always remember that a particular shot was set at a river bank in a country or continent (aka river, continent), but you'll have forgotten which river it was. Instead of only tagging it with *Okavango* you tag it with river/Africa or river/South Africa. The details you can either put into a tag as well or into the **Captions**. A trick may help you: How would you search for that river with an Internet search engine? That's the way to go!
 
-Another categorization might be task-oriented as in *print jobs*, *web export*, *personal*, *galleryXYZ*, *clients*, *slideshow*, etc. Create groups as you need them but not more, you should be able to remember by heart the top level tags at least, otherwise the differentiation will become useless. Don't forget that you have all the other attributes to narrow down the search. The right sidebar tag filter combines with any view of left sidebar (albums, calendar, timeline, tag and search). This workflow categorizations can be easily delegated to Color Labels in digiKam.
+Another categorization might be task-oriented as in *print jobs*, *web export*, *personal*, *galleryXYZ*, *clients*, *slideshow*, etc. Create groups as you need them but not more, you should be able to remember by heart the top level tags at least, otherwise the differentiation will become useless. Don't forget that you have all the other attributes to narrow down the search. The right sidebar tag filter combines with any view of left sidebar (albums, calendar, timeline, tag and search). This workflow categorizations can be easily delegated to **Color Labels** in digiKam.
 
 .. figure:: images/dam_color_labels.webp
     :alt:
@@ -176,12 +176,12 @@ The graphics here shows how different metadata overlap. This is a very coarse re
     :alt:
     :align: center
 
-Enough of tags - lets move on to captions or comments, the third major tool for metadata cataloging.
+Enough of **Tags** - lets move on to **Captions** or **Comments**, the third major tool for metadata cataloging.
 
 Captions and Comments
 ~~~~~~~~~~~~~~~~~~~~~
 
-This is already the 4th kind of metadata we present here. What is the distinction of captions compared to tags (comments can be used synonymously, but the IPTC vocabulary stipulates the term 'caption'), keywords? Where tags owe to a hierarchical and generalized description, captions are the opposite: prose description, details, anecdotal stuff. Tags foremostly serve the finding, retrieval and grouping of assets, whereas captions shall entertain, inform, touch the beholder. Naturally they can also be used to filter the catalog, but this is just a byproduct. Captions are to remember the story, the event, the emotions, it's what makes photographs much more interesting to look at, captions put photographs into a context and meaning. If the pictures are an aesthetic statement, caption should be the emotional and informational complement.
+This is already the 4th kind of metadata we present here. What is the distinction of **Captions** compared to **Tags** (*comments* can be used synonymously, but the IPTC vocabulary stipulates the term *caption*), keywords? Where **Tags** owe to a hierarchical and generalized description, **Captions** are the opposite: prose description, details, anecdotal stuff. Tags foremostly serve the finding, retrieval and grouping of assets, whereas captions shall entertain, inform, touch the beholder. Naturally they can also be used to filter the catalog, but this is just a byproduct. Captions are to remember the story, the event, the emotions, it's what makes photographs much more interesting to look at, captions put photographs into a context and meaning. If the pictures are an aesthetic statement, caption should be the emotional and informational complement.
 
 You rarely want nobody to see your photographs. You rather want to share them with friends, your family, other photographers, agencies, put them onto the Internet. And don't tell me you're not interested as to how your photos are being received!
 
@@ -195,7 +195,7 @@ Lets look at this panorama. From far it is not even a nice beach panorama. If yo
 
     digiKam Editing Panorama Title From Captions Sidebar Tab Within Image Editor
 
-And now we tell you that this is the Allies landing site *Omaha Beach* in the French Normandie 60 years after the disembarkation. One starts to dream, have associations, memories, the historical time span is present, you may hear the silence. The caption has totally reframed to perception of this panorama.
+And now we tell you that this is the Allies landing site *Omaha Beach* in the French Normandie 60 years after the disembarkation. One starts to dream, have associations, memories, the historical time span is present, you may hear the silence. The **Caption** has totally reframed to perception of this panorama.
 
 For others to appreciate your photographs, the **Title** is probably more important than the image itself for the interest it creates. When you show pictures, tell a story. Remember that the key is to convey the meaning to viewers, to help them understand what you understand about the subject and what moved you.
 
@@ -209,7 +209,7 @@ For others to appreciate your photographs, the **Title** is probably more import
 
     - Contemplate, research, watch, and talk - but mostly listen.
 
-    - It's okay if the image is less than perfect because it has the strength to stand on its own merit described in the caption.
+    - It's okay if the image is less than perfect because it has the strength to stand on its own merit described in the **caption**.
 
 With digiKam you can enter unlimited amounts of text using internationalized alphabet (UTF-8) as caption. You can enter it for a selection of photos at the same time. When you export images to web services, the captions will be exported at choice into either/or/and caption/title of the web gallery system, no need to re-write the story for publishing.
 
