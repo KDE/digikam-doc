@@ -115,7 +115,7 @@ You can change the filename for a photograph by clicking with the right mouse bu
 
 The renaming pattern can be customize with the **Options** collection on the botton which contains original file name, file extension, owner and group, directory, a dialog for defining a sequence number and a dialog for adding date and time information, either fixed or based on the time information written by the camera into the image file. Each option appended to the renaming pattern can be customized with the **Modifier** button on the right side of pattern editor.
 
-In the sequence number dialog you will find two options: Extension aware numbering and Folder aware numbering. If they are checked digiKam will start a new sequence for every file extension and / or folder.
+In the sequence number dialog you will find two options: **Extension aware numbering** and **Folder aware numbering**. If they are checked digiKam will start a new sequence for every file extension and / or folder.
 
 The Date and Time selection dialog looks like this:
 
@@ -125,9 +125,23 @@ The Date and Time selection dialog looks like this:
 
     The Avanced Rename Date Selector to Setup Modifier
 
-The calendar is active only if “Fixed Date” is selected from the Source: drop down field. This way you can add the same date and time information to the filenames of all imported images or videos. If “Image” is selected instead digiKam will use the time information from the metadata of the image files. With the Format: drop down field you can choose from several standard date/time formats and a custom format. For the latter choose Custom in Format: drop-down list and fill in for example "dd.MM.yyyy hh:mm:ss". For more information, read QDateTime class reference.
+The calendar is active only if **Fixed Date** is selected from the **Source** drop down field. This way you can add the same date and time information to the filenames of all imported images or videos. If **Image** is selected instead digiKam will use the time information from the metadata of the image files. With the **Format** drop down field you can choose from several standard date/time formats and a custom format. For the latter choose **Custom** in **Format** drop-down list and fill in.
 
-In addition these options can be customized further with the help of a number of **modifiers**. A list of all options and modifiers together with a short explanations will open when clicking the info button.
+The **Format** string determines the content of the date generated during download. Any sequence of characters enclosed in single quotes will be included verbatim in the output string, even if it contains formatting characters. Two consecutive single quotes ("''") are replaced by a single quote in the output. All other characters in the format string are included verbatim in the output string.
+
+Formats without separators (e.g. *ddMM*) are supported but must be used with care, as the resulting strings aren't always reliably readable (e.g. if *dM* produces *212* it could mean either the 2nd of December or the 21st of February). Example format strings, assumed that the date is *21 May 2001 14:13:09.120*:
+
+============== =============
+Format	       Result
+============== =============
+dd.MM.yyyy	   21.05.2001
+ddd MMMM d yy  Tue May 21 01
+hh:mm:ss.zzz   14:13:09.120
+hh:mm:ss.z     14:13:09.12
+h:m:s ap       2:13:9 pm
+============== =============
+
+In addition these options can be customized further with the help of a number of **Modifiers**. A list of all options and modifiers together with a short explanations will open when clicking the info button.
 
 .. figure:: images/mainwindow_advanced_rename_help.webp
     :alt:

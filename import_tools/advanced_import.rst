@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Advanced Settings to Import From Digital Camera
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, import, camera
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, import, camera, advanced, convert, rename, scripting
 
 .. metadata-placeholder
 
@@ -15,7 +15,7 @@ Advanced Import Settings
 
 .. contents::
 
-The Settings tab of the Right Sidebar in the Import Interface opens five sections with advanced options for the import processing.
+The **Settings** tab of the Right Sidebar in the Import Interface opens five sections with advanced options for the import processing.
 
 File Renaming Options
 ---------------------
