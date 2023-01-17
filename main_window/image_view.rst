@@ -211,7 +211,7 @@ For each collection registered in the database, digiKam handles an internal tras
 On the bottom of the trash-bin view, a series of buttons allows to restore files in collection or delete them permanently. These are:
 
     - **Undo**: to restore only the last entry in the trash-bin.
-    - **Restore¨**: to restore selection of files from the trash-bin.
+    - **Restore**: to restore selection of files from the trash-bin.
     - **Delete**: to remove **permanently** the items selection or all items from the trash-bin.
 
 All operations processed on trash-bin items will be confirmed to the user.

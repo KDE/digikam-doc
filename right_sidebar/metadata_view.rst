@@ -115,7 +115,7 @@ You can review embedded IPTC information for the selected image in this sidebar 
 XMP Tags
 ~~~~~~~~
 
-The `Extensible Metadata Platform <https://fr.wikipedia.org/wiki/Extensible_Metadata_Platform>`_ (XMP) is an ISO standard, originally created by Adobe Systems Inc., for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
+The `Extensible Metadata Platform <https://en.wikipedia.org/wiki/Extensible_Metadata_Platform>`_ (XMP) is an ISO standard, originally created by Adobe Systems Inc., for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
 
 XMP standardizes a data model, a serialization format and core properties for the definition and processing of extensible metadata. It also provides guidelines for embedding XMP information into popular image, video and document file formats, without breaking their readability by applications that do not support XMP.
 

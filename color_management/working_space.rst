@@ -64,11 +64,11 @@ Which working space do you need to use in digiKam? Working spaces, such as sRGB 
 
 Most working space profiles are characterized by:
 
-    - The place of the gamut into the **Diagram** :guilabel:`(1)` of all colors visible to the average human eyes.
+    - The place of the gamut into the **Diagram** `(1)` of all colors visible to the average human eyes.
 
-    - The **Gamut** :guilabel:`(2)` triangle to define the range of RGB colors of the profile. Red point is on the bottom right corner, Green is on the top, Blue is on the left bottom. Values given around the edge of the gamut passing from the blue, the green and the red points, are the spectral colors in nanometers.
+    - The **Gamut** `(2)` triangle to define the range of RGB colors of the profile. Red point is on the bottom right corner, Green is on the top, Blue is on the left bottom. Values given around the edge of the gamut passing from the blue, the green and the red points, are the spectral colors in nanometers.
 
-    - The **White point** :guilabel:`(3)` to define the total dynamic range of the profile.
+    - The **White point** `(3)` to define the total dynamic range of the profile.
 
     - The **Gamma** to define the transfer function of the profile (not displayed in the gamut).
 
