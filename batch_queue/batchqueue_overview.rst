@@ -25,7 +25,7 @@ On the top middle, this view shows the flat list of tools to apply on items queu
 
 On the top right side, this view shows the settings of the current tool selected on the top middle view. These settings will be saved in the queue and applied to all items to process in batch.
 
-On the bottom left, the view shows all root settings for a queues, as the Raw processing, the file rename rules, the target place to store results, etc.
+On the bottom left, the view shows all root settings for a queues, as the RAW processing, the file rename rules, the target place to store results, etc. The file renaming view is mostly the same than **Advanced Rename** tool available in **Main Window**. See the full description in :ref:`this section <renaming_photograph>` of this manual.
 
 On the bottom right, the view shows the collection of tools available in batch queue manager. You can assign a tool to the current queue by a double click or a drag and drop. This view shows also a list of pre-recorded queue settings to allows to replay later workflow. Finally a tab show a flat list of batch operations processed on queue as a log-file.
 
