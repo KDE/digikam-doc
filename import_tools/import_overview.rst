@@ -15,28 +15,28 @@ Overview
 
 .. contents::
 
-To be able to use your digital camera with digiKam, connect the camera to your computer, switch the camera to the image display mode and turn it on. See your camera's user manual if you need more information.
+To be able to use your digital camera with digiKam, connect the camera to your computer, switch the camera to the image display mode and turn it on. With phone camera, it can be necessary to give right to computer to access of device contents. See your camera's user manual if you need more information.
 
 The Import Interface helps you to get photographs into a digiKam Album, whether it is directly from your camera or a scanner, from a USB mass storage device, via a card reader or from a local or remote folder. You can access the Import Interface by
 
-Import --> Cameras
+:menuselection:`Import --> Cameras`
 
-    Select one of the cameras from the submenu or choose Add Camera Manually...
+    Select one of the cameras from the submenu or choose **Add Camera Manually**.
 
     The latter will open the dialog described in the Camera Settings section of this handbook. If you want to have more information about how digiKam supports digital cameras, please a take a look at this section..
 
-Import --> USB Storage Devices
+:menuselection:`Import --> USB Storage Devices`
 
     Select one of the USB devices from the submenu.
 
-Import --> Card Readers
+:menuselection:`Import --> Card Readers`
 
     Select one of the card readers from the submenu.
 
-Import --> Add Images... (Ctrl+Alt+I)
+:menuselection:`Import --> Add Images...` :kbd:`Ctrl+Alt+I`
 
     Select a source folder from the dialog that opens.
 
-Import --> Import from Scanner
+:menuselection:`Import --> Import from Scanner`
 
     Tool to communicate with a digital scanner and import images.

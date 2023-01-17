@@ -105,6 +105,7 @@ Search View          Shift+Ctrl+F6
 Similarity View      Shift+Ctrl+F7
 Map View             Shift+Ctrl+F8
 People View          Shift+Ctrl+F9
+Import Images        Ctrl+Alt+I
 ==================== =============
 
 - General Shortcuts:
