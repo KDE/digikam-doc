@@ -113,6 +113,12 @@ Renaming a Photograph
 
 You can change the filename for a photograph by clicking with the right mouse button over a thumbnail and selecting **Rename** :kbd:`F2`. Remember to keep the file extension (.jpg, .tif, etc.).
 
+.. figure:: images/mainwindow_advanced_rename_date_selector.webp
+    :alt:
+    :align: center
+
+    The Avanced Rename Date Selector to Setup Modifier
+
 You can also batch rename photographs. One method is to use the :ref:`Batch Queue Manager <batch_queue>` :kbd:`B`. Another one is to select multiple photographs and then press :kbd:`F2`. A dialog will open showing the list of selected photographs with their current name and the new name. These two are identical at first until you place the cursor in the input field, type in something and/or select a modifier from the buttons below.
 
 .. tip::
