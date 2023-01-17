@@ -105,21 +105,21 @@ The photograph is rotated without loss of quality and the orientation informatio
 Renaming a Photograph
 ~~~~~~~~~~~~~~~~~~~~~
 
-You can change the filename for a photograph by clicking with the right mouse button over a thumbnail and selecting **Rename** :kbd:`F2`. Remember to keep the file extension (.jpg, .tif, etc.). You can also select multiple photographs and then press :kbd:`F2` to batch rename files. A dialog will open showing the list of selected photographs with their current name and the new name.
+You can change the filename for a photograph by clicking with the right mouse button over a thumbnail and selecting **Rename** :kbd:`F2`. You can also select multiple photographs to batch rename files. A dialog will open showing the list of selected photographs with their current name and the new name.
 
 .. figure:: images/mainwindow_advanced_rename.webp
     :alt:
     :align: center
 
-    The digiKam Advanced Rename Tool
+    The digiKam Advanced Rename Tool Dialog
 
-The renaming pattern can be customize with the **Options** collection on the botton which contains original file name, file extension, owner and group, directory, a dialog for defining a sequence number and a dialog for adding date and time information, either fixed or based on the time information written by the camera into the image file. Each option appended to the renaming pattern can be customized with the **Modifier** button on the right side of pattern editor.
+The renaming pattern can be customize with the **Options** collection on the botton which contains original file name, file extension, owner and group, directory, a dialog for defining a sequence number and a dialog for adding date and time information, either fixed or based on the time information written by the camera into the image file. Each option appended to the renaming pattern can be customized with the **Modifier** button on the right side of renaming pattern editor.
 
 .. figure:: images/mainwindow_advanced_rename_number.webp
     :alt:
     :align: center
 
-    The Avanced Rename Sequence Number Dialog to Setup Modifiers
+    The Avanced Rename Sequence Number Dialog to Setup Modifiers in Renaming Pattern
 
 In the sequence **Number** dialog you will find two options: **Extension aware numbering** and **Folder aware numbering**. If they are checked digiKam will start a new sequence for every file extension and / or folder.
 
@@ -129,7 +129,7 @@ The **Date and Time** selection dialog looks like this:
     :alt:
     :align: center
 
-    The Avanced Rename Date Selector to Setup Modifiers
+    The Avanced Rename Date Selector to Setup Modifiers in Renaming Pattern
 
 The calendar is active only if **Fixed Date** is selected from the **Source** drop down field. This way you can add the same date and time information to the filenames of all imported images or videos. If **Image** is selected instead digiKam will use the time information from the metadata of the image files. With the **Format** drop down field you can choose from several standard date/time formats and a custom format. For the latter choose **Custom** in **Format** drop-down list and fill in.
 
@@ -153,7 +153,7 @@ The **Database** dialog allows to select items information registered in databas
     :alt:
     :align: center
 
-    The Avanced Rename Date Selector to Setup Modifiers
+    The Avanced Rename Date Selector to Setup Modifiers in Renaming Pattern
 
 The **Metadata** dialog allows to select files metadata information taken from **Exif**, **IPTC**, **XMP**, etc, as **Modifiers**.
 
@@ -161,9 +161,9 @@ The **Metadata** dialog allows to select files metadata information taken from *
     :alt:
     :align: center
 
-    The Avanced Rename Date Selector to Setup Modifiers
+    The Avanced Rename Date Selector to Setup Modifiers in Renaming Pattern
 
-In addition these options can be customized further with the help of a number of **Modifiers**. A list of all options and modifiers together with a short explanations will open when clicking the info button.
+In addition these options can be customized further with the help of a number of **Modifiers**. A list of all **Options** and **Modifiers** together with a short explanations will open when clicking the info button.
 
 .. figure:: images/mainwindow_advanced_rename_help.webp
     :alt:
@@ -175,7 +175,7 @@ In addition these options can be customized further with the help of a number of
 
     The sequence number may be needed if you have a camera with a very fast multi-shoot mode where it is possible to get two photographs with exactly the same data and time.
 
-You can also batch rename photographs using the :ref:`Batch Queue Manager <batch_queue>` :kbd:`B` and with the Import tool during camera download. These two are identical at first until you place the cursor in the input field, type in something and/or select a modifier from the buttons below.
+You can also batch rename photographs using the :ref:`Batch Queue Manager <batch_queue>` :kbd:`B`, or with the :ref:`Import Tool <advanced_import>` during downloads from camera. These two are mostly the same. Place the cursor in the renaming pattern editor, type in something and/or select **Modifiers** and **Options** from the buttons.
 
 .. _deleting_photograph:
 
@@ -206,7 +206,7 @@ For each collection registered in the database, digiKam handles an internal tras
 
 .. note::
 
-    digiKam does not use the Desktop recycler as operations to move files to delete from a network collection will take a while. It will be exactly the same problem with a collection hosted in a different disk partition than your home directory managed by the Desktop. Moving items to delete to a self-contained trash-bin from the collection will be universal and fast.  
+    digiKam does not use the Desktop recycler as operations to move files to delete from a network collection will take a while. It will be exactly the same problem with a collection hosted in a different disk partition than your home directory managed by the Desktop. Moving items to delete to a self-contained trash-bin from the collection will be universal and fast.
 
 On the bottom of the trash-bin view, a series of buttons allows to restore files in collection or delete them permanently. These are:
 
@@ -250,7 +250,7 @@ You can put the whole selection into one group using **Group Selected Here** or 
 .. important::
 
     If you Group files automatically (based on time or filename for example), the smaller file size from the group is preferred as the leading item. The idea is that when previewing, faster loading of the image will allow for a quick preview.
-    
+
     If you group files manually from icon-view, the selected item used to show context menu and group files will be used as leading item.
 
 The next group in the menu is to control whether only the reference icon of the group (the first of the group according to the sorting order at the moment of grouping) is displayed or all of them. These two functions can also be accessed by the little grouping indicator (folder symbol with number) on the reference icon.
@@ -275,7 +275,7 @@ What can you do with a group? In terms of functions of digiKam you can perform a
 
 .. note::
 
-    Operations to perform over grouped items are managed by Setup/Miscs/Grouping settings. See :ref:`this section <grouping_settings>` from the manual for details. 
+    Operations to perform over grouped items are managed by Setup/Miscs/Grouping settings. See :ref:`this section <grouping_settings>` from the manual for details.
 
 In terms of use cases you can for instance group videos together with the .jpg - images related to them which most cameras provide or RAW images with their JPG counterpart. This is made easy by **Group Selected By Filename**. In the screenshot above exposure bracketed images are being grouped. One could do the same for archiving purposes with images used for a panorama. If you have very specific requirements for documenting of editing steps the :ref:`Versions <versions_view>` function of digiKam cannot meet you may find a solution using grouping. We can think of more use cases for grouping but We don't want to overload this section of the handbook here. Maybe a last hint for your own ideas: grouping is not restricted to items out of the same album. The whole group (open or closed) will only be visible in the album of the reference item. The other members of the group will be visible in their own albums only if the group is open. Can be confusing, use with care.
 
