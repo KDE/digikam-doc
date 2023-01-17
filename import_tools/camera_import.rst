@@ -92,9 +92,15 @@ To upload photographs from your computer to your camera click :menuselection:`It
     :alt:
     :align: center
 
-    The Selection of ITems to Upload on the Camera
+    The Selection of Items to Upload on the Camera
 
 When images selection is done, digiKam will ask you to where you want to upload the files on your camera. A camera folder selection dialog will appear. Just select one folder and press **OK** to start uploading. No images will be removed from your computer.
+
+.. figure:: images/camera_upload_select_camera_folder.webp
+    :alt:
+    :align: center
+
+    The Selection of Camera Folder to Upload Items
 
 .. note::
 
