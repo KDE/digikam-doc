@@ -53,15 +53,15 @@ CD, DVD, Blue Ray, Optical Drives
 
 Physical deterioration of the media happens more rapidly with paper and CD-Rs than the average of film. Yet while film lasts longer (sometimes decades longer) than other forms of media, the right kind of backup of digital media never loses anything. Film decays - digital 1's and 0's do not, and film starts to decay the moment it's created and developed. It will never have the same color, contrast, etc. that it did have a moment before. Digital doesn't do that. However, digital is susceptible to corruption! And yes, physical media such as floppies and magnetic hard drives are also susceptible to the decay of the medium, just like CDs are. They just last longer.
 
-To combat the problem of CDs/DVDs, they need to be properly cared for and not trusted for more than a few years. Thankfully you can purchase archive-quality CDs and DVDs which last longer, though they are much more difficult to obtain and are much more expensive. There are offers out there for gold-plated DVDs, $2 a piece claiming 100 years storage life (if you care to believe it).
+To combat the problem of DVDs/Blue-ray, they need to be properly cared for and not trusted for more than a few years. Thankfully you can purchase archive-quality CDs and DVDs which last longer, though they are much more difficult to obtain and are much more expensive. There are offers out there for gold-plated DVDs, few euros a piece claiming 100 years storage life (if you care to believe it).
 
-CD/DVD disks may become unreadable, but you can reduce the risk using good disks and a good recorder, and storing them in a correct way. The best DVD recorders are not much more expensive than the cheapest, but they write in a much more reliable way. It's a matter of choosing the right one.
+DVD/Blue-ray disks may become unreadable, but you can reduce the risk using good disks and a good recorder, and storing them in a correct way. The best DVD recorders are not much more expensive than the cheapest, but they write in a much more reliable way. It's a matter of choosing the right one.
 
-Essentially, CDs and DVDs are very prone to errors, even in a freshly written state. That's why they are heavily protected with a checksum mechanism (75% of data are effective data, the rest is formatting and checksum overhead). But even with that massive amount of protection they will suffer deterioration from chemical aging, ultra-violet exposure, scratches, dust, etc.
+Essentially,  DVDs/Blue-ray are very prone to errors, even in a freshly written state. That's why they are heavily protected with a checksum mechanism (75% of data are effective data, the rest is formatting and checksum overhead). But even with that massive amount of protection they will suffer deterioration from chemical aging, ultra-violet exposure, scratches, dust, etc.
 
-For damaged CDs and DVDs, there is an inexpensive program called IsoBuster from which will do seeming miracles on CDs and DVDs. It runs on Windows and Linux®; but not (yet) on Macs. Similarly, there are applications designed to get data from damaged floppies, hard drives, flash media such as camera memory and USB drives, and so forth.
+For damaged DVDs/Blue-ray, Wikipedia `list all common applications <https://en.wikipedia.org/wiki/Data_recovery#List_of_data_recovery_software>`_ designed to get data from damaged floppies, hard drives, flash media such as camera memory and USB drives, and so forth.
 
-Optical media: Blu-ray disks seem to win the format war against 'HD DVD'. A dual-layer Blu-ray disc can store 50 GB, almost six times the capacity of a dual layer DVD at 8.5 GB. Everything that has been said about CDs/DVDs applies to Blu-ray disks as well.
+Optical media Blu-ray disks seem to win the format war against 'HD DVD'. A dual-layer Blu-ray disc can store 50 GB, almost six times the capacity of a dual layer DVD at 8.5 GB. Everything that has been said about CDs/DVDs applies to Blu-ray disks as well.
 
 Best practice: burn them slowly with a good recorder on archive quality media in an open, non-proprietary format, read the data back to verify, label them with some descriptive text + date & author, lock them away where it is clean, dark, animal safe and dry. And do not forget to copy them over to the next generation of media before you throw away your last piece of hardware or software able to read them.
 
@@ -72,20 +72,20 @@ Disk manufacturers keep their statistics to themselves. A manufacturer guaranty 
 
 In a nutshell: Disks run longest when operating between 35°C and 45°C, at lower temperatures the error rates increases dramatically. Controller parts (electronics) are the foremost sources of failure, SMART does not diagnose any of this. Some SMART errors are indicative of imminent failure, in particular scan errors and relocation counts. Lifetime expectancy is 4-5 years.
 
-But all depends much on the real use case and some luck. For example We have a Fujitsu notebook that is running 24/7 since 1998, almost ten years without the slightest hick up. Just luck? In general and contrary to intuition or ecological considerations, running a hard drive permanently results in a longer lifetime than switching it on and off all the time. It has even been reported that aggressive power management spinning down the drive can harm it quickly. Making it working hard shortens the lifetime somewhat. The worst factors for HDD probably are vibrations, shocks, and cold temperatures.
+In general and contrary to intuition or ecological considerations, running a hard drive permanently results in a longer lifetime than switching it on and off all the time. It has even been reported that aggressive power management spinning down the drive can harm it quickly. Making it working hard shortens the lifetime somewhat. The worst factors for HDD probably are vibrations, shocks, and cold temperatures.
 
 If your disk is making weird noises, normal file recovery software isn’t going to work. Do a quick backup if that is going to happen to you. (Use dd utility if possible, not a normal file backup since dd reads in a smooth, spiraling stream from beginning to end and doesn't stress the mechanics). There are specialist companies that can recover data from otherwise destroyed drive, but they are costly, plan for 2000$ minimum charge.
 
 Linux `SmartMonTools <https://en.wikipedia.org/wiki/Smartmontools>`_ suite allows to query the storage hardware devices for future failure. We highly recommend to use this kind of tool on your computer.
 
-Solid State Drives: USB Sticks, Memory Cards, Flash Disks
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Solid State Drives
+~~~~~~~~~~~~~~~~~~
 
 SSDs are mechanically more robust than HDDs and suffer much less on that front when they are plugged into the computer. They will replace HDD in time as capacity, robustest, and price become more and more a good solution as permanent data storage devices.
 
 In case of use as external device, one major cause for data loss (often recoverable) is the unsafe removal of SDDs from a computer. Before data is saved from a computer memory to any attached device, it remains for some time in buffers. In hard drives this means seconds at most, whereas with SDDs it can be tens of minutes. Therefore, before you disconnect a flash device, always activate data flushing through software (often called *safely remove device*).
 
-So, in all cases SSDs as internal devices are the solution to host the database and the collections.
+**In all cases SSDs as internal devices are the solution to host the database and the collections.**
 
 Magnetic Media
 ~~~~~~~~~~~~~~
@@ -187,7 +187,7 @@ ZFS from Oracle seems to be one of two candidates to deal with disk errors on a 
 
 This is for the courageous ones. Fuse ZFS
 
-Oracle has also started an initiative with its btrfs file system, which still is in an alpha stage. It employs the same protection technique as zfs does, and it's available on Linux®, although it is not yet part of the stock kernel.
+Oracle has also started an initiative with its **btrfs** file system. It employs the same protection technique as **zfs** does, and it's available on Linux®.
 
 Human Errors
 ------------
@@ -195,7 +195,7 @@ Human Errors
 Theft And Accidents
 ~~~~~~~~~~~~~~~~~~~
 
-Do not underestimate it! Those two factor account for 86% of notebook and 46% for desktop system data losses. For notebooks, theft counts for 50% alone.
+Do not underestimate it. Those two factor account for 86% of notebook and 46% for desktop system data losses. For notebooks, theft counts for 50% alone.
 
 Malware
 ~~~~~~~
