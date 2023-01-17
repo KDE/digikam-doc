@@ -118,6 +118,12 @@ Deleting Photographs From The Camera
 
 Once you are happy with the downloaded photographs that you wanted, you are ready to delete photographs from the Camera. You can delete all of the photographs at once by clicking the :menuselection:`Item --> Delete All` button. If you just want to delete a selection of the photographs, you have to select those that you want to delete and click :menuselection:`Item --> Delete Selected`. You may also select :menuselection:`Item --> Delete New`, for example if you feel that the images marked with the star are not worth downloading.
 
+.. figure:: images/camera_item_delete_warning.webp
+    :alt:
+    :align: center
+
+    The Warning Dialog When Items Must be Deleted from Camera
+
 .. caution::
 
     Please note that there is no way to restore a photo that you have deleted from the camera. The photographs are not moved to the internal Trash Can, they are removed completely. It is best to double check that you have successfully downloaded a photograph into a digiKam album before you delete it from the camera. Anyway, if you plan to empty the camera card, you better do that from the camera menu because it is much quicker.
