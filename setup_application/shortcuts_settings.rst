@@ -82,14 +82,14 @@ Fit to selection    Ctrl+Alt+S
 
 - Slide-Show:
 
-==================== ===========
+==================== ============
 Action               Shortcut
-==================== ===========
+==================== ============
 Play All             F9
 Play Selection       Alt+F9
 Play with Sub-Albums Shift+F9
-Presentation         Shif+Alt+F9
-==================== ===========
+Presentation         Shift+Alt+F9
+==================== ============
 
 - Main Window:
 
