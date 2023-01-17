@@ -113,8 +113,7 @@ Renaming a Photograph
 
 You can change the filename for a photograph by clicking with the right mouse button over a thumbnail and selecting **Rename** :kbd:`F2`. Remember to keep the file extension (.jpg, .tif, etc.).
 
-
-If you select Camera filenames the image filenames will not be altered. But you have the option to change their case to upper or lower case with the “Change case to:” drop down field. If you select Customize you will be able to put together a renaming pattern from the Options drop down menu which contains original file name, file extension, owner and group, directory, a dialog for defining a sequence number and a dialog for adding date and time information, either fixed or based on the time information written by the camera into the image file.
+The renaming pattern can be customize with the **Options** collection on the botton which contains original file name, file extension, owner and group, directory, a dialog for defining a sequence number and a dialog for adding date and time information, either fixed or based on the time information written by the camera into the image file. Each option appended to the renaming pattern can be customized with the **Modifier** button on the right side of pattern editor.
 
 In the sequence number dialog you will find two options: Extension aware numbering and Folder aware numbering. If they are checked digiKam will start a new sequence for every file extension and / or folder.
 
@@ -128,23 +127,19 @@ The Date and Time selection dialog looks like this:
 
 The calendar is active only if “Fixed Date” is selected from the Source: drop down field. This way you can add the same date and time information to the filenames of all imported images or videos. If “Image” is selected instead digiKam will use the time information from the metadata of the image files. With the Format: drop down field you can choose from several standard date/time formats and a custom format. For the latter choose Custom in Format: drop-down list and fill in for example "dd.MM.yyyy hh:mm:ss". For more information, read QDateTime class reference.
 
-In addition these options can be customized further with the help of a number of modifiers. A list of all options and modifiers together with a short explanations will open when clicking the info button.
+In addition these options can be customized further with the help of a number of **modifiers**. A list of all options and modifiers together with a short explanations will open when clicking the info button.
+
+.. figure:: images/mainwindow_advanced_rename_help.webp
+    :alt:
+    :align: center
+
+    The Advanced Rename Helper View for Modifiers Choices
 
 .. tip::
 
     The sequence number may be needed if you have a camera with a very fast multi-shoot mode where it is possible to get two photographs with exactly the same data and time.
 
 You can also batch rename photographs. One method is to use the :ref:`Batch Queue Manager <batch_queue>` :kbd:`B`. Another one is to select multiple photographs and then press :kbd:`F2`. A dialog will open showing the list of selected photographs with their current name and the new name. These two are identical at first until you place the cursor in the input field, type in something and/or select a modifier from the buttons below.
-
-.. tip::
-
-    The powerful rename tool has a self description of all features available to process renaming. Take a look of context help from the tooltip button on the right side of the text field used to enter rename modifiers.
-
-    .. figure:: images/mainwindow_advanced_rename_help.webp
-        :alt:
-        :align: center
-
-        The Advanced Rename Helper View
 
 .. _deleting_photograph:
 

@@ -28,9 +28,9 @@ Cameras often do not use very meaningful filenames for photographs. The filename
 
     The Import Tool File Renames Advanced Settings
 
-The file **Camera filenames** allows to use the file names provided by camera. You can file names case with option **Change case to** where choice can be **Leave-as-is**, **Upper** case, or **Lower** case.
+If you select **Camera filenames** the image filenames will not be altered. But you have the option to change their case to **upper** or **lower** case with the **Change case to** drop down field. If you select **Customize** you will be able to put together a renaming pattern from the **Options** drop down menu. The **Modifier** drop down menu allows to customize each option appended to the renaming pattern.
 
-The file **Customize** renaming view is mostly the same than **Advanced Rename** tool available in **Main Window**. See the full description in :ref:`this section <renaming_photograph>` of this manual.
+The file customize **Renaming Options** and **Modifier** possibilities are mostly the same than **Advanced Rename** tool available in **Main Window**. See the full description in :ref:`this section <renaming_photograph>` of this manual.
 
 The new filename that digiKam will use for the photographs when they are downloaded can be shown underneath the **Customize** settings. Changing item selection from the icon-view will update these information. The renaming settings will be remembered the next time you use the camera interface.
 
