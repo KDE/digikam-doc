@@ -123,7 +123,7 @@ The renaming pattern can be customize with the **Options** collection on the bot
 
 In the sequence **Number** dialog you will find two options: **Extension aware numbering** and **Folder aware numbering**. If they are checked digiKam will start a new sequence for every file extension and / or folder.
 
-The Date and Time selection dialog looks like this:
+The **Date and Time** selection dialog looks like this:
 
 .. figure:: images/mainwindow_advanced_rename_date_selector.webp
     :alt:
@@ -133,14 +133,30 @@ The Date and Time selection dialog looks like this:
 
 The calendar is active only if **Fixed Date** is selected from the **Source** drop down field. This way you can add the same date and time information to the filenames of all imported images or videos. If **Image** is selected instead digiKam will use the time information from the metadata of the image files. With the **Format** drop down field you can choose from several standard date/time formats and a custom format. For the latter choose **Custom** in **Format** drop-down list and fill in.
 
+The **Database** dialog allows to select items information registered in database.
+
+.. figure:: images/mainwindow_advanced_rename_database.webp
+    :alt:
+    :align: center
+
+    The Avanced Rename Date Selector to Setup Modifiers
+
+The **Metadata** dialog allows to select files metadata information taken from **Exif**, *IPTC**, **XMP**, etc.
+
+.. figure:: images/mainwindow_advanced_rename_metadata.webp
+    :alt:
+    :align: center
+
+    The Avanced Rename Date Selector to Setup Modifiers
+
 The **Format** string determines the content of the date generated during download. Any sequence of characters enclosed in single quotes will be included verbatim in the output string, even if it contains formatting characters. Two consecutive single quotes ("''") are replaced by a single quote in the output. All other characters in the format string are included verbatim in the output string.
 
 Formats without separators (e.g. *ddMM*) are supported but must be used with care, as the resulting strings aren't always reliably readable (e.g. if *dM* produces *212* it could mean either the 2nd of December or the 21st of February). Example format strings, assumed that the date is *21 May 2001 14:13:09.120*:
 
 ============== =============
-Format	       Result
+Format         Result
 ============== =============
-dd.MM.yyyy	   21.05.2001
+dd.MM.yyyy     21.05.2001
 ddd MMMM d yy  Tue May 21 01
 hh:mm:ss.zzz   14:13:09.120
 hh:mm:ss.z     14:13:09.12
