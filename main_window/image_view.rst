@@ -105,13 +105,13 @@ The photograph is rotated without loss of quality and the orientation informatio
 Renaming a Photograph
 ~~~~~~~~~~~~~~~~~~~~~
 
+You can change the filename for a photograph by clicking with the right mouse button over a thumbnail and selecting **Rename** :kbd:`F2`. Remember to keep the file extension (.jpg, .tif, etc.). You can also select multiple photographs and then press :kbd:`F2` to batch rename files. A dialog will open showing the list of selected photographs with their current name and the new name.
+
 .. figure:: images/mainwindow_advanced_rename.webp
     :alt:
     :align: center
 
     The digiKam Advanced Rename Tool
-
-You can change the filename for a photograph by clicking with the right mouse button over a thumbnail and selecting **Rename** :kbd:`F2`. Remember to keep the file extension (.jpg, .tif, etc.).
 
 The renaming pattern can be customize with the **Options** collection on the botton which contains original file name, file extension, owner and group, directory, a dialog for defining a sequence number and a dialog for adding date and time information, either fixed or based on the time information written by the camera into the image file. Each option appended to the renaming pattern can be customized with the **Modifier** button on the right side of pattern editor.
 
@@ -175,7 +175,7 @@ In addition these options can be customized further with the help of a number of
 
     The sequence number may be needed if you have a camera with a very fast multi-shoot mode where it is possible to get two photographs with exactly the same data and time.
 
-You can also batch rename photographs. One method is to use the :ref:`Batch Queue Manager <batch_queue>` :kbd:`B`. Another one is to select multiple photographs and then press :kbd:`F2`. A dialog will open showing the list of selected photographs with their current name and the new name. These two are identical at first until you place the cursor in the input field, type in something and/or select a modifier from the buttons below.
+You can also batch rename photographs using the :ref:`Batch Queue Manager <batch_queue>` :kbd:`B` and with the Import tool during camera download. These two are identical at first until you place the cursor in the input field, type in something and/or select a modifier from the buttons below.
 
 .. _deleting_photograph:
 
