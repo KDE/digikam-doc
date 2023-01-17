@@ -60,6 +60,12 @@ Downloading Photographs To Your Computer
 
 To download photographs from your camera to your computer click the **Download** button on the main toolbar and then click **Download All** (or use :menuselection:`Item --> Download All` from the main menu). This will download all of the photographs on the camera with the settings you used with your last download (Settings tab). The download process will not remove the photographs from the camera. It is always advisable to check that the photographs have downloaded safely into the Album you were expecting before deleting them from the camera.
 
+.. figure:: images/camera_download_select_album.webp
+    :alt:
+    :align: center
+
+    The Selection of Target Album to Download new Items from Camera
+
 If you do not want to download all of the photographs you can select just those that you need using the standard selection methods. Once you have the photographs selected, click **Download** and then **Download Selected**. The **Download Selected** button will be grayed out until you have selected some photographs.
 
 Another option is **Download New**. New images are marked with a **star** in the upper right corner of the image icon. Once images are downloaded a **downloaded already** entry will be made in the digiKam database and they are marked with a checker. Obviously, if you choose this handy option, it will download the new images only.
@@ -70,6 +76,8 @@ Another option is **Download New**. New images are marked with a **star** in the
 
     On the Left an Item not yet Downloaded from the Camera with a Star on the Top Right Corner
     On the Right a Check Marker Indicate that Item have been Already Downloaded from Camera
+
+While downloading items on your computer, on the status bar you will seen the operations in progress.
 
 Uploading Photographs To Your Camera
 ------------------------------------
