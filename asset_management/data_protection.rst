@@ -139,11 +139,11 @@ Web Storage Services
 
 Amazon Web Services includes S3 - Simple Storage Service. With appropriate configuration, you can mount S3 as a drive on Linux®, Mac, and Windows systems, allowing you to use it as a backup destination for your favorite software. Google Shared Storage is another popular offer where one can store infinite amount of data.
 
-It is expensive compared to hard drives at home - 40 GB cost $75 a year, 400 GB cost $500. And you have to transfer the images over the (a comparatively slow) Internet.
+It is expensive compared to hard drives at home. And you have to transfer the images over the (a comparatively slow) Internet.
 
 We think as a safeguard against localized data loss of the most essential images it's not a bad idea at all, but it is not a general backup solution, much too slow for that.
 
-Google Photo, Flickr (Yahoo) and Foto-Community 23hq.com provide online storage services specialist on photographie. Their free space is limited to 1 GB and you don't want to have full resolution images online. But the pro-accounts offer more, in the case of Flickr, dramatically more. For a mere 25$ a year you get unlimited (sic! reality check needed here) space.
+Google Photo, and Flickr provide online storage services specialist on photographie. Their free space is limited and you don't want to have full resolution images online. But the pro-accounts offer more,
 
 In terms of data retention the web space solution is probably pretty safe. Transmission errors are corrected (thanks to the TCP protocol) and the big companies usually have backup included plus distributed storage so that they are disaster proof within themselves.
 
@@ -222,8 +222,8 @@ We would like to dispel some common myths:
 
     - Viruses are the biggest thread to digital data: Wrong. Theft, and human errors are the primary cause of data loss. 
 
-Make Your Budget: Data Size, Required Storage Volume Estimation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Required Storage Volume Estimation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Digital camera sensors are 1-2 aperture stops away from fundamental physical limitations. What we mean is this: as technology evolves, there is a natural limit to its progress. Sensitivity and noise characteristics for any kind of light sensor are not far from that limit.
 
