@@ -84,6 +84,12 @@ Uploading Photographs To Your Camera
 
 To upload photographs from your computer to your camera click :menuselection:`Item --> Upload...` :kbd:`Ctrl+U` in the Import Tool menu. A standard file selection dialog will appear to select the files from your computer for copying to your camera. You can select more than one file using the standard selection methods.
 
+.. figure:: images/camera_upload_select_items.webp
+    :alt:
+    :align: center
+
+    The Selection of ITems to Upload on the Camera
+
 When images selection is done, digiKam will ask you to where you want to upload the files on your camera. A camera folder selection dialog will appear. Just select one folder and press **OK** to start uploading. No images will be removed from your computer.
 
 .. note::
