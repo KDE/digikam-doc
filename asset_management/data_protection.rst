@@ -206,23 +206,23 @@ Panic is a Factor in Data Loss
 
 Human error, as in everything, is a major problem in data loss. Take a deep breath and stop! Panic is a common reaction, and people do really stupid things. Experienced users will pull the wrong drive from a RAID array or reformat a drive, destroying all their information. Acting without thinking is dangerous to your data. Stop stressing about the loss and don’t do anything to the disk. Better yet, stop using the computer until you have a plan. Sit down and explain you plan to a laymen or better, laywoman. You will be amazed how many stupid ideas you'll discover yourself in such an exercise.
 
-If your disk is making weird noises, normal file recovery software isn’t going to work. Do a quick backup if that is going to happen to you. If the drive is still spinning and you can’t find your data, look for a data recovery utility and backup to another computer or drive. (Non-Linux users: Google for **free data recovery software** for some options, including one from Ontrack). The important thing is to download them onto another drive, either on another computer, or onto a USB thumb drive or hard disk. It is good practice to save the recovered data to another disk. dd is your friend on Linux systems.
+If your disk is making weird noises, normal file recovery software isn’t going to work. Do a quick backup if that is going to happen to you. If the drive is still spinning and you can’t find your data, look for a data recovery utility and backup to another computer or drive. An Universal and powerful solution can be to use  `CloneZilla open-source suite <https://en.wikipedia.org/wiki/Clonezilla>`_. The important thing is to download them onto another drive, either on another computer, or onto a USB thumb drive or hard disk. It is good practice to save the recovered data to another disk. `dd tool <https://en.wikipedia.org/wiki/Dd_(Unix)>`_  is your friend on Linux systems.
 
 Common Myths Dispelled
 ~~~~~~~~~~~~~~~~~~~~~~
 
 We would like to dispel some common myths:
 
-    - Open Source file systems are less prone to data loss than proprietary systems: Wrong, NTFS is rather a tiny notch better than ext4, ReiserFs, JFS, XFS, to name just the most popular file systems that often come as default FS with distributions. A brilliant article about it is here: link
+    - Open Source file systems are less prone to data loss than proprietary systems: Wrong, NTFS is rather a tiny notch better than ext4, ReiserFs, JFS, XFS, to name just the most popular file systems that often come as default FS with distributions.
 
     - Journaling files systems prevent data corruption/loss: Wrong, they only speed up the scan process in case of a sudden interrupt during operation and prevent ambiguous states. But if a file was not entirely saved before the mishap, it'll be lost.
 
-    - RAID systems prevent data corruption/loss: Mostly wrong, RAID0 and 1 prevent you from nothing, RAID5 can prevent data loss due to disk-failures (but not from disk or file system errors). Many low-end RAID controllers (most mother board controllers are) don’t report problems, figuring you’ll never notice. If you do notice, months later, what is the chance that you’ll know it was the controller’s fault? One insidious problem is corruption of RAID 5 parity data. It is pretty simple to check a file by reading it and matching the metadata. Checking parity data is much more difficult, so you typically won’t see parity errors until a rebuild. Then, of course, it is too late.
+    - `RAID <https://en.wikipedia.org/wiki/RAID>`_ systems prevent data corruption/loss: Mostly wrong, RAID0 and 1 prevent you from nothing, RAID5 can prevent data loss due to disk-failures (but not from disk or file system errors). Many low-end RAID controllers (most mother board controllers are) don’t report problems, figuring you’ll never notice. If you do notice, months later, what is the chance that you’ll know it was the controller’s fault? One insidious problem is corruption of RAID 5 parity data. It is pretty simple to check a file by reading it and matching the metadata. Checking parity data is much more difficult, so you typically won’t see parity errors until a rebuild. Then, of course, it is too late.
 
     - Viruses are the biggest thread to digital data: Wrong. Theft, and human errors are the primary cause of data loss. 
 
-Required Storage Volume Estimation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Storage Volume Estimation
+-------------------------
 
 Digital camera sensors are 1-2 aperture stops away from fundamental physical limitations. What we mean is this: as technology evolves, there is a natural limit to its progress. Sensitivity and noise characteristics for any kind of light sensor are not far from that limit.
 
@@ -235,9 +235,9 @@ In order to estimate the amount of storage space you have to plan for, simply de
 The more ambitious ones out there will need more space, much more maybe. Think of buying a file server, Giga-Ethernet comes integrated into motherboards today and it's a flick to fetch the files over the local network. Speaking about modern mobos: they now have external SATA connectors. This makes it really a trifle to buy an external SATA drive and hook it up to your machine. 1000 GB drives will hit the market this year (2008). These are terrific compact storage containers for backup swapping: keep one drive at home and one somewhere else.
 
 Backup and Recover
-~~~~~~~~~~~~~~~~~~
+------------------
 
-A 4TB HD costs €100 today. Do not blame anybody else for data loss! 6% of all PCs will suffer an episode of data loss in any given year. Backup your data often according to a plan, and back it up and test the backup before you do anything dramatic like re-installing your OS, changing disks, resizing partitions and so on.
+A 4TB HD costs €100 today. Do not blame anybody else for data loss. 6% of all PCs will suffer an episode of data loss in any given year. Backup your data often according to a plan, and back it up and test the backup before you do anything dramatic like re-installing your OS, changing disks, resizing partitions and so on.
 
 Disaster Prevention
 ~~~~~~~~~~~~~~~~~~~
@@ -299,7 +299,7 @@ In order for your valuable images to survive the next 40 years or so (because th
     - Save your photos in an open, non-proprietary standard.
 
 Keep Up With Technology
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 As the future is unforeseeable by nature, everything said today is to be taken with caution, and to be reviewed as we advance. Unfortunately there is no shortcut possible to some basic vigilance. Every 5-8 years at least one should ask oneself the question of backwards compatibility of current systems. The less variants we used in the past the less questions are to be answered in the future.
 
