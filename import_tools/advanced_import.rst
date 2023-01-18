@@ -57,8 +57,7 @@ Check **Extension-based sub-albums** and digiKam will create subalbums based on 
 
 If your camera provides information about the date of the photograph's taking or, if you import from a USB device or a folder, the images contain Exif metadata with date/time information, digiKam can use this to automatically create subalbums in the target album during import. Subalbums names will be based on the image dates. All images which have the same date will be downloaded into the same subalbum if you check **Date-based sub-albums**. Not all cameras include this information. See the :ref:`sidebar Metadata section <camera_import>` for more detail about information your camera may have embedded in your photographs.
 
-Automatically Albums create **Date format** can be **ISO**, **Full text**, **Local Settings** taken from your desktop settings), or **Custom**. For this last one, an option modifiers editor is available belw with a help dialog to know all dat format possibilities. On the bottom of this view, an annotation will warn about the custom Album date format validity.
-
+Automatically Albums create **Date format** can be **ISO**, **Full text**, **Local Settings** taken from your desktop settings), or **Custom**. For this last one, an option modifiers editor is available belw with a help dialog to know all date format possibilities. On the bottom of this view, an annotation will warn about the custom Album date format validity.
 
 .. figure:: images/camera_auto_albums_helper_dialog.webp
     :alt:
@@ -116,3 +115,9 @@ Scripting
     The Import Tool Scripting Advanced Settings
 
 This last section of the Settings tab offers to run scripts to manipulate the images during import. You can type the filename of the script into the input field or search for it using the **Browse** button. Check out the info button for additional expressions to customize the command line.
+
+.. figure:: images/camera_scripting_helper_dialog.webp
+    :alt:
+    :align: center
+
+    The Import Tool Albums Scripting Helper Dialog
