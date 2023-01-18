@@ -60,16 +60,16 @@ Essentially,  DVDs/Blue-ray are very prone to errors, even in a freshly written 
 
 For damaged DVDs/Blue-ray, Wikipedia `list all common applications <https://en.wikipedia.org/wiki/Data_recovery#List_of_data_recovery_software>`_ designed to get data from damaged floppies, hard drives, flash media such as camera memory and USB drives, and so forth.
 
-Optical media Blu-ray disks seem to win the format war against 'HD DVD'. A dual-layer Blu-ray disc can store 50 GB, almost six times the capacity of a dual layer DVD at 8.5 GB. Everything that has been said about CDs/DVDs applies to Blu-ray disks as well.
+Dual-layer optical media Blu-ray disk can store 50 GB, almost six times the capacity of a dual layer DVD at 8.5 GB. Everything that has been said about CDs/DVDs applies to Blu-ray disks as well.
 
 Best practice: burn them slowly with a good recorder on archive quality media in an open, non-proprietary format, read the data back to verify, label them with some descriptive text + date & author, lock them away where it is clean, dark, animal safe and dry. And do not forget to copy them over to the next generation of media before you throw away your last piece of hardware or software able to read them.
 
 Hard Disks (HDD)
 ~~~~~~~~~~~~~~~~
 
-Disk manufacturers keep their statistics to themselves. A manufacturer guaranty buys you a new disk, but no data. Google for One has done a large scale study on HDD failure mechanisms: `Disk Failures study <https://research.google.com/archive/disk_failures.pdf>`_.
+Disk manufacturers keep their statistics to themselves. A manufacturer guaranty buys you a new disk, but no data. Google for One has done a large scale study on `HDD <https://en.wikipedia.org/wiki/Hard_disk_drive>`_ failure mechanisms: `Disk Failures study <https://research.google.com/archive/disk_failures.pdf>`_.
 
-In a nutshell: Disks run longest when operating between 35°C and 45°C, at lower temperatures the error rates increases dramatically. Controller parts (electronics) are the foremost sources of failure, SMART does not diagnose any of this. Some SMART errors are indicative of imminent failure, in particular scan errors and relocation counts. Lifetime expectancy is 4-5 years.
+In a nutshell: Disks run longest when operating between 35°C and 45°C, at lower temperatures the error rates increases dramatically. Controller parts (electronics) are the foremost sources of failure, SMART does not diagnose any of this. Some `SMART <https://en.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology>`_ errors are indicative of imminent failure, in particular scan errors and relocation counts. Lifetime expectancy is 4-5 years.
 
 In general and contrary to intuition or ecological considerations, running a hard drive permanently results in a longer lifetime than switching it on and off all the time. It has even been reported that aggressive power management spinning down the drive can harm it quickly. Making it working hard shortens the lifetime somewhat. The worst factors for HDD probably are vibrations, shocks, and cold temperatures.
 
