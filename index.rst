@@ -232,6 +232,10 @@ Batch Queue Manager
 
         :ref:`raw_converter`
 
+    .. container:: tile no-descr
+
+        :ref:`base_tools`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
