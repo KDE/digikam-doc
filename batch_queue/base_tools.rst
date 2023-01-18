@@ -15,7 +15,10 @@ Base Tools
 
 .. contents::
 
-The Batch Queue Manager tools are available as plugins loaded dynamically at startup and configurable in :ref:`Setup dialog <plugins_settings>`. Excepted few ones, mostly all tools share the same fonctionalities than tools from **Image Editor**. The difference with Image Editor tools is the no possibility to preview the tool effects over the images.
+Overview
+--------
+
+The Batch Queue Manager tools are available as plugins loaded dynamically at startup and configurable in :ref:`Setup dialog <plugins_settings>`. Excepted few ones, mostly all tools share the same fonctionalities than plugins from **Image Editor**. The difference with Image Editor tools is the no possibility to preview the tool effects over the images. Others tools are more designed to **Convert** to file formats, and to apply the **Digital Asset Management**.
 
 .. figure:: images/base_tools_view.webp
     :alt:
@@ -23,23 +26,26 @@ The Batch Queue Manager tools are available as plugins loaded dynamically at sta
 
     The Batch Queue Manager View to Select Base Tools for Creating a Workflow
 
-List of tools comming from Image Editor and shared in Batch Queue Manager is given below:
+Shared Image Editor Tools
+-------------------------
+
+List of tools comming from Image Editor and shared in Batch Queue Manager is given below. This list provide the links to Image Editor chapters from this manual corresponding to the Batch Queue Manager tools.
 
     - Image Color Corrections:
 
-        - :ref:`Encoding Depth <color_depth>`
+        - :ref:`Convert to 8 bits bits <color_depth>`
 
-        - :ref:`Color-Space Converter <color_cm>`
+        - :ref:`Convert to 16 bits bits <color_depth>`
 
-        - :ref:`Auto Correction <color_auto>`
+        - :ref:`Color Profile Conversion <color_cm>`
 
-        - :ref:`Brightness / Contrast / Gamma <color_bcg>`
+        - :ref:`Color Auto-Correction <color_auto>`
 
-        - :ref:`Hue / Saturation / Lightness <color_hsl>`
+        - :ref:`BCG Corection <color_bcg>`
+
+        - :ref:`HSL Correction <color_hsl>`
 
         - :ref:`Colors Balance <color_balance>`
-
-        - :ref:`Adjust Levels <color_levels>`
 
         - :ref:`White Balance <color_wb>`
 
@@ -47,21 +53,21 @@ List of tools comming from Image Editor and shared in Batch Queue Manager is giv
 
         - :ref:`Channels Mixer <color_mixer>`
 
-        - :ref:`Black and White <color_bw>`
-
-        - :ref:`Simulate Infrared Film <color_infrared>`
-
-        - :ref:`Simulate Negative Film <color_negative>`
+        - :ref:`Black and White Convert <color_bw>` (including also the `Simulate Infrared Film <color_infrared>`)
 
         - :ref:`Invert Colors <color_invert>`
 
+    .. note::
+
+        **Adjust Levels** and **Simulate Negative Film** are not available in Batch Queue Manager.
+
     - Image Enhancement:
 
-        - :ref:`Sharpening (sharpen, unsharp mask, refocus) <enhance_sharpen>`
+        - :ref:`Sharpen Image (sharpen, unsharp mask, refocus) <enhance_sharpen>`
 
-        - :ref:`Blur Tool <enhance_blur>`
+        - :ref:`Blur Image <enhance_blur>`
 
-        - :ref:`Red Eyes Removal <enhance_redeyes>`
+        - :ref:`Red Eyes Correction <enhance_redeyes>`
 
         - :ref:`Local Contrast <enhance_localcontrast>`
 
@@ -69,37 +75,35 @@ List of tools comming from Image Editor and shared in Batch Queue Manager is giv
 
         - :ref:`Hot Pixel Correction <enhance_hotpixels>`
 
-        - :ref:`Lens Distortion Correction <enhance_lensdistortion>`
+        - :ref:`Restoration <enhance_restoration>`
 
-        - :ref:`Photograph Restoration <enhance_restoration>`
-
-        - :ref:`Vignetting Correction Tool <enhance_vignetting>`
+        - :ref:`Anti-Vignetting <enhance_vignetting>`
 
         - :ref:`Lens Auto-Correction Tool <enhance_lensauto>`
 
-        - :ref:`Healing Clone Tool <enhance_clone>`
+    .. note::
+
+        **Healing Clone Tool** and **Lens Distortion Correction** are not available in Batch Queue Manager.
 
     - Image Transformation Tools:
 
         - :ref:`Crop Tool <transform_crop>`
 
-        - :ref:`Change Size <transform_resize>`
+        - :ref:`Resize <transform_resize>`
 
-        - :ref:`Liquid Rescale <transform_liquidrescale>`
+        - :ref:`Rotate <transform_freerotation>`
 
-        - :ref:`Free Rotation <transform_freerotation>`
+        - :ref:`Flip <transform_rotationflip>`
 
-        - :ref:`Perspective Adjustment <transform_perspective>`
-
-        - :ref:`Shearing Tool <transform_shear>`
+        **Liquid Rescale**, **Perspective**, **Shearing Tool**, and **Proportional Crop Tool** are not available in Batch Queue Manager.
 
     - Image Decoration Tools:
 
-        - :ref:`Add Border <decorate_border>`
+        - Add Watermark (more powerful tool than **Insert Text** from Image Editor)
 
         - :ref:`Insert Text <decorate_inserttext>`
 
-        - :ref:`Apply Texture <decorate_texture>`
+        - :ref:`Add Texture <decorate_texture>`
 
     - Special Effect Filters:
 
@@ -107,14 +111,33 @@ List of tools comming from Image Editor and shared in Batch Queue Manager is giv
 
         - :ref:`Add Film Grain <effects_filmgrain>`
 
-        - :ref:`Simulate Oil Painting <effects_oilpaint>`
+    .. note::
 
-        - :ref:`Simulate Charcoal Drawing <effects_charcoal>`
+        **Simulate Oil Painting**, **Simulate Charcoal Drawing**, **Emboss Photograph**, **Distortion FX**, **Blur FX**, and **Add Rain Drops** are not available in Batch Queue Manager.
 
-        - :ref:`Emboss Photograph <effects_emboss>`
+.. _bqm_converttools:
 
-        - :ref:`Distortion FX <effects_distortion>`
+Convert Tools
+-------------
 
-        - :ref:`Blur FX <effects_blur>`
+These tools allow to save images to new file formats. There are mostly placed at end of your list of **Assigned Tools** from your **Workflow**.
 
-        - :ref:`Add Rain Drops <effects_raindrops>`
+    - :ref:`Convert to TIFF** <image_formats>`
+
+    - :ref:`Convert to PGF** <image_formats>`
+
+    - :ref:`Convert to HEIF** <image_formats>`
+
+    - :ref:`Convert to AVIF** <image_formats>`
+
+    - :ref:`Convert to PNG** <image_formats>`
+
+    - :ref:`Convert to JPEG** <image_formats>`
+
+    - :ref:`Convert to WEBP** <image_formats>`
+
+    - **Convert RAW to DNG** (this specific tool must be placed on to top of your list of **Assigned Tools** from your **Workflow**).
+
+Digital Asset Management tools
+------------------------------
+
