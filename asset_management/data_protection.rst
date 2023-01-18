@@ -144,7 +144,7 @@ It is expensive compared to hard drives at home. And you have to transfer the im
 
 We think as a safeguard against localized data loss of the most essential images it's not a bad idea at all, but it is not a general backup solution, much too slow for that.
 
-Google Photo, and Flickr provide online storage services specialist on photographie. Their free space is limited and you don't want to have full resolution images online. But the pro-accounts offer more,
+Google Photo, and Flickr provide online storage services specialist on photographie. Their free space is limited and you don't want to have full resolution images online. But the pro-accounts offer more.
 
 In terms of data retention the web space solution is probably pretty safe. Transmission errors are corrected (thanks to the TCP protocol) and the big companies usually have backup included plus distributed storage so that they are disaster proof within themselves.
 
