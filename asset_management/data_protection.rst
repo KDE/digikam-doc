@@ -253,11 +253,11 @@ There is another good aspect to the physical separation: as said above, panic is
 Some Backup Technicalities Explained
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    - Full Backup: A complete backup of all the files being backed up. It is a snapshot without history, it represents a full copy at one point in time.
+    - **Full Backup**: A complete backup of all the files being backed up. It is a snapshot without history, it represents a full copy at one point in time.
 
-    - Differential Backup: A backup of only the files that have changed since the last full backup. Constitutes a full snapshot of two points in time: the full backup and the last differential one.
+    - **Differential Backup**: A backup of only the files that have changed since the last full backup. Constitutes a full snapshot of two points in time: the full backup and the last differential one.
 
-    - Incremental Backup: A backup of only the files that have changed since last whatever backup. Constitutes multiple snapshots. You can recreate the original state at any point in time such a backup was made. This comes closest to a versioning system except that it is only sampled and not continuous. 
+    - **Incremental Backup**: A backup of only the files that have changed since last whatever backup. Constitutes multiple snapshots. You can recreate the original state at any point in time such a backup was made. This comes closest to a versioning system except that it is only sampled and not continuous. 
 
 Backup The Data
 ~~~~~~~~~~~~~~~
@@ -317,6 +317,8 @@ Scalability
 Scalability is the tech-geek expression of the (easy) capability of a system to be resized, which always means up-sized.
 
 Lets assume you planned for scalability and dedicated the container you want to increase to a separate disk or partition. On Linux system you then can copy and resize the container to the new disk.
+
+.. _dam_fileformats:
 
 Use Open, Non-proprietary Standards as File Formats
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

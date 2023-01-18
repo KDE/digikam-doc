@@ -105,3 +105,7 @@ If you want to know if your camera RAW file is supported by digiKam, go to :menu
     :align: center
 
     List of RAW Camera Formats Supported in digiKam
+
+.. note::
+
+    We recommend also to read the **File Formats Chapter** from the :ref:`Digital Asset Management section <dam_fileformats>` in this manual.
