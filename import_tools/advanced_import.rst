@@ -34,6 +34,8 @@ The file customize **Renaming Options** and **Modifier** possibilities are mostl
 
 The new filename that digiKam will use for the photographs when they are downloaded can be shown underneath the **Customize** settings. Changing item selection from the icon-view will update these information. The renaming settings will be remembered the next time you use the camera interface.
 
+On the bottom of this, an annotation will warn about the file metadata usage setting during camera contents parsing. If :ref:`this option <camera_behavior>` is disabled, the file renaming features will be limited. Take a care that enabling this option will slow down the camera connection stage.
+
 .. caution::
 
     With Gphoto2 drivers, at the moment digiKam cannot read metadata of RAW files during the import. You might want to import the files while preserving camera filenames first and then rename them after the import using the rename function (F2).
