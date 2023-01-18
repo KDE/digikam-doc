@@ -36,26 +36,30 @@ Image compression can be lossy or lossless. Lossless compression methods are alw
 JPEG
 ----
 
-JPEG is a compressed format that trades some of the image quality to keep file sizes small. In fact, most cameras save their images in this format unless you specify otherwise. A JPEG image is stored using lossy compression, and you can vary the amount of compression. This allows you to choose between lower compression and higher image quality or greater compression and poorer quality. The only reason to choose higher compression is because it creates smaller files so you can store more images, and it's easier to send them by e-mail or post them on the Web. Most cameras give you two or three choices equivalent to good, better, best, although the names vary.
+JPEG is a compressed format that trades some of the image quality to keep file sizes small. In fact, most cameras save their images in this format unless you specify otherwise. A JPEG image is stored using lossy compression, and you can vary the amount of compression. This allows you to choose between lower compression and higher image quality or greater compression and poorer quality. The only reason to choose higher compression is because it creates smaller files so you can store more images, and it's easier to send them by e-mail or post them on the Web. Most cameras give you two or three choices equivalent to good, better, best, although the names vary. For more information about the JPEG format `see this Wikipedia page <https://en.wikipedia.org/wiki/JPEG>`_.
 
-JPEG 2000 is supported as well. It provides for the same compression ratio with better (smoother) results compared to JPEG. The 2000 version has the option of being lossless if so specified in the settings.
+JPEG 2000
+---------
+
+JPEG 2000 is supported as well. It provides for the same compression ratio with better (smoother) results compared to JPEG. The 2000 version has the option of being lossless if so specified in the settings. For more information about the JPEG 2000 format `see this Wikipedia page <https://en.wikipedia.org/wiki/JPEG_2000>`_.
+
 
 TIFF
 ----
 
-TIFF has been widely accepted and widely supported as an image format. Commonly, TIFF may be stored by the camera in uncompressed form or using a lossless compression algorithm (Deflate). It maintains higher image quality but at the expense of much larger file sizes. Some cameras let you save your images in this format, and it is a popular format because of its lossless compression algorithm. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by programs.
+TIFF has been widely accepted and widely supported as an image format. Commonly, TIFF may be stored by the camera in uncompressed form or using a lossless compression algorithm (Deflate). It maintains higher image quality but at the expense of much larger file sizes. Some cameras let you save your images in this format, and it is a popular format because of its lossless compression algorithm. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by programs. For more information about the TIFF format `see this Wikipedia page <https://en.wikipedia.org/wiki/TIFF>`_.
 
 PNG
 ---
 
 PNG is an image format that was developed as a replacement for a number of older, in the 1990's widely used, image file formats. It is a lossless format like TIFF but it is much more compact and saves disk space. Although your camera is unlikely to support PNG, some people like to convert their photographs to PNG as soon as they get them on their computer. Unlike JPEG, PNG images do not lose quality every time you re-encode them after modification. digiKam fully supports PNG images and the Batch Queue Manager can convert a batch of images from any supported format to PNG (and other formats) in one step.
 
-PNG is an extensible file format for the lossless, portable, well-compressed storage of raster images. PNG provides a patent-free replacement for GIF and can also replace many common uses of TIFF. PNG is designed to work well in on-line viewing applications, such as the World Wide Web, so it is fully streamable with a progressive display option. Also, PNG can store gamma and chromaticity data for improved color matching on heterogeneous platforms. PNG supports 8 and 16 bits / colors /pixels depth. It's the perfect file format to archive your photographs. For more information about the PNG format `see the PNG homepage <https://www.libpng.org/pub/png/>`_.
+PNG is an extensible file format for the lossless, portable, well-compressed storage of raster images. PNG provides a patent-free replacement for GIF and can also replace many common uses of TIFF. PNG is designed to work well in on-line viewing applications, such as the World Wide Web, so it is fully streamable with a progressive display option. Also, PNG can store gamma and chromaticity data for improved color matching on heterogeneous platforms. PNG supports 8 and 16 bits / colors /pixels depth. It's the perfect file format to archive your photographs. For more information about the PNG format `see this Wikipedia page <https://en.wikipedia.org/wiki/Portable_Network_Graphics>`_.
 
 PGF
 ---
 
-*Progressive Graphics File* is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited for photo archiving (digiKam uses this format in database to store thumbnails). For more information about the PGF format `see the libPGF homepage <https://www.libpgf.org/>`_.
+*Progressive Graphics File* is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited for photo archiving (digiKam uses this format in database to store thumbnails). For more information about the PGF format `see this Wikipedia page <https://en.wikipedia.org/wiki/Progressive_Graphics_File>`_.
 
 .. note::
 

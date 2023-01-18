@@ -136,6 +136,8 @@ These tools allow to save images to new file formats. There are mostly placed at
 
     - :ref:`Convert to JPEG** <image_formats>`
 
+    - :ref:`Convert to JPEG 2000** <image_formats>`
+
     - :ref:`Convert to WEBP** <image_formats>`
 
     - **Convert RAW to DNG** (this specific tool must be placed on to top of your list of **Assigned Tools** from your **Workflow**).
