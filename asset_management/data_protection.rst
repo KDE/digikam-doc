@@ -80,7 +80,7 @@ Linux `SmartMonTools <https://en.wikipedia.org/wiki/Smartmontools>`_ suite allow
 Solid State Drives
 ~~~~~~~~~~~~~~~~~~
 
-SSDs are mechanically more robust than HDDs and suffer much less on that front when they are plugged into the computer. They will replace HDD in time as capacity, robustest, and price become more and more a good solution as permanent data storage devices.
+`SSDs <https://en.wikipedia.org/wiki/Solid-state_drive>`_ are mechanically more robust than HDDs and suffer much less on that front when they are plugged into the computer. They will replace HDD in time as capacity, robustest, and price become more and more a good solution as permanent data storage devices.
 
 In case of use as external device, one major cause for data loss (often recoverable) is the unsafe removal of SDDs from a computer. Before data is saved from a computer memory to any attached device, it remains for some time in buffers. In hard drives this means seconds at most, whereas with SDDs it can be tens of minutes. Therefore, before you disconnect a flash device, always activate data flushing through software (often called *safely remove device*).
 
@@ -128,7 +128,7 @@ While a surge suppressor will protect your system from minor fluctuations in the
 
 Besides serving as surge suppressors, these devices automatically switch to battery power when a power outage occurs, giving you the opportunity to save data and shut down your system. Some models will even allow you to keep working until power is restored. When purchasing a UPS, be sure that it has the same qualities that you would seek in a surge suppressor, but also check out the battery life and included software.
 
-Considering the potential risk to your computing system, ensuring its safety from power disturbances is a worthwhile investment. A quality surge suppressor will cost you upward of €20, a 500W UPS can be had for less than €40. It’s a small cost to pay for the peace of mind you’ll gain knowing your computer is well protected. In the very least pull all lines to your computer when you go on holidays.
+Considering the potential risk to your computing system, ensuring its safety from power disturbances is a worthwhile investment. A quality surge suppressor or a 500W UPS are not too expensive for the peace of mind you’ll gain knowing your computer is well protected. In the very least pull all lines to your computer when you go on holidays.
 
 Saveguarding Against Logical Errors
 -----------------------------------
@@ -163,7 +163,7 @@ Data does not only get lost from storage devices, it also gets lost when traveli
 
     The Data Workflow Between Application and Storage Media
 
-This diagram depicts the transmission chain elements in a computer, all transitions are susceptible to transmission errors. The Linux ZFS and BTRFS file system at least ensure the OS to disk path of data integrity.
+This diagram depicts the transmission chain elements in a computer, all transitions are susceptible to transmission errors. The Linux `ZFS <https://en.wikipedia.org/wiki/ZFS>`_ and `BTRFS <https://en.wikipedia.org/wiki/Btrfs>`_ file system at least ensure the OS to disk path of data integrity under Linux.
 
 The Byte Error Rate (BER) for memory and transmission channels is in the order of 1 in 10 Million (10E-7 bit). That just means that 1 in 3000 images has an error only due to transmission problems. Now how dramatic that is for an image is left to chance, it could mean that the image is destroyed or that a pixel somewhere changed its value, due to the compression used on almost all images one cannot predict the gravity of a single bit error impact. Often one sees some partial images instead of the full image.
 
@@ -204,16 +204,16 @@ Data loss due to viruses is less grave than common wisdom make you believe. It a
 Panic is a Factor in Data Loss
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Human error, as in everything, is a major problem in data loss. Take a deep breath and stop. Panic is a common reaction, and people do really stupid things. Experienced users will pull the wrong drive from a RAID array or reformat a drive, destroying all their information. Acting without thinking is dangerous to your data. Stop stressing about the loss and don’t do anything to the disk. Better yet, stop using the computer until you have a plan. Sit down and explain you plan to a laymen or better, laywoman. You will be amazed how many stupid ideas you'll discover yourself in such an exercise.
+Human error, as in everything, is a major problem in data loss. Take a deep breath and stop. Panic is a common reaction, and people do really stupid things. Experienced users will pull the wrong drive from a `RAID <https://en.wikipedia.org/wiki/RAID>`_ array or reformat a drive, destroying all their information. Acting without thinking is dangerous to your data. Stop stressing about the loss and don’t do anything to the disk. Better yet, stop using the computer until you have a plan. Sit down and explain you plan to a laymen or better, laywoman. You will be amazed how many stupid ideas you'll discover yourself in such an exercise.
 
-If your disk is making weird noises, normal file recovery software isn’t going to work. Do a quick backup if that is going to happen to you. If the drive is still spinning and you can’t find your data, look for a data recovery utility and backup to another computer or drive. An Universal and powerful solution can be to use  `CloneZilla open-source suite <https://en.wikipedia.org/wiki/Clonezilla>`_. The important thing is to download them onto another drive, either on another computer, or onto a USB thumb drive or hard disk. It is good practice to save the recovered data to another disk. `dd tool <https://en.wikipedia.org/wiki/Dd_(Unix)>`_  is your friend on Linux systems.
+If your disk is making weird noises, normal file recovery software isn’t going to work. Do a quick backup if that is going to happen to you. If the drive is still spinning and you can’t find your data, look for a data recovery utility and backup to another computer or drive. An Universal and powerful solution can be to use  `CloneZilla open-source suite <https://en.wikipedia.org/wiki/Clonezilla>`_. The important thing is to download them onto another drive, either on another computer, or onto a USB thumb drive or hard disk. It is good practice to save the recovered data to another disk. `dd tool <https://en.wikipedia.org/wiki/Dd_(Unix)>`_ is your friend on Linux systems.
 
 Common Myths Dispelled
 ~~~~~~~~~~~~~~~~~~~~~~
 
 We would like to dispel some common myths:
 
-    - Open Source file systems are less prone to data loss than proprietary systems: Wrong, NTFS is rather a tiny notch better than ext4, ReiserFs, JFS, XFS, to name just the most popular file systems that often come as default FS with distributions.
+    - Open Source file systems are less prone to data loss than proprietary systems: Wrong, NTFS is rather a tiny notch better than ext4, ReiserFs, JFS, XFS, to name just the most popular file systems that often come as default storage format disk used by distributions.
 
     - Journaling files systems prevent data corruption/loss: Wrong, they only speed up the scan process in case of a sudden interrupt during operation and prevent ambiguous states. But if a file was not entirely saved before the mishap, it'll be lost.
 
@@ -226,18 +226,18 @@ Storage Volume Estimation
 
 Digital camera sensors are 1-2 aperture stops away from fundamental physical limitations. What we mean is this: as technology evolves, there is a natural limit to its progress. Sensitivity and noise characteristics for any kind of light sensor are not far from that limit.
 
-Today's cameras tend towards 10 mega pixels sensors, although this resolution is already too high for compact cameras and deteriorates the end result. Given the sensor size and quality of optics, 6 mega pixels are optimum for compact cameras. Even DSLR cameras run into their limits at 10-12 mega pixels, for higher resolutions one has to go for full frame sensors (24x36mm) or even bigger formats.
+Today's cameras tend towards 50 mega pixels sensors, although this resolution is already too high for compact cameras and deteriorates the end result. Given the sensor size and quality of optics, 12 mega pixels are optimum for compact cameras. Even DSLR cameras run into their limits at 20-24 mega pixels, for higher resolutions one has to go for full frame sensors (24x36mm) or even bigger formats.
 
-So, taking into account the manufacturer mega pixel propaganda it seems save to say that the bulk of future cameras will see less than 20 mega pixels. This gives us an estimation for the necessary storage space per photograph in the long run: <15 MB per image. Even if file versioning will be introduced (grouping of variations of a photograph under one file reference), the trend is to implement scripting of changes so that a small overhead will be recorded only and not a whole different image per version. With faster hardware this concept will see it's maturity quite soon.
+So, taking into account the manufacturer mega pixel propaganda it seems save to say that the bulk of future cameras will see less than 30 mega pixels. This gives us an estimation for the necessary storage space per photograph in the long run: <40 MB per image. Even if file versioning will be introduced (grouping of variations of a photograph under one file reference), the trend is to implement scripting of changes so that a small overhead will be recorded only and not a whole different image per version. With faster hardware this concept will see it's maturity quite soon.
 
-In order to estimate the amount of storage space you have to plan for, simply determine the number of photographs you take per year (easy with digiKam's timeline sidebar) and multiply it by 15 MB. Most users will keep less than 2000 pictures per year which requires less than 30 GB/year. Assuming that you will change your hard disk (or whatever media in the future) every 4-5 years, the natural increase in storage capacity will suffice to keep you afloat.
+In order to estimate the amount of storage space you have to plan for, simply determine the number of photographs you take per year (easy with :ref:`digiKam's timeline sidebar tab <timeline_view>`) and multiply it by 40 MB. Most users will keep less than 2000 pictures per year which requires less than 80 GB/year. Assuming that you will change your hard disk (or whatever media in the future) every 4-5 years, the natural increase in storage capacity will suffice to keep you afloat.
 
-The more ambitious ones out there will need more space, much more maybe. Think of buying a file server, Giga-Ethernet comes integrated into motherboards today and it's a flick to fetch the files over the local network. Speaking about modern mobos: they now have external SATA connectors. This makes it really a trifle to buy an external SATA drive and hook it up to your machine. 1000 GB drives will hit the market this year (2008). These are terrific compact storage containers for backup swapping: keep one drive at home and one somewhere else.
+The more ambitious ones out there will need more space, much more maybe. Think of buying a file server, Giga-Ethernet comes integrated into motherboards today and it's a flick to fetch the files over the local network. Speaking about modern mobos: they now have external SATA connectors. This makes it really a trifle to buy an external SATA drive and hook it up to your machine. 4000 GB drives will hit the market in 2020. These are terrific compact storage containers for backup swapping: keep one drive at home and one somewhere else.
 
 Backup and Recover
 ------------------
 
-A 4TB HD costs €100 today. Do not blame anybody else for data loss. 6% of all PCs will suffer an episode of data loss in any given year. Backup your data often according to a plan, and back it up and test the backup before you do anything dramatic like re-installing your OS, changing disks, resizing partitions and so on.
+A 4 TB HDD is not very expensive today. Do not blame anybody else for data loss. 6% of all PCs will suffer an episode of data loss in any given year. Backup your data often according to a plan, and back it up and test the backup before you do anything dramatic like re-installing your OS, changing disks, resizing partitions and so on.
 
 Disaster Prevention
 ~~~~~~~~~~~~~~~~~~~
@@ -264,13 +264,13 @@ Backup The Data
 
 The Best practice at all is to backup the data:
 
-    - Do a full backup in a external storage device.
+    - Do a **full backup** in a external storage device.
 
-    - Verify its data integrity and put it away (disaster control).
+    - Verify its **data integrity** and put it away (disaster control).
 
-    - Have another storage device for frequent backups.
+    - Have another storage device for **frequent backups**.
 
-    - Swap the devices every other month after having verified data integrity.
+    - **Swap the devices** every other month after having verified data integrity.
 
 A Useful Tool to Backups
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -279,24 +279,24 @@ Linux `rsync <https://en.wikipedia.org/wiki/Rsync>`_ is a wonderful little utili
 
 A reasonable backup approach for images could be this one:
 
-    - Backup important images right away (after dumping them to a computer) to DVD/optical media
+    - Backup important images right away (after dumping them to a computer) to optical media.
 
-    - Do daily incremental backup of the work space
+    - Do daily incremental backup of the work space.
 
-    - Do a weekly differential backup and delete integral backups of week-2 (two weeks ago)
+    - Do a weekly differential backup and delete integral backups of week-2 (two weeks ago).
 
-    - Do a monthly differential backup and delete backup of month-2
+    - Do a monthly differential backup and delete backup of month-2.
 
-    - If not physically separated already, separate it now (swapping-in another backup drive) 
+    - If not physically separated already, separate it now (swapping-in another backup drive).
 
 This protocol tries to leave you enough time to spot losses and to recover fully at the same time keeping the backup volume at <130% of the working space. You end up with a daily version of the last 7-14 days, a weekly snapshot for at least one month, and a snapshot of every month. Any more thinning should be done by hand after a full verification.
 Preserve your images through the changes of technology and owners
 
-In order for your valuable images to survive the next 40 years or so (because that's about the time that you will become really interested to revisit those nice old photographs of you as a child, adolescent etc.) there are two strategies to be observed:
+In order for your valuable images to **survive the next 40 years** or so (because that's about the time that you will become really interested to revisit those nice old photographs of you as a child, adolescent etc.) there are two strategies to be observed:
 
-    - Keep up with technology, don't lag behind more than a couple of years.
+    - **Keep up with technology**, don't lag behind more than a couple of years.
 
-    - Save your photos in an open, non-proprietary standard.
+    - Save your photos in an open, **non-proprietary standard**.
 
 Keep Up With Technology
 -----------------------
@@ -371,14 +371,14 @@ We strongly recommend converting RAW files to DNG for archiving. Despite the fac
 
     digiKam Provide a Tool to Convert RAW to DNG during Download from Camera
 
-**XML** (Extensible Mark-up Language) or **RDF** (Resource Description Framework). XML is like HTML, but where HTML is mostly concerned with the presentation of data, XML is concerned with the "representation" of data. On top of that, XML is non-proprietary, operating-system-independent, fairly simple to interpret, text-based and cheap. RDF is the WC3's solution to integrate a variety of different applications such as library catalogs, world-wide directories, news feeds, software, as well as collections of music, images, and events using XML as an interchange syntax. Together the specifications provide a method that uses a lightweight ontology based on the Dublin Core which also supports the "Semantic Web" (easy exchange of knowledge on the Web).
+**XML** (Extensible Mark-up Language) or **RDF** (Resource Description Framework). XML is like HTML, but where HTML is mostly concerned with the presentation of data, XML is concerned with the *representation* of data. On top of that, XML is non-proprietary, operating-system-independent, fairly simple to interpret, text-based and cheap. RDF is the WC3's solution to integrate a variety of different applications such as library catalogs, world-wide directories, news feeds, software, as well as collections of music, images, and events using XML as an interchange syntax. Together the specifications provide a method that uses a lightweight ontology based on the Dublin Core which also supports the "Semantic Web" (easy exchange of knowledge on the Web).
 
 IPTC Goes XMP
 ~~~~~~~~~~~~~
 
-That's probably one of the reasons why, around 2001, that Adobe introduced its XML based XMP technology to replace the "Image resource block" technology of the nineties. XMP stands for "Extensible Metadata Platform", a mixture of XML and RDF. It is a labeling technology that lets users embed data about a file in the file itself, the file info is saved using the extension".xmp" (signifying the use of XML/RDF).
+That's probably one of the reasons why, around 2001, that Adobe introduced its XML based XMP technology to replace the "Image resource block" technology of the nineties. XMP stands for **Extensible Metadata Platform**, a mixture of XML and RDF. It is a labeling technology that lets users embed data about a file in the file itself, the file info is saved using the extension".xmp" (signifying the use of XML/RDF).
 
-**XMP**. As much as ODF will be readable forever (since its containing text is written in clear text), XMP will preserve your metadata in a clearly understandable format XML. No danger here of not being able to read it later. It can be embedded into the image files or as a separate accompanying file (sidecar concept). XMP can be used in PDF, JPEG, JPEG2000, GIF, PNG, HTML, TIFF, Adobe Illustrator, PSD, PostScript, Encapsulated PostScript, and video files. In a typical edited JPEG file, XMP information is typically included alongside Exif and IPTC data.
+`XMP <https://en.wikipedia.org/wiki/Extensible_Metadata_Platform>`_: As much as ODF will be readable forever (since its containing text is written in clear text), XMP will preserve your metadata in a clearly understandable format XML. No danger here of not being able to read it later. It can be embedded into the image files or as a separate accompanying file (sidecar concept). XMP can be used in PDF, JPEG, JPEG2000, GIF, PNG, HTML, TIFF, Adobe Illustrator, PSD, PostScript, Encapsulated PostScript, and video files. In a typical edited JPEG file, XMP information is typically included alongside Exif and IPTC data.
 
 .. figure:: images/dam_xmp_viewer.webp
     :alt:
