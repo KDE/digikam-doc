@@ -1,7 +1,6 @@
 .. meta::
    :description: Protect Your Images from Data Corruption and Loss
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, disk errors, disk failures, power surges, ECC, transmission errors, storage media deterioration, recovery, redundancy, disaster prevention, lifetime, temperature, data size, common myths
-              metadata, IPTC stored in image files, XMP files associated, keep the originals, storage, scalability, media, retrieval of images and metadata, copying image data over to the next generation of media, applications, operating systems, virtualization, viewing device, use of the www
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, disk errors, disk failures, power surges, ECC, transmission errors, storage media deterioration, recovery, redundancy, disaster prevention, lifetime, temperature, data size, common myths, metadata, IPTC stored in image files, XMP files associated, keep the originals, storage, scalability, media, retrieval of images and metadata, copying image data over to the next generation of media, applications, operating systems, virtualization, viewing device, use of the www
 
 .. metadata-placeholder
 
@@ -74,7 +73,7 @@ In a nutshell: Disks run longest when operating between 35°C and 45°C, at lowe
 
 In general and contrary to intuition or ecological considerations, running a hard drive permanently results in a longer lifetime than switching it on and off all the time. It has even been reported that aggressive power management spinning down the drive can harm it quickly. Making it working hard shortens the lifetime somewhat. The worst factors for HDD probably are vibrations, shocks, and cold temperatures.
 
-If your disk is making weird noises, normal file recovery software isn’t going to work. Do a quick backup if that is going to happen to you. (Use dd utility if possible, not a normal file backup since dd reads in a smooth, spiraling stream from beginning to end and doesn't stress the mechanics). There are specialist companies that can recover data from otherwise destroyed drive, but they are costly, plan for 2000$ minimum charge.
+If your disk is making weird noises, normal file recovery software isn’t going to work. Do a quick backup if that is going to happen to you. (Use dd utility if possible, not a normal file backup since dd reads in a smooth, spiraling stream from beginning to end and doesn't stress the mechanics). There are specialist companies that can recover data from otherwise destroyed drive, but they are very expensive.
 
 Linux `SmartMonTools <https://en.wikipedia.org/wiki/Smartmontools>`_ suite allows to query the storage hardware devices for future failure. We highly recommend to use this kind of tool on your computer.
 
@@ -137,7 +136,7 @@ Saveguarding Against Logical Errors
 Web Storage Services
 ~~~~~~~~~~~~~~~~~~~~
 
-Amazon Web Services includes S3 - Simple Storage Service. With appropriate configuration, you can mount S3 as a drive on Linux®, Mac, and Windows systems, allowing you to use it as a backup destination for your favorite software. Google Shared Storage is another popular offer where one can store infinite amount of data.
+Amazon Web Services includes S3 - Simple Storage Service. With appropriate configuration, you can mount S3 as a drive on Linux, Mac, and Windows systems, allowing you to use it as a backup destination for your favorite software. Google Shared Storage is another popular offer where one can store infinite amount of data.
 
 It is expensive compared to hard drives at home. And you have to transfer the images over the (a comparatively slow) Internet.
 
@@ -183,11 +182,11 @@ Even if you are not overly concerned today with transmission problems, have a lo
 Future of File-system with ZFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-ZFS from Oracle seems to be one of two candidates to deal with disk errors on a low level, and it is highly scalable. It is Open Source, heavily patented, comes with an GPL incompatible license, and is available on Solaris and Leopard. Let us hope that it will soon be available for Linux® and Windows (article).
+ZFS from Oracle seems to be one of two candidates to deal with disk errors on a low level, and it is highly scalable. It is Open Source, heavily patented, comes with an GPL incompatible license, and is available on Solaris and Leopard. Let us hope that it will soon be available for Linux and Windows (article).
 
 This is for the courageous ones. Fuse ZFS
 
-Oracle has also started an initiative with its **btrfs** file system. It employs the same protection technique as **zfs** does, and it's available on Linux®.
+Oracle has also started an initiative with its **btrfs** file system. It employs the same protection technique as **zfs** does, and it's available on Linux.
 
 Human Errors
 ------------
@@ -200,7 +199,7 @@ Do not underestimate it. Those two factor account for 86% of notebook and 46% fo
 Malware
 ~~~~~~~
 
-Data loss due to viruses is less grave than common wisdom make you believe. It accounts for less damage than theft or re-installations, for example. And it is limited to Microsoft OS users. Apple users experience very few viruses and under Linux® they haven't been around for quite some time now.
+Data loss due to viruses is less grave than common wisdom make you believe. It accounts for less damage than theft or re-installations, for example. And it is limited to Microsoft OS users. Apple users experience very few viruses and under Linux they haven't been around for quite some time now.
 
 Panic is a Factor in Data Loss
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
