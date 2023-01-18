@@ -42,7 +42,7 @@ Computer viruses               2%          4%
 Disaster                       1-2%        1-2%
 ============================== ========== =======
 
-So let us analyze those cases step by step!
+So let us analyze those cases step by step.
 
 Storage Physical Deterioration
 ------------------------------
@@ -50,7 +50,7 @@ Storage Physical Deterioration
 CD, DVD, Blue Ray, Optical Drives
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Physical deterioration of the media happens more rapidly with paper and CD-Rs than the average of film. Yet while film lasts longer (sometimes decades longer) than other forms of media, the right kind of backup of digital media never loses anything. Film decays - digital 1's and 0's do not, and film starts to decay the moment it's created and developed. It will never have the same color, contrast, etc. that it did have a moment before. Digital doesn't do that. However, digital is susceptible to corruption! And yes, physical media such as floppies and magnetic hard drives are also susceptible to the decay of the medium, just like CDs are. They just last longer.
+Physical deterioration of the media happens more rapidly with paper and CD-Rs than the average of film. Yet while film lasts longer (sometimes decades longer) than other forms of media, the right kind of backup of digital media never loses anything. Film decays - digital 1's and 0's do not, and film starts to decay the moment it's created and developed. It will never have the same color, contrast, etc. that it did have a moment before. Digital doesn't do that. However, digital is susceptible to corruption. And yes, physical media such as floppies and magnetic hard drives are also susceptible to the decay of the medium, just like CDs are. They just last longer.
 
 To combat the problem of DVDs/Blue-ray, they need to be properly cared for and not trusted for more than a few years. Thankfully you can purchase archive-quality CDs and DVDs which last longer, though they are much more difficult to obtain and are much more expensive. There are offers out there for gold-plated DVDs, few euros a piece claiming 100 years storage life (if you care to believe it).
 
@@ -89,7 +89,7 @@ In case of use as external device, one major cause for data loss (often recovera
 Magnetic Media
 ~~~~~~~~~~~~~~
 
-Magnetic tapes are used in backup systems, much more in professional environments than in home use. Tapes have issues with data retention and changing technology, but they are safer in one aspect than CDs and DVDs: they are less exposed to scratches and dirt and writing deficiencies. On the other hand they are susceptible to magnetic fields. Throw a magnet next to a tape and it's gone! Tapes should be re-copied every 5-8 years, otherwise too many bits will fail and escape the checksum protection. The downside of magnetic tapes is often the recorder price and the restore time (20x longer than from HDD). Tape backup system have seen their best days.
+Magnetic tapes are used in backup systems, much more in professional environments than in home use. Tapes have issues with data retention and changing technology, but they are safer in one aspect than CDs and DVDs: they are less exposed to scratches and dirt and writing deficiencies. On the other hand they are susceptible to magnetic fields. Throw a magnet next to a tape and it's gone. Tapes should be re-copied every 5-8 years, otherwise too many bits will fail and escape the checksum protection. The downside of magnetic tapes is often the recorder price and the restore time (20x longer than from HDD). Tape backup system have seen their best days.
 
 Power Supply Failures
 ---------------------
@@ -177,7 +177,7 @@ Flaky power supplies are another source of transmission losses because they crea
 
     The Storage Media Number of Failure Per Year
 
-Even if you are not overly concerned today with transmission problems, have a look into the future at illustration. Already in 2010 we'll see thousands of errors per year!
+Even if you are not overly concerned today with transmission problems, have a look into the future at illustration. Already in 2010 we'll see thousands of errors per year.
 
 Future of File-system with ZFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -204,7 +204,7 @@ Data loss due to viruses is less grave than common wisdom make you believe. It a
 Panic is a Factor in Data Loss
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Human error, as in everything, is a major problem in data loss. Take a deep breath and stop! Panic is a common reaction, and people do really stupid things. Experienced users will pull the wrong drive from a RAID array or reformat a drive, destroying all their information. Acting without thinking is dangerous to your data. Stop stressing about the loss and don’t do anything to the disk. Better yet, stop using the computer until you have a plan. Sit down and explain you plan to a laymen or better, laywoman. You will be amazed how many stupid ideas you'll discover yourself in such an exercise.
+Human error, as in everything, is a major problem in data loss. Take a deep breath and stop. Panic is a common reaction, and people do really stupid things. Experienced users will pull the wrong drive from a RAID array or reformat a drive, destroying all their information. Acting without thinking is dangerous to your data. Stop stressing about the loss and don’t do anything to the disk. Better yet, stop using the computer until you have a plan. Sit down and explain you plan to a laymen or better, laywoman. You will be amazed how many stupid ideas you'll discover yourself in such an exercise.
 
 If your disk is making weird noises, normal file recovery software isn’t going to work. Do a quick backup if that is going to happen to you. If the drive is still spinning and you can’t find your data, look for a data recovery utility and backup to another computer or drive. An Universal and powerful solution can be to use  `CloneZilla open-source suite <https://en.wikipedia.org/wiki/Clonezilla>`_. The important thing is to download them onto another drive, either on another computer, or onto a USB thumb drive or hard disk. It is good practice to save the recovered data to another disk. `dd tool <https://en.wikipedia.org/wiki/Dd_(Unix)>`_  is your friend on Linux systems.
 
@@ -242,7 +242,7 @@ A 4TB HD costs €100 today. Do not blame anybody else for data loss. 6% of all 
 Disaster Prevention
 ~~~~~~~~~~~~~~~~~~~
 
-Say, you religiously do your backups every day on a external SATA drive. Then comes the day where lightning strikes. Happy you if the external drive was not connected at that moment!
+Say, you religiously do your backups every day on a external SATA drive. Then comes the day where lightning strikes. Happy you if the external drive was not connected at that moment.
 
 Disasters strike locally and destroy a lot. Forget about airplane crashes: fire, water, electricity, kids and theft are dangerous enough to our data. They usually cover a whole room or house.
 
@@ -353,7 +353,7 @@ Open Source standards have the huge advantage of having an open specification. E
 
 **RAW** format. Some, typically more expensive, cameras support RAW format shooting. The RAW format is not really an image standard at all, it is a container format which is different for every brand and camera model. RAW format images contain minimally processed data from the image sensor of a digital camera or image scanner. Raw image files are sometimes called digital negatives, as they fulfill the same role as film negatives in traditional chemical photography: that is, the negative is not directly usable as an image, but has all of the information needed to create an image. Storing photographs in a camera's RAW format provides for higher dynamic range and allows you to alter settings, such as white balance, after the photograph has been taken. Most professional photographers use RAW format, because it offers them maximum flexibility. The downside is that RAW image files can be very large indeed.
 
-We recommend clearly to **abstain from archiving in RAW format** (as opposed to shooting in RAW format, which we recommend). It has all bad ingredients: many varieties and proprietary nature. It is clear that in a few years time you cannot use your old RAW files anymore. We have already seen people changing camera, losing their color profiles and having great difficulty to treat their old RAW files correctly. Better change to DNG format!
+We recommend clearly to **abstain from archiving in RAW format** (as opposed to shooting in RAW format, which we recommend). It has all bad ingredients: many varieties and proprietary nature. It is clear that in a few years time you cannot use your old RAW files anymore. We have already seen people changing camera, losing their color profiles and having great difficulty to treat their old RAW files correctly. Better change to DNG format.
 
 **DNG** Digital Negative file format is a royalty free and open RAW image format designed by Adobe Systems. DNG was a response to demand for a unifying camera raw file format. It is based on the TIFF/EP format, and mandates use of metadata. A handful of camera manufacturers have adopted DNG already, let's hope that the main contenders Canon and Nikon will use it one day.
 
