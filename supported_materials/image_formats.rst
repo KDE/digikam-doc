@@ -61,6 +61,26 @@ PGF
 
 *Progressive Graphics File* is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited for photo archiving (digiKam uses this format in database to store thumbnails). For more information about the PGF format `see this Wikipedia page <https://en.wikipedia.org/wiki/Progressive_Graphics_File>`_.
 
+WEBP
+----
+
+WEBP is an image file format developed by Google intended as a replacement for JPEG, PNG, and GIF file formats for the Internet uses. It supports both lossy and lossless compression as well as animation and alpha transparency. It support metadata but colors depth is limited to 8 bits. For more information about the WEBP format `see this Wikipedia page <https://en.wikipedia.org/wiki/WebP>`_.
+
+HEIF
+----
+
+High Efficiency Image File Format is a container format for storing individual digital images and image sequences. The standard covers multimedia files that can also include other media streams, such as timed text, audio and video. HEIF can store images encoded with multiple coding formats, for example both SDR and HDR images. HEVC is an image and video encoding format and the default image codec used with HEIF. HEIF files containing HEVC-encoded images are also known as HEIC files. Such files require less storage space than the equivalent quality JPEG. HEIF support 12 bits color depth and metadata. This format have been adopted to store images in Apple devices. For more information about the HEIF format `see this Wikipedia page <https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format>`_.
+
+AVIF
+----
+
+AV1 Image File Format is an open, royalty-free image file format specification for storing images or image sequences compressed with AV1 in the HEIF container format. It competes with HEIC, which uses the same container format built upon ISOBMFF, but HEVC for compression. AVIF showed better compression efficiency than JPEG as well as better detail preservation, fewer blocking artifacts and less color bleeding around hard edges in composites of natural images, text, and graphics. AVIF support 12 bits color depth and metadata. For more information about the AVIF format `see this Wikipedia page <https://en.wikipedia.org/wiki/AVIF>`_.
+
+JXL
+---
+
+JPEG XL is a royalty-free raster-graphics file format that supports both lossy and lossless compression. It is designed to outperform existing raster formats and thus become their universal replacement. For more information about the JXL format `see this Wikipedia page <https://en.wikipedia.org/wiki/JPEG_XL>`_.
+
 .. note::
 
     Digital still image formats supports is provided by digiKam Loader Plugins. You can see a list of available plugins in **Plugins/Image Loaders** section from Setup dialog.
