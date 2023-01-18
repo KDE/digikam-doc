@@ -1,6 +1,6 @@
 .. meta::
    :description: Protect Your Images from Data Corruption and Loss
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, disk errors, disk failures, power surges, ECC, transmission errors, storage media deterioration, recovery, redundancy, disaster prevention, lifetime, temperature, data size, common myths, metadata, IPTC stored in image files, XMP files associated, keep the originals, storage, scalability, media, retrieval of images and metadata, copying image data over to the next generation of media, applications, operating systems, virtualization, viewing device, use of the www
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, disk errors, disk failures, power surges, ECC, transmission errors, storage media deterioration, recovery, redundancy, disaster prevention, lifetime, temperature, data size, common myths, metadata, IPTC stored in image files, XMP files associated, keep the originals, storage, scalability, media, retrieval of images and metadata, copying image data over to the next generation of media, applications, operating systems, virtualization, viewing device, use of the www, ZFS, BTRFS
 
 .. metadata-placeholder
 
@@ -47,8 +47,8 @@ So let us analyze those cases step by step.
 Storage Physical Deterioration
 ------------------------------
 
-CD, DVD, Blue Ray, Optical Drives
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Optical Drives
+~~~~~~~~~~~~~~
 
 Physical deterioration of the media happens more rapidly with paper and CD-Rs than the average of film. Yet while film lasts longer (sometimes decades longer) than other forms of media, the right kind of backup of digital media never loses anything. Film decays - digital 1's and 0's do not, and film starts to decay the moment it's created and developed. It will never have the same color, contrast, etc. that it did have a moment before. Digital doesn't do that. However, digital is susceptible to corruption. And yes, physical media such as floppies and magnetic hard drives are also susceptible to the decay of the medium, just like CDs are. They just last longer.
 
@@ -64,10 +64,10 @@ Dual-layer optical media Blu-ray disk can store 50 GB, almost six times the capa
 
 Best practice: burn them slowly with a good recorder on archive quality media in an open, non-proprietary format, read the data back to verify, label them with some descriptive text + date & author, lock them away where it is clean, dark, animal safe and dry. And do not forget to copy them over to the next generation of media before you throw away your last piece of hardware or software able to read them.
 
-Hard Disks (HDD)
-~~~~~~~~~~~~~~~~
+Hard Disks 
+~~~~~~~~~~
 
-Disk manufacturers keep their statistics to themselves. A manufacturer guaranty buys you a new disk, but no data. Google for One has done a large scale study on `HDD <https://en.wikipedia.org/wiki/Hard_disk_drive>`_ failure mechanisms: `Disk Failures study <https://research.google.com/archive/disk_failures.pdf>`_.
+Hard Disk (HDD) manufacturers keep their statistics to themselves. A manufacturer guaranty buys you a new disk, but no data. Google for One has done a large scale study on `HDD <https://en.wikipedia.org/wiki/Hard_disk_drive>`_ failure mechanisms: `Disk Failures study <https://research.google.com/archive/disk_failures.pdf>`_.
 
 In a nutshell: Disks run longest when operating between 35°C and 45°C, at lower temperatures the error rates increases dramatically. Controller parts (electronics) are the foremost sources of failure, SMART does not diagnose any of this. Some `SMART <https://en.wikipedia.org/wiki/Self-Monitoring,_Analysis_and_Reporting_Technology>`_ errors are indicative of imminent failure, in particular scan errors and relocation counts. Lifetime expectancy is 4-5 years.
 
@@ -123,10 +123,10 @@ Because a power surge can follow any path to your computer, be sure that each pe
 
 If you have a notebook computer, you will want to carry a surge suppressor as well. A variety of suppressors designed specifically for notebooks are available, small in size and possessing both electric and phone outlets that make them ideal for use on the road.
 
-Uninterruptible Power Supply (UPS)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Uninterruptible Power Supply 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-While a surge suppressor will protect your system from minor fluctuations in the power lines, it won’t help you if the power should black out completely. Even an outage of just a few seconds can result in the loss of valuable data, so you might find it worthwhile to invest in an uninterruptible power supply.
+While a surge suppressor will protect your system from minor fluctuations in the power lines, it won’t help you if the power should black out completely. Even an outage of just a few seconds can result in the loss of valuable data, so you might find it worthwhile to invest in an Uninterruptible Power Supply (UPS).
 
 Besides serving as surge suppressors, these devices automatically switch to battery power when a power outage occurs, giving you the opportunity to save data and shut down your system. Some models will even allow you to keep working until power is restored. When purchasing a UPS, be sure that it has the same qualities that you would seek in a surge suppressor, but also check out the battery life and included software.
 
@@ -184,11 +184,9 @@ Even if you are not overly concerned today with transmission problems, have a lo
 Future of File-system with ZFS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-ZFS from Oracle seems to be one of two candidates to deal with disk errors on a low level, and it is highly scalable. It is Open Source, heavily patented, comes with an GPL incompatible license, and is available on Solaris and Leopard. Let us hope that it will soon be available for Linux and Windows (article).
+`ZFS <https://en.wikipedia.org/wiki/ZFS>`_ from Oracle seems to be one of two candidates to deal with disk errors on a low level, and it is highly scalable. It is Open Source, heavily patented, comes with an GPL incompatible license, and is available on Solaris and macOS.
 
-This is for the courageous ones. Fuse ZFS
-
-Oracle has also started an initiative with its **btrfs** file system. It employs the same protection technique as **zfs** does, and it's available on Linux.
+Oracle has also started an initiative with its `BTRFS <https://en.wikipedia.org/wiki/Btrfs>`_ file system. It employs the same protection technique as **ZFS** does, and it's available on Linux.
 
 Human Errors
 ------------
@@ -252,8 +250,8 @@ Therefore disaster control means de-localized storage. Move your backups upstair
 
 There is another good aspect to the physical separation: as said above, panic is often the cause of destroying data, even the backup data. Having a backup not at hand right away may safe your ass one day.
 
-Some Backup Technicalities Explained
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Backup Technicalities Explained
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     - **Full Backup**: A complete backup of all the files being backed up. It is a snapshot without history, it represents a full copy at one point in time.
 
@@ -322,8 +320,8 @@ Lets assume you planned for scalability and dedicated the container you want to 
 
 .. _dam_fileformats:
 
-Use Open, Non-proprietary Standards as File Formats
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Use Open File Formats
+~~~~~~~~~~~~~~~~~~~~~
 
 The short history of the digital era in the past 20 years has proven over and over again that proprietary formats are not the way to go when you want your data to be intelligible 10 years into the future. Microsoft is certainly the well known culprit of that sort because of its domineering market share. But other companies are actually (if inadvertently) worse since they may not stay long enough in the market at all or have a small user/contributor base only. In the case of Microsoft one has at least the advantage of many people sharing the same problems. Finding a solution has therefore much more success. Still, in some cases Microsoft is using Open Source documentation to understand their own systems, so badly maintained have been their own documentation. Usually with any given MSoffice suite one cannot properly read a document created with the same application two major versions earlier.
 
