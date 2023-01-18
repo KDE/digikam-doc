@@ -84,7 +84,9 @@ Solid State Drives
 
 In case of use as external device, one major cause for data loss (often recoverable) is the unsafe removal of SDDs from a computer. Before data is saved from a computer memory to any attached device, it remains for some time in buffers. In hard drives this means seconds at most, whereas with SDDs it can be tens of minutes. Therefore, before you disconnect a flash device, always activate data flushing through software (often called *safely remove device*).
 
-**In all cases SSDs as internal devices are the solution to host the database and the collections.**
+.. important:
+
+    **In all cases SSDs as internal devices are the solution to host the database and the collections.**
 
 Magnetic Media
 ~~~~~~~~~~~~~~
