@@ -32,9 +32,11 @@ If you select **Camera filenames** the image filenames will not be altered. But 
 
 The file customize **Renaming Options** and **Modifier** possibilities are mostly the same than **Advanced Rename** tool available in **Main Window**. See the full description in :ref:`this section <renaming_photograph>` of this manual.
 
-The new filename that digiKam will use for the photographs when they are downloaded can be shown underneath the **Customize** settings. Changing item selection from the icon-view will update these information. The renaming settings will be remembered the next time you use the camera interface.
+.. important::
 
-On the bottom of this view, an annotation will warn about the file metadata usage setting during camera contents parsing. If :ref:`this option <camera_behavior>` is disabled, the file renaming features will be limited. Take a care that enabling this option will slow down the camera connection stage.
+    With USB Mass Torage driver, the usage of **file metadata** setting during camera contents parsing influence the rules of file renaming operations. If :ref:`this option <camera_behavior>` is disabled, the file renaming features will be limited. Take a care that enabling this option will slow down the camera connection stage.
+
+The new filename that digiKam will use for the photographs when they are downloaded can be shown underneath the **Customize** settings. Changing item selection from the icon-view will update these information. The renaming settings will be remembered the next time you use the camera interface.
 
 .. caution::
 
