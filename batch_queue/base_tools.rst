@@ -26,6 +26,8 @@ The Batch Queue Manager tools are available as plugins loaded dynamically at sta
 
     The Batch Queue Manager View to Select Base Tools for Creating a Workflow
 
+.. _bqm_editortools:
+
 Shared Image Editor Tools
 -------------------------
 
@@ -138,6 +140,23 @@ These tools allow to save images to new file formats. There are mostly placed at
 
     - **Convert RAW to DNG** (this specific tool must be placed on to top of your list of **Assigned Tools** from your **Workflow**).
 
+.. _bqm_damtools:
+
 Digital Asset Management tools
 ------------------------------
 
+    - :ref:`Image Quality Sort <maintenance_quality>`
+
+    - :ref:`Apply Metadata Template <templates_settings>`
+
+    - :ref:`Translate Metadata <captions_view>`
+
+    - :ref:`Assign Captions <captions_view>`
+
+    - :ref:`Assign Labels <captions_view>`
+
+    - **Remove Metadata**
+
+    - **Time Adjust**
+
+    - **User Shell Script**
