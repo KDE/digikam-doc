@@ -18,7 +18,7 @@ Base Tools
 Overview
 --------
 
-The Batch Queue Manager tools are available as plugins loaded dynamically at startup and configurable in :ref:`Setup dialog <plugins_settings>`. Excepted few ones, mostly all tools share the same fonctionalities than plugins from **Image Editor**. The difference with Image Editor tools is the no possibility to preview the tool effects over the images. Others tools are more designed to **Convert** to file formats, and to apply the **Digital Asset Management**.
+The Batch Queue Manager tools are available as plugins loaded dynamically at startup and configurable in :ref:`Setup dialog <plugins_settings>`. Excepted few ones, mostly all tools share the same fonctionalities than plugins from :ref:`Image Editor <image_editor>`. The difference with Image Editor tools is the no possibility to preview the tool effects over the images. Others tools are more designed to **Convert** to file formats, and to apply the :ref:`Digital Asset Management <asset_management>`.
 
 .. figure:: images/base_tools_view.webp
     :alt:
