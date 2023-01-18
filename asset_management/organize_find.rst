@@ -34,7 +34,7 @@ The key thing to remember is that you don't know how you or somebody else will t
 
 One distinction has to be interjected here between **private** and **public metadata**. One could say that all file-embedded attributes are potentially public since the images may be exported, sold, and copied to other places and people. On the other hand all non-embedded metadata in the database can be considered private as they stay in the database and go nowhere else. By adjusting digiKam's settings accordingly you can control what kind of data remains private and what will be embedded and eventually become public.
 
-Folder Organization as The Physical Information Layout
+Folder Organization as the Physical Information Layout
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The first thing to do and to know before you put anything onto your system is to build an information structure (as opposed to data structure). Your image files have to be somehow organized within the computer, you have to decide if others should have access to your photographs (sharing), if you put them on a dedicated drive, on a network drive etc. Keep in mind that you have to migrate one day onto some bigger volume.
@@ -53,7 +53,7 @@ The organization should be simple, unified and scalable, and it should be indepe
 
 Maybe you'll be happy with this structure. Holiday pictures can be quickly found by its location (unless you go to the same place every year), the rest will be organized by date. If you shoot enough pictures you want to create sub folders below the years as months e.g. 2008-01, 2008-02 etc. 'Export' would be a container for images to print or to put onto a website.
 
-The more professional photographer will have very different needs as there will be versions of photographs, archives, workflows, a constant influx of images of diverging themes, and a large quantity of everything. Within 10 year you'll have 95% archives and 5% work space files and you don't want to organize your structure around content!
+The more professional photographer will have very different needs as there will be versions of photographs, archives, workflows, a constant influx of images of diverging themes, and a large quantity of everything. Within 10 year you'll have 95% archives and 5% work space files and you don't want to organize your structure around content.
 
 The consideration are these:
 
@@ -82,7 +82,7 @@ How to go about all this metadata business? Firstly, there are already a lot of 
 
 We actually recommend to auto-rename to match an event, a place or a theme. digiKam provides all date/calendar related grouping so that there's hardly a need for coding the date into the file name. Unless you'd like to do just that to browse your albums with another application that is not calendar savvy. You will buy a new camera one day or you have a second one already, sooner than you believe. The numbering scheme of that new camera will start over at typically IMG_0001.JPG again, creating identical file names to the ones you have already if you do not rename them. By renaming you lessen the chance of inadvertently overwriting them at a later date. Keep the new names clean, use alphanumerics, dashes, underscores and a single period prior to the file extension.
 
-We also recommend to switch-on the **Save Metadata** options in the digiKam settings page for metadata. This will ensure that Exif, IPTC and XMP information is written into the file. If you forgot to do that you can always catch up by copying the metadata in the database to the files in one go (from the Album menu).
+We also recommend to switch-on the **Save Metadata** options in the :ref:`digiKam settings page for metadata <metadata_settings>`. This will ensure that Exif, IPTC and XMP information is written into the file. If you forgot to do that you can always catch up by copying the metadata in the database to the files in one go (from the **Album** menu).
 
 .. figure:: images/dam_metadata_workflow.webp
     :alt:
@@ -102,7 +102,7 @@ The real work begins here as we will apply **Tags**, **Captions** and a **Rating
 
 .. _rating_ranking:
 
-digiKam also provides automatic tagging features based on deep-learning:
+digiKam also provides **automatic tagging** features based on deep-learning:
 
     - :ref:`Image Quality Sorting <maintenance_quality>` to assign automatically a **Pick Label** to item based on aesthetic factors.
     - :ref:`Face Detection <face_detection>` to detect faces on image and record areas on database.
@@ -135,14 +135,15 @@ That will get you quite far in distinguishing your rating pyramid. Say, you choo
 
     The Rating Pyramid
 
-Lets continue with tags (or keywords as called by other applications, or categories, they are all synonymous).
+Lets continue with **Tags** (or keywords as called by other applications, or categories, they are all synonymous).
 
 .. _asset_tags:
 
 Tagging and Keyword Assignment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Tags are a hierarchical labeling system that you create as you add to it. The important thing to do is to create a system that suits your needs and habits. Are you a (semi)professional who wants to sell photographs to agencies, do you want to publish on a web gallery, or are you just the occasional amateur managing the visual family memory? For all these different use cases you want to design a tag structure that is adapted to it. If you configure it so, digiKam will write the whole hierarchy into XMP fields so that they can be used by your photographic agency using a different application of to automatically create **Title** and **Caption** for web exports. In any case it will serve you well to quickly find a specific picture again.
+Tags are a hierarchical labeling system that you create as you add to it. The important thing to do is to create a system that suits your needs and habits. Are you a (semi)professional who wants to sell photographs to agencies, do you want to publish on a web gallery, or are you just the occasional amateur managing the visual family memory? 
+For all these different use cases you want to design a tag structure that is adapted to it. If you configure it so, digiKam will write the whole hierarchy into XMP fields so that they can be used by your photographic agency using a different application of to automatically create **Title** and **Caption** for web exports. In any case it will serve you well to quickly find a specific picture again.
 
 .. figure:: images/dam_assign_tags.webp
     :alt:
@@ -218,7 +219,7 @@ Geolocation and Geo-tagging
 
 Do you still remember the times before GPS? When you would find your way to another city without navigation system? Wasn't the earth a dull blue ball before GoogleEarth? Well then, with images, the train of spatial representation is running at cruising speed alright.
 
-A few cameras have a GPS receiver built-in, the images come tagged with 3-dimensional coordinates. And with almost any GPS device you're able to extract a trace (of course the receiver needs to be switched-on and carried with you whilst taking the photographs, and for good matching the camera time must be accurately set) and save it onto a computer. You have to store it in gpx format, that's easily done with gpsbabel, gpsman and other tools. You then can automatically match a whole bunch of photos with that track using digiKam. The coordinates are written into the JFIF part of JPG files (settings choice) and into the database. digiKam will enable searches based on locations and coordinates, you can create virtual albums of geographical areas! In the right sidebar under the metadata tab you'll find your image located on a local zoom of the world map. A further click brings on anyone of several mapping services on the web, zooming in on details. Even if you don't have a GPS trace you can geo-tag multiple images with a geo-editor. Just navigate on the map to the spot of shooting and click to fix it as a geo-tag.
+A few cameras have a GPS receiver built-in, the images come tagged with 3-dimensional coordinates. And with almost any GPS device you're able to extract a trace (of course the receiver needs to be switched-on and carried with you whilst taking the photographs, and for good matching the camera time must be accurately set) and save it onto a computer. You have to store it in GPX format, that's easily done with `gpsbabel <https://www.gpsbabel.org/>`_, gpsman and other tools. You then can automatically match a whole bunch of photos with that track using digiKam. The coordinates are written into the JFIF part of JPG files (settings choice) and into the database. digiKam will enable searches based on locations and coordinates, you can create virtual albums of geographical areas! In the right sidebar under the metadata tab you'll find your image located on a local zoom of the world map. A further click brings on anyone of several mapping services on the web, zooming in on details. Even if you don't have a GPS trace you can geo-tag multiple images with a geo-editor. Just navigate on the map to the spot of shooting and click to fix it as a geo-tag.
 
 .. figure:: images/dam_reverse_geocoding.webp
     :alt:
@@ -226,4 +227,4 @@ A few cameras have a GPS receiver built-in, the images come tagged with 3-dimens
 
     digiKam Editing Geolocation and Processing Reverse Geocoding with OpenStreetMap
 
-The possibilities of exploiting this geolocation are already innumerable and will become pervasive in the future. I'm sure one day not too far away we can revisit in a virtual reality our travels through geo-tagged pictures. The digiKam features include exporting to KML files that can be opened by GoogleEarth (which in turn will show the photos on their shooting site), exporting to Piwigo, Google Photo, Flickr etc. with OpenStreetMap viewer and more.
+The possibilities of exploiting this geolocation are already innumerable and will become pervasive in the future. I'm sure one day not too far away we can revisit in a virtual reality our travels through geo-tagged pictures. The digiKam features include :ref:`exporting to KML files <geoeditor_kmlexport>` that can be opened by GoogleEarth (which in turn will show the photos on their shooting site), exporting to Piwigo, Google Photo, Flickr etc. with OpenStreetMap viewer and more.
