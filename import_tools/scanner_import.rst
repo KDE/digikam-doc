@@ -15,15 +15,7 @@ Import From Scanner
 
 .. contents::
 
-This tool is dedicated to scan images using a flat scanner. It uses an interface for `SANE Library <http://sane-project.org/>`_ to control scanner devices.
-
-It can save images in all main image containers, as for example the following formats:
-
-    - png (8 and 16 bits per color).
-
-    - jpeg, jpg, jpeg 2000.
-
-    - tiff.
+This tool is dedicated to scan images using a flat scanner. It uses an interface for `SANE Library <http://sane-project.org/>`_ to control scanner devices. It can save images in all main image containers that digiKam support.
 
 .. note::
 
