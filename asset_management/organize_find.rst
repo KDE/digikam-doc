@@ -169,6 +169,14 @@ Another categorization might be task-oriented as in *print jobs*, *web export*, 
 
     The digiKam Color Labels Can be Used to Group Items For Your Workflow Stages
 
+Another digiKam feature is the **Pick Labels** used to categorize shots by quality and identify which item will be **Rejected**, **Pending**, or **Accepted** in your workflow. You can assign this kind of properties manualy of course, but there is a better solution: delegate the quality analysis to the computer using the deep-learning based tool named **Image Quaioty Sorter**. This one can parse image feature as noise, blur, form, shape, contents, etc, and give a evalutation of the quality of shot. This tool is available in **Maintenance Tool** and in **Batch Queue Manager**.
+
+.. figure:: images/dam_quality_bqm.webp
+    :alt:
+    :align: center
+
+    The digiKam Pick Labels can be Assigned Automatically Depending of the Quality of Shot in Batch Queue Manager.
+
 When you import cataloged images from other sources having embedded tags already, digiKam will automatically create the trees for you, respectively insert it into the right place. Rearranging the hierarchy within the tree is no problem, you can do that easily by dragging and dropping a sub-tree to another place in the hierarchy. The changed tags will be updated as digiKam ripples down the branches.
 
 The graphics here shows how different metadata overlap. This is a very coarse representation, as each block of metadata will in itself be subdivided into many sections. File names and calendar data are properties of all images.
