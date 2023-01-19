@@ -157,7 +157,7 @@ In terms of data retention the web space solution is probably pretty safe. Trans
 Transmission Errors
 ~~~~~~~~~~~~~~~~~~~
 
-Data does not only get lost from storage devices, it also gets lost when traveling inside the computer or across networks (although the network traffic itself via TCP is error protected). Errors occur on buses and in memory spaces. Consumer hardware has no protection against those bit errors, whereas it is worthwhile to look into such. You can buy ECC (error code correction) protected memory (which is expensive, granted). With ECC RAM at least the memory will be scrubbed for single bit errors and corrected. Double bit errors would escape that scheme but they occur too infrequently.
+Data does not only get lost from storage devices, it also gets lost when traveling inside the computer or across networks (although the network traffic itself via TCP is error protected). Errors occur on buses and in memory spaces. Consumer hardware has no protection against those bit errors, whereas it is worthwhile to look into such. You can buy ECC (error code correction) protected memory (which is expensive, granted). With `ECC RAM <https://en.wikipedia.org/wiki/ECC_memory>`_ at least the memory will be scrubbed for single bit errors and corrected. Double bit errors would escape that scheme but they occur too infrequently.
 
 .. figure:: images/dam_transmission.webp
     :alt:
@@ -232,7 +232,7 @@ So, taking into account the manufacturer mega pixel propaganda it seems save to 
 
 In order to estimate the amount of storage space you have to plan for, simply determine the number of photographs you take per year (easy with :ref:`digiKam's timeline sidebar tab <timeline_view>`) and multiply it by 40 MB. Most users will keep less than 2000 pictures per year which requires less than 80 GB/year. Assuming that you will change your hard disk (or whatever media in the future) every 4-5 years, the natural increase in storage capacity will suffice to keep you afloat.
 
-The more ambitious ones out there will need more space, much more maybe. Think of buying a file server, Giga-Ethernet comes integrated into motherboards today and it's a flick to fetch the files over the local network. Speaking about modern mobos: they now have external SATA connectors. This makes it really a trifle to buy an external SATA drive and hook it up to your machine. 4000 GB drives will hit the market in 2020. These are terrific compact storage containers for backup swapping: keep one drive at home and one somewhere else.
+The more ambitious ones out there will need more space, much more maybe. Think of buying a file server, Giga-Ethernet comes integrated into motherboards today and it's a flick to fetch the files over the local network. Speaking about modern mobos: they now the capbility to SATA media through an USB connectors. This makes it really a trifle to buy an external SATA drive and hook it up to your machine. 4000 GB drives will hit the market in 2020. These are terrific compact storage containers for backup swapping: keep one drive at home and one somewhere else.
 
 Backup and Recover
 ------------------
@@ -376,9 +376,9 @@ We strongly recommend converting RAW files to DNG for archiving. Despite the fac
 IPTC Goes XMP
 ~~~~~~~~~~~~~
 
-That's probably one of the reasons why, around 2001, that Adobe introduced its XML based XMP technology to replace the "Image resource block" technology of the nineties. XMP stands for **Extensible Metadata Platform**, a mixture of XML and RDF. It is a labeling technology that lets users embed data about a file in the file itself, the file info is saved using the extension".xmp" (signifying the use of XML/RDF).
+That's probably one of the reasons why, around 2001, that Adobe introduced its XML based XMP technology to replace the "Image resource block" technology of the nineties. XMP stands for **Extensible Metadata Platform**, a mixture of XML and RDF. It is a labeling technology that lets users embed data about a file in the file itself, the file info is saved using the extension *.xmp* (signifying the use of XML/RDF).
 
-`XMP <https://en.wikipedia.org/wiki/Extensible_Metadata_Platform>`_: As much as ODF will be readable forever (since its containing text is written in clear text), XMP will preserve your metadata in a clearly understandable format XML. No danger here of not being able to read it later. It can be embedded into the image files or as a separate accompanying file (sidecar concept). XMP can be used in PDF, JPEG, JPEG2000, GIF, PNG, HTML, TIFF, Adobe Illustrator, PSD, PostScript, Encapsulated PostScript, and video files. In a typical edited JPEG file, XMP information is typically included alongside Exif and IPTC data.
+`XMP <https://en.wikipedia.org/wiki/Extensible_Metadata_Platform>`_: As much as ODF will be readable forever (since its containing text is written in clear text), XMP will preserve your metadata in a clearly understandable format XML. No danger here of not being able to read it later. It can be embedded into the image files or as a separate accompanying file (**Sidecar** concept). XMP can be used in PDF, JPEG, JPEG2000, GIF, PNG, HTML, TIFF, Adobe Illustrator, PSD, PostScript, Encapsulated PostScript, and video files. In a typical edited JPEG file, XMP information is typically included alongside Exif and IPTC data.
 
 .. figure:: images/dam_xmp_viewer.webp
     :alt:
