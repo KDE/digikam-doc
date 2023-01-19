@@ -233,6 +233,7 @@ A good place to learn **ReStructuredText** format used in this documentation, it
 - [Quick-start](https://docutils.sourceforge.io/docs/user/rst/quickstart.html).
 - [Cheat-sheet](http://docutils.sourceforge.net/docs/user/rst/cheatsheet.txt).
 - [Reference](http://docutils.sourceforge.net/docs/user/rst/quickref.html).
+- [Markup Languages Synthesis](https://hyperpolyglot.org/lightweight-markup).
 
 [This StackOverflow entry](https://stackoverflow.com/questions/2746692/restructuredtext-tool-support) list the tools avaialble to work with ResStructuredText files.
 
