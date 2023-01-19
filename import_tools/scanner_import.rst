@@ -79,9 +79,9 @@ Sometimes you need only certain parts of an image. Instead of scanning the whole
 
     The Multiple Selection over Preview from Scanner Import Dialog
 
-Scan a preview and then use the left mouse button to select the first part of the image in the preview. Hover the selected area with mouse cursor and click on the **Green Cross** to select the area. Selected areas are indicated by a red border. Now select the next parts of the image in the same way.
+Scan a preview and then use the left mouse button to select the first part of the image in the preview. Hover the selected area with mouse cursor and click on the **Green Plus** button to select the area. Selected areas are indicated by a red border. Now select the next parts of the image in the same way.
 
-To remove a single selection hover the area with the mouse cursor and click on the **Red Cross**. With **Clear Selections** from the context menu launched with the right mouse button all selections in a preview can be removed.
+To remove a single selection hover the area with the mouse cursor and click on the **Red Minus** button. With **Clear Selections** from the context menu launched with the right mouse button all selections in a preview can be removed.
 
 If you placed two separate images or photos on you scanner and started a preview the tool automatically preselect the different areas.
 
