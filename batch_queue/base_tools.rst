@@ -18,7 +18,7 @@ Base Tools
 Overview
 --------
 
-The Batch Queue Manager tools are available as plugins loaded dynamically at startup and configurable in :ref:`Setup dialog <plugins_settings>`. Excepted few ones, mostly all tools share the same fonctionalities than plugins from :ref:`Image Editor <image_editor>`. The difference with Image Editor tools is the no possibility to preview the tool effects over the images. Others tools are more designed to **Convert** to file formats, and to apply the :ref:`Digital Asset Management <asset_management>`.
+The Batch Queue Manager tools are available as plugins loaded dynamically at startup and configurable in :ref:`Setup dialog <plugins_settings>`. Excepted few ones, mostly all tools share the same functionalities than plugins from :ref:`Image Editor <image_editor>`. The difference with Image Editor tools is the no possibility to preview the tool effects over the images. Others tools are more designed to **Convert** to file formats, and to apply the :ref:`Digital Asset Management <asset_management>`.
 
 .. figure:: images/base_tools_view.webp
     :alt:
@@ -31,19 +31,19 @@ The Batch Queue Manager tools are available as plugins loaded dynamically at sta
 Shared Image Editor Tools
 -------------------------
 
-List of tools comming from Image Editor and shared in Batch Queue Manager is given below. This list provide the links to Image Editor chapters from this manual corresponding to the Batch Queue Manager tools.
+List of tools coming from Image Editor and shared in Batch Queue Manager is given below. This list provide the links to Image Editor chapters from this manual corresponding to the Batch Queue Manager tools.
 
     - Image Color Corrections:
 
-        - :ref:`Convert to 8 bits bits <color_depth>`
+        - :ref:`Convert to 8 bits <color_depth>`
 
-        - :ref:`Convert to 16 bits bits <color_depth>`
+        - :ref:`Convert to 16 bits <color_depth>`
 
         - :ref:`Color Profile Conversion <color_cm>`
 
         - :ref:`Color Auto-Correction <color_auto>`
 
-        - :ref:`BCG Corection <color_bcg>`
+        - :ref:`BCG Correction <color_bcg>`
 
         - :ref:`HSL Correction <color_hsl>`
 

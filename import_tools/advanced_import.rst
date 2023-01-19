@@ -34,7 +34,7 @@ The file customize **Renaming Options** and **Modifier** possibilities are mostl
 
 .. important::
 
-    With USB Mass Torage driver, the usage of **file metadata** setting during camera contents parsing influence the rules of file renaming operations. If :ref:`this option <camera_behavior>` is disabled, the file renaming features will be limited. Take a care that enabling this option will slow down the camera connection stage.
+    With USB Mass Storage driver, the usage of **file metadata** setting during camera contents parsing influence the rules of file renaming operations. If :ref:`this option <camera_behavior>` is disabled, the file renaming features will be limited. Take a care that enabling this option will slow down the camera connection stage.
 
 The new filename that digiKam will use for the photographs when they are downloaded can be shown underneath the **Customize** settings. Changing item selection from the icon-view will update these information. The renaming settings will be remembered the next time you use the camera interface.
 
@@ -59,7 +59,7 @@ Check **Extension-based sub-albums** and digiKam will create subalbums based on 
 
 If your camera provides information about the date of the photograph's taking or, if you import from a USB device or a folder, the images contain Exif metadata with date/time information, digiKam can use this to automatically create subalbums in the target album during import. Subalbums names will be based on the image dates. All images which have the same date will be downloaded into the same subalbum if you check **Date-based sub-albums**. Not all cameras include this information. See the :ref:`sidebar Metadata section <camera_import>` for more detail about information your camera may have embedded in your photographs.
 
-Automatically Albums create **Date format** can be **ISO**, **Full text**, **Local Settings** taken from your desktop settings), or **Custom**. For this last one, an option modifiers editor is available belw with a help dialog to know all date format possibilities. On the bottom of this view, an annotation will warn about the custom Album date format validity.
+Automatically Albums create **Date format** can be **ISO**, **Full text**, **Local Settings** taken from your desktop settings), or **Custom**. For this last one, an option modifiers editor is available below with a help dialog to know all date format possibilities. On the bottom of this view, an annotation will warn about the custom Album date format validity.
 
 .. figure:: images/camera_auto_albums_helper_dialog.webp
     :alt:
