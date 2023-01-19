@@ -111,7 +111,7 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 
     - **RawTherapee**: this application must be installed on your computer. `RawTherapee <https://en.wikipedia.org/wiki/Darktable>`_ is application software for processing photographs in RAW image formats, as created by many digital cameras. It comprises a subset of image editing operations specifically aimed at non-destructive post-production of raw photos and is primarily focused on improving a photographer's workflow by facilitating the handling of large numbers of images.
 
-    - **UFRaw**: this application must be installed on your computer. `UFRaw <https://en.wikipedia.org/wiki/UFRaw`_ is an application which can read and manipulate photographs in RAW image formats, as created by many digital cameras.
+    - **UFRaw**: this application must be installed on your computer. `UFRaw <https://en.wikipedia.org/wiki/UFRaw>`_ is an application which can read and manipulate photographs in RAW image formats, as created by many digital cameras.
 
 .. figure:: images/setup_editor_raw_import.webp
     :alt:
