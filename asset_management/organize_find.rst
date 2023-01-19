@@ -34,12 +34,12 @@ The key thing to remember is that you don't know how you or somebody else will t
 
 One distinction has to be interjected here between **private** and **public metadata**. One could say that all file-embedded attributes are potentially public since the images may be exported, sold, and copied to other places and people. On the other hand all non-embedded metadata in the database can be considered private as they stay in the database and go nowhere else. By adjusting digiKam's settings accordingly you can control what kind of data remains private and what will be embedded and eventually become public.
 
-Folder Organization as the Physical Information Layout
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Folders Organization
+~~~~~~~~~~~~~~~~~~~~
 
 The first thing to do and to know before you put anything onto your system is to build an information structure (as opposed to data structure). Your image files have to be somehow organized within the computer, you have to decide if others should have access to your photographs (sharing), if you put them on a dedicated drive, on a network drive etc. Keep in mind that you have to migrate one day onto some bigger volume.
 
-The organization should be simple, unified and scalable, and it should be independent of the storage medium on which you host them. Do not make the folders too small, several thousand images in one folder is not too much to ask for, but keep them small enough so that they can fit into a backup medium like a DVD or a Blue Ray. Remember that the archive will grow all the time! The concrete type of structure depends on your use case of course: Lets take a simple yet frequent example: you are a casual photographer taking pictures of your private life, your family, holidays and so on. It could be efficient to create a structure based on years plus some holiday and export containers. It could look like this:
+The organization should be simple, unified and scalable, and it should be independent of the storage medium on which you host them. In others words, the folders organization must be the physical information layout. Do not make the folders too small, several thousand images in one folder is not too much to ask for, but keep them small enough so that they can fit into a backup medium like a DVD or a Blue Ray. Remember that the archive will grow all the time! The concrete type of structure depends on your use case of course: Lets take a simple yet frequent example: you are a casual photographer taking pictures of your private life, your family, holidays and so on. It could be efficient to create a structure based on years plus some holiday and export containers. It could look like this:
 
             2006
             2007
