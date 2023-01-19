@@ -448,7 +448,7 @@ you can show a translated version of this documentation by selecting a language 
 
 ## Convert EPUB to PDF
 
-Sphinx allows to generate PDF using Latex engine in background, but it converter as several limitations, as the non support of WEBP and GIF formats used for screenshots and screencast.
+Sphinx allows to generate PDF using Latex engine in background, but thid converter as several limitations, as the non support of WEBP and GIF formats used for screenshots and screencast.
 
 An alternative is to install [Calibre](https://calibre-ebook.com/) and to convert the EPUB target to PDF like this:
 
@@ -456,7 +456,7 @@ An alternative is to install [Calibre](https://calibre-ebook.com/) and to conver
 
 The PDF file is generated in `build/epub`. Open the file `DigikamManual.pdf` in your prefered PDF reader.
 
-Note: unlike EPUB, PDF is only for Print. During conversion video screencasts will be converted as simple images, and all Internet links will be dropped.
+Note: unlike EPUB, PDF is only for print purpose. During conversion video screencasts will be converted as still images, and all Internet links will be dropped.
 
 ## Rationale
 
