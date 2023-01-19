@@ -179,7 +179,7 @@ Another digiKam feature is the **Pick Labels** used to categorize shots by quali
 
 When you import cataloged images from other sources having embedded tags already, digiKam will automatically create the trees for you, respectively insert it into the right place. Rearranging the hierarchy within the tree is no problem, you can do that easily by dragging and dropping a sub-tree to another place in the hierarchy. The changed tags will be updated as digiKam ripples down the branches.
 
-The graphics here shows how different metadata overlap. This is a very coarse representation, as each block of metadata will in itself be subdivided into many sections. **File-names** and **Files-dates** data are properties of all images taken from files-system.
+The graphics here shows how different digiKam item properties overlap. This is a very coarse representation, as each block of metadata will in itself be subdivided into many sections. **File-names** and **Files-dates** data are properties of all images taken from files-system.
 
 .. figure:: images/dam_metadata.webp
     :alt:
