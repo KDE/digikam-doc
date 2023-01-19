@@ -33,6 +33,8 @@ Shared Image Editor Tools
 
 List of tools coming from Image Editor and shared in Batch Queue Manager is given below. This list provide the links to Image Editor chapters from this manual corresponding to the Batch Queue Manager tools.
 
+.. _bqm_colortools:
+
     - Image Color Corrections:
 
         - :ref:`Convert to 8 bits <color_depth>`
@@ -63,6 +65,8 @@ List of tools coming from Image Editor and shared in Batch Queue Manager is give
 
         **Adjust Levels** and **Simulate Negative Film** are not available in Batch Queue Manager.
 
+.. _bqm_enhancetools:
+
     - Image Enhancement:
 
         - :ref:`Sharpen Image (sharpen, unsharp mask, refocus) <enhance_sharpen>`
@@ -87,6 +91,8 @@ List of tools coming from Image Editor and shared in Batch Queue Manager is give
 
         **Healing Clone Tool** and **Lens Distortion Correction** are not available in Batch Queue Manager.
 
+.. _bqm_transformtools:
+
     - Image Transformation Tools:
 
         - :ref:`Crop Tool <transform_crop>`
@@ -99,6 +105,8 @@ List of tools coming from Image Editor and shared in Batch Queue Manager is give
 
         **Liquid Rescale**, **Perspective**, **Shearing Tool**, and **Proportional Crop Tool** are not available in Batch Queue Manager.
 
+.. _bqm_decoratetools:
+
     - Image Decoration Tools:
 
         - Add Watermark (more powerful tool than **Insert Text** from Image Editor)
@@ -106,6 +114,8 @@ List of tools coming from Image Editor and shared in Batch Queue Manager is give
         - :ref:`Insert Text <decorate_inserttext>`
 
         - :ref:`Add Texture <decorate_texture>`
+
+.. _bqm_effecttools:
 
     - Special Effect Filters:
 
