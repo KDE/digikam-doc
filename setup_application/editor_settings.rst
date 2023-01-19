@@ -117,7 +117,7 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 
     - **UFRaw**: this application must be installed on your computer. `UFRaw <https://en.wikipedia.org/wiki/UFRaw>`_ is an application which can read and manipulate photographs in RAW image formats, as created by many digital cameras.
 
-    - **DarkTable**: this application must be installed on your computer. `Darktable <https://en.wikipedia.org/wiki/Darktable>`_ is a free and open-source photography application program and raw developer. It comprises a subset of image editing operations specifically aimed at non-destructive RAW image post-production.
+    - **DarkTable**: this application must be installed on your computer. `Darktable <https://en.wikipedia.org/wiki/Darktable>`_ is a free and open-source photography application program and RAW developer. It comprises a subset of image editing operations specifically aimed at non-destructive RAW image post-production.
 
     .. figure:: videos/setup_editor_raw_behavior.gif
         :width: 500px
@@ -128,6 +128,10 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 
 RAW Default Settings
 --------------------
+
+.. note::
+
+    This default settings is used only with the LibRaw interface.
 
 Demosaicing
 ~~~~~~~~~~~
