@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 00:50+0000\n"
-"PO-Revision-Date: 2023-01-17 08:58+0200\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"POT-Creation-Date: 2023-01-18 00:50+0000\n"
+"PO-Revision-Date: 2023-01-18 16:08+0200\n"
+"Last-Translator: Fracture dept <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -340,60 +340,255 @@ msgstr ""
 msgid "Renaming a Photograph"
 msgstr "Перейменування фотографій"
 
-#: ../../main_window/image_view.rst:112
-msgid "The digiKam Advanced Rename Tool"
-msgstr "Розширений засіб перейменування digiKam"
-
-#: ../../main_window/image_view.rst:114
+#: ../../main_window/image_view.rst:108
+#| msgid ""
+#| "You can change the filename for a photograph by clicking with the right "
+#| "mouse button over a thumbnail and selecting **Rename** :kbd:`F2`. "
+#| "Remember to keep the file extension (.jpg, .tif, etc.)."
 msgid ""
 "You can change the filename for a photograph by clicking with the right "
-"mouse button over a thumbnail and selecting **Rename** :kbd:`F2`. Remember "
-"to keep the file extension (.jpg, .tif, etc.)."
+"mouse button over a thumbnail and selecting **Rename** :kbd:`F2`. You can "
+"also select multiple photographs to batch rename files. A dialog will open "
+"showing the list of selected photographs with their current name and the new "
+"name."
 msgstr ""
 "Змінити назву файла зображення можна так: наведіть вказівник миші на "
 "мініатюру зображення, клацніть правою кнопкою миші і оберіть пункт "
-"контекстного меню **Перейменувати** (:kbd:`F2`).  Не забудьте зберегти "
-"суфікс назви файла (jpg, .tif тощо)."
+"контекстного меню **Перейменувати** (:kbd:`F2`). Ви також можете позначити"
+" декілька фотографій для пакетного перейменування. У відповідь програма"
+" відкриє діалогове вікно зі списком позначених фотографій, їхніми поточними"
+" назвами та новими назвами."
+
+#: ../../main_window/image_view.rst:114
+#| msgid "The digiKam Advanced Rename Tool"
+msgid "The digiKam Advanced Rename Tool Dialog"
+msgstr "Вікно розширеного засобу перейменування digiKam"
 
 #: ../../main_window/image_view.rst:116
 msgid ""
-"You can also batch rename photographs. One method is to use the :ref:`Batch "
-"Queue Manager <batch_queue>` :kbd:`B`. Another one is to select multiple "
-"photographs and then press :kbd:`F2`. A dialog will open showing the list of "
-"selected photographs with their current name and the new name. These two are "
-"identical at first until you place the cursor in the input field, type in "
-"something and/or select a modifier from the buttons below."
+"The renaming pattern can be customize with the **Options** collection on the "
+"botton which contains original file name, file extension, owner and group, "
+"directory, a dialog for defining a sequence number and a dialog for adding "
+"date and time information, either fixed or based on the time information "
+"written by the camera into the image file. Each option appended to the "
+"renaming pattern can be customized with the **Modifier** button on the right "
+"side of renaming pattern editor."
 msgstr ""
-"Також можна скористатися пакетним інструментом перейменування зображень "
-"Можна використати або :ref:`Керування чергою пакетної обробки <batch_queue>` "
-"(:kbd:`B`), або позначити декілька фотографій і натиснути клавішу :kbd:`F2`. "
-"У відповідь буде показано діалогове вікно зі списком позначених фотографій, "
-"їхніх поточних назв та нових назв. На початку ці назви будуть однаковими. "
-"Вам слід перевести курсор у область введення, щось ввести і/або вибрати "
-"модифікатор за допомогою розташованих нижче кнопок."
+"Взірець для перейменування можна налаштувати за допомогою панелі"
+" **Параметри** у нижній частині вікна. Там буде показано початкову назву"
+" файла, суфікс назви файла, власника та групу, яким належить файл, каталог"
+" та панель для визначення номера у послідовності файлів, а також панель для"
+" додавання даних щодо дати і часу, фіксованих або на основі даних щодо часу,"
+" які записано до файла зображення фотоапаратом. Усі дані, які дописано до"
+" взірця перейменування, можна налаштувати за допомогою кнопки"
+" **Модифікатор** у правій частині редактора взірця перейменування."
 
-#: ../../main_window/image_view.rst:120
+#: ../../main_window/image_view.rst:122
 msgid ""
-"The powerful rename tool has a self description of all features available to "
-"process renaming. Take a look of context help from the tooltip button on the "
-"right side of the text field used to enter rename modifiers."
+"The Avanced Rename Sequence Number Dialog to Setup Modifiers in Renaming "
+"Pattern"
 msgstr ""
-"У вікні потужного інструмента для перейменування наведено опис усіх "
-"можливостей, які доступні у процесі перейменування. Ознайомтеся із "
-"контекстною довідкою, доступ до якої можна отримати за допомогою кнопки "
-"підказки у правій частині текстового поля, яке використовують для введення "
-"модифікаторів перейменування."
+"Вікно номера у послідовності засобу розширеного перейменування для"
+" налаштовування модифікаторів у взірці перейменування"
+
+#: ../../main_window/image_view.rst:124
+msgid ""
+"In the sequence **Number** dialog you will find two options: **Extension "
+"aware numbering** and **Folder aware numbering**. If they are checked "
+"digiKam will start a new sequence for every file extension and / or folder."
+msgstr ""
+"У діалоговому вікні нумерації вам буде запропоновано два параметри: "
+"**Нумерація з врахуванням суфікса** і **Нумерація з врахуванням теки**. Якщо "
+"позначити відповідні пункти, digiKam починатиме нумерацію з початку для "
+"окремих суфіксів файлів і/або окремих тек."
 
 #: ../../main_window/image_view.rst:126
-#| msgid "The digiKam Advanced Rename Tool"
-msgid "The Advanced Rename Helper View"
-msgstr "Панель допоміжного розширеного засобу перейменування digiKam"
+msgid "The **Date and Time** selection dialog looks like this:"
+msgstr "Діалогове вікно вибору **дати і часу** виглядає так:"
 
-#: ../../main_window/image_view.rst:131
+#: ../../main_window/image_view.rst:132 ../../main_window/image_view.rst:156
+#: ../../main_window/image_view.rst:164
+msgid ""
+"The Avanced Rename Date Selector to Setup Modifiers in Renaming Pattern"
+msgstr ""
+"Вибір дати у засобі розширеного перейменування для налаштовування"
+" модифікаторів у взірці перейменування"
+
+#: ../../main_window/image_view.rst:134
+msgid ""
+"The calendar is active only if **Fixed Date** is selected from the "
+"**Source** drop down field. This way you can add the same date and time "
+"information to the filenames of all imported images or videos. If **Image** "
+"is selected instead digiKam will use the time information from the metadata "
+"of the image files. With the **Format** drop down field you can choose from "
+"several standard date/time formats and a custom format. For the latter "
+"choose **Custom** in **Format** drop-down list and fill in."
+msgstr ""
+"Календарем можна буде скористатися, лише якщо у спадному списку Джерело "
+"вибрано пункт **Фіксована дата**. За його допомогою ви зможете додати"
+" однакові "
+"відомості щодо дати і часу до назв файлів усіх імпортованих зображень або "
+"відео. Якщо буде вибрано варіант **Зображення**, digiKam використає"
+" відомості "
+"з метаданих файлів зображень. За допомогою спадного списку **Формат** ви "
+"зможете вибрати стандарт формату запису дати і часу або визначити нетиповий "
+"формат. Для створення власного формату виберіть пункт **Нетиповий** у"
+" спадному "
+"списку **Формат**: і вкажіть потрібний запис."
+
+#: ../../main_window/image_view.rst:136
+msgid ""
+"The **Format** string from **Date and Time** dialog determines the content "
+"of the date generated during download. Any sequence of characters enclosed "
+"in single quotes will be included verbatim in the output string, even if it "
+"contains formatting characters. Two consecutive single quotes (\"''\") are "
+"replaced by a single quote in the output. All other characters in the format "
+"string are included verbatim in the output string."
+msgstr ""
+"Рядок **Формат** у діалоговому вікні **Дата і час** визначає запис дати,"
+" який буде створено під час отримання даних. Будь-яку послідовність"
+" символів, взяту в одинарні лапки, буде включено без змін до"
+" рядка-результату, навіть якщо у ній містяться символи форматування. Дві"
+" послідовні одинарні лапки («''») буде замінено на одинарні лапки у"
+" результаті. Усі інші символи у рядку форматування буде включено до"
+" рядка-результату без змін."
+
+#: ../../main_window/image_view.rst:138
+msgid ""
+"Formats without separators (e.g. *ddMM*) are supported but must be used with "
+"care, as the resulting strings aren't always reliably readable (e.g. if *dM* "
+"produces *212* it could mean either the 2nd of December or the 21st of "
+"February). Example format strings, assumed that the date is *21 May 2001 "
+"14:13:09.120*:"
+msgstr ""
+"Передбачено підтримку і форматів без роздільників (наприклад, *ddMM*), але"
+" ними слід користуватися обережно, оскільки рядки-результати не завжди"
+" просто читати (наприклад, якщо *dM* дає результат *212*, його можна"
+" інтерпретувати як друге грудня або 21 лютого). У прикладах рядків"
+" форматування ми використали дату *21 Тра 2001 "
+"14:13:09.120*:"
+
+#: ../../main_window/image_view.rst:141
+msgid "Format"
+msgstr "Формат"
+
+#: ../../main_window/image_view.rst:141
+msgid "Result"
+msgstr "Результат"
+
+#: ../../main_window/image_view.rst:143
+msgid "dd.MM.yyyy"
+msgstr "dd.MM.yyyy"
+
+#: ../../main_window/image_view.rst:143
+msgid "21.05.2001"
+msgstr "21.05.2001"
+
+#: ../../main_window/image_view.rst:144
+msgid "ddd MMMM d yy"
+msgstr "ddd MMMM d yy"
+
+#: ../../main_window/image_view.rst:144
+msgid "Tue May 21 01"
+msgstr "Втр Тра 21 01"
+
+#: ../../main_window/image_view.rst:145
+msgid "hh:mm:ss.zzz"
+msgstr "hh:mm:ss.zzz"
+
+#: ../../main_window/image_view.rst:145
+msgid "14:13:09.120"
+msgstr "14:13:09.120"
+
+#: ../../main_window/image_view.rst:146
+msgid "hh:mm:ss.z"
+msgstr "hh:mm:ss.z"
+
+#: ../../main_window/image_view.rst:146
+msgid "14:13:09.12"
+msgstr "14:13:09.12"
+
+#: ../../main_window/image_view.rst:147
+msgid "h:m:s ap"
+msgstr "h:m:s ap"
+
+#: ../../main_window/image_view.rst:147
+msgid "2:13:9 pm"
+msgstr "2:13:9 pm"
+
+#: ../../main_window/image_view.rst:150
+msgid ""
+"The **Database** dialog allows to select items information registered in "
+"database as **Modifiers**."
+msgstr ""
+"За допомогою вікна **База даних** можна вибрати дані щодо записів, які"
+" зареєстровано у базі даних, як **Модифікатори**."
+
+#: ../../main_window/image_view.rst:158
+msgid ""
+"The **Metadata** dialog allows to select files metadata information taken "
+"from **Exif**, **IPTC**, **XMP**, etc, as **Modifiers**."
+msgstr ""
+"За допомогою вікна **Метадані** можна вибрати метадані файлів, які буде"
+" взято з  **Exif**, **IPTC**, **XMP** тощо, як **Модифікатори**."
+
+#: ../../main_window/image_view.rst:166
+msgid ""
+"In addition these options can be customized further with the help of a "
+"number of **Modifiers**. A list of all **Options** and **Modifiers** "
+"together with a short explanations will open when clicking the info button."
+msgstr ""
+"Крім того, подальше удосконалення взірця можна виконати за допомогою "
+"**декількох модифікаторів**. Зі списком **параметрів** і **модифікаторів**,"
+" а також "
+"короткими поясненнями щодо них можна ознайомитися після натискання кнопки "
+"відомостей."
+
+#: ../../main_window/image_view.rst:172
+#| msgid "The Advanced Rename Helper View"
+msgid "The Advanced Rename Helper View for Modifiers Choices"
+msgstr ""
+"Панель допоміжного розширеного засобу перейменування digiKam для вибору"
+" модифікаторів"
+
+#: ../../main_window/image_view.rst:176
+msgid ""
+"The sequence number may be needed if you have a camera with a very fast "
+"multi-shoot mode where it is possible to get two photographs with exactly "
+"the same data and time."
+msgstr ""
+"Потреба у послідовному номері може виникнути, якщо у вашому фотоапараті "
+"передбачено режим дуже швидкої зйомки послідовних кадрів, що може призвести "
+"до існування двох різних фотографій з однаковою датою та часом зйомки."
+
+#: ../../main_window/image_view.rst:178
+#| msgid ""
+#| "You can also batch rename photographs. One method is to use the :ref:"
+#| "`Batch Queue Manager <batch_queue>` :kbd:`B`. Another one is to select "
+#| "multiple photographs and then press :kbd:`F2`. A dialog will open showing "
+#| "the list of selected photographs with their current name and the new "
+#| "name. These two are identical at first until you place the cursor in the "
+#| "input field, type in something and/or select a modifier from the buttons "
+#| "below."
+msgid ""
+"You can also batch rename photographs using the :ref:`Batch Queue Manager "
+"<batch_queue>` :kbd:`B`, or with the :ref:`Import Tool <advanced_import>` "
+"during downloads from camera. These two are mostly the same. Place the "
+"cursor in the renaming pattern editor, type in something and/or select "
+"**Modifiers** and **Options** from the buttons."
+msgstr ""
+"Також можна скористатися пакетним інструментом перейменування зображень за"
+" допомогою :ref:`Керування чергою пакетної обробки <batch_queue>` "
+"(:kbd:`B`) або :ref:`інструментом імпортування даних <advanced_import>` під"
+" час отримання даних з фотоапарата. Інтерфейс обох інструментів подібний."
+" Розташуйте курсор у редакторів взірця перейменування, введіть якийсь текст"
+" і/або виберіть **Модифікатори** та **Параметри** за допомогою кнопок."
+
+#: ../../main_window/image_view.rst:183
 msgid "Deleting a Photograph"
 msgstr "Вилучення фотографії"
 
-#: ../../main_window/image_view.rst:133
+#: ../../main_window/image_view.rst:185
 msgid ""
 "When you delete a photograph from digiKam with :menuselection:`Item --> Move "
 "to Trash` :kbd:`Del` it will be moved from its folder on the hard disk to "
@@ -403,11 +598,11 @@ msgstr ""
 "`Запис --> Пересунути до смітника` (:kbd:`Del`), зображення буде пересунуто "
 "із відповідної теки на жорсткому диску до вбудованої теки смітника."
 
-#: ../../main_window/image_view.rst:135
+#: ../../main_window/image_view.rst:187
 msgid "Deleting works from anywhere in any digiKam window."
 msgstr "Вилучення працює з будь-якого з елементів будь-якого з вікон digiKam."
 
-#: ../../main_window/image_view.rst:137 ../../main_window/image_view.rst:145
+#: ../../main_window/image_view.rst:189 ../../main_window/image_view.rst:197
 msgid ""
 "digiKam will ask you confirmation before to move items to trash with the "
 "dialog below."
@@ -415,22 +610,11 @@ msgstr ""
 "За допомогою вікна, знімок якого наведено нижче, digiKam попросить вас про "
 "підтвердження пересування записів до смітника."
 
-#: ../../main_window/image_view.rst:143
+#: ../../main_window/image_view.rst:195
 msgid "The digiKam Move to Trash Dialog"
 msgstr "Вікно пересування записі до смітника digiKam"
 
-#: ../../main_window/image_view.rst:147
-#| msgid ""
-#| "For each collection registered in the database, digiKam handle an "
-#| "internal trash-bin. Physically, the trash is located at the root album "
-#| "corresponding to the collection entry. It's a hidden folder :file:`."
-#| "dtrash` storing deleted items in a sub-directory named :file:`files`, and "
-#| "information about the deletion stored in another sub-directory named :"
-#| "file:`info`with  Json sidecars (:file:`.dtrashinfo`). Deleting a file in "
-#| "the collection does not remove the file from the media, but moves the "
-#| "file into this container. This one is accessible from the left sidebar "
-#| "tab **Albums** as the last entry of the tree-view corresponding to a "
-#| "collection and is named **Trash**."
+#: ../../main_window/image_view.rst:199
 msgid ""
 "For each collection registered in the database, digiKam handles an internal "
 "trash-bin. Physically, the trash is located at the root album corresponding "
@@ -452,7 +636,7 @@ msgstr ""
 "за допомогою вкладки **Альбоми** лівої бічної панелі. Контейнер є останнім "
 "записом в ієрархічному списку збірки і має назву **Смітник**."
 
-#: ../../main_window/image_view.rst:153
+#: ../../main_window/image_view.rst:205
 msgid ""
 "The digiKam Internal Trash-Bin Exists for All Collections Registered in the "
 "Database"
@@ -460,14 +644,7 @@ msgstr ""
 "Вбудований смітник існує для усіх збірок, які зареєстровано у базі даних "
 "digiKam"
 
-#: ../../main_window/image_view.rst:157
-#| msgid ""
-#| "digiKam do not use the Desktop recycler as operations to move files to "
-#| "delete from a network collection will take a while. It will be exactly "
-#| "the same problem with a collection hosted in a different disk partition "
-#| "than your home directory managed by the Desktop. Moving items to delete "
-#| "to a self-contained trash-bin from the collection will be universal and "
-#| "fast."
+#: ../../main_window/image_view.rst:209
 msgid ""
 "digiKam does not use the Desktop recycler as operations to move files to "
 "delete from a network collection will take a while. It will be exactly the "
@@ -486,10 +663,7 @@ msgstr ""
 "home directory managed by the Desktop. Moving items to delete to a self-"
 "contained trash-bin from the collection will be universal and fast."
 
-#: ../../main_window/image_view.rst:159
-#| msgid ""
-#| "On the bottom of the trash-bin view, a series of buttons allows to "
-#| "restore files in collection or delete them permanently. There are:"
+#: ../../main_window/image_view.rst:211
 msgid ""
 "On the bottom of the trash-bin view, a series of buttons allows to restore "
 "files in collection or delete them permanently. These are:"
@@ -498,17 +672,17 @@ msgstr ""
 "допомогою яких можна відновити файли у збірці або остаточно їх вилучити. А "
 "саме:"
 
-#: ../../main_window/image_view.rst:161
+#: ../../main_window/image_view.rst:213
 msgid "**Undo**: to restore only the last entry in the trash-bin."
 msgstr ""
 "**Вернути**: для відновлення лише останнього вилученого запису у смітнику."
 
-#: ../../main_window/image_view.rst:162
-#| msgid "**Restore¨**: to restore seclection of files from the trash-bin."
-msgid "**Restore¨**: to restore selection of files from the trash-bin."
-msgstr "**Відновити¨**: для відновлення файлів зі смітника."
+#: ../../main_window/image_view.rst:214
+#| msgid "**Restore¨**: to restore selection of files from the trash-bin."
+msgid "**Restore**: to restore selection of files from the trash-bin."
+msgstr "**Відновити**: для відновлення файлів зі смітника."
 
-#: ../../main_window/image_view.rst:163
+#: ../../main_window/image_view.rst:215
 msgid ""
 "**Delete**: to remove **permanently** the items selection or all items from "
 "the trash-bin."
@@ -516,17 +690,14 @@ msgstr ""
 "**Вилучити**: для **остаточного вилучення** позначених записів або усіх "
 "записів зі смітника."
 
-#: ../../main_window/image_view.rst:165
+#: ../../main_window/image_view.rst:217
 msgid ""
 "All operations processed on trash-bin items will be confirmed to the user."
 msgstr ""
 "Усі дії із записами у смітнику потребуватимуть підтвердження з боку "
 "користувача."
 
-#: ../../main_window/image_view.rst:171
-#| msgid ""
-#| "The digiKam Internal Trash-Bin Ask to Confirm the Permanently Deletion of "
-#| "Items"
+#: ../../main_window/image_view.rst:223
 msgid ""
 "The digiKam Internal Trash-Bin Asks to Confirm the Permanently Deletion of "
 "Items"
@@ -534,7 +705,7 @@ msgstr ""
 "Вбудований смітник digiKam надсилає запит щодо підтвердження остаточного "
 "вилучення записів"
 
-#: ../../main_window/image_view.rst:175
+#: ../../main_window/image_view.rst:227
 msgid ""
 "As physically the trash-bin container is located in the root album from a "
 "collection, if you backup a collection on a separated media, you will backup "
@@ -544,11 +715,11 @@ msgstr ""
 "альбомі збірки, якщо ви створите резервну копію збірки на окремому носії "
 "даних, ви також створите резервну копію відповідного контейнера смітника."
 
-#: ../../main_window/image_view.rst:180
+#: ../../main_window/image_view.rst:232
 msgid "Grouping Photographs"
 msgstr "Групування фотографій"
 
-#: ../../main_window/image_view.rst:182
+#: ../../main_window/image_view.rst:234
 msgid ""
 "Grouping items is a very useful way to organize Photographs and/or videos "
 "that are related to each other and to adjust the way they are displayed in "
@@ -561,13 +732,13 @@ msgstr ""
 "допомогою контекстного меню позначеної групи записів (слід позначити "
 "декілька записів у списку)."
 
-#: ../../main_window/image_view.rst:188
+#: ../../main_window/image_view.rst:240
 msgid "The digiKam Icon-View Grouped Items Options From Context Menu"
 msgstr ""
 "Пункти контекстного меню згрупованих записів на панелі перегляду піктограм "
 "digiKam"
 
-#: ../../main_window/image_view.rst:190
+#: ../../main_window/image_view.rst:242
 msgid ""
 "You can put the whole selection into one group using **Group Selected Here** "
 "or you can create more than one group determined by time (seconds will be "
@@ -581,16 +752,11 @@ msgstr ""
 "назвами, але різними типами. Нижче наведено приклад використання такого "
 "групування."
 
-#: ../../main_window/image_view.rst:196
+#: ../../main_window/image_view.rst:248
 msgid "The digiKam Icon-View Grouped Mode From Icon-View"
 msgstr "Режим згрупованих піктограм на панелі перегляду піктограм digiKam"
 
-#: ../../main_window/image_view.rst:200
-#| msgid ""
-#| "If you Group files automatically (based on time or filename for example), "
-#| "the smaller file size from the group is preferrend as the leading item. "
-#| "The idea is that when previewing, faster loading of the image will allow "
-#| "for a quick preview."
+#: ../../main_window/image_view.rst:252
 msgid ""
 "If you Group files automatically (based on time or filename for example), "
 "the smaller file size from the group is preferred as the leading item. The "
@@ -603,7 +769,7 @@ msgstr ""
 "завантажуватимуться швидше, а отже, користувач швидше отримуватиме потрібні "
 "дані."
 
-#: ../../main_window/image_view.rst:202
+#: ../../main_window/image_view.rst:254
 msgid ""
 "If you group files manually from icon-view, the selected item used to show "
 "context menu and group files will be used as leading item."
@@ -612,7 +778,7 @@ msgstr ""
 "показує контекстне меню, а як початковий запис буде використано згруповані "
 "файли."
 
-#: ../../main_window/image_view.rst:204
+#: ../../main_window/image_view.rst:256
 msgid ""
 "The next group in the menu is to control whether only the reference icon of "
 "the group (the first of the group according to the sorting order at the "
@@ -626,7 +792,7 @@ msgstr ""
 "можна отримати за допомогою невеличкого індикатора групування (символу теки "
 "із кількістю записів) на еталонній піктограмі."
 
-#: ../../main_window/image_view.rst:208
+#: ../../main_window/image_view.rst:260
 msgid ""
 "In Icon View, you can turn on/off the frame over groupped item thumbnails "
 "with an option from :ref:`Setup/Miscs/Appearance <appearance_settings>` "
@@ -636,7 +802,7 @@ msgstr ""
 "згрупованих мініатюр записів за допомогою сторінки параметрів :ref:"
 "`Налаштування/Різне/Вигляд <appearance_settings>`."
 
-#: ../../main_window/image_view.rst:210
+#: ../../main_window/image_view.rst:262
 msgid ""
 "While the mouse pointer is hovering over it there will pop up an information "
 "**n grouped items. Group is closed/open.** where *n* indicates the number of "
@@ -649,7 +815,7 @@ msgstr ""
 "якщо групу закрито. Клацання на індикаторі перемикатиме групу між "
 "**відкритою** і **закритою**."
 
-#: ../../main_window/image_view.rst:212
+#: ../../main_window/image_view.rst:264
 msgid ""
 "In the **Table Mode** of the Image Area groups are indicated the way we know "
 "from many other lists and tables: with a little triangle in front of the "
@@ -660,12 +826,12 @@ msgstr ""
 "трикутника перед еталонним записом. Натискання цього трикутника призведе до "
 "розгортання або згортання списку згрупованих записів."
 
-#: ../../main_window/image_view.rst:218
+#: ../../main_window/image_view.rst:270
 msgid "The digiKam Icon-View Grouped Mode From Table View"
 msgstr ""
 "Режим групування на панелі перегляду піктограм digiKam у форматі таблиці"
 
-#: ../../main_window/image_view.rst:220
+#: ../../main_window/image_view.rst:272
 msgid ""
 "The last group in the **Group** context menu allows to remove individual "
 "items from the group or to disband the whole group. The content of the menu "
@@ -677,7 +843,7 @@ msgstr ""
 "залежатиме від того, використовуватимете ви його для позначених записів, які "
 "ще не належать до жодної групи, чи для окремих записів у групі."
 
-#: ../../main_window/image_view.rst:222
+#: ../../main_window/image_view.rst:274
 msgid ""
 "What can you do with a group? In terms of functions of digiKam you can "
 "perform a lot of operations like copy, delete, move, rotate on the whole "
@@ -698,7 +864,7 @@ msgstr ""
 "позначки (див. далі у цьому підручнику) та створювати описи (див. :ref:"
 "`Підписи <captions_view>`). Просто спробуйте."
 
-#: ../../main_window/image_view.rst:226
+#: ../../main_window/image_view.rst:278
 msgid ""
 "Operations to perform over grouped items are managed by Setup/Miscs/Grouping "
 "settings. See :ref:`this section <grouping_settings>` from the manual for "
@@ -708,7 +874,7 @@ msgstr ""
 "сторінки Налаштування/Різне/Групування. Докладніший опис можна знайти у :ref:"
 "`цьому розділі <grouping_settings>` підручника."
 
-#: ../../main_window/image_view.rst:228
+#: ../../main_window/image_view.rst:280
 msgid ""
 "In terms of use cases you can for instance group videos together with the ."
 "jpg - images related to them which most cameras provide or RAW images with "
@@ -741,7 +907,7 @@ msgstr ""
 "видно у їхніх альбомах, лише якщо групу відкрито. Це може трохи заплутати "
 "вас, тому користуйтеся групуванням записів із різних альбомів з осторогою."
 
-#: ../../main_window/image_view.rst:232
+#: ../../main_window/image_view.rst:284
 msgid ""
 "Everything described in this Grouping section has nothing to do with **Group "
 "Images** in the **View** menu. That function doesn't form permanent groups "
@@ -751,3 +917,14 @@ msgstr ""
 "зображення** у меню **Перегляд**. Ця функціональна можливість не формує "
 "сталі групи записів, її призначено лише для упорядковування мініатюр, "
 "показаних у області зображень."
+
+#~ msgid ""
+#~ "The powerful rename tool has a self description of all features available "
+#~ "to process renaming. Take a look of context help from the tooltip button "
+#~ "on the right side of the text field used to enter rename modifiers."
+#~ msgstr ""
+#~ "У вікні потужного інструмента для перейменування наведено опис усіх "
+#~ "можливостей, які доступні у процесі перейменування. Ознайомтеся із "
+#~ "контекстною довідкою, доступ до якої можна отримати за допомогою кнопки "
+#~ "підказки у правій частині текстового поля, яке використовують для "
+#~ "введення модифікаторів перейменування."

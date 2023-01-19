@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 00:50+0000\n"
+"POT-Creation-Date: 2023-01-18 00:50+0000\n"
 "PO-Revision-Date: 2022-12-29 13:49+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -24,7 +24,7 @@ msgstr ""
 #: ../../import_tools/advanced_import.rst:1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
-"learn, easy, import, camera"
+"learn, easy, import, camera, advanced, convert, rename, scripting"
 msgstr ""
 
 #: ../../import_tools/advanced_import.rst:14
@@ -38,7 +38,7 @@ msgstr "Inhoud"
 #: ../../import_tools/advanced_import.rst:18
 #, fuzzy
 msgid ""
-"The Settings tab of the Right Sidebar in the Import Interface opens five "
+"The **Settings** tab of the Right Sidebar in the Import Interface opens five "
 "sections with advanced options for the import processing."
 msgstr ""
 "Het tabblad <guilabel>Instellingen</guilabel> van de rechter zijbalk in het "
@@ -72,14 +72,12 @@ msgstr ""
 #: ../../import_tools/advanced_import.rst:31
 #, fuzzy
 msgid ""
-"If you select Camera filenames the image filenames will not be altered. But "
-"you have the option to change their case to upper or lower case with the "
-"“Change case to:” drop down field. If you select Customize you will be able "
-"to put together a renaming pattern from the Options drop down menu which "
-"contains original file name, file extension, owner and group, directory, a "
-"dialog for defining a sequence number and a dialog for adding date and time "
-"information, either fixed or based on the time information written by the "
-"camera into the image file."
+"If you select **Camera filenames** the image filenames will not be altered. "
+"But you have the option to change their case to **upper** or **lower** case "
+"with the **Change case to** drop down field. If you select **Customize** you "
+"will be able to put together a renaming pattern from the **Options** drop "
+"down menu. The **Modifier** drop down menu allows to customize each option "
+"appended to the renaming pattern."
 msgstr ""
 "Als u <guilabel>Camerabestandsnamen</guilabel> selecteert zullen de "
 "afbeeldingsbestandsnamen niet veranderd worden. Maar u hebt de optie om "
@@ -93,77 +91,19 @@ msgstr ""
 "geschreven door de camera in het afbeeldingsbestand bevatten."
 
 #: ../../import_tools/advanced_import.rst:33
-#, fuzzy
 msgid ""
-"In the sequence number dialog you will find two options: Extension aware "
-"numbering and Folder aware numbering. If they are checked digiKam will start "
-"a new sequence for every file extension and / or folder."
+"The file customize **Renaming Options** and **Modifier** possibilities are "
+"mostly the same than **Advanced Rename** tool available in **Main Window**. "
+"See the full description in :ref:`this section <renaming_photograph>` of "
+"this manual."
 msgstr ""
-"In de dialoog volgnummer vindt u twee opties: <guilabel>Nummering met oog "
-"voor extensie</guilabel> en <guilabel>Nummering met oog voor map</guilabel>. "
-"Als ze zijn geactiveerd zal &digikam; een nieuwe volgorde voor elke "
-"bestandsextensie en/of map."
 
 #: ../../import_tools/advanced_import.rst:35
-msgid "The Date & Time dialog looks like this:"
-msgstr ""
-
-#: ../../import_tools/advanced_import.rst:41
-msgid "The Import Tool File Renames Date-Time Selector"
-msgstr ""
-
-#: ../../import_tools/advanced_import.rst:43
-#, fuzzy
-msgid ""
-"The calendar is active only if “Fixed Date” is selected from the Source: "
-"drop down field. This way you can add the same date and time information to "
-"the filenames of all imported images or videos. If “Image” is selected "
-"instead digiKam will use the time information from the metadata of the image "
-"files. With the Format: drop down field you can choose from several standard "
-"date/time formats and a custom format. For the latter choose Custom in "
-"Format: drop-down list and fill in for example \"dd.MM.yyyy hh:mm:ss\". For "
-"more information, read QDateTime class reference."
-msgstr ""
-"De kalender is alleen actief als <quote>Vaste datum</quote> is geselecteerd "
-"uit het afrolveld <guilabel>Bron:</guilabel>. Op deze manier kunt u dezelfde "
-"datum- en tijdinformatie aan de bestandsnamen van alle geïmporteerde "
-"afbeeldingen of video's toevoegen. Als in plaatst daarvan <quote>Afbeelding</"
-"quote> is geselecteerd zal &digikam; de tijdinformatie uit de metagegevens "
-"van de afbeeldingsbestanden gebruiken. Met het afrolveld <guilabel>Formaat:</"
-"guilabel> kunt u kiezen uit verschillende standaard datum/tijd formaten en "
-"een aangepast formaat. Voor de laatste kiest u <guilabel>Aangepast</"
-"guilabel> in de afrollijst <guilabel>Formaat:</guilabel> en vult u "
-"bijvoorbeeld in \"dd.MM.yyyy hh:mm:ss\". Voor meer informatie, lees <ulink "
-"url=\"http://doc.qt.io/qt-5/qdatetime.html#toString\">QDateTime</ulink> "
-"klasse-referentie."
-
-#: ../../import_tools/advanced_import.rst:45
-#, fuzzy
-msgid ""
-"In addition these options can be customized further with the help of a "
-"number of modifiers. A list of all options and modifiers together with a "
-"short explanations will open when clicking the info button."
-msgstr ""
-"Bovendien kunnen deze opties verder aangepast worden worden met de hulp van "
-"een aantal modifiers. Een lijst met alle opties en modifiers samen met een "
-"korte uitleg zal geopend worden door te klikken op de knop Info."
-
-#: ../../import_tools/advanced_import.rst:49
-#, fuzzy
-msgid ""
-"The sequence number may be needed if you have a camera with a very fast "
-"multi-shoot mode where it is possible to get two photographs with exactly "
-"the same data and time."
-msgstr ""
-"Het volgnummer kan nodig zijn als u een camera met een zeer snelle multi-"
-"shoot modus hebt, waarin het mogelijk is om twee foto's te krijgen met "
-"precies dezelfde gegevens en tijd."
-
-#: ../../import_tools/advanced_import.rst:51
 #, fuzzy
 msgid ""
 "The new filename that digiKam will use for the photographs when they are "
-"downloaded is shown underneath the thumbnail in the image icon. The renaming "
+"downloaded can be shown underneath the **Customize** settings. Changing item "
+"selection from the icon-view will update these information. The renaming "
 "settings will be remembered the next time you use the camera interface."
 msgstr ""
 "De nieuwe bestandsnaam die &digikam; gebruikt voor de foto wanneer zij "
@@ -171,7 +111,7 @@ msgstr ""
 "afbeelding. De instellingen voor hernoemen worden onthouden voor de volgende "
 "keer dat u gebruik maken van de camera-interface."
 
-#: ../../import_tools/advanced_import.rst:55
+#: ../../import_tools/advanced_import.rst:39
 #, fuzzy
 msgid ""
 "At the moment digiKam cannot read metadata of RAW files during the import. "
@@ -183,15 +123,15 @@ msgstr ""
 "behoud van bestandsnamen van de camera en ze na het importeren hernoemen met "
 "de hernoemfunctie (F2)."
 
-#: ../../import_tools/advanced_import.rst:58
+#: ../../import_tools/advanced_import.rst:44
 msgid "Auto-Creation of Albums"
 msgstr "Automatisch aanmaken van albums"
 
-#: ../../import_tools/advanced_import.rst:64
+#: ../../import_tools/advanced_import.rst:50
 msgid "The Import Tool Albums Auto-Creation Advanced Settings"
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:66
+#: ../../import_tools/advanced_import.rst:52
 #, fuzzy
 msgid ""
 "Check Extension-based sub-albums and digiKam will create subalbums based on "
@@ -220,7 +160,7 @@ msgstr ""
 "mainwindow-icon-collection.png\" format=\"PNG\"/></imageobject> </"
 "inlinemediaobject>."
 
-#: ../../import_tools/advanced_import.rst:68
+#: ../../import_tools/advanced_import.rst:54
 msgid ""
 "If your camera provides information about the date of the photograph's "
 "taking or, if you import from a USB device or a folder, the images contain "
@@ -233,15 +173,19 @@ msgid ""
 "your photographs."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:71
+#: ../../import_tools/advanced_import.rst:60
+msgid "The Import Tool Albums Auto-Creation Helper Dialog"
+msgstr ""
+
+#: ../../import_tools/advanced_import.rst:65
 msgid "On the Fly Operations"
 msgstr "Bewerkingen on-the-fly"
 
-#: ../../import_tools/advanced_import.rst:77
+#: ../../import_tools/advanced_import.rst:71
 msgid "The Import Tool on the Fly Operations Advanced Settings"
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:79
+#: ../../import_tools/advanced_import.rst:73
 #, fuzzy
 msgid ""
 "This section of the Settings tab offers several options for JPEG images. The "
@@ -255,13 +199,13 @@ msgstr ""
 "setup-templates\">Instellingen van sjablonen</link>. U krijgt ook toegang "
 "tot de Beheerder van sjablonen met de knop bewerken rechts van het afrolveld."
 
-#: ../../import_tools/advanced_import.rst:81
+#: ../../import_tools/advanced_import.rst:75
 msgid ""
 "Write the document name to Exif and Fix internal date & time writes this "
 "information into the respective Exif tags and XMP fields."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:83
+#: ../../import_tools/advanced_import.rst:77
 #, fuzzy
 msgid ""
 "If you check the next box digiKam will perform the auto-rotate/flip action "
@@ -271,7 +215,7 @@ msgstr ""
 "draaien/spiegelen uitvoeren beschreven in <link linkend=\"using-rotateimage"
 "\">Draaien van afbeelding zonder verlies</link>."
 
-#: ../../import_tools/advanced_import.rst:85
+#: ../../import_tools/advanced_import.rst:79
 #, fuzzy
 msgid ""
 "Convert to lossless file format allows you to convert the images to PNG, "
@@ -281,15 +225,15 @@ msgstr ""
 "in staat de afbeeldingen te converteren naar PNG, TIFF, PGF of JPEG2000 bij "
 "importeren."
 
-#: ../../import_tools/advanced_import.rst:88
+#: ../../import_tools/advanced_import.rst:84
 msgid "DNG Convert Options"
 msgstr "Opties voor converteren naar DNG"
 
-#: ../../import_tools/advanced_import.rst:94
+#: ../../import_tools/advanced_import.rst:90
 msgid "The Import Tool DNG Convert Advanced Settings"
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:96
+#: ../../import_tools/advanced_import.rst:92
 #, fuzzy
 msgid ""
 "This section allows to enable the DNG conversion of RAW images by checking "
@@ -303,34 +247,34 @@ msgstr ""
 "te leren over Digital Negative (DNG) gebruikt u de koppeling <quote>DNG-"
 "container</quote>."
 
-#: ../../import_tools/advanced_import.rst:98
+#: ../../import_tools/advanced_import.rst:94
 msgid ""
 "Embed original file: Embeds the original RAW file into the DNG container."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:100
+#: ../../import_tools/advanced_import.rst:96
 msgid ""
 "Lossless Compression: Enables lossless compression. The difference between "
 "lossy and lossless compression is said to be practically indistinguishable "
 "with DNG."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:102
+#: ../../import_tools/advanced_import.rst:98
 msgid ""
 "JPEG preview: Choose whether you want a medium or full size JPEG preview to "
 "be embedded into the DNG container or none at all."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:105
+#: ../../import_tools/advanced_import.rst:103
 #, fuzzy
 msgid "Scripting"
 msgstr "Scripts maken"
 
-#: ../../import_tools/advanced_import.rst:111
+#: ../../import_tools/advanced_import.rst:109
 msgid "The Import Tool Scripting Advanced Settings"
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:113
+#: ../../import_tools/advanced_import.rst:111
 #, fuzzy
 msgid ""
 "This last section of the Settings tab offers to run scripts to manipulate "
@@ -343,3 +287,58 @@ msgstr ""
 "bestandsnaam van het script intypen in het invoerveld of er naat zoeken met "
 "de knop <guilabel>Bladeren...</guilabel>. Activeer de knop Info voor "
 "toegevoegde uitdrukkingen om de opdrachtregel aan te passen!"
+
+#, fuzzy
+#~ msgid ""
+#~ "In the sequence number dialog you will find two options: Extension aware "
+#~ "numbering and Folder aware numbering. If they are checked digiKam will "
+#~ "start a new sequence for every file extension and / or folder."
+#~ msgstr ""
+#~ "In de dialoog volgnummer vindt u twee opties: <guilabel>Nummering met oog "
+#~ "voor extensie</guilabel> en <guilabel>Nummering met oog voor map</"
+#~ "guilabel>. Als ze zijn geactiveerd zal &digikam; een nieuwe volgorde voor "
+#~ "elke bestandsextensie en/of map."
+
+#, fuzzy
+#~ msgid ""
+#~ "The calendar is active only if “Fixed Date” is selected from the Source: "
+#~ "drop down field. This way you can add the same date and time information "
+#~ "to the filenames of all imported images or videos. If “Image” is selected "
+#~ "instead digiKam will use the time information from the metadata of the "
+#~ "image files. With the Format: drop down field you can choose from several "
+#~ "standard date/time formats and a custom format. For the latter choose "
+#~ "Custom in Format: drop-down list and fill in for example \"dd.MM.yyyy hh:"
+#~ "mm:ss\". For more information, read QDateTime class reference."
+#~ msgstr ""
+#~ "De kalender is alleen actief als <quote>Vaste datum</quote> is "
+#~ "geselecteerd uit het afrolveld <guilabel>Bron:</guilabel>. Op deze manier "
+#~ "kunt u dezelfde datum- en tijdinformatie aan de bestandsnamen van alle "
+#~ "geïmporteerde afbeeldingen of video's toevoegen. Als in plaatst daarvan "
+#~ "<quote>Afbeelding</quote> is geselecteerd zal &digikam; de tijdinformatie "
+#~ "uit de metagegevens van de afbeeldingsbestanden gebruiken. Met het "
+#~ "afrolveld <guilabel>Formaat:</guilabel> kunt u kiezen uit verschillende "
+#~ "standaard datum/tijd formaten en een aangepast formaat. Voor de laatste "
+#~ "kiest u <guilabel>Aangepast</guilabel> in de afrollijst <guilabel>Formaat:"
+#~ "</guilabel> en vult u bijvoorbeeld in \"dd.MM.yyyy hh:mm:ss\". Voor meer "
+#~ "informatie, lees <ulink url=\"http://doc.qt.io/qt-5/qdatetime."
+#~ "html#toString\">QDateTime</ulink> klasse-referentie."
+
+#, fuzzy
+#~ msgid ""
+#~ "In addition these options can be customized further with the help of a "
+#~ "number of modifiers. A list of all options and modifiers together with a "
+#~ "short explanations will open when clicking the info button."
+#~ msgstr ""
+#~ "Bovendien kunnen deze opties verder aangepast worden worden met de hulp "
+#~ "van een aantal modifiers. Een lijst met alle opties en modifiers samen "
+#~ "met een korte uitleg zal geopend worden door te klikken op de knop Info."
+
+#, fuzzy
+#~ msgid ""
+#~ "The sequence number may be needed if you have a camera with a very fast "
+#~ "multi-shoot mode where it is possible to get two photographs with exactly "
+#~ "the same data and time."
+#~ msgstr ""
+#~ "Het volgnummer kan nodig zijn als u een camera met een zeer snelle multi-"
+#~ "shoot modus hebt, waarin het mogelijk is om twee foto's te krijgen met "
+#~ "precies dezelfde gegevens en tijd."

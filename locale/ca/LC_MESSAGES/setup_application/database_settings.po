@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-11 00:50+0000\n"
-"PO-Revision-Date: 2023-01-12 05:21+0100\n"
+"PO-Revision-Date: 2023-01-18 21:51+0100\n"
 "Last-Translator: Antoni Bella <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -33,6 +33,7 @@ msgstr ""
 "obert, lliure, aprenentatge, fàcil, base de dades, configuració, mysql, "
 "mariadb, sqlite, migració, local, remot, servidor"
 
+# skip-rule: common-settings
 #: ../../setup_application/database_settings.rst:14
 msgid "Database Settings"
 msgstr "Configurar la base de dades"
@@ -49,7 +50,7 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:25
 msgid "The Sqlite Database"
-msgstr ""
+msgstr "La base de dades SQLite"
 
 #: ../../setup_application/database_settings.rst:27
 msgid ""
@@ -70,22 +71,25 @@ msgid ""
 "metadata and thumbnails. Three SQLite files used for storing them are named "
 "respectively:"
 msgstr ""
+"De manera predeterminada, el digiKam utilitza el SQLite com el seu dorsal "
+"per a emmagatzemar les metadades i miniatures importants. S'utilitzen tres "
+"fitxers SQLite per al seu emmagatzematge, respectivament s'anomenen:"
 
 #: ../../setup_application/database_settings.rst:31
 msgid "Core: :file:`digikam4.db`."
-msgstr ""
+msgstr "Nucli: :file:`digikam4.db`."
 
 #: ../../setup_application/database_settings.rst:33
 msgid "Thumbs: :file:`thumbnails-digikam.db`."
-msgstr ""
+msgstr "Miniaures: :file:`thumbnails-digikam.db`."
 
 #: ../../setup_application/database_settings.rst:35
 msgid "Similarity: :file:`similarity.db`."
-msgstr ""
+msgstr "Similitud: :file:`similarity.db`."
 
 #: ../../setup_application/database_settings.rst:37
 msgid "Faces: :file:`recognition.db`."
-msgstr ""
+msgstr "Cares: :file:`recognition.db`."
 
 #: ../../setup_application/database_settings.rst:39
 msgid ""
@@ -117,7 +121,7 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:52
 msgid "The digiKam Sqlite Configuration Page"
-msgstr ""
+msgstr "La pàgina de configuració SQLite en el digiKam"
 
 #: ../../setup_application/database_settings.rst:56
 msgid ""
@@ -127,11 +131,11 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:59
 msgid "The MySQL Database"
-msgstr ""
+msgstr "La base de dades MySQL"
 
 #: ../../setup_application/database_settings.rst:62
 msgid "MySQL Versus SQLite"
-msgstr ""
+msgstr "MySQL vers SQLite"
 
 #: ../../setup_application/database_settings.rst:64
 msgid ""
@@ -153,27 +157,27 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:68
 msgid "MariaDB has actually overtaken MySQL, because of few basic reasons:"
-msgstr ""
+msgstr "MariaDB ha superat MySQL, per algunes raons bàsiques:"
 
 #: ../../setup_application/database_settings.rst:70
 msgid "MariaDB development is more open and vibrant."
-msgstr ""
+msgstr "El desenvolupament de MariaDB és més obert i vibrant."
 
 #: ../../setup_application/database_settings.rst:72
 msgid "More cutting edge features."
-msgstr ""
+msgstr "Més característiques innovadores."
 
 #: ../../setup_application/database_settings.rst:74
 msgid "More storage engines."
-msgstr ""
+msgstr "Més motors d'emmagatzematge."
 
 #: ../../setup_application/database_settings.rst:76
 msgid "Better performance."
-msgstr ""
+msgstr "Millor rendiment."
 
 #: ../../setup_application/database_settings.rst:78
 msgid "Compatible and easy to migrate."
-msgstr ""
+msgstr "Compatible i fàcil de migrar."
 
 #: ../../setup_application/database_settings.rst:80
 msgid ""
@@ -184,6 +188,13 @@ msgid ""
 "items**. With such large collections, SQLite introduces latency which slows "
 "down the application."
 msgstr ""
+"El digiKam també proporciona suport per al popular motor de base de dades "
+"MySQL. Per descomptat, un podria preguntar-se per què voldries canviar al "
+"MySQL quan el SQLite ja fa una bona feina en la gestió de les dades? El "
+"MySQL ofereix molts avantatges per a l'emmagatzematge de dades del digiKam, "
+"especialment quan les col·leccions inclouen més de 100.000 elements. Amb "
+"aquest tipus de col·leccions, el SQLite introdueix latència, el qual "
+"alenteix l'aplicació."
 
 #: ../../setup_application/database_settings.rst:82
 msgid ""
@@ -195,6 +206,16 @@ msgid ""
 "notebook and PC) to access and manage your photo collections. You can also "
 "use MySQL tools to backup and analyze digiKam’s data."
 msgstr ""
+"L'ús de MySQL com a dorsal de la base de dades del digiKam permet "
+"emmagatzemar les dades localment, així com en servidors remots. Local, per a "
+"substituir l'emmagatzematge local de SQLite i finalment, utilitzar un "
+"ordinador compartit a través de la xarxa. L'ús de MySQL com a dorsal de la "
+"base de dades del digiKam permet emmagatzemar les dades en un servidor "
+"remot. D'aquesta manera, es podran utilitzar en diverses instal·lacions del "
+"digiKam (per exemple, a l'ordinador portàtil i al PC) per accedir i "
+"gestionar les col·leccions de fotografies. També podeu utilitzar les eines "
+"de MySQL per a crear una còpia de seguretat i analitzar les dades del "
+"digiKam."
 
 #: ../../setup_application/database_settings.rst:84
 msgid ""
@@ -208,6 +229,8 @@ msgid ""
 "**MySQL Internal**: This allows to run an internal database server on your "
 "system. digiKam uses Unix socket for the connection."
 msgstr ""
+"MySQL intern: Això permet executar un servidor de bases de dades intern en "
+"el sistema. El digiKam utilitza el sòcol d'Unix per a la connexió."
 
 #: ../../setup_application/database_settings.rst:88
 msgid ""
@@ -217,7 +240,7 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:93
 msgid "The MySQL Internal Server"
-msgstr ""
+msgstr "El servidor de MySQL intern"
 
 #: ../../setup_application/database_settings.rst:95
 msgid ""
@@ -248,7 +271,7 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:114
 msgid "The MySQL Remote Server"
-msgstr ""
+msgstr "El servidor de MySQL remot"
 
 #: ../../setup_application/database_settings.rst:116
 msgid ""
@@ -264,6 +287,9 @@ msgid ""
 "and a digiKam database already set up. Run the commands in MySQL server, "
 "after replacing *password* with correct one."
 msgstr ""
+"Seguiu les següents instruccions, si no teniu un compte d'usuari dedicat i "
+"una base de dades configurada al digiKam. Executeu les ordres al servidor de "
+"MySQL, després substituïu la *contrasenya* per la correcta."
 
 #: ../../setup_application/database_settings.rst:122
 msgid ""
@@ -301,12 +327,16 @@ msgid ""
 "In the **Core Db Name** field, enter the name of the first database for "
 "storing photo metadata."
 msgstr ""
+"En el camp **Nom de la BD del nucli**, introduïu el nom de la primera base "
+"de dades per a emmagatzemar les metadades de les fotografies."
 
 #: ../../setup_application/database_settings.rst:148
 msgid ""
 "Specify the name of the second database for storing wavelets compressed "
 "thumbnails in the **Thumbs Db Name** field."
 msgstr ""
+"Especifiqueu el nom de la segona base de dades per a emmagatzemar les "
+"miniatures comprimides en ones al camp **Nom de la BD de miniatures**."
 
 #: ../../setup_application/database_settings.rst:150
 msgid ""
@@ -335,12 +365,21 @@ msgid ""
 "photos. This can take a while if you have a lot of items to register in "
 "database."
 msgstr ""
+"Per a comprovar si la connexió amb la base de dades funciona correctament, "
+"premeu el botó **Comprova la connexió**. Si tot funciona com se suposa, "
+"canvieu a les seccions **Col·leccions** i afegiu-hi els directoris que "
+"contenen les vostres fotografies. Premeu **D'acord**, i espereu fins que el "
+"digiKam ompli les bases de dades amb les dades de les fotografies. Això pot "
+"trigar molt de temps si teniu una gran quantitat d'elements per a registrar "
+"a la base de dades."
 
 #: ../../setup_application/database_settings.rst:158
 msgid ""
 "There are some tips and recommendation to obtain the best results with a "
 "remote MySQL database server."
 msgstr ""
+"Hi ha alguns consells i recomanacions per a obtenir els millors resultats "
+"amb un servidor de bases de dades MySQL remot."
 
 #: ../../setup_application/database_settings.rst:160
 msgid ""
@@ -360,7 +399,7 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:167
 msgid "Database Migration"
-msgstr ""
+msgstr "Migrar a una base de dades"
 
 #: ../../setup_application/database_settings.rst:169
 msgid ""
@@ -370,6 +409,11 @@ msgid ""
 "help you do so. It can help you migrate data from SQLite to MySQL and vice "
 "versa."
 msgstr ""
+"L'aplicació per a la gestió de les fotografies ve amb una eina exclusiva "
+"«Migra la base de dades», la qual permet als usuaris migrar les seves dades. "
+"Suposem, que esteu utilitzant SQLite i que voleu moure totes les dades a la "
+"base de dades MySQL, aquesta eina de migració us ajudarà a fer-ho. Pot "
+"ajudar a migrar les dades des de SQLite a MySQL i viceversa."
 
 #: ../../setup_application/database_settings.rst:171
 msgid ""
@@ -379,7 +423,7 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:177
 msgid "The digiKam Database Migration Tool"
-msgstr ""
+msgstr "L'eina de migració de bases de dades del digiKam"
 
 #: ../../setup_application/database_settings.rst:179
 msgid ""
@@ -390,7 +434,7 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:184
 msgid "Database Backup Recommendation"
-msgstr ""
+msgstr "Recomanació de crear una còpia de seguretat de la base de dades"
 
 #: ../../setup_application/database_settings.rst:186
 msgid ""
@@ -398,6 +442,10 @@ msgid ""
 "network can help against device dysfunctions. A NAS or an external drive can "
 "also be used for that."
 msgstr ""
+"Per raons de seguretat, el fet de planificar una còpia de seguretat de la "
+"base de dades emprant el «crontab» a través de la xarxa, pot ajudar amb les "
+"disfuncions del dispositiu. També es pot utilitzar un NAS o una unitat "
+"externa."
 
 #: ../../setup_application/database_settings.rst:188
 msgid ""
@@ -417,7 +465,7 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:195
 msgid "Database Statistics"
-msgstr ""
+msgstr "Estadístiques de la base de dades"
 
 #: ../../setup_application/database_settings.rst:197
 msgid ""
@@ -435,4 +483,4 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:205
 msgid "The digiKam Database Statistics Dialog"
-msgstr ""
+msgstr "El diàleg d'estadístiques de la base de dades del digiKam"

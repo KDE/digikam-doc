@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 00:50+0000\n"
-"PO-Revision-Date: 2023-01-17 19:12+0100\n"
+"PO-Revision-Date: 2023-01-18 18:37+0100\n"
 "Last-Translator: Antoni Bella <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -47,6 +47,11 @@ msgid ""
 "want to work in a larger color space, or if you want to work with RAW files "
 "(even if you output sRGB image files from your RAW files), read on."
 msgstr ""
+"Molts excel·lents fotògrafs professionals i aficionats guarden totes les "
+"seves imatges com a JPEG a la càmera i treballen exclusivament en l'espai de "
+"color sRGB. Però si voleu treballar en un espai de color més gran, o si "
+"voleu treballar amb fitxers RAW (fins i tot si genereu fitxers d'imatge sRGB "
+"des dels vostres fitxers RAW), continueu llegint."
 
 #: ../../color_management/camera_profiles.rst:21
 msgid ""
@@ -57,23 +62,35 @@ msgid ""
 "your RAW image. But first let's answer the question you really might have "
 "been asking."
 msgstr ""
+"Si esteu llegint aquest manual, probablement esteu prenent imatges RAW amb "
+"una rèflex digital (dSLR) i espereu que en algun lloc de les misterioses "
+"aigües de la gestió del color es trobi la resposta a com obtenir una bona "
+"imatge des del vostre fitxer d'imatge RAW. El següent que necessiteu és el "
+"perfil de la càmera adequat per a revelar la imatge RAW. Però primer "
+"responguem la pregunta que realment podríeu haver fet."
 
 #: ../../color_management/camera_profiles.rst:27
 msgid "digiKam RAW Preview Using **Embedded JPEG Image**."
 msgstr ""
+"Vista prèvia RAW en el digiKam utilitzant una **imatge JPEG incrustada**."
 
 #: ../../color_management/camera_profiles.rst:33
 msgid ""
 "digiKam RAW Preview Using an Half Sized Demosaiced in 8 bits and "
 "**Bilinear** Method."
 msgstr ""
+"Vista prèvia RAW en el digiKam utilitzant una reconstrucció de mida mitjana "
+"en 8 bits i amb el mètode **bilineal**."
 
 #: ../../color_management/camera_profiles.rst:39
 msgid ""
 "digiKam RAW Import Tool from Image Editor Loading RAW file Demosaiced in 16-"
 "bit and **AHD** method."
 msgstr ""
+"Eina d'importació RAW en el digiKam des de l'editor d'imatges carregant un "
+"fitxer RAW de reconstruït en 16 bits i amb el mètode **AHD**."
 
+# skip-rule: t-acc_obe
 #: ../../color_management/camera_profiles.rst:41
 msgid ""
 "Why doesn't the image produced by RAW converters like `Libraw <https://www."
@@ -85,6 +102,15 @@ msgid ""
 "your final image would have looked like if you had set your camera to save "
 "Jpegs instead of RAW files."
 msgstr ""
+"Per què la imatge produïda pels convertidors RAW com la `LibRaw <https://www."
+"libraw.org/>`_ no s'assembla a la vista prèvia incrustada que mostra el "
+"digiKam? Totes les imatges de càmeres digitals comencen com a fitxers RAW, "
+"tant si la càmera permet a l'usuari l'opció de desar la imatge com un fitxer "
+"RAW. Quan demaneu a la càmera que desi en fitxers JPEG en lloc de fitxers "
+"RAW, la càmera utilitzarà el processador integrat per a convertir el fitxer "
+"RAW en un fitxer JPEG. Aquesta vista prèvia incrustada és l'aspecte que "
+"hauria tingut la imatge final si s'hagués configurat la càmera per a desar "
+"fitxers JPEG en lloc de fitxers RAW."
 
 #: ../../color_management/camera_profiles.rst:43
 msgid ""
@@ -102,6 +128,20 @@ msgid ""
 "development software, you will find, if you know what to look for, that an S-"
 "curve and also shadow denoising has been applied to your image."
 msgstr ""
+"Canon, per exemple, ofereix a l'usuari diversos estils d'imatge -neutre, "
+"estàndard, retrat, paisatge, etc.- que determinen quin tipus de processament "
+"es realitzarà en el fitxer d'imatge RAW per a produir la imatge final, ja "
+"sigui que el processament es realitzi *en la càmera* o després, utilitzant "
+"el programari propietat de Canon. Aquest programari de processament ofereix "
+"a l'usuari un control addicional, però encara manipula el fitxer d'imatge "
+"RAW d'acord amb l'estil d'imatge escollit. La majoria dels estils d'imatge "
+"de Canon afegeixen una corba S molt pronunciada i una saturació del color "
+"addicional per a donar a la imatge un toc més *cridaner*. Fins i tot si "
+"escolliu l'estil d'imatge *neutre* (l'estil d'imatge de Canon que ofereix "
+"una tonalitat menys modificada) i seleccioneu *menys contrast*, *menys "
+"saturació*, *sense reducció del soroll* i *sense aguditzar* en el programari "
+"de desenvolupament Cannon RAW, trobareu, si sabeu què cercar, que s'ha "
+"aplicat una corba S i també una reducció de les ombres a la vostra imatge."
 
 #: ../../color_management/camera_profiles.rst:45
 msgid ""
@@ -115,6 +155,17 @@ msgid ""
 "some extent *applies an S-curve* to the scene to enable us to better focus "
 "in on the areas of particular interest as we look around."
 msgstr ""
+"La LibRaw que utilitza el digiKam per a convertir fitxers RAW en fitxers "
+"d'imatge no afegeix una corba S a la tonalitat de la vostra imatge. La "
+"LibRaw ofereix les llums i les ombres que realment registra el sensor de la "
+"càmera. La LibRaw és un dels pocs desenvolupadors RAW que ofereix realment "
+"la tonalitat referida a l'escena. I la imatge referida a l'escena de la "
+"LibRaw tindrà un aspecte pla, perquè el sensor de la càmera registra la llum "
+"de forma lineal, mentre que els nostres ulls interactuen constantment amb el "
+"nostre cervell per a adaptar-se a les àrees fosques i brillants d'una "
+"escena, el que significa que el nostre cervell, en certa mesura, aplica una "
+"corba S a l'escena per a permetre'ns enfocar millor en les àrees d'interès "
+"mentre mirem al nostre voltant."
 
 #: ../../color_management/camera_profiles.rst:47
 msgid ""
@@ -131,12 +182,27 @@ msgid ""
 "camera, but it's encoded as 16-bits for the computer's convenience), there "
 "just isn't that much information to begin with."
 msgstr ""
+"La vista prèvia incrustada del JPEG es veu molt millor que la sortida de "
+"LibRaw. Quin és el valor de la tonalitat referida a l'escena? Quan preneu "
+"una fotografia, presumiblement teniu una idea de com voleu que es vegi la "
+"imatge final. És molt més fàcil aconseguir aquesta imatge final si no s'han "
+"de desfer coses que ja s'han fet en la vostra imatge. Quan Canon (Nikon o "
+"Sony, etc.) han aplicat les seves corbes S amb patents i eliminat les "
+"ombres, nitidesa, etc. a la vostra imatge, aleshores les ombres, llum intensa, "
+"detalls de les vores, etc. ja estan aixafats, retallats, picats, i altrament "
+"alterat i destrossat. Heu llençat informació i no es pot recuperar. "
+"Especialment en les ombres, fins i tot amb imatges de 16 bits (en realitat, "
+"12 o 14 bits, depenent de la càmera, però està codificada com 16 bits per a "
+"la comoditat de l'ordinador), senzillament no hi ha molta informació amb la "
+"que començar."
 
 #: ../../color_management/camera_profiles.rst:53
 msgid ""
 "digiKam Raw Import Tool from Image Editor Allows to Post Process Exposures "
 "and Curves just After the Demosaicing."
 msgstr ""
+"L'eina d'importació RAW en el digiKam des de l'editor d'imatges permet el "
+"postprocessament d'exposicions i corbes just després de la reconstrucció."
 
 #: ../../color_management/camera_profiles.rst:55
 msgid ""
@@ -169,12 +235,17 @@ msgid ""
 "If your image has pink highlights, check your **White Balance** settings in "
 "the RAW Import tool, especially the **highlights** options."
 msgstr ""
+"Si la vostra imatge té reflexos de color rosa, comproveu la configuració del "
+"**Balanç de blancs** a l'eina d'importació RAW, especialment les opcions de "
+"**Llums intenses**."
 
 #: ../../color_management/camera_profiles.rst:65
 msgid ""
 "digiKam Raw Import Tool from Image Editor Allows to Tune Many Options about "
 "the Camera Colorimetry."
 msgstr ""
+"L'eina d'importació RAW en el digiKam des de l'editor d'imatges permet "
+"ajustar moltes opcions sobre la colorimetria de la càmera."
 
 #: ../../color_management/camera_profiles.rst:67
 msgid ""
@@ -189,7 +260,7 @@ msgstr ""
 
 #: ../../color_management/camera_profiles.rst:70
 msgid "Camera Profile Specificities"
-msgstr ""
+msgstr "Especificitats del perfil de la càmera"
 
 #: ../../color_management/camera_profiles.rst:72
 msgid ""
@@ -239,7 +310,7 @@ msgstr ""
 
 #: ../../color_management/camera_profiles.rst:81
 msgid "Analog to Digital Conversion"
-msgstr ""
+msgstr "Conversió d'analògic a digital"
 
 #: ../../color_management/camera_profiles.rst:83
 msgid ""
@@ -282,10 +353,12 @@ msgid ""
 "digiKam Raw Import Tool from Image Editor Allows Wavelets Noise Reduction "
 "While Demosaicing."
 msgstr ""
+"L'eina d'importació RAW en el digiKam des de l'editor d'imatges permet la "
+"reducció del soroll per ondetes durant la reconstrucció."
 
 #: ../../color_management/camera_profiles.rst:96
 msgid "Camera Profile and RAW Treatment"
-msgstr ""
+msgstr "Perfil de la càmera i tractament RAW"
 
 #: ../../color_management/camera_profiles.rst:98
 msgid ""
@@ -306,10 +379,12 @@ msgid ""
 "digiKam Raw Import Tool from Image Editor Allow to Tune the Color Profile to "
 "Apply While Demosaicing."
 msgstr ""
+"L'eina d'importació RAW en el digiKam des de l'editor d'imatges permet "
+"ajustar el perfil de color que s'aplicarà durant la reconstrucció."
 
 #: ../../color_management/camera_profiles.rst:107
 msgid "Generic Camera Profile"
-msgstr ""
+msgstr "Perfil de la càmera genèrica"
 
 #: ../../color_management/camera_profiles.rst:109
 msgid ""
@@ -329,10 +404,12 @@ msgstr ""
 #: ../../color_management/camera_profiles.rst:115
 msgid "The Draft of Color Management Logic While a RAW Workflow Processing."
 msgstr ""
+"L'esborrany de la lògica en la gestió del color mentre es processa un flux "
+"de treball RAW."
 
 #: ../../color_management/camera_profiles.rst:118
 msgid "Lighting Conditions and RAW Workflow"
-msgstr ""
+msgstr "Condicions d'il·luminació i flux de treball RAW"
 
 # skip-rule: t-acc_obe
 #: ../../color_management/camera_profiles.rst:120
@@ -377,9 +454,9 @@ msgstr ""
 "Després processeu el fitxer RAW amb el programari+opcions de configuració "
 "del processament RAW en particular i executeu el fitxer d'imatge resultant a "
 "través del programari de creació de perfils. El programari de creació de "
-"perfils compararà els valors RGB en la imatge produïda per la càmera"
-"+condicions d'il·luminació+rutina de processament RAW amb els valors RGB en "
-"l'objectiu original i presentarà el perfil (icc) de la vostra càmera."
+"perfils compararà els valors RGB en la imatge produïda per la "
+"càmera+condicions d'il·luminació+rutina de processament RAW amb els valors "
+"RGB en l'objectiu original i presentarà el perfil (icc) de la vostra càmera."
 
 #: ../../color_management/camera_profiles.rst:124
 msgid ""
@@ -418,10 +495,13 @@ msgid ""
 "The digiKam Batch Queue Manager Raw Converter has also the Same Noise "
 "Reduction and Color Profiles Options than Image Editor"
 msgstr ""
+"El convertidor RAW en el digiKam des del gestor de la cua per lots també té "
+"les mateixes opcions de reducció del soroll i perfils de color que l'editor "
+"d'imatges"
 
 #: ../../color_management/camera_profiles.rst:135
 msgid "Profiles Point to Real Colors"
-msgstr ""
+msgstr "Els perfils apunten a colors reals"
 
 #: ../../color_management/camera_profiles.rst:137
 msgid ""
