@@ -185,7 +185,9 @@ The graphics here shows how different metadata overlap. This is a very coarse re
     :alt:
     :align: center
 
-Enough of **Tags** - lets move on to **Captions** or **Comments**, the third major tool for metadata cataloging.
+    The Different Item Properties Avaialble in digiKam
+
+Enough of **Tags**. Lets move on to **Captions** or **Comments**, the third major tool for metadata cataloging.
 
 Captions and Comments
 ~~~~~~~~~~~~~~~~~~~~~
