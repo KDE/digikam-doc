@@ -95,7 +95,7 @@ Otherwise tags are simply applied by checking the respective boxes in the tree. 
 
 .. note::
 
-   In case you have selected a number of images in the main view and you check a tag in the tag tree, this one is only applied to the highlighted image, and not to the whole selection. If you want to tag selections, refer to the :ref:`Filters <filters_view>` section. 
+   In case you have selected a number of images in the Icon-View and you check a tag in the tag tree, this one is only applied to the highlighted images, and not to the whole Album contents.
 
 Information View
 ~~~~~~~~~~~~~~~~
