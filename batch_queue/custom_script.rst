@@ -63,7 +63,7 @@ The environment variables that you can use in your script code are listed below:
 Return Value
 ------------
 
-By convention, a **Bash script** under Linux and macOS, 0 is returned on success or an integer in the range 1-255 for something else. use **exit < error_code >** to pass the return value on the workflow.
+By convention, a **Bash script** under Linux and macOS, 0 is returned on success or an integer in the range 1-255 for something else. Use **exit < error_code >** to pass the return value on the workflow.
 
 Under Windows, a **Batch script** return 0 on success and another value for something else, but the value is a signed integer, so a negative value is possible. Use **EXIT /B < error_code >** to pass the return value on the workflow.
 
