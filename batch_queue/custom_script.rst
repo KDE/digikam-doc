@@ -130,6 +130,10 @@ A **Second example** below is more complex and use **ImageMagick** command like 
         "${in_file}"  +swap -gravity center -geometry +0-3 \
         -composite  "${out_file}"
 
+.. note::
+
+    In this example, there is no explicit **exit** call to return a value to the Workflow. Bash use the last called method as the returned value from the script, here the ImageMagick command line tool **convert**.
+
 This give a result someting as below.
 
 .. figure:: images/bqm_imagemagick_watermark.webp
