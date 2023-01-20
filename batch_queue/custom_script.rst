@@ -65,7 +65,7 @@ Return Value
 
 By convention, a **Bash script** under Linux and macOS, 0 is returned on success or an integer in the range 1-255 for something else. use **exit < error_code >** to pass the return value on the workflow.
 
-Under Windows, a **Batch script** return 0 on success and another value for something else, but the value is a signed integer, so a negative value is possible. USe **EXIT /B < error_code >** to pass the return value on the workflow.
+Under Windows, a **Batch script** return 0 on success and another value for something else, but the value is a signed integer, so a negative value is possible. Use **EXIT /B < error_code >** to pass the return value on the workflow.
 
 The Batch Queue Manager handle the value returned by your script. If zero is returned, the workflow continue as expected, else the workflow is broken and Batch Queue Manager stop the process.
 
@@ -89,7 +89,7 @@ The first example that you can see below, ...does nothing special. It will print
     cp "$INPUT" "$OUTPUT"
     exit $?
 
-If you have started digiKam from a console and enabled the debug traces on Setup/Miscs/System dialog page, you will see the text output below:
+If you have started digiKam from a console and enabled the debug traces on :ref:`Setup/Miscs/System dialog page <system_settings>`, you will see something like this:
 
 .. code-block:: text
 
