@@ -29,7 +29,7 @@ On the bottom left, the view shows all root settings for a queues, as the RAW pr
 
 On the bottom right, the view shows the collection of tools available in batch queue manager. You can assign a tool to the current queue by a double click or a drag and drop. This view shows also a list of pre-recorded queue settings to allows to replay later workflow. Finally a tab show a flat list of batch operations processed on queue as a log-file.
 
-.. figure:: images/batch_queue.webp
+.. figure:: images/bqm_main_view.webp
     :alt:
     :align: center
 

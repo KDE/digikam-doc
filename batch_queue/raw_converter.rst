@@ -39,7 +39,7 @@ You must choose one output formats to save the conversion result by placing the 
 
 When you have finished to setup the queue, click the **Process** button to start the conversion. If you want abort image conversion, press the **Abort** button. 
 
-.. figure:: images/raw_converter.webp
+.. figure:: images/bqm_raw_converter.webp
     :alt:
     :align: center
 
