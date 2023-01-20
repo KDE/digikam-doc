@@ -31,9 +31,13 @@ The tool provides these options:
 
     - **Shell Script**: this text edit field allow to enter the source code of your shell script. Under **Linux** and **macOS**, `Bash script <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported. Under **Windows** `Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported.
 
-The environment variables that you can use in your script code are listed below:
+The keywords that you can use in your script code are listed below. The tool will replace all occurrences of keywords in script at run time before shell execution. Take a care that keywords are case sensitive.
 
-    - **INPUT** and **$OUTPUT** for input / output filenames (with special characters escaped). These would be substituted before shell execution.
+    - **$INPUT** for workflow input filename (with special characters escaped).
+
+    - **$OUTPUT** for workflow output filename (with special characters escaped).
+
+The environment variables that you can use in your script code are listed below:
 
     - **TITLE**: to handle digiKam **Title** item properties from database.
 
