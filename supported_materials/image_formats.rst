@@ -41,7 +41,7 @@ JPEG
 JPEG 2000
 ---------
 
-`JPEG 2000 <https://en.wikipedia.org/wiki/JPEG_2000>`_ is an improvement intended to replace the older JPEG by the JPEG committee, introduced in 2000. It provides for the same compression ratio with better (smoother) results compared to JPEG. The 2000 version has the option of being lossless if so specified in the settings. It supports metadata and 1§ bits color depth.
+`JPEG 2000 <https://en.wikipedia.org/wiki/JPEG_2000>`_ is an improvement intended to replace the older JPEG by the JPEG committee, introduced in 2000. It provides for the same compression ratio with better (smoother) results compared to JPEG. The 2000 version has the option of being lossless if so specified in the settings. It supports metadata and 12 bits color depth.
 
 
 TIFF
