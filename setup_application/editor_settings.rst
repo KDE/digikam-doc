@@ -103,7 +103,7 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 
 **Use the default settings, in 16 bit**: If enabled, all RAW files will be decoded to 16-bit color depth using a linear gamma curve and according to the settings in the **RAW Default Settings** tab. To prevent dark image rendering in the editor, it is recommended to use Color Management in this mode.
 
-**Always open the Raw Import Tool to customize settings**: With this option you can select which Raw Import Tool will used to open RAW files. Raw processing tool available are:
+**Always open the Raw Import Tool to customize settings**: With this option you can select which Raw Import Tool will used to open RAW files. Raw processing tools available are:
 
     - **Import RAW using LibRaw**: the default plugin for digiKam which will provide a fully integrated module at the Right Side Bar in the Image Editor where you can set individual parameters for every image you open.
 
@@ -131,7 +131,7 @@ RAW Default Settings
 
 .. note::
 
-    This default settings is used only with the LibRaw interface.
+    These default settings is used only with the LibRaw interface.
 
 Demosaicing
 ~~~~~~~~~~~
