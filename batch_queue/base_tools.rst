@@ -152,7 +152,7 @@ These tools allow to save images to new file formats. These are mostly placed at
 
     - **Convert RAW to DNG** (this specific tool must be placed on to top of your list of **Assigned Tools** from your **Workflow**).
 
-.. _bqm_damtools:
+.. _bqm_metadatatools:
 
 Metadata Tools
 --------------
@@ -170,6 +170,8 @@ Metadata Tools
     - **Remove Metadata**
 
     - **Time Adjust**
+
+.. _bqm_customtools:
 
 Custom Tools
 ------------
