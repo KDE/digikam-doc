@@ -94,7 +94,32 @@ But if you want to take the first steps toward a color-managed workflow, then re
 Monitor profiles Storage
 ------------------------
 
-Under Linux, icc profiles are generally located in the :file:`/usr/share/color/icc` folder, which is the closest there is at this moment to a standard Linux location for icc profiles. If you use this folder for your icc profiles, likely you will need to change permissions on the folder to allow your user read/write access. Then you just tell digiKam where your profiles are located.
+On **Windows**, the default search paths include:
+
+    - :file:`C:\\Windows\\System32\\spool\\drivers\\color\\`
+    - :file:`C:\\Windows\\Spool\\Drivers\\Color\\`
+    - :file:`C:\\Windows\\Color\\`
+
+On **macOS**, the default search paths include:
+
+    - :file:`/System/Library/ColorSync/Profiles/`
+    - :file:`/Library/ColorSync/Profiles/`
+    - :file:`~/Library/ColorSync/Profiles/`
+    - :file:`/opt/local/share/color/icc/`
+    - :file:`/Applications/digiKam.org/digikam.app/Contents/Resources/digikam/profiles/`
+    - :file:`~/.local/share/color/icc/`
+    - :file:`~/.local/share/icc/`
+    - :file:`~/.color/icc/`
+
+On **Linux**, the default search paths include:
+
+    - :file:`/usr/share/color/icc/`
+    - :file:`/usr/local/share/color/icc/`
+    - :file:`~/.local/share/color/icc/`
+    - :file:`~/.local/share/icc/`
+    - :file:`~/.color/icc/`
+
+Under Linux and macOS, your personal ICC profiles are generally located in the :file:`~/local/share/color/icc` folder from your home directory.
 
 .. figure:: images/cm_profile_repositories.webp
     :alt:
