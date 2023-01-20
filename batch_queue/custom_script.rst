@@ -134,7 +134,7 @@ A **Second example** below is more complex and use **ImageMagick** command like 
 
     In this example, there is no explicit **exit** call to return a value to the Workflow. Bash use the last called method as the returned value from the script, here the ImageMagick command line tool **convert**.
 
-This give a result someting as below.
+This give a result like below.
 
 .. figure:: images/bqm_imagemagick_watermark.webp
     :alt:
