@@ -17,7 +17,7 @@ Custom Script
 
 The batch Queue Manager allow to customize a **Workflow** with a specific plugin dedicated to run a script an process your images with an external tool as `ImageMagick <https://imagemagick.org/>`_ for example.
 
-The Tool is named **Custom Script**, available in **Base Tools** list, and **Custom Tools** category. The goal is pass to a script source code written by the user in the plugin, a serie of variables to handle in the code and to re-route for a custom usage with delegate command line programs installed on your computer.
+The Tool is named **Custom Script**, available in **Base Tools** list, and **Custom Tools** category. The goal is pass to a script source code written by the user in the plugin, a serie of environment variables to handle in the code and to re-route for a custom usage with delegate command line programs installed on your computer.
 
 .. figure:: images/bqm_custom_script.webp
     :alt:
@@ -31,7 +31,7 @@ The tool provides these options:
 
     - **Shell Script**: this text edit field allow to enter the source code of your shell script. Under **Linux** and **macOS**, `Bash script <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported. Under **Windows** `Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported.
 
-The envirronement variables that you can use in your script code are listed below:
+The environment variables that you can use in your script code are listed below:
 
     - **INPUT** and **$OUTPUT** for input / output filenames (with special characters escaped). These would be substituted before shell execution.
 
@@ -49,7 +49,7 @@ The envirronement variables that you can use in your script code are listed belo
 
 .. note::
 
-    Under Linux and macOS, environnement variables can be accessed in script with **$** as prefix of variable names (for example **$INPUT**).
+    Under Linux and macOS, environment variables can be accessed in script with **$** as prefix of variable names (for example **$INPUT**).
 
-    Under Windows, environnement variables can be accessed in script with **%** as prefix and suffix of variable names (for example **%INPUT%**).
+    Under Windows, environment variables can be accessed in script with **%** as prefix and suffix of variable names (for example **%INPUT%**).
 
