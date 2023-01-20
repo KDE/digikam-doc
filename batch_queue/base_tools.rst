@@ -154,8 +154,8 @@ These tools allow to save images to new file formats. These are mostly placed at
 
 .. _bqm_damtools:
 
-Digital Asset Management tools
-------------------------------
+Metadata Tools
+--------------
 
     - :ref:`Image Quality Sort <maintenance_quality>`
 
@@ -171,4 +171,7 @@ Digital Asset Management tools
 
     - **Time Adjust**
 
-    - **User Shell Script**
+Custom Tools
+------------
+
+    - :ref:`User Shell Script <custom_script>`
