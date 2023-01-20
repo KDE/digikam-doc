@@ -72,7 +72,7 @@ The Batch Queue Manager handle the value returned by your script. If zero is ret
 Examples
 --------
 
-The **First example** that you can see below, ...do nothing special. It will print the input/output file names and item properties passed from batch queue manager to the script and copy input file to ouput file (this stage is required else Batch Queue Manager return an error as the target file do not exists.). The script return the value from the file copy command, this one is parser by the Batch Queue Manager to check the workflow stream.
+The **First example** that you can see below, ...do nothing special. It will print on the console the input/output file names and item properties passed from batch queue manager to the script and copy input file to ouput file (this stage is required else Batch Queue Manager return an error as the target file do not exists). The script return the value from the file copy command, this one is parsed by the Batch Queue Manager to check the workflow stream.
 
 .. code-block:: bash
 
@@ -89,7 +89,7 @@ The **First example** that you can see below, ...do nothing special. It will pri
     cp "$INPUT" "$OUTPUT"
     exit $?
 
-If you have started digiKam from a console and enabled the debug traces on :ref:`Setup/Miscs/System dialog page <system_settings>`, you will see something like this:
+If you have started digiKam from a terminal and enabled the debug traces on :ref:`Setup/Miscs/System dialog page <system_settings>`, you will see something like this:
 
 .. code-block:: text
 
