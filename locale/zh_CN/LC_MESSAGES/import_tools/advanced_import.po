@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-18 00:50+0000\n"
+"POT-Creation-Date: 2023-01-19 00:50+0000\n"
 "PO-Revision-Date: 2023-01-12 10:32\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -38,8 +38,8 @@ msgstr ""
 
 #: ../../import_tools/advanced_import.rst:18
 msgid ""
-"The **Settings** tab of the Right Sidebar in the Import Interface opens five "
-"sections with advanced options for the import processing."
+"The **Settings** tab of the Right Sidebar in the Import Tool interface opens "
+"five sections with advanced options for the import processing."
 msgstr ""
 
 #: ../../import_tools/advanced_import.rst:21
@@ -77,7 +77,16 @@ msgid ""
 "this manual."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:35
+#: ../../import_tools/advanced_import.rst:37
+msgid ""
+"With USB Mass Torage driver, the usage of **file metadata** setting during "
+"camera contents parsing influence the rules of file renaming operations. If :"
+"ref:`this option <camera_behavior>` is disabled, the file renaming features "
+"will be limited. Take a care that enabling this option will slow down the "
+"camera connection stage."
+msgstr ""
+
+#: ../../import_tools/advanced_import.rst:39
 msgid ""
 "The new filename that digiKam will use for the photographs when they are "
 "downloaded can be shown underneath the **Customize** settings. Changing item "
@@ -85,132 +94,156 @@ msgid ""
 "settings will be remembered the next time you use the camera interface."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:39
+#: ../../import_tools/advanced_import.rst:43
 msgid ""
-"At the moment digiKam cannot read metadata of RAW files during the import. "
-"You might want to import the files while preserving camera filenames first "
-"and then rename them after the import using the rename function (F2)."
+"With Gphoto2 drivers, at the moment digiKam cannot read metadata of RAW "
+"files during the import. You might want to import the files while preserving "
+"camera filenames first and then rename them after the import using the "
+"rename function (F2)."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:44
-msgid "Auto-Creation of Albums"
+#: ../../import_tools/advanced_import.rst:45
+msgid ""
+"Another solution will be to use instead a memory cards reader and the USB "
+"Mass Storage driver."
 msgstr ""
 
 #: ../../import_tools/advanced_import.rst:50
+msgid "Auto-Creation of Albums"
+msgstr ""
+
+#: ../../import_tools/advanced_import.rst:56
 msgid "The Import Tool Albums Auto-Creation Advanced Settings"
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:52
+#: ../../import_tools/advanced_import.rst:58
 msgid ""
-"Check Extension-based sub-albums and digiKam will create subalbums based on "
-"the file extensions of the imported images in the target album. digiKam will "
-"open a dialog where you can choose the target album once you click one of "
-"the download options either from the toolbar or from the Item menu. If you "
-"want to create a new Album, into which you could download the photographs, "
-"click the New Album button. The new Album will be created as a sub-folder of "
-"the Album that is currently selected in the existing Album list. This means "
-"that if you do not want your new Album to be a sub-folder of an existing "
-"folder you must first select the collection where you want to create the new "
-"album. Collections are indicated by the icon."
+"Check **Extension-based sub-albums** and digiKam will create subalbums based "
+"on the file extensions of the imported images in the target album. At stage "
+"to :ref:`download from your camera to your computer <camera_download>`, "
+"digiKam will open a dialog where you can choose the target album once you "
+"click one of the download options either from the toolbar or from the Item "
+"menu. If you want to create a new Album, into which you could download the "
+"photographs, click the **New Album** button. The new Album will be created "
+"as a sub-folder of the Album that is currently selected in the existing "
+"Album list. This means that if you do not want your new Album to be a sub-"
+"folder of an existing folder you must first select the collection where you "
+"want to create the new album. Collections are indicated on top level of "
+"album hierarchies."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:54
+#: ../../import_tools/advanced_import.rst:60
 msgid ""
 "If your camera provides information about the date of the photograph's "
 "taking or, if you import from a USB device or a folder, the images contain "
 "Exif metadata with date/time information, digiKam can use this to "
 "automatically create subalbums in the target album during import. Subalbums "
 "names will be based on the image dates. All images which have the same date "
-"will be downloaded into the same subalbum if you check Date-based sub-"
-"albums. Not all cameras include this information. See the sidebar Metadata "
-"section for more detail about information your camera may have embedded in "
-"your photographs."
+"will be downloaded into the same subalbum if you check **Date-based sub-"
+"albums**. Not all cameras include this information. See the :ref:`sidebar "
+"Metadata section <camera_import>` for more detail about information your "
+"camera may have embedded in your photographs."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:60
+#: ../../import_tools/advanced_import.rst:62
+msgid ""
+"Automatically Albums create **Date format** can be **ISO**, **Full text**, "
+"**Local Settings** taken from your desktop settings), or **Custom**. For "
+"this last one, an option modifiers editor is available belw with a help "
+"dialog to know all date format possibilities. On the bottom of this view, an "
+"annotation will warn about the custom Album date format validity."
+msgstr ""
+
+#: ../../import_tools/advanced_import.rst:68
 msgid "The Import Tool Albums Auto-Creation Helper Dialog"
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:65
+#: ../../import_tools/advanced_import.rst:73
 msgid "On the Fly Operations"
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:71
+#: ../../import_tools/advanced_import.rst:79
 msgid "The Import Tool on the Fly Operations Advanced Settings"
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:73
+#: ../../import_tools/advanced_import.rst:81
 msgid ""
 "This section of the Settings tab offers several options for JPEG images. The "
-"Template: drop-down field lets you choose one of your metadata templates you "
-"customized in Templates Settings. You can access the Template Manager also "
-"with the edit button to the right of the drop-down field."
+"**Template** drop-down field lets you choose one of your metadata templates "
+"you customized in :ref:`Templates Settings <templates_settings>`. You can "
+"access the **Template Manager** also with the edit button to the right of "
+"the drop-down field."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:75
+#: ../../import_tools/advanced_import.rst:83
 msgid ""
-"Write the document name to Exif and Fix internal date & time writes this "
-"information into the respective Exif tags and XMP fields."
+"**Write the document name to Exif** and **Fix internal date and time** "
+"writes this information into the respective Exif tags and XMP fields."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:77
+#: ../../import_tools/advanced_import.rst:85
 msgid ""
 "If you check the next box digiKam will perform the auto-rotate/flip action "
-"described in Lossless Image Rotation."
+"described in :ref:`Lossless Image Rotation <lossless_rotation>`."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:79
+#: ../../import_tools/advanced_import.rst:87
 msgid ""
-"Convert to lossless file format allows you to convert the images to PNG, "
-"TIFF, PGF or JPEG2000 during import."
-msgstr ""
-
-#: ../../import_tools/advanced_import.rst:84
-msgid "DNG Convert Options"
-msgstr ""
-
-#: ../../import_tools/advanced_import.rst:90
-msgid "The Import Tool DNG Convert Advanced Settings"
+"**Convert to lossless file format** allows you to convert the images to PNG, "
+"TIFF, PGF, HEIF, WEBP, AVIF, or JPEG 2000 during import. To know more about "
+"these file formats, see :ref:`this section <image_formats>` from the manual."
 msgstr ""
 
 #: ../../import_tools/advanced_import.rst:92
-msgid ""
-"This section allows to enable the DNG conversion of RAW images by checking "
-"Convert RAW images to DNG container and to select options for that "
-"conversion. To learn more about Digital Negative (DNG) use the link “DNG "
-"container”."
-msgstr ""
-
-#: ../../import_tools/advanced_import.rst:94
-msgid ""
-"Embed original file: Embeds the original RAW file into the DNG container."
-msgstr ""
-
-#: ../../import_tools/advanced_import.rst:96
-msgid ""
-"Lossless Compression: Enables lossless compression. The difference between "
-"lossy and lossless compression is said to be practically indistinguishable "
-"with DNG."
+msgid "DNG Convert Options"
 msgstr ""
 
 #: ../../import_tools/advanced_import.rst:98
+msgid "The Import Tool DNG Convert Advanced Settings"
+msgstr ""
+
+#: ../../import_tools/advanced_import.rst:100
 msgid ""
-"JPEG preview: Choose whether you want a medium or full size JPEG preview to "
-"be embedded into the DNG container or none at all."
+"This section allows to enable the DNG conversion of RAW images by checking "
+"**Convert RAW images to DNG** container and to select options for that "
+"conversion. To learn more about Digital Negative (DNG) use the link `DNG "
+"container <https://en.wikipedia.org/wiki/Digital_Negative>`_."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:103
-msgid "Scripting"
+#: ../../import_tools/advanced_import.rst:102
+msgid ""
+"**Embed original file**: Embeds the original RAW file into the DNG container."
 msgstr ""
 
-#: ../../import_tools/advanced_import.rst:109
-msgid "The Import Tool Scripting Advanced Settings"
+#: ../../import_tools/advanced_import.rst:104
+msgid ""
+"**Lossless Compression**: Enables lossless compression. The difference "
+"between lossy and lossless compression is said to be practically "
+"indistinguishable with DNG."
+msgstr ""
+
+#: ../../import_tools/advanced_import.rst:106
+msgid ""
+"**JPEG preview**: Choose whether you want a medium or full size JPEG preview "
+"to be embedded into the DNG container or none at all."
 msgstr ""
 
 #: ../../import_tools/advanced_import.rst:111
+msgid "Scripting"
+msgstr ""
+
+#: ../../import_tools/advanced_import.rst:117
+msgid "The Import Tool Scripting Advanced Settings"
+msgstr ""
+
+#: ../../import_tools/advanced_import.rst:119
 msgid ""
 "This last section of the Settings tab offers to run scripts to manipulate "
 "the images during import. You can type the filename of the script into the "
-"input field or search for it using the Browse... button. Check out the info "
-"button for additional expressions to customize the command line!"
+"input field or search for it using the **Browse** button. Check out the info "
+"button for additional expressions to customize the command line."
+msgstr ""
+
+#: ../../import_tools/advanced_import.rst:125
+msgid "The Import Tool Albums Scripting Helper Dialog"
 msgstr ""
