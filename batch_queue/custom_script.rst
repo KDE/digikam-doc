@@ -15,6 +15,9 @@ Custom Script
 
 .. contents::
 
+Overview
+--------
+
 The batch Queue Manager allow to customize a **Workflow** with a specific plugin dedicated to run a script an process your images with an external tool as `ImageMagick <https://imagemagick.org/>`_ for example.
 
 The Tool is named **Custom Script**, available in **Base Tools** list, and **Custom Tools** category. The goal is pass to a script source code written by the user in the plugin, a serie of environment variables to handle in the code and to re-route for a custom usage with delegate command line programs installed on your computer.
@@ -57,3 +60,14 @@ The environment variables that you can use in your script code are listed below:
 
     Under Windows, environment variables can be accessed in script with **%** as prefix and suffix of variable names (for example **%INPUT%**).
 
+Examples
+--------
+
+The first example that you can see below, ...do nothing special. It will print the input and output file names passed from batch queue manager to the script and copy input file to ouput file. the script expect to use the same output filename name than input one.
+
+.. code-block:: bash
+
+    echo "INPUT FILE: $INPUT"
+    echo "OUTPUT FILE: $OUTPUT"
+    cp "$INPUT" "$OUTPUT"
+    exit $?
