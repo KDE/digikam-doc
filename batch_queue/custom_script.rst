@@ -18,9 +18,9 @@ Custom Script
 Overview
 --------
 
-The batch Queue Manager allow to customize a **Workflow** with a specific plugin dedicated to run a script an process your images with an external tool as `ImageMagick <https://imagemagick.org/>`_ for example.
+The batch Queue Manager allows to customize a **Workflow** with a specific plugin dedicated to run a script an process your images with an external tool as `ImageMagick <https://imagemagick.org/>`_ for example.
 
-The Tool is named **Custom Script**, available in **Base Tools** list, and **Custom Tools** category. The goal is pass to a script source code written by the user in the plugin, a serie of environment variables to handle in the code and to re-route for a custom usage with delegate command line programs installed on your computer.
+The Tool is named **Custom Script**, available in **Base Tools** list, and **Custom Tools** category. The goal is pass to a script source code written by the user in the plugin, a series of environment variables to handle in the code and to re-route for a custom usage with delegate command line programs installed on your computer.
 
 .. figure:: images/bqm_custom_script.webp
     :alt:
@@ -30,7 +30,7 @@ The Tool is named **Custom Script**, available in **Base Tools** list, and **Cus
 
 The tool provides these options:
 
-    - **Output Image Type**: this value allows to setup the expected type of image format to use at the output of your script. The default is **Same as input**, but you can set **JPEG**, **PNG**, or **TIFF**. Take a care that JPEG is a lossy compression format, only support 8-bit color depth, and do not supports transparency.
+    - **Output Image Type**: this value allows to setup the expected type of image format to use at the output of your script. The default is **Same as input**, but you can set **JPEG**, **PNG**, or **TIFF**. Take a care that JPEG is a lossy compression format, only support 8-bit color depth, and does not supports transparency.
 
     - **Shell Script**: this text edit field allow to enter the source code of your shell script. Under **Linux** and **macOS**, `Bash script <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported. Under **Windows** `Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported.
 
@@ -63,7 +63,7 @@ The environment variables that you can use in your script code are listed below:
 Examples
 --------
 
-The first example that you can see below, ...do nothing special. It will print the input and output file names passed from batch queue manager to the script and copy input file to ouput file. the script expect to use the same output filename name than input one.
+The first example that you can see below, ...does nothing special. It will print the input and output file names passed from batch queue manager to the script and copy input file to ouput file. The script expect to use the same output filename name than input one.
 
 .. code-block:: bash
 
