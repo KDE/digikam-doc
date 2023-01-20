@@ -169,7 +169,7 @@ Another categorization might be task-oriented as in *print jobs*, *web export*, 
 
     The digiKam Color Labels Can be Used to Group Items For Your Workflow Stages
 
-Another digiKam feature is the **Pick Labels** used to categorize shots by quality and identify which item will be **Rejected**, **Pending**, or **Accepted** in your workflow. You can assign this kind of properties manualy of course, but there is a better solution: delegate the quality analysis to the computer using the deep-learning based tool named **Image Quaioty Sorter**. This one can parse image feature as noise, blur, form, shape, contents, etc, and give a evalutation of the quality of shot. This tool is available in **Maintenance Tool** and in **Batch Queue Manager**.
+Another digiKam feature is the **Pick Labels** used to categorize shots by quality and identify which item will be **Rejected**, **Pending**, or **Accepted** in your workflow. You can assign this kind of properties manually of course, but there is a better solution: delegate the quality analysis to the computer using the deep-learning based tool named **Image Quality Sorter**. This one can parse image feature as noise, blur, form, shape, contents, etc, and give an evaluation of the quality of shot. This tool is available in **Maintenance Tool** and in **Batch Queue Manager**.
 
 .. figure:: images/dam_quality_bqm.webp
     :alt:
@@ -185,7 +185,7 @@ The graphics here shows how different digiKam item properties overlap. This is a
     :alt:
     :align: center
 
-    The Different Item Properties Avaialble in digiKam
+    The Different Item Properties Available in digiKam
 
 Enough of **Tags**. Lets move on to **Captions** or **Comments**, the third major tool for metadata cataloging.
 

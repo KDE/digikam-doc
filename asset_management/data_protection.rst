@@ -232,7 +232,7 @@ So, taking into account the manufacturer mega pixel propaganda it seems save to 
 
 In order to estimate the amount of storage space you have to plan for, simply determine the number of photographs you take per year (easy with :ref:`digiKam's timeline sidebar tab <timeline_view>`) and multiply it by 40 MB. Most users will keep less than 2000 pictures per year which requires less than 80 GB/year. Assuming that you will change your hard disk (or whatever media in the future) every 4-5 years, the natural increase in storage capacity will suffice to keep you afloat.
 
-The more ambitious ones out there will need more space, much more maybe. Think of buying a file server, Giga-Ethernet comes integrated into motherboards today and it's a flick to fetch the files over the local network. Speaking about modern mobos: they now the capbility to SATA media through an USB connectors. This makes it really a trifle to buy an external SATA drive and hook it up to your machine. 4000 GB drives will hit the market in 2020. These are terrific compact storage containers for backup swapping: keep one drive at home and one somewhere else.
+The more ambitious ones out there will need more space, much more maybe. Think of buying a file server, Giga-Ethernet comes integrated into motherboards today and it's a flick to fetch the files over the local network. Speaking about modern mobos: they now the capability to SATA media through an USB connectors. This makes it really a trifle to buy an external SATA drive and hook it up to your machine. 4000 GB drives will hit the market in 2020. These are terrific compact storage containers for backup swapping: keep one drive at home and one somewhere else.
 
 Backup and Recover
 ------------------
