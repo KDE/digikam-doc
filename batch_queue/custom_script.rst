@@ -60,10 +60,19 @@ The environment variables that you can use in your script code are listed below:
 
     Under Windows, environment variables can be accessed in script with **%** as prefix and suffix of variable names (for example **%INPUT%**).
 
+Return Value
+------------
+
+By convention, a **Bash script** under Linux and macOS, 0 is returned on success or an integer in the range 1-255 for something else. use **exit < error_code >** to pass the return value on the workflow.
+
+Under Windows, a **Batch script** return 0 on success and another value for something else, but the value is a signed integer, so a negative value is possible. USe **EXIT /B < error_code >** to pass the return value on the workflow.
+
+The Batch Queue Manager handle the value returned by your script. If zero is returned, the workflow continue as expected, else the workflow is broken and Batch Queue Manager stop the process.
+
 Examples
 --------
 
-The first example that you can see below, ...does nothing special. It will print the input and output file names passed from batch queue manager to the script and copy input file to ouput file. The script expect to use the same output filename name than input one.
+The first example that you can see below, ...does nothing special. It will print the input and output file names passed from batch queue manager to the script and copy input file to ouput file. The script return the value from the file copy command, this one is parser by the Batch Queue Manager to check the workflow stream.
 
 .. code-block:: bash
 
