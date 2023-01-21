@@ -18,7 +18,7 @@ Custom Script
 Overview
 --------
 
-The batch Queue Manager allows to customize a **Workflow** with a specific plugin dedicated to run a script an process your images with external tools as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_ for example.
+The batch Queue Manager allows to customize a **Workflow** with a specific plugin dedicated to run a script and process your images with external tools as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_ for example.
 
 The Tool is named **Custom Script**, available in **Base Tools** list, and **Custom Tools** category. The goal is to pass to a script source code written by the user in the plugin, a series of environment variables handled in the code and re-routed for a custom usage with delegate command line programs installed on your computer.
 
@@ -32,7 +32,7 @@ The tool provides these options:
 
     - **Output Image Type**: this value allows to setup the expected type of image format to use at the output of your script. The default is **Same as input**, but you can set **JPEG**, **PNG**, or **TIFF**. Take a care that JPEG is a lossy compression format, only support 8-bit color depth, and does not supports transparency.
 
-    - **Shell Script**: this text edit field allow to enter the source code of your shell script. Under **Linux** and **macOS**, `Bash script <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported. Under **Windows** `Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported.
+    - **Shell Script**: this text edit field allows to enter the source code of your shell script. Under **Linux** and **macOS**, `Bash script <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported. Under **Windows** `Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported.
 
 The keywords that you can use in your script code are listed below. The tool will replace all occurrences of keywords in script at run time before shell execution. Take a care that keywords are case sensitive.
 
@@ -72,7 +72,7 @@ By convention, a **Bash script** under Linux and macOS, 0 is returned on success
 
 Under Windows, a **Batch script** return 0 on success and another value for something else, but the value is a signed integer, so a negative value is possible. Use **EXIT /B < error_code >** to pass the return value on the workflow.
 
-The Batch Queue Manager handle the value returned by your script. If zero is returned, the workflow continue as expected, else the workflow is broken and Batch Queue Manager stop the process.
+The Batch Queue Manager handles the value returned by your script. If zero is returned, the workflow continue as expected, else the workflow is broken and Batch Queue Manager stop the process.
 
 Examples
 --------
@@ -80,7 +80,7 @@ Examples
 Proof of Concept 
 ~~~~~~~~~~~~~~~~
 
-This First example that you can see below, ...do nothing special. It will print on the console the input/output file names and item properties passed from batch queue manager to the script and copy input file to ouput file (this stage is required else Batch Queue Manager return an error as the target file do not exists). The script return the value from the file copy command, this one is parsed by the Batch Queue Manager to check the workflow stream.
+This First example that you can see below, ...do nothing special. It will print on the console the input/output file names and item properties passed from batch queue manager to the script and copy input file to output file (this stage is required else Batch Queue Manager return an error as the target file do not exists). The script return the value from the file copy command, this one is parsed by the Batch Queue Manager to check the workflow stream.
 
 .. code-block:: bash
 
@@ -125,7 +125,7 @@ The digiKam information taken from the database are:
 Add a Watermark with ImageMagick
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Second example below is more complex and use **ImageMagick** command like tool to add a multiline text superimposed over pictures to create a visible watermark on the center of images.
+A Second example below is more complex and uses **ImageMagick** command like tool to add a multiline text superimposed over pictures to create a visible watermark on the center of images.
 
 .. code-block:: bash
 
@@ -143,7 +143,7 @@ A Second example below is more complex and use **ImageMagick** command like tool
 
 .. note::
 
-    In this example, there is no explicit **exit** call to return a value to the Workflow. Bash use the last called method as the returned value from the script, here the ImageMagick command line tool **convert**.
+    In this example, there is no explicit **exit** call to return a value to the Workflow. Bash uses the last called method as the returned value from the script, here the ImageMagick command line tool **convert**.
 
 This give a result like below.
 
