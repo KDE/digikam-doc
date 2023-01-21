@@ -18,9 +18,9 @@ Custom Script
 Overview
 --------
 
-The batch Queue Manager allows to customize a **Workflow** with a specific plugin dedicated to run a script an process your images with an external tool as `ImageMagick <https://imagemagick.org/>`_ for example.
+The batch Queue Manager allows to customize a **Workflow** with a specific plugin dedicated to run a script an process your images with external tools as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_ for example.
 
-The Tool is named **Custom Script**, available in **Base Tools** list, and **Custom Tools** category. The goal is pass to a script source code written by the user in the plugin, a series of environment variables to handle in the code and to re-route for a custom usage with delegate command line programs installed on your computer.
+The Tool is named **Custom Script**, available in **Base Tools** list, and **Custom Tools** category. The goal is to pass to a script source code written by the user in the plugin, a series of environment variables handled in the code and re-routed for a custom usage with delegate command line programs installed on your computer.
 
 .. figure:: images/bqm_custom_script.webp
     :alt:
@@ -40,6 +40,10 @@ The keywords that you can use in your script code are listed below. The tool wil
 
     - **$OUTPUT** for workflow output filename (with special characters escaped).
 
+.. importabt::
+
+    A new file is always expected on **$OUTPUT**. With a script programs that do not create a new file (e.g. changing metadata with Exiftool) you must first copy **$INPUT** to **$OUTPUT** with a command appropriate to the operating system and then make the changes to **$OUTPUT**.
+
 The environment variables that you can use in your script code are listed below:
 
     - **TITLE**: to handle digiKam **Title** item properties from database.
@@ -56,9 +60,10 @@ The environment variables that you can use in your script code are listed below:
 
 .. note::
 
-    Under Linux and macOS, environment variables can be accessed in script with **$** as prefix of variable names (for example **$INPUT**). The interpreter used to run the script is **/bin/bash**
+    Under Linux and macOS, environment variables can be accessed in script with **$** as prefix of variable names (for example **$INPUT**). The interpreter used to run the script is **/bin/bash**.
 
-    Under Windows, environment variables can be accessed in script with **%** as prefix and suffix of variable names (for example **%INPUT%**). The interpreter used to run the script is **cmd.exe**
+    Under Windows, environment variables can be accessed in script with **%** as prefix and suffix of variable names (for example **%INPUT%**). The interpreter used to run the script is **cmd.exe**. The script should not contain any blank lines or comment lines.
+
 
 Return Value
 ------------
@@ -72,7 +77,10 @@ The Batch Queue Manager handle the value returned by your script. If zero is ret
 Examples
 --------
 
-The **First example** that you can see below, ...do nothing special. It will print on the console the input/output file names and item properties passed from batch queue manager to the script and copy input file to ouput file (this stage is required else Batch Queue Manager return an error as the target file do not exists). The script return the value from the file copy command, this one is parsed by the Batch Queue Manager to check the workflow stream.
+Proof of Concept 
+~~~~~~~~~~~~~~~~
+
+This First example that you can see below, ...do nothing special. It will print on the console the input/output file names and item properties passed from batch queue manager to the script and copy input file to ouput file (this stage is required else Batch Queue Manager return an error as the target file do not exists). The script return the value from the file copy command, this one is parsed by the Batch Queue Manager to check the workflow stream.
 
 .. code-block:: bash
 
@@ -114,7 +122,10 @@ The digiKam information taken from the database are:
     - Item Rating is **3 stars**.
     - Item Tags are **Places**, **Places/France**, **Places/France/Salagou Lake**.
 
-A **Second example** below is more complex and use **ImageMagick** command like tool to add a multiline text superimposed over pictures to create a visible watermark on the center of images.
+Add a Watermark with ImageMagick
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A Second example below is more complex and use **ImageMagick** command like tool to add a multiline text superimposed over pictures to create a visible watermark on the center of images.
 
 .. code-block:: text
 
