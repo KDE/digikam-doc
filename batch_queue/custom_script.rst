@@ -70,7 +70,7 @@ Return Value
 
 By convention, a **Bash script** under Linux and macOS, 0 is returned on success or an integer in the range 1-255 for something else. Use **exit < error_code >** to pass the return value on the workflow.
 
-Under Windows, a **Batch script** return 0 on success and another value for something else, but the value is a signed integer, so a negative value is possible. Use **EXIT /B < error_code >** to pass the return value on the workflow.
+Under Windows, a **Batch script** returns 0 on success and another value for something else, but the value is a signed integer, so a negative value is possible. Use **EXIT /B < error_code >** to pass the return value on the workflow.
 
 The Batch Queue Manager handles the value returned by your script. If zero is returned, the workflow continue as expected, else the workflow is broken and Batch Queue Manager stop the process.
 
@@ -80,7 +80,7 @@ Examples
 Proof of Concept 
 ~~~~~~~~~~~~~~~~
 
-This First example that you can see below, ...do nothing special. It will print on the console the input/output file names and item properties passed from batch queue manager to the script and copy input file to output file (this stage is required else Batch Queue Manager return an error as the target file do not exists). The script return the value from the file copy command, this one is parsed by the Batch Queue Manager to check the workflow stream.
+This First example that you can see below, ...do nothing special. It will print on the console the input/output file names and item properties passed from batch queue manager to the script and copy input file to output file (this stage is required else Batch Queue Manager returns an error as the target file does not exist). The script returns the value from the file copy command, this one is parsed by the Batch Queue Manager to check the workflow stream.
 
 .. code-block:: bash
 
@@ -125,7 +125,7 @@ The digiKam information taken from the database are:
 Add a Watermark with ImageMagick
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-A Second example below is more complex and uses **ImageMagick** command like tool to add a multiline text superimposed over pictures to create a visible watermark on the center of images.
+The second example below is more complex and uses **ImageMagick** command like tool to add a multiline text superimposed over pictures to create a visible watermark on the center of images.
 
 .. code-block:: bash
 
