@@ -343,7 +343,7 @@ Open Source standards have the huge advantage of having an open specification. E
 
 **TIFF** has been widely accepted as an image format. TIFF can exist in uncompressed form or in a container using a lossless compression algorithm (Deflate). It maintains high image quality but at the expense of much larger file sizes. Some cameras let you save your images in this format. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by all applications.
 
-**PGF** for Progressive Graphics File is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited to the web but at the moment few browsers can display it. For more information about the PGF format see the `libPGF homepage <https://libpgf.org/>`_
+**PGF** for Progressive Graphics File is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with **JPEG 2000** but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. PGF format is used internally in digiKam to store compressed thumbnails in the database. For more information about the PGF format see the `libPGF homepage <https://libpgf.org/>`_
 
 .. figure:: images/dam_raw_import.webp
     :alt:
@@ -361,7 +361,7 @@ We recommend clearly to **abstain from archiving in RAW format** (as opposed to 
     :alt:
     :align: center
 
-    digiKam Provide a Tool to Convert in Batch RAW to DNG
+    digiKam Provide a Tool to Convert in Batch RAW to DNG in :ref:`Batch Queue Manager <dng_converter>`
 
 We strongly recommend converting RAW files to DNG for archiving. Despite the fact that DNG was created by Adobe, it is an open standard and widely embraced by the Open Source community (which is usually a good indicator of perennial properties). Some manufacturers have already adopted DNG as RAW format. And last not least, Adobe is the most important source of graphical software today, and they of course support their own invention. It is an ideal archival format, the raw sensor data will be preserved as such in TIFF format inside DNG, so that the risk associated with proprietary RAW formats is alleviated. All of this makes migration to another operating system a no-brainer.
 
@@ -369,7 +369,7 @@ We strongly recommend converting RAW files to DNG for archiving. Despite the fac
     :alt:
     :align: center
 
-    digiKam Provide Tools to Convert RAW to DNG during :ref:`Download from Camera <camera_dngconvert>` or in :ref:`Batch Queue Manager <dng_converter>`
+    digiKam Provide Tools to Convert RAW to DNG during :ref:`Download from Camera <camera_dngconvert>`
 
 **XML** for Extensible Mark-up Language or **RDF** for Resource Description Framework. XML is like HTML, but where HTML is mostly concerned with the presentation of data, XML is concerned with the *representation* of data. On top of that, XML is non-proprietary, operating-system-independent, fairly simple to interpret, text-based and cheap. RDF is the WC3's solution to integrate a variety of different applications such as library catalogs, world-wide directories, news feeds, software, as well as collections of music, images, and events using XML as an interchange syntax. Together the specifications provide a method that uses a lightweight ontology based on the Dublin Core which also supports the "Semantic Web" (easy exchange of knowledge on the Web).
 
