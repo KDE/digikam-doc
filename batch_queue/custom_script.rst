@@ -40,7 +40,7 @@ The keywords that you can use in your script code are listed below. The tool wil
 
     - **$OUTPUT** for workflow output filename (with special characters escaped).
 
-.. importabt::
+.. important::
 
     A new file is always expected on **$OUTPUT**. With a script programs that do not create a new file (e.g. changing metadata with Exiftool) you must first copy **$INPUT** to **$OUTPUT** with a command appropriate to the operating system and then make the changes to **$OUTPUT**.
 
@@ -77,7 +77,7 @@ The Batch Queue Manager handles the value returned by your script. If zero is re
 Examples
 --------
 
-Proof of Concept 
+Proof of Concept
 ~~~~~~~~~~~~~~~~
 
 This First example that you can see below, ...do nothing special. It will print on the console the input/output file names and item properties passed from batch queue manager to the script and copy input file to output file (this stage is required else Batch Queue Manager returns an error as the target file does not exist). The script returns the value from the file copy command, this one is parsed by the Batch Queue Manager to check the workflow stream.

@@ -126,6 +126,8 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 
         Screencast of RAW Import Tool Pre-Processing a Digital Negative in DarkTable
 
+.. _setup_rawdefault:
+
 RAW Default Settings
 --------------------
 
