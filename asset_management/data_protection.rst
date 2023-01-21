@@ -64,7 +64,7 @@ Dual-layer optical media Blu-ray disk can store 50 GB, almost six times the capa
 
 Best practice: burn them slowly with a good recorder on archive quality media in an open, non-proprietary format, read the data back to verify, label them with some descriptive text + date & author, lock them away where it is clean, dark, animal safe and dry. And do not forget to copy them over to the next generation of media before you throw away your last piece of hardware or software able to read them.
 
-Hard Disks 
+Hard Disks
 ~~~~~~~~~~
 
 Hard Disk (HDD) manufacturers keep their statistics to themselves. A manufacturer guaranty buys you a new disk, but no data. Google for One has done a large scale study on `HDD <https://en.wikipedia.org/wiki/Hard_disk_drive>`_ failure mechanisms: `Disk Failures study <https://research.google.com/archive/disk_failures.pdf>`_.
@@ -123,7 +123,7 @@ Because a power surge can follow any path to your computer, be sure that each pe
 
 If you have a notebook computer, you will want to carry a surge suppressor as well. A variety of suppressors designed specifically for notebooks are available, small in size and possessing both electric and phone outlets that make them ideal for use on the road.
 
-Uninterruptible Power Supply 
+Uninterruptible Power Supply
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 While a surge suppressor will protect your system from minor fluctuations in the power lines, it won’t help you if the power should black out completely. Even an outage of just a few seconds can result in the loss of valuable data, so you might find it worthwhile to invest in an Uninterruptible Power Supply (UPS).
@@ -219,7 +219,7 @@ We would like to dispel some common myths:
 
     - `RAID <https://en.wikipedia.org/wiki/RAID>`_ systems prevent data corruption/loss: Mostly wrong, RAID0 and 1 prevent you from nothing, RAID5 can prevent data loss due to disk-failures (but not from disk or file system errors). Many low-end RAID controllers (most mother board controllers are) don’t report problems, figuring you’ll never notice. If you do notice, months later, what is the chance that you’ll know it was the controller’s fault? One insidious problem is corruption of RAID 5 parity data. It is pretty simple to check a file by reading it and matching the metadata. Checking parity data is much more difficult, so you typically won’t see parity errors until a rebuild. Then, of course, it is too late.
 
-    - Viruses are the biggest thread to digital data: Wrong. Theft, and human errors are the primary cause of data loss. 
+    - Viruses are the biggest thread to digital data: Wrong. Theft, and human errors are the primary cause of data loss.
 
 Storage Volume Estimation
 -------------------------
@@ -257,7 +257,7 @@ Backup Technicalities Explained
 
     - **Differential Backup**: A backup of only the files that have changed since the last full backup. Constitutes a full snapshot of two points in time: the full backup and the last differential one.
 
-    - **Incremental Backup**: A backup of only the files that have changed since last whatever backup. Constitutes multiple snapshots. You can recreate the original state at any point in time such a backup was made. This comes closest to a versioning system except that it is only sampled and not continuous. 
+    - **Incremental Backup**: A backup of only the files that have changed since last whatever backup. Constitutes multiple snapshots. You can recreate the original state at any point in time such a backup was made. This comes closest to a versioning system except that it is only sampled and not continuous.
 
 Backup The Data
 ~~~~~~~~~~~~~~~
@@ -343,7 +343,7 @@ Open Source standards have the huge advantage of having an open specification. E
 
 **TIFF** has been widely accepted as an image format. TIFF can exist in uncompressed form or in a container using a lossless compression algorithm (Deflate). It maintains high image quality but at the expense of much larger file sizes. Some cameras let you save your images in this format. The problem is that the format has been altered by so many people that there are now 50 or more flavors and not all are recognizable by all applications.
 
-**PGF** "Progressive Graphics File" is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited to the web but at the moment few browsers can display it. For more information about the PGF format see the `libPGF homepage <https://libpgf.org/>`_
+**PGF** for Progressive Graphics File is another not so known but open file image format. Wavelet-based, it allows lossless and lossy data compression. PGF compares well with JPEG 2000 but it was developed for speed (compression/decompression) rather than to be the best at compression ratio. At the same file size a PGF file looks significantly better than a JPEG one, while remaining very good at progressive display too. Thus it should be well-suited to the web but at the moment few browsers can display it. For more information about the PGF format see the `libPGF homepage <https://libpgf.org/>`_
 
 .. figure:: images/dam_raw_import.webp
     :alt:
@@ -355,7 +355,7 @@ Open Source standards have the huge advantage of having an open specification. E
 
 We recommend clearly to **abstain from archiving in RAW format** (as opposed to shooting in RAW format, which we recommend). It has all bad ingredients: many varieties and proprietary nature. It is clear that in a few years time you cannot use your old RAW files anymore. We have already seen people changing camera, losing their color profiles and having great difficulty to treat their old RAW files correctly. Better change to DNG format.
 
-**DNG** Digital Negative file format is a royalty free and open RAW image format designed by Adobe Systems. DNG was a response to demand for a unifying camera raw file format. It is based on the TIFF/EP format, and mandates use of metadata. A handful of camera manufacturers have adopted DNG already, let's hope that the main contenders Canon and Nikon will use it one day.
+**DNG** or Digital Negative file format is a royalty free and open RAW image format designed by Adobe Systems. DNG was a response to demand for a unifying camera raw file format. It is based on the TIFF/EP format, and mandates use of metadata. A handful of camera manufacturers have adopted DNG already, let's hope that the main contenders Canon and Nikon will use it one day.
 
 .. figure:: images/dam_dng_converter_bqm.webp
     :alt:
@@ -369,14 +369,14 @@ We strongly recommend converting RAW files to DNG for archiving. Despite the fac
     :alt:
     :align: center
 
-    digiKam Provide a Tool to Convert RAW to DNG during Download from Camera
+    digiKam Provide Tools to Convert RAW to DNG during :ref:`Download from Camera <camera_dngconvert>` or in :ref:`Batch Queue Manager <dng_converter>`
 
-**XML** (Extensible Mark-up Language) or **RDF** (Resource Description Framework). XML is like HTML, but where HTML is mostly concerned with the presentation of data, XML is concerned with the *representation* of data. On top of that, XML is non-proprietary, operating-system-independent, fairly simple to interpret, text-based and cheap. RDF is the WC3's solution to integrate a variety of different applications such as library catalogs, world-wide directories, news feeds, software, as well as collections of music, images, and events using XML as an interchange syntax. Together the specifications provide a method that uses a lightweight ontology based on the Dublin Core which also supports the "Semantic Web" (easy exchange of knowledge on the Web).
+**XML** for Extensible Mark-up Language or **RDF** for Resource Description Framework. XML is like HTML, but where HTML is mostly concerned with the presentation of data, XML is concerned with the *representation* of data. On top of that, XML is non-proprietary, operating-system-independent, fairly simple to interpret, text-based and cheap. RDF is the WC3's solution to integrate a variety of different applications such as library catalogs, world-wide directories, news feeds, software, as well as collections of music, images, and events using XML as an interchange syntax. Together the specifications provide a method that uses a lightweight ontology based on the Dublin Core which also supports the "Semantic Web" (easy exchange of knowledge on the Web).
 
 IPTC Goes XMP
 ~~~~~~~~~~~~~
 
-That's probably one of the reasons why, around 2001, that Adobe introduced its XML based XMP technology to replace the "Image resource block" technology of the nineties. XMP stands for **Extensible Metadata Platform**, a mixture of XML and RDF. It is a labeling technology that lets users embed data about a file in the file itself, the file info is saved using the extension *.xmp* (signifying the use of XML/RDF).
+That's probably one of the reasons why, around 2001, that Adobe introduced its XML based XMP technology to replace the *Image Resource Block* technology of the nineties. XMP stands for **Extensible Metadata Platform**, a mixture of XML and RDF. It is a labeling technology that lets users embed data about a file in the file itself, the file info is saved using the extension :file:`*.xmp*` (signifying the use of XML/RDF).
 
 `XMP <https://en.wikipedia.org/wiki/Extensible_Metadata_Platform>`_: As much as ODF will be readable forever (since its containing text is written in clear text), XMP will preserve your metadata in a clearly understandable format XML. No danger here of not being able to read it later. It can be embedded into the image files or as a separate accompanying file (**Sidecar** concept). XMP can be used in PDF, JPEG, JPEG2000, GIF, PNG, HTML, TIFF, Adobe Illustrator, PSD, PostScript, Encapsulated PostScript, and video files. In a typical edited JPEG file, XMP information is typically included alongside Exif and IPTC data.
 
