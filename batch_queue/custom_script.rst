@@ -62,7 +62,7 @@ The environment variables that you can use in your script code are listed below:
 
     Under Linux and macOS, environment variables can be accessed in script with **$** as prefix of variable names (for example **$INPUT**). The interpreter used to run the script is **/bin/bash**.
 
-    Under Windows, environment variables can be accessed in script with **%** as prefix and suffix of variable names (for example **%INPUT%**). The interpreter used to run the script is **cmd.exe**. The script should not contain any blank lines or comment lines.
+    Under Windows, environment variables can be accessed in script with **%** as prefix and suffix of variable names (for example **%INPUT%**). The interpreter used to run the script is **cmd.exe**.
 
 
 Return Value
