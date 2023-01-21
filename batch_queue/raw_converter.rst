@@ -1,5 +1,5 @@
 .. meta::
-   :description: digiKam Raw Converter from Batch Queue Manager
+   :description: digiKam RAW Converter from Batch Queue Manager
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, batch, raw, converter
 
 .. metadata-placeholder
@@ -10,7 +10,7 @@
 
 .. _raw_converter:
 
-Raw Converter
+RAW Converter
 =============
 
 .. contents::

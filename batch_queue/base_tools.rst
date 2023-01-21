@@ -150,7 +150,7 @@ These tools allow to save images to new file formats. These are mostly placed at
 
     - :ref:`Convert to WEBP** <image_formats>`
 
-    - **Convert RAW to DNG** (this specific tool must be placed on to top of your list of **Assigned Tools** from your **Workflow**).
+    - :ref:`Convert RAW to DNG <dng_converter>` (this specific tool must be placed on to top of your list of **Assigned Tools** from your **Workflow**).
 
 .. _bqm_metadatatools:
 

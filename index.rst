@@ -230,11 +230,15 @@ Batch Queue Manager
 
     .. container:: tile no-descr
 
+        :ref:`base_tools`
+
+    .. container:: tile no-descr
+
         :ref:`raw_converter`
 
     .. container:: tile no-descr
 
-        :ref:`base_tools`
+        :ref:`dng_converter`
 
     .. container:: tile no-descr
 
