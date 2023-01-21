@@ -127,7 +127,7 @@ Add a Watermark with ImageMagick
 
 A Second example below is more complex and use **ImageMagick** command like tool to add a multiline text superimposed over pictures to create a visible watermark on the center of images.
 
-.. code-block:: text
+.. code-block:: bash
 
     watermark="This image is\ncopyrighted and\navailable with\nlimited usage"
 
