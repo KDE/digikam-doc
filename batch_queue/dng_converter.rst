@@ -29,6 +29,10 @@ Being an open and well-documented format, DNG is suited particularly well for lo
 
     The Batch Queue Manager With a Workflow to Convert RAW files to DNG Container by Applying Metadata Adjustments
 
+.. note::
+
+    Unlike the :ref:`RAW Converter <raw_converter>` tool which decode RAW data to RGB color space, DNG take the RAW data to store in a open-standard container. DNG is another RAW format (not proprietary). You cannot process RGB information over the images with Batch Queue Manager filters without ot decode the image and store the result in another format as JPEG, PNG or TIFF. However, the metadata can be post-processed after DNG conversion, as this will not touch the RAW image data from the container.
+
 Using the Batch Queue Manager DNG Converter is easy to use. **Place the tool on the top of workflow list** (this point is mandatory), add the RAW files to the queue, specify a few options, and hit the **Start** button. For complete peace of mind, you might want to enable the  option which embeds the source RAW data into the resulting DNG file.
 
 **Lossless Compression**: enable a non destrictive compression method to encode image data. We recomend to turn on this option to obtain the best quality, excepted if you want to preserve space disk.
@@ -43,4 +47,4 @@ Using the Batch Queue Manager DNG Converter is easy to use. **Place the tool on 
 
 .. note::
 
-    This tool is also avaialble in the **Import Tool** as a post-process converter while downloading RAW file from a camera. See :ref:`this section <camera_dngconvert>` from the manual for details.
+    This tool is also available in the **Import Tool** as a post-process converter while downloading RAW file from a camera. See :ref:`this section <camera_dngconvert>` from the manual for details.
