@@ -29,9 +29,18 @@ Being an open and well-documented format, DNG is suited particularly well for lo
 
     The Batch Queue Manager With a Workflow to Convert RAW files to DNG Container by Applying Metadata Adjustments
 
-Using the Batch Queue Manager DNG Converter is easy to use. **Place the tool on the top of workflow list** (this point is mandatory), add the RAW files to the queue, specify a few options, and hit the **Start** button. For complete peace of mind, you might want to enable the **Embed Original File** option which embeds the source RAW data into the resulting DNG file.
+Using the Batch Queue Manager DNG Converter is easy to use. **Place the tool on the top of workflow list** (this point is mandatory), add the RAW files to the queue, specify a few options, and hit the **Start** button. For complete peace of mind, you might want to enable the  option which embeds the source RAW data into the resulting DNG file.
 
-**Lossless Compression** enable a non destrictive compression method to encode image data.
+**Lossless Compression**: enable a non destrictive compression method to encode image data. We recomend to turn on this option to obtain the best quality, excepted if you want to preserve space disk.
 
-**
+**JPEG Preview**: with this option you can tune the quality of preview image stored in the container. This JPEG is used to quick visualize the contents without to decode RAW data. The available choices are **None** do not store a preview, **Medium** to store an half sized preview, and **Full Size** to store a preview with same dimensions than original RAW.
 
+**Embed Original File**: for complete peace of mind, you might want to enable this option which embeds the source RAW data into the resulting DNG file. Do not turn on this setting if you want to preserve space disk.
+
+.. important::
+
+    To backup the original metadata from the RAW file to the DNG container, the famous `ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_ engine is used in the background. If ExifTool is not available on your system, the DNG Converter will show this message: **Warning: ExifTool is not available to post-process metadata**. In this case, not all metadata will be backported from the RAW file to DNG.
+
+.. note::
+
+    This tool is also avaialble in the **Import Tool** as a post-process converter while downloading RAW file from a camera. See :ref:`this section <camera_dngconvert>` from the manual for details.

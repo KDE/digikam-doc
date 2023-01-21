@@ -63,7 +63,7 @@ Documentation authors
 
     Burkhard Lück (https://invent.kde.org/lueck)
 
-- 2013
+- 2011-2013
 
     Dmitri Popov (https://scribblesandsnaps.wordpress.com/author/dmpop/)
 
