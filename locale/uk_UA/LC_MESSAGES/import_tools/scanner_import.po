@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:40+0000\n"
-"PO-Revision-Date: 2023-01-04 20:06+0200\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"POT-Creation-Date: 2023-01-20 00:50+0000\n"
+"PO-Revision-Date: 2023-01-20 09:41+0200\n"
+"Last-Translator: Fracture dept <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -39,35 +39,23 @@ msgid "Contents"
 msgstr "Зміст"
 
 #: ../../import_tools/scanner_import.rst:18
+#| msgid ""
+#| "This tool is dedicated to scan images using a flat scanner. It uses an "
+#| "interface for `SANE Library <http://sane-project.org/>`_ to control "
+#| "scanner devices."
 msgid ""
 "This tool is dedicated to scan images using a flat scanner. It uses an "
 "interface for `SANE Library <http://sane-project.org/>`_ to control scanner "
-"devices."
+"devices. It can save images in all main image containers that digiKam "
+"support."
 msgstr ""
 "Цей інструмент призначено для сканування зображень за допомогою планшетного "
 "сканера. У ньому для керування пристроями для сканування використано "
-"інтерфейс `бібліотеки SANE <http://sane-project.org/>`_."
-
-#: ../../import_tools/scanner_import.rst:20
-msgid ""
-"It can save images in all main image containers, as for example the "
-"following formats:"
-msgstr ""
-"Засіб здатен зберігати зображення у всіх основних форматах, зокрема таких:"
+"інтерфейс `бібліотеки SANE <http://sane-project.org/>`_. Він може зберігати"
+" зображення в усіх основних контейнерах зображень, підтримку яких"
+" передбачено у digiKam."
 
 #: ../../import_tools/scanner_import.rst:22
-msgid "png (8 and 16 bits per color)."
-msgstr "png (8 та 16 бітів на колір)."
-
-#: ../../import_tools/scanner_import.rst:24
-msgid "jpeg, jpg, jpeg 2000."
-msgstr "jpeg, jpg, jpeg 2000."
-
-#: ../../import_tools/scanner_import.rst:26
-msgid "tiff."
-msgstr "tiff."
-
-#: ../../import_tools/scanner_import.rst:30
 msgid ""
 "You can check the status of your scanner support from the SANE project "
 "website by using `this manufacturers list <http://www.sane-project.org/sane-"
@@ -77,7 +65,7 @@ msgstr ""
 "проєкту SANE з `цим списком виробників <http://www.sane-project.org/sane-"
 "mfgs.html>`_."
 
-#: ../../import_tools/scanner_import.rst:32
+#: ../../import_tools/scanner_import.rst:24
 msgid ""
 "If the selected scanner cannot be opened or if no default scanner is "
 "provided, a scanner selection dialog is opened."
@@ -85,34 +73,53 @@ msgstr ""
 "Якщо програмі не вдасться відкрити вказаний сканер або якщо не визначено "
 "типового сканера, буде відкрито діалогове вікно вибору сканера."
 
-#: ../../import_tools/scanner_import.rst:34
+#: ../../import_tools/scanner_import.rst:26
+#| msgid ""
+#| "The user can choose the scanner to be used and press OK to open the "
+#| "scanner. Pressing Cancel will cause the tool to exit."
 msgid ""
-"The user can choose the scanner to be used and press OK to open the scanner. "
-"Pressing Cancel will cause the tool to exit."
+"The user can choose the scanner to be used and press **OK** to open the "
+"scanner. Pressing **Cancel** will cause the tool to exit."
 msgstr ""
 "Користувач може вибрати сканер, який буде використано і натиснути кнопку "
-"«Гаразд», щоб відкрити сканер. Натискання кнопки «Скасувати» призведе до "
+"**Гаразд**, щоб відкрити сканер. Натискання кнопки **Скасувати**» призведе"
+" до "
 "завершення роботи засобу обробки."
 
-#: ../../import_tools/scanner_import.rst:36
+#: ../../import_tools/scanner_import.rst:28
+#| msgid ""
+#| "In case no devices were found, maybe because the scanner is not plugged "
+#| "in or switched off, correct that. Then the Reload device list can be used "
+#| "to reload the list of scanners."
 msgid ""
 "In case no devices were found, maybe because the scanner is not plugged in "
-"or switched off, correct that. Then the Reload device list can be used to "
-"reload the list of scanners."
+"or switched off, correct that. Then the **Reload device list** can be used "
+"to reload the list of scanners."
 msgstr ""
 "Якщо сканер не було виявлено, можливо через те, що сканер не було з’єднано з "
 "комп’ютером або вимкнено, з’єднайте або увімкніть сканер. Потім натисніть "
-"кнопку «Перезавантажити список пристроїв», щоб повторно створити список "
+"кнопку **Перезавантажити список пристроїв**, щоб повторно створити список "
 "сканерів."
 
-#: ../../import_tools/scanner_import.rst:42
+#: ../../import_tools/scanner_import.rst:34
+msgid "The Scanner Import Error Dialog"
+msgstr "Вікно помилки імпортування зі сканера"
+
+#: ../../import_tools/scanner_import.rst:38
+#| msgid ""
+#| "Not all drivers or backends support this feature. In that case quit the "
+#| "tool, connect your scanner and restart the application."
 msgid ""
 "Not all drivers or backends support this feature. In that case quit the "
-"tool, connect your scanner and restart the application."
+"tool, connect your scanner and restart digiKam."
 msgstr ""
 "Цю можливість передбачено не у всіх драйверах та допоміжних модулях. Якщо "
 "для вашого сканера такої можливості не передбачено, завершіть роботу "
-"програми, під’єднайте сканер, а потім знову запустіть програму."
+"програми, під’єднайте сканер, а потім знову запустіть digiKam."
+
+#: ../../import_tools/scanner_import.rst:44
+msgid "The Basic Options View from Scanner Import Dialog"
+msgstr "Панель основних параметрів вікна імпортування зі сканера"
 
 #: ../../import_tools/scanner_import.rst:46
 msgid ""
@@ -133,16 +140,28 @@ msgstr ""
 "підтримки SANE для вашого драйвера: інтерфейс має показувати більшість типів "
 "параметрів, які надає у розпорядження користувача SANE."
 
-#: ../../import_tools/scanner_import.rst:50
+#: ../../import_tools/scanner_import.rst:52
+msgid "The Advanced Options View from Scanner Import Dialog"
+msgstr "Панель додаткових параметрів вікна імпортування зі сканера"
+
+#: ../../import_tools/scanner_import.rst:54
+#| msgid ""
+#| "The scanner specific options contains more detailed options of the "
+#| "backends. The tool does not have any special handling for these options."
 msgid ""
-"The scanner specific options contains more detailed options of the backends. "
-"The tool does not have any special handling for these options."
+"The **Scanner specific options** contains more detailed options of the "
+"backends. The tool does not have any special handling for these options."
 msgstr ""
-"Серед специфічних параметрів сканера докладніший перелік параметрів серверів "
+"Серед **специфічних параметрів сканера** докладніший перелік параметрів"
+" серверів "
 "обробки даних. Інструмент не виконує ніякої додаткової обробки цих "
 "параметрів."
 
-#: ../../import_tools/scanner_import.rst:54
+#: ../../import_tools/scanner_import.rst:60
+msgid "The Specific Options View from Scanner Import Dialog"
+msgstr "Панель специфічних параметрів вікна імпортування зі сканера"
+
+#: ../../import_tools/scanner_import.rst:62
 msgid ""
 "If you are satisfied with your settings, you can use the little arrow on the "
 "top of the options splitter. When clicked it collapses or expands the "
@@ -156,7 +175,7 @@ msgstr ""
 "попереднього перегляду. Щоб уникнути цього, просто відведіть вказівник миші "
 "від кнопки згортання."
 
-#: ../../import_tools/scanner_import.rst:56
+#: ../../import_tools/scanner_import.rst:64
 msgid ""
 "To scan an image, the user can start with a preview scan and then select the "
 "part of the scan area to do the final scan on. The preview scan is started "
@@ -167,7 +186,11 @@ msgstr ""
 "остаточного сканування. Тестове сканування можна розпочати натисканням "
 "кнопки «Перегляд»."
 
-#: ../../import_tools/scanner_import.rst:60
+#: ../../import_tools/scanner_import.rst:70
+msgid "The Digital Preview from Scanner Import Dialog"
+msgstr "Панель попереднього перегляду з вікна імпортування зі сканера"
+
+#: ../../import_tools/scanner_import.rst:72
 msgid ""
 "When the preview is scanned the area for the final image can be selected. "
 "When the image is selected the final image can be acquired by pressing the "
@@ -178,7 +201,7 @@ msgstr ""
 "можна засканувати натисканням кнопки остаточного сканування. У відповідь на "
 "натискання програма покаже поступ сканування."
 
-#: ../../import_tools/scanner_import.rst:62
+#: ../../import_tools/scanner_import.rst:74
 msgid ""
 "Sometimes you need only certain parts of an image. Instead of scanning the "
 "whole picture and then using the Image Editor to save the different image "
@@ -190,32 +213,52 @@ msgstr ""
 "можете скористатися можливістю вибору декількох ділянок сканування у вікні "
 "засобу."
 
-#: ../../import_tools/scanner_import.rst:66
+#: ../../import_tools/scanner_import.rst:80
+msgid "The Multiple Selection over Preview from Scanner Import Dialog"
+msgstr ""
+"Декілька позначених ділянок на панелі попереднього перегляду вікна"
+" імпортування зі сканера"
+
+#: ../../import_tools/scanner_import.rst:82
+#| msgid ""
+#| "Scan a preview and then use the left mouse button to select the first "
+#| "part of the image in the preview. Hover the selected area with mouse "
+#| "cursor and click on the green + icon to select the area. Selected areas "
+#| "are indicated by a red border. Now select the next parts of the image in "
+#| "the same way."
 msgid ""
 "Scan a preview and then use the left mouse button to select the first part "
 "of the image in the preview. Hover the selected area with mouse cursor and "
-"click on the green + icon to select the area. Selected areas are indicated "
-"by a red border. Now select the next parts of the image in the same way."
+"click on the **Green Plus** button to select the area. Selected areas are "
+"indicated by a red border. Now select the next parts of the image in the "
+"same way."
 msgstr ""
 "Виконайте сканування зображення попереднього перегляду, а потім натисніть "
 "ліву кнопку миші і виберіть першу частину зображення на полі для "
 "попереднього перегляду. Наведіть вказівник миші на позначену ділянку і "
-"натисніть зелену піктограму +, щоб вибрати ділянку. Вибрані ділянки буде "
+"натисніть **зелену піктограму +**, щоб вибрати ділянку. Вибрані ділянки буде "
 "позначено червоним кольором. Повторіть процедуру для всіх інших частин "
 "зображення, які слід сканувати."
 
-#: ../../import_tools/scanner_import.rst:68
+#: ../../import_tools/scanner_import.rst:84
+#| msgid ""
+#| "To remove a single selection hover the area with the mouse cursor and "
+#| "click on the red - icon. With Clear Selections from the context menu "
+#| "launched with the right mouse button all selections in a preview can be "
+#| "removed."
 msgid ""
 "To remove a single selection hover the area with the mouse cursor and click "
-"on the red - icon. With Clear Selections from the context menu launched with "
-"the right mouse button all selections in a preview can be removed."
+"on the **Red Minus** button. With **Clear Selections** from the context menu "
+"launched with the right mouse button all selections in a preview can be "
+"removed."
 msgstr ""
 "Щоб вилучити якусь з ділянок, наведіть вказівник миші на цю ділянку і "
-"натисніть червону піктограму з зображенням «-». За допомогою пункту «Зняти "
-"позначки вибору» контекстного меню, яке можна викликати клацанням правою "
+"натисніть **червону піктограму з зображенням «-»**. За допомогою пункту"
+" **Зняти позначки вибору** контекстного меню, яке можна викликати клацанням"
+" правою "
 "кнопкою миші, ви можете скасувати вибір всіх ділянок для сканування."
 
-#: ../../import_tools/scanner_import.rst:70
+#: ../../import_tools/scanner_import.rst:86
 msgid ""
 "If you placed two separate images or photos on you scanner and started a "
 "preview the tool automatically preselect the different areas."
@@ -224,7 +267,7 @@ msgstr ""
 "виконаєте сканування для попереднього перегляду, засіб обробки спробує "
 "автоматично визначити ділянки для сканування."
 
-#: ../../import_tools/scanner_import.rst:72
+#: ../../import_tools/scanner_import.rst:88
 msgid ""
 "If you are satisfied with your choice starting the final batch scan of all "
 "selections. The selected parts of the image are scanned and saved separately "
@@ -233,3 +276,18 @@ msgstr ""
 "Після завершення вибору ділянок сканування ви можете розпочати пакетне "
 "сканування всіх вибраних ділянок. Вибрані частини зображення буде скановано "
 "і збережено у окремих файлах."
+
+#~ msgid ""
+#~ "It can save images in all main image containers, as for example the "
+#~ "following formats:"
+#~ msgstr ""
+#~ "Засіб здатен зберігати зображення у всіх основних форматах, зокрема таких:"
+
+#~ msgid "png (8 and 16 bits per color)."
+#~ msgstr "png (8 та 16 бітів на колір)."
+
+#~ msgid "jpeg, jpg, jpeg 2000."
+#~ msgstr "jpeg, jpg, jpeg 2000."
+
+#~ msgid "tiff."
+#~ msgstr "tiff."
