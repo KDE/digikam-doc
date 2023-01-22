@@ -37,7 +37,7 @@ File Renaming
 
 This view allows to customize the file renamings rules. On the **Queues** view, the **Orignal** and the **Target** file names will give you a feedback about the file renaming.
 
-The renaming settings is exactly the same than **Advanced Rename** tool avaialble from **Main Window**. See :ref:`this section <renaming_photograph>` from the manual for details.
+The renaming settings is exactly the same than **Advanced Rename** tool available from **Main Window**. See :ref:`this section <renaming_photograph>` from the manual for details.
 
 .. figure:: images/bqm_queue_settings_rename.webp
     :alt:
@@ -50,13 +50,13 @@ Behavior
 
 This view allows to customize important rules while the queue is processed.
 
-The **RAW Files Loading** setting configure how the RAW files will be processed: Using the **RAW Decoding** settings to process standard demosaicing (see below), or tho use the **Embeded Preview**. This last one is very fast compared to RAW decoded.
+The **RAW Files Loading** setting configure how the RAW files will be processed: using the **RAW Decoding** settings to process standard demosaicing (see below), or tho use the **Embeded Preview**. This last one is very fast compared to RAW decoded.
 
 The **Target File Exists** setting allow to customize the behavior when target file exists. You can **Store as a Different file Name**, **Overwrite Automatically** the file, or **Skip Automatically** to don't touch the target file. In all cases, Batch Queue Manager will not ask you about this behavior while running.
 
 The **Save Image as a Newly Created Branch** setting will use **Image Versionning** to name target files. It's the same behavior when you export file from **Image Editor** when Versionning feature is enabled.
 
-The **work on all Processor Cores** setting will use more than one core to process items in parallel from the same queue.
+The **Work on all Processor Cores** setting will use more than one core to process items in parallel from the same queue.
 
 .. figure:: images/bqm_queue_settings_behavior.webp
     :alt:
@@ -67,6 +67,10 @@ The **work on all Processor Cores** setting will use more than one core to proce
 RAW Decoding
 ------------
 
+This view allow to customize the RAW Import settings for the Batch Queue Manager. Typically these settings are used when a RAW files is present in a Queue. To process the file and operate filters, the RAW data needs to be decoded to be loaded in memory in a RGB color space. This setting is only used if **Behavior/RAW Files Loading** is set to **RAW Decoding**.
+
+All the details of these settings is decribed in the **RAW Import** section from :ref:`the Image Editor configuration <setup_rawdefault>`.
+
 .. figure:: images/bqm_queue_settings_raw.webp
     :alt:
     :align: center
@@ -75,6 +79,10 @@ RAW Decoding
 
 Saving Images
 -------------
+
+This view allow to customize the settings used while image need to be saved in the original format. A queue can process file without to export results to another format, as loading **JPEG** files and apply **White Balance** and **Resize** tools. Without a convert tool at end of your workflow, the Batch Queue Manager will write processed images in same formats that originals and use these settings as well.
+
+All the details of these settings is decribed in **Save Images** section from :ref:`the Image Editor configuration <saveimage_settings>`. 
 
 .. figure:: images/bqm_queue_settings_save.webp
     :alt:
