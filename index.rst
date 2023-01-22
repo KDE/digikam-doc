@@ -234,6 +234,10 @@ Batch Queue Manager
 
     .. container:: tile no-descr
 
+        :ref:`bqm_workflow`
+
+    .. container:: tile no-descr
+
         :ref:`raw_converter`
 
     .. container:: tile no-descr
