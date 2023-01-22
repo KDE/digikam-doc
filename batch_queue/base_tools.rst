@@ -134,21 +134,21 @@ Convert Tools
 
 These tools allow to save images to new file formats. These are mostly placed at end of your list of **Assigned Tools** from your **Workflow**.
 
-    - :ref:`Convert to TIFF** <image_formats>`
+    - :ref:`Convert to TIFF <image_formats>`
 
-    - :ref:`Convert to PGF** <image_formats>`
+    - :ref:`Convert to PGF <image_formats>`
 
-    - :ref:`Convert to HEIF** <image_formats>`
+    - :ref:`Convert to HEIF <image_formats>`
 
-    - :ref:`Convert to AVIF** <image_formats>`
+    - :ref:`Convert to AVIF <image_formats>`
 
-    - :ref:`Convert to PNG** <image_formats>`
+    - :ref:`Convert to PNG <image_formats>`
 
-    - :ref:`Convert to JPEG** <image_formats>`
+    - :ref:`Convert to JPEG <image_formats>`
 
-    - :ref:`Convert to JPEG 2000** <image_formats>`
+    - :ref:`Convert to JPEG 2000 <image_formats>`
 
-    - :ref:`Convert to WEBP** <image_formats>`
+    - :ref:`Convert to WEBP <image_formats>`
 
     - :ref:`Convert RAW to DNG <dng_converter>` (this specific tool must be placed on to top of your list of **Assigned Tools** from your **Workflow**).
 
