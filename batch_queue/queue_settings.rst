@@ -15,12 +15,48 @@ Queue Settings
 
 .. contents::
 
-Overview
---------
+Target Album
+------------
 
 .. figure:: images/bqm_queue_settings_target.webp
     :alt:
     :align: center
 
-    The Batch Queue Manager Queue Settings View to Customize Target Place to Store Processed Items
+    The Batch Queue Manager Queue Settings View to Customize Target Album to Store Processed Items
+
+File Renaming
+-------------
+
+.. figure:: images/bqm_queue_settings_rename.webp
+    :alt:
+    :align: center
+
+    The Batch Queue Manager Queue Settings View to Customize the File Rename Rules
+
+Behavior
+--------
+
+.. figure:: images/bqm_queue_settings_behavior.webp
+    :alt:
+    :align: center
+
+    The Batch Queue Manager Queue Settings View to Customize the Behavior
+
+RAW Decoding
+--------
+
+.. figure:: images/bqm_queue_settings_raw.webp
+    :alt:
+    :align: center
+
+    The Batch Queue Manager Queue Settings View to Customize the RAW Decoding
+
+Saving Images
+-------------
+
+.. figure:: images/bqm_queue_settings_save.webp
+    :alt:
+    :align: center
+
+    The Batch Queue Manager Queue Settings View to Customize the File Saving
 
