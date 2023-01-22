@@ -1,0 +1,258 @@
+# Spanish translations for docs_digikam_org_batch_queue___custom_script.po package.
+# Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+#
+# Automatically generated, 2023.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: docs_digikam_org_batch_queue___custom_script\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-21 00:51+0000\n"
+"PO-Revision-Date: 2023-01-21 04:56+0100\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 22.12.1\n"
+
+#: ../../batch_queue/custom_script.rst:1
+msgid "digiKam Custom Script from Batch Queue Manager"
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, batch, custom, script"
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:14
+msgid "Custom Script"
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:16
+msgid "Contents"
+msgstr "Contenido"
+
+#: ../../batch_queue/custom_script.rst:19
+msgid "Overview"
+msgstr "Resumen"
+
+#: ../../batch_queue/custom_script.rst:21
+msgid ""
+"The batch Queue Manager allows to customize a **Workflow** with a specific "
+"plugin dedicated to run a script an process your images with an external "
+"tool as `ImageMagick <https://imagemagick.org/>`_ for example."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:23
+msgid ""
+"The Tool is named **Custom Script**, available in **Base Tools** list, and "
+"**Custom Tools** category. The goal is pass to a script source code written "
+"by the user in the plugin, a series of environment variables to handle in "
+"the code and to re-route for a custom usage with delegate command line "
+"programs installed on your computer."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:29
+msgid "The Batch Queue Manager Including a Custom Script in a Workflow"
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:31
+msgid "The tool provides these options:"
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:33
+msgid ""
+"**Output Image Type**: this value allows to setup the expected type of image "
+"format to use at the output of your script. The default is **Same as "
+"input**, but you can set **JPEG**, **PNG**, or **TIFF**. Take a care that "
+"JPEG is a lossy compression format, only support 8-bit color depth, and does "
+"not supports transparency."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:35
+msgid ""
+"**Shell Script**: this text edit field allow to enter the source code of "
+"your shell script. Under **Linux** and **macOS**, `Bash script <https://en."
+"wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported. Under **Windows** "
+"`Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:37
+msgid ""
+"The keywords that you can use in your script code are listed below. The tool "
+"will replace all occurrences of keywords in script at run time before shell "
+"execution. Take a care that keywords are case sensitive."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:39
+msgid ""
+"**$INPUT** for workflow input filename (with special characters escaped)."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:41
+msgid ""
+"**$OUTPUT** for workflow output filename (with special characters escaped)."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:43
+msgid ""
+"The environment variables that you can use in your script code are listed "
+"below:"
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:45
+msgid "**TITLE**: to handle digiKam **Title** item properties from database."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:47
+msgid ""
+"**COMMENTS**: to handle digiKam **Caption** item properties from database."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:49
+msgid ""
+"**COLORLABEL**: to handle digiKam **Color Label** item properties from "
+"database."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:51
+msgid ""
+"**PICKLABEL**: to handle digiKam **Pick Label** item properties from "
+"database."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:53
+msgid "**RATING**: to handle digiKam **Rating** item properties from database."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:55
+msgid "**TAGSPATH**: to handle digiKam **Tags** item properties from database."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:59
+msgid ""
+"Under Linux and macOS, environment variables can be accessed in script with "
+"**$** as prefix of variable names (for example **$INPUT**). The interpreter "
+"used to run the script is **/bin/bash**"
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:61
+msgid ""
+"Under Windows, environment variables can be accessed in script with **%** as "
+"prefix and suffix of variable names (for example **%INPUT%**). The "
+"interpreter used to run the script is **cmd.exe**"
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:64
+msgid "Return Value"
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:66
+msgid ""
+"By convention, a **Bash script** under Linux and macOS, 0 is returned on "
+"success or an integer in the range 1-255 for something else. Use **exit < "
+"error_code >** to pass the return value on the workflow."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:68
+msgid ""
+"Under Windows, a **Batch script** return 0 on success and another value for "
+"something else, but the value is a signed integer, so a negative value is "
+"possible. Use **EXIT /B < error_code >** to pass the return value on the "
+"workflow."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:70
+msgid ""
+"The Batch Queue Manager handle the value returned by your script. If zero is "
+"returned, the workflow continue as expected, else the workflow is broken and "
+"Batch Queue Manager stop the process."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:73
+msgid "Examples"
+msgstr "Ejemplos"
+
+#: ../../batch_queue/custom_script.rst:75
+msgid ""
+"The **First example** that you can see below, ...do nothing special. It will "
+"print on the console the input/output file names and item properties passed "
+"from batch queue manager to the script and copy input file to ouput file "
+"(this stage is required else Batch Queue Manager return an error as the "
+"target file do not exists). The script return the value from the file copy "
+"command, this one is parsed by the Batch Queue Manager to check the workflow "
+"stream."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:92
+msgid ""
+"If you have started digiKam from a terminal and enabled the debug traces on :"
+"ref:`Setup/Miscs/System dialog page <system_settings>`, you will see "
+"something like this:"
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:106
+msgid "The digiKam information taken from the database are:"
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:108
+msgid "Item processed is **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:109
+msgid ""
+"Target filename is **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a12."
+"digikamtempfile.JPG** (a temporary file generated by Batch Queue Manager)."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:110
+msgid "Item Title is **Salagou Trip**."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:111
+msgid "Item Comment is null."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:112
+msgid "Item Color Label is **5** (Green)."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:113
+msgid "Item Pick Label is **3** (Accepted)."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:114
+msgid "Item Rating is **3 stars**."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:115
+msgid ""
+"Item Tags are **Places**, **Places/France**, **Places/France/Salagou Lake**."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:117
+msgid ""
+"A **Second example** below is more complex and use **ImageMagick** command "
+"like tool to add a multiline text superimposed over pictures to create a "
+"visible watermark on the center of images."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:135
+msgid ""
+"In this example, there is no explicit **exit** call to return a value to the "
+"Workflow. Bash use the last called method as the returned value from the "
+"script, here the ImageMagick command line tool **convert**."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:137
+msgid "This give a result like below."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:143
+msgid "The result of the Script Using ImageMagick to Apply a Watermark"
+msgstr ""
