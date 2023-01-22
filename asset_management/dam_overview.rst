@@ -38,8 +38,8 @@ digiKam with its libraries and tools is a unique and comprehensive tool to cover
     :alt:
     :align: center
 
-    digiKam Advanced Search Tool Locating Several Items in Database by Photograph Properties
+    digiKam :ref:`Advanced Search Tool <advanced_search>` Locating Several Items in Database by Photograph Properties
 
-The one thing that differentiates the archiving capabilities of film versus digital is that with digital you can make as many new originals as you want. With film you only have one original. All copies will have a slightly lower quality, and both originals and copies are more or less slowly aging and disappearing. The only way to keep it "forever fresh" is to make a digital copy of it. And that is also the only way to protect it from all hazards.
+The one thing that differentiates the archiving capabilities of film versus digital is that with digital you can make as many new originals as you want. With film you only have one original. All copies will have a slightly lower quality, and both originals and copies are more or less slowly aging and disappearing. The only way to keep it *forever fresh* is to make a digital copy of it. And that is also the only way to protect it from all hazards.
 
 Even if digital media today may last shorter than film it is just up to you to make new copies every year, 5, 10 years or whenever necessary, and to always keep at least 2-3 copies of the files, preferably in different physical locations. You never had that opportunity with film. It could always be damaged in a fire, floods or similar - or even be stolen. The good and bad news then is this: if you lose digital images/data it is only your own laxity. 
