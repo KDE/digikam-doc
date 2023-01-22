@@ -230,11 +230,11 @@ Batch Queue Manager
 
     .. container:: tile no-descr
 
-        :ref:`base_tools`
+        :ref:`bqm_workflow`
 
     .. container:: tile no-descr
 
-        :ref:`bqm_workflow`
+        :ref:`base_tools`
 
     .. container:: tile no-descr
 
