@@ -15,7 +15,7 @@ Workflow
 
 .. contents::
 
-On the bottom right, The Batch Queue Manager has a tab named **Worflow** empty by default. This view is a list of containers wher user can store the prefered list of tools to assign to queues. This list is saved and restored between sessions and can be re-used as well.
+On the bottom right, the Batch Queue Manager has a tab named **Worflow** which is empty by default. This view is a list where user can store the prefered set of tools to assign to queues. This list is saved and restored between sessions and can be re-used as well.
 
 A workflow store the order of tools to run over a queue, including all tools settings. This allows to reproduce easily a batch processing depending of use cases. A workflow has tree properties to be identified: a **Title** as text, a **Description** as text, and the amount of tools registered. All these information are stored in an XML file from your home directory.
 
