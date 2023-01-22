@@ -28,7 +28,7 @@ digiKam provides a number of methods to classify photographs: filenames, albums,
     :alt:
     :align: center
 
-    A Geolocation Search Results in France Filtered by a String and Rating
+    A :ref:`Geolocation Search <mapsearch_view>` Results in France :ref:`Filtered <filters_view>` by a String and Rating Value
 
 The key thing to remember is that you don't know how you or somebody else will try to find an image 2 years ahead of our time. You will remember past events in a different context, it's a fact of life. So if you can narrow down your search by remembering place or time or camera or theme or rating or owner you stand an infinitely better chance to find it quickly than by just one of those criteria or none. At the beginning, at the time of taking a photograph, all metadata is in your head (except for the Exif data). If you do not transcribe some of it into your DAM system, it will be lost eventually as much as every event fades into oblivion over time.
 
@@ -41,17 +41,17 @@ The first thing to do and to know before you put anything onto your system is to
 
 The organization should be simple, unified and scalable, and it should be independent of the storage medium on which you host them. In others words, the folders organization must be the physical information layout. Do not make the folders too small, several thousand images in one folder is not too much to ask for, but keep them small enough so that they can fit into a backup medium like a DVD or a Blue Ray. Remember that the archive will grow all the time! The concrete type of structure depends on your use case of course: Lets take a simple yet frequent example: you are a casual photographer taking pictures of your private life, your family, holidays and so on. It could be efficient to create a structure based on years plus some holiday and export containers. It could look like this:
 
-            2006
-            2007
-            2008
-            Holidays
-            - A
-            - B
-            - C
-            Export
-            Fun stuff
+    2006
+    2007
+    2008
+    Holidays
+    - A
+    - B
+    - C
+    Export
+    Fun stuff
 
-Maybe you'll be happy with this structure. Holiday pictures can be quickly found by its location (unless you go to the same place every year), the rest will be organized by date. If you shoot enough pictures you want to create sub folders below the years as months e.g. 2008-01, 2008-02 etc. 'Export' would be a container for images to print or to put onto a website.
+Maybe you'll be happy with this structure. Holiday pictures can be quickly found by its location (unless you go to the same place every year), the rest will be organized by date. If you shoot enough pictures you want to create sub folders below the years as months e.g. 2008-01, 2008-02 etc. *Export* would be a container for images to print or to put onto a website.
 
 The more professional photographer will have very different needs as there will be versions of photographs, archives, workflows, a constant influx of images of diverging themes, and a large quantity of everything. Within 10 year you'll have 95% archives and 5% work space files and you don't want to organize your structure around content.
 
@@ -67,7 +67,7 @@ The consideration are these:
     :alt:
     :align: center
 
-    The digiKam Import Tool Allows to Create Albums and Rename Files Based on Items Properties
+    The digiKam :ref:`Import Tool <advanced_import>` Allows to Create Albums and Rename Files Based on Items Properties
 
 Automatic Metadata Generation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -78,7 +78,7 @@ How to go about all this metadata business? Firstly, there are already a lot of 
     :alt:
     :align: center
 
-    digiKam Propose a Hierarchical View of Shooting Dates Which can be Exported to a Remote Web Service Easily
+    digiKam Propose a Hierarchical View of :ref:`Shooting Dates <dates_view>` Which can be Exported Easily to a Remote Web Service
 
 We actually recommend to auto-rename to match an event, a place or a theme. digiKam provides all date/calendar related grouping so that there's hardly a need for coding the date into the file name. Unless you'd like to do just that to browse your albums with another application that is not calendar savvy. You will buy a new camera one day or you have a second one already, sooner than you believe. The numbering scheme of that new camera will start over at typically IMG_0001.JPG again, creating identical file names to the ones you have already if you do not rename them. By renaming you lessen the chance of inadvertently overwriting them at a later date. Keep the new names clean, use alphanumerics, dashes, underscores and a single period prior to the file extension.
 
