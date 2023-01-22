@@ -22,6 +22,7 @@ This section explain how to use the digiKam batch queue manager.
    :glob:
 
    batch_queue/batchqueue_overview.rst
+   batch_queue/queue_settings.rst
    batch_queue/bqm_workflow.rst
    batch_queue/base_tools.rst
    batch_queue/raw_converter.rst

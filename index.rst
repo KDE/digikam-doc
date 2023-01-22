@@ -230,6 +230,10 @@ Batch Queue Manager
 
     .. container:: tile no-descr
 
+        :ref:`queue_settings`
+
+    .. container:: tile no-descr
+
         :ref:`bqm_workflow`
 
     .. container:: tile no-descr
