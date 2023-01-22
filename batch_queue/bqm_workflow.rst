@@ -15,7 +15,7 @@ Workflow
 
 .. contents::
 
-On the bottom right, the Batch Queue Manager has a tab named **Workflow** which is empty by default. This view is a list where user can store the prefered set of tools to assign to queues. This list is saved and restored between sessions and can be re-used as well.
+On the bottom right, the Batch Queue Manager has a tab named **Workflow** which is empty by default. This view is a list where user can store the preferred set of tools to assign to queues. This list is saved and restored between sessions and can be re-used as well.
 
 A workflow store:
 
@@ -35,7 +35,7 @@ A workflow store:
     :alt:
     :align: center
 
-    The Batch Queue Manager Worflow Store all Settings to Apply on a Queue
+    The Batch Queue Manager Workflow Store all Settings to Apply on a Queue
 
 To create a new Workflow, select your tools from **Base Tools** tab and drag and drop items to **Assigned Tools** list to create your sequence. When all is done, right click with mouse over the list to show the pop-up menu and select the **Create Workflow** option. A dialog will appears to fill the workflow **Title** and **Description** properties. Press **OK** to append the new item on the **Workflow** tab.
 
@@ -43,7 +43,7 @@ To create a new Workflow, select your tools from **Base Tools** tab and drag and
     :alt:
     :align: center
 
-    The Batch Queue Manager Worflow Create Dialog
+    The Batch Queue Manager Workflow Create Dialog
 
 Later, with a new Queue, if you want to apply a workflow with your precious tools/settings, just double over an item from **Workflow** tab, or drag and drop the item from **Workflow** tab to **Assigned Tools**. The queue is ready to run.
 
