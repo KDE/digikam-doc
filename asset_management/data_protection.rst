@@ -355,7 +355,7 @@ Open Source standards have the huge advantage of having an open specification. E
 
 We recommend clearly to **abstain from archiving in RAW format** (as opposed to shooting in RAW format, which we recommend). It has all bad ingredients: many varieties and proprietary nature. It is clear that in a few years time you cannot use your old RAW files anymore. We have already seen people changing camera, losing their color profiles and having great difficulty to treat their old RAW files correctly. Better change to DNG format.
 
-**DNG** or Digital Negative file format is a royalty free and open RAW image format designed by Adobe Systems. DNG was a response to demand for a unifying camera raw file format. It is based on the TIFF/EP format, and mandates use of metadata. A handful of camera manufacturers have adopted DNG already, let's hope that the main contenders Canon and Nikon will use it one day.
+**DNG** or Digital Negative file format is a royalty free and open RAW image format designed by Adobe Systems. DNG was a response to demand for a unifying camera raw file format. It is based on the TIFF/EP format, and mandates use of metadata. A handful of camera manufacturers have adopted DNG already, let's hope that the main contenders Canon and Nikon will use it one day. `Apple ProRAW <https://support.apple.com/en-us/HT211965>`_ format available since the iphone 12 Pro Max is based on DNG.
 
 .. figure:: images/dam_dng_converter_bqm.webp
     :alt:

@@ -133,7 +133,7 @@ X3F                     Sigma digital camera RAW file format
 DCR, KDC, DC2, K25      Kodak digital camera RAW file format
 SRF, SR2, ARW, MRW, MDC Sony/Minolta digital camera RAW file format
 RAW                     Panasonic, Casio, Leica digital camera RAW file format
-DNG (CS1, HDR)          Adobe RAW file format (Digital Negative)
+DNG (CS1, HDR)          Adobe RAW file format (Digital Negative), Apple ProRAW
 BAY                     Casio RAW (Bayer)
 ERF                     Epson digital camera RAW file format
 FFF, 3FR                Imacon/Hasselblad RAW format
