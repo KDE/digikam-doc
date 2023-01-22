@@ -29,13 +29,13 @@ A workflow store:
     - A **Description** as text to give details about a workflow.
     - The amount of tools registered.
 
- All these information are stored in an XML file hosted in your home directory.
+ All this information is stored in an XML file hosted in your home directory.
 
 .. figure:: images/bqm_workflow_view.webp
     :alt:
     :align: center
 
-    The Batch Queue Manager Workflow Store all Settings to Apply on a Queue
+    The Batch Queue Manager Workflow Stores all Settings to Apply on a Queue
 
 To create a new Workflow, select your tools from **Base Tools** tab and drag and drop items to **Assigned Tools** list to create your sequence. When all is done, right click with mouse over the list to show the pop-up menu and select the **Create Workflow** option. A dialog will appears to fill the workflow **Title** and **Description** properties. Press **OK** to append the new item on the **Workflow** tab.
 
