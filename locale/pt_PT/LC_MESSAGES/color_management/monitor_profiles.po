@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 00:50+0000\n"
+"POT-Creation-Date: 2023-01-21 00:51+0000\n"
 "PO-Revision-Date: 2023-01-18 12:57+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -291,10 +291,10 @@ msgid ""
 "in a file that contains a precise mathematical description of the device's "
 "color and tonality characteristics. This file is an **ICC profile**. These "
 "characteristics include the transfer function from the device's color space "
-"to a standardized absolute color space (this is called a Profile Color "
-"Space, PCS, in an ICC profile), the device's **white point**, **black "
-"point**, **primaries** and other information. Displays are normally "
-"characterized (profiled) in their calibrated state."
+"to a standardized absolute color space (this is called a Profile Color Space "
+"in an ICC profile), the device's **white point**, **black point**, "
+"**primaries** and other information. Displays are normally characterized "
+"(profiled) in their calibrated state."
 msgstr ""
 
 #: ../../color_management/monitor_profiles.rst:73
@@ -382,26 +382,91 @@ msgid "Monitor profiles Storage"
 msgstr ""
 
 #: ../../color_management/monitor_profiles.rst:97
-msgid ""
-"Under Linux, icc profiles are generally located in the :file:`/usr/share/"
-"color/icc` folder, which is the closest there is at this moment to a "
-"standard Linux location for icc profiles. If you use this folder for your "
-"icc profiles, likely you will need to change permissions on the folder to "
-"allow your user read/write access. Then you just tell digiKam where your "
-"profiles are located."
+msgid "On **Windows**, the default search paths include:"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:99
+msgid ":file:`C:\\\\Windows\\\\System32\\\\spool\\\\drivers\\\\color\\\\`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:100
+msgid ":file:`C:\\\\Windows\\\\Spool\\\\Drivers\\\\Color\\\\`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:101
+msgid ":file:`C:\\\\Windows\\\\Color\\\\`"
 msgstr ""
 
 #: ../../color_management/monitor_profiles.rst:103
+msgid "On **macOS**, the default search paths include:"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:105
+msgid ":file:`/System/Library/ColorSync/Profiles/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:106
+msgid ":file:`/Library/ColorSync/Profiles/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:107
+msgid ":file:`~/Library/ColorSync/Profiles/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:108
+msgid ":file:`/opt/local/share/color/icc/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:109
+msgid ""
+":file:`/Applications/digiKam.org/digikam.app/Contents/Resources/digikam/"
+"profiles/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:110
+#: ../../color_management/monitor_profiles.rst:118
+msgid ":file:`~/.local/share/color/icc/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:111
+#: ../../color_management/monitor_profiles.rst:119
+msgid ":file:`~/.local/share/icc/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:112
+#: ../../color_management/monitor_profiles.rst:120
+msgid ":file:`~/.color/icc/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:114
+msgid "On **Linux**, the default search paths include:"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:116
+msgid ":file:`/usr/share/color/icc/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:117
+msgid ":file:`/usr/local/share/color/icc/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:122
+msgid ""
+"Under Linux and macOS, your personal ICC profiles are generally located in "
+"the :file:`~/local/share/color/icc` folder from your home directory."
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:128
 msgid ""
 "digiKam Allows to Setup Customized Places Where you can Store your Personal "
 "Color Profile"
 msgstr ""
 
-#: ../../color_management/monitor_profiles.rst:106
+#: ../../color_management/monitor_profiles.rst:131
 msgid "Ambient Light and Monitor"
 msgstr ""
 
-#: ../../color_management/monitor_profiles.rst:108
+#: ../../color_management/monitor_profiles.rst:133
 msgid ""
 "Does the lighting and wall/ceiling/drape/furniture colors near my monitor "
 "matter? Good lighting is a prerequisite for proper image editing and for "
@@ -416,7 +481,7 @@ msgid ""
 "really exist."
 msgstr ""
 
-#: ../../color_management/monitor_profiles.rst:110
+#: ../../color_management/monitor_profiles.rst:135
 msgid ""
 "Best advice, as far as is consistent with maintaining harmony in the family: "
 "neutral grey walls and ceiling, cover the windows, wear neutral clothing, "

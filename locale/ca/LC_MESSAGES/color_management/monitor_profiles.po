@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-17 00:50+0000\n"
-"PO-Revision-Date: 2023-01-18 17:15+0100\n"
+"POT-Creation-Date: 2023-01-21 00:51+0000\n"
+"PO-Revision-Date: 2023-01-21 16:33+0100\n"
 "Last-Translator: Antoni Bella <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -436,10 +436,10 @@ msgid ""
 "in a file that contains a precise mathematical description of the device's "
 "color and tonality characteristics. This file is an **ICC profile**. These "
 "characteristics include the transfer function from the device's color space "
-"to a standardized absolute color space (this is called a Profile Color "
-"Space, PCS, in an ICC profile), the device's **white point**, **black "
-"point**, **primaries** and other information. Displays are normally "
-"characterized (profiled) in their calibrated state."
+"to a standardized absolute color space (this is called a Profile Color Space "
+"in an ICC profile), the device's **white point**, **black point**, "
+"**primaries** and other information. Displays are normally characterized "
+"(profiled) in their calibrated state."
 msgstr ""
 "A diferència del calibratge, el procés de creació d'un perfil és una "
 "caracterització del dispositiu que no implica fer cap canvi o ajust al "
@@ -448,7 +448,7 @@ msgstr ""
 "de color i tonalitat del dispositiu. Aquest fitxer és un **perfil ICC**. "
 "Aquestes característiques inclouen la funció de transferència des de l'espai "
 "de color del dispositiu fins a un espai de color absolut estandarditzat "
-"(això s'anomena Perfil de l'espai de color, PCS, en un perfil ICC), el "
+"(això s'anomena Perfil de l'espai de color, en un perfil ICC), el "
 "**punt blanc**, el **punt negre**, les **primàries** i alguna altra "
 "informació del dispositiu. Les pantalles normalment es caracteritzen (amb un "
 "perfil creat) en el seu estat calibrat."
@@ -599,23 +599,81 @@ msgid "Monitor profiles Storage"
 msgstr "Emmagatzemar els perfils del monitor"
 
 #: ../../color_management/monitor_profiles.rst:97
-msgid ""
-"Under Linux, icc profiles are generally located in the :file:`/usr/share/"
-"color/icc` folder, which is the closest there is at this moment to a "
-"standard Linux location for icc profiles. If you use this folder for your "
-"icc profiles, likely you will need to change permissions on the folder to "
-"allow your user read/write access. Then you just tell digiKam where your "
-"profiles are located."
+msgid "On **Windows**, the default search paths include:"
 msgstr ""
-"A Linux, els perfils ICC generalment es troben a la carpeta :file:`/usr/"
-"share/color/icc`, la qual és la més propera que hi ha en aquest moment a una "
-"ubicació estàndard de Linux per als perfils ICC. Si utilitzeu aquesta "
-"carpeta per als vostres perfils ICC, probablement haureu de canviar els "
-"permisos a la carpeta per a permetre que el vostre usuari tingui accés de "
-"lectura/escriptura. Després, senzillament digueu-li al digiKam on es troben "
-"els vostres perfils."
+
+#: ../../color_management/monitor_profiles.rst:99
+msgid ":file:`C:\\\\Windows\\\\System32\\\\spool\\\\drivers\\\\color\\\\`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:100
+msgid ":file:`C:\\\\Windows\\\\Spool\\\\Drivers\\\\Color\\\\`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:101
+msgid ":file:`C:\\\\Windows\\\\Color\\\\`"
+msgstr ""
 
 #: ../../color_management/monitor_profiles.rst:103
+msgid "On **macOS**, the default search paths include:"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:105
+msgid ":file:`/System/Library/ColorSync/Profiles/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:106
+msgid ":file:`/Library/ColorSync/Profiles/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:107
+msgid ":file:`~/Library/ColorSync/Profiles/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:108
+msgid ":file:`/opt/local/share/color/icc/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:109
+msgid ""
+":file:`/Applications/digiKam.org/digikam.app/Contents/Resources/digikam/"
+"profiles/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:110
+#: ../../color_management/monitor_profiles.rst:118
+msgid ":file:`~/.local/share/color/icc/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:111
+#: ../../color_management/monitor_profiles.rst:119
+msgid ":file:`~/.local/share/icc/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:112
+#: ../../color_management/monitor_profiles.rst:120
+msgid ":file:`~/.color/icc/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:114
+msgid "On **Linux**, the default search paths include:"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:116
+msgid ":file:`/usr/share/color/icc/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:117
+msgid ":file:`/usr/local/share/color/icc/`"
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:122
+msgid ""
+"Under Linux and macOS, your personal ICC profiles are generally located in "
+"the :file:`~/local/share/color/icc` folder from your home directory."
+msgstr ""
+
+#: ../../color_management/monitor_profiles.rst:128
 msgid ""
 "digiKam Allows to Setup Customized Places Where you can Store your Personal "
 "Color Profile"
@@ -623,12 +681,12 @@ msgstr ""
 "El digiKam permet configurar llocs personalitzats on podreu emmagatzemar el "
 "vostre perfil de color personal"
 
-#: ../../color_management/monitor_profiles.rst:106
+#: ../../color_management/monitor_profiles.rst:131
 msgid "Ambient Light and Monitor"
 msgstr "La llum ambiental i el monitor"
 
 # skip-rule: barb-uns
-#: ../../color_management/monitor_profiles.rst:108
+#: ../../color_management/monitor_profiles.rst:133
 msgid ""
 "Does the lighting and wall/ceiling/drape/furniture colors near my monitor "
 "matter? Good lighting is a prerequisite for proper image editing and for "
@@ -656,7 +714,7 @@ msgstr ""
 "procés d'edició corregirà aquests colors indesitjats que en realitat no "
 "existeixen."
 
-#: ../../color_management/monitor_profiles.rst:110
+#: ../../color_management/monitor_profiles.rst:135
 msgid ""
 "Best advice, as far as is consistent with maintaining harmony in the family: "
 "neutral grey walls and ceiling, cover the windows, wear neutral clothing, "
@@ -666,3 +724,19 @@ msgstr ""
 "l'harmonia a la família: parets i sostres amb un color gris neutre, cobriu "
 "les finestres, porteu una roba neutra, establiu nivells de llum apropiats "
 "utilitzant bombetes i accessoris adequats."
+
+#~ msgid ""
+#~ "Under Linux, icc profiles are generally located in the :file:`/usr/share/"
+#~ "color/icc` folder, which is the closest there is at this moment to a "
+#~ "standard Linux location for icc profiles. If you use this folder for your "
+#~ "icc profiles, likely you will need to change permissions on the folder to "
+#~ "allow your user read/write access. Then you just tell digiKam where your "
+#~ "profiles are located."
+#~ msgstr ""
+#~ "A Linux, els perfils ICC generalment es troben a la carpeta :file:`/usr/"
+#~ "share/color/icc`, la qual és la més propera que hi ha en aquest moment a "
+#~ "una ubicació estàndard de Linux per als perfils ICC. Si utilitzeu aquesta "
+#~ "carpeta per als vostres perfils ICC, probablement haureu de canviar els "
+#~ "permisos a la carpeta per a permetre que el vostre usuari tingui accés de "
+#~ "lectura/escriptura. Després, senzillament digueu-li al digiKam on es "
+#~ "troben els vostres perfils."
