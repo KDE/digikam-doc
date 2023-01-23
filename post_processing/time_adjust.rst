@@ -15,7 +15,7 @@ Time Adjust
 
 .. contents::
 
-The Time Adjust tool allows to tune or set the time-stamps in file metadata. This common task is sometime mandatory when your images do not contains dates in metadata as when contents is digitized with a scanner, or when a camera records a wrong date in you file due to a bad device settings. With this tool you can choose the right source to take the date information, the date entries to fix or append, and the calculation to operate on dates before registration.
+The Time Adjust tool allows to tune or records the timestamps in file metadata. This common task is sometime mandatory when your images do not contains dates in metadata as when contents is digitized with a scanner, or when a camera records a wrong date in you file due to a bad device settings. With this tool you can choose the right source to take the date information, the date entries to fix or append, and the calculation to operate on dates before registration.
 
 The **Timestamp Used** group allows to select the source of the date. Available choices are listed below:
 
