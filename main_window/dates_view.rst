@@ -17,7 +17,7 @@ Dates View
     :alt:
     :align: center
 
-    The digiKam Date View from Right sidebar
+    The digiKam Date View from Left sidebar
 
 The Dates View organizes your photographs based on their dates. digiKam uses either the Exif date or, if no Exif date is available, the last modification time of the file.
 

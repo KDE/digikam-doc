@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Main Window Labels View
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, labels
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, labels, rating, colors, pick
 
 .. metadata-placeholder
 
