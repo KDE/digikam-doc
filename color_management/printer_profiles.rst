@@ -41,13 +41,13 @@ The Rendering intents
 
 There are four commonly-used rendering intents:
 
-    - **Perceptual**, also called Image or **Maintain Full Gamut**. This is generally recommended for photographic images. The color gamut is expanded or compressed when moving between color spaces to maintain consistent overall appearance. Low saturation colors are changed very little. More saturated colors within the gamuts of both spaces may be altered to differentiate them from saturated colors outside the smaller gamut space. Perceptual rendering applies the same gamut compression to all images, even when the image contains no significant out-of-gamut colors.
+    - **Perceptual**, also called **Image or Maintain Full Gamut**. This is generally recommended for photographic images. The color gamut is expanded or compressed when moving between color spaces to maintain consistent overall appearance. Low saturation colors are changed very little. More saturated colors within the gamuts of both spaces may be altered to differentiate them from saturated colors outside the smaller gamut space. Perceptual rendering applies the same gamut compression to all images, even when the image contains no significant out-of-gamut colors.
 
     - **Relative Colorimetric**, also called **Proof or Preserve Identical Color and White Point**. Reproduces in-gamut colors exactly and clips out-of-gamut colors to the nearest reproducible hue.
 
     - **Absolute Colorimetric**, also called **Match or Preserve Identical Colors**. Reproduces in-gamut colors exactly and clips out-of-gamut colors to the nearest reproducible hue, sacrificing saturation and possibly lightness. On tinted papers, whites may be darkened to keep the hue identical to the original. For example, cyan may be added to the white of a cream-colored paper, effectively darkening the image. Rarely of interest to photographers.
 
-    - **Saturation**, also called **Graphic or Preserve Saturation. Maps** the saturated primary colors in the source to saturated primary colors in the destination, neglecting differences in hue, saturation, or lightness. For block graphics; rarely of interest to photographers.
+    - **Saturation**, also called **Graphic or Preserve Saturation**. Maps the saturated primary colors in the source to saturated primary colors in the destination, neglecting differences in hue, saturation, or lightness. For block graphics; rarely of interest to photographers.
 
 **Perceptual** and **Relative colorimetric** rendering are probably the most useful conversion types for digital photography. Each places a different priority on how they render colors within the gamut mismatch region. **Relative colorimetric** maintains a near exact relationship between in gamut colors, even if this clips out of gamut colors. In contrast, **Perceptual** rendering tries to also preserve some relationship between out of gamut colors, even if this results in inaccuracies for in gamut colors.
 
@@ -63,7 +63,7 @@ The usual choice to use Rendering Intent to display contents on monitor is relat
 
 .. warning::
 
-    Rendering intents are available when converting from one profile to another depends on the destination profile. Not every profile supports every rendering intent. Problems can occurs  when you select an unsupported rendering intent is that `Lcms <https://www.littlecms.com/>`_ quietly uses the profile's default rendering intent.
+    Rendering intents are available when converting from one profile to another depends on the destination profile. Not every profile supports every rendering intent. Problems can occurs when you select an unsupported rendering intent is that `Lcms <https://www.littlecms.com/>`_ quietly uses the profile's default rendering intent.
 
 .. _soft_proof:
 
