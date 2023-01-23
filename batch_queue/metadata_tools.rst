@@ -24,6 +24,8 @@ Quality Sort
 
     The Batch Queue Manager Tool to Sort Items by Image Quality
 
+.. _bqm_applytemplate:
+
 Apply Template
 --------------
 
@@ -32,6 +34,8 @@ Apply Template
     :align: center
 
     The Batch Queue Manager Tool to Apply Metadata Template
+
+.. _bqm_translatemetadata:
 
 Translate Strings
 -----------------
@@ -42,6 +46,7 @@ Translate Strings
 
     The Batch Queue Manager Tool to Translate Strings in Metadata
 
+.. _bqm_assigncaptions:
 
 Assign Captions
 ---------------
@@ -52,6 +57,8 @@ Assign Captions
 
     The Batch Queue Manager to Assign Captions to Items
 
+.. _bqm_assignlabels:
+
 Assign Labels
 -------------
 
@@ -60,6 +67,8 @@ Assign Labels
     :align: center
 
     The Batch Queue Manager to Assign Labels to Items
+
+.. _bqm_removemetadata:
 
 Remove Metadata
 ---------------
@@ -70,6 +79,8 @@ Remove Metadata
 
     The Batch Queue Manager to Remove Metadata from Items
 
+.. _bqm_timeadjust:
+
 Time Adjust
 -----------
 
@@ -78,4 +89,3 @@ Time Adjust
     :align: center
 
     The Batch Queue Manager to Adjust Items Time
-
