@@ -63,7 +63,7 @@ The usual choice to use Rendering Intent to display contents on monitor is relat
 
 .. warning::
 
-    Rendering intents are available when converting from one profile to another depends on the destination profile. Not every profile supports every rendering intent. Problems can occurs when you select an unsupported rendering intent is that `Lcms <https://www.littlecms.com/>`_ quietly uses the profile's default rendering intent.
+    Rendering intents are available when converting from one profile to another depends on the destination profile. Not every profile supports every rendering intent. Problems can occur when you select an unsupported rendering intent is that `Lcms <https://www.littlecms.com/>`_ quietly uses the profile's default rendering intent.
 
 .. _soft_proof:
 
