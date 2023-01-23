@@ -50,9 +50,9 @@ Behavior
 
 This view allows to customize important rules while the queue is processed.
 
-The **RAW Files Loading** setting configure how the RAW files will be processed: using the **RAW Decoding** settings to process standard demosaicing (see below), or tho use the **Embedded Preview**. This last one is very fast compared to RAW decoded.
+The **RAW Files Loading** setting configure how the RAW files will be processed: using the **RAW Decoding** settings to process standard demosaicing (see below), or through the use of the **Embedded Preview**. This last one is very fast compared to RAW decoded.
 
-The **Target File Exists** setting allow to customize the behavior when target file exists. You can **Store as a Different file Name**, **Overwrite Automatically** the file, or **Skip Automatically** to don't touch the target file. In all cases, Batch Queue Manager will not ask you about this behavior while running.
+The **Target File Exists** setting allows to customize the behavior when target file exists. You can **Store as a Different file Name**, **Overwrite Automatically** the file, or **Skip Automatically** to don't touch the target file. In all cases, Batch Queue Manager will not ask you about this behavior while running.
 
 The **Save Image as a Newly Created Branch** setting will use **Image Versioning** to name target files. It's the same behavior when you export file from **Image Editor** when Versioning feature is enabled.
 
@@ -67,7 +67,7 @@ The **Work on all Processor Cores** setting will use more than one core to proce
 RAW Decoding
 ------------
 
-This view allow to customize the RAW Import settings for the Batch Queue Manager. Typically these settings are used when a RAW files is present in a Queue. To process the file and operate filters, the RAW data needs to be decoded to be loaded in memory in a RGB color space. This setting is only used if **Behavior/RAW Files Loading** is set to **RAW Decoding**.
+This view allows to customize the RAW Import settings for the Batch Queue Manager. Typically these settings are used when a RAW files is present in a Queue. To process the file and operate filters, the RAW data needs to be decoded to be loaded in memory in a RGB color space. This setting is only used if **Behavior/RAW Files Loading** is set to **RAW Decoding**.
 
 All the details of these settings is described in the **RAW Import** section from :ref:`the Image Editor configuration <setup_rawdefault>`.
 
@@ -80,7 +80,7 @@ All the details of these settings is described in the **RAW Import** section fro
 Saving Images
 -------------
 
-This view allow to customize the settings used while image need to be saved in the original format. A queue can process file without to export results to another format, as loading **JPEG** files and apply **White Balance** and **Resize** tools. Without a convert tool at end of your workflow, the Batch Queue Manager will write processed images in same formats that originals and use these settings as well.
+This view allows to customize the settings used while image need to be saved in the original format. A queue can process file without to export results to another format, as loading **JPEG** files and apply **White Balance** and **Resize** tools. Without a convert tool at end of your workflow, the Batch Queue Manager will write processed images in same formats that originals and use these settings as well.
 
 All the details of these settings is described in **Save Images** section from :ref:`the Image Editor configuration <saveimage_settings>`. 
 
