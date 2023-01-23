@@ -229,6 +229,10 @@ digiKam's application-wide persistent settings are stored in the following locat
      - :file:`~/Library/Application Support/digikam/kxmlgui5/digikam/digikamui5.rc`
      - contains UI configuration, if your UI is broken, delete this file
 
+.. note::
+
+    **~** indicates the user home directory on the system.
+
 Application Updates
 -------------------
 
