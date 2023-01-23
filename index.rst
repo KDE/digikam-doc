@@ -250,6 +250,10 @@ Batch Queue Manager
 
     .. container:: tile no-descr
 
+        :ref:`metadata_tools`
+
+    .. container:: tile no-descr
+
         :ref:`custom_script`
 
 .. toctree::
