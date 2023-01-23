@@ -79,6 +79,8 @@ This tool allows to assign **Title**, **Captions**, and **Author** properties to
 Assign Labels
 -------------
 
+This tool allow to assign **Pick Label**, **Rating**, and **Color Label** to items from a Queue. In oppposite to **Quality Sort** tool which apply a Pick Label automatically, this tool just tune the Pick Label value manually. For details about these properties, take a look to the :ref:`Captions section  <captions_view>` from this manual.
+
 .. figure:: images/bqm_metadata_labels.webp
     :alt:
     :align: center
