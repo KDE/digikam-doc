@@ -46,6 +46,15 @@ This tool is dedicated to apply a metadata template to your items in order to se
 Translate Strings
 -----------------
 
+This tool allow to translate automatically some alternative language string from metadata using an online translator service. Translatable entries are:
+
+    - :ref:`Title <captions_comments>`.
+    - :ref:`Captions <captions_comments>`.
+    - :ref:`Copyrights <authorship_copyright>`.
+    - :ref:`Usage Terms <authorship_copyright>`.
+
+The translations settings can be tuned with the dedicated :ref:`Localize Setup Panel <localize_settings>`. A list of languages to append or fix in selected alternative language strings. To manage contents of this list, use the drop-down button on the left of **Translate to** option.
+
 .. figure:: images/bqm_metadata_translate.webp
     :alt:
     :align: center

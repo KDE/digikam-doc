@@ -189,6 +189,8 @@ The graphics here shows how different digiKam item properties overlap. This is a
 
 Enough of **Tags**. Lets move on to **Captions** or **Comments**, the third major tool for metadata cataloging.
 
+.. _captions_comments:
+
 Captions and Comments
 ~~~~~~~~~~~~~~~~~~~~~
 
