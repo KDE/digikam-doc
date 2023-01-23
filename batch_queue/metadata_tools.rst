@@ -79,7 +79,7 @@ This tool allows to assign **Title**, **Captions**, and **Author** properties to
 Assign Labels
 -------------
 
-This tool allow to assign **Pick Label**, **Rating**, and **Color Label** to items from a Queue. In oppposite to **Quality Sort** tool which apply a Pick Label automatically, this tool just tune the Pick Label value manually. For details about these properties, take a look to the :ref:`Captions section  <captions_view>` from this manual.
+This tool allows to assign **Pick Label**, **Rating**, and **Color Label** to items from a Queue. In oppposite to **Quality Sort** tool which apply a Pick Label automatically, this tool just tune the Pick Label value manually. For details about these properties, take a look to the :ref:`Captions section  <captions_view>` from this manual.
 
 .. figure:: images/bqm_metadata_labels.webp
     :alt:
@@ -91,6 +91,30 @@ This tool allow to assign **Pick Label**, **Rating**, and **Color Label** to ite
 
 Remove Metadata
 ---------------
+
+This tool to drop parts of metadata from files, into the **Exif**, **IPTC**, and **XMP** chunks. More precisely you can select from the delegate drop-down menus the following sections:
+
+    - Exif:
+        - **Completely**: drop all Exif entries.
+        - **Date**: drop the time-stamp.
+        - **GPS**: drop geolocation information.
+        - **XPKeywords**: drop the Windows keywords
+        - **Comments and Descriptions**: all captions entries.
+
+    - IPTC:
+        - **Completely**: drop all IPTC entries.
+        - **Date**: drop the time-stamp.
+        - **Caption**: drop the content descriptions.
+
+    - XMP:
+        - **Completely**: drop all XMP entries.
+        - **Date**: drop the time-stamp.
+        - **DigiKam**: drop all information from application namespace.
+        - **DigiKam image history**: drop only the versionning data from the application namespace.
+        - **Dublin Core**: drop only the entries from Dublin Core namespace.
+        - **Exif**: drop only the translated Exif information stored in the dedicated namespace.
+        - **Video**: drop only the entries from the Video namespace.
+        - **Caption, comment and description**: drop all entries described the contents.
 
 .. figure:: images/bqm_metadata_remove.webp
     :alt:
