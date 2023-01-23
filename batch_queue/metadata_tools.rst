@@ -10,13 +10,17 @@
 
 .. _metadata_tools:
 
-Custom Script
-=============
+Metadata Tools
+==============
 
 .. contents::
 
+The Batch Manager metadata tools are used to apply the :ref:`Digital Asset Management <asset_management>` by managing metadata values in items hosted in a Queue, to help to classify contents in your collection or to prepare for sharing outside the box.
+
 Quality Sort
 ------------
+
+This tool parse your items to assign a **Pick Label** automatically depending of the aesthetic value of the contents. You can use the full automated solution based on depp-learning engine (recommended), or use a manual settings for each criterias. These settings are fully explained in the :ref:`Setup Quality <imgqsort_settings>` section from this manual.
 
 .. figure:: images/bqm_metadata_quality.webp
     :alt:
@@ -28,6 +32,8 @@ Quality Sort
 
 Apply Template
 --------------
+
+This tool is dedicated to apply a metadata template to your items in order to set copyright and description information about the contents. The **Template** drop-down field lets you choose one of your metadata templates you customized in :ref:`Templates Settings <templates_settings>`. You can access the **Template Manager** also with the edit button to the right of the drop-down field.
 
 .. figure:: images/bqm_metadata_template.webp
     :alt:
