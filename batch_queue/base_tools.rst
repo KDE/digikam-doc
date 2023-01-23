@@ -57,13 +57,13 @@ List of tools coming from Image Editor and shared in Batch Queue Manager is give
 
         - :ref:`Channels Mixer <color_mixer>`
 
-        - :ref:`Black and White Convert <color_bw>` (including also the `Simulate Infrared Film <color_infrared>`)
+        - :ref:`Black and White Convert <color_bw>` (including also the :ref:`Simulate Infrared Film <color_infrared>`)
 
         - :ref:`Invert Colors <color_invert>`
 
     .. note::
 
-        **Adjust Levels** and **Simulate Negative Film** are not available in Batch Queue Manager.
+        **Adjust Levels** and **Simulate Color Negative Film** are not available in Batch Queue Manager.
 
 .. _bqm_enhancetools:
 
