@@ -22,7 +22,7 @@ You’ll find all previous digiKam versions in the `attic <https://download.kde.
 Minimum System Requirements
 ---------------------------
 
-- **Operating System**: 64-bit Windows 7 or newer, Apple macOS 10.13 (High Sierra) or newer based on Intel or M1 architecture, 64-bit Linux. Details see below.
+- **Operating System**: 64-bit Windows 7 or newer, Apple macOS 64-bit based on Intel or M1 architecture, 64-bit Linux. Details see below.
 
 - **CPU**: x86 Intel or AMD; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for deep-learning uses as with face detection and image quality sorting. Details see below.
 
@@ -112,7 +112,13 @@ digiKam on macOS
 The non Signed Package
 ~~~~~~~~~~~~~~~~~~~~~~
 
-**digiKam** runs with Intel based Mac's on macOS 10.13 (High Sierra) and newer. For M1 based Mac's, you needs to use `Apple Rosetta 2 <https://support.apple.com/en-us/HT211861>`_ instructions translator.
+**digiKam** runs with Intel based Mac's on macOS 64-bit. For M1 based Mac's, you needs to use `Apple Rosetta 2 <https://support.apple.com/en-us/HT211861>`_ instructions translator. Minimum system requirement depends of the digiKam version to install;
+
+    - digiKam version >= 7.10.0 : macOS 10.15 (Catalina) or newer.
+    - digiKam version >= 7.0.0  : macOS 10.13 (High Sierra) or newer.
+    - digiKam version >= 6.4.0  : macOS 10.12 (Sierra) or newer.
+    - digiKam version >= 6.1.0  : macOS 10.11 (El Capitan) or newer.
+    - digiKam version >= 6.0.0  : macOS 10.8  (Moutain Lion) or newer.
 
 When the **PKG** file is downloaded, to start the installer, a security warning will appears, because the package is not signed for the Apple Gatekeeper.
 
