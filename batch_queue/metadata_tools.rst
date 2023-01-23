@@ -72,7 +72,7 @@ This tool allows to assign **Title**, **Captions**, and **Author** properties to
     :alt:
     :align: center
 
-    The Batch Queue Manager to Assign Captions to Items
+    The Batch Queue Manager Tool to Assign Captions to Items
 
 .. _bqm_assignlabels:
 
@@ -85,7 +85,7 @@ This tool allows to assign **Pick Label**, **Rating**, and **Color Label** to it
     :alt:
     :align: center
 
-    The Batch Queue Manager to Assign Labels to Items
+    The Batch Queue Manager Tool to Assign Labels to Items
 
 .. _bqm_removemetadata:
 
@@ -120,7 +120,7 @@ This tool to drop parts of metadata from files, into the **Exif**, **IPTC**, and
     :alt:
     :align: center
 
-    The Batch Queue Manager to Remove Metadata from Items
+    The Batch Queue Manager Tool to Remove Metadata from Items
 
 .. _bqm_timeadjust:
 
@@ -131,4 +131,4 @@ Time Adjust
     :alt:
     :align: center
 
-    The Batch Queue Manager to Adjust Items Time
+    The Batch Queue Manager Tool to Adjust Items Time-Stamp
