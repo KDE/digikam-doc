@@ -80,7 +80,7 @@ All the details of these settings is described in the **RAW Import** section fro
 Saving Images
 -------------
 
-This view allows to customize the settings used while image need to be saved in the original format. A queue can process file without to export results to another format, as loading **JPEG** files and apply **White Balance** and **Resize** tools. Without a convert tool at end of your workflow, the Batch Queue Manager will write processed images in same formats that originals and use these settings as well.
+This view allows to customize the settings used while image needs to be saved in the original format. A queue can process file without exporting results to another format, as loading **JPEG** files and apply **White Balance** and **Resize** tools. Without a convert tool at end of your workflow, the Batch Queue Manager will write processed images in same formats that originals and use these settings as well.
 
 All the details of these settings is described in **Save Images** section from :ref:`the Image Editor configuration <saveimage_settings>`. 
 
