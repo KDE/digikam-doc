@@ -35,7 +35,7 @@ This view allows to select where the target files processed will be stored. Two 
 File Renaming
 -------------
 
-This view allows to customize the file renamings rules. On the **Queues** view, the **Original** and the **Target** file names will give you a feedback about the file renaming.
+This view allows to customize the file renaming rules. On the **Queues** view, the **Original** and the **Target** file names will give you a feedback about the file renaming.
 
 The renaming settings is exactly the same than **Advanced Rename** tool available from **Main Window**. See :ref:`this section <renaming_photograph>` from the manual for details.
 
@@ -50,11 +50,11 @@ Behavior
 
 This view allows to customize important rules while the queue is processed.
 
-The **RAW Files Loading** setting configure how the RAW files will be processed: using the **RAW Decoding** settings to process standard demosaicing (see below), or tho use the **Embeded Preview**. This last one is very fast compared to RAW decoded.
+The **RAW Files Loading** setting configure how the RAW files will be processed: using the **RAW Decoding** settings to process standard demosaicing (see below), or tho use the **Embedded Preview**. This last one is very fast compared to RAW decoded.
 
 The **Target File Exists** setting allow to customize the behavior when target file exists. You can **Store as a Different file Name**, **Overwrite Automatically** the file, or **Skip Automatically** to don't touch the target file. In all cases, Batch Queue Manager will not ask you about this behavior while running.
 
-The **Save Image as a Newly Created Branch** setting will use **Image Versionning** to name target files. It's the same behavior when you export file from **Image Editor** when Versionning feature is enabled.
+The **Save Image as a Newly Created Branch** setting will use **Image Versioning** to name target files. It's the same behavior when you export file from **Image Editor** when Versioning feature is enabled.
 
 The **Work on all Processor Cores** setting will use more than one core to process items in parallel from the same queue.
 
