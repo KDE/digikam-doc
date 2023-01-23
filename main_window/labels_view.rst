@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Main Window Labels View
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, labels
 
 .. metadata-placeholder
 
@@ -14,16 +14,28 @@ Labels View
 -----------
 
 .. figure:: images/mainwindow_labels_view.webp
+    :alt:
+    :align: center
+
+    The digiKam Labels View from Left Sidebar
 
 The Labels View allows you to select photographs by the **Rating**, **Pick Labels** and **Color labels** you assigned to them previously either by using:
 
     - The context menu of a thumbnail.
 
     .. figure:: images/mainwindow_labels_context_menu.webp
+        :alt:
+        :align: center
+
+        The digiKam Icon-View Context Menu and Labels Options
 
     - The **Description** tab of the **Captions** section on the Right Sidebar.
 
     .. figure:: images/mainwindow_labels_captions_tab.webp
+        :alt:
+        :align: center
+
+        The digiKam Labels Options from Captions Right Sidebar Tab
 
 You may select more than one label by :kbd:`Ctrl+left` click. The selected labels are connected by boolean AND, e.g. selecting Four Star and Yellow will display only photographs that have both labels assigned. You can perform even more sophisticated searches by using the **Filters** section of the :ref:`Right Sidebar <filters_view>`.
 
