@@ -79,7 +79,7 @@ This tool allows to assign **Title**, **Captions**, and **Author** properties to
 Assign Labels
 -------------
 
-This tool allows to assign **Pick Label**, **Rating**, and **Color Label** to items from a Queue. In oppposite to **Quality Sort** tool which apply a Pick Label automatically, this tool just tune the Pick Label value manually. For details about these properties, take a look to the :ref:`Captions section  <captions_view>` from this manual.
+This tool allows to assign **Pick Label**, **Rating**, and **Color Label** to items from a Queue. In oppposite to **Quality Sort** tool which apply a Pick Label automatically, this tool just tune the Pick Label value manually. For details about these properties, take a look to the :ref:`Captions section <captions_view>` from this manual.
 
 .. figure:: images/bqm_metadata_labels.webp
     :alt:
@@ -126,6 +126,8 @@ This tool to drop parts of metadata from files, into the **Exif**, **IPTC**, and
 
 Time Adjust
 -----------
+
+This tool allows to adjust the time-stamp entries in file metadata. It use the same settings than :ref:`stand alone version <time_adjust>` of this plugin available from **Main Window** from :menuselection:`Item --> Adjust Date & Time` menu entry.
 
 .. figure:: images/bqm_metadata_timeadjust.webp
     :alt:

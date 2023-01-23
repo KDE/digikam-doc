@@ -50,7 +50,7 @@ Next to the Apply button there is the **More** button. From it you can either ch
 Date and Time
 ~~~~~~~~~~~~~
 
-In the Date and Time section, which reflects the time of taking the photograph, you can change all values. From the date combo-box a calendar opens, and the time setting spin-box can also be written by directly typing the time. The dating is copied to the Exif **Date and Time** field. If you need to change a number of images for their creating time & date, there is a more comfortable method available in Batch Queue Manager. This latter option can be found under :menuselection:`Image --> Adjust time & date...`. Select the images to be changed in the main view and call the tool.
+In the Date and Time section, which reflects the time of taking the photograph, you can change all values. From the date combo-box a calendar opens, and the time setting spin-box can also be written by directly typing the time. The dating is copied to the Exif **Date and Time** field. If you need to change a number of images for their creating time & date, there is a more comfortable method available in **Batch Queue Manager** or from :menuselection:`Item --> Adjust time & date...` menu entry in **Main Window**. Select the images to be changed in the main view and call the tool.
 
 Labels
 ~~~~~~

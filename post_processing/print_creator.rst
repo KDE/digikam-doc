@@ -1,5 +1,5 @@
 .. meta::
-   :description: The digiKam Print Creator 
+   :description: The digiKam Print Creator
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, print
 
 .. metadata-placeholder
