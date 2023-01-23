@@ -112,13 +112,13 @@ digiKam on macOS
 The non Signed Package
 ~~~~~~~~~~~~~~~~~~~~~~
 
-**digiKam** runs with Intel based Mac's on macOS 64-bit. For M1 based Mac's, you needs to use `Apple Rosetta 2 <https://support.apple.com/en-us/HT211861>`_ instructions translator. Minimum system requirement depends of the digiKam version to install;
+**digiKam** runs with Intel based Mac's on macOS 64-bit. For M1 based Mac's, you needs to use `Apple Rosetta 2 <https://support.apple.com/en-us/HT211861>`_ instructions translator. Minimum system requirement depends of the digiKam version to install:
 
     - digiKam version >= 7.10.0 : macOS 10.15 (Catalina) or newer.
-    - digiKam version >= 7.0.0  : macOS 10.13 (High Sierra) or newer.
-    - digiKam version >= 6.4.0  : macOS 10.12 (Sierra) or newer.
-    - digiKam version >= 6.1.0  : macOS 10.11 (El Capitan) or newer.
-    - digiKam version >= 6.0.0  : macOS 10.8  (Moutain Lion) or newer.
+    - digiKam version >= 7.0.0 : macOS 10.13 (High Sierra) or newer.
+    - digiKam version >= 6.4.0 : macOS 10.12 (Sierra) or newer.
+    - digiKam version >= 6.1.0 : macOS 10.11 (El Capitan) or newer.
+    - digiKam version >= 6.0.0 : macOS 10.8 (Moutain Lion) or newer.
 
 When the **PKG** file is downloaded, to start the installer, a security warning will appears, because the package is not signed for the Apple Gatekeeper.
 
