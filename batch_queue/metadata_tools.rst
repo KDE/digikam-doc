@@ -46,14 +46,14 @@ This tool is dedicated to apply a metadata template to your items in order to se
 Translate Strings
 -----------------
 
-This tool allow to translate automatically some alternative language string from metadata using an online translator service. Translatable entries are:
+This tool allows to translate automatically some alternative language string from metadata using an online translator service. Translatable entries are:
 
     - :ref:`Title <captions_comments>`.
     - :ref:`Captions <captions_comments>`.
     - :ref:`Copyrights <authorship_copyright>`.
     - :ref:`Usage Terms <authorship_copyright>`.
 
-The translations settings can be tuned with the dedicated :ref:`Localize Setup Panel <localize_settings>`. A list of languages to append or fix in selected alternative language strings. To manage contents of this list, use the drop-down button on the left of **Translate to** option.
+The translations settings can be tuned with the dedicated :ref:`Localize Setup Panel <localize_settings>`. A list of languages to append or fix in selected alternative language strings. To add a new language in this list, use the drop-down button on the left of **Translate to** option. To remove a language, use the context menu over this list.
 
 .. figure:: images/bqm_metadata_translate.webp
     :alt:
@@ -65,6 +65,8 @@ The translations settings can be tuned with the dedicated :ref:`Localize Setup P
 
 Assign Captions
 ---------------
+
+This tool allows to assign **Title**, **Captions**, and **Author** properties to items from a Queue. For details about these properties, take a look to the :ref:`Captions section  <captions_view>` from this manual.
 
 .. figure:: images/bqm_metadata_captions.webp
     :alt:
