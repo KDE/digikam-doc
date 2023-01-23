@@ -45,7 +45,7 @@ To create a new Workflow, select your tools from **Base Tools** tab and drag and
 
     The Batch Queue Manager Workflow Create Dialog
 
-Later, with a new Queue, if you want to apply a workflow with your precious tools/settings, just double click over an item from **Workflow** tab, or drag and drop the item from **Workflow** tab to **Assigned Tools**. The Workflow will be assigned to the current Queue abd will be ready to run.
+Later, with a new Queue, if you want to apply a workflow with your precious tools/settings, just double click over an item from **Workflow** tab, or drag and drop the item from **Workflow** tab to **Assigned Tools**. The Workflow will be assigned to the current Queue and will be ready to run.
 
 To manage a workflow entry, right-click with mouse over an entry from the **Workflow** tab to enable the context menu. This allows to edit a workflow properties or to delete it.
 
@@ -53,4 +53,4 @@ To manage a workflow entry, right-click with mouse over an entry from the **Work
     :alt:
     :align: center
 
-    The Batch Queue Manager Worflow Context Menu
+    The Batch Queue Manager Workflow Context Menu
