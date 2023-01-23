@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Main Window Search View
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, advanced, search
 
 .. metadata-placeholder
 

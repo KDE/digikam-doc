@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Main Window Timeline View
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, timeline, days, weeks, months, years
 
 .. metadata-placeholder
 

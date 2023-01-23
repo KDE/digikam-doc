@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Main Window Map Search View
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, map, search
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, map, search, geolocation
 
 .. metadata-placeholder
 
@@ -24,6 +24,10 @@ Map Search View
     - The :ref:`Map tab <maps_view>` on the Right Sidebar which shows the location of the image on a map and is purely informative.
 
 .. figure:: images/mainwindow_mapsearch.webp
+    :alt:
+    :align: center
+
+    The digiKam Map Search Tool from Left Sidebar
 
 The earth view is a topographical map of our beautiful home planet. To allow for better orientation the map offers a scale bar in the lower left corner as well as a windrose on the top right. To navigate and to control the view you can use the tools on the Navigation info box at the right: Press the arrow buttons to rotate the globe. The Up and Down arrow buttons will tilt the earth axis back and forth. The Left and Right arrow buttons will make the earth spin around its physical axis.
 
