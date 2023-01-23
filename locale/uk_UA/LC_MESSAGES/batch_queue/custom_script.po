@@ -6,14 +6,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-21 00:51+0000\n"
-"PO-Revision-Date: 2023-01-21 11:11+0200\n"
+"POT-Creation-Date: 2023-01-22 00:50+0000\n"
+"PO-Revision-Date: 2023-01-22 08:39+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 20.12.0\n"
@@ -24,12 +24,12 @@ msgstr "Нетиповий скрипт у засобі керування че�
 
 #: ../../batch_queue/custom_script.rst:1
 msgid ""
-"digiKam, documentation, user manual, photo management, open source, free,"
-" learn, easy, batch, custom, script"
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, batch, custom, script"
 msgstr ""
 "digiKam, документація, підручник користувача, керування фотографій, "
-"відкритий код, вільний, навчання, простий, пакетна, обробка, нетиповий,"
-" скрипт"
+"відкритий код, вільний, навчання, простий, пакетна, обробка, нетиповий, "
+"скрипт"
 
 #: ../../batch_queue/custom_script.rst:14
 msgid "Custom Script"
@@ -44,30 +44,42 @@ msgid "Overview"
 msgstr "Огляд"
 
 #: ../../batch_queue/custom_script.rst:21
+#| msgid ""
+#| "The batch Queue Manager allows to customize a **Workflow** with a "
+#| "specific plugin dedicated to run a script an process your images with an "
+#| "external tool as `ImageMagick <https://imagemagick.org/>`_ for example."
 msgid ""
-"The batch Queue Manager allows to customize a **Workflow** with a specific"
-" plugin dedicated to run a script an process your images with an external"
-" tool as `ImageMagick <https://imagemagick.org/>`_ for example."
+"The batch Queue Manager allows to customize a **Workflow** with a specific "
+"plugin dedicated to run a script and process your images with external tools "
+"as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool <https://en."
+"wikipedia.org/wiki/ExifTool>`_ for example."
 msgstr ""
-"У засобі керування пакетною обробкою можна налаштувати **робочий процес** за"
-" допомогою спеціалізованого додатка, який призначено для запуску скрипту і"
-" обробки ваших зображень зовнішнім інструментом, зокрема `ImageMagick <"
-"https://imagemagick.org/>`_."
+"У засобі керування пакетною обробкою можна налаштувати **робочий процес** за "
+"допомогою спеціалізованого додатка, який призначено для запуску скрипту і "
+"обробки ваших зображень зовнішнім інструментом, зокрема `ImageMagick "
+"<https://imagemagick.org/>`_ або `ExifTool <https://en."
+"wikipedia.org/wiki/ExifTool>`_."
 
 #: ../../batch_queue/custom_script.rst:23
+#| msgid ""
+#| "The Tool is named **Custom Script**, available in **Base Tools** list, "
+#| "and **Custom Tools** category. The goal is pass to a script source code "
+#| "written by the user in the plugin, a series of environment variables to "
+#| "handle in the code and to re-route for a custom usage with delegate "
+#| "command line programs installed on your computer."
 msgid ""
-"The Tool is named **Custom Script**, available in **Base Tools** list, and"
-" **Custom Tools** category. The goal is pass to a script source code written"
-" by the user in the plugin, a series of environment variables to handle in"
-" the code and to re-route for a custom usage with delegate command line"
-" programs installed on your computer."
+"The Tool is named **Custom Script**, available in **Base Tools** list, and "
+"**Custom Tools** category. The goal is to pass to a script source code "
+"written by the user in the plugin, a series of environment variables handled "
+"in the code and re-routed for a custom usage with delegate command line "
+"programs installed on your computer."
 msgstr ""
-"Цей інструмент має назву **Нетиповий скрипт**. Його включено до списку"
-" **Базові інструменти** і категорії **Нетипові інструменти**. Метою є"
-" передавання скрипту початкового коду, який записано користувачем у додатку,"
-" послідовності змінних середовища для обробки коду і переспрямування для"
-" нетипового використання встановлених на комп'ютері програм, які керуються"
-" рядком команди."
+"Цей інструмент має назву **Нетиповий скрипт**. Його включено до списку "
+"**Базові інструменти** і категорії **Нетипові інструменти**. Метою є "
+"передавання скрипту початкового коду, який записано користувачем у додатку, "
+"послідовності змінних середовища для обробки коду і переспрямування для "
+"нетипового використання встановлених на комп'ютері програм, які керуються "
+"рядком команди."
 
 #: ../../batch_queue/custom_script.rst:29
 msgid "The Batch Queue Manager Including a Custom Script in a Workflow"
@@ -79,266 +91,324 @@ msgstr "Інструмент надає доступ до таких парам�
 
 #: ../../batch_queue/custom_script.rst:33
 msgid ""
-"**Output Image Type**: this value allows to setup the expected type of image"
-" format to use at the output of your script. The default is **Same as"
-" input**, but you can set **JPEG**, **PNG**, or **TIFF**. Take a care that"
-" JPEG is a lossy compression format, only support 8-bit color depth, and"
-" does not supports transparency."
+"**Output Image Type**: this value allows to setup the expected type of image "
+"format to use at the output of your script. The default is **Same as "
+"input**, but you can set **JPEG**, **PNG**, or **TIFF**. Take a care that "
+"JPEG is a lossy compression format, only support 8-bit color depth, and does "
+"not supports transparency."
 msgstr ""
-"**Тип зображення-результату**: це значення надає змогу налаштувати"
-" очікуваний тип формату зображення, яким слід скористатися для виведення"
-" даних у вашому скрипті. Типовим є **Той самий, що і вхідний**, але ви"
-" можете встановити тип **JPEG**, **PNG** або **TIFF**. Зверніть увагу, що"
-" JPEG є форматом зберігання даних з втратою якості, у якому передбачено"
-" глибину кольорів лише 8 бітів і не передбачено підтримки прозорості."
+"**Тип зображення-результату**: це значення надає змогу налаштувати "
+"очікуваний тип формату зображення, яким слід скористатися для виведення "
+"даних у вашому скрипті. Типовим є **Той самий, що і вхідний**, але ви можете "
+"встановити тип **JPEG**, **PNG** або **TIFF**. Зверніть увагу, що JPEG є "
+"форматом зберігання даних з втратою якості, у якому передбачено глибину "
+"кольорів лише 8 бітів і не передбачено підтримки прозорості."
 
 #: ../../batch_queue/custom_script.rst:35
+#| msgid ""
+#| "**Shell Script**: this text edit field allow to enter the source code of "
+#| "your shell script. Under **Linux** and **macOS**, `Bash script <https://"
+#| "en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported. Under "
+#| "**Windows** `Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is "
+#| "supported."
 msgid ""
-"**Shell Script**: this text edit field allow to enter the source code of"
-" your shell script. Under **Linux** and **macOS**, `Bash script <"
-"https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported. Under"
-" **Windows** `Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is"
-" supported."
+"**Shell Script**: this text edit field allows to enter the source code of "
+"your shell script. Under **Linux** and **macOS**, `Bash script <https://en."
+"wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported. Under **Windows** "
+"`Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported."
 msgstr ""
-"**Скрипт оболонки**: за допомогою цього поля для редагування тексту можна"
-" ввести початковий код вашого скрипту оболонки. У **Linux** і **macOS**"
-" передбачено підтримку `скриптів Bash <"
-"https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_. У **Windows**"
-" передбачено підтримку `пакетних скриптів <"
-"https://en.wikipedia.org/wiki/Batch_file>`_."
+"**Скрипт оболонки**: за допомогою цього поля для редагування тексту можна "
+"ввести початковий код вашого скрипту оболонки. У **Linux** і **macOS** "
+"передбачено підтримку `скриптів Bash <https://en.wikipedia.org/wiki/"
+"Bash_(Unix_shell)>`_. У **Windows** передбачено підтримку `пакетних скриптів "
+"<https://en.wikipedia.org/wiki/Batch_file>`_."
 
 #: ../../batch_queue/custom_script.rst:37
 msgid ""
-"The keywords that you can use in your script code are listed below. The tool"
-" will replace all occurrences of keywords in script at run time before shell"
-" execution. Take a care that keywords are case sensitive."
+"The keywords that you can use in your script code are listed below. The tool "
+"will replace all occurrences of keywords in script at run time before shell "
+"execution. Take a care that keywords are case sensitive."
 msgstr ""
-"У наведеному нижче списку ви можете знайти ключові слова, якими можна"
-" скористатися у коді скрипту. Інструмент замінить усі записи ключових слів у"
-" скрипті під час роботи до виконання команди у командній оболонці. Зверніть"
-" увагу на те, що при написанні ключових слів слід враховувати регістр"
-" символів."
+"У наведеному нижче списку ви можете знайти ключові слова, якими можна "
+"скористатися у коді скрипту. Інструмент замінить усі записи ключових слів у "
+"скрипті під час роботи до виконання команди у командній оболонці. Зверніть "
+"увагу на те, що при написанні ключових слів слід враховувати регістр "
+"символів."
 
 #: ../../batch_queue/custom_script.rst:39
 msgid ""
 "**$INPUT** for workflow input filename (with special characters escaped)."
 msgstr ""
-"**$INPUT** — назва вхідного файла робочого процесу (із екрануванням"
-" спеціальних символів)."
+"**$INPUT** — назва вхідного файла робочого процесу (із екрануванням "
+"спеціальних символів)."
 
 #: ../../batch_queue/custom_script.rst:41
 msgid ""
 "**$OUTPUT** for workflow output filename (with special characters escaped)."
 msgstr ""
-"**$OUTPUT** — назва вихідного файла робочого процесу (із екрануванням"
-" спеціальних символів)."
-
-#: ../../batch_queue/custom_script.rst:43
-msgid ""
-"The environment variables that you can use in your script code are listed"
-" below:"
-msgstr ""
-"Нижче наведено змінні середовища, якими ви можете скористатися у вашому"
-" скрипті:"
+"**$OUTPUT** — назва вихідного файла робочого процесу (із екрануванням "
+"спеціальних символів)."
 
 #: ../../batch_queue/custom_script.rst:45
+msgid ""
+"A new file is always expected on **$OUTPUT**. With a script programs that do "
+"not create a new file (e.g. changing metadata with Exiftool) you must first "
+"copy **$INPUT** to **$OUTPUT** with a command appropriate to the operating "
+"system and then make the changes to **$OUTPUT**."
+msgstr ""
+"На **$OUTPUT** завжди має бути новий файл. Для програм-скриптів, які не"
+" створюють нового файла (наприклад, змінюють метадані за допомогою Exiftool)"
+" вам слід спочатку скопіювати **$INPUT** до **$OUTPUT** за допомогою"
+" команди, відповідної операційній системі, а потім вносити зміни до"
+" **$OUTPUT**."
+
+#: ../../batch_queue/custom_script.rst:47
+msgid ""
+"The environment variables that you can use in your script code are listed "
+"below:"
+msgstr ""
+"Нижче наведено змінні середовища, якими ви можете скористатися у вашому "
+"скрипті:"
+
+#: ../../batch_queue/custom_script.rst:49
 msgid "**TITLE**: to handle digiKam **Title** item properties from database."
 msgstr "**TITLE**: для обробки запису **Заголовок** digiKam з бази даних."
 
-#: ../../batch_queue/custom_script.rst:47
+#: ../../batch_queue/custom_script.rst:51
 msgid ""
 "**COMMENTS**: to handle digiKam **Caption** item properties from database."
 msgstr "**COMMENTS**: для обробки запису **Підпис** digiKam з бази даних."
 
-#: ../../batch_queue/custom_script.rst:49
+#: ../../batch_queue/custom_script.rst:53
 msgid ""
-"**COLORLABEL**: to handle digiKam **Color Label** item properties from"
-" database."
+"**COLORLABEL**: to handle digiKam **Color Label** item properties from "
+"database."
 msgstr ""
 "**COLORLABEL**: для обробки запису **Кольорова мітка** digiKam з бази даних."
 
-#: ../../batch_queue/custom_script.rst:51
+#: ../../batch_queue/custom_script.rst:55
 msgid ""
-"**PICKLABEL**: to handle digiKam **Pick Label** item properties from"
-" database."
+"**PICKLABEL**: to handle digiKam **Pick Label** item properties from "
+"database."
 msgstr ""
-"**PICKLABEL**: для обробки запису **Впорядкувальна мітка** digiKam з бази"
-" даних."
+"**PICKLABEL**: для обробки запису **Впорядкувальна мітка** digiKam з бази "
+"даних."
 
-#: ../../batch_queue/custom_script.rst:53
+#: ../../batch_queue/custom_script.rst:57
 msgid ""
 "**RATING**: to handle digiKam **Rating** item properties from database."
 msgstr "**RATING**: для обробки запису **Оцінка** digiKam з бази даних."
 
-#: ../../batch_queue/custom_script.rst:55
+#: ../../batch_queue/custom_script.rst:59
 msgid ""
 "**TAGSPATH**: to handle digiKam **Tags** item properties from database."
 msgstr "**TAGSPATH**: для обробки запису **Мітки** digiKam з бази даних."
 
-#: ../../batch_queue/custom_script.rst:59
+#: ../../batch_queue/custom_script.rst:63
+#| msgid ""
+#| "Under Linux and macOS, environment variables can be accessed in script "
+#| "with **$** as prefix of variable names (for example **$INPUT**). The "
+#| "interpreter used to run the script is **/bin/bash**"
 msgid ""
-"Under Linux and macOS, environment variables can be accessed in script with"
-" **$** as prefix of variable names (for example **$INPUT**). The interpreter"
-" used to run the script is **/bin/bash**"
+"Under Linux and macOS, environment variables can be accessed in script with "
+"**$** as prefix of variable names (for example **$INPUT**). The interpreter "
+"used to run the script is **/bin/bash**."
 msgstr ""
-"У Linux і macOS доступ до змінних середовища у скрипті можна здійснювати за"
-" допомогою використання префікса **$** назв змінних (наприклад **$INPUT**)."
-" Інтерпретатором, який буде використано для запуску скрипту, є **/bin/bash**"
+"У Linux і macOS доступ до змінних середовища у скрипті можна здійснювати за "
+"допомогою використання префікса **$** назв змінних (наприклад **$INPUT**). "
+"Інтерпретатором, який буде використано для запуску скрипту, є **/bin/bash**."
 
-#: ../../batch_queue/custom_script.rst:61
+#: ../../batch_queue/custom_script.rst:65
+#| msgid ""
+#| "Under Windows, environment variables can be accessed in script with **%** "
+#| "as prefix and suffix of variable names (for example **%INPUT%**). The "
+#| "interpreter used to run the script is **cmd.exe**"
 msgid ""
-"Under Windows, environment variables can be accessed in script with **%** as"
-" prefix and suffix of variable names (for example **%INPUT%**). The"
-" interpreter used to run the script is **cmd.exe**"
+"Under Windows, environment variables can be accessed in script with **%** as "
+"prefix and suffix of variable names (for example **%INPUT%**). The "
+"interpreter used to run the script is **cmd.exe**."
 msgstr ""
-"У Windows доступ до змінних середовища у скрипті можна здійснювати за"
-" допомогою використання префікса і суфікса **%** назв змінних (наприклад **"
-"%INPUT%**). Інтерпретатором, який буде використано для запуску скрипту, є"
-" **cmd.exe**"
+"У Windows доступ до змінних середовища у скрипті можна здійснювати за "
+"допомогою використання префікса і суфікса **%** назв змінних (наприклад **"
+"%INPUT%**). Інтерпретатором, який буде використано для запуску скрипту, є "
+"**cmd.exe**."
 
-#: ../../batch_queue/custom_script.rst:64
+#: ../../batch_queue/custom_script.rst:69
 msgid "Return Value"
 msgstr "Повернуте значення"
 
-#: ../../batch_queue/custom_script.rst:66
+#: ../../batch_queue/custom_script.rst:71
 msgid ""
-"By convention, a **Bash script** under Linux and macOS, 0 is returned on"
-" success or an integer in the range 1-255 for something else. Use **exit <"
-" error_code >** to pass the return value on the workflow."
+"By convention, a **Bash script** under Linux and macOS, 0 is returned on "
+"success or an integer in the range 1-255 for something else. Use **exit < "
+"error_code >** to pass the return value on the workflow."
 msgstr ""
-"Типово, **скрипт Bash** у Linux і macOS повертає 0, якщо його виконано"
-" успішно, і ціле число у діапазоні 1-255 в інших випадках. Скористайтеся"
-" інструкцією **exit <"
-" error_code >**, щоб передати повернуте значення до робочого процесу."
-
-#: ../../batch_queue/custom_script.rst:68
-msgid ""
-"Under Windows, a **Batch script** return 0 on success and another value for"
-" something else, but the value is a signed integer, so a negative value is"
-" possible. Use **EXIT /B < error_code >** to pass the return value on the"
-" workflow."
-msgstr ""
-"У Windows **пакетний скрипт** повертає 0 при успішному виконанні та інше"
-" значення для інших випадків, але значенням є ціле число зі знаком, отже,"
-" можливе повернуте від'ємне значення. Скористайтеся інструкцією **EXIT /B <"
-" error_code >**, щоб передати повернуте значення до робочого процесу."
-
-#: ../../batch_queue/custom_script.rst:70
-msgid ""
-"The Batch Queue Manager handle the value returned by your script. If zero is"
-" returned, the workflow continue as expected, else the workflow is broken"
-" and Batch Queue Manager stop the process."
-msgstr ""
-"Обробку повернутого вашим скриптом значення виконує засіб керування пакетною"
-" чергою. Якщо повернуто нуль, робочий процес продовжується у штатному"
-" режимі, інакше робочий процес буде припинено, а засіб керування пакетною"
-" чергою припинить обробку команд."
+"Типово, **скрипт Bash** у Linux і macOS повертає 0, якщо його виконано "
+"успішно, і ціле число у діапазоні 1-255 в інших випадках. Скористайтеся "
+"інструкцією **exit < error_code >**, щоб передати повернуте значення до "
+"робочого процесу."
 
 #: ../../batch_queue/custom_script.rst:73
+#| msgid ""
+#| "Under Windows, a **Batch script** return 0 on success and another value "
+#| "for something else, but the value is a signed integer, so a negative "
+#| "value is possible. Use **EXIT /B < error_code >** to pass the return "
+#| "value on the workflow."
+msgid ""
+"Under Windows, a **Batch script** returns 0 on success and another value for "
+"something else, but the value is a signed integer, so a negative value is "
+"possible. Use **EXIT /B < error_code >** to pass the return value on the "
+"workflow."
+msgstr ""
+"У Windows **пакетний скрипт** повертає 0 при успішному виконанні та інше "
+"значення для інших випадків, але значенням є ціле число зі знаком, отже, "
+"можливе повернуте від'ємне значення. Скористайтеся інструкцією **EXIT /B < "
+"error_code >**, щоб передати повернуте значення до робочого процесу."
+
+#: ../../batch_queue/custom_script.rst:75
+#| msgid ""
+#| "The Batch Queue Manager handle the value returned by your script. If zero "
+#| "is returned, the workflow continue as expected, else the workflow is "
+#| "broken and Batch Queue Manager stop the process."
+msgid ""
+"The Batch Queue Manager handles the value returned by your script. If zero "
+"is returned, the workflow continue as expected, else the workflow is broken "
+"and Batch Queue Manager stop the process."
+msgstr ""
+"Обробку повернутого вашим скриптом значення виконує засіб керування пакетною "
+"чергою. Якщо повернуто нуль, робочий процес продовжується у штатному режимі, "
+"інакше робочий процес буде припинено, а засіб керування пакетною чергою "
+"припинить обробку команд."
+
+#: ../../batch_queue/custom_script.rst:78
 msgid "Examples"
 msgstr "Приклади"
 
-#: ../../batch_queue/custom_script.rst:75
-msgid ""
-"The **First example** that you can see below, ...do nothing special. It will"
-" print on the console the input/output file names and item properties passed"
-" from batch queue manager to the script and copy input file to ouput file"
-" (this stage is required else Batch Queue Manager return an error as the"
-" target file do not exists). The script return the value from the file copy"
-" command, this one is parsed by the Batch Queue Manager to check the"
-" workflow stream."
-msgstr ""
-"**Перший приклад**, який наведено нижче, ...не робить нічого особливого. Він"
-" виводить до консолі назви вхідного і вихідного файлів та властивості"
-" запису, які передано із засобу керування пакетною обробкою до скрипту, і"
-" копіює вхідний файл до вихідного файла (цей крок є обов'язковим, оскільки"
-" засіб керування пакетною чергою повертатиме помилку, якщо файла призначення"
-" не існує). Скрипт повертає значення з команди копіювання файла. Його буде"
-" оброблено засобом керування пакетною чергою з метою перевірки коректності"
-" робочого процесу."
+#: ../../batch_queue/custom_script.rst:81
+msgid "Proof of Concept"
+msgstr "Технічний зразок"
 
-#: ../../batch_queue/custom_script.rst:92
+#: ../../batch_queue/custom_script.rst:83
+#| msgid ""
+#| "The **First example** that you can see below, ...do nothing special. It "
+#| "will print on the console the input/output file names and item properties "
+#| "passed from batch queue manager to the script and copy input file to "
+#| "ouput file (this stage is required else Batch Queue Manager return an "
+#| "error as the target file do not exists). The script return the value from "
+#| "the file copy command, this one is parsed by the Batch Queue Manager to "
+#| "check the workflow stream."
 msgid ""
-"If you have started digiKam from a terminal and enabled the debug traces on"
-" :ref:`Setup/Miscs/System dialog page <system_settings>`, you will see"
-" something like this:"
+"This First example that you can see below, ...do nothing special. It will "
+"print on the console the input/output file names and item properties passed "
+"from batch queue manager to the script and copy input file to output file "
+"(this stage is required else Batch Queue Manager returns an error as the "
+"target file does not exist). The script returns the value from the file copy "
+"command, this one is parsed by the Batch Queue Manager to check the workflow "
+"stream."
 msgstr ""
-"Якщо digiKam було запущено з термінала із увімкненим діагностичним"
-" трасуванням на :ref:`сторінці Налаштування/Різне/Система <system_settings"
-">`, ви побачите щось таке:"
+"**Перший приклад**, який наведено нижче, ...не робить нічого особливого. Він "
+"виводить до консолі назви вхідного і вихідного файлів та властивості запису, "
+"які передано із засобу керування пакетною обробкою до скрипту, і копіює "
+"вхідний файл до вихідного файла (цей крок є обов'язковим, оскільки засіб "
+"керування пакетною чергою повертатиме помилку, якщо файла призначення не "
+"існує). Скрипт повертає значення з команди копіювання файла. Його буде "
+"оброблено засобом керування пакетною чергою з метою перевірки коректності "
+"робочого процесу."
 
-#: ../../batch_queue/custom_script.rst:106
+#: ../../batch_queue/custom_script.rst:100
+msgid ""
+"If you have started digiKam from a terminal and enabled the debug traces on :"
+"ref:`Setup/Miscs/System dialog page <system_settings>`, you will see "
+"something like this:"
+msgstr ""
+"Якщо digiKam було запущено з термінала із увімкненим діагностичним "
+"трасуванням на :ref:`сторінці Налаштування/Різне/Система <system_settings>`, "
+"ви побачите щось таке:"
+
+#: ../../batch_queue/custom_script.rst:114
 msgid "The digiKam information taken from the database are:"
 msgstr "Дані, які digiKam бере з бази даних:"
 
-#: ../../batch_queue/custom_script.rst:108
+#: ../../batch_queue/custom_script.rst:116
 msgid "Item processed is **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
 msgstr "Оброблюваний запис **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
 
-#: ../../batch_queue/custom_script.rst:109
+#: ../../batch_queue/custom_script.rst:117
 msgid ""
-"Target filename is **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a12.digik"
-"amtempfile.JPG** (a temporary file generated by Batch Queue Manager)."
+"Target filename is **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a12."
+"digikamtempfile.JPG** (a temporary file generated by Batch Queue Manager)."
 msgstr ""
-"Назва файла призначення — **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a1"
-"2.digikamtempfile.JPG** (тимчасовий файл, який буде створено засобом"
-" керування пакетною чергою)."
+"Назва файла призначення — **/mnt/data/Images/SALAGOU/BatchTool-"
+"EpEjEz-9e1c7a12.digikamtempfile.JPG** (тимчасовий файл, який буде створено "
+"засобом керування пакетною чергою)."
 
-#: ../../batch_queue/custom_script.rst:110
+#: ../../batch_queue/custom_script.rst:118
 msgid "Item Title is **Salagou Trip**."
 msgstr "Заголовок запису — **Salagou Trip**."
 
-#: ../../batch_queue/custom_script.rst:111
+#: ../../batch_queue/custom_script.rst:119
 msgid "Item Comment is null."
 msgstr "Коментар до запису є порожнім."
 
-#: ../../batch_queue/custom_script.rst:112
+#: ../../batch_queue/custom_script.rst:120
 msgid "Item Color Label is **5** (Green)."
 msgstr "Кольоровою міткою запису є **5** (зелена)."
 
-#: ../../batch_queue/custom_script.rst:113
+#: ../../batch_queue/custom_script.rst:121
 msgid "Item Pick Label is **3** (Accepted)."
 msgstr "Значенням впорядкувальної мітки є **3** (прийнято)."
 
-#: ../../batch_queue/custom_script.rst:114
+#: ../../batch_queue/custom_script.rst:122
 msgid "Item Rating is **3 stars**."
 msgstr "Значенням оцінки запису є **3 зірочки**."
 
-#: ../../batch_queue/custom_script.rst:115
+#: ../../batch_queue/custom_script.rst:123
 msgid ""
 "Item Tags are **Places**, **Places/France**, **Places/France/Salagou Lake**."
 msgstr ""
-"Мітками запису є **Places**, **Places/France**, **Places/France/Salagou"
-" Lake**."
+"Мітками запису є **Places**, **Places/France**, **Places/France/Salagou "
+"Lake**."
 
-#: ../../batch_queue/custom_script.rst:117
+#: ../../batch_queue/custom_script.rst:126
+msgid "Add a Watermark with ImageMagick"
+msgstr "Додавання «водяного» знаку за допомогою ImageMagick"
+
+#: ../../batch_queue/custom_script.rst:128
+#| msgid ""
+#| "A **Second example** below is more complex and use **ImageMagick** "
+#| "command like tool to add a multiline text superimposed over pictures to "
+#| "create a visible watermark on the center of images."
 msgid ""
-"A **Second example** below is more complex and use **ImageMagick** command"
-" like tool to add a multiline text superimposed over pictures to create a"
-" visible watermark on the center of images."
+"The second example below is more complex and uses **ImageMagick** command "
+"like tool to add a multiline text superimposed over pictures to create a "
+"visible watermark on the center of images."
 msgstr ""
-"**Другий приклад**, який наведено нижче, є складнішим і використовує"
-" командний інструмент **ImageMagick** для додавання багаторядкового тексту,"
-" накладеного на зображення для створення видимого «водяного» знаку у центрі"
-" зображення."
+"**Другий приклад**, який наведено нижче, є складнішим і використовує "
+"командний інструмент **ImageMagick** для додавання багаторядкового тексту, "
+"накладеного на зображення для створення видимого «водяного» знаку у центрі "
+"зображення."
 
-#: ../../batch_queue/custom_script.rst:135
+#: ../../batch_queue/custom_script.rst:146
+#| msgid ""
+#| "In this example, there is no explicit **exit** call to return a value to "
+#| "the Workflow. Bash use the last called method as the returned value from "
+#| "the script, here the ImageMagick command line tool **convert**."
 msgid ""
-"In this example, there is no explicit **exit** call to return a value to the"
-" Workflow. Bash use the last called method as the returned value from the"
-" script, here the ImageMagick command line tool **convert**."
+"In this example, there is no explicit **exit** call to return a value to the "
+"Workflow. Bash uses the last called method as the returned value from the "
+"script, here the ImageMagick command line tool **convert**."
 msgstr ""
-"У цьому прикладі немає явного виклику **exit** для повернення значення до"
-" робочого процесу. Bash використовує останній викликаний метод як повернуте"
-" значення скрипту. Тут цим методом є інструмент командного рядка ImageMagick"
-" **convert**."
+"У цьому прикладі немає явного виклику **exit** для повернення значення до "
+"робочого процесу. Bash використовує останній викликаний метод як повернуте "
+"значення скрипту. Тут цим методом є інструмент командного рядка ImageMagick "
+"**convert**."
 
-#: ../../batch_queue/custom_script.rst:137
+#: ../../batch_queue/custom_script.rst:148
 msgid "This give a result like below."
 msgstr "Результат буде таким, як наведено нижче."
 
-#: ../../batch_queue/custom_script.rst:143
+#: ../../batch_queue/custom_script.rst:154
 msgid "The result of the Script Using ImageMagick to Apply a Watermark"
 msgstr ""
-"Результат виконання скрипту з використанням ImageMagick для застосування"
-" «водяного» знаку"
+"Результат виконання скрипту з використанням ImageMagick для застосування "
+"«водяного» знаку"
