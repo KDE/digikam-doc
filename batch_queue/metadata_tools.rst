@@ -28,10 +28,10 @@ This tool parse your items to assign a **Pick Label** automatically depending of
 
     The Batch Queue Manager Tool to Sort Items by Image Quality
 
-.. _bqm_applytemplate:
+.. _bqm_assigntemplate:
 
-Apply Template
---------------
+Assign Template
+---------------
 
 This tool is dedicated to apply a metadata template to your items in order to set copyright and description information about the contents. The **Template** drop-down field lets you choose one of your metadata templates you customized in :ref:`Templates Settings <templates_settings>`. You can access the **Template Manager** also with the edit button to the right of the drop-down field.
 
