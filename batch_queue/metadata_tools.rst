@@ -17,6 +17,8 @@ Metadata Tools
 
 The Batch Manager metadata tools are used to apply the :ref:`Digital Asset Management <asset_management>` by managing metadata values in items hosted in a Queue, to help to classify contents in your collection or to prepare for sharing outside the box.
 
+.. _bqm_qualitysort:
+
 Quality Sort
 ------------
 
