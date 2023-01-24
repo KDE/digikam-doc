@@ -29,3 +29,4 @@ This section explain how to use the digiKam batch queue manager.
    batch_queue/dng_converter.rst
    batch_queue/metadata_tools.rst
    batch_queue/custom_script.rst
+   batch_queue/watermark_tool.rst

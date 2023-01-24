@@ -256,6 +256,10 @@ Batch Queue Manager
 
         :ref:`custom_script`
 
+    .. container:: tile no-descr
+
+        :ref:`watermark_tool`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
