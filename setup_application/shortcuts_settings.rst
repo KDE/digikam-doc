@@ -40,7 +40,7 @@ No rating                         :kbd:`Ctrl+0`
 5 stars                           :kbd:`Ctrl+5`
 ================================= =============
 
-- Pick label assignment:
+- Pick Label assignment:
 
 ================================= ============
 Pick Label                        Shortcut
@@ -51,7 +51,7 @@ Pending                           :kbd:`Alt+2`
 Accepted                          :kbd:`Alt+3`
 ================================= ============
 
-- Color label assignment:
+- Color Label assignment:
 
 ================================= =================
 Color Label                       Shortcut
