@@ -59,7 +59,21 @@ Geometry Settings
 
 Specify in this view the watermark geometry settings such as **Placement Position**, **Rotation**, **Size**, and **Margins**.
 
+**Placement Type** is the lead geometry setting which will enable or disable other option from this view. **Specific Location** allows to set a static position of the watermark. **Systematic Repetition** will place the watermark in loop to cover the images. **Random Repetition** will place the watermark randomly over the images.
 
+**Density of watermark repetition** is Disabled in **Specific Location** mode. When you choose to have the watermark repeated many times in the **Placement Type**, you can specify here whether the repetition.
+
+**Randomize watermark orientation** is enabled in **Random Repetition** mode only. When you choose to have the watermark repeated randomly in the **Placement Type**, you can specify here to randomly rotate the watermark (0, 90, 180, 270 degrees).
+
+Use **Sparsity Factor** option to get more control over the sparsity of watermark repetition. The higher the value the sparser the watermarks get. Use floating point values, typically between 1.0 and 3.0. It can also be less than 1.0.
+
+**Placement Position** allows to specify the area on the image to writ the watermark. Available values are **Top left**, **Top right**, **Bottom left**, **Bottom right**, **Center**, **Top center**, and **Bottom center**.
+
+**Rotation** allows to specify the amount of degrees to rotate the watermark. Available values are **0 degrees**, **90 degrees CW**, **180 degrees**, and **270 degrees CW**.
+
+**Size** setting allow to specify the size of watermark, as a percentage of the marked image.
+
+**X margin** and **Y margin** allow to specify the margin from edge in X and Y directions, as a percentage of the marked image.
 
 .. figure:: images/bqm_watermark_geometry_settings.webp
     :alt:
