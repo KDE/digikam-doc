@@ -164,7 +164,7 @@ Although choosing the matching film profile may yield a better result, the conve
 Colors Balance
 --------------
 
-Digital cameras often have problems with lighting conditions and it is not unusual to want to correct the color contrast and brightness of a photograph. You can experiment with altering the levels of different aspects of your photographs using the tools under the Color menu. You can see any adjustments you make reflected in the preview. When you are happy with the results, press Ok and they will take effect. 
+Digital cameras often have problems with lighting conditions and it is not unusual to want to correct the color contrast and brightness of a photograph. You can experiment with altering the levels of different aspects of your photographs using the tools under the **Color** menu. You can see any adjustments you make reflected in the preview. When you are happy with the results, press **Ok** and they will take effect.
 
 .. figure:: images/editor_colors_balance.webp
     :alt:

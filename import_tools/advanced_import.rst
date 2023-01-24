@@ -40,7 +40,7 @@ The new filename that digiKam will use for the photographs when they are downloa
 
 .. caution::
 
-    With Gphoto2 drivers, at the moment digiKam cannot read metadata of RAW files during the import. You might want to import the files while preserving camera filenames first and then rename them after the import using the rename function (F2).
+    With Gphoto2 drivers, at the moment digiKam cannot read metadata of RAW files during the import. You might want to import the files while preserving camera filenames first and then rename them after the import using the rename function (:kbd:`F2`).
 
     Another solution will be to use instead a memory cards reader and the USB Mass Storage driver.
 
@@ -55,7 +55,7 @@ Auto-Creation of Albums
 
     The Import Tool Albums Auto-Creation Advanced Settings
 
-Check **Extension-based sub-albums** and digiKam will create subalbums based on the file extensions of the imported images in the target album. At stage to :ref:`download from your camera to your computer <camera_download>`, digiKam will open a dialog where you can choose the target album once you click one of the download options either from the toolbar or from the Item menu. If you want to create a new Album, into which you could download the photographs, click the **New Album** button. The new Album will be created as a sub-folder of the Album that is currently selected in the existing Album list. This means that if you do not want your new Album to be a sub-folder of an existing folder you must first select the collection where you want to create the new album. Collections are indicated on top level of album hierarchies.
+Check **Extension-based sub-albums** and digiKam will create subalbums based on the file extensions of the imported images in the target album. At stage to :ref:`download from your camera to your computer <camera_download>`, digiKam will open a dialog where you can choose the target album once you click one of the download options either from the toolbar or from the **Item** menu. If you want to create a new Album, into which you could download the photographs, click the **New Album** button. The new Album will be created as a sub-folder of the Album that is currently selected in the existing Album list. This means that if you do not want your new Album to be a sub-folder of an existing folder you must first select the collection where you want to create the new album. Collections are indicated on top level of album hierarchies.
 
 If your camera provides information about the date of the photograph's taking or, if you import from a USB device or a folder, the images contain Exif metadata with date/time information, digiKam can use this to automatically create subalbums in the target album during import. Subalbums names will be based on the image dates. All images which have the same date will be downloaded into the same subalbum if you check **Date-based sub-albums**. Not all cameras include this information. See the :ref:`sidebar Metadata section <camera_import>` for more detail about information your camera may have embedded in your photographs.
 
