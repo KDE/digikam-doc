@@ -15,7 +15,7 @@ Time Adjust
 
 .. contents::
 
-The Time Adjust tool available from :menuselection:`Item --> Adjust Time & Date` :kbd:`Ctrl+Shift+D` allows to tune or records the timestamps in file metadata. This common task is sometime mandatory when your images do not contains dates in metadata as when contents is digitized with a scanner, or when a camera records a wrong date in you file due to a bad device settings. With this tool you can choose the right source to take the date information, the date entries to fix or append, and the calculation to operate on dates before registration.
+The Time Adjust tool available from :menuselection:`Item --> Adjust Time & Date` :kbd:`Ctrl+Shift+D` allows to tune or records the timestamps in file metadata. This common task is sometime mandatory when your images do not contain dates in metadata as when contents is digitized with a scanner, or when a camera records a wrong date in you file due to a bad device settings. With this tool you can choose the right source to take the date information, the date entries to fix or append, and the calculation to operate on dates before registration.
 
 The **Timestamp Used** group allows to select the source of the date. Available choices are listed below:
 
@@ -23,7 +23,7 @@ The **Timestamp Used** group allows to select the source of the date. Available 
     - **File name timestamp**: the date extracted from the filename.
     - From the file system: **File last Modified** will use the last modification date of file.
     - From the metadata:
-        - **Exif/IPTC/XMP**: parse Exif, IPTC, and XMP to get be first value available.
+        - **Exif/IPTC/XMP**: parse Exif, IPTC, and XMP to get the first value available.
         - **EXIF: created**: image creation timestamp from Exif.
         - **EXIF: original**: image original timestamp from Exif.
         - **EXIF: digitized**: image digitized timestamp from Exif.

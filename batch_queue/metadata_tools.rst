@@ -22,7 +22,7 @@ The Batch Manager metadata tools are used to apply the :ref:`Digital Asset Manag
 Image Quality Sort
 ------------------
 
-This tool parse your items to assign a **Pick Label** automatically depending of the aesthetic value of the contents. You can use the full automated solution based on depp-learning engine (recommended), or use a manual settings for each criterias. These settings are fully explained in the :ref:`Setup Quality <imgqsort_settings>` section from this manual.
+This tool parse your items to assign a **Pick Label** automatically depending of the aesthetic value of the contents. You can use the full automated solution based on deep-learning engine (recommended), or use a manual settings for each criteria. These settings are fully explained in the :ref:`Setup Quality <imgqsort_settings>` section from this manual.
 
 .. figure:: images/bqm_metadata_quality.webp
     :alt:
@@ -112,7 +112,7 @@ This tool to drop parts of metadata from files, into the **Exif**, **IPTC**, and
         - **Completely**: drop all XMP entries.
         - **Date**: drop the time-stamp.
         - **DigiKam**: drop all information from application namespace.
-        - **DigiKam image history**: drop only the versionning data from the application namespace.
+        - **DigiKam image history**: drop only the versioning data from the application namespace.
         - **Dublin Core**: drop only the entries from Dublin Core namespace.
         - **Exif**: drop only the translated Exif information stored in the dedicated namespace.
         - **Video**: drop only the entries from the Video namespace.

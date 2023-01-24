@@ -44,11 +44,11 @@ From left to right, the Image Editor Toolbar includes these actions:
 
     1. Close image editor Window.
 
-    2. Open original image from the versionning stack.
+    2. Open original image from the versioning stack.
 
     3. Export image to a new file format.
 
-    4. Save changes in versionning stack using default format.
+    4. Save changes in versioning stack using default format.
 
     5. Save the modified image in a new version using specific format.
 
