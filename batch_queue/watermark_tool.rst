@@ -45,6 +45,7 @@ If you want to use the **Image** watermark type, make sure that you already have
 Text Settings
 -------------
 
+The **Text** watermark is more simple to use as it do not requires an external source of contents to generate the mark over the images. In **Watermark text** field, enter the desired string to use a superimposed contents. Below, you can tune the **Font** properties to write text on images, as the **name**, the **style**, and the **color** (the **size** is auto calculated). With **Text opacity** you can adjust the transparency of the watermark text, where 100 is fully opaque and 0 is fully transparent. Finally, the **Use background** allows to draw the text over a colored background where you can choose the color and the transparency level.
 
 .. figure:: images/bqm_watermark_text_settings.webp
     :alt:
@@ -68,8 +69,8 @@ Specify in this view the watermark geometry settings such as **Placement Positio
 
 Once you are satisfied with the settings, hit the **Run** button, and once digiKam’s finished, you’ll find the watermarked photos in the target folder. See below a sample of text watermark applied to an image with transparency.
 
-.. figure:: images/bqm_watermark_sample.webp
+.. figure:: images/bqm_watermark_example.webp
     :alt:
     :align: center
 
-    Semple of Text Watermark Applied to and Image Using Transparency
+    Sample of Text Watermark Applied to and Image Using Transparency
