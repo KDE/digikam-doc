@@ -66,7 +66,7 @@ Specify in this view the watermark geometry settings such as **Placement Positio
 
     The Batch Queue Manager Watermark Tool Geometry Settings
 
-Once you are satisfied with the settings, hit the Run button, and once digiKam’s finished, you’ll find the watermarked photos in the target folder. See below a sample of text watermark applied to an image with transparency.
+Once you are satisfied with the settings, hit the **Run** button, and once digiKam’s finished, you’ll find the watermarked photos in the target folder. See below a sample of text watermark applied to an image with transparency.
 
 .. figure:: images/bqm_watermark_sample.webp
     :alt:
