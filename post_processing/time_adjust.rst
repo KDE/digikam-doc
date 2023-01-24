@@ -32,7 +32,7 @@ The **Timestamp Used** group allows to select the source of the date. Available 
         - **EXIF: created (fuzzy)**: image creation timestamp from Exif and trying different encoding combinations in case of non-respect of standard.
         - **EXIF: original (fuzzy)**: image original timestamp from Exif and trying different encoding combinations in case of non-respect of standard.
         - **EXIF: digitized (fuzzy)**: image digitized timestamp from Exif and trying different encoding combinations in case of non-respect of standard.
-    - A fixed date taken in calendar.
+    - A fixed date taken from calendar.
 
 The **Timestamp Adjustments** group allows to select operation to process of source date to evaluate the target date. Available choices are listed below:
 
@@ -53,7 +53,7 @@ The **Timestamp updated** group allows to define the target entries to patch wit
     - **XMP**: will change the image timestamp from standard XMP namespaces.
     - **XMP: video**: will change the image timestamp from WMP video namespace.
     - **IPTC: created**: will change the image created timestamp from IPTC.
-    - **File last modified**: will change the last modified timestamp from file system.    
+    - **File last modified**: will change the last modified timestamp from file system.
 
 .. figure:: images/time_adjust.webp
     :alt:
