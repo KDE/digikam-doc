@@ -27,7 +27,7 @@ Select one or several images in any view from the main window, call **Add to Cur
 
 On the **top left** side, the window shows the list of queues to process. Queues are a stack of items to batch using the same tools and the same settings. Each queue will be processed sequentially, but queue contents can be processed in parallel, depending of the settings. In this view, the list is ordered in flat showing item thumbnail, the original filename, and the target filename corresponding of the result.
 
-On the **top middle**, this view shows the flat list of tools to apply on items queue. Each tool are apply step by step for the top to the bottom. You can arrange the order as you want. It's highly recommended to export to a new format at end of this list to be sure to preserve the best image quality.
+On the **top middle**, this view shows the flat list of tools to apply on items queue. Each tool are apply step by step from the top to the bottom. You can arrange the order as you want. It's highly recommended to export to a new format at end of this list to be sure to preserve the best image quality.
 
 On the **top right** side, this view shows the settings of the current tool selected on the top middle view. These settings will be saved in the queue and applied to all items to process in batch.
 

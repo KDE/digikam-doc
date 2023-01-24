@@ -19,8 +19,8 @@ The Batch Manager metadata tools are used to apply the :ref:`Digital Asset Manag
 
 .. _bqm_qualitysort:
 
-Quality Sort
-------------
+Image Quality Sort
+------------------
 
 This tool parse your items to assign a **Pick Label** automatically depending of the aesthetic value of the contents. You can use the full automated solution based on depp-learning engine (recommended), or use a manual settings for each criterias. These settings are fully explained in the :ref:`Setup Quality <imgqsort_settings>` section from this manual.
 
@@ -32,8 +32,8 @@ This tool parse your items to assign a **Pick Label** automatically depending of
 
 .. _bqm_assigntemplate:
 
-Assign Template
----------------
+Apply Metadata Template
+-----------------------
 
 This tool is dedicated to apply a metadata template to your items in order to set copyright and description information about the contents. The **Template** drop-down field lets you choose one of your metadata templates you customized in :ref:`Templates Settings <templates_settings>`. You can access the **Template Manager** also with the edit button to the right of the drop-down field.
 
@@ -45,8 +45,8 @@ This tool is dedicated to apply a metadata template to your items in order to se
 
 .. _bqm_translatemetadata:
 
-Translate Strings
------------------
+Translate Metadata
+------------------
 
 This tool allows to translate automatically some alternative language string from metadata using an online translator service. Translatable entries are:
 

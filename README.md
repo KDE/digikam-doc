@@ -23,7 +23,7 @@ After you cloned this repository (only need to be done once), use a command line
 
 Under **Linux:** run `make html`
 
-The HTML is generated in `build/html`. Open the file `index.html` in your prefered web browser. It must look like this:
+The HTML is generated in `build/html`. Open the file `index.html` in your preferred web browser. It must look like this:
 
 [![](project/images/handbook_HTML.webp "HTML Version of digiKam Handbook Shown in Web Browser")](project/images/handbook_HTML.webp)
 
@@ -31,7 +31,7 @@ The HTML is generated in `build/html`. Open the file `index.html` in your prefer
 
 Under **Linux:** run `make epub`
 
-The EPUB ebook is generated in `build/epub`. Open the file `DigikamManual.epub` in your prefered ebook reader. It must look like this:
+The EPUB ebook is generated in `build/epub`. Open the file `DigikamManual.epub` in your preferred e-book reader. It must look like this:
 
 [![](project/images/handbook_EPUB.webp "EPUB Version of digiKam Handbook Shown in e-book Viewer")](project/images/handbook_EPUB.webp)
 
@@ -51,7 +51,7 @@ All others directories are used to host sections of the documentation implemente
 
 ### File Hierarchies
 
-ReStructuredText Documentation implementation is located in top level directory in .rst files and sub-directories with the same name
+ReStructuredText documentation implementation is located in top level directory in .rst files and sub-directories with the same name
 corresponding to the handbook sections. The root entry of the manual is [index.rst](index.rst).
 
 Each handbook section start with a .rst file from top level directory and a dedicated
@@ -171,7 +171,7 @@ This section give an overview to start with digiKam.                            
    getting_started/database_intro.rst
 ```
 
-And finaly, the chapter implementation of the section, here the first one, as all others uses the same kind of code:
+And finally, the chapter implementation of the section, here the first one, as all others uses the same kind of code:
 
 ```
 Implementation                                                                                              Comments
@@ -201,17 +201,15 @@ Background                                                                      
 
 ### Sphinx Framework
 
-The Python based Sphinx documentation generator translates a set of reStructuredText source files into various output formats,
-automatically producing cross-references, indices etc. It just used at run-time with the **make html** command to
-render contents, and reports warnings and errors.
+The Python based Sphinx documentation generator translates a set of reStructuredText source files into various output formats, automatically producing cross-references, indices etc. It just used at run-time with the **make html** command to render contents, and reports warnings and errors.
 
 Documentation writer will never touch the Sphinx configuration.
 
 ### The ReStructuredText Format
 
 ReStructuredText is a simple file format for textual data used primarily in the Python programming language
-community for technical documentations. It can be edited with a simple Text Editor application as
-[Kate](https://kate-editor.org/) featuring syntax highlighting to help documentation writers.
+community for technical documentations. It can be edited with a Text Editor application as powerful
+[Kate](https://kate-editor.org/) featuring syntax highlighting and spellchecking to help documentation writers.
 
 ReStructuredText is part of the [DocUtils project](https://docutils.sourceforge.io/) from the Python Documentation Special Interest Group,
 aimed at creating a set of tools for Python. DocUtils can extract comments and information from ReStructuredText,
@@ -220,7 +218,7 @@ and format them into various forms of program documentation.
 ReStructuredText is a lightweight markup language designed to be both processable by documentation-processing
 software such as DocUtils, and easily readable by human who are reading and writing source code.
 
-Take care that ReStructuredText file (.rst) specificities:
+Take care that ReStructuredText file (.rst) specificity:
 
 - It's an indent featured markup language. Respect well the spaces on front of blocks to prevent compilation warnings.
 - Indent must be done with **4 spaces**, never use tabs at all.
@@ -235,7 +233,7 @@ A good place to learn **ReStructuredText** format used in this documentation, it
 - [Reference](http://docutils.sourceforge.net/docs/user/rst/quickref.html).
 - [Markup Languages Synthesis](https://hyperpolyglot.org/lightweight-markup).
 
-[This StackOverflow entry](https://stackoverflow.com/questions/2746692/restructuredtext-tool-support) list the tools avaialble to work with ResStructuredText files.
+[This StackOverflow entry](https://stackoverflow.com/questions/2746692/restructuredtext-tool-support) list the tools available to work with ResStructuredText files.
 
 ### ReStructuredText Syntax Reminders
 
@@ -306,7 +304,7 @@ When all contributor tasks are done, a Merge Request must be send to the origina
 - Contributor must adjust, comment, or rebase changes in the forked repository accordingly with coordinator feedback.
 - When all is ready, coordinator merge changes from the forked repository to the original repository.
 
-Later, a contributor can re-use the forked repository to rebase contents with original repository. The forked repository
+Later, a contributor can re-use the forked repository to re-base contents with original repository. The forked repository
 will be up-to-date and the contributor can create a new Merge Request with new changes to integrate in the original repository.
 
 To have the forked repository sync with the original 'origin' upstream, uses this git command in your fork: `git fetch origin`
@@ -330,7 +328,7 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
 
 - Use a tool as [Spectacle](https://apps.kde.org/spectacle/) to take a shot. Use the region selection option to capture only important area.
 
-- Remove unecessary buttons and dialog header to limit image file size.
+- Remove unnecessary buttons and dialog header to limit image file size.
 
 - Always use **WEBP** file format to save images.
 
@@ -348,12 +346,12 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
     My Screenshot Legend
 ```
 
-### GIF Animated Screencast Capture
+### GIF Animated Screen-cast Capture
 
 Another format supported inside the documentation is **GIFa** video. It can be used to present a region of screen
 from the application while an operation is under progress. It's perfect to write tutorials.
 
-Use the same specifications to take screencast than for screenshot, aka color theme, widget style, icon theme, etc.
+Use the same specifications to take screen-cast than for screenshot, aka color theme, widget style, icon theme, etc.
 
 To prevent huge GIFa files, just capture the right area from application and limit capture to less than 10 seconds.
 
@@ -368,13 +366,13 @@ Configuration:
 
 Do not use space and capitalized characters in file name.
 
-This will record a screencast in WEBM format. Even if WEBM is supported in HTML and EPUB,
+This will record a screen-cast in WEBM format. Even if WEBM is supported in HTML and EPUB,
 Sphinx framework is not yet able to embed WEBM in EPUB.
 Convert it to GIFa using [project/webm2gif.sh](project/webm2gif.sh) script.
 
 GIFa files must be hosted in **videos/** sub-folders from each documentation section.
 
-- To include the screencast in a ReStructuredText file, use the syntax below;
+- To include the screen-cast in a ReStructuredText file, use the syntax below;
 
 ```
 .. figure:: videos/my_screen_cast.gif
@@ -389,9 +387,7 @@ GIFa files must be hosted in **videos/** sub-folders from each documentation sec
 
 #### Overview
 
-The documentations are internationalized by KDE translator teams. In this repository, only the native English
-version is maintained and text is written in ReStructuredText containers. These files are daily parsed by
-maintenance scripts to extract strings and exported to dedicated containers for translators.
+The documentations are internationalized by KDE translator teams. In this repository, only the native **American English (United States)** version is maintained and text is written in ReStructuredText containers. These files are daily parsed by maintenance scripts to extract strings and exported to dedicated containers for translators.
 
 In the background, a [top level script](https://invent.kde.org/sysadmin/l10n-scripty/-/blob/master/process-static-messages.sh) from **l10n-scripty** repository call **StaticMessages.sh** script from this repository.
 
@@ -421,7 +417,7 @@ Corresponding languages must be enabled in the documentation web-site following 
 
 #### How to Compile a Supported Language
 
-By default the make command generate the English version. If you want to test an internationalized version using transaltions hosted from **locale** disrectory,
+By default the make command generate the English version. If you want to test an internationalized version using translations hosted from **locale** directory,
 use the syntax below:
 
 `make -e SPHINXOPTS="-D language='fr'" html`
@@ -435,7 +431,7 @@ See [TODO](TODO) file from this repository.
 ## Continuous Integration
 
 At all changes done in this repository, as commits and Merge Requests, the [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration)
-will recompile automatically all the contents to check the validity of the DoReStructuredText files, including the current translations
+will recompile automatically all the contents to check the validity of the ReStructuredText files, including the current translations
 of the documentations.
 
 The [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) lists the history of the continuous integration pipelines.
@@ -449,15 +445,15 @@ you can show a translated version of this documentation by selecting a language 
 
 ## Convert EPUB to PDF
 
-Sphinx allows to generate PDF using Latex engine in background, but thid converter as several limitations, as the non support of WEBP and GIF formats used for screenshots and screencast.
+Sphinx allows to generate PDF using Latex engine in background, but thid converter as several limitations, as the non support of WEBP and GIF formats used for screenshots and screen-casts.
 
 An alternative is to install [Calibre](https://calibre-ebook.com/) and to convert the EPUB target to PDF like this:
 
 `ebook-convert build/epub/DigikamManual.epub build/epub/DigikamManual.pdf`
 
-The PDF file is generated in `build/epub`. Open the file `DigikamManual.pdf` in your prefered PDF reader.
+The PDF file is generated in `build/epub`. Open the file `DigikamManual.pdf` in your preferred PDF reader.
 
-Note: unlike EPUB, PDF is only for print purpose. During conversion video screencasts will be converted as still images, and all Internet links will be dropped.
+Note: unlike EPUB, PDF is only for print purpose. During conversion video screen-casts will be converted as still images, and all Internet links will be dropped.
 
 ## Rationale
 

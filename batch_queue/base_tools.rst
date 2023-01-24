@@ -157,19 +157,19 @@ These tools allow to save images to new file formats. These are mostly placed at
 Metadata Tools
 --------------
 
-    - :ref:`Image Quality Sort <maintenance_quality>`
+    - :ref:`Image Quality Sort <bqm_qualitysort>`
 
-    - :ref:`Apply Metadata Template <templates_settings>`
+    - :ref:`Apply Metadata Template <bqm_assigntemplate>`
 
-    - :ref:`Translate Metadata <captions_view>`
+    - :ref:`Translate Metadata <bqm_translatemetadata>`
 
-    - :ref:`Assign Captions <captions_view>`
+    - :ref:`Assign Captions <bqm_assigncaptions>`
 
-    - :ref:`Assign Labels <captions_view>`
+    - :ref:`Assign Labels <bqm_assignlabels>`
 
-    - **Remove Metadata**
+    - :ref:`Remove Metadata <bqm_removemetadata>`
 
-    - **Time Adjust**
+    - :ref:`Time Adjust <bqm_timeadjust>`
 
 .. _bqm_customtools:
 

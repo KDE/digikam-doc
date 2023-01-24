@@ -45,8 +45,8 @@ If your imaging workflow meets all six criteria listed below, then you don't nee
 
     - Your only other image output is via email or the web, where sRGB is the de facto standard.
 
-Color Management Definitions
-----------------------------
+Usual Definitions
+-----------------
 
 What follow is some additional comments and definitions to understand the Color Management:
 
@@ -66,7 +66,7 @@ An **interpolated RAW file** isn't a RAW file. For some reason this simple point
 
 **In-camera produced JPEGs don't need a camera profile**: All JPEGs (or TIFFs) coming straight out of a camera (even if produced by point-and-shoots cameras that don't allow you to save a RAW file) start life inside the camera as a RAW file produced by the camera's Analog to Digital converter. If you save your images as JPEGs, then the processor inside the camera interpolates the RAW file, assigns a camera profile, translates the resulting RGB numbers to a working space (usually **sRGB** but sometimes you can choose **AdobeRGB**, depending on the camera), does the JPEG compression, and stores the JPEG file on your camera card. So JPEGs (or TIFFs) from your camera don't need to be assigned a camera profile which is then translated to a working space. JPEGs from a camera are already in a working space.
 
-**Useful mathematical information**: If you are dealing with Libraw's linear gamma output: Mathematically speaking, when doing a gamma transform you normalize (that is, divide by 256 if you are working with 8-bit values) the RGB numbers and raise the resulting numbers to an appropriate power depending on the respective gammas of the starting and ending color space, then renormalize the results to a new set of RGB numbers. It's not hard, and very instructive, to do this with a calculator for a few sets of RGB numbers spaced from (0,0,0) to (255,255,255) to see how RGB numbers change from one gamma encoding to another. Lcms does this for you when you ask Lcms to convert from one color space to another.
+**Useful mathematical information**: If you are dealing with Libraw's linear gamma output: Mathematically speaking, when doing a gamma transform you normalize (that is, divide by 256 if you are working with 8-bit values) the RGB numbers and raise the resulting numbers to an appropriate power depending on the respective gammas of the starting and ending color space, then re-normalize the results to a new set of RGB numbers. It's not hard, and very instructive, to do this with a calculator for a few sets of RGB numbers spaced from (0,0,0) to (255,255,255) to see how RGB numbers change from one gamma encoding to another. Lcms does this for you when you ask Lcms to convert from one color space to another.
 
 **Copyrighted and copyleft working spaces**:
 
@@ -90,8 +90,8 @@ And quite a few other working spaces that could be added to this list, are all m
 
 **Rendering intent** refers to the way gamuts are handled when the intended target color space cannot handle the full gamut. For more information take a look to the dedicated :ref:`section from this manual <working_space>`.
 
-The Color Space Connections
----------------------------
+Color Space Connections
+-----------------------
 
 .. The question for each RGB trio of values in the (let us assume) 16-bit TIFF produced by Libraw becomes, what does a particular trio of RGB values for the pixels making up images produced by this particular (make and model) camera really mean in terms of some absolute standard referencing some ideal observer.
 
