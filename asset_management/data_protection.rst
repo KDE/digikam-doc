@@ -44,21 +44,21 @@ Disaster                       1-2%        1-2%
 
 So let us analyze those cases step by step.
 
-Storage Physical Deterioration
-------------------------------
+Storage Deterioration
+---------------------
 
 Optical Drives
 ~~~~~~~~~~~~~~
 
 Physical deterioration of the media happens more rapidly with paper and CD-Rs than the average of film. Yet while film lasts longer (sometimes decades longer) than other forms of media, the right kind of backup of digital media never loses anything. Film decays - digital 1's and 0's do not, and film starts to decay the moment it's created and developed. It will never have the same color, contrast, etc. that it did have a moment before. Digital doesn't do that. However, digital is susceptible to corruption. And yes, physical media such as floppies and magnetic hard drives are also susceptible to the decay of the medium, just like CDs are. They just last longer.
 
-To combat the problem of DVDs/Blue-ray, they need to be properly cared for and not trusted for more than a few years. Thankfully you can purchase archive-quality CDs and DVDs which last longer, though they are much more difficult to obtain and are much more expensive. There are offers out there for gold-plated DVDs, few euros a piece claiming 100 years storage life (if you care to believe it).
+To combat the problem of optical drives, they need to be properly cared for and not trusted for more than a few years. Thankfully you can purchase archive-quality CDs and DVDs which last longer, though they are much more difficult to obtain and are much more expensive. There are offers out there for gold-plated optical drive, few euros a piece claiming 100 years storage life (if you care to believe it).
 
-DVD/Blue-ray disks may become unreadable, but you can reduce the risk using good disks and a good recorder, and storing them in a correct way. The best DVD recorders are not much more expensive than the cheapest, but they write in a much more reliable way. It's a matter of choosing the right one.
+Optical disks may become unreadable, but you can reduce the risk using good disks and a good recorder, and storing them in a correct way. The best optical drive recorders are not much more expensive than the cheapest, but they write in a much more reliable way. It's a matter of choosing the right one.
 
-Essentially,  DVDs/Blue-ray are very prone to errors, even in a freshly written state. That's why they are heavily protected with a checksum mechanism (75% of data are effective data, the rest is formatting and checksum overhead). But even with that massive amount of protection they will suffer deterioration from chemical aging, ultra-violet exposure, scratches, dust, etc.
+Essentially, optical drives are very prone to errors, even in a freshly written state. That's why they are heavily protected with a checksum mechanism (75% of data are effective data, the rest is formatting and checksum overhead). But even with that massive amount of protection they will suffer deterioration from chemical aging, ultra-violet exposure, scratches, dust, etc.
 
-For damaged DVDs/Blue-ray, Wikipedia `list all common applications <https://en.wikipedia.org/wiki/Data_recovery#List_of_data_recovery_software>`_ designed to get data from damaged floppies, hard drives, flash media such as camera memory and USB drives, and so forth.
+For damaged optical drives, Wikipedia `list all common applications <https://en.wikipedia.org/wiki/Data_recovery#List_of_data_recovery_software>`_ designed to get data from damaged floppies, hard drives, flash media such as camera memory and USB drives, and so forth.
 
 Dual-layer optical media Blu-ray disk can store 50 GB, almost six times the capacity of a dual layer DVD at 8.5 GB. Everything that has been said about CDs/DVDs applies to Blu-ray disks as well.
 
@@ -91,7 +91,7 @@ In case of use as external device, one major cause for data loss (often recovera
 Magnetic Media
 ~~~~~~~~~~~~~~
 
-Magnetic tapes are used in backup systems, much more in professional environments than in home use. Tapes have issues with data retention and changing technology, but they are safer in one aspect than CDs and DVDs: they are less exposed to scratches and dirt and writing deficiencies. On the other hand they are susceptible to magnetic fields. Throw a magnet next to a tape and it's gone. Tapes should be re-copied every 5-8 years, otherwise too many bits will fail and escape the checksum protection. The downside of magnetic tapes is often the recorder price and the restore time (20x longer than from HDD). Tape backup system have seen their best days.
+Magnetic tapes are used in backup systems, much more in professional environments than in home use. Tapes have issues with data retention and changing technology, but they are safer in one aspect than optical drives: they are less exposed to scratches and dirt and writing deficiencies. On the other hand they are susceptible to magnetic fields. Throw a magnet next to a tape and it's gone. Tapes should be re-copied every 5-8 years, otherwise too many bits will fail and escape the checksum protection. The downside of magnetic tapes is often the recorder price and the restore time (20x longer than from HDD). Tape backup system have seen their best days.
 
 Power Supply Failures
 ---------------------
@@ -181,8 +181,8 @@ Flaky power supplies are another source of transmission losses because they crea
 
 Even if you are not overly concerned today with transmission problems, have a look into the future at illustration. Already in 2010 we'll see thousands of errors per year.
 
-Future of File-system with ZFS
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Future of File-systems
+~~~~~~~~~~~~~~~~~~~~~~
 
 `ZFS <https://en.wikipedia.org/wiki/ZFS>`_ from Oracle seems to be one of two candidates to deal with disk errors on a low level, and it is highly scalable. It is Open Source, heavily patented, comes with an GPL incompatible license, and is available on Solaris and macOS.
 
@@ -250,8 +250,8 @@ Therefore disaster control means de-localized storage. Move your backups upstair
 
 There is another good aspect to the physical separation: as said above, panic is often the cause of destroying data, even the backup data. Having a backup not at hand right away may safe your ass one day.
 
-Backup Technicalities Explained
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Backup Technicalities
+~~~~~~~~~~~~~~~~~~~~~
 
     - **Full Backup**: A complete backup of all the files being backed up. It is a snapshot without history, it represents a full copy at one point in time.
 
