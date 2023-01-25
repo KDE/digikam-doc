@@ -81,10 +81,19 @@ Use **Sparsity Factor** option to get more control over the sparsity of watermar
 
     The Batch Queue Manager Watermark Tool Geometry Settings
 
-Once you are satisfied with the settings, hit the **Run** button, and once digiKam’s finished, you’ll find the watermarked photos in the target folder. See below a sample of text watermark applied to an image with transparency.
+Results
+-------
 
-.. figure:: images/bqm_watermark_example.webp
+Once you are satisfied with the settings, hit the **Run** button, and once digiKam’s finished, you’ll find the watermarked photos in the target folder. See below the samples of text and image watermarks applied to the same image using transparency.
+
+.. figure:: images/bqm_watermark_example_image.webp
     :alt:
     :align: center
 
-    Sample of Text Watermark Applied to and Image Using Transparency
+    Sample of Centered Image Watermark Applied to a photo Using Transparency
+
+.. figure:: images/bqm_watermark_example_text.webp
+    :alt:
+    :align: center
+
+    Sample of Systematic Repeated Text Watermark Applied to a photo Using Transparency and
