@@ -63,9 +63,19 @@ To edit the properties of an entry, use the **Update button** on the right of th
 The Network Shares Specificity
 ------------------------------
 
-For the **Collections on Network Shares**, the **Plus button** allows to append a path to a registered collection entry. This feature resolve the problematic collections and database shared over a local network (here using a `Network Attached Storage - NAS <https://en.wikipedia.org/wiki/Network-attached_storage>`_), and accedes by different digiKam clients (here a Windows, Linux, and macOS). As each client will mount the shared collection to different paths on local computers, this allows to host the paths in the database. As all client computers will share the same database, all information hosted in database and managed with each digiKam clients will not be duplicated on the NAS.
+For the **Collections on Network Shares**, the **Plus button** allows to append a path to a registered collection entry. This feature resolve the problematic collections and database data shared over a local network (here using a `Network Attached Storage - NAS <https://en.wikipedia.org/wiki/Network-attached_storage>`_), and accedes by different digiKam clients (here a Windows, Linux, and macOS). As each client will mount the shared collection to different paths on local computers, this allows to host all paths in the database referring to the same main shared collection path. As all client computers will share the same database, all information hosted in database and managed with each digiKam clients will not be duplicated on the NAS.
 
-.. note::
+The configuration can be set following steps listed below:
+
+    - On the **Linux** client, user adds the first entry to the network collection: :file:`/mnt/nas`
+
+    - on the **macOS** client, with the "+" icon user now adds its base path to the collection: :file:`/Volumes/data/NAS`
+
+    - on the **Windows** client, user adds the shared path: :file:`X:\NAS-digiKam`
+
+Later, other extra digiKam clients would also be conceivable if the NAS has a different mount point or used by UNC path. On each digiKam clients it's important that all base paths then refer to the same network shared collection in the setup dialog.
+
+.. important::
 
     This kind of resources shared on the local network do not permit to use each client at the same time with a common database.
 
