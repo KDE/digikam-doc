@@ -74,7 +74,9 @@ The consideration are these:
 Automatic Metadata
 ~~~~~~~~~~~~~~~~~~
 
-How to go about all this metadata business? Firstly, there are already a lot of **automatically generated metadata**: Exif data and Makernotes. If you have configured digiKam with your identity section all imported images will be imprinted with this data set which includes copyrights, all automatic. If you have a GPS track recorded in parallel to your taking the photographs, you can geolocate those images in a single action using the Geolocation tool. Even if you brought back 1000 images from a shooting session, so far you'll not have spent more than 10 minutes to do all that. And by now you have all camera settings of every shot, lens data like zoom, focus, aperture etc., date and time, shooting location, copyrights, authorship, program used, and more. Not bad, isn't it? But we could have done more during the importing, we could have changed the file names to include the date, or place or theme, we could have changed the format to a lossless 16 bit per channel format, we could have automatically separated JPEG and RAW files into their folders.
+How to go about all this metadata business? Firstly, there are already a lot of **automatically generated metadata**: Exif data and Makernotes. If you have configured digiKam with your identity section all imported images will be imprinted with this data set which includes copyrights, all automatic. If you have a GPS track recorded in parallel to your taking the photographs, you can geolocate those images in a single action using the Geolocation tool. Even if you brought back 1000 images from a shooting session, so far you'll not have spent more than 10 minutes to do all that.
+
+And by now you have all camera settings of every shot, lens data like zoom, focus, aperture etc., date and time, shooting location, copyrights, authorship, program used, and more. Not bad, isn't it? But we could have done more during the importing, we could have changed the file names to include the date, or place or theme, we could have changed the format to a lossless 16 bit per channel format, we could have automatically separated JPEG and RAW files into their folders.
 
 .. figure:: images/dam_date_export_gdrive.webp
     :alt:
@@ -129,7 +131,7 @@ However, before you start attributing stars everywhere take a moment to establis
     :alt:
     :align: center
 
-    The Edit Rating Properties From Thumbbar
+    The Edit :ref:`Rating Properties <labels_edit>` From Thumbbar
 
 That will get you quite far in distinguishing your rating pyramid. Say, you choose a ratio of 7 between levels. For every 5 star image you'll then have 7 4 stars, 49 3 stars and so on, resulting in almost 20000 pictures. Amazing? Yes, and 16807 of them you didn't have to rate at all! You even can define a different rating scheme depending on the kind of use, 2 stars for commercial use, may mean something else than 2 stars holiday photos. It is also a good practice to define a neutral rating, everything below is actually a negative rating.
 
