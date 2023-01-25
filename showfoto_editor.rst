@@ -10,9 +10,9 @@
 
 .. _showfoto_editor:
 
-############
-Image Editor
-############
+########
+Showfoto
+########
 
 This section explain how to use the Showfoto image editor.
 
