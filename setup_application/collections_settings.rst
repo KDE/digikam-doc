@@ -50,8 +50,6 @@ To edit the properties of an entry, use the **Update button** on the right of th
 
     The digiKam Collections Configuration Page Editing Category of a Root Album Folder
 
-For the **Collections on Network Shares**, the **Plus button** allows to append a path to the registered collection entry.
-
 .. important::
 
     The **Monitor the Albums for External Changes** option will trigger the database to update information. This can be a time-consuming operation especially under macOS and with network file system.
@@ -59,6 +57,23 @@ For the **Collections on Network Shares**, the **Plus button** allows to append 
 .. note::
 
     **File write access** in collection is necessary to change items contents and metadata.
+
+.. _network_shares:
+
+The Network Shares Specificity
+------------------------------
+
+For the **Collections on Network Shares**, the **Plus button** allows to append a path to a registered collection entry. This feature resolve the problematic collections and database shared over a local network (here using a `Network Attached Storage - NAS <https://en.wikipedia.org/wiki/Network-attached_storage>`_), and accedes by different digiKam clients (here a Windows, Linux, and macOS). As each client will mount the shared collection to different paths on local computers, this allows to host the paths in the database. As all client computers will share the same database, all information hosted in database and managed with each digiKam clients will not be duplicated on the NAS.
+
+.. note::
+
+    This kind of resources shared on the local network do not permit to use each client at the same time with a common database.
+
+.. figure:: images/setup_collection_network_shares.webp
+    :alt:
+    :align: center
+
+    Collection and Database Shared on Local Network Using NAS to 3 Different digiKam Clients
 
 .. _ignored_directories:
 
