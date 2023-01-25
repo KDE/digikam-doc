@@ -15,7 +15,7 @@ Overview
 
 .. contents::
 
-Showfoto is a stand alone version of the famous :ref:`digiKam Image Editor <image_editor>`. It work excacly like it plus important supplemental features that we will see in this section of the manual.
+Showfoto is a stand alone version of the famous :ref:`digiKam Image Editor <image_editor>`. It works mostly like this one, but with slight differences and supplemental features that we will see in this section of the manual.
 
 .. figure:: images/showfoto_main_window.webp
     :alt:
