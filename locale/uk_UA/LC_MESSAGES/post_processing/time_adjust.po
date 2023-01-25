@@ -1,0 +1,274 @@
+# Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: Digikam Manual 8.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-24 00:50+0000\n"
+"PO-Revision-Date: 2023-01-24 19:24+0200\n"
+"Last-Translator: Fracture dept <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 20.12.0\n"
+
+#: ../../post_processing/time_adjust.rst:1
+msgid "The digiKam Time Adjust"
+msgstr "Налаштування часу у digiKam"
+
+#: ../../post_processing/time_adjust.rst:1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free,"
+" learn, easy, date, time, adjust"
+msgstr ""
+"digiKam, документація, підручник користувача, керування фотографій,"
+" відкритий код, вільний, навчання, простий, дата, час, налаштування,"
+" коригування"
+
+#: ../../post_processing/time_adjust.rst:14
+msgid "Time Adjust"
+msgstr "Налаштування часу"
+
+#: ../../post_processing/time_adjust.rst:16
+msgid "Contents"
+msgstr "Зміст"
+
+#: ../../post_processing/time_adjust.rst:18
+msgid ""
+"The Time Adjust tool allows to tune or records the timestamps in file"
+" metadata. This common task is sometime mandatory when your images do not"
+" contains dates in metadata as when contents is digitized with a scanner, or"
+" when a camera records a wrong date in you file due to a bad device"
+" settings. With this tool you can choose the right source to take the date"
+" information, the date entries to fix or append, and the calculation to"
+" operate on dates before registration."
+msgstr ""
+"За допомогою інструмента налаштовування часу ви можете скоригувати часову"
+" позначку або записати часову позначку до метаданих файла. Цю типову дію"
+" іноді обов'язково виконувати, якщо ваші зображення не містять дат у"
+" метаданих. Таке трапляється, якщо дані було оцифровано за допомогою"
+" сканера, або фотоапаратом було записано до файла помилкову дату через"
+" помилкові налаштування пристрою. З адопомогою цього інструмента ви можете"
+" вибрати правильне джерело даних щодо дати, записи дати для виправлення або"
+" дописування та обчислення, які слід виконати з датою до реєстрації."
+
+#: ../../post_processing/time_adjust.rst:20
+msgid ""
+"The **Timestamp Used** group allows to select the source of the date."
+" Available choices are listed below:"
+msgstr ""
+"За допомогою групи **Використана часова позначка** можна вибрати джерело"
+" даних щодо дати. Доступні варіанти наведено у списку нижче:"
+
+#: ../../post_processing/time_adjust.rst:22
+msgid "**digiKam timestamp**: the date records in database."
+msgstr "**Часова позначка digiKam**: записи щодо дати у базі даних."
+
+#: ../../post_processing/time_adjust.rst:23
+msgid "**File name timestamp**: the date extracted from the filename."
+msgstr "**Часова позначка файла**: дата, яку видобуто з файла."
+
+#: ../../post_processing/time_adjust.rst:24
+msgid ""
+"From the file system: **File last Modified** will use the last modification"
+" date of file."
+msgstr ""
+"Для визначення дати внесення змін до файла буде використано дані"
+" **останнього внесення змін до файла** з файлової системи."
+
+#: ../../post_processing/time_adjust.rst:26
+msgid ""
+"**Exif/IPTC/XMP**: parse Exif, IPTC, and XMP to get be first value available."
+msgstr ""
+"**Exif/IPTC/XMP**: обробити Exif, IPTC і XMP для отримання першого"
+" доступного значення."
+
+#: ../../post_processing/time_adjust.rst:27
+msgid "**EXIF: created**: image creation timestamp from Exif."
+msgstr "**EXIF: створено**: часова позначка створення зображенні з Exif."
+
+#: ../../post_processing/time_adjust.rst:28
+msgid "**EXIF: original**: image original timestamp from Exif."
+msgstr "**EXIF: початковий**: часова позначка початкового зображення з Exif."
+
+#: ../../post_processing/time_adjust.rst:29
+msgid "**EXIF: digitized**: image digitized timestamp from Exif."
+msgstr "**EXIF: оцифровано**: часова позначка оцифровування з Exif."
+
+#: ../../post_processing/time_adjust.rst:30
+msgid "**IPTC: created**: image created timestamp from IPTC."
+msgstr "**IPTC: створено**: часова позначка створення зображення з IPTC."
+
+#: ../../post_processing/time_adjust.rst:31
+msgid "**XMP: created**: image created timestamp from XMP."
+msgstr "**XMP: створено**: часова позначка створення зображення з XMP."
+
+#: ../../post_processing/time_adjust.rst:32
+msgid ""
+"**EXIF: created (fuzzy)**: image creation timestamp from Exif and trying"
+" different encoding combinations in case of non-respect of standard."
+msgstr ""
+"**EXIF: створено (неточно)**: часова позначка створення зображення з Exif і"
+" спроба інших комбінацій кодування, якщо запис позначки не є"
+" стандартизованим."
+
+#: ../../post_processing/time_adjust.rst:33
+msgid "From the metadata:"
+msgstr "На основі метаданих:"
+
+#: ../../post_processing/time_adjust.rst:33
+msgid ""
+"**EXIF: original (fuzzy)**: image original timestamp from Exif and trying"
+" different encoding combinations in case of non-respect of standard."
+msgstr ""
+"**EXIF: початковий (неточно)**: часова позначка початкового зображення з"
+" Exif і спроба інших комбінацій кодування, якщо запис позначки не є"
+" стандартизованим."
+
+#: ../../post_processing/time_adjust.rst:34
+msgid ""
+"**EXIF: digitized (fuzzy)**: image digitized timestamp from Exif and trying"
+" different encoding combinations in case of non-respect of standard."
+msgstr ""
+"**EXIF: створено (оцифровано)**: часова позначка оцифровування зображення з"
+" Exif і спроба інших комбінацій кодування, якщо запис позначки не є"
+" стандартизованим."
+
+#: ../../post_processing/time_adjust.rst:35
+msgid "A fixed date taken in calendar."
+msgstr "Фіксована дата з календаря."
+
+#: ../../post_processing/time_adjust.rst:37
+msgid ""
+"The **Timestamp Adjustments** group allows to select operation to process of"
+" source date to evaluate the target date. Available choices are listed below:"
+msgstr ""
+"За допомогою групи **Коригування позначки часу** можна вибрати дію для"
+" обробки початкової дати для визначення кінцевої дати. Доступні варіанти"
+" наведено у списку нижче:"
+
+#: ../../post_processing/time_adjust.rst:39
+msgid ""
+"**Copy value**: copy timestamp as well from source date to target date."
+msgstr ""
+"**Копіювати значення**: copy timestamp as well from source date to target"
+" date."
+
+#: ../../post_processing/time_adjust.rst:40
+msgid ""
+"**Add**: add a fixed timestamp to source date to compute target date. Use"
+" the settings on the right side to define the added value."
+msgstr ""
+"**Додати**: додати фіксований проміжок часу до початкової дати для"
+" обчислення кінцевої дати. Скористайтеся параметрами праворуч від поля, щоб"
+" визначити додане значення."
+
+#: ../../post_processing/time_adjust.rst:41
+msgid ""
+"**Subtract**: remove a fixed timestamp to source date to compute target"
+" date. Use the settings on the right side to define the subtracted value."
+msgstr ""
+"**Відняти**: відняти фіксований проміжок часу до початкової дати для"
+" обчислення кінцевої дати. Скористайтеся параметрами праворуч від поля, щоб"
+" визначити відняте значення."
+
+#: ../../post_processing/time_adjust.rst:42
+msgid ""
+"**Interval**: interval timestamp to the next image from the list to process."
+" Use the settings on the right side to define the interval value."
+msgstr ""
+"**Інтервал**: проміжок часу до наступного зображення зі списку обробки."
+" Скористайтеся пунктами праворуч для визначення значення інтервалу."
+
+#: ../../post_processing/time_adjust.rst:44
+msgid ""
+"The **Determine difference from clock photo** allows to select a photo to"
+" get a date from and calculate the time difference between it and the"
+" current item selected from the list of files to process. You can also use"
+" drag and drop over this button to define the selected image. This feature"
+" will automatically select the **Copy value**, **Add**, or **Subtract**"
+" method."
+msgstr ""
+"За допомогою пункту **Визначити відхилення часу за фото з годинником** можна"
+" вибрати фотографію для отримання часової позначки і обчислити різницю часу"
+" між нею та поточним записом, який позначено у списку файлів для обробки. Ви"
+" також можете скористатися перетягуванням зі скиданням цієї кнопки для"
+" визначення позначеного зображення. Використання цього пункту автоматично"
+" вибирає метод **Копіювати значення**, **Додати** або **Відняти**."
+
+#: ../../post_processing/time_adjust.rst:46
+msgid ""
+"The **Timestamp updated** group allows to define the target entries to patch"
+" with the new values. Available choices are listed below:"
+msgstr ""
+"За допомогою групи **Оновлення позначки часу** можна визначити записи"
+" призначення для латання новими значеннями. Доступні варіанти наведено у"
+" списку нижче:"
+
+#: ../../post_processing/time_adjust.rst:48
+msgid ""
+"**Update only existing timestamps**: will change only the values which"
+" already exists in file."
+msgstr ""
+"**Оновити лише наявні позначки часу**: змінити лише значення, які вже були у"
+" файлі."
+
+#: ../../post_processing/time_adjust.rst:49
+msgid ""
+"**Exif: original**: will change the image original timestamp from Exif."
+msgstr ""
+"**Exif: початковий**: змінити часову позначку початкового зображення з Exif."
+
+#: ../../post_processing/time_adjust.rst:50
+msgid ""
+"**Exif: digitized**: will change the image digitized timestamp from Exif."
+msgstr "**Exif: оцифровано**: змінити часову позначку оцифровування з Exif."
+
+#: ../../post_processing/time_adjust.rst:51
+msgid "**Exif: created**: will change the image creation timestamp from Exif."
+msgstr ""
+"**Exif: створено**: змінити часову позначку створення зображенні з Exif."
+
+#: ../../post_processing/time_adjust.rst:52
+msgid ""
+"**Exif: Thumbnail**: will change the image thumbnail timestamp from Exif."
+msgstr ""
+"**Exif: мініатюра**: змінити часову позначку мініатюри зображення на основі"
+" Exif."
+
+#: ../../post_processing/time_adjust.rst:53
+msgid "**XMP**: will change the image timestamp from standard XMP namespaces."
+msgstr ""
+"**XMP**: змінити часову позначку зображення на основі стандартних просторів"
+" назв XMP."
+
+#: ../../post_processing/time_adjust.rst:54
+msgid ""
+"**XMP: video**: will change the image timestamp from WMP video namespace."
+msgstr ""
+"**XMP: відео**: змінити часову позначку зображення на основі простору назв"
+" відео WMP."
+
+#: ../../post_processing/time_adjust.rst:55
+msgid "**IPTC: created**: will change the image created timestamp from IPTC."
+msgstr ""
+"**IPTC: створено**: змінити часову позначку створення зображення з IPTC."
+
+#: ../../post_processing/time_adjust.rst:56
+msgid ""
+"**File last modified**: will change the last modified timestamp from file"
+" system."
+msgstr ""
+"**Останні зміни у файлі**: змінити часову позначку останнього внесення змін"
+" з файлової системи."
+
+#: ../../post_processing/time_adjust.rst:62
+msgid "The digiKam Time Adjust Tool Tuning Items Time-Stamp"
+msgstr ""
+"Інструмент налаштовування часу у digiKam коригує часову позначку записів"
