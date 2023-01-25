@@ -702,6 +702,28 @@ Slideshow Tools
 
    slideshow_tools
 
+########
+Showfoto
+########
+.. figure:: images/index_showfoto_editor.webp
+    :width: 300px
+    :alt:
+    :target: showfoto_editor.html
+
+    Showfoto is a Stand Alone Version of the digiKam Image Editor
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`showfoto_overview`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   showfoto_editor
+
 #################
 Menu Descriptions
 #################
