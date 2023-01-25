@@ -26,6 +26,8 @@ This sidebar tab serves to apply and edit image attributes like captions, rating
 
     The Captions View From Right Sidebar Displaying Description Information
 
+.. _comment_editors:
+
 Comment Editors
 ~~~~~~~~~~~~~~~
 
@@ -47,10 +49,14 @@ After commenting, either choose the **Apply** button or go straight to the next 
 
 Next to the Apply button there is the **More** button. From it you can either choose to read metadata from the selected file to the database, or the other way around, to write metadata to the files (the latter take place anyway if you chose a metadata setting so that all metadata is always saved to the images). 
 
+.. _date_edit:
+
 Date and Time
 ~~~~~~~~~~~~~
 
 In the Date and Time section, which reflects the time of taking the photograph, you can change all values. From the date combo-box a calendar opens, and the time setting spin-box can also be written by directly typing the time. The dating is copied to the Exif **Date and Time** field. If you need to change a number of images for their creating time & date, there is a more comfortable method available in **Batch Queue Manager** or from :menuselection:`Item --> Adjust time & date...` menu entry in **Main Window**. Select the images to be changed in the main view and call the tool.
+
+.. _labels_edit:
 
 Labels
 ~~~~~~
@@ -96,6 +102,8 @@ Otherwise tags are simply applied by checking the respective boxes in the tree. 
 .. note::
 
    In case you have selected a number of images in the Icon-View and you check a tag in the tag tree, this one is only applied to the highlighted images, and not to the whole Album contents.
+
+.. _informaton_view:
 
 Information View
 ~~~~~~~~~~~~~~~~
