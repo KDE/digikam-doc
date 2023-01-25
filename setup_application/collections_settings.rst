@@ -42,7 +42,7 @@ For each type, the **Add Collection** button allows to append an entry in the li
 
     The digiKam Collections Configuration Page Appending a Root Album Folder
 
-To edit the properties of an entry, use the **Update button** on the right of the path. To remove an entry, use the **Red trash button** on right side.
+To edit the properties of an entry, use the **Update button** on the right side of the path. To remove an entry, use the **Red trash button** on right side.
 
 .. figure:: images/setup_collection_category.webp
     :alt:
@@ -63,7 +63,7 @@ To edit the properties of an entry, use the **Update button** on the right of th
 The Network Shares Specificity
 ------------------------------
 
-For the **Collections on Network Shares**, the **Plus button** allows to append a path to a registered collection entry. This feature resolve the problematic collections and database data shared over a local network (here using a `Network Attached Storage - NAS <https://en.wikipedia.org/wiki/Network-attached_storage>`_), and accedes by different digiKam clients (here a Windows, Linux, and macOS). As each client will mount the shared collection to different paths on local computers, this allows to host all paths in the database referring to the same main shared collection path. As all client computers will share the same database, all information hosted in database and managed with each digiKam clients will not be duplicated on the NAS.
+For the **Collections on Network Shares**, the **Plus button** on the right side of the path allows to append a new mount path to a registered collection entry. This feature resolve the problematic collections and database data shared over a local network (here using a `Network Attached Storage - NAS <https://en.wikipedia.org/wiki/Network-attached_storage>`_), and accedes by different digiKam clients (here a Windows, Linux, and macOS). As each client will mount the shared collection to different paths on local computers, this allows to host all paths in the database referring to the same main shared collection path. As all client computers will share the same database, all information hosted in database and managed with each digiKam clients will not be duplicated on the NAS.
 
 The configuration can be set following steps listed below:
 
