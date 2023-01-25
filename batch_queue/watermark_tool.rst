@@ -15,7 +15,7 @@ Watermark
 
 While there are many ways to protect your photos from unauthorized use, watermarking still remains the simplest and probably the most effective technique that can help you to identify you as the creator and make it difficult to use your works without permission.
 
-Although digiKam supports watermarking. The watermarking function in digiKam is available under the Batch Queue Manager tool which you can use to watermark multiple photos in one go. Drag the photos you want to watermark from a digiKam album onto the **Queues** pane to add them to the current queue. Click on the **Base Tools** tab in the **Control Panel** pane and double-click on the **Decorate/Add Watermark** tool to add it to the **Assigned Tools** pane.
+digiKam supports watermarking. The watermarking function in digiKam is available under the Batch Queue Manager tool which you can use to watermark multiple photos in one go. Drag the photos you want to watermark from a digiKam album onto the **Queues** pane to add them to the current queue. Click on the **Base Tools** tab in the **Control Panel** pane and double-click on the **Decorate/Add Watermark** tool to add it to the **Assigned Tools** pane.
 
 .. contents::
 
@@ -98,4 +98,4 @@ Once you are satisfied with the settings, hit the **Run** button, and once digiK
     :alt:
     :align: center
 
-    Sample of Systematic Repeated Text Watermark Applied to a photo Using Transparency and
+    Sample of Systematic Repeated Text Watermark Applied to a photo Using Transparency
