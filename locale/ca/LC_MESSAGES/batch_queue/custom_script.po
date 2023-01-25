@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-22 00:50+0000\n"
-"PO-Revision-Date: 2023-01-21 16:42+0100\n"
+"PO-Revision-Date: 2023-01-24 08:30+0100\n"
 "Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -43,6 +43,7 @@ msgstr "Contingut"
 msgid "Overview"
 msgstr "Vista general"
 
+# skip-rule: t-acc_obe
 #: ../../batch_queue/custom_script.rst:21
 msgid ""
 "The batch Queue Manager allows to customize a **Workflow** with a specific "
@@ -50,6 +51,10 @@ msgid ""
 "as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool <https://en."
 "wikipedia.org/wiki/ExifTool>`_ for example."
 msgstr ""
+"El Gestor de la cua per lots permet personalitzar un flux de treball amb un "
+"connector específic dedicat que executarà un script i processarà les imatges "
+"amb eines externes com `ImageMagick <https://imagemagick.org/>`_ o `ExifTool "
+"<https://en.wikipedia.org/wiki/ExifTool>`_, per exemple."
 
 #: ../../batch_queue/custom_script.rst:23
 msgid ""
@@ -59,6 +64,12 @@ msgid ""
 "in the code and re-routed for a custom usage with delegate command line "
 "programs installed on your computer."
 msgstr ""
+"L'eina s'anomena **Script personalitzat**, disponible a la llista **Eines "
+"base** i a la categoria **Eines personalitzades**. L'objectiu és passar un "
+"codi font de script escrit per l'usuari en el connector, una sèrie de "
+"variables d'entorn manejades en el codi i redirigides per a un ús "
+"personalitzat amb programes de línia d'ordres delegats i que estan "
+"instal·lats a l'ordinador."
 
 #: ../../batch_queue/custom_script.rst:29
 msgid "The Batch Queue Manager Including a Custom Script in a Workflow"
@@ -78,7 +89,14 @@ msgid ""
 "JPEG is a lossy compression format, only support 8-bit color depth, and does "
 "not supports transparency."
 msgstr ""
+"**Tipus de la imatge de sortida**: aquest valor permet configurar el tipus "
+"esperat de format d'imatge que s'utilitzarà a la sortida de l'script. El "
+"valor predeterminat és **El mateix que l'entrada**, però podeu establir "
+"**JPEG**, **PNG** o **TIFF**. Cal tenir cura que JPEG és un format de "
+"compressió amb pèrdua, només admet una profunditat de color de 8 bits i no "
+"admet la transparència."
 
+# skip-rule: t-acc_obe
 #: ../../batch_queue/custom_script.rst:35
 msgid ""
 "**Shell Script**: this text edit field allows to enter the source code of "
@@ -86,6 +104,11 @@ msgid ""
 "wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported. Under **Windows** "
 "`Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported."
 msgstr ""
+"**Script de l'intèrpret d'ordes**: aquest camp d'edició de text permet "
+"introduir el codi font del vostre script. A **Linux** i **macOS**, s'admet "
+"l'`script en Bash <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_. A "
+"**Windows**, s'admet el `fitxer de processament per lots <https://en."
+"wikipedia.org/wiki/Batch_file>`_."
 
 #: ../../batch_queue/custom_script.rst:37
 msgid ""
@@ -93,16 +116,25 @@ msgid ""
 "will replace all occurrences of keywords in script at run time before shell "
 "execution. Take a care that keywords are case sensitive."
 msgstr ""
+"Les paraules clau que podeu utilitzar en el vostre codi de l'script es "
+"llisten a continuació. L'eina substituirà en temps d'execució totes les "
+"aparicions de les paraules clau que apareguin a l'script abans de l'execució "
+"de l'intèrpret d'ordres. Cal tenir cura que les paraules clau distingeixin "
+"entre majúscules i minúscules."
 
 #: ../../batch_queue/custom_script.rst:39
 msgid ""
 "**$INPUT** for workflow input filename (with special characters escaped)."
 msgstr ""
+"**$INPUT** per al nom del fitxer d'entrada del flux de treball (escapant els "
+"caràcters especials)."
 
 #: ../../batch_queue/custom_script.rst:41
 msgid ""
 "**$OUTPUT** for workflow output filename (with special characters escaped)."
 msgstr ""
+"**$OUTPUT** per al nom de fitxer de sortida del flux de treball (escapant "
+"els caràcters especials)."
 
 #: ../../batch_queue/custom_script.rst:45
 msgid ""
@@ -111,41 +143,59 @@ msgid ""
 "copy **$INPUT** to **$OUTPUT** with a command appropriate to the operating "
 "system and then make the changes to **$OUTPUT**."
 msgstr ""
+"Sempre s'esperarà un fitxer nou a **$OUTPUT**. Amb un script de programes "
+"que no creen un fitxer nou (p. ex., canviar les metadades amb Exiftool), "
+"primer haureu de copiar **$INPUT** a **$OUTPUT** amb una ordre adequada per "
+"al sistema operatiu i després realitzar els canvis a **$OUTPUT**."
 
 #: ../../batch_queue/custom_script.rst:47
 msgid ""
 "The environment variables that you can use in your script code are listed "
 "below:"
 msgstr ""
+"Les variables d'entorn que podeu utilitzar en el vostre codi de script es "
+"llisten a continuació:"
 
 #: ../../batch_queue/custom_script.rst:49
 msgid "**TITLE**: to handle digiKam **Title** item properties from database."
 msgstr ""
+"**TITLE**: per a gestionar les propietats de l'element **Títol** des de la "
+"base de dades del digiKam."
 
 #: ../../batch_queue/custom_script.rst:51
 msgid ""
 "**COMMENTS**: to handle digiKam **Caption** item properties from database."
 msgstr ""
+"**COMMENTS**: per a manejar les propietats de l'element **Llegenda** des de "
+"la base de dades del digiKam."
 
 #: ../../batch_queue/custom_script.rst:53
 msgid ""
 "**COLORLABEL**: to handle digiKam **Color Label** item properties from "
 "database."
 msgstr ""
+"**COLORLABEL**: per a gestionar les propietats dels elements del **Rètol de "
+"color** des de la base de dades del digiKam."
 
 #: ../../batch_queue/custom_script.rst:55
 msgid ""
 "**PICKLABEL**: to handle digiKam **Pick Label** item properties from "
 "database."
 msgstr ""
+"**PICKLABEL**: per a gestionar les propietats de l'element **Rètol de "
+"selecció** des de la base de dades del digiKam."
 
 #: ../../batch_queue/custom_script.rst:57
 msgid "**RATING**: to handle digiKam **Rating** item properties from database."
 msgstr ""
+"**RATING**: per a gestionar les propietats dels elements **Valoració** des "
+"de la base de dadesdel digiKam."
 
 #: ../../batch_queue/custom_script.rst:59
 msgid "**TAGSPATH**: to handle digiKam **Tags** item properties from database."
 msgstr ""
+"**TAGSPATH**: per a manejar les propietats dels elements **Etiquetes** des "
+"de la base de dades del digiKam."
 
 #: ../../batch_queue/custom_script.rst:63
 msgid ""
@@ -153,6 +203,9 @@ msgid ""
 "**$** as prefix of variable names (for example **$INPUT**). The interpreter "
 "used to run the script is **/bin/bash**."
 msgstr ""
+"A Linux i macOS, es pot accedir a les variables d'entorn en un script amb "
+"**$** com a prefix dels noms de les variables (per exemple, **$INPUT**). "
+"L'intèrpret utilitzat per a executar l'script és **/bin/bash**."
 
 #: ../../batch_queue/custom_script.rst:65
 msgid ""
@@ -160,18 +213,27 @@ msgid ""
 "prefix and suffix of variable names (for example **%INPUT%**). The "
 "interpreter used to run the script is **cmd.exe**."
 msgstr ""
+"A Windows, es pot accedir a les variables d'entorn en un script amb **%** "
+"com a prefix i sufix de noms de les variables (per exemple, **%INPUT%**). "
+"L'intèrpret utilitzat per a executar l'script és **cmd.exe**."
 
 #: ../../batch_queue/custom_script.rst:69
 msgid "Return Value"
 msgstr "Valor de retorn"
 
+# skip-rule: ff-exit
 #: ../../batch_queue/custom_script.rst:71
 msgid ""
 "By convention, a **Bash script** under Linux and macOS, 0 is returned on "
 "success or an integer in the range 1-255 for something else. Use **exit < "
 "error_code >** to pass the return value on the workflow."
 msgstr ""
+"Per convenció, un **script en Bash** sota Linux i macOS, torna 0 en cas "
+"d'èxit o un nombre sencer a l'interval 1 a 255 per a alguna altra cosa. "
+"Utilitzeu **exit < codi_error >** per a passar el valor de retorn sobre el "
+"flux de treball."
 
+# skip-rule: ff-exit
 #: ../../batch_queue/custom_script.rst:73
 msgid ""
 "Under Windows, a **Batch script** returns 0 on success and another value for "
@@ -179,6 +241,10 @@ msgid ""
 "possible. Use **EXIT /B < error_code >** to pass the return value on the "
 "workflow."
 msgstr ""
+"A Windows, un **fitxer de processament per lots** retorna 0 en cas d'èxit i "
+"un altre valor per a alguna altra cosa, però el valor és un nombre sencer "
+"amb signe, per la qual cosa és possible un valor negatiu. Utilitzeu **EXIT /"
+"B < codi_error > per a passar el valor de retorn sobre el flux de treball."
 
 #: ../../batch_queue/custom_script.rst:75
 msgid ""
@@ -186,6 +252,10 @@ msgid ""
 "is returned, the workflow continue as expected, else the workflow is broken "
 "and Batch Queue Manager stop the process."
 msgstr ""
+"El Gestor de la cua per lots maneja el valor retornat per l'script. Si es "
+"retorna zero, el flux de treball continuarà com s'esperava. Altrament, el "
+"flux de treball s'interromprà i el Gestor de la cua per lots aturarà el "
+"procés."
 
 #: ../../batch_queue/custom_script.rst:78
 msgid "Examples"
@@ -193,7 +263,7 @@ msgstr "Exemples"
 
 #: ../../batch_queue/custom_script.rst:81
 msgid "Proof of Concept"
-msgstr ""
+msgstr "Prova de concepte"
 
 #: ../../batch_queue/custom_script.rst:83
 msgid ""
@@ -205,6 +275,14 @@ msgid ""
 "command, this one is parsed by the Batch Queue Manager to check the workflow "
 "stream."
 msgstr ""
+"Aquest primer exemple que podeu veure a continuació, ...no fa res especial. "
+"Imprimiu a la consola els noms dels fitxers d'entrada/sortida i les "
+"propietats dels elements passats de l'administrador de cues per lots a "
+"l'script i copiarà el fitxer d'entrada a l'arxiu de sortida (aquesta etapa "
+"és necessària, altrament, l'Administrador de cues per lots torna un error "
+"perquè el fitxer de destinació no existeix) . La seqüència d'ordres retorna "
+"el valor de l'ordre de còpia del fitxer, aquest l'analitza l'Administrador "
+"de cues per lots per verificar el flux de treball."
 
 #: ../../batch_queue/custom_script.rst:100
 msgid ""
@@ -212,49 +290,57 @@ msgid ""
 "ref:`Setup/Miscs/System dialog page <system_settings>`, you will see "
 "something like this:"
 msgstr ""
+"Si heu iniciat el digiKam des d'una terminal i activeu els seguiments de "
+"depuració a la pàgina de diàleg :ref:`Configuració/Miscel·lània/Sistema "
+"<system_settings>`, veureu alguna cosa com això:"
 
 #: ../../batch_queue/custom_script.rst:114
 msgid "The digiKam information taken from the database are:"
-msgstr ""
+msgstr "La informació del digiKam agafada des de la base de dades és:"
 
 #: ../../batch_queue/custom_script.rst:116
 msgid "Item processed is **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
-msgstr ""
+msgstr "L'element processat és **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
 
 #: ../../batch_queue/custom_script.rst:117
 msgid ""
 "Target filename is **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a12."
 "digikamtempfile.JPG** (a temporary file generated by Batch Queue Manager)."
 msgstr ""
+"El nom del fitxer de destinació és **/mnt/data/Images/SALAGOU/BatchTool-"
+"EpEjEz-9e1c7a12.digikamtempfile.JPG** (un fitxer temporal generat pel Gestor "
+"de la cua per lots)."
 
 #: ../../batch_queue/custom_script.rst:118
 msgid "Item Title is **Salagou Trip**."
-msgstr ""
+msgstr "El títol de l'article és **Salagou Trip**."
 
 #: ../../batch_queue/custom_script.rst:119
 msgid "Item Comment is null."
-msgstr ""
+msgstr "El comentari de l'element és nul."
 
 #: ../../batch_queue/custom_script.rst:120
 msgid "Item Color Label is **5** (Green)."
-msgstr ""
+msgstr "El rètol de color de l'element és **5** (verd)."
 
 #: ../../batch_queue/custom_script.rst:121
 msgid "Item Pick Label is **3** (Accepted)."
-msgstr ""
+msgstr "El rètol de selecció de l'element és **3** (acceptada)."
 
 #: ../../batch_queue/custom_script.rst:122
 msgid "Item Rating is **3 stars**."
-msgstr ""
+msgstr "La valoració de l'element és de **3 estrelles**."
 
 #: ../../batch_queue/custom_script.rst:123
 msgid ""
 "Item Tags are **Places**, **Places/France**, **Places/France/Salagou Lake**."
 msgstr ""
+"Les etiquetes de l'element són **Llocs**, **Llocs/França**, **Llocs/França/"
+"Llac Salagou**."
 
 #: ../../batch_queue/custom_script.rst:126
 msgid "Add a Watermark with ImageMagick"
-msgstr ""
+msgstr "Afegir una marca d'aigua amb ImageMagick"
 
 #: ../../batch_queue/custom_script.rst:128
 msgid ""
@@ -262,6 +348,9 @@ msgid ""
 "like tool to add a multiline text superimposed over pictures to create a "
 "visible watermark on the center of images."
 msgstr ""
+"El segon exemple a continuació és més complex i utilitza l'ordre ImageMagick "
+"com a eina per a afegir un text de múltiples línies superposat sobre les "
+"imatges per a crear una marca d'aigua visible al centre de les imatges."
 
 #: ../../batch_queue/custom_script.rst:146
 msgid ""
@@ -269,11 +358,17 @@ msgid ""
 "Workflow. Bash uses the last called method as the returned value from the "
 "script, here the ImageMagick command line tool **convert**."
 msgstr ""
+"En aquest exemple, no hi ha una crida **exit** explícita per a tornar un "
+"valor sobre el flux de treball. Bash utilitza l'últim mètode anomenat com el "
+"valor retornat per l'script, aquí l'eina de línia d'ordres **convert** "
+"d'ImageMagick."
 
 #: ../../batch_queue/custom_script.rst:148
 msgid "This give a result like below."
-msgstr ""
+msgstr "Això dóna un resultat com el següent."
 
 #: ../../batch_queue/custom_script.rst:154
 msgid "The result of the Script Using ImageMagick to Apply a Watermark"
 msgstr ""
+"El resultat de l'script que utilitza ImageMagick per a aplicar una marca "
+"d'aigua"
