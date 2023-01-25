@@ -34,7 +34,7 @@ The **Root Album Folders** list three types of collection which can be reference
 
     - **Collections on Network Shares**: these are root album folders stored remote file systems as Samba or NFS and mounted as native on your system.
 
-For each type, the **Add Collection** button allows to append an entry in the list. Entry properties are the root album folder **name** and the root album folder **path**.
+For each type, the **Add Collection** button allows to append an entry in the list. Entry properties are the root album folder **Name** and the root album folder **Path**.
 
 .. figure:: images/setup_collection_new.webp
     :alt:
@@ -42,13 +42,15 @@ For each type, the **Add Collection** button allows to append an entry in the li
 
     The digiKam Collections Configuration Page Appending a Root Album Folder
 
-To edit the properties of an entry, use the **update button** on the right of the path. To remove an entry, use the **red trash button** on right side.
+To edit the properties of an entry, use the **Update button** on the right of the path. To remove an entry, use the **Red trash button** on right side.
 
 .. figure:: images/setup_collection_category.webp
     :alt:
     :align: center
 
     The digiKam Collections Configuration Page Editing Category of a Root Album Folder
+
+For the **Collections on Network Shares**, the **Plus button** allows to append a path to the registered collection entry.
 
 .. important::
 
