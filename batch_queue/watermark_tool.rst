@@ -87,12 +87,14 @@ Results
 Once you are satisfied with the settings, hit the **Run** button, and once digiKam’s finished, you’ll find the watermarked photos in the target folder. See below the samples of text and image watermarks applied to the same image using transparency.
 
 .. figure:: images/bqm_watermark_example_image.webp
+    :width: 300px
     :alt:
     :align: center
 
     Sample of Centered Image Watermark Applied to a photo Using Transparency
 
 .. figure:: images/bqm_watermark_example_text.webp
+    :width: 300px
     :alt:
     :align: center
 
