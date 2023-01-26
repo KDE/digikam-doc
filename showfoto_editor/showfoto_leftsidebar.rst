@@ -1,6 +1,6 @@
 .. meta::
    :description: Overview to Showfoto Left Sidebar
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image, editor, showfoto, left, sidebar, folders, stack
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image, editor, showfoto, left, sidebar, folders, stack, bookmark, favorite
 
 .. metadata-placeholder
 
@@ -55,6 +55,8 @@ It divided in tree views from the top to the bottom:
 Stack Tab
 ---------
 
+The **Stack** tab is a helper view to catalog your preferred pictures grouped in a same container. Pictures can be hosted in different folders if necessary. This give a quick access to your best contents that you can slide or share easily.
+
 .. figure:: images/showfoto_stack_tab.webp
     :alt:
     :align: center
@@ -62,3 +64,8 @@ Stack Tab
     The Showfoto Stand-Alone Editor Stack Tab from Left Sidebar
 
 
+.. figure:: images/showfoto_edit_favorite.webp
+    :alt:
+    :align: center
+
+    The Showfoto Dialog to Edit Favorite Properties
