@@ -22,7 +22,15 @@ Left sidebar in Showfoto is the main difference in user interface of Showfoto co
 Folders Tab
 -----------
 
-The **Folders** tab is a complete view to handle your system directory hierarchies, as a desktop file-manager. It divided in 3 views from the top to the bottom:
+The **Folders** tab is a complete view to handle your system directory hierarchies, as a desktop file-manager.
+
+.. figure:: images/showfoto_folders_tab.webp
+    :alt:
+    :align: center
+
+    The Showfoto Stand-Alone Editor Folders Tab from Left Sidebar
+
+It divided in tree views from the top to the bottom:
 
     - **Navigation settings** view providing:
 
@@ -32,15 +40,15 @@ The **Folders** tab is a complete view to handle your system directory hierarchi
 
         - A combo-box where you can apply a type-mime filter to restrict the thumbnails list to the desired file formats.
 
-    - **Thumbnails list** where you can show the image files properties from the current selected folder set in directory combo-box behind. With the tools-bar on the top and with the context menu, you can adjust the flat list settings and assign content to the **Places** or to the **Stack**
+    - **Thumbnails list** where you can show the image files properties from the current selected folder set in directory combo-box behind. With the tools-bar on the top and with the context menu, you can adjust the flat list settings and assign content to the **Places** or to the **Stack**. Double clicking on a item from the list load the contents to the canvas.
 
-    - Your preferred **Places** (Bookmarks).
+    - Your preferred **Places** (Bookmarks). This view is optional and can be disabled in the settings available from thumbnails list context menu or in tools-bar from on the top. **Bookmarks** reference your preferred places that you register when navigating on the folder hierarchies. **Bookmark** properties includes a **Path**, an **Icon**, and a **Title**. these properties can be modified later creation. The **Usual Places** is a read-only group to give a quick access to the standard folders from your personal directory.
 
-.. figure:: images/showfoto_folders_tab.webp
+.. figure:: images/showfoto_new_bookmark.webp
     :alt:
     :align: center
 
-    The Showfoto Stand-Alone Editor Folders Tab from Left Sidebar
+    The Showfoto Dialog to Register a New Bookmark
 
 .. _showfoto_stacktab:
 
