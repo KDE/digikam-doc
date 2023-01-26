@@ -15,6 +15,8 @@ Image Editor Settings
 
 .. contents::
 
+.. _window_settings:
+
 Editor Window Settings
 ----------------------
 
