@@ -15,9 +15,22 @@ Left Sidebar
 
 .. contents::
 
+Folders Tab
+-----------
+
 .. figure:: images/showfoto_folders_tab.webp
     :alt:
     :align: center
 
-    The Showfoto Stand-Alone Editor Main Folders Tab from Left Sidebar
+    The Showfoto Stand-Alone Editor Folders Tab from Left Sidebar
+
+Stack Tab
+---------
+
+.. figure:: images/showfoto_stack_tab.webp
+    :alt:
+    :align: center
+
+    The Showfoto Stand-Alone Editor Stack Tab from Left Sidebar
+
 
