@@ -63,6 +63,11 @@ The **Stack** tab is a helper view to catalog your preferred pictures grouped in
 
     The Showfoto Stand-Alone Editor Stack Tab from Left Sidebar
 
+It divided in two views from the top to the bottom:
+
+    - **Thumbnails list** showing the current stack contents. You can access to the lead features from this view by the context menu available by a right click button of the mouse. Stack contents can be tuned from this context menu, or from the **Folders** tab. When you are agreed with the stacked items on this list, you can register the container as a **Favorite**.
+
+    - **Favorites** tree-view is a list of tour preferred stack classified using a hierarchy (similar than tags from digiKam). This hierarchy can host nested **Favorite folders** to host your stacks (**Favorite item**). You can edit stack properties which includes **Name**, **Type**, **Description**, **Creation Date**, **Icon**, and the list of **Stacked items**. Double clicking on a item from the hierarchy plug the stack contents to the thumbnails list on the top. If any, the last opened file from the stack is loaded in the canvas else the first from the list.
 
 .. figure:: images/showfoto_edit_favorite.webp
     :alt:
