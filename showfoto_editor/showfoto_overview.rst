@@ -30,8 +30,8 @@ One main difference between Showfoto and digiKam Image Editor is the **non-suppo
 
 Other difference with digiKam Image Editor is the **Left sidebar**. In digiKam there left sidebar do not exists as all phoyo management is delegate to the Main Window. In Showfoto, the left sidebar host two tab to navigate in file-system.
 
-First one, named **Folder** allows to go in-deep in directory hierarchies as a standard files manager. You can see the image thumbnails and the current path. Clicking on a thumbnail will load the contents to the canvas.
+First one, named **Folders** allows to go in-deep in directory hierarchies as a standard files manager. You can see the image thumbnails and the current path. Clicking on a thumbnail will load the contents to the canvas.
 
 Second one, named **Stack** allows to host you prefered items previously selected in **Folders** tab.
 
-The **Right sidebar** is exactly the same than Image Editor, excepted the tabs depending exclusively to the database. **Captions** and **Versions** are not available in Showfoto. Looks in :ref:`this section of this manual <right_sidebar>` to found information about tabs present in Showfoto.
+The **Right Sidebar** is exactly the same than Image Editor, excepted the tabs depending exclusively to the database. **Captions** and **Versions** are not available in Showfoto. Looks in :ref:`this section of this manual <right_sidebar>` to found information about tabs present in Showfoto.
