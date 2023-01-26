@@ -15,7 +15,7 @@ Left Sidebar
 
 .. contents::
 
-Left sidebar is the main difference in Showfoto user interface compared to digiKam Image Editor. As Showfoto do not provide advanced functionalities about Digital Asset Management as digiKam, at least **Folders** and **Stack** give to the user the essential capabilities to explore, reference, and access quickly to the preferred contents from the computer.
+Left sidebar is the main difference in Showfoto user interface compared to digiKam Image Editor. As Showfoto do not provide advanced functionalities about Digital Asset Management as digiKam, at least **Folders** and **Stack** give to the user the essential capabilities to explore, reference, and access quickly to the preferred contents from the computer. All the settings adjusted in left sidebar are saved and restored between Showfoto sessions.
 
 .. _showfoto_folderstab:
 
