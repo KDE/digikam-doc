@@ -96,7 +96,7 @@ You can review embedded Makernote information for the selected image in this sid
 IPTC Tags
 ~~~~~~~~~
 
-The `International Press Telecommunications Council <http://www.iptc.org>`_, is a consortium of the world's major news agencies and news industry vendors. It develops and maintains technical standards for improved news exchange that are used by virtually every major news organization in the world.
+The `International Press Telecommunications Council <https://www.iptc.org>`_, is a consortium of the world's major news agencies and news industry vendors. It develops and maintains technical standards for improved news exchange that are used by virtually every major news organization in the world.
 
 The IPTC was established in 1965 by a group of news organizations to safeguard the telecommunications interests of the world's press. Since the late 1970s IPTC's activities have primarily focused on developing and publishing industry standards for the interchange of news data.
 
