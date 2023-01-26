@@ -79,6 +79,10 @@ MariaDB has actually overtaken MySQL, because of few basic reasons:
 
 digiKam also provides support for popular MySQL database engine. Of course, you might wonder why you’d want to switch to MySQL when SQLite already does a good job of managing the data? MySQL offers many advantages for storing digiKam data, especially when collections include **more than 100,000 items**. With such large collections, SQLite introduces latency which slows down the application.
 
+.. note::
+
+     With **WAL** option enabled, SQlite can be easily used for more than 100,000 items especially with an SSD storage. It must be even faster than MySQL and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details.     
+
 Using MySQL as digiKam’s database back-end allows you to store the data on local as well as remote server. Local, to replace the local SQLite storage and latter, to use a shared computer through network. Using MySQL as digiKam’s database back-end allows you to store the data on a remote server. This way, you can use multiple digiKam installations (For instance,on your notebook and PC) to access and manage your photo collections. You can also use MySQL tools to backup and analyze digiKam’s data.
 
 To switch from SQLite to MySQL database, go to :menuselection:`Settings --> Configure digiKam...` and then under **Database** section, select a database from the drop down list.
