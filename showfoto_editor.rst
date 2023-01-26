@@ -24,3 +24,4 @@ This section explain how to use the Showfoto image editor.
    :glob:
 
    showfoto_editor/showfoto_overview.rst
+   showfoto_editor/showfoto_leftsidebar.rst

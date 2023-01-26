@@ -718,6 +718,10 @@ Showfoto
 
         :ref:`showfoto_overview`
 
+    .. container:: tile no-descr
+
+        :ref:`showfoto_leftsidebar`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
