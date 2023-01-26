@@ -13,6 +13,8 @@
 ###########
 Main Window
 ###########
+.. figure:: images/index_main_window.webp
+    :alt:
 
 This section explain how to use the digiKam main window.
 

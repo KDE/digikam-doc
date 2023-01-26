@@ -13,6 +13,8 @@
 ################
 Color Management
 ################
+.. figure:: images/index_color_management.webp
+    :alt:
 
 This section explain all the fundamental rules of color management and how to use it in digiKam.
 

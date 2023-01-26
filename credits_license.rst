@@ -12,6 +12,8 @@
 
 Credits and License
 ===================
+.. figure:: images/index_credits_license.webp
+    :alt:
 
 .. contents::
 

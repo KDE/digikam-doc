@@ -13,6 +13,8 @@
 ###########
 Light Table
 ###########
+.. figure:: images/index_light_table.webp
+    :alt:
 
 This section explain how to use the digiKam light table.
 

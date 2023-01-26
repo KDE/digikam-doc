@@ -13,6 +13,8 @@
 #################
 Menu Descriptions
 #################
+.. figure:: images/index_menu_descriptions.webp
+    :alt:
 
 This section explain how to use the digiKam menu.
 

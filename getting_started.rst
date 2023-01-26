@@ -13,6 +13,8 @@
 ###############
 Getting Started
 ###############
+.. figure:: images/index_getting_started.webp
+    :alt:
 
 This section give an overview to start with digiKam.
 

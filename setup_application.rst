@@ -13,6 +13,8 @@
 #################
 Setup Application
 #################
+.. figure:: images/index_setup_application.webp
+    :alt:
 
 This section explain how to setup application.
 

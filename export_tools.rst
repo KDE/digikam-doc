@@ -13,6 +13,8 @@
 ############
 Export Tools
 ############
+.. figure:: images/index_export_tools.webp
+    :alt:
 
 This section explain how to use the digiKam export tools.
 

@@ -13,6 +13,8 @@
 ########################
 Digital Asset Management
 ########################
+.. figure:: images/index_asset_management.webp
+    :alt:
 
 This section explain how to apply a digital asset Management in digiKam.
 

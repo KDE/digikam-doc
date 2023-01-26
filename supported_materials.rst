@@ -13,6 +13,8 @@
 ###################
 Supported Materials
 ###################
+.. figure:: images/index_supported_materials.webp
+    :alt:
 
 This section explain the file formats and devices supported in digiKam.
 

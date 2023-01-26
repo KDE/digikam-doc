@@ -13,6 +13,8 @@
 #################
 Maintenance Tools
 #################
+.. figure:: images/index_maintenance_tools.webp
+    :alt:
 
 This section explain how to use the digiKam maintenance tools.
 

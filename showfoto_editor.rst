@@ -13,6 +13,8 @@
 ########
 Showfoto
 ########
+.. figure:: images/index_showfoto_editor.webp
+    :alt:
 
 This section explain how to use the Showfoto image editor.
 
