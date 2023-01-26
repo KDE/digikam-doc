@@ -73,7 +73,7 @@ The configuration can be set following steps listed below:
 
     - on the **Windows** client, user adds the shared path: :file:`X:\\NAS-digiKam`
 
-Later, other extra digiKam clients would also be conceivable if the NAS has a different mount point or used by `UNC path <https://en.wikipedia.org/wiki/Path_(computing)#Uniform_Naming_Convention>`_. On each digiKam clients it's important that all base paths then refer to the same network shared collection in the setup dialog.
+Later, other extra digiKam clients would also be conceivable if the NAS has a different mount point or used by `UNC path <https://en.wikipedia.org/wiki/Path_(computing)>`_. On each digiKam clients it's important that all base paths then refer to the same network shared collection in the setup dialog.
 
 .. important::
 
