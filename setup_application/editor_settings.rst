@@ -121,7 +121,7 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 
     - **DarkTable**: this application must be installed on your computer. `Darktable <https://en.wikipedia.org/wiki/Darktable>`_ is a free and open-source photography application program and RAW developer. It comprises a subset of image editing operations specifically aimed at non-destructive RAW image post-production.
 
-    .. figure:: videos/setup_editor_raw_behavior.gif
+    .. figure:: videos/setup_editor_raw_behavior.webp
         :width: 500px
         :alt:
         :align: center
