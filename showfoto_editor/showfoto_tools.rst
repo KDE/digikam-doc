@@ -26,8 +26,6 @@ Mostly, Showfoto provides the same tools from digiKam Image Editor, in native or
 
     The Showfoto RAW Import Tool Processing a ProRAW File Taken with an Apple Iphone
 
-With Showfoto, you can also export items with :ref:`web-service tools <export_tools>`, as Flickr or Google, exactly like you can do in digiKam.
-
 Post-Processing
 ---------------
 
@@ -38,6 +36,8 @@ Even if Showfoto do not provides something like the digiKam **Batch Queue Manage
     :align: center
 
     The Showfoto Running Time Adjust Plugin Over the Contents loaded from the Current Stack
+
+With Showfoto, you can also export items with :ref:`web-service tools <export_tools>`, as Flickr or Google, exactly like you can do in digiKam.
 
 DNG Converter
 -------------
