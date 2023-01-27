@@ -6,7 +6,7 @@
  # http://www.digikam.org
  #
  # Date        : 2022-12-26
- # Description : batch convert PNg to Webp using ImageMagick
+ # Description : batch convert PNG to WEBP using ImageMagick
  #
  # SPDX-FileCopyrightText: 2021-2022 by Gilles Caulier <caulier dot gilles at googlemail dot com>
  #

@@ -600,7 +600,7 @@ Second one is the amount of **Radius Blur** effect in percent applied on data cl
 
 To select the source of image to clone, press **S**, or the **Source selection** button from the toolbar on the top of settings view. The cursor will change to aim-shape, to let you decide the central source button where you will start cloning from.
 
-.. figure:: videos/editor_clone_spot.gif
+.. figure:: videos/editor_clone_spot.web
     :width: 300px
     :alt:
     :align: center
@@ -611,7 +611,7 @@ The tool provide also a **Lasso** and **Polygon** selector for the healing clone
 
 Now only cloning inside the selected region will happens, cloning outside will be ignored, unless you press :kbd:`L` again or :kbd:`Esc` to deactivate the lasso mode. Once you do that, you can clone anywhere in the screen as usual. Also pressing **ESC** while in the process of drawing the lasso polygon will cancel the lasso operation. Here is a screenshot of a lasso polygon selection, and a large portion of the image cloned inside this lasso portion. Of course pressing :kbd:`L` or :kbd:`Esc` again will remove the lasso boundary, keeping the cloned pixels in place, as expected.
 
-.. figure:: videos/editor_clone_lasso.gif
+.. figure:: videos/editor_clone_lasso.webp
     :width: 600px
     :alt:
     :align: center

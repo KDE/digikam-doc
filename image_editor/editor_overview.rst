@@ -33,7 +33,7 @@ The image editor has just one main window with:
 
     - A thumb bar located on left of canvas (optional - see :menuselection:`Settings --> Show Thumbbar` menu entry) can be relocated on top, right, or bottom side. An anchor on the left side of thumb bar allows to move it with the mouse at the wanted place.
 
-    .. figure:: videos/editor_thumbbar.gif
+    .. figure:: videos/editor_thumbbar.webp
         :width: 500px
         :alt:
         :align: center
