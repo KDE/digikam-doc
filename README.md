@@ -346,14 +346,14 @@ This git workflow is well [documented in KDE project](https://community.kde.org/
     My Screenshot Legend
 ```
 
-### GIF Animated Screen-cast Capture
+### Animated WEBP Screen-cast Capture
 
-Another format supported inside the documentation is **GIFa** video. It can be used to present a region of screen
+Another format supported inside the documentation is **Animated WEBP** as video. It can be used to present a region of screen
 from the application while an operation is under progress. It's perfect to write tutorials.
 
 Use the same specifications to take screen-cast than for screenshot, aka color theme, widget style, icon theme, etc.
 
-To prevent huge GIFa files, just capture the right area from application and limit capture to less than 10 seconds.
+To prevent huge animated WEBP files, just capture the right area from application and limit capture to less than 10 seconds.
 
 A good tool to capture video from desktop is [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
 
@@ -368,19 +368,19 @@ Do not use space and capitalized characters in file name.
 
 This will record a screen-cast in WEBM format. Even if WEBM is supported in HTML and EPUB,
 Sphinx framework is not yet able to embed WEBM in EPUB.
-Convert it to GIFa using [project/webm2gif.sh](project/webm2gif.sh) script.
+Convert it to animated WEBP using [project/webm2webp.sh](project/webm2webp.sh) script.
 
-GIFa files must be hosted in **videos/** sub-folders from each documentation section.
+Animated WEBP files must be hosted in **videos/** sub-folders from each documentation section.
 
 - To include the screen-cast in a ReStructuredText file, use the syntax below;
 
 ```
-.. figure:: videos/my_screen_cast.gif
+.. figure:: videos/my_screen_cast.webp
     :width: 600px
     :alt:
     :align: center
 
-    My Screencast Legend
+    My Screen-cast Legend
 ```
 
 ### Translations
