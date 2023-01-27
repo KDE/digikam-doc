@@ -67,7 +67,7 @@ Turn on **executable** property of AppImage file and run it. That all...
 
 .. tip::
 
-    The AppImage bundle include also the Showfoto stand Alone Image Editor. To run it instead digiKam, just add **showfoto** as argument to the AppImage command line, like this:
+    The AppImage bundle include also the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>`. To run it instead digiKam, just add **showfoto** as argument to the AppImage command line, like this:
 
     .. code-block:: bash
 
@@ -123,7 +123,23 @@ If you want to use digiKam with domain users with using Windows Active Directory
 
    %LocalAppData%\\digikamrc
 
+   %LocalAppData%\\digikam_systemrc
+
    %LocalAppData%\\kxmlgui5\\digikam\digikamui.rc
+
+Similar requirements is also necessary for the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>`:
+
+.. epigraph::
+
+   %AppData%\\showfoto
+
+   %LocalAppData%\\showfoto
+
+   %LocalAppData%\\showfotorc
+
+   %LocalAppData%\\showfoto_systemrc
+
+   %LocalAppData%\\kxmlgui5\\digikam\showfotoui.rc
 
 Do also make sure no GPO is blocking the access to these folders.
 
@@ -226,7 +242,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
 Configuration Files
 -------------------
 
-digiKam's application-wide persistent settings are stored in the following locations, depending on your platform. 
+**digiKam**'s application-wide persistent settings are stored in the following locations, depending on your platform. 
 
 .. list-table::
    :header-rows: 1
@@ -238,7 +254,11 @@ digiKam's application-wide persistent settings are stored in the following locat
    * - :file:`~/.config/digikamrc`
      - :file:`%LocalAppData%\\digikamrc`
      - :file:`~/Library/Preferences/digikamrc`
-     - General settings of the application. Delete this and restart digiKam to reset the application to "factory" settings
+     - General settings of the application. Delete this and restart digiKam to reset the application to *factory* settings
+   * - :file:`~/.config/digikam_systemrc`
+     - :file:`%LocalAppData%\\digikam_systemrc`
+     - :file:`~/Library/Preferences/digikam_systemrc`
+     - System settings of the application. Delete this and restart digiKam to reset the application to *factory* settings
    * - :file:`~/.cache/digikam`
      - :file:`%LocalAppData%\\digikam`
      - :file:`~/Library/Caches/digikam`
@@ -250,6 +270,36 @@ digiKam's application-wide persistent settings are stored in the following locat
    * - :file:`~/.local/share/kxmlgui5/digikam/digikamui5.rc`
      - :file:`%LocalAppData%\\kxmlgui5\digikam\\digikamui5.rc` 
      - :file:`~/Library/Application Support/digikam/kxmlgui5/digikam/digikamui5.rc`
+     - contains UI configuration, if your UI is broken, delete this file
+
+As digiKam, the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>` has also persistent settings stored at similar places: 
+
+.. list-table::
+   :header-rows: 1
+
+   * - Linux
+     - Windows
+     - macOS
+     - Description
+   * - :file:`~/.config/showfotorc`
+     - :file:`%LocalAppData%\\showfotorc`
+     - :file:`~/Library/Preferences/showfotorc`
+     - General settings of the application. Delete this and restart Showfoto to reset the application to *factory* settings
+   * - :file:`~/.config/showfoto_systemrc`
+     - :file:`%LocalAppData%\\showfoto_systemrc`
+     - :file:`~/Library/Preferences/showfoto_systemrc`
+     - System settings of the application. Delete this and restart Showfoto to reset the application to *factory* settings
+   * - :file:`~/.cache/showfoto`
+     - :file:`%LocalAppData%\\showfoto`
+     - :file:`~/Library/Caches/showfoto`
+     - cache location storing temporary files
+   * - :file:`~/.local/share/showfoto`
+     - :file:`%AppData%\\showfoto`
+     - :file:`~/Library/Application Support/showfoto`
+     - contains downloaded: deep-learning models, internal configuration files
+   * - :file:`~/.local/share/kxmlgui5/showfoto/showfoto ui5.rc`
+     - :file:`%LocalAppData%\\kxmlgui5\showfoto\\showfotoui5.rc` 
+     - :file:`~/Library/Application Support/showfoto/kxmlgui5/showfoto/showfotoui5.rc`
      - contains UI configuration, if your UI is broken, delete this file
 
 .. note::
