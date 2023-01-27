@@ -72,7 +72,7 @@ For the task we are talking about you check **Detect Faces**, of course. Since f
 
 Once you have chosen your options carefully you click **Scan** and after a while, depending on the scope of your selection, the result will be presented in the Image Area. In the Tags list of the Left Sidebar you will see the People branch of your tag tree. You will see the whole scan result only if the topmost tag **People** is selected. In the tree you will see a new virtual tag called **Unknown** which will show all those images where faces are recognized but not yet connected to a person. If you just scanned for the first time you will find the whole result also here.
 
-.. figure:: videos/mainwindow_faces_detection.gif
+.. figure:: videos/mainwindow_faces_detection.webp
     :width: 600px
     :alt:
     :align: center
@@ -271,7 +271,7 @@ You can tag people manually by different way:
 
 - From Left Sidebar **People** tab: use drag and drop between icon-view and face-tags tree-view. Select items labeled **Unknown** that you want to assign a face-tag. Perform a move with the mouse to the **People** items hierarchy. A pop-up menu will appears to confirm face assignment.
 
-    .. figure:: videos/mainwindow_faces_drag_drop.gif
+    .. figure:: videos/mainwindow_faces_drag_drop.webp
         :width: 600px
         :alt:
         :align: center
@@ -288,7 +288,7 @@ You can tag people manually by different way:
 
 - From The **Unknown** tag from **People** view: to manually identify a face, hover on any **Unknown** face from icon-view and use the text box to give it a name. This will lead to the creation of a face tag in case a person of that name doesn't exist already. For best results identify at least 4 faces for each person you want the scan to recognize.
 
-    .. figure:: videos/mainwindow_face_tagging.gif
+    .. figure:: videos/mainwindow_face_tagging.webp
         :alt:
         :align: center
 

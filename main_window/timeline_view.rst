@@ -21,7 +21,7 @@ Time-Line View
 
 The Timeline View shows a timescale-adjustable histogram of the numbers of images per time unit which is selectable by a drop down field. To the right of that you can choose between a linear or logarithmic histogram. A selection frame moves over the histogram. To display the photographs out of a certain time frame just click on the corresponding bar. You are not restricted to one bar. With :kbd:`Shift+left` click or :kbd:`Ctrl+left` click you can add more bars to the first one.
 
-.. figure:: videos/mainwindow_timeline_selection.gif
+.. figure:: videos/mainwindow_timeline_selection.webp
     :width: 600px
     :alt:
     :align: center
