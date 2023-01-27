@@ -159,6 +159,10 @@ The non Signed Package
     - digiKam version >= 6.1.0 : macOS 10.11 (El Capitan) or newer.
     - digiKam version >= 6.0.0 : macOS 10.8 (Moutain Lion) or newer.
 
+.. note::
+
+    Due to use `Macports environment <https://www.macports.org/>`_ to build digiKam PKG, and the rolling release Macports policy applied on time, it's difficult to provide a binary compatibility with older versions of macOS. Note also that Macports packages are frequently updated for security reasons, and this can requires more recent macOS SDK version.
+
 When the **PKG** file is downloaded, to start the installer, a security warning will appears, because the package is not signed for the Apple Gatekeeper.
 
 .. figure:: images/macos_pkg_warning.webp
