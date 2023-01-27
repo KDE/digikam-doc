@@ -65,6 +65,18 @@ Turn on **executable** property of AppImage file and run it. That all...
 
 .. _windows_requirements:
 
+.. tip::
+
+    The AppImage bundle include also the Showfoto stand Alone Image Editor. To run it instead digiKam, just add **showfoto** as argument to the AppImage command line, like this:
+
+    .. code-block:: bash
+
+        ./digiKam-8.0.0-x86-64-debug.appimage showfoto
+
+.. note::
+
+    The AppImage provides more options to starts which can be listed with **help** argument from command line.
+
 digiKam on Windows
 -------------------
 
