@@ -56,7 +56,7 @@ digiKam on Linux
 `AppImage <https://en.wikipedia.org/wiki/AppImage>`_ is a bundle hosting all the necessary dependencies to run digiKam. Nothing is installed on your system.
 Turn on **executable** property of AppImage file and run it. That all...
 
-.. figure:: videos/appimage_startup.gif
+.. figure:: videos/appimage_startup.webp
     :width: 500px
     :alt:
     :align: center

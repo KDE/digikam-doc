@@ -34,6 +34,8 @@ The Showfoto **Editor Window** settings page is the same than digiKam Image Edit
 Metadata
 --------
 
+The Showfoto **Metadata** settings page only includes few common options that you can found into  :ref:`this section <metadata_rotation>` from the digiKam manual.
+
 .. figure:: images/showfoto_setup_metadata.webp
     :alt:
     :align: center
