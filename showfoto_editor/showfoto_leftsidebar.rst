@@ -15,7 +15,7 @@ Left Sidebar
 
 .. contents::
 
-Left sidebar is the main difference in Showfoto user interface compared to digiKam Image Editor. As Showfoto do not provide advanced functionalities about Digital Asset Management as digiKam, at least **Folders** and **Stack** give to the user the essential capabilities to explore, reference, and access quickly to the preferred contents from the computer. All the settings adjusted in left sidebar are saved and restored between Showfoto sessions.
+Left sidebar is the main difference in Showfoto user interface compared to digiKam Image Editor. As Showfoto does not provide advanced functionalities about Digital Asset Management as digiKam, at least **Folders** and **Stack** give to the user the essential capabilities to explore, reference, and access quickly to the preferred contents from the computer. All the settings adjusted in left sidebar are saved and restored between Showfoto sessions.
 
 .. _showfoto_folderstab:
 
@@ -30,7 +30,7 @@ The **Folders** tab is a complete view to handle your system directory hierarchi
 
     The Showfoto Stand-Alone Editor Folders Tab from Left Sidebar
 
-It divided in tree views from the top to the bottom:
+It divided in three views from the top to the bottom:
 
     - The **Navigation settings** view providing:
 
@@ -48,7 +48,7 @@ It divided in tree views from the top to the bottom:
 
         The Showfoto Places and Bookmarks View
 
-    - The preferred **Bookmarks** and **Usual Places**. This view is optional and can be disabled in the settings available from thumbnails list context menu or in tools-bar on the top. **Bookmarks** references your preferred places that you can register when navigating on the folder hierarchies. **Bookmark** properties includes a **Path**, an **Icon**, and a **Title**. these properties can be modified later as you whish. The **Usual Places** is a read-only group to give a quick access to the standard folders from your personal directory.
+    - The preferred **Bookmarks** and **Usual Places**. This view is optional and can be disabled in the settings available from thumbnails list context menu or in tools-bar on the top. **Bookmarks** references your preferred places that you can register when navigating on the folder hierarchies. **Bookmark** properties includes a **Path**, an **Icon**, and a **Title**. These properties can be modified later as you wish. The **Usual Places** is a read-only group to give a quick access to the standard folders from your personal directory.
 
     .. figure:: images/showfoto_new_bookmark.webp
         :alt:
@@ -83,7 +83,7 @@ It divided in two views from the top to the bottom:
 
         The Showfoto Favorites View
 
-    - The **Favorites** tree-view is a list of the preferred stacks classified using a hierarchy (similar than Tags in digiKam). This hierarchy can host nested **Favorite folders** to host your stacks (**Favorite item**). You can edit stack properties which includes **Name**, **Type**, **Description**, **Creation Date**, **Icon**, and the list of **Stacked items**. Double clicking on a item from the hierarchy plug the stack contents to the thumbnails list on the top. If any, the last opened file from the stack is loaded in the canvas else the first from the list.
+    - The **Favorites** tree-view is a list of the preferred stacks classified using a hierarchy (similar than Tags in digiKam). This hierarchy can host nested **Favorite folders** to host your stacks (**Favorite item**). You can edit stack properties which includes **Name**, **Type**, **Description**, **Creation Date**, **Icon**, and the list of **Stacked items**. Double clicking on a item from the hierarchy plugs the stack contents to the thumbnails list on the top. If any, the last opened file from the stack is loaded in the canvas else the first from the list.
 
     .. figure:: images/showfoto_edit_favorite.webp
         :alt:

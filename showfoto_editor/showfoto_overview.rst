@@ -26,16 +26,16 @@ Showfoto is a stand alone version of the famous :ref:`digiKam Image Editor <imag
 Differences with Image Editor
 =============================
 
-One main difference between Showfoto and digiKam Image Editor is the **non-support of any database**. For all files loaded in the editor, Showfoto deal directly with the file-metadata. As Showfoto is just an editor and do not supports all capabilities for photo management program (as a powerful search tool), it's not necessary to cache files-information in a database.
+One main difference between Showfoto and digiKam Image Editor is the **non-support of any database**. For all files loaded in the editor, Showfoto deals directly with the file-metadata. As Showfoto is just an editor and does not support all capabilities for photo management program (as a powerful search tool), it's not necessary to cache files-information in a database.
 
 .. important::
 
-    As Showfoto do not use a database, application lack **image versioning** support.
+    As Showfoto does not use a database, application lack **image versioning** support.
 
 Other difference with digiKam Image Editor is the **Left sidebar**. In digiKam there left sidebar do not exists as all phoyo management is delegate to the Main Window. In Showfoto, the left sidebar host two tab to navigate in file-system.
 
 :ref:`First one <showfoto_folderstab>`, named **Folders** allows to go in-deep in directory hierarchies as a standard files manager. You can see the image thumbnails and the current path. Clicking on a thumbnail will load the contents to the canvas.
 
-:ref:`Second one <showfoto_stacktab>`, named **Stack** allows to host you prefered items previously selected in **Folders** tab.
+:ref:`Second one <showfoto_stacktab>`, named **Stack** allows to host you preferred items previously selected in the **Folders** tab.
 
 The **Right Sidebar** is exactly the same than Image Editor, excepted the tabs depending exclusively to the database. **Captions** and **Versions** are not available in Showfoto. Looks in :ref:`this section of this manual <right_sidebar>` to found information about tabs present in Showfoto.

@@ -73,7 +73,7 @@ The Showfoto **Plugins** settings page is mostly the same than digiKam Image Edi
 
 .. note::
 
-    Showfoto do not support the **Batch Queue Manager** plugins. This part do not exists in this view compared to digiKam
+    Showfoto does not support the **Batch Queue Manager** plugins. This part does not exist in this view compared to digiKam
 
 Miscellaneous
 -------------
