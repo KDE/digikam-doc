@@ -45,6 +45,8 @@ The Showfoto **Metadata** settings page only includes few common options that yo
 Tool Tip
 --------
 
+The Showfoto **Tooltip** settings page is similar :ref:`than digiKam <tooltip_settings>`. The main difference with digiKam is the non support of extra information stored in database and the video metadata.
+
 .. figure:: images/showfoto_setup_tooltip.webp
     :alt:
     :align: center
@@ -78,20 +80,28 @@ The Showfoto **Plugins** settings page is mostly the same than digiKam Image Edi
 Miscellaneous
 -------------
 
-.. figure:: images/showfoto_setup_misc_behaviour.webp
-    :alt:
-    :align: center
+The Showfoto **Miscellaneous** settings page is less complete :ref:`than digiKam <miscs_settings>`. **SpellCheck** and **Localize** tabs are exactly the same, and the **Grouping** tab present in digiKam do not exists in Showfoto due to the lack of database. The differences are located mostly located in:
 
-    The Showfoto Stand-Alone Editor Setup Misc Behaviour Page
+    - In **Behaviour** tab, Showfoto propose some options to **Sort Order** the icon-views as the **Thumbbar** and list-view available in **Folders** and **Stack** tabs from left side-bar. Information show as overlay with **Thumbbar** can be also customized. The **Updates** view to checkout new program version is exactly the same than digiKam.  
 
-.. figure:: images/showfoto_setup_misc_appearance.webp
-    :alt:
-    :align: center
+    .. figure:: images/showfoto_setup_misc_behaviour.webp
+        :alt:
+        :align: center
 
-    The Showfoto Stand-Alone Editor Setup Misc Appearance Page
+        The Showfoto Stand-Alone Editor Setup Misc Behaviour Page
 
-.. figure:: images/showfoto_setup_misc_system.webp
-    :alt:
-    :align: center
+    - **Appearance** tab is a reduced version than digiKam. Less options are presented here, but fundamentally, it's the same. See :ref:`this section <appearance_settings>` from details.
+
+    .. figure:: images/showfoto_setup_misc_appearance.webp
+        :alt:
+        :align: center
+
+        The Showfoto Stand-Alone Editor Setup Misc Appearance Page
+
+    - As Appearance, **System** tab is also a reduced version than digiKam. See :ref:`this section <system_settings>` from details.
+
+    .. figure:: images/showfoto_setup_misc_system.webp
+        :alt:
+        :align: center
 
     The Showfoto Stand-Alone Editor Setup Misc System Page

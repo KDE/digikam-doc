@@ -600,7 +600,7 @@ Second one is the amount of **Radius Blur** effect in percent applied on data cl
 
 To select the source of image to clone, press **S**, or the **Source selection** button from the toolbar on the top of settings view. The cursor will change to aim-shape, to let you decide the central source button where you will start cloning from.
 
-.. figure:: videos/editor_clone_spot.web
+.. figure:: videos/editor_clone_spot.webp
     :width: 300px
     :alt:
     :align: center
