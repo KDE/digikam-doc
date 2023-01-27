@@ -1,6 +1,6 @@
 .. meta::
    :description: How to Install digiKam Photo Management Program
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, install, Linux, Windows, macOS, requirements, configurations, update
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, install, linux, windows, macos, requirements, configurations, update
 
 .. metadata-placeholder
 
@@ -75,17 +75,28 @@ Using on Standard Desktop
 
 digiKam is available as an install and as a standalone version.
 
-- Install version: Needs administrator rights and gets installed on your local machine. It's also listed as a program.
+    - Install version: Needs administrator rights and gets installed on your local machine. It's also listed as a program.
 
-   - It's available for all users on your computer.
+        - It's available for all users on your computer.
 
-   - The digiKam files are always located in the same folder.
+        - The digiKam files are always located in the same folder.
 
-- Standalone version: **Doesn't** need administrator rights and isn't installed. It's **not** listed as a program. Is only accessible for the user who has downloaded the file.
+    .. note::
 
-   - If you work with a normal user on your computer, you can use digiKam.
+        If a previous digiKam version is present on your system, the Windows installer will warns you to uninstall it before to process to the new installation.
 
-   - You can copy the digiKam folder on any external drive and run it on a different computer without installing it. However, your personal settings and downloads within digiKam are related to the computer you work on.   
+        .. figure:: images/windows_installer_warning.webp
+            :width: 300px
+            :alt:
+            :align: center
+
+            The Windows Warning When you Try to Install digiKam When a Previous Version is Present
+
+    - Standalone version: **Doesn't** need administrator rights and isn't installed. It's **not** listed as a program. Is only accessible for the user who has downloaded the file.
+
+        - If you work with a normal user on your computer, you can use digiKam.
+
+        - You can copy the digiKam folder on any external drive and run it on a different computer without installing it. However, your personal settings and downloads within digiKam are related to the computer you work on.   
 
 Using in a Windows Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~
