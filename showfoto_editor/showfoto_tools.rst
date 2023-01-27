@@ -36,3 +36,10 @@ Even if Showfoto do not provides something like the **Batch Queue Manager** from
     :align: center
 
     The Showfoto Running Time Adjust Plugin Over the Contents loaded from the Current Stack
+
+DNG Converter
+-------------
+
+One very important tool available in digiKam Batch Queue Manager is also usable in Showfoto. The famous :ref:`DNG Converter <dng_converter>` to migrate RAW container data to the standardized and open Digital Negative format.
+
+This tool is available as stand-alone version like Time Adjust plugin. It work Mostly like the original one from the Batch Queue Manager. You can start it from the :menuselection:`Tools --> DNG Converter...` menu entry.
