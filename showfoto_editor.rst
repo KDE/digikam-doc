@@ -26,3 +26,4 @@ This section explain how to use the Showfoto image editor.
    showfoto_editor/showfoto_overview.rst
    showfoto_editor/showfoto_leftsidebar.rst
    showfoto_editor/showfoto_setup.rst
+   showfoto_editor/showfoto_tools.rst

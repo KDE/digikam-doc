@@ -726,6 +726,10 @@ Showfoto
 
         :ref:`showfoto_setup`
 
+    .. container:: tile no-descr
+
+        :ref:`showfoto_tools`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
