@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-25 00:50+0000\n"
+"POT-Creation-Date: 2023-01-26 00:50+0000\n"
 "PO-Revision-Date: 2023-01-12 10:32\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -83,8 +83,8 @@ msgstr ""
 #: ../../setup_application/collections_settings.rst:37
 msgid ""
 "For each type, the **Add Collection** button allows to append an entry in "
-"the list. Entry properties are the root album folder **name** and the root "
-"album folder **path**."
+"the list. Entry properties are the root album folder **Name** and the root "
+"album folder **Path**."
 msgstr ""
 
 #: ../../setup_application/collections_settings.rst:43
@@ -94,8 +94,9 @@ msgstr ""
 
 #: ../../setup_application/collections_settings.rst:45
 msgid ""
-"To edit the properties of an entry, use the **update button** on the right "
-"of the path. To remove an entry, use the **red trash button** on right side."
+"To edit the properties of an entry, use the **Update button** on the right "
+"side of the path. To remove an entry, use the **Red trash button** on right "
+"side."
 msgstr ""
 
 #: ../../setup_application/collections_settings.rst:51
@@ -118,17 +119,79 @@ msgid ""
 msgstr ""
 
 #: ../../setup_application/collections_settings.rst:64
-msgid "Ignore Directories from your Collections"
+msgid "The Network Shares Specificity"
 msgstr ""
 
 #: ../../setup_application/collections_settings.rst:66
+msgid ""
+"For the **Collections on Network Shares**, the **Plus button** on the right "
+"side of the path allows to append a new mount path to a registered "
+"collection entry. This feature resolve the problematic collections and "
+"database data shared over a local network (here using a `Network Attached "
+"Storage - NAS <https://en.wikipedia.org/wiki/Network-attached_storage>`_), "
+"and accedes by different digiKam clients (here a Windows, Linux, and macOS). "
+"As each client will mount the shared collection to different paths on local "
+"computers, this allows to host all paths in the database referring to the "
+"same main shared collection path. As all client computers will share the "
+"same database, all information hosted in database and managed with each "
+"digiKam clients will not be duplicated on the NAS."
+msgstr ""
+
+#: ../../setup_application/collections_settings.rst:68
+msgid "The configuration can be set following steps listed below:"
+msgstr ""
+
+#: ../../setup_application/collections_settings.rst:70
+msgid ""
+"On the **Linux** client, user adds the first entry to the network "
+"collection: :file:`/mnt/nas`"
+msgstr ""
+
+#: ../../setup_application/collections_settings.rst:72
+msgid ""
+"on the **macOS** client, with the \"+\" icon user now adds its base path to "
+"the collection: :file:`/Volumes/data/NAS`"
+msgstr ""
+
+#: ../../setup_application/collections_settings.rst:74
+msgid ""
+"on the **Windows** client, user adds the shared path: :file:`X:\\\\NAS-"
+"digiKam`"
+msgstr ""
+
+#: ../../setup_application/collections_settings.rst:76
+msgid ""
+"Later, other extra digiKam clients would also be conceivable if the NAS has "
+"a different mount point or used by `UNC path <https://en.wikipedia.org/wiki/"
+"Path_(computing)#Uniform_Naming_Convention>`_. On each digiKam clients it's "
+"important that all base paths then refer to the same network shared "
+"collection in the setup dialog."
+msgstr ""
+
+#: ../../setup_application/collections_settings.rst:80
+msgid ""
+"This kind of resources shared on the local network do not permit to use each "
+"client at the same time with a common database."
+msgstr ""
+
+#: ../../setup_application/collections_settings.rst:86
+msgid ""
+"Collection and Database Shared on Local Network Using NAS to 3 Different "
+"digiKam Clients"
+msgstr ""
+
+#: ../../setup_application/collections_settings.rst:91
+msgid "Ignore Directories from your Collections"
+msgstr ""
+
+#: ../../setup_application/collections_settings.rst:93
 msgid ""
 "The **Ignored Directories** view allows to setup the list of the directories "
 "to ignore while scanning collection contents. The directory names are case "
 "sensitive and must be separated by semicolon."
 msgstr ""
 
-#: ../../setup_application/collections_settings.rst:72
+#: ../../setup_application/collections_settings.rst:99
 msgid ""
 "The digiKam Collections Configuration Page with the List of Ignored "
 "Directories"
