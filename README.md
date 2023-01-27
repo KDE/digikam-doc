@@ -41,7 +41,7 @@ The EPUB ebook is generated in `build/epub`. Open the file `DigikamManual.epub` 
 - build                   : temporary dir created when documentation is compiled.
 - [locale](locale)        : link to updated handbook translations files. Files are updated all nights.
 - po                      : Obsolete, not used. Replaced by locale directory.
-- [project](project)      : some helpers scripts.
+- [project](project)      : some helpers scripts and LibreOffice schemes.
 - [ressources](ressources): Sphinx templates customization.
 - [tests](tests)          : scripts to test repository contents with CI
 
@@ -84,7 +84,7 @@ For example, the **getting_started** section will be organized like this:
     ├── introduction.rst
     ├── quick_start.rst
     └── videos
-        └── appimage_startup.gif
+        └── appimage_startup.webp
 
 ```
 
