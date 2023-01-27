@@ -40,7 +40,7 @@ Video Features
 
 With digiKam, you will be able to read video metadata, such as movie length, video frames per second, video size, and encoding options, in order to populate the database at scanning and to perform searches on your collection about video properties. You will be able to play video in embedded preview mode, and in a slideshow. This includes previewing video from your camera device before downloading (only with USB Mass Storage connection mode).
 
-.. figure:: videos/preview_video_player.gif
+.. figure:: videos/preview_video_player.webp
     :alt:
     :align: center
 
