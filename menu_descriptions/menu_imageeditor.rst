@@ -18,58 +18,58 @@ Image Editor Menu
 The File Menu
 -------------
 
-File → Back (PgUp)
+:menuselection:`File --> Back` :kbd:`PgUp`
 
     Display the previous image of the current Album.
 
-File → Forward (PgDn)
+:menuselection:`File --> Forward` :kbd:`PgDn`
 
     Display the next image of the current Album.
 
-File → First (Ctrl+Home)
+:menuselection:`File --> First` :kbd:`Ctrl+Home`
 
     Display the first image of current Album.
 
-File → Last (Ctrl+End)
+:menuselection:`File --> Last` :kbd:`Ctrl+End`
 
     Display the last image of current Album.
 
-File → Save (Ctrl+S)
+:menuselection:`File --> Save` :kbd:`Ctrl+S`
 
     Save the current image if it has been modified.
 
-File → Save As...
+:menuselection:`File --> Save As...`
 
     Save the current image in a new file.
 
-File → Revert
+:menuselection:`File --> Revert`
 
     Restore the current image from the original file if it has been modified.
 
-File → Delete File/Move to trash (Shift+Del)
+:menuselection:`File --> Delete File/Move to trash` :kbd:`Shift+Del`
 
     Delete/Move to trash the current image from the current Album.
 
-File → Print Image... (Ctrl+P)
+:menuselection:`File --> Print Image...` :kbd:`Ctrl+P`
 
     Print the current image.
 
-File → Quit (Ctrl+Q)
+:menuselection:`File --> Quit` :kbd:`Ctrl+Q`
 
     Quit digiKam Image Editor.
 
 The Edit Menu
 -------------
 
-Edit → Copy (Ctrl+C)
+:menuselection:`Edit --> Copy` :kbd:`Ctrl+C`
 
     Copy the current image selection in the clipboard.
 
-Edit → Undo (Ctrl+Z)
+:menuselection:`Edit --> Undo` :kbd:`Ctrl+Z`
 
     Cancel the last action applied to the current image using history.
 
-Edit → Redo (Ctrl+Shift+Z)
+:menuselection:`Edit --> Redo` :kbd:`Ctrl+Shift+Z`
 
     Redo the last action applied to the current image using history.
 
