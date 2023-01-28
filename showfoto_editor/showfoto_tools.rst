@@ -39,6 +39,12 @@ Even if Showfoto do not provides something like the digiKam **Batch Queue Manage
 
 With Showfoto, you can also export items with :ref:`web-service tools <export_tools>`, as Flickr or Google, exactly like you can do in digiKam.
 
+.. figure:: images/showfoto_export_dropbox.webp
+    :alt:
+    :align: center
+
+    The Showfoto Exporting the Current Stack to Dropbox Web-Service
+
 DNG Converter
 -------------
 
