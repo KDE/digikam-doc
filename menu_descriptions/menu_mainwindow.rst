@@ -18,34 +18,34 @@ Main Window Menu
 The Browse Menu
 ---------------
 
-The Browse menu provides access to the same views you can see on the Left Sidebar. Descriptions see under The Main digiKam Window. In addition there are "Back" and "Forward" menu items that will lead you through the history of your digiKam use in the same way you are used to from an internet browser for example. And finally there is the "Quit" item to leave digiKam.
+The Browse menu provides access to the same views you can see on the Left Sidebar. Descriptions see under :ref:`The Main digiKam Window <main_window>`. In addition there are **Back** and **Forward** menu items that will lead you through the history of your digiKam use in the same way you are used to from an internet browser for example. And finally there is the **Quit** item to leave digiKam.
 
 The Album Menu
 --------------
 
 The first five items of this menu (above the separator) are only active if you are in the Albums View.
 
-:menuselection:`Album -->New...` :kbd:`Ctrl+N`
+:menuselection:`Album --> New...` :kbd:`Ctrl+N`
 
-    Opens a dialog to create a new album folder similar to the album properties dialog described here. It just has an additional drop down field where you can choose whether the new album is created as a child of the current one or at the root of the current collection.
+    Opens a dialog to create a new album folder similar to the album properties dialog described :ref:`there <managing_albums>`. It just has an additional drop down field where you can choose whether the new album is created as a child of the current one or at the root of the current collection.
 
-:menuselection:`Album -->Properties`
+:menuselection:`Album --> Properties`
 
     Edit the currently selected album title, caption and collection as described here.
 
-:menuselection:`Album -->Rename` :kbd:`F5`
+:menuselection:`Album --> Rename` :kbd:`F5`
 
     Rename the current album.
 
-:menuselection:`Album -->Open in File Manager`
+:menuselection:`Album --> Open in File Manager`
 
     Open the default file manager with the current Album path.
 
-:menuselection:`Album -->Delete Album`
+:menuselection:`Album --> Delete Album`
 
     Delete/Move to trash selected Album and all items in it.
 
-:menuselection:`Album -->Write Metadata to Images`
+:menuselection:`Album --> Write Metadata to Images`
 
     Write the metadata in the database to the file's metadata of all items in the current album. The images will inherit the database metadata, not the other way round as in the next menu item.
 
@@ -58,200 +58,200 @@ The Tag Menu
 
 The items below the separator are only active if you are in the Tags View.
 
-:menuselection:`Tag -->Tag Manager`
+:menuselection:`Tag --> Tag Manager`
 
-    Opens the digiKam Tag Manager.
+    Opens the digiKam :ref:`Tag Manager <tag_manager>`.
 
-:menuselection:`Tag -->New...`
+:menuselection:`Tag --> New...`
 
     A dialog will open where you can type in the tag name (or even a whole hierarchy branch), assign an icon and/or a shortcut to the tag. The new tag will be created as a sub-tag of the selected tag.
 
-:menuselection:`Tag -->Properties`
+:menuselection:`Tag --> Properties`
 
     The Tag Properties allow you to change the name of the tag, the icon used in the Tags tree and the shortcut.
 
-:menuselection:`Tag -->Delete`
+:menuselection:`Tag --> Delete`
 
     Remove the currently selected Tag from the Album's Database. This doesn't delete the images the tag was assigned to.
 
 The Item Menu
 -------------
 
-:menuselection:`Item -->Open...` :kbd:`F4`
+:menuselection:`Item --> Open...` :kbd:`F4`
 
-    Opens the selected image in the digiKam image editor.
+    Opens the selected image in the digiKam :ref:`Image Editor <image_editor>`.
 
-:menuselection:`Item -->Open With Default Application` :kbd:`Meta-F4`
+:menuselection:`Item --> Open With Default Application` :kbd:`Meta-F4`
 
-    Opens the selected item in the default application according to the mimetype, e.g. Gwenview.
+    Opens the selected item in the default application according to the mime-type set in your desktop.
 
-:menuselection:`Item -->Rename` :kbd:`F2`
+:menuselection:`Item --> Rename` :kbd:`F2`
 
-    Renames the currently selected item(s). See description here. 
+    Renames the currently selected item(s). See description :ref:`here <renaming_photograph>`. 
 
-:menuselection:`Item -->Move to trash` :kbd:`Del`
+:menuselection:`Item --> Move to trash` :kbd:`Del`
 
-    Moves selected item(s) to trash (recoverable delete).
+    Moves selected item(s) to the :ref:`digiKam Trash <deleting_photograph>` (recoverable delete).
 
-:menuselection:`Item -->Place onto Light Table` :kbd:`Ctrl-L`
+:menuselection:`Item --> Place onto Light Table` :kbd:`Ctrl-L`
 
-    Inserts selection into the Light Table thumbbar and puts the Light Table into the foreground.
+    Inserts selection into the :ref:`Light Table <light_table>` thumbbar and puts the Light Table into the foreground.
 
-:menuselection:`Item -->Add to Light Table` :kbd:`Ctrl-Shift-L`
+:menuselection:`Item --> Add to Light Table` :kbd:`Ctrl-Shift-L`
 
-    Adds selection to the Light Table thumbbar and puts the Light Table into the foreground.
+    Adds selection to the :ref:`Light Table <light_table>` thumbbar and puts the Light Table into the foreground.
 
-:menuselection:`Item -->Add to Current Queue` :kbd:`Ctrl-B`
+:menuselection:`Item --> Add to Current Queue` :kbd:`Ctrl-B`
 
-    Opens the digiKam Batch Queue Manager and adds selection to the current queue or, if there is no queue yet, to a new queue.
+    Opens the digiKam :ref:`Batch Queue Manager <queue_manager>` and adds selection to the current queue or, if there is no queue yet, to a new queue.
 
-:menuselection:`Item -->Add to New Queue` :kbd:`Ctrl-Shift-B`
+:menuselection:`Item --> Add to New Queue` :kbd:`Ctrl-Shift-B`
 
-    Opens the digiKam Batch Queue Manager and puts selection into a new queue.
+    Opens the digiKam :ref:`Batch Queue Manager <queue_manager>` and puts selection into a new queue.
 
-:menuselection:`Item -->Find Similar...`
+:menuselection:`Item --> Find Similar...`
 
-    Puts the selected item into the Image tab in the Fuzzy View.
+    Puts the selected item from the **Image** tab in the Similar View.
 
-    See the dedicated Image (Similar items) for more information. 
+    See the dedicated :ref:`Similarity Search Tool <similarity_view>` for more information. 
 
-:menuselection:`Item -->Write Metadata to Image`
+:menuselection:`Item --> Write Metadata to Image`
 
     When editing files outside digiKam, the database will not be triggered to update information. If you want to scan items and backport changes in the database you got to use this function first.
 
-:menuselection:`Item -->Reread Metadata from Image`
+:menuselection:`Item --> Reread Metadata from Image`
 
     When editing metadata using the Metadata Editor the data will be written to the image only. If you want them to appear in the Metadata Tab of the Right Sidebar you got to use this function first.
 
-:menuselection:`Item -->Rotate`
+:menuselection:`Item --> Rotate`
 
-    Menu entry for rotating the currently selected images lossless Left :kbd:`Ctrl-Shift-Left` or Right :kbd:`Ctrl-Shift-Right` in 90 degree steps (see submenu). 
+    Menu entry for rotating the currently selected images lossless Left :kbd:`Ctrl-Shift-Left` or Right :kbd:`Ctrl-Shift-Right` in 90 degree steps (see sub-menu). 
 
 :menuselection:`Item -->Flip`
 
-    Menu entry for flipping the currently selected images lossless Horizontally :kbd:`Ctrl-\*` or Vertically :kbd:`Ctrl-/` (see submenu).
+    Menu entry for flipping the currently selected images lossless Horizontally :kbd:`Ctrl-\*` or Vertically :kbd:`Ctrl-/` (see sub-menu).
 
-:menuselection:`Item -->Auto Rotate/Flip using Exif information`
+:menuselection:`Item --> Auto Rotate/Flip using Exif information`
 
-    Menu entry to manually activate the auto rotate/flip feature for the currently selected images using the Exif orientation tag. For a more detailed description see Lossless Image Rotation.
+    Menu entry to manually activate the auto rotate/flip feature for the currently selected images using the Exif orientation tag. For a more detailed description see :ref:`Lossless Image Rotation <lossless_rotation>`.
 
-:menuselection:`Item -->Adjust Exif Orientation Tag`
+:menuselection:`Item --> Adjust Exif Orientation Tag`
 
-    The Exif Orientation Tag of the current selection will be changed depending on the option you choose from the submenu. The thumbnail(s) and preview(s) will be rotated accordingly if Show images/thumbnails rotated according to orientation tag is checked in :menuselection:`Settings -->Configure digiKam... --> Metadata --> Rotation --> Rotate actions , but not the actual image file. If you want to rotate that as well you got to use the function :menuselection:`Item -->Auto Rotate/Flip using Exif information` described above additionally. If you open the file in the digiKam Image Editor it will also come up in the rotated version and will be stored that way on disc if you save it. But be aware of the fact that this would be a lossy operation as long as it is not a lossless file format.
+    The Exif Orientation Tag of the current selection will be changed depending on the option you choose from the sub-menu. The thumbnail(s) and preview(s) will be rotated accordingly if **Show images/thumbnails rotated according to orientation** tag is checked in :menuselection:`Settings --> Configure digiKam... --> Metadata --> Rotation --> Rotate actions`, but not the actual image file. If you want to rotate that as well you got to use the function :menuselection:`Item --> Auto Rotate/Flip using Exif information` described above additionally. If you open the file in the digiKam Image Editor it will also come up in the rotated version and will be stored that way on disc if you save it. But be aware of the fact that this would be a lossy operation as long as it is not a lossless file format.
 
-:menuselection:`Item -->Edit Metadata...`
+:menuselection:`Item --> Edit Metadata...`
 
-    Opens the digiKam Metadata Editor to handle meta data of the image (Exif, IPTC, XMP).
+    Opens the digiKam Metadata Editor to handle metadata of the image (Exif, IPTC, XMP).
 
-    See the dedicated Metadata Editor chapter for more information. 
+    See the dedicated :ref:`Metadata Editor <metadata_editor>` chapter for more information. 
 
-:menuselection:`Item -->Edit Geolocation...`
+:menuselection:`Item --> Edit Geolocation...`
 
     Opens the digiKam Geolocation Editor to handle GPS meta data of the image.
 
-    See the dedicated Geolocation Tool for more information. 
+    See the dedicated :ref:`Geolocation Editor <geolocation_editor>` for more information. 
 
-:menuselection:`Item -->Print`
+:menuselection:`Item --> Print`
 
     Calls standard print dialog. 
 
-:menuselection:`Item -->Print Assistant...`
+:menuselection:`Item --> Print Assistant...`
 
-    Tool to print Album images.
+    Tool to print grouped images from Album.
 
-    See the dedicated Print Wizard for more information. 
+    See the dedicated :ref:`Print Creator <print_creator>` for more information. 
 
 .. note::
 
-    Another very useful function on items is grouping which is at the time of writing only available through the context menu on a selection of items. For details see Grouping Photographs in the chapter about the Main digiKam Window.
+    Another very useful function on items is grouping which is at the time of writing only available through the context menu on a selection of items. For details see :ref:`Grouping Photographs <grouping_photograph>` in the chapter about the digiKam **Main Window**.
 
 The Edit Menu
 -------------
 
-Beside the usual "Cut", "Copy" and "Paste" the Edit Menu contains the following items:
+Beside the usual **Cut**, **Copy** and **Paste** the Edit Menu contains the following items:
 
-:menuselection:`Edit -->Select All` :kbd:`Ctrl+A`
+:menuselection:`Edit --> Select All` :kbd:`Ctrl+A`
 
     Select all images currently shown
 
-:menuselection:`Edit -->Select None` :kbd:`Ctrl+Shift+A`
+:menuselection:`Edit --> Select None` :kbd:`Ctrl+Shift+A`
 
     Un-select all items in the current view
 
-:menuselection:`Edit -->Invert Selection` :kbd:`Ctrl+I`
+:menuselection:`Edit --> Invert Selection` :kbd:`Ctrl+I`
 
     Invert the current selection
 
 The View Menu
 -------------
 
-:menuselection:`View -->Thumbnails`
+:menuselection:`View --> Thumbnails`
 
-    Shows thumbnails in the Image Area
+    Shows thumbnails in the :ref:`Image View <image_view>`.
 
-:menuselection:`View -->Preview Image` :kbd:`F3`
+:menuselection:`View --> Preview Image` :kbd:`F3`
 
-    Shows additionally a preview in the Image Area.
+    Shows additionally a :ref:`Preview <viewing_photograph>` in the **Image View**.
 
-    The preview has "Back" and "Forward" buttons at the top left corner to navigate through all the images currently shown. 
+    The preview has **Back** and **Forward** buttons at the top left corner to navigate through all the images currently shown. 
 
-:menuselection:`View -->Map`
+:menuselection:`View --> Map`
 
     Shows images on a map.
 
-:menuselection:`View -->Table`
+:menuselection:`View --> Table`
 
     Shows images in a table where you can choose by right clicking on the title bar which information you want to be displayed.
 
     By default you have these four items also on the main toolbar. 
 
-:menuselection:`View -->Slideshow`
+:menuselection:`View --> Slideshow`
 
-    Slide Show including RAW files.
+    :ref:`Slide-Show <slide_tool>` including RAW files.
 
-:menuselection:`View -->Slideshow --> All` :kbd:`F9`
+:menuselection:`View --> Slideshow --> All` :kbd:`F9`
 
-    Start slide show of all images in current window.
+    Start Slide-Show of all images in current window.
 
-:menuselection:`View -->Slideshow --> Selection` :kbd:`Alt+F9`
+:menuselection:`View --> Slideshow --> Selection` :kbd:`Alt+F9`
 
-    Start slide show on selected images.
+    Start Slide-Show on selected images.
 
-:menuselection:`View -->Slideshow --> With All Sub-Albums` :kbd:`Shift+F9`
+:menuselection:`View --> Slideshow --> With All Sub-Albums` :kbd:`Shift+F9`
 
-    Slide show that recurses through the current album tree.
+    Slide-Show that recurses through the current album tree.
 
-:menuselection:`View -->Slideshow --> Presentation...` :kbd:`Alt+Shift+F9`
+:menuselection:`View --> Slideshow --> Presentation...` :kbd:`Alt+Shift+F9`
 
     Tool to display an advanced slide show with Album items.
 
-    See the dedicated Presentation Tool for more information. 
+    See the dedicated :ref:`Presentation Tool <presentation_tool>` for more information. 
 
-:menuselection:`View -->Full Screen Mode` :kbd:`Ctrl+Shift+F`
+:menuselection:`View --> Full Screen Mode` :kbd:`Ctrl+Shift+F`
 
     Switch to full screen (Return with the same keyboard shortcut).
 
-:menuselection:`View -->Zoom in` :kbd:`Ctrl++,+`
+:menuselection:`View --> Zoom in` :kbd:`Ctrl++,+`
 
     Increase preview or the thumbnail size of the currently selected Album.
 
-:menuselection:`View -->Zoom out` :kbd:`Ctrl+-,-`
+:menuselection:`View --> Zoom out` :kbd:`Ctrl+-,-`
 
     Decrease preview or the thumbnail size of the currently selected Album.
 
-:menuselection:`View -->Zoom to 100%` :kbd:`Ctrl+,`
+:menuselection:`View --> Zoom to 100%` :kbd:`Ctrl+,`
 
     Will show the image 1:1 (meaning 1 image pixel is mapped exactly to 1 screen pixel) in preview mode.
 
-:menuselection:`View -->Fit to Window` :kbd:`Ctrl+Alt+E`
+:menuselection:`View --> Fit to Window` :kbd:`Ctrl+Alt+E`
 
     Will size the image as to fit snug into the window.
 
-:menuselection:`View -->Sort Albums`
+:menuselection:`View --> Sort Albums`
 
     Sort all digiKam Albums by Folder, by Category or by Date.
 
-:menuselection:`View -->Sort Images`
+:menuselection:`View --> Sort Images`
 
     Sort all images in current Album by:
 
@@ -264,31 +264,31 @@ The View Menu
         - Image Size.
         - Aspect Ratio.
         - Face Type.
-        - Similarity (only in the Fuzzy View).
+        - Similarity (only in the Similarity Search View).
         - Manual and Name.
         - Manual and Date.
 
-:menuselection:`View -->Image Sorting Order`
+:menuselection:`View --> Image Sorting Order`
 
     Select whether images should be sorted in ascending or descending order.
 
-:menuselection:`View -->Group Images`
+:menuselection:`View --> Group Images`
 
     Select whether images should be shown un-grouped (Flat List) or grouped by album or by format.
 
-:menuselection:`View -->Group Sorting Order`
+:menuselection:`View --> Group Sorting Order`
 
     Select whether groups should be sorted in ascending or descending order.
 
-:menuselection:`View -->Include Album Sub-Tree`
+:menuselection:`View --> Include Album Sub-Tree`
 
     If a hierarchical album structure exists, the currently selected branch will be displayed in full depth.
 
-:menuselection:`View -->Include Tag Sub-Tree`
+:menuselection:`View --> Include Tag Sub-Tree`
 
     If a hierarchical tag structure exists, the currently selected branch will be displayed in full depth.
 
-:menuselection:`View -->Color-Managed View` :kbd:`F12`
+:menuselection:`View --> Color-Managed View` :kbd:`F12`
 
     Toggles between showing thumbnails and preview in color-managed mode or not.
 
@@ -297,43 +297,43 @@ The View Menu
 The Tools Menu
 --------------
 
-:menuselection:`Tools -->Image Editor`
+:menuselection:`Tools --> Image Editor`
 
     Opens the digiKam Image Editor. 
 
-:menuselection:`Tools -->Light Table` :kbd:`L`
+:menuselection:`Tools --> Light Table` :kbd:`L`
 
     Switches to the Light Table window. 
 
-:menuselection:`Tools -->Batch Queue Manager` :kbd:`B`
+:menuselection:`Tools --> Batch Queue Manager` :kbd:`B`
 
     Opens the Batch Queue Manager window. 
 
-:menuselection:`Tools -->Search...` :kbd:`Ctrl+F`
+:menuselection:`Tools --> Search...` :kbd:`Ctrl+F`
 
     Switches to the Search View with focus on the simple search field. 
 
-:menuselection:`Tools -->Advanced Search...` :kbd:`Ctrl+Alt+F`
+:menuselection:`Tools --> Advanced Search...` :kbd:`Ctrl+Alt+F`
 
     Switches to the Search View and launches the advanced search dialog. 
 
-:menuselection:`Tools -->Find Duplicates` :kbd:`Ctrl+D`
+:menuselection:`Tools --> Find Duplicates` :kbd:`Ctrl+D`
 
-    Leads to the "Duplicates" tab in the Fuzzy View.
+    Leads to the **Duplicates** tab in the Similarity Search View.
 
-    See Fuzzy View for more information. 
+    See :ref:`Similarity Search Tool <similarity_view>` for more information. 
 
-:menuselection:`Tools -->Maintenance...`
+:menuselection:`Tools --> Maintenance...`
 
     Opens the maintenance tool.
 
-    For a detailed description see this Chapter 
+    For a detailed description see :ref:`this Chapter <maintenance_tool>` 
 
-:menuselection:`Tools -->Blend Bracketed or Focus Stack Images...`
+:menuselection:`Tools --> Blend Bracketed or Focus Stack Images...`
 
     This tool allows users to blend bracketed images together to create pseudo HDR photo.
 
-:menuselection:`Tools -->Create Panorama...`
+:menuselection:`Tools --> Create Panorama...`
 
     This tool allows users to assemble images together to create large panorama.
 

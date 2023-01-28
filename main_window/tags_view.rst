@@ -77,10 +77,9 @@ In this tag tree the keyword *Cat* appears three times. This will not cause a pr
 
 Solution: You replace the *Zoo Animal* branch by a single tag *Zoo* which you use in addition to the tag you choose from the two remaining branches. You could even put it on the top level of your hierarchy if you have photographs taken in a zoo but not showing animals. 
 
+.. _tag_manager:
 
-.. _tags_manager:
-
-Tags Manager
+Tag Manager
 ~~~~~~~~~~~~
 
 There are certain possibilities to manage tags from the context menu on tags in the digiKam sidebars like **New Tag...** or **Delete Tag**. The Tag Manager offers a more comfortable and comprehensive way to organize your tags. For general information about tags, why and how to use them see Tags View in the Main digiKam Window chapter.

@@ -50,7 +50,7 @@ You can access most of the functions that digiKam can perform on a photograph by
 
 .. _viewing_photograph:
 
-Viewing an image
+Viewing an Image
 ~~~~~~~~~~~~~~~~
 
 .. |icon_fullscreen| image:: images/mainwindow_icon_fullscreen.webp
