@@ -85,9 +85,9 @@ Using on Standard Desktop
 
 **digiKam** runs only on 64bit version of Windows. digiKam runs on Windows 7 and newer. We cannot guarantee that digiKam runs on server or embedded Windows version.
 
-digiKam is available as an install and as a standalone version.
+digiKam is available as an **installable** and as a **standalone** version.
 
-    - Install version: Needs administrator rights and gets installed on your local machine. It's also listed as a program.
+    - **Installable** version: Needs administrator rights and gets installed on your local machine. It's also listed as a program.
 
         - It's available for all users on your computer.
 
@@ -104,7 +104,7 @@ digiKam is available as an install and as a standalone version.
 
             The Windows Warning When you Try to Install digiKam When a Previous Version is Present
 
-    - Standalone version: **Doesn't** need administrator rights and isn't installed. It's **not** listed as a program. Is only accessible for the user who has downloaded the file.
+    - **Standalone** version: **Doesn't** need administrator rights and isn't installed. It's **not** listed as a program. Is only accessible for the user who has downloaded the file.
 
         - If you work with a normal user on your computer, you can use digiKam.
 
@@ -170,7 +170,7 @@ The non Signed Package
 When the **PKG** file is downloaded, to start the installer, a security warning will appears, because the package is not signed for the Apple Gatekeeper.
 
 .. figure:: images/macos_pkg_warning.webp
-    :width: 300px
+    :width: 400px
     :alt:
     :align: center
 
@@ -179,7 +179,7 @@ When the **PKG** file is downloaded, to start the installer, a security warning 
 You needs to give the rights to run from the **macOS Config Panel/Security and Confidentiality** to confirm to Gatekeeper that all is safe here.
 
 .. figure:: images/macos_pkg_security.webp
-    :width: 300px
+    :width: 400px
     :alt:
     :align: center
 
@@ -188,7 +188,7 @@ You needs to give the rights to run from the **macOS Config Panel/Security and C
 When installer is running, follow instructions from the assistant to install application on your computer.
 
 .. figure:: images/macos_pkg_installer.webp
-    :width: 300px
+    :width: 400px
     :alt:
     :align: center
 
@@ -203,7 +203,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
 - **Automation**: This right is set when you try to open an album in Apple Finder file manager through digiKam.
 
 .. figure:: images/macos_privacy_automation.webp
-    :width: 300px
+    :width: 400px
     :alt:
     :align: center
 
@@ -212,7 +212,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
 - **Accessibility**: If you want to change the desktop wallpaper with digiKam, this right must be turned on.
 
 .. figure:: images/macos_privacy_accessibility.webp
-    :width: 300px
+    :width: 400px
     :alt:
     :align: center
 
@@ -221,7 +221,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
 - **Files And Folders**: if you place your collections on your computer outside the Photos directory from your personal account, digiKam needs special right to access to contents.
 
 .. figure:: images/macos_privacy_filesfolders.webp
-    :width: 300px
+    :width: 400px
     :alt:
     :align: center
 
@@ -230,7 +230,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
 - **Full Disk**: This right is mandatory if you use Gphoto2 driver to access on system places to communicate with the device.
 
 .. figure:: images/macos_privacy_fulldisk.webp
-    :width: 300px
+    :width: 400px
     :alt:
     :align: center
 
@@ -239,7 +239,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
 - **Photos**: if you want to share Apple Photos collection from your personal account, you will needs to turn on these rights.
 
 .. figure:: images/macos_privacy_photos.webp
-    :width: 300px
+    :width: 400px
     :alt:
     :align: center
 
