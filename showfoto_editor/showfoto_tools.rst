@@ -29,7 +29,7 @@ Mostly, Showfoto provides the same tools from digiKam Image Editor, in native or
 Post-Processing
 ---------------
 
-Even if Showfoto do not provides something like the digiKam **Batch Queue Manager**, it can process files in batch. Plugins as **Time Adjust**, **Print Wizzard**, **Metadata Editor**, **HTML Gallery**, etc. are compatible with Showfoto. The main difference to deal with this tools compared to digiKam is the way to pass items to process in the tools. Showfoto do not have an Icon-View as digiKam, but it have the **Stack View** and **Thumbbar** containers. When a :ref:`Post Processing <post_processing>` tool is called from Showfoto, the contents of the Stack or the Thumbbar are loaded in the tool, and of course, you can personalize this list later in the in plugin.
+Even if Showfoto does not provide something like the digiKam **Batch Queue Manager**, it can process files in batch. Plugins as **Time Adjust**, **Print Wizard**, **Metadata Editor**, **HTML Gallery**, etc. are compatible with Showfoto. The main difference to deal with this tools compared to digiKam is the way to pass items to process in the tools. Showfoto does not have an Icon-View as digiKam, but it has the **Stack View** and **Thumbbar** containers. When a :ref:`Post Processing <post_processing>` tool is called from Showfoto, the contents of the Stack or the Thumbbar are loaded in the tool, and of course, you can personalize this list later in the plugin.
 
 .. figure:: images/showfoto_time_adjust.webp
     :alt:
@@ -50,7 +50,7 @@ DNG Converter
 
 One very important tool available in digiKam Batch Queue Manager is also usable in Showfoto. It's the famous :ref:`DNG Converter <dng_converter>` used to migrate proprietary RAW data containers to the open-standardized `Digital Negative format <https://en.wikipedia.org/wiki/Digital_Negative>`_.
 
-In Showfoto, this tool run as stand-alone version like **Time Adjust** plugin. It work Mostly like the original from the digiKam Batch Queue Manager. You can start it from the :menuselection:`Tools --> DNG Converter...` menu entry.
+In Showfoto, this tool runs as stand-alone version like **Time Adjust** plugin. It works mostly like the original from the digiKam Batch Queue Manager. You can start it from the :menuselection:`Tools --> DNG Converter...` menu entry.
 
 .. figure:: images/showfoto_dng_converter.webp
     :alt:

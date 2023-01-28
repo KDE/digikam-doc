@@ -80,7 +80,7 @@ The Showfoto **Plugins** settings page is mostly the same than digiKam Image Edi
 Miscellaneous
 -------------
 
-The Showfoto **Miscellaneous** settings page is less complete :ref:`than digiKam <miscs_settings>`. **SpellCheck** and **Localize** tabs are exactly the same, and the **Grouping** tab present in digiKam do not exists in Showfoto due to the lack of database. The differences are located mostly located in:
+The Showfoto **Miscellaneous** settings page is less complete :ref:`than digiKam <miscs_settings>`. **SpellCheck** and **Localize** tabs are exactly the same, and the **Grouping** tab present in digiKam does not exist in Showfoto due to the lack of database. The differences are located mostly in:
 
     - In **Behaviour** tab, Showfoto propose some options to **Sort Order** the icon-views as the **Thumbbar** and list-view available in **Folders** and **Stack** tabs from left side-bar. Information show as overlay with **Thumbbar** can be also customized. The **Updates** view to checkout new program version is exactly the same than digiKam.  
 
@@ -90,7 +90,7 @@ The Showfoto **Miscellaneous** settings page is less complete :ref:`than digiKam
 
         The Showfoto Stand-Alone Editor Setup Misc Behaviour Page
 
-    - **Appearance** tab is a reduced version than digiKam. Less options are presented here, but fundamentally, it's the same. See :ref:`this section <appearance_settings>` from details.
+    - **Appearance** tab is a reduced version than digiKam. Less options are presented here, but fundamentally, it's the same. See :ref:`this section <appearance_settings>` for details.
 
     .. figure:: images/showfoto_setup_misc_appearance.webp
         :alt:
@@ -98,7 +98,7 @@ The Showfoto **Miscellaneous** settings page is less complete :ref:`than digiKam
 
         The Showfoto Stand-Alone Editor Setup Misc Appearance Page
 
-    - As Appearance, **System** tab is also a reduced version than digiKam. See :ref:`this section <system_settings>` from details.
+    - As Appearance, **System** tab is also a reduced version than digiKam. See :ref:`this section <system_settings>` for details.
 
     .. figure:: images/showfoto_setup_misc_system.webp
         :alt:

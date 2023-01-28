@@ -67,7 +67,7 @@ Turn on **executable** property of AppImage file and run it. That all...
 
 .. tip::
 
-    The AppImage bundle include also the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>`. To run it instead digiKam, just add **showfoto** as argument to the AppImage command line, like this:
+    The AppImage bundle includes also the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>`. To run it instead digiKam, just add **showfoto** as argument to the AppImage command line, like this:
 
     .. code-block:: bash
 
@@ -75,7 +75,7 @@ Turn on **executable** property of AppImage file and run it. That all...
 
 .. note::
 
-    The AppImage provides more options to starts which can be listed with **help** argument from command line.
+    The AppImage provides more options to start which can be listed with **help** argument from command line.
 
 digiKam on Windows
 -------------------
@@ -165,7 +165,7 @@ The non Signed Package
     
 .. note::
 
-    Due to use `Macports environment <https://www.macports.org/>`_ to build digiKam PKG, and the rolling release Macports policy applied on time, it's difficult to provide a binary compatibility with older versions of macOS. Also Macports packages are frequently updated for security reasons, and this can requires more recent macOS SDK.
+    Due to use `Macports environment <https://www.macports.org/>`_ to build digiKam PKG, and the rolling release Macports policy applied on time, it's difficult to provide a binary compatibility with older versions of macOS. Also Macports packages are frequently updated for security reasons, and this can require more recent macOS SDK.
 
 When the **PKG** file is downloaded, to start the installer, a security warning will appears, because the package is not signed for the Apple Gatekeeper.
 
