@@ -24,7 +24,7 @@ Mostly, Showfoto provides the same tools from digiKam Image Editor, in native or
     :alt:
     :align: center
 
-    The Showfoto loading a ProRAW File Taken with an Apple Iphone
+    The Showfoto loading a DNG Based Apple ProRAW File Taken with an Iphone
 
 Post-Processing
 ---------------
