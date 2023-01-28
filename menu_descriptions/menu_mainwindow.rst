@@ -20,6 +20,10 @@ The Browse Menu
 
 The Browse menu provides access to the same views you can see on the Left Sidebar. Descriptions see under :ref:`The Main digiKam Window <main_window>`. In addition there are **Back** and **Forward** menu items that will lead you through the history of your digiKam use in the same way you are used to from an internet browser for example. And finally there is the **Quit** item to leave digiKam.
 
+.. note::
+
+    When **Main Window** switch in **Full-Screen Mode**, the menu will be accessible on the right side of tool-bar with the **Hamburger Button**.
+
 The Album Menu
 --------------
 
@@ -230,6 +234,10 @@ The View Menu
 :menuselection:`View --> Full Screen Mode` :kbd:`Ctrl+Shift+F`
 
     Switch to full screen (Return with the same keyboard shortcut).
+
+.. note::
+
+    You can access to the application menu using the **Hamburger Button** on the right side of tool-bar.
 
 :menuselection:`View --> Zoom in` :kbd:`Ctrl++,+`
 

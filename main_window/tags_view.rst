@@ -48,7 +48,7 @@ You can set the Tag Properties by clicking with the right mouse button on a tag 
 
 To select a photograph as the tag icon, click with the right mouse button on the photograph that you want to use as the tag icon and select **Set as Tag Thumbnail** from the context menu. Additionally you can use drag and drop to set the tag icon. Drag the images icon and drop it on the currently selected tag in the tag list.
 
-A tool for more elaborate work on big tag trees is the :ref:`Tags Manager <tags_manager>` which you can access by clicking the **Open Tag Manager** button at the top of the Tags tree.
+A tool for more elaborate work on big tag trees is the :ref:`Tag Manager <tag_manager>` which you can access by clicking the **Open Tag Manager** button at the top of the Tags tree.
 
 In the :ref:`Digital Asset Management (DAM) <asset_tags>` chapter of this handbook you can find some useful considerations about how to build your Tags tree.
 
