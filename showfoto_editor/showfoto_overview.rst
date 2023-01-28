@@ -32,10 +32,16 @@ One main difference between Showfoto and digiKam Image Editor is the **non-suppo
 
     As Showfoto does not use a database, application lack **image versioning** support.
 
-Other difference with digiKam Image Editor is the **Left sidebar**. In digiKam there left sidebar do not exists as all phoyo management is delegate to the Main Window. In Showfoto, the left sidebar host two tab to navigate in file-system.
+Other difference with digiKam Image Editor is the **Left sidebar**. In digiKam there left sidebar do not exists as all phoyo management is delegate to the Main Window. In Showfoto, the left sidebar host two tab to navigate in file-system:
 
-:ref:`First one <showfoto_folderstab>`, named **Folders** allows to go in-deep in directory hierarchies as a standard files manager. You can see the image thumbnails and the current path. Clicking on a thumbnail will load the contents to the canvas.
+    - :ref:`First one <showfoto_folderstab>`, named **Folders** allows to go in-deep in directory hierarchies as a standard files manager. You can see the image thumbnails and the current path. Clicking on a thumbnail will load the contents to the canvas.
 
-:ref:`Second one <showfoto_stacktab>`, named **Stack** allows to host you preferred items previously selected in the **Folders** tab.
+    - :ref:`Second one <showfoto_stacktab>`, named **Stack** allows to host you preferred items previously selected in the **Folders** tab.
 
 The **Right Sidebar** is exactly the same than Image Editor, excepted the tabs depending exclusively to the database. **Captions** and **Versions** are not available in Showfoto. Looks in :ref:`this section of this manual <right_sidebar>` to found information about tabs present in Showfoto.
+
+Another difference with digiKam Image Editor is the new entries in **File** menu:
+
+    - **Open**: can load files in the stack. A standard open file dialog will allows to choose the items from the disk.
+
+    - **Open folder**: can specify the folder to parse all items to load in the stack.
