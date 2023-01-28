@@ -103,11 +103,11 @@ The Item Menu
 
 :menuselection:`Item --> Add to Current Queue` :kbd:`Ctrl-B`
 
-    Opens the digiKam :ref:`Batch Queue Manager <queue_manager>` and adds selection to the current queue or, if there is no queue yet, to a new queue.
+    Opens the digiKam :ref:`Batch Queue Manager <batch_queue>` and adds selection to the current queue or, if there is no queue yet, to a new queue.
 
 :menuselection:`Item --> Add to New Queue` :kbd:`Ctrl-Shift-B`
 
-    Opens the digiKam :ref:`Batch Queue Manager <queue_manager>` and puts selection into a new queue.
+    Opens the digiKam :ref:`Batch Queue Manager <batch_queue>` and puts selection into a new queue.
 
 :menuselection:`Item --> Find Similar...`
 
@@ -327,7 +327,7 @@ The Tools Menu
 
     Opens the maintenance tool.
 
-    For a detailed description see :ref:`this Chapter <maintenance_tool>` 
+    For a detailed description see :ref:`this Chapter <maintenance_tools>` 
 
 :menuselection:`Tools --> Blend Bracketed or Focus Stack Images...`
 
@@ -337,13 +337,13 @@ The Tools Menu
 
     This tool allows users to assemble images together to create large panorama.
 
-:menuselection:`Tools -->Create Calendar...`
+:menuselection:`Tools --> Create Calendar...`
 
     Tool to create a calendar with Album items.
 
     See the dedicated Calendar Tool for more information. 
 
-:menuselection:`Tools -->Email Images...`
+:menuselection:`Tools --> Email Images...`
 
     Tool to send images with your favorite email client.
 
@@ -352,124 +352,120 @@ The Tools Menu
 The Import Menu
 ---------------
 
-:menuselection:`Import -->Cameras`
+:menuselection:`Import --> Cameras`
 
-    Any configured digital camera will be listed here. You can use the "Add Camera Manually..." menu entry to add a new camera to the list. Please, read the Camera Settings for more information.
+    Any configured digital camera will be listed here. You can use the **Add Camera Manually...** menu entry to add a new camera to the list. Please, read the :ref:`Camera Settings <camera_settings>` for more information.
 
-    Once you choose a camera from the list the Camera Interface will open. For a detailed description see Using a Digital Camera With digiKam.. 
+    Once you choose a camera from the list the Camera Interface will open. For a detailed description see :ref:`digiKam Import Tool <import_overview>`.
 
-:menuselection:`Import -->USB Storage Devices`
+:menuselection:`Import --> USB Storage Devices`
 
-    All currently mounted USB storage devices will be listed here. The function will open the same interface as the Import/Cameras menu item.
+    All currently mounted USB storage devices will be listed here. The function will open the same :ref:`interface <import_overview>` as the Import/Cameras menu item.
 
-:menuselection:`Import -->Card Readers`
+:menuselection:`Import --> Card Readers`
 
-    All currently mounted card readers will be listed here. The function will open the same interface as the Import/Cameras menu item.
+    All currently mounted card readers will be listed here. The function will open the same :ref:`interface <import_overview>` as the Import/Cameras menu item.
 
-:menuselection:`Import -->Add Images...` :kbd:`Ctrl+Alt+I`
+:menuselection:`Import --> Add Images...` :kbd:`Ctrl+Alt+I`
 
-    After asking for the source folder with the standard Open dialog of your OS the function will display the images in that folder in the same interface as the Import/Cameras menu item.
+    After asking for the source folder with the standard Open dialog of your OS the function will display the images in that folder in the same :ref:`interface <import_overview>` as the Import/Cameras menu item.
 
     This item is only active in the Albums View. 
 
-:menuselection:`Import -->Add Folders...`
+:menuselection:`Import --> Add Folders...`
 
     Navigate to a folder and import it entirely
 
     This item is only active in the Albums View. 
 
-:menuselection:`Import -->Import from Scanner...`
+:menuselection:`Import --> Import from Scanner...`
 
     Opens a scanner dialog
 
-    See the dedicated Acquire Images Tool for more information. 
+    See the dedicated :ref:`Acquire Images Tool <scanner_import>` for more information. 
 
-:menuselection:`Import -->Import from...`
+:menuselection:`Import --> Import from...`
 
     Here are following the import menu items for the webservices you have chosen in
 
-    :menuselection:`:menuselection:`Settings -->Configure digiKam... --> Plugin` and which are labeled *Export* in the *Categories* column. 
+    :menuselection:`Settings --> Configure digiKam... --> Plugin` and which are labeled **Export** in the **Categories** column. 
 
 The Export Menu
 ---------------
 
-:menuselection:`Export-->Export to Piwigo`
+:menuselection:`Export--> Export to Piwigo`
 
-    Tool to upload or update images to Piwigo galleries
+    Tool to upload or update images to Piwigo galleries.
 
-    See the dedicated Piwigo Export Tool for more information. 
+:menuselection:`Export--> Export to Flickr...`
 
-:menuselection:`Export-->Export to Flickr...`
+    Tool to upload or update images to Flickr web-service.
 
-    Tool to upload or update images to Flickr server.
+    See the dedicated :ref:`Flickr Export Tool <flickr_export>` for more information. 
 
-    See the dedicated Flickr Export Tool for more information. 
-
-:menuselection:`Export-->Export to Google Photos...`
+:menuselection:`Export--> Export to Google Photos...`
 
     Tool upload or update images to Google Photos galleries.
 
-    See the dedicated Google Services Tool for more information. 
+:menuselection:`Export--> Export to Google Drive...`
 
-:menuselection:`Export-->Export to Google Drive...`
-
-    Tool upload images to Google Drive.
-
-    See the dedicated Google Services Tool for more information. 
+    Tool upload images to Google Drive web-service.
 
 The Settings Menu
 -----------------
 
-:menuselection:`Settings -->Show Toolbar`
+:menuselection:`Settings --> Show Toolbar`
 
     Enable or disable the main digiKam toolbar.
 
-:menuselection:`Settings -->Show Menubar` :kbd:`Ctrl+M`
+:menuselection:`Settings --> Show Menubar` :kbd:`Ctrl+M`
 
     Enable or disable the main digiKam menu bar.
 
-    Remind the keyboard shortcut in order to be able to get it back! Another way is the context menu within the Image Area. 
+    Remind the keyboard shortcut in order to be able to get it back. Another way is the context menu within the **Icon-View**. 
 
-:menuselection:`Settings -->Show Statusbar`
+:menuselection:`Settings --> Show Statusbar`
 
     Enable or disable the main digiKam status bar.
 
-:menuselection:`Settings -->Show Thumbbar` :kbd:`Ctrl+T`
+:menuselection:`Settings --> Show Thumbbar` :kbd:`Ctrl+T`
 
-    Enable or disable the thumbbar in the digiKam Image Area.
+    Enable or disable the thumb-bar in the digiKam Icon-View.
 
     This item is only active while a preview is displayed because it is meant to make more space for the preview in the Image Area. 
 
-:menuselection:`Settings -->Themes`
+:menuselection:`Settings --> Themes`
 
-    Choose from a list (submenu) of predefined color themes for the appearance of digiKam.
+    Choose from a list (sub-menu) of predefined color themes for the appearance of digiKam.
 
-:menuselection:`Settings -->Configure Shortcuts...`
+:menuselection:`Settings --> Configure Shortcuts...`
 
     Configure the digiKam shortcuts and manage different schemes of shortcuts.
 
-:menuselection:`Settings -->Configure Toolbars...`
+:menuselection:`Settings --> Configure Toolbars...`
 
     Configure the digiKam toolbars.
 
-:menuselection:`Settings -->Configure Notifications...`
+:menuselection:`Settings --> Configure Notifications...`
 
-    Configure the digiKam notifications including actions like "Play a sound", "Log to a file" or "Run command".
+    Configure the digiKam notifications including actions like *Play a sound*, *Log to a file* or *Run command*.
 
-:menuselection:`Settings -->Database Migration...`
+:menuselection:`Settings --> Database Migration...`
 
     Launch tool to migrate the digiKam databases from SQLite to MySQL or vice versa.
 
-    Find more information about the databases and database migration in the setup section about digiKam databases. 
+    Find more information about the databases and database migration in the setup section about :ref:`digiKam databases <database_settings>`.
 
-:menuselection:`Settings -->Configure digiKam...`
+:menuselection:`Settings --> Configure digiKam...`
 
     Launch digiKam configure dialog.
 
-    For a detailed description see digiKam Configuration. 
+    For a detailed description see :ref:`digiKam Configuration <setup_application>`. 
 
 The Help Menu
 -------------
+
+.. _help_rawcamera:
 
 :menuselection:`Help --> Supported RAW Camera`
 
@@ -481,6 +477,8 @@ The Help Menu
 
     The List of Supported RAW Camera
 
+.. _help_componentsinfo:
+
 :menuselection:`Help --> Components Information`
 
     Displays an information panel with shared libraries and components.
@@ -491,6 +489,8 @@ The Help Menu
 
     The List of Components Information
 
+.. _help_databasestats:
+
 :menuselection:`Help --> Database Statistics`
 
     Displays an information panel with a database summary.
@@ -500,6 +500,8 @@ The Help Menu
     :align: center
 
     The Statistics from the Database
+
+.. _help_detectedhardware:
 
 :menuselection:`Help --> Detected Hardware`
 
