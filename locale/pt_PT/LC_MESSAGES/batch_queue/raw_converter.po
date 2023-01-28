@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-22 00:50+0000\n"
-"PO-Revision-Date: 2022-12-29 06:58+0000\n"
+"PO-Revision-Date: 2023-01-27 14:39+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -16,20 +16,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-POFile-SpellExtra: RAW digiKam CCD CMOS RGBG Libraw ref EXIF HEIF\n"
 
 #: ../../batch_queue/raw_converter.rst:1
 msgid "digiKam RAW Converter from Batch Queue Manager"
-msgstr ""
+msgstr "Gestor de Conversão RAW em Lote do digiKam"
 
 #: ../../batch_queue/raw_converter.rst:1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, batch, raw, converter"
-msgstr ""
+msgstr "digiKam, documentação, manual do utilizador, gestão de fotografias, código aberto, livre, aprender, fácil, lote, RAW, conversor"
 
 #: ../../batch_queue/raw_converter.rst:14
 msgid "RAW Converter"
-msgstr ""
+msgstr "Conversor para RAW"
 
 #: ../../batch_queue/raw_converter.rst:16
 msgid "Contents"
@@ -39,21 +40,9 @@ msgstr "Conteúdo"
 msgid ""
 "With the Batch Queue Manager, you can import and convert your images stored "
 "in RAW format to a demosaiced target formats as (JPEG, TIFF, or PNG)."
-msgstr ""
+msgstr "Com o Gestor da Fila em Lote, poderá importar e converter as suas imagens guardadas no formato TAW noutros formatos de destino sem efeito de mosaico, como o JPEG, TIFF ou PNG."
 
 #: ../../batch_queue/raw_converter.rst:20
-#, fuzzy
-#| msgid ""
-#| "There are ome considerations before your convert, and even before you "
-#| "shoot in raw format. RAW image file formats keep the original information "
-#| "of the exposure supposedly without loss (when compressed, they use "
-#| "reversible, lossless compressions algorithms). Many photographers prefer "
-#| "to take their picture in RAW mode because the camera's built-in "
-#| "conversion program is often of lesser quality than what you can achieve "
-#| "with digital image processing. The whitebalance of the digital camera is "
-#| "registered but not applied to the image. Some CMOS CCD's create four "
-#| "types of color filter data: RGBG, Red, Green, Blue and another Green mask "
-#| "for contrast enhancement. This tool can take this into account."
 msgid ""
 "There are ome considerations before your convert, and even before you shoot "
 "in RAW format. RAW image file formats keep the original information of the "
@@ -84,7 +73,7 @@ msgid ""
 "to produce the same images as software provided by the camera vendor but "
 "sometimes libraw gives better results. See :ref:`this section "
 "<camera_profiles>` of this manual for details."
-msgstr ""
+msgstr "A conversão baseia-se na `Libraw <https://www.libraw.org/>`_. Não espere produzir as mesmas imagens que as aplicações fornecidas pelo fabricante da câmara, mas às vezes a Libraw gera melhores resultados. Veja :ref:`esta secção <camera_profiles>` deste manual para saber mais detalhes."
 
 #: ../../batch_queue/raw_converter.rst:24
 msgid ""
@@ -117,7 +106,7 @@ msgid ""
 "setting has no effect). If you want to know all details about the **RAW "
 "Decoding** settings see :ref:`this section <setup_rawdefault>` of this "
 "manual."
-msgstr ""
+msgstr "A opção de conversão **Interpolar o RGB como quatro cores** poderá ser seleccionada para usar a informação do contraste. (Se a sua câmara funcionar no modo RGB, a definição do RGBG não fará efeito). Se quiser saber todos os detalhes sobre a **Descodificação RAW**, veja :ref:`esta secção <setup_rawdefault>` deste manual."
 
 #: ../../batch_queue/raw_converter.rst:30
 msgid ""
@@ -127,7 +116,7 @@ msgid ""
 "produces the smallest output file size. In opposite the tagged image format "
 "(**TIFF**) preserves all information of your image while using lossless LZW "
 "compression."
-msgstr ""
+msgstr "Deverá escolher um formato de saída para gravar o resultado da conversão, colocando a ferramenta de conversão do formato de ficheiro de destino. O nome do ficheiro de destino ficará igual por omissão, sendo que apenas a extensão muda. O **JPEG** usa o algoritmo com perdas e produz o menor tamanho de ficheiro possível. Por oposição, o formato de imagem com marcas (**TIFF**) preserva toda a informação da sua imagem, usando à mesma a compressão sem perdas LZW."
 
 #: ../../batch_queue/raw_converter.rst:34
 msgid ""
@@ -135,24 +124,24 @@ msgid ""
 "to reuse it later on, then don't use **JPEG** format because it allows a "
 "limited number of operations before it deteriorates visibly. **TIFF** and "
 "**PNG** are better suited to keep the original data."
-msgstr ""
+msgstr "Se pretender trabalhar bastante nas suas imagens, ou caso seja provável que tenha de as reutilizar mais tarde, então não use o formato **JPEG**, porque permite um número limitado de operações antes de deteriorar de forma visível. Os formatos **TIFF** e **PNG** são mais adequados para manter os dados originais."
 
 #: ../../batch_queue/raw_converter.rst:38
 msgid ""
 "If you choose **JPEG**, or **TIFF**, or **PNG** as the **Save Format** then "
 "the metadata included in RAW file will be included in the target files as "
 "Exif information."
-msgstr ""
+msgstr "Se escolher o **JPEG**, o **TIFF** ou o **PNG** como **Formato de Gravação**, então os meta-dados incluídos no ficheiro RAW serão incluídos no ficheiro de destino como dados em EXIF."
 
 #: ../../batch_queue/raw_converter.rst:40
 msgid ""
 "When you have finished to setup the queue, click the **Process** button to "
 "start the conversion. If you want abort image conversion, press the "
 "**Abort** button."
-msgstr ""
+msgstr "Quando tiver terminado de configurar a fila, carregue no botão **Processar** para iniciar a conversão. Se quiser interromper a conversão da imagem, carregue no botão **Interromper**."
 
 #: ../../batch_queue/raw_converter.rst:46
 msgid ""
 "The Batch Queue Manager With a Workflow to Convert RAW files to HEIF "
 "Container by Applying Filters"
-msgstr ""
+msgstr "O Gestor da Fila em Lote com um Processo de Conversão de Ficheiros RAW no Contentor HEIF, Aplicando os Filtros"

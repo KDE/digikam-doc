@@ -6,9 +6,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-11 00:50+0000\n"
-"PO-Revision-Date: 2023-01-11 08:42+0200\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"POT-Creation-Date: 2023-01-27 00:51+0000\n"
+"PO-Revision-Date: 2023-01-27 10:47+0200\n"
+"Last-Translator: Fracture dept <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -168,15 +168,23 @@ msgid "MySQL Versus SQLite"
 msgstr "MySQL чи SQLite"
 
 #: ../../setup_application/database_settings.rst:64
+#| msgid ""
+#| "`MySQL <https://www.mysql.com/>`_ is an open-source, relational database "
+#| "management system, written in C and C++. Original development of MySQL by "
+#| "Michael Widenius and David Axmark beginning in 1994. Sun Microsystems "
+#| "acquired MySQL in 2008, which was later acquired by Oracle in 2010. MySQL "
+#| "currently works on almost all system platforms (Linux, Microsoft Windows, "
+#| "OS X, SunOS …)."
 msgid ""
-"`MySQL <https://www.mysql.com/>`_ is an open-source, relational database "
-"management system, written in C and C++. Original development of MySQL by "
-"Michael Widenius and David Axmark beginning in 1994. Sun Microsystems "
-"acquired MySQL in 2008, which was later acquired by Oracle in 2010. MySQL "
-"currently works on almost all system platforms (Linux, Microsoft Windows, OS "
-"X, SunOS …)."
+"`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ is an open-source, relational "
+"database management system, written in C and C++. Original development of "
+"MySQL by Michael Widenius and David Axmark beginning in 1994. Sun "
+"Microsystems acquired MySQL in 2008, which was later acquired by Oracle in "
+"2010. MySQL currently works on almost all system platforms (Linux, Microsoft "
+"Windows, OS X, SunOS …)."
 msgstr ""
-"`MySQL <https://www.mysql.com/>`_ — система керування реляційними базами "
+"`MySQL <https://uk.wikipedia.org/wiki/MySQL>`_ — система керування"
+" реляційними базами "
 "даних з відкритим кодом, написана мовами програмування C та C++. Першу "
 "версію MySQL було створено Майклом Віденіусом (Michael Widenius) і Девідом "
 "Ексмарком (David Axmark) у 1994 році. У 2008 році MySQL було придбано "
@@ -185,13 +193,19 @@ msgstr ""
 "програмних платформах (Linux, Microsoft Windows, OS X, SunOS …)."
 
 #: ../../setup_application/database_settings.rst:66
+#| msgid ""
+#| "`MariaDB <https://mariadb.org/>`_ server is a community developed fork of "
+#| "MySQL server. Started by core members of the original MySQL team, MariaDB "
+#| "actively works with outside developers to deliver the most featureful, "
+#| "stable, and sanely licensed open SQL server in the industry."
 msgid ""
-"`MariaDB <https://mariadb.org/>`_ server is a community developed fork of "
-"MySQL server. Started by core members of the original MySQL team, MariaDB "
-"actively works with outside developers to deliver the most featureful, "
-"stable, and sanely licensed open SQL server in the industry."
+"`MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ server is a community "
+"developed fork of MySQL server. Started by core members of the original "
+"MySQL team, MariaDB actively works with outside developers to deliver the "
+"most featureful, stable, and sanely licensed open SQL server in the industry."
 msgstr ""
-"Сервер `MariaDB <https://mariadb.org/>`_ — відгалуження у розробці сервера "
+"Сервер `MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ — відгалуження у"
+" розробці сервера "
 "MySQL, розвиток якого здійснює спільнота розробників. Розпочата основними "
 "розробниками із початкової команди розробників MySQL, MariaDB активно працює "
 "із зовнішніми розробниками з метою створення сервера SQL із найширшими "
@@ -239,7 +253,20 @@ msgstr ""
 "з такими великими збірками у SQLite є проблеми з латентністю, які "
 "уповільнюють роботу програми."
 
-#: ../../setup_application/database_settings.rst:82
+#: ../../setup_application/database_settings.rst:84
+msgid ""
+"With **WAL** option enabled, SQlite can be easily used for more than 100,000 "
+"items especially with an SSD storage. It must be even faster than MySQL and "
+"more stable. See `this page <https://www.sqlite.org/wal.html>`_ for "
+"technical details."
+msgstr ""
+"Якщо увімкнено **WAL**, SQlite можна без проблем користуватися для баз даних"
+" із понад 100000 записами, особливо, якщо користуватися для зберігання даних"
+" SSD. Ця база даних може бути навіть швидшою і стабільнішою за MySQL. Див."
+" `цю сторінку <https://www.sqlite.org/wal.html>`_, щоб дізнатися технічні"
+" подробиці."
+
+#: ../../setup_application/database_settings.rst:86
 msgid ""
 "Using MySQL as digiKam’s database back-end allows you to store the data on "
 "local as well as remote server. Local, to replace the local SQLite storage "
@@ -258,7 +285,7 @@ msgstr ""
 "фотографій. Ви також зможете скористатися інструментами MySQL для створення "
 "резервних копій та аналізу даних digiKam."
 
-#: ../../setup_application/database_settings.rst:84
+#: ../../setup_application/database_settings.rst:88
 msgid ""
 "To switch from SQLite to MySQL database, go to :menuselection:`Settings --> "
 "Configure digiKam...` and then under **Database** section, select a database "
@@ -269,7 +296,7 @@ msgstr ""
 "перейдіть до розділу **База даних**. Виберіть відповідну базу даних зі "
 "спадного списку."
 
-#: ../../setup_application/database_settings.rst:86
+#: ../../setup_application/database_settings.rst:90
 msgid ""
 "**MySQL Internal**: This allows to run an internal database server on your "
 "system. digiKam uses Unix socket for the connection."
@@ -278,7 +305,7 @@ msgstr ""
 "вбудованим сервером баз даних на вашій системі. Для встановлення з’єднань із "
 "базами даних digiKam використовуватиме сокет Unix."
 
-#: ../../setup_application/database_settings.rst:88
+#: ../../setup_application/database_settings.rst:92
 msgid ""
 "**MySQL Server**: Use this if you’ve your data on remote server and you’re "
 "on a different machine trying to access the collection."
@@ -287,11 +314,11 @@ msgstr ""
 "зберігаються на віддаленому сервері, а ви на іншому комп’ютері користуєтеся "
 "доступом до збірки зображень."
 
-#: ../../setup_application/database_settings.rst:93
+#: ../../setup_application/database_settings.rst:97
 msgid "The MySQL Internal Server"
 msgstr "Вбудований сервер MySQL"
 
-#: ../../setup_application/database_settings.rst:95
+#: ../../setup_application/database_settings.rst:99
 msgid ""
 "While using a large collection, of size **greater than 100,000 items**, the "
 "application tends to slow down. To avoid the delay and maintain efficiency, "
@@ -306,7 +333,7 @@ msgstr ""
 "не сервер із доступною клієнтам мережею. Це такий сервер, який працює лише, "
 "якщо працює програма."
 
-#: ../../setup_application/database_settings.rst:97
+#: ../../setup_application/database_settings.rst:101
 msgid ""
 "Internal server creates a separate database that can be accessed (only while "
 "application is running) using the command:"
@@ -314,7 +341,7 @@ msgstr ""
 "Внутрішній сервер створює окрему базу даних, доступ до якої (лише протягом "
 "роботи програми) можна отримати за допомогою такої команди:"
 
-#: ../../setup_application/database_settings.rst:103
+#: ../../setup_application/database_settings.rst:107
 msgid ""
 "Internal server uses tree MySQL Binary Tools: :file:`mysql_install_db`, :"
 "file:`mysqladmin`, and :file:`mysqld`. You can configure their locations in "
@@ -327,15 +354,15 @@ msgstr ""
 "digiKam намагатиметься автоматично виявити розташування цих виконуваних "
 "файлів, якщо їх встановлено у системі."
 
-#: ../../setup_application/database_settings.rst:109
+#: ../../setup_application/database_settings.rst:113
 msgid "The digiKam Mysql Internal Configuration Page"
 msgstr "Сторінка внутрішніх налаштувань Mysql у digiKam"
 
-#: ../../setup_application/database_settings.rst:114
+#: ../../setup_application/database_settings.rst:118
 msgid "The MySQL Remote Server"
 msgstr "Віддалений сервер MySQL"
 
-#: ../../setup_application/database_settings.rst:116
+#: ../../setup_application/database_settings.rst:120
 msgid ""
 "Obviously, to use digiKam with a remote MySQL, you would require a MySQL "
 "server. Or, you could also install MariaDB, which serves the purpose well. "
@@ -348,7 +375,7 @@ msgstr ""
 "cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-"
 "ubuntu-20-04>`_.)"
 
-#: ../../setup_application/database_settings.rst:118
+#: ../../setup_application/database_settings.rst:122
 msgid ""
 "Follow the instructions below, if you don’t have a dedicated user account "
 "and a digiKam database already set up. Run the commands in MySQL server, "
@@ -359,7 +386,7 @@ msgstr ""
 "вже налаштовано. Віддайте такі команди на сервері MySQL (замінивши *пароль* "
 "на відповідний):"
 
-#: ../../setup_application/database_settings.rst:122
+#: ../../setup_application/database_settings.rst:126
 msgid ""
 "You can select any database name. (Here it is, *digikam*). Just remember to "
 "fill in the database name correctly in Core, Thumbs, Similarity, and Face "
@@ -370,7 +397,7 @@ msgstr ""
 "даних та баз даних мініатюр, подібності і облич у діалоговому вікні, зразок "
 "якого наведено нижче."
 
-#: ../../setup_application/database_settings.rst:134
+#: ../../setup_application/database_settings.rst:138
 msgid ""
 "If you have an enormous collection, it's recommended to start the MySQL "
 "server with `mysql --max_allowed_packet = 128M`"
@@ -378,7 +405,7 @@ msgstr ""
 "Якщо у вас величезна збірка зображень, рекомендуємо вам запускати сервер "
 "MySQL за допомогою такої команди: `mysql --max_allowed_packet = 128M`"
 
-#: ../../setup_application/database_settings.rst:136
+#: ../../setup_application/database_settings.rst:140
 msgid ""
 "Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` "
 "and then under **Database** section, select MySQL Server from the drop down "
@@ -388,11 +415,11 @@ msgstr ""
 "Налаштувати digiKam...` і у розділі «База даних» виберіть сервер MySQL у "
 "спадному списку."
 
-#: ../../setup_application/database_settings.rst:142
+#: ../../setup_application/database_settings.rst:146
 msgid "The digiKam Remote Mysql Configuration Page"
 msgstr "Сторінка налаштувань віддаленого сервера Mysql у digiKam"
 
-#: ../../setup_application/database_settings.rst:144
+#: ../../setup_application/database_settings.rst:148
 msgid ""
 "Enter the IP address of your MySQL server in the **Host Name** field and "
 "specify the correct port in the **Host Port** field (the default port is "
@@ -401,7 +428,7 @@ msgstr ""
 "Введіть IP-адресу вашого сервера MySQL до поля **Назва вузла** і вкажіть "
 "правильний номер порту у полі **Порт вузла** (типовим номером порту є 3306)."
 
-#: ../../setup_application/database_settings.rst:146
+#: ../../setup_application/database_settings.rst:150
 msgid ""
 "In the **Core Db Name** field, enter the name of the first database for "
 "storing photo metadata."
@@ -409,7 +436,7 @@ msgstr ""
 "У полі **Назва основної бази даних** вкажіть назву першої бази даних, де "
 "зберігатимуться метадані фотографій."
 
-#: ../../setup_application/database_settings.rst:148
+#: ../../setup_application/database_settings.rst:152
 msgid ""
 "Specify the name of the second database for storing wavelets compressed "
 "thumbnails in the **Thumbs Db Name** field."
@@ -417,7 +444,7 @@ msgstr ""
 "Назву другої бази даних, де зберігатимуться стиснені за допомогою вейвлетів "
 "мініатюри зображень, вкажіть у полі **Назва бази даних мініатюр**."
 
-#: ../../setup_application/database_settings.rst:150
+#: ../../setup_application/database_settings.rst:154
 msgid ""
 "The third database is dedicated to store fuzzy search finger-prints. Use the "
 "**Similarity Db Name** field for that."
@@ -425,7 +452,7 @@ msgstr ""
 "Третю базу даних призначено для зберігання відбитків для нечіткого пошуку. "
 "Для визначення скористайтеся полем **Назва бази даних подібності**."
 
-#: ../../setup_application/database_settings.rst:152
+#: ../../setup_application/database_settings.rst:156
 msgid ""
 "The last database is dedicated to store face histograms for recognition "
 "purpose. Use the **Face Db Name** field for that."
@@ -434,7 +461,7 @@ msgstr ""
 "розпізнавання. Для визначення назви бази даних скористайтеся пунктом «Назва "
 "бази даних облич»."
 
-#: ../../setup_application/database_settings.rst:154
+#: ../../setup_application/database_settings.rst:158
 msgid ""
 "To be connected safety to the remote server, enter your MySQL identification "
 "using **User** and **Password** fields."
@@ -442,7 +469,7 @@ msgstr ""
 "Щоб встановити безпечне з’єднання із віддаленим сервером, вкажіть ваші "
 "параметри розпізнавання MySQL за допомогою полів **Користувач** і **Пароль**."
 
-#: ../../setup_application/database_settings.rst:156
+#: ../../setup_application/database_settings.rst:160
 msgid ""
 "To check whether the database connection works properly, press the **Check "
 "Connection** button. If everything works as it’s supposed to, switch to the "
@@ -457,7 +484,7 @@ msgstr ""
 "**Гаразд** і зачекайте, доки digiKam заповнить бази даних даними фотографій. "
 "Заповнення може бути доволі тривалим, якщо у вас багато фотографій."
 
-#: ../../setup_application/database_settings.rst:158
+#: ../../setup_application/database_settings.rst:162
 msgid ""
 "There are some tips and recommendation to obtain the best results with a "
 "remote MySQL database server."
@@ -465,7 +492,7 @@ msgstr ""
 "Забезпечити найкращі результати у використанні віддаленого сервера баз даних "
 "MySQL допоможуть наші підказки і рекомендації."
 
-#: ../../setup_application/database_settings.rst:160
+#: ../../setup_application/database_settings.rst:164
 msgid ""
 "With slow network, digiKam hangs a lot of time especially when album "
 "contains many items (>1000). This solution relies on network performances. "
@@ -478,7 +505,7 @@ msgstr ""
 "наприклад, Wifi, можуть виникнути проблеми. Перехід на Ethernet усуває ці "
 "проблеми."
 
-#: ../../setup_application/database_settings.rst:162
+#: ../../setup_application/database_settings.rst:166
 msgid ""
 "Also, if you have an enormous collection, you should start the MySQL server "
 "with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with "
@@ -490,11 +517,11 @@ msgstr ""
 "ви добре знаєтеся на користуванні MySQL, ви також можете змінити параметри "
 "роботи сервера за допомогою файла :file:`my.ini` або :file:`~/.my.cnf`.)"
 
-#: ../../setup_application/database_settings.rst:167
+#: ../../setup_application/database_settings.rst:171
 msgid "Database Migration"
 msgstr "Перенесення бази даних"
 
-#: ../../setup_application/database_settings.rst:169
+#: ../../setup_application/database_settings.rst:173
 msgid ""
 "The photo management application comes up with an exclusive tool “Database "
 "Migration”, that allows users to migrate their data. Suppose, you’re using "
@@ -508,7 +535,7 @@ msgstr ""
 "даних MySQL. У цьому вам допоможе інструмент перенесення. Він допоможе вам "
 "переносити дані з формату SQLite до формату MySQL, і навпаки."
 
-#: ../../setup_application/database_settings.rst:171
+#: ../../setup_application/database_settings.rst:175
 msgid ""
 "To migrate to another database, go to :menuselection:`Settings --> Database "
 "Migration...`. A dialog box appears:"
@@ -517,11 +544,11 @@ msgstr ""
 "меню :menuselection:`Параметри --> Перенесення бази даних`. У відповідь буде "
 "відкрито таке діалогове вікно:"
 
-#: ../../setup_application/database_settings.rst:177
+#: ../../setup_application/database_settings.rst:181
 msgid "The digiKam Database Migration Tool"
 msgstr "Засіб перенесення бази даних у digiKam"
 
-#: ../../setup_application/database_settings.rst:179
+#: ../../setup_application/database_settings.rst:183
 msgid ""
 "Now choose appropriate database types you want to convert to. Finally, click "
 "on Migrate button to convert the database from SQLite to MySQL (or vice "
@@ -532,11 +559,11 @@ msgstr ""
 "формату SQLite на формат MySQL (або навпаки). Тривалість дії залежить від "
 "розміру бази даних."
 
-#: ../../setup_application/database_settings.rst:184
+#: ../../setup_application/database_settings.rst:188
 msgid "Database Backup Recommendation"
 msgstr "Рекомендації щодо резервного копіювання баз даних"
 
-#: ../../setup_application/database_settings.rst:186
+#: ../../setup_application/database_settings.rst:190
 msgid ""
 "For security reasons, planing a database backup using crontab over the "
 "network can help against device dysfunctions. A NAS or an external drive can "
@@ -547,7 +574,7 @@ msgstr ""
 "пристрою. Для резервного копіювання можна також скористатися NAS або "
 "зовнішніми диском."
 
-#: ../../setup_application/database_settings.rst:188
+#: ../../setup_application/database_settings.rst:192
 msgid ""
 "Each database can be named with a different name, not only *digikam*. This "
 "allows to users to backup only what is needed. For instance, naming **Core** "
@@ -562,7 +589,7 @@ msgstr ""
 "та розпізнавання облич завжди можна створити на основі початкових зображень, "
 "тому їхня втрата не є критичною."
 
-#: ../../setup_application/database_settings.rst:190
+#: ../../setup_application/database_settings.rst:194
 msgid ""
 "The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
 "explain how to maintain in time the database contents and how to synchronize "
@@ -572,11 +599,11 @@ msgstr ""
 "пояснення щодо обслуговування вмісту баз даних і синхронізування даних "
 "збірок із базами даних і навпаки."
 
-#: ../../setup_application/database_settings.rst:195
+#: ../../setup_application/database_settings.rst:199
 msgid "Database Statistics"
 msgstr "Статистика бази даних"
 
-#: ../../setup_application/database_settings.rst:197
+#: ../../setup_application/database_settings.rst:201
 msgid ""
 "digiKam provides a unique tool to show the statistics from your collections. "
 "It includes count of images, videos (including individual count by image "
@@ -589,7 +616,7 @@ msgstr ""
 "дані щодо **модуля роботи із базою даних** (QSQLITE або QMYSQL) та "
 "**розташування файла бази даних** (місця, де зберігаються дані вашої збірки)."
 
-#: ../../setup_application/database_settings.rst:199
+#: ../../setup_application/database_settings.rst:203
 msgid ""
 "You can view your statistics by going to :menuselection:`Help --> Database "
 "Statistics...`. A dialog box like this will appear:"
@@ -598,7 +625,7 @@ msgstr ""
 "пункту меню :menuselection:`Довідка --> Статистика бази даних...`. У "
 "відповідь буде показано приблизно таке діалогове вікно:"
 
-#: ../../setup_application/database_settings.rst:205
+#: ../../setup_application/database_settings.rst:209
 msgid "The digiKam Database Statistics Dialog"
 msgstr "Вікно статистики щодо бази даних у digiKam"
 
