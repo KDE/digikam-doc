@@ -22,7 +22,7 @@ The Browse menu provides access to the same views you can see on the Left Sideba
 
 .. note::
 
-    When **Main Window** switch in **Full-Screen Mode**, the menu will be accessible on the right side of tool-bar with the **Hamburger Button**.
+    When switching in **Full-Screen Mode**, the menu will be accessible on the right side of tool-bar with the **Hamburger Button**.
 
 The Album Menu
 --------------
@@ -238,6 +238,12 @@ The View Menu
 .. note::
 
     You can access to the application menu using the **Hamburger Button** on the right side of tool-bar.
+
+    .. figure:: images/menu_fullscreen_hamburger.webp
+        :alt:
+        :align: center
+
+        The Hamburger Menu Available in Full-Screen Mode
 
 :menuselection:`View --> Zoom in` :kbd:`Ctrl++,+`
 
