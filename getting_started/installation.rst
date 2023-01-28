@@ -312,7 +312,7 @@ As digiKam, the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>` has a
 
 .. note::
 
-    **~** indicates the user home directory on the system.
+    The character '**~**' indicates the home directory of the current user from the system.
 
 Application Updates
 -------------------
