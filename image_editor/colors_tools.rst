@@ -22,6 +22,10 @@ Encoding Depth
 
 Here you can change the encoding depth per color channel of the edited image. 8 bit encoding is the common JPEG format, 16 bit encoding is better suited for high quality images, but this format needs more storage space, calculation time and is currently available with PNG, PGF, TIFF, and JPEG-2000 formats only.
 
+.. note::
+
+    When you re-encoding an image from 8-bit to 16-bit, uniformly distributed noise is introduced to prevent histogram holes due to colors range expansion.
+
 .. important::
 
     HEIF, AVIF, JPX formats can encode as 8 bits or 12 bit. WEBP is limited to 8 bits. These limitations can change in the future.
