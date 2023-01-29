@@ -133,39 +133,43 @@ The Enhance Menu
 
 :menuselection:`Enhance --> Sharpen`
 
-    Classical image sharping operation.
+    :ref:`Image sharpening <enhance_sharpen>` improvements tool.
 
 :menuselection:`Enhance --> Blur`
 
-    Image softening operation by blurring.
+    :ref:`Image softening <enhance_blur>` operation by blurring.
 
 :menuselection:`Enhance --> Red Eye Reduction`
 
-    Red Eye correction tool using the current selection.
+    :ref:`Red Eye correction <enhance_redeyes>` tool using the current selection.
 
-:menuselection:`Enhance --> GMic-Qt`
+:menuselection:`Enhance --> Lens Auto-Corrections`
 
-    Huge Collection of filters to apply on image (Optional - 3rd party plugin).
+    Image Editor tool to correct :ref:`lens distortion automatically <enhance_lensauto>` of the current image. 
 
 :menuselection:`Enhance --> Noise Reduction`
 
-    Image Editor tool to reduce the noise with a Despeckle filter. 
+    Image Editor tool to :ref:`reduce the noise <enhance_nr>` with a Wavelets filter. 
 
 :menuselection:`Enhance --> Restoration`
 
-    Image Editor tool to reduce artifacts on the current image. 
+    Image Editor tool to :ref:`reduce artifacts <enhance_restoration>` on the current image. 
+
+:menuselection:`Enhance --> Local Contrast`
+
+    Image Editor tool to apply a :ref:`Tone-Mapping filter <enhance_localcontrast>` on on the current image. 
 
 :menuselection:`Enhance --> Hot Pixels Correction`
 
-    Image Editor tool to remove hot pixels on the current image. 
+    Image Editor tool to :ref:`remove hot pixels <enhance_hotpixels>` on the current image. 
 
 :menuselection:`Enhance --> Anti Vignetting`
 
-    Image Editor tool to correct vignetting of the current image. 
+    Image Editor tool to :ref:`correct vignetting <enhance_vignetting>` of the current image. 
 
-:menuselection:`Enhance --> Lens Distortion Correction`
+:menuselection:`Enhance --> Distortion`
 
-    Image Editor tool to correct lens distortion of the current image. 
+    Image Editor tool to correct :ref:`lens distortion manually <enhance_lensdistortion>` of the current image. 
 
 The Transform Menu
 ------------------

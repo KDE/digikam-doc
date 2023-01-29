@@ -224,7 +224,7 @@ Load this file to the widget using the **Black Frame** button. The tool will pro
 
     If you use an old digital camera, it is important to re-shoot the Black Frame next time you are taking a long exposure images to detect new Hot and Stuck Pixels on sensor defects.
 
-Using the hotpixel tool
+Using the Hotpixel Tool
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: images/editor_hotpixels_fixer.webp
