@@ -19,6 +19,8 @@ Image Editor Menu
 
     When switching in **Full-Screen Mode**, the menu will be accessible on the right side of tool-bar with the **Hamburger Button**.
 
+.. _menu_editorfile:
+
 The File Menu
 -------------
 
@@ -62,6 +64,8 @@ The File Menu
 
     Quit digiKam Image Editor.
 
+.. _menu_editoredit:
+
 The Edit Menu
 -------------
 
@@ -76,6 +80,8 @@ The Edit Menu
 :menuselection:`Edit --> Redo` :kbd:`Ctrl+Shift+Z`
 
     Redo the last action applied to the current image using history.
+
+.. _menu_editorcolor:
 
 The Color Menu
 --------------
@@ -128,6 +134,8 @@ The Color Menu
 
     :ref:`Switch between 8 bit and 16 bit <color_depth>` format on color channels.
 
+.. _menu_editorenhance:
+
 The Enhance Menu
 ----------------
 
@@ -174,6 +182,8 @@ The Enhance Menu
 :menuselection:`Enhance --> Healing Clone`
 
     Image Editor tool to :ref:`fix artifacts by cloning region <enhance_clone>` in the current image. 
+
+.. _menu_editortransform:
 
 The Transform Menu
 ------------------
@@ -222,6 +232,8 @@ The Transform Menu
 
     Image Editor tool to adjust :ref:`resizing pictures non uniformly while preserving their features <transform_liquidrescale>` of the current image. 
 
+.. _menu_editordecorate:
+
 The Decorate Menu
 -----------------
 
@@ -236,6 +248,8 @@ The Decorate Menu
 :menuselection:`Decorate --> Insert Text`
 
     Image Editor tool to :ref:`insert text <decorate_inserttext>` over the current image. 
+
+.. _menu_editoreffects:
 
 The Effects Menu
 ----------------
@@ -271,6 +285,8 @@ The Effects Menu
 :menuselection:`Effects --> Raindrops`
 
     Image Editor filter to :ref:`add Rain Drops <effects_raindrops>`. 
+
+.. _menu_editorview:
 
 The View Menu
 -------------
