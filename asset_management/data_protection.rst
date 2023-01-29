@@ -47,6 +47,11 @@ So let us analyze those cases step by step.
 Storage Deterioration
 ---------------------
 
+Magnetic Media
+~~~~~~~~~~~~~~
+
+Magnetic tapes are used in backup systems, much more in professional environments than in home use. Tapes have issues with data retention and changing technology, but they are safer in one aspect than optical drives: they are less exposed to scratches and dirt and writing deficiencies. On the other hand they are susceptible to magnetic fields. Throw a magnet next to a tape and it's gone. Tapes should be re-copied every 5-8 years, otherwise too many bits will fail and escape the checksum protection. The downside of magnetic tapes is often the recorder price and the restore time (20x longer than from HDD). Tape backup system have seen their best days.
+
 Optical Drives
 ~~~~~~~~~~~~~~
 
@@ -84,14 +89,16 @@ Solid State Drives
 
 In case of use as external device, one major cause for data loss (often recoverable) is the unsafe removal of SDDs from a computer. Before data is saved from a computer memory to any attached device, it remains for some time in buffers. In hard drives this means seconds at most, whereas with SDDs it can be tens of minutes. Therefore, before you disconnect a flash device, always activate data flushing through software (often called *safely remove device*).
 
+Non-Volatile Memory
+~~~~~~~~~~~~~~~~~~~
+
+`NVM Express (NVMe) <https://en.wikipedia.org/wiki/NVMe>`_ for Non-Volatile Memory is a logical-device interface for accessing a computer's non-volatile storage media attached PCI Express (PCIe) bus. It use same very fast NAND flash memory used in SSDs, but use the M.2 cards interface instead the slower mSATA used with older HDDs.
+
+NVMe allows host hardware and software to fully exploit the levels of parallelism possible in modern SSDs. NVMe reduces I/O overhead and brings various performance improvements relative to previous SSDs. mSATA interface protocols were developed for use with far slower HDDs where a very lengthy delay exists between a request and data transfer, where data speeds are much slower than RAM speeds.
+
 .. important:
 
-    **In all cases SSDs as internal devices are the solution to host the database and the collections.**
-
-Magnetic Media
-~~~~~~~~~~~~~~
-
-Magnetic tapes are used in backup systems, much more in professional environments than in home use. Tapes have issues with data retention and changing technology, but they are safer in one aspect than optical drives: they are less exposed to scratches and dirt and writing deficiencies. On the other hand they are susceptible to magnetic fields. Throw a magnet next to a tape and it's gone. Tapes should be re-copied every 5-8 years, otherwise too many bits will fail and escape the checksum protection. The downside of magnetic tapes is often the recorder price and the restore time (20x longer than from HDD). Tape backup system have seen their best days.
+    **In all cases SSDs or NVMe as internal devices are the solution to host the digiKam databases and the collections.**
 
 Power Supply Failures
 ---------------------
