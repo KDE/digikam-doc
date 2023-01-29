@@ -82,51 +82,51 @@ The Color Menu
 
 :menuselection:`Color --> Auto-Correction` :kbd:`Ctrl+Shift+B`
 
-    Automatic color/exposure correction of the current image by an histogram manipulation.
+    :ref:`Automatic color/exposure correction <color_auto>` of the current image by an histogram manipulation.
 
 :menuselection:`Color --> White Balance`
 
-    Image Editor tool to adjust white color balance on the current image. 
+    Image Editor tool to adjust :ref:`white color balance <color_wb>` on the current image. 
 
 :menuselection:`Color --> Brightness/Contrast/Gamma`
 
-    Exposure correction of the current image by Brightness, Contrast, or Gamma adjustments.
+    Exposure correction of the current image by :ref:`Brightness, Contrast, or Gamma adjustments <color_bcg>`.
 
 :menuselection:`Color --> Hue/Saturation/Lightness` :kbd:`Ctrl+U`
 
-    Color correction of the current image by Hue, Saturation, or Lightness adjustments.
+    Color correction of the current image by :ref:`Hue, Saturation, or Lightness adjustments <color_hsl>`.
 
 :menuselection:`Color --> Color Balance` :kbd:`Ctrl+B`
 
-    Color correction of the current image by Red, Green, or Blue adjustments.
+    Color correction of the current image by :ref:`Red, Green, or Blue adjustments <color_balance>`.
 
 :menuselection:`Color --> Curves Adjust`
 
-    Image Editor tool to adjust curves manually on the current image. 
+    Image Editor tool to :ref:`adjust curves <color_curves>` manually on the current image. 
 
 :menuselection:`Color --> Levels Adjust`
 
-    Image Editor tool to adjust levels manually on the current image. 
+    Image Editor tool to :ref:`adjust levels <color_levels>` manually on the current image. 
 
 :menuselection:`Color --> Channel Mixer`
 
-    Image Editor tool to mix color channels on the current image. 
+    Image Editor tool to :ref:`mix color channels <color_mixer>` on the current image. 
 
 :menuselection:`Color --> Invert` :kbd:`Ctrl+I`
 
-    Invert image colors.
+    :ref:`Invert <color_invert>` image colors.
 
 :menuselection:`Color --> Black & White`
 
-    Open the Black and White filter dialog for the current image.
+    Open the :ref:`Black and White <color_bw>` filter dialog for the current image.
 
 :menuselection:`Color --> Color Management`
 
-    Invokes the interactive Color Management editor.
+    Invokes the interactive :ref:`Color Management <color_cm>` editor.
 
 :menuselection:`Color --> Depth`
 
-    Switch between 8 bit and 16 bit format on color channels.
+    :ref:`Switch between 8 bit and 16 bit <color_depth>` format on color channels.
 
 The Enhance Menu
 ----------------
