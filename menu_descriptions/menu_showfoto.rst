@@ -74,7 +74,7 @@ The Tools Menu
 
 :menuselection:`Tools --> DNG Convert`
 
-    Batch tool to convert RAW files to DNG containers.
+    Batch tool to :ref:`convert RAW files to DNG containers <showfoto_dngconvert>`.
 
 For the rest of menu entries, see description from :ref:`Main Window <menu_maintools>` section about Generic plugins.
 

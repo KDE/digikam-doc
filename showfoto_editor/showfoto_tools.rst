@@ -26,6 +26,8 @@ Mostly, Showfoto provides the same tools from digiKam Image Editor, in native or
 
     The Showfoto loading a DNG Based Apple ProRAW File Taken with an Iphone
 
+.. _showfoto_postprocessing:
+
 Post-Processing
 ---------------
 
@@ -44,6 +46,8 @@ With Showfoto, you can also export items with :ref:`web-service tools <export_to
     :align: center
 
     The Showfoto Exporting the Current Stack to Dropbox Web-Service
+
+.. _showfoto_dngconvert:
 
 DNG Converter
 -------------
