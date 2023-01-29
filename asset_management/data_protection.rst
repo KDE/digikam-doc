@@ -139,8 +139,8 @@ Besides serving as surge suppressors, these devices automatically switch to batt
 
 Considering the potential risk to your computing system, ensuring its safety from power disturbances is a worthwhile investment. A quality surge suppressor or a 500W UPS are not too expensive for the peace of mind you’ll gain knowing your computer is well protected. In the very least pull all lines to your computer when you go on holidays.
 
-Saveguarding Against Logical Errors
------------------------------------
+Saveguarding Policy
+-------------------
 
 Web Storage Services
 ~~~~~~~~~~~~~~~~~~~~
@@ -208,8 +208,8 @@ Malware
 
 Data loss due to viruses is less grave than common wisdom make you believe. It accounts for less damage than theft or re-installations, for example. And it is limited to Microsoft OS users. Apple users experience very few viruses and under Linux they haven't been around for quite some time now.
 
-Panic is a Factor in Data Loss
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Human and Data Loss
+~~~~~~~~~~~~~~~~~~~
 
 Human error, as in everything, is a major problem in data loss. Take a deep breath and stop. Panic is a common reaction, and people do really stupid things. Experienced users will pull the wrong drive from a `RAID <https://en.wikipedia.org/wiki/RAID>`_ array or reformat a drive, destroying all their information. Acting without thinking is dangerous to your data. Stop stressing about the loss and don’t do anything to the disk. Better yet, stop using the computer until you have a plan. Sit down and explain you plan to a laymen or better, laywoman. You will be amazed how many stupid ideas you'll discover yourself in such an exercise.
 
