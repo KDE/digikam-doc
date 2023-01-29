@@ -123,7 +123,7 @@ The Item Menu
 
     Puts the selected item from the **Image** tab in the Similar View.
 
-    See the dedicated :ref:`Similarity Search Tool <similarity_view>` for more information. 
+    See the dedicated :ref:`Similarity Search Tool <similarity_view>` for more information.
 
 :menuselection:`Item --> Write Metadata to Image`
 
@@ -153,17 +153,17 @@ The Item Menu
 
     Opens the digiKam Metadata Editor to handle metadata of the image (Exif, IPTC, XMP).
 
-    See the dedicated :ref:`Metadata Editor <metadata_editor>` chapter for more information. 
+    See the dedicated :ref:`Metadata Editor <metadata_editor>` chapter for more information.
 
 :menuselection:`Item --> Edit Geolocation...`
 
     Opens the digiKam Geolocation Editor to handle GPS meta data of the image.
 
-    See the dedicated :ref:`Geolocation Editor <geolocation_editor>` for more information. 
+    See the dedicated :ref:`Geolocation Editor <geolocation_editor>` for more information.
 
 :menuselection:`Item --> Print`
 
-    Calls standard print dialog. 
+    Calls standard print dialog.
 
 :menuselection:`Item --> Print Assistant...`
 
@@ -207,7 +207,7 @@ The View Menu
 
     Shows additionally a :ref:`Preview <viewing_photograph>` in the **Image View**.
 
-    The preview has **Back** and **Forward** buttons at the top left corner to navigate through all the images currently shown. 
+    The preview has **Back** and **Forward** buttons at the top left corner to navigate through all the images currently shown.
 
 :menuselection:`View --> Map`
 
@@ -217,7 +217,7 @@ The View Menu
 
     Shows images in a table where you can choose by right clicking on the title bar which information you want to be displayed.
 
-    By default you have these four items also on the main toolbar. 
+    By default you have these four items also on the main toolbar.
 
 :menuselection:`View --> Slideshow`
 
@@ -316,7 +316,7 @@ The View Menu
 
     Toggles between showing thumbnails and preview in color-managed mode or not.
 
-    For more information about color management see this lengthy chapter. 
+    For more information about color management see this lengthy chapter.
 
 .. _menu_maintools:
 
@@ -325,35 +325,35 @@ The Tools Menu
 
 :menuselection:`Tools --> Image Editor`
 
-    Opens the digiKam Image Editor. 
+    Opens the digiKam Image Editor.
 
 :menuselection:`Tools --> Light Table` :kbd:`L`
 
-    Switches to the Light Table window. 
+    Switches to the Light Table window.
 
 :menuselection:`Tools --> Batch Queue Manager` :kbd:`B`
 
-    Opens the Batch Queue Manager window. 
+    Opens the Batch Queue Manager window.
 
 :menuselection:`Tools --> Search...` :kbd:`Ctrl+F`
 
-    Switches to the Search View with focus on the simple search field. 
+    Switches to the Search View with focus on the simple search field.
 
 :menuselection:`Tools --> Advanced Search...` :kbd:`Ctrl+Alt+F`
 
-    Switches to the Search View and launches the advanced search dialog. 
+    Switches to the Search View and launches the advanced search dialog.
 
 :menuselection:`Tools --> Find Duplicates` :kbd:`Ctrl+D`
 
     Leads to the **Duplicates** tab in the Similarity Search View.
 
-    See :ref:`Similarity Search Tool <similarity_view>` for more information. 
+    See :ref:`Similarity Search Tool <similarity_view>` for more information.
 
 :menuselection:`Tools --> Maintenance...`
 
     Opens the maintenance tool.
 
-    For a detailed description see :ref:`this Chapter <maintenance_tools>` 
+    For a detailed description see :ref:`this Chapter <maintenance_tools>`.
 
 :menuselection:`Tools --> Blend Bracketed or Focus Stack Images...`
 
@@ -367,13 +367,13 @@ The Tools Menu
 
     Tool to create a calendar with Album items.
 
-    See the dedicated Calendar Tool for more information. 
+    See the dedicated Calendar Tool for more information.
 
 :menuselection:`Tools --> Email Images...`
 
     Tool to send images with your favorite email client.
 
-    See the dedicated Send Images Tool for more information. 
+    See the dedicated Send Images Tool for more information.
 
 .. _menu_mainimport:
 
@@ -398,25 +398,25 @@ The Import Menu
 
     After asking for the source folder with the standard Open dialog of your OS the function will display the images in that folder in the same :ref:`interface <import_overview>` as the Import/Cameras menu item.
 
-    This item is only active in the Albums View. 
+    This item is only active in the Albums View.
 
 :menuselection:`Import --> Add Folders...`
 
     Navigate to a folder and import it entirely
 
-    This item is only active in the Albums View. 
+    This item is only active in the Albums View.
 
 :menuselection:`Import --> Import from Scanner...`
 
     Opens a scanner dialog
 
-    See the dedicated :ref:`Acquire Images Tool <scanner_import>` for more information. 
+    See the dedicated :ref:`Acquire Images Tool <scanner_import>` for more information.
 
 :menuselection:`Import --> Import from...`
 
     Here are following the import menu items for the webservices you have chosen in
 
-    :menuselection:`Settings --> Configure digiKam... --> Plugin` and which are labeled **Export** in the **Categories** column. 
+    :menuselection:`Settings --> Configure digiKam... --> Plugin` and which are labeled **Export** in the **Categories** column.
 
 .. _menu_mainexport:
 
@@ -431,7 +431,7 @@ The Export Menu
 
     Tool to upload or update images to Flickr web-service.
 
-    See the dedicated :ref:`Flickr Export Tool <flickr_export>` for more information. 
+    See the dedicated :ref:`Flickr Export Tool <flickr_export>` for more information.
 
 :menuselection:`Export--> Export to Google Photos...`
 
@@ -454,7 +454,7 @@ The Settings Menu
 
     Enable or disable the main digiKam menu bar.
 
-    Remind the keyboard shortcut in order to be able to get it back. Another way is the context menu within the **Icon-View**. 
+    Remind the keyboard shortcut in order to be able to get it back. Another way is the context menu within the **Icon-View**.
 
 :menuselection:`Settings --> Show Statusbar`
 
@@ -464,7 +464,7 @@ The Settings Menu
 
     Enable or disable the thumb-bar in the digiKam Icon-View.
 
-    This item is only active while a preview is displayed because it is meant to make more space for the preview in the Image Area. 
+    This item is only active while a preview is displayed because it is meant to make more space for the preview in the Image Area.
 
 :menuselection:`Settings --> Themes`
 
@@ -492,7 +492,7 @@ The Settings Menu
 
     Launch digiKam configure dialog.
 
-    For a detailed description see :ref:`digiKam Configuration <setup_application>`. 
+    For a detailed description see :ref:`digiKam Configuration <setup_application>`.
 
 .. _menu_mainhelp:
 

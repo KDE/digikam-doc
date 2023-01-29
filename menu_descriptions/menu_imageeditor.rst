@@ -92,7 +92,7 @@ The Color Menu
 
 :menuselection:`Color --> White Balance`
 
-    Image Editor tool to adjust :ref:`white color balance <color_wb>` on the current image. 
+    Image Editor tool to adjust :ref:`white color balance <color_wb>` on the current image.
 
 :menuselection:`Color --> Brightness/Contrast/Gamma`
 
@@ -108,15 +108,15 @@ The Color Menu
 
 :menuselection:`Color --> Curves Adjust`
 
-    Image Editor tool to :ref:`adjust curves <color_curves>` manually on the current image. 
+    Image Editor tool to :ref:`adjust curves <color_curves>` manually on the current image.
 
 :menuselection:`Color --> Levels Adjust`
 
-    Image Editor tool to :ref:`adjust levels <color_levels>` manually on the current image. 
+    Image Editor tool to :ref:`adjust levels <color_levels>` manually on the current image.
 
 :menuselection:`Color --> Channel Mixer`
 
-    Image Editor tool to :ref:`mix color channels <color_mixer>` on the current image. 
+    Image Editor tool to :ref:`mix color channels <color_mixer>` on the current image.
 
 :menuselection:`Color --> Invert` :kbd:`Ctrl+I`
 
@@ -153,35 +153,35 @@ The Enhance Menu
 
 :menuselection:`Enhance --> Lens Auto-Corrections`
 
-    Image Editor tool to correct :ref:`lens distortion automatically <enhance_lensauto>` of the current image. 
+    Image Editor tool to correct :ref:`lens distortion automatically <enhance_lensauto>` of the current image.
 
 :menuselection:`Enhance --> Noise Reduction`
 
-    Image Editor tool to :ref:`reduce the noise <enhance_nr>` with a Wavelets filter. 
+    Image Editor tool to :ref:`reduce the noise <enhance_nr>` with a Wavelets filter.
 
 :menuselection:`Enhance --> Restoration`
 
-    Image Editor tool to :ref:`reduce artifacts <enhance_restoration>` on the current image. 
+    Image Editor tool to :ref:`reduce artifacts <enhance_restoration>` on the current image.
 
 :menuselection:`Enhance --> Local Contrast`
 
-    Image Editor tool to apply a :ref:`Tone-Mapping filter <enhance_localcontrast>` on on the current image. 
+    Image Editor tool to apply a :ref:`Tone-Mapping filter <enhance_localcontrast>` on on the current image.
 
 :menuselection:`Enhance --> Hot Pixels Correction`
 
-    Image Editor tool to :ref:`remove hot pixels <enhance_hotpixels>` on the current image. 
+    Image Editor tool to :ref:`remove hot pixels <enhance_hotpixels>` on the current image.
 
 :menuselection:`Enhance --> Anti Vignetting`
 
-    Image Editor tool to :ref:`correct vignetting <enhance_vignetting>` of the current image. 
+    Image Editor tool to :ref:`correct vignetting <enhance_vignetting>` of the current image.
 
 :menuselection:`Enhance --> Distortion`
 
-    Image Editor tool to correct :ref:`lens distortion manually <enhance_lensdistortion>` of the current image. 
+    Image Editor tool to correct :ref:`lens distortion manually <enhance_lensdistortion>` of the current image.
 
 :menuselection:`Enhance --> Healing Clone`
 
-    Image Editor tool to :ref:`fix artifacts by cloning region <enhance_clone>` in the current image. 
+    Image Editor tool to :ref:`fix artifacts by cloning region <enhance_clone>` in the current image.
 
 .. _menu_editortransform:
 
@@ -198,7 +198,7 @@ The Transform Menu
 
 :menuselection:`Transform --> Free Rotation`
 
-    Image Editor tool to :ref:`rotate <transform_freerotation>` the current image by any angle in degrees. 
+    Image Editor tool to :ref:`rotate <transform_freerotation>` the current image by any angle in degrees.
 
 :menuselection:`Transform --> Flip → Horizontally` :kbd:`Ctrl+*`
 
@@ -222,11 +222,11 @@ The Transform Menu
 
 :menuselection:`Transform --> Shear`
 
-    Image Editor tool to :ref:`Shear <transform_shear>` the current image horizontally or vertically. 
+    Image Editor tool to :ref:`Shear <transform_shear>` the current image horizontally or vertically.
 
 :menuselection:`Transform --> Perspective Adjustment`
 
-    Image Editor tool to adjust :ref:`Perspective <transform_perspective>` of the current image. 
+    Image Editor tool to adjust :ref:`Perspective <transform_perspective>` of the current image.
 
 :menuselection:`Transform --> Liquid Rescale`
 
@@ -243,11 +243,11 @@ The Decorate Menu
 
 :menuselection:`Decorate --> Add Border`
 
-    Image Editor tool to :ref:`add a decorative border <decorate_border>` around the current image. 
+    Image Editor tool to :ref:`add a decorative border <decorate_border>` around the current image.
 
 :menuselection:`Decorate --> Insert Text`
 
-    Image Editor tool to :ref:`insert text <decorate_inserttext>` over the current image. 
+    Image Editor tool to :ref:`insert text <decorate_inserttext>` over the current image.
 
 .. _menu_editoreffects:
 
@@ -260,15 +260,15 @@ The Effects Menu
 
 :menuselection:`Effects --> Add Film Grain`
 
-    Image Editor filter for to :ref:`adding Film Grain <effects_filmgrain>`. 
+    Image Editor filter for to :ref:`adding Film Grain <effects_filmgrain>`.
 
 :menuselection:`Effects --> Oil paint`
 
-    Image Editor filter to :ref:`simulate Oil Painting <effects_oilpaint>`. 
+    Image Editor filter to :ref:`simulate Oil Painting <effects_oilpaint>`.
 
 :menuselection:`Effects --> Charcoal Drawing`
 
-    Image Editor filter to :ref:`simulate Charcoal Drawing <effects_charcoal>`. 
+    Image Editor filter to :ref:`simulate Charcoal Drawing <effects_charcoal>`.
 
 :menuselection:`Effects --> Emboss`
 
@@ -276,15 +276,15 @@ The Effects Menu
 
 :menuselection:`Effects --> Distortion Effects`
 
-    Image Editor filter set with :ref:`distortion special effects <effects_distortion>`. 
+    Image Editor filter set with :ref:`distortion special effects <effects_distortion>`.
 
 :menuselection:`Effects --> Blur Effects`
 
-    Image Editor filter set with :ref:`blurring special effects <effects_blur>` on. 
+    Image Editor filter set with :ref:`blurring special effects <effects_blur>` on.
 
 :menuselection:`Effects --> Raindrops`
 
-    Image Editor filter to :ref:`add Rain Drops <effects_raindrops>`. 
+    Image Editor filter to :ref:`add Rain Drops <effects_raindrops>`.
 
 .. _menu_editorview:
 

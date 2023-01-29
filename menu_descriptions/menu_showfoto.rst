@@ -32,7 +32,7 @@ The File Menu
 
     Open all files from a directory located on your local storage.
 
-For the rest of entries, see description from :ref:`Main Window <menu_editorfile>` section.
+For the rest of menu entries, see description from :ref:`Main Window <menu_editorfile>` section.
 
 The Edit Menu
 -------------
