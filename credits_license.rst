@@ -35,70 +35,70 @@ Documentation authors
 
 - 2001-2023
 
-    Gilles Caulier (https://invent.kde.org/cgilles)
+    `Gilles Caulier <https://invent.kde.org/cgilles>`_
 
 - 2009-2023
 
-    Yuri Chornoivan (https://invent.kde.org/yurchor)
+    `Yuri Chornoivan <https://invent.kde.org/yurchor>`_
 
 - 2017-2023
 
-    Antoni Bella Pérez (https://invent.kde.org/bellaperez)
+    `Antoni Bella Pérez <https://invent.kde.org/bellaperez>`_
 
 - 2022
 
-    Mike Morrison (https://invent.kde.org/mikemorr)
+    `Mike Morrison <https://invent.kde.org/mikemorr>`_
 
 - 2017-2019
 
-    Andrey Goreev (https://invent.kde.org/agoreev)
+    `Andrey Goreev <https://invent.kde.org/agoreev>`_
 
 - 2017
 
-    Ahmed Fathi Shaban (https://invent.kde.org/ahmedfathy)
+    `Ahmed Fathi Shaban <https://invent.kde.org/ahmedfathy>`_
 
 - 2016
 
-    Luigi Toscano (https://invent.kde.org/ltoscano)
+    `Luigi Toscano <https://invent.kde.org/ltoscano>`_
 
 - 2009-2014
 
-    Burkhard Lück (https://invent.kde.org/lueck)
+    `Burkhard Lück <https://invent.kde.org/lueck>`_
 
 - 2011-2013
 
-    Dmitri Popov (https://scribblesandsnaps.wordpress.com/author/dmpop/)
+    `Dmitri Popov <https://scribblesandsnaps.wordpress.com/author/dmpop/>`_
 
 - 2011
 
-    Mohamed Malik (https://www.mohammedmalik.com/)
+    `Mohamed Malik <https://www.mohammedmalik.com/>`_
 
 - 2007
 
-    Kåre Särs (https://invent.kde.org/sars)
+    `Kåre Särs <https://invent.kde.org/sars>`_
 
 - 2003-2005
 
-    Tom Albers (https://invent.kde.org/toma)
+    `Tom Albers <https://invent.kde.org/toma>`_
 
-    Richard Taylor (https://www.linkedin.com/in/richard-taylor-1300049/)
+    `Richard Taylor <https://www.linkedin.com/in/richard-taylor-1300049/>`_
 
-    Joern Ahrens (https://www.jokele.de)
+    `Joern Ahrens <https://www.jokele.de>`_
 
-    Oliver Doerr (http://www.doerr-privat.de/)
+    `Oliver Doerr <http://www.doerr-privat.de/>`_
 
     Ralf Hoelzer
 
 - 2006
 
-    Elle Stone (https://ninedegreesbelow.com/about/about.html)
+    `Elle Stone <https://ninedegreesbelow.com/about/about.html>`_
 
-    Anne-Marie Mahfouf (https://behindkde.org/anne-marie-mahfouf)
+    `Anne-Marie Mahfouf <https://behindkde.org/anne-marie-mahfouf>`_
 
 - 2003-2010
 
-    Gerhard Kulzer (https://www.linkedin.com/in/gerhard-kulzer-8931301)
+    `Gerhard Kulzer <https://www.linkedin.com/in/gerhard-kulzer-8931301>`_
 
 - 2001-2005
 
-    Renchi Raju (https://www.facebook.com/renchi.raju)
+    `Renchi Raju <https://www.facebook.com/renchi.raju>`_
