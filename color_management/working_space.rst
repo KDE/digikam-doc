@@ -76,7 +76,7 @@ Most working space profiles are characterized by:
     :alt:
     :align: center
 
-    The Color Profile Details of CIE Chromacity Diagram Show in digiKam
+    The Color Profile Details of CIE Chromaticity Diagram Show in digiKam
 
 The practical consequences that result from using different RGB primaries, leading to larger or smaller working spaces, are discussed below. The practical consequences for different choices for the working space white point are beyond the scope of this manual. Here we will talk a little bit about the practical consequences of the working space gamma.
 
@@ -84,7 +84,7 @@ The gamma of a color profile dictates what power transform needs to take place t
 
 .. tip::
 
-    Mathematically speaking, for a power transform you normalize the RGB numbers and raise the resulting numbers to an appropriate power depending on the respective gammas of the starting and ending color space, then renormalize the results to a new set of RGB numbers. `Lcms <https://www.littlecms.com/>`_ does this for you when there is a need to convert from one color space to another in your workflow.
+    Mathematically speaking, for a power transform you normalize the RGB numbers and raise the resulting numbers to an appropriate power depending on the respective gammas of the starting and ending color space, then re-normalize the results to a new set of RGB numbers. `Lcms <https://www.littlecms.com/>`_ does this for you when there is a need to convert from one color space to another in your workflow.
 
 One practical consequence of the gamma of a working space is that the higher the gamma, the more tones are available for editing in the shadows, with consequently fewer tones available in the highlights. So theoretically, if you are working on a very dark-toned (low key) image you might want a working space with a higher gamma. And if you are working on a high key image, say a picture taken in full noon sunlight of a wedding dress with snow as a backdrop, you might want to choose a working space with a lower gamma, so you have more available tonal gradations in the highlights. But in the real world of real image editing, almost everyone uses working spaces with either gamma 1.8 or 2.2.
 
@@ -131,8 +131,6 @@ In other words, large gamut working spaces, improperly handled, can lead to lost
 
         digiKam Queue Manager Allows to Batch Convert Color Space
 
-The whys of these bits of advice regarding which working space are beyond the scope of this manual. See Bruce Lindbloom's excellent website (Info, Information about RGB Working Spaces) for a visual comparison of the gamut (array of included colors) of the various working color spaces. See here and here for a pro and con presentation, respectively, of the merits of using large gamut working spaces. And while you are on the cambridgeincolour.com website, check out the tutorial on color management.
-
 Gamma Properties
 ----------------
 
@@ -150,12 +148,12 @@ In addition to gamma=1.8 and gamma=2.2, the only other gamma for a working space
 
 **Gamma-induced errors** is a topic outside the scope of this manual but it's commonly-encountered that gamma-induced error that is caused by incorrectly calculating luminance in a nonlinear RGB working space. And in a similar vein, the calculations involved in mixing colors together to produce new colors (such as using a digital filter to add warmth to an image) result in gamma errors unless the new colors are calculated by first transforming all the relevant values back to their linear values.
 
-Unfortunately and despite their undeniable mathematical advantages, linear gamma working spaces have so few tones in the shadows that they are impossible to use for editing if one is working in 8-bits, and still problematic at 16-bits. When the day comes when we are all doing our editing on 32-bit files produced by our HDR cameras on our personal supercomputers, We can predict that we will all be using working spaces with gamma=1.
+Unfortunately and despite their undeniable mathematical advantages, linear gamma working spaces have so few tones in the shadows that they are impossible to use for editing if one is working in 8-bit, and still problematic at 16-bit. When the day comes when we are all doing our editing on 32-bit files produced by our HDR cameras on our personal supercomputers, We can predict that we will all be using working spaces with gamma=1.
 
 Image Tonal Steps and Gamut Size
 --------------------------------
 
-How many discrete tonal steps are there in a digital image? In an 8-bit image, you have 256 tonal steps from solid black to solid white. In a 16-bit image theoretically you have 65536 steps. But remember, those 16-bits started out as either 10 bits (=1024 steps), 12 bits (=4096 steps), or 14 bits (=16384 steps) as produced by the camera's A-to-D converter - the extra bits to reach 16-bits start out as just padding. The available tones are not distributed evenly from light to dark. In linear gamma mode (as the camera sensor sees things), there's a whole lot more tones in the highlights than in the shadows. Hence the advice, if you shoot RAW, to expose to the right but don't blow the highlights.
+How many discrete tonal steps are there in a digital image? In an 8-bit image, you have 256 tonal steps from solid black to solid white. In a 16-bit image theoretically you have 65536 steps. But remember, those 16-bit started out as either 10-bit (=1024 steps), 12-bit (=4096 steps), or 14-bit (=16384 steps) as produced by the camera's A-to-D converter - the extra bits to reach 16-bit start out as just padding. The available tones are not distributed evenly from light to dark. In linear gamma mode (as the camera sensor sees things), there's a whole lot more tones in the highlights than in the shadows. Hence the advice, if you shoot RAW, to expose to the right but don't blow the highlights.
 
 One major consideration in choosing a working space is that some working spaces are bigger than others, meaning they cover more of the visible spectrum (and as a consequence include some imaginary colors - mathematical constructs that don't really exist). These bigger spaces offer the advantage of allowing you to keep all the colors captured by your camera and preserved by the `Lcms <https://www.littlecms.com/>`_ conversion from your camera profile to the super-wide-gamut profile connection space and out again to your chosen working space.
 

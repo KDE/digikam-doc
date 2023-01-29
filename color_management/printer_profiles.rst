@@ -16,7 +16,7 @@ The Printer Profiles
 Using Printer Profile
 ---------------------
 
-We are now almost ready to print that image. Where to get a printer profile? you already know the answer. You can use the generic profile that comes with your printer. You can purchase a professionally produced profile. Some commercial printing establishments will send you their printer profiles (which won't work with your printer). You can make your own printer profile using `Argyll <http://www.argyllcms.com/>`_, in which case your profile can be tailored to your particular paper, inks, and even image characteristics (if you are printing a series of images with a color palette limited to subdued browns, you don't need a printer profile that tries to make room for saturated cyans and blues).
+We are now almost ready to print that image. Where to get a printer profile? you already know the answer. You can use the generic profile that comes with your printer. You can purchase a professionally produced profile. Some commercial printing establishments will send you their printer profiles (which won't work with your printer). You can make your own printer profile using `Argyll <http://www.argyllcms.com/>`_, in which case your profile can be tailored to your particular paper, inks, and even image characteristics (if you are printing a series of images with a color palette limited to subdued browns, you don't need a printer profile that tries to make room for saturated cyan and blue).
 
 .. figure:: images/cm_editor_soft_proofing_menu.webp
     :alt:
@@ -74,7 +74,7 @@ Soft-proofing will show you the differences to be expected between what you see 
 
 **Perceptual** intent may or may not give the best results with soft-proof, depending on the respective gamuts of the image and printer/paper combination in question. Usualy, the **Colorimetric** intents give clearer, brighter colors, albeit at the cost of having to carefully re-edit the image to avoid clipping highlights and shadows. **Perceptual** is just an option, not by any means always *the best* option.
 
-**Perceptual** rendering intent is a safe choice because it prevents clipping of shadows and highlights, although possibly at the expense of desaturating all your colors. So if you don't want to bother doing any soft-proofing, choose the perceptual rendering intent (if you don't want to soft-proof, probably you should also stick with sRGB).
+**Perceptual** rendering intent is a safe choice because it prevents clipping of shadows and highlights, although possibly at the expense of de-saturating all your colors. So if you don't want to bother doing any soft-proofing, choose the perceptual rendering intent (if you don't want to soft-proof, probably you should also stick with sRGB).
 
 .. figure:: images/cm_printer_soft_proofing.webp
     :alt:
