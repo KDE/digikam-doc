@@ -227,17 +227,15 @@ The Decorate Menu
 
 :menuselection:`Decorate --> Apply Texture`
 
-    Image Editor tool to apply decorative texture to the current image.
-
-    See the dedicated Apply Texture manual for more information. 
+    Image Editor tool to :ref:`apply decorative texture <decorate_texture>` over the current image.
 
 :menuselection:`Decorate --> Add Border`
 
-    Image Editor tool to add a decorative border around the current image. 
+    Image Editor tool to :ref:`add a decorative border <decorate_border>` around the current image. 
 
 :menuselection:`Decorate --> Insert Text`
 
-    Image Editor tool to insert text in the current image. 
+    Image Editor tool to :ref:`insert text <decorate_inserttext>` over the current image. 
 
 The Effects Menu
 ----------------
