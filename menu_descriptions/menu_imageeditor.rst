@@ -288,6 +288,21 @@ The Effects Menu
 
 .. _menu_editorview:
 
+The Tools Menu
+--------------
+
+See description from :ref:`Main Window <menu_maintools>` section about Generic plugins.
+
+The Import Menu
+---------------
+
+See description from :ref:`Main Window <menu_mainimport>` section about Import plugins.
+
+The Export Menu
+---------------
+
+See description from :ref:`Main Window <menu_mainexport>` section about Export plugins.
+
 The View Menu
 -------------
 
