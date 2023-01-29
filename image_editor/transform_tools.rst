@@ -122,8 +122,8 @@ The **Color** button lets you set the guidelines color. If you have an high colo
 
 .. _transform_rotationflip:
 
-Rotating or Flipping a Photograph
----------------------------------
+Rotating or Flipping
+--------------------
 
 If the photograph shows a wrong orientation you can **Flip** or **Rotate** it to the orientation you would like by using Transform Flip/Rotate tools available in :menuselection:`Transform --> Rotate and Transform --> Flip` menus.
 
@@ -228,8 +228,8 @@ After you have sheared an image, there will be unpleasant triangular "holes" at 
 
 .. _transform_resize:
 
-Change The Image Size
----------------------
+Changing Image Size
+-------------------
 
 Overview
 ~~~~~~~~
@@ -251,8 +251,8 @@ If the photograph has the wrong size, you can scale it to the size you would lik
 
 This image resizing tool uses a standard linear interpolation method to approximate pixels. If you want to up-size a small image with a better quality, try the Blowup tool.
 
-Increasing Image Size (Restoration)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Increasing Image Size
+~~~~~~~~~~~~~~~~~~~~~
 
 Many image editing programs use some kind of interpolation e.g. spline interpolation to scale-up an image. digiKam uses a more sophisticated approach.
 

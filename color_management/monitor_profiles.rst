@@ -91,7 +91,7 @@ Assuming you've decided to work exclusively in the sRGB color space, what *digiK
 
 But if you want to take the first steps toward a color-managed workflow, then refer to corresponding page of Settings, enable color management, and select sRGB as your **monitor profile**, your **camera profile**, your **working space** profile, and your **printer profile**. If you've also used `Argyll <http://www.argyllcms.com/>`_ to produce a monitor profile after you calibrated your monitor named :file:`mymonitorprofile.icc`, then tell digiKam to use it instead of sRGB as your monitor profile.
 
-Monitor profiles Storage
+Monitor Profiles Storage
 ------------------------
 
 On **Windows**, the default search paths include:

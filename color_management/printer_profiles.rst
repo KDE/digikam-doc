@@ -34,7 +34,7 @@ In digiKam Image Editor, Soft-Proofing can be configured to render over the canv
 
 .. _rendering_intents:
 
-The Rendering intents
+The Rendering Intents
 ---------------------
 
 **Rendering intent** refers to the way color gamuts are handled when the intended target color space (for example, the monitor or the printer) cannot handle the full gamut of the source color space (for example the working space).

@@ -70,15 +70,15 @@ The results of any adjustments you make will not be remembered until you save yo
 
     The Image Editor to Process Auto Color Corrections
 
-Black and White Conversion Filters
-----------------------------------
+Black and White Conversions
+---------------------------
 
 Black and White photography has always been fascinating in its abstraction capability. With the advent of digital photography, Black and White has almost become a desktop activity, as color images can be easily converted on the computer into black and white, even providing a set of vintage film roll profiles. This filter is also able to simulates traditional infrared film material.
 
 .. _color_bw:
 
-The Legacy Black and White Films Emulation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Legacy Films Emulation
+~~~~~~~~~~~~~~~~~~~~~~
 
 digiKam comes with a couple of black & white filters that you can use on your photographs. Under the :menuselection:`Color --> Black & White...` menu you will find classic black & white chemical toning used in analog photography. The controls come on four drop-down items: **Film**, **Lens Filters**, **Tone** and **Luminosity** as shown on the screenshot below. Film, filters and color toning can be applied independently of each other (on top of each other). The filters actually influence the RGB channel mixing, whereas the toning purely adds a uniform monochromatic tint to the black & white photograph. In the lightness tab you will find a tonal adjustment tool (like curve adjust), a contrast tool and an over-exposure indicator to improve the Black and White rendering.
 

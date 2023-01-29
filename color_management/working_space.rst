@@ -150,8 +150,8 @@ In addition to gamma=1.8 and gamma=2.2, the only other gamma for a working space
 
 Unfortunately and despite their undeniable mathematical advantages, linear gamma working spaces have so few tones in the shadows that they are impossible to use for editing if one is working in 8-bit, and still problematic at 16-bit. When the day comes when we are all doing our editing on 32-bit files produced by our HDR cameras on our personal supercomputers, We can predict that we will all be using working spaces with gamma=1.
 
-Image Tonal Steps and Gamut Size
---------------------------------
+Tonal Steps and Gamut Size
+--------------------------
 
 How many discrete tonal steps are there in a digital image? In an 8-bit image, you have 256 tonal steps from solid black to solid white. In a 16-bit image theoretically you have 65536 steps. But remember, those 16-bit started out as either 10-bit (=1024 steps), 12-bit (=4096 steps), or 14-bit (=16384 steps) as produced by the camera's A-to-D converter - the extra bits to reach 16-bit start out as just padding. The available tones are not distributed evenly from light to dark. In linear gamma mode (as the camera sensor sees things), there's a whole lot more tones in the highlights than in the shadows. Hence the advice, if you shoot RAW, to expose to the right but don't blow the highlights.
 

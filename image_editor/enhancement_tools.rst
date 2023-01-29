@@ -517,7 +517,7 @@ Below, you can see few hints to help you work with the refocus tool:
 
     - When you are scanning images and compress them, e.g. to JPEG, you should use the plug-in on the uncompressed image.
 
-Refocus comparison with other techniques
+Refocus Comparison with Other Techniques
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Comparison to two other techniques frequently used to enhance images are:
