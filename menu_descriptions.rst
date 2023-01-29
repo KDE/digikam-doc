@@ -25,3 +25,4 @@ This section explain how to use the digiKam menu.
 
    menu_descriptions/menu_mainwindow.rst
    menu_descriptions/menu_imageeditor.rst
+   menu_descriptions/menu_showfoto.rst

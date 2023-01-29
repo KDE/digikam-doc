@@ -756,6 +756,10 @@ Menu Descriptions
 
         :ref:`menu_imageeditor`
 
+    .. container:: tile no-descr
+
+        :ref:`menu_showfoto`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
