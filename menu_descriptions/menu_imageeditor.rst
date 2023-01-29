@@ -242,35 +242,35 @@ The Effects Menu
 
 :menuselection:`Effects --> Color Effects`
 
-    Set of four Image Editor tools: Solarize, Vivid (Velvia), Neon and Edge. 
+    Image Editor :ref:`color effects <effects_color>` tool.
 
 :menuselection:`Effects --> Add Film Grain`
 
-    Image Editor filter for to adding Film Grain. 
+    Image Editor filter for to :ref:`adding Film Grain <effects_filmgrain>`. 
 
 :menuselection:`Effects --> Oil paint`
 
-    Image Editor filter to simulate Oil Painting. 
+    Image Editor filter to :ref:`simulate Oil Painting <effects_oilpaint>`. 
 
 :menuselection:`Effects --> Charcoal Drawing`
 
-    Image Editor filter to simulate Charcoal Drawing. 
+    Image Editor filter to :ref:`simulate Charcoal Drawing <effects_charcoal>`. 
 
 :menuselection:`Effects --> Emboss`
 
-    Image Editor Emboss filter. 
+    Image Editor :ref:`Emboss filter <effects_emboss>`. 
 
 :menuselection:`Effects --> Distortion Effects`
 
-    Image Editor filter set with distortion special effects. 
+    Image Editor filter set with :ref:`distortion special effects <effects_distortion>`. 
 
 :menuselection:`Effects --> Blur Effects`
 
-    Image Editor filter set with blurring special effects on. 
+    Image Editor filter set with :ref:`blurring special effects <effects_blur>` on. 
 
 :menuselection:`Effects --> Raindrops`
 
-    Image Editor filter to add Rain Drops. 
+    Image Editor filter to :ref:`add Rain Drops <effects_raindrops>`. 
 
 The View Menu
 -------------
