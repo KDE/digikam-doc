@@ -24,6 +24,8 @@ The Browse menu provides access to the same views you can see on the Left Sideba
 
     When switching in **Full-Screen Mode**, the menu will be accessible on the right side of tool-bar with the **Hamburger Button**.
 
+.. _menu_mainalbum:
+
 The Album Menu
 --------------
 
@@ -57,6 +59,8 @@ The first five items of this menu (above the separator) are only active if you a
 
     Write the metadata of all items in the current album to the database. The database will inherit the images metadata, not the other way round as in the previous menu item.
 
+.. _menu_maintag:
+
 The Tag Menu
 ------------
 
@@ -77,6 +81,8 @@ The items below the separator are only active if you are in the Tags View.
 :menuselection:`Tag --> Delete`
 
     Remove the currently selected Tag from the Album's Database. This doesn't delete the images the tag was assigned to.
+
+.. _menu_mainitem:
 
 The Item Menu
 -------------
@@ -169,6 +175,8 @@ The Item Menu
 
     Another very useful function on items is grouping which is at the time of writing only available through the context menu on a selection of items. For details see :ref:`Grouping Photographs <grouping_photograph>` in the chapter about the digiKam **Main Window**.
 
+.. _menu_mainedit:
+
 The Edit Menu
 -------------
 
@@ -185,6 +193,8 @@ Beside the usual **Cut**, **Copy** and **Paste** the Edit Menu contains the foll
 :menuselection:`Edit --> Invert Selection` :kbd:`Ctrl+I`
 
     Invert the current selection
+
+.. _menu_mainview:
 
 The View Menu
 -------------
@@ -308,6 +318,8 @@ The View Menu
 
     For more information about color management see this lengthy chapter. 
 
+.. _menu_maintools:
+
 The Tools Menu
 --------------
 
@@ -363,6 +375,8 @@ The Tools Menu
 
     See the dedicated Send Images Tool for more information. 
 
+.. _menu_mainimport:
+
 The Import Menu
 ---------------
 
@@ -404,6 +418,8 @@ The Import Menu
 
     :menuselection:`Settings --> Configure digiKam... --> Plugin` and which are labeled **Export** in the **Categories** column. 
 
+.. _menu_mainexport:
+
 The Export Menu
 ---------------
 
@@ -424,6 +440,8 @@ The Export Menu
 :menuselection:`Export--> Export to Google Drive...`
 
     Tool upload images to Google Drive web-service.
+
+.. _menu_mainsettings:
 
 The Settings Menu
 -----------------
@@ -475,6 +493,8 @@ The Settings Menu
     Launch digiKam configure dialog.
 
     For a detailed description see :ref:`digiKam Configuration <setup_application>`. 
+
+.. _menu_mainhelp:
 
 The Help Menu
 -------------

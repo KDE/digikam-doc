@@ -15,6 +15,10 @@ Image Editor Menu
 
 .. contents::
 
+.. note::
+
+    When switching in **Full-Screen Mode**, the menu will be accessible on the right side of tool-bar with the **Hamburger Button**.
+
 The File Menu
 -------------
 
@@ -76,248 +80,217 @@ The Edit Menu
 The Color Menu
 --------------
 
-Color → Auto-Correction (Ctrl+Shift+B)
+:menuselection:`Color --> Auto-Correction` :kbd:`Ctrl+Shift+B`
 
-    Automatic color/exposure correction of the current image by an histogram manipulation (help).
+    Automatic color/exposure correction of the current image by an histogram manipulation.
 
-Color → White Balance
+:menuselection:`Color --> White Balance`
 
-    Image Editor tool to adjust white color balance on the current image (help). 
+    Image Editor tool to adjust white color balance on the current image. 
 
-Color → Brightness/Contrast/Gamma
+:menuselection:`Color --> Brightness/Contrast/Gamma`
 
-    Exposure correction of the current image by Brightness, Contrast, or Gamma adjustments (help).
+    Exposure correction of the current image by Brightness, Contrast, or Gamma adjustments.
 
-Color → Hue/Saturation/Lightness (Ctrl+U)
+:menuselection:`Color --> Hue/Saturation/Lightness` :kbd:`Ctrl+U`
 
-    Color correction of the current image by Hue, Saturation, or Lightness adjustments(help).
+    Color correction of the current image by Hue, Saturation, or Lightness adjustments.
 
-Color → Color Balance (Ctrl+B)
+:menuselection:`Color --> Color Balance` :kbd:`Ctrl+B`
 
-    Color correction of the current image by Red, Green, or Blue adjustments (help)
+    Color correction of the current image by Red, Green, or Blue adjustments.
 
-Enhance → Curves Adjust
+:menuselection:`Color --> Curves Adjust`
 
-    Image Editor tool to adjust curves manually on the current image (help). 
+    Image Editor tool to adjust curves manually on the current image. 
 
-Color → Levels Adjust
+:menuselection:`Color --> Levels Adjust`
 
-    Image Editor tool to adjust levels manually on the current image (help). 
+    Image Editor tool to adjust levels manually on the current image. 
 
-Color → Channel Mixer
+:menuselection:`Color --> Channel Mixer`
 
     Image Editor tool to mix color channels on the current image. 
 
-Color → Invert (Ctrl+I)
+:menuselection:`Color --> Invert` :kbd:`Ctrl+I`
 
     Invert image colors.
 
-Color → Black & White
+:menuselection:`Color --> Black & White`
 
-    Open the Black & White filter dialog for the current image.
+    Open the Black and White filter dialog for the current image.
 
-Color → Color Management
+:menuselection:`Color --> Color Management`
 
     Invokes the interactive Color Management editor.
 
-Color → Depth
+:menuselection:`Color --> Depth`
 
-    Toggle between 8 bit and 16 bit format on color channels.
+    Switch between 8 bit and 16 bit format on color channels.
 
 The Enhance Menu
 ----------------
 
-Enhance → Sharpen
+:menuselection:`Enhance --> Sharpen`
 
-    Classical image sharping operation (help).
+    Classical image sharping operation.
 
-Enhance → Blur
+:menuselection:`Enhance --> Blur`
 
-    Image softening operation by blurring (help).
+    Image softening operation by blurring.
 
-Enhance → Red Eye Reduction
+:menuselection:`Enhance --> Red Eye Reduction`
 
-    Red Eye correction tool using the current selection (help).
+    Red Eye correction tool using the current selection.
 
-Enhance → GMic-Qt
+:menuselection:`Enhance --> GMic-Qt`
 
-    Huge Collection of filters to apply on image.
+    Huge Collection of filters to apply on image (Optional - 3rd party plugin).
 
-Enhance → Noise Reduction
+:menuselection:`Enhance --> Noise Reduction`
 
-    Image Editor tool to reduce the noise with a Despeckle filter (help). 
+    Image Editor tool to reduce the noise with a Despeckle filter. 
 
-Enhance → Restoration
+:menuselection:`Enhance --> Restoration`
 
-    Image Editor tool to reduce artifacts on the current image (help). 
+    Image Editor tool to reduce artifacts on the current image. 
 
-Enhance → Hot Pixels Correction
+:menuselection:`Enhance --> Hot Pixels Correction`
 
-    Image Editor tool to remove hot pixels on the current image (help). 
+    Image Editor tool to remove hot pixels on the current image. 
 
-Enhance → Anti Vignetting
+:menuselection:`Enhance --> Anti Vignetting`
 
-    Image Editor tool to correct vignetting of the current image (help). 
+    Image Editor tool to correct vignetting of the current image. 
 
-Enhance → Lens Distortion Correction
+:menuselection:`Enhance --> Lens Distortion Correction`
 
-    Image Editor tool to correct lens distortion of the current image (help). 
+    Image Editor tool to correct lens distortion of the current image. 
 
 The Transform Menu
 ------------------
 
-Transform → Rotate → -90 degrees (Ctrl+Shift+Left)
+:menuselection:`Transform --> Rotate → -90 degrees` :kbd:`Ctrl+Shift+Left`
 
     Left rotation of the current image.
 
-Transform → Rotate → 90 degrees (Ctrl+Shift+Right)
+:menuselection:`Transform --> Rotate → 90 degrees` :kbd:`Ctrl+Shift+Right`
 
     90 degrees rotation of the current image.
 
-Transform → Free Rotation
+:menuselection:`Transform --> Free Rotation`
 
-    Image Editor tool to rotate the current image by any angle in degrees (help). 
+    Image Editor tool to rotate the current image by any angle in degrees. 
 
-Transform → Flip → Horizontally (Ctrl+*)
+:menuselection:`Transform --> Flip → Horizontally` :kbd:`Ctrl+*`
 
     Horizontal flip of the current image.
 
-Transform → Flip → Vertically (Ctrl+/)
+:menuselection:`Transform --> Flip → Vertically` :kbd:`Ctrl+/`
 
     Vertical flip of the current image.
 
-Transform → Crop (Ctrl+X)
+:menuselection:`Transform --> Crop` :kbd:`Ctrl+X`
 
     Crop image to the current selection.
 
-Transform → Resize
+:menuselection:`Transform --> Resize`
 
-    Resize (reduce or blow-up) the current image to the appropriate factor or dimensions (help).
+    Resize (reduce or blow-up) the current image to the appropriate factor or dimensions.
 
-Transform → Aspect Ratio Crop
+:menuselection:`Transform --> Aspect Ratio Crop`
 
-    Crop the current image using an constrained aspect ratio (help).
+    Crop the current image using an constrained aspect ratio.
 
-Transform → Shear
+:menuselection:`Transform --> Shear`
 
-    Image Editor tool to shear the current image horizontally or vertically (help). 
+    Image Editor tool to shear the current image horizontally or vertically. 
 
-Transform → Perspective Adjustment
+:menuselection:`Transform --> Perspective Adjustment`
 
-    Image Editor tool to adjust perspective of the current image (help). 
+    Image Editor tool to adjust perspective of the current image. 
 
 The Decorate Menu
 -----------------
 
-Decorate → Apply Texture
+:menuselection:`Decorate --> Apply Texture`
 
     Image Editor tool to apply decorative texture to the current image.
 
     See the dedicated Apply Texture manual for more information. 
 
-Decorate → Add Border
+:menuselection:`Decorate --> Add Border`
 
-    Image Editor tool to add a decorative border around the current image (help). 
+    Image Editor tool to add a decorative border around the current image. 
 
-Decorate → Insert Text
+:menuselection:`Decorate --> Insert Text`
 
-    Image Editor tool to insert text in the current image (help). 
+    Image Editor tool to insert text in the current image. 
 
 The Effects Menu
 ----------------
 
-Effects → Color Effects
+:menuselection:`Effects --> Color Effects`
 
-    Set of four Image Editor tools: Solarize, Vivid (Velvia), Neon and Edge (help). 
+    Set of four Image Editor tools: Solarize, Vivid (Velvia), Neon and Edge. 
 
-Effects → Add Film Grain
+:menuselection:`Effects --> Add Film Grain`
 
-    Image Editor filter for to adding Film Grain (help). 
+    Image Editor filter for to adding Film Grain. 
 
-Effects → Oil paint
+:menuselection:`Effects --> Oil paint`
 
-    Image Editor filter to simulate Oil Painting (help). 
+    Image Editor filter to simulate Oil Painting. 
 
-Effects → Charcoal Drawing
+:menuselection:`Effects --> Charcoal Drawing`
 
-    Image Editor filter to simulate Charcoal Drawing (help). 
+    Image Editor filter to simulate Charcoal Drawing. 
 
-Effects → Emboss
+:menuselection:`Effects --> Emboss`
 
-    Image Editor Emboss filter (help). 
+    Image Editor Emboss filter. 
 
-Effects → Distortion Effects
+:menuselection:`Effects --> Distortion Effects`
 
-    Image Editor filter set with distortion special effects (help). 
+    Image Editor filter set with distortion special effects. 
 
-Effects → Blur Effects
+:menuselection:`Effects --> Blur Effects`
 
-    Image Editor filter set with blurring special effects on (help). 
+    Image Editor filter set with blurring special effects on. 
 
-Effects → Raindrops
+:menuselection:`Effects --> Raindrops`
 
-    Image Editor filter to add Rain Drops (help). 
+    Image Editor filter to add Rain Drops. 
 
 The View Menu
 -------------
 
-View → Zoom In (Ctrl++)
+:menuselection:`View --> Zoom In` :kbd:`Ctrl++`
 
     Increase the zoom factor on the current image.
 
-View → Zoom Out (Ctrl+-)
+:menuselection:`View --> Zoom Out` :kbd:`Ctrl+-`
 
     Decrease the zoom factor on the current image.
 
-View → Fit to Window (Ctrl+Shift+A)
+:menuselection:`View --> Fit to Window` :kbd:`Ctrl+Shift+A`
 
     Toggle between fit-to-window zoom or 100% image zoom size.
 
-View → Fit to Selection (Ctrl+Shift+S)
+:menuselection:`View --> Fit to Selection` :kbd:`Ctrl+Shift+S`
 
     Make the selection fit the window.
 
-View → Histogram
+:menuselection:`View --> Slideshow`
 
-    Display superposed histogram on current image (Luminosity, Red, Green, Blue, Alpha).
-
-View → Slideshow
-
-    Start a slideshow of the current album.
+    Start a :ref:`Slide-Show <slide_tool>` of the current album.
 
 The Settings Menu
 -----------------
 
-Settings → Full Screen Mode (Ctrl+Shift+F)
-
-    Toggles the graphic interface to full screen mode.
-
-Settings → Configure Shortcuts
-
-    Configure the digiKam image editor shortcuts.
-
-Settings → Configure Toolbars
-
-    Configure the digiKam image editor toolbars.
+See description from :ref:`Main Window <menu_mainsettings>` section.
 
 The Help Menu
+-------------
 
-Help → digiKam Handbook (F1)
-
-    Invokes the KDE Help system starting at the digiKam help pages. (this document).
-
-Help → What's This? (Shift+F1)
-
-    Changes the mouse cursor to a combination arrow and question mark. Clicking on items within digiKam will open a help window (if one exists for the particular item) explaining the item's function.
-
-Help → Report Bug...
-
-    Opens the Bug report dialog where you can report a bug or request a “wishlist” feature.
-
-Help → Switch Application Language...
-
-    Opens a dialog where you can edit the Primary language and Fallback language for this application.
-
-Help → About digiKam
-
-    This will display version and author information.
+See description from :ref:`Main Window <menu_mainhelp>` section.
