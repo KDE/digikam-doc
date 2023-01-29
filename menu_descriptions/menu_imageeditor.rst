@@ -171,48 +171,56 @@ The Enhance Menu
 
     Image Editor tool to correct :ref:`lens distortion manually <enhance_lensdistortion>` of the current image. 
 
+:menuselection:`Enhance --> Healing Clone`
+
+    Image Editor tool to :ref:`fix artifacts by cloning region <enhance_clone>` in the current image. 
+
 The Transform Menu
 ------------------
 
 :menuselection:`Transform --> Rotate → -90 degrees` :kbd:`Ctrl+Shift+Left`
 
-    Left rotation of the current image.
+    :ref:`Left rotation <transform_rotationflip>` of the current image.
 
 :menuselection:`Transform --> Rotate → 90 degrees` :kbd:`Ctrl+Shift+Right`
 
-    90 degrees rotation of the current image.
+    :ref:`90 degrees rotation <transform_rotationflip>` of the current image.
 
 :menuselection:`Transform --> Free Rotation`
 
-    Image Editor tool to rotate the current image by any angle in degrees. 
+    Image Editor tool to :ref:`rotate <transform_freerotation>` the current image by any angle in degrees. 
 
 :menuselection:`Transform --> Flip → Horizontally` :kbd:`Ctrl+*`
 
-    Horizontal flip of the current image.
+    :ref:`Horizontal flip <transform_rotationflip>` of the current image.
 
 :menuselection:`Transform --> Flip → Vertically` :kbd:`Ctrl+/`
 
-    Vertical flip of the current image.
+    :ref:`Vertical flip <transform_rotationflip>` of the current image.
 
 :menuselection:`Transform --> Crop` :kbd:`Ctrl+X`
 
-    Crop image to the current selection.
+    :ref:`Crop <transform_crop>` image to the current selection.
 
 :menuselection:`Transform --> Resize`
 
-    Resize (reduce or blow-up) the current image to the appropriate factor or dimensions.
+    :ref:`Resize <transform_resize>` (reduce or blow-up) the current image to the appropriate factor or dimensions.
 
 :menuselection:`Transform --> Aspect Ratio Crop`
 
-    Crop the current image using an constrained aspect ratio.
+    Crop the current image using an :ref:`constrained aspect ratio <transform_proportionalcrop>`.
 
 :menuselection:`Transform --> Shear`
 
-    Image Editor tool to shear the current image horizontally or vertically. 
+    Image Editor tool to :ref:`Shear <transform_shear>` the current image horizontally or vertically. 
 
 :menuselection:`Transform --> Perspective Adjustment`
 
-    Image Editor tool to adjust perspective of the current image. 
+    Image Editor tool to adjust :ref:`Perspective <transform_perspective>` of the current image. 
+
+:menuselection:`Transform --> Liquid Rescale`
+
+    Image Editor tool to adjust :ref:`resizing pictures non uniformly while preserving their features <transform_liquidrescale>` of the current image. 
 
 The Decorate Menu
 -----------------
