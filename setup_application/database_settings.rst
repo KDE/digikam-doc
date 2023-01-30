@@ -204,7 +204,7 @@ See the resume below to choose the right database type depending of the use-case
 
 .. note::
 
-    See this :ref:`Digital Asset Management chapter <data_protection>` for more details about media and data protection.
+    See this :ref:`Digital Asset Management chapter <storage_deterioration>` for more details about media and data protection.
 
 .. _database_migration:
 

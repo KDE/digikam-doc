@@ -44,6 +44,8 @@ Disaster                       1-2%        1-2%
 
 So let us analyze those cases step by step.
 
+.. _storage_deterioration:
+
 Storage Deterioration
 ---------------------
 
