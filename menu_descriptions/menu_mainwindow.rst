@@ -505,6 +505,14 @@ The Settings Menu
 The Help Menu
 -------------
 
+:menuselection:`Help --> What's this?` :kbd:`Shift+F1`
+
+    Show Contextual help.
+
+:menuselection:`Help --> Find Action` :kbd:`Ctrl+Alt+I`
+
+    Search a menu action in application window.
+
 .. _help_rawcamera:
 
 :menuselection:`Help --> Supported RAW Camera`
