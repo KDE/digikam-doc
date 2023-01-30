@@ -47,6 +47,8 @@ So let us analyze those cases step by step.
 Storage Deterioration
 ---------------------
 
+Devices listed below are sorted by data speed access feature, from the less faster to the more faster.
+
 Magnetic Media
 ~~~~~~~~~~~~~~
 
@@ -96,9 +98,11 @@ Non-Volatile Memory
 
 NVMe allows host hardware and software to fully exploit the levels of parallelism possible in modern SSDs. NVMe reduces I/O overhead and brings various performance improvements relative to previous SSDs. mSATA interface protocols were developed for use with far slower HDDs where a very lengthy delay exists between a request and data transfer, where data speeds are much slower than RAM speeds.
 
+For a fiability viewpoint, as NVMe devices uses the same hardware than SSDs to store data, the robustness must be the same. 
+
 .. important:
 
-    **In all cases SSDs or NVMe as internal devices are the solution to host the digiKam databases and the collections.**
+    **In all cases SSDs or NVMe as internal devices are the more modern and efficiant solution to host the digiKam databases and the collections.**
 
 Power Supply Failures
 ---------------------
