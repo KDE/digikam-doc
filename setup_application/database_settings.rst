@@ -97,7 +97,7 @@ To switch from SQLite to MySQL database, go to :menuselection:`Settings --> Conf
 The MySQL Internal Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-While using a large collection, of size **greater than 100,000 items**, the application tends to slow down. To avoid the delay and maintain efficiency, digiKam provides option of using **MySQL Internal**. To be clear, this isn’t an actual server, or a public network. Instead, it is a server that runs only while application is running.
+While using a large collection hosted on hard drive (HDD - not SSD or NVMe device), with a size **greater than 100,000 items**, the application tends to slow down. To avoid the delay and maintain efficiency, digiKam provides option of using **MySQL Internal**. To be clear, this isn’t an actual server, or a public network. Instead, it is a server that runs only while application is running.
 
 Internal server creates a separate database that can be accessed (only while application is running) using the command:
 
@@ -165,6 +165,42 @@ There are some tips and recommendation to obtain the best results with a remote 
 With slow network, digiKam hangs a lot of time especially when album contains many items (>1000). This solution relies on network performances. Problem has been reproducible using Wifi connection, for instance. Switching to Ethernet must solves the problem.
 
 Also, if you have an enormous collection, you should start the MySQL server with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with using MySQL, you could also change your settings in :file:`my.ini` or :file:`~/.my.cnf` files.
+
+Database Type Criteria
+----------------------
+
+See the resume below to choose the right database type depending of the use-cases.
+
+    ============== ============== ================ ==================================================================
+    Storage        Type           Amount of Items  Remarks
+    ============== ============== ================ ==================================================================
+    HDD            Sqlite         < 100,000        WAL mandatory.
+    HDD            Mysql-Internal > 100,000
+    SDD            SQlite                          WAL optional.
+    SDD            Mysql-Internal
+    MVMe           SQlite                          WAL optional.
+    MVMe           Mysql-Internal
+    Removable      Sqlite         < 100,000        WAL mandatory.
+    Removable      Mysql-Internal > 100,000
+    Remote         Mysql server                    MariaDB server supported. Gigabit Ethernet or higher recommended.
+    ============== ============== ================ ==================================================================
+
+.. glossary::
+
+    HDD
+        Hard Disk Drive.
+
+    SSD
+        Solid State Drive.
+
+    NVMe
+        Non-Volatile Memory.
+
+    Removable
+        External USB HDD/SDD/NVMe.
+
+    Remote
+        Network server as NAS (Network Attached Storage).
 
 .. _database_migration:
 
