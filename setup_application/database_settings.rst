@@ -176,9 +176,9 @@ See the resume below to choose the right database type depending of the use-case
     ============== ============== ================ ==================================================================
     HDD            Sqlite         < 100,000        WAL mandatory.
     HDD            Mysql-Internal > 100,000
-    SDD            SQlite                          WAL optional.
+    SDD            Sqlite                          WAL optional.
     SDD            Mysql-Internal
-    MVMe           SQlite                          WAL optional.
+    MVMe           Sqlite                          WAL optional.
     MVMe           Mysql-Internal
     Removable      Sqlite         < 100,000        WAL mandatory. USB 3.1 minimum with NVMe drive.
     Removable      Mysql-Internal > 100,000        USB 3.1 minimum with NVMe drive.
