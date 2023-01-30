@@ -82,7 +82,7 @@ digiKam also provides support for popular MySQL database engine. Of course, you 
 
 .. note::
 
-     With **WAL** option enabled, SQlite can be easily used for more than 100,000 items especially with an SSD storage. It must be even faster than MySQL and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details.     
+     With **WAL** option enabled, SQlite can be easily used for more than 100,000 items especially with an SSD or NVMe storage. It must be even faster than MySQL and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details.     
 
 Using MySQL as digiKam’s database back-end allows you to store the data on local as well as remote server. Local, to replace the local SQLite storage and latter, to use a shared computer through network. Using MySQL as digiKam’s database back-end allows you to store the data on a remote server. This way, you can use multiple digiKam installations (For instance,on your notebook and PC) to access and manage your photo collections. You can also use MySQL tools to backup and analyze digiKam’s data.
 
