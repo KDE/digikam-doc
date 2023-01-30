@@ -18,7 +18,7 @@ Data Corruption and Loss
 Main Factors of Digital Data Loss
 ---------------------------------
 
-Of course we're not talking about losing BlueRays on the road or in a fire - that kind of loss is just the same as traditional paper copies or negatives. We are talking about problems with the so called *New Media*.
+Of course we're not talking about losing Blue-rays on the road or in a fire - that kind of loss is just the same as traditional paper copies or negatives. We are talking about problems with the so called *New Media*.
 
 Problems with digital data can roughly be categorized into the following areas of concern:
 
@@ -98,11 +98,11 @@ Non-Volatile Memory
 
 NVMe allows host hardware and software to fully exploit the levels of parallelism possible in modern SSDs. NVMe reduces I/O overhead and brings various performance improvements relative to previous SSDs. mSATA interface protocols were developed for use with far slower HDDs where a very lengthy delay exists between a request and data transfer, where data speeds are much slower than RAM speeds.
 
-For a fiability viewpoint, as NVMe devices uses the same hardware than SSDs to store data, the robustness must be the same. 
+For a viability viewpoint, as NVMe devices uses the same hardware than SSDs to store data, the robustness must be the same.
 
 .. important:
 
-    **In all cases SSDs or NVMe as internal devices are the more modern and efficiant solution to host the digiKam databases and the collections.**
+    **In all cases SSDs or NVMe as internal devices are the more modern and efficient solution to host the digiKam databases and the collections.**
 
 Power Supply Failures
 ---------------------
@@ -226,7 +226,7 @@ We would like to dispel some common myths:
 
     - Open Source file systems are less prone to data loss than proprietary systems: Wrong, NTFS is rather a tiny notch better than ext4, ReiserFs, JFS, XFS, to name just the most popular file systems that often come as default storage format disk used by distributions.
 
-    - Journaling files systems prevent data corruption/loss: Wrong, they only speed up the scan process in case of a sudden interrupt during operation and prevent ambiguous states. But if a file was not entirely saved before the mishap, it'll be lost.
+    - Journalize files systems prevent data corruption/loss: Wrong, they only speed up the scan process in case of a sudden interrupt during operation and prevent ambiguous states. But if a file was not entirely saved before the mishap, it'll be lost.
 
     - `RAID <https://en.wikipedia.org/wiki/RAID>`_ systems prevent data corruption/loss: Mostly wrong, RAID0 and 1 prevent you from nothing, RAID5 can prevent data loss due to disk-failures (but not from disk or file system errors). Many low-end RAID controllers (most mother board controllers are) don’t report problems, figuring you’ll never notice. If you do notice, months later, what is the chance that you’ll know it was the controller’s fault? One insidious problem is corruption of RAID 5 parity data. It is pretty simple to check a file by reading it and matching the metadata. Checking parity data is much more difficult, so you typically won’t see parity errors until a rebuild. Then, of course, it is too late.
 
@@ -366,7 +366,7 @@ Open Source standards have the huge advantage of having an open specification. E
 
 We recommend clearly to **abstain from archiving in RAW format** (as opposed to shooting in RAW format, which we recommend). It has all bad ingredients: many varieties and proprietary nature. It is clear that in a few years time you cannot use your old RAW files anymore. We have already seen people changing camera, losing their color profiles and having great difficulty to treat their old RAW files correctly. Better change to DNG format.
 
-**DNG** or Digital Negative file format is a royalty free and open RAW image format designed by Adobe Systems. DNG was a response to demand for a unifying camera raw file format. It is based on the TIFF/EP format, and mandates use of metadata. A handful of camera manufacturers have adopted DNG already, let's hope that the main contenders Canon and Nikon will use it one day. `Apple ProRAW <https://support.apple.com/en-us/HT211965>`_ format available since the iphone 12 Pro Max is based on DNG.
+**DNG** or Digital Negative file format is a royalty free and open RAW image format designed by Adobe Systems. DNG was a response to demand for a unifying camera raw file format. It is based on the TIFF/EP format, and mandates use of metadata. A handful of camera manufacturers have adopted DNG already, let's hope that the main contenders Canon and Nikon will use it one day. `Apple ProRAW <https://support.apple.com/en-us/HT211965>`_ format available since the iPhone 12 Pro Max is based on DNG.
 
 .. figure:: images/dam_dng_converter_bqm.webp
     :alt:
@@ -389,7 +389,7 @@ IPTC Goes XMP
 
 That's probably one of the reasons why, around 2001, that Adobe introduced its XML based XMP technology to replace the *Image Resource Block* technology of the nineties. XMP stands for **Extensible Metadata Platform**, a mixture of XML and RDF. It is a labeling technology that lets users embed data about a file in the file itself, the file info is saved using the extension :file:`*.xmp*` (signifying the use of XML/RDF).
 
-`XMP <https://en.wikipedia.org/wiki/Extensible_Metadata_Platform>`_: As much as ODF will be readable forever (since its containing text is written in clear text), XMP will preserve your metadata in a clearly understandable format XML. No danger here of not being able to read it later. It can be embedded into the image files or as a separate accompanying file (**Sidecar** concept). XMP can be used in PDF, JPEG, JPEG2000, GIF, PNG, HTML, TIFF, Adobe Illustrator, PSD, PostScript, Encapsulated PostScript, and video files. In a typical edited JPEG file, XMP information is typically included alongside Exif and IPTC data.
+`XMP <https://en.wikipedia.org/wiki/Extensible_Metadata_Platform>`_: As much as ODF will be readable forever (since its containing text is written in clear text), XMP will preserve your metadata in a clearly understandable format XML. No danger here of not being able to read it later. It can be embedded into the image files or as a separate accompanying file (**Sidecar** concept). XMP can be used in PDF, JPEG, JPEG2000, GIF, PNG, HTML, TIFF, Adobe Illustrator, PSD, Postscript, Encapsulated Postscript, and video files. In a typical edited JPEG file, XMP information is typically included alongside Exif and IPTC data.
 
 .. figure:: images/dam_xmp_viewer.webp
     :alt:
@@ -397,7 +397,7 @@ That's probably one of the reasons why, around 2001, that Adobe introduced its X
 
     digiKam can display XMP Contents from Image and Video
 
-Embedding metadata in files allows easy sharing and transfer of files across products, vendors, platforms, customers, without metadata getting lost. The most common metadata tags recorded in XMP data are those from the Dublin Core Metadata Initiative, which include things like title, description, creator, and so on. The standard is designed to be extensible, allowing users to add their own custom types of metadata into the XMP data. XMP generally does not allow binary data types to be embedded. This means that any binary data one wants to carry in XMP, such as thumbnail images, must be encoded in some XML-friendly format, such as Base64.
+Embedding metadata in files allows easy sharing and transfer of files across products, vendors, platforms, customers, without metadata getting lost. The most common metadata tags recorded in XMP data are those from the Dublin Core Metadata Initiative, which include things like title, description, creator, and so on. The standard is designed to be extensible, allowing users to add their own custom types of metadata into the XMP data. XMP generally does not allow binary data types to be embedded. This means that any binary data one wants to carry in XMP, such as thumbnail images, must be encoded in some XML-friendly format, such as Base-64.
 
 Many photographers prefer keeping an original of their shots (mostly RAW) for the archive. XMP suits that approach as it keeps metadata separate from the image file. We do not share this point of view. There could be problems linking metadata file and image file, and as said above, RAW formats will become obsolete. We recommend using DNG as a container and putting everything inside.
 

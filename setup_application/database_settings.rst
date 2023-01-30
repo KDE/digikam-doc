@@ -180,8 +180,8 @@ See the resume below to choose the right database type depending of the use-case
     SDD            Mysql-Internal
     MVMe           SQlite                          WAL optional.
     MVMe           Mysql-Internal
-    Removable      Sqlite         < 100,000        WAL mandatory.
-    Removable      Mysql-Internal > 100,000
+    Removable      Sqlite         < 100,000        WAL mandatory. USB 3.1 minimum with NVMe drive.
+    Removable      Mysql-Internal > 100,000        USB 3.1 minimum with NVMe drive.
     Remote         Mysql server                    MariaDB server supported. Gigabit Ethernet or higher recommended.
     ============== ============== ================ ==================================================================
 
@@ -201,6 +201,10 @@ See the resume below to choose the right database type depending of the use-case
 
     Remote
         Network server as NAS (Network Attached Storage).
+
+.. note::
+
+    See this :ref:`Digital Asset Management chapter <data_protection>` for more details about media and data protection.
 
 .. _database_migration:
 
