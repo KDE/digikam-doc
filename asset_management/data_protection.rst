@@ -100,7 +100,7 @@ NVMe allows host hardware and software to fully exploit the levels of parallelis
 
 For a viability viewpoint, as NVMe devices uses the same hardware than SSDs to store data, the robustness must be the same.
 
-.. important:
+.. important::
 
     **In all cases SSDs or NVMe as internal devices are the more modern and efficient solution to host the digiKam databases and the collections.**
 
