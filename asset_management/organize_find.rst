@@ -19,8 +19,8 @@ We dare-say if you have more than 1000 photographs on your computer in no-DAM fa
 
 But as much as there is no such thing as a free lunch, there is no free cataloging or DAM - those who spend the initial time of building a systematic method of their own will be better off as time passes and the number of photographs multiplies. The ROI (return on investment) of DAM has been estimated in different studies to be better than 10. Keep in mind to be **concise, plan for the future (30-50y)**, do it once. The upcoming semantic web will totally integrate into and add value to a DAM environment.
 
-DAM Use-Case with digiKam
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Use-Cases with digiKam
+~~~~~~~~~~~~~~~~~~~~~~
 
 digiKam provides a number of methods to classify photographs: filenames, albums, collections, time-stamp, tags, rating, GPS position and captions. As if this was not enough, you can search many standard metadata items like camera model, lens, coordinates, image size and many more. Metadata categories as listed here are in fact different **views** of your photo library. Combining these views is the very powerful method to narrow down the search for a file and to find it quickly. Imagine having 800 photos of your loved one. Searching for **Salagou**, having more than **3 rating stars**, shot in **France** will surely leave you with very few candidates. In terms of selection criteria for a DAM system, digiKam fares very well in terms of completeness, versatility, speed, scalability, accuracy and openness.
 
