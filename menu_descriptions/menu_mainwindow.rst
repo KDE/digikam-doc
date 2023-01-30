@@ -525,6 +525,18 @@ The Help Menu
 
     The List of Supported RAW Camera
 
+.. _help_detectedhardware:
+
+:menuselection:`Help --> Detected Hardware`
+
+    Displays an information panel with the detected hardware from your computer.
+
+.. figure:: images/menu_detected_hardware.webp
+    :alt:
+    :align: center
+
+    The List of Detected Hardware
+
 .. _help_componentsinfo:
 
 :menuselection:`Help --> Components Information`
@@ -549,14 +561,30 @@ The Help Menu
 
     The Statistics from the Database
 
-.. _help_detectedhardware:
+:menuselection:`Help --> Donate`
 
-:menuselection:`Help --> Detected Hardware`
+    Open project `Donation page <https://www.digikam.org/donate/>`_.
 
-    Displays an information panel with the detected hardware from your computer.
+:menuselection:`Help --> Check from New Version`
 
-.. figure:: images/menu_detected_hardware.webp
-    :alt:
-    :align: center
+    Check if new application version is available online. See :ref:`this chapter <updates_settings>` from details.
 
-    The List of Detected Hardware
+:menuselection:`Help --> Recipes Book`
+
+    Open `Recipes Book page <https://www.digikam.org/recipes_book/>`_.
+
+:menuselection:`Help --> Contribute`
+
+    Open project `Contribute page <https://www.digikam.org/contribute/>`_.
+
+:menuselection:`Help --> Online Handbook`
+
+    Open `Online Manual page <https://docs.digikam.org/en/index.html>`_.
+
+:menuselection:`Help --> Report Bug`
+
+    Open a dialog to report online a dysfunction.
+
+:menuselection:`Help --> About digiKam`
+
+    Open a dialog to show application version and details.
