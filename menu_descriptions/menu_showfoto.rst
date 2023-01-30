@@ -15,6 +15,12 @@ Showfoto Menu
 
 .. contents::
 
+.. figure:: images/menu_showfoto_editor.webp
+    :alt:
+    :align: center
+
+    The Showfoto Editor Menu
+
 **Showfoto** menu is mostly the same than **digiKam Image Editor**. Only few differences are presents in **File** and **Settings**, and **Help** entries due to the lack of database spports.
 
 .. note::

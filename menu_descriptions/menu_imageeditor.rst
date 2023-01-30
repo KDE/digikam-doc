@@ -15,6 +15,12 @@ Image Editor Menu
 
 .. contents::
 
+.. figure:: images/menu_image_editor.webp
+    :alt:
+    :align: center
+
+    The digiKam Image Editor Menu
+
 .. note::
 
     When switching in **Full-Screen Mode**, the menu will be accessible on the right side of tool-bar with the **Hamburger Button**.
