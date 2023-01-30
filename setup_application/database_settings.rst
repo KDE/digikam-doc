@@ -28,20 +28,21 @@ The Sqlite Database
 
 By default, digiKam uses SQLite as its back-end for storing important metadata and thumbnails. Three SQLite files used for storing them are named respectively:
 
-    - Core: :file:`digikam4.db`.
-
-    - Thumbs: :file:`thumbnails-digikam.db`.
-
-    - Similarity: :file:`similarity.db`.
-
-    - Faces: :file:`recognition.db`.
+    ============== =============================
+    Database       File-Name
+    ============== =============================
+    **Core**       :file:`digikam4.db`
+    **Thumbs**     :file:`thumbnails-digikam.db`
+    **Similarity** :file:`similarity.db`
+    **Faces**      :file:`recognition.db`
+    ============== =============================
 
 To make your application run fast and smoothly, it is recommended to check and optimize your databases once in awhile. This could be achieved with the menu option :menuselection:`Tools --> Maintenance...` and the stage **Perform Database Cleaning**. See this
 :ref:`Maintenance tool section <maintenance_database>` for details. A recommended tool is `Sqlite Browser <https://sqlitebrowser.org/>`_, a high quality and easy to use visual tool for managing database objects. For Ubuntu and its derivatives, it could be retrieved using `sudo apt install sqlitebrowser`. Now you can switch to the directory where databases are stored and visualize the database contents.
 
 .. note::
 
-    Take care to use a place hosted by fast hardware (such as SSD) with enough free space especially for thumbnails database. A remote file system such as NFS cannot be used here. For performance and technical reasons relevant of SQLite, you cannot use removable media.
+    Take care to use a place hosted by fast hardware (such as SSD or NVMe) with enough free space especially for thumbnails database. A remote file system such as NFS cannot be used here. For performance and technical reasons relevant of SQLite, you cannot use a media from the network.
 
 SQLite database files could be found in your *collection* folder, which you have added to digiKam. (By default, if you add your “Pictures” collection, the database files will be present in :file:`~/Pictures` folder).
 
