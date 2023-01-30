@@ -21,14 +21,14 @@ Main Window Menu
 
     The digiKam Main Window Menu
 
-The Browse Menu
----------------
-
-The Browse menu provides access to the same views you can see on the Left Sidebar. Descriptions see under :ref:`The Main digiKam Window <main_window>`. In addition there are **Back** and **Forward** menu items that will lead you through the history of your digiKam use in the same way you are used to from an internet browser for example. And finally there is the **Quit** item to leave digiKam.
-
 .. note::
 
     When switching in **Full-Screen Mode**, the menu will be accessible on the right side of tool-bar with the **Hamburger Button**.
+
+The Browse Menu
+---------------
+
+The Browse menu provides access to the same views you can see on the :ref:`Left Sidebar <main_window>`, accessible through  :kbd:`Ctrl+Shift+Fn` (with *Fn* equals :kbd:`F1`, :kbd:`F2`, :kbd:`F3`, etc.). In addition there are **Back** :kbd:`Alt+Left` and **Forward** :kbd:`Alt+Right` menu items that will lead you through the history of your digiKam use in the same way you are used to from an internet browser for example. And finally there is the **Quit** :kbd:`Ctrl+Q` item to leave digiKam.
 
 .. _menu_mainalbum:
 
