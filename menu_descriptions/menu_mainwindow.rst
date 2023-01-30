@@ -15,6 +15,12 @@ Main Window Menu
 
 .. contents::
 
+.. figure:: images/menu_main_window.webp
+    :alt:
+    :align: center
+
+    The digiKam Main Window Menu
+
 The Browse Menu
 ---------------
 
