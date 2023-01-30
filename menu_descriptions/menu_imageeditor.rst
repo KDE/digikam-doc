@@ -171,7 +171,7 @@ The Enhance Menu
 
 :menuselection:`Enhance --> Local Contrast`
 
-    Image Editor tool to apply a :ref:`Tone-Mapping filter <enhance_localcontrast>` on on the current image.
+    Image Editor tool to apply a :ref:`Tone-Mapping filter <enhance_localcontrast>` on the current image.
 
 :menuselection:`Enhance --> Hot Pixels Correction`
 
@@ -194,11 +194,11 @@ The Enhance Menu
 The Transform Menu
 ------------------
 
-:menuselection:`Transform --> Rotate → -90 degrees` :kbd:`Ctrl+Shift+Left`
+:menuselection:`Transform --> Rotate --> -90 degrees` :kbd:`Ctrl+Shift+Left`
 
     :ref:`Left rotation <transform_rotationflip>` of the current image.
 
-:menuselection:`Transform --> Rotate → 90 degrees` :kbd:`Ctrl+Shift+Right`
+:menuselection:`Transform --> Rotate --> 90 degrees` :kbd:`Ctrl+Shift+Right`
 
     :ref:`90 degrees rotation <transform_rotationflip>` of the current image.
 
@@ -206,11 +206,11 @@ The Transform Menu
 
     Image Editor tool to :ref:`rotate <transform_freerotation>` the current image by any angle in degrees.
 
-:menuselection:`Transform --> Flip → Horizontally` :kbd:`Ctrl+*`
+:menuselection:`Transform --> Flip --> Horizontally` :kbd:`Ctrl+*`
 
     :ref:`Horizontal flip <transform_rotationflip>` of the current image.
 
-:menuselection:`Transform --> Flip → Vertically` :kbd:`Ctrl+/`
+:menuselection:`Transform --> Flip --> Vertically` :kbd:`Ctrl+/`
 
     :ref:`Vertical flip <transform_rotationflip>` of the current image.
 
