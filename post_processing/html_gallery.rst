@@ -152,8 +152,7 @@ It's an INI file and it looks like this:
     Name=Preview's Caption
     Url=preview.png
 
-We use a desktop file format so that entries can be translated. If you look at
-the desktop file for one of the themes shipped with the tool, you will find
+We use a desktop file format so that entries can be translated. If you look at the desktop file for one of the themes shipped with the tool, you will find
 something like this:
 
 .. code-block:: ini
@@ -200,8 +199,7 @@ Rename the desktop file accordingly:
     cd snow2
     mv snow.desktop snow2.desktop
 
-Edit :file:`snow2.desktop**` to remove all the **Name[...]** entries and replace **Name=Snow**
-with **Name=Snow 2**.
+Edit :file:`snow2.desktop**` to remove all the **Name[...]** entries and replace **Name=Snow** with **Name=Snow 2**.
 
 You are done, you can now open digiKam and start the HTML Gallery tool, the **Snow 2** theme should appear in the theme list.
 
@@ -256,8 +254,7 @@ HTML Gallery tool imposes no constraint on the organization of HTML files: you c
 About Translations
 ~~~~~~~~~~~~~~~~~~
 
-You should not **hardcode** any text in the template, instead you should use the
-**i18n parameters**. For example instead of using this:
+You should not **hardcode** any text in the template, instead you should use the **i18n parameters**. For example instead of using this:
 
 .. code-block:: xml
 
@@ -315,9 +312,8 @@ You are free to use images, CSS files or other files in your theme: just put the
 
 Original Images
 ```````````````
-As explained before, if the user selects the option "include original images",
-the :file:`gallery.xml` file will contain **<original />** tags. If this tag is present,
-the image page should contain a link to download the original image.
+
+As explained before, if the user selects the option **Include original images**, the :file:`gallery.xml` file will contain **<original />** tags. If this tag is present, the image page should contain a link to download the original image.
 
 Here is an example:
 
@@ -331,9 +327,8 @@ Here is an example:
 
 Non-Square Thumbnails
 `````````````````````
-By default, thumbnails are cropped so that they are square-shaped and all have an identical size. This makes it easier to create the HTML/CSS style.
 
-However, if your theme is ready to cope with thumbnails of different sizes, add this snippet to your desktop file:
+By default, thumbnails are cropped so that they are square-shaped and all have an identical size. This makes it easier to create the HTML/CSS style. However, if your theme is ready to cope with thumbnails of different sizes, add this snippet to your desktop file:
 
 .. code-block:: ini
 
