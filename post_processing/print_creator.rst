@@ -122,12 +122,14 @@ An example of template (already included into default templates.xml) is a layout
         </paper>
     </templates>
 
-- **paper** element: Represents the template layout, important attributes are width, height and unit.
+The **paper** element represents the template layout, important attributes are width, height and unit:
+
 - **width** attribute: Represents the layout width.
 - **height** attribute: Represents the layout height.
 - **unit** attribute: Explains in which units width and height are, it can be inches or inch, mm, or cm.
 
-- **template** element: It is the real template definition and contains the photo positions.
+The **template** element is the real template definition and contains the photo positions. Attributes are:
+
 - **name** attribute: It is the template's name. It's used to get translations at run-time set from a desktop file-name ( :file:`6_photos_3.5x4cm.desktop` in the example). If the desktop file-name does not exist, the name attribute is shown.
 - **autorotate** attribute: Sets if autorotation must be done.
 - **photo** element: Sets photo position (x and y attributes) and size (width and height attributes).
