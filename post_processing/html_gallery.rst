@@ -135,7 +135,7 @@ The Desktop File
 
 The desktop file describes the theme. The information it contains is used in the theme selection page of the tool.
 
-It's an INI file and it looks like this:
+It's an **INI** file and it looks like this:
 
 .. code-block:: ini
 
@@ -152,8 +152,7 @@ It's an INI file and it looks like this:
     Name=Preview's Caption
     Url=preview.png
 
-We use a desktop file format so that entries can be translated. If you look at the desktop file for one of the themes shipped with the tool, you will find
-something like this:
+A desktop file format is used to facilitate entry translations. If you look at the desktop file for one of the themes shipped with the tool, you will find something like this:
 
 .. code-block:: ini
 
@@ -167,7 +166,7 @@ something like this:
 
 The nice thing is that when your theme get integrated into HTML Gallery default themes, translators will internationalize the desktop file for you.
 
-Image preview file will be placed in the root theme folder.
+The **image preview** file used to illustrate the Theme in the wizard will be placed in the root theme folder.
 
 Creating new Theme from Another One
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -249,7 +248,7 @@ We won't explain XSLT here, you should be able to find the documentation you nee
 
 It's worth nothing nevertheless that you can make use of `EXSLT <https://www.exslt.org>`_, a set of extensions to XSLT. In particular, the `exslt:document element <https://www.exslt.org/exsl/elements/document>`_  is extremely useful because it allows you to generate multiple documents from the same file.
 
-HTML Gallery tool imposes no constraint on the organization of HTML files: you can generate one file per image, or only one per collection. One could imagine a theme which would only contains one HTML file and uses JavaScript to show the different images, there is already one theme using frames, you can even generate CSS files on the fly if you want to.
+HTML Gallery tool imposes no constraint on the organization of HTML files. You can generate one file per image, or only one per collection. One could imagine a theme which would only contains one HTML file and uses JavaScript to show the different images, there is already one theme using frames, you can even generate CSS files on the fly if you want to.
 
 About Translations
 ~~~~~~~~~~~~~~~~~~
@@ -285,7 +284,7 @@ For now, the available general **i18n parameters** are:
     - i18nOriginalImage
     - i18nUp
 
-And for the image details are:
+And for the **image properties** they are:
 
     - i18nexifimagemake ("Make")
     - i18nexifimagemodel ("Model")
@@ -303,12 +302,12 @@ And for the image details are:
     - i18nexifphotoaperturevalue ("Aperture Value")
     - i18nexifphotofocallength ("Focal Length")
 
-If you need other i18n parameters, let us know.
+If you need more i18n parameters, please report this whish to the `Project Team <https://www.digikam.org/support/>`_.
 
 Images and CSS Files
 ~~~~~~~~~~~~~~~~~~~~
 
-You are free to use images, CSS files or other files in your theme: just put them in the theme folder and the tool will copy them in the output folder.
+You are free to use images, CSS files or other files in your theme. Just put them in the theme folder and the tool will copy them in the output folder.
 
 Original Images
 ```````````````
@@ -356,8 +355,8 @@ First, you need to declare your parameter. Edit your desktop file and add someth
 
 Now start the tool and select your theme, after pressing next, you should see an option page with a color button initialized to the **#123456** color.
 
-Using the Value of a Parameter
-``````````````````````````````
+Using Parameter Value
+`````````````````````
 
 In :file:`template.xsl`, you can get the value of your parameter like this:
 
@@ -435,7 +434,7 @@ Here is an example:
 String and Caption Parameter Keys
 `````````````````````````````````
 
-A string parameter lets the user enter a single string to set configuration rules for example. A caption parameter lets the user enter a multi-string with spell-checking support to set a description or a title.
+A string parameter lets the user enter a single string to set configuration rules for example. A caption parameter lets the user enter a multi-string with spell-checking support to set a **Description** or a **Title**.
 
 Final Words
 ~~~~~~~~~~~
