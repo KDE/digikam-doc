@@ -171,7 +171,7 @@ The **image preview** file used to illustrate the Theme in the wizard will be pl
 Creating new Theme from Another One
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The easiest way to get started is to copy one theme and modify it. folder can be found usually under **Linux** at :file:`/usr/share/apps/digikam/themes/`. Writing in this folder requires root access, so we will not create our theme there, Instead do the following from a console:
+The easiest way to get started is to copy one theme and modify it. Folder can be found usually under **Linux** at :file:`/usr/share/apps/digikam/themes/`. Writing in this folder requires root access, so we will not create our theme there, instead do the following from a console:
 
 Create a theme folder in your home directory:
 
@@ -300,7 +300,7 @@ And for the **image properties** they are:
     - i18nexifphotoaperturevalue ("Aperture Value")
     - i18nexifphotofocallength ("Focal Length")
 
-If you need more i18n parameters, please report this whish to the `Project Team <https://www.digikam.org/support/>`_.
+If you need more i18n parameters, please report this wish to the `Project Team <https://www.digikam.org/support/>`_.
 
 Images and CSS Files
 ~~~~~~~~~~~~~~~~~~~~
