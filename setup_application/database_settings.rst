@@ -162,7 +162,7 @@ To check whether the database connection works properly, press the **Check Conne
 
 There are some tips and recommendation to obtain the best results with a remote MySQL database server.
 
-With slow network, digiKam hangs a lot of time especially when album contains many items (>1000). This solution relies on network performances. Problem has been reproducible using Wifi connection, for instance. Switching to Ethernet must solves the problem.
+With slow network, digiKam hangs a lot of time especially when album contains many items **(>1,000)**. This solution relies on network performances. Problem has been reproducible using Wifi connection, for instance. Switching to Ethernet must solves the problem.
 
 Also, if you have an enormous collection, you should start the MySQL server with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with using MySQL, you could also change your settings in :file:`my.ini` or :file:`~/.my.cnf` files.
 
@@ -206,13 +206,15 @@ See the resume below to choose the right database type depending of the use-case
 
     See this :ref:`Digital Asset Management chapter <storage_deterioration>` for more details about media and data protection.
 
+    See also this :ref:`Collection Settings chapter <collections_settings>` for more details about the way to configure your collections depending of your storage policy.
+
 .. important::
 
-    If you share the same **Removable** media to host databases and/or collections between different computers, you must have the same king operating syste, the same mount paths everywhere (use symbolic links to revolve paths), and the same digiKam version everywhere to prevent conflicts with database schemes.
+    If you share the same **Removable** media to host databases and/or collections between different computers, you must have the same king operating system, the same mount paths everywhere (use symbolic links to revolve paths), and the same digiKam version everywhere to prevent conflicts with database schemes.
 
     If you use a common **Remote** server to host databases and collections, you must use the same digiKam version everywhere to prevent conflicts with database schemes. Computers running digiKam cannot be used at the same time on collections.
 
-    If you use a common **Remote** server to host collections, as databases are located on computers, different versionq of digiKam can be used and digiKam sessions can run at the same time on collections. Take a care about concurrency access on files metadata if you turned on this option on **Metadata Setup Page**.
+    If you use a common **Remote** server to host collections, as databases are located on computers, different versions of digiKam can be used and digiKam sessions can run at the same time on collections. Take a care about concurrency access on files metadata if you turned on this option on **Metadata Setup Page**.
 
 .. _database_migration:
 
