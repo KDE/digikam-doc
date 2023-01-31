@@ -171,21 +171,21 @@ Database Type Criteria
 
 See the resume below to choose the right database type depending of the use-cases.
 
-    ============== ============== ================ ========================================================================
+    ============== ============== ================ ====================================================================================
     Storage        Type           Amount of Items  Remarks
-    ============== ============== ================ ========================================================================
-    HDD            Sqlite         < 100,000        WAL mandatory.
+    ============== ============== ================ ====================================================================================
+    HDD            Sqlite         < 100,000        **Warning: WAL mandatory.**
     HDD            Mysql-Internal > 100,000
     SDD            Sqlite                          WAL optional.
     SDD            Mysql-Internal
     MVMe           Sqlite                          WAL optional.
     MVMe           Mysql-Internal
-    Removable      Sqlite         < 100,000        WAL mandatory. USB 3.1 minimum with NVMe drive.
-    Removable      Mysql-Internal > 100,000        USB 3.1 minimum with NVMe drive.
-    Network FS     Sqlite                          Storing Sqlite databases files on network file system is **prohibited**.
-    Network FS     Mysql-Internal                  Storing Mysql databases files on network file system is **prohibited**.
+    Removable      Sqlite         < 100,000        **Warning: WAL mandatory. USB 3.1 minimum with NVMe drive.**
+    Removable      Mysql-Internal > 100,000        **Warning: USB 3.1 minimum with NVMe drive.**
+    Network FS     Sqlite                          **Prohibited: Sqlite databases must be stored on local file system.**
+    Network FS     Mysql-Internal                  **Prohibited: Mysql databases must be stored on local file system.**
     Remote         Mysql-Server                    MariaDB server supported. Gigabit Ethernet or higher recommended.
-    ============== ============== ================ ========================================================================
+    ============== ============== ================ ====================================================================================
 
 .. glossary::
 
@@ -199,13 +199,16 @@ See the resume below to choose the right database type depending of the use-case
         Non-Volatile Memory.
 
     Removable
-        External USB HDD/SDD/NVMe.
+        External USB HDD/SDD/NVMe drive.
 
     Network FS
         Network File System mounted locally.
 
     Remote
         Network server as NAS (Network Attached Storage).
+
+    WAL
+        Write-Ahead Lock (Sqlite database only).
 
 .. note::
 
