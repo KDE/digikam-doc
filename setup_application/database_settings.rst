@@ -171,9 +171,9 @@ Database Type Criteria
 
 See the resume below to choose the right database type depending of the use-cases.
 
-    ============== ============== ================ ==================================================================
+    ============== ============== ================ ========================================================================
     Storage        Type           Amount of Items  Remarks
-    ============== ============== ================ ==================================================================
+    ============== ============== ================ ========================================================================
     HDD            Sqlite         < 100,000        WAL mandatory.
     HDD            Mysql-Internal > 100,000
     SDD            Sqlite                          WAL optional.
@@ -182,8 +182,10 @@ See the resume below to choose the right database type depending of the use-case
     MVMe           Mysql-Internal
     Removable      Sqlite         < 100,000        WAL mandatory. USB 3.1 minimum with NVMe drive.
     Removable      Mysql-Internal > 100,000        USB 3.1 minimum with NVMe drive.
-    Remote         Mysql server                    MariaDB server supported. Gigabit Ethernet or higher recommended.
-    ============== ============== ================ ==================================================================
+    Network FS     Sqlite                          Storing Sqlite databases files on network file system is **prohibited**.
+    Network FS     Mysql-Internal                  Storing Mysql databases files on network file system is **prohibited**.
+    Remote         Mysql-Server                    MariaDB server supported. Gigabit Ethernet or higher recommended.
+    ============== ============== ================ ========================================================================
 
 .. glossary::
 
@@ -198,6 +200,9 @@ See the resume below to choose the right database type depending of the use-case
 
     Removable
         External USB HDD/SDD/NVMe.
+
+    Network FS
+        Network File System mounted locally.
 
     Remote
         Network server as NAS (Network Attached Storage).
