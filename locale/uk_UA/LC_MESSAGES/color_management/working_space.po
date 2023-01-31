@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-21 00:51+0000\n"
-"PO-Revision-Date: 2023-01-21 08:37+0200\n"
+"POT-Creation-Date: 2023-01-30 00:50+0000\n"
+"PO-Revision-Date: 2023-01-30 09:19+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -391,7 +391,8 @@ msgstr ""
 "палітрі)."
 
 #: ../../color_management/working_space.rst:79
-msgid "The Color Profile Details of CIE Chromacity Diagram Show in digiKam"
+#| msgid "The Color Profile Details of CIE Chromacity Diagram Show in digiKam"
+msgid "The Color Profile Details of CIE Chromaticity Diagram Show in digiKam"
 msgstr "Подробиці щодо діаграми CIE колірності профілю кольорів у digiKam"
 
 #: ../../color_management/working_space.rst:81
@@ -425,10 +426,17 @@ msgstr ""
 "простору до простору кольорів принтера."
 
 #: ../../color_management/working_space.rst:87
+#| msgid ""
+#| "Mathematically speaking, for a power transform you normalize the RGB "
+#| "numbers and raise the resulting numbers to an appropriate power depending "
+#| "on the respective gammas of the starting and ending color space, then "
+#| "renormalize the results to a new set of RGB numbers. `Lcms <https://www."
+#| "littlecms.com/>`_ does this for you when there is a need to convert from "
+#| "one color space to another in your workflow."
 msgid ""
 "Mathematically speaking, for a power transform you normalize the RGB numbers "
 "and raise the resulting numbers to an appropriate power depending on the "
-"respective gammas of the starting and ending color space, then renormalize "
+"respective gammas of the starting and ending color space, then re-normalize "
 "the results to a new set of RGB numbers. `Lcms <https://www.littlecms.com/"
 ">`_ does this for you when there is a need to convert from one color space "
 "to another in your workflow."
@@ -607,7 +615,8 @@ msgstr ""
 
 #: ../../color_management/working_space.rst:120
 msgid "For images intended for the web, use sRGB."
-msgstr "Для зображень, призначених для інтернету, використовуйте простір sRGB."
+msgstr ""
+"Для зображень, призначених для інтернету, використовуйте простір sRGB."
 
 #: ../../color_management/working_space.rst:122
 msgid ""
@@ -652,29 +661,11 @@ msgstr ""
 "За допомогою засобу керування пакетною обробкою digiKam можна виконати "
 "пакетне перетворення просторів кольорів"
 
-#: ../../color_management/working_space.rst:134
-msgid ""
-"The whys of these bits of advice regarding which working space are beyond "
-"the scope of this manual. See Bruce Lindbloom's excellent website (Info, "
-"Information about RGB Working Spaces) for a visual comparison of the gamut "
-"(array of included colors) of the various working color spaces. See here and "
-"here for a pro and con presentation, respectively, of the merits of using "
-"large gamut working spaces. And while you are on the cambridgeincolour.com "
-"website, check out the tutorial on color management."
-msgstr ""
-"Пояснення щодо цих порад, пов’язаних з вибором робочого простору не є "
-"предметом цього посібника Див чудовий вебсайт Брюса Ліндблума (Bruce "
-"Lindbloom) (Відомості щодо робочих просторів RGB), там ви знайдете візуальне "
-"порівняння палітри (масиву включених кольорів) для різноманітних просторів "
-"кольорів Тут і тут ви знайдете відомості присвячені перевагам та недоліками "
-"використання робочих просторів з широкою палітрою Не полишаючи сайта "
-"cambrideincolour.com, ознайомтеся з посібником щодо керування кольорів."
-
-#: ../../color_management/working_space.rst:137
+#: ../../color_management/working_space.rst:135
 msgid "Gamma Properties"
 msgstr "Властивості гами"
 
-#: ../../color_management/working_space.rst:139
+#: ../../color_management/working_space.rst:137
 msgid ""
 "The gamma of a color profile dictates what power transform needs to take "
 "place to properly convert from an image's embedded color profile (perhaps "
@@ -706,7 +697,7 @@ msgstr ""
 "бажаного робочого простору, якщо у профілі фотоапарата не використано "
 "значення гама=1.)"
 
-#: ../../color_management/working_space.rst:141
+#: ../../color_management/working_space.rst:139
 msgid ""
 "One practical consequence of the gamma of a working space is that the higher "
 "the gamma, the more discrete tones are available for editing in the shadows, "
@@ -720,7 +711,7 @@ msgid ""
 "available tonal gradations in the highlights."
 msgstr " "
 
-#: ../../color_management/working_space.rst:143
+#: ../../color_management/working_space.rst:141
 msgid ""
 "Theory aside, in the real world of real image editing, almost everyone uses "
 "working spaces with either a gamma of either 1.8 or 2.2. sRGB and L*-RGB are "
@@ -731,7 +722,7 @@ msgstr ""
 "коефіцієнтом контрастності (гамою) зі значеннями 1,8 або 2,2. sRGB і L*-RGB "
 "є двома єдиними помітними винятками."
 
-#: ../../color_management/working_space.rst:145
+#: ../../color_management/working_space.rst:143
 msgid ""
 "sRGB uses a transfer function close to that of a CRT (and thus not "
 "necessarily relevant to image editing or to display on an LCD). Unlike most "
@@ -754,7 +745,7 @@ msgstr ""
 "призводить до потреби у складних математичних обчисленнях під час обробки "
 "зображення."
 
-#: ../../color_management/working_space.rst:147
+#: ../../color_management/working_space.rst:145
 msgid ""
 "L*-RGB uses as its transfer function the same perceptually uniform transfer "
 "function as the CIELab color space. *When storing colors in limited "
@@ -766,7 +757,7 @@ msgstr ""
 "кольорів з обмеженими значеннями точності» за допомогою відчуттєво "
 "однорідної функції перетворення «можна покращити відтворення тонів."
 
-#: ../../color_management/working_space.rst:149
+#: ../../color_management/working_space.rst:147
 msgid ""
 "In addition to gamma=1.8 and gamma=2.2, the only other gamma for a working "
 "space that gets much mention or use is linear gamma, or gamma=1.0. As noted "
@@ -784,7 +775,7 @@ msgstr ""
 "пов’язаних з гамою, під час редагування звичайних зображень з низьким "
 "динамічним діапазоном."
 
-#: ../../color_management/working_space.rst:151
+#: ../../color_management/working_space.rst:149
 msgid ""
 "**Gamma-induced errors** is a topic outside the scope of this manual but "
 "it's commonly-encountered that gamma-induced error that is caused by "
@@ -803,12 +794,20 @@ msgstr ""
 "обчислюються за допомогою попереднього перетворення всіх відповідних значень "
 "до їх лінійних відповідників."
 
-#: ../../color_management/working_space.rst:153
+#: ../../color_management/working_space.rst:151
+#| msgid ""
+#| "Unfortunately and despite their undeniable mathematical advantages, "
+#| "linear gamma working spaces have so few tones in the shadows that they "
+#| "are impossible to use for editing if one is working in 8-bits, and still "
+#| "problematic at 16-bits. When the day comes when we are all doing our "
+#| "editing on 32-bit files produced by our HDR cameras on our personal "
+#| "supercomputers, We can predict that we will all be using working spaces "
+#| "with gamma=1."
 msgid ""
 "Unfortunately and despite their undeniable mathematical advantages, linear "
 "gamma working spaces have so few tones in the shadows that they are "
-"impossible to use for editing if one is working in 8-bits, and still "
-"problematic at 16-bits. When the day comes when we are all doing our editing "
+"impossible to use for editing if one is working in 8-bit, and still "
+"problematic at 16-bit. When the day comes when we are all doing our editing "
 "on 32-bit files produced by our HDR cameras on our personal supercomputers, "
 "We can predict that we will all be using working spaces with gamma=1."
 msgstr ""
@@ -821,18 +820,30 @@ msgstr ""
 "суперкомп’ютерах, можна бути певним, ми користуватимемося робочими "
 "просторами з гама=1."
 
-#: ../../color_management/working_space.rst:156
-msgid "Image Tonal Steps and Gamut Size"
-msgstr "Тональні кроки зображення і розмір палітри"
+#: ../../color_management/working_space.rst:154
+#| msgid "Image Tonal Steps and Gamut Size"
+msgid "Tonal Steps and Gamut Size"
+msgstr "Тональні кроки і розмір палітри"
 
-#: ../../color_management/working_space.rst:158
+#: ../../color_management/working_space.rst:156
+#| msgid ""
+#| "How many discrete tonal steps are there in a digital image? In an 8-bit "
+#| "image, you have 256 tonal steps from solid black to solid white. In a 16-"
+#| "bit image theoretically you have 65536 steps. But remember, those 16-bits "
+#| "started out as either 10 bits (=1024 steps), 12 bits (=4096 steps), or 14 "
+#| "bits (=16384 steps) as produced by the camera's A-to-D converter - the "
+#| "extra bits to reach 16-bits start out as just padding. The available "
+#| "tones are not distributed evenly from light to dark. In linear gamma mode "
+#| "(as the camera sensor sees things), there's a whole lot more tones in the "
+#| "highlights than in the shadows. Hence the advice, if you shoot RAW, to "
+#| "expose to the right but don't blow the highlights."
 msgid ""
 "How many discrete tonal steps are there in a digital image? In an 8-bit "
 "image, you have 256 tonal steps from solid black to solid white. In a 16-bit "
-"image theoretically you have 65536 steps. But remember, those 16-bits "
-"started out as either 10 bits (=1024 steps), 12 bits (=4096 steps), or 14 "
-"bits (=16384 steps) as produced by the camera's A-to-D converter - the extra "
-"bits to reach 16-bits start out as just padding. The available tones are not "
+"image theoretically you have 65536 steps. But remember, those 16-bit started "
+"out as either 10-bit (=1024 steps), 12-bit (=4096 steps), or 14-bit (=16384 "
+"steps) as produced by the camera's A-to-D converter - the extra bits to "
+"reach 16-bit start out as just padding. The available tones are not "
 "distributed evenly from light to dark. In linear gamma mode (as the camera "
 "sensor sees things), there's a whole lot more tones in the highlights than "
 "in the shadows. Hence the advice, if you shoot RAW, to expose to the right "
@@ -851,7 +862,7 @@ msgstr ""
 "цифрового негатива, обирайте правильну експозицію, але так, щоб світлі "
 "ділянки не було переекспоновано."
 
-#: ../../color_management/working_space.rst:160
+#: ../../color_management/working_space.rst:158
 msgid ""
 "One major consideration in choosing a working space is that some working "
 "spaces are bigger than others, meaning they cover more of the visible "
@@ -871,7 +882,7 @@ msgstr ""
 "фотоапарата у простір з’єднання з дуже широкою палітрою та наступного "
 "перетворення у вибраний вами робочий простір."
 
-#: ../../color_management/working_space.rst:162
+#: ../../color_management/working_space.rst:160
 msgid ""
 "But keeping all the possible colors comes at a price, as explained below. "
 "And it seems that any given digital image likely only contains a small "
@@ -885,7 +896,7 @@ msgstr ""
 "ваш фотоапарат. Ця мала підмножина з легкістю вкладається у один з менших "
 "робочих просторів."
 
-#: ../../color_management/working_space.rst:164
+#: ../../color_management/working_space.rst:162
 msgid ""
 "Using a very large working space means that editing your image (applying "
 "curves, increasing saturation, etc.) can easily produce colors that your "
@@ -906,7 +917,7 @@ msgstr ""
 "поза палітрою (вони можуть бути навіть суто уявними), на простір кольорів "
 "вашого принтера, який має набагато вужчу палітру. "
 
-#: ../../color_management/working_space.rst:166
+#: ../../color_management/working_space.rst:164
 msgid ""
 "This remapping process will lead to inaccurate colors and loss of saturation "
 "at best. Even worse, the remapping can easily lead to banding (posterization "
@@ -931,14 +942,14 @@ msgstr ""
 "простору виводу даних. Отже, якщо ви оберете робочий простір з широкою "
 "гамою, переконайтеся, що ви редагуєте саме 16-бітове зображення."
 
-#: ../../color_management/working_space.rst:173
+#: ../../color_management/working_space.rst:171
 msgid ""
 "The digiKam Color Profile Properties Dialog Displaying BestRGB Information"
 msgstr ""
 "Вікно властивостей профілю кольорів digiKam, у якому показано відомості щодо "
 "BestRGB"
 
-#: ../../color_management/working_space.rst:175
+#: ../../color_management/working_space.rst:173
 msgid ""
 "To summarize, large gamut working spaces, improperly handled, can lead to "
 "lost information on output. Small gamut working spaces can clip information "
@@ -950,11 +961,11 @@ msgstr ""
 "обрізання даних на вході. Використання робочих просторів з палітрою середніх "
 "розмірів може бути «золотою» серединою."
 
-#: ../../color_management/working_space.rst:177
+#: ../../color_management/working_space.rst:175
 msgid "Here are some oft-repeated bits of advice on choosing a working space:"
 msgstr "Ось декілька з основних порад щодо вибору робочого простору:"
 
-#: ../../color_management/working_space.rst:179
+#: ../../color_management/working_space.rst:177
 msgid ""
 "For images intended for the web, use (or at least convert the final image "
 "to) sRGB."
@@ -962,7 +973,7 @@ msgstr ""
 "Для зображень, призначених для інтернету, використовуйте (або принаймні "
 "перетворіть остаточне зображення) простір sRGB."
 
-#: ../../color_management/working_space.rst:181
+#: ../../color_management/working_space.rst:179
 msgid ""
 "For the most accuracy in your image editing (that is, making the most of "
 "your limited *bits* with the least risk of banding or clipping when you "
@@ -978,7 +989,7 @@ msgstr ""
 "який ви фотографували плюс невеличкий додатковий простір для тих кольорів, "
 "які ви створите під час редагування."
 
-#: ../../color_management/working_space.rst:183
+#: ../../color_management/working_space.rst:181
 msgid ""
 "If you are working in 8-bits rather than 16-bits, choose a smaller rather "
 "than a larger working space to avoid clipping and banding."
@@ -986,7 +997,7 @@ msgstr ""
 "Якщо ви працюєте з 8-бітовими кольорами, а не з 16-бітовими, оберіть вужчий "
 "робочий простір, щоб уникнути стинання або появи смуг на зображенні."
 
-#: ../../color_management/working_space.rst:185
+#: ../../color_management/working_space.rst:183
 msgid ""
 "For archival purposes, convert your RAW file to a 16-bit TIFF with a large "
 "gamut working space to avoid loosing color information. Then convert this "
@@ -998,6 +1009,24 @@ msgstr ""
 "уникнути втрати даних щодо кольору. Потім перетворіть цей архівний TIFF у "
 "вибраний вами робочий простір з палітрою середнього або великого розміру "
 "(перетворений робочий TIFF, звичайно ж, слід зберегти з іншою назвою)."
+
+#~ msgid ""
+#~ "The whys of these bits of advice regarding which working space are beyond "
+#~ "the scope of this manual. See Bruce Lindbloom's excellent website (Info, "
+#~ "Information about RGB Working Spaces) for a visual comparison of the "
+#~ "gamut (array of included colors) of the various working color spaces. See "
+#~ "here and here for a pro and con presentation, respectively, of the merits "
+#~ "of using large gamut working spaces. And while you are on the "
+#~ "cambridgeincolour.com website, check out the tutorial on color management."
+#~ msgstr ""
+#~ "Пояснення щодо цих порад, пов’язаних з вибором робочого простору не є "
+#~ "предметом цього посібника Див чудовий вебсайт Брюса Ліндблума (Bruce "
+#~ "Lindbloom) (Відомості щодо робочих просторів RGB), там ви знайдете "
+#~ "візуальне порівняння палітри (масиву включених кольорів) для "
+#~ "різноманітних просторів кольорів Тут і тут ви знайдете відомості "
+#~ "присвячені перевагам та недоліками використання робочих просторів з "
+#~ "широкою палітрою Не полишаючи сайта cambrideincolour.com, ознайомтеся з "
+#~ "посібником щодо керування кольорів."
 
 #~| msgid "The **Gamut** to define the rage of colors of the profile."
 #~ msgid "The **Gamut** to define the range of colors of the profile."

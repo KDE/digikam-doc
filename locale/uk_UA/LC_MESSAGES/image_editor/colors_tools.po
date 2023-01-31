@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-25 00:50+0000\n"
-"PO-Revision-Date: 2023-01-25 08:40+0200\n"
+"POT-Creation-Date: 2023-01-30 00:50+0000\n"
+"PO-Revision-Date: 2023-01-30 09:19+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -64,6 +64,15 @@ msgstr ""
 
 #: ../../image_editor/colors_tools.rst:27
 msgid ""
+"When you re-encoding an image from 8-bit to 16-bit, uniformly distributed "
+"noise is introduced to prevent histogram holes due to colors range expansion."
+msgstr ""
+"При перекодуванні зображення з 8-бітового на 16-бітове на зображенні"
+" з'явиться однорідно розподілений шум, як наслідок заповнення дірок у"
+" гістограмі через розширення діапазону кольорів."
+
+#: ../../image_editor/colors_tools.rst:31
+msgid ""
 "HEIF, AVIF, JPX formats can encode as 8 bits or 12 bit. WEBP is limited to 8 "
 "bits. These limitations can change in the future."
 msgstr ""
@@ -71,11 +80,11 @@ msgstr ""
 "режимах. WEBP обмежено 8-бітовим режимом. Ці обмеження може бути змінено у "
 "майбутньому."
 
-#: ../../image_editor/colors_tools.rst:32
+#: ../../image_editor/colors_tools.rst:36
 msgid "Color Management"
 msgstr "Керування кольорами"
 
-#: ../../image_editor/colors_tools.rst:34
+#: ../../image_editor/colors_tools.rst:38
 msgid ""
 "This tool allows to convert image from one color space to another one. Its "
 "use is the change and assignment of color profiles to an image. For detailed "
@@ -89,15 +98,15 @@ msgstr ""
 "керування кольорами <color_management>` та :ref:`параметрів керування "
 "кольорами <cm_settings>`."
 
-#: ../../image_editor/colors_tools.rst:40
+#: ../../image_editor/colors_tools.rst:44
 msgid "The Image Editor to Change Image Color Space"
 msgstr "Зміна простору кольорів зображення у редакторі зображень"
 
-#: ../../image_editor/colors_tools.rst:45
+#: ../../image_editor/colors_tools.rst:49
 msgid "Auto-Correction"
 msgstr "Автоматичне виправлення"
 
-#: ../../image_editor/colors_tools.rst:47
+#: ../../image_editor/colors_tools.rst:51
 msgid ""
 "This tool set provides five automatic correction levels that will improve an "
 "image in most cases. Use this tool before going into the more involved "
@@ -107,7 +116,7 @@ msgstr ""
 "зазвичай, покращують вигляд зображення. Скористайтеся цим інструментом до "
 "застосування інших виправлень, які буде виконано вручну."
 
-#: ../../image_editor/colors_tools.rst:49
+#: ../../image_editor/colors_tools.rst:53
 msgid ""
 "The **Auto Levels**, **Normalize**, **Equalize**, **Stretch Contrast**, and "
 "**Auto Exposure** available from :menuselection:`Color --> Auto-Correction..."
@@ -123,7 +132,7 @@ msgstr ""
 "виправлення кольорів на вашій фотографії, вам варто ознайомитися з "
 "результатами застосування кожного з них."
 
-#: ../../image_editor/colors_tools.rst:51
+#: ../../image_editor/colors_tools.rst:55
 msgid ""
 "**Auto Levels**: This option maximizes the tonal range in the Red, Green, "
 "and Blue channels. It searches the image shadow and highlight limit values "
@@ -134,7 +143,7 @@ msgstr ""
 "зображення і зібрано граничні значення, а потім налаштовано Червоний, "
 "Зелений і Синій канали на повний діапазон гістограми."
 
-#: ../../image_editor/colors_tools.rst:53
+#: ../../image_editor/colors_tools.rst:57
 msgid ""
 "**Normalize**: this method scales brightness values across the selected "
 "image so that the darkest point becomes black, and the brightest point "
@@ -147,7 +156,7 @@ msgstr ""
 "наскільки це дозволено без зміни відтінку. Ця операція часто є «магічним "
 "виправленням» для зображень, які є тьмяними або розмитими."
 
-#: ../../image_editor/colors_tools.rst:55
+#: ../../image_editor/colors_tools.rst:59
 msgid ""
 "**Equalize**: this method adjusts the brightness of colors across the "
 "selected image so that the histogram for the Value channel is as flat as "
@@ -165,7 +174,7 @@ msgstr ""
 "інших випадках ви отримаєте замість зображення мотлох. Ця операція є дуже "
 "потужною, яка може як спрацювати, так і знищити зображення."
 
-#: ../../image_editor/colors_tools.rst:57
+#: ../../image_editor/colors_tools.rst:61
 msgid ""
 "**Stretch Contrast**: this method enhances the contrast and brightness of "
 "the RGB values of an image by stretching the lowest and highest values to "
@@ -180,7 +189,7 @@ msgstr ""
 "вилинялих фотографіях. Використання цього пункту добре зарекомендувало себе "
 "у виправленні знімків, виконаних з помилками."
 
-#: ../../image_editor/colors_tools.rst:59
+#: ../../image_editor/colors_tools.rst:63
 msgid ""
 "**Auto Exposure**: This option enhances the contrast and brightness of the "
 "RGB values of an image to calculate optimal exposition and black level using "
@@ -190,7 +199,7 @@ msgstr ""
 "RGB зображення шляхом обчислення оптимальної експозиції і рівня чорного з "
 "використанням властивостей гістограми зображення."
 
-#: ../../image_editor/colors_tools.rst:61
+#: ../../image_editor/colors_tools.rst:65
 msgid ""
 "The results of any adjustments you make will not be remembered until you "
 "save your photograph."
@@ -198,15 +207,16 @@ msgstr ""
 "Результати будь-якого виконаного вами коригування не буде записано до того "
 "часу, коли ви вирішите зберегти зображення."
 
-#: ../../image_editor/colors_tools.rst:67
+#: ../../image_editor/colors_tools.rst:71
 msgid "The Image Editor to Process Auto Color Corrections"
 msgstr "Обробка автоматичного виправлення кольорів у редакторі зображень"
 
-#: ../../image_editor/colors_tools.rst:70
-msgid "Black and White Conversion Filters"
-msgstr "Фільтри перетворення на чорно-біле"
+#: ../../image_editor/colors_tools.rst:74
+#| msgid "Black and White Conversion Filters"
+msgid "Black and White Conversions"
+msgstr "Перетворення на чорно-біле"
 
-#: ../../image_editor/colors_tools.rst:72
+#: ../../image_editor/colors_tools.rst:76
 msgid ""
 "Black and White photography has always been fascinating in its abstraction "
 "capability. With the advent of digital photography, Black and White has "
@@ -223,11 +233,12 @@ msgstr ""
 "передбачено набір фільтрів, що імітують ефекти застарілих касет з плівкою. "
 "Цей фільтр також здатен імітувати традиційні матеріали інфрачервоної плівки."
 
-#: ../../image_editor/colors_tools.rst:77
-msgid "The Legacy Black and White Films Emulation"
-msgstr "Імітація давніх чорно-білих плівок"
+#: ../../image_editor/colors_tools.rst:81
+#| msgid "The Legacy Black and White Films Emulation"
+msgid "Legacy Films Emulation"
+msgstr "Імітація давніх плівок"
 
-#: ../../image_editor/colors_tools.rst:79
+#: ../../image_editor/colors_tools.rst:83
 msgid ""
 "digiKam comes with a couple of black & white filters that you can use on "
 "your photographs. Under the :menuselection:`Color --> Black & White...` menu "
@@ -256,11 +267,11 @@ msgstr ""
 "кривої), інструментом налаштування контрастності та індикатором надмірної "
 "експозиції, призначеними для покращення вигляду чорно-білого зображення."
 
-#: ../../image_editor/colors_tools.rst:85
+#: ../../image_editor/colors_tools.rst:89
 msgid "The Image Editor to Emulate Black and White Films"
 msgstr "Імітація чорно-білої плівки у редакторі зображень"
 
-#: ../../image_editor/colors_tools.rst:87
+#: ../../image_editor/colors_tools.rst:91
 msgid ""
 "With **Film** setting, a specific settings allows to emulate a number of "
 "famous Black and White photographic films as:"
@@ -268,15 +279,15 @@ msgstr ""
 "Для параметра **Плівка** передбачено пункти призначені для імітації "
 "декількох відомих чорно-білих фотографічних плівок:"
 
-#: ../../image_editor/colors_tools.rst:89
+#: ../../image_editor/colors_tools.rst:93
 msgid "**Generic**."
 msgstr "**Загальні**."
 
-#: ../../image_editor/colors_tools.rst:90
+#: ../../image_editor/colors_tools.rst:94
 msgid "**Agfa**: 200X, Pan 25, Pan 100, Pan 400."
 msgstr "**Agfa**: 200X, Pan 25, Pan 100, Pan 400."
 
-#: ../../image_editor/colors_tools.rst:91
+#: ../../image_editor/colors_tools.rst:95
 msgid ""
 "**Ilford**: Delta 100, Delta 400, Delta 400 Pro 3200, FP4 Plus, HP5 Plus, "
 "PanF Plus, XP2 Super."
@@ -284,11 +295,11 @@ msgstr ""
 "**Ilford**: Delta 100, Delta 400, Delta 400 Pro 3200, FP4 Plus, HP5 Plus, "
 "PanF Plus, XP2 Super."
 
-#: ../../image_editor/colors_tools.rst:92
+#: ../../image_editor/colors_tools.rst:96
 msgid "**Kodak**: Tmax 100, Tmax 400, TriX."
 msgstr "**Kodak**: Tmax 100, Tmax 400, TriX."
 
-#: ../../image_editor/colors_tools.rst:94
+#: ../../image_editor/colors_tools.rst:98
 msgid ""
 "With **Lens Filters** setting, a color filter can be simulated as placed on "
 "front of lens:"
@@ -296,13 +307,13 @@ msgstr ""
 "За допомогою параметра **Фільтри об'єктива** фільтр кольорів можна імітувати "
 "як розташований над об'єктивом:"
 
-#: ../../image_editor/colors_tools.rst:96
+#: ../../image_editor/colors_tools.rst:100
 msgid "**No Lens Filter**: simulate black & white neutral film exposure."
 msgstr ""
 "**Без лінзового фільтра**: імітація експозиції чорно-білої нейтральної "
 "плівки."
 
-#: ../../image_editor/colors_tools.rst:97
+#: ../../image_editor/colors_tools.rst:101
 msgid ""
 "**Green Filter**: simulates black & white film exposure with green lens "
 "filter. This comes good with all scenic images, especially suited for "
@@ -313,7 +324,7 @@ msgstr ""
 "особливо пасує для портретів на тлі неба (подібний до зеленого фільтра 004 "
 "Cokin(tm))."
 
-#: ../../image_editor/colors_tools.rst:98
+#: ../../image_editor/colors_tools.rst:102
 msgid ""
 "**Orange Filter**: simulates black & white film exposure with an orange lens "
 "filter. This will enhance landscapes, marine scenes and aerial photography "
@@ -323,7 +334,7 @@ msgstr ""
 "жовтогарячим фільтром об’єктива. Покращує вигляд пейзажів, зображень моря та "
 "аерофотозйомки (подібний до жовтогарячого фільтра 002 Cokin(tm))."
 
-#: ../../image_editor/colors_tools.rst:99
+#: ../../image_editor/colors_tools.rst:103
 msgid ""
 "**Red Filter**: simulates black & white film exposure with red lens filter. "
 "Creates dramatic sky effects and can simulate moonlight scenes in daytime "
@@ -334,7 +345,7 @@ msgstr ""
 "місячним світлом для знімків, виконаних вдень (подібний до червоного фільтра "
 "003 Cokin(tm))."
 
-#: ../../image_editor/colors_tools.rst:100
+#: ../../image_editor/colors_tools.rst:104
 msgid ""
 "**Yellow Filter**: simulates black & white film exposure with yellow lens "
 "filter. Most natural tonal correction, improves contrast. Ideal for "
@@ -344,13 +355,13 @@ msgstr ""
 "об’єктива. Найприродніше виправлення тонів, покращує контрастність. "
 "Ідеальний для пейзажів (подібний до зеленого фільтра 001 Cokin(tm))."
 
-#: ../../image_editor/colors_tools.rst:102
+#: ../../image_editor/colors_tools.rst:106
 msgid "With **Tone** setting, a color tint can be applied to the image:"
 msgstr ""
 "За допомогою параметра **Відтінок** до зображення можна застосувати відтінок "
 "кольору:"
 
-#: ../../image_editor/colors_tools.rst:104
+#: ../../image_editor/colors_tools.rst:108
 msgid ""
 "**Sepia Filter**: gives a warm highlight and mid-tone while adding a bit of "
 "coolness to the shadows - very similar to the process of bleaching a print "
@@ -363,13 +374,13 @@ msgstr ""
 "для фотографій часів наших бабусь). Подібний до оливково-брунатного фільтра "
 "005 Cokin(tm)."
 
-#: ../../image_editor/colors_tools.rst:105
+#: ../../image_editor/colors_tools.rst:109
 msgid "**Brown Filter**: similar to Sepia Tone filter, but less pronounced."
 msgstr ""
 "**Коричневий фільтр**: подібний до фільтра оливково-брунатного кольору, але "
 "менш виразний."
 
-#: ../../image_editor/colors_tools.rst:106
+#: ../../image_editor/colors_tools.rst:110
 msgid ""
 "**Cold Filter**: start subtle and replicate printing on a cold tone black & "
 "white paper such as a bromide enlarging paper."
@@ -378,7 +389,7 @@ msgstr ""
 "тонах чорного і білого, так як під час друку на бромідному збільшувальному "
 "папері."
 
-#: ../../image_editor/colors_tools.rst:107
+#: ../../image_editor/colors_tools.rst:111
 msgid ""
 "**Selenium Filter**: effect that replicates traditional selenium chemical "
 "toning done in the darkroom."
@@ -386,7 +397,7 @@ msgstr ""
 "**Селеновий фільтр**: цей ефект відтворює традиційне селенове хімічне "
 "тонування, проведене у темній кімнаті."
 
-#: ../../image_editor/colors_tools.rst:108
+#: ../../image_editor/colors_tools.rst:112
 msgid ""
 "**Platinum Filter**: effect that replicates traditional platinum chemical "
 "toning done in the darkroom."
@@ -394,11 +405,11 @@ msgstr ""
 "**Платиновий фільтр**: цей ефект відтворює традиційне платинове хімічне "
 "тонування, проведене у темній кімнаті."
 
-#: ../../image_editor/colors_tools.rst:113
+#: ../../image_editor/colors_tools.rst:117
 msgid "Simulate Infrared Film"
 msgstr "Імітація інфрачервоної плівки"
 
-#: ../../image_editor/colors_tools.rst:115
+#: ../../image_editor/colors_tools.rst:119
 msgid ""
 "Simulating classical infrared film material (the effect is rendered in black "
 "and white) is an interesting alienation effect that is even stronger and "
@@ -422,11 +433,11 @@ msgstr ""
 "світністю. Снігові пейзажі, перетворені за допомогою цього фільтра, "
 "набувають по-справжньому драматичного вигляду."
 
-#: ../../image_editor/colors_tools.rst:121
+#: ../../image_editor/colors_tools.rst:125
 msgid "The Image Editor to Emulate Infrared Films"
 msgstr "Імітація інфрачервоної плівки у редакторі зображень"
 
-#: ../../image_editor/colors_tools.rst:123
+#: ../../image_editor/colors_tools.rst:127
 msgid ""
 "The filter tries to reproduce the famous Ilford(tm) SFX and Kodak Tmax "
 "infrared film series. These films has a sensitivity range of 200-800 ISO:"
@@ -434,15 +445,15 @@ msgstr ""
 "У фільтрі виконано спробу відтворити знамениту інфрачервону плівку Ilford™ "
 "SFX та Kodak Tmax. Ця плівка має діапазон чутливості у 200-800 ISO."
 
-#: ../../image_editor/colors_tools.rst:125
+#: ../../image_editor/colors_tools.rst:129
 msgid "**Ilford**: SPX 200, SPX 400, SPX 800."
 msgstr "**Ilford**: SPX 200, SPX 400, SPX 800."
 
-#: ../../image_editor/colors_tools.rst:126
+#: ../../image_editor/colors_tools.rst:130
 msgid "**Kodak**: HIE."
 msgstr "**Kodak**: HIE."
 
-#: ../../image_editor/colors_tools.rst:130
+#: ../../image_editor/colors_tools.rst:134
 msgid ""
 "Because the filter mixes color channels to reproduce infrared film (with "
 "emphasis on green channel), one can not simulate infrared effect from Black "
@@ -453,11 +464,11 @@ msgstr ""
 "неможлива для чорно-білих фотографій, оскільки у них не міститься даних про "
 "кольори зображення."
 
-#: ../../image_editor/colors_tools.rst:135
+#: ../../image_editor/colors_tools.rst:139
 msgid "Inverting Colors"
 msgstr "Інвертування кольорів"
 
-#: ../../image_editor/colors_tools.rst:137
+#: ../../image_editor/colors_tools.rst:141
 msgid ""
 "In case of digitalize analog film with a scanner, color can appear inverted "
 "compared to the reality. This tool allows to reverse the colors into their "
@@ -469,7 +480,7 @@ msgstr ""
 "інструмента можна обернути кольори до їхніх відповідних `кольорів доповнення "
 "<https://en.wikipedia.org/wiki/Complementary_colors>`_."
 
-#: ../../image_editor/colors_tools.rst:139
+#: ../../image_editor/colors_tools.rst:143
 msgid ""
 "Invert color to a complementary color (or opposite color of color on the "
 "color wheel), consist to have cyan as the opposite color of red, yellow as "
@@ -487,11 +498,11 @@ msgstr ""
 "було перетворено на негатив. Темні ділянки стануть яскравими, а яскраві — "
 "темними. Відтінки буде замінено їхніми кольорами доповнення."
 
-#: ../../image_editor/colors_tools.rst:144
+#: ../../image_editor/colors_tools.rst:148
 msgid "Simulate Negative Film"
 msgstr "Імітація негатива плівки"
 
-#: ../../image_editor/colors_tools.rst:146
+#: ../../image_editor/colors_tools.rst:150
 msgid ""
 "While digiKam is first and foremost an application for processing and "
 "organizing digital photos, it also features tools for working with `film "
@@ -502,7 +513,7 @@ msgstr ""
 "`плівковими негативами <https://en.wikipedia.org/wiki/"
 "Negative_(photography)>`_."
 
-#: ../../image_editor/colors_tools.rst:148
+#: ../../image_editor/colors_tools.rst:152
 msgid ""
 "Before you can process negatives in digiKam, you need to digitize them. If "
 "you don’t have access to a film scanner or a lab that offers film scanning "
@@ -519,7 +530,7 @@ msgstr ""
 "digitizing-your-film-using-your-dslr/>`_). Нижче ми припускатимемо, що ви "
 "скористалися саме останнім способом оцифровування плівкових негативів."
 
-#: ../../image_editor/colors_tools.rst:150
+#: ../../image_editor/colors_tools.rst:154
 msgid ""
 "Open a RAW file containing a film negative in the editor. Crop the original "
 "file and apply lens correction if necessary. Choose then :menuselection:"
@@ -548,11 +559,11 @@ msgstr ""
 "ще не виправлено, ви можете скоригувати їх за допомогою інструмента :"
 "menuselection:`Кольори --> Баланс кольорів`."
 
-#: ../../image_editor/colors_tools.rst:156
+#: ../../image_editor/colors_tools.rst:160
 msgid "The Image Editor Tool to Simulate Negative Film"
 msgstr "Інструмент редактора зображень для імітації негатива плівки"
 
-#: ../../image_editor/colors_tools.rst:158
+#: ../../image_editor/colors_tools.rst:162
 msgid ""
 "The **Invert** feature in combination with an **Auto-Correction** preset "
 "provides a quick-and-dirty way of converting negatives, but digiKam has "
@@ -580,7 +591,7 @@ msgstr ""
 "**Баланс кольорів**. Якщо використаної плівки немає у списку, ви можете "
 "скористатися резервним варіантом – профілем **Нейтральний**."
 
-#: ../../image_editor/colors_tools.rst:160
+#: ../../image_editor/colors_tools.rst:164
 msgid ""
 "Although choosing the matching film profile may yield a better result, the "
 "converted image may still require some work. In most cases, you may need to "
@@ -598,11 +609,11 @@ msgstr ""
 "варто зробити яскравішим за допомогою коригування значень на повзунках "
 "**Експозиція** і **Гама**."
 
-#: ../../image_editor/colors_tools.rst:165
+#: ../../image_editor/colors_tools.rst:169
 msgid "Colors Balance"
 msgstr "Баланс кольорів"
 
-#: ../../image_editor/colors_tools.rst:167
+#: ../../image_editor/colors_tools.rst:171
 msgid ""
 "Digital cameras often have problems with lighting conditions and it is not "
 "unusual to want to correct the color contrast and brightness of a "
@@ -620,11 +631,11 @@ msgstr ""
 "параметрів натисніть кнопку **Гаразд**, щоб наказати програмі застосувати їх "
 "до знімка."
 
-#: ../../image_editor/colors_tools.rst:173
+#: ../../image_editor/colors_tools.rst:177
 msgid "The Image Editor Colors Balance Tool"
 msgstr "Інструмент балансу кольорів редактора зображень"
 
-#: ../../image_editor/colors_tools.rst:175
+#: ../../image_editor/colors_tools.rst:179
 msgid ""
 "If your image is washed out (which can easily happen when you take images in "
 "bright light) try the **Hue/Saturation/Lightness** tool, which gives you "
@@ -644,7 +655,7 @@ msgstr ""
 "інструменті **Яскравість/Контрастність/Гама**, але формується з іншої "
 "комбінації червоного, зеленого і синього каналів."
 
-#: ../../image_editor/colors_tools.rst:177
+#: ../../image_editor/colors_tools.rst:181
 msgid ""
 "When you take images in low light conditions, you could get the opposite "
 "problem: too much saturation. In this case the **Hue/Saturation/Lightness** "
@@ -661,11 +672,11 @@ msgstr ""
 "встановлення потрібних вам параметрів натисніть кнопку «Гаразд», щоб ці "
 "параметри набули чинності."
 
-#: ../../image_editor/colors_tools.rst:182
+#: ../../image_editor/colors_tools.rst:186
 msgid "Adjust Curves"
 msgstr "Виправити криві"
 
-#: ../../image_editor/colors_tools.rst:184
+#: ../../image_editor/colors_tools.rst:188
 msgid ""
 "The digiKam Adjust Curves is a tool to non-linearly adjust luminosity "
 "graduation and color channels."
@@ -673,7 +684,7 @@ msgstr ""
 "Інструмент digiKam «Виправлення кривих» є інструментом для нелінійного "
 "виправлення рівня освітленості і каналів кольорів."
 
-#: ../../image_editor/colors_tools.rst:186
+#: ../../image_editor/colors_tools.rst:190
 msgid ""
 "The Adjust Curves tool is the most sophisticated tool available to adjust "
 "the images' tonality. Start it from the :menuselection:`Color --> Curves "
@@ -709,7 +720,7 @@ msgstr ""
 "normankoren.com/digital_tonality.html>`_. Скористайтеся інструментом "
 "виправлення кривих для виконати подібні дії!"
 
-#: ../../image_editor/colors_tools.rst:188
+#: ../../image_editor/colors_tools.rst:192
 msgid ""
 "This tool provides visual curves to modify the intensity values of the "
 "active layer displayed as a histogram non-linearily. In **Curve smooth "
@@ -728,11 +739,11 @@ msgstr ""
 "перегляду зображення, розташованій ліворуч. Перегляд можна налаштувати "
 "натисканням піктограм, розташованих вгорі ліворуч."
 
-#: ../../image_editor/colors_tools.rst:194
+#: ../../image_editor/colors_tools.rst:198
 msgid "The Image Editor Adjust Curves Tool"
 msgstr "Інструмент коригування кривих редактора зображень digiKam"
 
-#: ../../image_editor/colors_tools.rst:196
+#: ../../image_editor/colors_tools.rst:200
 msgid ""
 "To the left, half of the original and the target preview image is shown. The "
 "target preview is updated dynamically according to the widget settings. On "
@@ -743,7 +754,7 @@ msgstr ""
 "автоматично оновлено відповідно до параметрів віджетів. За допомогою правої "
 "частини ви можете змінити такі параметри:"
 
-#: ../../image_editor/colors_tools.rst:198
+#: ../../image_editor/colors_tools.rst:202
 msgid ""
 "Modify **Channel**: with this combo box you can select the specific channel "
 "to be modified by the tool:"
@@ -751,32 +762,33 @@ msgstr ""
 "**Канал**: за допомогою цього спадного списку ви можете вказати окремий "
 "канал, який буде змінено за допомогою цього інструменту:"
 
-#: ../../image_editor/colors_tools.rst:200
+#: ../../image_editor/colors_tools.rst:204
 msgid "**Luminosity**: changes the intensity of all pixels."
-msgstr "**Яскравість світла**: змінити інтенсивність всіх пікселів зображення."
+msgstr ""
+"**Яскравість світла**: змінити інтенсивність всіх пікселів зображення."
 
-#: ../../image_editor/colors_tools.rst:202
+#: ../../image_editor/colors_tools.rst:206
 msgid "**Red**: changes the Red saturation of all pixels."
 msgstr ""
 "**Червоний**: надає змогу змінити насиченість червоного кольору для всіх "
 "пікселів."
 
-#: ../../image_editor/colors_tools.rst:204
+#: ../../image_editor/colors_tools.rst:208
 msgid "**Green**: changes the Green saturation of all pixels ."
 msgstr ""
 "**Зелений**: надає змогу змінити насиченість зеленого кольору для всіх "
 "пікселів."
 
-#: ../../image_editor/colors_tools.rst:206
+#: ../../image_editor/colors_tools.rst:210
 msgid "**Blue**: changes the Blue saturation of all pixels."
 msgstr ""
 "**Синій**: надає змогу змінити насиченість синього кольору для всіх пікселів."
 
-#: ../../image_editor/colors_tools.rst:208
+#: ../../image_editor/colors_tools.rst:212
 msgid "**Alpha**: changes the transparency of all pixels."
 msgstr "**Альфа**: надає змогу змінити прозорість всіх пікселів."
 
-#: ../../image_editor/colors_tools.rst:210
+#: ../../image_editor/colors_tools.rst:214
 msgid ""
 "Next to this box are two icons to select **Linear** or **Logarithmic** "
 "**Histogram** display. For images taken with a digital camera the linear "
@@ -791,7 +803,7 @@ msgstr ""
 "перетворюється на єдиний стовпчик. У такому разі краще скористатися "
 "логарифмічною гістограмою."
 
-#: ../../image_editor/colors_tools.rst:212
+#: ../../image_editor/colors_tools.rst:216
 msgid ""
 "**Main Curves Editing Area**: the horizontal bar (x-axis) represents input "
 "values (they are value levels from 0 to 255). The vertical bar (y-axis) is "
@@ -815,7 +827,7 @@ msgstr ""
 "проведено криву. Отже, кожна точка кривої відповідає «x» перенесеному на "
 "рівень виходу «y»."
 
-#: ../../image_editor/colors_tools.rst:214
+#: ../../image_editor/colors_tools.rst:218
 msgid ""
 "Curve **Type** for channel: below the editing area are several icons that "
 "determine whether the curve can be edited using **Curve smooth mode** or "
@@ -861,7 +873,7 @@ msgstr ""
 "кривої відповідно до ваших потреб, створіть точку на кривій та пересуньте її "
 "вгору або вниз."
 
-#: ../../image_editor/colors_tools.rst:216
+#: ../../image_editor/colors_tools.rst:220
 msgid ""
 "**Save As** and **Load**: these buttons are used to do just that. Any curves "
 "that you have set can be saved to the filesystem and loaded later. The used "
@@ -872,13 +884,13 @@ msgstr ""
 "файлової системи і пізніше завантажити. Для збереження даних у файлі "
 "використовується формат кривих програми Gimp."
 
-#: ../../image_editor/colors_tools.rst:218
+#: ../../image_editor/colors_tools.rst:222
 msgid "**Reset**: this button resets all curve values for all channels."
 msgstr ""
 "**Скинути**: натискання цієї кнопки відновлює всі значення кривих для всіх "
 "каналів."
 
-#: ../../image_editor/colors_tools.rst:220
+#: ../../image_editor/colors_tools.rst:224
 msgid ""
 "The curves tool has several features that facilitate the positioning of "
 "points on the control curves. Clicking the mouse button in the original "
@@ -901,7 +913,7 @@ msgstr ""
 "значеннями, отже вам легше буде визначити розташування пікселів тіні, "
 "проміжного тону та світлих областей."
 
-#: ../../image_editor/colors_tools.rst:222
+#: ../../image_editor/colors_tools.rst:226
 msgid ""
 "Using this way and the three **Tone Color Picker** buttons will "
 "automatically create control points on the curve in all channels for shadow, "
@@ -917,11 +929,11 @@ msgstr ""
 "встановити контрольні точки для кожної з кривих: червоного, зеленого, "
 "синього кольорів і яскравості світла."
 
-#: ../../image_editor/colors_tools.rst:227
+#: ../../image_editor/colors_tools.rst:231
 msgid "Adjust Levels"
 msgstr "Налаштувати рівні"
 
-#: ../../image_editor/colors_tools.rst:229
+#: ../../image_editor/colors_tools.rst:233
 msgid ""
 "The digiKam Adjust Levels is a tool to manually adjust the histogram "
 "channels of an image."
@@ -929,7 +941,7 @@ msgstr ""
 "За допомогою інструменту програми digiKam «Налаштувати рівні» ви зможете "
 "вручну скоригувати канали гістограми зображення."
 
-#: ../../image_editor/colors_tools.rst:231
+#: ../../image_editor/colors_tools.rst:235
 msgid ""
 "Situated between the more sophisticated Adjust Curves tool and the simpler "
 "**Brightness/Contrast/Gamma** Image Editor tool is this Adjust Levels tool "
@@ -946,7 +958,7 @@ msgstr ""
 "пов’язана з **Вхідними рівнями**, а саме 3 повзунки, розташовані під "
 "гістограмою."
 
-#: ../../image_editor/colors_tools.rst:233
+#: ../../image_editor/colors_tools.rst:237
 msgid ""
 "This widget contains a visual graph of the intensity values of the active "
 "layer or selection (histogram). Below the graph are five sliders that can be "
@@ -961,11 +973,11 @@ msgstr ""
 "відповідають ділянкам темних кольорів, а праві, відповідно, — світлих "
 "кольорів."
 
-#: ../../image_editor/colors_tools.rst:239
+#: ../../image_editor/colors_tools.rst:243
 msgid "The Image Editor Adjust Level Tool"
 msgstr "Інструмент коригування рівнів редактора зображень"
 
-#: ../../image_editor/colors_tools.rst:241
+#: ../../image_editor/colors_tools.rst:245
 msgid ""
 "Actually the easiest way to learn how to use it is to experiment by moving "
 "the three sliders around, and watching how the image is affected."
@@ -974,7 +986,7 @@ msgstr ""
 "інструменту є експеримент з пересуванням повзунків (достатньо поспостерігати "
 "за тим, як змінюється зображення)."
 
-#: ../../image_editor/colors_tools.rst:243
+#: ../../image_editor/colors_tools.rst:247
 msgid ""
 "On the right, both an original and a target preview image is available. The "
 "target preview is updated dynamically according to the slider positions. On "
@@ -984,7 +996,7 @@ msgstr ""
 "зміненого зображення буде динамічно оновлюватися відповідно до позицій "
 "повзунків. Ліворуч буде наведено такі пункти:"
 
-#: ../../image_editor/colors_tools.rst:245
+#: ../../image_editor/colors_tools.rst:249
 msgid ""
 "Modify levels for **Channel**: this combo box allows the selection of the "
 "specific channel that will be modified by the tool:"
@@ -992,7 +1004,7 @@ msgstr ""
 "Змініть рівні для **Каналу**: за допомогою цього спадного списку ви можете "
 "вибрати окремий канал, параметри якого буде змінено цим інструментом:"
 
-#: ../../image_editor/colors_tools.rst:247
+#: ../../image_editor/colors_tools.rst:251
 msgid ""
 "**Luminosity**: this option makes intensity changes against all pixels in "
 "the image."
@@ -1000,7 +1012,7 @@ msgstr ""
 "**Яскравість світла**: за допомогою цього параметра можна змінити "
 "інтенсивність кольорів кожного пікселя зображення."
 
-#: ../../image_editor/colors_tools.rst:249
+#: ../../image_editor/colors_tools.rst:253
 msgid ""
 "**Red**: this option makes Red saturation changes against all pixels in the "
 "image."
@@ -1008,7 +1020,7 @@ msgstr ""
 "**Червоний**: за допомогою цього пункту можна змінити насиченість червоного "
 "компонента кольору всіх пікселів зображення."
 
-#: ../../image_editor/colors_tools.rst:251
+#: ../../image_editor/colors_tools.rst:255
 msgid ""
 "**Green**: this option makes Green saturation changes against all pixels in "
 "the image."
@@ -1016,7 +1028,7 @@ msgstr ""
 "**Зелений**: за допомогою цього пункту можна змінити насиченість зеленого "
 "компонента кольору всіх пікселів зображення."
 
-#: ../../image_editor/colors_tools.rst:253
+#: ../../image_editor/colors_tools.rst:257
 msgid ""
 "**Blue**: this option makes Blue saturation changes against all pixels in "
 "the image."
@@ -1024,7 +1036,7 @@ msgstr ""
 "**Синій**: за допомогою цього пункту можна змінити насиченість синього "
 "компонента кольору всіх пікселів зображення."
 
-#: ../../image_editor/colors_tools.rst:255
+#: ../../image_editor/colors_tools.rst:259
 msgid ""
 "**Alpha**: this option makes transparency changes against all pixels in the "
 "image."
@@ -1032,7 +1044,7 @@ msgstr ""
 "**Альфа**: за допомогою цього пункту можна змінити рівень прозорості всіх "
 "пікселів зображення."
 
-#: ../../image_editor/colors_tools.rst:257
+#: ../../image_editor/colors_tools.rst:261
 msgid ""
 "Set **Scale** for channel: this combo controls whether the histogram will be "
 "displayed using a linear or logarithmic amplitude. For images taken with a "
@@ -1048,7 +1060,7 @@ msgstr ""
 "діаграма часто перетворюється на єдиний стовпчик. У такому разі краще "
 "скористатися логарифмічною гістограмою."
 
-#: ../../image_editor/colors_tools.rst:259
+#: ../../image_editor/colors_tools.rst:263
 msgid ""
 "**Input Levels**: the input levels allow manual adjustments to be selected "
 "for each of the ranges. The main area is a graphic representation of image "
@@ -1073,7 +1085,7 @@ msgstr ""
 "кольорів, що означатиме недостатню кількість зеленого і червоного кольорів "
 "на світлих ділянках зображення. Змінити діапазон рівнів можна у три способи:"
 
-#: ../../image_editor/colors_tools.rst:261
+#: ../../image_editor/colors_tools.rst:265
 msgid ""
 "Three sliders: the first on the top for **Dark Tones*, the second one for "
 "**Light Tones*, and the last one on the bottom for **Midtones** (often "
@@ -1083,13 +1095,13 @@ msgstr ""
 "— для світлих, і останній, у нижній частині, — для проміжних тонів (часто "
 "його називають значенням гами)."
 
-#: ../../image_editor/colors_tools.rst:263
+#: ../../image_editor/colors_tools.rst:267
 msgid "Three input boxes to enter values directly."
 msgstr ""
 "За допомогою трьох полів для введення, призначених для безпосереднього "
 "введення значень."
 
-#: ../../image_editor/colors_tools.rst:265
+#: ../../image_editor/colors_tools.rst:269
 msgid ""
 "Three **Color Picker** buttons using the original photo preview to "
 "automatically adjust inputs levels settings for shadow, midtone and "
@@ -1102,7 +1114,7 @@ msgstr ""
 "кнопку налаштування у автоматичному режимі, розташовану поруч з кнопкою "
 "відновлення початкових значень параметрів."
 
-#: ../../image_editor/colors_tools.rst:267
+#: ../../image_editor/colors_tools.rst:271
 msgid ""
 "**Output Levels**: the output levels allow manual selection of a narrowed-"
 "down output level range. There are also two sliders located here that can be "
@@ -1117,7 +1129,7 @@ msgstr ""
 "можна, наприклад, застосувати для створення знебарвленого зображення, яке "
 "буде тлом для якогось іншого зображення переднього плану."
 
-#: ../../image_editor/colors_tools.rst:269
+#: ../../image_editor/colors_tools.rst:273
 msgid ""
 "**Auto**: this button performs an automatic setting of the levels based on "
 "the pixel intensities of the image."
@@ -1125,7 +1137,7 @@ msgstr ""
 "**Автоматично**: за допомогою натискання цієї кнопки можна наказати програмі "
 "встановити рівні автоматично на основі інтенсивностей пікселів зображення."
 
-#: ../../image_editor/colors_tools.rst:271
+#: ../../image_editor/colors_tools.rst:275
 msgid ""
 "**Save As** and **Load**: these buttons are used to do just that. Any Levels "
 "that you have set can be saved to the filesystem and loaded later. The used "
@@ -1137,7 +1149,7 @@ msgstr ""
 "рівнів буде використано формат файлів, сумісний із форматом файлів рівнів "
 "Gimp."
 
-#: ../../image_editor/colors_tools.rst:273
+#: ../../image_editor/colors_tools.rst:277
 msgid ""
 "**Reset All**: this button reset all Input Levels and Output Levels values "
 "for all channels."
@@ -1145,7 +1157,7 @@ msgstr ""
 "**Скинути усі**: натискання цієї кнопки відновлює всі значення «Вхідних "
 "рівнів» та «Вихідних рівнів» на всіх каналах."
 
-#: ../../image_editor/colors_tools.rst:275
+#: ../../image_editor/colors_tools.rst:279
 msgid ""
 "The Adjust Levels tool has several features to facilitate the positioning "
 "input levels sliders. Clicking the mouse button in the original image "
@@ -1168,7 +1180,7 @@ msgstr ""
 "на повзунках вхідних рівнів, отже вам легше буде визначити розташування "
 "пікселів тіні, проміжного тону та світлих областей."
 
-#: ../../image_editor/colors_tools.rst:277
+#: ../../image_editor/colors_tools.rst:281
 msgid ""
 "Using in this mode and the three **Color Picker** buttons will automatically "
 "adjust input levels settings in all channels for shadow, middle, and "
@@ -1184,7 +1196,7 @@ msgstr ""
 "встановити вхідні рівні для кожного з каналів гістограми: червоного, "
 "зеленого, синього і яскравості світла."
 
-#: ../../image_editor/colors_tools.rst:279
+#: ../../image_editor/colors_tools.rst:283
 msgid ""
 "**Over Exposure Indicator** option checks all color channel to see if more "
 "than one channel in a pixel is over-exposed, and you will see the combined "
@@ -1197,11 +1209,11 @@ msgstr ""
 "каналу. Дію цього пункту буде застосовано лише до області попереднього "
 "перегляду, вона не вплине на вигляд остаточного зображення."
 
-#: ../../image_editor/colors_tools.rst:284
+#: ../../image_editor/colors_tools.rst:288
 msgid "Correcting Exposure"
 msgstr "Виправлення експозиції"
 
-#: ../../image_editor/colors_tools.rst:286
+#: ../../image_editor/colors_tools.rst:290
 msgid ""
 "The simplest tool to use is the **Brightness/Contrast/Gamma** tool. It is "
 "also the least powerful, but in many cases it does everything you need. This "
@@ -1221,11 +1233,11 @@ msgstr ""
 "зображення. Після визначення потрібних вам параметрів натисніть кнопку "
 "**Гаразд**, щоб ці параметри набули чинності."
 
-#: ../../image_editor/colors_tools.rst:292
+#: ../../image_editor/colors_tools.rst:296
 msgid "The Image Editor Tool Correcting Exposure"
 msgstr "Виправлення експозиції у редакторі зображень"
 
-#: ../../image_editor/colors_tools.rst:296
+#: ../../image_editor/colors_tools.rst:300
 msgid ""
 "Another important tool called **Levels Adjust** provides also an integrated "
 "way of seeing the results of adjusting multiple levels and also enables you "
@@ -1245,11 +1257,11 @@ msgstr ""
 "виправлення проблем із експонуванням за допомогою інструмента **Налаштування "
 "кривих**."
 
-#: ../../image_editor/colors_tools.rst:301
+#: ../../image_editor/colors_tools.rst:305
 msgid "Correcting Colors"
 msgstr "Виправлення кольорів"
 
-#: ../../image_editor/colors_tools.rst:303
+#: ../../image_editor/colors_tools.rst:307
 msgid ""
 "This tool is used to adjust hue, saturation, and lightness levels on a range "
 "of color weights for the current image. You can access the tool by the menu "
@@ -1260,11 +1272,11 @@ msgstr ""
 "інструмента можна отримати за допомогою пункту меню :menuselection:`Колір --"
 "> Відтінок/Насиченість/Освітленість`"
 
-#: ../../image_editor/colors_tools.rst:305
+#: ../../image_editor/colors_tools.rst:309
 msgid "The tool settings are listed below:"
 msgstr "Нижче наведено список параметрів інструмента:"
 
-#: ../../image_editor/colors_tools.rst:307
+#: ../../image_editor/colors_tools.rst:311
 msgid ""
 "A Hue / Saturation color map to select visually the respective primary color "
 "to adjust. Just move and click with the mouse to set **Hue** and "
@@ -1275,7 +1287,7 @@ msgstr ""
 "кнопкою, щоб встановити значення параметрів **Відтінок** і **Насиченість** "
 "на повзунках під картою."
 
-#: ../../image_editor/colors_tools.rst:309
+#: ../../image_editor/colors_tools.rst:313
 msgid ""
 "**Hue**: The slider allow you to select a hue in the color circle (-180, "
 "180)."
@@ -1283,13 +1295,13 @@ msgstr ""
 "**Відтінок**: за допомогою повзунка ви можете вибрати відтінок на колі "
 "кольорів (-180, 180)."
 
-#: ../../image_editor/colors_tools.rst:311
+#: ../../image_editor/colors_tools.rst:315
 msgid ""
 "**Saturation**: The slider allow you to select a saturation (-100, 100)."
 msgstr ""
 "**Насиченість**: за допомогою повзунка можна вибрати насиченість (-100, 100)."
 
-#: ../../image_editor/colors_tools.rst:313
+#: ../../image_editor/colors_tools.rst:317
 msgid ""
 "**Vibrance**: The slider allow you to adjust the vibrance of the image. "
 "Vibrance performs selective saturation on less saturated colors and avoiding "
@@ -1299,7 +1311,7 @@ msgstr ""
 "зображенні. Буде виконано вибіркове збільшення насиченості малонасичених "
 "кольорів, це не стосуватиметься кольорів людської шкіри."
 
-#: ../../image_editor/colors_tools.rst:315
+#: ../../image_editor/colors_tools.rst:319
 msgid ""
 "**Lightness**: The slider allows you to select a luminosity value (-100, "
 "100). Lightness changes here concern a color range, while they concern a "
@@ -1317,7 +1329,7 @@ msgstr ""
 "**Коригування рівнів** можна змінити лише освітленість темних, світлих або "
 "середніх пікселів."
 
-#: ../../image_editor/colors_tools.rst:317
+#: ../../image_editor/colors_tools.rst:321
 msgid ""
 "You can see any adjustments you make reflected in the preview image. When "
 "you are happy with the results, press **Ok** and they will take effect."
@@ -1326,15 +1338,15 @@ msgstr ""
 "перегляду зображення. Після встановлення потрібних вам параметрів натисніть "
 "кнопку **Гаразд**, щоб ці параметри набули чинності."
 
-#: ../../image_editor/colors_tools.rst:323
+#: ../../image_editor/colors_tools.rst:327
 msgid "The Image Editor Tool Correcting Colors"
 msgstr "Виправлення кольорів у редакторі зображень"
 
-#: ../../image_editor/colors_tools.rst:328
+#: ../../image_editor/colors_tools.rst:332
 msgid "Channel Mixer"
 msgstr "Змішувач каналів"
 
-#: ../../image_editor/colors_tools.rst:330
+#: ../../image_editor/colors_tools.rst:334
 msgid ""
 "The digiKam image Channel Mixer is a tool to remix the color channels to "
 "improve or modify the photograph color shades."
@@ -1343,7 +1355,7 @@ msgstr ""
 "каналів кольорів зображення з метою покращення або зміни відтінків кольорів "
 "фотографії."
 
-#: ../../image_editor/colors_tools.rst:332
+#: ../../image_editor/colors_tools.rst:336
 msgid ""
 "The Channel Mixer is an another sophisticated tool to refine the images' "
 "tonality. Start it from the :menuselection:`Color --> Channel Mixer` Image "
@@ -1353,11 +1365,11 @@ msgstr ""
 "тональності зображення. Запустити його можна за допомогою пункту :"
 "menuselection:`Колір --> Змішувач каналів` меню редактора зображень."
 
-#: ../../image_editor/colors_tools.rst:338
+#: ../../image_editor/colors_tools.rst:342
 msgid "The Image Editor Channel Mixer Tool"
 msgstr "Інструмент мікшування каналів редактора зображень"
 
-#: ../../image_editor/colors_tools.rst:340
+#: ../../image_editor/colors_tools.rst:344
 msgid ""
 "With the channel combo box you select and display the histogram per color. "
 "It gives a first hint of how to correct the channels by their relative "
@@ -1372,7 +1384,7 @@ msgstr ""
 "ви змінили. Ще лівіше буде показано область початкового зображення, наведену "
 "для порівняння."
 
-#: ../../image_editor/colors_tools.rst:342
+#: ../../image_editor/colors_tools.rst:346
 msgid ""
 "The target photo preview has a red marker available. If you place this "
 "marker somewhere in the image, a corresponding vertical bar will be drawn in "
@@ -1383,7 +1395,7 @@ msgstr ""
 "гістограмі вертикальною лінією буде показано значення рівня кольору на "
 "поточному вибраному каналі у пікселі під позначкою."
 
-#: ../../image_editor/colors_tools.rst:344
+#: ../../image_editor/colors_tools.rst:348
 msgid ""
 "Now the controls are to the lower right: **Red**, **Green** and **Blue** "
 "slider controls enable you to mix the channels. If you check **Preserve "
@@ -1402,7 +1414,7 @@ msgstr ""
 "знімків на чорно-білі. Під час створення чорно-білих портретів намагайтеся "
 "зсунути зелений канал у напрямку чорного кольору."
 
-#: ../../image_editor/colors_tools.rst:348
+#: ../../image_editor/colors_tools.rst:352
 msgid ""
 "Sometimes, especially when doing **Monochrome** mixing, reducing one color "
 "channel may increase visible noise, which actually originates in the chroma "
@@ -1420,7 +1432,7 @@ msgstr ""
 "перетворення зображення на чорно-біле: достатньо спочатку усунути "
 "хроматичний шум."
 
-#: ../../image_editor/colors_tools.rst:350
+#: ../../image_editor/colors_tools.rst:354
 msgid ""
 "**Save As** and **Load** buttons are used to do just that. Any mixer "
 "settings that you have set can be saved to the filesystem and loaded later. "
@@ -1431,7 +1443,7 @@ msgstr ""
 "змішувача може бути збережено до файла і пізніше завантажено. Для зберігання "
 "у файлі буде використано формат змішувача каналів програми Gimp."
 
-#: ../../image_editor/colors_tools.rst:352
+#: ../../image_editor/colors_tools.rst:356
 msgid ""
 "**Over Exposure Indicator** option adds up the colors if more than one "
 "channel in a pixel is over-exposed, and you will see the combined color "
@@ -1445,18 +1457,18 @@ msgstr ""
 "області попереднього перегляду, вона не вплине на вигляд остаточного "
 "зображення."
 
-#: ../../image_editor/colors_tools.rst:354
+#: ../../image_editor/colors_tools.rst:358
 msgid ""
 "**Reset All** button resets all channel mixer settings to default values."
 msgstr ""
 "Натискання кнопки **Скинути усі** відновлює всі типові параметри змішувача "
 "каналів."
 
-#: ../../image_editor/colors_tools.rst:359
+#: ../../image_editor/colors_tools.rst:363
 msgid "White Balance"
 msgstr "Баланс білого"
 
-#: ../../image_editor/colors_tools.rst:361
+#: ../../image_editor/colors_tools.rst:365
 msgid ""
 "The digiKam White Balance is a semi-automatic tool to adjust the white-"
 "balance of a photograph."
@@ -1464,7 +1476,7 @@ msgstr ""
 "У digiKam «Баланс білого» є напівавтоматичним інструментом для коригування "
 "балансу білого на фотографії."
 
-#: ../../image_editor/colors_tools.rst:363
+#: ../../image_editor/colors_tools.rst:367
 msgid ""
 "White Balance setting is a common hurdle for digital still cameras. In the "
 "'good old time' of film rolls, the white balance was done by the photolab. "
@@ -1483,11 +1495,11 @@ msgstr ""
 "передбачено багато параметрів, які ви можете змінити, щоб отримати найкращий "
 "результат."
 
-#: ../../image_editor/colors_tools.rst:369
+#: ../../image_editor/colors_tools.rst:373
 msgid "The Image Editor White Balance Tool"
 msgstr "Інструмент балансу білого кольору редактора зображень"
 
-#: ../../image_editor/colors_tools.rst:373
+#: ../../image_editor/colors_tools.rst:377
 msgid ""
 "Even if the White Balance correction is not limited to 8 bit per channel, if "
 "you depart too much from the original, over exposure zones may appear. If "
@@ -1500,7 +1512,7 @@ msgstr ""
 "цифрових негативів, область для виправлення буде більшою, оскільки "
 "виправлення відбудеться у процесі усування мозаїчності."
 
-#: ../../image_editor/colors_tools.rst:375
+#: ../../image_editor/colors_tools.rst:379
 msgid ""
 "The preview window can be resized. To the left, both an original and a "
 "target preview tab is shown. The target preview is updated dynamically "
@@ -1513,7 +1525,7 @@ msgstr ""
 "ви бажаєте поглянути на остаточний баланс білого, просто наведіть вказівник "
 "на заголовок цієї вкладки і клацніть лівою кнопкою миші."
 
-#: ../../image_editor/colors_tools.rst:377
+#: ../../image_editor/colors_tools.rst:381
 msgid ""
 "The target photo preview has a red marker available. The luminosity value of "
 "the pixel under the marker is shown as a vertical line in the histogram ."
@@ -1522,7 +1534,7 @@ msgstr ""
 "гістограмі вертикальною лінією буде показано значення освітленості пікселя "
 "під позначкою."
 
-#: ../../image_editor/colors_tools.rst:379
+#: ../../image_editor/colors_tools.rst:383
 msgid ""
 "To the top right, the widget displays a histogram that is dynamically "
 "updated when changing the parameters. This histogram is very instructive as "
@@ -1537,7 +1549,7 @@ msgstr ""
 "рівень світності. За допомогою кнопки ви можете вибрати показ одного з 3 "
 "кольорів (або їх суми, яка і називається світністю (яскравістю світла))."
 
-#: ../../image_editor/colors_tools.rst:381
+#: ../../image_editor/colors_tools.rst:385
 msgid ""
 "With **Exposure** you can digitally change the original photo exposure. "
 "Increasing the exposure is has the risk of making the pixel noise more "
@@ -1563,7 +1575,7 @@ msgstr ""
 "коригування експозиції**. Таким чином можна досить точно встановити точку "
 "чорного."
 
-#: ../../image_editor/colors_tools.rst:383
+#: ../../image_editor/colors_tools.rst:387
 msgid ""
 "The contrast of your output depends on **Shadows**, **Saturation**, and "
 "**Gamma** parameters. The **Shadows** adjustment lets you enhance or "
@@ -1574,7 +1586,7 @@ msgstr ""
 "параметра **Тіні** ви можете збільшити або зменшити деталізацію тіней на "
 "вашій фотографії."
 
-#: ../../image_editor/colors_tools.rst:385
+#: ../../image_editor/colors_tools.rst:389
 msgid ""
 "Increasing the contrast of your photograph can have the side effect of "
 "reducing the apparent **Saturation** of the photo. Use a value larger than 1 "
@@ -1591,7 +1603,7 @@ msgstr ""
 "більшою є контрастність (меншою **Гама**), тим більшою має бути "
 "**Насиченість**."
 
-#: ../../image_editor/colors_tools.rst:387
+#: ../../image_editor/colors_tools.rst:391
 msgid ""
 "The next set of options is the mainstay of White Balance settings, which "
 "controls the ratio between the three color channels. Here you can set the "
@@ -1611,7 +1623,7 @@ msgstr ""
 "стосується співвідношення між червоним і синім каналами, природно, що другим "
 "параметром є параметр, який керує інтенсивністю каналу **Зеленого** кольору."
 
-#: ../../image_editor/colors_tools.rst:389
+#: ../../image_editor/colors_tools.rst:393
 msgid ""
 "Instead of fiddling around with the above controls, you can simply use the "
 "**Temperature Tone Color Picker** button. Press on this button and click "
@@ -1627,7 +1639,7 @@ msgstr ""
 "балансу білого кольору. На основі обчислень буде автоматично визначено "
 "значення полів **Температура** і **Зелений**."
 
-#: ../../image_editor/colors_tools.rst:391
+#: ../../image_editor/colors_tools.rst:395
 msgid ""
 "In addition you can set the White Balance using the preset list. These are "
 "the white color balance temperature presets available:"
@@ -1635,128 +1647,128 @@ msgstr ""
 "Крім того, ви можете встановити баланс білого за допомогою списку шаблонів. "
 "Ви можете скористатися такими температурними шаблонами балансу білого:"
 
-#: ../../image_editor/colors_tools.rst:394
+#: ../../image_editor/colors_tools.rst:398
 msgid "Color Temperature"
 msgstr "Температура кольорів"
 
-#: ../../image_editor/colors_tools.rst:394
+#: ../../image_editor/colors_tools.rst:398
 msgid "Description"
 msgstr "Опис"
 
-#: ../../image_editor/colors_tools.rst:394
+#: ../../image_editor/colors_tools.rst:398
 msgid "Kelvin"
 msgstr "за Кельвіном"
 
-#: ../../image_editor/colors_tools.rst:396
+#: ../../image_editor/colors_tools.rst:400
 msgid "**40W**"
 msgstr "**40 Вт**"
 
-#: ../../image_editor/colors_tools.rst:396
+#: ../../image_editor/colors_tools.rst:400
 msgid "40 Watt incandescent lamp."
 msgstr "40-ватна лампа розжарювання."
 
-#: ../../image_editor/colors_tools.rst:396
+#: ../../image_editor/colors_tools.rst:400
 msgid "2680"
 msgstr "2680"
 
-#: ../../image_editor/colors_tools.rst:397
+#: ../../image_editor/colors_tools.rst:401
 msgid "**200W**"
 msgstr "**200 Вт**"
 
-#: ../../image_editor/colors_tools.rst:397
+#: ../../image_editor/colors_tools.rst:401
 msgid "200 Watt incandescent lamp, studio lights, photo floods."
 msgstr "200-ватна лампа розжарювання, студійне світло."
 
-#: ../../image_editor/colors_tools.rst:397
+#: ../../image_editor/colors_tools.rst:401
 msgid "3000"
 msgstr "3000"
 
-#: ../../image_editor/colors_tools.rst:398
+#: ../../image_editor/colors_tools.rst:402
 msgid "**Sunrise**"
 msgstr "**Схід**"
 
-#: ../../image_editor/colors_tools.rst:398
+#: ../../image_editor/colors_tools.rst:402
 msgid "Sunrise or sunset light."
 msgstr "Світло сонця на світанку у сутінках."
 
-#: ../../image_editor/colors_tools.rst:398
+#: ../../image_editor/colors_tools.rst:402
 msgid "3200"
 msgstr "3200"
 
-#: ../../image_editor/colors_tools.rst:399
+#: ../../image_editor/colors_tools.rst:403
 msgid "**Tungsten**"
 msgstr "**Лампа розжарювання**"
 
-#: ../../image_editor/colors_tools.rst:399
+#: ../../image_editor/colors_tools.rst:403
 msgid "Tungsten lamp or light at 1 hour from dusk or dawn."
 msgstr ""
 "Лампа розжарювання або світло за 1 годину після світанку або до сутінок."
 
-#: ../../image_editor/colors_tools.rst:399
+#: ../../image_editor/colors_tools.rst:403
 msgid "3400"
 msgstr "3400"
 
-#: ../../image_editor/colors_tools.rst:400
+#: ../../image_editor/colors_tools.rst:404
 msgid "**Neutral**"
 msgstr "**Нейтральний**"
 
-#: ../../image_editor/colors_tools.rst:400
+#: ../../image_editor/colors_tools.rst:404
 msgid "Neutral color temperature."
 msgstr "Нейтральна кольорова температура."
 
-#: ../../image_editor/colors_tools.rst:400
+#: ../../image_editor/colors_tools.rst:404
 msgid "4750"
 msgstr "4750"
 
-#: ../../image_editor/colors_tools.rst:401
+#: ../../image_editor/colors_tools.rst:405
 msgid "**Xenon**"
 msgstr "**Ксенон**"
 
-#: ../../image_editor/colors_tools.rst:401
+#: ../../image_editor/colors_tools.rst:405
 msgid "Xenon lamp or light arc."
 msgstr "Ксенонова лампа або електрична дуга.."
 
-#: ../../image_editor/colors_tools.rst:401
+#: ../../image_editor/colors_tools.rst:405
 msgid "5000"
 msgstr "5000"
 
-#: ../../image_editor/colors_tools.rst:402
+#: ../../image_editor/colors_tools.rst:406
 msgid "**Sun**"
 msgstr "**Сонце**"
 
-#: ../../image_editor/colors_tools.rst:402
+#: ../../image_editor/colors_tools.rst:406
 msgid "Sunny daylight around noon."
 msgstr "Сонячне світло близько опівдня."
 
-#: ../../image_editor/colors_tools.rst:402
+#: ../../image_editor/colors_tools.rst:406
 msgid "5500"
 msgstr "5500"
 
-#: ../../image_editor/colors_tools.rst:403
+#: ../../image_editor/colors_tools.rst:407
 msgid "**Flash**"
 msgstr "**Спалах**"
 
-#: ../../image_editor/colors_tools.rst:403
+#: ../../image_editor/colors_tools.rst:407
 msgid "Electronic photo flash."
 msgstr "Електронний фотоспалах."
 
-#: ../../image_editor/colors_tools.rst:403
+#: ../../image_editor/colors_tools.rst:407
 msgid "5600"
 msgstr "5600"
 
-#: ../../image_editor/colors_tools.rst:404
+#: ../../image_editor/colors_tools.rst:408
 msgid "**Sky**"
 msgstr "**Небо**"
 
-#: ../../image_editor/colors_tools.rst:404
+#: ../../image_editor/colors_tools.rst:408
 msgid "Overcast sky light."
 msgstr "Світло під час хмарного дня."
 
-#: ../../image_editor/colors_tools.rst:404
+#: ../../image_editor/colors_tools.rst:408
 msgid "6500"
 msgstr "6500"
 
-#: ../../image_editor/colors_tools.rst:407
+#: ../../image_editor/colors_tools.rst:411
 msgid ""
 "**Color Temperature** is a simplified way to characterize the spectral "
 "properties of a light source. While in reality the color of light is "
@@ -1777,7 +1789,7 @@ msgstr ""
 "мати на увазі, що джерела світла однакового кольору (метамери) можуть значно "
 "відрізнятися за якістю світла, яке ними випромінюється."
 
-#: ../../image_editor/colors_tools.rst:409
+#: ../../image_editor/colors_tools.rst:413
 msgid ""
 "Low Color Temperature implies more yellow-red light while high color "
 "temperature implies more blue light. Daylight has a rather low color "
@@ -1797,7 +1809,7 @@ msgstr ""
 "від свічок та вогнища. Стандартною одиницею виміру температури кольорів є "
 "градус Кельвіна (K)."
 
-#: ../../image_editor/colors_tools.rst:411
+#: ../../image_editor/colors_tools.rst:415
 msgid ""
 "**Over Exposure Indicator** option adds up the colors if more than one "
 "channel in a pixel is over-exposed, and you will see the combined color "
@@ -1812,7 +1824,7 @@ msgstr ""
 "застосовано лише до області попереднього перегляду, вона не вплине на вигляд "
 "остаточного зображення."
 
-#: ../../image_editor/colors_tools.rst:413
+#: ../../image_editor/colors_tools.rst:417
 msgid ""
 "**Save As** and **Load** buttons are used to do just that. Any White Color "
 "Balance settings that you have set can be saved to the filesystem in a text "
@@ -1823,7 +1835,7 @@ msgstr ""
 "встановили, може бути збережено у текстовому файлі файлової системи, а потім "
 "знову завантажено."
 
-#: ../../image_editor/colors_tools.rst:415
+#: ../../image_editor/colors_tools.rst:419
 msgid ""
 "**Reset All** button resets all filter settings to default values "
 "corresponding to Neutral White Balance color. Attention, even the neutral "
