@@ -253,7 +253,7 @@ It's worth nothing nevertheless that you can make use of `EXSLT <https://www.exs
 
 HTML Gallery tool imposes no constraint on the organization of HTML files: you can generate one file per image, or only one per collection. One could imagine a theme which would only contains one HTML file and uses JavaScript to show the different images, there is already one theme using frames, you can even generate CSS files on the fly if you want to.
 
-About translations
+About Translations
 ~~~~~~~~~~~~~~~~~~
 
 You should not **hardcode** any text in the template, instead you should use the
@@ -313,8 +313,8 @@ Images and CSS Files
 
 You are free to use images, CSS files or other files in your theme: just put them in the theme folder and the tool will copy them in the output folder.
 
-## Original images
-
+Original Images
+```````````````
 As explained before, if the user selects the option "include original images",
 the :file:`gallery.xml` file will contain **<original />** tags. If this tag is present,
 the image page should contain a link to download the original image.
@@ -329,8 +329,8 @@ Here is an example:
           </p>
      </xsl:if>
 
-## Non-square thumbnails
-
+Non-Square Thumbnails
+`````````````````````
 By default, thumbnails are cropped so that they are square-shaped and all have an identical size. This makes it easier to create the HTML/CSS style.
 
 However, if your theme is ready to cope with thumbnails of different sizes, add this snippet to your desktop file:
@@ -342,11 +342,13 @@ However, if your theme is ready to cope with thumbnails of different sizes, add 
 
 The user will then be able to select whether squares should or should not be square. For non-square thumbnails, the specified thumbnail size becomes the size of the larger side of the thumbnail.
 
-## Going further, theme parameters
+Theme Parameters
+~~~~~~~~~~~~~~~~
 
 You might want to provide a way for your user to customize your theme, for example you could provide a few alternative CSS files, or let the user customize the background color. This is easy to do.
 
-### Declaring a parameter
+Declaring a Parameter
+`````````````````````
 
 First, you need to declare your parameter. Edit your desktop file and add something like this:
 
@@ -359,9 +361,10 @@ First, you need to declare your parameter. Edit your desktop file and add someth
 
 Now start the tool and select your theme, after pressing next, you should see an option page with a color button initialized to the **#123456** color.
 
-### Using the value of a parameter
+Using the Value of a Parameter
+``````````````````````````````
 
-In template.xsl, you can get the value of your parameter like this:
+In :file:`template.xsl`, you can get the value of your parameter like this:
 
 .. code-block:: xml
 
@@ -375,7 +378,8 @@ To change the background color of the **body** tag, you would write something li
     ...
     </body>
 
-### Parameter reference
+Parameter Reference
+```````````````````
 
 Here is a more complete description of the way to declare parameters.
 
@@ -393,7 +397,8 @@ A parameter is declared by a section named **X-HTMLGallery Parameter someName**.
 
 - The **Default** key defines the default value of the parameter.
 
-#### List parameter keys
+List Parameter Keys
+```````````````````
 
 A list parameter lets the user select an item from a list. To declare the available items, you must use two sets of keys: **Value-N** and **Caption-N**, where **N** is the position of the item, starting from **0**.
 
@@ -416,7 +421,8 @@ Here is an example: the **style** parameter from the **Simple** theme:
 
 As you can see, the user will be able to choose either **Natural** or **Dark**. Depending on the user choice, **<xsl:value-of select='$style'/>** will expand to either :file:`natural.css` or :file:`dark.css`.
 
-#### Int parameter keys
+Int Parameter Keys
+``````````````````
 
 An int parameter lets the user select an integer using a spin-box. In addition to the default value, you can define the minimum and maximum values, using the **Min** and **Max** keys.
 
@@ -431,7 +437,8 @@ Here is an example:
      Min=4
      Max=28
 
-#### String and Caption parameter keys
+String and Caption Parameter Keys
+`````````````````````````````````
 
 A string parameter lets the user enter a single string to set configuration rules for example. A caption parameter lets the user enter a multi-string with spell-checking support to set a description or a title.
 
