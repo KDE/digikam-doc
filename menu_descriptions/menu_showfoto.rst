@@ -21,7 +21,7 @@ Showfoto Menu
 
     The Showfoto Editor Menu
 
-**Showfoto** menu is mostly the same than **digiKam Image Editor**. Only few differences are presents in **File** and **Settings**, and **Help** entries due to the lack of database spports.
+**Showfoto** menu is mostly the same than **digiKam Image Editor**. Only few differences are presents in **File** and **Settings**, and **Help** entries due to the lack of database support.
 
 .. note::
 
@@ -38,7 +38,7 @@ The File Menu
 
     Open all files from a directory located on your local storage.
 
-For the rest of menu entries, see description from :ref:`Main Window <menu_editorfile>` section. Versioning options do not exits here.
+For the rest of menu entries, see description from :ref:`Main Window <menu_editorfile>` section. Versioning options do not exit here.
 
 The Edit Menu
 -------------
@@ -82,7 +82,7 @@ The Tools Menu
 
     Batch tool to :ref:`convert RAW files to DNG containers <showfoto_dngconvert>`.
 
-For the rest of menu entries, see description from :ref:`Main Window <menu_maintools>` section about Generic plugins. Database options do not exists here.
+For the rest of menu entries, see description from :ref:`Main Window <menu_maintools>` section about Generic plugins. Database options do not exist here.
 
 The Import Menu
 ---------------
@@ -102,4 +102,4 @@ See description from :ref:`Main Window <menu_mainsettings>` section.
 The Help Menu
 -------------
 
-See description from :ref:`Main Window <menu_mainhelp>` section.. Database options do not exists here.
+See description from :ref:`Main Window <menu_mainhelp>` section. Database options do not exist here.
