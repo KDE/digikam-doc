@@ -86,7 +86,7 @@ Creating a New Layout
 
 The Print Creator tool allows to add new templates to manage new page layouts easily. This chapter explains how to create templates, test, and share files for an official integration in application.
 
-Getting started
+Getting Started
 ~~~~~~~~~~~~~~~
 
 A template is at least one file with XML extension (for instance :file:`my-templates.xml`), if you want it to be included however you need another file that allows translations, e.g. a desktop file (see below).

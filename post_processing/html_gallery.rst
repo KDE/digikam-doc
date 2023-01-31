@@ -108,13 +108,13 @@ Creating a New Theme
 
 The HTML Gallery tool can easily be themed to produce very different sites. This chapter explains how to create themes.
 
-Getting started
+Getting Started
 ~~~~~~~~~~~~~~~
 
 A theme is a folder which contains at least two files:
 
-    - a desktop file describing the theme.
-    - a :file:`template.xsl` file to generate the HTML files.
+    - A **Desktop file** describing the theme.
+    - A :file:`template.xsl` file to generate the HTML files.
 
 When the tool is running, it does the following:
 
@@ -205,9 +205,7 @@ You are done, you can now open digiKam and start the HTML Gallery tool, the **Sn
 Generating HTML Using XSL Rules
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The :file:`template.xsl` file is responsible for generating the HTML files from the :file:`gallery.xml` file.
-
-It looks like this:
+The :file:`template.xsl` file is responsible for generating the HTML files from the :file:`gallery.xml` file. It's a standard ini-style file and looks like this
 
 .. code-block:: xml
 
@@ -244,7 +242,7 @@ It looks like this:
       </collection>
      </collections>
 
-We won't explain XSLT here, you should be able to find the documentation you need on the web. We recommend to learn XSLT with the `XSLT tutorial here <https://www.w3schools.com/xsl>`_.
+We won't explain XSLT syntax here, you should be able to find the documentation you need on the Internet. We recommend to learn XSLT with the `XSLT tutorial here <https://www.w3schools.com/xsl>`_.
 
 It's worth nothing nevertheless that you can make use of `EXSLT <https://www.exslt.org>`_, a set of extensions to XSLT. In particular, the `exslt:document element <https://www.exslt.org/exsl/elements/document>`_  is extremely useful because it allows you to generate multiple documents from the same file.
 
@@ -375,9 +373,7 @@ To change the background color of the **body** tag, you would write something li
 Parameter Reference
 ```````````````````
 
-Here is a more complete description of the way to declare parameters.
-
-A parameter is declared by a section named **X-HTMLGallery Parameter someName**. **someName** should be replaced with the name you want to use in :file:`template.xsl`.
+Here is a more complete description of the way to declare parameters. A parameter is declared by a section named **X-HTMLGallery Parameter someName**. **someName** should be replaced with the name you want to use in :file:`template.xsl`.
 
 - The **Name** key defines the text which will be shown in the option page. Since this is a desktop file, it can be translated like the other keys.
 
