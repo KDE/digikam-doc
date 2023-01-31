@@ -273,6 +273,168 @@ Do this:
 
 It's quite a lot more verbose, but this way your user will get localized HTML output.
 
+If you want to use **i18n parameters** in attributes, do it like this:
+
+.. code-block:: xml
+
+    <a href="previous" title="{$i18nPrevious}"><img src="previous.png"/></a>
+    | <a href="next" title="{$i18nNext}"><img src="next.png"/></a>
+
+For now, the available general **i18n parameters** are:
+
+    - i18nPrevious
+    - i18nNext
+    - i18nCollectionList
+    - i18nOriginalImage
+    - i18nUp
+
+And for the image details are:
+
+    - i18nexifimagemake ("Make")
+    - i18nexifimagemodel ("Model")
+    - i18nexifimageorientation ("Image Orientation")
+    - i18nexifimagexresolution ("Image X Resolution")
+    - i18nexifimageyresolution ("Image Y Resolution")
+    - i18nexifimageresolutionunit ("Image Resolution Unit")
+    - i18nexifimagedatetime ("Image Date Time")
+    - i18nexifimageycbcrpositioning ("YCBCR Positioning")
+    - i18nexifphotoexposuretime ("Exposure Time")
+    - i18nexifphotofnumber ("F Number")
+    - i18nexifphotoexposureprogram ("Exposure Index")
+    - i18nexifphotoisospeedratings ("ISO Speed Ratings")
+    - i18nexifphotoshutterspeedvalue ("Shutter Speed Value")
+    - i18nexifphotoaperturevalue ("Aperture Value")
+    - i18nexifphotofocallength ("Focal Length")
+
+If you need other i18n parameters, let us know.
+
+Images and CSS Files
+~~~~~~~~~~~~~~~~~~~~
+
+You are free to use images, CSS files or other files in your theme: just put them in the theme folder and the tool will copy them in the output folder.
+
+## Original images
+
+As explained before, if the user selects the option "include original images",
+the :file:`gallery.xml` file will contain **<original />** tags. If this tag is present,
+the image page should contain a link to download the original image.
+
+Here is an example:
+
+.. code-block:: xml
+
+    <xsl:if test="original/@fileName != ''">
+          <p>
+               <a href="{original/@fileName}"><xsl:value-of select="$i18nOriginalImage"/></a>
+          </p>
+     </xsl:if>
+
+## Non-square thumbnails
+
+By default, thumbnails are cropped so that they are square-shaped and all have an identical size. This makes it easier to create the HTML/CSS style.
+
+However, if your theme is ready to cope with thumbnails of different sizes, add this snippet to your desktop file:
+
+.. code-block:: ini
+
+    [X-HTMLGallery Options]
+    Allow-non-square-thumbnails=true
+
+The user will then be able to select whether squares should or should not be square. For non-square thumbnails, the specified thumbnail size becomes the size of the larger side of the thumbnail.
+
+## Going further, theme parameters
+
+You might want to provide a way for your user to customize your theme, for example you could provide a few alternative CSS files, or let the user customize the background color. This is easy to do.
+
+### Declaring a parameter
+
+First, you need to declare your parameter. Edit your desktop file and add something like this:
+
+.. code-block:: ini
+
+    [X-HTMLGallery Parameter bgColor]
+    Name=Background Color
+    Type=color
+    Default=#123456
+
+Now start the tool and select your theme, after pressing next, you should see an option page with a color button initialized to the **#123456** color.
+
+### Using the value of a parameter
+
+In template.xsl, you can get the value of your parameter like this:
+
+.. code-block:: xml
+
+    <xsl:value-of select="$bgColor"/>
+
+To change the background color of the **body** tag, you would write something like this:
+
+.. code-block:: xml
+
+    <body bgcolor="{$bgColor}">
+    ...
+    </body>
+
+### Parameter reference
+
+Here is a more complete description of the way to declare parameters.
+
+A parameter is declared by a section named **X-HTMLGallery Parameter someName**. **someName** should be replaced with the name you want to use in :file:`template.xsl`.
+
+- The **Name** key defines the text which will be shown in the option page. Since this is a desktop file, it can be translated like the other keys.
+
+- The **Type** key defines the type of the parameter. At the time of this writing it can be one of:
+
+    - caption
+    - string
+    - color
+    - list
+    - int
+
+- The **Default** key defines the default value of the parameter.
+
+#### List parameter keys
+
+A list parameter lets the user select an item from a list. To declare the available items, you must use two sets of keys: **Value-N** and **Caption-N**, where **N** is the position of the item, starting from **0**.
+
+**Value-N** is the internal value of the item. This is the value which will be set to the parameter.
+
+**Caption-N** is the displayed value of the item. This is the text which will be shown in the list.
+
+Here is an example: the **style** parameter from the **Simple** theme:
+
+.. code-block:: ini
+
+     [X-HTMLGallery Parameter style]
+     Name=Style
+     Type=list
+     Default=natural.css
+     Value-0=natural.css
+     Caption-0=Natural
+     Value-1=dark.css
+     Caption-1=Dark
+
+As you can see, the user will be able to choose either **Natural** or **Dark**. Depending on the user choice, **<xsl:value-of select='$style'/>** will expand to either :file:`natural.css` or :file:`dark.css`.
+
+#### Int parameter keys
+
+An int parameter lets the user select an integer using a spin-box. In addition to the default value, you can define the minimum and maximum values, using the **Min** and **Max** keys.
+
+Here is an example:
+
+.. code-block:: ini
+
+     [X-HTMLGallery Parameter size]
+     Name=Size
+     Type=int
+     Default=12
+     Min=4
+     Max=28
+
+#### String and Caption parameter keys
+
+A string parameter lets the user enter a single string to set configuration rules for example. A caption parameter lets the user enter a multi-string with spell-checking support to set a description or a title.
+
 Final Words
 ~~~~~~~~~~~
 
