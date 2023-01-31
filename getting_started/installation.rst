@@ -85,9 +85,9 @@ Using on Standard Desktop
 
 **digiKam** runs only on 64bit version of Windows. digiKam runs on Windows 7 and newer. We cannot guarantee that digiKam runs on server or embedded Windows version.
 
-digiKam is available as an **installable** and as a **standalone** version.
+digiKam is available as an **installable** (Setup Program) and as a **standalone** (Archive) version.
 
-    - **Installable** version: Needs administrator rights and gets installed on your local machine. It's also listed as a program.
+    - **Installable** version: **Needs** administrator rights and gets installed on your local machine. It's also listed as a program.
 
         - It's available for all users on your computer.
 
@@ -97,12 +97,26 @@ digiKam is available as an **installable** and as a **standalone** version.
 
         If a previous digiKam version is present on your system, the Windows installer will warns you to uninstall it before to process to the new installation.
 
-        .. figure:: images/windows_installer_warning.webp
-            :width: 300px
-            :alt:
-            :align: center
+    .. figure:: images/windows_installer_warning.webp
+        :width: 300px
+        :alt:
+        :align: center
 
-            The Windows Warning When you Try to Install digiKam When a Previous Version is Present
+        The Windows Warning When you Try to Install digiKam When a Previous Version is Present
+
+    .. figure:: images/windows_installer_uninstall.webp
+        :width: 300px
+        :alt:
+        :align: center
+
+        The Windows Dialog to Uninstall Previous Version of digiKam
+
+    .. figure:: images/windows_installer_install.webp
+        :width: 300px
+        :alt:
+        :align: center
+
+        The Windows Dialog to Install Newer Version of digiKam
 
     - **Standalone** version: **Doesn't** need administrator rights and isn't installed. It's **not** listed as a program. Is only accessible for the user who has downloaded the file.
 
