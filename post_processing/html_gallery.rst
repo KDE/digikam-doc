@@ -106,38 +106,38 @@ Finally, the HTML gallery generated is displayed in a browser.
 Creating a New Theme
 --------------------
 
-The HTML Gallery tool can easily be themed to produce very different sites.
-This document explains how to create themes.
+The HTML Gallery tool can easily be themed to produce very different sites. This chapter explains how to create themes.
 
 Getting started
 ~~~~~~~~~~~~~~~
 
 A theme is a folder which contains at least two files:
-- a desktop file describing the theme.
-- a template.xsl file to generate the HTML files.
 
-When the tool is run it does the following:
+    - a desktop file describing the theme.
+    - a :file:`template.xsl` file to generate the HTML files.
 
-- Create an output folder
-- For each image collection:
+When the tool is running, it does the following:
 
-  - Create a folder
-  - Generate thumbnails (square by default)
-  - Generate full images
-  - Optionally copy original images
+    - Create an output folder.
+    - For each image collection:
 
-- Copy the theme folder to the output folder
-- Generate an XML file describing the image collections: gallery.xml
-- Generate the HTML files by applying template.xsl to gallery.xml
+        - Create a folder.
+        - Generate thumbnails (square by default).
+        - Generate full images.
+        - Optionally copy original images.
+
+    - Copy the theme folder to the output folder.
+    - Generate an XML file describing the image collections: :file:`gallery.xml`.
+    - Generate the HTML files by applying :file:`template.xsl` to :file:`gallery.xml`.
 
 The Desktop File
 ~~~~~~~~~~~~~~~~
 
+The desktop file describes the theme. The information it contains is used in the theme selection page of the tool.
 
-The desktop file describes the theme. The information it contains is used in the
-theme selection page of the tool.
+It's an INI file and it looks like this:
 
-It's a .ini-style file and looks like this:
+.. code-block:: ini
 
     [Desktop Entry]
     Type=Theme
@@ -156,6 +156,8 @@ We use a desktop file format so that entries can be translated. If you look at
 the desktop file for one of the themes shipped with the tool, you will find
 something like this:
 
+.. code-block:: ini
+
     [Desktop Entry]
     Name=Simple
     Name[br]=Eeun
@@ -164,23 +166,16 @@ something like this:
     Name[da]=Simpel
     ...
 
-The nice thing is that when your theme get integrated into HTML Gallery default
-themes, translators will intertionalize the desktop file for you.
+The nice thing is that when your theme get integrated into HTML Gallery default themes, translators will internationalize the desktop file for you.
 
 Image preview file will be placed in the root theme folder.
 
 Creating new Theme from Another One
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The easiest way to get started is to copy one theme and modify it.
-Theme folders can be found in ${DATA_INSTALL_DIR}/digikam/themes/,
-where ${DATA_INSTALL_DIR} is the install folder of digiKam on your machine
-(usually /usr under Linux).
+The easiest way to get started is to copy one theme and modify it. folder can be found usually under **Linux** at :file:`/usr/share/apps/digikam/themes/`. Writing in this folder requires root access, so we will not create our theme there, Instead do the following from a console:
 
-Writing in this folder requires root access, so we will not create our theme
-there, instead do the following:
-
-Create a theme folder in your home:
+Create a theme folder in your home directory:
 
 .. code-block:: shell
 
@@ -192,11 +187,11 @@ Create a theme folder in your home:
 
     cd ~/.local/share/digikam/themes/
 
-Copy the "snow" theme to this folder, under a new name: "snow2":
+Copy the **snow** theme to this folder, under a new name **snow2**:
 
 .. code-block:: shell
 
-    cp -r ${DATA_INSTALL_DIR}/digikam/themes/snow snow2
+    cp -r /usr/share/apps/digikam/themes/snow snow2
 
 Rename the desktop file accordingly:
 
@@ -205,7 +200,7 @@ Rename the desktop file accordingly:
     cd snow2
     mv snow.desktop snow2.desktop
 
-Edit :file:`snow2.desktop**`: Remove all the **Name[...]** entries and replace **Name=Snow**
+Edit :file:`snow2.desktop**` to remove all the **Name[...]** entries and replace **Name=Snow**
 with **Name=Snow 2**.
 
 You are done, you can now open digiKam and start the HTML Gallery tool, the **Snow 2** theme should appear in the theme list.
@@ -213,7 +208,7 @@ You are done, you can now open digiKam and start the HTML Gallery tool, the **Sn
 Generating HTML Using XSL Rules
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The template.xsl file is responsible for generating the HTML files from the :file:`gallery.xml` file.
+The :file:`template.xsl` file is responsible for generating the HTML files from the :file:`gallery.xml` file.
 
 It looks like this:
 
@@ -256,7 +251,7 @@ We won't explain XSLT here, you should be able to find the documentation you nee
 
 It's worth nothing nevertheless that you can make use of `EXSLT <https://www.exslt.org>`_, a set of extensions to XSLT. In particular, the `exslt:document element <https://www.exslt.org/exsl/elements/document>`_  is extremely useful because it allows you to generate multiple documents from the same file.
 
-HTML Gallery tool imposes no constraint on the organization of HTML files: you can generate one file per image, or only one per collection. One could imagine a theme which would only contains one HTML file and uses Javascript to show the different images, there is already one theme using frames, you can even generate CSS files on the fly if you want to.
+HTML Gallery tool imposes no constraint on the organization of HTML files: you can generate one file per image, or only one per collection. One could imagine a theme which would only contains one HTML file and uses JavaScript to show the different images, there is already one theme using frames, you can even generate CSS files on the fly if you want to.
 
 About translations
 ~~~~~~~~~~~~~~~~~~
@@ -276,8 +271,7 @@ Do this:
     <a href="previous"><xsl:value-of select="$i18nPrevious"/></a>
     | <a href="next"><xsl:value-of select="$i18nNext"/></a>
 
-It's quite a lot more verbose, but this way your user will get localized HTML
-output.
+It's quite a lot more verbose, but this way your user will get localized HTML output.
 
 Final Words
 ~~~~~~~~~~~
