@@ -758,6 +758,10 @@ Menu Descriptions
 
     .. container:: tile no-descr
 
+        :ref:`menu_batchqueue`
+
+    .. container:: tile no-descr
+
         :ref:`menu_showfoto`
 
 .. toctree::
