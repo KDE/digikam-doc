@@ -183,7 +183,7 @@ The easiest way to get started is to copy templates.xml file and modify it. Temp
 
     mkdir -p ~/.config/share/apps/digikam/templates/
 
-- Go to this directory to it:
+- Go to this directory:
 
 .. code-block:: shell
 
@@ -202,7 +202,6 @@ You are done, you can now open digiKam and start the tool, your new templates sh
 Final Words
 ~~~~~~~~~~~
 
-This is the end of this howto, now is the time for you to get creative and add new templates.
+This is the end of this chapter, now is the time for you to get creative and add new templates.
 
-When you are done, do not hesitate to propose your work for an official integration in digiKam, to see your new layout  included in the official template list. See the `Contribute page <https://www.digikam.org/contribute/>`_ from the official digiKam project web-site.
-
+When you are done, do not hesitate to propose your work for an official integration in digiKam, to see your new layout included in the official list. See the `Contribute page <https://www.digikam.org/contribute/>`_ from the digiKam project web-site for details.
