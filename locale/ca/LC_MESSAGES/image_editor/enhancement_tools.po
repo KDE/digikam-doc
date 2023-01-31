@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-14 16:27+0000\n"
-"PO-Revision-Date: 2023-01-24 17:41+0100\n"
+"POT-Creation-Date: 2023-01-30 00:50+0000\n"
+"PO-Revision-Date: 2023-01-30 23:26+0100\n"
 "Last-Translator: Antoni Bella <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -56,7 +56,6 @@ msgstr ""
 "lent esfèrica en les fotografies."
 
 #: ../../image_editor/enhancement_tools.rst:25
-#, fuzzy
 msgid ""
 "Barrel distortion is associated with wide angle (or minimal zoom) lenses. It "
 "causes the images to appear slightly spherical (curved outward) like a "
@@ -68,22 +67,25 @@ msgid ""
 "These distortions can easily be eliminated without visible loss in quality "
 "with this tool."
 msgstr ""
-"La distorsió de barril està associada amb lents de gran angular (o zoom "
-"mínim). Causa que les imatges apareguin lleugerament esfèriques (corbada cap "
-"a fora) com un barril. Ho podeu notar quan tingueu característiques rectes "
+"La distorsió de barril està associada amb lents de gran angular (o zoom al "
+"mínim). Causa que les imatges apareguin lleugerament esfèriques (corbades "
+"cap a fora) com un barril. Ho notareu quan tingueu característiques rectes a "
 "prop de parts perifèriques de la imatge. La distorsió de coixinet és el "
-"defecte contrari i s'associa amb les lents de telescopi (zoom màxim) o "
-"imatges submarines. Les imatges apareixen pessigades (doblegada cap a dins) "
-"cap al centre. L'efecte de coixinet sovint és menys visible que el de "
-"barril, però són igualment visibles a prop de les vores. Aquestes "
-"distorsions es poden eliminar amb facilitat sense una pèrdua visible en la "
-"qualitat amb aquesta eina."
+"defecte contrari i s'associa amb les lents de telescopi (zoom al màxim) o "
+"amb imatges submarines. Les imatges apareixen pessigades (blegades cap "
+"endins) cap al centre. L'efecte de coixinet sovint és menys visible que el "
+"de barril, però són igualment visibles a prop de les vores. Aquestes "
+"distorsions es poden eliminar fàcilment amb aquesta eina sense una pèrdua "
+"visible en la qualitat."
 
 #: ../../image_editor/enhancement_tools.rst:29
 msgid ""
 "This tool treats the geometrical distortions. Chromatic aberrations will not "
 "be corrected by this tool. See the **Lens Auto Correction** tool instead."
 msgstr ""
+"Aquesta eina tracta les distorsions geomètriques. No corregirà les "
+"aberracions cromàtiques. En el seu lloc, vegeu l'eina **Correcció automàtica "
+"de la lent**."
 
 #: ../../image_editor/enhancement_tools.rst:31
 msgid ""
@@ -109,25 +111,22 @@ msgid "The Geometrical Distortion Types"
 msgstr "Els tipus de distorsió geomètrica"
 
 #: ../../image_editor/enhancement_tools.rst:47
-#, fuzzy
 msgid ""
 "A bit of explanation first. The geometrical corrections use 4th-order "
 "polynomial coefficients:"
 msgstr ""
-"Primer, algunes explicacions. Les correccions geomètriques utilitzen "
-"coeficients dels polinomis de quart ordre."
+"Primer, una mica d'explicació. Les correccions geomètriques utilitzen "
+"coeficients polinomials de quart ordre:"
 
 #: ../../image_editor/enhancement_tools.rst:49
-#, fuzzy
 msgid ""
 "The 1st-order coefficient changes the size of the image. The tool calls this "
 "**Zoom**."
 msgstr ""
-"El coeficient de primer ordre canvia la mida de la imatge. L'eina ho anomena "
+"El coeficient de primer ordre canvia la mida de la imatge. L'eina l'anomena "
 "**Zoom**."
 
 #: ../../image_editor/enhancement_tools.rst:51
-#, fuzzy
 msgid ""
 "The 2nd-order coefficient treats the main geometrical distortion of lenses "
 "and can correct the convex or concave shape of the image."
@@ -136,7 +135,6 @@ msgstr ""
 "lents i pot corregir la forma convexa o còncava de la imatge."
 
 #: ../../image_editor/enhancement_tools.rst:53
-#, fuzzy
 msgid ""
 "The 3rd-order coefficient has a similar rounding effect but levels off "
 "towards the edges. This correction is not employed in the tool."
@@ -145,7 +143,6 @@ msgstr ""
 "s'anivella cap a les vores. Aquesta correcció no s'empra en l'eina."
 
 #: ../../image_editor/enhancement_tools.rst:55
-#, fuzzy
 msgid ""
 "The 4th-order coefficient corrects the far edges inversely to the 2nd-order "
 "rounding. Combining it with the 2nd-order correction the geometrical "
@@ -160,73 +157,66 @@ msgid "The Image Editor Lens Distortion Tool"
 msgstr "L'eina Distorsió de la lent en l'editor d'imatges"
 
 #: ../../image_editor/enhancement_tools.rst:63
-#, fuzzy
 msgid "Four sliders let you set the distortion correction filter:"
 msgstr ""
-"Quatre controls lliscants us permeten ajustar el filtre de correcció de la "
+"Quatre controls lliscants permeten establir el filtre de correcció de la "
 "distorsió:"
 
 #: ../../image_editor/enhancement_tools.rst:65
-#, fuzzy
 msgid ""
 "**Main**: this value controls the amount of 2nd-order distortion. Negative "
 "values correct barrel distortions, while positive values correct pincushion "
 "distortion."
 msgstr ""
-"**Principal**: Aquest valor controla la quantitat de distorsió de segon "
+"**Principal**: aquest valor controla la quantitat de distorsió del segon "
 "ordre. Els valors negatius corregeixen la distorsió de barril, mentre que "
 "els positius corregeixen la distorsió de coixí."
 
 #: ../../image_editor/enhancement_tools.rst:67
-#, fuzzy
 msgid ""
 "**Edge**: this value controls the amount of 4th-order distortion. The Edge "
 "control has more effect at the edges of the image than at the center. For "
 "most lenses, the **Edge** parameter has the opposite sign of the **Main** "
 "parameter."
 msgstr ""
-"**Límit**: aquest valor controla la quantitat de distorsió de quart ordre. "
-"Controla que té més efecte en les vores de la imatge que al centre. Per a la "
-"majoria de les lents, el paràmetre **Límit** té el signe oposat del "
-"paràmetre **Principal**."
+"**Límit**: aquest valor controla la quantitat de distorsió del quart ordre. "
+"Controla que té més efecte a les vores de la imatge que al centre. Per a la "
+"majoria de les lents, el paràmetre de **Límit:** té el signe oposat del "
+"paràmetre de **Principal:**."
 
 #: ../../image_editor/enhancement_tools.rst:69
-#, fuzzy
 msgid ""
 "**Zoom**: this value rescales the overall image size (1st-order correction). "
 "Negative values zoom out of the image, while positive values zoom in."
 msgstr ""
 "**Zoom**: aquest valor converteix a una escala la mida de tota la imatge "
 "(correcció de primer ordre). Els valors negatius allunyen de la imatge, "
-"mentre que els valors positius la faran més gran."
+"mentre que els valors positius l'apropen."
 
 #: ../../image_editor/enhancement_tools.rst:71
-#, fuzzy
 msgid ""
 "**Brighten**: this control adjusts the brightness in image corners. Negative "
 "values decrease the brightness image corners, while positive values increase "
 "it."
 msgstr ""
-"**Brillantor**: aquest control ajusta la brillantor a les cantonades de la "
-"imatge. Els valors negatius disminueixen la brillantor a les cantonades de "
-"la imatge, mentre que els valors positius l'augmentaran."
+"**Brillantor**: aquest control ajusta la brillantor en les cantonades de la "
+"imatge. Els valors negatius disminueixen la brillantor en les cantonades de "
+"la imatge, mentre que els valors positius l'augmenten."
 
 #: ../../image_editor/enhancement_tools.rst:73
-#, fuzzy
 msgid ""
 "To help you to choose the best filter settings, the widget dialog "
 "illustrates with a thumbnail preview the distortion correction applied to a "
 "crossed mesh pattern. The values you apply to your image will be saved and "
 "come up with the same values as default the next time you call the tool."
 msgstr ""
-"Per ajudar-vos a triar els millors ajustos pels filtres, el diàleg del giny "
-"il·lustra amb una vista prèvia en miniatura la correcció de la distorsió "
-"aplicada a un patró de malla creuada. Els valors que apliqueu a la imatge es "
-"desaran i tornaran a aparèixer com per omissió la propera vegada que crideu "
-"a l'eina."
+"Per a ajudar-vos a triar les millors opcions de configuració per als "
+"filtres, el diàleg del giny il·lustra amb una vista prèvia en miniatura la "
+"correcció de la distorsió aplicada a un patró de malla creuada. Els valors "
+"que apliqueu a la imatge es desaran i tornaran a aparèixer de manera "
+"predeterminada la propera vegada que crideu a l'eina."
 
 #: ../../image_editor/enhancement_tools.rst:77
-#, fuzzy
 msgid ""
 "The barrel-pincushion correction should be done before any crop or size "
 "changes (including perspective correction). In fact the Barrel-Pincushion "
@@ -237,7 +227,7 @@ msgstr ""
 "canvi de mida (inclosa la correcció de la perspectiva). De fet, les "
 "correccions de barril/coixinet hauran de ser el primer pas sobre la imatge "
 "original. Si escapceu la imatge i després utilitzeu la correcció de barril, "
-"l'efecte seria òbviament erroni."
+"l'efecte serà òbviament incorrecte."
 
 #: ../../image_editor/enhancement_tools.rst:79
 msgid ""
@@ -248,6 +238,13 @@ msgid ""
 "freeze the dashed lines position. Now, adjust the barrel/pincushion "
 "correction to align with the guide."
 msgstr ""
+"Per a ajudar-vos a trobar la millor correcció, l'eina proporciona una guia "
+"vertical i horitzontal. Moveu el cursor del ratolí a sobre de la vista "
+"prèvia de la imatge per a mostrar la guia de línies discontínues. Moveu el "
+"cursor cap a un lloc important en la imatge com el nivell del mar o la vora "
+"d'un edifici i premeu el botó esquerre del ratolí per a congelar la posició "
+"de les línies discontínues. Ara, ajusteu la correcció de barril/coixinet per "
+"a alinear-la amb la guia."
 
 #: ../../image_editor/enhancement_tools.rst:81
 msgid ""
@@ -256,9 +253,13 @@ msgid ""
 "available in :menuselection:`Transform --> Crop` Image Editor menu or via "
 "the zoom slider of this dialog."
 msgstr ""
+"Quan utilitzeu la correcció de coixinet, la imatge resultant tindrà una vora "
+"negra a la cantonada. Haureu de retallar-la amb una eina d'escapçat "
+"disponible en l'element de menú «:menuselection:`Transforma --> Escapça`» de "
+"l'editor d'imatges o mitjançant el control lliscant **Zoom:** en aquest "
+"diàleg."
 
 #: ../../image_editor/enhancement_tools.rst:83
-#, fuzzy
 msgid ""
 "On most images using the barrel correction is enough, however with some "
 "shots such as front images, frames, paintings, the next logical step is to "
@@ -266,10 +267,10 @@ msgid ""
 "you hold your camera by hand you almost always introduce some kind of slight "
 "perspective distortion."
 msgstr ""
-"En la majoria de les imatges utilitzar la correcció de barril és suficient, "
-"però, amb algunes fotografies com imatges frontals, marcs, quadres, el "
-"següent pas lògic és utilitzar la correcció de la perspectiva per fer tots "
-"els angles de 90 graus. Tingueu en compte que quan sosteniu la vostra càmera "
+"En la majoria de les imatges, utilitzar la correcció de barril n'hi ha prou, "
+"però amb algunes fotografies com imatges frontals, marcs, quadres, el pas "
+"lògic següent és utilitzar la correcció de la perspectiva per a fer tots els "
+"angles de 90 graus. Cal tenir en compte que quan sosteniu la vostra càmera "
 "amb la mà gairebé sempre es presentarà una mena de distorsió lleu de la "
 "perspectiva."
 
@@ -299,6 +300,11 @@ msgid ""
 "substantially reducing the light reaching the sensor there. But telelenses "
 "may show vignetting too."
 msgstr ""
+"Les lents gran angular, especialment les que s'utilitzen en fotografia de "
+"format mitjà i gran, sovint no il·luminen uniformement tot el pla del "
+"sensor. En canvi, *vinyeten* (ombregen) les vores i els cantonades de la "
+"imatge, reduint substancialment la llum que arriba fins al sensor. Però els "
+"teleobjectius també poden mostrar vinyetatge."
 
 #: ../../image_editor/enhancement_tools.rst:97
 msgid ""
@@ -311,9 +317,16 @@ msgid ""
 "which occurs when camera movements are employed for perspective or plane of "
 "focus adjustment."
 msgstr ""
+"La solució tradicional per a això és connectar un *filtre central* a la "
+"lent. Es tracta d'un filtre de densitat neutra amb densitat màxima a l'eix "
+"òptic de la lent, clar a la perifèria, amb una densitat que varia "
+"inversament al vinyetatge de la lent. Un filtre central té molts avantatges: "
+"no només corregeix automàticament les imatges en tot el marc, sinó que, com "
+"que està fixat a la part davantera de la lent, també compensa el vinyetatge "
+"descentrat que es produeix quan s'utilitzen els moviments de la càmera per a "
+"la perspectiva o el pla d'enfocament."
 
 #: ../../image_editor/enhancement_tools.rst:99
-#, fuzzy
 msgid ""
 "But there are disadvantages as well. Many center filters require a 1.5 or 2 "
 "f-stop filter factor adjustment, which may in turn necessitate a shutter "
@@ -322,13 +335,13 @@ msgid ""
 "impossible and motion blur becomes a problem when photographing moving "
 "objects."
 msgstr ""
-"Però també hi ha desavantatges. Molts filtres centrals requereixen un factor "
-"d'ajust d'1,5 o 2 del diafragma, que al seu torn pot requerir una velocitat "
-"d'obturació tan lenta (a causa que les lents de gran angular, fins i tot amb "
-"filtres centrals, són les més utilitzades en les obertures de f/16 o més "
-"petites) que sostenir la càmera amb la mà és impossible i el difuminat per "
-"moviment es converteix en un problema quan es fotografien objectes en "
-"moviment."
+"Però també hi ha desavantatges. Molts filtres centrals requereixen un ajust "
+"del factor de filtre d'aturada F d'1,5 o 2, el qual al seu torn pot requerir "
+"una velocitat d'obturació tan lenta (a causa que les lents de gran angular, "
+"fins i tot amb filtres centrals, són les més utilitzades en les obertures de "
+"f/16 o més petites) que sostenir la càmera amb la mà és impossible i el "
+"difuminat per moviment es converteix en un problema quan es fotografien "
+"objectes en moviment."
 
 #: ../../image_editor/enhancement_tools.rst:101
 msgid ""
@@ -337,6 +350,10 @@ msgid ""
 "the effect of a center filter by applying an equivalent transform to a raw "
 "image taken without the filter."
 msgstr ""
+"Amb l'interval d'exposició àmplia de les pel·lícules actuals i la "
+"profunditat de color (o escala de grisos) de les càmeres digitals o escàners "
+"de pel·lícula, és possible simular l'efecte d'un filtre central aplicant una "
+"transformació equivalent a una imatge RAW capturada sense el filtre."
 
 #: ../../image_editor/enhancement_tools.rst:104
 msgid "Using the vignetting correction tool"
@@ -347,16 +364,15 @@ msgid "The Vignetting Correction Types"
 msgstr "Els tipus de correcció del vinyetatge"
 
 #: ../../image_editor/enhancement_tools.rst:112
-#, fuzzy
 msgid ""
 "Five sliders give you control over the vignetting correction filter, and "
 "three more over the target image exposure:"
 msgstr ""
-"Cinc controls lliscants que us permeten controlar el filtre de correcció del "
-"vinyetatge, i tres més per corregir l'exposició de la imatge de destinació:"
+"Cinc controls lliscants que permeten controlar el filtre de correcció del "
+"vinyetatge, i tres més per a corregir l'exposició sobre la imatge de "
+"destinació:"
 
 #: ../../image_editor/enhancement_tools.rst:114
-#, fuzzy
 msgid ""
 "**Amount**: this option controls the degree of luminosity attenuation by the "
 "filter at its point of maximum amount. The default amount is 2.0, which "
@@ -365,14 +381,13 @@ msgid ""
 "for a greater degree of vignetting; reduce it for less."
 msgstr ""
 "**Quantitat**: aquesta opció controla el grau d'atenuació de la lluminositat "
-"pel filtre en el seu punt de màxima quantitat. La quantitat per omissió és "
-"de 2,0, la qual correspon a un filtre òptic amb una obertura del diafragma "
-"d'1 (o, per a cap coincidència, un factor de 2 en la lluminositat). "
-"Augmenteu la quantitat per a compensar un major grau de vinyetatge -reduir-"
-"la per menys-."
+"per al filtre en el seu punt de màxima quantitat. La quantitat "
+"predeterminada és de 2,0, la qual correspon a un filtre òptic amb un factor "
+"de filtre d'aturada F d'1 (o, per a cap coincidència, un factor de 2 en la "
+"lluminositat). Augmenteu la quantitat per a compensar un major grau de "
+"vinyetatge -reduïu-la per a menys-."
 
 #: ../../image_editor/enhancement_tools.rst:116
-#, fuzzy
 msgid ""
 "**Feather**: this option determines the rate at which the filter intensity "
 "falls off from the point of maximum amount toward the edges, expressed as a "
@@ -386,14 +401,14 @@ msgid ""
 msgstr ""
 "**Ploma**: aquesta opció determina la velocitat a la qual decau la "
 "intensitat del filtre des del punt de màxima quantitat cap a les vores, "
-"expressat com un factor de potència. El valor per omissió d'1 produeix una "
-"reducció lineal en la quantitat de filtre amb la distància des del centre. "
-"Els factors de potència superiors a 1,0 provoquen un deteriorament més ràpid "
-"(per exemple, una potència de 2 causa que la quantitat disminueixi amb el "
-"quadrat de la distància des del centre) i fa que l'efecte del filtre es "
-"concentri a prop del centre. Les potències de menys d'1 dispersaran la "
-"quantitat del filtre cap a les vores, una potència de 0,5 causarà que la "
-"quantitat caigui com l'arrel quadrada de la distància des del centre."
+"expressada com un factor de potència. El valor predeterminat d'1 produeix "
+"una reducció lineal en la quantitat de filtre amb la distància des del "
+"centre. Els factors de potència superiors a 1,0 provoquen un deteriorament "
+"més ràpid (per exemple, una potència de 2 causa que la quantitat disminueixi "
+"amb el quadrat de la distància des del centre) i fa que l'efecte del filtre "
+"es concentri a prop del centre. Les potències de menys d'1 dispersaran la "
+"quantitat del filtre cap a les vores. Una potència de 0,5 farà que la "
+"quantitat disminueixi com l'arrel quadrada de la distància des del centre."
 
 #: ../../image_editor/enhancement_tools.rst:118
 msgid ""
@@ -411,9 +426,23 @@ msgid ""
 "which extends well beyond the edges of the film, requiring a radius setting "
 "greater than 1 to simulate a center filter covering the entire image circle."
 msgstr ""
+"**Radi**: aquesta opció especifica el radi, com un múltiple de la meitat de "
+"la diagonal de la imatge, en què la quantitat del filtre cau a zero (o, en "
+"altres paraules, es torna transparent). El valor predeterminat d'1,0 "
+"especifica un filtre que és transparent a les cantonades. Una especificació "
+"de ràdio superior a 1 estendrà l'efecte del filtre central més enllà de les "
+"vores de la imatge, mentre que un radi inferior a un limitarà l'acció del "
+"filtre a una regió més petita que la imatge. Quan es compensa la vinyeta per "
+"les lents utilitzades amb càmeres de format gran i algunes de format mitjà, "
+"el factor de ràdio predeterminat d'1 poques vegades és correcte! Aquestes "
+"lents sovint «cobreixen» un cercle d'imatge substancialment més gran que la "
+"pel·lícula per a permetre que el moviment de la càmera controli la "
+"perspectiva i l'enfocament i, per tant, tenen un patró de vinyetatge que "
+"s'estén molt més enllà de les vores de la pel·lícula, i requereix una "
+"configuració de ràdio més gran que 1 per a simular un filtre central que "
+"cobreixi tot el cercle de la imatge."
 
 #: ../../image_editor/enhancement_tools.rst:120
-#, fuzzy
 msgid ""
 "**X offset** and **Y offset** settings: these options moves respectively the "
 "center of the filter horizontally or vertically up to the border of the "
@@ -422,15 +451,15 @@ msgid ""
 "right. A negative value for the Y offset will move the filter up, and "
 "finally a positive value will move it down."
 msgstr ""
-"Ajustos **Desplaçament X** i **Desplaçament Y**: aquestes opcions mouen "
-"respectivament el centre del filtre de manera horitzontal o vertical fins a "
-"la vora de la imatge en el percentatge especificat. Un valor negatiu per al "
-"desplaçament X mourà el filtre a l'esquerra, mentre que un valor positiu el "
-"mourà cap a la dreta. Un valor negatiu per al desplaçament Y mourà el filtre "
-"amunt, i, finalment, un valor positiu el mourà cap avall."
+"Opcions de configuració **Desplaçament X** i **Desplaçament Y**: aquestes "
+"opcions mouen respectivament el centre del filtre de manera horitzontal o "
+"vertical fins a la vora de la imatge en el percentatge especificat. Un valor "
+"negatiu per al desplaçament X mourà el filtre cap a l'esquerra, mentre que "
+"un valor positiu el mourà cap a la dreta. Un valor negatiu per al "
+"desplaçament Y mourà el filtre cap amunt, així com un valor positiu el mourà "
+"cap avall."
 
 #: ../../image_editor/enhancement_tools.rst:122
-#, fuzzy
 msgid ""
 "**Add Vignetting**: many photographs looks flat because of a distracting "
 "background or another composition matter. While most of time you will want "
@@ -439,16 +468,15 @@ msgid ""
 "As an artist you may choose this option, ticking it will invert the filter "
 "thus darkening the corners of a photograph."
 msgstr ""
-"**Afegeix vinyetatge**: moltes fotografies semblen poc interessants perquè "
-"tenen un fons que distreu a la gent o per un defecte en la composició. "
-"Encara que la majoria de les vegades voldreu eliminar el vinyetatge, és un "
-"fet que un vinyetatge selectiu podria millorar la llegibilitat d'una "
-"fotografia i dibuixar els ulls al model preposat. Com a artista podeu triar "
-"aquesta opció, marcant la casella que invertirà el filtre perquè les "
-"cantonades de la fotografia s'enfosqueixin."
+"**Afegeix vinyetatge**: moltes fotografies semblen planes perquè tenen un "
+"fons que distreu a la gent o per un defecte en la composició. Tot i que la "
+"majoria de les vegades voldreu eliminar el vinyetatge, és un fet que un "
+"vinyetatge selectiu podria millorar la llegibilitat d'una fotografia i "
+"atreure els ulls cap al tema previst. Com a artista podreu triar aquesta "
+"opció, marcant la casella que invertirà el filtre perquè s'enfosqueixin les "
+"cantonades de la fotografia."
 
 #: ../../image_editor/enhancement_tools.rst:124
-#, fuzzy
 msgid ""
 "The only way to be sure which settings of **Amount**, **Feather**, and "
 "**Radius** best compensate for the actual optical characteristics of a given "
@@ -464,21 +492,21 @@ msgid ""
 "precisely compensate for the actual vignetting to create images which "
 "viewers will perceive as uniformly illuminated."
 msgstr ""
-"L'única manera d'estar segur que l'ajust de **Quantitat**, **Ploma** i "
-"**Radi** compensen millor les característiques òptiques reals d'una lent "
+"L'única manera d'estar segur que l'ajust de **Quantitat:**, **Ploma:** i "
+"**Radi:** compensen millor les característiques òptiques reals d'una lent "
 "donada exposant una escena il·luminada de manera uniforme (per exemple, una "
-"targeta grisa il·luminada per llum difusa) i que realitza la densitometria "
-"sobre la imatge resultant (per exemple, amb l'eina Ajust nivells i la seva "
-"barra de posició de l'histograma). Si això no funciona, o les "
-"especificacions per part del fabricant de la lent dona la mesura exacta del "
-"vinyetatge a una o més obertures de treball, possiblement haureu "
-"d'experimentar amb opcions de configuració diferents per trobar els que "
-"funcionen millor per a cadascuna de les vostres lents. Per ajudar-vos en "
+"targeta grisa il·luminada per llum difusa) i que realitza una densitometria "
+"sobre la imatge resultant (per exemple, amb l'eina Ajust dels nivells i la "
+"seva barra de posició en l'histograma). Si això no funciona, o les "
+"especificacions per part del fabricant de la lent proporcionen la mesura "
+"exacta del vinyetatge a una o més obertures de treball, possiblement haureu "
+"d'experimentar amb opcions de configuració diferents fins trobar les que "
+"funcionen millor per a cadascuna de les vostres lents. Per a ajudar-vos en "
 "aquesta tasca, el diàleg del giny proporciona la representació en miniatura "
 "d'una màscara aplicada sobre la imatge. Afortunadament, la resposta de l'ull "
 "humà és logarítmica i no lineal, com la majoria de sensors d'imatge digital, "
 "així que no hi ha necessitat de compensar el vinyetatge real per a crear "
-"imatges que els espectadors percebin com il·luminades de forma uniforme."
+"imatges que els espectadors percebin com a il·luminades de forma uniforme."
 
 #: ../../image_editor/enhancement_tools.rst:128
 msgid ""
@@ -486,6 +514,9 @@ msgid ""
 "Adjust Curve tool from Image Editor available under :menuselection:`Color --"
 "> Adjust Curve` menu entry."
 msgstr ""
+"Si voleu un reajustament de l'exposició més fi de la imatge de destinació, "
+"utilitzeu l'eina Ajust de corba des de l'editor d'imatges disponible sota "
+"l'element de menú «:menuselection:`Color --> Ajust de les corbes`»."
 
 #: ../../image_editor/enhancement_tools.rst:131
 msgid "The vignetting correction tool in action"
@@ -497,6 +528,10 @@ msgid ""
 "original image on the top shows vignetting in the corners, the corrected "
 "image on the bottom much less. The values used for this example are:"
 msgstr ""
+"Aquest és un exemple d'una correcció de l'antivinyetatge aplicada a una "
+"imatge. La imatge original a la part superior mostra vinyetes a les "
+"cantonades, la imatge corregida a la part inferior molt menys. Els valors "
+"utilitzats per a aquest exemple són:"
 
 #: ../../image_editor/enhancement_tools.rst:135
 msgid "Density = 2.6."
@@ -524,6 +559,10 @@ msgid ""
 "imperfections, however digiKam can correct lens imperfections such as "
 "**Distortion**, **Chromatic aberration**, **Vignetting**, and **Geometry**."
 msgstr ""
+"Cap lent no és òpticament perfecta. Fins i tot les lents més cares tenen les "
+"seves pròpies imperfeccions, però el digiKam pot corregir les imperfeccions "
+"de la lent com la **Distorsió:**, l'**Aberració cromàtica:**, el "
+"**Vinyetatge:** i la **Geometria:**."
 
 #: ../../image_editor/enhancement_tools.rst:158
 msgid "The Lens Auto-Correction Tool from digiKam Image Editor"
@@ -539,6 +578,13 @@ msgid ""
 "available. It has more than a hundred lenses in its current databases. It "
 "also uses the **Metadata** from the image to find-out which lens is used."
 msgstr ""
+"Des de l'editor d'imatges, aneu a l'element de menú «:menuselection:`Millora "
+"--> Lent --> Ajustaments automàtics`» per a iniciar l'eina de correcció "
+"automàtica de la lent. Aquesta característica utilitza les dades de lents "
+"des de la biblioteca `Lensfun <https://lensfun.github.io/>`_ i té una base "
+"de dades molt actualitzada de lents disponibles. A les bases de dades actual "
+"hi ha més de cent lents. També s'utilitzen les **Metadades** de la imatge "
+"per a esbrinar quina lent s'utilitza."
 
 #: ../../image_editor/enhancement_tools.rst:162
 msgid ""
@@ -549,6 +595,12 @@ msgid ""
 "lens themselves. If metadata do not match at all, it will be annoted in "
 "**Red**."
 msgstr ""
+"Si hi ha disponible una coincidència exacta utilitzada per a fer la "
+"fotografia, esmentarà que coincideix amb les metadades (anotada en "
+"**Verd**), però, si no hi ha disponible la coincidència exacta, escollirà la "
+"configuració de la coincidència més propera (anotada en **Taronja**). En "
+"aquest cas, també permet a l'usuari que la seleccioni. Si les metadades no "
+"coincideixen en absolut, s'anotarà en **Vermell**."
 
 #: ../../image_editor/enhancement_tools.rst:168
 msgid "Metadata Match with LensFun Database"
@@ -567,11 +619,15 @@ msgid ""
 "You can either enable or disable the helper **Grid** lines to visualise how "
 "the geometrical distortion are corrected on image."
 msgstr ""
+"Podeu activar o desactivar les línies auxiliars de **Quadrícula** per a "
+"visualitzar com es corregeix la distorsió geomètrica sobre la imatge."
 
 #: ../../image_editor/enhancement_tools.rst:188
 msgid ""
 "The Lens Auto-Correction Tool Displaying the Helper Grid over the Canvas"
 msgstr ""
+"L'eina Correcció automàtica de la lent mostrant la quadrícula auxiliar sobre "
+"el llenç"
 
 #: ../../image_editor/enhancement_tools.rst:190
 msgid ""
@@ -579,6 +635,9 @@ msgid ""
 "of the preview window which will show you before and after. When you are "
 "satisfied with the result press **OK**."
 msgstr ""
+"Seleccioneu les correccions que voleu aplicar, moveu el ratolí cap a dins i "
+"cap a fora de la finestra de vista prèvia que us mostra l'abans i el "
+"després. Quan esteu satisfet amb el resultat, premeu **D'acord**."
 
 #: ../../image_editor/enhancement_tools.rst:195
 msgid "Hot Pixels Correction"
@@ -589,6 +648,8 @@ msgid ""
 "digiKam The Hot Pixels tool facilitates removing hot pixels from photographs "
 "taken with a camera electronic sensor."
 msgstr ""
+"L'eina Píxels cremats del digiKam facilita la seva eliminació de les "
+"fotografies fetes amb un sensor electrònic de la càmera."
 
 #: ../../image_editor/enhancement_tools.rst:202
 msgid ""
@@ -596,6 +657,10 @@ msgid ""
 "**Bad Pixels** when using slow shutter speeds. Night images can be ruined by "
 "these Bad Pixels. There are three different types of Bad Pixels:"
 msgstr ""
+"La majoria de les càmeres digitals actuals produeixen imatges amb diversos "
+"**Píxels defectuosos** de colors brillants quan s'utilitzen velocitats "
+"d'obturació lentes. Les imatges nocturnes es poden veure arruïnades per "
+"aquests píxels defectuosos. Hi ha tres tipus diferents de píxels defectuosos:"
 
 #: ../../image_editor/enhancement_tools.rst:204
 msgid ""
@@ -605,6 +670,12 @@ msgid ""
 "of shutter speed, aperture size or any other user settings. It will occur on "
 "a normal exposure and tends to be more obvious under bright condition."
 msgstr ""
+"**Píxels blocats**: és un píxel que sempre llegeix alt o que sempre està "
+"encès al màxim en totes les exposicions. Això produeix un píxel brillant "
+"generalment de color vermell, blau o verd en la imatge final. Es produirà un "
+"píxel blocat independentment de la velocitat d'obturació, la mida d'obertura "
+"o qualsevol altra configuració de l'usuari. Succeirà en una exposició normal "
+"i tendeix a ser més evident en condicions de molta llum."
 
 #: ../../image_editor/enhancement_tools.rst:206
 msgid ""
@@ -613,6 +684,11 @@ msgid ""
 "stuck pixel, a dead pixel will occur regardless of shutter speed, aperture "
 "size or any other user settings."
 msgstr ""
+"**Píxels morts**: és un píxel que llegeix zero o que sempre està apagat en "
+"totes les exposicions. Aquest estat produeix un píxel negre en la imatge "
+"final. Similar al píxel blocat, es produirà un píxel mort independentment de "
+"la velocitat d'obturació, la mida d'obertura o qualsevol altra configuració "
+"de l'usuari."
 
 #: ../../image_editor/enhancement_tools.rst:208
 msgid ""
@@ -621,6 +697,10 @@ msgid ""
 "hot pixels will become. These pixels will not be visible in bright "
 "conditions."
 msgstr ""
+"**Píxels cremats**: és un píxel que es llegeix alt (brillant) en exposicions "
+"més llargues com ara color blanc, vermell o verd. Com més gran sigui el "
+"temps d'exposició, més visibles es tornaran els píxels cremats. Aquests "
+"píxels no són visibles en condicions de molta llum."
 
 #: ../../image_editor/enhancement_tools.rst:210
 msgid ""
@@ -628,9 +708,11 @@ msgid ""
 "images. If the location of the stuck or dead pixel occurs at different "
 "locations, it may be a Hot Pixel."
 msgstr ""
+"Cal tenir en compte que els píxels blocats o morts es produiran a la mateixa "
+"ubicació per a totes les imatges. Si la ubicació del píxel blocat o mort "
+"succeeix a llocs diferents, podria ser un píxel cremat."
 
 #: ../../image_editor/enhancement_tools.rst:212
-#, fuzzy
 msgid ""
 "Stuck, dead or hot pixels are a problem in particular when shooting in high "
 "quality raw mode since many cameras have built-in hot pixel suppression "
@@ -638,9 +720,9 @@ msgid ""
 "case)."
 msgstr ""
 "Els píxels blocats, morts o cremats són un problema en particular, quan es "
-"dispara en mode d'alta qualitat RAW, ja que moltes càmeres tenen una funció "
-"automàtica per a l'eliminació del píxel cremat quan s'utilitza la compressió "
-"JPEG (el que passa en la majoria dels casos)."
+"dispara en el mode RAW d'alta qualitat, ja que moltes càmeres tenen una "
+"supressió de píxels cremats integrada que s'aplica automàticament quan "
+"s'utilitza la compressió JPEG (el que passa en la majoria dels casos)."
 
 #: ../../image_editor/enhancement_tools.rst:214
 msgid ""
@@ -648,6 +730,10 @@ msgid ""
 "photograph using a **Black Frame** subtraction method. There is not a manual "
 "editor to select Bad Pixels."
 msgstr ""
+"Aquesta eina es pot utilitzar per a corregir els **píxels cremats** i els "
+"**píxels blocats** en una fotografia utilitzant un mètode de sostracció del "
+"**marc negre**. No hi ha un editor manual per a seleccionar els píxels "
+"defectuosos."
 
 #: ../../image_editor/enhancement_tools.rst:217
 msgid "Create the Black Frames"
@@ -664,9 +750,16 @@ msgid ""
 "(colored dots). These are positioned at the same places as on your previous "
 "shots."
 msgstr ""
+"El mètode de sostracció del Marc negre és l'eliminació més acurada dels "
+"«Píxels cremats» i dels «Pixels blocats». Primer cal crear un «Marc negre» "
+"com a referència. Això és fàcil de fer. Quan acabeu de prendre fotografies "
+"amb una exposició llarga, poseu la tapa de la lent a la càmera i preneu una "
+"imatge «fosca» amb el mateix temps d'exposició que les captures d'abans. "
+"Aquesta imatge serà tota fosca, però si l'examineu de prop veureu que té "
+"píxels cremats i blocats (punts de color). Aquests estaran situats en els "
+"mateixos llocs que en les fotografies anteriors."
 
 #: ../../image_editor/enhancement_tools.rst:221
-#, fuzzy
 msgid ""
 "Load this file to the widget using the **Black Frame** button. The tool will "
 "process an automatic detection of Hot and Stuck Pixels. They will be "
@@ -682,9 +775,12 @@ msgid ""
 "Frame next time you are taking a long exposure images to detect new Hot and "
 "Stuck Pixels on sensor defects."
 msgstr ""
+"Si utilitzeu una càmera digital antiga, és important tornar a disparar el "
+"marc negre la propera vegada que captureu imatges amb una exposició llarga "
+"per a detectar píxels cremats i blocats nous en els defectes del sensor."
 
 #: ../../image_editor/enhancement_tools.rst:228
-msgid "Using the hotpixel tool"
+msgid "Using the Hotpixel Tool"
 msgstr "Usar l'eina «Píxels cremats»"
 
 #: ../../image_editor/enhancement_tools.rst:234
@@ -692,7 +788,6 @@ msgid "The Image Editor Hot Pixels Tool"
 msgstr "L'eina Píxels cremats en l'editor d'imatges"
 
 #: ../../image_editor/enhancement_tools.rst:236
-#, fuzzy
 msgid ""
 "At first, as explained in the previous section, you need to load a Black "
 "Frame corresponding to the image to correct. An automatic parsing will be "
@@ -700,11 +795,11 @@ msgid ""
 "remember the previous Black Frame used on the last session and it will be re-"
 "opened automatically with the next session."
 msgstr ""
-"En primer lloc, com s'ha explicat a la secció anterior, cal carregar un marc "
-"negre corresponent a la imatge a corregir. Una anàlisi automàtica processarà "
-"el marc negre per trobar els píxels defectuosos. Tingueu en compte que el "
-"giny recordarà el marc negre anterior utilitzat en l'última sessió i el "
-"tornarà a obrir automàticament amb la propera sessió."
+"En primer lloc, com s'ha explicat en la secció anterior, cal carregar un "
+"marc negre corresponent a la imatge que es corregirà. Una anàlisi automàtica "
+"processarà el marc negre fins trobar els píxels defectuosos. Cal tenir en "
+"compte que el giny recordarà el marc negre anterior utilitzat en la darrera "
+"sessió i el tornarà a obrir automàticament amb la propera sessió."
 
 #: ../../image_editor/enhancement_tools.rst:238
 msgid ""
@@ -712,71 +807,70 @@ msgid ""
 "The preview window shows the filter output using the current settings. Bad "
 "Pixels are highlighted on preview area."
 msgstr ""
+"El plafó d'imatges i la vista prèvia original us ajudaran a moure-us dins de "
+"la imatge. La finestra de vista prèvia mostra la sortida del filtre "
+"utilitzant la configuració actual. Els píxels defectuosos es ressaltaran a "
+"l'àrea de vista prèvia."
 
 #: ../../image_editor/enhancement_tools.rst:240
-#, fuzzy
 msgid ""
 "Select an area to see bad pixels on preview and the filter result using "
 "*Separate View* options of image panel. Choose the best **Filter** method to "
 "interpolate pixels or pixel blocks. These are the available filters:"
 msgstr ""
-"Seleccioneu una àrea de la vista prèvia per veure els píxels defectuosos i "
-"el resultat del filtre utilitzant les opcions «Vista separada» del plafó "
+"Seleccioneu una àrea de la vista prèvia per a veure els píxels defectuosos i "
+"el resultat del filtre utilitzant les opcions *Vista separada* del plafó "
 "d'imatges. Escolliu el millor mètode de **Filtre** per a interpolar els "
 "píxels o píxels blocats. Aquests són els filtres disponibles:"
 
 #: ../../image_editor/enhancement_tools.rst:242
-#, fuzzy
 msgid ""
 "**Average**: the pixels adjacent to the pixel block are averaged. The "
 "resulting color is assigned to all pixels in the block. For 1-dimensional "
 "interpolation, this is done separately for one pixel-wide, horizontal or "
 "vertical stripes."
 msgstr ""
-"Mitjana: els píxels adjacents al bloc de píxels faran la mitjana. El color "
-"resultant s'assignarà a tots els píxels en el bloc. Per a la interpolació "
-"dimensional, això es realitza separadament per a una franja de píxels en "
-"amplada, horitzontals o verticals."
+"**Mitjana**: es farà una mitjana dels píxels adjacents al bloc de píxels. El "
+"color resultant s'assignarà a tots els píxels en el bloc. Per a la "
+"interpolació unidimensional, això es realitza per separat per a franges de "
+"píxels d'un píxel d'amplada, en horitzontal o vertical."
 
 #: ../../image_editor/enhancement_tools.rst:244
-#, fuzzy
 msgid ""
 "**Linear**: the pixels which have a distance of 1 from the pixel block are "
 "used to calculate a bi-linear surface (2-dim), or a group of linear curves "
 "(1-dim), which is then used to assign interpolated colors to the pixels in "
 "the block."
 msgstr ""
-"Lineal: els píxels que tenen una distància d'1 des del bloc de píxels "
+"**Lineal**: els píxels que tenen una distància d'1 des del bloc de píxels "
 "s'utilitzen per a calcular una superfície bilineal (2 dimensions), o un grup "
-"de corbes lineals (1 dimensió), que després s'utilitzaran per assignar "
+"de corbes lineals (1 dimensió), el qual després s'utilitzarà per a assignar "
 "colors interpolats als píxels en el bloc."
 
 #: ../../image_editor/enhancement_tools.rst:246
-#, fuzzy
 msgid ""
 "**Quadratic**: this is the default filtering method. The pixels which have a "
 "distance of 2 or less from the pixel block are used to calculate a bi-"
 "quadratic surface (2-dim), or a group of quadratic curves (1-dim), which is "
 "then used to assign interpolated colors to the pixels in the block."
 msgstr ""
-"Quadràtic: aquest és el mètode de filtrat per omissió. Els píxels que tenen "
-"una distància de 2 des del bloc de píxels s'utilitzen per a calcular una "
-"superfície quadràtica bilineal (2 dimensions), o un grup de corbes "
-"quadràtiques lineals (1 dimensió), que després s'utilitzaran per assignar "
+"**Quadràtic**: aquest és el mètode de filtratge predeterminat. Els píxels "
+"que tenen una distància de 2 des del bloc de píxels s'utilitzen per a "
+"calcular una superfície biquadràtica (2 dimensions), o un grup de corbes "
+"quadràtiques (1 dimensió), el qual després s'utilitzarà per a assignar "
 "colors interpolats als píxels en el bloc."
 
 #: ../../image_editor/enhancement_tools.rst:248
-#, fuzzy
 msgid ""
 "**Cubic**: the pixels which have a distance of 3 or less from the pixel "
 "block are used to calculate a bi-cubic surface (2-dim), or a group of cubic "
 "curves (1-dim), which is then used to assign interpolated colors to the "
 "pixels in the block."
 msgstr ""
-"Cúbic: els píxels que tenen una distància de 3 des del bloc de píxels "
-"s'utilitzen per a calcular una superfície cúbica bilineal (2 dimensions), o "
-"un grup de corbes cúbiques lineals (1 dimensió), que després s'utilitzaran "
-"per assignar colors interpolats als píxels en el bloc."
+"**Cúbic**: els píxels que tenen una distància de 3 des del bloc de píxels "
+"s'utilitzen per a calcular una superfície bicúbica (2 dimensions), o un grup "
+"de corbes cúbiques (1 dimensió), el qual després s'utilitzarà per a assignar "
+"colors interpolats als píxels en el bloc."
 
 #: ../../image_editor/enhancement_tools.rst:253
 msgid "Local Contrast Tool"
@@ -786,6 +880,7 @@ msgstr "Eina «Contrast local»"
 msgid "The Local Contrast tool render pseudo-HDR image."
 msgstr "L'eina Contrast local representa una imatge pseudo-HDR."
 
+# skip-rule: t-acc_obe
 #: ../../image_editor/enhancement_tools.rst:257
 msgid ""
 "There are multiple ways to render HDR image to improve photos containing "
@@ -804,6 +899,22 @@ msgid ""
 "you don’t have to understand all its intricacies in order to achieve "
 "pleasing results."
 msgstr ""
+"Hi ha múltiples maneres de renderitzar una imatge HDR per a millorar les "
+"fotografies que contenen àrees subexposades o sobreexposades. Amb els "
+"dispositius de càmera, les eines habituals permeten fusionar múltiples "
+"captures amb exposicions diferents en una fotografia perfectament exposada. "
+"Això funciona bé però requereix algunes limitacions, com ara la necessitat "
+"de fotografiar subjectes estàtics. Però què passa si només teniu una única "
+"imatge o amb subjectes dinàmics? És possible que vulgueu provar la "
+"característica de contrast local. Utilitzeu un `Mapatge dels tons <https://"
+"en.wikipedia.org/wiki/Tone_mapping>`_ amb un interval dinàmic baix, el qual "
+"està dissenyat per a millorar l'interval dinàmic de la fotografia reduint el "
+"contrast global i augmentant el contrast local. Ho fa generant una versió "
+"dessaturada i borrosa de la fotografia. Després combina els canals RGB de la "
+"fotografia original amb la imatge borrosa dessaturada utilitzant la funció "
+"Lineal o Potència. Sona complicat? No us preocupeu, l'eina Contrast local és "
+"força senzilla d'utilitzar, de manera que no haureu de comprendre totes les "
+"seves complexitats per a aconseguir un resultat agradable."
 
 #: ../../image_editor/enhancement_tools.rst:263
 msgid "The Image Editor Local Contrast Tool"
@@ -819,17 +930,24 @@ msgid ""
 "preview the result, hit the **Try** button. Once you are satisfied with the "
 "result, press **OK** to apply the process to the photo."
 msgstr ""
+"Obriu la fotografia que vulgueu a l'editor i seleccioneu l'element de menú «:"
+"menuselection:`Millora --> Contrast local`». L'eina permet aplicar fins a "
+"quatre operacions de mapatge dels tons anomenats etapes. Cada **Etapa** ofereix "
+"dos paràmetres per a modificar: la **Potència:** i el **Difuminat:**. El "
+"primer permet especificar el nivell de dessaturació, mentre que el segon "
+"permet ajustar les àrees afectades de la fotografia. Per a obtenir una vista "
+"prèvia del resultat, premeu el botó **Prova**. Quan esteu satisfet amb el "
+"resultat, premeu **D'acord** per a aplicar el procés a la fotografia."
 
 #: ../../image_editor/enhancement_tools.rst:267
-#, fuzzy
 msgid ""
 "While the Local Contrast tool may sound like an easy way to fix photos, you "
 "should use it with care: sometimes it can do more damage than good, "
 "producing unnaturally looking photos."
 msgstr ""
 "Si bé l'eina de contrast local pot semblar una manera fàcil d'arreglar les "
-"fotografies, haureu d'emprar-la amb cura: de vegades pot fer més mal que bé, "
-"produint fotografies poc naturals."
+"fotografies, l'haureu d'utilitzar amb cura: de vegades pot fer més mal que "
+"bé, produint fotografies poc naturals."
 
 #: ../../image_editor/enhancement_tools.rst:272
 msgid "Noise Reduction"
@@ -839,6 +957,8 @@ msgstr "Reducció del soroll"
 msgid ""
 "digiKam The Noise Reduction is a powerful tool to reduce the image noise."
 msgstr ""
+"La Reducció del soroll en el digiKam és una eina potent per a reduir el "
+"soroll de la imatge."
 
 #: ../../image_editor/enhancement_tools.rst:276
 msgid ""
@@ -848,31 +968,38 @@ msgid ""
 "settings, as well as the so-called Moiré Patterns on scanned images from "
 "books or magazines."
 msgstr ""
+"Aquesta eina proporciona filtres d'imatge seleccionables per a eliminar "
+"taques o altres defectes causats per brossa com la pols o un cabell en la "
+"lent. També es pot utilitzar per a eliminar el soroll del sensor de la "
+"càmera que pot causar una configuració ISO alta, així com els anomenats "
+"patrons de moaré en imatges escanejades des de llibres o revistes."
 
+# skip-rule: t-acc_obe
 #: ../../image_editor/enhancement_tools.rst:278
 msgid ""
 "If you want more information about what's digital camera sensor noise, "
 "please take a look in `this tutorial <https://www.cambridgeincolour.com/"
 "tutorials/image-noise.htm/>`_."
 msgstr ""
+"Per a obtenir més informació sobre el soroll del sensor de la càmera "
+"digital, vegeu `aquesta guia d'aprenentatge <https://www.cambridgeincolour."
+"com/tutorials/image-noise.htm/>`_."
 
 #: ../../image_editor/enhancement_tools.rst:284
 msgid "The Image Editor Noise Reduction Tool"
 msgstr "L'eina Reducció del soroll en l'editor d'imatges"
 
 #: ../../image_editor/enhancement_tools.rst:286
-#, fuzzy
 msgid ""
 "The above screenshot shows a typical scene taken with an digital camera "
 "using a high sensitivity ISO setting. It shows grainy noise which can be "
 "reduced successfully with this tool."
 msgstr ""
 "La captura de pantalla anterior mostra una escena típica presa amb una "
-"càmera digital utilitzant un ajust ISO de sensibilitat alt. Mostra un soroll "
-"granulat que es pot reduir amb èxit amb aquesta eina."
+"càmera digital utilitzant un ajust ISO de sensibilitat alta. Mostra un "
+"soroll granulat que es pot reduir amb èxit amb aquesta eina."
 
 #: ../../image_editor/enhancement_tools.rst:288
-#, fuzzy
 msgid ""
 "The re-sizeable image panel with the original preview helps you to pan "
 "within the image. Move the red rectangle around to select the area that lets "
@@ -883,16 +1010,16 @@ msgid ""
 "for comparison. On the bottom of preview area, you can see **Zoom Factor** "
 "settings to magnify an area of the image."
 msgstr ""
-"El plafó d'imatges redimensionable amb la vista prèvia original us ajuda a "
+"El plafó d'imatges redimensionable amb la vista prèvia original ajuda a "
 "realitzar una panoràmica dins de la imatge. Moveu el rectangle vermell per a "
 "seleccionar l'àrea que us permeti jutjar sobre la configuració òptima del "
 "filtre. La finestra de vista prèvia mostrarà la sortida del filtre "
 "utilitzant les opcions actuals. Es pot reorganitzar en quatre combinacions "
-"diferents, com es mostra en les icones sota de la vista prèvia original. "
+"diferents, com es mostra en les icones a sota de la vista prèvia original. "
 "Aquesta captura de pantalla mostra la primera disposició en la qual es "
 "mostra, per comparació, la mateixa retallada. A la part inferior de l'àrea "
-"de vista prèvia, podeu utilitzar l'opció **Factor de zoom** per ampliar una "
-"zona de la imatge."
+"de vista prèvia, podeu utilitzar l'opció **Factor de zoom** per a ampliar "
+"una zona de la imatge."
 
 #: ../../image_editor/enhancement_tools.rst:290
 msgid "You can see below a full description of all parameters:"
@@ -907,6 +1034,12 @@ msgid ""
 "or damage the image, turn off this option, and adjust the **Luminance**, "
 "**Chrominance Blue**, and **Chrominance Red** settings manually."
 msgstr ""
+"**Estimació de soroll**: calcula automàticament tots els ajustaments de "
+"reducció de soroll analitzant el soroll contingut en la imatge. De manera "
+"predeterminada, es recomana activar aquesta opció i comprovar-ne el "
+"resultat. Si la reducció del soroll no és prou eficient o fa malbé la "
+"imatge, desactiveu aquesta opció i ajusteu manualment la configuració de la "
+"**Luminància:**, **Blau de crominància_** i **Vermell de crominància:**."
 
 #: ../../image_editor/enhancement_tools.rst:294
 msgid ""
@@ -919,6 +1052,15 @@ msgid ""
 "because the gap between noisy, smooth, and blur is very small. Adjust it as "
 "carefully as you would adjust the focus of a camera."
 msgstr ""
+"**Llindar**: utilitzeu el control lliscant per a un ajust aproximat i el "
+"control de gir per a un ajust fi. El llindar és el valor per sota del qual "
+"tot es considerarà soroll. Aquest valor s'ha d'establir de manera que les "
+"vores i els detalls siguin clarament visibles i el soroll se suavitzi. "
+"Aquestes opcions existeixen per als canals de la **Luminància:**, el **Blau "
+"de crominància:** i el **Vermell de crominància:**. Senzillament ajusteu-lo "
+"i vegeu la vista prèvia. L'ajust s'ha de fer amb cura, perquè la separació "
+"entre sorollós, suau i difuminat és molt petita. Ajudeu-lo amb la mateixa cura "
+"amb què ajustaríeu l'enfocament d'una càmera."
 
 #: ../../image_editor/enhancement_tools.rst:296
 msgid ""
@@ -931,33 +1073,39 @@ msgid ""
 "carefully, because the gap between noisy, smooth, and blur is very small. "
 "Adjust it as carefully as you would adjust the focus of a camera."
 msgstr ""
+"**Suavitat**: utilitzeu el control lliscant per a un ajust aproximat i el "
+"control de gir per a un ajust fi. La suavitat ajusta el nivell de llindar "
+"(llindar suau en oposició al llindar fort). Com més gran sigui la suavitat, "
+"més soroll romandrà en la imatge. Aquests ajusts existeixen per als canals "
+"de la **Luminància**, el **Blau de crominància** i el **Vermell de "
+"crominància**. Senzillament ajusteu-lo i vegeu la vista prèvia. Pel que fa a "
+"la configuració del Llindar, l'ajust s'ha de fer amb cura, perquè la "
+"separació entre sorollós, suau i difuminat és molt petita. Ajudeu-lo amb la "
+"mateixa cura amb què ajustaríeu l'enfocament d'una càmera."
 
 #: ../../image_editor/enhancement_tools.rst:298
-#, fuzzy
 msgid ""
 "**Save As** and **Load**: these buttons are used to do just that. Any Noise "
 "Reduction parameters that you have set can be saved to the filesystem and "
 "loaded later."
 msgstr ""
-"**Desa com a...** i **Carrega...**: aquests botons s'utilitzen per realitzar "
-"les accions que descriuen. Qualsevol paràmetre per a la reducció del soroll "
-"que establiu es podrà desar al sistema de fitxers en un fitxer de text i "
-"carregar-lo més endavant."
+"**Desa com a...** i **Carrega...**: aquests botons s'utilitzen per a "
+"realitzar les accions que descriuen. Qualsevol paràmetre per a la reducció "
+"del soroll que establiu es podrà desar al sistema de fitxers en un fitxer de "
+"text i carregar-lo més endavant."
 
 #: ../../image_editor/enhancement_tools.rst:300
 #: ../../image_editor/enhancement_tools.rst:510
-#, fuzzy
 msgid "**Defaults**: this button resets all settings to default values."
 msgstr ""
-"**Omissió**: aquest botó restableix tots els ajustos als valors per omissió."
+"**Predeterminat**: aquest botó restableix totes les opcions als valors "
+"predeterminats."
 
 #: ../../image_editor/enhancement_tools.rst:305
-#, fuzzy
 msgid "Blur Tool"
 msgstr "Eina «Difuminat»"
 
 #: ../../image_editor/enhancement_tools.rst:307
-#, fuzzy
 msgid "The Blur Tool is dedicated to soft an image."
 msgstr "L'eina «Difuminat» es dedica a suavitzar una imatge."
 
@@ -969,6 +1117,12 @@ msgid ""
 "entry and experiment with the level. The preview window on the right of the "
 "dialog shows the effect of the operation on your photograph."
 msgstr ""
+"De vegades, una imatge és massa nítida per als vostres propòsits. La solució "
+"és difuminar-la una mica: per sort, difuminar una imatge és molt més fàcil "
+"que aguditzar-la. Seleccioneu l'**eina de difuminat** amb l'element de menú «:"
+"menuselection:`Millora --> Difuminat`» i experimenteu amb el nivell. La "
+"finestra de vista prèvia a la dreta del diàleg mostrarà l'efecte de "
+"l'operació sobre la vostra fotografia."
 
 #: ../../image_editor/enhancement_tools.rst:315
 msgid "The Image Editor Blur Tool"
@@ -979,13 +1133,12 @@ msgid "Photograph Restoration"
 msgstr "Restauració fotogràfica"
 
 #: ../../image_editor/enhancement_tools.rst:322
-#, fuzzy
 msgid ""
 "digiKam The Photograph Restoration is definitely one of the most advanced "
 "tools to reduce photograph artifacts."
 msgstr ""
-"La restauració fotogràfica del digiKam és sens dubte una de les eines més "
-"avançades per reduir els defectes de les fotografies."
+"La restauració fotogràfica en el digiKam és sens dubte una de les eines més "
+"avançades per a reduir els defectes de les fotografies."
 
 #: ../../image_editor/enhancement_tools.rst:324
 msgid ""
@@ -997,36 +1150,41 @@ msgid ""
 "The smoothing happens along the image curvatures, thus preserving the "
 "meaningful content much alike our human eye would want it."
 msgstr ""
+"Aquest fantàstic filtre de restauració és un desenvolupament que ofereix "
+"possibilitats sense precedents al domini públic per a eliminar moltes coses "
+"no desitjades de les vostres imatges. Està ben adaptat per a tractar amb "
+"imatges degradades que pateixen de soroll gaussià, gra de pel·lícula, raigs "
+"o defectes de compressió i degradacions locals que normalment es troben en "
+"les imatges digitals (originals o digitalitzades). El suavitzat succeeix al "
+"llarg de les curvatures de la imatge, preservant així el contingut "
+"significatiu de la mateixa manera com ho voldria el nostre ull humà."
 
 #: ../../image_editor/enhancement_tools.rst:330
 msgid "The Image Editor Restoration Tool"
 msgstr "L'eina Restauració en l'editor d'imatges"
 
 #: ../../image_editor/enhancement_tools.rst:332
-#, fuzzy
 msgid ""
 "The tool comes with several presets as starting points and to simplify the "
 "restoration. The preset settings available are listed below:"
 msgstr ""
-"L'eina ve amb diverses opcions preestablertes com a punts de partida i per "
-"simplificar la restauració. Els valors predefinits disponibles són els "
+"L'eina ve amb diversos valors predefinits com a punts de partida i per a "
+"simplificar la restauració. Les opcions predefinides disponibles són les "
 "següents:"
 
 #: ../../image_editor/enhancement_tools.rst:334
-#, fuzzy
 msgid ""
 "**None**: Using most common default filter settings not optimized for any "
 "particular purpose."
 msgstr ""
-"**Cap**: Utilitza la configuració de filtre per omissió més comuna sense "
-"optimitzar per a una finalitat determinada."
+"**Cap**: utilitza la configuració predeterminada de filtre més habitual "
+"sense optimitzar per a cap propòsit concret."
 
 #: ../../image_editor/enhancement_tools.rst:336
-#, fuzzy
 msgid ""
 "**Reduce Uniform Noise**: Optimum settings for image noise due to sensors."
 msgstr ""
-"**Reducció uniforme del soroll**: La configuració òptima per al soroll de la "
+"**Reducció uniforme del soroll**: la configuració òptima per al soroll de la "
 "imatge, causat pels sensors de la càmera."
 
 #: ../../image_editor/enhancement_tools.rst:338
@@ -1036,14 +1194,18 @@ msgid ""
 "there are some compression \"artifacts\" - slight defaults showing in the "
 "decompressed image. This setting aims at correcting this problem."
 msgstr ""
+"**Reducció dels defectes del JPEG**: la compressió de JPEG no és perfecta, "
+"de fet, per a alguns tipus d'imatges està lluny de ser-ho. Com a algorisme "
+"de compressió amb pèrdua, hi ha alguns «defectes» de compressió -valors "
+"lleus predeterminats que es mostren en la imatge descomprimida-. Aquesta "
+"configuració té com a objectiu corregir aquest problema."
 
 #: ../../image_editor/enhancement_tools.rst:340
-#, fuzzy
 msgid ""
 "**Reduce Texturing**: Optimized to remove artifacts from scanning, "
 "digitizing or Moire patterns."
 msgstr ""
-"**Reducció de la textura**: Optimitzat per eliminar defectes d'escaneig, "
+"**Reducció de la textura**: optimitzat per a eliminar defectes d'escaneig, "
 "digitalització o patrons de moaré."
 
 #: ../../image_editor/enhancement_tools.rst:342
@@ -1051,14 +1213,16 @@ msgid ""
 "If you want to set filter parameters for finer adjustments, use **General** "
 "and **Advanced Settings** tabs:"
 msgstr ""
+"Si voleu establir paràmetres de filtre per a ajustaments més precisos, "
+"utilitzeu les pestanyes **General** i **Configuració avançada**:"
 
 #: ../../image_editor/enhancement_tools.rst:348
 msgid "The Image Editor Restoration Tool Preset Settings"
 msgstr ""
 "La configuració predefinida de l'eina Restauració en l'editor d'imatges"
 
+# skip-rule: barb-igual_a
 #: ../../image_editor/enhancement_tools.rst:350
-#, fuzzy
 msgid ""
 "**Detail Preservation** p [0, 100]: this controls the preservation of the "
 "curvatures (features). A low value forces an equal smoothing across the "
@@ -1067,39 +1231,36 @@ msgid ""
 "that no sharpening is required afterwards. Note that **Detail Preservation** "
 "must be always inferior to **Anisotropy**."
 msgstr ""
-"**Conservació dels detalls** p [0, 100]: això controla la conservació de les "
-"curvatures (característiques). Un valor baix obliga a un suavitzat igual que "
-"el llarg de la imatge, mentre que valors més grans suavitzen preferentment "
-"les regions homogènies i deixen els detalls més definits. Un valor de 0,9 "
-"també conservarà els detalls de manera que no es requereixi aguditzar "
-"després. Tingueu en compte que **Conservació dels detalls** sempre haurà de "
-"ser inferior a l'**Anisotropia**."
+"**Conservació dels detalls** p [0, 100]: controla la conservació de les "
+"curvatures (característiques). Un valor baix obliga a un suavitzat igual a "
+"través de la imatge, mentre que valors més grans suavitzen preferentment les "
+"regions homogènies i deixen els detalls més definits. Un valor de 0,9 també "
+"conservarà els detalls de manera que no es requereixi aguditzar després. Cal "
+"tenir en compte que **Conservació dels detalls** sempre haurà de ser "
+"inferior a l'**Anisotropia**."
 
 #: ../../image_editor/enhancement_tools.rst:352
-#, fuzzy
 msgid ""
 "**Anisotropy alpha** [0, 100]: a low value smooths equally in all "
 "directions, whereas a value close to 1 smooths in one direction only. If you "
 "have film grain or CCD kind of noise a high value will result in wave-like "
 "pattern, whereas JPEG artifacts are suited for values close to 1."
 msgstr ""
-"**Anisotropia** alfa [0, 100]: un valor baix suavitza de la mateixa manera "
+"**Anisotropia alfa** [0, 100]: un valor baix suavitza de la mateixa manera "
 "en totes les direccions, mentre que un valor proper a 1 suavitza en una sola "
 "direcció. Si teniu gra de pel·lícula o soroll de tipus CCD, un valor alt "
-"resultarà en un patró d'ona, mentre que pels defectes JPEG són adequats "
+"resultarà en un patró d'ona, mentre que per als defectes JPEG són adequats "
 "valors propers a 1."
 
 #: ../../image_editor/enhancement_tools.rst:354
-#, fuzzy
 msgid ""
 "**Smoothing** [0, 500]: this sets the maximum overall smoothing factor (when "
 "p defines the relative smoothing). Set it according to the noise level."
 msgstr ""
-"**Suavitzat** [0, 500]: estableix el màxim factor de suavitzat general (quan "
+"**Suavitzat** [0, 500]: estableix el factor màxim de suavitzat general (quan "
 "p defineix el suavitzat relatiu). Ajusteu-lo d'acord amb el nivell de soroll."
 
 #: ../../image_editor/enhancement_tools.rst:356
-#, fuzzy
 msgid ""
 "**Regularity** [0, 100]: this parameter is concerned with the uniformity of "
 "the smoothing. Imagine the smoothing process as a combing of the image. Then "
@@ -1111,14 +1272,13 @@ msgid ""
 msgstr ""
 "**Regularitat** [0, 100]: aquest paràmetre es refereix a la uniformitat del "
 "suavitzat. Imagineu el procés de suavitzat com un pentinat de la imatge. Per "
-"tant, la regularitat es correspondria amb la mida de la pinta. Com més gran "
+"tant, la regularitat es correspondrà amb la mida de la pinta. Com més gran "
 "sigui aquest valor, més global serà fins i tot el suavitzat. Això és "
-"necessari quan hi ha present molt de soroll, ja que llavors és difícil "
-"d'estimar la geometria local. A més, si voleu aconseguir un efecte de "
-"turbulència a l'estil «Van Gogh», l'ajust recomanat és superior a 3."
+"necessari quan hi ha present molt de soroll, ja que llavors serà difícil "
+"estimar la geometria local. A més, si voleu aconseguir un efecte de "
+"turbulència a l'estil «Van Gogh», l'ajust recomanat és més gran que 3."
 
 #: ../../image_editor/enhancement_tools.rst:358
-#, fuzzy
 msgid ""
 "**Filter Iterations**: number of times the blurring algorithm is applied. "
 "Usually 1 or 2 is sufficient."
@@ -1131,7 +1291,6 @@ msgid "The Image Editor Restoration Tool Advanced Settings"
 msgstr "La configuració avançada de l'eina Restauració en l'editor d'imatges"
 
 #: ../../image_editor/enhancement_tools.rst:366
-#, fuzzy
 msgid ""
 "**Angular Step** da [5, 90]: angular integration of the anisotropy alpha. If "
 "alpha is chosen small, da should also be chosen small. But beware, small "
@@ -1142,7 +1301,6 @@ msgstr ""
 "petits resulten en grans càlculs! Trieu el més gran que pugueu acceptar."
 
 #: ../../image_editor/enhancement_tools.rst:368
-#, fuzzy
 msgid ""
 "**Integral Step** [0.1, 10]: spatial integration step width in terms of "
 "pixels. Should remain less than 1 (sub-pixel smoothing) and never be higher "
@@ -1153,30 +1311,27 @@ msgstr ""
 "més gran que 2."
 
 #: ../../image_editor/enhancement_tools.rst:370
-#, fuzzy
 msgid ""
 "**Use Linear Interpolation**: The gain in quality if you select this option "
 "is only marginal and you lose a factor of 2 in speed. Our recommendation is "
 "to leave it off."
 msgstr ""
-"**Usa interpolació lineal**: El guany en qualitat, si se selecciona aquesta "
+"**Usa interpolació lineal**: el guany en qualitat, si se selecciona aquesta "
 "opció, només serà marginal i es perdrà un factor de 2 en velocitat. La "
-"nostra recomanació és deixar-lo desactivat."
+"nostra recomanació és deixar-la desactivada."
 
 #: ../../image_editor/enhancement_tools.rst:372
-#, fuzzy
 msgid ""
 "**Save As** and **Load** buttons are used to do just that. Any Photograph "
 "Restoration filter settings that you have set can be saved to the filesystem "
 "in a text file and loaded later."
 msgstr ""
-"Els botons **Desa com a...** i **Carrega...** s'utilitzen per realitzar les "
-"accions que descriuen. Qualsevol configuració de filtre a la restauració "
+"Els botons **Desa com a...** i **Carrega...** s'utilitzen per a realitzar "
+"les accions que descriuen. Qualsevol configuració de filtre a la restauració "
 "fotogràfica que establiu es podrà desar al sistema de fitxers en un fitxer "
 "de text i carregar-lo més endavant."
 
 #: ../../image_editor/enhancement_tools.rst:376
-#, fuzzy
 msgid ""
 "Photograph restoration is (comparatively) very fast in what it is doing, but "
 "it can take a long time to run and cause high CPU load. You may always abort "
@@ -1185,7 +1340,7 @@ msgstr ""
 "La restauració fotogràfica és molt ràpida en el que fa (en termes "
 "comparatius), però pot prendre molt de temps a executar-se i això causa una "
 "càrrega de la CPU. Sempre podreu cancel·lar el càlcul prement el botó "
-"**Cancel·la** durant la renderització de la vista prèvia."
+"**Interromp** durant la renderització de la vista prèvia."
 
 #: ../../image_editor/enhancement_tools.rst:381
 msgid "Remove Red Eyes"
@@ -1202,6 +1357,15 @@ msgid ""
 "same way as described for cropping above. Then select :menuselection:"
 "`Enhance --> Red Eye Reduction`."
 msgstr ""
+"Els ulls vermells es produeixen quan s'utilitza el flaix de la càmera per a "
+"fer fotografies de persones. El vermell és el reflex de la part posterior de "
+"l'ull que es pot veure perquè la pupil·la no pot reaccionar prou ràpid al "
+"flaix. Per cert, amb una llum de flaix independent, l'efecte d'ulls vermells "
+"és menys probable a causa de l'angle de visió diferent del flaix i de la "
+"lent. Podreu corregir alguns dels pitjors efectes d'ull vermell seleccionant "
+"l'àrea de l'ull a la fotografia, de la mateixa manera que s'ha descrit "
+"anteriorment per a escapçar. Després seleccioneu l'element de menú «:"
+"menuselection:`Millora --> Correcció d'ulls vermells`»."
 
 #: ../../image_editor/enhancement_tools.rst:385
 msgid "How it works"
@@ -1212,18 +1376,24 @@ msgid ""
 "Set the preview mode to your liking. Adjust region of image to the eyes of "
 "face to fix."
 msgstr ""
+"Establiu el mode de vista prèvia al vostre gust. Ajusteu la regió de la "
+"imatge als ulls de la cara que s'han de corregir."
 
 #: ../../image_editor/enhancement_tools.rst:389
 msgid ""
 "A neural network engine parse the image contents to localize automatically "
 "eyes and the red pupils."
 msgstr ""
+"Un motor de xarxa neuronal analitza el contingut de la imatge per a "
+"localitzar automàticament els ulls i les pupil·les vermelles."
 
 #: ../../image_editor/enhancement_tools.rst:391
 msgid ""
 "The **Red Level** setting adjusts the amount of red eyes removal, in "
 "aggressive mode or not."
 msgstr ""
+"L'opció **Nivell de vermell:** ajusta la quantitat d'eliminació d'ulls "
+"vermells, de manera agressiva o no."
 
 #: ../../image_editor/enhancement_tools.rst:397
 msgid "The Image Editor Red Eyes Removal"
@@ -1234,22 +1404,23 @@ msgid "Image Sharpening"
 msgstr "Aguditzar la imatge"
 
 #: ../../image_editor/enhancement_tools.rst:407
-#, fuzzy
 msgid ""
 "digiKam provides three different tools for sharpening, with each having "
 "merits in a different area."
 msgstr ""
 "El digiKam ofereix tres eines diferents per a l'agudització, cadascuna amb "
-"<link linkend=\"comparison-refocus\">mèrits</link> sobre una àrea diferent."
+"mèrits sobre una àrea diferent."
 
 #: ../../image_editor/enhancement_tools.rst:409
 msgid ""
 "**Simple Sharp** is a traditional sharpening tool, which is very fast and "
 "easy, but may quickly produce grainy images, in particular in dark areas."
 msgstr ""
+"**Agudesa senzilla** és una eina de nitidesa tradicional, la qual és molt "
+"ràpida i fàcil, però pot produir ràpidament imatges amb gra, en particular "
+"en les àrees fosques."
 
 #: ../../image_editor/enhancement_tools.rst:411
-#, fuzzy
 msgid ""
 "**Unsharp Mask** works on the edge contrast to make an image appear sharper, "
 "but it actually does not sharpen at all, it works rather psychovisually. It "
@@ -1257,27 +1428,23 @@ msgid ""
 "The algorithm was taken from the Gimp, and it is copyrighted by Winston "
 "Chang."
 msgstr ""
-"La <link linkend=\"using-unsharp\">Màscara de desenfocament</link> funciona "
-"sobre el contrast de les vores per crear una imatge que sembli més nítida, "
-"però en realitat no augmenta l'agudesa en absolut, funciona força psico-"
-"visualment. Es pot utilitzar per eliminar la boirina atmosfèrica, i en "
-"aquest cas fa una molt bona feina. L'algorisme es va prendre del Gimp, i és "
-"copyright d'en Winston Chang."
+"La **Màscara de desenfocament** funciona sobre el contrast de les vores per "
+"a crear una imatge que sembli més aguda, però en realitat no augmenta "
+"l'agudesa en absolut, funciona força psico-visualment. Es pot utilitzar per "
+"a eliminar la boira atmosfèrica, i en aquest cas fa una molt bona feina. "
+"L'algorisme es va prendre del Gimp, i és copyright d'en Winston Chang."
 
 #: ../../image_editor/enhancement_tools.rst:413
-#, fuzzy
 msgid ""
 "**Refocus** is probably the best of the three because it actually improves "
 "sharpness. It is a bit more involved in its application as is has several "
 "parameters to play with."
 msgstr ""
-"El <link linkend=\"refocus\">Reenfocament</link> probablement és la millor "
-"de les tres, ja que en realitat millora l'agudesa. És una mica més "
-"complicada d'aplicar, ja que disposa de diversos paràmetres amb els quals "
-"jugar."
+"El **Reenfocament** probablement és la millor de les tres, ja que en "
+"realitat millora l'agudesa. És una mica més complicada d'aplicar, ja que "
+"disposa de diversos paràmetres amb els quals jugar."
 
 #: ../../image_editor/enhancement_tools.rst:415
-#, fuzzy
 msgid ""
 "Out-of-focus photographs, as well as most digitized images, need correction "
 "of sharpness. This is due to the digitizing process that must chop up a "
@@ -1298,31 +1465,27 @@ msgstr ""
 "càmeres de consum."
 
 #: ../../image_editor/enhancement_tools.rst:417
-#, fuzzy
 msgid ""
 "Whereas JPEG images have some camera-internal sharpening applied, RAW format "
 "images always need sharpening in their workflow."
 msgstr ""
-"Mentre que les imatges JPEG tenen alguna agudització aplicada internament a "
+"Mentre que les imatges JPEG tenen alguna agudització aplicada internament de "
 "la càmera, les imatges en format RAW sempre requeriran agudització en el seu "
 "flux de treball."
 
 #: ../../image_editor/enhancement_tools.rst:419
-#, fuzzy
 msgid ""
 "Some scanners apply a sharpen filter while scanning. It's worth to disable "
 "it so that you keep control over your image."
 msgstr ""
-"Alguns escàners apliquen un filtre per augmentar l'agudització durant "
-"l'escaneig. Val la pena desactivar-lo per a poder mantenir el control sobre "
-"la vostra imatge."
+"Alguns escàners apliquen un filtre d'agudització durant l'escaneig. Val la "
+"pena desactivar-lo per a poder mantenir el control sobre la vostra imatge."
 
 #: ../../image_editor/enhancement_tools.rst:422
 msgid "Adjusting Sharpness"
 msgstr "Ajustar l'agudització"
 
 #: ../../image_editor/enhancement_tools.rst:424
-#, fuzzy
 msgid ""
 "If the camera focus is not set perfectly or if the camera is moving when the "
 "image is taken the result is a blurred photograph. If there is a lot of "
@@ -1333,15 +1496,14 @@ msgid ""
 "make the images look crisp). This kind of slight blur can be easily improved "
 "with tools."
 msgstr ""
-"Si l'enfocament de la càmera no està ajustat perfectament o si la càmera es "
-"mou en prendre la imatge, el resultat serà una fotografia borrosa. Si n'hi "
-"ha una gran quantitat, probablement no sereu capaç de fer gaire referent a "
-"això amb cap tècnica. Si només n'hi ha una quantitat moderada, hauríeu de "
-"ser capaç de millorar la imatge. Moltes càmeres rèflex de qualitat apliquen "
-"menys processament a la imatge que les càmeres més simples (les quals "
-"tendeixen a augmentar artificialment el contrast perquè les imatges es vegin "
-"nítides). Aquest tipus de lleu difuminat es pot millorar fàcilment amb "
-"algunes eines."
+"Si l'enfocament de la càmera no està establert perfectament o si la càmera es "
+"mou mentre es pren la imatge, el resultat serà una fotografia borrosa. Si "
+"n'hi ha molt, probablement no podreu fer gaire amb cap tècnica. Si només "
+"n'hi ha una quantitat moderada, hauríeu de ser capaç de millorar la imatge. "
+"Moltes càmeres rèflex de qualitat apliquen menys processament a la imatge "
+"que les càmeres més simples (les quals tendeixen a augmentar artificialment "
+"el contrast perquè les imatges es vegin nítides). Aquest tipus de difuminat "
+"lleu es pot millorar fàcilment amb algunes eines."
 
 #: ../../image_editor/enhancement_tools.rst:426
 msgid ""
@@ -1679,7 +1841,7 @@ msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:521
 #, fuzzy
-msgid "Refocus comparison with other techniques"
+msgid "Refocus Comparison with Other Techniques"
 msgstr "El «Reenfocament» en comparació amb altres tècniques"
 
 #: ../../image_editor/enhancement_tools.rst:523
@@ -1919,7 +2081,7 @@ msgstr ""
 #: ../../image_editor/enhancement_tools.rst:621
 msgid ""
 "You can undo and redo using toolbar buttons from the toolbar on the top of "
-"settings view. Two keyboard shortcuts are assigned to the tool: :kbd:`Ctrl"
-"+Z` for undo and :kbd:`Ctrl+Shift+Z` for redo. You can undo and redo without "
-"limitation."
+"settings view. Two keyboard shortcuts are assigned to the tool: :kbd:"
+"`Ctrl+Z` for undo and :kbd:`Ctrl+Shift+Z` for redo. You can undo and redo "
+"without limitation."
 msgstr ""

@@ -257,7 +257,7 @@ The next group in the menu is to control whether only the reference icon of the 
 
 .. note::
 
-    In Icon View, you can turn on/off the frame over groupped item thumbnails with an option from :ref:`Setup/Miscs/Appearance <appearance_settings>` settings.
+    In Icon-View, you can turn on/off the frame over groupped item thumbnails with an option from :ref:`Setup/Miscs/Appearance <appearance_settings>` settings.
 
 While the mouse pointer is hovering over it there will pop up an information **n grouped items. Group is closed/open.** where *n* indicates the number of items in the group which are invisible if the group is closed. Clicking on the indicator toggles between **open** and **closed**.
 
@@ -281,4 +281,4 @@ In terms of use cases you can for instance group videos together with the .jpg -
 
 .. note::
 
-     Everything described in this Grouping section has nothing to do with **Group Images** in the **View** menu. That function doesn't form permanent groups of items, it only organizes the way icons are displayed in the Image Area.
+     Everything described in this Grouping section has nothing to do with **Group Images** in the **View** menu. That function doesn't form permanent groups of items, it only organizes the way icons are displayed in the Icon-View.

@@ -28,11 +28,11 @@ Icon Settings
 
     The digiKam Icon-View Configuration Page
 
-The first series of settings on the left side of this view permit to customize the technical information shown below the icon thumbnail, as the filename, the file size, the creation date, the image dimensions, and the aspect ratio.
+The first series of settings on the left side of this view allows to customize the technical information shown below the icon thumbnail, as the filename, the file size, the creation date, the image dimensions, and the aspect ratio.
 
 The **Show file modification date** option shows the file modification date only if it's different from the creation date. This function is useful to identify quickly which items have been modified.
 
-On the right side, the options permit to customize other properties to show over and below the icon thumbnail, as the **Image Format**, the **Title**, the **Caption**, and the **Rating**.
+On the right side, the options allows to customize other properties to show over and below the icon thumbnail, as the **Image Format**, the **Title**, the **Caption**, the **labels**, and the **Rating**.
 
 The **Show rotation overlay buttons** option shows overlay buttons over the image thumbnail to be able to process left or right image rotation.
 
@@ -53,7 +53,7 @@ On the bottom side of this settings panel, you can tune the behavior of the icon
 
 .. _thumbnails_action:
 
-The **Thumbnail click action** option permits to choose what should happen when you click on a thumbnail. Four settings are available:
+The **Thumbnail click action** option allows to choose what should happen when you click on a thumbnail. Four settings are available:
 
     - **Show preview** to display the item in Preview Mode :kbd:`F3`.
 
