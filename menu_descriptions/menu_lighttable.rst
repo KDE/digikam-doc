@@ -39,6 +39,32 @@ The View Menu
 
 **OpenGL Image Viewer** option is the same entry available in :ref:`Main Window <menu_mainopenglviewer>`.
 
+:menuselection:`View --> Synchronize` :kbd:`Ctrl+Shif+Y`
+
+    Synchronize the Left and Right Preview panels while review image contents (Pan and Zoom).
+
+:menuselection:`View --> By Pair` :kbd:`Ctrl+Shif+P`
+
+    Open selected item from Thumbbar in the Left Preview panel, and the next item from the Thumbbar in Right Preview panel.
+
+:menuselection:`View --> Left Panel`
+
+    This menu entry host all options to change Zoom level on Left Preview panel. Possible choices are:
+
+    - **Zoom In** :kbd:`Ctrl++`.
+    - **Zoom Out** :kbd:`Ctrl+-`.
+    - **Zoom to 100%** :kbd:`Ctrl+.`.
+    - **Fit to Window** :kbd:`Ctrl+ALt+E`.
+
+:menuselection:`View --> Right Panel`
+
+    This menu entry host all options to change Zoom level on Right Preview panel. Possible choices are:
+
+    - **Zoom In** :kbd:`Ctrl+Shift++`.
+    - **Zoom Out** :kbd:`Ctrl+Shift+-`.
+    - **Zoom to 100%** :kbd:`Ctrl+Shift+.`.
+    - **Fit to Window** :kbd:`Ctrl+Shift+E`.
+
 **Color Managed View** option is the same entry available in :ref:`Main Window <menu_maincolormanaged>`.
 
 The Tools Menu
