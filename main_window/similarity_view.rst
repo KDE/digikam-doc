@@ -77,7 +77,6 @@ Find Similar Image
 This tool provides a drag and drop zone on the top-left where you can place any image to find a similar one. You can drag an image from anywhere, even from outside digiKam as file manager or other programs. You can also drag over the **Similarity** search icon in the **Left Sidebar**, as from album **Icon-View**, this will open and you drop it there. Finally, you can use **Find Similar...** entry from the context menu of a thumbnail in any other Icon-View.
 
 .. figure:: videos/mainwindow_similar_drag_drop.webp
-    :width: 500px
     :alt:
     :align: center
 
