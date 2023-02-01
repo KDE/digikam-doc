@@ -328,9 +328,15 @@ The View Menu
 
     Make the selection fit the window.
 
-:menuselection:`View --> Slideshow`
+**Slideshow** option is the same entry available in :ref:`Main Window <menu_mainslideshow>`.
 
-    Start a :ref:`Slide-Show <slide_tool>` of the current album.
+**Presentation** option is the same entry available in :ref:`Main Window <menu_mainpresentation>`.
+
+**OpenGL Image Viewer** option is the same entry available in :ref:`Main Window <menu_mainopenglviewer>`.
+
+**Full Screen Mode** option is the same entry available in :ref:`Main Window <menu_mainfullscreen>`.
+
+**Color Managed View** option is the same entry available in :ref:`Main Window <menu_maincolormanaged>`.
 
 The Settings Menu
 -----------------

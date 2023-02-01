@@ -90,7 +90,7 @@ The Tools Menu
 The View Menu
 -------------
 
-One option is available here to switch in :ref:`Full Screen Mode <menu_mainfullscreen>`
+**Full Screen Mode** option is the same entry available in :ref:`Main Window <menu_mainfullscreen>`.
 
 The Settings Menu
 -----------------

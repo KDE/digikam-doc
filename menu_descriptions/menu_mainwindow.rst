@@ -225,6 +225,8 @@ The View Menu
 
     By default you have these four items also on the main toolbar.
 
+.. _menu_mainslideshow:
+
 :menuselection:`View --> Slideshow`
 
     :ref:`Slide-Show <slide_tool>` including RAW files.
@@ -241,11 +243,21 @@ The View Menu
 
     Slide-Show that recurses through the current album tree.
 
-:menuselection:`View --> Slideshow --> Presentation...` :kbd:`Alt+Shift+F9`
+.. _menu_mainpresentation:
+
+:menuselection:`View --> Presentation...` :kbd:`Alt+Shift+F9`
 
     Tool to display an advanced slide show with Album items.
 
     See the dedicated :ref:`Presentation Tool <presentation_tool>` for more information. 
+
+.. _menu_mainopenglviewer:
+
+:menuselection:`View --> OpenGL Image Viewer`
+
+    Tool to display images using OpenGL compatible device.
+
+    See the dedicated :ref:` OpenGL Viewer <opengl_viewer>` for more information. 
 
 .. _menu_mainfullscreen:
 
@@ -319,6 +331,8 @@ The View Menu
 :menuselection:`View --> Include Tag Sub-Tree`
 
     If a hierarchical tag structure exists, the currently selected branch will be displayed in full depth.
+
+.. _menu_maincolormanaged:
 
 :menuselection:`View --> Color-Managed View` :kbd:`F12`
 

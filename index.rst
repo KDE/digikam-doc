@@ -762,6 +762,10 @@ Menu Descriptions
 
     .. container:: tile no-descr
 
+        :ref:`menu_lighttable`
+
+    .. container:: tile no-descr
+
         :ref:`menu_showfoto`
 
 .. toctree::

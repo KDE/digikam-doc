@@ -1,6 +1,6 @@
 .. meta::
    :description: Learn Details About All digiKam Menus
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, menu, main window, image editor, showfoto, batch queue manager
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, menu, main window, image editor, showfoto, batch queue manager, light table
 
 .. metadata-placeholder
 
@@ -26,4 +26,5 @@ This section explain how to use the digiKam menu.
    menu_descriptions/menu_mainwindow.rst
    menu_descriptions/menu_imageeditor.rst
    menu_descriptions/menu_batchqueue.rst
+   menu_descriptions/menu_lighttable.rst
    menu_descriptions/menu_showfoto.rst
