@@ -63,6 +63,8 @@ Individual similarity values for each item can be obtained in the **Table-View**
 
 **Remove Duplicates** allows to delete all duplicate images of the current selected item from **Duplicates** list.
 
+ After performing **Searches** you might want to save the results. In the field below you can enter a name for the search, and press the **Save** button. In the **Searches** list below you find your saved r. Clicking on the title bar of that list toggles the sorting order between ascending and descending. At the bottom you find an adaptive search field which can help you to find a particular search. To **Restore** a result, just click on one item from the list.
+
 .. _similarity_image:
 
 Find Similar Image
@@ -70,7 +72,9 @@ Find Similar Image
 
 This tool provides a drag and drop zone on the top-left where you can place any image to find a similar one. You can drag an image from anywhere, even from outside digiKam as file manager or other programs. You can also drag over the **Similarity** search icon in the **Left Sidebar**, as from album **Icon-View**, this will open and you drop it there. Finally, you can use **Find Similar...** entry from the context menu of a thumbnail in any other Icon-View.
 
-Like with **Find Duplicates**, you can restrict the search to a set of **Albums** or the whole collection. You can narrow down or enlarge the resulting selection with the **Similarity range** here as well. In the field below you can enter a name for the search and save it. In the searches list below you find your saved searches. Clicking on the title bar of that list toggles the sorting order between ascending and descending. At the bottom you find an adaptive search field which can help you to find a particular search.
+Like with **Find Duplicates**, you can restrict the search to a set of **Albums** or the whole collection. You can narrow down or enlarge the resulting selection with the **Similarity range** here as well.
+
+The **Search in**, **Save**, and **Restore** previous searches features works as **Find Duplicates** tool.
 
 .. figure:: images/mainwindow_search_similar.webp
     :alt:
@@ -85,7 +89,9 @@ Find by Sketch
 
 This tool is a free hand color sketching editor. You can draw a quick sketch and digiKam will find corresponding images. You will find the same means to save your search as in the **Image** tab.
 
-On the left hand side of digiKam, navigate to the tab **Sketch**. This view has a drawing area plus some settings below to set pencil and history tools. Choose a color that your image might contain, you can change the size of the pen which is on the scale of 1-10, and you can also choose the number of images that you want to be displayed during your fuzzy search, this can be set to a value between 1-50 items. As you sketch on the area you will see that the fuzzy search related images appears on the right hand side. After performing searches you might want to save the search results, in that case give it a name and press the **Save** button.
+On the left hand side of digiKam, navigate to the tab **Sketch**. This view has a drawing area plus some settings below to set pencil and history tools. Choose a color that your image might contain, you can change the size of the pen which is on the scale of 1-10, and you can also choose the number of images that you want to be displayed during your fuzzy search, this can be set to a value between 1-50 items. As you sketch on the area you will see that the fuzzy search related images appears on the right hand side.
+
+The **Search in**, **Save**, and **Restore** previous searches features works as **Find Duplicates** tool.
 
 .. figure:: images/mainwindow_search_sketch.webp
     :alt:
