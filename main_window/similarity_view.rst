@@ -29,7 +29,7 @@ Before you can have digiKam finding duplicates the signatures (or fingerprints) 
 
 .. tip::
 
-    You can perform fingerprint operations using :menuselection:`Tools --> Maintainance` and select **Rebuild Finger-prints** option. You can additionally choose if you want to rebuild the entire database or only scan your database for missing fingerprint (default behavior). Choosing the Faster option is quicker as it only searches for missing fingerprints.
+    You can perform fingerprint operations using :menuselection:`Tools --> Maintenance` and select **Rebuild Finger-prints** option. You can additionally choose if you want to rebuild the entire database or only scan your database for missing fingerprint (default behavior). Choosing the Faster option is quicker as it only searches for missing fingerprints.
 
 Once the fingerprints are calculated you can use **Find Duplicates**, but it will take a long time too as it has to compare every image with any other image. So the way to go in both cases is to confine your search to certain **Albums** and/or **Tags**. **Whole albums collection** and **Whole tags collection** check-box perform global searches in the database. Else uses the drop-down menu like where you will be asked which **Albums** and/or **Tags** to search.
 
@@ -49,17 +49,17 @@ With the **Similarity Range** you can narrow down or enlarge the search result. 
     :alt:
     :align: center
 
-    Find Duplicates Tool Searching in Whole Albums Collection
+    Find Duplicates Tool Searching in Whole Albums Collection and Displaying Results in Icon-View
 
-An overview of the result will be given in the **Left Sidebar**. The first column shows the reference images of each single result. The Items column tells you how many images belong to each result including the reference image. The last column shows the average similarity which gives you an idea about how similar the images of every result might be. The reference image with its 100 % is not included in the average. Note that the results can be sorted by clicking on one of the column headers.
+An overview of the result will be given in the duplicate list-view from the left side. The first column shows the **Reference images** (Ref.) as thumbnail for each single result. The **Items** column tells you how many images belong to each result including the **Reference image**. The last column shows the **Average similarity** which gives you an idea about how similar the images of every result might be. The reference image with its 100 % is not included in the average. Note that the results can be sorted by clicking on one of the column headers. **Reference dates** and **Reference albums** columns are the properties of the **Reference images**.
 
 .. figure:: images/mainwindow_search_duplicates_tableview.webp
     :alt:
     :align: center
 
-    Find Duplicates Tool Searching in Whole Tags Collection and Displaying Results in a Table-View
+    Find Duplicates Tool Searching in Whole Tags Collection and Displaying Results in Table-View
 
-Individual similarity values for each item can be obtained in the table view of the Image Area (**Table** button on the Main Toolbar). Click with the right mouse button over one of the column headers and select **Similarity** from **Item Properties** to display the similarity column. By clicking on the header of this column then the results will be sorted by similarity grouped by reference images. Clicking repeatedly on the header will toggle between ascending and descending order.
+Individual similarity values for each item can be obtained in the **Table-View** mode (**Table** button on the Main Toolbar). Click with the right mouse button over one of the column headers and select **Similarity** from **Item Properties** to display the similarity column. By clicking on the header of this column then the results will be sorted by similarity grouped by reference images. Clicking repeatedly on the header will toggle between ascending and descending order.
 
 **Remove Duplicates** allows to delete all duplicate images of the current selected item from **Duplicates** list.
 
