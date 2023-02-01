@@ -244,7 +244,7 @@ The :file:`template.xsl` file is responsible for generating the HTML files from 
 
 We won't explain XSLT syntax here, you should be able to find the documentation you need on the Internet. We recommend to learn XSLT with the `XSLT tutorial here <https://www.w3schools.com/xsl>`_.
 
-It's worth nothing nevertheless that you can make use of `EXSLT <https://www.exslt.org>`_, a set of extensions to XSLT. In particular, the `exslt:document element <https://www.exslt.org/exsl/elements/document>`_  is extremely useful because it allows you to generate multiple documents from the same file.
+It's worth noting nevertheless that you can make use of `EXSLT <https://www.exslt.org>`_, a set of extensions to XSLT. In particular, the `exslt:document element <https://www.exslt.org/exsl/elements/document>`_  is extremely useful because it allows you to generate multiple documents from the same file.
 
 HTML Gallery tool imposes no constraint on the organization of HTML files. You can generate one file per image, or only one per collection. One could imagine a theme which would only contains one HTML file and uses JavaScript to show the different images, there is already one theme using frames, you can even generate CSS files on the fly if you want to.
 
