@@ -58,9 +58,9 @@ The File Menu
 
     Restore the current image from the original file if it has been modified.
 
-:menuselection:`File --> Delete File/Move to trash` :kbd:`Shift+Del`
+:menuselection:`File --> Delete File / Move to trash` :kbd:`Shift+Del` / :kbd:`Del`
 
-    Delete/Move to trash the current image from the current Album.
+    Delete / Move to trash the current image from the current Album.
 
 :menuselection:`File --> Print Image...` :kbd:`Ctrl+P`
 

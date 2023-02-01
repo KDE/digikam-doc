@@ -28,6 +28,22 @@ Light Table Menu
 The File Menu
 -------------
 
+:menuselection:`File --> Edit` :kbd:`F4`
+
+    Opens the selected image in the digiKam :ref:`Image Editor <image_editor>`.
+
+:menuselection:`File --> Open With Default Application` :kbd:`Meta-F4`
+
+    Opens the selected item in the default application according to the mime-type set in your desktop.
+
+:menuselection:`File --> Delete File / Move to trash` :kbd:`Shift+Del` / :kbd:`Del`
+
+    Delete / Move to trash the current image from the current Album.
+
+:menuselection:`File --> Close` :kbd:`Ctrl+W`
+
+    Close digiKam Light Table.
+
 The View Menu
 -------------
 
