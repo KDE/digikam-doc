@@ -20,6 +20,10 @@ You have lost a picture because you can't remember its name or where you filed i
 
 digiKam characterizes every image by a lengthy number using a special technique (Haar based processing algorithm) that makes it possible to compare images by comparing this calculated signature. The less numerical difference there is between any two image signatures, the more they resemble each other. This technique has three features named find **Duplicates**, find similar **Image**, and find by **Sketch**.
 
+.. note::
+
+    digiKam uses in background Wavelets/Haar algorithms based on the `Fast Multi-Resolution Image Querying publication <https://grail.cs.washington.edu/wp-content/uploads/2015/08/jacobs-1995.pdf>`_
+
 .. _similarity_duplicates:
 
 Find Duplicates
