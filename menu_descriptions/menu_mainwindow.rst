@@ -247,6 +247,8 @@ The View Menu
 
     See the dedicated :ref:`Presentation Tool <presentation_tool>` for more information. 
 
+.. _menu_mainfullscreen:
+
 :menuselection:`View --> Full Screen Mode` :kbd:`Ctrl+Shift+F`
 
     Switch to full screen (Return with the same keyboard shortcut).

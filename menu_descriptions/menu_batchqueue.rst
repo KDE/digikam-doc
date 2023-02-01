@@ -28,22 +28,76 @@ Batch Queue Manager Menu
 The Queues Menu
 ---------------
 
-.. _menu_batchqueuetools:
+:menuselection:`Queues --> Run` :kbd:`Ctrl+P`
+
+    Run the current selected queue from the **Queues** stack.
+
+:menuselection:`Queues --> Run All` :kbd:`Ctrl+Alt+P`
+
+    Run all queues from the **Queues** stack.
+
+:menuselection:`Queues --> Stop` :kbd:`Ctrl+S`
+
+    Cancel current execution from the **Queues** stack.
+
+:menuselection:`Queues --> New Queue`
+
+    Add a new queue in the **Queues** stack.
+
+:menuselection:`Queues --> Remove Queue`
+
+    Remove the current selected queue from the **Queues** stack.
+
+:menuselection:`Queues --> Save Workflow`
+
+    Create a new **Worflow** based the settings of the current queue.
+
+:menuselection:`Queues --> Remove Items` :kbd:`Ctrl+K`
+
+    Remove selected items from the current queue.
+
+:menuselection:`Queues --> Remove processed items`
+
+    Remove items already processed from the current queue.
+
+:menuselection:`Queues --> Clear Queue` :kbd:`Ctrl+Shift+K`
+
+    Remove all items from the current queue.
+
+:menuselection:`Queues --> Close` :kbd:`Ctrl+W`
+
+    Close digiKam Batch Queue Manager.
 
 The Tools Menu
 --------------
 
-.. _menu_batchqueueview:
+:menuselection:`Tools --> Move up`
+
+    Move up the current selected item from the **Assigned Tools** list.
+
+:menuselection:`Tools --> Move down`
+
+    Move down the current selected item from the **Assigned Tools** list.
+
+:menuselection:`Tools --> Remove tool`
+
+    Remove the current selected item from the **Assigned Tools** list.
+
+:menuselection:`Tools --> Clear List`
+
+    Remove all items from the **Assigned Tools** list.
 
 The View Menu
 -------------
 
-.. _menu_batchqueuesettings:
+One option is available here to switch in :ref:`Full Screen Mode <menu_mainfullscreen>`
 
 The Settings Menu
 -----------------
 
-.. _menu_batchqueuehelp:
+See description from :ref:`Main Window <menu_mainsettings>` section.
 
 The Help Menu
 -------------
+
+See description from :ref:`Main Window <menu_mainhelp>` section.
