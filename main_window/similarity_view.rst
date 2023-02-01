@@ -16,7 +16,7 @@ Similarity View
 Overview
 ~~~~~~~~
 
-digiKam characterizes every image by a lengthy number using a special technique (Haar based processing algorithm) that makes it possible to compare images by comparing this calculated signature. The less numerical difference there is between any two image signatures, the more they resemble each other. This technique has three implementations in digiKam.
+digiKam characterizes every image by a lengthy number using a special technique (Haar based processing algorithm) that makes it possible to compare images by comparing this calculated signature. The less numerical difference there is between any two image signatures, the more they resemble each other. This technique has three features named find **Duplicates**, find similar **Image**, and find by **Sketch**.
 
 .. _similarity_duplicates:
 
