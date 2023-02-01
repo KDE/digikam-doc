@@ -218,7 +218,7 @@ See the resume below to choose the right database type depending of the use-case
 
 .. important::
 
-    If you share the same **Removable** media to host databases and/or collections between different computers, you must have the same king operating system, the same mount paths everywhere (use symbolic links to revolve paths), and the same digiKam version everywhere to prevent conflicts with database schemes.
+    If you share the same **Removable** media to host databases and/or collections between different computers, you must have the same kind of operating system, the same mount paths everywhere (use symbolic links to revolve paths), and the same digiKam version everywhere to prevent conflicts with database schemes.
 
     If you use a common **Remote** server to host databases and collections, you must use the same digiKam version everywhere to prevent conflicts with database schemes. Computers running digiKam cannot be used at the same time on collections.
 

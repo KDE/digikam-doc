@@ -93,10 +93,10 @@ A template is at least one file with XML extension (for instance :file:`my-templ
 
 When the Print Creator is running, it does the following:
 
-    - Wait from you to choose the page size.
+    - Waits from you to choose the page size.
     - Looks for files describing templates (XML files).
-    - For each file, it looks for templates. If template is fine, it checks if layout fits into the chosen page size, add it, and load desktop file if exists.
-    - Show templates with a preview icon in a list box.
+    - For each file, it looks for templates. If template is fine, it checks if layout fits into the chosen page size, adds it, and loads desktop file if exists.
+    - Shows templates with a preview icon in a list box.
 
 The current official templates list can be seen `in this git repository <https://invent.kde.org/graphics/digikam/-/tree/master/core/dplugins/generic/tools/printcreator/templates>`_.
 
