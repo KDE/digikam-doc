@@ -68,9 +68,9 @@ Individual similarity values for each item can be obtained in the **Table-View**
 Find Similar Image
 ~~~~~~~~~~~~~~~~~~
 
-This is a drag and drop zone where you can drop any image to find a similar one. Drag an image from anywhere, even from outside digiKam (file manager, other programs), over the fuzzy search icon in the left sidebar, it will open and you drop it there or use **Find Similar...** from the context menu of a thumbnail in any other view.
+This tool provides a drag and drop zone on the top-left where you can place any image to find a similar one. You can drag an image from anywhere, even from outside digiKam as file manager or other programs. You can also drag over the **Similarity** search icon in the **Left Sidebar**, as from album **Icon-View**, this will open and you drop it there. Finally, you can use **Find Similar...** entry from the context menu of a thumbnail in any other Icon-View.
 
-You can narrow down or enlarge the resulting selection with the similarity range here as well. In the field below you can enter a name for the search and save it. In the searches list below you find your saved searches. Clicking on the title bar of that list toggles the sorting order between ascending and descending. At the bottom you find an adaptive search field which can help you to find a particular search.
+Like with **Find Duplicates**, you can restrict the search to a set of **Albums** or the whole collection. You can narrow down or enlarge the resulting selection with the **Similarity range** here as well. In the field below you can enter a name for the search and save it. In the searches list below you find your saved searches. Clicking on the title bar of that list toggles the sorting order between ascending and descending. At the bottom you find an adaptive search field which can help you to find a particular search.
 
 .. figure:: images/mainwindow_search_similar.webp
     :alt:
