@@ -67,14 +67,14 @@ Individual similarity values for each item can be obtained in the **Table-View**
 
 **Remove Duplicates** allows to delete all duplicate images of the current selected item from **Duplicates** list.
 
- After performing **Searches** you might want to save the results. In the field below you can enter a name for the search, and press the **Save** button. In the **Searches** list below you find your saved r. Clicking on the title bar of that list toggles the sorting order between ascending and descending. At the bottom you find an adaptive search field which can help you to find a particular search. To **Restore** a result, just click on one item from the list.
+ After performing **Searches** you might want to save the results. In the field below you can enter a name for the search, and press the **Save** button. In the **Searches** list below you will find your saved searches. Clicking on the title bar of that list toggles the sorting order between ascending and descending. At the bottom you will find an adaptive search field which can help you to find a particular search. To **Restore** a result, just click on one item from the list.
 
 .. _similarity_image:
 
 Find Similar Image
 ~~~~~~~~~~~~~~~~~~
 
-This tool provides a drag and drop zone on the top-left where you can place any image to find a similar one. You can drag an image from anywhere, even from outside digiKam as file manager or other programs. You can also drag over the **Similarity** search icon in the **Left Sidebar**, as from album **Icon-View**, this will open and you drop it there. Finally, you can use **Find Similar...** entry from the context menu of a thumbnail in any other Icon-View.
+This tool provides a drag and drop zone on the top-left where you can place any image to find a similar one. You can drag an image from anywhere, even from outside digiKam as file manager or other programs. You can also drag over the **Similarity** search icon in the **Left Sidebar**, as from album **Icon-View**, this will open a dialog and you drop it there. Finally, you can use **Find Similar...** entry from the context menu of a thumbnail in any other Icon-View.
 
 .. figure:: videos/mainwindow_similar_drag_drop.webp
     :alt:

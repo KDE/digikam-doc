@@ -52,7 +52,7 @@ The Queues Menu
 
 :menuselection:`Queues --> Save Workflow`
 
-    Create a new **Worflow** based the settings of the current queue.
+    Create a new **Workflow** based the settings of the current queue.
 
 :menuselection:`Queues --> Remove Items` :kbd:`Ctrl+K`
 
