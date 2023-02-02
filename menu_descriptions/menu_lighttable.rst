@@ -38,6 +38,14 @@ The File Menu
 
     Opens the selected item in the default application according to the mime-type set in your desktop.
 
+:menuselection:`File --> Remove item from Light Table` :kbd:`Ctrl+K`
+
+    Remove the current selected item in Thumb-bar from the Light Table.
+
+:menuselection:`File --> Remove item from Light Table` :kbd:`Ctrl+Shift+K`
+
+    Remove all thumb-bar items from the Light Table.
+
 :menuselection:`File --> Move to trash` :kbd:`Del`
 
     Move to trash the current image from the current Album.
