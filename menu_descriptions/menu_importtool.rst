@@ -55,6 +55,26 @@ The Device Menu
 The Edit Menu
 -------------
 
+:menuselection:`Edit --> Select All` :kbd:`Ctrl+A`
+
+    Select all images currently shown in Icon-View.
+
+:menuselection:`Edit --> Select None` :kbd:`Ctrl+Shift+A`
+
+    Un-select all items in currently shown in Icon-View.
+
+:menuselection:`Edit --> Invert Selection` :kbd:`Ctrl+*`
+
+    Invert the current selection in Icon-View.
+
+:menuselection:`Edit --> Select New items`
+
+    Select new items detected automatically in the device.
+
+:menuselection:`Edit --> Select New items` :kbd:`Ctrl+L`
+
+    Select locked items in the device.
+
 The Item Menu
 -------------
 

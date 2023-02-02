@@ -196,15 +196,15 @@ Beside the usual **Cut**, **Copy** and **Paste** the Edit Menu contains the foll
 
 :menuselection:`Edit --> Select All` :kbd:`Ctrl+A`
 
-    Select all images currently shown
+    Select all images currently shown.
 
 :menuselection:`Edit --> Select None` :kbd:`Ctrl+Shift+A`
 
-    Un-select all items in the current view
+    Un-select all items in the current view.
 
 :menuselection:`Edit --> Invert Selection` :kbd:`Ctrl+I`
 
-    Invert the current selection
+    Invert the current selection.
 
 .. _menu_mainview:
 
