@@ -43,7 +43,7 @@ The EPUB ebook is generated in `build/epub`. Open the file `DigikamManual.epub` 
 - po                      : Obsolete, not used. Replaced by locale directory.
 - [project](project)      : some helpers scripts and LibreOffice schemes.
 - [ressources](ressources): Sphinx templates customization.
-- [tests](tests)          : scripts to test repository contents with CI
+- [tests](tests)          : scripts to test repository contents with Continuous integration.
 
 All others directories are used to host sections of the documentation implemented in ReStructuredText format.
 

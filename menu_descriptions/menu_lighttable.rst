@@ -30,6 +30,30 @@ Light Table Menu
 The File Menu
 -------------
 
+:menuselection:`File --> First` :kbd:`Ctrl+Home`
+
+    Select first item from thumb-bar.
+
+:menuselection:`File --> Back` :kbd:`PgUp`
+
+    Select thumb-bar item on the left of current one.
+
+:menuselection:`File --> Forward` :kbd:`PgDown`
+
+    Select thumb-bar item on the right of current one.
+
+:menuselection:`File --> Last` :kbd:`Ctrl+End`
+
+    Select last item from thumb-bar.
+
+:menuselection:`File --> On Left` :kbd:`Ctrl+L`
+
+    Load current selected item from thumb-bar to the left preview pane.
+
+:menuselection:`File --> On Right` :kbd:`Ctrl+R`
+
+    Load current selected item from thumb-bar to the right preview pane.
+
 :menuselection:`File --> Edit` :kbd:`F4`
 
     Opens the selected image in the digiKam :ref:`Image Editor <image_editor>`.
