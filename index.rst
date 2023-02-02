@@ -766,6 +766,10 @@ Menu Descriptions
 
     .. container:: tile no-descr
 
+        :ref:`menu_importtool`
+
+    .. container:: tile no-descr
+
         :ref:`menu_showfoto`
 
 .. toctree::
