@@ -30,6 +30,28 @@ Import Tool Menu
 The Device Menu
 ---------------
 
+:menuselection:`Device --> Capture`
+
+    Perform a tethered shooting ith your camera (supported only by `GPhoto2 devices <http://gphoto.org/doc/remote/>`_).
+
+:menuselection:`Device --> Information`
+
+    Show current device information as drivers version and features.
+
+.. figure:: images/menu_import_device_info.webp
+    :alt:
+    :align: center
+
+    The digiKam Import Tool Device Information Dialog
+
+:menuselection:`Device --> Cancel`
+
+    Cancel all operations done in background with the device, as thumbnails loading, downloading files, renaming, etc.
+
+:menuselection:`Device --> Close` :kbd:`Ctrl+W`
+
+    Close digiKam Import Tool.
+
 The Edit Menu
 -------------
 
