@@ -211,9 +211,13 @@ Beside the usual **Cut**, **Copy** and **Paste** the Edit Menu contains the foll
 The View Menu
 -------------
 
+.. _menu_mainviewthumbs:
+
 :menuselection:`View --> Thumbnails`
 
     Shows thumbnails in the :ref:`Image View <image_view>`.
+
+.. _menu_mainviewpreview:
 
 :menuselection:`View --> Preview Image` :kbd:`F3`
 
@@ -221,9 +225,13 @@ The View Menu
 
     The preview has **Back** and **Forward** buttons at the top left corner to navigate through all the images currently shown.
 
+.. _menu_mainviewmap:
+
 :menuselection:`View --> Map`
 
     Shows images on a map.
+
+.. _menu_mainviewtable:
 
 :menuselection:`View --> Table`
 
