@@ -81,7 +81,25 @@ The Item Menu
 The View Menu
 -------------
 
+**Thumbnails** option is the same entry available in :ref:`Main Window <menu_mainviewthumbs>`.
+
+**Preview Item** option is the same entry available in :ref:`Main Window <menu_mainviewpreview>`.
+
+**Map** option is the same entry available in :ref:`Map <menu_mainviewmap>`.
+
 **Full Screen Mode** option is the same entry available in :ref:`Main Window <menu_mainfullscreen>`.
+
+:menuselection:`View --> Show History` :kbd:`Ctrl+H`
+
+    Show the history view with all exchanges between the computer and the device.
+
+**Zoom In** option is the same entry available in :ref:`Main Window <menu_mainviewzoomin>`.
+
+**Zoom Out** option is the same entry available in :ref:`Main Window <menu_mainviewzoomout>`.
+
+**Fit to Window** option is the same entry available in :ref:`Main Window <menu_mainviewzoomfit>`.
+
+**Zoom to 100%** option is the same entry available in :ref:`Main Window <menu_mainviewzoom100>`.
 
 **Color Managed View** option is the same entry available in :ref:`Main Window <menu_maincolormanaged>`.
 
