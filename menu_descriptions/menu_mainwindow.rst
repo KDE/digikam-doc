@@ -301,17 +301,13 @@ The View Menu
 
     Decrease preview or the thumbnail size of the currently selected Album.
 
-.. _menu_mainviewzoom100:
+:menuselection:`View --> Fit to Window` :kbd:`Ctrl+Alt+E`
+
+    Will size the image as to fit snug into the window.
 
 :menuselection:`View --> Zoom to 100%` :kbd:`Ctrl+,`
 
     Will show the image 1:1 (meaning 1 image pixel is mapped exactly to 1 screen pixel) in preview mode.
-
-.. _menu_mainviewzoomfit:
-
-:menuselection:`View --> Fit to Window` :kbd:`Ctrl+Alt+E`
-
-    Will size the image as to fit snug into the window.
 
 :menuselection:`View --> Sort Albums`
 

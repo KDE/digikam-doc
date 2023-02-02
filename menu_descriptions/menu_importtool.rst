@@ -55,17 +55,7 @@ The Device Menu
 The Edit Menu
 -------------
 
-:menuselection:`Edit --> Select All` :kbd:`Ctrl+A`
-
-    Select all images currently shown in Icon-View.
-
-:menuselection:`Edit --> Select None` :kbd:`Ctrl+Shift+A`
-
-    Un-select all items in currently shown in Icon-View.
-
-:menuselection:`Edit --> Invert Selection` :kbd:`Ctrl+*`
-
-    Invert the current selection in Icon-View.
+Description of all common **Selection** options can be found in :ref:`Main Window Edit Menu <menu_mainedit>`.
 
 :menuselection:`Edit --> Select New items`
 
@@ -84,6 +74,15 @@ The View Menu
 :menuselection:`View --> Show History` :kbd:`Ctrl+H`
 
     Show the history view with all exchanges between the computer and the device.
+
+:menuselection:`View --> Group Items`
+
+    This entry host all options to group items in Icon-View by features. Available choices are listed below:
+
+        - **Flat List** do not group items.
+        - **By Folder** arrange items depending of common parent directory in camera storage, 
+        - **By Format** arrange items depending of type-mime.
+        - **By Date** arrange items depending of capture time-stamp.
 
 All other options are the same than entries available in :ref:`Main Window View Menu <menu_mainview>`.
 
