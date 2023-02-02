@@ -21,9 +21,11 @@ Main Window Menu
 
     The digiKam Main Window Menu
 
-.. note::
+.. tip::
 
-    When switching in **Full-Screen Mode**, the menu will be accessible on the right side of tool-bar with the **Hamburger Button**.
+    .. |icon_hamburger| image:: images/menu_icon_hamburger.webp
+
+    When switching in **Full-Screen Mode** :kbd:`Ctrl+Shift+F`, or when you **Hide Menubar** :kbd:`Ctrl+M`, the main menu will be available on the right side of tool-bar with the **Hamburger Button** |icon_hamburger|.
 
 The Browse Menu
 ---------------
@@ -108,6 +110,10 @@ The Item Menu
 :menuselection:`Item --> Move to trash` :kbd:`Del`
 
     Moves selected item(s) to the :ref:`digiKam Trash <deleting_photograph>` (recoverable delete).
+
+    .. note::
+
+        To **Delete permanently** a file, use :kbd:`Shift+Del`
 
 :menuselection:`Item --> Place onto Light Table` :kbd:`Ctrl-L`
 

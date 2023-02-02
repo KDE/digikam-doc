@@ -21,9 +21,11 @@ Light Table Menu
 
     The digiKam Light Table Menu
 
-.. note::
+.. tip::
 
-    When switching in **Full-Screen Mode**, the menu will be accessible on the right side of tool-bar with the **Hamburger Button**.
+    .. |icon_hamburger| image:: images/menu_icon_hamburger.webp
+
+    When switching in **Full-Screen Mode** :kbd:`Ctrl+Shift+F`, or when you **Hide Menubar** :kbd:`Ctrl+M`, the main menu will be available on the right side of tool-bar with the **Hamburger Button** |icon_hamburger|.
 
 The File Menu
 -------------
@@ -36,9 +38,13 @@ The File Menu
 
     Opens the selected item in the default application according to the mime-type set in your desktop.
 
-:menuselection:`File --> Delete File / Move to trash` :kbd:`Shift+Del` / :kbd:`Del`
+:menuselection:`File --> Move to trash` :kbd:`Del`
 
-    Delete / Move to trash the current image from the current Album.
+    Move to trash the current image from the current Album.
+
+    .. note::
+
+        To **Delete permanently** a file, use :kbd:`Shift+Del`
 
 :menuselection:`File --> Close` :kbd:`Ctrl+W`
 

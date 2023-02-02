@@ -23,9 +23,11 @@ Showfoto Menu
 
 **Showfoto** menu is mostly the same than **digiKam Image Editor**. Only few differences are presents in **File** and **Settings**, and **Help** entries due to the lack of database support.
 
-.. note::
+.. tip::
 
-    When switching in **Full-Screen Mode**, the menu will be accessible on the right side of tool-bar with the **Hamburger Button**.
+    .. |icon_hamburger| image:: images/menu_icon_hamburger.webp
+
+    When switching in **Full-Screen Mode** :kbd:`Ctrl+Shift+F`, or when you **Hide Menubar** :kbd:`Ctrl+M`, the main menu will be available on the right side of tool-bar with the **Hamburger Button** |icon_hamburger|.
 
 The File Menu
 -------------
@@ -37,6 +39,10 @@ The File Menu
 :menuselection:`File --> Open folder` :kbd:`Ctrl+Shift+O`
 
     Open all files from a directory located on your local storage.
+
+:menuselection:`File --> Delete File` :kbd:`Del`
+
+    Delete permanently current file loaded in the canvas.
 
 For the rest of menu entries, see description from :ref:`Main Window <menu_editorfile>` section. Versioning options do not exit here.
 

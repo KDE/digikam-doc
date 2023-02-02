@@ -21,9 +21,11 @@ Image Editor Menu
 
     The digiKam Image Editor Menu
 
-.. note::
+.. tip::
 
-    When switching in **Full-Screen Mode**, the menu will be accessible on the right side of tool-bar with the **Hamburger Button**.
+    .. |icon_hamburger| image:: images/menu_icon_hamburger.webp
+
+    When switching in **Full-Screen Mode** :kbd:`Ctrl+Shift+F`, or when you **Hide Menubar** :kbd:`Ctrl+M`, the main menu will be available on the right side of tool-bar with the **Hamburger Button** |icon_hamburger|.
 
 .. _menu_editorfile:
 
@@ -58,9 +60,13 @@ The File Menu
 
     Restore the current image from the original file if it has been modified.
 
-:menuselection:`File --> Delete File / Move to trash` :kbd:`Shift+Del` / :kbd:`Del`
+:menuselection:`File --> Move to trash` :kbd:`Del`
 
-    Delete / Move to trash the current image from the current Album.
+    Move to trash the current image from the current Album (recoverable delete).
+
+    .. note::
+
+        To **Delete permanently** a file, use :kbd:`Shift+Del`
 
 :menuselection:`File --> Print Image...` :kbd:`Ctrl+P`
 

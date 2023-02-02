@@ -21,9 +21,11 @@ Batch Queue Manager Menu
 
     The digiKam Batch Queue Manager Menu
 
-.. note::
+.. tip::
 
-    When switching in **Full-Screen Mode**, the menu will be accessible on the right side of tool-bar with the **Hamburger Button**.
+    .. |icon_hamburger| image:: images/menu_icon_hamburger.webp
+
+    When switching in **Full-Screen Mode** :kbd:`Ctrl+Shift+F`, or when you **Hide Menubar** :kbd:`Ctrl+M`, the main menu will be available on the right side of tool-bar with the **Hamburger Button** |icon_hamburger|.
 
 The Queues Menu
 ---------------
