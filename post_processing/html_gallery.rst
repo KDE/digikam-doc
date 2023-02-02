@@ -198,14 +198,14 @@ Rename the desktop file accordingly:
     cd snow2
     mv snow.desktop snow2.desktop
 
-Edit :file:`snow2.desktop**` to remove all the **Name[...]** entries and replace **Name=Snow** with **Name=Snow 2**.
+Edit :file:`snow2.desktop` to remove all the **Name[...]** entries and replace **Name=Snow** with **Name=Snow 2**.
 
 You are done, you can now open digiKam and start the HTML Gallery tool, the **Snow 2** theme should appear in the theme list.
 
 Generating HTML Using XSL Rules
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The :file:`template.xsl` file is responsible for generating the HTML files from the :file:`gallery.xml` file. It's a standard ini-style file and looks like this
+The :file:`template.xsl` file is responsible for generating the HTML files from the :file:`gallery.xml` file. It's a standard ini-style file and looks like this:
 
 .. code-block:: xml
 
@@ -337,7 +337,7 @@ The user will then be able to select whether squares should or should not be squ
 Theme Parameters
 ~~~~~~~~~~~~~~~~
 
-You might want to provide a way for your user to customize your theme, for example you could provide a few alternative CSS files, or let the user customize the background color. This is easy to do.
+You might want to provide a way for the user to customize your theme, for example you could provide a few alternative CSS files, or let the user customize the background color. This is easy to do.
 
 Declaring a Parameter
 `````````````````````
