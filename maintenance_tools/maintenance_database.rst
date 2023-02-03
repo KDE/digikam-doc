@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Maintenance Tool Database Cleaning
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, maintenance, database
 
 .. metadata-placeholder
 
@@ -16,6 +16,10 @@ Database Cleaning
 .. contents::
 
 .. figure:: images/maintenance_database_cleaning.webp
+    :alt:
+    :align: center
+
+    The digiKam Maintenance Database Options
 
 This process will analysis your database files to consolidate the contents. The Core database is always cleaned. You can select additional databases for cleaning by selecting one of the extra options listed below:
 
@@ -31,3 +35,8 @@ This process will analysis your database files to consolidate the contents. The 
 While the scan for new items process is under progress, as the process may take much time and digiKam cannot be used, a non modal dialog appear to make sure that no database corruption occurs.
 
 .. figure:: images/maintenance_database_process.webp
+    :alt:
+    :align: center
+
+    The digiKam Database process Working in the Background.
+
