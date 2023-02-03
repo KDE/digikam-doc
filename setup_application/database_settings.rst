@@ -171,21 +171,21 @@ Database Type Criteria
 
 See the resume below to choose the right database type depending of the use-cases.
 
-    ============== ============== ================ ====================================================================================
-    Storage        Type           Amount of Items  Remarks
-    ============== ============== ================ ====================================================================================
-    HDD            Sqlite         < 100,000        **Warning: WAL mandatory.**
-    HDD            Mysql-Internal > 100,000
-    SDD            Sqlite                          WAL optional.
+    ============== ============== ========== ====================================================================================
+    Storage        Type           Items      Remarks
+    ============== ============== ========== ====================================================================================
+    HDD            Sqlite         < 100K     **Warning: WAL is mandatory.**
+    HDD            Mysql-Internal > 100K
+    SDD            Sqlite                    WAL is optional.
     SDD            Mysql-Internal
-    MVMe           Sqlite                          WAL optional.
+    MVMe           Sqlite                    WAL is optional.
     MVMe           Mysql-Internal
-    Removable      Sqlite         < 100,000        **Warning: WAL mandatory. USB 3.1 minimum with NVMe drive.**
-    Removable      Mysql-Internal > 100,000        **Warning: USB 3.1 minimum with NVMe drive.**
-    Network FS     Sqlite                          **Prohibited: Sqlite databases must be stored on local file system.**
-    Network FS     Mysql-Internal                  **Prohibited: Mysql databases must be stored on local file system.**
-    Remote         Mysql-Server                    MariaDB server supported. Gigabit Ethernet or higher recommended.
-    ============== ============== ================ ====================================================================================
+    Removable      Sqlite         < 100K     **Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**
+    Removable      Mysql-Internal > 100K     **Warning: USB 3.1 minimum with NVMe drive.**
+    Network FS     Sqlite                    **Prohibited: Sqlite databases must be stored on local file system.**
+    Network FS     Mysql-Internal            **Prohibited: Mysql databases must be stored on local file system.**
+    Remote         Mysql-Server              MariaDB server is supported. Gigabit Ethernet or higher is recommended.
+    ============== ============== ========== ====================================================================================
 
 .. glossary::
 
