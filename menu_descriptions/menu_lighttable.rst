@@ -66,7 +66,7 @@ The File Menu
 
     Remove the current selected item in Thumb-bar from the Light Table.
 
-:menuselection:`File --> Remove item from Light Table` :kbd:`Ctrl+Shift+K`
+:menuselection:`File --> Remove all items from Light Table` :kbd:`Ctrl+Shift+K`
 
     Remove all thumb-bar items from the Light Table.
 

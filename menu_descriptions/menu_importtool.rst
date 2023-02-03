@@ -32,7 +32,7 @@ The Device Menu
 
 :menuselection:`Device --> Capture`
 
-    Perform a tethered shooting ith your camera (supported only by `GPhoto2 devices <http://gphoto.org/doc/remote/>`_).
+    Perform a tethered shooting with your camera (supported only by `GPhoto2 devices <http://gphoto.org/doc/remote/>`_).
 
 :menuselection:`Device --> Information`
 
