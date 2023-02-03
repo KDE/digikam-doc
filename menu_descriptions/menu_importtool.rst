@@ -68,6 +68,54 @@ Description of all common **Selection** options can be found in :ref:`Main Windo
 The Item Menu
 -------------
 
+:menuselection:`Item --> Download New` :kbd:`Ctrl+N`
+
+    Download new items from device to the computer.
+
+:menuselection:`Item --> Download Selected`
+
+    Download selected items from device to the computer.
+
+:menuselection:`Item --> Download All`
+
+    Download all items from device to the computer.
+
+:menuselection:`Item --> Download & Delete New` :kbd:`Shif+Ctrl+N`
+
+    Download new items from device to the computer and delete items from the device.
+
+:menuselection:`Item --> Download & Delete Selected`
+
+    Download selected items from device to the computer and delete items from the device.
+
+:menuselection:`Item --> Download & Delete All`
+
+    Download all items from device to the computer and delete items from the device.
+
+:menuselection:`Item --> Delete New`
+
+    Delete new items from the device.
+
+:menuselection:`Item --> Delete Selected` :kbd:`Del`
+
+    Delete selected items from the device.
+
+:menuselection:`Item --> Delete All`
+
+    Delete all items from the device.
+
+:menuselection:`Item --> Upload` :kbd:`Ctrl+U`
+
+    Allows to upload new items from your computer to the device. This feature can be not supported by some Gphoto2 based devices. See :menuselection:`Device --> Information` for details.
+
+:menuselection:`Item --> Mark as downloaded`
+
+    Allows to mark as downloaded selected items from the device.
+ 
+:menuselection:`Item --> Toogle Lock` :kbd:`Ctrl+G`
+
+    Allows to lock selected items from the device for the deletion (read only). This feature can be not supported by some Gphoto2 based devices. See :menuselection:`Device --> Information` for details.
+
 The View Menu
 -------------
 
