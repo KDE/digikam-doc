@@ -57,7 +57,7 @@ The Edit Menu
 
 Description of all common **Selection** options can be found in :ref:`Main Window Edit Menu <menu_mainedit>`.
 
-:menuselection:`Edit --> Select New items`
+:menuselection:`Edit --> Select New Items`
 
     Select new items detected automatically in the device.
 
