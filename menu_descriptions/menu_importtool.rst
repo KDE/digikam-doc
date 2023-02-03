@@ -61,7 +61,7 @@ Description of all common **Selection** options can be found in :ref:`Main Windo
 
     Select new items detected automatically in the device.
 
-:menuselection:`Edit --> Select New items` :kbd:`Ctrl+L`
+:menuselection:`Edit --> Select Locked Items` :kbd:`Ctrl+L`
 
     Select locked items in the device.
 
