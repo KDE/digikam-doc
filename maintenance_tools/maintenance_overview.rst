@@ -17,7 +17,7 @@ Overview
 
 Maintenance is a tool running processes in the background to maintain image collections and database contents. 
 
-Depending on your workflow, your digiKam settings and whether you work on your images collection also with other programs it might be necessary to run maintenance operations from time to time to update the digiKam databases and also your images regarding duplicates, face tags, quality labels, etc. The maintenance tool can do that for you, even more than one operation in one go depending on your requirements.
+Depending on your workflow, your digiKam settings and whether you work on your images collection also with other programs it might be necessary to run maintenance operations from time to time to update the digiKam **databases** and also your images regarding **duplicates**, **face tags**, **quality labels**, etc. The maintenance tool can do that for you, even more than one operation in one go depending on your requirements.
 
 .. figure:: images/maintenance_tool.webp
     :alt:
@@ -30,17 +30,17 @@ The list of tools is presented in a sequential order and cannot be changed. Only
 The tools available from the list are listed below:
 
    1. **Scan For New Items**: scan for albums and items to populate the database.
-   
+
    2. **Perform Database Cleaning**: scan albums and items for irrelevant entries in database.
-   
+
    3. **Rebuild Thumbnails**: scan albums to update the item thumbnails.
-   
-   4. **Rebuild Finger-prints**: scan albums to update item finger-prints used with Similarity searches.
-   
-   5. **Find Duplicate Items**: scan albums to update list of duplicates items based on Similarity finger-prints.
-   
+
+   4. **Rebuild Finger-prints**: scan albums to update item finger-prints used with **Similarity** searches.
+
+   5. **Find Duplicate Items**: scan albums to update list of duplicates items based on **Similarity** finger-prints.
+
    6. **Detect and Recognize Faces**: perform automatic faces management updates.
-   
-   7. **Image Quality Sorter**: perform an automatic scan of items to sort items by quality and apply Pick Labels in database.
-   
+
+   7. **Image Quality Sorter**: perform an automatic scan of items to sort items by quality and apply **Pick Labels** in database.
+
    8. **Sync Metadata and Database**: perform synchronization of items metadata with database contents or vice versa.
