@@ -410,8 +410,8 @@ Important: Only files listed as **Reviewed** in [TODO](TODO) list are ready for 
 The list of current enabled translation languages are in the [locale/](locale) sub-directory.
 Corresponding languages must be enabled in the documentation web-site following this list. 4 files needs to be patched:
 
-- The **alllang** list from the [version_switch JavaScript file](resources/static/js/version_switch.js) located in this repository.
-- The **supported_languages** list from the [404handler PHP file](404handler.php) located in this repository.
+- The **alllang** list from the [version_switch JavaScript file](resources/static/js/version_switch.js) located at **resources/static/js/** from this git repository.
+- The **supported_languages** list from the [404handler PHP file](404handler.php) located at root from this git repository.
 - The section named **docs-digikam-org** from the [custom-jobs Json infrastrusture configuration](https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json) dedicated to rule translations.
 - The **script** section from [gitlab CI Yaml config file](.gitlab-ci.yml) where a new line must be add to generate the supported language in the Continuous Integration workflow.
 
