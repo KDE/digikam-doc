@@ -21,7 +21,7 @@ Find Duplicates
 
     The digiKam Maintenance Options to Find Duplicates
 
-The Find Duplicates Tool is doing the same as the Find duplicates button in the :ref:`the Similarity View <similarity_view>`, but here you can combine it with other maintenance operations and you have the chance to check “Work on all processor cores” under Common Options (see above) to speed up the process.
+The **Find Duplicates** Tool is doing the same as the Find duplicates button in the :ref:`the Similarity View <similarity_view>`, but here you can combine it with other maintenance operations and you have the chance to check **Work on all processor cores** under :ref:`Common Options <maintenance_common>` to speed up the process.
 
 .. figure:: images/maintenance_similarity_duplicates.webp
     :alt:
