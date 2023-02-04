@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-25 00:50+0000\n"
-"PO-Revision-Date: 2023-02-01 22:12+0100\n"
+"PO-Revision-Date: 2023-02-03 17:55+0100\n"
 "Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -50,58 +50,84 @@ msgid ""
 "the date entries to fix or append, and the calculation to operate on dates "
 "before registration."
 msgstr ""
+"L'eina Ajust de l'hora disponible a l'element de menú «:menuselection:"
+"`Element --> Ajusta la data i l'hora...`» :kbd:`Ctrl+Maj+D` permet ajustar o "
+"registrar les marques de temps en les metadades del fitxer. Aquesta tasca "
+"habitual de vegades és obligatòria quan les imatges no contenen dates en les "
+"metadades, com quan el contingut es digitalitza amb un escàner, o quan una "
+"càmera registra una data incorrecta en el fitxer a causa d'una mala "
+"configuració del dispositiu. Amb aquesta eina, podreu triar la font correcta "
+"per a prendre la informació de la data, les entrades de data que es "
+"corregiran o afegiran, així com el càlcul per a operar sobre les dates "
+"anteriors al registre."
 
 #: ../../post_processing/time_adjust.rst:20
 msgid ""
 "The **Timestamp Used** group allows to select the source of the date. "
 "Available choices are listed below:"
 msgstr ""
+"El grup **Marca de temps utilitzada** permet seleccionar la font de la data. "
+"Les opcions disponibles es llisten a continuació:"
 
 #: ../../post_processing/time_adjust.rst:22
 msgid "**digiKam timestamp**: the date records in database."
 msgstr ""
+"**Marca de temps del digiKam**: els registres de data que hi ha en la base "
+"de dades."
 
 #: ../../post_processing/time_adjust.rst:23
 msgid "**File name timestamp**: the date extracted from the filename."
 msgstr ""
+"**Marca de temps del nom de fitxer**: la data extreta des del nom de fitxer."
 
 #: ../../post_processing/time_adjust.rst:24
 msgid ""
 "From the file system: **File last Modified** will use the last modification "
 "date of file."
 msgstr ""
+"**Des del sistema de fitxers**: **Última modificació del fitxer** utilitzarà "
+"la darrera data de modificació del fitxer."
 
 #: ../../post_processing/time_adjust.rst:26
 msgid ""
 "**Exif/IPTC/XMP**: parse Exif, IPTC, and XMP to get the first value "
 "available."
 msgstr ""
+"**Exif/IPTC/XMP**: analitza l'Exif, IPTC i XMP per a obtenir el primer valor "
+"disponible."
 
 #: ../../post_processing/time_adjust.rst:27
 msgid "**EXIF: created**: image creation timestamp from Exif."
 msgstr ""
+"**Exif: creació**: marca de temps de creació des de l'Exif de la imatge."
 
 #: ../../post_processing/time_adjust.rst:28
 msgid "**EXIF: original**: image original timestamp from Exif."
 msgstr ""
+"**Exif: original**: marca de temps original des de l'Exif de la imatge."
 
 #: ../../post_processing/time_adjust.rst:29
 msgid "**EXIF: digitized**: image digitized timestamp from Exif."
 msgstr ""
+"**Exif: digitalització**: marca de temps digitalitzada des de l'Exif de la "
+"imatge."
 
 #: ../../post_processing/time_adjust.rst:30
 msgid "**IPTC: created**: image created timestamp from IPTC."
-msgstr ""
+msgstr "**IPTC: creació**: marca de temps creada des de l'IPTC de la imatge."
 
 #: ../../post_processing/time_adjust.rst:31
 msgid "**XMP: created**: image created timestamp from XMP."
-msgstr ""
+msgstr "**XMP: creació**: marca de temps creada des de l'XMP de la imatge."
 
 #: ../../post_processing/time_adjust.rst:32
 msgid ""
 "**EXIF: created (fuzzy)**: image creation timestamp from Exif and trying "
 "different encoding combinations in case of non-respect of standard."
 msgstr ""
+"**Exif: original (aproximada)**: marca de temps de creació des de l'Exif de "
+"la imatge i prova diferents combinacions de codificació en cas "
+"d'incompliment de l'estàndard."
 
 #: ../../post_processing/time_adjust.rst:33
 msgid "From the metadata:"
@@ -112,12 +138,18 @@ msgid ""
 "**EXIF: original (fuzzy)**: image original timestamp from Exif and trying "
 "different encoding combinations in case of non-respect of standard."
 msgstr ""
+"**Exif: original (aproximada)**: marca de temps original des de l'Exif de la "
+"imatge i prova diferents combinacions de codificació en cas d'incompliment "
+"de l'estàndard."
 
 #: ../../post_processing/time_adjust.rst:34
 msgid ""
 "**EXIF: digitized (fuzzy)**: image digitized timestamp from Exif and trying "
 "different encoding combinations in case of non-respect of standard."
 msgstr ""
+"**Exif: digitalització (aproximada)**: marca de temps digitalitzada des de "
+"l'Exif de la imatge i prova diferents combinacions de codificació en cas "
+"d'incompliment de l'estàndard."
 
 #: ../../post_processing/time_adjust.rst:35
 msgid "A fixed date taken from calendar."
@@ -128,28 +160,42 @@ msgid ""
 "The **Timestamp Adjustments** group allows to select operation to process of "
 "source date to evaluate the target date. Available choices are listed below:"
 msgstr ""
+"El grup **Configuració de la marca de temps** permet seleccionar l'operació "
+"que es processarà la data d'origen per a avaluar la data de destinació. Les "
+"opcions disponibles es llisten a continuació:"
 
 #: ../../post_processing/time_adjust.rst:39
 msgid "**Copy value**: copy timestamp as well from source date to target date."
 msgstr ""
+"**Copia el valor**: copia la mateixa marca de temps des de la data d'origen "
+"a la data de destinació."
 
 #: ../../post_processing/time_adjust.rst:40
 msgid ""
 "**Add**: add a fixed timestamp to source date to compute target date. Use "
 "the settings on the right side to define the added value."
 msgstr ""
+"**Afegeix**: afegeix una marca de temps fixa a la data d'origen per a "
+"calcular la data de destinació. Utilitzeu la configuració en el costat dret "
+"per a definir el valor afegit."
 
 #: ../../post_processing/time_adjust.rst:41
 msgid ""
 "**Subtract**: remove a fixed timestamp to source date to compute target "
 "date. Use the settings on the right side to define the subtracted value."
 msgstr ""
+"**Sostreu**: elimina una marca de temps fixa a la data d'origen per a "
+"calcular la data de destinació. Utilitzeu la configuració en el costat dret "
+"per a definir el valor sostret."
 
 #: ../../post_processing/time_adjust.rst:42
 msgid ""
 "**Interval**: interval timestamp to the next image from the list to process. "
 "Use the settings on the right side to define the interval value."
 msgstr ""
+"**Interval**: marca de temps de l'interval fins a la imatge següent des de "
+"la llista que es processa. Utilitzeu la configuració en el costat dret per a "
+"definir el valor de l'interval."
 
 #: ../../post_processing/time_adjust.rst:44
 msgid ""
@@ -159,55 +205,83 @@ msgid ""
 "drop over this button to define the selected image. This feature will "
 "automatically select the **Copy value**, **Add**, or **Subtract** method."
 msgstr ""
+"**Determina la diferència des del rellotge d'una fotografia** permet "
+"seleccionar una fotografia per a obtenir una data i calcular la diferència "
+"de temps entre ella i l'element actual seleccionat des de la llista de "
+"fitxers que es processa. També podreu arrossegar i deixar anar sobre aquest "
+"botó per a definir la imatge seleccionada. Aquesta característica "
+"seleccionarà automàticament el mètode **Copia el valor**, **Afegeix** o "
+"**Sostreu**."
 
 #: ../../post_processing/time_adjust.rst:46
 msgid ""
 "The **Timestamp updated** group allows to define the target entries to patch "
 "with the new values. Available choices are listed below:"
 msgstr ""
+"El grup **Marca de temps actualitzada** permet definir les entrades de "
+"destinació per a fer pegats amb els valors nous. Les opcions disponibles es "
+"llisten a continuació:"
 
 #: ../../post_processing/time_adjust.rst:48
 msgid ""
 "**Update only existing timestamps**: will change only the values which "
 "already exists in file."
 msgstr ""
+"**Actualitza només les marques de temps existents**: només canviarà els "
+"valors que ja existeixen en el fitxer."
 
 #: ../../post_processing/time_adjust.rst:49
 msgid "**Exif: original**: will change the image original timestamp from Exif."
 msgstr ""
+"**Exif: original**: canviarà la marca de temps original des de l'Exif de la "
+"imatge."
 
 #: ../../post_processing/time_adjust.rst:50
 msgid ""
 "**Exif: digitized**: will change the image digitized timestamp from Exif."
 msgstr ""
+"**Exif: digitalització**: canviarà la marca de temps digitalitzada des de "
+"l'Exif de la imatge."
 
 #: ../../post_processing/time_adjust.rst:51
 msgid "**Exif: created**: will change the image creation timestamp from Exif."
 msgstr ""
+"**Exif: creació**: canviarà la marca de temps de creació des de l'Exif de la "
+"imatge."
 
 #: ../../post_processing/time_adjust.rst:52
 msgid ""
 "**Exif: Thumbnail**: will change the image thumbnail timestamp from Exif."
 msgstr ""
+"**Exif: Miniatura**: canviarà la marca de temps digitalitzada des de l'Exif "
+"de la miniatura de la imatge."
 
 #: ../../post_processing/time_adjust.rst:53
 msgid "**XMP**: will change the image timestamp from standard XMP namespaces."
 msgstr ""
+"**XMP**: canviarà la marca de temps des dels espais de nom XMP estàndards de "
+"la imatge."
 
 #: ../../post_processing/time_adjust.rst:54
 msgid ""
 "**XMP: video**: will change the image timestamp from WMP video namespace."
 msgstr ""
+"**XMP: Vídeo**: canviarà la marca de temps des de l'espai de nom «video» XMP "
+"de la imatge."
 
 #: ../../post_processing/time_adjust.rst:55
 msgid "**IPTC: created**: will change the image created timestamp from IPTC."
 msgstr ""
+"**IPTC: creació**: canviarà la marca de temps de creació des de l'IPTC de la "
+"imatge."
 
 #: ../../post_processing/time_adjust.rst:56
 msgid ""
 "**File last modified**: will change the last modified timestamp from file "
 "system."
 msgstr ""
+"**Última modificació del fitxer**: canviarà la darrera marca de temps de "
+"modificació des del sistema de fitxers."
 
 #: ../../post_processing/time_adjust.rst:62
 msgid "The digiKam Time Adjust Tool Tuning Items Time-Stamp"
