@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Maintenance Tool Detect and Recognize Faces
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, maintenance, faces, detection, recognition
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, maintenance, faces, detection, recognition, deep-learning
 
 .. metadata-placeholder
 
@@ -21,7 +21,7 @@ Detect and Recognize Faces
 
     The digiKam Maintenance Options to Detect and Recognize Faces
 
-This is the same process you can access in the People View with the **Scan Collection for Faces** button. Here you just cannot set the Fast - Accurate parameter but just the **Face Data Management** method and the option to **Clear and rebuild all training data**. For more information about the Faces Data Management options see :ref:`the People View section <people_view>`.
+This is the same process you can access in the **People** view with the **Scan Collection for Faces** button. Here you just cannot set the **Fast - Accurate** parameter but just the **Face Data Management** method and the option to **Clear and rebuild all training data**. For more information about the **Faces Data Management** options see :ref:`the People View section <people_view>`.
 
 .. figure:: images/maintenance_faces_scan.webp
     :alt:
