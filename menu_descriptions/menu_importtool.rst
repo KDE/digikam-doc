@@ -80,7 +80,7 @@ The Item Menu
 
     Download all items from device to the computer.
 
-:menuselection:`Item --> Download & Delete New` :kbd:`Shif+Ctrl+N`
+:menuselection:`Item --> Download & Delete New` :kbd:`Shift+Ctrl+N`
 
     Download new items from device to the computer and delete items from the device.
 
@@ -112,7 +112,7 @@ The Item Menu
 
     Allows to mark as downloaded selected items from the device.
  
-:menuselection:`Item --> Toogle Lock` :kbd:`Ctrl+G`
+:menuselection:`Item --> Toggle Lock` :kbd:`Ctrl+G`
 
     Allows to lock selected items from the device for the deletion (read only). This feature can be not supported by some Gphoto2 based devices. See :menuselection:`Device --> Information` for details.
 
