@@ -15,7 +15,7 @@ var all_langs = {
     "en": "English",
     //"ar": "&#1575;&#1614;&#1604;&#1618;&#1593;&#1614;&#1585;&#1614;&#1576;&#1616;&#1610;&#1614;&#1617;&#1577;&#1615;",
     "ca": "Catal&agrave;",
-    //"cs": "&Ccaron;e&scaron;tina",
+    "cs": "&Ccaron;e&scaron;tina",
     //"da": "‎dansk",
     "de": "Deutsch",
     "es": "Espa&ntilde;ol",
