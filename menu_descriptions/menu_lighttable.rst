@@ -93,11 +93,11 @@ The View Menu
 
 **OpenGL Image Viewer** option is the same entry available in :ref:`Main Window <menu_mainopenglviewer>`.
 
-:menuselection:`View --> Synchronize` :kbd:`Ctrl+Shif+Y`
+:menuselection:`View --> Synchronize` :kbd:`Ctrl+Shift+Y`
 
     Synchronize the Left and Right Preview panels while review image contents (Pan and Zoom).
 
-:menuselection:`View --> By Pair` :kbd:`Ctrl+Shif+P`
+:menuselection:`View --> By Pair` :kbd:`Ctrl+Shift+P`
 
     Open selected item from Thumbbar in the Left Preview panel, and the next item from the Thumbbar in Right Preview panel.
 
