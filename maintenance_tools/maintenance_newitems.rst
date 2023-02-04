@@ -26,7 +26,6 @@ This process will scan the collections you defined in :menuselection:`Settings -
 While the scan for new items process is under progress, notification on the bottom right of main windows will be visible to indicate the amount of items already done.
 
 .. figure:: images/maintenance_scan_process.webp
-
     :alt:
     :align: center
 
@@ -43,7 +42,6 @@ To be precise, this option will force digiKam to scan all collections for new it
 Another option from this setup panel named **Fast scan (detects new, deleted and renamed items)** can also be turn on to significantly speed up the scan. New items, deleted and also renamed items are found. In order to find items that have been changed, this option must be deactivated.
 
 .. figure:: images/maintenance_scan_setup.webp
-
     :alt:
     :align: center
 

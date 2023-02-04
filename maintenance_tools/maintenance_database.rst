@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Maintenance Tool Database Cleaning
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, maintenance, database
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, maintenance, database, cleanup, Shrink
 
 .. metadata-placeholder
 
@@ -23,10 +23,13 @@ Database Cleaning
 
 This process will analysis your database files to consolidate the contents. The Core database is always cleaned. You can select additional databases for cleaning by selecting one of the extra options listed below:
 
-    - Cleanup the Thumbnails database.
-    - Cleanup the Faces database.
-    - Cleanup the Similarity database.
-    - Shrink all databases to ensure defragmentation and just keeps the database small.
+    - **Cleanup the Thumbnails database**.
+
+    - **Cleanup the Faces database**.
+
+    - **Cleanup the Similarity database**.
+
+    - **Shrink all databases** to ensure de-fragmentation and just keeps the database small.
 
 .. note::
 
@@ -39,4 +42,3 @@ While the scan for new items process is under progress, as the process may take 
     :align: center
 
     The digiKam Database process Working in the Background.
-
