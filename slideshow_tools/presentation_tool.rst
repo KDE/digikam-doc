@@ -67,8 +67,10 @@ With this tool bar, you can drive the progress of the slide show. You can pause 
 
 In the lower left screen corner you can see the current image file name, the current image index, and the total number of images included in the slide-show.
 
-.. figure:: images/presentation_view.webp
+.. figure:: videos/presentation_view.webp
+    :width: 600px
     :alt:
     :align: center
 
-    The Presentation Tool Running With OSD on the Top of Screen
+    Screencast of the Presentation Tool Running With Cube OpenGL Effect and Showing OSD on the Top of Screen
+
