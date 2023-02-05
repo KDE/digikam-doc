@@ -49,7 +49,7 @@ So let us analyze those cases step by step.
 Storage Deterioration
 ---------------------
 
-Devices listed below are sorted by data speed access feature, from the less faster to the more faster.
+Devices listed below are sorted by data speed access feature, from the less faster to the most faster.
 
 Magnetic Media
 ~~~~~~~~~~~~~~
@@ -139,13 +139,13 @@ If you have a notebook computer, you will want to carry a surge suppressor as we
 Uninterruptible Power Supply
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-While a surge suppressor will protect your system from minor fluctuations in the power lines, it won’t help you if the power should black out completely. Even an outage of just a few seconds can result in the loss of valuable data, so you might find it worthwhile to invest in an Uninterruptible Power Supply (UPS).
+While a surge suppressor will protect your system from minor fluctuations in the power lines, it won’t help you if the power should black out completely. Even an outage of just a few seconds can result in the loss of valuable data, so you might find it worthwhile to invest in an **Uninterruptible Power Supply** (UPS).
 
 Besides serving as surge suppressors, these devices automatically switch to battery power when a power outage occurs, giving you the opportunity to save data and shut down your system. Some models will even allow you to keep working until power is restored. When purchasing a UPS, be sure that it has the same qualities that you would seek in a surge suppressor, but also check out the battery life and included software.
 
 Considering the potential risk to your computing system, ensuring its safety from power disturbances is a worthwhile investment. A quality surge suppressor or a 500W UPS are not too expensive for the peace of mind you’ll gain knowing your computer is well protected. In the very least pull all lines to your computer when you go on holidays.
 
-Saveguarding Policy
+Safeguarding Policy
 -------------------
 
 Web Storage Services
@@ -197,7 +197,7 @@ Even if you are not overly concerned today with transmission problems, have a lo
 Future of File-systems
 ~~~~~~~~~~~~~~~~~~~~~~
 
-`ZFS <https://en.wikipedia.org/wiki/ZFS>`_ from Oracle seems to be one of two candidates to deal with disk errors on a low level, and it is highly scalable. It is Open Source, heavily patented, comes with an GPL incompatible license, and is available on Solaris and macOS.
+`ZFS <https://en.wikipedia.org/wiki/ZFS>`_ from Oracle seems to be one of two candidates to deal with disk errors on a low level, and it is highly scalable. It is Open Source, heavily patented, comes with an GPL incompatible license, and is available on Linux and macOS.
 
 Oracle has also started an initiative with its `BTRFS <https://en.wikipedia.org/wiki/Btrfs>`_ file system. It employs the same protection technique as **ZFS** does, and it's available on Linux.
 
@@ -230,7 +230,7 @@ We would like to dispel some common myths:
 
     - Journalize files systems prevent data corruption/loss: Wrong, they only speed up the scan process in case of a sudden interrupt during operation and prevent ambiguous states. But if a file was not entirely saved before the mishap, it'll be lost.
 
-    - `RAID <https://en.wikipedia.org/wiki/RAID>`_ systems prevent data corruption/loss: Mostly wrong, RAID0 and 1 prevent you from nothing, RAID5 can prevent data loss due to disk-failures (but not from disk or file system errors). Many low-end RAID controllers (most mother board controllers are) don’t report problems, figuring you’ll never notice. If you do notice, months later, what is the chance that you’ll know it was the controller’s fault? One insidious problem is corruption of RAID 5 parity data. It is pretty simple to check a file by reading it and matching the metadata. Checking parity data is much more difficult, so you typically won’t see parity errors until a rebuild. Then, of course, it is too late.
+    - `RAID <https://en.wikipedia.org/wiki/RAID>`_ systems prevent data corruption/loss: Mostly wrong, **RAID 0 and 1** prevent you from nothing, **RAID 5** can prevent data loss due to disk-failures (but not from disk or file system errors). Many low-end RAID controllers (most mother board controllers are) don’t report problems, figuring you’ll never notice. If you do notice, months later, what is the chance that you’ll know it was the controller’s fault? One insidious problem is corruption of **RAID 5** parity data. It is pretty simple to check a file by reading it and matching the metadata. Checking parity data is much more difficult, so you typically won’t see parity errors until a rebuild. Then, of course, it is too late.
 
     - Viruses are the biggest thread to digital data: Wrong. Theft, and human errors are the primary cause of data loss.
 
