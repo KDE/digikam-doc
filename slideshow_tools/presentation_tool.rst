@@ -1,6 +1,6 @@
 .. meta::
    :description: Using digiKam Presentation Tool
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, slide, presentation
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, slide, presentation, OpenGL, effects
 
 .. metadata-placeholder
 
@@ -15,17 +15,21 @@ Presentation Tool
 
 .. contents::
 
-The “Presentation” tool creates a configurable full screen slide-show of your images using advanced visual effects.
+The **Presentation** tool creates a configurable full screen slide-show of your images using advanced visual effects.
 
-With this tool you can create a perfect slide show with just three mouse clicks. When opening the tool from the View --> Presentation menu, the Presentation window **Main** page will appear asking questions as to how you want to stage your slide show. You can choose between the selected images or all images in the same album.
+With this tool you can create a perfect slide show with just three mouse clicks. When opening the tool from the :menuselection:`View --> Presentation` menu, the Presentation window **Main** page will appear asking questions as to how you want to stage your slide show. You can choose between the selected images or all images in the same album.
 
 .. figure:: images/presentation_main.webp
+    :alt:
+    :align: center
+
+    The Presentation Tool Dialog
 
 The **Use OpenGL Transitions** checkbox enables very smooth image transitions using the OpenGL display mode. Be sure you have OpenGL enabled on your graphics card, since otherwise the slideshow will be very slow.
 
 The **Print Filename** checkbox enables displaying the image filename in the lower left corner.
 
-The **Loop** checkbox will enable running the whole show in an endless loop (until manually stopped with Esc).
+The **Loop** checkbox will enable running the whole show in an endless loop (until manually stopped with :kbd:`Esc`).
 
 The **Shuffle Images** checkbox will enable displaying the images randomly (not using the current images collection order).
 
@@ -36,19 +40,35 @@ There are more than a dozen **Transition Effects** available to choose from. The
 The **Caption** page from the tool allows to customize the font properties to render item description over the screen.
 
 .. figure:: images/presentation_caption.webp
+    :alt:
+    :align: center
+
+    The Caption Settings from Presentation Tool
 
 The **Soundtrack** page from the tool allows to append audio tracks to play while slideshow.
 
 .. figure:: images/presentation_soundtrack.webp
+    :alt:
+    :align: center
+
+    The Soundtrack Settings from Presentation Tool
 
 The **Advanced** page from the tool allows to customize special slideshow settings to use in particular conditions.
 
 .. figure:: images/presentation_advanced.webp
+    :alt:
+    :align: center
 
-During the slide show, you can access a toolbar on the upper left screen corner. Move the mouse cursor to the top left of the screen to access it.
+    The Advanced Settings from Presentation Tool
 
-With this tool bar, you can drive the progress of the slide show. You can pause or play the slide show, go back to the preview image, go to the next image, and stop the slide show.
+During the slide-show, you can access a toolbar on the upper left screen corner. Move the mouse cursor to the top left of the screen to access it.
 
-In the lower left screen corner you can see the current image file name, the current image ID, and the total number of images included in the slide show.
+With this tool bar, you can drive the progress of the slide show. You can pause or play the slide-show, go back to the preview image, go to the next image, and stop the slide-show.
+
+In the lower left screen corner you can see the current image file name, the current image index, and the total number of images included in the slide-show.
 
 .. figure:: images/presentation_view.webp
+    :alt:
+    :align: center
+
+    The Presentation Tool Running With OSD on the Top of Screen
