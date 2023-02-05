@@ -131,11 +131,20 @@ However, before you start attributing stars everywhere take a moment to establis
     :alt:
     :align: center
 
-    The Edit :ref:`Rating Properties <labels_edit>` From Thumbbar
+    The Edit :ref:`Rating Properties <labels_edit>` From Thumb-bar
 
 That will get you quite far in distinguishing your rating pyramid. Say, you choose a ratio of 7 between levels. For every 5 star image you'll then have 7 4 stars, 49 3 stars and so on, resulting in almost 20000 pictures. Amazing? Yes, and 16807 of them you didn't have to rate at all! You even can define a different rating scheme depending on the kind of use, 2 stars for commercial use, may mean something else than 2 stars holiday photos. It is also a good practice to define a neutral rating, everything below is actually a negative rating.
 
-This will help you culling and thinning your collection very efficiently. Or you could define purposes to ratings, say 0 stars for 'can throw away', 1 star for images in quarantine (decide later), 2 stars for gallery export, 3 stars for printing, 4 stars for selling, 5 stars for 'have to work on', as you please. It must suit your needs. The following table illustrates a possible evolution for a professional photographer using a ranking ratio of roughly 7 over the next 12 years. It is evident that the good shots can be easily found, even within millions of photos.
+This will help you culling and thinning your collection very efficiently. Or you could define purposes to ratings, like this:
+
+    - 0 stars for *can throw away*.
+    - 1 star for images in quarantine (decide later).
+    - 2 stars for gallery export.
+    - 3 stars for printing.
+    - 4 stars for selling.
+    - 5 stars for *have to work on*.
+
+It must suit your needs. The following table illustrates a possible evolution for a professional photographer using a ranking ratio of roughly 7 over the next 12 years. It is evident that the good shots can be easily found, even within millions of photos.
 
 .. figure:: images/dam_pyramid.webp
     :alt:
@@ -242,7 +251,7 @@ With digiKam you can enter unlimited amounts of text using internationalized alp
 Geolocation and Geo-tagging
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Do you still remember the times before GPS? When you would find your way to another city without navigation system? Wasn't the earth a dull blue ball before GoogleEarth? Well then, with images, the train of spatial representation is running at cruising speed alright.
+Do you still remember the times before GPS? When you would find your way to another city without navigation system? Wasn't the earth a dull blue ball before Google Earth? Well then, with images, the train of spatial representation is running at cruising speed alright.
 
 A few cameras have a GPS receiver built-in, the images come tagged with 3-dimensional coordinates. And with almost any GPS device you're able to extract a trace (of course the receiver needs to be switched-on and carried with you whilst taking the photographs, and for good matching the camera time must be accurately set) and save it onto a computer. You have to store it in GPX format, that's easily done with `gpsbabel <https://www.gpsbabel.org/>`_, gpsman and other tools.
 
