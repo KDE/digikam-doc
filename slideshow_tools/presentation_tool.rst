@@ -72,5 +72,5 @@ In the lower left screen corner you can see the current image file name, the cur
     :alt:
     :align: center
 
-    Screencast of the Presentation Tool Running With OSD on the Top of Screen
+    Screencast of the Presentation Tool Running With Cube OpenGL Effect and Showing OSD on the Top of Screen
 
