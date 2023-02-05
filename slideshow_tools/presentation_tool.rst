@@ -68,7 +68,7 @@ With this tool bar, you can drive the progress of the slide show. You can pause 
 In the lower left screen corner you can see the current image file name, the current image index, and the total number of images included in the slide-show.
 
 .. figure:: videos/presentation_view.webp
-    :width: 500px
+    :width: 600px
     :alt:
     :align: center
 
