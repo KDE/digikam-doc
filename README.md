@@ -359,6 +359,7 @@ from the application while an operation is under progress. It's perfect to write
 Use the same specifications to take screen-cast than for screenshot, aka color theme, widget style, icon theme, etc.
 
 To prevent huge animated WEBP files, just capture the right area from application and limit capture to less than 10 seconds.
+You can edit animated WEBP in [The Gimp](https://www.gimp.org/) to reduce size and specify **video in loop** feature.
 
 A good tool to capture video from desktop is [SimpleScreenRecorder](https://www.maartenbaert.be/simplescreenrecorder/).
 
@@ -375,9 +376,9 @@ This will record a screen-cast in WEBM format. Even if WEBM is supported in HTML
 Sphinx framework is not yet able to embed WEBM in EPUB.
 Convert it to animated WEBP using [project/webm2webp.sh](project/webm2webp.sh) script.
 
-Animated WEBP files must be hosted in **videos/** sub-folders from each documentation section.
+Loop animated WEBP files must be hosted in **videos/** sub-folders from each documentation section.
 
-- To include the screen-cast in a ReStructuredText file, use the syntax below;
+- To include the screen-cast in a ReStructuredText file, use the syntax below:
 
 ```
 .. figure:: videos/my_screen_cast.webp
