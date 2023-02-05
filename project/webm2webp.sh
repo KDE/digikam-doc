@@ -19,6 +19,6 @@
 ffmpeg -y -i $1 -vf palettegen palette.png
 
 # Convert WEBM to GIF using palette.
-ffmpeg -y -i $1  -i palette.png -filter_complex paletteuse -r 10 $(basename "$1" | cut -d. -f1).webp
+ffmpeg -y -i $1  -i palette.png -filter_complex paletteuse -stream_loop -r 10 $(basename "$1" | cut -d. -f1).webp
 
 rm -f palette.png
