@@ -271,7 +271,7 @@ The View Menu
 
     Tool to display images using OpenGL compatible device.
 
-    See the dedicated :ref:` OpenGL Viewer <opengl_viewer>` for more information. 
+    See the dedicated :ref:`OpenGL Viewer <opengl_viewer>` for more information. 
 
 .. _menu_mainfullscreen:
 
