@@ -1,6 +1,6 @@
 .. meta::
    :description: Using digiKam OpenGL Viewer
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, slide
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, slide, opengl
 
 .. metadata-placeholder
 
@@ -15,49 +15,53 @@ OpenGL Viewer
 
 .. contents::
 
-This tool preview a series of items using OpenGL hardware to speed-up rendering. There is no configuration dialog. Calling this tool from View --> OpenGL Image Viewer will show items in fullscreen mode.
+This tool preview a series of items using OpenGL hardware to speed-up rendering. There is no configuration dialog. Calling this tool from :menuselection:`View --> OpenGL Image Viewer` will show items in full-screen mode.
 
-Usage from Keyboard and mouse to quickly navigate between items is listen below:
+.. note::
+
+    This tool do no includes an OSD (On Screen Display). Navigating between items is done with keyboard and mouse.
+
+The usage from Keyboard and mouse to quickly navigate between items is listen below:
 
 - Item Access
 
     Previous Item:
-        Up key
-        PgUp key
-        Left key
+        :kbd:`Up` key
+        :kbd:`PgUp` key
+        :kbd:`Left` key
         Mouse wheel up
 
     Next Item:
-        Down key
-        PgDown key
-        Right key
+        :kbd:`Down` key
+        :kbd:`PgDown` key
+        :kbd:`Right` key
         Mouse wheel down
 
     Quit:
-        Esc key
+        :kbd:`Esc` key
 
 - Item Display
 
     Toggle fullscreen to normal:
-        f key
+        :kbd:`f` key
 
     Toggle scroll-wheel action:
-        c key (either zoom or change image)
+        :kbd:`c` key (either zoom or change image)
 
     Rotation:
-        r key
+        :kbd:`r` key
 
     Reset view:
         double click
 
     Original size:
-        o key
+        :kbd:`o` key
 
     Zooming:
         Move mouse in up-down-direction while pressing the right mouse button
-        c key and use the scroll-wheel
-        + and - keys
-        ctrl + scrollwheel
+        :kbd:`c` key and use the scroll-wheel
+        :kbd:`+` and :kbd:`-` keys
+        :kbd:`ctrl` + scrollwheel
 
     Panning:
         Move mouse while pressing the left button
@@ -65,4 +69,4 @@ Usage from Keyboard and mouse to quickly navigate between items is listen below:
 - Others
 
     Show help dialog:
-        F1 key
+        :kbd:`F1` key
