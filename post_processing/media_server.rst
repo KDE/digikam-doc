@@ -1,5 +1,5 @@
 .. meta::
-   :description: The digiKam Share With DLNA
+   :description: The digiKam Tool to Share With DLNA
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, DLNA, UPNP, share
 
 .. metadata-placeholder
@@ -15,34 +15,46 @@ Media Server
 
 .. contents::
 
-DLNA Mediaserver is used to automatically export digiKam photos through the local network to other `DLNA-compliant devices <https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance>`_ like smart phones, TV, and tablets.
+DLNA Media-Server is used to automatically export digiKam photos through the local network to other `DLNA-compliant devices <https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance>`_ like smart phones, TV, and tablets.
 
-To start the mediaserver, head to the right bar and click the Tools menu. You will find the dlna server icon as shown in the next screenshot. You can also start it from the Tools menu in the main toolbar. The mediaserver window will open as follows: 
+To start the media-server, head to the **Tools** tab from the **Right Side-bar**. You will find the **Share with DLNA** icon on the list. You can also start it from the :menuselection:`Tools --> Share with DLNA` menu entry. The media-server window will open as follows: 
 
 .. figure:: images/dlna_media_server.webp
+    :alt:
+    :align: center
 
-To add Items just select albums to share from the nested list. You can share from physical Albums, Tags, Searches, and Labels. When the selection is done, press the **Start** button, a wheel on the right will indicate that server is currently running. You can hide this mediaserver window (without closing the actual server) using the Hide Window button. If you want to close the window AND the server, press the ordinary cross to the top-right of the window. Note that the files and folders you specify will be saved for you to use in later sessions.
+    The DLNA Media-Server Dialog
 
-Use the option **Start Server at Startup** if you want to start the mediaserver automatically once you start digiKam.
+To add items just select your desired **Albums** from the nested lists. You can share from physical **Albums**, or virtual **Tags**, **Searches**, and **Labels**. When the selection is done, press the **Start** button, a wheel on the right side will indicate that server is currently running.
 
-If you want to shutdown the server, just press the **Stop** button.
+You can hide this media-server window (without closing the actual server) using the **Ok** button. If you want shutdown the server, re-open the Media-Server dialog and press the **Stop** button. Note that the files and folders you specify will be saved for you to use in later sessions.
+
+Use the option **Start Server at Startup** if you want to run the media-server automatically once you start digiKam.
 
 .. figure:: images/dlna_server_running.webp
+    :alt:
+    :align: center
 
-After you start the server, you might have to wait for about 30 seconds to one minute before other devices in the network can see your server, so please be patient.
+    The DLNA Media-Server is Running and can be Closed with the Stop Button
+
+After you start the media-server, you might have to wait for about 30 seconds to one minute before other devices in the network can see your server, so please be patient.
 
 This server was tested with some client applications. This list includes:
 
-   GUPnP AV (PC - archlinux)
+    - GUPnP AV (PC - archlinux)
 
-   Kodi media player (Android TV)
+    - Kodi media player (Android TV)
 
-   BubbleUPnP (Android Tablet)
+    - BubbleUPnP (Android Tablet)
 
-   MediaHouse (Android Phone)
+    - MediaHouse (Android Phone)
 
-   AnDLNA (Android)
+    - AnDLNA (Android)
 
-   VLC media player 3.0.16 (PC - Ubuntu) - Note: Older versions of VLC do not work properly.
+    - VLC media player 3.0.16 (PC - Ubuntu) - Note: Older versions of VLC do not work properly.
 
 .. figure:: images/dlna_contents_vlc.webp
+    :alt:
+    :align: center
+
+    The Shared Contents from digiKam Discovered Over the Network by VLC Media Player
