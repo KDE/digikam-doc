@@ -67,9 +67,9 @@ For all selected themes you can adjust the settings for the images and thumbnail
 
 In the Full Image section you can either save modified images or Use original image.
 
-For modified images you can select as output format JPEG (smallest filesize, but lossy) and PNG (lossless and free license) and set specific image compression features. If disk space is of concern check the target image compression and lower the compression level from the host application default value.
+For modified images you can select as output format JPEG (smallest file-size, but lossy) and PNG (lossless and free license) and set specific image compression features. If disk space is of concern check the target image compression and lower the compression level from the host application default value.
 
-Checking the Max. size box you can fix the maximum target image size (in pixels) with the spinbox at the right. Images bigger than this value will be scaled down to it, but smaller images will not be modified.
+Checking the Max. size box you can fix the maximum target image size (in pixels) with the spin-box at the right. Images bigger than this value will be scaled down to it, but smaller images will not be modified.
 
 .. note::
 
