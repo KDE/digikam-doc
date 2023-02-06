@@ -19,7 +19,7 @@ This tool can be used to send images directly by e-mail.
 
 With this tool you can e-mail the selected images with your favorite e-mail agent. Resizing images is possible. You can use drag and drop to add more images to the list of images to send.
 
-When opening the tool from the application, the Email Images Options dialog will appear with the e-mail agent applications detected on your system. You can also select the items to send by **Images** list or **albums** collection.
+When opening the tool from the application, the **Email Images Options** dialog will appear with the e-mail agent applications detected on your system. You can also select the items to send by **Images** list or **albums** collection.
 
 .. figure:: images/send_images_agents.webp
     :alt:
@@ -51,13 +51,13 @@ The next page is used to change the settings of the images to be sent. These set
 
 Select your favorite **Mail Program** from the drop-down menu.
 
-If you select **Attach a file with image properties** from Application the comments, rating or tags included with the images will be merged to a text file and attached in the mail.
+If you select **Attach a file with image properties from Application** the comments, rating, or tags included with the images will be merged to a text file and attached in the mail.
 
-The next three items allow you to set-up the image properties to be sent. To enable these options check **Adjust image properties**. First select an Image size suitable for your Internet connection speed and the target mailbox size.
+The next three items allow you to set-up the image properties to be sent. To enable these options check **Adjust image properties**. First select an **Image size** suitable for your Internet connection speed and the target mailbox size.
 
-The PNG file format in the **Image format** drop-down menu is not well adapted to reduce photographic images file size, but is best suited for compressing lossless items like the TIFF file format. PNG must be used if you use dialup speed Internet and you want to preserve the photo quality. Otherwise, JPEG is the recommended format.
+The **PNG** file format in the **Image format** drop-down menu is not well adapted to reduce photographic images file size, but is best suited for compressing lossless items like the TIFF file format. **PNG** must be used if you use dial-up speed Internet and you want to preserve the photo quality. Otherwise, **JPEG** is the recommended format.
 
-The **Image quality** can be chosen with the input box. 75% is the standard compression ratio for JPEG files. Setting compression to 100% will result in lossless compression at the cost of the largest file size. The difference in file size between 90% and 100% can be quite dramatic, whereas the gain in quality is minor. Very good quality is already obtained with 85% compression.
+The **Image quality** can be chosen with the input box. 75% is the standard compression ratio for **JPEG** files. Setting compression to 100% will result in lossless compression at the cost of the largest file size. The difference in file size between 90% and 100% can be quite dramatic, whereas the gain in quality is minor. Very good quality is already obtained with 85% compression.
 
 .. note::
 
@@ -79,7 +79,7 @@ When all jobs are completed, this dialog will not close automatically and you ca
     :alt:
     :align: center
 
-    The Send Images Tool Post porcessing Items to Send By Mail
+    The Send Images Tool Post Processing Items to Send By Mail
 
 The composer window will be open with your favorite e-mail client. You just need to add the addressee and the subject. The selected images will be already be listed as attachments.
 
@@ -89,5 +89,5 @@ The composer window will be open with your favorite e-mail client. You just need
 
     The Items Post Processed and Ready to Send with Thunderbird Mail Agent
 
-When email is sent, you can close the progress dialog to purge all temporary files.
+When email is sent, you can **Close** the progress dialog to purge all temporary files.
 
