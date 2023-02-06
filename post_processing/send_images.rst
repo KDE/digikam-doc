@@ -1,6 +1,6 @@
 .. meta::
-   :description: The digiKam Send Images By Mail 
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, html, gallery
+   :description: The digiKam Tool to Send Images By Mail
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, email, sharing
 
 .. metadata-placeholder
 
@@ -22,10 +22,18 @@ With this tool you can e-mail the selected images with your favorite e-mail agen
 When opening the tool from the application, the Email Images Options dialog will appear with the e-mail agent applications detected on your system. You can also select the items to send by **Images** list or **albums** collection.
 
 .. figure:: images/send_images_agents.webp
+    :alt:
+    :align: center
+
+    The Send Images E-mail Client Detection and Contents Selection
 
 With the Images list mode, you will show your pre-selected items from digiKam already in the list of the dialog.
 
 .. figure:: images/send_images_list.webp
+    :alt:
+    :align: center
+
+    The Send Images Tool and Selected List of Items
 
 Below the image list there are five buttons. The two left buttons are used to move a selected image in the list up or down. The middle button opens a file browser to add more files as needed in the usual file selection manner.
 
@@ -58,16 +66,28 @@ The **Image quality** can be chosen with the input box. 75% is the standard comp
 If you want to drop metadata, turn on **Remove all metadata** option.
 
 .. figure:: images/send_images_email.webp
+    :alt:
+    :align: center
+
+    The Send Images Tool Mail Program Selection and Attachement Properties
 
 The next page will show a progress dialog given a feedback on the progress of your operation to prepare item before e-mailing. Press the **Cancel** button during this stage if you want to abort the process.
 
 When all jobs are completed, this dialog will not close automatically and you can consult the progress messages if any errors occurred during this stage. The mail agent will be started automatically at the end.
 
 .. figure:: images/send_images_progress.webp
+    :alt:
+    :align: center
+
+    The Send Images Tool Post porcessing Items to Send By Mail
 
 The composer window will be open with your favorite e-mail client. You just need to add the addressee and the subject. The selected images will be already be listed as attachments.
 
 .. figure:: images/send_images_thunderbird.webp
+    :alt:
+    :align: center
+
+    The Items Post Processed and Ready to Send with Thunderbird Mail Agent
 
 When email is sent, you can close the progress dialog to purge all temporary files.
 
