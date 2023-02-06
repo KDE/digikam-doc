@@ -19,7 +19,7 @@ This tool preview a series of items using OpenGL hardware to speed-up rendering.
 
 .. note::
 
-    This tool do no includes an OSD (On Screen Display). Navigating between items is done with keyboard and mouse.
+    This tool does not include an OSD (On Screen Display). Navigating between items is done with keyboard and mouse.
 
 The usage from Keyboard and mouse to quickly navigate between items is listen below:
 
