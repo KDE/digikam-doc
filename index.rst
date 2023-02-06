@@ -799,3 +799,25 @@ Credits and License
    :hidden:
 
    credits_license
+
+############
+Get Involved
+############
+.. figure:: images/index_get_involved.webp
+    :width: 300px
+    :alt:
+    :target: get_involved.html
+
+    Contribute to digiKam project
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`get_involved`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   get_involved
