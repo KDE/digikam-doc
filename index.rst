@@ -644,6 +644,10 @@ Post Processing
 
         :ref:`time_adjust`
 
+    .. container:: tile no-descr
+
+        :ref:`pano_creator`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

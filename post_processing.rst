@@ -1,6 +1,6 @@
 .. meta::
    :description: Post Process Items From Your Collections
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, post, processing
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, post, processing, panorama, metadata, html, gallery, media, server, email, print, time
 
 .. metadata-placeholder
 
@@ -29,3 +29,4 @@ This section explain how to use the digiKam post processing tools.
    post_processing/send_images.rst
    post_processing/print_creator.rst
    post_processing/time_adjust.rst
+   post_processing/pano_creator.rst
