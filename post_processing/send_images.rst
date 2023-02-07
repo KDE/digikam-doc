@@ -69,7 +69,7 @@ If you want to drop metadata, turn on **Remove all metadata** option.
     :alt:
     :align: center
 
-    The Send Images Tool Mail Program Selection and Attachement Properties
+    The Send Images Tool Mail Program Selection and Attachment Properties
 
 The next page will show a progress dialog given a feedback on the progress of your operation to prepare item before e-mailing. Press the **Cancel** button during this stage if you want to abort the process.
 
