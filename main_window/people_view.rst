@@ -30,7 +30,7 @@ The first step is to have digiKam finding all those pics that show faces not eve
 
     - **Skip Images Already Scanned**: choose this option if you haven't scanned yet or if the last scan yielded good results but you would like to scan new images.
 
-    - **Scan Again And Merge Results**: choose this option if the results of the previous scan weren't accurate. This would rescan all images again, and is time consuming.
+    - **Scan Again And Merge Results**: choose this option if the results of the previous scan weren't accurate. This would re-scan all images again, and is time consuming.
 
     - **Clear Unconfirmed Results And Rescan**: remove all faces registered in database with no name and process again an analysis.
 
@@ -42,7 +42,7 @@ The first step is to have digiKam finding all those pics that show faces not eve
 
 The first option you would choose if you didn't scan yet or if you did with a satisfying result but added new photographs since then or if you already improved a search result, e.g. by removing face tags which obviously don't show a face. The second you would choose if you want the images already scanned to be included in the next scan. The third is more interesting in the context of Face Recognition since **Unconfirmed results** means face tags that don't have a name assigned to them yet.
 
-After the Face Scan is complete, you should see a new tag **Unknown** where the results of the face scan will appear. You may now manually identify a few of these faces and then proceed for face recognition. At least a minimum of **4 similar faces tagged** in different images must be trained for an automatic recognition workflow.
+After the Face Scan is complete, you should see a new tag **Unknown** where the results of the face scan will appear. You may now manually identify a few of these faces and then proceed for face recognition. At least a minimum of **5 similar faces tagged** in different images must be trained for an automatic recognition workflow.
 
 .. note::
 
@@ -66,9 +66,9 @@ The last tab from the settings view allows to tune advanced configuration, as th
 
 .. note::
 
-   The deep-learning YOLO v3 model is more powerful for face workflow but it's time and CPU consuming. Only turn on this option if you hardware can supports intensive computations.
+   The deep-learning YOLO v3 model is more powerful but it's time and CPU consuming. Only turn on this option if you hardware can supports intensive computations. It's only used for face detection, especially to detect very small faces, blurry faces, or group photos with many faces.
 
-For the task we are talking about you check **Detect Faces**, of course. Since face detection is a time-consuming task you better don't hit **Scan** right away, rather **Options**. An additional area will fold out organized with three tabs. In **Search-In** you can confine the scan to certain albums or tags. In **Settings** you can adjust the **Face Accuracy** with a balance between **Sensitivity** and **Specificity** that suits your needs. A higher specificity implies higher accuracy, however this results in a smaller set of results. Under Advanced you will find two checkboxes. The first is explained by the text above it. The second is for face recognition, see next article.
+For the task we are talking about you check **Detect Faces**, of course. Since face detection is a time-consuming task you better don't hit **Scan** right away, rather **Options**. An additional area will fold out organized with three tabs. In **Search-In** you can confine the scan to certain albums or tags. In **Settings** you can adjust the **Face Accuracy** with a balance between **Sensitivity** and **Specificity** that suits your needs. A higher specificity implies higher accuracy, however this results in a smaller set of results. Under Advanced you will find two check-boxes. The first is explained by the text above it. The second is for face recognition, see next chapter.
 
 Once you have chosen your options carefully you click **Scan** and after a while, depending on the scope of your selection, the result will be presented in the Image Area. In the Tags list of the Left Sidebar you will see the People branch of your tag tree. You will see the whole scan result only if the topmost tag **People** is selected. In the tree you will see a new virtual tag called **Unknown** which will show all those images where faces are recognized but not yet connected to a person. If you just scanned for the first time you will find the whole result also here.
 
@@ -200,7 +200,7 @@ Once you have a tag assigned to a few photographs you can have digiKam looking i
 
 .. important::
 
-    To be able to recognize a new face automatically, a minimum of 4 similar faces tagged in different images need to be previously trained to the deep-learning engine using manual face management workflow.
+    To be able to recognize a new face automatically, a minimum of 5 similar faces tagged in different images need to be previously trained to the deep-learning engine using manual face management workflow.
 
 To start the Face Recognition you click **Scan Collection For Faces** button. The process will tag every recognized face with the appropriate People tag out of your tag tree and the corresponding thumbnail will disappear from the **Unknown** tag selection.
 
@@ -210,7 +210,11 @@ To start the Face Recognition you click **Scan Collection For Faces** button. Th
 
     The digiKam Face Management Icon-View With New Recognized Automatically Faces as **Agnès** Name
 
-Face Recognition is faster than Face Detection but it still makes sense to click **Settings** and confine the scan to certain albums or tags in the Albums tab, e.g. to the **Unknown** tag. In the **Settings** tab we can play with the balance between speed and accuracy and two checkboxes. The first is explained by the text above it.
+Face Recognition is faster than Face Detection but it still makes sense to click **Settings** and confine the scan to certain albums or tags in the Albums tab, e.g. to the **Unknown** tag. In the **Settings** tab we can play with the balance between speed and accuracy and two check-boxes. The first is explained by the text above it.
+
+.. note::
+
+    Face recognition only works well with faces that have been automatically detected by digiKam, not with manually drawn face rectangles or faces from other programs.
 
 In case of unsatisfying results it might be helpful to use **Clear And Rebuild All Training Data**. One reason can be that there are too many face tags assigned to a person which shows this person in a way that doesn't really help the search algorithm, e.g. with sunglasses, blurred, unusual colors, carnival make up, dark shaded areas in the face, baby/kid/adult photographs mixed... Another reason to use that option can be false face recognition due to a wrong accuracy value in the **Settings** tab.
 
@@ -220,12 +224,14 @@ In case of unsatisfying results it might be helpful to use **Clear And Rebuild A
 
     The digiKam Face Management Icon-View With New Recognized Faces to Confirm as **Agnès** Name
 
-To Complete the Recognition Process, you will need to **Confirm** the new recognized faces. By applying the properties, new faces will be moved to the face tag definitively.
+To complete the recognition process, you will need to **Confirm** the new recognized faces. By applying the properties, new faces will be moved to the face tag definitively.
 
 The results of facial recognition appear in the form of unconfirmed results. These results will show up in the **Unconfirmed** tag, as well as in the tag of the person suggested for each face. Hovering over unconfirmed faces will display a few options:
 
     - The **Confirm** button allows you to confirm the suggestion. This would assign the suggested name to the face.
+
     - Use the **Reject** button, if the suggestion is incorrect. This would move the face back to **Unknown**.
+
     - Use the **Delete** button, if the suggestion is not a face. This will remove the face region from the database.
 
 About the face categorization and sorting, faces will appear by default categorized based on their name. You may change this behavior, by going to :menuselection:`View --> Separate Items`. Note that using a different categorization order will lead to **Confirmed** and **Unconfirmed** faces appearing mixed with one another. To change this behaviour you may modify the sorting order within each category by going to :menuselection:`View --> Sort Items --> By Face Type`.
