@@ -32,7 +32,7 @@ One main difference between Showfoto and digiKam Image Editor is the **non-suppo
 
     As Showfoto does not use a database, application lack **image versioning** support.
 
-Other difference with digiKam Image Editor is the **Left sidebar**. In digiKam there left sidebar do not exists as all phoyo management is delegate to the Main Window. In Showfoto, the left sidebar host two tab to navigate in file-system:
+Other difference with digiKam Image Editor is the **Left sidebar**. In Showfoto all photo management is delegate to the Main Window and the left sidebar host two tab to navigate through your file-system:
 
     - :ref:`First one <showfoto_folderstab>`, named **Folders** allows to go in-deep in directory hierarchies as a standard files manager. You can see the image thumbnails and the current path. Clicking on a thumbnail will load the contents to the canvas.
 

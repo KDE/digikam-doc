@@ -29,12 +29,12 @@ Showfoto has a limited configuration entries compared to digiKam, but you will f
 Editor Window
 -------------
 
-The Showfoto **Editor Window** settings page is the same than digiKam Image Editor. Look  :ref:`this section <window_settings>` from the manual for details.
+The Showfoto **Editor Window** settings page is the same than digiKam Image Editor. Look :ref:`this section <window_settings>` from the manual for details.
 
 Metadata
 --------
 
-The Showfoto **Metadata** settings page only includes few common options that you can found into  :ref:`this section <metadata_rotation>` from the digiKam manual.
+The Showfoto **Metadata** settings page only includes few common options that you can found into :ref:`this section <metadata_rotation>` from the digiKam manual.
 
 .. figure:: images/showfoto_setup_metadata.webp
     :alt:
@@ -56,33 +56,33 @@ The Showfoto **Tooltip** settings page is similar :ref:`than digiKam <tooltip_se
 RAW Decoding
 ------------
 
-The Showfoto **RAW Decoding** settings page is the same than digiKam Image Editor. Look  :ref:`this section <setup_raw>` from the manual for details.
+The Showfoto **RAW Decoding** settings page is the same than digiKam Image Editor. Look :ref:`this section <setup_raw>` from the manual for details.
 
 Color Management
 ----------------
 
-The Showfoto **Color Management** settings page is the same than digiKam Image Editor. Look  :ref:`this section <cm_settings>` from the manual for details.
+The Showfoto **Color Management** settings page is the same than digiKam Image Editor. Look :ref:`this section <cm_settings>` from the manual for details.
 
 Save Images
 -----------
 
-The Showfoto **Save Images** settings page is the same than digiKam Image Editor. Look  :ref:`this section <saveimage_settings>` from the manual for details.
+The Showfoto **Save Images** settings page is the same than digiKam Image Editor. Look :ref:`this section <saveimage_settings>` from the manual for details.
 
 Plugins
 -------
 
-The Showfoto **Plugins** settings page is mostly the same than digiKam Image Editor. Look  :ref:`this section <plugins_settings>` from the manual for details.
+The Showfoto **Plugins** settings page is mostly the same than digiKam Image Editor. Look :ref:`this section <plugins_settings>` from the manual for details.
 
 .. note::
 
-    Showfoto does not support the **Batch Queue Manager** plugins. This tab does not exist in this view compared to digiKam
+    Showfoto does not support the **Batch Queue Manager** plugins. This tab does not exist in this view compared to digiKam.
 
 Miscellaneous
 -------------
 
 The Showfoto **Miscellaneous** settings page is less complex :ref:`than digiKam <miscs_settings>`, but **SpellCheck** and **Localize** tabs are exactly the same. The **Grouping** tab present in digiKam does not exist in Showfoto due to the lack of database support. The differences are located mostly in tabs listed below:
 
-    - In **Behaviour** tab, Showfoto propose some options to **Sort Order** the icon-views as the **Thumbbar** and list-view available in **Folders** and **Stack** tabs from left side-bar. Information show as overlay with **Thumbbar** can be also customized. The **Updates** view to checkout new program version is exactly the same than digiKam.  
+    - In **Behaviour** tab, Showfoto propose some options to **Sort Order** the icon-views as the **Thumbbar** and list-view available in **Folders** and **Stack** tabs from left side-bar. Information show as overlay with **Thumbbar** can be also customized. The **Updates** view to checkout new program version is exactly the same than digiKam.
 
     .. figure:: images/showfoto_setup_misc_behaviour.webp
         :alt:
