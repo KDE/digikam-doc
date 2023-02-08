@@ -24,7 +24,7 @@ digiKam is a powerful tool with a lot of features but all the different menu ent
 
 And that’s were you come in. If you are an advanced user then we need you to update old sections or write explanations of new features. But even if you have the feeling you are not experienced enough to write something, you can still update screenshots or translate in different languages. If you benefit from the work others did on digiKam it is a great (and easy) opportunity to give something back to the project and the community.
 
-The `README file <https://invent.kde.org/documentation/digikam-doc/-/blob/master/README.md>`_ from the documentation repository list all details to help with this manual.
+The `README file <https://invent.kde.org/documentation/digikam-doc/-/blob/master/README.md>`_ from the documentation repository lists all details to help with this manual.
 
 Reporting Bug
 -------------
