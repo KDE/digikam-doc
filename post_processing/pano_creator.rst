@@ -55,7 +55,7 @@ Post processing begins and when it is done click on the **Next** button.
     :alt:
     :align: center
 
-     The 5th Page of the Panorama Creator Wizard
+    The 5th Page of the Panorama Creator Wizard
 
 In this window the images are being processed! When done click on **Next** button.
 
