@@ -40,7 +40,7 @@ The new filename that digiKam will use for the photographs when they are downloa
 
 .. caution::
 
-    With Gphoto2 drivers, at the moment digiKam cannot read metadata of RAW files during the import. You might want to import the files while preserving camera filenames first and then rename them after the import using the rename function (:kbd:`F2`).
+    With gPhoto2 drivers, at the moment digiKam cannot read metadata of RAW files during the import. You might want to import the files while preserving camera filenames first and then rename them after the import using the rename function (:kbd:`F2`).
 
     Another solution will be to use instead a memory cards reader and the USB Mass Storage driver.
 

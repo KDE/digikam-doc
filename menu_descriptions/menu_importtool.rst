@@ -32,7 +32,7 @@ The Device Menu
 
 :menuselection:`Device --> Capture`
 
-    Perform a tethered shooting with your camera (supported only by `GPhoto2 devices <http://gphoto.org/doc/remote/>`_).
+    Perform a tethered shooting with your camera (supported only by `gPhoto2 devices <http://gphoto.org/doc/remote/>`_).
 
 :menuselection:`Device --> Information`
 
@@ -106,7 +106,7 @@ The Item Menu
 
 :menuselection:`Item --> Upload` :kbd:`Ctrl+U`
 
-    Allows to upload new items from your computer to the device. This feature can be not supported by some Gphoto2 based devices. See :menuselection:`Device --> Information` for details.
+    Allows to upload new items from your computer to the device. This feature can be not supported by some gPhoto2 based devices. See :menuselection:`Device --> Information` for details.
 
 :menuselection:`Item --> Mark as downloaded`
 
@@ -114,7 +114,7 @@ The Item Menu
  
 :menuselection:`Item --> Toggle Lock` :kbd:`Ctrl+G`
 
-    Allows to lock selected items from the device for the deletion (read only). This feature can be not supported by some Gphoto2 based devices. See :menuselection:`Device --> Information` for details.
+    Allows to lock selected items from the device for the deletion (read only). This feature can be not supported by some gPhoto2 based devices. See :menuselection:`Device --> Information` for details.
 
 The View Menu
 -------------

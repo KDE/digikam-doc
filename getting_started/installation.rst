@@ -241,7 +241,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
 
     The macOS Security and Privacy Panel with the Files and Folders Access Rights
 
-- **Full Disk**: This right is mandatory if you use Gphoto2 driver to access on system places to communicate with the device.
+- **Full Disk**: This right is mandatory if you use gPhoto2 driver to access on system places to communicate with the device.
 
 .. figure:: images/macos_privacy_fulldisk.webp
     :width: 400px

@@ -24,7 +24,7 @@ The camera settings shows on the left of the list of the currently supported cam
     :alt:
     :align: center
 
-    The digiKam Camera Configuration Panel with the Gphoto View
+    The digiKam Camera Configuration Panel with the gPhoto View
 
 Clicking on a camera in the list from the left will display the supported ports which you can then select. If there is only one supported port it will be automatically selected. At the bottom on the right there is a box for setting the exact path in case of a serial port. Please note that USB interface does not need any paths to be set. If you cannot find your camera on the list, you can try to use a generic **Mass Storage** device selecting Mounted Camera item in the list.
 
@@ -34,7 +34,7 @@ At the very bottom is where you set the path for a USB or FireWire (IEEE-1394 or
     :alt:
     :align: center
 
-    Dialog to Add a Camera Device Using Gphoto Drivers
+    Dialog to Add a Camera Device Using gPhoto Drivers
 
 To be able to use your digital camera with digiKam, connect the camera to your computer, switch the camera to the image display mode and turn it on.
 
