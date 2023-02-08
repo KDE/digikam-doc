@@ -1,6 +1,6 @@
 .. meta::
    :description: digiKam Main Window Image View
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image, view, tool-tip, table, group
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, image, view, tooltip, table, group
 
 .. metadata-placeholder
 

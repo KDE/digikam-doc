@@ -42,7 +42,7 @@ The keywords that you can use in your script code are listed below. The tool wil
 
 .. important::
 
-    A new file is always expected on **$OUTPUT**. With a script programs that do not create a new file (e.g. changing metadata with Exiftool) you must first copy **$INPUT** to **$OUTPUT** with a command appropriate to the operating system and then make the changes to **$OUTPUT**.
+    A new file is always expected on **$OUTPUT**. With a script programs that do not create a new file (e.g. changing metadata with ExifTool) you must first copy **$INPUT** to **$OUTPUT** with a command appropriate to the operating system and then make the changes to **$OUTPUT**.
 
 The environment variables that you can use in your script code are listed below:
 

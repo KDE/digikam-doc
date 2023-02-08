@@ -71,7 +71,7 @@ Rotation Settings
 Views Settings
 --------------
 
-These settings allows to customize the metadata contents displayed in Exif, Makernotes, Iptc, XMP, and Exiftool viewers from the right sidebar. For more details see :ref:`this section <metadata_view>` from the manual.
+These settings allows to customize the metadata contents displayed in Exif, Makernotes, IPTC, XMP, and ExifTool viewers from the right sidebar. For more details see :ref:`this section <metadata_view>` from the manual.
 
 .. figure:: images/setup_metadata_views.webp
     :alt:
