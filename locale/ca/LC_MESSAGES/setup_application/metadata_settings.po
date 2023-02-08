@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 00:50+0000\n"
-"PO-Revision-Date: 2023-01-18 21:52+0100\n"
+"PO-Revision-Date: 2023-02-06 21:08+0100\n"
 "Last-Translator: Antoni Bella <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -40,6 +40,7 @@ msgstr "Configurar les metadades"
 msgid "Contents"
 msgstr "Contingut"
 
+# skip-rule: t-acc_obe
 #: ../../setup_application/metadata_settings.rst:18
 msgid ""
 "Image files can have some metadata embedded into the image file format. "
@@ -50,6 +51,13 @@ msgid ""
 "wikipedia.org/wiki/Extensible_Metadata_Platform>`_ formats if they are "
 "present in the file."
 msgstr ""
+"Els fitxers d'imatge poden tenir algunes metadades incrustades a dins del "
+"format del fitxer d'imatge. Aquestes metadades es poden emmagatzemar en "
+"diversos formats estàndard com fitxers JPEG, TIFF, PNG, JPEG 2000, PGF i "
+"RAW. Les metadades es poden llegir i escriure en els formats `Exif <https://"
+"en.wikipedia.org/wiki/Exif>`_, `IPTC <https://en.wikipedia.org/wiki/"
+"IPTC_Information_Interchange_Model>`_ i `XMP <https://en.wikipedia.org/wiki/"
+"Extensible_Metadata_Platform>`_ si estan presents en el fitxer."
 
 # skip-rule: common-settings
 #: ../../setup_application/metadata_settings.rst:23
@@ -78,6 +86,10 @@ msgid ""
 "metadata when user clicks on the **Apply Pending Changes To Metadata** icon "
 "in the status bar or when application is shutdown."
 msgstr ""
+"Si està activada l'opció **Usa una sincronització posterior**, el digiKam "
+"només escriurà les metadades quan l'usuari faci clic sobre la icona **Aplica "
+"els canvis pendents a les metadades** en la barra d'estat o quan l'aplicació "
+"es tanqui."
 
 # skip-rule: common-settings
 #: ../../setup_application/metadata_settings.rst:40
@@ -91,6 +103,10 @@ msgid ""
 "`filename.ext.xmp`. For example, :file:`image1.dng` will have a sidecar file "
 "named :file:`image1.dng.xmp`."
 msgstr ""
+"La pestanya **Laterals** permet a l'usuari controlar si el digiKam llegirà i "
+"escriurà des de/cap als laterals XMP o no. Nom del fitxer per als laterals "
+"establerts a :file:`filename.ext.xmp`. Per exemple, :file:`image1.dng` "
+"tindrà un fitxer lateral anomenat :file:`image1.dng.xmp`."
 
 #: ../../setup_application/metadata_settings.rst:48
 msgid "The digiKam Metadata Sidecar Behavior Settings Page"
@@ -103,6 +119,8 @@ msgid ""
 "If the box **Read from sidecar files** is checked, digiKam will only read "
 "the sidecar while ignoring the embedded metadata."
 msgstr ""
+"Si està marcada la casella **Llegeix des de fitxers laterals**, el digiKam "
+"només llegirà el lateral i ignorarà les metadades incrustades."
 
 # skip-rule: common-settings
 #: ../../setup_application/metadata_settings.rst:57
@@ -128,6 +146,17 @@ msgid ""
 "If your camera routinely gets this orientation information wrong you might "
 "like to switch this feature off."
 msgstr ""
+"**Mostra les imatges/miniatures &girades d'acord amb l'etiqueta "
+"d'orientació**: utilitzarà qualsevol informació d'orientació que la vostra "
+"càmera hagi inclòs en la informació Exif per a fer girar automàticament les "
+"vostres fotografies perquè estiguin en la posició correcta quan es mostrin. "
+"En realitat, no girarà el fitxer d'imatge, només la visualització de la "
+"imatge a la pantalla. Si voleu girar permanentment la imatge en el fitxer, "
+"podeu fer clic amb el botó dret del ratolí sobre la miniatura i seleccionar "
+"**Gira/inverteix automàticament d'acord amb l'orientació Exif**. Després, la "
+"imatge es girarà en el disc i l'etiqueta es restablirà a «normal». Si la "
+"vostra càmera rep habitualment aquesta informació d'orientació incorrecta, "
+"potser voldreu desactivar aquesta característica."
 
 #: ../../setup_application/metadata_settings.rst:67
 msgid ""
@@ -163,6 +192,10 @@ msgid ""
 "Makernotes, Iptc, XMP, and Exiftool viewers from the right sidebar. For more "
 "details see :ref:`this section <metadata_view>` from the manual."
 msgstr ""
+"Aquestes opcions de configuració permeten personalitzar el contingut de les "
+"metadades que es mostren en els visualitzadors Exif, Notes del fabricant, "
+"IPTC, XMP i ExifTool des de la barra lateral dreta. Per obtenir més detalls, "
+"vegeu :ref:`aquesta secció <metadata_view>` del manual."
 
 #: ../../setup_application/metadata_settings.rst:80
 msgid "The digiKam Settings For The Metadata Viewers"
@@ -180,6 +213,10 @@ msgid ""
 "the ExifTool binary program, and the supported formats with the respective "
 "read and write features."
 msgstr ""
+"L'ExifTool és un motor de dorsal que el digiKam pot utilitzar per a "
+"processar operacions sobre les metadades, com veure, llegir i escriure. "
+"Aquest plafó només mostra la detecció del programa binari ExifTool i els "
+"formats admesos amb les característiques de lectura i escriptura respectives."
 
 #: ../../setup_application/metadata_settings.rst:93
 msgid "The digiKam Settings For The ExifTool Backend"
@@ -191,6 +228,9 @@ msgid ""
 "operations, see the :ref:`Metadata Behavior <metadata_behavior>` section of "
 "this manual."
 msgstr ""
+"Per a substituir el dorsal d'Exiv2 per a l'ExifTool amb totes les operacions "
+"de lectura i escriptura de metadades, vegeu la secció :ref:`Comportament de "
+"les metadades <metadata_behavior>` d'aquest manual."
 
 # skip-rule: common-settings
 #: ../../setup_application/metadata_settings.rst:102
@@ -204,6 +244,10 @@ msgid ""
 "with an extremely fast searching. Baloo is not an application, but a daemon "
 "to index files."
 msgstr ""
+"El **Baloo** és el marc de treball per a la indexació i cerca de fitxers per "
+"al **Plasma del KDE** sota Linux, amb un enfocament en proporcionar una "
+"empremta de memòria molt petita juntament amb una cerca extremadament "
+"ràpida. El Baloo no és una aplicació, sinó un dimoni per a indexar fitxers."
 
 #: ../../setup_application/metadata_settings.rst:110
 msgid "The digiKam Settings For The Baloo Metadata Search Engine"
@@ -217,6 +261,11 @@ msgid ""
 "the Baloo interface to provide file search results with items managed by the "
 "digiKam database."
 msgstr ""
+"Aquesta pàgina permet compartir les metadades emmagatzemades a la base de "
+"dades del digiKam amb el motor de cerca Baloo. Les aplicacions addicionals "
+"com el gestor de fitxers **Dolphin del KDE** poden utilitzar la interfície "
+"Baloo per a proporcionar resultats de cerca de fitxers amb els elements "
+"gestionats per la base de dades del digiKam."
 
 #: ../../setup_application/metadata_settings.rst:116
 msgid ""
@@ -224,6 +273,9 @@ msgid ""
 "Plasma **Files Indexer** feature must be enabled in the KDE Plasma control "
 "Panel."
 msgstr ""
+"Aquesta pàgina només està disponible a Linux, no a Windows ni macOS. La "
+"característica de l'indexador de fitxers de **Plasma del KDE** haurà d'estar "
+"activada en el plafó de control de Plasma del KDE."
 
 #: ../../setup_application/metadata_settings.rst:121
 msgid "Advanced Settings"
@@ -252,16 +304,22 @@ msgid ""
 "**Caption**: all languages-alternative comments (supported by XMP only), "
 "else the simple comments values (Exif and IPTC)."
 msgstr ""
+"**Llegenda**: tots els comentaris d'idioma alternatiu (admesos només amb "
+"XMP), altrament, els valors dels comentaris senzills (Exif i IPTC)."
 
 #: ../../setup_application/metadata_settings.rst:128
 msgid ""
 "**Color Label**: the color labels properties to apply on items in your "
 "workflow."
 msgstr ""
+"**Rètol de color**: les propietats dels rètols de color que s'aplicaran als "
+"elements en el vostre flux de treball."
 
 #: ../../setup_application/metadata_settings.rst:129
 msgid "**Rating**: the stars properties to apply on items in your workflow."
 msgstr ""
+"**Valoració**: les propietats de les estrelles que s'aplicaran als elements "
+"en el vostre flux de treball."
 
 #: ../../setup_application/metadata_settings.rst:130
 msgid ""
@@ -269,12 +327,17 @@ msgid ""
 "(supported by XMP only), else the simple flat list of keywords (Exif and "
 "IPTC)."
 msgstr ""
+"**Etiquetes**: la jerarquia de paraules clau imbricades que s'aplicaran als "
+"elements en el vostre flux de treball (admès només amb XMP), altrament, la "
+"llista plana senzilla de paraules clau (Exif i IPTC)."
 
 #: ../../setup_application/metadata_settings.rst:131
 msgid ""
 "**Title**: all languages-alternative titles (supported by XMP only), else "
 "the simple title values (Exif and IPTC)."
 msgstr ""
+"**Títol**: títols alternatius en tots els idiomes (admesos només amb XMP), "
+"altrament, els valors senzills de títol (Exif i IPTC)."
 
 #: ../../setup_application/metadata_settings.rst:133
 msgid ""
@@ -283,6 +346,10 @@ msgid ""
 "disable this option, you can customize **Read Options** and **Write "
 "Options** independently."
 msgstr ""
+"Per a cada categoria, podreu establir el comportament de lectura i "
+"escriptura en les metadades. La configuració predeterminada és **Unifica la "
+"lectura i l'escriptura**, però si desactiveu aquesta opció, podreu "
+"personalitzar les opcions de lectura i d'escriptura de manera independent."
 
 #: ../../setup_application/metadata_settings.rst:139
 msgid "The digiKam Advanced Metadata Settings For the **Caption** Category"
@@ -299,6 +366,13 @@ msgid ""
 "the bottom. The entry in the list are used only if item is enabled with the "
 "checkbox preceding the name."
 msgstr ""
+"En aquest exemple, l'entrada **Llegenda** a dalt de la llista és **Xmp.dc."
+"description** i el digiKam la llegirà primer. Si conté un valor vàlid, "
+"s'utilitzarà. En cas contrari, l'entrada següent anomenada **Xmp.exif."
+"UserComment**, etc. La prioritat de la llista d'entrades és alta a la part "
+"superior i baixa a la part inferior. L'entrada a la llista només "
+"s'utilitzarà si l'element està activat amb la casella de selecció que "
+"precedeix el nom."
 
 #: ../../setup_application/metadata_settings.rst:143
 msgid "With the buttons on the right side, you can customize the list:"
@@ -306,46 +380,60 @@ msgstr "Amb els botons del costat dret, podreu personalitzar la llista:"
 
 #: ../../setup_application/metadata_settings.rst:145
 msgid "**Add**: allows to add a new entry in the tags list."
-msgstr ""
+msgstr "**Afegeix**: permet afegir una entrada nova a la llista d'etiquetes."
 
 #: ../../setup_application/metadata_settings.rst:146
 msgid "**Edit**: allows to modify the current select entry in the list."
-msgstr ""
+msgstr "**Edita**: permet modificar l'entrada seleccionada actual a la llista."
 
 #: ../../setup_application/metadata_settings.rst:147
 msgid "**Delete**: allows to remove the current select entry in the list."
 msgstr ""
+"**Suprimeix**: permet eliminar l'entrada seleccionada actual a la llista."
 
 #: ../../setup_application/metadata_settings.rst:148
 msgid ""
 "**Move up**: allows to move the current select entry in the list to a higher "
 "priority."
 msgstr ""
+"**Mou cap amunt**: permet moure l'entrada seleccionada actual a la llista a "
+"una prioritat més alta."
 
 #: ../../setup_application/metadata_settings.rst:149
 msgid ""
 "**Move Down**: allows to move the current selected entry in the list to a "
 "lower priority."
 msgstr ""
+"**Mou cap avall**: permet moure l'entrada seleccionada actualment a la "
+"llista a una prioritat més baixa."
 
 #: ../../setup_application/metadata_settings.rst:150
 msgid "**Revert Changes**: allows to revert last changes done on the list."
 msgstr ""
+"**Reverteix els canvis**: permet revertir els darrers canvis realitzats a la "
+"llista."
 
 #: ../../setup_application/metadata_settings.rst:151
 msgid ""
 "**Revert To Default**: allows to reset the current list to the default "
 "values."
 msgstr ""
+"**Torna als valors predeterminats**: permet restablir la llista actual als "
+"valors predeterminats."
 
 #: ../../setup_application/metadata_settings.rst:155
 msgid ""
 "We recommend to always put XMP tags to the top priority on this list, as XMP "
 "has better features than IPC and Exif."
 msgstr ""
+"Recomanem posar sempre les etiquetes XMP a la màxima prioritat en aquesta "
+"llista, ja que XMP té millors característiques que IPC i Exif."
 
 #: ../../setup_application/metadata_settings.rst:159
 msgid ""
 "The **Tags** category provide an extra option named **Read All Metadata For "
 "Tags** to force operations on all the namespaces."
 msgstr ""
+"La categoria **Etiquetes** proporciona una opció addicional anomenada "
+"**Llegeix totes les metadades per a les etiquetes** per a forçar les "
+"operacions en tots els espais de nom."

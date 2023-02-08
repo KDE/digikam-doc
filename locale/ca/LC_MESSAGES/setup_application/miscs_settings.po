@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-17 00:50+0000\n"
-"PO-Revision-Date: 2023-01-19 19:03+0100\n"
+"PO-Revision-Date: 2023-02-07 11:56+0100\n"
 "Last-Translator: Antoni Bella <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -48,6 +48,9 @@ msgid ""
 "These settings group all application rules customizable by users but not "
 "covered in previous setting categories from the setup dialog."
 msgstr ""
+"Aquestes opcions de configuració agrupen totes les regles d'aplicació "
+"personalitzables per als usuaris però no cobertes en les categories de "
+"configuració anteriors des del diàleg de configuració."
 
 # skip-rule: common-settings
 #: ../../setup_application/miscs_settings.rst:23
@@ -56,7 +59,7 @@ msgstr "Configurar el comportament"
 
 #: ../../setup_application/miscs_settings.rst:26
 msgid "Scan Operations"
-msgstr "Operacions d'escaneig"
+msgstr "Operacions d'exploració"
 
 #: ../../setup_application/miscs_settings.rst:32
 msgid "The digiKam Behavior Configuration Page"
@@ -73,6 +76,16 @@ msgid ""
 "introduce low latency, and it is recommended to disable this option and to "
 "plan a manual scan through the maintenance tool at the right moment."
 msgstr ""
+"Establiu l'opció **Explora per a elements nous en iniciar** per a forçar al "
+"digiKam a explorar totes les col·leccions a la cerca d'elements nous que "
+"registrar en la base de dades. L'exploració es fa en segon pla mitjançant el "
+"gestor de progrés disponible a la barra d'estat quan es carrega la "
+"interfície principal del digiKam. Si el vostre ordinador és prou ràpid, això "
+"no afectarà la usabilitat del digiKam durant l'exploració. Si les vostres "
+"col·leccions són enormes o si utilitzeu una base de dades remota, això pot "
+"presentar una latència baixa, i es recomana desactivar aquesta opció i "
+"planificar una exploració manual a través de l'eina de manteniment en el "
+"moment adequat."
 
 #: ../../setup_application/miscs_settings.rst:36
 msgid ""
@@ -80,12 +93,18 @@ msgid ""
 "deleted and also renamed items are found. In order to find items that have "
 "been changed, this option must be deactivated."
 msgstr ""
+"Establiu l'opció **Exploració ràpida** per a accelerar significativament "
+"l'exploració. Es troben elements nous, eliminats i també reanomenats. Per a "
+"trobar els elements modificats, aquesta opció haurà d'estar desactivada."
 
 #: ../../setup_application/miscs_settings.rst:38
 msgid ""
 "**Detect faces in newly added images** option will perform automatically a "
 "face detection on items imported to the collections."
 msgstr ""
+"L'opció **Detecta les cares a les imatges afegides recentment** realitzarà "
+"automàticament una detecció de cares als elements importats a les "
+"col·leccions."
 
 #: ../../setup_application/miscs_settings.rst:40
 msgid ""
@@ -97,6 +116,14 @@ msgid ""
 "please use the maintenance tool. Take a care that option slow down startup "
 "stages."
 msgstr ""
+"Establiu l'opció **Elimina objectes obsolets de la base de dades nucli** per "
+"a forçar al digiKam a netejar la base de dades central de les entrades dels "
+"elements obsolets. Les entrades només s'eliminaran si el fitxer de l'element "
+"connectat ja ha estat eliminat, és a dir, l'objecte de la base de dades "
+"desaprofita espai. Aquesta opció no netejarà les altres bases de dades com "
+"ara la de miniatures o la de reconeixement. Per a les rutines de neteja de "
+"les altres bases de dades, utilitzeu l'eina de manteniment. Cal tenir cura "
+"que aquesta opció alentirà les etapes d'inici."
 
 #: ../../setup_application/miscs_settings.rst:45
 msgid "Generic Rules"
@@ -110,6 +137,11 @@ msgid ""
 "Photograph <deleting_photograph>` and the :ref:`Deleting an Album "
 "<deleting_album>` sections for more details."
 msgstr ""
+"Amb les opcions de configuració **Confirma en moure elements a la paperera** "
+"i **Confirma en suprimir elements permanentment**, podreu establir la "
+"verbositat del digiKam quan s'elimina una fotografia o un àlbum. Per a "
+"obtenir més detalls, vegeu les seccions :ref:`Eliminar una fotografia "
+"<deleting_photograph>` i :ref:`Eliminar un àlbum <deleting_album>`."
 
 #: ../../setup_application/miscs_settings.rst:49
 msgid ""
@@ -118,6 +150,10 @@ msgid ""
 "right sidebar** option. Otherwise the changes must be applied by pressing "
 "the **Apply changes** button."
 msgstr ""
+"Els canvis editorials realitzats a través de la barra lateral dreta poden "
+"ser aplicats silenciosament pel digiKam quan s'estableix l'opció **No "
+"confirmis en aplicar canvis des de la barra lateral dreta**. En cas "
+"contrari, cal aplicar els canvis prement el botó **Aplica els canvis**."
 
 #: ../../setup_application/miscs_settings.rst:51
 msgid ""
@@ -127,12 +163,20 @@ msgid ""
 "about face management, take a look to :ref:`this section of the manual "
 "<people_view>`."
 msgstr ""
+"L'opció **Mostra només les etiquetes de cara per a assignar noms a la barra "
+"lateral de persones** restringirà el contingut de la vista en arbre de "
+"persones a les etiquetes de cares disponibles quan assigneu un nom a una "
+"cara sense confirmar. Si voleu conèixer més detalls sobre la gestió de les "
+"cares, vegeu :ref:`aquesta secció <people_view>` del manual."
 
 #: ../../setup_application/miscs_settings.rst:53
 msgid ""
 "The option **Expand current tree item with a single mouse click** allows to "
 "customize how the mouse button will be used to expand a nested album branch."
 msgstr ""
+"L'opció **Expandeix l'element actual de l'arbre amb un clic únic de ratolí** "
+"permet personalitzar com s'utilitzarà el botó del ratolí per a expandir una "
+"branca de l'àlbum imbricat."
 
 #: ../../setup_application/miscs_settings.rst:55
 msgid ""
@@ -150,32 +194,43 @@ msgid ""
 "depending on the option set when new items are found during scanning. "
 "Possible values are:"
 msgstr ""
+"L'opció **Obtén la font de la data de l'àlbum:** permet ajustar la data de "
+"l'àlbum segons l'opció establerta quan es troben elements nous durant "
+"l'exploració. Els valors possibles són:"
 
 #: ../../setup_application/miscs_settings.rst:59
 msgid ""
 "**From The Newest Item Date**: to take the date from the newest item hosted "
 "in album."
 msgstr ""
+"**A partir de la data de l'element més nou**: per a prendre la data de "
+"l'element més nou allotjat a l'àlbum."
 
 #: ../../setup_application/miscs_settings.rst:60
 msgid ""
 "**From The Oldest Item Date**: to take the date from the oldest item hosted "
 "in album."
 msgstr ""
+"**A partir de la data de l'element més antic**: per a prendre la data de "
+"l'element més antic allotjat a l'àlbum."
 
 #: ../../setup_application/miscs_settings.rst:61
 msgid ""
 "**From The Average Date**: to compute the date from an average of all items "
 "hosted in album."
 msgstr ""
+"**A partir de la data mitjana**: per a calcular la data a partir d'una "
+"mitjana de tots els elements allotjats a l'àlbum."
 
 #: ../../setup_application/miscs_settings.rst:62
 msgid "**From The Folder Date**: to take the file system date."
 msgstr ""
+"**A partir de la data de la carpeta**: per a prendre la data del sistema de "
+"fitxers."
 
 #: ../../setup_application/miscs_settings.rst:63
 msgid "**No Change Of Date**: do not modify the date."
-msgstr ""
+msgstr "**Sense canviar la data**: no modifica la data."
 
 #: ../../setup_application/miscs_settings.rst:65
 msgid ""
@@ -183,6 +238,9 @@ msgid ""
 "strings are compared inside digiKam. This influences the sorting of the tree "
 "views. Possible values are:"
 msgstr ""
+"Amb l'opció de configuració **Tipus de comparació de cadenes:**, podreu "
+"establir la manera com es compararan les cadenes dins del digiKam. Això "
+"influirà en l'ordenació de les vistes en arbre. Els valors possibles són:"
 
 #: ../../setup_application/miscs_settings.rst:67
 msgid ""
@@ -190,6 +248,9 @@ msgid ""
 "conventions. The result will be sort naturally even if they have a different "
 "number of digits inside."
 msgstr ""
+"**Natural** intenta comparar cadenes d'una manera que respecta algunes "
+"convencions normals. El resultat s'ordenarà naturalment fins i tot si tenen "
+"un nombre diferent de dígits a dins."
 
 #: ../../setup_application/miscs_settings.rst:68
 msgid ""
@@ -197,6 +258,9 @@ msgid ""
 "entitle albums with ISO dates (as *201006* or *20090523*) and the albums "
 "should be sorted according to these dates."
 msgstr ""
+"**Normal** utilitza un enfocament més tècnic. Utilitzeu aquest estil si "
+"voleu titular els àlbums amb les dates ISO (com *201006* o *20090523*) i els "
+"àlbums s'ordenaran d'acord amb aquestes dates."
 
 #: ../../setup_application/miscs_settings.rst:70
 msgid ""
@@ -205,6 +269,10 @@ msgid ""
 "searches. The default value is 40. Selecting a lower value than 40 can make "
 "the search really slow."
 msgstr ""
+"Amb l'opció de configuració **Límit inferior per a la similitud mínima:**, "
+"podreu seleccionar el límit inferior del llindar mínim de similitud per a "
+"cerques aproximades i duplicades. El valor predeterminat és 40. Seleccionar "
+"un valor inferior a 40 pot fer que la cerca sigui realment lenta."
 
 #: ../../setup_application/miscs_settings.rst:75
 msgid "Application Updates"
@@ -218,6 +286,13 @@ msgid ""
 "choice is **Weekly Pre-Releases** which is proposed to tests quickly new "
 "features but not recommended to use in production as bugs can remain."
 msgstr ""
+"Les opcions de configuració **Actualitzacions** permeten ajustar com "
+"comprovar la disponibilitat en línia d'una versió nova de l'aplicació. "
+"Podreu seleccionar **Només per als llançaments estables**, les quals són les "
+"versions oficials segures que s'utilitzen en producció. Una altra opció són "
+"els **Prellançaments setmanals**, els quals es proposen per a provar "
+"ràpidament característiques noves, però no se'n recomana l'ús en producció, "
+"ja que poden persistir els errors."
 
 #: ../../setup_application/miscs_settings.rst:79
 msgid ""
@@ -225,6 +300,10 @@ msgid ""
 "including debug symbols. This version is more heavy but can help developers "
 "to trace dysfunctions in debugger."
 msgstr ""
+"L'opció **Usa la versió amb els símbols de depuració** permet baixar la "
+"versió que inclou els símbols de depuració. Aquesta versió és més pesada "
+"però pot ajudar els desenvolupadors a rastrejar les disfuncions en el "
+"depurador."
 
 #: ../../setup_application/miscs_settings.rst:81
 msgid ""
@@ -232,6 +311,10 @@ msgid ""
 "an update. The **Last check** date is indicated on the left side. If a new "
 "version is available online, a dialog will appears as below."
 msgstr ""
+"Finalment, a la part inferior, un botó **Comprova ara** permet enviar una "
+"sol·licitud d'actualització. La data de l'**Última comprovació:** s'indica a "
+"la banda esquerra. Si hi ha una versió nova disponible en línia, apareixerà "
+"un diàleg com es mostra a continuació."
 
 #: ../../setup_application/miscs_settings.rst:87
 msgid "Dialog under Windows When a new digiKam Version is Available Online"
@@ -243,6 +326,8 @@ msgid ""
 "From this dialog, press the **Download** button to process. A new progress "
 "dialog will appears as below."
 msgstr ""
+"Des d'aquest diàleg, premeu el botó **Baixa** per a processar. Apareixerà un "
+"diàleg de progrés nou com es mostra a continuació."
 
 #: ../../setup_application/miscs_settings.rst:95
 msgid "Progress Dialog under Windows to Get the new Version Available Online"
@@ -254,6 +339,9 @@ msgid ""
 "When the download is complete, a checksum is computed to be sure that files "
 "is not corrupted. If all is fine, a new dialog appears as below."
 msgstr ""
+"Quan es completa la baixada, es calcularà una suma de verificació per a "
+"assegurar-se que els fitxers no estiguin malmesos. Si tot està bé, "
+"apareixerà un diàleg nou com es mostra a continuació."
 
 #: ../../setup_application/miscs_settings.rst:103
 msgid "Dialog under Windows When Install is Ready to be Processed"
@@ -264,6 +352,8 @@ msgid ""
 "Just press **Install** button to process the final stage. The current "
 "digiKam session will be closed and installer will be started."
 msgstr ""
+"Senzillament premeu el botó **Instal·la** per a processar l'etapa final. Es "
+"tancarà la sessió actual del digiKam i s'iniciarà l'instal·lador."
 
 #: ../../setup_application/miscs_settings.rst:109
 msgid ""
@@ -271,6 +361,9 @@ msgid ""
 "downloaded and ready to use. The dialog propose to open desktop files-"
 "manager at the download place instead."
 msgstr ""
+"El paquet AppImage de Linux no requereix instal·lació en el sistema. El "
+"fitxer està baixat i llest per a utilitzar-lo. El diàleg us proposa obrir el "
+"gestor de fitxers de l'escriptori al lloc de la baixada."
 
 # skip-rule: common-settings
 #: ../../setup_application/miscs_settings.rst:114
@@ -293,7 +386,7 @@ msgstr ""
 
 #: ../../setup_application/miscs_settings.rst:128
 msgid "The Splash Screen Visible at Startup of a digiKam Session"
-msgstr ""
+msgstr "La pantalla de benvinguda visible a l'inici d'una sessió del digiKam"
 
 #: ../../setup_application/miscs_settings.rst:130
 msgid ""
@@ -301,6 +394,10 @@ msgid ""
 "from the basic (but universal) open-file dialog included in the application "
 "to the more powerful open-file dialog provided by the desktop."
 msgstr ""
+"Amb l'opció de configuració **Usa els diàlegs de fitxer natius del "
+"sistema**, podreu canviar el diàleg d'obrir fitxers bàsic (però universal) "
+"inclòs a l'aplicació pel diàleg d'obrir fitxers més potent proporcionat per "
+"l'escriptori."
 
 #: ../../setup_application/miscs_settings.rst:137
 msgid "Basic Open-File Dialog under macOS"
@@ -315,14 +412,17 @@ msgid ""
 "With the **Draw frames around grouped items** setting, a more visible "
 "decoration will be applied to the items grouped in icon-view."
 msgstr ""
+"Amb l'opció de configuració **Dibuixa marcs envoltant els elements "
+"agrupats**, s'aplicarà una decoració més visible als elements agrupats en la "
+"vista d'icones."
 
 #: ../../setup_application/miscs_settings.rst:147
 msgid "Icon-View Grouped Items with no Frame"
-msgstr ""
+msgstr "Elements agrupats en la vista d'icones sense marc"
 
 #: ../../setup_application/miscs_settings.rst:147
 msgid "Icon-View Grouped Items with Frame"
-msgstr ""
+msgstr "Elements agrupats en la vista d'icones amb marc"
 
 #: ../../setup_application/miscs_settings.rst:150
 msgid ""
@@ -332,12 +432,12 @@ msgid ""
 "Tabs** will be a best choice to discover quickly all internal features of "
 "digiKam."
 msgstr ""
-"Amb l'opció **Títol de pestanya de la barra lateral**, podreu establir la "
-"forma com es mostraran els títols de les pestanyes a les barres laterals. "
-"Utilitzeu l'opció **Només per a la pestanya activa** només si utilitzeu una "
-"resolució de pantalla petita com amb un ordinador portàtil. En cas contrari, "
-"l'opció **Per a totes les pestanyes** serà una millor opció per a descobrir "
-"amb rapidesa totes les característiques internes del digiKam."
+"Amb l'opció de configuració **Títol de pestanya de la barra lateral**, "
+"podreu establir la forma com es mostraran els títols de les pestanyes a les "
+"barres laterals. Utilitzeu l'opció **Només per a la pestanya activa** només "
+"si utilitzeu una resolució de pantalla petita com amb un ordinador portàtil. "
+"En cas contrari, l'opció **Per a totes les pestanyes** serà una millor opció "
+"per a descobrir amb rapidesa totes les característiques internes del digiKam."
 
 #: ../../setup_application/miscs_settings.rst:152
 msgid ""
@@ -345,18 +445,18 @@ msgid ""
 "window decoration and looks. **Fusion** style is the best choice under all "
 "desktop."
 msgstr ""
-"Amb l'opció **Estil dels ginys**, podreu triar la decoració i aspecte "
-"predeterminat per a la finestra de l'aplicació. L'estil **Fusion** és la "
-"millor elecció per a tots els escriptoris."
+"Amb l'opció de configuració **Estil dels ginys**, podreu triar la decoració "
+"i aspecte predeterminat per a la finestra de l'aplicació. L'estil **Fusion** "
+"és la millor elecció per a tots els escriptoris."
 
 #: ../../setup_application/miscs_settings.rst:154
 msgid ""
 "With the **Icon theme** setting, you can choose the default application icon "
 "theme. Theme availability depends of desktop used to run digiKam."
 msgstr ""
-"Amb l'opció **Tema d'icones**, podreu triar el tema d'icones predeterminat "
-"per a l'aplicació. La disponibilitat dels temes dependrà de l'escriptori "
-"utilitzat per executar el digiKam."
+"Amb l'opció de configuració **Tema d'icones**, podreu triar el tema d'icones "
+"predeterminat per a l'aplicació. La disponibilitat dels temes dependrà de "
+"l'escriptori utilitzat per executar el digiKam."
 
 #: ../../setup_application/miscs_settings.rst:156
 msgid ""
@@ -365,6 +465,11 @@ msgid ""
 "customize fonts for the :ref:`album tree-view <treeview_font>`, the :ref:"
 "`icon-view <iconview_font>`, and the :ref:`tooltip <tooltip_font>`."
 msgstr ""
+"Finalment, l'opció **Tipus de lletra de l'aplicació:** permet personalitzar "
+"el tipus de lletra que s'utilitzarà a tot arreu de l'aplicació. Cal tenir en "
+"compte que també hi ha opcions addicionals per a personalitzar-les a la :ref:"
+"`vista en arbre <treeview_font>` i la :ref:`vista d'icones de l'àlbum "
+"<iconview_font>`, així com els :ref:`consells d'eina <tooltip_font>`."
 
 # skip-rule: common-settings
 #: ../../setup_application/miscs_settings.rst:161
@@ -380,52 +485,61 @@ msgid ""
 "This section list the operations to perform on all grouped items depending "
 "on the usage context. Operations supported are:"
 msgstr ""
+"Aquesta secció llista les operacions que cal fer sobre tots els elements "
+"agrupats segons el context d'ús. Les operacions admeses són:"
 
 #: ../../setup_application/miscs_settings.rst:171
 msgid ""
 "**Metadata**: when you change information to store in files or in the "
 "database."
 msgstr ""
+"**Metadades**: quan canvieu informació per a emmagatzemar en els fitxers o "
+"en la base de dades."
 
 #: ../../setup_application/miscs_settings.rst:172
 msgid "**Import/Export Tools**: to import and export items."
-msgstr ""
+msgstr "**Eines d'importació/exportació**: per a importar i exportar elements."
 
 #: ../../setup_application/miscs_settings.rst:173
 msgid "**Batch Queue Manager**: to process all items from a group."
 msgstr ""
+"**Gestor de la cua per lots**: per a processar tots els elements d'un grup."
 
 #: ../../setup_application/miscs_settings.rst:174
 msgid "**Light Table**: to display grouped items when reviewing by pair."
 msgstr ""
+"**Taula de llum**: per a mostrar els elements agrupats quan es revisen per "
+"parelles."
 
 #: ../../setup_application/miscs_settings.rst:175
 msgid "**Slideshow**: to show all grouped items on the screen."
 msgstr ""
+"**Passi de diapositives**: per a mostrar tots els elements agrupats a la "
+"pantalla."
 
 #: ../../setup_application/miscs_settings.rst:176
 msgid "**Renaming**: to all items from a group."
-msgstr ""
+msgstr "**Reanomena**: tots els elements d'un grup."
 
 #: ../../setup_application/miscs_settings.rst:177
 msgid "**Tools**: to post process all items from a group."
-msgstr ""
+msgstr "**Eines**: per a postprocessar tots els elements d'un grup."
 
 #: ../../setup_application/miscs_settings.rst:179
 msgid "For each case, you can select if digiKam can:"
-msgstr "Per a cada cas, podeu seleccionar si el digiKam pot:"
+msgstr "Per a cada cas, podreu seleccionar si el digiKam pot:"
 
 #: ../../setup_application/miscs_settings.rst:181
 msgid "**No**: do nothing."
-msgstr ""
+msgstr "**No**: no fa res."
 
 #: ../../setup_application/miscs_settings.rst:182
 msgid "**yes**: operate items."
-msgstr ""
+msgstr "**Sí**: opera els elements."
 
 #: ../../setup_application/miscs_settings.rst:183
 msgid "**Ask**: ask to confirm before to continue."
-msgstr ""
+msgstr "**Pregunta**: demana confirmació abans de continuar."
 
 #: ../../setup_application/miscs_settings.rst:185
 msgid ""
@@ -433,6 +547,9 @@ msgid ""
 "remember your choice for the next time, this will adjust the operation "
 "settings accordingly."
 msgstr ""
+"Per a aquest darrer cas, durant l'operació apareixerà un diàleg com el "
+"següent. Podreu recordar la vostra elecció per a la propera vegada, això "
+"ajustarà les opcions de configuració de les operacions en conseqüència."
 
 #: ../../setup_application/miscs_settings.rst:191
 msgid "The Dialog to Warn about Grouped Renaming File Operations"
@@ -450,6 +567,8 @@ msgid ""
 "This section allows to control the spellchecking operations done in "
 "background in all text edit widgets."
 msgstr ""
+"Aquesta secció permet controlar les operacions de revisió ortogràfica "
+"realitzades en segon pla en tots els ginys d'edició de text."
 
 #: ../../setup_application/miscs_settings.rst:204
 msgid "The digiKam Spellcheck Configuration Page"
@@ -466,6 +585,15 @@ msgid ""
 "information. If you want to add new language or dictionaries, you need to "
 "install relevant packages on your system."
 msgstr ""
+"El corrector ortogràfic es pot utilitzar en les llegendes, títols i altres "
+"ginys d'edició de text per a detectar automàticament l'idioma actual que "
+"s'utilitza en el text i proposar una alternativa sobre les paraules escrites "
+"malament. Amb les entrades es pot especificar un idioma alternatiu, per a "
+"analitzar el text s'utilitzarà l'idioma contextual. El corrector ortogràfic "
+"dependrà dels **dorsals** de codi obert, inclosos els **Diccionaris "
+"d'idioma**, per a operar l'anàlisi de les frases. La disponibilitat d'ambdós "
+"es llista en aquesta vista. Si voleu afegir un idioma o diccionari nou, "
+"haureu d'instal·lar en el vostre sistema els paquets rellevants."
 
 #: ../../setup_application/miscs_settings.rst:212
 msgid "The Titles Text Edit with Spellcheck Feature"
@@ -477,6 +605,9 @@ msgid ""
 "You can edit a list of words that Spellcheck must ignore during operations. "
 "digiKam already provide a list usual keywords to not verify."
 msgstr ""
+"Podreu editar una llista de paraules que el corrector ortogràfic haurà "
+"d'ignorar durant les operacions. el digiKam ja proporciona una llista de "
+"paraules clau habituals que no es verificaran."
 
 # skip-rule: common-settings
 #: ../../setup_application/miscs_settings.rst:219
@@ -488,6 +619,9 @@ msgid ""
 "This section allows to customize the rules to translate automatically "
 "strings from text edit widgets using online translator engine."
 msgstr ""
+"Aquesta secció permet personalitzar les regles per a traduir automàticament "
+"les cadenes des dels ginys d'edició de text utilitzant el motor de traducció "
+"en línia."
 
 #: ../../setup_application/miscs_settings.rst:227
 msgid "The digiKam Localize Configuration Page"
@@ -498,18 +632,26 @@ msgid ""
 "A list of **Alternative Languages** supported by digiKam is provided where "
 "you can select your preferred entries to found in text edit widgets."
 msgstr ""
+"Es proporciona una llista d'**Idiomes alternatius** admesos pel digiKam on "
+"podreu seleccionar les vostres entrades preferides per a trobar-les en els "
+"ginys d'edició de text."
 
 #: ../../setup_application/miscs_settings.rst:231
 msgid ""
 "Another list allows to know the **Available Translator Languages**, "
 "supported by the **Online Translator** engine selected."
 msgstr ""
+"Una altra llista permet conèixer els **Idiomes disponibles del traductor**, "
+"admesos pel motor del **Traductor en línia** seleccionat."
 
 #: ../../setup_application/miscs_settings.rst:233
 msgid ""
 "As number of entries are huge, for the both lists, a search engine is "
 "available and an option that allows to show only the current selection."
 msgstr ""
+"Com que el nombre d'entrades és enorme, per a ambdues llistes hi ha "
+"disponible un motor de cerca i una opció que permet mostrar només la "
+"selecció actual."
 
 #: ../../setup_application/miscs_settings.rst:239
 msgid "The Captions Text Edit with Translation Feature"
@@ -525,6 +667,9 @@ msgid ""
 "This section allows to tune special low level configurations used by "
 "application. Only change these settings if you know what you do."
 msgstr ""
+"Aquesta secció permet ajustar les configuracions especials de baix nivell "
+"utilitzades per l'aplicació. Només canvieu aquesta configuració si sabeu què "
+"feu."
 
 #: ../../setup_application/miscs_settings.rst:248
 msgid ""
@@ -536,6 +681,14 @@ msgid ""
 "larger by this factor and are therefore theoretically just as large as the "
 "graphical interface elements of the system."
 msgstr ""
+"**Usa l'escalat del PPP alt a partir del factor de pantalla**: amb aquesta "
+"opció, l'aplicació escalarà les coordenades de manera independent del "
+"dispositiu d'acord amb els factors d'escala de la pantalla proporcionats pel "
+"sistema operatiu. Escalarà els elements de la interfície gràfica (botons, "
+"text, etc.) amb la configuració de l'escriptori. Per tant, els elements de "
+"la interfície gràfica del digiKam es mostraran més grans per aquest factor "
+"i, per tant, en teoria seran tan grans com els elements de la interfície "
+"gràfica del sistema."
 
 #: ../../setup_application/miscs_settings.rst:250
 msgid ""
@@ -546,24 +699,38 @@ msgid ""
 "recommended to use this option in multi-screen context when resolutions are "
 "not the same."
 msgstr ""
+"**Usa mapes de píxels amb resolucions de PPP alt**: amb aquesta opció, les "
+"mides dels mapes de píxels utilitzats internament per l'aplicació tindran "
+"una geometria de disposició independent del dispositiu. Activa les icones "
+"d'alta resolució, altrament, els elements del digiKam es veurien molt "
+"borrosos en alta resolució. A més, es recomana utilitzar aquesta opció en un "
+"context de múltiples pantalles quan la resolució no és la mateixa."
 
 #: ../../setup_application/miscs_settings.rst:252
 msgid ""
 "**Disable hardware acceleration OpenCL**: this option will disable GPU "
 "accelerations, especially with faces management."
 msgstr ""
+"**Desactiva l'acceleració de maquinari OpenCL**: aquesta opció desactivarà "
+"les acceleracions de la GPU, especialment amb la gestió de les cares."
 
 #: ../../setup_application/miscs_settings.rst:254
 msgid ""
 "**Enable internal debug logging**: this option will turn one the debug trace "
 "on the console used to investigate dysfunctions."
 msgstr ""
+"**Activa el registre intern de depuració**: aquesta opció activarà el "
+"seguiment de la depuració a la consola utilitzada per a investigar les "
+"disfuncions."
 
 #: ../../setup_application/miscs_settings.rst:256
 msgid ""
 "**Download Face Engine Data**: With this button you can load face engine "
 "deep-learning model files if you pass this stage at first-run."
 msgstr ""
+"**Descarrega les dades del motor de cares...**: amb aquest botó, podreu "
+"carregar els fitxers de model d'aprenentatge profund del motor de cares si "
+"heu omès aquesta etapa durant la primera execució."
 
 #: ../../setup_application/miscs_settings.rst:262
 msgid "The digiKam System Configuration Page"
