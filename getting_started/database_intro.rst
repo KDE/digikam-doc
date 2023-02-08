@@ -31,6 +31,6 @@ The digiKam actually manages more than one database. For convenience, it is broa
     :alt:
     :align: center
 
-    Example of digiKam Remote Mysql Configuration Hosted on a NAS From The Local Network
+    Example of digiKam Remote MySQL Configuration Hosted on a NAS From The Local Network
 
 The whole details of database settings are mostly given in the :ref:`database setup section <database_settings>`.

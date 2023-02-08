@@ -38,7 +38,7 @@ By default, digiKam uses SQLite as its back-end for storing important metadata a
     ============== =============================
 
 To make your application run fast and smoothly, it is recommended to check and optimize your databases once in awhile. This could be achieved with the menu option :menuselection:`Tools --> Maintenance...` and the stage **Perform Database Cleaning**. See this
-:ref:`Maintenance tool section <maintenance_database>` for details. A recommended tool is `Sqlite Browser <https://sqlitebrowser.org/>`_, a high quality and easy to use visual tool for managing database objects. For Ubuntu and its derivatives, it could be retrieved using `sudo apt install sqlitebrowser`. Now you can switch to the directory where databases are stored and visualize the database contents.
+:ref:`Maintenance tool section <maintenance_database>` for details. A recommended tool is `SQLite Browser <https://sqlitebrowser.org/>`_, a high quality and easy to use visual tool for managing database objects. For Ubuntu and its derivatives, it could be retrieved using `sudo apt install sqlitebrowser`. Now you can switch to the directory where databases are stored and visualize the database contents.
 
 .. note::
 
@@ -50,11 +50,11 @@ SQLite database files could be found in your *collection* folder, which you have
     :alt:
     :align: center
 
-    The digiKam Sqlite Configuration Page
+    The digiKam SQLite Configuration Page
 
 .. _mysql_database:
 
-The **WAL** SQlite mode is a very important option that we recommend to turn on with large databases to optimize transactions and improve performances.
+The **WAL** SQLite mode is a very important option that we recommend to turn on with large databases to optimize transactions and improve performances.
 
 The MySQL Database
 ------------------
@@ -82,7 +82,7 @@ digiKam also provides support for popular MySQL database engine. Of course, you 
 
 .. note::
 
-     With **WAL** option enabled, SQlite can be easily used for more than 100,000 items especially with an SSD or NVMe storage. It must be even faster than MySQL and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details.     
+     With **WAL** option enabled, SQLite can be easily used for more than 100,000 items especially with an SSD or NVMe storage. It must be even faster than MySQL and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details.
 
 Using MySQL as digiKam’s database back-end allows you to store the data on local as well as remote server. Local, to replace the local SQLite storage and latter, to use a shared computer through network. Using MySQL as digiKam’s database back-end allows you to store the data on a remote server. This way, you can use multiple digiKam installations (For instance,on your notebook and PC) to access and manage your photo collections. You can also use MySQL tools to backup and analyze digiKam’s data.
 
@@ -111,7 +111,7 @@ Internal server uses tree MySQL Binary Tools: :file:`mysql_install_db`, :file:`m
     :alt:
     :align: center
 
-    The digiKam Mysql Internal Configuration Page
+    The digiKam MySQL Internal Configuration Page
 
 .. _mysql_remote:
 
@@ -174,17 +174,17 @@ See the resume below to choose the right database type depending of the use-case
     ============== ============== ========== ====================================================================================
     Storage        Type           Items      Remarks
     ============== ============== ========== ====================================================================================
-    HDD            Sqlite         < 100K     **Warning: WAL is mandatory.**
-    HDD            Mysql-Internal > 100K
-    SDD            Sqlite                    WAL is optional.
-    SDD            Mysql-Internal
-    MVMe           Sqlite                    WAL is optional.
-    MVMe           Mysql-Internal
-    Removable      Sqlite         < 100K     **Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**
-    Removable      Mysql-Internal > 100K     **Warning: USB 3.1 minimum with NVMe drive.**
-    Network FS     Sqlite                    **Prohibited: Sqlite databases must be stored on local file system.**
-    Network FS     Mysql-Internal            **Prohibited: Mysql databases must be stored on local file system.**
-    Remote         Mysql-Server              MariaDB server is supported. Gigabit Ethernet or higher is recommended.
+    HDD            SQLite         < 100K     **Warning: WAL is mandatory.**
+    HDD            MySQL-Internal > 100K
+    SDD            SQLite                    WAL is optional.
+    SDD            MySQL-Internal
+    MVMe           SQLite                    WAL is optional.
+    MVMe           MySQL-Internal
+    Removable      SQLite         < 100K     **Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**
+    Removable      MySQL-Internal > 100K     **Warning: USB 3.1 minimum with NVMe drive.**
+    Network FS     SQLite                    **Prohibited: SQLite databases must be stored on local file system.**
+    Network FS     MySQL-Internal            **Prohibited: MySQL databases must be stored on local file system.**
+    Remote         MySQL-Server              MariaDB server is supported. Gigabit Ethernet or higher is recommended.
     ============== ============== ========== ====================================================================================
 
 .. glossary::
@@ -208,7 +208,7 @@ See the resume below to choose the right database type depending of the use-case
         Network server as NAS (Network Attached Storage).
 
     WAL
-        Write-Ahead Lock (Sqlite database only).
+        Write-Ahead Lock (SQLite database only).
 
 .. note::
 
