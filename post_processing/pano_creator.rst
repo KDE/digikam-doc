@@ -69,4 +69,4 @@ In this page the images are assembled, you can judge of the result, and crop the
 
     The Last Page of the Panorama Creator Wizard
 
-After a long computation, panorama stitching will be complete and the tool will propose a template name for the target file. If you want you can also save your project compatible with Huggin. Click on **Finish** button and you will see the output in the same **Album** as your original pictures.
+After a long computation, panorama stitching will be complete and the tool will propose a template name for the target file. If you want you can also save your project compatible with Hugin. Click on **Finish** button and you will see the output in the same **Album** as your original pictures.
