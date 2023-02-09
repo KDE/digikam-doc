@@ -61,7 +61,7 @@ The optimizations page includes another option named **Level horizon** dedicated
 
     The Panorama Creator Wizard Preview Stage
 
-In this page the images are assembled, you can judge of the result, and crop the contents to drop black frames around your scene. By default, the tool is able to detect automatically the effective region of the panorama. When all in fine, click on **Next** button.
+In this page the images are assembled, you can judge of the result, and crop the contents to drop black frames around your scene. By default, the tool is able to detect automatically the effective region of the panorama. If you move the mouse over the preview canvas, a toolbar must appears on top left corner to **Zoom In**, **Zoom Out**, and **Zoom to Fit** on the image. With a right click with the mouse, you can re-define a new crop area. When all in fine, click on **Next** button to process final composing of the panorama.
 
 .. figure:: images/pano_creator_06.webp
     :alt:
