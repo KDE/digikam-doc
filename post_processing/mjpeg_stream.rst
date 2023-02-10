@@ -1,6 +1,6 @@
 .. meta::
-   :description: The digiKam Tool to Share With DLNA
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, dlna, upnp, share
+   :description: The digiKam Tool to Share as MJPEG Stream
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, mjpeg, server, share
 
 .. metadata-placeholder
 
@@ -8,9 +8,9 @@
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
-.. _media_server:
+.. _mjpeg_stream:
 
-Media Server
+MJPEG Stream
 ============
 
 .. contents::

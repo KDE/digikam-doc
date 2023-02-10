@@ -652,6 +652,10 @@ Post Processing
 
         :ref:`calendar_tool`
 
+    .. container:: tile no-descr
+
+        :ref:`mjpeg_stream`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
