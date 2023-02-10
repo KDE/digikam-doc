@@ -50,7 +50,7 @@ You can customize how the contents must be shared. The **Stream** view hosts all
 
     The MJPEG Stream Main Settings View
 
-The **Transition** settings view can customize the visual effect applied between two images. Note that For some effects, the duration can depend of random values and can change while the stream. A preview of the transition is given on the right side.
+The **Transition** settings view allows to customize the visual effect applied between two images. Note that For some effects, the duration can depend of random values and can change while the stream. A preview of the transition is given on the right side.
 
 .. figure:: images/mjpeg_stream_transition.webp
     :alt:
@@ -58,7 +58,7 @@ The **Transition** settings view can customize the visual effect applied between
 
     The MJPEG Stream Transition Settings View
 
-The **Effect** settings view can customize the effect to perform a visual panning or zooming applied while to render an image in the stream. A preview of the effect is given on the right side.
+The **Effect** settings view allows to customize the effect to perform a visual panning or zooming applied while to render an image in the stream. A preview of the effect is given on the right side.
 
 .. figure:: images/mjpeg_stream_effect.webp
     :alt:
@@ -66,15 +66,17 @@ The **Effect** settings view can customize the effect to perform a visual pannin
 
     The MJPEG Stream Effect Settings View
 
+The **OSD** (for On Screen Display) settings view allows to customize the information to show as overlay on the top left corner of the images.
+
 .. figure:: images/mjpeg_stream_osd.webp
     :alt:
     :align: center
 
     The MJPEG Stream OSD Settings View
 
-You can hide this media-server window (without closing the actual server) using the **Ok** button. If you want shutdown the server, re-open the Media-Server dialog and press the **Stop** button. Note that the files and folders you specify will be saved for you to use in later sessions.
+You can hide this MJPEG Stream-Server window (without closing the actual server) using the **Ok** button. If you want shutdown the server, re-open the MJPEG Stream-Server dialog and press the **Stop** button. Note that the files and folders you specify will be saved for you to use in later sessions.
 
-Use the option **Start Server at Startup** if you want to run the media-server automatically once you start digiKam.
+Use the option **Start Server at Startup** if you want to run the MJPEG Stream-Server automatically once you start digiKam.
 
 .. figure:: images/mjpeg_stream_running.webp
     :alt:
@@ -82,21 +84,15 @@ Use the option **Start Server at Startup** if you want to run the media-server a
 
     The MJPEG Stream-Server is Running and can be Closed with the Stop Button
 
-After you start the media-server, you might have to wait for about 30 seconds to one minute before other devices in the network can see your server, so please be patient.
-
 This server was tested with some client applications. This list includes:
 
-    - GUPnP AV (PC - archlinux)
+    - Chromium Web-Browser
 
-    - Kodi media player (Android TV)
+    - Edge Web-Browser
 
-    - BubbleUPnP (Android Tablet)
+    - FireFox Web-Browser
 
-    - MediaHouse (Android Phone)
-
-    - AnDLNA (Android)
-
-    - VLC media player 3.0.16 (PC - Ubuntu) - Note: Older versions of VLC do not work properly.
+    - VLC Media Player.
 
 .. figure:: images/mjpeg_stream_firefox.webp
     :alt:
