@@ -21,7 +21,7 @@ Calendar Tool
 
     The Calendar Tool Introduction Page
 
-This Tool allows to create easily a personalized calendar with your photos. First you need to select some photos, most preferably 12 photos so that those 12 photos corresponds to 12 months in the calendar. After, selecting the pictures go to :menuselection:`Tools --> Create Calendar` menu entry, an assistant will appear to guide you in the creation process.
+This tool allows to create easily a personalized calendar with your photos. First you need to select some items, most preferably 12 photos so that those photos corresponds to 12 months in the calendar. After, selecting the pictures go to :menuselection:`Tools --> Create Calendar` menu entry, an assistant will appear to guide you in the creation process.
 
 .. figure:: images/calendar_tool_page2.webp
     :alt:
@@ -29,11 +29,11 @@ This Tool allows to create easily a personalized calendar with your photos. Firs
 
     The Calendar Tool Page to Setup Contents
 
-The settings available are listed below:
+The settings from this page are listed below:
 
-    - **Paper size**: You have two choices standard A4 and US Letter size.
+    - **Paper size**: You have two choices standard **A4** and **US Letter** size.
 
-    - **Resolution**: You have two choices High or Low
+    - **Resolution**: You have two choices **High** or **Low**
 
     - **Image Position**: Set which position in which the images appear in the calendar.
 
@@ -47,7 +47,7 @@ The settings available are listed below:
 
 On the bottom, the **Select Images** mosaic of buttons allows to customize the image to render for each calendar page.
 
-When you have completed this click on the **Next** button in the assistant and you will be greeted with this page:
+When you have completed this page, click on the **Next** button in the assistant and you will be greeted with a new page to customize extra event in the calendar:
 
 .. figure:: images/calendar_tool_page3.webp
     :alt:
