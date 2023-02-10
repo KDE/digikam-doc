@@ -19,23 +19,47 @@ DLNA Media-Server is used to automatically export digiKam photos through the loc
 
 To start the media-server, head to the **Tools** tab from the **Right Side-bar**. You will find the **Share with DLNA** icon on the list. You can also start it from the :menuselection:`Tools --> Share with DLNA` menu entry. The media-server window will open as follows: 
 
-.. figure:: images/dlna_media_server.webp
+.. figure:: images/mjpeg_stream_server.webp
     :alt:
     :align: center
 
-    The DLNA Media-Server Dialog
+    The MJPEG Stream-Server Dialog
 
 To add items just select your desired **Albums** from the nested lists. You can share from physical **Albums**, or virtual **Tags**, **Searches**, and **Labels**. When the selection is done, press the **Start** button, a wheel on the right side will indicate that server is currently running.
+
+.. figure:: images/mjpeg_stream_settings.webp
+    :alt:
+    :align: center
+
+    The MJPEG Stream Main Settings View
+
+.. figure:: images/mjpeg_stream_transition.webp
+    :alt:
+    :align: center
+
+    The MJPEG Stream Transition Settings View
+
+.. figure:: images/mjpeg_stream_effect.webp
+    :alt:
+    :align: center
+
+    The MJPEG Stream Effect Settings View
+
+.. figure:: images/mjpeg_stream_osd.webp
+    :alt:
+    :align: center
+
+    The MJPEG Stream OSD Settings View
 
 You can hide this media-server window (without closing the actual server) using the **Ok** button. If you want shutdown the server, re-open the Media-Server dialog and press the **Stop** button. Note that the files and folders you specify will be saved for you to use in later sessions.
 
 Use the option **Start Server at Startup** if you want to run the media-server automatically once you start digiKam.
 
-.. figure:: images/dlna_server_running.webp
+.. figure:: images/mjpeg_stream_running.webp
     :alt:
     :align: center
 
-    The DLNA Media-Server is Running and can be Closed with the Stop Button
+    The MJPEG Stream-Server is Running and can be Closed with the Stop Button
 
 After you start the media-server, you might have to wait for about 30 seconds to one minute before other devices in the network can see your server, so please be patient.
 
@@ -53,8 +77,8 @@ This server was tested with some client applications. This list includes:
 
     - VLC media player 3.0.16 (PC - Ubuntu) - Note: Older versions of VLC do not work properly.
 
-.. figure:: images/dlna_contents_vlc.webp
+.. figure:: images/mjpeg_stream_firefox.webp
     :alt:
     :align: center
 
-    The Shared Contents from digiKam Discovered Over the Network by VLC Media Player
+    The Shared Contents from digiKam Over the Network and Displayed into Firefox
