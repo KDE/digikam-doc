@@ -50,12 +50,15 @@ You can customize how the contents must be shared. The **Stream** view hosts all
 
     The MJPEG Stream Main Settings View
 
+The **Transition** settings view can customize the visual effect applied between two images. Note that For some effects, the duration can depend of random values and can change while the stream. A preview of the transition is given on the right side.
 
 .. figure:: images/mjpeg_stream_transition.webp
     :alt:
     :align: center
 
     The MJPEG Stream Transition Settings View
+
+The **Effect** settings view can customize the effect to perform a visual panning or zooming applied while to render an image in the stream. A preview of the effect is given on the right side.
 
 .. figure:: images/mjpeg_stream_effect.webp
     :alt:
