@@ -167,15 +167,15 @@ The non Signed Package
 
 **digiKam** runs with Intel based Mac's on macOS 64-bit. For M1 based Mac's, you needs to use `Apple Rosetta 2 <https://support.apple.com/en-us/HT211861>`_ instructions translator. Minimum system requirement depends of the digiKam version to install:
 
-    =============== ===================================
+    =============== ===========================================================================================
     digiKam version Supported macOS Release
-    =============== ===================================
-    >= 7.10.0        macOS 10.15 (Catalina) or newer
-    >= 7.0.0         macOS 10.13 (High Sierra) or newer
-    >= 6.4.0         macOS 10.12 (Sierra) or newer
-    >= 6.1.0         macOS 10.11 (El Capitan) or newer
-    >= 6.0.0         macOS 10.8 (Moutain Lion) or newer
-    =============== ===================================
+    =============== ===========================================================================================
+    >= 7.10.0        macOS 10.15 (`Catalina <https://en.wikipedia.org/wiki/MacOS_Catalina>`_) or newer
+    >= 7.0.0         macOS 10.13 (`High Sierra <https://en.wikipedia.org/wiki/MacOS_High_Sierra>`_) or newer
+    >= 6.4.0         macOS 10.12 (`Sierra <https://en.wikipedia.org/wiki/MacOS_Sierra>`_) or newer
+    >= 6.1.0         macOS 10.11 (`El Capitan <https://en.wikipedia.org/wiki/OS_X_El_Capitan>`_) or newer
+    >= 6.0.0         macOS 10.8 (`Moutain Lion <https://en.wikipedia.org/wiki/OS_X_Mountain_Lion>`_) or newer
+    =============== ===========================================================================================
     
 .. note::
 
