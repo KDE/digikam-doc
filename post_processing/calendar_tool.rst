@@ -60,3 +60,9 @@ If you are using an extra application to organize your daily work, and if you ha
 When you are done press **Print** and it will generate a 12 pages PDF file exactly like a paper calendar.
 
 You can either send it directly to your printer or print to a PDF file. However it will be a wise decision to print to PDF first so that you can see what you have created. If you need to change the printer properties, press **Properties**. You will be able to change the page layout (portrait, landscape) and the units of measurements (cm, inches, px, etc.). By default, the output file will be made in your home folder. If you need to change the location press the button on the right and specify manually.
+
+.. figure:: images/calendar_tool_output.webp
+    :alt:
+    :align: center
+
+    The Calendar Generated as PDF File
