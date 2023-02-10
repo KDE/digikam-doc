@@ -648,6 +648,10 @@ Post Processing
 
         :ref:`pano_creator`
 
+    .. container:: tile no-descr
+
+        :ref:`calendar_tool`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

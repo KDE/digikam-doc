@@ -30,3 +30,4 @@ This section explain how to use the digiKam post processing tools.
    post_processing/print_creator.rst
    post_processing/time_adjust.rst
    post_processing/pano_creator.rst
+   post_processing/calendar_tool.rst
