@@ -15,9 +15,14 @@ MJPEG Stream
 
 .. contents::
 
-DLNA Media-Server is used to automatically export digiKam photos through the local network to other `DLNA-compliant devices <https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance>`_ like smart phones, TV, and tablets.
+MJPEG Stream-Server is used to automatically export digiKam photos through the local network to a client software compatible with the `Motion JPEG protocol <https://en.wikipedia.org/wiki/Motion_JPEG>`_ like all Internet browsers.
 
-To start the media-server, head to the **Tools** tab from the **Right Side-bar**. You will find the **Share with DLNA** icon on the list. You can also start it from the :menuselection:`Tools --> Share with DLNA` menu entry. The media-server window will open as follows: 
+.. note::
+
+    MJPEG is a stream to display contents one by one, as a slideshow, but without interaction of the user. It's similar as a communication channel or an advertisement channel that you can seen in an airport or a railway station.
+
+
+To start the MJPEG Stream-Server, head to the **Tools** tab from the **Right Side-bar**. You will find the **Share as MJPEG Stream** icon on the list. You can also start it from the :menuselection:`Tools --> Share as MJPEG Stream` menu entry. The MJPEG Stream-Server window will open as follows: 
 
 .. figure:: images/mjpeg_stream_server.webp
     :alt:
@@ -25,13 +30,26 @@ To start the media-server, head to the **Tools** tab from the **Right Side-bar**
 
     The MJPEG Stream-Server Dialog
 
-To add items just select your desired **Albums** from the nested lists. You can share from physical **Albums**, or virtual **Tags**, **Searches**, and **Labels**. When the selection is done, press the **Start** button, a wheel on the right side will indicate that server is currently running.
+To add items in the stream just select your desired **Albums** from the nested lists. You can share from physical **Albums**, or virtual **Tags**, **Searches**, and **Labels**. When the selection is done, press the **Start** button, a wheel on the right side will indicate that server is currently running.
+
+You can customize how the contents must be shared. The **Stream** view hosts all the main settings of the stream, including:
+
+    - **JPEG Quality**: The compression level of images (50:lower quality - 100:higher quality). Warning: better quality require more network bandwidth.
+
+    - **JPEG size**: The JPEG image size in pixels, using standard screen resolutions. Warning: larger size require more network bandwidth.
+
+    - **Delay in seconds**: The temporization in seconds between images.
+
+    - **Frames by seconds**: The number of frames by second to render the stream. Warning: larger rate require more network bandwidth.
+
+    - **Stream in loop**: The MJPEG stream will be played in loop instead once.
 
 .. figure:: images/mjpeg_stream_settings.webp
     :alt:
     :align: center
 
     The MJPEG Stream Main Settings View
+
 
 .. figure:: images/mjpeg_stream_transition.webp
     :alt:

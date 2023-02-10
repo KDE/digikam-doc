@@ -25,7 +25,7 @@ To start the media-server, head to the **Tools** tab from the **Right Side-bar**
 
     The DLNA Media-Server Dialog
 
-To add items just select your desired **Albums** from the nested lists. You can share from physical **Albums**, or virtual **Tags**, **Searches**, and **Labels**. When the selection is done, press the **Start** button, a wheel on the right side will indicate that server is currently running.
+To share items just select your desired **Albums** from the nested lists. You can share from physical **Albums**, or virtual **Tags**, **Searches**, and **Labels**. When the selection is done, press the **Start** button, a wheel on the right side will indicate that server is currently running.
 
 You can hide this media-server window (without closing the actual server) using the **Ok** button. If you want shutdown the server, re-open the Media-Server dialog and press the **Stop** button. Note that the files and folders you specify will be saved for you to use in later sessions.
 
