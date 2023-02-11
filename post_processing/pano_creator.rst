@@ -15,6 +15,12 @@ Panorama Creator
 
 .. contents::
 
+.. figure:: images/pano_creator_selection.webp
+    :alt:
+    :align: center
+
+    The Panoramic JPEG Files Selected from Icon-View (7x24Mpx Images taken with Sony A77 - 59 Mb)
+
 A panorama is a composition of photo taken in the same conditions with the same camera/lens. The camera turn around the same point of view to shot with many photos a wide-angle view which is a representation of a large physical space. Images must be taken with superimposed area on the borders. Algorithm will try to found the common portions of images to join and merge contents. To be sure about stability you can use a tripod especially with complex compositions. The tool allows to assemble shots taken horizontally, vertically, or as a matrix. 
 
 .. note::
@@ -70,3 +76,13 @@ In this page the images are assembled, you can judge of the result, and crop the
     The Last Page of the Panorama Creator Wizard
 
 After a long computation, panorama stitching will be complete and the tool will propose a template name for the target file. If you want you can also save your project compatible with Hugin. Click on **Finish** button and you will see the output in the same **Album** as your original pictures.
+
+.. note::
+
+    The 7x24Mpx images (59 Mb) used as example in this section of this manual give one single post-processed panoramic JPEG file of 82 Mpx (23 Mb).
+
+    .. figure:: images/pano_creator_final.webp
+        :alt:
+        :align: center
+
+        The Assembled Panoramic JPEG Files Displayed in digiKam
