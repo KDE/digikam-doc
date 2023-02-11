@@ -98,9 +98,9 @@ To access to stream from your Web-Browser, just use :guilabel:`http://address:po
 
 .. important::
 
-    MJPEG do not support the secure **https** protocol.
+    - MJPEG do not support the secure **https** protocol.
 
-    To be able to be connected through the network to the MJPEG Stream-Server **Port**, you needs to open this last one on the **Server** firewall.
+    - To be connected through the network on the MJPEG Stream-Server **Port**, this last one needs to be open on the **Server** firewall.
 
 .. figure:: images/mjpeg_stream_firefox.webp
     :alt:
