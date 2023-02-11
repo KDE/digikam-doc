@@ -57,7 +57,7 @@ When you have completed this page, click on the **Next** button in the assistant
 
 The website `iCalshare <http://icalshare.com/calendars>`_ has many great templates that can be used. They are free to use and download. All you need to do is register an account with them. It includes templates that contain much information on public holidays and events in many countries.
 
-If you are using an extra application to organize your daily work, and if you have marked special days like birthdays of friends and relatives, you could really use this feature. You have generally to export the data as a calendar file onto your computer, using `vCalendar or iCalendar <https://en.wikipedia.org/wiki/ICalendar>`_ formats. In The digiKam Calendar Tool, select the folder button on the window from the current page and show it to the file manager then select **Open**. This will add the data to your calendar. Then press **Next** in the assistant to see this page.
+If you are using an extra application to organize your daily work, and if you have marked special days like birthdays of friends and relatives, you could really use this feature. You have generally to export the data as a calendar file onto your computer, using `vCalendar or iCalendar <https://en.wikipedia.org/wiki/ICalendar>`_ formats. In the digiKam Calendar Tool, select the folder button on the window from the current page and show it to the file manager then select **Open**. This will add the data to your calendar. Then press **Next** in the assistant to see this page.
 
 .. figure:: images/calendar_tool_page4.webp
     :alt:

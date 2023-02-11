@@ -25,7 +25,7 @@ A panorama is a composition of photo taken in the same conditions with the same 
 
 .. note::
 
-    Take a care that target panorama is a huge amount of data and require a lots of memory to be processed.
+    Take a care that target panorama is a huge amount of data and requires a lot of memory to be processed.
 
 Select the images that you want to stitch and go to :menuselection:`Tools --> Create Panorama` a wizard dialog will open up as below.
 

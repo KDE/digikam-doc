@@ -34,7 +34,7 @@ To add items in the stream just select your desired **Albums** from the nested l
 
 You can customize how the contents must be shared. The **Stream** view hosts all the main settings of the stream, including:
 
-    - **JPEG Quality**: The compression level of images (50:lower quality - 100:higher quality). Warning: better quality require more network bandwidth.
+    - **JPEG Quality**: The compression level of images (50:lower quality - 100:higher quality). Warning: better quality requires more network bandwidth.
 
     - **JPEG size**: The JPEG image size in pixels, using standard screen resolutions. Warning: larger size require more network bandwidth.
 
@@ -50,7 +50,7 @@ You can customize how the contents must be shared. The **Stream** view hosts all
 
     The MJPEG Stream Main Settings View
 
-The **Transition** settings view allows to customize the visual effect applied between two images. Note that For some effects, the duration can depend of random values and can change while the stream. A preview of the transition is given on the right side.
+The **Transition** settings view allows to customize the visual effect applied between two images. Note that for some effects, the duration can depend of random values and can change while the stream. A preview of the transition is given on the right side.
 
 .. figure:: images/mjpeg_stream_transition.webp
     :alt:
