@@ -102,7 +102,7 @@ To access to stream from your Web-Browser, just use :guilabel:`http://address:po
 
     - To be connected through the network on the MJPEG Stream-Server **Port**, this last one needs to be open on the **Server** firewall.
 
-.. figure:: images/mjpeg_stream_firefox.webp
+.. figure:: videos/mjpeg_stream_firefox.webp
     :width: 500px
     :alt:
     :align: center
