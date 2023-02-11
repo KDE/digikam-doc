@@ -33,7 +33,7 @@ The settings from this page are listed below:
 
     - **Paper size**: You have two choices standard **A4** and **US Letter** size.
 
-    - **Resolution**: You have two choices **High** or **Low**
+    - **Resolution**: You have two choices **High** or **Low**.
 
     - **Image Position**: Set which position in which the images appear in the calendar.
 
