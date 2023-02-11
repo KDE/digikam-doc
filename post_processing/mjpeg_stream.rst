@@ -94,11 +94,13 @@ This server have been tested with the list of Web-Browsers listed below:
 
     - Apple `Safari <https://en.wikipedia.org/wiki/Safari_(web_browser)>`_.
     
-To access to stream from your Web-Browser, just use :guilabel:`http://address:port` as url, with **address** the MJPEG server IP, and **port** the server port set in this config dialog.
+To access to stream from your Web-Browser, just use :guilabel:`http://address:port` as url, with :guilabel:`address` the MJPEG **Server** IP, and :guilabel:`port` the server **Port** set in this config dialog.
 
-.. note::
+.. important::
 
     MJPEG do not support the secure **https** protocol.
+
+    To be able to be connected through the network to the MJPEG Stream-Server **Port**, you needs to open this last one on the **Server** firewall.
 
 .. figure:: images/mjpeg_stream_firefox.webp
     :alt:
