@@ -21,7 +21,7 @@ Calendar Tool
 
     The Calendar Tool Introduction Page
 
-This tool allows to create easily a personalized calendar with your photos. First you need to select some items, most preferably 12 photos so that those photos corresponds to 12 months in the calendar. After, selecting the pictures go to :menuselection:`Tools --> Create Calendar` menu entry, an assistant will appear to guide you in the creation process.
+This tool allows creating easily a personalized calendar with your photos. First, you need to select some items, most preferably 12 photos so that those photos correspond to 12 months in the calendar. After, selecting the pictures go to :menuselection:`Tools --> Create Calendar` menu entry, and an assistant will appear to guide you in the creation process.
 
 .. figure:: images/calendar_tool_page2.webp
     :alt:
@@ -55,9 +55,9 @@ When you have completed this page, click on the **Next** button in the assistant
 
     The Calendar Tool Page to Add Extra Calendar Data
 
-The website `iCalshare <http://icalshare.com/calendars>`_ has many great templates that can be used. They are free to use and download. All you need to do is register an account with them. It includes templates which contain much information on public holidays and events of many countries.
+The website `iCalshare <http://icalshare.com/calendars>`_ has many great templates that can be used. They are free to use and download. All you need to do is register an account with them. It includes templates that contain much information on public holidays and events in many countries.
 
-If you are using an extra application to organize your daily work, and if you have marked special days like birthdays of friends and relatives, you could really use this feature. You have generally to export the data as a calendar file on to your computer, using `vCalendar or iCalendar <https://en.wikipedia.org/wiki/ICalendar>`_ formats. . In The digiKam Calendar Tool, select the folder button on the window from the current page and show it to the file manager and select Open. This will add the data to your calendar. Then press **Next** in the assistant to see this page.
+If you are using an extra application to organize your daily work, and if you have marked special days like birthdays of friends and relatives, you could really use this feature. You have generally to export the data as a calendar file onto your computer, using `vCalendar or iCalendar <https://en.wikipedia.org/wiki/ICalendar>`_ formats. In The digiKam Calendar Tool, select the folder button on the window from the current page and show it to the file manager then select **Open**. This will add the data to your calendar. Then press **Next** in the assistant to see this page.
 
 .. figure:: images/calendar_tool_page4.webp
     :alt:
@@ -73,7 +73,7 @@ When you are done press **Print** and it will generate a 12 pages PDF file exact
 
     The Calendar Tool Page to Generating Contents
 
-You can either send it directly to your printer or print to a PDF file. However it will be a wise decision to print to PDF first so that you can see what you have created. If you need to change the printer properties, press **Properties**. You will be able to change the page layout (portrait, landscape) and the units of measurements (cm, inches, px, etc.). By default, the output file will be made in your home folder. If you need to change the location press the button on the right and specify manually.
+You can either send it directly to your printer or print to a PDF file. However, it will be a wise decision to print to PDF first so that you can see what you have created. If you need to change the printer properties, press **Properties**. You will be able to change the page layout (portrait, landscape) and the units of measurement (cm, inches, px, etc.). By default, the output file will be made in your home folder. If you need to change the location press the button on the right and specify manually.
 
 .. figure:: images/calendar_tool_output.webp
     :alt:

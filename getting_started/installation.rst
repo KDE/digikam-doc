@@ -174,7 +174,7 @@ The non Signed Package
     >= 7.0.0         macOS 10.13 (`High Sierra <https://en.wikipedia.org/wiki/MacOS_High_Sierra>`_) or newer
     >= 6.4.0         macOS 10.12 (`Sierra <https://en.wikipedia.org/wiki/MacOS_Sierra>`_) or newer
     >= 6.1.0         macOS 10.11 (`El Capitan <https://en.wikipedia.org/wiki/OS_X_El_Capitan>`_) or newer
-    >= 6.0.0         macOS 10.8 (`Moutain Lion <https://en.wikipedia.org/wiki/OS_X_Mountain_Lion>`_) or newer
+    >= 6.0.0         macOS 10.8 (`Mountain Lion <https://en.wikipedia.org/wiki/OS_X_Mountain_Lion>`_) or newer
     =============== ===========================================================================================
     
 .. note::
