@@ -93,7 +93,7 @@ This server have been tested with the list of Web-Browsers listed below:
     - Mozilla `Firefox <https://en.wikipedia.org/wiki/Firefox>`_.
 
     - Apple `Safari <https://en.wikipedia.org/wiki/Safari_(web_browser)>`_.
-    
+
 To access to stream from your Web-Browser, just use :guilabel:`http://address:port` as url, with :guilabel:`address` the MJPEG **Server** IP, and :guilabel:`port` the server **Port** set in this config dialog.
 
 .. important::
@@ -103,7 +103,8 @@ To access to stream from your Web-Browser, just use :guilabel:`http://address:po
     - To be connected through the network on the MJPEG Stream-Server **Port**, this last one needs to be open on the **Server** firewall.
 
 .. figure:: images/mjpeg_stream_firefox.webp
+    :width: 500px
     :alt:
     :align: center
 
-    The Shared Contents from digiKam Over the Network and Displayed into Firefox
+    Screencast of the Shared Contents from digiKam Over the Network and Displayed into Firefox
