@@ -15,11 +15,11 @@ MJPEG Stream
 
 .. contents::
 
-MJPEG Stream-Server is used to automatically export digiKam photos through the local network to a client software compatible with the `Motion JPEG protocol <https://en.wikipedia.org/wiki/Motion_JPEG>`_ like all Internet browsers.
+MJPEG Stream-Server is used to automatically export digiKam photos through the local network to a client software compatible with the `Motion JPEG protocol <https://en.wikipedia.org/wiki/Motion_JPEG>`_. This is the case of all major **Internet Browsers** which support MJPEG de facto without to add a plugin or a codec.
 
 .. note::
 
-    MJPEG is a stream to display contents one by one, as a slideshow, but without interaction of the user. It's similar as a communication channel or an advertisement channel that you can seen in an airport or a railway station.
+    MJPEG is a stream to display contents one by one, as a slideshow, but without interaction of the user. It's similar as a communication channel or an advertisement screen that you can seen in an airport or a railway station.
 
 
 To start the MJPEG Stream-Server, head to the **Tools** tab from the **Right Side-bar**. You will find the **Share as MJPEG Stream** icon on the list. You can also start it from the :menuselection:`Tools --> Share as MJPEG Stream` menu entry. The MJPEG Stream-Server window will open as follows: 
@@ -84,15 +84,21 @@ Use the option **Start Server at Startup** if you want to run the MJPEG Stream-S
 
     The MJPEG Stream-Server is Running and can be Closed with the Stop Button
 
-This server was tested with some client applications. This list includes:
+This server have been tested with the list of Web-Browsers listed below:
 
-    - Chromium Web-Browser
+    - Google `Chrome <https://en.wikipedia.org/wiki/Google_Chrome/>`_ and `Chromium <https://en.wikipedia.org/wiki/Chromium_(web_browser)>`_.
 
-    - Edge Web-Browser
+    - Microsoft `Edge <https://en.wikipedia.org/wiki/Microsoft_Edge>`_.
 
-    - FireFox Web-Browser
+    - Mozilla `Firefox <https://en.wikipedia.org/wiki/Firefox>`_.
 
-    - VLC Media Player.
+    - Apple `Safari <https://en.wikipedia.org/wiki/Safari_(web_browser)>`_.
+    
+To access to stream from your Web-Browser, just use :guilabel:`http://address:port` as url, with **address** the MJPEG server IP, and **port** the server port set in this config dialog.
+
+.. note::
+
+    MJPEG do not support the secure **https** protocol.
 
 .. figure:: images/mjpeg_stream_firefox.webp
     :alt:
