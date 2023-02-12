@@ -15,9 +15,9 @@ Exposure Blending
 
 .. contents::
 
-No matter how good your camera is, taking a well-exposed photo of a high-contrast scene like a black bird on snow can be really tricky. Even if you switch to the manual mode and tweak the exposure settings, there is still a risk that you will end up with a shot containing under or over-exposed areas. One way to solve this problem is to use the digiKam exposure blending. This technique involves taking several shots of the same scene or subject with different exposures (**bracketing**) and then fusing these shots into one perfectly exposed photo.
+No matter how good your camera is, taking a well-exposed photo of a high-contrast scene like a black bird on snow can be really tricky. Even if you switch to the manual mode and tweak the exposure settings, there is still a risk that you will end up with a shot containing under or over-exposed areas. One way to solve this problem is to use the digiKam Exposure Blending. This technique involves taking several shots of the same scene or subject with different exposures (**bracketing**) and then fusing these shots into one perfectly exposed photo.
 
-While exposure blending sounds simple in theory, achieving usable results can be a rather laborious and time-consuming process. Fortunately, digiKam can do the donkey job for you. The exposure blending tool relies on the hugin application for processing and fusing photos, so you must install it on your machine beforehand.
+While exposure blending sounds simple in theory, achieving usable results can be a rather laborious and time-consuming process. Fortunately, digiKam can do the donkey job for you. The exposure blending tool relies on the `Hugin command line tools <https://hugin.sourceforge.io/>`_ for processing and fusing photos, so you must install it on your machine beforehand.
 
 From Icon-View, select the photos you want to blend, and choose :menuselection:`Tools --> Blend Stacked Images`.
 
