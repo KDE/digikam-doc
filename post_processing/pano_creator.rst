@@ -43,7 +43,7 @@ This plugin is based on the `Hugin command line tools <https://hugin.sourceforge
 
     The Panorama Creator Wizard with the List of Items to Assemble
 
-Arrange the images in correct order if they are not, using the **up** and **down** buttons. Use the buttons with the **plus** and **minus** symbols to add or remove items. If you want to render a 360° panorama, the first image from the list will be the item placed on the center of the panorama. When all is done, click on **Next** button.
+Arrange the images in correct order if they are not, using the **Up** and **Down** buttons. Use the buttons with the **Plus** and **Minus** symbols to add or remove items. If you want to render a 360° panorama, the first image from the list will be the item placed on the center of the panorama. When all is done, click on **Next** button.
 
 .. figure:: images/pano_creator_03.webp
     :alt:

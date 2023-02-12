@@ -19,7 +19,7 @@ No matter how good your camera is, taking a well-exposed photo of a high-contras
 
 While exposure blending sounds simple in theory, achieving usable results can be a rather laborious and time-consuming process. Fortunately, digiKam can do the donkey job for you. The exposure blending tool relies on the `Hugin command line tools <https://hugin.sourceforge.io/>`_ for processing and fusing photos, so you must install it on your machine beforehand.
 
-From Icon-View, select the photos you want to blend, and choose :menuselection:`Tools --> Blend Stacked Images`.
+From Icon-View, select the photos you want to blend, and choose :menuselection:`Tools --> Blend Stacked Images`, or click on **Blend Stacked Images** icon from **Tools** tab in **Right Sidebar**.
 
 .. figure:: images/expo_blending_selection.webp
     :alt:
@@ -59,7 +59,25 @@ Once digiKam is done, press Finish, and you will be automatically dropped into t
 
     The Exposure Blending Ready to Edit the Stacked Image
 
-Hit the **Preview** button to see the blended photo in the preview pane. If you are not satisfied with the result, you can tweak the available options, including **Exposure**, **Saturation**, and **Contrast**. You can also exclude individual photos from the stack to improve the blending result. The clever part is that every time you tweak the settings and press the **Preview** button, digiKam generates a preview image which you can compare with the previous versions. You can then save all the generated versions, or save only the one you like most.
+Hit the **Preview** button to see the blended photo in the preview pane. If you move the mouse over the preview canvas, a toolbar must appears on top left corner to **Zoom In**, **Zoom Out**, and **Zoom to Fit** on the image.
+
+If you are not satisfied with the **Preview** result, you can tweak the available **Enfuse Settings** on the right side. where you will found the following options:
+
+    - **Automatic Local/Global Image Features Balance (Levels)**: Set automatic level selection (maximized) for pyramid blending, i.e. optimize image features (contrast, saturation, ...) to be as global as possible.
+
+    - **Image Features Balance**: Set the number of levels for pyramid blending. Balances towards local features (small number) or global features (high number). Additionally, a low number trades off quality of results for faster execution time and lower memory usage. This option is enable only if **Automatic Local/Global Image Features Balance (Levels)** is disabled.
+
+    - **Hard Mask**: Force hard blend masks without averaging on finest scale. This is only useful for focus stacks with thin and high contrast features. It improves sharpness at the expense of increased noise.
+
+    - **Well-Exposedness Contribution**: Set the well-exposedness criterion contribution for the blending process. Higher values will favor well-exposed pixels.
+
+    - **High-Saturation Contribution**: Increasing this value makes pixels with high saturation contribute more to the final output.
+
+    - **High-Contrast Contribution**: Sets the relative weight of high-contrast pixels. Increasing this weight makes pixels with neighboring differently colored pixels contribute more to the final output. Particularly useful for focus stacks.
+
+    - **Use Color Appearance Model (CIECAM02)**: Use Color Appearance Modelling (CIECAM02) to render detailed colors. Your input files should have embedded ICC profiles. If no ICC profile is present, sRGB color space will be assumed. The difference between using this option and default color blending algorithm is very slight, and will be most noticeable when you need to blend areas of different primary colors together.
+
+ You can also exclude individual photos from the stack on the top right corner to improve the blending result. The clever part is that every time you tweak the settings and press the **Preview** button, digiKam generates a preview image stored on the bottom right corener which you can compare with the previous versions. You can then save all the generated versions, or save only the one you like most by selecting wanted preview. The output format to use at export stage can be set in **Save Result** settings. If exported file already exists, it can be overwriten or not. A common template file name can be also configured for the exported files.
 
 .. figure:: images/expo_blending_05.webp
     :alt:
@@ -69,8 +87,8 @@ Hit the **Preview** button to see the blended photo in the preview pane. If you 
 
 digiKam’s exposure blending tool is capable of producing rather impressive results, especially if you are not afraid of getting your hands dirty with manually tweaking the final results.
 
-    .. figure:: images/expo_blending_final.webp
-        :alt:
-        :align: center
+.. figure:: images/expo_blending_final.webp
+    :alt:
+    :align: center
 
-        The Fusionned NEF Files Displayed in digiKam
+    The Fusionned NEF Files Exported as JPEG and Displayed in digiKam
