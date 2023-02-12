@@ -656,6 +656,10 @@ Post Processing
 
         :ref:`mjpeg_stream`
 
+    .. container:: tile no-descr
+
+        :ref:`expo_blending`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

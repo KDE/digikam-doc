@@ -33,7 +33,7 @@ Select the images that you want to stitch and go to :menuselection:`Tools --> Cr
     :alt:
     :align: center
 
-    The Panorama Creator Wizard with the Huggin Components Detection
+    The Panorama Creator Wizard with the Hugin Components Detection
 
 This plugin is based on the `Hugin command line tools <https://hugin.sourceforge.io/>`_ to analyze and assemble the items. If all software components are found on your system, just select the output format that you prefer to render the panorama and click on **Next** button. The page below must appears:
 

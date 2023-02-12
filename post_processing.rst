@@ -32,3 +32,4 @@ This section explain how to use the digiKam post processing tools.
    post_processing/pano_creator.rst
    post_processing/calendar_tool.rst
    post_processing/mjpeg_stream.rst
+   post_processing/expo_blending.rst
