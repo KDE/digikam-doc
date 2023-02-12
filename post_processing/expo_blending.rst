@@ -51,13 +51,13 @@ digiKam can align the selected photos before blending them. This feature can com
 
     The Exposure Blending Wizard Pre-Processing Stage
 
-Once digiKam is done, press Finish, and you will be automatically dropped into the Exposure Blending editor.
+Once digiKam is done, press **Finish** button, and you will be automatically dropped into the **Exposure Blending Editor**.
 
 .. figure:: images/expo_blending_04.webp
     :alt:
     :align: center
 
-    The Exposure Blending Ready to Edit the Stacked Image
+    The Exposure Blending Ready to Edit the Stacked Images
 
 Hit the **Preview** button to see the blended photo in the preview pane. If you move the mouse over the preview canvas, a toolbar must appears on top left corner to **Zoom In**, **Zoom Out**, and **Zoom to Fit** on the image.
 
