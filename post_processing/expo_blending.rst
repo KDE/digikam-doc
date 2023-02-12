@@ -25,7 +25,7 @@ From Icon-View, select the photos you want to blend, and choose :menuselection:`
     :alt:
     :align: center
 
-    The Bracketed JPEG Files Selected from Icon-View
+    The Bracketed NEF Files Selected from Icon-View
 
 This opens the Exposure Blending wizard that guides you through the entire process.
 
@@ -57,8 +57,20 @@ Once digiKam is done, press Finish, and you will be automatically dropped into t
     :alt:
     :align: center
 
-    The Exposure Blending Editor
+    The Exposure Blending Ready to Edit the Stacked Image
 
 Hit the **Preview** button to see the blended photo in the preview pane. If you are not satisfied with the result, you can tweak the available options, including **Exposure**, **Saturation**, and **Contrast**. You can also exclude individual photos from the stack to improve the blending result. The clever part is that every time you tweak the settings and press the **Preview** button, digiKam generates a preview image which you can compare with the previous versions. You can then save all the generated versions, or save only the one you like most.
 
+.. figure:: images/expo_blending_05.webp
+    :alt:
+    :align: center
+
+    The Exposure Blending Editor to Create Fusionned Versions
+
 digiKam’s exposure blending tool is capable of producing rather impressive results, especially if you are not afraid of getting your hands dirty with manually tweaking the final results.
+
+    .. figure:: images/expo_blending_final.webp
+        :alt:
+        :align: center
+
+        The Fusionned NEF Files Displayed in digiKam
