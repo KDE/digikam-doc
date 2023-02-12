@@ -660,6 +660,10 @@ Post Processing
 
         :ref:`expo_blending`
 
+    .. container:: tile no-descr
+
+        :ref:`video_slideshow`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
