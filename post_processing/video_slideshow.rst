@@ -33,15 +33,39 @@ If you uses the **Images** selection mode only the previous selection of items f
 
     The Video Slideshow Wizard Images Selection Page
 
-Pressing on **Next** button will display all the video settings to encode the slideshow.
-    
+Pressing on **Next** button will display all the video settings to encode the slideshow. Parameters are listed below:
+
+    - **Number of Frames by Image**: The number of frames generated of one image to encode in video stream. This defined the time of one image will be present statically on screen. If you set an **Effect While Displaying Images**, this one will be rendered with this number of frames.
+
+    - **Video Standard**: This is the video norm to use while encoding media, as **PAL - 25 FPS** or **NTSC - 29 FPS** (FPS: Frame Per Seconds).
+
+    - **Video Type**: This is the video resolution to use while encoding media. Images are resized accordingly. Take care that hight resolution will needs more resources to encode and use more space on your disk.
+
+    - **Video bit Rate**: This is the bandwidth used to encode video. a low value means a poor quality, and high value means a good quality. Take care that hight rate will needs more space on your disk.
+
+    - **Video Codec**: The is the standard video encoding method to make the media.
+
+    - **Effect While Displaying Image**: Select here the visual effects to apply on image while **Number of Frames by Image**.
+
+    - **Transition Between Images**: Select here the visual effect to apply as transition outside the **Number of Frames by Image**.
+
+On the bottom of this view, the tool calculate the delay for each images on screen including applied visual effect, and the total duration of the slideshow.
+
 .. figure:: images/video_slideshow_03.webp
     :alt:
     :align: center
 
     The Video Slideshow Wizard Video Settings Page
 
-Pressing on **Next** button will display all the media container settings to host the encoded contents.
+Pressing on **Next** button will display all the media container settings to host the encoded contents. Parameters are listed below:
+
+    - **Media Container Format**: The file format container to host video media.
+
+    - **Destination folder**: The directory on disk to store the video file.
+
+    - **If Target File Exists**: Allows to overwrite or not video file is it already exist in directory.
+
+    - **Open in Player**: Allows to render video slideshow and end to encoding, with the digiKam internal player or the default desktop application.
 
 .. figure:: images/video_slideshow_04.webp
     :alt:
