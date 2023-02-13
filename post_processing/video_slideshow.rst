@@ -21,4 +21,38 @@ Select the images that you want to stitch and go to :menuselection:`Tools --> Cr
     :alt:
     :align: center
 
-    The Video Slideshow Wizard First Page
+    The Video Slideshow Wizard Welcome Page
+
+This page allows to select the contents to export: from current items selection, or from a list of albums. With the **Albums** selection mode you can generate video slideshow from Albums contents. Just check the respective Albums displayed with hierarchical nesting. On the next three tabs **Tags**, **Searches**, and **Labels** you can refine your selection using tags, labels, or previous search results in digiKam.
+
+If you uses the **Images** selection mode only the previous selection of items from Icon-View will be processed and listed on this page as a flat list.
+
+.. figure:: images/video_slideshow_02.webp
+    :alt:
+    :align: center
+
+    The Video Slideshow Wizard Images Selection Page
+
+Pressing on **Next** button will display all the video settings to encode the slideshow.
+    
+.. figure:: images/video_slideshow_03.webp
+    :alt:
+    :align: center
+
+    The Video Slideshow Wizard Video Settings Page
+
+Pressing on **Next** button will display all the media container settings to host the encoded contents.
+
+.. figure:: images/video_slideshow_04.webp
+    :alt:
+    :align: center
+
+    The Video Slideshow Wizard Output Settings Page
+
+Pressing on **Next** button will start the video encoding. This stage can take a while depending of the number of items to process and the delay to use for each image to genreate as video.
+
+.. figure:: images/video_slideshow_05.webp
+    :alt:
+    :align: center
+
+    The Video Slideshow Wizard Generating Output File

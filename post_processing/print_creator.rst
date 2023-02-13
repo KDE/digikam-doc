@@ -25,7 +25,7 @@ This tool allows multiple images to be combined into single sheets of paper in s
 Using the Wizard
 ----------------
 
-The first page allows to use the items selection method: from images currently selected in digiKam, or from albums collections. This page also verify the availability of **Gimp** binary program.
+The first page allows to use the items selection method: from **Images** currently selected in digiKam, or from **Albums** hosted in your collections. This page also verify the availability of **Gimp** binary program.
 
 .. figure:: images/print_creator_page1.webp
     :alt:
