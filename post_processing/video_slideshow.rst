@@ -56,3 +56,11 @@ Pressing on **Next** button will start the video encoding. This stage can take a
     :align: center
 
     The Video Slideshow Wizard Generating Output File
+
+Finally, when encoding is done, a preview of the video file is displayed.
+
+.. figure:: images/video_slideshow_preview.webp
+    :alt:
+    :align: center
+
+    The Video Slideshow Preview Displayed in digiKam Internal Player
