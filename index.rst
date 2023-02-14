@@ -668,6 +668,10 @@ Post Processing
 
         :ref:`wall_paper`
 
+    .. container:: tile no-descr
+
+        :ref:`ocrtext_converter`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
