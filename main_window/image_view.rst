@@ -36,7 +36,7 @@ The thumbnails have Tool Tips which will pop up if you allow the mouse to dwell 
 
     The digiKam Main Window Tool Tip
 
-The content of the Tool Tips can be configured in the **Tool Tip** section of :menuselection:`Settings --> Configure digiKam...`
+The content of the Tool Tips can be configured in :menuselection:`Settings --> Configure digiKam...` from the **Tool Tip** dialog page.
 
 As an alternative you can display the photographs in a table by hitting the **Table** button on the Main Toolbar or by selecting :menuselection:`View --> Table` menu from the menu bar. This allows to see a lot of photographs at the same time (Tip: leave away the thumbnail column) in a way you can customize the usual way by clicking with the right mouse button on the headline bar and choosing the information you want to see. Clicking with the left mouse button on a line in the table will open the preview of that photograph.
 
