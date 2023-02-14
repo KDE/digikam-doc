@@ -39,9 +39,9 @@ Pressing on **Next** button will display all the video settings to encode the sl
 
     - **Video Standard**: This is the video norm to use while encoding media, as **PAL - 25 FPS** or **NTSC - 29 FPS** (FPS: Frame Per Seconds).
 
-    - **Video Type**: This is the video resolution to use while encoding media. Images are resized accordingly. Take care that hight resolution will needs more resources to encode and use more space on your disk.
+    - **Video Type**: This is the video resolution to use while encoding media. Images are resized accordingly. Take care that high resolution will needs more resources to encode and use more space on your disk.
 
-    - **Video bit Rate**: This is the bandwidth used to encode video. a low value means a poor quality, and high value means a good quality. Take care that hight rate will needs more space on your disk.
+    - **Video bit Rate**: This is the bandwidth used to encode video. a low value means a poor quality, and high value means a good quality. Take care that high rate will needs more space on your disk.
 
     - **Video Codec**: The is the standard video encoding method to make the media.
 
@@ -73,7 +73,7 @@ Pressing on **Next** button will display all the media container settings to hos
 
     The Video Slideshow Wizard Output Settings Page
 
-Pressing on **Next** button will start the video encoding. This stage can take a while depending of the number of items to process and the delay to use for each image to genreate as video.
+Pressing on **Next** button will start the video encoding. This stage can take a while depending of the number of items to process and the delay to use for each image to generate as video.
 
 .. figure:: images/video_slideshow_05.webp
     :alt:
