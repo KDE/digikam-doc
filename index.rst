@@ -664,6 +664,10 @@ Post Processing
 
         :ref:`video_slideshow`
 
+    .. container:: tile no-descr
+
+        :ref:`wall_paper`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
