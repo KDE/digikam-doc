@@ -36,7 +36,7 @@ The thumbnails have Tool Tips which will pop up if you allow the mouse to dwell 
 
     The digiKam Main Window Tool Tip
 
-The content of the Tool Tips can be configured in the **Tool Tip** section of :menuselection:`Settings --> Configure digiKam`...
+The content of the Tool Tips can be configured in the **Tool Tip** section of :menuselection:`Settings --> Configure digiKam...`
 
 As an alternative you can display the photographs in a table by hitting the **Table** button on the Main Toolbar or by selecting :menuselection:`View --> Table` menu from the menu bar. This allows to see a lot of photographs at the same time (Tip: leave away the thumbnail column) in a way you can customize the usual way by clicking with the right mouse button on the headline bar and choosing the information you want to see. Clicking with the left mouse button on a line in the table will open the preview of that photograph.
 
@@ -55,7 +55,7 @@ Viewing an Image
 
 .. |icon_fullscreen| image:: images/mainwindow_icon_fullscreen.webp
 
-There are several possibilities to view an image. You can either click on it, select :menuselection:`View --> Preview Image` :kbd:`F3` from the menu bar or select **Preview Image** from the context menu. The Preview Area will open and the Icon Area will be reduced to one line. For viewing it larger, click the sidebars away (by just clicking on the active button on them). An even larger view you can achieve by clicking the **Show Fullscreen** icon |icon_fullscreen| either on the thumbnail or on the preview. While viewing images you can take action from the context menu at any time (not in fullscreen mode). To close the preview, just click again or press Esc or F3 or click the Table or Thumbnails button.
+There are several possibilities to view an image. You can either click on it, select :menuselection:`View --> Preview` :kbd:`F3` from the menu bar or select **Preview** from the context menu. The Preview Area will open and the Icon Area will be reduced to one line. For viewing it larger, click the sidebars away (by just clicking on the active button on them). An even larger view you can achieve by clicking the **Show Fullscreen** icon |icon_fullscreen| either on the thumbnail or on the preview. While viewing images you can take action from the context menu at any time (not in fullscreen mode). To close the preview, just click again or press :kbd:`Esc` or :kbd:`F3` or click the **Table** or **Thumbnails** button on the Main Toolbar.
 
 .. figure:: images/mainwindow_preview.webp
     :alt:
@@ -105,7 +105,7 @@ The photograph is rotated without loss of quality and the orientation informatio
 Renaming a Photograph
 ~~~~~~~~~~~~~~~~~~~~~
 
-You can change the filename for a photograph by clicking with the right mouse button over a thumbnail and selecting **Rename** :kbd:`F2`. You can also select multiple photographs to batch rename files. A dialog will open showing the list of selected photographs with their current name and the new name.
+You can change the filename for a photograph by clicking with the right mouse button over a thumbnail and selecting **Rename...** :kbd:`F2`. You can also select multiple photographs to batch rename files. A dialog will open showing the list of selected photographs with their current name and the new name.
 
 .. figure:: images/mainwindow_advanced_rename.webp
     :alt:
@@ -113,7 +113,7 @@ You can change the filename for a photograph by clicking with the right mouse bu
 
     The digiKam Advanced Rename Tool Dialog
 
-The renaming pattern can be customize with the **Options** collection on the bottom which contains original file name, file extension, owner and group, directory, a dialog for defining a sequence number and a dialog for adding date and time information, either fixed or based on the time information written by the camera into the image file. Each option appended to the renaming pattern can be customized with the **Modifier** button on the right side of renaming pattern editor.
+The renaming pattern can be customize with the **Renaming Options** collection on the bottom which contains original file name, file extension, owner and group, directory, a dialog for defining a sequence number and a dialog for adding date and time information, either fixed or based on the time information written by the camera into the image file. Each option appended to the renaming pattern can be customized with the **Modifier** button on the right side of renaming pattern editor.
 
 .. figure:: images/mainwindow_advanced_rename_number.webp
     :alt:
@@ -153,7 +153,7 @@ The **Database** dialog allows to select items information registered in databas
     :alt:
     :align: center
 
-    The Advanced Rename Date Selector to Setup Modifiers in Renaming Pattern
+    The Advanced Rename Database Dialog to Setup Modifiers in Renaming Pattern
 
 The **Metadata** dialog allows to select files metadata information taken from **Exif**, **IPTC**, **XMP**, etc, as **Modifiers**.
 
@@ -161,7 +161,7 @@ The **Metadata** dialog allows to select files metadata information taken from *
     :alt:
     :align: center
 
-    The Advanced Rename Date Selector to Setup Modifiers in Renaming Pattern
+    The Advanced Rename Metadata Dialog to Setup Modifiers in Renaming Pattern
 
 In addition these options can be customized further with the help of a number of **Modifiers**. A list of all **Options** and **Modifiers** together with a short explanations will open when clicking the info button.
 
@@ -193,8 +193,6 @@ digiKam will ask you confirmation before to move items to trash with the dialog 
     :align: center
 
     The digiKam Move to Trash Dialog
-
-digiKam will ask you confirmation before to move items to trash with the dialog below.
 
 For each collection registered in the database, digiKam handles an internal trash-bin. Physically, the trash is located at the root album corresponding to the collection entry. It's a hidden folder :file:`.dtrash` storing deleted items in a subdirectory named :file:`files`, and information about the deletion stored in another subdirectory named :file:`info` with Json sidecars (:file:`.dtrashinfo`). Deleting a file in the collection does not remove the file from the media, but moves the file into this container. This one is accessible from the left sidebar tab **Albums** as the last entry of the tree-view corresponding to a collection and is named **Trash**.
 
