@@ -52,12 +52,12 @@ The **Segmentation mode** settings specify the **Tesseract** page segmentation m
 
 If you want mode details about the Tesseract Segmentation Mode you can read this `online tutorial <https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/>`_.
 
-The **Engine mode** setting specify the **Tesseract** OCR engine mode to use while processing images. Possible choices are listed below:
+The **Engine mode** setting specify the **Tesseract** OCR internal engine to use while processing images. Possible choices are listed below:
 
-    - **Legacy**: Legacy engine only.
-    - **LSTM**: Neural nets LSTM engine only.
-    - **Legacy + LSTM**: Legacy + LSTM engines.
-    - **Default**: Default, based on what is available.
+    - **Legacy**: Legacy engine only (older engine not based on neural network).
+    - **LSTM**: Neural network LSTM (Long Short-Term Memory deep-learning) engine only.
+    - **Legacy + LSTM**: Both legacy and LSTM engines will be used.
+    - **Default**: Default value. Let's Tesseract choose the best engine based on what is available.
 
 The **Resolution Dpi** settings specify the resolution as Dot Per Inch (DPI) for the input images.
 
