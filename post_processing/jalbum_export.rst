@@ -52,3 +52,9 @@ The third page will configure the JAlbum settings to export contents. Here you c
     :align: center
 
     The JAlbum Export Wizard Preparing Output Files
+
+.. figure:: images/jalbum_export_gallery.webp
+    :alt:
+    :align: center
+
+    The JAlbum Application Started with the Exported Files from digiKam
