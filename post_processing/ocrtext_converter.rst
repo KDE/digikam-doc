@@ -68,9 +68,9 @@ The **Store result in** will specify where to place the text contents recognized
     - **Text file**: Store OCR result in separated text file in the same directory than processed image.
     - **Metadata**: Store OCR result in alternative-language XMP tag from image metadata.
 
-On the bottom of this view, the OCR result can be translated in different languages using one online translation engine. You can set more than one translation language to process images. Corresponding translations will be hosted in separated text files or in extra metadata entries depending of **Store result in** setting. See :ref:`this page from this manual <spellcheck_settings>` for more details about the **Localize Settings**.
+On the bottom of this view, the OCR result can be translated in different languages using one online translation engine. You can set more than one translation language to process images. Corresponding translations will be hosted in separated text files or in extra metadata entries depending of **Store result in** setting. See :ref:`this page from the manual <spellcheck_settings>` for more details about the **Localize Settings**.
 
-The **Text Review** tab on the right side allows to edit the OCR result for each image processed with Tesseract. Select one item from the list on the left side and OCR result will be displayed in text editor. You can fix text if necessary or apply spell-checking. See :ref:`this page from this manual <localize_settings>` for more details about the **Spell-Checking Settings**.
+The **Text Review** tab on the right side allows to edit the OCR result for each image processed with Tesseract. Select one item from the list on the left side and OCR result will be displayed in text editor. You can fix text if necessary or apply spell-checking. See :ref:`this page from the manual <localize_settings>` for more details about the **Spell-Checking Settings**.
 
 .. figure:: images/ocrtext_converter_review.webp
     :alt:
