@@ -15,7 +15,7 @@ Video Slideshow
 
 The Video Slideshow tool allows creation a movie from a list of photos. The generated file can be played on a video player or a TV screen. Images are presented one by one with visual effects if you need them. This tool can also be used to create a time-lapse animation from shots taken with an intervalometer.
 
-Select the images that you want to stitch and go to :menuselection:`Tools --> Create video slideshow` a wizard dialog will open up as below.
+Select the images that you want to encode as video and go to :menuselection:`Tools --> Create video slideshow` a wizard dialog will open up as below.
 
 .. figure:: images/video_slideshow_01.webp
     :alt:
