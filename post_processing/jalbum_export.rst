@@ -39,7 +39,7 @@ The second page of this wizard allows to to review the list of images, or albums
 
     The JAlbum Export Wizard Items Selection Page
 
-The third page will configure the JAlbum settings to export contents. Here you can configure the **Project Title** and the **Project folder** where files must be generated.
+The third page will configure the JAlbum settings to export contents. Here you can configure the **Project Title** and the **Projects folder** where files must be generated.
 
 .. figure:: images/jalbum_export_page3.webp
     :alt:
@@ -47,11 +47,15 @@ The third page will configure the JAlbum settings to export contents. Here you c
 
     The JAlbum Export Wizard Settings Page
 
+The four page will show all stage to generate files to export to JAlbum. When all is completed, the JAlbum 
+
 .. figure:: images/jalbum_export_page4.webp
     :alt:
     :align: center
 
     The JAlbum Export Wizard Preparing Output Files
+
+When all tasks are completed, the JAlbum Application is started with all files exported from digiKam. At this time, you can close the JAlbum Export tool and continue to work with JAlbum application.
 
 .. figure:: images/jalbum_export_gallery.webp
     :alt:
