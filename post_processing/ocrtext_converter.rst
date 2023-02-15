@@ -72,6 +72,8 @@ On the bottom of this view, the OCR result can be translated in different langua
 
 The **Text Review** tab on the right side allows to edit the OCR result for each image processed with Tesseract. Select one item from the list on the left side and OCR result will be displayed in text editor. You can fix text if necessary or apply spell-checking. See :ref:`this page from the manual <localize_settings>` for more details about the **Spell-Checking Settings**.
 
+On the bottom of the dialog, the **Default** button allows to reset all settings to the default values. The **Start OCR** drop-down button allows to process the current selected images from the list or all items. Finally, the **Close** button will stop all OCR process if any and close the dialog.
+
 .. figure:: images/ocrtext_converter_review.webp
     :alt:
     :align: center
