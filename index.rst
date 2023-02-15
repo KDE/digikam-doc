@@ -672,6 +672,10 @@ Post Processing
 
         :ref:`ocrtext_converter`
 
+    .. container:: tile no-descr
+
+        :ref:`jalbum_export`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

@@ -1,6 +1,6 @@
 .. meta::
    :description: The digiKam OCR Text Converter
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, ocr, text
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, ocr, text, tesseract
 
 .. metadata-placeholder
 

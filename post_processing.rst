@@ -1,6 +1,6 @@
 .. meta::
    :description: Post Process Items From Your Collections
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, post, processing, panorama, metadata, html, gallery, media, server, email, print, time, exposure, blending, wallpaper, ocr, mjpeg, video, text
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, post, processing, panorama, metadata, html, gallery, media, server, email, print, time, exposure, blending, wallpaper, ocr, mjpeg, video, text, jalbum
 
 .. metadata-placeholder
 
@@ -36,3 +36,4 @@ This section explain how to use the digiKam post processing tools.
    post_processing/video_slideshow.rst
    post_processing/wall_paper.rst
    post_processing/ocrtext_converter.rst
+   post_processing/jalbum_export.rst
