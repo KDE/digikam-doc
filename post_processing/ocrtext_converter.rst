@@ -61,7 +61,7 @@ The **Engine mode** setting specifies the **Tesseract** OCR internal engine to u
 
 The **Resolution Dpi** settings specify the resolution as Dot Per Inch (DPI) for the input images.
 
-If the **"Use Multi-cores** setting is enabled, files from the list will be processed in parallel with Tesseract.
+If the **Use Multi-cores** setting is enabled, files from the list will be processed in parallel with Tesseract.
 
 The **Store result in** will specify where to place the text contents recognized by Tesseract while processing images. Possible choices are listed below:
 
