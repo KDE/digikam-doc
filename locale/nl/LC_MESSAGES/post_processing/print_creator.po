@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-14 00:51+0000\n"
-"PO-Revision-Date: 2023-02-14 10:32+0100\n"
+"PO-Revision-Date: 2023-02-15 12:51+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -75,10 +75,6 @@ msgid "Using the Wizard"
 msgstr "De assistent gebruiken"
 
 #: ../../post_processing/print_creator.rst:28
-#| msgid ""
-#| "The first page allows to use the items selection method: from images "
-#| "currently selected in digiKam, or from albums collections. This page also "
-#| "verify the availability of **Gimp** binary program."
 msgid ""
 "The first page allows to use the items selection method: from **Images** "
 "currently selected in digiKam, or from **Albums** hosted in your "
@@ -87,9 +83,9 @@ msgid ""
 msgstr ""
 "De eerste pagina biedt het gebruiken van de selectiemethode van items:"
 " uit "
-"nu geselecteerde **Afbeeldingen** in digiKam of uit **Albums** opgeslagen "
-"in uw verzamelingen. Deze pagina verifieert ook de beschikbaarheid van"
-" het "
+"nu geselecteerde **Afbeeldingen** in digiKam of uit **Albums** opgeslagen"
+" in "
+"uw verzamelingen. Deze pagina verifieert ook de beschikbaarheid van het "
 "binaire programma **Gimp**."
 
 #: ../../post_processing/print_creator.rst:34
@@ -186,7 +182,7 @@ msgstr ""
 
 #: ../../post_processing/print_creator.rst:72
 msgid "The Print Wizard Page to Crop or Rotate Items"
-msgstr ""
+msgstr "De pagina afdrukassistent om items bij te snijden of te draaien"
 
 #: ../../post_processing/print_creator.rst:74
 msgid ""
@@ -207,11 +203,11 @@ msgstr ""
 
 #: ../../post_processing/print_creator.rst:80
 msgid "The Print Wizard Page to Render Printing"
-msgstr ""
+msgstr "De pagina afdrukassistent om afdrukken weer te geven"
 
 #: ../../post_processing/print_creator.rst:85
 msgid "Creating a New Layout"
-msgstr ""
+msgstr "Een nieuwe indeling aanmaken"
 
 #: ../../post_processing/print_creator.rst:87
 msgid ""
@@ -232,18 +228,22 @@ msgid ""
 " file "
 "that allows translations, e.g. a desktop file (see below)."
 msgstr ""
+"Een sjabloon is minstens één bestand met extensie XML (bijvoorbeeld :file:"
+"`mijn-sjablonen.xml`), als u het echter wilt invoegen hebt u een ander "
+"bestand nodig die vertalingen biedt, bijv. een bureabladbestand (zie "
+"onderstaand)."
 
 #: ../../post_processing/print_creator.rst:94
 msgid "When the Print Creator is running, it does the following:"
-msgstr ""
+msgstr "Wanneer de maker van afdrukken actief is, doet het hetvolgende:"
 
 #: ../../post_processing/print_creator.rst:96
 msgid "Waits from you to choose the page size."
-msgstr ""
+msgstr "Wacht op u om de paginagrootte te kiezen."
 
 #: ../../post_processing/print_creator.rst:97
 msgid "Looks for files describing templates (XML files)."
-msgstr ""
+msgstr "Zoekt naar bestanden die sjablonen beschrijven (XML-bestanden)."
 
 #: ../../post_processing/print_creator.rst:98
 msgid ""
@@ -251,10 +251,13 @@ msgid ""
 "layout fits into the chosen page size, adds it, and loads desktop file if "
 "exists."
 msgstr ""
+"Voor elk bestand zoekt het naar sjablonen. Als een sjabloon in orde is, "
+"controleert het of de indeling past in de gekozen paginagrootte, voegt "
+"het toe en laadt het bureaubladbestand als het bestaat."
 
 #: ../../post_processing/print_creator.rst:99
 msgid "Shows templates with a preview icon in a list box."
-msgstr ""
+msgstr "Toont sjablonen met een voorbeeldpictogram in een lijstenvak."
 
 #: ../../post_processing/print_creator.rst:101
 msgid ""
@@ -263,10 +266,13 @@ msgid ""
 "ic/"
 "tools/printcreator/templates>`_."
 msgstr ""
+"De huidige officiële lijst met sjablonen is te zien `in deze "
+"git-opslagruimte <https://invent.kde.org/graphics/digikam/-/tree/master/"
+"core/dplugins/generic/tools/printcreator/templates>`_."
 
 #: ../../post_processing/print_creator.rst:104
 msgid "The XML File Structure"
-msgstr ""
+msgstr "De XML-bestandsstructuur"
 
 #: ../../post_processing/print_creator.rst:106
 msgid ""
@@ -281,6 +287,9 @@ msgid ""
 "An example of template (already included into default templates.xml) is a "
 "layout containing six passport size photos (35x40mm) is the following:"
 msgstr ""
+"Een voorbeeld van een sjabloon (al aanwezig in de standaard"
+" templates.xml) "
+"is een indeling met zes paspoortgrootte foto's (35x40mm) is het volgende:"
 
 #: ../../post_processing/print_creator.rst:125
 msgid ""
@@ -288,14 +297,16 @@ msgid ""
 " attributes "
 "are width, height and unit:"
 msgstr ""
+"Het element **paper** representeert de indeling van het sjabloon, "
+"belangrijke attributen zijn breedte, hoogte en eenheid:"
 
 #: ../../post_processing/print_creator.rst:127
 msgid "**width** attribute: Represents the layout width."
-msgstr ""
+msgstr "Het attribuut **width**: representeert de breedte van de indeling."
 
 #: ../../post_processing/print_creator.rst:128
 msgid "**height** attribute: Represents the layout height."
-msgstr ""
+msgstr "Het attribuut **heigth**: representeert de hoogte van de indeling."
 
 #: ../../post_processing/print_creator.rst:129
 msgid ""
@@ -303,12 +314,16 @@ msgid ""
 " be "
 "inches or inch, mm, or cm."
 msgstr ""
+"Het attribuut **unit**: geeft aan in welke eenheden breedte en hoogte "
+"hebben, het kan zijn inches of inch, mm of cm."
 
 #: ../../post_processing/print_creator.rst:131
 msgid ""
 "The **template** element is the real template definition and contains the "
 "photo positions. Attributes are:"
 msgstr ""
+"Het element **template** is de echte sjabloondefinitie en bevat de "
+"posities van de foto's. Attributen zijn:"
 
 #: ../../post_processing/print_creator.rst:133
 msgid ""
@@ -324,6 +339,8 @@ msgstr ""
 #: ../../post_processing/print_creator.rst:134
 msgid "**autorotate** attribute: Sets if autorotation must be done."
 msgstr ""
+"Het attribuut **autorotate**: stelt in of automatisch draaien gedaan moet "
+"worden."
 
 #: ../../post_processing/print_creator.rst:135
 msgid ""
@@ -331,10 +348,13 @@ msgid ""
 " (width "
 "and height attributes)."
 msgstr ""
+"Het element **photo**: stelt de positie in van de foto (attributen x en"
+" y) "
+"en de grootte (attributen width en height)."
 
 #: ../../post_processing/print_creator.rst:137
 msgid "See below another example for **A6 page size**:"
-msgstr ""
+msgstr "Zie onderstaand een ander voorbeeld voor **A6 paginagrootte**:"
 
 #: ../../post_processing/print_creator.rst:151
 msgid "The Desktop File"
