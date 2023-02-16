@@ -82,7 +82,7 @@ Solution: You replace the *Zoo Animal* branch by a single tag *Zoo* which you us
 Tag Manager
 ~~~~~~~~~~~~
 
-There are certain possibilities to manage tags from the context menu on tags in the digiKam sidebars like **New Tag...** or **Delete Tag**. The Tag Manager offers a more comfortable and comprehensive way to organize your tags. For general information about tags, why and how to use them see Tags View in the Main digiKam Window chapter.
+There are certain possibilities to manage tags from the context menu on tags in the digiKam sidebars like **New Tag...** or **Delete Tag**. The Tag Manager offers a more comfortable and comprehensive way to organize your tags. For general information about tags, why and how to use them see :ref:`this page <tags_view>` from the beginning.
 
 .. figure:: images/mainwindow_tag_manager.webp
     :alt:
@@ -100,21 +100,23 @@ The toolbar at the top offers:
 
     - The drop down menu **Organize** which contains:
 
-        - **Edit Tag Title** to modify tag name.
+        - **Edit Tag Title** :kbd:'F2' to modify tag name.
 
         - **Reset Tag Icon** to the standard tag icon.
 
         - **Create Tag from Address Book** to import address book items as new tags.
 
-        - **Invert Selection**, useful if you want to select most but not all of your tags.
+        - **Mark Unassigned Tags** marks all tags that are unassigned.
 
-        - **Expand Tag Tree** expands all of the nodes of the tag tree.
+        - **Invert Selection**, useful if you want to select most but not all of your tags.
 
         - **Expand Selected Nodes** expands only the selected nodes from the tag tree.
 
-        - **Remove Tag from Images** un-assigns selected tag(s) from all images.
+        - **Expand Tag Tree** expands all of the nodes of the tag tree.
 
-        - **Delete Unassigned Tags**, useful to clean up your tag tree.
+        - **Collapse Tag Tree** collapses all of the nodes of the tag tree.
+
+        - **Remove Tag from Images** removes selected tag(s) from all images.
 
     - And the drop down menu **Sync Export** which contains:
 
@@ -124,9 +126,9 @@ The toolbar at the top offers:
 
         - **Wipe all Tags from Database only**.
 
-The Tag Manager window consists of two parts, the Quick Access List to the left and the Tag Tree (or parts of it) to the right. On the right sidebar you fold out additionally the properties dialog for the selected tag.
+The **Tag Manager** window consists of three parts, the **Quick Access List** to the left, the **Tags** tree (or parts of it) in the middle and the **Tag Properties** to the right for the selected tag.
 
-The Quick Access List allows you to display only a certain node (and its sub-nodes) in the tag tree window. Select a tag in the tag tree and click **Add to List**. The tag will appear in the Quick Access List. If you select it there the tag tree will show only that node which you can still expand to see the sub-nodes. Note that the tag tree will also show only a limited number of tags while using the search field. It will show only those tags that contain the string in the search field.
+The Quick Access List allows you to display only a certain node (and its sub-nodes) in the tag tree window. Select a tag in the tag tree and clic on **Add to List** button. The tag will appear in the Quick Access List. If you select it there the tag tree will show only that node which you can still expand to see the sub-nodes. Note that the tag tree will also show only a limited number of tags while using the search field. It will show only those tags that contain the string in the search field.
 
 The Tag Properties dialog allows you to change the name of the tag, the icon used in the Tag tree and the shortcut.
 
@@ -153,7 +155,7 @@ When you delete an Album from digiKam it will be moved into the internal Trash C
 
     Tagging Image With Context Menu From Icon-View
 
-You can remove a tag from a photograph by clicking with the right mouse button on the photograph and using the **Remove Tag** menu. This menu will only show those tags that have been set on this photograph.
+You can remove a tag from a photograph by clicking with the right mouse button on the photograph and select **Remove Tag** submenu from the context menu. This submenu will only show those tags that have been set on this photograph.
 
 The Right Sidebar: this is what I would call my standard method for assigning tags. Click **Captions** tab from the Right Sidebar and then the **Tags** tab and you will see the whole tags tree. Simply check/un-check the boxes of the tags you want to assign/un-assign and then click **Apply**. If you change focus without that you will be asked whether you want to apply the changes unless you disabled that confirmation either by checking **Always apply changes without confirmation** or by checking **Do not confirm when applying changes in the right sidebar** in the Miscellaneous section of :menuselection:`Settings --> Configure digiKam...`. More details about the other buttons and fields in the **Tags** tab see in :ref:`digiKam sidebar <tags_tree>`.
 

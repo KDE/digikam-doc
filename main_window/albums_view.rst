@@ -44,7 +44,7 @@ When you delete an Album from digiKam it will be moved into the internal Trash C
 Adding a Photograph to an Album
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Most of the time you will create new Albums and populate them with photographs directly from your camera using the Camera Tool. However, sometimes you may want to add a photograph that you already have on your computer to an existing Album. To add a photograph to an Album select :menuselection:`Import --> Add Images...` :kbd:`Ctrl+Alt+I` from the menu bar. Select a source folder from the dialog and click OK. An import window will open. Select the photographs that you want to add and choose **Download Selected** from the **Download** drop down menu. A dialog will open where you can choose the destination album. The photographs will be copied into the Album. **Download New** :kbd:`Ctrl+N` from the same menu will copy only those images which are not in the destination folder yet.
+Most of the time you will create new Albums and populate them with photographs directly from your camera using the Camera Tool. However, sometimes you may want to add a photograph that you already have on your computer to an existing Album. To add a photograph to an Album select :menuselection:`Import --> Add Images...` :kbd:`Alt+Shift+I` from the menu bar. Select a source folder from the dialog and click OK. An import window will open. Select the photographs that you want to add and choose **Download Selected** from the **Download** drop down menu. A dialog will open where you can choose the destination album. The photographs will be copied into the Album. **Download New** :kbd:`Ctrl+N` from the same menu will copy only those images which are not in the destination folder yet.
 
 Additionally, you can use drag and drop to import photographs. Drag the photographs icons, for example from your preferred file manager. Then drop it on the image list on the right hand side.
 
@@ -74,7 +74,7 @@ The Album Properties dialog allows you to set:
 
     - The Album **Title**: Name of the Album, identical with the name of the folder on your hard disk. If you edit it here, the folder will also be renamed.
 
-    - The Album **Category**: this is a way of grouping your Albums together by a common label. The Category you set will be used to order your albums when you select **By Category** from the drop down box in the tool bar or using :menuselection:`View --> Sort Albums --> By Category`. If you want to add and delete Category labels, choose from the menu :menuselection:`Settings --> Configure digiKam...` and here the Album Category section.
+    - The Album **Category**: this is a way of grouping your Albums together by a common label. The Category you set will be used to order your albums when you select **By Category** from the drop down box in the tool bar or using :menuselection:`View --> Sort Albums --> By Category`. If you want to add and delete Category labels, choose from the menu entry :menuselection:`Settings --> Configure digiKam... --> Views page --> Categories tab`.
 
     - The **Caption** for the Album: Usually a short description of the content, but of course you are free to abuse it in any conceivable way. But beware: this will be shown in the banner at the top of the main Image Window ;-)
 
