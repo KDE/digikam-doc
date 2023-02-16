@@ -100,7 +100,7 @@ The toolbar at the top offers:
 
     - The drop down menu **Organize** which contains:
 
-        - **Edit Tag Title** :kbd:'F2' to modify tag name.
+        - **Edit Tag Title** :kbd:`F2` to modify tag name.
 
         - **Reset Tag Icon** to the standard tag icon.
 
