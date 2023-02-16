@@ -29,7 +29,7 @@ To perform text conversions, select the scanned images including text to recogni
 
     The digiKam OCR Text Converter Dialog
 
-On the right side, the **Text recognition** tab show on the top of view the **Tesseract** binary program version detected on your system. If none is present, you will need to install it on your system. Below, the **Tesseract** settings can be customized to process images.
+On the right side, the **Text recognition** tab shows on the top of view the **Tesseract** binary program version detected on your system. If none is present, you will need to install it on your system. Below, the **Tesseract** settings can be customized to process images.
 
 The **Languages** setting specifies the language used for OCR. In the **Default** mode, when processing digital text with multiple languages, **Tesseract** can automatically recognize languages using Latin alphabets such as English or French, but it's not compatible with languages using hieroglyphs such as Chinese or Japanese. You can use the **Orientation and Script Detection** mode instead or a specific language module if available.
 
@@ -52,7 +52,7 @@ The **Segmentation mode** settings specify the **Tesseract** page segmentation m
 
 If you want more details about the Tesseract Segmentation Mode you can read this `online tutorial <https://pyimagesearch.com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/>`_.
 
-The **Engine mode** setting specify the **Tesseract** OCR internal engine to use while processing images. Possible choices are listed below:
+The **Engine mode** setting specifies the **Tesseract** OCR internal engine to use while processing images. Possible choices are listed below:
 
     - **Legacy**: Legacy engine only (older engine not based on the neural network).
     - **LSTM**: Neural network LSTM (Long Short-Term Memory deep-learning) engine only.
@@ -70,9 +70,9 @@ The **Store result in** will specify where to place the text contents recognized
 
 On the bottom of this view, the OCR result can be translated into different languages using one online translation engine. You can set more than one translation language to process images. Corresponding translations will be hosted in separate text files or in extra metadata entries depending on the **Store result in** setting. See :ref:`this page from the manual <spellcheck_settings>` for more details about the **Localize Settings**.
 
-The **Text Review** tab on the right side allows to edit the OCR result for each image processed with Tesseract. Select one item from the list on the left side and OCR result will be displayed in a text editor. You can fix text if necessary or apply spell-checking. See :ref:`this page from the manual <localize_settings>` for more details about the **Spell-Checking Settings**.
+The **Text Review** tab on the right side allows editing the OCR result for each image processed with Tesseract. Select one item from the list on the left side and OCR result will be displayed in a text editor. You can fix text if necessary or apply spell-checking. See :ref:`this page from the manual <localize_settings>` for more details about the **Spell-Checking Settings**.
 
-On the bottom of the dialog, the **Default** button allows resetting all settings to the default values. The **Start OCR** drop-down button allows processing the current selected images from the list or all items. Finally, the **Close** button will stop all OCR processes if any and close the dialog.
+On the bottom of the dialog, the **Default** button allows resetting all settings to the default values. The **Start OCR** drop-down button allows the processing of the currently selected images from the list or all items. Finally, the **Close** button will stop all OCR processes if any and close the dialog.
 
 .. figure:: images/ocrtext_converter_review.webp
     :alt:
