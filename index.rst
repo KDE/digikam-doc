@@ -698,6 +698,10 @@ Export Tools
 
         :ref:`flickr_export`
 
+    .. container:: tile no-descr
+
+        :ref:`google_export`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
