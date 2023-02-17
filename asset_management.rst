@@ -1,6 +1,6 @@
 .. meta::
    :description: Learn The Basis to Handle Safety Large Digital Photography Collections In Time
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, asset, management
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, digital asset, management, dam
 
 .. metadata-placeholder
 
@@ -16,7 +16,7 @@ Digital Asset Management
 .. figure:: images/index_asset_management.webp
     :alt:
 
-This section explain how to apply a digital asset Management in digiKam.
+This section explain how to apply a digital Asset Management (DAM) in digiKam.
 
 .. toctree::
    :maxdepth: 2
