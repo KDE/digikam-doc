@@ -12,7 +12,7 @@ This documentation generated as **EPUB** can be downloaded [here](https://docs.d
 
 Under Ubuntu 22.04 and later:
 
-1. To install Sphinx and the Sphinx Theme use `sudo apt install python3-sphinx`
+1. To install Sphinx and the Sphinx Theme use `sudo apt install python3-sphinx python3-sphinx-rtd-theme`
 2. You can check whether Sphinx was installed successfully by running `sphinx-build --version`
 
 ## Running Sphinx on Your Computer
