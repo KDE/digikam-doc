@@ -1,6 +1,6 @@
 .. meta::
    :description: Export Items From Your Collections To External Media
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, export, flickr, google
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, export, flickr, google, wikimedia
 
 .. metadata-placeholder
 
@@ -25,3 +25,4 @@ This section explain how to use the digiKam export tools.
 
    export_tools/flickr_export.rst
    export_tools/google_export.rst
+   export_tools/media_wiki.rst
