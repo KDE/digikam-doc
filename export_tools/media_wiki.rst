@@ -27,54 +27,20 @@ You can access to this tool by the :menuselection:`Export --> Export to MediaWik
 
     The MediaWiki Export Dialog
 
-After successful signup digiKam will be allowed to send photos to the flickr website. You will be presented with the following page on successful signup:
-
-.. figure:: images/export_flickr_authorize.webp
+.. figure:: images/export_media_wiki_account.webp
     :alt:
     :align: center
 
-    The Flickr Export Authorize Dialog
+    The MediaWiki Export Account Settings
 
-Then, simply authorize application and close the web browser. Return to the host application dialog, you will see the interface used to upload photos to Flickr.
-
-When the tool is invoked for second time or later you are greeted with the following dialog, which shows the current account already used previously. Just select one from the list to be connected.
-
-.. figure:: images/export_flickr_account.webp
+.. figure:: images/export_media_wiki_info.webp
     :alt:
     :align: center
 
-    The Flickr Export Dialog to Select the Previously Registered Account
+    The MediaWiki Export Information Settings
 
-The main upload dialog is shown below:
-
-.. figure:: images/export_flickr_dialog.webp
+.. figure:: images/export_media_wiki_options.webp
     :alt:
     :align: center
 
-    The Flickr Export Tool Dialog
-
-By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
-
-With the **Album** options, you can select the online folder to store files to upload. You can **Create** new one an **Reload** the list on the combo-box if online contents have been changed in Flickr web interface.
-
-The **Tag options** section can be used to apply digiKam keywords to the flickr upload. More keywords can be assigned with a series of words (comma separated).
-
-The **Public**, **Friends**, and **Family** check-boxes can be turned on to assign appropriate access permissions to the images you upload. By default the images uploaded are private.
-
-If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to Flickr. The values will be read from the **Maximum Dimension** combo-box, which can be used to adjust the maximum height. The width calculation will be done so as to have the aspect ratio conserved.
-
-.. figure:: images/export_flickr_progress.webp
-    :alt:
-    :align: center
-
-    The Flickr Export Uploading in Progress
-
-Press **Start Uploading** button to transfer items. You can click Cancel button to abort the uploading of photos.
-
-Finally, you can view the uploaded photos by visiting the Flickr website.
-
-.. figure:: images/export_flickr_stream.webp
-    :alt:
-    :align: center
-
-    The Flickr Online Account Displaying the Uploaded Contents
+    The MediaWiki Export Options Settings
