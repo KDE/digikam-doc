@@ -54,7 +54,7 @@ Then, simply authorize application and close the web browser. Return to the host
 Upload to your Account
 ----------------------
 
-The upload dialogs for **Google Photo** and **Google Drive** will show the same interface:
+The upload dialogs for **Google Photo** and **Google Drive** uses mostly the same interface:
 
 .. figure:: images/export_google_photo.webp
     :alt:
@@ -73,3 +73,27 @@ By default, the tools proposes to export the currently selected items from the i
 With the **Album** options, you can select the online folder to store files to upload. You can **Create** new one an **Reload** the list on the combo-box if online contents have been changed in Google web interface.
 
 If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to Google. The values will be read from the **Maximum Dimension** combo-box, which can be used to adjust the maximum height. The width calculation will be done so as to have the aspect ratio conserved.
+
+With **Google Photo** uploader, a special option is available to **Write the photo ID to the image**. The identification number used to upload to your Google account will be recorded in the XMP metadata from file in your collection.
+
+.. figure:: images/export_google_progress.webp
+    :alt:
+    :align: center
+
+    The Google Export Uploading in Progress
+
+Press **Start Upload** button to transfer items. You can click on the **Close** button to abort the uploading of photos.
+
+Finally, you can view the uploaded photos by visiting the Google websites.
+
+.. figure:: images/export_google_photo_stream.webp
+    :alt:
+    :align: center
+
+    The Google Photo Online Account Displaying the Uploaded Contents
+
+.. figure:: images/export_google_drive_stream.webp
+    :alt:
+    :align: center
+
+    The Google Drive Online Account Displaying the Uploaded Contents
