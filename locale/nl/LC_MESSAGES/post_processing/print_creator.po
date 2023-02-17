@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-14 00:51+0000\n"
-"PO-Revision-Date: 2023-02-15 12:51+0100\n"
+"PO-Revision-Date: 2023-02-16 13:21+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -215,6 +215,10 @@ msgid ""
 "layouts easily. This chapter explains how to create templates, test, and "
 "share files for an official integration in application."
 msgstr ""
+"Het hulpmiddel Afdrukken maker biedt het toevoegen van nieuwe sjablonen "
+"om gemakkelijk nieuwe indelingen van pagina's te beheren. Dit hoofdstuk "
+"legt uit hoe sjablonen te maken, te testen en bestanden te delen voor een "
+"officiële integratie in de toepassing."
 
 #: ../../post_processing/print_creator.rst:90
 msgid "Getting Started"
@@ -252,8 +256,9 @@ msgid ""
 "exists."
 msgstr ""
 "Voor elk bestand zoekt het naar sjablonen. Als een sjabloon in orde is, "
-"controleert het of de indeling past in de gekozen paginagrootte, voegt "
-"het toe en laadt het bureaubladbestand als het bestaat."
+"controleert het of de indeling past in de gekozen paginagrootte, voegt"
+" het "
+"toe en laadt het bureaubladbestand als het bestaat."
 
 #: ../../post_processing/print_creator.rst:99
 msgid "Shows templates with a preview icon in a list box."
@@ -266,9 +271,9 @@ msgid ""
 "ic/"
 "tools/printcreator/templates>`_."
 msgstr ""
-"De huidige officiële lijst met sjablonen is te zien `in deze "
-"git-opslagruimte <https://invent.kde.org/graphics/digikam/-/tree/master/"
-"core/dplugins/generic/tools/printcreator/templates>`_."
+"De huidige officiële lijst met sjablonen is te zien `in deze git-"
+"opslagruimte <https://invent.kde.org/graphics/digikam/-/tree/master/core/"
+"dplugins/generic/tools/printcreator/templates>`_."
 
 #: ../../post_processing/print_creator.rst:104
 msgid "The XML File Structure"
@@ -281,6 +286,10 @@ msgid ""
 "layout. At now, you can add a fake page size to make it available for all "
 "those pages in which your new template fits."
 msgstr ""
+"Het XML-bestand wordt gebruikt om sjabloonindelingen te beschrijven, "
+"nadat het een echte pagina-indeling is. Nu kunt u een nep paginagrootte "
+"toevoegen om het beschikbaar te maken voor alle die pagina's waarin uw "
+"nieuwe sjabloon past."
 
 #: ../../post_processing/print_creator.rst:108
 msgid ""
@@ -322,8 +331,9 @@ msgid ""
 "The **template** element is the real template definition and contains the "
 "photo positions. Attributes are:"
 msgstr ""
-"Het element **template** is de echte sjabloondefinitie en bevat de "
-"posities van de foto's. Attributen zijn:"
+"Het element **template** is de echte sjabloondefinitie en bevat de"
+" posities "
+"van de foto's. Attributen zijn:"
 
 #: ../../post_processing/print_creator.rst:133
 msgid ""
@@ -335,6 +345,11 @@ msgid ""
 " attribute "
 "is shown."
 msgstr ""
+"Attribuut **name**: is de naam van het sjabloon. Het wordt gebruikt om "
+"vertalingen te krijgen bij uitvoeren ingesteld vanuit een "
+"bureaubladbestandsnaam ( :file:`6_photos_3.5x4cm.desktop` in het "
+"voorbeeld). Als de bureaubladbestandsnaam niet bestaat, wordt de naam van "
+"het attribuut getoond."
 
 #: ../../post_processing/print_creator.rst:134
 msgid "**autorotate** attribute: Sets if autorotation must be done."
@@ -368,6 +383,9 @@ msgid ""
 " looks "
 "like this (for instance :file:`1_photo_9x13cm`):"
 msgstr ""
+"Het bureaubladbestand is nodig voor vertalingen. Als u uw sjablonen voor "
+"uzelf gebruikt, het u het niet echt nodig. Het is een standaard ini-stijl "
+"bestand en ziet er uit als dit (bijvoorbeeld :file:`1_photo_9x13cm`):"
 
 #: ../../post_processing/print_creator.rst:173
 msgid ""
@@ -375,10 +393,13 @@ msgid ""
 "tool default templates, translators teams will translate the desktop file "
 "for you."
 msgstr ""
+"Het mooie hiervan is dat wanneer uw indeling geïntegreerd raakt in "
+"standaard sjablonen van hulpmiddel Maker van afdrukken, zullen teams met "
+"vertalers voor u het bureaubladbestand vertalen."
 
 #: ../../post_processing/print_creator.rst:176
 msgid "Creating new Template from Another One"
-msgstr ""
+msgstr "Een nieuw sjabloon aanmaken uit een andere"
 
 #: ../../post_processing/print_creator.rst:178
 msgid ""
@@ -391,24 +412,34 @@ msgid ""
 "will not create our template there, Instead do the following from a"
 " console:"
 msgstr ""
+"De gemakkelijkste manier om te starten is het kopiëren van een bestand "
+"templates.xml en het te wijzigen. De map met sjablonen is gewoonlijk te "
+"vinden onder **Linux** in :file:`/usr/share/apps/digikam/templates/`. "
+"Schrijven in deze map vereist toegang als root, we zullen daar dus niet "
+"ons sjabloon aanmaken, in plaats daarvan doen we het volgende vanuit een "
+"console:"
 
 #: ../../post_processing/print_creator.rst:180
 msgid "Create a template folder in your home directory:"
-msgstr ""
+msgstr "Maak een sjablonenmap aan in uw thuismap:"
 
 #: ../../post_processing/print_creator.rst:186
 msgid "Go to this directory:"
-msgstr ""
+msgstr "Ga naar deze map:"
 
 #: ../../post_processing/print_creator.rst:192
 msgid ""
 "Copy the :file:`templates.xml` to :file:`my_templates.xml` for instance:"
 msgstr ""
+"Kopieer de :file:`templates.xml` naar bijvoorbeeld"
+" :file:`my_templates.xml`:"
 
 #: ../../post_processing/print_creator.rst:198
 msgid ""
 "Remove all pages and add yours then create the desktop file accordingly."
 msgstr ""
+"Verwijder alle pagina's en voeg de uwe toe en maak het bijbehorende "
+"bureaubladbestand."
 
 #: ../../post_processing/print_creator.rst:200
 msgid ""
@@ -416,10 +447,13 @@ msgid ""
 "templates should appear in the **Layouts** list from the  **Select page "
 "layout** wizard dialog page."
 msgstr ""
+"U bent gereed, u kunt nu digiKam openen en het hulpmiddel starten, uw "
+"nieuwe sjablonen zouden moeten verschijnen in de lijst **Indelingen** uit "
+"de dialoogpagina van de assistent **Pagina-indeling selecteren**."
 
 #: ../../post_processing/print_creator.rst:203
 msgid "Final Words"
-msgstr ""
+msgstr "Laatste woorden"
 
 #: ../../post_processing/print_creator.rst:205
 msgid ""
@@ -427,6 +461,8 @@ msgid ""
 " and "
 "add new templates."
 msgstr ""
+"Dit is het einde van dit hoofdstuk, nu is de tijd voor u gekomen om "
+"creatief te worden en nieuwe sjablonen toe te voegen."
 
 #: ../../post_processing/print_creator.rst:207
 msgid ""
@@ -436,3 +472,7 @@ msgid ""
 " from "
 "the digiKam project web-site for details."
 msgstr ""
+"Wanneer u klaar bent, aarzel dan niet om uw werk voor te stellen voor een "
+"officiële integration in digiKam, en te zien dat uw nieuwe sjabloon wordt "
+"ingevoegd in de officiële lijst. Zie de `Bijdragepagina <https://www."
+"digikam.org/contribute/>`_ uit de projectwebsite van digiKam voor details."
