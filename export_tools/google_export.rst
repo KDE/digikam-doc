@@ -24,7 +24,7 @@ This tool allows the user to upload photos to the Google web services. Two onlin
 
 **Google Drive** allows users to store files in the cloud, synchronize files across devices, and share files. Users can change privacy settings for individual files and can search for a content by describing its visuals, and use natural language to find specific files.
 
-The tools can be used to upload an image collection from your computer to the remote Google server using the Internet. Use respectively the :menuselection:`Export --> Export to Google Photo` and by the :menuselection:`Export --> Export to Google Drive` menu entries to access to these tools,
+The tools can be used to upload an image collection from your computer to the remote Google server using the Internet. Use respectively the :menuselection:`Export --> Export to Google Photo` and by the :menuselection:`Export --> Export to Google Drive` menu entries to access to these tools, or uses the icons from **Tools** in Right sidebar.
 
 Login to your Account
 ---------------------
