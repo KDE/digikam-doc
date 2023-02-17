@@ -38,7 +38,7 @@ In our context here it stands for all information about a photograph.
 DAM and digiKam
 ---------------
 
-In this section of the manual, we will present the **tools**, the **plans**, and the **practical advices** on how to **file**, **find**, **protect** and **re-use** photographs, focusing on best practices for digital photographers using digiKam. We cover **downloading**, **renaming**, **culling**, **converting**, **grouping**, **backing-up**, **rating**, **tagging**, **archiving**, **optimizing**, **maintaining** and **exporting** item files.
+In this section of the manual, we will present the **tools** and the **practical advices** on how to **file**, **find**, **protect** and **re-use** photographs, focusing on best practices for digital photographers using digiKam. We cover **downloading**, **renaming**, **culling**, **converting**, **grouping**, **backing-up**, **rating**, **tagging**, **archiving**, **optimizing**, **maintaining** and **exporting** item files.
 
 digiKam with its libraries and tools is a unique and comprehensive tool to cover most of DAM tasks, and it does it fast and transparently. Based on open standards on all fronts it will not confine you to a platform or application, rather it puts you into a fast track to manage and find your photographs and to move on if you so please to any other platform, application, system without losing any of your work be it as an occasional user, enthusiast or professional.
 
