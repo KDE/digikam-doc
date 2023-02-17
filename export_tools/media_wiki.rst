@@ -27,7 +27,7 @@ You can access to this tool by the :menuselection:`Export --> Export to MediaWik
 
     The MediaWiki Export Dialog
 
-.. figure:: images/export_media_wiki_account.webp
+.. figure:: images/export_media_wiki_login.webp
     :alt:
     :align: center
 
@@ -44,3 +44,21 @@ You can access to this tool by the :menuselection:`Export --> Export to MediaWik
     :align: center
 
     The MediaWiki Export Options Settings
+
+.. figure:: images/export_media_wiki_account.webp
+    :alt:
+    :align: center
+
+    The MediaWiki Export Connected to the Web Service with an Account
+
+.. figure:: images/export_media_wiki_progress.webp
+    :alt:
+    :align: center
+
+    The MediaWiki Export Uploding Contents to the Web Service
+
+.. figure:: images/export_media_wiki_stream.webp
+    :alt:
+    :align: center
+
+    The MediaWiki Online Account Displaying the Uploaded Contents
