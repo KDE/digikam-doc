@@ -21,7 +21,7 @@ Flickr is an online photo management application. Flickr is a way to get your ph
 
 The tool can be used to upload an image collection from your computer to the remote flickr server using the Internet.
 
-When accessing the tool for the first time you are taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched you will log in to Flickr:
+When accessing the tool for the first time by the :menuselection:`Export --> Export to Flickr` menu entry, you are taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched you will log in to Flickr:
 
 .. figure:: images/export_flickr_login.webp
     :alt:
@@ -37,7 +37,7 @@ After successful signup digiKam will be allowed to send photos to the flickr web
 
     The Flickr Export Authorize Dialog
 
-Then, simply authorize application and close the web browser. Return to the host application dialog, you will see the interface used to upload photos to Flickr, described in the next section.
+Then, simply authorize application and close the web browser. Return to the host application dialog, you will see the interface used to upload photos to Flickr.
 
 When the tool is invoked for second time or later you are greeted with the following dialog, which shows the current account already used previously. Just select one from the list to be connected.
 
@@ -47,7 +47,7 @@ When the tool is invoked for second time or later you are greeted with the follo
 
     The Flickr Export Dialog to Select the Previously Registered Account
 
-The Main upload dialog is shown below:
+The main upload dialog is shown below:
 
 .. figure:: images/export_flickr_dialog.webp
     :alt:
@@ -56,6 +56,8 @@ The Main upload dialog is shown below:
     The Flickr Export Tool Dialog
 
 By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
+
+With the **Album** options, you can select the online folder to store files to upload. You can **Create** new one an **Reload** the list on the combo-box if online contents have been changed in Flickr web interface.
 
 The **Tag options** section can be used to apply digiKam keywords to the flickr upload. More keywords can be assigned with a series of words (comma separated).
 
