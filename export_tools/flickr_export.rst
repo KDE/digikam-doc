@@ -17,7 +17,7 @@ Export To Flickr
 
 This tool allows the user to upload photos to the Flickr web service.
 
-Flickr is an online photo management application. Flickr is a way to get your photos to the people who matter to you. With Flickr you can show off your favorite photos to the world, blog the photos you take with a smartphone, and securely and privately show photos to your friends and family around the world.
+`Flickr <https://en.wikipedia.org/wiki/Flickr>`_  is an online photo management application. Flickr is a way to get your photos to the people who matter to you. With Flickr you can show off your favorite photos to the world, blog the photos you take with a smartphone, and securely and privately show photos to your friends and family around the world.
 
 The tool can be used to upload an image collection from your computer to the remote flickr server using the Internet.
 
