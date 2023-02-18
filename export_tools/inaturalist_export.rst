@@ -21,6 +21,12 @@ Export To iNaturalist
 
     The iNaturalist Export Dialog
 
+.. figure:: images/export_inaturalist_search.webp
+    :alt:
+    :align: center
+
+    The iNaturalist Export Tool Searching About Contents on Online Database
+
 .. figure:: images/export_inaturalist_stream.webp
     :alt:
     :align: center
