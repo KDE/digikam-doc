@@ -63,7 +63,7 @@ The **Tag options** section can be used to apply digiKam keywords to the flickr 
 
 The **Public**, **Friends**, and **Family** check-boxes can be turned on to assign appropriate access permissions to the images you upload. By default the images uploaded are private.
 
-If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to Flickr. The values will be read from the **Maximum Dimension** combo-box, which can be used to adjust the maximum height. The width calculation will be done so as to have the aspect ratio conserved.
+If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to Flickr. The values will be read from the **JPEG quality** and **Maximum Dimension** settings, which can be used to adjust the maximum height and the compression. The width calculation will be done so as to have the aspect ratio conserved.
 
 .. figure:: images/export_flickr_progress.webp
     :alt:

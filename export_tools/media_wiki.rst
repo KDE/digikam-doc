@@ -15,9 +15,9 @@ Export To MediaWiki
 
 .. contents::
 
-Sharing is caring, and there is probably no better way to share your photographic masterpieces with the world than adding them to a `MediaWiki <https://en.wikipedia.org/wiki/MediaWiki>`_ pool. While the project’s website features its own tool for uploading photos, digiKam’s MediaWiki Export plugin can come in rather handy when you need to export multiple photos in one fell swoop without leaving the convenience of your favorite photo management application.
+Sharing is caring, and there is probably no better way to share your photographic masterpieces with the world than adding them to a `MediaWiki <https://en.wikipedia.org/wiki/MediaWiki>`_ pool. While the project’s website features its own tool for uploading photos, digiKam’s MediaWiki Export tool can come in rather handy when you need to export multiple photos in one fell swoop without leaving the convenience of your favorite photo management application.
 
-MediaWiki are the base of `Media Repositories <https://en.wikipedia.org/wiki/Digital_library>`_ avaialble on the Internet where free-to-use images can be uploaded. The goal of these digitial libraries is to share contents used across all of the Wikimedia projects as the famous **Wikipedia** encyclopedia for exemple.
+MediaWiki are the base of `Media Repositories <https://en.wikipedia.org/wiki/Digital_library>`_ available on the Internet where free-to-use images can be uploaded. The goal of these digital libraries is to share contents used across all of the Wikimedia projects as the famous **Wikipedia** encyclopedia for example.
 
 To upload a selection of images from your collection to a remote MediaWiki server using the Internet, uses the :menuselection:`Export --> Export to MediaWiki` menu entry, or the corresponding icon from the **Tools** tab in Right Sidebar. 
 
@@ -35,23 +35,23 @@ The **Items Properties** tab of the right side allows to customize MediaWiki met
 
     The MediaWiki Export Account Settings
 
-First, you needs to be connected to the server with an **Account**. From this view, you can enter the MediaWiki service to use and the login and password properties. By default, the tool propose a list of popular MediaWiki servers available on the Internet, as:
+First, you needs to be connected to the server with an **Account**. From this view, you can select the MediaWiki service to use with the **Login** and **Password** properties. By default, the tool propose a list of popular MediaWiki servers available on the Internet, as:
 
-    - `Wikimedia Commons <https://commons.wikimedia.org/w/api.php>`_
-    - `Wikimedia Meta <https://meta.wikimedia.org/w/api.php>`_
-    - `Wikipedia <https://en.wikipedia.org/w/api.php>`_
-    - `Wikibooks <https://en.wikibooks.org/w/api.php>`_
-    - `Wikinews <https://en.wikinews.org/w/api.php>`_
-    - `Wikiquote <https://en.wikiquote.org/w/api.php>`_
-    - `Wikisource <https://en.wikinews.org/w/api.php>`_
-    - `Wiktionary <https://en.wiktionary.org/w/api.php>`_
-    - `MediaWiki <https://www.MediaWiki.org/w/api.php>`_
-    - `Wikia Foto <https://foto.wikia.com/api.php>`_
-    - `Wikia Uncyclopedia <https://uncyclopedia.wikia.com/api.php>`_
+    - `Wikimedia Commons <https://commons.wikimedia.org/>`_
+    - `Wikimedia Meta <https://meta.wikimedia.org/>`_
+    - `Wikipedia <https://en.wikipedia.org/>`_
+    - `Wikibooks <https://en.wikibooks.org/>`_
+    - `Wikinews <https://en.wikinews.org/>`_
+    - `Wikiquote <https://en.wikiquote.org/>`_
+    - `Wikisource <https://en.wikinews.org/>`_
+    - `Wiktionary <https://en.wiktionary.org/>`_
+    - `MediaWiki <https://www.MediaWiki.org/>`_
+    - `Wikia Foto <https://foto.wikia.com/>`_
+    - `Wikia Uncyclopedia <https://uncyclopedia.wikia.com/>`_
 
-With the **+ NEW** button, you can add on the list another MediaWiki based server available on Internet or on your local network. The tool will shown a widget to customize the **Name** and the **API Url**. Just press on **+ Add** button to confirm values.
+With the **+ NEW** button, you can append on the list a new MediaWiki based server from Internet or on your local network. The tool will shown a widget to customize the **Name** and the **API Url**. Just press on **+ Add** button to confirm values.
 
-When you are logged to the remote Web service, the **Account** view must become like below:
+When you are coonected to the remote Web service with the **Log in** button, the **Account** view must become like this:
 
 .. figure:: images/export_media_wiki_account.webp
     :alt:
@@ -59,11 +59,22 @@ When you are logged to the remote Web service, the **Account** view must become 
 
     The MediaWiki Export Connected to an Account from Wikimedia Commons Web Service
 
+While transferring the files, you can customize some **Information** used by the MediaWiki server to identify the uploading operation. The fields available are listed below:
+
+    - **Author**: the author name of the contents as text.
+    - **Source**: the original source of the contents as text.
+    - **License**: the license of the contents. Use one entry from the list provided by the tool.
+    - **Generic categories**: The categories that will be added to the contents as text.
+    - **Generic text**: The text that will be added to the contents below the Information template.
+    - **Upload comments**: The text that will be used as upload comments. The value *Uploaded via digiKam uploader* will be used if empty.
+
 .. figure:: images/export_media_wiki_info.webp
     :alt:
     :align: center
 
     The MediaWiki Export Information Settings
+
+During uploading the files, you can also apply some operations listed in **Options** view. If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to MediaWiki. The values will be read from the **Maximum Size** and **JPEG quality** settings, which can be used to adjust the compression and maximum height. The width calculation will be done so as to have the aspect ratio conserved. You can also drop **metadata** and GPS **coordinates** information from the files.
 
 .. figure:: images/export_media_wiki_options.webp
     :alt:
@@ -71,11 +82,16 @@ When you are logged to the remote Web service, the **Account** view must become 
 
     The MediaWiki Export Options Settings
 
+
+Press **Start Upload** button to transfer items. You can click on the **Close** button to abort the uploading of photos.
+
 .. figure:: images/export_media_wiki_progress.webp
     :alt:
     :align: center
 
     The MediaWiki Export Uploading Contents to the Web Service
+
+Finally, you can view the uploaded photos by visiting the MediaWiki website.
 
 .. figure:: images/export_media_wiki_stream.webp
     :alt:
