@@ -706,6 +706,10 @@ Export Tools
 
         :ref:`media_wiki`
 
+    .. container:: tile no-descr
+
+        :ref:`inaturalist_export`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
