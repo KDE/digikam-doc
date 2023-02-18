@@ -45,7 +45,7 @@ First, you needs to be connected to the server with an **Account**. From this vi
     - `Wikiquote <https://en.wikiquote.org/>`_
     - `Wikisource <https://en.wikinews.org/>`_
     - `Wiktionary <https://en.wiktionary.org/>`_
-    - `MediaWiki <https://www.MediaWiki.org/>`_
+    - `MediaWiki Organization <https://www.MediaWiki.org/>`_
     - `Wikia Foto <https://foto.wikia.com/>`_
     - `Wikia Uncyclopedia <https://uncyclopedia.wikia.com/>`_
 
