@@ -75,7 +75,7 @@ When you are logged to the remote Web service, the **Account** view must become 
     :alt:
     :align: center
 
-    The MediaWiki Export Uploding Contents to the Web Service
+    The MediaWiki Export Uploading Contents to the Web Service
 
 .. figure:: images/export_media_wiki_stream.webp
     :alt:

@@ -57,7 +57,7 @@ The main upload dialog is shown below:
 
 By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
 
-With the **Album** options, you can select the online folder to store files to upload. You can **Create** new one an **Reload** the list on the combo-box if online contents have been changed in Flickr web interface.
+With the **Album** options, you can select the online folder to store files to upload. You can **Create** new one and **Reload** the list on the combo-box if online contents have been changed in Flickr web interface.
 
 The **Tag options** section can be used to apply digiKam keywords to the flickr upload. More keywords can be assigned with a series of words (comma separated).
 

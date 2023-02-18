@@ -70,7 +70,7 @@ The upload dialogs for **Google Photo** and **Google Drive** uses mostly the sam
 
 By default, the tools proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
 
-With the **Album** options, you can select the online folder to store files to upload. You can **Create** new one an **Reload** the list on the combo-box if online contents have been changed in Google web interface.
+With the **Album** options, you can select the online folder to store files to upload. You can **Create** new one and **Reload** the list on the combo-box if online contents have been changed in Google web interface.
 
 If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to Google. The values will be read from the **Maximum Dimension** combo-box, which can be used to adjust the maximum height. The width calculation will be done so as to have the aspect ratio conserved.
 
