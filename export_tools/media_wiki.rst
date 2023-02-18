@@ -28,7 +28,7 @@ To upload a selection of images from your collection to a remote MediaWiki serve
     The MediaWiki Export Dialog
 
 The **Items Properties** tab of the right side allows to customize MediaWiki metadata of each items present from the upload list. Select one item on the left side to see the properties populated by digiKam, and adjust values if necessary. When all is ready, switch to the **Upload Settings** tab to be connected to the remote server and transfert files.
-    
+
 .. figure:: images/export_media_wiki_login.webp
     :alt:
     :align: center
@@ -50,6 +50,12 @@ First, you needs to be connected to the server with an **Account**. From this vi
     - `Wikia Uncyclopedia <https://uncyclopedia.wikia.com/>`_
 
 With the **+ NEW** button, you can append on the list a new MediaWiki based server from Internet or on your local network. The tool will shown a widget to customize the **Name** and the **API Url**. Just press on **+ Add** button to confirm values.
+
+.. figure:: images/export_media_wiki_new.webp
+    :alt:
+    :align: center
+
+    The MediaWiki Export View to create a New Server Settings
 
 When you are coonected to the remote Web service with the **Log in** button, the **Account** view must become like this:
 

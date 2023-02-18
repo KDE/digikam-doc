@@ -18,7 +18,7 @@ Export To Google
 Overview
 --------
 
-This tool allows the user to upload photos to the Google web services. Two online application are supported: `Google Photo <https://en.wikipedia.org/wiki/Google_Photos>`_ and `Google Drive <https://en.wikipedia.org/wiki/Google_Drive>`_.
+This tool allows the user to upload photos to the Google web services. Two online applications are supported: `Google Photo <https://en.wikipedia.org/wiki/Google_Photos>`_ and `Google Drive <https://en.wikipedia.org/wiki/Google_Drive>`_.
 
 **Google Photos** is a photo sharing which automatically analyzes photos, identifying various visual features and subjects. Users can search for anything in photos including faces and group similar ones together.
 
