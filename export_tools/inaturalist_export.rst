@@ -20,3 +20,9 @@ Export To iNaturalist
     :align: center
 
     The iNaturalist Export Dialog
+
+.. figure:: images/export_inaturalist_stream.webp
+    :alt:
+    :align: center
+
+    The iNaturalist Online Account Displaying the Observed Publications
