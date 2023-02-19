@@ -29,7 +29,7 @@ When accessing the tool for the first time by the :menuselection:`Export --> Exp
 
     The Flickr Export Login Dialog
 
-After successful signup digiKam will be allowed to send photos to the flickr website. You will be presented with the following page on successful signup:
+After successful signup digiKam will be allowed to send photos to the Flickr website. You will be presented with the following page on successful signup:
 
 .. figure:: images/export_flickr_authorize.webp
     :alt:
