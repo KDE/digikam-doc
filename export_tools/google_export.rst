@@ -74,7 +74,7 @@ With the **Album** options, you can select the online folder to store files to u
 
 If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to Google. The values will be read from the **Maximum Dimension** combo-box, which can be used to adjust the maximum height. The width calculation will be done so as to have the aspect ratio conserved.
 
-With **Google Photo** uploader, a special option is available to **Write the photo ID to the image**. The identification number used to upload to your Google account will be recorded in the XMP metadata from file in your collection.
+With **Google Photo** uploader, a special option is available to **Write the photo ID to the source image**. The identification number used to upload to your Google account will be recorded in the XMP metadata from file in your collection.
 
 .. figure:: images/export_google_progress.webp
     :alt:

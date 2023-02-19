@@ -55,6 +55,8 @@ On the top of the settings view, you can see the login **Account** properties us
 
 On the bottom of the settings view, you can set the upload **Options** for the images. If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to iNaturalist. The values will be read from the **JPEG quality** and **Maximum Dimension** settings, which can be used to adjust the maximum height and the compression. The width calculation will be done so as to have the aspect ratio conserved.
 
+A special option is available to **Write the photo ID to the source image**. The identification number used to upload to your iNaturalist account will be recorded in the XMP metadata from file in your collection.
+
 On the middle of the settings view, you can tune the **Observation** properties. The most important one is to identify the subject using the iNaturalist database by entering words in **Identification** text field. The tool will query the remote server to search the best entries with a preview. If one item match with the observation subject, just select it.
 
 .. figure:: images/export_inaturalist_search.webp
@@ -63,9 +65,15 @@ On the middle of the settings view, you can tune the **Observation** properties.
 
     The iNaturalist Export Tool Searching About Contents on Online Database
 
+The **Place** text property will help iNaturalist database to identify in human way where the observation have been done, outside the fact that photos have been geo-localized with a GPS.
+
 On the left side, you can see the list of observation shots taken from digiKam collection. From the **Date** column, the tool scan the items to found the most older one as reference, and compute the delay of all other shots compared to this one. The maximum delay between the reference and the most recent shot must be lesser than value set in the **Photo should be taken within** from the settings view.
 
-In the way way, the tool scan also the items to found the original place of observation using the reference image. It computes the distance of all other shots compared to this one. The maximum meters between the reference and the most recent shot must be lesser than value set in the **Photo should be taken within** from the settings view.
+In the same way, the tool scan also the items to found the original place of observation using the reference image. It computes the distance of all other shots compared to this one. The maximum meters between the reference and the most recent shot must be lesser than value set in the **Photo should be taken within** from the settings view.
+
+Press **Start Uploading** button to transfer items. You can click on the **Close** button to abort the uploading of photos.
+
+Finally, you can view the uploaded photos by visiting the iNaturalist website.
 
 .. figure:: images/export_inaturalist_stream.webp
     :alt:
