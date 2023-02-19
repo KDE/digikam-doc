@@ -28,3 +28,4 @@ This section explain how to use the digiKam export tools.
    export_tools/media_wiki.rst
    export_tools/inaturalist_export.rst
    export_tools/twitter_export.rst
+   export_tools/imgur_export.rst

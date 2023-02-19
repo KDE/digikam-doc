@@ -714,6 +714,10 @@ Export Tools
 
         :ref:`twitter_export`
 
+    .. container:: tile no-descr
+
+        :ref:`imgur_export`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
