@@ -19,7 +19,7 @@ Sharing is caring, and there is probably no better way to share your photographi
 
 MediaWiki are the base of `Media Repositories <https://en.wikipedia.org/wiki/Digital_library>`_ available on the Internet where free-to-use images can be uploaded. The goal of these digital libraries is to share contents used across all of the Wikimedia projects as the famous **Wikipedia** encyclopedia for example.
 
-To upload a selection of images from your collection to a remote MediaWiki server using the Internet, uses the :menuselection:`Export --> Export to MediaWiki` menu entry, or the corresponding icon from the **Tools** tab in Right Sidebar. 
+To upload a selection of images from your collection to a remote MediaWiki server using the Internet, use the :menuselection:`Export --> Export to MediaWiki` menu entry, or the corresponding icon from the **Tools** tab in Right Sidebar. 
 
 .. figure:: images/export_media_wiki.webp
     :alt:
@@ -27,7 +27,7 @@ To upload a selection of images from your collection to a remote MediaWiki serve
 
     The MediaWiki Export Dialog
 
-The **Items Properties** tab of the right side allows to customize MediaWiki metadata of each items present from the upload list. Select one item on the left side to see the properties populated by digiKam, and adjust values if necessary. When all is ready, switch to the **Upload Settings** tab to be connected to the remote server and transfert files.
+The **Items Properties** tab of the right side allows to customize MediaWiki metadata of each items present from the upload list. Select one item on the left side to see the properties populated by digiKam, and adjust values if necessary. When all is ready, switch to the **Upload Settings** tab to be connected to the remote server and transfer files.
 
 .. figure:: images/export_media_wiki_login.webp
     :alt:
@@ -43,11 +43,11 @@ First, you needs to be connected to the server with an **Account**. From this vi
     - `Wikibooks <https://en.wikibooks.org/>`_
     - `Wikinews <https://en.wikinews.org/>`_
     - `Wikiquote <https://en.wikiquote.org/>`_
-    - `Wikisource <https://en.wikinews.org/>`_
+    - `Wikisource <https://en.wikisource.org/>`_
     - `Wiktionary <https://en.wiktionary.org/>`_
     - `MediaWiki Organization <https://www.MediaWiki.org/>`_
     - `Wikia Foto <https://foto.wikia.com/>`_
-    - `Wikia Uncyclopedia <https://uncyclopedia.wikia.com/>`_
+    - `Wikia Uncyclopedia <https://en.uncyclopedia.co/>`_
 
 With the **+ NEW** button, you can append on the list a new MediaWiki based server from Internet or on your local network. The tool will shown a widget to customize the **Name** and the **API Url**. Just press on **+ Add** button to confirm values.
 
@@ -57,7 +57,7 @@ With the **+ NEW** button, you can append on the list a new MediaWiki based serv
 
     The MediaWiki Export View to create a New Server Settings
 
-When you are coonected to the remote Web service with the **Log in** button, the **Account** view must become like this:
+When you are connected to the remote Web service with the **Log in** button, the **Account** view must become like this:
 
 .. figure:: images/export_media_wiki_account.webp
     :alt:
