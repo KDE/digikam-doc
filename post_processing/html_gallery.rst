@@ -31,7 +31,7 @@ Using the Wizard
 
     The HTML Gallery Page Selection Mode
 
-Launching the tool from within digiKam displays a view to select the contents to export: from current items selection, or from a list of albums. The **Albums** selection mode allows you to select items from Albums that you want to export to HTML. Just check the respective Albums displayed with hierarchical nesting. On the next three tabs **Tags**, **Searches**, and **Labels** you can refine your selection using tags, labels, or previous search results in digiKam. 
+ To launch the tool, uses :menuselection:`Tools --> Create Html gallery` :kbd:`Ctrl+Alt+Shift+H` menu entry, or the corresponding icon from the **Tools** tab in Right Sidebar. The tool will displays a view to select the contents to export: from current items selection, or from a list of albums. The **Albums** selection mode allows you to select items from Albums that you want to export to HTML. Just check the respective Albums displayed with hierarchical nesting. On the next three tabs **Tags**, **Searches**, and **Labels** you can refine your selection using tags, labels, or previous search results in digiKam. 
 
 .. figure:: images/html_gallery_page2.webp
     :alt:
