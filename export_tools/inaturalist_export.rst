@@ -17,11 +17,13 @@ Export To iNaturalist
 
 `iNaturalist <https://en.wikipedia.org/wiki/INaturalist>`_ is a social network of naturalists, citizen scientists, and biologists built on the concept of mapping and sharing observations of biodiversity across the globe. iNaturalist users contribute to share observations of plants, animals, fungi, and other organisms worldwide.
 
+The iNaturalist platform is based on crowdsourcing of observations and identifications. An iNaturalist **observation** records a person's encounter with an individual organism at a particular time and place.
+
 To upload observation shots from your collection to the remote iNaturalist server using the Internet, uses the :menuselection:`Export --> Export to iNaturalist` menu entry, or the corresponding icon from the **Tools** tab in Right Sidebar.
 
 .. important::
 
-    To push an observation to iNaturalist, shots must be geo-located, taken in same conditions, separated by a brief delay, and surrounding the same subject. A description of observation must be provided, including the main topic.
+    To push an **observation** to iNaturalist, shots must be geo-located, taken in same conditions, separated by a brief delay, and surrounding the same subject. A description of observation must be provided, including the main topic.
 
 .. figure:: images/export_inaturalist.webp
     :alt:
