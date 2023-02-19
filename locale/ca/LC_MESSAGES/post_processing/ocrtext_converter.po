@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-17 00:51+0000\n"
-"PO-Revision-Date: 2023-02-16 12:21+0100\n"
-"Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
+"PO-Revision-Date: 2023-02-18 19:27+0100\n"
+"Last-Translator: Antoni Bella <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Kate 22.08.3\n"
 
 #: ../../post_processing/ocrtext_converter.rst:1
 msgid "The digiKam OCR Text Converter"
@@ -45,6 +45,9 @@ msgid ""
 "detect areas with text to convert into editable and translatable characters "
 "files."
 msgstr ""
+"El convertidor de text OCR és una eina per a analitzar el contingut d'una "
+"imatge i detectar àrees amb text que es convertiran en fitxers amb caràcters "
+"editables i traduïbles."
 
 #: ../../post_processing/ocrtext_converter.rst:20
 msgid ""
@@ -53,13 +56,21 @@ msgid ""
 "also allows you to review the text and make corrections and offers spell "
 "checking."
 msgstr ""
+"L'eina pot fer lots de reconeixement òptic de caràcters (OCR) sobre les "
+"imatges i les seves traduccions en molts idiomes mitjançant un motor de "
+"traducció en línia. També permet revisar el text i fer correccions, així com "
+"que ofereix revisió ortogràfica."
 
+# skip-rule: t-acc_obe
 #: ../../post_processing/ocrtext_converter.rst:22
 msgid ""
 "The tool use in background the `Tesseract <https://en.wikipedia.org/wiki/"
 "Tesseract_(software)>`_, a powerful open-source optical character "
 "recognition engine available for Linux, macOS, and Windows."
 msgstr ""
+"L'eina utilitza en segon pla el `Tesseract <https://en.wikipedia.org/wiki/"
+"Tesseract_(software)>`_, un potent motor de reconeixement òptic de caràcters "
+"de codi obert disponible per a Linux, macOS i Windows."
 
 #: ../../post_processing/ocrtext_converter.rst:24
 msgid ""
@@ -68,6 +79,11 @@ msgid ""
 "Text Converter`, or use the icon **OCR Text Converter** from the **Tools** "
 "tab on the right sidebar. The following dialog must appear:"
 msgstr ""
+"Per a realitzar conversions de text, seleccioneu les imatges escanejades, "
+"inclòs el text que voleu reconèixer, i inicieu l'eina des de l'element de "
+"menú «:menuselection:`Eines --> Convertidor de text OCR...`», o utilitzeu la "
+"icona **Convertidor de text OCR** a de la pestanya **Eines** a la **barra "
+"lateral dreta**. Hauria d'aparèixer el diàleg següent:"
 
 #: ../../post_processing/ocrtext_converter.rst:30
 msgid "The digiKam OCR Text Converter Dialog"
@@ -80,6 +96,11 @@ msgid ""
 "present, you will need to install it on your system. Below, the "
 "**Tesseract** settings can be customized to process images."
 msgstr ""
+"A la part dreta, la pestanya **Reconeixement de text** mostra a la part "
+"superior de la vista la versió del programa binari **Tesseract** que s'ha "
+"detectat en el vostre sistema. Si no n'hi ha cap, haureu d'instal·lar-lo. A "
+"continuació, la configuració del Tesseract es pot personalitzar per a "
+"processar les imatges."
 
 #: ../../post_processing/ocrtext_converter.rst:34
 msgid ""
@@ -90,6 +111,13 @@ msgid ""
 "hieroglyphs such as Chinese or Japanese. You can use the **Orientation and "
 "Script Detection** mode instead or a specific language module if available."
 msgstr ""
+"L'opció de configuració **Idiomes** especifica l'idioma utilitzat per a "
+"l'OCR. En el mode **Predeterminat**, quan es processi el text digital amb "
+"múltiples idiomes, el Tesseract podrà reconèixer automàticament els idiomes "
+"que utilitzen alfabets llatins com l'anglès o el francès, però no admet els "
+"idiomes que utilitzen jeroglífics com el xinès o el japonès. En el seu lloc "
+"podreu utilitzar el mode **Detecció de l'orientació i del sistema "
+"d'escriptura** o si està disponible, un mòdul d'idioma específic."
 
 #: ../../post_processing/ocrtext_converter.rst:36
 msgid ""
@@ -97,115 +125,148 @@ msgid ""
 "segmentation mode to use while processing images. Possible choices are "
 "listed below:"
 msgstr ""
+"Les opcions de configuració del **Mode de segmentació** especifiquen el mode "
+"de segmentació de la pàgina **Tesseract** que s'utilitzarà durant el "
+"processament de les imatges. Les opcions possibles es llisten a continuació:"
 
 #: ../../post_processing/ocrtext_converter.rst:38
 msgid "**OSD only**: Orientation and Script Detection (OSD) only."
 msgstr ""
+"**Només OSD**: només orientació i detecció del sistema d'escriptura (OSD)."
 
 #: ../../post_processing/ocrtext_converter.rst:39
 msgid "**With OSD**: Automatic page segmentation with OSD."
-msgstr ""
+msgstr "**Amb OSD:** segmentació automàtica de pàgines amb OSD."
 
 #: ../../post_processing/ocrtext_converter.rst:40
 msgid "**No OSD**: Automatic page segmentation, but no OSD, or OCR."
 msgstr ""
+"**Sense OSD**: segmentació automàtica de pàgines, però sense OSD ni OCR."
 
 #: ../../post_processing/ocrtext_converter.rst:41
 msgid "**Default**: Fully automatic page segmentation, but no OSD."
 msgstr ""
+"**Predeterminat**: segmentació de pàgines totalment automàtica, però sense "
+"OSD."
 
 #: ../../post_processing/ocrtext_converter.rst:42
 msgid "**Col of text**: Assume a single column of text of variable sizes."
 msgstr ""
+"**Columna de text**: assumirà una sola columna de text de mida variable."
 
 #: ../../post_processing/ocrtext_converter.rst:43
 msgid ""
 "**Vertically aligned**: Assume a single uniform block of vertically aligned "
 "text."
 msgstr ""
+"**Alineat verticalment**: assumirà un sol bloc uniforme de text alineat "
+"verticalment."
 
 #: ../../post_processing/ocrtext_converter.rst:44
 msgid "**Block**: Assume a single uniform block of text."
-msgstr ""
+msgstr "**Bloc**: assumirà un sol bloc uniforme de text."
 
 #: ../../post_processing/ocrtext_converter.rst:45
 msgid "**Line**: Treat the image as a single text line."
-msgstr ""
+msgstr "**Línia**: tractarà la imatge com una sola línia de text."
 
 #: ../../post_processing/ocrtext_converter.rst:46
 msgid "**Word**: Treat the image as a single word."
-msgstr ""
+msgstr "**Paraula**: tractarà la imatge com una sola paraula."
 
 #: ../../post_processing/ocrtext_converter.rst:47
 msgid "**Word in circle**: Treat the image as a single word in a circle."
 msgstr ""
+"**Paraula encerclada**: tractarà la imatge com una sola paraula en un cercle."
 
 #: ../../post_processing/ocrtext_converter.rst:48
 msgid "**Character**: Treat the image as a single character."
-msgstr ""
+msgstr "**Caràcter**: tractarà la imatge com un sol caràcter."
 
 #: ../../post_processing/ocrtext_converter.rst:49
 msgid ""
 "**Sparse text**: Sparse text. Find as much text as possible in no particular "
 "order."
 msgstr ""
+"**Text dispers**: trobarà la major quantitat possible de text sense cap "
+"ordre en particular."
 
 #: ../../post_processing/ocrtext_converter.rst:50
 msgid "**Sparse text + OSD**: Sparse text with OSD."
-msgstr ""
+msgstr "**Text dispers + OSD**: hi ha text dispers i empra OSD."
 
 #: ../../post_processing/ocrtext_converter.rst:51
 msgid ""
 "**Raw line**: Treat the image as a single text line, bypassing hacks that "
 "are Tesseract-specific."
 msgstr ""
+"**Línia sense processar**: tractarà la imatge com una sola línia de text, "
+"passant per alt els hacks específics del Tesseract."
 
+# skip-rule: t-acc_obe
 #: ../../post_processing/ocrtext_converter.rst:53
 msgid ""
 "If you want more details about the Tesseract Segmentation Mode you can read "
 "this `online tutorial <https://pyimagesearch.com/2021/11/15/tesseract-page-"
 "segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/>`_."
 msgstr ""
+"Per a obtenir més detalls sobre el mode de segmentació del Tesseract, podeu "
+"llegir aquesta `guia d'aprenentatge en línia <https://pyimagesearch."
+"com/2021/11/15/tesseract-page-segmentation-modes-psms-explained-how-to-"
+"improve-your-ocr-accuracy/>`_."
 
 #: ../../post_processing/ocrtext_converter.rst:55
 msgid ""
 "The **Engine mode** setting specifies the **Tesseract** OCR internal engine "
 "to use while processing images. Possible choices are listed below:"
 msgstr ""
+"L'opció de configuració **Mode del motor** especifica el motor d'OCR intern "
+"del **Tesseract** que s'utilitzarà quan es processin les imatges. Les "
+"opcions possibles es llisten a continuació:"
 
 #: ../../post_processing/ocrtext_converter.rst:57
 msgid ""
 "**Legacy**: Legacy engine only (older engine not based on the neural "
 "network)."
 msgstr ""
+"**Llegat**: només el motor heretat (el motor anterior no basat en la xarxa "
+"neuronal)."
 
 #: ../../post_processing/ocrtext_converter.rst:58
 msgid ""
 "**LSTM**: Neural network LSTM (Long Short-Term Memory deep-learning) engine "
 "only."
 msgstr ""
+"**LSTM**: només el motor de xarxa neuronal LSTM (aprenentatge profund de "
+"memòria a llarg i curt termini)."
 
 #: ../../post_processing/ocrtext_converter.rst:59
 msgid "**Legacy + LSTM**: Both legacy and LSTM engines will be used."
-msgstr ""
+msgstr "**Llegat + LSTM**: s'utilitzaran els motors heretat i LSTM."
 
 #: ../../post_processing/ocrtext_converter.rst:60
 msgid ""
 "**Default**: Default value. Let Tesseract choose the best engine based on "
 "what is available."
 msgstr ""
+"**Predeterminat**: és el valor predeterminat. Es deixa que el Tesseract "
+"esculli el millor motor en funció del que hi ha disponible."
 
 #: ../../post_processing/ocrtext_converter.rst:62
 msgid ""
 "The **Resolution Dpi** settings specify the resolution as Dot Per Inch (DPI) "
 "for the input images."
 msgstr ""
+"Les opcions de configuració de **Resolució ppp** especifiquen la resolució "
+"com a punts per polzada (PPP) per a les imatges d'entrada."
 
 #: ../../post_processing/ocrtext_converter.rst:64
 msgid ""
 "If the **Use Multi-cores** setting is enabled, files from the list will be "
 "processed in parallel with Tesseract."
 msgstr ""
+"Si està activada l'opció de configuració **Usa múltiples nuclis**, els "
+"fitxers de la llista es processaran en paral·lel amb el Tesseract."
 
 #: ../../post_processing/ocrtext_converter.rst:66
 msgid ""
@@ -213,18 +274,25 @@ msgid ""
 "recognized by Tesseract while processing images. Possible choices are listed "
 "below:"
 msgstr ""
+"**Emmagatzema el resultat a:** especificarà on col·locar el contingut del "
+"text reconegut pel Tesseract mentre processa les imatges. Les opcions "
+"possibles es llisten a continuació:"
 
 #: ../../post_processing/ocrtext_converter.rst:68
 msgid ""
 "**Text file**: Store OCR result in a separate text file in the same "
 "directory as the processed image."
 msgstr ""
+"**Fitxer de text**: emmagatzemarà el resultat de l'OCR en un fitxer de text "
+"separat en el mateix directori que la imatge processada."
 
 #: ../../post_processing/ocrtext_converter.rst:69
 msgid ""
 "**Metadata**: Store OCR result in alternative-language XMP tag from image "
 "metadata."
 msgstr ""
+"**Metadades**: emmagatzemarà el resultat de l'OCR en una etiqueta XMP "
+"d'idioma alternatiu en les metadades de la imatge."
 
 #: ../../post_processing/ocrtext_converter.rst:71
 msgid ""
@@ -235,6 +303,14 @@ msgid ""
 "**Store result in** setting. See :ref:`this page from the manual "
 "<spellcheck_settings>` for more details about the **Localize Settings**."
 msgstr ""
+"A la part inferior d'aquesta vista, el resultat de l'OCR es pot traduir a "
+"idiomes diferents utilitzant un motor de traducció en línia. Podreu "
+"configurar més d'un idioma de traducció per a processar les imatges. Les "
+"traduccions corresponents s'allotjaran en fitxers de text separats o en "
+"entrades de metadades addicionals segons l'opció de configuració "
+"**Emmagatzema el resultat a:**. Per a obtenir més detalls sobre la "
+"**Configuració de la traducció**, vegeu :ref:`aquesta pàgina "
+"<spellcheck_settings>` del manual."
 
 #: ../../post_processing/ocrtext_converter.rst:73
 msgid ""
@@ -245,6 +321,13 @@ msgid ""
 "manual <localize_settings>` for more details about the **Spell-Checking "
 "Settings**."
 msgstr ""
+"La pestanya **Revisió del text** a la part dreta permet editar el resultat "
+"de l'OCR per a cada imatge processada amb el Tesseract. Seleccioneu un "
+"element de la llista en el costat esquerre i el resultat de l'OCR es "
+"mostrarà en un editor de text. Si cal podreu corregir el text o aplicar la "
+"revisió ortogràfica. Per a obtenir més detalls sobre la **Configuració del "
+"corrector ortogràfic**, vegeu :ref:`aquesta pàgina <localize_settings>` del "
+"manual."
 
 #: ../../post_processing/ocrtext_converter.rst:75
 msgid ""
@@ -254,6 +337,12 @@ msgid ""
 "Finally, the **Close** button will stop all OCR processes if any and close "
 "the dialog."
 msgstr ""
+"A la part inferior del diàleg, el botó **Predeterminat** permet restablir "
+"totes les opcions de configuració als valors predeterminats. El botó "
+"desplegable **Inicia l'OCR** permet el processament de les imatges "
+"seleccionades des de la llista o de tots els elements. Finalment, el botó "
+"**Tanca** aturarà tots els processos de l'OCR, si n'hi ha cap, i tancarà el "
+"diàleg."
 
 #: ../../post_processing/ocrtext_converter.rst:81
 msgid ""
