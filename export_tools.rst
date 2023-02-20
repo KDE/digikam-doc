@@ -1,6 +1,6 @@
 .. meta::
    :description: Export Items From Your Collections To External Media
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, export, flickr, google, mediawiki, inaturalist, twitter, pinterest, dropbox
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, export, flickr, google, mediawiki, inaturalist, twitter, pinterest, dropbox, box, onedrive
 
 .. metadata-placeholder
 
@@ -32,3 +32,4 @@ This section explain how to use the digiKam export tools.
    export_tools/pinterest_export.rst
    export_tools/dropbox_export.rst
    export_tools/box_export.rst
+   export_tools/one_drive.rst
