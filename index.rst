@@ -718,6 +718,10 @@ Export Tools
 
         :ref:`imgur_export`
 
+    .. container:: tile no-descr
+
+        :ref:`pinterest_export`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

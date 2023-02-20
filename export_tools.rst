@@ -1,6 +1,6 @@
 .. meta::
    :description: Export Items From Your Collections To External Media
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, export, flickr, google, mediawiki, inaturalist, twitter
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, export, flickr, google, mediawiki, inaturalist, twitter, pinterest
 
 .. metadata-placeholder
 
@@ -29,3 +29,4 @@ This section explain how to use the digiKam export tools.
    export_tools/inaturalist_export.rst
    export_tools/twitter_export.rst
    export_tools/imgur_export.rst
+   export_tools/pinterest_export.rst
