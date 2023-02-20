@@ -31,3 +31,4 @@ This section explain how to use the digiKam export tools.
    export_tools/imgur_export.rst
    export_tools/pinterest_export.rst
    export_tools/dropbox_export.rst
+   export_tools/box_export.rst

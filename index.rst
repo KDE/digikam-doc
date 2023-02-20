@@ -726,6 +726,10 @@ Export Tools
 
         :ref:`dropbox_export`
 
+    .. container:: tile no-descr
+
+        :ref:`box_export`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

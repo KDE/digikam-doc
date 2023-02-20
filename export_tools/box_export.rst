@@ -1,6 +1,6 @@
 .. meta::
-   :description: digiKam Export to Dropbox Web-Service
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, dropbox, export
+   :description: digiKam Export to Box Web-Service
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, box, export
 
 .. metadata-placeholder
 
@@ -8,10 +8,10 @@
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
-.. _dropbox_export:
+.. _box_export:
 
-Export To Dropbox
-=================
+Export To Box
+=============
 
 .. contents::
 
