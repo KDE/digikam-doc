@@ -19,7 +19,7 @@ Export To iNaturalist
 
 The iNaturalist platform is based on crowd-sourcing of observations and identifications. An iNaturalist **observation** records a person's encounter with an individual organism at a particular time and place.
 
-To upload observation shots from your collection to the remote iNaturalist server using the Internet, uses the :menuselection:`Export --> Export to iNaturalist` :kbd:`Ctrl+Alt+Shift+N` menu entry, or the corresponding icon from the **Tools** tab in Right Sidebar.
+To upload observation shots from your collections to the remote iNaturalist server using the Internet, uses the :menuselection:`Export --> Export to iNaturalist` :kbd:`Ctrl+Alt+Shift+N` menu entry, or the corresponding icon from the **Tools** tab in Right Sidebar.
 
 .. important::
 

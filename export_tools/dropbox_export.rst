@@ -17,9 +17,9 @@ Export To Dropbox
 
 This tool allows the user to upload photos to the Dropbox web-service.
 
-`Dropbox <https://en.wikipedia.org/wiki/Pinterest>`_ is a file hosting service that offers cloud storage, file synchronization, personal cloud, and client software..
+`Dropbox <https://en.wikipedia.org/wiki/Dropbox>`_ is a file hosting service that offers cloud storage, file synchronization, personal cloud, and client software.
 
-The tool can be used to upload a selection of images from your collection to the remote Dropbox server using the Internet.
+The tool can be used to upload a selections of images from your collection to the remote Dropbox server using the Internet.
 
 When accessing the tool for the first time by the :menuselection:`Export --> Export to Dropbox` :kbd:`Ctrl+Alt+Shift+D` menu entry, you are taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched you will log in to Dropbox:
 

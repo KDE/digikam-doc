@@ -19,7 +19,7 @@ Sharing is caring, and there is probably no better way to share your photographi
 
 MediaWiki are the base of `Media Repositories <https://en.wikipedia.org/wiki/Digital_library>`_ available on the Internet where free-to-use images can be uploaded. The goal of these digital libraries is to share contents used across all of the Wikimedia projects as the famous **Wikipedia** encyclopedia for example.
 
-To upload a selection of images from your collection to a remote MediaWiki server using the Internet, use the :menuselection:`Export --> Export to MediaWiki` menu entry, or the corresponding icon from the **Tools** tab in Right Sidebar. 
+To upload a selection of images from your collections to a remote MediaWiki server using the Internet, use the :menuselection:`Export --> Export to MediaWiki` menu entry, or the corresponding icon from the **Tools** tab in Right Sidebar. 
 
 .. figure:: images/export_media_wiki.webp
     :alt:

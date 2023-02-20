@@ -19,7 +19,7 @@ This tool allows the user to upload photos to the Imgur web-service.
 
 `Imgur <https://en.wikipedia.org/wiki/Imgur>`_ is an online image sharing and image hosting service with a focus on social gossip.
 
-The tool can be used to upload a selection of images from your collection to the remote Imgur server using the Internet. Files transfer can be anonymous or connected with an account.
+The tool can be used to upload a selection of images from your collections to the remote Imgur server using the Internet. Files transfer can be anonymous or connected with an account.
 
 When accessing the tool for the first time by the :menuselection:`Export --> Export to Imgur` menu entry, this dialog will appear:
 

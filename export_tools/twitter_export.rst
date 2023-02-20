@@ -19,7 +19,7 @@ This tool allows the user to upload photos to the Twitter social network.
 
 `Twitter <https://en.wikipedia.org/wiki/Twitter>`_ is an online social media and social networking service. Users can send and respond publicly or privately texts, images and videos known as *tweets*. Publication are publicly visible by default, but senders can restrict message delivery to only their followers. Twitter supports photo-sharing service that enables users to upload a photo and attach it to a tweet.
 
-The tool can be used to upload and tweet a selection of images from your collection to the remote Twitter server using the Internet.
+The tool can be used to upload and tweet a selection of images from your collections to the remote Twitter server using the Internet.
 
 When accessing the tool for the first time by the :menuselection:`Export --> Export to Twitter` menu entry, you are taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched you will log in to Twitter:
 

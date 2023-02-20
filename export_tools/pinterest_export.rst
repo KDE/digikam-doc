@@ -19,7 +19,7 @@ This tool allows the user to upload photos to the Pinterest social network.
 
 `Pinterest <https://en.wikipedia.org/wiki/Pinterest>`_ is an image sharing and social media service designed to enable saving and discovery of information on the internet using images, and on a smaller scale, animated images and videos, in the form of pin-boards.
 
-The tool can be used to upload and tweet a selection of images from your collection to the remote Pinterest server using the Internet.
+The tool can be used to upload and tweet a selection of images from your collections to the remote Pinterest server using the Internet.
 
 When accessing the tool for the first time by the :menuselection:`Export --> Export to Pinterest` :kbd:`Ctrl+Alt+Shift+I` menu entry, you are taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched you will log in to Pinterest:
 
