@@ -17,7 +17,7 @@ Export To Twitter
 
 This tool allows the user to upload photos to the Twitter social network.
 
-`Twitter <https://en.wikipedia.org/wiki/Twitter>`_  is an online social media and social networking service. Users can send and respond publicly or privately texts, images and videos known as *tweets*. Publication are publicly visible by default, but senders can restrict message delivery to only their followers. Twitter supports photo-sharing service that enables users to upload a photo and attach it to a tweet.
+`Twitter <https://en.wikipedia.org/wiki/Twitter>`_ is an online social media and social networking service. Users can send and respond publicly or privately texts, images and videos known as *tweets*. Publication are publicly visible by default, but senders can restrict message delivery to only their followers. Twitter supports photo-sharing service that enables users to upload a photo and attach it to a tweet.
 
 The tool can be used to upload and tweet a selection of images from your collection to the remote Twitter server using the Internet.
 
