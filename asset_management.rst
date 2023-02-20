@@ -16,7 +16,7 @@ Digital Asset Management
 .. figure:: images/index_asset_management.webp
     :alt:
 
-This section explain how to apply a digital Asset Management (DAM) in digiKam.
+This section explain how to apply a digital Asset Management (DAM) in digiKam and how to organize your files to optimize searches in collections.
 
 .. toctree::
    :maxdepth: 2
