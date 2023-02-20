@@ -722,6 +722,10 @@ Export Tools
 
         :ref:`pinterest_export`
 
+    .. container:: tile no-descr
+
+        :ref:`dropbox_export`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
