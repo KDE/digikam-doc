@@ -21,7 +21,7 @@ This tool allows the user to upload photos to the Imgur web-service.
 
 The tool can be used to upload a selection of images from your collection to the remote Imgur server using the Internet. Files transfer can be anonymous or connected with an account.
 
-When accessing the tool for the first time by the :menuselection:`Export --> Export to Imgur` menu entry, This dialog will appears:
+When accessing the tool for the first time by the :menuselection:`Export --> Export to Imgur` menu entry, this dialog will appear:
 
 .. figure:: images/export_imgur_dialog.webp
     :alt:
@@ -31,7 +31,7 @@ When accessing the tool for the first time by the :menuselection:`Export --> Exp
 
 You can directly upload contents without to be connected with an account using **Upload Anonymously** button. By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
 
-To be connected with an account, press **Upload** button, you will be taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched you will log in to Twitter:
+To be connected with an account, press **Upload** button, you will be taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched you will log in to Imgur:
 
 .. figure:: images/export_imgur_authorize.webp
     :alt:
