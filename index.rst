@@ -734,6 +734,10 @@ Export Tools
 
         :ref:`one_drive`
 
+    .. container:: tile no-descr
+
+        :ref:`smugmug_export`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

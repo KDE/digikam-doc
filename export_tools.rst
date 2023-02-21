@@ -33,3 +33,4 @@ This section explain how to use the digiKam export tools.
    export_tools/dropbox_export.rst
    export_tools/box_export.rst
    export_tools/one_drive.rst
+   export_tools/smugmug_export.rst

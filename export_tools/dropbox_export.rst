@@ -31,7 +31,6 @@ When accessing the tool for the first time by the :menuselection:`Export --> Exp
 
 After successful sign-up digiKam will be allowed to send photos to the Dropbox website. You will be presented with the following page:
 
-
 .. figure:: images/export_dropbox_authorize.webp
     :alt:
     :align: center
