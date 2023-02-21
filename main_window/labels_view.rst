@@ -19,7 +19,7 @@ Labels View
 
     The digiKam Labels View from Left Sidebar
 
-The Labels View allows you to select photographs by the **Rating**, **Pick Labels** and **Color labels** you assigned to them previously either by using:
+The Labels View allows you to select photographs by the **Rating**, **Pick** and **Color** Labels you assigned to them previously either by using:
 
     - The context menu of a thumbnail.
 
@@ -49,4 +49,4 @@ You may select more than one label by :kbd:`Ctrl+left` click. The selected label
 
     The **Pick Labels** properties can be assigned automatically using the deep-learning tool **Image Quality Sorter** by analysis the aesthetic score of items. See this :ref:`Maintenance Tool section <maintenance_quality>` for details.
 
-The **Rating** and **Color Labels** can be used to sort items from your collection during your asset management workflow. See :ref:`this section <rating_ranking>` for details.
+The **Rating** and **Color** Labels can be used to sort items from your collection during your asset management workflow. See :ref:`this section <rating_ranking>` for details.

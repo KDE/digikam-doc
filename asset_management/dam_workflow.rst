@@ -31,7 +31,7 @@ DAM Workflow
         :alt:
         :align: center
 
-        Applying Labels to Items Using Captions Tab From Right Side-Bar
+        Applying Labels to Items Using Captions Tab from Right Sidebar
 
 - Make a backup e.g. on external drive, and optical medium, or a tape.
 
@@ -41,7 +41,7 @@ DAM Workflow
         :alt:
         :align: center
 
-        Applying Descriptions to Items Using Captions Tab From Right Side-Bar
+        Applying Descriptions to Items Using Captions Tab from Right Sidebar
 
 - Edit and improve photographs.
 

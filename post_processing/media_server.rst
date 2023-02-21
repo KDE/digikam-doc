@@ -17,7 +17,7 @@ Media Server
 
 DLNA Media-Server is used to automatically export digiKam photos through the local network to other `DLNA-compliant devices <https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance>`_ like smart phones, TV, and tablets.
 
-To start the media-server, head to the **Tools** tab from the **Right Side-bar**. You will find the **Share with DLNA** icon on the list. You can also start it from the :menuselection:`Tools --> Share with DLNA` menu entry. The media-server window will open as follows: 
+To start the media-server, head to the **Tools** tab from the **Right Sidebar**. You will find the **Share with DLNA** icon on the list. You can also start it from the :menuselection:`Tools --> Share with DLNA` menu entry. The media-server window will open as follows:
 
 .. figure:: images/dlna_media_server.webp
     :alt:

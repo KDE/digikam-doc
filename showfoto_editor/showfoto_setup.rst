@@ -82,7 +82,7 @@ Miscellaneous
 
 The Showfoto **Miscellaneous** settings page is less complex :ref:`than digiKam <miscs_settings>`, but **SpellCheck** and **Localize** tabs are exactly the same. The **Grouping** tab present in digiKam does not exist in Showfoto due to the lack of database support. The differences are located mostly in tabs listed below:
 
-    - In **Behaviour** tab, Showfoto propose some options to **Sort Order** the icon-views as the **Thumbbar** and list-view available in **Folders** and **Stack** tabs from left side-bar. Information show as overlay with **Thumbbar** can be also customized. The **Updates** view to checkout new program version is exactly the same than digiKam.
+    - In **Behaviour** tab, Showfoto propose some options to **Sort Order** the icon-views as the **Thumbbar** and list-view available in **Folders** and **Stack** tabs from left sidebar. Information show as overlay with **Thumbbar** can be also customized. The **Updates** view to checkout new program version is exactly the same than digiKam.
 
     .. figure:: images/showfoto_setup_misc_behaviour.webp
         :alt:
