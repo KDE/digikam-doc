@@ -35,5 +35,6 @@ This section explain how to use the digiKam export tools.
    export_tools/one_drive.rst
    export_tools/smugmug_export.rst
    export_tools/image_shack.rst
+   export_tools/piwigo_export.rst
    export_tools/remote_export.rst
    export_tools/local_export.rst

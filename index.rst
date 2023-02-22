@@ -744,6 +744,10 @@ Export Tools
 
     .. container:: tile no-descr
 
+        :ref:`piwigo_export`
+
+    .. container:: tile no-descr
+
         :ref:`remote_export`
 
     .. container:: tile no-descr
