@@ -36,7 +36,7 @@ Instead to use **Target Location** url editor, you can use the native desktop ur
 
 .. note::
 
-    The native url selector dialog is only available is you turn on the right option from the **Misc/Appearance** section of the configuration panel.
+    The native url selector dialog is only available is you turn on the right option from the **Misc/Appearance** section of the :ref:`configuration panel <appearance_settings>`.
 
 By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
 
