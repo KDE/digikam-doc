@@ -71,7 +71,7 @@ If the **Resize photos before uploading** option is selected, the photos will be
 
     The Flickr Export Uploading in Progress
 
-Press **Start Uploading** button to transfer items. You can click on the **Close** button to abort the uploading of photos.
+Press **Start Uploading** button to transfer items. You can click on the **Cancel** button to abort the uploading of photos.
 
 Finally, you can view the uploaded photos by visiting the Flickr website.
 
