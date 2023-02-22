@@ -294,6 +294,10 @@ Import Tools
 
         :ref:`scanner_import`
 
+    .. container:: tile no-descr
+
+        :ref:`remote_import`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
