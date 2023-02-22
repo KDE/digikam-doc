@@ -26,7 +26,7 @@ This tool allows to upload files from your collections to a remote computer usin
     - **fish://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using SSH protocol (Secure SHell).
     - **ftp://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using FTP protocol (File Transfer Protocol).
 
-Instead to use **Target Location** url editor, you can use the native desktop url selector pressing **Select Export Location**. A dialog as below must appears where you can see the discovered remote devices selecting the network section:
+Instead to use **Target Location** url editor, you can use the native desktop url selector pressing **Select Export Location**. A dialog as below must appear where you can see the discovered remote devices selecting the network section:
 
 .. figure:: images/export_remote_url_selector.webp
     :alt:
@@ -36,7 +36,7 @@ Instead to use **Target Location** url editor, you can use the native desktop ur
 
 .. note::
 
-    The native url selector dialog is only available is you turn on the right option from the **Misc/Appearance** section of the :ref:`configuration panel <appearance_settings>`.
+    The native url selector dialog is only available if you turn on the right option from the **Misc/Appearance** section of the :ref:`configuration panel <appearance_settings>`.
 
 By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
 
