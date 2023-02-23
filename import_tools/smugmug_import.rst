@@ -43,10 +43,8 @@ Then, simply authorize application and close the web browser. Return to the host
 
     The SmugMug Import Tool Dialog
 
-By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
+With the **Album** options, you can select the online folder to get files to download. You can **Reload** the list on the combo-box if online contents have been changed in SmugMug web interface.
 
-With the **Album** options, you can select the online folder to store files to upload. You can **Create** new one and **Reload** the list on the combo-box if online contents have been changed in SmugMug web interface.
+Below, the main dialog propose the hierarchy of physical **Albums** from your collection. Selected one target entry to import files, or if you want a new one, just press **New Album** button to create a nested entry in the tree-view.
 
-If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to SmugMug. The values will be read from the **JPEG quality** and **Maximum Dimension** settings, which can be used to adjust the maximum height and the compression. The width calculation will be done so as to have the aspect ratio conserved.
-
-Press **Start Upload** button to transfer items. You can click on the **Cancel** button to abort the uploading of photos.
+Press **Start Download** button to transfer items. You can click on the **Close** button to abort the uploading of photos.

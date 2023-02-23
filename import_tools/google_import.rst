@@ -60,10 +60,8 @@ The download dialog for **Google Photo** web-service is presented below:
 
     The Google Photo Import Dialog
 
-By default, the tools proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
-
 With the **Album** options, you can select the online folder to get files to download. You can **Reload** the list on the combo-box if online contents have been changed in Google web interface.
 
 Below, the main dialog propose the hierarchy of physical **Albums** from your collection. Selected one target entry to import files, or if you want a new one, just press **New Album** button to create a nested entry in the tree-view.
 
-Press **Start Donload** button to transfer items. You can click on the **Close** button to abort the uploading of photos.
+Press **Start Download** button to transfer items. You can click on the **Close** button to abort the uploading of photos.
