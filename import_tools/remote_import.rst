@@ -17,7 +17,7 @@ Import from Remote Computer
 
 This tool allows to download files from a remote computer to your collections using network. It available from the :menuselection:`Import --> Import from remote storage` :kbd:`Alt+Shift+K` menu entry or the corresponding icon from the **Tools** tab in Right Sidebar.
 
-.. figure:: images/remote_import_dialog.webp
+.. figure:: images/import_remote_dialog.webp
     :alt:
     :align: center
 
@@ -25,7 +25,7 @@ This tool allows to download files from a remote computer to your collections us
 
 To choose files to import press **Select Import Location**, a native desktop urls selector as below must appear where you can see the discovered remote devices selecting the network section:
 
-.. figure:: images/remote_import_selection.webp
+.. figure:: images/import_remote_selection.webp
     :alt:
     :align: center
 

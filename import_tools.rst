@@ -1,6 +1,6 @@
 .. meta::
    :description: How to Import New Items in Your Collections With digiKam
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, import, camera, scanner, remote, computer, import
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, import, camera, scanner, remote, computer, import, google
 
 .. metadata-placeholder
 
@@ -28,3 +28,4 @@ This section explain how to import new items in the digiKam collections.
    import_tools/advanced_import.rst
    import_tools/scanner_import.rst
    import_tools/remote_import.rst
+   import_tools/google_import.rst

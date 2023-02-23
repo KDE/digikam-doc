@@ -1,6 +1,6 @@
 .. meta::
-   :description: digiKam Export to Google Web-Service
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, google, export
+   :description: digiKam Impport from Google Web-Service
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, google, impport
 
 .. metadata-placeholder
 
@@ -8,30 +8,28 @@
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
-.. _google_export:
+.. _google_impport:
 
-Export To Google
-================
+Import from Google
+==================
 
 .. contents::
 
 Overview
 --------
 
-This tool allows the user to upload photos to the Google web services. Two online applications are supported: `Google Photo <https://en.wikipedia.org/wiki/Google_Photos>`_ and `Google Drive <https://en.wikipedia.org/wiki/Google_Drive>`_.
+This tool allows the user to upload photos to the `Google Photo <https://en.wikipedia.org/wiki/Google_Photos>`_ web services.
 
 **Google Photos** is a photo sharing which automatically analyzes photos, identifying various visual features and subjects. Users can search for anything in photos including faces and group similar ones together.
 
-**Google Drive** allows users to store files in the cloud, synchronize files across devices, and share files. Users can change privacy settings for individual files and can search for a content by describing its visuals, and use natural language to find specific files.
-
-The tools can be used to upload an image collections from your computer to the remote Google server using the Internet. Use respectively the :menuselection:`Export --> Export to Google Photo` :kbd:`Ctrl+Alt+Shift+P` and by the :menuselection:`Export --> Export to Google Drive` :kbd:`Ctrl+Alt+Shift+D` menu entries to access to these tools, or uses the icons from **Tools** in Right sidebar.
+The tool can be used to download files the remote Google server to the image collections on your computer using the Internet. Use the :menuselection:`Import --> Impport from Google Photo` :kbd:`Alt+Shift+P` menu entry to access to this tool, or uses the icon from **Tools** in Right sidebar.
 
 Login to your Account
 ---------------------
 
 When accessing the tool for the first time you are taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched you will log in to Google:
 
-.. figure:: images/export_google_login.webp
+.. figure:: images/import_google_login.webp
     :alt:
     :align: center
 
@@ -39,7 +37,7 @@ When accessing the tool for the first time you are taken through the process of 
 
 After successful signup digiKam will be allowed to send photos to the Google website. You will be presented with the following page on successful signup:
 
-.. figure:: images/export_google_authorize.webp
+.. figure:: images/import_google_authorize.webp
     :alt:
     :align: center
 
@@ -54,19 +52,13 @@ Then, simply authorize application and close the web browser. Return to the host
 Upload to your Account
 ----------------------
 
-The upload dialogs for **Google Photo** and **Google Drive** uses mostly the same interface:
+The download dialog for **Google Photo** web-service:
 
-.. figure:: images/export_google_photo.webp
+.. figure:: images/import_google_photo_dialog.webp
     :alt:
     :align: center
 
-    The Google Photo Export Dialog
-
-.. figure:: images/export_google_drive.webp
-    :alt:
-    :align: center
-
-    The Google Drive Export Dialog
+    The Google Photo Import Dialog
 
 By default, the tools proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
 
@@ -76,24 +68,4 @@ If the **Resize photos before uploading** option is selected, the photos will be
 
 With **Google Photo** uploader, a special option is available to **Write the photo ID to the source image**. The identification number used to upload to your Google account will be recorded in the XMP metadata from file in your collection.
 
-.. figure:: images/export_google_progress.webp
-    :alt:
-    :align: center
-
-    The Google Export Uploading in Progress
-
 Press **Start Upload** button to transfer items. You can click on the **Close** button to abort the uploading of photos.
-
-Finally, you can view the uploaded photos by visiting the Google websites.
-
-.. figure:: images/export_google_photo_stream.webp
-    :alt:
-    :align: center
-
-    The Google Photo Online Account Displaying the Uploaded Contents
-
-.. figure:: images/export_google_drive_stream.webp
-    :alt:
-    :align: center
-
-    The Google Drive Online Account Displaying the Uploaded Contents

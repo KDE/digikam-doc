@@ -298,6 +298,10 @@ Import Tools
 
         :ref:`remote_import`
 
+    .. container:: tile no-descr
+
+        :ref:`google_import`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
