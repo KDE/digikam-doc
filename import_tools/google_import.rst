@@ -8,7 +8,7 @@
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
-.. _google_impport:
+.. _google_import:
 
 Import from Google
 ==================
