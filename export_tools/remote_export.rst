@@ -15,13 +15,15 @@ Export To Remote Computer
 
 .. contents::
 
+This tool allows to upload files from your collections to a remote computer using network. It available from the :menuselection:`Export --> Export to remote storage` :kbd:`Ctrl+Alt+Shift+K` menu entry or the corresponding icon from the **Tools** tab in Right Sidebar.
+
 .. figure:: images/export_remote_dialog.webp
     :alt:
     :align: center
 
     The Export to Remote Computer Dialog
 
-This tool allows to upload files from your collections to a remote computer using network. Protocols as **fish** (ssh), **ftp**, **smb**, etc, can be used in connection from **Target Location** url editor. For example:
+Protocols as **fish** (ssh), **ftp**, **smb**, etc, can be used in connection from **Target Location** url editor. For example:
 
     - **fish://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using SSH protocol (Secure SHell).
     - **ftp://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using FTP protocol (File Transfer Protocol).

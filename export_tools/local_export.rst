@@ -15,13 +15,13 @@ Export To Local Computer
 
 .. contents::
 
+This tool allows to copy files from your collections to another place on your computer. File properties can be changed if desired. It available from the :menuselection:`Export --> Export to local storage` :kbd:`Ctrl+Alt+Shift+L` menu entry or the corresponding icon from the **Tools** tab in Right Sidebar.
+
 .. figure:: images/export_local_dialog.webp
     :alt:
     :align: center
 
     The Export to Local Computer Dialog
-
-This tool allows to copy files from your collections to another place on your computer. File properties can be changed if desired.
 
 The **Target location** text field allows to set the target path where file will be copied. The **Browse** button will show a file selection dialog to navigate on your computer folder hierarchy and help to select the right directory.
 
