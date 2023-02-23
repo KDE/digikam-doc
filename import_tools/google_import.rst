@@ -1,5 +1,5 @@
 .. meta::
-   :description: digiKam Impport from Google Web-Service
+   :description: digiKam Import from Google Web-Service
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, google, impport
 
 .. metadata-placeholder
@@ -49,10 +49,10 @@ Then, simply authorize application and close the web browser. Return to the host
 
     When the tool is invoked for second time, it will remember the previous account automatically.
 
-Upload to your Account
-----------------------
+Download from your Account
+--------------------------
 
-The download dialog for **Google Photo** web-service:
+The download dialog for **Google Photo** web-service is presented below:
 
 .. figure:: images/import_google_photo_dialog.webp
     :alt:
@@ -62,10 +62,8 @@ The download dialog for **Google Photo** web-service:
 
 By default, the tools proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
 
-With the **Album** options, you can select the online folder to store files to upload. You can **Create** new one and **Reload** the list on the combo-box if online contents have been changed in Google web interface.
+With the **Album** options, you can select the online folder to get files to download. You can **Reload** the list on the combo-box if online contents have been changed in Google web interface.
 
-If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to Google. The values will be read from the **Maximum Dimension** combo-box, which can be used to adjust the maximum height. The width calculation will be done so as to have the aspect ratio conserved.
+Below, the main dialog propose the hierarchy of physical **Albums** from your collection. Selected one target entry to import files, or if you want a new one, just press **New Album** button to create a nested entry in the tree-view.
 
-With **Google Photo** uploader, a special option is available to **Write the photo ID to the source image**. The identification number used to upload to your Google account will be recorded in the XMP metadata from file in your collection.
-
-Press **Start Upload** button to transfer items. You can click on the **Close** button to abort the uploading of photos.
+Press **Start Donload** button to transfer items. You can click on the **Close** button to abort the uploading of photos.

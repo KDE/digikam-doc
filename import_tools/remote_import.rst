@@ -42,6 +42,6 @@ In this dialog, you can use the protocols as **fish** (ssh), **ftp**, **smb**, e
 
 After selecting the files to import and closing the native desktop urls selector, these ones must appear to main dialog in the list below **Select import location** button.
 
-Below this list of files, the main dialog propose the hierarchy of physical **Albums** form your collection. Selection one target entry to import files, or if you want a new one, just press **New Album** button to create a nested entry in the tree-view. 
+Below this list of files, the main dialog propose the hierarchy of physical **Albums** from your collection. Selected one target entry to import files, or if you want a new one, just press **New Album** button to create a nested entry in the tree-view.
 
 When you select right target album to download files, press **Start Import** button to process files. You can abort operation pressing **Close** button.
