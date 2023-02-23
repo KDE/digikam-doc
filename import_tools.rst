@@ -29,3 +29,4 @@ This section explain how to import new items in the digiKam collections.
    import_tools/scanner_import.rst
    import_tools/remote_import.rst
    import_tools/google_import.rst
+   import_tools/smugmug_import.rst

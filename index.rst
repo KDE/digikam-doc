@@ -302,6 +302,10 @@ Import Tools
 
         :ref:`google_import`
 
+    .. container:: tile no-descr
+
+        :ref:`smugmug_import`
+
 .. toctree::
    :maxdepth: 2
    :hidden:
