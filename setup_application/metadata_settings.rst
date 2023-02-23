@@ -138,7 +138,7 @@ For each category you can set the read and write behavior in metadata. The defau
 
     The digiKam Advanced Metadata Settings For the **Caption** Category
 
-On this example, the top **Caption* entry in the list is **Xmp.dc.description**, and it will be read by digiKam first. If it contains a valid value it will be used, otherwise the next entry named **Xmp.exif.UserComment**, etc. The entries list priority is high on the top and low on the bottom. The entry in the list are used only if item is enabled with the checkbox preceding the name.
+On this example, the top **Caption** entry in the list is **Xmp.dc.description**, and it will be read by digiKam first. If it contains a valid value it will be used, otherwise the next entry named **Xmp.exif.UserComment**, etc. The entries list priority is high on the top and low on the bottom. The entry in the list are used only if item is enabled with the checkbox preceding the name.
 
 With the buttons on the right side, you can customize the list:
 

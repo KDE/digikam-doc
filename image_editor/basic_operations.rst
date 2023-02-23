@@ -45,7 +45,7 @@ You can zoom in and out of a photograph using the **Ctrl-scroll** wheel, the too
 
 To make a photograph fit the window use the **Zoom Autofit** button from the tool bar.
 
-:menuselection:`View --> Full Screen Mode` will display the photograph using the full screen mode. You can move back to the normal view by pressing the **Esc** key. By default the toolbar is still displayed even in Full Screen Mode. If you would prefer that the toolbar is not displayed you can turn it off in the Configure digiKam dialog accessed from the main digiKam window, see the :ref:`Setup Image Editor Window <editor_settings>` section.
+:menuselection:`View --> Full Screen Mode` will display the photograph using the full screen mode. You can move back to the normal view by pressing the :kbd:`Esc` key. By default the toolbar is still displayed even in Full Screen Mode. If you would prefer that the toolbar is not displayed you can turn it off in the Configure digiKam dialog accessed from the main digiKam window, see the :ref:`Setup Image Editor Window <editor_settings>` section.
 
 Printing Images
 ---------------
