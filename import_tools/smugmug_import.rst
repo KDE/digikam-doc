@@ -19,7 +19,7 @@ This tool allows the user to download photos from the SmugMug web-service.
 
 `SmugMug <https://en.wikipedia.org/wiki/SmugMug>`_ is an image sharing, image hosting service, and online video platform on which users can upload photos and videos. The company also facilitates the sale of digital and print media for amateur and professional photographers.
 
-The tool can be used to download files from the remote SmugMug server to the image collections on your computer using the Internet. Use the :menuselection:`Import --> Import from SmugMug` :kbd:`Alt+Shift+S` menu entry to access to this tool, or uses the icon from **Tools** in Right Sidebar. You will be taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched you will log in to SmugMug:
+The tool can be used to download files from the remote SmugMug server to the image collections on your computer using the Internet. Use the :menuselection:`Import --> Import from SmugMug` :kbd:`Alt+Shift+S` menu entry to access to this tool, or use the icon from the **Tools** tab in the Right Sidebar. You will be taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched to help you logging in to SmugMug:
 
 .. figure:: images/import_smugmug_login.webp
     :alt:
