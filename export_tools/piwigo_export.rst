@@ -48,7 +48,9 @@ The first stage to export content is to obtaining a token which is used for auth
 
     If you have been already logged to a Piwigo web-service in a previous session, the tool will remember the settings and use it automatically.
 
-After successful sign-up digiKam will be allowed to send photos to the Piwigo website. With the **Remote Album** view, you must select the online folder to store files to upload.
+After successful sign-up digiKam will be allowed to send photos to the Piwigo website. With the **Remote Album** view, you must select the online folder to store files to upload. You can **Reload** the list if online contents have been changed in Piwigo web interface.
+
+By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
 
 If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to Piwigo. The values will be read from the **JPEG quality**, **Maximum width** and **Maximum height** settings, which can be used to adjust the maximum sizes and the compression. The size calculation will be done so as to have the aspect ratio conserved.
 
