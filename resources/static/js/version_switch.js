@@ -6,7 +6,9 @@
 "use strict";
 
 // NOTE: enable more languages in dropbox selector from HTML target by disabling corresponding lines.
-//       English is always enabled
+//       English is always enabled and must be the first on the list. For the rest, respect alphabetic order.
+//       The language code can be found in this wikipedia page: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+//       The description of language code must encode special character using entity reference for HTML: https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references 
 //       Other languages must be listed in locale/ sub-directory from root directory of this git repository.
 //       All changes from this list must be also applied to the docs-digikam-org section from the JSON config file in binary-factory-tooling repository
 //       https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json
@@ -26,6 +28,7 @@ var all_langs = {
     //"ja": "&#x65E5;&#x672C;&#x8A9E;",
     //"ko": "&#xD55C;&#xAD6D;&#xC5B4;",
     //"nb": "Norsk Bokm&#x00E5;l",
+    "lt": "Lietuvi&uogon; kalba",
     "nl": "‎Nederlands",
     //"pl": "Polski",
     //"pt_BR": "Portugu&ecirc;s (Brazil)",
