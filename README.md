@@ -56,7 +56,7 @@ corresponding to the handbook sections. The root entry of the manual is [index.r
 
 Each handbook section start with a .rst file from top level directory and a dedicated
 sub-directory with the same name including chapters .rst files, a nested **images** sub-directory to host
-screen-shots, taken in WEBP format, and a nested **videos** sub-directory to host screen-casts in animated Gif format.
+screen-shots, taken in WEBP format, and a nested **videos** sub-directory to host screen-casts in animated WEBP format.
 
 For example, the **getting_started** section will be organized like this:
 
@@ -444,14 +444,14 @@ The [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines
 
 ## Continous Deployement
 
-This documentation is automatically updated online (including translations) at each changes passing the CI.
+This documentation is automatically updated online (including translations) at each changes passing the Continuous Integration (CI).
 
 If the compilation of the internationalized versions can be completed with the Continuous Deployment workflow,
 you can show a translated version of this documentation by selecting a language from the left side of the publication page.
 
 ## Convert EPUB to PDF
 
-Sphinx allows to generate PDF using Latex engine in background, but thid converter as several limitations, as the non support of WEBP and GIF formats used for screenshots and screen-casts.
+Sphinx allows to generate PDF using Latex engine in background, but this converter as several limitations, as the non support of WEBP format used for screenshots and screen-casts.
 
 An alternative is to install [Calibre](https://calibre-ebook.com/) and to convert the EPUB target to PDF like this:
 
