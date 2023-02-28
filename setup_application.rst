@@ -40,4 +40,5 @@ This section explain how to setup application.
    setup_application/miscs_settings.rst
    setup_application/theme_settings.rst
    setup_application/languages_settings.rst
+   setup_application/toolbars_settings.rst
    setup_application/shortcuts_settings.rst
