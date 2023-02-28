@@ -43,7 +43,7 @@ This view allows to customize advanced settings to the `FFMpeg AVFormat componen
 
     Changing values from this view can break video player functionalities.
 
-The **Enable avformat options** pass to ffmpeg space separated key-value defintions hosted in **Extra** string setting.
+The **Enable avformat options** pass to ffmpeg space separated key-value definitions hosted in **Extra** string setting.
 
 The **Reduce buffering** must minimize the delay between frames processed from a stream but this might break the audio-video synchronization.
 
@@ -68,9 +68,9 @@ This view allows to customize advanced rendering settings of the video frames on
 
     Changing values from this view can break video player functionalities.
 
-The **Force fps** value will force to render an amout of frames per seconds on screen. A null value disable this setting.
+The **Force fps** value will force to render an amount of frames per seconds on screen. A null value disable this setting.
 
-The **Buffer frames** value will set the number of frames to bufferize in memory before rendering. Using -1 will lets the program to automatize frames bufferization. 
+The **Buffer frames** value will set the number of frames to cache in memory before rendering. Using -1 will lets the program to automatize frames storage in memory. 
 
 The **Timeout** value will specify the delay in seconds to considerate a broken stream. The **Abort** option will stop to play the stream in video player in this case. 
 
