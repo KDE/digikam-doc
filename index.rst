@@ -516,6 +516,10 @@ Setup Application
 
     .. container:: tile no-descr
 
+        :ref:`languages_settings`
+
+    .. container:: tile no-descr
+
         :ref:`shortcuts_settings`
 
 .. toctree::

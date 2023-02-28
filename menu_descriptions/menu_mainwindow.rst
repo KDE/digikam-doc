@@ -510,7 +510,13 @@ The Settings Menu
 
     Choose from a list (sub-menu) of predefined color themes for the appearance of digiKam.
 
-:menuselection:`Settings --> Configure Shortcuts...`
+:menuselection:`Settings --> Configure Languages...`
+
+    Launch digiKam languages configuration dialog.
+
+    For a detailed description see :ref:`digiKam Languages Configuration <languages_settings>` section.
+
+:menuselection:`Settings --> Configure Shortcuts...` :kbd:`Ctrl+Alt+,`
 
     Configure the digiKam shortcuts and manage different schemes of shortcuts.
 
@@ -528,11 +534,11 @@ The Settings Menu
 
     Find more information about the databases and database migration in the setup section about :ref:`digiKam databases <database_settings>`.
 
-:menuselection:`Settings --> Configure digiKam...`
+:menuselection:`Settings --> Configure digiKam...` :kbd:`Ctrl+Shift+,`
 
     Launch digiKam configure dialog.
 
-    For a detailed description see :ref:`digiKam Configuration <setup_application>`.
+    For a detailed description see :ref:`digiKam Configuration <setup_application>` section.
 
 .. _menu_mainhelp:
 

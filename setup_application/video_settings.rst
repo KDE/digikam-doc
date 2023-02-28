@@ -11,7 +11,9 @@
 .. _video_settings:
 
 Video Settings
-================
+==============
+
+.. contents::
 
 digiKam relies on `FFMpeg Multimedia framework <https://ffmpeg.org/>`_ to handle video files. FFmpeg is a powerful video toolkit, which include all codecs that digiKam needs to play video files.
 
@@ -24,8 +26,6 @@ This section describes all advanced video settings used to tune media playing fe
 .. note::
 
      The **Reset** button on the bottom of views from this page allows to clear all settings to default values.
-
-.. contents::
 
 Decoder View
 ------------
