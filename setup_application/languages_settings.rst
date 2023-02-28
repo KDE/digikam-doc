@@ -42,3 +42,5 @@ Selecting a language by the drop-down menu must propose a large list of entries.
 .. important::
 
     To take effect, a language settings change requires to restart the application session.
+
+If you want to help with the application translations workflow, please consult the :ref:`Contribute section of this manual <project_contribute>`.

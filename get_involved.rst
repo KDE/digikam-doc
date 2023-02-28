@@ -39,6 +39,8 @@ digiKam makes it as easy as possible for you to report bugs or suggest improveme
 
     The digiKam Reporting Bug Dialog
 
+.. _project_contribute:
+
 Contribute
 ----------
 
