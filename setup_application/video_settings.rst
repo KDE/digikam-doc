@@ -17,16 +17,20 @@ digiKam relies on `FFMpeg Multimedia framework <https://ffmpeg.org/>`_ to handle
 
 This section describes all advanced video settings used to tune media playing features on digiKam.
 
+.. warning::
+
+    Changing values from this page can break video player functionalities.
+
+.. note::
+
+     The **Reset** button on the bottom of views from this page allows to clear all settings to default values.
+
 .. contents::
 
 Decoder View
 ------------
 
-This view allow to define the priority of decoders to use while playing media. In a flat list, you can enable or disable a decoder with the check-box on the left side. Selecting a entry, you can move **Up** or move **Down** with the buttons on the bottom side. The upper entries are taken in hight priority in the list by the player. At least one entry must be enable in this list to render contents in the media-player. The **Reset** button allows to clear all settings to default values.
-
-.. note::
-
-    Any changes in this view requires a re-start of digiKam to take effect.
+This view allow to define the priority of decoders to use while playing media. In a flat list, you can enable or disable a decoder with the check-box on the left side. Selecting a entry, you can move **Up** or move **Down** with the buttons on the bottom side. The upper entries are taken in hight priority in the list by the player. At least one entry must be enable in this list to render contents in the media-player.
 
 .. figure:: images/setup_video_decoder.webp
     :alt:
@@ -39,10 +43,6 @@ AVFormat View
 
 This view allows to customize advanced settings to the `FFMpeg AVFormat component <https://ffmpeg.org/ffmpeg-formats.html#Format-Options>`_.
 
-.. warning::
-
-    Changing values from this view can break video player functionalities.
-
 The **Enable avformat options** pass to ffmpeg space separated key-value definitions hosted in **Extra** string setting.
 
 The **Reduce buffering** must minimize the delay between frames processed from a stream but this might break the audio-video synchronization.
@@ -50,8 +50,6 @@ The **Reduce buffering** must minimize the delay between frames processed from a
 The **Probe Size** value set probing size in bytes, i.e. the size of the data to analyze to get stream information. A higher value will enable detecting more information in case it is dispersed into the stream, but will increase latency. Must be an integer not lesser than 32. It is 5000000 by default.
 
 The **Max analyze duration** value specify how many microseconds are analyzed to probe the input. A higher value will enable detecting more accurate information, but will increase latency. It defaults to 5,000,000 microseconds = 5 seconds.
-
-The **Reset** button allows to clear all settings to default values.
 
 .. figure:: images/setup_video_avformat.webp
     :alt:
@@ -64,10 +62,6 @@ Misc View
 
 This view allows to customize advanced rendering settings of the video frames on screen.
 
-.. warning::
-
-    Changing values from this view can break video player functionalities.
-
 The **Force fps** value will force to render an amount of frames per seconds on screen. A null value disable this setting.
 
 The **Buffer frames** value will set the number of frames to cache in memory before rendering. Using -1 will lets the program to automatize frames storage in memory. 
@@ -77,8 +71,6 @@ The **Timeout** value will specify the delay in seconds to considerate a broken 
 The **OpenGL type** option option are available under Windows to optimize supports of accelerated OpenGL rendering with video card.
 
 The **EGL** option is available under Linux to turn on support of OPenGL with X11 windows manager, only if X11 XCB extension is present. 
-
-The **Reset** button allows to clear all settings to default values.
 
 .. figure:: images/setup_video_misc.webp
     :alt:
