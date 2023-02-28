@@ -15,8 +15,8 @@ Toolbars Settings
 
 .. contents::
 
-Overview
---------
+Toolbar Editor
+--------------
 
 digiKam interface can be customized with toolbar located below the main menu. An editor is available from the :menuselection:`Settings --> Configure Toolbars` main menu item or right-click on a toolbar and select Configure Toolbars...
 
@@ -40,61 +40,47 @@ You can restore your toolbar to the way it was when you installed the applicatio
 
 You can change the icon and text of individual toolbar items by selecting an item and clicking either the **Change Icon...** or **Change Text...** button.
 
-Changing Text and Icons
------------------------
-
-You can change the icon and text of individual toolbar items by selecting an item and clicking either the Change Icon... or Change Text... button.
-
 Customizing Toolbar Appearance
+------------------------------
 
-You can change the appearance of toolbars by right-clicking on a toolbar to access it's context menu.
+You can change the appearance of toolbars by right-clicking on a toolbar to access it's context menu. The **Text Position** sub-menu allows to customize the button icon and title on the toolbar.
 
-Text Position
+.. figure:: images/setup_toolbars_context_menu.webp
+    :alt:
+    :align: center
 
-You can change the appearance of text on toolbars in the Text Position submenu of a toolbar's context menu.
+    The digiKam Toolbars Context Menu
 
 You can choose from:
 
-    Icons - only the icon for each toolbar item will appear.
-
-    Text - only the text label for each toolbar item will appear.
-
-    Text Alongside Icons - the text label will appear to the right of each toolbar item's icon
-
-    Text Under Icons - the text label will appear underneath each toolbar item's icon 
+    - **Icons**: only the icon for each toolbar item will appear.
+    - **Text**: only the text label for each toolbar item will appear.
+    - **Text Alongside Icons**: the text label will appear to the right of each toolbar item's icon.
+    - **Text Under Icons**: the text label will appear underneath each toolbar item's icon.
 
 You can also show or hide text for individual toolbar items by right-clicking on an item and checking or unchecking the item under Show Text.
-Icon Size
 
-You can change the size of toolbar items' icons by selecting Icon Size from the toolbar's context menu.
+You can change the size of toolbar items' icons by selecting **Icon Size** from the toolbar's context menu. You can choose from the following sizes in pixels:
 
-You can choose from the following options: (each lists the icon size in pixels)
+    - **Small (16x16)**.
+    - **Medium (22x22)** [the default value].
+    - **Large (32x32)**.
+    - **Huge (48x48)**.
 
-    Small (16x16)
+Customize Toolbar Position
+--------------------------
 
-    Medium (22x22) [the default value]
+In order to move toolbar, you must “unlock” them. To do so, uncheck **Lock Toolbar Positions** from a toolbar's context menu. To restore the lock, simply recheck this menu item.
 
-    Large (32x32)
-
-    Huge (48x48)
-
-Moving Toolbars
-
-In order to move toolbars, you must “unlock” them. To do so, uncheck Lock Toolbar Positions from a toolbar's context menu. To restore the lock, simply recheck this menu item.
-
-You can change a toolbar's position from the Orientation submenu of its context menu.
+You can change a toolbar's position from the **Orientation** sub-menu of its context menu.
 
 You can choose from:
 
-    Top [the default in many applications]
-
-    Left
-
-    Right
-
-    Bottom
+    - **Top** [the default position].
+    - **Left**.
+    - **Right**.
+    - **Bottom**.
 
 You can also move a toolbar by clicking and holding onto the dotted line at the left of horizontal toolbars or the top of vertical toolbars and dragging it to your desired location.
-Show/Hide Toolbars
 
-You can hide the toolbar by deselecting Show Toolbar from either the toolbar's context menu or the Settings menu. To restore the toolbar, select Show Toolbar from the Settings menu. Note that toolbars must be “unlocked” to hide them from their context menu; see the section called “Moving Toolbars” for more information.
+You can hide the toolbar by deselecting **Show Toolbar** from either the toolbar's context menu or the **Settings** menu. To restore the toolbar, select **Show Toolbar** from the **Settings** menu. Note that toolbar must be “unlocked” to hide them from their context menu.
