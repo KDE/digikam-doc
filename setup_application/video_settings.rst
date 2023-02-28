@@ -51,6 +51,8 @@ The **Probe Size** value set probing size in bytes, i.e. the size of the data to
 
 The **Max analyze duration** value specify how many microseconds are analyzed to probe the input. A higher value will enable detecting more accurate information, but will increase latency. It defaults to 5,000,000 microseconds = 5 seconds.
 
+The **Reset** button allows to clear all settings to default values.
+
 .. figure:: images/setup_video_avformat.webp
     :alt:
     :align: center
@@ -59,6 +61,24 @@ The **Max analyze duration** value specify how many microseconds are analyzed to
 
 Misc View
 ---------
+
+This view allows to customize advanced rendering settings of the video frames on screen.
+
+.. warning::
+
+    Changing values from this view can break video player functionalities.
+
+The **Force fps** value will force to render an amout of frames per seconds on screen. A null value disable this setting.
+
+The **Buffer frames** value will set the number of frames to bufferize in memory before rendering. Using -1 will lets the program to automatize frames bufferization. 
+
+The **Timeout** value will specify the delay in seconds to considerate a broken stream. The **Abort** option will stop to play the stream in video player in this case. 
+
+The **OpenGL type** option option are available under Windows to optimize supports of accelerated OpenGL rendering with video card.
+
+The **EGL** option is available under Linux to turn on support of OPenGL with X11 windows manager, only if X11 XCB extension is present. 
+
+The **Reset** button allows to clear all settings to default values.
 
 .. figure:: images/setup_video_misc.webp
     :alt:
