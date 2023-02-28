@@ -37,6 +37,20 @@ This view allow to define the priority of decoders to use while playing media. I
 AVFormat View
 -------------
 
+This view allows to customize advanced settings to the `FFMpeg AVFormat component <https://ffmpeg.org/ffmpeg-formats.html#Format-Options>`_.
+
+.. warning::
+
+    Changing values from this view can break video player functionalities.
+
+The **Enable avformat options** pass to ffmpeg space separated key-value defintions hosted in **Extra** string setting.
+
+The **Reduce buffering** must minimize the delay between frames processed from a stream but this might break the audio-video synchronization.
+
+The **Probe Size** value set probing size in bytes, i.e. the size of the data to analyze to get stream information. A higher value will enable detecting more information in case it is dispersed into the stream, but will increase latency. Must be an integer not lesser than 32. It is 5000000 by default.
+
+The **Max analyze duration** value specify how many microseconds are analyzed to probe the input. A higher value will enable detecting more accurate information, but will increase latency. It defaults to 5,000,000 microseconds = 5 seconds.
+
 .. figure:: images/setup_video_avformat.webp
     :alt:
     :align: center
