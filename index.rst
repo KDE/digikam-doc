@@ -524,6 +524,10 @@ Setup Application
 
     .. container:: tile no-descr
 
+        :ref:`notifications_settings`
+
+    .. container:: tile no-descr
+
         :ref:`shortcuts_settings`
 
 .. toctree::

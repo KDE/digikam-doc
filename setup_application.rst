@@ -1,6 +1,6 @@
 .. meta::
    :description: Using the digiKam Configuration Panel to Customize Application
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, setup, languages, themes, shortcuts
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, setup, languages, themes, shortcuts, notifications
 
 .. metadata-placeholder
 
@@ -41,4 +41,5 @@ This section explain how to setup application.
    setup_application/theme_settings.rst
    setup_application/languages_settings.rst
    setup_application/toolbars_settings.rst
+   setup_application/notifications_settings.rst
    setup_application/shortcuts_settings.rst
