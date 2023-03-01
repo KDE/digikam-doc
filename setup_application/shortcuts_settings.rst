@@ -20,7 +20,7 @@ Shortcuts Editor
 
 digiKam provide keyboard shortcuts that allow you to perform many tasks without touching your mouse. If you use your keyboard frequently, using these can save you lots of time.
 
-digiKam has dedicated keyboard shortcut configuration dialog accessed via the :menuselection:`Settings --> Configure Shortcuts` main menu item.
+digiKam has a dedicated keyboard shortcuts configuration dialog accessed via the :menuselection:`Settings --> Configure Shortcuts` main menu item.
 
 .. figure:: images/setup_keyboard_shortcuts.webp
     :alt:
