@@ -15,6 +15,9 @@ Shortcuts Settings
 
 .. contents::
 
+Shortcuts Editor
+----------------
+
 digiKam provide keyboard shortcuts that allow you to perform many tasks without touching your mouse. If you use your keyboard frequently, using these can save you lots of time.
 
 digiKam has dedicated keyboard shortcut configuration dialog accessed via the :menuselection:`Settings --> Configure Shortcuts` main menu item.
@@ -24,6 +27,33 @@ digiKam has dedicated keyboard shortcut configuration dialog accessed via the :m
     :align: center
 
     The digiKam Dialog To Configure The Keyboard Shortcuts
+
+In this dialog, you will see a list of all the shortcuts available in the application. You can use the **Search** box at the top to search for the shortcut you want.
+
+To change a shortcut, first click on the name of a shortcut you want to change. You will see a radio group where you can choose whether to set the shortcut to its default value, or select a new shortcut for the selected action. To set a new shortcut, choose **Custom** and click on the button next to it. Then just type the shortcut you would like to use, and your changes will be saved.
+
+To reset a shortcut, there is a button at the bottom of the dialog, called **Defaults**. Clicking on this button will reset all your custom shortcuts to their default values. You can also reset an individual shortcut to its default value by selecting it, and choosing the **Default** radio button.
+
+To remove a shortcut, select it from the list, then click the black arrow with a cross icon to the right of the button that allows you to select a shortcut.
+
+To print-out a list of shortcuts for easy reference by clicking the **Print** button at the bottom of the dialog.
+
+You can also works with **Schemes**. These ones are keyboard shortcuts configuration profiles, so you can create several profiles with different shortcuts and switch between these profiles easily. To see a menu allowing you to edit schemes, click on the **Manage Schemes** button at the bottom of the dialog. The following options will appear:
+
+    - **Current Scheme**: Allows you to switch between your schemes.
+
+    - **New**: Creates a new scheme. This opens a window that lets you select a name for your new scheme.
+
+    - **Delete**: Deletes the current scheme.
+
+    - **More Actions**: Opens the following menu:
+
+        - **Save Shortcuts to scheme**: Save the current shortcuts to the current scheme.
+        - **Export Scheme**: Exports the current scheme to a file.
+        - **Import Scheme**: Imports a scheme from a file.
+
+Default Shortcuts
+-----------------
 
 digiKam define these keyboard shortcuts by default:
 
