@@ -497,7 +497,7 @@ The Export Menu
 
     Tool to upload or update images to Imageshack web-service.
 
-    See the dedicated :ref:`Imageshack Export Tool <imageshack_export>` for more information.
+    See the dedicated :ref:`Imageshack Export Tool <image_shack>` for more information.
 
 :menuselection:`Export --> Export to Imgur`
 
@@ -546,7 +546,7 @@ The Settings Menu
 
     Choose from a list (sub-menu) of predefined color themes for the appearance of digiKam.
 
-    For a detailed description see :ref:`digiKam Themes Configuration <themes_settings>` section.
+    For a detailed description see :ref:`digiKam Themes Configuration <theme_settings>` section.
 
 :menuselection:`Settings --> Configure Languages...`
 
