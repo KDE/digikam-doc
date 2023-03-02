@@ -47,9 +47,9 @@ The **Enable avformat options** pass to ffmpeg space separated key-value definit
 
 The **Reduce buffering** must minimize the delay between frames processed from a stream but this might break the audio-video synchronization.
 
-The **Probe Size** value set probing size in bytes, i.e. the size of the data to analyze to get stream information. A higher value will enable detecting more information in case it is dispersed into the stream, but will increase latency. Must be an integer not lesser than 32. It is 5000000 by default.
+The **Probe Size** value sets probing size in bytes, i.e. the size of the data to analyze to get stream information. A higher value will enable detecting more information in case it is dispersed into the stream, but will increase latency. Must be an integer not lesser than 32. It is 5000000 by default.
 
-The **Max analyze duration** value specify how many microseconds are analyzed to probe the input. A higher value will enable detecting more accurate information, but will increase latency. It defaults to 5,000,000 microseconds = 5 seconds.
+The **Max analyze duration** value specifies how many microseconds are analyzed to probe the input. A higher value will enable detecting more accurate information, but will increase latency. It defaults to 5,000,000 microseconds = 5 seconds.
 
 .. figure:: images/setup_video_avformat.webp
     :alt:
@@ -64,13 +64,13 @@ This view allows to customize advanced rendering settings of the video frames on
 
 The **Force fps** value will force to render an amount of frames per seconds on screen. A null value disable this setting.
 
-The **Buffer frames** value will set the number of frames to cache in memory before rendering. Using -1 will lets the program to automatize frames storage in memory. 
+The **Buffer frames** value will set the number of frames to cache in memory before rendering. Using -1 will let the program to automatize frames storage in memory. 
 
 The **Timeout** value will specify the delay in seconds to considerate a broken stream. The **Abort** option will stop to play the stream in video player in this case. 
 
-The **OpenGL type** option option are available under Windows to optimize supports of accelerated OpenGL rendering with video card.
+The **OpenGL type** options are available under Windows to optimize support of accelerated OpenGL rendering with video card.
 
-The **EGL** option is available under Linux to turn on support of OPenGL with X11 windows manager, only if X11 XCB extension is present. 
+The **EGL** option is available under Linux to turn on support of OpenGL with X11 windows manager, only if X11 XCB extension is present. 
 
 .. figure:: images/setup_video_misc.webp
     :alt:
