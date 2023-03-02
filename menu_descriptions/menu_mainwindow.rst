@@ -446,17 +446,29 @@ The Import Menu
 
     This item is only active in the Albums View.
 
+:menuselection:`Import --> Import from Google Photos` :kbd:`Alt+Shift+P`
+
+    Tool to download files from Google Photos web-service.
+
+    See the dedicated :ref:`Google Photos Import Tool <google_import>` for more information.
+
+:menuselection:`Import --> Import from SmugMug` :kbd:`Alt+Shift+S`
+
+    Tool to download files from SmugMug web-service.
+
+    See the dedicated :ref:`SmugMug Import Tool <smugmug_import>` for more information.
+
+:menuselection:`Import --> Import from remote storage` :kbd:`Alt+Shift+K`
+
+    Tool to download files from another computer using network.
+
+    See the dedicated :ref:`Remote Storage Import Tool <remote_import>` for more information.
+
 :menuselection:`Import --> Import from Scanner...`
 
     Opens a scanner dialog
 
     See the dedicated :ref:`Acquire Images Tool <scanner_import>` for more information.
-
-:menuselection:`Import --> Import from...`
-
-    Here are following the import menu items for the webservices you have chosen in
-
-    :menuselection:`Settings --> Configure digiKam... --> Plugin` and which are labeled **Export** in the **Categories** column.
 
 .. _menu_mainexport:
 
@@ -465,57 +477,99 @@ The Export Menu
 
 :menuselection:`Export --> Export to Box...` :kbd:`Ctrl+Alt+Shift+B`
 
-    Tool to upload or update images to Box web-service.
+    Tool to upload or update files to Box web-service.
 
     See the dedicated :ref:`Box Export Tool <box_export>` for more information.
 
 :menuselection:`Export --> Export to Dropbox...` :kbd:`Ctrl+Alt+Shift+D`
 
-    Tool to upload or update images to Dropbox web-service.
+    Tool to upload or update files to Dropbox web-service.
 
     See the dedicated :ref:`Dropbox Export Tool <dropbox_export>` for more information.
 
 :menuselection:`Export --> Export to Flickr...` :kbd:`Ctrl+Alt+Shift+R`
 
-    Tool to upload or update images to Flickr web-service.
+    Tool to upload or update files to Flickr web-service.
 
     See the dedicated :ref:`Flickr Export Tool <flickr_export>` for more information.
 
 :menuselection:`Export --> Export to Google Drive...` :kbd:`Ctrl+Alt+Shift+G`
 
-    Tool to upload or update images to Google Drive web-service.
+    Tool to upload or update files to Google Drive web-service.
 
     See the dedicated :ref:`Google Export Tool <google_export>` for more information.
 
 :menuselection:`Export --> Export to Google Photos...` :kbd:`Ctrl+Alt+Shift+P`
 
-    Tool to upload or update images to Google Photos web-service.
+    Tool to upload or update files to Google Photos web-service.
 
     See the dedicated :ref:`Google Export Tool <google_export>` for more information.
 
 :menuselection:`Export --> Export to Imageshack` :kbd:`Ctrl+Alt+Shift+M`
 
-    Tool to upload or update images to Imageshack web-service.
+    Tool to upload or update files to Imageshack web-service.
 
     See the dedicated :ref:`Imageshack Export Tool <image_shack>` for more information.
 
 :menuselection:`Export --> Export to Imgur`
 
-    Tool to upload or update images to Imgur web-service.
+    Tool to upload or update files to Imgur web-service.
 
     See the dedicated :ref:`Imgur Export Tool <imgur_export>` for more information.
 
 :menuselection:`Export --> Export to INaturalist` :kbd:`Ctrl+Alt+Shift+N`
 
-    Tool to upload or update images to INaturalist web-service.
+    Tool to upload or update files to INaturalist web-service.
 
     See the dedicated :ref:`INaturalist Export Tool <inaturalist_export>` for more information.
 
+:menuselection:`Export --> Export to Onedrive` :kbd:`Ctrl+Alt+Shift+O`
+
+    Tool to upload or update files to Onedrive web-service.
+
+    See the dedicated :ref:`Onedrive Export Tool <one_drive>` for more information.
+
+:menuselection:`Export --> Export to Pinterest` :kbd:`Ctrl+Alt+Shift+I`
+
+    Tool to upload or update files to Pinterest web-service.
+
+    See the dedicated :ref:`Pinterest Export Tool <pinterest_export>` for more information.
+
 :menuselection:`Export --> Export to Piwigo`
 
-    Tool to upload or update images to Piwigo web-service.
+    Tool to upload or update files to Piwigo web-service.
 
     See the dedicated :ref:`Piwigo Export Tool <piwigo_export>` for more information.
+
+:menuselection:`Export --> Export to SmugMug` :kbd:`Ctrl+Alt+Shift+S`
+
+    Tool to upload or update files to SmugMug web-service.
+
+    See the dedicated :ref:`SmugMug Export Tool <smugmug_export>` for more information.
+
+:menuselection:`Export --> Export to Twitter`
+
+    Tool to upload or update files to Twitter web-service.
+
+    See the dedicated :ref:`Twitter Export Tool <twitter_export>` for more information.
+
+:menuselection:`Export --> Export to local storage` :kbd:`Ctrl+Alt+Shift+L`
+
+    Tool to copy files somewhere in your computer outside your collections.
+
+    See the dedicated :ref:`Local Storage Export Tool <local_export>` for more information.
+
+:menuselection:`Export --> Export to MediaWiki`
+
+    Tool to upload or update files to MediaWiki web-service.
+
+    See the dedicated :ref:`MediaWiki Export Tool <media_wiki>` for more information.
+
+:menuselection:`Export --> Export to remote storage` :kbd:`Ctrl+Alt+Shift+K`
+
+    Tool to upload files to another computer using network.
+
+    See the dedicated :ref:`Local Storage Export Tool <remote_export>` for more information.
 
 .. _menu_mainsettings:
 
