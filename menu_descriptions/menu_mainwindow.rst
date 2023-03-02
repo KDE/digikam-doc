@@ -463,23 +463,59 @@ The Import Menu
 The Export Menu
 ---------------
 
-:menuselection:`Export--> Export to Piwigo`
+:menuselection:`Export --> Export to Box...` :kbd:`Ctrl+Alt+Shift+B`
 
-    Tool to upload or update images to Piwigo galleries.
+    Tool to upload or update images to Box web-service.
 
-:menuselection:`Export--> Export to Flickr...`
+    See the dedicated :ref:`Box Export Tool <box_export>` for more information.
+
+:menuselection:`Export --> Export to Dropbox...` :kbd:`Ctrl+Alt+Shift+D`
+
+    Tool to upload or update images to Dropbox web-service.
+
+    See the dedicated :ref:`Dropbox Export Tool <dropbox_export>` for more information.
+
+:menuselection:`Export --> Export to Flickr...` :kbd:`Ctrl+Alt+Shift+R`
 
     Tool to upload or update images to Flickr web-service.
 
     See the dedicated :ref:`Flickr Export Tool <flickr_export>` for more information.
 
-:menuselection:`Export--> Export to Google Photos...`
+:menuselection:`Export --> Export to Google Drive...` :kbd:`Ctrl+Alt+Shift+G`
 
-    Tool upload or update images to Google Photos galleries.
+    Tool to upload or update images to Google Drive web-service.
 
-:menuselection:`Export--> Export to Google Drive...`
+    See the dedicated :ref:`Google Export Tool <google_export>` for more information.
 
-    Tool upload images to Google Drive web-service.
+:menuselection:`Export --> Export to Google Photos...` :kbd:`Ctrl+Alt+Shift+P`
+
+    Tool to upload or update images to Google Photos web-service.
+
+    See the dedicated :ref:`Google Export Tool <google_export>` for more information.
+
+:menuselection:`Export --> Export to Imageshack` :kbd:`Ctrl+Alt+Shift+M`
+
+    Tool to upload or update images to Imageshack web-service.
+
+    See the dedicated :ref:`Imageshack Export Tool <imageshack_export>` for more information.
+
+:menuselection:`Export --> Export to Imgur`
+
+    Tool to upload or update images to Imgur web-service.
+
+    See the dedicated :ref:`Imgur Export Tool <imgur_export>` for more information.
+
+:menuselection:`Export --> Export to INaturalist` :kbd:`Ctrl+Alt+Shift+N`
+
+    Tool to upload or update images to INaturalist web-service.
+
+    See the dedicated :ref:`INaturalist Export Tool <inaturalist_export>` for more information.
+
+:menuselection:`Export --> Export to Piwigo`
+
+    Tool to upload or update images to Piwigo web-service.
+
+    See the dedicated :ref:`Piwigo Export Tool <piwigo_export>` for more information.
 
 .. _menu_mainsettings:
 
@@ -510,6 +546,8 @@ The Settings Menu
 
     Choose from a list (sub-menu) of predefined color themes for the appearance of digiKam.
 
+    For a detailed description see :ref:`digiKam Themes Configuration <themes_settings>` section.
+
 :menuselection:`Settings --> Configure Languages...`
 
     Launch digiKam languages configuration dialog.
@@ -520,13 +558,19 @@ The Settings Menu
 
     Configure the digiKam shortcuts and manage different schemes of shortcuts.
 
+    For a detailed description see :ref:`digiKam Shortcuts Configuration <shortcuts_settings>` section.
+
 :menuselection:`Settings --> Configure Toolbars...`
 
     Configure the digiKam toolbars.
 
+    For a detailed description see :ref:`digiKam Toolbars Configuration <toolbars_settings>` section.
+
 :menuselection:`Settings --> Configure Notifications...`
 
     Configure the digiKam notifications including actions like *Play a sound*, *Log to a file* or *Run command*.
+
+    For a detailed description see :ref:`digiKam Notifications Configuration <notifications_settings>` section.
 
 :menuselection:`Settings --> Database Migration...`
 
