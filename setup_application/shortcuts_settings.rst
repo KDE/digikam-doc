@@ -159,3 +159,119 @@ Adjust Date and Time              :kbd:`Ctrl+Shift+D`
 Edit Geolocation                  :kbd:`Ctrl+Shift+G`
 Edit Metadata                     :kbd:`Ctrl+Shift+M`
 ================================= ===================
+
+Add Images... Main: Alt+Shift+I Adds new items to an Album.
+Add to Current Queue Main: Ctrl+B Add selected items to current queue from batch manager.
+Add to Light Table Main: Ctrl+Shift+L Add selected items to the light table thumbbar.
+Add to New Queue Main: Ctrl+Shift+B Add selected items to a new queue from batch manager.
+Adjust Time & Date... Main: Ctrl+Shift+D
+Advanced Search... Main: Ctrl+Alt+F
+Albums Main: Ctrl+Shift+F1
+Assign Color Label "Black" Main: Ctrl+Alt+8
+Assign Color Label "Blue" Main: Ctrl+Alt+5
+Assign Color Label "Gray" Main: Ctrl+Alt+7
+Assign Color Label "Green" Main: Ctrl+Alt+4
+Assign Color Label "Magenta" Main: Ctrl+Alt+6
+Assign Color Label "None" Main: Ctrl+Alt+0
+Assign Color Label "Orange" Main: Ctrl+Alt+2
+Assign Color Label "Red" Main: Ctrl+Alt+1
+Assign Color Label "White" Main: Ctrl+Alt+9
+Assign Color Label "Yellow" Main: Ctrl+Alt+3
+Assign Pick Label "Accepted" Main: Alt+3
+Assign Pick Label "None" Main: Alt+0
+Assign Pick Label "Pending" Main: Alt+2
+Assign Pick Label "Rejected" Main: Alt+1
+Assign Rating "0 Star" Main: Ctrl+0
+Assign Rating "1 Star" Main: Ctrl+1
+Assign Rating "2 Star" Main: Ctrl+2
+Assign Rating "3 Star" Main: Ctrl+3
+Assign Rating "4 Star" Main: Ctrl+4
+Assign Rating "5 Star" Main: Ctrl+5
+Assign Tag Main: T
+Back Main: Alt+Left
+Batch Queue Manager Main: Shift+B
+Color-Managed View Main: F12
+Configure digiKam... Main: Ctrl+Shift+,
+Configure Keyboard Shortcuts... Main: Ctrl+Alt
+Copy Main: Ctrl+C Alternate: Ctrl+Ins
+Create Html gallery... Main: Ctrl+Alt+Shift+H
+Cut Main: Ctrl+X Cut selection to clipboard
+Dates Main: Ctrl+Shift+F4
+Delete Permanently Main: Shift+Del
+Edit Comments Main: Alt+Shift+C
+Edit Geolocation... Main: Ctrl+Shift+G
+Edit Metadata... Main: Ctrl+Shift+M
+Edit Titles Main: Alt+Shift+T
+Exit Preview Mode Main: Esc
+Export to Box... Main: Ctrl+Alt+Shift+B
+Export to Dropbox... Main: Ctrl+Alt+Shift+D
+Export to Flickr... Main: Ctrl+Alt+Shift+R
+Export to Google Drive... Main: Ctrl+Alt+Shift+G
+Export to Google Photos... Main: Ctrl+Alt+Shift+P
+Export to Imageshack... Main: Ctrl+Alt+Shift+M
+Export to iNaturalist... Main: Ctrl+Alt+Shift+N
+Export to local storage... Main: Ctrl+Alt+Shift+L
+Export to Onedrive... Main: Ctrl+Alt+Shift+O
+Export to Pinterest... Main: Ctrl+Alt+Shift+I
+Export to remote storage... Main: Ctrl+Alt+Shift+K
+Export to SmugMug... Main: Ctrl+Alt+Shift+S
+Find Action… Main: Ctrl+Alt+I
+Find Duplicates... Main: Ctrl+D
+First Image Main: Ctrl+Home
+Fit to Window Main: Ctrl+Alt+E
+Forward Main: Alt+Right
+Full Screen Mode Main: Ctrl+Shift+F
+Horizontally Main: Ctrl+*
+Import from Google Photos... Main: Alt+Shift+P
+Import from remote storage... Main: Alt+Shift+K
+Import from SmugMug... Main: Alt+Shift+S
+Invert Selection Main: Ctrl+I
+Labels Main: Ctrl+Shift+F3
+Last Image Main: Ctrl+End
+Left Main: Ctrl+Shift+Left
+Light Table Main: Shift+L
+Map Main: Ctrl+Shift+F8
+Move to Trash Main: Del
+New... Main: Ctrl+N
+Next Image Main: Space
+Next Left Side-bar Tab Main: Ctrl+Alt+End
+Next Right Side-bar Tab Main: Ctrl+Alt+PgDown
+Open With Default Application Main: Ctrl+F4 Open the selected item with default assigned application.
+Open... Main: F4 Open the selected item.
+Paste Main: Ctrl+V
+Alternate: Shift+Ins
+People Main: Ctrl+Shift+F9
+Place onto Light Table Main: Ctrl+L Place the selected items on the light table thumbbar.
+Play All Main: F9
+Play Selection Main: Alt+F9
+Play With Sub-Albums Main: Shift+F9
+Presentation... Main: Alt+Shift+F9
+Preview Main: F3
+Previous Image Main: Backspace
+Alternate: Shift+Space
+Previous Left Side-bar Tab Main: Ctrl+Alt+Home
+Previous Right Side-bar Tab Main: Ctrl+Alt+PgUp
+Properties Main: Alt+Return Edit album properties and collection information.
+Quit Main: Ctrl+Q
+Refresh Main: F5 Alternate: Ctrl+F5 Refresh the current contents.
+Rename... Main: Shift+F2
+Rename... Main: F2 Change the filename of the currently selected item.
+Right Main: Ctrl+Shift+Right
+Search Main: Ctrl+Shift+F6
+Search... Main: Ctrl+F
+Select All Main: Ctrl+A
+Select None Main: Ctrl+Shift+A
+Show Assigned Tags Main: Alt+Shift+A
+Show Menubar Main: Ctrl+M 
+Show Thumbbar Main: Ctrl+T
+Similarity Main: Ctrl+Shift+F7
+Tags Main: Ctrl+Shift+F2
+Timeline Main: Ctrl+Shift+F5
+Toggle Left Side-bar Main: Ctrl+Alt+Left
+Toggle Right Side-bar Main: Ctrl+Alt+Right
+Vertically Main: Ctrl+/
+What's This? Main: Shift+F1
+Zoom In Main: Ctrl++
+Alternate: Ctrl+=
+Zoom Out Main: Ctrl+-
+Zoom to 100% Main: Ctrl+.
