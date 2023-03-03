@@ -106,6 +106,7 @@ Action                            Shortcut
 Zoom in                           :kbd:`Ctrl++`
 Zoom out                          :kbd:`Ctrl+-`
 Zoom 100%                         :kbd:`Ctrl+.`
+Fit Horizontally                  :kbd:`Ctrl+*`
 Fit Vertically                    :kbd:`Ctrl+/`
 Fit to window                     :kbd:`Ctrl+Alt+E`
 Fit to selection                  :kbd:`Ctrl+Alt+S`
@@ -122,7 +123,7 @@ Play with Sub-Albums              :kbd:`Shift+F9`
 Presentation                      :kbd:`Shift+Alt+F9`
 ================================= =========================
 
-- Main Window:
+- Views Shortcuts:
 
 ================================= =========================
 Action                            Shortcut
@@ -136,16 +137,46 @@ Search View                       :kbd:`Shift+Ctrl+F6`
 Similarity View                   :kbd:`Shift+Ctrl+F7`
 Map View                          :kbd:`Shift+Ctrl+F8`
 People View                       :kbd:`Shift+Ctrl+F9`
-Rename                            :kbd:`F2`
+Full Screen Mode                  :kbd:`Ctrl+Shift+F`
 Preview                           :kbd:`F3`
 Exit Preview Mode                 :kbd:`Esc`
+Toggle Left Side-bar              :kbd:`Ctrl+Alt+Left`
+Toggle Right Side-bar             :kbd:`Ctrl+Alt+Right`
+Refresh                           :kbd:`F5`
+================================= =========================
+
+- Main Tools:
+
+================================= =========================
+Action                            Shortcut
+================================= =========================
 Open in Editor                    :kbd:`F4`
 Open in Default Application       :kbd:`Ctrl+F4`
+Light Table                       :kbd:`Shift+L`
 Place on Light Table              :kbd:`Ctrl+L`
 Add to Light Table                :kbd:`Ctrl+Shift+L`
 Batch Queue Manager               :kbd:`Shift+B`
 Add to Current Queue              :kbd:`Ctrl+B`
 Add to new Queue                  :kbd:`Ctrl+Shift+B`
+================================= =========================
+
+- Naviguation Shortcuts:
+
+================================= =========================
+Action                            Shortcut
+================================= =========================
+Back                              :kbd:`Alt+Left`
+Forward                           :kbd:`Alt+Right`
+First Image                       :kbd:`Ctrl+Home`
+Last Image                        :kbd:`Ctrl+End`
+Left                              :kbd:`Ctrl+Shift+Left`
+Right                             :kbd:`Ctrl+Shift+Right`
+Next Left Side-bar Tab            :kbd:`Ctrl+Alt+End`
+Next Right Side-bar Tab           :kbd:`Ctrl+Alt+PgDown`
+Next Image                        :kbd:`Space`
+Previous Image                    :kbd:`Backspace`
+Previous Left Side-bar Tab        :kbd:`Ctrl+Alt+Home`
+Previous Right Side-bar Tab       :kbd:`Ctrl+Alt+PgUp`
 ================================= =========================
 
 - General Shortcuts:
@@ -158,9 +189,26 @@ Quit                              :kbd:`Ctrl+Q`
 Move to Trash                     :kbd:`Del`
 Delete items permanently          :kbd:`Shift+Del`
 Turn On/Off Color Management View :kbd:`F12`
-Adjust Date and Time              :kbd:`Ctrl+Shift+D`
+What's This?                      :kbd:`Shift+F1`
+================================= =========================
+
+- Post Processing:
+================================= =========================
+Action                            Shortcut
+================================= =========================
+Rename                            :kbd:`F2`
+New Album                         :kbd:`Ctrl+N`
+Edit Album Properties             :kbd:`Alt+Return`
+Edit Comments                     :kbd:`Alt+Shift+C`
+Edit Titles                       :kbd:`Alt+Shift+T`
 Edit Geolocation                  :kbd:`Ctrl+Shift+G`
 Edit Metadata                     :kbd:`Ctrl+Shift+M`
+Assign Tag                        :kbd:`T`
+Adjust Date and Time              :kbd:`Ctrl+Shift+D`
+Create Html gallery               :kbd:`Ctrl+Alt+Shift+H`
+Search                            :kbd:`Ctrl+F`
+Advanced Search                   :kbd:`Ctrl+Alt+F`
+Find Duplicates                   :kbd:`Ctrl+D`
 ================================= =========================
 
 - Export Tools:
@@ -193,56 +241,27 @@ Import from remote storage        :kbd:`Alt+Shift+K`
 Import from SmugMug               :kbd:`Alt+Shift+S`
 ================================= =========================
 
-Advanced Search... Main: Ctrl+Alt+F
+- Configure Shortcuts:
 
-Assign Tag Main: T
-Back Main: Alt+Left
-Configure digiKam... Main: Ctrl+Shift+,
-Configure Keyboard Shortcuts... Main: Ctrl+Alt
-Copy Main: Ctrl+C Alternate: Ctrl+Ins
+================================= =========================
+Action                            Shortcut
+================================= =========================
+Configure digiKam                 :kbd:`Ctrl+Shift+,`
+Configure Keyboard Shortcuts      :kbd:`Ctrl+Alt`
+Show Assigned Tags                :kbd:`Alt+Shift+A`
+Show Menubar                      :kbd:`Ctrl+M`
+Show Thumbbar                     :kbd:`Ctrl+T`
+================================= =========================
 
-Create Html gallery... Main: Ctrl+Alt+Shift+H
-Cut Main: Ctrl+X Cut selection to clipboard
-Edit Comments Main: Alt+Shift+C
-Edit Titles Main: Alt+Shift+T
+- Selection Shortcuts:
 
-Find Action… Main: Ctrl+Alt+I
-Find Duplicates... Main: Ctrl+D
-First Image Main: Ctrl+Home
-Forward Main: Alt+Right
-Full Screen Mode Main: Ctrl+Shift+F
-Horizontally Main: Ctrl+*
-Invert Selection Main: Ctrl+I
-Last Image Main: Ctrl+End
-Left Main: Ctrl+Shift+Left
-Light Table Main: Shift+L
-New... Main: Ctrl+N
-Next Image Main: Space
-Next Left Side-bar Tab Main: Ctrl+Alt+End
-Next Right Side-bar Tab Main: Ctrl+Alt+PgDown
-Open With Default Application Main: Ctrl+F4 Open the selected item with default assigned application.
-Paste Main: Ctrl+V Alternate: Shift+Ins
-Place onto Light Table Main: Ctrl+L Place the selected items on the light table thumbbar.
-Previous Image Main: Backspace
-Alternate: Shift+Space
-Previous Left Side-bar Tab Main: Ctrl+Alt+Home
-Previous Right Side-bar Tab Main: Ctrl+Alt+PgUp
-Properties Main: Alt+Return Edit album properties and collection information.
-Refresh Main: F5 Alternate: Ctrl+F5 Refresh the current contents.
-Rename... Main: Shift+F2
-Right Main: Ctrl+Shift+Right
-Search... Main: Ctrl+F
-Select All Main: Ctrl+A
-Select None Main: Ctrl+Shift+A
-Show Assigned Tags Main: Alt+Shift+A
-Show Menubar Main: Ctrl+M 
-Show Thumbbar Main: Ctrl+T
-Tags Main: Ctrl+Shift+F2
-Toggle Left Side-bar Main: Ctrl+Alt+Left
-Toggle Right Side-bar Main: Ctrl+Alt+Right
-What's This? Main: Shift+F1
-
-Zoom In Main: Ctrl++ Alternate: Ctrl+=
-Zoom Out Main: Ctrl+-
-Zoom to 100% Main: Ctrl+.
-Fit to Window Main: Ctrl+Alt+E
+================================= =========================
+Action                            Shortcut
+================================= =========================
+Copy                              :kbd:`Ctrl+C`
+Cut                               :kbd:`Ctrl+X`
+Paste                             :kbd:`Ctrl+V`
+Invert Selection                  :kbd:`Ctrl+I`
+Select All                        :kbd:`Ctrl+A`
+Select None                       :kbd:`Ctrl+Shift+A`
+================================= =========================
