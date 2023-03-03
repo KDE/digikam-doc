@@ -38,7 +38,7 @@ To remove a shortcut, select it from the list, then click the black arrow with a
 
 To print-out a list of shortcuts for easy reference by clicking the **Print** button at the bottom of the dialog.
 
-You can also works with **Schemes**. These ones are keyboard shortcuts configuration profiles, so you can create several profiles with different shortcuts and switch between these profiles easily. To see a menu allowing you to edit schemes, click on the **Manage Schemes** button at the bottom of the dialog. The following options will appear:
+You can also work with **Schemes**. These ones are keyboard shortcuts configuration profiles, so you can create several profiles with different shortcuts and switch between these profiles easily. To see a menu allowing you to edit schemes, click on the **Manage Schemes** button at the bottom of the dialog. The following options will appear:
 
     - **Current Scheme**: Allows you to switch between your schemes.
 

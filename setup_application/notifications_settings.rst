@@ -38,7 +38,7 @@ The **State** column tells you which types of notifications are enabled for a pa
     - **Log to a file**: useful if you want to keep track of how often an event occurs.
     - **Mark taskbar entry**: the taskbar will change colors to alert you of the event.
     - **Run command**: with this you can enable more advanced responses to notifications. When a certain event finishes, it can spawn a program that starts another.
-    - **Speech**: voice synthesis will be used to play an audio messages.
+    - **Speech**: voice synthesis will be used to play an audio message.
 
 As an example, suppose you want to change the way digiKam notifies you when a *Batch Queue is completed* to automatically play a sound. To change this, do the following:
 
