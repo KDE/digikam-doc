@@ -569,7 +569,7 @@ The Export Menu
 
     Tool to upload files to another computer using network.
 
-    See the dedicated :ref:`Local Storage Export Tool <remote_export>` for more information.
+    See the dedicated :ref:`Remote Storage Export Tool <remote_export>` for more information.
 
 .. _menu_mainsettings:
 
