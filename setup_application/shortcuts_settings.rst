@@ -158,7 +158,7 @@ Add to Current Queue              :kbd:`Ctrl+B`
 Add to new Queue                  :kbd:`Ctrl+Shift+B`
 ================================= =========================
 
-- Naviguation Shortcuts:
+- Navigation Shortcuts:
 
 ================================= =========================
 Action                            Shortcut
