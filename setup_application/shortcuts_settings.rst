@@ -106,8 +106,6 @@ Action                            Shortcut
 Zoom in                           :kbd:`Ctrl++`
 Zoom out                          :kbd:`Ctrl+-`
 Zoom 100%                         :kbd:`Ctrl+.`
-Fit Horizontally                  :kbd:`Ctrl+*`
-Fit Vertically                    :kbd:`Ctrl+/`
 Fit to window                     :kbd:`Ctrl+Alt+E`
 Fit to selection                  :kbd:`Ctrl+Alt+S`
 ================================= =========================
@@ -169,8 +167,6 @@ Back                              :kbd:`Alt+Left`
 Forward                           :kbd:`Alt+Right`
 First Image                       :kbd:`Ctrl+Home`
 Last Image                        :kbd:`Ctrl+End`
-Left                              :kbd:`Ctrl+Shift+Left`
-Right                             :kbd:`Ctrl+Shift+Right`
 Next Left Side-bar Tab            :kbd:`Ctrl+Alt+End`
 Next Right Side-bar Tab           :kbd:`Ctrl+Alt+PgDown`
 Next Image                        :kbd:`Space`
@@ -188,7 +184,12 @@ Close                             :kbd:`Alt+F4`
 Quit                              :kbd:`Ctrl+Q`
 Move to Trash                     :kbd:`Del`
 Delete items permanently          :kbd:`Shift+Del`
+Rotate Left                       :kbd:`Ctrl+Shift+Left`
+Rotate Right                      :kbd:`Ctrl+Shift+Right`
+Flip Horizontally                 :kbd:`Ctrl+*`
+Flip Vertically                   :kbd:`Ctrl+/`
 Turn On/Off Color Management View :kbd:`F12`
+Find Action in Menu               :kbd:`Ctrl+Alt+I`
 What's This?                      :kbd:`Shift+F1`
 ================================= =========================
 
@@ -196,7 +197,8 @@ What's This?                      :kbd:`Shift+F1`
 ================================= =========================
 Action                            Shortcut
 ================================= =========================
-Rename                            :kbd:`F2`
+Rename Item                       :kbd:`F2`
+Rename Album                      :kbd:`Shift+F2`
 New Album                         :kbd:`Ctrl+N`
 Edit Album Properties             :kbd:`Alt+Return`
 Edit Comments                     :kbd:`Alt+Shift+C`
