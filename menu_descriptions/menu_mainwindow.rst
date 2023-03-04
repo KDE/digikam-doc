@@ -655,7 +655,7 @@ The Help Menu
     :alt:
     :align: center
 
-    The Dilog to Find Action in Menu
+    The Dialog to Find Action in Menu
 
 .. _help_rawcamera:
 
