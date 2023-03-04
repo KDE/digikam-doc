@@ -651,6 +651,12 @@ The Help Menu
 
     Search a menu action in application window.
 
+.. figure:: images/menu_find_action.webp
+    :alt:
+    :align: center
+
+    The Dilog to Find Action in Menu
+
 .. _help_rawcamera:
 
 :menuselection:`Help --> Supported RAW Camera`
