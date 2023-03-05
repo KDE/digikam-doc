@@ -1,6 +1,6 @@
 .. meta::
    :description: Overview to digiKam Light Table
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, light table, synchronize, by-pair, compare
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, light table, synchronize, by-pair, compare, preview, canvas
 
 .. metadata-placeholder
 
@@ -58,7 +58,7 @@ Another mode is better suited for quickly culling from a series of images. If yo
 
 Of course, the usual edit actions work from the light table directly using :menuselection:`File --> Edit...` :kbd:`F4`. This open current selected preview canvas in **Image Editor**.
 
-All image information from the main window right sidebar is available for each of the two previews in the light table. This makes it easy to link visual differences to exposure data for example.
+All image information from the main window right sidebar is available for each of the two previews in the light table. The Light Table **Left Sidebar** is dedicated to the **Left Pane**, and the **Right Sidebar** for the **Right Pane**. This makes it easy to link visual differences to exposure data for example.
 
 In the lower right corner of each pane there you find a built-in panning action (crossed arrows). Click on it and keep the left mouse button pressed to pan across the image (with **Synchrone** mode, both images will show the same viewing point).
 
@@ -66,7 +66,7 @@ Zooming works the same as in other views: use indifferently the zoom slider belo
 
 .. tip::
 
-    If you use mutiscreen on your computer, it's a good idea to place **Main Window** on a screen and the **Light Table** on other one to increase your experience.
+    If you use muti-screen on your computer, it's a good idea to place **Main Window** on a screen and the **Light Table** on other one to increase your experience.
 
 .. note::
 
