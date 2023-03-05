@@ -30,13 +30,13 @@ After all, the camera profile should provide the best *fit* to the colors record
 
 However, there is one other good reason to not want to edit your image in your camera profile color space. If you look at the size of a typical camera profile, it is on the order of a quarter to a half a megabyte or more. It's got a lot of information about all the changes that need to be made at different regions of color and tonality in the original scene, to get accurate color rendition from the RGB values that come out of the RAW processor. The camera profile is accurate (at least for colors in the original target) but not particularly mathematically smooth. Working space color profiles, on the other hand, are very small in size (half a kilobyte instead of half a megabyte) because they describe a color gamut in terms of smooth, continuous mathematical functions. Working space profiles don't need to make allowances for the *messiness* of real world sensors, so the mathematical manipulations performed during image editing will go much more smoothly and accurately than if you try to edit your image while it is still in the camera color space.
 
-Working space profiles are characterized by:
+Working Space Profiles are characterized by:
 
-    - **Gamma** (or other transfer function), which dictates how much the original linear intensity values captured by the camera sensor (and subjected to the in-camera A-to-D conversion, then interpolated by the RAW processing program to produce the image file) are altered to make editing easier or more precise.
+    - **Gamma** transfer function, which dictates how much the original linear intensity values captured by the camera sensor are altered to make editing easier or more precise. These values from the camera are subjected to the in-camera A-to-D conversion, then interpolated by the RAW processing program to produce the image file.
 
     - RGB primaries which dictate the range of colors, that is, the color **Gamut**, covered by a given profile.
 
-    - **White point** (usually D50 or D65 though other values may be used), which specifies the color temperature of the white point of the working space.
+    - **White point**, usually D50 or D65 though other values may be used, which specifies the white point color temperature of the working space.
 
 Confusions Terminology
 ----------------------
