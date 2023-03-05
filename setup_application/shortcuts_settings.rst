@@ -55,9 +55,10 @@ You can also work with **Schemes**. These ones are keyboard shortcuts configurat
 Default Shortcuts
 -----------------
 
-digiKam define these keyboard shortcuts by default:
+digiKam define these keyboard shortcuts by default.
 
-- Rating assignment:
+Rating Assignment
+~~~~~~~~~~~~~~~~~
 
 ================================= =========================
 Rating                            Shortcut
@@ -70,7 +71,8 @@ No rating                         :kbd:`Ctrl+0`
 5 stars                           :kbd:`Ctrl+5`
 ================================= =========================
 
-- Pick Label assignment:
+Pick Label Assignment
+~~~~~~~~~~~~~~~~~~~~~
 
 ================================= =========================
 Pick Label                        Shortcut
@@ -81,7 +83,8 @@ Pending                           :kbd:`Alt+2`
 Accepted                          :kbd:`Alt+3`
 ================================= =========================
 
-- Color Label assignment:
+Color Label Assignment
+~~~~~~~~~~~~~~~~~~~~~~
 
 ================================= =========================
 Color Label                       Shortcut
@@ -98,7 +101,8 @@ Black                             :kbd:`Ctrl+Alt+8`
 White                             :kbd:`Ctrl+Alt+9`
 ================================= =========================
 
-- Zooming:
+Zooming
+~~~~~~~
 
 ================================= =========================
 Action                            Shortcut
@@ -110,7 +114,8 @@ Fit to window                     :kbd:`Ctrl+Alt+E`
 Fit to selection                  :kbd:`Ctrl+Alt+S`
 ================================= =========================
 
-- Slide-Show:
+Slide-Show
+~~~~~~~~~~
 
 ================================= =========================
 Action                            Shortcut
@@ -121,7 +126,8 @@ Play with Sub-Albums              :kbd:`Shift+F9`
 Presentation                      :kbd:`Shift+Alt+F9`
 ================================= =========================
 
-- Views Shortcuts:
+Views Control
+~~~~~~~~~~~~~
 
 ================================= =========================
 Action                            Shortcut
@@ -141,9 +147,11 @@ Exit Preview Mode                 :kbd:`Esc`
 Toggle Left Side-bar              :kbd:`Ctrl+Alt+Left`
 Toggle Right Side-bar             :kbd:`Ctrl+Alt+Right`
 Refresh                           :kbd:`F5`
+Turn On/Off Color Management View :kbd:`F12`
 ================================= =========================
 
-- Main Tools:
+Main Tools
+~~~~~~~~~~
 
 ================================= =========================
 Action                            Shortcut
@@ -158,7 +166,8 @@ Add to Current Queue              :kbd:`Ctrl+B`
 Add to new Queue                  :kbd:`Ctrl+Shift+B`
 ================================= =========================
 
-- Navigation Shortcuts:
+Items Navigation
+~~~~~~~~~~~~~~~~
 
 ================================= =========================
 Action                            Shortcut
@@ -175,25 +184,8 @@ Previous Left Side-bar Tab        :kbd:`Ctrl+Alt+Home`
 Previous Right Side-bar Tab       :kbd:`Ctrl+Alt+PgUp`
 ================================= =========================
 
-- General Shortcuts:
-
-================================= =========================
-Action                            Shortcut
-================================= =========================
-Close                             :kbd:`Alt+F4`
-Quit                              :kbd:`Ctrl+Q`
-Move to Trash                     :kbd:`Del`
-Delete items permanently          :kbd:`Shift+Del`
-Rotate Left                       :kbd:`Ctrl+Shift+Left`
-Rotate Right                      :kbd:`Ctrl+Shift+Right`
-Flip Horizontally                 :kbd:`Ctrl+*`
-Flip Vertically                   :kbd:`Ctrl+/`
-Turn On/Off Color Management View :kbd:`F12`
-Find Action in Menu               :kbd:`Ctrl+Alt+I`
-What's This?                      :kbd:`Shift+F1`
-================================= =========================
-
-- Post Processing:
+Item Manipulation
+~~~~~~~~~~~~~~~~~
 
 ================================= =========================
 Action                            Shortcut
@@ -201,20 +193,52 @@ Action                            Shortcut
 Rename Item                       :kbd:`F2`
 Rename Album                      :kbd:`Shift+F2`
 New Album                         :kbd:`Ctrl+N`
+Move Item to Trash                :kbd:`Del`
+Delete Item permanently           :kbd:`Shift+Del`
+Rotate Item Left                  :kbd:`Ctrl+Shift+Left`
+Rotate Item Right                 :kbd:`Ctrl+Shift+Right`
+Flip Item Horizontally            :kbd:`Ctrl+*`
+Flip Item Vertically              :kbd:`Ctrl+/`
+================================= =========================
+
+Application Operations
+~~~~~~~~~~~~~~~~~~~~~~
+
+================================= =========================
+Action                            Shortcut
+================================= =========================
+Close Window                      :kbd:`Alt+F4`
+Quit Application                  :kbd:`Ctrl+Q`
+Configure Application             :kbd:`Ctrl+Shift+,`
+Configure Keyboard Shortcuts      :kbd:`Ctrl+Alt`
+Show Menubar                      :kbd:`Ctrl+M`
+Show Thumbbar                     :kbd:`Ctrl+T`
+Find Action in Menu               :kbd:`Ctrl+Alt+I`
+What's This?                      :kbd:`Shift+F1`
+================================= =========================
+
+Post Processing
+~~~~~~~~~~~~~~~
+
+================================= =========================
+Action                            Shortcut
+================================= =========================
 Edit Album Properties             :kbd:`Alt+Return`
 Edit Comments                     :kbd:`Alt+Shift+C`
 Edit Titles                       :kbd:`Alt+Shift+T`
 Edit Geolocation                  :kbd:`Ctrl+Shift+G`
 Edit Metadata                     :kbd:`Ctrl+Shift+M`
 Assign Tag                        :kbd:`T`
+Show Assigned Tags                :kbd:`Alt+Shift+A`
 Adjust Date and Time              :kbd:`Ctrl+Shift+D`
 Create Html gallery               :kbd:`Ctrl+Alt+Shift+H`
-Search                            :kbd:`Ctrl+F`
+Search Text                       :kbd:`Ctrl+F`
 Advanced Search                   :kbd:`Ctrl+Alt+F`
 Find Duplicates                   :kbd:`Ctrl+D`
 ================================= =========================
 
-- Export Tools:
+Export Tools
+~~~~~~~~~~~~~~
 
 ================================= =========================
 Action                            Shortcut
@@ -233,7 +257,8 @@ Export to remote storage          :kbd:`Ctrl+Alt+Shift+K`
 Export to SmugMug                 :kbd:`Ctrl+Alt+Shift+S`
 ================================= =========================
 
-- Import Tools:
+Import Tools
+~~~~~~~~~~~~
 
 ================================= =========================
 Action                            Shortcut
@@ -244,19 +269,8 @@ Import from remote storage        :kbd:`Alt+Shift+K`
 Import from SmugMug               :kbd:`Alt+Shift+S`
 ================================= =========================
 
-- Configure Shortcuts:
-
-================================= =========================
-Action                            Shortcut
-================================= =========================
-Configure digiKam                 :kbd:`Ctrl+Shift+,`
-Configure Keyboard Shortcuts      :kbd:`Ctrl+Alt`
-Show Assigned Tags                :kbd:`Alt+Shift+A`
-Show Menubar                      :kbd:`Ctrl+M`
-Show Thumbbar                     :kbd:`Ctrl+T`
-================================= =========================
-
-- Selection Shortcuts:
+Selection Operations
+~~~~~~~~~~~~~~~~~~~~
 
 ================================= =========================
 Action                            Shortcut
