@@ -34,6 +34,8 @@ The first step is to have digiKam finding all those pics that show faces not eve
 
     - **Clear Unconfirmed Results And Rescan**: remove all faces registered in database with no name and process again an analysis.
 
+    - **Clear all Previous Results and Rescan**: remove all previous faces registered in database and process again an analysis.
+
 .. figure:: images/mainwindow_faces_settings1.webp
     :alt:
     :align: center
