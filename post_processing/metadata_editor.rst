@@ -181,13 +181,37 @@ The sections available in this view are listed below:
 
     - **Content**: Describe the visual content of the item.
 
+    .. figure:: images/metadata_editor_xmp_content.webp
+        :alt:
+        :align: center
+
+        The XMP Content View from Edit Metadata Tool
+
     - **Origin**: Formal descriptive information about the item.
+
+    .. figure:: images/metadata_editor_xmp_origin.webp
+        :alt:
+        :align: center
+
+        The XMP Origin View from Edit Metadata Tool
 
     - **Credits**: Record copyright information about the item.
 
     - **Subjects**: Record subject information about the item.
 
+    .. figure:: images/metadata_editor_xmp_subjects.webp
+        :alt:
+        :align: center
+
+        The XMP Subjects View from Edit Metadata Tool
+
     - **Keywords**: Record keywords relevant to the item.
+
+    .. figure:: images/metadata_editor_xmp_keywords.webp
+        :alt:
+        :align: center
+
+        The XMP Keywords View from Edit Metadata Tool
 
     - **Categories**: Record categories relevant to the item.
 
