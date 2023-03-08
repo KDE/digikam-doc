@@ -37,25 +37,55 @@ Exif Tab
 
 Most common Exif tags used by camera devices are listed for editing with standardized values.
 
-.. figure:: images/metadata_editor_exif.webp
-    :alt:
-    :align: center
-
-    The Exif Tab from Edit Metadata Tool
-
 The sections available in this view are listed below:
 
     - **Caption**: Record technical descriptions.
 
+    .. figure:: images/metadata_editor_exif_caption.webp
+        :alt:
+        :align: center
+
+        The Exif Caption View from Edit Metadata Tool
+
     - **Date and Time**: Record camera time-stamp properties.
+
+    .. figure:: images/metadata_editor_exif_date.webp
+        :alt:
+        :align: center
+
+        The Exif Date and Time View from Edit Metadata Tool
 
     - **Lens**: Record lens details used with camera.
 
+    .. figure:: images/metadata_editor_exif_lens.webp
+        :alt:
+        :align: center
+
+        The Exif Lens View from Edit Metadata Tool
+
     - **Device**: Record shot conditions used by camera.
+
+    .. figure:: images/metadata_editor_exif_device.webp
+        :alt:
+        :align: center
+
+        The Exif Device View from Edit Metadata Tool
 
     - **Light**: Record ambient condition captured by camera.
 
+    .. figure:: images/metadata_editor_exif_light.webp
+        :alt:
+        :align: center
+
+        The Exif Light View from Edit Metadata Tool
+
     - **Adjustments**: Record technical details used by camera.
+
+    .. figure:: images/metadata_editor_exif_adjustments.webp
+        :alt:
+        :align: center
+
+        The Exif Adjustments View from Edit Metadata Tool
 
 IPTC Tab
 --------
