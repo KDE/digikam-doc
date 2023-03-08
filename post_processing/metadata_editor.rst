@@ -197,6 +197,12 @@ The sections available in this view are listed below:
 
     - **Credits**: Record copyright information about the item.
 
+    .. figure:: images/metadata_editor_xmp_credits.webp
+        :alt:
+        :align: center
+
+        The XMP Credits View from Edit Metadata Tool
+
     - **Subjects**: Record subject information about the item.
 
     .. figure:: images/metadata_editor_xmp_subjects.webp
@@ -215,6 +221,24 @@ The sections available in this view are listed below:
 
     - **Categories**: Record categories relevant to the item.
 
+    .. figure:: images/metadata_editor_xmp_categories.webp
+        :alt:
+        :align: center
+
+        The XMP Categories View from Edit Metadata Tool
+
     - **Status**: Record workflow information.
 
+    .. figure:: images/metadata_editor_xmp_status.webp
+        :alt:
+        :align: center
+
+        The XMP Status View from Edit Metadata Tool
+
     - **Properties**: Record workflow properties.
+
+    .. figure:: images/metadata_editor_xmp_properties.webp
+        :alt:
+        :align: center
+
+        The XMP Properties View from Edit Metadata Tool
