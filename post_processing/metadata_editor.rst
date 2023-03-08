@@ -102,21 +102,75 @@ The sections available in this view are listed below:
 
     - **Content**: Describe the visual content of the item.
 
+    .. figure:: images/metadata_editor_iptc_content.webp
+        :alt:
+        :align: center
+
+        The IPTC Content View from Edit Metadata Tool
+
     - **Origin**: Formal descriptive information about the item.
+
+    .. figure:: images/metadata_editor_iptc_origin.webp
+        :alt:
+        :align: center
+
+        The IPTC Origin View from Edit Metadata Tool
 
     - **Credits**: Record copyright information about the item.
 
+    .. figure:: images/metadata_editor_iptc_credits.webp
+        :alt:
+        :align: center
+
+        The IPTC Credits View from Edit Metadata Tool
+
     - **Subjects**: Record subject information about the item.
+
+    .. figure:: images/metadata_editor_iptc_subjects.webp
+        :alt:
+        :align: center
+
+        The IPTC Subjects View from Edit Metadata Tool
 
     - **Keywords**: Record keywords relevant to the item.
 
+    .. figure:: images/metadata_editor_iptc_keywords.webp
+        :alt:
+        :align: center
+
+        The IPTC Keywords View from Edit Metadata Tool
+
     - **Categories**: Record categories relevant to the item.
+
+    .. figure:: images/metadata_editor_iptc_categories.webp
+        :alt:
+        :align: center
+
+        The IPTC Categories View from Edit Metadata Tool
 
     - **Status**: Record workflow information.
 
+    .. figure:: images/metadata_editor_iptc_status.webp
+        :alt:
+        :align: center
+
+        The IPTC Status View from Edit Metadata Tool
+
     - **Properties**: Record workflow properties.
 
+    .. figure:: images/metadata_editor_iptc_properties.webp
+        :alt:
+        :align: center
+
+        The IPTC Properties View from Edit Metadata Tool
+
     - **Envelope**: Record editorial details.
+
+    .. figure:: images/metadata_editor_iptc_envelope.webp
+        :alt:
+        :align: center
+
+        The IPTC Envelope View from Edit Metadata Tool
 
 XMP Tab
 -------
