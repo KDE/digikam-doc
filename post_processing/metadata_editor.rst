@@ -45,7 +45,7 @@ Most common Exif tags used by camera devices are listed for editing with standar
 
 The sections available in this view are listed below:
 
-    - **Caption**: Record technical descriptions from the camera. All text fields in this section are limited to ASCII characters unless stated otherwise.
+    - **Caption**: record technical descriptions from the camera. All text fields in this section are limited to ASCII characters unless stated otherwise.
 
         - **Name**: host the name of the document from which this image was been scanned.
         - **Description**: host the image description.
@@ -59,18 +59,22 @@ The sections available in this view are listed below:
 
         The Exif Caption View from Edit Metadata Tool
 
-    - **Date and Time**: Record camera time-stamp properties.
+    - **Date and Time**: record camera time-stamp properties.
 
-        - **Creation date and time**: this checkbox allow to edit the date and time of image creation. When this option is enabled the date and time of the file was also changed. Use the calendar editor widget on the bottom to select the time-stamp. This last one can be sync with **XMP creation date** and **IPTC creation date**.
-        - **Creation sub-second**: This checkbox allow to edit the fractions of seconds for the date and time of image creation.
-    
+        - **Creation date and time**: this checkbox allows to edit the date and time of image creation. It is the date and time corresponding to the time-stamp when the file was changed. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer. This last one can be sync with **XMP creation date** and **IPTC creation date**.
+        - **Creation sub-second**: this checkbox allows to edit the fractions of seconds for the date and time of image creation.
+        - **Original date and time**: this checkbox allows to edit the date and time when the original image data was generated. For a digital still camera the date and time corresponding to the time-stamp when the picture was taken are recorded. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+        - **Original sub-second**: this checkbox allows to edit the fractions of seconds for the date and time when the original image data was generated.
+        - **Digitization date and time**: this checkbox allows to edit the date and time when the image was stored as digital data. If, for example, an image was captured by a digital still camera and at the same time the file was recorded, then Original and Digitization date and time will have the same contents. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+        - **Digitization sub-second**: this checkbox allows to edit the fractions of seconds for the date and time when the image was stored as digital data.
+
     .. figure:: images/metadata_editor_exif_date.webp
         :alt:
         :align: center
 
         The Exif Date and Time View from Edit Metadata Tool
 
-    - **Lens**: Record lens details used with camera.
+    - **Lens**: record lens details used with camera.
 
     .. figure:: images/metadata_editor_exif_lens.webp
         :alt:
@@ -78,7 +82,7 @@ The sections available in this view are listed below:
 
         The Exif Lens View from Edit Metadata Tool
 
-    - **Device**: Record shot conditions used by camera.
+    - **Device**: record shot conditions used by camera.
 
     .. figure:: images/metadata_editor_exif_device.webp
         :alt:
@@ -86,7 +90,7 @@ The sections available in this view are listed below:
 
         The Exif Device View from Edit Metadata Tool
 
-    - **Light**: Record ambient condition captured by camera.
+    - **Light**: record ambient condition captured by camera.
 
     .. figure:: images/metadata_editor_exif_light.webp
         :alt:
@@ -94,7 +98,7 @@ The sections available in this view are listed below:
 
         The Exif Light View from Edit Metadata Tool
 
-    - **Adjustments**: Record technical details used by camera.
+    - **Adjustments**: record technical details used by camera.
 
     .. figure:: images/metadata_editor_exif_adjustments.webp
         :alt:
@@ -109,7 +113,7 @@ Most common IPTC tags used by photo-agencies are listed for editing. Pre-configu
 
 The sections available in this view are listed below:
 
-    - **Content**: Describe the visual content of the item.
+    - **Content**: describe the visual content of the item.
 
     .. figure:: images/metadata_editor_iptc_content.webp
         :alt:
@@ -117,7 +121,7 @@ The sections available in this view are listed below:
 
         The IPTC Content View from Edit Metadata Tool
 
-    - **Origin**: Formal descriptive information about the item.
+    - **Origin**: formal descriptive information about the item.
 
     .. figure:: images/metadata_editor_iptc_origin.webp
         :alt:
@@ -125,7 +129,7 @@ The sections available in this view are listed below:
 
         The IPTC Origin View from Edit Metadata Tool
 
-    - **Credits**: Record copyright information about the item.
+    - **Credits**: record copyright information about the item.
 
     .. figure:: images/metadata_editor_iptc_credits.webp
         :alt:
@@ -133,7 +137,7 @@ The sections available in this view are listed below:
 
         The IPTC Credits View from Edit Metadata Tool
 
-    - **Subjects**: Record subject information about the item.
+    - **Subjects**: record subject information about the item.
 
     .. figure:: images/metadata_editor_iptc_subjects.webp
         :alt:
@@ -141,7 +145,7 @@ The sections available in this view are listed below:
 
         The IPTC Subjects View from Edit Metadata Tool
 
-    - **Keywords**: Record keywords relevant to the item.
+    - **Keywords**: record keywords relevant to the item.
 
     .. figure:: images/metadata_editor_iptc_keywords.webp
         :alt:
@@ -149,7 +153,7 @@ The sections available in this view are listed below:
 
         The IPTC Keywords View from Edit Metadata Tool
 
-    - **Categories**: Record categories relevant to the item.
+    - **Categories**: record categories relevant to the item.
 
     .. figure:: images/metadata_editor_iptc_categories.webp
         :alt:
@@ -157,7 +161,7 @@ The sections available in this view are listed below:
 
         The IPTC Categories View from Edit Metadata Tool
 
-    - **Status**: Record workflow information.
+    - **Status**: record workflow information.
 
     .. figure:: images/metadata_editor_iptc_status.webp
         :alt:
@@ -165,7 +169,7 @@ The sections available in this view are listed below:
 
         The IPTC Status View from Edit Metadata Tool
 
-    - **Properties**: Record workflow properties.
+    - **Properties**: record workflow properties.
 
     .. figure:: images/metadata_editor_iptc_properties.webp
         :alt:
@@ -173,7 +177,7 @@ The sections available in this view are listed below:
 
         The IPTC Properties View from Edit Metadata Tool
 
-    - **Envelope**: Record editorial details.
+    - **Envelope**: record editorial details.
 
     .. figure:: images/metadata_editor_iptc_envelope.webp
         :alt:
@@ -188,7 +192,7 @@ Xmp is an evolution of IPTC removing limitations of information size. XMP tab is
 
 The sections available in this view are listed below:
 
-    - **Content**: Describe the visual content of the item.
+    - **Content**: describe the visual content of the item.
 
     .. figure:: images/metadata_editor_xmp_content.webp
         :alt:
@@ -196,7 +200,7 @@ The sections available in this view are listed below:
 
         The XMP Content View from Edit Metadata Tool
 
-    - **Origin**: Formal descriptive information about the item.
+    - **Origin**: formal descriptive information about the item.
 
     .. figure:: images/metadata_editor_xmp_origin.webp
         :alt:
@@ -204,7 +208,7 @@ The sections available in this view are listed below:
 
         The XMP Origin View from Edit Metadata Tool
 
-    - **Credits**: Record copyright information about the item.
+    - **Credits**: record copyright information about the item.
 
     .. figure:: images/metadata_editor_xmp_credits.webp
         :alt:
@@ -212,7 +216,7 @@ The sections available in this view are listed below:
 
         The XMP Credits View from Edit Metadata Tool
 
-    - **Subjects**: Record subject information about the item.
+    - **Subjects**: record subject information about the item.
 
     .. figure:: images/metadata_editor_xmp_subjects.webp
         :alt:
@@ -220,7 +224,7 @@ The sections available in this view are listed below:
 
         The XMP Subjects View from Edit Metadata Tool
 
-    - **Keywords**: Record keywords relevant to the item.
+    - **Keywords**: record keywords relevant to the item.
 
     .. figure:: images/metadata_editor_xmp_keywords.webp
         :alt:
@@ -228,7 +232,7 @@ The sections available in this view are listed below:
 
         The XMP Keywords View from Edit Metadata Tool
 
-    - **Categories**: Record categories relevant to the item.
+    - **Categories**: record categories relevant to the item.
 
     .. figure:: images/metadata_editor_xmp_categories.webp
         :alt:
@@ -236,7 +240,7 @@ The sections available in this view are listed below:
 
         The XMP Categories View from Edit Metadata Tool
 
-    - **Status**: Record workflow information.
+    - **Status**: record workflow information.
 
     .. figure:: images/metadata_editor_xmp_status.webp
         :alt:
@@ -244,7 +248,7 @@ The sections available in this view are listed below:
 
         The XMP Status View from Edit Metadata Tool
 
-    - **Properties**: Record workflow properties.
+    - **Properties**: record workflow properties.
 
     .. figure:: images/metadata_editor_xmp_properties.webp
         :alt:
