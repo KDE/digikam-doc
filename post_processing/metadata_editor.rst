@@ -45,7 +45,7 @@ Most common Exif tags used by camera devices are listed for editing with standar
 
 The sections available in this view are listed below:
 
-    - **Caption**: Record technical descriptions from the camera. All text field in this section are limited to ASCII characters unless stated otherwise.
+    - **Caption**: Record technical descriptions from the camera. All text fields in this section are limited to ASCII characters unless stated otherwise.
 
         - **Name**: host the name of the document from which this image was been scanned.
         - **Description**: host the image description.
@@ -61,6 +61,9 @@ The sections available in this view are listed below:
 
     - **Date and Time**: Record camera time-stamp properties.
 
+        - **Creation date and time**: this checkbox allow to edit the date and time of image creation. When this option is enabled the date and time of the file was also changed. Use the calendar editor widget on the bottom to select the time-stamp. This last one can be sync with **XMP creation date** and **IPTC creation date**.
+        - **Creation sub-second**: This checkbox allow to edit the fractions of seconds for the date and time of image creation.
+    
     .. figure:: images/metadata_editor_exif_date.webp
         :alt:
         :align: center
