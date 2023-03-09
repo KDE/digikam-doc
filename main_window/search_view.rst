@@ -47,7 +47,7 @@ If you want to delete or rename a saved search from the list, click with the rig
 The Advanced Search Tool
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Advanced Search tool provides an extended search form which can be used to search in specific fields of the digiKam database in a more sophisticated way. Click the **Advanced Search...** button and it will come up like this:
+Advanced Search tool provides an extended search form which can be used to search in specific fields of the digiKam database in a more sophisticated way. Click the **New Advanced Search...** button and it will come up like this:
 
 .. figure:: images/mainwindow_advancedsearchtool.webp
     :alt:
