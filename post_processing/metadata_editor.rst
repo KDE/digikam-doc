@@ -45,7 +45,13 @@ Most common Exif tags used by camera devices are listed for editing with standar
 
 The sections available in this view are listed below:
 
-    - **Caption**: Record technical descriptions.
+    - **Caption**: Record technical descriptions from the camera. All text field in this section are limited to ASCII characters unless stated otherwise.
+
+        - **Name**: host the name of the document from which this image was been scanned.
+        - **Description**: host the image description.
+        - **Artist**: host the image author's name separated by semi-colons.
+        - **Copyright**: host the copyright owner of the image.
+        - **Caption**: host the image's caption. This field is not limited. UTF8 encoding will be used to save the text. This filed can be synchronized with **JFIF Comment section**, **XMP caption**, and **IPTC caption** (warning: limited to 2000 characters)
 
     .. figure:: images/metadata_editor_exif_caption.webp
         :alt:
