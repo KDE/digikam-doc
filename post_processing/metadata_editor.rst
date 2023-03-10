@@ -168,10 +168,10 @@ The sections available in this view are listed below:
         - **Digitization date** and **Digitization time**: these checkbox allows to edit the date, time, and zone of the digital representation. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
         - **Creation date** and **Creation time**: these checkbox allows to edit the date, time, and zone of the intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer. This values can be synchronized with the **Exif Creation date**.
         - **Location**: this checkbox allows to edit the full country names referenced by the content. Multiple pre-configured entries can be append to the list.
-        - **City**: 
-        - **Sublocation**: 
-        - **State/Province**: 
-        - **Country**: 
+        - **City**: this checkbox allows to edit the city of content origin. This field is limited to 32 characters.
+        - **Sublocation**: this checkbox allows to edit the content location within city. This field is limited to 32 characters.
+        - **State/Province**: this checkbox allows to edit the Province or State of content origin. This field is limited to 32 characters.
+        - **Country**: this checkbox allows to select the country name of content origin.
 
     .. figure:: images/metadata_editor_iptc_origin.webp
         :alt:
