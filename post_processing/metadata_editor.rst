@@ -90,6 +90,24 @@ The sections available in this view are listed below:
 
     - **Device**: record shot conditions used by camera.
 
+        ..warning ::
+
+            `Exif Makernotes <hhttps://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_data>`_ can be unreadable if you set                  wrong **device manufacturer/model** description.
+
+        - **Device manufacturer**: this checkbox allows to edit the manufacturer of image input equipment used to take the picture. This field is limited to ASCII characters.
+        - **Device model**: this checkbox allows to edit the model of image input equipment used to take the picture. This field is limited to ASCII characters.
+        - **Device type**: this checkbox allows to edit the image input equipment type used to take the picture. Possible values are **Film scanner**, **Reflection print scanner**, and **Digital still camera**.
+        - **Exposure time**: this checkbox allows to edit the exposure time of picture, given in seconds.
+        - **Exposure program**: this checkbox allows to edit the program used by the camera to set exposure when the picture was taken. Possible values are **Not defined**, **Manual**, **Auto**, **Aperture priority**, **Shutter priority**, **Creative program**, **Action program**, **Portrait mode**, and **Landscape mode**.
+        - **Exposure mode**: 
+        - **Device manufacturer**: this checkbox allows to edit the mode used by the camera to set exposure when the picture was taken. In auto-bracketing mode, the camera shoots a series of frames of the same scene at different exposure settings. Possible values are **Auto**, **Manual**, and **Auto bracket**.
+        - **Exposure bias**: this checkbox allows to edit the exposure bias value (in APEX units) used by camera to take the picture.
+        - **Metering mode**: this checkbox allows to edit the metering mode used by the camera to set exposure when the picture was taken. Possible values are **Unknown**, **Average**, **Center weighted average**, **Spot**, **Multi-spot**, **Multi-segment**, **Partial**, and **Other**.
+        - **Sensitivity**: this checkbox allows to edit the ISO Speed of the camera which took the picture.
+        - **Sensing method**: this checkbox allows to edit the image sensor type used by the camera to take the picture. Possible values are **Not defined**, **One-chip color area**, **Two-chip color area**, **three-chip color area**, **Color sequential area**, **Trilinear sensor**, and **Color sequential linear**.
+        - **Scene capture type**: this checkbox allows to edit the type of scene used by the camera to take the picture. Possible values are **Standard**, **Landscape**, **Portrait**, and **Night scene**.
+        - **Subject distance type**: this checkbox allows to edit the type of distance between the subject and the image input equipment. Possible values are **Unknown**, **Macro**, **Close view**, and **Distant view**.
+
     .. figure:: images/metadata_editor_exif_device.webp
         :alt:
         :align: center
