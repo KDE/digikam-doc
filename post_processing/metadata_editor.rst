@@ -34,6 +34,8 @@ In addition to Exif, IPTC and XMP formats are supported, so you can perform the 
 
 You can synchronize some specific metadata entries from one chunk to another one, as for example the comments which is available in Exif, IPTC, and XMP as separate entries. Mark the check boxes corresponding to the entries you wish to copy from one format to another.
 
+If you select many items from the icon-view, the metadata editor dialog allow to process the selection. With the **Previous** and **Next** buttons, you can navigate between items. The current filename and the index in the selection are given on the dialog title. A preview of current item is visible on the dialog header from the top.
+
 .. caution::
 
     Synchronizing metadata may produce undesired results because Exif is limited to ASCII character-set.
