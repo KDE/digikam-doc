@@ -131,6 +131,13 @@ The sections available in this view are listed below:
 
     - **Adjustments**: record technical details used by camera.
 
+        - **Brightness**: this checkbox allows to edit the brightness adjustment value in APEX unit used by camera to take the picture.
+        - **Gain Control**: this checkbox allows to edit the degree of overall image gain adjustment used by camera to take the picture. Possible values are **None**, **Low gain up**, **High gain up**, **Low gain down**, and **High gain down**.
+        - **Contrast**: this checkbox allows to edit the direction of contrast processing applied by the camera to take the picture. Possible values are **Normal**, **Soft**, and **Hard**.
+        - **Saturation**: this checkbox allows to edit the direction of saturation processing applied by the camera to take the picture. Possible values are **Normal**, **Low**, and **High**.
+        - **Sharpness**: this checkbox allows to edit the direction of sharpness processing applied by the camera to take the picture. Possible values are **Normal**, **Soft**, and **Hard**.
+        - **Custom rendered**: this checkbox allows to edit the use of special processing on image data, such as rendering geared to output. Possible values are **Normal process**, and **Custom process**.
+
     .. figure:: images/metadata_editor_exif_adjustments.webp
         :alt:
         :align: center
