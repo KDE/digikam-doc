@@ -147,11 +147,15 @@ The sections available in this view are listed below:
 IPTC Tab
 --------
 
-Most common IPTC tags used by photo-agencies are listed for editing. Pre-configured subjects can be used to describe the items contents based on IPTC reference codes.
+Most common IPTC tags used by photo-agencies are listed for editing. Pre-configured subjects can be used to describe the items contents based on IPTC reference codes. All text fields in IPTC tab are limited in size. Consider to use XMP tab instead.
 
 The sections available in this view are listed below:
 
     - **Content**: describe the visual content of the item.
+
+        - **Headline**: this checkbox allows to edit the content synopsis. This field is limited to 256 characters.
+        - **Caption**: this checkbox allows to edit the content description. This field is limited to 2000 characters. This filed can be synchronized with **JFIF Comment section**, and **Sync Exif Comment**
+        - **Caption Writer**: this checkbox allows to edit the names of the caption authors. Multiple entries limited to 32 characters can be append to the list.
 
     .. figure:: images/metadata_editor_iptc_content.webp
         :alt:
