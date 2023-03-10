@@ -90,7 +90,7 @@ The sections available in this view are listed below:
 
     - **Device**: record shot conditions used by camera.
 
-        ..warning ::
+        .. warning::
 
             `Exif Makernotes <hhttps://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_data>`_ can be unreadable if you set                  wrong **device manufacturer/model** description.
 
