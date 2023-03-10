@@ -53,7 +53,7 @@ The sections available in this view are listed below:
         - **Description**: host the image description.
         - **Artist**: host the image author's name separated by semi-colons.
         - **Copyright**: host the copyright owner of the image.
-        - **Caption**: host the image's caption. This field is not limited. UTF8 encoding will be used to save the text. This filed can be synchronized with **JFIF Comment section**, **XMP caption**, and **IPTC caption** (warning: limited to 2000 characters)
+        - **Caption**: host the image's caption. This field is not limited. UTF8 encoding will be used to save the text. This filed can be synchronized with the **JFIF Comment section**, **XMP caption**, and **IPTC caption** (warning: limited to 2000 characters)
 
     .. figure:: images/metadata_editor_exif_caption.webp
         :alt:
@@ -63,7 +63,7 @@ The sections available in this view are listed below:
 
     - **Date and Time**: record camera time-stamp properties.
 
-        - **Creation date and time**: this checkbox allows to edit the date and time of image creation. It is the date and time corresponding to the time-stamp when the file was changed. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer. This last one can be sync with **XMP creation date** and **IPTC creation date**.
+        - **Creation date and time**: this checkbox allows to edit the date and time of image creation. It is the date and time corresponding to the time-stamp when the file was changed. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer. This last one can be sync with the **XMP creation date** and **IPTC creation date**.
         - **Creation sub-second**: this checkbox allows to edit the fractions of seconds for the date and time of image creation.
         - **Original date and time**: this checkbox allows to edit the date and time when the original image data was generated. For a digital still camera the date and time corresponding to the time-stamp when the picture was taken are recorded. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
         - **Original sub-second**: this checkbox allows to edit the fractions of seconds for the date and time when the original image data was generated.
@@ -154,7 +154,7 @@ The sections available in this view are listed below:
     - **Content**: describe the visual content of the item.
 
         - **Headline**: this checkbox allows to edit the content synopsis. This field is limited to 256 characters.
-        - **Caption**: this checkbox allows to edit the content description. This field is limited to 2000 characters. This filed can be synchronized with **JFIF Comment section**, and **Sync Exif Comment**
+        - **Caption**: this checkbox allows to edit the content description. This field is limited to 2000 characters. This filed can be synchronized with the **JFIF Comment section**, and **Exif Comment**.
         - **Caption Writer**: this checkbox allows to edit the names of the caption authors. Multiple entries limited to 32 characters can be append to the list.
 
     .. figure:: images/metadata_editor_iptc_content.webp
@@ -166,10 +166,12 @@ The sections available in this view are listed below:
     - **Origin**: formal descriptive information about the item.
 
         - **Digitization date** and **Digitization time**: these checkbox allows to edit the date, time, and zone of the digital representation. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
-        - ****: 
-        - ****: 
-        - ****: 
-        - ****: 
+        - **Creation date** and **Creation time**: these checkbox allows to edit the date, time, and zone of the intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer. This values can be synchronized with the **Exif Creation date**.
+        - **Location**: this checkbox allows to edit the full country names referenced by the content. Multiple pre-configured entries can be append to the list.
+        - **City**: 
+        - **Sublocation**: 
+        - **State/Province**: 
+        - **Country**: 
 
     .. figure:: images/metadata_editor_iptc_origin.webp
         :alt:
