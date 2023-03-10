@@ -165,6 +165,12 @@ The sections available in this view are listed below:
 
     - **Origin**: formal descriptive information about the item.
 
+        - **Digitization date** and **Digitization time**: these checkbox allows to edit the date, time, and zone of the digital representation. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+        - ****: 
+        - ****: 
+        - ****: 
+        - ****: 
+
     .. figure:: images/metadata_editor_iptc_origin.webp
         :alt:
         :align: center
