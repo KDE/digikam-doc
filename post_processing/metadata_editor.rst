@@ -116,6 +116,11 @@ The sections available in this view are listed below:
 
     - **Light**: record ambient condition captured by camera.
 
+        - **Light source**: this checkbox allows to edit the kind of light source used to take the picture.
+        - **Flash mode**: this checkbox allows to edit the flash program mode used by the camera to take the picture.
+        - **Flash energy**: this checkbox allows to edit the flash energy used to take the picture in BCPS units. Beam Candle Power Seconds is the measure of effective intensity of a light source when it is focused into a beam by a reflector or lens. This value is the effective intensity for a period of one second.
+        - **White balance**: this checkbox allows to edit the white balance mode set by the camera when the picture was taken. Possible values are **Auto**, and **Manual**.
+
     .. figure:: images/metadata_editor_exif_light.webp
         :alt:
         :align: center
