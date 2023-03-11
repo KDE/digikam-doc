@@ -147,7 +147,7 @@ The sections available in this view are listed below:
 IPTC Tab
 --------
 
-Most common IPTC tags used by photo-agencies are listed for editing. Pre-configured subjects can be used to describe the items contents based on IPTC reference codes. All text fields in IPTC tab are limited in size. Consider to use XMP tab instead. Some fields can accept multiple entries to append on a list. Items can be managed with the **plus**, **trash**, and **refresh** buttons near the edited list. 
+Most common IPTC tags used by photo-agencies are listed for editing. Pre-configured subjects can be used to describe the items contents based on IPTC reference codes. All text fields in IPTC tab are limited in size. Consider to use XMP tab instead. Some fields can accept multiple entries to append on a list. Items can be managed with the **Add**, **Delete**, and **Replace** buttons near the edited list. 
 
 The sections available in this view are listed below:
 
@@ -210,6 +210,8 @@ The sections available in this view are listed below:
         The IPTC Subjects View from Edit Metadata Tool
 
     - **Keywords**: record keywords relevant to the item.
+
+        The **Use information retrieval words** checkbox allows to edit the keywords list used to define the content. Below a text field allows to enter a new keyword, limited to 64 characters. Use **Add** button to append the new keyword to the list. **Delete** button remove an entry, and **Replace** button change the current selected item on the list with the edit keyword value. 
 
     .. figure:: images/metadata_editor_iptc_keywords.webp
         :alt:
