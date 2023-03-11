@@ -243,6 +243,15 @@ The sections available in this view are listed below:
 
     - **Properties**: record workflow properties.
 
+        - **Release date** and **Release time**: these checkbox allows to edit the earliest intended usable date, time, and zone of intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+        - **Expiration date** and **Expiration time**: these checkbox allows to edit the latest intended usable date, time, and zone of intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+        - **Language**: this checkbox allows to select the language used by the content.
+        - **Priority**: this checkbox allows to select the editorial urgency of content. Possible values are **0: None**, **1: high**, **2**, **3**, **4**, **5: normal**, **6**, **7**, **8: low**, and **9: user-defined**.
+        - **Cycle**: this checkbox allows to select the editorial cycle of content. Possible values are **Morning**, **Afternoon**, and **Evening**.
+        - **Type**: this checkbox allows to select the content type. Possible values are **News**, **Data**, and **Advisory**. On the right you can edit the editorial type description of content. This field is limited to 64 characters.
+        - **Attribute**: this checkbox allows to select the editorial attributes of content and to edit the editorial attribute descriptions. Multiple entries can be append to the list. A description is limited to 64 characters.
+        - **Reference**: this checkbox allows to edit the original content transmission reference. This field is limited to 32 characters.
+
     .. figure:: images/metadata_editor_iptc_properties.webp
         :alt:
         :align: center
