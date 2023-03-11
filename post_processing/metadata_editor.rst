@@ -260,6 +260,15 @@ The sections available in this view are listed below:
 
     - **Envelope**: record editorial details.
 
+        - **Destination**: this checkbox allows to edit the envelope destination. This field is limited to 1024 characters.
+        - **U.N.O ID**: this checkbox allows to edit the Unique Name of Object identifier. This field is limited to 80 characters.
+        - **Product ID**: this checkbox allows to edit the product identifier. This field is limited to 32 characters.
+        - **Service ID**: this checkbox allows to edit the service identifier. This field is limited to 10 characters.
+        - **Envelope ID**: this checkbox allows to edit the envelope identifier. This field is limited to 8 characters.
+        - **Priority**: this checkbox allows to select the envelope urgency. Possible values are **0: None**, **1: high**, **2**, **3**, **4**, **5: normal**, **6**, **7**, **8: low**, and **9: user-defined**.
+        - **Format**: this checkbox allows to select the envelope file format.
+        - **Send date** and **Send time**: these checkbox allows to edit the date, time, and zone when the service sent the material usable. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+
     .. figure:: images/metadata_editor_iptc_envelope.webp
         :alt:
         :align: center
