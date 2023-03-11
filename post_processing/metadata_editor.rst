@@ -196,6 +196,13 @@ The sections available in this view are listed below:
 
     - **Subjects**: record subject information about the item.
 
+        - **Use structured definition of the subject matter**: this checkbox allows to edit the `IPTC/NAA taxonomy subject codes <https://iptc.org/standards/subject-codes/>`_, with a focus on text. It consists of about 1,400 terms structured into 3 levels. The **Use standard reference code** option allows to select the standard taxonomy, and the **Use custom definition** option allows to customize the values. More than one entries can be append to a list of reference.
+        - **IPR**: this field is the Informative Provider Reference. I.P.R is a name registered with the IPTC/NAA, identifying the provider that provides an indicator of the content. The default value for the I.P.R is *IPTC* if a standard Reference Code is used. This field is limited to 32 characters.
+        - **Reference**: this field is the Subject Reference Number. Provides a numeric code to indicate the Subject Name plus optional Subject Matter and Subject Detail Names in the language of the service. Subject Reference is a number from the range 01000000 to 17999999 and represent a language independent international reference to a Subject. A Subject is identified by its Reference Number and corresponding Names taken from a standard lists given by IPTC/NAA. If a standard reference code is used, these lists are the English language reference versions. This field is limited to 8 digit code.
+        - **Name**: this field is the Subject Name. English language is used if you selected a standard IPTC/NAA reference code. This field is limited to 64 characters.
+        - **Matter**: this field is the Subject Matter Name. English language is used if you selected a standard IPTC/NAA reference code. This field is limited to 64 characters.
+        - **Details**: this field is the Subject Detail Name. English language is used if you selected a standard IPTC/NAA reference code. This field is limited to 64 characters.
+
     .. figure:: images/metadata_editor_iptc_subjects.webp
         :alt:
         :align: center
