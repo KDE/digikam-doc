@@ -147,7 +147,7 @@ The sections available in this view are listed below:
 IPTC Tab
 --------
 
-Most common IPTC tags used by photo-agencies are listed for editing. Pre-configured subjects can be used to describe the items contents based on IPTC reference codes. All text fields in IPTC tab are limited in size. Consider to use XMP tab instead.
+Most common IPTC tags used by photo-agencies are listed for editing. Pre-configured subjects can be used to describe the items contents based on IPTC reference codes. All text fields in IPTC tab are limited in size. Consider to use XMP tab instead. Some fields can accept multiple entries to append on a list. Items can be managed with the **plus**, **trash**, and **refresh** buttons near the edited list. 
 
 The sections available in this view are listed below:
 
@@ -180,6 +180,13 @@ The sections available in this view are listed below:
         The IPTC Origin View from Edit Metadata Tool
 
     - **Credits**: record copyright information about the item.
+
+        - **Byline**: this checkbox allows to edit the names of content creators. Multiple text entries limited to 32 characters can be append to the list.
+        - **Byline Title**: this checkbox allows to edit the titles of content creators. Multiple text entries limited to 32 characters can be append to the list.
+        - **Contact**: this checkbox allows to edit the persons or organization to contact. Multiple text entries limited to 128 characters can be append to the list.
+        - **Credit**: this checkbox allows to edit the content provider. This field is limited to 32 characters.
+        - **Source**: this checkbox allows to edit the original owner of content. This field is limited to 32 characters.
+        - **Copyright**: this checkbox allows to edit the necessary copyright notice. This field is limited to 128 characters.
 
     .. figure:: images/metadata_editor_iptc_credits.webp
         :alt:
