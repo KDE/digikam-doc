@@ -105,7 +105,7 @@ The sections available in this view are listed below:
         - **Exposure bias**: this checkbox allows to edit the exposure bias value (in APEX units) used by camera to take the picture.
         - **Metering mode**: this checkbox allows to edit the metering mode used by the camera to set exposure when the picture was taken. Possible values are **Unknown**, **Average**, **Center weighted average**, **Spot**, **Multi-spot**, **Multi-segment**, **Partial**, and **Other**.
         - **Sensitivity**: this checkbox allows to edit the ISO Speed of the camera which took the picture.
-        - **Sensing method**: this checkbox allows to edit the image sensor type used by the camera to take the picture. Possible values are **Not defined**, **One-chip color area**, **Two-chip color area**, **three-chip color area**, **Color sequential area**, **Trilinear sensor**, and **Color sequential linear**.
+        - **Sensing method**: this checkbox allows to edit the image sensor type used by the camera to take the picture. Possible values are **Not defined**, **One-chip color area**, **Two-chip color area**, **Three-chip color area**, **Color sequential area**, **Trilinear sensor**, and **Color sequential linear**.
         - **Scene capture type**: this checkbox allows to edit the type of scene used by the camera to take the picture. Possible values are **Standard**, **Landscape**, **Portrait**, and **Night scene**.
         - **Subject distance type**: this checkbox allows to edit the type of distance between the subject and the image input equipment. Possible values are **Unknown**, **Macro**, **Close view**, and **Distant view**.
 
@@ -120,7 +120,7 @@ The sections available in this view are listed below:
         - **Light source**: this checkbox allows to edit the kind of light source used to take the picture.
         - **Flash mode**: this checkbox allows to edit the flash program mode used by the camera to take the picture.
         - **Flash energy**: this checkbox allows to edit the flash energy used to take the picture in BCPS units. Beam Candle Power Seconds is the measure of effective intensity of a light source when it is focused into a beam by a reflector or lens. This value is the effective intensity for a period of one second.
-        - **White balance**: this checkbox allows to edit the white balance mode set by the camera when the picture was taken. Possible values are **Auto**, and **Manual**.
+        - **White balance**: this checkbox allows to edit the white balance mode set by the camera when the picture was taken. Possible values are **Auto** and **Manual**.
 
     .. figure:: images/metadata_editor_exif_light.webp
         :alt:
@@ -135,7 +135,7 @@ The sections available in this view are listed below:
         - **Contrast**: this checkbox allows to edit the direction of contrast processing applied by the camera to take the picture. Possible values are **Normal**, **Soft**, and **Hard**.
         - **Saturation**: this checkbox allows to edit the direction of saturation processing applied by the camera to take the picture. Possible values are **Normal**, **Low**, and **High**.
         - **Sharpness**: this checkbox allows to edit the direction of sharpness processing applied by the camera to take the picture. Possible values are **Normal**, **Soft**, and **Hard**.
-        - **Custom rendered**: this checkbox allows to edit the use of special processing on image data, such as rendering geared to output. Possible values are **Normal process**, and **Custom process**.
+        - **Custom rendered**: this checkbox allows to edit the use of special processing on image data, such as rendering geared to output. Possible values are **Normal process** and **Custom process**.
 
     .. figure:: images/metadata_editor_exif_adjustments.webp
         :alt:
@@ -153,7 +153,7 @@ The sections available in this view are listed below:
     - **Content**: describe the visual content of the item.
 
         - **Headline**: this checkbox allows to edit the content synopsis. This field is limited to 256 characters.
-        - **Caption**: this checkbox allows to edit the content description. This field is limited to 2000 characters. This filed can be synchronized with the **JFIF Comment section**, and **Exif Comment**.
+        - **Caption**: this checkbox allows to edit the content description. This field is limited to 2000 characters. This filed can be synchronized with the **JFIF Comment section** and **Exif Comment**.
         - **Caption Writer**: this checkbox allows to edit the names of the caption authors. Multiple entries limited to 32 characters can be append to the list.
 
     .. figure:: images/metadata_editor_iptc_content.webp
@@ -210,7 +210,7 @@ The sections available in this view are listed below:
 
     - **Keywords**: record keywords relevant to the item.
 
-        The **Use information retrieval words** checkbox allows to edit the keywords list used to define the content. Below a text field allows to enter a new keyword, limited to 64 characters. Use **Add** button to append the new keyword to the list. **Delete** button remove an entry from the list, and **Replace** button change the current selected item on the list with the edit keyword value. 
+        The **Use information retrieval words** checkbox allows to edit the keywords list used to define the content. Below a text field allows to enter a new keyword, limited to 64 characters. Use **Add** button to append the new keyword to the list. **Delete** button removes an entry from the list and **Replace** button changes the current selected item on the list with the edit keyword value. 
 
     .. figure:: images/metadata_editor_iptc_keywords.webp
         :alt:
@@ -220,7 +220,7 @@ The sections available in this view are listed below:
 
     - **Categories**: record categories relevant to the item.
 
-        The **Identify subject of content** checkbox allows to edit the categories list used to classify the content. On the right a text field allows to enter a new category ID, limited to 3 characters. On the bottom the **Supplemental categories** checkbox allows to edit a a new supplemental category of content. This field is limited to 32 characters. Use **Add** button to append the new values to the list. **Delete** button remove an entry from the list, and **Replace** button change the current selected item on the list with the edited values. 
+        The **Identify subject of content** checkbox allows to edit the categories list used to classify the content. On the right a text field allows to enter a new category ID, limited to 3 characters. On the bottom the **Supplemental categories** checkbox allows to edit a a new supplemental category of content. This field is limited to 32 characters. Use **Add** button to append the new values to the list. **Delete** button removes an entry from the list and **Replace** button changes the current selected item on the list with the edited values. 
 
     .. figure:: images/metadata_editor_iptc_categories.webp
         :alt:
