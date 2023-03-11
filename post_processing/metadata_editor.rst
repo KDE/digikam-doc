@@ -211,7 +211,7 @@ The sections available in this view are listed below:
 
     - **Keywords**: record keywords relevant to the item.
 
-        The **Use information retrieval words** checkbox allows to edit the keywords list used to define the content. Below a text field allows to enter a new keyword, limited to 64 characters. Use **Add** button to append the new keyword to the list. **Delete** button remove an entry, and **Replace** button change the current selected item on the list with the edit keyword value. 
+        The **Use information retrieval words** checkbox allows to edit the keywords list used to define the content. Below a text field allows to enter a new keyword, limited to 64 characters. Use **Add** button to append the new keyword to the list. **Delete** button remove an entry from the list, and **Replace** button change the current selected item on the list with the edit keyword value. 
 
     .. figure:: images/metadata_editor_iptc_keywords.webp
         :alt:
@@ -220,6 +220,8 @@ The sections available in this view are listed below:
         The IPTC Keywords View from Edit Metadata Tool
 
     - **Categories**: record categories relevant to the item.
+
+        The **Identify subject of content** checkbox allows to edit the categories list used to classify the content. On the right a text field allows to enter a new category ID, limited to 3 characters. On the bottom the **Supplemental categories** checkbox allows to edit a a new supplemental category of content. This field is limited to 32 characters. Use **Add** button to append the new values to the list. **Delete** button remove an entry from the list, and **Replace** button change the current selected item on the list with the edited values. 
 
     .. figure:: images/metadata_editor_iptc_categories.webp
         :alt:
