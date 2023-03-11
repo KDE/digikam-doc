@@ -278,7 +278,11 @@ The sections available in this view are listed below:
 XMP Tab
 -------
 
-Xmp is an evolution of IPTC removing limitations of information size. XMP tab is similar than IPTC.
+Xmp is an evolution of IPTC removing limitations of information size and introducing the alternative-language support. XMP tab sections are similar than IPTC, excepted the **Envelope** section which do not exists in XMP and more fields presents in other sections.
+
+.. note::
+
+    XMP field supporting alternative-language feature can use the :ref:`online translator capability <localize_settings>` from digiKam to internationalize the strings automatically.
 
 The sections available in this view are listed below:
 
