@@ -43,7 +43,7 @@ If you select many items from the icon-view, the metadata editor dialog allow to
 Exif Tab
 --------
 
-The sections available in this view group most common Exif tags used by camera devices. They are listed for editing with standardized values.
+The sections available in this tab group most common Exif tags used by camera devices. They are listed for editing with standardized values.
 
 Caption
 ~~~~~~~
@@ -162,206 +162,257 @@ This view record technical details used by camera.
 IPTC Tab
 --------
 
-Most common IPTC tags used by photo-agencies are listed for editing. Pre-configured subjects can be used to describe the items contents based on IPTC reference codes. All text fields in IPTC tab are limited in size. Consider to use XMP tab instead. Some fields can accept multiple entries to append on a list. Items can be managed with the **Add**, **Delete**, and **Replace** buttons near the edited list. 
+The sections available in this tab group most common IPTC tags used by photo-agencies  They are listed for editing with standardized values.
 
-The sections available in this view are listed below:
+Pre-configured subjects can be used to describe the items contents based on IPTC reference codes. All text fields in IPTC tab are limited in size. Consider to use XMP tab instead. Some fields can accept multiple entries to append on a list. Items can be managed with the **Add**, **Delete**, and **Replace** buttons near the edited list. 
 
-    - **Content**: describe the visual content of the item.
+Content
+~~~~~~~
 
-        - **Headline**: this checkbox allows to edit the content synopsis. This field is limited to 256 characters.
-        - **Caption**: this checkbox allows to edit the content description. This field is limited to 2000 characters. This filed can be synchronized with the **JFIF Comment section** and **Exif Comment**.
-        - **Caption Writer**: this checkbox allows to edit the names of the caption authors. Multiple entries limited to 32 characters can be append to the list.
+This view describe the visual content of the item.
 
-    .. figure:: images/metadata_editor_iptc_content.webp
-        :alt:
-        :align: center
+    - **Headline**: this checkbox allows to edit the content synopsis. This field is limited to 256 characters.
+    - **Caption**: this checkbox allows to edit the content description. This field is limited to 2000 characters. This filed can be synchronized with the **JFIF Comment section** and **Exif Comment**.
+    - **Caption Writer**: this checkbox allows to edit the names of the caption authors. Multiple entries limited to 32 characters can be append to the list.
 
-        The IPTC Content View from Edit Metadata Tool
+.. figure:: images/metadata_editor_iptc_content.webp
+    :alt:
+    :align: center
 
-    - **Origin**: formal descriptive information about the item.
+    The IPTC Content View from Edit Metadata Tool
 
-        - **Digitization date** and **Digitization time**: these checkbox allows to edit the date, time, and zone of the digital representation. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
-        - **Creation date** and **Creation time**: these checkbox allows to edit the date, time, and zone of the intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer. These values can be synchronized with the **Exif Creation date**.
-        - **Location**: this checkbox allows to edit the full country names referenced by the content. Multiple pre-configured entries can be append to the list.
-        - **City**: this checkbox allows to edit the city of content origin. This field is limited to 32 characters.
-        - **Sublocation**: this checkbox allows to edit the content location within city. This field is limited to 32 characters.
-        - **State/Province**: this checkbox allows to edit the Province or State of content origin. This field is limited to 32 characters.
-        - **Country**: this checkbox allows to select the country name of content origin.
+Origin
+~~~~~~
 
-    .. figure:: images/metadata_editor_iptc_origin.webp
-        :alt:
-        :align: center
+This view group formal descriptive information about the item.
 
-        The IPTC Origin View from Edit Metadata Tool
+    - **Digitization date** and **Digitization time**: these checkbox allows to edit the date, time, and zone of the digital representation. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+    - **Creation date** and **Creation time**: these checkbox allows to edit the date, time, and zone of the intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer. These values can be synchronized with the **Exif Creation date**.
+    - **Location**: this checkbox allows to edit the full country names referenced by the content. Multiple pre-configured entries can be append to the list.
+    - **City**: this checkbox allows to edit the city of content origin. This field is limited to 32 characters.
+    - **Sublocation**: this checkbox allows to edit the content location within city. This field is limited to 32 characters.
+    - **State/Province**: this checkbox allows to edit the Province or State of content origin. This field is limited to 32 characters.
+    - **Country**: this checkbox allows to select the country name of content origin.
 
-    - **Credits**: record copyright information about the item.
+.. figure:: images/metadata_editor_iptc_origin.webp
+    :alt:
+    :align: center
 
-        - **Byline**: this checkbox allows to edit the names of content creators. Multiple text entries limited to 32 characters can be append to the list.
-        - **Byline Title**: this checkbox allows to edit the titles of content creators. Multiple text entries limited to 32 characters can be append to the list.
-        - **Contact**: this checkbox allows to edit the persons or organization to contact. Multiple text entries limited to 128 characters can be append to the list.
-        - **Credit**: this checkbox allows to edit the content provider. This field is limited to 32 characters.
-        - **Source**: this checkbox allows to edit the original owner of content. This field is limited to 32 characters.
-        - **Copyright**: this checkbox allows to edit the necessary copyright notice. This field is limited to 128 characters.
+    The IPTC Origin View from Edit Metadata Tool
 
-    .. figure:: images/metadata_editor_iptc_credits.webp
-        :alt:
-        :align: center
+Credits
+~~~~~~~
 
-        The IPTC Credits View from Edit Metadata Tool
+This view record copyright information about the item.
 
-    - **Subjects**: record subject information about the item.
+    - **Byline**: this checkbox allows to edit the names of content creators. Multiple text entries limited to 32 characters can be append to the list.
+    - **Byline Title**: this checkbox allows to edit the titles of content creators. Multiple text entries limited to 32 characters can be append to the list.
+    - **Contact**: this checkbox allows to edit the persons or organization to contact. Multiple text entries limited to 128 characters can be append to the list.
+    - **Credit**: this checkbox allows to edit the content provider. This field is limited to 32 characters.
+    - **Source**: this checkbox allows to edit the original owner of content. This field is limited to 32 characters.
+    - **Copyright**: this checkbox allows to edit the necessary copyright notice. This field is limited to 128 characters.
 
-        - **Use structured definition of the subject matter**: this checkbox allows to edit the `IPTC/NAA taxonomy subject codes <https://iptc.org/standards/subject-codes/>`_, with a focus on text. It consists of about 1,400 terms structured into 3 levels. The **Use standard reference code** option allows to select the standard taxonomy, and the **Use custom definition** option allows to customize the values. More than one entries can be append to a list of reference.
-        - **IPR**: this field is the Informative Provider Reference. I.P.R is a name registered with the IPTC/NAA, identifying the provider that provides an indicator of the content. The default value for the I.P.R is *IPTC* if a standard Reference Code is used. This field is limited to 32 characters.
-        - **Reference**: this field is the Subject Reference Number. Provides a numeric code to indicate the Subject Name plus optional Subject Matter and Subject Detail Names in the language of the service. Subject Reference is a number from the range 01000000 to 17999999 and represent a language independent international reference to a Subject. A Subject is identified by its Reference Number and corresponding Names taken from a standard lists given by IPTC/NAA. If a standard reference code is used, these lists are the English language reference versions. This field is limited to 8 digit code.
-        - **Name**: this field is the Subject Name. English language is used if you selected a standard IPTC/NAA reference code. This field is limited to 64 characters.
-        - **Matter**: this field is the Subject Matter Name. English language is used if you selected a standard IPTC/NAA reference code. This field is limited to 64 characters.
-        - **Details**: this field is the Subject Detail Name. English language is used if you selected a standard IPTC/NAA reference code. This field is limited to 64 characters.
+.. figure:: images/metadata_editor_iptc_credits.webp
+    :alt:
+    :align: center
 
-    .. figure:: images/metadata_editor_iptc_subjects.webp
-        :alt:
-        :align: center
+    The IPTC Credits View from Edit Metadata Tool
 
-        The IPTC Subjects View from Edit Metadata Tool
+Subjects
+~~~~~~~~
 
-    - **Keywords**: record keywords relevant to the item.
+This view record subject information about the item.
 
-        The **Use information retrieval words** checkbox allows to edit the keywords list used to define the content. Below a text field allows to enter a new keyword, limited to 64 characters. Use **Add** button to append the new keyword to the list. **Delete** button removes an entry from the list and **Replace** button changes the current selected item on the list with the edit keyword value. 
+    - **Use structured definition of the subject matter**: this checkbox allows to edit the `IPTC/NAA taxonomy subject codes <https://iptc.org/standards/subject-codes/>`_, with a focus on text. It consists of about 1,400 terms structured into 3 levels. The **Use standard reference code** option allows to select the standard taxonomy, and the **Use custom definition** option allows to customize the values. More than one entries can be append to a list of reference.
+    - **IPR**: this field is the Informative Provider Reference. I.P.R is a name registered with the IPTC/NAA, identifying the provider that provides an indicator of the content. The default value for the I.P.R is *IPTC* if a standard Reference Code is used. This field is limited to 32 characters.
+    - **Reference**: this field is the Subject Reference Number. Provides a numeric code to indicate the Subject Name plus optional Subject Matter and Subject Detail Names in the language of the service. Subject Reference is a number from the range 01000000 to 17999999 and represent a language independent international reference to a Subject. A Subject is identified by its Reference Number and corresponding Names taken from a standard lists given by IPTC/NAA. If a standard reference code is used, these lists are the English language reference versions. This field is limited to 8 digit code.
+    - **Name**: this field is the Subject Name. English language is used if you selected a standard IPTC/NAA reference code. This field is limited to 64 characters.
+    - **Matter**: this field is the Subject Matter Name. English language is used if you selected a standard IPTC/NAA reference code. This field is limited to 64 characters.
+    - **Details**: this field is the Subject Detail Name. English language is used if you selected a standard IPTC/NAA reference code. This field is limited to 64 characters.
 
-    .. figure:: images/metadata_editor_iptc_keywords.webp
-        :alt:
-        :align: center
+.. figure:: images/metadata_editor_iptc_subjects.webp
+    :alt:
+    :align: center
 
-        The IPTC Keywords View from Edit Metadata Tool
+    The IPTC Subjects View from Edit Metadata Tool
 
-    - **Categories**: record categories relevant to the item.
+Keywords
+~~~~~~~~
 
-        The **Identify subject of content** checkbox allows to edit the categories list used to classify the content. On the right a text field allows to enter a new category ID, limited to 3 characters. On the bottom the **Supplemental categories** checkbox allows to edit a a new supplemental category of content. This field is limited to 32 characters. Use **Add** button to append the new values to the list. **Delete** button removes an entry from the list and **Replace** button changes the current selected item on the list with the edited values. 
+This view record keywords relevant to the item.
 
-    .. figure:: images/metadata_editor_iptc_categories.webp
-        :alt:
-        :align: center
+The **Use information retrieval words** checkbox allows to edit the keywords list used to define the content. Below a text field allows to enter a new keyword, limited to 64 characters. Use **Add** button to append the new keyword to the list. **Delete** button removes an entry from the list and **Replace** button changes the current selected item on the list with the edit keyword value. 
 
-        The IPTC Categories View from Edit Metadata Tool
+.. figure:: images/metadata_editor_iptc_keywords.webp
+    :alt:
+    :align: center
 
-    - **Status**: record workflow information.
+    The IPTC Keywords View from Edit Metadata Tool
 
-        - **Title**: this checkbox allows to edit the shorthand reference of content. This field is limited to 64 characters.
-        - **Edit Status**: this checkbox allows to edit the title of content status. This field is limited to 64 characters.
-        - **Job Identifier**: this checkbox allows to edit Set here the string that identifies content that recurs. This field is limited to 32 characters.
-        - **Special Instructions**: this checkbox allows to edit the editorial usage instructions. This field is limited to 256 characters.
+Categories
+~~~~~~~~~~
 
-    .. figure:: images/metadata_editor_iptc_status.webp
-        :alt:
-        :align: center
+This view record categories relevant to the item.
 
-        The IPTC Status View from Edit Metadata Tool
+The **Identify subject of content** checkbox allows to edit the categories list used to classify the content. On the right a text field allows to enter a new category ID, limited to 3 characters.
 
-    - **Properties**: record workflow properties.
+On the bottom the **Supplemental categories** checkbox allows to edit a a new supplemental category of content. This field is limited to 32 characters. Use **Add** button to append the new values to the list. **Delete** button removes an entry from the list and **Replace** button changes the current selected item on the list with the edited values. 
 
-        - **Release date** and **Release time**: these checkbox allows to edit the earliest intended usable date, time, and zone of intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
-        - **Expiration date** and **Expiration time**: these checkbox allows to edit the latest intended usable date, time, and zone of intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
-        - **Language**: this checkbox allows to select the language used by the content.
-        - **Priority**: this checkbox allows to select the editorial urgency of content. Possible values are **0: None**, **1: high**, **2**, **3**, **4**, **5: normal**, **6**, **7**, **8: low**, and **9: user-defined**.
-        - **Cycle**: this checkbox allows to select the editorial cycle of content. Possible values are **Morning**, **Afternoon**, and **Evening**.
-        - **Type**: this checkbox allows to select the content type. Possible values are **News**, **Data**, and **Advisory**. On the right you can edit the editorial type description of content. This field is limited to 64 characters.
-        - **Attribute**: this checkbox allows to select the editorial attributes of content and to edit the editorial attribute descriptions. Multiple entries can be append to the list. A description is limited to 64 characters.
-        - **Reference**: this checkbox allows to edit the original content transmission reference. This field is limited to 32 characters.
+.. figure:: images/metadata_editor_iptc_categories.webp
+    :alt:
+    :align: center
 
-    .. figure:: images/metadata_editor_iptc_properties.webp
-        :alt:
-        :align: center
+    The IPTC Categories View from Edit Metadata Tool
 
-        The IPTC Properties View from Edit Metadata Tool
+Status
+~~~~~~
 
-    - **Envelope**: record editorial details.
+This view record workflow information.
 
-        - **Destination**: this checkbox allows to edit the envelope destination. This field is limited to 1024 characters.
-        - **U.N.O ID**: this checkbox allows to edit the Unique Name of Object identifier. This field is limited to 80 characters.
-        - **Product ID**: this checkbox allows to edit the product identifier. This field is limited to 32 characters.
-        - **Service ID**: this checkbox allows to edit the service identifier. This field is limited to 10 characters.
-        - **Envelope ID**: this checkbox allows to edit the envelope identifier. This field is limited to 8 characters.
-        - **Priority**: this checkbox allows to select the envelope urgency. Possible values are **0: None**, **1: high**, **2**, **3**, **4**, **5: normal**, **6**, **7**, **8: low**, and **9: user-defined**.
-        - **Format**: this checkbox allows to select the envelope file format.
-        - **Send date** and **Send time**: these checkbox allows to edit the date, time, and zone when the service sent the material usable. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+    - **Title**: this checkbox allows to edit the shorthand reference of content. This field is limited to 64 characters.
+    - **Edit Status**: this checkbox allows to edit the title of content status. This field is limited to 64 characters.
+    - **Job Identifier**: this checkbox allows to edit Set here the string that identifies content that recurs. This field is limited to 32 characters.
+    - **Special Instructions**: this checkbox allows to edit the editorial usage instructions. This field is limited to 256 characters.
 
-    .. figure:: images/metadata_editor_iptc_envelope.webp
-        :alt:
-        :align: center
+.. figure:: images/metadata_editor_iptc_status.webp
+    :alt:
+    :align: center
 
-        The IPTC Envelope View from Edit Metadata Tool
+    The IPTC Status View from Edit Metadata Tool
+
+Properties
+~~~~~~~~~~
+
+This view record workflow properties.
+
+    - **Release date** and **Release time**: these checkbox allows to edit the earliest intended usable date, time, and zone of intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+    - **Expiration date** and **Expiration time**: these checkbox allows to edit the latest intended usable date, time, and zone of intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+    - **Language**: this checkbox allows to select the language used by the content.
+    - **Priority**: this checkbox allows to select the editorial urgency of content. Possible values are **0: None**, **1: high**, **2**, **3**, **4**, **5: normal**, **6**, **7**, **8: low**, and **9: user-defined**.
+    - **Cycle**: this checkbox allows to select the editorial cycle of content. Possible values are **Morning**, **Afternoon**, and **Evening**.
+    - **Type**: this checkbox allows to select the content type. Possible values are **News**, **Data**, and **Advisory**. On the right you can edit the editorial type description of content. This field is limited to 64 characters.
+    - **Attribute**: this checkbox allows to select the editorial attributes of content and to edit the editorial attribute descriptions. Multiple entries can be append to the list. A description is limited to 64 characters.
+    - **Reference**: this checkbox allows to edit the original content transmission reference. This field is limited to 32 characters.
+
+.. figure:: images/metadata_editor_iptc_properties.webp
+    :alt:
+    :align: center
+
+    The IPTC Properties View from Edit Metadata Tool
+
+Envelope
+~~~~~~~~
+
+This view record editorial details.
+
+    - **Destination**: this checkbox allows to edit the envelope destination. This field is limited to 1024 characters.
+    - **U.N.O ID**: this checkbox allows to edit the Unique Name of Object identifier. This field is limited to 80 characters.
+    - **Product ID**: this checkbox allows to edit the product identifier. This field is limited to 32 characters.
+    - **Service ID**: this checkbox allows to edit the service identifier. This field is limited to 10 characters.
+    - **Envelope ID**: this checkbox allows to edit the envelope identifier. This field is limited to 8 characters.
+    - **Priority**: this checkbox allows to select the envelope urgency. Possible values are **0: None**, **1: high**, **2**, **3**, **4**, **5: normal**, **6**, **7**, **8: low**, and **9: user-defined**.
+    - **Format**: this checkbox allows to select the envelope file format.
+    - **Send date** and **Send time**: these checkbox allows to edit the date, time, and zone when the service sent the material usable. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+
+.. figure:: images/metadata_editor_iptc_envelope.webp
+    :alt:
+    :align: center
+
+    The IPTC Envelope View from Edit Metadata Tool
 
 XMP Tab
 -------
 
-Xmp is an evolution of IPTC removing limitations of information size and introducing the alternative-language support. XMP tab sections are similar than IPTC, excepted the **Envelope** section which do not exists in XMP and more fields presents in other sections.
+The sections available in this tab group Xmp information which are an evolution of IPTC. XMP remove limitations of text size and introduce the alternative-language support. XMP tab sections are similar than IPTC, excepted the **Envelope** section which do not exists in XMP standard. XMP introduce also new fields in other sections.
 
 .. note::
 
     XMP field supporting alternative-language feature can use the :ref:`online translator capability <localize_settings>` from digiKam to internationalize the strings automatically.
 
-The sections available in this view are listed below:
+Content
+~~~~~~~
 
-    - **Content**: describe the visual content of the item.
+This view describe the visual content of the item.
 
-    .. figure:: images/metadata_editor_xmp_content.webp
-        :alt:
-        :align: center
+.. figure:: images/metadata_editor_xmp_content.webp
+    :alt:
+    :align: center
 
-        The XMP Content View from Edit Metadata Tool
+    The XMP Content View from Edit Metadata Tool
 
-    - **Origin**: formal descriptive information about the item.
+Origin
+~~~~~~
 
-    .. figure:: images/metadata_editor_xmp_origin.webp
-        :alt:
-        :align: center
+This view group formal descriptive information about the item.
 
-        The XMP Origin View from Edit Metadata Tool
+.. figure:: images/metadata_editor_xmp_origin.webp
+    :alt:
+    :align: center
 
-    - **Credits**: record copyright information about the item.
+    The XMP Origin View from Edit Metadata Tool
 
-    .. figure:: images/metadata_editor_xmp_credits.webp
-        :alt:
-        :align: center
+Credits
+~~~~~~~
 
-        The XMP Credits View from Edit Metadata Tool
+This view record copyright information about the item.
 
-    - **Subjects**: record subject information about the item.
+.. figure:: images/metadata_editor_xmp_credits.webp
+    :alt:
+    :align: center
 
-    .. figure:: images/metadata_editor_xmp_subjects.webp
-        :alt:
-        :align: center
+    The XMP Credits View from Edit Metadata Tool
 
-        The XMP Subjects View from Edit Metadata Tool
+Subjects
+~~~~~~~~
 
-    - **Keywords**: record keywords relevant to the item.
+This view record subject information about the item.
 
-    .. figure:: images/metadata_editor_xmp_keywords.webp
-        :alt:
-        :align: center
+.. figure:: images/metadata_editor_xmp_subjects.webp
+    :alt:
+    :align: center
 
-        The XMP Keywords View from Edit Metadata Tool
+    The XMP Subjects View from Edit Metadata Tool
 
-    - **Categories**: record categories relevant to the item.
+Keywords
+~~~~~~~~
 
-    .. figure:: images/metadata_editor_xmp_categories.webp
-        :alt:
-        :align: center
+This view record keywords relevant to the item.
 
-        The XMP Categories View from Edit Metadata Tool
+.. figure:: images/metadata_editor_xmp_keywords.webp
+    :alt:
+    :align: center
 
-    - **Status**: record workflow information.
+    The XMP Keywords View from Edit Metadata Tool
 
-    .. figure:: images/metadata_editor_xmp_status.webp
-        :alt:
-        :align: center
+Categories
+~~~~~~~~~~
 
-        The XMP Status View from Edit Metadata Tool
+This view record categories relevant to the item.
 
-    - **Properties**: record workflow properties.
+.. figure:: images/metadata_editor_xmp_categories.webp
+    :alt:
+    :align: center
 
-    .. figure:: images/metadata_editor_xmp_properties.webp
-        :alt:
-        :align: center
+    The XMP Categories View from Edit Metadata Tool
 
-        The XMP Properties View from Edit Metadata Tool
+Status
+~~~~~~
+
+this view record workflow information.
+
+.. figure:: images/metadata_editor_xmp_status.webp
+    :alt:
+    :align: center
+
+    The XMP Status View from Edit Metadata Tool
+
+Properties
+~~~~~~~~~~
+
+This view record workflow properties.
+
+.. figure:: images/metadata_editor_xmp_properties.webp
+    :alt:
+    :align: center
+
+    The XMP Properties View from Edit Metadata Tool
