@@ -43,105 +43,121 @@ If you select many items from the icon-view, the metadata editor dialog allow to
 Exif Tab
 --------
 
-Most common Exif tags used by camera devices are listed for editing with standardized values.
+The sections available in this view group most common Exif tags used by camera devices. They are listed for editing with standardized values.
 
-The sections available in this view are listed below:
+Caption
+~~~~~~~
 
-    - **Caption**: record technical descriptions from the camera. All text fields in this section are limited to ASCII characters unless stated otherwise.
+This view record technical descriptions from the camera. All text fields in this section are limited to ASCII characters unless stated otherwise.
 
-        - **Name**: host the name of the document from which this image was been scanned.
-        - **Description**: host the image description.
-        - **Artist**: host the image author's name separated by semi-colons.
-        - **Copyright**: host the copyright owner of the image.
-        - **Caption**: host the image's caption. This field is not limited. UTF8 encoding will be used to save the text. This filed can be synchronized with the **JFIF Comment section**, **XMP caption**, and **IPTC caption** (warning: limited to 2000 characters)
+    - **Name**: this checkbox allows to edit  the name of the document from which this image was been scanned.
+    - **Description**: this checkbox allows to edit  the image description.
+    - **Artist**: this checkbox allows to edit  the image author's name separated by semi-colons.
+    - **Copyright**: this checkbox allows to edit  the copyright owner of the image.
+    - **Caption**: this checkbox allows to edit  the image's caption. This field is not limited. UTF8 encoding will be used to save the text. This filed can be synchronized with the **JFIF Comment section**, **XMP caption**, and **IPTC caption** (warning: limited to 2000 characters)
 
-    .. figure:: images/metadata_editor_exif_caption.webp
-        :alt:
-        :align: center
+.. figure:: images/metadata_editor_exif_caption.webp
+    :alt:
+    :align: center
 
-        The Exif Caption View from Edit Metadata Tool
+    The Exif Caption View from Edit Metadata Tool
 
-    - **Date and Time**: record camera time-stamp properties.
+Date and Time
+~~~~~~~~~~~~~
 
-        - **Creation date and time**: this checkbox allows to edit the date and time of image creation. It is the date and time corresponding to the time-stamp when the file was changed. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer. This last one can be sync with the **XMP creation date** and **IPTC creation date**.
-        - **Creation sub-second**: this checkbox allows to edit the fractions of seconds for the date and time of image creation.
-        - **Original date and time**: this checkbox allows to edit the date and time when the original image data was generated. For a digital still camera the date and time corresponding to the time-stamp when the picture was taken are recorded. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
-        - **Original sub-second**: this checkbox allows to edit the fractions of seconds for the date and time when the original image data was generated.
-        - **Digitization date and time**: this checkbox allows to edit the date and time when the image was stored as digital data. If, for example, an image was captured by a digital still camera and at the same time the file was recorded, then Original and Digitization date and time will have the same contents. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
-        - **Digitization sub-second**: this checkbox allows to edit the fractions of seconds for the date and time when the image was stored as digital data.
+This view record camera time-stamp properties.
 
-    .. figure:: images/metadata_editor_exif_date.webp
-        :alt:
-        :align: center
+    - **Creation date and time**: this checkbox allows to edit the date and time of image creation. It is the date and time corresponding to the time-stamp when the file was changed. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer. This last one can be sync with the **XMP creation date** and **IPTC creation date**.
+    - **Creation sub-second**: this checkbox allows to edit the fractions of seconds for the date and time of image creation.
+    - **Original date and time**: this checkbox allows to edit the date and time when the original image data was generated. For a digital still camera the date and time corresponding to the time-stamp when the picture was taken are recorded. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+    - **Original sub-second**: this checkbox allows to edit the fractions of seconds for the date and time when the original image data was generated.
+    - **Digitization date and time**: this checkbox allows to edit the date and time when the image was stored as digital data. If, for example, an image was captured by a digital still camera and at the same time the file was recorded, then Original and Digitization date and time will have the same contents. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+    - **Digitization sub-second**: this checkbox allows to edit the fractions of seconds for the date and time when the image was stored as digital data.
 
-        The Exif Date and Time View from Edit Metadata Tool
+.. figure:: images/metadata_editor_exif_date.webp
+    :alt:
+    :align: center
 
-    - **Lens**: record lens details used with camera.
+    The Exif Date and Time View from Edit Metadata Tool
 
-        - **Focal length**: this checkbox allows to edit the lens focal length in millimeters used by camera to take the picture.
-        - **Focal length in 35mm film**: this checkbox allows to edit the equivalent focal length assuming a 35mm film camera, in mm. A value of 0 means the focal length is unknown.
-        - **Digital zoom ratio**: this checkbox allows to edit the digital zoom ratio used by camera to take the picture.
-        - **Lens aperture**: this checkbox allows to edit the lens aperture (f-number) used by camera to take the picture.
-        - **Max. lens aperture**: this checkbox allows to edit the the smallest aperture (f-number) of the lens used by camera to take the picture.
+Lens
+~~~~
 
-    .. figure:: images/metadata_editor_exif_lens.webp
-        :alt:
-        :align: center
+This view record lens details used with camera.
 
-        The Exif Lens View from Edit Metadata Tool
+    - **Focal length**: this checkbox allows to edit the lens focal length in millimeters used by camera to take the picture.
+    - **Focal length in 35mm film**: this checkbox allows to edit the equivalent focal length assuming a 35mm film camera, in mm. A value of 0 means the focal length is unknown.
+    - **Digital zoom ratio**: this checkbox allows to edit the digital zoom ratio used by camera to take the picture.
+    - **Lens aperture**: this checkbox allows to edit the lens aperture (f-number) used by camera to take the picture.
+    - **Max. lens aperture**: this checkbox allows to edit the the smallest aperture (f-number) of the lens used by camera to take the picture.
 
-    - **Device**: record shot conditions used by camera.
+.. figure:: images/metadata_editor_exif_lens.webp
+    :alt:
+    :align: center
 
-        .. warning::
+    The Exif Lens View from Edit Metadata Tool
 
-            `Exif Makernotes <hhttps://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_data>`_ can be unreadable if you set the wrong **device manufacturer/model** description.
+Device
+~~~~~~
 
-        - **Device manufacturer**: this checkbox allows to edit the manufacturer of image input equipment used to take the picture. This field is limited to ASCII characters.
-        - **Device model**: this checkbox allows to edit the model of image input equipment used to take the picture. This field is limited to ASCII characters.
-        - **Device type**: this checkbox allows to edit the image input equipment type used to take the picture. Possible values are **Film scanner**, **Reflection print scanner**, and **Digital still camera**.
-        - **Exposure time**: this checkbox allows to edit the exposure time of picture, given in seconds.
-        - **Exposure program**: this checkbox allows to edit the program used by the camera to set exposure when the picture was taken. Possible values are **Not defined**, **Manual**, **Auto**, **Aperture priority**, **Shutter priority**, **Creative program**, **Action program**, **Portrait mode**, and **Landscape mode**.
-        - **Exposure mode**: this checkbox allows to edit the mode used by the camera to set exposure when the picture was taken. In auto-bracketing mode, the camera shoots a series of frames of the same scene at different exposure settings. Possible values are **Auto**, **Manual**, and **Auto bracket**.
-        - **Exposure bias**: this checkbox allows to edit the exposure bias value (in APEX units) used by camera to take the picture.
-        - **Metering mode**: this checkbox allows to edit the metering mode used by the camera to set exposure when the picture was taken. Possible values are **Unknown**, **Average**, **Center weighted average**, **Spot**, **Multi-spot**, **Multi-segment**, **Partial**, and **Other**.
-        - **Sensitivity**: this checkbox allows to edit the ISO Speed of the camera which took the picture.
-        - **Sensing method**: this checkbox allows to edit the image sensor type used by the camera to take the picture. Possible values are **Not defined**, **One-chip color area**, **Two-chip color area**, **Three-chip color area**, **Color sequential area**, **Trilinear sensor**, and **Color sequential linear**.
-        - **Scene capture type**: this checkbox allows to edit the type of scene used by the camera to take the picture. Possible values are **Standard**, **Landscape**, **Portrait**, and **Night scene**.
-        - **Subject distance type**: this checkbox allows to edit the type of distance between the subject and the image input equipment. Possible values are **Unknown**, **Macro**, **Close view**, and **Distant view**.
+This view record shot conditions used by camera.
 
-    .. figure:: images/metadata_editor_exif_device.webp
-        :alt:
-        :align: center
+    .. warning::
 
-        The Exif Device View from Edit Metadata Tool
+        `Exif Makernotes <hhttps://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_data>`_ can be unreadable if you set the wrong **device manufacturer/model** description.
 
-    - **Light**: record ambient condition captured by camera.
+    - **Device manufacturer**: this checkbox allows to edit the manufacturer of image input equipment used to take the picture. This field is limited to ASCII characters.
+    - **Device model**: this checkbox allows to edit the model of image input equipment used to take the picture. This field is limited to ASCII characters.
+    - **Device type**: this checkbox allows to edit the image input equipment type used to take the picture. Possible values are **Film scanner**, **Reflection print scanner**, and **Digital still camera**.
+    - **Exposure time**: this checkbox allows to edit the exposure time of picture, given in seconds.
+    - **Exposure program**: this checkbox allows to edit the program used by the camera to set exposure when the picture was taken. Possible values are **Not defined**, **Manual**, **Auto**, **Aperture priority**, **Shutter priority**, **Creative program**, **Action program**, **Portrait mode**, and **Landscape mode**.
+    - **Exposure mode**: this checkbox allows to edit the mode used by the camera to set exposure when the picture was taken. In auto-bracketing mode, the camera shoots a series of frames of the same scene at different exposure settings. Possible values are **Auto**, **Manual**, and **Auto bracket**.
+    - **Exposure bias**: this checkbox allows to edit the exposure bias value (in APEX units) used by camera to take the picture.
+    - **Metering mode**: this checkbox allows to edit the metering mode used by the camera to set exposure when the picture was taken. Possible values are **Unknown**, **Average**, **Center weighted average**, **Spot**, **Multi-spot**, **Multi-segment**, **Partial**, and **Other**.
+    - **Sensitivity**: this checkbox allows to edit the ISO Speed of the camera which took the picture.
+    - **Sensing method**: this checkbox allows to edit the image sensor type used by the camera to take the picture. Possible values are **Not defined**, **One-chip color area**, **Two-chip color area**, **Three-chip color area**, **Color sequential area**, **Trilinear sensor**, and **Color sequential linear**.
+    - **Scene capture type**: this checkbox allows to edit the type of scene used by the camera to take the picture. Possible values are **Standard**, **Landscape**, **Portrait**, and **Night scene**.
+    - **Subject distance type**: this checkbox allows to edit the type of distance between the subject and the image input equipment. Possible values are **Unknown**, **Macro**, **Close view**, and **Distant view**.
 
-        - **Light source**: this checkbox allows to edit the kind of light source used to take the picture.
-        - **Flash mode**: this checkbox allows to edit the flash program mode used by the camera to take the picture.
-        - **Flash energy**: this checkbox allows to edit the flash energy used to take the picture in BCPS units. Beam Candle Power Seconds is the measure of effective intensity of a light source when it is focused into a beam by a reflector or lens. This value is the effective intensity for a period of one second.
-        - **White balance**: this checkbox allows to edit the white balance mode set by the camera when the picture was taken. Possible values are **Auto** and **Manual**.
+.. figure:: images/metadata_editor_exif_device.webp
+    :alt:
+    :align: center
 
-    .. figure:: images/metadata_editor_exif_light.webp
-        :alt:
-        :align: center
+    The Exif Device View from Edit Metadata Tool
 
-        The Exif Light View from Edit Metadata Tool
+Light
+~~~~~
 
-    - **Adjustments**: record technical details used by camera.
+This view record ambient condition captured by camera.
 
-        - **Brightness**: this checkbox allows to edit the brightness adjustment value in APEX unit used by camera to take the picture.
-        - **Gain Control**: this checkbox allows to edit the degree of overall image gain adjustment used by camera to take the picture. Possible values are **None**, **Low gain up**, **High gain up**, **Low gain down**, and **High gain down**.
-        - **Contrast**: this checkbox allows to edit the direction of contrast processing applied by the camera to take the picture. Possible values are **Normal**, **Soft**, and **Hard**.
-        - **Saturation**: this checkbox allows to edit the direction of saturation processing applied by the camera to take the picture. Possible values are **Normal**, **Low**, and **High**.
-        - **Sharpness**: this checkbox allows to edit the direction of sharpness processing applied by the camera to take the picture. Possible values are **Normal**, **Soft**, and **Hard**.
-        - **Custom rendered**: this checkbox allows to edit the use of special processing on image data, such as rendering geared to output. Possible values are **Normal process** and **Custom process**.
+    - **Light source**: this checkbox allows to edit the kind of light source used to take the picture.
+    - **Flash mode**: this checkbox allows to edit the flash program mode used by the camera to take the picture.
+    - **Flash energy**: this checkbox allows to edit the flash energy used to take the picture in BCPS units. Beam Candle Power Seconds is the measure of effective intensity of a light source when it is focused into a beam by a reflector or lens. This value is the effective intensity for a period of one second.
+    - **White balance**: this checkbox allows to edit the white balance mode set by the camera when the picture was taken. Possible values are **Auto** and **Manual**.
 
-    .. figure:: images/metadata_editor_exif_adjustments.webp
-        :alt:
-        :align: center
+.. figure:: images/metadata_editor_exif_light.webp
+    :alt:
+    :align: center
 
-        The Exif Adjustments View from Edit Metadata Tool
+    The Exif Light View from Edit Metadata Tool
+
+Adjustments
+~~~~~~~~~~~
+
+This view record technical details used by camera.
+
+    - **Brightness**: this checkbox allows to edit the brightness adjustment value in APEX unit used by camera to take the picture.
+    - **Gain Control**: this checkbox allows to edit the degree of overall image gain adjustment used by camera to take the picture. Possible values are **None**, **Low gain up**, **High gain up**, **Low gain down**, and **High gain down**.
+    - **Contrast**: this checkbox allows to edit the direction of contrast processing applied by the camera to take the picture. Possible values are **Normal**, **Soft**, and **Hard**.
+    - **Saturation**: this checkbox allows to edit the direction of saturation processing applied by the camera to take the picture. Possible values are **Normal**, **Low**, and **High**.
+    - **Sharpness**: this checkbox allows to edit the direction of sharpness processing applied by the camera to take the picture. Possible values are **Normal**, **Soft**, and **Hard**.
+    - **Custom rendered**: this checkbox allows to edit the use of special processing on image data, such as rendering geared to output. Possible values are **Normal process** and **Custom process**.
+
+.. figure:: images/metadata_editor_exif_adjustments.webp
+    :alt:
+    :align: center
+
+    The Exif Adjustments View from Edit Metadata Tool
 
 IPTC Tab
 --------
