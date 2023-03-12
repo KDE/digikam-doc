@@ -351,6 +351,14 @@ Origin
 
 This view group formal descriptive information about the item.
 
+    - **Digitization date**: this checkbox allows to edit the date and zone of the digital representation. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+    - **Creation date**: this checkbox allows to edit the date and zone of the intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer. These values can be synchronized with the **Exif Creation date**.
+    - **Video date**: this checkbox allows to edit the date and zone of the video intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
+    - **City**: this checkbox allows to edit the city of content origin.
+    - **Sublocation**: this checkbox allows to edit the content location within city.
+    - **State/Province**: this checkbox allows to edit the Province or State of content origin.
+    - **Country**: this checkbox allows to select the country name of content origin.
+
 .. figure:: images/metadata_editor_xmp_origin.webp
     :alt:
     :align: center
