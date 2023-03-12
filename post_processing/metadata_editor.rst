@@ -442,6 +442,13 @@ Properties
 
 This view record workflow properties.
 
+    - **Language**: this checkbox allows to select the languages used by the content. Multiple text entries can be append to the list.
+    - **Priority**: this checkbox allows to select the editorial urgency of content. Possible values are **0: None**, **1: high**, **2**, **3**, **4**, **5: normal**, **6**, **7**, **8: low**, and **9: user-defined**.
+    - **Scene**: this checkbox allows to select the scenes type of the content. Multiple values can be append to the list.
+    - **Type**: this checkbox allows to select the content types. Multiple values can be append to the list.
+    - **Attribute**: this checkbox allows to select the editorial attributes of content and to edit the editorial attribute descriptions. Multiple entries can be append to the list.
+    - **Reference**: this checkbox allows to edit the original content transmission reference.
+
 .. figure:: images/metadata_editor_xmp_properties.webp
     :alt:
     :align: center
