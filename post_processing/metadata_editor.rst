@@ -335,9 +335,9 @@ Content
 This view describe the visual content of the item.
 
     - **Headline**: this checkbox allows to edit the content synopsis.
-    - **Caption**: this checkbox allows to edit the content descriptions. The default caption alternatice-language value can be synchronized with the **JFIF Comment section** and **Exif Comment**.
+    - **Caption**: this checkbox allows to edit the content descriptions. The default caption alternative-language value can be synchronized with the **JFIF Comment section** and **Exif Comment**.
     - **Caption Writer**: this checkbox allows to edit the names of the caption authors.
-    - **Copyright**: this checkbox allows to edit the necessary copyright notices. The default copyright alternatice-language value can be synchronized with the **Exif Copyright**.
+    - **Copyright**: this checkbox allows to edit the necessary copyright notices. The default copyright alternative-language value can be synchronized with the **Exif Copyright**.
     - **Right Usage Terms**: this checkbox allows to edit the instructions on how the resource can be legally used.
 
 .. figure:: images/metadata_editor_xmp_content.webp
@@ -369,6 +369,12 @@ Credits
 ~~~~~~~
 
 This view record copyright information about the item.
+
+    - **Creator**: this checkbox allows to edit the names of content creators. Multiple text entries can be append to the list. The default creator alternative-language value can be synchronized with the **Exif Artist**.
+    - **Creator Title**: this checkbox allows to edit the titles of content creators. Multiple text entries can be append to the list.
+    - **Contact**: this options group allows to edit the properties of the person or organization to contact. Available values are **E-mail**, **URL**, **Phone**, **Address**, **Postal code**, **City**, **State/Province**, and **Country**.
+    - **Credit**: this checkbox allows to edit the content provider.
+    - **Source**: this checkbox allows to edit the original owner of content.
 
 .. figure:: images/metadata_editor_xmp_credits.webp
     :alt:
