@@ -172,7 +172,7 @@ Content
 This view describe the visual content of the item.
 
     - **Headline**: this checkbox allows to edit the content synopsis. This field is limited to 256 characters.
-    - **Caption**: this checkbox allows to edit the content description. This field is limited to 2000 characters. This filed can be synchronized with the **JFIF Comment section** and **Exif Comment**.
+    - **Caption**: this checkbox allows to edit the content description. This field is limited to 2000 characters. This field can be synchronized with the **JFIF Comment section** and **Exif Comment**.
     - **Caption Writer**: this checkbox allows to edit the names of the caption authors. Multiple entries limited to 32 characters can be append to the list.
 
 .. figure:: images/metadata_editor_iptc_content.webp
@@ -334,6 +334,12 @@ Content
 
 This view describe the visual content of the item.
 
+    - **Headline**: this checkbox allows to edit the content synopsis.
+    - **Caption**: this checkbox allows to edit the content descriptions. The default caption alternatice-language value can be synchronized with the **JFIF Comment section** and **Exif Comment**.
+    - **Caption Writer**: this checkbox allows to edit the names of the caption authors.
+    - **Copyright**: this checkbox allows to edit the necessary copyright notices. The default copyright alternatice-language value can be synchronized with the **Exif Copyright**.
+    - **Right Usage Terms**: this checkbox allows to edit the instructions on how the resource can be legally used.
+
 .. figure:: images/metadata_editor_xmp_content.webp
     :alt:
     :align: center
@@ -398,7 +404,7 @@ This view record categories relevant to the item.
 Status
 ~~~~~~
 
-this view record workflow information.
+This view record workflow information.
 
 .. figure:: images/metadata_editor_xmp_status.webp
     :alt:
