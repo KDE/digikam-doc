@@ -218,6 +218,8 @@ This view record copyright information about the item.
 
     The IPTC Credits View from Edit Metadata Tool
 
+.. _iptc_subjects:
+
 Subjects
 ~~~~~~~~
 
@@ -236,6 +238,8 @@ This view record subject information about the item.
 
     The IPTC Subjects View from Edit Metadata Tool
 
+.. _iptc_keywords:
+
 Keywords
 ~~~~~~~~
 
@@ -248,6 +252,8 @@ The **Use information retrieval words** checkbox allows to edit the keywords lis
     :align: center
 
     The IPTC Keywords View from Edit Metadata Tool
+
+.. _iptc_categories:
 
 Categories
 ~~~~~~~~~~
@@ -385,7 +391,7 @@ This view record copyright information about the item.
 Subjects
 ~~~~~~~~
 
-This view record subject information about the item.
+This view record subject information about the item. It's identical to the :ref:`IPTC Subjects <iptc_subjects>` section, but with no string size limitations.
 
 .. figure:: images/metadata_editor_xmp_subjects.webp
     :alt:
@@ -396,7 +402,7 @@ This view record subject information about the item.
 Keywords
 ~~~~~~~~
 
-This view record keywords relevant to the item.
+This view record keywords relevant to the item. It's identical to the :ref:`IPTC Keywords <iptc_keywords>` section, but with no string size limitations.
 
 .. figure:: images/metadata_editor_xmp_keywords.webp
     :alt:
@@ -407,7 +413,7 @@ This view record keywords relevant to the item.
 Categories
 ~~~~~~~~~~
 
-This view record categories relevant to the item.
+This view record categories relevant to the item. It's identical to the :ref:`IPTC Categories <iptc_categories>` section, but with no string size limitations.
 
 .. figure:: images/metadata_editor_xmp_categories.webp
     :alt:
