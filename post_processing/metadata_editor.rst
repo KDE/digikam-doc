@@ -277,7 +277,7 @@ This view record workflow information.
 
     - **Title**: this checkbox allows to edit the shorthand reference of content. This field is limited to 64 characters.
     - **Edit Status**: this checkbox allows to edit the title of content status. This field is limited to 64 characters.
-    - **Job Identifier**: this checkbox allows to edit Set here the string that identifies content that recurs. This field is limited to 32 characters.
+    - **Job Identifier**: this checkbox allows to edit the string that identifies content that recurs. This field is limited to 32 characters.
     - **Special Instructions**: this checkbox allows to edit the editorial usage instructions. This field is limited to 256 characters.
 
 .. figure:: images/metadata_editor_iptc_status.webp
@@ -425,6 +425,11 @@ Status
 ~~~~~~
 
 This view record workflow information.
+
+    - **Title**: this checkbox allows to edit the shorthand references of content.
+    - **Nickname**: this checkbox allows to edit the short informal name for the resource.
+    - **Identifiers**: this checkbox allows to edit the strings that identifies content that recurs. Multiple text entries can be append to the list.
+    - **Special Instructions**: this checkbox allows to edit the editorial usage instructions.
 
 .. figure:: images/metadata_editor_xmp_status.webp
     :alt:
