@@ -323,7 +323,7 @@ This view record editorial details.
 XMP Tab
 -------
 
-The sections available in this tab group Xmp information which are an evolution of IPTC. XMP remove limitations of text size and introduce the alternative-language support. XMP tab sections are similar than IPTC, excepted the **Envelope** section which do not exists in XMP standard. XMP introduce also new fields in other sections.
+The sections available in this tab group Xmp information which are an evolution of IPTC. XMP remove limitations of text size and introduce the alternative-language support. XMP tab sections are similar than IPTC, excepted the **Envelope** section which does not exist in XMP standard. XMP introduce also new fields in other sections.
 
 .. note::
 
