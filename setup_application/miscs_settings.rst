@@ -218,8 +218,8 @@ You can edit a list of words that Spellcheck must ignore during operations. digi
 Localize Settings
 -----------------
 
-The Configuration Panel
-~~~~~~~~~~~~~~~~~~~~~~~
+The Configuration Page
+~~~~~~~~~~~~~~~~~~~~~~
 
 This section allows to customize the rules to translate automatically strings from text edit widgets using online translator engine.
 
@@ -246,9 +246,9 @@ In digiKam, the localization is available in special string editors supporting a
 
     The Captions Text Edit with Translation Feature
 
-Alternative-languages want mean more that one translations available for one string. The **x-default** entry is the native language entry used as reference for translations. Typically, it common to use English words with x-default, but it's not mandatory. When you ask to translate the string, online translators are able to detect the current language used as **x-default**.
+Alternative-languages want mean more than one translations available for one string. The **x-default** entry is the native language used as reference for translations. Typically, it's common to use English words with x-default, but it's not mandatory. When you ask to translate the string, the online translators will be able to detect the current language used with **x-default**.
 
-On the top of this widget, you can select the translation entry for the string. The drop-down menu will only show your preferred languages sets in the configuration dialog. the next button on the right allows to clear the current translated entry. The next drop-down button allows to create a new translation entry using the configured online translator. Finaly, the last button on the right side will show the Localize settings page to customize the translations behaviors.
+On the top of this editor widget, you can select the translation entry for the string. The drop-down menu will only show your preferred languages sets in the configuration page. The next button on the right allows to clear the current translated entry. The next drop-down button allows to create a new translation entry using the configured online translator. Finale, the last button on the right side will show the Localize settings page to customize the translations behaviors.
 
 .. _system_settings:
 
