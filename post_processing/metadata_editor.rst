@@ -40,6 +40,8 @@ If you select many items from the icon-view, the metadata editor dialog allow to
 
     Synchronizing metadata may produce undesired results because Exif is limited to ASCII character-set.
 
+.. _exif_editor:
+
 Exif Tab
 --------
 
@@ -158,6 +160,8 @@ This view record technical details used by camera.
     :align: center
 
     The Exif Adjustments View from Edit Metadata Tool
+
+.. _iptc_editor:
 
 IPTC Tab
 --------
@@ -325,6 +329,8 @@ This view record editorial details.
     :align: center
 
     The IPTC Envelope View from Edit Metadata Tool
+
+.. _xmp_editor:
 
 XMP Tab
 -------

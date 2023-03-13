@@ -218,6 +218,9 @@ You can edit a list of words that Spellcheck must ignore during operations. digi
 Localize Settings
 -----------------
 
+The Configuration Panel
+~~~~~~~~~~~~~~~~~~~~~~~
+
 This section allows to customize the rules to translate automatically strings from text edit widgets using online translator engine.
 
 .. figure:: images/setup_miscs_localize.webp
@@ -232,11 +235,20 @@ Another list allows to know the **Available Translator Languages**, supported by
 
 As number of entries are huge, for the both lists, a search engine is available and an option that allows to show only the current selection.
 
+Using Strings Localization
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In digiKam, the localization is available in special string editors supporting alternative-languages feature. You can see this kind of widget in the :ref:`Captions tab <captions_view>` from **Right Sidebar** and in the :ref:`XMP Metadata Editor <xmp_editor>` for example.
+
 .. figure:: images/setup_captions_localize.webp
     :alt:
     :align: center
 
     The Captions Text Edit with Translation Feature
+
+Alternative-languages want mean more that one translations available for one string. The **x-default** entry is the native language entry used as reference for translations. Typically, it common to use English words with x-default, but it's not mandatory. When you ask to translate the string, online translators are able to detect the current language used as **x-default**.
+
+On the top of this widget, you can select the translation entry for the string. The drop-down menu will only show your preferred languages sets in the configuration dialog. the next button on the right allows to clear the current translated entry. The next drop-down button allows to create a new translation entry using the configured online translator. Finaly, the last button on the right side will show the Localize settings page to customize the translations behaviors.
 
 .. _system_settings:
 
