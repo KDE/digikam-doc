@@ -50,13 +50,13 @@ The sections available in this tab group most common Exif tags used by camera de
 Caption
 ~~~~~~~
 
-This view record technical descriptions from the camera. All text fields in this section are limited to ASCII characters unless stated otherwise.
+This view records technical descriptions from the camera. All text fields in this section are limited to ASCII characters unless stated otherwise.
 
-    - **Name**: this checkbox allows to edit  the name of the document from which this image was been scanned.
-    - **Description**: this checkbox allows to edit  the image description.
-    - **Artist**: this checkbox allows to edit  the image author's name separated by semi-colons.
-    - **Copyright**: this checkbox allows to edit  the copyright owner of the image.
-    - **Caption**: this checkbox allows to edit  the image's caption. This field is not limited. UTF8 encoding will be used to save the text. This filed can be synchronized with the **JFIF Comment section**, **XMP caption**, and **IPTC caption** (warning: limited to 2000 characters)
+    - **Name**: this checkbox allows to edit the name of the document from which this image was been scanned.
+    - **Description**: this checkbox allows to edit the image description.
+    - **Artist**: this checkbox allows to edit the image author's name separated by semi-colons.
+    - **Copyright**: this checkbox allows to edit the copyright owner of the image.
+    - **Caption**: this checkbox allows to edit the image's caption. This field is not limited. UTF8 encoding will be used to save the text. This filed can be synchronized with the **JFIF Comment section**, **XMP caption**, and **IPTC caption** (warning: limited to 2000 characters)
 
 .. figure:: images/metadata_editor_exif_caption.webp
     :alt:
@@ -67,7 +67,7 @@ This view record technical descriptions from the camera. All text fields in this
 Date and Time
 ~~~~~~~~~~~~~
 
-This view record camera time-stamp properties.
+This view records camera time-stamp properties.
 
     - **Creation date and time**: this checkbox allows to edit the date and time of image creation. It is the date and time corresponding to the time-stamp when the file was changed. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer. This last one can be sync with the **XMP creation date** and **IPTC creation date**.
     - **Creation sub-second**: this checkbox allows to edit the fractions of seconds for the date and time of image creation.
@@ -85,7 +85,7 @@ This view record camera time-stamp properties.
 Lens
 ~~~~
 
-This view record lens details used with camera.
+This view records lens details used with camera.
 
     - **Focal length**: this checkbox allows to edit the lens focal length in millimeters used by camera to take the picture.
     - **Focal length in 35mm film**: this checkbox allows to edit the equivalent focal length assuming a 35mm film camera, in mm. A value of 0 means the focal length is unknown.
@@ -102,7 +102,7 @@ This view record lens details used with camera.
 Device
 ~~~~~~
 
-This view record shot conditions used by camera.
+This view records shot conditions used by camera.
 
     .. warning::
 
@@ -130,7 +130,7 @@ This view record shot conditions used by camera.
 Light
 ~~~~~
 
-This view record ambient condition captured by camera.
+This view records ambient condition captured by camera.
 
     - **Light source**: this checkbox allows to edit the kind of light source used to take the picture.
     - **Flash mode**: this checkbox allows to edit the flash program mode used by the camera to take the picture.
@@ -146,7 +146,7 @@ This view record ambient condition captured by camera.
 Adjustments
 ~~~~~~~~~~~
 
-This view record technical details used by camera.
+This view records technical details used by camera.
 
     - **Brightness**: this checkbox allows to edit the brightness adjustment value in APEX unit used by camera to take the picture.
     - **Gain Control**: this checkbox allows to edit the degree of overall image gain adjustment used by camera to take the picture. Possible values are **None**, **Low gain up**, **High gain up**, **Low gain down**, and **High gain down**.
@@ -207,7 +207,7 @@ This view group formal descriptive information about the item.
 Credits
 ~~~~~~~
 
-This view record copyright information about the item.
+This view records copyright information about the item.
 
     - **Byline**: this checkbox allows to edit the names of content creators. Multiple text entries limited to 32 characters can be append to the list.
     - **Byline Title**: this checkbox allows to edit the titles of content creators. Multiple text entries limited to 32 characters can be append to the list.
@@ -227,7 +227,7 @@ This view record copyright information about the item.
 Subjects
 ~~~~~~~~
 
-This view record subject information about the item.
+This view records subject information about the item.
 
     - **Use structured definition of the subject matter**: this checkbox allows to edit the `IPTC/NAA taxonomy subject codes <https://iptc.org/standards/subject-codes/>`_, with a focus on text. It consists of about 1,400 terms structured into 3 levels. The **Use standard reference code** option allows to select the standard taxonomy, and the **Use custom definition** option allows to customize the values. More than one entries can be append to a list of reference.
     - **IPR**: this field is the Informative Provider Reference. I.P.R is a name registered with the IPTC/NAA, identifying the provider that provides an indicator of the content. The default value for the I.P.R is *IPTC* if a standard Reference Code is used. This field is limited to 32 characters.
@@ -247,7 +247,7 @@ This view record subject information about the item.
 Keywords
 ~~~~~~~~
 
-This view record keywords relevant to the item.
+This view records keywords relevant to the item.
 
 The **Use information retrieval words** checkbox allows to edit the keywords list used to define the content. Below a text field allows to enter a new keyword, limited to 64 characters. Use **Add** button to append the new keyword to the list. **Delete** button removes an entry from the list and **Replace** button changes the current selected item on the list with the edit keyword value. 
 
@@ -262,7 +262,7 @@ The **Use information retrieval words** checkbox allows to edit the keywords lis
 Categories
 ~~~~~~~~~~
 
-This view record categories relevant to the item.
+This view records categories relevant to the item.
 
 The **Identify subject of content** checkbox allows to edit the categories list used to classify the content. On the right a text field allows to enter a new category ID, limited to 3 characters.
 
@@ -277,7 +277,7 @@ On the bottom the **Supplemental categories** checkbox allows to edit a new supp
 Status
 ~~~~~~
 
-This view record workflow information.
+This view records workflow information.
 
     - **Title**: this checkbox allows to edit the shorthand reference of content. This field is limited to 64 characters.
     - **Edit Status**: this checkbox allows to edit the title of content status. This field is limited to 64 characters.
@@ -293,7 +293,7 @@ This view record workflow information.
 Properties
 ~~~~~~~~~~
 
-This view record workflow properties.
+This view records workflow properties.
 
     - **Release date** and **Release time**: these checkbox allows to edit the earliest intended usable date, time, and zone of intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
     - **Expiration date** and **Expiration time**: these checkbox allows to edit the latest intended usable date, time, and zone of intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
@@ -313,7 +313,7 @@ This view record workflow properties.
 Envelope
 ~~~~~~~~
 
-This view record editorial details.
+This view records editorial details.
 
     - **Destination**: this checkbox allows to edit the envelope destination. This field is limited to 1024 characters.
     - **U.N.O ID**: this checkbox allows to edit the Unique Name of Object identifier. This field is limited to 80 characters.
@@ -380,7 +380,7 @@ This view group formal descriptive information about the item.
 Credits
 ~~~~~~~
 
-This view record copyright information about the item.
+This view records copyright information about the item.
 
     - **Creator**: this checkbox allows to edit the names of content creators. Multiple text entries can be append to the list. The default creator alternative-language value can be synchronized with the **Exif Artist**.
     - **Creator Title**: this checkbox allows to edit the titles of content creators. Multiple text entries can be append to the list.
@@ -397,7 +397,7 @@ This view record copyright information about the item.
 Subjects
 ~~~~~~~~
 
-This view record subject information about the item. It's identical to the :ref:`IPTC Subjects <iptc_subjects>` section, but with no string size limitations.
+This view records subject information about the item. It's identical to the :ref:`IPTC Subjects <iptc_subjects>` section, but with no string size limitations.
 
 .. figure:: images/metadata_editor_xmp_subjects.webp
     :alt:
@@ -408,7 +408,7 @@ This view record subject information about the item. It's identical to the :ref:
 Keywords
 ~~~~~~~~
 
-This view record keywords relevant to the item. It's identical to the :ref:`IPTC Keywords <iptc_keywords>` section, but with no string size limitations.
+This view records keywords relevant to the item. It's identical to the :ref:`IPTC Keywords <iptc_keywords>` section, but with no string size limitations.
 
 .. figure:: images/metadata_editor_xmp_keywords.webp
     :alt:
@@ -419,7 +419,7 @@ This view record keywords relevant to the item. It's identical to the :ref:`IPTC
 Categories
 ~~~~~~~~~~
 
-This view record categories relevant to the item. It's identical to the :ref:`IPTC Categories <iptc_categories>` section, but with no string size limitations.
+This view records categories relevant to the item. It's identical to the :ref:`IPTC Categories <iptc_categories>` section, but with no string size limitations.
 
 .. figure:: images/metadata_editor_xmp_categories.webp
     :alt:
@@ -430,7 +430,7 @@ This view record categories relevant to the item. It's identical to the :ref:`IP
 Status
 ~~~~~~
 
-This view record workflow information.
+This view records workflow information.
 
     - **Title**: this checkbox allows to edit the shorthand references of content.
     - **Nickname**: this checkbox allows to edit the short informal name for the resource.
@@ -446,7 +446,7 @@ This view record workflow information.
 Properties
 ~~~~~~~~~~
 
-This view record workflow properties.
+This view records workflow properties.
 
     - **Language**: this checkbox allows to select the languages used by the content. Multiple text entries can be append to the list.
     - **Priority**: this checkbox allows to select the editorial urgency of content. Possible values are **0: None**, **1: high**, **2**, **3**, **4**, **5: normal**, **6**, **7**, **8: low**, and **9: user-defined**.
