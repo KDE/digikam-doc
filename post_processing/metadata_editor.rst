@@ -173,7 +173,7 @@ Pre-configured subjects can be used to describe the items contents based on IPTC
 Content
 ~~~~~~~
 
-This view describe the visual content of the item.
+This view describes the visual content of the item.
 
     - **Headline**: this checkbox allows to edit the content synopsis. This field is limited to 256 characters.
     - **Caption**: this checkbox allows to edit the content description. This field is limited to 2000 characters. This field can be synchronized with the **JFIF Comment section** and **Exif Comment**.
@@ -188,7 +188,7 @@ This view describe the visual content of the item.
 Origin
 ~~~~~~
 
-This view group formal descriptive information about the item.
+This view groups formal descriptive information about the item.
 
     - **Digitization date** and **Digitization time**: these checkbox allows to edit the date, time, and zone of the digital representation. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
     - **Creation date** and **Creation time**: these checkbox allows to edit the date, time, and zone of the intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer. These values can be synchronized with the **Exif Creation date**.
@@ -344,7 +344,7 @@ The sections available in this tab group Xmp information which are an evolution 
 Content
 ~~~~~~~
 
-This view describe the visual content of the item.
+This view describes the visual content of the item.
 
     - **Headline**: this checkbox allows to edit the content synopsis.
     - **Caption**: this checkbox allows to edit the content descriptions. The default caption alternative-language value can be synchronized with the **JFIF Comment section** and **Exif Comment**.
@@ -361,7 +361,7 @@ This view describe the visual content of the item.
 Origin
 ~~~~~~
 
-This view group formal descriptive information about the item.
+This view groups formal descriptive information about the item.
 
     - **Digitization date**: this checkbox allows to edit the date and zone of the digital representation. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer.
     - **Creation date**: this checkbox allows to edit the date and zone of the intellectual content. Use the calendar editor widget on the bottom to select the time-stamp and the button on the right side to reset time-stamp to the current date of computer. These values can be synchronized with the **Exif Creation date**.
