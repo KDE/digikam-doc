@@ -246,9 +246,9 @@ In digiKam, the localization is available in special text editor widgets support
 
     The Captions Text Editor with Translation Feature
 
-Alternative-languages want mean more than one translations available for one string. The **x-default** entry is the native language used as reference for translations. Typically, it's common to use English words with x-default, but it's not mandatory. When you ask to translate the string, the online translators will be able to auto-detect the current language used with **x-default**.
+Alternative-languages mean more than one translation available for one string. The **x-default** entry is the native language used as a reference for translations. Typically, it's common to use English words with x-default, but it's not mandatory. When you ask to translate the string, the online translators will be able to auto-detect the current language used with **x-default**.
 
-On the top of a text editor widget, you can select the translation entry for the string. The drop-down menu will only show your preferred languages sets in the configuration page. The next button on the right allows to clear the current translated entry. The next drop-down button allows to create a new translation entry using the configured online translator. Finally, the last button on the right side will show the Localize settings page to customize the translations behaviors.
+On the top of a text editor widget, you can select the translation entry for the string. The drop-down menu will only show your preferred languages set on the configuration page. The next button on the right allows clearing the current translated entry. The next drop-down button allows creating of a new translation entry using the configured online translator. Finally, the last button on the right side will show the Localize settings page to customize the translation behavior.
 
 .. _system_settings:
 
