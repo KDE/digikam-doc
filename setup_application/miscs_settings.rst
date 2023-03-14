@@ -209,7 +209,7 @@ Spellcheck can be used on captions, titles, and other text-edit widgets to auto-
     :alt:
     :align: center
 
-    The Titles Text Edit with Spellcheck Feature
+    The Titles Text Editor from Captions Tab with Spellcheck Feature
 
 You can edit a list of words that Spellcheck must ignore during operations. digiKam already provide a list usual keywords to not verify.
 
@@ -221,7 +221,7 @@ Localize Settings
 The Configuration Page
 ~~~~~~~~~~~~~~~~~~~~~~
 
-This section allows to customize the rules to translate automatically strings from text edit widgets using online translator engine.
+This section allows to customize the rules to translate automatically strings from text editor widgets using online translator engine.
 
 .. figure:: images/setup_miscs_localize.webp
     :alt:
@@ -229,26 +229,26 @@ This section allows to customize the rules to translate automatically strings fr
 
     The digiKam Localize Configuration Page
 
-A list of **Alternative Languages** supported by digiKam is provided where you can select your preferred entries to found in text edit widgets.
+A list of **Alternative Languages** supported by digiKam is provided where you can select your preferred entries hosted in text editor widgets.
 
-Another list allows to know the **Available Translator Languages**, supported by the **Online Translator** engine selected.
+Another list allows to know the **Available Translator Languages**, supported by the selected **Online Translator** engine.
 
-As number of entries are huge, for the both lists, a search engine is available and an option that allows to show only the current selection.
+As number of entries are huge for the both lists, a search engine is available and an option to show only the current selection.
 
 Using Strings Localization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In digiKam, the localization is available in special string editors supporting alternative-languages feature. You can see this kind of widget in the :ref:`Captions tab <captions_view>` from **Right Sidebar** and in the :ref:`XMP Metadata Editor <xmp_editor>` for example.
+In digiKam, the localization is available in special text editor widgets supporting alternative-languages feature. You can see this kind of widget in the :ref:`Captions tab <captions_view>` from **Right Sidebar** and in the :ref:`XMP Metadata Editor <xmp_editor>` for example.
 
 .. figure:: images/setup_captions_localize.webp
     :alt:
     :align: center
 
-    The Captions Text Edit with Translation Feature
+    The Captions Text Editor with Translation Feature
 
-Alternative-languages want mean more than one translations available for one string. The **x-default** entry is the native language used as reference for translations. Typically, it's common to use English words with x-default, but it's not mandatory. When you ask to translate the string, the online translators will be able to detect the current language used with **x-default**.
+Alternative-languages want mean more than one translations available for one string. The **x-default** entry is the native language used as reference for translations. Typically, it's common to use English words with x-default, but it's not mandatory. When you ask to translate the string, the online translators will be able to auto-detect the current language used with **x-default**.
 
-On the top of this editor widget, you can select the translation entry for the string. The drop-down menu will only show your preferred languages sets in the configuration page. The next button on the right allows to clear the current translated entry. The next drop-down button allows to create a new translation entry using the configured online translator. Finale, the last button on the right side will show the Localize settings page to customize the translations behaviors.
+On the top of a text editor widget, you can select the translation entry for the string. The drop-down menu will only show your preferred languages sets in the configuration page. The next button on the right allows to clear the current translated entry. The next drop-down button allows to create a new translation entry using the configured online translator. Finally, the last button on the right side will show the Localize settings page to customize the translations behaviors.
 
 .. _system_settings:
 
