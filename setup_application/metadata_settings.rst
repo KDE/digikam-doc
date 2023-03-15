@@ -148,7 +148,11 @@ With the buttons on the right side, you can customize the list:
     - **Move up**: allows to move the current select entry in the list to a higher priority.
     - **Move Down**: allows to move the current selected entry in the list to a lower priority.
     - **Revert Changes**: allows to revert last changes done on the list.
+    - **Save Profile**: allows to save the current configuration to a **Profile** file.
+    - **Load Profile**: allows to load a saved configuration from a **Profile** file.
     - **Revert To Default**: allows to reset the current list to the default values.
+
+The **Profile** are simple ini-based text file used to store the advanced metadata settings to the disk. A profile can be loaded to overload the current configuration, depending of your workflow and the rules to apply for the best interoperability with other photo management programs. digiKam comes with a compatibility profile for **DarkTable**.
 
 .. important::
 
