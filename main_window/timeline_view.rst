@@ -19,7 +19,9 @@ Time-Line View
 
     The Timeline View
 
-The Timeline View shows a timescale-adjustable histogram of the numbers of images per time unit which is selectable by a drop down field. To the right of that you can choose between a linear or logarithmic histogram. A selection frame moves over the histogram. To display the photographs out of a certain time frame just click on the corresponding bar. You are not restricted to one bar. With :kbd:`Shift+left` click or :kbd:`Ctrl+left` click you can add more bars to the first one.
+The Timeline View shows a timescale-adjustable histogram of the numbers of images per **Time Unit** which is selectable by a drop down field. Available graininess of time are **Day**, **Week**, **Month**, and **Year**.
+
+To the right of that you can choose between a **Linear** or **Logarithmic** histogram using scaling buttons. A selection frame can be moved over the histogram and to display the photographs out of a certain time frame, just click on the corresponding histogram bar. You are not restricted to one bar: with :kbd:`Shift+left` click you can select a range of bars from the histogram, and with :kbd:`Ctrl+left` click you can select more single bars to the first one.
 
 .. figure:: videos/mainwindow_timeline_selection.webp
     :width: 600px
@@ -28,4 +30,8 @@ The Timeline View shows a timescale-adjustable histogram of the numbers of image
 
     Timeline Selection Screencast
 
-In the field right below you can enter a title and save your selection. It will then appear in the **Searches** list field below. But the best is still to come: the Timeline View offers a search for a search! If you have a lot more searches saved than my ridiculous four in the screenshot the adaptive search field at the bottom may help to find a certain search.
+In the field right below you can enter a title and save your selection. It will then appear in the **Searches** list field below. But the best is still to come: the Timeline View offers a search for a search. If you have a lot more searches saved in the database, the adaptive search field at the bottom may help to find a certain entry in the list.
+
+The date-range of the histogram is populated with the time stamp of items registered in the database. For each date matching the histogram bars time-resolution, an item is counted in the statistics. Long bars correspond to dates where a lots of items have been taken in the same graininess-range.
+
+The icon-view give the search results of the selection of date. You can select wanted items to post process contents on batch queue manager or export items to the Internet. From Right sidebar you can filter icon view contents by database properties.
