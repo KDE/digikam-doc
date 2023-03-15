@@ -32,6 +32,10 @@ Creating a New Album
 
 There are a number of ways to create a new Album. You can create a new Album when you upload new photographs from the Camera using :menuselection:`Import --> Cameras`. You can also create a new empty Album with :menuselection:`Album --> New...` :kbd:`Ctrl+N` in the Albums view. As an additional option, you can create a new Album by importing an existing folder of photographs from your computer; just select :menuselection:`Import --> Add Folders...` from the menu bar and select the folder that you want to import. An Album will be created with the same name as the hard disk folder. You can use drag and drop to import a folder. Drag a folder icon, for example from your preferred files-manager. Then drop it on the album list on the left. A menu will appear that gives you the option to move or copy the folder into digiKam.
 
+.. note::
+
+    A album is hosted in a collection root path registered in the database. If a settings about collections has changed or if the collection no longer exists (for example with a removable media), no new albums can be created. You needs to check the collection properties in :ref:`the digiKam setup dialog <collections_settings>`.
+
 .. _deleting_album:
 
 Deleting an Album
