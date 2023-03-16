@@ -34,4 +34,4 @@ In the field right below you can enter a title and save your selection. It will 
 
 The date-range of the histogram is populated with the time stamp of items registered in the database. For each date matching the histogram bars time-resolution, an item is counted in the statistics. Long bars correspond to dates where a lots of items have been taken in the same graininess-range.
 
-The icon-view give the search results of the selection of date. You can select wanted items to post process contents on batch queue manager or export items to the Internet. From Right sidebar you can filter icon view contents by database properties.
+The icon-view gives the search results of the selection of date. You can select wanted items to post-process contents on batch queue manager or export items to the Internet. From Right sidebar you can filter icon view contents by database properties.
