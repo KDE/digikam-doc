@@ -21,7 +21,7 @@ You’ll find all previous digiKam versions in the `attic <https://download.kde.
 
 .. note::
 
-    Bundles using the **-debug** in file-name includes debug symbols to catch debugger traces when application stop to work. Files are more heavy but this will help developers to found the origin of dysfunctions.
+    Bundles using the **-debug** in file-name includes `debug symbols <https://en.wikipedia.org/wiki/Debug_symbol>`_ to catch debugger traces when application stop to work. Files are more heavy but this will help developers to found the origin of dysfunctions.
 
 Minimum System Requirements
 ---------------------------
