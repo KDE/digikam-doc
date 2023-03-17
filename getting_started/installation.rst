@@ -19,6 +19,10 @@ Visit `the download page <https://www.digikam.org/download/>`_ of the digiKam We
 
 You’ll find all previous digiKam versions in the `attic <https://download.kde.org/Attic/digikam/>`_.
 
+.. note::
+
+    Bundles using the **-debug** in file-name includes debug symbols to catch debugger traces when application stop to work. Files are more heavy but this will help developers to found the origin of dysfunctions.
+
 Minimum System Requirements
 ---------------------------
 
