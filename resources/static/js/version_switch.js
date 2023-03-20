@@ -34,7 +34,7 @@ var all_langs = {
     //"pt_BR": "Portugu&ecirc;s (Brazil)",
     "pt_PT": "Portugu&ecirc;s",
     //"ru": "&#x3A1;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;",
-    //"sk": "Sloven&#269;ina",
+    "sk": "Sloven&#269;ina",
     //"sl": "Sloven&#353;&#269;ina",
     //"sr": "&#1089;&#1088;&#1087;&#1089;&#1082;&#1080;",
     //"sv": "Svenska",
