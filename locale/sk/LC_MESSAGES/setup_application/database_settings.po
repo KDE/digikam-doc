@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: docs_digikam_org_setup_application___database_settings\n"
-"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-02-09 00:53+0000\n"
 "PO-Revision-Date: 2023-03-19 10:26+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
@@ -21,9 +21,9 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:1
 msgid ""
-"digiKam, documentation, user manual, photo management, open source, free,"
-" learn, easy, database, setup, mysql, mariadb, sqlite, migration, local,"
-" remote, server"
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, database, setup, mysql, mariadb, sqlite, migration, local, "
+"remote, server"
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:14
@@ -36,8 +36,8 @@ msgstr "Obsah"
 
 #: ../../setup_application/database_settings.rst:20
 msgid ""
-"For an introduction of internal data storage, please refer to"
-" :ref:`Introduction of digiKam Databases <database_intro>` section."
+"For an introduction of internal data storage, please refer to :ref:"
+"`Introduction of digiKam Databases <database_intro>` section."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:25
@@ -46,22 +46,22 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:27
 msgid ""
-"`SQLite <https://sqlite.org/>`_ is a relational database management system,"
-" written in C programming library. SQLite is not directly comparable to"
-" client/server SQL database engines such as MySQL, Oracle or PostgreSQL."
-" Rather, it is an embedded SQL database engine, i.e. it is embedded in an end"
-" program. SQLite reads and writes directly to ordinary disk files. For"
-" device-local storage with low writer concurrency and less than a terabyte of"
-" content, SQLite is almost always a better solution. SQLite is fast and"
-" reliable and it requires no configuration or maintenance. It keeps things"
-" simple. SQLite \"just works\"."
+"`SQLite <https://sqlite.org/>`_ is a relational database management system, "
+"written in C programming library. SQLite is not directly comparable to "
+"client/server SQL database engines such as MySQL, Oracle or PostgreSQL. "
+"Rather, it is an embedded SQL database engine, i.e. it is embedded in an end "
+"program. SQLite reads and writes directly to ordinary disk files. For device-"
+"local storage with low writer concurrency and less than a terabyte of "
+"content, SQLite is almost always a better solution. SQLite is fast and "
+"reliable and it requires no configuration or maintenance. It keeps things "
+"simple. SQLite \"just works\"."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:29
 msgid ""
-"By default, digiKam uses SQLite as its back-end for storing important"
-" metadata and thumbnails. Three SQLite files used for storing them are named"
-" respectively:"
+"By default, digiKam uses SQLite as its back-end for storing important "
+"metadata and thumbnails. Three SQLite files used for storing them are named "
+"respectively:"
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:32
@@ -110,30 +110,30 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:40
 msgid ""
-"To make your application run fast and smoothly, it is recommended to check"
-" and optimize your databases once in awhile. This could be achieved with the"
-" menu option :menuselection:`Tools --> Maintenance...` and the stage"
-" **Perform Database Cleaning**. See this :ref:`Maintenance tool section <"
-"maintenance_database>` for details. A recommended tool is `SQLite Browser <"
-"https://sqlitebrowser.org/>`_, a high quality and easy to use visual tool for"
-" managing database objects. For Ubuntu and its derivatives, it could be"
-" retrieved using `sudo apt install sqlitebrowser`. Now you can switch to the"
-" directory where databases are stored and visualize the database contents."
+"To make your application run fast and smoothly, it is recommended to check "
+"and optimize your databases once in awhile. This could be achieved with the "
+"menu option :menuselection:`Tools --> Maintenance...` and the stage "
+"**Perform Database Cleaning**. See this :ref:`Maintenance tool section "
+"<maintenance_database>` for details. A recommended tool is `SQLite Browser "
+"<https://sqlitebrowser.org/>`_, a high quality and easy to use visual tool "
+"for managing database objects. For Ubuntu and its derivatives, it could be "
+"retrieved using `sudo apt install sqlitebrowser`. Now you can switch to the "
+"directory where databases are stored and visualize the database contents."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:45
 msgid ""
-"Take care to use a place hosted by fast hardware (such as SSD or NVMe) with"
-" enough free space especially for thumbnails database. A remote file system"
-" such as NFS cannot be used here. For performance and technical reasons"
-" relevant of SQLite, you cannot use a media from the network."
+"Take care to use a place hosted by fast hardware (such as SSD or NVMe) with "
+"enough free space especially for thumbnails database. A remote file system "
+"such as NFS cannot be used here. For performance and technical reasons "
+"relevant of SQLite, you cannot use a media from the network."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:47
 msgid ""
-"SQLite database files could be found in your *collection* folder, which you"
-" have added to digiKam. (By default, if you add your “Pictures” collection,"
-" the database files will be present in :file:`~/Pictures` folder)."
+"SQLite database files could be found in your *collection* folder, which you "
+"have added to digiKam. (By default, if you add your “Pictures” collection, "
+"the database files will be present in :file:`~/Pictures` folder)."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:53
@@ -142,8 +142,8 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:57
 msgid ""
-"The **WAL** SQLite mode is a very important option that we recommend to turn"
-" on with large databases to optimize transactions and improve performances."
+"The **WAL** SQLite mode is a very important option that we recommend to turn "
+"on with large databases to optimize transactions and improve performances."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:60
@@ -156,20 +156,20 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:65
 msgid ""
-"`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ is an open-source, relational"
-" database management system, written in C and C++. Original development of"
-" MySQL by Michael Widenius and David Axmark beginning in 1994. Sun"
-" Microsystems acquired MySQL in 2008, which was later acquired by Oracle in"
-" 2010. MySQL currently works on almost all system platforms (Linux, Microsoft"
-" Windows, OS X, SunOS …)."
+"`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ is an open-source, relational "
+"database management system, written in C and C++. Original development of "
+"MySQL by Michael Widenius and David Axmark beginning in 1994. Sun "
+"Microsystems acquired MySQL in 2008, which was later acquired by Oracle in "
+"2010. MySQL currently works on almost all system platforms (Linux, Microsoft "
+"Windows, OS X, SunOS …)."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:67
 msgid ""
-"`MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ server is a community"
-" developed fork of MySQL server. Started by core members of the original"
-" MySQL team, MariaDB actively works with outside developers to deliver the"
-" most featureful, stable, and sanely licensed open SQL server in the industry."
+"`MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ server is a community "
+"developed fork of MySQL server. Started by core members of the original "
+"MySQL team, MariaDB actively works with outside developers to deliver the "
+"most featureful, stable, and sanely licensed open SQL server in the industry."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:69
@@ -198,50 +198,50 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:81
 msgid ""
-"digiKam also provides support for popular MySQL database engine. Of course,"
-" you might wonder why you’d want to switch to MySQL when SQLite already does"
-" a good job of managing the data? MySQL offers many advantages for storing"
-" digiKam data, especially when collections include **more than 100,000"
-" items**. With such large collections, SQLite introduces latency which slows"
-" down the application."
+"digiKam also provides support for popular MySQL database engine. Of course, "
+"you might wonder why you’d want to switch to MySQL when SQLite already does "
+"a good job of managing the data? MySQL offers many advantages for storing "
+"digiKam data, especially when collections include **more than 100,000 "
+"items**. With such large collections, SQLite introduces latency which slows "
+"down the application."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:85
 msgid ""
-"With **WAL** option enabled, SQLite can be easily used for more than 100,000"
-" items especially with an SSD or NVMe storage. It must be even faster than"
-" MySQL and more stable. See `this page <https://www.sqlite.org/wal.html>`_"
-" for technical details."
+"With **WAL** option enabled, SQLite can be easily used for more than 100,000 "
+"items especially with an SSD or NVMe storage. It must be even faster than "
+"MySQL and more stable. See `this page <https://www.sqlite.org/wal.html>`_ "
+"for technical details."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:87
 msgid ""
-"Using MySQL as digiKam’s database back-end allows you to store the data on"
-" local as well as remote server. Local, to replace the local SQLite storage"
-" and latter, to use a shared computer through network. Using MySQL as"
-" digiKam’s database back-end allows you to store the data on a remote server."
-" This way, you can use multiple digiKam installations (For instance,on your"
-" notebook and PC) to access and manage your photo collections. You can also"
-" use MySQL tools to backup and analyze digiKam’s data."
+"Using MySQL as digiKam’s database back-end allows you to store the data on "
+"local as well as remote server. Local, to replace the local SQLite storage "
+"and latter, to use a shared computer through network. Using MySQL as "
+"digiKam’s database back-end allows you to store the data on a remote server. "
+"This way, you can use multiple digiKam installations (For instance,on your "
+"notebook and PC) to access and manage your photo collections. You can also "
+"use MySQL tools to backup and analyze digiKam’s data."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:89
 msgid ""
-"To switch from SQLite to MySQL database, go to :menuselection:`Settings -->"
-" Configure digiKam...` and then under **Database** section, select a database"
-" from the drop down list."
+"To switch from SQLite to MySQL database, go to :menuselection:`Settings --> "
+"Configure digiKam...` and then under **Database** section, select a database "
+"from the drop down list."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:91
 msgid ""
-"**MySQL Internal**: This allows to run an internal database server on your"
-" system. digiKam uses Unix socket for the connection."
+"**MySQL Internal**: This allows to run an internal database server on your "
+"system. digiKam uses Unix socket for the connection."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:93
 msgid ""
-"**MySQL Server**: Use this if you’ve your data on remote server and you’re on"
-" a different machine trying to access the collection."
+"**MySQL Server**: Use this if you’ve your data on remote server and you’re "
+"on a different machine trying to access the collection."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:98
@@ -250,26 +250,26 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:100
 msgid ""
-"While using a large collection hosted on hard drive (HDD - not SSD or NVMe"
-" device), with a size **greater than 100,000 items**, the application tends"
-" to slow down. To avoid the delay and maintain efficiency, digiKam provides"
-" option of using **MySQL Internal**. To be clear, this isn’t an actual"
-" server, or a public network. Instead, it is a server that runs only while"
-" application is running."
+"While using a large collection hosted on hard drive (HDD - not SSD or NVMe "
+"device), with a size **greater than 100,000 items**, the application tends "
+"to slow down. To avoid the delay and maintain efficiency, digiKam provides "
+"option of using **MySQL Internal**. To be clear, this isn’t an actual "
+"server, or a public network. Instead, it is a server that runs only while "
+"application is running."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:102
 msgid ""
-"Internal server creates a separate database that can be accessed (only while"
-" application is running) using the command:"
+"Internal server creates a separate database that can be accessed (only while "
+"application is running) using the command:"
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:108
 msgid ""
-"Internal server uses tree MySQL Binary Tools: :file:`mysql_install_db`,"
-" :file:`mysqladmin`, and :file:`mysqld`. You can configure their locations in"
-" the configuration dialog. digiKam will try to find these binaries"
-" automatically if they’re installed on your system."
+"Internal server uses tree MySQL Binary Tools: :file:`mysql_install_db`, :"
+"file:`mysqladmin`, and :file:`mysqld`. You can configure their locations in "
+"the configuration dialog. digiKam will try to find these binaries "
+"automatically if they’re installed on your system."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:114
@@ -282,37 +282,37 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:121
 msgid ""
-"Obviously, to use digiKam with a remote MySQL, you would require a MySQL"
-" server. Or, you could also install MariaDB, which serves the purpose well."
-" (Could be installed easily using `this link <"
-"https://www.cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-u"
-"buntu-20-04>`_.)"
+"Obviously, to use digiKam with a remote MySQL, you would require a MySQL "
+"server. Or, you could also install MariaDB, which serves the purpose well. "
+"(Could be installed easily using `this link <https://www.cherryservers.com/"
+"blog/how-to-install-and-start-using-mariadb-on-ubuntu-20-04>`_.)"
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:123
 msgid ""
-"Follow the instructions below, if you don’t have a dedicated user account and"
-" a digiKam database already set up. Run the commands in MySQL server, after"
-" replacing *password* with correct one."
+"Follow the instructions below, if you don’t have a dedicated user account "
+"and a digiKam database already set up. Run the commands in MySQL server, "
+"after replacing *password* with correct one."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:127
 msgid ""
-"You can select any database name. (Here it is, *digikam*). Just remember to"
-" fill in the database name correctly in Core, Thumbs, Similarity, and Face"
-" database names from the dialog box shown below."
+"You can select any database name. (Here it is, *digikam*). Just remember to "
+"fill in the database name correctly in Core, Thumbs, Similarity, and Face "
+"database names from the dialog box shown below."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:139
 msgid ""
-"If you have an enormous collection, it's recommended to start the MySQL"
-" server with `mysql --max_allowed_packet = 128M`"
+"If you have an enormous collection, it's recommended to start the MySQL "
+"server with `mysql --max_allowed_packet = 128M`"
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:141
 msgid ""
-"Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` and"
-" then under **Database** section, select MySQL Server from the drop down list."
+"Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` "
+"and then under **Database** section, select MySQL Server from the drop down "
+"list."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:147
@@ -321,71 +321,71 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:149
 msgid ""
-"Enter the IP address of your MySQL server in the **Host Name** field and"
-" specify the correct port in the **Host Port** field (the default port is"
-" 3306)."
+"Enter the IP address of your MySQL server in the **Host Name** field and "
+"specify the correct port in the **Host Port** field (the default port is "
+"3306)."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:151
 msgid ""
-"In the **Core Db Name** field, enter the name of the first database for"
-" storing photo metadata."
+"In the **Core Db Name** field, enter the name of the first database for "
+"storing photo metadata."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:153
 msgid ""
-"Specify the name of the second database for storing wavelets compressed"
-" thumbnails in the **Thumbs Db Name** field."
+"Specify the name of the second database for storing wavelets compressed "
+"thumbnails in the **Thumbs Db Name** field."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:155
 msgid ""
-"The third database is dedicated to store fuzzy search finger-prints. Use the"
-" **Similarity Db Name** field for that."
+"The third database is dedicated to store fuzzy search finger-prints. Use the "
+"**Similarity Db Name** field for that."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:157
 msgid ""
-"The last database is dedicated to store face histograms for recognition"
-" purpose. Use the **Face Db Name** field for that."
+"The last database is dedicated to store face histograms for recognition "
+"purpose. Use the **Face Db Name** field for that."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:159
 msgid ""
-"To be connected safety to the remote server, enter your MySQL identification"
-" using **User** and **Password** fields."
+"To be connected safety to the remote server, enter your MySQL identification "
+"using **User** and **Password** fields."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:161
 msgid ""
-"To check whether the database connection works properly, press the **Check"
-" Connection** button. If everything works as it’s supposed to, switch to the"
-" **Collections** sections, and add the directories containing your photos."
-" Hit **OK**, and wait till digiKam populates the databases with data from"
-" photos. This can take a while if you have a lot of items to register in"
-" database."
+"To check whether the database connection works properly, press the **Check "
+"Connection** button. If everything works as it’s supposed to, switch to the "
+"**Collections** sections, and add the directories containing your photos. "
+"Hit **OK**, and wait till digiKam populates the databases with data from "
+"photos. This can take a while if you have a lot of items to register in "
+"database."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:163
 msgid ""
-"There are some tips and recommendation to obtain the best results with a"
-" remote MySQL database server."
+"There are some tips and recommendation to obtain the best results with a "
+"remote MySQL database server."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:165
 msgid ""
-"With slow network, digiKam hangs a lot of time especially when album contains"
-" many items **(>1,000)**. This solution relies on network performances."
-" Problem has been reproducible using Wifi connection, for instance. Switching"
-" to Ethernet must solves the problem."
+"With slow network, digiKam hangs a lot of time especially when album "
+"contains many items **(>1,000)**. This solution relies on network "
+"performances. Problem has been reproducible using Wifi connection, for "
+"instance. Switching to Ethernet must solves the problem."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:167
 msgid ""
-"Also, if you have an enormous collection, you should start the MySQL server"
-" with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with"
-" using MySQL, you could also change your settings in :file:`my.ini` or"
-" :file:`~/.my.cnf` files."
+"Also, if you have an enormous collection, you should start the MySQL server "
+"with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with "
+"using MySQL, you could also change your settings in :file:`my.ini` or :file:"
+"`~/.my.cnf` files."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:170
@@ -394,8 +394,8 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:172
 msgid ""
-"See the resume below to choose the right database type depending of the"
-" use-cases."
+"See the resume below to choose the right database type depending of the use-"
+"cases."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:175
@@ -430,8 +430,8 @@ msgid "SQLite"
 msgstr "SQLite"
 
 #: ../../setup_application/database_settings.rst:177
-#, fuzzy
 #: ../../setup_application/database_settings.rst:183
+#, fuzzy
 msgid "< 100K"
 msgstr "K"
 
@@ -440,17 +440,17 @@ msgid "**Warning: WAL is mandatory.**"
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:178
-#, fuzzy
 #: ../../setup_application/database_settings.rst:180
 #: ../../setup_application/database_settings.rst:182
 #: ../../setup_application/database_settings.rst:184
 #: ../../setup_application/database_settings.rst:186
+#, fuzzy
 msgid "MySQL-Internal"
 msgstr "Interné Mysql"
 
 #: ../../setup_application/database_settings.rst:178
-#, fuzzy
 #: ../../setup_application/database_settings.rst:184
+#, fuzzy
 msgid "> 100K"
 msgstr "K"
 
@@ -554,41 +554,41 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:215
 msgid ""
-"See this :ref:`Digital Asset Management chapter <storage_deterioration>` for"
-" more details about media and data protection."
+"See this :ref:`Digital Asset Management chapter <storage_deterioration>` for "
+"more details about media and data protection."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:217
 msgid ""
-"See also this :ref:`Collection Settings chapter <collections_settings>` for"
-" more details about the way to configure your collections depending of your"
-" storage policy."
+"See also this :ref:`Collection Settings chapter <collections_settings>` for "
+"more details about the way to configure your collections depending of your "
+"storage policy."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:221
 msgid ""
-"If you share the same **Removable** media to host databases and/or"
-" collections between different computers, you must have the same kind of"
-" operating system, the same mount paths everywhere (use symbolic links to"
-" revolve paths), and the same digiKam version everywhere to prevent conflicts"
-" with database schemes."
+"If you share the same **Removable** media to host databases and/or "
+"collections between different computers, you must have the same kind of "
+"operating system, the same mount paths everywhere (use symbolic links to "
+"revolve paths), and the same digiKam version everywhere to prevent conflicts "
+"with database schemes."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:223
 msgid ""
-"If you use a common **Remote** server to host databases and collections, you"
-" must use the same digiKam version everywhere to prevent conflicts with"
-" database schemes. Computers running digiKam cannot be used at the same time"
-" on collections."
+"If you use a common **Remote** server to host databases and collections, you "
+"must use the same digiKam version everywhere to prevent conflicts with "
+"database schemes. Computers running digiKam cannot be used at the same time "
+"on collections."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:225
 msgid ""
-"If you use a common **Remote** server to host collections, as databases are"
-" located on computers, different versions of digiKam can be used and digiKam"
-" sessions can run at the same time on collections. Take a care about"
-" concurrency access on files metadata if you turned on this option on"
-" **Metadata Setup Page**."
+"If you use a common **Remote** server to host collections, as databases are "
+"located on computers, different versions of digiKam can be used and digiKam "
+"sessions can run at the same time on collections. Take a care about "
+"concurrency access on files metadata if you turned on this option on "
+"**Metadata Setup Page**."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:230
@@ -598,17 +598,17 @@ msgstr "Migrácia databázy..."
 
 #: ../../setup_application/database_settings.rst:232
 msgid ""
-"The photo management application comes up with an exclusive tool “Database"
-" Migration”, that allows users to migrate their data. Suppose, you’re using"
-" SQLite and you wish to move all data to MySQL database, migration tool will"
-" help you do so. It can help you migrate data from SQLite to MySQL and vice"
-" versa."
+"The photo management application comes up with an exclusive tool “Database "
+"Migration”, that allows users to migrate their data. Suppose, you’re using "
+"SQLite and you wish to move all data to MySQL database, migration tool will "
+"help you do so. It can help you migrate data from SQLite to MySQL and vice "
+"versa."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:234
 msgid ""
-"To migrate to another database, go to :menuselection:`Settings --> Database"
-" Migration...`. A dialog box appears:"
+"To migrate to another database, go to :menuselection:`Settings --> Database "
+"Migration...`. A dialog box appears:"
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:240
@@ -617,9 +617,9 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:242
 msgid ""
-"Now choose appropriate database types you want to convert to. Finally, click"
-" on Migrate button to convert the database from SQLite to MySQL (or vice"
-" versa). Depending of the database size this operation can take a while."
+"Now choose appropriate database types you want to convert to. Finally, click "
+"on Migrate button to convert the database from SQLite to MySQL (or vice "
+"versa). Depending of the database size this operation can take a while."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:247
@@ -628,25 +628,25 @@ msgstr ""
 
 #: ../../setup_application/database_settings.rst:249
 msgid ""
-"For security reasons, planing a database backup using crontab over the"
-" network can help against device dysfunctions. A NAS or an external drive can"
-" also be used for that."
+"For security reasons, planing a database backup using crontab over the "
+"network can help against device dysfunctions. A NAS or an external drive can "
+"also be used for that."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:251
 msgid ""
-"Each database can be named with a different name, not only *digikam*. This"
-" allows to users to backup only what is needed. For instance, naming **Core**"
-" database as *digiKam_Core*, allows to isolate only this table (the most"
-" important file). **Thumbnails**, **Similarity** and **Face Recognition**"
-" databases can always be regenerated for scratch."
+"Each database can be named with a different name, not only *digikam*. This "
+"allows to users to backup only what is needed. For instance, naming **Core** "
+"database as *digiKam_Core*, allows to isolate only this table (the most "
+"important file). **Thumbnails**, **Similarity** and **Face Recognition** "
+"databases can always be regenerated for scratch."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:253
 msgid ""
-"The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will"
-" explain how to maintain in time the database contents and how to synchronize"
-" the collections with databases information (and vice versa)."
+"The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
+"explain how to maintain in time the database contents and how to synchronize "
+"the collections with databases information (and vice versa)."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:258
@@ -655,16 +655,16 @@ msgstr "Databázová štatistika"
 
 #: ../../setup_application/database_settings.rst:260
 msgid ""
-"digiKam provides a unique tool to show the statistics from your collections."
-" It includes count of images, videos (including individual count by image"
-" format), tags etc. Also, includes the **Database Backend** (QSQLITE or"
-" QMYSQL) and the **Database Path** (where your collection is located)."
+"digiKam provides a unique tool to show the statistics from your collections. "
+"It includes count of images, videos (including individual count by image "
+"format), tags etc. Also, includes the **Database Backend** (QSQLITE or "
+"QMYSQL) and the **Database Path** (where your collection is located)."
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:262
 msgid ""
-"You can view your statistics by going to :menuselection:`Help --> Database"
-" Statistics...`. A dialog box like this will appear:"
+"You can view your statistics by going to :menuselection:`Help --> Database "
+"Statistics...`. A dialog box like this will appear:"
 msgstr ""
 
 #: ../../setup_application/database_settings.rst:268
