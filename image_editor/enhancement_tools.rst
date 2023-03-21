@@ -619,3 +619,20 @@ Now only cloning inside the selected region will happens, cloning outside will b
     Screencast of Image Editor Healing Clone Fixing an Area Using Lasso
 
 You can undo and redo using toolbar buttons from the toolbar on the top of settings view. Two keyboard shortcuts are assigned to the tool: :kbd:`Ctrl+Z` for undo and :kbd:`Ctrl+Shift+Z` for redo. You can undo and redo without limitation.
+
+.. _enhance_gmicqt:
+
+G'MIC-Qt Tool
+-------------
+
+The digiKam Image Editor is a pretty reasonable, feature-rich image manipulation program. It comes with a range of image filters, allowing you to make changes to your photos, like Sharpen, Local-Contrast, Noise, White-Balance, etc.
+
+G'MIC is an image processing framework that comes with loads of extra tools that you can use. For example, you can do color, light and pattern changes, add artistic touches, repair inconsistencies in pictures, render shapes, etc. The full list of G'MIC features is way too long.
+
+G'MIC is not include de facto in digiKam source code. It's a 3rd-party plugin that we include in binary distribution of digiKam, as the Windows, macOS, and Linux bundles. Start it from the :menuselection:`Enhance --> G'MIC-Qt` menu entry.
+
+.. figure:: images/editor_enhance_gmicqt.webp
+    :alt:
+    :align: center
+
+    The Image Editor G'MIC-Qt Tool and the Repair filters Collection
