@@ -622,29 +622,28 @@ You can undo and redo using toolbar buttons from the toolbar on the top of setti
 
 .. _enhance_gmicqt:
 
-G'MIC-Qt Tool
--------------
+GMIC-Qt Tool
+------------
 
 The digiKam Image Editor is a pretty reasonable, image manipulation program. It comes with a range of image filters, allowing you to make changes to your photos, like Sharpen, Local-Contrast, Noise, White-Balance, etc.
 
-Another brick in the wall is the G'MIC-Qt tool which is based to `an image processing framework <https://gmic.eu/>`_ that comes with extra filters as color, light and pattern changes, add artistic touches, repair inconsistencies in pictures, render shapes, etc. The full list of G'MIC features is way too long and cannot be detailed here as it comes with over than 500 funny or interesting functions to explore.
+Another brick in the wall is the GMIC-Qt tool which is based to `an image processing framework <https://gmic.eu/>`_ that comes with extra filters as color, light and pattern changes, add artistic touches, repair inconsistencies in pictures, render shapes, etc. The full list of GMIC features is way too long and cannot be detailed here as it comes with over than 500 funny or interesting functions to explore.
 
-G'MIC is not include de facto in digiKam source code. It's a 3rd-party plugin that we include in binary distribution of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> G'MIC-Qt` menu entry.
+GMIC is not include de facto in digiKam source code. It's a 3rd-party plugin that we include in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> GMIC-Qt` menu entry.
 
 .. figure:: images/editor_enhance_gmicqt.webp
     :alt:
     :align: center
 
-    The Image Editor G'MIC-Qt Tool and the Colors Lab Mixer
+    The Image Editor GMIC-Qt Tool and the Colors Lab Mixer
 
- The interface of G'MIC-Qt is quite simple:
+The interface of GMIC-Qt is quite simple:
 
     - On the left there is the preview. With some filters the whole image is displayed, and with other filters it will be shown a 100% crop detail, depending on the kind of effect that we are going to activate.
 
     - In the middle there is the useful search bar at the top, with a list of groups of effects below. Each group can be opened with a double click or by clicking the small arrow on the left of the name.
 
-    - Right would appear the settings of the selected filter, if we had selected one
-    below, to confirm the changes, there are the **Apply** and the **Ok** buttons.
+    - Right would appear the settings of the selected filter, if we had selected one below, to confirm the changes, there are the **Apply** and the **Ok** buttons.
 
 You can search a filter using in their groups, but the fastest way to find them is to use the search bar on the top of list. On the bottom the **Add Fave** button allow to append an entry in the first section named **Faves** on the list.
 
