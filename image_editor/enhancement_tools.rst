@@ -654,3 +654,5 @@ We would like to give you some advice, in general, for all the G'MIC-Qt filters 
     - There are really a lot of settings for each filter, pay attention to the slider on the right to see them all. You could enlarge the G'MIC dialog if necessary.
 
     - Between all the the various parameters, depending of the filter selected, increasing the iterations have to be done carefully, as the times can increase exponentially before to see the result.
+
+We suggest to spend some time exploring all the available effects in G'MIC-Qt, as you can find really interesting artistic solutions for you photo.
