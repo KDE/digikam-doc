@@ -627,15 +627,34 @@ G'MIC-Qt Tool
 
 The Image Editor is a pretty reasonable, image manipulation program. It comes with a range of image filters, allowing you to make changes to your photos, like Sharpen, Local-Contrast, Noise, White-Balance, etc.
 
-Another brick in the wall is the G'MIC-Qt tool which is based to `an image processing framework <https://gmic.eu/>`_ that comes with extra filters as color, light and pattern changes, add artistic touches, repair inconsistencies in pictures, render shapes, etc. The full list of G'MIC features is way too long and cannot be detailed here as it comes with over than 500 funny or interesting functions to explore.
+Another brick in the wall is the G'MIC-Qt tool which is based to `an image processing framework <https://gmic.eu/>`_ named **G'MIC' for **Grey’s Magic for Image Computing**. It comes with extra filters as color, light and pattern changes, add artistic touches, repair inconsistencies in pictures, render shapes, etc. The full list of G'MIC features is way too long and cannot be detailed here as it comes with over than 500 funny or interesting functions to explore. The plugin is also highly customizable, with the ability to set favorites and even add your own filters. 
 
-G'MIC is not include de facto in digiKam source code. It's a 3rd-party plugin that we include in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> G'MIC-Qt` menu entry or uses the icons from Tools in Right sidebar.
+G'MIC-Qt is not include de facto in digiKam source code. It's a 3rd-party plugin that we include in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> G'MIC-Qt` menu entry or uses the icons from Tools in Right sidebar. G’MIC-Qt can be used as you do with other filter, the main difference is that instead of opening a specific filter tab on right sidebar, it opens up a window where you can pick through any of the pre-defined filters.
 
 .. figure:: images/editor_enhance_gmicqt.webp
     :alt:
     :align: center
 
     The Image Editor G'MIC-Qt Tool and the Colors Lab Mixer
+
+Combing through the massive list of filters to find what you need, the plugin can apply filters like:
+
+    - Aurora.
+    - Bokeh.
+    - Fractalize.
+    - Graphic Novel.
+    - Morphology Painting.
+    - Photo Illustration.
+    - Warhol.
+    - Charcoal.
+    - Pencil portrait.
+    - Abstraction.
+    - Curves.
+    - Gradient RGB.
+    - 3D conversion.
+    - Stereo image.
+
+If the list looks like a bit daunting, it's possible to add the most used filters in a favorites list.
 
 The interface of G'MIC-Qt is quite simple:
 
@@ -647,11 +666,11 @@ The interface of G'MIC-Qt is quite simple:
 
 You can search a filter using in their groups, but the fastest way to find them is to use the search bar on the top of list. On the bottom the **Add Fave** button allow to append an entry in the first section named **Faves** on the list.
 
-We would like to give you some advice, in general, for all the G'MIC-Qt filters you can seen:
+or all the G'MIC-Qt filters you can seen:
 
     - The processing time can be quite long, with many megapixel images and maybe a not too powerful computer you could have to wait even minutes, be patient. The computer can be used for other operations during processing.
 
-    - There are really a lot of settings for each filter, pay attention to the slider on the right to see them all. You could enlarge the G'MIC dialog if necessary.
+    - There are really a lot of settings for each filter, pay attention to the splitter on the right to see them all. It's possible to enlarge the G'MIC-Qt dialog if necessary, or better switch to **Fullscreen**.
 
     - Between all the the various parameters, depending of the filter selected, increasing the iterations have to be done carefully, as the times can increase exponentially before to see the result.
 
