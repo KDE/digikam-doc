@@ -622,22 +622,22 @@ You can undo and redo using toolbar buttons from the toolbar on the top of setti
 
 .. _enhance_gmicqt:
 
-GMIC-Qt Tool
-------------
+G'MIC-Qt Tool
+-------------
 
-The digiKam Image Editor is a pretty reasonable, image manipulation program. It comes with a range of image filters, allowing you to make changes to your photos, like Sharpen, Local-Contrast, Noise, White-Balance, etc.
+The Image Editor is a pretty reasonable, image manipulation program. It comes with a range of image filters, allowing you to make changes to your photos, like Sharpen, Local-Contrast, Noise, White-Balance, etc.
 
-Another brick in the wall is the GMIC-Qt tool which is based to `an image processing framework <https://gmic.eu/>`_ that comes with extra filters as color, light and pattern changes, add artistic touches, repair inconsistencies in pictures, render shapes, etc. The full list of GMIC features is way too long and cannot be detailed here as it comes with over than 500 funny or interesting functions to explore.
+Another brick in the wall is the G'MIC-Qt tool which is based to `an image processing framework <https://gmic.eu/>`_ that comes with extra filters as color, light and pattern changes, add artistic touches, repair inconsistencies in pictures, render shapes, etc. The full list of G'MIC features is way too long and cannot be detailed here as it comes with over than 500 funny or interesting functions to explore.
 
-GMIC is not include de facto in digiKam source code. It's a 3rd-party plugin that we include in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> GMIC-Qt` menu entry.
+G'MIC is not include de facto in digiKam source code. It's a 3rd-party plugin that we include in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> G'MIC-Qt` menu entry or uses the icons from Tools in Right sidebar.
 
 .. figure:: images/editor_enhance_gmicqt.webp
     :alt:
     :align: center
 
-    The Image Editor GMIC-Qt Tool and the Colors Lab Mixer
+    The Image Editor G'MIC-Qt Tool and the Colors Lab Mixer
 
-The interface of GMIC-Qt is quite simple:
+The interface of G'MIC-Qt is quite simple:
 
     - On the left there is the preview. With some filters the whole image is displayed, and with other filters it will be shown a 100% crop detail, depending on the kind of effect that we are going to activate.
 
@@ -647,4 +647,10 @@ The interface of GMIC-Qt is quite simple:
 
 You can search a filter using in their groups, but the fastest way to find them is to use the search bar on the top of list. On the bottom the **Add Fave** button allow to append an entry in the first section named **Faves** on the list.
 
+We would like to give you some advice, in general, for all the G'MIC-Qt filters you can seen:
 
+    - The processing time can be quite long, with many megapixel images and maybe a not too powerful computer you could have to wait even minutes, be patient. The computer can be used for other operations during processing.
+
+    - There are really a lot of settings for each filter, pay attention to the slider on the right to see them all. You could enlarge the G'MIC dialog if necessary.
+
+    - Between all the the various parameters, depending of the filter selected, increasing the iterations have to be done carefully, as the times can increase exponentially before to see the result.
