@@ -627,7 +627,7 @@ G'MIC-Qt Tool
 
 The Image Editor is a pretty reasonable, image manipulation program. It comes with a range of image filters, allowing you to make changes to your photos, like Sharpen, Local-Contrast, Noise, White-Balance, etc.
 
-Another brick in the wall is the G'MIC-Qt tool which is based to `an image processing framework <https://gmic.eu/>`_ named **G'MIC' for **Grey’s Magic for Image Computing**. It comes with extra filters as color, light and pattern changes, add artistic touches, repair inconsistencies in pictures, render shapes, etc. The full list of G'MIC features is way too long and cannot be detailed here as it comes with over than 500 funny or interesting functions to explore. The plugin is also highly customizable, with the ability to set favorites and even add your own filters. 
+Another brick in the wall is the G'MIC-Qt tool which is based to `an image processing framework <https://gmic.eu/>`_ named **G'MIC** for **Grey’s Magic for Image Computing**. It comes with extra filters as color, light and pattern changes, add artistic touches, repair inconsistencies in pictures, render shapes, etc. The full list of G'MIC features is way too long and cannot be detailed here as it comes with over than 500 funny or interesting functions to explore. The plugin is also highly customizable, with the ability to set favorites and even add your own filters. 
 
 G'MIC-Qt is not include de facto in digiKam source code. It's a 3rd-party plugin that we include in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> G'MIC-Qt` menu entry or uses the icons from Tools in Right sidebar. G’MIC-Qt can be used as you do with other filter, the main difference is that instead of opening a specific filter tab on right sidebar, it opens up a window where you can pick through any of the pre-defined filters.
 
@@ -673,7 +673,7 @@ The interface of G'MIC-Qt is quite simple:
 
 You can search a filter using in their groups, but the fastest way to find them is to use the search bar on the top of list. On the bottom the **Add Fave** button allow to append an entry in the first section named **Faves** on the list.
 
-For all the G'MIC-Qt filters you can seen:
+For all the G'MIC-Qt filters you can see:
 
     - The processing time can be quite long, with many megapixel images and maybe a not too powerful computer you could have to wait even minutes, be patient. The computer can be used for other operations during processing.
 
