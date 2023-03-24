@@ -681,4 +681,4 @@ For all the G'MIC-Qt filters you can seen:
 
     - Between all the the various parameters, depending of the filter selected, increasing the iterations have to be done carefully, as the times can increase exponentially before to see the result.
 
-It's suggested to explore all the available effects in G'MIC-Qt, as you can find really interesting artistic solutions for your photo.
+It's suggested to explore all the available effects in G'MIC-Qt, as you can find really interesting artistic solutions for your photo. See `this online review <https://jpfleury.github.io/gfo-demos/demos/fruits-400/index.html>`_ of all G'MIC-Qt filters for details.
