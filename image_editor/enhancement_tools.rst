@@ -715,6 +715,12 @@ For all the G'MIC-Qt filters you can see these behaviors:
 
     - The processing time can be quite long, with many megapixel images. If the computer is not enough powerful, time to process an image can take a while. A progress bar on the bottom of the G'MIC-Qt dialog will indicate the computation progress.
 
+    .. figure:: images/editor_gmicqt_progress.webp
+        :alt:
+        :align: center
+
+        The Image Editor G'MIC-Qt Tool Progress Bar
+
     - There are a lot of settings for each filter which can be not fully visible. A splitter on the right allows to see them all. Also, it's possible to enlarge the G'MIC-Qt dialog if necessary, or better switch to **Fullscreen** with the button on the bottom.
 
     - Depending of the filter selected, some parameters can increase a lots the iterations on the image. Adjust the settings carefully, as the times can increase exponentially before to see the result.
