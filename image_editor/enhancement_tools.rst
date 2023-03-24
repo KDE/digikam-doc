@@ -663,7 +663,13 @@ The categories of **Available filters** in the list are listed below:
 
     - **Details**.
 
-    - **Frames**.
+    - **Frames** : one other artistic filters collection dedicated to decorate your photo with ornaments.
+
+    .. figure:: images/editor_gmicqt_frames_droste.webp
+        :alt:
+        :align: center
+
+        The Image Editor G'MIC-Qt Tool Running the Frames/Droste Filter
 
     - **Frequencies**.
 
