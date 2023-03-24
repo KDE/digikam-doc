@@ -661,7 +661,13 @@ The categories of **Available filters** in the list are listed below:
 
     - **Degradations**.
 
-    - **Details**.
+    - **Details**: this filters collection enhance the details in your photos with an armada of multi-scale enhancement algorithm to bring out details and colors of different sizes in photos.
+
+    .. figure:: images/editor_gmicqt_details_mighty.webp
+        :alt:
+        :align: center
+
+        The Image Editor G'MIC-Qt Tool Running the Details/Mighty Filter
 
     - **Frames** : one other artistic filters collection dedicated to decorate your photo with ornaments.
 
