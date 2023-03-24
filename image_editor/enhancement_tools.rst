@@ -631,30 +631,37 @@ Another brick in the wall is the G'MIC-Qt tool which is based to `an image proce
 
 G'MIC-Qt is not include de facto in digiKam source code. It's a 3rd-party plugin that we include in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> G'MIC-Qt` menu entry or uses the icons from Tools in Right sidebar. G’MIC-Qt can be used as you do with other filter, the main difference is that instead of opening a specific filter tab on right sidebar, it opens up a window where you can pick through any of the pre-defined filters.
 
-.. figure:: images/editor_enhance_gmicqt.webp
+.. figure:: images/editor_gmicqt_dialog.webp
     :alt:
     :align: center
 
-    The Image Editor G'MIC-Qt Tool and the Colors Lab Mixer
+    The Image Editor G'MIC-Qt Tool Running the Artistic/Bokeh Filter
 
-Combing through the massive list of filters to find what you need, the plugin can apply filters like:
+The categories of **Available filters** in the list are listed below:
 
-    - Aurora.
-    - Bokeh.
-    - Fractalize.
-    - Graphic Novel.
-    - Morphology Painting.
-    - Photo Illustration.
-    - Warhol.
-    - Charcoal.
-    - Pencil portrait.
-    - Abstraction.
-    - Curves.
-    - Gradient RGB.
-    - 3D conversion.
-    - Stereo image.
+    - **About**.
+    - **Array and titles**.
+    - **Artistic**.
+    - **Black and White**.
+    - **Colors**.
+    - **Contours**.
+    - **Deformations**.
+    - **Degradations**.
+    - **Details**.
+    - **Frames**.
+    - **Frequuencies**.
+    - **Layers**.
+    - **Lights and Shadows**.
+    - **Patterns**.
+    - **Renderings**.
+    - **Repair**.
+    - **Sequences**.
+    - **Silhouettes**.
+    - **Stereoscopic 3D**.
+    - **Testing**.
+    - **Various**.
 
-If the list looks like a bit daunting, it's possible to add the most used filters in a favorites list.
+If the filter categories looks like a bit daunting, it's possible to add the most used filters in a favorites list.
 
 The interface of G'MIC-Qt is quite simple:
 
@@ -666,7 +673,7 @@ The interface of G'MIC-Qt is quite simple:
 
 You can search a filter using in their groups, but the fastest way to find them is to use the search bar on the top of list. On the bottom the **Add Fave** button allow to append an entry in the first section named **Faves** on the list.
 
-or all the G'MIC-Qt filters you can seen:
+For all the G'MIC-Qt filters you can seen:
 
     - The processing time can be quite long, with many megapixel images and maybe a not too powerful computer you could have to wait even minutes, be patient. The computer can be used for other operations during processing.
 
@@ -674,4 +681,4 @@ or all the G'MIC-Qt filters you can seen:
 
     - Between all the the various parameters, depending of the filter selected, increasing the iterations have to be done carefully, as the times can increase exponentially before to see the result.
 
-We suggest to spend some time exploring all the available effects in G'MIC-Qt, as you can find really interesting artistic solutions for you photo.
+It's suggested to explore all the available effects in G'MIC-Qt, as you can find really interesting artistic solutions for your photo.
