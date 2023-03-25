@@ -641,7 +641,7 @@ The categories of **Available filters** in the list are listed below:
 
     - **About**: these entries are not filters, but just show different information about the tools on the settings view.
 
-    - **Array and tiles**: this filters collection allows to transform photo as toys, puzzles, maps, and decorative shapes.
+    - **Array and tiles**: this filter collection allows to transform photo as toys, puzzles, maps, and decorative shapes.
 
     .. figure:: images/editor_gmicqt_arraytiles_puzzle.webp
         :alt:
@@ -649,15 +649,15 @@ The categories of **Available filters** in the list are listed below:
 
         The Image Editor G'MIC-Qt Tool Running the Array and Tiles/Puzzle Filter
 
-    - **Artistic**: this filters collection apply great traditional effects that seek to transform a photograph into a drawing or painting.
+    - **Artistic**: this filter collection apples great traditional effects that seek to transform a photograph into a drawing or painting.
 
     .. figure:: images/editor_gmicqt_artistic_rodilus.webp
         :alt:
         :align: center
 
-        The Image Editor G'MIC-Qt Tool Running the Artistic/Rodilus Filter
+        The Image Editor G'MIC-Qt Tool Running the Artistic/Rodilius Filter
 
-    - **Black and White**: this filters collection are dedicated to process image in gray-scale style, as usual to convert, process the invert to colorize, reduce the map, or simulate fusain drawing.
+    - **Black and White**: this filter collection is dedicated to process image in gray-scale style, as usual to convert, process the invert to colorize, reduce the map, or simulate fusain drawing.
 
     .. figure:: images/editor_gmicqt_bw_colorize.webp
         :alt:
@@ -697,7 +697,7 @@ The categories of **Available filters** in the list are listed below:
 
         The Image Editor G'MIC-Qt Tool Running the Degradations/Chromatic-Aberrations Filter
 
-    - **Details**: this filters collection enhance the details in your photos with an armada of multi-scale enhancement algorithms to bring out details and colors of different sizes in photos.
+    - **Details**: this filter collection enhances the details in your photos with an armada of multi-scale enhancement algorithms to bring out details and colors of different sizes in photos.
 
     .. figure:: images/editor_gmicqt_details_mighty.webp
         :alt:
@@ -721,7 +721,7 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Frequencies/Bandpass Filter
 
-    - **Layers**: this filters collections work on layers or export contents to separate layers. As layers are not supported by Image Editor, usage of these filters is limited. 
+    - **Layers**: this filter collection works on layers or export contents to separate layers. As layers are not supported by Image Editor, usage of these filters is limited. 
 
         .. figure:: images/editor_gmicqt_layers_tiles_to_layers.webp
             :alt:
@@ -735,7 +735,7 @@ The categories of **Available filters** in the list are listed below:
 
     - **Renderings**.
 
-    - **Repair**: this filters collection includes advanced algorithms to help with image noise/glitch/objects/artifacts/compression removing. This kind of filters try to fix very challenging problems that has occupied image processing researchers for several generations.
+    - **Repair**: this filter collection includes advanced algorithms to help with image noise/glitch/objects/artifacts/compression removing. This kind of filters tries to fix very challenging problems that has occupied image processing researchers for several generations.
 
         .. figure:: images/editor_gmicqt_repair_denoise.webp
             :alt:
@@ -761,7 +761,7 @@ The interface of G'MIC-Qt is quite simple:
 
     - In the middle there is the useful search bar at the top, with a list of groups of effects below. Each group can be opened with a double click or by clicking the small arrow on the left of the name.
 
-    - On the right would appear the settings of the selected filter, if we had selected one below, to confirm the changes, there are the **Apply** and the **Ok** buttons. The **Cancel** button stop all current processing and return to the Image Editor.
+    - On the right would appear the settings of the selected filter, if we had selected one below, to confirm the changes, there are the **Apply** and the **Ok** buttons. The **Cancel** button stops all current processing and returns to the Image Editor.
 
 You can search a filter using in their groups, but the fastest way to find them is to use the search bar on the top of list. On the bottom the **Add Fave** button allow to append an entry in the first section named **Faves** on the list.
 
