@@ -663,7 +663,7 @@ The categories of **Available filters** in the list are listed below:
         :alt:
         :align: center
 
-        The Image Editor G'MIC-Qt Tool Running the Black abd White/Colorize Filter
+        The Image Editor G'MIC-Qt Tool Running the Black-and-White/Colorize Filter
 
     - **Colors**: this filters collection allows the user to define transformation functions operating in different color-spaces, apply LUTs, mix/adjust channels, or correct tones by contents analysis.
 
@@ -671,9 +671,15 @@ The categories of **Available filters** in the list are listed below:
         :alt:
         :align: center
 
-        The Image Editor G'MIC-Qt Tool Running the Colors/Mixer Lab Filter
+        The Image Editor G'MIC-Qt Tool Running the Colors/Mixer-Lab Filter
 
-    - **Contours**.
+    - **Contours**: this filters collection apply pixels neighbourhood local transformations over the whole photo.
+
+    .. figure:: images/editor_gmicqt_contours_super_pixels.webp
+        :alt:
+        :align: center
+
+        The Image Editor G'MIC-Qt Tool Running the Contours/Super-Pixels Filter
 
     - **Deformations**: this filters collection apply physical distortions to the photo.
 
@@ -689,7 +695,7 @@ The categories of **Available filters** in the list are listed below:
         :alt:
         :align: center
 
-        The Image Editor G'MIC-Qt Tool Running the Degradations/Chromatic Aberrations Filter
+        The Image Editor G'MIC-Qt Tool Running the Degradations/Chromatic-Aberrations Filter
 
     - **Details**: this filters collection enhance the details in your photos with an armada of multi-scale enhancement algorithms to bring out details and colors of different sizes in photos.
 
@@ -707,7 +713,13 @@ The categories of **Available filters** in the list are listed below:
 
         The Image Editor G'MIC-Qt Tool Running the Frames/Droste Filter
 
-    - **Frequencies**.
+    - **Frequencies**: this filters collection are based on Fourier Transforms analysis.
+
+        .. figure:: images/editor_gmicqt_frequencies_bandpass.webp
+            :alt:
+            :align: center
+
+            The Image Editor G'MIC-Qt Tool Running the Frequencies/Bandpass Filter
 
     - **Layers**.
 
