@@ -669,9 +669,21 @@ The categories of **Available filters** in the list are listed below:
 
     - **Contours**.
 
-    - **Deformations**.
+    - **Deformations**: this filters collection apply physical distortions to the photo.
 
-    - **Degradations**.
+    .. figure:: images/editor_gmicqt_deformations_drop_water.webp
+        :alt:
+        :align: center
+
+        The Image Editor G'MIC-Qt Tool Running the Deformations/Drop Water Filter
+
+    - **Degradations**: this filters collection reproduce photographic alterations as blur, noise, grain, and lens aberrations.
+
+    .. figure:: images/editor_gmicqt_degradations_chromatic_aberrations.webp
+        :alt:
+        :align: center
+
+        The Image Editor G'MIC-Qt Tool Running the Degradations/Chromatic Aberrations Filter
 
     - **Details**: this filters collection enhance the details in your photos with an armada of multi-scale enhancement algorithms to bring out details and colors of different sizes in photos.
 
@@ -750,4 +762,5 @@ For mostly all the G'MIC-Qt filters you can see these behaviors:
         :align: center
 
         The Image Editor G'MIC-Qt Tool Preview Type Settings
+
 It's suggested to explore all the available effects in G'MIC-Qt, as you can find really interesting artistic solutions for your photo. See `this online review <https://jpfleury.github.io/gfo-demos/demos/fruits-400/index.html>`_ of all G'MIC-Qt filters for details.
