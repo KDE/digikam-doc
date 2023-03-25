@@ -635,7 +635,7 @@ G'MIC-Qt is not include de facto in digiKam source code. It's a 3rd-party plugin
     :alt:
     :align: center
 
-    The Image Editor G'MIC-Qt Tool Dialog
+    The Image Editor G'MIC-Qt Tool Dialog Running the Artistic/Bokeh Filter
 
 The categories of **Available filters** in the list are listed below:
 
@@ -767,6 +767,6 @@ For mostly all the G'MIC-Qt filters you can see these behaviors:
         :alt:
         :align: center
 
-        The Image Editor G'MIC-Qt Tool Preview Type Settings
+        The Image Editor G'MIC-Qt Tool Preview Type Settings From the Colors/Color Blindness Filter
 
 It's suggested to explore all the available effects in G'MIC-Qt, as you can find really interesting artistic solutions for your photo. See `this online review <https://jpfleury.github.io/gfo-demos/demos/fruits-400/index.html>`_ of all G'MIC-Qt filters for details.
