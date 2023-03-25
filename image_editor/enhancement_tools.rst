@@ -639,7 +639,7 @@ G'MIC-Qt is not include de facto in digiKam source code. It's a 3rd-party plugin
 
 The categories of **Available filters** in the list are listed below:
 
-    - **About**.
+    - **About**: these entries are not filters, but just show different information about the tools ont he settings view.
 
     - **Array and titles**.
 
@@ -651,9 +651,21 @@ The categories of **Available filters** in the list are listed below:
 
         The Image Editor G'MIC-Qt Tool Running the Artistic/Rodilus Filter
 
-    - **Black and White**.
+    - **Black and White**: this filters collection are dedicated to process image in gray-scale style, as usual to convert, process the invert to colorize, reduce the map, or simulate fusain drawing.
 
-    - **Colors**.
+    .. figure:: images/editor_gmicqt_bw_colorize.webp
+        :alt:
+        :align: center
+
+        The Image Editor G'MIC-Qt Tool Running the Black abd White/Colorize Filter
+
+    - **Colors**: this filters collection allows the user to define transformation functions operating in different color-spaces, apply LUTs, mix/adjust channels, or correct tones by contents analysis.
+
+    .. figure:: images/editor_gmicqt_colors_mixerlab.webp
+        :alt:
+        :align: center
+
+        The Image Editor G'MIC-Qt Tool Running the Colors/Mixer Lab Filter
 
     - **Contours**.
 
@@ -661,7 +673,7 @@ The categories of **Available filters** in the list are listed below:
 
     - **Degradations**.
 
-    - **Details**: this filters collection enhance the details in your photos with an armada of multi-scale enhancement algorithm to bring out details and colors of different sizes in photos.
+    - **Details**: this filters collection enhance the details in your photos with an armada of multi-scale enhancement algorithms to bring out details and colors of different sizes in photos.
 
     .. figure:: images/editor_gmicqt_details_mighty.webp
         :alt:
@@ -717,9 +729,9 @@ The interface of G'MIC-Qt is quite simple:
 
 You can search a filter using in their groups, but the fastest way to find them is to use the search bar on the top of list. On the bottom the **Add Fave** button allow to append an entry in the first section named **Faves** on the list.
 
-For all the G'MIC-Qt filters you can see these behaviors:
+For mostly all the G'MIC-Qt filters you can see these behaviors:
 
-    - The processing time can be quite long, with many megapixel images. If the computer is not enough powerful, time to process an image can take a while. A progress bar on the bottom of the G'MIC-Qt dialog will indicate the computation progress.
+    - The processing time can be quite long, with many megapixel images. If the computer is not enough powerful, time to process an image can take a while. A **Progress Bar** on the bottom of the G'MIC-Qt dialog will indicate the computation progress.
 
     .. figure:: images/editor_gmicqt_progress.webp
         :alt:
@@ -731,4 +743,11 @@ For all the G'MIC-Qt filters you can see these behaviors:
 
     - Depending of the filter selected, some parameters can increase a lots the iterations on the image. Adjust the settings carefully, as the times can increase exponentially before to see the result.
 
+    - The filter preview can be adjusted to compare the results before and after the effect. Looks if a **Preview Type** settings is not available in the settings view and adjust zooming/panning for the best comparison.
+
+    .. figure:: images/editor_gmicqt_preview_type.webp
+        :alt:
+        :align: center
+
+        The Image Editor G'MIC-Qt Tool Preview Type Settings
 It's suggested to explore all the available effects in G'MIC-Qt, as you can find really interesting artistic solutions for your photo. See `this online review <https://jpfleury.github.io/gfo-demos/demos/fruits-400/index.html>`_ of all G'MIC-Qt filters for details.
