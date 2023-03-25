@@ -641,7 +641,13 @@ The categories of **Available filters** in the list are listed below:
 
     - **About**: these entries are not filters, but just show different information about the tools on the settings view.
 
-    - **Array and titles**.
+    - **Array and tiles**: this filters collection allows to transform photo as toys, puzzles, maps, and decorative shapes.
+
+    .. figure:: images/editor_gmicqt_arraytiles_puzzle.webp
+        :alt:
+        :align: center
+
+        The Image Editor G'MIC-Qt Tool Running the Array and Tiles/Puzzle Filter
 
     - **Artistic**: this filters collection apply great traditional effects that seek to transform a photograph into a drawing or painting.
 
