@@ -229,7 +229,7 @@ See the resume below to choose the right database type depending of the use-case
 Database Migration
 ------------------
 
-The photo management application comes up with an exclusive tool “Database Migration”, that allows users to migrate their data. Suppose, you’re using SQLite and you wish to move all data to MySQL database, migration tool will help you do so. It can help you migrate data from SQLite to MySQL and vice versa.
+The photo management application comes up with an exclusive tool named **Database Migration**, that allows users to migrate their data. Suppose, you’re using SQLite and you wish to move all data to MySQL database, migration tool will help you do so. It can help you migrate data from SQLite to MySQL and vice versa.
 
 To migrate to another database, go to :menuselection:`Settings --> Database Migration...`. A dialog box appears:
 
@@ -239,7 +239,11 @@ To migrate to another database, go to :menuselection:`Settings --> Database Migr
 
     The digiKam Database Migration Tool
 
-Now choose appropriate database types you want to convert to. Finally, click on Migrate button to convert the database from SQLite to MySQL (or vice versa). Depending of the database size this operation can take a while.
+Now choose appropriate database types you want to convert to. Finally, click on **Migrate** button to convert the database from SQLite to MySQL (or vice versa). Depending of the database size this operation can take a while.
+
+.. note::
+
+    Only the digiKam **Core** database will be migrated while conversion process. All other databases needs to be rebuilt as post-processing with the :ref:`Maintenance Tools <maintenance_tools>`. The **Thumbs** and **Similarity** databases needs to be created from scratch, and the **Face** database needs the option **Rebuild the Training Data**.
 
 .. _database_backup:
 
