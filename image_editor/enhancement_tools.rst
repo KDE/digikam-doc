@@ -729,7 +729,13 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Layers/Tiles-to-Layers Filter
 
-    - **Lights and Shadows**.
+    - **Lights and Shadows**: this filters collection allows to adjust under-exposed and over-exposed contents from a photo. It's also possible to patch image with a supplemental source of light.
+
+        .. figure:: images/editor_gmicqt_lights_shadows_pop_shadows.webp
+            :alt:
+            :align: center
+
+            The Image Editor G'MIC-Qt Tool Running the Lights-and-Shadows/Pop-Shadows Filter
 
     - **Patterns**.
 
