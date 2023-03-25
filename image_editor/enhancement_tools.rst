@@ -639,7 +639,7 @@ G'MIC-Qt is not include de facto in digiKam source code. It's a 3rd-party plugin
 
 The categories of **Available filters** in the list are listed below:
 
-    - **About**: these entries are not filters, but just show different information about the tools ont he settings view.
+    - **About**: these entries are not filters, but just show different information about the tools on the settings view.
 
     - **Array and titles**.
 
