@@ -721,7 +721,13 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Frequencies/Bandpass Filter
 
-    - **Layers**.
+    - **Layers**: this filters collections work on layers or export contents to separate layers. As layers are not supported by Image Editor, usage of these filters is limited. 
+
+        .. figure:: images/editor_gmicqt_layers_tiles_to_layers.webp
+            :alt:
+            :align: center
+
+            The Image Editor G'MIC-Qt Tool Running the Layers/Tiles-to-Layers Filter
 
     - **Lights and Shadows**.
 
