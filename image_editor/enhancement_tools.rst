@@ -639,7 +639,7 @@ G'MIC-Qt is not include de facto in digiKam source code. It's a 3rd-party plugin
 
 The categories of **Available filters** in the list are listed below:
 
-    - **About**: these entries are not filters, but just show different information about the tools on the settings view.
+    - **About**: these entries are not filters, but just show different information about the tools on the settings view. The **About/What's New** tool allows to update the filter collections, by pressing the **Update** button.
 
     - **Array and tiles**: this filter collection allows to transform photo as toys, puzzles, maps, and decorative shapes.
 
@@ -647,7 +647,7 @@ The categories of **Available filters** in the list are listed below:
         :alt:
         :align: center
 
-        The Image Editor G'MIC-Qt Tool Running the Array and Tiles/Puzzle Filter
+        The Image Editor G'MIC-Qt Tool Running the Array-and-Tiles/Puzzle Filter
 
     - **Artistic**: this filter collection apples great traditional effects that seek to transform a photograph into a drawing or painting.
 
@@ -785,9 +785,15 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Stereoscopic-3D/Stereo-Image Filter
 
-    - **Testing**.
+    - **Testing**: this filters collection group all tools under development. Take care: this filters can be unstable and give weird effects.
 
-    - **Various**.
+    - **Various**: this filters collection group all tools which cannot be categorized in others collections. A G"MIC code editor can be found to create and test new filters.
+
+        .. figure:: images/editor_gmicqt_various_custom_code.webp
+            :alt:
+            :align: center
+
+            The Image Editor G'MIC-Qt Tool Running the Various/Custom-Code Filter
 
 If the filter categories looks like a bit daunting, it's possible to add the most used filters in a favorites list.
 
