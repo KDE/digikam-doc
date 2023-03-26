@@ -737,9 +737,21 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Lights-and-Shadows/Pop-Shadows Filter
 
-    - **Patterns**.
+    - **Patterns**: this filters collection are recursive image generation methods which can produce original and interesting geometric forms.
 
-    - **Renderings**.
+        .. figure:: images/editor_gmicqt_patterns_halftone.webp
+            :alt:
+            :align: center
+
+            The Image Editor G'MIC-Qt Tool Running the Patterns/Halftone Filter
+
+    - **Renderings**: this filters collection superimpose to image generated artificial forms based on mathematical solutions.
+
+    .. figure:: images/editor_gmicqt_rendering_lightning.webp
+            :alt:
+            :align: center
+
+            The Image Editor G'MIC-Qt Tool Running the Rendering/Lightning Filter
 
     - **Repair**: this filter collection includes advanced algorithms to help with image noise/glitch/objects/artifacts/compression removing. This kind of filters tries to fix very challenging problems that has occupied image processing researchers for several generations.
 
@@ -791,6 +803,6 @@ For mostly all the G'MIC-Qt filters you can see these behaviors:
         :alt:
         :align: center
 
-        The Image Editor G'MIC-Qt Tool Preview Type Settings From the Colors/Color Blindness Filter
+        The Image Editor G'MIC-Qt Tool Preview Type Settings From the Colors/Color-Blindness Filter
 
 It's suggested to explore all the available effects in G'MIC-Qt, as you can find really interesting artistic solutions for your photo. See `this online review <https://jpfleury.github.io/gfo-demos/demos/fruits-400/index.html>`_ of all G'MIC-Qt filters for details.
