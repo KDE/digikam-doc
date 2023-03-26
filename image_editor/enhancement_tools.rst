@@ -745,7 +745,7 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Patterns/Halftone Filter
 
-    - **Renderings**: this filters collection superimpose to image generated artificial forms based on mathematical solutions.
+    - **Renderings**: this filters collection superimpose generated artificial forms based on mathematical solutions.
 
     .. figure:: images/editor_gmicqt_rendering_lightning.webp
             :alt:
@@ -761,9 +761,21 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Repair/Denoise Filter based on convolutional neural networks
 
-    - **Sequences**.
+    - **Sequences**: this filters collection generating animation from photo.
 
-    - **Silhouettes**.
+        .. figure:: images/editor_gmicqt_sequences_3d_image_object.webp
+            :alt:
+            :align: center
+
+            The Image Editor G'MIC-Qt Tool Running the Sequences/3D_Image-Object Filter
+
+    - **Silhouettes**: this filters collection superimpose forms as animal finger-print, icons, nature shapes, etc.
+
+        .. figure:: images/editor_gmicqt_silhouettes_nature_barnsley_fern.webp
+            :alt:
+            :align: center
+
+            The Image Editor G'MIC-Qt Tool Running the Silhouettes/Nature/Barnsley-Fern Filter
 
     - **Stereoscopic 3D**.
 
