@@ -777,7 +777,13 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Silhouettes/Nature/Barnsley-Fern Filter
 
-    - **Stereoscopic 3D**.
+    - **Stereoscopic 3D**: this filters collection render photo in relief.
+
+        .. figure:: images/editor_gmicqt_stereoscopic_3d_stereo_image.webp
+            :alt:
+            :align: center
+
+            The Image Editor G'MIC-Qt Tool Running the Stereoscopic-3D/Stereo-Image Filter
 
     - **Testing**.
 
