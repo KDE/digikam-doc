@@ -795,9 +795,7 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Various/Custom-Code Filter
 
-If the filter categories looks like a bit daunting, it's possible to add the most used filters in a favorites list and to apply a color tag using the filtres tree-view context menu.
-
-The interface of G'MIC-Qt is quite simple:
+The default layout of G'MIC-Qt is quite simple (this can be changed in the G'MIC-Qt **Settings** dialog). See below the description of each pane:
 
     - On the left there is the preview. With some filters the whole image is displayed, and with other filters it will be shown a 100% crop detail, depending on the kind of effect that we are going to activate.
 
@@ -805,7 +803,13 @@ The interface of G'MIC-Qt is quite simple:
 
     - On the right would appear the settings of the selected filter, if we had selected one below, to confirm the changes, there are the **Apply** and the **Ok** buttons. The **Cancel** button stops all current processing and returns to the Image Editor.
 
-You can search a filter using in their groups, but the fastest way to find them is to use the search bar on the top of list. On the bottom the **Add Fave** button allow to append an entry in the first section named **Faves** on the list.
+You can search a filter using in their groups, but the fastest way to find them is to use the **Search** bar on the top of list. If the filter categories looks like a bit daunting, it's possible to add the most used filters in a favorites list and to apply a color tag using the filters tree-view context menu. On the bottom the **Add Fave** button allow to append an entry in the first section named **Faves** on the list.
+
+.. figure:: images/editor_gmicqt_filters_tree_view.webp
+    :alt:
+    :align: center
+
+    The Image Editor G'MIC-Qt Tool Filters Tree-View and the Favorites Context Menu
 
 For mostly all the G'MIC-Qt filters you can see these behaviors:
 
@@ -828,5 +832,7 @@ For mostly all the G'MIC-Qt filters you can see these behaviors:
         :align: center
 
         The Image Editor G'MIC-Qt Tool Preview Type Settings From the Colors/Color-Blindness Filter
+
+The **Settings** button on the bottom left will show a configuration dialog with tree tabs. One is used to customize the G'MIC-QT **Interface**, one other to setup the **Filter sources**, and the last one to **Other** parameters.
 
 It's suggested to explore all the available effects in G'MIC-Qt, as you can find really interesting artistic solutions for your photo. See `this online review <https://jpfleury.github.io/gfo-demos/demos/fruits-400/index.html>`_ of all G'MIC-Qt filters for details.
