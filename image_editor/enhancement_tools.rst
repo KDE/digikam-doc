@@ -795,7 +795,7 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Various/Custom-Code Filter
 
-If the filter categories looks like a bit daunting, it's possible to add the most used filters in a favorites list.
+If the filter categories looks like a bit daunting, it's possible to add the most used filters in a favorites list and to apply a color tag using the filtres tree-view context menu.
 
 The interface of G'MIC-Qt is quite simple:
 
