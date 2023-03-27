@@ -625,9 +625,9 @@ You can undo and redo using toolbar buttons from the toolbar on the top of setti
 G'MIC-Qt Tool
 -------------
 
-G'MIC-Qt is another image editing tool provided as a plug-in.  It is named **G'MIC' for `**GREYC’s Magic for Image Computing**<https://gmic.eu/>`_. It comes with extra filters as color, light and pattern changes, add artistic touches, repair inconsistencies in pictures, render shapes, etc. The full list of G'MIC features is long and cannot be detailed here as it comes with over than 500 funny or interesting functions to explore. The plugin is also highly customizable, with the ability to set favorites and even add your own filters. 
+G'MIC-Qt is 3rd-party image editing tool provided as a plug-in.  It is named **G'MIC** for **GREYC’s Magic for Image Computing** (https://gmic.eu). The full list of G'MIC features is long and cannot be detailed here as it comes with over than 500 interesting functions to explore. It comes with filters for changing colors, creating patterns, adding artistic touches, repairing inconsistencies in pictures, rendering shapes, and much more. The plugin is highly customizable, with the ability to set favorites and even add your own filters. 
 
-G'MIC-Qt is not include in digiKam source code. It is a 3rd-party plugin that we include in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> G'MIC-Qt` menu entry or uses the icons from Tools in Right sidebar. G’MIC-Qt can be used as you do with other filters, the main difference is that instead of opening a specific filter tab on right sidebar, it opens up a window where you can pick through any of the pre-defined filters.
+G'MIC-Qt is not include in digiKam source code. Rather, it is a 3rd-party plugin included in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> G'MIC-Qt` menu entry or uses the icons from Tools in Right sidebar. G’MIC-Qt can be used as you do with other filters, the main difference is that instead of opening a specific filter tab on right sidebar, it opens up a window where you can pick through any of the pre-defined filters.
 
 .. figure:: images/editor_gmicqt_dialog.webp
     :alt:
@@ -659,23 +659,23 @@ The categories of **Available filters** in the list are listed below:
     - **Testing**.
     - **Various**.
 
-If the filter categories looks like a bit daunting, it's possible to add the most used filters in a favorites list.
+If the filter categories looks a bit daunting, it's possible to add the most used filters in a favorites list.
 
 The interface of G'MIC-Qt is quite simple:
 
-    - On the left there is the preview. With some filters the whole image is displayed, and with other filters it will be shown a 100% crop detail, depending on the kind of effect that we are going to activate.
+    - On the left there is the preview. With some filters the whole image is displayed, and with other filters it will show as 100% crop detail, depending on the kind of effect that we are going to activate.
 
     - In the middle there is the useful search bar at the top, with a list of groups of effects below. Each group can be opened with a double click or by clicking the small arrow on the left of the name.
 
-    - Right would appear the settings of the selected filter, if we had selected one below, to confirm the changes, there are the **Apply** and the **Ok** buttons.
+    - On the Right would appear the settings of the selected filter, if we had selected one below, to confirm the changes, there are the **Apply** and the **Ok** buttons.
 
-You can search a filter using in their groups, but the fastest way to find them is to use the search bar on the top of list. On the bottom the **Add Fave** button allow to append an entry in the first section named **Faves** on the list.
+You can search a filter using the groups, but the fastest way to find them is to use the search bar on the top of list. The **Add Fave** button allows for appending an entry in the first section named **Faves** on the list.
 
-For all the G'MIC-Qt filters you can seen:
+For all the G'MIC-Qt filters:
 
-    - The processing time can be quite long, with many megapixel images and maybe a not too powerful computer you could have to wait even minutes, be patient. The computer can be used for other operations during processing.
+    - The processing time can be quite long, with many megapixel images and a less powerful computer processing time can take minutes, so please be patient. The computer can be used for other operations during processing.
 
-    - There are really a lot of settings for each filter, pay attention to the splitter on the right to see them all. It's possible to enlarge the G'MIC-Qt dialog if necessary, or better switch to **Fullscreen**.
+    - There can be many settings for each filter, pay attention to the splitter on the right to see them all. It's possible to enlarge the G'MIC-Qt dialog if necessary, or switch to **Fullscreen**.
 
     - Between all the the various parameters, depending of the filter selected, increasing the iterations have to be done carefully, as the times can increase exponentially before to see the result.
 
