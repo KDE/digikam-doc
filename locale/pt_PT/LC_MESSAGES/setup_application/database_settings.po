@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-09 00:53+0000\n"
+"POT-Creation-Date: 2023-03-26 00:40+0000\n"
 "PO-Revision-Date: 2022-12-29 06:58+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -636,12 +636,19 @@ msgid "Database Migration"
 msgstr "Migração da Base de Dados"
 
 #: ../../setup_application/database_settings.rst:232
+#, fuzzy
+#| msgid ""
+#| "The photo management application comes up with an exclusive tool "
+#| "“Database Migration”, that allows users to migrate their data. Suppose, "
+#| "you’re using SQLite and you wish to move all data to MySQL database, "
+#| "migration tool will help you do so. It can help you migrate data from "
+#| "SQLite to MySQL and vice versa."
 msgid ""
-"The photo management application comes up with an exclusive tool “Database "
-"Migration”, that allows users to migrate their data. Suppose, you’re using "
-"SQLite and you wish to move all data to MySQL database, migration tool will "
-"help you do so. It can help you migrate data from SQLite to MySQL and vice "
-"versa."
+"The photo management application comes up with an exclusive tool named "
+"**Database Migration**, that allows users to migrate their data. Suppose, "
+"you’re using SQLite and you wish to move all data to MySQL database, "
+"migration tool will help you do so. It can help you migrate data from SQLite "
+"to MySQL and vice versa."
 msgstr ""
 "A aplicação de gestão de fotografias vem com uma ferramenta exclusiva de "
 "“Migração da Base de Dados”, que permite aos utilizadores migrarem os seus "
@@ -664,15 +671,24 @@ msgstr "Migração da Base de Dados"
 #: ../../setup_application/database_settings.rst:242
 msgid ""
 "Now choose appropriate database types you want to convert to. Finally, click "
-"on Migrate button to convert the database from SQLite to MySQL (or vice "
+"on **Migrate** button to convert the database from SQLite to MySQL (or vice "
 "versa). Depending of the database size this operation can take a while."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:247
+#: ../../setup_application/database_settings.rst:246
+msgid ""
+"Only the digiKam **Core** database will be migrated while conversion "
+"process. All other databases needs to be rebuilt as post-processing with "
+"the :ref:`Maintenance Tools <maintenance_tools>`. The **Thumbs** and "
+"**Similarity** databases needs to be created from scratch, and the **Face** "
+"database needs the option **Rebuild the Training Data**."
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:251
 msgid "Database Backup Recommendation"
 msgstr "Recomendação de Salvaguarda da Base de Dados"
 
-#: ../../setup_application/database_settings.rst:249
+#: ../../setup_application/database_settings.rst:253
 msgid ""
 "For security reasons, planing a database backup using crontab over the "
 "network can help against device dysfunctions. A NAS or an external drive can "
@@ -682,7 +698,7 @@ msgstr ""
 "dados, com o 'crontab' e pela rede, poderá ajudar nos problemas com os "
 "dispositivos. Um NAS ou um disco externo também podem ser usados para isso."
 
-#: ../../setup_application/database_settings.rst:251
+#: ../../setup_application/database_settings.rst:255
 #, fuzzy
 #| msgid ""
 #| "Each database can be named with a different name, not only \"digikam\". "
@@ -704,18 +720,18 @@ msgstr ""
 "dados das miniaturas e dos dados de reconhecimento podem sempre geradas de "
 "novo do zero."
 
-#: ../../setup_application/database_settings.rst:253
+#: ../../setup_application/database_settings.rst:257
 msgid ""
 "The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
 "explain how to maintain in time the database contents and how to synchronize "
 "the collections with databases information (and vice versa)."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:258
+#: ../../setup_application/database_settings.rst:262
 msgid "Database Statistics"
 msgstr "Estatísticas da Base de Dados"
 
-#: ../../setup_application/database_settings.rst:260
+#: ../../setup_application/database_settings.rst:264
 msgid ""
 "digiKam provides a unique tool to show the statistics from your collections. "
 "It includes count of images, videos (including individual count by image "
@@ -723,13 +739,13 @@ msgid ""
 "QMYSQL) and the **Database Path** (where your collection is located)."
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:262
+#: ../../setup_application/database_settings.rst:266
 msgid ""
 "You can view your statistics by going to :menuselection:`Help --> Database "
 "Statistics...`. A dialog box like this will appear:"
 msgstr ""
 
-#: ../../setup_application/database_settings.rst:268
+#: ../../setup_application/database_settings.rst:272
 #, fuzzy
 #| msgid "Database Statistics"
 msgid "The digiKam Database Statistics Dialog"

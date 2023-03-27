@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-09 00:53+0000\n"
+"POT-Creation-Date: 2023-03-26 00:40+0000\n"
 "PO-Revision-Date: 2023-03-06 09:31+0100\n"
 "Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -778,12 +778,19 @@ msgid "Database Migration"
 msgstr "Migrar a una base de dades"
 
 #: ../../setup_application/database_settings.rst:232
+#, fuzzy
+#| msgid ""
+#| "The photo management application comes up with an exclusive tool "
+#| "“Database Migration”, that allows users to migrate their data. Suppose, "
+#| "you’re using SQLite and you wish to move all data to MySQL database, "
+#| "migration tool will help you do so. It can help you migrate data from "
+#| "SQLite to MySQL and vice versa."
 msgid ""
-"The photo management application comes up with an exclusive tool “Database "
-"Migration”, that allows users to migrate their data. Suppose, you’re using "
-"SQLite and you wish to move all data to MySQL database, migration tool will "
-"help you do so. It can help you migrate data from SQLite to MySQL and vice "
-"versa."
+"The photo management application comes up with an exclusive tool named "
+"**Database Migration**, that allows users to migrate their data. Suppose, "
+"you’re using SQLite and you wish to move all data to MySQL database, "
+"migration tool will help you do so. It can help you migrate data from SQLite "
+"to MySQL and vice versa."
 msgstr ""
 "L'aplicació per a la gestió de les fotografies ve amb una eina exclusiva "
 "«Migra la base de dades», la qual permet als usuaris migrar les seves dades. "
@@ -805,9 +812,15 @@ msgid "The digiKam Database Migration Tool"
 msgstr "L'eina de migració de bases de dades en el digiKam"
 
 #: ../../setup_application/database_settings.rst:242
+#, fuzzy
+#| msgid ""
+#| "Now choose appropriate database types you want to convert to. Finally, "
+#| "click on Migrate button to convert the database from SQLite to MySQL (or "
+#| "vice versa). Depending of the database size this operation can take a "
+#| "while."
 msgid ""
 "Now choose appropriate database types you want to convert to. Finally, click "
-"on Migrate button to convert the database from SQLite to MySQL (or vice "
+"on **Migrate** button to convert the database from SQLite to MySQL (or vice "
 "versa). Depending of the database size this operation can take a while."
 msgstr ""
 "Ara escolliu el tipus de base de dades adequat als que voleu convertir. "
@@ -815,11 +828,20 @@ msgstr ""
 "des de SQLite a MySQL (o viceversa). Segons la mida de la base de dades, "
 "aquesta operació pot trigar una mica."
 
-#: ../../setup_application/database_settings.rst:247
+#: ../../setup_application/database_settings.rst:246
+msgid ""
+"Only the digiKam **Core** database will be migrated while conversion "
+"process. All other databases needs to be rebuilt as post-processing with "
+"the :ref:`Maintenance Tools <maintenance_tools>`. The **Thumbs** and "
+"**Similarity** databases needs to be created from scratch, and the **Face** "
+"database needs the option **Rebuild the Training Data**."
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:251
 msgid "Database Backup Recommendation"
 msgstr "Recomanació de crear una còpia de seguretat de la base de dades"
 
-#: ../../setup_application/database_settings.rst:249
+#: ../../setup_application/database_settings.rst:253
 msgid ""
 "For security reasons, planing a database backup using crontab over the "
 "network can help against device dysfunctions. A NAS or an external drive can "
@@ -830,7 +852,7 @@ msgstr ""
 "disfuncions del dispositiu. També es pot utilitzar un NAS o una unitat "
 "externa."
 
-#: ../../setup_application/database_settings.rst:251
+#: ../../setup_application/database_settings.rst:255
 msgid ""
 "Each database can be named with a different name, not only *digikam*. This "
 "allows to users to backup only what is needed. For instance, naming **Core** "
@@ -845,7 +867,7 @@ msgstr ""
 "Les bases de dades de les **Miniatures**, de la **Similitud** i del "
 "**Reconeixement facial** sempre es poden regenerar des de zero."
 
-#: ../../setup_application/database_settings.rst:253
+#: ../../setup_application/database_settings.rst:257
 msgid ""
 "The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
 "explain how to maintain in time the database contents and how to synchronize "
@@ -856,11 +878,11 @@ msgstr ""
 "base de dades i com sincronitzar les col·leccions amb la informació de les "
 "bases de dades (i viceversa)."
 
-#: ../../setup_application/database_settings.rst:258
+#: ../../setup_application/database_settings.rst:262
 msgid "Database Statistics"
 msgstr "Estadístiques de la base de dades"
 
-#: ../../setup_application/database_settings.rst:260
+#: ../../setup_application/database_settings.rst:264
 msgid ""
 "digiKam provides a unique tool to show the statistics from your collections. "
 "It includes count of images, videos (including individual count by image "
@@ -873,7 +895,7 @@ msgstr ""
 "dorsal de la base de dades (QSQLITE o QMYSQL) i el **Camí de la base de "
 "dades** (on es troba la vostra col·lecció)."
 
-#: ../../setup_application/database_settings.rst:262
+#: ../../setup_application/database_settings.rst:266
 msgid ""
 "You can view your statistics by going to :menuselection:`Help --> Database "
 "Statistics...`. A dialog box like this will appear:"
@@ -882,6 +904,6 @@ msgstr ""
 "menuselection:`Ajuda --> Estadístiques de la base de dades...`», apareixerà "
 "un diàleg com aquest:"
 
-#: ../../setup_application/database_settings.rst:268
+#: ../../setup_application/database_settings.rst:272
 msgid "The digiKam Database Statistics Dialog"
 msgstr "El diàleg d'estadístiques de la base de dades en el digiKam"
