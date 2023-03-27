@@ -835,8 +835,28 @@ For mostly all the G'MIC-Qt filters you can see these behaviors:
 
 The **Settings** button on the bottom left will show the G'MIC-Qt configuration dialog with tree tabs:
 
-    - First one is used to customize the G'MIC-Qt **Interface**.
-    - Second one to setup the **Filter sources**.
-    - The last one to tune **Other** parameters.
+    - First one is used to customize the G'MIC-Qt **Interface**, as the layout of the tool panes, the language to enable, the preview bahaviors, and the native dialog to use.
+
+    .. figure:: images/editor_gmicqt_settings_interface.webp
+        :alt:
+        :align: center
+
+        The Image Editor G'MIC-Qt Tool Settings/Interface Dialog Tab
+
+    - Second one to setup the **Filter sources**, as where to take filter updates and where to store it on your computer.
+
+    .. figure:: images/editor_gmicqt_settings_filter_sources.webp
+        :alt:
+        :align: center
+
+        The Image Editor G'MIC-Qt Tool Settings/Filter-Sources Dialog Tab
+
+    - The last one to tune **Other** parameters, as when to check for online updates, and the debug verbosity on the console (useful for filters developers).
+
+    .. figure:: images/editor_gmicqt_settings_other.webp
+        :alt:
+        :align: center
+
+        The Image Editor G'MIC-Qt Tool Settings/Other Dialog Tab
 
 It's suggested to explore all the available effects in G'MIC-Qt, as you can find really interesting artistic solutions for your photo. See `this online review <https://jpfleury.github.io/gfo-demos/demos/fruits-400/index.html>`_ of all G'MIC-Qt filters for details.
