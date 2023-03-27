@@ -813,7 +813,7 @@ You can search a filter using in their groups, but the fastest way to find them 
 
 For mostly all the G'MIC-Qt filters you can see these behaviors:
 
-    - The processing time can be quite long, with many megapixel images. If the computer is not enough powerful, time to process an image can take a while. A **Progress Bar** on the bottom of the G'MIC-Qt dialog will indicate the computation progress.
+    - When you render the filter on whole data from Image Editor by pressing **Apply** or **Ok** buttons, the processing time can be quite long, with many megapixels image. If the computer is not enough powerful, time to process an image can take a while. A **Progress Bar** on the bottom of the G'MIC-Qt dialog will indicate the computation progress.
 
     .. figure:: images/editor_gmicqt_progress.webp
         :alt:
