@@ -10,7 +10,7 @@
 
 .. _enhancement_tools:
 
-Enhancement Tools
+.. Enhancement Tools
 =================
 
 .. contents::
@@ -627,9 +627,9 @@ G'MIC-Qt Tool
 
 The Image Editor is a pretty reasonable, image manipulation program. It comes with a range of image filters, allowing you to make changes to your photos, like Sharpen, Local-Contrast, Noise, White-Balance, etc.
 
-Another brick in the wall is the G'MIC-Qt tool which is based to `an image processing framework <https://gmic.eu/>`_ named **G'MIC** for **Grey’s Magic for Image Computing**. It comes with extra filters as color, light and pattern changes, add artistic touches, repair inconsistencies in pictures, render shapes, etc. The full list of G'MIC features is way too long and cannot be detailed here as it comes with over than 500 funny or interesting functions to explore. The plugin is also highly customizable, with the ability to set favorites and even add your own filters.
+Another brick in the wall is the G'MIC-Qt tool which is based to `an image processing framework <https://gmic.eu/>`_ named **G'MIC** for **Grey’s Magic for Image Computing**. It comes with extra filters as color, light and pattern changes, add artistic touches, repair inconsistencies in pictures, render shapes, etc. The full list of G'MIC features is way too long and cannot be detailed here as it comes with over 500 funny or interesting functions to explore. The plugin is also highly customizable, with the ability to set favorites and even add your own filters.
 
-G'MIC-Qt is not include de facto in digiKam source code. It's a 3rd-party plugin that we include in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> G'MIC-Qt` menu entry or uses the icons from Tools in Right sidebar. G’MIC-Qt can be used as you do with other filter, the main difference is that instead of opening a specific filter tab on right sidebar, it opens up a window where you can pick through any of the pre-defined filters.
+G'MIC-Qt is not included de facto in digiKam source code. It's a 3rd-party plugin that we include in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> G'MIC-Qt` menu entry or uses the icons from Tools in the Right sidebar. G’MIC-Qt can be used as you do with other filters, the main difference is that instead of opening a specific filter tab on the right sidebar, it opens up a window where you can pick through any of the pre-defined filters.
 
 .. figure:: images/editor_gmicqt_dialog.webp
     :alt:
@@ -639,9 +639,9 @@ G'MIC-Qt is not include de facto in digiKam source code. It's a 3rd-party plugin
 
 The categories of **Available filters** in the list are listed below:
 
-    - **About**: these entries are not filters, but just show different information about the tools on the settings view. The **About/What's New** tool allows to update the filter collections, by pressing the **Update** button.
+    - **About**: these entries are not filters, but just show different information about the tools on the settings view. The **About/What's New** tool allows updating the filter collections, by pressing the **Update** button.
 
-    - **Array and tiles**: this filter collection allows to transform photo as toys, puzzles, maps, and decorative shapes.
+    - **Array and tiles**: this filter collection allows transforming photos as toys, puzzles, maps, and decorative shapes.
 
     .. figure:: images/editor_gmicqt_arraytiles_puzzle.webp
         :alt:
@@ -649,7 +649,7 @@ The categories of **Available filters** in the list are listed below:
 
         The Image Editor G'MIC-Qt Tool Running the Array-and-Tiles/Puzzle Filter
 
-    - **Artistic**: this filter collection apples great traditional effects that seek to transform a photograph into a drawing or painting.
+    - **Artistic**: this filter collection applies great traditional effects that seek to transform a photograph into a drawing or painting.
 
     .. figure:: images/editor_gmicqt_artistic_rodilus.webp
         :alt:
@@ -657,7 +657,7 @@ The categories of **Available filters** in the list are listed below:
 
         The Image Editor G'MIC-Qt Tool Running the Artistic/Rodilius Filter
 
-    - **Black and White**: this filter collection is dedicated to process image in gray-scale style, as usual to convert, process the invert to colorize, reduce the map, or simulate fusain drawing.
+    - **Black and White**: this filter collection is dedicated to processing images in gray-scale style, as usual to convert, process the invert to colorize, reduce the map, or simulate fusain drawing.
 
     .. figure:: images/editor_gmicqt_bw_colorize.webp
         :alt:
@@ -665,7 +665,7 @@ The categories of **Available filters** in the list are listed below:
 
         The Image Editor G'MIC-Qt Tool Running the Black-and-White/Colorize Filter
 
-    - **Colors**: this filters collection allows the user to define transformation functions operating in different color-spaces, apply LUTs, mix/adjust channels, or correct tones by contents analysis.
+    - **Colors**: this filter collection allows the user to define transformation functions operating in different color-spaces, apply LUTs, mix/adjust channels or correct tones by content analysis.
 
     .. figure:: images/editor_gmicqt_colors_mixerlab.webp
         :alt:
@@ -673,7 +673,7 @@ The categories of **Available filters** in the list are listed below:
 
         The Image Editor G'MIC-Qt Tool Running the Colors/Mixer-Lab Filter
 
-    - **Contours**: this filters collection apply pixels neighbourhood local transformations over the whole photo.
+    - **Contours**: this filter collection applies the pixel's neighborhood local transformations over the whole photo.
 
     .. figure:: images/editor_gmicqt_contours_super_pixels.webp
         :alt:
@@ -681,7 +681,7 @@ The categories of **Available filters** in the list are listed below:
 
         The Image Editor G'MIC-Qt Tool Running the Contours/Super-Pixels Filter
 
-    - **Deformations**: this filters collection apply physical distortions to the photo.
+    - **Deformations**: this filter collection applies physical distortions to the photo.
 
     .. figure:: images/editor_gmicqt_deformations_drop_water.webp
         :alt:
@@ -689,7 +689,7 @@ The categories of **Available filters** in the list are listed below:
 
         The Image Editor G'MIC-Qt Tool Running the Deformations/Drop Water Filter
 
-    - **Degradations**: this filters collection reproduce photographic alterations as blur, noise, grain, and lens aberrations.
+    - **Degradations**: this filter collection reproduces photographic alterations such as blur, noise, grain, and lens aberrations.
 
     .. figure:: images/editor_gmicqt_degradations_chromatic_aberrations.webp
         :alt:
@@ -705,7 +705,7 @@ The categories of **Available filters** in the list are listed below:
 
         The Image Editor G'MIC-Qt Tool Running the Details/Mighty Filter
 
-    - **Frames** : one other artistic filters collection dedicated to decorate your photo with ornaments.
+    - **Frames**: one other artistic filter collection dedicated to decorating your photo with ornaments.
 
     .. figure:: images/editor_gmicqt_frames_droste.webp
         :alt:
@@ -713,7 +713,7 @@ The categories of **Available filters** in the list are listed below:
 
         The Image Editor G'MIC-Qt Tool Running the Frames/Droste Filter
 
-    - **Frequencies**: this filters collection are based on Fourier Transforms analysis.
+    - **Frequencies**: this filter collection is based on Fourier Transforms analysis.
 
         .. figure:: images/editor_gmicqt_frequencies_bandpass.webp
             :alt:
@@ -729,7 +729,7 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Layers/Tiles-to-Layers Filter
 
-    - **Lights and Shadows**: this filters collection allows to adjust under-exposed and over-exposed contents from a photo. It's also possible to patch image with a supplemental source of light.
+    - **Lights and Shadows**: this filter collection allows adjustment of under-exposed and over-exposed contents from a photo. It's also possible to patch the image with a supplemental source of light.
 
         .. figure:: images/editor_gmicqt_lights_shadows_pop_shadows.webp
             :alt:
@@ -737,7 +737,7 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Lights-and-Shadows/Pop-Shadows Filter
 
-    - **Patterns**: this filters collection are recursive image generation methods which can produce original and interesting geometric forms.
+    - **Patterns**: this filter collection is a set of recursive image generation methods which can produce original and interesting geometric forms.
 
         .. figure:: images/editor_gmicqt_patterns_halftone.webp
             :alt:
@@ -745,7 +745,7 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Patterns/Halftone Filter
 
-    - **Renderings**: this filters collection superimpose generated artificial forms based on mathematical solutions.
+    - **Renderings**: this filter collection superimposes generated artificial forms based on mathematical solutions.
 
     .. figure:: images/editor_gmicqt_rendering_lightning.webp
             :alt:
@@ -753,7 +753,7 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Rendering/Lightning Filter
 
-    - **Repair**: this filter collection includes advanced algorithms to help with image noise/glitch/objects/artifacts/compression removing. This kind of filters tries to fix very challenging problems that has occupied image processing researchers for several generations.
+    - **Repair**: this filter collection includes advanced algorithms to help with image noise/glitch/objects/artifacts/compression removal. This kind of filter tries to fix very challenging problems that have occupied image-processing researchers for several generations.
 
         .. figure:: images/editor_gmicqt_repair_denoise.webp
             :alt:
@@ -761,7 +761,7 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Repair/Denoise Filter based on convolutional neural networks
 
-    - **Sequences**: this filters collection generating animation from photo.
+    - **Sequences**: this filters collection generates animation from photos.
 
         .. figure:: images/editor_gmicqt_sequences_3d_image_object.webp
             :alt:
@@ -769,7 +769,7 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Sequences/3D_Image-Object Filter
 
-    - **Silhouettes**: this filters collection superimpose forms as animal finger-print, icons, nature shapes, etc.
+    - **Silhouettes**: this filtes collection superimposes forms such as animal finger-print, icons, nature shapes, etc.
 
         .. figure:: images/editor_gmicqt_silhouettes_nature_barnsley_fern.webp
             :alt:
@@ -777,7 +777,7 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Silhouettes/Nature/Barnsley-Fern Filter
 
-    - **Stereoscopic 3D**: this filters collection render photo in relief.
+    - **Stereoscopic 3D**: this filter collection renders photos in relief.
 
         .. figure:: images/editor_gmicqt_stereoscopic_3d_stereo_image.webp
             :alt:
@@ -785,9 +785,9 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Stereoscopic-3D/Stereo-Image Filter
 
-    - **Testing**: this filters collection group all tools under development. Take care: this filters can be unstable and give weird effects.
+    - **Testing**: this filter collection groups all tools under development. Take care: these filters can be unstable and give weird effects.
 
-    - **Various**: this filters collection group all tools which cannot be categorized in others collections. A G"MIC code editor can be found to create and test new filters.
+    - **Various**: this filters collection groups tools which cannot be categorized in others collections. A G'MIC code editor can be found to create and test new filters.
 
         .. figure:: images/editor_gmicqt_various_custom_code.webp
             :alt:
@@ -797,13 +797,13 @@ The categories of **Available filters** in the list are listed below:
 
 The default layout of G'MIC-Qt is quite simple (this can be changed in the G'MIC-Qt **Settings** dialog). See below the description of each pane:
 
-    - On the left there is the preview. With some filters the whole image is displayed, and with other filters it will be shown a 100% crop detail, depending on the kind of effect that we are going to activate.
+    - On the left, there is the preview. With some filters, the whole image is displayed, and with other filters it will be shown a 100% crop detail, depending on the kind of effect that we are going to activate.
 
-    - In the middle there is the useful search bar at the top, with a list of groups of effects below. Each group can be opened with a double click or by clicking the small arrow on the left of the name.
+    - In the middle, there is the useful search bar at the top, with a list of groups of effects below. Each group can be opened with a double click or by clicking the small arrow on the left of the name.
 
     - On the right would appear the settings of the selected filter, if we had selected one below, to confirm the changes, there are the **Apply** and the **Ok** buttons. The **Cancel** button stops all current processing and returns to the Image Editor.
 
-You can search a filter using in their groups, but the fastest way to find them is to use the **Search** bar on the top of list. If the filter categories looks like a bit daunting, it's possible to add the most used filters in a favorites list and to apply a color tag using the filters tree-view context menu. On the bottom the **Add Fave** button allow to append an entry in the first section named **Faves** on the list.
+You can search a filter using their groups, but the fastest way to find them is to use the **Search** bar at the top of the list. If the filter categories look a bit daunting, it's possible to add the most used filters in a favorites list and to apply a color tag using the filters tree-view context menu. On the bottom, the **Add Fave** button allows appending an entry in the first section named **Faves** on the list.
 
 .. figure:: images/editor_gmicqt_filters_tree_view.webp
     :alt:
@@ -813,7 +813,7 @@ You can search a filter using in their groups, but the fastest way to find them 
 
 For mostly all the G'MIC-Qt filters you can see these behaviors:
 
-    - When you render the filter on whole data from Image Editor by pressing **Apply** or **Ok** buttons, the processing time can be quite long, with many megapixels image. If the computer is not enough powerful, time to process an image can take a while. A **Progress Bar** on the bottom of the G'MIC-Qt dialog will indicate the computation progress.
+    - When you render the filter on whole data from Image Editor by pressing **Apply** or **Ok** buttons, the processing time can be quite long, with many megapixels images. If the computer is not enough powerful, time to process an image can take a while. A **Progress Bar** on the bottom of the G'MIC-Qt dialog will indicate the computation progress.
 
     .. figure:: images/editor_gmicqt_progress.webp
         :alt:
@@ -821,9 +821,9 @@ For mostly all the G'MIC-Qt filters you can see these behaviors:
 
         The Image Editor G'MIC-Qt Tool Progress Bar
 
-    - There are a lot of settings for each filter which can be not fully visible. A splitter on the right allows to see them all. Also, it's possible to enlarge the G'MIC-Qt dialog if necessary, or better switch to **Fullscreen** with the button on the bottom.
+    - There are a lot of settings for each filter that can be not fully visible. A splitter on the right allows to see them all. Also, it's possible to enlarge the G'MIC-Qt dialog if necessary, or better switch to **Fullscreen** with the button on the bottom.
 
-    - Depending of the filter selected, some parameters can increase a lots the iterations on the image. Adjust the settings carefully, as the times can increase exponentially before to see the result.
+    - Depending on the filter selected, some parameters can increase a lot the iterations on the image. Adjust the settings carefully, as the times can increase exponentially before seeing the result.
 
     - The filter preview can be adjusted to compare the results before and after the effect. Looks if a **Preview Type** settings is not available in the settings view and adjust zooming/panning for the best comparison.
 
@@ -835,7 +835,7 @@ For mostly all the G'MIC-Qt filters you can see these behaviors:
 
 The **Settings** button on the bottom left will show the G'MIC-Qt configuration dialog with tree tabs:
 
-    - First one is used to customize the G'MIC-Qt **Interface**, as the layout of the tool panes, the language to enable, the preview bahaviors, and the native dialog to use.
+    - First one is used to customize the G'MIC-Qt **Interface**, as the layout of the tool panes, the language to enable, the preview behavior, and the native dialog to use.
 
     .. figure:: images/editor_gmicqt_settings_interface.webp
         :alt:
@@ -843,7 +843,7 @@ The **Settings** button on the bottom left will show the G'MIC-Qt configuration 
 
         The Image Editor G'MIC-Qt Tool Settings/Interface Dialog Tab
 
-    - Second one to setup the **Filter sources**, as where to take filter updates and where to store it on your computer.
+    - Second one to set up the **Filter sources**, such as where to take filter updates and where to store them on your computer.
 
     .. figure:: images/editor_gmicqt_settings_filter_sources.webp
         :alt:
@@ -851,7 +851,7 @@ The **Settings** button on the bottom left will show the G'MIC-Qt configuration 
 
         The Image Editor G'MIC-Qt Tool Settings/Filter-Sources Dialog Tab
 
-    - The last one to tune **Other** parameters, as when to check for online updates, and the debug verbosity on the console (useful for filters developers).
+    - The last one is to tune **Other** parameters, such as when to check for online updates, and the debug verbosity on the console (useful for filter developers).
 
     .. figure:: images/editor_gmicqt_settings_other.webp
         :alt:
