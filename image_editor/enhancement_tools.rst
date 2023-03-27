@@ -833,6 +833,10 @@ For mostly all the G'MIC-Qt filters you can see these behaviors:
 
         The Image Editor G'MIC-Qt Tool Preview Type Settings From the Colors/Color-Blindness Filter
 
-The **Settings** button on the bottom left will show a configuration dialog with tree tabs. One is used to customize the G'MIC-QT **Interface**, one other to setup the **Filter sources**, and the last one to **Other** parameters.
+The **Settings** button on the bottom left will show the G'MIC-Qt configuration dialog with tree tabs:
+
+    - First one is used to customize the G'MIC-Qt **Interface**.
+    - Second one to setup the **Filter sources**.
+    - The last one to tune **Other** parameters.
 
 It's suggested to explore all the available effects in G'MIC-Qt, as you can find really interesting artistic solutions for your photo. See `this online review <https://jpfleury.github.io/gfo-demos/demos/fruits-400/index.html>`_ of all G'MIC-Qt filters for details.
