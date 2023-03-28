@@ -639,7 +639,7 @@ G'MIC-Qt is not included de facto in digiKam source code. It's a 3rd-party plugi
 
 The categories of **Available filters** in the list are listed below:
 
-    - **About**: these entries are not filters, but just show different information about the tools on the settings view. The **About/What's New** tool allows updating the filter collections, by pressing the **Update** button.
+    - **About**: these entries are not filters, but just show differents information about G'MIC-Qt on the settings view. The **About/Download External Data** entry allows to load new filter definitions via internet.
 
     - **Array and tiles**: this filter collection allows transforming photos as toys, puzzles, maps, and decorative shapes.
 
