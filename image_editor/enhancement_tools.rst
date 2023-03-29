@@ -635,7 +635,7 @@ G'MIC-Qt is not included de facto in digiKam source code. It's a 3rd-party plugi
     :alt:
     :align: center
 
-    The Image Editor G'MIC-Qt Tool Dialog Running the Artistic/Bokeh Filter
+    The Image Editor G'MIC-Qt Tool Running the Artistic/Bokeh Filter
 
 The categories of **Available filters** in the list are listed below:
 
@@ -769,7 +769,7 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Sequences/3D_Image-Object Filter
 
-    - **Silhouettes**: this filtes collection superimposes forms such as animal finger-print, icons, nature shapes, etc.
+    - **Silhouettes**: this filter collection superimposes forms such as animal finger-print, icons, nature shapes, etc.
 
         .. figure:: images/editor_gmicqt_silhouettes_nature_barnsley_fern.webp
             :alt:
