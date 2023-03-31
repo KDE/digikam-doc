@@ -625,11 +625,9 @@ You can undo and redo using toolbar buttons from the toolbar on the top of setti
 G'MIC-Qt Tool
 -------------
 
-The Image Editor is a pretty reasonable, image manipulation program. It comes with a range of image filters, allowing you to make changes to your photos, like Sharpen, Local-Contrast, Noise, White-Balance, etc.
+G'MIC-Qt is 3rd-party image editing tool provided as a plug-in. It is named **G'MIC** for **GREYC’s Magic for Image Computing**, `an open-source image processing framework <https://gmic.eu/>`_. The full list of G'MIC features is long and cannot be detailed here as it comes with over than 500 interesting functions to explore. It comes with filters for changing colors, creating patterns, adding artistic touches, repairing inconsistencies in pictures, rendering shapes, and much more. The plugin is highly customizable, with the ability to set favorites and even add your own filters.
 
-Another brick in the wall is the G'MIC-Qt tool which is based to `an image processing framework <https://gmic.eu/>`_ named **G'MIC** for **Grey’s Magic for Image Computing**. It comes with extra filters as color, light and pattern changes, add artistic touches, repair inconsistencies in pictures, render shapes, etc. The full list of G'MIC features is way too long and cannot be detailed here as it comes with over 500 funny or interesting functions to explore. The plugin is also highly customizable, with the ability to set favorites and even add your own filters.
-
-G'MIC-Qt is not included de facto in digiKam source code. It's a 3rd-party plugin that we include in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> G'MIC-Qt` menu entry or uses the icons from Tools in the Right sidebar. G’MIC-Qt can be used as you do with other filters, the main difference is that instead of opening a specific filter tab on the right sidebar, it opens up a window where you can pick through any of the pre-defined filters.
+G'MIC-Qt is not included in the digiKam source code. Rather, it is a 3rd-party plugin included in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> G'MIC-Qt` menu entry or uses the icons from Tools in Right sidebar. G’MIC-Qt can be used as you do with other filters, the main difference is that instead of opening a specific filter tab on right sidebar, it opens up a window where you can pick through any of the pre-defined filters.
 
 .. figure:: images/editor_gmicqt_dialog.webp
     :alt:
@@ -639,7 +637,7 @@ G'MIC-Qt is not included de facto in digiKam source code. It's a 3rd-party plugi
 
 The categories of **Available filters** in the list are listed below:
 
-    - **About**: these entries are not filters, but just show differents information about G'MIC-Qt on the settings view. The **About/Download External Data** entry allows to load new filter definitions via internet.
+    - **About**: these entries are not filters, but just show different information about G'MIC-Qt on the settings view. The **About/Download External Data** entry allows to load new filter definitions via internet.
 
     - **Array and tiles**: this filter collection allows transforming photos as toys, puzzles, maps, and decorative shapes.
 
@@ -813,7 +811,7 @@ You can search a filter using their groups, but the fastest way to find them is 
 
 For mostly all the G'MIC-Qt filters you can see these behaviors:
 
-    - When you render the filter on whole data from Image Editor by pressing **Apply** or **Ok** buttons, the processing time can be quite long, with many megapixels images. If the computer is not enough powerful, time to process an image can take a while. A **Progress Bar** on the bottom of the G'MIC-Qt dialog will indicate the computation progress.
+    - When you render the filter on whole data from Image Editor by pressing **Apply** or **Ok** buttons, the processing time can be quite long, with many megapixels images. If the computer is not powerful enough, time to process an image can take a while. A **Progress Bar** on the bottom of the G'MIC-Qt dialog will indicate the computation progress.
 
     .. figure:: images/editor_gmicqt_progress.webp
         :alt:
@@ -821,11 +819,11 @@ For mostly all the G'MIC-Qt filters you can see these behaviors:
 
         The Image Editor G'MIC-Qt Tool Progress Bar
 
-    - There are a lot of settings for each filter that can be not fully visible. A splitter on the right allows to see them all. Also, it's possible to enlarge the G'MIC-Qt dialog if necessary, or better switch to **Fullscreen** with the button on the bottom.
+    - If a filter has many parameter settings, some may not be visible; use the the scroll bar to access more settings. Also, it's possible to enlarge the G'MIC-Qt dialog if necessary, or switch to **Fullscreen** with the button on the bottom.
 
-    - Depending on the filter selected, some parameters can increase a lot the iterations on the image. Adjust the settings carefully, as the times can increase exponentially before seeing the result.
+    - Depending on the filter, some parameters can require many iterations on the image and increase processing time. Adjust the settings carefully, as the times can increase exponentially before seeing the result.
 
-    - The filter preview can be adjusted to compare the results before and after the effect. Looks if a **Preview Type** settings is not available in the settings view and adjust zooming/panning for the best comparison.
+    - The filter preview can be adjusted to compare the results before and after the effect. **Preview Type** settings are available in the parameters pane.
 
     .. figure:: images/editor_gmicqt_preview_type.webp
         :alt:
@@ -859,4 +857,4 @@ The **Settings** button on the bottom left will show the G'MIC-Qt configuration 
 
         The Image Editor G'MIC-Qt Tool Settings/Other Dialog Tab
 
-It's suggested to explore all the available effects in G'MIC-Qt, as you can find really interesting artistic solutions for your photo. See `this online review <https://jpfleury.github.io/gfo-demos/demos/fruits-400/index.html>`_ of all G'MIC-Qt filters for details.
+It's suggested to explore all the available effects in G'MIC-Qt, as you can find interesting artistic solutions for your photo. See `this online review <https://jpfleury.github.io/gfo-demos/demos/fruits-400/index.html>`_ of all G'MIC-Qt filters for details.
