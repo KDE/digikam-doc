@@ -315,7 +315,7 @@ To rebase your fork just call this git command:
 
 `git merge origin/master`
 
-This git workflow is well [documented in KDE project](https://community.kde.org/Infrastructure/Git/Simple_Workflow).
+This git workflow is well [documented in this page](https://www.johneverettcase.com/post/2021/07/28/git-rebase-fork.html).
 
 ### WEBP Screenshot Capture
 
