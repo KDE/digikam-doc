@@ -10,7 +10,7 @@
 
 .. _enhancement_tools:
 
-.. Enhancement Tools
+Enhancement Tools
 =================
 
 .. contents::
