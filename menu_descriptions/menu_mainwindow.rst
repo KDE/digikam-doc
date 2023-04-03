@@ -685,7 +685,7 @@ The Help Menu
 
 :menuselection:`Help --> Components Information`
 
-    Displays an information panel with shared libraries and components.
+    Displays an information panel with shared libraries and the component configurations used by the application.
 
 .. figure:: images/menu_components_info.webp
     :alt:

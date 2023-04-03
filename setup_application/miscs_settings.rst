@@ -261,7 +261,7 @@ This section allows to tune special low level configurations used by application
 
     - **Use pixmaps with high DPI resolution**: with this option, pixmaps sizes used internally by application will have a device-independent layout geometry. It activates high-resolution icons, otherwise the elements in digiKam would look very blurry under high resolutions. Also, it's recommended to use this option in multi-screen context when resolutions are not the same.
 
-    - **Disable hardware acceleration OpenCL**: this option will disable GPU accelerations, especially with faces management.
+    - **Disable hardware acceleration OpenCL**: this option will disable GPU accelerations, especially with faces management and image quality sorting. This option affect the `OpenCV <https://opencv.org/>`_ engine used in background for the intensive computation on images. To see the OpenCV configuration, go to :menuselection:`Help --> Components Information` menu entry, and :ref:`OpenCV section from the dialog <help_componentsinfo>`.
 
     - **Enable internal debug logging**: this option will turn one the debug trace on the console used to investigate dysfunctions.
 
