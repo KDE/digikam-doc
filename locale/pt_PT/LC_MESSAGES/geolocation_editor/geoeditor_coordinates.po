@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-07 00:40+0000\n"
-"PO-Revision-Date: 2023-03-22 16:40+0000\n"
+"PO-Revision-Date: 2023-04-03 15:12+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -16,7 +16,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-POFile-SpellExtra: Geo digiKam gps geo gpx DOP ref gpsbabel\n"
+"X-POFile-SpellExtra: Geo digiKam gps geo gpx DOP ref gpsbabel EXIF kbd GPX\n"
+"X-POFile-SpellExtra: UTC ss Máx máx min\n"
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:1
 msgid "digiKam Geolocation Editor Coordinates"
@@ -57,7 +58,7 @@ msgid ""
 "coordinates will then be displayed in the **Latitude** and **Longitude** "
 "fields to the right of the map. To save your changes you click the **Apply** "
 "button right under the DOP field."
-msgstr ""
+msgstr "Poderá definir manualmente as coordenadas na página de **Detalhes**. A localização poderá ser determinada e corrigida de forma iterativa com o mapa apresentado. Mova o cursor do rato para a região de interesse, amplie, ajuste a localização, amplie de novo e repita-o até que tenha obtido uma precisão adequada o suficiente. Lembre-se que o centro da ampliação será sempre a posição do cursor. Eventualmente irá carregar com o botão direito do rato na posição desejada e escolher a opção **Copiar as Coordenadas**. Agora poderá ir à lista de imagens por baixo do mapa, seleccionar uma ou mais imagens, carregar com o botão direito do mapa e escolher **Colar as Coordenadas**. As mesmas serão apresentadas nos campos **Latitude** e **Longitude** à direita do mapa. Para gravar as suas alterações, poderá carregar no botão **Aplicar** logo abaixo do campo DOP."
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:27
 msgid "The digiKam Geolocation Details View With a Map Using Off-Line Data"
@@ -90,7 +91,7 @@ msgid ""
 "Altitude Values** which causes the editor to look up these data in the map "
 "data provided the position (latitude and longitude) is already assigned to "
 "the photograph."
-msgstr ""
+msgstr "À direita do mapa existem, para além da latitude e da longitude, campos para a altitude, velocidade, número de satélites, o tipo de correcção e a incerteza (DOP). Poderá ver que estes campos já aparecem preenchidos, se seleccionar uma fotografia em que a câmara gravou esses dados no EXIF. Caso contrário, poderá preencher os mesmos mamualmente, caso possua esses dados de outra fonte qualquer, p.ex. um receptor de GPS separado. Lembre-s eque tem de assinalar a opção relevante antes de poder editar um campo qualquer (no Windows® poderá ter de fazer duplo-click sobre ela). Só na **Altitude** o menu de contexto na lista de imagens oferece a opção **Procurar os Valores de Altitude em Falta**, que faz com que o editor procure esses dados no mapa, dado que a posição (latitude e longitude) já constam na fotografia."
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:33
 msgid ""
@@ -139,7 +140,7 @@ msgid ""
 "the selected images in the list below the map. To indicate possible time/"
 "location correlation you have to load a track file with **Load GPX File** "
 "that contains GPS data taken at the same time and location as the pictures."
-msgstr ""
+msgstr "Seleccione as imagens que deseja correlacionar na janela principal da aplicação, invoque depois o editor de geo-localização com a combinação :kbd:`Ctrl+Shift+G` e mude para a página de **Correlação do GPS** na barra lateral direita. A janela acima irá aparecer com as imagens seleccionadas na lista debaixo do campa. Para indicar uma possível correlação entre a hora/local, terá de carregsar um ficheiro de trajecto com a opção **Carregar um Ficheiro GPX**, o qual contém os dados de GPS capturados no mesmo local e hora que as imagens."
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:50
 msgid ""
@@ -167,7 +168,7 @@ msgid ""
 "formats into gpx. Here comes **Fine offset (mm:ss)** into play where you can "
 "add or subtract up to 59 minutes and 59 seconds to your time difference "
 "chosen in the field above."
-msgstr ""
+msgstr "As datas do trajecto do GPS são guardadas sempre no formato UTC (Tempo Universal Coordenado), pelo que terá de converter a hora da câmara para o UTC, o que poderá ser feito com o **Fuso-Horário da Câmara**. Seleccione **Igual ao do Sistema**, caso tenha tirado as fotografias com o seu fuso-horário local, para que o digiKam descubra a diferença face ao UTC na hora do seu sistema. Se tiver tirado as fotografias noutro lugar qualquer, terá de assinalar a opção **Manual** e escolher a diferença apropriada no campo à direita. Poderá usar o mesmo mecanismo também para corrigir pequenos valores desajustados face à hora da sua câmara, seja por que razão for, ou um desvio a um ficheiro GPX, devido a inconsistências na aplicação usada para converter outros formatos de ficheiros de trajectos para o GPX. Aqui vem o **Ajuste fino (mm:ss)**, onde poderá adicionar ou subtrair até 59 minutos e 59 segundos à sua diferença temporal, escolhida no campo acima."
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:54
 msgid ""
@@ -181,7 +182,7 @@ msgid ""
 "device/software or into the gpx-file (which is easily possible with a text "
 "editor) might help. The faster you were moving while taking the "
 "photograph(s) the more important this decision will be."
-msgstr ""
+msgstr "A opção **Intervalo de Tempo Máx (s)**: define o limite dentro do qual a hora do GPS e da câmara são considerados coincidentes. O valor máximo é 2 000 segundos. Isto significa que, caso nenhum item no ficheiro GPX corresponder à hora exacta da fotografia, será usada a posição do item com o menor intervalo de tempo, desde que este intervalo seja inferior à opção **Intervalo de tempo máx. (s)**. Se tiver curiosidade sobre o valor que deverá indicar aqui, consulte as configurações do seu dispositivo/aplicação de registo de trajectos ou no ficheiro GPX (que é facilmente possível com um editor de texto) para obter alguma ajuda. Quanto mais rapidamente se estava a mover enquanto tirava as fotografias, mais importante será esta decisão."
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:56
 msgid ""
@@ -194,7 +195,7 @@ msgid ""
 "for instance, the time gaps between the two closest entries and the "
 "photograph are equal the position assigned will be on a straight line "
 "between the positions of the two entries right in the middle."
-msgstr ""
+msgstr "A opção **Interpolar** oferece outra opção, no caso de não existir nenhuma correspondência exacta entre a hora das suas fotografias e um item correspondente no ficheiro .gpx, e desde que se tenha deslocado mais ou menos a direito entre as duas posições de GPS registadas, sendo uma opção considerada mais ou menos precisa. Aqui a posição da fotografia é calculada (por interpolação linear) com base nas posições dos dois itens mais próximos no ficheiro .gpx e nas diferenças de tempo respectivas. Se, por exemplo, os intervalos de tempo entre os dois itens mais próximos e a fotografia forem iguais, a posição atribuída estará numa linha recta entre as posições dos dois itens, algures a meio."
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:58
 msgid ""
@@ -203,7 +204,7 @@ msgid ""
 "interpolation. If its time is farther away from the picture time than this "
 "limit, it cannot be used. 240 minutes is the maximum time difference that "
 "can be introduced here."
-msgstr ""
+msgstr "A opção **Intervalo de Tempo Máx. de Interpolação (min)** determina se um ponto de GPS é elegível para interpolação. Se a sua hora for mais afastada da hora em que a imagem foi tirada em relação a este limite, não pode ser usada. 240 minutos é a diferença máxima de tempo que poderá ser introduzida aqui."
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:60
 msgid ""
@@ -214,7 +215,7 @@ msgid ""
 "check the timezone and gap settings if you think that more images should "
 "have been correlated.\" Best case you get \"All images have been correlated. "
 "You can now check their position on the map.\""
-msgstr ""
+msgstr "Assim que tiver terminado a sua configuração, pode carregar no botão **Correlacionar**. Se não existir qualquer correspondência, irá obter a mensagem \"Não foi possível correlacionar nenhuma imagem - certifique-se que as configurações do fuso-horário e do intervalo estão correctas\". Caso contrário, irá obter algo do tipo \"2 em 4 imagens foram correlacionadas. Verifique por favor a configuração do fuso-horário e do intervalo, se acha que mais imagens deveriam estar correlacionadas\". No melhor dos casos, irá obter \"Todas as imagens foram correlacionadas. Poderá agora verificar a posição das mesmas no mapa.\""
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:62
 msgid ""
@@ -224,7 +225,7 @@ msgid ""
 "an image in the list under the map to make its preview show up. Once you are "
 "satisfied with the results click the **Apply** button at the bottom of the "
 "Geolocation Editor to save the changes to the image file and the database."
-msgstr ""
+msgstr "Se quiser rseguir esta recomendação, 'euma boa ideia mudar para a página de **Detalhes**, dado que aí terá uma antevisão das imagens, o que o poderá ajudar bastante a identificá-las no mapa. Lembre-se que terá sempre de carregar numa imagem na lista sob o mapa para que a sua antevisão apareça. Assim que esteja satisfeito com os resultados, carregue no botão **Aplicar** no fundo do Editor de Geo-Localização para gravar as alterações no ficheiro de imagem e na base de dados."
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:65
 msgid "Undo And Redo"
@@ -237,7 +238,7 @@ msgid ""
 "shows changes made in only one tab or in several tabs and will be deleted "
 "only once you leave the editor. After a few actions in the different tabs "
 "the record might look like this:"
-msgstr ""
+msgstr "Na página **Desfazer/Refazer**, está a ser guardado um registo histórico sobre todas as alterações que aplicar às imagens carregadas no Editor de Geo-Localização. O histórico mostra as alterações feitas, apenas numa página ou em várias páginas, sendo removida assim que sair do editor. Ao fim de algumas acções nas diferentes páginas, o registo ficará algo semelhante ao seguinte:"
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:73
 msgid "The digiKam Geolocation Correlator **Undo/Redo** View Example 1"
@@ -254,7 +255,7 @@ msgid ""
 "on the map or see the differences in the list of images under the map. Note "
 "that the list is configurable by clicking with the right mouse button on the "
 "header."
-msgstr ""
+msgstr "O último passo fica realçado assim que entrar na página. O primeiro passo aparece sempre como “vazio” e representa o estado que as imagens tinham quando foram carregadas. Poderá carregar em qualquer um dos passos e, dependendo do tipo de alterações que fez, poderá ver as imagens a aparecer, a desaparecer ou a mover-se no mapa ou ver as diferenças na lista de imagens sob o mapa. Lembre-se que a lista é configurável, carregando para tal com o botão direito do rato no cabeçalho."
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:77
 msgid ""
