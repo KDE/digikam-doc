@@ -34,7 +34,7 @@ The **Root Album Folders** list three types of collection which can be reference
 
     - **Collections on Network Shares**: these are root album folders stored remote file systems as Samba or NFS and mounted as native on your system.
 
-For each type, the **Add Collection** button allows to append an entry in the list. Entry properties are the root album folder **Name** and the root album folder **Path**.
+For each type, the **Add Collection** button allows to append an entry in the list. Entry properties are the root album folder **Name** and the root album folder **Path**. You can change the collection name by double clicking with the mouse over the text on the left of an entry from the list.
 
 .. figure:: images/setup_collection_new.webp
     :alt:
