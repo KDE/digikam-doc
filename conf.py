@@ -122,3 +122,36 @@ gettext_compact = False     # optional.
 #gettext_additional_targets = ['image', 'index', 'literal-block'] # allows images to be translatable
 #figure_language_filename = "{path}{language}/{basename}{ext}"
 
+# -- Options for Epub output -------------------------------------------------
+
+# Bibliographic Dublin Core info.
+# filename
+# epub_basename = project.replace(' ', '_') + '_' + language
+epub_title = project+" "+version
+epub_description = description
+
+# Technically speaking dublincore accepts multiple author and contributor elements, but
+# the sphinx builder only accepts one.
+epub_author = author
+epub_publisher = author
+epub_copyright = copyright
+
+epub_cover = ('_static/images/manual_cover.png', '')
+
+# The unique identifier of the text. This can be a ISBN number
+# or the project homepage.
+#
+# epub_identifier = ''
+
+# A unique identification for the text.
+#
+# epub_uid = ''
+
+# Not actually used anywhere? Docs say that this should be what the epub uid is used for but...
+epub_scheme = 'URL'
+
+# A list of files that should not be packed into the epub file.
+epub_exclude_files = ['search.html', '.htaccess', '404.xhtml']
+
+epub_tocscope = 'includehidden'
+
