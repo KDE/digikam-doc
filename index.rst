@@ -48,7 +48,6 @@ Getting Started
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    getting_started
 
@@ -78,7 +77,6 @@ Supported Materials
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    supported_materials
 
@@ -128,7 +126,6 @@ Main Window
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    main_window
 
@@ -182,7 +179,6 @@ Right Sidebar
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    right_sidebar
 
@@ -208,7 +204,6 @@ Light Table
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    light_table
 
@@ -262,7 +257,6 @@ Batch Queue Manager
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    batch_queue
 
@@ -308,7 +302,6 @@ Import Tools
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    import_tools
 
@@ -346,7 +339,6 @@ Digital Asset Management
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    asset_management
 
@@ -384,7 +376,6 @@ Color Management
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    color_management
 
@@ -434,7 +425,6 @@ Image Editor
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    image_editor
 
@@ -532,7 +522,6 @@ Setup Application
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    setup_application
 
@@ -574,7 +563,6 @@ Geolocation Editor
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    geolocation_editor
 
@@ -632,7 +620,6 @@ Maintenance Tools
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    maintenance_tools
 
@@ -706,7 +693,6 @@ Post Processing
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    post_processing
 
@@ -784,7 +770,6 @@ Export Tools
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    export_tools
 
@@ -814,7 +799,6 @@ Slideshow Tools
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    slideshow_tools
 
@@ -848,7 +832,6 @@ Showfoto
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    showfoto_editor
 
@@ -890,7 +873,6 @@ Menu Descriptions
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    menu_descriptions
 
@@ -912,7 +894,6 @@ Credits and License
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    credits_license
 
@@ -934,6 +915,5 @@ Get Involved
 
 .. toctree::
    :maxdepth: 2
-   :hidden:
 
    get_involved
