@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-14 11:23+0000\n"
-"PO-Revision-Date: 2022-12-29 06:58+0000\n"
+"PO-Revision-Date: 2023-04-06 15:05+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -16,17 +16,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-POFile-SpellExtra: sRGB ECI LStar CIE blog Canon mark Ds\n"
+"X-POFile-SpellExtra: sRGB ECI LStar CIE blog Canon mark Ds digiKam icc RAW\n"
+"X-POFile-SpellExtra: ref ICC LCMS usr share color Pantone TruMatch\n"
 
 #: ../../setup_application/cm_settings.rst:1
 msgid "digiKam Color Management Settings"
-msgstr ""
+msgstr "Configuração da Gestão de Cores do digiKam"
 
 #: ../../setup_application/cm_settings.rst:1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, configure, setup, color management, icc, profile"
-msgstr ""
+msgstr "digiKam, documentação, manual do utilizador, gestão de fotografias, código aberto, livre, aprender, fácil, configurar, configuração, gestão de cores, icc, perfil"
 
 #: ../../setup_application/cm_settings.rst:14
 msgid "Color Management Settings"
@@ -49,7 +50,7 @@ msgid ""
 "need to apply a specific profile to the images you want to process. Please "
 "refer to the section :ref:`ICC color profile management <color_management>` "
 "for more details an explanations."
-msgstr ""
+msgstr "O digiKam é uma aplicação com suporte activo para a gestão de cores. Os ficheiros RAW - tal como são criados - não têm qualquer gestão de cores. A sua câmara fornece os dados que capturou num formato em bruto, deixando-o a si gerir todo o processamento. Todas as câmaras têm as suas especificidades, como a forma como captura a informação das cores, pelo que terá de aplicar um perfil específico às imagens que deseja processar. Por favor, consulte a secção de :ref:`gestão dos perfis de cores ICC <color_management>` para mais detalhes e explicações."
 
 #: ../../setup_application/cm_settings.rst:23
 msgid ""
@@ -58,7 +59,7 @@ msgid ""
 "digiKam on how to translate the color information from one color space to an "
 "other in order to keep the colors as accurate as possible across all "
 "rendering media."
-msgstr ""
+msgstr "Basicamente, um perfil *associa* a informação das cores e devolve informações de como as mesmas devem ser desenhadas. Também dá algumas informações à infra-estrutura do LCMS e ao digiKam como traduzir a informação das cores de um espaço de cores para o outro, de forma a manter as cores o mais precisas possível para os vários suportes de impressão."
 
 #: ../../setup_application/cm_settings.rst:26
 msgid "Behavior Settings"
@@ -68,31 +69,18 @@ msgstr "Configuração do Comportamento"
 msgid ""
 "The **Behavior** view ask when opening an image in Image Editor or when you "
 "use the Color Management tool with RAW files."
-msgstr ""
+msgstr "A área de **Comportamento** faz essa pergunta, ao abrir uma imagem no Editor de Imagens ou quando usar a ferramenta de Gestão de Cores com ficheiros RAW."
 
 #: ../../setup_application/cm_settings.rst:34
-#, fuzzy
-#| msgid "Color Management Settings"
 msgid "The Color Management Behavior Configuration Page"
-msgstr "Configuração da Gestão de Cores"
+msgstr "A Página de Configuração do Comportamento da Gestão de Cores"
 
 #: ../../setup_application/cm_settings.rst:36
 msgid ""
 "**Enable Color Management** is the lead option to turn on/off this feature."
-msgstr ""
+msgstr "**Activar a Gestão de Cores** é a opção principal para ligar/desligar esta funcionalidade."
 
 #: ../../setup_application/cm_settings.rst:38
-#, fuzzy
-#| msgid ""
-#| "You have to provide a workspace profile (linear profiles such as sRGB, "
-#| "ECI-RGB, LStar-RGB, Adobe-RGB or CIE-RGB). If you want to print your "
-#| "images, you may want to opt for Adobe RGB, if it is only for web "
-#| "publishing, sRGB is better (Adobe RGB will be displayed slightly dull in "
-#| "non color managed enabled software such as browsers). However you may "
-#| "change this later of course (by attributing another profile), therefore "
-#| "Adobe RGB can be a good choice for storing and image handling as you can "
-#| "always change it to sRGB before releasing an image for your blog. Note: "
-#| "Do not use non-linear profiles as they will change the color-balance."
 msgid ""
 "You have to provide a **Working Color Space** profile (linear profiles such "
 "as sRGB, ECI-RGB, LStar-RGB, Adobe-RGB or CIE-RGB). If you want to print "
@@ -103,28 +91,18 @@ msgid ""
 "can be a good choice for storing and image handling as you can always change "
 "it to sRGB before releasing an image for your blog. Note: Do not use non-"
 "linear profiles as they will change the color-balance."
-msgstr ""
-"Terá de indicar um perfil de espaço de trabalho (perfis lineares como o "
-"sRGB, ECI-RGB, LStar-RGB, Adobe-RGB ou o CIE-RGB). Se quiser imprimir as "
-"suas imagens, poderá querer optar pelo RGB da Adobe; se for só para "
-"publicação na Web, o sRGB é melhor (o RGB da Adobe será apresentado de forma "
-"estranha nas aplicações que não façam gestão de cores, como os navegadores "
-"Web). Contudo, poderá alterar isto mais tarde, como é óbvio (atribuindo "
-"outro perfil), como tal o RGB da Adobe poderá ser uma boa escolha para "
-"guardar e fazer o tratamento de imagens, já que poderá sempre mudar para "
-"sRGB antes de publicar uma imagem no seu 'blog'. Nota: Não use perfis não-"
-"lineares, dado que irão modificar o equilíbrio de cores."
+msgstr "Terá de indicar um **Perfil de espaço de trabalho** (perfis lineares como o sRGB, ECI-RGB, LStar-RGB, Adobe-RGB ou o CIE-RGB). Se quiser imprimir as suas imagens, poderá querer optar pelo RGB da Adobe; se for só para publicação na Web, o sRGB é melhor (o RGB da Adobe será apresentado de forma estranha nas aplicações que não façam gestão de cores, como os navegadores Web). Contudo, poderá alterar isto mais tarde, como é óbvio (atribuindo outro perfil), como tal o RGB da Adobe poderá ser uma boa escolha para guardar e fazer o tratamento de imagens, já que poderá sempre mudar para sRGB antes de publicar uma imagem no seu 'blog'. Nota: Não use perfis não-lineares, dado que irão modificar o equilíbrio de cores."
 
 #: ../../setup_application/cm_settings.rst:40
 msgid ""
 "The three next sections from this view set the rules for different use cases:"
-msgstr ""
+msgstr "As três seguintes secções desta janela definem as regras para os diferentes casos de uso:"
 
 #: ../../setup_application/cm_settings.rst:42
 msgid ""
 "**When the profile of an image does not match the working color space**: "
 "this condition provides two options listed below."
-msgstr ""
+msgstr "**Quando o perfil de uma imagem não corresponder ao espaço de cores de trabalho**: esta condição oferece duas opções apresentadas em baixo."
 
 #: ../../setup_application/cm_settings.rst:44
 msgid ""
@@ -132,7 +110,7 @@ msgid ""
 "not matching the working space profile, digiKam will ask if you want to "
 "convert to the working space, keep the embedded profile or discard the "
 "embedded profile and assign a different one."
-msgstr ""
+msgstr "**Perguntar ao abrir a imagem**: Se uma imagem tiver um perfil de cores incorporado que não corresponde ao perfil do espaço de trabalho, o digiKam irá perguntar se deseja converter para o espaço de trabalho, manter o perfil incorporado ou esquecer o perfil incorporado e atribuir um diferente."
 
 #: ../../setup_application/cm_settings.rst:46
 msgid ""
@@ -140,20 +118,20 @@ msgid ""
 "embedded color profile not matching the working space profile, digiKam will "
 "convert the image's color information to the working color space. This "
 "changes the pixel data, but not the appearance of the image."
-msgstr ""
+msgstr "**Converter a imagem para o espaço de cores de trabalho**: Se uma imagem tiver um perfil de cores incorporado que não corresponde ao perfil do espaço de trabalho, o digiKam irá converter a informação das cores da imagem para o espaço de trabalho. Isto irá mudar os dados dos pixels, mas não a aparência da imagem."
 
 #: ../../setup_application/cm_settings.rst:48
 msgid ""
 "**When an image has no color profile information**: this condition provides "
 "four options listed below."
-msgstr ""
+msgstr "**Quando uma imagem não tiver informações do perfil de cores**: esta condição oferece quatro opções enumeradas a seguir."
 
 #: ../../setup_application/cm_settings.rst:50
 msgid ""
 "**Ask when opening the image**: If an image has no embedded color profile, "
 "digiKam will ask which color space shall be used to interpret the image and "
 "to which color space it shall be transformed for editing."
-msgstr ""
+msgstr "**Perguntar ao abrir a imagem**: Se uma imagem não tiver um perfil de cores incorporado, o digiKam irá perguntar qual o espaço de cores a usar para interpretar a imagem e para que espaço de cores deverá ser transformado para a sua edição."
 
 #: ../../setup_application/cm_settings.rst:52
 msgid ""
@@ -161,70 +139,66 @@ msgid ""
 "target for an Internet usage. The **and convert it to the working color "
 "space** allows to force conversion to the **Working Color Space** previously "
 "defined."
-msgstr ""
+msgstr "**Assumir que está a usar o espaço de cores sRGB**: neste caso, a imagem destina-se a ser utilizada na Internet. A outra opção **e convertê-lo para o espaço de cores de trabalho** permite forçar a conversão para o **Espaço de Cores de Trabalho** definido anteriormente."
 
 #: ../../setup_application/cm_settings.rst:54
 msgid ""
 "**Assume it is using the working color space**: in this case, the image is "
 "not target for a specific usage, and **Working Color Space** is used for the "
 "conversion."
-msgstr ""
+msgstr "**Assumir que está a usar o espaço de cores de trabalho**: neste caso, a imagem não se destina a nenhum caso em particular, sendo usado o **Espaço de Cores de Trabalho** na conversão."
 
 #: ../../setup_application/cm_settings.rst:56
 msgid ""
 "**Convert it from default input color space to working space**: in this "
 "case, the conversion to the **Working Color Space** will be done to include "
 "the **Default input color profile** defined in the next settings view."
-msgstr ""
+msgstr "**Convertê-la do espaço de cores de entrada para o espaço de trabalho**: neste caso, a conversão para o **Espaço de Cores de Trabalho** será feita para incluir o **Perfil de cores de entrada predefinido** definido nas área de configuração a seguir."
 
 #: ../../setup_application/cm_settings.rst:58
 msgid ""
 "**When loading a RAW file with uncalibrated colors**: this condition "
 "provides three options listed below."
-msgstr ""
+msgstr "**Ao carregar um ficheiro RAW com cores não calibradas**: esta condição oferece as três opções indicadas abaixo."
 
 #: ../../setup_application/cm_settings.rst:60
 msgid ""
 "**Ask for the input profile**: digiKam prompts a question to the user to "
 "select right **Input color profile** to use."
-msgstr ""
+msgstr "**Perguntar o perfil de entrada**: o digiKam apresenta uma questão ao utilizador para saber o **Perfil de cores de entrada** a usar."
 
 #: ../../setup_application/cm_settings.rst:62
 msgid ""
 "**Automatic color correction**: digiKam will perform an automatic colors "
 "auto-correction based of image historgram analysis."
-msgstr ""
+msgstr "**Correcção de cores automática**: o digiKam irá efectuar uma correcção automática das cores, com base na análise do histograma de imagens."
 
 #: ../../setup_application/cm_settings.rst:64
 msgid ""
 "**Convert it from the default input profile**: digiKam will use the "
 "**Default input color profile** defined in the next settings view."
-msgstr ""
+msgstr "**Convertê-la do perfil de entrada predefinido**: o digiKam irá usar o **Perfil de cores de entrada predefinido** definido na área de configuração a seguir."
 
 #: ../../setup_application/cm_settings.rst:67
-#, fuzzy
-#| msgid "Profile series"
 msgid "Profiles Settings"
-msgstr "Séries de perfis"
+msgstr "Configuração dos Perfis"
 
 #: ../../setup_application/cm_settings.rst:69
 msgid ""
 "The ICC **Profiles Settings**: here you are given the ability to provide "
 "*default* choices for your profiles. Everything is adaptable later-on at the "
 "opening of a RAW file."
-msgstr ""
+msgstr "A **Configuração dos Perfis** de ICC: aqui ser-lhe-á dada a possibilidade de definir escolhas *predefinidas* para os seus perfis. Tudo poderá ser adaptado mais tarde na abertura de um ficheiro RAW."
 
 #: ../../setup_application/cm_settings.rst:75
-#, fuzzy
-#| msgid "Color Management Settings"
 msgid "The Color Management Profiles Configuration Page"
-msgstr "Configuração da Gestão de Cores"
+msgstr "A Página de Configuração dos Perfis da Gestão de Cores"
 
 #: ../../setup_application/cm_settings.rst:77
 msgid ""
 "The **Monitor profile** option allows to select the color profile for your "
 "screen."
-msgstr ""
+msgstr "A opção do **Perfil do monitor** permite seleccionar o perfil de cores para o seu ecrã."
 
 #: ../../setup_application/cm_settings.rst:79
 msgid ""
@@ -233,14 +207,14 @@ msgid ""
 "screen. You can at any time toggle this option everywhere in digiKam. This "
 "can slow down rendering of the image, depending on the speed of your "
 "computer."
-msgstr ""
+msgstr "A opção **Usar uma área com gestão de cores** é uma alternativa ao uso da gestão de cores do ambiente de trabalho. Só a sua imagem no editor é que terá uma gestão de cores à parte, e não o seu ecrã por inteiro. Poderá activar/desactivar esta opção em todo o lado no digiKam. Isto poderá atrasar a apresentação da imagem, dependendo da velocidade do seu computador."
 
 #: ../../setup_application/cm_settings.rst:81
 msgid ""
 "**Use color managed view for previews and thumbnails**: with this option, "
 "you can also use the color management to render previews and thumbnails in "
 "Icon-View, Light-Table, and Import Tool."
-msgstr ""
+msgstr "**Usar uma área com gestão de cores para as antevisões e miniaturas**: com esta opção, poderá também usar a gestão de cores para apresentar as antevisões e miniaturas na área de ícones, na mesa de luz e na ferramenta de importação."
 
 #: ../../setup_application/cm_settings.rst:83
 msgid ""
@@ -249,17 +223,9 @@ msgid ""
 "have no tone mapping/gamma correction included (For example Canon camera). "
 "In some conditions gamma can be not corrected for 16 bit depth conversion, "
 "which means that you have to do the tone mapping yourself."
-msgstr ""
+msgstr "O **Perfil de Cores de Entrada Predefinido** deverá corresponder ao fabricante e modelo da câmara que está a usar. *Nem todos os perfis são criados de igual forma*; existem alguns que não têm qualquer mapeamento de tons/correcção do gama incluídos (por exemplo, as câmaras da Canon). Em algumas condições, o 'gama' poderá não ser corrigido na conversão para uma profundidade de cor a 16 bits, o que significa que terá de fazer você mesmo o mapeamento de tons."
 
 #: ../../setup_application/cm_settings.rst:85
-#, fuzzy
-#| msgid ""
-#| "There are some other options such as the soft proof profile which enables "
-#| "you to emulate, granted that you have a profile for it, how your image "
-#| "will render for a particular device. It is useful before printing for "
-#| "instance because your printer has a smaller gamut than your camera and "
-#| "some colors might look saturated. You may want to fix this manually "
-#| "instead of relying on the \"blind\" algorithm of your printer."
 msgid ""
 "The **Output device profile** should match the profile for your output "
 "device, usually your printer. This profile will be used to do a :ref:`soft "
@@ -270,13 +236,7 @@ msgid ""
 "gamut than your camera and some colors might look saturated. You may want to "
 "fix this manually instead of relying on the \"blind\" algorithm of your "
 "printer."
-msgstr ""
-"Existem mais algumas opções, como o perfil de prova suave, o qual lhe "
-"permite emular, desde que tenha um perfil para tal, como ficará a sua imagem "
-"num dado dispositivo em particular. É útil antes de imprimir, por exemplo, "
-"porque a sua impressora tem um gamute menor que a sua máquina e algumas "
-"cores poderão aparecer saturadas. Poderá querer corrigir isto manualmente em "
-"vez de se basear no algoritmo \"cego\" da sua impressora."
+msgstr "O **Perfil do dispositivo de saída** deverá corresponder ao perfil do seu dispositivo de saída, normalmente a sua impressora. Esse perfil será usado para fazer uma :ref:`prova suave <soft_proof>`, para que seja capaz de antever como será representada a antevisão de uma imagem num dado dispositivo de saída. A mesma permite-lhe emular, desde que tenha um perfil para tal, como ficará a sua imagem num dado dispositivo em particular. É útil antes de imprimir, por exemplo, porque a sua impressora tem um gamute menor que a sua máquina e algumas cores poderão aparecer saturadas. Poderá querer corrigir isto manualmente em vez de se basear no algoritmo \"cego\" da sua impressora."
 
 #: ../../setup_application/cm_settings.rst:87
 msgid ""
@@ -284,7 +244,7 @@ msgid ""
 "number of default locations e.g. :file:`/usr/share/color/icc`. Set this to "
 "the folder where you store extra profiles e.g. :file:`/home/user/.color/"
 "icc`. digiKam will scan these folders when starting up."
-msgstr ""
+msgstr "O **Repositório de Perfis de Cores**: o digiKam procura por perfis de ICC num conjunto de localizações predefinidas, p.ex. :file:`/usr/share/color/icc`. Configure isto com a pasta onde guarda os perfis extra p.ex. :file:`/home/utilizador/.color/icc`. O digiKam irá sondar estas pastas no arranque."
 
 #: ../../setup_application/cm_settings.rst:90
 msgid "Advanced Settings"
@@ -295,11 +255,11 @@ msgid ""
 "**Use black point compensation**: this setting is a way to make adjustments "
 "between the maximum black levels of digital files and the black capabilities "
 "of various digital devices."
-msgstr ""
+msgstr "**Usar a compensação do ponto preto**: esta opção é uma forma de fazer ajustes entre os níveis máximos de preto nos ficheiros digitais e as capacidades do tom preto nos vários dispositivos digitais."
 
 #: ../../setup_application/cm_settings.rst:94
 msgid "**Rendering Intents**: this setting provides four options listed below."
-msgstr ""
+msgstr "**Tentativas de Desenho**: esta configuração oferece as quatro opções indicadas em baixo."
 
 #: ../../setup_application/cm_settings.rst:96
 msgid ""
@@ -312,7 +272,7 @@ msgid ""
 "range that can be rendered and so that the relationship between colors is "
 "preserved as much as possible. This intent is most suitable for display of "
 "photographs and images, and is the default intent."
-msgstr ""
+msgstr "**Percepção**: faz com que o gamute completo da imagem seja comprimido ou expandido para cobrir o gamute do dispositivo de destino, de forma que o balanceamento de cinzentos seja preservado, mas a correcção colorimétrica não seja preservada. Por outras palavras, se algumas cores de uma imagem caírem fora da gama de cores que o dispositivo de saída consegue representar, a tentativa de desenho fará com que todas as cores na imagem sejam ajustadas para que todas as cores da imagem caiam dentro da gama que pode ser representada, pelo que a relação entre cores é preservada ao máximo possível. Esta tentativa é mais adequada para a apresentação de fotografias e imagens, sendo a tentativa por omissão."
 
 #: ../../setup_application/cm_settings.rst:98
 msgid ""
@@ -320,7 +280,7 @@ msgid ""
 "the range that the output device can render are adjusted to the closest "
 "color that can be rendered, while all other colors are left unchanged. Proof "
 "intent does not preserve the white point."
-msgstr ""
+msgstr "**Colorimétrica Relativa**: é definida de forma a que todas as cores que caiam fora da gama que o dispositivo de saída consegue representar são ajustadas à cor mais próxima que consegue ser representada, enquanto todas as outras cores são deixadas como estão. A tentativa de prova não preserva o ponto branco."
 
 #: ../../setup_application/cm_settings.rst:100
 msgid ""
@@ -329,7 +289,7 @@ msgid ""
 "can be rendered, while all other colors are left unchanged. This intent "
 "preserves the white point and is most suitable for spot colors (Pantone, "
 "TruMatch, logo colors, etc.)."
-msgstr ""
+msgstr "**Colorimétrica Absoluta**: faz com que todas as cores que caiam fora da gama que o dispositivo de saída consegue representar são ajustadas à cor mais próxima que consegue ser representada, enquanto todas as outras cores são deixadas como estão. Esta tentativa de prova preserva o ponto branco e é mais adequada para cores pontuais (Pantone, TruMatch, cores de logótipos, etc.)."
 
 #: ../../setup_application/cm_settings.rst:102
 msgid ""
@@ -339,13 +299,11 @@ msgid ""
 "desired effects. This intent is most suitable for business graphics such as "
 "charts, where it is more important that the colors be vivid and contrast "
 "well with each other rather than a specific color."
-msgstr ""
+msgstr "**Saturação**: preserva a saturação das cores na imagem, às custas da matiz e luminosidade. A implementação desta tentativa é relativamente problemática, e o ICC está ainda a trabalhar em métodos para atingir os efeitos desejados. Esta tentativa é mais adequada para gráficos profissionais, como os gráficos de dado, onde é mais importante que as cores sejam vivas e com bom contraste entre si, do que uma cor em particular."
 
 #: ../../setup_application/cm_settings.rst:108
-#, fuzzy
-#| msgid "Color Management Settings"
 msgid "The Color Management Advanced Configuration Page"
-msgstr "Configuração da Gestão de Cores"
+msgstr "A Página de Configuração Avançada da Gestão de Cores"
 
 #: ../../setup_application/cm_settings.rst:112
 msgid ""
@@ -470,4 +428,4 @@ msgstr ""
 msgid ""
 "Here you find a typical :ref:`RAW workflow <rawprocessing_workflow>` "
 "scenario with Image Editor."
-msgstr ""
+msgstr "Aqui irá encontrar um cenário do :ref:`processo de trabalho em RAW <rawprocessing_workflow>` típico com o Editor de Imagens."
