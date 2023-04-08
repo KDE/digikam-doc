@@ -127,13 +127,14 @@ gettext_compact = False     # optional.
 # Bibliographic Dublin Core info.
 # filename
 # epub_basename = project.replace(' ', '_') + '_' + language
+
 epub_title = project+" "+version
 epub_description = description
 
 # Technically speaking dublincore accepts multiple author and contributor elements, but
 # the sphinx builder only accepts one.
 epub_author = author
-epub_publisher = author
+epub_publisher = 'https://www.digikam.org'
 epub_copyright = copyright
 
 epub_cover = ('_static/images/manual_cover.png', '')
@@ -141,7 +142,7 @@ epub_cover = ('_static/images/manual_cover.png', '')
 # The unique identifier of the text. This can be a ISBN number
 # or the project homepage.
 #
-# epub_identifier = ''
+epub_identifier = 'https://www.digikam.org'
 
 # A unique identification for the text.
 #
