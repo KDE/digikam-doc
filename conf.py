@@ -146,13 +146,13 @@ epub_identifier = 'https://www.digikam.org'
 
 # A unique identification for the text.
 #
-# epub_uid = ''
+epub_uid = 'url'
 
 # Not actually used anywhere? Docs say that this should be what the epub uid is used for but...
 epub_scheme = 'URL'
 
 # A list of files that should not be packed into the epub file.
-epub_exclude_files = ['search.html', '.htaccess', '404.xhtml']
+epub_exclude_files = ['search.html', '.htaccess', '404.xhtml', '404handler.php', '_static/favicon.ico', '_static/images/favicon.ico']
 
 epub_tocscope = 'includehidden'
 
