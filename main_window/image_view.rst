@@ -196,7 +196,7 @@ digiKam will ask you confirmation before to move items to trash with the dialog 
 
 For each collection registered in the database, digiKam handles an internal trash-bin. Physically, the trash is located at the root album corresponding to the collection entry. It's an hidden folder :file:`.dtrash` storing deleted items in a subdirectory named :file:`files`, and information about the deletion stored in another subdirectory named :file:`info` with Json sidecars (:file:`.dtrashinfo`). Deleting a file in the collection does not remove the file from the media, but moves the file into this container, and the items are not registered anymore in the digiKam database.
 
-The trash-bin is accessible from the left sidebar tab **Albums** as the last entry of the tree-view corresponding to a collection and is named **Trash**. As the trash-view is a special container in digiKam, the layout of the trash-bin contents is a list based on a table-view and it cannot be changed.
+The trash-bin is accessible from the left sidebar tab **Albums** as the last entry of the tree-view corresponding to a collection and is named **Trash**. As the trash-view is a special container in digiKam, the layout of the trash-bin contents is a list based on a table-view and it cannot be changed. The trash-bin items details can always be displayed in the right sidebar using **Properties**, **Metadata**, **Colors**, and **Map** tabs but information are taken from the files, not the database, and cannot be editable from the **Captions** tab. **Versions** and **Filters** tabs cannot be used too with the trash-bin.
 
 .. figure:: images/mainwindow_trashbin.webp
     :alt:
