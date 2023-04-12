@@ -182,7 +182,7 @@ You can also batch rename photographs using the :ref:`Batch Queue Manager <batch
 Deleting a Photograph
 ~~~~~~~~~~~~~~~~~~~~~
 
-When you delete a photograph from digiKam with :menuselection:`Item --> Move to Trash` :kbd:`Del` it will be moved from its folder on the hard disk to the internal Trash Can.
+When you delete a photograph from digiKam with :menuselection:`Item --> Move to Trash` :kbd:`Del` it will be moved from its folder on the hard disk to the internal **Trash** Can.
 
 Deleting works from anywhere in any digiKam window.
 
