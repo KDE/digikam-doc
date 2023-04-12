@@ -194,7 +194,9 @@ digiKam will ask you confirmation before to move items to trash with the dialog 
 
     The digiKam Move to Trash Dialog
 
-For each collection registered in the database, digiKam handles an internal trash-bin. Physically, the trash is located at the root album corresponding to the collection entry. It's a hidden folder :file:`.dtrash` storing deleted items in a subdirectory named :file:`files`, and information about the deletion stored in another subdirectory named :file:`info` with Json sidecars (:file:`.dtrashinfo`). Deleting a file in the collection does not remove the file from the media, but moves the file into this container. This one is accessible from the left sidebar tab **Albums** as the last entry of the tree-view corresponding to a collection and is named **Trash**.
+For each collection registered in the database, digiKam handles an internal trash-bin. Physically, the trash is located at the root album corresponding to the collection entry. It's an hidden folder :file:`.dtrash` storing deleted items in a subdirectory named :file:`files`, and information about the deletion stored in another subdirectory named :file:`info` with Json sidecars (:file:`.dtrashinfo`). Deleting a file in the collection does not remove the file from the media, but moves the file into this container, and the items are not registered anymore in the digiKam database.
+
+The trash-bin is accessible from the left sidebar tab **Albums** as the last entry of the tree-view corresponding to a collection and is named **Trash**. As the trash-view is a special container in digiKam, the layout of the trash-bin contents is a list based on a table-view and it cannot be changed.
 
 .. figure:: images/mainwindow_trashbin.webp
     :alt:
@@ -212,7 +214,7 @@ On the bottom of the trash-bin view, a series of buttons allows to restore files
     - **Restore**: to restore selection of files from the trash-bin.
     - **Delete**: to remove **permanently** the items selection or all items from the trash-bin.
 
-All these options are also available on the context menu from the list of trash-bin. All operations processed on trash-bin items will be confirmed to the user.
+All these options are also available on the context menu from the list of trash-bin. When one **Delete** option is selected, the relevant operation processed on trash-bin items will be confirmed to the user.
 
 .. figure:: images/mainwindow_trashbin_confirm.webp
     :alt:
