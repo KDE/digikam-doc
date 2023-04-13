@@ -21,7 +21,7 @@ var all_langs = {
     //"da": "‎dansk",
     "de": "Deutsch",
     "es": "Espa&ntilde;ol",
-    //"fi": "Suomeksi",
+    "fi": "Suomeksi",
     "fr": "Fran&ccedil;ais",
     //"id": "Bahasa Indonesia",
     "it": "Italiano",
