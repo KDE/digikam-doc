@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 00:41+0000\n"
+"POT-Creation-Date: 2023-04-13 00:41+0000\n"
 "PO-Revision-Date: 2023-02-20 14:32+0100\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -586,10 +586,15 @@ msgid "Deleting a Photograph"
 msgstr "Eliminare una fotografia"
 
 #: ../../main_window/image_view.rst:185
+#, fuzzy
+#| msgid ""
+#| "When you delete a photograph from digiKam with :menuselection:`Item --> "
+#| "Move to Trash` :kbd:`Del` it will be moved from its folder on the hard "
+#| "disk to the internal Trash Can."
 msgid ""
 "When you delete a photograph from digiKam with :menuselection:`Item --> Move "
 "to Trash` :kbd:`Del` it will be moved from its folder on the hard disk to "
-"the internal Trash Can."
+"the internal **Trash** Can."
 msgstr ""
 "Quando elimini una fotografia da digiKam con :menuselection:`Elemento --> "
 "Cestina` :kbd:`Canc`, questa sarà spostata dalla sua cartella sul disco "
@@ -614,16 +619,27 @@ msgid "The digiKam Move to Trash Dialog"
 msgstr "La finestra di dialogo Cestina di digiKam"
 
 #: ../../main_window/image_view.rst:197
+#, fuzzy
+#| msgid ""
+#| "For each collection registered in the database, digiKam handles an "
+#| "internal trash-bin. Physically, the trash is located at the root album "
+#| "corresponding to the collection entry. It's a hidden folder :file:`."
+#| "dtrash` storing deleted items in a subdirectory named :file:`files`, and "
+#| "information about the deletion stored in another subdirectory named :file:"
+#| "`info` with Json sidecars (:file:`.dtrashinfo`). Deleting a file in the "
+#| "collection does not remove the file from the media, but moves the file "
+#| "into this container. This one is accessible from the left sidebar tab "
+#| "**Albums** as the last entry of the tree-view corresponding to a "
+#| "collection and is named **Trash**."
 msgid ""
 "For each collection registered in the database, digiKam handles an internal "
 "trash-bin. Physically, the trash is located at the root album corresponding "
-"to the collection entry. It's a hidden folder :file:`.dtrash` storing "
+"to the collection entry. It's an hidden folder :file:`.dtrash` storing "
 "deleted items in a subdirectory named :file:`files`, and information about "
 "the deletion stored in another subdirectory named :file:`info` with Json "
 "sidecars (:file:`.dtrashinfo`). Deleting a file in the collection does not "
-"remove the file from the media, but moves the file into this container. This "
-"one is accessible from the left sidebar tab **Albums** as the last entry of "
-"the tree-view corresponding to a collection and is named **Trash**."
+"remove the file from the media, but moves the file into this container, and "
+"the items are not registered anymore in the digiKam database."
 msgstr ""
 "Per ciascuna raccolta registrata nella banca dati, digiKam gestisce un "
 "cestino interno. Il cestino è situato fisicamente nell'album radice che "
@@ -637,7 +653,20 @@ msgstr ""
 "ultima voce della vista ad albero che corrisponde a una raccolta ed è "
 "chiamato **Cestino**."
 
-#: ../../main_window/image_view.rst:203
+#: ../../main_window/image_view.rst:199
+msgid ""
+"The trash-bin is accessible from the left sidebar tab **Albums** as the last "
+"entry of the tree-view corresponding to a collection and is named **Trash**. "
+"As the trash-view is a special container in digiKam, the layout of the trash-"
+"bin contents is a list based on a table-view and it cannot be changed. The "
+"trash-bin items details can always be displayed in the right sidebar using "
+"**Properties**, **Metadata**, **Colors**, and **Map** tabs but information "
+"are taken from the files, not the database, and cannot be editable from the "
+"**Captions** tab. **Versions** and **Filters** tabs cannot be used too with "
+"the trash-bin."
+msgstr ""
+
+#: ../../main_window/image_view.rst:205
 msgid ""
 "The digiKam Internal Trash-Bin Exists for All Collections Registered in the "
 "Database"
@@ -645,7 +674,7 @@ msgstr ""
 "Il Cestino interno di digiKam esiste per tutte le raccolte registrate nella "
 "banca dati"
 
-#: ../../main_window/image_view.rst:207
+#: ../../main_window/image_view.rst:209
 msgid ""
 "digiKam does not use the Desktop recycler as operations to move files to "
 "delete from a network collection will take a while. It will be exactly the "
@@ -660,7 +689,7 @@ msgstr ""
 "dal Desktop. Lo spostamento degli elementi da eliminare in un cestino a sé "
 "stante contenuto nella raccolta risulterà universale e veloce."
 
-#: ../../main_window/image_view.rst:209
+#: ../../main_window/image_view.rst:211
 msgid ""
 "On the bottom of the trash-bin view, a series of buttons allows to restore "
 "files in collection or delete them permanently. These are:"
@@ -669,15 +698,15 @@ msgstr ""
 "che permettono di ripristinare i file nella raccolta o di eliminarli in modo "
 "definitivo. Sono:"
 
-#: ../../main_window/image_view.rst:211
+#: ../../main_window/image_view.rst:213
 msgid "**Undo**: to restore only the last entry in the trash-bin."
 msgstr "**Annulla**: ripristina solo l'ultima voce nel cestino."
 
-#: ../../main_window/image_view.rst:212
+#: ../../main_window/image_view.rst:214
 msgid "**Restore**: to restore selection of files from the trash-bin."
 msgstr "**Ripristina**: per ripristinare la selezione di file dal cestino."
 
-#: ../../main_window/image_view.rst:213
+#: ../../main_window/image_view.rst:215
 msgid ""
 "**Delete**: to remove **permanently** the items selection or all items from "
 "the trash-bin."
@@ -685,19 +714,19 @@ msgstr ""
 "**Elimina**: per rimuovere **permanentemente** tutti gli elementi, o una "
 "loro selezione, dal cestino."
 
-#: ../../main_window/image_view.rst:215
+#: ../../main_window/image_view.rst:217
 #, fuzzy
 #| msgid ""
 #| "All operations processed on trash-bin items will be confirmed to the user."
 msgid ""
 "All these options are also available on the context menu from the list of "
-"trash-bin. All operations processed on trash-bin items will be confirmed to "
-"the user."
+"trash-bin. When one **Delete** option is selected, the relevant operation "
+"processed on trash-bin items will be confirmed to the user."
 msgstr ""
 "Tutte le operazioni elaborate sugli elementi del cestino dovranno essere "
 "confermate dall'utente."
 
-#: ../../main_window/image_view.rst:221
+#: ../../main_window/image_view.rst:223
 msgid ""
 "The digiKam Internal Trash-Bin Asks to Confirm the Permanently Deletion of "
 "Items"
@@ -705,7 +734,7 @@ msgstr ""
 "Il Cestino interno di digiKam chiede conferma per la eliminazione permanente "
 "degli elementi"
 
-#: ../../main_window/image_view.rst:225
+#: ../../main_window/image_view.rst:227
 msgid ""
 "As physically the trash-bin container is located in the root album from a "
 "collection, if you backup a collection on a separated media, you will backup "
@@ -716,11 +745,11 @@ msgstr ""
 "dispositivo separato creerai in modo sicuro anche il contenitore cestino "
 "corrispondente."
 
-#: ../../main_window/image_view.rst:230
+#: ../../main_window/image_view.rst:232
 msgid "Grouping Photographs"
 msgstr "Raggruppare le fotografie"
 
-#: ../../main_window/image_view.rst:232
+#: ../../main_window/image_view.rst:234
 msgid ""
 "Grouping items is a very useful way to organize Photographs and/or videos "
 "that are related to each other and to adjust the way they are displayed in "
@@ -733,13 +762,13 @@ msgstr ""
 "menu contestuale su una selezione di elementi (più di un oggetto "
 "selezionato)."
 
-#: ../../main_window/image_view.rst:238
+#: ../../main_window/image_view.rst:240
 msgid "The digiKam Icon-View Grouped Items Options From Context Menu"
 msgstr ""
 "Le opzioni degli elementi raggruppati nella vista a icone di digiKam dal "
 "menu contestuale"
 
-#: ../../main_window/image_view.rst:240
+#: ../../main_window/image_view.rst:242
 msgid ""
 "You can put the whole selection into one group using **Group Selected Here** "
 "or you can create more than one group determined by time (seconds will be "
@@ -752,11 +781,11 @@ msgstr ""
 "in un gruppo gli elementi con lo stesso nome ma di tipo diverso. Vedi caso "
 "di seguito."
 
-#: ../../main_window/image_view.rst:246
+#: ../../main_window/image_view.rst:248
 msgid "The digiKam Icon-View Grouped Mode From Icon-View"
 msgstr "La modalità raggruppata con vista a icone dalla Vista a icone"
 
-#: ../../main_window/image_view.rst:250
+#: ../../main_window/image_view.rst:252
 msgid ""
 "If you Group files automatically (based on time or filename for example), "
 "the smaller file size from the group is preferred as the leading item. The "
@@ -768,7 +797,7 @@ msgstr ""
 "principale. L'idea è che, quando si visualizzano le anteprime, il "
 "caricamento più rapido dell'immagine consentirà un'anteprima più rapida."
 
-#: ../../main_window/image_view.rst:252
+#: ../../main_window/image_view.rst:254
 msgid ""
 "If you group files manually from icon-view, the selected item used to show "
 "context menu and group files will be used as leading item."
@@ -777,7 +806,7 @@ msgstr ""
 "utilizzato per mostrare il menu contestuale e i file del gruppo saranno "
 "usati come elemento principale."
 
-#: ../../main_window/image_view.rst:254
+#: ../../main_window/image_view.rst:256
 msgid ""
 "The next group in the menu is to control whether only the reference icon of "
 "the group (the first of the group according to the sorting order at the "
@@ -792,7 +821,7 @@ msgstr ""
 "di raggruppamento (il simbolo della cartella col  numero) sull'icona di "
 "riferimento."
 
-#: ../../main_window/image_view.rst:258
+#: ../../main_window/image_view.rst:260
 msgid ""
 "In Icon-View, you can turn on/off the frame over groupped item thumbnails "
 "with an option from :ref:`Setup/Miscs/Appearance <appearance_settings>` "
@@ -802,7 +831,7 @@ msgstr ""
 "miniature degli elementi raggruppati con un'opzione che si trova nelle "
 "impostazioni :ref:`Configurazione/Varie/Aspetto <appearance_settings>`."
 
-#: ../../main_window/image_view.rst:260
+#: ../../main_window/image_view.rst:262
 msgid ""
 "While the mouse pointer is hovering over it there will pop up an information "
 "**n grouped items. Group is closed/open.** where *n* indicates the number of "
@@ -815,7 +844,7 @@ msgstr ""
 "gruppo è chiuso. Facendo clic sull'indicatore si alterna tra **aperto** e "
 "**chiuso**."
 
-#: ../../main_window/image_view.rst:262
+#: ../../main_window/image_view.rst:264
 msgid ""
 "In the **Table Mode** of the Image Area groups are indicated the way we know "
 "from many other lists and tables: with a little triangle in front of the "
@@ -826,11 +855,11 @@ msgstr ""
 "piccolo triangolo davanti all'elemento di riferimento. Facendo clic sul "
 "triangolino si dispiegheranno o ripiegheranno gli elementi raggruppati."
 
-#: ../../main_window/image_view.rst:268
+#: ../../main_window/image_view.rst:270
 msgid "The digiKam Icon-View Grouped Mode From Table View"
 msgstr "La modalità raggruppata con vista a icone dalla Vista a tabella"
 
-#: ../../main_window/image_view.rst:270
+#: ../../main_window/image_view.rst:272
 msgid ""
 "The last group in the **Group** context menu allows to remove individual "
 "items from the group or to disband the whole group. The content of the menu "
@@ -843,7 +872,7 @@ msgstr ""
 "elementi non ancora raggruppate, su di un gruppo o su singoli elementi di un "
 "gruppo."
 
-#: ../../main_window/image_view.rst:272
+#: ../../main_window/image_view.rst:274
 msgid ""
 "What can you do with a group? In terms of functions of digiKam you can "
 "perform a lot of operations like copy, delete, move, rotate on the whole "
@@ -864,7 +893,7 @@ msgstr ""
 "più avanti in questo manuale) e anche scrivere descrizioni (vedi :ref:"
 "`Didascalie <captions_view>`). Provaci."
 
-#: ../../main_window/image_view.rst:276
+#: ../../main_window/image_view.rst:278
 msgid ""
 "Operations to perform over grouped items are managed by Setup/Miscs/Grouping "
 "settings. See :ref:`this section <grouping_settings>` from the manual for "
@@ -874,7 +903,7 @@ msgstr ""
 "impostazioni Configurazione/Varie/Raggruppamento. Per dettagli, vedi :ref:"
 "`questa sezione <grouping_settings>` del manuale."
 
-#: ../../main_window/image_view.rst:278
+#: ../../main_window/image_view.rst:280
 msgid ""
 "In terms of use cases you can for instance group videos together with the ."
 "jpg - images related to them which most cameras provide or RAW images with "
@@ -907,7 +936,7 @@ msgstr ""
 "gruppo lo saranno nei loro album di appartenenza solo se il gruppo è aperto. "
 "Questo può generare confusione, usalo con attenzione."
 
-#: ../../main_window/image_view.rst:282
+#: ../../main_window/image_view.rst:284
 msgid ""
 "Everything described in this Grouping section has nothing to do with **Group "
 "Images** in the **View** menu. That function doesn't form permanent groups "

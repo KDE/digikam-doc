@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-12 00:41+0000\n"
+"POT-Creation-Date: 2023-04-13 00:41+0000\n"
 "PO-Revision-Date: 2023-01-01 12:32+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -413,7 +413,7 @@ msgstr ""
 msgid ""
 "When you delete a photograph from digiKam with :menuselection:`Item --> Move "
 "to Trash` :kbd:`Del` it will be moved from its folder on the hard disk to "
-"the internal Trash Can."
+"the internal **Trash** Can."
 msgstr ""
 
 #: ../../main_window/image_view.rst:187
@@ -434,22 +434,34 @@ msgstr ""
 msgid ""
 "For each collection registered in the database, digiKam handles an internal "
 "trash-bin. Physically, the trash is located at the root album corresponding "
-"to the collection entry. It's a hidden folder :file:`.dtrash` storing "
+"to the collection entry. It's an hidden folder :file:`.dtrash` storing "
 "deleted items in a subdirectory named :file:`files`, and information about "
 "the deletion stored in another subdirectory named :file:`info` with Json "
 "sidecars (:file:`.dtrashinfo`). Deleting a file in the collection does not "
-"remove the file from the media, but moves the file into this container. This "
-"one is accessible from the left sidebar tab **Albums** as the last entry of "
-"the tree-view corresponding to a collection and is named **Trash**."
+"remove the file from the media, but moves the file into this container, and "
+"the items are not registered anymore in the digiKam database."
 msgstr ""
 
-#: ../../main_window/image_view.rst:203
+#: ../../main_window/image_view.rst:199
+msgid ""
+"The trash-bin is accessible from the left sidebar tab **Albums** as the last "
+"entry of the tree-view corresponding to a collection and is named **Trash**. "
+"As the trash-view is a special container in digiKam, the layout of the trash-"
+"bin contents is a list based on a table-view and it cannot be changed. The "
+"trash-bin items details can always be displayed in the right sidebar using "
+"**Properties**, **Metadata**, **Colors**, and **Map** tabs but information "
+"are taken from the files, not the database, and cannot be editable from the "
+"**Captions** tab. **Versions** and **Filters** tabs cannot be used too with "
+"the trash-bin."
+msgstr ""
+
+#: ../../main_window/image_view.rst:205
 msgid ""
 "The digiKam Internal Trash-Bin Exists for All Collections Registered in the "
 "Database"
 msgstr ""
 
-#: ../../main_window/image_view.rst:207
+#: ../../main_window/image_view.rst:209
 msgid ""
 "digiKam does not use the Desktop recycler as operations to move files to "
 "delete from a network collection will take a while. It will be exactly the "
@@ -458,51 +470,51 @@ msgid ""
 "contained trash-bin from the collection will be universal and fast."
 msgstr ""
 
-#: ../../main_window/image_view.rst:209
+#: ../../main_window/image_view.rst:211
 msgid ""
 "On the bottom of the trash-bin view, a series of buttons allows to restore "
 "files in collection or delete them permanently. These are:"
 msgstr ""
 
-#: ../../main_window/image_view.rst:211
+#: ../../main_window/image_view.rst:213
 msgid "**Undo**: to restore only the last entry in the trash-bin."
 msgstr ""
 
-#: ../../main_window/image_view.rst:212
+#: ../../main_window/image_view.rst:214
 msgid "**Restore**: to restore selection of files from the trash-bin."
 msgstr ""
 
-#: ../../main_window/image_view.rst:213
+#: ../../main_window/image_view.rst:215
 msgid ""
 "**Delete**: to remove **permanently** the items selection or all items from "
 "the trash-bin."
 msgstr ""
 
-#: ../../main_window/image_view.rst:215
+#: ../../main_window/image_view.rst:217
 msgid ""
 "All these options are also available on the context menu from the list of "
-"trash-bin. All operations processed on trash-bin items will be confirmed to "
-"the user."
+"trash-bin. When one **Delete** option is selected, the relevant operation "
+"processed on trash-bin items will be confirmed to the user."
 msgstr ""
 
-#: ../../main_window/image_view.rst:221
+#: ../../main_window/image_view.rst:223
 msgid ""
 "The digiKam Internal Trash-Bin Asks to Confirm the Permanently Deletion of "
 "Items"
 msgstr ""
 
-#: ../../main_window/image_view.rst:225
+#: ../../main_window/image_view.rst:227
 msgid ""
 "As physically the trash-bin container is located in the root album from a "
 "collection, if you backup a collection on a separated media, you will backup "
 "also the corresponding trash-bin container safety."
 msgstr ""
 
-#: ../../main_window/image_view.rst:230
+#: ../../main_window/image_view.rst:232
 msgid "Grouping Photographs"
 msgstr ""
 
-#: ../../main_window/image_view.rst:232
+#: ../../main_window/image_view.rst:234
 msgid ""
 "Grouping items is a very useful way to organize Photographs and/or videos "
 "that are related to each other and to adjust the way they are displayed in "
@@ -510,11 +522,11 @@ msgid ""
 "selection of items (more than one item selected)."
 msgstr ""
 
-#: ../../main_window/image_view.rst:238
+#: ../../main_window/image_view.rst:240
 msgid "The digiKam Icon-View Grouped Items Options From Context Menu"
 msgstr ""
 
-#: ../../main_window/image_view.rst:240
+#: ../../main_window/image_view.rst:242
 msgid ""
 "You can put the whole selection into one group using **Group Selected Here** "
 "or you can create more than one group determined by time (seconds will be "
@@ -522,11 +534,11 @@ msgid ""
 "name but different file types into one group. Use case see further below."
 msgstr ""
 
-#: ../../main_window/image_view.rst:246
+#: ../../main_window/image_view.rst:248
 msgid "The digiKam Icon-View Grouped Mode From Icon-View"
 msgstr ""
 
-#: ../../main_window/image_view.rst:250
+#: ../../main_window/image_view.rst:252
 msgid ""
 "If you Group files automatically (based on time or filename for example), "
 "the smaller file size from the group is preferred as the leading item. The "
@@ -534,13 +546,13 @@ msgid ""
 "quick preview."
 msgstr ""
 
-#: ../../main_window/image_view.rst:252
+#: ../../main_window/image_view.rst:254
 msgid ""
 "If you group files manually from icon-view, the selected item used to show "
 "context menu and group files will be used as leading item."
 msgstr ""
 
-#: ../../main_window/image_view.rst:254
+#: ../../main_window/image_view.rst:256
 msgid ""
 "The next group in the menu is to control whether only the reference icon of "
 "the group (the first of the group according to the sorting order at the "
@@ -549,14 +561,14 @@ msgid ""
 "number) on the reference icon."
 msgstr ""
 
-#: ../../main_window/image_view.rst:258
+#: ../../main_window/image_view.rst:260
 msgid ""
 "In Icon-View, you can turn on/off the frame over groupped item thumbnails "
 "with an option from :ref:`Setup/Miscs/Appearance <appearance_settings>` "
 "settings."
 msgstr ""
 
-#: ../../main_window/image_view.rst:260
+#: ../../main_window/image_view.rst:262
 msgid ""
 "While the mouse pointer is hovering over it there will pop up an information "
 "**n grouped items. Group is closed/open.** where *n* indicates the number of "
@@ -564,18 +576,18 @@ msgid ""
 "the indicator toggles between **open** and **closed**."
 msgstr ""
 
-#: ../../main_window/image_view.rst:262
+#: ../../main_window/image_view.rst:264
 msgid ""
 "In the **Table Mode** of the Image Area groups are indicated the way we know "
 "from many other lists and tables: with a little triangle in front of the "
 "reference item. Clicking on this triangle will fold out/in the grouped items."
 msgstr ""
 
-#: ../../main_window/image_view.rst:268
+#: ../../main_window/image_view.rst:270
 msgid "The digiKam Icon-View Grouped Mode From Table View"
 msgstr ""
 
-#: ../../main_window/image_view.rst:270
+#: ../../main_window/image_view.rst:272
 msgid ""
 "The last group in the **Group** context menu allows to remove individual "
 "items from the group or to disband the whole group. The content of the menu "
@@ -583,7 +595,7 @@ msgid ""
 "grouped items, on a group or on single items of a group."
 msgstr ""
 
-#: ../../main_window/image_view.rst:272
+#: ../../main_window/image_view.rst:274
 msgid ""
 "What can you do with a group? In terms of functions of digiKam you can "
 "perform a lot of operations like copy, delete, move, rotate on the whole "
@@ -595,14 +607,14 @@ msgid ""
 "descriptions (see :ref:`Captions <captions_view>`). Give it a try."
 msgstr ""
 
-#: ../../main_window/image_view.rst:276
+#: ../../main_window/image_view.rst:278
 msgid ""
 "Operations to perform over grouped items are managed by Setup/Miscs/Grouping "
 "settings. See :ref:`this section <grouping_settings>` from the manual for "
 "details."
 msgstr ""
 
-#: ../../main_window/image_view.rst:278
+#: ../../main_window/image_view.rst:280
 msgid ""
 "In terms of use cases you can for instance group videos together with the ."
 "jpg - images related to them which most cameras provide or RAW images with "
@@ -619,7 +631,7 @@ msgid ""
 "own albums only if the group is open. Can be confusing, use with care."
 msgstr ""
 
-#: ../../main_window/image_view.rst:282
+#: ../../main_window/image_view.rst:284
 msgid ""
 "Everything described in this Grouping section has nothing to do with **Group "
 "Images** in the **View** menu. That function doesn't form permanent groups "
