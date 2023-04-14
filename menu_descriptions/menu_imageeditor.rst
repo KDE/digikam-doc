@@ -93,6 +93,14 @@ The Edit Menu
 
     Redo the last action applied to the current image using history.
 
+:menuselection:`Edit --> Select All` :kbd:`Ctrl+A`
+
+    Select whole image data from the canvas.
+
+:menuselection:`Edit --> Select None` :kbd:`Ctrl+Shift+A`
+
+    Canacel selection of image data from the canvas.
+
 .. _menu_editorcolor:
 
 The Color Menu
@@ -194,6 +202,10 @@ The Enhance Menu
 :menuselection:`Enhance --> Healing Clone`
 
     Image Editor tool to :ref:`fix artifacts by cloning region <enhance_clone>` in the current image.
+
+:menuselection:`Enhance --> G'MIC-Qt`
+
+    Image Editor tool to :ref:`select and apply a filter from the powerful G'MIC-Qt tool <enhance_gmicqt>` on the current image.
 
 .. _menu_editortransform:
 
