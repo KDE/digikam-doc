@@ -44,42 +44,42 @@ The File Menu
 
     Delete permanently current file loaded in the canvas.
 
-For the rest of menu entries, see description from :ref:`Main Window <menu_editorfile>` section. Versioning options do not exit here.
+For the rest of menu entries, see description from :ref:`Image Editor <menu_editorfile>` section. Versioning options do not exit here.
 
 The Edit Menu
 -------------
 
-See description from :ref:`Main Window <menu_editoredit>` section.
+See description from :ref:`Image Editor <menu_editoredit>` section.
 
 The Color Menu
 --------------
 
-See description from :ref:`Main Window <menu_editorcolor>` section.
+See description from :ref:`Image Editor <menu_editorcolor>` section.
 
 The Enhance Menu
 ----------------
 
-See description from :ref:`Main Window <menu_editorenhance>` section.
+See description from :ref:`Image Editor <menu_editorenhance>` section.
 
 The Transform Menu
 ------------------
 
-See description from :ref:`Main Window <menu_editortransform>` section.
+See description from :ref:`Image Editor <menu_editortransform>` section.
 
 The Decorate Menu
 -----------------
 
-See description from :ref:`Main Window <menu_editordecorate>` section.
+See description from :ref:`Image Editor <menu_editordecorate>` section.
 
 The Effects Menu
 ----------------
 
-See description from :ref:`Main Window <menu_editoreffects>` section.
+See description from :ref:`Image Editor <menu_editoreffects>` section.
 
 The View Menu
 -------------
 
-See description from :ref:`Main Window <menu_editorview>` section.
+See description from :ref:`Image Editor <menu_editorview>` section.
 
 The Tools Menu
 --------------
