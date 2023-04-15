@@ -99,7 +99,7 @@ The Edit Menu
 
 :menuselection:`Edit --> Select None` :kbd:`Ctrl+Shift+A`
 
-    Canacel selection of image data from the canvas.
+    Cancel selection of image data from the canvas.
 
 .. _menu_editorcolor:
 
