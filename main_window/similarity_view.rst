@@ -37,6 +37,24 @@ Before you can have digiKam finding duplicates the signatures (or fingerprints) 
 
 Once the fingerprints are calculated you can use **Find Duplicates**, but it will take a long time too as it has to compare every image with any other image. So the way to go in both cases is to confine your search to certain **Albums** and/or **Tags**. **Whole albums collection** and **Whole tags collection** check-box perform global searches in the database. Else uses the drop-down menu like where you will be asked which **Albums** and/or **Tags** to search.
 
+**Reference Image Selection Method** setting allows to to select the method how the reference image is determined. This is important if you are using the **Remove Duplicates** function to steer which image shall be deleted. One usecase is, if you are copying newly imported files into its own folder in the collection (unsorted photos), then you run the duplicates and delete all photos which are already sorted into the collection. After that you just have to sort in the new photos.
+
+    - **Older or Larger** is the method used prior 8.1.0. The reference image is the one of the duplicates, which is older or larger than the others
+    - **Prefer selected folder as reference** means that in the newly appeared album selection, albums can be selected and if a duplicate occurs it uses the image found in one of those folders as reference
+    - **Prefer other than selected folder as reference** means that in the newly appeared album selection, albums can be selected and if a duplicate occurs it uses the image **not** found in one of those folders as reference
+    - **Prefer Newer Creation Date** means that the duplicates which is newer in the sense of the creation date is used as reference
+    - **Prefer Newer Modification Date**  means that the duplicates which is newer in the sense of the modification date is used as reference
+
+.. figure:: images/mainwindow_search_duplicates_iconview_preferOther.webp
+    :alt:
+    :align: center
+
+    Find Duplicates Tool Searching in Whole Albums Collection and prefer file not in the potentialDuplicates folder. The results are displayed in Icon-View
+
+**LIMITATION:** Currently when selecting an album with subalbums only the album, but not the subalbums are searched through, so all subfolders have to be selected as well
+
+**LIMITATION:** The folders selected as reference must be also in the search path otherwise the duplicates get not
+
 **Restrict to** setting allows apply criteria over the duplicate search, as to limit search to the album of reference image, to exclude the album of reference image of the search, or to not include restriction.
 
 With the **Similarity Range** you can narrow down or enlarge the search result. Note that by lowering the upper threshold a little bit below 100 % you can keep things like exact copies, images from series shots, etc. out of the search result if you want.
@@ -48,12 +66,6 @@ With the **Similarity Range** you can narrow down or enlarge the search result. 
     - **Albums but not tags** means that images must be in the selected albums but not tags.
     - **Tags but not albums** means that images must be in the selected tags but not albums.
     - **Only selected tab** means that only the selected tab is used.
-
-.. figure:: images/mainwindow_search_duplicates_iconview.webp
-    :alt:
-    :align: center
-
-    Find Duplicates Tool Searching in Whole Albums Collection and Displaying Results in Icon-View
 
 An overview of the result will be given in the duplicate list-view from the left side. The first column shows the **Reference images** (Ref.) as thumbnail for each single result. The **Items** column tells you how many images belong to each result including the **Reference image**. The last column shows the **Average similarity** which gives you an idea about how similar the images of every result might be. The reference image with its 100 % is not included in the average. Note that the results can be sorted by clicking on one of the column headers. **Reference dates** and **Reference albums** columns are the properties of the **Reference images**.
 
