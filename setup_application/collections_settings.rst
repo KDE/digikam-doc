@@ -69,9 +69,9 @@ The configuration can be set following steps listed below:
 
     - On the **Linux** client, user adds the first entry to the network collection: :file:`/mnt/nas`
 
-    - on the **macOS** client, with the "+" icon user now adds its base path to the collection: :file:`/Volumes/data/NAS`
+    - On the **macOS** client, with the "+" icon user now adds its base path to the collection: :file:`/Volumes/data/NAS`
 
-    - on the **Windows** client, user adds the shared path: :file:`X:\\NAS-digiKam`
+    - On the **Windows** client, user adds the shared path: :file:`X:\\NAS-digiKam`
 
 Later, other extra digiKam clients would also be conceivable if the NAS has a different mount point or used by `UNC path <https://en.wikipedia.org/wiki/Path_(computing)>`_. On each digiKam clients it's important that all base paths then refer to the same network shared collection in the setup dialog.
 
