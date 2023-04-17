@@ -51,10 +51,6 @@ Once the fingerprints are calculated you can use **Find Duplicates**, but it wil
 
     Find Duplicates Tool Searching in Whole Albums Collection and prefer file not in the potentialDuplicates folder. The results are displayed in Icon-View
 
-**LIMITATION:** Currently when selecting an album with subalbums only the album, but not the subalbums are searched through, so all subfolders have to be selected as well
-
-**LIMITATION:** The folders selected as reference must be also in the search path otherwise the duplicates get not
-
 **Restrict to** setting allows apply criteria over the duplicate search, as to limit search to the album of reference image, to exclude the album of reference image of the search, or to not include restriction.
 
 With the **Similarity Range** you can narrow down or enlarge the search result. Note that by lowering the upper threshold a little bit below 100 % you can keep things like exact copies, images from series shots, etc. out of the search result if you want.
