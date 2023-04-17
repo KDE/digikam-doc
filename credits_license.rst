@@ -45,6 +45,10 @@ Documentation authors
 
     `Antoni Bella Pérez <https://invent.kde.org/bellaperez>`_
 
+- 2023
+
+     `Martin Marmsoler <https://invent.kde.org/marmsoler>`_
+
 - 2022
 
     `Mike Morrison <https://invent.kde.org/mikemorr>`_
