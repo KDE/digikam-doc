@@ -47,7 +47,11 @@ Documentation authors
 
 - 2023
 
-     `Martin Marmsoler <https://invent.kde.org/marmsoler>`_
+    `Martin Marmsoler <https://invent.kde.org/marmsoler>`_
+
+    `Geoff King <https://invent.kde.org/gsking>`_
+
+    `Olivier Croquette <https://invent.kde.org/ocroquette>`_
 
 - 2022
 
