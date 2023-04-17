@@ -163,7 +163,7 @@ The **Metadata** dialog allows to select files metadata information taken from *
 
     The Advanced Rename Metadata Dialog to Setup Modifiers in Renaming Pattern
 
-In addition these options can be customized further with the help of a number of **Modifiers**. A list of all **Options** and **Modifiers** together with a short explanations will open when clicking the info button.
+In addition these options can be customized further with the help of a number of **Modifiers**. To apply a modifier, append it to the option, for instance ``[file]{upper}``. A list of all **Options** and **Modifiers** together with a short explanations will open when clicking the info button.
 
 .. figure:: images/mainwindow_advanced_rename_help.webp
     :alt:
