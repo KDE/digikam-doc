@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-03 00:52+0000\n"
-"PO-Revision-Date: 2023-04-04 16:02+0100\n"
+"POT-Creation-Date: 2023-04-18 00:39+0000\n"
+"PO-Revision-Date: 2023-04-18 12:01+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-POFile-SpellExtra: digiKam Haar rabiscos Rabiscos Wavelets menuselection\n"
+"X-POFile-SpellExtra: recém potentialDuplicates\n"
 
 #: ../../main_window/similarity_view.rst:1
 msgid "digiKam Main Window Similarity View"
@@ -129,6 +130,55 @@ msgstr ""
 
 #: ../../main_window/similarity_view.rst:40
 msgid ""
+"**Reference Image Selection Method** setting allows to to select the method "
+"how the reference image is determined. This is important if you are using "
+"the **Remove Duplicates** function to steer which image shall be deleted. "
+"One usecase is, if you are copying newly imported files into its own folder "
+"in the collection (unsorted photos), then you run the duplicates and delete "
+"all photos which are already sorted into the collection. After that you just "
+"have to sort in the new photos."
+msgstr "O **Método de Selecção da Imagem de Referência** permite seleccionar o método com que será determinada a imagem de referência. Isto é importante se estiver a usar a função **Remover os Duplicados** para definir qual a imagem a remover. Um caso de uso de exemplo será se estiver a copiar ficheiros recém importados para a sua própria pasta na colecção (fotos não organizadas), depois executa a pesquisa de duplicados e apaga todas as fotos que já estejam ordenadas na colecção. Depois disso, terá apenas de organizar as novas fotos."
+
+#: ../../main_window/similarity_view.rst:42
+msgid ""
+"**Older or Larger** is the method used prior 8.1.0. The reference image is "
+"the one of the duplicates, which is older or larger than the others"
+msgstr "O **Mais Antigas ou Maiores** é o método usado antes da versão 8.1.0. A imagem de referência é o duplicado que for mais antigo ou maior que os outros"
+
+#: ../../main_window/similarity_view.rst:43
+msgid ""
+"**Prefer selected folder as reference** means that in the newly appeared "
+"album selection, albums can be selected and if a duplicate occurs it uses "
+"the image found in one of those folders as reference"
+msgstr "A opção **Preferir a pasta seleccionada como referência** significa que na selecção do álbum recém-formado, os álbuns podem ser seleccionados e, caso ocorra um duplicado, usa a imagem encontrada numa destas pastas como referência"
+
+#: ../../main_window/similarity_view.rst:44
+msgid ""
+"**Prefer other than selected folder as reference** means that in the newly "
+"appeared album selection, albums can be selected and if a duplicate occurs "
+"it uses the image **not** found in one of those folders as reference"
+msgstr "A opção **Preferir outras pastas que não a seleccionada como referência** significa que na selecção do álbum recém-formado, os álbuns podem ser seleccionados e, caso ocorra um duplicado, usa a imagem que **não foi** encontrada numa destas pastas como referência"
+
+#: ../../main_window/similarity_view.rst:45
+msgid ""
+"**Prefer Newer Creation Date** means that the duplicates which is newer in "
+"the sense of the creation date is used as reference"
+msgstr "**Preferir a Data de Criação Mais Recente** significa que o duplicado que for mais recente, a nível da data de criação, será a imagem usada como referência"
+
+#: ../../main_window/similarity_view.rst:46
+msgid ""
+"**Prefer Newer Modification Date**  means that the duplicates which is newer "
+"in the sense of the modification date is used as reference"
+msgstr "**Preferir a Data de Modificação Mais Recente** significa que o duplicado que for mais recente, a nível da data de modificação, será a imagem usada como referência"
+
+#: ../../main_window/similarity_view.rst:52
+msgid ""
+"Find Duplicates Tool Searching in Whole Albums Collection and prefer file "
+"not in the potentialDuplicates folder. The results are displayed in Icon-View"
+msgstr "A Ferramenta de Pesquisa de Duplicados a procurar na colecção inteira de álbuns e a preferir os ficheiros fora da pasta 'potentialDuplicates'. Os resultados serão apresentados na área de ícones"
+
+#: ../../main_window/similarity_view.rst:54
+msgid ""
 "**Restrict to** setting allows apply criteria over the duplicate search, as "
 "to limit search to the album of reference image, to exclude the album of "
 "reference image of the search, or to not include restriction."
@@ -138,7 +188,7 @@ msgstr ""
 "exclusão do álbum da imagem de referência ou não incluir qualquer restrição "
 "de todo."
 
-#: ../../main_window/similarity_view.rst:42
+#: ../../main_window/similarity_view.rst:56
 msgid ""
 "With the **Similarity Range** you can narrow down or enlarge the search "
 "result. Note that by lowering the upper threshold a little bit below 100 % "
@@ -150,7 +200,7 @@ msgstr ""
 "100 %, poderá manter algumas coisas, como as cópias exactas, as imagens de "
 "fotografias em série, etc., fora dos resultados da pesquisa se o desejar."
 
-#: ../../main_window/similarity_view.rst:44
+#: ../../main_window/similarity_view.rst:58
 msgid ""
 "**Restriction** setting is a feature to decide about the relation of the "
 "selected **Albums** and **Tags** while to perform searches. Possible options "
@@ -160,21 +210,21 @@ msgstr ""
 "relação dos **Álbuns** e **Marcas** seleccionados para efectuar as "
 "pesquisas. As opções possíveis encontram-se em baixo:"
 
-#: ../../main_window/similarity_view.rst:46
+#: ../../main_window/similarity_view.rst:60
 msgid ""
 "**One of** means that the images are either in the selected albums or tags."
 msgstr ""
 "**Uma de** significa que as imagens se encontram nos álbuns ou nas marcas "
 "seleccionados."
 
-#: ../../main_window/similarity_view.rst:47
+#: ../../main_window/similarity_view.rst:61
 msgid ""
 "**Both** means that the images are both in the selected albums and tags."
 msgstr ""
 "**Ambos** significa que as imagens se encontram tanto nos álbuns como nas "
 "marcas seleccionados."
 
-#: ../../main_window/similarity_view.rst:48
+#: ../../main_window/similarity_view.rst:62
 msgid ""
 "**Albums but not tags** means that images must be in the selected albums but "
 "not tags."
@@ -182,7 +232,7 @@ msgstr ""
 "**Álbuns mas não marcas** significa que as imagens deverão estar nos álbuns "
 "seleccionados, mas não nas marcas."
 
-#: ../../main_window/similarity_view.rst:49
+#: ../../main_window/similarity_view.rst:63
 msgid ""
 "**Tags but not albums** means that images must be in the selected tags but "
 "not albums."
@@ -190,21 +240,13 @@ msgstr ""
 "**Marcas mas não álbuns** significa que as imagens deverão estar nas marcas "
 "seleccionadas, mas não nos álbuns."
 
-#: ../../main_window/similarity_view.rst:50
+#: ../../main_window/similarity_view.rst:64
 msgid "**Only selected tab** means that only the selected tab is used."
 msgstr ""
 "**Apenas a página seleccionada** significa que só é usada a página "
 "seleccionada."
 
-#: ../../main_window/similarity_view.rst:56
-msgid ""
-"Find Duplicates Tool Searching in Whole Albums Collection and Displaying "
-"Results in Icon-View"
-msgstr ""
-"A Ferramenta de Pesquisa de Duplicados a Procurar na Colecção Inteira de "
-"Álbuns e a Mostrar os Resultados na Área de Ícones"
-
-#: ../../main_window/similarity_view.rst:58
+#: ../../main_window/similarity_view.rst:66
 msgid ""
 "An overview of the result will be given in the duplicate list-view from the "
 "left side. The first column shows the **Reference images** (Ref.) as "
@@ -226,7 +268,7 @@ msgstr ""
 "carregar num dos cabeçalhos das colunas. As **Datas de referência** e "
 "**Álbuns de referência** são as propriedades das **Imagens de referência**."
 
-#: ../../main_window/similarity_view.rst:64
+#: ../../main_window/similarity_view.rst:72
 msgid ""
 "Find Duplicates Tool Searching in Whole Tags Collection and Displaying "
 "Results in Table-View"
@@ -234,7 +276,7 @@ msgstr ""
 "A Ferramenta de Pesquisa de Duplicados a Procurar na Colecção Inteira de "
 "Álbuns e a Mostrar os Resultados na Tabela"
 
-#: ../../main_window/similarity_view.rst:66
+#: ../../main_window/similarity_view.rst:74
 msgid ""
 "Individual similarity values for each item can be obtained in the **Table-"
 "View** mode (**Table** button on the Main Toolbar). Click with the right "
@@ -253,7 +295,7 @@ msgstr ""
 "referência. Se carregar repetidamente no cabeçalho repetidamente, irá "
 "alternar entre a ordem ascendente e descendente."
 
-#: ../../main_window/similarity_view.rst:68
+#: ../../main_window/similarity_view.rst:76
 msgid ""
 "**Remove Duplicates** allows to delete all duplicate images of the current "
 "selected item from **Duplicates** list."
@@ -261,7 +303,7 @@ msgstr ""
 "A **Remoção de Duplicados** permite remover todas as imagens duplicadas do "
 "item seleccionado na lista de **Duplicados**."
 
-#: ../../main_window/similarity_view.rst:70
+#: ../../main_window/similarity_view.rst:78
 msgid ""
 "After performing **Searches** you might want to save the results. In the "
 "field below you can enter a name for the search, and press the **Save** "
@@ -280,11 +322,11 @@ msgstr ""
 "uma dada pesquisa em particular. Para **Repor** um resultado, basta carregar "
 "num item da lista."
 
-#: ../../main_window/similarity_view.rst:75
+#: ../../main_window/similarity_view.rst:83
 msgid "Find Similar Image"
 msgstr "Procurar uma Imagem Semelhante"
 
-#: ../../main_window/similarity_view.rst:77
+#: ../../main_window/similarity_view.rst:85
 msgid ""
 "This tool provides a drag and drop zone on the top-left where you can place "
 "any image to find a similar one. You can drag an image from anywhere, even "
@@ -304,7 +346,7 @@ msgstr ""
 "opção **Procurar um Semelhante...* do menu de contexto de uma miniatura em "
 "qualquer outra área de ícones."
 
-#: ../../main_window/similarity_view.rst:83
+#: ../../main_window/similarity_view.rst:91
 msgid ""
 "Screencast of Drag and Drop item from Album Icon-View to Find Similar using "
 "Left Sidebar"
@@ -312,7 +354,7 @@ msgstr ""
 "Captura do ecrã do arrastamento de um item da área de ícones do álbum para a "
 "Pesquisa de Semelhantes com a Barra Lateral Esquerda"
 
-#: ../../main_window/similarity_view.rst:85
+#: ../../main_window/similarity_view.rst:93
 msgid ""
 "Like with **Find Duplicates**, you can restrict the search to a set of "
 "**Albums** or the whole collection. You can narrow down or enlarge the "
@@ -322,8 +364,8 @@ msgstr ""
 "conjunto de **Álbuns** ou à colecção inteira. Poderá restringir ou alagar a "
 "selecção resultante com a **Gama de semelhanças** também aqui."
 
-#: ../../main_window/similarity_view.rst:87
-#: ../../main_window/similarity_view.rst:104
+#: ../../main_window/similarity_view.rst:95
+#: ../../main_window/similarity_view.rst:112
 msgid ""
 "The **Search in**, **Save**, and **Restore** previous searches features "
 "works as **Find Duplicates** tool."
@@ -331,15 +373,15 @@ msgstr ""
 "As opções **Procurar em**, **Gravar** e **Repor** de pesquisas anteriores "
 "funciona como na ferramenta de **Pesquisa de Duplicados**."
 
-#: ../../main_window/similarity_view.rst:93
+#: ../../main_window/similarity_view.rst:101
 msgid "Searching Similar Items For a Single Image"
 msgstr "Pesquisa de Itens Semelhantes a uma Única Imagem"
 
-#: ../../main_window/similarity_view.rst:98
+#: ../../main_window/similarity_view.rst:106
 msgid "Find by Sketch"
 msgstr "Procurar por Rabiscos"
 
-#: ../../main_window/similarity_view.rst:100
+#: ../../main_window/similarity_view.rst:108
 msgid ""
 "This tool is a free hand color sketching editor. You can draw a quick sketch "
 "and digiKam will find corresponding images. You will find the same means to "
@@ -349,7 +391,7 @@ msgstr ""
 "rabisco rápido e o digiKam irá tentar encontrar imagens correspondentes. Irá "
 "obter os mesmos meios para gravar a sua pesquisa na área **Imagem**."
 
-#: ../../main_window/similarity_view.rst:102
+#: ../../main_window/similarity_view.rst:110
 msgid ""
 "On the left hand side of digiKam, navigate to the tab **Sketch**. This view "
 "has a drawing area plus some settings below to set pencil and history tools. "
@@ -368,6 +410,6 @@ msgstr ""
 "área, irá ver que as imagens relacionadas com a pesquisa difusa aparecem no "
 "lado direito."
 
-#: ../../main_window/similarity_view.rst:110
+#: ../../main_window/similarity_view.rst:118
 msgid "Searching Items by Drawing a Sketch"
 msgstr "Pesquisa de Itens ao Desenhar um Rabisco ou Esboço"
