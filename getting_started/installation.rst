@@ -48,7 +48,7 @@ Minimum System Requirements
 
 .. tip::
 
-    If your screens provides HDPI supports, check options :ref:`Use high DPI scaling from the screen factor <system_settings>` and :ref:`Application font" <appearance_settings>`.
+    If your screen provides HDPI support, check options :ref:`Use high DPI scaling from the screen factor <system_settings>` and :ref:`Application font <appearance_settings>`.
 
 - **Storage**: SSDs will be the best choice for robustness and speed to host database and collection.
 
