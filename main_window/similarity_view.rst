@@ -49,7 +49,7 @@ Once the fingerprints are calculated you can use **Find Duplicates**, but it wil
     :alt:
     :align: center
 
-    Find Duplicates Tool Searching in Whole Albums Collection and prefer file not in the potentia lDuplicates folder. The results are displayed in Icon-View
+    Find Duplicates Tool Searching in Whole Albums Collection and prefer file not in the potential Duplicates folder. The results are displayed in Icon-View
 
 **Restrict to** setting allows apply criteria over the duplicate search, as to limit search to the album of reference image, to exclude the album of reference image of the search, or to not include restriction.
 
