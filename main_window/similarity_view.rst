@@ -45,11 +45,11 @@ Once the fingerprints are calculated you can use **Find Duplicates**, but it wil
     - **Prefer Newer Creation Date** means that the duplicates which is newer in the sense of the creation date is used as reference
     - **Prefer Newer Modification Date**  means that the duplicates which is newer in the sense of the modification date is used as reference
 
-.. figure:: images/mainwindow_search_duplicates_iconview_preferOther.webp
+.. figure:: images/mainwindow_search_duplicates_iconview_prefer_other.webp
     :alt:
     :align: center
 
-    Find Duplicates Tool Searching in Whole Albums Collection and prefer file not in the potentialDuplicates folder. The results are displayed in Icon-View
+    Find Duplicates Tool Searching in Whole Albums Collection and prefer file not in the potentia lDuplicates folder. The results are displayed in Icon-View
 
 **Restrict to** setting allows apply criteria over the duplicate search, as to limit search to the album of reference image, to exclude the album of reference image of the search, or to not include restriction.
 
@@ -75,7 +75,7 @@ Individual similarity values for each item can be obtained in the **Table-View**
 
 **Remove Duplicates** allows to delete all duplicate images of the current selected item from **Duplicates** list.
 
- After performing **Searches** you might want to save the results. In the field below you can enter a name for the search, and press the **Save** button. In the **Searches** list below you will find your saved searches. Clicking on the title bar of that list toggles the sorting order between ascending and descending. At the bottom you will find an adaptive search field which can help you to find a particular search. To **Restore** a result, just click on one item from the list.
+After performing **Searches** you might want to save the results. In the field below you can enter a name for the search, and press the **Save** button. In the **Searches** list below you will find your saved searches. Clicking on the title bar of that list toggles the sorting order between ascending and descending. At the bottom you will find an adaptive search field which can help you to find a particular search. To **Restore** a result, just click on one item from the list.
 
 .. _similarity_image:
 
