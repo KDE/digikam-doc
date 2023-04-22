@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-18 00:39+0000\n"
-"PO-Revision-Date: 2023-04-19 10:53+0100\n"
+"PO-Revision-Date: 2023-04-21 15:05+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -16,7 +16,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-POFile-SpellExtra: digiKam Destrutivos RAW\n"
+"X-POFile-SpellExtra: digiKam Destrutivos RAW raw kbd PGF Deflate HEIF WEBP\n"
+"X-POFile-SpellExtra: AVIF LibRaw NEF Nikon RawTherapee UFRaw DarkTable\n"
+"X-POFile-SpellExtra: Darktable CFA ultra VNG AHD CCD Fuji Bi AAHD\n"
+"X-POFile-SpellExtra: Ameliored Adaptive Homogeneity Directed Dirigada\n"
+"X-POFile-SpellExtra: Variable Number of Gradients Libraw PPG Patterned\n"
+"X-POFile-SpellExtra: Grouping DCB DHT CIE Lab\n"
 
 #: ../../setup_application/editor_settings.rst:1
 msgid "digiKam Image Editor Settings"
@@ -27,7 +32,7 @@ msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, setup, configure, image, editor, corrections, raw, workflow, "
 "demosaicing, versioning, save, white, balance"
-msgstr ""
+msgstr "digiKam, documentação, manual do utilizador, gestão de fotografias, código aberto, livre, aprender, fácil, configurar, configuração, imagem, editor, correcções, raw, fluxograma, remoção de mosaico, versões, gravar, branco, balanceamento"
 
 #: ../../setup_application/editor_settings.rst:14
 msgid "Image Editor Settings"
@@ -73,14 +78,14 @@ msgid ""
 "exposure as pure color if you want only pure black (RGB 0,0,0) indicated as "
 "under-exposure and only pure white (RGB 8 bit 255,255,255 respectively RGB "
 "16 bit 65535, 65535, 65535) indicated as over-exposure."
-msgstr ""
+msgstr "As opções de **Sobre-exposição** e **Sub-exposição** poderão realçar determinadas áreas de uma imagem, conforme indicado por cores de marcações claras e escuras, que poderão ser definidas aqui. No editor, este modo de visualização poderá ser activado ou desactivado com as teclas :kbd:`F10` e :kbd:`F11`, respectivamente. Os limites de sobre e sub-exposição podem ser definidos com as barras de ajuste \"... por cento\". Assinale a opção 'Indicar a exposição como cor pura', se quiser que apenas o tom preto puro (RGB 0,0,0) seja indicado como sub-exposição, assim como apenas o tom claro-puro (RGB a 8-bits: 255,255,255 ou RGB a 16-bits: 65535, 65535, 65535) será indicado como sobre-exposição."
 
 #: ../../setup_application/editor_settings.rst:29
 msgid ""
 "The option **Restore the settings of the Image Editor tools** can be used to "
 "restore the settings of the Image Editor tools from the last session. "
 "Otherwise, the default settings will be used."
-msgstr ""
+msgstr "A opção **Repor a configuração das ferramentas do Editor de Imagens** pode ser usada para repor as definições das ferramentas do Editor de Imagens da última sessão. Caso contrário, serão usadas as configurações por omissão."
 
 #: ../../setup_application/editor_settings.rst:35
 msgid "The digiKam Image Editor Windows Configuration Page"
@@ -96,11 +101,11 @@ msgid ""
 "images, trying out whatever you want without worrying that you might regret "
 "later what you did. digiKam takes care of the original and every important "
 "intermediate step if you want."
-msgstr ""
+msgstr "A Edição e Controlo de Versões Não-Destrutivas dão-lhe a liberdade de editar as suas imagens, experimentar o que quiser sem se preocupar se se arrependerá mais tar do que fez. O digiKam toma conta do original e de todos os passos intermédios importantes, se o desejar."
 
 #: ../../setup_application/editor_settings.rst:48
 msgid "The digiKam Image Versioning Configuration Page"
-msgstr ""
+msgstr "A Página de Configuração das Versões das Imagens no digiKam"
 
 #: ../../setup_application/editor_settings.rst:50
 msgid ""
@@ -119,7 +124,7 @@ msgid ""
 "it in terms of space on the harddisk and loading/saving speed you better "
 "choose a lossless format like **PNG** or **PGF** for instance. Please click "
 "the information button on the right side for more detailed information."
-msgstr ""
+msgstr "No primeiro campo **Gravar os ficheiros como**, poderá escolher o formato do ficheiro usado para guardar os passos intermédios e o resultado final. Lembre-se que o **JPEG** é um formato com perdas. Por isso, se precisasse de voltar atrás a um passo intermédio, não seria realmente não-destrutivo. Se puder apostar, em termos de espaço em disco e na velocidade de carregamento/gravação, será melhor escolher um formato sem perdas, como por exemplo o **PNG** ou o **PGF**. Por favor, carregue no botão de informações à direita para obter mais informações."
 
 #: ../../setup_application/editor_settings.rst:54
 msgid ""
@@ -168,18 +173,18 @@ msgid ""
 "when it saves altered images by moving the JPEG quality slider (1: low "
 "quality / 100: high quality and no compression). JPEG metadata is fully "
 "supported."
-msgstr ""
+msgstr "Quando as alterações são feitas nos ficheiros JPEG e os mesmos são guardados de volta no disco rígido, o ficheiro JPEG tem de ser codificado de novo. Cada vez que um ficheiro JPEG é codificado, é necessário tomar uma decisão ao nível da **Qualidade do JPEG** que será aplicada. Infelizmente, o nível de qualidade aplicado não é registado no ficheiro da imagem. Isto significa que o Editor de Imagens não poderá aplicar sempre o mesmo nível de qualidade ao gravar uma imagem alterada, da mesma forma que foi usado na imagem original. Poderá modificar o nível por omissão de qualidade que o Editor de Imagens irá aplicar, quando gravar as imagens alteradas, movendo a barra de qualidade do JPEG (1: qualidade baixa / 100: qualidade alta e sem compressão). Os meta-dados do JPEG são suportados por completo."
 
 #: ../../setup_application/editor_settings.rst:67
 msgid ""
 "**Chroma subsampling** is the practice of encoding images by implementing "
 "more resolution for luminance information than for color information. Please "
 "read this Wikipedia article for a full explanation."
-msgstr ""
+msgstr "A **Sub-amostragem da crominância** é a prática de codificar as imagens, implementando mais resolução para a informação de luminosidade que para a informação das cores. Leia por favor este artigo da Wikipédia para obter uma explicação completa."
 
 #: ../../setup_application/editor_settings.rst:73
 msgid "The digiKam Default File Save Configuration Page"
-msgstr ""
+msgstr "Página de Configuração da Gravação de Ficheiros no digiKam"
 
 #: ../../setup_application/editor_settings.rst:75
 msgid ""
@@ -189,7 +194,7 @@ msgid ""
 "decompress. If you have a fast computer you can change this value to use a "
 "high compression factor (1: low compression / 9: high compression), and "
 "metadata is supported."
-msgstr ""
+msgstr "Com a opção de **Compressão do PNG**, poderá reduzir o tamanho dos ficheiros de imagens PNG. Esta operação não reduz a qualidade da imagem, porque o PNG usa um algoritmo sem perdas. O único efeito é que os dados da imagem demoram mais tempo a comprimir/descomprimir. Se tiver um computador rápido, poderá alterar este valor para usar um factor de compressão elevado (1: compressão baixa / 9: compressão alta), sendo suportados os meta-dados."
 
 #: ../../setup_application/editor_settings.rst:77
 msgid ""
@@ -197,14 +202,14 @@ msgid ""
 "algorithm with TIFF image files. This will reduce TIFF image files sizes. It "
 "has no image quality effect because Deflate is a lossless algorithm and "
 "metadata is supported."
-msgstr ""
+msgstr "Com a opção de **Compressão do TIFF**, poderá optar por usar o algoritmo de compressão Deflate com os ficheiros de imagens TIFF. Isto irá reduzir o tamanho dos ficheiros de imagem TIFF. Esta operação não reduz a qualidade da imagem, porque o Deflate é um algoritmo sem perdas, sendo suportados os meta-dados."
 
 #: ../../setup_application/editor_settings.rst:79
 msgid ""
 "With the **LossLess JPEG 2000** files option allows for lossless storage, "
 "or, if the lossy options is selected, even then the quality for comparative "
 "files size is much better than normal JPEG, and metadata is supported."
-msgstr ""
+msgstr "Com a opção **JPEG 2000 sem Perdas** poderá ter o armazenamento sem perdas ou, se a opção com perdas estiver seleccionada, até mesmo nesse caso, o tamanho dos ficheiros é muito melhor que o JPEG normal, sendo suportados os meta-dados."
 
 #: ../../setup_application/editor_settings.rst:81
 msgid ""
@@ -212,7 +217,7 @@ msgid ""
 "the lossy options is selected, even then the quality for comparative files "
 "size is much better than normal JPEG-2000 and very fast to process encoding, "
 "decoding and metadata is supported."
-msgstr ""
+msgstr "Com a opção **Ficheiros PGF sem Perdas** poderá ter o armazenamento sem perdas ou, se a opção com perdas estiver seleccionada, até mesmo nesse caso, o tamanho dos ficheiros é muito melhor que o JPEG-2000 e muito rápido de processar a codificação e descodificação, sendo suportados os meta-dados."
 
 #: ../../setup_application/editor_settings.rst:83
 msgid ""
@@ -221,7 +226,7 @@ msgid ""
 "size is much better than normal JPEG-2000, but it slower to encode and "
 "decode and it supports only 8-12 bits colors depth. This image format "
 "dedicated to replace JPEG on smartphones, not all metadata is supported."
-msgstr ""
+msgstr "Com a opção **Ficheiros HEIF sem Perdas** poderá ter o armazenamento sem perdas ou, se a opção com perdas estiver seleccionada, até mesmo nesse caso, o tamanho dos ficheiros é muito melhor que o JPEG-2000 normal, mas é mais lento de codificar e descodificar e só suporta profundidades de cor de 8 a 12 bits. Este formato de imagem está dedicado a substituir o JPEG nos telemóveis e nem todos os meta-dados são suportados."
 
 #: ../../setup_application/editor_settings.rst:85
 msgid ""
@@ -230,7 +235,7 @@ msgid ""
 "size is much better than normal JPEG-2000, but it only support 8 bits colors "
 "depth. This image format dedicated to replace PNG and JPEG on the Internet, "
 "not all metadata is supported."
-msgstr ""
+msgstr "Com a opção **Ficheiros WEBP sem Perdas** poderá ter o armazenamento sem perdas ou, se a opção com perdas estiver seleccionada, até mesmo nesse caso, o tamanho dos ficheiros é muito melhor que o JPEG-2000 normal, mas só suporta profundidades de cor de 8 bits. Este formato de imagem está dedicado a substituir o PNG e o JPEG na Internet, mas nem todos os meta-dados são suportados."
 
 #: ../../setup_application/editor_settings.rst:87
 msgid ""
@@ -239,18 +244,18 @@ msgid ""
 "size is much better than normal JPEG-2000, but it slower to encode and "
 "decode and it support only 8-12 bits colors depth. This image format "
 "dedicated to be a concurrent of HEIF, not all metadata is supported."
-msgstr ""
+msgstr "Com a opção **Ficheiros AVIF sem Perdas** poderá ter o armazenamento sem perdas ou, se a opção com perdas estiver seleccionada, até mesmo nesse caso, o tamanho dos ficheiros é muito melhor que o JPEG-2000 normal, mas é mais lento de codificar e descodificar e só suporta profundidades de cor de 8 a 12 bits. Este formato de imagem está dedicado a ser um concorrente do HEIF, mas nem todos os meta-dados são suportados."
 
 #: ../../setup_application/editor_settings.rst:89
 msgid ""
 "When the option **Show Settings Dialog when Saving Image Files** is checked, "
 "digiKam will show a dialog where settings can be changed when saving image "
 "files, else default settings are used when saving image files."
-msgstr ""
+msgstr "Quando a opção **Mostrar a Janela de Configuração ao Gravar os Ficheiros de Imagens** estiver assinalada, o digiKam irá mostrar uma janela onde a configuração pode ser alterada ao gravar os ficheiros de imagens, caso contrário serão usadas as definições por omissão ao gravar os ficheiros de imagens."
 
 #: ../../setup_application/editor_settings.rst:94
 msgid "RAW Behavior"
-msgstr ""
+msgstr "Comportamento do RAW"
 
 #: ../../setup_application/editor_settings.rst:96
 msgid ""
@@ -258,11 +263,11 @@ msgid ""
 "photographs, but it is rapidly developing into a very useful photo "
 "manipulation tool. This dialog allows you to control how the Image Editor "
 "will behave when opening RAW files."
-msgstr ""
+msgstr "Nas versões antigas do digiKam, o Editor de Imagens é apenas um visualizador das fotografias, mas está rapidamente a desenvolver-se e a transformar-se numa ferramenta de manipulação de fotografias bastante útil. Esta janela permite-lhe controlar como é que se irá comportar o Editor de Imagens ao abrir os ficheiros RAW."
 
 #: ../../setup_application/editor_settings.rst:102
 msgid "The digiKam RAW Behavior Configuration Page"
-msgstr ""
+msgstr "Página de Configuração do Comportamento do RAW no digiKam"
 
 #: ../../setup_application/editor_settings.rst:104
 msgid ""
@@ -270,7 +275,7 @@ msgid ""
 "color depth with a BT.709 gamma curve and a 99th-percentile white point. "
 "This mode is faster than 16-bit decoding. In 8-bit mode only the Auto "
 "Brightness setting will be taken into account."
-msgstr ""
+msgstr "**Rápido e simples, como imagem de 8 bits**: os ficheiros RAW serão descodificados para uma profundidade de cor de 8 bits, com uma curva de gama BT.709 e um ponto branco no percentil-99. Este modo é mais rápido que a descodificação a 16-bits. No modo a 8-bits, só será tida em conta a configuração do Brilho Automático."
 
 #: ../../setup_application/editor_settings.rst:106
 msgid ""
@@ -279,25 +284,25 @@ msgid ""
 "the settings in the **RAW Default Settings** tab. To prevent dark image "
 "rendering in the editor, it is recommended to use Color Management in this "
 "mode."
-msgstr ""
+msgstr "**Usar a configuração por omissão, a 16-bits**: Se estiver activa, todos os ficheiros RAW serão descodificados para uma profundidade de cor de 16 bits, usando uma curva de gama linear e de acordo com a configuração na página de **Configuração do RAW por Omissão**. Para evitar a apresentação de uma imagem escura no editor, recomenda-se o uso da Gestão de Cores neste modo."
 
 #: ../../setup_application/editor_settings.rst:108
 msgid ""
 "**Always open the Raw Import Tool to customize settings**: With this option "
 "you can select which Raw Import Tool will used to open RAW files. Raw "
 "processing tools available are:"
-msgstr ""
+msgstr "**Manter sempre aberta a ferramenta de Importação RAW para personalizar a configuração**: Com esta opção, poderá seleccionar qual a ferramenta de Importação RAW que será usada para abrir os ficheiros RAW. As ferramentas de processamento RAW disponíveis são:"
 
 #: ../../setup_application/editor_settings.rst:110
 msgid ""
 "**Import RAW using LibRaw**: the default plugin for digiKam which will "
 "provide a fully integrated module at the Right Side Bar in the Image Editor "
 "where you can set individual parameters for every image you open."
-msgstr ""
+msgstr "**Importar o RAW com a LibRaw**: o 'plugin' predefinido do digiKam, que irá oferecer um módulo completamente integrado na barra lateral direita, no Editor de Imagens, onde poderá definir os parâmetros individuais para cada imagem que abrir."
 
 #: ../../setup_application/editor_settings.rst:116
 msgid "The digiKam RAW Import Tool Processing a Nikon NEF File"
-msgstr ""
+msgstr "A Ferramenta de Importação RAW a  Processar um Ficheiro NEF da Nikon no digiKam"
 
 #: ../../setup_application/editor_settings.rst:118
 msgid ""
@@ -308,7 +313,7 @@ msgid ""
 "specifically aimed at non-destructive post-production of raw photos and is "
 "primarily focused on improving a photographer's workflow by facilitating the "
 "handling of large numbers of images."
-msgstr ""
+msgstr "**RawTherapee**: esta aplicação deverá estar instalada no seu computador. O `RawTherapee <https://en.wikipedia.org/wiki/Darktable>`_ é uma aplicação de processamento de fotografias nos formatos de imagem RAW, que são criados por várias câmaras digitais. Contém um sub-conjunto de operações de edição de imagens, destinadas em específico à pós-produção não-destrutiva de imagens em bruto e está focado principalmente em melhorar os procedimentos de um fotógrafo, facilitando o tratamento de quantidades grandes de imagens."
 
 #: ../../setup_application/editor_settings.rst:120
 msgid ""
@@ -316,7 +321,7 @@ msgid ""
 "<https://en.wikipedia.org/wiki/UFRaw>`_ is an application which can read and "
 "manipulate photographs in RAW image formats, as created by many digital "
 "cameras."
-msgstr ""
+msgstr "**UFRaw**: esta aplicação deverá estar instalada no seu computador. O `UFRaw <https://en.wikipedia.org/wiki/UFRaw>`_ é uma aplicação que consegue ler e manipular fotografias nos formatos de imagem RAW, como são criados por várias câmaras digitais."
 
 #: ../../setup_application/editor_settings.rst:122
 msgid ""
@@ -325,12 +330,12 @@ msgid ""
 "source photography application program and RAW developer. It comprises a "
 "subset of image editing operations specifically aimed at non-destructive RAW "
 "image post-production."
-msgstr ""
+msgstr "**DarkTable**: esta aplicação deverá estar instalada no seu computador. O `Darktable <https://en.wikipedia.org/wiki/Darktable>`_ é um programa gratuito e em código aberto de fotografia digital e revelador de imagens RAW. Contém um sub-conjunto de operações de edição de imagens, destinadas à pós-produção não-destrutiva de imagens RAW."
 
 #: ../../setup_application/editor_settings.rst:129
 msgid ""
 "Screencast of RAW Import Tool Pre-Processing a Digital Negative in DarkTable"
-msgstr ""
+msgstr "Captura do Ecrã da Ferramenta de Importação RAW a Processar um Negativo Digital no DarkTable"
 
 #: ../../setup_application/editor_settings.rst:134
 msgid "RAW Default Settings"
@@ -338,7 +343,7 @@ msgstr "Configuração Predefinida do RAW"
 
 #: ../../setup_application/editor_settings.rst:138
 msgid "These default settings is used only with the LibRaw interface."
-msgstr ""
+msgstr "Estas opções predefinidas só são usadas com a interface da LibRaw."
 
 #: ../../setup_application/editor_settings.rst:141
 msgid "Demosaicing"
@@ -346,7 +351,7 @@ msgstr "Remoção do Mosaico"
 
 #: ../../setup_application/editor_settings.rst:147
 msgid "The digiKam Default RAW Demosaicing Configuration View"
-msgstr ""
+msgstr "A Área de Configuração da Remoção Predefinida de Mosaicos RAW no digiKam"
 
 #: ../../setup_application/editor_settings.rst:149
 msgid ""
@@ -355,7 +360,7 @@ msgid ""
 "raw data received from the color-filtered image sensor internal to many "
 "digital cameras in form of a matrix of colored pixels. Also known as CFA "
 "interpolation or color reconstruction."
-msgstr ""
+msgstr "Um `algoritmo de remoção de mosaico <https://en.wikipedia.org/wiki/Demosaicing>`_ é um processo de imagens digitais usado para interpolar uma imagem completa a partir dos dados parciais em bruto que são recebidos do sensor de imagem com filtragem de cor, interno em muitas câmaras digitais, sob a forma de uma matriz de pixels coloridos. Também é conhecida como interpolação CFA ou reconstrução das cores."
 
 #: ../../setup_application/editor_settings.rst:151
 msgid ""
@@ -366,7 +371,7 @@ msgid ""
 "loss of detail. To resume, this option blurs the image a little, but it "
 "eliminates false 2x2 mesh patterns with VNG quality method or mazes with AHD "
 "quality method."
-msgstr ""
+msgstr "**Interpolar o RGB como quatro cores**: Por omissão, assume-se que todos os pixels verdes são o mesmo. Se os pixels verdes das linhas pares forem mais sensíveis à luz ultra-violeta que os das linhas ímpares, essa diferença causa um padrão em malha no resultado final; se uasr esta opção, resolve este problema com uma perda mínima do detalhe. Em resumo, esta opção borra a imagem um pouco, mas elimina os padrões falsos em malha 2x2, com o método de qualidade VNG, ou em forma de labirinto com o método de qualidade AHD."
 
 #: ../../setup_application/editor_settings.rst:153
 msgid ""
@@ -374,7 +379,7 @@ msgid ""
 "image tilted 45 degrees. For cameras with non-square pixels, do not stretch "
 "the image to its correct aspect ratio. In any case, this option guarantees "
 "that each output pixel corresponds to one RAW pixel."
-msgstr ""
+msgstr "**Não esticar ou rodar os pixels**: No caso das câmaras Super CCD da Fuji, mostra a imagem desviada em 45 graus. Para as câmaras com pixels não quadrados, não estica a imagem para as suas proporções de tamanho correctas. Em qualquer dos casos, esta opção garante que cada pixel à saída corresponde a um pixel RAW individual."
 
 #: ../../setup_application/editor_settings.rst:155
 msgid ""
@@ -391,19 +396,19 @@ msgid ""
 "grouping interpolation that uses assumptions about natural scenery in making "
 "estimates. It has fewer color artifacts on natural images than the VNG "
 "method. Considerate **DCB** and **DHT** interpolation as experimental method."
-msgstr ""
+msgstr "**Qualidade**: o digiKam oferece-nos várias alternativas; p.ex, as mais comuns são as interpolações **Bi-lineares**, **VNG** e **AAHD**. Parece que a AAHD (de **Ameliored Adaptive Homogeneity-Directed** ou **Melhorada, Dirigada à Homogeneidade e Adaptativa**) é a melhor opção para a qualidade, de acordo com alguns testes efectuados e com o documento da pessoa que o implementou. Este método melhorado, baseado na interpolação **AHD**, selecciona a direcção da interpolação, de forma a maximizar uma métrica homogénea, minimizando assim tipicamente os artefactos de cores. O VNG (de **Variable Number of Gradients** - **Número de Gradientes Variável**) foi o primeiro algoritmo usado pela Libraw, mas sofre de artefactos de cores nas arestas. O método Bi-linear é interessante, caso pretenda velocidade com um resultado aceitável. O  is interesting **PPG** (for **Patterned-Pixel-Grouping** - **Agrupamento de Pixels em Padrões**) é uma interpolação por agrupamento de pixels, que assume um cenário natural nas estimativas. Tem menos artefactos de cores nas imagens neutras que o método VNG. Pense no **DCB** e **DHT** como métodos experimentais."
 
 #: ../../setup_application/editor_settings.rst:157
 msgid ""
 "**Pass**: Set here the passes used by the median filter applied after "
 "interpolation to Red-Green and Blue-Green channels."
-msgstr ""
+msgstr "**Passo**: Defina aqui os passos usado pelo filtro da mediana, aplicado após a interpolação para os canais Vermelho-Verde e Azul-Verde."
 
 #: ../../setup_application/editor_settings.rst:159
 msgid ""
 "**Refine interpolation**: For DCB interpolation only, turn on the enhance "
 "interpolated colors filter to improve sharpness."
-msgstr ""
+msgstr "**Refinar a interpolação**: Apenas na interpolação DCB, activa o filtro de melhoria das cores interpoladas para aumentar a nitidez da imagem."
 
 #: ../../setup_application/editor_settings.rst:162
 msgid "White Balance"
@@ -411,7 +416,7 @@ msgstr "Balanceamento de Branco"
 
 #: ../../setup_application/editor_settings.rst:168
 msgid "The digiKam Default RAW White Balance Configuration View"
-msgstr ""
+msgstr "A Área de Configuração do Balanceamento de Branco RAW no digiKam"
 
 #: ../../setup_application/editor_settings.rst:170
 msgid ""
@@ -423,7 +428,7 @@ msgid ""
 "**T(K)** (for color temperature in degrees Kelvin) and the **Green** "
 "settings to set the green component adjusting the magenta color cast removal "
 "level."
-msgstr ""
+msgstr "**Método**: Estão disponíveis aqui quatro opções: **D65 por Omissão**, **Câmara**, **Automático** e **Manual**. O *D65 por Omissão* reflecte as condições normais da luz do dia. A *Câmara* usa as definições do balanceamento de branco personalizadas da câmara, caso estejam definidas. A opção *Automático* usa por omissão um balanceamento de branco baseado num cartão branco fotografado à luz do dia. O *Manual* irá ajustar as cores de acordo com a **T(K)** (a temperatura de cor em graus Kelvin) e a opção **Verde**, para ajustar a componente de verde com base no nível de remoção da conversão para a cor magenta."
 
 #: ../../setup_application/editor_settings.rst:172
 msgid ""
@@ -441,7 +446,7 @@ msgid ""
 "A value of 3 is a compromise and can/should be adapted on a per image basis. "
 "**Unclip** leave highlights unclipped in various shades of pink, and "
 "**Blend** clipped and unclipped values together for a gradual fade to white."
-msgstr ""
+msgstr "**Tons Claro**: Aqui por omissão consideram-se os tons claros (leia-se: parte das suas imagens que estão 'queimadas' devido à incapacidade de a sua câmara capturar os tons claros, como **Branco sólido** ou simples. Poderá obter alguns resultados interessantes com a remoção de recorte, que irá pintar os tons claros com vários tons de rosa. Por último, pode considerar tentar recuperar algumas partes da informação em falta dos tons claros, com a opção **Reconstruir**. Isto é possível porque os pixels azuis tendem a saturar menos rapidamente que os verdes ou os vermelhos. O digiKam irá tentar reconstruir as cores verdes e vermelhas das restantes cores azuis, sem saturação. Obviamente, tudo aqui é uma questão de compromisso entre a quantidade de cor ou de branco que deseja. Se seleccionar a opção **Reconstruir**, ser-lhe-á dada a opção de definir um **Nível**. Um valor igual a 3 é um compromisso e poderá/deverá ser adaptado para cada imagem. A opção **Remover o recorte** deixa os tons claros sem qualquer corte ou distorção, com vários tons de rosa enquanto, na opção **Misturar**, os valores com e sem cortes tendem a desvanecer-se gradualmente para branco."
 
 #: ../../setup_application/editor_settings.rst:174
 msgid ""
@@ -449,20 +454,20 @@ msgid ""
 "interpolation which can be applied with a **Linear Shift** level. Amount of "
 "**Highlight** preservation can be also adjusted but only if shift correction "
 "is > 1.0 E.V."
-msgstr ""
+msgstr "**Correcção da Exposição (E.V)**: Active a correcção da exposição antes da interpolação, a qual pode ser aplicada com um **Desvio Linear**. A quantidade de preservação de **Tons Claros** pode também ser ajustada, mas apenas se a correcção do desvio for > 1,0 E.V."
 
 #: ../../setup_application/editor_settings.rst:176
 msgid ""
 "**Correct False Colors In Highlights**: If enabled, images with overblown "
 "channels are processed much more accurately, without 'pink clouds' (and blue "
 "highlights under tungsten lamps)."
-msgstr ""
+msgstr "**Corrigir as Cores Falsas nos Tons Claros**: Se estiver activa, as imagens com canais descontrolados são processadas com muito maior precisão, sem 'nuvens rosa' (e com tons claros azulados sob lâmpadas de tungsténio)."
 
 #: ../../setup_application/editor_settings.rst:178
 msgid ""
 "**Auto Brightness**: If disable, use a fixed white level and ignore the "
 "image histogram to adjust brightness."
-msgstr ""
+msgstr "**Brilho Automático**: Se desactivar, irá usar um nível de branco fixo e ignorar o histograma da imagem para ajustar o brilho."
 
 #: ../../setup_application/editor_settings.rst:181
 msgid "Corrections"
@@ -470,7 +475,7 @@ msgstr "Correcções"
 
 #: ../../setup_application/editor_settings.rst:187
 msgid "The digiKam Default RAW Corrections Configuration View"
-msgstr ""
+msgstr "Área de Configuração das Correcções Predefinidas do RAW no digiKam"
 
 #: ../../setup_application/editor_settings.rst:189
 msgid ""
@@ -481,7 +486,7 @@ msgid ""
 "traditional noise reduction algorithms do in RGB mode. If you converted an "
 "image from RAW and it appears noisy, rather than applying a denoiser, go "
 "back and re-convert with this option enabled."
-msgstr ""
+msgstr "A **Redução do Ruído** poderá ser aplicada na remoção de mosaico da sua imagem, às custas de uma ligeira penalização na velocidade. Esta opção aplica um algoritmo de redução de ruído, enquanto a imagem se encontra ainda no espaço de cores CIE Lab. Dado que o ruído só é aplicado na camada de Luminosidade (o *L* do Lab), não deverá borrar a sua imagem, dado que os algoritmos de redução de ruído tradicionais fazem-no no modo RGB. Se tiver convertido uma imagem a partir do RAW e parecer que tem muito ruído, em vez de aplicar uma redução de ruído genérica, vole atrás e reconverta com esta opção activa."
 
 #: ../../setup_application/editor_settings.rst:191
 msgid ""
@@ -490,10 +495,10 @@ msgid ""
 "interpolation a wavelets correction method to erase noise while preserving "
 "real details. **FBDD** for Fake Before Demosaicing Denoising is an "
 "experimental noise reduction method applied before interpolation."
-msgstr ""
+msgstr "Poderá seleccionar um método de redução de ruído durante a descodificação do RAW. A opção **Nenhum** nã́o aplica a redução de ruído. A **Padrões de Ondas** aplica após a interpolação um método de correcção por padrões de ondas ('wavelets'), mantendo os detalhes reais. O **FBDD** (de Fake Before Demosaicing Denoising - Redaução de Ruído Falsa antes da Remoção de Mosaico) é um método experimental aplicado antes da interpolação."
 
 #: ../../setup_application/editor_settings.rst:193
 msgid ""
 "The defaults **Threshold** value is 100. Higher values will increase the "
 "smoothing, and lower values will decrease it."
-msgstr ""
+msgstr "O valor do **Limite** predefinido é 100. Os valores mais elevados irão aumentar a suavização, enquanto os menores a irão reduzir."
