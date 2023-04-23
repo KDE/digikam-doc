@@ -203,13 +203,15 @@ This section allows to control the spellchecking operations done in background i
 
     The digiKam Spellcheck Configuration Page
 
-Spellcheck can be used on captions, titles, and other text-edit widgets to auto-detect the current language used in text and will propose alternative with miss-spelled words. With entries where alternative language can be specified, the contextual language will be used to parse text. Spellcheck depends of open-source **Backends**, including **Language Dictionaries**, to operate sentence analysis. Availability of both are listed in this view for information. If you want to add new language or dictionaries, you need to install relevant packages on your system.
+Spellcheck can be used on captions, titles, and other text-edit widgets to auto-detect the current language used in text and will propose alternative with miss-spelled words. With entries where alternative-language can be specified, the contextual language will be used to parse text. Spellcheck depends of open-source **Backends**, including **Language Dictionaries**, to operate sentence analysis. Availability of both are listed in this view for information. If you want to add new language or dictionaries, you need to install relevant packages on your system.
 
 .. figure:: images/setup_captions_spellcheck.webp
     :alt:
     :align: center
 
     The Titles Text Editor from Captions Tab with Spellcheck Feature
+
+The **Default Language** allow to set the langue to Spellcheck with the *x-defult* entry from the alternative-language string. If you select **Auto-detect** value, the string contents will be parsed to determine the language automatically and select the right dictionary for spellchecking. Of course, in all cases the relevant dictionaries must be installed on your computer to see the spellchecking works properly.
 
 You can edit a list of words that Spellcheck must ignore during operations. digiKam already provide a list usual keywords to not verify.
 
