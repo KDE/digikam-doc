@@ -211,7 +211,7 @@ Spellcheck can be used on captions, titles, and other text-edit widgets to auto-
 
     The Titles Text Editor from Captions Tab with Spellcheck Feature
 
-The **Default Language** allow to set the languagee to spellcheck with the *x-default* entry from the alternative-language string. If you select **Auto-detect** value, the string contents will be parsed to determine the language automatically and select the right dictionary for spellchecking. Of course, in all cases the relevant dictionaries must be installed on your computer to see the spellchecking works properly.
+The **Default Language** allow to set the language to spellcheck with the *x-default* entry from the alternative-language string. If you select **Auto-detect** value, the string contents will be parsed to determine the language automatically and select the right dictionary for spellchecking. Of course, in all cases the relevant dictionaries must be installed on your computer to see the spellchecking works properly.
 
 You can edit a list of words that Spellcheck must ignore during operations. digiKam already provide a list usual keywords to not verify.
 
