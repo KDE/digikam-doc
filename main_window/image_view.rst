@@ -126,7 +126,7 @@ In the sequence **Number** dialog you will find following options:
 - **Extension aware numbering**: will start a new sequence for every file extension.
 - **Folder aware numbering**: will start a new sequence for every folder.
 - **File Counter aware numbering**: will searches for the highest used counter in the filename from the image's directory and continues it.
-- **Randow text aware numbering**.
+- **Random text aware numbering**.
 
 The **Date and Time** selection dialog looks like this:
 
