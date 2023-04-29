@@ -121,7 +121,12 @@ The renaming pattern can be customize with the **Renaming Options** collection o
 
     The Advanced Rename Sequence Number Dialog to Setup Modifiers in Renaming Pattern
 
-In the sequence **Number** dialog you will find two options: **Extension aware numbering** and **Folder aware numbering**. If they are checked digiKam will start a new sequence for every file extension and / or folder.
+In the sequence **Number** dialog you will find following options:
+
+- **Extension aware numbering**: will start a new sequence for every file extension.
+- **Folder aware numbering**: will start a new sequence for every folder.
+- **File Counter aware numbering**: will searches for the highest used counter in the filename from the image's directory and continues it.
+- **Randow text aware numbering**.
 
 The **Date and Time** selection dialog looks like this:
 
