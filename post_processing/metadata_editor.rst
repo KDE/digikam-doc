@@ -91,7 +91,7 @@ This view records lens details used with camera.
     - **Focal length in 35mm film**: this checkbox allows to edit the equivalent focal length assuming a 35mm film camera, in mm. A value of 0 means the focal length is unknown.
     - **Digital zoom ratio**: this checkbox allows to edit the digital zoom ratio used by camera to take the picture.
     - **Lens aperture**: this checkbox allows to edit the lens aperture (f-number) used by camera to take the picture.
-    - **Max. lens aperture**: this checkbox allows to edit the the smallest aperture (f-number) of the lens used by camera to take the picture.
+    - **Max. lens aperture**: this checkbox allows to edit the smallest aperture (f-number) of the lens used by camera to take the picture.
 
 .. figure:: images/metadata_editor_exif_lens.webp
     :alt:

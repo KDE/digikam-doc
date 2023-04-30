@@ -41,7 +41,7 @@ The whole details of database settings are mostly given in the :ref:`Database Se
 Migrating From Other Software
 -----------------------------
 
-To populate the the digiKam database from file properties managed by another software, it's recommend to write all metadata in XMP sidecar files for the best interoperability. digiKam cannot parse the proprietary and closed source database. XMP sidecar are standardized and well documented.
+To populate the digiKam database from file properties managed by another software, it's recommend to write all metadata in XMP sidecar files for the best interoperability. digiKam cannot parse the proprietary and closed source database. XMP sidecar are standardized and well documented.
 
 In digiKam, check well the :ref:`Metadata Setup section <metadata_settings>` to use XMP sidecar. The Advanced panel offers a profiles management to handle special-cases while importing and exporting metadata with 3rd-party software.
 

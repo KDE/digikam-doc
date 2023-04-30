@@ -819,7 +819,7 @@ For mostly all the G'MIC-Qt filters you can see these behaviors:
 
         The Image Editor G'MIC-Qt Tool Progress Bar
 
-    - If a filter has many parameter settings, some may not be visible; use the the scroll bar to access more settings. Also, it's possible to enlarge the G'MIC-Qt dialog if necessary, or switch to **Fullscreen** with the button on the bottom.
+    - If a filter has many parameter settings, some may not be visible; use the scroll bar to access more settings. Also, it's possible to enlarge the G'MIC-Qt dialog if necessary, or switch to **Fullscreen** with the button on the bottom.
 
     - Depending on the filter, some parameters can require many iterations on the image and increase processing time. Adjust the settings carefully, as the times can increase exponentially before seeing the result.
 
