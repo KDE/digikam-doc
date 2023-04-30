@@ -126,7 +126,7 @@ In the sequence **Number** dialog you will find following options:
 - **Extension aware numbering**: will start a new sequence for every file extension.
 - **Folder aware numbering**: will start a new sequence for every folder.
 - **File Counter aware numbering**: will searches for the highest used counter in the filename from the image's directory and continues it.
-- **Random text aware numbering**: will generate an hexadecimal random numeric code string for the numbering. It is a random number with up to 31 digits. Uses many *#* to render an unique code in your renaming scheme.
+- **Random text aware numbering**: will generate a hexadecimal random numeric code string for the numbering. It is a random number with up to 31 digits. Uses many *#* to render a unique code in your renaming scheme.
 
 The **Date and Time** selection dialog looks like this:
 
