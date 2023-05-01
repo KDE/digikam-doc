@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-18 00:39+0000\n"
+"POT-Creation-Date: 2023-04-30 00:39+0000\n"
 "PO-Revision-Date: 2023-02-17 15:53+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -34,7 +34,11 @@ msgstr ""
 msgid "Database"
 msgstr "Base de Dados"
 
-#: ../../getting_started/database_intro.rst:16
+#: ../../getting_started/database_intro.rst:17
+msgid "Overview"
+msgstr ""
+
+#: ../../getting_started/database_intro.rst:19
 msgid ""
 "Everyone knows about a database; it is used to store data. As all other "
 "photographs management programs, digiKam too uses the database for some "
@@ -52,7 +56,7 @@ msgstr ""
 "Para além disso, qualquer utilizador consegue aceder aos dados através de "
 "uma linguagem de pesquisas."
 
-#: ../../getting_started/database_intro.rst:18
+#: ../../getting_started/database_intro.rst:21
 msgid ""
 "Talking in particular about digiKam, the Albums, Album Roots, Tags, "
 "Thumbnails, Face Recognition Data, Image Metadata, File Paths, Settings etc. "
@@ -63,7 +67,7 @@ msgstr ""
 "Localizações dos Ficheiros, Configuração, etc., são todos guardados em "
 "ficheiros diferentes da base de dados."
 
-#: ../../getting_started/database_intro.rst:20
+#: ../../getting_started/database_intro.rst:23
 msgid ""
 "The digiKam actually manages more than one database. For convenience, it is "
 "broadly categorized in three:"
@@ -71,7 +75,7 @@ msgstr ""
 "O digiKam consegue este momento gerir mais que uma base de dados. Por "
 "conveniência, está amplamente categorizado em três:"
 
-#: ../../getting_started/database_intro.rst:22
+#: ../../getting_started/database_intro.rst:25
 msgid ""
 "Core database for all collection properties, i.e. it hosts all albums, "
 "images and searches data."
@@ -79,7 +83,7 @@ msgstr ""
 "A base de dados de base para todas as propriedades da colecção, i.e., aloja "
 "todos os álbuns, imagens e pesquisa nos dados."
 
-#: ../../getting_started/database_intro.rst:24
+#: ../../getting_started/database_intro.rst:27
 msgid ""
 "Thumbnails database for compressed thumbnails i.e. to host image thumbs "
 "using wavelets compression images (**PGF** format)."
@@ -87,14 +91,14 @@ msgstr ""
 "A base de dados das miniaturas comprimidas, i.e., para alojar miniaturas de "
 "imagens que usam imagens comprimidas com padrões de ondas (formato **PGF**)."
 
-#: ../../getting_started/database_intro.rst:26
+#: ../../getting_started/database_intro.rst:29
 msgid ""
 "Similarity database to store image finger-prints for fuzzy search engine."
 msgstr ""
 "A base de dados de semelhanças para guardar as impressões digitais das "
 "imagens para o motor de pesquisas difusas."
 
-#: ../../getting_started/database_intro.rst:28
+#: ../../getting_started/database_intro.rst:31
 msgid ""
 "Face database for storing face recognition metadata i.e. to host face "
 "histograms for faces recognition."
@@ -102,7 +106,7 @@ msgstr ""
 "Base de dados de caras para guardar os meta-dados de reconhecimento de "
 "caras, i.e. para guardar os histogramas de reconhecimento de caras."
 
-#: ../../getting_started/database_intro.rst:34
+#: ../../getting_started/database_intro.rst:37
 msgid ""
 "Example of digiKam Remote MySQL Configuration Hosted on a NAS From The Local "
 "Network"
@@ -110,11 +114,49 @@ msgstr ""
 "Exemplo da Configuração do MySQL Remoto do digiKam, Alojado num NAS da Rede "
 "Local"
 
-#: ../../getting_started/database_intro.rst:36
+#: ../../getting_started/database_intro.rst:39
+#, fuzzy
+#| msgid ""
+#| "The whole details of database settings are mostly given in the :ref:"
+#| "`database setup section <database_settings>`."
 msgid ""
 "The whole details of database settings are mostly given in the :ref:"
-"`database setup section <database_settings>`."
+"`Database Setup section <database_settings>`."
 msgstr ""
 "Os detalhes completos da configuração da base de dados são apresentados na "
 "sua maioria na :ref:`secção de configuração da base de dados "
 "<database_settings>`."
+
+#: ../../getting_started/database_intro.rst:42
+msgid "Migrating From Other Software"
+msgstr ""
+
+#: ../../getting_started/database_intro.rst:44
+msgid ""
+"To populate the the digiKam database from file properties managed by another "
+"software, it's recommend to write all metadata in XMP sidecar files for the "
+"best interroperability. digiKam cannot parse the proprietary and closed "
+"source database. XMP sidecar are standardized and well documented."
+msgstr ""
+
+#: ../../getting_started/database_intro.rst:46
+msgid ""
+"In digiKam, check well the :ref:`Metadata Setup section <metadata_settings>` "
+"to use XMP sidecar. The Advanced panel offers a profiles management to "
+"handle special-cases while importing and exporting metadata with 3rd-party "
+"software."
+msgstr ""
+
+#: ../../getting_started/database_intro.rst:48
+msgid ""
+"Typically, from a fresh installation of digiKam, you can create a new root "
+"collection based on your path where images managed by your extra softawre. "
+"The contents will be parsed and the database will be populated with the "
+"information found in the XMP side-car."
+msgstr ""
+
+#: ../../getting_started/database_intro.rst:50
+msgid ""
+"When scan of items is done (this can take a while), you must to see all "
+"tags, labels, comments in digiKam items properties."
+msgstr ""
