@@ -57,7 +57,7 @@ Filename for the sidecars set to :file:`filename.ext.xmp`. For example, :file:`i
 
     If the box **Read from sidecar files** is checked, digiKam will only read the sidecar while ignoring the embedded metadata.
 
-The option **Additional sidecar file extensions** allows to add extra filename extensions to be processed alongside regular items, independently of the XMP sidecars. These files will not be visible, but regarded as an extension of the main file. Just write :file:`thm pp3` to support files with the :file:`*.thm` (extra Jpeg thumbnail for RAW) and :file:`*.pp3` (RAWTheraPee metadata) extensions.
+The option **Additional sidecar file extensions** allows to add extra filename extensions to be processed alongside regular items, independently of the XMP sidecars. These files will be hidden, but regarded as an extension of the main file. Just write :file:`thm pp3` to support :file:`filename.thm` (extra Jpeg thumbnail for RAW) and :file:`filename.pp3` (RAWTheraPee metadata) sidecars.
 
 .. _metadata_rotation:
 
