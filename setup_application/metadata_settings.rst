@@ -39,7 +39,13 @@ The **Behavior** tab allows you to select what information digiKam will write to
 Sidecars Settings
 -----------------
 
-The **Sidecars** tab allows user to control whether digiKam will read and write from/to XMP sidecars or not. Filename for the sidecars set to :file:`filename.ext.xmp`. For example, :file:`image1.dng` will have a sidecar file named :file:`image1.dng.xmp`.
+The **Sidecars** tab allows user to control whether digiKam will read and write from/to XMP sidecars or not. You can also customize the granularity of write operations to XMP sidecar:
+
+    - **Write to XMP sidecar only** will not touch the item metadata.
+    - **Write to item and XMP Sidecar** will touch both item and sidecar at the same time.
+    - **Write to XMP sidecar for read-only item only** will handle sidecar for non-writable items only, as video or RAW files for example.
+
+Filename for the sidecars set to :file:`filename.ext.xmp`. For example, :file:`image1.dng` will have a sidecar file named :file:`image1.dng.xmp`. With the option **Sidecar file names are compatible with commercial programs** digiKam wiil create the XMP sidecar files with a compatible file name (:file:`image1.xmp`) used by many commercial programs.
 
 .. figure:: images/setup_metadata_sidecars.webp
     :alt:
@@ -50,6 +56,8 @@ The **Sidecars** tab allows user to control whether digiKam will read and write 
 .. note::
 
     If the box **Read from sidecar files** is checked, digiKam will only read the sidecar while ignoring the embedded metadata.
+
+The option **Additional sidecar file extensions** allows to add extra filename extensions to be processed alongside regular items, independently of the XMP sidecars. These files will not be visible, but regarded as an extension of the main file. Just write :file:`thm pp3` to support files with the :file:`*.thm` (extra Jpeg thumbnail for RAW) and :file:`*.pp3` (RAWTheraPee metadata) extensions.
 
 .. _metadata_rotation:
 
