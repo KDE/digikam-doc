@@ -85,6 +85,10 @@ Later, other extra digiKam clients would also be conceivable if the NAS has a di
 
     Collection and Database Shared on Local Network Using NAS to 3 Different digiKam Clients
 
+.. warning::
+
+    digiKam do not support virtual placeholder folders as OneDrive or GoogleDrive within the image collection specified in setup.
+
 .. _ignored_directories:
 
 Ignore Directories from your Collections
