@@ -45,7 +45,7 @@ The **Sidecars** tab allows user to control whether digiKam will read and write 
     - **Write to item and XMP Sidecar** will touch both item and sidecar at the same time.
     - **Write to XMP sidecar for read-only item only** will handle sidecar for non-writable items only, as video or RAW files for example.
 
-Filename for the sidecars set to :file:`filename.ext.xmp`. For example, :file:`image1.dng` will have a sidecar file named :file:`image1.dng.xmp`. With the option **Sidecar file names are compatible with commercial programs** digiKam wiil create the XMP sidecar files with a compatible file name (:file:`image1.xmp`) used by many commercial programs.
+Filename for the sidecars set to :file:`filename.ext.xmp`. For example, :file:`image1.dng` will have a sidecar file named :file:`image1.dng.xmp`. With the option **Sidecar file names are compatible with commercial programs** digiKam will create the XMP sidecar files with a compatible file name (:file:`image1.xmp`) used by many commercial programs.
 
 .. figure:: images/setup_metadata_sidecars.webp
     :alt:
