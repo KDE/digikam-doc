@@ -41,6 +41,14 @@ There are a number of ways to create a new Album. You can create a new Album whe
 
     A album is hosted in a collection root path registered in the database. If a settings about collections has changed or if the collection no longer exists (for example with a removable media), no new albums can be created. You needs to check the collection properties in :ref:`the digiKam setup dialog <collections_settings>`.
 
+.. important::
+
+    Under Windows, file locking used by the system can introduce time latencies or dysfunctions. digiKam uses a low level file management with Qt framework that cannot handle locked files. The following conditions must be met so that there are no problems with digiKam:
+
+        - Album monitoring in digiKam must be deactivated. See the :ref:`the Collection Settings <collections_settings>` for details.
+        - Folders must not be part of a Windows file or network share.
+        - Folders or pictures must not be open in other programs such as Explorer or similar.
+
 .. _deleting_album:
 
 Deleting an Album
