@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-18 00:39+0000\n"
+"POT-Creation-Date: 2023-05-03 00:40+0000\n"
 "PO-Revision-Date: 2023-04-04 09:49+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -92,11 +92,16 @@ msgid "Sidecars Settings"
 msgstr "Configuração dos Dados Acessórios"
 
 #: ../../setup_application/metadata_settings.rst:42
+#, fuzzy
+#| msgid ""
+#| "The **Sidecars** tab allows user to control whether digiKam will read and "
+#| "write from/to XMP sidecars or not. Filename for the sidecars set to :file:"
+#| "`filename.ext.xmp`. For example, :file:`image1.dng` will have a sidecar "
+#| "file named :file:`image1.dng.xmp`."
 msgid ""
 "The **Sidecars** tab allows user to control whether digiKam will read and "
-"write from/to XMP sidecars or not. Filename for the sidecars set to :file:"
-"`filename.ext.xmp`. For example, :file:`image1.dng` will have a sidecar file "
-"named :file:`image1.dng.xmp`."
+"write from/to XMP sidecars or not. You can also customize the granularity of "
+"write operations to XMP sidecar:"
 msgstr ""
 "A página de **Ficheiros Acessórios** permite ao utilizador controlar se o "
 "digiKam irá ler e gravar os dados nos ficheiros acessórios do XMP ou não. O "
@@ -104,13 +109,38 @@ msgstr ""
 "exemplo, o :file:`imagem.dng` irá ter um ficheiro acessório chamado :file:"
 "`imagem.dng.xmp`."
 
+#: ../../setup_application/metadata_settings.rst:44
+msgid "**Write to XMP sidecar only** will not touch the item metadata."
+msgstr ""
+
+#: ../../setup_application/metadata_settings.rst:45
+msgid ""
+"**Write to item and XMP Sidecar** will touch both item and sidecar at the "
+"same time."
+msgstr ""
+
+#: ../../setup_application/metadata_settings.rst:46
+msgid ""
+"**Write to XMP sidecar for read-only item only** will handle sidecar for non-"
+"writable items only, as video or RAW files for example."
+msgstr ""
+
 #: ../../setup_application/metadata_settings.rst:48
+msgid ""
+"Filename for the sidecars set to :file:`filename.ext.xmp`. For example, :"
+"file:`image1.dng` will have a sidecar file named :file:`image1.dng.xmp`. "
+"With the option **Sidecar file names are compatible with commercial "
+"programs** digiKam wiil create the XMP sidecar files with a compatible file "
+"name (:file:`image1.xmp`) used by many commercial programs."
+msgstr ""
+
+#: ../../setup_application/metadata_settings.rst:54
 msgid "The digiKam Metadata Sidecar Behavior Settings Page"
 msgstr ""
 "A Página de Configuração do Comportamento dos Ficheiros de Meta-Dados "
 "Acessórios do digiKam"
 
-#: ../../setup_application/metadata_settings.rst:52
+#: ../../setup_application/metadata_settings.rst:58
 msgid ""
 "If the box **Read from sidecar files** is checked, digiKam will only read "
 "the sidecar while ignoring the embedded metadata."
@@ -118,17 +148,27 @@ msgstr ""
 "Se a opção **Ler dos ficheiros auxiliares** estiver assinalada, o digiKam só "
 "irá ler os ficheiros acessórios, enquanto ignora os meta-dados incorporados."
 
-#: ../../setup_application/metadata_settings.rst:57
+#: ../../setup_application/metadata_settings.rst:60
+msgid ""
+"The option **Additional sidecar file extensions** allows to add extra "
+"filename extensions to be processed alongside regular items, independently "
+"of the XMP sidecars. These files will be hidden, but regarded as an "
+"extension of the main file. Just write :file:`thm pp3` to support :file:"
+"`filename.thm` (extra Jpeg thumbnail for RAW) and :file:`filename.pp3` "
+"(RAWTheraPee metadata) sidecars."
+msgstr ""
+
+#: ../../setup_application/metadata_settings.rst:65
 msgid "Rotation Settings"
 msgstr "Configuração da Rotação"
 
-#: ../../setup_application/metadata_settings.rst:63
+#: ../../setup_application/metadata_settings.rst:71
 msgid "The digiKam Metadata Rotation Behavior Settings Page"
 msgstr ""
 "A Página de Configuração do Comportamento da Rotação nos Meta-Dados do "
 "digiKam"
 
-#: ../../setup_application/metadata_settings.rst:65
+#: ../../setup_application/metadata_settings.rst:73
 msgid ""
 "**Show images/thumbnails rotated according to orientation tag**: this will "
 "use any orientation information that your camera has included in the Exif "
@@ -153,7 +193,7 @@ msgstr ""
 "sua câmara extrai de forma errada esta informação de orientação, então "
 "poderá querer desligar esta funcionalidade."
 
-#: ../../setup_application/metadata_settings.rst:67
+#: ../../setup_application/metadata_settings.rst:75
 msgid ""
 "**Set orientation tag to normal after rotate/flip**: the auto-rotate option "
 "automatically corrects the orientation of images taken with digital cameras "
@@ -176,11 +216,11 @@ msgstr ""
 "digiKam faça alterações na marca de orientação, quando rodar ou inverter a "
 "imagem."
 
-#: ../../setup_application/metadata_settings.rst:72
+#: ../../setup_application/metadata_settings.rst:80
 msgid "Views Settings"
 msgstr "Configuração das Áreas"
 
-#: ../../setup_application/metadata_settings.rst:74
+#: ../../setup_application/metadata_settings.rst:82
 msgid ""
 "These settings allows to customize the metadata contents displayed in Exif, "
 "Makernotes, IPTC, XMP, and ExifTool viewers from the right sidebar. For more "
@@ -191,15 +231,15 @@ msgstr ""
 "ExifTool na barra lateral direita. Para mais detalhes, veja :ref:`esta "
 "secção <metadata_view>` do manual."
 
-#: ../../setup_application/metadata_settings.rst:80
+#: ../../setup_application/metadata_settings.rst:88
 msgid "The digiKam Settings For The Metadata Viewers"
 msgstr "A Configuração do digiKam para os Visualizadores de Meta-Dados"
 
-#: ../../setup_application/metadata_settings.rst:85
+#: ../../setup_application/metadata_settings.rst:93
 msgid "ExifTool Settings"
 msgstr "Configuração do ExifTool"
 
-#: ../../setup_application/metadata_settings.rst:87
+#: ../../setup_application/metadata_settings.rst:95
 msgid ""
 "ExifTool is a backend engine that digiKam can use to process operations on "
 "metadata, as view, read, and write. This panel only show the detection of "
@@ -212,11 +252,11 @@ msgstr ""
 "como os formatos suportados e as funcionalidades de leitura e escrita "
 "respectivas."
 
-#: ../../setup_application/metadata_settings.rst:93
+#: ../../setup_application/metadata_settings.rst:101
 msgid "The digiKam Settings For The ExifTool Backend"
 msgstr "A Configuração do digiKam para a Infra-Estrutura do ExifTool"
 
-#: ../../setup_application/metadata_settings.rst:97
+#: ../../setup_application/metadata_settings.rst:105
 msgid ""
 "To replace the Exiv2 backend by ExifTool with all read and write metadata "
 "operations, see the :ref:`Metadata Behavior <metadata_behavior>` section of "
@@ -226,11 +266,11 @@ msgstr ""
 "operações de leitura e escrita de meta-dados, veja a secção de :ref:"
 "`Comportamento dos Meta-Dados <metadata_behavior>` deste manual."
 
-#: ../../setup_application/metadata_settings.rst:102
+#: ../../setup_application/metadata_settings.rst:110
 msgid "Baloo Settings"
 msgstr "Configuração do Baloo"
 
-#: ../../setup_application/metadata_settings.rst:104
+#: ../../setup_application/metadata_settings.rst:112
 msgid ""
 "**Baloo** is the file indexing and file search framework for **KDE Plasma** "
 "under Linux, with a focus on providing a very small memory footprint along "
@@ -242,11 +282,11 @@ msgstr ""
 "memória, em conjunto com uma pesquisa extremamente rápida. O Baloo não é uma "
 "aplicação, mas sim um serviço para indexar ficheiros."
 
-#: ../../setup_application/metadata_settings.rst:110
+#: ../../setup_application/metadata_settings.rst:118
 msgid "The digiKam Settings For The Baloo Metadata Search Engine"
 msgstr "A Configuração do digiKam para o Motor de Busca de Meta-Dados Baloo"
 
-#: ../../setup_application/metadata_settings.rst:112
+#: ../../setup_application/metadata_settings.rst:120
 msgid ""
 "This page allows to share metadata stored in digiKam database with the Baloo "
 "search engine. Extra applications as **KDE Dolphin** file manager can use "
@@ -259,7 +299,7 @@ msgstr ""
 "fornecer resultados da pesquisa de ficheiros que são geridos pela base de "
 "dados do digiKam."
 
-#: ../../setup_application/metadata_settings.rst:116
+#: ../../setup_application/metadata_settings.rst:124
 msgid ""
 "This page is only available under Linux, not Windows and macOS. The KDE "
 "Plasma **Files Indexer** feature must be enabled in the KDE Plasma control "
@@ -269,11 +309,11 @@ msgstr ""
 "funcionalidade de **Indexação de Ficheiros** do Plasma do KDE deverá estar "
 "activa no painel de controlo do Plasma."
 
-#: ../../setup_application/metadata_settings.rst:121
+#: ../../setup_application/metadata_settings.rst:129
 msgid "Advanced Settings"
 msgstr "Configuração Avançada"
 
-#: ../../setup_application/metadata_settings.rst:123
+#: ../../setup_application/metadata_settings.rst:131
 msgid ""
 "The **Advanced** tab allows you to manage namespaces used by digiKam to "
 "store and retrieve tags, ratings and comments. This functionality is often "
@@ -286,11 +326,11 @@ msgstr ""
 "sincronizar os meta-dados entre diferentes aplicações. Por favor, deixe a "
 "configuração predefinida, caso não tenha a certeza do que deseja fazer aqui."
 
-#: ../../setup_application/metadata_settings.rst:125
+#: ../../setup_application/metadata_settings.rst:133
 msgid "The categories that you can manage with these advanced settings are:"
 msgstr "As categorias que pode gerir com estas definições avançadas são:"
 
-#: ../../setup_application/metadata_settings.rst:127
+#: ../../setup_application/metadata_settings.rst:135
 msgid ""
 "**Caption**: all languages-alternative comments (supported by XMP only), "
 "else the simple comments values (Exif and IPTC)."
@@ -299,7 +339,7 @@ msgstr ""
 "no XMP), caso contrário apenas os valores simples dos comentários (EXIF e "
 "IPTC)."
 
-#: ../../setup_application/metadata_settings.rst:128
+#: ../../setup_application/metadata_settings.rst:136
 msgid ""
 "**Color Label**: the color labels properties to apply on items in your "
 "workflow."
@@ -307,13 +347,13 @@ msgstr ""
 "**Legenda de Cor**: as propriedades das legendas de cores a aplicar nos "
 "itens nos seus procedimentos."
 
-#: ../../setup_application/metadata_settings.rst:129
+#: ../../setup_application/metadata_settings.rst:137
 msgid "**Rating**: the stars properties to apply on items in your workflow."
 msgstr ""
 "**Classificação**: as propriedades dos números de estrelas a aplicar nos "
 "itens no seu procedimento."
 
-#: ../../setup_application/metadata_settings.rst:130
+#: ../../setup_application/metadata_settings.rst:138
 msgid ""
 "**Tags**: the nested keywords hierarchy to apply on items in your workflow "
 "(supported by XMP only), else the simple flat list of keywords (Exif and "
@@ -323,7 +363,7 @@ msgstr ""
 "seu procedimento (suportado apenas pelo XML), caso contrário uma lista "
 "simples de palavras-chave (EXIF e IPTC)."
 
-#: ../../setup_application/metadata_settings.rst:131
+#: ../../setup_application/metadata_settings.rst:139
 msgid ""
 "**Title**: all languages-alternative titles (supported by XMP only), else "
 "the simple title values (Exif and IPTC)."
@@ -331,7 +371,7 @@ msgstr ""
 "**Título**: todos os títulos nas línguas alternativas (apenas suportado no "
 "XMP), caso contrário apenas os valores simples do título (EXIF e IPTC)."
 
-#: ../../setup_application/metadata_settings.rst:133
+#: ../../setup_application/metadata_settings.rst:141
 msgid ""
 "For each category you can set the read and write behavior in metadata. The "
 "default settings is to **Unify Read and Write** operations, but if you "
@@ -343,11 +383,11 @@ msgstr ""
 "mas, se desactivar esta operação, poderá personalizar de forma independente "
 "as **Opções de Leitura** e **Opções de Escrita**."
 
-#: ../../setup_application/metadata_settings.rst:139
+#: ../../setup_application/metadata_settings.rst:147
 msgid "The digiKam Advanced Metadata Settings For the **Caption** Category"
 msgstr "A Configuração Avançada dos Meta-Dados para a Categoria **Legenda**"
 
-#: ../../setup_application/metadata_settings.rst:141
+#: ../../setup_application/metadata_settings.rst:149
 msgid ""
 "On this example, the top **Caption** entry in the list is **Xmp.dc."
 "description**, and it will be read by digiKam first. If it contains a valid "
@@ -363,23 +403,23 @@ msgstr ""
 "itens é alta no topo e baixa no fundo. O item na lista é usado apenas se o "
 "item estiver activo através da marcação que antecede o nome."
 
-#: ../../setup_application/metadata_settings.rst:143
+#: ../../setup_application/metadata_settings.rst:151
 msgid "With the buttons on the right side, you can customize the list:"
 msgstr "Com os botões à direita, poderá personalizar a lista:"
 
-#: ../../setup_application/metadata_settings.rst:145
+#: ../../setup_application/metadata_settings.rst:153
 msgid "**Add**: allows to add a new entry in the tags list."
 msgstr "**Adicionar**: permite adicionar um novo item na lista de marcas."
 
-#: ../../setup_application/metadata_settings.rst:146
+#: ../../setup_application/metadata_settings.rst:154
 msgid "**Edit**: allows to modify the current select entry in the list."
 msgstr "**Editar**: permite modificar o item seleccionado de momento na lista."
 
-#: ../../setup_application/metadata_settings.rst:147
+#: ../../setup_application/metadata_settings.rst:155
 msgid "**Delete**: allows to remove the current select entry in the list."
 msgstr "**Apagar**: permite remover o item seleccionado de momento na lista."
 
-#: ../../setup_application/metadata_settings.rst:148
+#: ../../setup_application/metadata_settings.rst:156
 msgid ""
 "**Move up**: allows to move the current select entry in the list to a higher "
 "priority."
@@ -387,7 +427,7 @@ msgstr ""
 "**Subir**: permite mover o item seleccionado de momento para uma prioridade "
 "maior na lista."
 
-#: ../../setup_application/metadata_settings.rst:149
+#: ../../setup_application/metadata_settings.rst:157
 msgid ""
 "**Move Down**: allows to move the current selected entry in the list to a "
 "lower priority."
@@ -395,13 +435,13 @@ msgstr ""
 "**Descer**: permite mover o item seleccionado de momento para uma prioridade "
 "menor na lista."
 
-#: ../../setup_application/metadata_settings.rst:150
+#: ../../setup_application/metadata_settings.rst:158
 msgid "**Revert Changes**: allows to revert last changes done on the list."
 msgstr ""
 "**Reverter as Alterações**: permite anular as últimas alterações feitas na "
 "lista."
 
-#: ../../setup_application/metadata_settings.rst:151
+#: ../../setup_application/metadata_settings.rst:159
 msgid ""
 "**Save Profile**: allows to save the current configuration to a **Profile** "
 "file."
@@ -409,7 +449,7 @@ msgstr ""
 "**Gravar o Perfil**: permite gravar a configuração actual num ficheiro de "
 "**Perfil**."
 
-#: ../../setup_application/metadata_settings.rst:152
+#: ../../setup_application/metadata_settings.rst:160
 msgid ""
 "**Load Profile**: allows to load a saved configuration from a **Profile** "
 "file."
@@ -417,7 +457,7 @@ msgstr ""
 "**Carregar um Perfil**: permite carregar uma configuração gravada de um "
 "ficheiro de **Perfil**."
 
-#: ../../setup_application/metadata_settings.rst:153
+#: ../../setup_application/metadata_settings.rst:161
 msgid ""
 "**Revert To Default**: allows to reset the current list to the default "
 "values."
@@ -425,7 +465,7 @@ msgstr ""
 "**Reverter para as Predefinições**: permite repor a lista actual com os "
 "valores predefinidos."
 
-#: ../../setup_application/metadata_settings.rst:155
+#: ../../setup_application/metadata_settings.rst:163
 msgid ""
 "The **Profile** are simple ini-based text file used to store the advanced "
 "metadata settings to the disk. A profile can be loaded to overload the "
@@ -440,7 +480,7 @@ msgstr ""
 "outros programas de gestão de fotografias. O digiKam vem com um perfil de "
 "compatibilidade para o **DarkTable**."
 
-#: ../../setup_application/metadata_settings.rst:159
+#: ../../setup_application/metadata_settings.rst:167
 msgid ""
 "We recommend to always put XMP tags to the top priority on this list, as XMP "
 "has better features than IPC and Exif."
@@ -448,7 +488,7 @@ msgstr ""
 "Recomendamos que coloque sempre as marcas de XMP na prioridade de topo nessa "
 "lista, dado que o XMP tem melhores funcionalidades que o IPC e o EXIF."
 
-#: ../../setup_application/metadata_settings.rst:163
+#: ../../setup_application/metadata_settings.rst:171
 msgid ""
 "The **Tags** category provide an extra option named **Read All Metadata For "
 "Tags** to force operations on all the namespaces."
