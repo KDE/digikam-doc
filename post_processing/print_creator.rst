@@ -193,7 +193,7 @@ The easiest way to get started is to copy templates.xml file and modify it. Temp
 
 .. code-block:: shell
 
-    cp -r /usr/share/apps/digikam/templates/templates.xml ~/.config/share/apps/digikam/templates/my_templates.xml
+    cp -r /usr/share/digikam/templates/templates.xml ~/.config/share/apps/digikam/templates/my_templates.xml
 
 - Remove all pages and add yours then create the desktop file accordingly.
 
