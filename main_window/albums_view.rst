@@ -45,7 +45,7 @@ There are a number of ways to create a new Album. You can create a new Album whe
 
     Under Windows, file locking used by the system can introduce time latencies or dysfunctions. digiKam uses a low level file management with Qt framework that cannot handle locked files. The following conditions must be met so that there are no problems with digiKam:
 
-        - Album monitoring in digiKam must be deactivated. See the :ref:`the Collection Settings <collections_settings>` for details.
+        - Album monitoring in digiKam must be deactivated. See the :ref:`Collection Settings <collections_settings>` for details.
         - Folders must not be part of a Windows file or network share.
         - Folders or pictures must not be open in other programs such as Explorer or similar.
 
