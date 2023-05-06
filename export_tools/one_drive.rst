@@ -21,6 +21,10 @@ This tool allows the user to upload photos to the OneDrive web-service.
 
 The tool can be used to upload a selection of images from your collections to the remote OneDrive server using the Internet.
 
+.. important::
+
+    OneDrive file storage is currently limited to host only files with a size lower than 4Mb.
+
 When accessing the tool for the first time by the :menuselection:`Export --> Export to OneDrive` :kbd:`Ctrl+Alt+Shift+O` menu entry, you are taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched you will log in to OneDrive:
 
 .. figure:: images/export_onedrive_login.webp
