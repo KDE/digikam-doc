@@ -24,6 +24,10 @@ This tool allows the user to upload photos to the Google web services. Two onlin
 
 **Google Drive** allows users to store files in the cloud, synchronize files across devices, and share files. Users can change privacy settings for individual files and can search for a content by describing its visuals, and use natural language to find specific files.
 
+.. important::
+
+    digiKam is not currently compatible with the **Google Advanced Protection Program (GAPP)** account settings. This protection serves for journalists and people who could be exposed to increased attacks. digiKam is compatible with a Google normal account.
+
 The tools can be used to upload an image collections from your computer to the remote Google server using the Internet. Use respectively the :menuselection:`Export --> Export to Google Photo` :kbd:`Ctrl+Alt+Shift+P` and by the :menuselection:`Export --> Export to Google Drive` :kbd:`Ctrl+Alt+Shift+D` menu entries to access to these tools, or uses the icons from **Tools** in Right sidebar.
 
 Login to your Account
