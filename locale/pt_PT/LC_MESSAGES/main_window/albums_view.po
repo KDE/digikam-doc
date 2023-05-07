@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-18 00:39+0000\n"
-"PO-Revision-Date: 2023-03-22 12:16+0000\n"
+"POT-Creation-Date: 2023-05-06 00:39+0000\n"
+"PO-Revision-Date: 2023-05-06 13:27+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-POFile-SpellExtra: digiKam iconcollection menuselection ref kbd Enter\n"
-"X-POFile-SpellExtra: EXIF\n"
+"X-POFile-SpellExtra: EXIF Explorer\n"
 
 #: ../../main_window/albums_view.rst:1
 msgid "digiKam Main Window Albums View"
@@ -136,11 +136,35 @@ msgstr ""
 "álbuns. Tem de verificar as propriedades da colecção na :ref:`janela  de "
 "configuração do digiKam <collections_settings>`."
 
-#: ../../main_window/albums_view.rst:47
+#: ../../main_window/albums_view.rst:46
+msgid ""
+"Under Windows, file locking used by the system can introduce time latencies "
+"or dysfunctions. digiKam uses a low level file management with Qt framework "
+"that cannot handle locked files. The following conditions must be met so "
+"that there are no problems with digiKam:"
+msgstr "No Windows, o bloqueio de ficheiros usado pelo sistema poderá introduzir algumas latências ou problemas de tempo. O digiKam usa uma gestão de ficheiros de baixo nível com a plataforma Qt que não consegue lidar com ficheiros bloqueados. As seguintes condições deverão ser cumpridas para que não haja problemas com o digiKam:"
+
+#: ../../main_window/albums_view.rst:48
+msgid ""
+"Album monitoring in digiKam must be deactivated. See the :ref:`Collection "
+"Settings <collections_settings>` for details."
+msgstr "A monitorização dos álbuns no digiKam deverá estar desactivada. Veja a :ref:`Configuração da Colecção <collections_settings>` para mais detalhes."
+
+#: ../../main_window/albums_view.rst:49
+msgid "Folders must not be part of a Windows file or network share."
+msgstr "As pastas não deverão fazer parte de um ficheiro ou partilha de rede do Windows."
+
+#: ../../main_window/albums_view.rst:50
+msgid ""
+"Folders or pictures must not be open in other programs such as Explorer or "
+"similar."
+msgstr "As pastas ou imagens não deverão estar abertas noutros programas, como o Explorer ou outros do género."
+
+#: ../../main_window/albums_view.rst:55
 msgid "Deleting an Album"
 msgstr "Remover um Álbum"
 
-#: ../../main_window/albums_view.rst:49
+#: ../../main_window/albums_view.rst:57
 msgid ""
 "When you delete an Album from digiKam it will be moved into the internal "
 "Trash Can. As an option you could change this behavior, so that delete "
@@ -161,11 +185,11 @@ msgstr ""
 "sobre o álbum na árvore de Álbuns e seleccionar **Apagar o Álbum** no menu "
 "de contexto."
 
-#: ../../main_window/albums_view.rst:54
+#: ../../main_window/albums_view.rst:62
 msgid "Adding a Photograph to an Album"
 msgstr "Adicionar uma Fotografia a um Álbum"
 
-#: ../../main_window/albums_view.rst:56
+#: ../../main_window/albums_view.rst:64
 msgid ""
 "Most of the time you will create new Albums and populate them with "
 "photographs directly from your camera using the Camera Tool. However, "
@@ -192,7 +216,7 @@ msgstr ""
 "opção **Obter as Novas** :kbd:`Ctrl+N` no mesmo menu irá copiar apenas as "
 "imagens que não existam já na pasta de destino."
 
-#: ../../main_window/albums_view.rst:58
+#: ../../main_window/albums_view.rst:66
 msgid ""
 "Additionally, you can use drag and drop to import photographs. Drag the "
 "photographs icons, for example from your preferred file manager. Then drop "
@@ -202,7 +226,7 @@ msgstr ""
 "Arraste os ícones das fotografias, por exemplo, a partir do seu gestor de "
 "ficheiros favorito. Depois largue-as na lista de imagens no lado direito."
 
-#: ../../main_window/albums_view.rst:60
+#: ../../main_window/albums_view.rst:68
 msgid ""
 "If you have a scanner configured, you can also scan a photograph straight "
 "into an Album. Select menu entry :menuselection:`Import --> Import from "
@@ -212,15 +236,15 @@ msgstr ""
 "directamente para um Álbum. Seleccione a opção do menu :menuselection:"
 "`Importar --> Importar de um 'Scanner'...`."
 
-#: ../../main_window/albums_view.rst:65
+#: ../../main_window/albums_view.rst:73
 msgid "Moving or Copying Photographs"
 msgstr "Mover ou Copiar Fotografias"
 
-#: ../../main_window/albums_view.rst:68
+#: ../../main_window/albums_view.rst:76
 msgid "Between Albums"
 msgstr "Entre Álbuns"
 
-#: ../../main_window/albums_view.rst:70
+#: ../../main_window/albums_view.rst:78
 msgid ""
 "Simply drag the photograph and drop it on the destination Album to move or "
 "copy it from one Album to another. A menu will appear that gives you the "
@@ -234,11 +258,11 @@ msgstr ""
 "várias fotografias da mesma forma; basta seleccionar todas as fotografias "
 "que deseja mover e arrastá-las para o álbum de destino."
 
-#: ../../main_window/albums_view.rst:73
+#: ../../main_window/albums_view.rst:81
 msgid "With Other Applications"
 msgstr "Com Outras Aplicações"
 
-#: ../../main_window/albums_view.rst:75
+#: ../../main_window/albums_view.rst:83
 msgid ""
 "The behavior will be the same as copying between albums, but the difference "
 "will depend on the target application where you paste items and on what "
@@ -252,11 +276,11 @@ msgstr ""
 "colagem dos campos de entrada irá conter a localização. Um processador de "
 "texto que consiga também usar imagens poderá pegar no URL e inserir a imagem."
 
-#: ../../main_window/albums_view.rst:80
+#: ../../main_window/albums_view.rst:88
 msgid "Managing Albums"
 msgstr "Gerir os Álbuns"
 
-#: ../../main_window/albums_view.rst:82
+#: ../../main_window/albums_view.rst:90
 msgid ""
 "Album Properties can help you remember which kind of photographs are in an "
 "Album and can also help you to organize the Albums tree. To access the Album "
@@ -268,15 +292,15 @@ msgstr ""
 "Para aceder às Propriedades do Álbum, carregue com o botão direito sobre um "
 "Álbum e seleccione **Propriedades** :kbd:`Alt+Enter` no menu de contexto."
 
-#: ../../main_window/albums_view.rst:88
+#: ../../main_window/albums_view.rst:96
 msgid "The digiKam Album Properties Dialog"
 msgstr "A janela de Propriedades do Álbum do digiKam"
 
-#: ../../main_window/albums_view.rst:90
+#: ../../main_window/albums_view.rst:98
 msgid "The Album Properties dialog allows you to set:"
 msgstr "A janela de Propriedades do Álbum permite-lhe alterar:"
 
-#: ../../main_window/albums_view.rst:92
+#: ../../main_window/albums_view.rst:100
 msgid ""
 "The Album **Title**: Name of the Album, identical with the name of the "
 "folder on your hard disk. If you edit it here, the folder will also be "
@@ -285,7 +309,7 @@ msgstr ""
 "O **Título ** do Álbum: o Nome do Álbum, idêntico ao nome da pasta no seu "
 "disco rígido. Se o editar aqui, a pasta também irá mudar de nome."
 
-#: ../../main_window/albums_view.rst:94
+#: ../../main_window/albums_view.rst:102
 msgid ""
 "The Album **Category**: this is a way of grouping your Albums together by a "
 "common label. The Category you set will be used to order your albums when "
@@ -303,7 +327,7 @@ msgstr ""
 "`Configuração --> Configurar o digiKam... --> página Vistas --> página "
 "Categorias`."
 
-#: ../../main_window/albums_view.rst:96
+#: ../../main_window/albums_view.rst:104
 msgid ""
 "The **Caption** for the Album: Usually a short description of the content, "
 "but of course you are free to abuse it in any conceivable way. But beware: "
@@ -314,7 +338,7 @@ msgstr ""
 "atenção: isto será apresentado no separador de topo da janela principal da "
 "Imagem ;-)"
 
-#: ../../main_window/albums_view.rst:98
+#: ../../main_window/albums_view.rst:106
 msgid ""
 "The Album **Date**: this will be used when you order your Albums by date "
 "using :menuselection:`View --> Sort Albums --> By Date`."
@@ -322,7 +346,7 @@ msgstr ""
 "A **Data** do Álbum: isto será usado quando ordenar os seus álbuns por data, "
 "usando a opção :menuselection:`Ver --> Ordenar os Álbuns --> Por Data`."
 
-#: ../../main_window/albums_view.rst:100
+#: ../../main_window/albums_view.rst:108
 msgid ""
 "**Oldest**, **Average**, and **Newest** buttons: these will set the **Date** "
 "to the oldest, average or latest date of the images in that album. It will "
@@ -336,11 +360,11 @@ msgstr ""
 "no álbum com base nos cabeçalhos EXIF. Se isso falhar, irá tentar usar em "
 "alternativa a data de modificação dos ficheiros nessa pasta."
 
-#: ../../main_window/albums_view.rst:105
+#: ../../main_window/albums_view.rst:113
 msgid "Setting the Album Icon"
 msgstr "Configurar o Ícone do Álbum"
 
-#: ../../main_window/albums_view.rst:107
+#: ../../main_window/albums_view.rst:115
 msgid ""
 "digiKam displays the usual folder icon in the Albums list. You can choose "
 "one of your photographs instead. This may help you to remember what kind of "
@@ -350,7 +374,7 @@ msgstr ""
 "uma das suas fotografias em alternativa. Isto podê-lo-á ajudar a recordar "
 "que tipos de fotografias existem num dado álbum."
 
-#: ../../main_window/albums_view.rst:109
+#: ../../main_window/albums_view.rst:117
 msgid ""
 "To select a photograph as the Album icon, click with the right mouse button "
 "on the photograph that you want to use as the Album icon and select **Set as "
@@ -365,7 +389,7 @@ msgstr ""
 "do Álbum. Arraste o ícone das fotografias na área de miniaturas e largue-a "
 "sobre o Álbum seleccionado de momento na lista de Álbuns."
 
-#: ../../main_window/albums_view.rst:113
+#: ../../main_window/albums_view.rst:121
 msgid ""
 "An Album can only be in one Album Collection and Album Collections cannot be "
 "nested."
@@ -373,7 +397,7 @@ msgstr ""
 "Um Álbum só poderá estar numa Colecção de Álbuns e as colecções não podem "
 "ser encadeadas."
 
-#: ../../main_window/albums_view.rst:115
+#: ../../main_window/albums_view.rst:123
 msgid ""
 "digiKam also supports tagging individual photographs. Album Categories are "
 "different from photograph tagging because the Album Category applies to all "
