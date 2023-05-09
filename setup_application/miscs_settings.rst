@@ -277,6 +277,6 @@ This section allows to tune special low level configurations used by application
     :alt:
     :align: center
 
-    The digiKam Under Windows Running With DebugView
+    digiKam Running Under Windows With DebugView
 
 - **Download Face Engine Data**: With this button you can load face engine deep-learning model files if you pass this stage at first-run.
