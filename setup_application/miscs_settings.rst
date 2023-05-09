@@ -259,18 +259,24 @@ System Settings
 
 This section allows to tune special low level configurations used by application. Only change these settings if you know what you do.
 
-    - **Use high DPI scaling from the screen factor**: with this option application will scale coordinates in device independent manner according to display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and are therefore theoretically just as large as the graphical interface elements of the system.
-
-    - **Use pixmaps with high DPI resolution**: with this option, pixmaps sizes used internally by application will have a device-independent layout geometry. It activates high-resolution icons, otherwise the elements in digiKam would look very blurry under high resolutions. Also, it's recommended to use this option in multi-screen context when resolutions are not the same.
-
-    - **Disable hardware acceleration OpenCL**: this option will disable GPU accelerations, especially with faces management and image quality sorting. This option affect the `OpenCV <https://opencv.org/>`_ engine used in background for the intensive computation on images. To see the OpenCV configuration, go to :menuselection:`Help --> Components Information` menu entry, and :ref:`OpenCV section from the dialog <help_componentsinfo>`.
-
-    - **Enable internal debug logging**: this option will turn one the debug trace on the console used to investigate dysfunctions.
-
-    - **Download Face Engine Data**: With this button you can load face engine deep-learning model files if you pass this stage at first-run.
-
 .. figure:: images/setup_miscs_system.webp
     :alt:
     :align: center
 
     The digiKam System Configuration Page
+
+- **Use high DPI scaling from the screen factor**: with this option application will scale coordinates in device independent manner according to display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and are therefore theoretically just as large as the graphical interface elements of the system.
+
+- **Use pixmaps with high DPI resolution**: with this option, pixmaps sizes used internally by application will have a device-independent layout geometry. It activates high-resolution icons, otherwise the elements in digiKam would look very blurry under high resolutions. Also, it's recommended to use this option in multi-screen context when resolutions are not the same.
+
+- **Disable hardware acceleration OpenCL**: this option will disable GPU accelerations, especially with faces management and image quality sorting. This option affect the `OpenCV <https://opencv.org/>`_ engine used in background for the intensive computation on images. To see the OpenCV configuration, go to :menuselection:`Help --> Components Information` menu entry, and :ref:`OpenCV section from the dialog <help_componentsinfo>`.
+
+- **Enable internal debug logging**: this option will turn one the debug traces on the console used to investigate dysfunctions. Under Linux and macOS, just start the application from a console to show the messages. Under Windows, you needs an extra Microsoft application named `DebugView <http://technet.microsoft.com/en-us/sysinternals/bb896647.aspx>`_ to display the messages. The default settings from DebugView is enough to capture the traces from the application.
+
+.. figure:: images/setup_miscs_system_debugview.webp
+    :alt:
+    :align: center
+
+    The digiKam Under Windows Running With DebugView
+
+- **Download Face Engine Data**: With this button you can load face engine deep-learning model files if you pass this stage at first-run.
