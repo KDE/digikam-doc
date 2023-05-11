@@ -107,7 +107,9 @@ The option **Preview shows the full image** will always use the full image data 
 
 Only if the last option is checked, the drop down field to the right of **Raw images** is accessible. It offers three options: with **Automatic** selected, the Libraw decoder will decode the RAW data automatically without any adjustments from the user. This may lead to weird results sometimes. The algorithm also takes screen resolution and CPU speed into account to achieve an optimum regarding speed and rendering quality. **Embedded preview** will try to use the (JPEG) preview embedded in RAW files. **Raw data in half size** will show unprocessed RAW data in reduced size.
 
-The option **Preview is converted to 8 bits for a faster viewing** must be unchecked if you do not want to convert a 16 bits preview image to 8 bits. This will improve performances.
+The option **Preview image is converted to 8 bits for a faster viewing** must be unchecked if you do not want to convert a 16 bits preview image to 8 bits. This will improve performances.
+
+The option **Preview image is always scaled to fit to window** will enlarge the image to always fit the free space available on the canvas. More precisely, fit to window want means that it would scale larger images smaller to fit, as well as scale smaller images larger to fit. For small image, the enlargement can introduce artifacts. If you don't like to see small images enlarged, leave this option off.
 
 The option **Show icons and text over preview** will show elements for rotation, face tags, full screen mode, etc. in the top left corner of the image preview and a text indicating which data the preview is showing in the top right corner.
 
