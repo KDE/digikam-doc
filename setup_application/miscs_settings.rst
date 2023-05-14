@@ -271,7 +271,7 @@ This section allows to tune special low level configurations used by application
 
 - **Disable hardware acceleration OpenCL**: this option will disable GPU accelerations, especially with faces management and image quality sorting. This option affect the `OpenCV <https://opencv.org/>`_ engine used in background for the intensive computation on images. To see the OpenCV configuration, go to :menuselection:`Help --> Components Information` menu entry, and :ref:`OpenCV section from the dialog <help_componentsinfo>`.
 
-- **Enable internal debug logging**: this option will turn on the debug traces on the console used to investigate dysfunctions. Under Linux and macOS, just start the application from a console to show the messages. Under Windows, you needs an extra Microsoft application named `DebugView <http://technet.microsoft.com/en-us/sysinternals/bb896647.aspx>`_ to display the messages. The default settings from DebugView is enough to capture the traces from the application.
+- **Enable internal debug logging**: this option will turn on the debug traces on the console used to investigate dysfunctions. Under Linux and macOS, just start the application from a console to show the messages. Under Windows, you needs an extra Microsoft application named `DebugView <https://learn.microsoft.com/sysinternals/downloads/debugview>`_ to display the messages. The default settings from DebugView is enough to capture the traces from the application.
 
 .. figure:: images/setup_miscs_system_debugview.webp
     :alt:
