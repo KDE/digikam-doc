@@ -94,7 +94,7 @@ Later, other extra digiKam clients would also be conceivable if the NAS has a di
 Ignore Directories from your Collections
 ----------------------------------------
 
-The **Ignored Directories** view allows to setup the list of the directories to ignore while scanning collection contents. The directory names are case sensitive and must be separated by semicolon.
+The **Ignored Directories** view allows to setup the list of the directories to ignore while scanning collection contents. The directory names are case sensitive and must be separated by semicolon. The list of ignored directories does not support paths intentionally. Press on the **Currently ignored directories** link to show the list of directories already knows by digiKam internally.
 
 .. figure:: images/setup_ignored_directories.webp
     :alt:
