@@ -25,3 +25,8 @@ First, you need to select one item from your collection to render as a matrix of
 
     The Mosaic-Wall Tool Dialog
 
+On the right side of the dialog the previously selected image must be render on the canvas with the matrix overlay. The buttons available on the bottom-right corner allows to adjust the canvas zoom level to show the details on the rendered mosaic.
+
+On the left side of the dialog, the tool settings allows to customize all parameters used to generate the mosaic. If the preselected photo from your collection is not the one that you want to render as a mosaic, you can change it using the **Load Base Image** button.
+
+The next button **Set Image Folder** allows to set the directory where are stored the images to host on the matrix. The tool will parse the contents later in the process to generate the mosaic by analysis all photos from this directory and apply each one on the matrix.
