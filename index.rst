@@ -704,6 +704,10 @@ Post Processing
 
         :ref:`jalbum_export`
 
+    .. container:: tile no-descr
+
+        :ref:`mosaicwall_tool`
+
 .. toctree::
    :maxdepth: 2
    :hidden:

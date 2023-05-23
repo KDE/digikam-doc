@@ -37,3 +37,4 @@ This section explain how to use the digiKam post processing tools.
    post_processing/wall_paper.rst
    post_processing/ocrtext_converter.rst
    post_processing/jalbum_export.rst
+   post_processing/mosaicwall_tool.rst
