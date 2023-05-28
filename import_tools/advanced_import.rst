@@ -123,3 +123,10 @@ This last section of the Settings tab offers to run scripts to manipulate the im
     :align: center
 
     The Import Tool Albums Scripting Helper Dialog
+
+Post-Processing and Metadata
+----------------------------
+
+An important point to considerate is the post-processing stage after downloading from the camera. Due to limitations of camera drivers to handle items metadata from the devices, all renaming and album creating operations are preceded by a parse of files to get real information and pass all values to the dedicated modules to re-organize files before a database integration.
+
+So, only the current view of the import tool depends on the camera metadata settings, i.e. metadata viewer of the sidebar, date in the thumbnail, etc. After the download, all metadata operations are post-processed from the downloaded images. Therefore, there can be a difference between the import view information and the real metadata determined later and used to organize the import in your collections.
