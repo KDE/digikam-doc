@@ -70,6 +70,10 @@ The last tab from the settings view allows to tune advanced configuration, as th
 
    The deep-learning YOLO v3 model is more powerful but it's time and CPU consuming. Only turn on this option if you hardware can supports intensive computations. It's only used for face detection, especially to detect very small faces, blurry faces, or group photos with many faces.
 
+.. tip::
+
+   Due to technical limitations under Windows, the multi-cores support with a Mysql/MariaDB database will not provide good performances. We recommend to use a SQlite database instead.
+
 For the task we are talking about you check **Detect Faces**, of course. Since face detection is a time-consuming task you better don't hit **Scan** right away, rather **Options**. An additional area will fold out organized with three tabs. In **Search-In** you can confine the scan to certain albums or tags. In **Settings** you can adjust the **Face Accuracy** with a balance between **Sensitivity** and **Specificity** that suits your needs. A higher specificity implies higher accuracy, however this results in a smaller set of results. Under Advanced you will find two check-boxes. The first is explained by the text above it. The second is for face recognition, see next chapter.
 
 Once you have chosen your options carefully you click **Scan** and after a while, depending on the scope of your selection, the result will be presented in the Image Area. In the Tags list of the Left Sidebar you will see the People branch of your tag tree. You will see the whole scan result only if the topmost tag **People** is selected. In the tree you will see a new virtual tag called **Unknown** which will show all those images where faces are recognized but not yet connected to a person. If you just scanned for the first time you will find the whole result also here.
