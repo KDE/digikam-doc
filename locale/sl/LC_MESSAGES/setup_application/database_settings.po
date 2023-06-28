@@ -1,0 +1,494 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Digikam Manual 8.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-18 00:39+0000\n"
+"PO-Revision-Date: 2023-06-27 19:41+0200\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: LANGUAGE <kde-i18n-doc@kde.org>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.1\n"
+
+#: ../../setup_application/database_settings.rst:1
+msgid "digiKam Database Settings"
+msgstr "Nastavitve baze podatkov digiKam"
+
+#: ../../setup_application/database_settings.rst:1
+msgid "digiKam, documentation, user manual, photo management, open source, free, learn, easy, database, setup, mysql, mariadb, sqlite, migration, local, remote, server"
+msgstr "digiKam, dokumentacija, uporabniški priročnik, upravljanje fotografij, odprta koda, brezplačno, učenje, enostavno, zbirka podatkov, nastavitev, mysql, mariadb, sqlite, selitev, lokalno, oddaljeno, strežnik"
+
+#: ../../setup_application/database_settings.rst:14
+msgid "Database Settings"
+msgstr "Nastavitve zbirke podatkov"
+
+#: ../../setup_application/database_settings.rst:16
+msgid "Contents"
+msgstr "Vsebina"
+
+#: ../../setup_application/database_settings.rst:20
+msgid "For an introduction of internal data storage, please refer to :ref:`Introduction of digiKam Databases <database_intro>` section."
+msgstr "Za predstavitev notranjega shranjevanja podatkov glejte razdelek :ref:`Uvod v baze podatkov digiKam <database_intro>`."
+
+#: ../../setup_application/database_settings.rst:25
+msgid "The Sqlite Database"
+msgstr "Baza podatkov Sqlite"
+
+#: ../../setup_application/database_settings.rst:27
+msgid "`SQLite <https://sqlite.org/>`_ is a relational database management system, written in C programming library. SQLite is not directly comparable to client/server SQL database engines such as MySQL, Oracle or PostgreSQL. Rather, it is an embedded SQL database engine, i.e. it is embedded in an end program. SQLite reads and writes directly to ordinary disk files. For device-local storage with low writer concurrency and less than a terabyte of content, SQLite is almost always a better solution. SQLite is fast and reliable and it requires no configuration or maintenance. It keeps things simple. SQLite \"just works\"."
+msgstr "`SQLite <https://sqlite.org/>`_ je sistem za upravljanje relacijskih baz podatkov, napisan v programski knjižnici C. "
+
+#: ../../setup_application/database_settings.rst:29
+msgid "By default, digiKam uses SQLite as its back-end for storing important metadata and thumbnails. Three SQLite files used for storing them are named respectively:"
+msgstr "DigiKam privzeto uporablja SQLite kot zaledje za shranjevanje pomembnih metapodatkov in sličic. "
+
+#: ../../setup_application/database_settings.rst:32
+msgid "Database"
+msgstr "Baza podatkov"
+
+#: ../../setup_application/database_settings.rst:32
+msgid "File-Name"
+msgstr "Ime datoteke"
+
+#: ../../setup_application/database_settings.rst:34
+msgid "**Core**"
+msgstr "**Jedro**"
+
+#: ../../setup_application/database_settings.rst:34
+msgid ":file:`digikam4.db`"
+msgstr "datoteka:`digikam4.db`"
+
+#: ../../setup_application/database_settings.rst:35
+msgid "**Thumbs**"
+msgstr "**Palci**"
+
+#: ../../setup_application/database_settings.rst:35
+msgid ":file:`thumbnails-digikam.db`"
+msgstr "file:`thumbnails-digikam.db`"
+
+#: ../../setup_application/database_settings.rst:36
+msgid "**Similarity**"
+msgstr "**Podobnost**"
+
+#: ../../setup_application/database_settings.rst:36
+msgid ":file:`similarity.db`"
+msgstr "file:`similarity.db`"
+
+#: ../../setup_application/database_settings.rst:37
+msgid "**Faces**"
+msgstr "**Obrazi**"
+
+#: ../../setup_application/database_settings.rst:37
+msgid ":file:`recognition.db`"
+msgstr "file:`recognition.db`"
+
+#: ../../setup_application/database_settings.rst:40
+msgid "To make your application run fast and smoothly, it is recommended to check and optimize your databases once in awhile. This could be achieved with the menu option :menuselection:`Tools --> Maintenance...` and the stage **Perform Database Cleaning**. See this :ref:`Maintenance tool section <maintenance_database>` for details. A recommended tool is `SQLite Browser <https://sqlitebrowser.org/>`_, a high quality and easy to use visual tool for managing database objects. For Ubuntu and its derivatives, it could be retrieved using `sudo apt install sqlitebrowser`. Now you can switch to the directory where databases are stored and visualize the database contents."
+msgstr "Da bo vaša aplikacija delovala hitro in gladko, je priporočljivo, da občasno preverite in optimizirate svoje zbirke podatkov. "
+
+#: ../../setup_application/database_settings.rst:45
+msgid "Take care to use a place hosted by fast hardware (such as SSD or NVMe) with enough free space especially for thumbnails database. A remote file system such as NFS cannot be used here. For performance and technical reasons relevant of SQLite, you cannot use a media from the network."
+msgstr "Pazite, da uporabite mesto, ki ga gosti hitra strojna oprema (kot je SSD ali NVMe) z dovolj prostega prostora, zlasti za zbirko sličic. "
+
+#: ../../setup_application/database_settings.rst:47
+msgid "SQLite database files could be found in your *collection* folder, which you have added to digiKam. (By default, if you add your “Pictures” collection, the database files will be present in :file:`~/Pictures` folder)."
+msgstr "Datoteke baze podatkov SQLite lahko najdete v vaši mapi *zbirka*, ki ste jo dodali v digiKam. "
+
+#: ../../setup_application/database_settings.rst:53
+msgid "The digiKam SQLite Configuration Page"
+msgstr "Konfiguracijska stran digiKam SQLite"
+
+#: ../../setup_application/database_settings.rst:57
+msgid "The **WAL** SQLite mode is a very important option that we recommend to turn on with large databases to optimize transactions and improve performances."
+msgstr "Način **WAL** SQLite je zelo pomembna možnost, ki jo priporočamo, da jo vključite z velikimi bazami podatkov za optimizacijo transakcij in izboljšanje zmogljivosti."
+
+#: ../../setup_application/database_settings.rst:60
+msgid "The MySQL Database"
+msgstr "Baza podatkov MySQL"
+
+#: ../../setup_application/database_settings.rst:63
+msgid "MySQL Versus SQLite"
+msgstr "MySQL proti SQLite"
+
+#: ../../setup_application/database_settings.rst:65
+msgid "`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ is an open-source, relational database management system, written in C and C++. Original development of MySQL by Michael Widenius and David Axmark beginning in 1994. Sun Microsystems acquired MySQL in 2008, which was later acquired by Oracle in 2010. MySQL currently works on almost all system platforms (Linux, Microsoft Windows, OS X, SunOS …)."
+msgstr "`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ je odprtokodni sistem za upravljanje relacijskih baz podatkov, napisan v C in C. "
+
+#: ../../setup_application/database_settings.rst:67
+msgid "`MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry."
+msgstr "`Strežnik MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ je razcep strežnika MySQL, ki ga je razvila skupnost. "
+
+#: ../../setup_application/database_settings.rst:69
+msgid "MariaDB has actually overtaken MySQL, because of few basic reasons:"
+msgstr "MariaDB je dejansko prehitel MySQL zaradi nekaj osnovnih razlogov:"
+
+#: ../../setup_application/database_settings.rst:71
+msgid "MariaDB development is more open and vibrant."
+msgstr "Razvoj MariaDB je bolj odprt in živahen."
+
+#: ../../setup_application/database_settings.rst:73
+msgid "More cutting edge features."
+msgstr "Več vrhunskih funkcij."
+
+#: ../../setup_application/database_settings.rst:75
+msgid "More storage engines."
+msgstr "Več mehanizmov za shranjevanje."
+
+#: ../../setup_application/database_settings.rst:77
+msgid "Better performance."
+msgstr "Boljša zmogljivost."
+
+#: ../../setup_application/database_settings.rst:79
+msgid "Compatible and easy to migrate."
+msgstr "Združljiv in enostaven za selitev."
+
+#: ../../setup_application/database_settings.rst:81
+msgid "digiKam also provides support for popular MySQL database engine. Of course, you might wonder why you’d want to switch to MySQL when SQLite already does a good job of managing the data? MySQL offers many advantages for storing digiKam data, especially when collections include **more than 100,000 items**. With such large collections, SQLite introduces latency which slows down the application."
+msgstr "digiKam nudi tudi podporo za priljubljen mehanizem baze podatkov MySQL. "
+
+#: ../../setup_application/database_settings.rst:85
+msgid "With **WAL** option enabled, SQLite can be easily used for more than 100,000 items especially with an SSD or NVMe storage. It must be even faster than MySQL and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details."
+msgstr "Z omogočeno možnostjo **WAL** lahko SQLite preprosto uporabite za več kot 100.000 predmetov, zlasti s SSD ali NVMe shrambo. "
+
+#: ../../setup_application/database_settings.rst:87
+msgid "Using MySQL as digiKam’s database back-end allows you to store the data on local as well as remote server. Local, to replace the local SQLite storage and latter, to use a shared computer through network. Using MySQL as digiKam’s database back-end allows you to store the data on a remote server. This way, you can use multiple digiKam installations (For instance,on your notebook and PC) to access and manage your photo collections. You can also use MySQL tools to backup and analyze digiKam’s data."
+msgstr "Uporaba MySQL kot ozadja baze podatkov digiKam vam omogoča shranjevanje podatkov na lokalnem in oddaljenem strežniku. "
+
+#: ../../setup_application/database_settings.rst:89
+msgid "To switch from SQLite to MySQL database, go to :menuselection:`Settings --> Configure digiKam...` and then under **Database** section, select a database from the drop down list."
+msgstr "Če želite preklopiti iz SQLite v bazo podatkov MySQL, pojdite na :menuselection:`Settings --> Configure digiKam...` in nato pod razdelkom **Database** izberite bazo podatkov s spustnega seznama."
+
+#: ../../setup_application/database_settings.rst:91
+msgid "**MySQL Internal**: This allows to run an internal database server on your system. digiKam uses Unix socket for the connection."
+msgstr "**MySQL Internal**: To omogoča zagon notranjega strežnika baze podatkov v vašem sistemu. "
+
+#: ../../setup_application/database_settings.rst:93
+msgid "**MySQL Server**: Use this if you’ve your data on remote server and you’re on a different machine trying to access the collection."
+msgstr "**MySQL Server**: To uporabite, če imate svoje podatke na oddaljenem strežniku in ste na drugem računalniku, ki poskuša dostopati do zbirke."
+
+#: ../../setup_application/database_settings.rst:98
+msgid "The MySQL Internal Server"
+msgstr "Notranji strežnik MySQL"
+
+#: ../../setup_application/database_settings.rst:100
+msgid "While using a large collection hosted on hard drive (HDD - not SSD or NVMe device), with a size **greater than 100,000 items**, the application tends to slow down. To avoid the delay and maintain efficiency, digiKam provides option of using **MySQL Internal**. To be clear, this isn’t an actual server, or a public network. Instead, it is a server that runs only while application is running."
+msgstr "Med uporabo velike zbirke, ki gostuje na trdem disku (HDD - ne naprava SSD ali NVMe), z velikostjo **več kot 100.000 elementov**, se aplikacija ponavadi upočasni. "
+
+#: ../../setup_application/database_settings.rst:102
+msgid "Internal server creates a separate database that can be accessed (only while application is running) using the command:"
+msgstr "Notranji strežnik ustvari ločeno bazo podatkov, do katere je mogoče dostopati (samo med izvajanjem aplikacije) z ukazom:"
+
+#: ../../setup_application/database_settings.rst:108
+msgid "Internal server uses tree MySQL Binary Tools: :file:`mysql_install_db`, :file:`mysqladmin`, and :file:`mysqld`. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system."
+msgstr "Notranji strežnik uporablja drevesna binarna orodja MySQL: :file:`mysql_install_db`, :file:`mysqladmin` in :file:`mysqld`. "
+
+#: ../../setup_application/database_settings.rst:114
+msgid "The digiKam MySQL Internal Configuration Page"
+msgstr "Notranja konfiguracijska stran digiKam MySQL"
+
+#: ../../setup_application/database_settings.rst:119
+msgid "The MySQL Remote Server"
+msgstr "Oddaljeni strežnik MySQL"
+
+#: ../../setup_application/database_settings.rst:121
+msgid "Obviously, to use digiKam with a remote MySQL, you would require a MySQL server. Or, you could also install MariaDB, which serves the purpose well. (Could be installed easily using `this link <https://www.cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-ubuntu-20-04>`_.)"
+msgstr "Očitno bi za uporabo digiKama z oddaljenim MySQL potrebovali strežnik MySQL. "
+
+#: ../../setup_application/database_settings.rst:123
+msgid "Follow the instructions below, if you don’t have a dedicated user account and a digiKam database already set up. Run the commands in MySQL server, after replacing *password* with correct one."
+msgstr "Sledite spodnjim navodilom, če še nimate namenskega uporabniškega računa in baze podatkov digiKam. "
+
+#: ../../setup_application/database_settings.rst:127
+msgid "You can select any database name. (Here it is, *digikam*). Just remember to fill in the database name correctly in Core, Thumbs, Similarity, and Face database names from the dialog box shown below."
+msgstr "Izberete lahko poljubno ime baze podatkov. "
+
+#: ../../setup_application/database_settings.rst:139
+msgid "If you have an enormous collection, it's recommended to start the MySQL server with `mysql --max_allowed_packet = 128M`"
+msgstr "Če imate ogromno zbirko, priporočamo, da zaženete strežnik MySQL z `mysql --max_allowed_packet = 128M`"
+
+#: ../../setup_application/database_settings.rst:141
+msgid "Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` and then under **Database** section, select MySQL Server from the drop down list."
+msgstr "Zdaj v digiKamu pojdite na :menuselection:`Settings --> Configure digiKam...` in nato pod razdelkom **Database** izberite MySQL Server s spustnega seznama."
+
+#: ../../setup_application/database_settings.rst:147
+msgid "The digiKam Remote Mysql Configuration Page"
+msgstr "Stran za konfiguracijo oddaljenega Mysql digiKam"
+
+#: ../../setup_application/database_settings.rst:149
+msgid "Enter the IP address of your MySQL server in the **Host Name** field and specify the correct port in the **Host Port** field (the default port is 3306)."
+msgstr "V polje **Host Name** vnesite naslov IP vašega strežnika MySQL in v polje **Host Port** določite pravilna vrata (privzeta vrata so 3306)."
+
+#: ../../setup_application/database_settings.rst:151
+msgid "In the **Core Db Name** field, enter the name of the first database for storing photo metadata."
+msgstr "V polje **Core Db Name** vnesite ime prve podatkovne baze za shranjevanje metapodatkov fotografij."
+
+#: ../../setup_application/database_settings.rst:153
+msgid "Specify the name of the second database for storing wavelets compressed thumbnails in the **Thumbs Db Name** field."
+msgstr "Določite ime druge zbirke podatkov za shranjevanje valčkov stisnjenih sličic v polju **Thumbs Db Name**."
+
+#: ../../setup_application/database_settings.rst:155
+msgid "The third database is dedicated to store fuzzy search finger-prints. Use the **Similarity Db Name** field for that."
+msgstr "Tretja baza podatkov je namenjena shranjevanju prstnih odtisov mehkega iskanja. "
+
+#: ../../setup_application/database_settings.rst:157
+msgid "The last database is dedicated to store face histograms for recognition purpose. Use the **Face Db Name** field for that."
+msgstr "Zadnja zbirka podatkov je namenjena shranjevanju histogramov obrazov za namene prepoznavanja. "
+
+#: ../../setup_application/database_settings.rst:159
+msgid "To be connected safety to the remote server, enter your MySQL identification using **User** and **Password** fields."
+msgstr "Za varno povezavo z oddaljenim strežnikom vnesite svojo identifikacijo MySQL v polji **Uporabnik** in **Geslo**."
+
+#: ../../setup_application/database_settings.rst:161
+msgid "To check whether the database connection works properly, press the **Check Connection** button. If everything works as it’s supposed to, switch to the **Collections** sections, and add the directories containing your photos. Hit **OK**, and wait till digiKam populates the databases with data from photos. This can take a while if you have a lot of items to register in database."
+msgstr "Če želite preveriti, ali povezava z bazo podatkov deluje pravilno, pritisnite gumb **Preveri povezavo**. "
+
+#: ../../setup_application/database_settings.rst:163
+msgid "There are some tips and recommendation to obtain the best results with a remote MySQL database server."
+msgstr "Obstaja nekaj nasvetov in priporočil za doseganje najboljših rezultatov z oddaljenim strežnikom baze podatkov MySQL."
+
+#: ../../setup_application/database_settings.rst:165
+msgid "With slow network, digiKam hangs a lot of time especially when album contains many items **(>1,000)**. This solution relies on network performances. Problem has been reproducible using Wifi connection, for instance. Switching to Ethernet must solves the problem."
+msgstr "Pri počasnem omrežju digiKam visi veliko časa, še posebej, če album vsebuje veliko elementov **(>1000)**. "
+
+#: ../../setup_application/database_settings.rst:167
+msgid "Also, if you have an enormous collection, you should start the MySQL server with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with using MySQL, you could also change your settings in :file:`my.ini` or :file:`~/.my.cnf` files."
+msgstr "Če imate ogromno zbirko, bi morali zagnati strežnik MySQL z `mysql --max_allowed_packet = 128M`. "
+
+#: ../../setup_application/database_settings.rst:170
+msgid "Database Type Criteria"
+msgstr "Kriteriji tipa baze podatkov"
+
+#: ../../setup_application/database_settings.rst:172
+msgid "See the resume below to choose the right database type depending of the use-cases."
+msgstr "Glejte spodnji povzetek, da izberete pravo vrsto baze podatkov glede na primere uporabe."
+
+#: ../../setup_application/database_settings.rst:175
+msgid "Storage"
+msgstr "Shranjevanje"
+
+#: ../../setup_application/database_settings.rst:175
+msgid "Type"
+msgstr "Vrsta"
+
+#: ../../setup_application/database_settings.rst:175
+msgid "Items"
+msgstr "Predmeti"
+
+#: ../../setup_application/database_settings.rst:175
+msgid "Remarks"
+msgstr "Opombe"
+
+#: ../../setup_application/database_settings.rst:177
+#: ../../setup_application/database_settings.rst:178
+#: ../../setup_application/database_settings.rst:191
+msgid "HDD"
+msgstr "HDD"
+
+#: ../../setup_application/database_settings.rst:177
+#: ../../setup_application/database_settings.rst:179
+#: ../../setup_application/database_settings.rst:181
+#: ../../setup_application/database_settings.rst:183
+#: ../../setup_application/database_settings.rst:185
+msgid "SQLite"
+msgstr "SQLite"
+
+#: ../../setup_application/database_settings.rst:177
+#: ../../setup_application/database_settings.rst:183
+msgid "< 100K"
+msgstr "< 100K"
+
+#: ../../setup_application/database_settings.rst:177
+msgid "**Warning: WAL is mandatory.**"
+msgstr "**Opozorilo: WAL je obvezen.**"
+
+#: ../../setup_application/database_settings.rst:178
+#: ../../setup_application/database_settings.rst:180
+#: ../../setup_application/database_settings.rst:182
+#: ../../setup_application/database_settings.rst:184
+#: ../../setup_application/database_settings.rst:186
+msgid "MySQL-Internal"
+msgstr "MySQL-notranje"
+
+#: ../../setup_application/database_settings.rst:178
+#: ../../setup_application/database_settings.rst:184
+msgid "> 100K"
+msgstr "> 100K"
+
+#: ../../setup_application/database_settings.rst:179
+#: ../../setup_application/database_settings.rst:180
+msgid "SDD"
+msgstr "SDD"
+
+#: ../../setup_application/database_settings.rst:179
+#: ../../setup_application/database_settings.rst:181
+msgid "WAL is optional."
+msgstr "WAL ni obvezen."
+
+#: ../../setup_application/database_settings.rst:181
+#: ../../setup_application/database_settings.rst:182
+msgid "MVMe"
+msgstr "MVMe"
+
+#: ../../setup_application/database_settings.rst:183
+#: ../../setup_application/database_settings.rst:184
+#: ../../setup_application/database_settings.rst:200
+msgid "Removable"
+msgstr "Odstranljivo"
+
+#: ../../setup_application/database_settings.rst:183
+msgid "**Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**"
+msgstr "**Opozorilo: WAL je obvezen. "
+
+#: ../../setup_application/database_settings.rst:184
+msgid "**Warning: USB 3.1 minimum with NVMe drive.**"
+msgstr "**Opozorilo: najmanj USB 3.1 s pogonom NVMe.**"
+
+#: ../../setup_application/database_settings.rst:185
+#: ../../setup_application/database_settings.rst:186
+#: ../../setup_application/database_settings.rst:203
+msgid "Network FS"
+msgstr "Omrežni FS"
+
+#: ../../setup_application/database_settings.rst:185
+msgid "**Prohibited: SQLite databases must be stored on local file system.**"
+msgstr "**Prepovedano: baze podatkov SQLite morajo biti shranjene v lokalnem datotečnem sistemu.**"
+
+#: ../../setup_application/database_settings.rst:186
+msgid "**Prohibited: MySQL databases must be stored on local file system.**"
+msgstr "**Prepovedano: baze podatkov MySQL morajo biti shranjene v lokalnem datotečnem sistemu.**"
+
+#: ../../setup_application/database_settings.rst:187
+#: ../../setup_application/database_settings.rst:206
+msgid "Remote"
+msgstr "Oddaljeno"
+
+#: ../../setup_application/database_settings.rst:187
+msgid "MySQL-Server"
+msgstr "Server MySQL"
+
+#: ../../setup_application/database_settings.rst:187
+msgid "MariaDB server is supported. Gigabit Ethernet or higher is recommended."
+msgstr "Strežnik MariaDB je podprt. "
+
+#: ../../setup_application/database_settings.rst:193
+msgid "Hard Disk Drive."
+msgstr "Trdi disk."
+
+#: ../../setup_application/database_settings.rst:194
+msgid "SSD"
+msgstr "SSD"
+
+#: ../../setup_application/database_settings.rst:196
+msgid "Solid State Drive."
+msgstr "pogon SSD."
+
+#: ../../setup_application/database_settings.rst:197
+msgid "NVMe"
+msgstr "NVMe"
+
+#: ../../setup_application/database_settings.rst:199
+msgid "Non-Volatile Memory."
+msgstr "Trajni pomnilnik."
+
+#: ../../setup_application/database_settings.rst:202
+msgid "External USB HDD/SDD/NVMe drive."
+msgstr "Zunanji pogon USB HDD/SDD/NVMe."
+
+#: ../../setup_application/database_settings.rst:205
+msgid "Network File System mounted locally."
+msgstr "Omrežni datotečni sistem nameščen lokalno."
+
+#: ../../setup_application/database_settings.rst:208
+msgid "Network server as NAS (Network Attached Storage)."
+msgstr "Omrežni strežnik kot NAS (Network Attached Storage)."
+
+#: ../../setup_application/database_settings.rst:209
+msgid "WAL"
+msgstr "WAL"
+
+#: ../../setup_application/database_settings.rst:211
+msgid "Write-Ahead Lock (SQLite database only)."
+msgstr "Zaklepanje vnaprejšnjega pisanja (samo baza podatkov SQLite)."
+
+#: ../../setup_application/database_settings.rst:215
+msgid "See this :ref:`Digital Asset Management chapter <storage_deterioration>` for more details about media and data protection."
+msgstr "Glejte to :ref:`poglavje o digitalnem upravljanju sredstev <storage_deterioration>` za več podrobnosti o zaščiti medijev in podatkov."
+
+#: ../../setup_application/database_settings.rst:217
+msgid "See also this :ref:`Collection Settings chapter <collections_settings>` for more details about the way to configure your collections depending of your storage policy."
+msgstr "Glejte tudi to :ref:`poglavje o nastavitvah zbirke <collections_settings>` za več podrobnosti o načinu konfiguriranja vaših zbirk glede na vašo politiko shranjevanja."
+
+#: ../../setup_application/database_settings.rst:221
+msgid "If you share the same **Removable** media to host databases and/or collections between different computers, you must have the same kind of operating system, the same mount paths everywhere (use symbolic links to revolve paths), and the same digiKam version everywhere to prevent conflicts with database schemes."
+msgstr "Če delite isti **Odstranljivi** medij za gostovanje baz podatkov in/ali zbirk med različnimi računalniki, morate imeti isto vrsto operacijskega sistema, povsod enake poti vpetja (uporabite simbolične povezave za kroženje poti) in "
+
+#: ../../setup_application/database_settings.rst:223
+msgid "If you use a common **Remote** server to host databases and collections, you must use the same digiKam version everywhere to prevent conflicts with database schemes. Computers running digiKam cannot be used at the same time on collections."
+msgstr "Če uporabljate običajni **Oddaljeni** strežnik za gostovanje baz podatkov in zbirk, morate povsod uporabljati isto različico digiKam, da preprečite konflikte s shemami baz podatkov. "
+
+#: ../../setup_application/database_settings.rst:225
+msgid "If you use a common **Remote** server to host collections, as databases are located on computers, different versions of digiKam can be used and digiKam sessions can run at the same time on collections. Take a care about concurrency access on files metadata if you turned on this option on **Metadata Setup Page**."
+msgstr "Če uporabljate običajni **Oddaljeni** strežnik za gostovanje zbirk, ker se baze podatkov nahajajo na računalnikih, je mogoče uporabiti različne različice digiKam in seje digiKam lahko izvajajo istočasno v zbirkah. "
+
+#: ../../setup_application/database_settings.rst:230
+msgid "Database Migration"
+msgstr "Migracija baze podatkov"
+
+#: ../../setup_application/database_settings.rst:232
+msgid "The photo management application comes up with an exclusive tool named **Database Migration**, that allows users to migrate their data. Suppose, you’re using SQLite and you wish to move all data to MySQL database, migration tool will help you do so. It can help you migrate data from SQLite to MySQL and vice versa."
+msgstr "Aplikacija za upravljanje fotografij ponuja ekskluzivno orodje z imenom **Selitev baze podatkov**, ki uporabnikom omogoča selitev svojih podatkov. "
+
+#: ../../setup_application/database_settings.rst:234
+msgid "To migrate to another database, go to :menuselection:`Settings --> Database Migration...`. A dialog box appears:"
+msgstr "Za selitev v drugo bazo podatkov pojdite na :menuselection:`Nastavitve --> Selitev baze podatkov...`. "
+
+#: ../../setup_application/database_settings.rst:240
+msgid "The digiKam Database Migration Tool"
+msgstr "Orodje za selitev baze podatkov digiKam"
+
+#: ../../setup_application/database_settings.rst:242
+msgid "Now choose appropriate database types you want to convert to. Finally, click on **Migrate** button to convert the database from SQLite to MySQL (or vice versa). Depending of the database size this operation can take a while."
+msgstr "Zdaj izberite ustrezne vrste podatkovnih baz, v katere želite pretvoriti. "
+
+#: ../../setup_application/database_settings.rst:246
+msgid "Only the digiKam **Core** database will be migrated while conversion process. All other databases needs to be rebuilt as post-processing with the :ref:`Maintenance Tools <maintenance_tools>`. The **Thumbs** and **Similarity** databases needs to be created from scratch, and the **Face** database needs the option **Rebuild the Training Data**."
+msgstr "Med procesom pretvorbe bo preseljena samo baza podatkov digiKam **Core**. "
+
+#: ../../setup_application/database_settings.rst:251
+msgid "Database Backup Recommendation"
+msgstr "Priporočilo za varnostno kopiranje baze podatkov"
+
+#: ../../setup_application/database_settings.rst:253
+msgid "For security reasons, planing a database backup using crontab over the network can help against device dysfunctions. A NAS or an external drive can also be used for that."
+msgstr "Iz varnostnih razlogov lahko načrtovanje varnostne kopije baze podatkov prek omrežja crontab pomaga pri motnjah v delovanju naprave. "
+
+#: ../../setup_application/database_settings.rst:255
+msgid "Each database can be named with a different name, not only *digikam*. This allows to users to backup only what is needed. For instance, naming **Core** database as *digiKam_Core*, allows to isolate only this table (the most important file). **Thumbnails**, **Similarity** and **Face Recognition** databases can always be regenerated for scratch."
+msgstr "Vsako zbirko podatkov lahko poimenujete z drugačnim imenom, ne samo *digikam*. "
+
+#: ../../setup_application/database_settings.rst:257
+msgid "The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will explain how to maintain in time the database contents and how to synchronize the collections with databases information (and vice versa)."
+msgstr "Poglavje o digiKamu :ref:`Orodja za vzdrževanje <maintenance_tools>` bo razložilo, kako pravočasno vzdrževati vsebino baze podatkov in kako sinhronizirati zbirke z informacijami baze podatkov (in obratno)."
+
+#: ../../setup_application/database_settings.rst:262
+msgid "Database Statistics"
+msgstr "Statistika zbirke podatkov"
+
+#: ../../setup_application/database_settings.rst:264
+msgid "digiKam provides a unique tool to show the statistics from your collections. It includes count of images, videos (including individual count by image format), tags etc. Also, includes the **Database Backend** (QSQLITE or QMYSQL) and the **Database Path** (where your collection is located)."
+msgstr "digiKam ponuja edinstveno orodje za prikaz statistike iz vaših zbirk. "
+
+#: ../../setup_application/database_settings.rst:266
+msgid "You can view your statistics by going to :menuselection:`Help --> Database Statistics...`. A dialog box like this will appear:"
+msgstr "Svojo statistiko si lahko ogledate tako, da obiščete :menuselection:`Help --> Database Statistics...`. "
+
+#: ../../setup_application/database_settings.rst:272
+msgid "The digiKam Database Statistics Dialog"
+msgstr "Pogovorno okno statistike baze podatkov digiKam"
