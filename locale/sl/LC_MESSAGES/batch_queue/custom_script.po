@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-18 00:39+0000\n"
-"PO-Revision-Date: 2023-06-27 19:09+0200\n"
+"PO-Revision-Date: 2023-07-02 17:44+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <kde-i18n-doc@kde.org>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
+"n%100==4 ? 3 : 0);\n"
 "X-Generator: Poedit 3.3.1\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
 
 #: ../../batch_queue/custom_script.rst:1
 msgid "digiKam Custom Script from Batch Queue Manager"
@@ -50,10 +50,6 @@ msgid ""
 "as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool <https://en."
 "wikipedia.org/wiki/ExifTool>`_ for example."
 msgstr ""
-"Paketni upravitelj čakalnih vrst omogoča prilagoditev **Workflow** s "
-"posebnim vtičnikom, namenjenim izvajanju skripta in obdelavi vaših slik z "
-"zunanjimi orodji, kot sta `ImageMagick <https://imagemagick.org/>`_ ali "
-"`ExifTool < "
 
 #: ../../batch_queue/custom_script.rst:23
 msgid ""
@@ -63,8 +59,6 @@ msgid ""
 "in the code and re-routed for a custom usage with delegate command line "
 "programs installed on your computer."
 msgstr ""
-"Orodje se imenuje **Skript po meri**, na voljo na seznamu **Osnovna orodja** "
-"in v kategoriji **Orodja po meri**. "
 
 #: ../../batch_queue/custom_script.rst:29
 msgid "The Batch Queue Manager Including a Custom Script in a Workflow"
@@ -83,8 +77,6 @@ msgid ""
 "JPEG is a lossy compression format, only support 8-bit color depth, and does "
 "not supports transparency."
 msgstr ""
-"**Vrsta izhodne slike**: ta vrednost omogoča nastavitev pričakovane vrste "
-"formata slike za uporabo na izhodu vašega skripta. "
 
 #: ../../batch_queue/custom_script.rst:35
 msgid ""
@@ -93,8 +85,6 @@ msgid ""
 "wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported. Under **Windows** "
 "`Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported."
 msgstr ""
-"**Shell Script**: to polje za urejanje besedila omogoča vnos izvorne kode "
-"vašega lupinskega skripta. "
 
 #: ../../batch_queue/custom_script.rst:37
 msgid ""
@@ -102,7 +92,6 @@ msgid ""
 "will replace all occurrences of keywords in script at run time before shell "
 "execution. Take a care that keywords are case sensitive."
 msgstr ""
-"Spodaj so navedene ključne besede, ki jih lahko uporabite v kodi skripta. "
 
 #: ../../batch_queue/custom_script.rst:39
 msgid ""
@@ -124,7 +113,7 @@ msgid ""
 "not create a new file (e.g. changing metadata with ExifTool) you must first "
 "copy **$INPUT** to **$OUTPUT** with a command appropriate to the operating "
 "system and then make the changes to **$OUTPUT**."
-msgstr "Nova datoteka se vedno pričakuje na **$OUTPUT**. "
+msgstr ""
 
 #: ../../batch_queue/custom_script.rst:47
 msgid ""
@@ -180,8 +169,6 @@ msgid ""
 "**$** as prefix of variable names (for example **$INPUT**). The interpreter "
 "used to run the script is **/bin/bash**."
 msgstr ""
-"V sistemu Linux in macOS je do spremenljivk okolja mogoče dostopati v "
-"skriptu z **$** kot predpono imen spremenljivk (na primer **$INPUT**). "
 
 #: ../../batch_queue/custom_script.rst:65
 msgid ""
@@ -189,8 +176,6 @@ msgid ""
 "prefix and suffix of variable names (for example **%INPUT%**). The "
 "interpreter used to run the script is **cmd.exe**."
 msgstr ""
-"V sistemu Windows je do spremenljivk okolja mogoče dostopati v skriptu z **"
-"%** kot predpono in pripono imen spremenljivk (na primer **%INPUT%**). "
 
 #: ../../batch_queue/custom_script.rst:69
 msgid "Return Value"
@@ -202,8 +187,6 @@ msgid ""
 "success or an integer in the range 1-255 for something else. Use **exit < "
 "error_code >** to pass the return value on the workflow."
 msgstr ""
-"Po dogovoru je **Bash skript** pod Linuxom in macOS vrnjen 0 ob uspehu ali "
-"celo število v območju 1-255 za kaj drugega. "
 
 #: ../../batch_queue/custom_script.rst:73
 msgid ""
@@ -212,9 +195,6 @@ msgid ""
 "possible. Use **EXIT /B < error_code >** to pass the return value on the "
 "workflow."
 msgstr ""
-"V sistemu Windows **Paketni skript** vrne 0 ob uspehu in drugo vrednost za "
-"nekaj drugega, vendar je vrednost predznačeno celo število, zato je možna "
-"negativna vrednost. "
 
 #: ../../batch_queue/custom_script.rst:75
 msgid ""
@@ -222,7 +202,6 @@ msgid ""
 "is returned, the workflow continue as expected, else the workflow is broken "
 "and Batch Queue Manager stop the process."
 msgstr ""
-"Upravitelj paketne čakalne vrste obravnava vrednost, ki jo vrne vaš skript. "
 
 #: ../../batch_queue/custom_script.rst:78
 msgid "Examples"
@@ -242,7 +221,6 @@ msgid ""
 "command, this one is parsed by the Batch Queue Manager to check the workflow "
 "stream."
 msgstr ""
-"Ta prvi primer, ki ga lahko vidite spodaj, ...ne naredi nič posebnega. "
 
 #: ../../batch_queue/custom_script.rst:100
 msgid ""
@@ -318,8 +296,6 @@ msgid ""
 "Workflow. Bash uses the last called method as the returned value from the "
 "script, here the ImageMagick command line tool **convert**."
 msgstr ""
-"V tem primeru ni eksplicitnega klica **exit** za vrnitev vrednosti v potek "
-"dela. "
 
 #: ../../batch_queue/custom_script.rst:148
 msgid "This give a result like below."
