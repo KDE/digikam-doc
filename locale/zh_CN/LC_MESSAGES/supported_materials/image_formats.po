@@ -3,10 +3,9 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-18 00:39+0000\n"
-"PO-Revision-Date: 2023-06-17 04:12\n"
+"PO-Revision-Date: 2023-07-03 11:39\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
-"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,28 +16,31 @@ msgstr ""
 "X-Crowdin-File: /kf5-trunk/messages/digikam-doc/"
 "docs_digikam_org_supported_materials___image_formats.pot\n"
 "X-Crowdin-File-ID: 41455\n"
+"Language: zh_CN\n"
 
 #: ../../supported_materials/image_formats.rst:1
 msgid "Image File Formats Supported by digiKam"
-msgstr ""
+msgstr "digiKam 支持的图像文件格式"
 
 #: ../../supported_materials/image_formats.rst:1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, JPEG, PNG, TIFF, PGF, RAW"
 msgstr ""
+"digiKam, 文档, 用户手册, 照片管理, 开源, 免费, 学习, 简单, JPEG, PNG, TIFF, "
+"PGF, RAW"
 
 #: ../../supported_materials/image_formats.rst:14
 msgid "Image Files"
-msgstr ""
+msgstr "图像文件"
 
 #: ../../supported_materials/image_formats.rst:16
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../supported_materials/image_formats.rst:19
 msgid "Introduction"
-msgstr ""
+msgstr "简介"
 
 #: ../../supported_materials/image_formats.rst:21
 msgid ""
@@ -48,6 +50,9 @@ msgid ""
 "way that those libraries have been compiled. On most distributions you will "
 "find that a wide range of image formats are viewable within digiKam."
 msgstr ""
+"digiKam 依赖于一些库和支持包来加载和保存图像格式。哪些图像格式能够支持，取决"
+"于这些库在你的系统上能不能用，在某些情况下，则取决于这些库的编译方式。大多数"
+"的发行版本中，digiKam 的图片查看都支持海量格式。"
 
 #: ../../supported_materials/image_formats.rst:23
 msgid ""
@@ -55,6 +60,8 @@ msgid ""
 "definitive list of all of the formats that will be available on your system. "
 "At the very least JPEG, PNG, and TIFF should be available."
 msgstr ""
+"对第三方库的依赖意味着，无法给出一个明确清单，列好在你的系统上支持的所有格"
+"式。至少JPEG、PNG 和 TIFF 应该是可用的。"
 
 #: ../../supported_materials/image_formats.rst:25
 msgid ""
@@ -65,6 +72,10 @@ msgid ""
 "You can change the list of file extensions that digiKam will accept; see :"
 "ref:`this configuration section <mime_types_settings>` for more details."
 msgstr ""
+"digiKam 只显示它所理解的格式的文件。这一点可以通过查看文件的扩展名，并与预定"
+"义的列表进行核对来实现。如果文件扩展名在列表中，digiKam 就会在图像视图中显示"
+"这个文件，当然前提是安装了相应的库。你可以改变 digiKam 接受的文件扩展名列表；"
+"更多细节可以阅读 :ref:`这部分设置内容 <mime_types_settings>`。"
 
 #: ../../supported_materials/image_formats.rst:27
 msgid ""
@@ -74,10 +85,14 @@ msgid ""
 "wikipedia.org/wiki/Image_file_formats>`_. digiKam supports both of these "
 "formats."
 msgstr ""
+"几乎所有的数码相机，要么使用 JPEG 格式，要么就使用 RAW 格式来存储照片。许多相"
+"机都可以让你选择使用其中的哪种格式。这些格式的完整描述可以在 `维基百科"
+"<https://en.wikipedia.org/wiki/Image_file_formats>`_ 上找到。这两种格式 "
+"digiKam 都支持。"
 
 #: ../../supported_materials/image_formats.rst:30
 msgid "Still Image Compression"
-msgstr ""
+msgstr "静态图像压缩"
 
 #: ../../supported_materials/image_formats.rst:32
 msgid ""
@@ -85,6 +100,8 @@ msgid ""
 "images. It is done through reducing redundancy of the image data in order to "
 "be able to store or transmit data in an efficient form."
 msgstr ""
+"图像压缩是数据压缩方案在数字图像方面的应用。它是通过减少图像数据的冗余度来实"
+"现的，为的是以有效的形式存储或传输数据。"
 
 #: ../../supported_materials/image_formats.rst:34
 msgid ""
@@ -98,10 +115,15 @@ msgid ""
 "reduction in file size. Lossy compression is good for image publishing on "
 "the Internet."
 msgstr ""
+"图像压缩有的是有损的，有的是无损的。对于存档用途，应该一律首选无损压缩方法，"
+"因为有高度的保存价值。之后再进行裁切、调整大小、颜色校正等编辑。因为有损压缩"
+"方法，特别是在低比特率下使用时，会引入压缩伪影。有损方法适合自然图像，在这种"
+"场景中，为了让文件大小能够大幅减少，可以接受微小的（有时难以察觉的）保真度损"
+"失。有损压缩适用于互联网上的图像发布。"
 
 #: ../../supported_materials/image_formats.rst:39
 msgid "JPEG"
-msgstr ""
+msgstr "JPEG"
 
 #: ../../supported_materials/image_formats.rst:41
 msgid ""
@@ -116,10 +138,18 @@ msgid ""
 "e-mail or post them on the Web. Most cameras give you two or three choices "
 "equivalent to good, better, best, although the names vary."
 msgstr ""
+"`联合图像专家小组 <https://en.wikipedia.org/wiki/JPEG>`_ （（Joint "
+"Photographic Experts Group，JPEG）是一种压缩格式，它会牺牲些图像质量来换取小"
+"的文件大小。事实上，大多数相机都是用这种格式保存照片的，除非你另外指定。JPEG "
+"图像使用有损压缩来存储，可以改变压缩的等级。你可以选择较低的压缩率（较高的图"
+"像质量），或者选择较高的压缩率（较差的质量）。选择较高压缩率的唯一原因是，它"
+"创建的文件较小，所以你可以存储更多的图像，而且更容易通过电子邮件发送或在网络"
+"上发布它们。大多数相机给你两到三个选择，相当于好、更好、最好，尽管名称有所不"
+"同。"
 
 #: ../../supported_materials/image_formats.rst:46
 msgid "JPEG 2000"
-msgstr ""
+msgstr "JPEG 2000"
 
 #: ../../supported_materials/image_formats.rst:48
 msgid ""
