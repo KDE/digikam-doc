@@ -1,23 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-18 00:39+0000\n"
-"PO-Revision-Date: 2023-07-02 17:45+0200\n"
-"Last-Translator: \n"
-"Language-Team: Slovenian <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2023-07-07 21:26+0200\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Lokalize 23.04.2\n"
 
 #: ../../batch_queue/raw_converter.rst:1
 msgid "digiKam RAW Converter from Batch Queue Manager"
@@ -61,6 +60,17 @@ msgid ""
 "data: RGBG, Red, Green, Blue and another Green mask for contrast "
 "enhancement. This tool can take this into account."
 msgstr ""
+"Obstaja nekaj razlogov, preden se spreobrnete in celo preden fotografirate v"
+" surovem formatu RAW. Formati surovih slikovnih datotek ohranjajo izvirne"
+" podatke o posnetku domnevno brez izgube (pri stiskanju uporabljajo"
+" reverzibilne algoritme stiskanja brez izgub). Mnogi fotografi raje posnamejo"
+" svoje sliko v načinu RAW, ker je v kameri vgrajen program za pretvorbo"
+" pogosto slabše kakovosti od tiste, ki jo lahko dosežete z računalniško"
+" obdelavo digitalne slike. Ravnovesje beline digitalnega fotoaparata je"
+" registrirano, vendar ne"
+"naneseno na sliko. Nekateri CMOS CCD ustvarijo štiri vrste barvnih filtrov s"
+" podatki: RGBG, rdeča, zelena, modra in še ena zelena maska za izboljšanje"
+" kontrasta. To orodje lahko to upošteva."
 
 #: ../../batch_queue/raw_converter.rst:22
 msgid ""
@@ -69,6 +79,10 @@ msgid ""
 "sometimes libraw gives better results. See :ref:`this section "
 "<camera_profiles>` of this manual for details."
 msgstr ""
+"Pretvorba temelji na knjižnici `Libraw <https://www.libraw.org/>`_. Ne"
+" pričakujte ustvarjanje enakih slik kot programska oprema, ki jo ponuja"
+" prodajalec kamere, vendar včasih daje libraw boljše rezultate. Glejte"
+" :ref:`ta razdelek <camera_profiles>` tega priročnika za podrobnosti."
 
 #: ../../batch_queue/raw_converter.rst:24
 msgid ""
@@ -86,6 +100,12 @@ msgid ""
 "result is not quite optimal, don't worry, it is always possible to fine-tune "
 "the image later on."
 msgstr ""
+"V pogledu nastavitev Upravljalnika paketne čakalne vrste lahko prilagodite"
+" razpoložljivo preverjanje in polja z vrednostmi za optimizacijo postopka"
+" pretvorbe iz surovega formata. Prvo potrditveno polje označuje uporabo"
+" nastavitev kamere za ravnovesje beline. Bistvene parametre kot sta svetlost"
+" in rdeči/modri ojačevalnik je mogoče prilagoditi. Če je rezultat ni povsem"
+" optimalen, ne skrbite, vedno je mogoče natančno prilagoditi sliko kasneje."
 
 #: ../../batch_queue/raw_converter.rst:28
 msgid ""
@@ -95,6 +115,11 @@ msgid ""
 "Decoding** settings see :ref:`this section <setup_rawdefault>` of this "
 "manual."
 msgstr ""
+"Izberete lahko možnost pretvorbe **Interpoliraj RGB kot štiri barve**, da"
+" uporabite podatke o kontrastu. (Če vaša kamera deluje v načinu RGB, RGBG"
+" nastavitev nima učinka). Če želite izvedeti vse podrobnosti o **Nastavitve"
+" dekodiranja surovih** si oglejte :ref:`ta razdelek <setup_rawdefault>` tega"
+" priročnika."
 
 #: ../../batch_queue/raw_converter.rst:30
 msgid ""
@@ -105,6 +130,12 @@ msgid ""
 "(**TIFF**) preserves all information of your image while using lossless LZW "
 "compression."
 msgstr ""
+"Izbrati morate eno izhodno obliko, da shranite rezultat pretvorbe tako, da"
+" postavite ustrezno orodje za pretvorbo ciljne oblike datoteke. Ime datoteke"
+" bo privzeto ostalo enako do, spremeni se samo podaljšek. **JPEG** uporablja"
+" algoritem z izgubo in ustvari najmanjšo velikost izhodne datoteke. V"
+" nasprotju s tem označeni format slike (**TIFF**) ohrani vse informacije vaše"
+" slike, ko uporablja algoritem LZW za stiskanje brez izgub."
 
 #: ../../batch_queue/raw_converter.rst:34
 msgid ""
@@ -113,6 +144,10 @@ msgid ""
 "limited number of operations before it deteriorates visibly. **TIFF** and "
 "**PNG** are better suited to keep the original data."
 msgstr ""
+"Če nameravate veliko delati na svojih slikah ali če je verjetno, da jih"
+" pozneje znova uporabite, potem ne uporabljajte zapisa **JPEG**, ker omogoča"
+" le omejeno število operacij, preden se vidno poslabša. **TIFF** in **PNG**"
+" sta bolj primerna za ohranitev izvirnih podatkov."
 
 #: ../../batch_queue/raw_converter.rst:38
 msgid ""
@@ -130,6 +165,9 @@ msgid ""
 "start the conversion. If you want abort image conversion, press the "
 "**Abort** button."
 msgstr ""
+"Ko končate z nastavitvijo čakalne vrste, kliknite gumb **Obdelaj** da"
+" zaženete pretvorbo. Če želite prekiniti pretvorbo slike, pritisnite gumb"
+" **Prekini**."
 
 #: ../../batch_queue/raw_converter.rst:46
 msgid ""
