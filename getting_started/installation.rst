@@ -79,7 +79,7 @@ Turn on **executable** property of AppImage file and run it. That all...
 
     .. code-block:: bash
 
-        ./digiKam-8.1.0-x86-64.appimage showfoto
+        ./digiKam-X.Y.Z-x86-64.appimage showfoto
 
 .. note::
 
