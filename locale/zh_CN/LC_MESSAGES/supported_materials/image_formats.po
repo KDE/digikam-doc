@@ -3,10 +3,9 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 00:48+0000\n"
-"PO-Revision-Date: 2023-07-18 11:12\n"
+"PO-Revision-Date: 2023-07-23 12:29\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
-"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,6 +16,7 @@ msgstr ""
 "X-Crowdin-File: /kf5-trunk/messages/digikam-doc/"
 "docs_digikam_org_supported_materials___image_formats.pot\n"
 "X-Crowdin-File-ID: 41455\n"
+"Language: zh_CN\n"
 
 #: ../../supported_materials/image_formats.rst:1
 msgid "Image File Formats Supported by digiKam"
@@ -291,13 +291,13 @@ msgid ""
 "store images in Apple devices."
 msgstr ""
 "`高效率图像文件格式 <https://en.wikipedia.org/wiki/"
-"High_Efficiency_Image_File_Format>`_ 是 2015 年推出的一种容器格式，可用来存储"
-"单个数字图像，也可存储图像序列。这一标准涵盖的多媒体文件也包括其他媒体流，如"
-"定时文本、音频和视频。HEIF 可存储采用多种编码格式编码的图像，例如 SDR 和 HDR "
-"图像。HEVC 是 HEIF 使用的默认图像编解码器，是一种图像和视频编码格式。包含 "
-"HEVC 编码图像的 HEIF 文件也叫做 HEIC 文件。与同等质量的 JPEG 相比，此类文件所"
-"需的存储空间更小。HEIF 支持 12 位色深，支持元数据。这一格式于 2017 年被用在苹"
-"果设备中存储图像。"
+"High_Efficiency_Image_File_Format>`_ （High Efficiency Image File，HEIF）是 "
+"2015 年推出的一种容器格式，可用来存储单个数字图像，也可存储图像序列。这一标准"
+"涵盖的多媒体文件也包括其他媒体流，如定时文本、音频和视频。HEIF 可存储采用多种"
+"编码格式编码的图像，例如 SDR 和 HDR 图像。HEVC 是 HEIF 使用的默认图像编解码"
+"器，是一种图像和视频编码格式。包含 HEVC 编码图像的 HEIF 文件也叫做 HEIC 文"
+"件。与同等质量的 JPEG 相比，此类文件所需的存储空间更小。HEIF 支持 12 位色深，"
+"支持元数据。这一格式于 2017 年被用在苹果设备中存储图像。"
 
 #: ../../supported_materials/image_formats.rst:90
 msgid "AVIF"
@@ -349,15 +349,17 @@ msgid ""
 "You can see a list of available plugins in **Plugins/Image Loaders** section "
 "from Setup dialog."
 msgstr ""
+"数码照片格式由 digiKam 图像加载程序中的插件提供支持。您可以在“配置 digiKam”对"
+"话框的 **插件 - 图像加载程序** 部分查看可用插件列表。"
 
 #: ../../supported_materials/image_formats.rst:110
 msgid "The Image Loaders list from digiKam Setup dialog"
-msgstr ""
+msgstr "“配置 digiKam 对话框”中的图像加载程序列表"
 
 #: ../../supported_materials/image_formats.rst:115
 #: ../../supported_materials/image_formats.rst:135
 msgid "RAW"
-msgstr ""
+msgstr "RAW"
 
 #: ../../supported_materials/image_formats.rst:117
 msgid ""
@@ -371,6 +373,11 @@ msgid ""
 "photographers use RAW format, because it offers them maximum flexibility. "
 "The downside is that RAW image files can be very large indeed."
 msgstr ""
+"有些相机（通常比较昂贵）可以用 RAW 格式存储图像。RAW 格式其实根本不是一种图像"
+"标准。每种型号的相机都不一样。RAW 格式的图像包含了直接从相机图像传感器获取的"
+"所有数据，然后还会在相机软件层面应用白平衡、锐化等功能。用相机的 RAW 格式存储"
+"照片，可以在拍摄后更改白平衡等设置。大多数专业摄影师都使用 RAW 格式，因为它为"
+"他们提供了最大的灵活性。缺点是 RAW 图像文件可能非常大。"
 
 #: ../../supported_materials/image_formats.rst:119
 msgid ""
@@ -381,6 +388,11 @@ msgid ""
 "digiKam using the :ref:`Image Editor <rawprocessing_workflow>` or the :ref:"
 "`Batch Queue Manager <raw_converter>`."
 msgstr ""
+"如果您想了解有关 RAW 图像格式的更多信息，请访问这几个非常有用的指南： `维基百"
+"科 <https://en.wikipedia.org/wiki/Raw_image_format>`_ 和 `剑桥色彩摄影学习社"
+"区 <https://www.cambridgeincolour.com/tutorials/RAW-file-format.htm>`_ 。你可"
+"以在 digiKam 中使用 :ref:`图像编辑器 <rawprocessing_workflow>` 或 :ref:`批处"
+"理管理器 <raw_converter>`  将 RAW 格式的图像转换成 JPEG、PNG 或 TIFF 格式。"
 
 #: ../../supported_materials/image_formats.rst:121
 msgid ""
@@ -389,160 +401,165 @@ msgid ""
 "over **1000** RAW file formats. The table below shows a short list of camera "
 "RAW files supported by digiKam:"
 msgstr ""
+"digiKam 仅支持 RAW 图像的加载读取，它依赖于 `Libraw 库 <https://www.libraw."
+"org/>`_ ，这个库属于 digiKam 核心文件之一，支持超过 **1000** 种 RAW 文件格"
+"式。下表简要介绍了 digiKam 支持的相机 RAW 文件："
 
 #: ../../supported_materials/image_formats.rst:124
 msgid "RAW File Format"
-msgstr ""
+msgstr "RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:124
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../supported_materials/image_formats.rst:126
 msgid "CRW, CR2, CR3"
-msgstr ""
+msgstr "CRW, CR2, CR3"
 
 #: ../../supported_materials/image_formats.rst:126
 msgid "Canon digital camera RAW file formats"
-msgstr ""
+msgstr "佳能（Canon）相机的 RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:127
 msgid "NEF, NRW"
-msgstr ""
+msgstr "NEF, NRW"
 
 #: ../../supported_materials/image_formats.rst:127
 msgid "Nikon digital camera RAW file format"
-msgstr ""
+msgstr "尼康（Nikon）相机的 RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:128
 msgid "ORF, ORI"
-msgstr ""
+msgstr "ORF, ORI"
 
 #: ../../supported_materials/image_formats.rst:128
 msgid "Olympus digital camera RAW file format"
-msgstr ""
+msgstr "奥林巴斯/奥之心（Olympus）相机的 RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:129
 msgid "RAF"
-msgstr ""
+msgstr "RAF"
 
 #: ../../supported_materials/image_formats.rst:129
 msgid "Fuji digital camera RAW file format"
-msgstr ""
+msgstr "富士（Fuji）相机的 RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:130
 msgid "RWL"
-msgstr ""
+msgstr "RWL"
 
 #: ../../supported_materials/image_formats.rst:130
 msgid "Leica camera RAW file format"
-msgstr ""
+msgstr "徕卡（Leica）相机的 RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:131
 msgid "PEF, PTX"
-msgstr ""
+msgstr "PEF, PTX"
 
 #: ../../supported_materials/image_formats.rst:131
 msgid "Pentax digital camera RAW file format"
-msgstr ""
+msgstr "宾得（Pentax）相机的 RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:132
 msgid "X3F"
-msgstr ""
+msgstr "X3F"
 
 #: ../../supported_materials/image_formats.rst:132
 msgid "Sigma digital camera RAW file format"
-msgstr ""
+msgstr "适马（Sigma）相机的 RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:133
 msgid "DCR, KDC, DC2, K25"
-msgstr ""
+msgstr "DCR, KDC, DC2, K25"
 
 #: ../../supported_materials/image_formats.rst:133
 msgid "Kodak digital camera RAW file format"
-msgstr ""
+msgstr "柯达（Kodak）相机的 RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:134
 msgid "SRF, SR2, ARW, MRW, MDC"
-msgstr ""
+msgstr "SRF, SR2, ARW, MRW, MDC"
 
 #: ../../supported_materials/image_formats.rst:134
 msgid "Sony/Minolta digital camera RAW file format"
-msgstr ""
+msgstr "索尼（Sony）/美能达（Minolta）相机的 RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:135
 msgid "Panasonic, Casio, Leica digital camera RAW file format"
-msgstr ""
+msgstr "松下（Panasonic），卡西欧（Casio），徕卡（Leica）相机的 RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:136
 msgid "DNG (CS1, HDR)"
-msgstr ""
+msgstr "DNG (CS1, HDR)"
 
 #: ../../supported_materials/image_formats.rst:136
 msgid "Adobe RAW file format (Digital Negative), Apple ProRAW"
-msgstr ""
+msgstr "Adobe 的 RAW 文件格式（数字负片），Apple ProRAW 文件"
 
 #: ../../supported_materials/image_formats.rst:137
 msgid "BAY"
-msgstr ""
+msgstr "BAY"
 
 #: ../../supported_materials/image_formats.rst:137
 msgid "Casio RAW (Bayer)"
-msgstr ""
+msgstr "卡西欧（Casio）的 RAW 文件（拜耳阵列）"
 
 #: ../../supported_materials/image_formats.rst:138
 msgid "ERF"
-msgstr ""
+msgstr "ERF"
 
 #: ../../supported_materials/image_formats.rst:138
 msgid "Epson digital camera RAW file format"
-msgstr ""
+msgstr "爱普生（Epson）相机的 RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:139
 msgid "FFF, 3FR"
-msgstr ""
+msgstr "FFF, 3FR"
 
 #: ../../supported_materials/image_formats.rst:139
 msgid "Imacon/Hasselblad RAW format"
-msgstr ""
+msgstr "易迈康（Imacon）/ 哈苏（Hasselblad）的 RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:140
 msgid "RW2"
-msgstr ""
+msgstr "RW2"
 
 #: ../../supported_materials/image_formats.rst:140
 msgid "Panasonic RAW file format"
-msgstr ""
+msgstr "松下（Panasonic）的 RAW 文件"
 
 #: ../../supported_materials/image_formats.rst:141
 msgid "IIQ, CAP"
-msgstr ""
+msgstr "IIQ, CAP"
 
 #: ../../supported_materials/image_formats.rst:141
 msgid "Phase One digital camera Raw image format"
-msgstr ""
+msgstr "飞思（Phase One）相机的 RAW 文件格式"
 
 #: ../../supported_materials/image_formats.rst:142
 msgid "RDC"
-msgstr ""
+msgstr "RDC"
 
 #: ../../supported_materials/image_formats.rst:142
 msgid "Ricoh RAW format"
-msgstr ""
+msgstr "理光（Ricoh）的 RAW 文件"
 
 #: ../../supported_materials/image_formats.rst:145
 msgid ""
 "If you want to know if your camera RAW file is supported by digiKam, go to :"
 "menuselection:`Help --> Supported RAW Cameras` dialog for details."
 msgstr ""
+"如果想知道 digiKam 是否支持您相机的 RAW 文件，请到 digiKam 程序中的 :"
+"menuselection:`帮助 --> 支持的 RAW 相机格式` 菜单对话框了解详情。"
 
 #: ../../supported_materials/image_formats.rst:151
 msgid "List of RAW Camera Formats Supported in digiKam"
-msgstr ""
+msgstr "digiKam 支持的 RAW 格式一览表"
 
 #: ../../supported_materials/image_formats.rst:156
 msgid "Other Formats"
-msgstr ""
+msgstr "其他格式"
 
 #: ../../supported_materials/image_formats.rst:158
 msgid ""
@@ -550,6 +567,9 @@ msgid ""
 "to support exotic still images when others modules fails to load file. This "
 "is the case for FITS astro-photo, JBIG, PhotoCD, FLIF, BPG, etc."
 msgstr ""
+"如果其他模块无法加载文件时，digiKam 则依靠 `ImageMagick <https://en."
+"wikipedia.org/wiki/ImageMagick>`_ 来加载冷门的照片格式。比如，FITS 天文学数据"
+"格式、JBIG、PhotoCD、FLIF、BPG 等格式。"
 
 #: ../../supported_materials/image_formats.rst:162
 msgid ""
@@ -557,3 +577,5 @@ msgid ""
 "time archiving**, from the :ref:`Digital Asset Management section "
 "<dam_fileformats>` in this manual."
 msgstr ""
+"我们还建议阅读本文档的 :ref:`数字资产管理部分 <dam_fileformats>` 中 **用于长"
+"期存档的文件格式** 这一章节。"
