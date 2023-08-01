@@ -138,6 +138,14 @@ Follow the instructions below, if you don’t have a dedicated user account and 
 
     If you have an enormous collection, it's recommended to start the MySQL server with `mysql --max_allowed_packet = 128M`
 
+.. tip::
+
+    If you have problems with a MySQL server on Ubuntu based Linux system, use the addition command in the mysql prompt to be able to create MySQL triggers.
+
+    .. code:: sql
+
+        SET global log_bin_trust_function_creators=1;
+
 Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` and then under **Database** section, select MySQL Server from the drop down list.
 
 .. figure:: images/setup_database_remotemysql.webp
