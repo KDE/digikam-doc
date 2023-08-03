@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 00:48+0000\n"
+"POT-Creation-Date: 2023-08-02 00:38+0000\n"
 "PO-Revision-Date: 2023-05-15 13:52+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -421,7 +421,13 @@ msgstr ""
 "Se tiver uma colecção enorme, recomenda-se que inicie o servidor de MySQL "
 "com o comando `mysql --max_allowed_packet = 128M`"
 
-#: ../../setup_application/database_settings.rst:141
+#: ../../setup_application/database_settings.rst:143
+msgid ""
+"If you have problems with a MySQL server on Ubuntu based Linux system, use "
+"the addition command in the mysql prompt to be able to create MySQL triggers."
+msgstr ""
+
+#: ../../setup_application/database_settings.rst:149
 msgid ""
 "Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` "
 "and then under **Database** section, select MySQL Server from the drop down "
@@ -431,11 +437,11 @@ msgstr ""
 "digiKam...` e depois na secção **Base de Dados**, seleccione o Servidor de "
 "MySQL na lista suspensa."
 
-#: ../../setup_application/database_settings.rst:147
+#: ../../setup_application/database_settings.rst:155
 msgid "The digiKam Remote Mysql Configuration Page"
 msgstr "A Página de Configuração do Servidor Remoto de MySQL no digiKam"
 
-#: ../../setup_application/database_settings.rst:149
+#: ../../setup_application/database_settings.rst:157
 msgid ""
 "Enter the IP address of your MySQL server in the **Host Name** field and "
 "specify the correct port in the **Host Port** field (the default port is "
@@ -445,7 +451,7 @@ msgstr ""
 "configure o porto correcto no campo **Porto da Máquina** (o porto por "
 "omissão é o 3306)."
 
-#: ../../setup_application/database_settings.rst:151
+#: ../../setup_application/database_settings.rst:159
 msgid ""
 "In the **Core Db Name** field, enter the name of the first database for "
 "storing photo metadata."
@@ -453,7 +459,7 @@ msgstr ""
 "No campo do **Nome da BD de Base**, indique o nome da primeira base de dados "
 "para guardar os meta-dados das fotografias."
 
-#: ../../setup_application/database_settings.rst:153
+#: ../../setup_application/database_settings.rst:161
 msgid ""
 "Specify the name of the second database for storing wavelets compressed "
 "thumbnails in the **Thumbs Db Name** field."
@@ -461,7 +467,7 @@ msgstr ""
 "Indique o nome da segunda base de dados para guardar as miniaturas "
 "comprimidas com os padrões de ondas no campo do **Nome da BD de Miniaturas**."
 
-#: ../../setup_application/database_settings.rst:155
+#: ../../setup_application/database_settings.rst:163
 msgid ""
 "The third database is dedicated to store fuzzy search finger-prints. Use the "
 "**Similarity Db Name** field for that."
@@ -469,7 +475,7 @@ msgstr ""
 "A terceira base de dados dedica-se a guardar as 'impressões digitais' de "
 "pesquisas difusas. Use o campo do **Nome da BD de Semelhanças**  para isso."
 
-#: ../../setup_application/database_settings.rst:157
+#: ../../setup_application/database_settings.rst:165
 msgid ""
 "The last database is dedicated to store face histograms for recognition "
 "purpose. Use the **Face Db Name** field for that."
@@ -477,7 +483,7 @@ msgstr ""
 "A última base de dados dedica-se a armazenar os histogramas de caras para "
 "fins de reconhecimento. Use o campo do **Nome da BD de Caras** para esse fim."
 
-#: ../../setup_application/database_settings.rst:159
+#: ../../setup_application/database_settings.rst:167
 msgid ""
 "To be connected safety to the remote server, enter your MySQL identification "
 "using **User** and **Password** fields."
@@ -485,7 +491,7 @@ msgstr ""
 "Para se ligar com sucesso ao servidor remoto, indique a sua identificação de "
 "MySQL com os campos de **Utilizador** e **Senha**."
 
-#: ../../setup_application/database_settings.rst:161
+#: ../../setup_application/database_settings.rst:169
 msgid ""
 "To check whether the database connection works properly, press the **Check "
 "Connection** button. If everything works as it’s supposed to, switch to the "
@@ -501,7 +507,7 @@ msgstr ""
 "bases de dados com os dados das fotografias. Isto poderá demorar algum "
 "tempo, caso tenha bastantes itens a registar na base de dados."
 
-#: ../../setup_application/database_settings.rst:163
+#: ../../setup_application/database_settings.rst:171
 msgid ""
 "There are some tips and recommendation to obtain the best results with a "
 "remote MySQL database server."
@@ -509,7 +515,7 @@ msgstr ""
 "Existem algumas dicas e recomendações para obter os melhores resultados com "
 "um servidor remoto de bases de dados MySQL."
 
-#: ../../setup_application/database_settings.rst:165
+#: ../../setup_application/database_settings.rst:173
 msgid ""
 "With slow network, digiKam hangs a lot of time especially when album "
 "contains many items **(>1,000)**. This solution relies on network "
@@ -521,7 +527,7 @@ msgstr ""
 "da rede. Este problema já foi reproduzido ao usar ligações por Wi-Fi, por "
 "exemplo. Se mudar para Ethernet, poderá resolver este problema."
 
-#: ../../setup_application/database_settings.rst:167
+#: ../../setup_application/database_settings.rst:175
 msgid ""
 "Also, if you have an enormous collection, you should start the MySQL server "
 "with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with "
@@ -533,11 +539,11 @@ msgstr ""
 "habituado a usar o MySQL, também poderá modificar a sua configuração nos "
 "ficheiros :file:`my.ini` ou em :file:`~/.my.cnf`."
 
-#: ../../setup_application/database_settings.rst:170
+#: ../../setup_application/database_settings.rst:178
 msgid "Database Type Criteria"
 msgstr "Critérios do Tipo de Base de Dados"
 
-#: ../../setup_application/database_settings.rst:172
+#: ../../setup_application/database_settings.rst:180
 msgid ""
 "See the resume below to choose the right database type depending of the use-"
 "cases."
@@ -545,163 +551,163 @@ msgstr ""
 "Veja o resumo abaixo para escolher o tipo de base de dados correcto, "
 "dependendo dos casos de uso."
 
-#: ../../setup_application/database_settings.rst:175
+#: ../../setup_application/database_settings.rst:183
 msgid "Storage"
 msgstr "Armazenamento"
 
-#: ../../setup_application/database_settings.rst:175
+#: ../../setup_application/database_settings.rst:183
 msgid "Type"
 msgstr "Tipo"
 
-#: ../../setup_application/database_settings.rst:175
+#: ../../setup_application/database_settings.rst:183
 msgid "Items"
 msgstr "Itens"
 
-#: ../../setup_application/database_settings.rst:175
+#: ../../setup_application/database_settings.rst:183
 msgid "Remarks"
 msgstr "Comentários"
 
-#: ../../setup_application/database_settings.rst:177
-#: ../../setup_application/database_settings.rst:178
-#: ../../setup_application/database_settings.rst:191
+#: ../../setup_application/database_settings.rst:185
+#: ../../setup_application/database_settings.rst:186
+#: ../../setup_application/database_settings.rst:199
 msgid "HDD"
 msgstr "HDD (Disco Rígido Mecânico)"
 
-#: ../../setup_application/database_settings.rst:177
-#: ../../setup_application/database_settings.rst:179
-#: ../../setup_application/database_settings.rst:181
-#: ../../setup_application/database_settings.rst:183
 #: ../../setup_application/database_settings.rst:185
+#: ../../setup_application/database_settings.rst:187
+#: ../../setup_application/database_settings.rst:189
+#: ../../setup_application/database_settings.rst:191
+#: ../../setup_application/database_settings.rst:193
 msgid "SQLite"
 msgstr "SQLite"
 
-#: ../../setup_application/database_settings.rst:177
-#: ../../setup_application/database_settings.rst:183
+#: ../../setup_application/database_settings.rst:185
+#: ../../setup_application/database_settings.rst:191
 msgid "< 100K"
 msgstr "< 100K"
 
-#: ../../setup_application/database_settings.rst:177
+#: ../../setup_application/database_settings.rst:185
 msgid "**Warning: WAL is mandatory.**"
 msgstr "**Atenção: o WAL é obrigatório.**"
 
-#: ../../setup_application/database_settings.rst:178
-#: ../../setup_application/database_settings.rst:180
-#: ../../setup_application/database_settings.rst:182
-#: ../../setup_application/database_settings.rst:184
 #: ../../setup_application/database_settings.rst:186
+#: ../../setup_application/database_settings.rst:188
+#: ../../setup_application/database_settings.rst:190
+#: ../../setup_application/database_settings.rst:192
+#: ../../setup_application/database_settings.rst:194
 msgid "MySQL-Internal"
 msgstr "MySQL Interno"
 
-#: ../../setup_application/database_settings.rst:178
-#: ../../setup_application/database_settings.rst:184
+#: ../../setup_application/database_settings.rst:186
+#: ../../setup_application/database_settings.rst:192
 msgid "> 100K"
 msgstr "> 100K"
 
-#: ../../setup_application/database_settings.rst:179
-#: ../../setup_application/database_settings.rst:180
+#: ../../setup_application/database_settings.rst:187
+#: ../../setup_application/database_settings.rst:188
 msgid "SDD"
 msgstr "SDD"
 
-#: ../../setup_application/database_settings.rst:179
-#: ../../setup_application/database_settings.rst:181
+#: ../../setup_application/database_settings.rst:187
+#: ../../setup_application/database_settings.rst:189
 msgid "WAL is optional."
 msgstr "O WAL é opcional."
 
-#: ../../setup_application/database_settings.rst:181
-#: ../../setup_application/database_settings.rst:182
+#: ../../setup_application/database_settings.rst:189
+#: ../../setup_application/database_settings.rst:190
 msgid "MVMe"
 msgstr "MVMe"
 
-#: ../../setup_application/database_settings.rst:183
-#: ../../setup_application/database_settings.rst:184
-#: ../../setup_application/database_settings.rst:200
+#: ../../setup_application/database_settings.rst:191
+#: ../../setup_application/database_settings.rst:192
+#: ../../setup_application/database_settings.rst:208
 msgid "Removable"
 msgstr "Removível"
 
-#: ../../setup_application/database_settings.rst:183
+#: ../../setup_application/database_settings.rst:191
 msgid "**Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**"
 msgstr ""
 "**Atenção: o WAL é obrigatório. Recomenda-se no mínimo USB 3.1 com uma "
 "unidade NVMe.**"
 
-#: ../../setup_application/database_settings.rst:184
+#: ../../setup_application/database_settings.rst:192
 msgid "**Warning: USB 3.1 minimum with NVMe drive.**"
 msgstr "**Atenção: recomenda-se no mínimo USB 3.1 com uma unidade NVMe.**"
 
-#: ../../setup_application/database_settings.rst:185
-#: ../../setup_application/database_settings.rst:186
-#: ../../setup_application/database_settings.rst:203
+#: ../../setup_application/database_settings.rst:193
+#: ../../setup_application/database_settings.rst:194
+#: ../../setup_application/database_settings.rst:211
 msgid "Network FS"
 msgstr "SF em Rede"
 
-#: ../../setup_application/database_settings.rst:185
+#: ../../setup_application/database_settings.rst:193
 msgid "**Prohibited: SQLite databases must be stored on local file system.**"
 msgstr ""
 "**Proibido: as bases de dados SQLite devem estar guardadas num sistema de "
 "ficheiros local.**"
 
-#: ../../setup_application/database_settings.rst:186
+#: ../../setup_application/database_settings.rst:194
 msgid "**Prohibited: MySQL databases must be stored on local file system.**"
 msgstr ""
 "**Proibido: as bases de dados MySQL devem estar guardadas num sistema de "
 "ficheiros local.**"
 
-#: ../../setup_application/database_settings.rst:187
-#: ../../setup_application/database_settings.rst:206
+#: ../../setup_application/database_settings.rst:195
+#: ../../setup_application/database_settings.rst:214
 msgid "Remote"
 msgstr "Remoto"
 
-#: ../../setup_application/database_settings.rst:187
+#: ../../setup_application/database_settings.rst:195
 msgid "MySQL-Server"
 msgstr "Servidor de MySQL"
 
-#: ../../setup_application/database_settings.rst:187
+#: ../../setup_application/database_settings.rst:195
 msgid "MariaDB server is supported. Gigabit Ethernet or higher is recommended."
 msgstr ""
 "O servidor MariaDB é suportado. Recomenda-se uma rede Gigabit em Ethernet ou "
 "superior."
 
-#: ../../setup_application/database_settings.rst:193
+#: ../../setup_application/database_settings.rst:201
 msgid "Hard Disk Drive."
 msgstr "Disco Rígido Mecânico."
 
-#: ../../setup_application/database_settings.rst:194
+#: ../../setup_application/database_settings.rst:202
 msgid "SSD"
 msgstr "SSD"
 
-#: ../../setup_application/database_settings.rst:196
+#: ../../setup_application/database_settings.rst:204
 msgid "Solid State Drive."
 msgstr "Disco de Estado Sólido."
 
-#: ../../setup_application/database_settings.rst:197
+#: ../../setup_application/database_settings.rst:205
 msgid "NVMe"
 msgstr "NVMe"
 
-#: ../../setup_application/database_settings.rst:199
+#: ../../setup_application/database_settings.rst:207
 msgid "Non-Volatile Memory."
 msgstr "Memória Não-Volátil."
 
-#: ../../setup_application/database_settings.rst:202
+#: ../../setup_application/database_settings.rst:210
 msgid "External USB HDD/SDD/NVMe drive."
 msgstr "Unidade USB HDD/SDD/NVMe externa."
 
-#: ../../setup_application/database_settings.rst:205
+#: ../../setup_application/database_settings.rst:213
 msgid "Network File System mounted locally."
 msgstr "Sistema de Ficheiros na Rede (NFS) montado a nível local."
 
-#: ../../setup_application/database_settings.rst:208
+#: ../../setup_application/database_settings.rst:216
 msgid "Network server as NAS (Network Attached Storage)."
 msgstr "Servidor de rede como NAS (Armazenamento na Rede)."
 
-#: ../../setup_application/database_settings.rst:209
+#: ../../setup_application/database_settings.rst:217
 msgid "WAL"
 msgstr "WAL"
 
-#: ../../setup_application/database_settings.rst:211
+#: ../../setup_application/database_settings.rst:219
 msgid "Write-Ahead Lock (SQLite database only)."
 msgstr "Bloqueio Antecipado da Escrita (apenas na base de dados SQLite)."
 
-#: ../../setup_application/database_settings.rst:215
+#: ../../setup_application/database_settings.rst:223
 msgid ""
 "See this :ref:`Digital Asset Management chapter <storage_deterioration>` for "
 "more details about media and data protection."
@@ -710,7 +716,7 @@ msgstr ""
 "<storage_deterioration>` para obter mais detalhes sobre os conteúdos e a "
 "protecção de dados."
 
-#: ../../setup_application/database_settings.rst:217
+#: ../../setup_application/database_settings.rst:225
 msgid ""
 "See also this :ref:`Collection Settings chapter <collections_settings>` for "
 "more details about the way to configure your collections depending of your "
@@ -720,7 +726,7 @@ msgstr ""
 "<collections_settings>` para obter mais detalhes sobre a forma como "
 "configurar as suas colecções, dependendo da sua política de armazenamento."
 
-#: ../../setup_application/database_settings.rst:221
+#: ../../setup_application/database_settings.rst:229
 msgid ""
 "If you share the same **Removable** media to host databases and/or "
 "collections between different computers, you must have the same kind of "
@@ -734,7 +740,7 @@ msgstr ""
 "simbólicas para tornar equivalentes os locais) e a mesma versão do digiKam, "
 "para evitar conflitos com os esquemas das bases de dados."
 
-#: ../../setup_application/database_settings.rst:223
+#: ../../setup_application/database_settings.rst:231
 msgid ""
 "If you use a common **Remote** server to host databases and collections, you "
 "must use the same digiKam version everywhere to prevent conflicts with "
@@ -746,7 +752,7 @@ msgstr ""
 "com os esquemas das bases de dados. Os computadores que executam o digiKam "
 "não podem usar ao mesmo tempo as colecções."
 
-#: ../../setup_application/database_settings.rst:225
+#: ../../setup_application/database_settings.rst:233
 msgid ""
 "If you use a common **Remote** server to host collections, as databases are "
 "located on computers, different versions of digiKam can be used and digiKam "
@@ -761,11 +767,11 @@ msgstr ""
 "sobre o acesso concorrente aos meta-dados dos ficheiros, caso tenha activado "
 "esta opção na **Página de Configuração dos Meta-Dados**."
 
-#: ../../setup_application/database_settings.rst:230
+#: ../../setup_application/database_settings.rst:238
 msgid "Database Migration"
 msgstr "Migração da Base de Dados"
 
-#: ../../setup_application/database_settings.rst:232
+#: ../../setup_application/database_settings.rst:240
 msgid ""
 "The photo management application comes up with an exclusive tool named "
 "**Database Migration**, that allows users to migrate their data. Suppose, "
@@ -779,7 +785,7 @@ msgstr ""
 "uma base de dados MySQL; a ferramenta de migração ajudá-lo-á a fazer isso. "
 "Podê-lo-á ajudar a migrar os dados do SQLite para o MySQL e vice-versa."
 
-#: ../../setup_application/database_settings.rst:234
+#: ../../setup_application/database_settings.rst:242
 msgid ""
 "To migrate to another database, go to :menuselection:`Settings --> Database "
 "Migration...`. A dialog box appears:"
@@ -787,11 +793,11 @@ msgstr ""
 "Para migrar para outra base de dados, vá à opção :menuselection:"
 "`Configuração --> Migração da Base de Dados...`. Irá aparecer uma janela:"
 
-#: ../../setup_application/database_settings.rst:240
+#: ../../setup_application/database_settings.rst:248
 msgid "The digiKam Database Migration Tool"
 msgstr "A Ferramenta de Migração da Base de Dados do digiKam"
 
-#: ../../setup_application/database_settings.rst:242
+#: ../../setup_application/database_settings.rst:250
 msgid ""
 "Now choose appropriate database types you want to convert to. Finally, click "
 "on **Migrate** button to convert the database from SQLite to MySQL (or vice "
@@ -802,7 +808,7 @@ msgstr ""
 "SQLite para MySQL (ou vice-versa). Dependendo do tamanho da base de dados, "
 "isto poderá demorar algum tempo."
 
-#: ../../setup_application/database_settings.rst:246
+#: ../../setup_application/database_settings.rst:254
 msgid ""
 "Only the digiKam **Core** database will be migrated while conversion "
 "process. All other databases needs to be rebuilt as post-processing with "
@@ -817,11 +823,11 @@ msgstr ""
 "precisam de ser criadas do zero, e a base de dados de **Caras** precisa da "
 "opção para **Reconstruir os Dados de Treino**."
 
-#: ../../setup_application/database_settings.rst:251
+#: ../../setup_application/database_settings.rst:259
 msgid "Database Backup Recommendation"
 msgstr "Recomendação de Salvaguarda da Base de Dados"
 
-#: ../../setup_application/database_settings.rst:253
+#: ../../setup_application/database_settings.rst:261
 msgid ""
 "For security reasons, planing a database backup using crontab over the "
 "network can help against device dysfunctions. A NAS or an external drive can "
@@ -831,7 +837,7 @@ msgstr ""
 "dados, com o 'crontab' e pela rede, poderá ajudar nos problemas com os "
 "dispositivos. Um NAS ou um disco externo também podem ser usados para isso."
 
-#: ../../setup_application/database_settings.rst:255
+#: ../../setup_application/database_settings.rst:263
 msgid ""
 "Each database can be named with a different name, not only *digikam*. This "
 "allows to users to backup only what is needed. For instance, naming **Core** "
@@ -846,7 +852,7 @@ msgstr ""
 "**Miniaturas**, **Semelhanças** e de **Reconhecimento de Caras** podem "
 "sempre geradas de novo do zero."
 
-#: ../../setup_application/database_settings.rst:257
+#: ../../setup_application/database_settings.rst:265
 msgid ""
 "The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will "
 "explain how to maintain in time the database contents and how to synchronize "
@@ -857,11 +863,11 @@ msgstr ""
 "e como sincronizar as colecções com a informação da base de dados (e vice-"
 "versa)."
 
-#: ../../setup_application/database_settings.rst:262
+#: ../../setup_application/database_settings.rst:270
 msgid "Database Statistics"
 msgstr "Estatísticas da Base de Dados"
 
-#: ../../setup_application/database_settings.rst:264
+#: ../../setup_application/database_settings.rst:272
 msgid ""
 "digiKam provides a unique tool to show the statistics from your collections. "
 "It includes count of images, videos (including individual count by image "
@@ -874,7 +880,7 @@ msgstr ""
 "Estrutura de Base de Dados** (QSQLITE ou QMYSQL) e a **Localização da Base "
 "de Dados** (onde se localiza a sua colecção)."
 
-#: ../../setup_application/database_settings.rst:266
+#: ../../setup_application/database_settings.rst:274
 msgid ""
 "You can view your statistics by going to :menuselection:`Help --> Database "
 "Statistics...`. A dialog box like this will appear:"
@@ -882,6 +888,6 @@ msgstr ""
 "Poderá ver as suas estatísticas se for à opção :menuselection:`Ajuda --> "
 "Estatísticas da Base de Dados...`. Irá aparecer uma janela como a seguinte:"
 
-#: ../../setup_application/database_settings.rst:272
+#: ../../setup_application/database_settings.rst:280
 msgid "The digiKam Database Statistics Dialog"
 msgstr "A Janela de Estatísticas da Base de Dados do digiKam"
