@@ -1,23 +1,22 @@
-# SOME DESCRIPTIVE TITLE.
 # Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-09 00:48+0000\n"
-"PO-Revision-Date: 2023-07-02 18:10+0200\n"
+"PO-Revision-Date: 2023-08-05 23:19+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
-"Language-Team: Slovenian <kde-i18n-doc@kde.org>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #: ../../image_editor/enhancement_tools.rst:1
 msgid "digiKam Image Editor Enhancement Tools"
@@ -30,6 +29,13 @@ msgid ""
 "red, eyes, local, contrast, noise, reduction, hot, pixels, restoration, "
 "vignetting"
 msgstr ""
+"digiKam, dokumentacija, uporabniški priročnik, upravljanje fotografij, odprta"
+" koda, prosto,"
+"učenje, enostavno, slika, urejevalnik, zdravljenje, klon, leča, popačenje,"
+" izostritev, zameglitev,"
+"rdeče, oči, lokalno, kontrast, šum, zmanjšanje, vroče, slikovne pike,"
+" obnovitev,"
+"vinjetiranje"
 
 #: ../../image_editor/enhancement_tools.rst:14
 msgid "Enhancement Tools"
@@ -63,12 +69,24 @@ msgid ""
 "These distortions can easily be eliminated without visible loss in quality "
 "with this tool."
 msgstr ""
+"Sodčasto popačenje je povezano s širokokotnimi (ali minimalnimi zoom) lečami."
+" To povzroča, da so slike videti rahlo sferične (ukrivljene navzven) kot sod."
+" To lahko opazite, ko imate ravne poteze blizu periferne strani slike."
+" Popačenje blazinice za šivanke je nasprotna napaka in"
+"je povezan s teleobjektivi (največji zoom) ali s podvodnimi slikami. Slike so"
+" videti stisnjene (upognjene navznoter) proti sredini. Popačenja blazinic za"
+" šivanke so pogosto manj opazne kot sodčkaste, vendar so enako vidne ob"
+" robovih. Ta popačenja je mogoče enostavno odpraviti brez vidne izgube"
+" kakovosti s tem orodjem."
 
 #: ../../image_editor/enhancement_tools.rst:29
 msgid ""
 "This tool treats the geometrical distortions. Chromatic aberrations will not "
 "be corrected by this tool. See the **Lens Auto Correction** tool instead."
 msgstr ""
+"To orodje obravnava geometrijska popačenja. Kromatskih aberacij ni mogoče"
+" popraviti s tem orodjem. Namesto tega si oglejte orodje **Samodejni popravek"
+" objektiva**."
 
 #: ../../image_editor/enhancement_tools.rst:31
 msgid ""
@@ -77,7 +95,7 @@ msgstr "Naslednje slike pojasnjujejo glavne vrste geometrijskih popačenj:"
 
 #: ../../image_editor/enhancement_tools.rst:33
 msgid "(1): Pincushion distortion."
-msgstr "(1): Blazinasto popačenje."
+msgstr "(1): Popačenje blazinice za šivanke."
 
 #: ../../image_editor/enhancement_tools.rst:35
 msgid "(2): No distortion."
@@ -85,7 +103,7 @@ msgstr "(2): Brez popačenja."
 
 #: ../../image_editor/enhancement_tools.rst:37
 msgid "(3): Barrel distortion."
-msgstr "(3): Sodčasto popačenje."
+msgstr "(3): Sodčkasto popačenje."
 
 #: ../../image_editor/enhancement_tools.rst:43
 msgid "The Geometrical Distortion Types"
@@ -96,19 +114,22 @@ msgid ""
 "A bit of explanation first. The geometrical corrections use 4th-order "
 "polynomial coefficients:"
 msgstr ""
+"Najprej malo razlage. Geometrijski popravki uporabljajo polinomske"
+" koeficiente 4. reda:"
 
 #: ../../image_editor/enhancement_tools.rst:49
 msgid ""
 "The 1st-order coefficient changes the size of the image. The tool calls this "
 "**Zoom**."
 msgstr ""
+"Koeficient 1. reda spremeni velikost slike. Orodje to imenuje **Zoom**."
 
 #: ../../image_editor/enhancement_tools.rst:51
 msgid ""
 "The 2nd-order coefficient treats the main geometrical distortion of lenses "
 "and can correct the convex or concave shape of the image."
 msgstr ""
-"Koeficient 2. reda obravnava glavno geometrijsko popačenje leč in lahko "
+"Koeficient 2. reda obravnava glavno geometrijsko popačenje lečja in lahko "
 "popravi konveksno ali konkavno obliko slike."
 
 #: ../../image_editor/enhancement_tools.rst:53
@@ -116,6 +137,8 @@ msgid ""
 "The 3rd-order coefficient has a similar rounding effect but levels off "
 "towards the edges. This correction is not employed in the tool."
 msgstr ""
+"Koeficient 3. reda ima podoben učinek zaokroževanja, vendar se izravnava"
+" proti robovom. Ta popravek ni uporabljen v orodju."
 
 #: ../../image_editor/enhancement_tools.rst:55
 msgid ""
@@ -123,10 +146,13 @@ msgid ""
 "rounding. Combining it with the 2nd-order correction the geometrical "
 "distortions can be almost completely eliminated."
 msgstr ""
+"Koeficient 4. reda popravi oddaljene robove obratno glede na koeficiente 2."
+" reda zaokroževanja. Kombinacija s korekcijo 2. reda je mogoče geometrijska"
+" popačenja skoraj popolnoma odpraviti."
 
 #: ../../image_editor/enhancement_tools.rst:61
 msgid "The Image Editor Lens Distortion Tool"
-msgstr "Orodje za popačenje leče urejevalnika slik"
+msgstr "Orodje za popačenje lečja urejevalnika slik"
 
 #: ../../image_editor/enhancement_tools.rst:63
 msgid "Four sliders let you set the distortion correction filter:"
@@ -138,6 +164,9 @@ msgid ""
 "values correct barrel distortions, while positive values correct pincushion "
 "distortion."
 msgstr ""
+"**Glavni**: ta vrednost nadzira količino popačenja 2. reda. Negativne"
+" vrednosti popravijo sodčkasta popačenja, medtem ko pozitivne vrednosti"
+" popravijo popačenja blazinice za šivanke."
 
 #: ../../image_editor/enhancement_tools.rst:67
 msgid ""
@@ -146,12 +175,17 @@ msgid ""
 "most lenses, the **Edge** parameter has the opposite sign of the **Main** "
 "parameter."
 msgstr ""
+"**Rob**: ta vrednost nadzoruje količino popačenja 4. reda. Nadzor roba ima"
+" večji učinek na robovih slike kot na sredini. Pri večini objektivov ima"
+" parameter **Rob** nasprotni predznak od **Glavnega** parametra."
 
 #: ../../image_editor/enhancement_tools.rst:69
 msgid ""
 "**Zoom**: this value rescales the overall image size (1st-order correction). "
 "Negative values zoom out of the image, while positive values zoom in."
 msgstr ""
+"**Zoom**: ta vrednost spremeni velikost celotne slike (popravek 1. reda)."
+" Negativne vrednosti pomanjšajo sliko, pozitivne vrednosti pa povečajo."
 
 #: ../../image_editor/enhancement_tools.rst:71
 msgid ""
@@ -159,6 +193,9 @@ msgid ""
 "values decrease the brightness image corners, while positive values increase "
 "it."
 msgstr ""
+"**Posvetlitev**: ta kontrolnik prilagodi svetlost v kotih slike. Negativno"
+" vrednosti zmanjšajo svetlost vogalov slike, pozitivne vrednosti pa to"
+" povečajo."
 
 #: ../../image_editor/enhancement_tools.rst:73
 msgid ""
@@ -167,6 +204,10 @@ msgid ""
 "crossed mesh pattern. The values you apply to your image will be saved and "
 "come up with the same values as default the next time you call the tool."
 msgstr ""
+"Pogovorno okno pripomočka vam pomaga izbrati najboljše nastavitve filtra s"
+" predogledom sličice ponazarja popravek popačenja, uporabljen za križan"
+" mrežast vzorec. Vrednosti, ki jih uporabite za svojo sliko, bodo shranjene"
+" in naslednjič, ko pokličete orodje, dobite enake privzete vrednosti."
 
 #: ../../image_editor/enhancement_tools.rst:77
 msgid ""
@@ -175,6 +216,11 @@ msgid ""
 "corrections should be the very first step on the original image. If you crop "
 "the image and then use barrel correction the effect would be obviously wrong."
 msgstr ""
+"Popravek popačenja sodčka ali blazinice s šivankami je treba opraviti pred"
+" vsakim obrezovanjem ali spremembo velikosti (vključno s korekcijo"
+" perspektive). Pravzaprav bi morali biti popravki sodčkov blazinic za šivanke"
+" prvi korak na izvirni sliki. Če obrežete sliko in nato uporabite sodčkasti"
+" popravek, bi bil učinek očitno napačen."
 
 #: ../../image_editor/enhancement_tools.rst:79
 msgid ""
@@ -185,6 +231,12 @@ msgid ""
 "freeze the dashed lines position. Now, adjust the barrel/pincushion "
 "correction to align with the guide."
 msgstr ""
+"Za pomoč pri iskanju najboljšega popravka orodje ponuja navpično in vodoravno"
+" vodilo. Premaknite kazalko miške v predogledu slike, da prikažete vodilo"
+" črtkane črte. Premaknite kazalko na pomembno mesto na sliki, kot je morska"
+" gladina ali meja stavbe in pritisnite levi gumb miške za se zamrzne položaj"
+" črtkanih črt. Zdaj prilagodite popravek sodčka/blazine za poravnavo z"
+" vodilom."
 
 #: ../../image_editor/enhancement_tools.rst:81
 msgid ""
@@ -193,6 +245,10 @@ msgid ""
 "available in :menuselection:`Transform --> Crop` Image Editor menu or via "
 "the zoom slider of this dialog."
 msgstr ""
+"Pri uporabi popravka z blazinico bo nastala slika imela črno mejo v kotu. To"
+" boste morali izrezati z orodjem za obrezovanje na voljo na"
+" :menuselection:`Transformiraj --> Obreži` v meniju urejevalnika slik ali"
+" prek drsnika za povečavo tega pogovornega okna."
 
 #: ../../image_editor/enhancement_tools.rst:83
 msgid ""
@@ -202,6 +258,11 @@ msgid ""
 "you hold your camera by hand you almost always introduce some kind of slight "
 "perspective distortion."
 msgstr ""
+"Pri večini slik zadostuje uporaba sodčkastega popravka, vendar pri nekaterih"
+" posnetkih, kot so sprednje slike, okvirji, umetniške slike, je naslednji"
+" logični korak uporaba popravka perspektive, da bodo vsi koti 90 stopinj."
+" Upoštevajte, da če držite fotoaparat z roko, skoraj vedno vnesete kakšno"
+" rahlo popačenje perspektive."
 
 #: ../../image_editor/enhancement_tools.rst:88
 msgid "Vignetting Correction"
@@ -229,6 +290,11 @@ msgid ""
 "substantially reducing the light reaching the sensor there. But telelenses "
 "may show vignetting too."
 msgstr ""
+"Širokokotni objektivi, predvsem tisti, ki se uporabljajo pri srednjem in"
+" velikem formatu fotografije, pogosto ne osvetlijo enakomerno celotne"
+" senzorske ravnine. Namesto tega *vinjetirajo* (zasenčijo) robove in vogale"
+" slike, znatno zmanjša svetlobo, ki doseže senzor. Ampak teleobjektivi tudi"
+" lahko kažejo vinjetiranje."
 
 #: ../../image_editor/enhancement_tools.rst:97
 msgid ""
@@ -241,6 +307,14 @@ msgid ""
 "which occurs when camera movements are employed for perspective or plane of "
 "focus adjustment."
 msgstr ""
+"Tradicionalna rešitev za to je pritrditev *sredinskega filtra* na objektiv."
+" To je filter nevtralne gostote z največjo gostoto na optični osi leče, na"
+" obodu čista, z gostoto, ki se spreminja obratno"
+"vinjetiranje leče. Sredinski filter ima številne prednosti: ne samo da"
+" samodejno popravi slike v polnem formatu, vendar, ker je fiksiran na na"
+" sprednjem delu leče, kompenzira tudi vinjetiranje izven središča, ki se"
+" pojavi, ko se premiki kamere uporabijo za perspektivo ali ravnino"
+" prilagoditve fokusa."
 
 #: ../../image_editor/enhancement_tools.rst:99
 msgid ""
@@ -251,6 +325,12 @@ msgid ""
 "impossible and motion blur becomes a problem when photographing moving "
 "objects."
 msgstr ""
+"Vendar obstajajo tudi slabosti. Veliko sredinskih filtrov zahteva 1,5 ali 2"
+" kratno prilagoditev faktorja filtra f-stop, kar lahko posledično zahteva"
+" zaklop s tako počasno hitrostjo (saj so širokokotni objektivi, tudi s"
+" sredinskimi filtri, najboljši, ko se uporablja pri zaslonkah f/16 ali"
+" manjših), ko je držanje fotoaparata v roki nemogoče in zameglitev gibanja"
+" postane težava pri fotografiranju v gibanju predmetov."
 
 #: ../../image_editor/enhancement_tools.rst:101
 msgid ""
@@ -259,6 +339,10 @@ msgid ""
 "the effect of a center filter by applying an equivalent transform to a raw "
 "image taken without the filter."
 msgstr ""
+"S širokim razponom osvetlitve današnjega filma in barvno (ali sivo lestvico)"
+" globine digitalne kamere ali filmskih skenerjev, je mogoče simulirati učinek"
+" sredinskega filtra z uporabo enakovrednega preoblikovanja za surovo sliko"
+" posneto brez filtra."
 
 #: ../../image_editor/enhancement_tools.rst:104
 msgid "Using the vignetting correction tool"
@@ -284,6 +368,11 @@ msgid ""
 "coincidence, a factor of 2 in luminosity). Increase the amount to compensate "
 "for a greater degree of vignetting; reduce it for less."
 msgstr ""
+"**Količina**: ta možnost nadzira stopnjo oslabitve svetilnosti z filtriranjem"
+" na točki največje količine. Privzeti znesek je 2,0, kar ustreza optičnemu"
+" filtru s faktorjem filtra f-stop 1 (ali brez naključja, faktor 2 pri"
+" svetilnosti). Povečajte znesek nadomestila za večjo stopnjo vinjetiranja;"
+" zmanjšajte za manj."
 
 #: ../../image_editor/enhancement_tools.rst:116
 msgid ""
@@ -297,6 +386,14 @@ msgid ""
 "of the filter toward the edges; a power of 0.5 causes the amount to fall as "
 "the square root of the distance from the center."
 msgstr ""
+"**Pero**: ta možnost določa stopnjo intenzivnosti filtra padanja od točke"
+" največje količine proti robovom, izraženo kot faktor moči. Privzeta vrednost"
+" 1 pomeni linearno zmanjšanje količine filtra z oddaljenostjo od centra."
+" Faktorji moči, večji od 1,0, povzročijo hitrejši padec (na primer, potenca 2"
+" povzroči, da se količina zmanjša kot kvadrat razdalje od središča) in"
+" povzroči učinek filtra biti skoncentriran blizu središča. Moči, manjše od 1,"
+" razdelite količino filtra proti robom; potenca 0,5 povzroči, da količina"
+" pade kot kvadratni koren razdalje od središča."
 
 #: ../../image_editor/enhancement_tools.rst:118
 msgid ""
@@ -314,6 +411,19 @@ msgid ""
 "which extends well beyond the edges of the film, requiring a radius setting "
 "greater than 1 to simulate a center filter covering the entire image circle."
 msgstr ""
+"**Polmer**: ta možnost določa polmer kot večkratnik polovice diagonalne mere"
+" slike, pri kateri količina filtra pade na nič (ali, z drugimi besedami,"
+" postane prozoren). Privzeto vrednost 1,0"
+"določa filter, ki je v svojih vogalih prozoren. Radij specifikacija, večja od"
+" 1, razširi učinek sredinskega filtra na robove slike, medtem ko radij,"
+" manjši od ena, omejuje filter dejanja na območje, ki je manjše od slike. Pri"
+" kompenzaciji vinjetiranja z objektivi, ki se uporabljajo pri fotoaparatih"
+" velikega formata in nekaterih fotoaparatih srednjega formata, je privzeti"
+" faktor polmera 1 le redko pravilen! Te leče pogosto \"pokrijejo\" sliko"
+" krog, ki je bistveno večji od filma, da omogoča premikanje kamere"
+" nadzorujejo perspektivo in fokus ter posledično imajo vzorec vinjetiranja,"
+" ki sega precej čez robove filma, kar zahteva nastavitev polmera večjega od 1"
+" za simulacijo sredinskega filtra, ki pokriva celoten krog slike."
 
 #: ../../image_editor/enhancement_tools.rst:120
 msgid ""
@@ -372,6 +482,9 @@ msgid ""
 "original image on the top shows vignetting in the corners, the corrected "
 "image on the bottom much less. The values used for this example are:"
 msgstr ""
+"To je primer popravka proti vinjetiranju, uporabljenega za sliko. Izvirna"
+" slika na vrhu prikazuje vinjetiranje v vogalih, popravljena slika na dnu"
+" veliko manj. Vrednosti, uporabljene za ta primer, so:"
 
 #: ../../image_editor/enhancement_tools.rst:135
 msgid "Density = 2.6."
@@ -399,6 +512,9 @@ msgid ""
 "imperfections, however digiKam can correct lens imperfections such as "
 "**Distortion**, **Chromatic aberration**, **Vignetting**, and **Geometry**."
 msgstr ""
+"Nobena leča ni optično popolna. Tudi najdražje leče imajo svoje nepopolnosti,"
+" lahko pa digiKam popravi nepopolnosti leč, kot je npr. **Popačenje**,"
+" **Kromatska aberacija**, **Vinjetiranje** in **Geometrija**."
 
 #: ../../image_editor/enhancement_tools.rst:158
 msgid "The Lens Auto-Correction Tool from digiKam Image Editor"
@@ -476,6 +592,10 @@ msgid ""
 "**Bad Pixels** when using slow shutter speeds. Night images can be ruined by "
 "these Bad Pixels. There are three different types of Bad Pixels:"
 msgstr ""
+"Večina sodobnih digitalnih fotoaparatov proizvaja slike z več **Slabih"
+" slikovnih pik** živimi barvami pri uporabljenih počasnih hitrosti zaklopa."
+" Nočne slike lahko uničijo te slabe pike. Obstajajo tri različne vrste slabih"
+" slikovnih pik:"
 
 #: ../../image_editor/enhancement_tools.rst:204
 msgid ""
@@ -485,6 +605,13 @@ msgid ""
 "of shutter speed, aperture size or any other user settings. It will occur on "
 "a normal exposure and tends to be more obvious under bright condition."
 msgstr ""
+"**Zataknjene slikovne pike**: to je slikovna pika, ki ima vedno visoko"
+" vrednost ali ima vedno vklopljeno največja moč pri vseh osvetlitvah. To"
+" ustvari svetlo slikovno piko običajno rdeče barve,"
+"modre ali zelene barva na končni sliki. Zataknjen piksel se bo zgodil ne"
+" glede na hitrost zaklopa, velikosti zaslonke ali drugih uporabniških"
+" nastavitev. Zgodilo se bo pri normalni osvetlitev in je bolj očitna pri"
+" svetlih pogojih."
 
 #: ../../image_editor/enhancement_tools.rst:206
 msgid ""
@@ -493,6 +620,11 @@ msgid ""
 "stuck pixel, a dead pixel will occur regardless of shutter speed, aperture "
 "size or any other user settings."
 msgstr ""
+"**Mrtve slikovne pike**: je slikovna pika, ki ima vedno vrednost nič ali je"
+" vedno izklopljena pri vseh osvetlitvah. To stanje ustvari črno slikovno piko"
+" na končni sliki. Podobno kot pri zataknjeni slikovni piki, bo mrtva slikovna"
+" pika nastala ne glede na hitrost zaklopa, velikost zaslonke ali druge"
+" uporabniške nastavitve."
 
 #: ../../image_editor/enhancement_tools.rst:208
 msgid ""
@@ -501,6 +633,10 @@ msgid ""
 "hot pixels will become. These pixels will not be visible in bright "
 "conditions."
 msgstr ""
+"**Vroče slikovne pike**: to je slikovna pika, ki je svetla, pri daljših"
+" osvetlitvah bele, rdeče ali zelene barve. Daljši kot je čas osvetlitve, bolj"
+" bodo postale vidne vroče slikovne pike. Te slikovne pike ne bodo vidne pri"
+" svetlih pogojih."
 
 #: ../../image_editor/enhancement_tools.rst:210
 msgid ""
@@ -508,6 +644,9 @@ msgid ""
 "images. If the location of the stuck or dead pixel occurs at different "
 "locations, it may be a Hot Pixel."
 msgstr ""
+"Upoštevajte, da se zataknjene ali mrtve slikovne pike pojavijo na istem mestu"
+" na vseh slikah. Če se zataknjena ali mrtva slikovna pika pojavlja na"
+" različnih lokacijah, je morda vroča točka."
 
 #: ../../image_editor/enhancement_tools.rst:212
 msgid ""
@@ -516,10 +655,10 @@ msgid ""
 "applied automatically when JPEG compression is used (which is mostly the "
 "case)."
 msgstr ""
-"Zataknjene, mrtve ali vroče slikovne pike so težava zlasti pri "
-"fotografiranju v visokokakovostnem surovem načinu, saj imajo številne kamere "
-"vgrajeno zatiranje vročih slikovnih pik, ki se samodejno uporabi pri uporabi "
-"stiskanja JPEG (kar se večinoma zgodi)."
+"Zataknjene, mrtve ali vroče slikovne pike so težava zlasti pri fotografiranju"
+" v visokokakovostnem surovem načinu, saj imajo številne kamere vgrajeno"
+" zatiranje vročih slikovnih pik, ki se samodejno uporabi pri uporabi"
+" stiskanja JPEG (kar se večinoma zgodi)."
 
 #: ../../image_editor/enhancement_tools.rst:214
 msgid ""
@@ -527,6 +666,9 @@ msgid ""
 "photograph using a **Black Frame** subtraction method. There is not a manual "
 "editor to select Bad Pixels."
 msgstr ""
+"To orodje lahko uporabite za popravljanje **Vročih slikovnih pik** in"
+" **Zataknjenih slikovnih pik** na fotografijah z metodo odštevanja **črnega"
+" okvirja**. Ni ročnega urejevalnika, da izbirali slabe pike."
 
 #: ../../image_editor/enhancement_tools.rst:217
 msgid "Create the Black Frames"
@@ -543,6 +685,14 @@ msgid ""
 "(colored dots). These are positioned at the same places as on your previous "
 "shots."
 msgstr ""
+"Metoda odštevanja črnega okvirja je najbolj natančna metoda \"vročih"
+" slikovnih pik\" in odstranitev \"zataknjenih slikovnih pik\". Najprej morate"
+" ustvariti \"črni okvir\" kot referenco. To je enostavno narediti. Ko končate"
+" s snemanjem posnetka z dolgo osvetlitvijo, namestite pokrovček objektiva na"
+" fotoaparat in posnemite eno \"temno\" sliko z enakim čas osvetlitve kot na"
+" prejšnjih slikah. Ta slika bo vsa temna, vendar z natančnim pregledom boste"
+" videli, da ima vroče in obtičale slikovne pike (barvne pike). Ti so"
+" nameščeni na istih mestih kot na prejšnjih posnetkih."
 
 #: ../../image_editor/enhancement_tools.rst:221
 msgid ""
@@ -550,6 +700,9 @@ msgid ""
 "process an automatic detection of Hot and Stuck Pixels. They will be "
 "highlighted in the control panel preview areas."
 msgstr ""
+"Naložite to datoteko v gradnik s pomočjo gumba **Črni okvir**. Orodje bo"
+" obdelalo samodejno zaznavanje vročih in zataknjenih slikovnih pik. Označeni"
+" bodo v območjih predogleda nadzorne plošče."
 
 #: ../../image_editor/enhancement_tools.rst:225
 msgid ""
@@ -563,11 +716,11 @@ msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:228
 msgid "Using the Hotpixel Tool"
-msgstr "Uporaba orodja Hotpixel"
+msgstr "Uporaba orodja vroče točke"
 
 #: ../../image_editor/enhancement_tools.rst:234
 msgid "The Image Editor Hot Pixels Tool"
-msgstr "Orodje za vroče slikovne pike urejevalnika slik"
+msgstr "Orodje za vroče točke urejevalnika slik"
 
 #: ../../image_editor/enhancement_tools.rst:236
 msgid ""
