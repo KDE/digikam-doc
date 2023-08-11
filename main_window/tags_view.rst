@@ -15,7 +15,7 @@ Tags View
 
 Hierarchical tagging provides a flexible and powerful way to organize and catalog your images. Tags (also called *keywords* in other applications) are labels that can be applied to individual images or whole groups. Once a tag has been set to an image the image can be found again by selecting the tag or doing a search.
 
-Tags can be arranged in a hierarchical tree. This allows you to organize your tags in a logical manner. You can collapse parts of the tree in the **Tags** list so that you can easily find the tags that you are looking for. 
+Tags can be arranged in a hierarchical tree. This allows you to organize your tags in a logical manner. You can collapse parts of the tree in the **Tags** list so that you can easily find the tags that you are looking for.
 
 .. figure:: images/mainwindow_tags_view.webp
     :alt:
@@ -73,9 +73,9 @@ It is not always easy to build a logical hierarchy from general and generic cate
             - Cheetah
             - Leopard
 
-In this tag tree the keyword *Cat* appears three times. This will not cause a problem within digiKam but there are quite a few views where the user cannot know which of the three is applied to an image because he might not be able to see the whole hierarchy of the tag. A help could be to tag the image in a case like this also with the parent tag or even the whole hierarchy but it becomes quite unwieldy, e.g. in the image icon if you have the tags displayed there. The second *Cat* can be avoided by calling it *Wild Cat* but calling the third one *Zoo Cat* is a bit out of the roof, I think. And still: there are also two *Cheetah*!
+In this tag tree the keyword *Cat* appears three times. This will not cause a problem within digiKam but there are quite a few views where the user cannot know which of the three is applied to an image because they might not be able to see the whole hierarchy of the tag. A help could be to tag the image in a case like this also with the parent tag or even the whole hierarchy but it becomes quite unwieldy, e.g. in the image icon if you have the tags displayed there. The second *Cat* can be avoided by calling it *Wild Cat* but calling the third one *Zoo Cat* is a bit out of the roof, I think. And still: there are also two *Cheetah*!
 
-Solution: You replace the *Zoo Animal* branch by a single tag *Zoo* which you use in addition to the tag you choose from the two remaining branches. You could even put it on the top level of your hierarchy if you have photographs taken in a zoo but not showing animals. 
+Solution: You replace the *Zoo Animal* branch by a single tag *Zoo* which you use in addition to the tag you choose from the two remaining branches. You could even put it on the top level of your hierarchy if you have photographs taken in a zoo but not showing animals.
 
 .. _tag_manager:
 
@@ -145,9 +145,7 @@ Drag and Drop: works with both sidebars provided they are showing tags of course
 
 Shortcuts: as mentioned earlier in this chapter you can assign keyboard shortcuts in the Tag Properties. With these you can assign or un-assign a tag to the selected photograph(s).
 
-Context menu: by clicking with the right mouse button on the selected photographs and choosing **Assign Tag** you will see the next menu step offering the ten most recently used tags, **Add New Tag...**, described at the beginning of the :ref:`previous section <managing_tags>`, and **More Tags...** which leads to what is described in the next paragraph. The context menu method is obviously very useful if you use only a limited number of tags out of your whole tree for a while. 
-
-When you delete an Album from digiKam it will be moved into the internal Trash Can. As an option you could change this behavior, so that delete really will remove the Album and all of the photographs in it. This can be changed by selecting :menuselection:`Settings --> Configure digiKam...` and selecting the Miscellaneous page. At the top of this page are the settings that control what happens when a photograph is deleted. To delete an Album, click with the right mouse button over the Album in the “Albums” tree and select Delete Album from the context menu.
+Context menu: by clicking with the right mouse button on the selected photographs and choosing **Assign Tag** you will see the next menu step offering the ten most recently used tags, **Add New Tag...**, described at the beginning of the :ref:`previous section <managing_tags>`, and **More Tags...** which leads to what is described in the next paragraph. The context menu method is obviously very useful if you use only a limited number of tags out of your whole tree for a while.
 
 .. figure:: images/mainwindow_assigntags.webp
     :alt:
@@ -161,7 +159,7 @@ The Right Sidebar: this is what I would call my standard method for assigning ta
 
 You can label a photograph with as many tags as you like. The photograph will appear when you select any of the tags that are set against it. This way you can set a tag for each person in a photograph, as well as the place the photograph was taken, the event it was taken at, etc.
 
-Once you have tagged a photograph, the tag name will appear under the thumbnail in the Image Area. 
+Once you have tagged a photograph, the tag name will appear under the thumbnail in the Image Area.
 
 .. tip::
 
