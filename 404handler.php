@@ -22,6 +22,7 @@ $supported_languages = array(
     "de",
     "en",
     "es",
+    "et",
     "fi",
     "fr",
     "it",

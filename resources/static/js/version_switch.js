@@ -21,6 +21,7 @@ var all_langs = {
     //"da": "‎dansk",
     "de": "Deutsch",
     "es": "Espa&ntilde;ol",
+    "et": "Eesti"
     "fi": "Suomeksi",
     "fr": "Fran&ccedil;ais",
     //"id": "Bahasa Indonesia",
