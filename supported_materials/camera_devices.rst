@@ -24,6 +24,10 @@ Introduction
 
      How to setup and work with RAW files is described in :ref:`RAW Decoding Settings <setup_raw>` and :ref:`RAW Workflow <rawprocessing_workflow>` sections.
 
+.. note::
+
+     Camera import is currently not supported on Windows Systems due limitations in the Gphoto2 library.
+
 An easy-to-use camera interface is provided that will connect to your digital camera and download photographs directly into digiKam Albums. More than `2500 digital cameras <http://www.gphoto.org/proj/libgphoto2/support.php>`_ are supported by the gPhoto library. Of course, any media or card reader supported by your operating system will interface with digiKam.
 
 Current digital cameras are characterized by the use of Compact Flash™ Memory cards and USB or FireWire (IEEE-1394 or i-link) for data transmission. The actual transfers to a host computer are commonly carried out using the USB Mass Storage device class (so that the camera appears as a disk drive) or using the Picture Transfer Protocol (PTP) and its derivatives. Older cameras may use the Serial Port (RS-232) connection.
