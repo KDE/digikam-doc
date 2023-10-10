@@ -174,6 +174,10 @@ With slow network, digiKam hangs a lot of time especially when album contains ma
 
 Also, if you have an enormous collection, you should start the MySQL server with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with using MySQL, you could also change your settings in :file:`my.ini` or :file:`~/.my.cnf` files.
 
+.. warning::
+
+    The locale used in the Mysql server must be the same than the locale from the computer used to run digiKam to prevent problem with the double values saved in the tables of the database.
+
 Database Type Criteria
 ----------------------
 
