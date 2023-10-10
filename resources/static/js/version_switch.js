@@ -21,12 +21,12 @@ var all_langs = {
     //"da": "‎dansk",
     "de": "Deutsch",
     "es": "Espa&ntilde;ol",
-    "et": "Eesti"
+    //"et": "Eesti"
     "fi": "Suomeksi",
     "fr": "Fran&ccedil;ais",
     //"id": "Bahasa Indonesia",
     "it": "Italiano",
-    //"ja": "&#x65E5;&#x672C;&#x8A9E;",
+    "ja": "&#x65E5;&#x672C;&#x8A9E;",
     //"ko": "&#xD55C;&#xAD6D;&#xC5B4;",
     //"nb": "Norsk Bokm&#x00E5;l",
     "lt": "Lietuvi&uogon; kalba",
