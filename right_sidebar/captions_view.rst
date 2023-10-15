@@ -65,20 +65,7 @@ The Rating section displays a 0...5 star rating scheme that can be used in searc
 
 The labels view allow to assign also the Color and the Pick tags that you can use in your workflow to classify items.
 
-The rating is then transcribed into the IPTC *urgency* data field. The transcoding follows the scheme in this table: 
-
-============== ============
-digiKam Rating IPTC Urgency
-============== ============
-no star        8
-1 star         7
-1 star         6
-2 stars        5
-3 stars        4
-4 stars        3
-4 stars        2
-5 stars        1
-============== ============
+The rating is then transcribed into the XMP tag data fields.
 
 .. _tags_tree:
 
