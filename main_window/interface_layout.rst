@@ -43,7 +43,7 @@ The Status Bar
 
     The digiKam Main Window Status-Bar
 
-The status bar at the bottom shows in all eight views:
+The status bar at the bottom shows:
 
     - The file name when selecting a single file.
 
