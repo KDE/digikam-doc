@@ -160,7 +160,7 @@ In the **Core Db Name** field, enter the name of the first database for storing 
 
 Specify the name of the second database for storing wavelets compressed thumbnails in the **Thumbs Db Name** field.
 
-The third database is dedicated to store fuzzy search finger-prints. Use the **Similarity Db Name** field for that.
+The third database is dedicated to store the similarity finger-prints performed by the fuzzy search engine. Use the **Similarity Db Name** field for that.
 
 The last database is dedicated to store face histograms for recognition purpose. Use the **Face Db Name** field for that.
 

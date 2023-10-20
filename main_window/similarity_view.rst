@@ -16,7 +16,7 @@ Similarity View
 Overview
 ~~~~~~~~
 
-You have lost a picture because you can't remember its name or where you filed it? You need to perform a *fuzzy search* on your collections.
+You have lost a picture because you can't remember its name or where you filed it? You need to perform a *Similarity* search on your collections.
 
 digiKam characterizes every image by a lengthy number that makes it possible to find similar images by comparing this calculated signature. The less numerical difference there is between any two image signatures, the more they resemble each other. This methodology is the core engine to three features named find **Duplicates**, find similar **Image**, and find by **Sketch**.
 
@@ -107,7 +107,7 @@ Find by Sketch
 
 This tool is a free hand color sketching editor. You can draw a quick sketch and digiKam will find corresponding images. You will find the same means to save your search as in the **Image** tab.
 
-On the left hand side of digiKam, navigate to the tab **Sketch**. This view has a drawing area plus some settings below to set pencil and history tools. Choose a color that your image might contain, you can change the size of the pen which is on the scale of 1-10, and you can also choose the number of images that you want to be displayed during your fuzzy search, this can be set to a value between 1-50 items. As you sketch on the area you will see that the fuzzy search related images appears on the right hand side.
+On the left hand side of digiKam, navigate to the tab **Sketch**. This view has a drawing area plus some settings below to set pencil and history tools. Choose a color that your image might contain, you can change the size of the pen which is on the scale of 1-10, and you can also choose the number of images that you want to be displayed during your fuzzy search, this can be set to a value between 1-50 items. As you sketch on the area you will see that the similarity search related images appears on the right hand side.
 
 The **Search in**, **Save**, and **Restore** previous searches features works as **Find Duplicates** tool.
 
