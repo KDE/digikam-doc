@@ -55,7 +55,7 @@ Minimum System Requirements
 .. _linux_requirements:
 
 digiKam on Linux
------------------
+----------------
 
 **digiKam** can be installed on non-KDE Desktops without any issues.
 
@@ -266,6 +266,17 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
     :align: center
 
     The macOS Security and Privacy Panel with the Photos Access Rights
+
+.. note::
+
+    At first start, if you point your collection on the standard Apple Photo library, MacOS will ask you automatically to grant access on this content.
+
+    .. figure:: images/macos_grant_access_photos.webp
+        :width: 400px
+        :alt:
+        :align: center
+
+        The macOS dialog to grant access to Apple Photo library
 
 .. _configuration_files:
 
