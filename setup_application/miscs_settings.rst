@@ -149,9 +149,13 @@ With the **Draw frames around grouped items** setting, a more visible decoration
 
 With the **Sidebar tab title** setting, you can set how sidebars on the sides will show the tab titles. Use **Only For Active Tab** option only if you use a small screen resolution as with a laptop computer. Else **For All Tabs** will be a best choice to discover quickly all internal features of digiKam.
 
-With the **Widget style** setting, you can choose the default application window decoration and looks. **Breeze** style is the best choice for all desktop.
+With the **Widget style** setting, you can choose the default application window decoration and looks.
 
-With the **Icon theme** setting, you can choose the default application icon theme. Theme availability depends of desktop used to run digiKam. **Breeze** icons-set is the best choice for all desktop.
+.. important::
+
+    Even if different widget styles are available, the **Breeze** style gives the best experience on all desktops. It's highly recommended to not change this value.
+
+With the **Icon theme** setting, you can choose the default application icon theme. Theme availability depends of desktop used to run digiKam. **Breeze** icons-set is the best choice for all desktops.
 
 Finally, the **Application font** option allow to customize the font to use everywhere in the application. Note that extra options exists also to customize fonts for the :ref:`album tree-view <treeview_font>`, the :ref:`icon-view <iconview_font>`, and the :ref:`tooltip <tooltip_font>`.
 
