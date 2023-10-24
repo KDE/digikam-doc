@@ -30,6 +30,14 @@ The **Behavior** tab allows you to select what information digiKam will write to
 
     The digiKam Metadata General Behavior Settings Page
 
+    - **Image tags** will store the tags paths and keywords used to mark the contents.
+    - **Captions and titles** will store the internationalized strings used to descibe the contents.
+    - **Rating** will store the rate of the contents.
+    - **Pick label** will store the quality of the contents.
+    - **Color label** will store the color flag used to classify your contents while your workflow.
+    - **Timestamps** will store the dates of the contents.
+    - **Metadata templates (Copyrights etc.)**: will store the set of internationalized strings used by the agencies workflow.
+
 .. note::
 
     If the **Lazy Synchronization** option is turned on, digiKam will only write metadata when user clicks on the **Apply Pending Changes To Metadata** icon in the status bar or when application is shutdown.
