@@ -30,13 +30,17 @@ The **Behavior** tab allows you to select what information digiKam will write to
 
     The digiKam Metadata General Behavior Settings Page
 
-    - **Image tags** will store the tags paths and keywords used to mark the contents.
+The information to record in files metadata are listed below:
+
+    - **Image tags** will store the tag paths and keywords used to mark the contents.
     - **Captions and titles** will store the internationalized strings used to descibe the contents.
     - **Rating** will store the rate of the contents.
     - **Pick label** will store the quality of the contents.
     - **Color label** will store the color flag used to classify your contents while your workflow.
     - **Timestamps** will store the dates of the contents.
     - **Metadata templates (Copyrights etc.)**: will store the set of internationalized strings used by the agencies workflow.
+    - **Face Tags (including face areas**: will store the-face tag paths and the rectangles corresponding to the zones around faces.
+    - **Geolocation information (GPS)**: will store the map-world position of the contents.
 
 .. note::
 
