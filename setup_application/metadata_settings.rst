@@ -17,6 +17,8 @@ Metadata Settings
 
 Image files can have some metadata embedded into the image file format. These metadata can be stored in a number of standard formats as JPEG, TIFF, PNG, JPEG2000, PGF, and RAW files. Metadata can be read and written in the `Exif <https://en.wikipedia.org/wiki/Exif>`_, `IPTC <https://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model>`_, and `XMP <https://en.wikipedia.org/wiki/Extensible_Metadata_Platform>`_ formats if they are present in the file.
 
+Storing in metadata allows one to preserve this information when moving or sending the files to different systems.
+
 .. _metadata_behavior:
 
 Behavior Settings
@@ -32,15 +34,15 @@ The **Behavior** tab allows you to select what information digiKam will write to
 
 The information to record in files metadata are listed below:
 
-    - **Image tags** will store the tag paths and keywords used to mark the contents.
-    - **Captions and titles** will store the internationalized strings used to describe the contents.
-    - **Rating** will store the rate of the contents.
-    - **Pick label** will store the quality of the contents.
-    - **Color label** will store the color flag used to classify your contents while your workflow.
-    - **Timestamps** will store the dates of the contents.
-    - **Metadata templates (Copyrights etc.)**: will store the set of internationalized strings used by the agencies workflow.
-    - **Face Tags (including face areas**: will store the-face tag paths and the rectangles corresponding to the zones around faces.
-    - **Geolocation information (GPS)**: will store the map-world position of the contents.
+    - **Image tags** will store the tag paths and keywords used to mark the contents. Usually this information is stored in IPTC and XMP.
+    - **Captions and titles** will store the internationalized strings used to describe the contents. Usually this information is stored in Exif, IPTC, and XMP.
+    - **Rating** will store the rate of the contents. Usualy this information is stored in Exif and XMP. Usually this information are stored in Exif and XMP.
+    - **Pick label** will store the quality of the contents. Usually this information is stored in XMP.
+    - **Color label** will store the color flag used to classify your contents while your workflow. Usually this information is stored in XMP.
+    - **Timestamps** will store the dates of the contents. Usually this information is stored in Exif, IPTC, and XMP.
+    - **Metadata templates (Copyrights etc.)**: will store the set of internationalized strings used by the agencies workflow. Usually this information is stored in IPTC and XMP.
+    - **Face Tags (including face areas**: will store the-face tag paths and the rectangles corresponding to the zones around faces. Usually this information is stored in XMP.
+    - **Geolocation information (GPS)**: will store the map-world position of the contents. Usually this information are stored in Exif and XMP.
 
 .. note::
 
