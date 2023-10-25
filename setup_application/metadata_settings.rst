@@ -33,7 +33,7 @@ The **Behavior** tab allows you to select what information digiKam will write to
 The information to record in files metadata are listed below:
 
     - **Image tags** will store the tag paths and keywords used to mark the contents.
-    - **Captions and titles** will store the internationalized strings used to descibe the contents.
+    - **Captions and titles** will store the internationalized strings used to describe the contents.
     - **Rating** will store the rate of the contents.
     - **Pick label** will store the quality of the contents.
     - **Color label** will store the color flag used to classify your contents while your workflow.
