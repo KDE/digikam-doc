@@ -93,7 +93,7 @@ Using on Standard Desktop
 
 **digiKam** runs only on 64bit version of Windows. digiKam runs on Windows 7 and newer. We cannot guarantee that digiKam runs on server or embedded Windows version.
 
-digiKam is available as an **installable** (Setup Program) and as a **standalone** (Archive) version.
+digiKam is available as an non-signed **installable** (Setup Program) and as a **standalone** (Archive) version.
 
     - **Installable** version: **Needs** administrator rights and gets installed on your local machine. It's also listed as a program.
 
@@ -101,30 +101,59 @@ digiKam is available as an **installable** (Setup Program) and as a **standalone
 
         - The digiKam files are always located in the same folder.
 
-    .. note::
+        When the file is downloaded, to start the installer, a security warning will appears, because the it do not come from the Windows Store.
 
-        If a previous digiKam version is present on your system, the Windows installer will warns you to uninstall it before to process to the new installation.
+        .. figure:: images/windows_setup_protection.webp
+            :width: 400px
+            :alt:
+            :align: center
 
-    .. figure:: images/windows_installer_warning.webp
-        :width: 300px
-        :alt:
-        :align: center
+            The Windows Warning When you Try to Run digiKam Installer after Downloading
 
-        The Windows Warning When you Try to Install digiKam When a Previous Version is Present
+        You needs to give the rights to run from the **Windows Config Panel/Applications and Features** to setup applications source outside the store.
 
-    .. figure:: images/windows_installer_uninstall.webp
-        :width: 300px
-        :alt:
-        :align: center
+        .. figure:: images/windows_setup_security.webp
+            :width: 400px
+            :alt:
+            :align: center
 
-        The Windows Dialog to Uninstall Previous Version of digiKam
+            The Windows Applications and Features Panel to Authorize digiKam Installation
 
-    .. figure:: images/windows_installer_install.webp
-        :width: 300px
-        :alt:
-        :align: center
+        When you start a second time the installer, an information dialog will appears, because the it's not signed for the Microsoft Windows Defender.
 
-        The Windows Dialog to Install Newer Version of digiKam
+        .. figure:: images/windows_setup_information.webp
+            :width: 400px
+            :alt:
+            :align: center
+
+            The Windows Information When you Run digiKam Installer
+
+        When installer is running, follow instructions from the assistant to install application on your computer.
+
+        .. note::
+
+            If a previous digiKam version is present on your system, the Windows installer will warns you to uninstall it before to process to the new installation.
+
+        .. figure:: images/windows_setup_prepare.webp
+            :width: 300px
+            :alt:
+            :align: center
+
+            The Windows Warning When you Try to Install digiKam When a Previous Version is Present
+
+        .. figure:: images/windows_setup_uninstall.webp
+            :width: 300px
+            :alt:
+            :align: center
+
+            The Windows Dialog to Uninstall Previous Version of digiKam
+
+        .. figure:: images/windows_setup_installer.webp
+            :width: 300px
+            :alt:
+            :align: center
+
+            The Windows Dialog to Install Newer Version of digiKam
 
     - **Standalone** version: **Doesn't** need administrator rights and isn't installed. It's **not** listed as a program. Is only accessible for the user who has downloaded the file.
 
