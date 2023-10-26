@@ -36,13 +36,13 @@ The options available in the **Write This Information to the Metadata** section 
 
     - **Image tags** will store the tag paths and keywords used to mark the contents. Usually this information is stored in IPTC and XMP.
     - **Captions and titles** will store the internationalized strings used to describe the contents. Usually this information is stored in Exif, IPTC, and XMP.
-    - **Rating** will store the rate of the contents. Usualy this information is stored in Exif and XMP. Usually this information are stored in Exif and XMP.
+    - **Rating** will store the rate of the contents. Usually this information is stored in Exif and XMP.
     - **Pick label** will store the quality of the contents. Usually this information is stored in XMP.
     - **Color label** will store the color flag used to classify your contents while your workflow. Usually this information is stored in XMP.
     - **Timestamps** will store the dates of the contents. Usually this information is stored in Exif, IPTC, and XMP.
     - **Metadata templates (Copyrights etc.)**: will store the set of internationalized strings used by the agencies workflow. Usually this information is stored in IPTC and XMP.
-    - **Face Tags (including face areas**: will store the-face tag paths and the rectangles corresponding to the zones around faces. Usually this information is stored in XMP.
-    - **Geolocation information (GPS)**: will store the map-world position of the contents. Usually this information are stored in Exif and XMP.
+    - **Face Tags (including face areas)**: will store the face tag paths and the rectangles corresponding to the zones around faces. Usually this information is stored in XMP.
+    - **Geolocation information (GPS)**: will store the world map position of the contents. Usually this information is stored in Exif and XMP.
 
 The options available in the **Reading and Writing Metadata** section are listed below:
 
