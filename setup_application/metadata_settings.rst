@@ -32,7 +32,7 @@ The **Behavior** tab allows you to select what information digiKam will write to
 
     The digiKam Metadata General Behavior Settings Page
 
-The information to record in files metadata are listed below:
+The options available in the **Write This Information to the Metadata** section are listed below:
 
     - **Image tags** will store the tag paths and keywords used to mark the contents. Usually this information is stored in IPTC and XMP.
     - **Captions and titles** will store the internationalized strings used to describe the contents. Usually this information is stored in Exif, IPTC, and XMP.
@@ -44,6 +44,14 @@ The information to record in files metadata are listed below:
     - **Face Tags (including face areas**: will store the-face tag paths and the rectangles corresponding to the zones around faces. Usually this information is stored in XMP.
     - **Geolocation information (GPS)**: will store the map-world position of the contents. Usually this information are stored in Exif and XMP.
 
+The options available in the **Reading and Writing Metadata** section are listed below:
+
+    - **Delegate to ExifTool backend all operations to write metadata to files** allows to write metadata to files with ExifTool backend instead Exiv2. This will slowdown a little bit the synchronization of files metadata with database.
+    - **Write metadata to DNG files** allows to delegate to ExifTool all operations to write metadata into DNG files.
+    - **If possible write metadata to RAW files** allows to delegate to ExifTool all operations to write metadata into RAW files. This feature is disabled by default.
+
+See also the ExifTool backend configuration from the :ref:`Metadata Behavior <metadata_exiftool>` section of this manual.
+    
 .. note::
 
     If the **Lazy Synchronization** option is turned on, digiKam will only write metadata when user clicks on the **Apply Pending Changes To Metadata** icon in the status bar or when application is shutdown.
