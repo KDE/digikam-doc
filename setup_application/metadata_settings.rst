@@ -46,7 +46,7 @@ The options available in the **Write This Information to the Metadata** section 
 
 The options available in the **Reading and Writing Metadata** section are listed below:
 
-    - **Delegate to ExifTool backend all operations to write metadata to files** allows to write metadata to files with ExifTool backend instead Exiv2. This will slowdown a little bit the synchronization of files metadata with database.
+    - **Delegate to ExifTool backend all operations to write metadata to files** allows to write metadata to files with the `ExifTool <https://exiftool.org/>`_ backend instead `Exiv2 <https://exiv2.org/>`_. This last one is primary used for all operations on metadata. Using ExifTool instead will slowdown a little bit the synchronization of files metadata with database.
     - **Write metadata to DNG files** allows to delegate to ExifTool all operations to write metadata into DNG files.
     - **If possible write metadata to RAW files** allows to delegate to ExifTool all operations to write metadata into RAW files. This feature is disabled by default.
 
@@ -114,7 +114,7 @@ These settings allows to customize the metadata contents displayed in Exif, Make
 ExifTool Settings
 -----------------
 
-ExifTool is a backend engine that digiKam can use to process operations on metadata, as view, read, and write. This panel only show the detection of the ExifTool binary program, and the supported formats with the respective read and write features.
+`ExifTool <https://exiftool.org/>`_ is a backend engine that digiKam can use to process operations on metadata, as view, read, and write. This panel only show the detection of the ExifTool binary program, and the supported formats with the respective read and write features.
 
 .. figure:: images/setup_metadata_exiftool.webp
     :alt:
