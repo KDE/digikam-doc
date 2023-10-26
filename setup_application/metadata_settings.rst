@@ -50,11 +50,15 @@ The options available in the **Reading and Writing Metadata** section are listed
     - **Write metadata to DNG files** allows to delegate to ExifTool all operations to write metadata into DNG files.
     - **If possible write metadata to RAW files** allows to delegate to ExifTool all operations to write metadata into RAW files. This feature is disabled by default.
 
-See also the ExifTool backend configuration from the :ref:`Metadata Behavior <metadata_exiftool>` section of this manual.
-    
 .. note::
 
-    If the **Lazy Synchronization** option is turned on, digiKam will only write metadata when user clicks on the **Apply Pending Changes To Metadata** icon in the status bar or when application is shutdown.
+    See also the ExifTool backend configuration from the :ref:`ExifTool Settings <metadata_exiftool>` section of this manual, and the `ExifTool write limitations <https://exiftool.org/#limitations>`_.
+
+On the bottom, a section group extra behavior settings:
+
+    - **Use Lazy Synchronization** allows to schedule metadata for synchronization instead to flush imedialty. digiKam will only write metadata when user clicks on the **Apply Pending Changes To Metadata** icon in the status bar or when application is shutdown.
+    - **Update file modification timestamp when files are modified** allows to update file timestamps when files are changed as when you update metadata or image data. Note: disabling this option can introduce some dysfunctions with external applications which use file timestamp properties to detect file modifications automatically.
+    - **Rescan file when files are modified** allows to force digiKam to rescan files that has been modified outside the application. If a file has changed it is file size or if the last modified timestamp has changed, a rescan of that file will be performed when digiKam starts.
 
 .. _metadata_sidecars:
 
