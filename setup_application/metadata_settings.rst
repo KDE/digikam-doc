@@ -56,7 +56,7 @@ The options available in the **Reading and Writing Metadata** section are listed
 
 On the bottom, a section group extra behavior settings:
 
-    - **Use Lazy Synchronization** allows to schedule metadata for synchronization instead to flush imedialty. digiKam will only write metadata when user clicks on the **Apply Pending Changes To Metadata** icon in the status bar or when application is shutdown.
+    - **Use Lazy Synchronization** allows to schedule metadata for synchronization instead to flush immediately. digiKam will only write metadata when user clicks on the **Apply Pending Changes To Metadata** icon in the status bar or when application is shutdown.
     - **Update file modification timestamp when files are modified** allows to update file timestamps when files are changed as when you update metadata or image data. Note: disabling this option can introduce some dysfunctions with external applications which use file timestamp properties to detect file modifications automatically.
     - **Rescan file when files are modified** allows to force digiKam to rescan files that has been modified outside the application. If a file has changed it is file size or if the last modified timestamp has changed, a rescan of that file will be performed when digiKam starts.
 

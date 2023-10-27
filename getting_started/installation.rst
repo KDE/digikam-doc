@@ -101,7 +101,7 @@ digiKam is available as an non-signed **installable** (Setup Program) and as a *
 
         - The digiKam files are always located in the same folder.
 
-        When the file is downloaded, to start the installer, a security warning will appears, because the it do not come from the Windows Store.
+        When the file is downloaded, to start the installer, a security warning will appears, because it does not come from the Windows Store.
 
         .. figure:: images/windows_setup_protection.webp
             :width: 400px
