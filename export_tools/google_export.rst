@@ -32,6 +32,10 @@ This tool allows the user to upload photos to the Google web services. Two onlin
 
 The tools can be used to upload an image collections from your computer to the remote Google server using the Internet. Use respectively the :menuselection:`Export --> Export to Google Photo` :kbd:`Ctrl+Alt+Shift+P` and by the :menuselection:`Export --> Export to Google Drive` :kbd:`Ctrl+Alt+Shift+D` menu entries to access to these tools, or uses the icons from **Tools** in Right sidebar.
 
+.. warning::
+
+    Google Photo is only suitable for showing images on the web, not as a backup solution. Google recompresses uploaded images and changes or removes metadata eg. GPS for exemple.
+
 Login to your Account
 ---------------------
 
