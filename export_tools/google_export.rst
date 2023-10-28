@@ -34,7 +34,7 @@ The tools can be used to upload an image collections from your computer to the r
 
 .. warning::
 
-    Google Photo is only suitable for showing images on the web, not as a backup solution. Google recompresses uploaded images and changes or removes metadata eg. GPS for exemple.
+    Google Photo is only suitable for showing images on the web, not as a backup solution. Google recompresses uploaded images and changes or removes metadata, e.g. GPS.
 
 Login to your Account
 ---------------------
