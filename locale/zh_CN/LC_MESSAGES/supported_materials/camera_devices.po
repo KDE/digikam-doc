@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 00:48+0000\n"
+"POT-Creation-Date: 2023-10-31 00:36+0000\n"
 "PO-Revision-Date: 2023-10-21 13:55\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -62,7 +62,13 @@ msgstr ""
 "至于如何设置和处理 RAW 文件，在 :ref:`RAW 解码设置 <setup_raw>` 和 :ref:`RAW "
 "工作流程 <rawprocessing_workflow>` 部分有描述。"
 
-#: ../../supported_materials/camera_devices.rst:27
+#: ../../supported_materials/camera_devices.rst:29
+msgid ""
+"Camera import is currently not supported on Windows Systems due limitations "
+"in the Gphoto2 library."
+msgstr ""
+
+#: ../../supported_materials/camera_devices.rst:31
 msgid ""
 "An easy-to-use camera interface is provided that will connect to your "
 "digital camera and download photographs directly into digiKam Albums. More "
@@ -75,7 +81,7 @@ msgstr ""
 "proj/libgphoto2/support.php>`_ 。当然，您的操作系统支持的任何媒体或读卡器都可"
 "以与 digiKam 连接。"
 
-#: ../../supported_materials/camera_devices.rst:29
+#: ../../supported_materials/camera_devices.rst:33
 msgid ""
 "Current digital cameras are characterized by the use of Compact Flash™ "
 "Memory cards and USB or FireWire (IEEE-1394 or i-link) for data "
@@ -89,11 +95,11 @@ msgstr ""
 "容量存储设备类（相机会显示为磁盘驱动器）或使用图片传输协议 (PTP) 及其衍生协议"
 "来执行。较旧的相机可能使用串行端口 (RS-232) 连接。"
 
-#: ../../supported_materials/camera_devices.rst:32
+#: ../../supported_materials/camera_devices.rst:36
 msgid "Transfers using gPhoto: PTP and Serial Port"
 msgstr "使用 gPhoto 进行传输： PTP 和串口"
 
-#: ../../supported_materials/camera_devices.rst:34
+#: ../../supported_materials/camera_devices.rst:38
 msgid ""
 "digiKam employs the gPhoto program to communicate with digital still "
 "cameras. Gphoto is a free, redistributable set of digital camera software "
@@ -109,7 +115,7 @@ msgstr ""
 "持的协议，允许从数码相机向计算机和其他周边设备传输图像，而不需要额外的设备驱"
 "动程序。"
 
-#: ../../supported_materials/camera_devices.rst:36
+#: ../../supported_materials/camera_devices.rst:40
 msgid ""
 "Many old digital still cameras used Serial Port to communicate with host "
 "computers. Because photographs are big files and serial port transfers are "
@@ -123,7 +129,7 @@ msgstr ""
 "输。你可以在 `这个网址 <http://www.gphoto.org/proj/libgphoto2/support.php>`_ "
 "找到支持的数码相机的完整列表。"
 
-#: ../../supported_materials/camera_devices.rst:40
+#: ../../supported_materials/camera_devices.rst:44
 msgid ""
 "Gphoto needs to be built with libexif to retrieve thumbnails to digiKam "
 "properly. Exif support is required for thumbnail retrieval on some "
@@ -134,15 +140,15 @@ msgstr ""
 "libgphoto2 相机驱动程序上的缩略图检索需要 Exif 支持。如果 gPhoto 未设置 Exif "
 "支持，你可能看不到缩略图，或者缩略图提取可能会非常慢。"
 
-#: ../../supported_materials/camera_devices.rst:46
+#: ../../supported_materials/camera_devices.rst:50
 msgid "The digiKam Setup Dialog to Configure a gPhoto Camera Device"
 msgstr "配置 gPhoto 相机设备的 digiKam 设置对话框"
 
-#: ../../supported_materials/camera_devices.rst:49
+#: ../../supported_materials/camera_devices.rst:53
 msgid "Transfers using Mass Storage device"
 msgstr "使用大容量存储设备传输"
 
-#: ../../supported_materials/camera_devices.rst:51
+#: ../../supported_materials/camera_devices.rst:55
 msgid ""
 "For the devices that are not directly supported by gPhoto, there is support "
 "for the Mass Storage protocol, which is well supported under GNU/Linux®. "
@@ -153,7 +159,7 @@ msgstr ""
 "持，它在 GNU/Linux® 下得到的支持很不错。许多数码相机和读卡器都包括在内。大容"
 "量存储接口有："
 
-#: ../../supported_materials/camera_devices.rst:53
+#: ../../supported_materials/camera_devices.rst:57
 msgid ""
 "**USB Mass Storage**: a computer interface using communication protocols "
 "defined by the USB Implementers Forum that run on the Universal Serial Bus. "
@@ -163,7 +169,7 @@ msgstr ""
 "**USB 大容量存储** ：计算机接口使用 USB 实施者论坛（USB-IF）定义的通信协议，"
 "在通用串行总线上运行。接受这一标准的接口可以识别各种存储设备，包括数码相机。"
 
-#: ../../supported_materials/camera_devices.rst:55
+#: ../../supported_materials/camera_devices.rst:59
 msgid ""
 "**FireWire Mass Storage**: a computer interface using communication "
 "protocols developed primarily by Apple Computer in the 1990s. FireWire "
@@ -178,7 +184,7 @@ msgstr ""
 "样，该标准为各种存储设备提供了接口，包括数码照相机。几乎所有新出的数码相机都"
 "支持 USB 版本 1，并最终将支持 USB 版本 2；只有极少数支持 FireWire。"
 
-#: ../../supported_materials/camera_devices.rst:57
+#: ../../supported_materials/camera_devices.rst:61
 msgid ""
 "To use a generic Mass Storage device with digiKam, select :menuselection:"
 "`Import --> Camera --> Add Camera Manually...`, add your device and set the "
@@ -187,7 +193,7 @@ msgstr ""
 "如果想要通用大容量存储设备与 digiKam 一起使用，请在软件里选择 :menuselection:"
 "`导入 --> 相机 --> 手动添加相机...`，添加您的设备，并设置正确的相机挂载路径。"
 
-#: ../../supported_materials/camera_devices.rst:59
+#: ../../supported_materials/camera_devices.rst:63
 msgid ""
 "For details see the chapter to configure digiKam, into :ref:`Camera section "
 "<camera_settings>`."
