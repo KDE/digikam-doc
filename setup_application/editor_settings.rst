@@ -24,7 +24,7 @@ By default the Image Editor will use a black background behind photographs when 
 
 You can also turn off the different elements when the Image Editor is in full screen mode, as the ToolBar, the Thumbbar, the Sidebar, and the Statusbar.
 
-**Over-exposure**  and **under-exposure** settings can highlight areas of an image to indicated by dark and light marker colors that can be defined here. In the editor this viewing mode can be switched on and off with :kbd:`F10` and :kbd:`F11` respectively. The thresholds for over-exposure and under-exposure can be set by the adjustment bars "... percents". Check Indicate exposure as pure color if you want only pure black (RGB 0,0,0) indicated as under-exposure and only pure white (RGB 8 bit 255,255,255 respectively RGB 16 bit 65535, 65535, 65535) indicated as over-exposure.
+**Over-exposure**  and **under-exposure** settings can highlight areas of an image to indicated by dark and light marker colors that can be defined here. In the editor this viewing mode can be switched on and off with :kbd:`F11` and :kbd:`Ctrl+F11` respectively. The thresholds for over-exposure and under-exposure can be set by the adjustment bars "... percents". Check Indicate exposure as pure color if you want only pure black (RGB 0,0,0) indicated as under-exposure and only pure white (RGB 8 bit 255,255,255 respectively RGB 16 bit 65535, 65535, 65535) indicated as over-exposure.
 
 The option **Restore the settings of the Image Editor tools** can be used to restore the settings of the Image Editor tools from the last session. Otherwise, the default settings will be used.
 
