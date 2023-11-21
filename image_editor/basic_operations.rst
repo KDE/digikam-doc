@@ -58,4 +58,8 @@ When you want to print the current image from the Image Editor, select :menusele
 
     Standard Print Dialog from image Editor
 
+.. note::
+
+    Under Windows, at least on printer module must be installed on your system to support this function.
+
 From the main window view you can print single images or whole sets of them. Entire thumbnail pages can be printed with your selection. All you need to do is selecting images the standard way and call :menuselection:`Item --> Print Creator...`. Then follow the instructions and choices to make as explained :ref:`in the section <print_creator>` from the manual.
