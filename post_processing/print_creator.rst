@@ -36,7 +36,7 @@ The first page allows to use the items selection method: from **Images** current
 The next page allows to customize the **Printing Layout**, the **List of Items** to assemble, and the **Printing Target** as:
 
     - Post processing with **Gimp**. Application needs to be installed on your system.
-    - **PDF** file. Linux as a native export to PDF support. For Windows and macOS, supplemental driver needs to be installed.
+    - **PDF** file. Linux has a native export to PDF support. For Windows and macOS, supplemental driver needs to be installed.
     - **Image** file.
 
 A layout preview using selected items an the printing template is given on the left bottom side of the dialog.
