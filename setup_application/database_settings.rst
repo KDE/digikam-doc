@@ -188,10 +188,10 @@ See the resume below to choose the right database type depending of the use-case
     ============== ============== ========== ====================================================================================
     HDD            SQLite         < 100K     **Warning: WAL is mandatory.**
     HDD            MySQL-Internal > 100K
-    SDD            SQLite                    WAL is optional.
-    SDD            MySQL-Internal
-    MVMe           SQLite                    WAL is optional.
-    MVMe           MySQL-Internal
+    SSD            SQLite                    WAL is optional.
+    SSD            MySQL-Internal
+    NVME           SQLite                    WAL is optional.
+    NVME           MySQL-Internal
     Removable      SQLite         < 100K     **Warning: WAL is mandatory. USB 3.1 minimum with NVMe drive.**
     Removable      MySQL-Internal > 100K     **Warning: USB 3.1 minimum with NVMe drive.**
     Network FS     SQLite                    **Prohibited: SQLite databases must be stored on local file system.**
@@ -211,7 +211,7 @@ See the resume below to choose the right database type depending of the use-case
         Non-Volatile Memory.
 
     Removable
-        External USB HDD/SDD/NVMe drive.
+        External USB HDD/SSD/NVMe drive.
 
     Network FS
         Network File System mounted locally.

@@ -91,7 +91,7 @@ Solid State Drives
 
 `SSDs <https://en.wikipedia.org/wiki/Solid-state_drive>`_ are mechanically more robust than HDDs and suffer much less on that front when they are plugged into the computer. They will replace HDD in time as capacity, robustest, and price become more and more a good solution as permanent data storage devices.
 
-In case of use as external device, one major cause for data loss (often recoverable) is the unsafe removal of SDDs from a computer. Before data is saved from a computer memory to any attached device, it remains for some time in buffers. In hard drives this means seconds at most, whereas with SDDs it can be tens of minutes. Therefore, before you disconnect a flash device, always activate data flushing through software (often called *safely remove device*).
+In case of use as external device, one major cause for data loss (often recoverable) is the unsafe removal of SSDs from a computer. Before data is saved from a computer memory to any attached device, it remains for some time in buffers. In hard drives this means seconds at most, whereas with SSDs it can be tens of minutes. Therefore, before you disconnect a flash device, always activate data flushing through software (often called *safely remove device*).
 
 Non-Volatile Memory
 ~~~~~~~~~~~~~~~~~~~
