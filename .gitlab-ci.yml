@@ -1,34 +1,20 @@
 # SPDX-FileCopyrightText: 2022-2023 Gilles Caulier <caulier dot gilles at gmail dot com>
 # SPDX-License-Identifier: CC0-1.0
 
+include:
+  - project: sysadmin/ci-utilities
+    file:
+      - /gitlab-templates/website-sphinx-app-docs.yml
+variables:
+    EPUB_NAME: DigikamManual
+    WEBSITE_LANGUAGES: ca cs de en es fi fr it ja lt nl pt_PT sk sl uk_UA zh_CN
+
 run_tests:
   stage: test
   image: invent-registry.kde.org/sysadmin/ci-images/staticweb:latest
-  only:
-    - branches
-    - merge_requests
-    - tags
   tags:
     - Linux
   script:
-    # Generate HTML English version
-    - make html
-    # Generate HTML Internationalized versions (respect alphabetic order)
-    - make -e SPHINXOPTS="-D language='ca'"    html
-    - make -e SPHINXOPTS="-D language='cs'"    html
-    - make -e SPHINXOPTS="-D language='de'"    html
-    - make -e SPHINXOPTS="-D language='es'"    html
-    - make -e SPHINXOPTS="-D language='fi'"    html
-    - make -e SPHINXOPTS="-D language='fr'"    html
-    - make -e SPHINXOPTS="-D language='it'"    html
-    - make -e SPHINXOPTS="-D language='ja'"    html
-    - make -e SPHINXOPTS="-D language='lt'"    html
-    - make -e SPHINXOPTS="-D language='nl'"    html
-    - make -e SPHINXOPTS="-D language='pt_PT'" html
-    - make -e SPHINXOPTS="-D language='sk'"    html
-    - make -e SPHINXOPTS="-D language='sl'"    html
-    - make -e SPHINXOPTS="-D language='uk_UA'" html
-    - make -e SPHINXOPTS="-D language='zh_CH'" html
     # Run unit-tests
     - make test
     - make linkcheck || true
