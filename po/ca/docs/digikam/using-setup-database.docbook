@@ -23,7 +23,7 @@
 > és un sistema per a la gestió d'una base de dades relacional, continguda a la biblioteca de programació C. El SQLite no és directament comparable amb els motors de bases de dades SQL amb client/servidor, com ara el MySQL, Oracle o PostgreSQL. Més aviat, és un motor de base de dades SQL incrustat, &ead;, que està incrustat en un programa final. El SQLite llegeix i escriu directament a fitxers de disc normals. Per a l'emmagatzematge al dispositiu local amb una baixa concurrència en l'escriptura i menys d'un terabyte de contingut, el SQLite és gairebé sempre una solució millor. És ràpid i fiable, i no requereix cap configuració o manteniment. Manté les coses senzilles. El SQLite «simplement funciona». </para>
 
         <para
->Per omissió, el &digikam; utilitza el SQLite com el seu dorsal per emmagatzemar les metadades i miniatures importants. S'utilitzen tres fitxers SQLite per al seu emmagatzematge, respectivament s'anomenen: <orderedlist>
+>Per omissió, el &digikam; utilitza el SQLite com el seu dorsal per a emmagatzemar les metadades i miniatures importants. S'utilitzen tres fitxers SQLite per al seu emmagatzematge, respectivament s'anomenen: <orderedlist>
 
                 <listitem
 ><para
@@ -86,7 +86,7 @@
             <para
 >El servidor <ulink url="https://mariadb.org/"
 >MariaDB</ulink
-> és una bifurcació del servidor de MySQL desenvolupat per la comunitat. Iniciat pels principals membres de l'equip original de MySQL, es treballa activament amb desenvolupadors externs per lliurar el servidor SQL obert més complet de característiques, estable i amb una llicència assenyada per a la indústria. </para>
+> és una bifurcació del servidor de MySQL desenvolupat per la comunitat. Iniciat pels principals membres de l'equip original de MySQL, es treballa activament amb desenvolupadors externs per a lliurar el servidor SQL obert més complet de característiques, estable i amb una llicència assenyada per a la indústria. </para>
 
             <para
 >En realitat el MariaDB ha superat al MySQL, causa d'algunes raons bàsiques: <orderedlist>
@@ -124,7 +124,7 @@
 >El &digikam; també proporciona suport per al popular motor de base de dades MySQL. Per descomptat, un podria preguntar-se per què voldries canviar al MySQL quan el SQLite ja fa una bona feina en la gestió de les dades? El MySQL ofereix molts avantatges per a l'emmagatzematge de dades del &digikam;, especialment quan les col·leccions inclouen més de 100.000 elements. Amb aquest tipus de col·leccions, el SQLite introdueix latència, el qual alenteix l'aplicació. </para>
 
             <para
->L'ús de MySQL com a dorsal de la base de dades del &digikam; permet emmagatzemar les dades localment, així com en servidors remots. Local, per a substituir l'emmagatzematge local de SQLite i finalment, utilitzar un ordinador compartit a través de la xarxa. L'ús de MySQL com a dorsal de la base de dades del &digikam; permet emmagatzemar les dades en un servidor remot. D'aquesta manera, es podran utilitzar en diverses instal·lacions del &digikam; (per exemple, a l'ordinador portàtil i al PC) per accedir i gestionar les col·leccions de fotografies. També podeu utilitzar les eines de MySQL per a crear una còpia de seguretat i analitzar les dades del &digikam;. </para>
+>L'ús de MySQL com a dorsal de la base de dades del &digikam; permet emmagatzemar les dades localment, així com en servidors remots. Local, per a substituir l'emmagatzematge local de SQLite i finalment, utilitzar un ordinador compartit a través de la xarxa. L'ús de MySQL com a dorsal de la base de dades del &digikam; permet emmagatzemar les dades en un servidor remot. D'aquesta manera, es podran utilitzar en diverses instal·lacions del &digikam; (per exemple, a l'ordinador portàtil i al PC) per a accedir i gestionar les col·leccions de fotografies. També podeu utilitzar les eines de MySQL per a crear una còpia de seguretat i analitzar les dades del &digikam;. </para>
 
             <para
 >Per a canviar des d'una base de dades SQLite a MySQL, aneu a <guimenuitem
@@ -156,7 +156,7 @@
 >El servidor de MySQL intern</title>
 
             <para
->Durant l'ús d'una col·lecció gran, de grandària superior als 100.000 elements, l'aplicació tendeix a alentir-se. Per evitar el retard i mantenir l'eficiència, el &digikam; ofereix l'opció d'utilitzar <guilabel
+>Durant l'ús d'una col·lecció gran, de grandària superior als 100.000 elements, l'aplicació tendeix a alentir-se. Per a evitar el retard i mantenir l'eficiència, el &digikam; ofereix l'opció d'utilitzar <guilabel
 >Servidor de MySQL intern</guilabel
 >. Perquè quedi clar, aquest no és un servidor real o una xarxa pública. En canvi, és un servidor que només s'executa mentre s'executa l'aplicació. </para>
 
@@ -247,10 +247,10 @@
             <para
 >En el camp <guilabel
 >Nom de la BD del nucli</guilabel
->, introduïu el nom de la primera base de dades per emmagatzemar les metadades de les fotografies. </para>
+>, introduïu el nom de la primera base de dades per a emmagatzemar les metadades de les fotografies. </para>
 
             <para
->Especifiqueu el nom de la segona base de dades per emmagatzemar les miniatures comprimides en ones al camp <guilabel
+>Especifiqueu el nom de la segona base de dades per a emmagatzemar les miniatures comprimides en ones al camp <guilabel
 >Nom de la BD de miniatures</guilabel
 >. </para>
 
@@ -276,7 +276,7 @@
 >, i espereu fins que el &digikam; ompli les bases de dades amb les dades de les fotografies. Això pot trigar molt de temps si teniu una gran quantitat d'elements per a registrar a la base de dades. </para>
 
             <para
->Hi ha alguns consells i recomanacions per obtenir els millors resultats amb un servidor de bases de dades MySQL remot. </para>
+>Hi ha alguns consells i recomanacions per a obtenir els millors resultats amb un servidor de bases de dades MySQL remot. </para>
 
             <para
 >Amb una xarxa lenta, el &digikam; es penja una gran quantitat de temps, especialment quan l'àlbum conté molts elements (
@@ -299,7 +299,7 @@
 >L'aplicació per a la gestió de les fotografies ve amb una eina exclusiva «Migra la base de dades», la qual permet als usuaris migrar les seves dades. Suposem, que esteu utilitzant SQLite i que voleu moure totes les dades a la base de dades MySQL, aquesta eina de migració us ajudarà a fer-ho. Pot ajudar a migrar les dades des de SQLite a MySQL i viceversa. </para>
 
         <para
->Per migrar a una altra base de dades, aneu a <menuchoice
+>Per a migrar a una altra base de dades, aneu a <menuchoice
 ><guimenu
 >Arranjament</guimenu
 > <guimenuitem
