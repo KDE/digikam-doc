@@ -28,7 +28,6 @@ This section explain how to setup application.
    setup_application/collections_settings.rst
    setup_application/views_settings.rst
    setup_application/tooltip_settings.rst
-   setup_application/video_settings.rst
    setup_application/metadata_settings.rst
    setup_application/templates_settings.rst
    setup_application/editor_settings.rst

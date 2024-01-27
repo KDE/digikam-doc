@@ -472,10 +472,6 @@ Setup Application
 
     .. container:: tile no-descr
 
-        :ref:`video_settings`
-
-    .. container:: tile no-descr
-
         :ref:`metadata_settings`
 
     .. container:: tile no-descr
