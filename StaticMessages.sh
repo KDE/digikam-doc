@@ -9,7 +9,10 @@ function export_pot_dir # First parameter will be the path of the directory wher
 {
     echo "Creating POT files in $1"
     potdir=$1
-    make gettext
+    if ! make gettext; then
+        echo "Pot dir export aborted because of failing make gettext"
+        return;
+    fi
     cd build/gettext
     #rm -rf untranslatable_pages.pot untranslatable_pages
     # Flatten the dir structure
