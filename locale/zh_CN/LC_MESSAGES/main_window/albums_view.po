@@ -3,10 +3,9 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-02 00:35+0000\n"
-"PO-Revision-Date: 2024-02-29 12:58\n"
+"PO-Revision-Date: 2024-03-15 21:04\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
-"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,6 +16,7 @@ msgstr ""
 "X-Crowdin-File: /kf5-trunk/messages/digikam-doc/"
 "docs_digikam_org_main_window___albums_view.pot\n"
 "X-Crowdin-File-ID: 41391\n"
+"Language: zh_CN\n"
 
 #: ../../main_window/albums_view.rst:1
 msgid "digiKam Main Window Albums View"
@@ -116,6 +116,10 @@ msgid ""
 "needs to check the collection properties in :ref:`the digiKam setup dialog "
 "<collections_settings>`."
 msgstr ""
+"所有的相册都存放于相册集合里，这些相册集合的位置是在数据库里记录好了的。如果"
+"相册集合的设置发生了变化，或者相册集合不再存在（比如被删除，或是存储在已移除"
+"的媒介上），就不能创建新的相册了。你需要在 :ref:`digiKam 设置对话框 "
+"<collections_settings>` 中检查集合属性，确保一切正常。"
 
 #: ../../main_window/albums_view.rst:46
 msgid ""
@@ -124,26 +128,32 @@ msgid ""
 "that cannot handle locked files. The following conditions must be met so "
 "that there are no problems with digiKam:"
 msgstr ""
+"在 Windows 系统中，当一个程序正在使用某个文件时，操作系统会将该文件锁定，防止"
+"其他程序同时对其进行写操作，从而导致冲突或数据不一致。当文件被系统锁定时，可"
+"能会导致时间延迟（因为软件需要等待文件解锁才能进行操作）或功能失常。digiKam "
+"采用 Qt 框架进行低级文件管理，无法处理被锁定的文件。为了避免在使用 digiKam 时"
+"出现问题，必须满足以下条件："
 
 #: ../../main_window/albums_view.rst:48
 msgid ""
 "Album monitoring in digiKam must be deactivated. See the :ref:`Collection "
 "Settings <collections_settings>` for details."
 msgstr ""
+"在digiKam中必须停用相册监控。详见 :ref:`集合设置 <collections_settings>` 。"
 
 #: ../../main_window/albums_view.rst:49
 msgid "Folders must not be part of a Windows file or network share."
-msgstr ""
+msgstr "文件夹不能是 Windows 系统文件，也不能是可以在网络上共享访问的文件夹。"
 
 #: ../../main_window/albums_view.rst:50
 msgid ""
 "Folders or pictures must not be open in other programs such as Explorer or "
 "similar."
-msgstr ""
+msgstr "文件夹或图片不能同时在其他程序中打开，如资源管理器或类似程序。"
 
 #: ../../main_window/albums_view.rst:55
 msgid "Deleting an Album"
-msgstr ""
+msgstr "删除相册"
 
 #: ../../main_window/albums_view.rst:57
 msgid ""
@@ -156,10 +166,15 @@ msgid ""
 "an Album, click with the right mouse button over the Album in the Albums "
 "tree and select **Delete Album** from the context menu."
 msgstr ""
+"当你从 digiKam 删除一个相册时，它会被移到内部的垃圾桶中。你也可以不让它这么"
+"做，让删除操作真的会从你的电脑上彻底删除相册和里面的的所有照片。想要更改这个"
+"设置，可以这样操作： :menuselection:`设置 --> 配置digiKam…` ，然后选择 **其他"
+"** 页面。在这个页面的顶部，可以设置照片被删除时的相关操作。要删除一个相册，用"
+"鼠标右键点击相册树中的相册，然后从上下文菜单中选择 **删除相册** 。"
 
 #: ../../main_window/albums_view.rst:62
 msgid "Adding a Photograph to an Album"
-msgstr ""
+msgstr "添加照片到相册"
 
 #: ../../main_window/albums_view.rst:64
 msgid ""
@@ -175,6 +190,13 @@ msgid ""
 "the Album. **Download New** :kbd:`Ctrl+N` from the same menu will copy only "
 "those images which are not in the destination folder yet."
 msgstr ""
+"大多数时候，你会使用 **相机工具** 直接创建新的相册并从相机中添加照片。然而，"
+"有时你可能想要把电脑上已有的照片添加到现有的相册中。要向相册中添加照片，从菜"
+"单栏选择 :menuselection:`导入 --> 添加图像…` :kbd:`Alt+Shift+I` 。从对话框中"
+"选择一个源文件夹，点击“确定”。这时候会打开一个导入窗口。选择你想要添加的照"
+"片，然后从对话框顶栏中选择“下载选中的”。将会打开一个对话框，在这里你可以选择"
+"目标相册。照片将被复制到相册中。“下载新的 Ctrl+N”从同一菜单中只会复制那些尚未"
+"在目标文件夹中的图片。"
 
 #: ../../main_window/albums_view.rst:66
 msgid ""
@@ -182,6 +204,8 @@ msgid ""
 "photographs icons, for example from your preferred file manager. Then drop "
 "it on the image list on the right hand side."
 msgstr ""
+"此外，你还可以使用拖放来导入照片。例如，从你喜欢的的文件管理器拖动照片缩略"
+"图，然后放到右侧的图片列表中。"
 
 #: ../../main_window/albums_view.rst:68
 msgid ""
@@ -189,6 +213,8 @@ msgid ""
 "into an Album. Select menu entry :menuselection:`Import --> Import from "
 "Scanner...`."
 msgstr ""
+"如果你连接了扫描仪，你也可以直接将一张实体照片扫描到一个 digiKam 相册中。从菜"
+"单中选择 :menuselection:`导入 --> 从扫描仪导入…` 。"
 
 #: ../../main_window/albums_view.rst:73
 msgid "Moving or Copying Photographs"
