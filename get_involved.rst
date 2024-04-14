@@ -22,7 +22,7 @@ Maintaining this Manual
 
 digiKam is a powerful tool with a lot of features but all the different menu entries, buttons and shortcuts can be sometimes confusing. The User Manual is important for beginners as well as advanced users searching for a specific feature. However maintaining the manual is a big task the digiKam core team can't handle alone...
 
-And that’s were you come in. If you are an advanced user then we need you to update old sections or write explanations of new features. But even if you have the feeling you are not experienced enough to write something, you can still update screenshots or translate in different languages. If you benefit from the work others did on digiKam it is a great (and easy) opportunity to give something back to the project and the community.
+And that’s where you come in. If you are an advanced user then we need you to update old sections or write explanations of new features. But even if you have the feeling you are not experienced enough to write something, you can still update screenshots or translate in different languages. If you benefit from the work others did on digiKam it is a great (and easy) opportunity to give something back to the project and the community.
 
 The `README file <https://invent.kde.org/documentation/digikam-doc/-/blob/master/README.md>`_ from the documentation repository lists all details to help with this manual.
 

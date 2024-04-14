@@ -215,7 +215,7 @@ These are the distorting effects available:
 Emboss Image
 ------------
 
-The digiKam Emboss filter sculptures your image into 3-D as if it were stamped into wax.
+The digiKam Emboss filter sculptures your image into 3-D as if it was stamped into wax.
 
 The digiKam Emboss filter is a quick tool to render your images in a 3-D effect. It works particularly well on images with simple structure where color is not the most important content. The filter uses the difference between colors and luminosity to convert it into a grey, moon-like landscape lit from 10 o'clock.
 
