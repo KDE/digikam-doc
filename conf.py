@@ -28,8 +28,8 @@ copyright = 'licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-
 author = 'digiKam Community'
 
 # The full version, including alpha/beta/rc tags
-release = '8.3.0'
-version = '8.3.0'
+release = '8.4.0'
+version = '8.4.0'
 
 # Get the git description if possible, to put it in the footer.
 
