@@ -177,3 +177,9 @@ Custom Tools
 ------------
 
     - :ref:`User Shell Script <custom_script>`
+
+.. _bqm_gmictools:
+
+G'MIC Processor
+---------------
+
