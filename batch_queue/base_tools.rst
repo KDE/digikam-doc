@@ -195,7 +195,7 @@ The tool provide a tree-view of the user customized G'MIC filters, chained and a
 
 The G'MIC filters tree-view in the Batch Queue Manager can be customized as a hierarchy of folders where the chained G'MIC filters can be grouped by categories. A separator can be also appended to the view to well differentiate the groups.
 
-.. figure:: images/bqm_gmic_treeview.webp
+.. figure:: images/bqm_gmic_tree_view.webp
     :alt:
     :align: center
 
@@ -219,13 +219,13 @@ On the right side of the tool-bar, a search text field can be used to filter the
 The Properties Dialog
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: images/bqm_gmic_filter_properties.webp
+.. figure:: images/bqm_gmic_filter_dialog.webp
     :alt:
     :align: center
 
     The G'MIC Filter Properties Dialog
 
-.. figure:: images/bqm_gmic_folder_properties.webp
+.. figure:: images/bqm_gmic_folder_dialog.webp
     :alt:
     :align: center
 
