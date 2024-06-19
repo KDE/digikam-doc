@@ -186,12 +186,12 @@ G'MIC Processor
 Introduction
 ~~~~~~~~~~~~
 
-G'MIC (GREYC's Magic for Image Computing) is a free and open-source framework for image processing. It defines a script language that allows the creation of complex macros. Originally usable only through a command line, this tool allow to run the G'MIC processor in batch over more than one items previously hosted in a queue.
+G'MIC (GREYC's Magic for Image Computing) is a free and open-source framework for image processing. It defines a script language that allows the creation of complex macros. Originally usable only through a command line, this tool allows to run the G'MIC processor in batch over more than one item previously hosted in a queue.
 
 The Tool View
 ~~~~~~~~~~~~~
 
-The tool provide a tree-view of the user customized G'MIC filters, chained and applied on all images, one by one. The selection of the G'MIC filter settings is done used the Gmic-Qt interface which provide a preview of the filters based on the current selected item from the queue. A complete description of the G'MIC-Qt interface is done in the dedicated section of the :ref:`Image Editor tool <enhance_gmicqt>`.
+The tool provides a tree-view of the user customized G'MIC filters, chained and applied on all images, one by one. The selection of the G'MIC filter settings is done using the Gmic-Qt interface which provides a preview of the filters based on the current selected item from the queue. A complete description of the G'MIC-Qt interface is done in the dedicated section of the :ref:`Image Editor tool <enhance_gmicqt>`.
 
 The G'MIC filters tree-view in the Batch Queue Manager can be customized as a hierarchy of folders where the chained G'MIC filters can be grouped by categories. A separator can be also appended to the view to well differentiate the groups.
 
@@ -201,13 +201,13 @@ The G'MIC filters tree-view in the Batch Queue Manager can be customized as a hi
 
     The G'MIC Batch Queue Manager Tool Tree-View
 
-For each entry, tree-view show the title and the description. A tool-tip is also provided to easily select the right item on the list. The tool-tip show the title, the number of chained filters, the filters names, and the description.
+For each entry, a tree-view shows the title and the description. A tool-tip is also provided to easily select the right item on the list. The tool-tip shows the title, the number of chained filters, the filters names, and the description.
 
 On the bottom of the tree-view, a tool-bar will provide all actions available to manage the contents. From the left to right, the buttons are:
 
  - *Plus* icon to add an entry, as a new filter, a folder, or a separator.
- - *Minus* icon to remove the current selected entry.
- - *Edit* icon to open the properties dialog for the current selected entry.
+ - *Minus* icon to remove the currently selected entry.
+ - *Edit* icon to open the properties dialog for the currently selected entry.
  - *Database* icon to import or export the hierarchy from the disk using the XML format.
 
 On the right side of the tool-bar, a search text field can be used to filter the tree-view using keywords included in the entries titles.
@@ -215,9 +215,9 @@ On the right side of the tool-bar, a search text field can be used to filter the
 The Property Dialog
 ~~~~~~~~~~~~~~~~~~~
 
-The property dialog allow to edit the G'MIC filter and folder settings. They can be open directly by a mouse double-click on one tree-view entry.
+The property dialog allows editing the G'MIC filter and folder settings. They can be opened directly by a mouse double-click on one tree-view entry.
 
-The folder dialog allow to create or rename a sub-directory hosted in the tree-view.
+The folder dialog allows you to create or rename a sub-directory hosted in the tree-view.
 
 .. figure:: images/bqm_gmic_folder_dialog.webp
     :alt:
@@ -225,9 +225,9 @@ The folder dialog allow to create or rename a sub-directory hosted in the tree-v
 
     The G'MIC Folder Properties Dialog
 
-The filter dialog allow to create or edit a G'MIC filter in the tree-view. You can customize all the settings for one entry, as:
+The filter dialog allows you to create or edit a G'MIC filter in the tree-view. You can customize all the settings for one entry, as:
 
- - The list of chained G'MIC command.
+ - The list of chained G'MIC commands.
  - The order of the G'MIC Command.
  - The main title of the tree-view entry.
  - The description of the tree-view entry.
@@ -238,7 +238,7 @@ The filter dialog allow to create or edit a G'MIC filter in the tree-view. You c
 
     The G'MIC Filter Properties Dialog
 
-On the bottom of the G'MIC commands list, a tool-bar provide the main command to manage the contents. From the left to right, the buttons are:
+On the bottom of the G'MIC commands list, a tool-bar provides the main command to manage the contents. From the left to right, the buttons are:
 
  - *Edit* icon to customize the current G'MIC command using the filter selector dialog.
  - *Up* icon to move the current G'MIC command to the top of the list.
@@ -250,14 +250,13 @@ On the bottom of the G'MIC commands list, a tool-bar provide the main command to
 The Filter Selector
 ~~~~~~~~~~~~~~~~~~~
 
-The filter selector dialog allow to choose the G'MIC filter command for one entry of the G'MIC filter properties dialog. They can be open directly by a mouse double-click on one entry.
+The filter selector dialog allows you to choose the G'MIC filter command for one entry of the G'MIC filter properties dialog. They can be opened directly by a mouse double-click on one entry.
 
-This dialog is mostly the same than the G'MIC-Qt dialog available in :ref:`Image Editor <enhance_gmicqt>`, excepted than filter preview is don over a reduced version of the current selected item from the Queue.
-Also, the chosen filter is not applied to the image. Only the G'MIC command settings is captured and passed to the list.
+This dialog is mostly the same as the G'MIC-Qt dialog available in :ref:`Image Editor <enhance_gmicqt>`, except that filter preview is done over a reduced version of the currently selected item from the Queue.
+Also, the chosen filter is not applied to the image. Only the G'MIC command settings are captured and passed to the list.
 
 .. figure:: images/bqm_gmic_filter_selector.webp
     :alt:
     :align: center
 
     The G'MIC Filter Selection Dialog
-
