@@ -183,3 +183,35 @@ Custom Tools
 G'MIC Processor
 ---------------
 
+G'MIC (GREYC's Magic for Image Computing) is a free and open-source framework for image processing. It defines a script language that allows the creation of complex macros. Originally usable only through a command line, this tool allow to run the G'MIC processor in batch over more than one items previously hosted in a queue.
+
+The tool provide a tree-view of the user customized G'MIC filters, chained and applied on all images, one by one. The selection of the G'MIC filter settings is done used the Gmic-Qt interface which provide a preview of the filters based on the current selected item from the queue. A complete description of the G'MIC-Qt interface is done in the dedicated section of the :ref:`Image Editor tool <enhance_gmicqt>`.
+
+The G'MIC filters tree-view in the Batch Queue Manager can be customized as a hierarchy of folders where the chained G'MIC filters can be grouped by categories. A separator can be also appended to the view to well differentiate the groups.
+
+.. figure:: images/bqm_gmic_treeview.webp
+    :alt:
+    :align: center
+
+    The G'MIC Batch Queue Manager Tool Tree-View
+
+For each entry, tree-view show the title and the description. A tooltip is also provided to easily select the right item on the list. The tooltip show the title, the number of chained filters, the filters names, and the description.
+
+On the bottom of the tree-view, a tool-bar will provide all actions available to manage the contents. From the left to right, the buttons are:
+
+ - *Plus* to add an entry, as a new filter, a folder, or a separator.
+ - *Minus* to remove the current selected entry.
+ - *Edit* to open the properties dialog for the current selected entry.
+ - *Database* to import or export the hierarchy from the disk using the XML format.
+
+On the right side of the tool-bar, a search text field can be used to filter the tree-view using keywords included in the entries titles.
+
+.. note::
+
+    The properties dialog can be open directly by a mouse double-click on one entry.
+
+.. figure:: images/bqm_gmic_properties.webp
+    :alt:
+    :align: center
+
+    The G'MIC Filter Properties Dialog
