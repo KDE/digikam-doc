@@ -183,7 +183,13 @@ Custom Tools
 G'MIC Processor
 ---------------
 
+Introduction
+~~~~~~~~~~~~
+
 G'MIC (GREYC's Magic for Image Computing) is a free and open-source framework for image processing. It defines a script language that allows the creation of complex macros. Originally usable only through a command line, this tool allow to run the G'MIC processor in batch over more than one items previously hosted in a queue.
+
+The Tool View
+~~~~~~~~~~~~~
 
 The tool provide a tree-view of the user customized G'MIC filters, chained and applied on all images, one by one. The selection of the G'MIC filter settings is done used the Gmic-Qt interface which provide a preview of the filters based on the current selected item from the queue. A complete description of the G'MIC-Qt interface is done in the dedicated section of the :ref:`Image Editor tool <enhance_gmicqt>`.
 
@@ -199,10 +205,10 @@ For each entry, tree-view show the title and the description. A tooltip is also 
 
 On the bottom of the tree-view, a tool-bar will provide all actions available to manage the contents. From the left to right, the buttons are:
 
- - *Plus* to add an entry, as a new filter, a folder, or a separator.
- - *Minus* to remove the current selected entry.
- - *Edit* to open the properties dialog for the current selected entry.
- - *Database* to import or export the hierarchy from the disk using the XML format.
+ - *Plus* icon to add an entry, as a new filter, a folder, or a separator.
+ - *Minus* icon to remove the current selected entry.
+ - *Edit* icon to open the properties dialog for the current selected entry.
+ - *Database* icon to import or export the hierarchy from the disk using the XML format.
 
 On the right side of the tool-bar, a search text field can be used to filter the tree-view using keywords included in the entries titles.
 
@@ -210,8 +216,27 @@ On the right side of the tool-bar, a search text field can be used to filter the
 
     The properties dialog can be open directly by a mouse double-click on one entry.
 
-.. figure:: images/bqm_gmic_properties.webp
+The Properties Dialog
+~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: images/bqm_gmic_filter_properties.webp
     :alt:
     :align: center
 
     The G'MIC Filter Properties Dialog
+
+.. figure:: images/bqm_gmic_folder_properties.webp
+    :alt:
+    :align: center
+
+    The G'MIC Folder Properties Dialog
+
+The Filter Selector
+~~~~~~~~~~~~~~~~~~~
+
+.. figure:: images/bqm_gmic_filter_selector.webp
+    :alt:
+    :align: center
+
+    The G'MIC Filter Selection Dialog
+
