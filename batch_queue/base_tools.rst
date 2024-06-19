@@ -260,3 +260,10 @@ Also, the chosen filter is not applied to the image. Only the G'MIC command sett
     :align: center
 
     The G'MIC Filter Selection Dialog
+
+Integrating The Procesor
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+To use the G'MIC processor in the Batch Queue Manager, place the tool in your Assigned List of tools, and select the desired G'MIC filter to run with your queued images.
+
+Between the Batch Queue Manager sessions, the G'MIC tree-view will remember the last used filter. It will be the same behavior if you save the Assigned List of tools as a Batch Queue Manager workflow.
