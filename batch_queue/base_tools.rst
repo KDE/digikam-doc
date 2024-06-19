@@ -201,7 +201,7 @@ The G'MIC filters tree-view in the Batch Queue Manager can be customized as a hi
 
     The G'MIC Batch Queue Manager Tool Tree-View
 
-For each entry, tree-view show the title and the description. A tooltip is also provided to easily select the right item on the list. The tooltip show the title, the number of chained filters, the filters names, and the description.
+For each entry, tree-view show the title and the description. A tool-tip is also provided to easily select the right item on the list. The tool-tip show the title, the number of chained filters, the filters names, and the description.
 
 On the bottom of the tree-view, a tool-bar will provide all actions available to manage the contents. From the left to right, the buttons are:
 
@@ -212,18 +212,12 @@ On the bottom of the tree-view, a tool-bar will provide all actions available to
 
 On the right side of the tool-bar, a search text field can be used to filter the tree-view using keywords included in the entries titles.
 
-.. note::
+The Property Dialog
+~~~~~~~~~~~~~~~~~~~
 
-    The properties dialog can be open directly by a mouse double-click on one entry.
+The property dialog allow to edit the G'MIC filter and folder settings. They can be open directly by a mouse double-click on one tree-view entry.
 
-The Properties Dialog
-~~~~~~~~~~~~~~~~~~~~~
-
-.. figure:: images/bqm_gmic_filter_dialog.webp
-    :alt:
-    :align: center
-
-    The G'MIC Filter Properties Dialog
+The folder dialog allow to create or rename a sub-directory hosted in the tree-view.
 
 .. figure:: images/bqm_gmic_folder_dialog.webp
     :alt:
@@ -231,8 +225,35 @@ The Properties Dialog
 
     The G'MIC Folder Properties Dialog
 
+The filter dialog allow to create or edit a G'MIC filter in the tree-view. You can customize all the settings for one entry, as:
+
+ - The list of chained G'MIC command.
+ - The order of the G'MIC Command.
+ - The main title of the tree-view entry.
+ - The description of the tree-view entry.
+
+.. figure:: images/bqm_gmic_filter_dialog.webp
+    :alt:
+    :align: center
+
+    The G'MIC Filter Properties Dialog
+
+On the bottom of the G'MIC commands list, a tool-bar provide the main command to manage the contents. From the left to right, the buttons are:
+
+ - *Edit* icon to customize the current G'MIC command using the filter selector dialog.
+ - *Up* icon to move the current G'MIC command to the top of the list.
+ - *Down* icon to move the current G'MIC command to the bottom of the list.
+ - *Plus* icon to add a new G'MIC command in the list using the filter selector dialog.
+ - *Minus* icon to remove the current G'MIC command from the list.
+ - *Clear* icon to erase the contents of the list.
+
 The Filter Selector
 ~~~~~~~~~~~~~~~~~~~
+
+The filter selector dialog allow to choose the G'MIC filter command for one entry of the G'MIC filter properties dialog. They can be open directly by a mouse double-click on one entry.
+
+This dialog is mostly the same than the G'MIC-Qt dialog available in :ref:`Image Editor <enhance_gmicqt>`, excepted than filter preview is don over a reduced version of the current selected item from the Queue.
+Also, the chosen filter is not applied to the image. Only the G'MIC command settings is captured and passed to the list.
 
 .. figure:: images/bqm_gmic_filter_selector.webp
     :alt:
