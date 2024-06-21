@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-18 01:47+0000\n"
+"POT-Creation-Date: 2024-06-20 01:43+0000\n"
 "PO-Revision-Date: 2023-01-19 11:04-0800\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -322,4 +322,205 @@ msgstr ""
 
 #: ../../batch_queue/base_tools.rst:184
 msgid "G'MIC Processor"
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:187
+msgid "Introduction"
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:189
+msgid ""
+"G'MIC (GREYC's Magic for Image Computing) is a free and open-source "
+"framework for image processing. It defines a script language that allows the "
+"creation of complex macros. Originally usable only through a command line, "
+"this tool allows to run the G'MIC processor in batch over more than one item "
+"previously hosted in a queue."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:192
+msgid "The Tool View"
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:194
+msgid ""
+"The tool provides a tree-view of the user customized G'MIC filters, chained "
+"and applied on all images, one by one. The selection of the G'MIC filter "
+"settings is done using the Gmic-Qt interface which provides a preview of the "
+"filters based on the current selected item from the queue. A complete "
+"description of the G'MIC-Qt interface is done in the dedicated section of "
+"the :ref:`Image Editor tool <enhance_gmicqt>`."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:196
+msgid ""
+"The G'MIC filters tree-view in the Batch Queue Manager can be customized as "
+"a hierarchy of folders where the chained G'MIC filters can be grouped by "
+"categories. A separator can be also appended to the view to well "
+"differentiate the groups."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:202
+msgid "The G'MIC Batch Queue Manager Tool Tree-View"
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:204
+msgid ""
+"For each entry, a tree-view shows the title and the description. A tool-tip "
+"is also provided to easily select the right item on the list. The tool-tip "
+"shows the title, the number of chained filters, the filters names, and the "
+"description."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:206
+msgid ""
+"On the bottom of the tree-view, a tool-bar will provide all actions "
+"available to manage the contents. From the left to right, the buttons are:"
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:208
+msgid "*Plus* icon to add an entry, as a new filter, a folder, or a separator."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:209
+msgid "*Minus* icon to remove the currently selected entry."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:210
+msgid ""
+"*Edit* icon to open the properties dialog for the currently selected entry."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:211
+msgid ""
+"*Database* icon to import or export the hierarchy from the disk using the "
+"XML format."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:213
+msgid ""
+"On the right side of the tool-bar, a search text field can be used to filter "
+"the tree-view using keywords included in the entries titles."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:216
+msgid "The Property Dialog"
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:218
+msgid ""
+"The property dialog allows editing the G'MIC filter and folder settings. "
+"They can be opened directly by a mouse double-click on one tree-view entry."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:220
+msgid ""
+"The folder dialog allows you to create or rename a sub-directory hosted in "
+"the tree-view."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:226
+msgid "The G'MIC Folder Properties Dialog"
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:228
+msgid ""
+"The filter dialog allows you to create or edit a G'MIC filter in the tree-"
+"view. You can customize all the settings for one entry, as:"
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:230
+msgid "The list of chained G'MIC commands."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:231
+msgid "The order of the G'MIC Command."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:232
+msgid "The main title of the tree-view entry."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:233
+msgid "The description of the tree-view entry."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:239
+msgid "The G'MIC Filter Properties Dialog"
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:241
+msgid ""
+"On the bottom of the G'MIC commands list, a tool-bar provides the main "
+"command to manage the contents. From the left to right, the buttons are:"
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:243
+msgid ""
+"*Edit* icon to customize the current G'MIC command using the filter selector "
+"dialog."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:244
+msgid "*Up* icon to move the current G'MIC command to the top of the list."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:245
+msgid ""
+"*Down* icon to move the current G'MIC command to the bottom of the list."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:246
+msgid ""
+"*Plus* icon to add a new G'MIC command in the list using the filter selector "
+"dialog."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:247
+msgid "*Minus* icon to remove the current G'MIC command from the list."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:248
+msgid "*Clear* icon to erase the contents of the list."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:251
+msgid "The Filter Selector"
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:253
+msgid ""
+"The filter selector dialog allows you to choose the G'MIC filter command for "
+"one entry of the G'MIC filter properties dialog. They can be opened directly "
+"by a mouse double-click on one entry."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:255
+msgid ""
+"This dialog is mostly the same as the G'MIC-Qt dialog available in :ref:"
+"`Image Editor <enhance_gmicqt>`, except that filter preview is done over a "
+"reduced version of the currently selected item from the Queue. Also, the "
+"chosen filter is not applied to the image. Only the G'MIC command settings "
+"are captured and passed to the list."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:262
+msgid "The G'MIC Filter Selection Dialog"
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:265
+msgid "Integrating The Procesor"
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:267
+msgid ""
+"To use the G'MIC processor in the Batch Queue Manager, place the tool in "
+"your Assigned List of tools, and select the desired G'MIC filter to run with "
+"your queued images."
+msgstr ""
+
+#: ../../batch_queue/base_tools.rst:269
+msgid ""
+"Between the Batch Queue Manager sessions, the G'MIC tree-view will remember "
+"the last used filter. It will be the same behavior if you save the Assigned "
+"List of tools as a Batch Queue Manager workflow."
 msgstr ""
