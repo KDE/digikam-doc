@@ -1,13 +1,13 @@
 # Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
-# Valter Mura <valtermura@gmail.com>, 2023.
+# SPDX-FileCopyrightText: 2023, 2024 Valter Mura <valtermura@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-20 01:43+0000\n"
-"PO-Revision-Date: 2023-03-19 22:34+0100\n"
+"PO-Revision-Date: 2024-06-23 18:38+0200\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.03.80\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #: ../../batch_queue/base_tools.rst:1
 msgid "digiKam Batch Queue Manager Base Tools"
@@ -366,11 +366,11 @@ msgstr ":ref:`Script shell utente<custom_script>`"
 
 #: ../../batch_queue/base_tools.rst:184
 msgid "G'MIC Processor"
-msgstr ""
+msgstr "Processore G'MIC"
 
 #: ../../batch_queue/base_tools.rst:187
 msgid "Introduction"
-msgstr ""
+msgstr "Introduzione"
 
 #: ../../batch_queue/base_tools.rst:189
 msgid ""
@@ -380,10 +380,16 @@ msgid ""
 "this tool allows to run the G'MIC processor in batch over more than one item "
 "previously hosted in a queue."
 msgstr ""
+"G'MIC (GREYC's Magic for Image Computing) è un'infrastruttura libera e open "
+"source per l'elaborazione delle immagini. Definisce un linguaggio di "
+"scripting che consente la creazione di macro complesse. Utilizzabile in "
+"origine solo attraverso la riga di comando, questo strumento consente di "
+"avviare in serie G'MIC su più di un elemento facente parte di una coda di "
+"file."
 
 #: ../../batch_queue/base_tools.rst:192
 msgid "The Tool View"
-msgstr ""
+msgstr "La vista degli strumenti"
 
 #: ../../batch_queue/base_tools.rst:194
 msgid ""
@@ -394,6 +400,13 @@ msgid ""
 "description of the G'MIC-Qt interface is done in the dedicated section of "
 "the :ref:`Image Editor tool <enhance_gmicqt>`."
 msgstr ""
+"Lo strumento fornisce una vista ad albero dei filtri G'MIC personalizzati "
+"dell'utente, concatenati e applicati su tutte le immagini, uno per uno. La "
+"selezione delle impostazioni del filtro G'MIC viene fatta utilizzando "
+"l'interfaccia Gmic-Qt, che fornisce un'anteprima dei filtri basata "
+"sull'elemento attualmente selezionato dalla coda. Esiste una descrizione "
+"completa dell'interfaccia G'MIC-Qt nella sezione dedicata dello "
+":ref:`strumento Editor delle immagini <enhance_gmicqt>`."
 
 #: ../../batch_queue/base_tools.rst:196
 msgid ""
@@ -402,12 +415,14 @@ msgid ""
 "categories. A separator can be also appended to the view to well "
 "differentiate the groups."
 msgstr ""
+"La vista ad albero dei filtri G'MIC nel Gestore elaborazione in serie può "
+"essere personalizzata come gerarchia di cartelle dove i filtri G'MIC "
+"concatenati possono essere raggruppati per categorie. Può essere aggiunto "
+"anche un separatore alla vista, in modo da differenziare meglio i gruppi."
 
 #: ../../batch_queue/base_tools.rst:202
-#, fuzzy
-#| msgid "digiKam Batch Queue Manager Base Tools"
 msgid "The G'MIC Batch Queue Manager Tool Tree-View"
-msgstr "Strumenti di base del gestore elaborazione in serie di digiKam"
+msgstr "La vista ad albero dello strumento Gestore elaborazione in serie G'MIC"
 
 #: ../../batch_queue/base_tools.rst:204
 msgid ""
@@ -416,122 +431,155 @@ msgid ""
 "shows the title, the number of chained filters, the filters names, and the "
 "description."
 msgstr ""
+"Per ciascuna voce, una vista ad albero mostra il titolo e la descrizione. È "
+"presente anche un suggerimento per selezionare in modo facile il giusto "
+"elemento nell'elenco. Il suggerimento mostra il titolo, il numero di filtri "
+"concatenati, il nome dei filtri e la descrizione."
 
 #: ../../batch_queue/base_tools.rst:206
 msgid ""
 "On the bottom of the tree-view, a tool-bar will provide all actions "
 "available to manage the contents. From the left to right, the buttons are:"
 msgstr ""
+"Nella parte inferiore della vista ad albero è presente una barra che "
+"fornisce tutte le azioni disponibili per gestire il contenuto. Di seguito i "
+"pulsanti, da sinistra a destra:"
 
 #: ../../batch_queue/base_tools.rst:208
 msgid "*Plus* icon to add an entry, as a new filter, a folder, or a separator."
 msgstr ""
+"Icona *Più* per aggiungere una voce, tipo un nuovo filtro, una cartella o un "
+"separatore."
 
 #: ../../batch_queue/base_tools.rst:209
 msgid "*Minus* icon to remove the currently selected entry."
-msgstr ""
+msgstr "Icona *Meno* per rimuovere la voce che è stata selezionata."
 
 #: ../../batch_queue/base_tools.rst:210
 msgid ""
 "*Edit* icon to open the properties dialog for the currently selected entry."
 msgstr ""
+"Icona *Modifica* per aprire la finestra di dialogo delle proprietà per la "
+"voce che è stata selezionata."
 
 #: ../../batch_queue/base_tools.rst:211
 msgid ""
 "*Database* icon to import or export the hierarchy from the disk using the "
 "XML format."
 msgstr ""
+"Icona *Banca dati* per importare o esportare la gerarchia dal disco "
+"utilizzando il formato XML."
 
 #: ../../batch_queue/base_tools.rst:213
 msgid ""
 "On the right side of the tool-bar, a search text field can be used to filter "
 "the tree-view using keywords included in the entries titles."
 msgstr ""
+"Sul lato destro della barra degli strumenti si trova un campo di ricerca, "
+"utilizzabile per filtrare la vista ad albero utilizzando parole chiave "
+"incluse nei titoli delle voci."
 
 #: ../../batch_queue/base_tools.rst:216
 msgid "The Property Dialog"
-msgstr ""
+msgstr "La finestra di dialogo Proprietà"
 
 #: ../../batch_queue/base_tools.rst:218
 msgid ""
 "The property dialog allows editing the G'MIC filter and folder settings. "
 "They can be opened directly by a mouse double-click on one tree-view entry."
 msgstr ""
+"La finestra di dialogo delle proprietà consente la modifica delle "
+"impostazioni del filtro G'MIC e delle cartelle. Possono essere aperte "
+"direttamente con un doppio clic del mouse su una voce nella vista ad albero."
 
 #: ../../batch_queue/base_tools.rst:220
 msgid ""
 "The folder dialog allows you to create or rename a sub-directory hosted in "
 "the tree-view."
 msgstr ""
+"La finestra di dialogo delle cartelle ti permette di creare o rinominare una "
+"sottocartella presente nella vista ad albero."
 
 #: ../../batch_queue/base_tools.rst:226
 msgid "The G'MIC Folder Properties Dialog"
-msgstr ""
+msgstr "La finestra di dialogo delle proprietà della cartella G'MIC"
 
 #: ../../batch_queue/base_tools.rst:228
 msgid ""
 "The filter dialog allows you to create or edit a G'MIC filter in the tree-"
 "view. You can customize all the settings for one entry, as:"
 msgstr ""
+"La finestra di dialogo del filtro ti permette di creare o modificare un "
+"filtro G'MIC nella vista ad albero. Puoi personalizzare tutte le "
+"impostazioni di una voce, come:"
 
 #: ../../batch_queue/base_tools.rst:230
 msgid "The list of chained G'MIC commands."
-msgstr ""
+msgstr "L'elenco dei comandi G'MIC concatenati."
 
 #: ../../batch_queue/base_tools.rst:231
 msgid "The order of the G'MIC Command."
-msgstr ""
+msgstr "L'ordine del comando G'MIC."
 
 #: ../../batch_queue/base_tools.rst:232
 msgid "The main title of the tree-view entry."
-msgstr ""
+msgstr "Il titolo principale della voce nella vista ad albero."
 
 #: ../../batch_queue/base_tools.rst:233
 msgid "The description of the tree-view entry."
-msgstr ""
+msgstr "La descrizione della voce nella vista ad albero."
 
 #: ../../batch_queue/base_tools.rst:239
 msgid "The G'MIC Filter Properties Dialog"
-msgstr ""
+msgstr "La finestra di dialogo delle proprietà del filtro G'MIC"
 
 #: ../../batch_queue/base_tools.rst:241
 msgid ""
 "On the bottom of the G'MIC commands list, a tool-bar provides the main "
 "command to manage the contents. From the left to right, the buttons are:"
 msgstr ""
+"Nella parte inferiore dell'elenco dei comandi G'MIC è presente una barra "
+"degli strumenti che fornisce il comando principale per gestire il contenuto. "
+"Sono presenti i pulsanti, da sinistra a destra:"
 
 #: ../../batch_queue/base_tools.rst:243
 msgid ""
 "*Edit* icon to customize the current G'MIC command using the filter selector "
 "dialog."
 msgstr ""
+"Icona *Modifica* per personalizzare il comando G'MIC selezionato utilizzando "
+"la finestra di dialogo di selezione del filtro."
 
 #: ../../batch_queue/base_tools.rst:244
 msgid "*Up* icon to move the current G'MIC command to the top of the list."
 msgstr ""
+"Icona *Su* per spostare il comando G'MIC selezionato in cima all'elenco."
 
 #: ../../batch_queue/base_tools.rst:245
 msgid ""
 "*Down* icon to move the current G'MIC command to the bottom of the list."
 msgstr ""
+"Icona *Giù* per spostare il comando G'MIC selezionato alla fine dell'elenco."
 
 #: ../../batch_queue/base_tools.rst:246
 msgid ""
 "*Plus* icon to add a new G'MIC command in the list using the filter selector "
 "dialog."
 msgstr ""
+"Icona *Più* per aggiungere un nuovo comando G'MIC nell'elenco utilizzando la "
+"finestra di dialogo di selezione del filtro."
 
 #: ../../batch_queue/base_tools.rst:247
 msgid "*Minus* icon to remove the current G'MIC command from the list."
-msgstr ""
+msgstr "Icona *Meno* per rimuovere il comando G'MIC selezionato dall'elenco."
 
 #: ../../batch_queue/base_tools.rst:248
 msgid "*Clear* icon to erase the contents of the list."
-msgstr ""
+msgstr "Icona *Azzera* per eliminare il contenuto dell'elenco."
 
 #: ../../batch_queue/base_tools.rst:251
 msgid "The Filter Selector"
-msgstr ""
+msgstr "Il selettore dei filtri"
 
 #: ../../batch_queue/base_tools.rst:253
 msgid ""
@@ -539,6 +587,10 @@ msgid ""
 "one entry of the G'MIC filter properties dialog. They can be opened directly "
 "by a mouse double-click on one entry."
 msgstr ""
+"La finestra di dialogo di selezione del filtro ti permette di scegliere il "
+"comando del filtro G'MIC per una voce della finestra di dialogo delle "
+"proprietà del filtro G'MIC. Può essere aperta direttamente da un doppio clic "
+"del mouse su una voce."
 
 #: ../../batch_queue/base_tools.rst:255
 msgid ""
@@ -548,14 +600,20 @@ msgid ""
 "chosen filter is not applied to the image. Only the G'MIC command settings "
 "are captured and passed to the list."
 msgstr ""
+"Questa finestra di dialogo è praticamente uguale a quella di G'MIC-Qt "
+"disponibile nello :ref:`Editor delle immagini <enhance_gmicqt>`, ad "
+"eccezione del fatto che l'anteprima dei filtri viene eseguita attraverso una "
+"versione ridotta dell'elemento attualmente selezionato dalla coda. Inoltre, "
+"il filtro scelto non viene applicato all'immagine. Sono acquisite e passate "
+"all'elenco solamente le impostazioni del comando G'MIC."
 
 #: ../../batch_queue/base_tools.rst:262
 msgid "The G'MIC Filter Selection Dialog"
-msgstr ""
+msgstr "La finestra di dialogo di selezione del filtro G'MIC"
 
 #: ../../batch_queue/base_tools.rst:265
 msgid "Integrating The Procesor"
-msgstr ""
+msgstr "Integrazione del processore"
 
 #: ../../batch_queue/base_tools.rst:267
 msgid ""
@@ -563,6 +621,10 @@ msgid ""
 "your Assigned List of tools, and select the desired G'MIC filter to run with "
 "your queued images."
 msgstr ""
+"Per utilizzare il processore G'MIC nel Gestore elaborazione in serie, "
+"posizionare lo strumento nel tuo Elenco assegnato degli strumenti e "
+"selezionare il filtro G'MIC prescelto da eseguire con le tue immagini in "
+"coda."
 
 #: ../../batch_queue/base_tools.rst:269
 msgid ""
@@ -570,3 +632,7 @@ msgid ""
 "the last used filter. It will be the same behavior if you save the Assigned "
 "List of tools as a Batch Queue Manager workflow."
 msgstr ""
+"L'ultimo filtro utilizzato nella vista ad albero G'MIC sarà ricordato tra le "
+"varie sessioni del Gestore elaborazione in serie. Lo stesso comportamento "
+"sarà mantenuto se salvi l'elenco assegnato degli strumenti come flusso di "
+"lavoro del Gestore elaborazione in serie."
