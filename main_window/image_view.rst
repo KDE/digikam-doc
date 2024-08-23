@@ -191,21 +191,21 @@ Options                 Description
 [meta:key]              Add metadata information
 ======================= =============================================================================================================================================================================
 
-=============================== ===============================================================================================================================================================================================================
+=============================== =========================================================================================================================================================================================================================
 Modifiers                       Description
-=============================== ===============================================================================================================================================================================================================
+=============================== =========================================================================================================================================================================================================================
 {upper}                         Convert to uppercase
 {lower}                         Convert to lowercase
 {firstupper}                    Convert the first letter of each word to uppercase
 {trim}                          Remove leading, trailing and extra whitespace
 {unique}                        Add a suffix number to have unique strings in duplicate values
 {unique:n}                      Add a suffix number, n specifies the number of digits to use
-{unique:n,c}                    Add a suffix number, n specifies the number of digits to use, c specifies the separator char before the numbers, a optional to include all options for uniqueness, 0 optional to always pad with n zero digits
+{unique:n,c,0a}                 Add a suffix number, n specifies the number of digits to use, c optional specifies the separator char before the numbers, a optional to include all options for uniqueness, 0 optional to always pad with n zero digits
 {removedoubles}                 Remove duplicate words
 {default:"value"}               Set a default value for empty strings
 {replace:"old","new",options}   Replace text (options: r = regular expression, i = ignore case)
 {range:from,to}                 Extract a specific range (if to is omitted, go to the end of string)
-=============================== ===============================================================================================================================================================================================================
+=============================== =========================================================================================================================================================================================================================
 
 .. tip::
 
