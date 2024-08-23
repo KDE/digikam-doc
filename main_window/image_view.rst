@@ -170,15 +170,56 @@ The **Metadata** dialog allows to select files metadata information taken from *
 
 In addition these options can be customized further with the help of a number of **Modifiers**. To apply a modifier, append it to the option, for instance ``[file]{upper}``. A list of all **Options** and **Modifiers** together with a short explanations will open when clicking the info button.
 
-.. figure:: images/mainwindow_advanced_rename_help.webp
-    :alt:
-    :align: center
+======================= =============================================================================================================================================================================
+Options                 Description
+======================= =============================================================================================================================================================================
+[file]                  File name
+[ext]                   File extension, prepend with a '.' character, to modify the real file extension
+[user]                  Owner of the file
+[group]                 Group of the file
+[dir]                   Directory name
+[dir.]                  Name of the parent directory, additional '.' characters move up in the directory hierarchy
+[cam]                   Camera name
+#                       Sequence number
+#[options]              Sequence number (options: c = file counter aware, e = extension aware, f = folder aware, r = random aware, ce = counter and extension aware, re = random and extension aware)
+#[options,start]        Sequence number (custom start)
+#[options,step]         Sequence number (custom step)
+#[options,start,step]   Sequence number (custom start and step)
+[date]                  Date and time (Standard format)
+[date:key]              Date and time (key = Standard|ISO|UnixTimeStamp|Text)
+[date:format]           Date and time (format settings)
+[meta:key]              Add metadata information
+======================= =============================================================================================================================================================================
 
-    The Advanced Rename Helper View for Modifiers Choices
+=============================== ===============================================================================================================================================================================================================
+Modifiers                       Description
+=============================== ===============================================================================================================================================================================================================
+{upper}                         Convert to uppercase
+{lower}                         Convert to lowercase
+{firstupper}                    Convert the first letter of each word to uppercase
+{trim}                          Remove leading, trailing and extra whitespace
+{unique}                        Add a suffix number to have unique strings in duplicate values
+{unique:n}                      Add a suffix number, n specifies the number of digits to use
+{unique:n,c}                    Add a suffix number, n specifies the number of digits to use, c specifies the separator char before the numbers, a optional to include all options for uniqueness, 0 optional to always pad with n zero digits
+{removedoubles}                 Remove duplicate words
+{default:"value"}               Set a default value for empty strings
+{replace:"old","new",options}   Replace text (options: r = regular expression, i = ignore case)
+{range:from,to}                 Extract a specific range (if to is omitted, go to the end of string)
+=============================== ===============================================================================================================================================================================================================
 
 .. tip::
 
     The sequence number may be needed if you have a camera with a very fast multi-shoot mode where it is possible to get two photographs with exactly the same data and time.
+
+    To apply a modifier, append it to the option, for instance: [file]{upper}.
+
+    Modifiers can be applied to every renaming option.
+
+    It is possible to assign multiple modifiers to an option, they are applied in the order you assign them.
+
+    Be sure to use the quick access buttons: They might provide additional information about renaming and modifier options.
+
+    The file list can be sorted, just right-click on it to see the sort criteria (album view only).
 
 You can also batch rename photographs using the :ref:`Batch Queue Manager <batch_queue>` :kbd:`B`, or with the :ref:`Import Tool <advanced_import>` during downloads from camera. These two are mostly the same. Place the cursor in the renaming pattern editor, type in something and/or select **Modifiers** and **Options** from the buttons.
 
