@@ -18,9 +18,9 @@ Movie Files
 Introduction
 ------------
 
-Many digital cameras support taking of short movie clips. These clips are usually stored in AVI, MOV, or MP4 format. digiKam understands metadata from these formats and will generate thumbnails for the movie files.
+Many digital cameras support taking short movie clips. These clips are usually stored in AVI, MOV, or MP4 format. digiKam understands metadata from these formats and will generate thumbnails for these movie files.
 
-However, digiKam is not a movie editing application and it does not have any built-in movie editing capabilities. If you double click on a movie file digiKam you can preview video or choose a dedicated viewing / editing application through your desktop settings. Viewing your movie files while a slideshow is also supported.
+However, digiKam is not a movie editing application and it does not have any built-in movie editing capabilities. If you double click on a movie in digiKam, you can preview the video or choose a dedicated viewing / editing application through your desktop settings. Movie files can also be viewed from within a slideshow.
 
 Video Formats
 -------------
@@ -38,10 +38,10 @@ FFmpeg codec is available under Linux® desktop, macOS, and Windows. You don't n
 Video Features
 --------------
 
-With digiKam, you will be able to read video metadata, such as movie length, video frames per second, video size, and encoding options, in order to populate the database at scanning and to perform searches on your collection about video properties. You will be able to play video in embedded preview mode, and in a slideshow. This includes previewing video from your camera device before downloading (only with USB Mass Storage connection mode).
+digiKam is capable of reading video metadata, such as movie length, video frames per second, video size, and encoding options. Video metadata is automatically read during files scans and stored in the digiKam database so you can search for videos based on their metadata. digiKam allows you to play video in embedded preview mode, and from within a slideshow. If you are using the USB Mass Storage connection mode, then digiKam even allows previewing video from your camera device before downloading.
 
 .. figure:: videos/preview_video_player.webp
     :alt:
     :align: center
 
-    Screencast of digiKam Preview Mode Playing A Record Taken with An iPhone
+    Screencast of digiKam Preview Mode Playing A Movie Taken with an iPhone
