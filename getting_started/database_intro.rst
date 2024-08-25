@@ -16,17 +16,17 @@ Database
 Overview
 --------
 
-Databases are used to store data. Like other photograph management programs, digiKam uses the database to avoid data duplication, reduce data redundancy, enable fast search, and guarantee data integrity. Using a database also drastically reduces the cost of data entry, storage and retrieval. Additionally, any user can access the data using query language.
+Databases are used to store data. Like other photograph management programs, digiKam uses its database to avoid data duplication, reduce data redundancy, enable fast search, and guarantee data integrity. Using a database also drastically reduces the cost of data entry, storage and retrieval. Additionally, any user can access the data using a query language.
 
 digiKam stores data (including albums, album roots, tags, thumbnails, face recognition data, image metadata, file paths, settings and others) in four databases:
 
-    - Core database for all collection properties: hosts all albums, images and searches data.
+    - Core database for all collection properties: hosts all albums, images and search data.
 
-    - Thumbnail database for compressed thumbnails: hosts image thumbs using wavelets compression images (**PGF** format).
+    - Thumbnail database for compressed thumbnails: hosts image thumbs using wavelet compressed images (**PGF** format).
 
-    - Similarity database to store image fingerprints to enable fuzzy search.
+    - Similarity database for image fingerprints to enable fuzzy search.
 
-    - Face database for storing face recognition metadata: hosts face histograms for face recognition. 
+    - Face database for storing face recognition metadata: hosts face histograms for face recognition.
 
 .. figure:: images/database_remote_mysql_config.webp
     :alt:
@@ -39,13 +39,13 @@ Details on database settings can be found in :ref:`Database Setup section <datab
 Migrating From Other Software
 -----------------------------
 
-To populate the digiKam database from file properties managed by another software, it's recommended to write all metadata in XMP sidecar files for the best interoperability. digiKam cannot parse proprietary and closed source databases, while XMP sidecar is standardized and well documented.
+The digiKam database can be populated from file properties managed by another program by using the other program to write all metadata into XMP sidecar files. While digiKam cannot parse proprietary and closed source databases, it can read XMP sidecar files, which is a standardized and well documented file format.
 
-Read :ref:`Metadata Setup section <metadata_settings>` to use XMP sidecar with digiKam. The Advanced panel offers profile management to handle special cases while importing and exporting metadata to and from 3rd-party software.
+Read the :ref:`Metadata Setup section <metadata_settings>` to use XMP sidecar files with digiKam. The Advanced panel offers profile management to handle special cases while importing and exporting metadata to and from 3rd-party software.
 
-In a fresh installation of digiKam, you can create a new root collection at the directory where you store images managed by other software. The contents will be parsed and the database will be populated with the information found in the XMP sidecar files.
+In a fresh installation of digiKam, you can create a new root collection in the directory where you store images managed by the other software. The contents will be parsed and the database will be populated with the information found in the XMP sidecar files.
 
-After the items are read (this can take a while), you will be able to see all tags, labels and comments in digiKam item properties.
+After the items are read (this can take a while), you will be able to see all tags, labels and comments in the digiKam item properties.
 
 .. note:
 
