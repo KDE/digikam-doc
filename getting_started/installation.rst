@@ -1,5 +1,5 @@
 .. meta::
-   :description: How to Install digiKam Photo Management Program
+   :description: How to Install the digiKam Photo Management Program
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, install, linux, windows, macos, requirements, configurations, update
 
 .. metadata-placeholder
@@ -15,42 +15,42 @@ Installation
 
 .. contents::
 
-Visit `the download page <https://www.digikam.org/download/>`_ of the digiKam Web site for up to date information on installing stable **digiKam**.
+Visit `the download page <https://www.digikam.org/download/>`_ of the digiKam Web site for up to date information on installing the current version of **digiKam**.
 
 You’ll find all previous digiKam versions in the `attic <https://download.kde.org/Attic/digikam/>`_.
 
 .. note::
 
-    Bundles using the **-debug** in file-name includes `debug symbols <https://en.wikipedia.org/wiki/Debug_symbol>`_ to catch debugger traces when application stop to work. Files are more heavy but this will help developers to found the origin of dysfunctions. See the :ref:`Get Involved <get_involved>` section for details.
+    Bundles with **-debug** in the file-name include `debug symbols <https://en.wikipedia.org/wiki/Debug_symbol>`_ to catch debugger traces when the application stops working. These debug files are large but they can will help developers find and fix coding errors. See the :ref:`Get Involved <get_involved>` section for details.
 
 Minimum System Requirements
 ---------------------------
 
-- **Operating System**: 64-bit Windows 10 or newer, Apple macOS 64-bit based on Intel or M1 architecture, 64-bit Linux. Details see below.
+- **Operating System**: 64-bit Windows 10 or newer, Apple macOS 64-bit based on Intel or Apple Silicon (M1-M4), 64-bit Linux. See details below.
 
-- **CPU**: x86 Intel or AMD; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for deep-learning uses as with face detection and image quality sorting. Details see below.
+- **CPU**: x86 Intel or AMD; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for deep-learning capabilities such as face detection and image quality sorting. See details below.
 
 - **GPU**: OpenGL 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible DirectX 9 or 11 drivers.
 
-- **RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for deep-learning uses as with face detection and image quality sorting. Details see below.
+- **RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for deep-learning capabilities such as face detection and image quality sorting. See details below.
 
 .. note::
 
-   If your computer is at the lower end of CPU and RAM requirements, you should use both :ref:`Small Thumbnails Resolution <thumbnails_resolution>` and :ref:`Loading Embedded Preview <preview_settings>` features to help reduce preview lag.
+   If your computer is at the lower end of the CPU and RAM requirements, you should use both :ref:`Small Thumbnails Resolution <thumbnails_resolution>` and :ref:`Loading Embedded Preview <preview_settings>` features to help reduce preview lag.
 
-- **Monitors**: If the application can be used without problem on a single screen, using multi-screens will improve the experience especially with the workflow to review items.
+- **Monitors**: Although the application can be used on a single screen, using multi-screens will improve the experience especially when reviewing items.
 
 .. figure:: images/multi_screens_linux_station.webp
     :alt:
     :align: center
 
-    A Double-Screens Linux Station with **Main Window** on the Left and **Light Table** on the Right
+    A Double-Screen Linux Station with **Main Window** on the Left and **Light Table** on the Right
 
 .. tip::
 
     If your screen provides HDPI support, check options :ref:`Use high DPI scaling from the screen factor <system_settings>` and :ref:`Application font <appearance_settings>`.
 
-- **Storage**: SSDs will be the best choice for robustness and speed to host database and collection.
+- **Storage**: SSDs are the best choice for robust and speedy hosting of the digiKam database and collection.
 
 .. _linux_requirements:
 
@@ -61,8 +61,8 @@ digiKam on Linux
 
 **AppImage:** Minimum Ubuntu 18.04 has no such minimal requirements.
 
-`AppImage <https://en.wikipedia.org/wiki/AppImage>`_ is a bundle hosting all the necessary dependencies to run digiKam. Nothing is installed on your system.
-Turn on **executable** property of AppImage file and run it. That all...
+`AppImage <https://en.wikipedia.org/wiki/AppImage>`_ is a bundle hosting all the necessary dependencies to run digiKam. Nothing else is installed on your system.
+Turn on the **executable** property of the AppImage file and run it. That's all...
 
 .. figure:: videos/appimage_startup.webp
     :width: 500px
@@ -75,7 +75,7 @@ Turn on **executable** property of AppImage file and run it. That all...
 
 .. tip::
 
-    The AppImage bundle includes also the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>`. To run it instead digiKam, just add **showfoto** as argument to the AppImage command line, like this:
+    The AppImage bundle also includes the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>`. To run it, instead of digiKam, just add **showfoto** as an argument to the AppImage command line, like this:
 
     .. code-block:: bash
 
@@ -83,17 +83,17 @@ Turn on **executable** property of AppImage file and run it. That all...
 
 .. note::
 
-    The AppImage provides more options to start which can be listed with **help** argument from command line.
+    The AppImage bundle provides more startup options which can be listed with the **help** argument from the command line.
 
 digiKam on Windows
 -------------------
 
-Using on Standard Desktop
+Using on a Standard Desktop
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**digiKam** runs only on 64bit version of Windows 10 and newer. We cannot guarantee that digiKam runs on server or embedded Windows version.
+**digiKam** runs only on 64-bit versions of Windows 10 and newer. We cannot guarantee that digiKam runs on server or embedded versions of Windows.
 
-digiKam is available as an non-signed **installable** (Setup Program) and as a **standalone** (Archive) version.
+digiKam is available as a non-signed **installable** (Setup Program) version and as a **standalone** (Archive) version.
 
     - **Installable** version: **Needs** administrator rights and gets installed on your local machine. It's also listed as a program.
 
@@ -101,7 +101,7 @@ digiKam is available as an non-signed **installable** (Setup Program) and as a *
 
         - The digiKam files are always located in the same folder.
 
-        When the file is downloaded, to start the installer, a security warning will appears, because it does not come from the Windows Store.
+        When the file is downloaded, and the installer is started, a security warning will appear because the installer does not come from the Windows Store.
 
         .. figure:: images/windows_setup_protection.webp
             :width: 400px
@@ -110,7 +110,7 @@ digiKam is available as an non-signed **installable** (Setup Program) and as a *
 
             The Windows Warning When you Try to Run digiKam Installer after Downloading
 
-        You needs to give the rights to run from the **Windows Config Panel/Applications and Features** to setup applications source outside the store.
+        You need to set the **Windows Config Panel/Applications and Features** to allow applications to be installed from sources outside the Microsoft store.
 
         .. figure:: images/windows_setup_security.webp
             :width: 400px
@@ -119,7 +119,7 @@ digiKam is available as an non-signed **installable** (Setup Program) and as a *
 
             The Windows Applications and Features Panel to Authorize digiKam Installation
 
-        When you start a second time the installer, an information dialog will appears, because the it's not signed for the Microsoft Windows Defender.
+        Because the installer is not signed, Microsoft Windows Defender will display an information dialog when the installer is started a second time.
 
         .. figure:: images/windows_setup_information.webp
             :width: 400px
@@ -128,11 +128,11 @@ digiKam is available as an non-signed **installable** (Setup Program) and as a *
 
             The Windows Information When you Run digiKam Installer
 
-        When installer is running, follow instructions from the assistant to install application on your computer.
+        Once the installer is running, follow the instructions from the assistant to install digiKam on your computer.
 
         .. note::
 
-            If a previous digiKam version is present on your system, the Windows installer will warns you to uninstall it before to process to the new installation.
+            If a previous version of digiKam is present on your system, the Windows installer will warn you to uninstall the previous version before proceeding with the new installation.
 
         .. figure:: images/windows_setup_prepare.webp
             :width: 300px
@@ -155,16 +155,16 @@ digiKam is available as an non-signed **installable** (Setup Program) and as a *
 
             The Windows Dialog to Install Newer Version of digiKam
 
-    - **Standalone** version: **Doesn't** need administrator rights and isn't installed. It's **not** listed as a program. Is only accessible for the user who has downloaded the file.
+    - **Standalone** version: **Doesn't** need administrator rights and isn't installed or listed as a program. Is only accessible by the user who has downloaded the file.
 
-        - If you work with a normal user on your computer, you can use digiKam.
+        - Allows a normal user to use digiKam without a full installatioon.
 
-        - You can copy the digiKam folder on any external drive and run it on a different computer without installing it. However, your personal settings and downloads within digiKam are related to the computer you work on.   
+        - You can also copy the digiKam folder onto any external drive and run it on a different computer without installing it. However, your personal settings and downloads within digiKam are limited to the computer you work on.
 
 Using in a Windows Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you want to use digiKam with domain users with using Windows Active Directory and/or Group Policies (`GPOs <https://learn.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-policy-objects>`_) make sure all users have read/write rights to the following folders:
+If you want to use digiKam with domain users based on Windows Active Directory and/or Group Policies (`GPOs <https://learn.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-policy-objects>`_) make sure all users have read/write access to the following folders:
 
 .. epigraph::
 
@@ -178,7 +178,7 @@ If you want to use digiKam with domain users with using Windows Active Directory
 
    %LocalAppData%\\kxmlgui5\\digikam\digikamui.rc
 
-Similar requirements is also necessary for the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>`:
+Similar requirements also exist for the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>`:
 
 .. epigraph::
 
@@ -192,17 +192,17 @@ Similar requirements is also necessary for the :ref:`Showfoto stand Alone Image 
 
    %LocalAppData%\\kxmlgui5\\digikam\showfotoui.rc
 
-Do also make sure no GPO is blocking the access to these folders.
+Also make sure no GPO is blocking the access to these folders.
 
 .. _macos_requirements:
 
 digiKam on macOS
 -----------------
 
-The non Signed Package
+The non-Signed Package
 ~~~~~~~~~~~~~~~~~~~~~~
 
-**digiKam** runs with Intel based Mac's on macOS 64-bit. For M1 based Mac's, you needs to use `Apple Rosetta 2 <https://support.apple.com/en-us/HT211861>`_ instructions translator. Minimum system requirement depends of the digiKam version to install:
+**digiKam** runs with Intel-based Macs on macOS 64-bit. On Apple-silicon based Macs, digiKam uses the `Apple Rosetta 2 <https://support.apple.com/en-us/HT211861>`_ translator. Minimum system requirements depend on the version of digiKam being installed:
 
     =============== ===========================================================================================
     digiKam version Supported macOS Release
@@ -213,21 +213,21 @@ The non Signed Package
     >= 6.1.0         macOS 10.11 (`El Capitan <https://en.wikipedia.org/wiki/OS_X_El_Capitan>`_) or newer
     >= 6.0.0         macOS 10.8 (`Mountain Lion <https://en.wikipedia.org/wiki/OS_X_Mountain_Lion>`_) or newer
     =============== ===========================================================================================
-    
+
 .. note::
 
-    Due to use `Macports environment <https://www.macports.org/>`_ to build digiKam PKG, and the rolling release Macports policy applied on time, it's difficult to provide a binary compatibility with older versions of macOS. Also Macports packages are frequently updated for security reasons, and this can require more recent macOS SDK.
+    `Macports <https://www.macports.org/>`_ , which was used to build the digiKam PKG, has a rolling release policy making it difficult to provide binary compatibility with older versions of macOS. Macports packages are frequently updated for security reasons, and this can require a more recent macOS SDK.
 
-When the **PKG** file is downloaded, to start the installer, a security warning will appears, because the package is not signed for the Apple Gatekeeper.
+When the **PKG** file is downloaded, and the installer is started, Apple Gatekeeper will display a security warning because the package is not signed.
 
 .. figure:: images/macos_pkg_warning.webp
     :width: 400px
     :alt:
     :align: center
 
-    The macOS Warning When you Try to Run digiKam PKG after Downloading
+    The macOS Warning When you Try to Run the digiKam Installer after Downloading
 
-You needs to give the rights to run from the **macOS Config Panel/Security and Confidentiality** to confirm to Gatekeeper that all is safe here.
+You need to allow the installer to run by clicking on **Open Anyway** in the **macOS Config Panel/Security and Privacy** dialog.
 
 .. figure:: images/macos_pkg_security.webp
     :width: 400px
@@ -236,40 +236,39 @@ You needs to give the rights to run from the **macOS Config Panel/Security and C
 
     The macOS Security Panel to Authorize digiKam PKG Installation
 
-When installer is running, follow instructions from the assistant to install application on your computer.
+Once the installer is running, follow the instructions from the assistant to install digiKam onto your computer.
 
 .. figure:: images/macos_pkg_installer.webp
     :width: 400px
     :alt:
     :align: center
 
-    The digiKam macOS PKG is Started and Ready to Install
+    The digiKam macOS PKG is running and Ready to Install
 
-Application Rights
+Application Permissions
 ~~~~~~~~~~~~~~~~~~
 
-When the installation is done, digiKam will need to access on system resources to run properly. This will be asked by the system when digiKam run, depending of actions performed by user.
-See below some examples of rights set in the macOS **Security and Privacy** policy configuration panel:
+Once installed, digiKam will need to access some system resources to run properly. The system will ask for permissions when digiKam is run, depending on actions performed by user. See below for some examples of permissions that may need to be set in the macOS **Security and Privacy** policy configuration panel:
 
-- **Automation**: This right is set when you try to open an album in Apple Finder file manager through digiKam.
+- **Automation**: You must allow digiKam to control Apple's Finder app when you try to open an album in the Finder file manager through digiKam.
 
 .. figure:: images/macos_privacy_automation.webp
     :width: 400px
     :alt:
     :align: center
 
-    The macOS Security and Privacy Panel with the Automation Rights
+    The macOS Security and Privacy Panel with the Automation Permissions
 
-- **Accessibility**: If you want to change the desktop wallpaper with digiKam, this right must be turned on.
+- **Accessibility**: You must allow digiKam to control your computer if you want to change the desktop wallpaper with digiKam.
 
 .. figure:: images/macos_privacy_accessibility.webp
     :width: 400px
     :alt:
     :align: center
 
-    The macOS Security and Privacy Panel with the Accessibility Rights
+    The macOS Security and Privacy Panel with the Accessibility Permissions
 
-- **Files And Folders**: if you place your collections on your computer outside the Photos directory from your personal account, digiKam needs special right to access to contents.
+- **Files And Folders**: You must allow digiKam to access files and folders outside the Photos directory, if you place your collections elsewhere on your computer.
 
 .. figure:: images/macos_privacy_filesfolders.webp
     :width: 400px
@@ -278,27 +277,27 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
 
     The macOS Security and Privacy Panel with the Files and Folders Access Rights
 
-- **Full Disk**: This right is mandatory if you use gPhoto2 driver to access on system places to communicate with the device.
+- **Full Disk**: You must allow digiKam to access data from other applications if you use the gPhoto2 driver to communicate with your camera.
 
 .. figure:: images/macos_privacy_fulldisk.webp
     :width: 400px
     :alt:
     :align: center
 
-    The macOS Security and Privacy Panel with the Full Disk Access Rights
+    The macOS Security and Privacy Panel with the Full Disk Access Permissions
 
-- **Photos**: if you want to share Apple Photos collection from your personal account, you will needs to turn on these rights.
+- **Photos**: You must allow digiKam to access your photos if you want digiKam to include the Apple Photos collection in your personal account.
 
 .. figure:: images/macos_privacy_photos.webp
     :width: 400px
     :alt:
     :align: center
 
-    The macOS Security and Privacy Panel with the Photos Access Rights
+    The macOS Security and Privacy Panel with the Photos Access Permissions
 
 .. note::
 
-    At first start, if you point your collection on the standard Apple Photo library, MacOS will ask you automatically to grant access on this content.
+    When digiKam is first run, if you point your collection to the standard Apple Photo library, MacOS will automatically ask you to grant access to the library.
 
     .. figure:: images/macos_grant_access_photos.webp
         :width: 400px
@@ -312,7 +311,7 @@ See below some examples of rights set in the macOS **Security and Privacy** poli
 Configuration Files
 -------------------
 
-**digiKam**'s application-wide persistent settings are stored in the following locations, depending on your platform. 
+**digiKam**'s application-wide persistent settings are stored in the following locations, depending on your platform.
 
 .. list-table::
    :header-rows: 1
@@ -324,25 +323,25 @@ Configuration Files
    * - :file:`~/.config/digikamrc`
      - :file:`%LocalAppData%\\digikamrc`
      - :file:`~/Library/Preferences/digikamrc`
-     - General settings of the application. Delete this and restart digiKam to reset the application to *factory* settings
+     - General settings for the application. Delete this and restart digiKam to reset the application to *factory* settings
    * - :file:`~/.config/digikam_systemrc`
      - :file:`%LocalAppData%\\digikam_systemrc`
      - :file:`~/Library/Preferences/digikam_systemrc`
-     - System settings of the application. Delete this and restart digiKam to reset the application to *factory* settings
+     - System settings for the application. Delete this and restart digiKam to reset the application to *factory* settings
    * - :file:`~/.cache/digikam`
      - :file:`%LocalAppData%\\digikam`
      - :file:`~/Library/Caches/digikam`
-     - cache location storing temporary files
+     - Cache location storing temporary files
    * - :file:`~/.local/share/digikam`
      - :file:`%AppData%\\digikam`
      - :file:`~/Library/Application Support/digikam`
-     - contains downloaded: deep-learning models, internal configuration files
+     - Contains downloaded deep-learning models and internal configuration files
    * - :file:`~/.local/share/kxmlgui5/digikam/digikamui5.rc`
-     - :file:`%LocalAppData%\\kxmlgui5\digikam\\digikamui5.rc` 
+     - :file:`%LocalAppData%\\kxmlgui5\digikam\\digikamui5.rc`
      - :file:`~/Library/Application Support/digikam/kxmlgui5/digikam/digikamui5.rc`
-     - contains UI configuration, if your UI is broken, delete this file
+     - Contains UI configuration. If your UI is broken, delete this file
 
-As digiKam, the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>` has also persistent settings stored at similar places: 
+Similar to digiKam, the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>` also has persistent settings stored at the following locations:
 
 .. list-table::
    :header-rows: 1
@@ -354,36 +353,36 @@ As digiKam, the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>` has a
    * - :file:`~/.config/showfotorc`
      - :file:`%LocalAppData%\\showfotorc`
      - :file:`~/Library/Preferences/showfotorc`
-     - General settings of the application. Delete this and restart Showfoto to reset the application to *factory* settings
+     - General settings for the application. Delete this and restart Showfoto to reset the application to *factory* settings
    * - :file:`~/.config/showfoto_systemrc`
      - :file:`%LocalAppData%\\showfoto_systemrc`
      - :file:`~/Library/Preferences/showfoto_systemrc`
-     - System settings of the application. Delete this and restart Showfoto to reset the application to *factory* settings
+     - System settings for the application. Delete this and restart Showfoto to reset the application to *factory* settings
    * - :file:`~/.cache/showfoto`
      - :file:`%LocalAppData%\\showfoto`
      - :file:`~/Library/Caches/showfoto`
-     - cache location storing temporary files
+     - Cache location storing temporary files
    * - :file:`~/.local/share/showfoto`
      - :file:`%AppData%\\showfoto`
      - :file:`~/Library/Application Support/showfoto`
-     - contains downloaded: deep-learning models, internal configuration files
+     - Contains downloaded deep-learning models and internal configuration files
    * - :file:`~/.local/share/kxmlgui5/showfoto/showfoto ui5.rc`
-     - :file:`%LocalAppData%\\kxmlgui5\showfoto\\showfotoui5.rc` 
+     - :file:`%LocalAppData%\\kxmlgui5\showfoto\\showfotoui5.rc`
      - :file:`~/Library/Application Support/showfoto/kxmlgui5/showfoto/showfotoui5.rc`
-     - contains UI configuration, if your UI is broken, delete this file
+     - Contains UI configuration. If your UI is broken, delete this file
 
 .. note::
 
-    The character '**~**' indicates the home directory of the current user from the system.
+    The character '**~**' indicates the home directory on the system of the current user.
 
 Application Updates
 -------------------
 
 .. important::
 
-    If you process a major version update, as for example from version 7 to version 8, we recommend to backup :ref:`your database files <database_intro>`, as generally internal schema can changes. Typically, digiKam is able to migrate tables from an older version to a new one, and all is done automatically at startup, but in all cases, it's always better to save these important digiKam files before to upgrade the application. Look also the :ref:`Database Backup <database_backup>` section from this manual for more recommendations.
+    If you update digiKam to a new major version, for example from version 7 to version 8, we recommend you first backup :ref:`your database files <database_intro>`, since the internal schema may have changed. Typically, digiKam is able to migrate tables from an older version to a new one, and all of this is done automatically at startup. But it's always better to save these important digiKam files before upgrading the application. See the :ref:`Database Backup <database_backup>` section in this manual for more recommendations.
 
-If you use a bundle as official Linux AppImage, macOS package, or Windows installer, the application can be updated using the :menuselection:`Help --> Check For New Version menu entry`. Look also the updates settings :ref:`in Behavior page <behavior_settings>` from the configuration dialog.
+If you use a bundle such as the official Linux AppImage, macOS package, or Windows installer, the application can be updated using the :menuselection:`Help --> Check For New Version menu entry`. See the updates settings :ref:`on the Behavior page <behavior_settings>` of the configuration dialog.
 
 .. figure:: images/updates_new_version.webp
     :alt:
