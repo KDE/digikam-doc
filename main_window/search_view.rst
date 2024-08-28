@@ -22,6 +22,7 @@ We talked about quite a few views already and their searching capabilities, whic
     The digiKam Simple Search Tool
 
 In the field right below you can enter a title and save your selection. It will then appear in the **Searches** list field below. But the best is still to come: the Search View offers a search for a search! If you have a lot more searches saved than my ridiculous four in the screenshot the adaptive search field at the bottom may help to find a certain search.
+You can manage your saved searches with a context menu by right-clicking on the saved search.
 
 The Quick Search
 ~~~~~~~~~~~~~~~~
