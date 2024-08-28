@@ -25,7 +25,7 @@ There are four tools regarding geolocation in digiKam and two in Showfoto:
 
     - The **Map** tab on the Right Sidebar we are talking about here which shows the location of the image on a map and is purely informative.
 
-This tab shows a map of orientation where you will find a marker or a thumbnail to indicate the GPS location of the selected image. The GPS coordinates and the time information are displayed below the widget. You can zoom in and out with the mouse wheel by either scrolling it or hold and drag it. Pan by holding down the left mouse button.
+This tab shows a map of orientation where you will find a marker or a thumbnail to indicate the GPS location of the selected image. The GPS coordinates and the time information are displayed below the widget. You can zoom in and out with the mouse wheel by either scrolling it or hold and drag it. Pan by holding down the left mouse button. The map can be rotated from his center holding down the right mouse button.
 
 .. figure:: images/sidebar_metadatagps.webp
     :alt:
@@ -34,6 +34,10 @@ This tab shows a map of orientation where you will find a marker or a thumbnail 
     The Map View From Right Sidebar
 
 For navigating on the map, refer to the :ref:`Map Search section <mapsearch_view>`. The meaning of **GPS** and functions and buttons that apply to all three geolocation parts are described in the :ref:`Geolocation Editor chapter <geoeditor_overview>` of this handbook. This applies to the context menu on the map and the line of buttons under the map except the last one.
+
+The lock icon will freeze the map. When selecting photos the map will no longer be moved automatically and will not be focused on the GPS points of the selected images.
+
+The copy icon, on the next line, will copy, as text, coordinates to the clipboard of the current image position in the map.
 
 For information about the different map services you can use the drop-down field under the line of buttons. Choose a service here and then click the **See more information on the Internet** button to the right.
 
