@@ -63,6 +63,14 @@ There are several possibilities to view an image. You can either click on it, se
 
     The digiKam Main Window Preview Mode
 
+The first time you use each session, in Preview mode, the zoom will be adjusted to allow the image to have more space on the screen. A zoom is available with the same toolbar as the thumbnails. When the zoom is used, a zoom mark appears at the bottom right of the windows at the intersection of the moving bars. To use it, click on it, the overall image appears with a red rectangle representing the part being viewed, drag the mouse over it to move the part being viewed where you want it and release the mouse.
+This tool is also available in Light Table and Image Editor.
+.. figure:: images/mainwindow_preview_zoom_locator.webp
+    :alt:
+    :align: center
+
+    Detail of the zoom locator in Preview Mode
+
 .. note::
 
     The thumb bar located on top of preview canvas (optional - see Settings menu entry) can be relocated on left, right, or bottom side. An anchor on the left side of thumb bar allows to move it with the mouse at the wanted place.
