@@ -63,7 +63,7 @@ There are several possibilities to view an image. You can either click on it, se
 
     The digiKam Main Window Preview Mode
 
-The first time you use each session, in Preview mode, the zoom will be adjusted to allow the image to have more space on the screen. A zoom is available with the same toolbar as the thumbnails. When the zoom is used, a zoom mark appears at the bottom right of the windows at the intersection of the moving bars. To use it, click on it, the overall image appears with a red rectangle representing the part being viewed, drag the mouse over it to move the part being viewed where you want it and release the mouse.
+On the first use of each session, the zoom will be adjusted, in Preview mode, to allow the image to have as much space as possible. A zoom is available with the same toolbar as in thumbnail mode. When the zoom is used, a zoom mark appears at the bottom right of the windows at the intersection of the moving bars. To use it, click on it, the overall image appears with a red rectangle representing the viewed part, drag the mouse over it to move the viewed part where you want and release the mouse.
 This tool is also available in Light Table and Image Editor.
 
 .. figure:: images/mainwindow_preview_zoomed_locator.webp
