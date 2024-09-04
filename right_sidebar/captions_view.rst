@@ -61,7 +61,7 @@ In the Date and Time section, which reflects the time of taking the photograph, 
 Labels
 ~~~~~~
 
-The Rating section displays a 0...5 star rating scheme that can be used in searches and sort orders. It can be applied by a single mouse click to the 5 stars in the sidebar or with a keyboard shortcut :kbd:`Ctrl+0...5`. The rating from the sidebar is always applied to one image at a time. To rate a number of images, select them and pop-up the context menu (click with the right mouse button) to apply a common rating.
+The Rating section displays a 0...5 star rating scheme that can be used in searches and sort orders. It can be applied by a single mouse click to the 5 stars in the sidebar or with a keyboard shortcut :kbd:`Ctrl+0...5`. To rate a number of images, select them and pop-up the context menu (click with the right mouse button) to apply a common rating.
 
 The labels view allow to assign also the Color and the Pick tags that you can use in your workflow to classify items.
 
