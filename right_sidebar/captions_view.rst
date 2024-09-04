@@ -18,7 +18,7 @@ Captions View
 Overview
 ~~~~~~~~
 
-This sidebar tab serves to apply and edit image attributes like captions, rating, date and tags. The attributes are stored in the associated database, in the IPTC, XMP, and Exif data fields and become part of the image. All attributes are accessible in one sidebar view as shown in the screenshot below. During image reading the order of priority is ``a)`` database ``b)`` XMP/IPTC and ``c)`` Exif. So if there is a discrepancy between any of the three, this priority will take effect and a synchronization will take place. This sidebar has a first-previous-next-last arrow navigator field on top if shown in the main application.
+This sidebar tab serves to apply and edit image attributes like captions, rating, date and tags. The attributes are stored in the associated database, in the IPTC, XMP, and Exif data fields and become part of the image. All attributes are accessible in one sidebar view as shown in the screenshot below. During image reading the order of priority is ``a)`` database ``b)`` XMP/IPTC and ``c)`` Exif. So if there is a discrepancy between any of the three, this priority will take effect and a synchronization will take place.
 
 .. figure:: images/sidebar_captions.webp
     :alt:
