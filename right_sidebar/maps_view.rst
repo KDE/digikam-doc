@@ -25,7 +25,7 @@ There are four tools regarding geolocation in digiKam and two in Showfoto:
 
     - The **Map** tab on the Right Sidebar we are talking about here which shows the location of the image on a map and is purely informative.
 
-This tab shows a map of orientation where you will find a marker or a thumbnail to indicate the GPS location of the selected image. The GPS coordinates and the time information are displayed below the widget. You can zoom in and out with the mouse wheel by either scrolling it or hold and drag it. Pan by holding down the left mouse button. The map can be rotated from his center holding down the right mouse button.
+This tab shows a map of orientation where you will find a marker or a thumbnail to indicate the GPS location of the selected image. The GPS coordinates and the time information are displayed below the widget. You can zoom in and out with the mouse wheel by either scrolling it or hold and drag it. Pan by holding down the left mouse button. The map can be rotated from its center holding down the right mouse button.
 
 .. figure:: images/sidebar_metadatagps.webp
     :alt:
