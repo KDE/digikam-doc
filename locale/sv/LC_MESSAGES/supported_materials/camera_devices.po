@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-03 01:35+0000\n"
-"PO-Revision-Date: 2024-09-08 16:16+0200\n"
+"PO-Revision-Date: 2024-09-14 21:01+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -19,17 +19,19 @@ msgstr ""
 
 #: ../../supported_materials/camera_devices.rst:1
 msgid "Camera Devices Supported by digiKam"
-msgstr ""
+msgstr "Kameror som stöds av digiKam"
 
 #: ../../supported_materials/camera_devices.rst:1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, camera, gphoto, usb, mass, storage"
 msgstr ""
+"digiKam, dokumentation, användarhandbok, fotohantering, öppen källkod, fri,"
+" lära, enkel, kamera, gphoto, usb, masslagring"
 
 #: ../../supported_materials/camera_devices.rst:14
 msgid "Camera Devices"
-msgstr ""
+msgstr "Kameror"
 
 #: ../../supported_materials/camera_devices.rst:16
 msgid "Contents"
@@ -46,6 +48,11 @@ msgid ""
 "libraw library. To find out if your particular camera is supported, bring up "
 "the list from the :menuselection:`Help --> Supported RAW Cameras` menu."
 msgstr ""
+"Stöd för obehandlade filer: Om man använder obehandlat fotograferingsläge med"
+" kameran, kan digiKam troligtvis hantera det. Stöd för obehandlade bilder"
+" beror på biblioteket libraw. För att ta reda på om just din kamera stöds,"
+" visa listan från menyn :menuselection:`Hjälp --> Kameror med obehandlade"
+" bilder som stöds`."
 
 #: ../../supported_materials/camera_devices.rst:25
 msgid ""
@@ -53,12 +60,17 @@ msgid ""
 "Settings <setup_raw>` and :ref:`RAW Workflow <rawprocessing_workflow>` "
 "sections."
 msgstr ""
+"Hur man ställer in och arbetar med obehandlade filer beskrivs i avsnitten"
+" :ref:`Obehandlad avkodningsinställning <setup_raw>` och :ref:`Obehandlat"
+" arbetsflöde <rawprocessing_workflow>`."
 
 #: ../../supported_materials/camera_devices.rst:29
 msgid ""
 "Camera import is currently not supported on Windows Systems due limitations "
 "in the Gphoto2 library."
 msgstr ""
+"Kameraimport stöds för närvarande inte på Windows-system på grund av"
+" begränsningar i biblioteket Gphoto2."
 
 #: ../../supported_materials/camera_devices.rst:31
 msgid ""
@@ -68,6 +80,11 @@ msgid ""
 "php>`_ are supported by the gPhoto library. Of course, any media or card "
 "reader supported by your operating system will interface with digiKam."
 msgstr ""
+"Ett lättanvänt kameragränssnitt tillhandahålls som ansluter till en"
+" digitalkamera och laddar ner fotografier direkt till album i digiKam. Mer än"
+" `2500 digitalkameror <http://www.gphoto.org/proj/libgphoto2/support.php>`_"
+" stöds av biblioteket gPhoto. Naturligtvis samverkar alla media- eller"
+" kortläsare som stöds av operativsystemet med digiKam."
 
 #: ../../supported_materials/camera_devices.rst:33
 msgid ""
@@ -78,10 +95,16 @@ msgid ""
 "disk drive) or using the Picture Transfer Protocol (PTP) and its "
 "derivatives. Older cameras may use the Serial Port (RS-232) connection."
 msgstr ""
+"Dagens digitalkameror kännetecknas av användningen av Compact Flash™"
+" minneskort och USB eller FireWire (IEEE-1394 eller i-link) för"
+" dataöverföring. De faktiska överföringarna till en värddator utförs"
+" vanligtvis med hjälp av en USB-masslagringsenhet (så att kameran visas som"
+" en diskenhet) eller med hjälp av Picture Transfer Protocol (PTP) och dess"
+" derivat. Äldre kameror kan använda anslutning med en serieport (RS-232)."
 
 #: ../../supported_materials/camera_devices.rst:36
 msgid "Transfers using gPhoto: PTP and Serial Port"
-msgstr ""
+msgstr "Överföringar genom att använda gPhoto: PTP och serieport"
 
 #: ../../supported_materials/camera_devices.rst:38
 msgid ""
@@ -93,6 +116,13 @@ msgid ""
 "transfer of images from digital cameras to computers and other peripheral "
 "devices without the need of additional device drivers."
 msgstr ""
+"Programmet gPhoto används av digiKam för att kommunicera med digitala"
+" stillbildskameror. gPhoto är en fri uppsättning programvara med fri"
+" återdistribuering för digitalkameror som stöder ett växande antal kameror."
+" gPhoto har stöd för Picture Transfer Protocol, som är ett protokoll med"
+" brett stöd utvecklat av International Imaging Industry Association för att"
+" möjliggöra överföring av bilder från digitalkameror till datorer och andra"
+" kringutrustningar utan behov av ytterligare enhetsdrivrutiner."
 
 #: ../../supported_materials/camera_devices.rst:40
 msgid ""
@@ -103,6 +133,12 @@ msgid ""
 "list of supported digital cameras at `this url <http://www.gphoto.org/proj/"
 "libgphoto2/support.php>`_."
 msgstr ""
+"Många gamla digitala stillbildskameror använde en serieport för att"
+" kommunicera med värddatorer. Eftersom fotografier är stora filer och"
+" överföringar med serieport är långsamma är anslutningen nu föråldrad."
+" digiKam stöder kamerorna och utför bildöverföringar med programmet gPhoto."
+" Man kan finna en komplett lista över digitalkameror som stöds på `den här"
+" webbadressen <http://www.gphoto.org/proj/libgphoto2/support.php>`_."
 
 #: ../../supported_materials/camera_devices.rst:44
 msgid ""
@@ -111,14 +147,20 @@ msgid ""
 "libgphoto2 camera drivers. If Exif support is not set with gPhoto, you might "
 "not see thumbnails or the thumbnail extraction may be very slow."
 msgstr ""
+"gPhoto måste byggas med libexif för att hämta miniatyrbilder till digiKam"
+" korrekt. Exif-stöd krävs för hämtning av miniatyrbilder på vissa"
+" kameradrivrutiner med libgphoto2. Om Exif-stöd inte ingår i gPhoto kanske"
+" man inte ser miniatyrbilder eller så kan hämtning av miniatyrbilder vara"
+" mycket långsam."
 
 #: ../../supported_materials/camera_devices.rst:50
 msgid "The digiKam Setup Dialog to Configure a gPhoto Camera Device"
 msgstr ""
+"Inställningsdialogruta i digiKam för att ställa in en gPhoto-kameraenhet"
 
 #: ../../supported_materials/camera_devices.rst:53
 msgid "Transfers using Mass Storage device"
-msgstr ""
+msgstr "Överföringar genom att använda en masslagringsenhet"
 
 #: ../../supported_materials/camera_devices.rst:55
 msgid ""
@@ -127,6 +169,9 @@ msgid ""
 "This includes many digital cameras and Memory Card Readers. Mass Storage "
 "interfaces are:"
 msgstr ""
+"För de enheter som inte direkt stöds av gPhoto finns stöd för"
+" masslagringsprotokollet, som stöds väl på GNU/Linux®. Det inkluderar många"
+" digitalkameror och minneskortläsare. Masslagringsgränssnitt är:"
 
 #: ../../supported_materials/camera_devices.rst:57
 msgid ""
@@ -135,6 +180,10 @@ msgid ""
 "This standard provides an interface to a variety of storage devices, "
 "including digital cameras."
 msgstr ""
+"**USB-masslagring**: Ett datorgränssnitt som använder kommunikationsprotokoll"
+" definierade av USB Implementers Forum som körs på Universal Serial Bus."
+" Standarden tillhandahåller ett gränssnitt för en mängd olika"
+" lagringsenheter, inklusive digitalkameror."
 
 #: ../../supported_materials/camera_devices.rst:59
 msgid ""
@@ -146,6 +195,13 @@ msgid ""
 "cameras support USB version 1 and eventually will support USB version 2; a "
 "very few support FireWire."
 msgstr ""
+"**FireWire-masslagring**: Ett datorgränssnitt som använder"
+" kommunikationsprotokoll som i första hand utvecklades av Apple Computer på"
+" 1990-talet. FireWire erbjuder höghastighetskommunikation och isokrona"
+" realtidsdatatjänster. Liksom USB Mass Storage tillhandahåller standarden ett"
+" gränssnitt för en mängd olika lagringsenheter, inklusive digitala"
+" stillbildskameror. Nästan alla nya digitalkameror stöder USB version 1 och"
+" kommer så småningom att stödja USB version 2; ett fåtal stöder FireWire."
 
 #: ../../supported_materials/camera_devices.rst:61
 msgid ""
@@ -153,9 +209,16 @@ msgid ""
 "`Import --> Camera --> Add Camera Manually...`, add your device and set the "
 "correct mount point path."
 msgstr ""
+"För att använda en generisk masslagringsenhet med digiKam, välj"
+" :menuselection:`Importera --> Kamera --> Lägg till kamera manuellt...`, lägg"
+" till enheten och ställ in rätt monteringspunkt."
 
 #: ../../supported_materials/camera_devices.rst:63
 msgid ""
 "For details see the chapter to configure digiKam, into :ref:`Camera section "
 "<camera_settings>`."
 msgstr ""
+"För detaljerad information se kapitlet om inställning av digiKam, på"
+" :ref:`kamerasidan <camera_settings>`."
+
+
