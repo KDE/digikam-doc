@@ -6,7 +6,7 @@ This documentation generated as **HTML** can be read online [here](https://docs.
 
 This documentation generated as **EPUB** can be downloaded [here](https://docs.digikam.org/en/epub/DigikamManual.epub).
 
-[![Build Status](https://binary-factory.kde.org/job/Website_docs-digikam-org/badge/icon)](https://binary-factory.kde.org/job/Website_docs-digikam-org/)
+[![Build Status](https://binary-factory.kde.org/job/Website_docs-digikam-org/badge/icon)](https://invent.kde.org/documentation/digikam-doc/-/pipelines)
 
 ## Setting Up Development Environment
 
@@ -315,7 +315,7 @@ To rebase your fork just call this git command:
 
 `git merge origin/master`
 
-This git workflow is well [documented in this page](https://www.johneverettcase.com/post/2021/07/28/git-rebase-fork.html).
+This git workflow is well [documented in this page](https://johneverettcase.com/git-how-to-rebase-a-fork).
 
 ### WEBP Screenshot Capture
 

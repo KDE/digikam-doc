@@ -77,10 +77,10 @@ The Usage from Keyboard and mouse to quickly navigate between items is listen be
         :kbd:`Space` key
 
     Slideshow Settings:
-        :kbd:`F2` key
+        :kbd:`Alt+P` key
 
     Hide/Show Properties:
-        :kbd:`F4` key
+        :kbd:`Alt+Y` key
 
     Quit:
         :kbd:`Esc` key
