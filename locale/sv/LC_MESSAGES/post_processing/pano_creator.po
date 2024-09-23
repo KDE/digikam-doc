@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-03 01:35+0000\n"
-"PO-Revision-Date: 2024-09-08 19:47+0200\n"
+"PO-Revision-Date: 2024-09-22 15:18+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../post_processing/pano_creator.rst:1
 msgid "The digiKam Panorama Creator"
-msgstr ""
+msgstr "Skapa panorama i digiKam"
 
 #: ../../post_processing/pano_creator.rst:1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, panorama, assembly, stitch"
 msgstr ""
+"digiKam, dokumentation, användarhandbok, fotohantering, öppen källkod, fri, "
+"lära, enkel, panorama, sammanställa, hopfoga"
 
 #: ../../post_processing/pano_creator.rst:14
 msgid "Panorama Creator"
@@ -40,6 +42,8 @@ msgid ""
 "The Panoramic JPEG Files Selected from Icon-View (7x24Mpx Images taken with "
 "Sony A77 - 59 Mb)"
 msgstr ""
+"JPEG-filer med panorama valda i ikonvyn (bilder med 7 x 24 megapixel tagna"
+" med en Sony A77 - 59 MB)"
 
 #: ../../post_processing/pano_creator.rst:24
 msgid ""
@@ -52,22 +56,35 @@ msgid ""
 "compositions. The tool allows to assemble shots taken horizontally, "
 "vertically, or as a matrix."
 msgstr ""
+"Ett panorama är en sammansättning av ett foto taget under samma förhållanden"
+" med samma kamera/objektiv. Kameran vänds längs samma synvinkel för att ta"
+" många bilder av en vidvinkelvy som är en representation av ett större"
+" fysiskt rum. Bilderna måste vara tagna med överlagrade områden längs"
+" kanterna. Algoritmen försöker hitta de gemensamma delarna av bilderna för"
+" att sammanfoga innehållet. För att vara säker på stabiliteten kan man"
+" använda ett stativ, speciellt för komplexa kompositioner. Verktyget gör det"
+" möjligt att sätta ihop bilder tagna horisontellt, vertikalt eller som en"
+" matris."
 
 #: ../../post_processing/pano_creator.rst:28
 msgid ""
 "Take a care that target panorama is a huge amount of data and requires a lot "
 "of memory to be processed."
 msgstr ""
+"Var medveten om att det resulterande panoramat har enormt mycket data och"
+" kräver mycket minne för att behandla."
 
 #: ../../post_processing/pano_creator.rst:30
 msgid ""
 "Select the images that you want to stitch and go to :menuselection:`Tools --"
 "> Create Panorama` a wizard dialog will open up as below."
 msgstr ""
+"Välj bilderna som ska hopfogas och gå till :menuselection:`Verktyg --> Skapa"
+" panorama`, så öppnas en guidedialogruta som nedan."
 
 #: ../../post_processing/pano_creator.rst:36
 msgid "The Panorama Creator Wizard with the Hugin Components Detection"
-msgstr ""
+msgstr "Guiden Skapa panorama med Hugin komponentdetektering"
 
 #: ../../post_processing/pano_creator.rst:38
 msgid ""
@@ -77,10 +94,15 @@ msgid ""
 "prefer to render the panorama and click on **Next** button. The page below "
 "must appears:"
 msgstr ""
+"Insticksprogrammet är baserat på `kommandoradsverktyget Hugin <"
+"https://hugin.sourceforge.io/>`_ för att analysera och sätta ihop objekten."
+" Om alla programvarukomponenter finns på systemet, välj bara utdataformatet"
+" som föredras för att återge panoramat och klicka på knappen **Nästa**. Sidan"
+" nedan ska visas:"
 
 #: ../../post_processing/pano_creator.rst:44
 msgid "The Panorama Creator Wizard with the List of Items to Assemble"
-msgstr ""
+msgstr "Guiden Skapa panorama med listan över objekt som ska sammanställas"
 
 #: ../../post_processing/pano_creator.rst:46
 msgid ""
@@ -90,10 +112,15 @@ msgid ""
 "from the list will be the item placed on the center of the panorama. When "
 "all is done, click on **Next** button."
 msgstr ""
+"Arrangera bilderna i rätt ordning om de inte är det, med hjälp av knapparna"
+" **Upp** och **Ner**. Använd knapparna med symbolerna **Plus** och **Minus**"
+" för att lägga till eller ta bort objekt. Om man vill återge ett 360°"
+" panorama, är den första bilden från listan objektet som placeras i mitten av"
+" panoramat. När allt är klart, klicka på knappen **Nästa**."
 
 #: ../../post_processing/pano_creator.rst:52
 msgid "The Panorama Creator Wizard Pre-Processing Stage"
-msgstr ""
+msgstr "Förbehandlingssteget i guiden för att skapa panorama"
 
 #: ../../post_processing/pano_creator.rst:54
 msgid ""
@@ -105,10 +132,17 @@ msgid ""
 "by the algorithms. Depending of the scene contents, turn on the option and "
 "press **Next** button to pre-process items."
 msgstr ""
+"Alternativet **Detektera rörlig himmel** tillåter en automatisk detektering"
+" av moln för att förhindra att fel nyckelpunkter matchar bilder på grund av"
+" rörliga former. För att vara mer exakt, under valet av kontrollpunkter,"
+" förkastar processen alla punkter som är associerade med ett möjligt moln."
+" Det är användbart för att förhindra att rörliga moln ändrar algoritmernas"
+" matchning av kontrollpunkter. Beroende på scenens innehåll, slå på"
+" alternativet och tryck på knappen **Nästa** för att förbehandla objekt."
 
 #: ../../post_processing/pano_creator.rst:60
 msgid "The Panorama Creator Wizard Optimizations Stage"
-msgstr ""
+msgstr "Optimeringssteget i guiden för att skapa panorama"
 
 #: ../../post_processing/pano_creator.rst:62
 msgid ""
@@ -119,10 +153,16 @@ msgid ""
 "composition, you can ignore this setting. Click on the **Next** button to "
 "preview the result."
 msgstr ""
+"Optimeringssidan innehåller ett annat alternativ som kallas **Gör horisonten"
+" plan** avsett för en horisontell scen. Aktivera inställningen för att"
+" upptäcka horisonten och anpassa projektionen därefter. Den upptäckta"
+" horisonten är en horisontell linje i det slutliga panoramat. Om scenen är en"
+" vertikal komposition kan inställningen ignoreras. Klicka på knappen"
+" **Nästa** för att förhandsgranska resultatet."
 
 #: ../../post_processing/pano_creator.rst:68
 msgid "The Panorama Creator Wizard Preview Stage"
-msgstr ""
+msgstr "Förhandsgranskningssteget i guiden för att skapa panorama"
 
 #: ../../post_processing/pano_creator.rst:70
 msgid ""
@@ -134,10 +174,18 @@ msgid ""
 "a right click with the mouse, you can re-define a new crop area. When all in "
 "fine, click on **Next** button to process final composing of the panorama."
 msgstr ""
+"På den här sidan samlas bilderna, och man kan bedöma resultatet och beskära"
+" innehållet för att ta bort svarta ramar runt scenen. Normalt kan verktyget"
+" automatiskt upptäcka den effektiva delen av panoramat. Om man flyttar musen"
+" över förhandsgranskningen ska en verktygsrad visas i det övre vänstra hörnet"
+" för att **Zooma in**, **Zooma ut** och **Anpassa** bilden. Med ett"
+" högerklick med musen kan man omdefiniera ett nytt beskärningsområde. När"
+" allt är bra, klicka på knappen **Nästa** för att bearbeta den slutliga"
+" sammansättningen av panoramat."
 
 #: ../../post_processing/pano_creator.rst:76
 msgid "The Last Page of the Panorama Creator Wizard"
-msgstr ""
+msgstr "Den sista sidan i guide för att skapa panorama"
 
 #: ../../post_processing/pano_creator.rst:78
 msgid ""
@@ -146,13 +194,22 @@ msgid ""
 "save your project compatible with Hugin. Click on **Finish** button and you "
 "will see the output in the same **Album** as your original pictures."
 msgstr ""
+"Efter en lång beräkning är sammansättningen av panoramat klar och verktyget"
+" föreslår ett mallnamn för resultatfilen. Om man vill kan man också spara"
+" projekt kompatibelt med Hugin. Klicka på knappen **Slutför** så ser du"
+" resultatet i samma **album** som dina originalbilder."
 
 #: ../../post_processing/pano_creator.rst:82
 msgid ""
 "The 7x24Mpx images (59 Mb) used as example in this section of this manual "
 "give one single post-processed panoramic JPEG file of 82 Mpx (23 Mb)."
 msgstr ""
+"Bilderna med 7 x 24 megapixel (59 MB) använda som ett exempel i det här"
+" avsnittet av handboken ger en enda efterbehandlad JPEG-fil med panorama på"
+" 82 megapixel (23 MB)."
 
 #: ../../post_processing/pano_creator.rst:88
 msgid "The Assembled Panoramic JPEG Files Displayed in digiKam"
-msgstr ""
+msgstr "De sammanställda JPEG-filerna med panorama visade i digiKam"
+
+
