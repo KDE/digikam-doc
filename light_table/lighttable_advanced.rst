@@ -85,7 +85,7 @@ To manage faces information, the options below are available:
 
     The digiKam Light Table Editing A Face Tag From The Preview Canvas
 
-The toolbar on top left corner of preview canvas provide also the same options to manage faces. For more details about the manual face tagging, please consult :ref:`the relevant section <manual_face_tagging>` of this manual.
+The toolbar on top left corner of preview canvas provide also the same options to manage faces. For more details about the manual face tagging, please consult :ref:`the relevant section <face_tagging>` of this manual.
 
 Assigning Rate Labels and Tags
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
