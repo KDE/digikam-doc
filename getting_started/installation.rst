@@ -28,11 +28,11 @@ Minimum System Requirements
 
 - **Operating System**: 64-bit Windows 10 or newer, Apple macOS 64-bit based on Intel or Apple Silicon (M1 or later), 64-bit Linux. See details below.
 
-- **CPU**: x86 Intel, AMD, or Arm; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for deep-learning capabilities such as face detection and image quality sorting. See details below.
+- **CPU**: x86 Intel, AMD, or Arm; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for deep-learning capabilities such as face detection, image quality sorting, and auto-tags. See details below.
 
 - **GPU**: OpenGL 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible DirectX 9 or 11 drivers.
 
-- **RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for deep-learning capabilities such as face detection and image quality sorting. See details below.
+- **RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for deep-learning capabilities such as face management, image quality sorting, and auto-tags. See details below.
 
 .. note::
 
@@ -50,7 +50,7 @@ Minimum System Requirements
 
     If your screen provides HDPI support, check options :ref:`Use high DPI scaling from the screen factor <system_settings>` and :ref:`Application font <appearance_settings>`.
 
-- **Storage**: SSDs are the best choice for robust and speedy hosting of the digiKam database and collection.
+- **Storage**: NVMe and SSD are the best choice for robust and speedy hosting of the digiKam database and collection.
 
 .. _linux_requirements:
 
@@ -59,7 +59,7 @@ digiKam on Linux
 
 **digiKam** can be installed on non-KDE Desktops without any issues.
 
-**AppImage:** Minimum Ubuntu 18.04 has no such minimal requirements.
+**AppImage:** Minimum Ubuntu 22.04 has no such minimal requirements.
 
 `AppImage <https://en.wikipedia.org/wiki/AppImage>`_ is a bundle hosting all the necessary dependencies to run digiKam. Nothing else is installed on your system.
 Turn on the **executable** property of the AppImage file and run it. That's all...
@@ -79,7 +79,7 @@ Turn on the **executable** property of the AppImage file and run it. That's all.
 
     .. code-block:: bash
 
-        ./digiKam-X.Y.Z-x86-64.appimage showfoto
+        ./digiKam-X.Y.Z-Qt6-x86-64.appimage showfoto
 
 .. note::
 
@@ -176,7 +176,7 @@ If you want to use digiKam with domain users based on Windows Active Directory a
 
    %LocalAppData%\\digikam_systemrc
 
-   %LocalAppData%\\kxmlgui5\\digikam\digikamui.rc
+   %LocalAppData%\\kxmlgui5\\digikam\\digikamui.rc
 
 Similar requirements also exist for the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>`:
 
@@ -190,7 +190,7 @@ Similar requirements also exist for the :ref:`Showfoto stand Alone Image Editor 
 
    %LocalAppData%\\showfoto_systemrc
 
-   %LocalAppData%\\kxmlgui5\\digikam\showfotoui.rc
+   %LocalAppData%\\kxmlgui5\\digikam\\showfotoui.rc
 
 Also make sure no GPO is blocking the access to these folders.
 
