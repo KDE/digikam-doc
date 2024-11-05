@@ -14,7 +14,7 @@ digiKam Manual
 
 Welcome to the manual for `digiKam <https://www.digikam.org>`_, the free and open source photo management program.
 
-The current digiKam version you get `here <https://www.digikam.org/download/>`_.
+The can download the current version of digiKam `here <https://www.digikam.org/download/>`_.
 
 You can download this manual as an `EPUB <https://docs.digikam.org/en/epub/DigikamManual.epub>`_.
 
@@ -26,7 +26,7 @@ Getting Started
     :alt:
     :target: getting_started.html
 
-    Do Your First Steps in digiKam Photo Management Program
+    Your First Steps in the digiKam Photo Management Program
 
 .. container:: toctile
 
@@ -140,7 +140,7 @@ Right Sidebar
     :alt:
     :target: right_sidebar.html
 
-    Using the digiKam Right Sidebar to Play with Item Properties
+    Using the digiKam Right Sidebar to View Item Properties
 
 .. container:: toctile
 
@@ -274,7 +274,7 @@ Import Tools
     :alt:
     :target: import_tools.html
 
-    How to Import New Items in Your Collections With digiKam
+    How to Import New Items into Your digiKam Collections
 
 .. container:: toctile
 
@@ -320,7 +320,7 @@ Digital Asset Management
     :alt:
     :target: asset_management.html
 
-    Learn The Basis to Handle Safety Large Digital Photography Collections In Time
+    Learn to Safely Handle Large Digital Photography Collections
 
 .. container:: toctile
 
@@ -446,7 +446,7 @@ Setup Application
     :alt:
     :target: setup_application.html
 
-    Using the digiKam Configuration Panel to Customize Application
+    Using the Configuration Panel to Customize digiKam
 
 .. container:: toctile
 
@@ -582,7 +582,7 @@ Maintenance Tools
     :alt:
     :target: maintenance_tools.html
 
-    Maintaining and Optimize Data From Your Collections
+    Maintaining and Optimizing Data For Your Collections
 
 .. container:: toctile
 
@@ -860,7 +860,7 @@ Menu Descriptions
     :alt:
     :target: menu_descriptions.html
 
-    Learn Details About All digiKam Menus
+    Learn About All digiKam Menus
 
 .. container:: toctile
 
@@ -902,7 +902,7 @@ Credits and License
     :alt:
     :target: credits_license.html
 
-    Copyrights and Notices About This Document
+    Copyrights and Notices for This Document
 
 .. container:: toctile
 
@@ -924,7 +924,7 @@ Get Involved
     :alt:
     :target: get_involved.html
 
-    Contribute to digiKam project
+    Contribute to the digiKam project
 
 .. container:: toctile
 
