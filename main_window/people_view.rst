@@ -15,7 +15,7 @@ People View
 
 If you’re not just photographing machines or stars, Face Management could be a useful feature for you (even machines might have a human operator). In digiKam, this feature involves two main tasks: **Face Detection** and **Face Recognition**.
 
-The face management workflow helps you identify and recognize people in your photos by using deep-learning neural networks. **Face Detection** identifies faces in your images, which is a necessary step before recognition. **Face Recognition** then automatically identifies people in your photos, but it requires initial training by labeling a few detected faces with the corresponding names.
+The face management workflow helps you identify and recognize people in your photos by using deep-learning neural networks. **Face Detection** identifies whose face appears in your images, which is a necessary step before recognition. **Face Recognition** then automatically identifies people in your photos, but it requires initial training by labeling a few detected faces with the corresponding names.
 
 .. important::
 
@@ -282,7 +282,7 @@ Face recognition in digiKam is cumulative. More faces confirmed to tag name will
     * Example 1: A picture of a face from the front will match with similar faces turned slightly to the side.  Faces turned slightly to the side will match with similar faces turned mostly to the side. Faces turned mostly to the side will match with similar faces in full profile.
     * Example 2: A picture of a child will match with similar faces when the child is about the same age, and when the child is a year or two younger and older.  Faces of the child when they are a few years younger or older will match with similar faces when they are even younger or older.
 
-The accuracy of face recognition is very high once you have built and trained your libary.
+The accuracy of face recognition is very high once you have built and trained your library.
 
 .. important::
     Carefully review face name suggestions before confirming them. A single incorrect confirmation can lead to numerous inaccurate suggestions from the face recognition system.
