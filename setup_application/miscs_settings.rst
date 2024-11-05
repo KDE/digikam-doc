@@ -50,6 +50,8 @@ The editorial changes done through the right sidebar can be quietly applied by d
 
 The option **Show only face tags for assigning names in people sidebar** will restrict people tree-view contents to face tags available when you assign a name to an **Unconfirmed** face. If you want to learn more details about face management, take a look to :ref:`this section of the manual <people_view>`.
 
+The option **Initially select the first item in the album** will force to highlight the top left icon-view thumbnail when a new album is selected.
+
 The option **Expand current tree item with a single mouse click** allows to customize how the mouse button will be used to expand a nested album branch.
 
 With the **Scroll current item to center of thumbbar** setting, you can force thumbbar to center current selected item with mouse pointer on the center of visible area.
