@@ -10,9 +10,9 @@
 
 .. _supported_materials:
 
-###################
-Supported Materials
-###################
+###########################
+Supported Files and Devices
+###########################
 .. figure:: images/index_supported_materials.webp
     :alt:
 
@@ -25,4 +25,4 @@ This section explain the file formats and devices supported in digiKam.
 
    supported_materials/image_formats.rst
    supported_materials/movie_formats.rst
-   supported_materials/camera_devices.rst 
+   supported_materials/camera_devices.rst
