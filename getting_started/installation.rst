@@ -57,9 +57,10 @@ Minimum System Requirements
 digiKam on Linux
 ----------------
 
-**digiKam** can be installed on non-KDE Desktops without any issues.
+**digiKam** can be installed on non-KDE Desktops without any issues. The application is offered in the form of 2 binaries:
 
-**AppImage:** Minimum Ubuntu 22.04 has no such minimal requirements.
+    - Qt6 as main version based on last Qt framework. The minimum Ubuntu 22.04 has no such minimal requirements.
+    - Qt5 as prior version based on older Qt framework. The minimum Ubuntu 20.04 has no such minimal requirements.
 
 `AppImage <https://en.wikipedia.org/wiki/AppImage>`_ is a bundle hosting all the necessary dependencies to run digiKam. Nothing else is installed on your system.
 Turn on the **executable** property of the AppImage file and run it. That's all...
@@ -92,6 +93,11 @@ Using on a Standard Desktop
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **digiKam** runs only on 64-bit versions of Windows 10 and newer. We cannot guarantee that digiKam runs on server or embedded versions of Windows.
+
+The application is offered in the form of 2 installers:
+
+    - Qt6 as main version based on last Qt framework.
+    - Qt5 as prior version based on older Qt framework.
 
 digiKam is available as a non-signed **installable** (Setup Program) version and as a **standalone** (Archive) version.
 
@@ -202,18 +208,18 @@ digiKam on macOS
 The non-Signed Package
 ~~~~~~~~~~~~~~~~~~~~~~
 
-**digiKam** runs with on Apple-silicon based Macs and also on legacy Intel-based Macs 64-bit. Minimum system requirements depend on the version of digiKam being installed:
+**digiKam** runs with on Apple-silicon based Macs (Qt6) and also on legacy Intel-based Macs 64-bit (Qt5). Minimum system requirements depend on the version of digiKam being installed:
 
-    =============== ===================================================================================================
-    digiKam version Supported macOS Release
-    =============== ===================================================================================================
-    >= 8.5.0         macOS 11.3  Silicon (`BigSur <https://en.wikipedia.org/wiki/MacOS_Big_Sur>`_) or newer
-    >= 7.10.0        macOS 10.15 Intel   (`Catalina <https://en.wikipedia.org/wiki/MacOS_Catalina>`_) or newer
-    >= 7.0.0         macOS 10.13 Intel   (`High Sierra <https://en.wikipedia.org/wiki/MacOS_High_Sierra>`_) or newer
-    >= 6.4.0         macOS 10.12 Intel   (`Sierra <https://en.wikipedia.org/wiki/MacOS_Sierra>`_) or newer
-    >= 6.1.0         macOS 10.11 Intel   (`El Capitan <https://en.wikipedia.org/wiki/OS_X_El_Capitan>`_) or newer
-    >= 6.0.0         macOS 10.8  Intel   (`Mountain Lion <https://en.wikipedia.org/wiki/OS_X_Mountain_Lion>`_) or newer
-    =============== ===================================================================================================
+    =============== =========== ============================================================================================================
+    digiKam version Qt version  Supported macOS Release
+    =============== =========== ============================================================================================================
+    >= 8.5.0        Qt6 and Qt5 macOS 11.3  Silicon and Intel (`BigSur <https://en.wikipedia.org/wiki/MacOS_Big_Sur>`_) or newer
+    >= 7.10.0       Qt5 only    macOS 10.15 Intel             (`Catalina <https://en.wikipedia.org/wiki/MacOS_Catalina>`_) or newer
+    >= 7.0.0        Qt5 only    macOS 10.13 Intel             (`High Sierra <https://en.wikipedia.org/wiki/MacOS_High_Sierra>`_) or newer
+    >= 6.4.0        Qt5 only    macOS 10.12 Intel             (`Sierra <https://en.wikipedia.org/wiki/MacOS_Sierra>`_) or newer
+    >= 6.1.0        Qt5 only    macOS 10.11 Intel             (`El Capitan <https://en.wikipedia.org/wiki/OS_X_El_Capitan>`_) or newer
+    >= 6.0.0        Qt5 only    macOS 10.8  Intel             (`Mountain Lion <https://en.wikipedia.org/wiki/OS_X_Mountain_Lion>`_) or newer
+    =============== =========== ============================================================================================================
 
 .. note::
 
