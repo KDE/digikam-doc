@@ -111,7 +111,7 @@ The option **Preview image is converted to 8 bits for a faster viewing** must be
 
 The option **Preview image is always scaled to fit to window** will enlarge the image to always fit the free space available on the canvas. More precisely, fit to window want means that it would scale larger images smaller to fit, as well as scale smaller images larger to fit. For small image, the enlargement can introduce artifacts. If you don't like to see small images enlarged, leave this option off.
 
-The option **Preview image use Anti-aliasing scale up** will blur details in image when you zoom-in at an hight level. If it's disabled, this allows to show the pixel artifacts at the same level.
+The option **Preview image use Anti-aliasing scale up** will blur details in image when you zoom-in at a higher level. If it's disabled, this allows to show the pixel artifacts at the same level.
 
 The option **Show icons and text over preview** will show elements for rotation, face tags, full screen mode, etc. in the top left corner of the image preview and a text indicating which data the preview is showing in the top right corner.
 
