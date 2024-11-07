@@ -101,6 +101,12 @@ Preview Settings
 
 Instead of opening the image in the editor, the digiKam preview mode :kbd:`F3` will show the image within the main window in the Image Area. The advantage of the preview is that it is faster than opening the image editor and that the icons of the other images remain visible so that you are able to review the list of current images quickly. Depending on your computer features, you can customize the best way to load images into the preview. Raw files can be processed differently, as this kind of container can require long computation.
 
+.. figure:: images/setup_album_preview.webp
+    :alt:
+    :align: center
+
+    The digiKam Preview Configuration Page
+
 The option **Preview shows embedded view if available** will try to open a small version of the photograph embedded in the file. It will be found in all RAW files and can be found in all files that support IPTC or XMP like PNG, JPEG, TIFF, JPEG2000, PGF. If an embedded preview cannot be found some image decoders (JPEG, JPEG2000, and PGF, WebP) are able to create a reduced version of the photograph by themselves which is still faster than using the whole image. Depending on the size of the image, the size of the embedded preview and the size available for the preview on your screen the effect of this option can be visible or not.
 
 The option **Preview shows the full image** will always use the full image data for the preview regardless of whether there is a reduced version embedded in the file or not. This can result in a better quality of the preview but is usually slower.
@@ -114,12 +120,6 @@ The option **Preview image is always scaled to fit to window** will enlarge the 
 The option **Preview image use Anti-aliasing scale up** will blur details in image when you zoom-in at a higher level. If it's disabled, this allows to show the pixel artifacts at the same level.
 
 The option **Show icons and text over preview** will show elements for rotation, face tags, full screen mode, etc. in the top left corner of the image preview and a text indicating which data the preview is showing in the top right corner.
-
-.. figure:: images/setup_album_preview.webp
-    :alt:
-    :align: center
-
-    The digiKam Preview Configuration Page
 
 Full-Screen Settings
 --------------------
