@@ -298,4 +298,4 @@ This section allows to tune special low level configurations used by application
 
 - **Download Required Binary Data**: with this button you can load the deep-learning model files used with the faces management, image quality sorting, and auto-tags features. Only uses it only if you by-pass this stage at application first-run.
 
-- **Network Proxy Server Settings**: these option group the `proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for your local intranet. Leave empty if there is no proxy.
+- **Network Proxy Server Settings**: these option group the `proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for your local intranet. Leave empty if no proxy is required to access to the Internet from your local network.
