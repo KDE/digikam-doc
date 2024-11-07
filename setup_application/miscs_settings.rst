@@ -283,10 +283,10 @@ This section allows to tune special low level configurations used by application
 
 - **Decoding backend to render video**: this option allows to choice the backend used to render video media with the Qt6 version of application. Supported backends are:
 
-    - **FFmpeg**: the default backend available on all plateforms.
-    - **GStreamer**: the alternative backend available under Linux.
-    - **WMF**: Windows Management Framework is the alternative backend available under Windows.
-    - **AVFoundation**: the alternative backend available under macOS.
+    - **FFmpeg**: the default and recommended backend available on all plateforms. `FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all necessary codecs to play media.
+    - **GStreamer**: the alternative backend available under Linux. `GStreamer <https://en.wikipedia.org/wiki/GStreamer>`_ can requires 3rd-party codecs installation on the system to works properly.
+    - **WMF**: Windows Media Foundation is the alternative backend available under Windows. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ can requires 3rd-party codecs installation on the system to works properly.
+    - **AVFoundation**: the alternative backend available under macOS. `AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can requires 3rd-party codecs installation on the system to works properly.
 
 - **Enable internal debug logging**: this option will turn on the debug traces on the console used to investigate dysfunctions. Under Linux and macOS, just start the application from a console to show the messages. Under Windows, you needs an extra Microsoft application named `DebugView <https://learn.microsoft.com/sysinternals/downloads/debugview>`_ to display the messages. The default settings from DebugView is enough to capture the traces from the application.
 
