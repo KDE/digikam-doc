@@ -271,22 +271,22 @@ This section allows to tune special low level configurations used by application
 
     The digiKam System Configuration Page
 
-- **Use high DPI scaling from the screen factor**: this option application will scale coordinates in device independent manner according to display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and are therefore theoretically just as large as the graphical interface elements of the system. This option is only available with the Qt5 version of application.
+- **Use high DPI scaling from the screen factor**: this option application will scale coordinates in device independent manner according to display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and are therefore theoretically just as large as the graphical interface elements of the system. This option is only available with the **Qt5 version** of application.
 
-- **Use pixmaps with high DPI resolution**: this option, pixmaps sizes used internally by application will have a device-independent layout geometry. It activates high-resolution icons, otherwise the elements in digiKam would look very blurry under high resolutions. Also, it's recommended to use this option in multi-screen context when resolutions are not the same. This option is only available with the Qt5 version of application.
+- **Use pixmaps with high DPI resolution**: this option, pixmaps sizes used internally by application will have a device-independent layout geometry. It activates high-resolution icons, otherwise the elements in digiKam would look very blurry under high resolutions. Also, it's recommended to use this option in multi-screen context when resolutions are not the same. This option is only available with the **Qt5 version** of application.
 
 - **Use the software OpenGL rendering**: this option will disable the GPU hardware accelerations and switch to a software-emulation for all OpenGL usages.
 
 - **Use the OpenCL hardware acceleration**: this option will enable the GPU accelerations with the faces management, image quality sorting, and auto-tags features. This option affect the `OpenCV <https://opencv.org/>`_ engine used in background for the intensive computation on images. To see all details about the OpenCV hardware support, go to :menuselection:`Help --> Components Information` menu entry, and :ref:`OpenCV section from the dialog <help_componentsinfo>`.
 
-- **Fix AMD-GPU video decoding issue**: this option is only available under Windows and must be used only with AMD hardware GPU devices to prevent video media decoding dysfunctions.
+- **Fix AMD-GPU video decoding issue**: this option is only available **under Windows** and must be used only with AMD hardware GPU devices to prevent video media decoding dysfunctions.
 
 - **Decoding backend to render video**: this option allows to choice the backend used to render video media with the Qt6 version of application. Supported backends are:
 
     - **FFmpeg**: the default and recommended backend available on all plateforms. `FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all necessary codecs to play media.
-    - **GStreamer**: the alternative backend available under Linux. `GStreamer <https://en.wikipedia.org/wiki/GStreamer>`_ can requires 3rd-party codecs installation on the system to works properly.
-    - **WMF**: Windows Media Foundation is the alternative backend available under Windows. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ can requires 3rd-party codecs installation on the system to works properly.
-    - **AVFoundation**: the alternative backend available under macOS. `AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can requires 3rd-party codecs installation on the system to works properly.
+    - **GStreamer**: the alternative backend available **under Linux**. `GStreamer <https://en.wikipedia.org/wiki/GStreamer>`_ can requires 3rd-party codecs installation on the system to works properly.
+    - **WMF**: Windows Media Foundation is the alternative backend available **under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ can requires 3rd-party codecs installation on the system to works properly.
+    - **AVFoundation**: the alternative backend available **under macOS**. `AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can requires 3rd-party codecs installation on the system to works properly.
 
 - **Enable internal debug logging**: this option will turn on the debug traces on the console used to investigate dysfunctions. Under Linux and macOS, just start the application from a console to show the messages. Under Windows, you needs an extra Microsoft application named `DebugView <https://learn.microsoft.com/sysinternals/downloads/debugview>`_ to display the messages. The default settings from DebugView is enough to capture the traces from the application.
 
