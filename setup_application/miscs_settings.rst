@@ -296,7 +296,7 @@ This section allows to tune special low level configurations used by application
 
     digiKam Running Under Windows With DebugView
 
-- **Download Required Binary Data**: with this button you can load the deep-learning model files used with the faces management, image quality sorting, and auto-tags features. Only uses it only if you by-pass this stage at application first-run.
+- **Download Required Binary Data**: with this button you can load the deep-learning model files used with the faces management, image quality sorting, and auto-tags features. Only use it if you bypassed this stage at application first-run.
 
 - **Network Proxy Server Settings**: this group the options to setup the `proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for your local network. Leave empty if no proxy is required to access to the Internet. Available Proxy options are listed below:
 
