@@ -303,6 +303,6 @@ This section allows to tune special low level configurations used by application
     - **Proxy**: the address of the Proxy server on the network.
     - **Port**: the Proxy server port on the network.
     - **Proxy type**: the Proxy type avaialble on the network. Two protocols are supported: **Http** or **Socks5**.
-    - **Requires Authentification**: turn on this option if the connexion to the Proxy server needs an **Username** and a **Password**.
+    - **Requires Authentification**: turn on this option if the connection to the Proxy server needs an **Username** and a **Password**.
     - **Username**: the name to use to be logged on the Proxy server over the network.
     - **Password**: the password to use to be logged on the Proxy server over the network.
