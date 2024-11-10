@@ -283,7 +283,7 @@ This section allows to tune special low level configurations used by application
 
 - **Decoding backend to render video**: this option allows to choose the backend used to render video media with the **Qt6 version** of application. Supported backends are:
 
-    - **FFmpeg**: the default and recommended backend available on all plateforms. `FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all necessary codecs to play media.
+    - **FFmpeg**: the default and recommended backend available on all platforms. `FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all necessary codecs to play media.
     - **GStreamer**: the alternative backend available **under Linux**. `GStreamer <https://en.wikipedia.org/wiki/GStreamer>`_ can requires 3rd-party codecs installation on the system to works properly.
     - **WMF**: Windows Media Foundation is the alternative backend available **under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ can requires 3rd-party codecs installation on the system to works properly.
     - **AVFoundation**: the alternative backend available **under macOS**. `AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can requires 3rd-party codecs installation on the system to works properly.
