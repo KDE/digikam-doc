@@ -315,7 +315,7 @@ The **Settings** tab lets you fine-tune the results from detection and recogniti
 
 .. note::
 
-   Beginning with didiKam 8.5.0, YuNet is the recommended model for face detection, and SFace is recommended for face recognition.
+   Beginning with digiKam 8.5.0, YuNet is the recommended model for face detection, and SFace is recommended for face recognition.
 
 Face Detection Settings
 ^^^^^^^^^^^^^^^^^^^^^^^
