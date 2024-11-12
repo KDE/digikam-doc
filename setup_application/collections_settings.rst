@@ -89,7 +89,7 @@ Later, other extra digiKam clients would also be conceivable if the NAS has a di
 
 .. warning::
 
-    digiKam does not support virtual placeholder folders as OneDrive or GoogleDrive within the image collection specified in setup.
+    digiKam does not support virtual placeholder folders as OneDrive or GoogleDrive within the image collection specified in setup. The main problem with the cloud drives appears when a change is made. A synchronization is started and digiKam do not have access to the files while the operation is not completed. Depending of the network bandwith the time latency can take age.
 
 .. _ignored_directories:
 
