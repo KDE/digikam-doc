@@ -1,26 +1,27 @@
 # Copyright (C) licensed under the  <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License SA 4.0</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023.
+# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-03 01:35+0000\n"
-"PO-Revision-Date: 2023-10-31 09:14+0200\n"
+"POT-Creation-Date: 2024-11-06 01:45+0000\n"
+"PO-Revision-Date: 2024-11-06 20:30+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
-"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #: ../../supported_materials/camera_devices.rst:1
-msgid "Camera Devices Supported by digiKam"
-msgstr "Пристрої фотоапаратів, підтримку яких передбачено у digiKam"
+msgid "Camera and Mass Storage Devices Supported by digiKam"
+msgstr ""
+"Пристрої фотоапаратів та сховищ даних, підтримку яких передбачено у digiKam"
 
 #: ../../supported_materials/camera_devices.rst:1
 msgid ""
@@ -32,8 +33,8 @@ msgstr ""
 "зберігання"
 
 #: ../../supported_materials/camera_devices.rst:14
-msgid "Camera Devices"
-msgstr "Пристрої фотокамер"
+msgid "Cameras and Mass Storage Devices"
+msgstr "Фотоапарати і пристрої для зберігання даних"
 
 #: ../../supported_materials/camera_devices.rst:16
 msgid "Contents"
@@ -43,46 +44,13 @@ msgstr "Зміст"
 msgid "Introduction"
 msgstr "Вступ"
 
-#: ../../supported_materials/camera_devices.rst:23
+#: ../../supported_materials/camera_devices.rst:21
 msgid ""
-"RAW file support: if you are using RAW shooting mode with your camera, "
-"digiKam is probably well able to deal with it. RAW support depends on the "
-"libraw library. To find out if your particular camera is supported, bring up "
-"the list from the :menuselection:`Help --> Supported RAW Cameras` menu."
-msgstr ""
-"Підтримка файлів цифрових негативів: якщо ви створюєте знімки у режимі "
-"цифрового негатива, ймовірно, що digiKam зможе належним чином обробити "
-"отримані знімки. Підтримка вашого типу цифрових негативів залежить від "
-"бібліотеки libraw. Щоб перевірити, чи передбачено підтримку того чи іншого "
-"фотоапарата, скористайтеся списком підтримуваних RAW фотоапаратів. Відкрити "
-"цей список можна за допомогою пункту меню :menuselection:`Довідка --> "
-"Підтримувані фотоапарати з цифровими негативами`."
-
-#: ../../supported_materials/camera_devices.rst:25
-msgid ""
-"How to setup and work with RAW files is described in :ref:`RAW Decoding "
-"Settings <setup_raw>` and :ref:`RAW Workflow <rawprocessing_workflow>` "
-"sections."
-msgstr ""
-"Налаштування роботи з файлами цифрових негативів описано у розділах :ref:"
-"`Параметри декодування цифрових негативів <setup_raw>` та :ref:`Робота з "
-"цифровими негативами <rawprocessing_workflow>`."
-
-#: ../../supported_materials/camera_devices.rst:29
-msgid ""
-"Camera import is currently not supported on Windows Systems due limitations "
-"in the Gphoto2 library."
-msgstr ""
-"У поточній версії для систем Windows не передбачено можливості імпортування "
-"з фотокамери через обмеження у бібліотеці Gphoto2."
-
-#: ../../supported_materials/camera_devices.rst:31
-msgid ""
-"An easy-to-use camera interface is provided that will connect to your "
-"digital camera and download photographs directly into digiKam Albums. More "
-"than `2500 digital cameras <http://www.gphoto.org/proj/libgphoto2/support."
-"php>`_ are supported by the gPhoto library. Of course, any media or card "
-"reader supported by your operating system will interface with digiKam."
+"An easy-to-use camera interface is provided that will download photographs "
+"directly from your digital camera into digiKam Albums. More than `2700 "
+"digital cameras <http://www.gphoto.org/proj/libgphoto2/support.php>`_ are "
+"supported by the gPhoto library. Of course, any media or card reader "
+"supported by your operating system will also interface with digiKam."
 msgstr ""
 "Передбачено простий у користуванні інтерфейс фотоапаратів за допомогою якого "
 "ви зможете з’єднати ваш цифровий фотоапарат з комп’ютером і отримати "
@@ -92,31 +60,66 @@ msgstr ""
 "ж, будь-який носій або інструмент читання даних, який підтримується вашою "
 "операційною системою, може обмінюватися даними з digiKam."
 
-#: ../../supported_materials/camera_devices.rst:33
+#: ../../supported_materials/camera_devices.rst:25
 msgid ""
-"Current digital cameras are characterized by the use of Compact Flash™ "
-"Memory cards and USB or FireWire (IEEE-1394 or i-link) for data "
-"transmission. The actual transfers to a host computer are commonly carried "
-"out using the USB Mass Storage device class (so that the camera appears as a "
-"disk drive) or using the Picture Transfer Protocol (PTP) and its "
-"derivatives. Older cameras may use the Serial Port (RS-232) connection."
+"Camera import is currently not supported on Windows Systems due limitations "
+"in the Gphoto2 library."
 msgstr ""
-"Характерною ознакою сучасного цифрового фотоапарата є використання карток "
-"портативної флеш-пам’яті та передавання даних за допомогою інтерфейсів USB "
-"або FireWire (IEEE-1394 або i-link). Передавання даних на комп’ютер, "
-"зазвичай, виконується за допомогою класу пристроїв накопичувач USB (отже, "
-"фотоапарат розпізнається системою як дисковий пристрій) або за допомогою "
-"протоколу передавання зображень (Picture Transfer Protocol або PTP) та "
-"похідних від нього протоколів. У застарілих фотоапаратах може "
-"використовуватися з’єднання за допомогою послідовного порту (RS-232)."
+"У поточній версії для систем Windows не передбачено можливості імпортування "
+"з фотокамери через обмеження у бібліотеці Gphoto2."
 
-#: ../../supported_materials/camera_devices.rst:36
+#: ../../supported_materials/camera_devices.rst:27
+msgid ""
+"digiKam fully supports RAW files, using the libraw library for reading and "
+"processing RAW image files. You can find out if your particular camera is "
+"supported by accessing the :menuselection:`Help --> Supported RAW Cameras` "
+"menu."
+msgstr ""
+"У digiKam передбачено повну підтримку файлів RAW з використанням бібліотеки "
+"libraw для читання і обробки файлів цифрових негативів RAW. Щоб перевірити, "
+"чи передбачено підтримку того чи іншого фотоапарата, скористайтеся списком "
+"підтримуваних RAW фотоапаратів. Відкрити цей список можна за допомогою "
+"пункту меню :menuselection:`Довідка --> Підтримувані фотоапарати з цифровими "
+"негативами`."
+
+#: ../../supported_materials/camera_devices.rst:29
+msgid ""
+"See the :ref:`RAW Decoding Settings <setup_raw>` section for information on "
+"setting up digiKam to work with RAW files. And see the :ref:`RAW Workflow "
+"<rawprocessing_workflow>` section for a description of how to work with RAW "
+"files in digiKam."
+msgstr ""
+"Див. розділ :ref:`Параметри декодування RAW <setup_raw>`, щоб дізнатися про "
+"налаштовування digiKam на роботу з файлами цифрових негативів, RAW. Також "
+"див. розділ :ref:`Процедура обробки цифрових негативів "
+"<rawprocessing_workflow>`, щоб ознайомитися із описом обробки файлів "
+"цифрових негативів у digiKam."
+
+#: ../../supported_materials/camera_devices.rst:31
+msgid ""
+"Most current digital cameras store data on Compact Flash™ Memory cards and "
+"use USB or FireWire (IEEE-1394 or i-link) connections for data transmission. "
+"The actual transfers to a host computer are commonly carried out using the "
+"USB Mass Storage device class (so that the camera appears as a disk drive) "
+"or using the Picture Transfer Protocol (PTP) and its derivatives. "
+"Alternatively, older cameras may use a Serial Port (RS-232) connection."
+msgstr ""
+"Характерною ознакою більшості сучасних цифрових фотоапаратів є використання "
+"карток портативної флеш-пам’яті та передавання даних за допомогою "
+"інтерфейсів USB або FireWire (IEEE-1394 або i-link). Передавання даних на "
+"комп’ютер, зазвичай, виконується за допомогою класу пристроїв накопичувач "
+"USB (отже, фотоапарат розпізнається системою як дисковий пристрій) або за "
+"допомогою протоколу передавання зображень (Picture Transfer Protocol або "
+"PTP) та похідних від нього протоколів. Крім того, у застарілих фотоапаратах "
+"може використовуватися з’єднання за допомогою послідовного порту (RS-232)."
+
+#: ../../supported_materials/camera_devices.rst:34
 msgid "Transfers using gPhoto: PTP and Serial Port"
 msgstr "Передачі за допомогою gPhoto: PTP і послідовний порт"
 
-#: ../../supported_materials/camera_devices.rst:38
+#: ../../supported_materials/camera_devices.rst:36
 msgid ""
-"digiKam employs the gPhoto program to communicate with digital still "
+"digiKam employs the gPhoto library to communicate with digital still "
 "cameras. Gphoto is a free, redistributable set of digital camera software "
 "applications which supports a growing number of cameras. Gphoto has support "
 "for the Picture Transfer Protocol, which is a widely supported protocol "
@@ -124,7 +127,7 @@ msgid ""
 "transfer of images from digital cameras to computers and other peripheral "
 "devices without the need of additional device drivers."
 msgstr ""
-"Для обміну даними з цифровим фотоапаратом digiKam використовує програму "
+"Для обміну даними з цифровим фотоапаратом digiKam використовує бібліотеку "
 "gPhoto. gPhoto є вільним, без обмежень щодо поширення набором програм для "
 "роботи з цифровими фотоапаратами, який забезпечує роботу з фотоапаратами. У "
 "gPhoto передбачено підтримку Picture Transfer Protocol, розповсюдженого "
@@ -133,14 +136,14 @@ msgstr ""
 "цифрових фотоапаратів на комп’ютери та інші периферійні пристрої без потреби "
 "у використанні додаткових драйверів пристроїв."
 
-#: ../../supported_materials/camera_devices.rst:40
+#: ../../supported_materials/camera_devices.rst:38
 msgid ""
-"Many old digital still cameras used Serial Port to communicate with host "
+"Many old digital still cameras used the Serial Port to communicate with host "
 "computers. Because photographs are big files and serial port transfers are "
-"slow, this connection is now obsolete. digiKam supports these cameras and "
-"performs image transfers using the gPhoto program. You can find a complete "
-"list of supported digital cameras at `this url <http://www.gphoto.org/proj/"
-"libgphoto2/support.php>`_."
+"slow, this connection is now obsolete. digiKam still supports these cameras "
+"and performs image transfers using the gPhoto program. You can find a "
+"complete list of supported digital cameras at `this url <http://www.gphoto."
+"org/proj/libgphoto2/support.php>`_."
 msgstr ""
 "Значна кількість застарілих цифрових фотоапаратів використовує для обміну "
 "даними з комп’ютером послідовний порт. Оскільки файли фотографій є досить "
@@ -151,10 +154,10 @@ msgstr ""
 "фотоапаратів можна за `цією адресою <http://www.gphoto.org/proj/libgphoto2/"
 "support.php>`_."
 
-#: ../../supported_materials/camera_devices.rst:44
+#: ../../supported_materials/camera_devices.rst:42
 msgid ""
-"Gphoto needs to be built with libexif to retrieve thumbnails to digiKam "
-"properly. Exif support is required for thumbnail retrieval on some "
+"Gphoto needs to be built with libexif to properly retrieve thumbnails for "
+"use in digiKam. Exif support is required for thumbnail retrieval on some "
 "libgphoto2 camera drivers. If Exif support is not set with gPhoto, you might "
 "not see thumbnails or the thumbnail extraction may be very slow."
 msgstr ""
@@ -164,19 +167,19 @@ msgstr ""
 "встановлено підтримки Exif, ймовірно, мініатюр ви не побачите, або "
 "видобування мініатюр буде дуже повільним."
 
-#: ../../supported_materials/camera_devices.rst:50
+#: ../../supported_materials/camera_devices.rst:48
 msgid "The digiKam Setup Dialog to Configure a gPhoto Camera Device"
 msgstr "Вікно digiKam для налаштовування пристрою фотоапарата gPhoto"
 
-#: ../../supported_materials/camera_devices.rst:53
+#: ../../supported_materials/camera_devices.rst:51
 msgid "Transfers using Mass Storage device"
 msgstr "Передачі за допомогою пристроїв надвеликого об’єму"
 
-#: ../../supported_materials/camera_devices.rst:55
+#: ../../supported_materials/camera_devices.rst:53
 msgid ""
-"For the devices that are not directly supported by gPhoto, there is support "
-"for the Mass Storage protocol, which is well supported under GNU/Linux®. "
-"This includes many digital cameras and Memory Card Readers. Mass Storage "
+"For devices that are not directly supported by gPhoto, there is support for "
+"the Mass Storage protocol, which is well supported under GNU/Linux®. This "
+"includes many digital cameras and Memory Card Readers. Mass Storage "
 "interfaces are:"
 msgstr ""
 "Для пристроїв, безпосередньої підтримки яких у gPhoto не передбачено, "
@@ -184,39 +187,40 @@ msgstr ""
 "працює у GNU/Linux®. За таким протоколом працюють багато цифрових "
 "фотоапаратів та зчитувачів карток пам'яті. Інтерфейсами зберігання даних є:"
 
-#: ../../supported_materials/camera_devices.rst:57
+#: ../../supported_materials/camera_devices.rst:55
 msgid ""
 "**USB Mass Storage**: a computer interface using communication protocols "
-"defined by the USB Implementers Forum that run on the Universal Serial Bus. "
+"defined by the USB Implementers Forum that runs on the Universal Serial Bus. "
 "This standard provides an interface to a variety of storage devices, "
-"including digital cameras."
+"including digital cameras. Almost all recent digital cameras support USB "
+"version 1 and eventually will support USB version 2."
 msgstr ""
 "**Сховище даних USB**: комп'ютерний інтерфейс, у якому використано протоколи "
 "обміну даними, які було визначено на форумі реалізації USB, і які працюють з "
 "використанням універсального послідовного каналу передавання даних (USB). "
 "Цей стандарт використано як інтерфейс у широкому діапазоні пристроїв для "
-"зберігання даних, зокрема у цифрових фотоапаратах."
+"зберігання даних, зокрема у цифрових фотоапаратах. Майже в усіх сучасних "
+"цифрових фотоапаратах передбачено підтримку USB версії 1, а найновіших — "
+"підтримку USB версії 2."
 
-#: ../../supported_materials/camera_devices.rst:59
+#: ../../supported_materials/camera_devices.rst:57
 msgid ""
 "**FireWire Mass Storage**: a computer interface using communication "
 "protocols developed primarily by Apple Computer in the 1990s. FireWire "
 "offers high-speed communications and isochronous real-time data services. "
 "Like USB Mass Storage, this standard provides an interface to a variety of "
-"storage devices, including digital still cameras. Almost all recent digital "
-"cameras support USB version 1 and eventually will support USB version 2; a "
-"very few support FireWire."
+"storage devices, including digital still cameras, although few cameras "
+"support FireWire."
 msgstr ""
 "**Сховище даних FireWire**: комп'ютерний інтерфейс, у якому використано "
 "протоколи обміну даними, які було розроблено в основному Apple Computer у "
 "1990-і роки. FireWire пропонує високошвидкісний обмін даними та ізохронні "
 "служби даних у режимі реального часу. Подібно до сховища даних USB, цей "
 "стандарт забезпечує роботу інтерфейсу до широкого діапазону пристрої "
-"зберігання даних, зокрема цифрових фотоапаратів. Майже в усіх сучасних "
-"цифрових фотоапаратах передбачено підтримку USB версії 1 та USB версії 2. "
-"Лише у деяких — підтримку FireWire."
+"зберігання даних, зокрема цифрових фотоапаратів, хоча для декількох "
+"фотоапаратів передбачено підтримку FireWire."
 
-#: ../../supported_materials/camera_devices.rst:61
+#: ../../supported_materials/camera_devices.rst:59
 msgid ""
 "To use a generic Mass Storage device with digiKam, select :menuselection:"
 "`Import --> Camera --> Add Camera Manually...`, add your device and set the "
@@ -227,10 +231,29 @@ msgstr ""
 "фотоапарат вручну...`, додайте ваш пристрій і встановіть належний шлях до "
 "точки монтування."
 
-#: ../../supported_materials/camera_devices.rst:63
+#: ../../supported_materials/camera_devices.rst:61
 msgid ""
-"For details see the chapter to configure digiKam, into :ref:`Camera section "
-"<camera_settings>`."
+"For details see the :ref:`Camera settings <camera_settings>` section of the "
+"Setup Application chapter."
 msgstr ""
-"Щоб дізнатися більше, ознайомтеся із главою щодо налаштовування digiKam, "
-"зокрема :ref:`розділом щодо фотоапаратів <camera_settings>`."
+"Щоб дізнатися більше, див. розділ :ref:`Параметри фотоапарата "
+"<camera_settings>` глави щодо налаштовування програми."
+
+#~ msgid "Camera Devices"
+#~ msgstr "Пристрої фотокамер"
+
+#~ msgid ""
+#~ "How to setup and work with RAW files is described in :ref:`RAW Decoding "
+#~ "Settings <setup_raw>` and :ref:`RAW Workflow <rawprocessing_workflow>` "
+#~ "sections."
+#~ msgstr ""
+#~ "Налаштування роботи з файлами цифрових негативів описано у розділах :ref:"
+#~ "`Параметри декодування цифрових негативів <setup_raw>` та :ref:`Робота з "
+#~ "цифровими негативами <rawprocessing_workflow>`."
+
+#~ msgid ""
+#~ "For details see the chapter to configure digiKam, into :ref:`Camera "
+#~ "section <camera_settings>`."
+#~ msgstr ""
+#~ "Щоб дізнатися більше, ознайомтеся із главою щодо налаштовування digiKam, "
+#~ "зокрема :ref:`розділом щодо фотоапаратів <camera_settings>`."

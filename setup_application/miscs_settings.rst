@@ -50,6 +50,8 @@ The editorial changes done through the right sidebar can be quietly applied by d
 
 The option **Show only face tags for assigning names in people sidebar** will restrict people tree-view contents to face tags available when you assign a name to an **Unconfirmed** face. If you want to learn more details about face management, take a look to :ref:`this section of the manual <people_view>`.
 
+The option **Initially select the first item in the album** will force to highlight the top left icon-view thumbnail when a new album is selected.
+
 The option **Expand current tree item with a single mouse click** allows to customize how the mouse button will be used to expand a nested album branch.
 
 With the **Scroll current item to center of thumbbar** setting, you can force thumbbar to center current selected item with mouse pointer on the center of visible area.
@@ -269,11 +271,22 @@ This section allows to tune special low level configurations used by application
 
     The digiKam System Configuration Page
 
-- **Use high DPI scaling from the screen factor**: with this option application will scale coordinates in device independent manner according to display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and are therefore theoretically just as large as the graphical interface elements of the system.
+- **Use high DPI scaling from the screen factor**: this option application will scale coordinates in device independent manner according to display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and are therefore theoretically just as large as the graphical interface elements of the system. This option is only available with the **Qt5 version** of application.
 
-- **Use pixmaps with high DPI resolution**: with this option, pixmaps sizes used internally by application will have a device-independent layout geometry. It activates high-resolution icons, otherwise the elements in digiKam would look very blurry under high resolutions. Also, it's recommended to use this option in multi-screen context when resolutions are not the same.
+- **Use pixmaps with high DPI resolution**: this option, pixmaps sizes used internally by application will have a device-independent layout geometry. It activates high-resolution icons, otherwise the elements in digiKam would look very blurry under high resolutions. Also, it's recommended to use this option in multi-screen context when resolutions are not the same. This option is only available with the **Qt5 version** of application.
 
-- **Disable hardware acceleration OpenCL**: this option will disable GPU accelerations, especially with faces management and image quality sorting. This option affect the `OpenCV <https://opencv.org/>`_ engine used in background for the intensive computation on images. To see the OpenCV configuration, go to :menuselection:`Help --> Components Information` menu entry, and :ref:`OpenCV section from the dialog <help_componentsinfo>`.
+- **Use the software OpenGL rendering**: this option will disable the GPU hardware accelerations and switch to a software-emulation for all OpenGL usages.
+
+- **Use the OpenCL hardware acceleration**: this option will enable the GPU accelerations with the faces management, image quality sorting, and auto-tags features. This option affect the `OpenCV <https://opencv.org/>`_ engine used in background for the intensive computation on images. To see all details about the OpenCV hardware support, go to :menuselection:`Help --> Components Information` menu entry, and :ref:`OpenCV section from the dialog <help_componentsinfo>`.
+
+- **Fix AMD-GPU video decoding issue**: this option is only available **under Windows** and must be used only with AMD hardware GPU devices to prevent video media decoding dysfunctions.
+
+- **Decoding backend to render video**: this option allows to choose the backend used to render video media with the **Qt6 version** of application. Supported backends are:
+
+    - **FFmpeg**: the default and recommended backend available on all platforms. `FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all necessary codecs to play media.
+    - **GStreamer**: the alternative backend available **under Linux**. `GStreamer <https://en.wikipedia.org/wiki/GStreamer>`_ can requires 3rd-party codecs installation on the system to works properly.
+    - **WMF**: Windows Media Foundation is the alternative backend available **under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ can requires 3rd-party codecs installation on the system to works properly.
+    - **AVFoundation**: the alternative backend available **under macOS**. `AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can requires 3rd-party codecs installation on the system to works properly.
 
 - **Enable internal debug logging**: this option will turn on the debug traces on the console used to investigate dysfunctions. Under Linux and macOS, just start the application from a console to show the messages. Under Windows, you needs an extra Microsoft application named `DebugView <https://learn.microsoft.com/sysinternals/downloads/debugview>`_ to display the messages. The default settings from DebugView is enough to capture the traces from the application.
 
@@ -283,4 +296,13 @@ This section allows to tune special low level configurations used by application
 
     digiKam Running Under Windows With DebugView
 
-- **Download Face Engine Data**: With this button you can load face engine deep-learning model files if you pass this stage at first-run.
+- **Download Required Binary Data**: with this button you can load the deep-learning model files used with the faces management, image quality sorting, and auto-tags features. Only use it if you bypassed this stage at application first-run.
+
+- **Network Proxy Server Settings**: this group the options to setup the `proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for your local network. Leave empty if no proxy is required to access to the Internet. Available Proxy options are listed below:
+
+    - **Proxy**: the address of the Proxy server on the network.
+    - **Port**: the Proxy server port on the network.
+    - **Proxy type**: the Proxy type available on the network. Two protocols are supported: **Http** or **Socks5**.
+    - **Requires Authentification**: turn on this option if the connection to the Proxy server needs an **Username** and a **Password**.
+    - **Username**: the name to use to be logged on the Proxy server over the network.
+    - **Password**: the password to use to be logged on the Proxy server over the network.

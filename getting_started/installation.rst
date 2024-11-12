@@ -50,16 +50,17 @@ Minimum System Requirements
 
     If your screen provides HDPI support, check options :ref:`Use high DPI scaling from the screen factor <system_settings>` and :ref:`Application font <appearance_settings>`.
 
-- **Storage**: SSDs are the best choice for robust and speedy hosting of the digiKam database and collection.
+- **Storage**: NVMe and SSD are the best choice for robust and speedy hosting of the digiKam database and collection.
 
 .. _linux_requirements:
 
 digiKam on Linux
 ----------------
 
-**digiKam** can be installed on non-KDE Desktops without any issues.
+**digiKam** can be installed on non-KDE Desktops without any issues. The application is offered in the form of 2 binaries:
 
-**AppImage:** Minimum Ubuntu 18.04 has no such minimal requirements.
+    - Qt6 as main version based on last Qt framework. The minimum Ubuntu 22.04 has no such minimal requirements.
+    - Qt5 as prior version based on older Qt framework. The minimum Ubuntu 20.04 has no such minimal requirements.
 
 `AppImage <https://en.wikipedia.org/wiki/AppImage>`_ is a bundle hosting all the necessary dependencies to run digiKam. Nothing else is installed on your system.
 Turn on the **executable** property of the AppImage file and run it. That's all...
@@ -79,7 +80,7 @@ Turn on the **executable** property of the AppImage file and run it. That's all.
 
     .. code-block:: bash
 
-        ./digiKam-X.Y.Z-x86-64.appimage showfoto
+        ./digiKam-X.Y.Z-Qt6-x86-64.appimage showfoto
 
 .. note::
 
@@ -89,9 +90,14 @@ digiKam on Windows
 -------------------
 
 Using on a Standard Desktop
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **digiKam** runs only on 64-bit versions of Windows 10 and newer. We cannot guarantee that digiKam runs on server or embedded versions of Windows.
+
+The application is offered in the form of 2 installers:
+
+    - Qt6 as main version based on last Qt framework.
+    - Qt5 as prior version based on older Qt framework.
 
 digiKam is available as a non-signed **installable** (Setup Program) version and as a **standalone** (Archive) version.
 
@@ -157,7 +163,7 @@ digiKam is available as a non-signed **installable** (Setup Program) version and
 
     - **Standalone** version: **Doesn't** need administrator rights and isn't installed or listed as a program. Is only accessible by the user who has downloaded the file.
 
-        - Allows a normal user to use digiKam without a full installatioon.
+        - Allows a normal user to use digiKam without a full installation.
 
         - You can also copy the digiKam folder onto any external drive and run it on a different computer without installing it. However, your personal settings and downloads within digiKam are limited to the computer you work on.
 
@@ -176,7 +182,7 @@ If you want to use digiKam with domain users based on Windows Active Directory a
 
    %LocalAppData%\\digikam_systemrc
 
-   %LocalAppData%\\kxmlgui5\\digikam\digikamui.rc
+   %LocalAppData%\\kxmlgui5\\digikam\\digikamui.rc
 
 Similar requirements also exist for the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>`:
 
@@ -190,7 +196,7 @@ Similar requirements also exist for the :ref:`Showfoto stand Alone Image Editor 
 
    %LocalAppData%\\showfoto_systemrc
 
-   %LocalAppData%\\kxmlgui5\\digikam\showfotoui.rc
+   %LocalAppData%\\kxmlgui5\\digikam\\showfotoui.rc
 
 Also make sure no GPO is blocking the access to these folders.
 
@@ -202,17 +208,18 @@ digiKam on macOS
 The non-Signed Package
 ~~~~~~~~~~~~~~~~~~~~~~
 
-**digiKam** runs with Intel-based Macs on macOS 64-bit. On Apple-silicon based Macs, digiKam uses the `Apple Rosetta 2 <https://support.apple.com/en-us/HT211861>`_ translator. Minimum system requirements depend on the version of digiKam being installed:
+**digiKam** runs with on Apple-silicon based Macs (Qt6) and also on legacy Intel-based Macs 64-bit (Qt5). Minimum system requirements depend on the version of digiKam being installed:
 
-    =============== ===========================================================================================
-    digiKam version Supported macOS Release
-    =============== ===========================================================================================
-    >= 7.10.0        macOS 10.15 (`Catalina <https://en.wikipedia.org/wiki/MacOS_Catalina>`_) or newer
-    >= 7.0.0         macOS 10.13 (`High Sierra <https://en.wikipedia.org/wiki/MacOS_High_Sierra>`_) or newer
-    >= 6.4.0         macOS 10.12 (`Sierra <https://en.wikipedia.org/wiki/MacOS_Sierra>`_) or newer
-    >= 6.1.0         macOS 10.11 (`El Capitan <https://en.wikipedia.org/wiki/OS_X_El_Capitan>`_) or newer
-    >= 6.0.0         macOS 10.8 (`Mountain Lion <https://en.wikipedia.org/wiki/OS_X_Mountain_Lion>`_) or newer
-    =============== ===========================================================================================
+    =============== =========== ============================================================================================================
+    digiKam version Qt version  Supported macOS Release
+    =============== =========== ============================================================================================================
+    >= 8.5.0        Qt6 and Qt5 macOS 11.3  Silicon and Intel (`BigSur <https://en.wikipedia.org/wiki/MacOS_Big_Sur>`_) or newer
+    >= 7.10.0       Qt5 only    macOS 10.15 Intel             (`Catalina <https://en.wikipedia.org/wiki/MacOS_Catalina>`_) or newer
+    >= 7.0.0        Qt5 only    macOS 10.13 Intel             (`High Sierra <https://en.wikipedia.org/wiki/MacOS_High_Sierra>`_) or newer
+    >= 6.4.0        Qt5 only    macOS 10.12 Intel             (`Sierra <https://en.wikipedia.org/wiki/MacOS_Sierra>`_) or newer
+    >= 6.1.0        Qt5 only    macOS 10.11 Intel             (`El Capitan <https://en.wikipedia.org/wiki/OS_X_El_Capitan>`_) or newer
+    >= 6.0.0        Qt5 only    macOS 10.8  Intel             (`Mountain Lion <https://en.wikipedia.org/wiki/OS_X_Mountain_Lion>`_) or newer
+    =============== =========== ============================================================================================================
 
 .. note::
 
@@ -246,7 +253,7 @@ Once the installer is running, follow the instructions from the assistant to ins
     The digiKam macOS PKG is running and Ready to Install
 
 Application Permissions
-~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Once installed, digiKam will need to access some system resources to run properly. The system will ask for permissions when digiKam is run, depending on actions performed by user. See below for some examples of permissions that may need to be set in the macOS **Security and Privacy** policy configuration panel:
 

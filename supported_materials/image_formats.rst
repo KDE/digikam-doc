@@ -97,6 +97,10 @@ JXL
 ---
 
 `JPEG XL <https://en.wikipedia.org/wiki/JPEG_XL>`_ is a royalty-free raster-graphics file format that supports both lossy and lossless compression. It is designed to outperform existing raster formats and thus become their universal replacement.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 856ca099c18f0b59865dd4e66b8647c522c6e6b1
 JPEG XL is particularly optimised for responsive Web environments, so that content renders well on a wide range of devices. Moreover, it includes several features that help transition from the legacy JPEG format. JPEG XL was introduced at the end of 2020. JPEG XL support 16-bit color depth and metadata.
 
 .. note::

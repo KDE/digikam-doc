@@ -14,7 +14,8 @@ digiKam Manual
 
 Welcome to the manual for `digiKam <https://www.digikam.org>`_, the free and open source photo management program.
 
-The can download the current version of digiKam `here <https://www.digikam.org/download/>`_.
+
+You can download the current version of digiKam `here <https://www.digikam.org/download/>`_.
 
 You can download this manual as an `EPUB <https://docs.digikam.org/en/epub/DigikamManual.epub>`_.
 

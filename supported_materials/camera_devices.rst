@@ -22,13 +22,11 @@ An easy-to-use camera interface is provided that will download photographs direc
 
 .. note::
 
-     Camera import is currently not supported on Windows Systems due limitations in the Gphoto2 library.
+    Camera import is currently not supported on Windows Systems due limitations in the Gphoto2 library.
 
-.. note::
+    digiKam fully supports RAW files, using the libraw library for reading and processing RAW image files. You can find out if your particular camera is supported by accessing the :menuselection:`Help --> Supported RAW Cameras` menu.
 
-     digiKam fully supports RAW files, using the libraw library for reading and processing RAW image files. You can find out if your particular camera is supported by accessing the :menuselection:`Help --> Supported RAW Cameras` menu.
-
-     See the :ref:`RAW Decoding Settings <setup_raw>` section for information on setting up digiKam to work with RAW files. And see the :ref:`RAW Workflow <rawprocessing_workflow>` section for a description of how to work with RAW files in digiKam.
+    See the :ref:`RAW Decoding Settings <setup_raw>` section for information on setting up digiKam to work with RAW files. And see the :ref:`RAW Workflow <rawprocessing_workflow>` section for a description of how to work with RAW files in digiKam.
 
 Most current digital cameras store data on Compact Flash™ Memory cards and use USB or FireWire (IEEE-1394 or i-link) connections for data transmission. The actual transfers to a host computer are commonly carried out using the USB Mass Storage device class (so that the camera appears as a disk drive) or using the Picture Transfer Protocol (PTP) and its derivatives. Alternatively, older cameras may use a Serial Port (RS-232) connection.
 
@@ -54,7 +52,7 @@ Transfers using Mass Storage device
 
 For devices that are not directly supported by gPhoto, there is support for the Mass Storage protocol, which is well supported under GNU/Linux®. This includes many digital cameras and Memory Card Readers. Mass Storage interfaces are:
 
-    - **USB Mass Storage**: a computer interface using communication protocols defined by the USB Implementers Forum that runs on the Universal Serial Bus. This standard provides an interface to a variety of storage devices, including digital cameras.  Almost all recent digital cameras support USB version 1 and eventually will support USB version 2.
+    - **USB Mass Storage**: a computer interface using communication protocols defined by the USB Implementers Forum that runs on the Universal Serial Bus. This standard provides an interface to a variety of storage devices, including digital cameras. Almost all recent digital cameras support USB version 1 and eventually will support USB version 2.
 
     - **FireWire Mass Storage**: a computer interface using communication protocols developed primarily by Apple Computer in the 1990s. FireWire offers high-speed communications and isochronous real-time data services. Like USB Mass Storage, this standard provides an interface to a variety of storage devices, including digital still cameras, although few cameras support FireWire.
 

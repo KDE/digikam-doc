@@ -18,7 +18,7 @@ Captions View
 Overview
 ~~~~~~~~
 
-This sidebar tab serves to apply and edit image attributes like captions, rating, date and tags. The attributes are stored in the associated database, in the IPTC, XMP, and Exif data fields and become part of the image. All attributes are accessible in one sidebar view as shown in the screenshot below. During image reading the order of priority is ``a)`` database ``b)`` XMP/IPTC and ``c)`` Exif. So if there is a discrepancy between any of the three, this priority will take effect and a synchronization will take place. This sidebar has a first-previous-next-last arrow navigator field on top if shown in the main application.
+This sidebar tab serves to apply and edit image attributes like captions, rating, date and tags. The attributes are stored in the associated database, in the IPTC, XMP, and Exif data fields and become part of the image. All attributes are accessible in one sidebar view as shown in the screenshot below. During image reading the order of priority is ``a)`` database ``b)`` XMP/IPTC and ``c)`` Exif. So if there is a discrepancy between any of the three, this priority will take effect and a synchronization will take place.
 
 .. figure:: images/sidebar_captions.webp
     :alt:
@@ -61,7 +61,7 @@ In the Date and Time section, which reflects the time of taking the photograph, 
 Labels
 ~~~~~~
 
-The Rating section displays a 0...5 star rating scheme that can be used in searches and sort orders. It can be applied by a single mouse click to the 5 stars in the sidebar or with a keyboard shortcut :kbd:`Ctrl+0...5`. The rating from the sidebar is always applied to one image at a time. To rate a number of images, select them and pop-up the context menu (click with the right mouse button) to apply a common rating.
+The Rating section displays a 0...5 star rating scheme that can be used in searches and sort orders. It can be applied by a single mouse click to the 5 stars in the sidebar or with a keyboard shortcut :kbd:`Ctrl+0...5`. To rate a number of images, select them and pop-up the context menu (click with the right mouse button) to apply a common rating.
 
 The labels view allow to assign also the Color and the Pick tags that you can use in your workflow to classify items.
 

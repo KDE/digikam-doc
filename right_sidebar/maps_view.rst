@@ -41,4 +41,4 @@ The copy icon, on the next line, will copy, as text, coordinates to the clipboar
 
 For information about the different map services you can use the drop-down field under the line of buttons. Choose a service here and then click the **See more information on the Internet** button to the right.
 
-The displayed positioning data are actually stored in the image's Exif tags. That allows the location to be read by any other application that can understand Exif GPS data.
+The displayed positioning data are stored in the image's Exif tags if the option :menuselection:`Settings --> Configure digikam --> Behavior --> Geolocation information` is activated. That allows the location to be read by any other application that can understand Exif GPS data.
