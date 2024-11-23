@@ -42,7 +42,7 @@ For each type, the **Add Collection** button allows to append an entry in the li
 
     The digiKam Collections Configuration Page Appending a Root Album Folder
 
-To edit the properties of an entry, use the **Update button** on the right side of the path.
+To edit or update the properties of an entry, use the **Round Circle Button** on the right side of the path. digiKam will ask for the category and will update the UUID for this entry. Use this function when the local disk hosting the collection have been changed, or when the network collection has not been created properly or has been deleted.
 
 .. figure:: images/setup_collection_category.webp
     :alt:
@@ -50,7 +50,7 @@ To edit the properties of an entry, use the **Update button** on the right side 
 
     The digiKam Collections Configuration Page Editing Category of a Root Album Folder
 
-To remove an entry, use the **Red trash button** on right side. digiKam will ask to confirm this step before to process.
+To remove an entry, use the **Red Trash Button** on right side. digiKam will ask to confirm this step before to process.
 
 .. important::
 
