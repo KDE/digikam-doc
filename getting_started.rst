@@ -16,7 +16,7 @@ Getting Started
 .. figure:: images/index_getting_started.webp
     :alt:
 
-This section give an overview to start with digiKam.
+This section give an overview getting started with digiKam.
 
 .. toctree::
    :maxdepth: 2

@@ -1,6 +1,6 @@
 .. meta::
    :description: Camera and Mass Storage Devices Supported by digiKam
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, camera, gphoto, usb, mass, storage
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, camera, gPhoto, usb, mass, storage
 
 .. metadata-placeholder
 
@@ -33,13 +33,13 @@ Most current digital cameras store data on Compact Flash™ Memory cards and use
 Transfers using gPhoto: PTP and Serial Port
 --------------------------------------------
 
-digiKam employs the gPhoto library to communicate with digital still cameras. Gphoto is a free, redistributable set of digital camera software applications which supports a growing number of cameras. Gphoto has support for the Picture Transfer Protocol, which is a widely supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
+digiKam employs the gPhoto library to communicate with digital still cameras. gPhoto is a free, redistributable set of digital camera software applications which supports a growing number of cameras. gPhoto has support for the Picture Transfer Protocol, which is a widely supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
 
-Many old digital still cameras used the Serial Port to communicate with host computers. Because photographs are big files and serial port transfers are slow, this connection is now obsolete. digiKam still supports these cameras and performs image transfers using the gPhoto program. You can find a complete list of supported digital cameras at `this url <http://www.gphoto.org/proj/libgphoto2/support.php>`_.
+Many older digital still cameras used the Serial Port to communicate with host computers. Because photographs are big files and serial port transfers are slow, this connection is now obsolete. digiKam still supports these cameras and performs image transfers using the gPhoto program. You can find a complete list of supported digital cameras at `this url <http://www.gphoto.org/proj/libgphoto2/support.php>`_.
 
 .. note::
 
-    Gphoto needs to be built with libexif to properly retrieve thumbnails for use in digiKam. Exif support is required for thumbnail retrieval on some libgphoto2 camera drivers. If Exif support is not set with gPhoto, you might not see thumbnails or the thumbnail extraction may be very slow.
+    gPhoto needs to be built with libexif to properly retrieve thumbnails for use in digiKam. Exif support is required for thumbnail retrieval on some libgphoto2 camera drivers. If Exif support is not set with gPhoto, you might not see thumbnails or the thumbnail extraction may be very slow.
 
 .. figure:: images/setup_gphoto_camera.webp
     :alt:

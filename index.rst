@@ -14,7 +14,6 @@ digiKam Manual
 
 Welcome to the manual for `digiKam <https://www.digikam.org>`_, the free and open source photo management program.
 
-
 You can download the current version of digiKam `here <https://www.digikam.org/download/>`_.
 
 You can download this manual as an `EPUB <https://docs.digikam.org/en/epub/DigikamManual.epub>`_.
@@ -132,6 +131,60 @@ Main Window
    :hidden:
 
    main_window
+
+#############
+Left Sidebar
+#############
+.. figure:: images/index_left_sidebar.webp
+    :width: 300px
+    :alt:
+    :target: left_sidebar.html
+
+    Using the digiKam Left Sidebar to Display Views to Organize and Find Your Photos
+
+.. container:: toctile
+
+    .. container:: tile no-descr
+
+        :ref:`albums_view`
+
+    .. container:: tile no-descr
+
+        :ref:`tags_view`
+
+    .. container:: tile no-descr
+
+        :ref:`labels_view`
+
+    .. container:: tile no-descr
+
+        :ref:`dates_view`
+
+    .. container:: tile no-descr
+
+        :ref:`timeline_view`
+
+    .. container:: tile no-descr
+
+        :ref:`search_view`
+
+    .. container:: tile no-descr
+
+        :ref:`similarity_view`
+
+    .. container:: tile no-descr
+
+        :ref:`mapsearch_view`
+
+    .. container:: tile no-descr
+
+        :ref:`people_view`
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   left_sidebar
 
 #############
 Right Sidebar

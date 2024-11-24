@@ -47,6 +47,6 @@ You may select more than one label by :kbd:`Ctrl+left` click. The selected label
 
 .. note::
 
-    The **Pick Labels** properties can be assigned automatically using the deep-learning tool **Image Quality Sorter** by analysis the aesthetic score of items. See this :ref:`Maintenance Tool section <maintenance_quality>` for details.
+    The **Pick Labels** properties can be assigned automatically using the deep-learning tool **Image Quality Sorter** which works by analyzing the aesthetic score of items. See the :ref:`Maintenance Tool section <maintenance_quality>` for details.
 
 The **Rating** and **Color** Labels can be used to sort items from your collection during your asset management workflow. See :ref:`this section <rating_ranking>` for details.

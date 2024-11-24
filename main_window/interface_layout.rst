@@ -18,17 +18,31 @@ Interface Layout
 Areas and Bars
 --------------
 
-digiKam's main window has two areas in the center showing your photographs. One is the **Icon Area**, showing thumbnails of the content of the selected album or of a search result, and the other one the **Preview**, showing the selected image. Together let's call them the :ref:`Image Area <image_view>`. In the top left corner of the preview we have a few buttons for moving back and forth through the content of the album, for rotating the image, for showing or adding face tags and to switch to full screen mode. By clicking on the preview you can make it disappear and by clicking on the picture area of a thumbnail open it again.
+digiKam's main window has two areas in the center showing your photographs. One is the **Icon Area ③**, showing thumbnails of the content of the selected album or of a search result, and the other one the **Preview Area ④**, showing the selected image. Together let's call them the :ref:`Image Area <image_view>` ⑤. In the top left corner of the preview we have a few buttons ⑨ for moving back and forth through the content of the album, for rotating the image, for showing or adding face tags and to switch to full screen mode. By clicking on the preview you can make it disappear and by clicking on the picture area of a thumbnail open it again.
 
-.. figure:: images/mainwindow_icon_view.webp
+.. figure:: images/mainwindow_preview_with_numbers.webp
     :alt:
     :align: center
 
-    The digiKam Main Window Icon-View
+    The digiKam Main Window
 
-The Image Area in the center is surrounded by the menu bar and the :ref:`Main Toolbar <main_toolbar>` at the top, the :ref:`Status Bar <status_bar>` at the bottom and the Left and :ref:`Right Sidebar <right_sidebar>`. The Left Sidebar lets you switch between nine “Views”: Albums (shown here), Tags, Labels, Dates, Timeline, Search, Similarity, Map and People (Tags). The Right Sidebar can be used to show all information about your images and partly also to edit them. You can use all these views to organize and find your photographs. If you click on one of the buttons on the sidebars there will fold out another area, offering possibilities to select, to make inputs, e.g. for searches, to edit data and to show information.
 
-Don't worry if your main window looks quite different at the moment. You will soon learn how to switch the different areas on and off and at some point you might get a look very similar to the above screenshot.
+Interface Areas, Toolbars and Buttons in the Main Window::
+
+    ① Menu Bar
+    ② Main Toolbar
+    ③ Icon (Thumbnail) Area
+    ④ Preview Area
+    ⑤ Image Area = Icon + Preview Area
+    ⑥ Left Sidebar (with tabs)
+    ⑦ Right Sidebar (with tabs)
+    ⑧ Status Bar
+    ⑨ Buttons: Navigation, Rotation, Face Tags, Full Frame
+
+
+The Image Area in the center is surrounded by the menu bar ① and the :ref:`Main Toolbar <main_toolbar>` ② at the top, the :ref:`Status Bar <status_bar>` ⑧ at the bottom as well as the :ref:`Left Sidebar <left_sidebar>` ⑥ and :ref:`Right Sidebar <right_sidebar>` ⑦. The Left Sidebar lets you switch between nine “Views”: Albums (shown here), Tags, Labels, Dates, Timeline, Search, Similarity, Map and People. The Right Sidebar can be used to show information about your images, to apply filters to select images, and to select actions to be applied to selected images. You can use all these views to organize and find your photographs. You can collapse or expand the sidebar areas by clicking on the sidebar tabs.
+
+Don't worry if your main window looks different than the image above. You will soon learn how to switch the different areas on and off and at some point you might get a look very similar to the above screenshot.
 
 Drag & Drop of images works about everywhere: d&d an image into another branch of the album tree, across the horizontal album separation line, or to another application window. The only restriction is that you cannot d&d into tag, date or searches.
 
@@ -51,24 +65,24 @@ The status bar at the bottom shows:
 
     - Quick filters:
 
-        - Information how many filters are active.
+        - Information on how many filters are active.
 
         - A trash bin button to reset all active filters.
 
         - A funnel button to open the filter settings panel.
 
-    - A progress bar for batch processes, e.g. assigning tags or rebuild fingerprints.
+    - A progress bar for batch processes, such as assigning tags or rebuild fingerprints.
 
-    - A thumbnail and preview size slider with buttons for "Fit to Window" and "Zoom to 100%".
+    - A thumbnail and preview image size slider with buttons for "Fit to Window" and "Zoom to 100%".
 
-    - A size selection pop up list in % for the preview.
+    - A size selection pop up list measured in % for the preview image.
 
 .. _main_toolbar:
 
 Main Toolbar
 ------------
 
-The window top shows the Menu Bar and the Main Toolbar below.
+The Main Toolbar appears at the top of the window.
 
 .. figure:: images/mainwindow_toolbar.webp
     :alt:

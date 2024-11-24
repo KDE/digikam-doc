@@ -59,7 +59,7 @@ TIFF
 PNG
 ---
 
-`Portable Network Graphics <https://en.wikipedia.org/wiki/Portable_Network_Graphics>`_ is an image format that was developed in the 1990's as an patent-free replacement for the older GIF image file format. It is a lossless format like TIFF but is much more compact, saving disk space. Although your camera is unlikely to support PNG, some people like to convert their photographs to PNG as soon as they get them on their computer. Unlike JPEG, PNG images do not lose quality every time you re-encode them after modification. digiKam fully supports PNG images and the Batch Queue Manager can convert a batch of images from any supported format to PNG (and other formats) in one step.
+`Portable Network Graphics <https://en.wikipedia.org/wiki/Portable_Network_Graphics>`_ is an image format that was developed in the 1990's as a patent-free replacement for the older GIF image file format. It is a lossless format like TIFF but is much more compact, saving disk space. Although your camera is unlikely to support PNG, some people like to convert their photographs to PNG as soon as they get them on their computer. Unlike JPEG, PNG images do not lose quality every time you re-encode them after modification. digiKam fully supports PNG images and the Batch Queue Manager can convert a batch of images from any supported format to PNG (and other formats) in one step.
 
 PNG is designed to work well in on-line viewing applications, such as the World Wide Web, so it is fully streamable with a progressive display option. Also, PNG can store gamma and chromaticity data for improved color matching on heterogeneous platforms. PNG supports bit depths of 8 and 16 bits / color / pixel. It's the perfect file format to archive your photographs.
 
@@ -97,10 +97,7 @@ JXL
 ---
 
 `JPEG XL <https://en.wikipedia.org/wiki/JPEG_XL>`_ is a royalty-free raster-graphics file format that supports both lossy and lossless compression. It is designed to outperform existing raster formats and thus become their universal replacement.
-<<<<<<< HEAD
-=======
 
->>>>>>> 856ca099c18f0b59865dd4e66b8647c522c6e6b1
 JPEG XL is particularly optimised for responsive Web environments, so that content renders well on a wide range of devices. Moreover, it includes several features that help transition from the legacy JPEG format. JPEG XL was introduced at the end of 2020. JPEG XL support 16-bit color depth and metadata.
 
 .. note::

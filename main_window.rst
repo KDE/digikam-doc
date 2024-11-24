@@ -1,6 +1,6 @@
 .. meta::
    :description: Using the digiKam Main Window to Show Collection Contents
-   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, main window, search, tags, labels, maps, date, timeline, similarity, face, management
+   :keywords: digiKam, documentation, user manual, photo management, open source, free, help, learn, main window, management
 
 .. metadata-placeholder
 
@@ -25,12 +25,3 @@ This section explain how to use the digiKam main window.
 
    main_window/interface_layout.rst
    main_window/image_view.rst
-   main_window/albums_view.rst
-   main_window/tags_view.rst
-   main_window/labels_view.rst
-   main_window/dates_view.rst
-   main_window/timeline_view.rst
-   main_window/search_view.rst
-   main_window/similarity_view.rst
-   main_window/mapsearch_view.rst
-   main_window/people_view.rst

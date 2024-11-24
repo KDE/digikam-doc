@@ -26,9 +26,9 @@ You’ll find all previous digiKam versions in the `attic <https://download.kde.
 Minimum System Requirements
 ---------------------------
 
-- **Operating System**: 64-bit Windows 10 or newer, Apple macOS 64-bit based on Intel or Apple Silicon (M1-M4), 64-bit Linux. See details below.
+- **Operating System**: 64-bit Windows 10 or newer, Apple macOS 64-bit based on Intel or Apple Silicon (M1 or later), or 64-bit Linux. See details below.
 
-- **CPU**: x86 Intel or AMD; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for deep-learning capabilities such as face detection and image quality sorting. See details below.
+- **CPU**: x86 Intel, AMD, or Arm; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for deep-learning capabilities such as face detection, image quality sorting, and auto-tags. See details below.
 
 - **GPU**: OpenGL 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible DirectX 9 or 11 drivers.
 
@@ -161,7 +161,7 @@ digiKam is available as a non-signed **installable** (Setup Program) version and
 
             The Windows Dialog to Install Newer Version of digiKam
 
-    - **Standalone** version: **Doesn't** need administrator rights and isn't installed or listed as a program. Is only accessible by the user who has downloaded the file.
+    - **Standalone** version: **Doesn't** need administrator rights and isn't installed or listed as a program, but is only accessible by the user who has downloaded the file.
 
         - Allows a normal user to use digiKam without a full installation.
 
