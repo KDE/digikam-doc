@@ -18,7 +18,7 @@ Overview
 
 If you have lost a picture because you can't remember its name or where you filed it, you might want to perform a *Similarity* search on your collections.
 
-digiKam characterizes every image by a fingerprint (or signature), that is internally represented as a lengthy number. These fingerprints are computed in such a way that the less numerical difference there is between any two image fingerprints, the more the two images resemble each other. Comparison of these fingerprints thus make it possible to find similar images. This methodology is the core engine for three features n the Similarity View named find **Duplicates**, find similar **Image**, and find by **Sketch**.
+digiKam characterizes every image by a fingerprint (or signature), that is internally represented as a lengthy number. These fingerprints are computed in such a way that the less numerical difference there is between any two image fingerprints, the more the two images resemble each other. Comparison of these fingerprints thus make it possible to find similar images. This methodology is the core engine for three features in the Similarity View named find **Duplicates**, find similar **Image**, and find by **Sketch**.
 
 .. note::
 

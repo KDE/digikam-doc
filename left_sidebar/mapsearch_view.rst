@@ -39,7 +39,7 @@ Depending on the map's resolution, zooming in will provide you with more detail.
 
 In case you should get lost you can always reset the viewing angle and zoom level back to the point where we started off: Just press the Home button (or the Home button on your keyboard). To set the home location to the current position (center of the map) select the Bookmarks → Set Home Location menu item.
 
-The meaning of “GPS”, as well as the detailed descriptions of the functions and buttons that apply to all three geolocation parts, are described in the :ref:`Geolocation Editor <geolocation_editor>` chapter of this manual. This applies to the context menu on the map and the first line of buttons under the map except for the last three o the right, which are related to filtering and selecting images based on location.
+The meaning of “GPS”, as well as the detailed descriptions of the functions and buttons that apply to all three geolocation parts, are described in the :ref:`Geolocation Editor <geolocation_editor>` chapter of this manual. This applies to the context menu on the map and the first line of buttons under the map except for the last three on the right, which are related to filtering and selecting images based on location.
 
 Usually you will begin searching for images by defining a region on the map. From the **Search by area** buttons click the left one, the **Select images by drawing a rectangle** button. Then draw a selection rectangle by clicking with the left mouse button at the location on the map of the first corner, move the mouse to the location of the second corner, and click a second time. All images that have been geo-coded and that fall within the coordinates of that rectangle will be shown in the Image Area.
 
