@@ -16,7 +16,7 @@ Similarity View
 Overview
 ~~~~~~~~
 
-If you have lost a picture because you can't remember its name or where you filed it, you mights want to perform a *Similarity* search on your collections.
+If you have lost a picture because you can't remember its name or where you filed it, you might want to perform a *Similarity* search on your collections.
 
 digiKam characterizes every image by a fingerprint (or signature), that is internally represented as a lengthy number. These fingerprints are computed in such a way that the less numerical difference there is between any two image fingerprints, the more the two images resemble each other. Comparison of these fingerprints thus make it possible to find similar images. This methodology is the core engine for three features n the Similarity View named find **Duplicates**, find similar **Image**, and find by **Sketch**.
 
@@ -63,13 +63,13 @@ The **Restrict to** setting limits the albums or tags used in the reference imag
 
 With the **Similarity Range** you can narrow down or enlarge the search result. A similarity of 100 % provides exact matches. Lower values indicate decreasing similarity. Note that by lowering the upper threshold a little bit below 100 % you can keep things like exact copies, images from series shots, etc. out of the search results.
 
-The **Restriction** setting can be used to further restrict searches with respect to the spscified folder. Possible options are listed below:
+The **Restriction** setting can be used to further restrict searches with respect to the specified folder. Possible options are listed below:
 
     - **None** means to search across all collections
     - **Restrict to reference album** means to only search in the selected album
     - **Exclude reference album** means to search in all albums excluding the selected album
 
-The results of the search are dislayed in the duplicate list-view near the top left sidebar. The first column shows the **Reference images** (Ref.) as a thumbnail for each single result. The **Items** column tells you how many images belong to each result including the **Reference image**. The last column shows the **Average similarity** which gives you an idea regarding the degree of similarity of each set of duplicate images. The reference image with its 100 % is not included in this average. Note that the results can be sorted by clicking on one of the column headers. **Reference dates** and **Reference albums** columns are the properties of the **Reference images**.
+The results of the search are displayed in the duplicate list-view near the top left sidebar. The first column shows the **Reference images** (Ref.) as a thumbnail for each single result. The **Items** column tells you how many images belong to each result including the **Reference image**. The last column shows the **Average similarity** which gives you an idea regarding the degree of similarity of each set of duplicate images. The reference image with its 100 % is not included in this average. Note that the results can be sorted by clicking on one of the column headers. **Reference dates** and **Reference albums** columns are the properties of the **Reference images**.
 
 .. figure:: images/mainwindow_search_duplicates_tableview.webp
     :alt:
