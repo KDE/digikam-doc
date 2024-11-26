@@ -1,0 +1,349 @@
+# Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+#
+# SPDX-FileCopyrightText: 2024 Freek de Kruijf <freekdekruijf@kde.nl>
+msgid ""
+msgstr ""
+"Project-Id-Version: Digikam Manual 8.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-25 01:48+0000\n"
+"PO-Revision-Date: 2024-11-25 17:10+0100\n"
+"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.08.3\n"
+
+#: ../../left_sidebar/similarity_view.rst:1
+msgid "digiKam Main Window Similarity View"
+msgstr "Gelijkenisweergaven in het hoofdvenster van digiKam"
+
+#: ../../left_sidebar/similarity_view.rst:1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, similarity, search, duplicates, sketch"
+msgstr ""
+"digiKam, documentatie, gebruikershandleiding, fotobeheer, open-source, "
+"vrij, leren, gemakkelijk, gelijkenis, zoeken, duplicaten, schets"
+
+#: ../../left_sidebar/similarity_view.rst:14
+msgid "Similarity View"
+msgstr "Weergave van gelijkenissen"
+
+#: ../../left_sidebar/similarity_view.rst:17
+msgid "Overview"
+msgstr "Overzicht"
+
+#: ../../left_sidebar/similarity_view.rst:19
+msgid ""
+"If you have lost a picture because you can't remember its name or where yo"
+"u filed it, you mights want to perform a *Similarity* search on your colle"
+"ctions."
+msgstr ""
+"Als u een afbeelding hebt verloren omdat u zijn naam niet meer herinnert "
+"of waar u het hebt opgeslagen, dan zou u willen zoeken op *Gelijkenissen* "
+"in uw verzamelingen."
+
+#: ../../left_sidebar/similarity_view.rst:21
+msgid ""
+"digiKam characterizes every image by a fingerprint (or signature), that is"
+" internally represented as a lengthy number. These fingerprints are comput"
+"ed in such a way that the less numerical difference there is between any t"
+"wo image fingerprints, the more the two images resemble each other. Compar"
+"ison of these fingerprints thus make it possible to find similar images. T"
+"his methodology is the core engine for three features n the Similarity Vie"
+"w named find **Duplicates**, find similar **Image**, and find by **Sketch*"
+"*."
+msgstr ""
+"digiKam karakteriseert elke afbeelding met een vingerafdruk (of "
+"signatuur), die intern gerepresenteerd wordt als een lang getal. Deze "
+"vingerafdrukken worden berekend op zo'n manier dat hoe minder numeriek "
+"verschil er is tussen elke twee vingerafdrukken van een afbeelding, hoe "
+"meer de twee afbeeldingen op elkaar lijken. Vergelijken van deze "
+"vingerafdrukken maakt het dus mogelijk om gelijksoortige afbeeldingen te "
+"vinden. Deze methode is de kernmotor voor drie functies in de "
+"Gelijkenisweergave genaamd zoek **Duplicaten**, zoek gelijkende "
+"**Afbeeldingen** en zoeken door een **Schets**."
+
+#: ../../left_sidebar/similarity_view.rst:25
+msgid ""
+"digiKam uses Wavelets/Haar algorithms based on the `Fast Multi-Resolution "
+"Image Querying publication <https://grail.cs.washington.edu/wp-content/upl"
+"oads/2015/08/jacobs-1995.pdf>`_ to compute fingerprints for every image in"
+" the database. These calculations are done in the background."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:30
+msgid "Find Duplicates"
+msgstr "Dubbele items zoeken"
+
+#: ../../left_sidebar/similarity_view.rst:32
+msgid ""
+"Before you can have digiKam find duplicates, the fingerprints of the image"
+"s within the collections have to be calculated. You can start that process"
+" with the button **Update Fingerprints** which initiates a total rebuild o"
+"f the image fingerprint database. This may take hours if you have a large "
+"collection and slow storage devices. If you have already scanned your imag"
+"es for fingerprints, then you should skip this step."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:36
+msgid ""
+"You can also perform fingerprint operations using :menuselection:`Tools --"
+"> Maintenance` and select **Rebuild Finger-prints** option. You can option"
+"ally choose if you want to rebuild the entire database or only scan your d"
+"atabase for changed or new items, which is the default behavior. Scanning "
+"for changed or new items is naturally the faster option."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:38
+msgid ""
+"Once the fingerprints are calculated you can use **Find Duplicates**, but "
+"the calculation will take a long time since it has to compare every image "
+"with every other other image. So it is often better to confine your search"
+" to certain **Albums** and/or **Tags**. The **All albums** and **All tags*"
+"* check-boxes perform global searches in the database. Otherwise use the d"
+"rop-down menu to specify which **Albums** and/or **Tags** to search."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:40
+msgid ""
+"The fundamental result of a **Find Duplicates** operation is a list of Ref"
+"erence images, which should be thought of as originals, and the number of "
+"images found that are duplicates of the reference image. A **Remove Duplic"
+"ates** operation would then remove the duplicate images, without disturbin"
+"g the reference images. But when digiKam identifies a group of duplicate i"
+"mages, how does it identify which is the reference image that should be ma"
+"intained, and which are the duplicates?"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:42
+msgid ""
+"The **Reference Image Selection Method** setting allows selection of how t"
+"he reference image is determined."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:44
+msgid ""
+"**Older or Larger** is the method used prior to version 8.1.0. The referen"
+"ce image is the duplicate that is older or larger than the others"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:45
+msgid ""
+"**Prefer selected folder as reference** means that the reference image is "
+"chosen from the selected album or albums"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:46
+msgid ""
+"**Prefer other than selected folder as reference** means that the referenc"
+"e image is chosen from an album that has not been selected"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:47
+msgid ""
+"**Prefer Newer Creation Date** means that the reference image is the dupli"
+"cate that has the newest creation date"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:48
+msgid ""
+"**Prefer Newer Modification Date**  means that the reference image is the "
+"duplicate that has the newest modification date"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:54
+msgid ""
+"Find Duplicates Tool Searching in Whole Albums Collection with the referen"
+"ce file not in the potential Duplicates folder. The results are displayed "
+"in Icon-View"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:56
+msgid ""
+"The **Restrict to** setting limits the albums or tags used in the referenc"
+"e image selection. Possible options are listed below:"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:58
+msgid ""
+"**One of** means that the reference images are either from the selected al"
+"bums or have the selected tags."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:59
+msgid ""
+"**Both** means that the reference images are from the selected albums and "
+"have the selected tags."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:60
+msgid ""
+"**Albums but not tags** means that reference images must be in the selecte"
+"d albums but not have the selected tags."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:61
+msgid ""
+"**Tags but not albums** means that reference images must have the selected"
+" tags but not be in the selected albums."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:62
+msgid ""
+"**Only selected tab** means that only the selected tab applies to the refe"
+"rence image selection."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:64
+msgid ""
+"With the **Similarity Range** you can narrow down or enlarge the search re"
+"sult. A similarity of 100 % provides exact matches. Lower values indicate "
+"decreasing similarity. Note that by lowering the upper threshold a little "
+"bit below 100 % you can keep things like exact copies, images from series "
+"shots, etc. out of the search results."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:66
+msgid ""
+"The **Restriction** setting can be used to further restrict searches with "
+"respect to the spscified folder. Possible options are listed below:"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:68
+msgid "**None** means to search across all collections"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:69
+msgid ""
+"**Restrict to reference album** means to only search in the selected album"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:70
+msgid ""
+"**Exclude reference album** means to search in all albums excluding the se"
+"lected album"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:72
+msgid ""
+"The results of the search are dislayed in the duplicate list-view near the"
+" top left sidebar. The first column shows the **Reference images** (Ref.) "
+"as a thumbnail for each single result. The **Items** column tells you how "
+"many images belong to each result including the **Reference image**. The l"
+"ast column shows the **Average similarity** which gives you an idea regard"
+"ing the degree of similarity of each set of duplicate images. The referenc"
+"e image with its 100 % is not included in this average. Note that the resu"
+"lts can be sorted by clicking on one of the column headers. **Reference da"
+"tes** and **Reference albums** columns are the properties of the **Referen"
+"ce images**."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:78
+msgid ""
+"Find Duplicates Tool Searching in Whole Tags Collection and Displaying Res"
+"ults in Table-View"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:80
+msgid ""
+"Individual similarity values for each item can be obtained in the **Table-"
+"View** mode (**Table** button on the Main Toolbar). Click with the right m"
+"ouse button over one of the column headers and select **Similarity** from "
+"**Item Properties** to display the similarity column. Clicking on the head"
+"er of this column will sort results by similarity, grouped by the referenc"
+"e images. Clicking repeatedly on the header will toggle between ascending "
+"and descending order."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:82
+msgid ""
+"**Remove Duplicates** allows you to delete all duplicate images of the cur"
+"rent selected item from the **Duplicates** list."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:88
+msgid "Find Similar Image"
+msgstr "Gelijkaardige afbeeldingen zoeken"
+
+#: ../../left_sidebar/similarity_view.rst:90
+msgid ""
+"This tool provides a drag and drop zone on the top-left where you can plac"
+"e any image to find similar images in the database. You can drag an image "
+"from anywhere, even from outside digiKam. You can also drag and hold an im"
+"age from the album **Icon-View** over the **Similarity** search icon in th"
+"e **Left Sidebar**. This will then open a dialog and you drop the image th"
+"ere. Finally, you can use **Find Similar...** entry from the context menu "
+"of a thumbnail in any other Icon-View."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:96
+msgid ""
+"Screencast of Drag and Drop item from Album Icon-View to Find Similar usin"
+"g Left Sidebar"
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:98
+msgid ""
+"Like with **Find Duplicates**, you can restrict the search to a set of **A"
+"lbums** or the whole collection. You can narrow down or enlarge the result"
+"ing selection with the **Similarity range** here as well."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:100
+msgid ""
+"The **Search in**, **Save**, and **Restore** previous searches features wo"
+"rk the same as in the **Find Duplicates** tool."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:102
+msgid ""
+"After performing **Searches** you might want to save the results. In the f"
+"ield below you can enter a name for the search, and press the **Save** but"
+"ton. In the **Searches** list below you will find your saved searches. Cli"
+"cking on the title bar of that list toggles the sorting order between asce"
+"nding and descending. At the bottom you will find an adaptive search field"
+" which can help you to find a particular search. To **Restore** a result, "
+"just click on one item from the list."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:109
+msgid "Searching Similar Items For a Single Image"
+msgstr "Gelijksoortige afbeeldingen zoeken van een enkele afbeelding"
+
+#: ../../left_sidebar/similarity_view.rst:114
+msgid "Find by Sketch"
+msgstr "Met schets zoeken"
+
+#: ../../left_sidebar/similarity_view.rst:116
+msgid ""
+"This tool is a free-hand color sketching editor. You can draw a quick sket"
+"ch and digiKam will find corresponding images. You will find the same mean"
+"s to save your search as in the **Image** tab."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:118
+msgid ""
+"On the left hand side of digiKam, navigate to the tab **Sketch**. This vie"
+"w has a drawing area plus some settings below to set pencil and history to"
+"ols. Choose a color that your image might contain, you can change the size"
+" of the pen which is on the scale of 1-10, and you can also choose the num"
+"ber of images that you want to be displayed during your fuzzy search, this"
+" can be set to a value between 1-50 items. As you sketch on the area you w"
+"ill see that the similarity search related images appears on the right han"
+"d side."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:120
+msgid ""
+"The **Search in**, **Save**, and **Restore** previous searches features wo"
+"rks the same as in the  **Find Duplicates** tool."
+msgstr ""
+
+#: ../../left_sidebar/similarity_view.rst:126
+msgid "Searching Items by Drawing a Sketch"
+msgstr "Items zoeken door een schets te tekenen"
