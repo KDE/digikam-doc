@@ -17,7 +17,7 @@ Versions View
 
 The **Versions** tab shows the history and the saved versions of a photograph. With the three buttons in the top right corner you can choose between a simple list of the saved versions, a tree view and a combined list that shows the versions together with the actions performed with the selected photograph.
 
-.. figure:: images/sidebar_versionstree.webp
+.. figure:: images/right_sidebar_versionstree.webp
     :alt:
     :align: center
 
@@ -25,7 +25,7 @@ The **Versions** tab shows the history and the saved versions of a photograph. W
 
 The tree view shows the parent and child versions of the selected image. Here the second and the fifth version derive directly from the original image, the third and forth version are children of the second version.
 
-.. figure:: images/sidebar_versionsclist.webp
+.. figure:: images/right_sidebar_versionsclist.webp
     :alt:
     :align: center
 

@@ -13,7 +13,7 @@
 Time-Line View
 --------------
 
-.. figure:: images/mainwindow_timeline.webp
+.. figure:: images/left_sidebar_timeline.webp
     :alt:
     :align: center
 
@@ -23,7 +23,7 @@ The Timeline View shows a timescale-adjustable histogram of the numbers of image
 
 The scaling buttons on the top right allow you to choose between a **Linear** or **Logarithmic** histogram. Click and drag over the histogram to display the photographs from of a certain time frame, or just click on the corresponding histogram bar. You are not restricted to a single bar: :kbd:`Shift+left` click to select a range of bars from the histogram, and :kbd:`Ctrl+left` click to add additional bars to those already selected.
 
-.. figure:: videos/mainwindow_timeline_selection.webp
+.. figure:: videos/left_sidebar_timeline_selection.webp
     :width: 600px
     :alt:
     :align: center

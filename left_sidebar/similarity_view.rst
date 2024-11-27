@@ -47,7 +47,7 @@ The **Reference Image Selection Method** setting allows selection of how the ref
     - **Prefer Newer Creation Date** means that the reference image is the duplicate that has the newest creation date
     - **Prefer Newer Modification Date**  means that the reference image is the duplicate that has the newest modification date
 
-.. figure:: images/mainwindow_search_duplicates_iconview_prefer_other.webp
+.. figure:: images/left_sidebar_search_duplicates_iconview_prefer_other.webp
     :alt:
     :align: center
 
@@ -71,7 +71,7 @@ The **Restriction** setting can be used to further restrict searches with respec
 
 The results of the search are displayed in the duplicate list-view near the top left sidebar. The first column shows the **Reference images** (Ref.) as a thumbnail for each single result. The **Items** column tells you how many images belong to each result including the **Reference image**. The last column shows the **Average similarity** which gives you an idea regarding the degree of similarity of each set of duplicate images. The reference image with its 100 % is not included in this average. Note that the results can be sorted by clicking on one of the column headers. **Reference dates** and **Reference albums** columns are the properties of the **Reference images**.
 
-.. figure:: images/mainwindow_search_duplicates_tableview.webp
+.. figure:: images/left_sidebar_search_duplicates_tableview.webp
     :alt:
     :align: center
 
@@ -89,7 +89,7 @@ Find Similar Image
 
 This tool provides a drag and drop zone on the top-left where you can place any image to find similar images in the database. You can drag an image from anywhere, even from outside digiKam. You can also drag and hold an image from the album **Icon-View** over the **Similarity** search icon in the **Left Sidebar**. This will then open a dialog and you drop the image there. Finally, you can use **Find Similar...** entry from the context menu of a thumbnail in any other Icon-View.
 
-.. figure:: videos/mainwindow_similar_drag_drop.webp
+.. figure:: videos/left_sidebar_similar_drag_drop.webp
     :alt:
     :align: center
 
@@ -102,7 +102,7 @@ The **Search in**, **Save**, and **Restore** previous searches features work the
 After performing **Searches** you might want to save the results. In the field below you can enter a name for the search, and press the **Save** button. In the **Searches** list below you will find your saved searches. Clicking on the title bar of that list toggles the sorting order between ascending and descending. At the bottom you will find an adaptive search field which can help you to find a particular search. To **Restore** a result, just click on one item from the list.
 
 
-.. figure:: images/mainwindow_search_similar.webp
+.. figure:: images/left_sidebar_search_similar.webp
     :alt:
     :align: center
 
@@ -119,7 +119,7 @@ On the left hand side of digiKam, navigate to the tab **Sketch**. This view has 
 
 The **Search in**, **Save**, and **Restore** previous searches features works the same as in the  **Find Duplicates** tool.
 
-.. figure:: images/mainwindow_search_sketch.webp
+.. figure:: images/left_sidebar_search_sketch.webp
     :alt:
     :align: center
 

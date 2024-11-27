@@ -15,21 +15,21 @@ Properties View
 
 .. contents::
 
-The properties sidebar shows the essential information about the selected image which are largely self-explanatory. It is grouped into the following sections:
+The properties sidebar shows essential information about the selected image that are largely self-explanatory. It is grouped into the following sections:
 
-    - **File Properties**: these are file system related information.
+    - **File Properties**: file system related properties like file location, date and size.
 
-    - **Image Properties**: shows the image and format properties like dimension, compression, color-depth, etc.
+    - **Image Properties**: image and format properties like type, dimension, compression and color-depth
 
-    - **Photograph Properties**: shows a summary of the most important parameters when taking the photograph. These data are taken from the Exif or XMP data fields if available.
+    - **Photograph Properties**: key photographic properties like camera, lens, aperture, focal length and exposure time. These data are taken from the Exif or XMP data fields if available.
 
-    - **digiKam Properties**: optional view to show a summary of the most important values set in digiKam database.
+    - **digiKam Properties**: optional view summarizing key properties assigned in the digiKam database.
 
-+-------------------------------------------------------+------------------------------------------------------+
-|    .. figure:: images/sidebar_propertiesphoto.webp    |    .. figure:: images/sidebar_propertiesvideo.webp   |
-|       :alt:                                           |        :alt:                                         |
-|       :align: center                                  |        :align: center                                |
-+-------------------------------------------------------+------------------------------------------------------+
-|               File properties for a photo             |              File properties for a video             |
-+-------------------------------------------------------+------------------------------------------------------+
++-------------------------------------------------------------+------------------------------------------------------------+
+|    .. figure:: images/right_sidebar_propertiesphoto.webp    |    .. figure:: images/right_sidebar_propertiesvideo.webp   |
+|       :alt:                                                 |        :alt:                                               |
+|       :align: center                                        |        :align: center                                      |
++-------------------------------------------------------------+------------------------------------------------------------+
+|               File properties for a photo                   |              File properties for a video                   |
++-------------------------------------------------------------+------------------------------------------------------------+
 

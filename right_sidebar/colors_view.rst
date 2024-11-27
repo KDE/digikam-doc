@@ -15,22 +15,20 @@ Colors View
 
 .. contents::
 
-The colors sidebar has two sub tabs **Histogram** and **ICC Profile**. Here are more details about :ref:`Color Management <color_management>`
+The colors sidebar has two sub tabs **Histogram** and **ICC Profile**, which are described here. More complete information on color management within digiKam is available in the :ref:`Color Management <color_management>` chapter of this manual.
 
 Histogram Viewer
 ~~~~~~~~~~~~~~~~
 
-The histogram for an image shows the amount of each color that is present and their different amplitudes within the image. If your photograph has a color cast you might be able to see what is wrong by looking at the histogram.
+The Histogram Viewer shows the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. A histogram-based color correction can be performed using the Color Balance, Levels Adjust or Curves Adjust features in the Image Editor.
 
-The Histogram Viewer shows the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. If you want to perform a histogram based color correction, use for example Color Balance, Levels Adjust or Curves Adjust in the Image Editor.
-
-.. figure:: images/sidebar_histogramview.webp
+.. figure:: images/right_sidebar_histogramview.webp
     :alt:
     :align: center
 
     The Color View From Right Sidebar Displaying Histogram Information
 
-An image can be decomposed into **Red**, **Green** and **Blue** color channels. **Alpha** channel is a Layer in the image that supports transparency (like PNG or GIF images). Each channel supports a range of intensity levels from 0 to 255 (integer valued). Thus, a black pixel is encoded by 0 on all color channels; a white pixel by 255 on all color channels. A transparent pixel is encoded by 0 on the alpha channel; an opaque pixel by 255.
+Color images can be decomposed into **Red**, **Green** and **Blue** color channels. Some images also include an **Alpha** channel that supports transparency (like PNG or GIF images). Each channel supports a range of intensity levels from 0 to 255 (integer valued). Thus, a black pixel is encoded by 0 on all color channels; a white pixel by 255 on all color channels. A transparent pixel is encoded by 0 on the alpha channel; an opaque pixel by 255.
 
 The Histogram Viewer allows you to view each channel separately:
 
@@ -42,72 +40,72 @@ The Histogram Viewer allows you to view each channel separately:
 
     - **Colors**: shows the **Red**, **Green**, and **Blue** histograms superposed, so that you can see all of the color distribution information in a single view.
 
-With the **Scale** option you can determine whether the histogram will be displayed using a linear or logarithmic Y axis. For images taken with a digital camera, the **Linear** mode is usually the most useful. However, for images that contain substantial areas of constant color a **Linear** histogram will often be dominated by a single bar. In this case a **Logarithmic** histogram will be more useful.
+With the **Scale** option you can determine whether the histogram will be displayed using a linear or logarithmic vertical axis. The **Linear** mode is usually the most useful for images taken with a digital camera. However,  a **Linear** histogram for images that contain substantial areas of constant color will often be dominated by a single bar. In this case a **Logarithmic** histogram may be more useful.
 
-You can restrict the analysis of the **Statistics** field shown at the bottom of the dialog to a limited range of values if you wish. You can set the range in one of two ways:
+You can restrict the analysis of the **Statistics** field shown in the middle of the dialog to a limited range of values by setting the minimum and maximum range in one of two ways:
 
-    - Click and drag the pointer across the histogram display area, from the lowest level to the highest level of the range you want.
+    - Click and drag the pointer across the desired range span within the histogram display area.
 
-    - Use the spin button entries below the histogram area. Left entry is bottom of range and right entry is top of range. 
+    - Use the spin button fields below the histogram area. The left entry is the minimum  range and the right entry is maximum range.
 
-The statistics shown at the bottom of the Histogram Viewer describe the distribution of channel values, restricted to the selected range. These are:
+The statistics shown in the middle of the Histogram Viewer describe the distribution of channel values, restricted to the selected range. These are:
 
     - The number of pixels in the image.
 
-    - The number whose values fall within the selected range.
+    - The number of pixels whose values fall within the selected range.
 
-    - The mean.
+    - The mean of the pixels within the selected range.
 
-    - The standard deviation.
+    - The standard deviation of the pixels within the selected range.
 
-    - The median of the selected histogram portion.
+    - The median of the pixels within the selected range.
 
-    - The percentage whose values fall within the selected range.
+    - The percentage of pixels whose values fall within the selected range.
 
     - The color depth of the image.
 
-    - Alpha channel in the image.
+    - Is there an alpha channel in the image?
 
-    - The source of the histogram, either **Full Image** or **Image Region** if you have selected an area of the image loaded in the Editor.
+    - The source of the histogram, either **Full Image**, or **Image Region** if you have selected an area of the image within the Image Editor.
 
-How To Use an Histogram
-~~~~~~~~~~~~~~~~~~~~~~~
+How To Use a Histogram
+~~~~~~~~~~~~~~~~~~~~~~
 
-Histograms are a graphical means to assess the accuracy of an image shown on the screen. The graph represents the 3 regions of the photograph brightness:
+Histograms are a graphical means to assess the color and tonal qualities of an image shown on the screen. The graph can be divided into 3 regions of photographic brightness:
 
-    (1) : the shadows-tone on the left.
+    (1) : the shadows on the left of the histogram.
 
-    (2) : the middle-tone in the middle.
+    (2) : the mid-tones in the middle.
 
-    (3) : the highlights-tone on the right.
+    (3) : the highlights on the right of the histogram.
 
-.. figure:: images/sidebar_histogramdescription.webp
+.. figure:: images/right_sidebar_histogramdescription.webp
     :alt:
     :align: center
 
     An Image Histogram in All Colors Mode
 
-The distribution of the graph, where the spikes and bulges are clustered, indicates whether the image is too dark, too bright, or well-balanced.
+The spread of the histogram, and where the spikes and bulges are clustered, indicates whether the image is too dark, too bright, or well-balanced.
 
-With an under exposed photograph, the histogram will have a distribution of brightness that tends to be mostly on the left of the graph.
+The histogram for an under exposed photograph will have a distribution of brightness that tends to be mostly on the left of the graph.
 
-.. figure:: images/sidebar_histogram_underexpo.webp
+.. figure:: images/right_sidebar_histogram_underexpo.webp
     :alt:
     :align: center
 
     An Under Exposed Photograph
 
-With a correctly exposed photograph, the histogram will have a distribution of brightness that will be most prominent near the center part of the graph.
+The histogram for a correctly exposed photograph will have a distribution of brightness that will be most prominent near the center part of the graph.
 
-.. figure:: images/sidebar_histogram_rightexpo.webp
+.. figure:: images/right_sidebar_histogram_rightexpo.webp
     :alt:
     :align: center
 
     A Correctly Exposed Photograph
 
-With an over exposed photograph, the histogram will have the bulge showing the brightness distributed mostly towards the right of the graph.
+The histogram for an over exposed photograph will have the bulge showing the brightness distributed mostly towards the right of the graph.
 
-.. figure:: images/sidebar_histogram_overexpo.webp
+.. figure:: images/right_sidebar_histogram_overexpo.webp
     :alt:
     :align: center
 
@@ -115,16 +113,16 @@ With an over exposed photograph, the histogram will have the bulge showing the b
 
 .. important:: Not all photographs have to exhibit this bulge in the center part of their histogram. Much depends on the subject of the photograph. In some cases, it might be appropriate for the histogram to show a peak at one end or the other, or both.
 
-The histogram is a reliable way of deciding whether or not a photograph is correctly exposed. Should the histogram show an over or under exposure, an :ref:`Exposure Correction Tool <color_bcg>` should be used to fix the photograph.
+The histogram is a reliable way of deciding whether or not a photograph is correctly exposed. Should the histogram show an over or under exposure, it may be possible to fix the photograph using the :ref:`Exposure Correction Tool <color_bcg>`.
 
 ICC Profile Viewer
 ~~~~~~~~~~~~~~~~~~
 
-An ICC profile is a set of data that characterizes a color input or output device, or a color space, according to standards promulgated by the `International Color Consortium <https://en.wikipedia.org/wiki/International_Color_Consortium>`_. Profiles describe the color attributes of a particular device or viewing requirement by defining a mapping between the device source or target color space and a profile connection space. Mappings may be specified using tables, to which interpolation is applied, or through a series of parameters for transformations used in Color Management.
+An ICC profile is a set of data that characterizes a color input or output device, or a color space, according to standards promulgated by the `International Color Consortium <https://en.wikipedia.org/wiki/International_Color_Consortium>`_. Profiles describe the color attributes of a particular device or viewing requirement by defining a mapping between the device source or target color space and a a device-independent color space called the profile connection space. Mappings may be specified using tables, to which interpolation is applied, or through a series of parameters for transformations used in Color Management.
 
-Every files used to store captured image can be profiled. Camera manufacturers provide profiles for their products, and store them in image file as extra metadata. This ICC Profile viewer allows to display the textual information and a flat graph of color space.
+Every image file can be profiled. Camera manufacturers provide profiles for their products, and store them in image files as extra metadata. This ICC Profile viewer displays the textual information for the image's color profile and a chromaticity diagram indicating the image's color gamut.
 
-.. figure:: images/sidebar_iccprofileviewer.webp
+.. figure:: images/right_sidebar_iccprofileviewer.webp
     :alt:
     :align: center
 

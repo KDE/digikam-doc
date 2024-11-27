@@ -18,9 +18,9 @@ Albums View
 Overview
 --------
 
-.. |icon_collection| image:: images/mainwindow_icon_collection.webp
+.. |icon_collection| image:: images/left_sidebar_icon_collection.webp
 
-.. figure:: images/mainwindow_albumsview.webp
+.. figure:: images/left_sidebar_albumsview.webp
     :alt:
     :align: center
 
@@ -100,7 +100,7 @@ Managing Albums
 
 Album Properties can help you remember which kind of photographs are in an Album and can also help you to organize the Albums tree. To access the Album Properties, click with the right mouse button on an Album and select **Properties** :kbd:`Alt+Enter` from the context menu.
 
-.. figure:: images/mainwindow_albumproperties.webp
+.. figure:: images/left_sidebar_albumproperties.webp
     :alt:
     :align: center
 

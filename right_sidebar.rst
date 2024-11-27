@@ -16,7 +16,7 @@ Right Sidebar
 .. figure:: images/index_right_sidebar.webp
     :alt:
 
-This section explain how to use the digiKam right sidebar.
+This section explains how to use the digiKam right sidebar.
 
 .. toctree::
    :maxdepth: 2

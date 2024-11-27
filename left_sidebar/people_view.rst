@@ -35,7 +35,7 @@ The first step is to let digiKam locate all the photos containing faces, without
 
     - **Clear Unconfirmed Results And Rescan**: Select this option when you have changed settings and want to delete all unnamed faces from the database. This will re-scan all images selected in the **Search in** tab, which can be time-consuming.
 
-.. figure:: images/mainwindow_faces_settings1.webp
+.. figure:: images/left_sidebar_faces_settings1.webp
     :alt:
     :align: center
 
@@ -47,7 +47,7 @@ For this task, make sure to select **Detect faces**. Since face detection is tim
 
 After carefully selecting your options, click **Scan collection for faces**. Depending on the scope of your selection, it may take a little while for the results to appear in the Image Area. In the Tags list on the Left Sidebar, you’ll see the **People** branch of your tag tree. To view the entire set of identified faces, ensure the topmost tag **People** is selected. You’ll also notice a new virtual tag called **Unknown**, which includes all images where faces have been detected but not yet assigned to a person. If this is your first scan, you’ll find the entire set of identified faces here as well.
 
-.. figure:: videos/mainwindow_faces_detection.webp
+.. figure:: videos/left_sidebar_faces_detection.webp
     :width: 600px
     :alt:
     :align: center
@@ -56,73 +56,73 @@ After carefully selecting your options, click **Scan collection for faces**. Dep
 
 Note that the thumbnails presented here do not show the whole image. They show the area of the image where the face detection model added a **Face Tag**. You can see the whole image if you click on the thumbnail. In the preview that opens, you will see the whole image with all the face tags on them. If you don't see them, click the people button |icon_showfacetags| in the upper left corner of the preview. If there is more than one face tag on the image it will also be represented by more than one thumbnail.
 
-.. |icon_showfacetags| image:: images/mainwindow_icon_showfacetags.webp
+.. |icon_showfacetags| image:: images/left_sidebar_icon_showfacetags.webp
 
 The list of detection samples below comes from a huge collection of photos scanned by digiKam.
 
-==== =========================================================== =============================================
- ID  Face Detected Samples                                       Comments
-==== =========================================================== =============================================
- 01  .. figure:: images/mainwindow_face_detection_sample_01.webp An under-exposed face
+==== ============================================================= =============================================
+ ID  Face Detected Samples                                         Comments
+==== ============================================================= =============================================
+ 01  .. figure:: images/left_sidebar_face_detection_sample_01.webp An under-exposed face
         :width: 64px
         :alt:
         :align: center
----- ----------------------------------------------------------- ---------------------------------------------
- 02  .. figure:: images/mainwindow_face_detection_sample_02.webp An animal face
+---- ------------------------------------------------------------- ---------------------------------------------
+ 02  .. figure:: images/left_sidebar_face_detection_sample_02.webp An animal face
         :width: 64px
         :alt:
         :align: center
----- ----------------------------------------------------------- ---------------------------------------------
- 03  .. figure:: images/mainwindow_face_detection_sample_03.webp A blurry child face
+---- ------------------------------------------------------------- ---------------------------------------------
+ 03  .. figure:: images/left_sidebar_face_detection_sample_03.webp A blurry child face
         :width: 64px
         :alt:
         :align: center
----- ----------------------------------------------------------- ---------------------------------------------
- 04  .. figure:: images/mainwindow_face_detection_sample_04.webp A non-human face
+---- ------------------------------------------------------------- ---------------------------------------------
+ 04  .. figure:: images/left_sidebar_face_detection_sample_04.webp A non-human face
         :width: 64px
         :alt:
         :align: center
----- ----------------------------------------------------------- ---------------------------------------------
- 05  .. figure:: images/mainwindow_face_detection_sample_05.webp A very blurry and partial face
+---- ------------------------------------------------------------- ---------------------------------------------
+ 05  .. figure:: images/left_sidebar_face_detection_sample_05.webp A very blurry and partial face
         :width: 64px
         :alt:
         :align: center
----- ----------------------------------------------------------- ---------------------------------------------
- 06  .. figure:: images/mainwindow_face_detection_sample_06.webp A rotated face
+---- ------------------------------------------------------------- ---------------------------------------------
+ 06  .. figure:: images/left_sidebar_face_detection_sample_06.webp A rotated face
         :width: 64px
         :alt:
         :align: center
----- ----------------------------------------------------------- ---------------------------------------------
- 07  .. figure:: images/mainwindow_face_detection_sample_07.webp A face covered with a hood
+---- ------------------------------------------------------------- ---------------------------------------------
+ 07  .. figure:: images/left_sidebar_face_detection_sample_07.webp A face covered with a hood
         :width: 64px
         :alt:
         :align: center
----- ----------------------------------------------------------- ---------------------------------------------
- 08  .. figure:: images/mainwindow_face_detection_sample_08.webp A face in profile
+---- ------------------------------------------------------------- ---------------------------------------------
+ 08  .. figure:: images/left_sidebar_face_detection_sample_08.webp A face in profile
         :width: 64px
         :alt:
         :align: center
----- ----------------------------------------------------------- ---------------------------------------------
- 09  .. figure:: images/mainwindow_face_detection_sample_09.webp An under-exposed and partial face
+---- ------------------------------------------------------------- ---------------------------------------------
+ 09  .. figure:: images/left_sidebar_face_detection_sample_09.webp An under-exposed and partial face
         :width: 64px
         :alt:
         :align: center
----- ----------------------------------------------------------- ---------------------------------------------
- 10  .. figure:: images/mainwindow_face_detection_sample_10.webp A false positive detection
+---- ------------------------------------------------------------- ---------------------------------------------
+ 10  .. figure:: images/left_sidebar_face_detection_sample_10.webp A false positive detection
         :width: 64px
         :alt:
         :align: center
----- ----------------------------------------------------------- ---------------------------------------------
- 11  .. figure:: images/mainwindow_face_detection_sample_11.webp An animal face
+---- ------------------------------------------------------------- ---------------------------------------------
+ 11  .. figure:: images/left_sidebar_face_detection_sample_11.webp An animal face
         :width: 64px
         :alt:
         :align: center
----- ----------------------------------------------------------- ---------------------------------------------
- 12  .. figure:: images/mainwindow_face_detection_sample_12.webp A face covered by a racket
+---- ------------------------------------------------------------- ---------------------------------------------
+ 12  .. figure:: images/left_sidebar_face_detection_sample_12.webp A face covered by a racket
         :width: 64px
         :alt:
         :align: center
-==== =========================================================== =============================================
+==== ============================================================= =============================================
 
 Screenshots **02** and **11** were selected to highlight an important feature: the algorithm can detect animal faces. This is not a false positive, unless you specifically want to see only human faces in your collection.
 
@@ -139,13 +139,13 @@ After the **detection** scan is complete, you should see a new tag labeled **Unk
 .. _face_tagging:
 
 Face Tagging
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
 
 Assigning People tags to face tags is a crucial step for Face Recognition. digiKam can only recognize faces if it has reference faces for comparison. It’s your job to train it by identifying faces, such as labeling them as Lara, Juan, Peter, etc. Usually, you only need to manually tag one face for a person for the recognition process to identify additional faces.
 
 After performing a **detection** scan as described in the previous section, you select the **Unknown** tag on the Left Sidebar.
 
-.. figure:: images/mainwindow_faces_tag_assigned_iconview.webp
+.. figure:: images/left_sidebar_faces_tag_assigned_iconview.webp
     :alt:
     :align: center
 
@@ -153,7 +153,7 @@ After performing a **detection** scan as described in the previous section, you 
 
 In the field labeled **Who Is This?** you can either type in the name of an existing People tag out of your tag tree or use the drop-down function to show your tag tree and select a tag. You can also apply the same tag to multiple faces at the same time. **Confirm** saves the name to the database and moves the thumbnail from **Unknown** to the face tag.
 
-.. figure:: images/mainwindow_faces_tag_confirmed_iconview.webp
+.. figure:: images/left_sidebar_faces_tag_confirmed_iconview.webp
     :alt:
     :align: center
 
@@ -171,7 +171,7 @@ You can manually tag people in different ways:
 
 - From the **Unknown** tab in the **People** view: hover on any **Unknown** face from the icon-view and use the text box to assign a name. This will create a new face tag in the case of a person whose name hasn't already been entered.
 
-    .. figure:: videos/mainwindow_face_tagging.webp
+    .. figure:: videos/left_sidebar_face_tagging.webp
         :alt:
         :align: center
 
@@ -179,7 +179,7 @@ You can manually tag people in different ways:
 
 - From Left Sidebar **People** tab: use drag and drop between the icon-view and the face-tags tree view. Select items labeled **Unknown** that you want to assign a face-tag. Perform a move with the mouse to the **People** items hierarchy. A pop-up menu will appear to confirm the face assignment.
 
-    .. figure:: videos/mainwindow_faces_drag_drop.webp
+    .. figure:: videos/left_sidebar_faces_drag_drop.webp
         :width: 600px
         :alt:
         :align: center
@@ -188,7 +188,7 @@ You can manually tag people in different ways:
 
 - From keyboard shortcut: you can assign a magic key to a face-tag and quickly use the keyboard to assign the face-tag name to selected items.
 
-    .. figure:: images/mainwindow_face_tag_properties.webp
+    .. figure:: images/left_sidebar_face_tag_properties.webp
         :alt:
         :align: center
 
@@ -196,7 +196,7 @@ You can manually tag people in different ways:
 
 In case there's a face you don't wish to be recognized, you can mark it as ignored. This leads to the creation of a new **Ignored** tag. This is reversible, you can later unmark the face if needed.
 
-    .. figure:: images/mainwindow_faces_tag_ignored_iconview.webp
+    .. figure:: images/left_sidebar_faces_tag_ignored_iconview.webp
         :alt:
         :align: center
 
@@ -206,7 +206,7 @@ In addition to tagging auto-detected faces, you can manually add a face region:
 
 - From **Preview Mode**: click on **Add a Face Tag** icon or select the option in the context menu, as highlighted in the screenshot below.
 
-    .. figure:: images/mainwindow_addfacetag.webp
+    .. figure:: images/left_sidebar_addfacetag.webp
         :alt:
         :align: center
 
@@ -214,7 +214,7 @@ In addition to tagging auto-detected faces, you can manually add a face region:
 
     Then draw a rectangle around the face while holding the left mouse button followed by entering the person's name and pressing :kbd:`Enter` key. If you press :kbd:`Esc` key, this will exit the person's name editor.
 
-    .. figure:: images/mainwindow_face_region.webp
+    .. figure:: images/left_sidebar_face_region.webp
         :alt:
         :align: center
 
@@ -241,7 +241,7 @@ Face Recognition
 
 Once you have assigned a tag to a few photographs, you can have digiKam try to match **Unknown** faces with similar faces that have already been confirmed (tagged). To start this process, go to the workflow tab, select **Recognize Faces**, and then click **Scan Collection For Faces**. The process will tag similar **detected** faces with the appropriate People tag from your tag tree, and the corresponding thumbnail will disappear from the **Unknown** tag selection. The thumbnail will appear in the **Unconfirmed** tag section and will be added to the suggested face tag section.
 
-.. figure:: images/mainwindow_faces_tag_recognized_iconview.webp
+.. figure:: images/left_sidebar_faces_tag_recognized_iconview.webp
     :alt:
     :align: center
 
@@ -253,7 +253,7 @@ Face Recognition is faster than Face Detection but it still makes sense to use t
 
     Face recognition only works well with faces that have been automatically detected by digiKam, not with manually drawn face rectangles or faces from other programs.
 
-.. figure:: images/mainwindow_faces_tag_validate_iconview.webp
+.. figure:: images/left_sidebar_faces_tag_validate_iconview.webp
     :alt:
     :align: center
 
@@ -300,7 +300,7 @@ The **Search-in** tab lets you choose which albums and image tags to include in 
 - For **detection**, digiKam will scan the images selected in the filter for faces.
 - For **recognition**, digiKam will attempt to match **Unknown** and **Unconfirmed** face tags in the images included in the filter with all confirmed face tags.
 
-.. figure:: images/mainwindow_faces_settings2.webp
+.. figure:: images/left_sidebar_faces_settings2.webp
     :alt:
     :align: center
 
@@ -323,7 +323,7 @@ Face Detection Settings
 
 For Face Detection, there are 3 settings the user can adjust to control how digiKam determines if there is a face in an image.
 
-.. figure:: images/mainwindow_faces_settings3.webp
+.. figure:: images/left_sidebar_faces_settings3.webp
     :alt:
     :align: center
 
@@ -340,7 +340,7 @@ Face Recognition Settings
 
 For Face Recognition, there are 2 settings the user can adjust to control how digiKam matches **Unknown** faces to confirmed faces.
 
-.. figure:: images/mainwindow_faces_settings4.webp
+.. figure:: images/left_sidebar_faces_settings4.webp
     :alt:
     :align: center
 

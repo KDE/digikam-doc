@@ -17,7 +17,7 @@ Hierarchical tagging provides a flexible and powerful way to organize and catalo
 
 Tags can be arranged in a hierarchical tree. This allows you to organize your tags in a logical manner. You can collapse parts of the tree in the **Tags** list so that you can easily find the tags that you are looking for.
 
-.. figure:: images/mainwindow_tags_view.webp
+.. figure:: images/left_sidebar_tags_view.webp
     :alt:
     :align: center
 
@@ -40,7 +40,7 @@ You can move the position of a tag within the tree by dragging and dropping it i
 
 You can set the Tag Properties by clicking with the right mouse button on a tag and selecting **Properties...**. The Tag Properties allow you to change the name of the tag, the icon used in the Tags tree and the shortcut.
 
-.. figure:: images/mainwindow_tag_properties.webp
+.. figure:: images/left_sidebar_tag_properties.webp
     :alt:
     :align: center
 
@@ -84,7 +84,7 @@ Tag Manager
 
 While digiKam allows you to manage tags from the context menu accessible from the tags views in the digiKam sidebars, the Tag Manager offers an easier and more comprehensive way to organize your tags. For general information about tags, including why and how to use them, see the beginning sections of :ref:`this page <tags_view>`.
 
-.. figure:: images/mainwindow_tag_manager.webp
+.. figure:: images/left_sidebar_tag_manager.webp
     :alt:
     :align: center
 
@@ -147,7 +147,7 @@ Shortcuts: as mentioned earlier in this chapter you can assign keyboard shortcut
 
 Context menu: by clicking with the right mouse button on the selected photographs and choosing **Assign Tag** you will see a list of the ten most recently used tags, **Add New Tag...**, described at the beginning of the :ref:`previous section <managing_tags>`, and **More Tags...** which leads to what is described in the next paragraph. This context menu may be the easiest method to add a limited number of tags to one or more images.
 
-.. figure:: images/mainwindow_assigntags.webp
+.. figure:: images/left_sidebar_assigntags.webp
     :alt:
     :align: center
 

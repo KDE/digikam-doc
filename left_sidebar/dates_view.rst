@@ -13,7 +13,7 @@
 Dates View
 ----------
 
-.. figure:: images/mainwindow_datesview.webp
+.. figure:: images/left_sidebar_datesview.webp
     :alt:
     :align: center
 

@@ -15,7 +15,7 @@ Search View
 
 We talked about a variety of views with specialized search capabilities. The Search View  offers a more versatile and general way of searching. There are two different approaches: Quick Search and Advanced Search.
 
-.. figure:: images/mainwindow_searchview.webp
+.. figure:: images/left_sidebar_searchview.webp
     :alt:
     :align: center
 
@@ -51,7 +51,7 @@ The Advanced Search Tool
 
 Advanced Search tool provides an extended search form which can be used to search in specific fields of the digiKam database in a more sophisticated way. Click the **New Advanced Search...** button to display the Advanced Search Tool:
 
-.. figure:: images/mainwindow_advancedsearchtool.webp
+.. figure:: images/left_sidebar_advancedsearchtool.webp
     :alt:
     :align: center
 
@@ -61,7 +61,7 @@ The field labeled **Find items that have associated all these words:** is just a
 
 Click on one of the blue categories and an area will fold out with all the fields you can search for in the selected category. Different input fields are displayed for your search, depending on the kind of data each field contains. Sometimes more than one type of input are available for the same field. Selection buttons are used for simple fields, e.g. for colors. Others inputs use plain text fields, drop down lists and checkboxes. Many fields have two input fields allowing you to define a range, e.g. **Find items with a width between**. And often you find a link type thing called "Any" which opens a drop down field with checkboxes for the possible contents of that field.
 
-.. figure:: images/mainwindow_advancedsearchtool2.webp
+.. figure:: images/left_sidebar_advancedsearchtool2.webp
     :alt:
     :align: center
 

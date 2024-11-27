@@ -15,7 +15,7 @@ Overview
 
 .. contents::
 
-The digiKam main window has a sidebar at the right border providing important information and actions of the selected images. This same sidebar is also available in the digiKam Image Editor and the Light Table (except the **Filters** tab). It can be displayed by respectively clicking on one of the eight tabs:
+The digiKam main window has a sidebar along the right border that provides important information on selected images, and allows you to take actions on images. This same sidebar (except for the **Filters** tab) is also available in the digiKam Image Editor and the Light Table. The contents of the sidebar can be displayed by clicking on one of the eight tabs:
 
     - :ref:`Properties <properties_view>`: File and image properties, key shooting parameters.
 
@@ -23,7 +23,7 @@ The digiKam main window has a sidebar at the right border providing important in
 
     - :ref:`Colors <colors_view>`: Histograms and embedded ICC profiles.
 
-    - :ref:`Maps <maps_view>`: View to show GPS location.
+    - :ref:`Maps <maps_view>`: View to show GPS locations.
 
     - :ref:`Captions <captions_view>`: Comments, Date & Time setting, Labels, Rating, Tags, selected metadata.
 
@@ -31,6 +31,6 @@ The digiKam main window has a sidebar at the right border providing important in
 
     - :ref:`Filters <filters_view>`: Filters to apply to icon-view selection.
 
-    - :ref:`Tools <tools_view>`: An optional contextual view dedicated to group by categories all main tools available.
+    - :ref:`Tools <tools_view>`: An optional contextual view listing all main tools available, grouped by categories.
 
-Clicking successively onto the same tab will make the sidebar pop up or fold back into the border.
+Clicking successively on the same tab will make the sidebar pop up or fold back into the border.

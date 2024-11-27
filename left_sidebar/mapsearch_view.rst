@@ -13,33 +13,41 @@
 Map Search View
 ---------------
 
- The whole digiKam geolocation suite consists of four parts:
+.. |zoom_in| image:: images/left_sidebar_icon_zoom_in.webp
+    :height: 20px
 
-    - The **Map** mode of the Image Area which displays images with GPS data on a map depending on the selection on the Left Sidebar, e.g. the images in the album you selected in the Album View, the images with a certain tag assigned (selected in the Tag View), with a certain label and so on.
+.. |zoom_out| image:: images/left_sidebar_icon_zoom_out.webp
+    :height: 20px
 
-    - This view (the Map View in the Left Sidebar) which is the search tool for finding images based on their GPS data.
+There are four tools involving geolocation in digiKam:
 
-    - The :ref:`Geolocation Editor <geolocation_editor>`, accessible via :menuselection:`Item --> Edit Geolocation...` :kbd:`Ctrl+Shift+G`, that allows you to set and to edit GPS data.
+    - The **Map Mode** of the Image Area displays the locations of geo-coded images (images with GPS data) on a map depending on the selection in the Left Sidebar, e.g. the images in the album you selected in the Album View, the images with a specified tag (selected in the Tag View), images with a specified label, and so on.
 
-    - The :ref:`Map tab <maps_view>` on the Right Sidebar which shows the location of the image on a map and is purely informative.
+    - The **Map** tab on the Left Sidebar, the topic of this section, is the search tool for selecting images based on their GPS data.
 
-.. figure:: images/mainwindow_mapsearch.webp
+    - The :ref:`Geolocation Editor <geoeditor_overview>`, accessible via :menuselection:`Item --> Edit Geolocation...` :kbd:`Ctrl+Shift+G`, is the tool to set and to edit GPS data.
+
+    - The :ref:`Map <maps_view>` tab on the Right Sidebar shows a map with a marker or a thumbnail to indicate the GPS location of the selected image. The map display is purely informative. The GPS coordinates are displayed below the map, along with the time the image was taken.
+
+.. figure:: images/left_sidebar_mapsearch.webp
     :alt:
     :align: center
 
     The digiKam Map Search Tool from Left Sidebar
 
-The earth view is a topographical map of our beautiful home planet. To allow for better orientation the map can offer a scale bar (lower left corner in the figure) as well as a windrose (top right in the figure). To navigate and to control the view you can use the tools on the Navigation info box: Press the arrow buttons to move the frame north/south or east/west.
+The earth view is a topographical map of our beautiful home planet. Optional map overlays include the navigation control shown in the figure, along with a compass rose and a scale bar that are not shown.
 
-You can accomplish the same behavior by pressing the left mouse button somewhere on the globe and by moving the mouse while keeping the left mouse button pressed. Using this click and drag style navigation will allow you to adjust the viewing angle much easier and more precisely. The cursor keys on your keyboard offer another alternative way to quickly change directions.
+Clicking on the navigation control's arrow buttons moves the map frame north/south or east/west. You can also move the map frame by using the keyboard arrow keys, or by clicking and dragging on the map. Navigating via click and drag is a particular easy and precise way to adjust the map frame.
 
-Zoom in and out by moving the vertical slider up and down. If your mouse has a mouse wheel you can use that instead - or you just hold the left and right mouse buttons down both at the same time while moving the mouse up and down. Changing the zoom level step by step can be done via the Zoom In and Zoom Out buttons which are placed above and below the zoom slider (or using the + and - keys on your keyboard).
+Zoom in and out by moving the navigation control's vertical slider up and down, by clicking on the navigation control's + and - buttons, by using the Zoom in |zoom_in| and Zoom out |zoom_out| buttons just below the map, by scrolling the mouse wheel, or by using the :kbd:`+` and :kbd:`-` keys on the keyboard.
+
+The map can be rotated from its center by click and dragging on the map while holding down the right mouse button.
 
 Depending on the map's resolution, zooming in will provide you with more detail. Smaller cities will appear and using the topographic map you might notice that coastlines are provided as vector graphics.
 
 In case you should get lost you can always reset the viewing angle and zoom level back to the point where we started off: Just press the Home button (or the Home button on your keyboard). To set the home location to the current position (center of the map) select the Bookmarks → Set Home Location menu item.
 
-The meaning of “GPS”, as well as the detailed descriptions of the functions and buttons that apply to all three geolocation parts, are described in the :ref:`Geolocation Editor <geolocation_editor>` chapter of this manual. This applies to the context menu on the map and the first line of buttons under the map except for the last three on the right, which are related to filtering and selecting images based on location.
+The meaning of “GPS”, as well as the detailed descriptions of the functions and buttons that apply to all three geolocation maps, are described in the :ref:`Geolocation Editor <geolocation_editor>` chapter of this manual. This applies to the context menu on the map and the first line of buttons under the map except for the last three on the right, which are related to filtering and selecting images based on location.
 
 Usually you will begin searching for images by defining a region on the map. From the **Search by area** buttons click the left one, the **Select images by drawing a rectangle** button. Then draw a selection rectangle by clicking with the left mouse button at the location on the map of the first corner, move the mouse to the location of the second corner, and click a second time. All images that have been geo-coded and that fall within the coordinates of that rectangle will be shown in the Image Area.
 
