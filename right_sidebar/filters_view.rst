@@ -25,7 +25,7 @@ You can also use a combination of the filters, but that requires a little more e
 
 On the other hand, the tags in the tag filter and the individual labels within one type of labels are connected with boolean OR, as you might have noticed already in the public/private example above. That means if you check more than one tag in the **Tags Filter** all images with at least one of these tags applied will show up (as long as they are not ruled out by one of the other filters).
 
-Another use of the Right Sidebar's Filter tab is drag and drop tagging. Let's say you chose a numbers of images to display using the Left Sidebar. In order to apply an existing tag to a selection of these images, simply drag the tag from the Right Sidebar onto an image. A dialog will pop-up and ask if this tag should be applied to this item only, to all (dislayed) items, or to the selected items in the case that more than one icon was selected. Images can also be tagged by dragging the image(s) onto the tag in the Right Sidebar.
+Another use of the Right Sidebar's Filter tab is drag and drop tagging. Let's say you chose a numbers of images to display using the Left Sidebar. In order to apply an existing tag to a selection of these images, simply drag the tag from the Right Sidebar onto an image. A dialog will pop-up and ask if this tag should be applied to this item only, to all (displayed) items, or to the selected items in the case that more than one icon was selected. Images can also be tagged by dragging the image(s) onto the tag in the Right Sidebar.
 
 .. figure:: images/right_sidebar_filters_view.webp
     :alt:

@@ -65,7 +65,7 @@ The Rating section displays a 0...5 star rating scheme that can be used in searc
 
 The labels view also allow you to assign Color and Pick tags that you can use in your workflow to classify items.
 
-These rating are then copied into the XMP tag data fields.
+These ratings are then copied into the XMP tag data fields.
 
 .. _tags_tree:
 
@@ -88,7 +88,7 @@ Otherwise tags are simply applied by checking the respective boxes in the tree. 
 
 .. note::
 
-   In you select a number of images in the Icon-View and then check a tag in the tag tree, that tag is only applied to the highlighted images, and not to the whole contents of the Album.
+   If you select a number of images in the Icon-View and then check a tag in the tag tree, that tag is only applied to the highlighted images, and not to the whole contents of the Album.
 
 .. _informaton_view:
 

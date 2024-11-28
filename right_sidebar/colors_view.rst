@@ -118,7 +118,7 @@ The histogram is a reliable way of deciding whether or not a photograph is corre
 ICC Profile Viewer
 ~~~~~~~~~~~~~~~~~~
 
-An ICC profile is a set of data that characterizes a color input or output device, or a color space, according to standards promulgated by the `International Color Consortium <https://en.wikipedia.org/wiki/International_Color_Consortium>`_. Profiles describe the color attributes of a particular device or viewing requirement by defining a mapping between the device source or target color space and a a device-independent color space called the profile connection space. Mappings may be specified using tables, to which interpolation is applied, or through a series of parameters for transformations used in Color Management.
+An ICC profile is a set of data that characterizes a color input or output device, or a color space, according to standards promulgated by the `International Color Consortium <https://en.wikipedia.org/wiki/International_Color_Consortium>`_. Profiles describe the color attributes of a particular device or viewing requirement by defining a mapping between the device source or target color space and a device-independent color space called the profile connection space. Mappings may be specified using tables, to which interpolation is applied, or through a series of parameters for transformations used in Color Management.
 
 Every image file can be profiled. Camera manufacturers provide profiles for their products, and store them in image files as extra metadata. This ICC Profile viewer displays the textual information for the image's color profile and a chromaticity diagram indicating the image's color gamut.
 

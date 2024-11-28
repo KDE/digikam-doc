@@ -54,9 +54,9 @@ For each section of the metadata sidebar, a bar is available on the top of the v
 
     - A right button |tools| that pops up a menu to export contents:
 
-        - **Copy to clipboard**: copies the metadate text to the clipboard, so it can be pasted into another application.
-        - **Save to file**: saves the metadate text to a data file.
-        - **Print data**: exports the metadate text to a printer or PDF file.
+        - **Copy to clipboard**: copies the metadata text to the clipboard, so it can be pasted into another application.
+        - **Save to file**: saves the metadata text to a data file.
+        - **Print data**: exports the metadata text to a printer or PDF file.
 
 .. note::
 
@@ -128,7 +128,7 @@ XMP standardizes a data model, a serialization format and core properties for th
 
 Although metadata can alternatively be stored in a sidecar file, embedding metadata avoids problems that occur when the metadata is stored separately and separated from the original image file.
 
-XMP offers an an enriched alternative method of storing IPTC fields.
+XMP offers an enriched alternative method of storing IPTC fields.
 
 You can review embedded XMP information for the selected image in the XMP sidebar tab. The XMP Viewer is purely informational: it cannot be used to change any of the XMP data.
 
