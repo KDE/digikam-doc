@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 01:44+0000\n"
+"POT-Creation-Date: 2024-11-28 01:43+0000\n"
 "PO-Revision-Date: 2022-12-29 23:26-0800\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -39,13 +39,13 @@ msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:21
 msgid ""
-"This sidebar tab serves to apply and edit image attributes like captions, "
-"rating, date and tags. The attributes are stored in the associated database, "
-"in the IPTC, XMP, and Exif data fields and become part of the image. All "
-"attributes are accessible in one sidebar view as shown in the screenshot "
-"below. During image reading the order of priority is ``a)`` database ``b)`` "
-"XMP/IPTC and ``c)`` Exif. So if there is a discrepancy between any of the "
-"three, this priority will take effect and a synchronization will take place."
+"This sidebar tab serves to display *and edit* image attributes like "
+"captions, rating, date and tags. The attributes are stored in the associated "
+"database, in the IPTC, XMP, and Exif data fields and become part of the "
+"image. All attributes are accessible in one sidebar view as shown in the "
+"screenshot below. During image reading the order of priority is ``a)`` "
+"database ``b)`` XMP/IPTC and ``c)`` Exif. So any discrepancies in the data "
+"are resolved based on this priority."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:27
@@ -61,7 +61,8 @@ msgid ""
 "The descriptions view can be used to type or paste in a title and/or a "
 "captions of unlimited size (see note below). The text is UTF-8 compatible, "
 "meaning that all special characters are allowed. The captions are copied to "
-"Exif, IPTC, and XMP fields to be used by other applications."
+"the Exif, IPTC, and XMP fields in the image, allowing them to be used by "
+"other applications."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:38
@@ -73,7 +74,7 @@ msgid ""
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:40
-msgid "Title and caption editors are powerful tool which supports:"
+msgid "The title and caption editors are powerful tools which support:"
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:42
@@ -81,33 +82,35 @@ msgid "Multiple alternative language strings."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:43
-msgid "Translate strings online to another language."
+msgid "Translation of strings online to another language."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:44
-msgid "Author strings definition."
+msgid "Author of the strings can be defined."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:46
 msgid ""
-"The default language from an alternative strings stack is **x-default** and "
-"must be written by preference in English. If one string must be entered in "
-"the stack, the x-default must be present in prior."
+"The default language for the caption and title strings is designated **x-"
+"default** and must be written in English. The captions and titles can then "
+"be then automatically translated into other languages and edited, if "
+"necessary. If only a single language is entered, it should be marked as **x-"
+"default**."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:48
 msgid ""
 "After commenting, either choose the **Apply** button or go straight to the "
-"next image, the descriptions will be saved."
+"next image. In either case, the descriptions will be saved to the file."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:50
 msgid ""
 "Next to the Apply button there is the **More** button. From it you can "
 "either choose to read metadata from the selected file to the database, or "
-"the other way around, to write metadata to the files (the latter take place "
-"anyway if you chose a metadata setting so that all metadata is always saved "
-"to the images)."
+"the other way around, to write metadata to the files (although the latter "
+"take place anyway - if you edit the metadata, it will always be saved to the "
+"images file)."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:55
@@ -116,14 +119,16 @@ msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:57
 msgid ""
-"In the Date and Time section, which reflects the time of taking the "
-"photograph, you can change all values. From the date combo-box a calendar "
-"opens, and the time setting spin-box can also be written by directly typing "
-"the time. The dating is copied to the Exif **Date and Time** field. If you "
-"need to change a number of images for their creating time & date, there is a "
-"more comfortable method available in **Batch Queue Manager** or from :"
-"menuselection:`Item --> Adjust time & date...` menu entry in **Main "
-"Window**. Select the images to be changed in the main view and call the tool."
+"In the Date and Time section, which should reflect the time the photograph "
+"was taken, you can edit the displayed values. This is handy if your camera "
+"clock was incorrectly set. You can either directly enter a date, or select a "
+"date from the pop-up calendar. You can likewise directly enter a time, or "
+"use the arrow buttons to adjust the time. Any changes to the date and time "
+"will be copied to the Exif **Date and Time** fields in the file. If you need "
+"to change the creation time & date for a number of images, there is a "
+"simpler method available in **Batch Queue Manager** or from :menuselection:"
+"`Item --> Adjust time & date...` menu entry in the **Main Window**. Select "
+"the images to be changed in the main view, and call the tool."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:62
@@ -141,12 +146,12 @@ msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:66
 msgid ""
-"The labels view allow to assign also the Color and the Pick tags that you "
-"can use in your workflow to classify items."
+"The labels view also allow you to assign Color and Pick tags that you can "
+"use in your workflow to classify items."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:68
-msgid "The rating is then transcribed into the XMP tag data fields."
+msgid "These rating are then copied into the XMP tag data fields."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:73
@@ -165,10 +170,9 @@ msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:83
 msgid ""
-"The tag tree will be adapted dynamically as a function of the search word as "
-"you type into the box. So it is easy to quickly reduce the number of "
-"possibilities when searching for a tag. Of course, this feature is only "
-"useful if you have many tags."
+"The tag tree will dynamically adapt as you type a search word into the box. "
+"So it is easy to quickly reduce the number of possibilities when searching "
+"for a tag. This feature is very useful if you have lots of tags."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:85
@@ -181,15 +185,15 @@ msgstr ""
 #: ../../right_sidebar/captions_view.rst:87
 msgid ""
 "Otherwise tags are simply applied by checking the respective boxes in the "
-"tree. All tags of an image are transcribed into the XMP/IPTC *keywords* data "
-"field."
+"tree. All tags applied to an image are copied into the XMP/IPTC *keywords* "
+"data field."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:91
 msgid ""
-"In case you have selected a number of images in the Icon-View and you check "
-"a tag in the tag tree, this one is only applied to the highlighted images, "
-"and not to the whole Album contents."
+"In you select a number of images in the Icon-View and then check a tag in "
+"the tag tree, that tag is only applied to the highlighted images, and not to "
+"the whole contents of the Album."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:96
@@ -202,14 +206,14 @@ msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:104
 msgid ""
-"The Information view allows to assign a template of textuals information to "
-"items in one pass. This information can be populated in Setup/Template "
-"dialog. They contain all strings describing the contents, the scene, the "
-"authors, the rights, the place etc."
+"The Information view allows you to assign a template of textual information "
+"to multiple items in a single pass. This information can be populated in the "
+"Setup/Template dialog. Each template can contain a set of strings describing "
+"the contents, the scene, the authors, the rights, the place etc."
 msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:106
 msgid ""
-"For more details about Template, see the description of the :ref:`Template "
+"For more details about Templates, see the description of the :ref:`Template "
 "Settings <templates_settings>` section."
 msgstr ""

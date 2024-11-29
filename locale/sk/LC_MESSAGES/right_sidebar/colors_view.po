@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: docs_digikam_org_right_sidebar___colors_view\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 01:44+0000\n"
+"POT-Creation-Date: 2024-11-28 01:43+0000\n"
 "PO-Revision-Date: 2023-03-19 10:25+0100\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -35,8 +35,10 @@ msgstr "Obsah"
 
 #: ../../right_sidebar/colors_view.rst:18
 msgid ""
-"The colors sidebar has two sub tabs **Histogram** and **ICC Profile**. Here "
-"are more details about :ref:`Color Management <color_management>`"
+"The colors sidebar has two sub tabs **Histogram** and **ICC Profile**, which "
+"are described here. More complete information on color management within "
+"digiKam is available in the :ref:`Color Management <color_management>` "
+"chapter of this manual."
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:21
@@ -45,29 +47,21 @@ msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:23
 msgid ""
-"The histogram for an image shows the amount of each color that is present "
-"and their different amplitudes within the image. If your photograph has a "
-"color cast you might be able to see what is wrong by looking at the "
-"histogram."
-msgstr ""
-
-#: ../../right_sidebar/colors_view.rst:25
-msgid ""
 "The Histogram Viewer shows the statistical distribution of color values in "
 "the current image. It is purely informational: nothing you do with it will "
-"cause any change to the image. If you want to perform a histogram based "
-"color correction, use for example Color Balance, Levels Adjust or Curves "
-"Adjust in the Image Editor."
+"cause any change to the image. A histogram-based color correction can be "
+"performed using the Color Balance, Levels Adjust or Curves Adjust features "
+"in the Image Editor."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:31
+#: ../../right_sidebar/colors_view.rst:29
 msgid "The Color View From Right Sidebar Displaying Histogram Information"
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:33
+#: ../../right_sidebar/colors_view.rst:31
 msgid ""
-"An image can be decomposed into **Red**, **Green** and **Blue** color "
-"channels. **Alpha** channel is a Layer in the image that supports "
+"Color images can be decomposed into **Red**, **Green** and **Blue** color "
+"channels. Some images also include an **Alpha** channel that supports "
 "transparency (like PNG or GIF images). Each channel supports a range of "
 "intensity levels from 0 to 255 (integer valued). Thus, a black pixel is "
 "encoded by 0 on all color channels; a white pixel by 255 on all color "
@@ -75,170 +69,171 @@ msgid ""
 "opaque pixel by 255."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:35
+#: ../../right_sidebar/colors_view.rst:33
 msgid "The Histogram Viewer allows you to view each channel separately:"
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:37
+#: ../../right_sidebar/colors_view.rst:35
 msgid "**Luminosity**: shows the distribution of brightness values."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:39
+#: ../../right_sidebar/colors_view.rst:37
 msgid ""
 "**Red**, **Green**, **Blue**: show the distribution of intensity levels for "
 "the Red, Green, or Blue channels respectively."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:41
+#: ../../right_sidebar/colors_view.rst:39
 msgid ""
 "**Alpha**: shows the distribution of opacity levels. If the layer is "
 "completely opaque or completely transparent, the histogram will consist of a "
 "single bar on the left or right edge."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:43
+#: ../../right_sidebar/colors_view.rst:41
 msgid ""
 "**Colors**: shows the **Red**, **Green**, and **Blue** histograms "
 "superposed, so that you can see all of the color distribution information in "
 "a single view."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:45
+#: ../../right_sidebar/colors_view.rst:43
 msgid ""
 "With the **Scale** option you can determine whether the histogram will be "
-"displayed using a linear or logarithmic Y axis. For images taken with a "
-"digital camera, the **Linear** mode is usually the most useful. However, for "
-"images that contain substantial areas of constant color a **Linear** "
-"histogram will often be dominated by a single bar. In this case a "
-"**Logarithmic** histogram will be more useful."
+"displayed using a linear or logarithmic vertical axis. The **Linear** mode "
+"is usually the most useful for images taken with a digital camera. However,  "
+"a **Linear** histogram for images that contain substantial areas of constant "
+"color will often be dominated by a single bar. In this case a "
+"**Logarithmic** histogram may be more useful."
+msgstr ""
+
+#: ../../right_sidebar/colors_view.rst:45
+msgid ""
+"You can restrict the analysis of the **Statistics** field shown in the "
+"middle of the dialog to a limited range of values by setting the minimum and "
+"maximum range in one of two ways:"
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:47
 msgid ""
-"You can restrict the analysis of the **Statistics** field shown at the "
-"bottom of the dialog to a limited range of values if you wish. You can set "
-"the range in one of two ways:"
+"Click and drag the pointer across the desired range span within the "
+"histogram display area."
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:49
 msgid ""
-"Click and drag the pointer across the histogram display area, from the "
-"lowest level to the highest level of the range you want."
+"Use the spin button fields below the histogram area. The left entry is the "
+"minimum  range and the right entry is maximum range."
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:51
 msgid ""
-"Use the spin button entries below the histogram area. Left entry is bottom "
-"of range and right entry is top of range."
-msgstr ""
-
-#: ../../right_sidebar/colors_view.rst:53
-msgid ""
-"The statistics shown at the bottom of the Histogram Viewer describe the "
+"The statistics shown in the middle of the Histogram Viewer describe the "
 "distribution of channel values, restricted to the selected range. These are:"
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:55
+#: ../../right_sidebar/colors_view.rst:53
 msgid "The number of pixels in the image."
 msgstr ""
 
+#: ../../right_sidebar/colors_view.rst:55
+msgid "The number of pixels whose values fall within the selected range."
+msgstr ""
+
 #: ../../right_sidebar/colors_view.rst:57
-msgid "The number whose values fall within the selected range."
+msgid "The mean of the pixels within the selected range."
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:59
-msgid "The mean."
+msgid "The standard deviation of the pixels within the selected range."
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:61
-msgid "The standard deviation."
+msgid "The median of the pixels within the selected range."
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:63
-msgid "The median of the selected histogram portion."
+msgid "The percentage of pixels whose values fall within the selected range."
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:65
-msgid "The percentage whose values fall within the selected range."
-msgstr ""
-
-#: ../../right_sidebar/colors_view.rst:67
 msgid "The color depth of the image."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:69
-msgid "Alpha channel in the image."
+#: ../../right_sidebar/colors_view.rst:67
+msgid "Is there an alpha channel in the image?"
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:71
+#: ../../right_sidebar/colors_view.rst:69
 msgid ""
-"The source of the histogram, either **Full Image** or **Image Region** if "
-"you have selected an area of the image loaded in the Editor."
+"The source of the histogram, either **Full Image**, or **Image Region** if "
+"you have selected an area of the image within the Image Editor."
+msgstr ""
+
+#: ../../right_sidebar/colors_view.rst:72
+msgid "How To Use a Histogram"
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:74
-msgid "How To Use an Histogram"
+msgid ""
+"Histograms are a graphical means to assess the color and tonal qualities of "
+"an image shown on the screen. The graph can be divided into 3 regions of "
+"photographic brightness:"
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:76
-msgid ""
-"Histograms are a graphical means to assess the accuracy of an image shown on "
-"the screen. The graph represents the 3 regions of the photograph brightness:"
+msgid ": the shadows on the left of the histogram."
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:78
-msgid ": the shadows-tone on the left."
+msgid ": the mid-tones in the middle."
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:80
-msgid ": the middle-tone in the middle."
+msgid ": the highlights on the right of the histogram."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:82
-msgid ": the highlights-tone on the right."
+#: ../../right_sidebar/colors_view.rst:86
+msgid "An Image Histogram in All Colors Mode"
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:88
-msgid "An Image Histogram in All Colors Mode"
+msgid ""
+"The spread of the histogram, and where the spikes and bulges are clustered, "
+"indicates whether the image is too dark, too bright, or well-balanced."
 msgstr ""
 
 #: ../../right_sidebar/colors_view.rst:90
 msgid ""
-"The distribution of the graph, where the spikes and bulges are clustered, "
-"indicates whether the image is too dark, too bright, or well-balanced."
-msgstr ""
-
-#: ../../right_sidebar/colors_view.rst:92
-msgid ""
-"With an under exposed photograph, the histogram will have a distribution of "
+"The histogram for an under exposed photograph will have a distribution of "
 "brightness that tends to be mostly on the left of the graph."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:98
+#: ../../right_sidebar/colors_view.rst:96
 msgid "An Under Exposed Photograph"
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:100
+#: ../../right_sidebar/colors_view.rst:98
 msgid ""
-"With a correctly exposed photograph, the histogram will have a distribution "
-"of brightness that will be most prominent near the center part of the graph."
+"The histogram for a correctly exposed photograph will have a distribution of "
+"brightness that will be most prominent near the center part of the graph."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:106
+#: ../../right_sidebar/colors_view.rst:104
 msgid "A Correctly Exposed Photograph"
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:108
+#: ../../right_sidebar/colors_view.rst:106
 msgid ""
-"With an over exposed photograph, the histogram will have the bulge showing "
-"the brightness distributed mostly towards the right of the graph."
+"The histogram for an over exposed photograph will have the bulge showing the "
+"brightness distributed mostly towards the right of the graph."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:114
+#: ../../right_sidebar/colors_view.rst:112
 msgid "An Over Exposed Photograph"
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:116
+#: ../../right_sidebar/colors_view.rst:114
 msgid ""
 "Not all photographs have to exhibit this bulge in the center part of their "
 "histogram. Much depends on the subject of the photograph. In some cases, it "
@@ -246,38 +241,39 @@ msgid ""
 "other, or both."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:118
+#: ../../right_sidebar/colors_view.rst:116
 msgid ""
 "The histogram is a reliable way of deciding whether or not a photograph is "
-"correctly exposed. Should the histogram show an over or under exposure, an :"
-"ref:`Exposure Correction Tool <color_bcg>` should be used to fix the "
-"photograph."
+"correctly exposed. Should the histogram show an over or under exposure, it "
+"may be possible to fix the photograph using the :ref:`Exposure Correction "
+"Tool <color_bcg>`."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:121
+#: ../../right_sidebar/colors_view.rst:119
 msgid "ICC Profile Viewer"
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:123
+#: ../../right_sidebar/colors_view.rst:121
 msgid ""
 "An ICC profile is a set of data that characterizes a color input or output "
 "device, or a color space, according to standards promulgated by the "
 "`International Color Consortium <https://en.wikipedia.org/wiki/"
 "International_Color_Consortium>`_. Profiles describe the color attributes of "
 "a particular device or viewing requirement by defining a mapping between the "
-"device source or target color space and a profile connection space. Mappings "
-"may be specified using tables, to which interpolation is applied, or through "
-"a series of parameters for transformations used in Color Management."
+"device source or target color space and a a device-independent color space "
+"called the profile connection space. Mappings may be specified using tables, "
+"to which interpolation is applied, or through a series of parameters for "
+"transformations used in Color Management."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:125
+#: ../../right_sidebar/colors_view.rst:123
 msgid ""
-"Every files used to store captured image can be profiled. Camera "
-"manufacturers provide profiles for their products, and store them in image "
-"file as extra metadata. This ICC Profile viewer allows to display the "
-"textual information and a flat graph of color space."
+"Every image file can be profiled. Camera manufacturers provide profiles for "
+"their products, and store them in image files as extra metadata. This ICC "
+"Profile viewer displays the textual information for the image's color "
+"profile and a chromaticity diagram indicating the image's color gamut."
 msgstr ""
 
-#: ../../right_sidebar/colors_view.rst:132
+#: ../../right_sidebar/colors_view.rst:130
 msgid "The Color View From Right Sidebar Displaying Color Profile Information"
 msgstr ""
