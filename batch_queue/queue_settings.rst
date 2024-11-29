@@ -15,16 +15,16 @@ Queue Settings
 
 .. contents::
 
-On the bottom left of the Batch Queue Manager, a view dedicated to host the settings for a queue is available to tune the configurations categorized in five tabs. Batch Queue Manager allows to host many queues to process at the same time on the top left side. Each queue can have a different settings than other one. You switch from one to one by clicking on the wanted queue tab on the top.
+The **Queue Settings** area in the bottom left of the Batch Queue Manager is used to adjust the settings for each queue. The settings in this area are organized into five tabs. The Batch Queue Manager supports the definition of multiple queues, which are shown as tabs in the **Queues** list, and each queue can have its own settings. The Queue Settings display updates when you switch from one queue to another by clicking on a queue tab in the **Queues** list.
 
 .. note::
 
-    With the Workflow feature, you can store your preferred queue settings for a later use. See :ref:`this section <bqm_workflow>` of the manual for details.
+    With the Workflow feature, you can store your preferred queue settings for later use. See :ref:`this section <bqm_workflow>` of the manual for details.
 
-Target Album
-------------
+Target
+------
 
-This view allows to select where the target files processed will be stored. Two choices are possible: at the same album than original files, or a dedicated album. The search field on the bottom allows to filter album tree-view with huge collections.
+This tab allows you to select the album where the target or result files will be stored. Two choices are supported: the same album where the original files are stored, or another album. The search field on the bottom allows you to filter the album tree-view, a handy feature if you have a huge collection.
 
 .. figure:: images/bqm_queue_settings_target.webp
     :alt:
@@ -35,9 +35,9 @@ This view allows to select where the target files processed will be stored. Two 
 File Renaming
 -------------
 
-This view allows to customize the file renaming rules. On the **Queues** view, the **Original** and the **Target** file names will give you a feedback about the file renaming.
+This tab allows you to customize the file renaming rules. The **Original** and **Target** file names list in the **Queues** view provides examples of how the target files will be renamed.
 
-The renaming settings is exactly the same than **Advanced Rename** tool available from **Main Window**. See :ref:`this section <renaming_photograph>` from the manual for details.
+The settings for file renaming are exactly the same as in the **Advanced Rename** tool available from **Main Window**. See :ref:`this section <renaming_photograph>` from the manual for details.
 
 .. figure:: images/bqm_queue_settings_rename.webp
     :alt:
@@ -48,13 +48,13 @@ The renaming settings is exactly the same than **Advanced Rename** tool availabl
 Behavior
 --------
 
-This view allows to customize important rules while the queue is processed.
+This tab allows you to customize certain behaviors that control queue processing.
 
-The **RAW Files Loading** setting configure how the RAW files will be processed: using the **RAW Decoding** settings to process standard demosaicing (see below), or through the use of the **Embedded Preview**. This last one is very fast compared to RAW decoded.
+The **RAW Files Loading** setting configures how any RAW files will be processed: select **RAW Decoding** to process with standard demosaicing (see below), or select **Embedded Preview** to process with an embedded preview. This last option is very fast compared to RAW decoding.
 
-The **Target File Exists** setting allows to customize the behavior when target file exists. You can **Store as a Different file Name**, **Overwrite Automatically** the file, or **Skip Automatically** to don't touch the target file. In all cases, Batch Queue Manager will not ask you about this behavior while running.
+The **Target File Exists** setting allows you to customize the behavior when the target file already exists. You can **Store as a different name**, **Overwrite automatically** to overwrite the target file, or **Skip automatically** to skip overwriting the target file. No matter what option is selected, the Batch Queue Manager will not ask you about this behavior while running.
 
-The **Save Image as a Newly Created Branch** setting will use **Image Versioning** to name target files. It's the same behavior when you export file from **Image Editor** when Versioning feature is enabled.
+The **Save Image as a Newly Created Branch** setting will use **Image Versioning** to name target files. This is the same behavior as when files are exported from **Image Editor** when Versioning feature is enabled.
 
 The **Work on all Processor Cores** setting will use more than one core to process items in parallel from the same queue.
 
@@ -67,9 +67,9 @@ The **Work on all Processor Cores** setting will use more than one core to proce
 RAW Decoding
 ------------
 
-This view allows to customize the RAW Import settings for the Batch Queue Manager. Typically these settings are used when a RAW files is present in a Queue. To process the file and operate filters, the RAW data needs to be decoded to be loaded in memory in a RGB color space. This setting is only used if **Behavior/RAW Files Loading** is set to **RAW Decoding**.
+This tab allows you to customize the RAW Import settings for the Batch Queue Manager. Typically these settings are used when a RAW files is present in a Queue. RAW files need to be decoded and loaded into memory in a RGB color space before batch processing the file. This setting is only used if **Behavior/RAW Files Loading** is set to **RAW Decoding**.
 
-All the details of these settings is described in the **RAW Import** section from :ref:`the Image Editor configuration <setup_rawdefault>`.
+The **RAW Import** section of :ref:`the Image Editor configuration <setup_rawdefault>` provides a detailed description of these settings.
 
 .. figure:: images/bqm_queue_settings_raw.webp
     :alt:
@@ -80,9 +80,9 @@ All the details of these settings is described in the **RAW Import** section fro
 Saving Images
 -------------
 
-This view allows to customize the settings used while image needs to be saved in the original format. A queue can process file without exporting results to another format, as loading **JPEG** files and apply **White Balance** and **Resize** tools. Without a convert tool at end of your workflow, the Batch Queue Manager will write processed images in same formats that originals and use these settings as well.
+This tab allows you to customize the settings used while saving the image. It is not uncommon for a queue to process files without exporting the results into another format. An example would be loading **JPEG** files, applying **White Balance** and **Resize** tools, and then storing the results as **JPEG** files. When you want to save the results of batch processing into a file type different than the original, you need to apply a convert tool at end of your workflow. In either case, these Tool Settings are used to control the export process.
 
-All the details of these settings is described in **Save Images** section from :ref:`the Image Editor configuration <saveimage_settings>`. 
+All the details of these settings is described in **Save Images** section from :ref:`the Image Editor configuration <saveimage_settings>`.
 
 .. figure:: images/bqm_queue_settings_save.webp
     :alt:

@@ -16,7 +16,7 @@ Batch Queue Manager
 .. figure:: images/index_batch_queue.webp
     :alt:
 
-This section explain how to use the digiKam batch queue manager.
+This section explains how to use the digiKam Batch Queue Manager.
 
 .. toctree::
    :maxdepth: 2

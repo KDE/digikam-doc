@@ -15,29 +15,29 @@ Overview
 
 .. contents::
 
-digiKam features a batch queue manager in a separate window to easily process in batch items, aka filtering, converting, transforming, etc. It works with all supported image formats including RAW files.
+digiKam features a batch queue manager that opens in a separate window to easily batch process a list of items, aka filtering, converting, transforming, etc. Batch processing works with all supported image formats including RAW files.
 
-Select one or several images in any view from the main window, call **Add to Current Queue** :kbd:`Ctrl+B` from the context menu. The selection will be added to the batch queue manager, and its separate window will open. When you are back to the digiKam main window you can quickly access the batch queue manager with :menuselection:`Tools --> Batch Queue Manager` :kbd:`B`.
+To select images for batch processing, select one or several images in any view from the main window, then select **Add to Current Queue** :kbd:`Ctrl+B` from the context menu. The selection will be added to the batch queue, and a separate Batch Queue Manager window will open. You can also quickly open the Batch Queue Manager window from the digiKam **Main Window** by selecting :menuselection:`Tools --> Batch Queue Manager` :kbd:`B`, or by clicking **Batch Queue Manager** in the main toolbar.
 
 .. figure:: images/bqm_main_view.webp
     :alt:
     :align: center
 
-    The Batch Manager Window
+    The Batch Queue Manager Window
 
-On the **top left** side, the window shows the list of queues to process. Queues are a stack of items to batch using the same tools and the same settings. Each queue will be processed sequentially, but queue contents can be processed in parallel, depending of the settings. In this view, the list is ordered in flat showing item thumbnail, the original filename, and the target filename corresponding of the result.
+The Batch Queue Manager window displays the list of **Queues** to process on the top left. Queues are a stack of items to batch process, applying the same tools with the same settings to each image in the queue. Each queue is processed sequentially, but queue contents can be processed in parallel, depending on the Queue Settings. The Queue list shows queues as tabs, with each tab listing the items in that queue as an ordered table displaying the item thumbnail, the original filename, and the target filename indicating where the result should be stored.
 
 .. tip::
 
-    If you want to process in a queue the items from an album and all sub-albums, just turn on the option to display sub-albums in the Album-View using the :menuselection:`View --> Include Album-Sub Tree` menu entry, and then select the corresponding items and add them to the Batch Queue Manager.
+    If you want to process the items from an album and all sub-albums in a queue, just turn on the option to display sub-albums in the Album-View using the :menuselection:`View --> Include Album-Sub Tree` menu entry, select the corresponding items, and then add them to the Batch Queue Manager.
 
-On the **top middle**, this view shows the flat list of tools to apply on items queue. Each tool are apply step by step from the top to the bottom. You can arrange the order as you want. It's highly recommended to export to a new format at end of this list to be sure to preserve the best image quality.
+The list of **Assigned Tools** to apply to each item in the queue is shown in the top middle of the window. Each tool in this list is applied sequentially from the top to bottom. You can drag tools within this list to rearrange the order as needed. It's highly recommended that you export to a new format at end of this list in order to preserve the best image quality.
 
-On the **top right** side, this view shows the settings of the current tool selected on the top middle view. These settings will be saved in the queue and applied to all items to process in batch.
+To adjust the settings for a tool, select the tool from the Assigned Tools list. The settings for that tool are then displayed in the **Tool Settings** area in the top right of the window. Any changes to these settings will be saved in the queue and applied to all items during batch processing.
 
-On the **bottom left**, the view shows all root settings for a queues, as the RAW processing, the file rename rules, the target place to store results, etc. The file renaming view is mostly the same than **Advanced Rename** tool available in **Main Window**. See the full description in :ref:`this section <renaming_photograph>` of this manual.
+The **Queue Settings** in the bottom left of the window shows all of the root settings for the selected queue. These include where to save the target files, file renaming rules, general behaviors for file handling, settings for processing RAW files, and image settings for the target files. The file renaming view is mostly the same as for the **Advanced Rename** tool available in **Main Window**. See the full description in :ref:`this section <renaming_photograph>` of this manual.
 
-On the **bottom right**, the view shows the collection of tools available in batch queue manager. You can assign a tool to the current queue by a double click or a drag and drop. This view shows also a list of pre-recorded queue settings to allows to replay later workflow. Finally a tab show a flat list of batch operations processed on queue as a log-file.
+The **Control Panel** in the bottom right of the window shows the collection of tools available in the batch queue manager. You can assign a tool to the current queue by a double clicking or a drag and drop. This view also shows a list of pre-recorded queue settings that allows you to later replay a previous workflow. Finally the History tab shows a log-file of previous batch operations.
 
 .. figure:: videos/bqm_tools_assignment.webp
     :width: 500px

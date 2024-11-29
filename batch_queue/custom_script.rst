@@ -18,9 +18,9 @@ Custom Script
 Overview
 --------
 
-The batch Queue Manager allows to customize a **Workflow** with a specific plugin dedicated to run a script and process your images with external tools as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_ for example.
+The Batch Queue Manager allows you to customize a **Workflow** by adding the **Custom Script** tool to run a script to process your images with external tools such as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_.
 
-The Tool is named **Custom Script**, available in **Base Tools** list, and **Custom Tools** category. The goal is to pass to a script source code written by the user in the plugin, a series of environment variables handled in the code and re-routed for a custom usage with delegate command line programs installed on your computer.
+The is named **Custom Script** tool is available from the **Custom Tools** category of the **Base Tools** list. The tool is designed to execute the source code for a shell script that can call one or more command line programs for each item in the Queue. the shell script is written by the user entirely within the plugin. These scripts can include a set of environment variables that specify filenames and few types of metadata.
 
 .. figure:: images/bqm_custom_script.webp
     :alt:
@@ -30,49 +30,49 @@ The Tool is named **Custom Script**, available in **Base Tools** list, and **Cus
 
 The tool provides these options:
 
-    - **Output Image Type**: this value allows to setup the expected type of image format to use at the output of your script. The default is **Same as input**, but you can set **JPEG**, **PNG**, or **TIFF**. Take a care that JPEG is a lossy compression format, only support 8-bit color depth, and does not supports transparency.
+    - **Output Image Type**: specifies the expected image format at the output of your script. The default is **Same as input**, but you can set **JPEG**, **PNG**, or **TIFF**. Please note that JPEG is a lossy compression format, only supports 8-bit color depth, and does not support transparency.
 
-    - **Shell Script**: this text edit field allows to enter the source code of your shell script. Under **Linux** and **macOS**, `Bash script <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported. Under **Windows** `Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported.
+    - **Shell Script**: this text field is where you enter the source code for your shell script. `Bash script <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported under **Linux** and **macOS**. `Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported under **Windows**.
 
-The keywords that you can use in your script code are listed below. The tool will replace all occurrences of keywords in script at run time before shell execution. Take a care that keywords are case sensitive.
+The keywords that you can use in your script code are listed below. The tool will replace all occurrences of keywords in the shell script at run time before the script execution. Note that the keywords are case sensitive.
 
-    - **$INPUT** for workflow input filename (with special characters escaped).
+    - **$INPUT** is replaced by the workflow input filename (with special characters escaped).
 
-    - **$OUTPUT** for workflow output filename (with special characters escaped).
+    - **$OUTPUT** is replaced by the workflow output filename (with special characters escaped).
 
 .. important::
 
-    A new file is always expected on **$OUTPUT**. With a script programs that do not create a new file (e.g. changing metadata with ExifTool) you must first copy **$INPUT** to **$OUTPUT** with a command appropriate to the operating system and then make the changes to **$OUTPUT**.
+    A new file is always expected on **$OUTPUT**. Script programs that do not create a new file (e.g. changing metadata with ExifTool), must first copy **$INPUT** to **$OUTPUT** with the appropriate command for the operating system, before making any changes to **$OUTPUT**.
 
-The environment variables that you can use in your script code are listed below:
+The environment variables that you can use in your shell script are:
 
-    - **TITLE**: to handle digiKam **Title** item properties from database.
+    - **TITLE**: to use the digiKam **Title** item property from the database.
 
-    - **COMMENTS**: to handle digiKam **Caption** item properties from database.
+    - **COMMENTS**: to use the digiKam **Caption** item property from the database.
 
-    - **COLORLABEL**: to handle digiKam **Color Label** item properties from database.
+    - **COLORLABEL**: to use the digiKam **Color Label** item property from the database.
 
-    - **PICKLABEL**: to handle digiKam **Pick Label** item properties from database.
+    - **PICKLABEL**: to use the digiKam **Pick Label** item property from the database.
 
-    - **RATING**: to handle digiKam **Rating** item properties from database.
+    - **RATING**: to use the digiKam **Rating** item property from the database.
 
-    - **TAGSPATH**: to handle digiKam **Tags** item properties from database.
+    - **TAGSPATH**: to use the digiKam **Tags** item property from the database.
 
 .. note::
 
-    Under Linux and macOS, environment variables can be accessed in script with **$** as prefix of variable names (for example **$INPUT**). The interpreter used to run the script is **/bin/bash**.
+    Under Linux and macOS, environment variables can be accessed in the script with **$** as a prefix for variable names (for example **$INPUT**). The interpreter used to run the script is **/bin/bash**.
 
-    Under Windows, environment variables can be accessed in script with **%** as prefix and suffix of variable names (for example **%INPUT%**). The interpreter used to run the script is **cmd.exe**.
+    Under Windows, environment variables can be accessed in the script with **%** as a prefix and suffix of variable names (for example **%INPUT%**). The interpreter used to run the script is **cmd.exe**.
 
 
 Return Value
 ------------
 
-By convention, a **Bash script** under Linux and macOS, 0 is returned on success or an integer in the range 1-255 for something else. Use **exit < error_code >** to pass the return value on the workflow.
+By convention, a **Bash script** under Linux and macOS returns 0 on success or an integer in the range 1-255 for an error. Use **exit < error_code >** to pass the return value back to the workflow.
 
-Under Windows, a **Batch script** returns 0 on success and another value for something else, but the value is a signed integer, so a negative value is possible. Use **EXIT /B < error_code >** to pass the return value on the workflow.
+Under Windows, a **Batch script** returns 0 on success and another value for an error, but the value is a signed integer, so a negative value is possible. Use **EXIT /B < error_code >** to pass the return value to the workflow.
 
-The Batch Queue Manager handles the value returned by your script. If zero is returned, the workflow continue as expected, else the workflow is broken and Batch Queue Manager stop the process.
+The Batch Queue Manager handles the value returned by your script. If zero is returned, the workflow will continue as expected, otherwise the workflow is interrupted and the Batch Queue Manager stops processing.
 
 Examples
 --------
@@ -80,7 +80,7 @@ Examples
 Proof of Concept
 ~~~~~~~~~~~~~~~~
 
-This First example that you can see below, ...do nothing special. It will print on the console the input/output file names and item properties passed from batch queue manager to the script and copy input file to output file (this stage is required else Batch Queue Manager returns an error as the target file does not exist). The script returns the value from the file copy command, this one is parsed by the Batch Queue Manager to check the workflow stream.
+This First example shown below does nothing special. It prints on the console the input/output file names and item properties passed from the Batch Queue Manager to the script, and copies the input file to the output file (this stage is required to prevent the Batch Queue Manager from returning an error because the target file does not exist). The script returns the value from the file copy command, which is parsed by the Batch Queue Manager to for each item in the workflow.
 
 .. code-block:: bash
 
@@ -125,7 +125,7 @@ The digiKam information taken from the database are:
 Add a Watermark with ImageMagick
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The second example below is more complex and uses **ImageMagick** command like tool to add a multiline text superimposed over pictures to create a visible watermark on the center of images.
+The second example below is more complex and uses the **ImageMagick** command line tool to add visible watermarks by superimposing a multiline text field over each image in the Queue.
 
 .. code-block:: bash
 
