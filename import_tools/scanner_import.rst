@@ -15,17 +15,15 @@ Import From Scanner
 
 .. contents::
 
-This tool is dedicated to scan images using a flat scanner. It uses an interface for `SANE Library <http://sane-project.org/>`_ to control scanner devices. It can save images in all main image containers that digiKam support.
+This tool can scan images using a flatbed scanner. It uses an interface for the `SANE Library <http://sane-project.org/>`_ to control the scanner. It can save scanned images into all of the main image formats that digiKam supports.
 
 .. note::
 
     You can check the status of your scanner support from the SANE project website by using `this manufacturers list <http://www.sane-project.org/sane-mfgs.html>`_.
 
-If the selected scanner cannot be opened or if no default scanner is provided, a scanner selection dialog is opened.
+If the selected scanner cannot be opened, or if no default scanner is provided, a scanner selection dialog is displayed. Select the scanner to be used and press **OK** to open the scanner. Pressing **Cancel** will exit the tool.
 
-The user can choose the scanner to be used and press **OK** to open the scanner. Pressing **Cancel** will cause the tool to exit.
-
-In case no devices were found, maybe because the scanner is not plugged in or switched off, correct that. Then the **Reload device list** can be used to reload the list of scanners.
+In the case where no device is found, check that the scanner is plugged in or switched on. The **Reload device list** can be used to reload the list of scanners.
 
 .. figure:: images/scanner_error_dialog.webp
     :alt:
@@ -35,7 +33,9 @@ In case no devices were found, maybe because the scanner is not plugged in or sw
 
 .. note::
 
-    Not all drivers or backends support this feature. In that case quit the tool, connect your scanner and restart digiKam.
+    Not all drivers or backends support the Reload feature. In this case, quit the tool, connect your scanner and restart digiKam.
+
+The main window presents the user with three sets of scan options: Basic, Advanced, and Scanner Specific. The **Basic Options** tab contains the most common parameters that the SANE scanner backends provide.
 
 .. figure:: images/scanner_basic_options.webp
     :alt:
@@ -43,7 +43,7 @@ In case no devices were found, maybe because the scanner is not plugged in or sw
 
     The Basic Options View from Scanner Import Dialog
 
-In the main window, the user has two sets of scan options: Basic, Advanced, or Specific Options. The **Basic Options** tab contains the most common parameters that the SANE scanner backends provide, the **Advanced Options** contains the analog gamma tables, while the **Scanner Specific Options** tab contains all the options of the backend. The options listed here depend on SANE support for your driver: the interface should be able to display most of the types of parameters that SANE provides. 
+The **Advanced Options** tab contains the analog gamma tables, along with some less common options.
 
 .. figure:: images/scanner_advanced_options.webp
     :alt:
@@ -51,7 +51,7 @@ In the main window, the user has two sets of scan options: Basic, Advanced, or S
 
     The Advanced Options View from Scanner Import Dialog
 
-The **Scanner specific options** contains more detailed options of the backends. The tool does not have any special handling for these options.
+The **Scanner Specific Options** tab contains all of the scanner specific options. The options listed here depend on the SANE parameters supported by your driver. The scanner import dialog should be able to display most of the parameter types that SANE provides.
 
 .. figure:: images/scanner_specific_options.webp
     :alt:
@@ -59,9 +59,9 @@ The **Scanner specific options** contains more detailed options of the backends.
 
     The Specific Options View from Scanner Import Dialog
 
-If you are satisfied with your settings, you can use the little arrow on the top of the options splitter. When clicked it collapses or expands the options. The collapser can overlap the preview area, but fades away when the mouse cursor moves out of the collapser.
+The settings area in the Scanner Import Dialog can be collapsed or expanded by clicking on the little arrow on top of the options splitter. The collapser can overlap the preview area, but fades away when the mouse cursor moves out of the collapser.
 
-To scan an image, the user can start with a preview scan and then select the part of the scan area to do the final scan on. The preview scan is started by pressing the **Preview** button.
+Click on the **Scan** botton to scan the entire image.
 
 .. figure:: images/scanner_scan_preview.webp
     :alt:
@@ -69,9 +69,9 @@ To scan an image, the user can start with a preview scan and then select the par
 
     The Digital Preview from Scanner Import Dialog
 
-When the preview is scanned the area for the final image can be selected. When the image is selected the final image can be acquired by pressing the final **Scan** button. You will see the progress of the scan.
+To scan a selected portion of an image, first click the **Preview** button to perform a quick preview scan. Then select the part of the scan area to perform the final scan, before clicking the Scan button. The progress of the scan will be displayed.
 
-Sometimes you need only certain parts of an image. Instead of scanning the whole picture and then using the Image Editor to save the different image parts into separate files, use the tool multiple selection feature.
+Sometimes you need only specific parts of an image. Instead of scanning the whole picture and then using the Image Editor to save different parts of the image into separate files, you can use the multiple selection feature of the tool.
 
 .. figure:: images/scanner_scan_multisel.webp
     :alt:
@@ -79,10 +79,10 @@ Sometimes you need only certain parts of an image. Instead of scanning the whole
 
     The Multiple Selection over Preview from Scanner Import Dialog
 
-Scan a preview and then use the left mouse button to select the first part of the image in the preview. Hover the selected area with mouse cursor and click on the **Green Plus** button to select the area. Selected areas are indicated by a red border. Now select the next parts of the image in the same way.
+Scan a preview and then use the left mouse button to select the first part of the image from the preview. Hover over the selected area with the mouse cursor and click on the **Green Plus** button to select the area. Selected areas are indicated by a red border. Now select the next parts of the image in the same way.
 
-To remove a single selection hover the area with the mouse cursor and click on the **Red Minus** button. With **Clear Selections** from the context menu launched with the right mouse button all selections in a preview can be removed.
+To remove a single selection, hover over the area with the mouse cursor and click on the **Red Minus** button. All selections in the preview can be removed by selecting the **Clear Selections** item from the context menu displayed by clicking the right mouse button.
 
-If you placed two separate images or photos on you scanner and started a preview the tool automatically preselect the different areas.
+If you place two separate images or photos on your scanner and run a preview scan, the tool will automatically preselect the different areas.
 
-If you are satisfied with your choice starting the final batch scan of all selections. The selected parts of the image are scanned and saved separately into different files.
+Once satisfied with the selected areas, start the final batch scan to scan all the selections. The selected parts of the image are scanned and saved separately into different files.

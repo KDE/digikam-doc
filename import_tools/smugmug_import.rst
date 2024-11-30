@@ -15,11 +15,11 @@ Import from SmugMug
 
 .. contents::
 
-This tool allows the user to download photos from the SmugMug web-service.
+This tool downloads photos from the SmugMug web-service.
 
-`SmugMug <https://en.wikipedia.org/wiki/SmugMug>`_ is an image sharing, image hosting service, and online video platform on which users can upload photos and videos. The company also facilitates the sale of digital and print media for amateur and professional photographers.
+`SmugMug <https://en.wikipedia.org/wiki/SmugMug>`_ is an image sharing, image hosting, and online video platform on which users can upload photos and videos. The company also facilitates the sale of digital and print media for amateur and professional photographers.
 
-The tool can be used to download files from the remote SmugMug server to the image collections on your computer using the Internet. Use the :menuselection:`Import --> Import from SmugMug` :kbd:`Alt+Shift+S` menu entry to access to this tool, or use the icon from the **Tools** tab in the Right Sidebar. You will be taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched to help you logging in to SmugMug:
+The tool can be used to download files from the remote SmugMug server to the image collections on your computer using the Internet. Use the :menuselection:`Import --> Import from SmugMug` :kbd:`Alt+Shift+S` menu entry to access to this tool, or use the icon in the **Tools** tab in the Right Sidebar. You will be taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched to help you log in to SmugMug:
 
 .. figure:: images/import_smugmug_login.webp
     :alt:
@@ -27,7 +27,7 @@ The tool can be used to download files from the remote SmugMug server to the ima
 
     The SmugMug Login Dialog
 
-After successful sign-up digiKam will be allowed to send photos to the SmugMug website. You will be presented with the following page:
+After successful sign-up, digiKam will be allowed to send photos to the SmugMug website. You will be presented with the following page:
 
 .. figure:: images/import_smugmug_authorize.webp
     :alt:
@@ -35,7 +35,7 @@ After successful sign-up digiKam will be allowed to send photos to the SmugMug w
 
     The SmugMug Authorize Dialog
 
-Then, simply authorize application and close the web browser. Return to the host application dialog, you will see the interface used to download photos from SmugMug.
+Then, simply authorize the application and close the web browser. Returning to the host application dialog, you will see the interface used to download photos from SmugMug.
 
 .. figure:: images/import_smugmug_dialog.webp
     :alt:
@@ -43,8 +43,8 @@ Then, simply authorize application and close the web browser. Return to the host
 
     The SmugMug Import Tool Dialog
 
-With the **Album** options, you can select the online folder to get files to download. You can **Reload** the list on the combo-box if online contents have been changed in SmugMug web interface.
+With the **Album** options, you can select the online folder to get files to download. You can **Reload** the list in the combo-box if the online contents have changed in the SmugMug web interface.
 
-Below, the main dialog propose the hierarchy of physical **Albums** from your collection. Selected one target entry to import files, or if you want a new one, just press **New Album** button to create a nested entry in the tree-view.
+The hierarchy of physical **Albums** in your collection are shown at the bottom of the main dialog. Specify the target Album where the files should be imported, or press the **New Album** button to create a new album for the downloaded files.
 
-Press **Start Download** button to transfer items. You can click on the **Close** button to abort the uploading of photos.
+Press the **Start Download** button to transfer the photos. You can click on the **Close** button to abort the transfer.

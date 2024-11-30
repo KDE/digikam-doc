@@ -15,15 +15,15 @@ Overview
 
 .. contents::
 
-To be able to use your digital camera with digiKam, connect the camera to your computer, switch the camera to the image display mode and turn it on. With phone camera, it can be necessary to give right to computer to access of device contents. See your camera's user manual if you need more information.
+To use digiKam to download images directly from your digital camera, connect the camera to your computer, switch the camera to the image display mode and turn it on. To download images from your phone's camera, it may be necessary to give your computer the rights to access of phone's contents. See your camera's user manual for more information.
 
-The Import Interface helps you to get photographs into a digiKam Album, whether it is directly from your camera or a scanner, from a USB mass storage device, via a card reader or from a local or remote folder. You can access the Import Interface by
+The Import Interface helps you to get photographs into a digiKam Album, whether it is directly from your camera or scanner, from a USB mass storage device, via a card reader, or from a local or remote folder. You can access the Import Interface by
 
 :menuselection:`Import --> Cameras`
 
     Select one of the cameras from the submenu or choose **Add Camera Manually**.
 
-    The latter will open the dialog described in the Camera Settings section of this handbook. If you want to have more information about how digiKam supports digital cameras, please a take a look at this section..
+    The latter will open the dialog described in the :ref:`Camera Settings <camera_settings>` section of this manual. If you want to have more information about how digiKam supports digital cameras, please a take a look at this section.
 
 :menuselection:`Import --> USB Storage Devices`
 
@@ -39,4 +39,4 @@ The Import Interface helps you to get photographs into a digiKam Album, whether 
 
 :menuselection:`Import --> Import from Scanner`
 
-    Tool to communicate with a digital scanner and import images.
+    Tool to communicate with a digital scanner to import images.

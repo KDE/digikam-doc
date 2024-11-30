@@ -18,16 +18,16 @@ Import from Google
 Overview
 --------
 
-This tool allows the user to upload photos to the `Google Photo <https://en.wikipedia.org/wiki/Google_Photos>`_ web services.
+This tool uploads photos to, and imports photos from, the `Google Photo <https://en.wikipedia.org/wiki/Google_Photos>`_ web services.
 
-**Google Photos** is a photo sharing which automatically analyzes photos, identifying various visual features and subjects. Users can search for anything in photos including faces and group similar ones together.
+**Google Photos** is a photo sharing service that automatically analyzes photos, identifying various visual features and subjects. Users can search for anything in photos including faces and group similar ones together.
 
 The tool can be used to download files from the remote Google Photo server to the image collections on your computer using the Internet. Use the :menuselection:`Import --> Import from Google Photo` :kbd:`Alt+Shift+P` menu entry to access to this tool, or use the icon from the **Tools** tab in the Right Sidebar.
 
 Login to your Account
 ---------------------
 
-When accessing the tool for the first time you are taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched to help you loggging in to Google:
+When accessing the tool for the first time you are taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched to help you log in to Google:
 
 .. figure:: images/import_google_login.webp
     :alt:
@@ -35,7 +35,7 @@ When accessing the tool for the first time you are taken through the process of 
 
     The Google Dialog to Select Account
 
-After successful signup digiKam will be allowed to send photos to the Google website. You will be presented with the following page on successful signup:
+After successful signup, digiKam will be allowed to send photos to the Google website. You will be presented with the following page on successful signup:
 
 .. figure:: images/import_google_authorize.webp
     :alt:
@@ -43,11 +43,11 @@ After successful signup digiKam will be allowed to send photos to the Google web
 
     The Google Dialog to Authorize Application
 
-Then, simply authorize application and close the web browser. Return to the host application dialog, you will see the interface used to upload photos to Google.
+Then, simply authorize the application and close the web browser. Returning to the host application dialog, you will see the interface used to upload photos to Google.
 
 .. note::
 
-    When the tool is invoked for second time, it will remember the previous account automatically.
+    When the tool is invoked for a second time, it will automatically remember the previous account.
 
 Download from your Account
 --------------------------
@@ -60,8 +60,8 @@ The download dialog for **Google Photo** web-service is presented below:
 
     The Google Photo Import Dialog
 
-With the **Album** options, you can select the online folder to get files to download. You can **Reload** the list on the combo-box if online contents have been changed in Google web interface.
+With the **Album** options, you can select the online folder to get files to download. You can **Reload** the list in the combo-box if the online contents have changed in the Google web interface.
 
-Below, the main dialog propose the hierarchy of physical **Albums** from your collection. Selected one target entry to import files, or if you want a new one, just press **New Album** button to create a nested entry in the tree-view.
+The hierarchy of physical **Albums** in your collection are shown at the bottom of the main dialog. Specify the target Album where the files should be imported, or press the **New Album** button to create a new album for the downloaded files.
 
-Press **Start Download** button to transfer items. You can click on the **Close** button to abort the uploading of photos.
+Press the **Start Download** button to transfer the photos. You can click on the **Close** button to abort the transfer.

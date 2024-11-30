@@ -18,7 +18,7 @@ Camera Settings
 Setup a Device
 --------------
 
-The camera settings shows on the left of the list of the currently supported cameras. On the right at the top there is an auto-detect button, which tries to identify the camera connected to your computer (make sure that the camera is connected properly to the computer and turned on in the image display mode). Below this are the port settings, the currently supported are **Serial**, **USB**, **Network**, and **Mass Storage**. 
+The camera settings shows on the left of the list of the currently supported cameras. On the right at the top there is an auto-detect button, which tries to identify the camera connected to your computer (make sure that the camera is connected properly to the computer and turned on in the image display mode). Below this are the port settings, the currently supported are **Serial**, **USB**, **Network**, and **Mass Storage**.
 
 .. figure:: images/setup_camera_device.webp
     :alt:
@@ -50,6 +50,8 @@ Customize the Behavior
 ----------------------
 
 With the **Behavior** section, you can customize some main rules with your camera as how to deep in file to handle metadata, render high-quality thumbnails, use a default target album to download items, and to deal with already existing file-names while downloading.
+
+.. _camera_behavior_use_file_metadata:
 
 .. important::
 

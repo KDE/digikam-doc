@@ -16,7 +16,7 @@ Import Tools
 .. figure:: images/index_import_tools.webp
     :alt:
 
-This section explain how to import new items in the digiKam collections.
+This section explains how to import new items into digiKam collections.
 
 .. toctree::
    :maxdepth: 2

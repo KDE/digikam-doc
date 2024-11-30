@@ -15,7 +15,7 @@ Import from Remote Computer
 
 .. contents::
 
-This tool allows to download files from a remote computer to your collections using network. It available from the :menuselection:`Import --> Import from remote storage` :kbd:`Alt+Shift+K` menu entry or the corresponding icon from the **Tools** tab in Right Sidebar.
+This tool downloads files into your collections from a remote networked computer. It is available from the :menuselection:`Import --> Import from remote storage` :kbd:`Alt+Shift+K` menu entry or the corresponding icon from the **Tools** tab in the Right Sidebar.
 
 .. figure:: images/import_remote_dialog.webp
     :alt:
@@ -23,25 +23,25 @@ This tool allows to download files from a remote computer to your collections us
 
     The Import from Remote Computer Dialog
 
-To choose files to import press **Select Import Location**, a native desktop urls selector as below must appear where you can see the discovered remote devices selecting the network section:
+To choose files to import, press **Select Import Location**. A native desktop URLs selector will appear allowing you to see remotely connected devices listed in the network section:
 
 .. figure:: images/import_remote_selection.webp
     :alt:
     :align: center
 
-    The Urls Selector Dialog Under Linux Choosing Files from a NAS Sharing Contents trough Samba File System.
+    The URLs Selector Dialog Under Linux Choosing Files from a NAS Sharing Contents through Samba File System.
 
-In this dialog, you can use the protocols as **fish** (ssh), **ftp**, **smb**, etc, to be connected to the remote computer. For example,
+In this dialog, you can use protocols such as **fish** (ssh), **ftp**, **smb**, etc, to connect to the remote computer. For example,
 
     - **fish://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using SSH protocol (Secure SHell).
     - **ftp://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using FTP protocol (File Transfer Protocol).
 
 .. note::
 
-    The native url selector dialog is only available if you turn on the right option from the **Misc/Appearance** section of the :ref:`configuration panel <appearance_settings>`.
+    The native URLs selector dialog is only available if you turn on the right option from the **Misc/Appearance** section of the :ref:`configuration panel <appearance_settings>`.
 
-After selecting the files to import and closing the native desktop urls selector, these ones must appear to main dialog in the list below **Select import location** button.
+After selecting the files to import and closing the native desktop URLs selector, the selected files will appear in the list below the **Select import location** button.
 
-Below this list of files, the main dialog propose the hierarchy of physical **Albums** from your collection. Selected one target entry to import files, or if you want a new one, just press **New Album** button to create a nested entry in the tree-view.
+Below this list of files, the main dialog displays the hierarchy of **Albums** in your collection. Specify the target Album where the files should be imported, or press the **New Album** button to create a new album for the downloaded files.
 
-When you select right target album to download files, press **Start Import** button to process files. You can abort operation pressing **Close** button.
+After selecting the target album to download the files, press the **Start Import** button to process files. You can abort the operation by pressing the **Close** button.
