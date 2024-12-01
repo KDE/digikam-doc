@@ -20,7 +20,11 @@ Overview
 
 The Batch Queue Manager allows you to customize a **Workflow** by adding the **Custom Script** tool to run a script to process your images with external tools such as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_.
 
+<<<<<<< HEAD
 The **Custom Script** tool is available from the **Custom Tools** category of the **Base Tools** list. The tool is designed to execute the source code for a shell script that can call one or more command line programs for each item in the Queue. the shell script is written by the user entirely within the plugin. These scripts can include a set of environment variables that specify filenames and few types of metadata.
+=======
+The tool named **Custom Script** is available from the **Custom Tools** category of the **Base Tools** list. The tool is designed to execute the source code for a shell script that can call one or more command line programs for each item in the Queue. the shell script is written by the user entirely within the plugin. These scripts can include a set of environment variables that specify filenames and few types of metadata.
+>>>>>>> d48b3a48e94529fbf0d4be157cf5878c9fb23771
 
 .. figure:: images/bqm_custom_script.webp
     :alt:

@@ -15,23 +15,23 @@ DAM Workflow
 
 .. contents::
 
-- Import images from camera, card reader or scanner. As long as the images are stored on the camera media, you can use that as temporary backup.
+- Import images from camera, card reader or scanner. As long as the images are stored on the camera media, you can use that as a temporary backup.
 
-- RAW are converted to DNG and stored away into an RAW archive.
+- RAW images are converted to DNG and stored away into a DNG archive.
 
     .. figure:: images/dam_workflow_dng_convert.webp
         :alt:
         :align: center
 
-        The DNG Convert Settings From Import Tool
+        The DNG Convert Settings from Import Tool
 
-- Rate and cull, write-back metadata to the DNG archive.
+- Rate and cull, write metadata into the DNG archive.
 
     .. figure:: images/dam_workflow_apply_labels.webp
         :alt:
         :align: center
 
-        Applying Labels to Items Using Captions Tab from Right Sidebar
+        Applying Labels to Items using Captions Tab from Right Sidebar
 
 - Make a backup e.g. on external drive, and optical medium, or a tape.
 
@@ -41,32 +41,32 @@ DAM Workflow
         :alt:
         :align: center
 
-        Applying Descriptions to Items Using Captions Tab from Right Sidebar
+        Applying Descriptions to Items using Captions Tab from Right Sidebar
 
-- Edit and improve photographs.
+- Edit and enhance the photographs.
 
     .. figure:: images/dam_workflow_sharpen_tool.webp
         :alt:
         :align: center
 
-        Sharpening Details In Image Editor Using Refocus Tool
+        Sharpening Details in the Image Editor Using Refocus Tool
 
-- For layered editing use external applications. Back in digiKam, re-apply the metadata, which was probably lost or curtailed by the other applications.
+- Use external applications for layered editing. This editing may cause the loss or deletion of metadata previously recorded into the images. Back in digiKam, re-apply the metadata recorded in the digiKam database to the edited images.
 
-- Run the routine backup with following data-integrity checks.
+- Run a routine backup, followed up by data-integrity checks.
 
-- Protect processed images for copyrights with Digital Watermarking. Export to web galleries, slide shows, MPEG encode, contact sheets, printing, etc.
+- Protect processed images by using Digital Watermarking to encode copyright data. Export to web galleries, slide shows, MPEG encode, contact sheets, printing, etc.
 
     .. figure:: images/dam_workflow_export_webservice.webp
         :alt:
         :align: center
 
-        The List of Export Tools Available From Image Editor
+        The List of Export Tools Available from the Image Editor
 
-A typical generic draft of all photograph workflow stages is given below:
+The typical photographic workflow is illustrated below:
 
 .. figure:: images/dam_workflow.webp
     :alt:
     :align: center
 
-    Draft of all Common Tasks Used During a Photographs Workflow
+    Diagram of Common Tasks During a Photographic Workflow
