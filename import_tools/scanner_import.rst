@@ -61,7 +61,7 @@ The **Scanner Specific Options** tab contains all of the scanner specific option
 
 The settings area in the Scanner Import Dialog can be collapsed or expanded by clicking on the little arrow on top of the options splitter. The collapser can overlap the preview area, but fades away when the mouse cursor moves out of the collapser.
 
-Click on the **Scan** botton to scan the entire image.
+Click on the **Scan** button to scan the entire image.
 
 .. figure:: images/scanner_scan_preview.webp
     :alt:
