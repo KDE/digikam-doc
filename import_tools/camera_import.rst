@@ -45,7 +45,7 @@ The **Metadata** tab displays the picture's Exif, Makernotes, and GPS metadata. 
 Geolocation Tab
 ---------------
 
-The **Geolocation** tab opens a map that allows you to vies and edit the GPS location of the selected photographs. For a detailed description, see the :ref:`Geolocation section <maps_view>` of the Right Sidebar chapter of this manual.
+The **Geolocation** tab opens a map that allows you to view and edit the GPS location of the selected photographs. For a detailed description, see the :ref:`Geolocation section <maps_view>` of the Right Sidebar chapter of this manual.
 
 
 .. figure:: images/camera_item_geolocation.webp
