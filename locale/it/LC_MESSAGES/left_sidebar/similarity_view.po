@@ -1,0 +1,351 @@
+# Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+# SPDX-FileCopyrightText: 2024 Valter Mura <valtermura@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Digikam Manual 8.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-26 01:44+0000\n"
+"PO-Revision-Date: 2024-11-26 23:02+0100\n"
+"Last-Translator: Valter Mura <valtermura@gmail.com>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.08.3\n"
+
+#: ../../left_sidebar/similarity_view.rst:1
+msgid "digiKam Main Window Similarity View"
+msgstr "Vista somiglianza della finestra principale di digiKam"
+
+#: ../../left_sidebar/similarity_view.rst:1
+msgid "digiKam, documentation, user manual, photo management, open source, free, learn, easy, similarity, search, duplicates, sketch"
+msgstr ""
+"digiKam, documentazione, manuale utente, gestione fotografie, open source, "
+"libero, apprendimento, facile, somiglianza, ricerca, duplicati, schizzo"
+
+#: ../../left_sidebar/similarity_view.rst:14
+msgid "Similarity View"
+msgstr "Vista Somiglianza"
+
+#: ../../left_sidebar/similarity_view.rst:17
+msgid "Overview"
+msgstr "Panoramica"
+
+#: ../../left_sidebar/similarity_view.rst:19
+msgid "If you have lost a picture because you can't remember its name or where you filed it, you might want to perform a *Similarity* search on your collections."
+msgstr ""
+"Se hai perso una foto perché non ti ricordi il nome o dove l'hai conservata, "
+"potresti voler eseguire una ricerca per *somiglianza* sulle tue raccolte."
+
+#: ../../left_sidebar/similarity_view.rst:21
+msgid "digiKam characterizes every image by a fingerprint (or signature), that is internally represented as a lengthy number. These fingerprints are computed in such a way that the less numerical difference there is between any two image fingerprints, the more the two images resemble each other. Comparison of these fingerprints thus make it possible to find similar images. This methodology is the core engine for three features in the Similarity View named find **Duplicates**, find similar **Image**, and find by **Sketch**."
+msgstr ""
+"digiKam caratterizza ciascuna immagine da un codice di controllo (o firma), "
+"internamente rappresentata da un lungo numero. Questi codici sono calcolati "
+"in modo che più piccola è la differenza numerica tra le firme di due "
+"immagini, più alto è il loro grado di somiglianza. Il confronto tra questi "
+"codici di controllo rende così possibile l'individuazione di immagini "
+"simili. Questa regola è il motore principale per tre funzionalità, nella "
+"vista Somiglianza, chiamate trova **duplicati**, trova **immagini** simili e "
+"trova per **schizzo**."
+
+#: ../../left_sidebar/similarity_view.rst:25
+msgid "digiKam uses Wavelets/Haar algorithms based on the `Fast Multi-Resolution Image Querying publication <https://grail.cs.washington.edu/wp-content/uploads/2015/08/jacobs-1995.pdf>`_ to compute fingerprints for every image in the database. These calculations are done in the background."
+msgstr ""
+"Per calcolare i codici di controllo per ciascuna immagine nella banca dati, "
+"digiKam usa l'algoritmo Wavelets/Haar basato sulla pubblicazione `Fast Multi-"
+"Resolution Image Querying <https://grail.cs.washington.edu/wp-content/"
+"uploads/2015/08/jacobs-1995.pdf>`_. Questi calcoli vengono eseguiti in "
+"background."
+
+#: ../../left_sidebar/similarity_view.rst:30
+msgid "Find Duplicates"
+msgstr "Trova duplicati"
+
+#: ../../left_sidebar/similarity_view.rst:32
+msgid "Before you can have digiKam find duplicates, the fingerprints of the images within the collections have to be calculated. You can start that process with the button **Update Fingerprints** which initiates a total rebuild of the image fingerprint database. This may take hours if you have a large collection and slow storage devices. If you have already scanned your images for fingerprints, then you should skip this step."
+msgstr ""
+"Prima che digiKam possa trovare i duplicati, vanno calcolati i codici di "
+"controllo delle immagini all'interno delle raccolte. Puoi iniziare questo "
+"processo col pulsante **Aggiorna codici di controllo** che avvia una "
+"ricostruzione completa della banca dati dei codici di controllo delle "
+"immagini. Possono volerci ore se possiedi una raccolta grande e dei "
+"dispositivi di archiviazione lenti. Se hai già analizzato le immagini per i "
+"codici di controllo devi saltare questo passaggio."
+
+#: ../../left_sidebar/similarity_view.rst:36
+msgid "You can also perform fingerprint operations using :menuselection:`Tools --> Maintenance` and select **Rebuild Finger-prints** option. You can optionally choose if you want to rebuild the entire database or only scan your database for changed or new items, which is the default behavior. Scanning for changed or new items is naturally the faster option."
+msgstr ""
+"Puoi eseguire operazioni sui codici di controllo in "
+":menuselection:`Strumenti --> Manutenzione`, selezionando l'opzione "
+"**Ricostruisci codici di controllo**. In aggiunta, puoi scegliere se "
+"ricostruire l'intera banca dati o analizzarla solo per cercare i codici di "
+"controllo cambiati o per nuovi elementi, che è il comportamento predefinito. "
+"L'analisi degli elementi cambiati o nuovi è ovviamente l'opzione più veloce."
+
+#: ../../left_sidebar/similarity_view.rst:38
+msgid "Once the fingerprints are calculated you can use **Find Duplicates**, but the calculation will take a long time since it has to compare every image with every other other image. So it is often better to confine your search to certain **Albums** and/or **Tags**. The **All albums** and **All tags** check-boxes perform global searches in the database. Otherwise use the drop-down menu to specify which **Albums** and/or **Tags** to search."
+msgstr ""
+"Una volta calcolati di codici di controllo, puoi utilizzare la funzionalità "
+"**Trova duplicati**, ma il calcolo impiegherà molto tempo perché deve "
+"confrontare ogni immagine con le altre. È spesso meglio confinare la ricerca "
+"a determinati **Album** e/o **Tag**. Le caselle di scelta **Tutti gli "
+"album** e **Tutti i tag** eseguono ricerche globali all'interno della banca "
+"dati. Diversamente usa il menu a tendina per specificare **album** e/o "
+"**tag** cercare."
+
+#: ../../left_sidebar/similarity_view.rst:40
+msgid "The fundamental result of a **Find Duplicates** operation is a list of Reference images, which should be thought of as originals, and the number of images found that are duplicates of the reference image. A **Remove Duplicates** operation would then remove the duplicate images, without disturbing the reference images. But when digiKam identifies a group of duplicate images, how does it identify which is the reference image that should be maintained, and which are the duplicates?"
+msgstr ""
+"Il risultato fondamentale di un'operazione di **ricerca duplicati** è un "
+"elenco di immagini di riferimento, che devono essere considerate come "
+"originali, e il numero di immagini trovate che sono duplicati dell'immagine "
+"di riferimento. L'operazione **Rimuovi duplicati** andrà a rimuovere quindi "
+"le immagini duplicate, senza alterare le immagini di riferimento. Ma quando "
+"digiKam identifica un gruppo di immagini duplicate, come identifica qual è "
+"l'immagine di riferimento da conservare e quali sono i duplicati?"
+
+#: ../../left_sidebar/similarity_view.rst:42
+msgid "The **Reference Image Selection Method** setting allows selection of how the reference image is determined."
+msgstr ""
+"L'impostazione **Metodo di selezione dell'immagine di riferimento** permette "
+"di selezionare il metodo su come l'immagine di riferimento è determinata."
+
+#: ../../left_sidebar/similarity_view.rst:44
+msgid "**Older or Larger** is the method used prior to version 8.1.0. The reference image is the duplicate that is older or larger than the others"
+msgstr ""
+"**Più vecchia o più grande** è il metodo utilizzato prima della versione 8.1."
+"0. L'immagine di riferimento è il duplicato più vecchio o più grande delle "
+"altre"
+
+#: ../../left_sidebar/similarity_view.rst:45
+msgid "**Prefer selected folder as reference** means that the reference image is chosen from the selected album or albums"
+msgstr ""
+"**Preferisci cartella selezionata come riferimento** indica che l'immagine "
+"di riferimento è scelta dall'album o dagli album selezionati"
+
+#: ../../left_sidebar/similarity_view.rst:46
+msgid "**Prefer other than selected folder as reference** means that the reference image is chosen from an album that has not been selected"
+msgstr ""
+"**Preferisci cartella diversa da quella selezionata come riferimento** "
+"indica che l'immagine di riferimento è scelta da un album che non è stato "
+"selezionato"
+
+#: ../../left_sidebar/similarity_view.rst:47
+msgid "**Prefer Newer Creation Date** means that the reference image is the duplicate that has the newest creation date"
+msgstr ""
+"**Preferisci data di creazione più recente** indica che l'immagine di "
+"riferimento è il duplicato che possiede la data di creazione più recente"
+
+#: ../../left_sidebar/similarity_view.rst:48
+msgid "**Prefer Newer Modification Date**  means that the reference image is the duplicate that has the newest modification date"
+msgstr ""
+"**Preferisci data di modifica più recente** indica che l'immagine di "
+"riferimento è il duplicato che possiede la data di modifica più recente"
+
+#: ../../left_sidebar/similarity_view.rst:54
+msgid "Find Duplicates Tool Searching in Whole Albums Collection with the reference file not in the potential Duplicates folder. The results are displayed in Icon-View"
+msgstr ""
+"Lo strumento Trova duplicati che ricerca nell'intera raccolta degli album "
+"con il file di riferimento non nella cartella dei duplicati potenziali. I "
+"risultati sono mostrati nella vista a icone"
+
+#: ../../left_sidebar/similarity_view.rst:56
+msgid "The **Restrict to** setting limits the albums or tags used in the reference image selection. Possible options are listed below:"
+msgstr ""
+"L'impostazione **Limita a** limita gli album o i tag utilizzati nella "
+"selezione dell'immagine di riferimento. Le opzioni possibili sono:"
+
+#: ../../left_sidebar/similarity_view.rst:58
+msgid "**One of** means that the reference images are either from the selected albums or have the selected tags."
+msgstr ""
+"**Una di** significa che le immagini di riferimento o provengono dagli album "
+"selezionati o hanno i tag selezionati."
+
+#: ../../left_sidebar/similarity_view.rst:59
+msgid "**Both** means that the reference images are from the selected albums and have the selected tags."
+msgstr ""
+"**Entrambe** significa che le immagini di riferimento provengono dagli album "
+"selezionati e hanno i tag selezionati."
+
+#: ../../left_sidebar/similarity_view.rst:60
+msgid "**Albums but not tags** means that reference images must be in the selected albums but not have the selected tags."
+msgstr ""
+"**Album ma non tag** significa che le immagini di riferimento devono essere "
+"negli album selezionati ma non hanno i tag selezionati."
+
+#: ../../left_sidebar/similarity_view.rst:61
+msgid "**Tags but not albums** means that reference images must have the selected tags but not be in the selected albums."
+msgstr ""
+"**Tag ma non album** significa che le immagini di riferimento devono avere i "
+"tag selezionati ma non essere negli album selezionati."
+
+#: ../../left_sidebar/similarity_view.rst:62
+msgid "**Only selected tab** means that only the selected tab applies to the reference image selection."
+msgstr ""
+"**Solo la scheda selezionata** significa che solo la scheda selezionata si "
+"applica alla selezione delle immagini di riferimento."
+
+#: ../../left_sidebar/similarity_view.rst:64
+msgid "With the **Similarity Range** you can narrow down or enlarge the search result. A similarity of 100 % provides exact matches. Lower values indicate decreasing similarity. Note that by lowering the upper threshold a little bit below 100 % you can keep things like exact copies, images from series shots, etc. out of the search results."
+msgstr ""
+"**Intervallo di somiglianza** ti permette di restringere o allargare il "
+"risultato della ricerca. Una somiglianza del 100% fornisce corrispondenze "
+"esatte. Nota che abbassando la soglia superiore un po' sotto il 100% puoi "
+"mantenere elementi come copie esatte, immagini da serie di scatti, ecc., "
+"fuori dal risultato della ricerca."
+
+#: ../../left_sidebar/similarity_view.rst:66
+msgid "The **Restriction** setting can be used to further restrict searches with respect to the specified folder. Possible options are listed below:"
+msgstr ""
+"L'impostazione **Limitazione** può essere utilizzata per restringere "
+"ulteriormente le ricerche, in relazione alla cartella specificata. Le "
+"opzioni possibili sono:"
+
+#: ../../left_sidebar/similarity_view.rst:68
+msgid "**None** means to search across all collections"
+msgstr "**Nessuna** indica di ricercare in tutte le raccolte"
+
+#: ../../left_sidebar/similarity_view.rst:69
+msgid "**Restrict to reference album** means to only search in the selected album"
+msgstr ""
+"**Limita all'album di riferimento** indica di cercare solo nell'album "
+"selezionato"
+
+#: ../../left_sidebar/similarity_view.rst:70
+msgid "**Exclude reference album** means to search in all albums excluding the selected album"
+msgstr ""
+"**Escludi album di riferimento** indica di cercare in tutti gli album "
+"eccetto quello selezionato"
+
+#: ../../left_sidebar/similarity_view.rst:72
+msgid "The results of the search are displayed in the duplicate list-view near the top left sidebar. The first column shows the **Reference images** (Ref.) as a thumbnail for each single result. The **Items** column tells you how many images belong to each result including the **Reference image**. The last column shows the **Average similarity** which gives you an idea regarding the degree of similarity of each set of duplicate images. The reference image with its 100 % is not included in this average. Note that the results can be sorted by clicking on one of the column headers. **Reference dates** and **Reference albums** columns are the properties of the **Reference images**."
+msgstr ""
+"I risultati della ricerca vengono visualizzate nella vista a elenco dei "
+"duplicati vicino alla parte superiore della barra laterale sinistra. La "
+"prima colonna mostra le **immagini di riferimento** (Rif.) come miniatura "
+"per ciascun singolo risultato. La colonna **Elementi** indica quante "
+"immagini appartengono a ciascun risultato, inclusa l'**immagine di "
+"riferimento**. L'ultima colonna mostra la **somiglianza media** che ti dà "
+"un'idea circa il grado di somiglianza di ciascun gruppo di immagini "
+"duplicate. L'immagine di riferimento con il 100% di riscontro non viene "
+"inclusa in questa media. Nota che i risultati possono essere ordinati "
+"facendo clic su una delle intestazioni delle colonne. Le colonne **date di "
+"riferimento** e **album di riferimento** sono le proprietà delle **immagini "
+"di riferimento**."
+
+#: ../../left_sidebar/similarity_view.rst:78
+msgid "Find Duplicates Tool Searching in Whole Tags Collection and Displaying Results in Table-View"
+msgstr ""
+"Lo strumento Trova duplicati che ricerca nell'intera raccolta dei tag e "
+"visualizza i risultati nella vista a tabella"
+
+#: ../../left_sidebar/similarity_view.rst:80
+msgid "Individual similarity values for each item can be obtained in the **Table-View** mode (**Table** button on the Main Toolbar). Click with the right mouse button over one of the column headers and select **Similarity** from **Item Properties** to display the similarity column. Clicking on the header of this column will sort results by similarity, grouped by the reference images. Clicking repeatedly on the header will toggle between ascending and descending order."
+msgstr ""
+"Nella modalità **vista a tabella** (il pulsante **Tabella** nella barra "
+"degli strumenti principale) puoi ottenere valori di somiglianza individuali "
+"per ciascun elemento. Per visualizzare la colonna della somiglianza, fai "
+"clic col pulsante destro del mouse su una delle intestazioni delle colonne e "
+"seleziona **Somiglianza** da **Proprietà dell'elemento**. Facendo clic "
+"sull'intestazione di questa colonna si ordineranno i risultati per "
+"somiglianza, raggruppati in base alle immagini di riferimento. Facendo clic "
+"ripetutamente sull'intestazione, la vista passerà dall'ordinamento crescente "
+"a quello decrescente, e viceversa."
+
+#: ../../left_sidebar/similarity_view.rst:82
+msgid "**Remove Duplicates** allows you to delete all duplicate images of the current selected item from the **Duplicates** list."
+msgstr ""
+"**Rimuovi duplicati** ti consente di eliminare tutte le immagini duplicate "
+"dell'elemento selezionato attuale dall'elenco dei **Duplicati**."
+
+#: ../../left_sidebar/similarity_view.rst:88
+msgid "Find Similar Image"
+msgstr "Trova immagini simili"
+
+#: ../../left_sidebar/similarity_view.rst:90
+msgid "This tool provides a drag and drop zone on the top-left where you can place any image to find similar images in the database. You can drag an image from anywhere, even from outside digiKam. You can also drag and hold an image from the album **Icon-View** over the **Similarity** search icon in the **Left Sidebar**. This will then open a dialog and you drop the image there. Finally, you can use **Find Similar...** entry from the context menu of a thumbnail in any other Icon-View."
+msgstr ""
+"Questo strumento fornisce un'area con trascinamento, in alto a sinistra, in "
+"cui puoi posizionare un'immagine qualsiasi per trovare immagini simili nella "
+"banca dati. È possibile trascinare un'immagine da qualsiasi posizione, anche "
+"dall'esterno di digiKam. Puoi anche trascinare e mantenere un'immagine "
+"dall'album **Vista a icone** sopra l'icona di ricerca **Somiglianza** nella "
+"**barra laterale sinistra**: si aprirà una finestra di dialogo in cui puoi "
+"rilasciare l'immagine. Infine, puoi usare la voce **Trova simili...** dal "
+"menu contestuale di una miniatura in qualsiasi altra vista a icone."
+
+#: ../../left_sidebar/similarity_view.rst:96
+msgid "Screencast of Drag and Drop item from Album Icon-View to Find Similar using Left Sidebar"
+msgstr ""
+"Registrazione del trascinamento di un elemento dalla vista a icone "
+"dell'album a Trova simili utilizzando la barra laterale sinistra"
+
+#: ../../left_sidebar/similarity_view.rst:98
+msgid "Like with **Find Duplicates**, you can restrict the search to a set of **Albums** or the whole collection. You can narrow down or enlarge the resulting selection with the **Similarity range** here as well."
+msgstr ""
+"Come per **Trova duplicati**, puoi limitare la ricerca a un gruppo di "
+"**album** o all'intera raccolta. Qui puoi anche restringere o allargare la "
+"selezione risultante con l'opzione **Intervallo di somiglianza**."
+
+#: ../../left_sidebar/similarity_view.rst:100
+msgid "The **Search in**, **Save**, and **Restore** previous searches features work the same as in the **Find Duplicates** tool."
+msgstr ""
+"Le opzioni di ricerca citate in precedenza **Cerca in**, **Salva** e "
+"**Reimposta** funzionano allo stesso modo dello strumento **Trova "
+"duplicati**."
+
+#: ../../left_sidebar/similarity_view.rst:102
+msgid "After performing **Searches** you might want to save the results. In the field below you can enter a name for the search, and press the **Save** button. In the **Searches** list below you will find your saved searches. Clicking on the title bar of that list toggles the sorting order between ascending and descending. At the bottom you will find an adaptive search field which can help you to find a particular search. To **Restore** a result, just click on one item from the list."
+msgstr ""
+"Dopo aver eseguito le **ricerche**, magari vuoi salvare i risultati. Nel "
+"campo sottostante puoi inserire un nome per la ricerca e premere il pulsante "
+"**Salva**. Nell'elenco **Ricerche** in basso troverai le tue ricerche "
+"salvate. Se fai clic sulla barra del titolo di quell'elenco alterni tra "
+"ordinamento crescente e decrescente. Nell'area inferiore troverai un campo "
+"per la ricerca flessibile, che ti potrà essere di aiuto per eseguire una "
+"ricerca particolare. Per **ripristinare** un risultato, fai semplicemente "
+"clic su un elemento dell'elenco."
+
+#: ../../left_sidebar/similarity_view.rst:109
+msgid "Searching Similar Items For a Single Image"
+msgstr "Ricerca di elementi simili per una singola immagine"
+
+#: ../../left_sidebar/similarity_view.rst:114
+msgid "Find by Sketch"
+msgstr "Trova per schizzo"
+
+#: ../../left_sidebar/similarity_view.rst:116
+msgid "This tool is a free-hand color sketching editor. You can draw a quick sketch and digiKam will find corresponding images. You will find the same means to save your search as in the **Image** tab."
+msgstr ""
+"Questo strumento è un editor di schizzi a mano libera a colori. Puoi "
+"disegnare velocemente uno schizzo in modo che digiKam ricerchi le immagini "
+"corrispondenti. Sono presenti gli stessi mezzi per salvare la tua ricerca "
+"della scheda **Immagine**."
+
+#: ../../left_sidebar/similarity_view.rst:118
+msgid "On the left hand side of digiKam, navigate to the tab **Sketch**. This view has a drawing area plus some settings below to set pencil and history tools. Choose a color that your image might contain, you can change the size of the pen which is on the scale of 1-10, and you can also choose the number of images that you want to be displayed during your fuzzy search, this can be set to a value between 1-50 items. As you sketch on the area you will see that the similarity search related images appears on the right hand side."
+msgstr ""
+"Sul lato sinistro di digiKam, vai alla scheda **Schizzo**. Questa vista "
+"contiene un'area di disegno più qualche opzione per impostare la matita e "
+"degli strumenti per la cronologia. Scegli un colore che potrebbe esserci "
+"nell'immagine, puoi cambiare la dimensione della penna su una scala da 1 a "
+"10; puoi anche scegliere il numero di immagini da visualizzare durante la "
+"ricerca per somiglianza, impostabile a un valore compreso tra 1 e 50 "
+"elementi. Come abbozzi nell'area, vedrai apparire sul lato destro le "
+"immagini collegate alla ricerca approssimata."
+
+#: ../../left_sidebar/similarity_view.rst:120
+msgid "The **Search in**, **Save**, and **Restore** previous searches features works the same as in the  **Find Duplicates** tool."
+msgstr ""
+"Le opzioni di ricerca citate in precedenza **Cerca in**, **Salva** e "
+"**Reimposta** funzionano allo stesso modo delle strumento **Trova "
+"duplicati**."
+
+#: ../../left_sidebar/similarity_view.rst:126
+msgid "Searching Items by Drawing a Sketch"
+msgstr "Ricerca degli elementi tramite il disegno di uno schizzo"
