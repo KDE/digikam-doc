@@ -21,7 +21,7 @@ You’ll find all previous digiKam versions in the `attic <https://download.kde.
 
 .. note::
 
-    Bundles with **-debug** in the file-name include `debug symbols <https://en.wikipedia.org/wiki/Debug_symbol>`_ to catch debugger traces when the application stops working. These debug files are large but they can will help developers find and fix coding errors. See the :ref:`Get Involved <get_involved>` section for details.
+    Bundles with **-debug** in the file-name include `debug symbols <https://en.wikipedia.org/wiki/Debug_symbol>`_ that allow developers to interpret debugger traces when the application stops working. The bundles that include debug symbols are large, but they can will help developers find and fix coding errors. See the :ref:`Get Involved <get_involved>` section for details.
 
 Minimum System Requirements
 ---------------------------
@@ -36,9 +36,12 @@ Minimum System Requirements
 
 .. note::
 
-   If your computer is at the lower end of the CPU and RAM requirements, you should use both :ref:`Small Thumbnails Resolution <thumbnails_resolution>` and :ref:`Loading Embedded Preview <preview_settings>` features to help reduce preview lag.
+    If your computer is at the lower end of the CPU and RAM requirements, you should use both :ref:`Small Thumbnails Resolution <thumbnails_resolution>` and :ref:`Loading Embedded Preview <preview_settings>` features to help reduce preview lag.
 
-- **Monitors**: Although the application can be used on a single screen, using multi-screens will improve the experience especially when reviewing items.
+Use large thumbnail size for high screen resolution
+Settings:View:Icon view font
+
+- **Monitors**: Although the application can be used on a single screen, using multiple screens will improve the experience especially when reviewing items.
 
 .. figure:: images/multi_screens_linux_station.webp
     :alt:
@@ -76,7 +79,7 @@ Turn on the **executable** property of the AppImage file and run it. That's all.
 
 .. tip::
 
-    The AppImage bundle also includes the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>`. To run it, instead of digiKam, just add **showfoto** as an argument to the AppImage command line, like this:
+    The AppImage bundle also includes the :ref:`Showfoto Stand-Alone Image Editor <showfoto_editor>`. To run it, instead of digiKam, just add **showfoto** as an argument to the AppImage command line, like this:
 
     .. code-block:: bash
 
@@ -234,7 +237,7 @@ When the **PKG** file is downloaded, and the installer is started, Apple Gatekee
 
     The macOS Warning When you Try to Run the digiKam Installer after Downloading
 
-You need to allow the installer to run by clicking on **Open Anyway** in the **macOS Config Panel/Security and Privacy** dialog.
+You need to allow the installer to run by clicking on **Open Anyway** in the macOS **System Settings/Security and Privacy** dialog (scroll down to see the **Security** section).
 
 .. figure:: images/macos_pkg_security.webp
     :width: 400px

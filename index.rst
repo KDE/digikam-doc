@@ -594,7 +594,7 @@ Geolocation Editor
     :alt:
     :target: geolocation_editor.html
 
-    Edit Geolocation Information to Search And Visualize Items on a Map
+    Edit Geolocation Information to Search and Visualize Items on a Map
 
 .. container:: toctile
 
@@ -636,7 +636,7 @@ Maintenance Tools
     :alt:
     :target: maintenance_tools.html
 
-    Maintaining and Optimizing Data For Your Collections
+    Maintaining and Optimizing Data for Your Collections
 
 .. container:: toctile
 
@@ -694,7 +694,7 @@ Post Processing
     :alt:
     :target: post_processing.html
 
-    Post Process Items From Your Collections
+    Post Process Items from Your Collections
 
 .. container:: toctile
 
@@ -772,7 +772,7 @@ Export Tools
     :alt:
     :target: export_tools.html
 
-    Export Items From Your Collections To External Media
+    Export Items from Your Collections to External Media
 
 .. container:: toctile
 
@@ -956,7 +956,7 @@ Credits and License
     :alt:
     :target: credits_license.html
 
-    Copyrights and Notices for This Document
+    Copyrights and Notices for this Document
 
 .. container:: toctile
 

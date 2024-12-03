@@ -18,7 +18,7 @@ Authorship and Copyright
 Strings Metadata
 ~~~~~~~~~~~~~~~~
 
-One of the last steps in tagging your digital images may be to may be to add authorship, ownership, and copyright tags. Unlike 'the good(?) old days' of paper copies, the ubiquitous Internet makes it just too easy to 'steal' a picture from a web site. At the very least, all images that will be exported and/or published in any form, should have embedded authorship and copyright information as part of their metadata. Including this information allows you to legally prohibit others from reproducing, adapting, or distributing copies of your work.
+One of the last steps in tagging your digital images may be to add authorship, ownership, and copyright tags. Unlike 'the good(?) old days' of paper copies, the ubiquitous Internet makes it just too easy to 'steal' a picture from a web site. At the very least, all images that will be exported and/or published in any form, should have embedded authorship and copyright information as part of their metadata. Including this information allows you to legally prohibit others from reproducing, adapting, or distributing copies of your work.
 
 Alternatively, you should embed authorship and **copyleft** information into your images if you want to openly share your images, allowing other people to freely use them, while retaining the tags indicating your authorship.
 

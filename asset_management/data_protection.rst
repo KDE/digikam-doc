@@ -412,7 +412,7 @@ Protect Your Data
 
     - Use surge protectors (UL 1449 standard), possibly combined with a UPS.
 
-    - Use ECC memory to verify correct memory errors (even when just saving files).
+    - Use ECC memory to correct memory errors (even when just saving files).
 
     - Watch your hard drives (temperature, noise...), make backups.
 
