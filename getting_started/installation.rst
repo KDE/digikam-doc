@@ -36,10 +36,7 @@ Minimum System Requirements
 
 .. note::
 
-    If your computer is at the lower end of the CPU and RAM requirements, you should use both :ref:`Small Thumbnails Resolution <thumbnails_resolution>` and :ref:`Loading Embedded Preview <preview_settings>` features to help reduce preview lag.
-
-Use large thumbnail size for high screen resolution
-Settings:View:Icon view font
+    If your computer is at the lower end of the CPU and RAM requirements, you can reduce preview lag by adjusting two digiKam configuration settings. To access these settings under Linux, select :menuselection:`Settings --> Configure digiKam...` from the menu-bar. (Under MacOS you instead select :menuselection:`digiKam --> Preferences...` from the menu-bar.) The configuration options are separated into categories displayed on independent pages. To minimize preview lag, uncheck the **Use large thumbnail size for high screen resolution** option on the *Configure/Views/Icons* page, and select the **Preview shows embedded view if possible (faster)** option on the *Configure/Views/Preview* page.
 
 - **Monitors**: Although the application can be used on a single screen, using multiple screens will improve the experience especially when reviewing items.
 
@@ -231,7 +228,7 @@ The non-Signed Package
 When the **PKG** file is downloaded, and the installer is started, Apple Gatekeeper will display a security warning because the package is not signed.
 
 .. figure:: images/macos_pkg_warning.webp
-    :width: 400px
+    :width: 250px
     :alt:
     :align: center
 
@@ -310,7 +307,7 @@ Once installed, digiKam will need to access some system resources to run properl
     When digiKam is first run, if you point your collection to the standard Apple Photo library, MacOS will automatically ask you to grant access to the library.
 
     .. figure:: images/macos_grant_access_photos.webp
-        :width: 400px
+        :width: 250px
         :alt:
         :align: center
 
@@ -323,63 +320,57 @@ Configuration Files
 
 **digiKam**'s application-wide persistent settings are stored in the following locations, depending on your platform.
 
-.. list-table::
-   :header-rows: 1
+* **General settings** for the application. Delete this file and restart digiKam to reset the application to *factory* settings
+    - Linux:   :file:`~/.config/digikamrc`
+    - Windows: :file:`%LocalAppData%\\digikamrc`
+    - macOS:   :file:`~/Library/Preferences/digikamrc`
 
-   * - Linux
-     - Windows
-     - macOS
-     - Description
-   * - :file:`~/.config/digikamrc`
-     - :file:`%LocalAppData%\\digikamrc`
-     - :file:`~/Library/Preferences/digikamrc`
-     - General settings for the application. Delete this and restart digiKam to reset the application to *factory* settings
-   * - :file:`~/.config/digikam_systemrc`
-     - :file:`%LocalAppData%\\digikam_systemrc`
-     - :file:`~/Library/Preferences/digikam_systemrc`
-     - System settings for the application. Delete this and restart digiKam to reset the application to *factory* settings
-   * - :file:`~/.cache/digikam`
-     - :file:`%LocalAppData%\\digikam`
-     - :file:`~/Library/Caches/digikam`
-     - Cache location storing temporary files
-   * - :file:`~/.local/share/digikam`
-     - :file:`%AppData%\\digikam`
-     - :file:`~/Library/Application Support/digikam`
-     - Contains downloaded deep-learning models and internal configuration files
-   * - :file:`~/.local/share/kxmlgui5/digikam/digikamui5.rc`
-     - :file:`%LocalAppData%\\kxmlgui5\digikam\\digikamui5.rc`
-     - :file:`~/Library/Application Support/digikam/kxmlgui5/digikam/digikamui5.rc`
-     - Contains UI configuration. If your UI is broken, delete this file
+* **System settings** for the application. Delete this file and restart digiKam to reset the application to *factory* settings
+    - Linux:   :file:`~/.config/digikam_systemrc`
+    - Windows: :file:`%LocalAppData%\\digikam_systemrc`
+    - macOS:   :file:`~/Library/Preferences/digikam_systemrc`
+
+* **Cache location** storing temporary files
+    - Linux:   :file:`~/.cache/digikam`
+    - Windows: :file:`%LocalAppData%\\digikam`
+    - macOS:   :file:`~/Library/Caches/digikam`
+
+* Contains **internal configuration files** and downloaded deep-learning models
+    - Linux:   :file:`~/.local/share/digikam`
+    - Windows: :file:`%AppData%\\digikam`
+    - macOS:   :file:`~/Library/Application Support/digikam`
+
+* Contains **UI configuration**. If your UI is broken, delete this file
+    - Linux:   :file:`~/.local/share/kxmlgui5/digikam/digikamui5.rc`
+    - Windows: :file:`%LocalAppData%\\kxmlgui5\digikam\\digikamui5.rc`
+    - macOS:   :file:`~/Library/Application Support/digikam/kxmlgui5/digikam/digikamui5.rc`
 
 Similar to digiKam, the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>` also has persistent settings stored at the following locations:
 
-.. list-table::
-   :header-rows: 1
+* **General settings** for the application. Delete this file and restart digiKam to reset the application to *factory* settings
+    - Linux:   :file:`~/.config/showfotorc`
+    - Windows: :file:`%LocalAppData%\\showfotorc`
+    - macOS:   :file:`~/Library/Preferences/showfotorc`
 
-   * - Linux
-     - Windows
-     - macOS
-     - Description
-   * - :file:`~/.config/showfotorc`
-     - :file:`%LocalAppData%\\showfotorc`
-     - :file:`~/Library/Preferences/showfotorc`
-     - General settings for the application. Delete this and restart Showfoto to reset the application to *factory* settings
-   * - :file:`~/.config/showfoto_systemrc`
-     - :file:`%LocalAppData%\\showfoto_systemrc`
-     - :file:`~/Library/Preferences/showfoto_systemrc`
-     - System settings for the application. Delete this and restart Showfoto to reset the application to *factory* settings
-   * - :file:`~/.cache/showfoto`
-     - :file:`%LocalAppData%\\showfoto`
-     - :file:`~/Library/Caches/showfoto`
-     - Cache location storing temporary files
-   * - :file:`~/.local/share/showfoto`
-     - :file:`%AppData%\\showfoto`
-     - :file:`~/Library/Application Support/showfoto`
-     - Contains downloaded deep-learning models and internal configuration files
-   * - :file:`~/.local/share/kxmlgui5/showfoto/showfoto ui5.rc`
-     - :file:`%LocalAppData%\\kxmlgui5\showfoto\\showfotoui5.rc`
-     - :file:`~/Library/Application Support/showfoto/kxmlgui5/showfoto/showfotoui5.rc`
-     - Contains UI configuration. If your UI is broken, delete this file
+* **System settings** for the application. Delete this file and restart digiKam to reset the application to *factory* settings
+    - Linux:   :file:`~/.config/showfoto_systemrc`
+    - Windows: :file:`%LocalAppData%\\showfoto_systemrc`
+    - macOS:   :file:`~/Library/Preferences/showfoto_systemrc`
+
+* **Cache location** storing temporary files
+    - Linux:   :file:`~/.cache/showfoto`
+    - Windows: :file:`%LocalAppData%\\showfoto`
+    - macOS:   :file:`~/Library/Caches/showfoto`
+
+* Contains **internal configuration files** and downloaded deep-learning models
+    - Linux:   :file:`~/.local/share/showfoto`
+    - Windows: :file:`%AppData%\\showfoto`
+    - macOS:   :file:`~/Library/Application Support/showfoto`
+
+* Contains **UI configuration**. If your UI is broken, delete this file
+    - Linux:   :file:`~/.local/share/kxmlgui5/showfoto/showfoto ui5.rc`
+    - Windows: :file:`%LocalAppData%\\kxmlgui5\showfoto\\showfotoui5.rc`
+    - macOS:   :file:`~/Library/Application Support/showfoto/kxmlgui5/showfoto/showfotoui5.rc`
 
 .. note::
 
@@ -390,7 +381,7 @@ Application Updates
 
 .. important::
 
-    If you update digiKam to a new major version, for example from version 7 to version 8, we recommend you first backup :ref:`your database files <database_intro>`, since the internal schema may have changed. Typically, digiKam is able to migrate tables from an older version to a new one, and all of this is done automatically at startup. But it's always better to save these important digiKam files before upgrading the application. See the :ref:`Database Backup <database_backup>` section in this manual for more recommendations.
+    If you update digiKam to a new major version, for example from version 7 to version 8, we recommend you first backup :ref:`your database files <database_intro>`, since the internal schema may have changed. Typically, digiKam is able to migrate tables from an older version to a new one, and all of this is done automatically at startup. But it's always better to save these important files before upgrading the application. See the :ref:`Database Backup <database_backup>` section in this manual for more recommendations.
 
 If you use a bundle such as the official Linux AppImage, macOS package, or Windows installer, the application can be updated using the :menuselection:`Help --> Check For New Version menu entry`. See the updates settings :ref:`on the Behavior page <behavior_settings>` of the configuration dialog.
 

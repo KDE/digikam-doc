@@ -18,7 +18,7 @@ Interface Layout
 Areas and Bars
 --------------
 
-digiKam's main window has two areas in the center showing your photographs. One is the **Icon Area ③**, showing thumbnails of the content of the selected album or of a search result, and the other one the **Preview Area ④**, showing the selected image. Together let's call them the :ref:`Image Area <image_view>` ⑤. In the top left corner of the preview we have a few buttons ⑨ for moving back and forth through the content of the album, for rotating the image, for showing or adding face tags and to switch to full screen mode. By clicking on the preview you can make it disappear and by clicking on the picture area of a thumbnail open it again.
+digiKam's main window has two areas in the center showing your photographs. One is the **Icon Area ③**, showing thumbnails of the content of the selected album or of a search result, and the other one the **Preview Area ④**, showing the selected image. Together let's call them the :ref:`Image Area <image_view>` ⑤. In the top left corner of the preview we have a few buttons ⑨ for moving back and forth through the content of the album, for rotating the image, for showing or adding face tags and to switch to full screen mode. Clicking on the preview makes the preview disappear, and clicking on the picture area of a thumbnail makes the preview appear again.
 
 .. figure:: images/mainwindow_preview_with_numbers.webp
     :alt:
@@ -40,11 +40,11 @@ Interface Areas, Toolbars and Buttons in the Main Window::
     ⑨ Buttons: Navigation, Rotation, Face Tags, Full Frame
 
 
-The Image Area in the center is surrounded by the menu bar ① and the :ref:`Main Toolbar <main_toolbar>` ② at the top, the :ref:`Status Bar <status_bar>` ⑧ at the bottom as well as the :ref:`Left Sidebar <left_sidebar>` ⑥ and :ref:`Right Sidebar <right_sidebar>` ⑦. The Left Sidebar lets you switch between nine “Views”: Albums (shown here), Tags, Labels, Dates, Timeline, Search, Similarity, Map and People. The Right Sidebar can be used to show information about your images, to apply filters to select images, and to select actions to be applied to selected images. You can use all these views to organize and find your photographs. You can collapse or expand the sidebar areas by clicking on the sidebar tabs.
+The Image Area in the center is surrounded by the menu bar ① and the :ref:`Main Toolbar <main_toolbar>` ② at the top, the :ref:`Status Bar <status_bar>` ⑧ at the bottom, as well as the :ref:`Left Sidebar <left_sidebar>` ⑥ and :ref:`Right Sidebar <right_sidebar>` ⑦. The Left Sidebar lets you switch between nine “Views”: Albums (shown here), Tags, Labels, Dates, Timeline, Search, Similarity, Map and People. The Right Sidebar can be used to show information about your images, to apply filters to select images, and to select actions to be applied to selected images. You can use all these views to organize and find your photographs. You can collapse or expand the sidebar areas by clicking on the sidebar tabs.
 
 Don't worry if your main window looks different than the image above. You will soon learn how to switch the different areas on and off and at some point you might get a look very similar to the above screenshot.
 
-Drag & Drop of images works about everywhere: d&d an image into another branch of the album tree, across the horizontal album separation line, or to another application window. The only restriction is that you cannot d&d into tag, date or searches.
+Drag & Drop of images works about everywhere: Drag & Drop an image into another branch of the album tree, across the horizontal album separation line, or to another application window. The only restriction is that you cannot Drag & Drop into tag, date or searches.
 
 .. _status_bar:
 
@@ -90,7 +90,7 @@ The Main Toolbar appears at the top of the window.
 
     The digiKam Main Window Tool Bar
 
-1. Open Image Editor with the selected image
+1. Open :ref:`Image Editor <image_editor>` with the selected image
 
 2. Open :ref:`Light Table <light_table>` :kbd:`L`
 
@@ -112,4 +112,4 @@ The Main Toolbar appears at the top of the window.
 
 11. Link to digikam.org, also an indicator for ongoing processes
 
-You can customize the Toolbar by choosing :menuselection:`Settings --> Configure Toolbars...` or click with the right mouse button on it and choose **Configure Toolbars...** from the context menu.
+You can customize the Toolbar by choosing :menuselection:`Settings --> Configure Toolbars...` or click on the Toolbar with the right mouse button and choose **Configure Toolbars...** from the context menu.

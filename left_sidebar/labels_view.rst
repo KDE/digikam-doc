@@ -21,7 +21,7 @@ Labels View
 
 The Labels View allows you to select photographs by the **Rating**, **Pick** and **Color** Labels you assigned to them previously either by using:
 
-    - The context menu of a thumbnail.
+    - The context menu of a thumbnail, or
 
     .. figure:: images/left_sidebar_labels_context_menu.webp
         :alt:
@@ -29,7 +29,7 @@ The Labels View allows you to select photographs by the **Rating**, **Pick** and
 
         The digiKam Icon-View Context Menu and Labels Options
 
-    - The **Description** tab of the **Captions** section on the Right Sidebar.
+    - The **Description** tab of the **Captions** section of the Right Sidebar.
 
     .. figure:: images/left_sidebar_labels_captions_tab.webp
         :alt:

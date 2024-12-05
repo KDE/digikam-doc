@@ -45,7 +45,7 @@ JPEG
 JPEG 2000
 ---------
 
-`JPEG 2000 <https://en.wikipedia.org/wiki/JPEG_2000>`_ is an improvement intended to replace the older JPEG standard that was introduced in 2000. It provides for the same compression ratio with better (smoother) results compared to JPEG. The 2000 version also has the option of being lossless, if specified in the settings. It supports metadata and 12-bit color depth.
+`JPEG 2000 <https://en.wikipedia.org/wiki/JPEG_2000>`_ is an improvement intended to replace the older JPEG standard that was introduced in 2000. It provides for the same compression ratio with better (smoother) results compared to JPEG. The 2000 version also supports lossless images, additional metadata tags, and 12-bit color depth.
 
 .. _image_tiff:
 
@@ -75,7 +75,7 @@ PGF
 WEBP
 ----
 
-`Web Photo <https://en.wikipedia.org/wiki/WebP>`_ is an image file format developed by Google intended as a replacement for JPEG, PNG, and GIF file formats for use on the Internet. It supports both lossy and lossless compression as well as animation and alpha transparency. It supports metadata, but color depth is limited to 8 bits. WebP was first announced by Google in 2010 and produces files that are smaller than JPEG files for comparable image quality.
+`Web Photo <https://en.wikipedia.org/wiki/WebP>`_ is an open image file format developed by Google intended as a replacement for JPEG, PNG, and GIF file formats for use on the Internet. It supports both lossy and lossless compression as well as animation and alpha transparency. It supports metadata, but color depth is limited to 8 bits. WebP was first announced by Google in 2010 and produces files that are smaller than JPEG files for comparable image quality.
 
 .. _image_heif:
 
@@ -117,9 +117,9 @@ RAW
 
 Some, typically more expensive, cameras allow you to store images in RAW format. RAW format is not really an image standard at all. It is different for every make of camera. RAW format images contain all the data that is taken directly from the camera's image sensor before the software in the camera applies things like white balance, noise reduction, sharpening etc. Storing photographs in a camera's RAW format allows you to alter settings, such as white balance, after the photograph has been taken. Most professional photographers use RAW format, because it offers them maximum flexibility. The downside is that RAW image files can be very large indeed.
 
-If you want to learn more about RAW image format visit the very helpful guides `Wikipedia <https://en.wikipedia.org/wiki/Raw_image_format>`_, and `Cambridge in Colour <https://www.cambridgeincolour.com/tutorials/RAW-file-format.htm>`_. You can convert RAW format images into JPEG, PNG, or TIFF in digiKam using the :ref:`Image Editor <rawprocessing_workflow>` or the :ref:`Batch Queue Manager <raw_converter>`.
+If you want to learn more about RAW image format visit the very helpful guides on the `Wikipedia <https://en.wikipedia.org/wiki/Raw_image_format>`_, and at `Cambridge in Colour <https://www.cambridgeincolour.com/tutorials/RAW-file-format.htm>`_. You can convert RAW format images into JPEG, PNG, or TIFF in digiKam using the :ref:`Image Editor <rawprocessing_workflow>` or the :ref:`Batch Queue Manager <raw_converter>`.
 
-digiKam supports RAW image loading only, relying on the `Libraw library <https://www.libraw.org/>`_ which is included in digiKam core and supports over **1000** RAW file formats. The table below shows a short list of camera RAW files supported by digiKam:
+digiKam supports loading RAW image data from over **1000** RAW file formats, relying on the `Libraw library <https://www.libraw.org/>`_ which is included in the digiKam core. The table below shows a short list of camera RAW files supported by digiKam:
 
 ======================= ======================================================
 RAW File Format         Description
@@ -160,4 +160,4 @@ digiKam relies on `ImageMagick <https://en.wikipedia.org/wiki/ImageMagick>`_ to 
 
 .. note::
 
-    We recommend you also read the chapter about the **file formats used for long time archiving**, from the :ref:`Digital Asset Management section <dam_fileformats>` in this manual.
+    We recommend you also read the chapter about the **file formats used for long time archiving**, from the :ref:`Digital Asset Management section <dam_fileformats>` of this manual.

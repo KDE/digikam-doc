@@ -21,7 +21,7 @@ Quick Start
 
 When you start digiKam for the very first time it will ask you a series of questions to customize the application for your setup. Do not panic if you are uncertain of the answer to any of these questions! All of these options can be changed at a later date.
 
-The first question digiKam will ask you is where you store your photographs. You can choose any local, remote or removable folder. Just type in the path name of a folder or click on the **Browse...** icon to select a folder from the dialog.
+digiKam will first ask where you store your photographs. You can choose any local, remote or removable folder. Just type in the path name of a folder or click on the **Browse...** icon to select a folder from the dialog.
 
 Later on you can add as many locations as you like to the album library. Additional locations can be added using the menu :menuselection:`Settings --> Configure digiKam --> Collections`
 
@@ -31,7 +31,7 @@ Later on you can add as many locations as you like to the album library. Additio
 
     digiKam First Run Assistant Collection Path
 
-The next step is to specify a local folder on your computer for digiKam to store the database files it uses to track all of your images. You must also select the type of database digiKam will use. If you have a local installation and a collection of less than 100.000 photographs you should probably accept the default setting of SQLite. For more information about the database type selection refer to :ref:`the digiKam Database <database_intro>`.
+The next step is to specify a local folder on your computer for digiKam to store the database files it uses to track all of your images. You must also select the type of database digiKam will use. If you have a local installation and a collection of less than 100.000 photographs you should probably accept the default setting of SQLite. For more information about the database type selection refer to the :ref:`digiKam Database <database_intro>` section of this manual.
 
 .. figure:: images/firstrun_step3.webp
     :alt:
@@ -39,7 +39,7 @@ The next step is to specify a local folder on your computer for digiKam to store
 
     digiKam First Run Assistant Database Setup
 
-The next step is to choose the way you would like to open RAW files : either with automatic adjustments or with the digiKam RAW import tool that allows you to make manual adjustments. If you don't know what a RAW file is, or if your camera doesn't support RAW files, you should keep the default setting and skip this step.
+The next step is to choose the way you would like to open RAW files – either with automatic adjustments or with the digiKam RAW import tool that allows you to make manual adjustments. If you don't know what a RAW file is, or if your camera doesn't support RAW files, you should keep the default setting and skip this step.
 
 .. figure:: images/firstrun_step4.webp
     :alt:
@@ -101,9 +101,9 @@ None of these options will alter your photographs in any way. During folder scan
 
 Since digiKam directly accesses images in the folders on your hard disk, it is possible for other applications like file managers to remove one or more albums outside of a digiKam session. When this happens, the next time digiKam is run it will ask you whether all of the albums that have been removed from the digiKam photographs root path should be deleted from the albums database. If you want to move folders around and don't want to do that in digiKam, we suggest you do that while digiKam is running, so the database will be kept in sync and you do not lose any metadata.
 
-When you use an existing folder of photographs as the Album Library folder, you will notice that the Albums in the Album list do not have photographs as their icons. You can add a photo to any album icon by dragging a photograph in the Album onto the folder icon in the left sidebar. See :ref:`the Album section <albums_view>` for details of how to change the Album icon.
+When you use an existing folder of photographs as the Album Library folder, you will notice that the Albums in the Album list do not have photographs as their icons. You can add a photo to any album icon by dragging a photograph in the Album onto the folder icon in the left sidebar. See :ref:`the Albums section <albums_view>` for details on how to change the Album icon.
 
-digiKam uses a dedicated database to store thumbnails produced with an optimized wavelet compression algorithm (PGF). There is no way of hiding non-standard thumbnail folders created by another application from the **Albums** list. If you want to keep them, you could create an Album Category that just contains all the thumbnail Folders and then view your Albums in :menuselection:`View --> Sort Albums --> By Category` order. See :ref:`the Album section <albums_view>` for more information about Album Categories.
+digiKam uses a dedicated database to store thumbnails produced with an optimized wavelet compression algorithm (PGF). There is no way of hiding non-standard thumbnail folders created by another application from the **Albums** list. If you want to keep them, you could create an Album Category that just contains all the thumbnail Folders and then view your Albums in :menuselection:`View --> Sort Albums --> By Category` order. See :ref:`the Albums section <albums_view>` for more information about Album Categories.
 
 Once you have configured the Album Library Folder you can set up digiKam to work with your digital camera, refer to :ref:`the Camera section <camera_devices>` for more details. Good next steps would be to learn how to use :ref:`Albums <albums_view>` and :ref:`Tags  <tags_view>` to arrange and find your photographs.
 

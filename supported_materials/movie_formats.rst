@@ -25,7 +25,7 @@ However, digiKam is not a movie editing application and it does not have any bui
 Video Formats
 -------------
 
-digiKam relies on `FFMpeg Multimedia framework <https://ffmpeg.org/>`_ to handle video files. FFmpeg is a powerful video toolkit, which include all codecs that digiKam needs to play video files.
+digiKam relies on the `FFMpeg Multimedia framework <https://ffmpeg.org/>`_ to handle video files. FFmpeg is a powerful video toolkit, which include all codecs that digiKam needs to play video files.
 
 FFmpeg codec is available under Linux® desktop, macOS, and Windows. You don't need to install extra video codecs on your computer.
 

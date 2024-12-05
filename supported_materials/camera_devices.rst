@@ -33,7 +33,7 @@ Most current digital cameras store data on Compact Flash™ Memory cards and use
 Transfers using gPhoto: PTP and Serial Port
 --------------------------------------------
 
-digiKam employs the gPhoto library to communicate with digital still cameras. gPhoto is a free, redistributable set of digital camera software applications which supports a growing number of cameras. gPhoto has support for the Picture Transfer Protocol, which is a widely supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
+digiKam employs the gPhoto library to communicate with digital still cameras. gPhoto is a free, redistributable set of digital camera software applications that supports a growing number of cameras. gPhoto supports the Picture Transfer Protocol, a widely supported protocol developed by the International Imaging Industry Association to allow the transfer of images from digital cameras to computers and other peripheral devices without the need of additional device drivers.
 
 Many older digital still cameras used the Serial Port to communicate with host computers. Because photographs are big files and serial port transfers are slow, this connection is now obsolete. digiKam still supports these cameras and performs image transfers using the gPhoto program. You can find a complete list of supported digital cameras at `this url <http://www.gphoto.org/proj/libgphoto2/support.php>`_.
 

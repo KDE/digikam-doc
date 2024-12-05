@@ -38,7 +38,7 @@ The thumbnails have Tool Tips which will pop up if you allow the mouse to dwell 
 
 The content of the Tool Tips can be configured in :menuselection:`Settings --> Configure digiKam...` from the **Tool Tip** dialog page.
 
-As an alternative you can display the photographs in a table view by hitting the **Table** button on the Main Toolbar or by selecting :menuselection:`View --> Table` menu from the menu bar. This allows you to see a lot of photographs at the same time. Click with the left mouse button on the column headers to sort the table. Right click on a header to add or remove columns. (Tip: Using right click to remove the thumbnail column will make the list far more compact.) Clicking with the left mouse button on a line in the table will open the preview of that photograph.
+As an alternative you can display the photographs in a table view by hitting the **Table** button on the Main Toolbar or by selecting the :menuselection:`View --> Table` item from the menu bar. This allows you to see a lot of photographs at the same time. Click with the left mouse button on the column headers to sort the table. Right click on a header to add or remove columns. (Tip: Using right click to remove the thumbnail column will make the list far more compact.) Clicking with the left mouse button on a line in the table will open the preview of that photograph.
 
 .. figure:: images/mainwindow_table_view.webp
     :alt:
@@ -63,7 +63,7 @@ There are several ways to view an image. You can either click on it, select :men
 
     The digiKam Main Window Preview Mode
 
-Each time digiKam starts, the zoom in Preview mode will be adjusted to allow the image to have as much space as possible. The zoom control in the status bar controls the size of thumbnails in thumbnail mode, and the size of the Preview image in Preview mode. When zoom is used in Preview mode, a zoom mark appears at the bottom right of the windows at the intersection of the scroll bars. Clicking on the zoom mark will bring up small display with the overall image and an inset red rectangle representing the viewed portion of the image. Drag the mouse over the displayed image to move the view port to where you want and release the mouse.
+Each time digiKam starts, the zoom in Preview mode will be adjusted to allow the image to have as much space as possible. The zoom control in the status bar controls the size of thumbnails in thumbnail mode, and the size of the Preview image in Preview mode. When zoom is used in Preview mode, a zoom mark appears at the bottom right of the windows at the intersection of the scroll bars. Clicking on the zoom mark will bring up a small display with the overall image and an inset red rectangle representing the viewed portion of the image. Drag the mouse over the displayed image to move the view port to where you want and release the mouse.
 This same tool is also available in the Light Table and Image Editor.
 
 .. figure:: images/mainwindow_preview_zoomed_locator.webp
@@ -90,9 +90,9 @@ You can open the Image Editor on a photograph by either clicking the **Image Edi
 Viewing or Editing a Photograph With Another Application
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Sometimes digiKam may not provide all of the capabilities you need. You can open a photograph in another application by clicking on the photograph with the right mouse button and selecting from the **Open With...** sub-menu. The list of applications that appear in this menu is controlled by the standard operating system file associations for the image format type of this photograph. If the application that you need is not listed, consult the operating system manuals for instructions on changing these file associations .
+When digiKam does not provide all of the capabilities you need, you can open a photograph in another application by clicking on the photograph with the right mouse button and selecting from the **Open With...** sub-menu. The list of applications that appear in this menu is controlled by the standard operating system file associations for the image format type of this photograph. If the application that you need is not listed, consult the operating system manuals for instructions on changing these file associations .
 
-Note that there can be a problem with metadata embedded in photographs when they are edited by other image editing applications. Some applications do not retain the photograph's metadata when you save a modified image. This means that if you modify a photograph using one of these programs you will lose information such as orientation, aperture etc. that are stored in the Exif, IPTC, and XMP tags.
+Note that there can be a problem with metadata embedded in photographs when they are edited by other image editing applications. Some applications do not retain the photograph's metadata when you save a modified image. This means that if you modify a photograph using one of these programs you will lose information such as orientation, aperture etc. that are stored in the Exif, IPTC, and XMP tags. These metadata will still be stored in the digiKam database, so you can select :menuselection:`Item --> Write Metadata to File` to rewrite the metadata into the image file.
 
 .. _lossless_rotation:
 
@@ -122,7 +122,7 @@ You can change the filename for a photograph by clicking with the right mouse bu
 
     The digiKam Advanced Rename Tool Dialog
 
-The renaming pattern can be customized with the **Renaming Options** collection on the bottom which contains the original file name, file extension, owner and group, directory, a dialog for defining a sequence number, and a dialog for adding date and time information, either fixed or based on the time information written by the camera into the image file. Each option appended to the renaming pattern can be customized with the **Modifier** button on the right side of the renaming pattern editor.
+The renaming pattern can be customized with the **Renaming Options** collection on the bottom which contains the original file name, file extension, owner and group, directory, a dialog for defining a sequence number, and a dialog for adding date and time information, either based on a fixed date or based on the time information written by the camera into the image file. Each option appended to the renaming pattern can be customized with the **Modifier** button on the right side of the renaming pattern editor.
 
 .. figure:: images/mainwindow_advanced_rename_number.webp
     :alt:
@@ -135,7 +135,7 @@ The sequence **Number** dialog includes the following options:
 - **Extension aware numbering**: will start a new sequence for every file extension.
 - **Folder aware numbering**: will start a new sequence for every folder.
 - **File Counter aware numbering**: will search for the highest used counter in the filename from the image's directory and continues it.
-- **Random text aware numbering**: will generate a hexadecimal random numeric code string for the numbering. It is a random number with up to 31 digits. Use many *#* to render a unique code in your renaming scheme.
+- **Random text-aware numbering**: will generate a hexadecimal random numeric code string for the numbering. It is a random number with up to 31 digits. You can use many digits to help insure each code in your renaming scheme is unique.
 
 The **Date and Time** selection dialog looks like this:
 
@@ -147,7 +147,7 @@ The **Date and Time** selection dialog looks like this:
 
 The calendar is active only if **Fixed Date** is selected from the **Source** drop down field. This way you can add the same date and time information to the filenames of all imported images or videos. If **Image** is selected instead, digiKam will use the time information from the metadata of the image files. With the **Format** drop down field you can choose from several standard date/time formats and a custom format. For the latter choose **Custom** in the **Format** drop-down list to enter a desired format string.
 
-The **Format** string from **Date and Time** dialog determines the content of the date generated during download. Any sequence of characters enclosed in single quotes will be included verbatim in the output string, even if it contains formatting characters. Two consecutive single quotes ("''") are replaced by a single quote in the output. All other characters in the format string are included verbatim in the output string.
+The **Format** string from **Date and Time** dialog determines the content of the date generated during download. Any sequence of characters enclosed in single quotes will be included verbatim in the output string, even if it contains formatting characters. Two consecutive single quotes ('') are replaced by a single quote in the output. All other characters in the format string are included verbatim in the output string.
 
 Formats without separators (e.g. *ddMM*) are supported but must be used with care, as the resulting strings aren't always reliably readable (e.g. if *dM* produces *212* it could mean either the 2nd of December or the 21st of February). Here are some example format strings, assuming that the date is *21 May 2001 14:13:09.120*:
 
@@ -165,6 +165,7 @@ The **Database** dialog allows you to select items of information registered in 
 
 .. figure:: images/mainwindow_advanced_rename_database.webp
     :alt:
+    :width: 400px
     :align: center
 
     The Advanced Rename Database Dialog to Setup Modifiers in Renaming Pattern
@@ -173,6 +174,7 @@ The **Metadata** dialog allows you to select file metadata fields taken from **E
 
 .. figure:: images/mainwindow_advanced_rename_metadata.webp
     :alt:
+    :width: 400px
     :align: center
 
     The Advanced Rename Metadata Dialog to Setup Modifiers in Renaming Pattern
@@ -249,7 +251,7 @@ digiKam will ask for confirmation with the dialog below before it moves items to
 
     The digiKam Move to Trash Dialog
 
-For each collection registered in the database, digiKam maintains an internal trash-bin. Physically, the trash is located at the root album corresponding to the collection entry. It's a hidden folder :file:`.dtrash` storing deleted items in a subdirectory named :file:`files`, and information about the deletion is stored in another subdirectory named :file:`info` with Json sidecars (:file:`.dtrashinfo`). Deleting a file in the collection does not remove the file from the media, but moves the file into this container and removes any reference to the item from the digiKam database.
+For each collection registered in the database, digiKam maintains an internal trash-bin. Physically, the trash is located at the root album corresponding to the collection entry. It's a hidden folder :file:`.dtrash`, storing deleted items in a subdirectory named :file:`files`, and information about the deletion is stored in another subdirectory named :file:`info` with Json sidecars (:file:`.dtrashinfo`). Deleting a file in the collection does not remove the file from the media, but moves the file into this container and removes any reference to the item from the digiKam database.
 
 The trash-bin is accessible from the left sidebar tab **Albums** as the last entry of the tree-view corresponding to a collection and is named **Trash**. As the trash-view is a special container in digiKam, the layout of the trash-bin contents is a list based on a table-view and this view cannot be changed. The details of items in the trash-bin can always be displayed in the right sidebar using the **Properties**, **Metadata**, **Colors**, and **Map** tabs but information are taken from the files, not the database, and cannot be edited from the **Captions** tab. The **Versions** and **Filters** tabs can also not be used with the trash-bin.
 
@@ -267,7 +269,7 @@ A series of buttons on the bottom of the trash-bin view allow you to restore fil
 
     - **Undo**: to restore only the last entry in the trash-bin.
     - **Restore**: to restore a selection of files from the trash-bin.
-    - **Delete**: to remove **permanently** the items selected, or all items from the trash-bin.
+    - **Delete**: to **permanently remove** the items selected, or all items from the trash-bin.
 
 These same options are also available in the trash-bin list's context menu. When the **Delete** option is selected, the user must confirm the request before the deletion is made.
 
@@ -279,7 +281,7 @@ These same options are also available in the trash-bin list's context menu. When
 
 .. important::
 
-    Since the trash-bin container is physically located in the root album of a collection, backups of a collection on a separated media, will also safely backup the corresponding trash-bin container.
+    Since the trash-bin container is physically located in the root album of a collection, backups of a collection onto separated media, will also safely backup the corresponding trash-bin container.
 
 .. _grouping_photograph:
 
@@ -306,15 +308,15 @@ You can put the whole selection into one group using **Group Selected Here** or 
 
     If you group files automatically based on filename, the smaller file size from the group is preferred as the leading item. The idea is that when previewing, faster loading of the image will allow for a quicker preview.
 
-    If you group files manually from the icon-view, the selected item used to show the context menu used to group the files will be used as the leading item.
+    If you group files manually from the icon-view, the selected item used to show the context menu that was used to group the files will be used as the leading item.
 
 The **Show/Hide Grouped Images** menu items control whether only the reference icon of the group (the first of the group according to the sorting order at the moment of grouping) is displayed, or all of the images are displayed. These two functions can also be accessed by the little grouping indicator (folder symbol with number) on the reference icon.
 
 .. note::
 
-    In Icon-View, you can turn on/off the frame over grouped item thumbnails with an option from :ref:`Setup/Miscs/Appearance <appearance_settings>` settings.
+    In Icon-View, you can turn on/off the frame over grouped item thumbnails with an option from :ref:`Settings/Miscellaneous/Appearance <appearance_settings>`.
 
-While the mouse pointer is hovering over a grouped item, a box will pop up stating **n grouped items. Group is closed/open.** where *n* indicates the number of items in the group which are invisible if the group is closed. Clicking on the indicator toggles between **open** and **closed**.
+While the mouse pointer is hovering over a grouped item, a box will pop up stating **# grouped items. Group is closed/open.** where *#* indicates the number of items in the group which are invisible if the group is closed. Clicking on the indicator toggles between **open** and **closed**.
 
 Groups are indicated in the **Table Mode** of the Image Area using the standard approach for other lists and tables: a little triangle in front of the reference item. Clicking on this triangle will collapse or expand the grouped items.
 
@@ -324,17 +326,19 @@ Groups are indicated in the **Table Mode** of the Image Area using the standard 
 
     The digiKam Icon-View Grouped Mode From Table View
 
-The last items in the **Group** context menu allows you to remove individual items from the group or to disband the whole group. The content of the menu will change depending on whether you use it on a selection of still un-grouped items, on a group or on single items of a group.
+The last items in the **Group** context menu allows you to remove individual items from the group or to disband the whole group. The content of the menu will change depending on whether you use it on a selection of still un-grouped items, on a group, or on single items of a group.
 
 What can you do with a group? In terms of functions of digiKam you can perform a lot of operations like copy, delete, move, and rotate on the whole group by selecting only the reference icon provided that the group is closed. You can also load the whole group into tools like Light Table or the Batch Queue Manager, even into the Image Editor where you can navigate through the group members with the page keys on your keyboard. You can assign tags and labels (see further in this manual) and also write descriptions (see :ref:`Captions <captions_view>`). Give it a try.
 
 .. note::
 
-    Operations to perform over grouped items are managed by Setup/Miscs/Grouping settings. See :ref:`this section <grouping_settings>` from the manual for details.
+    Operations to perform over grouped items are managed by the options in Settings/Miscellaneous/Grouping. See :ref:`this section <grouping_settings>` of the manual for details.
 
-There are multiple use cases for grouping items. One common use it to group JPG and RAW images together since many cameras allow for the recording of a single frame in both RAW and JPG formats. This is made easy by **Group Selected By Filename**. You could group videos with associated still frames. In the screenshot above exposure bracketed images are being grouped. One could do the same for archiving purposes with images used for a panorama.
+There are multiple use cases for grouping items. One common use is to group JPG and RAW images together since many cameras allow for the recording of a single frame in both RAW and JPG formats. This is made easy by **Group Selected By Filename**. Applying **Group Selected By Filename** to 4 images: 1.JPG 1.RAW 2.JPG 2.RAW, will produce 2 groups (1.JPG+1.RAW) and (2.JPS+2.RAW).
 
-If you have very specific requirements for documenting steps taken in editing, and the :ref:`Versions <versions_view>` function of digiKam cannot meet your needs, you may find a solution using grouping. We can think of more use cases for grouping but we don't want to overload this section of the manual. Maybe a last hint for your stimulating you own ideas: grouping is not restricted to items out of the same album. The whole group (open or closed) will only be visible in the album of the reference item. The other members of the group will be visible in their own albums only if the group is open. Groups that span albums can be confusing, so use with care.
+You can also use grouping to group videos with associated still frames. In the screenshot above, exposure bracketed images are being grouped. One could do the same for archiving purposes with images used for a panorama.
+
+If you have very specific requirements for documenting steps taken in editing, and the :ref:`Versions <versions_view>` function of digiKam cannot meet your needs, you may find a solution using grouping. We can think of more use cases for grouping but we don't want to overload this section of the manual. Maybe a last hint for stimulating your own ideas: grouping is not restricted to items out of the same album. The whole group (open or closed) will only be visible in the album of the reference item. The other members of the group will be visible in their own albums *only if the group is open*. Groups that span albums can be confusing, so use with care.
 
 .. note::
 

@@ -126,15 +126,13 @@ The list of detection samples below comes from a huge collection of photos scann
 
 Screenshots **02** and **11** were selected to highlight an important feature: the algorithm can detect animal faces. This is not a false positive, unless you specifically want to see only human faces in your collection.
 
-Screenshot **10** demonstrates that the algorithm sometimes identify details in an image that resemble a face but are not actually faces. This is where the Remove button comes in handy. It removes the face tag from the photograph, and if it is the only face tag remaining, the photograph will disappear from the scan results.
+Screenshot **10** is an incorrect (false positive) result, demonstrating that the algorithm sometimes identify details in an image that resemble a face but are not actually faces. This is where the Remove button comes in handy. It removes the face tag from the photograph, and if it is the only face tag remaining, the photograph will disappear from the scan results.
 
 Screenshots **01**, **03**, **05**, **08**, **09**, and **12** may be considered non-faces or can be filtered out by increasing the **detection accuracy** setting in the face management **Settings** view. However, these examples demonstrate the algorithm’s ability to detect faces even in challenging conditions.
 
 Screenshot **04** shows the model can detect other non-human faces in images, including statues, paintings, and pictures within images.
 
-Screenshot **10** is definitively an incorrect (false positive) result.
-
-After the **detection** scan is complete, you should see a new tag labeled **Unknown** under People in the People view. You must manually tag some of these faces before proceeding with face **recognition**.
+After the **detection** scan is complete, you should see a new tag labeled **Unknown** under People in the People view. You must manually tag some of these faces before proceeding with **face recognition**.
 
 .. _face_tagging:
 
@@ -362,7 +360,7 @@ Face detection and face recognition can be time-consuming tasks depending on the
 Special Cases
 ^^^^^^^^^^^^^
 
-Occasionally, you may encounter special cases where the recommended face detection settings don't yield the best results. In those cases, you should tune the detection settings for a single image or small group of images.  It is not recommended to change the default settings for normal use, and is recommended to change the settings back to their default values when you're done with special cases.
+Occasionally, you may encounter special cases where the recommended face detection settings don't yield the best results. In those cases, you should tune the detection settings for a single image or small group of images.  It is not recommended to change the default settings for normal use, and it is recommended to change the settings back to their default values when you're done with special cases.
 
 - **Large Group Photos**: You may have images of large groups of people, and you want to generate a face tag for every person in the image. Using the YuNet detection model, setting the **Detection Accuracy** to 1, and setting the **Face size** to **Extra Small** should detect most, if not all of the faces in the image.  This will also incorrectly tag more areas of the image as faces (false positives).
 

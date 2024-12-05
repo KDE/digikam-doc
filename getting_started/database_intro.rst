@@ -34,12 +34,12 @@ digiKam stores data (including albums, album roots, tags, thumbnails, face recog
 
     Example of digiKam remote MySQL configuration hosted on a NAS from the local network
 
-Details on database settings can be found in :ref:`Database Setup section <database_settings>`.
+Details on database settings can be found in the :ref:`Database Setup section <database_settings>`.
 
 Migrating From Other Software
 -----------------------------
 
-The digiKam database can be populated from file properties managed by another program by using the other program to write all metadata into XMP sidecar files. While digiKam cannot parse proprietary and closed source databases, it can read XMP sidecar files, which is a standardized and well documented file format.
+The digiKam database can be populated from file properties managed by another program by using the other program to write all metadata into XMP sidecar files. While digiKam cannot parse proprietary and closed source databases, it can read XMP sidecar files, which is a standardized and well-documented file format.
 
 Read the :ref:`Metadata Setup section <metadata_settings>` to use XMP sidecar files with digiKam. The Advanced panel offers profile management to handle special cases while importing and exporting metadata to and from 3rd-party software.
 

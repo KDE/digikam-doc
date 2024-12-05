@@ -48,7 +48,7 @@ There are a number of ways to create a new Album. You can create a new Album whe
 
 .. note::
 
-    Each album is hosted in a collection root path registered in the database. If the permissions for the collection folder have changed or if the collection the collection folder is not accessible (for example due to the absence of removable media), then no new album can be created. In this case, check the collection properties in :ref:`the digiKam setup dialog <collections_settings>`.
+    Each album is hosted in a collection root path registered in the database. If the permissions for the collection folder have changed or if the collection folder is not accessible (for example due to the absence of removable media), then no new album can be created. In this case, check the collection properties in :ref:`the digiKam setup dialog <collections_settings>`.
 
 .. important::
 
@@ -91,7 +91,7 @@ Simply drag a photograph and drop it on the destination Album to move or copy it
 With Other Applications
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-You can also drag and drop photographs into other applications. The general behavior will be the same as copying between albums, but differences will occur depending on what information the target program takes from the clipboard. Copying a photograph into a text editor will paste the full file path for that picture. Copying a photograph into word processor is likely to insert the image into itself.
+You can also drag and drop photographs into other applications. The general behavior will be the same as copying between albums, but differences will occur depending on what information the target program takes from the clipboard. Copying a photograph into a text editor will paste the full file path for that picture. Copying a photograph into word processor is likely to insert the image itself.
 
 .. _managing_albums:
 
@@ -112,7 +112,7 @@ The Album Properties dialog allows you to set:
 
     - The Album **Category**: This is a way of grouping your Albums together by a common label. The Category you set will be used to order your albums when you select **By Category** from the drop down box in the tool bar or using :menuselection:`View --> Sort Albums --> By Category`. If you want to add and delete Category labels, choose from the menu entry :menuselection:`Settings --> Configure digiKam... --> Views page --> Categories tab`.
 
-    - The **Caption** for the Album: Usually a short description of the content, but of course you are free to abuse it in any conceivable way. But beware: this will be shown in the banner at the top of the main Image Window ;-)
+    - The **Caption** for the Album: Usually a short description of the content, but of course you are free to abuse it in any conceivable way. But beware: this caption will be shown in the banner at the top of the main Image Window ;-)
 
     - The Album **Date**: This will be used when you order your Albums by date using :menuselection:`View --> Sort Albums --> By Date`.
 
@@ -129,4 +129,4 @@ To select a photograph as the Album icon, click with the right mouse button on t
 
 .. note::
 
-      digiKam also supports tagging individual photographs. Album Categories are different from photograph tagging because the Album Category applies to all the photographs in an Album rather than to individual photographs. You can use both Album Category and tagging to organize your photographs.
+      digiKam also supports tagging individual photographs. Album Categories are different from photograph tagging because the Album Category applies to all the photographs in an Album rather than to individual photographs. You can use both Album Category and photograph tagging to organize your photographs.

@@ -14,14 +14,32 @@ Map Search View
 ---------------
 
 .. |zoom_in| image:: images/left_sidebar_icon_zoom_in.webp
-    :height: 20px
+    :height: 15px
 
 .. |zoom_out| image:: images/left_sidebar_icon_zoom_out.webp
-    :height: 20px
+    :height: 15px
+
+.. |rectangle_select| image:: images/left_sidebar_icon_rectangle_select.webp
+    :height: 15px
+
+.. |region_from_thumbnail| image:: images/left_sidebar_icon_region_from_thumbnail.webp
+    :height: 15px
+
+.. |remove_region| image:: images/left_sidebar_icon_remove_region.webp
+    :height: 15px
+
+.. |filter_images| image:: images/left_sidebar_icon_filter_images.webp
+    :height: 15px
+
+.. |select_images| image:: images/left_sidebar_icon_select_images.webp
+    :height: 15px
+
+.. |remove_filter| image:: images/left_sidebar_icon_remove_filter.webp
+    :height: 15px
 
 There are four tools involving geolocation in digiKam:
 
-    - The **Map Mode** of the Image Area displays the locations of geo-coded images (images with GPS data) on a map depending on the selection in the Left Sidebar, e.g. the images in the album you selected in the Album View, the images with a specified tag (selected in the Tag View), images with a specified label, and so on.
+    - The **Map Mode** of the Image Area displays the locations of geo-tagged images (images with GPS data) on a map depending on the selection in the Left Sidebar, e.g. the images in the album you selected in the Album View, the images with a specified tag (selected in the Tag View), images with a specified label, and so on.
 
     - The **Map** tab on the Left Sidebar, the topic of this section, is the search tool for selecting images based on their GPS data.
 
@@ -35,9 +53,11 @@ There are four tools involving geolocation in digiKam:
 
     The digiKam Map Search Tool from Left Sidebar
 
+To access the Map Search Tool, click on the **Map** tab in the Left Sidebar.
+
 The earth view is a topographical map of our beautiful home planet. Optional map overlays include the navigation control shown in the figure, along with a compass rose and a scale bar that are not shown.
 
-Clicking on the navigation control's arrow buttons moves the map frame north/south or east/west. You can also move the map frame by using the keyboard arrow keys, or by clicking and dragging on the map. Navigating via click and drag is a particular easy and precise way to adjust the map frame.
+Clicking on the navigation control's arrow buttons rotates the globe to move the map frame north/south or east/west. You can also move the map frame by using the keyboard arrow keys, or by clicking and dragging on the map. Navigating via click and drag is a particular easy and precise way to adjust the map frame.
 
 Zoom in and out by moving the navigation control's vertical slider up and down, by clicking on the navigation control's + and - buttons, by using the Zoom in |zoom_in| and Zoom out |zoom_out| buttons just below the map, by scrolling the mouse wheel, or by using the :kbd:`+` and :kbd:`-` keys on the keyboard.
 
@@ -49,17 +69,17 @@ In case you should get lost you can always reset the viewing angle and zoom leve
 
 The meaning of “GPS”, as well as the detailed descriptions of the functions and buttons that apply to all three geolocation maps, are described in the :ref:`Geolocation Editor <geolocation_editor>` chapter of this manual. This applies to the context menu on the map and the first line of buttons under the map except for the last three on the right, which are related to filtering and selecting images based on location.
 
-Usually you will begin searching for images by defining a region on the map. From the **Search by area** buttons click the left one, the **Select images by drawing a rectangle** button. Then draw a selection rectangle by clicking with the left mouse button at the location on the map of the first corner, move the mouse to the location of the second corner, and click a second time. All images that have been geo-coded and that fall within the coordinates of that rectangle will be shown in the Image Area.
+Usually you will begin searching for images by defining a region on the map. From the **Search by area** buttons click the left one, the **Select images by drawing a rectangle** |rectangle_select| button. Then draw a selection rectangle by clicking with the left mouse button at the location on the map of the first corner, move the mouse to the location of the second corner, and click a second time. All images that have been geo-tagged and that fall within the coordinates of that rectangle will be shown in the Image Area.
 
-The next button to the right is the **Create a region selection from a thumbnail** button which creates a small region around the position of a marker or thumbnail if you click on it. If there are other images hidden behind it because they have the same position or one very close to the image you click on they will be shown in the Image Area.
+The next button to the right is the **Create a region selection from a thumbnail** |region_from_thumbnail| button which creates a small region around the position of any marker or thumbnail that you click on. This will display the image you clicked on in the Image Area, along with any images that have nearly the same position.
 
-The last button in this row is the **Remove the current region selection** button. Well, do I still have to explain that after all? O.k., I should mention that it, of course, only removes the selection, not your precious pics.
+The last button in this row is the **Remove the current region selection** |remove_region| button. Well, do I still have to explain that after all? O.k., I should mention that it, of course, only removes the selection, not your precious pics.
 
-Now let's have a look at the three buttons at the right end of the row right under the map. They control which images you see in the Image Area out of your defined region. Let's begin with the one at the very end of the row, the **Select images** button. If you activate it, it will toggle the selection of a photograph (or a group of photographs if they are hidden behind each other) once you click on it on the map. This can be helpful to fine tune your selection before carrying out operations from the Right Sidebar or the menus.
+Now let's have a look at the three buttons at the right end of the row right under the map. Let's begin with the one at the very end of the row, the **Select images** |select_images| button. When activated, clicking on a photograph (or a group of photographs if they are hidden behind each other) on the map will alternatively select or deselect those photographs. This can be helpful to fine tune your selection before carrying out operations from the Right Sidebar or the menus.
 
-The **Filter images** button (the one with the funnel on it) will, other than the **Select images** button who leaves all images from your defined region visible in the Image Area, switch off all other images and show only the one you clicked on. This is particular useful if the map is just showing markers or if the thumbnails are too small to clearly identify images.
+When the **Filter images** |filter_images| button (the one with the funnel on it) is activated, clicking on a photograph (or a group of photographs if they are hidden behind each other) will add a filter to view only those photographs in the Image Area. This is particular useful if the map is just showing markers or if the thumbnails are too small to clearly identify images.
 
-The action of the **Remove the current filter** button should be self evident. Note: These three last buttons won't affect your defined search region which means that once you make another selection, all images in that region should be displayed again in the Image Area.
+The action of the **Remove the current filter** |remove_filter| button should be self evident. Note: These three last buttons won't affect your defined search region which means that once you make another selection, all images in that region should be displayed again in the Image Area.
 
 The **Show Non Geolocated Items** button displays all images without GPS data in the Image Area. If this applies to many images from your collections it might be a good idea to also use the **Filters** tab of the Right Sidebar and/or the sorting and grouping functions in the **View** menu.
 

@@ -13,19 +13,19 @@
 Tags View
 ---------
 
-Hierarchical tagging provides a flexible and powerful way to organize and catalog your images. Tags (also called *keywords* in other applications) are labels that can be applied to individual images or groups of images. Once a tag has been applied to an image the image can be found again by selecting the tag or doing a search.
+Hierarchical tagging provides a flexible and powerful way to organize and catalog your images. Tags (also called *keywords* in other applications) are labels that can be applied to individual images or groups of images. Once a tag has been applied to an image, the image can be found again by selecting the tag or doing a search.
 
-Tags can be arranged in a hierarchical tree. This allows you to organize your tags in a logical manner. You can collapse parts of the tree in the **Tags** list so that you can easily find the tags that you are looking for.
+Tags can be arranged in a hierarchical tree, allowing you to organize your tags in a logical manner. You can collapse parts of the tree in the **Tags** list so that you can easily find the tags that you are looking for.
 
 .. figure:: images/left_sidebar_tags_view.webp
     :alt:
     :align: center
 
-    The digiKam Nested Tags Tree-View
+    The digiKam Nested Tag Tree-View
 
 When a tag is selected in the Left Sidebar, all of the images that are marked with that tag are displayed in the View Area.
 
-But before assigning and using tags you first have to define them. If you import photographs that already have assigned tags, digiKam will build an appropriate tag tree during import. Other than that you have to manually define all tags. The context menu shown in the screenshot above provides an easy approach to managing tags.
+But before assigning and using tags, you first have to define them. If you import photographs that already have assigned tags, digiKam will build an appropriate tag tree during import. Other than that you have to manually define all tags. The context menu shown in the screenshot above provides an easy approach to managing tags.
 
 .. _managing_tags:
 
@@ -38,7 +38,7 @@ You can delete a tag by clicking with the right mouse button on the tag you want
 
 You can move the position of a tag within the tree by dragging and dropping it into the desired position. A menu will appear giving you the option to **Move** the tag. This works in both the left and right sidebars. A tag can only be in one place in the tree at a time.
 
-You can set the Tag Properties by clicking with the right mouse button on a tag and selecting **Properties...**. The Tag Properties allow you to change the name of the tag, the icon used in the Tags tree and the shortcut.
+You can set the Tag Properties by clicking with the right mouse button on a tag and selecting **Properties...**. The Tag Properties allow you to change the name of the tag, the icon used in the Tag tree and the shortcut.
 
 .. figure:: images/left_sidebar_tag_properties.webp
     :alt:
@@ -48,41 +48,67 @@ You can set the Tag Properties by clicking with the right mouse button on a tag 
 
 To select a photograph as the tag icon, click with the right mouse button on the photograph that you want to use as the tag icon and select **Set as Tag Thumbnail** from the context menu. You can also use drag and drop to set the tag icon. Drag the image icon and drop it onto the currently selected tag in the tag list.
 
-A tool for more elaborate work on big tag trees is the :ref:`Tag Manager <tag_manager>` which you can access by clicking the **Open Tag Manager** button at the top of the Tags tree.
+A tool for more elaborate work on a big tag tree is the :ref:`Tag Manager <tag_manager>` which you can access by clicking the **Open Tag Manager** button at the top of the Tag tree.
 
-The :ref:`Digital Asset Management (DAM) <asset_tags>` chapter of this manual provides some useful information about how to build your Tags tree.
+The :ref:`Digital Asset Management (DAM) <asset_tags>` chapter of this manual provides some useful information about how to build your Tag tree.
 
 It is not always easy to build a logical hierarchy from general and generic categories. You might run into a problem like this:
 
-   - Animal
-      - Domestic Animal
-         - Cat
-         - Cattle
-         - Dog
 
-      - Wild Animal
-         - Bird
-         - Cat
-            - Cheetah
-            - Lion
-            - Tiger
+- Animal
 
-      - Zoo Animal
-         - Bird
-         - Cat
-            - Cheetah
-            - Leopard
+  - Domestic Animal
+
+    - Cat
+    - Cattle
+    - Dog
+
+  - Wild Animal
+
+    - Bird
+    - Cat
+
+      - Cheetah
+      - Lion
+      - Tiger
+
+  - Zoo Animal
+
+    - Bird
+    - Cat
+
+      - Cheetah
+      - Leopard
+
 
 In this tag tree the keyword *Cat* appears three times. This will not cause a problem within digiKam, but there are quite a few views where the user cannot know which of the three is applied to an image because they might not be able to see the whole tag hierarchy. In a case like this, also tagging the image with the parent tag or even the whole hierarchy often becomes quite unwieldy, particularly in the display of image tags within the image icon. The second *Cat* could be avoided by calling it *Wild Cat*, but calling the third one *Zoo Cat* seems a bit excessive, I think. And there would still be two *Cheetah*!
 
-A more viable solution would be to replace the *Zoo Animal* branch by a single tag *Zoo* which you use in addition to the tag(s) you choose from the two remaining branches. You could even put it on the top level of your hierarchy, if you have photographs taken in a zoo but not showing animals.
+A more viable solution would be to replace the *Zoo Animal* branch by a single tag *Zoo* which you use in addition to the tag(s) you choose from the two remaining branches. You could even put it on the top level of your hierarchy, if you have photographs taken in a zoo but not showing animals. So a better tag tree could be:
+
+- Animal
+
+  - Bird
+  - Cat
+
+    - Cheetah
+    - Leopard
+    - Lion
+    - Tiger
+
+  - Cattle
+  - Dog
+  - Domestic
+
+- Wild
+- Zoo
+
 
 .. _tag_manager:
 
 Tag Manager
 ~~~~~~~~~~~~
 
-While digiKam allows you to manage tags from the context menu accessible from the tags views in the digiKam sidebars, the Tag Manager offers an easier and more comprehensive way to organize your tags. For general information about tags, including why and how to use them, see the beginning sections of :ref:`this page <tags_view>`.
+While digiKam allows you to manage tags from the context menu accessible from the tags views in the digiKam sidebars, the Tag Manager offers an easier and more comprehensive way to organize your tags. For general information about tags, including why and how to use them, see the beginning pages of :ref:`this section <tags_view>`.
 
 .. figure:: images/left_sidebar_tag_manager.webp
     :alt:
@@ -120,9 +146,9 @@ The toolbar at the top of the Tag Manager offers:
 
     - And the drop down menu **Sync Export** which contains:
 
-        - **Write Tags from Database to Image** to sync image metadata with tags from the database.
+        - **Write Tags from Database to Image** to set image metadata with tags from the database.
 
-        - **Read Tags from Image** to write tags in the database using image metadata.
+        - **Read Tags from Image** to set tags in the database from the image metadata.
 
         - **Wipe all Tags from Database only**.
 
@@ -135,17 +161,17 @@ The Tag Properties dialog allows you to change the name of the tag, the icon use
 Tagging Photographs
 ~~~~~~~~~~~~~~~~~~~
 
-Before you can get the most out of digiKam's tagging capabilities, you must first tag your photographs. There are a few methods for that task. Once you have identified the photographs that you want to tag you can either drag and drop them onto the tag in the Tags tree or, by clicking with the right mouse button on the selected photographs in the Image Window, you can use the **Assign Tag** menu to select the tags you wish to set.
+Before you can get the most out of digiKam's tagging capabilities, you must first tag your photographs. There are a few methods for that task. Once you have identified the photographs that you want to tag you can either drag and drop them onto the tag in the Tag tree or, by clicking with the right mouse button on the selected photographs in the Image Window, you can use the **Assign Tag** menu to select the tags you wish to set.
 
 Drag and Drop works with any visible tags and photographs in both sidebars. With the Right Sidebar it works the obvious way: you drag the tag and drop it onto the photograph or selection of photographs you want to tag. With the Left Sidebar you have to drag the photographs to the tags. You want to know why? Just try it the other way and you will see.
 
 .. tip::
 
-    You can also use drag and drop between tabs from same sidebar, for example dragging a icon-view item from **Albums** to the **Tags** view. To switch from one tab to another one, just move the mouse over the tab title for a few seconds while dragging, the new view will be enabled and dragging operation can continue.
+    You can also use drag and drop between tabs from same sidebar, for example dragging a icon-view item from **Albums** to the **Tags** view. To switch from one tab to another one, just move the mouse over the tab title for a few seconds while dragging, the new view will be enabled and the dragging operation can continue.
 
 Shortcuts: as mentioned earlier in this chapter you can assign keyboard shortcuts to the Tag Properties. Such shortcuts could then be used to assign or un-assign a tag to the selected photograph(s).
 
-Context menu: by clicking with the right mouse button on the selected photographs and choosing **Assign Tag** you will see a list of the ten most recently used tags, **Add New Tag...**, described at the beginning of the :ref:`previous section <managing_tags>`, and **More Tags...** which leads to what is described in the next paragraph. This context menu may be the easiest method to add a limited number of tags to one or more images.
+Context menu: by clicking with the right mouse button on the selected photographs and choosing **Assign Tag** you will see a list of the ten most recently used tags, **Add New Tag...**, described at the beginning of the :ref:`previous section <managing_tags>`, and **More Tags...** which displays the *Tags* tab of the *Captions* view in the Right Sidebar. This is described in more detail in the paragraphs below and in :ref:`this section <tags_tree>` of the manual. This context menu may be the easiest method to add a limited number of tags to one or more images.
 
 .. figure:: images/left_sidebar_assigntags.webp
     :alt:
@@ -155,7 +181,7 @@ Context menu: by clicking with the right mouse button on the selected photograph
 
 You can remove a tag from a photograph by clicking with the right mouse button on the photograph and select **Remove Tag** submenu from the context menu. This submenu will only show those tags that have been set on this photograph.
 
-The Right Sidebar: this is what manu use as their standard method for assigning tags. Click **Captions** tab from the Right Sidebar and then the **Tags** tab from the top of the sidebar to display the whole tags tree. Simply check/un-check the boxes of the tags you want to assign/un-assign and then click **Apply**. If you change focus without clicking Apply, you will be asked whether you want to apply the changes. This request for confirmation can be disabled either by checking **Always apply changes without confirmation** or by checking **Do not confirm when applying changes in the right sidebar** in the Miscellaneous section of :menuselection:`Settings --> Configure digiKam...`. More details about the other buttons and fields in the **Tags** tab are provided in :ref:`digiKam sidebar <tags_tree>`.
+Many people use the the *Tags* tab of the *Captions* view in the Right Sidebar as their standard method for assigning tags. Click **Captions** tab from the Right Sidebar and then the **Tags** tab from the top of the sidebar to display the whole tag tree. Simply check/un-check the boxes of the tags you want to assign/un-assign and then click **Apply**. If you change focus without clicking Apply, you will be asked whether you want to apply the changes. This request for confirmation can be disabled either by checking **Always apply changes without confirmation** or by checking **Do not confirm when applying changes in the right sidebar** in the Miscellaneous section of :menuselection:`Settings --> Configure digiKam...`. More details about the other buttons and fields in the **Tags** tab are provided in :ref:`digiKam sidebar <tags_tree>`.
 
 You can label a photograph with as many tags as you like. The photograph will appear when you select any of the tags that are applied to it. This way you can set a tag for each person in a photograph, as well as the place the photograph was taken, the event it was taken at, etc.
 
@@ -163,4 +189,4 @@ Once you have tagged a photograph, the tag name will appear under the thumbnail 
 
 .. tip::
 
-      Tags are stored in a database for fast access, and, the applied tags are written into IPTC data fields of the image (at least for JPEG). So you can use your tags with other programs or, in case of loss of that data in the database, the tags will be restored when the image is re-imported into digiKam.
+      Tags are stored in a database for fast access, and the applied tags are written into IPTC data fields of the image (at least for JPEG). So you can use your tags with other programs or, in case of loss of that data in the database, the tags will be restored when the image is re-imported into digiKam.

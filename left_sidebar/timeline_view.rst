@@ -21,7 +21,7 @@ Time-Line View
 
 The Timeline View shows a timescale-adjustable histogram of the numbers of images per **Time Unit** which is selectable from a drop down field. Available time increments are **Day**, **Week**, **Month**, and **Year**.
 
-The scaling buttons on the top right allow you to choose between a **Linear** or **Logarithmic** histogram. Click and drag over the histogram to display the photographs from of a certain time frame, or just click on the corresponding histogram bar. You are not restricted to a single bar: :kbd:`Shift+left` click to select a range of bars from the histogram, and :kbd:`Ctrl+left` click to add additional bars to those already selected.
+The scaling buttons on the top right allow you to choose between a **Linear** or **Logarithmic** histogram. Click and drag over the histogram to display the photographs from a certain time frame, or just click on the corresponding histogram bar. You are not restricted to a single bar: :kbd:`Shift+left` click to select a range of bars from the histogram, and :kbd:`Ctrl+left` click to add additional bars to those already selected.
 
 .. figure:: videos/left_sidebar_timeline_selection.webp
     :width: 600px

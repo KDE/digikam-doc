@@ -44,7 +44,7 @@ Once you decide on a location, you will have to decide on how to organize your i
 
 Do not make the folders too small, several thousand images in one folder is not unreasonable, but keep the folders small enough so that they can fit onto a backup medium like an optical drive. Remember that the archive will grow all the time.
 
-The specific structure you choose will likely depend on your use case. For example, a casual photographer may likely take pictures of family, events in their life, holidays and so on. It could be efficient to create a structure based on calendar years plus some some special folders for holidays and files to export. Such a structure could look like this:
+The specific structure you choose will likely depend on your use case. For example, a casual photographer may likely take pictures of family, events in their life, holidays and so on. It could be efficient to create a structure based on calendar years plus some special folders for holidays and files to export. Such a structure could look like this:
 
 .. code-block:: text
 
@@ -126,7 +126,7 @@ Specifically, digiKam provides **automatic tagging** features based on deep-lear
 
         digiKam Maintenance Tool is The Best Way to Auto-tag items by :ref:`Quality <maintenance_quality>` or for :ref:`Faces <maintenance_faces>`
 
-These kind of tools require extra data model files to run, which can be installed during digiKam's first run, or from :menuselection:`Settings --> Configure --> System --> Download Required Binary Data...`.
+These kinds of tools require extra data model files to run, which can be installed during digiKam's first run, or from :menuselection:`Settings --> Configure --> System --> Download Required Binary Data...`.
 
 
 .. _rating_ranking:
