@@ -10,10 +10,8 @@
 
 .. _dam_workflow:
 
-DAM Workflow
-============
-
-.. contents::
+:ref:`DAM Workflow <asset_management>`
+======================================
 
 - Import images from camera, card reader or scanner. As long as the images are stored on the camera media, you can use that as a temporary backup.
 

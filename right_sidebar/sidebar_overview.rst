@@ -10,10 +10,8 @@
 
 .. _sidebar_overview:
 
-Overview
-========
-
-.. contents::
+:ref:`Overview <right_sidebar>`
+===============================
 
 The digiKam main window has a sidebar along the right border that provides important information on selected images, and allows you to take actions on images. This same sidebar (except for the **Filters** tab) is also available in the digiKam Image Editor and the Light Table. The contents of the sidebar can be displayed by clicking on one of the eight tabs:
 

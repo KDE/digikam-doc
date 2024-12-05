@@ -10,8 +10,8 @@
 
 .. _timeline_view:
 
-Time-Line View
---------------
+:ref:`Time-Line View <left_sidebar>`
+====================================
 
 .. figure:: images/left_sidebar_timeline.webp
     :alt:

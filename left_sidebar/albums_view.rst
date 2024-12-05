@@ -10,8 +10,8 @@
 
 .. _albums_view:
 
-Albums View
-===========
+:ref:`Albums View <left_sidebar>`
+=================================
 
 .. contents::
 

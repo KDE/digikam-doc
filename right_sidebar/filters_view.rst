@@ -10,10 +10,8 @@
 
 .. _filters_view:
 
-Filters View
-=============
-
-.. contents::
+:ref:`Filters View <right_sidebar>`
+===================================
 
 The **Filters** tab is used to limit the set of images displayed in the Image Area. Normally one uses the Left Sidebar with its different views to limit which images are displayed. For example, selecting an album in the Left Sidebar limits the content in the Image Area to images in that album, while selecting a label in the Left Sidebar limits the content in the Image Area to images with that assigned label. The **Filters** tab on the Right Sidebar offers a number of filters which if selected, will further limit the content displayed in the Image Area.
 

@@ -10,8 +10,8 @@
 
 .. _queue_settings:
 
-Queue Settings
-==============
+:ref:`Queue Settings <batch_queue>`
+===================================
 
 .. contents::
 
@@ -54,7 +54,7 @@ The **RAW Files Loading** setting configures how any RAW files will be processed
 
 The **Target File Exists** setting allows you to customize the behavior when the target file already exists. You can **Store as a different name**, **Overwrite automatically** to overwrite the target file, or **Skip automatically** to skip overwriting the target file. No matter what option is selected, the Batch Queue Manager will not ask you about this behavior while running.
 
-The **Save Image as a Newly Created Branch** setting will use **Image Versioning** to name target files. This is the same behavior as when files are exported from **Image Editor** when Versioning feature is enabled.
+The **Save Image as a Newly Created Branch** setting will use **Image Versioning** to name target files. This is the same behavior as when files are exported from **Image Editor** when the versioning feature is enabled.
 
 The **Work on all Processor Cores** setting will use more than one core to process items in parallel from the same queue.
 
@@ -67,9 +67,9 @@ The **Work on all Processor Cores** setting will use more than one core to proce
 RAW Decoding
 ------------
 
-This tab allows you to customize the RAW Import settings for the Batch Queue Manager. Typically these settings are used when a RAW files is present in a Queue. RAW files need to be decoded and loaded into memory in a RGB color space before batch processing the file. This setting is only used if **Behavior/RAW Files Loading** is set to **RAW Decoding**.
+This tab allows you to customize the RAW Import settings for the Batch Queue Manager. Typically these settings are used when RAW files are present in a Queue. RAW files need to be decoded and loaded into memory in a RGB color space before batch processing the file. This setting is only used if **Behavior/RAW Files Loading** is set to **RAW Decoding**.
 
-The **RAW Import** section of :ref:`the Image Editor configuration <setup_rawdefault>` provides a detailed description of these settings.
+The **RAW Import** portion of the :ref:`Image Editor Settings <setup_rawdefault>` section provides a detailed description of these settings.
 
 .. figure:: images/bqm_queue_settings_raw.webp
     :alt:
@@ -82,7 +82,7 @@ Saving Images
 
 This tab allows you to customize the settings used while saving the image. It is not uncommon for a queue to process files without exporting the results into another format. An example would be loading **JPEG** files, applying **White Balance** and **Resize** tools, and then storing the results as **JPEG** files. When you want to save the results of batch processing into a file type different than the original, you need to apply a convert tool at end of your workflow. In either case, these Tool Settings are used to control the export process.
 
-All the details of these settings is described in **Save Images** section from :ref:`the Image Editor configuration <saveimage_settings>`.
+All the details of these settings is described in the **Save Images** portion of the :ref:`Image Editor Settings <saveimage_settings>` section of this manual.
 
 .. figure:: images/bqm_queue_settings_save.webp
     :alt:

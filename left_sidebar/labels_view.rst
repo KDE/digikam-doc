@@ -10,8 +10,8 @@
 
 .. _labels_view:
 
-Labels View
------------
+:ref:`Labels View <left_sidebar>`
+=================================
 
 .. figure:: images/left_sidebar_labels_view.webp
     :alt:

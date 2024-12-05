@@ -10,8 +10,8 @@
 
 .. _camera_import:
 
-Import From Camera
-==================
+:ref:`Import From Camera <import_tools>`
+========================================
 
 .. contents::
 
@@ -21,7 +21,7 @@ Import From Camera
 
     The digiKam Import Tool Main Interface
 
-Getting Information About The Photographs
+Getting Information About the Photographs
 -----------------------------------------
 
 Before downloading photographs to your computer, you can view information about the photographs stored on the camera from the **Properties** and **Metadata** tabs on the Right Sidebar.
@@ -32,7 +32,7 @@ Before downloading photographs to your computer, you can view information about 
 
     The Item Properties Sidebar Tab from Import Tool
 
-The **Properties** tab displays file information recorded by the camera and a selection of photographic information describing how the image has been taken. A flag indicates if the image has not yet been **Downloaded** to the computer. Note that this information may only be available with some digital cameras. Another label will show you the **New Name** of the file after it has been downloaded to the computer.
+The **Properties** tab displays file information recorded by the camera and a selection of photographic information describing how the image was taken. A flag indicates if the image has not yet been **Downloaded** to the computer. Note that this information may only be available with some digital cameras. Another label will show you the **New Name** of the file after it has been downloaded to the computer.
 
 The **Metadata** tab displays the picture's Exif, Makernotes, and GPS metadata. This information is the same as :ref:`Metadata <metadata_view>` from the digiKam Right Sidebar. Note that all these metadata may be unavailable for some digital cameras.
 
@@ -99,7 +99,7 @@ To upload photographs from your computer to your camera select :menuselection:`I
 
     The Selection of Items to Upload to the Camera
 
-When images selection is done, digiKam will ask you where you want to upload the files on your camera. A camera folder selection dialog will appear. Just select one folder and press **OK** to start uploading. No images will be removed from your computer.
+When image selection is done, digiKam will ask you where you want to upload the files on your camera. A camera folder selection dialog will appear. Just select one folder and press **OK** to start uploading. No images will be removed from your computer.
 
 .. figure:: images/camera_upload_select_camera_folder.webp
     :alt:

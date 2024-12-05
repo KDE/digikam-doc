@@ -10,11 +10,13 @@
 
 .. _image_view:
 
-Image View
-----------
+:ref:`Image View <main_window>`
+===============================
+
+.. contents::
 
 General Information
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 Image thumbnails are shown in the Icon Area of the Image View for all images selected from either the Left or Right Sidebar. You can alter the size of the thumbnails using the magnifier slider close to the right end of the status bar. All eight areas are updated based on any selection of thumbnails within the Icon Area.
 
@@ -51,7 +53,7 @@ You can access most of the functions that digiKam can perform on a photograph by
 .. _viewing_photograph:
 
 Viewing an Image
-~~~~~~~~~~~~~~~~
+----------------
 
 .. |icon_fullscreen| image:: images/mainwindow_icon_fullscreen.webp
 
@@ -81,14 +83,14 @@ You can also view your images in a :ref:`slideshow <slide_tool>` using the **Sli
 .. _editing_photograph:
 
 Editing a Photograph
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 You can open the Image Editor on a photograph by either clicking the **Image Editor** button on the Main Toolbar, or by selecting :menuselection:`Item --> Open...` :kbd:`F4` from the menu bar, or by clicking with the right mouse button and selecting **Open...** from the context menu. See the digiKam :ref:`Image Editor <image_editor>` section for instructions on how to edit your photographs. The Image Editor offers a wide range of tools to enhance, decorate and/or modify your photographs.
 
 .. _editing_external:
 
 Viewing or Editing a Photograph With Another Application
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------------------
 
 When digiKam does not provide all of the capabilities you need, you can open a photograph in another application by clicking on the photograph with the right mouse button and selecting from the **Open With...** sub-menu. The list of applications that appear in this menu is controlled by the standard operating system file associations for the image format type of this photograph. If the application that you need is not listed, consult the operating system manuals for instructions on changing these file associations .
 
@@ -97,7 +99,7 @@ Note that there can be a problem with metadata embedded in photographs when they
 .. _lossless_rotation:
 
 Lossless Image Rotation
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 .. note::
 
@@ -112,7 +114,7 @@ The photograph is rotated without loss of quality and the orientation informatio
 .. _renaming_photograph:
 
 Renaming a Photograph
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 You can change the filename for a photograph by clicking with the right mouse button over a thumbnail and selecting **Rename...** :kbd:`F2`. You can also select multiple photographs to batch rename files. A dialog will open showing the list of selected photographs with their current name and the new name.
 
@@ -237,7 +239,7 @@ You can also batch rename photographs using the :ref:`Batch Queue Manager <batch
 .. _deleting_photograph:
 
 Deleting a Photograph
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 When you delete a photograph from digiKam with :menuselection:`Item --> Move to Trash` :kbd:`Del` it will be moved from its folder on the hard disk to the internal **Trash** Can.
 
@@ -286,7 +288,7 @@ These same options are also available in the trash-bin list's context menu. When
 .. _grouping_photograph:
 
 Grouping Photographs
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 Grouping items is a very useful way to organize Photographs and/or videos that are related to each other, and adjusts the way they are displayed in the image area. This function is available through the context menu on a selection of items (more than one item selected).
 

@@ -10,8 +10,8 @@
 
 .. _application_install:
 
-Installation
-============
+:ref:`Installation <getting_started>`
+=====================================
 
 .. contents::
 

@@ -10,10 +10,8 @@
 
 .. _dng_converter:
 
-DNG Converter
-=============
-
-.. contents::
+:ref:`DNG Converter <batch_queue>`
+==================================
 
 digiKam comes with a nifty batch utility that allows you to convert RAW files to the DNG format. The question is, of course, why you would want to do that. After all, digiKam can handle RAW files without any problem, so what’s the point of adding one more step to your photographic workflow?
 

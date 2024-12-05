@@ -10,10 +10,8 @@
 
 .. _properties_view:
 
-Properties View
-===============
-
-.. contents::
+:ref:`Properties View <right_sidebar>`
+======================================
 
 The properties sidebar shows essential information about the selected image that are largely self-explanatory. It is grouped into the following sections:
 

@@ -10,10 +10,8 @@
 
 .. _scanner_import:
 
-Import From Scanner
-===================
-
-.. contents::
+:ref:`Import From Scanner <import_tools>`
+=========================================
 
 This tool can scan images using a flatbed scanner. It uses an interface for the `SANE Library <http://sane-project.org/>`_ to control the scanner. It can save scanned images into all of the main image formats that digiKam supports.
 

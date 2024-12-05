@@ -1,5 +1,5 @@
 .. meta::
-   :description: Overview to digiKam Light Table
+   :description: Overview to digiKam Light Table Advanced Features
    :keywords: digiKam, documentation, user manual, photo management, open source, free, learn, easy, light table, focus, points
 
 .. metadata-placeholder
@@ -10,8 +10,8 @@
 
 .. _lighttable_advanced:
 
-Advanced Features
-=================
+:ref:`Advanced Features <light_table>`
+======================================
 
 .. contents::
 
@@ -92,7 +92,7 @@ The toolbar in the top left corner of the preview area also provides the same op
 Assigning Ratings, Labels and Tags
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You can use the context menu on a preview image to easily assign Ratings, Labels, and Tags. Of course this menu is available in both the left and right pane. You can also use the **Caption** tab available on the left sidebar and on the right sidebar. More details about this tab is given in the :ref:`Caption View section <captions_view>` of this manual.
+You can use the context menu on a preview image to easily assign Ratings, Labels, and Tags. Of course this menu is available in both the left and right pane. You can also use the **Caption** tab available on the left sidebar and on the right sidebar. More details about this tab is given in the :ref:`Captions View <captions_view>` section of this manual.
 
 After assigning these kinds of properties, you can find the marked items using the **Labels** and **Tags** tabs in the Main Window left sidebar. This will allow you to quickly post-process items that you tagged during your review of the items in Light Table.
 

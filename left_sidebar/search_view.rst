@@ -10,21 +10,23 @@
 
 .. _search_view:
 
-Search View
------------
+:ref:`Search View <left_sidebar>`
+=================================
+
+.. contents::
 
 We talked about a variety of views with specialized search capabilities. The Search View  offers a more versatile and general way of searching. There are two different approaches: Quick Search and Advanced Search.
+
+The Quick Search
+----------------
+
+Quick Search is the adaptive search box at the top of the search dialog (Left Sidebar) that provides you with a simple means to search the digiKam database with a single query. Any arguments entered into the **Search** text field will be used to determine the results. For instance, you can enter the string "birthday" to search the complete database for occurrences of the word "birthday" in all metadata text fields, or "05.webp" to search for a specific image file name "05.webp" (no escaping as in reg-expressions needed).
 
 .. figure:: images/left_sidebar_searchview.webp
     :alt:
     :align: center
 
     The digiKam Simple Search Tool
-
-The Quick Search
-~~~~~~~~~~~~~~~~
-
-Quick Search is the adaptive search box at the top of the search dialog (Left Sidebar) that provides you with a simple means to search the digiKam database with a single query. Any arguments entered into the **Search** text field will be used to determine the results. For instance, you can enter the string "birthday" to search the complete database for occurrences of the word "birthday" in all metadata text fields, or "05.webp" to search for a specific image file name "05.webp" (no escaping as in reg-expressions needed).
 
 Search Properties:
 
@@ -47,7 +49,7 @@ The textbox below the Searches list can be used to search for saved searches whe
 .. _advanced_search:
 
 The Advanced Search Tool
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 The Avanced Search tool provides an extended search form which can be used to search in specific fields of the digiKam database in a more sophisticated way. Click the **New Advanced Search...** button to display the Advanced Search Tool:
 

@@ -10,10 +10,8 @@
 
 .. _batchqueue_overview:
 
-Overview
-========
-
-.. contents::
+:ref:`Overview <batch_queue>`
+=============================
 
 digiKam features a batch queue manager that opens in a separate window to easily batch process a list of items, aka filtering, converting, transforming, etc. Batch processing works with all supported image formats including RAW files.
 
@@ -31,7 +29,7 @@ The Batch Queue Manager window displays the list of **Queues** to process on the
 
     If you want to process the items from an album and all sub-albums in a queue, just turn on the option to display sub-albums in the Album-View using the :menuselection:`View --> Include Album-Sub Tree` menu entry, select the corresponding items, and then add them to the Batch Queue Manager.
 
-The list of **Assigned Tools** to apply to each item in the queue is shown in the top middle of the window. Each tool in this list is applied sequentially from the top to bottom. You can drag tools within this list to rearrange the order as needed. It's highly recommended that you export to a new format at end of this list in order to preserve the best image quality.
+The list of **Assigned Tools** to apply to each item in the queue is shown in the top middle of the window. Each tool in this list is applied sequentially from top to bottom. You can drag tools within this list to rearrange the order as needed. It's highly recommended that you export to a new format at the end of this list in order to preserve the best image quality.
 
 To adjust the settings for a tool, select the tool from the Assigned Tools list. The settings for that tool are then displayed in the **Tool Settings** area in the top right of the window. Any changes to these settings will be saved in the queue and applied to all items during batch processing.
 

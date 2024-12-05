@@ -10,8 +10,8 @@
 
 .. _advanced_import:
 
-Advanced Import Settings
-========================
+:ref:`Advanced Import Settings <import_tools>`
+==============================================
 
 .. contents::
 
@@ -40,7 +40,7 @@ The new filename that digiKam will use for downloaded images will be shown under
 
 .. caution::
 
-    Issues with the gPhoto2 drivers mean that digiKam cannot currently read metadata from RAW files when importing from a camera. You might want to first import the files while preserving camera filenames, and then rename them after the import using the rename function (:kbd:`F2`).
+    Issues with the gPhoto2 drivers mean that digiKam cannot currently read metadata from RAW files when importing from a camera. You might want to first import the files while preserving camera filenames, and then using the rename function (:kbd:`F2`) to rename them after the import.
 
     Another solution is to instead import using a memory card reader and the USB Mass Storage driver.
 
@@ -57,7 +57,7 @@ Auto-Creation of Albums
 
 Check **Extension-based sub-albums** to have digiKam create sub-albums based on the file extensions of the imported images in the target album. At the point where you :ref:`download from your camera to your computer <camera_download>`, digiKam will open a dialog allowing you to choose the target album once you click one of the download options either from the toolbar or from the **Item** menu. If you want to create a new Album into which you can download the photographs, click the **New Album** button. The new Album will be created as a sub-folder of the Album that is currently selected in the existing Album list. This means that if you do not want your new Album to be a sub-folder of an existing folder, you must first select the collection where you want to create the new album. Collections are indicated on the top level of the album hierarchy.
 
-If your camera provides information about the date of the photograph, or if you import images containing Exif date metadata from a USB device or a folder, digiKam can use the date to automatically create sub-albums in the target album during import. Check **Date-based sub-albums** to create sub-album names based on the image dates. All images with the same date will be downloaded into the same sub-album. Not all cameras include this information. See the :ref:`sidebar Metadata section <camera_import>` for more detail about information your camera may have embedded in your photographs.
+If your camera provides information about the date of the photograph, or if you import images containing Exif date metadata from a USB device or a folder, digiKam can use the date to automatically create sub-albums in the target album during import. Check **Date-based sub-albums** to create sub-album names based on the image dates. All images with the same date will be downloaded into the same sub-album. Not all cameras include this information. See the :ref:`earlier section <camera_import>` in this chapter for more detail about information your camera may have embedded in your photographs.
 
 The date format for automatically creating albums can be set to **ISO** (e.g. '2023-08-13''), **Full text** (e.g. 'Sun Aug 13 2023''), **Local Settings** (taken from your desktop settings), or **Custom**. Custom date formats are specified in the Date format text box using the date descriptors described in the associated help dialog. An annotation below the text box will either show an example album name, or warn that the custom data format is not valid.
 
@@ -84,7 +84,7 @@ This section of the Settings tab offers several options for making changes to JP
 
 The **Auto-rotate/flip image** checkbox will perform the auto-rotate/flip action described in :ref:`Lossless Image Rotation <lossless_rotation>`.
 
-**Convert to lossless file format** allows you to convert the images to PNG, TIFF, PGF, HEIF, WEBP, AVIF, or JPEG 2000 during import. To learn more about these file formats, see :ref:`this section <image_formats>` from the manual.
+**Convert to lossless file format** allows you to convert the images to PNG, TIFF, PGF, HEIF, WEBP, AVIF, or JPEG 2000 during import. To learn more about these file formats, see :ref:`this section <image_formats>` of the manual.
 
 .. _camera_dngconvert:
 

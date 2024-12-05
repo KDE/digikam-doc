@@ -10,8 +10,10 @@
 
 .. _database_intro:
 
-Database
-========
+:ref:`Database <getting_started>`
+=================================
+
+.. contents::
 
 Overview
 --------

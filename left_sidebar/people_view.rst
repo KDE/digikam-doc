@@ -10,8 +10,10 @@
 
 .. _people_view:
 
-People View
------------
+:ref:`People View <left_sidebar>`
+=================================
+
+.. contents::
 
 If you’re not just photographing machines or stars, Face Management could be a useful feature for you (even machines might have a human operator). In digiKam, this feature involves two main tasks: **Face Detection** and **Face Recognition**.
 
@@ -25,7 +27,7 @@ The face management workflow helps you identify and recognize people in your pho
 .. _face_detection:
 
 Face Detection
-~~~~~~~~~~~~~~
+--------------
 
 The first step is to let digiKam locate all the photos containing faces, without yet identifying who they belong to. To begin, click on the **People** tab in the left sidebar. At the bottom, you’ll find a settings view with a drop-down menu where you can select from various options:
 
@@ -137,7 +139,7 @@ After the **detection** scan is complete, you should see a new tag labeled **Unk
 .. _face_tagging:
 
 Face Tagging
-~~~~~~~~~~~~
+------------
 
 Assigning People tags to face tags is a crucial step for Face Recognition. digiKam can only recognize faces if it has reference faces for comparison. It’s your job to train it by identifying faces, such as labeling them as Lara, Juan, Peter, etc. Usually, you only need to manually tag one face for a person for the recognition process to identify additional faces.
 
@@ -235,7 +237,7 @@ In addition to tagging auto-detected faces, you can manually add a face region:
 .. _face_recognition:
 
 Face Recognition
-~~~~~~~~~~~~~~~~
+----------------
 
 Once you have assigned a tag to a few photographs, you can have digiKam try to match **Unknown** faces with similar faces that have already been confirmed (tagged). To start this process, go to the workflow tab, select **Recognize Faces**, and then click **Scan Collection For Faces**. The process will tag similar **detected** faces with the appropriate People tag from your tag tree, and the corresponding thumbnail will disappear from the **Unknown** tag selection. The thumbnail will appear in the **Unconfirmed** tag section and will be added to the suggested face tag section.
 
@@ -271,7 +273,7 @@ By default, faces are categorized based on their name. You can change this behav
     digiKam does not keep a record of rejected faces. The same face might be suggested in future recognition scans. To avoid this, you can either label the face with a new name or choose to **ignore** it.
 
 How recognition works
-^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~
 
 Face recognition in digiKam is cumulative. When more faces are confirmed to a tag name, digiKam can find more faces that are similar. When first building your library, it may take several recognition scans of your library to recognize all of the similar detected faces. This allows digiKam to learn different aspects of faces, and helps it to recognize the same person at different ages.
 
@@ -291,7 +293,7 @@ To improve face recognition results, in addition to adjusting the settings menti
 .. _search_in_tab:
 
 Search-in Tab
-~~~~~~~~~~~~~
+-------------
 
 The **Search-in** tab lets you choose which albums and image tags to include in a scan. You can select specific albums or tags for detection and recognition.
 
@@ -308,7 +310,7 @@ The **Search-in** tab lets you choose which albums and image tags to include in 
 .. _settings_tab:
 
 Settings Tab
-~~~~~~~~~~~~~
+------------
 
 The **Settings** tab lets you fine-tune the results from detection and recognition scans. Here, you can adjust the detection and recognition models, set the accuracy levels, and configure face detection for special cases. Additionally, you can control the processor load used for face detection and recognition. The default values have been carefully chosen for normal use after exhaustive testing on multiple datasets, including industry standard datasets such as `LFW <https://vis-www.cs.umass.edu/lfw/>`_, and personal datasets.
 
@@ -317,7 +319,7 @@ The **Settings** tab lets you fine-tune the results from detection and recogniti
    Beginning with digiKam 8.5.0, YuNet is the recommended model for face detection, and SFace is recommended for face recognition.
 
 Face Detection Settings
-^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~
 
 For Face Detection, there are 3 settings the user can adjust to control how digiKam determines if there is a face in an image.
 
@@ -334,7 +336,7 @@ For Face Detection, there are 3 settings the user can adjust to control how digi
 - **Face Size**: This setting applies only to YuNet, and will be disabled if a different detection model is selected. Larger face size settings increase the speed of face detection but may miss small faces in group photos or in the background of images. See the **Special Cases** section below for more details.
 
 Face Recognition Settings
-^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For Face Recognition, there are 2 settings the user can adjust to control how digiKam matches **Unknown** faces to confirmed faces.
 
@@ -349,7 +351,7 @@ For Face Recognition, there are 2 settings the user can adjust to control how di
 - **Model**: SFace is the recommended recognition model. It is much more accurate than OpenFace. Changing from one recognition model to another requires retraining your face library, which can be time-consuming.
 
 Work on all processor cores
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Face detection and face recognition can be time-consuming tasks depending on the size of your library and filtering selected in **Search-in**. To help speed up the process, you can choose to use all processor cores.  While this will make the process run faster, it can potentially make other processes run slower and make your computer feel unresponsive while faces are being processed.
 
@@ -358,7 +360,7 @@ Face detection and face recognition can be time-consuming tasks depending on the
    Due to technical limitations on Windows, multi-core support with a MySQL/MariaDB database does not perform well. We recommend using an SQLite database instead for better performance.
 
 Special Cases
-^^^^^^^^^^^^^
+-------------
 
 Occasionally, you may encounter special cases where the recommended face detection settings don't yield the best results. In those cases, you should tune the detection settings for a single image or small group of images.  It is not recommended to change the default settings for normal use, and it is recommended to change the settings back to their default values when you're done with special cases.
 

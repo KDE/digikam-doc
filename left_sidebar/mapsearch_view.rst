@@ -10,8 +10,8 @@
 
 .. _mapsearch_view:
 
-Map Search View
----------------
+:ref:`Map Search View <left_sidebar>`
+=====================================
 
 .. |zoom_in| image:: images/left_sidebar_icon_zoom_in.webp
     :height: 15px

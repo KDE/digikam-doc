@@ -10,10 +10,8 @@
 
 .. _remote_import:
 
-Import from Remote Computer
-===========================
-
-.. contents::
+:ref:`Import from Remote Computer <import_tools>`
+=================================================
 
 This tool downloads files into your collections from a remote networked computer. It is available from the :menuselection:`Import --> Import from remote storage` :kbd:`Alt+Shift+K` menu entry or the corresponding icon from the **Tools** tab in the Right Sidebar.
 
@@ -38,7 +36,7 @@ In this dialog, you can use protocols such as **fish** (ssh), **ftp**, **smb**, 
 
 .. note::
 
-    The native URLs selector dialog is only available if you turn on the right option from the **Misc/Appearance** section of the :ref:`configuration panel <appearance_settings>`.
+    The native URLs selector dialog is only available if you turn on the right option from the `Settings --> Configure digiKam... --> Miscellaneous page --> Appearance tab`. See  :ref:`this section <appearance_settings>` of the manual for more details.
 
 After selecting the files to import and closing the native desktop URLs selector, the selected files will appear in the list below the **Select import location** button.
 

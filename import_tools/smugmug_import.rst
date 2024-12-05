@@ -10,12 +10,10 @@
 
 .. _smugmug_import:
 
-Import from SmugMug
-===================
+:ref:`Import from SmugMug <import_tools>`
+=========================================
 
-.. contents::
-
-This tool downloads photos from the SmugMug web-service.
+This tool downloads photos from the SmugMug web service.
 
 `SmugMug <https://en.wikipedia.org/wiki/SmugMug>`_ is an image sharing, image hosting, and online video platform on which users can upload photos and videos. The company also facilitates the sale of digital and print media for amateur and professional photographers.
 

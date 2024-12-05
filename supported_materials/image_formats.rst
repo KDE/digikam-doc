@@ -10,8 +10,8 @@
 
 .. _image_formats:
 
-Image Files
-===========
+:ref:`Image Files <supported_materials>`
+========================================
 
 .. contents::
 

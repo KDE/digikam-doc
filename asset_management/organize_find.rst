@@ -10,8 +10,8 @@
 
 .. _organize_find:
 
-Organize and Find
-=================
+:ref:`Organize and Find <asset_management>`
+===========================================
 
 .. contents::
 
@@ -20,7 +20,7 @@ Experience suggests that if you have more than 1000 photographs on your computer
 But just as there is no such thing as a free lunch, there is no effort-free cataloging or DAM solution - those who spend the initial time and effort to systematically organize and label their images will be better off as time passes, and the number of photographs in their collection grows. The return on investment for DAM has been estimated in different studies to be greater than 10 to 1. Even larger gains can be anticipated if one plans further into the future when the upcoming semantic web will easily integrate imagery that has been labelled in a DAM environment.
 
 Use-Cases with digiKam
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 digiKam provides a number of methods to classify photographs: filenames, albums, collections, time-stamp, tags, rating, GPS position and captions. As if this was not enough, you can search most standard metadata items like camera model, lens, coordinates, image size and many more. The metadata categories listed here are in fact different **views** of your photo library. Combining these views is a very powerful method to narrow down a search to quickly find a file. Imagine having 800 photos of your loved one. Searching for **Salagou**, having more than **3 rating stars**, shot in **France** will surely leave you with very few candidates. Compared to most other DAM systems, digiKam's search and selection capabilities are complete, versatile, fast, scalable, accurate and based on open standards.
 
@@ -36,7 +36,7 @@ Some may have concerns about recording **private metadata** into what might one 
 
 
 Folder Organization
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 The first step in establishing a DAM system is to build an information structure (as opposed to a data structure). You must first decide where you should store your files - should they be stored on a dedicated drive or on a network drive. And should others have access to your photographs via sharing. When thinking about storage, keep in mind that you'll have to regularly backup your files, and one day you'll have to migrate your files onto a bigger volume.
 
@@ -80,7 +80,7 @@ Here are some things to consider when deciding on folder organization:
     The digiKam :ref:`Import Tool <advanced_import>` Allows You to Create Albums and Rename Files Based on Item Properties
 
 Automatic Metadata
-~~~~~~~~~~~~~~~~~~
+------------------
 
 So how do you go about all this metadata business? First, your images already contain a lot of **automatically generated metadata**, such as Exif data and Makernotes. If you have configured a digiKam Template with your identity, all imported images can automatically be imprinted with this data set which includes author information, copyrights, etc. If you record a GPS track at the same time as you are taking photographs, you can add geolocation metadata to the images in a single action using the Geolocation tool. Even if you brought back 1000 images from a shooting session, it shouldn't take more than 10 minutes to add identity and location data.
 
@@ -132,7 +132,7 @@ These kinds of tools require extra data model files to run, which can be install
 .. _rating_ranking:
 
 Rating and Ranking
-~~~~~~~~~~~~~~~~~~
+------------------
 
 After automatic tagging, it's best to start with image ratings, because they allow you to concentrate further work on just the best shots.
 
@@ -180,7 +180,7 @@ Decide on an approach that most suits your needs. The following table illustrate
 .. _asset_tags:
 
 Tagging and Keywords
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 Let's next consider **Tags** (which are also called keywords or categories in other applications).
 
@@ -238,7 +238,7 @@ The graphic below shows how different digiKam item properties overlap. This is a
 .. _captions_comments:
 
 Captions and Comments
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 **Captions** are another kind of metadata that can be used to store text that describes the image.
 
@@ -277,7 +277,7 @@ For others to appreciate your photographs, the **Title** and **Caption** are pro
 With digiKam you can enter unlimited amounts of text using an internationalized alphabet (UTF-8) as a caption and title. You can enter a single caption and title for a selection of photos at the same time. When you export images to web services, you can choose to independently include or exclude the caption and title assigned to the images - no need to re-write the story for publishing.
 
 Geolocation and Geo-tagging
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 Do you remember the time before GPS? A time when you would find your way to another city without a navigation system? Wasn't the earth a dull blue ball before Google Earth? Well times have changed, and it is easy these days to geo-tag most images to mark where on the globe they were taken.
 

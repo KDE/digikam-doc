@@ -10,8 +10,8 @@
 
 .. _dates_view:
 
-Dates View
-----------
+:ref:`Dates View <left_sidebar>`
+================================
 
 .. figure:: images/left_sidebar_datesview.webp
     :alt:

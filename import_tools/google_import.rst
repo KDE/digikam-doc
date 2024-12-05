@@ -10,15 +10,15 @@
 
 .. _google_import:
 
-Import from Google
-==================
+:ref:`Import from Google <import_tools>`
+========================================
 
 .. contents::
 
 Overview
 --------
 
-This tool uploads photos to, and imports photos from, the `Google Photo <https://en.wikipedia.org/wiki/Google_Photos>`_ web services.
+This tool uploads photos to, and imports photos from, the `Google Photo <https://en.wikipedia.org/wiki/Google_Photos>`_ web service.
 
 **Google Photos** is a photo sharing service that automatically analyzes photos, identifying various visual features and subjects. Users can search for anything in photos including faces and group similar ones together.
 

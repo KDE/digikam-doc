@@ -10,8 +10,8 @@
 
 .. _application_intro:
 
-Introduction
-============
+:ref:`Introduction <getting_started>`
+=====================================
 
 .. contents::
 

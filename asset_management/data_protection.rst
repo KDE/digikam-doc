@@ -10,8 +10,8 @@
 
 .. _data_protection:
 
-Data Corruption and Loss
-========================
+:ref:`Data Corruption and Loss <asset_management>`
+==================================================
 
 .. contents::
 

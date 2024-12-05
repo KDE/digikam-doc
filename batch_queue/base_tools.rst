@@ -10,8 +10,8 @@
 
 .. _base_tools:
 
-Base Tools
-==========
+:ref:`Base Tools <batch_queue>`
+===============================
 
 .. contents::
 
@@ -57,7 +57,7 @@ The list of tools shared between the Image Editor and the Batch Queue Manager is
 
         - :ref:`Channel Mixer <color_mixer>`
 
-        - :ref:`Black and White Convert <color_bw>` (including also the :ref:`Simulate Infrared Film <color_infrared>`)
+        - :ref:`Black and White Convert <color_bw>` (including :ref:`Simulate Infrared Film <color_infrared>`)
 
         - :ref:`Invert Colors <color_invert>`
 
@@ -109,7 +109,7 @@ The list of tools shared between the Image Editor and the Batch Queue Manager is
 
     - Image Decoration Tools:
 
-        - Add Watermark (a more powerful tool than **Insert Text** from Image Editor)
+        - :ref:`Add Watermark <watermark_tool>` (a more powerful tool than **Insert Text** from Image Editor)
 
         - :ref:`Insert Text <decorate_inserttext>`
 
@@ -225,7 +225,7 @@ The folder properties dialog allows you to create or rename a sub-directory host
 
     The G'MIC Folder Properties Dialog
 
-The filter properties dialog allows you to create or edit a G'MIC filter in the tree-view. You can customize all the settings for an entry, as:
+The filter properties dialog allows you to create or edit a G'MIC filter in the tree-view. You can customize all the settings for an entry, such as:
 
  - The list of chained G'MIC commands.
  - The order of the G'MIC Command.
@@ -265,4 +265,4 @@ Integrating The Procesor
 
 To use the G'MIC processor in the Batch Queue Manager, place the tool in your Assigned List of tools, and select the desired G'MIC filter to run with your queued images.
 
-Between the Batch Queue Manager sessions, the G'MIC tree-view will remember the last used filter. The last used filter is also preserved if you save the Assigned List of tools as a Batch Queue Manager workflow.
+Between Batch Queue Manager sessions, the G'MIC tree-view will remember the last used filter. The last used filter is also preserved if you save the Assigned List of tools as a Batch Queue Manager workflow.

@@ -10,8 +10,8 @@
 
 .. _interface_layout:
 
-Interface Layout
-================
+:ref:`Interface Layout <main_window>`
+=====================================
 
 .. contents::
 

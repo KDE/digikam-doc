@@ -10,14 +10,12 @@
 
 .. _import_overview:
 
-Overview
-========
+:ref:`Overview <import_tools>`
+==============================
 
-.. contents::
+To use digiKam to download images directly from your digital camera, connect the camera to your computer, switch the camera to the image display mode and turn it on. To download images from your phone's camera, it may be necessary to give your computer the rights to access the phone's contents. See your camera's user manual for more information.
 
-To use digiKam to download images directly from your digital camera, connect the camera to your computer, switch the camera to the image display mode and turn it on. To download images from your phone's camera, it may be necessary to give your computer the rights to access of phone's contents. See your camera's user manual for more information.
-
-The Import Interface helps you to get photographs into a digiKam Album, whether it is directly from your camera or scanner, from a USB mass storage device, via a card reader, or from a local or remote folder. You can access the Import Interface by
+The Import Interface helps you to get photographs into a digiKam Album, whether it is directly from your camera or scanner, from a USB mass storage device, via a card reader, or from a local or remote folder. You can access the Import Interface from the one of the menu items under :menuselection:`Import` on the Main Menu:
 
 :menuselection:`Import --> Cameras`
 

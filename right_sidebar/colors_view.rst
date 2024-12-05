@@ -10,17 +10,17 @@
 
 .. _colors_view:
 
-Colors View
-===========
+:ref:`Colors View <right_sidebar>`
+==================================
 
 .. contents::
 
 The colors sidebar has two sub tabs **Histogram** and **ICC Profile**, which are described here. More complete information on color management within digiKam is available in the :ref:`Color Management <color_management>` chapter of this manual.
 
 Histogram Viewer
-~~~~~~~~~~~~~~~~
+----------------
 
-The Histogram Viewer shows the statistical distribution of color values in the current image. It is purely informational: nothing you do with it will cause any change to the image. A histogram-based color correction can be performed using the Color Balance, Levels Adjust or Curves Adjust features in the Image Editor.
+The Histogram Viewer shows the statistical distribution of color values in the current image. It is purely informational – nothing you do with it will cause any change to the image. A histogram-based color correction can be performed using the Color Balance, Levels Adjust or Curves Adjust features in the Image Editor.
 
 .. figure:: images/right_sidebar_histogramview.webp
     :alt:
@@ -69,7 +69,7 @@ The statistics shown in the middle of the Histogram Viewer describe the distribu
     - The source of the histogram, either **Full Image**, or **Image Region** if you have selected an area of the image within the Image Editor.
 
 How To Use a Histogram
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
 Histograms are a graphical means to assess the color and tonal qualities of an image shown on the screen. The graph can be divided into 3 regions of photographic brightness:
 
@@ -116,9 +116,9 @@ The histogram for an over exposed photograph will have the bulge showing the bri
 The histogram is a reliable way of deciding whether or not a photograph is correctly exposed. Should the histogram show an over or under exposure, it may be possible to fix the photograph using the :ref:`Exposure Correction Tool <color_bcg>`.
 
 ICC Profile Viewer
-~~~~~~~~~~~~~~~~~~
+------------------
 
-An ICC profile is a set of data that characterizes a color input or output device, or a color space, according to standards promulgated by the `International Color Consortium <https://en.wikipedia.org/wiki/International_Color_Consortium>`_. Profiles describe the color attributes of a particular device or viewing requirement by defining a mapping between the device source or target color space and a device-independent color space called the profile connection space. Mappings may be specified using tables, to which interpolation is applied, or through a series of parameters for transformations used in Color Management.
+An ICC profile is a set of data that characterizes a color input or output device, or a color space, according to standards promulgated by the `International Color Consortium <https://en.wikipedia.org/wiki/International_Color_Consortium>`_. Profiles describe the color attributes of a particular device, or the viewing requirements for a particular image, by defining a mapping between the device source or target color space and a device-independent color space called the profile connection space. Mappings may be specified using tables, to which interpolation is applied, or through a series of parameters for transformations used in Color Management.
 
 Every image file can be profiled. Camera manufacturers provide profiles for their products, and store them in image files as extra metadata. This ICC Profile viewer displays the textual information for the image's color profile and a chromaticity diagram indicating the image's color gamut.
 

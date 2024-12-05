@@ -10,13 +10,13 @@
 
 .. _authorship_copyright:
 
-Authorship and Copyright
-========================
+:ref:`Authorship and Copyright <asset_management>`
+==================================================
 
 .. contents::
 
 Strings Metadata
-~~~~~~~~~~~~~~~~
+----------------
 
 One of the last steps in tagging your digital images may be to add authorship, ownership, and copyright tags. Unlike 'the good(?) old days' of paper copies, the ubiquitous Internet makes it just too easy to 'steal' a picture from a web site. At the very least, all images that will be exported and/or published in any form, should have embedded authorship and copyright information as part of their metadata. Including this information allows you to legally prohibit others from reproducing, adapting, or distributing copies of your work.
 
@@ -60,7 +60,7 @@ See `<https://creativecommons.org/licenses/by-sa/4.0/>`_ for details on what the
     The digiKam :ref:`Copyrights View <metadata_editor>` From Metadata Editor
 
 Digital Watermarking
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 Whereas filling-in the author and copyright sections provides some legal protections, these fields do not protect against fraud. Anyone with a bit more than basic computer knowledge can delete or modify embedded image metadata. The solution to this problem is called *digital watermarking*. This might be of little interest to amateur photographers, but digital watermarking is really important for professionals and semi-professionals.
 

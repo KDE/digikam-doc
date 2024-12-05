@@ -10,8 +10,8 @@
 
 .. _custom_script:
 
-Custom Script
-=============
+:ref:`Custom Script <batch_queue>`
+==================================
 
 .. contents::
 
@@ -20,7 +20,7 @@ Overview
 
 The Batch Queue Manager allows you to customize a **Workflow** by adding the **Custom Script** tool to run a script to process your images with external tools such as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_.
 
-The tool named **Custom Script** is available from the **Custom Tools** category of the **Base Tools** list. The tool is designed to execute the source code for a shell script that can call one or more command line programs for each item in the Queue. the shell script is written by the user entirely within the plugin. These scripts can include a set of environment variables that specify filenames and few types of metadata.
+The tool named **Custom Script** is available from the **Custom Tools** category of the **Base Tools** list. The tool is designed to execute the source code for a shell script that can call one or more command line programs for each item in the Queue. The shell script is written by the user entirely within the plugin. These scripts can include a set of environment variables that specify filenames and few types of metadata.
 
 .. figure:: images/bqm_custom_script.webp
     :alt:
@@ -34,7 +34,7 @@ The tool provides these options:
 
     - **Shell Script**: this text field is where you enter the source code for your shell script. `Bash script <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported under **Linux** and **macOS**. `Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported under **Windows**.
 
-The keywords that you can use in your script code are listed below. The tool will replace all occurrences of keywords in the shell script at run time before the script execution. Note that the keywords are case sensitive.
+The keywords that you can use in your script code are listed below. The tool will replace all occurrences of keywords in the shell script at run time before script execution. Note that the keywords are case sensitive.
 
     - **$INPUT** is replaced by the workflow input filename (with special characters escaped).
 
@@ -46,17 +46,19 @@ The keywords that you can use in your script code are listed below. The tool wil
 
 The environment variables that you can use in your shell script are:
 
-    - **TITLE**: to use the digiKam **Title** item property from the database.
+    - **TITLE**: to use the digiKam **Title** item property.
 
-    - **COMMENTS**: to use the digiKam **Caption** item property from the database.
+    - **COMMENTS**: to use the digiKam **Caption** item property.
 
-    - **COLORLABEL**: to use the digiKam **Color Label** item property from the database.
+    - **COLORLABEL**: to use the digiKam **Color Label** item property.
 
-    - **PICKLABEL**: to use the digiKam **Pick Label** item property from the database.
+    - **PICKLABEL**: to use the digiKam **Pick Label** item property.
 
-    - **RATING**: to use the digiKam **Rating** item property from the database.
+    - **RATING**: to use the digiKam **Rating** item property.
 
-    - **TAGSPATH**: to use the digiKam **Tags** item property from the database.
+    - **TAGSPATH**: to use the digiKam **Tags** item property.
+
+All of these properties are set based on the image properties stored in the digiKam database.
 
 .. note::
 
@@ -80,7 +82,7 @@ Examples
 Proof of Concept
 ~~~~~~~~~~~~~~~~
 
-This First example shown below does nothing special. It prints on the console the input/output file names and item properties passed from the Batch Queue Manager to the script, and copies the input file to the output file (this stage is required to prevent the Batch Queue Manager from returning an error because the target file does not exist). The script returns the value from the file copy command, which is parsed by the Batch Queue Manager to for each item in the workflow.
+This first example shown below does nothing special. It prints on the console the input/output file names and item properties passed from the Batch Queue Manager to the script, and copies the input file to the output file (this stage is required to prevent the Batch Queue Manager from returning an error because the target file does not exist). The script returns the value from the file copy command, which is parsed by the Batch Queue Manager for each item in the workflow.
 
 .. code-block:: bash
 
@@ -97,7 +99,7 @@ This First example shown below does nothing special. It prints on the console th
     cp "$INPUT" "$OUTPUT"
     exit $?
 
-If you have started digiKam from a terminal and enabled the debug traces on :ref:`Setup/Miscs/System dialog page <system_settings>`, you will see something like this:
+If you have started digiKam from a terminal and enabled the debug traces on :ref:`Setting/Miscellaneous/System dialog page <system_settings>`, you will see something like this:
 
 .. code-block:: text
 
@@ -113,14 +115,14 @@ If you have started digiKam from a terminal and enabled the debug traces on :ref
 
 The digiKam information taken from the database are:
 
-    - Item processed is **/mnt/data/Images/SALAGOU/DSC08833.JPG**.
-    - Target filename is **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a12.digikamtempfile.JPG** (a temporary file generated by Batch Queue Manager).
-    - Item Title is **Salagou Trip**.
-    - Item Comment is null.
-    - Item Color Label is **5** (Green).
-    - Item Pick Label is **3** (Accepted).
-    - Item Rating is **3 stars**.
-    - Item Tags are **Places**, **Places/France**, **Places/France/Salagou Lake**.
+- Item processed is **/mnt/data/Images/SALAGOU/DSC08833.JPG**.
+- Target filename is **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a12.digikamtempfile.JPG** (a temporary file generated by Batch Queue Manager).
+- Item Title is **Salagou Trip**.
+- Item Comment is null.
+- Item Color Label is **5** (Green).
+- Item Pick Label is **3** (Accepted).
+- Item Rating is **3 stars**.
+- Item Tags are **Places**, **Places/France**, **Places/France/Salagou Lake**.
 
 Add a Watermark with ImageMagick
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -135,7 +137,8 @@ The second example below is more complex and uses the **ImageMagick** command li
     out_file="$OUTPUT"
 
     convert -size 2000x1000 xc:none -gravity center \
-        -stroke yellow -pointsize 120 -font Courier-BoldOblique -strokewidth 3 -annotate +100+100 "${watermark}" \
+        -stroke yellow -pointsize 120 -font Courier-BoldOblique \
+        -strokewidth 3 -annotate +100+100 "${watermark}" \
         -blur 0x25 -level 0%,50% \
         -fill white -stroke none -annotate +100+100 "${watermark}" \
         "${in_file}"  +swap -gravity center -geometry +0-3 \

@@ -10,11 +10,13 @@
 
 .. _similarity_view:
 
-Similarity View
----------------
+:ref:`Similarity View <left_sidebar>`
+=====================================
+
+.. contents::
 
 Overview
-~~~~~~~~
+--------
 
 If you have lost a picture because you can't remember its name or where you filed it, you might want to perform a *Similarity* search on your collections.
 
@@ -27,7 +29,7 @@ digiKam characterizes every image by a fingerprint (or signature), that is inter
 .. _similarity_duplicates:
 
 Find Duplicates
-~~~~~~~~~~~~~~~
+---------------
 
 Before you can have digiKam find duplicates, the fingerprints of the images within the collections have to be calculated. You can start that process with the button **Update Fingerprints** which initiates a total rebuild of the image fingerprint database. This may take hours if you have a large collection and slow storage devices. If you have already scanned your images for fingerprints, then you should skip this step.
 
@@ -85,7 +87,7 @@ Individual similarity values for each item can be obtained in the **Table-View**
 .. _similarity_image:
 
 Find Similar Image
-~~~~~~~~~~~~~~~~~~
+------------------
 
 This tool provides a drag and drop zone on the top-left where you can place any image to find similar images in the database. You can drag an image from anywhere, even from outside digiKam. You can also drag and hold an image from the album **Icon-View** over the **Similarity** search icon in the **Left Sidebar**. This will then open a dialog and you drop the image there. Finally, you can use **Find Similar...** entry from the context menu of a thumbnail in any other Icon-View.
 
@@ -111,7 +113,7 @@ After performing **Searches** you might want to save the results. In the field b
 .. _similarity_sketch:
 
 Find by Sketch
-~~~~~~~~~~~~~~
+--------------
 
 This tool is a free-hand color sketching editor. You can draw a quick sketch and digiKam will find corresponding images. You will find the same means to save your search as in the **Image** tab.
 

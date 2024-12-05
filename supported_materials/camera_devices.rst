@@ -10,8 +10,8 @@
 
 .. _camera_devices:
 
-Cameras and Mass Storage Devices
-================================
+:ref:`Cameras and Mass Storage Devices <supported_materials>`
+=============================================================
 
 .. contents::
 

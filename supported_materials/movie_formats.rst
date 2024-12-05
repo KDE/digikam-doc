@@ -10,8 +10,8 @@
 
 .. _movie_formats:
 
-Movie Files
-===========
+:ref:`Movie Files <supported_materials>`
+========================================
 
 .. contents::
 

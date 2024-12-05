@@ -10,8 +10,8 @@
 
 .. _maps_view:
 
-Maps View
-=========
+:ref:`Maps View <right_sidebar>`
+================================
 
 .. |zoom_in| image:: images/right_sidebar_icon_zoom_in.webp
     :height: 20px
@@ -19,7 +19,11 @@ Maps View
 .. |zoom_out| image:: images/right_sidebar_icon_zoom_out.webp
     :height: 20px
 
-.. contents::
+.. |lock_map| image:: images/right_sidebar_icon_lock_map.webp
+    :height: 20px
+
+.. |copy| image:: images/right_sidebar_icon_copy.webp
+    :height: 20px
 
 There are four tools involving geolocation in digiKam and two in Showfoto:
 
@@ -45,10 +49,10 @@ The map can be rotated from its center by click and dragging on the map while ho
 
 The meaning of “GPS”, as well as the detailed descriptions of the functions and buttons that apply to all three geolocation maps, are described in the :ref:`Geolocation Editor <geolocation_editor>` chapter of this manual. This applies to the context menu on the map and the line of buttons under the map except the last one.
 
-The lock icon will freeze the map. When selecting photos the map will no longer be moved automatically and will not be focused on the GPS points of the selected images.
+The lock icon |lock_map| will freeze the map. The map will no longer automatically be moved when a photo is selected, and so may not be focused on the GPS points of the selected images.
 
-The copy icon, on the next line, will copy the coordinates of the current image position in the map to the clipboard as plain text.
+The copy icon |copy|, on the next line, will copy the coordinates of the current image position in the map to the clipboard as plain text.
 
 Different map services can be selected from the drop-down field under the line of buttons. Choose a map service and then click the **See more information on the Internet** button to the right.
 
-The displayed positioning data are stored in the image's Exif tags if the option :menuselection:`Settings --> Configure digikam --> Behavior --> Geolocation information` is activated. That allows the location to be read by any other application that can understand Exif GPS data.
+The displayed positioning data are stored in the image's Exif tags if the option :menuselection:`Settings --> Configure digikam... --> Metadata page --> Behavior tab --> Geolocation information` is activated. That allows the location to be read by any other application that can understand Exif GPS data.

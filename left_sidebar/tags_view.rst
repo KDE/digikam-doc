@@ -10,8 +10,10 @@
 
 .. _tags_view:
 
-Tags View
----------
+:ref:`Tags View <left_sidebar>`
+===============================
+
+.. contents::
 
 Hierarchical tagging provides a flexible and powerful way to organize and catalog your images. Tags (also called *keywords* in other applications) are labels that can be applied to individual images or groups of images. Once a tag has been applied to an image, the image can be found again by selecting the tag or doing a search.
 
@@ -30,7 +32,7 @@ But before assigning and using tags, you first have to define them. If you impor
 .. _managing_tags:
 
 Managing Tags
-~~~~~~~~~~~~~
+-------------
 
 You can add new tags by clicking with the right mouse button on either the Tags label or an existing tag and selecting **New Tag...**. A dialog will open where you can type in the tag name (or even a whole hierarchy branch), and assign an icon and/or a shortcut to the tag. If you add a new tag by clicking with the right mouse button on an existing tag, your new tag will be created as a sub-tag.
 
@@ -106,7 +108,7 @@ A more viable solution would be to replace the *Zoo Animal* branch by a single t
 .. _tag_manager:
 
 Tag Manager
-~~~~~~~~~~~~
+-----------
 
 While digiKam allows you to manage tags from the context menu accessible from the tags views in the digiKam sidebars, the Tag Manager offers an easier and more comprehensive way to organize your tags. For general information about tags, including why and how to use them, see the beginning pages of :ref:`this section <tags_view>`.
 
@@ -159,7 +161,7 @@ The Quick Access List allows you to display only a certain node (and its sub-nod
 The Tag Properties dialog allows you to change the name of the tag, the icon used in the Tag tree and the shortcut.
 
 Tagging Photographs
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 Before you can get the most out of digiKam's tagging capabilities, you must first tag your photographs. There are a few methods for that task. Once you have identified the photographs that you want to tag you can either drag and drop them onto the tag in the Tag tree or, by clicking with the right mouse button on the selected photographs in the Image Window, you can use the **Assign Tag** menu to select the tags you wish to set.
 

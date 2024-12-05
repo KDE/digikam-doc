@@ -10,8 +10,8 @@
 
 .. _quick_start:
 
-Quick Start
-===========
+:ref:`Quick Start <getting_started>`
+====================================
 
 .. figure:: images/firstrun_step1.webp
     :alt:

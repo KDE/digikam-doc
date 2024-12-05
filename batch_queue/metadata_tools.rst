@@ -10,19 +10,19 @@
 
 .. _metadata_tools:
 
-Metadata Tools
-==============
+:ref:`Metadata Tools <batch_queue>`
+===================================
 
 .. contents::
 
-The Batch Manager metadata tools are used to assist with :ref:`Digital Asset Management <asset_management>` by managing metadata values in items within in a Queue, by helping to classify contents in your collection, or by preparing files for sharing with other applications.
+The Batch Manager metadata tools are used to assist with :ref:`Digital Asset Management <asset_management>` by managing metadata values in items within a Queue, by helping to classify contents in your collection, or by preparing files for sharing with other applications.
 
 .. _bqm_qualitysort:
 
 Image Quality Sort
 ------------------
 
-This tool assesses your items to automatically assign a **Pick Label** based on the aesthetic value of the contents. You can use the fully automated quality assessment based on a deep-learning engine (recommended), or use manual settings for a fixed set of criteria including Blur, Noise, Exposure, and Compression. These settings are fully explained in the :ref:`Setup Quality <imgqsort_settings>` section of this manual.
+This tool assesses your items to automatically assign a **Pick Label** based on the aesthetic value of the contents. You can use the fully automated quality assessment based on a deep-learning engine (recommended), or use manual settings for a fixed set of criteria including Blur, Noise, Exposure, and Compression. These settings are fully explained in the :ref:`Image Quality Sorting Settings <imgqsort_settings>` section of this manual.
 
 .. figure:: images/bqm_metadata_quality.webp
     :alt:
@@ -50,12 +50,12 @@ Translate Metadata
 
 This tool automatically translates some key metadata into alternative language strings using an online translator service. Translatable entries are:
 
-    - :ref:`Title <captions_comments>`.
-    - :ref:`Captions <captions_comments>`.
-    - :ref:`Copyrights <authorship_copyright>`.
-    - :ref:`Usage Terms <authorship_copyright>`.
+    - :ref:`Title <captions_comments>`
+    - :ref:`Captions <captions_comments>`
+    - :ref:`Copyrights <authorship_copyright>`
+    - :ref:`Usage Terms <authorship_copyright>`
 
-The translations settings can be modified from the dedicated :ref:`Localize Setup Panel <localize_settings>`. Translation settings include a list of additional languages that can be used. To add a new language to the list, use the drop-down button on the left of **Translate to** option. To remove a language, use the context menu for any item in the list.
+The translations settings can be modified from the dedicated :ref:`Localize Settings Panel <localize_settings>`. Translation settings include a list of additional languages that can be used. To add a new language to the list, use the drop-down button on the left of **Translate to** option. To remove a language, use the context menu for any item in the list.
 
 .. figure:: images/bqm_metadata_translate.webp
     :alt:
@@ -68,7 +68,7 @@ The translations settings can be modified from the dedicated :ref:`Localize Setu
 Assign Captions
 ---------------
 
-This tool assigns **Title**, **Captions**, and **Author** properties to items from a Queue. For details about these properties, take a look at the :ref:`Captions section  <captions_view>` of this manual.
+This tool assigns **Title**, **Captions**, and **Author** properties to items from a Queue. For details about these properties, take a look at the :ref:`Captions View <captions_view>` section of this manual.
 
 .. figure:: images/bqm_metadata_captions.webp
     :alt:
@@ -81,7 +81,7 @@ This tool assigns **Title**, **Captions**, and **Author** properties to items fr
 Assign Labels
 -------------
 
-This tool assigns **Pick Label**, **Rating**, and **Color Label** to items from a Queue. Unlike the **Quality Sort** tool which applies a Pick Label automatically, this tool will set the Pick Label value manually. For details about these properties, take a look at the :ref:`Captions section <captions_view>` of this manual.
+This tool assigns **Pick Label**, **Rating**, and **Color Label** to items from a Queue. Unlike the **Quality Sort** tool which applies a Pick Label automatically, this tool will set the Pick Label value manually. For details about these properties, take a look at the :ref:`Captions View <captions_view>` section of this manual.
 
 .. figure:: images/bqm_metadata_labels.webp
     :alt:
@@ -135,4 +135,4 @@ This tool adjusts the time-stamp entries in file metadata. It use the same setti
     :alt:
     :align: center
 
-    The Batch Queue Manager Tool to Adjust Items Time-Stamp
+    The Batch Queue Manager Tool to Adjust Items' Time-Stamp

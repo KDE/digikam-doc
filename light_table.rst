@@ -24,4 +24,5 @@ This section explain how to use the digiKam light table.
    :glob:
 
    light_table/lighttable_overview.rst
+   light_table/lighttable_operation.rst
    light_table/lighttable_advanced.rst

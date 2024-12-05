@@ -258,6 +258,10 @@ Light Table
 
     .. container:: tile no-descr
 
+        :ref:`lighttable_operation`
+
+    .. container:: tile no-descr
+
         :ref:`lighttable_advanced`
 
 .. toctree::
