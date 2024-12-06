@@ -51,7 +51,7 @@ The textbox below the Searches list can be used to search for saved searches whe
 The Advanced Search Tool
 ------------------------
 
-The Avanced Search tool provides an extended search form which can be used to search in specific fields of the digiKam database in a more sophisticated way. Click the **New Advanced Search...** button to display the Advanced Search Tool:
+The Advanced Search tool provides an extended search form which can be used to search in specific fields of the digiKam database in a more sophisticated way. Click the **New Advanced Search...** button to display the Advanced Search Tool:
 
 .. figure:: images/left_sidebar_advancedsearchtool.webp
     :alt:
