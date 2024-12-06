@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-02 02:22+0000\n"
-"PO-Revision-Date: 2024-12-02 22:25+0200\n"
+"PO-Revision-Date: 2024-12-05 23:09+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -39,7 +39,6 @@ msgid "Contents"
 msgstr "Зміст"
 
 #: ../../import_tools/scanner_import.rst:18
-#, fuzzy
 #| msgid ""
 #| "This tool is dedicated to scan images using a flat scanner. It uses an "
 #| "interface for `SANE Library <http://sane-project.org/>`_ to control "
@@ -68,7 +67,6 @@ msgstr ""
 "mfgs.html>`_."
 
 #: ../../import_tools/scanner_import.rst:24
-#, fuzzy
 #| msgid ""
 #| "If the selected scanner cannot be opened or if no default scanner is "
 #| "provided, a scanner selection dialog is opened."
@@ -79,10 +77,12 @@ msgid ""
 "tool."
 msgstr ""
 "Якщо програмі не вдасться відкрити вказаний сканер або якщо не визначено "
-"типового сканера, буде відкрито діалогове вікно вибору сканера."
+"типового сканера, буде відкрито діалогове вікно вибору сканера. Виберіть"
+" бажаний сканер і натисніть кнопку **Гаразд**, щоб відкрити вікно"
+" сканування. Натискання кнопки **Скасувати** призведе до завершення роботи"
+" інструмента."
 
 #: ../../import_tools/scanner_import.rst:26
-#, fuzzy
 #| msgid ""
 #| "In case no devices were found, maybe because the scanner is not plugged "
 #| "in or switched off, correct that. Then the **Reload device list** can be "
@@ -116,6 +116,10 @@ msgid ""
 "Advanced, and Scanner Specific. The **Basic Options** tab contains the most "
 "common parameters that the SANE scanner backends provide."
 msgstr ""
+"У головному вікні користувачеві доступні три набори параметрів сканування:"
+" базовий, розширений і специфічний для сканера. Вкладка **Основні"
+" параметри** містить найпоширеніші параметри, які надають модулі обробки"
+" сканера SANE."
 
 #: ../../import_tools/scanner_import.rst:44
 msgid "The Basic Options View from Scanner Import Dialog"
@@ -140,13 +144,16 @@ msgid ""
 "your driver. The scanner import dialog should be able to display most of the "
 "parameter types that SANE provides."
 msgstr ""
+"Вкладка **Спеціальні параметри сканера** містить усі специфічні параметри"
+" сканера. Перелічені тут параметри залежать від параметрів SANE, підтримку"
+" яких передбачено у драйвері. Діалогове вікно імпортування зі сканера має"
+" показувати більшість типів параметрів, які надає для редагування SANE."
 
 #: ../../import_tools/scanner_import.rst:60
 msgid "The Specific Options View from Scanner Import Dialog"
 msgstr "Панель специфічних параметрів вікна імпортування зі сканера"
 
 #: ../../import_tools/scanner_import.rst:62
-#, fuzzy
 #| msgid ""
 #| "If you are satisfied with your settings, you can use the little arrow on "
 #| "the top of the options splitter. When clicked it collapses or expands the "
@@ -158,12 +165,11 @@ msgid ""
 "collapser can overlap the preview area, but fades away when the mouse cursor "
 "moves out of the collapser."
 msgstr ""
-"Після встановлення потрібних вам значень параметрів ви можете скористатися "
-"кнопкою з невеличкою стрілочкою у верхній частині роздільника параметрів. За "
-"допомогою натискання цієї кнопки можна згортати або розгортати панель "
-"параметрів. Ця кнопка згортання може частково перекривати область "
-"попереднього перегляду. Щоб уникнути цього, просто відведіть вказівник миші "
-"від кнопки згортання."
+"Область параметрів у вікні імпортування зі сканера може бути згорнуто або"
+" розгорнуто натисканням стрілочки ліворуч у верхній частині блоку"
+" параметрів. Ця кнопка згортання може частково перекривати область"
+" попереднього перегляду. Щоб уникнути цього, просто відведіть вказівник миші"
+" від кнопки згортання."
 
 #: ../../import_tools/scanner_import.rst:64
 msgid "Click on the **Scan** button to scan the entire image."
@@ -181,9 +187,13 @@ msgid ""
 "perform the final scan, before clicking the Scan button. The progress of the "
 "scan will be displayed."
 msgstr ""
+"Щоб відсканувати вибрану частину зображення, спочатку натисніть кнопку"
+" **Попередній перегляд**, щоб отримання зображення попереднього перегляду."
+" Потім виберіть частину області сканування, щоб виконати остаточне"
+" сканування, перш ніж натиснути кнопку «Сканувати». Буде показано хід"
+" сканування."
 
 #: ../../import_tools/scanner_import.rst:74
-#, fuzzy
 #| msgid ""
 #| "Sometimes you need only certain parts of an image. Instead of scanning "
 #| "the whole picture and then using the Image Editor to save the different "
@@ -207,7 +217,6 @@ msgstr ""
 "імпортування зі сканера"
 
 #: ../../import_tools/scanner_import.rst:82
-#, fuzzy
 #| msgid ""
 #| "Scan a preview and then use the left mouse button to select the first "
 #| "part of the image in the preview. Hover the selected area with mouse "
@@ -229,7 +238,6 @@ msgstr ""
 "зображення, які слід сканувати."
 
 #: ../../import_tools/scanner_import.rst:84
-#, fuzzy
 #| msgid ""
 #| "To remove a single selection hover the area with the mouse cursor and "
 #| "click on the **Red Minus** button. With **Clear Selections** from the "
@@ -242,12 +250,12 @@ msgid ""
 "displayed by clicking the right mouse button."
 msgstr ""
 "Щоб вилучити якусь з ділянок, наведіть вказівник миші на цю ділянку і "
-"натисніть **червону піктограму з зображенням «-»**. За допомогою пункту "
-"**Зняти позначки вибору** контекстного меню, яке можна викликати клацанням "
-"правою кнопкою миші, ви можете скасувати вибір всіх ділянок для сканування."
+"натисніть **червону піктограму з зображенням «-»**. Усі області на панелі"
+" попереднього перегляду можна вилучити за допомогою вибору пункту меню"
+" **Вилучити позначення** у контекстному меню, яке можна відкрити клацанням"
+" правою кнопкою миші."
 
 #: ../../import_tools/scanner_import.rst:86
-#, fuzzy
 #| msgid ""
 #| "If you placed two separate images or photos on you scanner and started a "
 #| "preview the tool automatically preselect the different areas."
@@ -260,7 +268,6 @@ msgstr ""
 "автоматично визначити ділянки для сканування."
 
 #: ../../import_tools/scanner_import.rst:88
-#, fuzzy
 #| msgid ""
 #| "If you are satisfied with your choice starting the final batch scan of "
 #| "all selections. The selected parts of the image are scanned and saved "
