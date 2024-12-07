@@ -16,15 +16,15 @@ Color Management
 .. figure:: images/index_color_management.webp
     :alt:
 
-This section explain all the fundamental rules of color management and how to use it in digiKam.
+This section explains the fundamental rules of color management and how to use it in digiKam.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
    :glob:
 
-   color_management/basis_knowledge.rst
+   color_management/color_management_basis.rst
    color_management/working_space.rst
-   color_management/monitor_profiles.rst
    color_management/camera_profiles.rst
+   color_management/monitor_profiles.rst
    color_management/printer_profiles.rst

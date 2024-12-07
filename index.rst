@@ -422,7 +422,7 @@ Color Management
 
     .. container:: tile no-descr
 
-        :ref:`basis_knowledge`
+        :ref:`color_management_basis`
 
     .. container:: tile no-descr
 
@@ -430,11 +430,11 @@ Color Management
 
     .. container:: tile no-descr
 
-        :ref:`monitor_profiles`
+        :ref:`camera_profiles`
 
     .. container:: tile no-descr
 
-        :ref:`camera_profiles`
+        :ref:`monitor_profiles`
 
     .. container:: tile no-descr
 
