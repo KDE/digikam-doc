@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-03 01:44+0000\n"
+"POT-Creation-Date: 2024-12-06 01:44+0000\n"
 "PO-Revision-Date: 2024-12-03 14:17+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -30,8 +30,8 @@ msgstr ""
 "leren, gemakkelijk, bulk, aangepast, script"
 
 #: ../../batch_queue/custom_script.rst:14
-msgid "Custom Script"
-msgstr "Aangepast script"
+msgid ":ref:`Custom Script <batch_queue>`"
+msgstr ""
 
 #: ../../batch_queue/custom_script.rst:16
 msgid "Contents"
@@ -54,11 +54,19 @@ msgstr ""
 "en.wikipedia.org/wiki/ExifTool>`_."
 
 #: ../../batch_queue/custom_script.rst:23
+#, fuzzy
+#| msgid ""
+#| "The tool named **Custom Script** is available from the **Custom Tools** "
+#| "category of the **Base Tools** list. The tool is designed to execute the "
+#| "source code for a shell script that can call one or more command line "
+#| "programs for each item in the Queue. the shell script is written by the "
+#| "user entirely within the plugin. These scripts can include a set of "
+#| "environment variables that specify filenames and few types of metadata."
 msgid ""
 "The tool named **Custom Script** is available from the **Custom Tools** "
 "category of the **Base Tools** list. The tool is designed to execute the "
 "source code for a shell script that can call one or more command line "
-"programs for each item in the Queue. the shell script is written by the user "
+"programs for each item in the Queue. The shell script is written by the user "
 "entirely within the plugin. These scripts can include a set of environment "
 "variables that specify filenames and few types of metadata."
 msgstr ""
@@ -106,10 +114,16 @@ msgstr ""
 "wikipedia.org/wiki/Batch_file>`_ wordt ondersteund onder **Windows**."
 
 #: ../../batch_queue/custom_script.rst:37
+#, fuzzy
+#| msgid ""
+#| "The keywords that you can use in your script code are listed below. The "
+#| "tool will replace all occurrences of keywords in the shell script at run "
+#| "time before the script execution. Note that the keywords are case "
+#| "sensitive."
 msgid ""
 "The keywords that you can use in your script code are listed below. The tool "
 "will replace all occurrences of keywords in the shell script at run time "
-"before the script execution. Note that the keywords are case sensitive."
+"before script execution. Note that the keywords are case sensitive."
 msgstr ""
 "De sleutelwoorden die u in uw script kunt gebruiken staan hier onder. Het "
 "hulpmiddel zal alle voorkomens van sleutelwoorden in het shell-script bij "
@@ -149,50 +163,69 @@ msgid "The environment variables that you can use in your shell script are:"
 msgstr "De omgevingsvariabelen die u kunt gebruiken in uw shell-script zijn:"
 
 #: ../../batch_queue/custom_script.rst:49
-msgid ""
-"**TITLE**: to use the digiKam **Title** item property from the database."
+#, fuzzy
+#| msgid ""
+#| "**TITLE**: to use the digiKam **Title** item property from the database."
+msgid "**TITLE**: to use the digiKam **Title** item property."
 msgstr ""
 "**TITLE**: om de eigenschappen van item **Titel** uit de database te "
 "gebruiken."
 
 #: ../../batch_queue/custom_script.rst:51
-msgid ""
-"**COMMENTS**: to use the digiKam **Caption** item property from the database."
+#, fuzzy
+#| msgid ""
+#| "**COMMENTS**: to use the digiKam **Caption** item property from the "
+#| "database."
+msgid "**COMMENTS**: to use the digiKam **Caption** item property."
 msgstr ""
 "**COMMENTS**: om de eigenschappen van item **Opschrift** uit de database te "
 "gebruiken."
 
 #: ../../batch_queue/custom_script.rst:53
-msgid ""
-"**COLORLABEL**: to use the digiKam **Color Label** item property from the "
-"database."
+#, fuzzy
+#| msgid ""
+#| "**COLORLABEL**: to use the digiKam **Color Label** item property from the "
+#| "database."
+msgid "**COLORLABEL**: to use the digiKam **Color Label** item property."
 msgstr ""
 "**COLORLABEL**: om de eigenschappen van item **Kleurlabel** uit de database "
 "te gebruiken."
 
 #: ../../batch_queue/custom_script.rst:55
-msgid ""
-"**PICKLABEL**: to use the digiKam **Pick Label** item property from the "
-"database."
+#, fuzzy
+#| msgid ""
+#| "**PICKLABEL**: to use the digiKam **Pick Label** item property from the "
+#| "database."
+msgid "**PICKLABEL**: to use the digiKam **Pick Label** item property."
 msgstr ""
 "**PICKLABEL**: om de eigenschappen van item **Keuzelabel** uit de database "
 "te gebruiken."
 
 #: ../../batch_queue/custom_script.rst:57
-msgid ""
-"**RATING**: to use the digiKam **Rating** item property from the database."
+#, fuzzy
+#| msgid ""
+#| "**RATING**: to use the digiKam **Rating** item property from the database."
+msgid "**RATING**: to use the digiKam **Rating** item property."
 msgstr ""
 "**RATING**: om de eigenschappen van item **Waardering** uit de database te "
 "gebruiken."
 
 #: ../../batch_queue/custom_script.rst:59
-msgid ""
-"**TAGSPATH**: to use the digiKam **Tags** item property from the database."
+#, fuzzy
+#| msgid ""
+#| "**TAGSPATH**: to use the digiKam **Tags** item property from the database."
+msgid "**TAGSPATH**: to use the digiKam **Tags** item property."
 msgstr ""
 "**TAGSPATH**: om de eigenschappen van item **Tags** uit de database te "
 "gebruiken."
 
-#: ../../batch_queue/custom_script.rst:63
+#: ../../batch_queue/custom_script.rst:61
+msgid ""
+"All of these properties are set based on the image properties stored in the "
+"digiKam database."
+msgstr ""
+
+#: ../../batch_queue/custom_script.rst:65
 msgid ""
 "Under Linux and macOS, environment variables can be accessed in the script "
 "with **$** as a prefix for variable names (for example **$INPUT**). The "
@@ -202,7 +235,7 @@ msgstr ""
 "worden met **$** als een prefix van namen van variabelen (bijvoorbeeld **"
 "$INPUT**). De interpreter die het script uitvoert is **/bin/bash**."
 
-#: ../../batch_queue/custom_script.rst:65
+#: ../../batch_queue/custom_script.rst:67
 msgid ""
 "Under Windows, environment variables can be accessed in the script with **"
 "%** as a prefix and suffix of variable names (for example **%INPUT%**). The "
@@ -212,11 +245,11 @@ msgstr ""
 "%** als een voor- en achtervoegsel van namen van variabelen (bijvoorbeeld **"
 "%INPUT%**). De interpreter die het script uitvoert is **cmd.exe**"
 
-#: ../../batch_queue/custom_script.rst:69
+#: ../../batch_queue/custom_script.rst:71
 msgid "Return Value"
 msgstr "Teruggegeven waarde"
 
-#: ../../batch_queue/custom_script.rst:71
+#: ../../batch_queue/custom_script.rst:73
 msgid ""
 "By convention, a **Bash script** under Linux and macOS returns 0 on success "
 "or an integer in the range 1-255 for an error. Use **exit < error_code >** "
@@ -226,7 +259,7 @@ msgstr ""
 "of een geheel getal in de reeks van 1-255 voor een fout. Gebruik **exit < "
 "error_code >** om de teruggegeven waarde aan de werkmethode door te geven."
 
-#: ../../batch_queue/custom_script.rst:73
+#: ../../batch_queue/custom_script.rst:75
 msgid ""
 "Under Windows, a **Batch script** returns 0 on success and another value for "
 "an error, but the value is a signed integer, so a negative value is "
@@ -238,7 +271,7 @@ msgstr ""
 "dus een negatieve waarde is mogelijk. gebruik **EXIT /B < error_code >** om "
 "de teruggegeven waarde aan de werkmethode door te geven."
 
-#: ../../batch_queue/custom_script.rst:75
+#: ../../batch_queue/custom_script.rst:77
 msgid ""
 "The Batch Queue Manager handles the value returned by your script. If zero "
 "is returned, the workflow will continue as expected, otherwise the workflow "
@@ -249,23 +282,32 @@ msgstr ""
 "zal de werkmethode onderbroken worden en de Takenwachtrijbeheerder stopt het "
 "verwerken."
 
-#: ../../batch_queue/custom_script.rst:78
+#: ../../batch_queue/custom_script.rst:80
 msgid "Examples"
 msgstr "Voorbeelden"
 
-#: ../../batch_queue/custom_script.rst:81
+#: ../../batch_queue/custom_script.rst:83
 msgid "Proof of Concept"
 msgstr "Proof of Concept"
 
-#: ../../batch_queue/custom_script.rst:83
+#: ../../batch_queue/custom_script.rst:85
+#, fuzzy
+#| msgid ""
+#| "This First example shown below does nothing special. It prints on the "
+#| "console the input/output file names and item properties passed from the "
+#| "Batch Queue Manager to the script, and copies the input file to the "
+#| "output file (this stage is required to prevent the Batch Queue Manager "
+#| "from returning an error because the target file does not exist). The "
+#| "script returns the value from the file copy command, which is parsed by "
+#| "the Batch Queue Manager to for each item in the workflow."
 msgid ""
-"This First example shown below does nothing special. It prints on the "
+"This first example shown below does nothing special. It prints on the "
 "console the input/output file names and item properties passed from the "
 "Batch Queue Manager to the script, and copies the input file to the output "
 "file (this stage is required to prevent the Batch Queue Manager from "
 "returning an error because the target file does not exist). The script "
 "returns the value from the file copy command, which is parsed by the Batch "
-"Queue Manager to for each item in the workflow."
+"Queue Manager for each item in the workflow."
 msgstr ""
 "Dit eerste voorbeeld dat u onderstaand ziet doet niets speciaals. Het zal op "
 "de console de invoer/uitvoer bestandsnamen en eigenschappen van items "
@@ -276,25 +318,30 @@ msgstr ""
 "kopieeropdracht van het bestand, deze wordt bekeken door de "
 "takenwachtrijbeheerder voor elk item in de werkmethode."
 
-#: ../../batch_queue/custom_script.rst:100
+#: ../../batch_queue/custom_script.rst:102
+#, fuzzy
+#| msgid ""
+#| "If you have started digiKam from a terminal and enabled the debug traces "
+#| "on :ref:`Setup/Miscs/System dialog page <system_settings>`, you will see "
+#| "something like this:"
 msgid ""
 "If you have started digiKam from a terminal and enabled the debug traces on :"
-"ref:`Setup/Miscs/System dialog page <system_settings>`, you will see "
-"something like this:"
+"ref:`Setting/Miscellaneous/System dialog page <system_settings>`, you will "
+"see something like this:"
 msgstr ""
 "Als u digiKam vanaf een terminal hebt gestart en de debugtraces hebt "
 "aangeschakeld :ref:`Dialoogpagina Opzet/Div/Systeem <system_settings>`, dan "
 "zult iets zien zoals dit:"
 
-#: ../../batch_queue/custom_script.rst:114
+#: ../../batch_queue/custom_script.rst:116
 msgid "The digiKam information taken from the database are:"
 msgstr "De informatie van digiKam genomen uit de database is:"
 
-#: ../../batch_queue/custom_script.rst:116
+#: ../../batch_queue/custom_script.rst:118
 msgid "Item processed is **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
 msgstr "Verwerkt item is **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
 
-#: ../../batch_queue/custom_script.rst:117
+#: ../../batch_queue/custom_script.rst:119
 msgid ""
 "Target filename is **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a12."
 "digikamtempfile.JPG** (a temporary file generated by Batch Queue Manager)."
@@ -303,38 +350,38 @@ msgstr ""
 "digikamtempfile.JPG** (een tijdelijk bestand gegenereerd door "
 "takenwachtrijbeheerder)."
 
-#: ../../batch_queue/custom_script.rst:118
+#: ../../batch_queue/custom_script.rst:120
 msgid "Item Title is **Salagou Trip**."
 msgstr "Titel van item is **Salagou Trip**."
 
-#: ../../batch_queue/custom_script.rst:119
+#: ../../batch_queue/custom_script.rst:121
 msgid "Item Comment is null."
 msgstr "Item Commentaar is null."
 
-#: ../../batch_queue/custom_script.rst:120
+#: ../../batch_queue/custom_script.rst:122
 msgid "Item Color Label is **5** (Green)."
 msgstr "Item Kleurlabel is **5** (Groen)."
 
-#: ../../batch_queue/custom_script.rst:121
+#: ../../batch_queue/custom_script.rst:123
 msgid "Item Pick Label is **3** (Accepted)."
 msgstr "Item Keuzelabel is **3** (Geaccepteerd)."
 
-#: ../../batch_queue/custom_script.rst:122
+#: ../../batch_queue/custom_script.rst:124
 msgid "Item Rating is **3 stars**."
 msgstr "Item Waardering is **3 sterren**."
 
-#: ../../batch_queue/custom_script.rst:123
+#: ../../batch_queue/custom_script.rst:125
 msgid ""
 "Item Tags are **Places**, **Places/France**, **Places/France/Salagou Lake**."
 msgstr ""
 "Item Tags zijn **Plaatsen**, **Plaatsen/Frankrijk**, **Plaatsen/Frankrijk/"
 "Salagou Lake**."
 
-#: ../../batch_queue/custom_script.rst:126
+#: ../../batch_queue/custom_script.rst:128
 msgid "Add a Watermark with ImageMagick"
 msgstr "Een watermerk toevoegen met ImageMagick"
 
-#: ../../batch_queue/custom_script.rst:128
+#: ../../batch_queue/custom_script.rst:130
 msgid ""
 "The second example below is more complex and uses the **ImageMagick** "
 "command line tool to add visible watermarks by superimposing a multiline "
@@ -345,7 +392,7 @@ msgstr ""
 "door een meerregelig tekstveld bovenop elke afbeelding in de wachtrij te "
 "zetten."
 
-#: ../../batch_queue/custom_script.rst:146
+#: ../../batch_queue/custom_script.rst:149
 msgid ""
 "In this example, there is no explicit **exit** call to return a value to the "
 "Workflow. Bash uses the last called method as the returned value from the "
@@ -356,15 +403,18 @@ msgstr ""
 "de terugkeerwaarde uit het script, hier de opdracht van ImageMagick "
 "**convert**."
 
-#: ../../batch_queue/custom_script.rst:148
+#: ../../batch_queue/custom_script.rst:151
 msgid "This give a result like below."
 msgstr "Dit geeft een resultaat zoals onderstaand."
 
-#: ../../batch_queue/custom_script.rst:154
+#: ../../batch_queue/custom_script.rst:157
 msgid "The result of the Script Using ImageMagick to Apply a Watermark"
 msgstr ""
 "Het resultaat van het script met gebruik van ImageMagick om een watermerk "
 "toe te passen"
+
+#~ msgid "Custom Script"
+#~ msgstr "Aangepast script"
 
 #~ msgid ""
 #~ "The Tool is named **Custom Script**, available in **Base Tools** list, "

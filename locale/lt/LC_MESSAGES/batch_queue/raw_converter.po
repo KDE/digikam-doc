@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-30 01:44+0000\n"
+"POT-Creation-Date: 2024-12-06 01:44+0000\n"
 "PO-Revision-Date: 2023-01-22 00:50+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -29,20 +29,16 @@ msgid ""
 msgstr ""
 
 #: ../../batch_queue/raw_converter.rst:14
-msgid "RAW Converter"
+msgid ":ref:`RAW Converter <batch_queue>`"
 msgstr ""
 
 #: ../../batch_queue/raw_converter.rst:16
-msgid "Contents"
-msgstr ""
-
-#: ../../batch_queue/raw_converter.rst:18
 msgid ""
 "With the Batch Queue Manager, you can import and convert your images stored "
 "in RAW format to a demosaiced target formats such as (JPEG, TIFF, or PNG)."
 msgstr ""
 
-#: ../../batch_queue/raw_converter.rst:20
+#: ../../batch_queue/raw_converter.rst:18
 msgid ""
 "There are some things to be considered before you process, or even shoot in "
 "RAW format. Uncompressed RAW image file formats store all of the information "
@@ -53,55 +49,56 @@ msgid ""
 "quality images than the camera's built-in conversion algorithms."
 msgstr ""
 
-#: ../../batch_queue/raw_converter.rst:22
+#: ../../batch_queue/raw_converter.rst:20
 msgid ""
 "The RAW files include data from each physical pixel in the camera's focal "
 "plane. For most digital cameras this means recording four color channels for "
 "each color pixel in the final image: one red, one blue, and two green "
 "channels. Often these channels are recorded to a bit depth greater than the "
-"8 bits used in most common image formats. And the white balance of the "
-"digital camera is stored in a RAW image, so it can be applied to the image "
-"in post-processing. Demosaicing is the step taken to convert this raw 4-"
-"channel data to the standard 3-channel RGB representation used in standard "
+"8 bits used in most common image formats. In addition, the white balance of "
+"the digital camera is stored in a RAW image, so it can be applied to the "
+"image in post-processing. Demosaicing is the step taken to convert this raw "
+"4-channel data to the standard 3-channel RGB representation used in standard "
 "image formats like JPEG and TIFF. That is the job of the RAW Convertor tool."
 msgstr ""
 
-#: ../../batch_queue/raw_converter.rst:24
+#: ../../batch_queue/raw_converter.rst:22
 msgid ""
 "The RAW conversion in digiKam is based on `Libraw <https://www.libraw.org/"
-">`_. Don't expect to produce exactly the same images as software provided by "
-"the camera vendor, but sometimes libraw gives better results. See :ref:`this "
-"section <camera_profiles>` of this manual for details."
+">`_, which supports many, but not all, RAW formats. Don't expect to produce "
+"exactly the same images as software provided by the camera vendor, but "
+"sometimes libraw gives better results. See :ref:`this section "
+"<camera_profiles>` of this manual for details."
 msgstr ""
 
-#: ../../batch_queue/raw_converter.rst:26
+#: ../../batch_queue/raw_converter.rst:24
 msgid ""
 "To use the RAW convertor in the Batch Queue Manager, select the RAW files to "
 "convert and load them into a dedicate batch queue."
 msgstr ""
 
-#: ../../batch_queue/raw_converter.rst:28
+#: ../../batch_queue/raw_converter.rst:26
 msgid ""
 "Next adjust the available check and value boxes to optimize the RAW "
 "conversion process in the Batch Queue Manager settings view. Settings are "
 "available to adjust demosaicing and white balance, apply noise reduction, or "
-"manage the color profile. If find the results of a RAW conversion are not "
-"quite optimal, don't worry, it is always possible to fine-tune the image "
+"manage the color profile. If you find the results of a RAW conversion are "
+"not quite optimal, don't worry, it is always possible to fine-tune the image "
 "later on. A detailed description of the **RAW Decoding** settings is "
 "provided in :ref:`this section <setup_rawdefault>` of this manual."
 msgstr ""
 
-#: ../../batch_queue/raw_converter.rst:30
+#: ../../batch_queue/raw_converter.rst:28
 msgid ""
-"For RAW files, you must choose one output format to save the conversion "
-"result by adding a   format conversion tool to the end of Assigned Tools "
-"list. The file name will stay the same by default, only the extension "
-"changes. **JPEG** uses a lossy algorithm that often produces the smallest "
-"output file size. In contrast, the tagged image format (**TIFF**) preserves "
-"all image information using a lossless LZW compression."
+"For RAW files, you must add a format conversion tool to the end of Assigned "
+"Tools list that specifies the output format used to save the results file. "
+"The file name will stay the same by default, only the extension changes. "
+"**JPEG** uses a lossy algorithm that often produces the smallest output file "
+"size. In contrast, the tagged image format (**TIFF**) preserves all image "
+"information using a lossless LZW compression."
 msgstr ""
 
-#: ../../batch_queue/raw_converter.rst:34
+#: ../../batch_queue/raw_converter.rst:32
 msgid ""
 "Don't use the **JPEG** format if you intend to perform a lot of editing on "
 "your images or if it is likely that you have to later reuse the images. The "
@@ -110,21 +107,21 @@ msgid ""
 "maintain the quality of the original data."
 msgstr ""
 
-#: ../../batch_queue/raw_converter.rst:38
+#: ../../batch_queue/raw_converter.rst:36
 msgid ""
 "If you choose **JPEG**, or **TIFF**, or **PNG** as the **Save Format** then "
 "the metadata included in the RAW file will be included in the target files "
 "as Exif information."
 msgstr ""
 
-#: ../../batch_queue/raw_converter.rst:40
+#: ../../batch_queue/raw_converter.rst:38
 msgid ""
 "When you have finished setting up the queue, click the **Process** button to "
 "start the conversion. If you want to abort image conversion, press the "
 "**Abort** button."
 msgstr ""
 
-#: ../../batch_queue/raw_converter.rst:46
+#: ../../batch_queue/raw_converter.rst:44
 msgid ""
 "The Batch Queue Manager with a Workflow to Convert RAW files to HEIF "
 "Container by Applying Filters"
