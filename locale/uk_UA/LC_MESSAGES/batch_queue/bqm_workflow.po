@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-30 01:44+0000\n"
-"PO-Revision-Date: 2024-11-30 21:47+0200\n"
+"POT-Creation-Date: 2024-12-06 01:44+0000\n"
+"PO-Revision-Date: 2024-12-06 09:44+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -32,19 +32,21 @@ msgstr ""
 "керування, інструменти, засоби, процес"
 
 #: ../../batch_queue/bqm_workflow.rst:14
-msgid "Workflow"
-msgstr "Процес"
+msgid ":ref:`Workflow <batch_queue>`"
+msgstr ":ref:`Робочий процес <batch_queue>`"
 
 #: ../../batch_queue/bqm_workflow.rst:16
-msgid "Contents"
-msgstr "Зміст"
-
-#: ../../batch_queue/bqm_workflow.rst:18
+#| msgid ""
+#| "The Batch Queue Manager has a tab named **Workflow** in the bottom right "
+#| "of the window which is empty by default. This view is a list where the "
+#| "user can store the preferred set of tools to assign to queues. This list "
+#| "is saved and restored between sessions allowing the re-use of the "
+#| "workflow."
 msgid ""
 "The Batch Queue Manager has a tab named **Workflow** in the bottom right of "
 "the window which is empty by default. This view is a list where the user can "
 "store the preferred set of tools to assign to queues. This list is saved and "
-"restored between sessions allowing the re-use of the workflow."
+"restored between sessions allowing the workflows to be re-used."
 msgstr ""
 "Внизу праворуч на панелі керування чергою пакетної обробки є вкладка із "
 "назвою **Процес**, яка типово є порожньою. Там буде показано список "
@@ -53,29 +55,29 @@ msgstr ""
 "сеансу і відновлено на початку наступного, його можна буде використовувати "
 "повторно."
 
-#: ../../batch_queue/bqm_workflow.rst:20
+#: ../../batch_queue/bqm_workflow.rst:18
 msgid "A workflow stores:"
 msgstr "У робочому процесі зберігаються такі дані:"
 
-#: ../../batch_queue/bqm_workflow.rst:22
+#: ../../batch_queue/bqm_workflow.rst:20
 msgid ""
 "The order of the tools to apply to a queue from the **Assigned Tools** view."
 msgstr ""
 "Порядок інструментів, які буде запущено для черги обробки, з панелі "
 "**Призначені інструменти**."
 
-#: ../../batch_queue/bqm_workflow.rst:23
+#: ../../batch_queue/bqm_workflow.rst:21
 msgid ""
 "All individual tool settings customized in the **Tools Settings** view ."
 msgstr ""
 "Усі налаштовані за допомогою панелі **Параметри інструментів** параметри "
 "окремого інструмента."
 
-#: ../../batch_queue/bqm_workflow.rst:24
+#: ../../batch_queue/bqm_workflow.rst:22
 msgid "All settings from the **Queue Settings** view."
 msgstr "Усі параметри з панелі **Параметри черги**."
 
-#: ../../batch_queue/bqm_workflow.rst:26
+#: ../../batch_queue/bqm_workflow.rst:24
 msgid ""
 "Workflows allow easy reproduction of the tools and settings used for batch "
 "processing, all adjusted for your specific use cases. A workflow has three "
@@ -85,40 +87,47 @@ msgstr ""
 "параметри пакетної обробки залежно від випадків використання. У робочого "
 "процесу є три властивості для ідентифікації на вкладці **Процес**:"
 
-#: ../../batch_queue/bqm_workflow.rst:28
+#: ../../batch_queue/bqm_workflow.rst:26
 msgid "A **Title** to name the workflow."
 msgstr "**Заголовок** для іменування процесу."
 
-#: ../../batch_queue/bqm_workflow.rst:29
+#: ../../batch_queue/bqm_workflow.rst:27
 msgid "A **Description** to give details about a workflow."
 msgstr "**Опис** для надання подробиць щодо процесу."
 
-#: ../../batch_queue/bqm_workflow.rst:30
+#: ../../batch_queue/bqm_workflow.rst:28
 msgid "The number of tools stored in the workflow."
 msgstr "Кількість інструментів, що зберігаються у робочому процесі."
 
-#: ../../batch_queue/bqm_workflow.rst:32
+#: ../../batch_queue/bqm_workflow.rst:30
 msgid ""
 "All of this information is stored in an XML file hosted in your home "
 "directory."
 msgstr ""
 "Усі ці дані зберігаються у форматі файла XML у вашому домашньому каталозі."
 
-#: ../../batch_queue/bqm_workflow.rst:38
+#: ../../batch_queue/bqm_workflow.rst:36
 msgid ""
 "The Batch Queue Manager Workflow Stores all Settings to Apply to a Queue"
 msgstr ""
 "У записі процесу засобу керування чергою пакетної обробки зберігаються усі "
 "параметри, які слід застосувати до черги обробки"
 
-#: ../../batch_queue/bqm_workflow.rst:40
+#: ../../batch_queue/bqm_workflow.rst:38
+#| msgid ""
+#| "To create a new Workflow, select tools from the **Base Tools** tab and "
+#| "drag and drop items to **Assigned Tools** list to create a tool sequence. "
+#| "Adjust the tool settings as needed. Then right click on the tool list to "
+#| "bring up the context menu, and select the **Create Workflow** option. A "
+#| "dialog will appear to enter the workflow **Title** and **Description** "
+#| "properties. Press **OK** to append the new item to the **Workflow** tab."
 msgid ""
 "To create a new Workflow, select tools from the **Base Tools** tab and drag "
-"and drop items to **Assigned Tools** list to create a tool sequence. Adjust "
-"the tool settings as needed. Then right click on the tool list to bring up "
-"the context menu, and select the **Create Workflow** option. A dialog will "
-"appear to enter the workflow **Title** and **Description** properties. Press "
-"**OK** to append the new item to the **Workflow** tab."
+"and drop items to the **Assigned Tools** list to create a tool sequence. "
+"Adjust the tool settings as needed. Then right click on the tool list to "
+"bring up the context menu, and select the **Create Workflow** option. A "
+"dialog will appear to enter the workflow **Title** and **Description** "
+"properties. Press **OK** to append the new item to the **Workflow** tab."
 msgstr ""
 "Щоб створити робочий процес, виберіть інструменти з вкладки **Базові "
 "інструменти**, перетягніть і скиньте їх до списку **Призначені "
@@ -129,15 +138,20 @@ msgstr ""
 "**Опис**. Натисніть кнопку **Гаразд** для дописування нового пункту на "
 "вкладку **Процес**."
 
-#: ../../batch_queue/bqm_workflow.rst:46
+#: ../../batch_queue/bqm_workflow.rst:44
 msgid "The Batch Queue Manager Workflow Create Dialog"
 msgstr ""
 "Вікно створення робочого процесу засобу керування чергою пакетної обробки"
 
-#: ../../batch_queue/bqm_workflow.rst:48
+#: ../../batch_queue/bqm_workflow.rst:46
+#| msgid ""
+#| "To apply a workflow to a new Queue, select the new Queue, then double "
+#| "click over an item in the **Workflow** tab, or drag and drop the item "
+#| "from **Workflow** tab to **Assigned Tools**. The Workflow will be "
+#| "assigned to the current Queue and will be ready to run."
 msgid ""
 "To apply a workflow to a new Queue, select the new Queue, then double click "
-"over an item in the **Workflow** tab, or drag and drop the item from "
+"over an item in the **Workflow** tab, or drag and drop the item from the "
 "**Workflow** tab to **Assigned Tools**. The Workflow will be assigned to the "
 "current Queue and will be ready to run."
 msgstr ""
@@ -147,7 +161,7 @@ msgstr ""
 "процес буде пов'язано із поточною чергою обробки і ним можна буде одразу "
 "скористатися."
 
-#: ../../batch_queue/bqm_workflow.rst:50
+#: ../../batch_queue/bqm_workflow.rst:48
 msgid ""
 "To manage a workflow entry, right-click on an entry in the **Workflow** tab "
 "to enable the context menu that provides options to edit workflow properties "
@@ -158,10 +172,16 @@ msgstr ""
 "контекстного меню ви зможете внести зміни до властивостей процесу або "
 "вилучити його запис."
 
-#: ../../batch_queue/bqm_workflow.rst:56
+#: ../../batch_queue/bqm_workflow.rst:54
 msgid "The Batch Queue Manager Workflow Context Menu"
 msgstr ""
 "Контекстне меню робочого процесу засобу керування чергою пакетної обробки"
+
+#~ msgid "Workflow"
+#~ msgstr "Процес"
+
+#~ msgid "Contents"
+#~ msgstr "Зміст"
 
 #~ msgid "The amount of tools registered."
 #~ msgstr "Кількість зареєстрованих інструментів."

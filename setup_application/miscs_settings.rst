@@ -279,7 +279,9 @@ This section allows to tune special low level configurations used by application
 
 - **Use the OpenCL hardware acceleration**: this option will enable the GPU accelerations with the faces management, image quality sorting, and auto-tags features. This option affect the `OpenCV <https://opencv.org/>`_ engine used in background for the intensive computation on images. To see all details about the OpenCV hardware support, go to :menuselection:`Help --> Components Information` menu entry, and :ref:`OpenCV section from the dialog <help_componentsinfo>`.
 
-- **Fix AMD-GPU video decoding issue**: this option is only available **under Windows** and must be used only with AMD hardware GPU devices to prevent video media decoding dysfunctions.
+- **Use the video hardware acceleration**: this option must be used only with compatible hardware GPU devices with the FFmpeg backend. It must be disabled video media decoding dysfunctions occurs.
+
+- **Use the video texture conversion**: this option must be used to reduce CPU usage when video frame are rendered by using GPU-based conversion with the FFmpeg backend. It must be disabled video media decoding dysfunctions occurs.
 
 - **Decoding backend to render video**: this option allows to choose the backend used to render video media with the **Qt6 version** of application. Supported backends are:
 

@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-25 01:48+0000\n"
-"PO-Revision-Date: 2024-11-25 12:57+0200\n"
+"POT-Creation-Date: 2024-12-06 01:44+0000\n"
+"PO-Revision-Date: 2024-12-06 09:51+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -32,14 +32,18 @@ msgstr ""
 "відкритий код, вільний, навчання, простий, база даних, вступ"
 
 #: ../../getting_started/database_intro.rst:14
-msgid "Database"
-msgstr "База даних"
+msgid ":ref:`Database <getting_started>`"
+msgstr ":ref:`База даних <getting_started>`"
 
-#: ../../getting_started/database_intro.rst:17
+#: ../../getting_started/database_intro.rst:16
+msgid "Contents"
+msgstr "Зміст"
+
+#: ../../getting_started/database_intro.rst:19
 msgid "Overview"
 msgstr "Огляд"
 
-#: ../../getting_started/database_intro.rst:19
+#: ../../getting_started/database_intro.rst:21
 msgid ""
 "Databases are used to store data. Like other photograph management programs, "
 "digiKam uses its database to avoid data duplication, reduce data redundancy, "
@@ -55,7 +59,7 @@ msgstr ""
 "отримання даних. Крім того, будь-який користувач може отримувати доступ до "
 "даних за допомогою мови запитів."
 
-#: ../../getting_started/database_intro.rst:21
+#: ../../getting_started/database_intro.rst:23
 msgid ""
 "digiKam stores data (including albums, album roots, tags, thumbnails, face "
 "recognition data, image metadata, file paths, settings and others) in four "
@@ -65,7 +69,7 @@ msgstr ""
 "альбомів, кореневих альбомів, міток, мініатюр, розпізнавання облич, "
 "метаданих зображень, шляхів до файлів та параметрів."
 
-#: ../../getting_started/database_intro.rst:23
+#: ../../getting_started/database_intro.rst:25
 msgid ""
 "Core database for all collection properties: hosts all albums, images and "
 "search data."
@@ -73,7 +77,7 @@ msgstr ""
 "Основна база даних для усіх властивостей збірки, тобто така база, що містить "
 "усі дані альбомів, зображень та пошуку."
 
-#: ../../getting_started/database_intro.rst:25
+#: ../../getting_started/database_intro.rst:27
 msgid ""
 "Thumbnail database for compressed thumbnails: hosts image thumbs using "
 "wavelet compressed images (**PGF** format)."
@@ -81,13 +85,13 @@ msgstr ""
 "База даних стиснених мініатюр, яку призначено для зберігання зображень "
 "мініатюр з використання стискання з вейвлетами (формат **PGF**)."
 
-#: ../../getting_started/database_intro.rst:27
+#: ../../getting_started/database_intro.rst:29
 msgid "Similarity database for image fingerprints to enable fuzzy search."
 msgstr ""
 "База даних подібностей для зберігання відбитків зображень для рушія "
 "нечіткого пошуку."
 
-#: ../../getting_started/database_intro.rst:29
+#: ../../getting_started/database_intro.rst:31
 msgid ""
 "Face database for storing face recognition metadata: hosts face histograms "
 "for face recognition."
@@ -95,7 +99,7 @@ msgstr ""
 "База даних облич для зберігання метаданих розпізнавання облич, де "
 "зберігаються гістограми для визначення облич людей."
 
-#: ../../getting_started/database_intro.rst:35
+#: ../../getting_started/database_intro.rst:37
 msgid ""
 "Example of digiKam remote MySQL configuration hosted on a NAS from the local "
 "network"
@@ -103,24 +107,33 @@ msgstr ""
 "Приклад налаштувань віддаленої MySQL digiKam, який зберігається у NAS з "
 "локальної мережі"
 
-#: ../../getting_started/database_intro.rst:37
+#: ../../getting_started/database_intro.rst:39
+#| msgid ""
+#| "Details on database settings can be found in :ref:`Database Setup section "
+#| "<database_settings>`."
 msgid ""
-"Details on database settings can be found in :ref:`Database Setup section "
-"<database_settings>`."
+"Details on database settings can be found in the :ref:`Database Setup "
+"section <database_settings>`."
 msgstr ""
 "Подробиці щодо параметрів баз даних наведено у :ref:`розділі щодо "
 "налаштовування баз даних <database_settings>`."
 
-#: ../../getting_started/database_intro.rst:40
+#: ../../getting_started/database_intro.rst:42
 msgid "Migrating From Other Software"
 msgstr "Перенесення з інших програм"
 
-#: ../../getting_started/database_intro.rst:42
+#: ../../getting_started/database_intro.rst:44
+#| msgid ""
+#| "The digiKam database can be populated from file properties managed by "
+#| "another program by using the other program to write all metadata into XMP "
+#| "sidecar files. While digiKam cannot parse proprietary and closed source "
+#| "databases, it can read XMP sidecar files, which is a standardized and "
+#| "well documented file format."
 msgid ""
 "The digiKam database can be populated from file properties managed by "
 "another program by using the other program to write all metadata into XMP "
 "sidecar files. While digiKam cannot parse proprietary and closed source "
-"databases, it can read XMP sidecar files, which is a standardized and well "
+"databases, it can read XMP sidecar files, which is a standardized and well-"
 "documented file format."
 msgstr ""
 "Щоб заповнити базу даних digiKam на основі властивостей, якими керують інші "
@@ -128,7 +141,7 @@ msgstr ""
 "розширення можливостей взаємодії. digiKam не може обробляти бази даних із "
 "закритим кодом. Допоміжні файли XMP стандартизовано і добре документовано."
 
-#: ../../getting_started/database_intro.rst:44
+#: ../../getting_started/database_intro.rst:46
 msgid ""
 "Read the :ref:`Metadata Setup section <metadata_settings>` to use XMP "
 "sidecar files with digiKam. The Advanced panel offers profile management to "
@@ -141,7 +154,7 @@ msgstr ""
 "випадків при імпортуванні та експортуванні метаданих зі стороннього "
 "програмного забезпечення."
 
-#: ../../getting_started/database_intro.rst:46
+#: ../../getting_started/database_intro.rst:48
 msgid ""
 "In a fresh installation of digiKam, you can create a new root collection in "
 "the directory where you store images managed by the other software. The "
@@ -153,7 +166,7 @@ msgstr ""
 "буде оброблено, а базу даних заповнено відомостями, які буде виявлено у "
 "додаткових файлах XMP."
 
-#: ../../getting_started/database_intro.rst:48
+#: ../../getting_started/database_intro.rst:50
 msgid ""
 "After the items are read (this can take a while), you will be able to see "
 "all tags, labels and comments in the digiKam item properties."
@@ -161,6 +174,9 @@ msgstr ""
 "Коли сканування записів буде завершено (воно може бути досить тривалим), ви "
 "маєте побачити усі мітки, позначки та коментарі у властивостях записів "
 "digiKam."
+
+#~ msgid "Database"
+#~ msgstr "База даних"
 
 #~ msgid ""
 #~ "The digiKam actually manages more than one database. For convenience, it "
