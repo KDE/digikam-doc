@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-11 01:53+0000\n"
-"PO-Revision-Date: 2024-11-11 09:52+0100\n"
+"POT-Creation-Date: 2024-12-08 01:42+0000\n"
+"PO-Revision-Date: 2024-12-08 07:53+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -836,17 +836,33 @@ msgstr ""
 "<help_componentsinfo>`."
 
 #: ../../setup_application/miscs_settings.rst:282
+#| msgid ""
+#| "**Fix AMD-GPU video decoding issue**: this option is only available "
+#| "**under Windows** and must be used only with AMD hardware GPU devices to "
+#| "prevent video media decoding dysfunctions."
 msgid ""
-"**Fix AMD-GPU video decoding issue**: this option is only available **under "
-"Windows** and must be used only with AMD hardware GPU devices to prevent "
-"video media decoding dysfunctions."
+"**Use the video hardware acceleration**: this option must be used only with "
+"compatible hardware GPU devices with the FFmpeg backend. It must be disabled "
+"video media decoding dysfunctions occurs."
 msgstr ""
-"**Corregeix el problema de descodificació de vídeo AMD-GPU**: aquesta opció "
-"només està disponible **per al Windows** i només s'ha d'utilitzar amb "
-"dispositius GPU de maquinari AMD per a evitar disfuncions de descodificació "
-"d'elements multimèdia de vídeo."
+"**Usa l'acceleració del maquinari de vídeo**: aquesta opció només s'ha "
+"d'utilitzar amb dispositius GPU compatibles amb el dorsal FFmpeg. S'ha de "
+"desactivar si apareixen disfuncions de descodificació dels elements "
+"multimèdia de vídeo."
 
 #: ../../setup_application/miscs_settings.rst:284
+msgid ""
+"**Use the video texture conversion**: this option must be used to reduce CPU "
+"usage when video frame are rendered by using GPU-based conversion with the "
+"FFmpeg backend. It must be disabled video media decoding dysfunctions occurs."
+msgstr ""
+"**Usa la conversió de textures de vídeo**: aquesta opció s'ha d'utilitzar "
+"per a reduir l'ús de la CPU quan es renderitzen els fotogrames de vídeo "
+"mitjançant la conversió basada en GPU amb el dorsal FFmpeg. S'ha de "
+"desactivar si apareixen disfuncions de descodificació dels elements "
+"multimèdia de vídeo."
+
+#: ../../setup_application/miscs_settings.rst:286
 msgid ""
 "**Decoding backend to render video**: this option allows to choose the "
 "backend used to render video media with the **Qt6 version** of application. "
@@ -857,7 +873,7 @@ msgstr ""
 "vídeo amb la **versió Qt6** de l'aplicació. Els dorsals admesos són:"
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:286
+#: ../../setup_application/miscs_settings.rst:288
 msgid ""
 "**FFmpeg**: the default and recommended backend available on all platforms. "
 "`FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all "
@@ -868,7 +884,7 @@ msgstr ""
 "tots els còdecs necessaris per a reproduir elements multimèdia."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:287
+#: ../../setup_application/miscs_settings.rst:289
 msgid ""
 "**GStreamer**: the alternative backend available **under Linux**. `GStreamer "
 "<https://en.wikipedia.org/wiki/GStreamer>`_ can requires 3rd-party codecs "
@@ -879,7 +895,7 @@ msgstr ""
 "instal·lació de còdecs de tercers al sistema perquè funcioni correctament."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:288
+#: ../../setup_application/miscs_settings.rst:290
 msgid ""
 "**WMF**: Windows Media Foundation is the alternative backend available "
 "**under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ "
@@ -891,7 +907,7 @@ msgstr ""
 "correctament."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:289
+#: ../../setup_application/miscs_settings.rst:291
 msgid ""
 "**AVFoundation**: the alternative backend available **under macOS**. "
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can requires "
@@ -903,7 +919,7 @@ msgstr ""
 "correctament."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:291
+#: ../../setup_application/miscs_settings.rst:293
 msgid ""
 "**Enable internal debug logging**: this option will turn on the debug traces "
 "on the console used to investigate dysfunctions. Under Linux and macOS, just "
@@ -922,11 +938,11 @@ msgstr ""
 "configuració predeterminada del DebugView és suficient per a capturar els "
 "seguiments de l'aplicació."
 
-#: ../../setup_application/miscs_settings.rst:297
+#: ../../setup_application/miscs_settings.rst:299
 msgid "digiKam Running Under Windows With DebugView"
 msgstr "El digiKam s'executa sota Windows amb el DebugView"
 
-#: ../../setup_application/miscs_settings.rst:299
+#: ../../setup_application/miscs_settings.rst:301
 msgid ""
 "**Download Required Binary Data**: with this button you can load the deep-"
 "learning model files used with the faces management, image quality sorting, "
@@ -940,7 +956,7 @@ msgstr ""
 "de l'aplicació."
 
 # skip-rule: t-acc_obe
-#: ../../setup_application/miscs_settings.rst:301
+#: ../../setup_application/miscs_settings.rst:303
 msgid ""
 "**Network Proxy Server Settings**: this group the options to setup the "
 "`proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for "
@@ -953,16 +969,16 @@ msgstr ""
 "no es requereix cap servidor intermediari per a accedir a Internet. Les "
 "opcions disponibles del servidor intermediari es llisten a continuació:"
 
-#: ../../setup_application/miscs_settings.rst:303
+#: ../../setup_application/miscs_settings.rst:305
 msgid "**Proxy**: the address of the Proxy server on the network."
 msgstr ""
 "**Servidor intermediari**: l'adreça del servidor intermediari a la xarxa."
 
-#: ../../setup_application/miscs_settings.rst:304
+#: ../../setup_application/miscs_settings.rst:306
 msgid "**Port**: the Proxy server port on the network."
 msgstr "**Port**: el port del servidor intermediari a la xarxa."
 
-#: ../../setup_application/miscs_settings.rst:305
+#: ../../setup_application/miscs_settings.rst:307
 msgid ""
 "**Proxy type**: the Proxy type available on the network. Two protocols are "
 "supported: **Http** or **Socks5**."
@@ -970,7 +986,7 @@ msgstr ""
 "**Tipus de servidor intermediari**: el tipus de servidor intermediari "
 "disponible a la xarxa. S'admeten dos protocols: **Http** o **Socks5**."
 
-#: ../../setup_application/miscs_settings.rst:306
+#: ../../setup_application/miscs_settings.rst:308
 msgid ""
 "**Requires Authentification**: turn on this option if the connection to the "
 "Proxy server needs an **Username** and a **Password**."
@@ -978,7 +994,7 @@ msgstr ""
 "**Requereix autenticació**: activeu aquesta opció si la connexió amb el "
 "servidor intermediari necessita un **Nom d'usuari** i una **Contrasenya**."
 
-#: ../../setup_application/miscs_settings.rst:307
+#: ../../setup_application/miscs_settings.rst:309
 msgid ""
 "**Username**: the name to use to be logged on the Proxy server over the "
 "network."
@@ -986,7 +1002,7 @@ msgstr ""
 "**Nom d'usuari**: el nom que s'ha d'utilitzar per a registrar-se al servidor "
 "intermediari a través de la xarxa."
 
-#: ../../setup_application/miscs_settings.rst:308
+#: ../../setup_application/miscs_settings.rst:310
 msgid ""
 "**Password**: the password to use to be logged on the Proxy server over the "
 "network."

@@ -6,16 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-11 01:53+0000\n"
-"PO-Revision-Date: 2024-11-11 07:05+0100\n"
+"POT-Creation-Date: 2024-12-08 01:42+0000\n"
+"PO-Revision-Date: 2024-12-08 18:46+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
+"n%100==4 ? 3 : 0);\n"
 "X-Generator: Poedit 3.5\n"
 
 #: ../../setup_application/miscs_settings.rst:1
@@ -801,15 +801,26 @@ msgstr ""
 
 #: ../../setup_application/miscs_settings.rst:282
 msgid ""
-"**Fix AMD-GPU video decoding issue**: this option is only available **under "
-"Windows** and must be used only with AMD hardware GPU devices to prevent "
-"video media decoding dysfunctions."
+"**Use the video hardware acceleration**: this option must be used only with "
+"compatible hardware GPU devices with the FFmpeg backend. It must be disabled "
+"video media decoding dysfunctions occurs."
 msgstr ""
-"**Odpravi težavo z dekodiranjem videa AMD-GPU**: ta možnost je na voljo samo "
-"**v sistemu Windows** in jo je treba uporabljati samo s strojnimi napravami "
-"GPU AMD, da preprečite motnje pri dekodiranju video medijev."
+"**Uporabi video strojno pospeševanje**: to možnost je treba uporabiti samo z "
+"združljivo strojno opremo GPE z zaledjem FFmpeg. Mora biti onemogočeno, "
+"pride do motenj dekodiranja video medijev."
 
 #: ../../setup_application/miscs_settings.rst:284
+msgid ""
+"**Use the video texture conversion**: this option must be used to reduce CPU "
+"usage when video frame are rendered by using GPU-based conversion with the "
+"FFmpeg backend. It must be disabled video media decoding dysfunctions occurs."
+msgstr ""
+"**Uporabi pretvorbo teksture videoposnetka**: to možnost je treba uporabiti "
+"za zmanjšanje porabe CPE-ja, ko se okvir videoposnetka upodablja s pretvorbo "
+"na podlagi GPE-ja z zaledjem FFmpeg. Mora biti onemogočeno, če pride do "
+"motenj dekodiranja video medijev."
+
+#: ../../setup_application/miscs_settings.rst:286
 msgid ""
 "**Decoding backend to render video**: this option allows to choose the "
 "backend used to render video media with the **Qt6 version** of application. "
@@ -819,7 +830,7 @@ msgstr ""
 "ozadja, ki se uporablja za upodabljanje video medijev z **različico Qt6** "
 "aplikacije. Podprta zaledja so:"
 
-#: ../../setup_application/miscs_settings.rst:286
+#: ../../setup_application/miscs_settings.rst:288
 msgid ""
 "**FFmpeg**: the default and recommended backend available on all platforms. "
 "`FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all "
@@ -829,7 +840,7 @@ msgstr ""
 "platformah. `FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ vedno vključuje "
 "vse potrebne kodeke za predvajanje medijev."
 
-#: ../../setup_application/miscs_settings.rst:287
+#: ../../setup_application/miscs_settings.rst:289
 msgid ""
 "**GStreamer**: the alternative backend available **under Linux**. `GStreamer "
 "<https://en.wikipedia.org/wiki/GStreamer>`_ can requires 3rd-party codecs "
@@ -839,7 +850,7 @@ msgstr ""
 "`GStreamer <https://en.wikipedia.org/wiki/GStreamer>`_ lahko za pravilno "
 "delovanje zahteva namestitev kodekov drugih proizvajalcev v sistem."
 
-#: ../../setup_application/miscs_settings.rst:288
+#: ../../setup_application/miscs_settings.rst:290
 msgid ""
 "**WMF**: Windows Media Foundation is the alternative backend available "
 "**under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ "
@@ -850,7 +861,7 @@ msgstr ""
 "Media_Foundation>`_ lahko za pravilno delovanje zahteva namestitev kodekov "
 "drugih proizvajalcev v sistem."
 
-#: ../../setup_application/miscs_settings.rst:289
+#: ../../setup_application/miscs_settings.rst:291
 msgid ""
 "**AVFoundation**: the alternative backend available **under macOS**. "
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can requires "
@@ -860,7 +871,7 @@ msgstr ""
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ lahko za "
 "pravilno delovanje zahteva namestitev kodekov drugih proizvajalcev v sistem."
 
-#: ../../setup_application/miscs_settings.rst:291
+#: ../../setup_application/miscs_settings.rst:293
 msgid ""
 "**Enable internal debug logging**: this option will turn on the debug traces "
 "on the console used to investigate dysfunctions. Under Linux and macOS, just "
@@ -878,11 +889,11 @@ msgstr ""
 "debugview>`_ za prikaz sporočil. Privzete nastavitve iz DebugView "
 "zadostujejo za zajemanje sledi iz aplikacije."
 
-#: ../../setup_application/miscs_settings.rst:297
+#: ../../setup_application/miscs_settings.rst:299
 msgid "digiKam Running Under Windows With DebugView"
 msgstr "digiKam, ki deluje v sistemu Windows z DebugView"
 
-#: ../../setup_application/miscs_settings.rst:299
+#: ../../setup_application/miscs_settings.rst:301
 msgid ""
 "**Download Required Binary Data**: with this button you can load the deep-"
 "learning model files used with the faces management, image quality sorting, "
@@ -894,7 +905,7 @@ msgstr ""
 "razvrščanjem kakovosti slik in funkcijami samodejnega označevanja. "
 "Uporabljate ga samo, če ste ob prvem zagonu aplikacije obšli ta korak."
 
-#: ../../setup_application/miscs_settings.rst:301
+#: ../../setup_application/miscs_settings.rst:303
 msgid ""
 "**Network Proxy Server Settings**: this group the options to setup the "
 "`proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for "
@@ -907,15 +918,15 @@ msgstr ""
 "dostop do interneta ni potreben posrednik. Razpoložljive možnosti posrednika "
 "so navedene spodaj:"
 
-#: ../../setup_application/miscs_settings.rst:303
+#: ../../setup_application/miscs_settings.rst:305
 msgid "**Proxy**: the address of the Proxy server on the network."
 msgstr "**Proxy**: naslov posrednega strežnika v omrežju."
 
-#: ../../setup_application/miscs_settings.rst:304
+#: ../../setup_application/miscs_settings.rst:306
 msgid "**Port**: the Proxy server port on the network."
 msgstr "**Vrata**: vrata posredniškega strežnika v omrežju."
 
-#: ../../setup_application/miscs_settings.rst:305
+#: ../../setup_application/miscs_settings.rst:307
 msgid ""
 "**Proxy type**: the Proxy type available on the network. Two protocols are "
 "supported: **Http** or **Socks5**."
@@ -923,7 +934,7 @@ msgstr ""
 "**Vrsta posrednika**: vrsta posrednika, ki je na voljo v omrežju. Podprta "
 "sta dva protokola: **Http** ali **Socks5**."
 
-#: ../../setup_application/miscs_settings.rst:306
+#: ../../setup_application/miscs_settings.rst:308
 msgid ""
 "**Requires Authentification**: turn on this option if the connection to the "
 "Proxy server needs an **Username** and a **Password**."
@@ -931,7 +942,7 @@ msgstr ""
 "**Zahteva avtentikacijo*: vklopite to možnost, če povezava s posredniškim "
 "strežnikom zahteva **Uporabniško ime** in **Geslo**."
 
-#: ../../setup_application/miscs_settings.rst:307
+#: ../../setup_application/miscs_settings.rst:309
 msgid ""
 "**Username**: the name to use to be logged on the Proxy server over the "
 "network."
@@ -939,7 +950,7 @@ msgstr ""
 "**Uporabniško ime**: ime, ki se uporablja za prijavo na posredniški strežnik "
 "prek omrežja."
 
-#: ../../setup_application/miscs_settings.rst:308
+#: ../../setup_application/miscs_settings.rst:310
 msgid ""
 "**Password**: the password to use to be logged on the Proxy server over the "
 "network."
