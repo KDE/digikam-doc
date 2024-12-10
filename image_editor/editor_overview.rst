@@ -10,10 +10,8 @@
 
 .. _editor_overview:
 
-Overview
-========
-
-.. contents::
+:ref:`Overview <image_editor>`
+==============================
 
 digiKam incorporates a fast Image Editor with a few basic yet powerful image editing tools. You can use the Image Editor to view your photographs and to make corrections and alterations. The Image Editor can be accessed either by clicking on a thumbnail in the Image Window or by clicking with the right mouse button over a thumbnail and selecting **Edit** from the context menu.
 
@@ -29,16 +27,16 @@ The image editor has just one main window with:
 
     - A status bar at the bottom which shows the filename, the current file number, the current zoom level, and the current image size.
 
-    - A menu bar across the top and below that a tool bar that provides quick access to some commonly used functions.
+    - A menu bar across the top, and tool bar just below that, for quick access to some commonly used functions.
 
-    - A thumb bar located on left of canvas (optional - see :menuselection:`Settings --> Show Thumbbar` menu entry) can be relocated on top, right, or bottom side. An anchor on the left side of thumb bar allows to move it with the mouse at the wanted place.
+    - An optional thumb bar (see :menuselection:`Settings --> Show Thumbbar` menu entry) located on the left of canvas. This can be relocated to the top, right, or bottom side by dragging the anchor on the left side of thumb bar to the desired location.
 
     .. figure:: videos/editor_thumbbar.webp
         :width: 500px
         :alt:
         :align: center
 
-        Screencast of Image Editor Thumbbar Placed at Different Canvas Sides
+        Screencast of Image Editor Thumb Bar Placed at Different Canvas Sides
 
 From left to right, the Image Editor Toolbar includes these actions:
 
@@ -50,13 +48,13 @@ From left to right, the Image Editor Toolbar includes these actions:
 
     4. Save changes in versioning stack using default format.
 
-    5. Save the modified image in a new version using specific format.
+    5. Save the modified image as a new version using a specific format.
 
-    6. Cancel all modifications done on image.
+    6. Cancel all modifications done on the image.
 
-    7. Undoing last action.
+    7. Undo last action.
 
-    8. Redoing previous action.
+    8. Redo previous action.
 
 .. figure:: images/editor_toolbar.webp
     :alt:

@@ -72,4 +72,4 @@ Black point compensation results depend on the context. Try soft-proofing with b
     :alt:
     :align: center
 
-    digiKam Image Editor Print Feature Allows Using Your Preferred Printer Color Profile and Tune the Black Point Compensation.
+    digiKam Image Editor Print Feature Allows Using Your Preferred Printer Color Profile and Tune the Black Point Compensation

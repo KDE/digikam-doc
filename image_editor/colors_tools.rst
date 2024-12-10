@@ -10,8 +10,8 @@
 
 .. _colors_tools:
 
-Colors Tools
-============
+:ref:`Color Tools <image_editor>`
+=================================
 
 .. contents::
 
@@ -20,92 +20,92 @@ Colors Tools
 Encoding Depth
 --------------
 
-Here you can change the encoding depth per color channel of the edited image. 8 bit encoding is the common JPEG format, 16 bit encoding is better suited for high quality images, but this format needs more storage space, calculation time and is currently available with PNG, PGF, TIFF, and JPEG-2000 formats only.
+The digiKam **Convert to 8 bits** and **Convert to 16 bits** tools allow you to change the encoding depth per color channel of the edited image. 8-bit encoding is the common JPEG format, 16-bit encoding is better suited for high quality images, but this format uses more storage space and calculation time. 16-bit encoding is currently available only with PNG, PGF, TIFF, and JPEG-2000 formats. There are no parameters to adjust for either of these tools, so no dialog appears.
 
 .. note::
 
-    When you re-encoding an image from 8-bit to 16-bit, uniformly distributed noise is introduced to prevent histogram holes due to colors range expansion.
+    When you re-encoding an image from 8-bit to 16-bit, uniformly distributed noise is introduced to prevent histogram holes due to color range expansion.
 
 .. important::
 
-    HEIF, AVIF, JPX formats can encode as 8 bits or 12 bit. WEBP is limited to 8 bits. These limitations can change in the future.
+    HEIF, AVIF, JPX formats can encode as 8 bits or 12 bits. WEBP is limited to 8 bits. These limitations may change in the future.
 
 .. _color_cm:
 
-Color Management
-----------------
+Color Space Convertor
+---------------------
 
-This tool allows to convert image from one color space to another one. Its use is the change and assignment of color profiles to an image. For detailed instructions on the use of color profiles, please refer to :ref:`Color Management Rules <color_management>` and :ref:`Color Management Settings <cm_settings>` sections.
+The digiKam **Color Space Convertor** tool allows you to convert an image from one color space to another. You can also use it to assign a color profile to an image. For detailed instructions on the use of color profiles, please refer to the :ref:`Color Management <color_management>` and :ref:`Color Management Settings <cm_settings>` sections of the manual.
 
 .. figure:: images/editor_profile_converter.webp
     :alt:
     :align: center
 
-    The Image Editor to Change Image Color Space
+    The Image Editor Color Space Convertor Tool
 
 .. _color_auto:
 
-Auto-Correction
----------------
+Color Auto-Correction
+---------------------
 
-This tool set provides five automatic correction levels that will improve an image in most cases. Use this tool before going into the more involved manual adjustments.
+The digiKam **Color Auto-Correction** tool allows you to apply one of five automatic corrections that will in most cases improve an image. You may want to apply this tool before making more detailed manual adjustments.
 
 The **Auto Levels**, **Normalize**, **Equalize**, **Stretch Contrast**, and **Auto Exposure** available from :menuselection:`Color --> Auto-Correction...` menu entry menu will attempt to work out the best color levels automatically. You will need to experiment with the effects of these functions to see what works best with your photograph.
 
    - **Auto Levels**: This option maximizes the tonal range in the Red, Green, and Blue channels. It searches the image shadow and highlight limit values and adjusts the Red, Green, and Blue channels to a full histogram range.
 
-   - **Normalize**: this method scales brightness values across the selected image so that the darkest point becomes black, and the brightest point becomes as bright as possible without altering its hue. This is often a “magic fix” for images that are dim or washed out.
+   - **Normalize**: This option scales brightness values across the selected image so that the darkest point becomes black, and the brightest point becomes as bright as possible without altering its hue. This is often a "magic fix" for images that are dim or washed out.
 
-   - **Equalize**: this method adjusts the brightness of colors across the selected image so that the histogram for the Value channel is as flat as possible, that is, so that each possible brightness value appears at about the same number of pixels as each other value. Sometimes Equalize works wonderfully at enhancing the contrasts of an image. Other times it gives garbage. It is a very powerful operation, which can either work miracles on an image or destroy it.
+   - **Equalize**: This option adjusts the brightness of colors across the selected image so that the histogram for the Value channel is as flat as possible, that is, so that each possible brightness value appears in about the same number of pixels as each other value. Sometimes Equalize works wonderfully at enhancing the contrast of an image. Other times it gives garbage. It is a very powerful operation, which can either work miracles on an image or ruin it.
 
-   - **Stretch Contrast**: this method enhances the contrast and brightness of the RGB values of an image by stretching the lowest and highest values to their fullest range, adjusting everything in between. This is noticeable only with washed-out images and can be a good fix-it tool for bad photographs.
+   - **Stretch Contrast**: This option enhances the contrast and brightness of the RGB values of an image by stretching the lowest and highest values to their fullest range, adjusting everything in between. This is noticeable only with washed-out images and can be a good fix-it tool for bad photographs.
 
-   - **Auto Exposure**: This option enhances the contrast and brightness of the RGB values of an image to calculate optimal exposition and black level using image histogram properties.
+   - **Auto Exposure**: This option enhances the contrast and brightness of the RGB values of an image to calculate optimal exposure and black level using image histogram properties.
 
-The results of any adjustments you make will not be remembered until you save your photograph.
+The results of any adjustments you make will not be saved until you save your photograph.
 
 .. figure:: images/editor_auto_corrections.webp
     :alt:
     :align: center
 
-    The Image Editor to Process Auto Color Corrections
+    The Image Editor to Color Auto-Correction Tool
 
-Black and White Conversions
----------------------------
+Black & White
+-------------
 
-Black and White photography has always been fascinating in its abstraction capability. With the advent of digital photography, Black and White has almost become a desktop activity, as color images can be easily converted on the computer into black and white, even providing a set of vintage film roll profiles. This filter is also able to simulates traditional infrared film material.
+The digiKam **Black & White** tool converts your color images to beautiful black & white. Black & white photography has always been fascinating because of its abstract nature. With the advent of digital photography, black & white has almost become a desktop activity, as color images can be easily converted on the computer into black & white. digiKam even provides a set of vintage film roll profiles to make your images look like monochrome film. This filter is also able to simulate traditional infrared film material.
 
 .. _color_bw:
 
-Legacy Films Emulation
-~~~~~~~~~~~~~~~~~~~~~~
+Legacy Film Emulation
+~~~~~~~~~~~~~~~~~~~~~
 
-digiKam comes with a couple of black & white filters that you can use on your photographs. Under the :menuselection:`Color --> Black & White...` menu you will find classic black & white chemical toning used in analog photography. The controls come on four drop-down items: **Film**, **Lens Filters**, **Tone** and **Luminosity** as shown on the screenshot below. Film, filters and color toning can be applied independently of each other (on top of each other). The filters actually influence the RGB channel mixing, whereas the toning purely adds a uniform monochromatic tint to the black & white photograph. In the lightness tab you will find a tonal adjustment tool (like curve adjust), a contrast tool and an over-exposure indicator to improve the Black and White rendering.
+digiKam comes with a couple of black & white filters that you can apply to your photographs to achieve that classic black & white chemical toning from film photography. The controls come on four drop-down items: **Film**, **Lens Filters**, **Tone** and **Luminosity** as shown on the screenshot below. Film, filters and color toning can be applied independently of each other, which means they can be used in combination. The filters actually influence the RGB channel mixing, whereas the toning adds a uniform monochromatic tint to the black & white photograph. In the lightness tab you will find a tonal adjustment tool (like curve adjust), a contrast tool and an over-exposure indicator to improve the black & white rendering.
 
 .. figure:: images/editor_bw_filters.webp
     :alt:
     :align: center
 
-    The Image Editor to Emulate Black and White Films
+    The Image Editor Black and White Tool
 
-With **Film** setting, a specific settings allows to emulate a number of famous Black and White photographic films as:
+The **Film** setting allows you to emulate a number of famous black & white photographic films such as:
 
     - **Generic**.
     - **Agfa**: 200X, Pan 25, Pan 100, Pan 400.
     - **Ilford**: Delta 100, Delta 400, Delta 400 Pro 3200, FP4 Plus, HP5 Plus, PanF Plus, XP2 Super.
     - **Kodak**: Tmax 100, Tmax 400, TriX.
 
-With **Lens Filters** setting, a color filter can be simulated as placed on front of lens:
+With **Lens Filters** setting, the effect of a color filter placed in front of lens can be simulated:
 
-    - **No Lens Filter**: simulate black & white neutral film exposure. 
-    - **Green Filter**: simulates black & white film exposure with green lens filter. This comes good with all scenic images, especially suited for portraits taken against the sky (similar to 004 Cokin(tm) Green filter).
+    - **No Lens Filter**: simulate black & white neutral film exposure.
+    - **Green Filter**: simulates black & white film exposure with green lens filter. This will enhance all scenic images, and is especially suited for portraits taken against the sky (similar to 004 Cokin(tm) Green filter).
     - **Orange Filter**: simulates black & white film exposure with an orange lens filter. This will enhance landscapes, marine scenes and aerial photography (similar to 002 Cokin(tm) Orange filter).
     - **Red Filter**: simulates black & white film exposure with red lens filter. Creates dramatic sky effects and can simulate moonlight scenes in daytime (similar to 003 Cokin(tm) Red filter).
-    - **Yellow Filter**: simulates black & white film exposure with yellow lens filter. Most natural tonal correction, improves contrast. Ideal for landscapes (similar to 001 Cokin(tm) Yellow filter).
+    - **Yellow Filter**: simulates black & white film exposure with yellow lens filter. Provides most natural tonal correction, and improves contrast. Ideal for landscapes (similar to 001 Cokin(tm) Yellow filter).
 
-With **Tone** setting, a color tint can be applied to the image:
+The **Tone** setting applies a color tint to the image:
 
-    - **Sepia Filter**: gives a warm highlight and mid-tone while adding a bit of coolness to the shadows - very similar to the process of bleaching a print and re-developing in a sepia toner (typical for your grandmothers photographs). Similar to 005 Cokin(tm) Sepia filter.
+    - **Sepia Filter**: gives a warm highlight and mid-tone while adding a bit of coolness to the shadows - very similar to the process of bleaching a print and re-developing in a sepia toner (typical for your grandmother's photographs). Similar to 005 Cokin(tm) Sepia filter.
     - **Brown Filter**: similar to Sepia Tone filter, but less pronounced.
     - **Cold Filter**: start subtle and replicate printing on a cold tone black & white paper such as a bromide enlarging paper.
     - **Selenium Filter**: effect that replicates traditional selenium chemical toning done in the darkroom.
@@ -116,178 +116,213 @@ With **Tone** setting, a color tint can be applied to the image:
 Simulate Infrared Film
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Simulating classical infrared film material (the effect is rendered in black and white) is an interesting alienation effect that is even stronger and more dramatic than pure black and white conversion. Contrast and an abstract touch are improved, which can underpin the expression of the photographer as an artist. It is like taking an image in black and white with a red filter on the camera lense. Areas which reflect little red light, e.g. the sky, will show as low density, dark areas. Areas which are excellent reflectors of red light, e.g. most green foliage, will be high density areas. And snow landscapes are really dramatic.
+Simulating classical infrared film material (the effect is rendered in black and white) is an interesting alien-like effect that is even stronger and more dramatic than pure black and white conversion. It is like taking an image in black and white with a red filter on the camera lens. Areas which reflect little red light, e.g. the sky, will show as low density, dark areas. Areas which are excellent reflectors of red light, e.g. most green foliage, will be high density areas. And snow landscapes become really dramatic.
 
 .. figure:: images/editor_infrared.webp
     :alt:
     :align: center
 
-    The Image Editor to Emulate Infrared Films
+    Using the Image Editor Black & White Tool to Emulate Infrared Films
 
-The filter tries to reproduce the famous Ilford(tm) SFX and Kodak Tmax infrared film series. These films has a sensitivity range of 200-800 ISO:
+The filter tries to reproduce the famous Ilford(tm) SFX and Kodak Tmax infrared film series. These films had a sensitivity range of 200-800 ISO:
 
     - **Ilford**: SPX 200, SPX 400, SPX 800.
     - **Kodak**: HIE.
 
 .. note::
 
-    Because the filter mixes color channels to reproduce infrared film (with emphasis on green channel), one can not simulate infrared effect from Black and White original photograph, since the color information is missing.
+    Because the filter mixes color channels to reproduce infrared film (with emphasis on the green channel), one cannot simulate the infrared effect from a Black & White original photograph -- the key color information is missing.
 
 .. _color_invert:
 
-Inverting Colors
-----------------
+Invert
+------
 
-In case of digitalize analog film with a scanner, color can appear inverted compared to the reality. This tool allows to reverse the colors into their respective `complementary colors <https://en.wikipedia.org/wiki/Complementary_colors>`_.
+The digiKam **Invert** tool, inverts an image as if it was a color negative. While digiKam is first and foremost an application for processing and organizing digital photos, it also features tools for working with `film negatives <https://en.wikipedia.org/wiki/Negative_(photography)>`_.
 
-Invert color to a complementary color (or opposite color of color on the color wheel), consist to have cyan as the opposite color of red, yellow as opposite color for blue, and magenta as the opposite color of green. With :menuselection:`Color --> Invert` option, we can invert all the pixel colors and brightness values in the image, as if the image was converted into a negative. Dark areas become bright and bright areas become dark. Hues are replaced by their complementary colors.
+Before you can process negatives in digiKam, you need to digitize them. If you don't have access to a film scanner or a lab that offers film scanning services, you can digitize film using a DSLR camera (there are plenty of tutorials on how to do this on the Web, such as `this one <https://petapixel.com/2013/03/25/digitizing-your-film-using-your-dslr/>`_).
+
+When color film negatives are digitized, the colors will appear inverted compared to reality. This tool allows you to reverse the colors into their respective `complementary colors <https://en.wikipedia.org/wiki/Complementary_colors>`_. Complementary colors appear opposite each other on a color wheel: cyan as the opposite color of red, yellow as opposite color for blue, and magenta as the opposite color of green.
+
+The **Invert** tool flips these colors, and inverts luminosity so dark areas become bright and bright areas become dark. This is basically the same process that occurs when light shines through a color negative to produce a positive print.
+
+The simplest way to process a digitized negative in digiKam is to open the RAW file containing the film negative in the editor. Crop the original file and if necessary apply a lens correction. Choose :menuselection:`Color --> Invert` to transform the negative into a positive image. While the converted image is now positive, it most likely requires some additional tweaking. First of all, the converted image is likely to have a strong blue tint. The easiest way to remove it is to use digiKam’s **Auto-Correction** tool. Choose :menuselection:`Color --> Auto-Correction` and select one of the presets. In many cases, the **Auto Levels** or **Equalize** presets do a decent job of correcting the colors. If the colors still look slightly off, you can adjust them further using the :menuselection:`Colors --> Color Balance` tool.
 
 .. _color_negative:
 
-Simulate Negative Film
-----------------------
-
-While digiKam is first and foremost an application for processing and organizing digital photos, it also features tools for working with `film negatives <https://en.wikipedia.org/wiki/Negative_(photography)>`_.
-
-Before you can process negatives in digiKam, you need to digitize them. If you don’t have access to a film scanner or a lab that offers film scanning services, you can digitize film using a DSLR camera (there are plenty of tutorials on how to do that on the Web, as `this one <https://petapixel.com/2013/03/25/digitizing-your-film-using-your-dslr/>`_). The rest of the process assumes that you are using the latter way to digitize film negatives.
-
-Open a RAW file containing a film negative in the editor. Crop the original file and apply lens correction if necessary. Choose then :menuselection:`Color --> Invert` to transform the negative into a positive image. In case you work with the color negative, the converted image most likely requires some additional tweaking. First of all, the converted image is likely to have a strong blue tint. The easiest way to remove it is to use digiKam’s **Auto-Correction** tool. Choose :menuselection:`Color --> Auto-Correction` and select one of the presets. In many cases, the **Auto Levels** or **Equalize** presets do a decent job of correcting the colors. If the colors still look slightly off, you can adjust them further using the :menuselection:`Colors --> Color Balance` tool.
+Color Negative
+--------------
 
 .. figure:: images/editor_negative.webp
     :alt:
     :align: center
 
-    The Image Editor Tool to Simulate Negative Film
+    The Color Negative Tool
 
-The **Invert** feature in combination with an **Auto-Correction** preset provides a quick-and-dirty way of converting negatives, but digiKam has another tool designed specifically for processing color negatives. To access it, choose the :menuselection:`Color --> Color Negative` menu entry. The Color **Negative** Film interface contains several handy features that can help you to convert the negative and tweak the resulting image. While the **Invert** tool uses a generic profile for converting negatives, the Color Negative Film interface offers profiles for many popular film types. So the first step is to select the appropriate profile. For better results, try to enable the **Color Balance** option, too. If the used film is not in the list, you can use the **Neutral** profile as a fall back.
+The digiKam **Color Negative** tool is an even more powerful tool specifically for processing color negatives. The Color Negative interface contains several handy features that can help you to convert the negative to a positive and tweak the resulting image. While the **Invert** tool uses a generic profile for converting negatives, the Color Negative interface offers profiles for many popular film types. So the first step is to select the appropriate profile. For better results, try also enabling the **Color Balance** option. If the film is not in the list, you can default to the **Neutral** profile.
 
-Although choosing the matching film profile may yield a better result, the converted image may still require some work. In most cases, you may need to adjust the white point to remove the remaining blue tint. You can do this either manually or automatically using the appropriate tools. Usually, the automatic white point adjustment does the job, but the resulting image needs to be brightened up by adjusting the **Exposure** and the **Gamma** sliders.
+Although choosing the matching film profile may yield a better result, the converted image may still require some work. In most cases, you may need to adjust the white point to remove the remaining blue tint. You can do this either manually or automatically using the appropriate tools. Usually, the automatic white point adjustment does the job, but the resulting image may also need to be brightened up by adjusting the **Exposure** and the **Gamma** sliders.
 
 .. _color_balance:
 
-Colors Balance
---------------
+Color Balance
+-------------
 
-Digital cameras often have problems with lighting conditions and it is not unusual to want to correct the color contrast and brightness of a photograph. You can experiment with altering the levels of different aspects of your photographs using the tools under the **Color** menu. You can see any adjustments you make reflected in the preview. When you are happy with the results, press **Ok** and they will take effect.
+The digiKam **Color Balance** tool allows you to adjust the individual color channels in an image. This tool can be used to correct for a color tint in an image. You can see any adjustments you make reflected in the preview image.
 
 .. figure:: images/editor_colors_balance.webp
     :alt:
     :align: center
 
-    The Image Editor Colors Balance Tool
+    The Image Editor Color Balance Tool
 
-If your image is washed out (which can easily happen when you take images in bright light) try the **Hue/Saturation/Lightness** tool, which gives you four sliders to manipulate, for **Hue**, **Saturation**, **Vibrance**, and **Lightness**. Raising the saturation will probably make the image look better. In some cases, it is useful to adjust the lightness at the same time. *Lightness* here is similar to *Brightness* in the **Brightness/Contrast/Gamma** tool, except that they are formed from different combinations of the red, green, and blue channels.
+When you are happy with the results, press OK and the changes will take effect.
 
-When you take images in low light conditions, you could get the opposite problem: too much saturation. In this case the **Hue/Saturation/Lightness** tool is again a good one to use, only by reducing the saturation instead of increasing it. You can see any adjustments you make reflected in the preview image. When you are happy with the results, press Ok and they will take effect.
 
 .. _color_curves:
 
-Adjust Curves
+Curves Adjust
 -------------
 
-The digiKam Adjust Curves is a tool to non-linearly adjust luminosity graduation and color channels.
+The digiKam **Curves Adjust** tool is used to apply non-linearly adjustments to luminosity and color channels.
 
-The Adjust Curves tool is the most sophisticated tool available to adjust the images' tonality. Start it from the :menuselection:`Color --> Curves Adjust...` Image Editor menu. It allows you to click and drag control points on a curve to create a free function mapping input brightness levels to output brightness levels. The Adjust Curves tool can replicate any effect you can achieve with **Brightness/Contrast/Gamma** or the **Adjust Levels** tool, though it is more powerful than either one of them. But this tool can do more for you, it helps you to improve the tonal quality of your photographs to very finely stepped gray scales. And do not forget that the better the photographs are (good exposure, lossless format, 24 or 32 bit deep) the more you can improve them. Navigate to the "Achieving ultimate tonal quality" section of this instructive page: `Tonal quality and dynamic range in digital cameras by Norman Koren <http://www.normankoren.com/digital_tonality.html>`_. Use Adjust Curves tool to do just the same.
+The Curves Adjust tool is the most sophisticated tool available to adjust an image's tonality. Start by selecting :menuselection:`Color --> Curves Adjust...` from the Image Editor menu. The tool allows you to click and drag control points on a curve to create a smooth function that maps input brightness levels to output brightness levels. The Adjust Curves tool can replicate any effect you can achieve with **Brightness/Contrast/Gamma** or the **Adjust Levels** tool, though it is more powerful than either one of them. But this tool can do more for you -- it can also help you to improve the tonal quality of your photographs to reproduce very finely stepped gray scales. And do not forget that the better the photographs are (good exposure, lossless format, 24 or 32-bit depth) the more you can improve them.
 
-This tool provides visual curves to modify the intensity values of the active layer displayed as a histogram non-linearily. In **Curve smooth mode**, you change the curves shape by adding new points to the curve or by moving end point positions. Another way, is to draw all the curve manually in **Curve free mode**. In both cases the effect is immediately displayed in the image preview area to the left, where the preview can be configured by clicking on the top left icons.
+To learn more about the power of the Curves Adjust tool to improve your photographs, we recommend you read the article `Tonal quality and dynamic range in digital cameras <http://www.normankoren.com/digital_tonality.html>`_ by Norman Koren. The section entitled "Achieving ultimate tonal quality" is particularly informative.
+
+The Curves Adjust tool remaps the intensity values of the specified channel based on an adjustable nonlinear curve. The tool displays two histograms: the histogram of the original image is shown on the bottom, and the histogram of the output image, after remapping, is shown on the top. The adjustable nonlinear curve used to remap the data is overplotted on the lower histogram as a blue curve with red control points.
+
+In **Curve smooth mode**, you change the curve's shape by adding or deleting control points from the curve, or by moving the control points, including the end points. Alternatively, you can draw the curve manually in **Curve free mode**. In either case, the effect of changing the curve is immediately displayed in the image preview area to the left and in the upper histogram displayed in the tool. As for all tools, the preview area can be configured by clicking on the preview comparison style icons in the status bar.
 
 .. figure:: images/editor_curves_adjust.webp
     :alt:
     :align: center
 
-    The Image Editor Adjust Curves Tool
+    The Image Editor Curves Adjust Tool
 
-To the left, half of the original and the target preview image is shown. The target preview is updated dynamically according to the widget settings. On the right side the following options are available:
+There are series of controls contained within the tool.
 
-    - Modify **Channel**: with this combo box you can select the specific channel to be modified by the tool:
+- The **Channel** combo box selects the specific channel to be modified by the tool:
 
-        - **Luminosity**: changes the intensity of all pixels.
+    - **Luminosity**: changes the intensity of all pixels.
 
-        - **Red**: changes the Red saturation of all pixels.
+    - **Red**: changes the Red saturation of all pixels.
 
-        - **Green**: changes the Green saturation of all pixels .
+    - **Green**: changes the Green saturation of all pixels.
 
-        - **Blue**: changes the Blue saturation of all pixels.
+    - **Blue**: changes the Blue saturation of all pixels.
 
-        - **Alpha**: changes the transparency of all pixels.
+    - **Alpha**: changes the transparency of all pixels.
 
-    - Next to this box are two icons to select **Linear** or **Logarithmic** **Histogram** display. For images taken with a digital camera the linear mode is usually the most useful. However, for images containing substantial areas of constant color, a linear histogram will often be dominated by a single bar. In this case a logarithmic histogram will be more appropriate.
+  Separate curves can be defined for each of these 5 channels.
 
-    - **Main Curves Editing Area**: the horizontal bar (x-axis) represents input values (they are value levels from 0 to 255). The vertical bar (y-axis) is only a scale for output colors of the selected channel. The control curve is drawn on a grid and crosses the histogram diagonally. The pointer x/y position is permanently displayed above the grid. If you click on the curve, a control point is created. You can move it to bend the curve. If you click outside the curve, a control point is also created, and the curve includes it automatically. So each point of the curve represents an 'x' translated into a 'y' output level.
+- Next to this box are two icons to select **Linear** or **Logarithmic** **Histogram** displays. The linear mode is usually the most useful for images taken with a digital camera. However, a logarithmic histogram can be more useful for images containing substantial areas of constant color.
 
-    - Curve **Type** for channel: below the editing area are several icons that determine whether the curve can be edited using **Curve smooth mode** or **Curve free mode**. Smooth mode constrains the curve type to a smooth line with tension and provides a realistic rendering. Free mode lets you draw your curve free-hand with the mouse. With curve segments scattered all over the grid, result will be surprising but hardly repeatable. A **Reset to defaults** button is also available. If, for example, you move a curve segment to the right, i.e. to highlights, you can see that these highlights are corresponding to darker output tones and that image pixels corresponding to this curve segment will go darker. With color channels, moving right will decrease saturation up to reaching complementary color. To delete all control points (apart from both end points), click on the **Reset** button. To delete only one point, move it onto another point. Just ply with the curves and watch the results. You even can solarize the image on part of its tonal range. This happens when the curve is inverted in some part. The original photo preview has a red marker on it. If you place this marker to a zone you want to modify, a corresponding line will be drawn on the curve grid indicating the original value. Create a point on that line and move it up or down to adjust it to your pleasing.
+- The **Main Curves Editing Area** contains the transfer curve overplotted on the histogram of the original image. The horizontal bar (x-axis) represents input values, typically ranging from 0 to 255. The vertical bar (y-axis) is a scale for the output values of the selected channel, with the same 0 to 255 range. The control curve is overplotted, crossing the histogram diagonally. Each point of the curve represents an 'x' input value translated into a 'y' output level.
 
-    - **Save As** and **Load**: these buttons are used to do just that. Any curves that you have set can be saved to the filesystem and loaded later. The used file format is The Gimp Curves format.
+  If you click on the curve, a control point is created. You can move a control point to bend the curve. If you click outside the curve, a control point is also created, and the curve includes it automatically. Right clicking on a control point, deletes that point. The pointer's x/y position is permanently displayed in the lower right corner of the histogram.
 
-    - **Reset**: this button resets all curve values for all channels.
+- Curve **Type** for channel: The left two icons below the editing area determine whether the curve can be edited using **Curve free mode** or **Curve smooth mode**. Smooth mode constrains the curve type to a smooth line with tension and provides a realistic rendering. Free mode lets you draw your curve free-hand with the mouse. You can use this mode to scatter curve segments all over the grid, which can produce surprisingly interesting results.
 
-The curves tool has several features that facilitate the positioning of points on the control curves. Clicking the mouse button in the original image preview area produces a vertical doted bar in the graph area of the curves tool. The bar position corresponds to the pixel value the mouse cursor is over in the image window. Clicking and dragging the mouse button interactively updates the position of the vertical bar. In this way, it is possible to see where different pixel values in the image are located on the control curve and helps to discover the locations of shadow, midtone, and highlight pixels.
+- The three **Tone Color Picker** buttons will automatically create control points on the curve in all channels for shadow, middle, and highlight tones. Enable the color picker button that you want to use, and click on the original image preview area to produce control points on each of the Red, Green, Blue, and Luminosity control curves.
 
-Using this way and the three **Tone Color Picker** buttons will automatically create control points on the curve in all channels for shadow, middle, and highlight tones. Enable the color picker button that you want to use, and click on the original image preview area to produce control points on each of the Red, Green, Blue, and Luminosity control curves.
+- **Reset**: this button allows you to either reset all curve values for all channels, or just reset the curve for just the currently selected channel. Resetting a curve, deletes all control points from the curve, except for both end points.
+
+- **Save As** and **Load**: these buttons are used to do just that. Any curves that you have set can be saved to a file and loaded later. Curves are saved in the Gimp Curves file format.
+
+- **Defaults**: resets the entire tool to all default values.
+
+The curves tool has several additional features that facilitate the positioning of points on the control curves.
+
+- The original photo preview has a red marker on it. If you place this marker in a zone you want to modify, a corresponding line will be drawn on the curve grid indicating the original value. Create a point on that line and move it up or down to adjust it to your pleasing.
+
+- Clicking the mouse button in the original image preview area produces a vertical dotted bar in the graph area of the curves tool. The bar position corresponds to the pixel value the mouse cursor is over in the image window. Clicking and dragging the mouse button interactively updates the position of the vertical bar. In this way, it is possible to see where different pixel values in the image are located on the control curve and helps to discover the locations of shadow, midtone, and highlight pixels.
+
+To understand the power of the Curves Adjust tool, just play with the curves and watch the results. If you move a curve segment to the right, i.e. towards highlights in the image, you can see that these highlights are correspondingly shifted to darker output tones and that image pixels corresponding to this curve segment will get darker. With color channels, moving right will decrease saturation up to the point of reaching a complementary color. You can even solarize the image over part of its tonal range by drawing a curve that is inverted in some part.
+
 
 .. _color_levels:
 
-Adjust Levels
+Levels Adjust
 -------------
 
-The digiKam Adjust Levels is a tool to manually adjust the histogram channels of an image.
+The digiKam **Levels Adjust** tool is used to manually adjust the histogram channels of an image. The Levels Adjust tool is situated in complexity and power between the more sophisticated Curves Adjust tool and the simpler **Brightness/Contrast/Gamma** tool. Although the dialog for this tool looks very complicated, only the three sliders in the **Input Levels** area just below the histogram are required for basic usage.
 
-Situated between the more sophisticated Adjust Curves tool and the simpler **Brightness/Contrast/Gamma** Image Editor tool is this Adjust Levels tool for improving exposure. Although the dialog for this tool looks very complicated, for the basic usage we have in mind here, the only part you need to deal with is the **Input Levels** area, concretely the three sliders that appear below the histogram.
+The tool works by sequentially applying three remappings of the input data: a two-parameter linear remapping of the input data, a single parameter gamma correction, and a two-parameter linear remapping of the output data. These five parameters define a curve that is used to remap the input values for the selected channel into output values. The figure below illustrates how the two input parameters (input min and max), one gamma parameter, and two output parameters (output min and max) effect the remapping curve.
 
-This widget contains a visual graph of the intensity values of the active layer or selection (histogram). Below the graph are five sliders that can be clicked into and dragged to constrain and change the intensity level for the image. The left sliders position represents the dark areas and similarly, the right position represents the light areas.
+.. figure:: images/editor_levels_adjust_curve.webp
+    :alt:
+    :align: center
+
+    Different Remapping Curves Achievable with the Levels Adjust Tool
+
+The left panel illustrates the impact of gamma on the remapping curve, when the min and max values for input and output are set to 0 and 255. The panel illustrates that the gamma parameter mainly impacts the mid tones in the image. The middle panel shows the impact of adjusting the input min and max values. The input values are often adjusted to center the histograms and increase contrast. And the right panel shows the impact of adjusting the output min and max values. The output parameters are used less frequently, but a smaller range of output values can be set to create a bleached image to use as a background for some other subject placed in the foreground.
+
+The tool displays two histograms: the histogram of the original image is shown on the bottom, and the histogram of the output image, after level adjustment, is shown on the top. There are five sliders below the histograms that can be clicked on and dragged to adjust the input, gamma, and output parameters. The target preview and histogram are updated dynamically based on the slider positions.
 
 .. figure:: images/editor_levels_adjust.webp
     :alt:
     :align: center
 
-    The Image Editor Adjust Level Tool
+    The Image Editor Levels Adjust Tool
 
-Actually the easiest way to learn how to use it is to experiment by moving the three sliders around, and watching how the image is affected.
+There are series of controls contained within the tool.
 
-On the right, both an original and a target preview image is available. The target preview is updated dynamically according to the slider positions. On the left, the following options are available:
+- The **Channel** combo box selects the specific channel to be modified by the tool:
 
-    - Modify levels for **Channel**: this combo box allows the selection of the specific channel that will be modified by the tool:
+    - **Luminosity**: changes the intensity of all pixels.
 
-        - **Luminosity**: this option makes intensity changes against all pixels in the image.
+    - **Red**: changes the Red saturation of all pixels.
 
-        - **Red**: this option makes Red saturation changes against all pixels in the image.
+    - **Green**: changes the Green saturation of all pixels.
 
-        - **Green**: this option makes Green saturation changes against all pixels in the image.
+    - **Blue**: changes the Blue saturation of all pixels.
 
-        - **Blue**: this option makes Blue saturation changes against all pixels in the image.
+    - **Alpha**: changes the transparency of all pixels.
 
-        - **Alpha**: this option makes transparency changes against all pixels in the image.
+    - **Colors**: changes the saturation of all three color channels.
 
-    - Set **Scale** for channel: this combo controls whether the histogram will be displayed using a linear or logarithmic amplitude. For images taken with a digital camera, the linear mode is usually the most useful. However, for images that contain substantial areas of constant color a linear histogram will often be dominated by a single bar. In this case a logarithmic histogram will often be more useful.
+  Separate curves can be defined for each of these 5 channels.
 
-    - **Input Levels**: the input levels allow manual adjustments to be selected for each of the ranges. The main area is a graphic representation of image dark, mid and light tones content. They are on abscissa from level 0 (black) to level 255 (white). Pixel number for a level is on ordinate axis. The curve surface represents all the pixels of the image for the selected channel (histogram). A well balanced image is an image with levels (tones) distributed all over the whole range. An image with a predominant blue color, for example, will produce a histogram shifted to the left in Green and Red channels, manifested by green and red color lacking on highlights. The level ranges can be modified in three ways:
+- Next to this box are two icons to select **Linear** or **Logarithmic** **Histogram** displays. The linear mode is usually the most useful for images taken with a digital camera. However, a logarithmic histogram can be more useful for images containing substantial areas of constant color.
 
-        - Three sliders: the first on the top for **Dark Tones*, the second one for **Light Tones*, and the last one on the bottom for **Midtones** (often called **Gamma** value).
+- **Input Levels**: the top slider adjusts the two min/max parameters that specify the input remapping. Any input value equal to or below the min value set on the range slider are mapped to 0, any input value between the min and max values are linearly mapped to a range between 0 and 255, and any input value equal to or greater than the max value set on the range slider are mapped to 255. Thus the input slider controls are used to adjust the span of input values that are used to cover the full range from 0 to max intensity.
 
-        - Three input boxes to enter values directly.
+  The min parameter can be adjusted by dragging the solid black triangle left or right along the color bar, dragging the mouse left or right over the left numeric text box, typing a number into the left numeric text box, or by clicking on the left up or down arrow buttons. The max parameter can be adjusted in the same manner using the white triangle and the right controls.
 
-        - Three **Color Picker** buttons using the original photo preview to automatically adjust inputs levels settings for shadow, midtone and highlights. There is also a fully automated adjustment button available next to the reset button.
+.. figure:: images/editor_level_controls.webp
+    :alt:
+    :align: center
 
-    - **Output Levels**: the output levels allow manual selection of a narrowed-down output level range. There are also two sliders located here that can be used to interactively change the output levels like Input Levels. This output level compression may, for example, be used to create a bleached image as a background for some other subject to put into the foreground.
+    Slider Controls for the Levels Adjust Tool
 
-    - **Auto**: this button performs an automatic setting of the levels based on the pixel intensities of the image.
+- **Gamma Slider**: the middle slider adjusts a single parameter that controls the nonlinear gamma correction.
 
-    - **Save As** and **Load**: these buttons are used to do just that. Any Levels that you have set can be saved to the filesystem and loaded later. The used file format is compatible with **The Gimp** Levels format.
+- **Output Levels**: the bottom slider adjusts the two min/max parameters that specify the output remapping. Any output value equal to or below the min value set on the range slider are mapped to 0, any output value between the min and max values are linearly mapped to a range between 0 and 255, and any output value equal to or greater than the max value set on the range slider are mapped to 255. Thus the output slider controls are used to adjust the span of output values. Unless you want to deliberately produce an image with limited dynamic range, the output levels are normally left at 0 and 255.
 
-    - **Reset All**: this button reset all Input Levels and Output Levels values for all channels.
+  The Output Levels control operates just like the Input Levels control.
 
-The Adjust Levels tool has several features to facilitate the positioning input levels sliders. Clicking the mouse button in the original image preview area produces a vertical doted bar in the graph area of the histogram. The bar position corresponds to the pixel value under the mouse cursor in the image window. Clicking and dragging the mouse button interactively updates the position of the vertical bar. In this way it is possible to see where different pixel values in the image are located on the input levels sliders and helps to discover the locations of shadow, midtone, and highlight pixels.
+- **Color Picker**: these three buttons will automatically adjust input min, gamma, and input max settings for shadow, midtone and highlights. Enable the color picker button that you want to use, and click on the original image preview area to set the parameters.
 
-Using in this mode and the three **Color Picker** buttons will automatically adjust input levels settings in all channels for shadow, middle, and highlight tones. Enable the color picker button that you want use, and click on the original image preview area to set input levels on each of the Red, Green, Blue, and Luminosity histogram channels.
+- **Adjust All Levels Automatically**: this button automatically sets the levels based on an analysis of the pixel intensities in the image.
+
+- **Reset**: this button resets all Input Levels and Output Levels values for the selected channel.
+
+- **Save As** and **Load**: these buttons are used to do just that. Any Levels that you have set can be saved to the filesystem and loaded later. The used file format is compatible with **The Gimp** Levels format.
+
+- **Defaults**: resets all Input Levels and Output Levels values for all channels.
+
+The Adjust Levels tool has several features to facilitate the positioning input levels sliders. Clicking the mouse button in the original image preview area produces a vertical dotted bar in the graph area of the histogram. The bar position corresponds to the pixel value under the mouse cursor in the image window. Clicking and dragging the mouse button interactively updates the position of the vertical bar. In this way it is possible to see where different pixel values in the image are located on the input levels sliders, helping you to discover the locations of shadow, midtone, and highlight pixels.
 
 **Over Exposure Indicator** option checks all color channel to see if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of channel level settings. This feature is available as an indicator in the target preview area and has no effect on final rendering.
 
+
 .. _color_bcg:
 
-Correcting Exposure
--------------------
+Brightness / Contrast / Gamma
+-----------------------------
 
-The simplest tool to use is the **Brightness/Contrast/Gamma** tool. It is also the least powerful, but in many cases it does everything you need. This tool is often useful for images that are overexposed or underexposed; it is not useful for correcting color casts. The tool gives you three sliders to adjust, for **Brightness**, **Contrast** and **Gamma**. You can see any adjustments you make reflected in the preview image. When you are happy with the results, press **Ok** and they will take effect.
+The digiKam **Brightness/Contrast/Gamma** tool is used for the correcting exposure in an image. It is the simplest tool for correcting exposure, but also the least powerful. Still, in many cases it does everything you need. This tool is often useful for images that are overexposed or underexposed; it is not useful for correcting color casts. The tool gives you three sliders to adjust **Brightness**, **Contrast** and **Gamma**. You can see any adjustments you make reflected in the preview image. When you are happy with the results, press **Ok** and they will take effect.
 
 .. figure:: images/editor_bcg_adjust.webp
     :alt:
@@ -297,28 +332,29 @@ The simplest tool to use is the **Brightness/Contrast/Gamma** tool. It is also t
 
 .. note::
 
-    Another important tool called **Levels Adjust** provides also an integrated way of seeing the results of adjusting multiple levels and also enables you to save level settings for application to multiple photographs. This can be useful if your camera or scanner often makes the same mistakes and you want to apply the same corrections. See the dedicated :ref:`Adjust Levels manual <color_levels>` for more information. See also a way of correcting exposure problems using the **Adjust Curves** tool.
+    Another important tool called **Levels Adjust** supports exposure correction and also enables you to save and load the level settings so they cab be applied to multiple photographs. This can be useful if your camera or scanner often makes the same mistakes and so you regularly want to apply the same corrections. See the dedicated :ref:`Levels Adjust <color_levels>` section of the manual for more information. The **Curves Adjust** tool, described in the :ref:`Curves Adjust <color_curves>` section of the manual, provides an even more powerful way of correcting exposures.
+
 
 .. _color_hsl:
 
-Correcting Colors
------------------
+Hue / Saturation / Lightness
+----------------------------
 
-This tool is used to adjust hue, saturation, and lightness levels on a range of color weights for the current image. You can access the tool by the menu entry :menuselection:`Color --> Hue/Saturation/Lightness`
+The digiKam **Hue / Saturation / Lightness** tool is used to adjust hue, saturation, vibrance, and lightness levels in the current image. (The tool should have been called *Hue / Saturation / Vibrance / Lightness*, but that seemed way too long!)
 
-The tool settings are listed below:
+The tool settings are simple:
 
-    - A Hue / Saturation color map to select visually the respective primary color to adjust. Just move and click with the mouse to set **Hue** and **Saturation** values in sliders below the map.
+    - A Hue / Saturation color map consisting of a shaded gray rectangle above a thin color bar. Click and drag on the shaded gray rectangle to set the **Hue** and **Saturation** values. These values are also reflected in the sliders below the map.
 
-    - **Hue**: The slider allow you to select a hue in the color circle (-180, 180). 
+    - **Hue**: This slider selects a hue in the color circle (-180, 180) to adjust the colors in the image.
 
-    - **Saturation**: The slider allow you to select a saturation (-100, 100). 
+    - **Saturation**: This slider adjusts the saturation (-100, 100) of the colors in the image. If your image is washed out (which can easily happen when you take images in bright light), increasing the saturation will probably make the image look better. In some cases, it is useful to adjust the lightness at the same time. When you take images in low light conditions, try reducing the saturation instead of increasing it.
 
-    - **Vibrance**: The slider allow you to adjust the vibrance of the image. Vibrance performs selective saturation on less saturated colors and avoiding skin tones.
+    - **Vibrance**: This slider adjusts the vibrance of the image. Vibrance selectively adjusts saturation, acting predominantly on less saturated colors to avoid clipping. This control is often used with skin tones.
 
-    - **Lightness**: The slider allows you to select a luminosity value (-100, 100). Lightness changes here concern a color range, while they concern a color tone with **Curves Adjust** and **Levels Adjust** tools, which work on color channels. If you change the Red lightness with this tool, all red pixels will be changed. With **Curves Adjust** and **Levels Adjust** tools, only dark, bright, or medium pixels luminosity will be changed.
+    - **Lightness**: This slider selects a luminosity value (-100, 100). Lightness changes in this tool only affect the selected color channel, unlike luminosity in the **Curves Adjust** and **Levels Adjust** tools which works on all color channels. If you change the Red lightness with this tool, only the red pixels will be changed.
 
- You can see any adjustments you make reflected in the preview image. When you are happy with the results, press **Ok** and they will take effect.
+ You can see any adjustments you make reflected in the preview image. When you are happy with the results, press **OK** to apply the changes.
 
 .. figure:: images/editor_hsl_adjust.webp
     :alt:
@@ -326,14 +362,13 @@ The tool settings are listed below:
 
     The Image Editor Tool Correcting Colors
 
+
 .. _color_mixer:
 
 Channel Mixer
 -------------
 
-The digiKam image Channel Mixer is a tool to remix the color channels to improve or modify the photograph color shades.
-
-The Channel Mixer is an another sophisticated tool to refine the images' tonality. Start it from the :menuselection:`Color --> Channel Mixer` Image Editor menu.
+The digiKam **Channel Mixer** tool allows you to remix the color channels to improve or modify the color tonality within a photograph.
 
 .. figure:: images/editor_channel_mixer.webp
     :alt:
@@ -341,30 +376,37 @@ The Channel Mixer is an another sophisticated tool to refine the images' tonalit
 
     The Image Editor Channel Mixer Tool
 
-With the channel combo box you select and display the histogram per color. It gives a first hint of how to correct the channels by their relative distribution and amplitude. The left half of the dialog window always shows a preview of what you are doing. The original for comparison can be seen when selecting its own window tab.
+The **Channel** combo box selects which channel or channels to display in the histogram. The histogram gives a first hint of how to correct the channels based on their relative distribution and amplitude.
 
-The target photo preview has a red marker available. If you place this marker somewhere in the image, a corresponding vertical bar will be drawn in the histogram indicating the color level value in the current channel selected.
+the **Output Channel** combo box selects the primary color channel to be modified by the tool. You can modify more than one channel by selecting and modifying each output channel in turn.
 
-Now the controls are to the lower right: **Red**, **Green** and **Blue** slider controls enable you to mix the channels. If you check **Preserve Luminosity** the image will retain its overall luminosity despite you changing its color components. This feature is particularly useful when you also ticked the **Monochrome** box. Because the channel mixer is the tool to make great Black and White conversions of your photographs. Try to reduce the green channel for Black and White portraits.
+The **Red**, **Green** and **Blue** slider controls enable you to mix the channels. If you check **Preserve Luminosity** the image will retain its overall luminosity despite any changes you make to its color components.
+
+The **Monochrome** option converts the output into a Black & White image. This is a great tool for converting your photographs to Black & White. The Preserve Luminosity option is particularly useful when used with the **Monochrome** option. Try to reduce the green channel for Black & White portraits.
+
+The effects of color mixing are immediately displayed in the image preview area to the left and in the histogram displayed in the tool. As for all tools, the preview area can be configured by clicking on the preview comparison style icons in the status bar.
+
+The target photo preview has a red marker available. If you place this marker somewhere in the image, a corresponding vertical bar will be drawn in the histogram indicating the color level value in the currently selected channel.
 
 .. note::
 
     Sometimes, especially when doing **Monochrome** mixing, reducing one color channel may increase visible noise, which actually originates in the chroma noise. Chroma noise means that the little noise specs do not appear at the same location in all the color channels, but the noise patterns looks different in every channel. If that is the case you can improve the monochrome conversion by reducing the chroma noise first.
 
-**Save As** and **Load** buttons are used to do just that. Any mixer settings that you have set can be saved to the filesystem and loaded later. The used file format is The Gimp channel mixer format.
+**Save As** and **Load** buttons are used to do just that. Any mixer settings that you have set can be saved to a file and reloaded later. The mixer settings are stored in the Gimp channel mixer file format.
 
-**Over Exposure Indicator** option adds up the colors if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of channel gain settings. This rule is applying to target preview area and haven't effect to final rendering.
+**Over Exposure Indicator** option adds up the colors if more than one channel in a pixel is over-exposed, allowing you to see the combined color resulting from channel gain settings. The over exposure indicator only appears in the target preview area, it does not affect the final rendering.
 
 **Reset All** button resets all channel mixer settings to default values.
+
 
 .. _color_wb:
 
 White Balance
 -------------
 
-The digiKam White Balance is a semi-automatic tool to adjust the white-balance of a photograph.
+The digiKam **White Balance** tool is used to adjust the white-balance of a photograph.
 
-White Balance setting is a common hurdle for digital still cameras. In the 'good old time' of film rolls, the white balance was done by the photolab. Nowadays the poor little camera has to guess what is white and what is black. Most of the time, what the camera chooses as the white point, is not of the correct shade or hue. Using this tool it is easy to correct this problem. It provides a variety of parameters that can be trimmed to obtain a better result.
+Getting the correct white balance setting is a common challenge for digital still cameras. In the 'good old days' of film, the white balance compensation was done by the photolab. Nowadays the digital camera has to guess what is white and what is black. Most of the time, what the camera chooses as the white point, is not of the correct shade or hue. This tool makes it is easy to correct this problem. It provides a variety of parameters that can be adjusted to more accurately capture the right colors in your photographs.
 
 .. figure:: images/editor_white_balance.webp
     :alt:
@@ -374,23 +416,23 @@ White Balance setting is a common hurdle for digital still cameras. In the 'good
 
 .. note::
 
-    Even if the White Balance correction is not limited to 8 bit per channel, if you depart too much from the original, over exposure zones may appear. If you can adjust the White Balance in RAW conversion mode, the margin for correction will be greater as it processes correction while demosaicing.
+    White balance corrections applied to 8-bit images can often produce over exposed regions. This even occurs even if the corrections depart too much from an original 16-bit image. So white balance corrections are best applied during the conversion of RAW data, when the margin for correction will be greater.
 
-The preview window can be resized. To the left, both an original and a target preview tab is shown. The target preview is updated dynamically according to the tool's settings. If you want to see the original White Balance, just click on that tab.
-
-The target photo preview has a red marker available. The luminosity value of the pixel under the marker is shown as a vertical line in the histogram .
+The effects of white balance corrections are immediately displayed in the image preview area to the left. As for all tools, the preview area can be configured by clicking on the preview comparison style icons in the status bar.
 
 To the top right, the widget displays a histogram that is dynamically updated when changing the parameters. This histogram is very instructive as it shows that even in well exposed photos, most of the pixels have very small luminosity. With a button you can select to show either one of the 3 colors (or the sum of it which is called luminosity).
 
-With **Exposure** you can digitally change the original photo exposure. Increasing the exposure is has the risk of making the pixel noise more visible and to blow out the highlights. Check the **Over exposure indicator** at the lower right to see if you run into saturation problems. The **Black Point** adjustment can be used to cut the histogram from the left. If your photograph looks foggy (histogram has empty space on the left, black side), you probably need to use this option. The **Exposure** and **Black Point** adjustments can be automatically estimated by pressing the **Auto Exposure Adjustments** button. This sets the black point quite accurately.
+We describe the rest of the controls, from the bottom up.
 
-The contrast of your output depends on **Shadows**, **Saturation**, and **Gamma** parameters. The **Shadows** adjustment lets you enhance or diminish the shadow details in your photo.
+With **Exposure Compensation** you can digitally change the exposure of the photo. Increasing the exposure may make the pixel noise more visible and saturate the highlights. Check the **Over exposure indicator** in the lower right status bar to check for saturation. The **Black Point** adjustment can be used to adjust the left said of the histogram. If your photograph looks foggy and the histogram has empty space on the left, you probably need to use this option. The **Exposure** and **Black Point** adjustments can be automatically estimated by pressing the **Auto Exposure Adjustments** button. This quite accurately sets the black point.
 
-Increasing the contrast of your photograph can have the side effect of reducing the apparent **Saturation** of the photo. Use a value larger than 1 to increase the saturation and a value of less than 1 to desaturate the photo. A value of 0 will give you a black and white photo. Don't be shy to bump up the saturation of your photos a little. The general rule is that for higher Contrast (lower **Gamma**) you need to apply more **Saturation**.
+The contrast of your output depends on the **Shadows**, **Saturation**, and **Gamma** parameters. The **Shadows** adjustment lets you enhance or diminish the shadow details in your photo.
 
-The next set of options is the mainstay of White Balance settings, which controls the ratio between the three color channels. Here you can set the color **Temperature**, making your image warmer or colder. Higher temperature will result in a warmer tint. Setting the ratio between the three color channels requires two adjustments. Since the temperature adjustment mostly controls the ratio between the red and the blue channels, it is natural that the second adjustment will control the intensity of the **Green** channel.
+Increasing the contrast of your photograph can have the side effect of reducing the apparent **Saturation** of the photo. Use a value larger than 1 to increase the saturation and a value of less than 1 to desaturate the photo. A value of 0 will give you a black and white photo. Don't be shy to bump up the saturation of your photos a little. The general rule is that for higher contrast (lower **Gamma**) you need to apply more **Saturation**.
 
-Instead of fiddling around with the above controls, you can simply use the **Temperature Tone Color Picker** button. Press on this button and click anywhere on the original preview image to get the output color of that area to calculate the white color balance temperature settings. This way, **Temperature** and **Green** values are automatically computed.
+The next set of options is the mainstay of White Balance settings that control the relative proportion of the three color channels. Here you can set the **Color Temperature**, making your image warmer (more red) or colder (more blue). Higher temperatures will result in a warmer tint. Setting the ratio between the three color channels requires two adjustments. Since the temperature adjustment mostly controls the ratio between the red and the blue channels, it is natural that the second adjustment will control the intensity of the **Green** channel.
+
+Instead of fiddling around with the above controls, you can simply use the **Temperature Tone Color Picker** button. Press on this button and click anywhere on the original preview image that should be white or gray to automatically set the **Temperature** and **Green** values.
 
 In addition you can set the White Balance using the preset list. These are the white color balance temperature presets available:
 
@@ -412,8 +454,12 @@ Color Temperature   Description                                                 
 
 Low Color Temperature implies more yellow-red light while high color temperature implies more blue light. Daylight has a rather low color temperature near dawn, and a higher one during the day. Therefore it can be useful to install an electrical lighting system that can supply cooler light to supplement daylight when needed, and fill in with warmer light at night. This also correlates with human feelings towards the warm colors of light coming from candles or an open fireplace at night. Standard unit for color temperature is Kelvin (K).
 
-**Over Exposure Indicator** option adds up the colors if more than one channel in a pixel is over-exposed, and you will see the combined color resulting of White Color Balance controls settings. This rule is applied to target preview area as an indication only and has no effect on the final rendering.
+.. note::
 
-**Save As** and **Load** buttons are used to do just that. Any White Color Balance settings that you have set can be saved to the filesystem in a text file and loaded later.
+  Technically, the concept of color temperature comes from the blackbody spectrum, which is the spectrum of light emitted by a perfect thermal emitter. The blackbody spectrum is a good model for direct sunlight or moonlight when those bodies are high in the sky. It is also a good model for most incandescent bulbs, but a poor model for most other forms of man-made illumination.
 
-**Reset All** button resets all filter settings to default values corresponding to Neutral White Balance color. Attention, even the neutral setting might be different from your original photograph. If you save it, the white balance will be changed.
+**Over Exposure Indicator** option adds up the colors if more than one channel in a pixel is over-exposed, allowing you to see the combined color resulting from white balance corrections. The over exposure indicator only appears in the target preview area, it does not affect the final rendering.
+
+**Save As** and **Load** buttons are used to do just that. Any White Color Balance settings that you have set can be saved to a text file and reloaded later.
+
+**Reset All** button resets all filter settings to default values corresponding to Neutral White Balance color. Note that even the neutral setting may be quite different from your original photograph. So if you save an image after a resetting all settings, the white balance will likely be changed.

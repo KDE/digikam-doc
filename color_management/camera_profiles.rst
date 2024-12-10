@@ -26,19 +26,19 @@ If you are reading this manual you probably are shooting RAW images with a digit
     :alt:
     :align: center
 
-    digiKam RAW Preview Using **Embedded JPEG Image**.
+    digiKam RAW Preview Using **Embedded JPEG Image**
 
 .. figure:: images/cm_raw_preview_halfsize.webp
     :alt:
     :align: center
 
-    digiKam RAW Preview Using an Half Sized Demosaiced in 8 bits and **Bilinear** Method.
+    digiKam RAW Preview Using an Half Sized Demosaiced in 8 bits and **Bilinear** Method
 
 .. figure:: images/cm_raw_import_default.webp
     :alt:
     :align: center
 
-    digiKam RAW Import Tool from Image Editor Loading RAW file Demosaiced in 16-bit and **AHD** method.
+    digiKam RAW Import Tool from Image Editor Loading RAW file Demosaiced in 16-bit and **AHD** Method
 
 Why doesn't the image produced by RAW converters like `Libraw <https://www.libraw.org/>`_ look like the embedded preview displayed by digiKam? All digital camera images start out as RAW files, whether or not the camera allows the user the option to save the image as a RAW file. When you ask the camera to save JPEGs instead of RAW files, the camera uses its on-board processor to convert the RAW file to a JPEG. That embedded preview is what your final image would have looked like if you had set your camera to save JPEGs instead of RAW files.
 
@@ -52,7 +52,7 @@ The embedded JPEG preview looks so much nicer than Libraw's output, so what is t
     :alt:
     :align: center
 
-    digiKam Raw Import Tool from Image Editor Allows Post Processing of Exposures and Curves just After Demosaicing.
+    digiKam Raw Import Tool from Image Editor Allows Post Processing of Exposures and Curves just After Demosaicing
 
 It seems to me that the heart and soul of image processing is the deliberate manipulation of image tonality, color, selective sharpening, and so forth, so that the viewer focuses in on what you, the photographer, found of particular interest when you took the picture. Why give the art of image processing over to some proprietary RAW processing software? In other words, *flat is the preferred starting point* if you'd rather give your images your own artistic interpretation. The alternative is to let the canned, proprietary algorithms produced by Canon, Nikon, Sony, etc. interpret your images for you. On the other hand, there is no denying that for many images, those canned algorithms are really pretty good.
 
@@ -64,7 +64,7 @@ If your image has pink highlights, check your **White Balance** settings in the 
     :alt:
     :align: center
 
-    digiKam Raw Import Tool from Image Editor Allows to Tune Many Options about the Camera Colorimetric Values.
+    digiKam Raw Import Tool from Image Editor Allows to Tune Many Options about the Camera Colorimetric Values
 
 If the image isn't dark but it looks really weird, you probably made some injudicious choices in the Raw Import user-interface from the Image Editor. The Libraw interface conveniently allows you to *dial in* options. However, convenience always comes at a price. First, the interface might not provide access to all options. And second, to get the most from the Libraw interface, you have to know what the buttons, sliders, etc. in the interface actually do.
 
@@ -82,7 +82,7 @@ Digital cameras have an array of millions of little light sensors inside, in the
     :align: center
     :width: 200px
 
-    Bayer Array of RGB Filters Used to Measure Color.
+    Bayer Array of RGB Filters Used to Measure Color
 
 Clearly, pixel response to light is the result of lots of camera specific factors including: the nature of the sensor array itself, the precise coloring/transmissive qualities of the RGB lenses, and the particular analog to digital conversion and post-conversion processing that happens inside the camera to produce the RAW image that gets stored on the card.
 
@@ -99,7 +99,7 @@ The charge accumulated in each pixel is also subject to a variety of noise terms
     :alt:
     :align: center
 
-    digiKam Raw Import Tool from Image Editor Allows Wavelets Noise Reduction While Demosaicing.
+    digiKam Raw Import Tool from Image Editor Allows Wavelets Noise Reduction While Demosaicing
 
 
 Camera Profile and RAW Treatment
@@ -111,7 +111,7 @@ The whole point of interpolation using demosaicing algorithms such as `Libraw <h
     :alt:
     :align: center
 
-    digiKam Raw Import Tool from Image Editor Allow to Tune the Color Profile to Apply While Demosaicing.
+    digiKam Raw Import Tool from Image Editor Allow to Tune the Color Profile to Apply While Demosaicing
 
 
 Obtaining Camera Profiles
@@ -123,7 +123,7 @@ We wish we could tell you it was easy to find ready-made camera profiles. If you
     :alt:
     :align: center
 
-    The Draft of Color Management Logic for RAW Workflow Processing.
+    The Draft of Color Management Logic for RAW Workflow Processing
 
 Many commercial services provide profiling services, for a fee, of course. Or you can use `Argyll <http://www.argyllcms.com/>`_ to profile your camera yourself. If you want to profile your own camera, you will need an `IT8 target <https://en.wikipedia.org/wiki/IT8#Targets>`_, that is, an image containing squares of known colors. Along with the IT8 target, you will receive the appropriate set of known values for each square of color on the target.
 

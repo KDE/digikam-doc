@@ -38,7 +38,7 @@ A visual representation of the gamuts of sRGB, Adobe RGB and DCI-P3 compared to 
     :alt:
     :align: center
 
-    The Gamuts of the sRGB, Adobe RGB and DCI-P3 Color Spaces. sRGB is the Default Profile for LCD Monitors.
+    The Gamuts of the sRGB, Adobe RGB and DCI-P3 Color Spaces. sRGB is the Default Profile for LCD Monitors
 
 It is interesting to note that this image itself has an embedded sRGB color profile, so the colors represented in the image do not represent the full range of colors that can be shown in the other color spaces.
 

@@ -16,7 +16,7 @@ Image Editor
 .. figure:: images/index_image_editor.webp
     :alt:
 
-This section explain how to use the digiKam image editor.
+This section explains how to use the digiKam image editor.
 
 .. toctree::
    :maxdepth: 2
