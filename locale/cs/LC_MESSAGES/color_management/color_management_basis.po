@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 01:44+0000\n"
+"POT-Creation-Date: 2024-12-08 01:42+0000\n"
 "PO-Revision-Date: 2023-01-31 11:14+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -17,29 +17,29 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Lokalize 22.12.1\n"
 
-#: ../../color_management/basis_knowledge.rst:1
-msgid "Basis Knowledge about Color Management"
+#: ../../color_management/color_management_basis.rst:1
+msgid "Basic Knowledge about Color Management"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:1
+#: ../../color_management/color_management_basis.rst:1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, image editor, color management, icc, profile, basis"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:14
-msgid "Basis Knowledge"
+#: ../../color_management/color_management_basis.rst:14
+msgid ":ref:`The Basis of Color Management <color_management>`"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:16
+#: ../../color_management/color_management_basis.rst:16
 msgid "Contents"
 msgstr "Obsah"
 
-#: ../../color_management/basis_knowledge.rst:19
+#: ../../color_management/color_management_basis.rst:19
 msgid "Overview"
 msgstr "Přehled"
 
-#: ../../color_management/basis_knowledge.rst:21
+#: ../../color_management/color_management_basis.rst:21
 msgid ""
 "The point of a color-managed workflow is to ensure that the colors coming "
 "from your camera or scanner have a predictable relationship with the colors "
@@ -49,435 +49,462 @@ msgid ""
 "digital darkroom."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:27
+#: ../../color_management/color_management_basis.rst:23
+msgid ""
+"A typical color workflow acquires images with a camera or scanner, displays "
+"images on a monitor, and prints images on a printer. While each of these "
+"devices may represent colors using 8-bit RGB values, they do not do so in "
+"exactly the same way. Specifically, an RGB value of (200,130,200) will "
+"probably correspond to different shades of purple on each of these devices. "
+"The goal of color management is to adjust the RGB values of the image data "
+"as it moves from input, to display, and on to print in such a way that "
+"maintains the same perceived colors on all devices."
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:25
+msgid ""
+"Color management works by characterizing the color reproduction capability "
+"(also called the color space) of each device (e.g. camera, scanner, monitor "
+"or printer) in what is called an ICC profile. These ICC profiles are defined "
+"so they can be used to translate the RGB numbers used to represent a "
+"specific color at one point in the workflow, into the appropriate RGB "
+"numbers to represent the exact same color at another point in the workflow. "
+"Color management using ICC conversions is illustrated in the following "
+"figure."
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:31
 msgid ""
 "The Overall Scheme of Color Spaces Used in a Color Managed Application as "
 "digiKam"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:29
+#: ../../color_management/color_management_basis.rst:33
 msgid ""
-"When it comes to color management, everyone wants to know, *which buttons to "
-"push to get the wanted results*. Unfortunately, color management of "
-"necessity involves making informed choices at every step along the image-"
-"processing workflow. The purpose of this section is to provide sufficient "
-"background information on color management, along with links to more in-"
-"depth information, to enable you to begin to make your own informed "
-"decisions, based on your own desired results."
+"In order to be able to convert from any color space to any other color "
+"space, it was decided that all ICC profiles would be defined so that they "
+"can convert between the device color space and a common working color space. "
+"Thus two ICC conversions are shown in the diagram to convert data from a "
+"camera into data suitable for display on a monitor: one from the camera to "
+"the working space, and one from the working space to the monitor. So color "
+"management is largely a matter of using the appropriate device profiles to "
+"allow for the appropriate conversion of the image data as it moves from "
+"device to device."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:32
-msgid "Unrelevant Use-Cases"
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:34
+#: ../../color_management/color_management_basis.rst:35
 msgid ""
-"If your imaging workflow meets all six criteria listed below, then you don't "
-"need to worry about color management:"
+"When it comes to color management, everyone wants to know, *which buttons do "
+"I push to get the right colors*. Unfortunately, color management involves "
+"making informed choices at every step along the image-processing workflow. "
+"The purpose of this section is to provide sufficient background information "
+"on color management, along with links to more in-depth information, to "
+"enable you to begin to make your own informed decisions."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:36
+#: ../../color_management/color_management_basis.rst:38
+msgid "When You Don't Need Color Management"
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:40
+msgid ""
+"If your imaging workflow meets all of the six criteria listed below, then "
+"you don't need to worry about color management:"
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:42
 msgid ""
 "You are working at a monitor properly calibrated to the sRGB color space "
-"(more about int :ref:`this section <monitor_profiles>` of this manual)."
+"(refer to :ref:`this section <monitor_profiles>` of this manual for a "
+"detailed description of the sRGB color space)."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:38
+#: ../../color_management/color_management_basis.rst:44
 msgid ""
 "Your imaging workflow starts with an in-camera-produced JPEG already in the "
 "sRGB color space."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:40
+#: ../../color_management/color_management_basis.rst:46
 msgid "You work exclusively in the sRGB color space for editing."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:42
+#: ../../color_management/color_management_basis.rst:48
 msgid "Your printer wants images in the sRGB color space."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:44
+#: ../../color_management/color_management_basis.rst:50
 msgid "Your scanner produces images in the sRGB color space."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:46
+#: ../../color_management/color_management_basis.rst:52
 msgid ""
 "Your only other image output is via email or the web, where sRGB is the de "
 "facto standard."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:49
-msgid "Usual Definitions"
+#: ../../color_management/color_management_basis.rst:55
+msgid "Useful Definitions"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:51
+#: ../../color_management/color_management_basis.rst:57
 msgid ""
-"What follow is some additional comments and definitions to understand the "
-"Color Management:"
+"To better understand Color Management, we need to define some key terms:"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:53
+#: ../../color_management/color_management_basis.rst:59
 msgid ""
-"**Assign** a profile means change the meaning of the RGB numbers in an image "
-"by embedding a new profile without changing the actual RGB numbers "
-"associated with each pixel in the image. **Convert** to a profile means "
-"embed a new profile, but also change the RGB numbers at the same time so "
-"that the meaning of the RGB values - that is, the real-world visible color "
-"represented by the trio of RGB numbers associated with each pixel in an "
-"image - remains the same before and after the conversion from one space to "
+"**ICC profile** is a set of data that characterizes a color input or output "
+"device, or a color space, according to standards promulgated by the "
+"Interglobal Color Consortium (ICC). Profiles describe the color attributes "
+"of a particular device (or the viewing requirements for an image) by "
+"defining a mapping between the device source or target color space and a "
+"profile connection space (PCS). This PCS is either CIELAB (L*a*b*) or "
+"CIEXYZ. Mappings may be specified using tables, to which interpolation is "
+"applied, or through a series of parameters for transformations."
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:61
+msgid ""
+"(The overview section oversimplified the ICC profile as mapping between the "
+"device and a working space, when actually they convert to a PCS. The PCS can "
+"be thought of as a universal color space. So the camera to monitor flow "
+"actually may involve 4 color space conversions: camera to PCS, PCS to "
+"working space, working space to PCS, and PCS to monitor. The reasons for "
+"these extra steps are described below.)"
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:63
+msgid ""
+"**Gamut** is the span of colors that can be accurately encoded into an "
+"image, or represented by a device."
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:65
+msgid ""
+"**White point** is a set of RGB values that serve to define the color \"white"
+"\" in an image or reproduction."
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:67
+msgid ""
+"**Gamma correction** is a nonlinear operation used to encode and decode "
+"values in images in order to reduce the visual artifacts caused by storing "
+"pixel data with a finite number of bits. For example, images are encoded "
+"with a gamma of about 0.45 and decoded with the reciprocal gamma of 2.2 for "
+"display on most computer monitors."
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:69
+msgid ""
+"A simple example of one such conversion might be helpful. To apply a gamma "
+"correction of 2.2 to a data value of 212 in an 8-bit representation, you "
+"divide the value by 2^8 = 256 in order to convert to a 0 to 1 scale. In this "
+"case 212/256 = 0.828. Then raise this value to the 2.2 power, 0.828^2.2 = "
+"0.660. Then multiply by 256 to convert the result back to a scale from 0 to "
+"255: 0.660 * 256 = 169. Gamma correction applies this same algorithm to each "
+"color in every pixel in the image, all in real time."
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:71
+msgid ""
+"The simplest **color spaces** can be specified by a combination of gamut, "
+"white point, and gamma."
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:73
+msgid ""
+"**Converting** an image to a new profile embeds the new profile in the "
+"image, but also changes the RGB numbers in the image so that the meaning of "
+"the RGB values -- that is, the real-world visible color represented by the "
+"trio of RGB numbers associated with each pixel in an image -- remains the "
+"same before and after the conversion from one space to another."
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:75
+msgid ""
+"If the spaces only differ by their gammas, then the conversion involves "
+"gamma correction using the respective gammas of the starting and ending "
+"color spaces. Color conversions involving gamut and white points are "
+"mathematically more complex, but based on similar logic."
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:77
+msgid ""
+"In theory, you should be able to do multiple conversions of an image from "
+"one color space to another, and if you are using a color-managed image "
+"editor, even though all the RGB numbers in the image will change with each "
+"conversion, the image displayed on your screen should look the same. In "
+"actual fact, rounding errors occur on each conversion, and gamut-clipping "
+"can occur when going from a larger to a smaller color space. Thus image "
+"color accuracy degrades a bit every time you convert from one space to "
 "another."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:55
+#: ../../color_management/color_management_basis.rst:79
 msgid ""
-"On the other hand, every time you assign a new working space profile rather "
-"than convert to a new working space (except when initially assigning a "
-"camera profile to the image file you get from your RAW processing software), "
-"the appearance of the image should more or less drastically change (usually "
-"for the worse, unless the wrong profile had previously been inadvertently "
-"embedded in the image)."
+"**Assigning** a color profile changes the meaning of the RGB numbers in an "
+"image by embedding a new profile *without* changing the actual RGB numbers "
+"associated with each pixel in the image. When you simply assign a new color "
+"profile, the appearance of the image should more or less drastically change "
+"(usually for the worse, unless the wrong profile had previously been "
+"inadvertently embedded in the image). The one exception occurs when "
+"initially assigning a camera profile to the image file you get from your RAW "
+"processing software. This is an exception because the assignment is "
+"presumably the correct color profile for an image produced by that camera."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:57
+#: ../../color_management/color_management_basis.rst:81
 msgid ""
-"In theory, you should be able to do multiple conversions of an image from "
-"one working space to another, and if you are using a color-managed image "
-"editor, even though all the RGB numbers in the image will change with each "
-"conversion, the image displayed on your screen should look the same. In "
-"actual fact, because of rounding errors upon each conversion, not to mention "
-"gamut-clipping when going from a larger to a smaller working space, every "
-"time you convert from one space to another the image degrades a bit."
+"**Device-dependent** and **device-independent** profiles: A camera profile, "
+"a scanner profile, your monitor's profile, and your printer's color profile "
+"are all device-dependent profiles -- these profiles only work with the "
+"specific device for which they were produced by means of profiling. Working "
+"space profiles and the Profile Connection Space are *device-independent*. "
+"Once an image file has been translated by *Lcms* (the open-source color "
+"management system used in digiKam) to a device-independent working space, in "
+"a sense it no longer matters what device originally produced the image. But "
+"as soon as you want to display or print the image, then the output device "
+"(monitor, printer) matters a great deal, and the image must be converted "
+"into the output device's profile."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:59
+#: ../../color_management/color_management_basis.rst:83
 msgid ""
-"**Device-dependent** and **device-independent** profiles: The camera "
-"profile, a scanner profile, your monitor's profile, and your printer's color "
-"profile are all device-dependent profiles - these profiles only work with "
-"the specific device for which they were produced by means of profiling. "
-"Working space profiles and the Profile Connection Space are *device-"
-"independent*. Once an image file has been translated by Lcms to a device-"
-"independent working space, in a sense it no longer matters what device "
-"originally produced the image. But as soon as you want to display or print "
-"the image, then the device (monitor, printer) used matters a great deal and "
-"requires a device-dependent profile."
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:61
-msgid ""
-"An **interpolated RAW file** isn't a RAW file. For some reason this simple "
+"A **demosaiced RAW file** isn't a RAW file. For some reason this simple "
 "point causes a lot of confusion. But after a RAW file has been interpolated "
-"by RAW processing software and then output as a TIFF or JPEG, the original "
-"RAW file is still a RAW file, of course, but the interpolated file is just "
-"an image file. It isn't a RAW file."
+"and demosaiced by RAW processing software and then output as a TIFF or JPEG, "
+"while the original RAW file is still a RAW file, but the demosaiced file is "
+"just an image file. It is no longer a RAW file."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:63
+#: ../../color_management/color_management_basis.rst:85
 msgid ""
 "**Linear** has two related and easily confused definitions. *Linear* can "
 "mean that the image tonality reflects the tonality in the original scene as "
-"photographed instead of being altered by the application of an S-curve or "
+"photographed, instead of being altered by the application of an S-curve or "
 "other means of changing local and global tonality. It can also mean that the "
 "gamma transfer curve of the color space is linear. An image can be *linear* "
 "in either, both, or neither of these two senses. A RAW image as developed by "
-"Libraw is linear in both senses. The same image as developed by Canon's RAW "
+"Libraw is linear in both senses. The same image developed by Canon's RAW "
 "processing software won't be linear in either sense."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:65
+#: ../../color_management/color_management_basis.rst:87
 msgid ""
 "**HDR** and **LDR** do not refer to the bit-depth of the image. **High "
 "dynamic range** and **Low dynamic range** refer to the total dynamic range "
 "encompassed by an image. A regular low dynamic range image, say encompassing "
 "a mere 5 *stops* (the average digital camera these days can easily "
 "accommodate 8 or 9 stops), can be saved as an 8-, 16-, 32-, or even 64-bit "
-"image, depending on your software, but the dynamic range of the image isn't "
-"thereby increased. Only the number of discrete steps from the brightest to "
-"the darkest tone in the image has changed. Conversely, a 22-stop scene (way "
-"beyond the capacity of a consumer-oriented digital camera without using "
-"multiple exposures) can be saved as an 8- or 16-bit image, but the resulting "
-"image will exhibit extreme banding (that is, it will display extreme banding "
-"in any given tonal range that can actually be displayed on a typical monitor "
-"at one time) because of the relatively few available discrete tonal steps "
-"from the lightest to the darkest tone in the image."
+"image, depending on your software. But storing with more bits does nothing "
+"to increase the dynamic range of the image. Only the number of discrete "
+"steps from the brightest to the darkest tone in the image has changed. "
+"Conversely, a 22-stop scene (way beyond the capacity of a consumer-oriented "
+"digital camera without using multiple exposures) can be saved as an 8- or 16-"
+"bit image, but the resulting image will exhibit extreme banding (that is, it "
+"will display extreme banding in any given tonal range that can actually be "
+"displayed on a typical monitor at one time) because of the relatively few "
+"available discrete tonal steps from the lightest to the darkest tone in the "
+"image."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:67
+#: ../../color_management/color_management_basis.rst:89
 msgid ""
-"**In-camera produced JPEGs don't need a camera profile**: All JPEGs (or "
-"TIFFs) coming straight out of a camera (even if produced by point-and-shoots "
-"cameras that don't allow you to save a RAW file) start life inside the "
+"**JPEGs produced in-camera don't need a camera profile**: All JPEGs (or "
+"TIFFs) coming straight out of a camera (even if produced by point-and-shoot "
+"cameras that don't allow you to save a RAW file), start life inside the "
 "camera as a RAW file produced by the camera's Analog to Digital converter. "
 "If you save your images as JPEGs, then the processor inside the camera "
 "interpolates the RAW file, assigns a camera profile, translates the "
 "resulting RGB numbers to a working space (usually **sRGB** but sometimes you "
 "can choose **AdobeRGB**, depending on the camera), does the JPEG "
 "compression, and stores the JPEG file on your camera card. So JPEGs (or "
-"TIFFs) from your camera don't need to be assigned a camera profile which is "
-"then translated to a working space. JPEGs from a camera are already in a "
+"TIFFs) from your camera don't need to be assigned a camera profile in order "
+"to translate them into a working space. JPEGs from a camera are already in a "
 "working space."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:69
+#: ../../color_management/color_management_basis.rst:93
+msgid "Profile Connection Space"
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:95
 msgid ""
-"**Useful mathematical information**: If you are dealing with Libraw's linear "
-"gamma output: Mathematically speaking, when doing a gamma transform you "
-"normalize (that is, divide by 256 if you are working with 8-bit values) the "
-"RGB numbers and raise the resulting numbers to an appropriate power "
-"depending on the respective gammas of the starting and ending color space, "
-"then re-normalize the results to a new set of RGB numbers. It's not hard, "
-"and very instructive, to do this with a calculator for a few sets of RGB "
-"numbers spaced from (0,0,0) to (255,255,255) to see how RGB numbers change "
-"from one gamma encoding to another. Lcms does this for you when you ask Lcms "
-"to convert from one color space to another."
+"Suppose Libraw produces a 16-bit TIFF image from a RAW file produced by a "
+"particular (make and model) camera. The question then becomes: what does "
+"each particular trio of RGB values assigned to each pixel in the image "
+"really mean in terms of some absolute standard, referencing some ideal "
+"observer? And is it even possible to define an ideal observer? Do real "
+"people even see the same colors when they look at the world?"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:71
-msgid "**Copyrighted and copyleft working spaces**:"
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:73
+#: ../../color_management/color_management_basis.rst:97
 msgid ""
-"The several variants of **sRGB**. See :ref:`the chapter <monitor_profiles>` "
-"dedicated to this color space."
+"In 1931 the International Color Consortium decided to map out and "
+"mathematically describe all the colors visible to real people in the real "
+"world. They did this by showing a whole bunch of people a whole bunch of "
+"colors, asking them to say when this color matched that color. This testing "
+"was complicated by the fact that two colors that visually match can be "
+"produced by differing combinations of wavelengths. Human color perception "
+"depends on the fact that we have three types of cone receptors with peak "
+"sensitivity to light at wavelengths of approximately 430, 540, and 570 nm, "
+"but with considerable overlap in sensitivity between the different cone "
+"types. One consequence of how we see color is that many different "
+"combinations of differing wavelengths of light will look like the same color."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:75
-msgid "BruceRGB or BestRGB."
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:77
+#: ../../color_management/color_management_basis.rst:99
 msgid ""
-"The various ECI (`European color initiative <https://en.wikipedia.org/wiki/"
-"European_Color_Initiative>`_) working space profiles."
+"In the end, the ICC produced the `CIE-XYZ color space <https://en.wikipedia."
+"org/wiki/CIE_1931_color_space>`_ s which mathematically describes and models "
+"all the `colors visible to an ideal human <https://en.wikipedia.org/wiki/"
+"Color_vision>`_ observer. The term *ideal* in this case means that the "
+"modeling was based on the mean response of lots of individuals."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:79
+#: ../../color_management/color_management_basis.rst:101
 msgid ""
-"**AdobeRGB**, Adobe **WideGamutRGB**, and Kodak/Adobe **ProPhotoRGB** (Kodak "
-"and Adobe ProPhoto are the same, just branded differently) and their non-"
-"branded, non-copyrighted counterparts."
+"In practice this color space that spans human perception is not a color "
+"profile in the normal sense of the word. Rather it does provide a reference "
+"space for describing all colors. Color management systems commonly use the "
+"CIE-XYZ color space as a **Profile Connecting Space** (PCS) for translating "
+"color RGB values from one color space to another. For example, a camera "
+"profile is needed to accurately characterize or describe the response of a "
+"given camera's pixels to light entering that camera so those colors can be "
+"mapped into a working space. ICC camera profiles work by first converting "
+"the RGB values into an absolute Profile Connection Space, often based on CIE-"
+"XYZ, and then from the Profile Connection Space to your chosen working space."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:85
+#: ../../color_management/color_management_basis.rst:103
 msgid ""
-"digiKam Image Editor Color Space Converter Allows to Switch to Another Color "
-"Profile"
+"CIE-XYZ is not the only Profile Connection Space. Another commonly used "
+"Profile Connection Space is `CIE-Lab <https://en.wikipedia.org/wiki/"
+"Lab_color_space>`_, which is mathematically derived from the CIE-XYZ space. "
+"CIE-Lab is intended to be **perceptually uniform**, meaning a change of the "
+"same amount in a color value should produce a change of about the same "
+"visual importance."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:87
+#: ../../color_management/color_management_basis.rst:105
 msgid ""
-"And quite a few other working spaces that could be added to this list, are "
-"all more or less suitable as working spaces. Which working space you should "
-"use depends only and solely on you, on your requirements on the Image Editor "
-"with your eventual output intentions (web, fine art print, etc.). However, "
-"as a critical aside, if you are using Adobe or other copyrighted working "
-"space profiles, these profiles contain copyright information that shows up "
-"in your image Exif information."
+"The three coordinates of CIE-Lab represent the lightness of the color (**L = "
+"0** yields black and **L = 100** indicates diffuse white; specular white may "
+"be higher), its position between red/magenta and green (**a**, negative "
+"values indicate green while positive values indicate magenta) and its "
+"position between yellow and blue (**b**, negative values indicate blue and "
+"positive values indicate yellow)."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:89
+#: ../../color_management/color_management_basis.rst:107
 msgid ""
-"**Soft Proofing** is a way of previewing on the screen the result to be "
-"expected from an output on another device, typically a printer. Soft "
-"proofing will show you the difference to be expected before you actually do "
-"it (and waste your costly ink). So you can improve your settings without "
-"wasting time and money. For more information take a look to the dedicated :"
-"ref:`section from this manual <soft_proof>`."
+"The software used in digiKam to translate from the camera profile to the "
+"Profile Connection Space and from the Profile Connection Space to your "
+"chosen working space and eventually to your chosen output space (for "
+"printing or perhaps monitor display) is based on `Lcms <https://www."
+"littlecms.com/>`_ (the **Little Color Management** engine)."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:91
+#: ../../color_management/color_management_basis.rst:109
 msgid ""
-"**Rendering intent** refers to the way gamuts are handled when the intended "
-"target color space cannot handle the full gamut. For more information take a "
-"look to the dedicated :ref:`section from this manual <working_space>`."
+"For what it's worth, *Lcms* performs more accurate conversions than Adobe's "
+"proprietary color conversion engine. Furthermore, the RAW conversion in "
+"digiKam is based on decoding of the proprietary RAW file done by **Libraw**. "
+"`This library <https://www.libraw.org/>`_, is a great open-source component "
+"as without it we'd all be stuck using the Windows-only or Mac-only "
+"proprietary software that comes with our digital cameras. The Libraw's "
+"demosaicing algorithms (not to be confused with the aforementioned decoding "
+"of the proprietary RAW file) produce results equal or superior to "
+"commercial, closed-source software."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:94
+#: ../../color_management/color_management_basis.rst:111
+msgid ""
+"So in summary, all color management conversions are made to and from Profile "
+"Connection Spaces that are defined with a color gamut that closely matches "
+"human perception. The PCS is used internal to the conversion process, and "
+"you'll never see data in the PCS. But you can think of a **Profile "
+"Connection Space** as a **Universal Translator** between all other color "
+"profiles."
+msgstr ""
+
+#: ../../color_management/color_management_basis.rst:115
 msgid "Color Space Connections"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:96
+#: ../../color_management/color_management_basis.rst:117
 msgid ""
-"The question for each RGB trio of values in the (let us assume) 16-bit TIFF "
-"produced by Libraw becomes, what does a particular trio of RGB values for "
-"the pixels making up images produced by this particular (make and model) "
-"camera really mean in terms of some absolute standard referencing some ideal "
-"observer."
+"The workflow that a typical image might follow in the course of its journey "
+"from camera RAW file to final output includes the following steps:"
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:98
+#: ../../color_management/color_management_basis.rst:119
 msgid ""
-"This absolute standard referencing an ideal observer is more commonly called "
-"a **Profile Connection Space** (PCS). A camera profile is needed to "
-"accurately characterize or describe the response of a given camera's pixels "
-"to light entering that camera, so that the RGB values in the output file "
-"produced by the RAW converter can be translated first into an absolute "
-"Profile Connection Space and then from the Profile Connection Space to your "
-"chosen working space."
+"*Lcms* uses the camera profile, also called an **Input profile**, to "
+"translate the interpolated Libraw-produced RGB numbers, which only have "
+"meaning relative to your (make and model of) camera, to a second set of RGB "
+"numbers that only have meaning in the **Profile Connection Space**."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:100
+#: ../../color_management/color_management_basis.rst:121
 msgid ""
-"As a very important aside, in digiKam the software used to translate from "
-"the camera profile to the Profile Connection Space and from the Profile "
-"Connection Space to your chosen working space and eventually to your chosen "
-"output space (for printing or perhaps monitor display) is based on `Lcms "
-"<https://www.littlecms.com/>`_ (the **Little Color Management** engine). For "
-"what it's worth, Lcms does more accurate conversions than Adobe's "
-"proprietary color conversion engine. Further, the RAW conversion in digiKam "
-"is based on decoding of the proprietary RAW file done by **Libraw**. `This "
-"library <https://www.libraw.org/>`_, is a great open-source component as "
-"without it we'd all be stuck using the usually Windows or Mac only "
-"proprietary software that comes with our digital cameras. The Libraw's "
-"interpolation algorithms (not to be confused with the aforementioned "
-"decoding of the proprietary RAW file), which are part of digiKam if properly "
-"used, produce results equal or superior to commercial, closed source "
-"software."
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:102
-msgid ""
-"There are two commonly used Profile Connection Spaces - **CIELAB** and "
-"**CIEXYZ** (see this `wikipedia Color management section <https://en."
-"wikipedia.org/wiki/Color_management#Color_transformation>`_ for details). "
-"Lcms uses the camera profile to translate the RGB values from the "
-"interpolated RAW file, into the appropriate Profile Connection Space "
-"(usually CIEXYZ). A profile connection space is not itself a working space. "
-"Rather a **Profile Connection Space** is an absolute reference space used "
-"only for translating from one color space to another - think of a **Profile "
-"Connection Space** as a **Universal Translator** for all the color profiles "
-"that an image might encounter in the course of its journey from camera RAW "
-"file to final output:"
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:104
-msgid ""
-"Lcms uses the camera profile, also called an **Input profile**, to translate "
-"the interpolated Libraw-produced RGB numbers, which only have meaning "
-"relative to your (make and model of) camera, to a second set of RGB numbers "
-"that only have meaning in the **Profile Connection Space**."
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:106
-msgid ""
-"Lcms translates the **Profile Connection Space** RGB numbers to the "
+"*Lcms* translates the **Profile Connection Space** RGB numbers to the "
 "corresponding numbers in your chosen **Working space** so you can edit your "
 "image. And again, these working space numbers only have meaning relative to "
 "a given working space. The same red, visually speaking, is represented by "
 "different trios of RGB numbers in different working spaces; and if you "
-"assign the wrong profile the image will look wrong, slightly wrong or very "
+"assign the wrong profile the image will look either slightly wrong or very "
 "wrong depending on the differences between the two profiles."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:108
+#: ../../color_management/color_management_basis.rst:123
 msgid ""
-"While you are editing your image in your chosen **Working space**, then Lcms "
-"should translate all the working space RGB numbers back to the **Profile "
+"While you are editing an image in your chosen **Working space**, *Lcms* is "
+"used to translate all the working space RGB numbers back to the **Profile "
 "Connection Space**, and then over to the correct RGB numbers that enable "
 "your monitor (your display device) to give you the most accurate possible "
-"display representation of your image as it is being edited. This translation "
-"for display is done on the fly and you should never even notice it "
-"happening, unless it doesn't happen correctly - then the displayed image "
-"will look wrong."
+"display representation of your image. This translation into the display's "
+"color space is done on the fly and you should never even notice it happening."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:110
+#: ../../color_management/color_management_basis.rst:125
 msgid ""
 "When you are satisfied that your edited image is ready to share with the "
-"world, Lcms translates the **Working space** RGB numbers back into the "
+"world, *Lcms* translates the **Working space** RGB numbers back into the "
 "**Profile Connection Space** space and out again to a **Printer color "
 "space** using a **Printer profile** characterizing your printer/paper "
-"combination (if you plan on printing the image) or to sRGB (if you plan on "
-"displaying the image on the web or emailing it to friends or perhaps "
-"creating a slide-show to play on monitors other than your own)."
+"combination (if you plan on printing the image) or to the sRGB color space "
+"(if you plan on displaying the image on the web or emailing it to friends or "
+"are perhaps creating a slide-show to play on monitors other than your own)."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:112
+#: ../../color_management/color_management_basis.rst:127
 msgid ""
-"To back up a little bit and look at the first color profile an image "
-"encounters, that is, the camera profile (see point 1. immediately above) - "
-"Libraw can in fact apply your camera profile for you (Libraw uses Lcms "
-"internally). But the generating data composed of the interpolated RGB values "
-"derived from the camera RAW file, and the application of the camera profile "
-"to the interpolated file, are two very distinct and totally separable "
-"(separable in theory and practice for Libraw; in theory only for most RAW "
-"converters) steps."
+"This magic of converting profiles, also supports **Soft Proofing** which is "
+"a way of previewing on the screen the result to be expected from an output "
+"on another device, typically a printer. Soft proofing will show you the "
+"expected output before you actually print it and waste your costly ink. This "
+"allows you to improve your color settings without wasting time and money. "
+"For more information take a look at the dedicated :ref:`Soft Proofing "
+"<soft_proof>` section of this manual."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:115
-msgid "Camera Profiles"
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:117
+#: ../../color_management/color_management_basis.rst:129
 msgid ""
-"This manual section has a bit of information on where to find ready-made "
-"camera profiles. It's an unfortunate fact of digital imaging that the camera "
-"profiles supplied by Canon, Nikon, and the like don't work as well with RAW "
-"converters other than each camera manufacturer's own proprietary RAW "
-"converter. They have to make their own profiles for all the cameras that "
-"they support - keep this proprietary propensity of your camera manufacturer "
-"in mind next time you buy a digital camera."
+"Of course, profile conversions are not perfect, especially when converting "
+"between spaces that have different gamuts. **Rendering intent** refers to "
+"the way gamuts are handled when the intended target color space cannot "
+"handle the full gamut. For more information take a look at :ref:`this "
+"section <working_space>` of this manual."
 msgstr ""
 
-#: ../../color_management/basis_knowledge.rst:119
+#: ../../color_management/color_management_basis.rst:131
 msgid ""
-"To finding a camera profile for your camera is to make your own camera "
-"profile or have one made for you. There are quite a few commercial services "
-"who provide profiling services (for a fee, of course). Or you can use "
-"`Argyll <http://www.argyllcms.com/>`_ to profile your camera yourself. We "
-"cannot speak about how easy or difficult the process of profiling a camera "
-"might be. But we would imagine, knowing how very meticulous the people "
-"behind Argyll, and Lcms are about color management, that making your own "
-"camera profile is very do-able and very likely the results will be better "
-"than any proprietary profile. After all, Canon didn't profile your camera, "
-"they just profiled a camera like your."
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:121
-msgid ""
-"For more information take a look to the dedicated :ref:`section from this "
-"manual <camera_profiles>`."
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:127
-msgid ""
-"If your Photograph Include a Color Profile from your Camera digiKam Can show "
-"this in Colors Sidebar Tab"
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:130
-msgid "Working Spaces"
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:132
-msgid ""
-"So now your RAW file has been interpolated by Libraw and you've obtained a "
-"camera profile and used Lcms to apply your camera profile. What does all "
-"this mean? The real answer involves a lot of math and color science that "
-"goes way over my head and likely yours. The short, practical answer is that "
-"neither the camera profile space nor the Profile Connection Space is an "
-"appropriate space for image editing."
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:134
-msgid ""
-"Your next step is to choose a working space for image editing. Lcms, the "
-"color management engine that digiKam uses, perform a double translation. "
-"First Lcms uses the camera profile to translate the RGB values of each pixel "
-"in the Libraw output image without camera-profile applied into the "
-"aforementioned Profile Connection Space. Then it translates the RGB values "
-"of each pixel from the Profile Connection Space to your chosen working space."
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:140
-msgid ""
-"digiKam Knows Where to Find the Color Profiles Installed on Your System and "
-"list Files in Setup Dialog For Selection"
-msgstr ""
-
-#: ../../color_management/basis_knowledge.rst:142
-msgid ""
-"For more information take a look to the dedicated :ref:`section from this "
-"manual <working_space>`."
+"Now that you've seen the outline of how color management is used to convert "
+"from camera to working space (for editing) to display to printer, it should "
+"be clear that color management is all about applying the right profiles for "
+"the devices you are using, and picking the right color spaces for editing "
+"and storing images. So where do we get the profiles, and how do we pick a "
+"working space? Those are the subjects of the following sections."
 msgstr ""
