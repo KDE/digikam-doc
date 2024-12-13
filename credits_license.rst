@@ -48,6 +48,7 @@ Documentation authors
 - 2024
 
     `Rick chapman <https://invent.kde.org/rickchapman>`_
+    `Michael Miller <https://invent.kde.org/michmill>`_
 
 - 2023
 

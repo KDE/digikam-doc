@@ -14,7 +14,6 @@
 Left Sidebar
 #############
 .. figure:: images/index_left_sidebar.webp
-    :width: 100
     :alt:
 
 This section explains how to use the digiKam left sidebar.
