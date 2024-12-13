@@ -249,7 +249,7 @@ If the photograph has the wrong size, you can scale it to the size you would lik
 
     The digiKam Image Editor Resize Tool
 
-This image resizing tool uses a standard linear interpolation method to approximate pixels. If you want to up-size a small image with a better quality, try the Blowup tool.
+This image resizing tool uses a standard linear interpolation method to approximate pixels.
 
 Increasing Image Size
 ~~~~~~~~~~~~~~~~~~~~~
@@ -286,7 +286,7 @@ Photograph Resize Advanced Settings:
 
     - **Use Linear Interpolation**: The gain in quality if you select this option is only marginal and you lose a factor of 2 in speed. Our recommendation is to leave it off.
 
-**Save As** and **Load** buttons are used to do just that. Any Blowup Photograph filter settings that you have set can be saved to a text file and reloaded later.
+**Save As** and **Load** buttons are used to do just that. Any Resize settings that you have set can be saved to a text file and reloaded later.
 
 .. warning::
 
