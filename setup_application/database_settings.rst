@@ -10,23 +10,25 @@
 
 .. _database_settings:
 
-Database Settings
-=================
+:ref:`Database Settings <setup_application>`
+============================================
 
 .. contents::
 
+The **Database** options for digiKam are set from :menuselection:`Settings --> Configure digiKam... --> Database page`.
+
 .. note::
 
-    For an introduction of internal data storage, please refer to :ref:`Introduction of digiKam Databases <database_intro>` section.
+    For an introduction to internal data storage, please refer to the :ref:`Database <database_intro>` section of the Getting Started chapter.
 
 .. _sqlite_database:
 
-The Sqlite Database
+The SQLite Database
 -------------------
 
-`SQLite <https://sqlite.org/>`_ is a relational database management system, written in C programming library. SQLite is not directly comparable to client/server SQL database engines such as MySQL, Oracle or PostgreSQL. Rather, it is an embedded SQL database engine, i.e. it is embedded in an end program. SQLite reads and writes directly to ordinary disk files. For device-local storage with low writer concurrency and less than a terabyte of content, SQLite is almost always a better solution. SQLite is fast and reliable and it requires no configuration or maintenance. It keeps things simple. SQLite "just works".
+`SQLite <https://sqlite.org/>`_ is a relational database management system, written in the C programming library. SQLite is not directly comparable to client/server SQL database engines such as MySQL, Oracle or PostgreSQL. Rather, it is an SQL database engine that is embedded in an end program. SQLite reads and writes directly to ordinary disk files. SQLite is almost always the best solution for device-local storage with low write-concurrency and less than a terabyte of content. SQLite is fast and reliable and it requires no configuration or maintenance. It keeps things simple. SQLite "just works".
 
-By default, digiKam uses SQLite as its back-end for storing important metadata and thumbnails. Three SQLite files used for storing them are named respectively:
+By default, digiKam uses SQLite as its back-end for storing important metadata and thumbnails. digiKam stores information into four SQLite files:
 
     ============== =============================
     Database       File-Name
@@ -37,14 +39,16 @@ By default, digiKam uses SQLite as its back-end for storing important metadata a
     **Faces**      :file:`recognition.db`
     ============== =============================
 
-To make your application run fast and smoothly, it is recommended to check and optimize your databases once in awhile. This could be achieved with the menu option :menuselection:`Tools --> Maintenance...` and the stage **Perform Database Cleaning**. See this
-:ref:`Maintenance tool section <maintenance_database>` for details. A recommended tool is `SQLite Browser <https://sqlitebrowser.org/>`_, a high quality and easy to use visual tool for managing database objects. For Ubuntu and its derivatives, it could be retrieved using `sudo apt install sqlitebrowser`. Now you can switch to the directory where databases are stored and visualize the database contents.
+To keep your application running fast and smooth, you should periodically check and optimize your databases: select :menuselection:`Tools --> Maintenance...` and then **Perform Database Cleaning**. See the
+:ref:`Database Cleaning <maintenance_database>` section of the Maintenance Tools chapter for details.
+
+The `SQLite Browser <https://sqlitebrowser.org/>`_, is a high quality and easy to use visual tool for managing database objects, that we highly recommend. For Ubuntu and its derivatives, it can be installed using `sudo apt install sqlitebrowser`. Then you can switch to the directory where the digiKam databases are stored in order to visualize the database contents.
 
 .. note::
 
-    Take care to use a place hosted by fast hardware (such as SSD or NVMe) with enough free space especially for thumbnails database. A remote file system such as NFS cannot be used here. For performance and technical reasons relevant of SQLite, you cannot use a media from the network.
+    For best performance, store the digiKam databases on the fastest hardware (such as SSD or NVMe) with plenty of free space. This is especially important for the thumbnails database. A remote file system such as NFS cannot be used here. For performance and technical reasons, SQLite cannot use media from the network.
 
-SQLite database files could be found in your *collection* folder, which you have added to digiKam. (By default, if you add your “Pictures” collection, the database files will be present in :file:`~/Pictures` folder).
+The SQLite database files can be found in the *collection* folder that you added to digiKam. (By default, if you add your “Pictures” collection, the database files will be present in the :file:`~/Pictures` folder).
 
 .. figure:: images/setup_database_sqlite.webp
     :alt:
@@ -54,7 +58,7 @@ SQLite database files could be found in your *collection* folder, which you have
 
 .. _mysql_database:
 
-The **WAL** SQLite mode is a very important option that we recommend to turn on with large databases to optimize transactions and improve performances.
+The **WAL** SQLite mode is a very important option that we recommend you turn on with large databases to optimize transactions and improve performance.
 
 The MySQL Database
 ------------------
@@ -62,11 +66,11 @@ The MySQL Database
 MySQL Versus SQLite
 ~~~~~~~~~~~~~~~~~~~
 
-`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ is an open-source, relational database management system, written in C and C++. Original development of MySQL by Michael Widenius and David Axmark beginning in 1994. Sun Microsystems acquired MySQL in 2008, which was later acquired by Oracle in 2010. MySQL currently works on almost all system platforms (Linux, Microsoft Windows, OS X, SunOS …).
+`MySQL <https://en.wikipedia.org/wiki/MySQL>`_ is an open-source, relational database management system, written in C and C++. Original development of MySQL by Michael Widenius and David Axmark began in 1994. Sun Microsystems acquired MySQL in 2008, which was later acquired by Oracle in 2010. MySQL currently works on almost all system platforms (Linux, Microsoft Windows, OS X, SunOS …).
 
-`MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ server is a community developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry.
+`MariaDB <https://en.wikipedia.org/wiki/MariaDB>`_ server is a community-developed fork of MySQL server. Started by core members of the original MySQL team, MariaDB actively works with outside developers to deliver the most featureful, stable, and sanely licensed open SQL server in the industry.
 
-MariaDB has actually overtaken MySQL, because of few basic reasons:
+MariaDB use has overtaken MySQL for a few basic reasons:
 
     - MariaDB development is more open and vibrant.
 
@@ -78,26 +82,26 @@ MariaDB has actually overtaken MySQL, because of few basic reasons:
 
     - Compatible and easy to migrate.
 
-digiKam also provides support for popular MySQL database engine. Of course, you might wonder why you’d want to switch to MySQL when SQLite already does a good job of managing the data? MySQL offers many advantages for storing digiKam data, especially when collections include **more than 100,000 items**. With such large collections, SQLite introduces latency which slows down the application.
+digiKam also provides support for the popular MySQL database engine. Of course, you might wonder why you’d want to switch to MySQL when SQLite already does a good job of managing the data? MySQL offers many advantages for storing digiKam data, especially when collections include **more than 100,000 items**. With such large collections, SQLite introduces latency which slows down the application.
 
 .. note::
 
-     With **WAL** option enabled, SQLite can be easily used for more than 100,000 items especially with an SSD or NVMe storage. It must be even faster than MySQL and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details.
+     With **WAL** option enabled, SQLite can be easily used for more than 100,000 items especially with an SSD or NVMe storage. It may be even faster than MySQL and more stable. See `this page <https://www.sqlite.org/wal.html>`_ for technical details.
 
-Using MySQL as digiKam’s database back-end allows you to store the data on local as well as remote server. Local, to replace the local SQLite storage and latter, to use a shared computer through network. Using MySQL as digiKam’s database back-end allows you to store the data on a remote server. This way, you can use multiple digiKam installations (For instance,on your notebook and PC) to access and manage your photo collections. You can also use MySQL tools to backup and analyze digiKam’s data.
+Using MySQL as digiKam’s database back-end allows you to store the data on local as well as remote servers. MySQL Internal can be used to replace the local SQLite storage, and MySQL Server can be used on media stored on a remote server. This way, you can use multiple digiKam installations (for instance, on your notebook and PC) to access and manage your photo collections. You can also use MySQL tools to backup and analyze digiKam’s data.
 
 To switch from SQLite to MySQL database, go to :menuselection:`Settings --> Configure digiKam...` and then under **Database** section, select a database from the drop down list.
 
     - **MySQL Internal**: This allows to run an internal database server on your system. digiKam uses Unix socket for the connection.
 
-    - **MySQL Server**: Use this if you’ve your data on remote server and you’re on a different machine trying to access the collection.
+    - **MySQL Server**: Use this if your data is on a remote server and you’re on a different machine trying to access the collection.
 
 .. _mysql_internal:
 
 The MySQL Internal Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-While using a large collection hosted on hard drive (HDD - not SSD or NVMe device), with a size **greater than 100,000 items**, the application tends to slow down. To avoid the delay and maintain efficiency, digiKam provides option of using **MySQL Internal**. To be clear, this isn’t an actual server, or a public network. Instead, it is a server that runs only while application is running.
+digiKam tends to slow down when using a large collection (size **greater than 100,000 items**) hosted on a hard drive (HDD - not an SSD or NVMe device) with the SQLite database. To avoid the delay and maintain efficiency, digiKam provides the option of using **MySQL Internal**. To be clear, this isn’t an actual server, or a public network. Instead, it is a server that runs only while the application is running.
 
 Internal server creates a separate database that can be accessed (only while application is running) using the command:
 
@@ -105,7 +109,7 @@ Internal server creates a separate database that can be accessed (only while app
 
     mysql --socket=/home/[user_name]/.local/share/digikam/db_misc/mysql.socket digikam
 
-Internal server uses tree MySQL Binary Tools: :file:`mysql_install_db`, :file:`mysqladmin`, and :file:`mysqld`. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system.
+The internal server uses three MySQL Binary Tools: :file:`mysql_install_db`, :file:`mysqladmin`, and :file:`mysqld`. You can configure their locations in the configuration dialog. digiKam will try to find these binaries automatically if they’re installed on your system.
 
 .. figure:: images/setup_database_mysqlinternal.webp
     :alt:
@@ -118,9 +122,9 @@ Internal server uses tree MySQL Binary Tools: :file:`mysql_install_db`, :file:`m
 The MySQL Remote Server
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Obviously, to use digiKam with a remote MySQL, you would require a MySQL server. Or, you could also install MariaDB, which serves the purpose well. (Could be installed easily using `this link <https://www.cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-ubuntu-20-04>`_.)
+Obviously, access to a MySQL server is required to use digiKam with a remote MySQL. Alternatively, you can install MariaDB, which serves the purpose well. (Could be installed easily using `this link <https://www.cherryservers.com/blog/how-to-install-and-start-using-mariadb-on-ubuntu-20-04>`_.)
 
-Follow the instructions below, if you don’t have a dedicated user account and a digiKam database already set up. Run the commands in MySQL server, after replacing *password* with correct one.
+Follow the instructions below, if you don’t have a dedicated user account and a digiKam database already set up. Run the commands in MySQL server, after replacing *password* with the correct one.
 
 .. note::
 
@@ -140,13 +144,13 @@ Follow the instructions below, if you don’t have a dedicated user account and 
 
 .. tip::
 
-    If you have problems with a MySQL server on Ubuntu based Linux system, use the addition command in the mysql prompt to be able to create MySQL triggers.
+    If you have problems with a MySQL server on a Ubuntu based Linux system, execute this additional command in the mysql prompt to enable the creation of MySQL triggers.
 
     .. code:: sql
 
         SET global log_bin_trust_function_creators=1;
 
-Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` and then under **Database** section, select MySQL Server from the drop down list.
+Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` and then under the **Database** section, select MySQL Server from the drop down list.
 
 .. figure:: images/setup_database_remotemysql.webp
     :alt:
@@ -156,32 +160,32 @@ Now, in digiKam, go to :menuselection:`Settings --> Configure digiKam...` and th
 
 Enter the IP address of your MySQL server in the **Host Name** field and specify the correct port in the **Host Port** field (the default port is 3306).
 
-In the **Core Db Name** field, enter the name of the first database for storing photo metadata.
+Set the **Core Db Name** field to the name of the first database that is used to store photo metadata.
 
-Specify the name of the second database for storing wavelets compressed thumbnails in the **Thumbs Db Name** field.
+Set the **Thumbs Db Name** field to the name of the second database that is used to store the wavelet-compressed thumbnails.
 
-The third database is dedicated to store the similarity finger-prints performed by the fuzzy search engine. Use the **Similarity Db Name** field for that.
+Set the **Similarity Db Name** field to the name of the third database that is used to store the similarity finger-prints produced by the fuzzy search engine.
 
-The last database is dedicated to store face histograms for recognition purpose. Use the **Face Db Name** field for that.
+Set the **Face Db Name** field to the name of the last database that is used to store the face histograms for facial recognition.
 
-To be connected safety to the remote server, enter your MySQL identification using **User** and **Password** fields.
+To safely connect to the remote server, enter your MySQL identification using the **User** and **Password** fields.
 
-To check whether the database connection works properly, press the **Check Connection** button. If everything works as it’s supposed to, switch to the **Collections** sections, and add the directories containing your photos. Hit **OK**, and wait till digiKam populates the databases with data from photos. This can take a while if you have a lot of items to register in database.
+To check whether the database connection works properly, press the **Check Connection** button. If everything works as it’s supposed to, switch to the **Collections** sections, and add the directories containing your photos. Hit **OK**, and wait till digiKam populates the databases with data from your photos. This can take a while if you have a lot of items to register in the database.
 
 There are some tips and recommendation to obtain the best results with a remote MySQL database server.
 
-With slow network, digiKam hangs a lot of time especially when album contains many items **(>1,000)**. This solution relies on network performances. Problem has been reproducible using Wifi connection, for instance. Switching to Ethernet must solves the problem.
+- With a slow network, digiKam hangs a lot of the time, especially when the album contains many items **(>1,000)**. This issue depends on network performances. For example, the problem has been reproducible using Wifi connections. Switching to Ethernet to solve the problem.
 
-Also, if you have an enormous collection, you should start the MySQL server with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with using MySQL, you could also change your settings in :file:`my.ini` or :file:`~/.my.cnf` files.
+- Also, if you have an enormous collection, you should start the MySQL server with `mysql --max_allowed_packet = 128M`. If you’re well acquainted with using MySQL, you could also change your settings in :file:`my.ini` or :file:`~/.my.cnf` files.
 
 .. warning::
 
-    The locale used in the Mysql server must be the same than the locale from the computer used to run digiKam to prevent problem with the double values saved in the tables of the database.
+    The locale used in the Mysql server must be the same as the locale from the computer used to run digiKam to prevent problems with the common values saved in the tables of the database.
 
 Database Type Criteria
 ----------------------
 
-See the resume below to choose the right database type depending of the use-cases.
+See the summary below to choose the right database type depending on your use case.
 
     ============== ============== ========== ====================================================================================
     Storage        Type           Items      Remarks
@@ -224,24 +228,24 @@ See the resume below to choose the right database type depending of the use-case
 
 .. note::
 
-    See this :ref:`Digital Asset Management chapter <storage_deterioration>` for more details about media and data protection.
+    Refer the :ref:`Digital Asset Management <storage_deterioration>` chapter for more details about media and data protection.
 
-    See also this :ref:`Collection Settings chapter <collections_settings>` for more details about the way to configure your collections depending of your storage policy.
+    Also refer to the :ref:`Collection Settings <collections_settings>` chapter for more details about how to configure your collections depending on your storage policy.
 
 .. important::
 
-    If you share the same **Removable** media to host databases and/or collections between different computers, you must have the same kind of operating system, the same mount paths everywhere (use symbolic links to revolve paths), and the same digiKam version everywhere to prevent conflicts with database schemes.
+    If you share the same **Removable** media for host databases and/or collections between different computers, you must have the same kind of operating system, the same mount paths everywhere (use symbolic links to resolve paths), and the same digiKam version everywhere to prevent conflicts with the database schema.
 
-    If you use a common **Remote** server to host databases and collections, you must use the same digiKam version everywhere to prevent conflicts with database schemes. Computers running digiKam cannot be used at the same time on collections.
+    If you use a common **Remote** server to host *databases and collections*, you must use the same digiKam version everywhere to prevent conflicts with database schema. Computers running different instantiations of digiKam cannot access a common database and collection at the same time.
 
-    If you use a common **Remote** server to host collections, as databases are located on computers, different versions of digiKam can be used and digiKam sessions can run at the same time on collections. Take a care about concurrency access on files metadata if you turned on this option on **Metadata Setup Page**.
+    If you use a common **Remote** server to host collections, with the databases stored on individual computers, then different versions of digiKam can be used and digiKam sessions can run at the same time, accessing the common collections. But you'll need to take a care about concurrent accesses to file metadata, if you have turned this option on from the **Metadata Setup** page.
 
 .. _database_migration:
 
 Database Migration
 ------------------
 
-The photo management application comes up with an exclusive tool named **Database Migration**, that allows users to migrate their data. Suppose, you’re using SQLite and you wish to move all data to MySQL database, migration tool will help you do so. It can help you migrate data from SQLite to MySQL and vice versa.
+digiKam comes up with an exclusive tool named **Database Migration**, that allows users to migrate their data. For example, the migration tool can help you move all your data from a SQLite database into a MySQL database, or vice versa.
 
 To migrate to another database, go to :menuselection:`Settings --> Database Migration...`. A dialog box appears:
 
@@ -251,34 +255,35 @@ To migrate to another database, go to :menuselection:`Settings --> Database Migr
 
     The digiKam Database Migration Tool
 
-Now choose appropriate database types you want to convert to. Finally, click on **Migrate** button to convert the database from SQLite to MySQL (or vice versa). Depending of the database size this operation can take a while.
+Now choose the appropriate database types you want to convert to. Finally, click on **Migrate** button to convert the database from SQLite to MySQL (or vice versa). Depending on the database size, this operation can take a while.
 
 .. note::
 
-    Only the digiKam **Core** database will be migrated while conversion process. All other databases needs to be rebuilt as post-processing with the :ref:`Maintenance Tools <maintenance_tools>`. The **Thumbs** and **Similarity** databases needs to be created from scratch, and the **Face** database needs the option **Rebuild the Training Data**.
+    Only the digiKam **Core** database will be migrated by this conversion process. All of the other databases needs to be rebuilt using post-processing with the :ref:`Maintenance Tools <maintenance_tools>`. The **Thumbs** and **Similarity** databases will need to be created from scratch, and the **Face** database includes the option **Rebuild the Training Data**.
 
 .. _database_backup:
 
 Database Backup Recommendation
 ------------------------------
 
-For security reasons, planing a database backup using crontab over the network can help against device dysfunctions. A NAS or an external drive can also be used for that.
+For security reasons, planning a database backup using crontab over the network can help against device failures. A NAS or an external drive can also be used for backup.
 
-Each database can be named with a different name, not only *digikam*. This allows to users to backup only what is needed. For instance, naming **Core** database as *digiKam_Core*, allows to isolate only this table (the most important file). **Thumbnails**, **Similarity** and **Face Recognition** databases can always be regenerated for scratch.
+Each database can be renamed with a different, unique name. This allows users to backup only what is needed. For instance, renaming **Core** database as *digiKam_Core*, allows you to backup only this database, which is the most important file. **Thumbnails**, **Similarity** and **Face Recognition** databases can always be regenerated from scratch.
 
-The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will explain how to maintain in time the database contents and how to synchronize the collections with databases information (and vice versa).
+The chapter about digiKam :ref:`Maintenance Tools <maintenance_tools>` will explain how to maintain the database contents and how to synchronize the collections with information in the databases (and vice versa).
 
 .. _database_stats:
 
 Database Statistics
 -------------------
 
-digiKam provides a unique tool to show the statistics from your collections. It includes count of images, videos (including individual count by image format), tags etc. Also, includes the **Database Backend** (QSQLITE or QMYSQL) and the **Database Path** (where your collection is located).
+digiKam provides a unique tool to show the statistics from your collections. It includes count of images, videos (including individual count by image format), tags etc. this also includes the **Database Backend** (QSQLITE or QMYSQL) and the **Database Path** (where your collection is located).
 
 You can view your statistics by going to :menuselection:`Help --> Database Statistics...`. A dialog box like this will appear:
 
 .. figure:: images/setup_database_statistics.webp
     :alt:
     :align: center
+    :width: 250 px
 
     The digiKam Database Statistics Dialog

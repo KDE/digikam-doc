@@ -360,7 +360,7 @@ If you want to set filter parameters for finer adjustments, use the **General** 
 
         The Image Editor Restoration Tool Preset Settings
 
-    - **Detail Preservation** [0, 1]: this controls the preservation of features in the image. A low value forces an equal smoothing across the image, whereas bigger values preferably smooth the homogeneous regions, leaving sharper details. A value of 0.9 does a good job of preserving details so that no sharpening is required afterwards. Note that **Detail Preservation** must be always inferior to **Anisotropy**.
+    - **Detail Preservation** [0, 1]: this controls the preservation of features in the image. A low value forces an equal smoothing across the image, whereas bigger values preferably smooth the homogeneous regions, leaving sharper details. A value of 0.9 does a good job of preserving details so that no sharpening is required afterwards. Note that **Detail Preservation** setting must be always less than the **Anisotropy** setting.
 
     - **Anisotropy alpha** [0, 1]: a low value smooths equally in all directions, whereas a value close to 1 smooths in one direction only. If you have film grain or CCD kind of noise a high value will result in wave-like pattern, whereas JPEG artifacts are suited for values close to 1.
 

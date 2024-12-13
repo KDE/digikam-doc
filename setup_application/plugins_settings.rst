@@ -10,14 +10,12 @@
 
 .. _plugins_settings:
 
-Plugins Settings
-================
+:ref:`Plugins Settings <setup_application>`
+===========================================
 
-.. contents::
+The **Plugins** options for digiKam are set from :menuselection:`Settings --> Configure digiKam... --> Plugins page`. This view lists of plugins available for different parts of the program:
 
-This view allows to see the list of plugins available for different part of the program:
-
-    - Generic: tools shared between Album View, Light Table and Image Editor. These tools are also available in Showfoto.
+    - Generic: tools shared between the Album View, Light Table and Image Editor. These tools are also available in Showfoto.
 
     .. figure:: images/setup_plugins_generic.webp
         :alt:
@@ -25,7 +23,7 @@ This view allows to see the list of plugins available for different part of the 
 
         The Generic Plugins Setup Page
 
-    - Image Editor: specific tools to edit item in editor. These tools are also available in Showfoto.
+    - Image Editor: specific tools used for editing items. These tools are also available in Showfoto.
 
     .. figure:: images/setup_plugins_editor.webp
         :alt:
@@ -33,7 +31,7 @@ This view allows to see the list of plugins available for different part of the 
 
         The Image Editor Plugins Setup Page
 
-    - Batch Queue Manager: specific digiKam tools to process item in batch.
+    - Batch Queue Manager: specific digiKam tools for batch processing of items.
 
     .. figure:: images/setup_plugins_batch.webp
         :alt:
@@ -41,7 +39,7 @@ This view allows to see the list of plugins available for different part of the 
 
         The Batch Queue Manager Plugins Setup Page
 
-    - Image Loaders: tools to load item contents in memory. These tools are also available in Showfoto.
+    - Image Loaders: tools used to load items into memory. These tools are also available in Showfoto.
 
     .. figure:: images/setup_plugins_loaders.webp
         :alt:
@@ -49,4 +47,4 @@ This view allows to see the list of plugins available for different part of the 
 
         The Image Loaders Plugins Setup Page
 
-If you double-click on one plugin entry in a list, you will open a dialog showing details about the tool.
+If you double-click on a plugin entry in a list, you will open a dialog showing details about the tool.

@@ -357,13 +357,13 @@ You can change the **Brush size** to paint masks on the canvas. To change mask r
 
     Preservation of features is not possible if enlarging too much. The inflation process is the exact reverse of the shrinking process, so the maximum amount of pixels you can add to a layer corresponds to the amount of pixels that are not protected. For example, if you have a 1000 pixel wide image and you have marked a 800 pixel wide area for protection, the final width should be less than 1200.
 
-The sample image below illustrates where masks have been applied to preserve important areas in green and remove unwanted areas in red.
+The sample image below illustrates where masks have been applied to preserve important areas in green and remove unwanted areas in red. The image width will be reduced by 40% and the height will be unchanged.
 
 .. figure:: images/editor_liquid_rescale_masks.webp
     :alt:
     :align: center
 
-    **Step 2**: Liquid Rescale Preservation and Suppression Masks Applied Over the Sample Image Before Resizing
+    **Step 2**: Liquid Rescale Preservation and Suppression Masks Applied Over the Sample Image Before Width Resizing Down
 
 Energy Function
 ~~~~~~~~~~~~~~~
@@ -423,7 +423,7 @@ By default, the tool tries to find the seams which cross the lowest-contrast are
 
 Since in many cases this simple contrast-based method is not optimal, the energy function can be *biased* by the user, who can decide that some areas should have a higher energy (using a preservation masks) or, on the contrary, that they should have a lower energy (using a suppression mask), and therefore effectively *drive* the seams and the whole process.
 
-See the sample image below after it has been resized, reducing its width by 30%. The image height is still the same. Notice the preserved areas were not deformed by the operation, but the unwanted areas have magically disappeared.
+See the sample image below after it has been resized, reducing its width by 40%. The image height is still the same. Notice the preserved areas were not deformed by the operation, but the unwanted areas have magically disappeared.
 
 .. figure:: images/editor_liquid_rescale_after.webp
     :alt:

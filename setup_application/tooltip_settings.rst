@@ -10,12 +10,10 @@
 
 .. _tooltip_settings:
 
-Tooltip Settings
-================
+:ref:`Tooltip Settings <setup_application>`
+===========================================
 
-.. contents::
-
-This setup page covers all options of information appearing when the mouse hovers over a file icon in the Image Area. According to the checked options they will be shown or not.
+The **Tool-Tip** options for digiKam are set from :menuselection:`Settings --> Configure digiKam... --> Tool-Tip page`. Options on this page control what information is displayed when the mouse hovers over a file icon in the Image Area. Each checkbox enables or disables the display of the specified information. The tool tip font and size can be selected from the top option on the right.
 
 .. figure:: images/setup_tooltip.webp
     :alt:
@@ -23,7 +21,9 @@ This setup page covers all options of information appearing when the mouse hover
 
     A Tooltip Visible Over A Thumbbar Item
 
-This view presents the information displayed in a tooltip over the **Icon Items** with the relevant settings done in the configuration page. 
+The **Tool-Tip** page has three tabs controlling the tooltips displayed for Icons, Albums and Import items.
+
+The **Icon Items** tab controls what information is displayed in a tooltip over **Icon Items**.
 
 .. figure:: images/setup_tooltip_icon.webp
     :alt:
@@ -33,14 +33,10 @@ This view presents the information displayed in a tooltip over the **Icon Items*
 
 .. _tooltip_font:
 
-On the top a common option is available to customize the **Font** used to render tooltips everywhere in the application.
+The Album Items tab controls what information is displayed in a tooltip over the **Albums** or **Tags** tree-views displayed from the **Main Window**.
 
-Two other configuration views exists to customize:
-
-    - The tooltips visible over the **Album Items**, as the **Albums** or **Tags** tree-views from **Main Window**.
-
-    - The tooltips visible over the **Import Items** from the camera import tool icon-view.
+The Import Items tab controls what information is displayed in a tooltip over the camera import tool icon-view.
 
 .. note::
 
-    Enabling the **Import Items** tooltips can require to turn on the **Use File Metadata** option from the **Camera Behavior** settings panel. Look :ref:`this section <camera_behavior>` from this manual for more details.
+    Enabling the **Import Items** tooltips can require you to turn on the **Use File Metadata** option from the **Camera Behavior** settings panel. Look at :ref:`this section <camera_behavior>` from this manual for more details.

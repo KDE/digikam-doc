@@ -10,21 +10,23 @@
 
 .. _metadata_settings:
 
-Metadata Settings
-=================
+:ref:`Metadata Settings <setup_application>`
+============================================
 
 .. contents::
 
-Image files can have some metadata embedded into the image file format. These metadata can be stored in a number of standard formats as JPEG, TIFF, PNG, JPEG2000, PGF, and RAW files. Metadata can be read and written in the `Exif <https://en.wikipedia.org/wiki/Exif>`_, `IPTC <https://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model>`_, and `XMP <https://en.wikipedia.org/wiki/Extensible_Metadata_Platform>`_ formats if they are present in the file.
+The **Metadata** options for digiKam are set from :menuselection:`Settings --> Configure digiKam... --> Metadata page`.
 
-Storing in metadata allows one to preserve this information when moving or sending the files to different systems.
+Image files can include embedded metadata in the image file format. These metadata can be stored in a number of standard formats as JPEG, TIFF, PNG, JPEG2000, PGF, and RAW files. Metadata can be read and written in the `Exif <https://en.wikipedia.org/wiki/Exif>`_, `IPTC <https://en.wikipedia.org/wiki/IPTC_Information_Interchange_Model>`_, and `XMP <https://en.wikipedia.org/wiki/Extensible_Metadata_Platform>`_ formats if they are present in the file.
+
+Storing metadata directly in image files allows this information to be preserved when moving or sending image files to different systems.
 
 .. _metadata_behavior:
 
 Behavior Settings
 -----------------
 
-The **Behavior** tab allows you to select what information digiKam will write to the metadata and control how digiKam will deal with this embedded information.
+The **Behavior** tab allows you to select what metadata digiKam will write to image files and controls how digiKam will deal with this embedded information.
 
 .. figure:: images/setup_metadata_behavior.webp
     :alt:
@@ -32,46 +34,46 @@ The **Behavior** tab allows you to select what information digiKam will write to
 
     The digiKam Metadata General Behavior Settings Page
 
-The options available in the **Write This Information to the Metadata** section are listed below:
+The options available in the **Write This Information to the Metadata** section are:
 
     - **Image tags** will store the tag paths and keywords used to mark the contents. Usually this information is stored in IPTC and XMP.
     - **Captions and titles** will store the internationalized strings used to describe the contents. Usually this information is stored in Exif, IPTC, and XMP.
-    - **Rating** will store the rate of the contents. Usually this information is stored in Exif and XMP.
-    - **Pick label** will store the quality of the contents. Usually this information is stored in XMP.
-    - **Color label** will store the color flag used to classify your contents while your workflow. Usually this information is stored in XMP.
+    - **Rating** will store the rating assigned to the image. Usually this information is stored in Exif and XMP.
+    - **Pick label** will store the pick label indicating the quality of the contents. Usually this information is stored in XMP.
+    - **Color label** will store the color flag you assigned to classify your contents according to your workflow. Usually this information is stored in XMP.
     - **Timestamps** will store the dates of the contents. Usually this information is stored in Exif, IPTC, and XMP.
-    - **Metadata templates (Copyrights etc.)**: will store the set of internationalized strings used by the agencies workflow. Usually this information is stored in IPTC and XMP.
+    - **Metadata templates (Copyrights etc.)**: will store the set of internationalized strings used by agencies in their workflows. Usually this information is stored in IPTC and XMP.
     - **Face Tags (including face areas)**: will store the face tag paths and the rectangles corresponding to the zones around faces. Usually this information is stored in XMP.
-    - **Geolocation information (GPS)**: will store the world map position of the contents. Usually this information is stored in Exif and XMP.
+    - **Geolocation information (GPS)**: will store the geographic position associated with the contents, usually where the image was taken. Usually this information is stored in Exif and XMP.
 
-The options available in the **Reading and Writing Metadata** section are listed below:
+The options available in the **Reading and Writing Metadata** section are:
 
-    - **Delegate to ExifTool backend all operations to write metadata to files** allows to write metadata to files with the `ExifTool <https://exiftool.org/>`_ backend instead `Exiv2 <https://exiv2.org/>`_. This last one is primary used for all operations on metadata. Using ExifTool instead will slowdown a little bit the synchronization of files metadata with database.
-    - **Write metadata to DNG files** allows to delegate to ExifTool all operations to write metadata into DNG files.
-    - **If possible write metadata to RAW files** allows to delegate to ExifTool all operations to write metadata into RAW files. This feature is disabled by default.
+    - **Delegate to ExifTool backend all operations to write metadata to files** specifies that metadata should be written to image files using the `ExifTool <https://exiftool.org/>`_ backend instead of the default `Exiv2 <https://exiv2.org/>`_. Using ExifTool instead of Exiv2 will slow down the synchronization of file metadata with the database.
+    - **Write metadata to DNG files** specifies that metadata should be written into DNG files using the ExifTool. This feature is disabled by default.
+    - **If possible write metadata to RAW files** specifies that metadata should be written into RAW files using the ExifTool. This feature is disabled by default.
 
 .. note::
 
-    See also the ExifTool backend configuration from the :ref:`ExifTool Settings <metadata_exiftool>` section of this manual, and the `ExifTool write limitations <https://exiftool.org/#limitations>`_.
+    Also refer to the ExifTool backend configuration described in the :ref:`ExifTool Settings <metadata_exiftool>` section of this manual, and the section on `ExifTool write limitations <https://exiftool.org/#limitations>`_.
 
-On the bottom, a section group extra behavior settings:
+The three options on the bottom specify other behaviors:
 
-    - **Use Lazy Synchronization** allows to schedule metadata for synchronization instead to flush immediately. digiKam will only write metadata when user clicks on the **Apply Pending Changes To Metadata** icon in the status bar or when application is shutdown.
-    - **Update file modification timestamp when files are modified** allows to update file timestamps when files are changed as when you update metadata or image data. Note: disabling this option can introduce some dysfunctions with external applications which use file timestamp properties to detect file modifications automatically.
-    - **Rescan file when files are modified** allows to force digiKam to rescan files that has been modified outside the application. If a file has changed it is file size or if the last modified timestamp has changed, a rescan of that file will be performed when digiKam starts.
+    - **Use Lazy Synchronization** allows you to control when metadata are written. When unchecked, synchronization and writing of metadata occurs immediately. When checked, digiKam will only write metadata when the user clicks on the **Apply Pending Changes To Metadata** icon in the status bar or when the application is shutdown.
+    - **Update file modification timestamp when files are modified** allows you to update file timestamps anytime files are changed, such as when you update metadata or image data. Note: disabling this option can introduce some issues with external applications that use file timestamp properties to automatically detect file modifications.
+    - **Rescan file when files are modified** allows you to force digiKam to rescan files that have been modified outside the application. If a file has changed its file size or if the last modified timestamp has changed, a rescan of that file will be performed when digiKam starts.
 
 .. _metadata_sidecars:
 
 Sidecars Settings
 -----------------
 
-The **Sidecars** tab allows user to control whether digiKam will read and write from/to XMP sidecars or not. You can also customize the granularity of write operations to XMP sidecar:
+The **Sidecars** tab allows a user to control whether or not digiKam will read and write from/to XMP sidecars. You can also customize the granularity of write operations to XMP sidecar:
 
-    - **Write to XMP sidecar only** will not touch the item metadata.
-    - **Write to item and XMP Sidecar** will touch both item and sidecar at the same time.
-    - **Write to XMP sidecar for read-only item only** will handle sidecar for non-writable items only, as video or RAW files for example.
+    - **Write to XMP sidecar only** will not write metadata into the item (image file).
+    - **Write to item and XMP Sidecar** will write to both item and sidecar at the same time.
+    - **Write to XMP sidecar for read-only item only** will write to sidecars for non-writable items only, such as video or RAW files.
 
-Filename for the sidecars set to :file:`filename.ext.xmp`. For example, :file:`image1.dng` will have a sidecar file named :file:`image1.dng.xmp`. With the option **Sidecar file names are compatible with commercial programs** digiKam will create the XMP sidecar files with a compatible file name (:file:`image1.xmp`) used by many commercial programs.
+The default filename for sidecars is automatically set to :file:`filename.ext.xmp`. For example, :file:`image1.dng` will have a sidecar file named :file:`image1.dng.xmp`. If the **Sidecar file names are compatible with commercial programs** option is enabled, digiKam will instead create the XMP sidecar files with a compatible file name (:file:`image1.xmp`) used by many commercial programs.
 
 .. figure:: images/setup_metadata_sidecars.webp
     :alt:
@@ -81,9 +83,9 @@ Filename for the sidecars set to :file:`filename.ext.xmp`. For example, :file:`i
 
 .. note::
 
-    If the box **Read from sidecar files** is checked, digiKam will only read the sidecar while ignoring the embedded metadata.
+    If the box **Read from sidecar files** is checked, digiKam will only read the sidecar file and ignore the embedded metadata.
 
-The option **Additional sidecar file extensions** allows to add extra filename extensions to be processed alongside regular items, independently of the XMP sidecars. These files will be hidden, but regarded as an extension of the main file. Just write :file:`thm pp3` to support :file:`filename.thm` (extra Jpeg thumbnail for RAW) and :file:`filename.pp3` (RAWTheraPee metadata) sidecars.
+The option **Additional sidecar file extensions** allows you to add extra filename extensions to be processed alongside regular items, independent of the XMP sidecars. These files will be hidden, but regarded as an extension of the main file. Just write :file:`thm pp3` to support :file:`filename.thm` (extra Jpeg thumbnail for RAW) and :file:`filename.pp3` (RAWTheraPee metadata) sidecars.
 
 .. _metadata_rotation:
 
@@ -96,16 +98,18 @@ Rotation Settings
 
     The digiKam Metadata Rotation Behavior Settings Page
 
-**Show images/thumbnails rotated according to orientation tag**: this will use any orientation information that your camera has included in the Exif information to automatically rotate your photographs so that they are the correct way up when displayed. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can click with the right mouse button on the thumbnail and select **Auto-rotate/flip according to Exif orientation**. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
+The first options specify digiKam's behavior when rotating a file.
 
-**Set orientation tag to normal after rotate/flip**: the auto-rotate option automatically corrects the orientation of images taken with digital cameras that have an orientation sensor. The camera adds an orientation tag to the image's Exif metadata. digiKam can read this tag to adjust the image accordingly. If you manually rotate an image, these metadata will be incorrect. This option will set the orientation tag to *Normal* after an adjustment, assuming that you rotated it to the correct orientation. Switch this off if you don't want digiKam to make changes to the orientation tag, when you rotate or flip the image.
+**Show images/thumbnails rotated according to orientation tag**: this will use any orientation information that your camera has included in the Exif information to automatically rotate your photographs so that they are displayed the correct way up. It will not actually rotate the image file, only the display of the image on the screen. If you want to permanently rotate the image on file, you can click with the right mouse button on the thumbnail and select **Auto-rotate/flip according to Exif orientation**. The image will then be rotated on disk and the tag will be reset to "normal". If your camera routinely gets this orientation information wrong you might like to switch this feature off.
+
+**Set orientation tag to normal after rotate/flip**: the auto-rotate option automatically corrects the orientation of images taken with digital cameras that have an orientation sensor. The camera adds an orientation tag to the image's Exif metadata. digiKam can read this tag to adjust the image accordingly. If you manually rotate an image, these metadata will be incorrect. This option will set the orientation tag to *Normal* after an adjustment, assuming that you rotated it to the correct orientation. Switch this off if you don't want digiKam to make changes to the orientation tag when you rotate or flip the image.
 
 .. _metadata_viewers:
 
 Views Settings
 --------------
 
-These settings allows to customize the metadata contents displayed in Exif, Makernotes, IPTC, XMP, and ExifTool viewers from the right sidebar. For more details see :ref:`this section <metadata_view>` from the manual.
+These settings allow you to specify the metadata contents displayed in Exif, Makernotes, IPTC, XMP, and ExifTool viewers from the right sidebar when using custom filters. For more details see :ref:`this section <metadata_view>` from the manual.
 
 .. figure:: images/setup_metadata_views.webp
     :alt:
@@ -118,7 +122,7 @@ These settings allows to customize the metadata contents displayed in Exif, Make
 ExifTool Settings
 -----------------
 
-`ExifTool <https://exiftool.org/>`_ is a backend engine that digiKam can use to process operations on metadata, as view, read, and write. This panel only show the detection of the ExifTool binary program, and the supported formats with the respective read and write features.
+`ExifTool <https://exiftool.org/>`_ is a backend engine that digiKam can use to process operations on metadata, such as view, read, and write. This tab indicates the presence of the ExifTool binary program, and lists the read and write support for supported formats.
 
 .. figure:: images/setup_metadata_exiftool.webp
     :alt:
@@ -128,7 +132,7 @@ ExifTool Settings
 
 .. note::
 
-    To replace the Exiv2 backend by ExifTool with all read and write metadata operations, see the :ref:`Metadata Behavior <metadata_behavior>` section of this manual.
+    To replace the Exiv2 backend by ExifTool for all read and write metadata operations, see the :ref:`Metadata Behavior <metadata_behavior>` section of this manual.
 
 .. _metadata_baloo:
 
@@ -143,7 +147,7 @@ Baloo Settings
 
     The digiKam Settings For The Baloo Metadata Search Engine
 
-This page allows to share metadata stored in digiKam database with the Baloo search engine. Extra applications as **KDE Dolphin** file manager can use the Baloo interface to provide file search results with items managed by the digiKam database.
+This page allows the sharing of metadata stored in the digiKam database with the Baloo search engine. Extra applications such as the **KDE Dolphin** file manager can use the Baloo interface to provide file search results with items managed by the digiKam database.
 
 .. note::
 
@@ -154,7 +158,7 @@ This page allows to share metadata stored in digiKam database with the Baloo sea
 Advanced Settings
 -----------------
 
-The **Advanced** tab allows you to manage namespaces used by digiKam to store and retrieve tags, ratings and comments. This functionality is often used by advanced users to synchronize metadata between different software. Please leave the default settings if you are not sure what to do here.
+The **Advanced** tab allows you to manage namespaces used by digiKam to store and retrieve tags, ratings and comments. This functionality is often used by advanced users to synchronize metadata between different software. Please leave the settings at their default values if you are not sure of what you are doing.
 
 The categories that you can manage with these advanced settings are:
 
@@ -172,21 +176,21 @@ For each category you can set the read and write behavior in metadata. The defau
 
     The digiKam Advanced Metadata Settings For the **Caption** Category
 
-On this example, the top **Caption** entry in the list is **Xmp.dc.description**, and it will be read by digiKam first. If it contains a valid value it will be used, otherwise the next entry named **Xmp.exif.UserComment**, etc. The entries list priority is high on the top and low on the bottom. The entry in the list are used only if item is enabled with the checkbox preceding the name.
+On this example, the top **Caption** entry in the list is **Xmp.dc.description**, and it will be read by digiKam first. If it contains a valid value it will be used, otherwise the next entry named **Xmp.exif.UserComment** will be read, etc. The entries list priority is high on the top and low on the bottom. The entries in the list are used only if the item is enabled with the checkbox preceding the name.
 
 With the buttons on the right side, you can customize the list:
 
-    - **Add**: allows to add a new entry in the tags list.
-    - **Edit**: allows to modify the current select entry in the list.
-    - **Delete**: allows to remove the current select entry in the list.
-    - **Move up**: allows to move the current select entry in the list to a higher priority.
-    - **Move Down**: allows to move the current selected entry in the list to a lower priority.
-    - **Revert Changes**: allows to revert last changes done on the list.
-    - **Save Profile**: allows to save the current configuration to a **Profile** file.
-    - **Load Profile**: allows to load a saved configuration from a **Profile** file.
-    - **Revert To Default**: allows to reset the current list to the default values.
+    - **Add**: add a new entry to the tags list.
+    - **Edit**: modify the selected entry in the list.
+    - **Delete**: remove the selected entry in the list.
+    - **Move up**: move the selected entry in the list to a higher priority.
+    - **Move Down**: move the selected entry in the list to a lower priority.
+    - **Revert Changes**: revert last changes made to the list.
+    - **Save Profile**: saves the current configuration to a **Profile** file.
+    - **Load Profile**: loads a saved configuration from a **Profile** file.
+    - **Revert To Default**: resets the current list to the default values.
 
-The **Profile** are simple ini-based text file used to store the advanced metadata settings to the disk. A profile can be loaded to overload the current configuration, depending of your workflow and the rules to apply for the best interoperability with other photo management programs. digiKam comes with a compatibility profile for **DarkTable**.
+The **Profile** are simple ini-based text file used to store the advanced metadata settings to the disk. A profile can be loaded to overload the current configuration, depending on your workflow and the rules to apply for the best interoperability with other photo management programs. digiKam comes with a compatibility profile for **DarkTable**.
 
 .. important::
 

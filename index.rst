@@ -550,6 +550,10 @@ Setup Application
 
     .. container:: tile no-descr
 
+        :ref:`geolocation_settings`
+
+    .. container:: tile no-descr
+
         :ref:`imgqsort_settings`
 
     .. container:: tile no-descr

@@ -14,28 +14,28 @@
 =====================================
 
 .. |zoom_in| image:: images/left_sidebar_icon_zoom_in.webp
-    :height: 15px
+    :height: 20px
 
 .. |zoom_out| image:: images/left_sidebar_icon_zoom_out.webp
-    :height: 15px
+    :height: 20px
 
 .. |rectangle_select| image:: images/left_sidebar_icon_rectangle_select.webp
-    :height: 15px
+    :height: 20px
 
 .. |region_from_thumbnail| image:: images/left_sidebar_icon_region_from_thumbnail.webp
-    :height: 15px
+    :height: 20px
 
 .. |remove_region| image:: images/left_sidebar_icon_remove_region.webp
-    :height: 15px
+    :height: 20px
 
 .. |filter_images| image:: images/left_sidebar_icon_filter_images.webp
-    :height: 15px
+    :height: 20px
 
 .. |select_images| image:: images/left_sidebar_icon_select_images.webp
-    :height: 15px
+    :height: 20px
 
 .. |remove_filter| image:: images/left_sidebar_icon_remove_filter.webp
-    :height: 15px
+    :height: 20px
 
 There are four tools involving geolocation in digiKam:
 

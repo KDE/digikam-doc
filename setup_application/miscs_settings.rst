@@ -10,12 +10,12 @@
 
 .. _miscs_settings:
 
-Miscellaneous Settings
-======================
+:ref:`Miscellaneous Settings <setup_application>`
+=================================================
 
 .. contents::
 
-These settings group all application rules customizable by users but not covered in previous setting categories from the setup dialog.
+The **Miscellaneous** options for digiKam are set from :menuselection:`Settings --> Configure digiKam... --> Miscellaneous page`. These settings group all application rules customizable by users but not covered in previous setting categories from the setup dialog.
 
 .. _behavior_settings:
 
@@ -31,56 +31,56 @@ Scan Operations
 
     The digiKam Behavior Configuration Page
 
-Set the option **Scan for new items at startup** to force digiKam to scan all collections for new items to register new elements in database. The scan is performed in the background through the progress manager available in the statusbar when digiKam main interface is loaded. If your computer is fast enough, this will have no effect on usability of digiKam while scanning. If your collections are huge or if you use a remote database, this can introduce low latency, and it is recommended to disable this option and to plan a manual scan through the maintenance tool at the right moment.
+The **Scan for new items at startup** forces digiKam to scan all collections for new items each time digiKam is run. The scan is performed in the background when the digiKam main interface is loaded. The progress of the scan is displayed in the status bar. If your computer is fast enough, digiKam should be perfectly usable while scanning for new items. You probably should disable this option if your collections are huge, or if you use a remote database. In these cases, you should perform manual scans for new items when needed using :menuselection:`Tool --> Scan for new items`.
 
-Set the option **Fast Scan** to significantly speed up the scan. New items, deleted and also renamed items are found. In order to find items that have been changed, this option must be deactivated.
+The **Fast Scan** option significantly speeds up the scan, looking for new items, deleted items and renamed items. Disable this option if you need to scan for items that are not new, but have been changed.
 
-**Detect faces in newly added images** option will perform automatically a face detection on items imported to the collections.
+The **Detect faces in newly added images** option will automatically perform face detection on items imported to the collections.
 
-Set the option **Remove obsolete core database objects** to force digiKam to clean up the core database from obsolete item entries. Entries are only deleted if the connected item file was already removed, i.e. the database object wastes space. This option does not clean up other databases as the thumbnails or recognition db. For clean up routines for other databases, please use the maintenance tool. Take a care that option slow down startup stages.
+The **Remove obsolete core database objects** option forces digiKam to clean up the core database by removing obsolete item entries, which are entries that no longer point to an item stored in the collection. This option does not clean up the thumbnails or face recognition databases. (The maintenance tool provides options for cleaning up the other databases.) Enabling this option will slow down digiKam's startup.
 
 .. _genericrules_settings:
 
-Generic Rules
-~~~~~~~~~~~~~
+Generic Settings
+~~~~~~~~~~~~~~~~
 
-With the **Confirm when moving items to trash** and **Confirm when permanently deleting items** settings you can set the verbosity of digiKam when you delete a photograph or an Album. See the :ref:`Deleting a Photograph <deleting_photograph>` and the :ref:`Deleting an Album <deleting_album>` sections for more details.
+The **Confirm when moving items to trash** and **Confirm when permanently deleting items** options control whether digiKam asks for confirmation before deleting a photograph or an Album. See the :ref:`Deleting a Photograph <deleting_photograph>` and the :ref:`Deleting an Album <deleting_album>` sections for more details.
 
-The editorial changes done through the right sidebar can be quietly applied by digiKam when setting the **Do not confirm when applying changes in the right sidebar** option. Otherwise the changes must be applied by pressing the **Apply changes** button.
+The **Do not confirm when applying changes in the right sidebar** option controls whether digiKam asks for confirmation before changing items based on interactions with the right sidebar. Such changes are automatically applied if this option is enabled. Otherwise the **Apply changes** button must be pressed to apply changes.
 
-The option **Show only face tags for assigning names in people sidebar** will restrict people tree-view contents to face tags available when you assign a name to an **Unconfirmed** face. If you want to learn more details about face management, take a look to :ref:`this section of the manual <people_view>`.
+The **Show only face tags for assigning names in people sidebar** option will restrict people tree-view contents to face tags available when you assign a name to an **Unconfirmed** face. If you want to learn more details about face management, take a look at :ref:`this section <people_view>` of the manual.
 
-The option **Initially select the first item in the album** will force to highlight the top left icon-view thumbnail when a new album is selected.
+The **Initially select the first item in the album** option will automatically select and highlight the top left thumbnail whenever a new album is selected.
 
-The option **Expand current tree item with a single mouse click** allows to customize how the mouse button will be used to expand a nested album branch.
+The **Expand current tree item with a single mouse click** option controls how the mouse button is used to expand a nested album branch.
 
-With the **Scroll current item to center of thumbbar** setting, you can force thumbbar to center current selected item with mouse pointer on the center of visible area.
+The **Scroll current item to center of thumbbar** option controls the scrolling of the thumbbar. When enabled, the thumbbar scrolls to place the current selected item in the middle of the thumbbar. When disabled, the current selection may or may not be in the center of the thumbbar.
 
-The **Get album date source** option allows to adjust the album date depending on the option set when new items are found during scanning. Possible values are:
+The **Get album date source** option specifies the source to use for setting the album date when new items are found during scanning. Possible values are:
 
-    - **From The Newest Item Date**: to take the date from the newest item hosted in album.
-    - **From The Oldest Item Date**: to take the date from the oldest item hosted in album.
-    - **From The Average Date**: to compute the date from an average of all items hosted in album.
-    - **From The Folder Date**: to take the file system date.
-    - **No Change Of Date**: do not modify the date.
+    - **From The Newest Item Date**: takes the date from the newest item in the album.
+    - **From The Oldest Item Date**: takes the date from the oldest item in the album.
+    - **From The Average Date**: computes the date from an average of all items in the album.
+    - **From The Folder Date**: takes the file system date.
+    - **No Change Of Date**: does not modify the date.
 
-With the **String comparison type** setting, you can set the way in which strings are compared inside digiKam. This influences the sorting of the tree views. Possible values are:
+The **String comparison type** option, sets the way in which strings are compared inside digiKam. This influences the sorting order for the tree views. Possible values are:
 
-    - **Natural** tries to compare strings in a way that regards some normal conventions. The result will be sort naturally even if they have a different number of digits inside.
-    - **Normal** uses a more technical approach. Use this style if you want to entitle albums with ISO dates (as *201006* or *20090523*) and the albums should be sorted according to these dates.
+    - **Natural** compares strings using standard alphanumeric sorting, sorting numbers with fewer digits before numbers with more digits. In this mode, an album named *202409 Olympic* comes *before* an album named *20240625 Maydale*.
+    - **Normal** uses a different approach that respects ISO dates, independent of the number of digits. In this mode, an album named *202409 Olympic* comes *after* an album named *20240625 Maydale*.
 
-With the **Lower bound for minimum similarity** option, you can select the lower bound of the minimum similarity threshold for fuzzy and duplicates searches. The default value is 40. Selecting a lower value than 40 can make the search really slow.
+The **Lower bound for minimum similarity** option, selects the lower bound of the minimum similarity threshold for fuzzy and duplicate searches. The default value is 40. Selecting a lower value than 40 can significantly slow the search.
 
 .. _updates_settings:
 
 Application Updates
 ~~~~~~~~~~~~~~~~~~~
 
-The **Updates** settings allows to tune how the check the online availability of a new application version. You can select **Only For Stable Releases** which are official versions safe to use in production. Another choice is **Weekly Pre-Releases** which is proposed to tests quickly new features but not recommended to use in production as bugs can remain.
+The three options in the **Updates** section determine how digiKam checks online for the latest version of digiKam. When checking for a new version you can either select **Only For Stable Releases** to receive notifications about official versions safe to use in production, or **Weekly Pre-Releases** to receive notifications about the latest releases suitable for testing new features, but not recommended for production use.
 
-The option **Use Version With Debug Symbols** allows to download version including debug symbols. This version is more heavy but can help developers to trace dysfunctions in debugger.
+The option **Use Version With Debug Symbols** allows you to download versions of digiKam that include debug symbols. These versions are larger but can help developers trace errors in a debugger.
 
-Finally, on the bottom, a **Check Now** button allow to send a request for an update. The **Last check** date is indicated on the left side. If a new version is available online, a dialog will appears as below.
+The **Check Now** button on the bottom sends a request for an update. The **Last check** date is indicated on the left side. If a new version is available online, the following dialog will appear:
 
 .. figure:: images/setup_update_new.webp
     :alt:
@@ -88,7 +88,7 @@ Finally, on the bottom, a **Check Now** button allow to send a request for an up
 
     Dialog under Windows When a new digiKam Version is Available Online
 
-From this dialog, press the **Download** button to process. A new progress dialog will appears as below.
+Press the **Download** button to download the new version. A dialog will then appear to indicate the download progress.
 
 .. figure:: images/setup_update_download.webp
     :alt:
@@ -96,7 +96,7 @@ From this dialog, press the **Download** button to process. A new progress dialo
 
     Progress Dialog under Windows to Get the new Version Available Online
 
-When the download is complete, a checksum is computed to be sure that files is not corrupted. If all is fine, a new dialog appears as below.
+When the download is complete, a checksum is computed to be sure that the files were not corrupted. If all is fine, a new dialog appears as below.
 
 .. figure:: images/setup_update_install.webp
     :alt:
@@ -104,11 +104,11 @@ When the download is complete, a checksum is computed to be sure that files is n
 
     Dialog under Windows When Install is Ready to be Processed
 
-Just press **Install** button to process the final stage. The current digiKam session will be closed and installer will be started.
+Just press **Install** button to complete the installation. The current digiKam session will be closed and the installer will be started.
 
 .. note::
 
-    AppImage Linux bundle do not require installation on the system. File is downloaded and ready to use. The dialog propose to open desktop files-manager at the download place instead.
+    The AppImage Linux bundle does not require installation on the system. The downloaded file is ready to use. In this case, the dialog will instead propose to open the desktop file manager.
 
 .. _appearance_settings:
 
@@ -121,7 +121,7 @@ Appearance Settings
 
     The digiKam Appearance Configuration Page
 
-With the **Show splash screen at startup** setting, you can switch off the display of the splash screen when application loads. This may speed up the start time slightly.
+The **Show splash screen at startup** option switches off the display of the splash screen when the application first loads. This may slightly speed up starting the program.
 
 .. figure:: images/setup_splash_screen.webp
     :alt:
@@ -129,7 +129,7 @@ With the **Show splash screen at startup** setting, you can switch off the displ
 
     The Splash Screen Visible at Startup of a digiKam Session
 
-With the **Use native file dialogs from system** setting, you can switch from the basic (but universal) open-file dialog included in the application to the more powerful open-file dialog provided by the desktop.
+The **Use native file dialogs from system** option switches from the basic (but universal) open-file dialog included in the application to the more powerful open-file dialog provided by the operating system.
 
 +-------------------------------------------------------+------------------------------------------------------+
 |    .. figure:: images/setup_openfile_basic.webp       |    .. figure:: images/setup_openfile_native.webp     |
@@ -139,7 +139,7 @@ With the **Use native file dialogs from system** setting, you can switch from th
 |       Basic Open-File Dialog under macOS              |        Native Open-File Dialog under macOS           |
 +-------------------------------------------------------+------------------------------------------------------+
 
-With the **Draw frames around grouped items** setting, a more visible decoration will be applied to the items grouped in icon-view.
+The **Draw frames around grouped items** option applies a more visible decoration to the items grouped in the icon view.
 
 +-------------------------------------------------------+------------------------------------------------------+
 |    .. figure:: images/setup_grouped_noframe.webp      |    .. figure:: images/setup_grouped_frame.webp       |
@@ -149,17 +149,17 @@ With the **Draw frames around grouped items** setting, a more visible decoration
 |       Icon-View Grouped Items with no Frame           |        Icon-View Grouped Items with Frame            |
 +-------------------------------------------------------+------------------------------------------------------+
 
-With the **Sidebar tab title** setting, you can set how sidebars on the sides will show the tab titles. Use **Only For Active Tab** option only if you use a small screen resolution as with a laptop computer. Else **For All Tabs** will be a best choice to discover quickly all internal features of digiKam.
+The **Sidebar tab title** option sets how the tab titles are displayed in the left and right sidebars. Select the **Only For Active Tab** option if you use a small screen, such as with a laptop computer. Otherwise the **For All Tabs** option is a better choice for quickly accessing digiKam's features.
 
-With the **Widget style** setting, you can choose the default application window decoration and looks.
+The **Widget style** option selects the default application window decoration and looks.
 
 .. important::
 
-    Even if different widget styles are available, the **Breeze** style gives the best experience on all desktops. It's highly recommended to not change this value.
+    Even if different widget styles are available, the **Breeze** style gives the best experience on all desktops. It's highly recommended that you do not change this value.
 
-With the **Icon theme** setting, you can choose the default application icon theme. Theme availability depends of desktop used to run digiKam. **Breeze** icons-set is the best choice for all desktops.
+The **Icon theme** option selects the default application icon theme. Theme availability is operating-system dependent. The **Breeze** icons-set is generally the best choice for all operating systems.
 
-Finally, the **Application font** option allow to customize the font to use everywhere in the application. Note that extra options exists also to customize fonts for the :ref:`album tree-view <treeview_font>`, the :ref:`icon-view <iconview_font>`, and the :ref:`tooltip <tooltip_font>`.
+Finally, the **Application font** option customizes the font used everywhere in the application. Note that extra options also exist for customizing fonts for the :ref:`album tree-view <treeview_font>`, the :ref:`icon-view <iconview_font>`, and the :ref:`tooltip <tooltip_font>`.
 
 .. _grouping_settings:
 
@@ -172,23 +172,23 @@ Grouping Settings
 
     The digiKam Grouping Configuration Page
 
-This section list the operations to perform on all grouped items depending on the usage context. Operations supported are:
+digiKam offers the powerful capability of grouping images together, but displays only the leading item from the group. This raises the question of which images should be affected when an operation is applied to grouped items. Does the operation apply to all of the items in the group, or just the leading (displayed) item? This section lists all the operations that can be performed on all grouped items, organized into 7 classes. The classes of possible operations are:
 
-    - **Metadata**: when you change information to store in files or in the database.
+    - **Metadata**: when you change information stored in the files or in the database.
     - **Import/Export Tools**: to import and export items.
     - **Batch Queue Manager**: to process all items from a group.
     - **Light Table**: to display grouped items when reviewing by pair.
     - **Slideshow**: to show all grouped items on the screen.
-    - **Renaming**: to all items from a group.
+    - **Renaming**: to rename all items from a group.
     - **Tools**: to post process all items from a group.
 
-For each case, you can select if digiKam can:
+For each class of operations, you can select whether digiKam allies the commanded operation to all items within a group:
 
-- **No**: do nothing.
-- **yes**: operate items.
-- **Ask**: ask to confirm before to continue.
+- **No**: apply operation only to the leading item
+- **Yes**: apply operation to all items in the group.
+- **Ask**: ask to confirm before applying each operation.
 
-For this last case, a dialog as below will appears during operation. You can remember your choice for the next time, this will adjust the operation settings accordingly.
+In the last case, the dialog below will appear during the operation. Selecting **Remember your choice for this operation** will adjust the operation settings accordingly.
 
 .. figure:: images/setup_operation_warning.webp
     :alt:
@@ -201,7 +201,7 @@ For this last case, a dialog as below will appears during operation. You can rem
 Spellcheck Settings
 -------------------
 
-This section allows to control the spellchecking operations done in background in all text edit widgets.
+This section controls the spellcheck operations that can be performed in the background in all text edit widgets.
 
 .. figure:: images/setup_miscs_spellcheck.webp
     :alt:
@@ -209,7 +209,7 @@ This section allows to control the spellchecking operations done in background i
 
     The digiKam Spellcheck Configuration Page
 
-Spellcheck can be used on captions, titles, and other text-edit widgets to auto-detect the current language used in text and will propose alternative with miss-spelled words. With entries where alternative-language can be specified, the contextual language will be used to parse text. Spellcheck depends of open-source **Backends**, including **Language Dictionaries**, to operate sentence analysis. Availability of both are listed in this view for information. If you want to add new language or dictionaries, you need to install relevant packages on your system.
+Spellcheck can be used on captions, titles, and other text-edit widgets to identify spelling errors and propose corrections. digiKam autodetects the language used for the spellcheck, since many text entry fields support multiple languages. Spellcheck depends on open-source **Backends**, including **Language Dictionaries**, to perform sentence analysis. The available backends and languages are listed in this view for your information. If you want to add new languages or dictionaries, you'll need to install the relevant packages onto your system.
 
 .. figure:: images/setup_captions_spellcheck.webp
     :alt:
@@ -217,9 +217,9 @@ Spellcheck can be used on captions, titles, and other text-edit widgets to auto-
 
     The Titles Text Editor from Captions Tab with Spellcheck Feature
 
-The **Default Language** allow to set the language to spellcheck with the *x-default* entry from the alternative-language string. If you select **Auto-detect** value, the string contents will be parsed to determine the language automatically and select the right dictionary for spellchecking. Of course, in all cases the relevant dictionaries must be installed on your computer to see the spellchecking works properly.
+The **Default Language** option sets the language to spellcheck with the *x-default* entry from the alternative-language string. If you select **Auto-detect**, the string contents will be automatically parsed to determine the language and the correct dictionary for spellchecking will be selected. Of course, the relevant dictionaries must be installed on your computer in order for spellchecking to work properly.
 
-You can edit a list of words that Spellcheck must ignore during operations. digiKam already provide a list usual keywords to not verify.
+You can edit a list of words that Spellcheck should ignore during operations. digiKam already provide a list of common keywords to ignore.
 
 .. _localize_settings:
 
@@ -229,7 +229,7 @@ Localize Settings
 The Configuration Page
 ~~~~~~~~~~~~~~~~~~~~~~
 
-This section allows to customize the rules to translate automatically strings from text editor widgets using online translator engine.
+This section allows you to customize the rules for automatic translation of strings in text editor widgets using online translator engines.
 
 .. figure:: images/setup_miscs_localize.webp
     :alt:
@@ -237,16 +237,16 @@ This section allows to customize the rules to translate automatically strings fr
 
     The digiKam Localize Configuration Page
 
-A list of **Alternative Languages** supported by digiKam is provided where you can select your preferred entries hosted in text editor widgets.
+A list of **Alternative Languages** supported by digiKam is provided where you can select your preferred languages to be used in text editor widgets.
 
-Another list allows to know the **Available Translator Languages**, supported by the selected **Online Translator** engine.
+Another list shows the **Available Translator Languages**, supported by the selected **Online Translator** engine.
 
-As number of entries are huge for the both lists, a search engine is available and an option to show only the current selection.
+Each list has a huge number of entries, so a search engine is available to quickly find a language, along with an option to show only the current selection.
 
 Using Strings Localization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In digiKam, the localization is available in special text editor widgets supporting alternative-languages feature. You can see this kind of widget in the :ref:`Captions tab <captions_view>` from **Right Sidebar** and in the :ref:`XMP Metadata Editor <xmp_editor>` for example.
+In digiKam, the localization is available in special text editor widgets supporting alternative-languages feature. Examples of this kind of widget can be seen in the :ref:`Captions tab <captions_view>` available in the **Right Sidebar** and in the :ref:`XMP Metadata Editor <xmp_editor>`.
 
 .. figure:: images/setup_captions_localize.webp
     :alt:
@@ -254,16 +254,16 @@ In digiKam, the localization is available in special text editor widgets support
 
     The Captions Text Editor with Translation Feature
 
-Alternative-languages mean more than one translation available for one string. The **x-default** entry is the native language used as a reference for translations. Typically, it's common to use English words with x-default, but it's not mandatory. When you ask to translate the string, the online translators will be able to auto-detect the current language used with **x-default**.
+Alternative-languages can make more than one translation available for a single string. The **x-default** entry is the native language used as a reference for translations. Typically, x-default is set to English, but that is not mandatory. When you ask to translate the string, the online translators will be able to auto-detect the current language used with **x-default**.
 
-On the top of a text editor widget, you can select the translation entry for the string. The drop-down menu will only show your preferred languages set on the configuration page. The next button on the right allows clearing the current translated entry. The next drop-down button allows creating of a new translation entry using the configured online translator. Finally, the last button on the right side will show the Localize settings page to customize the translation behavior.
+On the top of a text editor widget, you can select the translation entry for the string. The drop-down menu will only show your preferred languages set on the configuration page. The next button on the right clears the current translated entry. The next drop-down button creates a new translation entry using the configured online translator. Finally, the last button on the right side shows the Localize settings page to customize the translation behavior.
 
 .. _system_settings:
 
 System Settings
 ---------------
 
-This section allows to tune special low level configurations used by application. Only change these settings if you know what you do.
+This section allows you to adjust special low-level configurations used by digiKam. Only change these settings if you know what you are doing.
 
 .. figure:: images/setup_miscs_system.webp
     :alt:
@@ -271,26 +271,26 @@ This section allows to tune special low level configurations used by application
 
     The digiKam System Configuration Page
 
-- **Use high DPI scaling from the screen factor**: this option application will scale coordinates in device independent manner according to display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and are therefore theoretically just as large as the graphical interface elements of the system. This option is only available with the **Qt5 version** of application.
+- **Use high DPI scaling from the screen factor**: this option will scale coordinates in a device-independent manner according to the display scale factors provided by the operating system. It scales the graphical interface elements (buttons, text, etc.) in accordance with the Desktop settings. The digiKam graphical interface elements are therefore displayed larger by this factor and therefore should appear just as large as the graphical interface elements used in the native system. This option is only available with the **Qt5 version** of digiKam.
 
-- **Use pixmaps with high DPI resolution**: this option, pixmaps sizes used internally by application will have a device-independent layout geometry. It activates high-resolution icons, otherwise the elements in digiKam would look very blurry under high resolutions. Also, it's recommended to use this option in multi-screen context when resolutions are not the same. This option is only available with the **Qt5 version** of application.
+- **Use pixmaps with high DPI resolution**: this option sizes the pixmaps used internally by digiKam into a device-independent layout geometry, and activates high-resolution icons. If this option is disabled on a high-DPI display, the elements in digiKam may look very blurry when viewed at high resolutions. This option is also recommended for use when using multiple screens with different resolutions. This option is only available with the **Qt5 version** of digiKam.
 
-- **Use the software OpenGL rendering**: this option will disable the GPU hardware accelerations and switch to a software-emulation for all OpenGL usages.
+- **Use the software OpenGL rendering**: this option will disable the GPU hardware accelerations and switch to a software-emulation for all calls to OpenGL.
 
-- **Use the OpenCL hardware acceleration**: this option will enable the GPU accelerations with the faces management, image quality sorting, and auto-tags features. This option affect the `OpenCV <https://opencv.org/>`_ engine used in background for the intensive computation on images. To see all details about the OpenCV hardware support, go to :menuselection:`Help --> Components Information` menu entry, and :ref:`OpenCV section from the dialog <help_componentsinfo>`.
+- **Use the OpenCL hardware acceleration**: this option will enable the GPU hardware accelerations with the face management, image quality sorting, and auto-tags features. This option affects the `OpenCV <https://opencv.org/>`_ engine used in the background for intensive computation on images. To see the details about OpenCV hardware support, go to the :menuselection:`Help --> Components Information` menu item, and look at the :ref:`OpenCV section <help_componentsinfo>` in the dialog.
 
-- **Use the video hardware acceleration**: this option must be used only with compatible hardware GPU devices with the FFmpeg backend. It must be disabled if video media decoding dysfunctions occurs.
+- **Use the video hardware acceleration**: this option must be used only with compatible hardware GPU devices with the FFmpeg backend. Disable this option if video media decoding errors occur.
 
-- **Use the video texture conversion**: this option must be used to reduce CPU usage when video frame are rendered by using GPU-based conversion with the FFmpeg backend. It must be disabled if video media decoding dysfunctions occurs.
+- **Use the video texture conversion**: this option must be used to reduce CPU usage when video frames are rendered by using GPU-based conversion with the FFmpeg backend. Disable this option if video media decoding errors occur.
 
-- **Decoding backend to render video**: this option allows to choose the backend used to render video media with the **Qt6 version** of application. Supported backends are:
+- **Decoding backend to render video**: this option chooses the backend used to render video media with the **Qt6 version** of application. Supported backends are:
 
     - **FFmpeg**: the default and recommended backend available on all platforms. `FFmpeg <https://en.wikipedia.org/wiki/FFmpeg>`_ always includes all necessary codecs to play media.
-    - **GStreamer**: the alternative backend available **under Linux**. `GStreamer <https://en.wikipedia.org/wiki/GStreamer>`_ can requires 3rd-party codecs installation on the system to works properly.
-    - **WMF**: Windows Media Foundation is the alternative backend available **under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ can requires 3rd-party codecs installation on the system to works properly.
-    - **AVFoundation**: the alternative backend available **under macOS**. `AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can requires 3rd-party codecs installation on the system to works properly.
+    - **GStreamer**: the alternative backend available **under Linux**. `GStreamer <https://en.wikipedia.org/wiki/GStreamer>`_ can require the installation of 3rd-party codecs on the system to work properly.
+    - **WMF**: Windows Media Foundation is the alternative backend available **under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ can require the installation of 3rd-party codecs on the system to work properly.
+    - **AVFoundation**: the alternative backend available **under macOS**. `AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can require the installation of 3rd-party codecs on the system to work properly.
 
-- **Enable internal debug logging**: this option will turn on the debug traces on the console used to investigate dysfunctions. Under Linux and macOS, just start the application from a console to show the messages. Under Windows, you needs an extra Microsoft application named `DebugView <https://learn.microsoft.com/sysinternals/downloads/debugview>`_ to display the messages. The default settings from DebugView is enough to capture the traces from the application.
+- **Enable internal debug logging**: this option turns on the debug traces on the console used to investigate errors. Under Linux and macOS, just start the application from a console to show the messages. Under Windows, you need an extra Microsoft application named `DebugView <https://learn.microsoft.com/sysinternals/downloads/debugview>`_ to display the messages. The default settings from DebugView are enough to capture the traces from the application.
 
 .. figure:: images/setup_miscs_system_debugview.webp
     :alt:
@@ -298,13 +298,13 @@ This section allows to tune special low level configurations used by application
 
     digiKam Running Under Windows With DebugView
 
-- **Download Required Binary Data**: with this button you can load the deep-learning model files used with the faces management, image quality sorting, and auto-tags features. Only use it if you bypassed this stage at application first-run.
+- **Download Required Binary Data**: this button loads the deep-learning model files used with the face management, image quality sorting, and auto-tags features. Only use it if you bypassed this stage at the first-run of the application.
 
-- **Network Proxy Server Settings**: this group the options to setup the `proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for your local network. Leave empty if no proxy is required to access to the Internet. Available Proxy options are listed below:
+- **Network Proxy Server Settings**: use this group the options to setup the `proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for your local network. Leave empty if no proxy is required to access the Internet. Available Proxy options are listed below:
 
     - **Proxy**: the address of the Proxy server on the network.
     - **Port**: the Proxy server port on the network.
     - **Proxy type**: the Proxy type available on the network. Two protocols are supported: **Http** or **Socks5**.
-    - **Requires Authentification**: turn on this option if the connection to the Proxy server needs an **Username** and a **Password**.
+    - **Requires Authentication**: turn on this option if the connection to the Proxy server needs a **Username** and a **Password**.
     - **Username**: the name to use to be logged on the Proxy server over the network.
     - **Password**: the password to use to be logged on the Proxy server over the network.

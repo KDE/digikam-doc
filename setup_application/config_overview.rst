@@ -10,15 +10,13 @@
 
 .. _config_overview:
 
-Overview
-========
+:ref:`Overview <setup_application>`
+===================================
 
-.. contents::
-
-digiKam tries to give you as much control over how it works as possible. There are many options that change the behavior of the application. To access these settings select :menuselection:`Settings --> Configure digiKam...` from the menu-bar. The configuration dialog is separated by categories displayed in independent pages. You can change between these pages by clicking on the icons on the left-hand side of the dialog.
+digiKam tries to give you as much control over how it works as possible. There are many options that van be set to control the behavior of the application. To access these settings select either :menuselection:`Settings --> Configure digiKam...` from the menu-bar, or if you are on a Mac, :menuselection:`digiKam --> Preferences...`. The configuration dialog is separated into categories displayed on independent pages. You can switch pages by clicking on the icons on the left-hand side of the dialog.
 
 .. figure:: images/setup_dialog.webp
 
 .. note::
 
-    If you press **Ok** button, the configuration will be saved in your home directory and applied to the current application session. Next Session will re-use the same settings. If you press **Cancel**, nothing will be changed.
+    If you press the **OK** button, the configuration will be saved in your home directory and applied to the current application session. The next Session will re-use the same settings. If you press **Cancel**, nothing will be changed.

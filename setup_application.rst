@@ -16,7 +16,7 @@ Setup Application
 .. figure:: images/index_setup_application.webp
     :alt:
 
-This section explain how to setup application.
+This section explains all of the customized settings you can use to setup or customize the application.
 
 .. toctree::
    :maxdepth: 2
@@ -33,6 +33,7 @@ This section explain how to setup application.
    setup_application/editor_settings.rst
    setup_application/cm_settings.rst
    setup_application/lighttable_settings.rst
+   setup_application/geolocation_settings.rst
    setup_application/imgqsort_settings.rst
    setup_application/camera_settings.rst
    setup_application/plugins_settings.rst

@@ -10,15 +10,17 @@
 
 .. _camera_settings:
 
-Camera Settings
-================
+:ref:`Camera Settings <setup_application>`
+==========================================
+
+The **Camera Settings** options for digiKam are set from :menuselection:`Settings --> Configure digiKam... --> Camera Settings page`.
 
 .. contents::
 
 Setup a Device
 --------------
 
-The camera settings shows on the left of the list of the currently supported cameras. On the right at the top there is an auto-detect button, which tries to identify the camera connected to your computer (make sure that the camera is connected properly to the computer and turned on in the image display mode). Below this are the port settings, the currently supported are **Serial**, **USB**, **Network**, and **Mass Storage**.
+The **Devices** tab of the camera settings view displays a list of the currently supported cameras.
 
 .. figure:: images/setup_camera_device.webp
     :alt:
@@ -26,15 +28,26 @@ The camera settings shows on the left of the list of the currently supported cam
 
     The digiKam Camera Configuration Panel with the gPhoto View
 
-Clicking on a camera in the list from the left will display the supported ports which you can then select. If there is only one supported port it will be automatically selected. At the bottom on the right there is a box for setting the exact path in case of a serial port. Please note that USB interface does not need any paths to be set. If you cannot find your camera on the list, you can try to use a generic **Mass Storage** device selecting Mounted Camera item in the list.
+There are four buttons on the right:
+    - **Add...** brings up the camera configuration dialog to add a new camera.
+    - **Remove** removes the selected camera from the list.
+    - **Edit...** brings up the camera configuration dialog to edit the selected camera.
+    - **Auto-Detect** tries to identify the camera connected to your computer (make sure that the camera is connected properly to the computer, turned on, and set to the image display mode).
 
-At the very bottom is where you set the path for a USB or FireWire (IEEE-1394 or i-link) Mass Storage camera. This box becomes active once you select USB or FireWire Mass Storage camera in the camera list. You need to enter here the path where you mount the camera, usually :file:`/mnt/camera` or :file:`/mnt/removable`.
+The camera configuration dialog is used to add or edit the characteristics of a camera.
 
 .. figure:: images/setup_camera_add.webp
     :alt:
     :align: center
 
     Dialog to Add a Camera Device Using gPhoto Drivers
+
+Clicking on a camera in the list from the left will display the supported ports which you can then select. digiKam currently supports **Serial**, **USB**, **Network**, and **Mass Storage** ports. If there is only one supported port, it will be automatically selected. If you cannot find your camera on the list, you can try to select one of three options in the camera list:
+    -- **Mounted Camera** specifies the mounted camera is a generic **Mass Storage** device.
+    -- **USB PTP Class Camera** specifies the camera uses the Picture Transfer Protocol over USB.
+    -- **PTP/IP Class Camera** specifies the camera uses the Picture Transfer Protocol over IP.
+
+At the very bottom is where you set the path for a USB or FireWire (IEEE-1394 or i-link) Mass Storage camera. This box becomes active once you select USB or FireWire Mass Storage camera in the camera list. You need to enter the path where you mount the camera, usually :file:`/mnt/camera` or :file:`/mnt/removable`.
 
 To be able to use your digital camera with digiKam, connect the camera to your computer, switch the camera to the image display mode and turn it on.
 
@@ -49,13 +62,13 @@ Try and see if digiKam can auto-detect the camera; if not, you can set the camer
 Customize the Behavior
 ----------------------
 
-With the **Behavior** section, you can customize some main rules with your camera as how to deep in file to handle metadata, render high-quality thumbnails, use a default target album to download items, and to deal with already existing file-names while downloading.
+The **Behavior** tab displays options for customizing how digiKam works with your camera. These options include one whether to: read metadata from the camera, render high-quality thumbnails, or use a default target album to download items. Options are also available on how digiKam deals with already existing files during downloads.
 
 .. _camera_behavior_use_file_metadata:
 
 .. important::
 
-    Some options can slow-down the connection stage to the camera. Application will populate icon-view with in-deep metadata while scanning items from the device.
+    The use file metadata and high-quality thumbnail options can slow down the connection to the camera. When enabled, digiKam will populate the icon-view with metadata read from the camera while scanning items from the device.
 
 .. figure:: images/setup_camera_behavior.webp
     :alt:
@@ -65,10 +78,10 @@ With the **Behavior** section, you can customize some main rules with your camer
 
 .. _camera_fiters:
 
-Running Filters at Download
----------------------------
+Import Filters
+--------------
 
-With the **Import Filter** section, you can customize the list of type mime filters, and list the file patterns to ignore while downloading.
+The **Import Filters** tab displays options to customize what files filters should be applied to during import. Files are specified by either mime type, a file name filter, or a path filter. There is also an option to show only new files. The options also include lists of filename patterns and file extensions that should be ignored while downloading.
 
 .. figure:: images/setup_camera_filters.webp
     :alt:
@@ -81,7 +94,7 @@ With the **Import Filter** section, you can customize the list of type mime filt
 Customize Import Interface
 --------------------------
 
-With the **Import Window** section, you can customize options for icon-view information, the preview behavior, and the full-screen elements to show.
+The **Import Window** tab displays options to customize the information displayed in the icon-view, the behavior of previews, and the default UI elements displayed in full-screen mode.
 
 .. figure:: images/setup_camera_window.webp
     :alt:

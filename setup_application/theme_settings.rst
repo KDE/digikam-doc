@@ -10,12 +10,10 @@
 
 .. _theme_settings:
 
-Theme Settings
-==============
+:ref:`Theme Settings <setup_application>`
+=========================================
 
-.. contents::
-
-Color schemes are supplied like themes to personalize digiKam main interface for you pleasure. To access these settings select :menuselection:`Settings --> Themes` from the menubar and select your preferred theme to use.
+Color themes are supplied allowing you to personalize the digiKam main interface. To access these settings select :menuselection:`Settings --> Themes` from the menubar and select your preferred theme.
 
 .. figure:: images/setup_theme_menu.webp
     :alt:
@@ -23,43 +21,48 @@ Color schemes are supplied like themes to personalize digiKam main interface for
 
     The digiKam Color Themes Menu
 
-When theme is selected all elements from the graphical interface must change accordingly with the colors scheme.
+Selecting a theme changes all of the elements of the graphical interface consistent with the theme's color scheme.
 
 .. note::
 
-    Depending of the color theme used, it must be mandatory to restart application to load relevant icons-set working with colors scheme.
+    Depending on the color theme you selected, you may have to restart digiKam to load all of the relevant icons associated with the new color scheme.
 
-    Pairing some application colors scheme and widget style can give a wrong user experience. We recommend to adjust if necessary the **Widget Style** from the **Setup / Misc / Appearance** configuration panel, especially with dark color schemes. See :ref:`this section <appearance_settings>` from this manual for more details about the **Appearance** options.
+    Some color schemes do not work well with some widget styles. So you may find it necessary to adjust the **Widget Style** from the :menuselection:`Settings --> Configure digiKam... --> Miscellaneous page --> Appearance tab`, especially with dark color schemes. See :ref:`this section <appearance_settings>` of this manual for more details about the **Appearance** options.
 
-Look below all themed screenshots taken with Album-View.
+the table below contains examples of the appearance of the Album-View with each available theme.
 
 +-------------------------------------------------------+------------------------------------------------------+
 |    .. figure:: images/setup_theme_blackbody.webp      |    .. figure:: images/setup_theme_colorcontrast.webp |
 |       :alt:                                           |        :alt:                                         |
+|       :width:  250px                                  |        :width:  250px                                |
 |       :align: center                                  |        :align: center                                |
 +-------------------------------------------------------+------------------------------------------------------+
 |               The Black-Body Theme                    |              The Color-Contrast Theme                |
 +-------------------------------------------------------+------------------------------------------------------+
 |    .. figure:: images/setup_theme_darkroom.webp       |    .. figure:: images/setup_theme_fusiongray.webp    |
 |       :alt:                                           |        :alt:                                         |
+|       :width:  250px                                  |        :width:  250px                                |
 |       :align: center                                  |        :align: center                                |
 +-------------------------------------------------------+------------------------------------------------------+
 |               The Dark-Room Theme                     |              The Fusion-Gray Theme                   |
 +-------------------------------------------------------+------------------------------------------------------+
 |    .. figure:: images/setup_theme_graycard.webp       |    .. figure:: images/setup_theme_highkey.webp       |
 |       :alt:                                           |        :alt:                                         |
+|       :width:  250px                                  |        :width:  250px                                |
 |       :align: center                                  |        :align: center                                |
 +-------------------------------------------------------+------------------------------------------------------+
 |               The Gray-Card Theme                     |              The High-Key Theme                      |
 +-------------------------------------------------------+------------------------------------------------------+
 |    .. figure:: images/setup_theme_lowkey.webp         |    .. figure:: images/setup_theme_shadeofgray.webp   |
 |       :alt:                                           |        :alt:                                         |
+|       :width:  250px                                  |        :width:  250px                                |
 |       :align: center                                  |        :align: center                                |
 +-------------------------------------------------------+------------------------------------------------------+
 |               The Low-Key Theme                       |              The Shade-of-Gray Theme                 |
 +-------------------------------------------------------+------------------------------------------------------+
 |    .. figure:: images/setup_theme_sunsetcolor.webp    |    .. figure:: images/setup_theme_whitebalance.webp  |
 |       :alt:                                           |        :alt:                                         |
+|       :width:  250px                                  |        :width:  250px                                |
 |       :align: center                                  |        :align: center                                |
 +-------------------------------------------------------+------------------------------------------------------+
 |               The Sunset-Color Theme                  |              The White-Balance Theme                 |

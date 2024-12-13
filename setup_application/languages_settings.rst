@@ -10,14 +10,12 @@
 
 .. _languages_settings:
 
-Languages Settings
-==================
+:ref:`Languages Settings <setup_application>`
+=============================================
 
-.. contents::
+digiKam has been localized into at least dozens of languages.
 
-digiKam is translated in many languages and you can change the internationalization of application from the :menuselection:`Settings --> Configure Languages` main menu item.
-
-This opens a dialog where you can edit the **Primary language** and the **Fallback language**. First one is the main collection of translations used to render internationalized strings in the application, and this will be your native language. The second one is used to fill the translations if internationalization of some strings are missing from the primary.
+You can change digiKam's primary language from the :menuselection:`Settings --> Configure Language...` menu item. This opens a dialog where you can select the **Primary language** and add an optional **Fallback language**. The primary language determines which translated strings will be used in the application, and this will be your native language. The fallback language is used to fill-in translations if any internationalized strings are missing from the primary set of strings.
 
 .. figure:: images/setup_languages_dialog.webp
     :alt:
@@ -25,13 +23,13 @@ This opens a dialog where you can edit the **Primary language** and the **Fallba
 
     The digiKam Languages Configuration Dialog
 
-Translating an application as digiKam is a long task and require a lots of verification to be validated and published in production. Each language is maintained by independent teams which push works at different times, which cannot be sync with the application release date.
+Translating an application such as digiKam is a long task and requires a lot of verification and validation before it is made available in the production code. Each language is maintained by independent teams which release updates at different times, that are not necessarily in sync with digiKam release dates.
 
 .. note::
 
-    You can set more than one fallback languages to translate application, the lead one is on the top of this list.
+    You can set more than one fallback language in digiKam, the lead one is on the top of this list.
 
-Selecting a language by the drop-down menu must propose a large list of entries. There are currently more than 70 language teams, providing translations for a wide variety of languages, including some that are often not supported by proprietary software.
+The drop-down menu used for selecting a language contains a long list of entries, so scrolling may be required. There are currently more than 70 language teams, providing translations for a wide variety of languages, including some that are often not supported by proprietary software.
 
 .. figure:: images/setup_languages_list.webp
     :alt:
@@ -41,6 +39,6 @@ Selecting a language by the drop-down menu must propose a large list of entries.
 
 .. important::
 
-    To take effect, a language settings change requires to restart the application session.
+    A language setting change requires the application be restarted before the change takes effect.
 
-If you want to help with the application translations workflow, please consult the :ref:`Contribute section of this manual <project_contribute>`.
+If you want to help with the application translations, please consult the :ref:`Contribute  <project_contribute>` section of this manual.
