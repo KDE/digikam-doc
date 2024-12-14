@@ -16,7 +16,7 @@ Geolocation Editor
 .. figure:: images/index_geolocation_editor.webp
     :alt:
 
-This section explain how to use the digiKam geolocation editor.
+This section explains how to use the digiKam geolocation editor.
 
 .. toctree::
    :maxdepth: 2

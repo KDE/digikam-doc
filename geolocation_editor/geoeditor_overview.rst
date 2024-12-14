@@ -10,28 +10,28 @@
 
 .. _geoeditor_overview:
 
-Overview
-========
-
-.. contents::
+:ref:`Overview <geolocation_editor>`
+====================================
 
 Geolocation means assigning, editing and using metadata which describe the geographic place where images or videos were taken. The source of these metadata can be your camera, a separate GPS receiver or other means of geographical information, in particular maps.
 
-Not only for professional photographers can it be interesting to link an image to a precise geographical location. Not everybody uses an airplane to overfly and scan a certain area with automatic GPS data recording. Environmental planners, military, police, construction bureaus, real estate agencies, all will have an immediate application.
+Geolocation is not just a tool for professional photographers, there are a variety of reasons for linking an image to a precise geographical location. While not everyone will acquire images with automatic GPS data recording, many people including environmental planners, military, police, construction bureaus, and real estate agencies, can benefit from image geolocation.
 
-But if, after some time, one has forgotten where the image was taken, if one loves the nice feature to open with a simple click a browser displaying a zoom of the area, if you like to send your image as a postcard to another digiKam user (who is then able to locate your shot), or if you simply need the documentation aspect of it - having position data stored in a photo is great.
+But even amateur photographers find geotagging useful. If enough time has passed that you forget where an image was taken, it is nice to open a map with a simple click to display the locations of your images. And if you want to send your image to someone else, they too can see where the image was taken. Or maybe you simply need to better document the picture. In any case, having position data stored in a photo is great.
 
-GPS (global positioning system) is used as a generic term throughout this document. It just means a location in the common spherical coordinate system that can be displayed on a map. The actual technical implementation that provides the data can be the American GPS, the Russian GLONAS, the European GALILEO or any other system.
+GPS (global positioning system) is used as a generic term throughout this document. It just means a location in the common spherical coordinate system that can be displayed on a map. The actual technical implementation that provides the actual position data can be the American GPS, the Russian GLONASS, the European GALILEO, China's BeiDou or any other system that might come on line in the future.
 
-There are four tools regarding geolocation in digiKam and two in Showfoto:
 
-    - The Map mode of the Image Area which displays images with GPS data on a map depending on the selection on the Left Sidebar, e.g. the images in the album you selected in the Album View, the images with a certain tag assigned (selected in the Tag View), with a certain label and so on. This is only available in digiKam.
+There are four tools involving geolocation in digiKam and two in Showfoto:
 
-    - The Map View on the Left Sidebar of digiKam which is the search tool for finding images by their GPS data. This is also only available in digiKam.
+    - The **Map Mode** of the Image Area displays the locations of geo-tagged images (images with GPS data) on a map depending on the selection in the Left Sidebar, e.g. the images in the album you selected in the Album View, the images with a specified tag (selected in the Tag View), images with a specified label, and so on. This is only available in digiKam.
 
-    - The Geolocation Editor we describe a little bit further below and which is accessible via :menuselection:`Item --> Edit Geolocation...` :kbd:`(Ctrl+Shift+G)` (:menuselection:`File --> Edit Geolocation...` in Showfoto).
+    - The **Map** tab on the Left Sidebar is the search tool for selecting images based on their GPS data. This is also only available in digiKam.
 
-    - The Map tab on the Right Sidebar which shows the location of the image on a map and is purely informative.
+    - The :ref:`Geolocation Editor <geoeditor_overview>`, the topic of this section, is the tool to set and to edit GPS data. The Geolocation Editor is accessible via :menuselection:`Item --> Edit Geolocation...` :kbd:`Ctrl+Shift+G` (:menuselection:`File --> Edit Geolocation...` in Showfoto).
+
+    - The :ref:`Map <maps_view>` tab on the Right Sidebar shows a map with a marker or a thumbnail to indicate the GPS location of the selected image. The map display is purely informative. The GPS coordinates are displayed below the map, along with the time the image was taken.
+
 
 .. figure:: images/geoeditor_main_view.webp
     :alt:
@@ -41,4 +41,4 @@ There are four tools regarding geolocation in digiKam and two in Showfoto:
 
 .. note::
 
-    These tools work for image formats that have Exif or XMP metadata supports or with items using sidecar file.
+    These tools work for image formats that have Exif or XMP metadata supports or with items with an accompanying sidecar file.
