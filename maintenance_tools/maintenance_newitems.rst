@@ -10,8 +10,8 @@
 
 .. _maintenance_newitems:
 
-Scan for New Items
-==================
+:ref:`Scan for New Items <maintenance_tools>`
+=============================================
 
 .. contents::
 
@@ -21,25 +21,26 @@ Scan for New Items
 
     The digiKam Maintenance Options to Scan for New Items
 
-This process will scan the collections you defined in :menuselection:`Settings --> Configure digiKam...` and the **Collections** dialog page, i.e. image files you added to your collections while digiKam was not running. You can run this process also automatically on digiKam startup by checking Scan for new items at startup in :menuselection:`Settings --> Configure digiKam...` and the **Miscellaneous** dialog page.
+The **Scan for New Items** tool will scan the collections you defined in :menuselection:`Settings --> Configure digiKam...` and the **Collections** dialog page, looking for image files you have added to your collections while digiKam was not running. New entries are added to the digiKam database corresponding to each new image file found during the scan.
 
-While the scan for new items process is under progress, notification on the bottom right of main windows will be visible to indicate the amount of items already done.
+The new items scans are performed in the background, so you can continue to use digikam during a scan. While scanning for new items, a progress indicator is displayed in the bottom right corner of the main window.
 
 .. figure:: images/maintenance_scan_process.webp
     :alt:
     :align: center
 
-    The Scan for New Items Process working in the background
+    The Scan for New Items Process Working in the background
 
-.. note::
+This tool can also be directly called from the main menu item :menuselection:`Tools --> Scan for New Items`.
 
-    This process can also be directly called by the main menu, From :menuselection:`Tools --> Scan for New Items` to scan all collections.
+Scanning for New Items Automatically at Startup
+-----------------------------------------------
 
-This process can be also called automatically at startup using the **Scan for new items at startup** option in :menuselection:`Setting --> Configure digiKam...` and the **Behavior** tab from the **Miscellaneous** dialog page. Take a care that scanning for new items at startup can take a while and slow-down application initialization.
+You can also run this process automatically on digiKam startup by checking **Scan for new items at startup** in :menuselection:`Settings --> Configure digiKam... --> Miscellaneous page --> Behavior tab`.
 
-To be precise, this option will force digiKam to scan all collections for new items to register new elements in database. The scan is performed in the background through the progress manager available in the status-bar when digiKam main interface is loaded. If your computer is fast enough, this will have no effect on usability of digiKam while scanning. If your collections are huge or if you use a remote database, this can introduce low latency, and it is recommended to disable this option and to plan a manual scan through the maintenance tool at the right moment.
+Be aware that scanning for new items at startup can take a while, slowing-down application initialization. If your computer is fast enough, the background scan will have no effect on the usability of digiKam while scanning. Scanning can introduce delays if your collections are huge or if you use a remote database. In these cases you may want to disable automatic scans and instead use the maintenance tool to perform a manual scan when necessary.
 
-Another option from this setup panel named **Fast scan (detects new, deleted and renamed items)** can also be turn on to significantly speed up the scan. New items, deleted and also renamed items are found. In order to find items that have been changed, this option must be deactivated.
+Another option from this setup panel named **Fast scan (detects new, deleted and renamed items)** can also be turned on to significantly speed up the scan. This scan only looks for new, deleted, or renamed items. This option must be deactivated in order to find items that have been otherwise edited or changed.
 
 .. figure:: images/maintenance_scan_setup.webp
     :alt:
@@ -49,4 +50,4 @@ Another option from this setup panel named **Fast scan (detects new, deleted and
 
 .. note::
 
-   To identify files quickly and register items changes in database while scanning, digiKam uses a hash. This is not a full hash of the file for performance reasons, but it's reliable enough. The file size is therefore included. digiKam uses these parameters to try to find files again during a scan if they have been moved or renamed externally. To have a scan process the most efficient, we recommend doing file operations within digiKam, not by an external application as a file manager.
+   digiKam uses a hash to identify files quickly and register items changes in the database while scanning. For performance reasons this is not a full hash of the file, but the file size is included, so it's reliable enough. digiKam uses these same parameters to try to find files during a scan that have been externally moved or renamed. To have make the scan process as efficient as possible, we recommend doing file operations within digiKam, avoiding changing files and folders using external applications such as a file manager.

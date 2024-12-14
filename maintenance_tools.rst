@@ -16,7 +16,7 @@ Maintenance Tools
 .. figure:: images/index_maintenance_tools.webp
     :alt:
 
-This section explain how to use the digiKam maintenance tools.
+This section explains how to use the digiKam maintenance tools.
 
 .. toctree::
    :maxdepth: 2
@@ -31,5 +31,6 @@ This section explain how to use the digiKam maintenance tools.
    maintenance_tools/maintenance_fingerprints.rst
    maintenance_tools/maintenance_duplicates.rst
    maintenance_tools/maintenance_faces.rst
+   maintenance_tools/maintenance_autotags.rst
    maintenance_tools/maintenance_quality.rst
    maintenance_tools/maintenance_metadata.rst

@@ -682,6 +682,10 @@ Maintenance Tools
 
     .. container:: tile no-descr
 
+        :ref:`maintenance_autotags`
+
+    .. container:: tile no-descr
+
         :ref:`maintenance_quality`
 
     .. container:: tile no-descr

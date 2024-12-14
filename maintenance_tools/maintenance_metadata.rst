@@ -10,10 +10,8 @@
 
 .. _maintenance_metadata:
 
-Metadata Synchronizer
-=====================
-
-.. contents::
+:ref:`Metadata Synchronizer <maintenance_tools>`
+================================================
 
 .. figure:: images/maintenance_metadata_synchronizer.webp
     :alt:
@@ -21,7 +19,7 @@ Metadata Synchronizer
 
     The digiKam Maintenance Options to Synchronize Metadata
 
-This process synchronize items metadata with database contents. The operation **Direction** can be:
+This **Metadata Synchronizer** tool synchronizes items metadata, that is metadata stored in the image files, with metadata stored in the digiKam database. The operation **Direction** can be:
 
     - From the database to files.
 
@@ -29,11 +27,11 @@ This process synchronize items metadata with database contents. The operation **
 
 .. note::
 
-    As synchronization is a time consuming process, especially when metadata are written in files, it's a good idea to restrict the job to certain albums or tags. 
+    As synchronization is a time consuming process, especially when metadata are written to files, it's a good idea to restrict the job to certain albums or tags.
 
-The synchronization depends of the settings from :menuselection:`Settings --> Configure digiKam...` and **Metadata** page. All these settings is described in :ref:`the dedicated section <metadata_settings>` from **Setup Application**.
+The synchronization depends on the settings from :menuselection:`Settings --> Configure digiKam... --> Metadata page`. All these settings are described in :ref:`this section <metadata_settings>` of this manual.
 
-While the metadata synchronizer process is under progress, as the process may take much time and digiKam cannot be used, a non modal dialog appear to make sure that no database corruption occurs.
+The metadata synchronizer process may take a significant amount of time, all the while constantly accessing the digiKam database. To make sure that no database corruption occurs a non-modal dialog appears and digiKam cannot be used until the process completes.
 
 .. figure:: images/maintenance_metadata_process.webp
     :alt:

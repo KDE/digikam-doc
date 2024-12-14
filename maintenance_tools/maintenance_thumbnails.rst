@@ -10,10 +10,8 @@
 
 .. _maintenance_thumbnails:
 
-Rebuild Thumbnails
-==================
-
-.. contents::
+:ref:`Rebuild Thumbnails <maintenance_tools>`
+=============================================
 
 .. figure:: images/maintenance_rebuild_thumbnails.webp
     :alt:
@@ -21,11 +19,11 @@ Rebuild Thumbnails
 
     The digiKam Maintenance Options to Rebuild Thumbnails
 
-Rebuilding the thumbnails might be necessary if you worked on your images with other applications or if you changed the thumbnail size.
+digiKam automatically generates and maintains thumbnails, but the **Rebuild Thumbnail** tool might be required if you have worked on your images with other applications or if you have changed the thumbnail size.
 
-From :menuselection:`Settings --> Configure digiKam...` and **Tree-Views** tab from **Views** panel, the option **Use Large Thumbnail Size for High Screen Resolution** can be turned on to render **Icon-View** with large thumbnail size, for example in case of 4K monitor is used. By default this option is turned off and the maximum thumbnail size is limited to 256x256 pixels.
+From :menuselection:`Settings --> Configure digiKam... --> View page --> Tree-Views tab`, the option **Use Large Thumbnail Size for High Screen Resolution** can be turned on to render **Icon-View** with a large thumbnail size suitable for use on a 4K monitor. By default this option is turned off and the maximum thumbnail size is limited to 256x256 pixels.
 
-When this option is enabled, thumbnail size can be extended to 512x512 pixels. This option will store more data in thumbnail database and will use more system memory. digiKam needs to be restarted to take effect, and this **Rebuild Thumbnails** tool needs to be processed over whole collections. 
+When this option is enabled, thumbnail size can be extended to 512x512 pixels. This option will increase the size of the thumbnail database and will use more system memory. digiKam needs to be restarted for this option to take effect, and this **Rebuild Thumbnails** tool needs to be run over all collections.
 
 .. figure:: images/maintenance_thumbnails_setup.webp
     :alt:
@@ -35,13 +33,13 @@ When this option is enabled, thumbnail size can be extended to 512x512 pixels. T
 
 .. important::
 
-   Even if thumbnails are stored in the database using wavelets compression PGF format, large collection can generate huge database storage. Take a care to use a place to store the database with enough space available.
+   digiKam stores thumbnails in the database using the wavelet-compressed PGF format, but large collections can still generate huge thumbnail databases. Take care to use a sufficiently large storage media with a large amount of available space to store the database.
 
 .. note::
 
-    From :menuselection:`Settings --> Configure digiKam...` and **Behaviour** tab from **Miscelleneous** panel, the **Scan** options can speed up the process in the first case or if you just added pictures to your collection.
+    The **Scan** options from :menuselection:`Settings --> Configure digiKam... --> Miscelleneous page --> Behaviour tab` speed up the process in the first case or if you just added pictures to your collection.
 
-While the rebuild thumbnails process is under progress, notification on the bottom right of main windows will be visible to indicate the amount of items already done.
+While the rebuild thumbnails process is underway, a progress indicator is displayed in the bottom right corner of the main window.
 
 .. figure:: images/maintenance_thumbnails_process.webp
     :alt:
@@ -51,4 +49,4 @@ While the rebuild thumbnails process is under progress, notification on the bott
 
 .. note::
 
-    This process can also be directly called by :kbd:`F5` keyboard shortcuts to rebuild thumbnails for the current selected album.
+    This process can also be directly called by the keyboard shortcut :kbd:`F5` to rebuild the thumbnails for the currently selected album.

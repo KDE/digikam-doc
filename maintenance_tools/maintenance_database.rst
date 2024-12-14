@@ -10,10 +10,8 @@
 
 .. _maintenance_database:
 
-Database Cleaning
-=================
-
-.. contents::
+:ref:`Database Cleaning <maintenance_tools>`
+============================================
 
 .. figure:: images/maintenance_database_cleaning.webp
     :alt:
@@ -21,7 +19,7 @@ Database Cleaning
 
     The digiKam Maintenance Database Options
 
-This process will analysis your database files to consolidate the contents. The Core database is always cleaned. You can select additional databases for cleaning by selecting one of the extra options listed below:
+The **Database Cleaning** tool analyzes your database files looking for entries to delete that have no matching files or folders. When this tool is run, the Core database is always cleaned. You can select additional databases for cleaning by selecting one of the extra options listed below:
 
     - **Cleanup the Thumbnails database**.
 
@@ -29,13 +27,11 @@ This process will analysis your database files to consolidate the contents. The 
 
     - **Cleanup the Similarity database**.
 
-    - **Shrink all databases** to ensure de-fragmentation and just keeps the database small.
+    - **Shrink all databases** to ensure de-fragmentation, keeping the database as small as possible.
 
 .. note::
 
-   The last option leads to the vacuuming (shrinking) of the databases. Vacuuming is supported both for SQLite and MySQL.
-
-While the scan for new items process is under progress, as the process may take much time and digiKam cannot be used, a non modal dialog appear to make sure that no database corruption occurs.
+   The last option leads to the vacuuming (shrinking) of the databases. Vacuuming is supported for both SQLite and MySQL. Database shrinking may take some time. In order to avoid database corruption during this operation, digiKam will display the following non modal dialog, and stop responding to user commands until the shrinking operation is complete.
 
 .. figure:: images/maintenance_database_process.webp
     :alt:
