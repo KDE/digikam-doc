@@ -1,13 +1,13 @@
 # Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
-# Valter Mura <valtermura@gmail.com>, 2023.
+# SPDX-FileCopyrightText: 2023, 2024 Valter Mura <valtermura@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-08 01:42+0000\n"
-"PO-Revision-Date: 2023-03-20 23:17+0100\n"
+"PO-Revision-Date: 2024-12-12 18:37+0100\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.03.80\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #: ../../batch_queue/custom_script.rst:1
 msgid "digiKam Custom Script from Batch Queue Manager"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../batch_queue/custom_script.rst:14
 msgid ":ref:`Custom Script <batch_queue>`"
-msgstr ""
+msgstr ":ref:`Script personalizzato <batch_queue>`"
 
 #: ../../batch_queue/custom_script.rst:16
 msgid "Contents"
@@ -42,22 +42,17 @@ msgid "Overview"
 msgstr "Panoramica"
 
 #: ../../batch_queue/custom_script.rst:21
-#, fuzzy
-#| msgid ""
-#| "The batch Queue Manager allows to customize a **Workflow** with a "
-#| "specific plugin dedicated to run a script and process your images with "
-#| "external tools as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool "
-#| "<https://en.wikipedia.org/wiki/ExifTool>`_ for example."
 msgid ""
 "The Batch Queue Manager allows you to customize a **Workflow** by adding the "
 "**Custom Script** tool to run a script to process your images with external "
 "tools such as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool "
 "<https://en.wikipedia.org/wiki/ExifTool>`_."
 msgstr ""
-"Il gestore elaborazione in serie consente di personalizzare un **flusso di "
-"lavoro** con un'estensione dedicata, per avviare uno script ed elaborare le "
-"tue immagini con strumenti esterni tipo `ImageMagick <https://imagemagick."
-"org/>`_ o `ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_, per esempio."
+"Il gestore elaborazione in serie ti consente di personalizzare un **flusso "
+"di lavoro** aggiungendo lo strumento **Script personalizzato** per avviare "
+"uno script ed elaborare le tue immagini con strumenti esterni tipo "
+"`ImageMagick <https://imagemagick.org/>`_ o `ExifTool <https://en.wikipedia."
+"org/wiki/ExifTool>`_."
 
 #: ../../batch_queue/custom_script.rst:23
 msgid ""
@@ -68,6 +63,13 @@ msgid ""
 "entirely within the plugin. These scripts can include a set of environment "
 "variables that specify filenames and few types of metadata."
 msgstr ""
+"Lo strumento **Script personalizzato** si trova nella categoria **Strumenti "
+"personalizzati** dell'elenco **Strumenti di base**. Lo strumento è "
+"progettato per eseguire il codice sorgente di uno script di shell che può "
+"richiamare uno o più programmi a riga di comando per ciascun elemento nella "
+"coda. Lo script di shell viene scritto dall'utente completamente all'interno "
+"dell'estensione. Questi script possono includere un gruppo di variabili "
+"d'ambiente che specificano i nomi file e alcuni tipi di metadati."
 
 #: ../../batch_queue/custom_script.rst:29
 msgid "The Batch Queue Manager Including a Custom Script in a Workflow"
@@ -79,36 +81,20 @@ msgstr ""
 msgid "The tool provides these options:"
 msgstr "Lo strumento offre le opzioni seguenti:"
 
-# VM: 'file type' and not image type.
 #: ../../batch_queue/custom_script.rst:33
-#, fuzzy
-#| msgid ""
-#| "**Output Image Type**: this value allows to setup the expected type of "
-#| "image format to use at the output of your script. The default is **Same "
-#| "as input**, but you can set **JPEG**, **PNG**, or **TIFF**. Take a care "
-#| "that JPEG is a lossy compression format, only support 8-bit color depth, "
-#| "and does not supports transparency."
 msgid ""
 "**Output Image Type**: specifies the expected image format at the output of "
 "your script. The default is **Same as input**, but you can set **JPEG**, "
 "**PNG**, or **TIFF**. Please note that JPEG is a lossy compression format, "
 "only supports 8-bit color depth, and does not support transparency."
 msgstr ""
-"**Tipo di file output**: questo valore consente di impostare il tipo di "
-"formato immagine atteso da usare nell'output dello script. Il valore "
-"predefinito è **Uguale a quello di input**, ma puoi anche impostare "
-"**JPEG**, **PNG** o **TIFF**. Fai attenzione che JPEG è un formato di "
-"compressione con perdita di dati, supporta solo la profondità di colore a 8 "
-"bit e non supporta la trasparenza."
+"**Tipo di file output**: specifica il formato immagine atteso nell'output "
+"dello script. Il valore predefinito è **Uguale a quello di input**, ma puoi "
+"anche impostare **JPEG**, **PNG** o **TIFF**. Nota che JPEG è un formato di "
+"compressione con perdita di dati, supporta soltanto la profondità di colore "
+"a 8 bit e non supporta la trasparenza."
 
 #: ../../batch_queue/custom_script.rst:35
-#, fuzzy
-#| msgid ""
-#| "**Shell Script**: this text edit field allows to enter the source code of "
-#| "your shell script. Under **Linux** and **macOS**, `Bash script <https://"
-#| "en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ is supported. Under "
-#| "**Windows** `Batch script <https://en.wikipedia.org/wiki/Batch_file>`_ is "
-#| "supported."
 msgid ""
 "**Shell Script**: this text field is where you enter the source code for "
 "your shell script. `Bash script <https://en.wikipedia.org/wiki/"
@@ -116,18 +102,13 @@ msgid ""
 "script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported under "
 "**Windows**."
 msgstr ""
-"**Script di shell**: questo campo di modifica testuale ti permette di "
-"inserire il codice sorgente del tuo script di shell. In **Linux** e "
-"**macOS** è supportato lo `script Bash <https://en.wikipedia.org/wiki/"
-"Bash_(Unix_shell)>`_. In **Windows** è supportato lo `script Batch <https://"
-"en.wikipedia.org/wiki/Batch_file>`_."
+"**Script di shell**: questo campo testuale è dove inserisci il codice "
+"sorgente per il tuo script di shell. È supportato lo `script Bash <https://"
+"en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ in **Linux** e **macOS**, mentre "
+"in **Windows** è supportato lo `script Batch <https://en.wikipedia.org/wiki/"
+"Batch_file>`_."
 
 #: ../../batch_queue/custom_script.rst:37
-#, fuzzy
-#| msgid ""
-#| "The keywords that you can use in your script code are listed below. The "
-#| "tool will replace all occurrences of keywords in script at run time "
-#| "before shell execution. Take a care that keywords are case sensitive."
 msgid ""
 "The keywords that you can use in your script code are listed below. The tool "
 "will replace all occurrences of keywords in the shell script at run time "
@@ -135,150 +116,97 @@ msgid ""
 msgstr ""
 "Le parole chiave che puoi utilizzare nel codice del tuo script sono elencate "
 "sotto. Lo strumento sostituirà tutte le occorrenze delle parole chiave nello "
-"script al tempo di esecuzione, prima dell'esecuzione della shell. Fai "
-"attenzione che le parole chiave distinguono tra maiuscole e minuscole."
+"script di shell al tempo di esecuzione, prima dell'esecuzione dello script. "
+"Nota che le parole chiave distinguono tra maiuscole e minuscole."
 
 #: ../../batch_queue/custom_script.rst:39
-#, fuzzy
-#| msgid ""
-#| "**$INPUT** for workflow input filename (with special characters escaped)."
 msgid ""
 "**$INPUT** is replaced by the workflow input filename (with special "
 "characters escaped)."
 msgstr ""
-"**$INPUT** per nome file di input del flusso di lavoro (con caratteri "
-"speciali di escape)."
+"**$INPUT** è sostituito dal nome file di input del flusso di lavoro (con "
+"caratteri speciali di escape)."
 
 #: ../../batch_queue/custom_script.rst:41
-#, fuzzy
-#| msgid ""
-#| "**$OUTPUT** for workflow output filename (with special characters "
-#| "escaped)."
 msgid ""
 "**$OUTPUT** is replaced by the workflow output filename (with special "
 "characters escaped)."
 msgstr ""
-"**$OUTPUT** per nome file di output del flusso di lavoro (con caratteri "
-"speciali di escape)."
+"**$OUTPUT** è sostituito dal nome file di output del flusso di lavoro (con "
+"caratteri speciali di escape)."
 
 #: ../../batch_queue/custom_script.rst:45
-#, fuzzy
-#| msgid ""
-#| "A new file is always expected on **$OUTPUT**. With a script programs that "
-#| "do not create a new file (e.g. changing metadata with ExifTool) you must "
-#| "first copy **$INPUT** to **$OUTPUT** with a command appropriate to the "
-#| "operating system and then make the changes to **$OUTPUT**."
 msgid ""
 "A new file is always expected on **$OUTPUT**. Script programs that do not "
 "create a new file (e.g. changing metadata with ExifTool), must first copy **"
 "$INPUT** to **$OUTPUT** with the appropriate command for the operating "
 "system, before making any changes to **$OUTPUT**."
 msgstr ""
-"Ci si aspetta sempre un nuovo file in **$OUTPUT**. Con un programma di "
-"script che non crea un nuovo file (per es. il cambio di metadati con "
-"ExifTool) devi prima copiare **$INPUT** in **$OUTPUT** con un comando "
-"conforme al sistema operativo, poi eseguire le modifiche in **$OUTPUT**."
+"Ci si aspetta sempre un nuovo file in **$OUTPUT**. I programmi di script che "
+"non creano un nuovo file (per es. il cambio di metadati con ExifTool) devono "
+"prima copiare **$INPUT** in **$OUTPUT** con il corretto comando per il "
+"sistema operativo, prima di eseguire qualsiasi modifica in **$OUTPUT**."
 
 #: ../../batch_queue/custom_script.rst:47
-#, fuzzy
-#| msgid ""
-#| "The environment variables that you can use in your script code are listed "
-#| "below:"
 msgid "The environment variables that you can use in your shell script are:"
-msgstr ""
-"Le variabili di ambiente utilizzabili nel tuo codice di script sono "
-"riportate di seguito:"
+msgstr "Le variabili di ambiente utilizzabili nel tuo script di shell sono:"
 
 #: ../../batch_queue/custom_script.rst:49
-#, fuzzy
-#| msgid ""
-#| "**TITLE**: to handle digiKam **Title** item properties from database."
 msgid "**TITLE**: to use the digiKam **Title** item property."
-msgstr ""
-"**TITLE**: per gestire le proprietà dell'elemento **Titolo** di digiKam "
-"dalla banca dati."
+msgstr "**TITLE**: per usare la proprietà dell'elemento **Titolo** di digiKam."
 
 #: ../../batch_queue/custom_script.rst:51
-#, fuzzy
-#| msgid ""
-#| "**COMMENTS**: to handle digiKam **Caption** item properties from database."
 msgid "**COMMENTS**: to use the digiKam **Caption** item property."
 msgstr ""
-"**COMMENTS**: per gestire le proprietà dell'elemento **Didascalia** di "
-"digiKam dalla banca dati."
+"**COMMENTS**: per usare la proprietà dell'elemento **Didascalia** di digiKam."
 
 #: ../../batch_queue/custom_script.rst:53
-#, fuzzy
-#| msgid ""
-#| "**COLORLABEL**: to handle digiKam **Color Label** item properties from "
-#| "database."
 msgid "**COLORLABEL**: to use the digiKam **Color Label** item property."
 msgstr ""
-"**COLORLABEL**: per gestire le proprietà dell'elemento **Etichetta "
-"colorata** di digiKam dalla banca dati."
+"**COLORLABEL**: per usare la proprietà dell'elemento **Etichetta colorata** "
+"di digiKam."
 
 #: ../../batch_queue/custom_script.rst:55
-#, fuzzy
-#| msgid ""
-#| "**PICKLABEL**: to handle digiKam **Pick Label** item properties from "
-#| "database."
 msgid "**PICKLABEL**: to use the digiKam **Pick Label** item property."
 msgstr ""
-"**PICKLABEL**: per gestire le proprietà dell'elemento **Etichetta di "
-"scelta** di digiKam dalla banca dati."
+"**PICKLABEL**: per usare la proprietà dell'elemento **Etichetta di scelta** "
+"di digiKam."
 
 #: ../../batch_queue/custom_script.rst:57
-#, fuzzy
-#| msgid ""
-#| "**RATING**: to handle digiKam **Rating** item properties from database."
 msgid "**RATING**: to use the digiKam **Rating** item property."
 msgstr ""
-"**RATING**: per gestire le proprietà dell'elemento **Valutazione** di "
-"digiKam dalla banca dati."
+"**RATING**: per usare la proprietà dell'elemento **Valutazione** di digiKam."
 
 #: ../../batch_queue/custom_script.rst:59
-#, fuzzy
-#| msgid ""
-#| "**TAGSPATH**: to handle digiKam **Tags** item properties from database."
 msgid "**TAGSPATH**: to use the digiKam **Tags** item property."
-msgstr ""
-"**TAGSPATH**: per gestire le proprietà dell'elemento **Tag** di digiKam "
-"dalla banca dati."
+msgstr "**TAGSPATH**: per usare la proprietà dell'elemento **Tag** di digiKam."
 
 #: ../../batch_queue/custom_script.rst:61
 msgid ""
 "All of these properties are set based on the image properties stored in the "
 "digiKam database."
 msgstr ""
+"Tutte queste proprietà sono impostate basandosi sulle proprietà "
+"dell'immagine memorizzata nella banca dati di digiKam."
 
 #: ../../batch_queue/custom_script.rst:65
-#, fuzzy
-#| msgid ""
-#| "Under Linux and macOS, environment variables can be accessed in script "
-#| "with **$** as prefix of variable names (for example **$INPUT**). The "
-#| "interpreter used to run the script is **/bin/bash**."
 msgid ""
 "Under Linux and macOS, environment variables can be accessed in the script "
 "with **$** as a prefix for variable names (for example **$INPUT**). The "
 "interpreter used to run the script is **/bin/bash**."
 msgstr ""
 "In Linux e macOS, le variabili d'ambiente sono accessibili nello script con "
-"**$** come prefisso dei nomi di variabile (per esempio **$INPUT**). "
+"**$** come un prefisso per nomi di variabile (per esempio **$INPUT**). "
 "L'interprete utilizzato per eseguire lo script è **/bin/bash**."
 
 #: ../../batch_queue/custom_script.rst:67
-#, fuzzy
-#| msgid ""
-#| "Under Windows, environment variables can be accessed in script with **%** "
-#| "as prefix and suffix of variable names (for example **%INPUT%**). The "
-#| "interpreter used to run the script is **cmd.exe**."
 msgid ""
 "Under Windows, environment variables can be accessed in the script with **"
 "%** as a prefix and suffix of variable names (for example **%INPUT%**). The "
 "interpreter used to run the script is **cmd.exe**."
 msgstr ""
 "In Windows, le variabili d'ambiente sono accessibili nello script con **%** "
-"come prefisso e suffisso dei nomi di variabile (per esempio **%INPUT%**). "
+"come un prefisso e suffisso dei nomi di variabile (per esempio **%INPUT%**). "
 "L'interprete utilizzato per eseguire lo script è **cmd.exe**."
 
 #: ../../batch_queue/custom_script.rst:71
@@ -286,28 +214,16 @@ msgid "Return Value"
 msgstr "Valore restituito"
 
 #: ../../batch_queue/custom_script.rst:73
-#, fuzzy
-#| msgid ""
-#| "By convention, a **Bash script** under Linux and macOS, 0 is returned on "
-#| "success or an integer in the range 1-255 for something else. Use **exit < "
-#| "error_code >** to pass the return value on the workflow."
 msgid ""
 "By convention, a **Bash script** under Linux and macOS returns 0 on success "
 "or an integer in the range 1-255 for an error. Use **exit < error_code >** "
 "to pass the return value back to the workflow."
 msgstr ""
-"Per convenzione, uno **script Bash** in Linux e macOS, restituisce 0 per "
-"valori corretti o un intero nell'intervallo 1-255 per qualcos'altro. Usa "
-"**exit < codice_errore >** per passare il valore restituito al flusso di "
-"lavoro."
+"Per convenzione, uno **script Bash** in Linux e macOS restituisce 0 per "
+"valori corretti o un intero nell'intervallo 1-255 per un errore. Usa **exit "
+"< codice_errore >** per ripassare il valore restituito al flusso di lavoro."
 
 #: ../../batch_queue/custom_script.rst:75
-#, fuzzy
-#| msgid ""
-#| "Under Windows, a **Batch script** returns 0 on success and another value "
-#| "for something else, but the value is a signed integer, so a negative "
-#| "value is possible. Use **EXIT /B < error_code >** to pass the return "
-#| "value on the workflow."
 msgid ""
 "Under Windows, a **Batch script** returns 0 on success and another value for "
 "an error, but the value is a signed integer, so a negative value is "
@@ -315,24 +231,20 @@ msgid ""
 "workflow."
 msgstr ""
 "In Windows, uno **script Batch** restituisce 0 per valori corretti e un "
-"altro valore per qualcos'altro, ma il valore è un intero con segno, dunque è "
+"altro valore per un errore, ma il valore è un intero con segno, dunque è "
 "possibile un valore negativo. Usa **EXIT /B < codice_errore >** per passare "
 "il valore restituito al flusso di lavoro."
 
 #: ../../batch_queue/custom_script.rst:77
-#, fuzzy
-#| msgid ""
-#| "The Batch Queue Manager handles the value returned by your script. If "
-#| "zero is returned, the workflow continue as expected, else the workflow is "
-#| "broken and Batch Queue Manager stop the process."
 msgid ""
 "The Batch Queue Manager handles the value returned by your script. If zero "
 "is returned, the workflow will continue as expected, otherwise the workflow "
 "is interrupted and the Batch Queue Manager stops processing."
 msgstr ""
 "Il Gestore elaborazione in serie gestisce il valore restituito dallo script. "
-"Se è restituito zero, il flusso di lavoro continua come atteso, diversamente "
-"il flusso è danneggiato e il Gestore elaborazione in serie ferma il processo."
+"Se è restituito zero, il flusso di lavoro continuerà come atteso, in caso "
+"contrario il flusso è interrotto e il Gestore elaborazione in serie ferma "
+"l'elaborazione."
 
 #: ../../batch_queue/custom_script.rst:80
 msgid "Examples"
@@ -343,15 +255,6 @@ msgid "Proof of Concept"
 msgstr "Prova di fattibilità"
 
 #: ../../batch_queue/custom_script.rst:85
-#, fuzzy
-#| msgid ""
-#| "This First example that you can see below, ...do nothing special. It will "
-#| "print on the console the input/output file names and item properties "
-#| "passed from batch queue manager to the script and copy input file to "
-#| "output file (this stage is required else Batch Queue Manager returns an "
-#| "error as the target file does not exist). The script returns the value "
-#| "from the file copy command, this one is parsed by the Batch Queue Manager "
-#| "to check the workflow stream."
 msgid ""
 "This first example shown below does nothing special. It prints on the "
 "console the input/output file names and item properties passed from the "
@@ -361,28 +264,23 @@ msgid ""
 "returns the value from the file copy command, which is parsed by the Batch "
 "Queue Manager for each item in the workflow."
 msgstr ""
-"Questo primo esempio osservabile sotto... non fa nulla di speciale. Stampa "
-"sulla console i nome file di input/output e le proprietà degli elementi "
-"passati dal gestore elaborazione in serie allo script e copia il file di "
-"input nel file di output (questa fase è richiesta, altrimenti il gestore "
+"Questo primo esempio mostrato sotto non fa nulla di speciale. Stampa sulla "
+"console i nome file di input/output e le proprietà degli elementi passati "
+"dal Gestore elaborazione in serie allo script, e copia il file di input nel "
+"file di output (questa fase è obbligatoria, altrimenti il Gestore "
 "elaborazione in serie restituirebbe un errore in quanto il file di "
 "destinazione non esiste). Lo script restituisce il valore dal comando copia "
-"file; questo viene analizzato dal gestore elaborazione in serie per "
-"verificare il flusso del lavoro."
+"file; che viene analizzato dal Gestore elaborazione in serie per ciascun "
+"elemento nel flusso del lavoro."
 
 #: ../../batch_queue/custom_script.rst:102
-#, fuzzy
-#| msgid ""
-#| "If you have started digiKam from a terminal and enabled the debug traces "
-#| "on :ref:`Setup/Miscs/System dialog page <system_settings>`, you will see "
-#| "something like this:"
 msgid ""
 "If you have started digiKam from a terminal and enabled the debug traces on :"
 "ref:`Setting/Miscellaneous/System dialog page <system_settings>`, you will "
 "see something like this:"
 msgstr ""
 "Se hai avviato digiKam da terminale e abilitato la tracciatura di debug "
-"nella :ref:`finestra di dialogo Configurazione/Varie/Sistema "
+"nella :ref:`finestra di dialogo Impostazione/Varie/Sistema "
 "<system_settings>`, vedrai qualcosa di simile a questo:"
 
 #: ../../batch_queue/custom_script.rst:116
@@ -434,20 +332,14 @@ msgid "Add a Watermark with ImageMagick"
 msgstr "Aggiungere una filigrana con ImageMagick"
 
 #: ../../batch_queue/custom_script.rst:130
-#, fuzzy
-#| msgid ""
-#| "The second example below is more complex and uses **ImageMagick** command "
-#| "like tool to add a multiline text superimposed over pictures to create a "
-#| "visible watermark on the center of images."
 msgid ""
 "The second example below is more complex and uses the **ImageMagick** "
 "command line tool to add visible watermarks by superimposing a multiline "
 "text field over each image in the Queue."
 msgstr ""
-"Il secondo esempio sotto riportato è più complesso e utilizza il comando "
-"**ImageMagick** come strumento per aggiungere un testo a più righe "
-"sovrimpresso sulle foto al fine di creare una filigrana visibile al centro "
-"delle immagini."
+"Il secondo esempio sotto riportato è più complesso e utilizza lo strumento a "
+"riga di comando di **ImageMagick** per filigrane visibili sovrapponendo un "
+"campo di testo a più righe a ciascuna immagine nella coda."
 
 #: ../../batch_queue/custom_script.rst:149
 msgid ""
@@ -455,14 +347,14 @@ msgid ""
 "Workflow. Bash uses the last called method as the returned value from the "
 "script, here the ImageMagick command line tool **convert**."
 msgstr ""
-"In questo esempio, non vi è una chiamata di **uscita** esplicita per "
-"restituire un valore al flusso di lavoro. Bash utilizza l'ultimo metodo "
-"chiamato come valore restituito dallo script, qui lo strumento a riga di "
+"In questo esempio, non c'è una chiamata di **uscita** esplicita che "
+"restituisca un valore al flusso di lavoro. Bash usa l'ultimo metodo chiamato "
+"come valore restituito dallo script, in questo caso lo strumento a riga di "
 "comando di ImageMagick **convert**."
 
 #: ../../batch_queue/custom_script.rst:151
 msgid "This give a result like below."
-msgstr "Ciò restituisce un risultato come sotto riportato."
+msgstr "Viene restituito un risultato come riportato sotto."
 
 #: ../../batch_queue/custom_script.rst:157
 msgid "The result of the Script Using ImageMagick to Apply a Watermark"
