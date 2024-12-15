@@ -10,17 +10,17 @@
 
 .. _html_gallery:
 
-HTML Gallery
-============
+:ref:`HTML Gallery <post_processing>`
+=====================================
 
 .. contents::
 
 Overview
 --------
 
-The HTML Gallery is a tool for exporting a set of Albums or images to a HTML page.
+The HTML Gallery is a tool for exporting a set of albums or images to an HTML page.
 
-This powerful tool can export your Albums into a HTML compliant web image gallery. You can easily select the Images or the Albums to export in an HTML page and set many designs and parameters for the HTML rendering. UTF-8 encoding is used for the best internationalization.
+This powerful tool can export your albums into an HTML-compliant web image gallery. You can easily select the images or the albums to export in an HTML page and set many designs and parameters for the HTML rendering. UTF-8 encoding is used for the best internationalization.
 
 Using the Wizard
 ----------------
@@ -31,7 +31,7 @@ Using the Wizard
 
     The HTML Gallery Page Selection Mode
 
-To launch the tool, uses :menuselection:`Tools --> Create Html gallery` :kbd:`Ctrl+Alt+Shift+H` menu entry, or the corresponding icon from the **Tools** tab in Right Sidebar. The tool will displays a view to select the contents to export: from current items selection, or from a list of albums. The **Albums** selection mode allows you to select items from Albums that you want to export to HTML. Just check the respective Albums displayed with hierarchical nesting. On the next three tabs **Tags**, **Searches**, and **Labels** you can refine your selection using tags, labels, or previous search results in digiKam. 
+To launch the tool, uses :menuselection:`Tools --> Create Html gallery` :kbd:`Ctrl+Alt+Shift+H` menu entry, or the corresponding icon from the **Tools** tab in Right Sidebar. The tool will display a view to select the contents to export, either from current items selection, or from a list of albums. The **Albums** selection mode allows you to select items from albums that you want to export to HTML. Just check the respective albums from the hierarchical nested list. You can use the next three tabs **Tags**, **Searches**, and **Labels** to refine your selection based on tags, labels, or previous search results in digiKam.
 
 .. figure:: images/html_gallery_page2.webp
     :alt:
@@ -39,7 +39,7 @@ To launch the tool, uses :menuselection:`Tools --> Create Html gallery` :kbd:`Ct
 
     The HTML Gallery Page to Select Items
 
-Next step is to select a **Theme** to generate the gallery.
+The next step is to select a **Theme** to generate the gallery.
 
 .. figure:: images/html_gallery_page3.webp
     :alt:
@@ -65,17 +65,17 @@ For all selected themes you can adjust the settings for the images and thumbnail
 
     The HTML Gallery Page to Tune Images and Thumbnail Properties
 
-In the Full Image section you can either save modified images or Use original image.
+In the **Full Image Properties** section you can either Save modified images or Use original image.
 
-For modified images you can select as output format JPEG (smallest file-size, but lossy) and PNG (lossless and free license) and set specific image compression features. If disk space is of concern check the target image compression and lower the compression level from the host application default value.
+For modified images you can select as output format JPEG (smallest file-size, but lossy) and PNG (lossless and license free) and set specific image compression features. If disk space is of concern, check the target image compression and lower the compression level from the host application default value.
 
-Checking the Max. size box you can fix the maximum target image size (in pixels) with the spin-box at the right. Images bigger than this value will be scaled down to it, but smaller images will not be modified.
+Checking the Max. size box you can fix the maximum target image size (in pixels) with the spin-box at the right. Images bigger than this value will be scaled down, but smaller images will not be modified.
 
 .. note::
 
     If JPEG file format is selected for target resizing images, all Exif information will be preserved from the original JPEG files.
 
-The Thumbnails section allows to set the Format, Quality and Size for the thumbnails in the gallery.
+The **Thumbnail Properties** section allows you to set the Format, Quality and Size for the thumbnails in the gallery.
 
 .. figure:: images/html_gallery_page6.webp
     :alt:
@@ -83,9 +83,9 @@ The Thumbnails section allows to set the Format, Quality and Size for the thumbn
 
     The HTML Gallery Page to Configure the Output
 
-This page defines the settings of where and how to store the gallery with all its associated images. Select a folder or add a new folder with write access where you want the gallery to be written to. Two sub-folders with the name of your album folder and the theme name will be created containing everything.
+This page defines the settings of where and how to store the gallery with all its associated images. Select a folder or add a new folder with write access where you want the gallery to be written. Two sub-folders with the name of your album folder and the theme name will be created containing everything.
 
-A progress dialog giving a feedback indicate to user. Press Cancel button during this stage if you want abort the process.
+A progress dialog is displayed to provide feedback to the user. Press the **Cancel** button if you want to abort the process during this stage.
 
 .. figure:: images/html_gallery_page7.webp
     :alt:
@@ -106,29 +106,29 @@ Finally, the HTML gallery generated is displayed in a browser.
 Creating a New Theme
 --------------------
 
-The HTML Gallery tool can easily be themed to produce very different sites. This chapter explains how to create themes.
+The HTML Gallery tool can easily produce very different sites based on themes. This section explains how to create a new theme.
 
 Getting Started
 ~~~~~~~~~~~~~~~
 
 A theme is a folder which contains at least two files:
 
-    - A **Desktop file** describing the theme.
+    - A **Desktop File** describing the theme.
     - A :file:`template.xsl` file to generate the HTML files.
 
 When the tool is running, it does the following:
 
-    - Create an output folder.
+    - Creates an output folder.
     - For each image collection:
 
-        - Create a folder.
-        - Generate thumbnails (square by default).
-        - Generate full images.
-        - Optionally copy original images.
+        - Creates a folder.
+        - Generates thumbnails (square by default).
+        - Generates full images.
+        - Optionally copies original images.
 
-    - Copy the theme folder to the output folder.
-    - Generate an XML file describing the image collections: :file:`gallery.xml`.
-    - Generate the HTML files by applying :file:`template.xsl` to :file:`gallery.xml`.
+    - Copies the theme folder to the output folder.
+    - Generates an XML file describing the image collections: :file:`gallery.xml`.
+    - Generates the HTML files by applying :file:`template.xsl` to :file:`gallery.xml`.
 
 The Desktop File
 ~~~~~~~~~~~~~~~~
@@ -164,14 +164,14 @@ A desktop file format is used to facilitate entry translations. If you look at t
     Name[da]=Simpel
     ...
 
-The nice thing is that when your theme get integrated into HTML Gallery default themes, translators will internationalize the desktop file for you.
+The nice thing is that when your theme gets integrated into the HTML Gallery default themes, translators will internationalize the desktop file for you.
 
-The **image preview** file used to illustrate the Theme in the wizard will be placed in the root theme folder.
+The **image preview** file used to illustrate the theme in the wizard will be placed in the root theme folder.
 
-Creating new Theme from Another One
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Creating a new Theme from Another One
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The easiest way to get started is to copy one theme and modify it. Folder can be found usually under **Linux** at :file:`/usr/share/apps/digikam/themes/`. Writing in this folder requires root access, so we will not create our theme there, instead do the following from a console:
+The easiest way to get started is to copy one theme and modify it. Folders can be found usually under **Linux** at :file:`/usr/share/apps/digikam/themes/`. Writing in this folder requires root access, so we will not create our theme there - instead do the following from a console:
 
 Create a theme folder in your home directory:
 
@@ -242,16 +242,16 @@ The :file:`template.xsl` file is responsible for generating the HTML files from 
       </collection>
      </collections>
 
-We won't explain XSLT syntax here, you should be able to find the documentation you need on the Internet. We recommend to learn XSLT with the `XSLT tutorial here <https://www.w3schools.com/xsl>`_.
+We won't explain XSLT syntax here, you should be able to find the documentation you need on the Internet. We recommend the `XSLT tutorial here <https://www.w3schools.com/xsl>`_ for learning XSLT.
 
-It's worth noting nevertheless that you can make use of `EXSLT <https://www.exslt.org>`_, a set of extensions to XSLT. In particular, the `exslt:document element <https://www.exslt.org/exsl/elements/document>`_  is extremely useful because it allows you to generate multiple documents from the same file.
+Nevertheless, it's worth noting that you can make use of `EXSLT <https://www.exslt.org>`_, a set of extensions to XSLT. In particular, the `exslt:document element <https://www.exslt.org/exsl/elements/document>`_  is extremely useful because it allows you to generate multiple documents from the same file.
 
-HTML Gallery tool imposes no constraint on the organization of HTML files. You can generate one file per image, or only one per collection. One could imagine a theme which would only contains one HTML file and uses JavaScript to show the different images, there is already one theme using frames, you can even generate CSS files on the fly if you want to.
+HTML Gallery tool imposes no constraint on the organization of HTML files. You can generate one file per image, or only one per collection. One could imagine a theme which would only contains one HTML file and uses JavaScript to show the different images. There is already one theme using frames. You can even generate CSS files on the fly if you want to.
 
 About Translations
 ~~~~~~~~~~~~~~~~~~
 
-You should not **hardcode** any text in the template, instead you should use the **i18n parameters**. For example instead of using this:
+You should not **hardcode** any text in the template, but you should instead use the **i18n parameters**. For example instead of using this:
 
 .. code-block:: xml
 
@@ -265,7 +265,7 @@ Do this:
     <a href="previous"><xsl:value-of select="$i18nPrevious"/></a>
     | <a href="next"><xsl:value-of select="$i18nNext"/></a>
 
-It's quite a lot more verbose, but this way your user will get localized HTML output.
+It's a lot more verbose, but this way your user will get localized HTML output.
 
 If you want to use **i18n parameters** in attributes, do it like this:
 
@@ -282,7 +282,7 @@ For now, the available general **i18n parameters** are:
     - i18nOriginalImage
     - i18nUp
 
-And for the **image properties** they are:
+And the **image properties** are:
 
     - i18nexifimagemake ("Make")
     - i18nexifimagemodel ("Model")
@@ -300,12 +300,12 @@ And for the **image properties** they are:
     - i18nexifphotoaperturevalue ("Aperture Value")
     - i18nexifphotofocallength ("Focal Length")
 
-If you need more i18n parameters, please report this wish to the `Project Team <https://www.digikam.org/support/>`_.
+If you need more i18n parameters, please submit a request to the `Project Team <https://www.digikam.org/support/>`_.
 
 Images and CSS Files
 ~~~~~~~~~~~~~~~~~~~~
 
-You are free to use images, CSS files or other files in your theme. Just put them in the theme folder and the tool will copy them in the output folder.
+You are free to use images, CSS files or other files in your theme. Just put them in the theme folder and the tool will copy them into the output folder.
 
 Original Images
 ```````````````
@@ -435,7 +435,7 @@ A string parameter lets the user enter a single string to set configuration rule
 Final Words
 ~~~~~~~~~~~
 
-This is the end of this chapter, now is the time for you to get creative and add new themes.
+This is the end of this chapter, so now is the time for you to get creative and start adding new themes.
 
-When you are done, do not hesitate to propose your work for an official integration in digiKam, to see your new theme included in the official list. See the `Contribute page <https://www.digikam.org/contribute/>`_ from the digiKam project web-site for details.
+When you are done, do not hesitate to submit your work for official integration in digiKam. Think of how proud you will be to see your new theme included in the official list. See the `Contribute page <https://www.digikam.org/contribute/>`_ from the digiKam project web-site for details.
 

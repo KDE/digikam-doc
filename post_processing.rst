@@ -16,7 +16,7 @@ Post Processing
 .. figure:: images/index_post_processing.webp
     :alt:
 
-This section explain how to use the digiKam post processing tools.
+This section explains how to use the digiKam post processing tools.
 
 .. toctree::
    :maxdepth: 2

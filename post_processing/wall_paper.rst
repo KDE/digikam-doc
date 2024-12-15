@@ -10,17 +10,17 @@
 
 .. _wall_paper:
 
-Wall-Paper
-==========
+:ref:`Wall-Paper <post_processing>`
+===================================
 
-The Wall-Paper tool allows setting an image from your collection as a background photo on your desktop. If you use a multi-screen computer, the image is assigned to the current monitor where digiKam is running.
+The **Wall-Paper** tool allows setting an image from your collection as a background photo on your desktop. If you use a multi-screen computer, the image is assigned to the current monitor where digiKam is running.
 
-Select one image that you want to push on your desktop and go to :menuselection:`Tools --> Set as wallpaper`, or use the icon **Set as wallpaper** from the **Tools** tab on the right sidebar. A dialog will appear to customize the **Wallpaper Layout** of the background photo. The possible choices are listed below:
+Select one image that you want to place on your desktop and go to :menuselection:`Tools --> Set as wallpaper`, or use the icon **Set as wallpaper** from the **Tools** tab on the right sidebar. A dialog will appear to customize the **Wallpaper Layout** of the background photo. The possible choices are:
 
     - **Adjusted**: The image is resized to the desktop size without preserving the aspect ratio (Linux and Windows).
     - **Adjusted with Aspect ratio**: The image is resized to the desktop size preserving the aspect ratio (Linux only).
     - **Adjusted and cropped**: The image is resized to the desktop size and cropped to support the desktop aspect ratio (Linux only).
-    - **Mosaic**: The image is displayed multi-time as a mosaic to fill the desktop (Linux and Windows).
+    - **Mosaic**: The image is displayed multiple times as a mosaic to fill the desktop (Linux and Windows).
     - **Centered**: The image is centered on the desktop without modification (Linux and Windows).
 
 .. note::

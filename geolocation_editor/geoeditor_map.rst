@@ -123,8 +123,8 @@ Right under the map you find a row of buttons. From left to right we have:
     - The **Display Bookmarked Positions On The Map** button |display_bookmarks| can be used to display places on the map that are already registered in the :ref:`Bookmarks Manager <geoeditor_bookmarks>`.
 
 The map's context menu, selected by right clicking on the map, contains other items of interest:
-    - **Copy Coordinates** copies the geographic coordinates at the cursor position to the clipboard.
-    - **Copy geo: URL**
+    - **Copy Coordinates** copies the geographic coordinates at the cursor position to the clipboard, e.g. 4° 29' 11.1"W,48° 22' 48.5"N
+    - **Copy geo: URL** copies the geographic coordinates at the cursor position to the clipboard in decimal degrees, e.g. geo:48.3800450672,-4.4865371254
     - **Address Details** performs a reverse location lookup to display the address of the selected location in a dialog.
     - **Info Boxes** allows you to select which widgets to display on the map, including compass, scale bar, navigation widget, overview map, and a progress indicator.
     - **Add Measure Point** add a measure point at the clicked location. Add a second point to measure distance between the two points. Add a third point to measure total distance and angles between the points.
@@ -174,6 +174,3 @@ From this menu you can:
 
     - Quickly access the bookmarks hierarchy to assign a location to the current selected item.
 
-.. important::
-
-    The **Map View** also provides an **Add Bookmark** option in the map's context menu. This feature does not come from digiKam and works independently of the digiKam **Bookmarks Manager** feature.

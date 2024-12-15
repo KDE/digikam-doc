@@ -10,10 +10,8 @@
 
 .. _media_server:
 
-Media Server
-============
-
-.. contents::
+:ref:`Media Server <post_processing>`
+=====================================
 
 DLNA Media-Server is used to automatically export digiKam photos through the local network to other `DLNA-compliant devices <https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance>`_ like smart phones, TV, and tablets.
 
@@ -25,7 +23,7 @@ To start the media-server, head to the **Tools** tab from the **Right Sidebar**.
 
     The DLNA Media-Server Dialog
 
-To share items just select your desired **Albums** from the nested lists. You can share from physical **Albums**, or virtual **Tags**, **Searches**, and **Labels**. When the selection is done, press the **Start** button, a wheel on the right side will indicate that server is currently running.
+To share items, just select your desired **Albums** from the nested lists. You can share from physical **Albums**, or virtual **Tags**, **Searches**, and **Labels**. When the selection is done, press the **Start** button, a wheel on the right side will indicate that the server is currently running.
 
 You can hide this media-server window (without closing the actual server) using the **Ok** button. If you want shutdown the server, re-open the Media-Server dialog and press the **Stop** button. Note that the files and folders you specify will be saved for you to use in later sessions.
 
@@ -37,7 +35,7 @@ Use the option **Start Server at Startup** if you want to run the media-server a
 
     The DLNA Media-Server is Running and can be Closed with the Stop Button
 
-After you start the media-server, you might have to wait for about 30 seconds to one minute before other devices in the network can see your server, so please be patient.
+After you start the media-server, you might have to wait about 30 seconds to one minute before other devices in the network can see your server, so please be patient.
 
 This server was tested with some client applications. This list includes:
 

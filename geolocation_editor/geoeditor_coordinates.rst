@@ -18,7 +18,7 @@
 Details
 -------
 
-The coordinates can be set manually in the **Details** tab. The location can be found and iteratively adjusted with the displayed map. Move the mouse cursor to the region of interest, zoom in, manually adjust the location, zoom in again, and so on until sufficient accuracy is achieved. Note that the zoom center will always be at the cursor position. Eventually you can click with the right mouse button at the desired position and choose **Copy Coordinates**. Now you can go to the list of images below the map, select one or more images, right click on any of the selected images and choose **Paste Coordinates**. The coordinates will then be displayed in the **Latitude** and **Longitude** fields to the right of the map. To save your changes you click the **Apply** button under the list of images or under the DOP field in the left sidebar.
+The coordinates can be set manually in the **Details** tab. The location can be found and iteratively adjusted with the displayed map. Move the mouse cursor to the region of interest, zoom in, manually adjust the location, zoom in again, and so on until sufficient accuracy is achieved. Note that the zoom center will always be at the cursor position. Eventually you can click with the right mouse button at the desired position and choose **Copy Coordinates**. Now you can go to the list of images below the map, select one or more images, right click on any of the selected images and choose **Paste Coordinates**. The coordinates will then be displayed in the **Latitude** and **Longitude** fields to the right of the map. Click the **Apply** button under the DOP field in the right sidebar to apply the changes to the last image that was selected in the image list. Click the **Apply** button under the list of images at the bottom of the window to save your changes to the selected images.
 
 .. figure:: images/geoeditor_details_view.webp
     :alt:
@@ -77,7 +77,7 @@ The **Undo/Redo** tab displays a history of all the changes you apply to the ima
 
     The digiKam Geolocation Correlator **Undo/Redo** View Example 1
 
-The last step is highlighted when you enter the tab. The first step is always labeled “empty” and represents the status the images had when they were loaded. You can click on every step and, depending on what kind of changes you made, you might see the images appearing, disappearing or moving on the map, or see the differences in the list of images under the map. Note that the list is configurable by clicking with the right mouse button on the header.
+The last step is highlighted when you enter the tab. The first step is always labeled “empty” and represents the status the images had when they were loaded. You can click on every step and, depending on what kind of changes you made, you might see the images appearing, disappearing or moving on the map, or see the differences in the list of images under the map.
 
 Now let's assume that you realize that the move in the last step was wrong. You just click on the step before (Details changed), you go to the **Search** tab (described further below) and you do another move. After returning to the **Undo/Redo** tab it might look like this:
 
