@@ -261,7 +261,7 @@ A common slider controls the **Grain size**, and you can turn on the granularity
 Oil Paint
 ---------
 
-The digiKam **Oil Paint* filter gives your image the look of an oil painting.
+The digiKam **Oil Paint** filter gives your image the look of an oil painting.
 
 This filter gives your digital images a nice oil painting-like look. Images of nature and still lives are well suited for this effect.
 
