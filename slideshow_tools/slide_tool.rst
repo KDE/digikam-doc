@@ -10,12 +10,35 @@
 
 .. _slide_tool:
 
-Basic Slide Show
-================
+:ref:`Basic Slide Show <slideshow_tools>`
+=========================================
 
-.. contents::
+.. |pause| image:: images/slideshow_icon_pause.webp
+    :height: 20px
 
-This tool render a series of items as a basic slide-show. To run this tool you can use the menu entry :menuselection:`View --> Slideshow` sub-menus or simply press the **Show FullScreen** button on top of Icon-View item.
+.. |play| image:: images/slideshow_icon_play.webp
+    :height: 20px
+
+.. |previous| image:: images/slideshow_icon_previous.webp
+    :height: 20px
+
+.. |next| image:: images/slideshow_icon_next.webp
+    :height: 20px
+
+.. |exit| image:: images/slideshow_icon_exit.webp
+    :height: 20px
+
+.. |time| image:: images/slideshow_icon_time.webp
+    :height: 20px
+
+.. |trash| image:: images/slideshow_icon_trash.webp
+    :height: 20px
+
+.. |settings| image:: images/slideshow_icon_settings.webp
+    :height: 20px
+
+
+This tool renders a series of items as a basic slide-show. To run this tool you can use the menu entry :menuselection:`View --> Slideshow` sub-menus, click on **Slideshow** in the toolbar, or simply press the **Show FullScreen** button on top of any Icon-View item.
 
 .. figure:: images/slide_button.webp
     :alt:
@@ -25,9 +48,9 @@ This tool render a series of items as a basic slide-show. To run this tool you c
 
 .. note::
 
-    The **Show FullScreen** button will be visible only if you turn on the right option from :menuselection:`Settings --> Configure digiKam...` and **Icons** tab from **Views** panel.
+    The **Show FullScreen** button will be visible only if you turn on the right option from :menuselection:`Settings --> Configure digiKam... --> Views page --> Icons tab`.
 
-The basic slideshow tool will render items on full screen without visual effects and without zooming support. It is powerful to review quickly album items. This tool can play album contents in recursive mode with children albums if any.
+The basic slideshow tool will render items in the full screen without visual effects and without zooming. It is a powerful to quickly review album items. This tool can play album contents in a recursive mode that includes any nested child albums.
 
 .. figure:: images/slide_view.webp
     :alt:
@@ -35,7 +58,7 @@ The basic slideshow tool will render items on full screen without visual effects
 
     The Basic Slide-Show View Displaying Item and Properties
 
-A lots of items properties can be displayed as overlay while displaying contents. These ones are shown on the bottom left side as an **OSD (On Screen Display)**.
+Lots of item properties can be displayed as overlay while displaying contents. The ones below are shown on the bottom left side as an **OSD (On Screen Display)**.
 
 .. figure:: images/slide_osd.webp
     :alt:
@@ -43,11 +66,16 @@ A lots of items properties can be displayed as overlay while displaying contents
 
     The Basic Slide-Show Provides an OSD to Show Details and Control the Contents
 
-The basic slide show configuration should be easy to understand. The upper slider adjusts the time between image transitions; usually a time of 4-5 seconds is good. The other check boxes enable/disable the metadata to be shown on the bottom of the slide show images during display.
+The on-screen controls for the slideshow are:
 
-.. note::
+    - |pause| |play| Pause / Play
+    - |previous| |next| Previous / Next item
+    - |exit| Exit slideshow
+    - |time| Set time between images
+    - |trash| Delete the current slide (asks for confirmation)
+    - |settings| Adjust slideshow settings
 
-    The **Shuffle Images** mode is only available in automatic playback, i.e. when you start the slide show via the menu or toolbar button. It does not work in **Preview** mode when you start on the **Play** button icon in the thumbnail or image preview.
+Clicking the |settings| button brings up the slide show configuration dialog.
 
 .. figure:: images/slide_config.webp
     :alt:
@@ -55,7 +83,14 @@ The basic slide show configuration should be easy to understand. The upper slide
 
     The Basic Slide-Show Configuration Dialog
 
-The Usage from Keyboard and mouse to quickly navigate between items is listen below:
+The basic slide show configuration should be easy to understand. The upper slider adjusts the time between image transitions; usually a time of 4-5 seconds is good. The other check boxes enable/disable the metadata to be shown on the bottom of the slide show images during display.
+
+.. note::
+
+    The **Shuffle Images** mode is only available in automatic playback, i.e. when you start the slide show via the menu or toolbar button. It does not work in **Preview** mode when you start from the **Play** button icon in the thumbnail or image preview.
+
+
+The keyboard and mouse can be used to quickly navigate between items in the slideshow:
 
 - Item Access
 

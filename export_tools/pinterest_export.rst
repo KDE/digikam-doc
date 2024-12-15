@@ -10,10 +10,8 @@
 
 .. _pinterest_export:
 
-Export To Pinterest
-===================
-
-.. contents::
+:ref:`Export To Pinterest <export_tools>`
+=========================================
 
 This tool allows the user to upload photos to the Pinterest social network.
 
@@ -21,7 +19,7 @@ This tool allows the user to upload photos to the Pinterest social network.
 
 The tool can be used to upload and tweet a selection of images from your collections to the remote Pinterest server using the Internet.
 
-When accessing the tool for the first time by the :menuselection:`Export --> Export to Pinterest` :kbd:`Ctrl+Alt+Shift+I` menu entry, you are taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched you will log in to Pinterest:
+When accessing the tool for the first time from the :menuselection:`Export --> Export to Pinterest` :kbd:`Ctrl+Alt+Shift+I` menu entry, you are taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched so you can log into Pinterest:
 
 .. figure:: images/export_pinterest_login.webp
     :alt:
@@ -29,8 +27,7 @@ When accessing the tool for the first time by the :menuselection:`Export --> Exp
 
     The Pinterest Login Dialog
 
-After successful sign-up digiKam will be allowed to send photos to the Pinterest website. You will be presented with the following page:
-
+After successful sign-up, digiKam will be allowed to send photos to the Pinterest website. You will be presented with the following page:
 
 .. figure:: images/export_pinterest_authorize.webp
     :alt:
@@ -38,7 +35,7 @@ After successful sign-up digiKam will be allowed to send photos to the Pinterest
 
     The Pinterest Authorize Dialog
 
-Then, simply authorize application and close the web browser. Return to the host application dialog, you will see the interface used to upload photos to Pinterest.
+Then, simply authorize the application and close the web browser. Returning to the host application dialog, you will see the interface used to upload photos to Pinterest.
 
 .. figure:: images/export_pinterest_dialog.webp
     :alt:
@@ -46,11 +43,11 @@ Then, simply authorize application and close the web browser. Return to the host
 
     The Pinterest Export Tool Dialog
 
-By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
+By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items to the list.
 
-With the **Album** options, you can select the online folder to store files to upload. You can **Create** new one and **Reload** the list on the combo-box if online contents have been changed in Pinterest web interface.
+With the **Album** options, you can select the online folder to store files to upload. You can create a **New Album** or **Reload** the list in the combo-box if the online contents have changed in the Pinterest web interface.
 
-If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to Pinterest. The values will be read from the **JPEG quality** and **Maximum Dimension** settings, which can be used to adjust the maximum height and the compression. The width calculation will be done so as to have the aspect ratio conserved.
+If the **Resize photos before uploading** option is selected, the photos will be resized before transferring to Pinterest. The values will be read from the **JPEG quality** and **Maximum Dimension** settings, which can be used to adjust the maximum height and the compression. The width calculation will be done so as to maintain the aspect ratio.
 
 .. figure:: images/export_pinterest_progress.webp
     :alt:
@@ -58,7 +55,7 @@ If the **Resize photos before uploading** option is selected, the photos will be
 
     The Pinterest Export Uploading in Progress
 
-Press **Start Upload** button to transfer items. You can click on the **Close** button to abort the uploading of photos.
+Press the **Start Upload** button to transfer items. You can click on the **Close** button to abort the uploading of photos.
 
 Finally, you can view the uploaded photos by visiting the Pinterest website.
 

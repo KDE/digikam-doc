@@ -10,16 +10,14 @@
 
 .. _opengl_viewer:
 
-OpenGL Viewer
-=============
+:ref:`OpenGL Viewer <slideshow_tools>`
+======================================
 
-.. contents::
-
-This tool preview a series of items using OpenGL hardware to speed-up rendering. There is no configuration dialog. Calling this tool from :menuselection:`View --> OpenGL Image Viewer` will show items in full-screen mode.
+This tool previews a series of items using OpenGL hardware to speed-up rendering. There is no configuration dialog. Calling this tool from :menuselection:`View --> OpenGL Image Viewer` will show items in full-screen mode.
 
 .. note::
 
-    This tool does not include an OSD (On Screen Display). Navigating between items is done with keyboard and mouse.
+    This tool does not include an OSD (On Screen Display). Navigating between items is done with the keyboard and mouse.
 
 .. figure:: videos/opengl_viewer.webp
     :width: 600px
@@ -28,7 +26,7 @@ This tool preview a series of items using OpenGL hardware to speed-up rendering.
 
     Screencast of the OpenGL Viewer
 
-The usage from Keyboard and mouse to quickly navigate between items is listen below:
+The keyboard and mouse actions used to navigate between items are:
 
 - Item Access
 

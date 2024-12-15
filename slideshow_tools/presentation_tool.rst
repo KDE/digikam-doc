@@ -10,10 +10,8 @@
 
 .. _presentation_tool:
 
-Presentation Tool
-=================
-
-.. contents::
+:ref:`Presentation Tool <slideshow_tools>`
+==========================================
 
 The **Presentation** tool creates a configurable full screen slide-show of your images using advanced visual effects.
 
@@ -33,11 +31,11 @@ The **Loop** checkbox will enable running the whole show in an endless loop (unt
 
 The **Shuffle Images** checkbox will enable displaying the images randomly (not using the current images collection order).
 
-The **Delay Between Images** may be set in millisecond steps. 1500 milliseconds correspond to 1.5 seconds and is a good default value. The best timing depends also a bit on your computer power and the transition effect. Try it out before you show it to your friends!
+The **Delay Between Images** may be set in millisecond steps. 1500 milliseconds corresponds to 1.5 seconds and is a good default value. The best timing also depends a bit on your computer power and the transition effect. Try it out before you show it to your friends!
 
-There are more than a dozen **Transition Effects** available to choose from. The **Random** selection will change the transition effect with every image. 
+There are more than a dozen **Transition Effects** available to choose from. The **Random** selection will change the transition effect with every image.
 
-The **Caption** page from the tool allows to customize the font properties to render item description over the screen.
+The **Caption** tab allows you to customize the font properties to render item descriptions over the screen.
 
 .. figure:: images/presentation_caption.webp
     :alt:
@@ -45,7 +43,7 @@ The **Caption** page from the tool allows to customize the font properties to re
 
     The Caption Settings from Presentation Tool
 
-The **Soundtrack** page from the tool allows to append audio tracks to play while slideshow.
+The **Soundtrack** tab allows you to append audio tracks to play during the slideshow.
 
 .. figure:: images/presentation_soundtrack.webp
     :alt:
@@ -53,7 +51,7 @@ The **Soundtrack** page from the tool allows to append audio tracks to play whil
 
     The Soundtrack Settings from Presentation Tool
 
-The **Advanced** page from the tool allows to customize special slideshow settings to use in particular conditions.
+The **Advanced** tab allows you to customize special slideshow settings to use in particular conditions.
 
 .. figure:: images/presentation_advanced.webp
     :alt:
@@ -72,5 +70,5 @@ In the lower left screen corner you can see the current image file name, the cur
     :alt:
     :align: center
 
-    Screencast of the Presentation Tool Running With Cube OpenGL Effect and Showing OSD on the Top of Screen
+    Screencast of the Presentation Tool Running with Cube OpenGL Effect and Showing OSD on the Top of Screen
 

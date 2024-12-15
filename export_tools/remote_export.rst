@@ -10,12 +10,12 @@
 
 .. _remote_export:
 
-Export To Remote Computer
-=========================
+:ref:`Export To Remote Computer <export_tools>`
+===============================================
 
 .. contents::
 
-This tool allows to upload files from your collections to a remote computer using network. It available from the :menuselection:`Export --> Export to remote storage` :kbd:`Ctrl+Alt+Shift+K` menu entry or the corresponding icon from the **Tools** tab in Right Sidebar.
+This tool allows you to upload files from your collections to a remote computer using a network. It is available from the :menuselection:`Export --> Export to remote storage` :kbd:`Ctrl+Alt+Shift+K` menu entry or the corresponding icon in the **Tools** tab in the Right Sidebar.
 
 .. figure:: images/export_remote_dialog.webp
     :alt:
@@ -23,12 +23,12 @@ This tool allows to upload files from your collections to a remote computer usin
 
     The Export to Remote Computer Dialog
 
-Protocols as **fish** (ssh), **ftp**, **smb**, etc, can be used in connection from **Target Location** url editor. For example:
+Protocols such as **fish** (ssh), **ftp**, **smb**, etc, can be used to connect to the **Target Location** url. For example:
 
     - **fish://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using SSH protocol (Secure SHell).
     - **ftp://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using FTP protocol (File Transfer Protocol).
 
-Instead to use **Target Location** url editor, you can use the native desktop url selector pressing **Select Export Location**. A dialog as below must appear where you can see the discovered remote devices selecting the network section:
+Instead of using the **Target Location** url field, you can use the native desktop url selector by pressing the **Select Export Location** button. A dialog will appear where you can see and select remote devices in the network section of the dialog:
 
 .. figure:: images/export_remote_url_selector.webp
     :alt:
@@ -38,8 +38,8 @@ Instead to use **Target Location** url editor, you can use the native desktop ur
 
 .. note::
 
-    The native url selector dialog is only available if you turn on the right option from the **Misc/Appearance** section of the :ref:`configuration panel <appearance_settings>`.
+    The native url selector dialog is only available if you turn on the right option in :menuselection:`Settings --> Configure digiKam... --> Miscellaneous page --> Appearance tab` as described in the :ref:`appearance settings <appearance_settings>` section of this manual.
 
-By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
+By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items to the list.
 
-When you select right target to upload files, press **Start Export** button to process files. You can abort operation pressing **Close** button.
+Once you have selected the right target to upload the files, press the **Start Export** button to process the files. You can abort the operation by pressing the **Close** button.

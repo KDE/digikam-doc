@@ -16,7 +16,7 @@ SlideShow Tools
 .. figure:: images/index_slideshow_tools.webp
     :alt:
 
-This section explain how to use the digiKam slideshow tools.
+This section explains how to use the digiKam slideshow tools.
 
 .. toctree::
    :maxdepth: 2

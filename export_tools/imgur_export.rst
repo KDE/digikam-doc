@@ -10,10 +10,8 @@
 
 .. _imgur_export:
 
-Export To Imgur
-===============
-
-.. contents::
+:ref:`Export To Imgur <export_tools>`
+=====================================
 
 This tool allows the user to upload photos to the Imgur web-service.
 
@@ -21,7 +19,7 @@ This tool allows the user to upload photos to the Imgur web-service.
 
 The tool can be used to upload a selection of images from your collections to the remote Imgur server using the Internet. Files transfer can be anonymous or connected with an account.
 
-When accessing the tool for the first time by the :menuselection:`Export --> Export to Imgur` menu entry, this dialog will appear:
+When accessing the tool for the first time from the :menuselection:`Export --> Export to Imgur` menu entry, this dialog will appear:
 
 .. figure:: images/export_imgur_dialog.webp
     :alt:
@@ -29,9 +27,9 @@ When accessing the tool for the first time by the :menuselection:`Export --> Exp
 
     The Imgur Export Tool Dialog
 
-You can directly upload contents without to be connected with an account using **Upload Anonymously** button. By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items on the list.
+You can directly upload contents without connecting to an account using the **Upload Anonymously** button. By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items to the list.
 
-To be connected with an account, press **Upload** button, you will be taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched you will log in to Imgur:
+To be connected with an account, press the **Upload** button, you then will be taken through the process of obtaining a token which is used for authentication purposes. The following dialog will popup and a browser window will be launched so you can log into Imgur:
 
 .. figure:: images/export_imgur_authorize.webp
     :alt:
@@ -39,9 +37,9 @@ To be connected with an account, press **Upload** button, you will be taken thro
 
     The Imgur Authorize and Login Dialog
 
-After successful sign-up digiKam will be allowed to send photos to the Imgur website. Then, simply authorize application and close the web browser. Return to the host application dialog, you will see the interface uploading photos to Imgur. You can click on the **Close** button to abort the uploading of photos.
+After successful sign-up, digiKam will be allowed to send photos to the Imgur website. Then, simply authorize the application and close the web browser. Returning to the host application dialog, you will see the interface uploading photos to Imgur. You can click on the **Close** button to abort the uploading of photos.
 
-When items are uploaded to Imgur, the dialog will populate on the list the urls to access directly to the images and the urls to delete online items. Use the context menu over items list to copy urls on clipboard for future usage outside digiKam.
+When items are uploaded to Imgur, the dialog will populate a list of the urls to directly access the uploaded images along with the urls to delete the online images. Use the context menu over the items list to copy the urls onto the clipboard for pasting into other applications.
 
 .. figure:: images/export_imgur_downloaded.webp
     :alt:

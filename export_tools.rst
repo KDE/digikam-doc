@@ -16,7 +16,7 @@ Export Tools
 .. figure:: images/index_export_tools.webp
     :alt:
 
-This section explain how to use the digiKam export tools.
+This section explains how to use the digiKam export tools.
 
 .. toctree::
    :maxdepth: 2
