@@ -23,6 +23,8 @@ The **Database** options for digiKam are set from :menuselection:`Settings --> C
 
 .. _sqlite_database:
 
+.. index:: single: SQLite
+
 The SQLite Database
 -------------------
 
@@ -60,8 +62,12 @@ The SQLite database files can be found in the *collection* folder that you added
 
 The **WAL** SQLite mode is a very important option that we recommend you turn on with large databases to optimize transactions and improve performance.
 
+.. index:: single: MySQL
+
 The MySQL Database
 ------------------
+
+.. index:: single: MariaDB
 
 MySQL Versus SQLite
 ~~~~~~~~~~~~~~~~~~~

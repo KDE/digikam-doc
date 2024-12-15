@@ -16,7 +16,7 @@ Showfoto
 .. figure:: images/index_showfoto_editor.webp
     :alt:
 
-This section explain how to use the Showfoto image editor.
+This section explains how to use the Showfoto image editor.
 
 .. toctree::
    :maxdepth: 2
@@ -24,6 +24,7 @@ This section explain how to use the Showfoto image editor.
    :glob:
 
    showfoto_editor/showfoto_overview.rst
+   showfoto_editor/showfoto_differences.rst
    showfoto_editor/showfoto_leftsidebar.rst
    showfoto_editor/showfoto_setup.rst
    showfoto_editor/showfoto_tools.rst

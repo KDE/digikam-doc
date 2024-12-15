@@ -31,6 +31,8 @@ Later on you can add as many locations as you like to the album library. Additio
 
     digiKam First Run Assistant Collection Path
 
+.. index:: single: SQLite
+
 The next step is to specify a local folder on your computer for digiKam to store the database files it uses to track all of your images. You must also select the type of database digiKam will use. If you have a local installation and a collection of less than 100.000 photographs you should probably accept the default setting of SQLite. For more information about the database type selection refer to the :ref:`digiKam Database <database_intro>` section of this manual.
 
 .. figure:: images/firstrun_step3.webp

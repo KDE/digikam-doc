@@ -10,8 +10,8 @@
 
 .. _menu_imageeditor:
 
-Image Editor Menu
-=================
+:ref:`Image Editor Menu <menu_descriptions>`
+============================================
 
 .. contents::
 
@@ -25,7 +25,7 @@ Image Editor Menu
 
     .. |icon_hamburger| image:: images/menu_icon_hamburger.webp
 
-    When switching in **Full-Screen Mode** :kbd:`Ctrl+Shift+F`, or when you **Hide Menubar** :kbd:`Ctrl+M`, the main menu will be available on the right side of tool-bar with the **Hamburger Button** |icon_hamburger|.
+    When switching into **Full-Screen Mode** :kbd:`Ctrl+Shift+F`, or when you **Hide Menubar** :kbd:`Ctrl+M`, the main menu will be available on the right side of toolbar with the **Hamburger Button** |icon_hamburger|.
 
 .. _menu_editorfile:
 
@@ -54,7 +54,7 @@ The File Menu
 
 :menuselection:`File --> Save As...`
 
-    Save the current image in a new file.
+    Save the current image to a new file.
 
 :menuselection:`File --> Revert`
 
@@ -62,7 +62,7 @@ The File Menu
 
 :menuselection:`File --> Move to trash` :kbd:`Del`
 
-    Move to trash the current image from the current Album (recoverable delete).
+    Move the current image from the current Album into the trash (recoverable delete).
 
     .. note::
 
@@ -83,7 +83,7 @@ The Edit Menu
 
 :menuselection:`Edit --> Copy` :kbd:`Ctrl+C`
 
-    Copy the current image selection in the clipboard.
+    Copy the current image selection to the clipboard.
 
 :menuselection:`Edit --> Undo` :kbd:`Ctrl+Z`
 
@@ -95,7 +95,7 @@ The Edit Menu
 
 :menuselection:`Edit --> Select All` :kbd:`Ctrl+A`
 
-    Select whole image data from the canvas.
+    Select the entire image from the canvas.
 
 :menuselection:`Edit --> Select None` :kbd:`Ctrl+Shift+A`
 
@@ -108,7 +108,7 @@ The Color Menu
 
 :menuselection:`Color --> Auto-Correction` :kbd:`Ctrl+Shift+B`
 
-    :ref:`Automatic color/exposure correction <color_auto>` of the current image by an histogram manipulation.
+    :ref:`Automatic color/exposure correction <color_auto>` of the current image by histogram manipulation.
 
 :menuselection:`Color --> White Balance`
 
@@ -254,7 +254,7 @@ The Transform Menu
 
 :menuselection:`Transform --> Liquid Rescale`
 
-    Image Editor tool to adjust :ref:`resizing pictures non uniformly while preserving their features <transform_liquidrescale>` of the current image. 
+    Image Editor tool to adjust :ref:`resizing pictures non uniformly while preserving their features <transform_liquidrescale>` of the current image.
 
 .. _menu_editordecorate:
 
@@ -296,7 +296,7 @@ The Effects Menu
 
 :menuselection:`Effects --> Emboss`
 
-    Image Editor :ref:`Emboss filter <effects_emboss>`. 
+    Image Editor :ref:`Emboss filter <effects_emboss>`.
 
 :menuselection:`Effects --> Distortion Effects`
 

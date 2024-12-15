@@ -902,6 +902,10 @@ Showfoto
 
     .. container:: tile no-descr
 
+        :ref:`showfoto_differences`
+
+    .. container:: tile no-descr
+
         :ref:`showfoto_leftsidebar`
 
     .. container:: tile no-descr
@@ -959,6 +963,18 @@ Menu Descriptions
    :hidden:
 
    menu_descriptions
+
+#########################
+Context Menu Descriptions
+#########################
+
+.. container:: toctile
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
+   context_menus
 
 ###################
 Credits and License

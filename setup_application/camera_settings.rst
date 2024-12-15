@@ -10,6 +10,8 @@
 
 .. _camera_settings:
 
+.. index:: single: Camera; settings
+
 :ref:`Camera Settings <setup_application>`
 ==========================================
 

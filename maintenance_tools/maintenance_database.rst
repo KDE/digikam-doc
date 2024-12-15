@@ -29,6 +29,10 @@ The **Database Cleaning** tool analyzes your database files looking for entries 
 
     - **Shrink all databases** to ensure de-fragmentation, keeping the database as small as possible.
 
+.. index::
+    single: SQLite
+    single: MySQL
+
 .. note::
 
    The last option leads to the vacuuming (shrinking) of the databases. Vacuuming is supported for both SQLite and MySQL. Database shrinking may take some time. In order to avoid database corruption during this operation, digiKam will display the following non modal dialog, and stop responding to user commands until the shrinking operation is complete.

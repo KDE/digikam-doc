@@ -10,8 +10,8 @@
 
 .. _menu_batchqueue:
 
-Batch Queue Manager Menu
-========================
+:ref:`Batch Queue Manager Menu <menu_descriptions>`
+===================================================
 
 .. contents::
 
@@ -25,7 +25,7 @@ Batch Queue Manager Menu
 
     .. |icon_hamburger| image:: images/menu_icon_hamburger.webp
 
-    When switching in **Full-Screen Mode** :kbd:`Ctrl+Shift+F`, or when you **Hide Menubar** :kbd:`Ctrl+M`, the main menu will be available on the right side of tool-bar with the **Hamburger Button** |icon_hamburger|.
+    When switching into **Full-Screen Mode** :kbd:`Ctrl+Shift+F`, or when you **Hide Menubar** :kbd:`Ctrl+M`, the main menu will be available on the right side of toolbar with the **Hamburger Button** |icon_hamburger|.
 
 The Queues Menu
 ---------------
@@ -75,11 +75,11 @@ The Tools Menu
 
 :menuselection:`Tools --> Move up`
 
-    Move up the current selected item from the **Assigned Tools** list.
+    Move the current selected item up in the **Assigned Tools** list.
 
 :menuselection:`Tools --> Move down`
 
-    Move down the current selected item from the **Assigned Tools** list.
+    Move the current selected item down in the **Assigned Tools** list.
 
 :menuselection:`Tools --> Remove tool`
 

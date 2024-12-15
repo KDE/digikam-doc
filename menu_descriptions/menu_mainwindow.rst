@@ -10,8 +10,8 @@
 
 .. _menu_mainwindow:
 
-Main Window Menu
-================
+:ref:`Main Window Menu <menu_descriptions>`
+===========================================
 
 .. contents::
 
@@ -25,7 +25,7 @@ Main Window Menu
 
     .. |icon_hamburger| image:: images/menu_icon_hamburger.webp
 
-    When switching in **Full-Screen Mode** :kbd:`Ctrl+Shift+F`, or when you **Hide Menubar** :kbd:`Ctrl+M`, the main menu will be available on the right side of tool-bar with the **Hamburger Button** |icon_hamburger|.
+    When switching into **Full-Screen Mode** :kbd:`Ctrl+Shift+F`, or when you **Hide Menubar** :kbd:`Ctrl+M`, the main menu will be available on the right side of the toolbar with the **Hamburger Button** |icon_hamburger|.
 
 The Browse Menu
 ---------------
@@ -105,7 +105,7 @@ The Item Menu
 
 :menuselection:`Item --> Rename` :kbd:`F2`
 
-    Renames the currently selected item(s). See description :ref:`here <renaming_photograph>`. 
+    Renames the currently selected item(s). See description :ref:`here <renaming_photograph>`.
 
 :menuselection:`Item --> Move to trash` :kbd:`Del`
 
@@ -147,7 +147,7 @@ The Item Menu
 
 :menuselection:`Item --> Rotate`
 
-    Menu entry for rotating the currently selected images lossless Left :kbd:`Ctrl-Shift-Left` or Right :kbd:`Ctrl-Shift-Right` in 90 degree steps (see sub-menu). 
+    Menu entry for rotating the currently selected images lossless Left :kbd:`Ctrl-Shift-Left` or Right :kbd:`Ctrl-Shift-Right` in 90 degree steps (see sub-menu).
 
 :menuselection:`Item -->Flip`
 
@@ -181,7 +181,7 @@ The Item Menu
 
     Tool to print grouped images from Album.
 
-    See the dedicated :ref:`Print Creator <print_creator>` for more information. 
+    See the dedicated :ref:`Print Creator <print_creator>` for more information.
 
 .. note::
 
@@ -263,7 +263,7 @@ The View Menu
 
     Tool to display an advanced slide show with Album items.
 
-    See the dedicated :ref:`Presentation Tool <presentation_tool>` for more information. 
+    See the dedicated :ref:`Presentation Tool <presentation_tool>` for more information.
 
 .. _menu_mainopenglviewer:
 
@@ -271,7 +271,7 @@ The View Menu
 
     Tool to display images using OpenGL compatible device.
 
-    See the dedicated :ref:`OpenGL Viewer <opengl_viewer>` for more information. 
+    See the dedicated :ref:`OpenGL Viewer <opengl_viewer>` for more information.
 
 .. _menu_mainfullscreen:
 
@@ -281,7 +281,7 @@ The View Menu
 
 .. note::
 
-    You can access to the application menu using the **Hamburger Button** on the right side of tool-bar.
+    You can access to the application menu using the **Hamburger Button** on the right side of toolbar.
 
     .. figure:: images/menu_fullscreen_hamburger.webp
         :alt:
@@ -303,11 +303,11 @@ The View Menu
 
 :menuselection:`View --> Fit to Window` :kbd:`Ctrl+Alt+E`
 
-    Will size the image as to fit snug into the window.
+    Will size the image it fits snug into the window.
 
 :menuselection:`View --> Zoom to 100%` :kbd:`Ctrl+,`
 
-    Will show the image 1:1 (meaning 1 image pixel is mapped exactly to 1 screen pixel) in preview mode.
+    Will show the image full size (meaning 1 image pixel is mapped exactly to 1 screen pixel) in preview mode.
 
 :menuselection:`View --> Sort Albums`
 
@@ -356,7 +356,7 @@ The View Menu
 
     Toggles between showing thumbnails and preview in color-managed mode or not.
 
-    For more information about color management see this lengthy chapter.
+    For more information about color management see :ref:`this <color_management>` lengthy chapter.
 
 .. _menu_maintools:
 
@@ -407,13 +407,13 @@ The Tools Menu
 
     Tool to create a calendar with Album items.
 
-    See the dedicated Calendar Tool for more information.
+    See the :ref:`this section <calendar_tools>` for more information.
 
 :menuselection:`Tools --> Email Images...`
 
     Tool to send images with your favorite email client.
 
-    See the dedicated Send Images Tool for more information.
+    See the :ref:`this section <send_images>` for more information.
 
 .. _menu_mainimport:
 
@@ -422,9 +422,9 @@ The Import Menu
 
 :menuselection:`Import --> Cameras`
 
-    Any configured digital camera will be listed here. You can use the **Add Camera Manually...** menu entry to add a new camera to the list. Please, read the :ref:`Camera Settings <camera_settings>` for more information.
+    Any configured digital camera will be listed here. You can use the **Add Camera Manually...** menu entry to add a new camera to the list. Please, read the :ref:`Camera Settings <camera_settings>` section for more information.
 
-    Once you choose a camera from the list the Camera Interface will open. For a detailed description see :ref:`digiKam Import Tool <import_overview>`.
+    Once you choose a camera from the list the Camera Interface will open. For a detailed description see the :ref:`digiKam Import Tool <import_overview>`.
 
 :menuselection:`Import --> USB Storage Devices`
 
@@ -450,25 +450,25 @@ The Import Menu
 
     Tool to download files from Google Photos web-service.
 
-    See the dedicated :ref:`Google Photos Import Tool <google_import>` for more information.
+    See :ref:`Google Photos Import Tool <google_import>` for more information.
 
 :menuselection:`Import --> Import from SmugMug` :kbd:`Alt+Shift+S`
 
     Tool to download files from SmugMug web-service.
 
-    See the dedicated :ref:`SmugMug Import Tool <smugmug_import>` for more information.
+    See :ref:`SmugMug Import Tool <smugmug_import>` for more information.
 
 :menuselection:`Import --> Import from remote storage` :kbd:`Alt+Shift+K`
 
     Tool to download files from another computer using network.
 
-    See the dedicated :ref:`Remote Storage Import Tool <remote_import>` for more information.
+    See :ref:`Remote Storage Import Tool <remote_import>` for more information.
 
 :menuselection:`Import --> Import from Scanner...`
 
     Opens a scanner dialog
 
-    See the dedicated :ref:`Acquire Images Tool <scanner_import>` for more information.
+    See :ref:`Acquire Images Tool <scanner_import>` for more information.
 
 .. _menu_mainexport:
 
@@ -479,97 +479,97 @@ The Export Menu
 
     Tool to upload or update files to Box web-service.
 
-    See the dedicated :ref:`Box Export Tool <box_export>` for more information.
+    See :ref:`Box Export Tool <box_export>` for more information.
 
 :menuselection:`Export --> Export to Dropbox...` :kbd:`Ctrl+Alt+Shift+D`
 
     Tool to upload or update files to Dropbox web-service.
 
-    See the dedicated :ref:`Dropbox Export Tool <dropbox_export>` for more information.
+    See :ref:`Dropbox Export Tool <dropbox_export>` for more information.
 
 :menuselection:`Export --> Export to Flickr...` :kbd:`Ctrl+Alt+Shift+R`
 
     Tool to upload or update files to Flickr web-service.
 
-    See the dedicated :ref:`Flickr Export Tool <flickr_export>` for more information.
+    See :ref:`Flickr Export Tool <flickr_export>` for more information.
 
 :menuselection:`Export --> Export to Google Drive...` :kbd:`Ctrl+Alt+Shift+G`
 
     Tool to upload or update files to Google Drive web-service.
 
-    See the dedicated :ref:`Google Export Tool <google_export>` for more information.
+    See :ref:`Google Export Tool <google_export>` for more information.
 
 :menuselection:`Export --> Export to Google Photos...` :kbd:`Ctrl+Alt+Shift+P`
 
     Tool to upload or update files to Google Photos web-service.
 
-    See the dedicated :ref:`Google Export Tool <google_export>` for more information.
+    See :ref:`Google Export Tool <google_export>` for more information.
 
 :menuselection:`Export --> Export to Imageshack` :kbd:`Ctrl+Alt+Shift+M`
 
     Tool to upload or update files to Imageshack web-service.
 
-    See the dedicated :ref:`Imageshack Export Tool <image_shack>` for more information.
+    See :ref:`Imageshack Export Tool <image_shack>` for more information.
 
 :menuselection:`Export --> Export to Imgur`
 
     Tool to upload or update files to Imgur web-service.
 
-    See the dedicated :ref:`Imgur Export Tool <imgur_export>` for more information.
+    See :ref:`Imgur Export Tool <imgur_export>` for more information.
 
 :menuselection:`Export --> Export to INaturalist` :kbd:`Ctrl+Alt+Shift+N`
 
     Tool to upload or update files to INaturalist web-service.
 
-    See the dedicated :ref:`INaturalist Export Tool <inaturalist_export>` for more information.
+    See :ref:`INaturalist Export Tool <inaturalist_export>` for more information.
 
 :menuselection:`Export --> Export to Onedrive` :kbd:`Ctrl+Alt+Shift+O`
 
     Tool to upload or update files to Onedrive web-service.
 
-    See the dedicated :ref:`Onedrive Export Tool <one_drive>` for more information.
+    See :ref:`Onedrive Export Tool <one_drive>` for more information.
 
 :menuselection:`Export --> Export to Pinterest` :kbd:`Ctrl+Alt+Shift+I`
 
     Tool to upload or update files to Pinterest web-service.
 
-    See the dedicated :ref:`Pinterest Export Tool <pinterest_export>` for more information.
+    See :ref:`Pinterest Export Tool <pinterest_export>` for more information.
 
 :menuselection:`Export --> Export to Piwigo`
 
     Tool to upload or update files to Piwigo web-service.
 
-    See the dedicated :ref:`Piwigo Export Tool <piwigo_export>` for more information.
+    See :ref:`Piwigo Export Tool <piwigo_export>` for more information.
 
 :menuselection:`Export --> Export to SmugMug` :kbd:`Ctrl+Alt+Shift+S`
 
     Tool to upload or update files to SmugMug web-service.
 
-    See the dedicated :ref:`SmugMug Export Tool <smugmug_export>` for more information.
+    See :ref:`SmugMug Export Tool <smugmug_export>` for more information.
 
 :menuselection:`Export --> Export to Twitter`
 
     Tool to upload or update files to Twitter web-service.
 
-    See the dedicated :ref:`Twitter Export Tool <twitter_export>` for more information.
+    See :ref:`Twitter Export Tool <twitter_export>` for more information.
 
 :menuselection:`Export --> Export to local storage` :kbd:`Ctrl+Alt+Shift+L`
 
     Tool to copy files somewhere in your computer outside your collections.
 
-    See the dedicated :ref:`Local Storage Export Tool <local_export>` for more information.
+    See :ref:`Local Storage Export Tool <local_export>` for more information.
 
 :menuselection:`Export --> Export to MediaWiki`
 
     Tool to upload or update files to MediaWiki web-service.
 
-    See the dedicated :ref:`MediaWiki Export Tool <media_wiki>` for more information.
+    See :ref:`MediaWiki Export Tool <media_wiki>` for more information.
 
 :menuselection:`Export --> Export to remote storage` :kbd:`Ctrl+Alt+Shift+K`
 
     Tool to upload files to another computer using network.
 
-    See the dedicated :ref:`Remote Storage Export Tool <remote_export>` for more information.
+    See :ref:`Remote Storage Export Tool <remote_export>` for more information.
 
 .. _menu_mainsettings:
 
@@ -584,7 +584,7 @@ The Settings Menu
 
     Enable or disable the main digiKam menu bar.
 
-    Remind the keyboard shortcut in order to be able to get it back. Another way is the context menu within the **Icon-View**.
+    Remember the keyboard shortcut in order to be able to get it back. Another way is the context menu within the **Icon-View**.
 
 :menuselection:`Settings --> Show Statusbar`
 
@@ -600,43 +600,43 @@ The Settings Menu
 
     Choose from a list (sub-menu) of predefined color themes for the appearance of digiKam.
 
-    For a detailed description see :ref:`digiKam Themes Configuration <theme_settings>` section.
+    For a detailed description see the :ref:`digiKam Themes Configuration <theme_settings>` section.
 
 :menuselection:`Settings --> Configure Languages...`
 
     Launch digiKam languages configuration dialog.
 
-    For a detailed description see :ref:`digiKam Languages Configuration <languages_settings>` section.
+    For a detailed description see the :ref:`digiKam Languages Configuration <languages_settings>` section.
 
 :menuselection:`Settings --> Configure Shortcuts...` :kbd:`Ctrl+Alt+,`
 
     Configure the digiKam shortcuts and manage different schemes of shortcuts.
 
-    For a detailed description see :ref:`digiKam Shortcuts Configuration <shortcuts_settings>` section.
+    For a detailed description see the :ref:`digiKam Shortcuts Configuration <shortcuts_settings>` section.
 
 :menuselection:`Settings --> Configure Toolbars...`
 
     Configure the digiKam toolbars.
 
-    For a detailed description see :ref:`digiKam Toolbars Configuration <toolbars_settings>` section.
+    For a detailed description see the :ref:`digiKam Toolbars Configuration <toolbars_settings>` section.
 
 :menuselection:`Settings --> Configure Notifications...`
 
     Configure the digiKam notifications including actions like *Play a sound*, *Log to a file* or *Run command*.
 
-    For a detailed description see :ref:`digiKam Notifications Configuration <notifications_settings>` section.
+    For a detailed description see the :ref:`digiKam Notifications Configuration <notifications_settings>` section.
 
 :menuselection:`Settings --> Database Migration...`
 
     Launch tool to migrate the digiKam databases from SQLite to MySQL or vice versa.
 
-    Find more information about the databases and database migration in the setup section about :ref:`digiKam databases <database_settings>`.
+    Find more information about the databases and database migration in the :ref:`digiKam databases <database_settings>` section.
 
 :menuselection:`Settings --> Configure digiKam...` :kbd:`Ctrl+Shift+,`
 
     Launch digiKam configure dialog.
 
-    For a detailed description see :ref:`digiKam Configuration <setup_application>` section.
+    For a detailed description see the :ref:`digiKam Configuration <setup_application>` section.
 
 .. _menu_mainhelp:
 

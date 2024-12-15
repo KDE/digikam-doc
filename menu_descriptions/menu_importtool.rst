@@ -10,8 +10,8 @@
 
 .. _menu_importtool:
 
-Import Tool Menu
-================
+:ref:`Import Tool Menu <menu_descriptions>`
+===========================================
 
 .. contents::
 
@@ -25,18 +25,18 @@ Import Tool Menu
 
     .. |icon_hamburger| image:: images/menu_icon_hamburger.webp
 
-    When switching in **Full-Screen Mode** :kbd:`Ctrl+Shift+F`, or when you **Hide Menubar** :kbd:`Ctrl+M`, the main menu will be available on the right side of tool-bar with the **Hamburger Button** |icon_hamburger|.
+    When switching into **Full-Screen Mode** :kbd:`Ctrl+Shift+F`, or when you **Hide Menubar** :kbd:`Ctrl+M`, the main menu will be available on the right side of toolbar with the **Hamburger Button** |icon_hamburger|.
 
 The Device Menu
 ---------------
 
 :menuselection:`Device --> Capture`
 
-    Perform a tethered shooting with your camera (supported only by `gPhoto2 devices <http://gphoto.org/doc/remote/>`_).
+    Perform tethered shooting with your camera (supported only by `gPhoto2 devices <http://gphoto.org/doc/remote/>`_).
 
 :menuselection:`Device --> Information`
 
-    Show current device information as drivers version and features.
+    Show current device information as driver version and features.
 
 .. figure:: images/menu_import_device_info.webp
     :alt:
@@ -46,7 +46,7 @@ The Device Menu
 
 :menuselection:`Device --> Cancel`
 
-    Cancel all operations done in background with the device, as thumbnails loading, downloading files, renaming, etc.
+    Cancel all operations done in background with the device, such as thumbnails loading, downloading files, renaming, etc.
 
 :menuselection:`Device --> Close` :kbd:`Ctrl+W`
 
@@ -59,7 +59,7 @@ Description of all common **Selection** options can be found in :ref:`Main Windo
 
 :menuselection:`Edit --> Select New Items`
 
-    Select new items detected automatically in the device.
+    Select new items automatically detected in the device.
 
 :menuselection:`Edit --> Select Locked Items` :kbd:`Ctrl+L`
 
@@ -106,15 +106,15 @@ The Item Menu
 
 :menuselection:`Item --> Upload` :kbd:`Ctrl+U`
 
-    Allows to upload new items from your computer to the device. This feature can be not supported by some gPhoto2 based devices. See :menuselection:`Device --> Information` for details.
+    Allows you to upload new items from your computer to the device. This feature is not supported by some gPhoto2 based devices. See :menuselection:`Device --> Information` for details.
 
 :menuselection:`Item --> Mark as downloaded`
 
-    Allows to mark as downloaded selected items from the device.
- 
+    Allows you to mark as downloaded selected items from the device.
+
 :menuselection:`Item --> Toggle Lock` :kbd:`Ctrl+G`
 
-    Allows to lock selected items from the device for the deletion (read only). This feature can be not supported by some gPhoto2 based devices. See :menuselection:`Device --> Information` for details.
+    Allows you to lock selected items from the device for the deletion (read only). This feature is not supported by some gPhoto2 based devices. See :menuselection:`Device --> Information` for details.
 
 The View Menu
 -------------
@@ -125,21 +125,21 @@ The View Menu
 
 :menuselection:`View --> Group Items`
 
-    This entry host all options to group items in Icon-View by features. Available choices are listed below:
+    This entry hosts all options to group items in Icon-View by features. Available choices are:
 
         - **Flat List** do not group items.
-        - **By Folder** arrange items depending of common parent directory in camera storage, 
-        - **By Format** arrange items depending of type-mime.
-        - **By Date** arrange items depending of capture time-stamp.
+        - **By Folder** arrange items depending on common parent directory in camera storage,
+        - **By Format** arrange items depending on type-mime.
+        - **By Date** arrange items depending on capture time-stamp.
 
-All other options are the same than entries available in :ref:`Main Window View Menu <menu_mainview>`.
+All other options are the same as entries available in :ref:`Main Window View Menu <menu_mainview>`.
 
 The Settings Menu
 -----------------
 
-See description from :ref:`Main Window <menu_mainsettings>` section.
+See description in the :ref:`Main Window <menu_mainsettings>` section.
 
 The Help Menu
 -------------
 
-See description from :ref:`Main Window <menu_mainhelp>` section.
+See description in the :ref:`Main Window <menu_mainhelp>` section.
