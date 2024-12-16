@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 01:42+0000\n"
+"POT-Creation-Date: 2024-12-15 02:27+0000\n"
 "PO-Revision-Date: 2024-10-16 20:48+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -33,51 +33,99 @@ msgstr ""
 "lliure, aprenentatge, fàcil, càmera, configuració, establir, gphoto2, usb, "
 "massa, emmagatzematge"
 
-# skip-rule: common-settings
 #: ../../setup_application/camera_settings.rst:14
-msgid "Camera Settings"
-msgstr "Configurar la càmera"
+msgid ":ref:`Camera Settings <setup_application>`"
+msgstr ""
 
 #: ../../setup_application/camera_settings.rst:16
+msgid ""
+"The **Camera Settings** options for digiKam are set from :menuselection:"
+"`Settings --> Configure digiKam... --> Camera Settings page`."
+msgstr ""
+
+#: ../../setup_application/camera_settings.rst:18
 msgid "Contents"
 msgstr "Contingut"
 
-#: ../../setup_application/camera_settings.rst:19
+#: ../../setup_application/camera_settings.rst:21
 msgid "Setup a Device"
 msgstr "Configurar un dispositiu"
 
-#: ../../setup_application/camera_settings.rst:21
+#: ../../setup_application/camera_settings.rst:23
 msgid ""
-"The camera settings shows on the left of the list of the currently supported "
-"cameras. On the right at the top there is an auto-detect button, which tries "
-"to identify the camera connected to your computer (make sure that the camera "
-"is connected properly to the computer and turned on in the image display "
-"mode). Below this are the port settings, the currently supported are "
-"**Serial**, **USB**, **Network**, and **Mass Storage**."
+"The **Devices** tab of the camera settings view displays a list of the "
+"currently supported cameras."
 msgstr ""
-"La configuració de la càmera es mostra a l'esquerra de la llista de les "
-"càmeres admeses. A la part superior dreta hi ha un botó de detecció "
-"automàtica, el qual intenta identificar la càmera connectada amb el vostre "
-"ordinador (assegureu-vos que la càmera estigui connectada correctament amb "
-"l'ordinador i encesa en el mode de visualització d'imatges). A sota seu hi "
-"ha les opcions de configuració de port, actualment s'admeten **Sèrie**, "
-"**USB**, **Xarxa** i **Emmagatzematge massiu**."
 
-#: ../../setup_application/camera_settings.rst:27
+#: ../../setup_application/camera_settings.rst:29
 msgid "The digiKam Camera Configuration Panel with the gPhoto View"
 msgstr ""
 "La subfinestra de configuració de la càmera en el digiKam amb la vista del "
 "gPhoto"
 
-#: ../../setup_application/camera_settings.rst:29
+#: ../../setup_application/camera_settings.rst:32
+msgid ""
+"**Add...** brings up the camera configuration dialog to add a new camera."
+msgstr ""
+
+#: ../../setup_application/camera_settings.rst:33
+msgid "**Remove** removes the selected camera from the list."
+msgstr ""
+
+#: ../../setup_application/camera_settings.rst:34
+msgid ""
+"**Edit...** brings up the camera configuration dialog to edit the selected "
+"camera."
+msgstr ""
+
+#: ../../setup_application/camera_settings.rst:35
+msgid "There are four buttons on the right:"
+msgstr ""
+
+#: ../../setup_application/camera_settings.rst:35
+msgid ""
+"**Auto-Detect** tries to identify the camera connected to your computer "
+"(make sure that the camera is connected properly to the computer, turned on, "
+"and set to the image display mode)."
+msgstr ""
+
+#: ../../setup_application/camera_settings.rst:37
+msgid ""
+"The camera configuration dialog is used to add or edit the characteristics "
+"of a camera."
+msgstr ""
+
+#: ../../setup_application/camera_settings.rst:43
+msgid "Dialog to Add a Camera Device Using gPhoto Drivers"
+msgstr ""
+"Diàleg per a afegir un dispositiu de càmera mitjançant els controladors del "
+"gPhoto"
+
+#: ../../setup_application/camera_settings.rst:46
+msgid ""
+"-- **Mounted Camera** specifies the mounted camera is a generic **Mass "
+"Storage** device. -- **USB PTP Class Camera** specifies the camera uses the "
+"Picture Transfer Protocol over USB. -- **PTP/IP Class Camera** specifies the "
+"camera uses the Picture Transfer Protocol over IP."
+msgstr ""
+
+#: ../../setup_application/camera_settings.rst:48
+#, fuzzy
+#| msgid ""
+#| "Clicking on a camera in the list from the left will display the supported "
+#| "ports which you can then select. If there is only one supported port it "
+#| "will be automatically selected. At the bottom on the right there is a box "
+#| "for setting the exact path in case of a serial port. Please note that USB "
+#| "interface does not need any paths to be set. If you cannot find your "
+#| "camera on the list, you can try to use a generic **Mass Storage** device "
+#| "selecting Mounted Camera item in the list."
 msgid ""
 "Clicking on a camera in the list from the left will display the supported "
-"ports which you can then select. If there is only one supported port it will "
-"be automatically selected. At the bottom on the right there is a box for "
-"setting the exact path in case of a serial port. Please note that USB "
-"interface does not need any paths to be set. If you cannot find your camera "
-"on the list, you can try to use a generic **Mass Storage** device selecting "
-"Mounted Camera item in the list."
+"ports which you can then select. digiKam currently supports **Serial**, "
+"**USB**, **Network**, and **Mass Storage** ports. If there is only one "
+"supported port, it will be automatically selected. If you cannot find your "
+"camera on the list, you can try to select one of three options in the camera "
+"list:"
 msgstr ""
 "Quan feu clic en una càmera a la llista de l'esquerra, es mostraran els "
 "ports admesos que després podreu seleccionar. Si només hi ha un port "
@@ -88,13 +136,20 @@ msgstr ""
 "dispositiu d'**emmagatzematge massiu** genèric seleccionant l'element Càmera "
 "muntada a la llista."
 
-#: ../../setup_application/camera_settings.rst:31
+#: ../../setup_application/camera_settings.rst:50
+#, fuzzy
+#| msgid ""
+#| "At the very bottom is where you set the path for a USB or FireWire "
+#| "(IEEE-1394 or i-link) Mass Storage camera. This box becomes active once "
+#| "you select USB or FireWire Mass Storage camera in the camera list. You "
+#| "need to enter here the path where you mount the camera, usually :file:`/"
+#| "mnt/camera` or :file:`/mnt/removable`."
 msgid ""
 "At the very bottom is where you set the path for a USB or FireWire "
 "(IEEE-1394 or i-link) Mass Storage camera. This box becomes active once you "
 "select USB or FireWire Mass Storage camera in the camera list. You need to "
-"enter here the path where you mount the camera, usually :file:`/mnt/camera` "
-"or :file:`/mnt/removable`."
+"enter the path where you mount the camera, usually :file:`/mnt/camera` or :"
+"file:`/mnt/removable`."
 msgstr ""
 "A la part inferior és on s'estableix el camí per a una càmera "
 "d'emmagatzematge massiu USB o FireWire (IEEE-1394 o i-link). Aquest quadre "
@@ -102,13 +157,7 @@ msgstr ""
 "a la llista de càmeres. Aquí haureu d'introduir el camí on munteu la càmera, "
 "generalment :file:`/mnt/camera` o :file:`/mnt/removable`."
 
-#: ../../setup_application/camera_settings.rst:37
-msgid "Dialog to Add a Camera Device Using gPhoto Drivers"
-msgstr ""
-"Diàleg per a afegir un dispositiu de càmera mitjançant els controladors del "
-"gPhoto"
-
-#: ../../setup_application/camera_settings.rst:39
+#: ../../setup_application/camera_settings.rst:52
 msgid ""
 "To be able to use your digital camera with digiKam, connect the camera to "
 "your computer, switch the camera to the image display mode and turn it on."
@@ -117,7 +166,7 @@ msgstr ""
 "càmera engegada amb l'ordinador, poseu la càmera en el mode de visualització "
 "d'imatges i comenceu."
 
-#: ../../setup_application/camera_settings.rst:41
+#: ../../setup_application/camera_settings.rst:54
 msgid ""
 "Try and see if digiKam can auto-detect the camera; if not, you can set the "
 "camera model and port manually. Once you have the camera setup, go to the "
@@ -129,7 +178,7 @@ msgstr ""
 "tingueu la configuració de la càmera, aneu al menú **Càmeres** a la "
 "interfície principal i veureu que la càmera apareix en el menú."
 
-#: ../../setup_application/camera_settings.rst:45
+#: ../../setup_application/camera_settings.rst:58
 msgid ""
 "You can choose any title you like for the camera in the setup and this title "
 "will be used in the main window **Cameras** menu. If you have more than one "
@@ -139,16 +188,23 @@ msgstr ""
 "s'utilitzarà a la finestra principal del menú **Càmeres**. Si en teniu més "
 "d'una, podreu afegir-les a través d'aquesta interfície de configuració."
 
-#: ../../setup_application/camera_settings.rst:50
+#: ../../setup_application/camera_settings.rst:63
 msgid "Customize the Behavior"
 msgstr "Personalitzar el comportament"
 
-#: ../../setup_application/camera_settings.rst:52
+#: ../../setup_application/camera_settings.rst:65
+#, fuzzy
+#| msgid ""
+#| "With the **Behavior** section, you can customize some main rules with "
+#| "your camera as how to deep in file to handle metadata, render high-"
+#| "quality thumbnails, use a default target album to download items, and to "
+#| "deal with already existing file-names while downloading."
 msgid ""
-"With the **Behavior** section, you can customize some main rules with your "
-"camera as how to deep in file to handle metadata, render high-quality "
-"thumbnails, use a default target album to download items, and to deal with "
-"already existing file-names while downloading."
+"The **Behavior** tab displays options for customizing how digiKam works with "
+"your camera. These options include one whether to: read metadata from the "
+"camera, render high-quality thumbnails, or use a default target album to "
+"download items. Options are also available on how digiKam deals with already "
+"existing files during downloads."
 msgstr ""
 "Amb la secció **Comportament**, podreu personalitzar algunes regles "
 "principals amb la vostra càmera, com ara aprofundir en el fitxer per a "
@@ -156,56 +212,101 @@ msgstr ""
 "un àlbum de destinació predeterminat per a baixar elements i tractar amb "
 "noms de fitxer ja existents durant la baixada."
 
-#: ../../setup_application/camera_settings.rst:58
+#: ../../setup_application/camera_settings.rst:71
+#, fuzzy
+#| msgid ""
+#| "Some options can slow-down the connection stage to the camera. "
+#| "Application will populate icon-view with in-deep metadata while scanning "
+#| "items from the device."
 msgid ""
-"Some options can slow-down the connection stage to the camera. Application "
-"will populate icon-view with in-deep metadata while scanning items from the "
-"device."
+"The use file metadata and high-quality thumbnail options can slow down the "
+"connection to the camera. When enabled, digiKam will populate the icon-view "
+"with metadata read from the camera while scanning items from the device."
 msgstr ""
 "Algunes opcions poden alentir el pas de connexió amb la càmera. L'aplicació "
 "completarà la vista d'icones amb les metadades profundes mentre explora "
 "elements des del dispositiu."
 
-#: ../../setup_application/camera_settings.rst:64
+#: ../../setup_application/camera_settings.rst:77
 msgid "The digiKam Camera Configuration Panel with the Behavior View"
 msgstr ""
 "La subfinestra de configuració de la càmera en el digiKam amb la vista de "
 "comportament"
 
-#: ../../setup_application/camera_settings.rst:69
-msgid "Running Filters at Download"
-msgstr "Executar filtres durant la baixada"
-
-#: ../../setup_application/camera_settings.rst:71
-msgid ""
-"With the **Import Filter** section, you can customize the list of type mime "
-"filters, and list the file patterns to ignore while downloading."
+#: ../../setup_application/camera_settings.rst:82
+msgid "Import Filters"
 msgstr ""
-"Amb la secció **Filtres d'importació**, podreu personalitzar la llista dels "
-"tipus de filtres MIME i llistar els patrons de fitxer que s'ignoraran durant "
-"la baixada."
 
-#: ../../setup_application/camera_settings.rst:77
+#: ../../setup_application/camera_settings.rst:84
+msgid ""
+"The **Import Filters** tab displays options to customize what files filters "
+"should be applied to during import. Files are specified by either mime type, "
+"a file name filter, or a path filter. There is also an option to show only "
+"new files. The options also include lists of filename patterns and file "
+"extensions that should be ignored while downloading."
+msgstr ""
+
+#: ../../setup_application/camera_settings.rst:90
 msgid "The digiKam Camera Configuration Panel with the Import Filters View"
 msgstr ""
 "La subfinestra de configuració de la càmera en el digiKam amb la vista de "
 "filtres d'importació"
 
-#: ../../setup_application/camera_settings.rst:82
+#: ../../setup_application/camera_settings.rst:95
 msgid "Customize Import Interface"
 msgstr "Personalitzar la interfície d'importació"
 
-#: ../../setup_application/camera_settings.rst:84
+#: ../../setup_application/camera_settings.rst:97
 msgid ""
-"With the **Import Window** section, you can customize options for icon-view "
-"information, the preview behavior, and the full-screen elements to show."
+"The **Import Window** tab displays options to customize the information "
+"displayed in the icon-view, the behavior of previews, and the default UI "
+"elements displayed in full-screen mode."
 msgstr ""
-"Amb la secció **Finestra d'importació**, podreu personalitzar les opcions "
-"per a la informació de la vista d'icones, el comportament de la vista prèvia "
-"i els elements de pantalla completa que es mostraran."
 
-#: ../../setup_application/camera_settings.rst:90
+#: ../../setup_application/camera_settings.rst:103
 msgid "The digiKam Camera Configuration Panel with the Import Window View"
 msgstr ""
 "La subfinestra de configuració de la càmera en el digiKam amb la vista de la "
 "finestra d'importació"
+
+# skip-rule: common-settings
+#~ msgid "Camera Settings"
+#~ msgstr "Configurar la càmera"
+
+#~ msgid ""
+#~ "The camera settings shows on the left of the list of the currently "
+#~ "supported cameras. On the right at the top there is an auto-detect "
+#~ "button, which tries to identify the camera connected to your computer "
+#~ "(make sure that the camera is connected properly to the computer and "
+#~ "turned on in the image display mode). Below this are the port settings, "
+#~ "the currently supported are **Serial**, **USB**, **Network**, and **Mass "
+#~ "Storage**."
+#~ msgstr ""
+#~ "La configuració de la càmera es mostra a l'esquerra de la llista de les "
+#~ "càmeres admeses. A la part superior dreta hi ha un botó de detecció "
+#~ "automàtica, el qual intenta identificar la càmera connectada amb el "
+#~ "vostre ordinador (assegureu-vos que la càmera estigui connectada "
+#~ "correctament amb l'ordinador i encesa en el mode de visualització "
+#~ "d'imatges). A sota seu hi ha les opcions de configuració de port, "
+#~ "actualment s'admeten **Sèrie**, **USB**, **Xarxa** i **Emmagatzematge "
+#~ "massiu**."
+
+#~ msgid "Running Filters at Download"
+#~ msgstr "Executar filtres durant la baixada"
+
+#~ msgid ""
+#~ "With the **Import Filter** section, you can customize the list of type "
+#~ "mime filters, and list the file patterns to ignore while downloading."
+#~ msgstr ""
+#~ "Amb la secció **Filtres d'importació**, podreu personalitzar la llista "
+#~ "dels tipus de filtres MIME i llistar els patrons de fitxer que "
+#~ "s'ignoraran durant la baixada."
+
+#~ msgid ""
+#~ "With the **Import Window** section, you can customize options for icon-"
+#~ "view information, the preview behavior, and the full-screen elements to "
+#~ "show."
+#~ msgstr ""
+#~ "Amb la secció **Finestra d'importació**, podreu personalitzar les opcions "
+#~ "per a la informació de la vista d'icones, el comportament de la vista "
+#~ "prèvia i els elements de pantalla completa que es mostraran."
