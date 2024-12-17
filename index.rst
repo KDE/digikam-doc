@@ -102,30 +102,6 @@ Main Window
 
         :ref:`image_view`
 
-    .. container:: tile no-descr
-
-        :ref:`albums_view`
-
-    .. container:: tile no-descr
-
-        :ref:`tags_view`
-
-    .. container:: tile no-descr
-
-        :ref:`search_view`
-
-    .. container:: tile no-descr
-
-        :ref:`similarity_view`
-
-    .. container:: tile no-descr
-
-        :ref:`mapsearch_view`
-
-    .. container:: tile no-descr
-
-        :ref:`people_view`
-
 .. toctree::
    :maxdepth: 2
    :hidden:
