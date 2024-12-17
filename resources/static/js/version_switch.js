@@ -38,7 +38,7 @@ var all_langs = {
     "sk": "Sloven&#269;ina",
     "sl": "Sloven&#353;&#269;ina",
     //"sr": "&#1089;&#1088;&#1087;&#1089;&#1082;&#1080;",
-    "sv": "Svenska",
+    //"sv": "Svenska",
     //"tr": "‎Türk&ccedil;e",
     "uk_UA": "&#x423;&#x43A;&#x440;&#x430;&#x457;&#x43D;&#x441;&#x44C;&#x43A;&#x430;",
     //"vi": "Ti&#x1EBF;ng Vi&#x1EC7;t",
