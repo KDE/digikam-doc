@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 01:42+0000\n"
+"POT-Creation-Date: 2024-12-16 02:29+0000\n"
 "PO-Revision-Date: 2024-10-16 20:09+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -34,21 +34,28 @@ msgstr ""
 "geocodificació"
 
 #: ../../geolocation_editor/geoeditor_map.rst:14
-msgid "Geolocation Map"
-msgstr "Mapa de geolocalització"
+msgid ":ref:`Geolocation Map <geolocation_editor>`"
+msgstr ""
 
-#: ../../geolocation_editor/geoeditor_map.rst:16
+#: ../../geolocation_editor/geoeditor_map.rst:49
 msgid "Contents"
 msgstr "Contingut"
 
-#: ../../geolocation_editor/geoeditor_map.rst:19
+#: ../../geolocation_editor/geoeditor_map.rst:52
 msgid "The Map Utils"
 msgstr "La utilitat del mapa"
 
-#: ../../geolocation_editor/geoeditor_map.rst:21
+#: ../../geolocation_editor/geoeditor_map.rst:54
+#, fuzzy
+#| msgid ""
+#| "The Geolocation Editor allows for adding and editing GPS coordinates of "
+#| "picture metadata. The geo-data is stored into the image (Exif tags) and "
+#| "the location can be displayed in an internal or external browser map. The "
+#| "Geolocation Editor also offers a :ref:`Reverse Geocoding "
+#| "<geoeditor_reverse>` tool."
 msgid ""
-"The Geolocation Editor allows for adding and editing GPS coordinates of "
-"picture metadata. The geo-data is stored into the image (Exif tags) and the "
+"The Geolocation Editor can be used to add or edit GPS coordinates stored in "
+"picture metadata. The geo-data is stored in the image as Exif tags and the "
 "location can be displayed in an internal or external browser map. The "
 "Geolocation Editor also offers a :ref:`Reverse Geocoding "
 "<geoeditor_reverse>` tool."
@@ -59,30 +66,41 @@ msgstr ""
 "navegador extern. L'Editor de geolocalització també ofereix una :ref:"
 "`Geocodificació inversa <geoeditor_reverse>`."
 
-#: ../../geolocation_editor/geoeditor_map.rst:23
+#: ../../geolocation_editor/geoeditor_map.rst:56
+#, fuzzy
+#| msgid ""
+#| "Geolocation Editor can be opened via menu entry :menuselection:`Item --> "
+#| "Edit Geolocation` or via pressing :kbd:`Ctrl+Shift+G`. It requires at "
+#| "least one image to be selected otherwise it will not open."
 msgid ""
-"Geolocation Editor can be opened via menu entry :menuselection:`Item --> "
-"Edit Geolocation` or via pressing :kbd:`Ctrl+Shift+G`. It requires at least "
-"one image to be selected otherwise it will not open."
+"The Geolocation Editor can be opened from :menuselection:`Item --> Edit "
+"Geolocation` or by pressing :kbd:`Ctrl+Shift+G`. It requires at least one "
+"image to be selected, otherwise it will not open."
 msgstr ""
 "L'editor de geolocalització es pot obrir a través de l'element de menú :"
 "menuselection:`Element --> Edita la geolocalització` o prement la drecera :"
 "kbd:`Ctrl+Maj+G`. Requereix que almenys se seleccioni una imatge o no "
 "s'obrirà."
 
-#: ../../geolocation_editor/geoeditor_map.rst:29
+#: ../../geolocation_editor/geoeditor_map.rst:62
 msgid ""
 "The digiKam Geolocation Tool Used to Edit Item Coordinates Using OpenStreeMap"
 msgstr ""
 "L'eina de geolocalització del digiKam utilitzada per a editar les "
 "coordenades dels elements emprant l'OpenStreeMap"
 
-#: ../../geolocation_editor/geoeditor_map.rst:31
+#: ../../geolocation_editor/geoeditor_map.rst:64
+#, fuzzy
+#| msgid ""
+#| "The Geolocation Editor provides the tools to localize pictures "
+#| "geographically in the common spherical coordinate system (used by GPS/"
+#| "Galileo). **Altitude**, **Latitude**, **Longitude**, **Speed**, **Number "
+#| "of Satellites**, **Fix Type**, and **DOP** are editable."
 msgid ""
 "The Geolocation Editor provides the tools to localize pictures "
 "geographically in the common spherical coordinate system (used by GPS/"
-"Galileo). **Altitude**, **Latitude**, **Longitude**, **Speed**, **Number of "
-"Satellites**, **Fix Type**, and **DOP** are editable."
+"Galileo). All of the GPS fields: **Altitude**, **Latitude**, **Longitude**, "
+"**Speed**, **Number of Satellites**, **Fix Type**, and **DOP** are editable."
 msgstr ""
 "L'Editor de geolocalització proporciona les eines per a localitzar "
 "geogràficament les imatges en el sistema de coordenades esfèriques comú "
@@ -90,11 +108,13 @@ msgstr ""
 "**Longitud**, **Velocitat**, **Nombre de satèl·lits**, **Tipus fix** i "
 "**DOP**."
 
-#: ../../geolocation_editor/geoeditor_map.rst:33
-msgid "The editor has two methods to mark the pictures with coordinates:"
+#: ../../geolocation_editor/geoeditor_map.rst:66
+#, fuzzy
+#| msgid "The editor has two methods to mark the pictures with coordinates:"
+msgid "The editor has two methods to encode coordinates into pictures:"
 msgstr "L'editor té dos mètodes per a marcar les imatges amb les coordenades:"
 
-#: ../../geolocation_editor/geoeditor_map.rst:35
+#: ../../geolocation_editor/geoeditor_map.rst:68
 msgid ""
 "Semi-automatic coordinate attribution to single pictures, accessible via the "
 "**Details** tab on the Right Sidebar."
@@ -102,7 +122,7 @@ msgstr ""
 "Atribució de coordenades semiautomàtica a una sola imatge, accessible a "
 "través de la pestanya **Detalls** de la barra lateral dreta."
 
-#: ../../geolocation_editor/geoeditor_map.rst:37
+#: ../../geolocation_editor/geoeditor_map.rst:70
 msgid ""
 "Batch correlation of GPS tracking data with a series of images you will find "
 "in the :ref:`GPS Correlator <gps_correlator>` tab."
@@ -110,62 +130,91 @@ msgstr ""
 "La correlació per lots de les dades de seguiment GPS amb una sèrie d'imatges "
 "la trobareu a la pestanya :ref:`Correlacionador del GPS <gps_correlator>`."
 
-#: ../../geolocation_editor/geoeditor_map.rst:39
-msgid "Furthermore the Right Sidebar offers three more tools:"
+#: ../../geolocation_editor/geoeditor_map.rst:72
+#, fuzzy
+#| msgid "Furthermore the Right Sidebar offers three more tools:"
+msgid "Furthermore, the Right Sidebar offers four more tools:"
 msgstr "A més la barra lateral dreta, ofereix tres eines més:"
 
-#: ../../geolocation_editor/geoeditor_map.rst:41
+#: ../../geolocation_editor/geoeditor_map.rst:74
 msgid "The **Undo/Redo** tab."
 msgstr "La pestanya **Desfer/refer**."
 
-#: ../../geolocation_editor/geoeditor_map.rst:43
+#: ../../geolocation_editor/geoeditor_map.rst:76
+#, fuzzy
+#| msgid ""
+#| "The **Reverse Geocoding** tab which allows to find geographic names "
+#| "(cities, street names, ...) by using a public reverse geocoding service "
+#| "and the GPS data of an image."
 msgid ""
-"The **Reverse Geocoding** tab which allows to find geographic names (cities, "
-"street names, ...) by using a public reverse geocoding service and the GPS "
-"data of an image."
+"The **Reverse Geocoding** tab which allows you to find geographic names "
+"(cities, street names, ...) by using a public reverse geocoding service and "
+"the GPS data of an image. These names can then be used for additional photo "
+"tagging."
 msgstr ""
 "La pestanya **Geocodificació inversa**, la qual permet trobar noms "
 "geogràfics (ciutats, noms de carrer...) mitjançant l'ús d'un servei públic "
 "de geocodificació inversa i les dades GPS d'una imatge."
 
-#: ../../geolocation_editor/geoeditor_map.rst:45
+#: ../../geolocation_editor/geoeditor_map.rst:78
+#, fuzzy
+#| msgid ""
+#| "The **Search** tab which allows to find positions on the map from "
+#| "geographic names (cities, monuments, ...) by using a public geoname "
+#| "service (GeoNames and OpenStreetMap at the time of writing)."
 msgid ""
-"The **Search** tab which allows to find positions on the map from geographic "
-"names (cities, monuments, ...) by using a public geoname service (GeoNames "
-"and OpenStreetMap at the time of writing)."
+"The **Search** tab which allows you to find positions on the map from "
+"geographic names (cities, monuments, ...) by using a public geoname service "
+"(GeoNames and OpenStreetMap at the time of writing)."
 msgstr ""
 "La pestanya **Cerca**, la qual permet trobar posicions al mapa partint de "
 "noms geogràfics (ciutats, monuments...) mitjançant l'ús d'un servei públic "
 "de noms geogràfics (GeoNames i OpenStreetMap en el moment d'escriure això)."
 
-#: ../../geolocation_editor/geoeditor_map.rst:48
+#: ../../geolocation_editor/geoeditor_map.rst:80
+msgid ""
+"The **KML Export** tab which allows you to export a set of positions and "
+"thumbnails into a standard KML file for use in other mapping programs."
+msgstr ""
+
+#: ../../geolocation_editor/geoeditor_map.rst:83
 msgid "The Map View"
 msgstr "La vista del mapa"
 
-#: ../../geolocation_editor/geoeditor_map.rst:50
+#: ../../geolocation_editor/geoeditor_map.rst:85
 msgid ""
-"For navigating on the map, refer to the :ref:`Map Search section "
-"<mapsearch_view>`."
+"Drag to move any displayed map, and use the zoom control to zoom in or out. "
+"More details on navigating on the map are provided in the :ref:`Map Search "
+"<mapsearch_view>` section of this manual."
 msgstr ""
-"Per a navegar en el mapa, consulteu la :ref:`secció Cerca en el mapa "
-"<mapsearch_view>`."
 
-#: ../../geolocation_editor/geoeditor_map.rst:52
+#: ../../geolocation_editor/geoeditor_map.rst:87
+#, fuzzy
+#| msgid ""
+#| "Right under the map you find a row of buttons. I shall use the tooltip "
+#| "texts as designations in the following description. From left to right we "
+#| "have:"
 msgid ""
-"Right under the map you find a row of buttons. I shall use the tooltip texts "
-"as designations in the following description. From left to right we have:"
+"Right under the map you find a row of buttons. From left to right we have:"
 msgstr ""
 "Just a sota del mapa trobareu una fila de botons. Utilitzaré els consells "
 "d'eina com les designacions en la següent descripció. D'esquerra a dreta, "
 "tenim:"
 
-#: ../../geolocation_editor/geoeditor_map.rst:54
+#: ../../geolocation_editor/geoeditor_map.rst:89
+#, fuzzy
+#| msgid ""
+#| "The Map-settings button opens a small menu which allows you to choose "
+#| "between OpenStreeMap and Off-line Maps, and depending on that choice to "
+#| "choose the kind of map you want to use. Furthermore you can select the "
+#| "projection (**Spherical**, **Mercator**, **Equi-Rectangular**) and you "
+#| "can display a few additional tools like compass and scale on the map."
 msgid ""
-"The Map-settings button opens a small menu which allows you to choose "
-"between OpenStreeMap and Off-line Maps, and depending on that choice to "
-"choose the kind of map you want to use. Furthermore you can select the "
-"projection (**Spherical**, **Mercator**, **Equi-Rectangular**) and you can "
-"display a few additional tools like compass and scale on the map."
+"The **Map Settings** button |map_settings| opens a small menu which allows "
+"you to choose between OpenStreeMap and Off-line Maps, and depending on that "
+"choice to choose the kind of map you want to use. Furthermore, you can "
+"select the projection (**Spherical**, **Mercator**, **Equi-Rectangular**) "
+"and you can display a few additional tools like compass and scale on the map."
 msgstr ""
 "El botó de configuració del mapa obre un petit menú que permet triar entre "
 "OpenStreeMap i Mapes fora de línia, segons aquesta elecció es triarà el "
@@ -173,110 +222,142 @@ msgstr ""
 "Marble (**Esfèrica**, **Mercator**, **Cilíndrica equidistant**) i podeu fer "
 "mostrar algunes eines addicionals com la brúixola i l'escala en el mapa."
 
-#: ../../geolocation_editor/geoeditor_map.rst:56
-msgid "The **Zoom In** button."
+#: ../../geolocation_editor/geoeditor_map.rst:91
+#, fuzzy
+#| msgid "The **Zoom In** button."
+msgid "The **Zoom In** button |zoom_in|."
 msgstr "El botó **Apropa**."
 
-#: ../../geolocation_editor/geoeditor_map.rst:58
-msgid "The **Zoom Out** button."
+#: ../../geolocation_editor/geoeditor_map.rst:93
+#, fuzzy
+#| msgid "The **Zoom Out** button."
+msgid "The **Zoom Out** button |zoom_out|."
 msgstr "El botó **Allunya**."
 
-#: ../../geolocation_editor/geoeditor_map.rst:60
+#: ../../geolocation_editor/geoeditor_map.rst:95
+#, fuzzy
+#| msgid ""
+#| "The **Switch Between Markers And Thumbnails** button lets you choose "
+#| "whether you want the positions of your images indicated by a marker "
+#| "symbol or by a thumbnail on the map. If you choose thumbnails the next "
+#| "two buttons are of particular interest."
 msgid ""
-"The **Switch Between Markers And Thumbnails** button lets you choose whether "
-"you want the positions of your images indicated by a marker symbol or by a "
-"thumbnail on the map. If you choose thumbnails the next two buttons are of "
-"particular interest."
+"The **Switch Between Markers And Thumbnails** button, will display as |"
+"markers| or |thumbnails| to let you choose whether you want the positions of "
+"your images indicated by a marker symbol or by a thumbnail on the map. If "
+"you choose thumbnails, the next two buttons are of particular interest."
 msgstr ""
 "El botó **Alterna entre marcadors i miniatures** permet decidir si voleu que "
 "les posicions de les imatges siguin indicades per un símbol de marcat o per "
 "una miniatura en el mapa. Si trieu miniatures, els dos botons següents seran "
 "d'interès particular."
 
-#: ../../geolocation_editor/geoeditor_map.rst:64
+#: ../../geolocation_editor/geoeditor_map.rst:99
+#, fuzzy
+#| msgid ""
+#| "The Markers color over the map depends of the number of items grouped at "
+#| "a location, and it depends of the zoom level. Colors available are listed "
+#| "below:"
 msgid ""
 "The Markers color over the map depends of the number of items grouped at a "
-"location, and it depends of the zoom level. Colors available are listed "
-"below:"
+"location, and it depends on the zoom level. The meanings of the colors are "
+"listed below:"
 msgstr ""
 "El color dels Marcadors sobre el mapa depèn del nombre d'elements agrupats "
 "en una ubicació i del nivell de zoom. Els colors disponibles es llisten a "
 "continuació:"
 
-#: ../../geolocation_editor/geoeditor_map.rst:67
+#: ../../geolocation_editor/geoeditor_map.rst:102
 msgid "Color"
 msgstr "Color"
 
-#: ../../geolocation_editor/geoeditor_map.rst:67
+#: ../../geolocation_editor/geoeditor_map.rst:102
 msgid "Number of Grouped Items"
 msgstr "Nombre d'elements agrupats"
 
-#: ../../geolocation_editor/geoeditor_map.rst:69
+#: ../../geolocation_editor/geoeditor_map.rst:104
 msgid "Cyan"
 msgstr "Cian"
 
-#: ../../geolocation_editor/geoeditor_map.rst:69
+#: ../../geolocation_editor/geoeditor_map.rst:104
 msgid "1"
 msgstr "1"
 
-#: ../../geolocation_editor/geoeditor_map.rst:70
+#: ../../geolocation_editor/geoeditor_map.rst:105
 msgid "Green"
 msgstr "Verd"
 
-#: ../../geolocation_editor/geoeditor_map.rst:70
+#: ../../geolocation_editor/geoeditor_map.rst:105
 msgid "2"
 msgstr "2"
 
-#: ../../geolocation_editor/geoeditor_map.rst:71
+#: ../../geolocation_editor/geoeditor_map.rst:106
 msgid "Yellow"
 msgstr "Groc"
 
-#: ../../geolocation_editor/geoeditor_map.rst:71
+#: ../../geolocation_editor/geoeditor_map.rst:106
 msgid "10"
 msgstr "10"
 
-#: ../../geolocation_editor/geoeditor_map.rst:72
+#: ../../geolocation_editor/geoeditor_map.rst:107
 msgid "Orange"
 msgstr "Taronja"
 
-#: ../../geolocation_editor/geoeditor_map.rst:72
+#: ../../geolocation_editor/geoeditor_map.rst:107
 msgid "50"
 msgstr "50"
 
-#: ../../geolocation_editor/geoeditor_map.rst:73
+#: ../../geolocation_editor/geoeditor_map.rst:108
 msgid "Red"
 msgstr "Vermell"
 
-#: ../../geolocation_editor/geoeditor_map.rst:73
+#: ../../geolocation_editor/geoeditor_map.rst:108
 msgid "100"
 msgstr "100"
 
-#: ../../geolocation_editor/geoeditor_map.rst:76
+#: ../../geolocation_editor/geoeditor_map.rst:111
+#, fuzzy
+#| msgid ""
+#| "The **Increase The Thumbnail Size On The Map** button is doing just that "
+#| "and the **Decrease The Thumbnail Size On The Map button** as well."
 msgid ""
-"The **Increase The Thumbnail Size On The Map** button is doing just that and "
-"the **Decrease The Thumbnail Size On The Map button** as well."
+"The **Increase The Thumbnail Size On The Map** button |increase_thumbnail| "
+"and the **Decrease The Thumbnail Size On The Map button** |"
+"decrease_thumbnail| change the size of the thumbnails."
 msgstr ""
 "El botó **Incrementa la mida de les miniatures al mapa** fa exactament això "
 "i el botó **Disminueix la mida de les miniatures al mapa** també."
 
-#: ../../geolocation_editor/geoeditor_map.rst:78
+#: ../../geolocation_editor/geoeditor_map.rst:113
+#, fuzzy
+#| msgid ""
+#| "The **Pan Mode** button lets you move the map by click with the left "
+#| "mouse button and holding on it and then drag it with the mouse to where "
+#| "you need it. The cursor symbol will change to a hand."
 msgid ""
-"The **Pan Mode** button lets you move the map by click with the left mouse "
-"button and holding on it and then drag it with the mouse to where you need "
-"it. The cursor symbol will change to a hand."
+"The **Pan Mode** button |pan_mode| lets you move the map by clicking and "
+"dragging. The cursor symbol will change to a hand."
 msgstr ""
 "El botó **Mode panoràmic** permet moure el mapa fent-hi clic amb el botó "
 "esquerre del ratolí, mantenir-lo premut i després arrossegant-lo amb el "
 "ratolí cap on necessiteu. El símbol del cursor canviarà a una mà."
 
-#: ../../geolocation_editor/geoeditor_map.rst:80
+#: ../../geolocation_editor/geoeditor_map.rst:115
+#, fuzzy
+#| msgid ""
+#| "The **Zoom Into A Group** button is useful if you have images so close to "
+#| "each other on the map that all but the topmost are obscured. Once you "
+#| "click on the visible image the zoom factor will be adjusted so that all "
+#| "the other images behind it become visible. If you click on a group of "
+#| "images and nothing really happens they either have exactly the same "
+#| "geographic position and/or the zoom factor is already at its maximum."
 msgid ""
-"The **Zoom Into A Group** button is useful if you have images so close to "
-"each other on the map that all but the topmost are obscured. Once you click "
-"on the visible image the zoom factor will be adjusted so that all the other "
-"images behind it become visible. If you click on a group of images and "
-"nothing really happens they either have exactly the same geographic position "
-"and/or the zoom factor is already at its maximum."
+"The **Zoom Into A Group** button |zoom_into_group| is useful if you have "
+"images so close to each other on the map that all but the topmost are "
+"obscured. Once you click on the visible image, the zoom factor will be "
+"adjusted so that all the other images behind it become visible. If you click "
+"on a group of images and nothing really happens they either have exactly the "
+"same geographic position and/or the zoom factor is already at its maximum."
 msgstr ""
 "El botó **Zoom en un grup**, és útil si teniu imatges tan properes una de "
 "l'altra en el mapa que resten ocultes en part. Una vegada feu clic en la "
@@ -285,10 +366,17 @@ msgstr ""
 "d'imatges i realment no passa res, llavors serà perquè tenen exactament la "
 "mateixa posició geogràfica i/o el factor de zoom ja es troba al seu màxim."
 
-#: ../../geolocation_editor/geoeditor_map.rst:84
+#: ../../geolocation_editor/geoeditor_map.rst:119
+#, fuzzy
+#| msgid ""
+#| "**Group** in this context here *has nothing to do* with grouped images as "
+#| "described in :ref:`this chapter from the manual <grouping_photograph>`. "
+#| "Here the term refers to images which are very close to each other on the "
+#| "map (depending on the zoom factor) or have exactly the same geographic "
+#| "position."
 msgid ""
-"**Group** in this context here *has nothing to do* with grouped images as "
-"described in :ref:`this chapter from the manual <grouping_photograph>`. Here "
+"**Group** in this context *has nothing to do* with grouped images as "
+"described in :ref:`this section <grouping_photograph>` of the manual. Here "
 "the term refers to images which are very close to each other on the map "
 "(depending on the zoom factor) or have exactly the same geographic position."
 msgstr ""
@@ -298,18 +386,30 @@ msgstr ""
 "el mapa (depenent del factor de zoom) o que tenen exactament la mateixa "
 "posició geogràfica."
 
-#: ../../geolocation_editor/geoeditor_map.rst:86
+#: ../../geolocation_editor/geoeditor_map.rst:121
+#, fuzzy
+#| msgid ""
+#| "The **Select Images** button toggles the selection of an image or a group "
+#| "of images in the list of images right below the buttons once you click on "
+#| "it on the map. The selection status of all other images in the list "
+#| "remain unchanged. Be aware of the fact that there is a kind of two-stage "
+#| "selection! If you click on a thumbnail or marker on the map the selected "
+#| "image(s) in the list of images will become a light blue background. If "
+#| "you click on it in the list the background will become a darker blue and "
+#| "if there where more than one image with light blue background before the "
+#| "others will become un-selected. Only clicking on an image in the list "
+#| "will let its preview appear to the right of the list."
 msgid ""
-"The **Select Images** button toggles the selection of an image or a group of "
-"images in the list of images right below the buttons once you click on it on "
-"the map. The selection status of all other images in the list remain "
-"unchanged. Be aware of the fact that there is a kind of two-stage selection! "
-"If you click on a thumbnail or marker on the map the selected image(s) in "
-"the list of images will become a light blue background. If you click on it "
-"in the list the background will become a darker blue and if there where more "
-"than one image with light blue background before the others will become un-"
-"selected. Only clicking on an image in the list will let its preview appear "
-"to the right of the list."
+"The **Select Images** button |select_images| toggles the selection of an "
+"image, or a group of images, in the list of images right below the buttons "
+"once you click on it on the map. The selection status of all other images in "
+"the list remain unchanged. Be aware of the fact that there is a kind of two-"
+"stage selection! If you click on a thumbnail or marker on the map, the "
+"selected image(s) in the list of images will be displayed with a light blue "
+"background. If you click on it in the list, the background will become a "
+"darker blue and if there were more than one image with a light blue "
+"background before, the other images will be de-selected. Only clicking on an "
+"image in the list will let its preview appear to the right of the list."
 msgstr ""
 "El botó **Selecciona les imatges**, commuta la selecció d'una imatge o d'un "
 "grup d'imatges a la llista d'imatges just a sota dels botons una vegada que "
@@ -322,28 +422,75 @@ msgstr ""
 "les altres seran desseleccionades. Només en fer clic en una imatge a la "
 "llista, apareixerà la seva vista prèvia a la dreta de la llista."
 
-#: ../../geolocation_editor/geoeditor_map.rst:88
+#: ../../geolocation_editor/geoeditor_map.rst:123
+#, fuzzy
+#| msgid ""
+#| "The **Display Bookmarked Positions On The Map** button can be used to "
+#| "display on the map the places already registered in the :ref:`Bookmarks "
+#| "Manager <geoeditor_bookmarks>`."
 msgid ""
-"The **Display Bookmarked Positions On The Map** button can be used to "
-"display on the map the places already registered in the :ref:`Bookmarks "
-"Manager <geoeditor_bookmarks>`."
+"The **Display Bookmarked Positions On The Map** button |display_bookmarks| "
+"can be used to display places on the map that are already registered in the :"
+"ref:`Bookmarks Manager <geoeditor_bookmarks>`."
 msgstr ""
 "El botó **Mostra les posicions dels punts en el mapa** es pot utilitzar per "
 "a mostrar en el mapa els llocs ja registrats en el :ref:`Gestor de punts "
 "d'interès <geoeditor_bookmarks>`."
 
-#: ../../geolocation_editor/geoeditor_map.rst:90
+#: ../../geolocation_editor/geoeditor_map.rst:126
 msgid ""
-"From the context menu on the map only Copy Coordinates is of interest for "
-"geotagging. It copies the geographic coordinates at the cursor position to "
-"the clipboard. For all other menu items see Marble handbook."
+"**Copy Coordinates** copies the geographic coordinates at the cursor "
+"position to the clipboard, e.g. 4° 29' 11.1\"W,48° 22' 48.5\"N"
 msgstr ""
-"Des del menú contextual al mapa només **Copia les coordenades** és d'interès "
-"per a l'etiquetatge geogràfic. Aquest copia les coordenades geogràfiques a "
-"la posició del cursor al porta-retalls. Per a tots els altres elements del "
-"menú, vegeu el manual del Marble."
 
-#: ../../geolocation_editor/geoeditor_map.rst:92
+#: ../../geolocation_editor/geoeditor_map.rst:127
+msgid ""
+"**Copy geo: URL** copies the geographic coordinates at the cursor position "
+"to the clipboard in decimal degrees, e.g. geo:48.3800450672,-4.4865371254"
+msgstr ""
+
+#: ../../geolocation_editor/geoeditor_map.rst:128
+msgid ""
+"**Address Details** performs a reverse location lookup to display the "
+"address of the selected location in a dialog."
+msgstr ""
+
+#: ../../geolocation_editor/geoeditor_map.rst:129
+msgid ""
+"**Info Boxes** allows you to select which widgets to display on the map, "
+"including compass, scale bar, navigation widget, overview map, and a "
+"progress indicator."
+msgstr ""
+
+#: ../../geolocation_editor/geoeditor_map.rst:130
+msgid ""
+"**Add Measure Point** add a measure point at the clicked location. Add a "
+"second point to measure distance between the two points. Add a third point "
+"to measure total distance and angles between the points."
+msgstr ""
+
+#: ../../geolocation_editor/geoeditor_map.rst:131
+msgid ""
+"**Remove Last Measure Point** remove the last measure point to be added."
+msgstr ""
+
+#: ../../geolocation_editor/geoeditor_map.rst:132
+msgid ""
+"The map's context menu, selected by right clicking on the map, contains "
+"other items of interest:"
+msgstr ""
+
+#: ../../geolocation_editor/geoeditor_map.rst:132
+msgid "**Remove Measure Points** removes all measure points."
+msgstr ""
+
+#: ../../geolocation_editor/geoeditor_map.rst:134
+msgid ""
+"Additional information on the map view is available from the `Marble "
+"handbook <https://docs.kde.org/trunk5/en/marble/marble/index.html>`_."
+msgstr ""
+
+#: ../../geolocation_editor/geoeditor_map.rst:136
 msgid ""
 "Note that you can change the layout from one map to two maps, beside or "
 "above each other via the little drop-down menu at the bottom of the "
@@ -353,11 +500,11 @@ msgstr ""
 "o damunt de l'altra a través del petit menú desplegable que hi ha a la part "
 "inferior de l'editor de geolocalització."
 
-#: ../../geolocation_editor/geoeditor_map.rst:97
+#: ../../geolocation_editor/geoeditor_map.rst:143
 msgid "The Bookmarks Manager"
 msgstr "L'administrador de punts"
 
-#: ../../geolocation_editor/geoeditor_map.rst:99
+#: ../../geolocation_editor/geoeditor_map.rst:145
 msgid ""
 "The digiKam geolocation **Bookmarks Manager** is a tool to register a nested "
 "list of favorite places which can be re-used later to geolocalize items "
@@ -368,59 +515,84 @@ msgstr ""
 "reutilitzar més tard per a geolocalitzar elements presos a les mateixes "
 "posicions."
 
-#: ../../geolocation_editor/geoeditor_map.rst:101
+#: ../../geolocation_editor/geoeditor_map.rst:147
+#, fuzzy
+#| msgid ""
+#| "The digiKam Bookmarks Manager is available from the items list context "
+#| "menu as you can see to the screenshot below."
 msgid ""
 "The digiKam Bookmarks Manager is available from the items list context menu "
-"as you can see to the screenshot below."
+"as you can see in the screenshot below."
 msgstr ""
 "El Gestor de punts d'interès del digiKam està disponible des del menú "
 "contextual de la llista d'elements, com podeu veure a la captura de pantalla "
 "a continuació."
 
-#: ../../geolocation_editor/geoeditor_map.rst:107
+#: ../../geolocation_editor/geoeditor_map.rst:153
+#, fuzzy
+#| msgid ""
+#| "The digiKam Geolocation Bookmarks Manager Available From The Items List "
+#| "Context Menu"
 msgid ""
-"The digiKam Geolocation Bookmarks Manager Available From The Items List "
+"The digiKam Geolocation Bookmarks Manager Available from the Items List "
 "Context Menu"
 msgstr ""
 "El Gestor de punts d'interès de geolocalització del digiKam disponible des "
 "del menú contextual de la llista d'elements"
 
-#: ../../geolocation_editor/geoeditor_map.rst:109
+#: ../../geolocation_editor/geoeditor_map.rst:155
 msgid "From this menu you can:"
 msgstr "Des d'aquest menú podeu:"
 
-#: ../../geolocation_editor/geoeditor_map.rst:111
+#: ../../geolocation_editor/geoeditor_map.rst:157
+#, fuzzy
+#| msgid ""
+#| "**Add Bookmark**: if the current selected item from list has GPS "
+#| "information, these ones can be registered to the manager with this "
+#| "option. A dialog to populate the bookmark properties must appears."
 msgid ""
-"**Add Bookmark**: if the current selected item from list has GPS "
-"information, these ones can be registered to the manager with this option. A "
-"dialog to populate the bookmark properties must appears."
+"**Add Bookmark**: if the current selected item from the list has GPS "
+"information, this location can be bookmarked with this option. A dialog to "
+"populate the bookmark properties then appears."
 msgstr ""
 "**Afegeix un punt d'interès**: si l'element seleccionat actualment de la "
 "llista té informació GPS, aquesta es pot registrar al gestor amb aquesta "
 "opció. Apareixerà un diàleg per a completar les propietats del punt "
 "d'interès."
 
-#: ../../geolocation_editor/geoeditor_map.rst:117
+#: ../../geolocation_editor/geoeditor_map.rst:163
 msgid ""
 "The digiKam Geolocation Bookmarks Manager Dialog To Register A New Entry"
 msgstr ""
 "El diàleg del Gestor de punts d'interès de geolocalització del digiKam per a "
 "registrar una entrada nova"
 
-#: ../../geolocation_editor/geoeditor_map.rst:119
+#: ../../geolocation_editor/geoeditor_map.rst:165
+#, fuzzy
+#| msgid ""
+#| "You can customize the name, a comment to describe the location, and the "
+#| "place in the bookmarks hierarchy"
 msgid ""
-"You can customize the name, a comment to describe the location, and the "
-"place in the bookmarks hierarchy"
+"You can customize the name, add a comment to describe the location, and "
+"specify the place in the bookmark hierarchy."
 msgstr ""
 "Podeu personalitzar el nom, un comentari per a descriure la ubicació i el "
 "lloc en la jerarquia dels punts"
 
-#: ../../geolocation_editor/geoeditor_map.rst:121
+#: ../../geolocation_editor/geoeditor_map.rst:167
+#, fuzzy
+#| msgid ""
+#| "**Edit Bookmarks**: this will show you a dialog with the complete "
+#| "hierarchy of bookmarks managed. You can change item properties, the place "
+#| "in hierarchy using drag and drop, and display the corresponding location "
+#| "on a map from the right side. In the Hierarchy you can append new "
+#| "branches using **Add Folder** button. The **Remove** button allows you to "
+#| "delete an item in the hierarchy."
 msgid ""
-"**Edit Bookmarks**: this will show you a dialog with the complete hierarchy "
-"of bookmarks managed. You can change item properties, the place in hierarchy "
-"using drag and drop, and display the corresponding location on a map from "
-"the right side. In the Hierarchy you can append new branches using **Add "
+"**Edit Bookmarks**: displays a dialog with the complete hierarchy of managed "
+"bookmarks. You can change item properties, the place in the hierarchy using "
+"drag and drop, and display the corresponding location on a map from the "
+"right side. In the Hierarchy you can append new branches using the **Add "
 "Folder** button. The **Remove** button allows you to delete an item in the "
 "hierarchy."
 msgstr ""
@@ -431,25 +603,48 @@ msgstr ""
 "branques noves utilitzant el botó **Afegeix una carpeta**. El botó "
 "**Suprimeix** permet eliminar un element de la jerarquia."
 
-#: ../../geolocation_editor/geoeditor_map.rst:127
+#: ../../geolocation_editor/geoeditor_map.rst:173
 msgid "The digiKam Geolocation Bookmarks Editor Dialog"
 msgstr "El diàleg de l'editor de punts de geolocalització del digiKam"
 
-#: ../../geolocation_editor/geoeditor_map.rst:129
+#: ../../geolocation_editor/geoeditor_map.rst:175
+#, fuzzy
+#| msgid ""
+#| "Access quickly to the bookmarks hierarchy to assign a location to the "
+#| "current selected item."
 msgid ""
-"Access quickly to the bookmarks hierarchy to assign a location to the "
-"current selected item."
+"Quickly access the bookmarks hierarchy to assign a location to the current "
+"selected item."
 msgstr ""
 "Accediu ràpidament a la jerarquia dels punts d'interès per a assignar una "
 "ubicació a l'element seleccionat."
 
-#: ../../geolocation_editor/geoeditor_map.rst:133
-msgid ""
-"The **Map View** provide also a **Add Bookmark** option in the context menu "
-"available over the map. This feature do not come from digiKam and works "
-"independently of the digiKam **Bookmarks Manager** feature."
-msgstr ""
-"La **Vista de mapa** també proporciona una opció **Afegeix un punt "
-"d'interès** en el menú contextual disponible sobre el mapa. Aquesta "
-"característica no prové del digiKam i funciona independentment de la "
-"característica **Gestor dels punts d'interès** del digiKam."
+#~ msgid "Geolocation Map"
+#~ msgstr "Mapa de geolocalització"
+
+#~ msgid ""
+#~ "For navigating on the map, refer to the :ref:`Map Search section "
+#~ "<mapsearch_view>`."
+#~ msgstr ""
+#~ "Per a navegar en el mapa, consulteu la :ref:`secció Cerca en el mapa "
+#~ "<mapsearch_view>`."
+
+#~ msgid ""
+#~ "From the context menu on the map only Copy Coordinates is of interest for "
+#~ "geotagging. It copies the geographic coordinates at the cursor position "
+#~ "to the clipboard. For all other menu items see Marble handbook."
+#~ msgstr ""
+#~ "Des del menú contextual al mapa només **Copia les coordenades** és "
+#~ "d'interès per a l'etiquetatge geogràfic. Aquest copia les coordenades "
+#~ "geogràfiques a la posició del cursor al porta-retalls. Per a tots els "
+#~ "altres elements del menú, vegeu el manual del Marble."
+
+#~ msgid ""
+#~ "The **Map View** provide also a **Add Bookmark** option in the context "
+#~ "menu available over the map. This feature do not come from digiKam and "
+#~ "works independently of the digiKam **Bookmarks Manager** feature."
+#~ msgstr ""
+#~ "La **Vista de mapa** també proporciona una opció **Afegeix un punt "
+#~ "d'interès** en el menú contextual disponible sobre el mapa. Aquesta "
+#~ "característica no prové del digiKam i funciona independentment de la "
+#~ "característica **Gestor dels punts d'interès** del digiKam."

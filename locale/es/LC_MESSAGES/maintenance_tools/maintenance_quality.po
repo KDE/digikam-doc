@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: "
 "docs_digikam_org_maintenance_tools___maintenance_quality\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 01:42+0000\n"
+"POT-Creation-Date: 2024-12-16 02:29+0000\n"
 "PO-Revision-Date: 2022-12-29 12:24+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -37,111 +37,112 @@ msgstr ""
 "fotográfica, código abierto, libre, gratis, aprender, fácil"
 
 #: ../../maintenance_tools/maintenance_quality.rst:14
-msgid "Image Quality Sorter"
+msgid ":ref:`Image Quality Sorter <maintenance_tools>`"
 msgstr ""
 
-#: ../../maintenance_tools/maintenance_quality.rst:16
-msgid "Contents"
-msgstr "Contenido"
-
-#: ../../maintenance_tools/maintenance_quality.rst:22
+#: ../../maintenance_tools/maintenance_quality.rst:20
 msgid "The digiKam Maintenance Options for Image Quality Sorter"
 msgstr ""
 
-#: ../../maintenance_tools/maintenance_quality.rst:24
+#: ../../maintenance_tools/maintenance_quality.rst:22
 msgid ""
-"The tool will parse the items to determine the **Quality** and sort them "
-"with the **Pick Label** properties in database as:"
+"The **Image Quality Sorter** tool automatically assesses the **Quality** of "
+"each item and assigns a corresponding value to the **Pick Label** property "
+"in the database based on:"
 msgstr ""
 
-#: ../../maintenance_tools/maintenance_quality.rst:26
+#: ../../maintenance_tools/maintenance_quality.rst:24
 msgid "The **Red** flag for **Rejected**."
 msgstr ""
 
-#: ../../maintenance_tools/maintenance_quality.rst:28
+#: ../../maintenance_tools/maintenance_quality.rst:26
 msgid "The **Yellow** flag for **Pending**."
 msgstr ""
 
-#: ../../maintenance_tools/maintenance_quality.rst:30
+#: ../../maintenance_tools/maintenance_quality.rst:28
 msgid "The **Green** flag for **Accepted**."
+msgstr ""
+
+#: ../../maintenance_tools/maintenance_quality.rst:30
+msgid ""
+"The Image Quality Sorter assigns Pick Labels to items according to the "
+"default settings in :menuselection:`Settings --> Configure digiKam... --> "
+"Image Quality Sorter page`, or the dedicated options set in this view."
 msgstr ""
 
 #: ../../maintenance_tools/maintenance_quality.rst:32
 msgid ""
-"The Image Quality Sorter assigns Pick Labels to items according to the "
-"default settings in :menuselection:`Settings --> Configure digiKam...` and "
-"the **Image Quality Sorter** settings panel, or a dedicated settings tuned "
-"in this view."
-msgstr ""
-
-#: ../../maintenance_tools/maintenance_quality.rst:34
-msgid ""
 "The quality **score** to determine the **Pick Label** property can be "
-"evaluated by two ways: using four basic factors sabotaging the images "
+"evaluated in one of two ways: using four basic factors for each image "
 "(**Blur**, **Noise**, **Exposure**, and **Compression**), or using a **deep "
 "learning neural network engine**."
 msgstr ""
 
-#: ../../maintenance_tools/maintenance_quality.rst:36
+#: ../../maintenance_tools/maintenance_quality.rst:34
 msgid ""
-"The first one helps to determine whether images are distorted by the basic "
-"factors, however it demands some drawbacks as fine-tuning from the user’s "
-"side and it cannot work along the aesthetic image processing."
+"The first approach helps to determine whether the basic factors have "
+"compromised image quality, however the output depends on fine-tuning made "
+"the user and it does not include any assessment of the aesthetic value of "
+"the image."
 msgstr ""
 
-#: ../../maintenance_tools/maintenance_quality.rst:38
+#: ../../maintenance_tools/maintenance_quality.rst:36
 msgid ""
-"The second one uses an artificial intelligence approach based on `this model "
-"<https://expertphotography.com/aesthetic-photography/>`_ to predict the "
-"score. As deep-learning is an end-to-end solution, it doesn’t require hyper-"
-"parameter settings, and make this feature easier to use."
+"The second approach uses an artificial intelligence engine based on `this "
+"model <https://expertphotography.com/aesthetic-photography/>`_ to predict an "
+"aesthetic score. As deep-learning is an end-to-end solution, it doesn’t "
+"require hyper-parameter settings, which makes this approach far easier to "
+"use."
+msgstr ""
+
+#: ../../maintenance_tools/maintenance_quality.rst:40
+msgid ""
+"Since quality assessment can be a time consuming process, it's a good idea "
+"to check Work on all processor cores and restrict the job to certain albums "
+"or tags."
 msgstr ""
 
 #: ../../maintenance_tools/maintenance_quality.rst:42
 msgid ""
-"Since it is a time consuming process it's a good idea to check Work on all "
-"processor cores and restrict the job to certain albums or tags."
+"All the **Image Quality Sorter** settings are described in :ref:`this "
+"section <imgqsort_settings>` of the manual."
 msgstr ""
 
 #: ../../maintenance_tools/maintenance_quality.rst:44
 msgid ""
-"All the **Image Quality Sorter** settings is described in :ref:`the "
-"dedicated section <imgqsort_settings>` from **Setup Application** section."
+"The **Scan Mode** settings configure how the database information for the "
+"items from the selected collection will be processed. **Clean all and re-"
+"scan** resets all data and scans all items from scratch, **Scan non-assigned "
+"only** will be faster to process just items that have not previously been "
+"assigned **Pick Labels**."
 msgstr ""
 
 #: ../../maintenance_tools/maintenance_quality.rst:46
 msgid ""
-"The **Scan Mode** settings allows to configure how the database information "
-"for the items from the selected collection will be processed. **Clean all "
-"and re-scan** reset all data and scan items from scratch, **Scan non-"
-"assigned only** will be faster to process non registered items with **Pick "
-"Labels**."
+"While the image quality sorting process is underway, a progress indicator is "
+"displayed in the bottom right corner of the main window."
 msgstr ""
 
-#: ../../maintenance_tools/maintenance_quality.rst:48
-msgid ""
-"While the image quality sorting process is under progress, notification on "
-"the bottom right of main windows will be visible to indicate the amount of "
-"items already done."
-msgstr ""
-
-#: ../../maintenance_tools/maintenance_quality.rst:54
+#: ../../maintenance_tools/maintenance_quality.rst:52
 msgid "The digiKam Image Quality Sorter Process Running in the Background"
 msgstr ""
 
-#: ../../maintenance_tools/maintenance_quality.rst:56
+#: ../../maintenance_tools/maintenance_quality.rst:54
 msgid ""
 "The quality sorting results will appears in :ref:`the Labels view "
 "<labels_view>` from the right sidebar."
 msgstr ""
 
-#: ../../maintenance_tools/maintenance_quality.rst:62
+#: ../../maintenance_tools/maintenance_quality.rst:60
 msgid "The digiKam Pick Labels from Left Sidebar"
 msgstr ""
 
-#: ../../maintenance_tools/maintenance_quality.rst:66
+#: ../../maintenance_tools/maintenance_quality.rst:64
 msgid ""
-"To run properly, the process needs the deep-learning model to download at "
-"the first run of digiKam. See :ref:`the Quick Start section <quick_start>` "
-"for details."
+"To run properly, the process needs access to the deep-learning model that "
+"can be downloaded at the first run of digiKam. See the :ref:`Quick Start "
+"<quick_start>` section of this manual for details."
 msgstr ""
+
+#~ msgid "Contents"
+#~ msgstr "Contenido"

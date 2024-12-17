@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 01:42+0000\n"
+"POT-Creation-Date: 2024-12-16 02:29+0000\n"
 "PO-Revision-Date: 2023-08-29 13:20+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -32,53 +32,65 @@ msgstr ""
 "učenje"
 
 #: ../../maintenance_tools/maintenance_quality.rst:14
-msgid "Image Quality Sorter"
-msgstr "Razvrščevalnik kakovosti slike"
+msgid ":ref:`Image Quality Sorter <maintenance_tools>`"
+msgstr ""
 
-#: ../../maintenance_tools/maintenance_quality.rst:16
-msgid "Contents"
-msgstr "Vsebina"
-
-#: ../../maintenance_tools/maintenance_quality.rst:22
+#: ../../maintenance_tools/maintenance_quality.rst:20
 msgid "The digiKam Maintenance Options for Image Quality Sorter"
 msgstr "Možnosti vzdrževanja digiKam za razvrščevalnik kakovosti slik"
 
-#: ../../maintenance_tools/maintenance_quality.rst:24
+#: ../../maintenance_tools/maintenance_quality.rst:22
+#, fuzzy
+#| msgid ""
+#| "The tool will parse the items to determine the **Quality** and sort them "
+#| "with the **Pick Label** properties in database as:"
 msgid ""
-"The tool will parse the items to determine the **Quality** and sort them "
-"with the **Pick Label** properties in database as:"
+"The **Image Quality Sorter** tool automatically assesses the **Quality** of "
+"each item and assigns a corresponding value to the **Pick Label** property "
+"in the database based on:"
 msgstr ""
 "Orodje bo razčlenilo elemente, da bi določilo **Kakovost** in jih razvrstilo "
 "z lastnostmi **Izberi oznako** v bazi podatkov kot:"
 
-#: ../../maintenance_tools/maintenance_quality.rst:26
+#: ../../maintenance_tools/maintenance_quality.rst:24
 msgid "The **Red** flag for **Rejected**."
 msgstr "**Rdeča** zastavica za **Zavrnjeno**."
 
-#: ../../maintenance_tools/maintenance_quality.rst:28
+#: ../../maintenance_tools/maintenance_quality.rst:26
 msgid "The **Yellow** flag for **Pending**."
 msgstr "**Rumena** zastavica za **V teku**."
 
-#: ../../maintenance_tools/maintenance_quality.rst:30
+#: ../../maintenance_tools/maintenance_quality.rst:28
 msgid "The **Green** flag for **Accepted**."
 msgstr "**Zelena** zastavica za **Sprejeto**."
 
-#: ../../maintenance_tools/maintenance_quality.rst:32
+#: ../../maintenance_tools/maintenance_quality.rst:30
+#, fuzzy
+#| msgid ""
+#| "The Image Quality Sorter assigns Pick Labels to items according to the "
+#| "default settings in :menuselection:`Settings --> Configure digiKam...` "
+#| "and the **Image Quality Sorter** settings panel, or a dedicated settings "
+#| "tuned in this view."
 msgid ""
 "The Image Quality Sorter assigns Pick Labels to items according to the "
-"default settings in :menuselection:`Settings --> Configure digiKam...` and "
-"the **Image Quality Sorter** settings panel, or a dedicated settings tuned "
-"in this view."
+"default settings in :menuselection:`Settings --> Configure digiKam... --> "
+"Image Quality Sorter page`, or the dedicated options set in this view."
 msgstr ""
 "Razvrščevalnik kakovosti slik dodeli izbrane oznake elementom glede na "
 "privzete nastavitve v :menuselection:`Nastavitve --> Konfiguriraj digiKam..."
 "` in plošči z nastavitvami **Razvrščevalnik kakovosti slik** ali namenske "
 "nastavitve, nastavljene v tem pogledu."
 
-#: ../../maintenance_tools/maintenance_quality.rst:34
+#: ../../maintenance_tools/maintenance_quality.rst:32
+#, fuzzy
+#| msgid ""
+#| "The quality **score** to determine the **Pick Label** property can be "
+#| "evaluated by two ways: using four basic factors sabotaging the images "
+#| "(**Blur**, **Noise**, **Exposure**, and **Compression**), or using a "
+#| "**deep learning neural network engine**."
 msgid ""
 "The quality **score** to determine the **Pick Label** property can be "
-"evaluated by two ways: using four basic factors sabotaging the images "
+"evaluated in one of two ways: using four basic factors for each image "
 "(**Blur**, **Noise**, **Exposure**, and **Compression**), or using a **deep "
 "learning neural network engine**."
 msgstr ""
@@ -87,51 +99,80 @@ msgstr ""
 "sabotirajo slike (**Zamegljenost**, **Šum**, **Osvetlitev**, in "
 "**Stiskanje**) ali z uporabo **stroja nevronske mreže za globoko učenje**."
 
-#: ../../maintenance_tools/maintenance_quality.rst:36
+#: ../../maintenance_tools/maintenance_quality.rst:34
+#, fuzzy
+#| msgid ""
+#| "The first one helps to determine whether images are distorted by the "
+#| "basic factors, however it demands some drawbacks as fine-tuning from the "
+#| "user’s side and it cannot work along the aesthetic image processing."
 msgid ""
-"The first one helps to determine whether images are distorted by the basic "
-"factors, however it demands some drawbacks as fine-tuning from the user’s "
-"side and it cannot work along the aesthetic image processing."
+"The first approach helps to determine whether the basic factors have "
+"compromised image quality, however the output depends on fine-tuning made "
+"the user and it does not include any assessment of the aesthetic value of "
+"the image."
 msgstr ""
 "Prva pomaga ugotoviti, ali so slike popačene zaradi osnovnih dejavnikov, "
 "vendar zahteva nekaj pomanjkljivosti, kot je fina nastavitev s strani "
 "uporabnika, in ne more delovati skupaj z estetsko obdelavo slike."
 
-#: ../../maintenance_tools/maintenance_quality.rst:38
+#: ../../maintenance_tools/maintenance_quality.rst:36
+#, fuzzy
+#| msgid ""
+#| "The second one uses an artificial intelligence approach based on `this "
+#| "model <https://expertphotography.com/aesthetic-photography/>`_ to predict "
+#| "the score. As deep-learning is an end-to-end solution, it doesn’t require "
+#| "hyper-parameter settings, and make this feature easier to use."
 msgid ""
-"The second one uses an artificial intelligence approach based on `this model "
-"<https://expertphotography.com/aesthetic-photography/>`_ to predict the "
-"score. As deep-learning is an end-to-end solution, it doesn’t require hyper-"
-"parameter settings, and make this feature easier to use."
+"The second approach uses an artificial intelligence engine based on `this "
+"model <https://expertphotography.com/aesthetic-photography/>`_ to predict an "
+"aesthetic score. As deep-learning is an end-to-end solution, it doesn’t "
+"require hyper-parameter settings, which makes this approach far easier to "
+"use."
 msgstr ""
 "Drugi uporablja pristop umetne inteligence, ki temelji na `tem modelu "
 "<https://expertphotography.com/aesthetic-photography/>`_ za napovedovanje "
 "rezultata. Ker je poglobljeno učenje rešitev od konca do konca, ne zahteva "
 "nastavitev hiperparametrov in olajša uporabo te funkcije."
 
-#: ../../maintenance_tools/maintenance_quality.rst:42
+#: ../../maintenance_tools/maintenance_quality.rst:40
+#, fuzzy
+#| msgid ""
+#| "Since it is a time consuming process it's a good idea to check Work on "
+#| "all processor cores and restrict the job to certain albums or tags."
 msgid ""
-"Since it is a time consuming process it's a good idea to check Work on all "
-"processor cores and restrict the job to certain albums or tags."
+"Since quality assessment can be a time consuming process, it's a good idea "
+"to check Work on all processor cores and restrict the job to certain albums "
+"or tags."
 msgstr ""
 "Ker je to dolgotrajen proces, je dobro, da označite Delo na vseh "
 "procesorskih jedrih in omejite delo na določene albume ali značke."
 
-#: ../../maintenance_tools/maintenance_quality.rst:44
+#: ../../maintenance_tools/maintenance_quality.rst:42
+#, fuzzy
+#| msgid ""
+#| "All the **Image Quality Sorter** settings is described in :ref:`the "
+#| "dedicated section <imgqsort_settings>` from **Setup Application** section."
 msgid ""
-"All the **Image Quality Sorter** settings is described in :ref:`the "
-"dedicated section <imgqsort_settings>` from **Setup Application** section."
+"All the **Image Quality Sorter** settings are described in :ref:`this "
+"section <imgqsort_settings>` of the manual."
 msgstr ""
 "Vse nastavitve **Razvrščevalnika kakovosti slik** so opisane v :ref:"
 "`namenskem razdelku <imgqsort_settings>` v razdelku **Nastavi aplikacijo**."
 
-#: ../../maintenance_tools/maintenance_quality.rst:46
+#: ../../maintenance_tools/maintenance_quality.rst:44
+#, fuzzy
+#| msgid ""
+#| "The **Scan Mode** settings allows to configure how the database "
+#| "information for the items from the selected collection will be processed. "
+#| "**Clean all and re-scan** reset all data and scan items from scratch, "
+#| "**Scan non-assigned only** will be faster to process non registered items "
+#| "with **Pick Labels**."
 msgid ""
-"The **Scan Mode** settings allows to configure how the database information "
-"for the items from the selected collection will be processed. **Clean all "
-"and re-scan** reset all data and scan items from scratch, **Scan non-"
-"assigned only** will be faster to process non registered items with **Pick "
-"Labels**."
+"The **Scan Mode** settings configure how the database information for the "
+"items from the selected collection will be processed. **Clean all and re-"
+"scan** resets all data and scans all items from scratch, **Scan non-assigned "
+"only** will be faster to process just items that have not previously been "
+"assigned **Pick Labels**."
 msgstr ""
 "Nastavitve **Način skeniranja** omogočajo konfiguracijo, kako bodo obdelane "
 "informacije iz zbirke podatkov za predmete iz izbrane zbirke. **Očisti vse "
@@ -139,21 +180,25 @@ msgstr ""
 "nič, **Skeniraj samo nedodeljene** bo hitreje obdelal neregistrirane "
 "elemente z **Izberi oznake**."
 
-#: ../../maintenance_tools/maintenance_quality.rst:48
+#: ../../maintenance_tools/maintenance_quality.rst:46
+#, fuzzy
+#| msgid ""
+#| "While the image quality sorting process is under progress, notification "
+#| "on the bottom right of main windows will be visible to indicate the "
+#| "amount of items already done."
 msgid ""
-"While the image quality sorting process is under progress, notification on "
-"the bottom right of main windows will be visible to indicate the amount of "
-"items already done."
+"While the image quality sorting process is underway, a progress indicator is "
+"displayed in the bottom right corner of the main window."
 msgstr ""
 "Medtem ko poteka postopek razvrščanja kakovosti slike, bo v spodnjem desnem "
 "kotu glavnih oken vidno obvestilo, ki označuje količino že izvedenih "
 "elementov."
 
-#: ../../maintenance_tools/maintenance_quality.rst:54
+#: ../../maintenance_tools/maintenance_quality.rst:52
 msgid "The digiKam Image Quality Sorter Process Running in the Background"
 msgstr "Proces razvrščanja kakovosti slik digiKam teče v ozadju"
 
-#: ../../maintenance_tools/maintenance_quality.rst:56
+#: ../../maintenance_tools/maintenance_quality.rst:54
 msgid ""
 "The quality sorting results will appears in :ref:`the Labels view "
 "<labels_view>` from the right sidebar."
@@ -161,16 +206,27 @@ msgstr ""
 "Rezultati kakovostnega razvrščanja se bodo prikazali v :ref:`pogledu oznak "
 "<labels_view>` v desnem stranskem stolpcu."
 
-#: ../../maintenance_tools/maintenance_quality.rst:62
+#: ../../maintenance_tools/maintenance_quality.rst:60
 msgid "The digiKam Pick Labels from Left Sidebar"
 msgstr "DigiKam izbere oznake iz leve stranske vrstice"
 
-#: ../../maintenance_tools/maintenance_quality.rst:66
+#: ../../maintenance_tools/maintenance_quality.rst:64
+#, fuzzy
+#| msgid ""
+#| "To run properly, the process needs the deep-learning model to download at "
+#| "the first run of digiKam. See :ref:`the Quick Start section "
+#| "<quick_start>` for details."
 msgid ""
-"To run properly, the process needs the deep-learning model to download at "
-"the first run of digiKam. See :ref:`the Quick Start section <quick_start>` "
-"for details."
+"To run properly, the process needs access to the deep-learning model that "
+"can be downloaded at the first run of digiKam. See the :ref:`Quick Start "
+"<quick_start>` section of this manual for details."
 msgstr ""
 "Za pravilno delovanje proces potrebuje model globokega učenja, ki ga je "
 "treba prenesti ob prvem zagonu digiKama. Glejte :ref:`razdelek za hiter "
 "začetek <quick_start>` za podrobnosti."
+
+#~ msgid "Image Quality Sorter"
+#~ msgstr "Razvrščevalnik kakovosti slike"
+
+#~ msgid "Contents"
+#~ msgstr "Vsebina"

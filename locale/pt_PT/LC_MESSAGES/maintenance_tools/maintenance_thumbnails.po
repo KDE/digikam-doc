@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 01:42+0000\n"
+"POT-Creation-Date: 2024-12-16 02:29+0000\n"
 "PO-Revision-Date: 2023-02-08 19:14+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -31,34 +31,42 @@ msgstr ""
 "aberto, livre, ajuda, aprender, fácil, manutenção, miniaturas"
 
 #: ../../maintenance_tools/maintenance_thumbnails.rst:14
-msgid "Rebuild Thumbnails"
-msgstr "Reconstruir as Miniaturas"
+msgid ":ref:`Rebuild Thumbnails <maintenance_tools>`"
+msgstr ""
 
-#: ../../maintenance_tools/maintenance_thumbnails.rst:16
-msgid "Contents"
-msgstr "Conteúdo"
-
-#: ../../maintenance_tools/maintenance_thumbnails.rst:22
+#: ../../maintenance_tools/maintenance_thumbnails.rst:20
 msgid "The digiKam Maintenance Options to Rebuild Thumbnails"
 msgstr "As Opções de Manutenção do digiKam para a Reconstrução das Miniaturas"
 
-#: ../../maintenance_tools/maintenance_thumbnails.rst:24
+#: ../../maintenance_tools/maintenance_thumbnails.rst:22
+#, fuzzy
+#| msgid ""
+#| "Rebuilding the thumbnails might be necessary if you worked on your images "
+#| "with other applications or if you changed the thumbnail size."
 msgid ""
-"Rebuilding the thumbnails might be necessary if you worked on your images "
-"with other applications or if you changed the thumbnail size."
+"digiKam automatically generates and maintains thumbnails, but the **Rebuild "
+"Thumbnail** tool might be required if you have worked on your images with "
+"other applications or if you have changed the thumbnail size."
 msgstr ""
 "A reconstrução das impressões digitais poderá ser necessária se tiver "
 "trabalhado com as suas imagens noutras aplicações, ou caso tenha mudado o "
 "tamanho das miniaturas."
 
-#: ../../maintenance_tools/maintenance_thumbnails.rst:26
+#: ../../maintenance_tools/maintenance_thumbnails.rst:24
+#, fuzzy
+#| msgid ""
+#| "From :menuselection:`Settings --> Configure digiKam...` and **Tree-"
+#| "Views** tab from **Views** panel, the option **Use Large Thumbnail Size "
+#| "for High Screen Resolution** can be turned on to render **Icon-View** "
+#| "with large thumbnail size, for example in case of 4K monitor is used. By "
+#| "default this option is turned off and the maximum thumbnail size is "
+#| "limited to 256x256 pixels."
 msgid ""
-"From :menuselection:`Settings --> Configure digiKam...` and **Tree-Views** "
-"tab from **Views** panel, the option **Use Large Thumbnail Size for High "
-"Screen Resolution** can be turned on to render **Icon-View** with large "
-"thumbnail size, for example in case of 4K monitor is used. By default this "
-"option is turned off and the maximum thumbnail size is limited to 256x256 "
-"pixels."
+"From :menuselection:`Settings --> Configure digiKam... --> View page --> "
+"Tree-Views tab`, the option **Use Large Thumbnail Size for High Screen "
+"Resolution** can be turned on to render **Icon-View** with a large thumbnail "
+"size suitable for use on a 4K monitor. By default this option is turned off "
+"and the maximum thumbnail size is limited to 256x256 pixels."
 msgstr ""
 "Uma opção do painel :menuselection:`Configuração Configurar o digiKam...` e "
 "a página de **Árvores` do painel de **Áreas**, a opção **Usar um Tamanho de "
@@ -67,12 +75,20 @@ msgstr ""
 "no caso de usar um monitor 4K. Por omissão, esta opção está desligada e o "
 "tamanho máximo da miniatura está limitado a 256x256 pixels."
 
-#: ../../maintenance_tools/maintenance_thumbnails.rst:28
+#: ../../maintenance_tools/maintenance_thumbnails.rst:26
+#, fuzzy
+#| msgid ""
+#| "When this option is enabled, thumbnail size can be extended to 512x512 "
+#| "pixels. This option will store more data in thumbnail database and will "
+#| "use more system memory. digiKam needs to be restarted to take effect, and "
+#| "this **Rebuild Thumbnails** tool needs to be processed over whole "
+#| "collections."
 msgid ""
 "When this option is enabled, thumbnail size can be extended to 512x512 "
-"pixels. This option will store more data in thumbnail database and will use "
-"more system memory. digiKam needs to be restarted to take effect, and this "
-"**Rebuild Thumbnails** tool needs to be processed over whole collections."
+"pixels. This option will increase the size of the thumbnail database and "
+"will use more system memory. digiKam needs to be restarted for this option "
+"to take effect, and this **Rebuild Thumbnails** tool needs to be run over "
+"all collections."
 msgstr ""
 "Quando esta opção estiver activa, o tamanho das miniaturas pode ser alargado "
 "a 512x512. Esta opção irá guardar mais dados na base de dados das miniaturas "
@@ -80,52 +96,78 @@ msgstr ""
 "fazer efeito, e a opção para **Reconstruir as Miniaturas** precisa de ser "
 "aplicada sobre todas as colecções."
 
-#: ../../maintenance_tools/maintenance_thumbnails.rst:34
+#: ../../maintenance_tools/maintenance_thumbnails.rst:32
 msgid "The digiKam Views Setup Panel and the Large Thumbnail Option"
 msgstr ""
 "O Painel de Configuração das Áreas do digiKam e a Opção de Miniaturas Grandes"
 
-#: ../../maintenance_tools/maintenance_thumbnails.rst:38
+#: ../../maintenance_tools/maintenance_thumbnails.rst:36
+#, fuzzy
+#| msgid ""
+#| "Even if thumbnails are stored in the database using wavelets compression "
+#| "PGF format, large collection can generate huge database storage. Take a "
+#| "care to use a place to store the database with enough space available."
 msgid ""
-"Even if thumbnails are stored in the database using wavelets compression PGF "
-"format, large collection can generate huge database storage. Take a care to "
-"use a place to store the database with enough space available."
+"digiKam stores thumbnails in the database using the wavelet-compressed PGF "
+"format, but large collections can still generate huge thumbnail databases. "
+"Take care to use a sufficiently large storage media with a large amount of "
+"available space to store the database."
 msgstr ""
 "Mesmo que as miniaturas sejam gravadas na base de dados com o formato de "
 "compressão por ondas do PGF, uma colecção grande poderá gerar uma base de "
 "dados gigante. Tenha cuidado em usar um local para guardar a base de dados "
 "que tenha espaço disponível suficiente."
 
-#: ../../maintenance_tools/maintenance_thumbnails.rst:42
+#: ../../maintenance_tools/maintenance_thumbnails.rst:40
+#, fuzzy
+#| msgid ""
+#| "From :menuselection:`Settings --> Configure digiKam...` and **Behaviour** "
+#| "tab from **Miscelleneous** panel, the **Scan** options can speed up the "
+#| "process in the first case or if you just added pictures to your "
+#| "collection."
 msgid ""
-"From :menuselection:`Settings --> Configure digiKam...` and **Behaviour** "
-"tab from **Miscelleneous** panel, the **Scan** options can speed up the "
-"process in the first case or if you just added pictures to your collection."
+"The **Scan** options from :menuselection:`Settings --> Configure digiKam... "
+"--> Miscelleneous page --> Behaviour tab` speed up the process in the first "
+"case or if you just added pictures to your collection."
 msgstr ""
 "Na opção :menuselection:`Configuração --> Configurar o digiKam...` e "
 "**Comportamento** do painel **Diversos**, a opção para “Análise” poderá "
 "acelerar o processo no primeiro caso, ou caso tenha acabado de adicionar "
 "imagens à sua colecção."
 
-#: ../../maintenance_tools/maintenance_thumbnails.rst:44
+#: ../../maintenance_tools/maintenance_thumbnails.rst:42
+#, fuzzy
+#| msgid ""
+#| "While the rebuild thumbnails process is under progress, notification on "
+#| "the bottom right of main windows will be visible to indicate the amount "
+#| "of items already done."
 msgid ""
-"While the rebuild thumbnails process is under progress, notification on the "
-"bottom right of main windows will be visible to indicate the amount of items "
-"already done."
+"While the rebuild thumbnails process is underway, a progress indicator is "
+"displayed in the bottom right corner of the main window."
 msgstr ""
 "Enquanto o processo de reconstrução das miniaturas estiver em curso, estará "
 "visível uma notificação no canto inferior direito das janelas principais "
 "para indicar o número de itens já processados."
 
-#: ../../maintenance_tools/maintenance_thumbnails.rst:50
+#: ../../maintenance_tools/maintenance_thumbnails.rst:48
 msgid "The Rebuild Thumbnails Process Working in the Background"
 msgstr "O Processo de Reconstrução das Miniaturas a Funcionar em Segundo Plano"
 
-#: ../../maintenance_tools/maintenance_thumbnails.rst:54
+#: ../../maintenance_tools/maintenance_thumbnails.rst:52
+#, fuzzy
+#| msgid ""
+#| "This process can also be directly called by :kbd:`F5` keyboard shortcuts "
+#| "to rebuild thumbnails for the current selected album."
 msgid ""
-"This process can also be directly called by :kbd:`F5` keyboard shortcuts to "
-"rebuild thumbnails for the current selected album."
+"This process can also be directly called by the keyboard shortcut :kbd:`F5` "
+"to rebuild the thumbnails for the currently selected album."
 msgstr ""
 "Este processo também poderá ser invocado directamente com o atalho de "
 "teclado :kbd:`F5`, de forma a reconstruir as miniaturas do álbum "
 "seleccionado de momento."
+
+#~ msgid "Rebuild Thumbnails"
+#~ msgstr "Reconstruir as Miniaturas"
+
+#~ msgid "Contents"
+#~ msgstr "Conteúdo"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: docs_digikam_org_post_processing___time_adjust\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 01:42+0000\n"
+"POT-Creation-Date: 2024-12-16 02:29+0000\n"
 "PO-Revision-Date: 2023-01-24 20:49+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -33,183 +33,186 @@ msgstr ""
 "ajuste"
 
 #: ../../post_processing/time_adjust.rst:14
-msgid "Time Adjust"
-msgstr "Ajuste horario"
+msgid ":ref:`Time Adjust <post_processing>`"
+msgstr ""
 
 #: ../../post_processing/time_adjust.rst:16
-msgid "Contents"
-msgstr "Contenido"
+msgid ""
+"The Time Adjust tool available from :menuselection:`Item --> Adjust Time & "
+"Date` :kbd:`Ctrl+Shift+D` allows to adjust or write the timestamps in file "
+"metadata. This common task is sometime mandatory when your images do not "
+"contain dates in metadata (typically when the contents were digitized by a "
+"scanner), or when a camera records a wrong date in you file due to an "
+"incorrectly set clock. With this tool, you can choose the right source to "
+"take the date information, the date entries to fix or append, and the "
+"calculation to before on dates before saving them."
+msgstr ""
 
 #: ../../post_processing/time_adjust.rst:18
 msgid ""
-"The Time Adjust tool available from :menuselection:`Item --> Adjust Time & "
-"Date` :kbd:`Ctrl+Shift+D` allows to tune or records the timestamps in file "
-"metadata. This common task is sometime mandatory when your images do not "
-"contain dates in metadata as when contents is digitized with a scanner, or "
-"when a camera records a wrong date in you file due to a bad device settings. "
-"With this tool you can choose the right source to take the date information, "
-"the date entries to fix or append, and the calculation to operate on dates "
-"before registration."
+"The **Timestamp Used** group allows you to select the source of the date. "
+"Available choices are:"
 msgstr ""
 
 #: ../../post_processing/time_adjust.rst:20
-msgid ""
-"The **Timestamp Used** group allows to select the source of the date. "
-"Available choices are listed below:"
+msgid "**digiKam timestamp**: the date recorded in the database."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:22
-msgid "**digiKam timestamp**: the date records in database."
-msgstr ""
-
-#: ../../post_processing/time_adjust.rst:23
+#: ../../post_processing/time_adjust.rst:21
 msgid "**File name timestamp**: the date extracted from the filename."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:24
+#: ../../post_processing/time_adjust.rst:22
 msgid ""
 "From the file system: **File last Modified** will use the last modification "
 "date of file."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:26
+#: ../../post_processing/time_adjust.rst:24
 msgid ""
 "**Exif/IPTC/XMP**: parse Exif, IPTC, and XMP to get the first value "
 "available."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:27
+#: ../../post_processing/time_adjust.rst:25
 msgid "**EXIF: created**: image creation timestamp from Exif."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:28
+#: ../../post_processing/time_adjust.rst:26
 msgid "**EXIF: original**: image original timestamp from Exif."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:29
+#: ../../post_processing/time_adjust.rst:27
 msgid "**EXIF: digitized**: image digitized timestamp from Exif."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:30
+#: ../../post_processing/time_adjust.rst:28
 msgid "**IPTC: created**: image created timestamp from IPTC."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:31
+#: ../../post_processing/time_adjust.rst:29
 msgid "**XMP: created**: image created timestamp from XMP."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:32
+#: ../../post_processing/time_adjust.rst:30
 msgid ""
 "**EXIF: created (fuzzy)**: image creation timestamp from Exif and trying "
 "different encoding combinations in case of non-respect of standard."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:33
+#: ../../post_processing/time_adjust.rst:31
 msgid "From the metadata:"
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:33
+#: ../../post_processing/time_adjust.rst:31
 msgid ""
 "**EXIF: original (fuzzy)**: image original timestamp from Exif and trying "
 "different encoding combinations in case of non-respect of standard."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:34
+#: ../../post_processing/time_adjust.rst:32
 msgid ""
 "**EXIF: digitized (fuzzy)**: image digitized timestamp from Exif and trying "
 "different encoding combinations in case of non-respect of standard."
 msgstr ""
 
+#: ../../post_processing/time_adjust.rst:33
+msgid "A fixed user specified date."
+msgstr ""
+
 #: ../../post_processing/time_adjust.rst:35
-msgid "A fixed date taken from calendar."
+msgid ""
+"The **Timestamp Adjustments** group allows you to select the operation to "
+"perform on the source date to obtain the target date. Available choices are:"
 msgstr ""
 
 #: ../../post_processing/time_adjust.rst:37
-msgid ""
-"The **Timestamp Adjustments** group allows to select operation to process of "
-"source date to evaluate the target date. Available choices are listed below:"
+msgid "**Copy value**: copy timestamp from source date to target date."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:39
-msgid "**Copy value**: copy timestamp as well from source date to target date."
-msgstr ""
-
-#: ../../post_processing/time_adjust.rst:40
+#: ../../post_processing/time_adjust.rst:38
 msgid ""
-"**Add**: add a fixed timestamp to source date to compute target date. Use "
+"**Add**: add a fixed time offset to source date to compute target date. Use "
 "the settings on the right side to define the added value."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:41
+#: ../../post_processing/time_adjust.rst:39
 msgid ""
-"**Subtract**: remove a fixed timestamp to source date to compute target "
+"**Subtract**: subtract a fixed offset from the source date to compute target "
 "date. Use the settings on the right side to define the subtracted value."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:42
+#: ../../post_processing/time_adjust.rst:40
 msgid ""
 "**Interval**: interval timestamp to the next image from the list to process. "
 "Use the settings on the right side to define the interval value."
 msgstr ""
 
+#: ../../post_processing/time_adjust.rst:42
+msgid ""
+"The **Determine difference from clock photo** allows you to select a photo "
+"to get a date from and calculate the time difference between it and the "
+"current item selected from the list of files to process. You can also use "
+"drag and drop over this button to define the selected image. This feature "
+"will automatically select the **Copy value**, **Add**, or **Subtract** "
+"method."
+msgstr ""
+
 #: ../../post_processing/time_adjust.rst:44
 msgid ""
-"The **Determine difference from clock photo** allows to select a photo to "
-"get a date from and calculate the time difference between it and the current "
-"item selected from the list of files to process. You can also use drag and "
-"drop over this button to define the selected image. This feature will "
-"automatically select the **Copy value**, **Add**, or **Subtract** method."
+"The **Timestamp updated** group allows you to define the target entries to "
+"update with the new values. Available choices are listed below:"
 msgstr ""
 
 #: ../../post_processing/time_adjust.rst:46
 msgid ""
-"The **Timestamp updated** group allows to define the target entries to patch "
-"with the new values. Available choices are listed below:"
+"**Update only existing timestamps**: will change only the values which "
+"already exist in file."
+msgstr ""
+
+#: ../../post_processing/time_adjust.rst:47
+msgid "**Exif: original**: will change the image original timestamp from Exif."
 msgstr ""
 
 #: ../../post_processing/time_adjust.rst:48
 msgid ""
-"**Update only existing timestamps**: will change only the values which "
-"already exists in file."
+"**Exif: digitized**: will change the image digitized timestamp from Exif."
 msgstr ""
 
 #: ../../post_processing/time_adjust.rst:49
-msgid "**Exif: original**: will change the image original timestamp from Exif."
+msgid "**Exif: created**: will change the image creation timestamp from Exif."
 msgstr ""
 
 #: ../../post_processing/time_adjust.rst:50
 msgid ""
-"**Exif: digitized**: will change the image digitized timestamp from Exif."
+"**Exif: Thumbnail**: will change the image thumbnail timestamp from Exif."
 msgstr ""
 
 #: ../../post_processing/time_adjust.rst:51
-msgid "**Exif: created**: will change the image creation timestamp from Exif."
+msgid "**XMP**: will change the image timestamp from standard XMP namespaces."
 msgstr ""
 
 #: ../../post_processing/time_adjust.rst:52
 msgid ""
-"**Exif: Thumbnail**: will change the image thumbnail timestamp from Exif."
-msgstr ""
-
-#: ../../post_processing/time_adjust.rst:53
-msgid "**XMP**: will change the image timestamp from standard XMP namespaces."
-msgstr ""
-
-#: ../../post_processing/time_adjust.rst:54
-msgid ""
 "**XMP: video**: will change the image timestamp from WMP video namespace."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:55
+#: ../../post_processing/time_adjust.rst:53
 msgid "**IPTC: created**: will change the image created timestamp from IPTC."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:56
+#: ../../post_processing/time_adjust.rst:54
 msgid ""
 "**File last modified**: will change the last modified timestamp from file "
 "system."
 msgstr ""
 
-#: ../../post_processing/time_adjust.rst:62
+#: ../../post_processing/time_adjust.rst:60
 msgid "The digiKam Time Adjust Tool Tuning Items Time-Stamp"
 msgstr ""
+
+#~ msgid "Time Adjust"
+#~ msgstr "Ajuste horario"
+
+#~ msgid "Contents"
+#~ msgstr "Contenido"

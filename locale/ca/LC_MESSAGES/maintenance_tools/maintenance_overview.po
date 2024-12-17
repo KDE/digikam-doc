@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 01:42+0000\n"
+"POT-Creation-Date: 2024-12-16 02:29+0000\n"
 "PO-Revision-Date: 2023-04-15 20:52+0200\n"
 "Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -32,29 +32,42 @@ msgstr ""
 "lliure, aprenentatge, fàcil, vista general"
 
 #: ../../maintenance_tools/maintenance_overview.rst:14
-msgid "Overview"
-msgstr "Vista general"
+#, fuzzy
+#| msgid "Overview to digiKam Maintenance Tool"
+msgid ":ref:`Overview <maintenance_tools>`"
+msgstr "Vista general de l'eina de manteniment en el digiKam"
 
 #: ../../maintenance_tools/maintenance_overview.rst:16
-msgid "Contents"
-msgstr "Contingut"
-
-#: ../../maintenance_tools/maintenance_overview.rst:18
+#, fuzzy
+#| msgid ""
+#| "Maintenance is a tool running processes in the background to maintain "
+#| "image collections and database contents."
 msgid ""
-"Maintenance is a tool running processes in the background to maintain image "
-"collections and database contents."
+"Maintenance tools are processes that are run in the background to maintain "
+"image collections and the digiKam database."
 msgstr ""
 "Manteniment és una eina que executa processos en segon pla per a mantenir el "
 "contingut de les col·leccions d'imatges i la base de dades."
 
-#: ../../maintenance_tools/maintenance_overview.rst:20
+#: ../../maintenance_tools/maintenance_overview.rst:18
+#, fuzzy
+#| msgid ""
+#| "Depending on your workflow, your digiKam settings and whether you work on "
+#| "your images collection also with other programs it might be necessary to "
+#| "run maintenance operations from time to time to update the digiKam "
+#| "**databases** and also your images regarding **duplicates**, **face "
+#| "tags**, **quality labels**, etc. The maintenance tool can do that for "
+#| "you, even more than one operation in one go depending on your "
+#| "requirements."
 msgid ""
-"Depending on your workflow, your digiKam settings and whether you work on "
-"your images collection also with other programs it might be necessary to run "
-"maintenance operations from time to time to update the digiKam **databases** "
-"and also your images regarding **duplicates**, **face tags**, **quality "
-"labels**, etc. The maintenance tool can do that for you, even more than one "
-"operation in one go depending on your requirements."
+"Depending on your workflow, your digiKam settings, and whether you also work "
+"on your image collections with other programs, it might be necessary to run "
+"maintenance operations from time to time to update the digiKam "
+"**databases**. You may also want to run maintenance tools to **Find "
+"Duplicate Items** in your collections, **Detect and recognize faces**, or "
+"automatically assign quality labels using the **Image Quality Sorter**. The "
+"maintenance tool can do all these things, and more. It can even run multiple "
+"tools in one go, depending on your requirements."
 msgstr ""
 "Depenent del vostre flux de treball, de la vostra configuració del digiKam i "
 "si també treballeu en la vostra col·lecció d'imatges amb altres programes, "
@@ -64,17 +77,25 @@ msgstr ""
 "qualitat**, etc. L'eina de manteniment ho pot fer, fins i tot més d'una "
 "operació alhora en funció de les vostres necessitats."
 
-#: ../../maintenance_tools/maintenance_overview.rst:26
+#: ../../maintenance_tools/maintenance_overview.rst:24
 msgid "The digiKam Maintenance Dialog"
 msgstr "El diàleg manteniment en el digiKam"
 
-#: ../../maintenance_tools/maintenance_overview.rst:28
+#: ../../maintenance_tools/maintenance_overview.rst:26
+#, fuzzy
+#| msgid ""
+#| "The list of tools is presented in a sequential order and cannot be "
+#| "changed. Only the tools to activate or deactivate during a maintenance "
+#| "session can be selected. The sequence of tools is relevant of the order "
+#| "to populate the information in database on the first time, and the way to "
+#| "use these information in a second time."
 msgid ""
-"The list of tools is presented in a sequential order and cannot be changed. "
-"Only the tools to activate or deactivate during a maintenance session can be "
-"selected. The sequence of tools is relevant of the order to populate the "
-"information in database on the first time, and the way to use these "
-"information in a second time."
+"The list of available maintenance tools is presented in a sequential order "
+"that cannot be changed. Only the selected tools in this list will be run "
+"during the maintenance operation, and they will be run in the order they are "
+"listed. The ordering of the tools is relevant when populating the "
+"information in the database for the first time, and how these tools operate "
+"in subsequent maintenance operations."
 msgstr ""
 "La llista d'eines es presenta en ordre seqüencial i no es pot canviar. Només "
 "es podran seleccionar les eines per a activar o desactivar durant una sessió "
@@ -82,32 +103,41 @@ msgstr ""
 "informació en la base de dades per primera vegada, i la manera d'utilitzar "
 "aquesta informació en una segona vegada."
 
-#: ../../maintenance_tools/maintenance_overview.rst:30
-msgid "The tools available from the list are listed below:"
-msgstr "Les eines disponibles es llisten a continuació:"
+#: ../../maintenance_tools/maintenance_overview.rst:28
+msgid "The available maintenance tools are:"
+msgstr ""
 
-#: ../../maintenance_tools/maintenance_overview.rst:32
+#: ../../maintenance_tools/maintenance_overview.rst:30
+#, fuzzy
+#| msgid ""
+#| "**Scan For New Items**: scan for albums and items to populate the "
+#| "database."
 msgid ""
-"**Scan For New Items**: scan for albums and items to populate the database."
+"**Scan For New Items**: scan for new albums (folders) and items in the "
+"collection directories to populate the database."
 msgstr ""
 "**Explora per a elements nous**: cerca en els àlbums i elements per a omplir "
 "la base de dades."
 
-#: ../../maintenance_tools/maintenance_overview.rst:34
+#: ../../maintenance_tools/maintenance_overview.rst:32
+#, fuzzy
+#| msgid ""
+#| "**Perform Database Cleaning**: scan albums and items for irrelevant "
+#| "entries in database."
 msgid ""
-"**Perform Database Cleaning**: scan albums and items for irrelevant entries "
-"in database."
+"**Perform Database Cleaning**: scan the database for entries that no longer "
+"can be associated with albums and items."
 msgstr ""
 "**Realitza la neteja de la base de dades**: explora els àlbums i elements a "
 "la cerca d'entrades irrellevants en la base de dades."
 
-#: ../../maintenance_tools/maintenance_overview.rst:36
+#: ../../maintenance_tools/maintenance_overview.rst:34
 msgid "**Rebuild Thumbnails**: scan albums to update the item thumbnails."
 msgstr ""
 "**Reconstrueix les miniatures**: explora els àlbums per a actualitzar les "
 "miniatures dels elements."
 
-#: ../../maintenance_tools/maintenance_overview.rst:38
+#: ../../maintenance_tools/maintenance_overview.rst:36
 msgid ""
 "**Rebuild Finger-prints**: scan albums to update item finger-prints used "
 "with **Similarity** searches."
@@ -116,7 +146,7 @@ msgstr ""
 "actualitzar les empremtes digitals dels elements utilitzats amb les cerques "
 "de **Similitud**."
 
-#: ../../maintenance_tools/maintenance_overview.rst:40
+#: ../../maintenance_tools/maintenance_overview.rst:38
 msgid ""
 "**Find Duplicate Items**: scan albums to update list of duplicates items "
 "based on **Similarity** finger-prints."
@@ -125,12 +155,22 @@ msgstr ""
 "llista d'elements duplicats en funció de les empremtes digitals de "
 "**Similitud**."
 
-#: ../../maintenance_tools/maintenance_overview.rst:42
+#: ../../maintenance_tools/maintenance_overview.rst:40
+#, fuzzy
+#| msgid ""
+#| "**Detect and Recognize Faces**: perform automatic faces management "
+#| "updates."
 msgid ""
-"**Detect and Recognize Faces**: perform automatic faces management updates."
+"**Detect and Recognize Faces**: perform automatic face management updates."
 msgstr ""
 "**Detecta i reconeix les cares**: realitza actualitzacions automàtiques per "
 "a la gestió de les cares."
+
+#: ../../maintenance_tools/maintenance_overview.rst:42
+msgid ""
+"**Auto-tags Assignment**: scan items and add tags based on image content "
+"recognized by a neural network."
+msgstr ""
 
 #: ../../maintenance_tools/maintenance_overview.rst:44
 msgid ""
@@ -148,3 +188,12 @@ msgid ""
 msgstr ""
 "**Sincronitza les metadades i la base de dades**: sincronitza les metadades "
 "dels elements amb el contingut de la base de dades o viceversa."
+
+#~ msgid "Overview"
+#~ msgstr "Vista general"
+
+#~ msgid "Contents"
+#~ msgstr "Contingut"
+
+#~ msgid "The tools available from the list are listed below:"
+#~ msgstr "Les eines disponibles es llisten a continuació:"

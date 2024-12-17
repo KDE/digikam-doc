@@ -6,17 +6,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 01:42+0000\n"
-"PO-Revision-Date: 2023-08-19 15:01+0200\n"
+"POT-Creation-Date: 2024-12-16 02:29+0000\n"
+"PO-Revision-Date: 2024-12-16 21:12+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.3.2\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
+"n%100==4 ? 3 : 0);\n"
+"X-Generator: Poedit 3.5\n"
 
 #: ../../maintenance_tools/maintenance_database.rst:1
 msgid "digiKam Maintenance Tool Database Cleaning"
@@ -32,66 +32,82 @@ msgstr ""
 "čiščenje, skrči"
 
 #: ../../maintenance_tools/maintenance_database.rst:14
-msgid "Database Cleaning"
-msgstr "Čiščenje baze podatkov"
+msgid ":ref:`Database Cleaning <maintenance_tools>`"
+msgstr ":ref:`Čiščenje baze podatkov <maintenance_tools>`"
 
-#: ../../maintenance_tools/maintenance_database.rst:16
-msgid "Contents"
-msgstr "Vsebina"
-
-#: ../../maintenance_tools/maintenance_database.rst:22
+#: ../../maintenance_tools/maintenance_database.rst:20
 msgid "The digiKam Maintenance Database Options"
 msgstr "Možnosti baze podatkov vzdrževanja digiKam"
 
-#: ../../maintenance_tools/maintenance_database.rst:24
+#: ../../maintenance_tools/maintenance_database.rst:22
 msgid ""
-"This process will analysis your database files to consolidate the contents. "
-"The Core database is always cleaned. You can select additional databases for "
-"cleaning by selecting one of the extra options listed below:"
+"The **Database Cleaning** tool analyzes your database files looking for "
+"entries to delete that have no matching files or folders. When this tool is "
+"run, the Core database is always cleaned. You can select additional "
+"databases for cleaning by selecting one of the extra options listed below:"
 msgstr ""
-"Ta postopek bo analiziral vaše datoteke zbirke podatkov za konsolidacijo "
-"vsebine. Osnova baza podatkov je vedno očiščena. Izberete lahko dodatne baze "
-"podatkov za čiščenje tako, da izberete eno od dodatnih možnosti, navedenih "
-"spodaj:"
+"Orodje **Čiščenje baze podatkov** analizira vaše datoteke zbirke podatkov in "
+"išče vnose za brisanje, ki nimajo ustreznih datotek ali map. Ko se to orodje "
+"zažene, je baza podatkov Core vedno očiščena. Dodatne baze podatkov za "
+"čiščenje lahko izberete tako, da izberete eno od dodatnih možnosti, "
+"navedenih spodaj:"
 
-#: ../../maintenance_tools/maintenance_database.rst:26
+#: ../../maintenance_tools/maintenance_database.rst:24
 msgid "**Cleanup the Thumbnails database**."
 msgstr "**Počisti bazo sličic**."
 
-#: ../../maintenance_tools/maintenance_database.rst:28
+#: ../../maintenance_tools/maintenance_database.rst:26
 msgid "**Cleanup the Faces database**."
 msgstr "**Počisti bazo obrazov**."
 
-#: ../../maintenance_tools/maintenance_database.rst:30
+#: ../../maintenance_tools/maintenance_database.rst:28
 msgid "**Cleanup the Similarity database**."
 msgstr "**Počisti bazo podatkov o podobnostih**."
 
-#: ../../maintenance_tools/maintenance_database.rst:32
+#: ../../maintenance_tools/maintenance_database.rst:30
 msgid ""
-"**Shrink all databases** to ensure de-fragmentation and just keeps the "
-"database small."
+"**Shrink all databases** to ensure de-fragmentation, keeping the database as "
+"small as possible."
 msgstr ""
-"**Zmanjšajte vse zbirke podatkov**, da zagotovite defragmentacijo in "
-"preprosto ohranite majhno zbirko podatkov."
-
-#: ../../maintenance_tools/maintenance_database.rst:36
-msgid ""
-"The last option leads to the vacuuming (shrinking) of the databases. "
-"Vacuuming is supported both for SQLite and MySQL."
-msgstr ""
-"Zadnja možnost vodi do vakuumiranja (krčenja) baz podatkov. Vakuumiranje je "
-"podprto za SQLite in MySQL."
+"**Zmanjšajte vse baze podatkov**, da zagotovite defragmentacijo, tako da je "
+"zbirka podatkov čim manjša."
 
 #: ../../maintenance_tools/maintenance_database.rst:38
 msgid ""
-"While the scan for new items process is under progress, as the process may "
-"take much time and digiKam cannot be used, a non modal dialog appear to make "
-"sure that no database corruption occurs."
+"The last option leads to the vacuuming (shrinking) of the databases. "
+"Vacuuming is supported for both SQLite and MySQL. Database shrinking may "
+"take some time. In order to avoid database corruption during this operation, "
+"digiKam will display the following non modal dialog, and stop responding to "
+"user commands until the shrinking operation is complete."
 msgstr ""
-"Medtem ko poteka postopek skeniranja novih elementov, ker lahko postopek "
-"traja veliko časa in digiKama ni mogoče uporabiti, se prikaže nemodalno "
-"pogovorno okno, ki poskrbi, da ne pride do poškodb baze podatkov."
+"Zadnja možnost vodi do vakuumiranja (krčenja) baz podatkov. Vakuumiranje je "
+"podprto za SQLite in MySQL. Krčenje baze podatkov lahko traja nekaj časa. Da "
+"bi se izognili poškodbam baze podatkov med to operacijo, bo digiKam prikazal "
+"naslednje nemodalno pogovorno okno in se prenehal odzivati ​​na uporabniške "
+"ukaze, dokler operacija krčenja ni končana."
 
 #: ../../maintenance_tools/maintenance_database.rst:44
 msgid "The digiKam Database process Working in the Background."
 msgstr "Proces baze podatkov digiKam deluje v ozadju."
+
+#~ msgid "Database Cleaning"
+#~ msgstr "Čiščenje baze podatkov"
+
+#~ msgid "Contents"
+#~ msgstr "Vsebina"
+
+#~ msgid ""
+#~ "The last option leads to the vacuuming (shrinking) of the databases. "
+#~ "Vacuuming is supported both for SQLite and MySQL."
+#~ msgstr ""
+#~ "Zadnja možnost vodi do vakuumiranja (krčenja) baz podatkov. Vakuumiranje "
+#~ "je podprto za SQLite in MySQL."
+
+#~ msgid ""
+#~ "While the scan for new items process is under progress, as the process "
+#~ "may take much time and digiKam cannot be used, a non modal dialog appear "
+#~ "to make sure that no database corruption occurs."
+#~ msgstr ""
+#~ "Medtem ko poteka postopek skeniranja novih elementov, ker lahko postopek "
+#~ "traja veliko časa in digiKama ni mogoče uporabiti, se prikaže nemodalno "
+#~ "pogovorno okno, ki poskrbi, da ne pride do poškodb baze podatkov."
