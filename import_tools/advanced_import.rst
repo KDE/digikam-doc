@@ -140,13 +140,19 @@ Scripting
 
     The Import Tool Scripting Advanced Settings
 
-The last section of the Settings tab allows you to run scripts to manipulate the images during import. You can type the filename of the script into the input field or search for the script using the **Browse** button. Check out the info button for additional expressions to use for customizing the command line.
+The last section of the Settings tab allows you to run scripts to manipulate the images during import. You can type the filename of the script into the input field or search for the script using the **Browse** button. Check out the info button for additional expressions to use for customizing the command line. These expressions may be used to customize the command line:
 
-.. figure:: images/camera_scripting_helper_dialog.webp
-    :alt:
-    :align: center
+======================= =============================================================================================================================================================================
+Options                 Description
+======================= =============================================================================================================================================================================
+%file                   Full path of the imported file
+%filename               File name of the imported file
+%path                   Path of the imported file
+%orgfilename            Original file name
+%orgpath                Original path
+======================= =============================================================================================================================================================================
 
-    The Import Tool Albums Scripting Helper Dialog
+If there are no expressions full path is added to the command.
 
 Post-Processing and Metadata
 ----------------------------
