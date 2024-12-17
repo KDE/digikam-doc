@@ -61,11 +61,32 @@ If your camera provides information about the date of the photograph, or if you 
 
 The date format for automatically creating albums can be set to **ISO** (e.g. '2023-08-13''), **Full text** (e.g. 'Sun Aug 13 2023''), **Local Settings** (taken from your desktop settings), or **Custom**. Custom date formats are specified in the Date format text box using the date descriptors described in the associated help dialog. An annotation below the text box will either show an example album name, or warn that the custom data format is not valid.
 
-.. figure:: images/camera_auto_albums_helper_dialog.webp
-    :alt:
-    :align: center
+These expressions may be used to customize date format:
 
-    The Import Tool Albums Auto-Creation Helper Dialog
+======================= =============================================================================================================================================================================
+Options                 Description
+======================= =============================================================================================================================================================================
+d                       The day as a number without a leading zero (1 to 31)
+dd                      The day as a number with a leading zero (01 to 31)
+ddd                     The abbreviated localized day name (e.g. 'Mon' to 'Sun')
+dddd                    The long localized day name (e.g. 'Monday' to 'Sunday')
+M                       The month as a number without a leading zero (1 to 12)
+MM                      The month as a number with a leading zero (01 to 12)
+MMM                     The abbreviated localized month name (e.g. 'Jan' to 'Dec')
+MMMM                    The long localized month name (e.g. 'January' to 'December')
+yy                      The year as two digit number (eg. 00 to 99)
+yyyy                    The year as four digit number (eg. 2012)
+======================= =============================================================================================================================================================================
+
+All other input characters will be treated as text. Any sequence of characters that are enclosed in singlequotes will be treated as text and not be used as an expression. Examples, if date is 20 July 1969:
+
+======================= =============================================================================================================================================================================
+Options                 Description
+======================= =============================================================================================================================================================================
+dd.MM.yyyy              20.07.1969
+ddd MMMM d yy           Sun July 20 69
+'Photo shot on ' dddd   Photo shot on Sunday
+======================= =============================================================================================================================================================================
 
 .. _camera_onthefly:
 
