@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-15 02:27+0000\n"
-"PO-Revision-Date: 2024-12-17 22:45+0100\n"
+"PO-Revision-Date: 2024-12-19 22:42+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -1703,8 +1703,8 @@ msgstr ""
 "L'eina Refocus utilitza un filtre de desconvolució per a reenfocar una "
 "imatge millorant l'agudesa. En llenguatge pla, aquesta eina intenta "
 "«reenfocar» una imatge desfent el desenfocament. Això és millor que intentar "
-"aguditzar una fotografia. Utilitza una tècnica anomenada filtratge de Wiener "
-"Finite-Impulse-Response. Mentre que la tècnica tradicional per a "
+"aguditzar una fotografia. Utilitza una tècnica anomenada filtratge Finite-"
+"Impulse-Response de Wiener. Mentre que la tècnica tradicional per a "
 "l'agudització d'imatges és utilitzar l'emmascarament de desenfocament, el "
 "reenfocament generalment produeix millors resultats. Inicieu-lo des de "
 "l'entrada de menú :menuselection:`Millora --> Aguditza` i l'opció "
@@ -1804,7 +1804,7 @@ msgstr ""
 "molt millor que la convolució gaussiana. La convolució gaussiana té una cua "
 "molt llarga, de manera que matemàticament el resultat de la convolució també "
 "dependrà dels píxels d'origen a una gran distància del píxel font original. "
-"El Wiener FIR invers d'una convolució gaussiana en la majoria dels casos "
+"El FIR de Wiener invers d'una convolució gaussiana en la majoria dels casos "
 "està fortament influenciada pels píxels d'origen a una gran distància, i en "
 "la majoria dels casos això produeix resultats no desitjats."
 
@@ -1959,16 +1959,15 @@ msgid ""
 msgstr ""
 "Tots els tipus d'agudització funcionen aplicant una matriu petita de "
 "convolució que augmenta la diferència entre un píxel d'origen i els seus "
-"veïns immediats. El filtratge de Wiener FIR és una tècnica més general "
+"veïns immediats. El filtratge de FIR de Wiener és una tècnica més general "
 "perquè permet un veïnatge molt més gran i una parametrització millor. "
 "L'agudesa només funciona quan les imatges estan lleugerament difuminades. A "
 "més, per a valors alts del paràmetre d'agudesa, els resultats solen semblar "
-"«amb soroll». Amb el filtratge de Wiener FIR, aquest soroll es pot reduir "
+"«amb soroll». Amb el filtratge de FIR de Wiener, aquest soroll es pot reduir "
 "sobre manera seleccionant valors més alts per als paràmetres **Correlació** "
 "i **Filtre del soroll**."
 
 #: ../../image_editor/enhancement_tools.rst:537
-#, fuzzy
 #| msgid ""
 #| "Unsharp masking is another very popular image enhancement technique. From "
 #| "a mathematical point of view its justification is a bit obscure but many "
@@ -1988,15 +1987,15 @@ msgid ""
 "general approach to sharpening. It does not undo the blurring effects of "
 "diffraction caused by the camera's finite aperture, as refocus does."
 msgstr ""
-"La màscara de desenfocament és una altra tècnica molt popular per a millorar "
-"la imatge. Des d'un punt de vista matemàtic, la seva justificació és una "
-"mica obscura, però és del grat de molta gent. El primer pas és crear una "
-"còpia difuminada de la imatge d'origen. Llavors la diferència entre la "
-"imatge original i la imatge difuminada es resta de la imatge d'origen, "
-"d'aquí el nom màscara de desenfocament. De fet, la màscara de desenfocament "
-"més aviat és una millora del contrast sobre les característiques importants "
-"de la imatge que un augment en l'agudització. No desfà la interferència del "
-"patró d'obertura del diafragma de la càmera com fa el reenfocament."
+"La màscara de desenfocament és una altra tècnica de millora d'imatge molt "
+"popular. Des d'un punt de vista matemàtic, és una forma ad hoc de filtre "
+"passaalt. El primer pas és crear una còpia difuminada de la imatge d'origen. "
+"A continuació, la diferència entre la imatge d'origen i la imatge difuminada "
+"es resta de la imatge d'origen, d'aquí el nom de màscara de desenfocament. "
+"De fet, la màscara de desenfocament és més una millora de contrast de les "
+"característiques importants de la imatge que no pas una aproximació general "
+"a l'agudització. No desfà els efectes de difuminació de la difracció causats "
+"per l'obertura finita de la càmera, com fa el reenfocament."
 
 #: ../../image_editor/enhancement_tools.rst:539
 msgid ""
@@ -2009,7 +2008,6 @@ msgstr ""
 "màscara de desenfocament utilitza un veïnatge més gran que l'agudització."
 
 #: ../../image_editor/enhancement_tools.rst:541
-#, fuzzy
 #| msgid ""
 #| "From a theoretical point of view unsharp masking must always introduce "
 #| "artifacts. Even under optimal circumstances it can never completely undo "
@@ -2027,14 +2025,12 @@ msgid ""
 msgstr ""
 "Des d'un punt de vista teòric, la màscara de desenfocament sempre presentarà "
 "defectes. Fins i tot en circumstàncies òptimes, mai no es podrà desfer del "
-"tot l'efecte de difuminat. És possible demostrar que el filtratge de Wiener "
-"és el filtre lineal òptim. A la pràctica, en tots els casos, els resultats "
-"del filtre de Wiener van ser almenys tan bons com els de la màscara de "
-"desenfocament. El filtre de Wiener sovint és millor en la restauració de "
-"detalls petits."
+"tot l'efecte de difuminat. Però s'ha demostrat que el filtratge de Wiener és "
+"el filtre lineal òptim. A la pràctica, els resultats del filtre FIR de Wiener "
+"són sempre tan bons com els de la màscara de desenfocament. El filtre FIR de "
+"Wiener sovint és millor en la restauració de detalls petits."
 
 #: ../../image_editor/enhancement_tools.rst:543
-#, fuzzy
 #| msgid ""
 #| "Below, you can see a comparison of different filter apply on a small "
 #| "unfocused image:"
@@ -2043,7 +2039,7 @@ msgid ""
 "unfocused image:"
 msgstr ""
 "A continuació, podeu veure una comparació dels diferents filtres aplicats "
-"sobre una petita imatge desenfocada:"
+"a una imatge petita desenfocada:"
 
 #: ../../image_editor/enhancement_tools.rst:550
 msgid ""
@@ -2080,7 +2076,6 @@ msgstr ""
 
 # skip-rule: t-acc_obe
 #: ../../image_editor/enhancement_tools.rst:581
-#, fuzzy
 #| msgid ""
 #| "For more information about correction of sharpness methods used in "
 #| "digital imagery, you can find a technical comparison at `this url <http://"
@@ -2090,18 +2085,16 @@ msgid ""
 "can find a technical comparison at `this url <http://www.optarc.co.uk/"
 "bialith//Research/BARclockblur.htm>`_."
 msgstr ""
-"Per a obtenir més informació sobre els mètodes de correcció de l'agudització "
-"utilitzats en les imatges digitals, trobareu una comparació tècnica en "
-"`aquest URL <http://www.optarc.co.uk/bialith//Research/BARclockblur.htm>`_."
+"Per a obtenir més informació sobre els mètodes d'agudització utilitzats en "
+"les imatges digitals, trobareu una comparació tècnica en `aquest URL "
+"<http://www.optarc.co.uk/bialith//Research/BARclockblur.htm>`_."
 
 #: ../../image_editor/enhancement_tools.rst:587
-#, fuzzy
 #| msgid "Healing Clone Tool"
 msgid "Healing Clone"
-msgstr "Eina «Clonatge de guariment»"
+msgstr "Clonatge de guariment"
 
 #: ../../image_editor/enhancement_tools.rst:589
-#, fuzzy
 #| msgid ""
 #| "The healing tool aims to copy pixel colors from a specific portion of the "
 #| "image, and paste them in another portion of the image using a brush, then "
@@ -2115,14 +2108,13 @@ msgid ""
 "like unwanted spots on someone’s face that can be replaced with more clear "
 "skin from a nearby region of the face."
 msgstr ""
-"L'eina de guariment té com a objectiu copiar els colors dels píxels d'una "
-"part específica de la imatge i enganxar-los en una altra part de la imatge "
-"amb un pinzell, després aplicar el suavitzat. Això ajudarà a corregir els "
-"defectes en les imatges, com taques no desitjades a la cara d'algú que es "
-"poden substituir amb pell més clara d'una regió propera de la cara."
+"L'eina de **Clonatge de guariment** del digiKam copia els colors dels píxels "
+"d'una part específica de la imatge i els enganxa en una altra part de la "
+"imatge amb un pinzell, després aplica el suavitzat. Això ajudarà a corregir "
+"els defectes en les imatges, com taques no desitjades a la cara d'algú que "
+"es poden substituir amb pell més clara d'una regió propera de la cara."
 
 #: ../../image_editor/enhancement_tools.rst:591
-#, fuzzy
 #| msgid ""
 #| "The tool settings view on the right side provide a toolbar with 5 "
 #| "buttons. From left to right:"
@@ -2154,7 +2146,6 @@ msgid "Redo clone operation."
 msgstr "Refà l'operació de clonació."
 
 #: ../../image_editor/enhancement_tools.rst:599
-#, fuzzy
 #| msgid ""
 #| "Below the toolbar, two sliders allows to tune the clone tool properties. "
 #| "First one select the **Brush Radius** to adjust the size of cloned area "
@@ -2167,13 +2158,12 @@ msgid ""
 "controls the size of the regions that are copied from the image."
 msgstr ""
 "A sota de la barra d'eines, dos controls lliscants permeten ajustar les "
-"propietats de l'eina de clonatge. Primer, seleccioneu el **Radi del "
-"pinzell** per a ajustar la mida de l'àrea clonada des del llenç. Un radi de "
-"0 no tindrà efecte, 1 i superior determinen el radi del pinzell configurant "
-"la mida de les parts copiades en la imatge."
+"propietats de l'eina de clonatge. El control lliscant **Radi del pinzell** "
+"ajusta la mida de l'àrea clonada. Un radi de 0 no tindrà cap efecte. Valors "
+"d'1 i superiors determinen el radi del pinzell que controla la mida de les "
+"regions que es copien des de la imatge."
 
 #: ../../image_editor/enhancement_tools.rst:601
-#, fuzzy
 #| msgid ""
 #| "Second one is the amount of **Radius Blur** effect in percent applied on "
 #| "data cloned over the canvas. A percent of 0 has no effect, values above 0 "
@@ -2190,12 +2180,14 @@ msgid ""
 "percentage of source vs destination decreases linearly until the outer "
 "radius of the circle is 100% destination."
 msgstr ""
-"El segon és la quantitat d'efecte **Radi de difuminat** en percentatge "
-"aplicat en les dades clonades sobre el llenç. Un percentatge de 0 no tindrà "
-"cap efecte, els valors per sobre de 0 representen un factor per a mesclar el "
-"color de destinació amb el color d'origen. Això es fa radialment, és a dir, "
-"la part interior del radi del pinzell és totalment de l'origen i la mescla "
-"amb la destinació es fa gradualment fins a la part exterior del cercle."
+"El control lliscant **Radi de difuminat** controla l'efecte de suavitzat/"
+"mescla aplicat a les dades clonades sobre el llenç. Un percentatge de 0 no "
+"tindrà cap efecte. Els valors per sobre de 0 representen el radi del cercle "
+"que s'utilitza per a mesclar el color d'origen que es barreja amb el color "
+"de destinació. Això es fa radialment, és a dir, la part interior del radi "
+"del pinzell és totalment de l'origen i el percentatge d'origen respecte a la "
+"destinació es redueix linealment fins a la part exterior del cercle que és "
+"100% destinació."
 
 #: ../../image_editor/enhancement_tools.rst:607
 msgid "The Image Editor Healing Clone Tool to Remove Unwanted Artifacts"
@@ -2204,7 +2196,6 @@ msgstr ""
 "no desitjats"
 
 #: ../../image_editor/enhancement_tools.rst:609
-#, fuzzy
 #| msgid ""
 #| "To select the source of image to clone, press **S**, or the **Source "
 #| "selection** button from the toolbar on the top of settings view. The "
@@ -2219,8 +2210,10 @@ msgid ""
 msgstr ""
 "Per a seleccionar la font de la imatge que es clonarà, premeu :kbd:`S` o el "
 "botó **Selecciona l'origen** de la barra d'eines a la part superior de la "
-"vista de configuració. El cursor canviarà a forma d'objectiu, per a permetre "
-"decidir el botó d'origen central des d'on començarà a clonar."
+"vista de configuració. El cursor canviarà a un símbol de punt de mira. Feu "
+"clic a la ubicació des d'on començareu a clonar. L'eina llavors canvia a un "
+"pinzell circular. Moveu el pinzell a una altra ubicació i feu clic i "
+"arrossegueu per a clonar."
 
 #: ../../image_editor/enhancement_tools.rst:616
 msgid ""
@@ -2230,7 +2223,6 @@ msgstr ""
 "d'imatges esmenant un defecte amb l'eina Puntual"
 
 #: ../../image_editor/enhancement_tools.rst:618
-#, fuzzy
 #| msgid ""
 #| "The tool provide also a **Lasso** and **Polygon** selector for the "
 #| "healing clone operations. You can either press :kbd:`L` or the **Lasso "
@@ -2256,12 +2248,12 @@ msgstr ""
 "**Selector de llaç** de la barra d'eines a la part superior de la vista de "
 "configuració. El cursor canviarà a la forma d'un llapis i podreu seleccionar "
 "punts discrets com vulgueu. Es dibuixaran les vores del polígon, només cal "
-"prémer i moure el ratolí per a completar la forma de la selecció. No haureu "
-"de dibuixar tota la regió alhora. El polígon es tancarà sobre si mateix si "
-"premeu :kbd:`L` de nou."
+"prémer i moure el ratolí per a completar l'àrea de la selecció. No haureu de "
+"dibuixar tota la regió alhora. El polígon es tancarà sobre si mateix si "
+"premeu :kbd:`L` de nou. Prement :kbd:`Esc` durant el procés de dibuixar el "
+"polígon del llaç es cancel·larà l'operació de llaç."
 
 #: ../../image_editor/enhancement_tools.rst:620
-#, fuzzy
 #| msgid ""
 #| "Now only cloning inside the selected region will happens, cloning outside "
 #| "will be ignored, unless you press :kbd:`L` again or :kbd:`Esc` to "
@@ -2281,15 +2273,13 @@ msgid ""
 "kbd:`L` or :kbd:`Esc` again will remove the lasso boundary, keeping the "
 "cloned pixels in place, as expected."
 msgstr ""
-"Ara només succeirà la clonació dins de la regió seleccionada, la clonació "
-"externa serà ignorada, llevat que premeu :kbd:`L` de nou o :kbd:`Esc` per a "
-"desactivar el mode llaç. Quan ho feu, podreu clonar en qualsevol lloc de la "
-"pantalla com de costum. També prement :kbd:`Esc` mentre s'està dibuixant el "
-"polígon del llaç, es cancel·larà l'operació de llaç. Aquí hi ha una captura "
-"de pantalla d'una selecció de polígon de llaç, i una gran part de la imatge "
-"clonada dins d'aquesta porció de llaç. Per descomptat, prémer :kbd:`L` o :"
-"kbd:`Esc` de nou eliminarà el límit del llaç, mantenint els píxels clonats "
-"en el seu lloc, com s'esperava."
+"Ara l'eina només clonarà dins de la regió seleccionada, la clonació externa "
+"s'ignorarà, llevat que premeu :kbd:`L` de nou o :kbd:`Esc` per a desactivar "
+"el mode llaç. Quan ho feu, podreu clonar en qualsevol lloc de la pantalla "
+"com de costum. Aquí hi ha una captura de pantalla d'una selecció de polígon "
+"de llaç, i una gran part de la imatge clonada dins d'aquesta porció de llaç. "
+"Per descomptat, prémer :kbd:`L` o :kbd:`Esc` de nou eliminarà el límit del "
+"llaç, mantenint els píxels clonats en el seu lloc, com s'esperaria."
 
 #: ../../image_editor/enhancement_tools.rst:627
 msgid "Screencast of Image Editor Healing Clone Fixing an Area Using Lasso"
@@ -2315,7 +2305,6 @@ msgstr "Eina «G'MIC»"
 
 # skip-rule: t-acc_obe,t-sigl_sing2
 #: ../../image_editor/enhancement_tools.rst:637
-#, fuzzy
 #| msgid ""
 #| "G'MIC-Qt is 3rd-party image editing tool provided as a plug-in. It is "
 #| "named **G'MIC** for **GREYC’s Magic for Image Computing**, `an open-"
@@ -2348,7 +2337,6 @@ msgstr ""
 "propis filtres."
 
 #: ../../image_editor/enhancement_tools.rst:639
-#, fuzzy
 #| msgid ""
 #| "G'MIC-Qt is not included in the digiKam source code. Rather, it is a 3rd-"
 #| "party plugin included in binary distributions of digiKam, as the Windows, "
@@ -2371,11 +2359,11 @@ msgstr ""
 "El G'MIC-Qt no està inclòs en el codi font del digiKam. És un connector de "
 "tercers inclòs en les distribucions binàries del digiKam, com els paquets de "
 "Windows, macOS i Linux. Es pot iniciar des de l'element de menú :"
-"menuselection:`Millora --> G'MIC-Qt` o utilitzant les icones des de la "
-"pestanya **Eines** a la barra lateral dreta. El G'MIC-Qt es pot utilitzar "
-"com ho feu amb els altres filtres, la principal diferència és que en lloc "
-"d'obrir una pestanya específica de filtre a la barra lateral dreta, s'obrirà "
-"una finestra des d'on podreu seleccionar qualsevol dels filtres predefinits."
+"menuselection:`Millora --> G'MIC-Qt` o utilitzant les icones accessibles des "
+"de la pestanya d'eines a la barra lateral dreta. El G'MIC-Qt es pot utilitzar "
+"com altres filtres, la principal diferència és que en lloc d'obrir una "
+"pestanya específica de filtre a la barra lateral dreta, s'obrirà una "
+"finestra des d'on podreu seleccionar qualsevol dels filtres predefinits."
 
 #: ../../image_editor/enhancement_tools.rst:645
 msgid "The Image Editor G'MIC-Qt Tool Running the Artistic/Bokeh Filter"
@@ -2387,7 +2375,6 @@ msgid "The categories of **Available filters** in the list are listed below:"
 msgstr "Les categories de **Filtres disponibles** es llisten a continuació:"
 
 #: ../../image_editor/enhancement_tools.rst:649
-#, fuzzy
 #| msgid ""
 #| "**About**: these entries are not filters, but just show different "
 #| "information about G'MIC-Qt on the settings view. The **About/Download "
@@ -2401,10 +2388,9 @@ msgstr ""
 "**Quant a**: aquestes entrades no són filtres, només mostren informació "
 "diferent sobre G'MIC-Qt a la vista de configuració. L'eina **Quant a/"
 "Descarrega les dades externes** permet carregar definicions de filtre noves "
-"a través d'Internet."
+"des d'Internet."
 
 #: ../../image_editor/enhancement_tools.rst:651
-#, fuzzy
 #| msgid ""
 #| "**Array and tiles**: this filter collection allows transforming photos as "
 #| "toys, puzzles, maps, and decorative shapes."
@@ -2412,7 +2398,7 @@ msgid ""
 "**Array and tiles**: this filter collection transforms photos into toys, "
 "puzzles, maps, and decorative shapes."
 msgstr ""
-"**Matriu i mosaics**: aquesta col·lecció de filtres permet transformar les "
+"**Matriu i mosaics**: aquesta col·lecció de filtres transforma les "
 "fotografies en joguines, trencaclosques, mapes i formes decoratives."
 
 #: ../../image_editor/enhancement_tools.rst:657
@@ -2423,7 +2409,6 @@ msgstr ""
 "Trencaclosques»"
 
 #: ../../image_editor/enhancement_tools.rst:659
-#, fuzzy
 #| msgid ""
 #| "**Artistic**: this filter collection applies great traditional effects "
 #| "that seek to transform a photograph into a drawing or painting."
@@ -2431,7 +2416,7 @@ msgid ""
 "**Artistic**: this filter collection applies a number of traditional effects "
 "that transform a photograph into a drawing or painting."
 msgstr ""
-"**Artístic**: aquesta col·lecció de filtres aplica grans efectes "
+"**Artístic**: aquesta col·lecció de filtres aplica diversos efectes "
 "tradicionals que cerquen transformar una fotografia en un dibuix o pintura."
 
 #: ../../image_editor/enhancement_tools.rst:665
@@ -2440,7 +2425,6 @@ msgstr ""
 "L'eina G'MIC-Qt de l'editor d'imatges executant el filtre «Artístic/Rodilius»"
 
 #: ../../image_editor/enhancement_tools.rst:667
-#, fuzzy
 #| msgid ""
 #| "**Black and White**: this filter collection is dedicated to processing "
 #| "images in gray-scale style, as usual to convert, process the invert to "
@@ -2452,9 +2436,9 @@ msgid ""
 "drawing."
 msgstr ""
 "**Blanc i negre**: aquesta col·lecció de filtres està dedicada al "
-"processament d'imatges en estil d'escala de grisos, com és habitual per a "
-"convertir, processar la inversió en donar color, reduir el mapa o simular un "
-"dibuix al carbonet."
+"processament d'imatges en estil d'escala de grisos, incloent-hi la conversió "
+"a escala de grisos, el procés invers a donar color a una imatge, reduir el "
+"mapa de color o simular un dibuix al carbonet."
 
 #: ../../image_editor/enhancement_tools.rst:673
 msgid ""
@@ -2621,7 +2605,6 @@ msgstr ""
 "mitjans»"
 
 #: ../../image_editor/enhancement_tools.rst:755
-#, fuzzy
 #| msgid ""
 #| "**Renderings**: this filter collection superimposes generated artificial "
 #| "forms based on mathematical solutions."
@@ -2737,7 +2720,6 @@ msgstr ""
 "la descripció de cada subfinestra:"
 
 #: ../../image_editor/enhancement_tools.rst:807
-#, fuzzy
 #| msgid ""
 #| "On the left, there is the preview. With some filters, the whole image is "
 #| "displayed, and with other filters it will be shown a 100% crop detail, "
@@ -2749,10 +2731,9 @@ msgid ""
 msgstr ""
 "A l'esquerra, hi ha la vista prèvia. Amb alguns filtres, es mostra la imatge "
 "completa, i amb altres filtres es mostra un detall de retallat del 100%, "
-"depenent del tipus d'efecte que volem activar."
+"depenent de la classe d'efecte que volem activar."
 
 #: ../../image_editor/enhancement_tools.rst:809
-#, fuzzy
 #| msgid ""
 #| "In the middle, there is the useful search bar at the top, with a list of "
 #| "groups of effects below. Each group can be opened with a double click or "
@@ -2767,7 +2748,6 @@ msgstr ""
 "sobre la fletxa petita a l'esquerra del nom."
 
 #: ../../image_editor/enhancement_tools.rst:811
-#, fuzzy
 #| msgid ""
 #| "On the right would appear the settings of the selected filter, if we had "
 #| "selected one below, to confirm the changes, there are the **Apply** and "
@@ -2780,12 +2760,11 @@ msgid ""
 "returns to the Image Editor."
 msgstr ""
 "A la dreta apareix la configuració del filtre seleccionat, si hem "
-"seleccionat res, per a confirmar els canvis, hi ha els botons **Aplica i "
+"seleccionat res. Per a confirmar els canvis, hi ha els botons **Aplica** i "
 "**D'acord**. El botó **Cancel·la** aturarà tot el processament actual i "
 "tornarà a l'editor d'imatges."
 
 #: ../../image_editor/enhancement_tools.rst:813
-#, fuzzy
 #| msgid ""
 #| "You can search a filter using their groups, but the fastest way to find "
 #| "them is to use the **Search** bar at the top of the list. If the filter "
@@ -2804,7 +2783,7 @@ msgstr ""
 "Podeu cercar un filtre utilitzant els vostres grups, però la manera més "
 "ràpida de trobar-los és utilitzar la barra de **Cerca** a la part superior "
 "de la llista. Si les categories de filtre semblen una mica descoratjadores, "
-"és possible afegir els filtres més utilitzats en una llista de preferits i "
+"és possible afegir els filtres més utilitzats a una llista de preferits i "
 "aplicar una etiqueta de color utilitzant el menú contextual de la vista en "
 "arbre dels filtres. A la part inferior, el botó **Afegeix un preferit** "
 "permet afegir una entrada a la llista a la primera secció anomenada "
@@ -2825,7 +2804,6 @@ msgstr ""
 "Qt:"
 
 #: ../../image_editor/enhancement_tools.rst:823
-#, fuzzy
 #| msgid ""
 #| "When you render the filter on whole data from Image Editor by pressing "
 #| "**Apply** or **Ok** buttons, the processing time can be quite long, with "
@@ -2840,10 +2818,9 @@ msgid ""
 msgstr ""
 "Quan processeu el filtre sobre dades completes des de l'editor d'imatges "
 "prement els botons **Aplica** o **D'acord**, el temps de processament podria "
-"ser força llarg amb imatges de molts megapíxels. Si l'ordinador no és prou "
-"potent, el temps per a processar una imatge també podria portar un temps. "
-"Una barra de progrés a la part inferior del diàleg del G'MIC-Qt indicarà el "
-"progrés del càlcul."
+"ser força llarg, especialment amb imatges de molts megapíxels. Una **barra "
+"de progrés** a la part inferior del diàleg del G'MIC-Qt indicarà el progrés "
+"del càlcul."
 
 #: ../../image_editor/enhancement_tools.rst:829
 msgid "The Image Editor G'MIC-Qt Tool Progress Bar"
@@ -2862,7 +2839,6 @@ msgstr ""
 "completa** amb el botó a la part inferior."
 
 #: ../../image_editor/enhancement_tools.rst:833
-#, fuzzy
 #| msgid ""
 #| "Depending on the filter, some parameters can require many iterations on "
 #| "the image and increase processing time. Adjust the settings carefully, as "
@@ -2873,8 +2849,9 @@ msgid ""
 "times can increase exponentially before seeing any result."
 msgstr ""
 "Segons el filtre, alguns paràmetres poden requerir moltes iteracions sobre "
-"la imatge. Ajusteu la configuració amb cura, ja que el temps pot augmentar "
-"exponencialment abans de veure el resultat."
+"la imatge que poden incrementar el temps de procés. Ajusteu la configuració "
+"amb cura, ja que el temps pot augmentar exponencialment abans de veure "
+"qualsevol resultat."
 
 #: ../../image_editor/enhancement_tools.rst:835
 msgid ""
@@ -2894,7 +2871,6 @@ msgstr ""
 "prèvia des del filtre Colors/Daltonisme"
 
 #: ../../image_editor/enhancement_tools.rst:843
-#, fuzzy
 #| msgid ""
 #| "The **Settings** button on the bottom left will show the G'MIC-Qt "
 #| "configuration dialog with tree tabs:"
@@ -2903,10 +2879,9 @@ msgid ""
 "configuration dialog with three tabs:"
 msgstr ""
 "El botó **Configura** a la part inferior esquerra mostrarà el diàleg de "
-"configuració del G'MIC-Qt amb pestanyes en arbre:"
+"configuració del G'MIC-Qt amb tres pestanyes:"
 
 #: ../../image_editor/enhancement_tools.rst:845
-#, fuzzy
 #| msgid ""
 #| "First one is used to customize the G'MIC-Qt **Interface**, as the layout "
 #| "of the tool panes, the language to enable, the preview behavior, and the "
@@ -2916,9 +2891,10 @@ msgid ""
 "the layout of the tool panes, the language to enable, the preview behavior, "
 "and the native dialog to use."
 msgstr ""
-"La primera s'utilitza per a personalitzar la **interfície** del G'MIC-Qt, "
-"com ara la disposició de les subfinestres d'eines, l'idioma que s'activarà, "
-"el comportament de la vista prèvia i el diàleg nadiu que s'utilitzarà."
+"La pestanya **Interfície** s'utilitza per a personalitzar la interfície del "
+"G'MIC-Qt, com ara la disposició de les subfinestres d'eines, l'idioma que "
+"s'activarà, el comportament de la vista prèvia i el diàleg nadiu que "
+"s'utilitzarà."
 
 #: ../../image_editor/enhancement_tools.rst:851
 msgid "The Image Editor G'MIC-Qt Tool Settings/Interface Dialog Tab"
@@ -2927,7 +2903,6 @@ msgstr ""
 "Interfície"
 
 #: ../../image_editor/enhancement_tools.rst:853
-#, fuzzy
 #| msgid ""
 #| "Second one to set up the **Filter sources**, such as where to take filter "
 #| "updates and where to store them on your computer."
@@ -2935,8 +2910,8 @@ msgid ""
 "The **Filter sources** tab set up where to obtain filter updates and where "
 "to store them on your computer."
 msgstr ""
-"La segona és per a configurar les **Fonts dels filtres**, com d'on prendre "
-"les actualitzacions de filtre i on emmagatzemar-les a l'ordinador."
+"La pestanya **Fonts dels filtres** configura d'on obtenir les "
+"actualitzacions de filtres i on emmagatzemar-les a l'ordinador."
 
 #: ../../image_editor/enhancement_tools.rst:859
 msgid "The Image Editor G'MIC-Qt Tool Settings/Filter-Sources Dialog Tab"
@@ -2945,7 +2920,6 @@ msgstr ""
 "Filtre-Fonts"
 
 #: ../../image_editor/enhancement_tools.rst:861
-#, fuzzy
 #| msgid ""
 #| "The last one is to tune **Other** parameters, such as when to check for "
 #| "online updates, and the debug verbosity on the console (useful for filter "
@@ -2955,9 +2929,10 @@ msgid ""
 "check for online updates, and the debug verbosity on the console which is "
 "useful for filter developers."
 msgstr ""
-"L'última és per a ajustar **Altres** paràmetres, com quan cercar "
-"actualitzacions en línia i la loquacitat de la depuració a la consola (útil "
-"per als desenvolupadors dels filtres)."
+"La pestanya anomenada molt intel·ligentment **Altres** ajusta altres "
+"paràmetres, com quan comprovar si hi ha actualitzacions en línia i la "
+"loquacitat de la depuració a la consola que útil per als desenvolupadors de "
+"filtres."
 
 #: ../../image_editor/enhancement_tools.rst:867
 msgid "The Image Editor G'MIC-Qt Tool Settings/Other Dialog Tab"
@@ -2967,7 +2942,6 @@ msgstr ""
 
 # skip-rule: t-acc_obe
 #: ../../image_editor/enhancement_tools.rst:869
-#, fuzzy
 #| msgid ""
 #| "It's suggested to explore all the available effects in G'MIC-Qt, as you "
 #| "can find interesting artistic solutions for your photo. See `this online "
@@ -2979,7 +2953,7 @@ msgid ""
 "<https://jpfleury.github.io/gfo-demos/demos/fruits-400/index.html>`_ of all "
 "G'MIC-Qt filters for details."
 msgstr ""
-"Se suggereix explorar tots els efectes disponibles en el G'MIC-Qt, ja que "
+"Suggerim explorar tots els efectes disponibles en el G'MIC-Qt, ja que "
 "trobareu solucions artístiques interessants per a la vostra fotografia. Per "
 "a obtenir més detalls, vegeu `aquesta revisió en línia <https://jpfleury."
 "github.io/gfo-demos/demos/fruits-400/index.html>`_ de tots els filtres del "
