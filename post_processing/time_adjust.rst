@@ -13,7 +13,7 @@
 :ref:`Time Adjust <post_processing>`
 ====================================
 
-The Time Adjust tool available from :menuselection:`Item --> Adjust Time & Date` :kbd:`Ctrl+Shift+D` allows to adjust or write the timestamps in file metadata. This common task is sometime mandatory when your images do not contain dates in metadata (typically when the contents were digitized by a scanner), or when a camera records a wrong date in you file due to an incorrectly set clock. With this tool, you can choose the right source to take the date information, the date entries to fix or append, and the calculation to before on dates before saving them.
+The Time Adjust tool available from :menuselection:`Item --> Adjust Time & Date` :kbd:`Ctrl+Shift+D` allows to adjust or write the timestamps in file metadata. This common task is sometime mandatory when your images do not contain dates in metadata (typically when the contents were digitized by a scanner), or when a camera records a wrong date in you file due to an incorrectly set clock. With this tool, you can choose the right source to take the date information, the date entries to fix or append, and the calculation to do on dates before saving them.
 
 The **Timestamp Used** group allows you to select the source of the date. Available choices are:
 
