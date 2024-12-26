@@ -416,7 +416,7 @@ Getting the correct white balance setting is a common challenge for digital stil
 
 .. note::
 
-    White balance corrections applied to 8-bit images can often produce over exposed regions. This even occurs even if the corrections depart too much from an original 16-bit image. So white balance corrections are best applied during the conversion of RAW data, when the margin for correction will be greater.
+    White balance corrections applied to 8-bit images can often produce over exposed regions. This occurs even if the corrections depart too much from an original 16-bit image. So white balance corrections are best applied during the conversion of RAW data, when the margin for correction will be greater.
 
 The effects of white balance corrections are immediately displayed in the image preview area to the left. As for all tools, the preview area can be configured by clicking on the preview comparison style icons in the status bar.
 
