@@ -45,9 +45,9 @@ The camera configuration dialog is used to add or edit the characteristics of a 
     Dialog to Add a Camera Device Using gPhoto Drivers
 
 Clicking on a camera in the list from the left will display the supported ports which you can then select. digiKam currently supports **Serial**, **USB**, **Network**, and **Mass Storage** ports. If there is only one supported port, it will be automatically selected. If you cannot find your camera on the list, you can try to select one of three options in the camera list:
-    -- **Mounted Camera** specifies the mounted camera is a generic **Mass Storage** device.
-    -- **USB PTP Class Camera** specifies the camera uses the Picture Transfer Protocol over USB.
-    -- **PTP/IP Class Camera** specifies the camera uses the Picture Transfer Protocol over IP.
+    - **Mounted Camera** specifies the mounted camera is a generic **Mass Storage** device.
+    - **USB PTP Class Camera** specifies the camera uses the Picture Transfer Protocol over USB.
+    - **PTP/IP Class Camera** specifies the camera uses the Picture Transfer Protocol over IP.
 
 At the very bottom is where you set the path for a USB or FireWire (IEEE-1394 or i-link) Mass Storage camera. This box becomes active once you select USB or FireWire Mass Storage camera in the camera list. You need to enter the path where you mount the camera, usually :file:`/mnt/camera` or :file:`/mnt/removable`.
 
