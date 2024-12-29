@@ -63,7 +63,7 @@ The figure below illustrates a stitched Panorama processed with the auto crop to
 Aspect Ratio Crop
 ~~~~~~~~~~~~~~~~~
 
-The digiKam **Aspect Ratio Crop** tool is a more powerful crop tool. While you are editing digital images, it is often necessary to create a compatible format for use in your photo album or a picture frame. If you print an image from your digital camera and then try to put it in your photo album, you may notice that the camera has a different width or height ratio than a normal photographic film format. The Aspect Ratio Crop** tool can crop your digital images in a predefined ratio (for example 5:7 or 2:3 which are standard photo ratios).
+The digiKam **Aspect Ratio Crop** tool is a more powerful crop tool. While you are editing digital images, it is often necessary to create a compatible format for use in your photo album or a picture frame. If you print an image from your digital camera and then try to put it in your photo album, you may notice that the camera has a different width or height ratio than a normal photographic film format. The **Aspect Ratio Crop** tool can crop your digital images in a predefined ratio (for example 5:7 or 2:3 which are standard photo ratios).
 
 .. figure:: images/editor_ratio_crop.webp
     :alt:
@@ -104,7 +104,7 @@ When first looking at an image, the eye of the viewer rarely settles at the cent
 
 The **Composition Guide** settings provide guiding elements to better compose your images. These guides are:
 
-    - **Rule of Thirds**: a grid that divides the image into thirds in every direction (that makes for 9 parts). These proportions are close to the golden rule and are derived from the field of view of the human eye. When an image is divided vertically and horizontally into three sections, the points of intersection represent places to position important visual elements. Moving a horizon in a landscape to the position of one third is often more effective than placing it in the middle. While many photographers and artists are aware of the Rule of Thirds, there is nothing obligatory about applying the Rule of Thirds. A landscape horizon could also be placed near the bottom one quarter or sixth. and still produce a good photograph. In placing visual elements for effective composition, one must assess many factors including color, dominance, size and balance together with proportion. Often a certain amount of image balance or tension can make a composition more effective.
+    - **Rule of Thirds**: a grid that divides the image into thirds in every direction (that makes for 9 parts). These proportions are close to the golden rule and are derived from the field of view of the human eye. When an image is divided vertically and horizontally into three sections, the points of intersection represent places to position important visual elements. Moving a horizon in a landscape to the position of one third is often more effective than placing it in the middle. While many photographers and artists are aware of the Rule of Thirds, there is nothing obligatory about applying the Rule of Thirds. A landscape horizon could also be placed near the bottom one quarter or sixth and still produce a good photograph. In placing visual elements for effective composition, one must assess many factors including color, dominance, size and balance together with proportion. Often a certain amount of image balance or tension can make a composition more effective.
 
     - **Harmonious Triangles**: harmonious divisions rely on the principle of similarity. Like the Rule of Thirds guide, Harmonious Triangles are another division of the image dividing the rectangle into equiangular harmonious triangles aligned with the diagonal.
 
@@ -311,7 +311,7 @@ The best way to understand how this tool is used is to follow along as the tool 
 Target Size
 ~~~~~~~~~~~
 
-After starting the Liquid Rescale tool, a series of parameters have to be set. the first set of parameters specifies the desired size of the final image.
+After starting the Liquid Rescale tool, a series of parameters have to be set. The first set of parameters specifies the desired size of the final image.
 
 .. figure:: images/editor_liquid_rescale_size_settings.webp
     :alt:
@@ -368,7 +368,7 @@ The sample image below illustrates where masks have been applied to preserve imp
 Energy Function
 ~~~~~~~~~~~~~~~
 
-These options are used to the gradient function applied while rescaling. the gradient function is used to determine which pixels should be removed or kept.
+These options are used to the gradient function applied while rescaling. The gradient function is used to determine which pixels should be removed or kept.
 
 .. figure:: images/editor_liquid_rescale_energy_settings.webp
     :alt:

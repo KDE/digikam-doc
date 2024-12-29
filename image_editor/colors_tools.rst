@@ -332,7 +332,7 @@ The digiKam **Brightness/Contrast/Gamma** tool is used for the correcting exposu
 
 .. note::
 
-    Another important tool called **Levels Adjust** supports exposure correction and also enables you to save and load the level settings so they cab be applied to multiple photographs. This can be useful if your camera or scanner often makes the same mistakes and so you regularly want to apply the same corrections. See the dedicated :ref:`Levels Adjust <color_levels>` section of the manual for more information. The **Curves Adjust** tool, described in the :ref:`Curves Adjust <color_curves>` section of the manual, provides an even more powerful way of correcting exposures.
+    Another important tool called **Levels Adjust** supports exposure correction and also enables you to save and load the level settings so they can be applied to multiple photographs. This can be useful if your camera or scanner often makes the same mistakes and so you regularly want to apply the same corrections. See the dedicated :ref:`Levels Adjust <color_levels>` section of the manual for more information. The **Curves Adjust** tool, described in the :ref:`Curves Adjust <color_curves>` section of the manual, provides an even more powerful way of correcting exposures.
 
 
 .. _color_hsl:
@@ -416,7 +416,7 @@ Getting the correct white balance setting is a common challenge for digital stil
 
 .. note::
 
-    White balance corrections applied to 8-bit images can often produce over exposed regions. This even occurs even if the corrections depart too much from an original 16-bit image. So white balance corrections are best applied during the conversion of RAW data, when the margin for correction will be greater.
+    White balance corrections applied to 8-bit images can often produce over exposed regions. This occurs even if the corrections depart too much from an original 16-bit image. So white balance corrections are best applied during the conversion of RAW data, when the margin for correction will be greater.
 
 The effects of white balance corrections are immediately displayed in the image preview area to the left. As for all tools, the preview area can be configured by clicking on the preview comparison style icons in the status bar.
 
@@ -424,7 +424,7 @@ To the top right, the widget displays a histogram that is dynamically updated wh
 
 We describe the rest of the controls, from the bottom up.
 
-With **Exposure Compensation** you can digitally change the exposure of the photo. Increasing the exposure may make the pixel noise more visible and saturate the highlights. Check the **Over exposure indicator** in the lower right status bar to check for saturation. The **Black Point** adjustment can be used to adjust the left said of the histogram. If your photograph looks foggy and the histogram has empty space on the left, you probably need to use this option. The **Exposure** and **Black Point** adjustments can be automatically estimated by pressing the **Auto Exposure Adjustments** button. This quite accurately sets the black point.
+With **Exposure Compensation** you can digitally change the exposure of the photo. Increasing the exposure may make the pixel noise more visible and saturate the highlights. Check the **Over exposure indicator** in the lower right status bar to check for saturation. The **Black Point** adjustment can be used to adjust the left side of the histogram. If your photograph looks foggy and the histogram has empty space on the left, you probably need to use this option. The **Exposure** and **Black Point** adjustments can be automatically estimated by pressing the **Auto Exposure Adjustments** button. This quite accurately sets the black point.
 
 The contrast of your output depends on the **Shadows**, **Saturation**, and **Gamma** parameters. The **Shadows** adjustment lets you enhance or diminish the shadow details in your photo.
 

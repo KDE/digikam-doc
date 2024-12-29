@@ -59,7 +59,7 @@ Once digiKam is done, press the **Finish** button, and you will be automatically
 
 Hit the **Preview** button to see the blended photo in the preview pane. If you move the mouse over the preview canvas, a toolbar appears in the top left corner of the image to **Zoom In**, **Zoom Out**, and **Zoom to Fit**.
 
-If you are not satisfied with the **Preview** result, you can tweak the available **Enfuse Settings** on the right side. where you will find the following options:
+If you are not satisfied with the **Preview** result, you can tweak the available **Enfuse Settings** on the right side, where you will find the following options:
 
     - **Automatic Local/Global Image Features Balance (Levels)**: Set automatic level selection (maximized) for pyramid blending, i.e. optimize image features (contrast, saturation, ...) to be as global as possible.
 

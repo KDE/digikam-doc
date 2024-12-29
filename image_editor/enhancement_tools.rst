@@ -396,7 +396,7 @@ Red Eye
 
 The digiKam **Red Eye** tool is a red eye removal tool. Red eyes are caused when a camera flash is used to take photographs of people. The red is the reflection from the back of the eye which can be seen because the pupil cannot react quickly enough to the flash. By the way, the red eye effect is less likely with a separate flash because of the different viewing angles of the flash and the lens. You can correct some of the worst effects of Red Eye by:
 
-`   - Select :menuselection:`Enhance --> Red Eye...`.
+    - Select :menuselection:`Enhance --> Red Eye...`.
 
     - Set the preview mode to display the portion of the image with the eyes that need to be fixed.
 
