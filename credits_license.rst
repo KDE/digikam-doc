@@ -21,7 +21,7 @@ Documentation copyright
 -----------------------
 
 Screenshots and screencasts
-    Copyright 2022-2024 licensed under the terms of `Creative Commons License SA 4.0 unless stated otherwise <https://spdx.org/licenses/CC-BY-4.0.html>`_.
+    Copyright 2022-2025 licensed under the terms of `Creative Commons License SA 4.0 unless stated otherwise <https://spdx.org/licenses/CC-BY-4.0.html>`_.
 
 Sphinx/ReStructuredText Contents
     Copyright 2001-2023 licensed under the terms of the `GNU Free Documentation License 1.2+ <https://spdx.org/licenses/GFDL-1.2-or-later.html>`_.
@@ -33,19 +33,19 @@ Documentation authors
 
     Please add your name here if you contribute to the handbook.
 
-- 2001-2024
+- 2001-2025
 
     `Gilles Caulier <https://invent.kde.org/cgilles>`_
 
-- 2009-2024
+- 2009-2025
 
     `Yuri Chornoivan <https://invent.kde.org/yurchor>`_
 
-- 2017-2024
+- 2017-2025
 
     `Antoni Bella Pérez <https://invent.kde.org/bellaperez>`_
 
-- 2024
+- 2024-2025
 
     `Rick Chapman <https://invent.kde.org/rickchapman>`_
     `Michael Miller <https://invent.kde.org/michmill>`_
