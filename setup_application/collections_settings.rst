@@ -108,3 +108,7 @@ The **Ignored Directories** view allows you to setup the list of the directories
     :align: center
 
     The digiKam Collections Configuration Page with the List of Ignored Directories
+
+.. note::
+
+    Only directory names are excluded, paths are not supported. This is intentional.
