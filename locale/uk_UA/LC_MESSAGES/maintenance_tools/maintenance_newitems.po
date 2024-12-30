@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-16 02:29+0000\n"
-"PO-Revision-Date: 2024-12-22 23:53+0200\n"
+"PO-Revision-Date: 2024-12-28 23:09+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -44,7 +44,6 @@ msgstr ""
 "Параметри пошуку нових записів за допомогою засобу супроводу збірки digiKam"
 
 #: ../../maintenance_tools/maintenance_newitems.rst:24
-#, fuzzy
 #| msgid ""
 #| "This process will scan the collections you defined in :menuselection:"
 #| "`Settings --> Configure digiKam...` and the **Collections** dialog page, "
@@ -59,13 +58,12 @@ msgid ""
 "while digiKam was not running. New entries are added to the digiKam database "
 "corresponding to each new image file found during the scan."
 msgstr ""
-"Цей процес виконає сканування збірок, визначених у вікні :menuselection:"
-"`Параметри --> Налаштувати digiKam...` на сторінці **Збірки**, на наявність "
-"нових записів, тобто файлів зображень, які було додано до збірки у період "
-"бездіяльності digiKam. Ви також можете запускати цей процес автоматично під "
-"час запуску digiKam. Для цього слід позначити пункт «Під час запуску "
-"виявляти нові елементи» у вікні :menuselection:`Параметри --> Налаштувати "
-"digiKam...` на сторінці **Різне**."
+"Інструмент **Виявити нові зображення** призначено для сканування збірок"
+" колекції, які ви визначили у вікні :menuselection:`Параметри -->"
+" Налаштувати digiKam...` на сторінці **Збірки**, шукаючи файли зображень,"
+" які ви додали до своєї збірки, між запусками digiKam. Нові записи додаються"
+" до бази даних digiKam відповідно до кожного нового файла зображення,"
+" знайденого під час пошуку."
 
 #: ../../maintenance_tools/maintenance_newitems.rst:26
 msgid ""
@@ -73,13 +71,16 @@ msgid ""
 "use digikam during a scan. While scanning for new items, a progress "
 "indicator is displayed in the bottom right corner of the main window."
 msgstr ""
+"Сканування нових елементів виконується у фоновому режимі, тому ви можете"
+" продовжувати використовувати digikam під час сканування. Під час сканування"
+" нових елементів у нижньому правому куті головного вікна буде показано"
+" індикатор поступу."
 
 #: ../../maintenance_tools/maintenance_newitems.rst:32
 msgid "The Scan for New Items Process Working in the background"
 msgstr "Процес пошуку нових записів працює у фоновому режимі"
 
 #: ../../maintenance_tools/maintenance_newitems.rst:34
-#, fuzzy
 #| msgid ""
 #| "This process can also be directly called by the main menu, From :"
 #| "menuselection:`Tools --> Scan for New Items` to scan all collections."
@@ -87,12 +88,12 @@ msgid ""
 "This tool can also be directly called from the main menu item :menuselection:"
 "`Tools --> Scan for New Items`."
 msgstr ""
-"Цю дію з пошуку в усіх збірках можна також безпосередньо викликати з "
-"основного меню: :menuselection:`Інструменти --> Виявити нові зображення`."
+"Цей інструмент можна також безпосередньо викликати з основного меню:"
+" :menuselection:`Інструменти --> Виявити нові зображення`."
 
 #: ../../maintenance_tools/maintenance_newitems.rst:37
 msgid "Scanning for New Items Automatically at Startup"
-msgstr ""
+msgstr "Автоматичний пошук нових зображень під час запуску"
 
 #: ../../maintenance_tools/maintenance_newitems.rst:39
 msgid ""
@@ -100,6 +101,10 @@ msgid ""
 "**Scan for new items at startup** in :menuselection:`Settings --> Configure "
 "digiKam... --> Miscellaneous page --> Behavior tab`."
 msgstr ""
+"Ви також можете запускати цей процес автоматично при запуску digiKam, якщо"
+" позначите пункт **Під час запуску виявляти нові записи** за шляхом"
+" :menuselection:`Параметри --> Налаштувати "
+"digiKam... --> сторінка «Різне» --> вкладка «Поведінка»`."
 
 #: ../../maintenance_tools/maintenance_newitems.rst:41
 msgid ""
@@ -111,9 +116,15 @@ msgid ""
 "scans and instead use the maintenance tool to perform a manual scan when "
 "necessary."
 msgstr ""
+"Майте на увазі, що пошук нових зображень під час запуску може тривати досить"
+" довго, уповільнивши ініціалізацію програми. Якщо ваш комп'ютер досить"
+" швидкий, фонове сканування не вплине на зручність користування digiKam під"
+" час сканування. Сканування може викликати затримки, якщо ваші збірки великі"
+" або якщо ви використовуєте віддалену базу даних. У цих випадках ви можете"
+" вимкнути автоматичне сканування та натомість скористатися інструментом"
+" обслуговування, щоб за потреби виконати сканування вручну."
 
 #: ../../maintenance_tools/maintenance_newitems.rst:43
-#, fuzzy
 #| msgid ""
 #| "Another option from this setup panel named **Fast scan (detects new, "
 #| "deleted and renamed items)** can also be turn on to significantly speed "
@@ -129,7 +140,8 @@ msgid ""
 msgstr ""
 "Інший пункт цієї панелі налаштування із назвою **Швидке сканування (виявляє "
 "нові, вилучені і перейменовані записи)** можна використати для значного "
-"пришвидшення сканування. Буде знайдено нові записи, вилучені записи або "
+"пришвидшення сканування. Під час сканування буде оброблено лише нові записи,"
+" вилучені записи або "
 "перейменовані записи. Щоб виявити записи, до яких було внесено зміни, "
 "позначення з цього пункту слід зняти."
 
@@ -139,7 +151,6 @@ msgstr ""
 "Параметри виявлення нових записів у діалоговому вікні налаштовування digiKam"
 
 #: ../../maintenance_tools/maintenance_newitems.rst:53
-#, fuzzy
 #| msgid ""
 #| "To identify files quickly and register items changes in database while "
 #| "scanning, digiKam uses a hash. This is not a full hash of the file for "
