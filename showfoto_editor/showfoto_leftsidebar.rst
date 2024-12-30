@@ -30,7 +30,7 @@ The **Folders** tab provides a complete tool for navigating your system director
 
     The Showfoto Stand-Alone Editor Folders Tab from Left Sidebar
 
-The Foders tab view is divided into three sections from top to bottom:
+The Folders tab view is divided into three sections from top to bottom:
 
     - The **Navigation settings** view providing:
 
