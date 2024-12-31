@@ -290,6 +290,10 @@ This section allows you to adjust special low-level configurations used by digiK
     - **WMF**: Windows Media Foundation is the alternative backend available **under Windows**. `WMF <https://en.wikipedia.org/wiki/Media_Foundation>`_ can require the installation of 3rd-party codecs on the system to work properly.
     - **AVFoundation**: the alternative backend available **under macOS**. `AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ can require the installation of 3rd-party codecs on the system to work properly.
 
+.. important::
+
+    To prevent washed out color issues when playing HDR video taken from modern devices, by experience better results can be obtained using an alternative backend.
+
 - **Enable internal debug logging**: this option turns on the debug traces on the console used to investigate errors. Under Linux and macOS, just start the application from a console to show the messages. Under Windows, you need an extra Microsoft application named `DebugView <https://learn.microsoft.com/sysinternals/downloads/debugview>`_ to display the messages. The default settings from DebugView are enough to capture the traces from the application.
 
 .. figure:: images/setup_miscs_system_debugview.webp
