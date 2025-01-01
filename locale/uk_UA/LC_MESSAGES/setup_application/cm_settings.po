@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-15 02:27+0000\n"
-"PO-Revision-Date: 2024-12-29 21:13+0200\n"
+"PO-Revision-Date: 2024-12-31 17:09+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -53,7 +53,6 @@ msgid "Overview"
 msgstr "Огляд"
 
 #: ../../setup_application/cm_settings.rst:23
-#, fuzzy
 #| msgid ""
 #| "digiKam is color-management enabled application. RAW files - as they come "
 #| "- are not color managed at all. Your camera provides the data it has "
@@ -81,7 +80,6 @@ msgstr ""
 "розділі :ref:`Керування профілями кольорів ICC <color_management>`."
 
 #: ../../setup_application/cm_settings.rst:25
-#, fuzzy
 #| msgid ""
 #| "Basically, a profile *maps* the color information and gives information "
 #| "on how one should render them. It gives also information to Lcms backend "
@@ -95,7 +93,8 @@ msgid ""
 "translate the color information from one color space to another in order to "
 "keep the colors as accurate as possible across all rendering media."
 msgstr ""
-"Загалом кажучи, профіль «відображає» дані про кольори і надає відомості щодо "
+"Загалом кажучи, профіль «відображає» дані про кольори з фотоапарата до"
+" однорідного масиву кольорових пікселів і надає відомості щодо "
 "того, які ці дані слід показувати глядачеві. Крім того, профіль надає дані "
 "модулю обробки Lcms та digiKam про те, як слід переносити дані кольорів з "
 "одного простору кольорів до іншого для того, щоб відтворення кольорів на "
@@ -129,7 +128,6 @@ msgstr ""
 "sRGB."
 
 #: ../../setup_application/cm_settings.rst:40
-#, fuzzy
 #| msgid ""
 #| "You have to provide a **Working Color Space** profile (linear profiles "
 #| "such as sRGB, ECI-RGB, LStar-RGB, Adobe-RGB or CIE-RGB). If you want to "
@@ -153,7 +151,8 @@ msgid ""
 "your blog. Note: Do not use non-linear profiles as they will change the "
 "color balance of your images."
 msgstr ""
-"Вам слід вказати профіль кольорів робочого простору (лінійний профіль, "
+"Якщо увімкнено керування кольорами, вам слід вказати профіль кольорів"
+" робочого простору (лінійний профіль, "
 "зокрема sRGB, ECI-RGB, LStar-RGB, Adobe-RGB або CIE-RGB). Якщо ви бажаєте "
 "надрукувати ваші знімки, можливо, варто зупинити вибір на Adobe RGB. Якщо "
 "зображення призначено лише для оприлюднення у інтернеті, краще вибрати sRGB "
@@ -163,10 +162,9 @@ msgstr ""
 "профілю), тому Adobe RGB буде непоганим вибором для зберігання та обробки "
 "зображень, оскільки ви завжди зможете замінити цей профіль на sRGB перед "
 "оприлюдненням вашого зображення у блозі. Зауваження: не використовуйте "
-"нелінійні профілі, оскільки вони змінюють баланс кольорів."
+"нелінійні профілі, оскільки вони змінюють баланс кольорів ваших знімків."
 
 #: ../../setup_application/cm_settings.rst:42
-#, fuzzy
 #| msgid ""
 #| "The three next sections from this view set the rules for different use "
 #| "cases:"
@@ -174,7 +172,8 @@ msgid ""
 "The three next sections of this view set digiKam's color management "
 "behaviors for when an image is loaded:"
 msgstr ""
-"Три наступних розділи цієї панелі встановлюють правила для різних випадків:"
+"Три наступних розділи цієї панелі встановлюють правила обробки при"
+" завантаженні зображення:"
 
 #: ../../setup_application/cm_settings.rst:44
 msgid ""
@@ -213,7 +212,6 @@ msgstr ""
 "зображення."
 
 #: ../../setup_application/cm_settings.rst:50
-#, fuzzy
 #| msgid ""
 #| "**When an image has no color profile information**: this condition "
 #| "provides four options listed below."
@@ -221,9 +219,8 @@ msgid ""
 "**When an image has no color profile information**: digiKam provides four "
 "options:"
 msgstr ""
-"**Якщо файл зображення не містить даних щодо профілю кольорів**: за "
-"допомогою цього пункту можна отримати доступ до чотирьох пунктів з "
-"наведеного нижче списку."
+"**Якщо файл зображення не містить даних щодо профілю кольорів**: у digiKam"
+" передбачено чотири варіанти:"
 
 #: ../../setup_application/cm_settings.rst:52
 msgid ""
@@ -237,7 +234,6 @@ msgstr ""
 "кольорів слід перетворити кольори зображення для редагування."
 
 #: ../../setup_application/cm_settings.rst:54
-#, fuzzy
 #| msgid ""
 #| "**Assume it is using the sRGB color space**: in this case, the image is "
 #| "target for an Internet usage. The **and convert it to the working color "
@@ -249,9 +245,10 @@ msgid ""
 "color space** allows you to force conversion to the **Working Color Space** "
 "previously defined."
 msgstr ""
-"**Припускати, що простором кольорів є sRGB**: у цьому випадку призначенням "
+"**Припускати, що простором кольорів є sRGB**: найкращий варіант, якщо"
+" призначенням "
 "зображення має бути використання в інтернеті. Пункт **і перетворити його на "
-"робочий простір кольорів** надає змогу примустов наказати перетворити "
+"робочий простір кольорів** надає змогу примусово наказати перетворити "
 "зображення до попередньо визначеного **робочого простору кольорів**."
 
 #: ../../setup_application/cm_settings.rst:56
@@ -265,7 +262,6 @@ msgstr ""
 "буде використано **робочий простір кольорів**."
 
 #: ../../setup_application/cm_settings.rst:58
-#, fuzzy
 #| msgid ""
 #| "**Convert it from default input color space to working space**: in this "
 #| "case, the conversion to the **Working Color Space** will be done to "
@@ -345,7 +341,6 @@ msgstr ""
 "вашого екрана."
 
 #: ../../setup_application/cm_settings.rst:81
-#, fuzzy
 #| msgid ""
 #| "The **Use color managed view** is an alternative to using desktop color "
 #| "management. Only your image in editor will be color managed, not your "
@@ -393,7 +388,6 @@ msgstr ""
 "тонів власноруч."
 
 #: ../../setup_application/cm_settings.rst:87
-#, fuzzy
 #| msgid ""
 #| "The **Output device profile** should match the profile for your output "
 #| "device, usually your printer. This profile will be used to do a :ref:"
@@ -538,7 +532,6 @@ msgstr ""
 "Сторінка налаштовування додаткових параметрів засобу керування кольорами"
 
 #: ../../setup_application/cm_settings.rst:116
-#, fuzzy
 #| msgid ""
 #| "For most cameras it is pretty obvious what color profile they propose for "
 #| "the type at hand, not so for the Canon's. Here is a table of camera/"
@@ -550,8 +543,7 @@ msgid ""
 msgstr ""
 "Для більшості фотоапаратів визначення профілю кольорів легко провести за "
 "допомогою, наприклад, типу фотоапарата, але для фотоапаратів Canon це не "
-"так. Нижче наведено таблицю відповідності фотоапаратів та профілів. Звичайно "
-"ж, ця таблиця не є офіційною."
+"так. Нижче наведено таблицю відповідності фотоапаратів та профілів:"
 
 #: ../../setup_application/cm_settings.rst:119
 msgid "Camera"
