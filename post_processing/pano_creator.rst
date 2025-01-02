@@ -19,7 +19,7 @@
 
     The Panoramic JPEG Files Selected from Icon-View (7x24Mpx Images taken with Sony A77 - 59 Mb)
 
-A panorama is a composite of multiple photos taken in the same conditions with the same camera/lens. The camera is rotated about a single point between each shot, so the end photos can be stitched together as if shot with a super wide-angle lens. The sequential images must be taken with overlapping edges. The Panoramic Algorithm will try to found the common portions of the images to join and merge the contents. The get the most consistent perspective, it is best to use a tripod, especially with complex compositions. The **Panorama Creator** tool allows you to assemble shots taken horizontally, vertically, or as a matrix.
+A panorama is a composite of multiple photos taken in the same conditions with the same camera/lens. The camera is rotated about a single point between each shot, so the end photos can be stitched together as if shot with a super wide-angle lens. The sequential images must be taken with overlapping edges. The Panoramic Algorithm will try to find the common portions of the images to join and merge the contents. The get the most consistent perspective, it is best to use a tripod, especially with complex compositions. The **Panorama Creator** tool allows you to assemble shots taken horizontally, vertically, or as a matrix.
 
 .. note::
 
