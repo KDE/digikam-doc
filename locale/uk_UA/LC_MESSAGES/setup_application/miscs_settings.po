@@ -1,13 +1,13 @@
 # Copyright (C) licensed under the  <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License SA 4.0</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-15 02:27+0000\n"
-"PO-Revision-Date: 2024-12-31 21:45+0200\n"
+"POT-Creation-Date: 2025-01-01 01:47+0000\n"
+"PO-Revision-Date: 2025-01-01 21:17+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -67,7 +67,6 @@ msgid "The digiKam Behavior Configuration Page"
 msgstr "Сторінка налаштовування поведінки digiKam"
 
 #: ../../setup_application/miscs_settings.rst:34
-#, fuzzy
 #| msgid ""
 #| "Set the option **Scan for new items at startup** to force digiKam to scan "
 #| "all collections for new items to register new elements in database. The "
@@ -89,17 +88,17 @@ msgid ""
 "new items when needed using :menuselection:`Tool --> Scan for new items`."
 msgstr ""
 "Позначте пункт **Під час запуску виявляти нові записи**, щоб наказати "
-"digiKam шукати нові записи у всіх збірках з метою реєстрації нових зображень "
-"у базі даних. Пошук виконується у фоновому режимі і керується за допомогою "
-"засобів смужки стану після завантаження основного інтерфейсу digiKam. Якщо "
-"ваш комп'ютер достатньо потужний, під час сканування digiKam можна буде "
-"користуватися без проблем. Якщо ж ваша збірка є надто великою або ви "
-"користуєтеся віддаленою базою даних, можливе певне уповільнення роботи "
-"програми, тому рекомендуємо зняти позначку з цього пункту і запланувати "
-"оновлення збірку вручну за допомогою засобів програми у належний момент часу."
+"digiKam шукати нові записи у всіх збірках під час кожного запуску digiKam."
+" Пошук виконується у фоновому режимі під час завантаження основного"
+" інтерфейсу digiKam. Поступ сканування буде показано на смужці стану. Якщо"
+" ваш комп’ютер досить швидкий, digiKam цілком можна використовувати під час"
+" пошуку нових елементів. Вам, ймовірно, варто зняти позначку з цього пункту,"
+" якщо ваші збірки є надто великими або якщо ви використовуєте віддалену базу"
+" даних. У цих випадках вам слід за потреби сканувати нові елементи вручну за"
+" допомогою пункту меню :menuselection:`Інструменти --> Виявити нові"
+" елементи`."
 
 #: ../../setup_application/miscs_settings.rst:36
-#, fuzzy
 #| msgid ""
 #| "Set the option **Fast Scan** to significantly speed up the scan. New "
 #| "items, deleted and also renamed items are found. In order to find items "
@@ -109,10 +108,10 @@ msgid ""
 "items, deleted items and renamed items. Disable this option if you need to "
 "scan for items that are not new, but have been changed."
 msgstr ""
-"Позначте пункт **Швидке сканування**, щоб значно пришвидшити сканування. "
-"Буде виявлено нові записи, а також вилучені і перейменовані записи. Якщо "
-"потрібно знайти записи, до яких було внесено зміни, позначку з цього пункту "
-"слід зняти."
+"Позначення пункту **Швидке сканування** значно пришвидшує сканування, пошук"
+" нових записів, вилучених записів і перейменованих записів. Зніміть"
+" позначення, якщо вам потрібно виконати сканування записів, які не є новими,"
+" але до яких внесено зміни."
 
 #: ../../setup_application/miscs_settings.rst:38
 msgid ""
@@ -124,7 +123,6 @@ msgstr ""
 "до збірок."
 
 #: ../../setup_application/miscs_settings.rst:40
-#, fuzzy
 #| msgid ""
 #| "Set the option **Remove obsolete core database objects** to force digiKam "
 #| "to clean up the core database from obsolete item entries. Entries are "
@@ -141,21 +139,19 @@ msgid ""
 "tool provides options for cleaning up the other databases.) Enabling this "
 "option will slow down digiKam's startup."
 msgstr ""
-"Позначте пункт **Вилучити застарілі об'єкти основної бази даних**, щоб "
-"наказати digiKam чистити основну базу даних від застарілих записів. Записи у "
-"базі даних вилучатимуться, лише якщо пов'язаний з ними файл вже було "
-"вилучено, тобто об'єкт бази даних просто витрачає місце на диску. "
-"Використання цього пункту не призводитиме до чищення інших баз даних, "
-"зокрема баз даних мініатюр або розпізнавання облич. Щоб очистити інші бази "
-"даних, будь ласка, скористайтеся інструментами супроводу. Майте на увазі, що "
-"використання чищення уповільнює запуск програми."
+"Позначення пункту **Вилучити застарілі об'єкти основної бази даних** наказує"
+" digiKam очищати основну базу даних, вилучивши застарілі записи елементів,"
+" тобто записи, які більше не вказують на зображення, що зберігається у"
+" збірці. Позначення пункту не призводить до очищення бази даних мініатюр чи"
+" бази даних розпізнавання облич. (Інструмент обслуговування надає можливості"
+" з очищення інших баз даних.) Позначення цього пункту сповільнить запуск"
+" digiKam."
 
 #: ../../setup_application/miscs_settings.rst:45
 msgid "Generic Settings"
 msgstr "Загальні параметри"
 
 #: ../../setup_application/miscs_settings.rst:47
-#, fuzzy
 #| msgid ""
 #| "With the **Confirm when moving items to trash** and **Confirm when "
 #| "permanently deleting items** settings you can set the verbosity of "
@@ -169,9 +165,9 @@ msgid ""
 "Photograph <deleting_photograph>` and the :ref:`Deleting an Album "
 "<deleting_album>` sections for more details."
 msgstr ""
-"За допомогою пункту **Підтверджувати пересування об’єктів до смітника** і "
-"**Підтверджувати остаточне вилучення об’єктів** ви можете керувати рівнем "
-"взаємодії  з користувачем під час вилучення фотографії або альбому. "
+"За допомогою пунктів **Підтверджувати пересування об’єктів до смітника** і "
+"**Підтверджувати остаточне вилучення об'єктів** можна визначити, чи питатиме"
+" DigiKam про підтвердження, перш ніж вилучати фотографію або альбом. "
 "Докладніше про це можна дізнатися з розділів :ref:`Вилучення фотографії "
 "<deleting_photograph>` і :ref:`Вилучення альбому <deleting_album>`."
 
@@ -204,7 +200,6 @@ msgstr ""
 "записами облич, зверніться до :ref:`цього розділу підручника <people_view>`."
 
 #: ../../setup_application/miscs_settings.rst:53
-#, fuzzy
 #| msgid ""
 #| "The option **Initially select the first item in the album** will force to "
 #| "highlight the top left icon-view thumbnail when a new album is selected."
@@ -214,7 +209,8 @@ msgid ""
 "album is selected."
 msgstr ""
 "Якщо позначено пункт **Спочатку позначати перший запис в альбомі**, при "
-"виборі нового альбому програма позначатиме верхню ліву мініатюру на панелі "
+"виборі нового альбому програма автоматично позначатиме верхню ліву мініатюру"
+" на панелі "
 "перегляду піктограм."
 
 #: ../../setup_application/miscs_settings.rst:55
@@ -227,7 +223,6 @@ msgstr ""
 "вкладеної гілки альбому."
 
 #: ../../setup_application/miscs_settings.rst:57
-#, fuzzy
 #| msgid ""
 #| "With the **Scroll current item to center of thumbbar** setting, you can "
 #| "force thumbbar to center current selected item with mouse pointer on the "
@@ -239,12 +234,13 @@ msgid ""
 "current selection may or may not be in the center of the thumbbar."
 msgstr ""
 "За допомогою пункту **Розташовувати поточний пункт у центрі панелі "
-"мініатюр** ви можете наказати програмі розташовувати поточний позначений "
+"мініатюр** ви можете керувати гортанням на панелі мініатюр. Якщо позначено,"
+" програма розташовуватиме поточний позначений "
 "пункт у центрі панелі мініатюр із вказівником миші, розташованим у центрі "
-"видимої області."
+"видимої області. Якщо пункт не позначено, поточне позначення може"
+" розташовуватися у центрі панелі мініатюр, а може бути і в іншій позиції."
 
 #: ../../setup_application/miscs_settings.rst:59
-#, fuzzy
 #| msgid ""
 #| "The **Get album date source** option allows to adjust the album date "
 #| "depending on the option set when new items are found during scanning. "
@@ -253,8 +249,9 @@ msgid ""
 "The **Get album date source** option specifies the source to use for setting "
 "the album date when new items are found during scanning. Possible values are:"
 msgstr ""
-"За допомогою пункту **Отримати дані щодо дати альбому** можна скоригувати "
-"дату альбому за вибраним варіантом, коли під час сканування буде виявлено "
+"За допомогою пункту **Отримати дані щодо дати альбому** можна визначити"
+" джерело, яке буде використано для встановлення дати альбому, коли під час"
+" сканування буде виявлено "
 "нові записи. Можливі значення параметра:"
 
 #: ../../setup_application/miscs_settings.rst:61
@@ -290,7 +287,6 @@ msgid "**No Change Of Date**: does not modify the date."
 msgstr "**Без зміни дати**: не змінювати дату."
 
 #: ../../setup_application/miscs_settings.rst:67
-#, fuzzy
 #| msgid ""
 #| "With the **String comparison type** setting, you can set the way in which "
 #| "strings are compared inside digiKam. This influences the sorting of the "
@@ -327,11 +323,6 @@ msgstr ""
 "розташовано *нижче* у списку за альбом із назвою *20240625 Maydale*."
 
 #: ../../setup_application/miscs_settings.rst:72
-#| msgid ""
-#| "With the **Lower bound for minimum similarity** option, you can select "
-#| "the lower bound of the minimum similarity threshold for fuzzy and "
-#| "duplicates searches. The default value is 40. Selecting a lower value "
-#| "than 40 can make the search really slow."
 msgid ""
 "The **Lower bound for minimum similarity** option, selects the lower bound "
 "of the minimum similarity threshold for fuzzy and duplicate searches. The "
@@ -348,7 +339,6 @@ msgid "Application Updates"
 msgstr "Оновлення програм"
 
 #: ../../setup_application/miscs_settings.rst:79
-#, fuzzy
 #| msgid ""
 #| "The **Updates** settings allows to tune how the check the online "
 #| "availability of a new application version. You can select **Only For "
@@ -364,15 +354,14 @@ msgid ""
 "Releases** to receive notifications about the latest releases suitable for "
 "testing new features, but not recommended for production use."
 msgstr ""
-"За допомогою параметрів **Оновлення** ви можете налаштувати, як програма "
-"шукатиме нові версії в інтернеті. Ви можете позначити пункт **Лише для "
-"стабільних випусків**, тобто «шукати версії, які є офіційними і безпечними "
-"до використання для роботи». Іншим варіантом є **Щотижневі версії, що "
-"передують випуску**, тобто варіант тестування нових можливостей, але не "
-"рекомендований для використання для роботи, оскільки у ньому можливі вади."
+"Три пункти у розділі **Оновлення** визначають, як digiKam перевірятиме в"
+" інтернеті наявність останньої версії digiKam. Ви можете наказати програмі"
+" шукати **Лише стабільні випуски**, щоб отримувати сповіщення про офіційні"
+" версії, безпечні для щоденного використання, або **Щотижневі попередні"
+" випуски**, щоб отримувати сповіщення про останні випуски, придатні для"
+" тестування нових функції, але не рекомендовані для щоденного використання."
 
 #: ../../setup_application/miscs_settings.rst:81
-#, fuzzy
 #| msgid ""
 #| "The option **Use Version With Debug Symbols** allows to download version "
 #| "including debug symbols. This version is more heavy but can help "
@@ -388,7 +377,6 @@ msgstr ""
 "діагностики."
 
 #: ../../setup_application/miscs_settings.rst:83
-#, fuzzy
 #| msgid ""
 #| "Finally, on the bottom, a **Check Now** button allow to send a request "
 #| "for an update. The **Last check** date is indicated on the left side. If "
@@ -398,7 +386,7 @@ msgid ""
 "**Last check** date is indicated on the left side. If a new version is "
 "available online, the following dialog will appear:"
 msgstr ""
-"Нарешті, внизу є кнопка **Шукати зараз…**, за допомогою якої можна надіслати "
+"Внизу є кнопка **Шукати зараз…**, за допомогою якої можна надіслати "
 "запит щодо оновлення. Дату **Останньої перевірки** буде показано ліворуч. "
 "Якщо в інтернеті з'явиться нове версія, програма покаже діалогове вікно, "
 "подібне до наведеного на знімку нижче."
@@ -408,7 +396,6 @@ msgid "Dialog under Windows When a new digiKam Version is Available Online"
 msgstr "Вікно у Windows із повідомленням про доступність нової версії digiKam"
 
 #: ../../setup_application/miscs_settings.rst:91
-#, fuzzy
 #| msgid ""
 #| "From this dialog, press the **Download** button to process. A new "
 #| "progress dialog will appears as below."
@@ -416,9 +403,8 @@ msgid ""
 "Press the **Download** button to download the new version. A dialog will "
 "then appear to indicate the download progress."
 msgstr ""
-"У цьому діалоговому вікні натисніть кнопку **Отримати**, щоб запустити "
-"процедуру. У відповідь буде показано нове вікно поступу, знімок якого "
-"наведено нижче."
+"Натисніть кнопку **Отримати**, щоб отримати нову версію. У відповідь буде"
+" відкрито вікно отримання даних для стеження за поступом отримання даних."
 
 #: ../../setup_application/miscs_settings.rst:97
 msgid "Progress Dialog under Windows to Get the new Version Available Online"
@@ -446,7 +432,6 @@ msgstr ""
 "сеанс digiKam буде завершено, і буде запущено засіб встановлення."
 
 #: ../../setup_application/miscs_settings.rst:111
-#, fuzzy
 #| msgid ""
 #| "AppImage Linux bundle do not require installation on the system. File is "
 #| "downloaded and ready to use. The dialog propose to open desktop files-"
@@ -469,10 +454,6 @@ msgid "The digiKam Appearance Configuration Page"
 msgstr "Сторінка налаштовування вигляду digiKam"
 
 #: ../../setup_application/miscs_settings.rst:124
-#| msgid ""
-#| "With the **Show splash screen at startup** setting, you can switch off "
-#| "the display of the splash screen when application loads. This may speed "
-#| "up the start time slightly."
 msgid ""
 "The **Show splash screen at startup** option switches off the display of the "
 "splash screen when the application first loads. This may slightly speed up "
@@ -523,7 +504,6 @@ msgid "Icon-View Grouped Items with Frame"
 msgstr "Згруповані записи на панелі перегляду піктограм з рамкою"
 
 #: ../../setup_application/miscs_settings.rst:152
-#, fuzzy
 #| msgid ""
 #| "With the **Sidebar tab title** setting, you can set how sidebars on the "
 #| "sides will show the tab titles. Use **Only For Active Tab** option only "
@@ -537,17 +517,14 @@ msgid ""
 "All Tabs** option is a better choice for quickly accessing digiKam's "
 "features."
 msgstr ""
-"За допомогою пункту **Заголовок вкладки бічної панелі** ви можете визначити, "
-"яким чином буде показано заголовки вкладок на бічних панелях. Варіантом "
-"**Лише для активної вкладки** слід користуватися, лише якщо ви працюєте із "
-"комп’ютером з невеличким екраном. Якщо ж це не так, скористайтеся варіантом "
-"**Для усіх вкладок**, який надає змогу швидше отримувати доступ до усіх "
-"вбудованих можливостей digiKam."
+"Параметр **Заголовок вкладки бічної панелі** встановлює спосіб показу"
+" заголовків вкладок на лівій і правій бічних панелях. Виберіть варіант"
+" **Лише для активної вкладки**, якщо ви користуєтеся малим екраном,"
+" наприклад, на портативному комп'ютері. Якщо екран достатньо великий,"
+" найкращим вибором для пришвидшення доступу до можливостей digiKam є пункт"
+" **Для всіх вкладок**."
 
 #: ../../setup_application/miscs_settings.rst:154
-#| msgid ""
-#| "With the **Widget style** setting, you can choose the default application "
-#| "window decoration and looks."
 msgid ""
 "The **Widget style** option selects the default application window "
 "decoration and looks."
@@ -566,7 +543,6 @@ msgstr ""
 "рекомендуємо змінювати це значення."
 
 #: ../../setup_application/miscs_settings.rst:160
-#, fuzzy
 #| msgid ""
 #| "With the **Icon theme** setting, you can choose the default application "
 #| "icon theme. Theme availability depends of desktop used to run digiKam. "
@@ -577,8 +553,8 @@ msgid ""
 "generally the best choice for all operating systems."
 msgstr ""
 "За допомогою пункту «Тема піктограм» ви можете вибрати типову тему піктограм "
-"програми Перелік тем залежить від стільничного середовища, у якому запущено "
-"digiKam. Найкращим вибором для усіх стільниць буде набір піктограм "
+"програми. Перелік тем залежить від операційної системи, у якій запущено "
+"digiKam. Найкращим вибором для усіх операційних систем буде набір піктограм "
 "**Breeze**."
 
 #: ../../setup_application/miscs_settings.rst:162
@@ -676,10 +652,6 @@ msgid "**Ask**: ask to confirm before applying each operation."
 msgstr "**Питати**: питати про підтвердження до застосування кожної дії."
 
 #: ../../setup_application/miscs_settings.rst:191
-#| msgid ""
-#| "For this last case, a dialog as below will appears during operation. You "
-#| "can remember your choice for the next time, this will adjust the "
-#| "operation settings accordingly."
 msgid ""
 "In the last case, the dialog below will appear during the operation. "
 "Selecting **Remember your choice for this operation** will adjust the "
@@ -712,7 +684,6 @@ msgid "The digiKam Spellcheck Configuration Page"
 msgstr "Сторінка налаштувань перевірки правопису у digiKam"
 
 #: ../../setup_application/miscs_settings.rst:212
-#, fuzzy
 #| msgid ""
 #| "Spellcheck can be used on captions, titles, and other text-edit widgets "
 #| "to auto-detect the current language used in text and will propose "
@@ -734,14 +705,14 @@ msgid ""
 "to install the relevant packages onto your system."
 msgstr ""
 "Перевіркою правопису можна скористатися у віджетах підписів, заголовків та "
-"інших віджетах редагування тексту для автоматичного виявлення поточної мови "
-"тексту та отримання пропозицій щодо правильного написання слів. Для записів, "
-"де можна вказати альтернативну мову, для обробки тексту буде використано "
-"контекстну мову. Робота засобу перевірки правопису залежить від **модулів** "
-"з відкритим кодом, зокрема **словників мов** для аналізу речень. Відомості "
-"щодо доступності обох цих компонентів наведено у списку на цій панелі. Якщо "
-"ви хочете додати нову мову або словники, вам слід встановити у вашій системі "
-"відповідні пакунки."
+"інших віджетах редагування тексту для автоматичного виявлення помилок у"
+" словах та пропонування виправлень. digiKam автоматично визначає мову, яка"
+" використовується для перевірки правопису, оскільки У багатьох полях для"
+" введення тексту передбачено підтримку кількох мов. Роботу з аналізу речень"
+" засновано на **модулях обробки** з відкритим кодом, зокрема **словниках"
+" мов**. Відомості щодо доступних модулів обробки та мов наведено у цьому"
+" вікні. Якщо ви хочете додати нові мови або словники, вам доведеться"
+" встановити до вашої системи відповідні пакунки."
 
 #: ../../setup_application/miscs_settings.rst:218
 msgid "The Titles Text Editor from Captions Tab with Spellcheck Feature"
@@ -813,9 +784,6 @@ msgstr ""
 "передбачено у вибраному рушії **Інтернет-перекладу**."
 
 #: ../../setup_application/miscs_settings.rst:244
-#| msgid ""
-#| "As number of entries are huge for the both lists, a search engine is "
-#| "available and an option to show only the current selection."
 msgid ""
 "Each list has a huge number of entries, so a search engine is available to "
 "quickly find a language, along with an option to show only the current "
@@ -919,7 +887,6 @@ msgstr ""
 "**версії digiKam з Qt5**."
 
 #: ../../setup_application/miscs_settings.rst:276
-#, fuzzy
 #| msgid ""
 #| "**Use pixmaps with high DPI resolution**: this option, pixmaps sizes used "
 #| "internally by application will have a device-independent layout geometry. "
@@ -938,13 +905,13 @@ msgid ""
 "**Qt5 version** of digiKam."
 msgstr ""
 "**Растрові зображення із високою роздільністю**: якщо позначено цей пункт, "
-"розміри растрових зображень, які програма використовує на внутрішньому "
+"розміри растрових зображень, які digiKam використовує на внутрішньому "
 "рівні, матимуть незалежну від пристрої геометрію. Пункт активує піктограми з "
 "високою роздільною здатністю. Якщо не користуватися ним, елементи інтерфейсу "
 "digiKam виглядатимуть дуже розмитими на високих роздільних здатностях. Також "
 "рекомендуємо скористатися цим пунктом у багатоекранному контексті, коли "
 "роздільні здатності моніторів є різними. Цим пунктом можна скористатися лише "
-"у **версії програми з Qt5**."
+"у **версії digiKam з Qt5**."
 
 #: ../../setup_application/miscs_settings.rst:278
 msgid ""
@@ -957,14 +924,6 @@ msgstr ""
 "емуляцію для усіх випадків використання OpenGL."
 
 #: ../../setup_application/miscs_settings.rst:280
-#| msgid ""
-#| "**Use the OpenCL hardware acceleration**: this option will enable the GPU "
-#| "accelerations with the faces management, image quality sorting, and auto-"
-#| "tags features. This option affect the `OpenCV <https://opencv.org/>`_ "
-#| "engine used in background for the intensive computation on images. To see "
-#| "all details about the OpenCV hardware support, go to :menuselection:`Help "
-#| "--> Components Information` menu entry, and :ref:`OpenCV section from the "
-#| "dialog <help_componentsinfo>`."
 msgid ""
 "**Use the OpenCL hardware acceleration**: this option will enable the GPU "
 "hardware accelerations with the face management, image quality sorting, and "
@@ -1056,7 +1015,17 @@ msgstr ""
 "`AVFoundation <https://en.wikipedia.org/wiki/AVFoundation>`_ може "
 "потребувати встановлення у системі сторонніх кодеків для належної роботи."
 
-#: ../../setup_application/miscs_settings.rst:293
+#: ../../setup_application/miscs_settings.rst:295
+msgid ""
+"To prevent washed out color issues when playing HDR video taken from modern "
+"devices, by experience better results can be obtained using an alternative "
+"backend."
+msgstr ""
+"Для запобігання проблемам із вицвітанням кольорів на відео високого"
+" динамічного діапазону, яке знято на сучасний пристрій, як показує досвід,"
+" кращі результати можна отримати за допомогою альтернативного модуля обробки."
+
+#: ../../setup_application/miscs_settings.rst:297
 msgid ""
 "**Enable internal debug logging**: this option turns on the debug traces on "
 "the console used to investigate errors. Under Linux and macOS, just start "
@@ -1074,11 +1043,11 @@ msgstr ""
 "debugview>`_ для показу повідомлень. Типових параметрів DebugView достатньо "
 "для захоплення трасування з програми."
 
-#: ../../setup_application/miscs_settings.rst:299
+#: ../../setup_application/miscs_settings.rst:303
 msgid "digiKam Running Under Windows With DebugView"
 msgstr "digiKam запущено у Windows з DebugView"
 
-#: ../../setup_application/miscs_settings.rst:301
+#: ../../setup_application/miscs_settings.rst:305
 msgid ""
 "**Download Required Binary Data**: this button loads the deep-learning model "
 "files used with the face management, image quality sorting, and auto-tags "
@@ -1091,7 +1060,7 @@ msgstr ""
 "встановлення міток. Користуйтеся цим, лише якщо ви пропустили цей крок під "
 "час першого запуску програми."
 
-#: ../../setup_application/miscs_settings.rst:303
+#: ../../setup_application/miscs_settings.rst:307
 msgid ""
 "**Network Proxy Server Settings**: use this group the options to setup the "
 "`proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for "
@@ -1104,15 +1073,15 @@ msgstr ""
 "сервер для доступу до інтернету не потрібен. Нижче наведено доступні пункти "
 "для проксі-сервера:"
 
-#: ../../setup_application/miscs_settings.rst:305
+#: ../../setup_application/miscs_settings.rst:309
 msgid "**Proxy**: the address of the Proxy server on the network."
 msgstr "**Проксі-сервер**: адреса проксі-сервера мережі."
 
-#: ../../setup_application/miscs_settings.rst:306
+#: ../../setup_application/miscs_settings.rst:310
 msgid "**Port**: the Proxy server port on the network."
 msgstr "**Порт**: порт проксі-сервера мережі."
 
-#: ../../setup_application/miscs_settings.rst:307
+#: ../../setup_application/miscs_settings.rst:311
 msgid ""
 "**Proxy type**: the Proxy type available on the network. Two protocols are "
 "supported: **Http** or **Socks5**."
@@ -1120,7 +1089,7 @@ msgstr ""
 "**Тип проксі-сервера**: тип доступного у мережі проксі-сервера. Передбачено "
 "підтримку двох протоколів: **HTTP** і **Socks5**."
 
-#: ../../setup_application/miscs_settings.rst:308
+#: ../../setup_application/miscs_settings.rst:312
 msgid ""
 "**Requires Authentication**: turn on this option if the connection to the "
 "Proxy server needs a **Username** and a **Password**."
@@ -1128,7 +1097,7 @@ msgstr ""
 "**Потрібне розпізнавання**: позначте цей пункт, якщо для з'єднання із проксі-"
 "сервером потрібен **Користувач** і **Пароль**."
 
-#: ../../setup_application/miscs_settings.rst:309
+#: ../../setup_application/miscs_settings.rst:313
 msgid ""
 "**Username**: the name to use to be logged on the Proxy server over the "
 "network."
@@ -1136,7 +1105,7 @@ msgstr ""
 "**Користувач**: ім'я, яке слід використати для реєстрації на проксі-сервері "
 "у мережі."
 
-#: ../../setup_application/miscs_settings.rst:310
+#: ../../setup_application/miscs_settings.rst:314
 msgid ""
 "**Password**: the password to use to be logged on the Proxy server over the "
 "network."
