@@ -407,13 +407,13 @@ The Tools Menu
 
     Tool to create a calendar with Album items.
 
-    See the :ref:`this section <calendar_tools>` for more information.
+    See :ref:`this section <calendar_tool>` for more information.
 
 :menuselection:`Tools --> Email Images...`
 
     Tool to send images with your favorite email client.
 
-    See the :ref:`this section <send_images>` for more information.
+    See :ref:`this section <send_images>` for more information.
 
 .. _menu_mainimport:
 
