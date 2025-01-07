@@ -21,6 +21,7 @@ But even amateur photographers find geotagging useful. If enough time has passed
 
 GPS (global positioning system) is used as a generic term throughout this document. It just means a location in the common spherical coordinate system that can be displayed on a map. The actual technical implementation that provides the actual position data can be the American GPS, the Russian GLONASS, the European GALILEO, China's BeiDou or any other system that might come on line in the future.
 
+Geolocation functionality is enabled via :menuselection:`Settings --> Configure digiKam --> Plugins --> Geolocation Edit`
 
 There are four tools involving geolocation in digiKam and two in Showfoto:
 
