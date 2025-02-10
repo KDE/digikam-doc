@@ -147,7 +147,7 @@ Exit Preview Mode                   :kbd:`Esc`
 Toggle Left Side-bar                :kbd:`Ctrl+Alt+Left`
 Toggle Right Side-bar               :kbd:`Ctrl+Alt+Right`
 Refresh                             :kbd:`F5`
-Refresh (without thumbnails update) :kbd:`F5`
+Refresh (without thumbnails update) :kbd:`Ctrl+F5`
 Turn On/Off Color Management View   :kbd:`F12`
 =================================== =========================
 
