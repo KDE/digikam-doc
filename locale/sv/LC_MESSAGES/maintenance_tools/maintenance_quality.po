@@ -1,13 +1,13 @@
 # Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
 #
-# SPDX-FileCopyrightText: 2024 Stefan Asserhäll <stefan.asserhall@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Stefan Asserhäll <stefan.asserhall@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-12-16 02:29+0000\n"
-"PO-Revision-Date: 2024-09-22 17:56+0200\n"
+"PO-Revision-Date: 2025-02-15 14:20+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #: ../../maintenance_tools/maintenance_quality.rst:1
 msgid "digiKam Maintenance Tool to Sort Image by Quality"
@@ -31,14 +31,13 @@ msgstr ""
 
 #: ../../maintenance_tools/maintenance_quality.rst:14
 msgid ":ref:`Image Quality Sorter <maintenance_tools>`"
-msgstr ""
+msgstr ":ref:`Bildkvalitetssortering <maintenance_tools>`"
 
 #: ../../maintenance_tools/maintenance_quality.rst:20
 msgid "The digiKam Maintenance Options for Image Quality Sorter"
 msgstr "Underhållsalternativen i digiKam för bildkvalitetssortering"
 
 #: ../../maintenance_tools/maintenance_quality.rst:22
-#, fuzzy
 #| msgid ""
 #| "The tool will parse the items to determine the **Quality** and sort them "
 #| "with the **Pick Label** properties in database as:"
@@ -47,8 +46,9 @@ msgid ""
 "each item and assigns a corresponding value to the **Pick Label** property "
 "in the database based on:"
 msgstr ""
-"Verktyget analyserar objekten för att bestämma **Kvalitet** och sortera dem "
-"med egenskaperna för **Urvalsbeteckning** i databasen med:"
+"Verktyget **Bildkvalitetssortering** analyserar objekten för att bestämma **Kv"
+"alitet** för varje objekt och tilldelar ett motsvarande värde till egenskapen "
+"**Urvalsbeteckning** i databasen baserat på:"
 
 #: ../../maintenance_tools/maintenance_quality.rst:24
 msgid "The **Red** flag for **Rejected**."
@@ -63,7 +63,6 @@ msgid "The **Green** flag for **Accepted**."
 msgstr "Den **gröna** flaggan för **Godkänd**."
 
 #: ../../maintenance_tools/maintenance_quality.rst:30
-#, fuzzy
 #| msgid ""
 #| "The Image Quality Sorter assigns Pick Labels to items according to the "
 #| "default settings in :menuselection:`Settings --> Configure digiKam...` "
@@ -74,13 +73,12 @@ msgid ""
 "default settings in :menuselection:`Settings --> Configure digiKam... --> "
 "Image Quality Sorter page`, or the dedicated options set in this view."
 msgstr ""
-"Bildkvalitetssortering tilldelar urvalsbeteckningar till objekt enligt "
-"standardinställningarna i :menuselection:`Inställningar --> Anpassa "
-"digiKam...` och inställningspanelen **Bildkvalitetssortering**, eller en "
-"särskild inställning som är finjusterad i den här vyn."
+"Bildkvalitetssortering tilldelar urvalsbeteckningar till objekt enligt standar"
+"dinställningarna på sidan :menuselection:`Inställningar --> Anpassa digiKam..."
+" --> Bildkvalitetssortering`, eller de särskilda inställningarna som anges i d"
+"en här vyn."
 
 #: ../../maintenance_tools/maintenance_quality.rst:32
-#, fuzzy
 #| msgid ""
 #| "The quality **score** to determine the **Pick Label** property can be "
 #| "evaluated by two ways: using four basic factors sabotaging the images "
@@ -92,13 +90,12 @@ msgid ""
 "(**Blur**, **Noise**, **Exposure**, and **Compression**), or using a **deep "
 "learning neural network engine**."
 msgstr ""
-"Kvalitetens **poäng** för att fastställa egenskapen **Urvalsbeteckning** kan "
-"utvärderas på två sätt: med fyra grundläggande faktorer som saboterar "
-"bilderna (**Suddighet**, **Brus**, **Exponering**, och **Komprimering**), "
-"eller med ett **neuralt nätverksgränssnitt med djupinlärning**."
+"Kvalitetens **poäng** för att fastställa egenskapen **Urvalsbeteckning** kan u"
+"tvärderas på ett av två sätt: med fyra grundläggande faktorer för varje bild ("
+"**Suddighet**, **Brus**, **Exponering**, och **Komprimering**), eller med ett "
+"**neuralt nätverksgränssnitt med djupinlärning**."
 
 #: ../../maintenance_tools/maintenance_quality.rst:34
-#, fuzzy
 #| msgid ""
 #| "The first one helps to determine whether images are distorted by the "
 #| "basic factors, however it demands some drawbacks as fine-tuning from the "
@@ -109,12 +106,11 @@ msgid ""
 "the user and it does not include any assessment of the aesthetic value of "
 "the image."
 msgstr ""
-"Det första hjälper till att avgöra om bilder förvrängs av de grundläggande "
-"faktorerna, men det har vissa nackdelar som finjustering från användarens "
-"sida och det kan inte fungera i samband med estetisk bildbehandling."
+"Det första hjälper till att avgöra om de fyra grundläggande faktorerna har äve"
+"ntyrat bildkvalitet, men utdata beror dock på finjustering av användaren och d"
+"et kan inkluderar inte någon bedömning av bildens estetiska värde."
 
 #: ../../maintenance_tools/maintenance_quality.rst:36
-#, fuzzy
 #| msgid ""
 #| "The second one uses an artificial intelligence approach based on `this "
 #| "model <https://expertphotography.com/aesthetic-photography/>`_ to predict "
@@ -127,14 +123,13 @@ msgid ""
 "require hyper-parameter settings, which makes this approach far easier to "
 "use."
 msgstr ""
-"Det andra använder ett tillvägagångssätt med artificiell intelligens baserad "
-"på `den här modellen <https://expertphotography.com/aesthetic-photography/"
-">`_ för att förutsäga poängen. Eftersom djupinlärning är en helhetslösning "
-"kräver det inga överordnade parameterinställningar och gör funktionen "
-"enklare att använda."
+"Den andra tillvägagångssättet använder ett artificiell intelligensgränssnitt b"
+"aserad på `den här modellen <https://expertphotography.com/aesthetic-photograp"
+"hy/>`_ för att förutsäga en estetisk poäng. Eftersom djupinlärning är en helhe"
+"tslösning krävs inga överordnade parameterinställningar, vilket gör tillvägagå"
+"ngssättet enklare att använda."
 
 #: ../../maintenance_tools/maintenance_quality.rst:40
-#, fuzzy
 #| msgid ""
 #| "Since it is a time consuming process it's a good idea to check Work on "
 #| "all processor cores and restrict the job to certain albums or tags."
@@ -143,11 +138,11 @@ msgid ""
 "to check Work on all processor cores and restrict the job to certain albums "
 "or tags."
 msgstr ""
-"Eftersom det är en tidskrävande process är det en bra idé att markera Använd "
-"alla processorkärnor och begränsa jobbet till vissa album eller etiketter."
+"Eftersom kvalitetsbedömning kan vara en tidskrävande process är det en bra idé"
+" att markera Använd alla processorkärnor och begränsa jobbet till vissa album "
+"eller etiketter."
 
 #: ../../maintenance_tools/maintenance_quality.rst:42
-#, fuzzy
 #| msgid ""
 #| "All the **Image Quality Sorter** settings is described in :ref:`the "
 #| "dedicated section <imgqsort_settings>` from **Setup Application** section."
@@ -155,11 +150,10 @@ msgid ""
 "All the **Image Quality Sorter** settings are described in :ref:`this "
 "section <imgqsort_settings>` of the manual."
 msgstr ""
-"Alla inställningar för **Bildkvalitetssortering** beskrivs i :ref:`det "
-"specifika delen <imgqsort_settings>` av avsnittet **Ställa in programmet**."
+"Alla inställningar av **Bildkvalitetssortering** beskrivs i :ref:`det här avsn"
+"ittet <imgqsort_settings>` av handboken."
 
 #: ../../maintenance_tools/maintenance_quality.rst:44
-#, fuzzy
 #| msgid ""
 #| "The **Scan Mode** settings allows to configure how the database "
 #| "information for the items from the selected collection will be processed. "
@@ -173,14 +167,13 @@ msgid ""
 "only** will be faster to process just items that have not previously been "
 "assigned **Pick Labels**."
 msgstr ""
-"Inställningen av **Sökmetod** gör det möjligt att anpassa hur "
-"databasinformationen för objekten från den valda samlingen behandlas. "
-"**Rensa allt och sök igen** återställer all data och söker efter objekt från "
-"början, **Sök bara ej tilldelade** gör det snabbare att behandla "
-"oregistrerade objekt med **Urvalsbeteckningar**."
+"Inställningarna av **Sökmetod** ställer in hur databasinformation för objekten"
+" för objekten från den valda samlingen behandlas. **Rensa allt och sök igen** "
+"återställer all data och söker efter objekt från början, **Sök bara ej tilldel"
+"ade** är snabbare och behandlar bara objekt som inte tidigare har tilldelats *"
+"*Urvalsbeteckningar**."
 
 #: ../../maintenance_tools/maintenance_quality.rst:46
-#, fuzzy
 #| msgid ""
 #| "While the image quality sorting process is under progress, notification "
 #| "on the bottom right of main windows will be visible to indicate the "
@@ -189,9 +182,8 @@ msgid ""
 "While the image quality sorting process is underway, a progress indicator is "
 "displayed in the bottom right corner of the main window."
 msgstr ""
-"Medan processen för bildkvalitetssortering pågår, är meddelanden längst ner "
-"till höger i huvudfönstret synliga för att indikera antal objekt som redan "
-"är klara."
+"Medan processen för bildkvalitetssortering pågår, visas en förloppsindikator i"
+" huvudfönstrets nedre högra hörn."
 
 #: ../../maintenance_tools/maintenance_quality.rst:52
 msgid "The digiKam Image Quality Sorter Process Running in the Background"
@@ -210,7 +202,6 @@ msgid "The digiKam Pick Labels from Left Sidebar"
 msgstr "Urvalsbeteckningar från vänster sidorad i digiKam"
 
 #: ../../maintenance_tools/maintenance_quality.rst:64
-#, fuzzy
 #| msgid ""
 #| "To run properly, the process needs the deep-learning model to download at "
 #| "the first run of digiKam. See :ref:`the Quick Start section "
@@ -220,9 +211,9 @@ msgid ""
 "can be downloaded at the first run of digiKam. See the :ref:`Quick Start "
 "<quick_start>` section of this manual for details."
 msgstr ""
-"För att kunna köras korrekt behöver djupinlärningsmodellen för processen "
-"laddas ner vid den första körningen av digiKam. Se :ref:`Avsnittet "
-"Snabbstart <quick_start>` för detaljerad information."
+"För att kunna köras korrekt behöver processen tillgång till djupinlärningsmode"
+"llen som kan laddas ner vid den första körningen av digiKam. Se avsnittet :ref"
+":`Snabbstart <quick_start>` i handboken för detaljerad information."
 
 #~ msgid "Image Quality Sorter"
 #~ msgstr "Bildkvalitetssortering"
