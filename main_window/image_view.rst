@@ -342,7 +342,11 @@ What can you do with a group? In terms of functions of digiKam you can perform a
 
     Operations to perform over grouped items are managed by the options in Settings/Miscellaneous/Grouping. See :ref:`this section <grouping_settings>` of the manual for details.
 
-There are multiple use cases for grouping items. One common use is to group JPG and RAW images together since many cameras allow for the recording of a single frame in both RAW and JPG formats. This is made easy by **Group Selected By Filename**. Applying **Group Selected By Filename** to 4 images: 1.JPG 1.RAW 2.JPG 2.RAW, will produce 2 groups (1.JPG+1.RAW) and (2.JPS+2.RAW).
+There are multiple use cases for grouping items. One common use is to group JPG and RAW images together since many cameras allow for the recording of a single frame in both RAW and JPG formats. This is made easy by **Group Selected By Filename**.
+
+.. tip::
+
+    Applying **Group Selected By Filename** to 4 images: **[1.JPG 1.RAW 2.JPG 2.RAW]**, will produce 2 groups **[1.JPG + 1.RAW]** and **[2.JPS + 2.RAW]**.
 
 You can also use grouping to group videos with associated still frames. In the screenshot above, exposure bracketed images are being grouped. One could do the same for archiving purposes with images used for a panorama.
 
