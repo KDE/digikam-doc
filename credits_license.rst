@@ -48,6 +48,7 @@ Documentation authors
 - 2024-2025
 
     `Rick Chapman <https://invent.kde.org/rickchapman>`_
+
     `Michael Miller <https://invent.kde.org/michmill>`_
 
 - 2023
@@ -106,7 +107,7 @@ Documentation authors
 
     `Elle Stone <https://ninedegreesbelow.com/about/about.html>`_
 
-    `Anne-Marie Mahfouf <https://behindkde.org/anne-marie-mahfouf>`_
+    `Anne-Marie Mahfouf <https://dot.kde.org/2001/05/21/people-behind-kde-anne-marie-mahfouf/>`_
 
 - 2003-2010
 
