@@ -19,11 +19,12 @@
 
     The digiKam Maintenance Options to Detect and Recognize Faces
 
-This process is also accessible in the **People** view via the **Scan collection for faces** button. However, here you can only set the **Faces data management** method. For more information about the **Faces Data Management** options see the :ref:`People View  <people_view>` section of this manual.
+This process is also accessible in the **People** view via the **Scan collection for faces** button. However, here you can only set the **scan type**. For more information about the **Faces Data Management** options see the :ref:`People View  <people_view>` section of this manual.
 
 .. figure:: images/maintenance_faces_scan.webp
     :alt:
     :align: center
+    :width: 300px
 
     The Scan Collection for Faces Button from People Left Sidebar
 
