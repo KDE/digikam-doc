@@ -298,13 +298,13 @@ Grouping items is a very useful way to organize Photographs and/or videos that a
 
     The digiKam Icon-View Grouped Items Options From Context Menu
 
-You can put the whole selection into one group using **Group Selected Here** or you can create more than one group determined by the Exif or Xmp time-stamps (seconds will be ignored) using **Group Selected by Time** or by file name using **Group Selected by Filename**.
+With the **Group Selected Here** option, you can put the whole selection into one group without constraints.
 
-.. note::
+The **Group Selected by Time** option allows you to create more than one group determined by the Exif or Xmp time-stamps (seconds will be ignored). Each group of items is created by reading the date for each item and looking if it's included in a range of plus or minus two seconds from the selection.
 
-    The latter option will put items with the same name but different file types into one group. This is particularly handy, as explained below, for grouping images that have been stored in both JPEG and RAW formats.
+The **Group Selected by Filename** option will put items with the same name but different file types into one group. This is particularly handy, as explained below, for grouping images that have been stored in both JPEG and RAW formats.
 
-The last option **Group Selected by Timelapse / Burst** put the whole selection into groups created with a minimum of 3 items when differences of Exif or Xmp time-stamps for each item do not exceed 1 second.
+The last option **Group Selected by Timelapse / Burst** put the whole selection into groups created with a minimum of three items when differences of Exif or Xmp time-stamps for each item do not exceed one second.
 
 .. figure:: images/mainwindow_grouped_items.webp
     :alt:
