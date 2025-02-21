@@ -24,7 +24,7 @@ Screenshots and screencasts
     Copyright 2022-2025 licensed under the terms of `Creative Commons License SA 4.0 unless stated otherwise <https://spdx.org/licenses/CC-BY-4.0.html>`_.
 
 Sphinx/ReStructuredText Contents
-    Copyright 2001-2023 licensed under the terms of the `GNU Free Documentation License 1.2+ <https://spdx.org/licenses/GFDL-1.2-or-later.html>`_.
+    Copyright 2001-2025 licensed under the terms of the `GNU Free Documentation License 1.2+ <https://spdx.org/licenses/GFDL-1.2-or-later.html>`_.
 
 Documentation authors
 ---------------------
