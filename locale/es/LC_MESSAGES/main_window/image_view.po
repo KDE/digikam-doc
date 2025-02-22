@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: docs_digikam_org_main_window___image_view\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 01:42+0000\n"
+"POT-Creation-Date: 2025-02-21 01:48+0000\n"
 "PO-Revision-Date: 2023-02-28 21:18+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -871,32 +871,44 @@ msgstr ""
 #: ../../main_window/image_view.rst:301
 msgid ""
 "You can put the whole selection into one group using **Group Selected Here** "
-"or you can create more than one group determined by time (seconds will be "
-"ignored) or by file name. Note that the latter will put items with the same "
-"name but different file types into one group. This is particularly handy, as "
-"explained below, for grouping images that have been stored in both JPEG and "
-"RAW formats."
+"or you can create more than one group determined by the Exif or Xmp time-"
+"stamps (seconds will be ignored) using **Group Selected by Time** or by file "
+"name using **Group Selected by Filename**."
+msgstr ""
+
+#: ../../main_window/image_view.rst:305
+msgid ""
+"The latter option will put items with the same name but different file types "
+"into one group. This is particularly handy, as explained below, for grouping "
+"images that have been stored in both JPEG and RAW formats."
 msgstr ""
 
 #: ../../main_window/image_view.rst:307
+msgid ""
+"The last option **Group Selected by Timelapse / Burst** put the whole "
+"selection into groups created with a minimum of 3 items when differences of "
+"Exif or Xmp time-stamps for each item do not exceed 1 second."
+msgstr ""
+
+#: ../../main_window/image_view.rst:313
 msgid "The digiKam Icon-View Grouped Mode From Icon-View"
 msgstr ""
 
-#: ../../main_window/image_view.rst:311
+#: ../../main_window/image_view.rst:317
 msgid ""
 "If you group files automatically based on filename, the smaller file size "
 "from the group is preferred as the leading item. The idea is that when "
 "previewing, faster loading of the image will allow for a quicker preview."
 msgstr ""
 
-#: ../../main_window/image_view.rst:313
+#: ../../main_window/image_view.rst:319
 msgid ""
 "If you group files manually from the icon-view, the selected item used to "
 "show the context menu that was used to group the files will be used as the "
 "leading item."
 msgstr ""
 
-#: ../../main_window/image_view.rst:315
+#: ../../main_window/image_view.rst:321
 msgid ""
 "The **Show/Hide Grouped Images** menu items control whether only the "
 "reference icon of the group (the first of the group according to the sorting "
@@ -905,14 +917,14 @@ msgid ""
 "indicator (folder symbol with number) on the reference icon."
 msgstr ""
 
-#: ../../main_window/image_view.rst:319
+#: ../../main_window/image_view.rst:325
 msgid ""
 "In Icon-View, you can turn on/off the frame over grouped item thumbnails "
 "with an option from :ref:`Settings/Miscellaneous/Appearance "
 "<appearance_settings>`."
 msgstr ""
 
-#: ../../main_window/image_view.rst:321
+#: ../../main_window/image_view.rst:327
 msgid ""
 "While the mouse pointer is hovering over a grouped item, a box will pop up "
 "stating **# grouped items. Group is closed/open.** where *#* indicates the "
@@ -920,7 +932,7 @@ msgid ""
 "Clicking on the indicator toggles between **open** and **closed**."
 msgstr ""
 
-#: ../../main_window/image_view.rst:323
+#: ../../main_window/image_view.rst:329
 msgid ""
 "Groups are indicated in the **Table Mode** of the Image Area using the "
 "standard approach for other lists and tables: a little triangle in front of "
@@ -928,11 +940,11 @@ msgid ""
 "grouped items."
 msgstr ""
 
-#: ../../main_window/image_view.rst:329
+#: ../../main_window/image_view.rst:335
 msgid "The digiKam Icon-View Grouped Mode From Table View"
 msgstr ""
 
-#: ../../main_window/image_view.rst:331
+#: ../../main_window/image_view.rst:337
 msgid ""
 "The last items in the **Group** context menu allows you to remove individual "
 "items from the group or to disband the whole group. The content of the menu "
@@ -940,7 +952,7 @@ msgid ""
 "grouped items, on a group, or on single items of a group."
 msgstr ""
 
-#: ../../main_window/image_view.rst:333
+#: ../../main_window/image_view.rst:339
 msgid ""
 "What can you do with a group? In terms of functions of digiKam you can "
 "perform a lot of operations like copy, delete, move, and rotate on the whole "
@@ -952,14 +964,14 @@ msgid ""
 "descriptions (see :ref:`Captions <captions_view>`). Give it a try."
 msgstr ""
 
-#: ../../main_window/image_view.rst:337
+#: ../../main_window/image_view.rst:343
 msgid ""
 "Operations to perform over grouped items are managed by the options in "
 "Settings/Miscellaneous/Grouping. See :ref:`this section <grouping_settings>` "
 "of the manual for details."
 msgstr ""
 
-#: ../../main_window/image_view.rst:339
+#: ../../main_window/image_view.rst:345
 msgid ""
 "There are multiple use cases for grouping items. One common use is to group "
 "JPG and RAW images together since many cameras allow for the recording of a "
@@ -969,14 +981,14 @@ msgid ""
 "RAW)."
 msgstr ""
 
-#: ../../main_window/image_view.rst:341
+#: ../../main_window/image_view.rst:347
 msgid ""
 "You can also use grouping to group videos with associated still frames. In "
 "the screenshot above, exposure bracketed images are being grouped. One could "
 "do the same for archiving purposes with images used for a panorama."
 msgstr ""
 
-#: ../../main_window/image_view.rst:343
+#: ../../main_window/image_view.rst:349
 msgid ""
 "If you have very specific requirements for documenting steps taken in "
 "editing, and the :ref:`Versions <versions_view>` function of digiKam cannot "
@@ -989,7 +1001,7 @@ msgid ""
 "is open*. Groups that span albums can be confusing, so use with care."
 msgstr ""
 
-#: ../../main_window/image_view.rst:347
+#: ../../main_window/image_view.rst:353
 msgid ""
 "Everything described in this Grouping section has nothing to do with **Group "
 "Images** in the **View** menu. That function doesn't form permanent groups "

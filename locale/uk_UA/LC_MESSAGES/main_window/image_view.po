@@ -1,13 +1,13 @@
 # Copyright (C) licensed under the  <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License SA 4.0</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 01:42+0000\n"
-"PO-Revision-Date: 2024-12-06 23:04+0200\n"
+"POT-Creation-Date: 2025-02-21 01:48+0000\n"
+"PO-Revision-Date: 2025-02-21 13:40+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -446,7 +446,8 @@ msgstr ""
 "розпочинатиметься з початку для кожного з суфіксів назв файлів окремо."
 
 #: ../../main_window/image_view.rst:138
-msgid "**Folder aware numbering**: will start a new sequence for every folder."
+msgid ""
+"**Folder aware numbering**: will start a new sequence for every folder."
 msgstr ""
 "**Нумерація з врахуванням теки**: послідовність нумерації розпочинатиметься "
 "з початку для кожної теки окремо."
@@ -1113,26 +1114,58 @@ msgstr ""
 "digiKam"
 
 #: ../../main_window/image_view.rst:301
+#| msgid ""
+#| "You can put the whole selection into one group using **Group Selected "
+#| "Here** or you can create more than one group determined by time (seconds "
+#| "will be ignored) or by file name. Note that the latter will put items "
+#| "with the same name but different file types into one group. This is "
+#| "particularly handy, as explained below, for grouping images that have "
+#| "been stored in both JPEG and RAW formats."
 msgid ""
 "You can put the whole selection into one group using **Group Selected Here** "
-"or you can create more than one group determined by time (seconds will be "
-"ignored) or by file name. Note that the latter will put items with the same "
-"name but different file types into one group. This is particularly handy, as "
-"explained below, for grouping images that have been stored in both JPEG and "
-"RAW formats."
+"or you can create more than one group determined by the Exif or Xmp time-"
+"stamps (seconds will be ignored) using **Group Selected by Time** or by file "
+"name using **Group Selected by Filename**."
 msgstr ""
 "Додати усі позначені запис до однієї групи можна за допомогою пункту "
 "**Згрупувати позначені тут**. Ви також можете створити декілька груп за "
-"часом (секунди до уваги не братимуться) або назвою файлів. Зауважте, що у "
-"випадку групування за назвою до груп буде об’єднано файли з однаковими "
+"часом з Exif або Xmp (секунди до уваги не братимуться) за допомогою пункту"
+" **Групувати позначене за часом** або назвою файлів за допомогою пункту"
+" **Групувати позначене за назвою файла**."
+
+#: ../../main_window/image_view.rst:305
+#| msgid ""
+#| "You can put the whole selection into one group using **Group Selected "
+#| "Here** or you can create more than one group determined by time (seconds "
+#| "will be ignored) or by file name. Note that the latter will put items "
+#| "with the same name but different file types into one group. This is "
+#| "particularly handy, as explained below, for grouping images that have "
+#| "been stored in both JPEG and RAW formats."
+msgid ""
+"The latter option will put items with the same name but different file types "
+"into one group. This is particularly handy, as explained below, for grouping "
+"images that have been stored in both JPEG and RAW formats."
+msgstr ""
+"В останньому варіанті до груп буде об’єднано файли з однаковими "
 "назвами, але різними типами. Як це пояснено нижче, це зокрема зручно для "
 "групування зображень, які було збережено одночасно у форматах JPEG і RAW."
 
 #: ../../main_window/image_view.rst:307
+msgid ""
+"The last option **Group Selected by Timelapse / Burst** put the whole "
+"selection into groups created with a minimum of 3 items when differences of "
+"Exif or Xmp time-stamps for each item do not exceed 1 second."
+msgstr ""
+"За допомогою останнього пункту, **Згрупувати позначені за проміжком часу або"
+" зйомками** можна розташувати усе позначене у групі, створені з мінімум"
+" трьох записів, якщо відмінності у часових позначках"
+"Exif або Xmp для кожного з записів не перевищують 1 секунди."
+
+#: ../../main_window/image_view.rst:313
 msgid "The digiKam Icon-View Grouped Mode From Icon-View"
 msgstr "Режим згрупованих піктограм на панелі перегляду піктограм digiKam"
 
-#: ../../main_window/image_view.rst:311
+#: ../../main_window/image_view.rst:317
 msgid ""
 "If you group files automatically based on filename, the smaller file size "
 "from the group is preferred as the leading item. The idea is that when "
@@ -1143,7 +1176,7 @@ msgstr ""
 "час попереднього перегляду малі файли завантажуватимуться швидше, а отже, "
 "користувач швидше отримуватиме потрібні дані."
 
-#: ../../main_window/image_view.rst:313
+#: ../../main_window/image_view.rst:319
 msgid ""
 "If you group files manually from the icon-view, the selected item used to "
 "show the context menu that was used to group the files will be used as the "
@@ -1153,7 +1186,7 @@ msgstr ""
 "показує контекстне меню, а як початковий запис буде використано згруповані "
 "файли."
 
-#: ../../main_window/image_view.rst:315
+#: ../../main_window/image_view.rst:321
 msgid ""
 "The **Show/Hide Grouped Images** menu items control whether only the "
 "reference icon of the group (the first of the group according to the sorting "
@@ -1167,7 +1200,7 @@ msgstr ""
 "обох цих можливостей можна отримати за допомогою невеличкого індикатора "
 "групування (символу теки із кількістю записів) на еталонній піктограмі."
 
-#: ../../main_window/image_view.rst:319
+#: ../../main_window/image_view.rst:325
 msgid ""
 "In Icon-View, you can turn on/off the frame over grouped item thumbnails "
 "with an option from :ref:`Settings/Miscellaneous/Appearance "
@@ -1177,7 +1210,7 @@ msgstr ""
 "згрупованих мініатюр записів за допомогою сторінки параметрів :ref:"
 "`Параметри/Різне/Вигляд <appearance_settings>`."
 
-#: ../../main_window/image_view.rst:321
+#: ../../main_window/image_view.rst:327
 msgid ""
 "While the mouse pointer is hovering over a grouped item, a box will pop up "
 "stating **# grouped items. Group is closed/open.** where *#* indicates the "
@@ -1190,7 +1223,7 @@ msgstr ""
 "якщо групу закрито. Клацання на індикаторі перемикатиме групу між "
 "**відкритою** і **закритою**."
 
-#: ../../main_window/image_view.rst:323
+#: ../../main_window/image_view.rst:329
 msgid ""
 "Groups are indicated in the **Table Mode** of the Image Area using the "
 "standard approach for other lists and tables: a little triangle in front of "
@@ -1202,12 +1235,12 @@ msgstr ""
 "трикутника перед еталонним записом. Натискання цього трикутника призведе до "
 "розгортання або згортання списку згрупованих записів."
 
-#: ../../main_window/image_view.rst:329
+#: ../../main_window/image_view.rst:335
 msgid "The digiKam Icon-View Grouped Mode From Table View"
 msgstr ""
 "Режим групування на панелі перегляду піктограм digiKam у форматі таблиці"
 
-#: ../../main_window/image_view.rst:331
+#: ../../main_window/image_view.rst:337
 msgid ""
 "The last items in the **Group** context menu allows you to remove individual "
 "items from the group or to disband the whole group. The content of the menu "
@@ -1219,7 +1252,7 @@ msgstr ""
 "залежатиме від того, використовуватимете ви його для позначених записів, які "
 "ще не належать до жодної групи, чи для окремих записів у групі."
 
-#: ../../main_window/image_view.rst:333
+#: ../../main_window/image_view.rst:339
 msgid ""
 "What can you do with a group? In terms of functions of digiKam you can "
 "perform a lot of operations like copy, delete, move, and rotate on the whole "
@@ -1240,7 +1273,7 @@ msgstr ""
 "позначки (див. далі у цьому підручнику) та створювати описи (див. :ref:"
 "`Підписи <captions_view>`). Просто спробуйте."
 
-#: ../../main_window/image_view.rst:337
+#: ../../main_window/image_view.rst:343
 msgid ""
 "Operations to perform over grouped items are managed by the options in "
 "Settings/Miscellaneous/Grouping. See :ref:`this section <grouping_settings>` "
@@ -1250,7 +1283,7 @@ msgstr ""
 "сторінки Параметри/Різне/Групування. Докладніший опис можна знайти у :ref:"
 "`цьому розділі <grouping_settings>` підручника."
 
-#: ../../main_window/image_view.rst:339
+#: ../../main_window/image_view.rst:345
 msgid ""
 "There are multiple use cases for grouping items. One common use is to group "
 "JPG and RAW images together since many cameras allow for the recording of a "
@@ -1268,7 +1301,7 @@ msgstr ""
 "зображень: 1.JPG 1.RAW 2.JPG 2.RAW, призведе до створення 2 груп (1.JPG+1."
 "RAW) і (2.JPS+2.RAW)."
 
-#: ../../main_window/image_view.rst:341
+#: ../../main_window/image_view.rst:347
 msgid ""
 "You can also use grouping to group videos with associated still frames. In "
 "the screenshot above, exposure bracketed images are being grouped. One could "
@@ -1279,7 +1312,7 @@ msgstr ""
 "Також можна згрупувати зображення з метою архівування зображень, "
 "використаних для створення панорами."
 
-#: ../../main_window/image_view.rst:343
+#: ../../main_window/image_view.rst:349
 msgid ""
 "If you have very specific requirements for documenting steps taken in "
 "editing, and the :ref:`Versions <versions_view>` function of digiKam cannot "
@@ -1302,7 +1335,7 @@ msgstr ""
 "заплутати вас, тому користуйтеся групуванням записів із різних альбомів з "
 "осторогою."
 
-#: ../../main_window/image_view.rst:347
+#: ../../main_window/image_view.rst:353
 msgid ""
 "Everything described in this Grouping section has nothing to do with **Group "
 "Images** in the **View** menu. That function doesn't form permanent groups "

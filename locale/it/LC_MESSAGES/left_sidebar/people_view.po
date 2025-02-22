@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.5.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 01:42+0000\n"
+"POT-Creation-Date: 2025-02-21 01:48+0000\n"
 "PO-Revision-Date: 2024-12-14 19:25+0100\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -88,11 +88,19 @@ msgid "Face Detection"
 msgstr "Rilevamento facciale"
 
 #: ../../left_sidebar/people_view.rst:32
+#, fuzzy
+#| msgid ""
+#| "The first step is to let digiKam locate all the photos containing faces, "
+#| "without yet identifying who they belong to. To begin, click on the "
+#| "**People** tab in the left sidebar. At the bottom, you’ll find a settings "
+#| "view with a drop-down menu where you can select from various options:"
 msgid ""
 "The first step is to let digiKam locate all the photos containing faces, "
 "without yet identifying who they belong to. To begin, click on the "
 "**People** tab in the left sidebar. At the bottom, you’ll find a settings "
-"view with a drop-down menu where you can select from various options:"
+"view. The settings view is divided into two tabs: **Search-in** and "
+"**Settings**. In the settings view, select the Settings tab to adjust the "
+"face detection and recognition settings."
 msgstr ""
 "Il primo passaggio è permettere a digiKam di individuare tutte le fotografie "
 "che contengono volti, senza identificare ancora a chi appartengono. Per "
@@ -101,18 +109,27 @@ msgstr ""
 "cui è possibile selezionare da varie opzioni:"
 
 #: ../../left_sidebar/people_view.rst:34
+#, fuzzy
+#| msgid ""
+#| "**Skip Images Already Scanned**: Select this option for your first scan, "
+#| "or if you want to scan new images."
 msgid ""
-"**Skip Images Already Scanned**: Select this option for your first scan, or "
-"if you want to scan new images."
+"**Scan new images**: Select this option for your first scan, or if you want "
+"to scan recently added images that have not been scanned before."
 msgstr ""
 "**Salta le immagini già analizzate**: seleziona questa opzione per la tua "
 "prima analisi, o se vuoi analizzarne di nuove."
 
 #: ../../left_sidebar/people_view.rst:36
+#, fuzzy
+#| msgid ""
+#| "**Scan Again And Merge Results**: Select this option when you have "
+#| "changed settings. This will re-scan all images selected in the **Search "
+#| "in** tab, which can be time-consuming."
 msgid ""
-"**Scan Again And Merge Results**: Select this option when you have changed "
-"settings. This will re-scan all images selected in the **Search in** tab, "
-"which can be time-consuming."
+"**Scan all images**: Select this option when you have changed settings. This "
+"will re-scan all images selected in the **Search in** tab, which can be time-"
+"consuming."
 msgstr ""
 "**Rianalizza e unisci i risultati**: seleziona questa opzione quando hai "
 "cambiato le impostazioni. Quest'azione rianalizzerà tutte le immagini "
@@ -120,50 +137,40 @@ msgstr ""
 
 #: ../../left_sidebar/people_view.rst:38
 msgid ""
-"**Clear Unconfirmed Results And Rescan**: Select this option when you have "
-"changed settings and want to delete all unnamed faces from the database. "
-"This will re-scan all images selected in the **Search in** tab, which can be "
-"time-consuming."
+"**Recognize faces only**: Select this option if you have already scanned "
+"your images and want to recognize faces in the images that have already been "
+"detected."
 msgstr ""
-"**Pulisci i risultati non confermati e rianalizza**: seleziona questa "
-"opzione quando hai cambiato le impostazioni e vuoi eliminare tutti i volti "
-"senza nome dalla banca dati. Questa azione rianalizzerà tutte le immagini "
-"selezionate nella scheda **Ricerca in**, e potrà risultare piuttosto lunga."
 
-#: ../../left_sidebar/people_view.rst:44
+#: ../../left_sidebar/people_view.rst:45
 msgid "The digiKam Face Management Workflow View"
 msgstr "La vista del flusso di lavoro di gestione dei volti di digiKam"
 
-#: ../../left_sidebar/people_view.rst:46
+#: ../../left_sidebar/people_view.rst:47
 msgid ""
-"The first option is the default for normal operation. Use it for your "
-"initial face detection scan or when you add new images to your library. The "
-"second and third options should be used when you change settings that affect "
-"the face detection results. These options do not affect the process of "
-"**recognizing** faces."
+"For normal operation, use the first option, which is set as the default. "
+"This is ideal for your initial face scan or when adding new images to your "
+"library. The second and third options should be utilized when you modify "
+"settings that impact face results. Regardless of the chosen option, the "
+"system will attempt to recognize faces.  The **Search-in** tab allows you to "
+"limit the scan to specific albums or tags. See the :ref:`Search-in "
+"<search_in_tab>` section for more information. After selecting your options, "
+"click **Scan collection for faces**."
 msgstr ""
-"La prima opzione è quella predefinita per le operazioni normali. Usala per "
-"il rilevamento facciale iniziale o quando aggiungi nuove immagini alla tua "
-"libreria. La seconda e la terza opzione devono essere usate quando cambi le "
-"impostazioni che influenzano i risultati del rilevamento facciale. Queste "
-"opzioni non influenzano il processo di **riconoscimento** dei volti."
 
-#: ../../left_sidebar/people_view.rst:48
+#: ../../left_sidebar/people_view.rst:49
+#, fuzzy
+#| msgid ""
+#| "After carefully selecting your options, click **Scan collection for "
+#| "faces**. Depending on the scope of your selection, it may take a little "
+#| "while for the results to appear in the Image Area. In the Tags list on "
+#| "the Left Sidebar, you’ll see the **People** branch of your tag tree. To "
+#| "view the entire set of identified faces, ensure the topmost tag "
+#| "**People** is selected. You’ll also notice a new virtual tag called "
+#| "**Unknown**, which includes all images where faces have been detected but "
+#| "not yet assigned to a person. If this is your first scan, you’ll find the "
+#| "entire set of identified faces here as well."
 msgid ""
-"For this task, make sure to select **Detect faces**. Since face detection is "
-"time-consuming, it’s better to limit the scan instead of scanning right "
-"away. In **Search-in**, you can limit the scan to specific albums or tags. "
-"See the :ref:`Search-in <search_in_tab>` section for more information."
-msgstr ""
-"Per questa operazione, accertati di selezionare **Rileva i volti**. Dato che "
-"il rilevamento facciale occupa molto tempo, è meglio limitare l'analisi "
-"piuttosto che analizzare subito. Nella scheda **Ricerca in** puoi limitare "
-"l'analisi ad album o tag specifici. Vedi la sezione :ref:`Ricerca in "
-"<search_in_tab>` per ulteriori informazioni."
-
-#: ../../left_sidebar/people_view.rst:50
-msgid ""
-"After carefully selecting your options, click **Scan collection for faces**. "
 "Depending on the scope of your selection, it may take a little while for the "
 "results to appear in the Image Area. In the Tags list on the Left Sidebar, "
 "you’ll see the **People** branch of your tag tree. To view the entire set of "
@@ -183,7 +190,7 @@ msgstr ""
 "riconosciuti ma non ancora collegati a una persona. Se questa è la tua prima "
 "analisi, troverai l'intero gruppo di volti identificati anche qui."
 
-#: ../../left_sidebar/people_view.rst:57
+#: ../../left_sidebar/people_view.rst:56
 msgid ""
 "Screencast of digiKam Faces Detection Process Running Over Collections and "
 "Populating the Database"
@@ -191,7 +198,7 @@ msgstr ""
 "Registrazione del processo di rilevamento facciale di digiKam in esecuzione "
 "sulle raccolte e che popola la banca dati"
 
-#: ../../left_sidebar/people_view.rst:59
+#: ../../left_sidebar/people_view.rst:58
 msgid ""
 "Note that the thumbnails presented here do not show the whole image. They "
 "show the area of the image where the face detection model added a **Face "
@@ -210,7 +217,7 @@ msgstr ""
 "presente più di un tag volto sull'immagine, essa sarà rappresentata da più "
 "di una miniatura."
 
-#: ../../left_sidebar/people_view.rst:63
+#: ../../left_sidebar/people_view.rst:62
 msgid ""
 "The list of detection samples below comes from a huge collection of photos "
 "scanned by digiKam."
@@ -218,111 +225,113 @@ msgstr ""
 "L'elenco dei campioni di rilevamento sotto riportato proviene da una grande "
 "raccolta di foto analizzate da digiKam."
 
-#: ../../left_sidebar/people_view.rst:66
+#: ../../left_sidebar/people_view.rst:65
 msgid "ID"
 msgstr "ID"
 
-#: ../../left_sidebar/people_view.rst:66
+#: ../../left_sidebar/people_view.rst:65
 msgid "Face Detected Samples"
 msgstr "Campioni di volti rilevati"
 
-#: ../../left_sidebar/people_view.rst:66
+#: ../../left_sidebar/people_view.rst:65
 msgid "Comments"
 msgstr "Commenti"
 
-#: ../../left_sidebar/people_view.rst:68
+#: ../../left_sidebar/people_view.rst:67
 msgid "01"
 msgstr "01"
 
-#: ../../left_sidebar/people_view.rst:68
+#: ../../left_sidebar/people_view.rst:67
 msgid "An under-exposed face"
 msgstr "Viso sottoesposto"
 
-#: ../../left_sidebar/people_view.rst:73
+#: ../../left_sidebar/people_view.rst:72
 msgid "02"
 msgstr "02"
 
-#: ../../left_sidebar/people_view.rst:73 ../../left_sidebar/people_view.rst:118
+#: ../../left_sidebar/people_view.rst:72 ../../left_sidebar/people_view.rst:117
 msgid "An animal face"
 msgstr "Volto di un animale"
 
-#: ../../left_sidebar/people_view.rst:78
+#: ../../left_sidebar/people_view.rst:77
 msgid "03"
 msgstr "03"
 
-#: ../../left_sidebar/people_view.rst:78
+#: ../../left_sidebar/people_view.rst:77
 msgid "A blurry child face"
 msgstr "Volto sfuocato di un bambino"
 
-#: ../../left_sidebar/people_view.rst:83
+#: ../../left_sidebar/people_view.rst:82
 msgid "04"
 msgstr "04"
 
-#: ../../left_sidebar/people_view.rst:83
+#: ../../left_sidebar/people_view.rst:82
 msgid "A non-human face"
 msgstr "Volto non umano"
 
-#: ../../left_sidebar/people_view.rst:88
+#: ../../left_sidebar/people_view.rst:87
 msgid "05"
 msgstr "05"
 
-#: ../../left_sidebar/people_view.rst:88
+#: ../../left_sidebar/people_view.rst:87
 msgid "A very blurry and partial face"
 msgstr "Volto parziale molto sfuocato"
 
-#: ../../left_sidebar/people_view.rst:93
+#: ../../left_sidebar/people_view.rst:92
 msgid "06"
 msgstr "06"
 
-#: ../../left_sidebar/people_view.rst:93
+#: ../../left_sidebar/people_view.rst:92
 msgid "A rotated face"
 msgstr "Viso ruotato"
 
-#: ../../left_sidebar/people_view.rst:98
+#: ../../left_sidebar/people_view.rst:97
 msgid "07"
 msgstr "07"
 
-#: ../../left_sidebar/people_view.rst:98
+#: ../../left_sidebar/people_view.rst:97
 msgid "A face covered with a hood"
 msgstr "Viso coperto da un cappuccio"
 
-#: ../../left_sidebar/people_view.rst:103
+#: ../../left_sidebar/people_view.rst:102
 msgid "08"
 msgstr "08"
 
-#: ../../left_sidebar/people_view.rst:103
+#: ../../left_sidebar/people_view.rst:102
 msgid "A face in profile"
 msgstr "Volto di profilo"
 
-#: ../../left_sidebar/people_view.rst:108
+#: ../../left_sidebar/people_view.rst:107
 msgid "09"
 msgstr "09"
 
-#: ../../left_sidebar/people_view.rst:108
+#: ../../left_sidebar/people_view.rst:107
 msgid "An under-exposed and partial face"
 msgstr "Volto parziale e sottoesposto"
 
-#: ../../left_sidebar/people_view.rst:113
+#: ../../left_sidebar/people_view.rst:112
 msgid "10"
 msgstr "10"
 
-#: ../../left_sidebar/people_view.rst:113
+#: ../../left_sidebar/people_view.rst:112
 msgid "A false positive detection"
 msgstr "Rilevamento di un falso positivo"
 
-#: ../../left_sidebar/people_view.rst:118
+#: ../../left_sidebar/people_view.rst:117
 msgid "11"
 msgstr "11"
 
-#: ../../left_sidebar/people_view.rst:123
+#: ../../left_sidebar/people_view.rst:122
 msgid "12"
 msgstr "12"
 
-#: ../../left_sidebar/people_view.rst:123
-msgid "A face covered by a racket"
+#: ../../left_sidebar/people_view.rst:122
+#, fuzzy
+#| msgid "A face covered by a racket"
+msgid "A face covered by a raquet"
 msgstr "Viso coperto da una racchetta"
 
-#: ../../left_sidebar/people_view.rst:129
+#: ../../left_sidebar/people_view.rst:128
 msgid ""
 "Screenshots **02** and **11** were selected to highlight an important "
 "feature: the algorithm can detect animal faces. This is not a false "
@@ -334,7 +343,7 @@ msgstr ""
 "degli animali. Questo non è un falso positivo, a meno che tu non voglia "
 "vedere nella tua raccolta, in modo specifico, solamente volti umani."
 
-#: ../../left_sidebar/people_view.rst:131
+#: ../../left_sidebar/people_view.rst:130
 msgid ""
 "Screenshot **10** is an incorrect (false positive) result, demonstrating "
 "that the algorithm sometimes identify details in an image that resemble a "
@@ -349,7 +358,7 @@ msgstr ""
 "e se quel tag volto è l'unico presente, la fotografia sparirà dai risultati "
 "della ricerca."
 
-#: ../../left_sidebar/people_view.rst:133
+#: ../../left_sidebar/people_view.rst:132
 msgid ""
 "Screenshots **01**, **03**, **05**, **08**, **09**, and **12** may be "
 "considered non-faces or can be filtered out by increasing the **detection "
@@ -364,7 +373,7 @@ msgstr ""
 "dimostrano l'abilità dell'algoritmo di rilevare i volti in condizioni "
 "impegnative."
 
-#: ../../left_sidebar/people_view.rst:135
+#: ../../left_sidebar/people_view.rst:134
 msgid ""
 "Screenshot **04** shows the model can detect other non-human faces in "
 "images, including statues, paintings, and pictures within images."
@@ -372,28 +381,41 @@ msgstr ""
 "La schermata **04** mostra che il modello è in grado di rilevare volti non "
 "umani nelle immagini, incluse statue, dipinti e foto all'interno di immagini."
 
-#: ../../left_sidebar/people_view.rst:137
+#: ../../left_sidebar/people_view.rst:136
+#, fuzzy
+#| msgid ""
+#| "After the **detection** scan is complete, you should see a new tag "
+#| "labeled **Unknown** under People in the People view. You must manually "
+#| "tag some of these faces before proceeding with **face recognition**."
 msgid ""
-"After the **detection** scan is complete, you should see a new tag labeled "
-"**Unknown** under People in the People view. You must manually tag some of "
-"these faces before proceeding with **face recognition**."
+"Once the scan is finished, a new tag labeled **Unknown** should appear under "
+"People in the People view. You will need to manually tag some of these faces "
+"before digiKam can begin automatically matching other unknown faces."
 msgstr ""
 "Dopo completata l'analisi di **rilevamento**, dovresti vedere un nuovo tag "
 "con etichetta **Sconosciuto** sotto Persone, nella vista Persone. Devi "
 "aggiungere manualmente dei tag a questi volti prima di procedere con il "
 "**riconoscimento facciale**."
 
-#: ../../left_sidebar/people_view.rst:142
+#: ../../left_sidebar/people_view.rst:141
 msgid "Face Tagging"
 msgstr "Attribuzione dei tag volto"
 
-#: ../../left_sidebar/people_view.rst:144
+#: ../../left_sidebar/people_view.rst:143
+#, fuzzy
+#| msgid ""
+#| "Assigning People tags to face tags is a crucial step for Face "
+#| "Recognition. digiKam can only recognize faces if it has reference faces "
+#| "for comparison. It’s your job to train it by identifying faces, such as "
+#| "labeling them as Lara, Juan, Peter, etc. Usually, you only need to "
+#| "manually tag one face for a person for the recognition process to "
+#| "identify additional faces."
 msgid ""
-"Assigning People tags to face tags is a crucial step for Face Recognition. "
-"digiKam can only recognize faces if it has reference faces for comparison. "
-"It’s your job to train it by identifying faces, such as labeling them as "
-"Lara, Juan, Peter, etc. Usually, you only need to manually tag one face for "
-"a person for the recognition process to identify additional faces."
+"Assigning names to face tags is a crucial step for Face Recognition. digiKam "
+"can only recognize faces if it has reference faces for comparison. It’s your "
+"job to train it by identifying faces, such as labeling them as Lara, Juan, "
+"Peter, etc. Usually, you only need to manually tag one face for a person for "
+"the recognition process to identify additional faces."
 msgstr ""
 "Assegnare tag di persone ai tag volto è un passaggio cruciale per il "
 "Riconoscimento facciale. digiKam può riconoscere i volti soltanto se "
@@ -403,19 +425,27 @@ msgstr ""
 "volti, in genere basta soltanto aggiungere manualmente un tag al volto di "
 "una persona."
 
-#: ../../left_sidebar/people_view.rst:146
+#: ../../left_sidebar/people_view.rst:145
+#, fuzzy
+#| msgid ""
+#| "After performing a **detection** scan as described in the previous "
+#| "section, you select the **Unknown** tag on the Left Sidebar."
 msgid ""
-"After performing a **detection** scan as described in the previous section, "
-"you select the **Unknown** tag on the Left Sidebar."
+"After performing a scan as described in the previous section, you select the "
+"**Unknown** tag on the Left Sidebar."
 msgstr ""
 "Dopo aver eseguito una scansione di **rilevamento** come descritta nella "
 "sezione precedente, seleziona il tag **Sconosciuto** nella barra laterale "
 "sinistra."
 
 #: ../../left_sidebar/people_view.rst:152
+#, fuzzy
+#| msgid ""
+#| "The digiKam Face Management Icon-View with multiple selections of similar "
+#| "faces to tag with the **Agnès** name."
 msgid ""
-"The digiKam Face Management Icon-View with multiple selections of similar "
-"faces to tag with the **Agnès** name."
+"The digiKam Face Management Icon-View allows for multiple selections of "
+"similar faces to be tagged with the name **Adam**."
 msgstr ""
 "La vista a icone di gestione dei volti di digiKam con selezioni multiple di "
 "volti simili sul tag con il nome **Agnès**."
@@ -434,15 +464,19 @@ msgstr ""
 "lo stesso tag a più volti allo stesso tempo. **Conferma** salva il nome "
 "nella banca dati e sposta la miniatura dal tag **Sconosciuto** al tag volto."
 
-#: ../../left_sidebar/people_view.rst:160
+#: ../../left_sidebar/people_view.rst:161
+#, fuzzy
+#| msgid ""
+#| "The digiKam Face Management Icon-View with a Confirmed Set of 12 Faces "
+#| "Using **Agnès** Name"
 msgid ""
-"The digiKam Face Management Icon-View with a Confirmed Set of 12 Faces Using "
-"**Agnès** Name"
+"The digiKam Face Management Icon-View displaying a confirmed set of 6 faces "
+"tagged with the name **Adam**."
 msgstr ""
 "La vista a icone di gestione dei volti di digiKam con un gruppo confermato "
 "di 12 volti che utilizzano il nome **Agnès**"
 
-#: ../../left_sidebar/people_view.rst:164
+#: ../../left_sidebar/people_view.rst:165
 msgid ""
 "Using the context menu item **Assign Tag** instead of the procedure "
 "described above will not assign a face tag. Instead, it will assign a "
@@ -452,7 +486,7 @@ msgstr ""
 "descritta sopra, non assegnerai un tag volto. Assegnerai invece un tag "
 "regolare all'intera immagine."
 
-#: ../../left_sidebar/people_view.rst:166
+#: ../../left_sidebar/people_view.rst:167
 msgid ""
 "Once a face tag is confirmed, digiKam only shows the name without the "
 "buttons to remove, edit, or confirm. If you need to edit or remove a "
@@ -464,7 +498,7 @@ msgstr ""
 "modificare o eliminare un tag volto confermato, basta fare doppio clic sul "
 "nome e i pulsanti verranno nuovamente visualizzati."
 
-#: ../../left_sidebar/people_view.rst:168
+#: ../../left_sidebar/people_view.rst:169
 msgid ""
 "For more information about automatic face tagging using digiKam's face "
 "recognition engine see :ref:`the next section <face_recognition>` of this "
@@ -474,11 +508,11 @@ msgstr ""
 "tramite il motore di riconoscimento facciale di digiKam, vedi la :ref:"
 "`sezione successiva <face_recognition>` di questo manuale."
 
-#: ../../left_sidebar/people_view.rst:170
+#: ../../left_sidebar/people_view.rst:171
 msgid "You can manually tag people in different ways:"
 msgstr "Puoi attribuire manualmente tag alle persone in vari modi:"
 
-#: ../../left_sidebar/people_view.rst:172
+#: ../../left_sidebar/people_view.rst:173
 msgid ""
 "From the **Unknown** tab in the **People** view: hover on any **Unknown** "
 "face from the icon-view and use the text box to assign a name. This will "
@@ -490,11 +524,11 @@ msgstr ""
 "assegnargli un nome. Questo creerà un nuovo tag volto, nel caso di una "
 "persona il cui nome non sia già stato inserito."
 
-#: ../../left_sidebar/people_view.rst:178
+#: ../../left_sidebar/people_view.rst:180
 msgid "Screencast of Manual Face Tagging From Icon-View"
 msgstr "Schermata di attribuzione manuale dei tag volto dalla vista a icona"
 
-#: ../../left_sidebar/people_view.rst:180
+#: ../../left_sidebar/people_view.rst:182
 msgid ""
 "From Left Sidebar **People** tab: use drag and drop between the icon-view "
 "and the face-tags tree view. Select items labeled **Unknown** that you want "
@@ -508,12 +542,14 @@ msgstr ""
 "**Persone**. Si aprirà un menu a comparsa per confermare l'assegnazione del "
 "volto."
 
-#: ../../left_sidebar/people_view.rst:187
-msgid "Screencast of Manual Faces Assignment Using Drag And Drop"
+#: ../../left_sidebar/people_view.rst:189
+#, fuzzy
+#| msgid "Screencast of Manual Faces Assignment Using Drag And Drop"
+msgid "Screencast of Manual Face Assignment Using Drag And Drop"
 msgstr ""
 "Registrazione dell'assegnazione manuale dei volti tramite il trascinamento"
 
-#: ../../left_sidebar/people_view.rst:189
+#: ../../left_sidebar/people_view.rst:191
 msgid ""
 "From keyboard shortcut: you can assign a magic key to a face-tag and quickly "
 "use the keyboard to assign the face-tag name to selected items."
@@ -522,14 +558,14 @@ msgstr ""
 "e usare rapidamente la tastiera per assegnare il nome del tag volto agli "
 "elementi selezionati."
 
-#: ../../left_sidebar/people_view.rst:195
+#: ../../left_sidebar/people_view.rst:197
 msgid ""
 "The digiKam Face Tag Properties Dialog With a Keyboard Shortcut Assigned"
 msgstr ""
 "La finestra di dialogo delle proprietà del tag volto di digiKam con una "
 "scorciatoia da tastiera assegnata"
 
-#: ../../left_sidebar/people_view.rst:197
+#: ../../left_sidebar/people_view.rst:199
 msgid ""
 "In case there's a face you don't wish to be recognized, you can mark it as "
 "ignored. This leads to the creation of a new **Ignored** tag. This is "
@@ -540,11 +576,11 @@ msgstr ""
 "questo è reversibile, puoi togliere la spunta al volto in seguito, se "
 "necessario."
 
-#: ../../left_sidebar/people_view.rst:203
+#: ../../left_sidebar/people_view.rst:205
 msgid "A Face Marked as **Ignored** From Icon-View"
 msgstr "Un volto contrassegnato come **Ignorato** dalla vista a icone"
 
-#: ../../left_sidebar/people_view.rst:205
+#: ../../left_sidebar/people_view.rst:207
 msgid ""
 "In addition to tagging auto-detected faces, you can manually add a face "
 "region:"
@@ -552,7 +588,7 @@ msgstr ""
 "In aggiunta all'attribuzione di tag ai volti rilevati automaticamente, puoi "
 "aggiungere manualmente un'area a un volto:"
 
-#: ../../left_sidebar/people_view.rst:207
+#: ../../left_sidebar/people_view.rst:209
 msgid ""
 "From **Preview Mode**: click on **Add a Face Tag** icon or select the option "
 "in the context menu, as highlighted in the screenshot below."
@@ -561,11 +597,11 @@ msgstr ""
 "o seleziona l'opzione sul menu contestuale, come evidenziato nella schermata "
 "sottostante."
 
-#: ../../left_sidebar/people_view.rst:213
+#: ../../left_sidebar/people_view.rst:215
 msgid "The digiKam Manual Face Tagging From Context Menu"
 msgstr "L'attribuzione manuale di tag dal menu contestuale di digiKam"
 
-#: ../../left_sidebar/people_view.rst:215
+#: ../../left_sidebar/people_view.rst:217
 msgid ""
 "Then draw a rectangle around the face while holding the left mouse button "
 "followed by entering the person's name and pressing :kbd:`Enter` key. If you "
@@ -576,11 +612,11 @@ msgstr ""
 "premendo il tasto :kbd:`Invio`. Se premi il tasto :kbd:`Esc`, uscirai "
 "dall'editor del nome della persona."
 
-#: ../../left_sidebar/people_view.rst:221
+#: ../../left_sidebar/people_view.rst:223
 msgid "The digiKam Manual Face Tagging Editor"
 msgstr "L'editor per l'attribuzione manuale di tag di digiKam"
 
-#: ../../left_sidebar/people_view.rst:225
+#: ../../left_sidebar/people_view.rst:227
 msgid ""
 "Instead of clicking on **Add A Face Tag** icon, you can draw a face region "
 "while holding :kbd:`Ctrl` key."
@@ -588,7 +624,7 @@ msgstr ""
 "Invece di fare clic sull'icona **Aggiungi un tag volto**, puoi disegnare una "
 "regione del volto premendo contemporaneamente il tasto :kbd:`Ctrl`."
 
-#: ../../left_sidebar/people_view.rst:227
+#: ../../left_sidebar/people_view.rst:229
 msgid ""
 "The **Preview Mode** context menu also includes two other options for manual "
 "face tagging:"
@@ -596,7 +632,7 @@ msgstr ""
 "Il menu contestuale della **modalità anteprima** include anche due altre "
 "opzioni per l'attribuzione manuale di tag volto:"
 
-#: ../../left_sidebar/people_view.rst:229
+#: ../../left_sidebar/people_view.rst:231
 msgid ""
 "**Scan For Faces**: This option triggers the face detection algorithm to "
 "automatically identify and mark face areas on the image. By default, these "
@@ -611,7 +647,7 @@ msgstr ""
 "**rilevamento facciale** usate più di recente. Come spiegato in precedenza, "
 "se vengono trovati rilevati volti potrai modificare manualmente il loro nome."
 
-#: ../../left_sidebar/people_view.rst:231
+#: ../../left_sidebar/people_view.rst:233
 msgid ""
 "**Show Face Tags**: This displays the visible face tag areas and "
 "automatically switches to edit mode when the mouse hovers over them."
@@ -619,7 +655,7 @@ msgstr ""
 "**Mostra i tag volto**: questa opzione mostra le aree dei tag volto visibili "
 "e passa automaticamente in modalità modifica quando il mouse ci passa sopra."
 
-#: ../../left_sidebar/people_view.rst:235
+#: ../../left_sidebar/people_view.rst:237
 msgid ""
 "In the :ref:`Miscs Behavior <behavior_settings>` view of the configuration "
 "dialog, an option can be turned on to only populate the tags tree-view with "
@@ -630,16 +666,27 @@ msgstr ""
 "solo la vista ad albero dei tag con i tag volto assegnati a un volto mentre "
 "inserisci il suo nome."
 
-#: ../../left_sidebar/people_view.rst:240
+#: ../../left_sidebar/people_view.rst:242
 msgid "Face Recognition"
 msgstr "Riconoscimento facciale"
 
-#: ../../left_sidebar/people_view.rst:242
+#: ../../left_sidebar/people_view.rst:244
+#, fuzzy
+#| msgid ""
+#| "Once you have assigned a tag to a few photographs, you can have digiKam "
+#| "try to match **Unknown** faces with similar faces that have already been "
+#| "confirmed (tagged). To start this process, go to the workflow tab, select "
+#| "**Recognize Faces**, and then click **Scan Collection For Faces**. The "
+#| "process will tag similar **detected** faces with the appropriate People "
+#| "tag from your tag tree, and the corresponding thumbnail will disappear "
+#| "from the **Unknown** tag selection. The thumbnail will appear in the "
+#| "**Unconfirmed** tag section and will be added to the suggested face tag "
+#| "section."
 msgid ""
 "Once you have assigned a tag to a few photographs, you can have digiKam try "
 "to match **Unknown** faces with similar faces that have already been "
 "confirmed (tagged). To start this process, go to the workflow tab, select "
-"**Recognize Faces**, and then click **Scan Collection For Faces**. The "
+"**Recognize faces only**, and then click **Scan Collection For Faces**. The "
 "process will tag similar **detected** faces with the appropriate People tag "
 "from your tag tree, and the corresponding thumbnail will disappear from the "
 "**Unknown** tag selection. The thumbnail will appear in the **Unconfirmed** "
@@ -655,15 +702,19 @@ msgstr ""
 "selezione del tag **Sconosciuto**. La miniatura apparirà nella sezione di "
 "tag **Non confermato** e sarà aggiunta alla sezione di tag volto suggerita."
 
-#: ../../left_sidebar/people_view.rst:248
+#: ../../left_sidebar/people_view.rst:251
+#, fuzzy
+#| msgid ""
+#| "The digiKam Face Management Icon-View with newly recognized faces with a "
+#| "suggested tag of **Agnès**."
 msgid ""
 "The digiKam Face Management Icon-View with newly recognized faces with a "
-"suggested tag of **Agnès**."
+"suggested tag of **Adam**."
 msgstr ""
 "La vista a icone di gestione dei volti di digiKam con i nuovi volti "
 "riconosciuti col tag suggerito **Agnès**."
 
-#: ../../left_sidebar/people_view.rst:250
+#: ../../left_sidebar/people_view.rst:253
 msgid ""
 "Face Recognition is faster than Face Detection but it still makes sense to "
 "use the **Search-in** tab to restrict the scan to certain albums or tags in "
@@ -675,20 +726,14 @@ msgstr ""
 "l'analisi a determinati album o tag nella scheda Album, per esempio al tag "
 "**Sconosciuto**. Vedi la scheda :ref:`Ricerca in <search_in_tab>`."
 
-#: ../../left_sidebar/people_view.rst:254
-msgid ""
-"Face recognition only works well with faces that have been automatically "
-"detected by digiKam, not with manually drawn face rectangles or faces from "
-"other programs."
-msgstr ""
-"Riconoscimento facciale funziona bene solo con volti che sono stati "
-"riconosciuti automaticamente da digiKam, non con i rettangoli di volti "
-"disegnati manualmente o da altri programmi."
-
 #: ../../left_sidebar/people_view.rst:260
+#, fuzzy
+#| msgid ""
+#| "The digiKam Face Management Icon-View with newly recognized faces "
+#| "suggested as **Agnès**."
 msgid ""
 "The digiKam Face Management Icon-View with newly recognized faces suggested "
-"as **Agnès**."
+"as **Adam**."
 msgstr ""
 "La vista a icone di gestione dei volti di digiKam con i nuovi volti "
 "riconosciuti suggeriti come **Agnès**."
@@ -809,10 +854,15 @@ msgstr ""
 "piccoli o più grandi."
 
 #: ../../left_sidebar/people_view.rst:284
+#, fuzzy
+#| msgid ""
+#| "It is recommended you run several **Recognize Faces** scans when you are "
+#| "first building your library. Carefully review and confirm the suggestions "
+#| "between each scan."
 msgid ""
-"It is recommended you run several **Recognize Faces** scans when you are "
-"first building your library. Carefully review and confirm the suggestions "
-"between each scan."
+"It is recommended you run several **Recognize faces only** scans when you "
+"are first building your library. Carefully review and confirm the "
+"suggestions between each scan."
 msgstr ""
 "Quando stai costruendo la tua libreria, è consigliato avviare diverse volte "
 "l'operazione **Riconosci i volti**. Controlla accuratamente e conferma i "
@@ -872,7 +922,7 @@ msgstr ""
 "Per il **rilevamento**, digiKam analizzerà le immagini selezionate nel "
 "filtro dei volti."
 
-#: ../../left_sidebar/people_view.rst:301
+#: ../../left_sidebar/people_view.rst:302
 msgid ""
 "For **recognition**, digiKam will attempt to match **Unknown** and "
 "**Unconfirmed** face tags in the images included in the filter with all "
@@ -882,15 +932,15 @@ msgstr ""
 "**Sconosciuto** e **Non confermato** nelle immagini incluse nel filtro con "
 "tutti i tag volto confermati."
 
-#: ../../left_sidebar/people_view.rst:307
+#: ../../left_sidebar/people_view.rst:309
 msgid "The digiKam Face Management Search-in View"
 msgstr "La vista Ricerca in della gestione dei volti di digiKam"
 
-#: ../../left_sidebar/people_view.rst:313
+#: ../../left_sidebar/people_view.rst:315
 msgid "Settings Tab"
 msgstr "Scheda Impostazioni"
 
-#: ../../left_sidebar/people_view.rst:315
+#: ../../left_sidebar/people_view.rst:317
 msgid ""
 "The **Settings** tab lets you fine-tune the results from detection and "
 "recognition scans. Here, you can adjust the detection and recognition "
@@ -911,32 +961,28 @@ msgstr ""
 "gruppi di dati di standard industriale quali `LFW <https://vis-www.cs.umass."
 "edu/lfw/>`_, e gruppi di dati personali."
 
-#: ../../left_sidebar/people_view.rst:319
-msgid ""
-"Beginning with digiKam 8.5.0, YuNet is the recommended model for face "
-"detection, and SFace is recommended for face recognition."
+#: ../../left_sidebar/people_view.rst:324
+msgid "The digiKam Face Management Detection Settings View"
 msgstr ""
-"Da digiKam 8.5.0, YuNet è il modello di rilevamento facciale consigliato, "
-"mentre SFace è quello consigliato per il riconoscimento facciale."
+"La vista Impostazioni del rilevamento della gestione dei volti di digiKam"
 
-#: ../../left_sidebar/people_view.rst:322
+#: ../../left_sidebar/people_view.rst:327
 msgid "Face Detection Settings"
 msgstr "Impostazioni del rilevamento facciale"
 
-#: ../../left_sidebar/people_view.rst:324
+#: ../../left_sidebar/people_view.rst:329
+#, fuzzy
+#| msgid ""
+#| "For Face Detection, there are 3 settings the user can adjust to control "
+#| "how digiKam determines if there is a face in an image."
 msgid ""
-"For Face Detection, there are 3 settings the user can adjust to control how "
+"For Face Detection, there are 2 settings the user can adjust to control how "
 "digiKam determines if there is a face in an image."
 msgstr ""
 "Per il rilevamento facciale sono regolabili tre impostazioni per controllare "
 "come digiKam determina se è presente un volto in un'immagine."
 
-#: ../../left_sidebar/people_view.rst:330
-msgid "The digiKam Face Management Detection Settings View"
-msgstr ""
-"La vista Impostazioni del rilevamento della gestione dei volti di digiKam"
-
-#: ../../left_sidebar/people_view.rst:332
+#: ../../left_sidebar/people_view.rst:331
 msgid ""
 "**Accuracy**: Lower accuracy settings may detect more faces in an image, but "
 "it will also increase the number of incorrect areas identified as faces "
@@ -947,23 +993,18 @@ msgstr ""
 "come volti (falsi positivi). L'impostazione predefinita raccomandata per un "
 "uso normale è 7."
 
-#: ../../left_sidebar/people_view.rst:334
+#: ../../left_sidebar/people_view.rst:333
+#, fuzzy
+#| msgid ""
+#| "**Face Size**: This setting applies only to YuNet, and will be disabled "
+#| "if a different detection model is selected. Larger face size settings "
+#| "increase the speed of face detection but may miss small faces in group "
+#| "photos or in the background of images. See the **Special Cases** section "
+#| "below for more details."
 msgid ""
-"**Model**: digiKam supports 3 different models for face detection.  YuNet is "
-"the recommended detection model.  It is faster and more configurable than "
-"YOLO v3 and SSD."
-msgstr ""
-"**Modello**: digiKam supporta tre diversi modelli di rilevamento facciale. "
-"YuNet è il modello consigliato. È più veloce e più configurabile di YOLO v3 "
-"e SSD."
-
-#: ../../left_sidebar/people_view.rst:336
-msgid ""
-"**Face Size**: This setting applies only to YuNet, and will be disabled if a "
-"different detection model is selected. Larger face size settings increase "
-"the speed of face detection but may miss small faces in group photos or in "
-"the background of images. See the **Special Cases** section below for more "
-"details."
+"**Face Size**: Larger face size settings increase the speed of face "
+"detection but may miss small faces in group photos or in the background of "
+"images. See the **Special Cases** section below for more details."
 msgstr ""
 "**Dimensione del volto**: questa impostazione si applica soltanto a YuNet, e "
 "sarà disabilitata se viene selezionato un modello di rilevamento diverso. "
@@ -972,25 +1013,24 @@ msgstr ""
 "di gruppo o nello sfondo delle immagini. Per maggiori dettagli vedi la "
 "sezione **Casi speciali** più avanti."
 
-#: ../../left_sidebar/people_view.rst:339
+#: ../../left_sidebar/people_view.rst:336
 msgid "Face Recognition Settings"
 msgstr "Impostazioni del riconoscimento facciale"
 
-#: ../../left_sidebar/people_view.rst:341
+#: ../../left_sidebar/people_view.rst:338
+#, fuzzy
+#| msgid ""
+#| "For Face Recognition, there are 2 settings the user can adjust to control "
+#| "how digiKam matches **Unknown** faces to confirmed faces."
 msgid ""
-"For Face Recognition, there are 2 settings the user can adjust to control "
-"how digiKam matches **Unknown** faces to confirmed faces."
+"For Face Recognition, there is only one setting the user can adjust to "
+"control how digiKam matches **Unknown** faces to confirmed faces."
 msgstr ""
 "Per il riconoscimento facciale sono regolabili due impostazioni per "
 "controllare come digiKam fa coincidere i volti **sconosciuti** con i volti "
 "confermati."
 
-#: ../../left_sidebar/people_view.rst:347
-msgid "The digiKam Face Management Recognition Settings View"
-msgstr ""
-"La vista Impostazioni del riconoscimento della gestione dei volti di digiKam"
-
-#: ../../left_sidebar/people_view.rst:349
+#: ../../left_sidebar/people_view.rst:340
 msgid ""
 "**Accuracy**: Lower accuracy settings will produce more suggestions but will "
 "increase the number of incorrect suggestions. The default setting of 7 is "
@@ -1000,29 +1040,27 @@ msgstr ""
 "suggerimenti ma aumenteranno il numero di suggerimenti sbagliati. "
 "L'impostazione predefinita raccomandata per un uso normale è 7."
 
-#: ../../left_sidebar/people_view.rst:351
-msgid ""
-"**Model**: SFace is the recommended recognition model. It is much more "
-"accurate than OpenFace. Changing from one recognition model to another "
-"requires retraining your face library, which can be time-consuming."
-msgstr ""
-"**Modello**: SFace è il modello di riconoscimento raccomandato. È molto più "
-"accurato di OpenFace. Il passaggio da un modello di riconoscimento a un "
-"altro rende necessario un nuovo addestramento della libreria dei volti, "
-"operazione che può risultare dispendiosa in termini di tempo."
-
-#: ../../left_sidebar/people_view.rst:354
+#: ../../left_sidebar/people_view.rst:343
 msgid "Work on all processor cores"
 msgstr "Lavora con tutti i core del processore"
 
-#: ../../left_sidebar/people_view.rst:356
+#: ../../left_sidebar/people_view.rst:345
+#, fuzzy
+#| msgid ""
+#| "Face detection and face recognition can be time-consuming tasks depending "
+#| "on the size of your library and filtering selected in **Search-in**. To "
+#| "help speed up the process, you can choose to use all processor cores.  "
+#| "While this will make the process run faster, it can potentially make "
+#| "other processes run slower and make your computer feel unresponsive while "
+#| "faces are being processed."
 msgid ""
 "Face detection and face recognition can be time-consuming tasks depending on "
-"the size of your library and filtering selected in **Search-in**. To help "
-"speed up the process, you can choose to use all processor cores.  While this "
-"will make the process run faster, it can potentially make other processes "
-"run slower and make your computer feel unresponsive while faces are being "
-"processed."
+"the size of your library and filtering selected in **Search-in**. It is "
+"recommended to use all processor cores.  This will make the process run "
+"faster, but it can potentially make other processes run slower and make your "
+"computer feel unresponsive while faces are being processed. You can uncheck "
+"**Work on all processor cores** if your machine is slow and you want to "
+"perform other tasks while the face scan is running."
 msgstr ""
 "Il rilevamento facciale e il riconoscimento facciale possono essere "
 "operazioni dispendiose in termini di tempo, a seconda della libreria in tuo "
@@ -1032,21 +1070,26 @@ msgstr ""
 "elaborazione, ma potrebbe rallentare altri processi e bloccare "
 "temporaneamente il computer mentre sta elaborando i volti."
 
-#: ../../left_sidebar/people_view.rst:360
+#: ../../left_sidebar/people_view.rst:348
+#, fuzzy
+#| msgid ""
+#| "Due to technical limitations on Windows, multi-core support with a MySQL/"
+#| "MariaDB database does not perform well. We recommend using an SQLite "
+#| "database instead for better performance."
 msgid ""
-"Due to technical limitations on Windows, multi-core support with a MySQL/"
-"MariaDB database does not perform well. We recommend using an SQLite "
-"database instead for better performance."
+"Because of technical limitations on Windows, multi-core support for MySQL/"
+"MariaDB databases does not perform well. For better performance, we "
+"recommend using an SQLite database instead."
 msgstr ""
 "A causa di limitazioni tecniche in Windows, il supporto multi-core con una "
 "banca dati Mysql/MariaDB non restituisce buone prestazioni. Per ottenere "
 "risultati migliori, consigliamo di utilizzare invece una banca dati SQlite."
 
-#: ../../left_sidebar/people_view.rst:363
+#: ../../left_sidebar/people_view.rst:351
 msgid "Special Cases"
 msgstr "Casi speciali"
 
-#: ../../left_sidebar/people_view.rst:365
+#: ../../left_sidebar/people_view.rst:353
 msgid ""
 "Occasionally, you may encounter special cases where the recommended face "
 "detection settings don't yield the best results. In those cases, you should "
@@ -1063,14 +1106,21 @@ msgstr ""
 "poi le impostazioni ai suoi valori predefiniti, una volta concluse le "
 "operazioni sui casi speciali."
 
-#: ../../left_sidebar/people_view.rst:367
+#: ../../left_sidebar/people_view.rst:355
+#, fuzzy
+#| msgid ""
+#| "**Large Group Photos**: You may have images of large groups of people, "
+#| "and you want to generate a face tag for every person in the image. Using "
+#| "the YuNet detection model, setting the **Detection Accuracy** to 1, and "
+#| "setting the **Face size** to **Extra Small** should detect most, if not "
+#| "all of the faces in the image.  This will also incorrectly tag more areas "
+#| "of the image as faces (false positives)."
 msgid ""
 "**Large Group Photos**: You may have images of large groups of people, and "
-"you want to generate a face tag for every person in the image. Using the "
-"YuNet detection model, setting the **Detection Accuracy** to 1, and setting "
-"the **Face size** to **Extra Small** should detect most, if not all of the "
-"faces in the image.  This will also incorrectly tag more areas of the image "
-"as faces (false positives)."
+"you want to generate a face tag for every person in the image. Setting the "
+"**Detection Accuracy** to 1, and setting the **Face size** to **Extra "
+"Small** should detect most, if not all of the faces in the image.  This will "
+"also incorrectly tag more areas of the image as faces (false positives)."
 msgstr ""
 "**Grandi foto di gruppo**: ti potrebbe capitare di avere grandi gruppi di "
 "persone e di voler generare un tag volto per ciascuna persona presente "
@@ -1081,14 +1131,21 @@ msgstr ""
 "però anche dei tag volto scorretti in più aree dell'immagine (falsi "
 "positivi)."
 
-#: ../../left_sidebar/people_view.rst:369
+#: ../../left_sidebar/people_view.rst:357
+#, fuzzy
+#| msgid ""
+#| "**Portraits**: When shooting portraits from the shoulder up, especially "
+#| "with modern high-resolution cameras over 40 megapixels, face recognition "
+#| "may not detect the face or may tag multiple areas of a single face. Using "
+#| "the YuNet detection model, setting the **Detection Accuracy** to 8, and "
+#| "setting the **Face size** to **Extra Large** will detect only the face, "
+#| "and eliminate false positive tag regions."
 msgid ""
 "**Portraits**: When shooting portraits from the shoulder up, especially with "
 "modern high-resolution cameras over 40 megapixels, face recognition may not "
-"detect the face or may tag multiple areas of a single face. Using the YuNet "
-"detection model, setting the **Detection Accuracy** to 8, and setting the "
-"**Face size** to **Extra Large** will detect only the face, and eliminate "
-"false positive tag regions."
+"detect the face or may tag multiple areas of a single face. Setting the "
+"**Detection Accuracy** to 8, and setting the **Face size** to **Extra "
+"Large** will detect only the face, and eliminate false positive tag regions."
 msgstr ""
 "**Ritratti**: quando scatti ritratti dalle spalle in su, in particolare con "
 "le fotocamere ad alta risoluzione moderne sopra i 40 megapixel, il "
@@ -1097,6 +1154,85 @@ msgstr ""
 "YuNet, impostando il livello di **Accuratezza del rilevamento** a otto e la "
 "**Dimensione volto** a **Molto grande** riuscirai a rilevare soltanto il "
 "volto, ed eliminerai le regioni con i tag di falsi positivi."
+
+#~ msgid ""
+#~ "**Clear Unconfirmed Results And Rescan**: Select this option when you "
+#~ "have changed settings and want to delete all unnamed faces from the "
+#~ "database. This will re-scan all images selected in the **Search in** tab, "
+#~ "which can be time-consuming."
+#~ msgstr ""
+#~ "**Pulisci i risultati non confermati e rianalizza**: seleziona questa "
+#~ "opzione quando hai cambiato le impostazioni e vuoi eliminare tutti i "
+#~ "volti senza nome dalla banca dati. Questa azione rianalizzerà tutte le "
+#~ "immagini selezionate nella scheda **Ricerca in**, e potrà risultare "
+#~ "piuttosto lunga."
+
+#~ msgid ""
+#~ "The first option is the default for normal operation. Use it for your "
+#~ "initial face detection scan or when you add new images to your library. "
+#~ "The second and third options should be used when you change settings that "
+#~ "affect the face detection results. These options do not affect the "
+#~ "process of **recognizing** faces."
+#~ msgstr ""
+#~ "La prima opzione è quella predefinita per le operazioni normali. Usala "
+#~ "per il rilevamento facciale iniziale o quando aggiungi nuove immagini "
+#~ "alla tua libreria. La seconda e la terza opzione devono essere usate "
+#~ "quando cambi le impostazioni che influenzano i risultati del rilevamento "
+#~ "facciale. Queste opzioni non influenzano il processo di "
+#~ "**riconoscimento** dei volti."
+
+#~ msgid ""
+#~ "For this task, make sure to select **Detect faces**. Since face detection "
+#~ "is time-consuming, it’s better to limit the scan instead of scanning "
+#~ "right away. In **Search-in**, you can limit the scan to specific albums "
+#~ "or tags. See the :ref:`Search-in <search_in_tab>` section for more "
+#~ "information."
+#~ msgstr ""
+#~ "Per questa operazione, accertati di selezionare **Rileva i volti**. Dato "
+#~ "che il rilevamento facciale occupa molto tempo, è meglio limitare "
+#~ "l'analisi piuttosto che analizzare subito. Nella scheda **Ricerca in** "
+#~ "puoi limitare l'analisi ad album o tag specifici. Vedi la sezione :ref:"
+#~ "`Ricerca in <search_in_tab>` per ulteriori informazioni."
+
+#~ msgid ""
+#~ "Face recognition only works well with faces that have been automatically "
+#~ "detected by digiKam, not with manually drawn face rectangles or faces "
+#~ "from other programs."
+#~ msgstr ""
+#~ "Riconoscimento facciale funziona bene solo con volti che sono stati "
+#~ "riconosciuti automaticamente da digiKam, non con i rettangoli di volti "
+#~ "disegnati manualmente o da altri programmi."
+
+#~ msgid ""
+#~ "Beginning with digiKam 8.5.0, YuNet is the recommended model for face "
+#~ "detection, and SFace is recommended for face recognition."
+#~ msgstr ""
+#~ "Da digiKam 8.5.0, YuNet è il modello di rilevamento facciale consigliato, "
+#~ "mentre SFace è quello consigliato per il riconoscimento facciale."
+
+#~ msgid ""
+#~ "**Model**: digiKam supports 3 different models for face detection.  YuNet "
+#~ "is the recommended detection model.  It is faster and more configurable "
+#~ "than YOLO v3 and SSD."
+#~ msgstr ""
+#~ "**Modello**: digiKam supporta tre diversi modelli di rilevamento "
+#~ "facciale. YuNet è il modello consigliato. È più veloce e più "
+#~ "configurabile di YOLO v3 e SSD."
+
+#~ msgid "The digiKam Face Management Recognition Settings View"
+#~ msgstr ""
+#~ "La vista Impostazioni del riconoscimento della gestione dei volti di "
+#~ "digiKam"
+
+#~ msgid ""
+#~ "**Model**: SFace is the recommended recognition model. It is much more "
+#~ "accurate than OpenFace. Changing from one recognition model to another "
+#~ "requires retraining your face library, which can be time-consuming."
+#~ msgstr ""
+#~ "**Modello**: SFace è il modello di riconoscimento raccomandato. È molto "
+#~ "più accurato di OpenFace. Il passaggio da un modello di riconoscimento a "
+#~ "un altro rende necessario un nuovo addestramento della libreria dei "
+#~ "volti, operazione che può risultare dispendiosa in termini di tempo."
 
 #~ msgid "People View"
 #~ msgstr "Vista Persone"

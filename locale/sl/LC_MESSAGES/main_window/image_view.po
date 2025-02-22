@@ -6,16 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-08 01:42+0000\n"
-"PO-Revision-Date: 2024-12-06 17:12+0100\n"
+"POT-Creation-Date: 2025-02-21 01:48+0000\n"
+"PO-Revision-Date: 2025-02-21 07:18+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
+"n%100==4 ? 3 : 0);\n"
 "X-Generator: Poedit 3.5\n"
 
 #: ../../main_window/image_view.rst:1
@@ -1083,24 +1083,40 @@ msgstr ""
 #: ../../main_window/image_view.rst:301
 msgid ""
 "You can put the whole selection into one group using **Group Selected Here** "
-"or you can create more than one group determined by time (seconds will be "
-"ignored) or by file name. Note that the latter will put items with the same "
-"name but different file types into one group. This is particularly handy, as "
-"explained below, for grouping images that have been stored in both JPEG and "
-"RAW formats."
+"or you can create more than one group determined by the Exif or Xmp time-"
+"stamps (seconds will be ignored) using **Group Selected by Time** or by file "
+"name using **Group Selected by Filename**."
 msgstr ""
 "Celoten izbor lahko postavite v eno skupino z uporabo **Skupina izbrana "
-"tukaj** ali pa ustvarite več kot eno skupino, določeno s časom (sekunde bodo "
-"prezrte) ali z imenom datoteke. Upoštevajte, da bo slednji elemente z enakim "
-"imenom, vendar različnimi vrstami datotek uvrstil v eno skupino. To je še "
-"posebej priročno, kot je razloženo spodaj, za združevanje slik, ki so bile "
-"shranjene v formatih JPEG in RAW."
+"tukaj** ali pa ustvarite več kot eno skupino, določeno s časovnimi žigi Exif "
+"ali Xmp (sekunde bodo prezrte) z uporabo **Skupina izbrana po času** ali z "
+"imenom datoteke z uporabo **Skupina izbrana po imenu datoteke**."
+
+#: ../../main_window/image_view.rst:305
+msgid ""
+"The latter option will put items with the same name but different file types "
+"into one group. This is particularly handy, as explained below, for grouping "
+"images that have been stored in both JPEG and RAW formats."
+msgstr ""
+"Slednja možnost bo elemente z enakim imenom, vendar različnimi vrstami "
+"datotek uvrstila v eno skupino. To je še posebej priročno, kot je razloženo "
+"spodaj, za združevanje slik, ki so bile shranjene v formatih JPEG in RAW."
 
 #: ../../main_window/image_view.rst:307
+msgid ""
+"The last option **Group Selected by Timelapse / Burst** put the whole "
+"selection into groups created with a minimum of 3 items when differences of "
+"Exif or Xmp time-stamps for each item do not exceed 1 second."
+msgstr ""
+"Zadnja možnost **Skupina izbrana s časovnim zamikom / Rafalom** postavi "
+"celoten izbor v skupine, ustvarjene z najmanj 3 elementi, če razlike "
+"časovnih žigov Exif ali Xmp za vsak element ne presegajo 1 sekunde."
+
+#: ../../main_window/image_view.rst:313
 msgid "The digiKam Icon-View Grouped Mode From Icon-View"
 msgstr "Združeni način pogleda ikon digiKam iz pogleda ikon"
 
-#: ../../main_window/image_view.rst:311
+#: ../../main_window/image_view.rst:317
 msgid ""
 "If you group files automatically based on filename, the smaller file size "
 "from the group is preferred as the leading item. The idea is that when "
@@ -1110,7 +1126,7 @@ msgstr ""
 "datoteke iz skupine prednost kot vodilni element. Ideja je, da bi iz "
 "predogleda, hitrejše nalaganje slike omogočilo hiter predogled."
 
-#: ../../main_window/image_view.rst:313
+#: ../../main_window/image_view.rst:319
 msgid ""
 "If you group files manually from the icon-view, the selected item used to "
 "show the context menu that was used to group the files will be used as the "
@@ -1120,7 +1136,7 @@ msgstr ""
 "za prikaz kontekstnega menija, ki je bil uporabljen za združevanje datotek, "
 "uporabljen kot vodilni element."
 
-#: ../../main_window/image_view.rst:315
+#: ../../main_window/image_view.rst:321
 msgid ""
 "The **Show/Hide Grouped Images** menu items control whether only the "
 "reference icon of the group (the first of the group according to the sorting "
@@ -1134,7 +1150,7 @@ msgstr ""
 "dveh funkcij lahko dostopate tudi z majhnim indikatorjem združevanja (simbol "
 "mape s številko) na referenčni ikoni."
 
-#: ../../main_window/image_view.rst:319
+#: ../../main_window/image_view.rst:325
 msgid ""
 "In Icon-View, you can turn on/off the frame over grouped item thumbnails "
 "with an option from :ref:`Settings/Miscellaneous/Appearance "
@@ -1144,7 +1160,7 @@ msgstr ""
 "predoglednih sličic z možnostjo v nastavitvah :ref:`Nastavitve/Razno/Pogledi "
 "<appearance_settings>`."
 
-#: ../../main_window/image_view.rst:321
+#: ../../main_window/image_view.rst:327
 msgid ""
 "While the mouse pointer is hovering over a grouped item, a box will pop up "
 "stating **# grouped items. Group is closed/open.** where *#* indicates the "
@@ -1156,7 +1172,7 @@ msgstr ""
 "označuje število elementov v skupini, ki so nevidni, če je skupina zaprta. S "
 "klikom na indikator preklapljate med **odprto** in **zaprto**."
 
-#: ../../main_window/image_view.rst:323
+#: ../../main_window/image_view.rst:329
 msgid ""
 "Groups are indicated in the **Table Mode** of the Image Area using the "
 "standard approach for other lists and tables: a little triangle in front of "
@@ -1168,11 +1184,11 @@ msgstr ""
 "postavko. S klikom na ta trikotnik se združeni elementi strnejo ali "
 "razširijo."
 
-#: ../../main_window/image_view.rst:329
+#: ../../main_window/image_view.rst:335
 msgid "The digiKam Icon-View Grouped Mode From Table View"
 msgstr "Grupirani način pogleda ikon digiKam iz pogleda tabele"
 
-#: ../../main_window/image_view.rst:331
+#: ../../main_window/image_view.rst:337
 msgid ""
 "The last items in the **Group** context menu allows you to remove individual "
 "items from the group or to disband the whole group. The content of the menu "
@@ -1184,7 +1200,7 @@ msgstr ""
 "Vsebina menija se bo spremenila glede na to, ali jo uporabljate na izboru še "
 "nezdruženih postavk, na skupini ali na posameznih elementih skupine."
 
-#: ../../main_window/image_view.rst:333
+#: ../../main_window/image_view.rst:339
 msgid ""
 "What can you do with a group? In terms of functions of digiKam you can "
 "perform a lot of operations like copy, delete, move, and rotate on the whole "
@@ -1204,7 +1220,7 @@ msgstr ""
 "oznake in oznake (glejte nadaljevanje v tem priročniku) in napišete tudi "
 "opise (glejte :ref:`Captions <captions_view>`). Poskusite."
 
-#: ../../main_window/image_view.rst:337
+#: ../../main_window/image_view.rst:343
 msgid ""
 "Operations to perform over grouped items are managed by the options in "
 "Settings/Miscellaneous/Grouping. See :ref:`this section <grouping_settings>` "
@@ -1214,7 +1230,7 @@ msgstr ""
 "Grupiranje. Glejte :ref:`ta razdelek <grouping_settings>` priročnika za "
 "podrobnosti."
 
-#: ../../main_window/image_view.rst:339
+#: ../../main_window/image_view.rst:345
 msgid ""
 "There are multiple use cases for grouping items. One common use is to group "
 "JPG and RAW images together since many cameras allow for the recording of a "
@@ -1230,7 +1246,7 @@ msgstr ""
 "1.JPG 1.RAW 2.JPG 2.RAW, boste ustvarili 2 skupini (1.JPG+1.RAW) in (2.JPS+2."
 "RAW)."
 
-#: ../../main_window/image_view.rst:341
+#: ../../main_window/image_view.rst:347
 msgid ""
 "You can also use grouping to group videos with associated still frames. In "
 "the screenshot above, exposure bracketed images are being grouped. One could "
@@ -1241,7 +1257,7 @@ msgstr ""
 "združujejo. Enako bi lahko storili za namene arhiviranja s slikami, ki se "
 "uporabljajo za panoramo."
 
-#: ../../main_window/image_view.rst:343
+#: ../../main_window/image_view.rst:349
 msgid ""
 "If you have very specific requirements for documenting steps taken in "
 "editing, and the :ref:`Versions <versions_view>` function of digiKam cannot "
@@ -1263,7 +1279,7 @@ msgstr ""
 "skupine bodo vidni v svojih albumih *le, če je skupina odprta*. Skupine, ki "
 "obsegajo albume, so lahko zmedene, zato jih uporabljajte previdno."
 
-#: ../../main_window/image_view.rst:347
+#: ../../main_window/image_view.rst:353
 msgid ""
 "Everything described in this Grouping section has nothing to do with **Group "
 "Images** in the **View** menu. That function doesn't form permanent groups "
