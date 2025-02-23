@@ -42,7 +42,7 @@ The first step is to let digiKam locate all the photos containing faces, without
     :align: center
     :width: 300px
 
-    The digiKam Face Management Workflow View
+    The digiKam Face Management Settings View
 
 For normal operation, use the first option, which is set as the default. This is ideal for your initial face scan or when adding new images to your library. The second and third options should be utilized when you modify settings that impact face results. Regardless of the chosen option, the system will attempt to recognize faces.  The **Search-in** tab allows you to limit the scan to specific albums or tags. See the :ref:`Search-in <search_in_tab>` section for more information. After selecting your options, click **Scan collection for faces**. 
 

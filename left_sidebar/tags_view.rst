@@ -15,11 +15,29 @@
 
 .. contents::
 
-Hierarchical tagging provides a flexible and powerful way to organize and catalog your images. Tags (also called *keywords* in other applications) are labels that can be applied to individual images or groups of images. Once a tag has been applied to an image, the image can be found again by selecting the tag or doing a search.
+Tags, also known as keywords in some applications, are an essential feature in digiKam. They are used to organize, categorize, and facilitate the retrieval of digital assets. Here are some key uses of tags:
 
-Tags can be arranged in a hierarchical tree, allowing you to organize your tags in a logical manner. You can collapse parts of the tree in the **Tags** list so that you can easily find the tags that you are looking for.
+1. **Organization**: Tags help in structuring and organizing large collections of digital assets by assigning labels to each asset. This enables users to group related assets together and maintain a logical arrangement.
 
-.. figure:: images/left_sidebar_tags_view.webp
+2. **Searchability**: By tagging assets with relevant keywords, users can easily :ref:`search <search_view>` and find specific assets. Tags enhance the search functionality, making it quicker and more efficient to locate files based on their content, theme, or other attributes.
+
+3. **Categorization**: Tags allow users to categorize assets into different groups or categories based on specific criteria. This is particularly useful for managing diverse collections of assets, such as images, videos, documents, and more.
+
+4. **Metadata Enhancement**: Tags contribute to enriching the metadata associated with each asset. This additional information can include descriptions, keywords, and other relevant details, providing more context and making the assets more informative.
+
+5. **Workflow Automation**: Tags can be used to automate workflows within digiKam. For example, assets tagged with a certain label can be used in various tools like facial recognition and image quality sorting.
+
+6. **Collaboration**: Tags facilitate collaboration by allowing team members to easily share and access tagged assets. This ensures that everyone involved in a project can quickly find the necessary resources.
+
+7. **Version Control**: Tags can help in managing different versions of an asset by labeling them with version numbers or other identifying information. This makes it easier to track changes and maintain the integrity of the asset.
+
+Overall, tags are a powerful tool in digiKam that enhance organization, improve searchability, and streamline workflows, making it easier to manage and access digital assets efficiently.
+
+By arranging tags in a hierarchical tree, you can maintain a logical and systematic structure. The ability to collapse sections of the tree in the Tags list further enhances navigation, making it easier to locate the desired tags.
+
+Utilizing the power of hierarchical tagging can greatly improve the organization and accessibility of your photo collection, ensuring you can quickly and easily find the images you need.
+
+.. figure:: images/left_sidebar_tag_view.webp
     :alt:
     :align: center
 
@@ -27,7 +45,7 @@ Tags can be arranged in a hierarchical tree, allowing you to organize your tags 
 
 When a tag is selected in the Left Sidebar, all of the images that are marked with that tag are displayed in the View Area.
 
-But before assigning and using tags, you first have to define them. If you import photographs that already have assigned tags, digiKam will build an appropriate tag tree during import. Other than that you have to manually define all tags. The context menu shown in the screenshot above provides an easy approach to managing tags.
+But before assigning and using tags, you first have to define them. If you import photographs that already have assigned tags, digiKam will build an appropriate tag tree during import. Alternatively, you can use digiKam's auto-tags feature to find objects in your images and create tags. The context menu shown in the screenshot above provides an easy approach to managing tags.
 
 .. _managing_tags:
 
@@ -175,7 +193,7 @@ Shortcuts: as mentioned earlier in this chapter you can assign keyboard shortcut
 
 Context menu: by clicking with the right mouse button on the selected photographs and choosing **Assign Tag** you will see a list of the ten most recently used tags, **Add New Tag...**, described at the beginning of the :ref:`previous section <managing_tags>`, and **More Tags...** which displays the *Tags* tab of the *Captions* view in the Right Sidebar. This is described in more detail in the paragraphs below and in :ref:`this section <tags_tree>` of the manual. This context menu may be the easiest method to add a limited number of tags to one or more images.
 
-.. figure:: images/left_sidebar_assigntags.webp
+.. figure:: images/left_sidebar_tag_assign.webp
     :alt:
     :align: center
 
@@ -192,3 +210,87 @@ Once you have tagged a photograph, the tag name will appear under the thumbnail 
 .. tip::
 
       Tags are stored in a database for fast access, and the applied tags are written into IPTC data fields of the image (at least for JPEG). So you can use your tags with other programs or, in case of loss of that data in the database, the tags will be restored when the image is re-imported into digiKam.
+
+.. _auto_tagging:
+
+Auto-tagging Images
+-------------------
+
+Auto-tagging in a digiKam is the process of automatically assigning tags to digital assets like photos and videos. Instead of manually tagging each asset with terms and phrases, auto-tagging uses deep-learning neural networks to analyze the content and generate relevant tags, keywords, and descriptions.
+
+This process enriches your digital assets with valuable information, making them easier to organize, search, and manage. It also saves time and resources by automating repetitive metadata creation, reducing human errors, and ensuring consistent metadata across assets.
+
+Auto-tagging can identify objects like dogs, cars, and people (not faces) within digital assets, and it can even recognize and tag content in multiple languages. This enhances the discoverability and usability of your digital assets, allowing you to focus on more strategic tasks.
+
+.. important::
+
+   For auto-tagging to work correctly, digiKam needs to download the deep-learning models from the web. These files can either be downloaded when digiKam is first run (see :ref:`the Quick Start section <quick_start>` for details), or the files can be downloaded by clicking on the **Download required binary data** button on the :menuselection:`Settings --> Miscellaneous --> System` page.
+
+The settings view is divided into three tabs: **Search-in**, **Settings**, and **Translate**.
+
+.. _tags_search_in_tab:
+
+Search-in Tab
+~~~~~~~~~~~~~
+
+The **Search-in** tab lets you choose which albums and image tags to include in a scan. You can select specific albums or tags for auto-tagging.
+
+.. figure:: images/left_sidebar_tag_settings1.webp
+    :alt:
+    :align: center
+    :width: 300px
+
+    The digiKam Auto-tags Search-in view
+
+.. _tags_settings_tab:
+
+Settings Tab
+~~~~~~~~~~~~
+
+The **Settings** tab lets you fine-tune the results from scans. Here, you can select the auto-tagging model, adjust tagging behavior, and set the accuracy level. Additionally, you can control the processor load used for auto-tagging detection. The default values have been carefully chosen for normal use after exhaustive testing on multiple datasets.
+
+.. figure:: images/left_sidebar_tag_settings2.webp
+    :alt:
+    :align: center
+    :width: 300px
+
+    The digiKam Auto-tags Settings view
+
+Auto-tag Settings
+~~~~~~~~~~~~~~~~~
+
+For Auto-tagging, there are 4 settings the user can adjust to control how digiKam detects and tags objects in an image.
+
+- **Scan mode**: The scan mode determines if digiKam will scan all images, or only images that don't have an **auto** tag already assigned. The **auto** tag is assigned to images that have been auto-tagged. The **auto** tag is not assigned to images that have been manually tagged.
+
+- **Auto-tagging Mode**: When applying auto-tags, you can choose between **Update** and **Replace Existing**. Selecting **Update** will add any new auto-tags to the existing tags on the image. **Replace Existing** will remove all existing auto-tags and replace them with the tags detected by the current scan. Any tags not under the **auto** tag will not be affected. This setting is useful if you want to run multiple scans with different settings and combine the results.
+
+- **Detection Model**: The detection model is the neural network used to detect objects in the image. The default model is **EfficientNet B7**. The **EfficientNet B7** model is a general-purpose model that can detect 1,000 different objects and scenes. The **YOLOv11-Nano** model is faster and uses less memory than the **EfficientNet B7** model. The **YOLOv11-Nano** model is recommended for users with limited memory or slower processors, and **YOLOv11-XLarge** is recommended for users with more memory and faster processors. Both YOLOv11 models are trained to detect 80 different objects based on the COCO dataset.
+
+- **Accuracy**: Lower accuracy settings may detect more objects in an image, but it will also increase the number of incorrectly identified objects (false positives). The default setting of 7 is recommended for normal use.
+
+Work on all processor cores
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Auto-tagging can be a time-consuming task depending on the size of your library and filtering selected in **Search-in**. It is recommended to use all processor cores.  This will make the process run faster, but it can potentially make other processes run slower and make your computer feel unresponsive while auto-tagging is running. You can uncheck **Work on all processor cores** if your machine is slow and you want to perform other tasks while the auto-tag scan is running.
+
+.. _tags_translate_tab:
+
+Translate Tab
+~~~~~~~~~~~~~
+
+The **Translate** tab lets you choose additional languages for auto-tagging. This feature will use an online translation service to translate the auto-tag into one of the supported languages.
+
+.. figure:: images/left_sidebar_tag_settings3.webp
+    :alt:
+    :align: center
+    :width: 300px
+
+    The digiKam Auto-tags Translate view
+
+.. _tags_scan_collection:
+
+Scan Collection for Auto-tags
+-----------------------------
+
+To begin scanning, click the **Auto-tag Scan** button. While the auto-tag assignment process is underway, a progress indicator is displayed in the bottom right corner of the main window. As the scan progresses, news tags will be added to the **auto** tag in the Tags view.
