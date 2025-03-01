@@ -23,7 +23,6 @@ The face management workflow helps you identify and recognize people in your pho
 
    For face management to work correctly, digiKam needs to download the deep-learning models from the web. These files can either be downloaded when digiKam is first run (see :ref:`the Quick Start section <quick_start>` for details), or the files can be downloaded by clicking on the **Download required binary data** button on the :menuselection:`Settings --> Miscellaneous --> System` page.
 
-
 .. _face_detection:
 
 Face Detection
@@ -297,9 +296,9 @@ Search-in Tab
 
 The **Search-in** tab lets you choose which albums and image tags to include in a scan. You can select specific albums or tags for detection and recognition.
 
-- For **detection**, digiKam will scan the images selected in the filter for faces.
+- For **Scan all images** and **Scan new images** , digiKam will scan the images selected in the filter for faces.
 
-- For **recognition**, digiKam will attempt to match **Unknown** and **Unconfirmed** face tags in the images included in the filter with all confirmed face tags.
+- For **Recognize faces only**, digiKam will attempt to match **Unknown** and **Unconfirmed** face tags in the images included in the filter with all confirmed face tags.
 
 .. figure:: images/left_sidebar_faces_settings2.webp
     :alt:
@@ -345,7 +344,7 @@ Work on all processor cores
 Face detection and face recognition can be time-consuming tasks depending on the size of your library and filtering selected in **Search-in**. It is recommended to use all processor cores.  This will make the process run faster, but it can potentially make other processes run slower and make your computer feel unresponsive while faces are being processed. You can uncheck **Work on all processor cores** if your machine is slow and you want to perform other tasks while the face scan is running.
 
 .. tip::
-   Because of technical limitations on Windows, multi-core support for MySQL/MariaDB databases does not perform well. For better performance, we recommend using an SQLite database instead.
+   Because of technical limitations on Windows, multi-core support for MySQL/MariaDB databases does not perform well. For better performance, we recommend using a SQLite database instead.
 
 Special Cases
 -------------
