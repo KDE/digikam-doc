@@ -28,11 +28,11 @@ Minimum System Requirements
 
 - **Operating System**: 64-bit Windows 10 or newer, Apple macOS 64-bit based on Intel or Apple Silicon (M1 or later), or 64-bit Linux. See details below.
 
-- **CPU**: x86 Intel, AMD, or Arm; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for deep-learning capabilities such as face detection, image quality sorting, and auto-tags. See details below.
+- **CPU**: x86 Intel, AMD, or Arm; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for deep-learning capabilities such as face detection, image quality scanning, and auto-tags. See details below.
 
 - **GPU**: OpenGL 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible DirectX 9 or 11 drivers.
 
-- **RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for deep-learning capabilities such as face detection and image quality sorting. See details below.
+- **RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for deep-learning capabilities such as face detection and image quality scanning. See details below.
 
 .. note::
 

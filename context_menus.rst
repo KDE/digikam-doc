@@ -132,7 +132,7 @@ Thumbnails
     * :menuselection:`Paste`
     * :menuselection:`Rename...`
     * :menuselection:`Move 2 Files to Trash`
-    * :menuselection:`Image Quality Sort`
+    * :menuselection:`Image Quality Scan`
     * :menuselection:`Assign Tag --> Recently Assigned Tags`
     * :menuselection:`Assign Tag --> Add New Tag`
     * :menuselection:`Assign Tag --> More Tags...`

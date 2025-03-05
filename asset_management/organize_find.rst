@@ -116,7 +116,7 @@ The real work begins with the application of **Tags**, **Captions** and a **Rati
 
 Specifically, digiKam provides **automatic tagging** features based on deep-learning:
 
-    - :ref:`Image Quality Sorting <maintenance_quality>` automatically assigns a **Pick Label** of either **Rejected**, **Pending** or **Accepted** to items based on aesthetic factors.
+    - :ref:`Image Quality Scanning <label_imagescan>` automatically assigns a **Pick Label** of either **Rejected**, **Pending** or **Accepted** to items based on aesthetic factors.
     - :ref:`Face Detection <face_detection>` automatically detects faces in images and records face areas in the database.
     - :ref:`Face Recognition <face_recognition>` automatically assigns people tags based on existing face tags.
 
@@ -216,13 +216,13 @@ Another categorization might be task-oriented as in *print jobs*, *web export*, 
 
     The digiKam :ref:`Color Labels <labels_view>` Can be Used to Group Items For Your Workflow Stages
 
-Another digiKam feature is the **Pick Labels** used to categorize shots by quality and identify which item will be **Rejected**, **Pending**, or **Accepted** in your workflow. You can assign these properties manually of course, but there is a better solution: digiKam can automatically perform image quality analysis using a deep-learning based tool named **Image Quality Sorter**. This tool evaluates image features such as noise, blur, form, shape, contents, etc., and gives an evaluation of the quality of the shot. This tool is available in the :menuselection:`Tools --> Maintenance...` menu and in the **Batch Queue Manager**.
+Another digiKam feature is the **Pick Labels** used to categorize shots by quality and identify which item will be **Rejected**, **Pending**, or **Accepted** in your workflow. You can assign these properties manually of course, but there is a better solution: digiKam can automatically perform image quality analysis using a deep-learning based tool named **Image Quality Scanner**. This tool evaluates image features such as noise, blur, form, shape, contents, etc., and gives an evaluation of the quality of the shot. This tool is available in the :ref:`Labels View <labels_view>`, :ref:`Maintenance menu <maintenance_quality>` and in the :ref:`Batch Queue Manager <metadata_tools>`.
 
 .. figure:: images/dam_quality_bqm.webp
     :alt:
     :align: center
 
-    The digiKam Pick Labels can be Assigned Automatically Depending on the  :ref:`Quality of Shot in Batch Queue Manager <bqm_qualitysort>`
+    The digiKam Pick Labels can be Assigned Automatically Depending on the  :ref:`Quality of Shot in Batch Queue Manager <bqm_qualityscan>`
 
 When you import cataloged images from other sources that already have embedded tags, digiKam will automatically create the keyword trees for you, adding the appropriate tags in the right place. The hierarchy tree can be easily rearranged by using drag and drop to move a sub-tree to another place in the hierarchy. The changed tags will be updated as digiKam traverses through the branches.
 

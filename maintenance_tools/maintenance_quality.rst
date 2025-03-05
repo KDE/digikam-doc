@@ -10,16 +10,16 @@
 
 .. _maintenance_quality:
 
-:ref:`Image Quality Sorter <maintenance_tools>`
-===============================================
+:ref:`Image Quality Scanner <maintenance_tools>`
+================================================
 
-.. figure:: images/maintenance_quality_sorter.webp
+.. figure:: images/maintenance_quality_sorter1.webp
     :alt:
     :align: center
 
-    The digiKam Maintenance Options for Image Quality Sorter
+    The digiKam Maintenance Options for Image Quality Scanner
 
-The **Image Quality Sorter** tool automatically assesses the **Quality** of each item and assigns a corresponding value to the **Pick Label** property in the database based on:
+The **Image Quality Scanner** tool automatically assesses the **Quality** of each item and assigns a corresponding value to the **Pick Label** property in the database based on:
 
    - The **Red** flag for **Rejected**.
 
@@ -27,7 +27,7 @@ The **Image Quality Sorter** tool automatically assesses the **Quality** of each
 
    - The **Green** flag for **Accepted**.
 
-The Image Quality Sorter assigns Pick Labels to items according to the default settings in :menuselection:`Settings --> Configure digiKam... --> Image Quality Sorter page`, or the dedicated options set in this view.
+More information about the **Image Quality Scanner** can be found in the :ref:`Labels view <label_imagescan>`.
 
 The quality **score** to determine the **Pick Label** property can be evaluated in one of two ways: using four basic factors for each image (**Blur**, **Noise**, **Exposure**, and **Compression**), or using a **deep learning neural network engine**.
 
@@ -39,19 +39,17 @@ The second approach uses an artificial intelligence engine based on `this model 
 
     Since quality assessment can be a time consuming process, it's a good idea to check Work on all processor cores and restrict the job to certain albums or tags.
 
-All the **Image Quality Sorter** settings are described in :ref:`this section <imgqsort_settings>` of the manual.
+The **Scan Mode** settings configure how the database information for the items from the selected collection will be processed. **All** resets all data and scans all items from scratch, **Non-assigned only** will scan images that have not previously been assigned **Pick Labels**.
 
-The **Scan Mode** settings configure how the database information for the items from the selected collection will be processed. **Clean all and re-scan** resets all data and scans all items from scratch, **Scan non-assigned only** will be faster to process just items that have not previously been assigned **Pick Labels**.
-
-While the image quality sorting process is underway, a progress indicator is displayed in the bottom right corner of the main window.
+While the image quality scanning process is underway, a progress indicator is displayed in the bottom right corner of the main window.
 
 .. figure:: images/maintenance_quality_process.webp
     :alt:
     :align: center
 
-    The digiKam Image Quality Sorter Process Running in the Background
+    The digiKam Image Quality Scanner Process Running in the Background
 
-The quality sorting results will appears in :ref:`the Labels view <labels_view>` from the right sidebar.
+The quality scanning results will appears in the :ref:`Labels view <labels_view>` from the right sidebar.
 
 .. figure:: images/maintenance_pick_labels.webp
     :alt:

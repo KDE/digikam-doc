@@ -122,7 +122,7 @@ Scan Mode:
 Assign labels:
 ~~~~~~~~~~~~~~
 
-    - Select which pick labels to assign to images. This is useful for letting digiKam automatically reject images that do not meet your quality standards, but still allow you to manually assign the other labels.
+    - Select which pick labels to assign to images. This is useful for letting digiKam automatically reject images that do not meet your quality standards, but still allow you to manually assign the other labels. Un-checking all three options renders the Image Quality Scanner functionally useless.
 
 Quality Engine:
 ~~~~~~~~~~~~~~~
@@ -156,4 +156,4 @@ The **Basic Factors** tab lets you control how the selected qualities influence 
 
     The digiKam Image Quality Scan Basic Factors View
 
-The **Basic Factors** method uses four basic factors to rate each image: **Blur, Noise, Exposure, and Compression**. Using basic factors, however, requires fine-tuning by the user and it does not include any assessment of the aesthetic value of the image.
+The **Basic Factors** method uses four basic factors to rate each image: **Blur, Noise, Exposure, and Compression**. Using basic factors, however, requires fine-tuning by the user and it does not include any assessment of the aesthetic value of the image. Un-checking all four options in **Basic Factors** mode renders the Image Quality Scanner functionally useless.

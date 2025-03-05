@@ -157,7 +157,7 @@ These tools allow you to save images to new file formats. These are usually plac
 Metadata Tools
 --------------
 
-    - :ref:`Image Quality Sort <bqm_qualitysort>`
+    - :ref:`Image Quality Scan <bqm_qualityscan>`
 
     - :ref:`Apply Metadata Template <bqm_assigntemplate>`
 

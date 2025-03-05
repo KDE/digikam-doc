@@ -17,12 +17,12 @@
 
 The Batch Manager metadata tools are used to assist with :ref:`Digital Asset Management <asset_management>` by managing metadata values in items within a Queue, by helping to classify contents in your collection, or by preparing files for sharing with other applications.
 
-.. _bqm_qualitysort:
+.. _bqm_qualityscan:
 
-Image Quality Sort
+Image Quality Scan
 ------------------
 
-This tool assesses your items to automatically assign a **Pick Label** based on the aesthetic value of the contents. You can use the fully automated quality assessment based on a deep-learning engine (recommended), or use manual settings for a fixed set of criteria including Blur, Noise, Exposure, and Compression. These settings are fully explained in the :ref:`Image Quality Sorting Settings <imgqsort_settings>` section of this manual.
+This tool assesses your items to automatically assign a **Pick Label** based on the aesthetic value of the contents. You can use the fully automated quality assessment based on a deep-learning engine (recommended), or use manual settings for a fixed set of criteria including Blur, Noise, Exposure, and Compression. These settings are fully explained in the :ref:`Image Quality Scanning Settings <label_imagescan>` topic in the **Labels View** section of this manual.
 
 .. figure:: images/bqm_metadata_quality.webp
     :alt:

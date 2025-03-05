@@ -34,7 +34,6 @@ This section explains all of the customized settings you can use to setup or cus
    setup_application/cm_settings.rst
    setup_application/lighttable_settings.rst
    setup_application/geolocation_settings.rst
-   setup_application/imgqsort_settings.rst
    setup_application/camera_settings.rst
    setup_application/plugins_settings.rst
    setup_application/miscs_settings.rst

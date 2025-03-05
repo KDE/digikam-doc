@@ -15,7 +15,7 @@
 
 Maintenance tools are processes that are run in the background to maintain image collections and the digiKam database.
 
-Depending on your workflow, your digiKam settings, and whether you also work on your image collections with other programs, it might be necessary to run maintenance operations from time to time to update the digiKam **databases**. You may also want to run maintenance tools to **Find Duplicate Items** in your collections, **Detect and recognize faces**, or automatically assign quality labels using the **Image Quality Sorter**. The maintenance tool can do all these things, and more. It can even run multiple tools in one go, depending on your requirements.
+Depending on your workflow, your digiKam settings, and whether you also work on your image collections with other programs, it might be necessary to run maintenance operations from time to time to update the digiKam **databases**. You may also want to run maintenance tools to **Find Duplicate Items** in your collections, **Detect and recognize faces**, or automatically assign quality labels using the **Image Quality Scanner**. The maintenance tool can do all these things, and more. It can even run multiple tools in one go, depending on your requirements.
 
 .. figure:: images/maintenance_tool.webp
     :alt:
@@ -37,10 +37,10 @@ The available maintenance tools are:
 
    5. **Find Duplicate Items**: scan albums to update list of duplicates items based on **Similarity** finger-prints.
 
-   6. **Detect and Recognize Faces**: perform automatic face management updates.
+   6. **Detect and Recognize Faces**: perform automatic face management updates, including full reset.
 
    7. **Auto-tags Assignment**: scan items and add tags based on image content recognized by a neural network.
 
-   8. **Image Quality Sorter**: perform an automatic scan of items to sort items by quality and apply **Pick Labels** in database.
+   8. **Image Quality Scanner**: perform an automatic scan of items and apply **Pick Labels** based on image quality.
 
    9. **Sync Metadata and Database**: perform synchronization of items metadata with database contents or vice versa.

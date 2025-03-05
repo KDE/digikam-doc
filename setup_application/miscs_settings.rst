@@ -277,7 +277,7 @@ This section allows you to adjust special low-level configurations used by digiK
 
 - **Use the software OpenGL rendering**: this option will disable the GPU hardware accelerations and switch to a software-emulation for all calls to OpenGL.
 
-- **Use the OpenCL hardware acceleration**: this option will enable the GPU hardware accelerations with the face management, image quality sorting, and auto-tags features. This option affects the `OpenCV <https://opencv.org/>`_ engine used in the background for intensive computation on images. To see the details about OpenCV hardware support, go to the :menuselection:`Help --> Components Information` menu item, and look at the :ref:`OpenCV section <help_componentsinfo>` in the dialog.
+- **Use the OpenCL hardware acceleration**: this option will enable the GPU hardware accelerations with the face management, image quality scanning, and auto-tags features. This option affects the `OpenCV <https://opencv.org/>`_ engine used in the background for intensive computation on images. To see the details about OpenCV hardware support, go to the :menuselection:`Help --> Components Information` menu item, and look at the :ref:`OpenCV section <help_componentsinfo>` in the dialog.
 
 - **Use the video hardware acceleration**: this option must be used only with compatible hardware GPU devices with the FFmpeg backend. Disable this option if video media decoding errors occur.
 
@@ -302,7 +302,7 @@ This section allows you to adjust special low-level configurations used by digiK
 
     digiKam Running Under Windows With DebugView
 
-- **Download Required Binary Data**: this button loads the deep-learning model files used with the face management, image quality sorting, and auto-tags features. Only use it if you bypassed this stage at the first-run of the application.
+- **Download Required Binary Data**: this button loads the deep-learning model files used with the face management, image quality scanning, and auto-tags features. Only use it if you bypassed this stage at the first-run of the application.
 
 - **Network Proxy Server Settings**: use this group the options to setup the `proxy server <https://en.wikipedia.org/wiki/Proxy_server>`_ settings for your local network. Leave empty if no proxy is required to access the Internet. Available Proxy options are listed below:
 

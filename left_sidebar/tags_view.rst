@@ -25,7 +25,7 @@ Tags, also known as keywords in some applications, are an essential feature in d
 
 4. **Metadata Enhancement**: Tags contribute to enriching the metadata associated with each asset. This additional information can include descriptions, keywords, and other relevant details, providing more context and making the assets more informative.
 
-5. **Workflow Automation**: Tags can be used to automate workflows within digiKam. For example, assets tagged with a certain label can be used in various tools like facial recognition and image quality sorting.
+5. **Workflow Automation**: Tags can be used to automate workflows within digiKam. For example, assets tagged with a certain label can be used in various tools like facial recognition and image quality scanning.
 
 6. **Collaboration**: Tags facilitate collaboration by allowing team members to easily share and access tagged assets. This ensures that everyone involved in a project can quickly find the necessary resources.
 
