@@ -1,13 +1,13 @@
 # Copyright (C) licensed under the  <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License SA 4.0</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 02:29+0000\n"
-"PO-Revision-Date: 2024-12-30 20:17+0200\n"
+"POT-Creation-Date: 2025-03-06 01:54+0000\n"
+"PO-Revision-Date: 2025-03-06 08:57+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -33,22 +33,28 @@ msgstr ""
 "глибинне навчання"
 
 #: ../../maintenance_tools/maintenance_quality.rst:14
-msgid ":ref:`Image Quality Sorter <maintenance_tools>`"
-msgstr ":ref:`Впорядковування зображень за якістю <maintenance_tools>`"
+#| msgid ":ref:`Image Quality Sorter <maintenance_tools>`"
+msgid ":ref:`Image Quality Scanner <maintenance_tools>`"
+msgstr ":ref:`Сканування щодо якості зображень <maintenance_tools>`"
 
 #: ../../maintenance_tools/maintenance_quality.rst:20
-msgid "The digiKam Maintenance Options for Image Quality Sorter"
+#| msgid "The digiKam Maintenance Options for Image Quality Sorter"
+msgid "The digiKam Maintenance Options for Image Quality Scanner"
 msgstr ""
-"Параметри упорядкування зображень за якістю інструмента супроводу збірки "
+"Параметри сканування зображень за якістю інструмента супроводу збірки "
 "digiKam"
 
 #: ../../maintenance_tools/maintenance_quality.rst:22
+#| msgid ""
+#| "The **Image Quality Sorter** tool automatically assesses the **Quality** "
+#| "of each item and assigns a corresponding value to the **Pick Label** "
+#| "property in the database based on:"
 msgid ""
-"The **Image Quality Sorter** tool automatically assesses the **Quality** of "
+"The **Image Quality Scanner** tool automatically assesses the **Quality** of "
 "each item and assigns a corresponding value to the **Pick Label** property "
 "in the database based on:"
 msgstr ""
-"Інструмент **Упорядкувальник зображень за якістю** автоматично оцінює "
+"Інструмент **Сканування зображень за якістю** автоматично оцінює "
 "**Якість** кожного елемента та призначає відповідне значення властивості "
 "**Упорядкувальна мітка** у базі даних на основі:"
 
@@ -66,15 +72,11 @@ msgstr "**Зелений** прапорець для **Прийнятих**."
 
 #: ../../maintenance_tools/maintenance_quality.rst:30
 msgid ""
-"The Image Quality Sorter assigns Pick Labels to items according to the "
-"default settings in :menuselection:`Settings --> Configure digiKam... --> "
-"Image Quality Sorter page`, or the dedicated options set in this view."
+"More information about the **Image Quality Scanner** can be found in the :"
+"ref:`Labels view <label_imagescan>`."
 msgstr ""
-"Засіб упорядковування зображень за якістю призначає впорядкувальні мітки "
-"відповідно до типових параметрів, які визначено за допомогою сторінки :"
-"menuselection:`Параметри --> Налаштувати digiKam... --> сторінка "
-"«Впорядковування зображень за якістю»` або відповідних параметрів, значення "
-"яких скориговано на цій панелі."
+"Докладніші відомості щодо **Засобу сканування зображень за якістю** наведено"
+" у :ref:`розділі щодо панелі позначок <label_imagescan>`."
 
 #: ../../maintenance_tools/maintenance_quality.rst:32
 msgid ""
@@ -124,54 +126,58 @@ msgstr ""
 "або мітками."
 
 #: ../../maintenance_tools/maintenance_quality.rst:42
-msgid ""
-"All the **Image Quality Sorter** settings are described in :ref:`this "
-"section <imgqsort_settings>` of the manual."
-msgstr ""
-"Усі параметри **засобу упорядкування зображень за якістю** описано у :ref:"
-"`відповідному розділі <imgqsort_settings>` підручника."
-
-#: ../../maintenance_tools/maintenance_quality.rst:44
+#| msgid ""
+#| "The **Scan Mode** settings configure how the database information for the "
+#| "items from the selected collection will be processed. **Clean all and re-"
+#| "scan** resets all data and scans all items from scratch, **Scan non-"
+#| "assigned only** will be faster to process just items that have not "
+#| "previously been assigned **Pick Labels**."
 msgid ""
 "The **Scan Mode** settings configure how the database information for the "
-"items from the selected collection will be processed. **Clean all and re-"
-"scan** resets all data and scans all items from scratch, **Scan non-assigned "
-"only** will be faster to process just items that have not previously been "
-"assigned **Pick Labels**."
+"items from the selected collection will be processed. **All** resets all "
+"data and scans all items from scratch, **Non-assigned only** will scan "
+"images that have not previously been assigned **Pick Labels**."
 msgstr ""
 "За допомогою параметрів **Режим сканування** можна налаштувати спосіб "
 "обробки відомостей бази даних для записів з позначеної збірки. Вибір "
-"варіанта **Вилучити усі дані і повторити пошук** призведе до вилучення усіх "
-"даних і повторного сканування усіх записів. Вибір же варіанта **Шукати лише "
+"варіанта **У всіх** призведе до вилучення усіх "
+"даних і повторного сканування усіх записів. Вибір же варіанта **Лише "
 "записи без призначень** пришвидшить обробку, оскільки програма працюватиме "
 "лише з незареєстрованими записами із **впорядкувальними мітками**."
 
-#: ../../maintenance_tools/maintenance_quality.rst:46
+#: ../../maintenance_tools/maintenance_quality.rst:44
+#| msgid ""
+#| "While the image quality sorting process is underway, a progress indicator "
+#| "is displayed in the bottom right corner of the main window."
 msgid ""
-"While the image quality sorting process is underway, a progress indicator is "
-"displayed in the bottom right corner of the main window."
+"While the image quality scanning process is underway, a progress indicator "
+"is displayed in the bottom right corner of the main window."
 msgstr ""
-"Протягом процедури упорядковування зображень за якістю програма показуватиме "
+"Протягом процедури сканування зображень за якістю програма показуватиме "
 "індикатор поступу у нижній правій частині основного вікна."
 
-#: ../../maintenance_tools/maintenance_quality.rst:52
-msgid "The digiKam Image Quality Sorter Process Running in the Background"
+#: ../../maintenance_tools/maintenance_quality.rst:50
+#| msgid "The digiKam Image Quality Sorter Process Running in the Background"
+msgid "The digiKam Image Quality Scanner Process Running in the Background"
 msgstr ""
-"Процес упорядковування зображень digiKam за якістю працює у фоновому режимі"
+"Процес сканування зображень digiKam за якістю працює у фоновому режимі"
 
-#: ../../maintenance_tools/maintenance_quality.rst:54
+#: ../../maintenance_tools/maintenance_quality.rst:52
+#| msgid ""
+#| "The quality sorting results will appears in :ref:`the Labels view "
+#| "<labels_view>` from the right sidebar."
 msgid ""
-"The quality sorting results will appears in :ref:`the Labels view "
+"The quality scanning results will appears in the :ref:`Labels view "
 "<labels_view>` from the right sidebar."
 msgstr ""
-"Результати упорядкування за якістю буде показано на :ref:`панелі перегляду "
-"міток <labels_view>` на правій бічній панелі."
+"Результати сканування за якістю буде показано на :ref:`панелі перегляду"
+" позначок <labels_view>` на правій бічній панелі."
 
-#: ../../maintenance_tools/maintenance_quality.rst:60
+#: ../../maintenance_tools/maintenance_quality.rst:58
 msgid "The digiKam Pick Labels from Left Sidebar"
 msgstr "«Впорядкувальні мітки» digiKam на лівій бічній панелі"
 
-#: ../../maintenance_tools/maintenance_quality.rst:64
+#: ../../maintenance_tools/maintenance_quality.rst:62
 msgid ""
 "To run properly, the process needs access to the deep-learning model that "
 "can be downloaded at the first run of digiKam. See the :ref:`Quick Start "
@@ -180,6 +186,24 @@ msgstr ""
 "Для належної роботи програмі потрібно отримати моделі глибокого навчання під "
 "час першого запуску digiKam. Докладніше про це можна дізнатися з :ref:"
 "`розділу початкових зауважень <quick_start>` підручника."
+
+#~ msgid ""
+#~ "The Image Quality Sorter assigns Pick Labels to items according to the "
+#~ "default settings in :menuselection:`Settings --> Configure digiKam... --> "
+#~ "Image Quality Sorter page`, or the dedicated options set in this view."
+#~ msgstr ""
+#~ "Засіб упорядковування зображень за якістю призначає впорядкувальні мітки "
+#~ "відповідно до типових параметрів, які визначено за допомогою сторінки :"
+#~ "menuselection:`Параметри --> Налаштувати digiKam... --> сторінка "
+#~ "«Впорядковування зображень за якістю»` або відповідних параметрів, "
+#~ "значення яких скориговано на цій панелі."
+
+#~ msgid ""
+#~ "All the **Image Quality Sorter** settings are described in :ref:`this "
+#~ "section <imgqsort_settings>` of the manual."
+#~ msgstr ""
+#~ "Усі параметри **засобу упорядкування зображень за якістю** описано у :ref:"
+#~ "`відповідному розділі <imgqsort_settings>` підручника."
 
 #~ msgid "Image Quality Sorter"
 #~ msgstr "Впорядковування зображень за якістю"

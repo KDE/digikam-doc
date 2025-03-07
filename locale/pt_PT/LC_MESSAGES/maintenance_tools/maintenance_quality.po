@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-16 02:29+0000\n"
+"POT-Creation-Date: 2025-03-06 01:54+0000\n"
 "PO-Revision-Date: 2023-03-03 00:27+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -33,11 +33,13 @@ msgstr ""
 "aprendizagem"
 
 #: ../../maintenance_tools/maintenance_quality.rst:14
-msgid ":ref:`Image Quality Sorter <maintenance_tools>`"
+msgid ":ref:`Image Quality Scanner <maintenance_tools>`"
 msgstr ""
 
 #: ../../maintenance_tools/maintenance_quality.rst:20
-msgid "The digiKam Maintenance Options for Image Quality Sorter"
+#, fuzzy
+#| msgid "The digiKam Maintenance Options for Image Quality Sorter"
+msgid "The digiKam Maintenance Options for Image Quality Scanner"
 msgstr ""
 "As Opções da Ferramenta de Manutenção do digiKam para a Ordenação pela "
 "Qualidade da Imagem"
@@ -48,7 +50,7 @@ msgstr ""
 #| "The tool will parse the items to determine the **Quality** and sort them "
 #| "with the **Pick Label** properties in database as:"
 msgid ""
-"The **Image Quality Sorter** tool automatically assesses the **Quality** of "
+"The **Image Quality Scanner** tool automatically assesses the **Quality** of "
 "each item and assigns a corresponding value to the **Pick Label** property "
 "in the database based on:"
 msgstr ""
@@ -68,21 +70,10 @@ msgid "The **Green** flag for **Accepted**."
 msgstr "A bandeira **Verde** para **Aceite**."
 
 #: ../../maintenance_tools/maintenance_quality.rst:30
-#, fuzzy
-#| msgid ""
-#| "The Image Quality Sorter assigns Pick Labels to items according to the "
-#| "default settings in :menuselection:`Settings --> Configure digiKam...` "
-#| "and the **Image Quality Sorter** settings panel, or a dedicated settings "
-#| "tuned in this view."
 msgid ""
-"The Image Quality Sorter assigns Pick Labels to items according to the "
-"default settings in :menuselection:`Settings --> Configure digiKam... --> "
-"Image Quality Sorter page`, or the dedicated options set in this view."
+"More information about the **Image Quality Scanner** can be found in the :"
+"ref:`Labels view <label_imagescan>`."
 msgstr ""
-"A Ordenação pela Qualidade da Imagem atribui Legendas de Selecção aos itens "
-"de acordo com a configuração predefinida em :menuselection:`Configuração --> "
-"Configurar o digiKam...`, no painel de configuração da **Ordenação da "
-"Qualidade da Imagem** ou com alguma opção dedicada desta janela."
 
 #: ../../maintenance_tools/maintenance_quality.rst:32
 #, fuzzy
@@ -156,19 +147,6 @@ msgstr ""
 #: ../../maintenance_tools/maintenance_quality.rst:42
 #, fuzzy
 #| msgid ""
-#| "All the **Image Quality Sorter** settings is described in :ref:`the "
-#| "dedicated section <imgqsort_settings>` from **Setup Application** section."
-msgid ""
-"All the **Image Quality Sorter** settings are described in :ref:`this "
-"section <imgqsort_settings>` of the manual."
-msgstr ""
-"Todas as definições da **Ordenação da Qualidade da Imagem** estão descritas "
-"na :ref:`secção dedicada à mesma <imgqsort_settings>` na **Configuração da "
-"Aplicação**."
-
-#: ../../maintenance_tools/maintenance_quality.rst:44
-#, fuzzy
-#| msgid ""
 #| "The **Scan Mode** settings allows to configure how the database "
 #| "information for the items from the selected collection will be processed. "
 #| "**Clean all and re-scan** reset all data and scan items from scratch, "
@@ -176,10 +154,9 @@ msgstr ""
 #| "with **Pick Labels**."
 msgid ""
 "The **Scan Mode** settings configure how the database information for the "
-"items from the selected collection will be processed. **Clean all and re-"
-"scan** resets all data and scans all items from scratch, **Scan non-assigned "
-"only** will be faster to process just items that have not previously been "
-"assigned **Pick Labels**."
+"items from the selected collection will be processed. **All** resets all "
+"data and scans all items from scratch, **Non-assigned only** will scan "
+"images that have not previously been assigned **Pick Labels**."
 msgstr ""
 "A configuração do **Modo de Análise** permite configurar como será "
 "processada a informação da base de dados para os itens da colecção "
@@ -188,38 +165,44 @@ msgstr ""
 "atribuídos** será mais rápida para processar os itens não-registados com "
 "**Legendas de Selecção**."
 
-#: ../../maintenance_tools/maintenance_quality.rst:46
+#: ../../maintenance_tools/maintenance_quality.rst:44
 #, fuzzy
 #| msgid ""
 #| "While the image quality sorting process is under progress, notification "
 #| "on the bottom right of main windows will be visible to indicate the "
 #| "amount of items already done."
 msgid ""
-"While the image quality sorting process is underway, a progress indicator is "
-"displayed in the bottom right corner of the main window."
+"While the image quality scanning process is underway, a progress indicator "
+"is displayed in the bottom right corner of the main window."
 msgstr ""
 "Enquanto o processo de ordenação pela qualidade da imagem estiver em curso, "
 "ficará visível uma notificação no canto inferior direito das janelas "
 "principais para indicar a quantidade de itens já processados."
 
-#: ../../maintenance_tools/maintenance_quality.rst:52
-msgid "The digiKam Image Quality Sorter Process Running in the Background"
+#: ../../maintenance_tools/maintenance_quality.rst:50
+#, fuzzy
+#| msgid "The digiKam Image Quality Sorter Process Running in the Background"
+msgid "The digiKam Image Quality Scanner Process Running in the Background"
 msgstr ""
 "O Processo de Ordenação pela Qualidade da Imagem a Executar em Segundo Plano"
 
-#: ../../maintenance_tools/maintenance_quality.rst:54
+#: ../../maintenance_tools/maintenance_quality.rst:52
+#, fuzzy
+#| msgid ""
+#| "The quality sorting results will appears in :ref:`the Labels view "
+#| "<labels_view>` from the right sidebar."
 msgid ""
-"The quality sorting results will appears in :ref:`the Labels view "
+"The quality scanning results will appears in the :ref:`Labels view "
 "<labels_view>` from the right sidebar."
 msgstr ""
 "Os resultados da ordenação pela qualidade irá aparecer na :ref:`área de "
 "Legendas <labels_view>` da barra lateral direita."
 
-#: ../../maintenance_tools/maintenance_quality.rst:60
+#: ../../maintenance_tools/maintenance_quality.rst:58
 msgid "The digiKam Pick Labels from Left Sidebar"
 msgstr "As Legendas de Selecção do digiKam na Barra Lateral Esquerda"
 
-#: ../../maintenance_tools/maintenance_quality.rst:64
+#: ../../maintenance_tools/maintenance_quality.rst:62
 #, fuzzy
 #| msgid ""
 #| "To run properly, the process needs the deep-learning model to download at "
@@ -233,6 +216,36 @@ msgstr ""
 "Para funcionar correctamente, o processo precisa de descarregar primeiro o "
 "modelo de aprendizagem na primeira execução do digiKam. Veja mais detalhes "
 "na :ref:`secção de Introdução Rápida <quick_start>`."
+
+#, fuzzy
+#~| msgid ""
+#~| "The Image Quality Sorter assigns Pick Labels to items according to the "
+#~| "default settings in :menuselection:`Settings --> Configure digiKam...` "
+#~| "and the **Image Quality Sorter** settings panel, or a dedicated settings "
+#~| "tuned in this view."
+#~ msgid ""
+#~ "The Image Quality Sorter assigns Pick Labels to items according to the "
+#~ "default settings in :menuselection:`Settings --> Configure digiKam... --> "
+#~ "Image Quality Sorter page`, or the dedicated options set in this view."
+#~ msgstr ""
+#~ "A Ordenação pela Qualidade da Imagem atribui Legendas de Selecção aos "
+#~ "itens de acordo com a configuração predefinida em :menuselection:"
+#~ "`Configuração --> Configurar o digiKam...`, no painel de configuração da "
+#~ "**Ordenação da Qualidade da Imagem** ou com alguma opção dedicada desta "
+#~ "janela."
+
+#, fuzzy
+#~| msgid ""
+#~| "All the **Image Quality Sorter** settings is described in :ref:`the "
+#~| "dedicated section <imgqsort_settings>` from **Setup Application** "
+#~| "section."
+#~ msgid ""
+#~ "All the **Image Quality Sorter** settings are described in :ref:`this "
+#~ "section <imgqsort_settings>` of the manual."
+#~ msgstr ""
+#~ "Todas as definições da **Ordenação da Qualidade da Imagem** estão "
+#~ "descritas na :ref:`secção dedicada à mesma <imgqsort_settings>` na "
+#~ "**Configuração da Aplicação**."
 
 #~ msgid "Image Quality Sorter"
 #~ msgstr "Ordenação por Qualidade da Imagem"
