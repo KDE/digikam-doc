@@ -42,3 +42,7 @@ The **Database Cleaning** tool analyzes your database files looking for entries 
     :align: center
 
     The digiKam Database process Working in the Background.
+
+.. important::
+
+    A database always grows when new elements are added, even if others are deleted beforehand. The deleted entries are only marked as deleted for performance reasons.
