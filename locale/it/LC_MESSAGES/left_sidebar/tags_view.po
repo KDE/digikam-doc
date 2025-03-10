@@ -1,13 +1,13 @@
 # Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
-# SPDX-FileCopyrightText: 2024 Valter Mura <valtermura@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Valter Mura <valtermura@gmail.com>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.5.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-06 01:54+0000\n"
-"PO-Revision-Date: 2024-12-14 19:27+0100\n"
+"PO-Revision-Date: 2025-03-07 23:23+0100\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.08.3\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #: ../../left_sidebar/tags_view.rst:1
 msgid "digiKam Main Window Tags View"
@@ -717,6 +717,12 @@ msgid ""
 "required binary data** button on the :menuselection:`Settings --> "
 "Miscellaneous --> System` page."
 msgstr ""
+"Per un corretto funzionamento dell'assegnazione dei tag automatici, digiKam "
+"deve scaricare i modelli di apprendimento profondo dalla rete. Questi file "
+"possono essere scaricati sia al primo avvio di digiKam (per i dettagli vedi "
+"la :ref:`sezione Avvio rapido <quick_start>`), sia facendo clic sul pulsante "
+"**Scarica i dati degli eseguibili richiesti** nella pagina "
+":menuselection:`Impostazioni --> Varie --> Sistema`."
 
 #: ../../left_sidebar/tags_view.rst:229
 msgid ""
@@ -726,7 +732,7 @@ msgstr ""
 
 #: ../../left_sidebar/tags_view.rst:234
 msgid "Search-in Tab"
-msgstr ""
+msgstr "Scheda Ricerca in"
 
 #: ../../left_sidebar/tags_view.rst:236
 msgid ""
@@ -742,7 +748,7 @@ msgstr "La vista ad albero nidificata dei tag di digiKam"
 
 #: ../../left_sidebar/tags_view.rst:248
 msgid "Settings Tab"
-msgstr ""
+msgstr "Scheda Impostazioni"
 
 #: ../../left_sidebar/tags_view.rst:250
 msgid ""
@@ -768,6 +774,9 @@ msgid ""
 "For Auto-tagging, there are 4 settings the user can adjust to control how "
 "digiKam detects and tags objects in an image."
 msgstr ""
+"Per l'attribuzione di tag automatici sono regolabili quattro impostazioni "
+"per controllare come digiKam rileva e attribuisce tag agli oggetti in "
+"un'immagine."
 
 #: ../../left_sidebar/tags_view.rst:264
 msgid ""
@@ -776,6 +785,12 @@ msgid ""
 "tag is assigned to images that have been auto-tagged. The **auto** tag is "
 "not assigned to images that have been manually tagged."
 msgstr ""
+"**Modalità di analisi**: questa modalità determina se digiKam analizzerà "
+"tutte le immagini o solo quelle che non hanno già assegnato un tag "
+"**automatico**. Il tag **automatico** viene assegnato alle immagini che sono "
+"state analizzate per l'attribuzione di tag automatici. Il tag **automatico** "
+"non viene assegnato alle immagini i cui tag sono stati attribuiti "
+"manualmente."
 
 #: ../../left_sidebar/tags_view.rst:266
 msgid ""
@@ -787,6 +802,14 @@ msgid ""
 "setting is useful if you want to run multiple scans with different settings "
 "and combine the results."
 msgstr ""
+"**Modalità attribuzione tag automatici**: quando applichi tag automatici, "
+"puoi scegliere tra **Aggiorna** e **Sostituisci esistenti**. **Aggiorna** "
+"aggiungerà tutti i tag automatici nuovi ai tag esistenti nell'immagine. "
+"**Sostituisci esistenti** rimuoverà tutti i tag automatici esistenti e li "
+"sostituirà con quelli individuati dall'attuale analisi. I tag al di fuori "
+"del tag **automatico** non verranno modificati. Questa impostazione è utile "
+"se vuoi avviare più analisi con impostazioni differenti e combinarne i "
+"risultati."
 
 #: ../../left_sidebar/tags_view.rst:268
 msgid ""
@@ -800,6 +823,15 @@ msgid ""
 "processors. Both YOLOv11 models are trained to detect 80 different objects "
 "based on the COCO dataset."
 msgstr ""
+"**Modello di rilevamento**: è la rete neurale per il rilevamento degli "
+"oggetti nell'immagine. Il modello predefinito è **EfficientNet B7**. Questo "
+"è un modello di tipo generale in grado di rilevare 1.000 oggetti e scene "
+"diversi. Il modello **YOLOv11-Nano** è più veloce e utilizza meno memoria "
+"del modello **EfficientNet B7**. **YOLOv11-Nano** è consigliato agli utenti "
+"con memoria del computer limitata o processori lenti, mentre **YOLOv11-"
+"XLarge** è consigliato agli utenti con memoria superiore e processori più "
+"veloci. Entrambi i modelli YOLOv11 sono addestrati per individuare 80 "
+"oggetti differenti basati sull'insieme di dati COCO."
 
 #: ../../left_sidebar/tags_view.rst:270
 msgid ""
@@ -807,10 +839,14 @@ msgid ""
 "but it will also increase the number of incorrectly identified objects "
 "(false positives). The default setting of 7 is recommended for normal use."
 msgstr ""
+"**Accuratezza**: impostazioni di accuratezza più basse possono individuare "
+"più oggetti in un'immagine, ma aumenteranno anche il numero di oggetti "
+"identificati in modo scorretto (falsi positivi). L'impostazione predefinita "
+"7 è consigliata per un uso normale."
 
 #: ../../left_sidebar/tags_view.rst:273
 msgid "Work on all processor cores"
-msgstr ""
+msgstr "Lavora con tutti i core del processore"
 
 #: ../../left_sidebar/tags_view.rst:275
 msgid ""
@@ -825,7 +861,7 @@ msgstr ""
 
 #: ../../left_sidebar/tags_view.rst:280
 msgid "Translate Tab"
-msgstr ""
+msgstr "Scheda Traduci"
 
 #: ../../left_sidebar/tags_view.rst:282
 msgid ""
