@@ -42,3 +42,8 @@ digiKam is a community supported project, which means that users and developers 
 See the `digiKam Users Mailing List joining instructions <https://mail.kde.org/mailman/listinfo/digikam-users>`_ for details.
 
 You can also visit the `digiKam Home Page <https://www.digikam.org/>`_ for news of new releases and other digiKam related information.
+
+Privacy Policy
+--------------
+
+There is no telemetry in digiKam. Nothing is shared or sent on the Internet about the usage of the application or to allow the program to work. All your data is still on your computer.
