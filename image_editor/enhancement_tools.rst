@@ -634,6 +634,9 @@ You can undo and redo using toolbar buttons from the toolbar on the top of setti
 G'MIC-Qt Tool
 -------------
 
+Features
+~~~~~~~~
+
 G'MIC-Qt is 3rd-party image editing tool provided as a plug-in. It is named **G'MIC** for **GREYC’s Magic for Image Computing**, `an open-source image processing framework <https://gmic.eu/>`_. The full list of G'MIC features is long and cannot be detailed here as it comes with over 500 interesting functions to explore. It comes with filters for changing colors, creating patterns, adding artistic touches, repairing inconsistencies in pictures, rendering shapes, and much more. The plugin is highly customizable, with the ability to set favorites and even add your own filters.
 
 G'MIC-Qt is not included in the digiKam source code. Rather, it is a 3rd-party plugin included in binary distributions of digiKam, as the Windows, macOS, and Linux bundles. It can be started from the :menuselection:`Enhance --> G'MIC-Qt` menu entry or use the icons accessible from the Tools tab in the Right sidebar. G’MIC-Qt can be used like other filters, the main difference is that instead of opening a specific filter tab on the right sidebar, it opens up a window where you can pick through any of the pre-defined filters.
@@ -643,6 +646,9 @@ G'MIC-Qt is not included in the digiKam source code. Rather, it is a 3rd-party p
     :align: center
 
     The Image Editor G'MIC-Qt Tool Running the Artistic/Bokeh Filter
+
+Filter Categories
+~~~~~~~~~~~~~~~~~
 
 The categories of **Available filters** in the list are listed below:
 
@@ -802,6 +808,9 @@ The categories of **Available filters** in the list are listed below:
 
             The Image Editor G'MIC-Qt Tool Running the Various/Custom-Code Filter
 
+Dialog Layout
+~~~~~~~~~~~~~
+
 The default layout of G'MIC-Qt is quite simple (this can be changed in the G'MIC-Qt **Settings** dialog). See below the description of each pane:
 
     - On the left, there is the preview. With some filters, the whole image is displayed, and with other filters it will be shown at a 100% crop detail, depending on the kind of effect to be activated.
@@ -817,6 +826,9 @@ You can search a filter using their groups, but the fastest way to find them is 
     :align: center
 
     The Image Editor G'MIC-Qt Tool Filters Tree-View and the Favorites Context Menu
+
+Common Filter Behaviors
+~~~~~~~~~~~~~~~~~~~~~~~
 
 The following behaviors are supported by most of the G'MIC-Qt filters:
 
