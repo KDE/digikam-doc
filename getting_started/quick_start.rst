@@ -117,7 +117,7 @@ Once you have configured the Album Library Folder you can set up digiKam to work
 Artificial Intelligence Files Download
 --------------------------------------
 
-When first run, digiKam will ask to download several large files from an `Internet repository managed by the digiKam team <https://files.kde.org/digikam/>`_. These files are the Artificial Intelligence deep-learning models used for facial recognition, red eye removal, auto-tags, auto transform tools, and the image quality scanning features. If you skip downloading these files, these features will not work properly. But you can always download these files later from the :ref:`Setup/Miscs/System <system_settings>` dialog. An option is provided to help you to clean up older models not used in digiKam when you update the application.
+When first run, digiKam will ask to download several large files from an `Internet repository managed by the digiKam team <https://files.kde.org/digikam/>`_. These files are the Artificial Intelligence deep-learning models used for facial recognition, red eye removal, auto-tags, auto transform tools, and the image quality scanning features. If you skip downloading these files, these features will not work properly. But you can always download these files later from the :ref:`Setup/Miscs/System <system_settings>` dialog. The tool is able to clean up in your computer the older models not used in digiKam when you update the application.
 
 .. important::
 
