@@ -854,6 +854,9 @@ The following behaviors are supported by most of the G'MIC-Qt filters:
 
         The Image Editor G'MIC-Qt Tool Preview Type Settings From the Colors/Color-Blindness Filter
 
+Tool Configuration
+~~~~~~~~~~~~~~~~~~
+
 The **Settings** button on the bottom left will show the G'MIC-Qt configuration dialog with three tabs:
 
     - The **Interface** tab is used to customize the G'MIC-Qt interface, including the layout of the tool panes, the language to enable, the preview behavior, and the native dialog to use.
