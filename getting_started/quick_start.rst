@@ -13,6 +13,9 @@
 :ref:`Quick Start <getting_started>`
 ====================================
 
+The First Run Assistant
+-----------------------
+
 .. figure:: images/firstrun_step1.webp
     :alt:
     :align: center
@@ -111,16 +114,19 @@ Once you have configured the Album Library Folder you can set up digiKam to work
 
 .. _firstrun_downloads:
 
+Artificial Intelligence Files Download
+--------------------------------------
+
+When first run, digiKam will ask to download several large files from an Internet repository managed by the digiKam team. These files are the Artificial Intelligence deep-learning models used for facial recognition, red eye removal, auto-tags, auto transform tools, and the image quality scanning features. If you skip downloading these files, these features will not work properly. But you can always download these files later from the :ref:`Setup/Miscs/System <system_settings>` dialog. An option is provided to help you to clean up older models not used in digiKam when you update the application.
+
 .. important::
 
-    When first run, digiKam will ask to download several large files from an Internet repository managed by the digiKam team. These files are the Artificial Intelligence deep-learning models used for facial recognition, red eye removal, auto-tags, auto transform tools, and the image quality scanning features. If you skip downloading these files, these features will not work properly. But you can always download these files later from the :ref:`Setup/Miscs/System <system_settings>` dialog. An option is provided to help you to clean up older models not used in digiKam when you update the application.
+    All Artificial Intelligence based features in digiKam are fully autonomous and only works on your computer.
 
-.. note::
+No data is shared over the Internet and no extra Cloud webservice are used in all cases. All the neural network engine are based on OpenCV frameworks and download model files are the core data architecture and learned parameters previously computed to realize a specific task, as to recognized a face for example.
 
-    All Artificial Intelligence based features in digiKam are fully autonomous and only works on your computer. Not data is shared over the Internet and no extra Cloud webservice are used in all cases.
+.. figure:: images/models_downloader.webp
+   :alt:
+   :align: center
 
-    .. figure:: images/models_downloader.webp
-        :alt:
-        :align: center
-
-        digiKam First Run Dialog to Download Deep-learning Model Files
+   digiKam First Run Dialog to Download Deep-learning Model Files
