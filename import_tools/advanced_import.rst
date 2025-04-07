@@ -78,13 +78,14 @@ yy                      The year as two digit number (eg. 00 to 99)
 yyyy                    The year as four digit number (eg. 2012)
 ======================= =============================================================================================================================================================================
 
-All other input characters will be treated as text. Any sequence of characters that are enclosed in singlequotes will be treated as text and not be used as an expression. Examples, if date is 20 July 1969:
+All other input characters will be treated as text. Using a path separator in a custom date format will create nested sub-albums. Any sequence of characters that are enclosed in singlequotes will be treated as text and not be used as an expression. Examples, if date is 20 July 1969:
 
 ======================= =============================================================================================================================================================================
 Options                 Description
 ======================= =============================================================================================================================================================================
 dd.MM.yyyy              20.07.1969
 ddd MMMM d yy           Sun July 20 69
+yyyy/MM/dd              1969/07/20
 'Photo shot on ' dddd   Photo shot on Sunday
 ======================= =============================================================================================================================================================================
 
