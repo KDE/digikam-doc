@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-19 01:50+0000\n"
-"PO-Revision-Date: 2025-01-19 13:34+0100\n"
+"POT-Creation-Date: 2025-04-08 01:55+0000\n"
+"PO-Revision-Date: 2025-04-08 09:17+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -249,13 +249,13 @@ msgstr ""
 
 #: ../../import_tools/advanced_import.rst:67
 #: ../../import_tools/advanced_import.rst:84
-#: ../../import_tools/advanced_import.rst:146
+#: ../../import_tools/advanced_import.rst:147
 msgid "Options"
 msgstr "Opcions"
 
 #: ../../import_tools/advanced_import.rst:67
 #: ../../import_tools/advanced_import.rst:84
-#: ../../import_tools/advanced_import.rst:146
+#: ../../import_tools/advanced_import.rst:147
 msgid "Description"
 msgstr "Descripció"
 
@@ -340,15 +340,21 @@ msgid "The year as four digit number (eg. 2012)"
 msgstr "L'any com a número de quatre dígits (p. ex. 2012)"
 
 #: ../../import_tools/advanced_import.rst:81
+#| msgid ""
+#| "All other input characters will be treated as text. Any sequence of "
+#| "characters that are enclosed in singlequotes will be treated as text and "
+#| "not be used as an expression. Examples, if date is 20 July 1969:"
 msgid ""
-"All other input characters will be treated as text. Any sequence of "
+"All other input characters will be treated as text. Using a path separator "
+"in a custom date format will create nested sub-albums. Any sequence of "
 "characters that are enclosed in singlequotes will be treated as text and not "
 "be used as an expression. Examples, if date is 20 July 1969:"
 msgstr ""
-"Tots els altres caràcters d'entrada es tractaran com a text. Qualsevol "
-"seqüència de caràcters que estiguin tancats en cometes simples es tractarà "
-"com a text i no s'utilitzarà com a expressió. Exemples, si la data és el 20 "
-"de juliol de 1969:"
+"Tots els altres caràcters d'entrada es tractaran com a text. L'ús d'un "
+"separador de camins en un format de data personalitzat crearà subàlbums "
+"imbricats. Qualsevol seqüència de caràcters que estiguin tancats en cometes "
+"simples es tractarà com a text i no s'utilitzarà com a expressió. Exemples, "
+"si la data és el 20 de juliol de 1969:"
 
 #: ../../import_tools/advanced_import.rst:86
 msgid "dd.MM.yyyy"
@@ -366,26 +372,34 @@ msgstr "ddd MMMM d yy"
 msgid "Sun July 20 69"
 msgstr "Diu 20 de juliol de 69"
 
-# skip-rule: t-apo_ini, t-apo_fin
 #: ../../import_tools/advanced_import.rst:88
+msgid "yyyy/MM/dd"
+msgstr "yyyy/MM/dd"
+
+#: ../../import_tools/advanced_import.rst:88
+msgid "1969/07/20"
+msgstr "1969/07/20"
+
+# skip-rule: t-apo_ini, t-apo_fin
+#: ../../import_tools/advanced_import.rst:89
 msgid "'Photo shot on ' dddd"
 msgstr "'Foto capturada el ' dddd"
 
-#: ../../import_tools/advanced_import.rst:88
+#: ../../import_tools/advanced_import.rst:89
 msgid "Photo shot on Sunday"
 msgstr "Fotografia feta el diumenge"
 
-#: ../../import_tools/advanced_import.rst:94
+#: ../../import_tools/advanced_import.rst:95
 msgid "On the Fly Operations"
 msgstr "Sobre les operacions al vol"
 
-#: ../../import_tools/advanced_import.rst:100
+#: ../../import_tools/advanced_import.rst:101
 msgid "The Import Tool on the Fly Operations Advanced Settings"
 msgstr ""
 "L'eina d'importació en les opcions de configuració avançada de les "
 "operacions al vol"
 
-#: ../../import_tools/advanced_import.rst:102
+#: ../../import_tools/advanced_import.rst:103
 msgid ""
 "This section of the Settings tab offers several options for making changes "
 "to JPEG images during import. The **Template** drop-down field lets you "
@@ -400,7 +414,7 @@ msgstr ""
 "<templates_settings>`. També podreu accedir al **Gestor de plantilles** amb "
 "el botó d'edició que hi ha a la dreta del camp de la llista desplegable."
 
-#: ../../import_tools/advanced_import.rst:104
+#: ../../import_tools/advanced_import.rst:105
 msgid ""
 "**Write the document name to Exif** and **Fix internal date and time** "
 "writes this information into the respective Exif tags and XMP fields."
@@ -409,7 +423,7 @@ msgstr ""
 "internes** escriuen aquesta informació a dins de les respectives etiquetes "
 "Exif i camps XMP."
 
-#: ../../import_tools/advanced_import.rst:106
+#: ../../import_tools/advanced_import.rst:107
 msgid ""
 "The **Auto-rotate/flip image** checkbox will perform the auto-rotate/flip "
 "action described in :ref:`Lossless Image Rotation <lossless_rotation>`."
@@ -418,7 +432,7 @@ msgstr ""
 "terme l'acció de gir/inversió automàtics descrita a :ref:`Girar la imatge "
 "sense pèrdua <lossless_rotation>`."
 
-#: ../../import_tools/advanced_import.rst:108
+#: ../../import_tools/advanced_import.rst:109
 msgid ""
 "**Convert to lossless file format** allows you to convert the images to PNG, "
 "TIFF, PGF, HEIF, WEBP, AVIF, or JPEG 2000 during import. To learn more about "
@@ -429,15 +443,15 @@ msgstr ""
 "Per a aprendre'n més sobre aquests formats de fitxer, vegeu :ref:`aquesta "
 "secció <image_formats>` del manual."
 
-#: ../../import_tools/advanced_import.rst:113
+#: ../../import_tools/advanced_import.rst:114
 msgid "DNG Convert Options"
 msgstr "Opcions de la conversió a DNG"
 
-#: ../../import_tools/advanced_import.rst:119
+#: ../../import_tools/advanced_import.rst:120
 msgid "The Import Tool DNG Convert Advanced Settings"
 msgstr "L'eina d'importació en la configuració avançada Converteix DNG"
 
-#: ../../import_tools/advanced_import.rst:121
+#: ../../import_tools/advanced_import.rst:122
 msgid ""
 "Checking **Convert RAW images to DNG** in this section enables the automatic "
 "conversion of imported RAW files into DNG files. Several options can be "
@@ -447,14 +461,14 @@ msgstr ""
 "conversió automàtica dels fitxers RAW importats en fitxers DNG. Es poden "
 "seleccionar diverses opcions per a aquesta conversió."
 
-#: ../../import_tools/advanced_import.rst:123
+#: ../../import_tools/advanced_import.rst:124
 msgid ""
 "**Embed original file**: Embeds the original RAW file into the DNG container."
 msgstr ""
 "**Incrusta el fitxer original**: incrusta el fitxer RAW original dins del "
 "contenidor DNG."
 
-#: ../../import_tools/advanced_import.rst:125
+#: ../../import_tools/advanced_import.rst:126
 msgid ""
 "**Lossless Compression**: Enables lossless compression. The difference "
 "between lossy and lossless compression is said to be practically "
@@ -464,7 +478,7 @@ msgstr ""
 "diferència entre la compressió amb pèrdua i sense pèrdua es diu que és "
 "pràcticament indistingible amb DNG."
 
-#: ../../import_tools/advanced_import.rst:127
+#: ../../import_tools/advanced_import.rst:128
 msgid ""
 "**JPEG preview**: Choose whether you want a medium or full size JPEG preview "
 "to be embedded into the DNG container, or none at all."
@@ -473,7 +487,7 @@ msgstr ""
 "mida completa o cap per a ser incrustada al contenidor DNG."
 
 # skip-rule: t-acc_obe
-#: ../../import_tools/advanced_import.rst:129
+#: ../../import_tools/advanced_import.rst:130
 msgid ""
 "Reasons for converting to DNG files are provided in :ref:`this section "
 "<dng_converter>` of the manual. To learn more about the Digital Negative "
@@ -485,16 +499,16 @@ msgstr ""
 "negatiu digital (DNG) utilitzeu l'enllaç `contenidor DNG <https://en."
 "wikipedia.org/wiki/Digital_Negative>`_."
 
-#: ../../import_tools/advanced_import.rst:135
+#: ../../import_tools/advanced_import.rst:136
 msgid "Scripting"
 msgstr "Crear scripts"
 
-#: ../../import_tools/advanced_import.rst:141
+#: ../../import_tools/advanced_import.rst:142
 msgid "The Import Tool Scripting Advanced Settings"
 msgstr ""
 "L'eina d'importació en les opcions de configuració avançada de crear scripts"
 
-#: ../../import_tools/advanced_import.rst:143
+#: ../../import_tools/advanced_import.rst:144
 msgid ""
 "The last section of the Settings tab allows you to run scripts to manipulate "
 "the images during import. You can type the filename of the script into the "
@@ -509,55 +523,55 @@ msgstr ""
 "poden fer servir per a personalitzar la línia d'ordres. Aquestes expressions "
 "es poden utilitzar per personalitzar la línia d'ordres:"
 
-#: ../../import_tools/advanced_import.rst:148
+#: ../../import_tools/advanced_import.rst:149
 msgid "%file"
 msgstr "%file"
 
-#: ../../import_tools/advanced_import.rst:148
+#: ../../import_tools/advanced_import.rst:149
 msgid "Full path of the imported file"
 msgstr "Camí complet del fitxer importat"
 
-#: ../../import_tools/advanced_import.rst:149
+#: ../../import_tools/advanced_import.rst:150
 msgid "%filename"
 msgstr "%filename"
 
-#: ../../import_tools/advanced_import.rst:149
+#: ../../import_tools/advanced_import.rst:150
 msgid "File name of the imported file"
 msgstr "Nom de fitxer del fitxer importat"
 
-#: ../../import_tools/advanced_import.rst:150
+#: ../../import_tools/advanced_import.rst:151
 msgid "%path"
 msgstr "%path"
 
-#: ../../import_tools/advanced_import.rst:150
+#: ../../import_tools/advanced_import.rst:151
 msgid "Path of the imported file"
 msgstr "Camí del fitxer importat"
 
-#: ../../import_tools/advanced_import.rst:151
+#: ../../import_tools/advanced_import.rst:152
 msgid "%orgfilename"
 msgstr "%orgfilename"
 
-#: ../../import_tools/advanced_import.rst:151
+#: ../../import_tools/advanced_import.rst:152
 msgid "Original file name"
 msgstr "Nom del fitxer original"
 
-#: ../../import_tools/advanced_import.rst:152
+#: ../../import_tools/advanced_import.rst:153
 msgid "%orgpath"
 msgstr "%orgpath"
 
-#: ../../import_tools/advanced_import.rst:152
+#: ../../import_tools/advanced_import.rst:153
 msgid "Original path"
 msgstr "Camí original"
 
-#: ../../import_tools/advanced_import.rst:155
+#: ../../import_tools/advanced_import.rst:156
 msgid "If there are no expressions full path is added to the command."
 msgstr "Si no hi ha expressions, s'afegeix el camí complet a l'ordre."
 
-#: ../../import_tools/advanced_import.rst:158
+#: ../../import_tools/advanced_import.rst:159
 msgid "Post-Processing and Metadata"
 msgstr "Postprocessament i les metadades"
 
-#: ../../import_tools/advanced_import.rst:160
+#: ../../import_tools/advanced_import.rst:161
 msgid ""
 "The camera drivers used to import images cannot always read the file "
 "metadata directly from the camera. But digiKam can read all of the metadata "

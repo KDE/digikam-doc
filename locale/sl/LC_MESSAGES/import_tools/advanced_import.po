@@ -6,16 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-19 01:50+0000\n"
-"PO-Revision-Date: 2024-12-18 13:06+0100\n"
+"POT-Creation-Date: 2025-04-08 01:55+0000\n"
+"PO-Revision-Date: 2025-04-08 06:49+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || "
+"n%100==4 ? 3 : 0);\n"
 "X-Generator: Poedit 3.5\n"
 
 #: ../../import_tools/advanced_import.rst:1
@@ -230,13 +230,13 @@ msgstr "Te izraze lahko uporabite za prilagajanje oblike zapisa datuma:"
 
 #: ../../import_tools/advanced_import.rst:67
 #: ../../import_tools/advanced_import.rst:84
-#: ../../import_tools/advanced_import.rst:146
+#: ../../import_tools/advanced_import.rst:147
 msgid "Options"
 msgstr "Možnosti"
 
 #: ../../import_tools/advanced_import.rst:67
 #: ../../import_tools/advanced_import.rst:84
-#: ../../import_tools/advanced_import.rst:146
+#: ../../import_tools/advanced_import.rst:147
 msgid "Description"
 msgstr "Opis"
 
@@ -322,13 +322,15 @@ msgstr "Leto kot štirimestno število (npr. 2012)"
 
 #: ../../import_tools/advanced_import.rst:81
 msgid ""
-"All other input characters will be treated as text. Any sequence of "
+"All other input characters will be treated as text. Using a path separator "
+"in a custom date format will create nested sub-albums. Any sequence of "
 "characters that are enclosed in singlequotes will be treated as text and not "
 "be used as an expression. Examples, if date is 20 July 1969:"
 msgstr ""
-"Vsi drugi vneseni znaki bodo obravnavani kot besedilo. Vsako zaporedje "
-"znakov, ki je v enojnih narekovajih, bo obravnavano kot besedilo in ne bo "
-"uporabljeno kot izraz. Primeri, če je datum 20. julij 1969:"
+"Vsi drugi vneseni znaki bodo obravnavani kot besedilo. Če uporabite ločilo "
+"poti v obliki datuma po meri, boste ustvarili ugnezdene podalbume. Vsako "
+"zaporedje znakov, ki je v enojnih narekovajih, bo obravnavano kot besedilo "
+"in ne bo uporabljeno kot izraz. Primeri, če je datum 20. julij 1969:"
 
 #: ../../import_tools/advanced_import.rst:86
 msgid "dd.MM.yyyy"
@@ -347,22 +349,30 @@ msgid "Sun July 20 69"
 msgstr "Ned Julij 20 69"
 
 #: ../../import_tools/advanced_import.rst:88
+msgid "yyyy/MM/dd"
+msgstr "yyyy/MM/dd"
+
+#: ../../import_tools/advanced_import.rst:88
+msgid "1969/07/20"
+msgstr "1969/07/20"
+
+#: ../../import_tools/advanced_import.rst:89
 msgid "'Photo shot on ' dddd"
 msgstr "'Slika posneta na dan ' dddd"
 
-#: ../../import_tools/advanced_import.rst:88
+#: ../../import_tools/advanced_import.rst:89
 msgid "Photo shot on Sunday"
 msgstr "Slika posneta na dan Nedelja"
 
-#: ../../import_tools/advanced_import.rst:94
+#: ../../import_tools/advanced_import.rst:95
 msgid "On the Fly Operations"
 msgstr "Sprotne operacije"
 
-#: ../../import_tools/advanced_import.rst:100
+#: ../../import_tools/advanced_import.rst:101
 msgid "The Import Tool on the Fly Operations Advanced Settings"
 msgstr "Orodje za uvoz v naprednih nastavitvah operacij"
 
-#: ../../import_tools/advanced_import.rst:102
+#: ../../import_tools/advanced_import.rst:103
 msgid ""
 "This section of the Settings tab offers several options for making changes "
 "to JPEG images during import. The **Template** drop-down field lets you "
@@ -376,7 +386,7 @@ msgstr ""
 "<templates_settings>`. Do **Upravitelja predlog** lahko dostopate tudi z "
 "gumbom za urejanje na desni strani spustnega polja."
 
-#: ../../import_tools/advanced_import.rst:104
+#: ../../import_tools/advanced_import.rst:105
 msgid ""
 "**Write the document name to Exif** and **Fix internal date and time** "
 "writes this information into the respective Exif tags and XMP fields."
@@ -384,7 +394,7 @@ msgstr ""
 "**Ime dokumenta zapišite v Exif** in **Popravi interni datum in čas** te "
 "informacije zapiše v ustrezne značke Exif in polja XMP."
 
-#: ../../import_tools/advanced_import.rst:106
+#: ../../import_tools/advanced_import.rst:107
 msgid ""
 "The **Auto-rotate/flip image** checkbox will perform the auto-rotate/flip "
 "action described in :ref:`Lossless Image Rotation <lossless_rotation>`."
@@ -393,7 +403,7 @@ msgstr ""
 "samodejnega zasuka/obrni, opisano v :ref:`Vrtenje slik brez izgub "
 "<lossless_rotation>`."
 
-#: ../../import_tools/advanced_import.rst:108
+#: ../../import_tools/advanced_import.rst:109
 msgid ""
 "**Convert to lossless file format** allows you to convert the images to PNG, "
 "TIFF, PGF, HEIF, WEBP, AVIF, or JPEG 2000 during import. To learn more about "
@@ -403,15 +413,15 @@ msgstr ""
 "TIFF, PGF, HEIF, WEBP, AVIF ali JPEG 2000 med uvozom. Če želite izvedeti več "
 "o teh formatih datotek, glejte :ref:`ta razdelek <image_formats>` priročnika."
 
-#: ../../import_tools/advanced_import.rst:113
+#: ../../import_tools/advanced_import.rst:114
 msgid "DNG Convert Options"
 msgstr "Možnosti pretvorbe DNG"
 
-#: ../../import_tools/advanced_import.rst:119
+#: ../../import_tools/advanced_import.rst:120
 msgid "The Import Tool DNG Convert Advanced Settings"
 msgstr "Orodje za uvoz DNG Convert Advanced Settings"
 
-#: ../../import_tools/advanced_import.rst:121
+#: ../../import_tools/advanced_import.rst:122
 msgid ""
 "Checking **Convert RAW images to DNG** in this section enables the automatic "
 "conversion of imported RAW files into DNG files. Several options can be "
@@ -421,12 +431,12 @@ msgstr ""
 "pretvorbo uvoženih datotek RAW v datoteke DNG. Za to pretvorbo je mogoče "
 "izbrati več možnosti."
 
-#: ../../import_tools/advanced_import.rst:123
+#: ../../import_tools/advanced_import.rst:124
 msgid ""
 "**Embed original file**: Embeds the original RAW file into the DNG container."
 msgstr "**Vdelaj izvirno datoteko**: Vdela izvirno datoteko RAW v vsebnik DNG."
 
-#: ../../import_tools/advanced_import.rst:125
+#: ../../import_tools/advanced_import.rst:126
 msgid ""
 "**Lossless Compression**: Enables lossless compression. The difference "
 "between lossy and lossless compression is said to be practically "
@@ -436,7 +446,7 @@ msgstr ""
 "stiskanjem z izgubami in stiskanjem brez izgub je praktično rečeno "
 "nerazločljiv z DNG."
 
-#: ../../import_tools/advanced_import.rst:127
+#: ../../import_tools/advanced_import.rst:128
 msgid ""
 "**JPEG preview**: Choose whether you want a medium or full size JPEG preview "
 "to be embedded into the DNG container, or none at all."
@@ -444,7 +454,7 @@ msgstr ""
 "**Predogled JPEG**: Izberite, ali želite, da je v vsebnik DNG vdelan "
 "predogled JPEG srednje ali polne velikosti ali pa ga sploh ne želite."
 
-#: ../../import_tools/advanced_import.rst:129
+#: ../../import_tools/advanced_import.rst:130
 msgid ""
 "Reasons for converting to DNG files are provided in :ref:`this section "
 "<dng_converter>` of the manual. To learn more about the Digital Negative "
@@ -456,15 +466,15 @@ msgstr ""
 "Negative (DNG), uporabite povezavo `DNG vsebnik <https://en.wikipedia.org/"
 "wiki/Digital_Negative>`_."
 
-#: ../../import_tools/advanced_import.rst:135
+#: ../../import_tools/advanced_import.rst:136
 msgid "Scripting"
 msgstr "Skriptiranje"
 
-#: ../../import_tools/advanced_import.rst:141
+#: ../../import_tools/advanced_import.rst:142
 msgid "The Import Tool Scripting Advanced Settings"
 msgstr "Napredne nastavitve za skriptiranje orodja za uvoz"
 
-#: ../../import_tools/advanced_import.rst:143
+#: ../../import_tools/advanced_import.rst:144
 msgid ""
 "The last section of the Settings tab allows you to run scripts to manipulate "
 "the images during import. You can type the filename of the script into the "
@@ -478,55 +488,55 @@ msgstr ""
 "dodatne izraze, ki jih lahko uporabite za prilagajanje ukazne vrstice. Te "
 "izraze lahko uporabite za prilagoditev ukazne vrstice:"
 
-#: ../../import_tools/advanced_import.rst:148
+#: ../../import_tools/advanced_import.rst:149
 msgid "%file"
 msgstr "%file"
 
-#: ../../import_tools/advanced_import.rst:148
+#: ../../import_tools/advanced_import.rst:149
 msgid "Full path of the imported file"
 msgstr "Celotna pot do uvožene datoteke"
 
-#: ../../import_tools/advanced_import.rst:149
+#: ../../import_tools/advanced_import.rst:150
 msgid "%filename"
 msgstr "%filename"
 
-#: ../../import_tools/advanced_import.rst:149
+#: ../../import_tools/advanced_import.rst:150
 msgid "File name of the imported file"
 msgstr "Ime uvožene datoteke"
 
-#: ../../import_tools/advanced_import.rst:150
+#: ../../import_tools/advanced_import.rst:151
 msgid "%path"
 msgstr "%path"
 
-#: ../../import_tools/advanced_import.rst:150
+#: ../../import_tools/advanced_import.rst:151
 msgid "Path of the imported file"
 msgstr "Pot uvožene datoteke"
 
-#: ../../import_tools/advanced_import.rst:151
+#: ../../import_tools/advanced_import.rst:152
 msgid "%orgfilename"
 msgstr "%orgfilename"
 
-#: ../../import_tools/advanced_import.rst:151
+#: ../../import_tools/advanced_import.rst:152
 msgid "Original file name"
 msgstr "Izvorno ime datoteke"
 
-#: ../../import_tools/advanced_import.rst:152
+#: ../../import_tools/advanced_import.rst:153
 msgid "%orgpath"
 msgstr "%orgpath"
 
-#: ../../import_tools/advanced_import.rst:152
+#: ../../import_tools/advanced_import.rst:153
 msgid "Original path"
 msgstr "Izvorna pot"
 
-#: ../../import_tools/advanced_import.rst:155
+#: ../../import_tools/advanced_import.rst:156
 msgid "If there are no expressions full path is added to the command."
 msgstr "Če izrazov ni, se ukazu doda celotna pot."
 
-#: ../../import_tools/advanced_import.rst:158
+#: ../../import_tools/advanced_import.rst:159
 msgid "Post-Processing and Metadata"
 msgstr "Naknadna obdelava in metapodatki"
 
-#: ../../import_tools/advanced_import.rst:160
+#: ../../import_tools/advanced_import.rst:161
 msgid ""
 "The camera drivers used to import images cannot always read the file "
 "metadata directly from the camera. But digiKam can read all of the metadata "

@@ -1,13 +1,13 @@
 # Copyright (C) licensed under the  <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons License SA 4.0</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023, 2024.
+# Yuri Chornoivan <yurchor@ukr.net>, 2022, 2023, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-19 01:50+0000\n"
-"PO-Revision-Date: 2024-12-27 21:38+0200\n"
+"POT-Creation-Date: 2025-04-08 01:55+0000\n"
+"PO-Revision-Date: 2025-04-08 09:45+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -240,13 +240,13 @@ msgstr "Для налаштовування формату дати можна �
 
 #: ../../import_tools/advanced_import.rst:67
 #: ../../import_tools/advanced_import.rst:84
-#: ../../import_tools/advanced_import.rst:146
+#: ../../import_tools/advanced_import.rst:147
 msgid "Options"
 msgstr "Параметри"
 
 #: ../../import_tools/advanced_import.rst:67
 #: ../../import_tools/advanced_import.rst:84
-#: ../../import_tools/advanced_import.rst:146
+#: ../../import_tools/advanced_import.rst:147
 msgid "Description"
 msgstr "Опис"
 
@@ -331,12 +331,19 @@ msgid "The year as four digit number (eg. 2012)"
 msgstr "Рік як чотирицифрове значення (наприклад, 2012)"
 
 #: ../../import_tools/advanced_import.rst:81
+#| msgid ""
+#| "All other input characters will be treated as text. Any sequence of "
+#| "characters that are enclosed in singlequotes will be treated as text and "
+#| "not be used as an expression. Examples, if date is 20 July 1969:"
 msgid ""
-"All other input characters will be treated as text. Any sequence of "
+"All other input characters will be treated as text. Using a path separator "
+"in a custom date format will create nested sub-albums. Any sequence of "
 "characters that are enclosed in singlequotes will be treated as text and not "
 "be used as an expression. Examples, if date is 20 July 1969:"
 msgstr ""
-"Усі інші введені символи вважатимуться текстом. Будь-яка послідовність "
+"Усі інші введені символи вважатимуться текстом. Якщо скористатися"
+" роздільником шляху у нетиповому форматі дати, буде створено вкладені"
+" підальбоми. Будь-яка послідовність "
 "символів, взята в одинарні лапки, вважатиметься текстом і не "
 "використовуватиметься як вираз. Приклади, якщо дата 20 липня 1969 року:"
 
@@ -357,22 +364,30 @@ msgid "Sun July 20 69"
 msgstr "Нд. липень 20 69"
 
 #: ../../import_tools/advanced_import.rst:88
+msgid "yyyy/MM/dd"
+msgstr "yyyy/MM/dd"
+
+#: ../../import_tools/advanced_import.rst:88
+msgid "1969/07/20"
+msgstr "1969/07/20"
+
+#: ../../import_tools/advanced_import.rst:89
 msgid "'Photo shot on ' dddd"
 msgstr "'Фото знято у ' ddd"
 
-#: ../../import_tools/advanced_import.rst:88
+#: ../../import_tools/advanced_import.rst:89
 msgid "Photo shot on Sunday"
 msgstr "Фото знято у нд"
 
-#: ../../import_tools/advanced_import.rst:94
+#: ../../import_tools/advanced_import.rst:95
 msgid "On the Fly Operations"
 msgstr "Параметри дій на льоту"
 
-#: ../../import_tools/advanced_import.rst:100
+#: ../../import_tools/advanced_import.rst:101
 msgid "The Import Tool on the Fly Operations Advanced Settings"
 msgstr "Додаткові параметри інтерактивних дій у засобі імпортування"
 
-#: ../../import_tools/advanced_import.rst:102
+#: ../../import_tools/advanced_import.rst:103
 msgid ""
 "This section of the Settings tab offers several options for making changes "
 "to JPEG images during import. The **Template** drop-down field lets you "
@@ -387,7 +402,7 @@ msgstr ""
 "зможете скористатися засобом керування шаблонами, натиснувши кнопку "
 "редагування, розташовану праворуч від спадного списку."
 
-#: ../../import_tools/advanced_import.rst:104
+#: ../../import_tools/advanced_import.rst:105
 msgid ""
 "**Write the document name to Exif** and **Fix internal date and time** "
 "writes this information into the respective Exif tags and XMP fields."
@@ -396,7 +411,7 @@ msgstr ""
 "внутрішню дату і час** ви можете наказати програмі записати відповідні "
 "відомості до міток Exif і полів XMP."
 
-#: ../../import_tools/advanced_import.rst:106
+#: ../../import_tools/advanced_import.rst:107
 msgid ""
 "The **Auto-rotate/flip image** checkbox will perform the auto-rotate/flip "
 "action described in :ref:`Lossless Image Rotation <lossless_rotation>`."
@@ -406,7 +421,7 @@ msgstr ""
 "віддзеркалення зображення, яку описано у :ref:`розділі щодо обертання "
 "зображень без втрат <lossless_rotation>`."
 
-#: ../../import_tools/advanced_import.rst:108
+#: ../../import_tools/advanced_import.rst:109
 msgid ""
 "**Convert to lossless file format** allows you to convert the images to PNG, "
 "TIFF, PGF, HEIF, WEBP, AVIF, or JPEG 2000 during import. To learn more about "
@@ -418,15 +433,15 @@ msgstr ""
 "більше про ці формати файлів, ознайомтеся із :ref:`цим розділом "
 "<image_formats>` підручника."
 
-#: ../../import_tools/advanced_import.rst:113
+#: ../../import_tools/advanced_import.rst:114
 msgid "DNG Convert Options"
 msgstr "Параметри перетворення на DNG"
 
-#: ../../import_tools/advanced_import.rst:119
+#: ../../import_tools/advanced_import.rst:120
 msgid "The Import Tool DNG Convert Advanced Settings"
 msgstr "Додаткові параметри перетворення DNG у засобі імпортування"
 
-#: ../../import_tools/advanced_import.rst:121
+#: ../../import_tools/advanced_import.rst:122
 msgid ""
 "Checking **Convert RAW images to DNG** in this section enables the automatic "
 "conversion of imported RAW files into DNG files. Several options can be "
@@ -436,14 +451,14 @@ msgstr ""
 "автоматичне перетворення імпортованих файлів RAW на файли DNG. Для цього "
 "перетворення можна вибрати кілька варіантів."
 
-#: ../../import_tools/advanced_import.rst:123
+#: ../../import_tools/advanced_import.rst:124
 msgid ""
 "**Embed original file**: Embeds the original RAW file into the DNG container."
 msgstr ""
 "**Вбудувати початковий файл**: Вбудувати початковий файл цифрового негатива "
 "(RAW) до контейнера DNG."
 
-#: ../../import_tools/advanced_import.rst:125
+#: ../../import_tools/advanced_import.rst:126
 msgid ""
 "**Lossless Compression**: Enables lossless compression. The difference "
 "between lossy and lossless compression is said to be practically "
@@ -452,7 +467,7 @@ msgstr ""
 "**Стискання без втрат**: Увімкнути стискання без втрат. Відмінність між "
 "стисканням з втратами і без втрат для DNG є практично непомітною."
 
-#: ../../import_tools/advanced_import.rst:127
+#: ../../import_tools/advanced_import.rst:128
 msgid ""
 "**JPEG preview**: Choose whether you want a medium or full size JPEG preview "
 "to be embedded into the DNG container, or none at all."
@@ -461,7 +476,7 @@ msgstr ""
 "контейнера DNG зображення попереднього перегляду JPEG у повному або "
 "неповному обсязі чи взагалі не вбудовувати такі зображення."
 
-#: ../../import_tools/advanced_import.rst:129
+#: ../../import_tools/advanced_import.rst:130
 msgid ""
 "Reasons for converting to DNG files are provided in :ref:`this section "
 "<dng_converter>` of the manual. To learn more about the Digital Negative "
@@ -473,15 +488,15 @@ msgstr ""
 "негативів (Digital Negative або DNG), скористайтеся `описом контейнера DNG "
 "<https://en.wikipedia.org/wiki/Digital_Negative>`_."
 
-#: ../../import_tools/advanced_import.rst:135
+#: ../../import_tools/advanced_import.rst:136
 msgid "Scripting"
 msgstr "Скрипти"
 
-#: ../../import_tools/advanced_import.rst:141
+#: ../../import_tools/advanced_import.rst:142
 msgid "The Import Tool Scripting Advanced Settings"
 msgstr "Додаткові параметри обробки скриптами у засобі імпортування"
 
-#: ../../import_tools/advanced_import.rst:143
+#: ../../import_tools/advanced_import.rst:144
 msgid ""
 "The last section of the Settings tab allows you to run scripts to manipulate "
 "the images during import. You can type the filename of the script into the "
@@ -496,55 +511,55 @@ msgstr ""
 "вирази, якими можна скористатися у рядку команди. Для коригування рядка "
 "команди можна скористатися такими виразами:"
 
-#: ../../import_tools/advanced_import.rst:148
+#: ../../import_tools/advanced_import.rst:149
 msgid "%file"
 msgstr "%file"
 
-#: ../../import_tools/advanced_import.rst:148
+#: ../../import_tools/advanced_import.rst:149
 msgid "Full path of the imported file"
 msgstr "Шлях до імпортованого файла повністю"
 
-#: ../../import_tools/advanced_import.rst:149
+#: ../../import_tools/advanced_import.rst:150
 msgid "%filename"
 msgstr "%filename"
 
-#: ../../import_tools/advanced_import.rst:149
+#: ../../import_tools/advanced_import.rst:150
 msgid "File name of the imported file"
 msgstr "Назва імпортованого файла"
 
-#: ../../import_tools/advanced_import.rst:150
+#: ../../import_tools/advanced_import.rst:151
 msgid "%path"
 msgstr "%path"
 
-#: ../../import_tools/advanced_import.rst:150
+#: ../../import_tools/advanced_import.rst:151
 msgid "Path of the imported file"
 msgstr "Шлях до імпортованого файла"
 
-#: ../../import_tools/advanced_import.rst:151
+#: ../../import_tools/advanced_import.rst:152
 msgid "%orgfilename"
 msgstr "%orgfilename"
 
-#: ../../import_tools/advanced_import.rst:151
+#: ../../import_tools/advanced_import.rst:152
 msgid "Original file name"
 msgstr "Назва початкового файла"
 
-#: ../../import_tools/advanced_import.rst:152
+#: ../../import_tools/advanced_import.rst:153
 msgid "%orgpath"
 msgstr "%orgpath"
 
-#: ../../import_tools/advanced_import.rst:152
+#: ../../import_tools/advanced_import.rst:153
 msgid "Original path"
 msgstr "Початковий шлях"
 
-#: ../../import_tools/advanced_import.rst:155
+#: ../../import_tools/advanced_import.rst:156
 msgid "If there are no expressions full path is added to the command."
 msgstr "Якщо вираз не вказано, до команди буде додано шлях повністю."
 
-#: ../../import_tools/advanced_import.rst:158
+#: ../../import_tools/advanced_import.rst:159
 msgid "Post-Processing and Metadata"
 msgstr "Остаточна обробка і метадані"
 
-#: ../../import_tools/advanced_import.rst:160
+#: ../../import_tools/advanced_import.rst:161
 msgid ""
 "The camera drivers used to import images cannot always read the file "
 "metadata directly from the camera. But digiKam can read all of the metadata "
