@@ -320,12 +320,12 @@ Configuration Files
 
 **digiKam**'s application-wide persistent settings are stored in the following locations, depending on your platform.
 
-* **General settings** for the application. Delete this file and restart digiKam to reset the application to *factory* settings
+* **General settings** for mostly all the application configuration. Delete this file and restart digiKam to reset the application to *factory* settings
     - Linux:   :file:`~/.config/digikamrc`
     - Windows: :file:`%LocalAppData%\\digikamrc`
     - macOS:   :file:`~/Library/Preferences/digikamrc`
 
-* **System settings** for the application. Delete this file and restart digiKam to reset the application to *factory* settings
+* **System settings** for the application refering to the all configuration available from *Setup/Miscs/System* dialog page. Delete this file and restart digiKam to reset the application to *factory* settings
     - Linux:   :file:`~/.config/digikam_systemrc`
     - Windows: :file:`%LocalAppData%\\digikam_systemrc`
     - macOS:   :file:`~/Library/Preferences/digikam_systemrc`
@@ -340,19 +340,19 @@ Configuration Files
     - Windows: :file:`%AppData%\\digikam`
     - macOS:   :file:`~/Library/Application Support/digikam`
 
-* Contains **UI configuration**. If your UI is broken, delete this file
+* Contains **UI configuration** eg. the toolbar contents and positions. If your UI is broken, delete this file
     - Linux:   :file:`~/.local/share/kxmlgui5/digikam/digikamui5.rc`
     - Windows: :file:`%LocalAppData%\\kxmlgui5\digikam\\digikamui5.rc`
     - macOS:   :file:`~/Library/Application Support/digikam/kxmlgui5/digikam/digikamui5.rc`
 
 Similar to digiKam, the :ref:`Showfoto stand Alone Image Editor <showfoto_editor>` also has persistent settings stored at the following locations:
 
-* **General settings** for the application. Delete this file and restart digiKam to reset the application to *factory* settings
+* **General settings** for mostly all the application configuration. Delete this file and restart digiKam to reset the application to *factory* settings
     - Linux:   :file:`~/.config/showfotorc`
     - Windows: :file:`%LocalAppData%\\showfotorc`
     - macOS:   :file:`~/Library/Preferences/showfotorc`
 
-* **System settings** for the application. Delete this file and restart digiKam to reset the application to *factory* settings
+* **System settings** for the application refering to the all configuration available from *Setup/Miscs/System* dialog page. Delete this file and restart digiKam to reset the application to *factory* settings
     - Linux:   :file:`~/.config/showfoto_systemrc`
     - Windows: :file:`%LocalAppData%\\showfoto_systemrc`
     - macOS:   :file:`~/Library/Preferences/showfoto_systemrc`
@@ -367,7 +367,7 @@ Similar to digiKam, the :ref:`Showfoto stand Alone Image Editor <showfoto_editor
     - Windows: :file:`%AppData%\\showfoto`
     - macOS:   :file:`~/Library/Application Support/showfoto`
 
-* Contains **UI configuration**. If your UI is broken, delete this file
+* Contains **UI configuration** eg. the toolbar contents and positions. If your UI is broken, delete this file
     - Linux:   :file:`~/.local/share/kxmlgui5/showfoto/showfoto ui5.rc`
     - Windows: :file:`%LocalAppData%\\kxmlgui5\showfoto\\showfotoui5.rc`
     - macOS:   :file:`~/Library/Application Support/showfoto/kxmlgui5/showfoto/showfotoui5.rc`
