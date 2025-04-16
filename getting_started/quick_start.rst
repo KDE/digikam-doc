@@ -131,7 +131,7 @@ No data is shared over the Internet and no extra Cloud webservice are used in al
 
    digiKam First Run Dialog to Download Deep-learning Model Files
 
-.. tips::
+.. note::
 
     If you uses NVIDIA GPU card in your Windows computer, to gain calculation performances with the deep-learning engine used in digiKam (eg. Face Workflow, Auto-Tags, Aesthetic Detection, etc.), it's highly recommended to install the GPU toolkits on your computer available at these urls:
 
