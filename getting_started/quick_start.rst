@@ -121,7 +121,7 @@ When first run, digiKam will ask to download several large files from an `Intern
 
 .. important::
 
-    All Artificial Intelligence based features in digiKam are fully autonomous and only works on your computer.
+    All Artificial Intelligence based features in digiKam are fully autonomous and only works on your computer. Nothing is shared over the Internet.
 
 No data is shared over the Internet and no extra Cloud webservice are used in all cases. The neural network engines are based on the `C++ OpenCV frameworks <https://learnopencv.com/deep-learning-with-opencvs-dnn-module-a-definitive-guide/>`_ and downloaded model files are the core data architecture and learned parameters previously computed to realize a specific task, as to recognized a face for example.
 
@@ -130,3 +130,12 @@ No data is shared over the Internet and no extra Cloud webservice are used in al
    :align: center
 
    digiKam First Run Dialog to Download Deep-learning Model Files
+
+.. tips::
+
+    If you uses NVIDIA GPU card in your computer, to gain calculation performances with the deep-learning engine used in digiKam (eg. Face Workflow, Auto-Tags, Aesthetic Detection, etc.), it's highly recommended to install the GPU toolkits on your computer available at these urls:
+
+    - `CUDA toolkit download page <https://developer.nvidia.com/cuda-downloads>`
+    - `cuDNN toolkit download page <https://developer.nvidia.com/cudnn-downloads>`.
+
+    After the installation, to check if your hardware is well recognized in digiKam, go to *Help/Components Info dialog*, section *OpenCV Configuration*, and looks if *OpenCL Availability* feature is turned on.
