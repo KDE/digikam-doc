@@ -30,7 +30,7 @@ Minimum System Requirements
 
 - **CPU**: x86 Intel, AMD, or Arm; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for deep-learning capabilities such as face detection, image quality scanning, and auto-tags. See details below.
 
-- **GPU**: OpenGL 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible DirectX 9 or 11 drivers. It's highly recommended to use a device with OpenCL support (as CUDA based device like NVIDIA cards) to speed-up Artificial Intelligence engine.
+- **GPU**: OpenGL 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible DirectX 9 or 11 drivers. It's highly recommended to use a device with OpenCL support (as CUDA based device like NVIDIA cards) to speed-up Artificial Intelligence engine. The video card toolkits must be installed on your computer to take effect.
 
 - **RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for deep-learning capabilities such as face detection and image quality scanning. See details below.
 
