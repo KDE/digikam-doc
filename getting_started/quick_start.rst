@@ -135,7 +135,7 @@ No data is shared over the Internet and no extra Cloud webservice are used in al
 
     If you uses NVIDIA GPU card in your Windows computer, to gain calculation performances with the deep-learning engine used in digiKam (eg. Face Workflow, Auto-Tags, Aesthetic Detection, etc.), it's highly recommended to install the GPU toolkits on your computer available at these urls:
 
-    - `CUDA toolkit download page <https://developer.nvidia.com/cuda-downloads>`
-    - `cuDNN toolkit download page <https://developer.nvidia.com/cudnn-downloads>`.
+    - `CUDA toolkit download page <https://developer.nvidia.com/cuda-downloads>`_.
+    - `cuDNN toolkit download page <https://developer.nvidia.com/cudnn-downloads>`_.
 
     After the installation, to check if your hardware is well recognized in digiKam, go to :menuselection:`Help --> Components Info...` :ref:`dialog <help_componentsinfo>`, section *OpenCV Configuration*, and looks if *OpenCL Availability* feature is turned on.
