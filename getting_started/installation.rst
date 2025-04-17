@@ -30,7 +30,7 @@ Minimum System Requirements
 
 - **CPU**: x86 Intel, AMD, or Arm; at least one 2 GHz core for standard photo processing, 4 cores for large photo or panorama processing, 8 cores for Artificial Intelligence usages, such as Face Workflow, Auto-Tags, Aesthetic Detection, Red Eye Removal, and Auto-Transform features.
 
-- **GPU**: `OpenGL <https://en.wikipedia.org/wiki/OpenGL>`_ 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible `DirectX 9 or 11 <https://en.wikipedia.org/wiki/DirectX>`_ drivers. It's highly recommended to use a device with `OpenCL <https://en.wikipedia.org/wiki/OpenCL>`_ support (as CUDA based device like NVIDIA cards) to speed-up Artificial Intelligence engine.
+- **GPU**: `OpenGL <https://en.wikipedia.org/wiki/OpenGL>`_ 2.0 that works correctly and is compatible. On Windows, you can also use a card with good, compatible `DirectX <https://en.wikipedia.org/wiki/DirectX>`_ 9 or 11 drivers. It's highly recommended to use a device with `OpenCL <https://en.wikipedia.org/wiki/OpenCL>`_ support (as CUDA based device like NVIDIA cards) to speed-up Artificial Intelligence engine.
 
 - **RAM**: At least 4 GB for standard photo processing, 8 GB for large photo or panorama processing, 16 GB for Artificial Intelligence capabilities.
 
