@@ -133,4 +133,4 @@ No data is shared over the Internet and no extra Cloud webservice are used in al
 
 .. note::
 
-    A GPU card supporting OpenCL will gain calculation performances with the deep-learning engine used in digiKam. eg. Face Workflow, Auto-Tags, Aesthetic Detection, and AI tools.
+    A GPU card supporting `OpenCL <https://en.wikipedia.org/wiki/OpenCL>`_ will gain calculation performances with the deep-learning engine used in digiKam. eg. Face Workflow, Auto-Tags, Aesthetic Detection, and AI tools.
