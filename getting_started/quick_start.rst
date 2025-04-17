@@ -117,11 +117,11 @@ Once you have configured the Album Library Folder you can set up digiKam to work
 Artificial Intelligence Files Download
 --------------------------------------
 
-When first run, digiKam will ask to download several large files from an `Internet repository managed by the digiKam team <https://files.kde.org/digikam/>`_. These files are the Artificial Intelligence deep-learning models used for facial recognition, red eye removal, auto-tags, auto transform tools, and the image quality scanning features. If you skip downloading these files, these features will not work properly. But you can always download these files later from the :ref:`Setup/Miscs/System <system_settings>` dialog. The tool is able to clean up in your computer the older models not used in digiKam when you update the application.
+When first run, digiKam will ask to download several large files from an `Internet repository managed by the digiKam team <https://files.kde.org/digikam/>`_. These files are the Artificial Intelligence deep-learning models used for the Face Workflow, Auto-Tags, Aesthetic Detection, Red Eye Removal, and Auto-Transform features. If you skip downloading these files, these features will not work properly. But you can always download these files later from the :ref:`Setup/Miscs/System <system_settings>` dialog. The tool is able to clean up in your computer the older models not used in digiKam when you update the application.
 
 .. important::
 
-    All Artificial Intelligence based features in digiKam are fully autonomous and only works on your computer. Nothing is shared over the Internet.
+    All Artificial Intelligence based features in digiKam are fully autonomous and only works on your computer.
 
 No data is shared over the Internet and no extra Cloud webservice are used in all cases. The neural network engines are based on the `C++ OpenCV frameworks <https://learnopencv.com/deep-learning-with-opencvs-dnn-module-a-definitive-guide/>`_ and downloaded model files are the core data architecture and learned parameters previously computed to realize a specific task, as to recognized a face for example.
 
@@ -133,9 +133,4 @@ No data is shared over the Internet and no extra Cloud webservice are used in al
 
 .. note::
 
-    If you uses NVIDIA GPU card in your Windows computer, to gain calculation performances with the deep-learning engine used in digiKam (eg. Face Workflow, Auto-Tags, Aesthetic Detection, etc.), it's highly recommended to install the GPU toolkits on your computer available at these urls:
-
-    - `CUDA toolkit download page <https://developer.nvidia.com/cuda-downloads>`_.
-    - `cuDNN toolkit download page <https://developer.nvidia.com/cudnn-downloads>`_.
-
-    After the installation, to check if your hardware is well recognized in digiKam, go to :menuselection:`Help --> Components Info...` :ref:`dialog <help_componentsinfo>`, section *OpenCV Configuration*, and looks if *OpenCL Availability* feature is turned on.
+    A GPU card supporting OpenCL will gain calculation performances with the deep-learning engine used in digiKam. eg. Face Workflow, Auto-Tags, Aesthetic Detection, and AI tools.
