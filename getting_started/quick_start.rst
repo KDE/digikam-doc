@@ -110,7 +110,7 @@ When you use an existing folder of photographs as the Album Library folder, you 
 
 digiKam uses a dedicated database to store thumbnails produced with an optimized wavelet compression algorithm (PGF). There is no way of hiding non-standard thumbnail folders created by another application from the **Albums** list. If you want to keep them, you could create an Album Category that just contains all the thumbnail Folders and then view your Albums in :menuselection:`View --> Sort Albums --> By Category` order. See :ref:`the Albums section <albums_view>` for more information about Album Categories.
 
-Once you have configured the Album Library Folder you can set up digiKam to work with your digital camera, refer to :ref:`the Camera section <camera_devices>` for more details. Good next steps would be to learn how to use :ref:`Albums <albums_view>` and :ref:`Tags  <tags_view>` to arrange and find your photographs.
+Once you have configured the Album Library Folder you can set up digiKam to work with your digital camera, refer to :ref:`the Camera section <camera_devices>` for more details. Good next steps would be to learn how to use :ref:`Albums <albums_view>` and :ref:`Tags <tags_view>` to arrange and find your photographs.
 
 .. _firstrun_downloads:
 
@@ -133,4 +133,4 @@ No data is shared over the Internet and no extra Cloud webservice are used in al
 
 .. note::
 
-    A GPU card supporting `OpenCL <https://en.wikipedia.org/wiki/OpenCL>`_ will gain calculation performances with the deep-learning engine used in digiKam. eg. Face Workflow, Auto-Tags, Aesthetic Detection, and AI tools.
+    A GPU card supporting `OpenCL <https://en.wikipedia.org/wiki/OpenCL>`_ will gain calculation performances with the deep-learning engine used in digiKam. eg. Face Workflow, Auto-Tags, Aesthetic Detection, and AI tools. Compatibility can be checked in the :ref:`Setting/Miscellaneous/System dialog page <system_settings>`.
