@@ -285,7 +285,7 @@ This section allows you to adjust special low-level configurations used by digiK
         :alt:
         :align: center
 
-        The OpenCL DNN Test Dialog Running under macOS Silicon Computer
+        The OpenCL DNN Compatibility Dialog Running Under macOS Silicon Computer
 
 - **Download Required Binary Data**: this button loads the deep-learning model files used with the face management, image quality scanning, and auto-tags features. Only use it if you bypassed :ref:`this stage at the first-run <firstrun_downloads>` of the application.
 
