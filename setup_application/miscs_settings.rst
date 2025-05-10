@@ -281,6 +281,12 @@ This section allows you to adjust special low-level configurations used by digiK
 
 - **Use the OpenCL hardware acceleration for AI Models**: this option will enable the GPU hardware accelerations with the Artificial Intelligence data model. Typically, the Neural Processing Unit from your video card will be used to handle the inference engine data models. The **Test GPU AI Compatibilty** button allows to start a sequence of checks to report if your hardware supports these features.
 
+    .. figure:: images/setup_miscs_system_opencldnn.webp
+        :alt:
+        :align: center
+
+        The OpenCL DNN Test Dialog Running under macOS Silicon Computer
+
 - **Download Required Binary Data**: this button loads the deep-learning model files used with the face management, image quality scanning, and auto-tags features. Only use it if you bypassed this stage at the first-run of the application.
 
 - **Use the video hardware acceleration**: this option must be used only with compatible hardware GPU devices with the FFmpeg backend. Disable this option if video media decoding errors occur.
