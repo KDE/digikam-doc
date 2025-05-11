@@ -249,8 +249,7 @@ You need to allow the installer to run by clicking on **Open Anyway** in the mac
 |       :alt:                                           |       :alt:                                            |
 |       :align: center                                  |       :align: center                                   |
 +-------------------------------------------------------+--------------------------------------------------------+
-|       The prior Ventura macOS Security Panel to       |       The Ventura and later macOS Security Panel to    |
-|       Authorize digiKam PKG Installation              |       Authorize digiKam PKG Installation               |
+|       The prior and later Ventura macOS Security Panel to Authorize digiKam PKG Installation                   |
 +-------------------------------------------------------+--------------------------------------------------------+
 
 Under macOS Ventura and later, the system will double-ask you to confirm to run the application with the dialog below.
@@ -284,8 +283,7 @@ Once installed, digiKam will need to access some system resources to run properl
 |       :alt:                                                    |       :alt:                                                     |
 |       :align: center                                           |       :align: center                                            |
 +----------------------------------------------------------------+-----------------------------------------------------------------+
-|       The prior Ventura macOS Security and Privacy Panel       |       The Ventura and Later macOS Security and Privacy Panel    |
-|       with the Automation Permissions                          |       with the Automation Permissions                           |
+|       The prior and later Ventura macOS Security and Privacy Panel with the Automation Permissions                               |
 +----------------------------------------------------------------+-----------------------------------------------------------------+
 
 - **Accessibility**: You must allow digiKam to control your computer if you want to change the desktop wallpaper with digiKam.
@@ -296,8 +294,7 @@ Once installed, digiKam will need to access some system resources to run properl
 |       :alt:                                                    |       :alt:                                                     |
 |       :align: center                                           |       :align: center                                            |
 +----------------------------------------------------------------+-----------------------------------------------------------------+
-|       The prior Ventura macOS Security and Privacy Panel       |       The Ventura and Later macOS Security and Privacy Panel    |
-|       with the Accessibility Permissions                       |       with the Accessibility Permissions                        |
+|       The prior and later Ventura macOS Security and Privacy Panel with the Accessibility Permissions                            |
 +----------------------------------------------------------------+-----------------------------------------------------------------+
 
 - **Full Disk**: You must allow digiKam to access files and folders outside the Photos directory, if you place your collections elsewhere on your computer. Also, full disk acess allow digiKam to access data from other applications if you use the gPhoto2 driver to communicate with your camera for example.
