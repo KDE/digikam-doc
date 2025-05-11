@@ -316,7 +316,7 @@ Once installed, digiKam will need to access some system resources to run properl
 |       :alt:                                                    |       :alt:                                                     |
 |       :align: center                                           |       :align: center                                            |
 +----------------------------------------------------------------+-----------------------------------------------------------------+
-|       The prior and later Ventura macOS Security and Privacy Panel with the Photos Access Permissions                         |
+|       The prior and later Ventura macOS Security and Privacy Panel with the Photos Access Permissions                            |
 +----------------------------------------------------------------+-----------------------------------------------------------------+
 
 .. note::
