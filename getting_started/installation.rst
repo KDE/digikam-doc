@@ -238,8 +238,7 @@ When the **PKG** file is downloaded, and the installer is started, Apple Gatekee
 |       :alt:                                           |       :alt:                                            |
 |       :align: center                                  |       :align: center                                   |
 +-------------------------------------------------------+--------------------------------------------------------+
-|       The prior Ventura macOS Warning When you Try    |       The Ventura and later macOS Warning When you Try |
-|       to Run the digiKam Installer after Downloading  |       to Run the digiKam Installer after Downloading   |
+|       The prior and later Ventura macOS Warning When you Try to Run the digiKam Installer after Downloading    |
 +-------------------------------------------------------+--------------------------------------------------------+
 
 You need to allow the installer to run by clicking on **Open Anyway** in the macOS **System Settings/Security and Privacy** dialog (scroll down to see the **Security** section).
