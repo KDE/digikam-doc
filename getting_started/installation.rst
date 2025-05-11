@@ -225,6 +225,111 @@ The non-Signed Package
 
     `Macports <https://www.macports.org/>`_ , which was used to build the digiKam PKG, has a rolling release policy making it difficult to provide binary compatibility with older versions of macOS. Macports packages are frequently updated for security reasons, and this can require a more recent macOS SDK.
 
+    Since macOS Ventura, the System Preference control panel has changed and share the same interface between all Apple devices. As digiKam can be installed with prior version than Ventura, screenshots for both are provided.
+
+GateKeeper Rules
+~~~~~~~~~~~~~~~~
+
+When the **PKG** file is downloaded, and the installer is started, Apple Gatekeeper will display a security warning because the package is not signed.
+
++-------------------------------------------------------+--------------------------------------------------------+
+|    .. figure:: images/macos_legacy_pkg_warning.webp   |    .. figure:: images/macos_ventura_pkg_warning.webp   |
+|       :alt:                                           |       :alt:                                            |
+|       :align: center                                  |       :align: center                                   |
++-------------------------------------------------------+--------------------------------------------------------+
+|       The prior Ventura macOS Warning When you Try    |       The Ventura and later macOS Warning When you Try |
+|       to Run the digiKam Installer after Downloading  |       to Run the digiKam Installer after Downloading   |
++-------------------------------------------------------+--------------------------------------------------------+
+
+You need to allow the installer to run by clicking on **Open Anyway** in the macOS **System Settings/Security and Privacy** dialog (scroll down to see the **Security** section).
+
++-------------------------------------------------------+--------------------------------------------------------+
+|    .. figure:: images/macos_legacy_pkg_security.webp  |    .. figure:: images/macos_ventura_pkg_security.webp  |
+|       :alt:                                           |       :alt:                                            |
+|       :align: center                                  |       :align: center                                   |
++-------------------------------------------------------+--------------------------------------------------------+
+|       The prior Ventura macOS Security Panel to       |       The Ventura and later macOS Security Panel to    |
+|       Authorize digiKam PKG Installation              |       Authorize digiKam PKG Installation               |
++-------------------------------------------------------+--------------------------------------------------------+
+
+Under macOS Ventura and later, the system will double-ask you to confirm to run the application with the dialog below.
+
+.. figure:: images/macos_pkg_ventura_2nd_warning.webp
+    :width: 400px
+    :alt:
+    :align: center
+
+    The digiKam macOS Ventura and Later 2nd confirmation to run the Application
+
+Once the installer is running, follow the instructions from the assistant to install digiKam onto your computer.
+
+.. figure:: images/macos_pkg_installer.webp
+    :width: 400px
+    :alt:
+    :align: center
+
+    The digiKam macOS PKG is running and Ready to Install
+
+Application Permissions
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Once installed, digiKam will need to access some system resources to run properly. The system will ask for permissions when digiKam is run, depending on actions performed by user. See below for some examples of permissions that may need to be set in the macOS **Security and Privacy** policy configuration panel:
+
+- **Automation**: You must allow digiKam to control Apple's Finder app when you try to open an album in the Finder file manager through digiKam.
+
++----------------------------------------------------------------+-----------------------------------------------------------------+
+|    .. figure:: images/macos_legacy_privacy_automation.webp     |    .. figure:: images/macos_ventura_privacy_automation.webp     |
+|       :alt:                                                    |       :alt:                                                     |
+|       :align: center                                           |       :align: center                                            |
++----------------------------------------------------------------+-----------------------------------------------------------------+
+|       The prior Ventura macOS Security and Privacy Panel       |       The Ventura and Later macOS Security and Privacy Panel    |
+|       with the Automation Permissions                          |       with the Automation Permissions                           |
++----------------------------------------------------------------+-----------------------------------------------------------------+
+
+- **Accessibility**: You must allow digiKam to control your computer if you want to change the desktop wallpaper with digiKam.
+
++----------------------------------------------------------------+-----------------------------------------------------------------+
+|    .. figure:: images/macos_legacy_privacy_accessibility.webp  |    .. figure:: images/macos_ventura_privacy_accessibility.webp  |
+|       :alt:                                                    |       :alt:                                                     |
+|       :align: center                                           |       :align: center                                            |
++----------------------------------------------------------------+-----------------------------------------------------------------+
+|       The prior Ventura macOS Security and Privacy Panel       |       The Ventura and Later macOS Security and Privacy Panel    |
+|       with the Accessibility Permissions                       |       with the Accessibility Permissions                        |
++----------------------------------------------------------------+-----------------------------------------------------------------+
+
+- **Full Disk**: You must allow digiKam to access files and folders outside the Photos directory, if you place your collections elsewhere on your computer. Also, full disk acess allow digiKam to access data from other applications if you use the gPhoto2 driver to communicate with your camera for example.
+
+.. figure:: images/macos_legacy_privacy_fulldisk.webp
+    :width: 400px
+    :alt:
+    :align: center
+
+    The macOS Security and Privacy Panel with the Full Disk Access Permissions
+
+- **Photos**: You must allow digiKam to access your photos if you want digiKam to include the Apple Photos collection in your personal account.
+
+.. figure:: images/macos_legacy_privacy_photos.webp
+    :width: 400px
+    :alt:
+    :align: center
+
+    The macOS Security and Privacy Panel with the Photos Access Permissions
+
+.. note::
+
+    When digiKam is first run, if you point your collection to the standard Apple Photo library, MacOS will automatically ask you to grant access to the library.
+
+    .. figure:: images/macos_legacy_grant_access_photos.webp
+        :width: 250px
+        :alt:
+        :align: center
+
+        The macOS dialog to grant access to Apple Photo library
+
+GateKeeper Rules from macOS Ventura and Later
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 When the **PKG** file is downloaded, and the installer is started, Apple Gatekeeper will display a security warning because the package is not signed.
 
 .. figure:: images/macos_pkg_warning.webp
@@ -252,8 +357,8 @@ Once the installer is running, follow the instructions from the assistant to ins
 
     The digiKam macOS PKG is running and Ready to Install
 
-Application Permissions
-~~~~~~~~~~~~~~~~~~~~~~~
+Application Permissions from macOS Ventura and Later
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once installed, digiKam will need to access some system resources to run properly. The system will ask for permissions when digiKam is run, depending on actions performed by user. See below for some examples of permissions that may need to be set in the macOS **Security and Privacy** policy configuration panel:
 
