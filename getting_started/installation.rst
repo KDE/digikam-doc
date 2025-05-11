@@ -234,6 +234,7 @@ When the **PKG** file is downloaded, and the installer is started, Apple Gatekee
 
 +-------------------------------------------------------+--------------------------------------------------------+
 |    .. figure:: images/macos_legacy_pkg_warning.webp   |    .. figure:: images/macos_ventura_pkg_warning.webp   |
+|       :width: 250px                                   |       :width: 250px                                    |
 |       :alt:                                           |       :alt:                                            |
 |       :align: center                                  |       :align: center                                   |
 +-------------------------------------------------------+--------------------------------------------------------+
@@ -245,6 +246,7 @@ You need to allow the installer to run by clicking on **Open Anyway** in the mac
 
 +-------------------------------------------------------+--------------------------------------------------------+
 |    .. figure:: images/macos_legacy_pkg_security.webp  |    .. figure:: images/macos_ventura_pkg_security.webp  |
+|       :width: 250px                                   |       :width: 250px                                    |
 |       :alt:                                           |       :alt:                                            |
 |       :align: center                                  |       :align: center                                   |
 +-------------------------------------------------------+--------------------------------------------------------+
@@ -279,6 +281,7 @@ Once installed, digiKam will need to access some system resources to run properl
 
 +----------------------------------------------------------------+-----------------------------------------------------------------+
 |    .. figure:: images/macos_legacy_privacy_automation.webp     |    .. figure:: images/macos_ventura_privacy_automation.webp     |
+|       :width: 250px                                            |       :width: 250px                                             |
 |       :alt:                                                    |       :alt:                                                     |
 |       :align: center                                           |       :align: center                                            |
 +----------------------------------------------------------------+-----------------------------------------------------------------+
@@ -290,6 +293,7 @@ Once installed, digiKam will need to access some system resources to run properl
 
 +----------------------------------------------------------------+-----------------------------------------------------------------+
 |    .. figure:: images/macos_legacy_privacy_accessibility.webp  |    .. figure:: images/macos_ventura_privacy_accessibility.webp  |
+|       :width: 250px                                            |       :width: 250px                                             |
 |       :alt:                                                    |       :alt:                                                     |
 |       :align: center                                           |       :align: center                                            |
 +----------------------------------------------------------------+-----------------------------------------------------------------+
