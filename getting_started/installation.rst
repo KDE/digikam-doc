@@ -249,7 +249,7 @@ You need to allow the installer to run by clicking on **Open Anyway** in the mac
 |       :alt:                                           |       :alt:                                            |
 |       :align: center                                  |       :align: center                                   |
 +-------------------------------------------------------+--------------------------------------------------------+
-|       The prior and later Ventura macOS Security Panel to Authorize digiKam PKG Installation                   |
+|       The prior and later Ventura macOS Security Panel to Authorize the digiKam Package Installation to Run    |
 +-------------------------------------------------------+--------------------------------------------------------+
 
 Under macOS Ventura and later, the system will double-ask you to confirm to run the application with the dialog below.
