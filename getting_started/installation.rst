@@ -299,25 +299,38 @@ Once installed, digiKam will need to access some system resources to run properl
 
 - **Full Disk**: You must allow digiKam to access files and folders outside the Photos directory, if you place your collections elsewhere on your computer. Also, full disk acess allow digiKam to access data from other applications if you use the gPhoto2 driver to communicate with your camera for example.
 
-.. figure:: images/macos_legacy_privacy_fulldisk.webp
-    :width: 400px
-    :alt:
-    :align: center
-
-    The macOS Security and Privacy Panel with the Full Disk Access Permissions
++----------------------------------------------------------------+-----------------------------------------------------------------+
+|    .. figure:: images/macos_legacy_privacy_fulldisk.webp       |    .. figure:: images/macos_ventura_privacy_fulldisk.webp       |
+|       :width: 250px                                            |       :width: 250px                                             |
+|       :alt:                                                    |       :alt:                                                     |
+|       :align: center                                           |       :align: center                                            |
++----------------------------------------------------------------+-----------------------------------------------------------------+
+|       The prior and later Ventura macOS Security and Privacy Panel with the Full Disk Access Permissions                         |
++----------------------------------------------------------------+-----------------------------------------------------------------+
 
 - **Photos**: You must allow digiKam to access your photos if you want digiKam to include the Apple Photos collection in your personal account.
 
-.. figure:: images/macos_legacy_privacy_photos.webp
-    :width: 400px
-    :alt:
-    :align: center
-
-    The macOS Security and Privacy Panel with the Photos Access Permissions
++----------------------------------------------------------------+-----------------------------------------------------------------+
+|    .. figure:: images/macos_legacy_privacy_photos.webp         |    .. figure:: images/macos_ventura_privacy_photos.webp         |
+|       :width: 250px                                            |       :width: 250px                                             |
+|       :alt:                                                    |       :alt:                                                     |
+|       :align: center                                           |       :align: center                                            |
++----------------------------------------------------------------+-----------------------------------------------------------------+
+|       The prior and later Ventura macOS Security and Privacy Panel with the Photos Access Permissions                         |
++----------------------------------------------------------------+-----------------------------------------------------------------+
 
 .. note::
 
     When digiKam is first run, if you point your collection to the standard Apple Photo library, MacOS will automatically ask you to grant access to the library.
+
+    +----------------------------------------------------------------+-----------------------------------------------------------------+
+    |    .. figure:: images/macos_legacy_grant_access_photos.webp    |    .. figure:: images/macos_ventura_grant_access_photos.webp    |
+    |       :width: 250px                                            |       :width: 250px                                             |
+    |       :alt:                                                    |       :alt:                                                     |
+    |       :align: center                                           |       :align: center                                            |
+    +----------------------------------------------------------------+-----------------------------------------------------------------+
+    |       The prior and later Ventura macOS dialog to grant access to Apple Photo library at application start-up                    |
+    +----------------------------------------------------------------+-----------------------------------------------------------------+
 
     .. figure:: images/macos_legacy_grant_access_photos.webp
         :width: 250px
