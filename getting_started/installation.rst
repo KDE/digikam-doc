@@ -254,7 +254,7 @@ You need to allow the installer to run by clicking on **Open Anyway** in the mac
 
 Under macOS Ventura and later, the system will double-ask you to confirm to run the application with the dialog below.
 
-.. figure:: images/macos_pkg_ventura_2nd_warning.webp
+.. figure:: images/macos_ventura_pkg_2nd_warning.webp
     :width: 400px
     :alt:
     :align: center
