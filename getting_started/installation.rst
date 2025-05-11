@@ -255,7 +255,7 @@ You need to allow the installer to run by clicking on **Open Anyway** in the mac
 Under macOS Ventura and later, the system will double-ask you to confirm to run the application with the dialog below.
 
 .. figure:: images/macos_ventura_pkg_2nd_warning.webp
-    :width: 400px
+    :width: 250px
     :alt:
     :align: center
 
@@ -320,98 +320,6 @@ Once installed, digiKam will need to access some system resources to run properl
     When digiKam is first run, if you point your collection to the standard Apple Photo library, MacOS will automatically ask you to grant access to the library.
 
     .. figure:: images/macos_legacy_grant_access_photos.webp
-        :width: 250px
-        :alt:
-        :align: center
-
-        The macOS dialog to grant access to Apple Photo library
-
-GateKeeper Rules from macOS Ventura and Later
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-When the **PKG** file is downloaded, and the installer is started, Apple Gatekeeper will display a security warning because the package is not signed.
-
-.. figure:: images/macos_pkg_warning.webp
-    :width: 250px
-    :alt:
-    :align: center
-
-    The macOS Warning When you Try to Run the digiKam Installer after Downloading
-
-You need to allow the installer to run by clicking on **Open Anyway** in the macOS **System Settings/Security and Privacy** dialog (scroll down to see the **Security** section).
-
-.. figure:: images/macos_pkg_security.webp
-    :width: 400px
-    :alt:
-    :align: center
-
-    The macOS Security Panel to Authorize digiKam PKG Installation
-
-Once the installer is running, follow the instructions from the assistant to install digiKam onto your computer.
-
-.. figure:: images/macos_pkg_installer.webp
-    :width: 400px
-    :alt:
-    :align: center
-
-    The digiKam macOS PKG is running and Ready to Install
-
-Application Permissions from macOS Ventura and Later
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Once installed, digiKam will need to access some system resources to run properly. The system will ask for permissions when digiKam is run, depending on actions performed by user. See below for some examples of permissions that may need to be set in the macOS **Security and Privacy** policy configuration panel:
-
-- **Automation**: You must allow digiKam to control Apple's Finder app when you try to open an album in the Finder file manager through digiKam.
-
-.. figure:: images/macos_privacy_automation.webp
-    :width: 400px
-    :alt:
-    :align: center
-
-    The macOS Security and Privacy Panel with the Automation Permissions
-
-- **Accessibility**: You must allow digiKam to control your computer if you want to change the desktop wallpaper with digiKam.
-
-.. figure:: images/macos_privacy_accessibility.webp
-    :width: 400px
-    :alt:
-    :align: center
-
-    The macOS Security and Privacy Panel with the Accessibility Permissions
-
-- **Files And Folders**: You must allow digiKam to access files and folders outside the Photos directory, if you place your collections elsewhere on your computer.
-
-.. figure:: images/macos_privacy_filesfolders.webp
-    :width: 400px
-    :alt:
-    :align: center
-
-    The macOS Security and Privacy Panel with the Files and Folders Access Rights
-
-- **Full Disk**: You must allow digiKam to access data from other applications if you use the gPhoto2 driver to communicate with your camera.
-
-.. figure:: images/macos_privacy_fulldisk.webp
-    :width: 400px
-    :alt:
-    :align: center
-
-    The macOS Security and Privacy Panel with the Full Disk Access Permissions
-
-- **Photos**: You must allow digiKam to access your photos if you want digiKam to include the Apple Photos collection in your personal account.
-
-.. figure:: images/macos_privacy_photos.webp
-    :width: 400px
-    :alt:
-    :align: center
-
-    The macOS Security and Privacy Panel with the Photos Access Permissions
-
-.. note::
-
-    When digiKam is first run, if you point your collection to the standard Apple Photo library, MacOS will automatically ask you to grant access to the library.
-
-    .. figure:: images/macos_grant_access_photos.webp
         :width: 250px
         :alt:
         :align: center
