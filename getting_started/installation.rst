@@ -332,13 +332,6 @@ Once installed, digiKam will need to access some system resources to run properl
     |       The prior and later Ventura macOS dialog to grant access to Apple Photo library at application start-up                    |
     +----------------------------------------------------------------+-----------------------------------------------------------------+
 
-    .. figure:: images/macos_legacy_grant_access_photos.webp
-        :width: 250px
-        :alt:
-        :align: center
-
-        The macOS dialog to grant access to Apple Photo library
-
 .. _configuration_files:
 
 Configuration Files
