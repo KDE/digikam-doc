@@ -297,7 +297,7 @@ Once installed, digiKam will need to access some system resources to run properl
 |       The prior and later Ventura macOS Security and Privacy Panel with the Accessibility Permissions                            |
 +----------------------------------------------------------------+-----------------------------------------------------------------+
 
-- **Full Disk**: You must allow digiKam to access files and folders outside the Photos directory, if you place your collections elsewhere on your computer. Also, full disk acess allow digiKam to access data from other applications if you use the gPhoto2 driver to communicate with your camera for example.
+- **Full Disk**: You must allow digiKam to access files and folders outside the Photos directory, if you place your collections elsewhere on your computer. Also, full disk access allow digiKam to access data from other applications if you use the gPhoto2 driver to communicate with your camera for example.
 
 +----------------------------------------------------------------+-----------------------------------------------------------------+
 |    .. figure:: images/macos_legacy_privacy_fulldisk.webp       |    .. figure:: images/macos_ventura_privacy_fulldisk.webp       |
