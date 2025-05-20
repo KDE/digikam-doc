@@ -897,3 +897,35 @@ Layers Mode Tool
 ~~~~~~~~~~~~~~~~
 
 The G'MIC-Qt tool is available to run over a stack of images to assemble items together for example. This tool version is available from the :menuselection:`Tools --> G'MIC-Qt (layers)` menu entry or use the icons accessible from the Tools tab in the Right sidebar.
+
+Open files to process together in Image Editor and start the **G'MIC-Qt (layers)** tool.
+
+.. figure:: images/editor_gmicqt_layers_menu.webp
+    :alt:
+    :align: center
+
+    The Image Editor G'MIC-Qt (layers) Tool Menu Entry
+
+Select a filter working with layers. Not all G'MIC-Qt filter support this mode. In the example below, the **Montage** filter is used to compose a mosaic of selected images.
+
+.. figure:: images/editor_gmicqt_layers_filter_mode.webp
+    :alt:
+    :align: center
+
+    The Image Editor G'MIC-Qt Montage Tool Generating a Mosaic of Selected Images
+
+Press **Select Filter** Button and a post processing dialog will list all tasks to complete the target image.
+
+.. figure:: images/editor_gmicqt_layers_processing.webp
+    :alt:
+    :align: center
+
+    The Image Editor G'MIC-Qt Layers Post Processing Dialog
+
+The target image can be visualized in image editor after closing the post-processing dialog.
+
+.. figure:: images/editor_gmicqt_layers_result.webp
+    :alt:
+    :align: center
+
+    The Image Editor G'MIC-Qt Layers Post Processing Result
