@@ -827,6 +827,14 @@ You can search a filter using their groups, but the fastest way to find them is 
 
     The Image Editor G'MIC-Qt Tool Filters Tree-View and the Favorites Context Menu
 
+Some keywords to know in your filter searches:
+
+    - Frame: to add a border on your image.
+    - Blend: to merge images together.
+    - Sharp: to enhance details on your image.
+    - Upscale: to enlarge your image.
+    - Smooth: to cleanup your image.
+
 Common Filter Behaviors
 ~~~~~~~~~~~~~~~~~~~~~~~
 
