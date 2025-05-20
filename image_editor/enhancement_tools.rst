@@ -893,6 +893,8 @@ The **Settings** button on the bottom left will show the G'MIC-Qt configuration 
 
 We suggest you explore all the available effects in G'MIC-Qt, as you can find interesting artistic solutions for your photo. See `this online review <https://jpfleury.github.io/gfo-demos/demos/fruits-400/index.html>`_ of all G'MIC-Qt filters for details.
 
+.. _enhance_gmicqt_layers:
+
 Layers Mode Tool
 ~~~~~~~~~~~~~~~~
 
