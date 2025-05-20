@@ -415,6 +415,12 @@ The Tools Menu
 
     See :ref:`this section <send_images>` for more information.
 
+:menuselection:`Tools --> G'MIC-Qt (layers)`
+
+    Tool to apply a G'MIC filter using stacked images as layers.
+
+    See :ref:`this section <enhance_gmicqt_layers>` for more information.
+
 .. _menu_mainimport:
 
 The Import Menu
