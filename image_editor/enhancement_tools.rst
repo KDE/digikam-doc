@@ -908,7 +908,7 @@ Open files to process together in Image Editor and start the **G'MIC-Qt (layers)
 
     The Image Editor G'MIC-Qt (layers) Tool Menu Entry
 
-A settings dialog appears where you can customize the images corresponding to the **Input** layers on the first tab.
+A settings dialog appears where you can customize the images corresponding to the **Input** layers on the first tab. The first layer handled by the G'MIC filter is on the top of the list.
 
 .. figure:: images/editor_gmicqt_layers_settings_input.webp
     :alt:
