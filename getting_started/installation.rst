@@ -394,7 +394,7 @@ Similar to digiKam, the :ref:`Showfoto stand Alone Image Editor <showfoto_editor
 .. note::
 
     - Under **Linux** and **macOS**, the character '**~**' indicates the home directory on the system of the current user.
-    - Under **Windows**, the **%_VariableName_%** indicate a `special folder <https://en.wikipedia.org/wiki/Special_folder#List_of_special_folders>`_ on the system.
+    - Under **Windows**, the **%_VariableName_%** indicate a `special folder <https://en.wikipedia.org/wiki/Special_folder#List_of_special_folders>`_ on the system generaly pointing to a cached directory from the user space.
 
 Application Updates
 -------------------
