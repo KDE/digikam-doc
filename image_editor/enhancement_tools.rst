@@ -951,3 +951,7 @@ The target image can be visualized in image editor after closing the post-proces
 .. note::
 
     The **G'MIC-Qt (layers)** tool is also available by the same menu entry in **Album Icon-View** and **Light-Table**.
+
+.. warning::
+
+    The G'MIC filter used in layer mode will load all necessary images in memory to be processed. Working on a large amount of files at the same time will consume a lot of RAM on your computer and can fail to achieve.
