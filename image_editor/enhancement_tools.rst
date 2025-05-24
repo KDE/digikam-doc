@@ -948,7 +948,7 @@ The target image can be visualized in image editor after closing the post-proces
 
     The Image Editor G'MIC-Qt Layers Post Processing Result
 
-.. note::
+.. tip::
 
     The **G'MIC-Qt (layers)** tool is also available by the same menu entry in **Album Icon-View** and **Light-Table**.
 
