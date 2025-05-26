@@ -848,7 +848,7 @@ The following behaviors are supported by most of the G'MIC-Qt filters:
 
         The Image Editor G'MIC-Qt Tool Progress Bar
 
-    - If you previously select an area on the editor canvas before to lauch G'MIC-Qt, filters will be applied on this region instead of the whole image.
+    - If you previously select an area on the editor canvas before to launch G'MIC-Qt, filters will be applied on this region instead of the whole image.
 
     - If a filter has many parameter settings, some may not be visible; use the scroll bar to access more settings. Also, it's possible to enlarge the G'MIC-Qt dialog if necessary, or switch to **Fullscreen** with the button on the bottom.
 
