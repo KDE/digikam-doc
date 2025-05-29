@@ -900,6 +900,10 @@ Layers Mode Tool
 
 The G'MIC-Qt tool is available to run over a stack of images to assemble items together for example. This tool version is available from the :menuselection:`Tools --> G'MIC-Qt (layers)` menu entry or use the icons accessible from the Tools tab in the Right sidebar.
 
+.. note::
+
+    This tool do not process items one by one in batch. Please use the Batch Queue Manager :ref:`G'MIC Processor <bqm_gmictools>` instead.
+
 Open files to process together in Image Editor and start the **G'MIC-Qt (layers)** tool.
 
 .. figure:: images/editor_gmicqt_layers_menu.webp
