@@ -964,10 +964,16 @@ The target images can be visualized in image editor after closing the wizard dia
 
     The Image Editor G'MIC-Qt Layers Post Processing Result
 
+.. warning::
+
+    The G'MIC filter used in layer mode will load all necessary images in memory to be processed. Working on a large amount of files at the same time will consume a lot of RAM on your computer and can fail to achieve if your hardware have not enough free memory available.
+
 .. tip::
 
     The **G'MIC-Qt (layers)** tool is also available by the same menu entry in **Album Icon-View** and **Light-Table**. For the first one, the stack can be prepared by selecting items from the icon-view. For the second one, the stack will correspond to the items placed in the Light-Table.
 
-.. warning::
+    .. figure:: images/editor_gmicqt_layers_iconview.webp
+        :alt:
+        :align: center
 
-    The G'MIC filter used in layer mode will load all necessary images in memory to be processed. Working on a large amount of files at the same time will consume a lot of RAM on your computer and can fail to achieve if your hardware have not enough free memory available.
+        The G'MIC-Qt Layers Tool Available from Album Icon-View
