@@ -63,6 +63,14 @@ The field labeled **Find items that have associated all these words:** is just a
 
 Click on one of the blue categories and an area will fold out with all the fields you can search for in the selected category. Different input fields are displayed for your search, depending on the kind of data each field contains. Sometimes more than one type of input are available for the same field. Selection buttons are used for simple fields, e.g. for colors. Others inputs use plain text fields, drop down lists and checkboxes. Many fields have two input fields allowing you to define a range, e.g. **Find items with a width between**. And often you find the word "Any" which looks like a link but opens a drop down field with checkboxes for the possible contents of that field.
 
+.. note:
+
+    The **Return pictures in Tags** propose a drop-down menu with extra options to tune the search:
+
+        - **In All**: All selected tags must be included in the image.
+        - **In One Of**: One of the selected tags must be included in the image.
+        - **In Tree**: In Tree searches for all images contained in the tag hierarchy.
+
 .. figure:: images/left_sidebar_advancedsearchtool2.webp
     :alt:
     :align: center
