@@ -31,11 +31,18 @@ Scan Operations
 
     The digiKam Behavior Configuration Page
 
+.. warning::
+
+    All these options may introduce latency during the use of digiKam usage or the application startup. Enable these options only if know what you are doing.
+
+
 The **Scan for new items at startup** forces digiKam to scan all collections for new items each time digiKam is run. The scan is performed in the background when the digiKam main interface is loaded. The progress of the scan is displayed in the status bar. If your computer is fast enough, digiKam should be perfectly usable while scanning for new items. You probably should disable this option if your collections are huge, or if you use a remote database. In these cases, you should perform manual scans for new items when needed using :menuselection:`Tool --> Scan for new items`.
 
 The **Fast Scan** option significantly speeds up the scan, looking for new items, deleted items and renamed items. Disable this option if you need to scan for items that are not new, but have been changed.
 
 The **Detect faces in newly added images** option will automatically perform face detection on items imported to the collections.
+
+The **Enable background face recognition scan** option will automatically start a background face recognition scan when a new face is tagged. This will make the tagging process easier but can slow down the face management workflow if the collection contains a lot of items and if your computer is slower.
 
 The **Remove obsolete core database objects** option forces digiKam to clean up the core database by removing obsolete item entries, which are entries that no longer point to an item stored in the collection. This option does not clean up the thumbnails or face recognition databases. (The maintenance tool provides options for cleaning up the other databases.) Enabling this option will slow down digiKam's startup.
 
