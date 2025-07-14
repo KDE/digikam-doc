@@ -20,17 +20,19 @@ msgstr ""
 
 #: ../../batch_queue/dng_converter.rst:-1
 msgid "digiKam DNG Converter from Batch Queue Manager"
-msgstr ""
+msgstr "批处理管理器中的 digiKam DNG 转换器"
 
 #: ../../batch_queue/dng_converter.rst:-1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, batch, dng, converter"
 msgstr ""
+"digiKam, 文档, 用户手册, 照片管理, 开源, 免费, 学习, 轻松, 批处理, dng, 转换"
+"器"
 
 #: ../../batch_queue/dng_converter.rst:14
 msgid ":ref:`DNG Converter <batch_queue>`"
-msgstr ""
+msgstr ":ref:`DNG 转换工具 <batch_queue>`"
 
 #: ../../batch_queue/dng_converter.rst:16
 msgid ""
@@ -39,6 +41,8 @@ msgid ""
 "do that. After all, digiKam can handle RAW files without any problem, so "
 "what’s the point of adding one more step to your photographic workflow?"
 msgstr ""
+"digiKam 自带一个很实用的批量工具，能把 RAW 文件转成 DNG 格式。你可能会问：既"
+"然 digiKam 本来就能直接处理 RAW 文件，何必多此一举？"
 
 #: ../../batch_queue/dng_converter.rst:18
 msgid ""
@@ -49,6 +53,8 @@ msgid ""
 "while Nikon cameras use the NEF format. Besides being proprietary, RAW "
 "formats are often poorly documented and encumbered by patents."
 msgstr ""
+"要知道，RAW 其实不是单一格式，而是各家相机厂商专属格式的统称。比如佳能用 "
+"CR3，尼康用 NEF。这些私有格式不仅文档不全，还受专利限制。"
 
 #: ../../batch_queue/dng_converter.rst:20
 msgid ""
@@ -61,6 +67,11 @@ msgid ""
 "articles and links Web site <http://www.barrypearson.co.uk/articles/dng/>`_ "
 "also provides a wealth of valuable information on the topic."
 msgstr ""
+"Adobe 公司在 2004 年推出的 `DNG（Digital Negative） <https://en.wikipedia."
+"org/wiki/Digital_Negative>`_ 格式就解决了这些问题——它基于 TIFF-EP 标准，开放"
+"且文档齐全。想深入了解 DNG 可以查看本手册的 :ref:`数字资产管理"
+"<dam_fileformats>` 章节，或者参考 `DNG 专题网站 <http://www.barrypearson.co."
+"uk/articles/dng/>`_ 。"
 
 #: ../../batch_queue/dng_converter.rst:22
 msgid ""
@@ -72,12 +83,15 @@ msgid ""
 "nowadays, and the Batch Queue Manager DNG Converter utility makes it "
 "extremely easy to convert RAW files to the DNG format."
 msgstr ""
+"DNG 特别适合长期存档，毕竟开放格式更可靠。虽然 CR3、NEF 等 RAW 格式短期内不会"
+"消失，但用批量队列管理器的 DNG 转换工具备份一份 DNG 总没坏处——现在存储这么便"
+"宜，转换起来又特别方便。"
 
 #: ../../batch_queue/dng_converter.rst:28
 msgid ""
 "The Batch Queue Manager With a Workflow to Convert RAW files to DNG "
 "Container by Applying Metadata Adjustments"
-msgstr ""
+msgstr "批量队列管理器的工作流：元数据调整，将 RAW 文件转换为 DNG 格式"
 
 #: ../../batch_queue/dng_converter.rst:32
 msgid ""
@@ -89,6 +103,11 @@ msgid ""
 "metadata can be post-processed after DNG conversion, as this will maintain "
 "the integrity of the RAW image data stored in the container."
 msgstr ""
+"与将 RAW 数据解码到 RGB 色彩空间的  :ref:`RAW 解码 <raw_converter>` 不同，"
+"DNG 是以开放标准容器存储 RAW 数据。DNG 本质上也是一种 RAW 格式，但它不是私有"
+"格式。不过要注意：如果想对 DNG 图片应用批处理管理器的滤镜，必须先转换成 "
+"JPEG、PNG 或 TIFF 等其他格式。但元数据可以在 DNG 转换后进行后期处理，这样不会"
+"破坏容器中的 RAW 图像数据完整性。"
 
 #: ../../batch_queue/dng_converter.rst:34
 msgid ""
@@ -98,6 +117,9 @@ msgid ""
 "peace of mind, you might want to enable the option which embeds the source "
 "RAW data into the resulting DNG file."
 msgstr ""
+"使用批量队列管理器的 DNG 转换器很简单： **把这个工具放在工作流列表最前面** "
+"（必须这么做），把 RAW 文件添加到队列，设置几个选项，然后点击 **开始** 按钮。"
+"为了万无一失，你可以勾选嵌入原始文件选项，把源 RAW 数据也打包进 DNG 文件。"
 
 #: ../../batch_queue/dng_converter.rst:36
 msgid ""
@@ -105,6 +127,8 @@ msgid ""
 "encode image data. We recommend turning this option on to obtain the best "
 "quality, except if you need to minimize space disk."
 msgstr ""
+"**无损压缩** ：启用非破坏性压缩方法编码图像数据。除非需要节省磁盘空间，否则建"
+"议开启这个选项以获得最佳质量。"
 
 #: ../../batch_queue/dng_converter.rst:38
 msgid ""
@@ -114,6 +138,9 @@ msgid ""
 "to not store a preview, **Medium** to store a half-sized preview, and **Full "
 "Size** to store a preview with same dimensions as the original RAW image."
 msgstr ""
+"**JPEG 预览图** ：这个选项可以调整容器内预览图的质量。JPEG 预览用于快速查看内"
+"容而无需解码 RAW 数据。可选设置包括：**无** （不存储预览）、 **中等大小** "
+"（存储半尺寸预览）、**完整大小** （存储与原 RAW 图像尺寸相同的完整预览）。"
 
 #: ../../batch_queue/dng_converter.rst:40
 msgid ""
@@ -121,6 +148,8 @@ msgid ""
 "enable this option which embeds the source RAW data into the resulting DNG "
 "file. Do not turn on this setting if you want to preserve space disk."
 msgstr ""
+"**嵌入原始文件**：为了彻底放心，可以开启这个选项将源 RAW 数据嵌入生成的 DNG "
+"文件。如果想节省磁盘空间就不要开启。"
 
 #: ../../batch_queue/dng_converter.rst:44
 msgid ""
@@ -131,6 +160,10 @@ msgid ""
 "post-process metadata**. In this case, not all metadata will be backported "
 "from the RAW file to DNG."
 msgstr ""
+"将 RAW 文件原始元数据备份到 DNG 容器时，后台使用的是著名的 `ExifTool "
+"<https://en.wikipedia.org/wiki/ExifTool>`_  引擎。如果您的系统中没有安装 "
+"ExifTool，DNG 转换器会显示这条警告信息：**警告：无法使用 ExifTool 进行元数据"
+"后处理** 。这种情况下，并非所有元数据都能从 RAW 文件回传到 DNG 格式。"
 
 #: ../../batch_queue/dng_converter.rst:48
 msgid ""
@@ -138,3 +171,6 @@ msgid ""
 "process converter while downloading RAW files from a camera. See :ref:`this "
 "section <camera_dngconvert>` from the manual for details."
 msgstr ""
+"这个 DNG 转换工具也可以在导入工具中使用，作为从相机下载 RAW 文件时的后处理转"
+"换器。具体操作方法请参阅本手册 :ref:`这一部分 <camera_dngconvert>` 的详细说"
+"明。"

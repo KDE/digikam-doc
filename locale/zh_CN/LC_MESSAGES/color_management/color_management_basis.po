@@ -20,25 +20,27 @@ msgstr ""
 
 #: ../../color_management/color_management_basis.rst:-1
 msgid "Basic Knowledge about Color Management"
-msgstr ""
+msgstr "色彩管理基础知识"
 
 #: ../../color_management/color_management_basis.rst:-1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, image editor, color management, icc, profile, basis"
 msgstr ""
+"digiKam, 文档, 用户手册, 照片管理, 开源, 免费, 学习, 简单, 图像编辑器, 颜色管"
+"理, 图标, 个人资料, 基础"
 
 #: ../../color_management/color_management_basis.rst:14
 msgid ":ref:`The Basis of Color Management <color_management>`"
-msgstr ""
+msgstr ":ref:`色彩管理的基础 <color_management>`"
 
 #: ../../color_management/color_management_basis.rst:16
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../color_management/color_management_basis.rst:19
 msgid "Overview"
-msgstr ""
+msgstr "概述"
 
 #: ../../color_management/color_management_basis.rst:21
 msgid ""
@@ -49,6 +51,10 @@ msgid ""
 "colors you print or display on the web match the colors you produced in your "
 "digital darkroom."
 msgstr ""
+"色彩管理的核心目标，就是确保颜色在各个环节都能准确传递—— 1) 输入环节​​：相机/扫"
+"描仪捕捉的颜色与实际拍摄/扫描的对象一致；2) 显示环节​​：屏幕上显示的颜色与输入"
+"设备记录的颜色一致；3) ​​输出环节​​：打印品或网页呈现的颜色与数字暗房（修图软件）"
+"处理的结果一致"
 
 #: ../../color_management/color_management_basis.rst:23
 msgid ""
@@ -61,6 +67,11 @@ msgid ""
 "as it moves from input, to display, and on to print in such a way that "
 "maintains the same perceived colors on all devices."
 msgstr ""
+"一般色彩处理流程包含三个步骤：1) 用相机/扫描仪获取图像；2) 在显示器上查看图"
+"像； 3)通过打印机输出图像。虽然这些设备都用 8 位 RGB 数值表示颜色，但具体呈现"
+"效果各不相同。比如同样的 RGB 值 (200, 130, 200)，在相机里可能是薰衣草紫，到显"
+"示器变成紫罗兰色，打印出来又成了丁香紫。色彩管理就是要调整这些 RGB 值，让所有"
+"设备最终呈现的视觉效果保持一致。"
 
 #: ../../color_management/color_management_basis.rst:25
 msgid ""
@@ -73,12 +84,16 @@ msgid ""
 "Color management using ICC conversions is illustrated in the following "
 "figure."
 msgstr ""
+"色彩管理的实现原理是，通过 ICC 特性文件（ICC Profile）来描述每个设备（相机/扫"
+"描仪/显示器/打印机等）的色域特征。这些文件就像翻译官，把工作流中某个环节的 "
+"RGB 数值转换成另一个环节对应的 RGB 数值，确保呈现的颜色视觉效果相同。下图介绍"
+"了使用 ICC 转换的流程。"
 
 #: ../../color_management/color_management_basis.rst:31
 msgid ""
 "The Overall Scheme of Color Spaces Used in a Color Managed Application as "
 "digiKam"
-msgstr ""
+msgstr "digiKam 色彩管理应用的色彩空间转换示意图"
 
 #: ../../color_management/color_management_basis.rst:33
 msgid ""
@@ -92,6 +107,10 @@ msgid ""
 "allow for the appropriate conversion of the image data as it moves from "
 "device to device."
 msgstr ""
+"为了实现不同设备之间的颜色转换，所有 ICC 特性文件都支持两个方向的转换：从设备"
+"色彩空间转到标准色彩空间，再从标准色彩空间转到目标设备。所以整个过程需要经过"
+"两次转换：先把相机数据转到标准空间，再从标准空间转到显示器。所以说，色彩管理"
+"本质上就是通过特性文件实现图像数据在不同设备间的精准转换。"
 
 #: ../../color_management/color_management_basis.rst:35
 msgid ""
@@ -102,16 +121,19 @@ msgid ""
 "on color management, along with links to more in-depth information, to "
 "enable you to begin to make your own informed decisions."
 msgstr ""
+"很多人总想找个 “一键调成正确颜色” 的按钮，但实际情况是，色彩管理需要你在每个"
+"环节都做正确的选择。所以本章内容会把基础知识讲到位，也会提供更详细的教程链"
+"接，帮助你掌握正确的设置方法，从而获得自己想要的色彩效果。"
 
 #: ../../color_management/color_management_basis.rst:38
 msgid "When You Don't Need Color Management"
-msgstr ""
+msgstr "不用色彩管理的情况"
 
 #: ../../color_management/color_management_basis.rst:40
 msgid ""
 "If your imaging workflow meets all of the six criteria listed below, then "
 "you don't need to worry about color management:"
-msgstr ""
+msgstr "如果你的工作流程满足以下六个条件，那就不用操心色彩管理这件事了："
 
 #: ../../color_management/color_management_basis.rst:42
 msgid ""
@@ -119,39 +141,41 @@ msgid ""
 "(refer to :ref:`this section <monitor_profiles>` of this manual for a "
 "detailed description of the sRGB color space)."
 msgstr ""
+"你的显示器已经校准到 sRGB 色彩空间（了解 sRGB 色彩空间，手册 :ref:`这一节 "
+"<monitor_profiles>` 有详细说明）"
 
 #: ../../color_management/color_management_basis.rst:44
 msgid ""
 "Your imaging workflow starts with an in-camera-produced JPEG already in the "
 "sRGB color space."
-msgstr ""
+msgstr "你修图修的是相机直出的 JPEG，而且照片色彩空间是 sRGB。"
 
 #: ../../color_management/color_management_basis.rst:46
 msgid "You work exclusively in the sRGB color space for editing."
-msgstr ""
+msgstr "修图时全程都用 sRGB 色彩空间"
 
 #: ../../color_management/color_management_basis.rst:48
 msgid "Your printer wants images in the sRGB color space."
-msgstr ""
+msgstr "你的打印机也支持 sRGB 色彩空间的图片"
 
 #: ../../color_management/color_management_basis.rst:50
 msgid "Your scanner produces images in the sRGB color space."
-msgstr ""
+msgstr "扫描仪输出的图片也是 sRGB 格式"
 
 #: ../../color_management/color_management_basis.rst:52
 msgid ""
 "Your only other image output is via email or the web, where sRGB is the de "
 "facto standard."
-msgstr ""
+msgstr "图片只在网上用，比如发邮件或者传网站，反正各种默认都是用 sRGB 的场景"
 
 #: ../../color_management/color_management_basis.rst:55
 msgid "Useful Definitions"
-msgstr ""
+msgstr "概念解释"
 
 #: ../../color_management/color_management_basis.rst:57
 msgid ""
 "To better understand Color Management, we need to define some key terms:"
-msgstr ""
+msgstr "要搞懂色彩管理，得先明白几个专业术语："
 
 #: ../../color_management/color_management_basis.rst:59
 msgid ""
@@ -164,6 +188,11 @@ msgid ""
 "CIEXYZ. Mappings may be specified using tables, to which interpolation is "
 "applied, or through a series of parameters for transformations."
 msgstr ""
+"**ICC 色彩特性文件** 是一组数据，用来描述某个颜色输入或输出设备（比如相机、显"
+"示器、打印机）或某个颜色空间的特性，遵循的是国际色彩联盟（ICC）的标准。这些特"
+"性文件通过定义设备源颜色空间或目标颜色空间与色彩特性文件连接空间（PCS）之间的"
+"映射，来描述设备的颜色属性。这个标准空间可以是 CIELAB（L*a*b*）或者 CIEXYZ。"
+"转换方式有两种：要么用转换表格插值计算，要么用参数公式转换。"
 
 #: ../../color_management/color_management_basis.rst:61
 msgid ""
@@ -174,18 +203,24 @@ msgid ""
 "working space, working space to PCS, and PCS to monitor. The reasons for "
 "these extra steps are described below.)"
 msgstr ""
+"前面概述部分说 ICC 特性文件是把设备颜色转到工作空间，其实不太准确。实际上是要"
+"先转到 PCS 标准空间。所以从相机到显示器的完整流程可能要转四次：相机→PCS→工作"
+"空间→PCS→显示器。为什么要这么折腾？下面会解释。"
 
 #: ../../color_management/color_management_basis.rst:63
 msgid ""
 "**Gamut** is the span of colors that can be accurately encoded into an "
 "image, or represented by a device."
 msgstr ""
+"**色域** （Gamut）是指一个图像能准确编码的颜色范围，或者一个设备能呈现的颜色"
+"范围。"
 
 #: ../../color_management/color_management_basis.rst:65
 msgid ""
 "**White point** is a set of RGB values that serve to define the color \"white"
 "\" in an image or reproduction."
 msgstr ""
+"**白点** （White point）是用来定义图像或复制品中\"白色\"的一组RGB数值。"
 
 #: ../../color_management/color_management_basis.rst:67
 msgid ""
@@ -195,6 +230,9 @@ msgid ""
 "with a gamma of about 0.45 and decoded with the reciprocal gamma of 2.2 for "
 "display on most computer monitors."
 msgstr ""
+"**伽马校正** （Gamma correction）是一种非线性运算，用来编码和解码图像数值，目"
+"的是减少因像素数据位数有限导致的视觉瑕疵。举个例子：大多数电脑显示器显示图像"
+"时，会用 0.45 的伽马值编码，再用 2.2 的倒数伽马值解码。"
 
 #: ../../color_management/color_management_basis.rst:69
 msgid ""
@@ -206,12 +244,17 @@ msgid ""
 "255: 0.660 * 256 = 169. Gamma correction applies this same algorithm to each "
 "color in every pixel in the image, all in real time."
 msgstr ""
+"具体例子可能更好理解：假设你要在 8 位表示的图像中，对一个数据值 212 做伽马校"
+"正，伽马值为 2.2。首先，你得把这个值“标准化”到0到1的范围，也就是除以 2^8 = "
+"256。所以，212 ÷ 256 = 0.828。接着，把这个值做 2.2 次幂运算：0.828^2.2 = "
+"0.660。然后，把结果再乘以 256，转换回 0 到 255 的范围：0.660 × 256 = 169。伽"
+"马校正就是用这个算法，实时处理图像中每个像素的每个颜色通道。"
 
 #: ../../color_management/color_management_basis.rst:71
 msgid ""
 "The simplest **color spaces** can be specified by a combination of gamut, "
 "white point, and gamma."
-msgstr ""
+msgstr "最简单的 **色彩空间** 可以通过色域、白点和伽马值的组合来定义。"
 
 #: ../../color_management/color_management_basis.rst:73
 msgid ""
@@ -221,6 +264,9 @@ msgid ""
 "trio of RGB numbers associated with each pixel in an image -- remains the "
 "same before and after the conversion from one space to another."
 msgstr ""
+"将图像转换为新的 **色彩特性文件** (也叫“配置文件”) 时，不仅会嵌入新的色彩特性"
+"文件，还会改变图像中的 RGB 数值。这样做的目的是确保 RGB 数值所代表的实际颜色"
+"（即图像中每个像素的 RGB 数值对应的真实世界可见颜色）在转换前后保持一致。"
 
 #: ../../color_management/color_management_basis.rst:75
 msgid ""
@@ -229,6 +275,8 @@ msgid ""
 "color spaces. Color conversions involving gamut and white points are "
 "mathematically more complex, but based on similar logic."
 msgstr ""
+"如果两个色彩空间仅在伽马值上不同，那么转换时只需要用起始和目标空间的伽马值进"
+"行校正。涉及色域和白点的转换在数学上更复杂，但基本原理是相似的。"
 
 #: ../../color_management/color_management_basis.rst:77
 msgid ""
@@ -241,6 +289,10 @@ msgid ""
 "color accuracy degrades a bit every time you convert from one space to "
 "another."
 msgstr ""
+"理论上，你可以将图像在多个色彩空间之间反复转换。如果使用支持色彩管理的图像编"
+"辑器，虽然每次转换都会改变所有 RGB 数值，但屏幕上显示的图像看起来应该是一样"
+"的。但实际上，每次转换都会产生舍入误差，而且从大色域转到小色域时会出现色域裁"
+"切。所以每转换一次，图像色彩的准确性就会降低一点。"
 
 #: ../../color_management/color_management_basis.rst:79
 msgid ""
@@ -254,6 +306,10 @@ msgid ""
 "processing software. This is an exception because the assignment is "
 "presumably the correct color profile for an image produced by that camera."
 msgstr ""
+"直接指定一个新的色彩特性文件时，只会修改图像内嵌的色彩特性文件元数据，而不会"
+"改变实际的像素 RGB 数值。这时候图像显示效果通常会发生明显变化（往往是变差，除"
+"非之前嵌入了错误的配置文件）。唯一的例外是：当你首次为 RAW 处理软件导出的图像"
+"文件指定相机色彩特性文件时，因为这本就应该是该相机图像的正确色彩特性文件。"
 
 #: ../../color_management/color_management_basis.rst:81
 msgid ""
@@ -269,6 +325,11 @@ msgid ""
 "(monitor, printer) matters a great deal, and the image must be converted "
 "into the output device's profile."
 msgstr ""
+"**设备相关** 的色彩特性文件​​：相机色彩特性文件、扫描仪色彩特性文件、显示器色彩"
+"特性文件、打印机色彩特性文件都只适用于特定设备。 **​​设备无关​​** 的色彩特性文"
+"件：工作空间色彩特性文件和PCS（特性文件连接空间）是通用的。当图像通过 "
+"digiKam 使用的开源色彩管理系统（Lcms）转换到设备无关的工作空间后，原始采集设"
+"备就不再重要。但输出到显示器或打印机时，就必须转换到输出设备的色彩特性文件。"
 
 #: ../../color_management/color_management_basis.rst:83
 msgid ""
@@ -278,6 +339,10 @@ msgid ""
 "while the original RAW file is still a RAW file, but the demosaiced file is "
 "just an image file. It is no longer a RAW file."
 msgstr ""
+"**经过插值处理的 RAW 文件** 其实已经不是RAW文件了。这个简单的道理不知为啥总让"
+"很多人犯迷糊。RAW 文件被 RAW 处理软件插值处理后，输出成 TIFF 或 JPEG 格式，原"
+"来的 RAW 文件当然还是 RAW 文件，没变。但那个经过插值处理输出的文件呢？它只是"
+"个普通的图像文件，已经不是 RAW 文件了。"
 
 #: ../../color_management/color_management_basis.rst:85
 msgid ""
@@ -290,6 +355,12 @@ msgid ""
 "Libraw is linear in both senses. The same image developed by Canon's RAW "
 "processing software won't be linear in either sense."
 msgstr ""
+"**“线性”** 这个词有两个容易混淆的含义。第一，线性可能指图片的色调跟拍摄时原始"
+"场景的色调一模一样，没被 S 型曲线或者其他调整局部或整体色调的方式改动过。第"
+"二，线性还可以指色彩空间的伽马传输曲线是线性的。也就是说，一张图片可能在这两"
+"个意义上都是线性的，也可能只符合其中一个，或者两个都不符合。比如，用 Libraw "
+"处理的 RAW 图像，在这两个意义上都是线性的。但同样的图像如果用佳能的 RAW 处理"
+"软件来处理，那它在两个意义上都不算线性了。"
 
 #: ../../color_management/color_management_basis.rst:87
 msgid ""
@@ -309,6 +380,15 @@ msgid ""
 "available discrete tonal steps from the lightest to the darkest tone in the "
 "image."
 msgstr ""
+"**HDR（高动态范围）** 和  **LDR（低动态范围）** 指的不是图片的位深度。 **高动"
+"态范围** 和 **低动态范围** 说的是图片涵盖的总动态范围有多大。比如，一个普通的"
+"低动态范围图片，可能只覆盖了 5 *档* 光比（现在普通数码相机轻轻松松就能拍出 8 "
+"到 9 档的动态范围）。这种图片可以存成 8 位、16 位、32 位，甚至 64 位图像，取"
+"决于你用的软件。但这并不会让图片的动态范围变大，只是从最亮到最暗的色调之间"
+"的“阶梯”数量变多了而已。反过来，一个 22 档光比的场景（普通消费级数码相机单次"
+"曝光完全拍不下来，得靠多重曝光），可以存成 8 位或 16 位图像。但这种图片会因为"
+"可用的色调“阶梯”太少，出现严重的色带问题（就是说，在普通显示器上一次能显示的"
+"某个色调范围内，过渡会特别不自然，条纹感很明显）。"
 
 #: ../../color_management/color_management_basis.rst:89
 msgid ""
@@ -325,10 +405,17 @@ msgid ""
 "to translate them into a working space. JPEGs from a camera are already in a "
 "working space."
 msgstr ""
+"**相机直出的 JPEG 不需要相机色彩特性文件**：所有从相机、甚至那些不能拍 RAW 的"
+"傻瓜相机里直接出来的 JPEG（或TIFF），在相机内部其实都是从 RAW 文件开始的。"
+"RAW 文件是相机模数转换器生成的原始数据。如果你选择保存为 JPEG，相机处理器会这"
+"么做：先把 RAW 文件插值处理，指定一个相机色彩特性文件，把RGB数字转换到一个工"
+"作空间（通常是 **sRGB** ，有些相机还能选 **AdobeRGB** ），然后进行 JPEG 压"
+"缩，最后把 JPEG 文件存到存储卡上。所以，从相机出来的 JPEG（或 TIFF）已经自带"
+"了工作空间，不需要你再去指定一个相机色彩特性文件然后再转换到工作空间。"
 
 #: ../../color_management/color_management_basis.rst:93
 msgid "Profile Connection Space"
-msgstr ""
+msgstr "配置文件连接空间"
 
 #: ../../color_management/color_management_basis.rst:95
 msgid ""
@@ -339,6 +426,10 @@ msgid ""
 "observer? And is it even possible to define an ideal observer? Do real "
 "people even see the same colors when they look at the world?"
 msgstr ""
+"假设 Libraw 从一台特定品牌和型号的相机的 RAW 文件生成了一个 16 位 TIFF 图像。"
+"问题来了：图像中每个像素的 RGB 数值组合，到底代表什么？有没有一个绝对的标准，"
+"参照一个“理想观察者”来定义这些颜色？甚至，真的能定义一个“理想观察者”吗？现实"
+"中不同的人看世界时，看到的颜色是一样的吗？"
 
 #: ../../color_management/color_management_basis.rst:97
 msgid ""
@@ -354,6 +445,12 @@ msgid ""
 "types. One consequence of how we see color is that many different "
 "combinations of differing wavelengths of light will look like the same color."
 msgstr ""
+"早在 1931 年，国际色彩联盟（ICC）决定搞清楚并用数学方式描述人类在现实世界中能"
+"看到的所有颜色。他们找了一大群人，展示了一堆颜色，让他们判断哪些颜色看起来是"
+"一样的。测试挺复杂，因为两种看起来一样的颜色，可能由不同波长的光组合而成。人"
+"类的颜色感知靠的是视网膜上三种锥细胞，分别对大约 430 纳米、540 纳米和 570 纳"
+"米波长的光最敏感，但不同锥细胞的敏感范围有不少重叠。这导致很多不同波长组合的"
+"光，看起来可能是同一个颜色。"
 
 #: ../../color_management/color_management_basis.rst:99
 msgid ""
@@ -363,6 +460,9 @@ msgid ""
 "Color_vision>`_ observer. The term *ideal* in this case means that the "
 "modeling was based on the mean response of lots of individuals."
 msgstr ""
+"最终，ICC 搞出了 `CIE-XYZ 色彩空间 <https://en.wikipedia.org/wiki/"
+"CIE_1931_color_space>`_ ，用数学方式描述和建模了一个“理想人类观察者”能看到的"
+"所有颜色。这里的“理想”是指基于很多人的平均反应得出的模型。"
 
 #: ../../color_management/color_management_basis.rst:101
 msgid ""
@@ -377,6 +477,13 @@ msgid ""
 "the RGB values into an absolute Profile Connection Space, often based on CIE-"
 "XYZ, and then from the Profile Connection Space to your chosen working space."
 msgstr ""
+"实际上，这个涵盖人类感知的颜色空间并不是常规意义上的色彩特性文件，而是提供了"
+"一个描述所有颜色的参考空间。色彩管理系统通常用 CIE-XYZ 作为 **配置文件连接空"
+"间** （Profile Connecting Space，PCS，又译作“特性文件相关空间”“标准色彩空"
+"间”，没有标准译法），用来在不同颜色空间之间转换 RGB 值。比如，要准确描述相机"
+"像素对光线的反应，需要一个相机色彩特性文件，把这些颜色映射到工作空间。ICC 相"
+"机色彩特性文件的工作方式是先把 RGB 值转到绝对的色彩特性文件连接空间（通常基"
+"于 CIE-XYZ），再从连接空间转到你选的工作空间。"
 
 #: ../../color_management/color_management_basis.rst:103
 msgid ""
@@ -387,6 +494,10 @@ msgid ""
 "same amount in a color value should produce a change of about the same "
 "visual importance."
 msgstr ""
+"CIE-XYZ 不是唯一的配置文件连接空间，另一个常用的是 `CIE-Lab <https://en."
+"wikipedia.org/wiki/Lab_color_space>`_ ，它是从 CIE-XYZ 数学推导出来的。CIE-"
+"Lab的设计目标是 **“感知均匀”** ，意思是颜色值的变化量相同，视觉上的重要性变化"
+"也差不多。"
 
 #: ../../color_management/color_management_basis.rst:105
 msgid ""
@@ -397,6 +508,9 @@ msgid ""
 "position between yellow and blue (**b**, negative values indicate blue and "
 "positive values indicate yellow)."
 msgstr ""
+"CIE-Lab 的三个坐标分别是：L表示亮度（ **L=0** 是黑色， **L=100** 是漫反射白"
+"色，镜面白色可能更高）； **a** 表示红/洋红到绿色的位置（负值偏绿，正值偏洋"
+"红）； **b** 表示黄到蓝的位置（负值偏蓝，正值偏黄）。"
 
 #: ../../color_management/color_management_basis.rst:107
 msgid ""
@@ -406,6 +520,9 @@ msgid ""
 "printing or perhaps monitor display) is based on `Lcms <https://www."
 "littlecms.com/>`_ (the **Little Color Management** engine)."
 msgstr ""
+"在 digiKam 里，从相机色彩特性文件到配置文件连接空间，再到你选的工作空间，甚至"
+"最终到输出空间（比如打印或显示器显示）的转换，都是靠 `Lcms <https://www."
+"littlecms.com/>`_ （小色彩管理引擎）完成的。"
 
 #: ../../color_management/color_management_basis.rst:109
 msgid ""
@@ -419,6 +536,11 @@ msgid ""
 "of the proprietary RAW file) produce results equal or superior to "
 "commercial, closed-source software."
 msgstr ""
+"顺便说一句， *Lcms* 的转换比 Adobe 的专有色彩转换引擎还要精准。另外，digiKam "
+"的 RAW 转换靠的是 Libraw 这个 `开源库 <https://www.libraw.org/>`_ 来解码专有 "
+"RAW 文件。没有 Libraw，我们就只能用相机厂商提供的、通常只支持 Windows 或 Mac "
+"的专有软件了。Libraw 的去马赛克算法（别跟解码 RAW 文件混淆）效果跟商业闭源软"
+"件一样好，甚至可能更好。"
 
 #: ../../color_management/color_management_basis.rst:111
 msgid ""
@@ -429,16 +551,19 @@ msgid ""
 "Connection Space** as a **Universal Translator** between all other color "
 "profiles."
 msgstr ""
+"总结一下，所有的色彩管理转换都是通过配置文件连接空间（PCS）来完成的，PCS 的色"
+"域跟人类感知很接近。PCS 只在转换过程内部使用，你不会直接看到 PCS 里的数据。可"
+"以把配置文件连接空间想象成一个“颜色宇宙翻译器”，在所有色彩特性文件之间搭桥。"
 
 #: ../../color_management/color_management_basis.rst:115
 msgid "Color Space Connections"
-msgstr ""
+msgstr "色彩空间的连接"
 
 #: ../../color_management/color_management_basis.rst:117
 msgid ""
 "The workflow that a typical image might follow in the course of its journey "
 "from camera RAW file to final output includes the following steps:"
-msgstr ""
+msgstr "一张图片从相机 RAW 文件到最终输出的典型工作流程，包含以下几个步骤："
 
 #: ../../color_management/color_management_basis.rst:119
 msgid ""
@@ -447,6 +572,9 @@ msgid ""
 "meaning relative to your (make and model of) camera, to a second set of RGB "
 "numbers that only have meaning in the **Profile Connection Space**."
 msgstr ""
+"Lcms 用相机色彩特性文件（也叫 **输入配置文件** ），把 Libraw 生成的 RGB 数值"
+"（这些数值只对你的相机品牌和型号有意义）翻译成一组只在 **配置文件连接空间** "
+"有意义的 RGB 数值。"
 
 #: ../../color_management/color_management_basis.rst:121
 msgid ""
@@ -458,6 +586,10 @@ msgid ""
 "assign the wrong profile the image will look either slightly wrong or very "
 "wrong depending on the differences between the two profiles."
 msgstr ""
+"接着，Lcms 再把这些 **连接空间** 的 RGB 数值转到你选的 **工作空间** ，好让你"
+"编辑图片。工作空间的 RGB 数值只在那个特定工作空间有意义。同样的红色，在不同工"
+"作空间里，用的 RGB 数值组合是不一样的。如果指定了错误的色彩特性文件，图片看起"
+"来就会有点不对劲，或者非常不对劲，取决于两个色彩特性文件差多少。"
 
 #: ../../color_management/color_management_basis.rst:123
 msgid ""
@@ -468,6 +600,10 @@ msgid ""
 "display representation of your image. This translation into the display's "
 "color space is done on the fly and you should never even notice it happening."
 msgstr ""
+"当你在 **工作空间** 里编辑图片时，Lcms 会把工作空间的 RGB 数值翻译回 **配置文"
+"件连接空间**，再转到适合你显示器的 RGB 数值，确保显示器尽可能准确地呈现你正在"
+"编辑的图片。这个转换是实时进行的，你通常根本感觉不到，除非转换出错了——那图片"
+"看起来就会怪怪的。"
 
 #: ../../color_management/color_management_basis.rst:125
 msgid ""
@@ -479,6 +615,10 @@ msgid ""
 "(if you plan on displaying the image on the web or emailing it to friends or "
 "are perhaps creating a slide-show to play on monitors other than your own)."
 msgstr ""
+"当你编辑好图片，准备分享给全世界时，Lcms 会把 **工作空间** 的 RGB 数值再转回 "
+"**配置文件连接空间** ，然后根据你的输出目标，转到 **打印机色彩空间** （用描述"
+"你打印机和纸张组合的 **打印机色彩特性文件** ，如果你要打印）或者转到 sRGB（如"
+"果你要发到网上、发邮件给朋友，或做个幻灯片在别的显示器上播放）。"
 
 #: ../../color_management/color_management_basis.rst:127
 msgid ""
@@ -490,6 +630,10 @@ msgid ""
 "For more information take a look at the dedicated :ref:`Soft Proofing "
 "<soft_proof>` section of this manual."
 msgstr ""
+"**色彩校样** 是一种在屏幕上预览输出效果的方法，通常是模拟打印机等其他设备的输"
+"出结果。色彩校样能让你在实际输出前（比如打印前）看到效果的差异，省得浪费昂贵"
+"的墨水。这样你就能先优化设置，不用白白浪费时间和钱。想了解更多，可以去看看手"
+"册里  :ref:`专门讲这个的部分 <soft_proof>` 。"
 
 #: ../../color_management/color_management_basis.rst:129
 msgid ""
@@ -499,6 +643,9 @@ msgid ""
 "handle the full gamut. For more information take a look at :ref:`this "
 "section <working_space>` of this manual."
 msgstr ""
+"当然，色彩特性文件转换不是完美的，尤其是当转换的两个颜色空间色域不同时。 **再"
+"现意图** 就是处理目标颜色空间无法容纳全部色域时的策略。想知道详情，可以看看手"
+"册的 :ref:`对应章节 <working_space>` 。"
 
 #: ../../color_management/color_management_basis.rst:131
 msgid ""
@@ -509,3 +656,7 @@ msgid ""
 "and storing images. So where do we get the profiles, and how do we pick a "
 "working space? Those are the subjects of the following sections."
 msgstr ""
+"现在你已经大致了解了色彩管理如何从相机到工作空间（编辑用）、显示器再到打印机"
+"的转换过程。显然，色彩管理的核心就是给你的设备用对色彩特性文件，并为编辑和存"
+"储图片选好颜色空间。那么，色彩特性文件从哪儿来？怎么挑工作空间？这些就是接下"
+"来的章节要讲的。"

@@ -20,25 +20,27 @@ msgstr ""
 
 #: ../../color_management/working_space.rst:-1
 msgid "Color Management and Working Space"
-msgstr ""
+msgstr "色彩管理与工作空间"
 
 #: ../../color_management/working_space.rst:-1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, image editor, color management, icc, profile, working space"
 msgstr ""
+"digiKam, 文档, 用户手册, 照片管理, 开源, 免费, 学习, 简单, 图像编辑, 颜色管"
+"理, 图标, 配置, 工作空间"
 
 #: ../../color_management/working_space.rst:14
 msgid ":ref:`The Working Space <color_management>`"
-msgstr ""
+msgstr ":ref:`工作空间 <color_management>`"
 
 #: ../../color_management/working_space.rst:16
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../color_management/working_space.rst:19
 msgid "Color Workflow"
-msgstr ""
+msgstr "色彩流程"
 
 #: ../../color_management/working_space.rst:21
 msgid ""
@@ -48,6 +50,9 @@ msgid ""
 "images. One of the first decisions that need to be made in color management "
 "is the choice of a working color space."
 msgstr ""
+"相机或扫描仪的色彩特性文件用来转换输入图像，显示器或打印机的色彩特性文件用来"
+"转换输出图像，但它们最终都是为了跟编辑图片时用的工作色彩空间对接。色彩管理里"
+"一个重要的决定就是选一个合适的工作色彩空间。"
 
 #: ../../color_management/working_space.rst:23
 msgid ""
@@ -62,6 +67,11 @@ msgid ""
 "a grey or black or white pixel on your screen. Many camera profiles violate "
 "this *neutral* condition."
 msgstr ""
+"但为什么搞得这么复杂呢？就不能直接在相机色彩特性文件描述的色彩空间里编辑图片"
+"吗？毕竟相机色彩特性文件应该最贴合你相机记录的颜色啊，也最贴合你的 RAW 处理流"
+"程，对吧？工作色彩空间，比如 sRGB 或 Adobe RGB，是为了让编辑过程更顺手。比"
+"如，编辑图片时，如果某个像素的 RGB 值相等（R=G=B），它在屏幕上应该看起来是中"
+"性的灰色、黑色或白色。但很多相机配置文件并不满足这个“中性”条件。"
 
 #: ../../color_management/working_space.rst:25
 msgid ""
@@ -81,6 +91,14 @@ msgid ""
 "performed during image editing can run faster and be more accurate than if "
 "you try to edit your image while it is still in the camera color space."
 msgstr ""
+"还有一个很重要的理由，听了你就不会想在相机色彩空间里编辑图片了。相机色彩特性"
+"文件的文件大小通常在 250KB 到 500KB 甚至更大。为了让 RAW 处理器输出的 RGB 值"
+"颜色表现得准确，相机色彩特性文件里塞满了关于原始场景中不同颜色和色调区域需要"
+"调整的信息。这些色彩特性文件对目标颜色很精确，但数学上并不“平滑”。相比之下，"
+"工作空间的色彩特性文件超级小（只有几百字节，而不是几百 KB），因为它们用平滑、"
+"连续的数学函数（比如伽马校正的函数）来描述色域。工作空间色彩特性文件不用考虑"
+"现实世界传感器的那堆“乱七八糟”的特性，所以编辑图片时的数学运算会更快、更精"
+"确。如果你在相机色彩空间里编辑，效率和精度都会打折扣。"
 
 #: ../../color_management/working_space.rst:27
 msgid ""
@@ -98,6 +116,12 @@ msgid ""
 "management, your color-management choices are simple -- set everything to "
 "sRGB."
 msgstr ""
+"sRGB 可能是最常见的工作色彩空间，同时也常用于输出，比如给网页或显示器显示的图"
+"片。如果你的新显示器色域比 sRGB 大，你可能想用一个能充分发挥你那台校准好的高"
+"端显示器的色彩特性文件。不过，分享图片给朋友前，记得先把图片转成 sRGB。很多家"
+"用或批量生产的商业打印机也默认图片是 sRGB 格式。如果图片没嵌入色彩特性文件，"
+"大多数程序也会假设它是 sRGB 来解读 RGB 值。所以，如果你不想搞色彩管理，简单点"
+"——全用 sRGB 就行。"
 
 #: ../../color_management/working_space.rst:29
 msgid ""
@@ -106,6 +130,9 @@ msgid ""
 "start with a RAW file that you, yourself demosaic and convert into a TIFF, "
 "or if you start with a JPEG or TIFF produced by your camera."
 msgstr ""
+"要注意，色彩管理不只和拍 RAW 有关。不管你是从 RAW 文件开始，自己去马赛克转成 "
+"TIFF，还是直接用相机生成的 JPEG 或 TIFF，色彩管理都会影响图像处理流程的每个阶"
+"段。"
 
 #: ../../color_management/working_space.rst:32
 msgid "Selecting a Working Space"

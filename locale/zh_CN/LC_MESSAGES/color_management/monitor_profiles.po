@@ -20,25 +20,27 @@ msgstr ""
 
 #: ../../color_management/monitor_profiles.rst:-1
 msgid "Color Management and Monitor Profiles"
-msgstr ""
+msgstr "色彩管理与显示器色彩特性文件"
 
 #: ../../color_management/monitor_profiles.rst:-1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, image editor, color management, icc, profile, srgb, monitor"
 msgstr ""
+"digiKam, 文档, 用户手册, 照片管理, 开源, 免费, 学习, 简单, 图像编辑器, 颜色管"
+"理, 图标, 个人资料, srgb, 监视器"
 
 #: ../../color_management/monitor_profiles.rst:14
 msgid ":ref:`Monitor Profiles <color_management>`"
-msgstr ""
+msgstr ":ref:`显示器色彩特性文件 <color_management>`"
 
 #: ../../color_management/monitor_profiles.rst:16
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../color_management/monitor_profiles.rst:19
 msgid "sRGB Color space"
-msgstr ""
+msgstr "sRGB 色彩空间"
 
 #: ../../color_management/monitor_profiles.rst:21
 msgid ""
@@ -47,6 +49,9 @@ msgid ""
 "Hewlett Packard and Microsoft as a standardized color space for consumer-"
 "oriented applications. As stated in the initial proposal:"
 msgstr ""
+"sRGB 几乎是所有消费级影像相关人士公认的标准色彩空间。1996 年，惠普（Hewlett-"
+"Packard）和微软（Microsoft）提出将 sRGB 作为消费级应用的标准化色彩空间。他们"
+"的初始提案是这么说的："
 
 #: ../../color_management/monitor_profiles.rst:23
 msgid ""
@@ -61,6 +66,12 @@ msgid ""
 "digital cameras, and printing systems, such a space can be supported with "
 "minimum cost to software and hardware vendors."
 msgstr ""
+"惠普和微软建议在微软操作系统、惠普产品和互联网中加入对标准色彩空间 sRGB 的支"
+"持。这个色彩空间的目的是补充现有的色彩管理策略，提供第三种处理操作系统和互联"
+"网颜色的方法，用简单且可靠的设备无关颜色定义，确保良好的画质和向后兼容，同时"
+"尽量减少传输和系统开销。这个基于色度学的 RGB 色彩空间非常适合阴极射线管"
+"（CRT）显示器、电视、扫描仪、数码相机和打印系统，软件和硬件厂商支持它的成本也"
+"很低。"
 
 #: ../../color_management/monitor_profiles.rst:25
 msgid ""
@@ -74,6 +85,10 @@ msgid ""
 "their files. It is at this level that a common standard RGB color space "
 "becomes useful and necessary."
 msgstr ""
+"目前，国际色彩联盟（ICC）通过给图像附上输入色彩空间的配置文件，确保颜色从输入"
+"到输出的空间被正确映射。这对高端用户很合适。但有大量用户并不需要这么高的色彩"
+"质量，也有很多文件格式压根不支持嵌入色彩配置文件，还有很多场景让用户不愿意给"
+"文件附上额外数据。这时候，一个通用的标准 RGB 色彩空间就变得有用且必要了。"
 
 #: ../../color_management/monitor_profiles.rst:27
 msgid ""
@@ -86,6 +101,11 @@ msgid ""
 "communicate color without further color management overhead in the most "
 "common situations."
 msgstr ""
+"一个通用的标准 RGB 色彩空间通过把各种标准和非标准的 RGB 显示器空间合并成单一"
+"的标准 RGB 色彩空间，解决了这些问题。这样的标准能大大提升桌面环境的颜色保真"
+"度。比如，如果操作系统厂商支持这个标准 RGB 色彩空间，输入和输出设备厂商只要支"
+"持这个标准，就能轻松自信地在最常见场景下实现颜色沟通，不需要额外的色彩管理开"
+"销。"
 
 #: ../../color_management/monitor_profiles.rst:29
 msgid ""
@@ -97,12 +117,17 @@ msgid ""
 "Internet (don't worry about embedding and reading ICC profiles - just assume "
 "sRGB)."
 msgstr ""
+"总结一下，sRGB 这个如今几乎被全球采用的色彩空间，目的是让消费者更省心（不用操"
+"心色彩管理）、让厂商更省钱（不用担心消费级数码相机、扫描仪、显示器、打印机等"
+"的兼容性），以及让网络显示更方便（不用管嵌入和读取 ICC 配置文件，直接假设是 "
+"sRGB 就行）。"
 
 #: ../../color_management/monitor_profiles.rst:31
 msgid ""
 "So if sRGB works so well and makes life so easy for everyone, why use any "
 "other color space and thus be forced to worry about color management issues?"
 msgstr ""
+"那既然 sRGB 这么好用，干嘛还要用其他色彩空间，费劲去操心色彩管理的问题？"
 
 #: ../../color_management/monitor_profiles.rst:33
 msgid ""
@@ -120,6 +145,13 @@ msgid ""
 "you don't need to worry about non-sRGB color spaces and all the attending "
 "intricacies of color management."
 msgstr ""
+"sRGB 是为 1996 年后生产的消费级显示器和打印机设计的，目标是让颜色在这些设备上"
+"都能轻松显示和打印。它包含的颜色范围（专业术语叫 **色域** ）是“最低公分母”，"
+"比我们在现实世界能看到的颜色少得多，也比现在数码相机能捕捉的颜色少，比现代打"
+"印机能打印的颜色少，甚至比现在开始进入消费市场的新款广色域显示器的色域小得"
+"多。简单说，sRGB 的色域太小了，没法充分利用今天消费级设备能呈现的更广颜色范"
+"围。不过反过来，如果你压根不打算在数字影像工作流程里用更广的色域，那确实不用"
+"操心非 sRGB 颜色空间和那些复杂的色彩管理问题。"
 
 #: ../../color_management/monitor_profiles.rst:35
 msgid ""
@@ -129,12 +161,17 @@ msgid ""
 "see (the horseshoe-shaped region) and the colors contained in the three "
 "named color space (the smaller triangular regions)."
 msgstr ""
+"下图展示了一个直观的对比，把 sRGB、Adobe RGB 和 DCI-P3 的色域跟我们在现实世界"
+"能看到的颜色范围放在一起。这张图用二维方式表示了人类能看到的所有颜色（那个马"
+"蹄形区域）和三种色彩空间包含的颜色（那些小三角形区域）。"
 
 #: ../../color_management/monitor_profiles.rst:41
 msgid ""
 "The Gamuts of the sRGB, Adobe RGB and DCI-P3 Color Spaces. sRGB is the "
 "Default Profile for LCD Monitors"
 msgstr ""
+"sRGB、Adobe RGB 和 DCI-P3 色彩空间的色域对比，sRGB 是 LCD 显示器的默认色彩特"
+"性文件"
 
 #: ../../color_management/monitor_profiles.rst:43
 msgid ""
@@ -142,10 +179,12 @@ msgid ""
 "profile, so the colors represented in the image do not represent the full "
 "range of colors that can be shown in the other color spaces."
 msgstr ""
+"有意思的是，这张图片本身嵌入的就是 sRGB 色彩特性文件，所以它展示的颜色并不能"
+"完全代表其他色彩空间的全范围。"
 
 #: ../../color_management/monitor_profiles.rst:46
 msgid "Profiling Your Monitor"
-msgstr ""
+msgstr "为你的显示器创建色彩特性文件"
 
 #: ../../color_management/monitor_profiles.rst:48
 msgid ""
@@ -154,6 +193,9 @@ msgid ""
 "sRGB or not, you need a properly calibrated monitor because sRGB assumes "
 "that your monitor is calibrated to sRGB."
 msgstr ""
+"如果你选择全程用 sRGB 色彩空间，是不是就不用校准显示器了？不管你是不是只用 "
+"sRGB 的色域，答案都是：必须校准！因为 sRGB 的前提是你的显示器已经校准到 sRGB "
+"的标准。"
 
 #: ../../color_management/monitor_profiles.rst:50
 msgid ""
@@ -169,6 +211,11 @@ msgid ""
 "the higher the temperature of the monitor's white point, the bluer the "
 "screen looks in comparison with monitors with lower white points."
 msgstr ""
+"如果使用的是没校准的显示器，会有几种后果，没一个是好的。每个显示器（无论校准"
+"过或没校准）都有一个原生的（未校准的）白点，用色温（开尔文度数）表示。白点就"
+"是你在屏幕上看纯白（RGB 值在 8 位下全是 255，比如网页或文档的纯白背景）时的颜"
+"色。你可能觉得“白就是白”，但如果你把几台校准到不同白点的显示器摆一起，就会发"
+"现白点色温越高，屏幕看起来越偏蓝；色温越低，越偏黄。"
 
 #: ../../color_management/monitor_profiles.rst:52
 msgid ""
@@ -184,6 +231,12 @@ msgid ""
 "6500K), your images will look blueish/too cool on a properly calibrated "
 "monitor."
 msgstr ""
+"你可以自己试试，用显示器的控制按钮把色温调高或调低，感受一下屏幕变蓝或变黄的"
+"变化（试完记得调回原设置！）。你的眼睛很快会适应固定的白点，但调整色温时，蓝"
+"黄变化会很明显。如果没校准的显示器偏蓝，你编辑图片时会过度补偿，结果在校准正"
+"常的显示器上看，你的图片会偏黄、显得太“暖”。反过来，如果显示器色温太低（比如 "
+"LCD 原生色温大约 5500K，而 sRGB 假设是 6500K），偏黄的屏幕会导致你编辑的图片"
+"在正常显示器上看起来偏蓝、太“冷”。"
 
 #: ../../color_management/monitor_profiles.rst:54
 msgid ""
@@ -195,6 +248,10 @@ msgid ""
 "too high, your images will look took dark and overly saturated on a properly "
 "calibrated monitor."
 msgstr ""
+"校准显示器不只是设置白点，还要搞定黑点、亮度（发光强度）和伽马（传输）函数。"
+"如果黑点设太低，显示器太暗，你会过度补偿，编辑出的图片在正常显示器上会显得褪"
+"色、没活力。相反，如果黑点设太高，你的图片在正常显示器上会显得太暗、饱和度过"
+"高。"
 
 #: ../../color_management/monitor_profiles.rst:56
 msgid ""
@@ -202,12 +259,15 @@ msgid ""
 "a lot more *pop* than they really have when viewed on a properly calibrated "
 "monitor, plus your eyes will hurt and your LCD screen will burn out faster."
 msgstr ""
+"如果你把显示器亮度/对比度设太高，你会觉得图片很有“冲击力”，但在正常校准的显示"
+"器上，这些图片其实没那么鲜艳，而且高亮度会让你的眼睛不舒服，还会加速 LCD 屏幕"
+"的老化。"
 
 #: ../../color_management/monitor_profiles.rst:62
 msgid ""
 ":kbd:`F12` Shortcut to Turn On/Off Color Management in the Image Editor and "
 "all digiKam Thumbnail Views"
-msgstr ""
+msgstr ":kbd:`F12` 快捷键可在图像编辑器和 digiKam 所有缩略图视图中开关色彩管理"
 
 #: ../../color_management/monitor_profiles.rst:64
 msgid ""
@@ -222,6 +282,12 @@ msgid ""
 "will inevitably create by *correcting* your image during editing - are very "
 "obvious when viewed on a properly calibrated monitor."
 msgstr ""
+"如果你的显示器伽马值设置不对，暗部到亮部的色调变化就会出问题。比如，阴影或高"
+"光可能会被过度压缩或拉伸，导致你在编辑时往反方向过度补偿。结果呢？在校准正常"
+"的显示器上看，你的阴影可能太亮或太暗，高光也可能太暗或太亮，整个图片的色调看"
+"起来像是被“挤”得太紧了。更别提如果显示器的内部颜色通道增益设置错误，那问题就"
+"大了！你编辑时为了“纠正”颜色，可能会让图片偏绿、偏洋红、偏橙……这些色偏在校准"
+"正常的显示器上会特别明显，简直让人抓狂。"
 
 #: ../../color_management/monitor_profiles.rst:66
 msgid ""
@@ -233,6 +299,11 @@ msgid ""
 "calibrated monitors, or you can purchase a spectrophotometer to calibrate "
 "and profile your monitors."
 msgstr ""
+"哪怕你的显示器没校准，你也可能会惊讶地发现，同一张图片在你家显示器上看起来跟"
+"在其他显示器（比如你家另一台显示器，或者朋友、邻居的显示器）上完全不一样。通"
+"常，在一台没校准的显示器上编辑的图片，换到另一台没校准的显示器上，效果会天差"
+"地别。你可以买一台已经校准好的显示器，或者买个分光光度计来自己校准显示器、创"
+"建色彩特性文件。"
 
 #: ../../color_management/monitor_profiles.rst:68
 msgid ""
@@ -244,6 +315,10 @@ msgid ""
 "**gamma** to predetermined or standard values using the monitor's controls "
 "and by altering the video card settings."
 msgstr ""
+"你可能会惊讶，校准显示器和给显示器做色彩特性文件居然不是一回事！校准"
+"（calibration）是通过调整显示器的控制选项或其他物理方式，让设备达到某个定义好"
+"的状态。比如，校准显示器就是用显示器的控制按钮和显卡设置，调整 **白点** 、 **"
+"黑点** 、 **亮度** 和 **伽马** 到标准值。"
 
 #: ../../color_management/monitor_profiles.rst:70
 msgid ""
@@ -258,6 +333,11 @@ msgid ""
 "**primaries** and other information. Displays are normally characterized "
 "(profiled) in their calibrated state."
 msgstr ""
+"相比之下，创建色彩特性文件（profiling）是个测量过程，不会对设备做任何调整或改"
+"变，而是生成一个文件，精确描述设备的颜色和色调特性。这个文件就是 **ICC 色彩特"
+"性文件** 。它包含了设备色彩空间到标准绝对色彩空间（在 ICC 色彩特性文件中叫配"
+"置文件连接空间）的转换函数、设备的 **白点** 、* *黑点** 、 **原色（色彩空间）"
+"** 等信息。显示器通常是在校准后的状态下创建色彩特性文件的。"
 
 #: ../../color_management/monitor_profiles.rst:72
 msgid ""
@@ -272,10 +352,16 @@ msgid ""
 "monitor screen by calibration/profiling software such as Argyll. The Argyll "
 "website maintains an up-to-date list of supported spectrophotometers."
 msgstr ""
+"严格来说，校准显示器不算色彩管理的一部分。但显然，一个正确分析过的显示器是色"
+"彩管理流程的先决条件。这份手册不深入讲如何校准和分析显示器，但 `Argyll "
+"<http://www.argyllcms.com/>`_ 的文档非常棒，强烈推荐阅读。想用 Argyll 软件校"
+"准或创建色彩特性文件，你得有个分光光度计（有时候叫“蜘蛛”），用来测量校准/分析"
+"软件（比如 Argyll）投到显示器屏幕上的颜色块的 RGB 值。Argyll 官网有最新的支持"
+"分光光度计列表。"
 
 #: ../../color_management/monitor_profiles.rst:75
 msgid "Calibrating your Monitor"
-msgstr ""
+msgstr "校准显示器"
 
 #: ../../color_management/monitor_profiles.rst:77
 msgid ""
@@ -291,6 +377,12 @@ msgid ""
 "featured accompanying bit of manufacturer's software that won't run under "
 "Linux)."
 msgstr ""
+"网上有很多不用分光光度计校准显示器的方法，靠的就是“眼球校准”。这些方法总比完"
+"全不校准好，凭你的眼力和显示器情况，效果也能凑合着用。但说实话，眼球校准没法"
+"完全替代用分光光度计做的专业校准和分析。别被分光光度计吓到，校准和分析显示器"
+"虽然一开始看起来复杂，其实不难。分光光度计的价格也不贵，100 欧元以下就能搞定"
+"（如果你买更贵的型号，注意别花冤枉钱买一堆 Linux 上跑不了的厂商软件，硬件好就"
+"行）。"
 
 #: ../../color_management/monitor_profiles.rst:79
 msgid ""
@@ -301,6 +393,10 @@ msgid ""
 "monitor profile of a particular type, for a particular purpose, the Argyll "
 "software have all the advanced capabilities you could possibly hope for."
 msgstr ""
+"`Argyll <http://www.argyllcms.com/>`_ 的文档会手把手教你怎么校准显示器、创建"
+"色彩特性文件，不用你先去啃一堆色彩管理理论。而且，如果有一天你对色彩管理了解"
+"多了，想为特定用途做个更精细的显示器色彩特性文件，Argyll 的强大功能绝对能满足"
+"你。"
 
 #: ../../color_management/monitor_profiles.rst:81
 msgid ""
@@ -313,10 +409,15 @@ msgid ""
 "And you don't need to tell digiKam to use a color-managed workflow because "
 "digiKam defaults to using sRGB for your camera, printer, and working space."
 msgstr ""
+"假设你决定全程用 sRGB 色彩空间，校准完显示器后，digiKam 里要 *按哪些按钮* ？"
+"如果你的显示器已经校准到 sRGB 标准，而且你只用 sRGB 色彩空间，那你可以直接在 "
+"digiKam 里禁用色彩管理。你不用特意告诉 digiKam 用哪个显示器色彩特性文件，因"
+"为 digiKam 默认把 sRGB 当做显示器色彩空间配置文件，也不用告诉 digiKam 用色彩"
+"管理流程，因为它默认会用 sRGB 来处理你的相机、打印机和工作空间。"
 
 #: ../../color_management/monitor_profiles.rst:87
 msgid "The digiKam Monitor Profile Settings from Color Management Setup Page"
-msgstr ""
+msgstr "digiKam 色彩管理设置页面中的显示器色彩特性文件设置"
 
 #: ../../color_management/monitor_profiles.rst:89
 msgid ""
@@ -330,100 +431,111 @@ msgid ""
 "named :file:`mymonitorprofile.icc`, then tell digiKam to use it instead of "
 "sRGB as your monitor profile."
 msgstr ""
+"但如果你想迈出色彩管理的第一步，那就去 :menuselection:`设置 --> 配置 "
+"digiKam… --> 色彩管理页面`  ，在“行为”选项卡里启用色彩管理，然后切换到 **色彩"
+"特性文件** 标签，选 sRGB 作为你的 **显示器色彩特性文件** 、 **相机色彩特性文"
+"件** 、 **工作空间色彩特性文件** 和 **打印机色彩特性文件** 。如果你还用 "
+"`Argyll <http://www.argyllcms.com/>`_  生成了一个显示器配置文件（最好是在校准"
+"显示器后生成的），比如叫  :file:`mymonitorprofile.icc` ，那就告诉 digiKam 用"
+"这个色彩特性文件代替 sRGB 作为显示器色彩特性文件。"
 
 #: ../../color_management/monitor_profiles.rst:93
 msgid "Monitor Profiles Storage"
-msgstr ""
+msgstr "显示器色彩特性文件的存储位置"
 
 #: ../../color_management/monitor_profiles.rst:94
 msgid ""
 "Windows, MacOS and Linux store their monitor profiles in different places."
-msgstr ""
+msgstr "显示器色彩特性文件在 Windows，MacOS 和 Linux 上存储的位置各不相同。"
 
 #: ../../color_management/monitor_profiles.rst:96
 msgid "On **Windows**, the default search paths include:"
-msgstr ""
+msgstr "在 **Windows** 上，默认搜索路径包括："
 
 #: ../../color_management/monitor_profiles.rst:98
 msgid ":file:`C:\\\\Windows\\\\System32\\\\spool\\\\drivers\\\\color\\\\`"
-msgstr ""
+msgstr ":file:`C:\\\\Windows\\\\System32\\\\spool\\\\drivers\\\\color\\\\`"
 
 #: ../../color_management/monitor_profiles.rst:99
 msgid ":file:`C:\\\\Windows\\\\Spool\\\\Drivers\\\\Color\\\\`"
-msgstr ""
+msgstr ":file:`C:\\\\Windows\\\\Spool\\\\Drivers\\\\Color\\\\`"
 
 #: ../../color_management/monitor_profiles.rst:100
 msgid ":file:`C:\\\\Windows\\\\Color\\\\`"
-msgstr ""
+msgstr ":file:`C:\\\\Windows\\\\Color\\\\`"
 
 #: ../../color_management/monitor_profiles.rst:102
 msgid "On **macOS**, the default search paths include:"
-msgstr ""
+msgstr "在 **macOS**，默认搜索路径包括："
 
 #: ../../color_management/monitor_profiles.rst:104
 msgid ":file:`/System/Library/ColorSync/Profiles/`"
-msgstr ""
+msgstr ":file:`/System/Library/ColorSync/Profiles/`"
 
 #: ../../color_management/monitor_profiles.rst:105
 msgid ":file:`/Library/ColorSync/Profiles/`"
-msgstr ""
+msgstr ":file:`/Library/ColorSync/Profiles/`"
 
 #: ../../color_management/monitor_profiles.rst:106
 msgid ":file:`~/Library/ColorSync/Profiles/`"
-msgstr ""
+msgstr ":file:`~/Library/ColorSync/Profiles/`"
 
 #: ../../color_management/monitor_profiles.rst:107
 msgid ":file:`/opt/local/share/color/icc/`"
-msgstr ""
+msgstr ":file:`/opt/local/share/color/icc/`"
 
 #: ../../color_management/monitor_profiles.rst:108
 msgid ""
 ":file:`/Applications/digiKam.org/digikam.app/Contents/Resources/digikam/"
 "profiles/`"
 msgstr ""
+":file:`/Applications/digiKam.org/digikam.app/Contents/Resources/digikam/"
+"profiles/`"
 
 #: ../../color_management/monitor_profiles.rst:109
 #: ../../color_management/monitor_profiles.rst:117
 msgid ":file:`~/.local/share/color/icc/`"
-msgstr ""
+msgstr ":file:`~/.local/share/color/icc/`"
 
 #: ../../color_management/monitor_profiles.rst:110
 #: ../../color_management/monitor_profiles.rst:118
 msgid ":file:`~/.local/share/icc/`"
-msgstr ""
+msgstr ":file:`~/.local/share/icc/`"
 
 #: ../../color_management/monitor_profiles.rst:111
 #: ../../color_management/monitor_profiles.rst:119
 msgid ":file:`~/.color/icc/`"
-msgstr ""
+msgstr ":file:`~/.color/icc/`"
 
 #: ../../color_management/monitor_profiles.rst:113
 msgid "On **Linux**, the default search paths include:"
-msgstr ""
+msgstr "在 **Linux**，默认搜索路径包括："
 
 #: ../../color_management/monitor_profiles.rst:115
 msgid ":file:`/usr/share/color/icc/`"
-msgstr ""
+msgstr ":file:`/usr/share/color/icc/`"
 
 #: ../../color_management/monitor_profiles.rst:116
 msgid ":file:`/usr/local/share/color/icc/`"
-msgstr ""
+msgstr ":file:`/usr/local/share/color/icc/`"
 
 #: ../../color_management/monitor_profiles.rst:121
 msgid ""
 "Under Linux and macOS, your personal ICC profiles are generally located in "
 "the :file:`~/local/share/color/icc` folder from your home directory."
 msgstr ""
+"在 Linux 和 macOS 下，你自己的 ICC 特性文件通常位于 home （用户名）文件夹下"
+"的 :file:`~/local/share/color/icc` 这个文件夹。"
 
 #: ../../color_management/monitor_profiles.rst:127
 msgid ""
 "digiKam Allows You to Setup Customized Places Where you can Store your "
 "Personal Color Profile"
-msgstr ""
+msgstr "在 digiKam 里你可以自行个人色彩特性文件的存放位置"
 
 #: ../../color_management/monitor_profiles.rst:130
 msgid "Ambient Lighting and Monitors"
-msgstr ""
+msgstr "环境光线与显示器"
 
 #: ../../color_management/monitor_profiles.rst:132
 msgid ""
@@ -439,6 +551,12 @@ msgid ""
 "monitor, then your editing process will *correct* color casts that don't "
 "really exist."
 msgstr ""
+"问：我工作台附近的灯光、墙壁、天花板、窗帘和家具颜色重要吗？答：当然重要！好"
+"的光线环境是正确编辑图片和比较屏幕图像与打印效果的前提。如果工作台附近的光线"
+"太亮（或太暗），显示器上的颜色就会显得太暗（或太亮）。如果工作间的灯具光线 **"
+"显色指数（CRI）** 低（也就是没用全光谱灯泡），或者光线来自窗户，会随着天气和"
+"时间变化（更糟的是，可能会被有色窗帘过滤），又或者墙壁和天花板的颜色在显示器"
+"上造成色偏，那你在编辑图片时，可能会去“纠正”一些根本不存在的颜色偏差。"
 
 #: ../../color_management/monitor_profiles.rst:134
 msgid ""
@@ -447,3 +565,5 @@ msgid ""
 "neutral clothing, and set appropriate light levels using appropriate bulbs "
 "and fixtures."
 msgstr ""
+"虽然家庭和谐很重要，但我们最好的建议是：把墙壁和天花板刷成中性灰色，把窗户遮"
+"住，穿中性颜色的衣服，用合适的灯泡和灯具设置适当的光线强度。"

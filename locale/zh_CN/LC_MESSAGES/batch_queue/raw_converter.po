@@ -20,23 +20,27 @@ msgstr ""
 
 #: ../../batch_queue/raw_converter.rst:-1
 msgid "digiKam RAW Converter from Batch Queue Manager"
-msgstr ""
+msgstr "批处理管理器中的 RAW 转换工具"
 
 #: ../../batch_queue/raw_converter.rst:-1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, batch, raw, converter"
 msgstr ""
+"digiKam, 文档, 用户手册, 照片管理, 开源, 免费, 学习, 轻松, 批处理, raw, 转换"
+"器"
 
 #: ../../batch_queue/raw_converter.rst:14
 msgid ":ref:`RAW Converter <batch_queue>`"
-msgstr ""
+msgstr ":ref:`RAW 转换 <batch_queue>`"
 
 #: ../../batch_queue/raw_converter.rst:16
 msgid ""
 "With the Batch Queue Manager, you can import and convert your images stored "
 "in RAW format to a demosaiced target formats such as (JPEG, TIFF, or PNG)."
 msgstr ""
+"用批处理管理器，你可以把相机拍的 RAW 格式照片批量转换成常见的 JPEG、TIFF 或 "
+"PNG 格式。"
 
 #: ../../batch_queue/raw_converter.rst:18
 msgid ""
@@ -48,6 +52,10 @@ msgid ""
 "in RAW mode because digital image post-processing can often produce better "
 "quality images than the camera's built-in conversion algorithms."
 msgstr ""
+"不过在处理 RAW 文件之前（甚至拍摄之前），有几点要注意：RAW 格式会保留相机拍到"
+"的所有原始数据，一点不压缩。也有压缩版的 RAW，但用的是无损压缩算法，解压后数"
+"据一点不丢。很多摄影师爱用 RAW 格式拍照，因为后期修图的效果往往比相机直出的效"
+"果更好。"
 
 #: ../../batch_queue/raw_converter.rst:20
 msgid ""
@@ -61,6 +69,11 @@ msgid ""
 "4-channel data to the standard 3-channel RGB representation used in standard "
 "image formats like JPEG and TIFF. That is the job of the RAW Convertor tool."
 msgstr ""
+"RAW 文件里存的是相机传感器上每个像素点的原始数据。大多数相机每个像素会记录 4 "
+"个颜色通道：1 红、1 蓝、2 绿（人眼对绿色更敏感）。而且 RAW 的色深通常比普通照"
+"片的8位更丰富。此外，相机的白平衡设置会存在 RAW 文件里，后期可以随便调。把这"
+"种 4 通道的原始数据转换成普通 JPEG/TIFF 的 3 通道 RGB 格式，就是\"去马赛克"
+"\"处理——这正是 RAW 转换工具要干的活。"
 
 #: ../../batch_queue/raw_converter.rst:22
 msgid ""
@@ -70,12 +83,17 @@ msgid ""
 "sometimes libraw gives better results. See :ref:`this section "
 "<camera_profiles>` of this manual for details."
 msgstr ""
+"digiKam 用的是  `Libraw <https://www.libraw.org/>`_  库来转换RAW，支持大部分"
+"（但不是所有）相机的RAW格式。转换效果可能和相机厂商自己的软件不太一样，但有时"
+"候反而更好。具体区别可以看手册里的 :ref:`这部分 <camera_profiles>` 说明。"
 
 #: ../../batch_queue/raw_converter.rst:24
 msgid ""
 "To use the RAW convertor in the Batch Queue Manager, select the RAW files to "
 "convert and load them into a dedicate batch queue."
 msgstr ""
+"要在批处理管理器里用 RAW 转换功能，先选中要转换的 RAW 文件，把它们加到指定的"
+"处理队列里。"
 
 #: ../../batch_queue/raw_converter.rst:26
 msgid ""
@@ -87,6 +105,10 @@ msgid ""
 "later on. A detailed description of the **RAW Decoding** settings is "
 "provided in :ref:`this section <setup_rawdefault>` of this manual."
 msgstr ""
+"接着在批处理管理器的设置界面里，调整各种复选框和数值框来优化转换效果。这里可"
+"以设置去马赛克方式、调白平衡、降噪，还能管理色彩配置。要是转换效果不满意也别"
+"急，反正后期还能再微调。具体怎么设置 **RAW 解码** 参数，手册  :ref:`这一节 "
+"<setup_rawdefault>` 有详细说明。"
 
 #: ../../batch_queue/raw_converter.rst:28
 msgid ""
@@ -97,6 +119,9 @@ msgid ""
 "size. In contrast, the tagged image format (**TIFF**) preserves all image "
 "information using a lossless LZW compression."
 msgstr ""
+"处理 RAW 文件时，记得在\"已指定工具\"列表最后加个格式转换工具，用来指定输出格"
+"式。默认情况下文件名不变，只改后缀。选  **JPEG**  的话文件最小，但用的是有损"
+"压缩；选  **TIFF**  的话能无损保留所有图像信息（用的是 LZW 压缩算法）。"
 
 #: ../../batch_queue/raw_converter.rst:32
 msgid ""
@@ -106,6 +131,8 @@ msgid ""
 "quality visibly deteriorates. **TIFF** and **PNG** are better suited to "
 "maintain the quality of the original data."
 msgstr ""
+"如果要反复修图，千万别用  **JPEG**  格式。这格式经不起折腾，改几次画质就明显"
+"变差。 **TIFF**  和  **PNG**  更适合保留原始画质。"
 
 #: ../../batch_queue/raw_converter.rst:36
 msgid ""
@@ -113,6 +140,8 @@ msgid ""
 "the metadata included in the RAW file will be included in the target files "
 "as Exif information."
 msgstr ""
+"不管选  **JPEG** 、 **TIFF**  还是  **PNG**  作为 **保存格式** ，RAW 文件里的"
+"元数据都会以 Exif 信息的形式存到新文件里。"
 
 #: ../../batch_queue/raw_converter.rst:38
 msgid ""
@@ -120,9 +149,11 @@ msgid ""
 "start the conversion. If you want to abort image conversion, press the "
 "**Abort** button."
 msgstr ""
+"设置好队列后，点 **执行** 按钮开始转换。想中途取消的话，按 **停止** 按钮就"
+"行。"
 
 #: ../../batch_queue/raw_converter.rst:44
 msgid ""
 "The Batch Queue Manager with a Workflow to Convert RAW files to HEIF "
 "Container by Applying Filters"
-msgstr ""
+msgstr "图示：用批处理管理器把 RAW 文件转成 HEIF 格式，还能顺便加滤镜"

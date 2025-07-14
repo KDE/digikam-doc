@@ -1,3 +1,4 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
@@ -11,34 +12,36 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: kdeorg\n"
-"X-Crowdin-Project-ID: 269464\n"
-"X-Crowdin-Language: zh-CN\n"
 "X-Crowdin-File: /kf5-trunk/messages/digikam-doc/"
 "docs_digikam_org_batch_queue___custom_script.pot\n"
 "X-Crowdin-File-ID: 41671\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
 
 #: ../../batch_queue/custom_script.rst:-1
 msgid "digiKam Custom Script from Batch Queue Manager"
-msgstr ""
+msgstr " 在 digiKam 批量处理管理器中使用自定义脚本"
 
 #: ../../batch_queue/custom_script.rst:-1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, batch, custom, script"
 msgstr ""
+"digiKam, 文档, 用户手册, 照片管理, 开源, 免费, 学习, 轻松, 批处理, 自定义, 脚"
+"本"
 
 #: ../../batch_queue/custom_script.rst:14
 msgid ":ref:`Custom Script <batch_queue>`"
-msgstr ""
+msgstr ":ref:`自定义脚本 <batch_queue>`"
 
 #: ../../batch_queue/custom_script.rst:16
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../batch_queue/custom_script.rst:19
 msgid "Overview"
-msgstr ""
+msgstr "概述"
 
 #: ../../batch_queue/custom_script.rst:21
 msgid ""
@@ -47,6 +50,9 @@ msgid ""
 "tools such as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool "
 "<https://en.wikipedia.org/wiki/ExifTool>`_."
 msgstr ""
+"批处理管理器支持通过 **自定义脚本** 工具来扩展图片处理流程，让你能用 "
+"`ImageMagick <https://imagemagick.org/>`_ 或 `ExifTool <https://en.wikipedia."
+"org/wiki/ExifTool>`_ 等外部工具处理图片。"
 
 #: ../../batch_queue/custom_script.rst:23
 msgid ""
@@ -57,14 +63,18 @@ msgid ""
 "entirely within the plugin. These scripts can include a set of environment "
 "variables that specify filenames and few types of metadata."
 msgstr ""
+"在** 基础工具** 列表的 **自定义工具** 分类下可以找到这个 **自定义脚本** 工"
+"具。它的作用是为队列中的每张图片执行一段 shell 脚本，脚本里可以调用各种命令行"
+"程序。你完全可以在插件里直接编写这些脚本，还能使用一系列的环境变量来获取文件"
+"名和元数据。"
 
 #: ../../batch_queue/custom_script.rst:29
 msgid "The Batch Queue Manager Including a Custom Script in a Workflow"
-msgstr ""
+msgstr "在批处理管理器的图片处理流程中添加自定义脚本"
 
 #: ../../batch_queue/custom_script.rst:31
 msgid "The tool provides these options:"
-msgstr ""
+msgstr "这个工具提供这几个设置项："
 
 #: ../../batch_queue/custom_script.rst:33
 msgid ""
@@ -73,6 +83,9 @@ msgid ""
 "**PNG**, or **TIFF**. Please note that JPEG is a lossy compression format, "
 "only supports 8-bit color depth, and does not support transparency."
 msgstr ""
+"**输出图片格式** ：设置脚本处理后的图片格式。默认是 **与输入相同** ，也可以"
+"选 **JPEG** 、**PNG** 或 **TIFF** 。注意 JPEG 是有损压缩格式，只支持 8 位色深"
+"且不支持透明通道。"
 
 #: ../../batch_queue/custom_script.rst:35
 msgid ""
@@ -82,6 +95,9 @@ msgid ""
 "script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported under "
 "**Windows**."
 msgstr ""
+"**Shell 脚本** ：在这里输入你的脚本代码。**Linux/macOS** 支持 `Bash 脚本 "
+"<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ ，**Windows** 则支持 `批"
+"处理脚本 <https://en.wikipedia.org/wiki/Batch_file>`_ 。"
 
 #: ../../batch_queue/custom_script.rst:37
 msgid ""
@@ -89,18 +105,19 @@ msgid ""
 "will replace all occurrences of keywords in the shell script at run time "
 "before script execution. Note that the keywords are case sensitive."
 msgstr ""
+"脚本中可以使用以下关键字（注意区分大小写），运行时工具会自动替换这些变量："
 
 #: ../../batch_queue/custom_script.rst:39
 msgid ""
 "**$INPUT** is replaced by the workflow input filename (with special "
 "characters escaped)."
-msgstr ""
+msgstr "**$INPUT** 会被替换成工作流程输入文件名（已转义特殊字符）"
 
 #: ../../batch_queue/custom_script.rst:41
 msgid ""
 "**$OUTPUT** is replaced by the workflow output filename (with special "
 "characters escaped)."
-msgstr ""
+msgstr "**$OUTPUT** 会被替换成工作流程输出文件名（已转义特殊字符）"
 
 #: ../../batch_queue/custom_script.rst:45
 msgid ""
@@ -109,40 +126,43 @@ msgid ""
 "$INPUT** to **$OUTPUT** with the appropriate command for the operating "
 "system, before making any changes to **$OUTPUT**."
 msgstr ""
+"脚本执行后必须生成一个新文件到 **$OUTPUT** 路径。如果用的是不生成新文件的程序"
+"（比如用 ExifTool 修改元数据），得先用命令把 **$INPUT** 拷贝到 **$OUTPUT** ，"
+"再对 **$OUTPUT**  做修改。"
 
 #: ../../batch_queue/custom_script.rst:47
 msgid "The environment variables that you can use in your shell script are:"
-msgstr ""
+msgstr "脚本里还能调用这些环境变量："
 
 #: ../../batch_queue/custom_script.rst:49
 msgid "**TITLE**: to use the digiKam **Title** item property."
-msgstr ""
+msgstr "**TITLE**: 对应 digiKam 的 **标题** 属性"
 
 #: ../../batch_queue/custom_script.rst:51
 msgid "**COMMENTS**: to use the digiKam **Caption** item property."
-msgstr ""
+msgstr "**COMMENTS**: 对应 digiKam 的 **说明** 文字"
 
 #: ../../batch_queue/custom_script.rst:53
 msgid "**COLORLABEL**: to use the digiKam **Color Label** item property."
-msgstr ""
+msgstr "**COLORLABEL**: 对应 digiKam 的 **颜色标记** 属性"
 
 #: ../../batch_queue/custom_script.rst:55
 msgid "**PICKLABEL**: to use the digiKam **Pick Label** item property."
-msgstr ""
+msgstr "**PICKLABEL**: 对应 digiKam 的 **挑选标记**"
 
 #: ../../batch_queue/custom_script.rst:57
 msgid "**RATING**: to use the digiKam **Rating** item property."
-msgstr ""
+msgstr "**RATING**: 对应 digiKam 的 **评分星级**"
 
 #: ../../batch_queue/custom_script.rst:59
 msgid "**TAGSPATH**: to use the digiKam **Tags** item property."
-msgstr ""
+msgstr "**TAGSPATH**: 对应 digiKam 的 **标签** 属性"
 
 #: ../../batch_queue/custom_script.rst:61
 msgid ""
 "All of these properties are set based on the image properties stored in the "
 "digiKam database."
-msgstr ""
+msgstr "这些变量值都来自 digiKam 数据库里存的图片属性。"
 
 #: ../../batch_queue/custom_script.rst:65
 msgid ""
@@ -150,6 +170,8 @@ msgid ""
 "with **$** as a prefix for variable names (for example **$INPUT**). The "
 "interpreter used to run the script is **/bin/bash**."
 msgstr ""
+"在 Linux 和 macOS 下，脚本中的环境变量可以用 **$** 作为变量名的前缀（例如 **"
+"$INPUT**）。运行脚本时使用的解释器是 **/bin/bash**。"
 
 #: ../../batch_queue/custom_script.rst:67
 msgid ""
@@ -157,10 +179,12 @@ msgid ""
 "%** as a prefix and suffix of variable names (for example **%INPUT%**). The "
 "interpreter used to run the script is **cmd.exe**."
 msgstr ""
+"在 Windows 下，脚本中可以使用 **%** 作为变量名的前缀和后缀来访问环境变量（例"
+"如 **%INPUT%**）。运行脚本的解释器是 **cmd.exe**。"
 
 #: ../../batch_queue/custom_script.rst:71
 msgid "Return Value"
-msgstr ""
+msgstr "返回值"
 
 #: ../../batch_queue/custom_script.rst:73
 msgid ""
@@ -168,6 +192,8 @@ msgid ""
 "or an integer in the range 1-255 for an error. Use **exit < error_code >** "
 "to pass the return value back to the workflow."
 msgstr ""
+"按照惯例，Linux 和 macOS 下的 **Bash 脚本** 成功时返回 0，错误时返回 1-255 范"
+"围内的整数。使用 **exit < error_code >** 将返回值传回工作流。"
 
 #: ../../batch_queue/custom_script.rst:75
 msgid ""
@@ -176,6 +202,8 @@ msgid ""
 "possible. Use **EXIT /B < error_code >** to pass the return value to the "
 "workflow."
 msgstr ""
+"在 Windows 下， **批处理脚本** 成功时返回 0，错误时返回其他值，但该值是有符号"
+"整数，因此也可能是负值。使用 **EXIT /B < error_code >**将返回值传给工作流。"
 
 #: ../../batch_queue/custom_script.rst:77
 msgid ""
@@ -183,14 +211,16 @@ msgid ""
 "is returned, the workflow will continue as expected, otherwise the workflow "
 "is interrupted and the Batch Queue Manager stops processing."
 msgstr ""
+"批处理管理器会处理脚本返回的值。如果返回零，工作流将继续正常执行；否则工作流"
+"将被中断，批处理管理器停止处理。"
 
 #: ../../batch_queue/custom_script.rst:80
 msgid "Examples"
-msgstr ""
+msgstr "示例"
 
 #: ../../batch_queue/custom_script.rst:83
 msgid "Proof of Concept"
-msgstr ""
+msgstr "概念验证"
 
 #: ../../batch_queue/custom_script.rst:85
 msgid ""
@@ -202,6 +232,10 @@ msgid ""
 "returns the value from the file copy command, which is parsed by the Batch "
 "Queue Manager for each item in the workflow."
 msgstr ""
+"下面这个示例脚本其实没什么特别功能。它主要做这些事：把批处理管理器传给脚本的"
+"输入/输出文件名和图片属性，打印到控制台；把输入文件原样拷贝到输出路径（这步不"
+"能省，不然会报错说找不到输出文件）；返回文件拷贝命令的执行状态码，批处理管理"
+"器会根据这个状态码判断要不要继续处理。"
 
 #: ../../batch_queue/custom_script.rst:102
 msgid ""
@@ -209,49 +243,54 @@ msgid ""
 "ref:`Setting/Miscellaneous/System dialog page <system_settings>`, you will "
 "see something like this:"
 msgstr ""
+"如果你是从终端启动 digiKam 的，而且在 :ref:`设置/其他(杂项)/系统 "
+"<system_settings>` 里开了调试日志，就能在终端看到类似这样的输出。"
 
 #: ../../batch_queue/custom_script.rst:116
 msgid "The digiKam information taken from the database are:"
-msgstr ""
+msgstr "从数据库里提取出来的信息就是："
 
 #: ../../batch_queue/custom_script.rst:118
 msgid "Item processed is **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
-msgstr ""
+msgstr "所处理的项目是 **/mnt/data/Images/SALAGOU/DSC08833.JPG**"
 
 #: ../../batch_queue/custom_script.rst:119
 msgid ""
 "Target filename is **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a12."
 "digikamtempfile.JPG** (a temporary file generated by Batch Queue Manager)."
 msgstr ""
+"目标文件名是 **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a12."
+"digikampetfile.JPG** (由批处理管理器生成的临时文件)。"
 
 #: ../../batch_queue/custom_script.rst:120
 msgid "Item Title is **Salagou Trip**."
-msgstr ""
+msgstr "项目标题为 **Salagou Trip**。"
 
 #: ../../batch_queue/custom_script.rst:121
 msgid "Item Comment is null."
-msgstr ""
+msgstr "项目注释为空。"
 
 #: ../../batch_queue/custom_script.rst:122
 msgid "Item Color Label is **5** (Green)."
-msgstr ""
+msgstr "项目颜色标记为 **5** (绿色)。"
 
 #: ../../batch_queue/custom_script.rst:123
 msgid "Item Pick Label is **3** (Accepted)."
-msgstr ""
+msgstr "项目挑选标记是 **3** (已接受)。"
 
 #: ../../batch_queue/custom_script.rst:124
 msgid "Item Rating is **3 stars**."
-msgstr ""
+msgstr "项目评分为 **3星**。"
 
 #: ../../batch_queue/custom_script.rst:125
 msgid ""
 "Item Tags are **Places**, **Places/France**, **Places/France/Salagou Lake**."
 msgstr ""
+"项目标签是 **Places**，**Places/France**，**Places/France/Salagou Lake**。"
 
 #: ../../batch_queue/custom_script.rst:128
 msgid "Add a Watermark with ImageMagick"
-msgstr ""
+msgstr "使用 ImageMagick 添加水印"
 
 #: ../../batch_queue/custom_script.rst:130
 msgid ""
@@ -259,6 +298,8 @@ msgid ""
 "command line tool to add visible watermarks by superimposing a multiline "
 "text field over each image in the Queue."
 msgstr ""
+"下面这个示例就复杂多了，它用 **ImageMagick** 的命令行工具给队列里的每张图片叠"
+"加多行文字水印。"
 
 #: ../../batch_queue/custom_script.rst:149
 msgid ""
@@ -266,11 +307,13 @@ msgid ""
 "Workflow. Bash uses the last called method as the returned value from the "
 "script, here the ImageMagick command line tool **convert**."
 msgstr ""
+"这个脚本里没有专门写 **exit** 命令来返回值。Bash 会自动把最后执行的命令结果作"
+"为脚本返回值，在这里就是 ImageMagick 的 **convert 工具** 的执行状态。"
 
 #: ../../batch_queue/custom_script.rst:151
 msgid "This give a result like below."
-msgstr ""
+msgstr "所得结果如下。"
 
 #: ../../batch_queue/custom_script.rst:157
 msgid "The result of the Script Using ImageMagick to Apply a Watermark"
-msgstr ""
+msgstr "使用 ImageMagick 应用水印的脚本结果"

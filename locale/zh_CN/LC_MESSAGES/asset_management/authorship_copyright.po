@@ -32,7 +32,7 @@ msgstr ""
 
 #: ../../asset_management/authorship_copyright.rst:14
 msgid ":ref:`Authorship and Copyright <asset_management>`"
-msgstr ""
+msgstr ":ref:`作者身份和版权 <asset_management>`"
 
 #: ../../asset_management/authorship_copyright.rst:16
 msgid "Contents"
@@ -40,7 +40,7 @@ msgstr "目录"
 
 #: ../../asset_management/authorship_copyright.rst:19
 msgid "Strings Metadata"
-msgstr ""
+msgstr "字符串元数据"
 
 #: ../../asset_management/authorship_copyright.rst:21
 msgid ""
@@ -53,6 +53,10 @@ msgid ""
 "to legally prohibit others from reproducing, adapting, or distributing "
 "copies of your work."
 msgstr ""
+"给数字图片添加标签的最后一步，可能是加上作者、所有权和版权信息。和纸质照片的"
+"\"美好(?)旧时光\"不同，现在网上随便就能\"偷\"走一张图。至少所有要导出或发布的"
+"图片，都应该在元数据里嵌入作者和版权信息。有了这些信息，你就能在法律上禁止他"
+"人复制、修改或传播你的作品。"
 
 #: ../../asset_management/authorship_copyright.rst:23
 msgid ""
@@ -60,6 +64,8 @@ msgid ""
 "your images if you want to openly share your images, allowing other people "
 "to freely use them, while retaining the tags indicating your authorship."
 msgstr ""
+"如果你想开放分享图片，允许他人自由使用，同时保留作者信息标签，那可以嵌入作者"
+"和​​ Copyleft​​ 信息。"
 
 #: ../../asset_management/authorship_copyright.rst:25
 msgid ""
@@ -68,6 +74,9 @@ msgid ""
 "work for others and requiring that the same freedoms be preserved for "
 "modified versions."
 msgstr ""
+"（“版权”的英文是 copyright，因此 copyleft 是为了表达相反意思而造的词，旨在放"
+"弃独占，为公共获取提供方便）Copyleft 是一种利用版权法来解除作品传播和修改限制"
+"的做法，要求衍生作品也必须保持同样的自由。"
 
 #: ../../asset_management/authorship_copyright.rst:27
 msgid ""
@@ -78,6 +87,9 @@ msgid ""
 "License. Similar licenses are available through Creative Commons - called "
 "Share-alike."
 msgstr ""
+"Copyleft许可通常允许任何人复制、修改或传播作品，只要衍生作品也遵循同样的"
+"Copyleft许可协议。常用的Copyleft许可有GNU通用公共许可证，类似的还有知识共享组"
+"织的\"相同方式共享\"许可。"
 
 #: ../../asset_management/authorship_copyright.rst:29
 msgid ""
@@ -86,16 +98,19 @@ msgid ""
 "`Settings --> Templates` that is used to automatically tag any images "
 "digiKam imports."
 msgstr ""
+"用digiKam添加作者、所有权和版权（或Copyleft）标签特别简单：你可以在:"
+"menuselection:`设置 --> 模板` 里预设身份信息，导入图片时会自动添加这些标签。"
 
 #: ../../asset_management/authorship_copyright.rst:36
 msgid ""
 "The digiKam :ref:`Template Metadata <templates_settings>` Settings Panel"
 msgstr ""
+"digiKam的 :ref:`元数据模板设置 <templates_settings>` 面板需要填写以下字段："
 
 #: ../../asset_management/authorship_copyright.rst:38
 msgid ""
 "The fields that should be supplied to digiKam's Templates setup page include:"
-msgstr ""
+msgstr "应提供给 digiKam 设置页面的字段包括："
 
 #: ../../asset_management/authorship_copyright.rst:40
 msgid ""
@@ -106,6 +121,9 @@ msgid ""
 "company or organization can be used. Once saved, this field should not be "
 "changed by anyone. This field supports the use of semi-colons as a separator."
 msgstr ""
+"**作者姓名**​​ （等同于创建者和署名行）：这里填你的名字或照片创作者的名字。如果"
+"不便透露摄影师身份（比如需要保护隐私），可以填公司或组织名。保存后任何人都不"
+"应修改此字段。多个姓名可以用分号隔开。"
 
 #: ../../asset_management/authorship_copyright.rst:42
 msgid ""
@@ -115,6 +133,9 @@ msgid ""
 "Independent Commercial Photographer. Since this is a qualifier for the "
 "Author field, the Author field must also be filled out."
 msgstr ""
+"**作者职位** （等同于署名头衔）：和作者关联。这里填摄影师的职位，比如：专职摄"
+"影师、自由摄影师或独立商业摄影师。因为这是作者信息的补充，所以作者字段也必须"
+"填写。"
 
 #: ../../asset_management/authorship_copyright.rst:44
 msgid ""
@@ -126,6 +147,9 @@ msgid ""
 "then the group (agency) involved in supplying the image should be listed "
 "here."
 msgstr ""
+"**图片来源​​** （等同于提供者）：这里标出照片提供方，不一定是作者本人。比如摄影"
+"师供职于路透社或美联社，就可以填这些机构名，因为是他们在\"提供\"图片。如果是"
+"图库照片，就填提供图片的机构名。"
 
 #: ../../asset_management/authorship_copyright.rst:46
 msgid ""
@@ -148,21 +172,34 @@ msgid ""
 "word, Copyright; (b) year of the first publication; and (c) name of the "
 "author. You may also wish to include the phrase *all rights reserved*."
 msgstr ""
+"**版权声明​​** ：这里填声明知识产权的版权信息，标明照片当前的版权所有者。通常是"
+"摄影师本人，但如果是职务作品或委托作品，就该填公司或机构名。格式要符合所在国"
+"家/地区的规定：美国通常用 © {date of first publication} (首发年份) + 版权所有"
+"者，比如\"copr 2005 John Doe\"。只能用 \"copyright\" 或缩写 \"copr\" 代替©符"
+"号（因为只支持ASCII字符）。在某些国家只认©符号，缩写无效。像(c)这样用括号模拟"
+"©是不行的。为了全球范围内加强保护，建议在这些声明后追加\"all rights reserved"
+"\"。欧洲用：Copyright {Year} (年份) {copyright owner} (版权所有者), all "
+"rights reserved。如果在日本，为了最大限度保护，IPTC核心元数据的版权字段应包"
+"含：(a) Copyright 字样；(b) 首发年份；(c) 作者姓名。也可以加上all rights "
+"reserved。"
 
 #: ../../asset_management/authorship_copyright.rst:48
 msgid ""
 "The copyright marking for a Creative Commons Share-alike license might read:"
-msgstr ""
+msgstr "知识共享\"相同方式共享\"许可的版权声明可以这样写："
 
 #: ../../asset_management/authorship_copyright.rst:50
 msgid "*This work copyright {Year} by {Author} is licensed under CC BY-SA 4.0*"
 msgstr ""
+"*This work copyright {Year} by {Author} is licensed under CC BY-SA 4.0*"
 
 #: ../../asset_management/authorship_copyright.rst:52
 msgid ""
 "See `<https://creativecommons.org/licenses/by-sa/4.0/>`_ for details on what "
 "the Share-Alike license means."
 msgstr ""
+"SA许可条款具体的含义详见：`<https://creativecommons.org/licenses/by-sa/4.0/"
+">`_ "
 
 #: ../../asset_management/authorship_copyright.rst:54
 msgid ""
@@ -176,15 +213,19 @@ msgid ""
 "also be different from the Creator and from the names listed in the "
 "Copyright Notice."
 msgstr ""
+"**来源​​** ：这个字段用于标明照片的原所有者或版权持有者。信息一旦在照片创建后录"
+"入就永远不要修改，应该视为\"一次性填写\"字段。来源可以是个人、机构或机构成"
+"员。为了方便后续搜索，建议用空格分隔斜杠'/'，写成\"摄影师 / 机构\"而不是\"摄"
+"影师/机构\"。来源可能不同于创作者和版权声明中的名字。"
 
 #: ../../asset_management/authorship_copyright.rst:60
 msgid ""
 "The digiKam :ref:`Copyrights View <metadata_editor>` From Metadata Editor"
-msgstr ""
+msgstr "digiKam的 :ref:`版权视图 <metadata_editor>` （来自元数据编辑器）"
 
 #: ../../asset_management/authorship_copyright.rst:63
 msgid "Digital Watermarking"
-msgstr ""
+msgstr "数字水印"
 
 #: ../../asset_management/authorship_copyright.rst:65
 msgid ""
@@ -195,6 +236,9 @@ msgid ""
 "This might be of little interest to amateur photographers, but digital "
 "watermarking is really important for professionals and semi-professionals."
 msgstr ""
+"虽然填写作者和版权字段能提供法律保护，但这些信息防不了造假。稍微懂电脑的人就"
+"能删除或修改图片内嵌的元数据。解决方案叫做 *数字水印* ——这对业余摄影师可能不"
+"重要，但对专业和半专业人士非常关键。"
 
 #: ../../asset_management/authorship_copyright.rst:67
 msgid ""
@@ -205,6 +249,8 @@ msgid ""
 "data (as opposed to the metadata section which is a separate section within "
 "the image file)."
 msgstr ""
+"数字水印是作为数字版权管理(DRM)的一部分嵌入照片的隐形标记，包含上述作者和版权"
+"信息，但数据会加密存储在图像实际数据中（而不是容易修改的独立元数据区）。"
 
 #: ../../asset_management/authorship_copyright.rst:69
 msgid ""
@@ -215,9 +261,12 @@ msgid ""
 "the image is of no value anymore to the copyright infringing party. The "
 "digital watermark will be unique per image."
 msgstr ""
+"这种隐形印记具有全息特性，即使图片被修改（调整尺寸、颜色、裁剪等，在一定限度"
+"内）也不会破坏版权信息。只有当图片缩到极小尺寸（如缩略图）时信息才会丢失，不"
+"过那种情况对盗用者也没价值了。每张图片的水印都是独一无二的。"
 
 #: ../../asset_management/authorship_copyright.rst:71
 msgid ""
 "digiKam does not currently support digital watermarking,  but it can pass "
 "images to external programs that can add digital watermarks."
-msgstr ""
+msgstr "digiKam目前不支持直接添加数字水印，但可以将图片传给外部程序处理。"
