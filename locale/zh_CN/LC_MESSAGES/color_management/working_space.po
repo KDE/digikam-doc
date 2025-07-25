@@ -1,3 +1,4 @@
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
@@ -11,12 +12,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: kdeorg\n"
-"X-Crowdin-Project-ID: 269464\n"
-"X-Crowdin-Language: zh-CN\n"
 "X-Crowdin-File: /kf5-trunk/messages/digikam-doc/"
 "docs_digikam_org_color_management___working_space.pot\n"
 "X-Crowdin-File-ID: 41597\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
 
 #: ../../color_management/working_space.rst:-1
 msgid "Color Management and Working Space"
@@ -136,7 +137,7 @@ msgstr ""
 
 #: ../../color_management/working_space.rst:32
 msgid "Selecting a Working Space"
-msgstr ""
+msgstr "选择工作色彩空间"
 
 #: ../../color_management/working_space.rst:34
 msgid ""
@@ -147,6 +148,10 @@ msgid ""
 "working space will lead to clipping. This trade-off is a consideration for "
 "the Image Editor."
 msgstr ""
+"在 digiKam 里该选哪个工作色彩空间呢？像 sRGB 或 Adobe RGB 这样的工作色彩空"
+"间，能让编辑图片时效果更好。比如，RGB 值相等的像素应该看起来是中性的（无"
+"色）。用色域大的工作色彩空间可能导致色调分离（posterization），而用色域小的可"
+"能会导致颜色裁切（clipping）。这在图像编辑器里是个需要权衡的问题。"
 
 #: ../../color_management/working_space.rst:36
 msgid ""
@@ -156,6 +161,9 @@ msgid ""
 "edge of the Chromaticity Diagram passing from blue to green to red, are the "
 "wavelengths of the pure spectral colors measured in nanometers."
 msgstr ""
+"如下图所示，大多数工作色彩空间的特性文件都部分基于 **CIE 色度图** *（1）* ，"
+"这个图展示了普通人眼能看到的所有颜色。色度图边缘标注的数值，从蓝色到绿色再到"
+"红色，代表纯光谱颜色的波长，单位是纳米（nanometers）。"
 
 #: ../../color_management/working_space.rst:38
 msgid ""
@@ -165,22 +173,28 @@ msgid ""
 "triangle. The Red point is on the bottom right corner, Green is on the top, "
 "Blue is on the left bottom."
 msgstr ""
+" **色域** `（2）` 三角形定义了色彩特性文件涵盖的 RGB 颜色范围。换句话说，这个"
+"色彩空间只能表现三角形内的颜色。RGB 原色点定义了三角形的三个顶角：红色点在右"
+"下角，绿色点在上方，蓝色点在左下角。"
 
 #: ../../color_management/working_space.rst:40
 msgid ""
 "The **White point** `(3)` defines the neutral point in the gamut. The total "
 "dynamic range of the profile is measured relative to this neutral point."
 msgstr ""
+" **白点**  `(3)` 定义了色域的中性点。色彩特性文件的总动态范围是相对这个中性点"
+"来测量的。"
 
 #: ../../color_management/working_space.rst:42
 msgid ""
 "The **Gamma** defines the usually nonlinear transfer function that is "
 "applied to the data (not displayed in the gamut)."
 msgstr ""
+" **伽马** 定义了通常非线性的传输函数，应用于数据（但在色域图里不显示）。"
 
 #: ../../color_management/working_space.rst:48
 msgid "The Color Profile Details of CIE Chromaticity Diagram Shown in digiKam"
-msgstr ""
+msgstr "digiKam 中显示的 CIE 色度图的色彩特性文件详情"
 
 #: ../../color_management/working_space.rst:50
 msgid ""
@@ -190,6 +204,9 @@ msgid ""
 "following section. But the practical consequences for different choices for "
 "the working space white point are beyond the scope of this manual."
 msgstr ""
+"使用不同的 RGB 原色点会导致色域大小不同的工作色彩空间，具体影响我们稍后会聊。"
+"不同伽马值的实际影响也会在后面讨论。不过，选择不同工作色彩空间白点的实际影"
+"响，超出了这份手册的范围。"
 
 #: ../../color_management/working_space.rst:52
 msgid ""
@@ -199,10 +216,13 @@ msgid ""
 "`Color Management Settings <cm_settings>` section of the manual for more "
 "information."
 msgstr ""
+"想在 digiKam 里设置工作色彩空间，点开  :menuselection:`设置 --> 配置 "
+"digiKam… --> 色彩管理页面 --> 行为选项卡` ，从菜单里选你想要的工作色彩空间。"
+"更多详情可以看看手册的  :ref:`色彩管理设置 <cm_settings>` 部分。"
 
 #: ../../color_management/working_space.rst:58
 msgid "Dialog to set the Working Color Space in digiKam"
-msgstr ""
+msgstr "digiKam 中设置工作色彩空间的对话框"
 
 #: ../../color_management/working_space.rst:60
 msgid ""
@@ -210,12 +230,14 @@ msgid ""
 "automatically perform conversions to this space if an image has a different "
 "color profile, or no assigned profile."
 msgstr ""
+"一旦设好了工作色彩空间，你还可以让 digiKam 自动把图像转到这个空间，比如当图像"
+"的色彩特性文件跟工作色彩空间不匹配，或者压根没指定特性文件时。"
 
 #: ../../color_management/working_space.rst:66
 msgid ""
 "digiKam can be set to Convert to Working Space When Color Space Mismatch "
 "Occurs"
-msgstr ""
+msgstr "digiKam 可设置为色彩空间不匹配时自动转换到工作色彩空间"
 
 #: ../../color_management/working_space.rst:68
 msgid ""
@@ -223,16 +245,18 @@ msgid ""
 "Color Space Convertor that can be accessed from the Tools tab in the Right "
 "Sidebar."
 msgstr ""
+"你还可以在图像编辑器里直接切换色彩空间。点右边侧栏的工具选项卡，找到色彩空间"
+"转换器就能切换到其他色彩特性文件。"
 
 #: ../../color_management/working_space.rst:74
 msgid ""
 "digiKam Image Editor Color Space Converter can Switch to Another Color "
 "Profile"
-msgstr ""
+msgstr "digiKam 图像编辑器的色彩空间转换器可切换到其他色彩特性文件"
 
 #: ../../color_management/working_space.rst:78
 msgid "Tonal Steps and Gamut Size"
-msgstr ""
+msgstr "色阶与色域大小"
 
 #: ../../color_management/working_space.rst:80
 msgid ""
@@ -248,6 +272,12 @@ msgid ""
 "the standard advice if you shoot RAW, is to expose to the right but don't "
 "blowout the highlights."
 msgstr ""
+"一张数字图像里有多少个离散的色阶？在一张 8 位图像中，从纯黑到纯白有 256 个色"
+"阶。在 16 位图像中，理论上有 65,536 个色阶。但别忘了，这些 16 位数值其实是从"
+"相机模数转换器生成的 10 位（1,024 个色阶）、12 位（4,096 个色阶）或 14 位"
+"（16,384 个色阶）开始的——多出来的位数最初只是“零填充”。这意味着可用色调并不是"
+"从亮到暗均匀分布的。线性伽马模式（相机传感器记录的方式）下，高光部分的色阶远"
+"多于阴影部分。所以，拍 RAW 的经典建议是：尽量向右曝光，但别让高光过曝。"
 
 #: ../../color_management/working_space.rst:82
 msgid ""
@@ -259,12 +289,18 @@ msgid ""
 "by the *Lcms* conversion from your camera profile to the really big profile "
 "connection space."
 msgstr ""
+"选择工作色彩空间的一个重要考虑是，有些色彩空间比其他的大，覆盖了更多可见光谱"
+"（甚至可能包含一些“虚构颜色”——数学上存在但现实中没有的颜色）。这些大色域空间"
+"的好处是能保留相机捕捉、并通过 *Lcms* 从相机色彩特性文件转换到超大配置文件连"
+"接空间的所有颜色。"
 
 #: ../../color_management/working_space.rst:88
 msgid ""
 "For the Left to Right: sRGB, AbodeRGB, WideGammutRGB, and ProPhotoRGB Color "
 "Profile Shown in digiKam"
 msgstr ""
+"从左到右分别是：digiKam 中显示的 sRGB、AdobeRGB、WideGamutRGB 和 ProPhotoRGB "
+"色彩特性文件"
 
 #: ../../color_management/working_space.rst:90
 msgid ""
@@ -277,6 +313,11 @@ msgid ""
 "etc.) can easily produce colors that your eventual output device (printer, "
 "monitor) simply cannot display."
 msgstr ""
+"但保留所有可能的颜色是有代价的。实际上，任何一张数字图像（颜色鲜艳的黄水仙是"
+"个常见例外）可能只包含相机能捕捉的所有可见颜色中的一小部分。这小部分颜色完全"
+"可以被较小的色彩空间容纳。使用超大色域的工作色彩空间，意味着编辑图片（比如调"
+"整曲线、饱和度等）时，可能会产生你的输出设备（打印机、显示器）根本显示不下的"
+"颜色。"
 
 #: ../../color_management/working_space.rst:92
 msgid ""
@@ -290,11 +331,16 @@ msgid ""
 "for example, might get remapped to a solid block of dull red after "
 "conversion to your printer's color space)."
 msgstr ""
+"所以，从工作色彩空间转换到输出设备空间（比如打印机）时，编辑后的图片色域（可"
+"能还包含虚构颜色）得重新映射到打印机的较小色域。这映射过程轻则导致颜色不准，"
+"重则导致色调分离（posterization，也叫跳阶）——比如蓝天上本该平滑的颜色过渡出现"
+"明显间隙，或者裁切（clipping）——你精心调整的红色渐变，可能在转到打印机色彩空"
+"间后变成一块单调的暗红色。"
 
 #: ../../color_management/working_space.rst:99
 msgid ""
 "The digiKam Color Profile Properties Dialog Displaying BestRGB Information"
-msgstr ""
+msgstr "digiKam 色彩特性文件属性对话框显示 BestRGB 信息"
 
 #: ../../color_management/working_space.rst:101
 msgid ""
@@ -302,10 +348,12 @@ msgid ""
 "lost information on output. Small gamut working spaces can clip information "
 "on input. Here is some oft-repeated advice:"
 msgstr ""
+"换句话说，处理不当的大色域工作色彩空间，输出时可能会丢失信息。小色域工作色彩"
+"空间则可能在输入时裁切色彩信息。这里有些老生常谈的建议："
 
 #: ../../color_management/working_space.rst:103
 msgid "For images intended for the web, use sRGB."
-msgstr ""
+msgstr "如果图片是给网页用的，选 sRGB。"
 
 #: ../../color_management/working_space.rst:105
 msgid ""
@@ -316,12 +364,17 @@ msgid ""
 "a little extra room for those new colors you intentionally produce as you "
 "edit."
 msgstr ""
+"为了编辑图片时获得最高精度（充分利用你选定的 *色深* ，同时尽量减少转换到输出"
+"空间时的色调分离或裁切风险），选一个刚好能包含你拍摄场景所有颜色的最小工作色"
+"彩空间，再留点余地给你编辑时有意添加的新颜色。"
 
 #: ../../color_management/working_space.rst:107
 msgid ""
 "If you are working in 8-bits, choose a smaller space rather than a larger "
 "space. Use 16-bit images for larger spaces."
 msgstr ""
+"如果用 8 位色深的图像，选较小的色彩空间，而不是大的。大的色域空间就得用 16 位"
+"图像来处理。"
 
 #: ../../color_management/working_space.rst:109
 msgid ""
@@ -330,14 +383,17 @@ msgid ""
 "archival TIFF to your working space of choice (saving the converted working "
 "TIFF under a new name, of course). See here for more details."
 msgstr ""
+"为了存档，把 RAW 文件转成 16 位 TIFF，用大色域工作色彩空间，避免丢失颜色信"
+"息。然后把这个存档 TIFF 转到你选的工作色彩空间（当然，另存为新文件名）。详情"
+"可以看这里。"
 
 #: ../../color_management/working_space.rst:115
 msgid "digiKam Queue Manager Allows You to Batch Convert Color Spaces"
-msgstr ""
+msgstr "digiKam 批处理管理器支持批量转换色彩空间"
 
 #: ../../color_management/working_space.rst:121
 msgid "Rendering Intent"
-msgstr ""
+msgstr "再现意图"
 
 #: ../../color_management/working_space.rst:123
 msgid ""
@@ -346,10 +402,12 @@ msgid ""
 "handle the full gamut of the source color space (for example the working "
 "space)."
 msgstr ""
+" **再现意图** 是指当目标色彩空间（比如显示器或打印机）的色域无法完全容纳源色"
+"彩空间（比如工作色彩空间）的全部颜色时，如何处理色域的策略。"
 
 #: ../../color_management/working_space.rst:125
 msgid "There are four commonly-used rendering intents:"
-msgstr ""
+msgstr "常用的再现意图有以下四种："
 
 #: ../../color_management/working_space.rst:127
 msgid ""
@@ -362,6 +420,11 @@ msgid ""
 "Perceptual rendering applies the same gamut compression to all images, even "
 "when the image contains no significant out-of-gamut colors."
 msgstr ""
+" **可感知** （也叫 **图像或保持全色域** ）：一般推荐给摄影图片使用。在不同色"
+"彩空间间转换时，色域会被扩展或压缩，以保持整体外观一致。低饱和度的颜色变化很"
+"小，而在两个色域内都有的高饱和度颜色可能会被调整，以区分那些在较小色域外的颜"
+"色。“可感知”对所有图片都用同样的色域压缩方式，即便图片里没有明显的超色域颜"
+"色。"
 
 #: ../../color_management/working_space.rst:129
 msgid ""
@@ -369,6 +432,8 @@ msgid ""
 "and White Point**. Reproduces in-gamut colors exactly and clips out-of-gamut "
 "colors to the nearest reproducible hue."
 msgstr ""
+" **相对比色** ：（也叫 **校样或保持相同颜色和白点** ）：\n"
+"精确重现色域内的颜色，把超色域的颜色裁剪到最接近的可重现色调。"
 
 #: ../../color_management/working_space.rst:131
 msgid ""
@@ -380,6 +445,10 @@ msgid ""
 "cream-colored paper, effectively darkening the image. Rarely of interest to "
 "photographers."
 msgstr ""
+" **绝对比色** （也叫 **匹配”或“保持相同颜色** ）：精确重现色域内的颜色，把超"
+"色域的颜色裁切到最接近的可重现色调，但可能会牺牲饱和度和亮度。在有色纸张上，"
+"白色可能会被加深以保持色调一致。比如，在奶油色纸张上可能加入青色，让图像整体"
+"变暗。摄影师很少用这个。"
 
 #: ../../color_management/working_space.rst:133
 msgid ""
@@ -388,6 +457,9 @@ msgid ""
 "destination, neglecting differences in hue, saturation, or lightness. For "
 "block graphics; rarely of interest to photographers."
 msgstr ""
+" **饱和度** （也叫 **图形或保持饱和度** ）：把源色彩空间的饱和原色映射到目标"
+"色彩空间的饱和原色，忽略色调、饱和度或亮度的差异。适合块状图形，摄影师也很少"
+"用。"
 
 #: ../../color_management/working_space.rst:135
 msgid ""
@@ -400,6 +472,10 @@ msgid ""
 "out of gamut colors, even if this results in inaccuracies for in gamut "
 "colors."
 msgstr ""
+" **可感知** 和 **相对比色** 可能是数码摄影里最实用的两种转换方式。它们在处理"
+"色域不匹配区域时有不同优先级。 **相对比色** 几乎精确保持色域内颜色的关系，哪"
+"怕这么做会裁切掉超色域的颜色。 **可感知** 则试图保留超色域颜色之间的某种关"
+"系，哪怕这会导致色域内颜色的不准确。"
 
 #: ../../color_management/working_space.rst:137
 msgid ""
@@ -411,6 +487,10 @@ msgid ""
 "changing white point). **Saturation** rendering intent tries to preserve "
 "saturated colors."
 msgstr ""
+" **绝对比色** 跟相对比色渲染类似，都保留色域内颜色并裁切超色域颜色，但它们处"
+"理白点的方式不同：相对比色会调整色域内颜色，让一个空间的白点对齐另一个空间的"
+"白点；绝对比色则完全保留颜色（不考虑白点变化）。 **饱和度** 则尽量保留饱和颜"
+"色。"
 
 #: ../../color_management/working_space.rst:139
 msgid ""
@@ -418,12 +498,14 @@ msgid ""
 "`Settings --> Configure digiKam... --> Color Management page --> Advanced "
 "tab`."
 msgstr ""
+"想在 digiKam 里设置渲染意图，点开 :menuselection:`设置 --> 配置 digiKam… --> "
+"色彩管理页面 --> 高级选项卡` 。"
 
 #: ../../color_management/working_space.rst:145
 msgid ""
 "digiKam Color Management Setup Dialog Page Allows to Customize the Rendering "
 "Intents"
-msgstr ""
+msgstr "digiKam 色彩管理设置对话框支持自定义再现意图"
 
 #: ../../color_management/working_space.rst:147
 msgid ""
@@ -431,6 +513,8 @@ msgid ""
 "relative colorimetric. We suggest that you do not use absolute colorimetric "
 "unless you want very strange results."
 msgstr ""
+"在显示器上显示内容时，通常选“相对比色”。我们建议别用“绝对比色”，除非你想要很"
+"奇怪的效果。"
 
 #: ../../color_management/working_space.rst:151
 msgid ""
@@ -440,10 +524,13 @@ msgid ""
 "rendering intent since `Lcms <https://www.littlecms.com/>`_ quietly uses the "
 "profile's default rendering intent."
 msgstr ""
+"再现意图在从一个色彩特性文件转换到另一个时是否可用，取决于目标特性文件。不是"
+"每个特性文件都支持所有再现意图。如果选了不支持的再现意图， `Lcms <https://"
+"www.littlecms.com/>`_  会悄悄用目标特性文件的默认再现意图，可能会出问题。"
 
 #: ../../color_management/working_space.rst:155
 msgid "Gamma Properties"
-msgstr ""
+msgstr "伽马特性"
 
 #: ../../color_management/working_space.rst:157
 msgid ""
@@ -461,6 +548,16 @@ msgid ""
 "to get to the desired working space, unless the camera profile also uses "
 "gamma=1.)"
 msgstr ""
+"一个色彩特性文件中的伽马值，决定了在进行色彩转换时需要怎样的幂函数处理。也就"
+"是说，如果你要把图像从它原本内嵌的色彩特性文件（比如你的工作色彩空间，或相机"
+"的色彩特性文件）转换到另一个伽马值不同的色彩特性文件（比如你设定的工作空间，"
+"或者用于屏幕显示的显示器色彩特性文件，又或者是打印机的色彩空间），就需要按照"
+"这个伽马值进行相应的转换。 `Libraw <https://www.libraw.org/>`_ 这类工具在导出"
+"图像时会输出一个 16 位的线性伽马图像。这意味着图像文件中的直方图反映的是相机"
+"感光元件在曝光时实际捕捉到的光线强度（也就是每个像素实际记录到的光的量）。正"
+"因如此，如果你打算给 Libraw 的输出应用一个相机的色彩特性文件，那通常也需要配"
+"套地进行伽马转换，才能让图像呈现出你想要的工作空间效果（除非这个相机色彩特性"
+"文件本身就是线性伽马，即伽马值为 1）。"
 
 #: ../../color_management/working_space.rst:159
 msgid ""
@@ -475,6 +572,13 @@ msgid ""
 "want to choose a working space with a lower gamma, so you have more "
 "available tonal gradations in the highlights."
 msgstr ""
+"在实际应用中，工作色彩空间的伽马值也会对图像的编辑产生影响。一般来说，伽马值"
+"越高，图像在阴影部分（暗部）可用的色调层次就越丰富，但高光部分的层次就相对少"
+"一些；而伽马值越低，则相反。因此，改变图像的伽马值，其实就是在重新分配图像中"
+"明暗区域的色调细节。比如说，如果你处理的是一张整体偏暗的图（我们叫它低调图"
+"像），那你可能会更偏向选用一个伽马值较高的工作空间；反之，如果是一张大中午拍"
+"的雪地婚纱照这种明亮高调图像，那可能更适合伽马值低一些的工作空间，这样能保留"
+"更多高光部分的细节。"
 
 #: ../../color_management/working_space.rst:161
 msgid ""
@@ -482,6 +586,8 @@ msgid ""
 "working spaces with a gamma of either 1.8 or 2.2. sRGB and L*-RGB are two "
 "notable exceptions."
 msgstr ""
+"不过这些理论归理论，在实际图像编辑工作中，大多数人用的工作色彩空间的伽马值其"
+"实就两个主流：1.8 或 2.2。当然也有些例外，比如 sRGB 和 L*-RGB。"
 
 #: ../../color_management/working_space.rst:163
 msgid ""
@@ -494,6 +600,12 @@ msgid ""
 "changing from 1.0 through about 2.3, which makes for some complicated math "
 "during image processing."
 msgstr ""
+"sRGB 的转换函数和老式 CRT 显示器比较接近（也就是说，其实跟现在的 LCD 显示器或"
+"图像编辑关系不大）。sRGB 的伽马不像其他常见的 RGB 色彩空间那样可以用一个单一"
+"的数值来表示。它的整体伽马大约是 2.2，但结构更复杂：在接近黑色的区域，它是线"
+"性的（伽马为 1.0），其他部分则是非线性的，涉及到 2.4 的幂指数，并且它的伽马值"
+"（也就是输出与输入对数之间的斜率）从 1.0 变化到大约 2.3。这种复杂的变化在图像"
+"处理时会带来一定的数学计算难度。"
 
 #: ../../color_management/working_space.rst:165
 msgid ""
@@ -502,6 +614,8 @@ msgid ""
 "precision values* using a perceptually uniform transfer function *can "
 "improve the reproduction of tones*."
 msgstr ""
+"至于 L*-RGB，它采用的是和 CIELab 色彩空间一样的“感知均匀”转换函数。用这种方式"
+"存储颜色，即 *使在精度有限的情况下* ，也能更好地 *还原图像中的色调细节* 。"
 
 #: ../../color_management/working_space.rst:167
 msgid ""
@@ -512,6 +626,10 @@ msgid ""
 "imaging and also if one wants to avoid introducing gamma-induced errors into "
 "one's regular low dynamic range editing."
 msgstr ""
+"除了伽马 1.8 和 2.2，工作空间中还有一种常见但比较特殊的伽马值，那就是线性伽马"
+"（伽马 = 1.0）。就像前面说的，如果你要求 `Libraw <https://www.libraw.org/"
+">`_  输出 16 位图像，它就是线性伽马的。线性伽马常用于 HDR（高动态范围）图像处"
+"理，也适合那些希望尽量减少伽马误差的人在处理普通图像时使用。"
 
 #: ../../color_management/working_space.rst:169
 msgid ""
@@ -522,6 +640,10 @@ msgid ""
 "accurate mixing methods where the new colors are calculated by first "
 "transforming all the relevant values back to their linear values."
 msgstr ""
+"这里提到的 **伽马误差** ，虽然不是本文重点，但简单说，就是在非线性的 RGB 色彩"
+"空间中错误地进行亮度或颜色的计算所导致的问题。比如，在这些非线性空间中混合颜"
+"色时，可能会出现原图中并没有的新颜色。当然，如果先把颜色值都转换回线性状态，"
+"再去混合，就可以避免这种问题。"
 
 #: ../../color_management/working_space.rst:171
 msgid ""
@@ -532,3 +654,8 @@ msgid ""
 "32-bit files produced by our HDR cameras on our personal supercomputers, we "
 "will all be using working spaces with gamma=1."
 msgstr ""
+"不过话说回来，尽管线性伽马在理论和数学上确实有不少优势，但它在实际编辑中却并"
+"不太好用。因为在 8 位图像中，线性伽马下阴影部分的色调实在太少，几乎无法正常处"
+"理。即使在 16 位图像中，也还是不太够用。或许等将来我们的 HDR 相机能直接拍出 "
+"32 位图像文件，而我们每个人都在用超级计算机修图的那一天，线性伽马的工作空间才"
+"会真正普及吧。"
