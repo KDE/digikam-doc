@@ -1,4 +1,3 @@
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
@@ -12,12 +11,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
+"X-Crowdin-Language: zh-CN\n"
 "X-Crowdin-File: /kf5-trunk/messages/digikam-doc/"
 "docs_digikam_org_geolocation_editor___geoeditor_coordinates.pot\n"
 "X-Crowdin-File-ID: 41429\n"
-"X-Crowdin-Language: zh-CN\n"
-"X-Crowdin-Project: kdeorg\n"
-"X-Crowdin-Project-ID: 269464\n"
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:-1
 msgid "digiKam Geolocation Editor Coordinates"
@@ -212,6 +211,11 @@ msgid ""
 "were moving while taking the photograph(s) the more important this decision "
 "will be."
 msgstr ""
+"如果你勾选了 **直接匹配** ，那就要设定一个 **最大时间差（秒）** 。这个值决定"
+"了相机时间和轨迹时间多接近才算“匹配”。最大值为 2000 秒。如果没有轨迹点的时间"
+"戳和照片完全一致，那就会选取时间差最小的那个，只要它在你设定的范围内。你可以"
+"查看 GPS 记录软件或直接用文本编辑器打开 .gpx 文件，来了解你应该设定多大的时间"
+"差。你拍照时移动得越快，这个设置就越重要。"
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:58
 msgid ""
@@ -225,6 +229,10 @@ msgid ""
 "entries and the photograph are equal, the position assigned will be on a "
 "straight line midway between the positions of the two entries."
 msgstr ""
+"如果勾选了 **插值** ，即使没有时间戳完全匹配的轨迹点，也可以通过线性插值计算"
+"照片位置。这种方法更精确，前提是你在两次记录 GPS 之间是直线移动的。比如，如果"
+"照片时间正好在两个轨迹点之间，且时间间隔相同，那它的坐标就会被定在这两个点之"
+"间的中点上。"
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:60
 msgid ""
@@ -234,6 +242,8 @@ msgid ""
 "than this limit, then it is not used. The maximum time difference that can "
 "be set here is 4 hours."
 msgstr ""
+" **最大插值时间差** 指的是插值所允许的最大时间差。如果最近的 GPS 时间点距离照"
+"片时间超过这个限制，就不会进行插值。最大可设置为 4 小时。"
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:62
 msgid ""
@@ -245,6 +255,10 @@ msgid ""
 "more images should have been correlated.\" In the best case you get \"All "
 "images have been correlated. You can now check their position on the map.\""
 msgstr ""
+"设置完成后，点击 **匹配** 按钮。如果没有成功匹配，你会看到提示：“无法匹配任何"
+"照片，请确认时区和时间差设置是否正确。”如果部分匹配成功，会显示：“4 张照片中"
+"有 2 张已匹配成功。如果你认为应匹配更多，请检查时区和时间差设置。”如果全部匹"
+"配成功，会显示：“所有照片都已匹配完成，你可以在地图上查看位置。”"
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:64
 msgid ""
@@ -254,6 +268,8 @@ msgid ""
 "always have to click on an image in the list under the map to make its "
 "preview show up."
 msgstr ""
+"此时建议切换到 **详细信息** 选项卡查看地图上的预览，这有助于确认照片实际位"
+"置。记得要点击地图下方的图像列表，照片预览才会显示出来。"
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:66
 msgid ""
@@ -262,10 +278,12 @@ msgid ""
 "with the results click the **Apply** button at the bottom of the Geolocation "
 "Editor to save the changes to the image file and the database."
 msgstr ""
+"如果你发现匹配结果有误，随时可以调整时区和时间偏移后重新匹配。满意后，点击地"
+"理位置编辑器底部的 **应用** 按钮保存更改到照片文件和数据库中。"
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:70
 msgid "Undo And Redo"
-msgstr ""
+msgstr "撤销与重做"
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:72
 msgid ""
@@ -275,10 +293,13 @@ msgid ""
 "editor. After a few actions in the different tabs the record might look like "
 "this:"
 msgstr ""
+" **撤销 / 重做** 选项卡会显示你在地理位置编辑器中对照片做的所有更改记录。无论"
+"你是在一个选项卡还是多个选项卡进行修改，这里都会记录下来。这些记录会在你关闭"
+"编辑器时清除。例如，经过几次操作后，你的修改记录可能会是这样的："
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:78
 msgid "The digiKam Geolocation Correlator **Undo/Redo** View Example 1"
-msgstr ""
+msgstr "digiKam 地理位置编辑器 **撤销/重做** 视图 示例 1"
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:80
 msgid ""
@@ -288,6 +309,9 @@ msgid ""
 "changes you made, you might see the images appearing, disappearing or moving "
 "on the map, or see the differences in the list of images under the map."
 msgstr ""
+"进入这个选项卡时，当前最后一步会被高亮显示。最顶部的那一项永远是 “空白”，代表"
+"你刚加载照片时的初始状态。你可以点击任意步骤，根据你做了哪些更改，会看到照片"
+"在地图上的位置发生变化，或者列表中照片状态的改变。"
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:82
 msgid ""
@@ -296,13 +320,18 @@ msgid ""
 "**Search** tab (described further below) and you do another move. After "
 "returning to the **Undo/Redo** tab it might look like this:"
 msgstr ""
+"假设你发现最后一次移动不正确，只需要点击前一步（比如 “详情已更改”），然后切换"
+"到下文将介绍的 **搜索** 选项卡，再做一次调整。返回到 **撤销 / 重做** 选项卡"
+"后，记录可能会像这样："
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:88
 msgid "The digiKam Geolocation Correlator **Undo/Redo** View Example 2"
-msgstr ""
+msgstr "digiKam 地理位置编辑器 **撤销/重做** 视图 示例 2"
 
 #: ../../geolocation_editor/geoeditor_coordinates.rst:90
 msgid ""
 "If you want to ignore all the changes you made in this Geolocation editor "
 "session, click on “empty” and then Close."
 msgstr ""
+"如果你想放弃当前编辑器中所有修改，可以点击 “空白”，然后关闭窗口即可。这样照片"
+"的地理信息就不会发生任何更改。"
