@@ -32,7 +32,7 @@ msgstr ""
 
 #: ../../supported_materials/image_formats.rst:14
 msgid ":ref:`Image Files <supported_materials>`"
-msgstr ""
+msgstr " :ref:`图像格式 <supported_materials>` "
 
 #: ../../supported_materials/image_formats.rst:16
 msgid "Contents"
@@ -72,6 +72,10 @@ msgid ""
 "change the list of file extensions that digiKam will accept; see :ref:`this "
 "configuration section <mime_types_settings>` for more details."
 msgstr ""
+"digiKam 只会显示它“认识”的文件格式。具体来说，它会查看文件的扩展名，然后与预"
+"设的文件类型列表进行比对。如果扩展名在列表中，并且你已经安装了对应的库，"
+"digiKam 就会在图像视图中显示这些文件。你也可以手动修改这个扩展名列表，具体方"
+"法请参见 :ref:`相关的配置章节 <mime_types_settings>` 。"
 
 #: ../../supported_materials/image_formats.rst:27
 msgid ""
@@ -81,10 +85,13 @@ msgid ""
 "can be found `at the Wikipedia <https://en.wikipedia.org/wiki/"
 "Image_file_formats>`_."
 msgstr ""
+"几乎所有数码相机都会以两种格式之一来保存照片：JPEG 或 RAW。很多相机允许你选择"
+"使用哪一种格式。digiKam 支持这两种格式。关于它们的完整介绍，可以参考 `维基百"
+"科上的内容 <https://en.wikipedia.org/wiki/Image_file_formats>`_ 。"
 
 #: ../../supported_materials/image_formats.rst:30
 msgid "Still Image Compression"
-msgstr "静态图像压缩"
+msgstr "静态图像压缩格式"
 
 #: ../../supported_materials/image_formats.rst:32
 msgid ""
@@ -92,6 +99,8 @@ msgid ""
 "digital images. Image compression reduces redundancy in the image data in "
 "order to be able to store or transmit data in an efficient form."
 msgstr ""
+"图像压缩是指将数据压缩算法应用于数字图像。其目的是减少图像中的冗余信息，以便"
+"更高效地存储或传输图像数据。"
 
 #: ../../supported_materials/image_formats.rst:34
 msgid ""
@@ -105,6 +114,11 @@ msgid ""
 "substantial reduction in file size. For example, lossy compression is good "
 "for publishing images on the Internet."
 msgstr ""
+"图像压缩可以分为有损压缩（lossy）和无损压缩（lossless）两种方式。无损压缩不会"
+"丢失原始数据，特别适合在裁剪、缩放、颜色校正等操作之前使用，因此在归档保存时"
+"更为理想。而有损压缩则会在压缩过程中引入一些“压缩痕迹”，尤其是在压缩比很高"
+"时。不过有损压缩非常适合日常使用，比如将图片发布到网上，因为文件更小，即便稍"
+"微降低一点画质也没关系。"
 
 #: ../../supported_materials/image_formats.rst:39
 msgid "JPEG"
@@ -123,6 +137,11 @@ msgid ""
 "e-mail or post them on the Web. Most cameras give you two or three choices "
 "equivalent to good, better, best, although the names vary."
 msgstr ""
+"`JPEG <https://en.wikipedia.org/wiki/JPEG>`_  （Joint Photographic Experts "
+"Group，联合图像专家组）格式，是一种压缩格式，通过牺牲一部分图像质量来换取更小"
+"的文件大小。大多数相机默认都会使用这种格式保存照片，除非你手动修改设置。JPEG "
+"是一种有损压缩格式，你可以根据需要调整压缩率，从而在图像质量和文件大小之间做"
+"权衡。许多相机会提供比如“好”、“更好”、“最好”这类选项（具体名称因品牌而异）。"
 
 #: ../../supported_materials/image_formats.rst:46
 msgid "JPEG 2000"
@@ -136,6 +155,9 @@ msgid ""
 "compared to JPEG. The 2000 version also supports lossless images, additional "
 "metadata tags, and 12-bit color depth."
 msgstr ""
+" `JPEG 2000 <https://en.wikipedia.org/wiki/JPEG_2000>`_ 是对旧版 JPEG 标准的"
+"改进版本，发布于 2000 年。它在相同压缩率下能提供更平滑的图像效果。JPEG 2000 "
+"同时支持无损压缩、额外的元数据标签和 12 位色深。"
 
 #: ../../supported_materials/image_formats.rst:53
 msgid "TIFF"
@@ -153,6 +175,11 @@ msgid ""
 "that there are now 50 or more flavors and not all are recognizable by most "
 "programs."
 msgstr ""
+" `TIFF <https://en.wikipedia.org/wiki/TIFF>`_ （Tagged Image File Format，标"
+"签图像文件格式）是被广泛接受和支持的图像格式。TIFF 通常由相机以无压缩或无损压"
+"缩（如 Deflate 算法）方式保存，图像质量更高，但文件也更大。一些相机会提供保存"
+"为 TIFF 的选项。这种格式因其无损特性被很多人喜欢，不过它的格式经过太多人修"
+"改，衍生出 50 多种版本，并非所有软件都能识别。"
 
 #: ../../supported_materials/image_formats.rst:60
 msgid "PNG"
@@ -171,6 +198,12 @@ msgid ""
 "can convert a batch of images from any supported format to PNG (and other "
 "formats) in one step."
 msgstr ""
+" `PNG <https://en.wikipedia.org/wiki/Portable_Network_Graphics>`_ （Portable "
+"Network Graphics，便携式网络图像格式）是在 1990 年代作为不受专利限制的 GIF 替"
+"代方案而推出的。它像 TIFF 一样是无损格式，但更紧凑，节省磁盘空间。虽然大多数"
+"相机不支持 PNG，有些用户喜欢把照片导入电脑后转换成 PNG。和 JPEG 不同，PNG 图"
+"像在每次编辑保存后都不会损失画质。digiKam 完全支持 PNG 格式，批处理工具也可以"
+"一次性将多张图像从其他格式批量转换为 PNG。"
 
 #: ../../supported_materials/image_formats.rst:64
 msgid ""
@@ -180,6 +213,9 @@ msgid ""
 "on heterogeneous platforms. PNG supports bit depths of 8 and 16 bits / "
 "color / pixel. It's the perfect file format to archive your photographs."
 msgstr ""
+"PNG 设计用于网页浏览环境，支持渐进式显示，也能保存 gamma 和色度信息，以便在不"
+"同设备上进行更好的颜色匹配。PNG 支持每像素每种颜色 8 位或 16 位的色深，是很理"
+"想的图像归档格式。"
 
 #: ../../supported_materials/image_formats.rst:69
 msgid "PGF"
@@ -197,6 +233,12 @@ msgid ""
 "for photo archiving. **digiKam uses this format to store thumbnails in its "
 "internal database**."
 msgstr ""
+" `PGF <https://en.wikipedia.org/wiki/Progressive_Graphics_File>`_ "
+"（Progressive Graphics File，渐进式图像格式），虽然不太常见，但它是一种开放的"
+"图像格式，采用小波压缩技术，支持无损和有损压缩。它和 JPEG 2000 相似，但更侧重"
+"压缩/解压速度，而不是极限压缩率。在相同文件大小下，PGF 图像的视觉效果通常比 "
+"JPEG 更好，且在渐进显示方面表现出色，因此也适合做图像归档。 **digiKam 使用这"
+"种格式在内部数据库中存储缩略图** 。"
 
 #: ../../supported_materials/image_formats.rst:76
 msgid "WEBP"
@@ -212,6 +254,10 @@ msgid ""
 "Google in 2010 and produces files that are smaller than JPEG files for "
 "comparable image quality."
 msgstr ""
+"`WebP <https://en.wikipedia.org/wiki/WebP>`_  （Web Photo）是由 Google 开发"
+"的 Web 图像格式，旨在替代 JPEG、PNG 和 GIF。它支持有损和无损压缩，同时还支持"
+"动画和透明通道。WEBP 也支持元数据，但色深最多为 8 位。自 2010 年推出以来，它"
+"以更小的文件体积实现了与 JPEG 相当的画质。"
 
 #: ../../supported_materials/image_formats.rst:83
 msgid "HEIF"
@@ -231,6 +277,13 @@ msgid ""
 "bit color depth and metadata. This format was adopted in 2017 to store "
 "images in Apple devices."
 msgstr ""
+"`HEIF <https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format>`_ "
+"（High Efficiency Image File Format，高效图像文件格式），是一种图像容器格式，"
+"发布于 2015 年，可用于存储单张图片或图像序列。它也支持包含字幕、音频和视频等"
+"媒体内容。HEIF 可存储多种编码格式的图像，例如 SDR 和 HDR。默认的图像编码器为 "
+"HEVC，因此这种格式也常被称为 HEIC。HEIF 图像在相同画质下比 JPEG 占用更少空"
+"间，支持 12 位色深和元数据。Apple 从 2017 年起开始在其设备上使用 HEIF 格式存"
+"图。"
 
 #: ../../supported_materials/image_formats.rst:90
 msgid "AVIF"
@@ -248,6 +301,10 @@ msgid ""
 "edges in composites of natural images, text, and graphics. AVIF supports 12-"
 "bit color depth and metadata."
 msgstr ""
+" `AVIF <https://en.wikipedia.org/wiki/AVIF>`_ （AV1 Image File Format，AV1 图"
+"像格式）是一种开放、免版权费的格式，于 2019 年推出，基于 HEIF 容器，使用 AV1 "
+"编码压缩图像或图像序列。它与 HEIC 竞争，后者使用的是 HEVC。AVIF 的压缩效率优"
+"于 JPEG，图像细节保留更好，色块和颜色边缘溢出更少。支持 12 位色深和元数据。"
 
 #: ../../supported_materials/image_formats.rst:97
 msgid "JXL"
@@ -260,6 +317,8 @@ msgid ""
 "is designed to outperform existing raster formats and thus become their "
 "universal replacement."
 msgstr ""
+"`JPEG XL <https://en.wikipedia.org/wiki/JPEG_XL>`_ 是一种免版权费的栅格图像格"
+"式，支持有损和无损压缩。它的目标是全面超越现有图像格式，成为通用替代方案。"
 
 #: ../../supported_materials/image_formats.rst:101
 msgid ""
@@ -269,6 +328,8 @@ msgid ""
 "was introduced at the end of 2020. JPEG XL support 16-bit color depth and "
 "metadata."
 msgstr ""
+"JXL 针对现代网页环境进行了优化，适配各种设备，同时具备与旧版 JPEG 格式平滑过"
+"渡的功能。JXL 于 2020 年底推出，支持 16 位色深和元数据。"
 
 #: ../../supported_materials/image_formats.rst:105
 msgid ""
@@ -276,10 +337,13 @@ msgid ""
 "You can see a list of available plugins in the **Plugins/Image Loaders** "
 "section of the Setup or Preferences dialog."
 msgstr ""
+"digiKam 支持的所有静态图像格式由 图像加载插件（Image Loader Plugins） 提供支"
+"持。你可以在“设置”或“首选项”对话框的 **插件 - 图像加载程序** 选项卡中查看可用"
+"插件列表。"
 
 #: ../../supported_materials/image_formats.rst:111
 msgid "The Image Loaders list from digiKam Setup or Preferences dialog"
-msgstr ""
+msgstr "“配置 digiKam 对话框”中的图像加载程序列表"
 
 #: ../../supported_materials/image_formats.rst:116
 #: ../../supported_materials/image_formats.rst:136
@@ -298,6 +362,11 @@ msgid ""
 "professional photographers use RAW format, because it offers them maximum "
 "flexibility. The downside is that RAW image files can be very large indeed."
 msgstr ""
+"有些相对高端的相机会允许用户将照片保存为 RAW 格式。严格来说，RAW 并不是一种统"
+"一的标准格式，不同品牌的相机有各自的 RAW 格式。RAW 图像保存的是相机感光元件捕"
+"捉到的原始数据，尚未经过机内白平衡、降噪、锐化等处理。因此，使用 RAW 格式可以"
+"在拍照后自由调整设置，比如白平衡，这也正是多数专业摄影师喜欢使用 RAW 的原因。"
+"不过，RAW 文件通常体积较大。"
 
 #: ../../supported_materials/image_formats.rst:120
 msgid ""
@@ -308,6 +377,11 @@ msgid ""
 "TIFF in digiKam using the :ref:`Image Editor <rawprocessing_workflow>` or "
 "the :ref:`Batch Queue Manager <raw_converter>`."
 msgstr ""
+"如果你想深入了解 RAW 格式，可以参考这几个非常有用的网站： `维基百科 <https://"
+"en.wikipedia.org/wiki/Raw_image_format>`_ 和 `剑桥色彩摄影学习社区 <https://"
+"www.cambridgeincolour.com/tutorials/RAW-file-format.htm>`_ 。你也可以使用 "
+"digiKam 的 :ref:`图像编辑器 <rawprocessing_workflow>` 或 :ref:`批处理管理器 "
+"<raw_converter>`  将 RAW 格式的图像转换成 JPEG、PNG 或 TIFF 格式。"
 
 #: ../../supported_materials/image_formats.rst:122
 msgid ""
@@ -316,6 +390,9 @@ msgid ""
 "in the digiKam core. The table below shows a short list of camera RAW files "
 "supported by digiKam:"
 msgstr ""
+"digiKam 通过内置的 `Libraw 库 <https://www.libraw.org/>`_ 支持加载超过 "
+"**1000** 种不同类型的 RAW 文件格式，下面的表格列出了一部分支持的相机 RAW 格"
+"式。"
 
 #: ../../supported_materials/image_formats.rst:125
 msgid "RAW File Format"
@@ -479,6 +556,9 @@ msgid ""
 "to support exotic still images when others modules fail to load a file. This "
 "is the case for FITS astro-photo, JBIG, PhotoCD, FLIF, BPG, etc."
 msgstr ""
+"如果 digiKam 的其他模块无法加载某些较冷门的图像格式，它会借助 `ImageMagick "
+"<https://en.wikipedia.org/wiki/ImageMagick>`_ 提供支持。例如用于天文摄影的 "
+"FITS 格式、JBIG、PhotoCD、FLIF、BPG 等文件类型。"
 
 #: ../../supported_materials/image_formats.rst:163
 msgid ""
@@ -486,3 +566,5 @@ msgid ""
 "long time archiving**, from the :ref:`Digital Asset Management section "
 "<dam_fileformats>` of this manual."
 msgstr ""
+"我们也推荐你阅读本手册中 :ref:`数字资产管理部分 <dam_fileformats>` 部分的章"
+"节，了解 **长期图像存档** 时应使用的文件格式。"

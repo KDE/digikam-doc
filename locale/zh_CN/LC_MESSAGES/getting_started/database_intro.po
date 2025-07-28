@@ -31,11 +31,11 @@ msgstr ""
 
 #: ../../getting_started/database_intro.rst:14
 msgid ":ref:`Database <getting_started>`"
-msgstr ""
+msgstr " :ref:`数据库 <getting_started>` "
 
 #: ../../getting_started/database_intro.rst:16
 msgid "Contents"
-msgstr ""
+msgstr "目录"
 
 #: ../../getting_started/database_intro.rst:19
 msgid "Overview"
@@ -49,6 +49,9 @@ msgid ""
 "drastically reduces the cost of data entry, storage and retrieval. "
 "Additionally, any user can access the data using a query language."
 msgstr ""
+"数据库的作用是用来存储数据。和其他照片管理软件一样，digiKam 使用数据库来避免"
+"数据重复、减少冗余、加快搜索速度，并确保数据的完整性。使用数据库还能大大降低"
+"数据录入、存储和读取的成本。除此之外，任何用户都可以通过查询语言来访问数据。"
 
 #: ../../getting_started/database_intro.rst:23
 msgid ""
@@ -56,40 +59,44 @@ msgid ""
 "recognition data, image metadata, file paths, settings and others) in four "
 "databases:"
 msgstr ""
+"digiKam 会将各种数据（包括相册、相册根目录、标签、缩略图、人脸识别信息、图片"
+"元数据、文件路径、设置等等）保存在以下四个数据库中："
 
 #: ../../getting_started/database_intro.rst:25
 msgid ""
 "Core database for all collection properties: hosts all albums, images and "
 "search data."
-msgstr ""
+msgstr "核心数据库：用于存储所有图像库相关属性，包含所有相册、图片和搜索数据。"
 
 #: ../../getting_started/database_intro.rst:27
 msgid ""
 "Thumbnail database for compressed thumbnails: hosts image thumbs using "
 "wavelet compressed images (**PGF** format)."
 msgstr ""
+"缩略图数据库：用于存储压缩格式的缩略图，采用小波压缩图像（ **PGF** 格式）。"
 
 #: ../../getting_started/database_intro.rst:29
 msgid "Similarity database for image fingerprints to enable fuzzy search."
-msgstr ""
+msgstr "相似度数据库：用于保存图片的“指纹”，以便进行模糊搜索。"
 
 #: ../../getting_started/database_intro.rst:31
 msgid ""
 "Face database for storing face recognition metadata: hosts face histograms "
 "for face recognition."
-msgstr ""
+msgstr "人脸数据库：用于存储人脸识别的元数据，包含用于识别人脸的直方图数据。"
 
 #: ../../getting_started/database_intro.rst:37
 msgid ""
 "Example of digiKam remote MySQL configuration hosted on a NAS from the local "
 "network"
-msgstr ""
+msgstr "本地网络中通过 NAS 托管的 digiKam 远程 MySQL 数据库配置示例"
 
 #: ../../getting_started/database_intro.rst:39
 msgid ""
 "Details on database settings can be found in the :ref:`Database Setup "
 "section <database_settings>`."
 msgstr ""
+"关于数据库设置的详细说明，请查看 :ref:`数据库设置 <database_settings>` 部分。"
 
 #: ../../getting_started/database_intro.rst:42
 msgid "Migrating From Other Software"
@@ -103,6 +110,9 @@ msgid ""
 "databases, it can read XMP sidecar files, which is a standardized and well-"
 "documented file format."
 msgstr ""
+"digiKam 的数据库也可以通过读取其他程序所写入的 XMP 附带文件（sidecar files） "
+"来填充内容。虽然 digiKam 无法解析专有或闭源程序的数据库，但它可以读取 XMP 副"
+"文件——这是一种标准化并且文档齐全的文件格式。"
 
 #: ../../getting_started/database_intro.rst:46
 msgid ""
@@ -111,6 +121,9 @@ msgid ""
 "handle special cases while importing and exporting metadata to and from 3rd-"
 "party software."
 msgstr ""
+"想要在 digiKam 中使用 XMP 副文件，请参考 :ref:`元数据设置 "
+"<metadata_settings>` 部分。在“高级”选项卡中，还可以使用配置文件管理功能，在从"
+"第三方软件导入或导出元数据时处理特殊情况。"
 
 #: ../../getting_started/database_intro.rst:48
 msgid ""
@@ -119,9 +132,14 @@ msgid ""
 "contents will be parsed and the database will be populated with the "
 "information found in the XMP sidecar files."
 msgstr ""
+"如果你是全新安装 digiKam，可以在你用其他软件管理图片的那个目录中创建一个新"
+"的“根图像库”。digiKam 会自动读取里面的内容，并根据找到的 XMP 副文件信息建立自"
+"己的数据库。"
 
 #: ../../getting_started/database_intro.rst:50
 msgid ""
 "After the items are read (this can take a while), you will be able to see "
 "all tags, labels and comments in the digiKam item properties."
 msgstr ""
+"数据读取过程可能需要一些时间。完成后，你就可以在 digiKam 中看到所有的标签、标"
+"记和说明注释，全部都显示在图片的属性里。"
