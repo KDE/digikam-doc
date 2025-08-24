@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-13 01:53+0000\n"
-"PO-Revision-Date: 2025-08-16 18:08+0200\n"
+"PO-Revision-Date: 2025-08-22 21:49+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../right_sidebar/captions_view.rst:14
 msgid ":ref:`Captions View <right_sidebar>`"
-msgstr ""
+msgstr ":ref:`Rubrikvy <right_sidebar>`"
 
 #: ../../right_sidebar/captions_view.rst:16
 msgid "Contents"
@@ -53,15 +53,22 @@ msgid ""
 "database ``b)`` XMP/IPTC and ``c)`` Exif. Any discrepancies in the data are "
 "resolved based on this priority."
 msgstr ""
+"Den här fliken i sidoraden används för att visa *och redigera* "
+"bildegenskaper som rubriker, betyg, datum och etiketter. Egenskaperna lagras "
+"i den tillhörande databasen, i datafälten IPTC, XMP och Exif och blir en del "
+"av bilden. Alla egenskaper är tillgängliga i en sidoradsvy som visas på "
+"skärmbilden nedan. Prioritetsordningen vid läsning av en bild är: ``a)`` "
+"databas ``b)`` XMP/IPTC och ``c)`` Exif. Eventuella avvikelser i data löses "
+"baserat på prioriteten."
 
 #: ../../right_sidebar/captions_view.rst:27
 msgid ""
 "The Captions View from the Right Sidebar Displaying Description Information"
-msgstr ""
+msgstr "Rubrikvy från höger sidorad som visar beskrivningsinformation"
 
 #: ../../right_sidebar/captions_view.rst:32
 msgid "Comment Editors"
-msgstr ""
+msgstr "Kommentareditorer"
 
 #: ../../right_sidebar/captions_view.rst:34
 msgid ""
@@ -71,6 +78,11 @@ msgid ""
 "the Exif, IPTC, and XMP fields in the image, allowing them to be used by "
 "other applications."
 msgstr ""
+"**Beskrivning** kan användas för att skriva eller klistra in en titel och/"
+"eller rubrik av obegränsad storlek (se anmärkning nedan). Texten är UTF-8-"
+"kompatibel, vilket innebär att alla specialtecken är tillåtna. Rubrikerna "
+"kopieras till Exif-, IPTC- och XMP-fälten i bilden, vilket gör att de kan "
+"användas av andra program."
 
 #: ../../right_sidebar/captions_view.rst:38
 msgid ""
@@ -79,22 +91,27 @@ msgid ""
 "special characters will be malformed. If you intend to use the IPTC caption "
 "field in other applications you should be compliant with these restrictions."
 msgstr ""
+"IPTC-data stöder endast ASCII-tecken och är begränsad till 2000 tecken "
+"(gammal amerikansk norm). All text avkortas efter 2000 tecken, och "
+"specialtecken blir felaktigt formaterade. Om IPTC-textfältet ska användas i "
+"andra program måste begränsningarna följas."
 
 #: ../../right_sidebar/captions_view.rst:40
 msgid "The title and caption editors are powerful tools which support:"
-msgstr ""
+msgstr "Titel- och rubrikeditorer är kraftfulla verktyg som stöder:"
 
 #: ../../right_sidebar/captions_view.rst:42
 msgid "Multiple alternative language strings."
-msgstr ""
+msgstr "Flera alternativa språksträngar."
 
 #: ../../right_sidebar/captions_view.rst:43
 msgid "Translation of strings to other languages using online tools."
 msgstr ""
+"Översättning av strängar till andra språk med användning av nätverktyg."
 
 #: ../../right_sidebar/captions_view.rst:44
 msgid "Specifying the author of the strings."
-msgstr ""
+msgstr "Ange strängarnas författare."
 
 #: ../../right_sidebar/captions_view.rst:46
 msgid ""
@@ -103,12 +120,19 @@ msgid ""
 "be automatically translated into other languages and edited, if necessary. "
 "If only a single language is entered, it should be marked as **x-default**."
 msgstr ""
+"Det normala språket för rubrik- och titelsträngar är betecknat **x-default** "
+"och måste skrivas på engelska. Rubriker och titlar kan sedan automatiskt "
+"översättas till andra språk och redigeras vid behov. Om endast ett enda "
+"språk anges ska det markeras som **x-default**."
 
 #: ../../right_sidebar/captions_view.rst:48
 msgid ""
 "After commenting, either choose the **Apply** button or go straight to the "
 "next image. In either case, the descriptions will be saved to the file."
 msgstr ""
+"Efter kommentarer har lagts till, använd antingen knappen **Verkställ** "
+"eller gå direkt till nästa bild. I båda fallen sparas beskrivningarna i "
+"filen."
 
 #: ../../right_sidebar/captions_view.rst:50
 msgid ""
@@ -118,10 +142,14 @@ msgid ""
 "takes place anyway – if you edit the metadata, it will always be saved to "
 "the images file)."
 msgstr ""
+"Bredvid knappen Verkställ finns knappen **Mer**. Från den kan man antingen "
+"välja att läsa metadata från den valda filen till databasen, eller tvärtom, "
+"skriva metadata till filerna (även om det senare sker ändå, om metadata "
+"redigeras sparas de alltid i bildfilen)."
 
 #: ../../right_sidebar/captions_view.rst:55
 msgid "Date and Time"
-msgstr ""
+msgstr "Datum och tid"
 
 #: ../../right_sidebar/captions_view.rst:57
 msgid ""
@@ -136,10 +164,20 @@ msgid ""
 "`Item --> Adjust Time & Date...` menu entry in the **Main Window**. Select "
 "the images to be changed in the main view, and call the tool."
 msgstr ""
+"I sektionen Datum och tid, som ska återspegla tiden då fotografiet togs, kan "
+"man redigera de visade värdena. Det är praktiskt om kamerans klocka var "
+"felaktigt inställd. Man kan antingen ange ett datum direkt eller välja ett "
+"datum från kalenderrutan. På samma sätt kan man ange en tid direkt eller "
+"använda pilknapparna för att justera tiden. Alla ändringar av datum och tid "
+"kopieras till Exif-fälten **Datum och tid** i filen. Om man behöver ändra "
+"tid och datum när ett antal bilder skapades finns det en enklare metod "
+"tillgänglig i **Hantering av bakgrundskö** eller från menyalternativet :"
+"menuselection:`Objekt --> Justera tid och datum...` i **Huvudfönstret**. "
+"Markera de bilder som ska ändras i huvudvyn och anropa verktyget."
 
 #: ../../right_sidebar/captions_view.rst:62
 msgid "Labels"
-msgstr ""
+msgstr "Beteckningar"
 
 #: ../../right_sidebar/captions_view.rst:64
 msgid ""
@@ -149,30 +187,40 @@ msgid ""
 "a number of images, select them and pop-up the context menu (click with the "
 "right mouse button) to apply a common rating."
 msgstr ""
+"Sektionen Betyg visar ett betygsschema med 0-5 stjärnor som kan användas i "
+"sökningar och sorteringsordningar. Det kan anges med ett enda musklick på de "
+"5 stjärnorna i sidoraden eller med kortkommandot :kbd:`Ctrl+0-5`. För att "
+"betygsätta ett antal bilder, markera dem och öppna den sammanhangsberoende "
+"menyn (klicka med höger musknapp) för att ge ett gemensamt betyg."
 
 #: ../../right_sidebar/captions_view.rst:66
 msgid ""
 "The labels view also allow you to assign Color and Pick tags that you can "
 "use in your workflow to classify items."
 msgstr ""
+"Etikettvyn gör det också möjligt att tilldela färg- och urvalsetiketter som "
+"kan användas i arbetsflödet för att klassificera objekt."
 
 #: ../../right_sidebar/captions_view.rst:68
 msgid "These ratings are then copied into the XMP tag data fields."
-msgstr ""
+msgstr "Betygen kopieras sedan till XMP-taggens datafält."
 
 #: ../../right_sidebar/captions_view.rst:73
 msgid "Tags Tree"
-msgstr ""
+msgstr "Etiketträd"
 
 #: ../../right_sidebar/captions_view.rst:75
 msgid ""
 "The tag view shows an adaptive filter tag search box, the tag tree and a "
 "combo-box containing the tags previously applied in this digiKam session."
 msgstr ""
+"Etikettvyn visar en adaptiv filterruta för etikettsökning, Etiketträdet och "
+"en kombinationsruta som innehåller de etiketter som tidigare angetts i den "
+"här digiKam-sessionen."
 
 #: ../../right_sidebar/captions_view.rst:81
 msgid "The Metadata View from the Right Sidebar Displaying Tags Information"
-msgstr ""
+msgstr "Metadata från höger sidorad som visar etikettinformation"
 
 #: ../../right_sidebar/captions_view.rst:83
 msgid ""
@@ -180,6 +228,9 @@ msgid ""
 "So it is easy to quickly reduce the number of possibilities when searching "
 "for a tag. This feature is very useful if you have lots of tags."
 msgstr ""
+"Etiketträdet anpassar sig dynamiskt när man skriver in ett sökord i rutan. "
+"Så det är enkelt att snabbt minska antalet möjligheter när man söker efter "
+"en etikett. Funktionen är mycket användbar om man har många etiketter."
 
 #: ../../right_sidebar/captions_view.rst:85
 msgid ""
@@ -187,6 +238,9 @@ msgid ""
 "an image series. As you apply different tags they will be memorized in this "
 "box for quick access."
 msgstr ""
+"Kombinationsrutan längst ner är ytterligare en ergonomisk funktion för enkel "
+"etikettering av en bildserie. När man använder olika etiketter memoreras de "
+"i rutan för snabb åtkomst."
 
 #: ../../right_sidebar/captions_view.rst:87
 msgid ""
@@ -194,6 +248,9 @@ msgid ""
 "tree. All tags applied to an image are copied into the XMP/IPTC *keywords* "
 "data field."
 msgstr ""
+"Annars införs etiketter helt enkelt genom att markera respektive rutor i "
+"trädet. Alla etiketter som införs i en bild kopieras till XMP/IPTC-"
+"datafältet *keywords*."
 
 #: ../../right_sidebar/captions_view.rst:91
 msgid ""
@@ -201,10 +258,13 @@ msgid ""
 "the tag tree, that tag is only applied to the highlighted images, and not to "
 "the whole contents of the Album."
 msgstr ""
+"Om man väljer ett antal bilder i ikonvyn och sedan markerar en etikett i "
+"etiketträdet, införs den etiketten bara i de markerade bilderna och inte i "
+"albumets hela innehåll."
 
 #: ../../right_sidebar/captions_view.rst:96
 msgid "Information View"
-msgstr ""
+msgstr "Informationsvy"
 
 #: ../../right_sidebar/captions_view.rst:98
 msgid ""
@@ -213,17 +273,24 @@ msgid ""
 "Setup/Template dialog. Each template can contain a set of strings describing "
 "the contents, the scene, the authors, the rights, the place etc."
 msgstr ""
+"Informationsvyn gör det möjligt att tilldela en mall med textinformation "
+"till flera objekt med ett enda steg. Informationen kan fyllas i med "
+"dialogrutan Inställningar/Mall. Varje mall kan innehålla en uppsättning "
+"strängar som beskriver innehållet, motivet, upphovsmännen, rättigheterna, "
+"platsen etc."
 
 #: ../../right_sidebar/captions_view.rst:104
 msgid ""
 "The Metadata View from the Right Sidebar Displaying Template Information"
-msgstr ""
+msgstr "Metadata från den högra sidoraden som visar mallinformation"
 
 #: ../../right_sidebar/captions_view.rst:106
 msgid ""
 "For more details about Templates, see the description of the :ref:`Template "
 "Settings <templates_settings>` section."
 msgstr ""
+"För mer information om mallar, se beskrivningen i avsnittet :ref:"
+"`Mallinställningar <templates_settings>`."
 
 #~ msgid "Captions View"
 #~ msgstr "Rubrikvisning"
