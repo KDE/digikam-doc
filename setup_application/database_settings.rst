@@ -168,7 +168,7 @@ Enter the IP address of your MySQL server in the **Host Name** field and specify
 
 Set the **Core Db Name** field to the name of the first database that is used to store photo metadata.
 
-Set the **Thumbs Db Name** field to the name of the second database that is used to store the wavelet-compressed thumbnails.
+Set the **Thumbs Db Name** field to the name of the second database that is used to store the wavelet-compressed thumbnails. The path to store the thumbnails data can be stored locally to prevent huge data exchange between the server and the application computer. Storing the thumbnails in remote can decrease the application performances and introduce time latency with large collections.
 
 Set the **Similarity Db Name** field to the name of the third database that is used to store the similarity finger-prints produced by the fuzzy search engine.
 
