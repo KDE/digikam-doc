@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-13 01:53+0000\n"
-"PO-Revision-Date: 2025-02-06 21:16+0100\n"
+"PO-Revision-Date: 2025-08-23 06:57+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.0\n"
+"X-Generator: Lokalize 25.08.0\n"
 
 #: ../../post_processing/time_adjust.rst:-1
 msgid "The digiKam Time Adjust"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../post_processing/time_adjust.rst:14
 msgid ":ref:`Time Adjust <post_processing>`"
-msgstr ""
+msgstr ":ref:`Tidsjustering <post_processing>`"
 
 #: ../../post_processing/time_adjust.rst:16
 msgid ""
@@ -44,12 +44,23 @@ msgid ""
 "take the date information, the date entries to fix or append, and the "
 "calculation to do on dates before saving them."
 msgstr ""
+"Med tidsjusteringsverktyget, som är tillgängligt med :menuselection:`Objekt "
+"--> Justera tid och datum` :kbd:`Ctrl+Shift+D`, kan man justera eller skriva "
+"tidsstämplar i filmetadata. Den vanliga uppgiften är ibland obligatorisk när "
+"bilder inte innehåller datum i metadata (vanligtvis när innehållet "
+"digitaliserades av en bildläsare), eller när en kamera registrerar ett "
+"felaktigt datum i filen på grund av en felaktigt inställd klocka. Med "
+"verktyget kan man välja rätt källa för att hämta datuminformation, "
+"datumposterna som ska korrigeras eller läggas till, och beräkningen som ska "
+"göras på datum innan de sparas."
 
 #: ../../post_processing/time_adjust.rst:18
 msgid ""
 "The **Timestamp Used** group allows you to select the source of the date. "
 "Available choices are:"
 msgstr ""
+"Gruppen **Tidstämpel använd** gör det möjligt att välja datumets källa. "
+"Tillgängliga alternativ är:"
 
 #: ../../post_processing/time_adjust.rst:20
 msgid "**digiKam timestamp**: the date recorded in the database."
@@ -64,38 +75,46 @@ msgid ""
 "From the file system: **File last Modified** will use the last modification "
 "date of file."
 msgstr ""
+"Från filsystemets: **Filen senast ändrad** använder filens senaste "
+"ändringsdatum."
 
 #: ../../post_processing/time_adjust.rst:24
 msgid ""
 "**Exif/IPTC/XMP**: parse Exif, IPTC, and XMP to get the first value "
 "available."
 msgstr ""
+"**Exif/IPTC/XMP**: tolka Exif, IPTC och XMP för att få det första "
+"tillgängliga värdet."
 
 #: ../../post_processing/time_adjust.rst:25
 msgid "**EXIF: created**: image creation timestamp from Exif."
-msgstr ""
+msgstr "**Exif: skapad**: bildens tidsstämpel för datum skapad från Exif."
 
 #: ../../post_processing/time_adjust.rst:26
 msgid "**EXIF: original**: image original timestamp from Exif."
-msgstr ""
+msgstr "**Exif: original**: bildens tidsstämpel för original från Exif."
 
 #: ../../post_processing/time_adjust.rst:27
 msgid "**EXIF: digitized**: image digitized timestamp from Exif."
 msgstr ""
+"**Exif: digitaliserad**: bildens tidsstämpel för digitalisering från Exif."
 
 #: ../../post_processing/time_adjust.rst:28
 msgid "**IPTC: created**: image created timestamp from IPTC."
-msgstr ""
+msgstr "**IPTC: skapad**: bildens tidsstämpel för datum skapad från IPTC."
 
 #: ../../post_processing/time_adjust.rst:29
 msgid "**XMP: created**: image created timestamp from XMP."
-msgstr ""
+msgstr "**XMP: skapad**: bildens tidsstämpel för datum skapad från XMP."
 
 #: ../../post_processing/time_adjust.rst:30
 msgid ""
 "**EXIF: created (fuzzy)**: image creation timestamp from Exif and trying "
 "different encoding combinations in case of non-respect of standard."
 msgstr ""
+"**Exif: skapad (inexakt)**: bildens tidsstämpel för datum skapad från Exif "
+"med försök att använda olika kodningskombinationer i fallet då standarden "
+"inte respekteras."
 
 #: ../../post_processing/time_adjust.rst:31
 msgid "From the metadata:"
@@ -106,12 +125,18 @@ msgid ""
 "**EXIF: original (fuzzy)**: image original timestamp from Exif and trying "
 "different encoding combinations in case of non-respect of standard."
 msgstr ""
+"**Exif: original (inexakt)**: bildens tidsstämpel för original från Exif med "
+"försök att använda olika kodningskombinationer i fallet då standarden inte "
+"respekteras."
 
 #: ../../post_processing/time_adjust.rst:32
 msgid ""
 "**EXIF: digitized (fuzzy)**: image digitized timestamp from Exif and trying "
 "different encoding combinations in case of non-respect of standard."
 msgstr ""
+"**Exif: digitaliserad (inexakt)**: ändrar bildens tidsstämpel för "
+"digitalisering från Exif med försök att använda olika kodningskombinationer "
+"i fallet då standarden inte respekteras."
 
 #: ../../post_processing/time_adjust.rst:33
 msgid "A fixed user specified date."
@@ -122,28 +147,40 @@ msgid ""
 "The **Timestamp Adjustments** group allows you to select the operation to "
 "perform on the source date to obtain the target date. Available choices are:"
 msgstr ""
+"Gruppen **Tidsstämpeljusteringar** gör det möjligt att välja vilken åtgärd "
+"som ska utföras med källdatumet för att hämta måldatumet. Tillgängliga "
+"alternativ är:"
 
 #: ../../post_processing/time_adjust.rst:37
 msgid "**Copy value**: copy timestamp from source date to target date."
-msgstr ""
+msgstr "**Kopiera värde**: kopierar tidsstämpeln från källdatum till måldatum."
 
 #: ../../post_processing/time_adjust.rst:38
 msgid ""
 "**Add**: add a fixed time offset to source date to compute target date. Use "
 "the settings on the right side to define the added value."
 msgstr ""
+"**Lägg till**: lägg till en fast tidsförskjutning till källdatumet för att "
+"beräkna måldatumet. Använd inställningarna på höger sida för att definiera "
+"det extra värdet."
 
 #: ../../post_processing/time_adjust.rst:39
 msgid ""
 "**Subtract**: subtract a fixed offset from the source date to compute target "
 "date. Use the settings on the right side to define the subtracted value."
 msgstr ""
+"**Subtrahera**: subtrahera en fast tidsförskjutning från källdatumet för att "
+"beräkna måldatumet. Använd inställningarna på höger sida för att definiera "
+"det extra värdet."
 
 #: ../../post_processing/time_adjust.rst:40
 msgid ""
 "**Interval**: interval timestamp to the next image from the list to process. "
 "Use the settings on the right side to define the interval value."
 msgstr ""
+"**Intervall**: intervall för tidsstämpeln till nästa bild från listan att "
+"bearbeta. Använd inställningarna på höger sida för att definiera "
+"intervallvärdet."
 
 #: ../../post_processing/time_adjust.rst:42
 msgid ""
@@ -154,59 +191,76 @@ msgid ""
 "will automatically select the **Copy value**, **Add**, or **Subtract** "
 "method."
 msgstr ""
+"Med **Avgör tidsskillnad med klockat fotografi** kan man välja ett foto för "
+"att hämta ett datum från och beräkna tidsskillnaden mellan det och det "
+"aktuella objektet som valts från listan över filer att bearbeta. Man kan "
+"också använda funktionen dra-och-släpp över knappen för att definiera den "
+"valda bilden. Funktionen väljer automatiskt metoden **Kopiera värde**, "
+"**Lägg till** eller **Subtrahera**."
 
 #: ../../post_processing/time_adjust.rst:44
 msgid ""
 "The **Timestamp updated** group allows you to define the target entries to "
 "update with the new values. Available choices are listed below:"
 msgstr ""
+"Gruppen **Tidsstämpel uppdaterad** gör det möjligt att definiera målposterna "
+"som ska uppdateras med de nya värdena. Tillgängliga alternativ listas nedan:"
 
 #: ../../post_processing/time_adjust.rst:46
 msgid ""
 "**Update only existing timestamps**: will change only the values which "
 "already exist in file."
 msgstr ""
+"**Uppdatera bara befintliga tidsstämplar**: ändrar bara värdena som redan "
+"finns i filen."
 
 #: ../../post_processing/time_adjust.rst:47
 msgid "**Exif: original**: will change the image original timestamp from Exif."
-msgstr ""
+msgstr "**Exif: original**: ändrar bildens tidsstämpel för original från Exif."
 
 #: ../../post_processing/time_adjust.rst:48
 msgid ""
 "**Exif: digitized**: will change the image digitized timestamp from Exif."
 msgstr ""
+"**Exif: digitaliserad**: ändrar bildens tidsstämpel för digitalisering från "
+"Exif."
 
 #: ../../post_processing/time_adjust.rst:49
 msgid "**Exif: created**: will change the image creation timestamp from Exif."
 msgstr ""
+"**Exif: skapad**: ändrar bildens tidsstämpel för datum skapad från Exif."
 
 #: ../../post_processing/time_adjust.rst:50
 msgid ""
 "**Exif: Thumbnail**: will change the image thumbnail timestamp from Exif."
 msgstr ""
+"**Exif: Miniatyrbild**: ändra miniatyrbildens tidsstämpel i bilden från Exif."
 
 #: ../../post_processing/time_adjust.rst:51
 msgid "**XMP**: will change the image timestamp from standard XMP namespaces."
-msgstr ""
+msgstr "**XMP**: ändrar bildens tidsstämpel från XMP-standardnamnrymderna."
 
 #: ../../post_processing/time_adjust.rst:52
 msgid ""
 "**XMP: video**: will change the image timestamp from WMP video namespace."
-msgstr ""
+msgstr "**XMP: video**: ändrar bildens tidsstämpel från WMP-videonamnrymden."
 
 #: ../../post_processing/time_adjust.rst:53
 msgid "**IPTC: created**: will change the image created timestamp from IPTC."
 msgstr ""
+"**IPTC: skapad**: ändrar bildens tidsstämpel för datum skapad från IPTC."
 
 #: ../../post_processing/time_adjust.rst:54
 msgid ""
 "**File last modified**: will change the last modified timestamp from file "
 "system."
 msgstr ""
+"**Filen senast ändrad**: ändrar tidsstämpeln för senaste ändring från "
+"filsystemet."
 
 #: ../../post_processing/time_adjust.rst:60
 msgid "The digiKam Time Adjust Tool Tuning Items Time-Stamp"
-msgstr ""
+msgstr "Tidsjusteringsverktyget i digiKam som Justerar tidsstämplar för objekt"
 
 #~ msgid "Time Adjust"
 #~ msgstr "Tidsjustering"
