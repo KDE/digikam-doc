@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-13 01:53+0000\n"
-"PO-Revision-Date: 2025-08-16 18:14+0200\n"
+"PO-Revision-Date: 2025-08-24 17:28+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -53,6 +53,11 @@ msgid ""
 "taken, author info, copyrights, keywords, captions, and the coordinates of "
 "the location where the image was taken."
 msgstr ""
+"All information och egenskaper relaterade till bilder eller filer som lagras "
+"av digiKam kallas metadata. Metadatafält inkluderar filegenskaper som "
+"filstorlek och skapandedatum, kamerainställningar när bilden togs, "
+"information om upphovsman, upphovsrätt, nyckelord, bildtexter och "
+"koordinaterna för den plats där bilden togs."
 
 #: ../../right_sidebar/metadata_view.rst:26
 msgid ""
@@ -61,6 +66,10 @@ msgid ""
 "designed to display information, digiKam has multiple tools for setting and "
 "editing metadata:"
 msgstr ""
+"Metadatasidoraden består av fem underflikar **Exif**, "
+"**Tillverkaranmärkningar**, **IPTC**, **XMP** och **ExifTool**. Medan "
+"metadatasidoraden främst är utformat för att visa information, har digiKam "
+"flera verktyg för att ange och redigera metadata:"
 
 #: ../../right_sidebar/metadata_view.rst:28
 msgid "With the :ref:`Camera interface <camera_import>`."
@@ -87,19 +96,23 @@ msgstr "Kopiera :ref:`filens metadata till databasen <maintenance_database>`."
 
 #: ../../right_sidebar/metadata_view.rst:43
 msgid "The Metadata View From Right Sidebar Displaying Exif Information"
-msgstr ""
+msgstr "Metadata från höger sidorad som visar etikettinformation"
 
 #: ../../right_sidebar/metadata_view.rst:45
 msgid ""
 "For each section of the metadata sidebar, a bar is available on the top of "
 "the view containing:"
 msgstr ""
+"För varje sektion i sidoraden med metadata finns det en stapel högst upp i "
+"vyn som innehåller:"
 
 #: ../../right_sidebar/metadata_view.rst:47
 msgid ""
 "A left button |tags_filter| that pops up a menu to filter the metadata list "
 "to only display some metadata fields:"
 msgstr ""
+"En knapp till vänster |tags_filter| som visar en meny för att filtrera "
+"metadatalistan för att bara visa vissa metadatafält:"
 
 #: ../../right_sidebar/metadata_view.rst:49
 msgid "**No Filter**: displays all metadata fields."
@@ -110,16 +123,19 @@ msgid ""
 "**Photograph**: displays only the most important metadata fields for "
 "photographs."
 msgstr ""
+"**Fotografi**: visar endast de viktigaste metadatafälten för fotografier."
 
 #: ../../right_sidebar/metadata_view.rst:51
 msgid "**Custom**: displays a customized selection of metadata fields."
-msgstr ""
+msgstr "**Egen**: visar ett anpassat urval av metadatafält."
 
 #: ../../right_sidebar/metadata_view.rst:52
 msgid ""
 "**Settings**: selects the specific metadata fields to display in a custom "
 "display."
 msgstr ""
+"**Inställningar**: väljer de specifika metadatafält som ska visas i en egen "
+"visning."
 
 #: ../../right_sidebar/metadata_view.rst:54
 msgid ""
@@ -127,24 +143,31 @@ msgid ""
 "metadata list will be successively filtered. This is a quick way of "
 "accessing specific information."
 msgstr ""
+"En sökruta mitt i fältet. När man skriver in ett sökord filtreras "
+"metadatalistan successivt. Det är ett snabbt sätt att få tillgång till "
+"specifik information."
 
 #: ../../right_sidebar/metadata_view.rst:56
 msgid "A right button |tools| that pops up a menu to export contents:"
 msgstr ""
+"En knapp till höger |tools| som visar en meny för att exportera innehåll:"
 
 #: ../../right_sidebar/metadata_view.rst:58
 msgid ""
 "**Copy to clipboard**: copies the metadata text to the clipboard, so it can "
 "be pasted into another application."
 msgstr ""
+"**Kopiera till klippbordet**: kopierar metadatatexten till klippbordet så "
+"att den kan klistras in i ett annat program."
 
 #: ../../right_sidebar/metadata_view.rst:59
 msgid "**Save to file**: saves the metadata text to a data file."
-msgstr ""
+msgstr "**Spara i fil**: sparar metadatatexten i en datafil."
 
 #: ../../right_sidebar/metadata_view.rst:60
 msgid "**Print data**: exports the metadata text to a printer or PDF file."
 msgstr ""
+"**Skriv ut**: exporterar metadatatexten till en skrivare eller PDF-fil."
 
 #: ../../right_sidebar/metadata_view.rst:64
 msgid ""
@@ -152,6 +175,9 @@ msgid ""
 "changed. This allows you to quickly identify differences in the metadata "
 "contents of various items by stepping through files."
 msgstr ""
+"Metadatavisningen bevarar filterinställningarna medan valda filer ändras. "
+"Det gör att man snabbt kan identifiera skillnader i metadatainnehållet för "
+"olika objekt genom att stega igenom filerna."
 
 #: ../../right_sidebar/metadata_view.rst:69
 msgid "Exif Tags"
@@ -166,6 +192,12 @@ msgid ""
 "settings (including date and time) in use when the image was taken. Exif can "
 "also include an in-line thumbnail."
 msgstr ""
+"Exif, som står för `Exchangeable image file format <https://en.wikipedia.org/"
+"wiki/Exif>`_, är ett filformat som är speciellt utformat för digitalkameror "
+"och som kodar en stor mängd information i varje fotografi. Information "
+"beskriver kameran som tog bilden tillsammans med de inställningar (inklusive "
+"datum och tid) som användes när bilden togs. Exif kan också inkludera en "
+"inbäddad miniatyrbild."
 
 #: ../../right_sidebar/metadata_view.rst:73
 msgid ""
@@ -173,34 +205,44 @@ msgid ""
 "first sidebar tab. The metadata fields in the Exif display are organized "
 "into one or more sections:"
 msgstr ""
+"Man kan granska inbäddad Exif-information för den markerade bilden från den "
+"första fliken i sidoraden. Metadatafälten i Exif-visningen är organiserade i "
+"en eller flera sektioner:"
 
 #: ../../right_sidebar/metadata_view.rst:75
 msgid ""
 "**Embedded Thumbnail**: contains information about the embedded thumbnail "
 "image."
 msgstr ""
+"**Inbäddad miniatyrbild**: innehåller information om den inbäddade "
+"miniatyrbilden."
 
 #: ../../right_sidebar/metadata_view.rst:77
 msgid ""
 "**Global Positioning System**: contains location information if the "
 "photograph has been geo-coded."
 msgstr ""
+"**Globala positioneringssystemet**: innehåller platsinformation om "
+"fotografiet har kodats geografiskt."
 
 #: ../../right_sidebar/metadata_view.rst:79
 msgid "**Image Information**: contains general information about the image."
-msgstr ""
+msgstr "**Information om bild**: innehåller allmän information om bilden."
 
 #: ../../right_sidebar/metadata_view.rst:81
 msgid ""
 "**Interoperability**: contains information to support interoperability "
 "between different Exif implementations."
 msgstr ""
+"**Interoperabilitet**: innehåller information som stöder interoperabilitet "
+"mellan olika Exif-implementeringar."
 
 #: ../../right_sidebar/metadata_view.rst:83
 msgid ""
 "**Photograph Information**: contains extended information about the "
 "photograph."
 msgstr ""
+"**Information om fotografi**: innehåller utökad information om fotografiet."
 
 #: ../../right_sidebar/metadata_view.rst:85
 msgid ""
@@ -208,6 +250,9 @@ msgid ""
 "the Exif data. Scroll bars are enabled if there are more entries than "
 "available space."
 msgstr ""
+"Exif Viewer är enbart avsedd för information. Den kan inte användas för att "
+"ändra någon Exif-data. Rullningslister aktiveras om det finns fler poster än "
+"det finns tillgängligt utrymme."
 
 #: ../../right_sidebar/metadata_view.rst:90
 msgid "Makernote Tags"
@@ -222,6 +267,13 @@ msgid ""
 "focusing modes, etc. But the specifications of these custom fields is often "
 "proprietary and manufacturer specific."
 msgstr ""
+"Exif-standarden definierar en tagg för tillverkaranmärkningar, som gör det "
+"möjligt för kameratillverkare att lagra anpassade metadatafält i filen. Den "
+"används av många kameratillverkare för att lagra en mängd "
+"kamerainställningar som inte listas i Exif-standarden, såsom "
+"fotograferingslägen, efterbehandlingsinställningar, serienummer, "
+"fokuseringslägen etc. Men specifikationerna för de anpassade fält är ofta "
+"proprietära och tillverkarspecifika."
 
 #: ../../right_sidebar/metadata_view.rst:94
 msgid ""
@@ -229,11 +281,15 @@ msgid ""
 "Makernote sidebar tab. The Makernote Viewer is purely informational – it "
 "cannot be used to change any of the Makernote data."
 msgstr ""
+"Man kan granska tillverkarspecifika metadata för den markerade bilden i "
+"sidoradsfliken Tillverkaranmärkningar. Visning av tillverkaranmärkningar är "
+"endast till för information. Den kan inte användas för att ändra någon av "
+"tillverkaranmärkningarna."
 
 #: ../../right_sidebar/metadata_view.rst:101
 msgid ""
 "The Metadata View from the Right Sidebar Displaying Markernote Information"
-msgstr ""
+msgstr "Metadata från höger sidorad som visar tillverkaranmärkningsinformation"
 
 #: ../../right_sidebar/metadata_view.rst:106
 msgid "IPTC Tags"
@@ -247,6 +303,11 @@ msgid ""
 "exchange that are used by virtually every major news organization in the "
 "world."
 msgstr ""
+"International Press Telecommunications Council <https://www.iptc.org>`_ är "
+"ett konsortium av världens största nyhetsbyråer och leverantörer inom "
+"nyhetsbranschen. Det utvecklar och upprätthåller tekniska standarder för "
+"förbättrad nyhetsutbyte som används av praktiskt taget alla större "
+"nyhetsorganisationer i världen."
 
 #: ../../right_sidebar/metadata_view.rst:110
 msgid ""
@@ -255,6 +316,10 @@ msgid ""
 "late 1970s IPTC's activities have primarily focused on developing and "
 "publishing industry standards for the interchange of news data."
 msgstr ""
+"IPTC grundades 1965 av en grupp nyhetsorganisationer för att skydda "
+"världspressens telekommunikationsintressen. Sedan slutet av 1970-talet har "
+"IPTC:s verksamhet främst fokuserat på att utveckla och publicera "
+"branschstandarder för utbyte av nyhetsdata."
 
 #: ../../right_sidebar/metadata_view.rst:112
 msgid ""
@@ -265,6 +330,11 @@ msgid ""
 "actually embedding the metadata into digital image files - known as *IPTC "
 "headers*."
 msgstr ""
+"I synnerhet definierar IPTC en uppsättning metadataegenskaper som kan "
+"användas för bilder. De definierades ursprungligen 1979 och reviderades "
+"avsevärt 1991 för att bli *Informationsutbytesmodellen* (IIM), men konceptet "
+"utvecklades verkligen 1994 när Adobe definierade en specifikation för att "
+"faktiskt inbädda metadata i digitala bildfiler, kända som *IPTC-huvuden*."
 
 #: ../../right_sidebar/metadata_view.rst:114
 msgid ""
@@ -272,10 +342,13 @@ msgid ""
 "sidebar tab. The IPTC Viewer is purely informational – it cannot be used to "
 "change any of the IPTC data."
 msgstr ""
+"Man kan granska inbäddad IPTC-information för den markerade bilden i "
+"sidoradsfliken IPTC. Visning av IPTC är endast informativ. Den kan inte "
+"användas för att ändra någon IPTC-data."
 
 #: ../../right_sidebar/metadata_view.rst:121
 msgid "The Metadata View from the Right Sidebar Displaying IPTC Information"
-msgstr ""
+msgstr "Metadata från höger sidorad som visar IPTC-information"
 
 #: ../../right_sidebar/metadata_view.rst:126
 msgid "XMP Tags"
@@ -288,6 +361,10 @@ msgid ""
 "by Adobe Systems Inc., for the creation, processing and interchange of "
 "standardized and custom metadata for digital documents and data sets."
 msgstr ""
+"`Extensible Metadata Platform <https://en.wikipedia.org/wiki/"
+"Extensible_Metadata_Platform>`_ (XMP) är en ISO-standard, ursprungligen "
+"skapad av Adobe Systems Inc., för skapande, bearbetning och utbyte av "
+"standardiserade och anpassade metadata för digitala dokument och datamängder."
 
 #: ../../right_sidebar/metadata_view.rst:130
 msgid ""
@@ -297,6 +374,11 @@ msgid ""
 "document file formats, without breaking the ability of applications that do "
 "not support XMP to read the files."
 msgstr ""
+"XMP standardiserar en datamodell, ett serialiseringsformat och "
+"kärnegenskaper för definition och bearbetning av utökningsbara metadata. Det "
+"ger också riktlinjer för att inbädda XMP-information i populära bild-, "
+"video- och dokumentfilformat, utan att förstöra möjligheten att läsa filerna "
+"för program som inte stöder XMP."
 
 #: ../../right_sidebar/metadata_view.rst:132
 msgid ""
@@ -304,10 +386,13 @@ msgid ""
 "metadata avoids problems that occur when the metadata is stored separately "
 "and separated from the original image file."
 msgstr ""
+"Även om metadata alternativt kan lagras i en associerad fil, undviker "
+"inbäddning av metadata problem som uppstår när metadata lagras separat och "
+"separerade från den ursprungliga bildfilen."
 
 #: ../../right_sidebar/metadata_view.rst:134
 msgid "XMP offers an enriched alternative method of storing IPTC fields."
-msgstr ""
+msgstr "XMP erbjuder en utökad alternativ metod för att lagra IPTC-fält."
 
 #: ../../right_sidebar/metadata_view.rst:136
 msgid ""
@@ -315,10 +400,13 @@ msgid ""
 "sidebar tab. The XMP Viewer is purely informational – it cannot be used to "
 "change any of the XMP data."
 msgstr ""
+"Man kan granska inbäddad XMP-information för den markerade bilden i "
+"sidoradsfliken XMP. Visning av XMP är endast informativ. Den kan inte "
+"användas för att ändra någon XMP-data."
 
 #: ../../right_sidebar/metadata_view.rst:143
 msgid "The Metadata View from the Right Sidebar Displaying XMP Information"
-msgstr ""
+msgstr "Metadata från höger sidorad som visar XMP-information"
 
 #: ../../right_sidebar/metadata_view.rst:148
 msgid "ExifTool View"
@@ -333,6 +421,13 @@ msgid ""
 "write metadata, but digiKam can now use the ExifTool as an alternative that "
 "supports a wider variety of file types and metadata fields than Exiv2."
 msgstr ""
+"ExifTool <https://en.wikipedia.org/wiki/ExifTool>`_ är ett fritt program med "
+"öppen källkod för att läsa, skriva och manipulera bild-, ljud-, video- och "
+"PDF-metadata. Det är ett plattformsoberoende, kommandoradsbaserat Perl-"
+"program. Tidigare versioner av digiKam använde Exiv2-biblioteket för att "
+"läsa och skriva metadata, men digiKam kan nu använda ExifTool som ett "
+"alternativ som stöder en större variation av filtyper och metadatafält än "
+"Exiv2."
 
 #: ../../right_sidebar/metadata_view.rst:152
 msgid ""
@@ -340,6 +435,9 @@ msgid ""
 "GeoTIFF, ICC Profile, Photoshop IRB, FlashPix, AFCP and ID3, as well as the "
 "manufacturer-specific metadata formats for many digital cameras."
 msgstr ""
+"ExifTool stöder många typer av metadata, inklusive Exif, IPTC, XMP, JFIF, "
+"GeoTIFF, ICC-profil, Photoshop IRB, FlashPix, AFCP och ID3, samt de "
+"tillverkarspecifika metadataformaten för många digitalkameror."
 
 #: ../../right_sidebar/metadata_view.rst:154
 msgid ""
@@ -347,11 +445,14 @@ msgid ""
 "ExifTool sidebar tab. The ExifTool Viewer is purely informational – it "
 "cannot be used to change any of the file's metadata."
 msgstr ""
+"Man kan granska information som avkodats av ExifTool för den markerade "
+"bilden i sidoradsfliken ExifTool. ExifTool-visning är enbart informativ. Den "
+"kan inte användas för att ändra någon av filens metadata."
 
 #: ../../right_sidebar/metadata_view.rst:161
 msgid ""
 "The Metadata View from the Right Sidebar Displaying ExifTool Information"
-msgstr ""
+msgstr "Metadata från höger sidorad som visar ExifTool-information"
 
 #~ msgid "Metadata View"
 #~ msgstr "Metadatavisning"
