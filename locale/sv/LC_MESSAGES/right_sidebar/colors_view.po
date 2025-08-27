@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-13 01:53+0000\n"
-"PO-Revision-Date: 2025-08-16 18:10+0200\n"
+"PO-Revision-Date: 2025-08-25 20:56+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -26,10 +26,12 @@ msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, colors, histogram, icc, profile"
 msgstr ""
+"digiKam, dokumentation, användarhandbok, fotohantering, öppen källkod, fri, "
+"lära, enkel, färger, histogram, icc, profil"
 
 #: ../../right_sidebar/colors_view.rst:14
 msgid ":ref:`Colors View <right_sidebar>`"
-msgstr ""
+msgstr ":ref:`Färgvisning <right_sidebar>`"
 
 #: ../../right_sidebar/colors_view.rst:16
 msgid "Contents"
@@ -42,6 +44,9 @@ msgid ""
 "digiKam is available in the :ref:`Color Management <color_management>` "
 "chapter of this manual."
 msgstr ""
+"Färgsidoraden har två underflikar **Histogram** och **ICC-profil**, vilka "
+"beskrivs här. Mer fullständig information om färghantering i digiKam finns i "
+"kapitlet :ref:`Färghantering <color_management>` i handboken."
 
 #: ../../right_sidebar/colors_view.rst:21
 msgid "Histogram Viewer"
@@ -55,10 +60,15 @@ msgid ""
 "performed using the Color Balance, Levels Adjust or Curves Adjust features "
 "in the Image Editor."
 msgstr ""
+"Histogramvisningen visar den statistiska fördelningen av färgvärden i den "
+"aktuella bilden. Den är rent informativ. Ingenting som görs med den orsakar "
+"någon ändring av bilden. En histogrambaserad färgkorrigering kan utföras med "
+"hjälp av funktionerna Färgbalans, Nivåjustering eller Kurvjustering i "
+"bildeditorn."
 
 #: ../../right_sidebar/colors_view.rst:29
 msgid "The Color View From Right Sidebar Displaying Histogram Information"
-msgstr ""
+msgstr "Färgvisning från höger sidorad som visar histograminformation"
 
 #: ../../right_sidebar/colors_view.rst:31
 msgid ""
@@ -70,20 +80,29 @@ msgid ""
 "channels. A transparent pixel is encoded by 0 on the alpha channel; an "
 "opaque pixel by 255."
 msgstr ""
+"Färgbilder kan delas upp i färgkanalerna **Röd**, **Grön** och **Blå**. "
+"Vissa bilder inkluderar också en **Alfakanal** som stöder genomskinlighet "
+"(som PNG- eller GIF-bilder). Varje kanal stöder ett intervall av "
+"intensitetsnivåer från 0 till 255 (heltal). Således kodas en svart bildpunkt "
+"med 0 i alla färgkanaler; en vit bildpunkt med 255 i alla färgkanaler. En "
+"genomskinlig bildpunkt kodas med 0 i alfakanalen; en ogenomskinlig bildpunkt "
+"med 255."
 
 #: ../../right_sidebar/colors_view.rst:33
 msgid "The Histogram Viewer allows you to view each channel separately:"
-msgstr ""
+msgstr "Med histogramvisningen kan varje kanal visas separat:"
 
 #: ../../right_sidebar/colors_view.rst:35
 msgid "**Luminosity**: shows the distribution of brightness values."
-msgstr ""
+msgstr "**Ljusstyrka**: visar fördelningen av ljusstyrkevärden."
 
 #: ../../right_sidebar/colors_view.rst:37
 msgid ""
 "**Red**, **Green**, **Blue**: show the distribution of intensity levels for "
 "the Red, Green, or Blue channels respectively."
 msgstr ""
+"**Röd**, **Grön**, **Blå**: visar fördelningen av intensitetsnivåer för de "
+"röda, gröna respektive blå kanalerna."
 
 #: ../../right_sidebar/colors_view.rst:39
 msgid ""
@@ -91,6 +110,9 @@ msgid ""
 "completely opaque or completely transparent, the histogram will consist of a "
 "single bar on the left or right edge."
 msgstr ""
+"**Alfa**: visar fördelningen av ogenomskinlighetsnivåer. Om lagret är helt "
+"ogenomskinligt eller helt genomskinligt består histogrammet av en enda "
+"stapel på vänster eller höger kant."
 
 #: ../../right_sidebar/colors_view.rst:41
 msgid ""
@@ -98,6 +120,8 @@ msgid ""
 "superposed, so that you can see all of the color distribution information in "
 "a single view."
 msgstr ""
+"**Färger**: visar histogrammen **Röd**, **Grön** och **Blå** ovanpå "
+"varandra, så att man kan se all information om färgfördelningen i en enda vy."
 
 #: ../../right_sidebar/colors_view.rst:43
 msgid ""
@@ -108,6 +132,12 @@ msgid ""
 "color will often be dominated by a single bar. In this case a "
 "**Logarithmic** histogram may be more useful."
 msgstr ""
+"Med alternativet **Skala** kan man bestämma om histogrammet ska visas med en "
+"linjär eller logaritmisk vertikal axel. Läget **Linjärt** är vanligtvis det "
+"mest användbara för bilder tagna med en digitalkamera. Emellertid domineras "
+"ofta ett **Linjärt** histogram för bilder som innehåller betydande områden "
+"med konstant färg av en enda stapel. I det här fallet kan ett "
+"**Logaritmiskt** histogram vara mer användbart."
 
 #: ../../right_sidebar/colors_view.rst:45
 msgid ""
@@ -115,48 +145,57 @@ msgid ""
 "middle of the dialog to a limited range of values by setting the minimum and "
 "maximum range in one of two ways:"
 msgstr ""
+"Man kan begränsa analysen av fältet **Statistik** som visas mitt i "
+"dialogrutan till ett begränsat värdeintervall genom att ställa in "
+"intervallets minimum och maximum på ett av två sätt:"
 
 #: ../../right_sidebar/colors_view.rst:47
 msgid ""
 "Click and drag the pointer across the desired range span within the "
 "histogram display area."
 msgstr ""
+"Klicka och dra pekaren över önskat område inom histogrammets visningsområde."
 
 #: ../../right_sidebar/colors_view.rst:49
 msgid ""
 "Use the spin button fields below the histogram area. The left entry is the "
 "minimum  range and the right entry is maximum range."
 msgstr ""
+"Använd fälten med nummerknappar under histogramområdet. Det vänstra värdet "
+"är minimum och det högra värdet är maximum för intervallet."
 
 #: ../../right_sidebar/colors_view.rst:51
 msgid ""
 "The statistics shown in the middle of the Histogram Viewer describe the "
 "distribution of channel values, restricted to the selected range. These are:"
 msgstr ""
+"Statistiken som visas mitt i histogramvisningen beskriver fördelningen av "
+"kanalvärden, begränsat till det valda området. De är:"
 
 #: ../../right_sidebar/colors_view.rst:53
 msgid "The number of pixels in the image."
-msgstr ""
+msgstr "Antalet bildpunkter i bilden."
 
 #: ../../right_sidebar/colors_view.rst:55
 msgid "The number of pixels whose values fall within the selected range."
-msgstr ""
+msgstr "Antalet bildpunkter vars värden faller inom det valda intervallet."
 
 #: ../../right_sidebar/colors_view.rst:57
 msgid "The mean of the pixels within the selected range."
-msgstr ""
+msgstr "Medelvärdet av bildpunkterna inom det valda området."
 
 #: ../../right_sidebar/colors_view.rst:59
 msgid "The standard deviation of the pixels within the selected range."
-msgstr ""
+msgstr "Standardavvikelsen för bildpunkterna inom det valda området."
 
 #: ../../right_sidebar/colors_view.rst:61
 msgid "The median of the pixels within the selected range."
-msgstr ""
+msgstr "Medianen av bildpunkterna inom det valda området."
 
 #: ../../right_sidebar/colors_view.rst:63
 msgid "The percentage of pixels whose values fall within the selected range."
 msgstr ""
+"Procentandelen bildpunkter vars värden faller inom det valda intervallet."
 
 #: ../../right_sidebar/colors_view.rst:65
 msgid "The color depth of the image."
@@ -171,6 +210,8 @@ msgid ""
 "The source of the histogram, either **Full Image**, or **Image Region** if "
 "you have selected an area of the image within the Image Editor."
 msgstr ""
+"Histogrammets källa, antingen **Hela bilden** eller **Bildområde** om du ett "
+"område av bilden i har valts i bildeditorn."
 
 #: ../../right_sidebar/colors_view.rst:72
 msgid "How To Use a Histogram"
@@ -182,58 +223,69 @@ msgid ""
 "an image shown on the screen. The graph can be divided into 3 regions of "
 "photographic brightness:"
 msgstr ""
+"Histogram är ett grafiskt sätt att bedöma färg- och nyansegenskaperna hos en "
+"bild som visas på bildskärmen. Diagrammet kan delas in i tre områden med "
+"fotografisk ljusstyrka:"
 
 #: ../../right_sidebar/colors_view.rst:76
 msgid ": the shadows on the left of the histogram."
-msgstr ""
+msgstr ": skuggorna till vänster i histogrammet."
 
 #: ../../right_sidebar/colors_view.rst:78
 msgid ": the mid-tones in the middle."
-msgstr ""
+msgstr ": mellantonerna i mitten."
 
 #: ../../right_sidebar/colors_view.rst:80
 msgid ": the highlights on the right of the histogram."
-msgstr ""
+msgstr ": dagrarna till höger i histogrammet."
 
 #: ../../right_sidebar/colors_view.rst:86
 msgid "An Image Histogram in All Colors Mode"
-msgstr ""
+msgstr "Ett bildhistogram med alla färger"
 
 #: ../../right_sidebar/colors_view.rst:88
 msgid ""
 "The spread of the histogram, and where the spikes and bulges are clustered, "
 "indicates whether the image is too dark, too bright, or well-balanced."
 msgstr ""
+"Histogrammets spridning, och var spikar och utbuktningar är grupperade, "
+"indikerar om bilden är för mörk, för ljus eller välbalanserad."
 
 #: ../../right_sidebar/colors_view.rst:90
 msgid ""
 "The histogram for an under exposed photograph will have a distribution of "
 "brightness that tends to be mostly on the left of the graph."
 msgstr ""
+"Histogrammet för ett underexponerat fotografi har en fördelning av "
+"ljusstyrkan som tenderar att vara mestadels till vänster i diagrammet."
 
 #: ../../right_sidebar/colors_view.rst:96
 msgid "An Under Exposed Photograph"
-msgstr ""
+msgstr "Ett underexponerat fotografi"
 
 #: ../../right_sidebar/colors_view.rst:98
 msgid ""
 "The histogram for a correctly exposed photograph will have a distribution of "
 "brightness that will be most prominent near the center part of the graph."
 msgstr ""
+"Histogrammet för ett korrekt exponerat fotografi har en fördelning av "
+"ljusstyrkan som är mest framträdande nära diagrammets mitt."
 
 #: ../../right_sidebar/colors_view.rst:104
 msgid "A Correctly Exposed Photograph"
-msgstr ""
+msgstr "Ett korrekt exponerat fotografi"
 
 #: ../../right_sidebar/colors_view.rst:106
 msgid ""
 "The histogram for an over exposed photograph will have the bulge showing the "
 "brightness distributed mostly towards the right of the graph."
 msgstr ""
+"Histogrammet för ett överexponerat fotografi har en utbuktning som visar "
+"ljusstyrkan fördelad mestadels till höger i diagrammet."
 
 #: ../../right_sidebar/colors_view.rst:112
 msgid "An Over Exposed Photograph"
-msgstr ""
+msgstr "Ett överexponerat fotografi"
 
 #: ../../right_sidebar/colors_view.rst:114
 msgid ""
@@ -242,6 +294,9 @@ msgid ""
 "might be appropriate for the histogram to show a peak at one end or the "
 "other, or both."
 msgstr ""
+"Alla fotografier behöver inte uppvisa den här utbuktningen i mitten av "
+"histogrammet. Mycket beror på motivet. I vissa fall kan det vara rimligt att "
+"histogrammet visar en topp i ena änden eller den andra, eller båda."
 
 #: ../../right_sidebar/colors_view.rst:116
 msgid ""
@@ -250,6 +305,10 @@ msgid ""
 "may be possible to fix the photograph using the :ref:`Exposure Correction "
 "Tool <color_bcg>`."
 msgstr ""
+"Histogrammet är ett tillförlitligt sätt att avgöra om ett fotografi är "
+"korrekt exponerat eller inte. Om histogrammet visar över- eller "
+"underexponering kan det vara möjligt att korrigera fotografiet med hjälp av :"
+"ref:`verktyget Exponeringskorrigering <color_bcg>`."
 
 #: ../../right_sidebar/colors_view.rst:119
 msgid "ICC Profile Viewer"
@@ -267,6 +326,15 @@ msgid ""
 "may be specified using tables, to which interpolation is applied, or through "
 "a series of parameters for transformations used in Color Management."
 msgstr ""
+"En ICC-profil är en uppsättning data som karaktäriserar en färginmatnings- "
+"eller utmatningsenhet, eller en färgrymd, enligt standarder som utfärdats av "
+"`International Color Consortium <https://en.wikipedia.org/wiki/"
+"International_Color_Consortium>`_. Profiler beskriver färgegenskaper för en "
+"viss enhet, eller visningskraven för en viss bild, genom att definiera en "
+"avbildning mellan enhetens käll- eller målfärgrymd och en enhetsoberoende "
+"färgrymd som kallas profilanslutningsrymden. Avbildningar kan specificeras "
+"med hjälp av tabeller som interpoleras, eller genom en serie parametrar för "
+"transformeringar som används i färghantering."
 
 #: ../../right_sidebar/colors_view.rst:123
 msgid ""
@@ -275,10 +343,14 @@ msgid ""
 "Profile viewer displays the textual information for the image's color "
 "profile and a chromaticity diagram indicating the image's color gamut."
 msgstr ""
+"Varje bildfil kan profileras. Kameratillverkare tillhandahåller profiler för "
+"sina produkter och lagrar dem i bildfiler som extra metadata. Den här ICC-"
+"profilvisningen visar textinformation om bildens färgprofil och ett "
+"kromaticitetsdiagram som anger bildens färgskala."
 
 #: ../../right_sidebar/colors_view.rst:130
 msgid "The Color View From Right Sidebar Displaying Color Profile Information"
-msgstr ""
+msgstr "Färgvisning från höger sidorad som visar färgprofilinformation"
 
 #~ msgid "Colors View"
 #~ msgstr "Färgvisning"
