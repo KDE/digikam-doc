@@ -1,13 +1,13 @@
 # Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
 # This file is distributed under the same license as the Digikam Manual package.
 #
-# SPDX-FileCopyrightText: 2024 Stefan Asserhäll <stefan.asserhall@gmail.com>
+# SPDX-FileCopyrightText: 2024, 2025 Stefan Asserhäll <stefan.asserhall@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.4.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-13 01:53+0000\n"
-"PO-Revision-Date: 2024-09-08 16:22+0200\n"
+"PO-Revision-Date: 2025-08-29 17:23+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,21 +15,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 25.08.0\n"
 
 #: ../../post_processing/ocrtext_converter.rst:-1
 msgid "The digiKam OCR Text Converter"
-msgstr ""
+msgstr "Textkonvertering med optisk teckentydning i digiKam"
 
 #: ../../post_processing/ocrtext_converter.rst:-1
 msgid ""
 "digiKam, documentation, user manual, photo management, open source, free, "
 "learn, easy, ocr, text, tesseract"
 msgstr ""
+"digiKam, dokumentation, användarhandbok, fotohantering, öppen källkod, fri, "
+"lära, enkel, optisk teckentydning, text, tesseract"
 
 #: ../../post_processing/ocrtext_converter.rst:14
 msgid ":ref:`OCR Text Converter <post_processing>`"
-msgstr ""
+msgstr ":ref:`Textkonvertering med optisk teckentydning <post_processing>`"
 
 #: ../../post_processing/ocrtext_converter.rst:16
 msgid ""
@@ -37,6 +39,9 @@ msgid ""
 "areas with text, and converts that text into editable and translatable "
 "characters files."
 msgstr ""
+"Verktyget **Textkonvertering med optisk teckentydning** tolkar innehållet på "
+"en bild, detekterar områden med text och konverterar texten till redigerbara "
+"och översättningsbara teckenfiler."
 
 #: ../../post_processing/ocrtext_converter.rst:18
 msgid ""
@@ -45,6 +50,10 @@ msgid ""
 "engine. It also allows you to review the text with the aid of spell "
 "checking, and make corrections as needed."
 msgstr ""
+"Verktyget kan utföra bakgrundsbaserad optisk teckenigenkänning (OCR) av "
+"bilder och producera översättningar på många språk med hjälp av ett "
+"översättningsgränssnitt på nätet. Det gör det också möjligt att granska "
+"texten med hjälp av stavningskontroll och göra korrigeringar vid behov."
 
 #: ../../post_processing/ocrtext_converter.rst:20
 msgid ""
@@ -52,6 +61,9 @@ msgid ""
 "Tesseract_(software)>`_, a powerful open-source optical character "
 "recognition engine available for Linux, macOS, and Windows."
 msgstr ""
+"Verktyget använder `Tesseract <https://en.wikipedia.org/wiki/"
+"Tesseract_(software)>`_, ett kraftfullt optiskt teckenigenkänningsgränssnitt "
+"med öppen källkod som är tillgängligt för Linux, macOS och Windows."
 
 #: ../../post_processing/ocrtext_converter.rst:22
 msgid ""
@@ -60,10 +72,15 @@ msgid ""
 "Text Converter`, or use the icon **OCR Text Converter** from the **Tools** "
 "tab on the right sidebar. The following dialog will appear:"
 msgstr ""
+"För att utföra textkonverteringar, markera de inlästa bilderna som "
+"innehåller text att tolka och starta verktyget från menyn :menuselection:"
+"`Verktyg --> OCR-textkonverterare`, eller använd ikonen **Textkonvertering "
+"med optisk teckentydning** under fliken **Verktyg** i den högra sidoraden. "
+"Följande dialogruta visas:"
 
 #: ../../post_processing/ocrtext_converter.rst:28
 msgid "The digiKam OCR Text Converter Dialog"
-msgstr ""
+msgstr "Dialogrutan textkonvertering med optisk teckentydning i digiKam"
 
 #: ../../post_processing/ocrtext_converter.rst:30
 msgid ""
@@ -73,6 +90,11 @@ msgid ""
 "lower portion of the **Text recognition** tab contains the **Tesseract** "
 "options you can set."
 msgstr ""
+"På höger sida visar fliken **Textigenkänning** om den binära "
+"programversionen **Tesseract** har upptäckts på systemet. Om binärfilen inte "
+"finns måste den installeras på systemet. Den nedre delen av fliken "
+"**Textigenkänning** innehåller alternativen i **Tesseract** som man kan "
+"ställa in."
 
 #: ../../post_processing/ocrtext_converter.rst:32
 msgid ""
@@ -83,74 +105,91 @@ msgid ""
 "hieroglyphs such as Chinese or Japanese. You can use the **Orientation and "
 "Script Detection** mode instead, or a specific language module if available."
 msgstr ""
+"Alternativet **Språk** anger vilket språk som används för optisk "
+"teckentydning. I läget **Standard**, när digital text med flera språk "
+"bearbetas, kan **Tesseract** automatiskt känna igen språk som använder "
+"latinska alfabet som engelska eller franska, men det är inte kompatibelt med "
+"språk som använder hieroglyfer som kinesiska eller japanska. Man kan använda "
+"läget **Orientering och skriptdetektering** istället, eller en specifik "
+"språkmodul om tillgänglig."
 
 #: ../../post_processing/ocrtext_converter.rst:34
 msgid ""
 "The **Segmentation mode** option specify the **Tesseract** page segmentation "
 "mode to use while processing images. Possible choices are:"
 msgstr ""
+"Alternativet **Segmenteringsmetod** anger vilket segmenteringsmetod för "
+"sidor i Tesseract som ska användas vid bearbetning av bilder. Möjliga val är:"
 
 #: ../../post_processing/ocrtext_converter.rst:36
 msgid "**OSD only**: Orientation and Script Detection (OSD) only."
-msgstr ""
+msgstr "**Bara OSD**: Bara orientering och skriptdetektering (OSD)."
 
 #: ../../post_processing/ocrtext_converter.rst:37
 msgid "**With OSD**: Automatic page segmentation with OSD."
-msgstr ""
+msgstr "**Med OSD**: Automatisk siduppdelning med OSD."
 
 #: ../../post_processing/ocrtext_converter.rst:38
 msgid "**No OSD**: Automatic page segmentation, but no OSD, or OCR."
 msgstr ""
+"**Ingen OSD**: Automatisk siduppdelning, men ingen OSD eller optisk "
+"teckentydning."
 
 #: ../../post_processing/ocrtext_converter.rst:39
 msgid "**Default**: Fully automatic page segmentation, but no OSD."
-msgstr ""
+msgstr "**Förval**: Fullständigt automatisk siduppdelning, men ingen OSD."
 
 #: ../../post_processing/ocrtext_converter.rst:40
 msgid "**Col of text**: Assume a single column of text of variable sizes."
-msgstr ""
+msgstr "**Textkolumn**: Förutsätt en enda textkolumn med variabel storlek."
 
 #: ../../post_processing/ocrtext_converter.rst:41
 msgid ""
 "**Vertically aligned**: Assume a single uniform block of vertically aligned "
 "text."
 msgstr ""
+"**Vertikalt justerad**: Förutsätt ett enda likformigt block av vertikalt "
+"justerad text."
 
 #: ../../post_processing/ocrtext_converter.rst:42
 msgid "**Block**: Assume a single uniform block of text."
-msgstr ""
+msgstr "**Block**: Förutsätt ett enda likformigt block av text."
 
 #: ../../post_processing/ocrtext_converter.rst:43
 msgid "**Line**: Treat the image as a single text line."
-msgstr ""
+msgstr "**Rad**: Behandla bilden som en enskild textrad."
 
 #: ../../post_processing/ocrtext_converter.rst:44
 msgid "**Word**: Treat the image as a single word."
-msgstr ""
+msgstr "**Ord**: Behandla bilden som ett enskilt ord."
 
 #: ../../post_processing/ocrtext_converter.rst:45
 msgid "**Word in circle**: Treat the image as a single word in a circle."
-msgstr ""
+msgstr "**Ord i cirkel**: Behandla bilden som ett enskilt ord i en cirkel."
 
 #: ../../post_processing/ocrtext_converter.rst:46
 msgid "**Character**: Treat the image as a single character."
-msgstr ""
+msgstr "**Tecken**: Behandla bilden som ett enskilt tecken."
 
 #: ../../post_processing/ocrtext_converter.rst:47
 msgid ""
 "**Sparse text**: Sparse text. Find as much text as possible in no particular "
 "order."
 msgstr ""
+"**Gles text**: Gles text. Finn så mycket text som möjligt utan bestämd "
+"ordning."
 
 #: ../../post_processing/ocrtext_converter.rst:48
 msgid "**Sparse text + OSD**: Sparse text with OSD."
-msgstr ""
+msgstr "**Gles text + OSD**: Gles text med OSD."
 
 #: ../../post_processing/ocrtext_converter.rst:49
 msgid ""
 "**Raw line**: Treat the image as a single text line, bypassing hacks that "
 "are Tesseract-specific."
 msgstr ""
+"**Obehandlad rad**: Behandla bilden som en enda textrad, och kringgå "
+"Tesseract-specifika hack."
 
 #: ../../post_processing/ocrtext_converter.rst:51
 msgid ""
@@ -158,63 +197,86 @@ msgid ""
 "this `online tutorial <https://pyimagesearch.com/2021/11/15/tesseract-page-"
 "segmentation-modes-psms-explained-how-to-improve-your-ocr-accuracy/>`_."
 msgstr ""
+"För att få mer information om segmenteringsläget i Tesseract kan man läsa "
+"den här handledningen på nätet: <https://pyimagesearch.com/2021/11/15/"
+"tesseract-page-segmentation-modes-psms-explained-how-to-improve-your-ocr-"
+"accuracy/>`_."
 
 #: ../../post_processing/ocrtext_converter.rst:53
 msgid ""
 "The **Engine mode** option specifies the **Tesseract** OCR internal engine "
 "to use while processing images. Possible choices are listed below:"
 msgstr ""
+"Alternativet **Teckentydningsmetod** anger vilken intern OCR-metod i "
+"**Tesseract** som ska användas vid bearbetning av bilder. Möjliga val listas "
+"nedan:"
 
 #: ../../post_processing/ocrtext_converter.rst:55
 msgid ""
 "**Legacy**: Legacy engine only (older engine not based on a neural network)."
 msgstr ""
+"**Äldre**: Bara äldre gränssnitt (äldre gränssnitt inte baserat på ett "
+"neuralt nätverk)."
 
 #: ../../post_processing/ocrtext_converter.rst:56
 msgid ""
 "**LSTM**: Neural network LSTM (Long Short-Term Memory deep-learning) engine "
 "only."
 msgstr ""
+"**LSTM**: Bara neuralt nätverk LSTM-gränssnitt (Long Short-Term Memory "
+"djupinlärning)."
 
 #: ../../post_processing/ocrtext_converter.rst:57
 msgid "**Legacy + LSTM**: Both legacy and LSTM engines will be used."
-msgstr ""
+msgstr "**Äldre + LSTM**: Både äldre och LSTM-gränssnitt används."
 
 #: ../../post_processing/ocrtext_converter.rst:58
 msgid ""
 "**Default**: Default value. Let Tesseract choose the best engine based on "
 "what is available."
 msgstr ""
+"**Förval**: Förvalt värde. Låt Tesseract välja bäst gränssnitt baserat på "
+"vad som är tillgängligt."
 
 #: ../../post_processing/ocrtext_converter.rst:60
 msgid ""
 "The **Resolution Dpi** option specifies the resolution of the input images, "
 "measured in Dots Per Inch (DPI)."
 msgstr ""
+"Alternativet **Upplösning punkter/tum** anger upplösningen på "
+"indatabilderna, mätt i punkter per tum (DPI)."
 
 #: ../../post_processing/ocrtext_converter.rst:62
 msgid ""
 "If the **Use Multi-cores** option is enabled, Tesseract will process files "
 "from the list in parallel."
 msgstr ""
+"Om alternativet **Använd flera processorkärnor** är aktiverat, behandlar "
+"Tesseract filer från listan i parallell."
 
 #: ../../post_processing/ocrtext_converter.rst:64
 msgid ""
 "The **Store result in** option specifies where to place the text contents "
 "recognized by Tesseract while processing images. Possible choices are:"
 msgstr ""
+"Alternativet **Lagra result i** anger var textinnehållet som Tesseract "
+"känner igen ska placeras vid bearbetning av bilder. Möjliga val är:"
 
 #: ../../post_processing/ocrtext_converter.rst:66
 msgid ""
 "**Text file**: Store OCR result in a separate text file in the same "
 "directory as the processed image."
 msgstr ""
+"**Textfil**: Lagra resultatet från optisk teckentydning i en separat textfil "
+"i samma katalog som den bearbetade bilden."
 
 #: ../../post_processing/ocrtext_converter.rst:67
 msgid ""
 "**Metadata**: Store OCR result in an alternative-language XMP tag in the "
 "image metadata."
 msgstr ""
+"**Metadata**: Lagra resultatet från optisk teckentydning i en XMP-tagg på "
+"ett alternativt språk i bildens metadata."
 
 #: ../../post_processing/ocrtext_converter.rst:69
 msgid ""
@@ -225,6 +287,13 @@ msgid ""
 "**Store result in** option. See :ref:`this page <spellcheck_settings>` from "
 "the manual for more details about the **Localize Settings**."
 msgstr ""
+"Längst ner i vyn kan resultatet från optisk teckentydning översättas till "
+"olika språk med hjälp av ett översättningsgränssnitt på nätet. Man kan "
+"ställa in mer än ett översättningsspråk för att bearbeta bilder. Motsvarande "
+"översättningar lagras i separata textfiler eller i extra metadataposter "
+"beroende på alternativet **Spara resultat i**. Se :ref:`den här sidan "
+"<spellcheck_settings>` i handboken för mer information om "
+"**Landsinställningar**."
 
 #: ../../post_processing/ocrtext_converter.rst:71
 msgid ""
@@ -235,6 +304,13 @@ msgid ""
 "<localize_settings>` from the manual for more details about the **Spell-"
 "Checking Settings**."
 msgstr ""
+"Fliken **Textgranskning** på höger sida gör det möjligt att redigera "
+"resultatet från optisk teckentydning för varje bild som bearbetats med "
+"Tesseract. Välj ett alternativ från listan på vänster sida så visas "
+"resultatet från optisk teckentydning i en texteditor. Man kan redigera "
+"texten efter behov eller använda stavningskontroll. Se :ref:`den här sidan "
+"<localize_settings>` i handboken för mer information om **Inställningar av "
+"stavningskontroll**."
 
 #: ../../post_processing/ocrtext_converter.rst:73
 msgid ""
@@ -244,12 +320,20 @@ msgid ""
 "Finally, the **Close** button will stop all OCR processes, if any, and close "
 "the dialog."
 msgstr ""
+"Längst ner i dialogrutan kan knappen **Förval** användas för att återställa "
+"alla alternativ till förvalda värden. Kombinationsknappen **Starta optisk "
+"teckentydning** ​​initierar bearbetningen av de bilder eller alla objekt som "
+"för närvarande är markerade i listan. Slutligen stoppar knappen **Stäng** "
+"alla processer för optisk teckentydning, om det finns några, och stänger "
+"dialogrutan."
 
 #: ../../post_processing/ocrtext_converter.rst:79
 msgid ""
 "The digiKam OCR Text Converter Content to Review on the Right Side with the "
 "Corresponding Image Open in Showfoto"
 msgstr ""
+"Innehållet att granska för textkonvertering med optisk teckentydning i "
+"digiKam på höger sida med motsvarande bild öppen i Showfoto"
 
 #~ msgid "Contents"
 #~ msgstr "Innehåll"
