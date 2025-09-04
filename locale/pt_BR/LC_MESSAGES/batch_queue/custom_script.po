@@ -1,0 +1,365 @@
+# Copyright (C) licensed under the  <a href="https://spdx.org/licenses/GFDL-1.2-or-later.html">licensed under the terms of the GNU Free Documentation License 1.2+</a> unless stated otherwise
+# This file is distributed under the same license as the Digikam Manual package.
+#
+# SPDX-FileCopyrightText: 2025 Marcus Gama <marcus.gama@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: Digikam Manual 8.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-13 01:53+0000\n"
+"PO-Revision-Date: 2025-09-02 11:43-0300\n"
+"Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 25.08.0\n"
+
+#: ../../batch_queue/custom_script.rst:-1
+msgid "digiKam Custom Script from Batch Queue Manager"
+msgstr ""
+"Script personalizado do gerenciador de processamento em lote do digiKam"
+
+#: ../../batch_queue/custom_script.rst:-1
+msgid ""
+"digiKam, documentation, user manual, photo management, open source, free, "
+"learn, easy, batch, custom, script"
+msgstr ""
+"digiKam, documentação, manual do usuário, gerenciamento de fotos, código "
+"aberto, grátis, aprender, fácil, lote, personalizado, script"
+
+#: ../../batch_queue/custom_script.rst:14
+msgid ":ref:`Custom Script <batch_queue>`"
+msgstr ":ref:`Script personalizado <batch_queue>`"
+
+#: ../../batch_queue/custom_script.rst:16
+msgid "Contents"
+msgstr "Conteúdo"
+
+#: ../../batch_queue/custom_script.rst:19
+msgid "Overview"
+msgstr "Visão geral"
+
+#: ../../batch_queue/custom_script.rst:21
+msgid ""
+"The Batch Queue Manager allows you to customize a **Workflow** by adding the "
+"**Custom Script** tool to run a script to process your images with external "
+"tools such as `ImageMagick <https://imagemagick.org/>`_ or `ExifTool "
+"<https://en.wikipedia.org/wiki/ExifTool>`_."
+msgstr ""
+"O gerenciador de processamento em lote permite que você personalize um "
+"**Fluxo de trabalho** adicionando a ferramenta **Script personalizado** para "
+"executar um script para processar suas imagens com ferramentas externas, "
+"como `ImageMagick <https://imagemagick.org/>`_ ou `ExifTool <https://en."
+"wikipedia.org/wiki/ExifTool>`_."
+
+#: ../../batch_queue/custom_script.rst:23
+msgid ""
+"The tool named **Custom Script** is available from the **Custom Tools** "
+"category of the **Base Tools** list. The tool is designed to execute the "
+"source code for a shell script that can call one or more command line "
+"programs for each item in the Queue. The shell script is written by the user "
+"entirely within the plugin. These scripts can include a set of environment "
+"variables that specify filenames and few types of metadata."
+msgstr ""
+"A ferramenta **Script personalizado** está disponível na categoria "
+"**Ferramentas personalizadas** da lista **Ferramentas base**. A ferramenta "
+"foi projetada para executar o código-fonte de um script de shell que pode "
+"chamar um ou mais programas de linha de comando para cada item na fila. O "
+"script de shell é escrito pelo usuário inteiramente dentro do plugin. Esses "
+"scripts podem incluir um conjunto de variáveis ​​de ambiente que especificam "
+"nomes de arquivos e alguns tipos de metadados."
+
+#: ../../batch_queue/custom_script.rst:29
+msgid "The Batch Queue Manager Including a Custom Script in a Workflow"
+msgstr ""
+"O gerenciador de processamento em lote incluindo um script personalizado em "
+"um fluxo de trabalho"
+
+#: ../../batch_queue/custom_script.rst:31
+msgid "The tool provides these options:"
+msgstr "A ferramenta oferece estas opções:"
+
+#: ../../batch_queue/custom_script.rst:33
+msgid ""
+"**Output Image Type**: specifies the expected image format at the output of "
+"your script. The default is **Same as input**, but you can set **JPEG**, "
+"**PNG**, or **TIFF**. Please note that JPEG is a lossy compression format, "
+"only supports 8-bit color depth, and does not support transparency."
+msgstr ""
+"**Tipo de imagem de saída**: especifica o formato de imagem esperado na "
+"saída do seu script. O padrão é **Igual à entrada**, mas você pode definir "
+"**JPEG**, **PNG** ou **TIFF**. Observe que JPEG é um formato de compactação "
+"com perdas, suporta apenas profundidade de cor de 8 bits e não oferece "
+"suporte a transparência."
+
+#: ../../batch_queue/custom_script.rst:35
+msgid ""
+"**Shell Script**: this text field is where you enter the source code for "
+"your shell script. `Bash script <https://en.wikipedia.org/wiki/"
+"Bash_(Unix_shell)>`_ is supported under **Linux** and **macOS**. `Batch "
+"script <https://en.wikipedia.org/wiki/Batch_file>`_ is supported under "
+"**Windows**."
+msgstr ""
+"**Shell script**: este campo de texto é onde você insere o código-fonte do "
+"seu script de shell. `Script Bash <https://en.wikipedia.org/wiki/"
+"Bash_(Unix_shell)>`_ é suportado em **Linux** e **macOS**. `Script em lote "
+"<https://en.wikipedia.org/wiki/Batch_file>`_ é suportado em **Windows**."
+
+#: ../../batch_queue/custom_script.rst:37
+msgid ""
+"The keywords that you can use in your script code are listed below. The tool "
+"will replace all occurrences of keywords in the shell script at run time "
+"before script execution. Note that the keywords are case sensitive."
+msgstr ""
+"As palavras-chave que você pode usar no código do seu script estão listadas "
+"abaixo. A ferramenta substituirá todas as ocorrências de palavras-chave no "
+"script de shell em tempo de execução, antes da execução do script. Observe "
+"que as palavras-chave diferenciam maiúsculas de minúsculas."
+
+#: ../../batch_queue/custom_script.rst:39
+msgid ""
+"**$INPUT** is replaced by the workflow input filename (with special "
+"characters escaped)."
+msgstr ""
+"**$INPUT** é substituído pelo nome do arquivo de entrada do fluxo de "
+"trabalho (com caracteres especiais escapados)."
+
+#: ../../batch_queue/custom_script.rst:41
+msgid ""
+"**$OUTPUT** is replaced by the workflow output filename (with special "
+"characters escaped)."
+msgstr ""
+"**$OUTPUT** é substituído pelo nome do arquivo de saída do fluxo de trabalho "
+"(com caracteres especiais escapados)."
+
+#: ../../batch_queue/custom_script.rst:45
+msgid ""
+"A new file is always expected on **$OUTPUT**. Script programs that do not "
+"create a new file (e.g. changing metadata with ExifTool), must first copy **"
+"$INPUT** to **$OUTPUT** with the appropriate command for the operating "
+"system, before making any changes to **$OUTPUT**."
+msgstr ""
+"Um novo arquivo é sempre esperado em **$OUTPUT**. Programas de script que "
+"não criam um novo arquivo (por exemplo, alterando metadados com o ExifTool) "
+"devem primeiro copiar **$INPUT** para **$OUTPUT** com o comando apropriado "
+"para o sistema operacional, antes de fazer qualquer alteração em **$OUTPUT**."
+
+#: ../../batch_queue/custom_script.rst:47
+msgid "The environment variables that you can use in your shell script are:"
+msgstr ""
+"As variáveis ​​de ambiente que você pode usar no seu script de shell são:"
+
+#: ../../batch_queue/custom_script.rst:49
+msgid "**TITLE**: to use the digiKam **Title** item property."
+msgstr "**TITLE**: para usar a propriedade **Título** do item do digiKam."
+
+#: ../../batch_queue/custom_script.rst:51
+msgid "**COMMENTS**: to use the digiKam **Caption** item property."
+msgstr ""
+"**COMMENTS**: para usar a propriedade **Descrição** do item do digiKam."
+
+#: ../../batch_queue/custom_script.rst:53
+msgid "**COLORLABEL**: to use the digiKam **Color Label** item property."
+msgstr ""
+"**COLORLABEL**: para usar a propriedade **Legenda de cor** do item do "
+"digiKam."
+
+#: ../../batch_queue/custom_script.rst:55
+msgid "**PICKLABEL**: to use the digiKam **Pick Label** item property."
+msgstr ""
+"**PICKLABEL**: para usar a propriedade **Legenda de seleção** do item do "
+"digiKam."
+
+#: ../../batch_queue/custom_script.rst:57
+msgid "**RATING**: to use the digiKam **Rating** item property."
+msgstr ""
+"**RATING**: para usar a propriedade **Classificação** do item do digiKam."
+
+#: ../../batch_queue/custom_script.rst:59
+msgid "**TAGSPATH**: to use the digiKam **Tags** item property."
+msgstr ""
+"**TAGSPATH**: para usar a propriedade **Etiquetas** do item do digiKam."
+
+#: ../../batch_queue/custom_script.rst:61
+msgid ""
+"All of these properties are set based on the image properties stored in the "
+"digiKam database."
+msgstr ""
+"Todas essas propriedades são definidas com base nas propriedades da imagem "
+"armazenadas no banco de dados do digiKam."
+
+#: ../../batch_queue/custom_script.rst:65
+msgid ""
+"Under Linux and macOS, environment variables can be accessed in the script "
+"with **$** as a prefix for variable names (for example **$INPUT**). The "
+"interpreter used to run the script is **/bin/bash**."
+msgstr ""
+"No Linux e no macOS, as variáveis ​​de ambiente podem ser acessadas no script "
+"com **$** como prefixo para nomes de variáveis ​​(por exemplo, **$INPUT**). O "
+"interpretador usado para executar o script é **/bin/bash**."
+
+#: ../../batch_queue/custom_script.rst:67
+msgid ""
+"Under Windows, environment variables can be accessed in the script with **"
+"%** as a prefix and suffix of variable names (for example **%INPUT%**). The "
+"interpreter used to run the script is **cmd.exe**."
+msgstr ""
+"No Windows, as variáveis ​​de ambiente podem ser acessadas no script com **%** "
+"como prefixo e sufixo dos nomes das variáveis ​​(por exemplo, **%INPUT%**). O "
+"interpretador usado para executar o script é **cmd.exe**."
+
+#: ../../batch_queue/custom_script.rst:71
+msgid "Return Value"
+msgstr "Valor devolvido"
+
+#: ../../batch_queue/custom_script.rst:73
+msgid ""
+"By convention, a **Bash script** under Linux and macOS returns 0 on success "
+"or an integer in the range 1-255 for an error. Use **exit < error_code >** "
+"to pass the return value back to the workflow."
+msgstr ""
+"Por convenção, um **script Bash** no Linux e macOS retorna 0 em caso de "
+"sucesso ou um inteiro no intervalo de 1 a 255 em caso de erro. Use **exit < "
+"código_de_erro >** para passar o valor de retorno de volta para o fluxo de "
+"trabalho."
+
+#: ../../batch_queue/custom_script.rst:75
+msgid ""
+"Under Windows, a **Batch script** returns 0 on success and another value for "
+"an error, but the value is a signed integer, so a negative value is "
+"possible. Use **EXIT /B < error_code >** to pass the return value to the "
+"workflow."
+msgstr ""
+"No Windows, um **script em lote** retorna 0 em caso de sucesso e outro valor "
+"em caso de erro, mas o valor é um inteiro com sinal, portanto, um valor "
+"negativo é possível. Use **EXIT /B < código_de_erro >** para passar o valor "
+"de retorno para o fluxo de trabalho."
+
+#: ../../batch_queue/custom_script.rst:77
+msgid ""
+"The Batch Queue Manager handles the value returned by your script. If zero "
+"is returned, the workflow will continue as expected, otherwise the workflow "
+"is interrupted and the Batch Queue Manager stops processing."
+msgstr ""
+"O gerenciador de processamento em lote processa o valor retornado pelo seu "
+"script. Se zero for retornado, o fluxo de trabalho continuará conforme o "
+"esperado; caso contrário, o fluxo de trabalho será interrompido e o "
+"gerenciador de processamento em lote interromperá o processamento."
+
+#: ../../batch_queue/custom_script.rst:80
+msgid "Examples"
+msgstr "Exemplos"
+
+#: ../../batch_queue/custom_script.rst:83
+msgid "Proof of Concept"
+msgstr "Prova de conceito"
+
+#: ../../batch_queue/custom_script.rst:85
+msgid ""
+"This first example shown below does nothing special. It prints on the "
+"console the input/output file names and item properties passed from the "
+"Batch Queue Manager to the script, and copies the input file to the output "
+"file (this stage is required to prevent the Batch Queue Manager from "
+"returning an error because the target file does not exist). The script "
+"returns the value from the file copy command, which is parsed by the Batch "
+"Queue Manager for each item in the workflow."
+msgstr ""
+"O primeiro exemplo mostrado abaixo não faz nada de especial. Ele imprime no "
+"console os nomes dos arquivos de entrada/saída e as propriedades dos itens "
+"passados ​​do gerenciador de processamento em lote para o script e copia o "
+"arquivo de entrada para o arquivo de saída (esta etapa é necessária para "
+"evitar que o gerenciador de processamento em lote retorne um erro porque o "
+"arquivo de destino não existe). O script retorna o valor do comando de cópia "
+"de arquivo, que é analisado pelo gerenciador de processamento em lote para "
+"cada item no fluxo de trabalho."
+
+#: ../../batch_queue/custom_script.rst:102
+msgid ""
+"If you have started digiKam from a terminal and enabled the debug traces on :"
+"ref:`Setting/Miscellaneous/System dialog page <system_settings>`, you will "
+"see something like this:"
+msgstr ""
+"Se você iniciou o digiKam em um terminal e habilitou os rastreamentos de "
+"depuração na página de diálogo :ref:`Configurações/Diversos/Sistema "
+"<system_settings>`, verá algo assim:"
+
+#: ../../batch_queue/custom_script.rst:116
+msgid "The digiKam information taken from the database are:"
+msgstr "As informações do digiKam retiradas do banco de dados são:"
+
+#: ../../batch_queue/custom_script.rst:118
+msgid "Item processed is **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
+msgstr "O item processado é **/mnt/data/Images/SALAGOU/DSC08833.JPG**."
+
+#: ../../batch_queue/custom_script.rst:119
+msgid ""
+"Target filename is **/mnt/data/Images/SALAGOU/BatchTool-EpEjEz-9e1c7a12."
+"digikamtempfile.JPG** (a temporary file generated by Batch Queue Manager)."
+msgstr ""
+"O nome do arquivo de destino é **/mnt/data/Images/SALAGOU/BatchTool-"
+"EpEjEz-9e1c7a12.digikamtempfile.JPG** (um arquivo temporário gerado pelo "
+"gerenciador de processamento em lote)."
+
+#: ../../batch_queue/custom_script.rst:120
+msgid "Item Title is **Salagou Trip**."
+msgstr "O título do item é **Salagou Trip**."
+
+#: ../../batch_queue/custom_script.rst:121
+msgid "Item Comment is null."
+msgstr "O comentário do item é nulo."
+
+#: ../../batch_queue/custom_script.rst:122
+msgid "Item Color Label is **5** (Green)."
+msgstr "A legenda de cor do item é **5** (Verde)."
+
+#: ../../batch_queue/custom_script.rst:123
+msgid "Item Pick Label is **3** (Accepted)."
+msgstr "A legenda de seleção do item é **3** (Aceito)."
+
+#: ../../batch_queue/custom_script.rst:124
+msgid "Item Rating is **3 stars**."
+msgstr "A classificação do item é **3 estrelas**."
+
+#: ../../batch_queue/custom_script.rst:125
+msgid ""
+"Item Tags are **Places**, **Places/France**, **Places/France/Salagou Lake**."
+msgstr ""
+"As etiquetas do item são **Places**, **Places/France**, **Places/France/"
+"Salagou Lake**."
+
+#: ../../batch_queue/custom_script.rst:128
+msgid "Add a Watermark with ImageMagick"
+msgstr "Adicionar uma marca d'água com o ImageMagick"
+
+#: ../../batch_queue/custom_script.rst:130
+msgid ""
+"The second example below is more complex and uses the **ImageMagick** "
+"command line tool to add visible watermarks by superimposing a multiline "
+"text field over each image in the Queue."
+msgstr ""
+"O segundo exemplo abaixo é mais complexo e usa a ferramenta de linha de "
+"comando **ImageMagick** para adicionar marcas d'água visíveis sobrepondo um "
+"campo de texto multilinha sobre cada imagem na fila."
+
+#: ../../batch_queue/custom_script.rst:149
+msgid ""
+"In this example, there is no explicit **exit** call to return a value to the "
+"Workflow. Bash uses the last called method as the returned value from the "
+"script, here the ImageMagick command line tool **convert**."
+msgstr ""
+"Neste exemplo, não há uma chamada explícita de **exit** para retornar um "
+"valor ao fluxo de trabalho. O Bash usa o último método chamado como o valor "
+"retornado do script, neste caso, a ferramenta de linha de comando "
+"**convert** do ImageMagick."
+
+#: ../../batch_queue/custom_script.rst:151
+msgid "This give a result like below."
+msgstr "Isso dá um resultado como o abaixo."
+
+#: ../../batch_queue/custom_script.rst:157
+msgid "The result of the Script Using ImageMagick to Apply a Watermark"
+msgstr ""
+"O resultado do script usando o ImageMagick para aplicar uma marca d'água"
