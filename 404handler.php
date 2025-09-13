@@ -11,9 +11,7 @@
 // NOTE: enable supported languages.
 //       English is always enabled. Respect alphabetic order.
 //       Other languages must be listed in locale/ sub-directory from root directory of this git repository.
-//       All changes from this list must be also applied to the docs-digikam-org section from the JSON config file in binary-factory-tooling repository
-//       https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json
-//       all_langs list in ressources/static/js/version_switch.js file from this repository needs to be also updated.
+//       See also requirements in this README section: https://invent.kde.org/documentation/digikam-doc/-/blob/master/README.md?ref_type=heads#how-to-add-a-new-target-language
 
 $supported_languages = array(
     "ca",
