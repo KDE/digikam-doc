@@ -32,7 +32,7 @@ var all_langs = {
     "lt": "Lietuvi&uogon; kalba",
     "nl": "‎Nederlands",
     //"pl": "Polski",
-    //"pt_BR": "Portugu&ecirc;s (Brazil)",
+    "pt_BR": "Portugu&ecirc;s (Brazil)",
     "pt_PT": "Portugu&ecirc;s",
     //"ru": "&#x3A1;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;",
     "sk": "Sloven&#269;ina",

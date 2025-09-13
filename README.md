@@ -414,7 +414,7 @@ Important: Only files listed as **Reviewed** in [TODO](TODO) list are ready for 
 #### How to Add a New Target Language
 
 The list of current enabled translation languages are in the [locale/](locale) sub-directory.
-Corresponding languages must be enabled in the documentation web-site following this list. 4 files needs to be patched:
+Corresponding languages must be enabled in the documentation web-site following this list. 3 files needs to be patched:
 
 - The **alllang** list from the [version_switch JavaScript file](resources/static/js/version_switch.js) located at **resources/static/js/** from this git repository.
 - The **supported_languages** list from the [404handler PHP file](404handler.php) located at root from this git repository.
