@@ -9,10 +9,8 @@
 //       English is always enabled and must be the first on the list. For the rest, respect alphabetic order.
 //       The language code can be found in this wikipedia page: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 //       The description of language code must encode special character using entity reference for HTML: https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references 
-//       Other languages must be listed in locale/ sub-directory from root directory of this git repository.
-//       All changes from this list must be also applied to the docs-digikam-org section from the JSON config file in binary-factory-tooling repository
-//       https://invent.kde.org/sysadmin/binary-factory-tooling/-/blob/master/staticweb/custom-jobs.json
 //       supporte_languages array in 404handler.php file from this repository needs to be also updated.
+//       See also the requirements from this README section: https://invent.kde.org/documentation/digikam-doc/-/blob/master/README.md?ref_type=heads#how-to-add-a-new-target-language
 var all_langs = {
     "en": "English",
     //"ar": "&#1575;&#1614;&#1604;&#1618;&#1593;&#1614;&#1585;&#1614;&#1576;&#1616;&#1610;&#1614;&#1617;&#1577;&#1615;",
