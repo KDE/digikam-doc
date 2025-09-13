@@ -105,9 +105,9 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 
 **Use the default settings, in 16 bit**: If enabled, all RAW files will be decoded to 16-bit color depth using a linear gamma curve and according to the settings in the **RAW Default Settings** tab. To prevent dark image rendering in the editor, it is recommended to use Color Management in this mode.
 
-**Always open the Raw Import Tool to customize settings**: with this option you can select which Raw Import Tool will be used to open RAW files. Excepted for the LibRaw option which is always enabled, the external program paths must be found using the PATH variable from the system to see the relevant option turned on in this menu. Supported Raw processing tools include:
+**Always open the Raw Import Tool to customize settings**: with this option you can select which Raw Import Tool will be used to open RAW files. Supported Raw processing tools include:
 
-    - **Import RAW using LibRaw**: the default plugin for digiKam provides a fully integrated module in the Right Side Bar of the Image Editor where you can set individual parameters for every image you open.
+    - **Import RAW using LibRaw**: the default plugin for digiKam provides a fully integrated module in the Right Side Bar of the Image Editor where you can set individual parameters for every image you open. This option is always enable in the menu.
 
     .. figure:: images/setup_editor_raw_import.webp
         :alt:
@@ -115,13 +115,13 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 
         The digiKam RAW Import Tool Processing a Nikon NEF File
 
-    - **RawTherapee**: this application must be installed on your computer. `RawTherapee <https://en.wikipedia.org/wiki/RawTherapee>`_ is application software for processing photographs in the RAW image formats created by many digital cameras. It comprises a subset of image editing operations specifically aimed at non-destructive post-production of raw photos and is primarily focused on improving a photographer's workflow by facilitating the handling of large numbers of images.
+    - **RawTherapee**: `RawTherapee <https://en.wikipedia.org/wiki/RawTherapee>`_ is application software for processing photographs in the RAW image formats created by many digital cameras. It comprises a subset of image editing operations specifically aimed at non-destructive post-production of raw photos and is primarily focused on improving a photographer's workflow by facilitating the handling of large numbers of images. To see this option enabled in the menu, this application must be installed on your computer and must be found using the PATH variable from the system.
 
-    - **ART**: this application must be installed on your computer. `ART <https://art.pixls.us/>`_ is a derivative version of the RawTherapee application.
+    - **ART**: `ART <https://art.pixls.us/>`_ is a derivative version of the RawTherapee application. To see this option enabled in the menu, this application must be installed on your computer and must be found using the PATH variable from the system.
 
-    - **UFRaw**: this application must be installed on your computer. `UFRaw <https://en.wikipedia.org/wiki/UFRaw>`_ is an application which can read and manipulate photographs in the RAW image formats created by many digital cameras.
+    - **UFRaw**: `UFRaw <https://en.wikipedia.org/wiki/UFRaw>`_ is an application which can read and manipulate photographs in the RAW image formats created by many digital cameras. To see this option enabled in the menu, this application must be installed on your computer and must be found using the PATH variable from the system.
 
-    - **DarkTable**: this application must be installed on your computer. `Darktable <https://en.wikipedia.org/wiki/Darktable>`_ is a free and open-source photography application program and RAW developer. It comprises a subset of image editing operations specifically aimed at non-destructive RAW image post-production.
+    - **DarkTable**: `Darktable <https://en.wikipedia.org/wiki/Darktable>`_ is a free and open-source photography application program and RAW developer. It comprises a subset of image editing operations specifically aimed at non-destructive RAW image post-production. To see this option enabled in the menu, this application must be installed on your computer and must be found using the PATH variable from the system.
 
     .. figure:: videos/setup_editor_raw_behavior.webp
         :width: 500px
