@@ -105,7 +105,7 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 
 **Use the default settings, in 16 bit**: If enabled, all RAW files will be decoded to 16-bit color depth using a linear gamma curve and according to the settings in the **RAW Default Settings** tab. To prevent dark image rendering in the editor, it is recommended to use Color Management in this mode.
 
-**Always open the Raw Import Tool to customize settings**: With this option you can select which Raw Import Tool will be used to open RAW files. Available raw processing tools include:
+**Always open the Raw Import Tool to customize settings**: with this option you can select which Raw Import Tool will be used to open RAW files. Excepted for the LibRaw option which is always enabled, the external program paths must be found using the PATH variable from the system to see the relevant option turned on in this menu. Supported Raw processing tools include:
 
     - **Import RAW using LibRaw**: the default plugin for digiKam provides a fully integrated module in the Right Side Bar of the Image Editor where you can set individual parameters for every image you open.
 
@@ -115,7 +115,9 @@ In the early versions of digiKam the Image Editor was just a viewer for photogra
 
         The digiKam RAW Import Tool Processing a Nikon NEF File
 
-    - **RawTherapee**: this application must be installed on your computer. `RawTherapee <https://en.wikipedia.org/wiki/Darktable>`_ is application software for processing photographs in the RAW image formats created by many digital cameras. It comprises a subset of image editing operations specifically aimed at non-destructive post-production of raw photos and is primarily focused on improving a photographer's workflow by facilitating the handling of large numbers of images.
+    - **RawTherapee**: this application must be installed on your computer. `RawTherapee <https://en.wikipedia.org/wiki/RawTherapee>`_ is application software for processing photographs in the RAW image formats created by many digital cameras. It comprises a subset of image editing operations specifically aimed at non-destructive post-production of raw photos and is primarily focused on improving a photographer's workflow by facilitating the handling of large numbers of images.
+
+    - **ART**: this application must be installed on your computer. `ART <https://art.pixls.us/>`_ is a derivative version of the RawTherapee application.
 
     - **UFRaw**: this application must be installed on your computer. `UFRaw <https://en.wikipedia.org/wiki/UFRaw>`_ is an application which can read and manipulate photographs in the RAW image formats created by many digital cameras.
 
