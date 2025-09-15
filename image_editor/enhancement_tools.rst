@@ -981,8 +981,8 @@ The target images can be visualized in image editor after closing the wizard dia
 
 .. _enhance_backgroundblur:
 
-Background Blur Tool
---------------------
+Background Blur
+---------------
 
 Overview
 ~~~~~~~~
