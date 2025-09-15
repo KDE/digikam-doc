@@ -1005,9 +1005,10 @@ Features
 Accessing the Tool
 ~~~~~~~~~~~~~~~~~~
 
-1. Open an image in the digiKam editor
-2. Select :menuselection:`Tools --> Enhance --> Background Blur`
-3. The tool interface will appear in the right sidebar
+1. Open an image in the digiKam editor.
+2. From the canvas, select a rectangle area around the subject.
+2. Select :menuselection:`Enhance --> Background Blur`.
+3. The tool interface will appear in the right sidebar.
 
 Tool Interface
 ~~~~~~~~~~~~~~
@@ -1020,22 +1021,22 @@ Tool Interface
 
 The Tool interface consists of:
 
-1. **Selection Controls**: use your mouse to draw a rectangle around the subject you want to keep sharp. The selected area will be protected from blurring.
+1. **Selection Controls**: before to lauch the tool, use your mouse over the editor canvas to draw a rectangle around the subject you want to keep sharp. The selected area will be protected from blurring.
 
-2. **Blur Controls**: **Radius** controls the intensity of the background blur (1-100). **Transition** controls how gradually the blur transitions from subject to background (0-100). **Iterations** controls the accuracy of the subject segmentation (1-20).
+2. **Blur Controls**: **Smoothness** controls the intensity of the background blur (1-100). **Progressive Transition** controls how gradually the blur transitions from subject to background (0-100). **Subject Segmentation** controls the accuracy of the subject segmentation (1-20).
 
-3. **Preview Area**: shows a real-time preview of the segmentation mask using a green overlay. It helps you verify that the subject is properly selected.
+3. **Subject Mask**: shows a real-time preview of the segmentation mask using a green overlay. It helps you verify that the subject is properly selected. This preview is zoomable using mouse wheel or the buttons on the toolbar from the top-left corner.
 
 Using the Tool
 ~~~~~~~~~~~~~~
 
 1. **Select the Subject**: click and drag to draw a rectangle around your subject. The tool will automatically create a segmentation mask.
 
-2. **Adjust the Blur**: use the **Radius** slider to control the blur intensity. Higher values create a stronger blur effect. Typical values range from 5 to 20 for most images.
+2. **Adjust the Blur**: use the **Smoothness** slider to control the blur intensity. Higher values create a stronger blur effect. Typical values range from 5 to 20 for most images.
 
-3. **Adjust the Transition**: use the **Transition** slider to control how gradually the blur fades in. Lower values create a sharper transition between subject and background. Higher values create a more gradual transition.
+3. **Adjust the Transition**: use the **Progressive Transition** slider to control how gradually the blur fades in. Lower values create a sharper transition between subject and background. Higher values create a more gradual transition.
 
-4. **Refine the Segmentation**: use the **Iterations** slider to improve the accuracy of the subject detection. Higher values (10-20) work better for complex subjects like hair or fur. Lower values (1-5) are sufficient for simple subjects with clear edges.
+4. **Refine the Segmentation**: use the **Subject Segmentation** slider to improve the accuracy of the subject detection and isolation. Higher values (10-20) work better for complex subjects like hair or fur. Lower values (1-5) are sufficient for simple subjects with clear edges.
 
 5. **Preview the Result**: the green overlay shows which areas will remain sharp. Adjust your selection or parameters as needed.
 
@@ -1050,11 +1051,11 @@ Parameters
 
    * - Parameter
      - Description
-   * - Radius
+   * - Smoothness
      - Controls the strength of the background blur. Higher values create more pronounced blur effects.
-   * - Transition
+   * - Progressive Transition
      - Controls how gradually the blur transitions from the subject to the background. Higher values create a more natural, gradual transition.
-   * - Iterations
+   * - Subject Segmentation
      - Controls the accuracy of the subject segmentation algorithm. Higher values provide better results for complex subjects but require more processing time.
 
 Tips for Best Results
@@ -1062,24 +1063,24 @@ Tips for Best Results
 
 1. **Subject Selection**: include a small margin around your subject in the selection. For complex subjects (like hair), use higher Iterations values (15-20). For simple subjects with clear edges, lower Iterations values (5-10) are sufficient.
 
-2. **Blur Settings**: start with a moderate Radius (around 10) and adjust as needed. Use higher Transition values (50-80) for more natural-looking results. For portraits, try to keep some sharpness in the edges of the subject.
+2. **Blur Settings**: start with a moderate Smoothness (around 10) and adjust as needed. Use higher Transition values (50-80) for more natural-looking results. For portraits, try to keep some sharpness in the edges of the subject.
 
 3. **Image Types**: works best with images that have clear separation between subject and background. For busy backgrounds, use higher Radius values to create more separation. For portraits, position the selection to include all of the person's hair.
 
-4. **Performance**: higher Iterations values require more processing time. For large images, you may need to be patient while the tool processes.
+4. **Performance**: higher iteration values for the subject segmentation require more processing time. For large images, you may need to be patient while the tool processes.
 
 Technical Details
 ~~~~~~~~~~~~~~~~~
 
 The Background Blur tool uses the following processing pipeline:
 
-1. **Subject Segmentation**: uses OpenCV's GrabCut algorithm to separate the subject from the background. The number of iterations can be adjusted for better accuracy with complex subjects.
+1. **Subject Isolation**: uses OpenCV's GrabCut algorithm to separate the subject from the background. The number of iterations can be adjusted for better accuracy with complex subjects using the **Subject Segmentation** parameter.
 
-2. **Mask Refinement**: applies morphological operations to smooth the segmentation mask. Optionally dilates the mask to include more of the subject.
+2. **Mask Refinement**: to smooth the segmentation mask, you can optionally dilates the mask to include more of the subject.
 
-3. **Background Blurring**: applies Gaussian blur to the background while preserving the subject. Uses a distance transform to create smooth transitions between blurred and sharp areas.
+3. **Background Blurring**: applies Gaussian blur to the background while preserving the subject. Uses a distance transform to create smooth transitions between blurred and sharp areas. The blur effect is controlled by the **Smoothness** parameter.
 
-4. **Progressive Blur**: creates a gradual transition from sharp to blurred areas. The transition effect is controlled by the Transition parameter.
+4. **Progressive Blur**: creates a gradual transition from sharp to blurred areas. The transition effect is controlled by the **Progressive Transition** parameter.
 
 Limitations
 ~~~~~~~~~~~
