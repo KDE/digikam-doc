@@ -1097,13 +1097,13 @@ Examples
    :alt: Original Image
    :width: 45%
 
-   Original image
+   Original image with Subject Selection over the Canvas
 
 .. figure:: images/backgroundblur_after.webp
    :alt: After Background Blur
    :width: 45%
 
-   After applying Background Blur (Radius: 15, Transition: 60, Iterations: 15)
+   After applying Background Blur (Smothness: 85, Progresive Transition: 60, Subject Segmentation: 11)
 
 Advanced Usage
 ~~~~~~~~~~~~~~
