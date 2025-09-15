@@ -1013,7 +1013,7 @@ Accessing the Tool
 Tool Interface
 ~~~~~~~~~~~~~~
 
-.. figure:: images/backgroundblur_interface.webp
+.. figure:: images/editor_backgroundblur_interface.webp
    :alt: Background Blur Interface
    :align: center
 
@@ -1096,13 +1096,13 @@ Limitations
 Examples
 ~~~~~~~~
 
-.. figure:: images/backgroundblur_before.webp
+.. figure:: images/editor_backgroundblur_before.webp
    :alt: Original Image
    :width: 45%
 
    Original image with Subject Selection over the Canvas
 
-.. figure:: images/backgroundblur_after.webp
+.. figure:: images/editor_backgroundblur_after.webp
    :alt: After Background Blur
    :width: 45%
 
