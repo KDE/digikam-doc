@@ -1086,8 +1086,11 @@ Limitations
 ~~~~~~~~~~~
 
 - The tool works best when there's clear contrast between the subject and background.
+
 - Complex backgrounds with similar colors to the subject may require manual adjustments.
+
 - Very fine details (like individual hair strands) may not be perfectly preserved.
+
 - The preview shows an approximation of the final result.
 
 Examples
@@ -1117,13 +1120,13 @@ For more control over the effect:
 Troubleshooting
 ~~~~~~~~~~~~~~~
 
-- **Subject not properly detected**: try increasing the Iterations value. Make sure your selection includes all of the subject. For complex subjects, you may need to manually adjust the selection.
+- **Subject not properly detected**: try increasing the Subject Segmentation value. Make sure your selection includes all of the subject. For complex subjects, you may need to manually adjust the selection.
 
-- **Blur effect too strong/weak**: adjust the Radius parameter. For subtle effects, use lower Radius values (3-8).
+- **Blur effect too strong/weak**: adjust the Smoothness parameter. For subtle effects, use lower values (3-8).
 
-- **Unnatural transition**: increase the Transition value for smoother transitions. Try adjusting your selection to better isolate the subject.
+- **Unnatural transition**: increase the Progressive Transition value for smoother effect. Try adjusting your selection to better isolate the subject.
 
-- **Performance issues**: reduce the Iterations value for faster processing. Work on a copy of your image if processing is slow.
+- **Performance issues**: reduce the Subject Segmentation value for faster processing. This tool also consumes a lot of memory with large images.
 
 See Also
 ~~~~~~~~
