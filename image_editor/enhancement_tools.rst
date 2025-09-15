@@ -1012,11 +1012,13 @@ Accessing the Tool
 Tool Interface
 ~~~~~~~~~~~~~~
 
-.. image:: images/backgroundblur_interface.webp
+.. figure:: images/backgroundblur_interface.webp
    :alt: Background Blur Interface
    :align: center
 
-The Background Blur interface consists of:
+   Background Blur Interface
+
+The Tool interface consists of:
 
 1. **Selection Controls**:
    - Use your mouse to draw a rectangle around the subject you want to keep sharp.
@@ -1129,7 +1131,7 @@ Limitations
 - The preview shows an approximation of the final result.
 
 Examples
---------
+~~~~~~~~
 
 .. figure:: images/backgroundblur_before.webp
    :alt: Original Image
@@ -1157,7 +1159,7 @@ For more control over the effect:
    - Combine with the Vignetting tool to further emphasize the subject.
 
 Troubleshooting
----------------
+~~~~~~~~~~~~~~~
 
 - **Subject not properly detected**:
   - Try increasing the Iterations value.
@@ -1177,7 +1179,7 @@ Troubleshooting
   - Work on a copy of your image if processing is slow.
 
 See Also
---------
+~~~~~~~~
 
 - :doc:`localcontrast`
 - :doc:`sharpen`
