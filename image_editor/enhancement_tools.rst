@@ -1007,8 +1007,8 @@ Accessing the Tool
 
 1. Open an image in the digiKam editor.
 2. From the canvas, select a rectangle area around the subject.
-2. Select :menuselection:`Enhance --> Background Blur`.
-3. The tool interface will appear in the right sidebar.
+3. Select :menuselection:`Enhance --> Background Blur`.
+4. The tool interface will appear in the right sidebar.
 
 Tool Interface
 ~~~~~~~~~~~~~~
