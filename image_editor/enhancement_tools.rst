@@ -977,3 +977,208 @@ The target images can be visualized in image editor after closing the wizard dia
         :align: center
 
         The G'MIC-Qt Layers Tool Available from Album Icon-View
+
+
+.. _enhance_backgroundblur:
+
+Background Blur Editor Tool
+---------------------------
+
+Overview
+~~~~~~~~
+
+The Background Blur tool allows you to create a depth-of-field effect by blurring the background of an image while keeping the subject sharp. This effect is particularly useful for portrait photography, product photography, or any situation where you want to emphasize the subject by reducing distractions in the background.
+
+The tool uses a combination of GrabCut segmentation and Gaussian blur to create a professional-looking depth-of-field effect. You can control the intensity of the blur and the transition between the sharp subject and the blurred background.
+
+Features
+~~~~~~~~
+
+- Interactive subject selection using a rectangular marquee.
+- Adjustable blur radius for controlling the intensity of the background blur.
+- Progressive blur transition for natural-looking results.
+- Adjustable number of GrabCut iterations for better segmentation accuracy.
+- Real-time preview of the segmentation mask.
+- Support for both 8-bit and 16-bit images.
+- Non-destructive editing.
+
+Accessing the Tool
+~~~~~~~~~~~~~~~~~~
+
+1. Open an image in the digiKam editor
+2. Select :menuselection:`Tools --> Enhance --> Background Blur`
+3. The tool interface will appear in the right sidebar
+
+Tool Interface
+~~~~~~~~~~~~~~
+
+.. image:: images/backgroundblur_interface.webp
+   :alt: Background Blur Interface
+   :align: center
+
+The Background Blur interface consists of:
+
+1. **Selection Controls**:
+   - Use your mouse to draw a rectangle around the subject you want to keep sharp.
+   - The selected area will be protected from blurring.
+
+2. **Blur Controls**:
+   - **Radius**: Controls the intensity of the background blur (1-100).
+   - **Transition**: Controls how gradually the blur transitions from subject to background (0-100).
+   - **Iterations**: Controls the accuracy of the subject segmentation (1-20).
+
+3. **Preview Area**:
+   - Shows a real-time preview of the segmentation mask (green overlay).
+   - Helps you verify that the subject is properly selected.
+
+Using the Tool
+~~~~~~~~~~~~~~
+
+1. **Select the Subject**:
+   - Click and drag to draw a rectangle around your subject.
+   - The tool will automatically create a segmentation mask.
+
+2. **Adjust the Blur**:
+   - Use the **Radius** slider to control the blur intensity.
+   - Higher values create a stronger blur effect.
+   - Typical values range from 5 to 20 for most images.
+
+3. **Adjust the Transition**:
+   - Use the **Transition** slider to control how gradually the blur fades in.
+   - Lower values create a sharper transition between subject and background.
+   - Higher values create a more gradual transition.
+
+4. **Refine the Segmentation**:
+   - Use the **Iterations** slider to improve the accuracy of the subject detection.
+   - Higher values (10-20) work better for complex subjects like hair or fur.
+   - Lower values (1-5) are sufficient for simple subjects with clear edges.
+
+5. **Preview the Result**:
+   - The green overlay shows which areas will remain sharp.
+   - Adjust your selection or parameters as needed.
+
+6. **Apply the Effect**:
+   - Click **OK** to apply the effect to your image.
+   - Click **Cancel** to discard your changes.
+
+Parameters
+~~~~~~~~~~
+
+.. list-table::
+   :widths: 20 80
+   :header-rows: 1
+
+   * - Parameter
+     - Description
+   * - Radius
+     - Controls the strength of the background blur. Higher values create more pronounced blur effects.
+   * - Transition
+     - Controls how gradually the blur transitions from the subject to the background. Higher values create a more natural, gradual transition.
+   * - Iterations
+     - Controls the accuracy of the subject segmentation algorithm. Higher values provide better results for complex subjects but require more processing time.
+
+Tips for Best Results
+~~~~~~~~~~~~~~~~~~~~~
+
+1. **Subject Selection**:
+   - Include a small margin around your subject in the selection.
+   - For complex subjects (like hair), use higher Iterations values (15-20).
+   - For simple subjects with clear edges, lower Iterations values (5-10) are sufficient.
+
+2. **Blur Settings**:
+   - Start with a moderate Radius (around 10) and adjust as needed.
+   - Use higher Transition values (50-80) for more natural-looking results.
+   - For portraits, try to keep some sharpness in the edges of the subject.
+
+3. **Image Types**:
+   - Works best with images that have clear separation between subject and background.
+   - For busy backgrounds, use higher Radius values to create more separation.
+   - For portraits, position the selection to include all of the person's hair.
+
+4. **Performance**:
+   - Higher Iterations values require more processing time.
+   - For large images, you may need to be patient while the tool processes.
+
+Technical Details
+~~~~~~~~~~~~~~~~~
+
+The Background Blur tool uses the following processing pipeline:
+
+1. **Subject Segmentation**:
+   - Uses OpenCV's GrabCut algorithm to separate the subject from the background.
+   - The number of iterations can be adjusted for better accuracy with complex subjects.
+
+2. **Mask Refinement**:
+   - Applies morphological operations to smooth the segmentation mask.
+   - Optionally dilates the mask to include more of the subject.
+
+3. **Background Blurring**:
+   - Applies Gaussian blur to the background while preserving the subject.
+   - Uses a distance transform to create smooth transitions between blurred and sharp areas.
+
+4. **Progressive Blur**:
+   - Creates a gradual transition from sharp to blurred areas.
+   - The transition effect is controlled by the Transition parameter.
+
+Limitations
+~~~~~~~~~~~
+
+- The tool works best when there's clear contrast between the subject and background.
+- Complex backgrounds with similar colors to the subject may require manual adjustments.
+- Very fine details (like individual hair strands) may not be perfectly preserved.
+- The preview shows an approximation of the final result.
+
+Examples
+--------
+
+.. figure:: images/backgroundblur_before.webp
+   :alt: Original Image
+   :width: 45%
+
+   Original image
+
+.. figure:: images/backgroundblur_after.webp
+   :alt: After Background Blur
+   :width: 45%
+
+   After applying Background Blur (Radius: 15, Transition: 60, Iterations: 15)
+
+Advanced Usage
+~~~~~~~~~~~~~~
+
+For more control over the effect:
+
+1. **Multiple Applications**:
+   - You can apply the tool multiple times with different settings.
+   - Use lower Radius values for subtle effects, higher values for dramatic effects.
+
+2. **Combining with Other Tools**:
+   - Use with the Local Contrast tool to enhance the subject after blurring the background.
+   - Combine with the Vignetting tool to further emphasize the subject.
+
+Troubleshooting
+---------------
+
+- **Subject not properly detected**:
+  - Try increasing the Iterations value.
+  - Make sure your selection includes all of the subject.
+  - For complex subjects, you may need to manually adjust the selection.
+
+- **Blur effect too strong/weak**:
+  - Adjust the Radius parameter.
+  - For subtle effects, use lower Radius values (3-8).
+
+- **Unnatural transition**:
+  - Increase the Transition value for smoother transitions.
+  - Try adjusting your selection to better isolate the subject.
+
+- **Performance issues**:
+  - Reduce the Iterations value for faster processing.
+  - Work on a copy of your image if processing is slow.
+
+See Also
+--------
+
+- :doc:`localcontrast`
+- :doc:`sharpen`
+- :doc:`vignetting`
