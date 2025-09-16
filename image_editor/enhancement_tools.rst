@@ -989,7 +989,7 @@ Overview
 
 The Background Blur tool allows you to create a depth-of-field effect by blurring the background of an image while keeping the subject sharp. This effect is particularly useful for portrait photography, product photography, or any situation where you want to emphasize the subject by reducing distractions in the background.
 
-The tool uses a combination of GrabCut segmentation and Gaussian blur to create a professional-looking depth-of-field effect. You can control the intensity of the blur and the transition between the sharp subject and the blurred background.
+The tool uses a combination of `GrabCut Segmentation <https://en.wikipedia.org/wiki/GrabCut>`_ and `Gaussian Blur <https://en.wikipedia.org/wiki/Gaussian_blur>`_ to create a professional-looking depth-of-field effect. You can control the intensity of the blur and the transition between the sharp subject and the blurred background.
 
 Features
 ~~~~~~~~
@@ -1006,8 +1006,11 @@ Accessing the Tool
 ~~~~~~~~~~~~~~~~~~
 
 1. Open an image in the digiKam editor.
+
 2. From the canvas, select a rectangle area around the subject.
+
 3. Select :menuselection:`Enhance --> Background Blur`.
+
 4. The tool interface will appear in the right sidebar.
 
 Tool Interface
@@ -1067,7 +1070,7 @@ Tips for Best Results
 
 3. **Image Types**: works best with images that have clear separation between subject and background. For busy backgrounds, use higher **Smoothness** values to create more separation. For portraits, position the selection to include all of the person's hair.
 
-4. **Performance**: higher iteration values for the subject segmentation require more processing time. For large images, you may need to be patient while the tool processes.
+4. **Performance**: higher iteration values for the **Subject Segmentation** require more processing time. For large images, you may need to be patient while the tool processes.
 
 Technical Details
 ~~~~~~~~~~~~~~~~~
