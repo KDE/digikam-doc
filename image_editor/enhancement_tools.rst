@@ -1024,11 +1024,11 @@ Tool Interface
 
 The Tool interface consists of:
 
-1. **Selection Controls**: before to lauch the tool, use your mouse over the editor canvas to draw a rectangle around the subject you want to keep sharp. The selected area will be protected from blurring.
+1. **Selection Controls**: before launching the tool, use your mouse over the editor canvas to draw a rectangle around the subject you want to keep sharp. The selected area will be protected from blurring.
 
 2. **Blur Controls**: **Smoothness** controls the intensity of the background blur (1-100). **Progressive Transition** controls how gradually the blur transitions from subject to background (0-100). **Subject Segmentation** controls the accuracy of the subject segmentation (1-20).
 
-3. **Subject Mask**: shows a real-time preview of the segmentation mask using a green overlay. It helps you verify that the subject is properly selected. This preview is zoomable using mouse wheel or the buttons on the toolbar from the top-left corner.
+3. **Subject Mask**: shows a real-time preview of the segmentation mask using a green overlay. It helps you verify that the subject is properly selected. This preview is zoomable using the mouse wheel or the buttons on the toolbar from the top-left corner.
 
 Using the Tool
 ~~~~~~~~~~~~~~
@@ -1088,7 +1088,7 @@ The Background Blur tool uses the following processing pipeline:
 Limitations
 ~~~~~~~~~~~
 
-- The tool works best when there's clear contrast between the subject and background.
+- The tool works best when there's a clear contrast between the subject and background.
 
 - Complex backgrounds with similar colors to the subject may require manual adjustments.
 
@@ -1109,7 +1109,7 @@ Examples
    :alt: After Background Blur
    :width: 45%
 
-   After applying Background Blur (Smothness: 85, Progresive Transition: 60, Subject Segmentation: 11)
+   After applying Background Blur (Smouthness: 85, Progressive Transition: 60, Subject Segmentation: 11)
 
 Advanced Usage
 ~~~~~~~~~~~~~~
@@ -1129,7 +1129,7 @@ Troubleshooting
 
 - **Unnatural transition**: increase the **Progressive Transition** value for smoother effect. Try adjusting your selection to better isolate the subject.
 
-- **Performance issues**: reduce the **Subject Segmentation** value for faster processing. Note aloso that tool consumes a lot of memory to work with large images.
+- **Performance issues**: reduce the **Subject Segmentation** value for faster processing. Note also that the tool consumes a lot of memory to work with large images.
 
 See Also
 ~~~~~~~~
