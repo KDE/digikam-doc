@@ -987,7 +987,7 @@ Background Blur
 Overview
 ~~~~~~~~
 
-The Background Blur tool allows you to create a depth-of-field effect by blurring the background of an image while keeping the subject sharp. This effect is particularly useful for portrait photography, product photography, or any situation where you want to emphasize the subject by reducing distractions in the background.
+The Background Blur tool allows you to create a `depth-of-field effect <https://en.wikipedia.org/wiki/Depth_of_field>`_ by blurring the background of an image while keeping the subject sharp. This effect is particularly useful for portrait photography, product photography, or any situation where you want to emphasize the subject by reducing distractions in the background.
 
 The tool uses a combination of `GrabCut Segmentation <https://en.wikipedia.org/wiki/GrabCut>`_ and `Gaussian Blur <https://en.wikipedia.org/wiki/Gaussian_blur>`_ to create a professional-looking depth-of-field effect. You can control the intensity of the blur and the transition between the sharp subject and the blurred background.
 
