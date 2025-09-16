@@ -1113,9 +1113,9 @@ Advanced Usage
 
 For more control over the effect:
 
-1. **Multiple Applications**: you can apply the tool multiple times with different settings. Use lower Radius values for subtle effects, higher values for dramatic effects.
+1. **Multiple Applications**: you can apply the tool multiple times with different settings. Use lower **Smoothness** values for subtle effects, higher values for dramatic effects.
 
-2. **Combining with Other Tools**: use with the Local Contrast tool to enhance the subject after blurring the background. Combine with the Vignetting tool to further emphasize the subject.
+2. **Combining with Other Tools**: use with the :ref:`Local Contrast <enhance_localcontrast>` tool to enhance the subject after blurring the background. Combine with the :ref:`Vignetting Correction <enhance_vignetting>` tool to further emphasize the subject.
 
 Troubleshooting
 ~~~~~~~~~~~~~~~
@@ -1131,6 +1131,6 @@ Troubleshooting
 See Also
 ~~~~~~~~
 
-- :doc:`localcontrast`
-- :doc:`sharpen`
-- :doc:`vignetting`
+- :ref:`Local Contrast <enhance_localcontrast>`
+- :ref:`Sharpen (sharpen, unsharp mask, refocus) <enhance_sharpen>`
+- :ref:`Vignetting Correction <enhance_vignetting>`
