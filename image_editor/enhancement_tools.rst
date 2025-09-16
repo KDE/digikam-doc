@@ -997,7 +997,7 @@ Features
 - Interactive subject selection using a rectangular marquee.
 - Adjustable blur radius for controlling the intensity of the background blur.
 - Progressive blur transition for natural-looking results.
-- Adjustable number of GrabCut iterations for better segmentation accuracy.
+- Adjustable number of segmentation iterations for better subject isolation accuracy.
 - Real-time preview of the segmentation mask.
 - Support for both 8-bit and 16-bit images.
 - Non-destructive editing.
@@ -1063,9 +1063,9 @@ Tips for Best Results
 
 1. **Subject Selection**: include a small margin around your subject in the selection. For complex subjects (like hair), use higher Iterations values (15-20). For simple subjects with clear edges, lower Iterations values (5-10) are sufficient.
 
-2. **Blur Settings**: start with a moderate Smoothness (around 10) and adjust as needed. Use higher Transition values (50-80) for more natural-looking results. For portraits, try to keep some sharpness in the edges of the subject.
+2. **Blur Settings**: start with a moderate **Smoothness** (around 10) and adjust as needed. Use higher **Progressive Transition** values (50-80) for more natural-looking results. For portraits, try to keep some sharpness in the edges of the subject.
 
-3. **Image Types**: works best with images that have clear separation between subject and background. For busy backgrounds, use higher Radius values to create more separation. For portraits, position the selection to include all of the person's hair.
+3. **Image Types**: works best with images that have clear separation between subject and background. For busy backgrounds, use higher **Smoothness** values to create more separation. For portraits, position the selection to include all of the person's hair.
 
 4. **Performance**: higher iteration values for the subject segmentation require more processing time. For large images, you may need to be patient while the tool processes.
 
@@ -1120,13 +1120,13 @@ For more control over the effect:
 Troubleshooting
 ~~~~~~~~~~~~~~~
 
-- **Subject not properly detected**: try increasing the Subject Segmentation value. Make sure your selection includes all of the subject. For complex subjects, you may need to manually adjust the selection.
+- **Subject not properly detected**: try increasing the **Subject Segmentation** value. Make sure your selection includes all of the subject. For complex subjects, you may need to manually adjust the selection.
 
-- **Blur effect too strong/weak**: adjust the Smoothness parameter. For subtle effects, use lower values (3-8).
+- **Blur effect too strong/weak**: adjust the **Smoothness** parameter. For subtle effects, use lower values (3-8).
 
-- **Unnatural transition**: increase the Progressive Transition value for smoother effect. Try adjusting your selection to better isolate the subject.
+- **Unnatural transition**: increase the **Progressive Transition** value for smoother effect. Try adjusting your selection to better isolate the subject.
 
-- **Performance issues**: reduce the Subject Segmentation value for faster processing. This tool also consumes a lot of memory with large images.
+- **Performance issues**: reduce the **Subject Segmentation** value for faster processing. Note aloso that tool consumes a lot of memory to work with large images.
 
 See Also
 ~~~~~~~~
