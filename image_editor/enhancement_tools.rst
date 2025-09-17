@@ -1017,7 +1017,7 @@ Tool Interface
 ~~~~~~~~~~~~~~
 
 .. figure:: images/editor_backgroundblur_interface.webp
-   :alt: Background Blur Interface
+   :alt:
    :align: center
 
    Background Blur Interface
@@ -1100,14 +1100,14 @@ Examples
 ~~~~~~~~
 
 .. figure:: images/editor_backgroundblur_before.webp
-   :alt: Original Image
-   :width: 45%
+   :alt;
+   :align: center
 
    Original image with Subject Selection over the Canvas
 
 .. figure:: images/editor_backgroundblur_after.webp
-   :alt: After Background Blur
-   :width: 45%
+   :alt:
+   :align: center
 
    After applying Background Blur (Smothness: 85, Progresive Transition: 60, Subject Segmentation: 11)
 
