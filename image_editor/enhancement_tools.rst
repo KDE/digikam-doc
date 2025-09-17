@@ -1100,7 +1100,7 @@ Examples
 ~~~~~~~~
 
 .. figure:: images/editor_backgroundblur_before.webp
-   :alt;
+   :alt:
    :align: center
 
    Original image with Subject Selection over the Canvas
