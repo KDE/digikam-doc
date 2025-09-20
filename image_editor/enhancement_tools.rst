@@ -1028,7 +1028,7 @@ The Tool interface consists of:
 
 2. **Blur Controls**: **Smoothness** controls the intensity of the background blur (1-100). **Progressive Transition** controls how gradually the blur transitions from subject to background (0-100). **Subject Segmentation** controls the accuracy of the subject segmentation (1-20).
 
-3. **Subject Mask**: shows a real-time preview of the segmentation mask using a green overlay. It helps you verify that the subject is properly selected. This preview is zoomable using the mouse wheel or the buttons on the toolbar from the top-left corner.
+3. **Subject Mask**: shows a real-time preview of the segmentation mask using a green overlay. It helps you verify that the subject is properly selected. This preview is zoomable using the mouse wheel or the buttons on the toolbar from the top-left corner, and allow to re-adjust the zone as desired.
 
 Using the Tool
 ~~~~~~~~~~~~~~
@@ -1041,9 +1041,17 @@ Using the Tool
 
 4. **Refine the Segmentation**: use the **Subject Segmentation** slider to improve the accuracy of the subject detection and isolation. Higher values (10-20) work better for complex subjects like hair or fur. Lower values (1-5) are sufficient for simple subjects with clear edges.
 
-5. **Preview the Result**: the green overlay shows which areas will remain sharp. Adjust your selection or parameters as needed.
+5. **Adjust the subject area**: use the **Subject Mask** preview widget functionalities to zoom / pan the preview canvas and adjust the desired zone surrounding the subject.
 
-6. **Apply the Effect**: click **OK** to apply the effect to your image. Click **Cancel** to discard your changes.
+6. **Preview the Result**: the green overlay shows which areas will remain sharp. Adjust your selection or parameters as needed.
+
+7. **Apply the Effect**: click **OK** to apply the effect to your image. Click **Cancel** to discard your changes.
+
+.. figure:: images/editor_backgroundblur_mask.webp
+   :alt:
+   :align: center
+
+   The Mask View Allow to Edit the Rectangle Surrounding the Subject.
 
 Parameters
 ~~~~~~~~~~
