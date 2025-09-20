@@ -4,13 +4,13 @@
 # This file is distributed under the same license as the digiKam Manual package.
 #
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2023.
-# Josep M. Ferrer <txemaq@gmail.com>, 2024, 2025.
+# SPDX-FileCopyrightText: 2024, 2025 Josep M. Ferrer <txemaq@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: digikam-doc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-16 01:59+0000\n"
-"PO-Revision-Date: 2025-06-27 23:08+0200\n"
+"POT-Creation-Date: 2025-09-18 01:56+0000\n"
+"PO-Revision-Date: 2025-09-17 10:18+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #: ../../image_editor/enhancement_tools.rst:-1
 msgid "digiKam Image Editor Enhancement Tools"
@@ -473,7 +473,7 @@ msgstr ""
 "fons que distreu a la gent o per un defecte en la composició. Tot i que la "
 "majoria de les vegades voldreu eliminar el vinyetatge, és un fet que el "
 "vinyetatge selectiu pot millorar l'aparença d'una fotografia, atraient els "
-"ulls cap al tema previst. Com a artista podreu triar aquesta opció. Marcant "
+"ulls cap al motiu previst. Com a artista podreu triar aquesta opció. Marcant "
 "la casella s'invertirà el filtre, per tant, enfosquint les cantonades d'una "
 "fotografia."
 
@@ -909,8 +909,8 @@ msgstr ""
 "diverses preses amb exposicions diferents. L'eina :ref:`Fusiona les imatges "
 "apilades <expo_blending>` es pot utilitzar per a combinar les imatges en una "
 "imatge HDR. Això funciona molt bé, però té alguna limitació. Per exemple, "
-"l'enfocament només funciona amb temes estàtics. Però, i si voleu un efecte "
-"HDR d'una sola imatge, incloent-hi imatges preses de temes dinàmics?"
+"l'enfocament només funciona amb motius estàtics. Però, i si voleu un efecte "
+"HDR d'una sola imatge, incloent-hi imatges preses de motius dinàmics?"
 
 # skip-rule: t-acc_obe
 #: ../../image_editor/enhancement_tools.rst:265
@@ -1093,13 +1093,13 @@ msgid ""
 "and blur is very small. Adjust it as carefully as you would adjust the focus "
 "of a camera."
 msgstr ""
-"**Suavitat**: utilitzeu el control lliscant per a un ajust aproximat i el "
-"control de gir per a un ajust fi. La suavitat ajusta el nivell de llindar "
-"(llindar suau en oposició al llindar fort). Com més gran sigui la suavitat, "
-"més soroll romandrà en la imatge. Aquests ajusts existeixen per als canals "
-"de la **Luminància**, el **Blau de crominància** i el **Vermell de "
+"**Suavitzat**: utilitzeu el control lliscant per a un ajust aproximat i el "
+"control de gir per a un ajust fi. El suavitzat ajusta el nivell del llindar "
+"(llindar suau en oposició al llindar fort). Com més gran sigui el suavitzat, "
+"més soroll romandrà a la imatge. Aquests ajusts existeixen per als canals de "
+"la **Luminància**, el **Blau de crominància** i el **Vermell de "
 "crominància**. Senzillament ajusteu-lo i premeu el botó Prova per a veure el "
-"resultat. Pel que fa a la configuració del Llindar, l'ajust s'ha de fer amb "
+"resultat. Pel que fa a la configuració del llindar, l'ajust s'ha de fer amb "
 "cura, perquè la separació entre sorollós, suau i difuminat és molt petita. "
 "Ajudeu-lo amb la mateixa cura amb què ajustaríeu l'enfocament d'una càmera."
 
@@ -1151,7 +1151,7 @@ msgstr ""
 "és difuminar-la una mica: per sort, difuminar una imatge és molt més fàcil "
 "que aguditzar-la. Seleccioneu l'**eina de difuminat** amb l'element de menú :"
 "menuselection:`Millora --> Difuminat` i experimenteu amb el nivell de "
-"suavitat. La finestra de vista prèvia mostrarà l'efecte de l'operació a la "
+"suavitzat. La finestra de vista prèvia mostrarà l'efecte de l'operació a la "
 "fotografia."
 
 #: ../../image_editor/enhancement_tools.rst:327
@@ -1647,7 +1647,7 @@ msgstr ""
 "provar. Augmentant el **Radi** o la **Quantitat** s'incrementarà la "
 "intensitat de l'efecte. No us deixeu dur: si feu massa forta la màscara de "
 "desenfocament, s'amplificarà el soroll en la imatge i es crearà la impressió "
-"de crestes al costat de vores afilades."
+"de crestes al costat de vores nítides."
 
 #: ../../image_editor/enhancement_tools.rst:475
 msgid ""
@@ -3041,393 +3041,500 @@ msgstr "L'eina G'MIC-Qt de capes disponible des de la vista d'icones d'àlbum"
 
 #: ../../image_editor/enhancement_tools.rst:985
 msgid "Background Blur"
-msgstr ""
+msgstr "Difuminat del fons"
 
+# skip-rule: t-acc_obe
 #: ../../image_editor/enhancement_tools.rst:990
 msgid ""
-"The Background Blur tool allows you to create a depth-of-field effect by "
-"blurring the background of an image while keeping the subject sharp. This "
-"effect is particularly useful for portrait photography, product photography, "
-"or any situation where you want to emphasize the subject by reducing "
-"distractions in the background."
+"The Background Blur tool allows you to create a `depth-of-field effect "
+"<https://en.wikipedia.org/wiki/Depth_of_field>`_ by blurring the background "
+"of an image while keeping the subject sharp. This effect is particularly "
+"useful for portrait photography, product photography, or any situation where "
+"you want to emphasize the subject by reducing distractions in the background."
 msgstr ""
+"L'eina de difuminat del fons permet crear un `efecte de profunditat de camp "
+"<https://en.wikipedia.org/wiki/Depth_of_field>`_ difuminant el fons d'una "
+"imatge mentre es manté el motiu nítid. Aquest efecte és particularment útil "
+"per a la fotografia de retrats, la fotografia de productes, o qualsevol "
+"situació en la qual es vulgui emfatitzar el motiu mitjançant la reducció de "
+"les distraccions en el fons."
 
+# skip-rule: t-acc_obe
 #: ../../image_editor/enhancement_tools.rst:992
 msgid ""
-"The tool uses a combination of GrabCut segmentation and Gaussian blur to "
-"create a professional-looking depth-of-field effect. You can control the "
-"intensity of the blur and the transition between the sharp subject and the "
-"blurred background."
+"The tool uses a combination of `GrabCut Segmentation <https://en.wikipedia."
+"org/wiki/GrabCut>`_ and `Gaussian Blur <https://en.wikipedia.org/wiki/"
+"Gaussian_blur>`_ to create a professional-looking depth-of-field effect. You "
+"can control the intensity of the blur and the transition between the sharp "
+"subject and the blurred background."
 msgstr ""
+"L'eina utilitza una combinació de `segmentació GrabCut <https://en.wikipedia."
+"org/wiki/GrabCut>`_ i `difuminat gaussià <https://en.wikipedia.org/wiki/"
+"Gaussian_blur>`_ per a crear un efecte de profunditat de camp d'aspecte "
+"professional. Podeu controlar la intensitat del difuminat i la transició "
+"entre el motiu definit i el fons difuminat."
 
 #: ../../image_editor/enhancement_tools.rst:997
 msgid "Interactive subject selection using a rectangular marquee."
-msgstr ""
+msgstr "Selecció interactiva de motius utilitzant una estructura rectangular."
 
 #: ../../image_editor/enhancement_tools.rst:998
 msgid ""
 "Adjustable blur radius for controlling the intensity of the background blur."
 msgstr ""
+"Radi de difuminat ajustable per a controlar la intensitat del difuminat del "
+"fons."
 
 #: ../../image_editor/enhancement_tools.rst:999
 msgid "Progressive blur transition for natural-looking results."
 msgstr ""
+"Transició progressiva del difuminat per a donar un resultat d'aspecte "
+"natural."
 
 #: ../../image_editor/enhancement_tools.rst:1000
 msgid ""
 "Adjustable number of segmentation iterations for better subject isolation "
 "accuracy."
 msgstr ""
+"Nombre ajustable d'iteracions de segmentació per a una precisió millor "
+"d'aïllament del motiu."
 
 #: ../../image_editor/enhancement_tools.rst:1001
 msgid "Real-time preview of the segmentation mask."
-msgstr ""
+msgstr "Vista prèvia en temps real de la màscara de segmentació."
 
 #: ../../image_editor/enhancement_tools.rst:1002
 msgid "Support for both 8-bit and 16-bit images."
-msgstr ""
+msgstr "Permet per a imatges de 8 i 16 bits."
 
 #: ../../image_editor/enhancement_tools.rst:1003
 msgid "Non-destructive editing."
-msgstr ""
+msgstr "Edició no destructiva."
 
 #: ../../image_editor/enhancement_tools.rst:1006
-#, fuzzy
-#| msgid "Using the Hot Pixels Tool"
 msgid "Accessing the Tool"
-msgstr "Utilització de l'eina Píxels cremats"
+msgstr "Accedint a l'eina"
 
 #: ../../image_editor/enhancement_tools.rst:1008
 msgid "Open an image in the digiKam editor."
-msgstr ""
-
-#: ../../image_editor/enhancement_tools.rst:1009
-msgid "From the canvas, select a rectangle area around the subject."
-msgstr ""
+msgstr "Obre una imatge a l'editor del digiKam."
 
 #: ../../image_editor/enhancement_tools.rst:1010
-#, fuzzy
-#| msgid "Select :menuselection:`Enhance --> Red Eye...`."
-msgid "Select :menuselection:`Enhance --> Background Blur`."
-msgstr "Seleccioneu :menuselection:`Millora --> Ulls vermells...`."
+msgid "From the canvas, select a rectangle area around the subject."
+msgstr "Al llenç, seleccioneu una àrea rectangular al voltant del motiu."
 
-#: ../../image_editor/enhancement_tools.rst:1011
-msgid "The tool interface will appear in the right sidebar."
-msgstr ""
+#: ../../image_editor/enhancement_tools.rst:1012
+msgid "Select :menuselection:`Enhance --> Background Blur`."
+msgstr "Seleccioneu :menuselection:`Millora --> Difuminat del fons`."
 
 #: ../../image_editor/enhancement_tools.rst:1014
+msgid "The tool interface will appear in the right sidebar."
+msgstr "La interfície d'eina apareixerà a la barra lateral dreta."
+
+#: ../../image_editor/enhancement_tools.rst:1017
 msgid "Tool Interface"
-msgstr ""
+msgstr "Interfície d'eina"
 
-#: ../../image_editor/enhancement_tools.rst:1020
+#: ../../image_editor/enhancement_tools.rst:1023
 msgid "Background Blur Interface"
-msgstr ""
+msgstr "Interfície de difuminat del fons"
 
-#: ../../image_editor/enhancement_tools.rst:1022
+#: ../../image_editor/enhancement_tools.rst:1025
 msgid "The Tool interface consists of:"
-msgstr ""
+msgstr "La interfície d'eina consisteix en:"
 
-#: ../../image_editor/enhancement_tools.rst:1024
+#: ../../image_editor/enhancement_tools.rst:1027
 msgid ""
-"**Selection Controls**: before to lauch the tool, use your mouse over the "
+"**Selection Controls**: before launching the tool, use your mouse over the "
 "editor canvas to draw a rectangle around the subject you want to keep sharp. "
 "The selected area will be protected from blurring."
 msgstr ""
+"**Controls de selecció**: abans de llançar l'eina, utilitzeu el ratolí sobre "
+"el llenç de l'editor per a dibuixar un rectangle al voltant del motiu que "
+"voleu mantenir nítid. L'àrea seleccionada estarà protegida del difuminat."
 
-#: ../../image_editor/enhancement_tools.rst:1026
+#: ../../image_editor/enhancement_tools.rst:1029
 msgid ""
 "**Blur Controls**: **Smoothness** controls the intensity of the background "
 "blur (1-100). **Progressive Transition** controls how gradually the blur "
 "transitions from subject to background (0-100). **Subject Segmentation** "
 "controls the accuracy of the subject segmentation (1-20)."
 msgstr ""
+"**Controls de difuminat**: **Suavitzat** controla la intensitat del "
+"difuminat del fons (1-100). **Transició progressiva** controla com seran de "
+"graduals les transicions de difuminat des del motiu al fons (0-100). "
+"**Segmentació del motiu** controla la precisió de la segmentació del motiu "
+"(1-20)."
 
-#: ../../image_editor/enhancement_tools.rst:1028
+#: ../../image_editor/enhancement_tools.rst:1031
 msgid ""
 "**Subject Mask**: shows a real-time preview of the segmentation mask using a "
 "green overlay. It helps you verify that the subject is properly selected. "
-"This preview is zoomable using mouse wheel or the buttons on the toolbar "
+"This preview is zoomable using the mouse wheel or the buttons on the toolbar "
 "from the top-left corner."
 msgstr ""
+"**Màscara de motiu**: mostra una vista prèvia en temps real de la màscara de "
+"segmentació utilitzant una superposició verda. T'ajuda a verificar que el "
+"motiu està seleccionat correctament. Aquesta vista prèvia s'hi pot fer zoom "
+"utilitzant la roda del ratolí o els botons de la barra d'eines des de la "
+"cantonada superior esquerra."
 
-#: ../../image_editor/enhancement_tools.rst:1031
-#, fuzzy
-#| msgid "Using the Hot Pixels Tool"
+#: ../../image_editor/enhancement_tools.rst:1034
 msgid "Using the Tool"
-msgstr "Utilització de l'eina Píxels cremats"
+msgstr "Utilització de l'eina"
 
-#: ../../image_editor/enhancement_tools.rst:1033
+#: ../../image_editor/enhancement_tools.rst:1036
 msgid ""
 "**Select the Subject**: click and drag to draw a rectangle around your "
 "subject. The tool will automatically create a segmentation mask."
 msgstr ""
+"**Seleccioneu el motiu**: feu clic i arrossegueu per a dibuixar un rectangle "
+"al voltant del motiu. L'eina crearà automàticament una màscara de "
+"segmentació."
 
-#: ../../image_editor/enhancement_tools.rst:1035
+#: ../../image_editor/enhancement_tools.rst:1038
 msgid ""
 "**Adjust the Blur**: use the **Smoothness** slider to control the blur "
 "intensity. Higher values create a stronger blur effect. Typical values range "
 "from 5 to 20 for most images."
 msgstr ""
+"**Ajusta el difuminat**: utilitzeu el control lliscant **Suavitzat** per a "
+"controlar la intensitat del difuminat. Els valors més alts creen un efecte "
+"difuminat més fort. L'interval normal dels valors és entre 5 i 20 a la "
+"majoria d'imatges."
 
-#: ../../image_editor/enhancement_tools.rst:1037
+#: ../../image_editor/enhancement_tools.rst:1040
 msgid ""
 "**Adjust the Transition**: use the **Progressive Transition** slider to "
 "control how gradually the blur fades in. Lower values create a sharper "
 "transition between subject and background. Higher values create a more "
 "gradual transition."
 msgstr ""
+"**Ajusta la transició**: utilitzeu el control lliscant **Transició "
+"progressiva** per a controlar com entra gradualment el difuminat. Els valors "
+"més baixos creen una transició més nítida entre el motiu i el fons. Els "
+"valors més alts creen una transició més gradual."
 
-#: ../../image_editor/enhancement_tools.rst:1039
+#: ../../image_editor/enhancement_tools.rst:1042
 msgid ""
 "**Refine the Segmentation**: use the **Subject Segmentation** slider to "
 "improve the accuracy of the subject detection and isolation. Higher values "
 "(10-20) work better for complex subjects like hair or fur. Lower values "
 "(1-5) are sufficient for simple subjects with clear edges."
 msgstr ""
+"**Refina la segmentació**: utilitzeu el control lliscant **Segmentació del "
+"motiu** per a millorar la precisió de la detecció del motiu i l'aïllament. "
+"Els valors més alts (10-20) funcionen millor amb motius complexos com els "
+"cabells o el pèl. Els valors inferiors (1-5) són suficients per als motius "
+"simples amb vores clares."
 
-#: ../../image_editor/enhancement_tools.rst:1041
+#: ../../image_editor/enhancement_tools.rst:1044
 msgid ""
 "**Preview the Result**: the green overlay shows which areas will remain "
 "sharp. Adjust your selection or parameters as needed."
 msgstr ""
+"**Vista prèvia del resultat**: la superposició verda mostra quines àrees es "
+"mantindran nítides. Ajusteu la vostra selecció o paràmetres segons sigui "
+"necessari."
 
-#: ../../image_editor/enhancement_tools.rst:1043
+#: ../../image_editor/enhancement_tools.rst:1046
 msgid ""
 "**Apply the Effect**: click **OK** to apply the effect to your image. Click "
 "**Cancel** to discard your changes."
 msgstr ""
+"**Aplica l'efecte**: feu clic a **D'acord** per a aplicar l'efecte a la "
+"imatge. Feu clic a **Cancel·la** per a descartar els canvis."
 
-#: ../../image_editor/enhancement_tools.rst:1046
+#: ../../image_editor/enhancement_tools.rst:1049
 msgid "Parameters"
-msgstr ""
-
-#: ../../image_editor/enhancement_tools.rst:1052
-msgid "Parameter"
-msgstr ""
-
-#: ../../image_editor/enhancement_tools.rst:1053
-#, fuzzy
-#| msgid "Distortion"
-msgid "Description"
-msgstr "Distorsió"
-
-#: ../../image_editor/enhancement_tools.rst:1054
-msgid "Smoothness"
-msgstr ""
+msgstr "Paràmetres"
 
 #: ../../image_editor/enhancement_tools.rst:1055
+msgid "Parameter"
+msgstr "Paràmetre"
+
+#: ../../image_editor/enhancement_tools.rst:1056
+msgid "Description"
+msgstr "Descripció"
+
+#: ../../image_editor/enhancement_tools.rst:1057
+msgid "Smoothness"
+msgstr "Suavitzat"
+
+#: ../../image_editor/enhancement_tools.rst:1058
 msgid ""
 "Controls the strength of the background blur. Higher values create more "
 "pronounced blur effects."
 msgstr ""
+"Controla la intensitat del difuminat del fons. Els valors més alts creen "
+"efectes de difuminat més pronunciats."
 
-#: ../../image_editor/enhancement_tools.rst:1056
+#: ../../image_editor/enhancement_tools.rst:1059
 msgid "Progressive Transition"
-msgstr ""
+msgstr "Transició progressiva"
 
-#: ../../image_editor/enhancement_tools.rst:1057
+#: ../../image_editor/enhancement_tools.rst:1060
 msgid ""
 "Controls how gradually the blur transitions from the subject to the "
 "background. Higher values create a more natural, gradual transition."
 msgstr ""
+"Controla com són de graduals les transicions de difuminat del motiu al fons. "
+"Els valors més alts creen una transició més natural i gradual."
 
-#: ../../image_editor/enhancement_tools.rst:1058
+#: ../../image_editor/enhancement_tools.rst:1061
 msgid "Subject Segmentation"
-msgstr ""
+msgstr "Segmentació del motiu"
 
-#: ../../image_editor/enhancement_tools.rst:1059
+#: ../../image_editor/enhancement_tools.rst:1062
 msgid ""
 "Controls the accuracy of the subject segmentation algorithm. Higher values "
 "provide better results for complex subjects but require more processing time."
 msgstr ""
+"Controla la precisió de l'algorisme de segmentació del motiu. Els valors més "
+"alts proporcionen millors resultats amb els motius complexos, però "
+"requereixen més temps de processament."
 
-#: ../../image_editor/enhancement_tools.rst:1062
+#: ../../image_editor/enhancement_tools.rst:1065
 msgid "Tips for Best Results"
-msgstr ""
+msgstr "Consells per a millorar el resultat"
 
-#: ../../image_editor/enhancement_tools.rst:1064
+#: ../../image_editor/enhancement_tools.rst:1067
 msgid ""
 "**Subject Selection**: include a small margin around your subject in the "
 "selection. For complex subjects (like hair), use higher Iterations values "
 "(15-20). For simple subjects with clear edges, lower Iterations values "
 "(5-10) are sufficient."
 msgstr ""
+"**Selecció del motiu**: inclou un marge petit al voltant del motiu a la "
+"selecció. Per a motius complexos (com els cabells), utilitzeu valors "
+"d'iteracions més alts (15-20). Per a motius simples amb vores clares, els "
+"valors d'iteracions inferiors (5-10) són suficients."
 
-#: ../../image_editor/enhancement_tools.rst:1066
+#: ../../image_editor/enhancement_tools.rst:1069
 msgid ""
 "**Blur Settings**: start with a moderate **Smoothness** (around 10) and "
 "adjust as needed. Use higher **Progressive Transition** values (50-80) for "
 "more natural-looking results. For portraits, try to keep some sharpness in "
 "the edges of the subject."
 msgstr ""
+"**Configuració del difuminat**: comenceu amb una **Suavitzat** moderada (al "
+"voltant de 10) i ajusteu-la segons sigui necessari. Utilitzeu valors de "
+"**Transició progressiva** més alts (50-80) per a obtenir resultats més "
+"naturals. Per als retrats, intenteu mantenir una mica d'agudesa en les vores "
+"del motiu."
 
-#: ../../image_editor/enhancement_tools.rst:1068
+#: ../../image_editor/enhancement_tools.rst:1071
 msgid ""
 "**Image Types**: works best with images that have clear separation between "
 "subject and background. For busy backgrounds, use higher **Smoothness** "
 "values to create more separation. For portraits, position the selection to "
 "include all of the person's hair."
 msgstr ""
+"**Tipus d'imatges**: funciona millor amb imatges que tenen una separació "
+"clara entre el motiu i el fons. Per als fons atapeïts, utilitzeu valors més "
+"alts de **Suavitzat** per a crear més separació. Per als retrats, col·loqueu "
+"la selecció per a incloure tots els cabells de la persona."
 
-#: ../../image_editor/enhancement_tools.rst:1070
+#: ../../image_editor/enhancement_tools.rst:1073
 msgid ""
-"**Performance**: higher iteration values for the subject segmentation "
+"**Performance**: higher iteration values for the **Subject Segmentation** "
 "require more processing time. For large images, you may need to be patient "
 "while the tool processes."
 msgstr ""
+"**Rendiment**: els valors d'iteració més alts de la **segmentació del "
+"motiu** requereixen més temps de processament. Amb les imatges grans, és "
+"possible que calgui tenir paciència mentre l'eina processa."
 
-#: ../../image_editor/enhancement_tools.rst:1073
+#: ../../image_editor/enhancement_tools.rst:1076
 msgid "Technical Details"
-msgstr ""
+msgstr "Detalls tècnics"
 
-#: ../../image_editor/enhancement_tools.rst:1075
+#: ../../image_editor/enhancement_tools.rst:1078
 msgid "The Background Blur tool uses the following processing pipeline:"
 msgstr ""
+"L'eina difuminat del fons utilitza la canonada de processament següent:"
 
-#: ../../image_editor/enhancement_tools.rst:1077
+#: ../../image_editor/enhancement_tools.rst:1080
 msgid ""
 "**Subject Isolation**: uses OpenCV's GrabCut algorithm to separate the "
 "subject from the background. The number of iterations can be adjusted for "
 "better accuracy with complex subjects using the **Subject Segmentation** "
 "parameter."
 msgstr ""
+"**Aïllament del motiu**: utilitza l'algorisme GrabCut d'OpenCV per a separar "
+"el motiu del fons. El nombre d'iteracions es pot ajustar per a una precisió "
+"millor amb els motius complexos utilitzant el paràmetre **Segmentació del "
+"motiu**."
 
-#: ../../image_editor/enhancement_tools.rst:1079
+#: ../../image_editor/enhancement_tools.rst:1082
 msgid ""
 "**Mask Refinement**: to smooth the segmentation mask, you can optionally "
 "dilates the mask to include more of the subject."
 msgstr ""
+"**Refinament de màscara**: per a suavitzar la màscara de segmentació, "
+"opcionalment podeu dilatar la màscara per a incloure més del motiu."
 
-#: ../../image_editor/enhancement_tools.rst:1081
+#: ../../image_editor/enhancement_tools.rst:1084
 msgid ""
 "**Background Blurring**: applies Gaussian blur to the background while "
 "preserving the subject. Uses a distance transform to create smooth "
 "transitions between blurred and sharp areas. The blur effect is controlled "
 "by the **Smoothness** parameter."
 msgstr ""
+"**Difuminat en el fons**: aplica el difuminat gaussià al fons mentre es "
+"conserva el motiu. Utilitza una transformació de distància per a crear "
+"transicions suaus entre les àrees difuminades i nítides. L'efecte de "
+"difuminat està controlat pel paràmetre **Suavitzat**."
 
-#: ../../image_editor/enhancement_tools.rst:1083
+#: ../../image_editor/enhancement_tools.rst:1086
 msgid ""
 "**Progressive Blur**: creates a gradual transition from sharp to blurred "
 "areas. The transition effect is controlled by the **Progressive Transition** "
 "parameter."
 msgstr ""
+"**Difuminat progressiu**: crea una transició gradual d'àrees nítides a "
+"difuminades. L'efecte de transició està controlat pel paràmetre **Transició "
+"progressiva**."
 
-#: ../../image_editor/enhancement_tools.rst:1086
+#: ../../image_editor/enhancement_tools.rst:1089
 msgid "Limitations"
-msgstr ""
+msgstr "Limitacions"
 
-#: ../../image_editor/enhancement_tools.rst:1088
+#: ../../image_editor/enhancement_tools.rst:1091
 msgid ""
-"The tool works best when there's clear contrast between the subject and "
+"The tool works best when there's a clear contrast between the subject and "
 "background."
 msgstr ""
+"L'eina funciona millor quan hi ha un contrast clar entre el motiu i el fons."
 
-#: ../../image_editor/enhancement_tools.rst:1090
+#: ../../image_editor/enhancement_tools.rst:1093
 msgid ""
 "Complex backgrounds with similar colors to the subject may require manual "
 "adjustments."
 msgstr ""
+"Els fons complexos amb colors similars al motiu poden requerir ajustos "
+"manuals."
 
-#: ../../image_editor/enhancement_tools.rst:1092
+#: ../../image_editor/enhancement_tools.rst:1095
 msgid ""
 "Very fine details (like individual hair strands) may not be perfectly "
 "preserved."
 msgstr ""
-
-#: ../../image_editor/enhancement_tools.rst:1094
-msgid "The preview shows an approximation of the final result."
-msgstr ""
+"Els detalls molt fins (com els flocs de cabells individuals) podrien no "
+"estar perfectament conservats."
 
 #: ../../image_editor/enhancement_tools.rst:1097
+msgid "The preview shows an approximation of the final result."
+msgstr "La vista prèvia mostra una aproximació del resultat final."
+
+#: ../../image_editor/enhancement_tools.rst:1100
 msgid "Examples"
-msgstr ""
+msgstr "Exemples"
 
-#: ../../image_editor/enhancement_tools.rst:1103
-msgid "Original Image"
-msgstr ""
-
-#: ../../image_editor/enhancement_tools.rst:1103
+#: ../../image_editor/enhancement_tools.rst:1106
 msgid "Original image with Subject Selection over the Canvas"
-msgstr ""
-
-#: ../../image_editor/enhancement_tools.rst:1109
-msgid "After Background Blur"
-msgstr ""
-
-#: ../../image_editor/enhancement_tools.rst:1109
-msgid ""
-"After applying Background Blur (Smothness: 85, Progresive Transition: 60, "
-"Subject Segmentation: 11)"
-msgstr ""
+msgstr "Imatge original amb la selecció del motiu sobre el llenç"
 
 #: ../../image_editor/enhancement_tools.rst:1112
+msgid ""
+"After applying Background Blur (Smouthness: 85, Progressive Transition: 60, "
+"Subject Segmentation: 11)"
+msgstr ""
+"Després d'aplicar el difuminat de fons (Suavitzat: 85, Transició "
+"progressiva: 60, Segmentació del motiu: 11)"
+
+#: ../../image_editor/enhancement_tools.rst:1115
 msgid "Advanced Usage"
-msgstr ""
+msgstr "Ús avançat"
 
-#: ../../image_editor/enhancement_tools.rst:1114
+#: ../../image_editor/enhancement_tools.rst:1117
 msgid "For more control over the effect:"
-msgstr ""
+msgstr "Per a més control sobre l'efecte:"
 
-#: ../../image_editor/enhancement_tools.rst:1116
+#: ../../image_editor/enhancement_tools.rst:1119
 msgid ""
 "**Multiple Applications**: you can apply the tool multiple times with "
 "different settings. Use lower **Smoothness** values for subtle effects, "
 "higher values for dramatic effects."
 msgstr ""
+"**Aplicacions múltiples**: podeu aplicar l'eina diverses vegades amb opcions "
+"diferents de configuració. Utilitzeu valors més baixos de **Suavitzat** per "
+"als efectes subtils, valors més alts per als efectes dramàtics."
 
-#: ../../image_editor/enhancement_tools.rst:1118
+#: ../../image_editor/enhancement_tools.rst:1121
 msgid ""
 "**Combining with Other Tools**: use with the :ref:`Local Contrast "
 "<enhance_localcontrast>` tool to enhance the subject after blurring the "
 "background. Combine with the :ref:`Vignetting Correction "
 "<enhance_vignetting>` tool to further emphasize the subject."
 msgstr ""
+"**Combinació amb altres eines**: utilitzeu amb l'eina :ref:`Contrast local "
+"<enhance_localcontrast>` per a millorar el motiu després de difuminar el "
+"fons. Combineu amb l'eina :ref:`Correcció del vinyetatge "
+"<enhance_vignetting>` per a emfatitzar encara més el motiu."
 
-#: ../../image_editor/enhancement_tools.rst:1121
+#: ../../image_editor/enhancement_tools.rst:1124
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Solució de problemes"
 
-#: ../../image_editor/enhancement_tools.rst:1123
+#: ../../image_editor/enhancement_tools.rst:1126
 msgid ""
 "**Subject not properly detected**: try increasing the **Subject "
 "Segmentation** value. Make sure your selection includes all of the subject. "
 "For complex subjects, you may need to manually adjust the selection."
 msgstr ""
+"**El motiu no s'ha detectat correctament**: intenteu augmentar el valor "
+"**Segmentació del motiu**. Assegureu-vos que la vostra selecció inclogui tot "
+"el motiu. Per a motius complexos, és possible que hàgiu d'ajustar manualment "
+"la selecció."
 
-#: ../../image_editor/enhancement_tools.rst:1125
+#: ../../image_editor/enhancement_tools.rst:1128
 msgid ""
 "**Blur effect too strong/weak**: adjust the **Smoothness** parameter. For "
 "subtle effects, use lower values (3-8)."
 msgstr ""
+"**Efecte de difuminat massa fort/feble**: ajusteu el paràmetre "
+"**Suavitzat**. Per a efectes subtils, utilitzeu valors baixos (3-8)."
 
-#: ../../image_editor/enhancement_tools.rst:1127
+#: ../../image_editor/enhancement_tools.rst:1130
 msgid ""
 "**Unnatural transition**: increase the **Progressive Transition** value for "
 "smoother effect. Try adjusting your selection to better isolate the subject."
 msgstr ""
-
-#: ../../image_editor/enhancement_tools.rst:1129
-msgid ""
-"**Performance issues**: reduce the **Subject Segmentation** value for faster "
-"processing. Note aloso that tool consumes a lot of memory to work with large "
-"images."
-msgstr ""
+"**Transició no natural**: augmenteu el valor de **Transició progressiva** "
+"per a un efecte més suau. Intenteu ajustar la selecció per a aïllar millor "
+"el motiu."
 
 #: ../../image_editor/enhancement_tools.rst:1132
-msgid "See Also"
+msgid ""
+"**Performance issues**: reduce the **Subject Segmentation** value for faster "
+"processing. Note also that the tool consumes a lot of memory to work with "
+"large images."
 msgstr ""
-
-#: ../../image_editor/enhancement_tools.rst:1134
-msgid ":ref:`Local Contrast <enhance_localcontrast>`"
-msgstr ""
+"**Problemes de rendiment**: reduïu el valor de **Segmentació del motiu** per "
+"a un processament més ràpid. Tingueu en compte que l'eina consumeix molta "
+"memòria en treballar amb imatges grans."
 
 #: ../../image_editor/enhancement_tools.rst:1135
+msgid "See Also"
+msgstr "Vegeu també"
+
+#: ../../image_editor/enhancement_tools.rst:1137
+msgid ":ref:`Local Contrast <enhance_localcontrast>`"
+msgstr ":ref:`Contrast local <enhance_localcontrast>`"
+
+#: ../../image_editor/enhancement_tools.rst:1138
 msgid ":ref:`Sharpen (sharpen, unsharp mask, refocus) <enhance_sharpen>`"
 msgstr ""
+":ref:`Aguditzar (aguditzar, màscara de desenfocament, reenfocar) "
+"<enhance_sharpen>`"
 
-#: ../../image_editor/enhancement_tools.rst:1136
-#, fuzzy
-#| msgid "The vignetting correction tool in action"
+#: ../../image_editor/enhancement_tools.rst:1139
 msgid ":ref:`Vignetting Correction <enhance_vignetting>`"
-msgstr "L'eina Correcció del vinyetatge en acció"
+msgstr ":ref:`Correcció del vinyetatge <enhance_vignetting>`"
+
+#~ msgid "Original Image"
+#~ msgstr "Imatge original"
+
+#~ msgid "After Background Blur"
+#~ msgstr "Després del difuminat del fons"
