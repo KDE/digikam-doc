@@ -1041,7 +1041,7 @@ Using the Tool
 
 4. **Refine the Segmentation**: use the **Subject Segmentation** slider to improve the accuracy of the subject detection and isolation. Higher values (10-20) work better for complex subjects like hair or fur. Lower values (1-5) are sufficient for simple subjects with clear edges.
 
-5. **Adjust the subject area**: use the **Subject Mask** preview widget functionalities to zoom / pan the preview canvas and adjust the desired zone surrounding the subject.
+5. **Adjust the Subject Area**: use the mouse over the **Subject Mask** preview widget to zoom / pan the canvas and adjust the desired zone surrounding the subject.
 
 6. **Preview the Result**: the green overlay shows which areas will remain sharp. Adjust your selection or parameters as needed.
 
