@@ -93,7 +93,7 @@ function determine_appropriate_language( $request, $browser_languages, $supporte
                 $language = "zh_CN";
             }
         } else {
-            // Browsers use dashes to seperate language variants
+            // Browsers use dashes to separate language variants
             // But KDE translation systems use underscores for this so ensure we are consistent here
             $language = str_replace("-", "_", $language);
         }

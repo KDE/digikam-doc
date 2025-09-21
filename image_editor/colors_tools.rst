@@ -32,16 +32,16 @@ The digiKam **Convert to 8 bits** and **Convert to 16 bits** tools allow you to 
 
 .. _color_cm:
 
-Color Space Convertor
+Color Space Converter
 ---------------------
 
-The digiKam **Color Space Convertor** tool allows you to convert an image from one color space to another. You can also use it to assign a color profile to an image. For detailed instructions on the use of color profiles, please refer to the :ref:`Color Management <color_management>` and :ref:`Color Management Settings <cm_settings>` sections of the manual.
+The digiKam **Color Space Converter** tool allows you to convert an image from one color space to another. You can also use it to assign a color profile to an image. For detailed instructions on the use of color profiles, please refer to the :ref:`Color Management <color_management>` and :ref:`Color Management Settings <cm_settings>` sections of the manual.
 
 .. figure:: images/editor_profile_converter.webp
     :alt:
     :align: center
 
-    The Image Editor Color Space Convertor Tool
+    The Image Editor Color Space Converter Tool
 
 .. _color_auto:
 

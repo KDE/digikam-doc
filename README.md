@@ -42,7 +42,7 @@ The EPUB ebook is generated in `build/epub`. Open the file `DigikamManual.epub` 
 - [locale](locale)        : link to updated handbook translations files. Files are updated all nights.
 - po                      : Obsolete, not used. Replaced by locale directory.
 - [project](project)      : some helpers scripts and LibreOffice schemes.
-- [ressources](ressources): Sphinx templates customization.
+- [resources](resources)  : Sphinx templates customization.
 - [tests](tests)          : scripts to test repository contents with Continuous integration.
 
 All others directories are used to host sections of the documentation implemented in ReStructuredText format.
@@ -88,7 +88,7 @@ For example, the **getting_started** section will be organized like this:
 
 ```
 
-**getting_started.rst** is the root entry of the **Geting Started** section of this manual.
+**getting_started.rst** is the root entry of the **Getting Started** section of this manual.
 All others nested **.rst** files hosted in **getting_started** sub-directory are chapters in this section.
 
 ### ReStructuredText Sections/Chapters/References Implementation
@@ -246,7 +246,7 @@ Link to Internal reference           | ``` :ref:`the Album section <albums_view>
 Link to External Url                 | ``` `digiKam Home Page <https://www.digikam.org/>`_ ```
 Italic Text                          | ``` *Cancel button* ```
 Bold Text                            | ``` **Ok button** ```
-File Name                            | ``` :file:`recogintion.db` ```
+File Name                            | ``` :file:`recognition.db` ```
 Raw Text Section (as console output) | ``` .. code-block:: text ```
 Inline Icon Declaration              | ``` .. \|icon_fullscreen\| image:: images/mainwindow_icon_fullscreen.webp ```
 Inline Icon Usage                    | ``` \|icon_fullscreen\| ```
@@ -304,7 +304,7 @@ When all contributor tasks are done, a Merge Request must be send to the origina
 - Contributor must adjust, comment, or rebase changes in the forked repository accordingly with coordinator feedback.
 - When all is ready, coordinator merge changes from the forked repository to the original repository.
 
-Later, a contributor can re-use the forked repository to re-base contents with original repository. The forked repository
+Later, a contributor can reuse the forked repository to rebase contents with the original repository. The forked repository
 will be up-to-date and the contributor can create a new Merge Request with the new changes to integrate in the original repository.
 
 To have the forked repository sync with the original 'origin' upstream, uses this git command in your fork:
@@ -418,7 +418,7 @@ Corresponding languages must be enabled in the documentation web-site following 
 
 - The **alllang** list from the [version_switch JavaScript file](resources/static/js/version_switch.js) located at **resources/static/js/** from this git repository.
 - The **supported_languages** list from the [404handler PHP file](404handler.php) located at root from this git repository.
-- The **script** section from [gitlab CI Yaml config file](.gitlab-ci.yml) located at root from this git repository, where a new line must be add to generate the supported language in the Continuous Deployement workflow.
+- The **script** section from [gitlab CI Yaml config file](.gitlab-ci.yml) located at root from this git repository, where a new line must be add to generate the supported language in the Continuous Deployment workflow.
 
 #### How to Compile a Supported Language
 
@@ -441,7 +441,7 @@ of the documentations.
 
 The [CI/CD section](https://invent.kde.org/documentation/digikam-doc/-/pipelines) lists the history of the continuous integration pipelines.
 
-## Continous Deployement
+## Continuous Deployment
 
 This documentation is automatically updated online (including translations) at each changes passing the Continuous Integration (CI).
 

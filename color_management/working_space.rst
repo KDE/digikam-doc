@@ -65,7 +65,7 @@ Once the working color space has been set, then digiKam can also be set to autom
 
     digiKam can be set to Convert to Working Space When Color Space Mismatch Occurs
 
-You can also switch color spaces from within the Image Editor. Select the Color Space Convertor that can be accessed from the Tools tab in the Right Sidebar.
+You can also switch color spaces from within the Image Editor. Select the Color Space Converter that can be accessed from the Tools tab in the Right Sidebar.
 
     .. figure:: images/cm_editor_convert_prorgb.webp
         :alt:

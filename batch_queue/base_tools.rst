@@ -260,8 +260,8 @@ This dialog is mostly the same as the G'MIC-Qt dialog available in the :ref:`Ima
 
     The G'MIC Filter Selection Dialog
 
-Integrating The Procesor
-~~~~~~~~~~~~~~~~~~~~~~~~
+Integrating The Processor
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To use the G'MIC processor in the Batch Queue Manager, place the tool in your Assigned List of tools, and select the desired G'MIC filter to run with your queued images.
 

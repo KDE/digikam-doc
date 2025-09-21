@@ -107,7 +107,7 @@ Working With Tools From Light Table
 
 Similar to **Main Window**, the digiKam Light Table allows you to apply tools from the **View**, **Tools**, **Import**, or **Export** menus. Unlike Main Window, Light Table does not have the concept of albums or an icon-view where you can select items to process. Light Table has a thumbbar which is a flat list of items to review with the left and right panes.
 
-If you pre-selected a list of items from the Main Window icon-view to view within Light Table, then any tools selected from the **View**, **Tools**, and **Export** menus will be applied to the current contents of the thumbbar. Nothing changes for tools that work with albums, since albums are still selectable in the tool session, independent of the thumbbar content.
+If you preselected a list of items from the Main Window icon-view to view within Light Table, then any tools selected from the **View**, **Tools**, and **Export** menus will be applied to the current contents of the thumbbar. Nothing changes for tools that work with albums, since albums are still selectable in the tool session, independent of the thumbbar content.
 
 The **Import** tools will simply append the new contents to the thumbbar.
 

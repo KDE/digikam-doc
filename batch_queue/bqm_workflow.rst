@@ -13,7 +13,7 @@
 :ref:`Workflow <batch_queue>`
 =============================
 
-The Batch Queue Manager has a tab named **Workflow** in the bottom right of the window which is empty by default. This view is a list where the user can store the preferred set of tools to assign to queues. This list is saved and restored between sessions allowing the workflows to be re-used.
+The Batch Queue Manager has a tab named **Workflow** in the bottom right of the window which is empty by default. This view is a list where the user can store the preferred set of tools to assign to queues. This list is saved and restored between sessions allowing the workflows to be reused.
 
 A workflow stores:
 

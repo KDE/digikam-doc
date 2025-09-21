@@ -344,7 +344,7 @@ Configuration Files
     - Windows: :file:`%LocalAppData%\\digikamrc`
     - macOS:   :file:`~/Library/Preferences/digikamrc`
 
-* **System settings** for the application refering to the all configuration available from *Setup/Miscs/System* dialog page. Delete this file and restart digiKam to reset the application to *factory* settings
+* **System settings** for the application referring to the all configuration available from *Setup/Miscs/System* dialog page. Delete this file and restart digiKam to reset the application to *factory* settings
     - Linux:   :file:`~/.config/digikam_systemrc`
     - Windows: :file:`%LocalAppData%\\digikam_systemrc`
     - macOS:   :file:`~/Library/Preferences/digikam_systemrc`
@@ -371,7 +371,7 @@ Similar to digiKam, the :ref:`Showfoto stand Alone Image Editor <showfoto_editor
     - Windows: :file:`%LocalAppData%\\showfotorc`
     - macOS:   :file:`~/Library/Preferences/showfotorc`
 
-* **System settings** for the application refering to the all configuration available from *Setup/Miscs/System* dialog page. Delete this file and restart digiKam to reset the application to *factory* settings
+* **System settings** for the application referring to the all configuration available from *Setup/Miscs/System* dialog page. Delete this file and restart digiKam to reset the application to *factory* settings
     - Linux:   :file:`~/.config/showfoto_systemrc`
     - Windows: :file:`%LocalAppData%\\showfoto_systemrc`
     - macOS:   :file:`~/Library/Preferences/showfoto_systemrc`

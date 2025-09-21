@@ -38,7 +38,7 @@ For the purposes of this manual, metadata is all the information about an image 
 DAM and digiKam
 ---------------
 
-This section of the manual presents **tools** and **practical advice** on how to **file**, **find**, **protect** and **re-use** photographs, focusing on best practices for digital photographers using digiKam. We discuss **downloading**, **renaming**, **culling**, **converting**, **grouping**, **backing-up**, **rating**, **tagging**, **archiving**, **optimizing**, **maintaining** and **exporting** image files.
+This section of the manual presents **tools** and **practical advice** on how to **file**, **find**, **protect** and **reuse** photographs, focusing on best practices for digital photographers using digiKam. We discuss **downloading**, **renaming**, **culling**, **converting**, **grouping**, **backing-up**, **rating**, **tagging**, **archiving**, **optimizing**, **maintaining** and **exporting** image files.
 
 digiKam supports most DAM tasks by providing a unique and comprehensive set of tools that can be applied to its databases and the associated image files in  your collection. This makes most DAM tasks fast and easy to perform. digiKam is based on open standards, so it will not confine you to a platform or lock you into a single application. It instead puts you onto the fast track to manage and find your photographs, allowing you to move on to any other platform, application, or system without losing any of your work. digiKam has features making it suitable for use by occasional users, enthusiasts, and professionals.
 

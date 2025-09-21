@@ -37,7 +37,7 @@ When this option is enabled, thumbnail size can be extended to 512x512 pixels. T
 
 .. note::
 
-    The **Scan** options from :menuselection:`Settings --> Configure digiKam... --> Miscelleneous page --> Behaviour tab` speed up the process in the first case or if you just added pictures to your collection.
+    The **Scan** options from :menuselection:`Settings --> Configure digiKam... --> Miscellaneous page --> Behaviour tab` speed up the process in the first case or if you just added pictures to your collection.
 
 While the rebuild thumbnails process is underway, a progress indicator is displayed in the bottom right corner of the main window.
 

@@ -1117,7 +1117,7 @@ Examples
    :alt:
    :align: center
 
-   After applying Background Blur (Smouthness: 85, Progressive Transition: 60, Subject Isolation: 11)
+   After applying Background Blur (Smoothness: 85, Progressive Transition: 60, Subject Isolation: 11)
 
 Advanced Usage
 ~~~~~~~~~~~~~~

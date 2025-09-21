@@ -286,7 +286,7 @@ This section allows you to adjust special low-level configurations used by digiK
 
 - **Use the OpenCL hardware acceleration**: this option will enable the GPU hardware accelerations with the face management, image quality scanning, and auto-tags features. This option affects the `OpenCV <https://opencv.org/>`_ engine used in the background for intensive computation on images. To see the details about OpenCV hardware support, go to the :menuselection:`Help --> Components Information` menu item, and look at the :ref:`OpenCV section <help_componentsinfo>` in the dialog.
 
-- **Use the OpenCL hardware acceleration for AI Models**: this option will enable the GPU hardware accelerations with the Artificial Intelligence data model. Typically, the Neural Processing Unit from your video card will be used to handle the inference engine data models. The **Test GPU AI Compatibilty** button allows to start a sequence of checks to report if your hardware supports these features.
+- **Use the OpenCL hardware acceleration for AI Models**: this option will enable the GPU hardware accelerations with the Artificial Intelligence data model. Typically, the Neural Processing Unit from your video card will be used to handle the inference engine data models. The **Test GPU AI Compatibility** button allows to start a sequence of checks to report if your hardware supports these features.
 
     .. figure:: images/setup_miscs_system_opencldnn.webp
         :alt:

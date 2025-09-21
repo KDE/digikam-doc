@@ -106,7 +106,7 @@ This view supports editing of the settings used by the camera to take the shot.
 
     .. warning::
 
-        `Exif Makernotes <hhttps://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_data>`_ can be unreadable if you set the wrong **device manufacturer/model** description.
+        `Exif Makernotes <https://en.wikipedia.org/wiki/Exchangeable_image_file_format#MakerNote_data>`_ can be unreadable if you set the wrong **device manufacturer/model** description.
 
     - **Device manufacturer**: this checkbox allows you to edit the manufacturer of the camera (or scanner) used to take the picture. This field is limited to ASCII characters.
     - **Device model**: this checkbox allows you to edit the model of the camera (or scanner) used to take the picture. This field is limited to ASCII characters.

@@ -142,7 +142,7 @@ Note that you can change the layout from one map to two maps, beside or above ea
 The Bookmarks Manager
 ---------------------
 
-The digiKam geolocation **Bookmarks Manager** is a tool to register a nested list of favorite places which can be re-used later to geolocalize items taken at the same positions.
+The digiKam geolocation **Bookmarks Manager** is a tool to register a nested list of favorite places which can be reused later to geolocalize items taken at the same positions.
 
 The digiKam Bookmarks Manager is available from the items list context menu as you can see in the screenshot below.
 

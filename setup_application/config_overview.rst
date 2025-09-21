@@ -19,4 +19,4 @@ digiKam tries to give you as much control over how it works as possible. There a
 
 .. note::
 
-    If you press the **OK** button, the configuration will be saved in your home directory and applied to the current application session. The next Session will re-use the same settings. If you press **Cancel**, nothing will be changed.
+    If you press the **OK** button, the configuration will be saved in your home directory and applied to the current application session. The next Session will reuse the same settings. If you press **Cancel**, nothing will be changed.
