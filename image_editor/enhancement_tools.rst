@@ -1026,7 +1026,7 @@ The Tool interface consists of:
 
 1. **Selection Controls**: before launching the tool, use your mouse over the editor canvas to draw a rectangle around the subject you want to keep sharp. The selected area will be protected from blurring.
 
-2. **Blur Controls**: **Smoothness** controls the intensity of the background blur (1-100). **Progressive Transition** controls how gradually the blur transitions from subject to background (0-100). **Subject Segmentation** controls the accuracy of the subject segmentation (1-20).
+2. **Blur Controls**: **Smoothness** controls the intensity of the background blur (1-100). **Progressive Transition** controls how gradually the blur transitions from subject to background (0-100). **Subject Isolation** controls the accuracy of the subject segmentation (1-20).
 
 3. **Subject Mask**: shows a real-time preview of the segmentation mask using a green overlay. It helps you verify that the subject is properly selected. This preview is zoomable using the mouse wheel or the buttons on the toolbar from the top-left corner, and allow to re-adjust the zone as desired.
 
@@ -1039,7 +1039,7 @@ Using the Tool
 
 3. **Adjust the Transition**: use the **Progressive Transition** slider to control how gradually the blur fades in. Lower values create a sharper transition between subject and background. Higher values create a more gradual transition.
 
-4. **Refine the Segmentation**: use the **Subject Segmentation** slider to improve the accuracy of the subject detection and isolation. Higher values (10-20) work better for complex subjects like hair or fur. Lower values (1-5) are sufficient for simple subjects with clear edges.
+4. **Refine the Subject Isolation**: use the **Subject Isolation** slider to improve the accuracy of the subject detection and isolation. Higher values (10-20) work better for complex subjects like hair or fur. Lower values (1-5) are sufficient for simple subjects with clear edges.
 
 5. **Adjust the Subject Area**: use the mouse over the **Subject Mask** preview widget to zoom / pan the canvas and adjust the desired zone surrounding the subject.
 
@@ -1066,7 +1066,7 @@ Parameters
      - Controls the strength of the background blur. Higher values create more pronounced blur effects.
    * - Progressive Transition
      - Controls how gradually the blur transitions from the subject to the background. Higher values create a more natural, gradual transition.
-   * - Subject Segmentation
+   * - Subject Isolation
      - Controls the accuracy of the subject segmentation algorithm. Higher values provide better results for complex subjects but require more processing time.
 
 Tips for Best Results
@@ -1078,14 +1078,14 @@ Tips for Best Results
 
 3. **Image Types**: works best with images that have clear separation between subject and background. For busy backgrounds, use higher **Smoothness** values to create more separation. For portraits, position the selection to include all of the person's hair.
 
-4. **Performance**: higher iteration values for the **Subject Segmentation** require more processing time. For large images, you may need to be patient while the tool processes.
+4. **Performance**: higher iteration values for the **Subject Isolation** require more processing time. For large images, you may need to be patient while the tool processes.
 
 Technical Details
 ~~~~~~~~~~~~~~~~~
 
 The Background Blur tool uses the following processing pipeline:
 
-1. **Subject Isolation**: uses OpenCV's GrabCut algorithm to separate the subject from the background. The number of iterations can be adjusted for better accuracy with complex subjects using the **Subject Segmentation** parameter.
+1. **Subject Isolation**: uses OpenCV's GrabCut algorithm to separate the subject from the background. The number of iterations can be adjusted for better accuracy with complex subjects using the **Subject Isolation** parameter.
 
 2. **Mask Refinement**: to smooth the segmentation mask, you can optionally dilates the mask to include more of the subject.
 
@@ -1117,7 +1117,7 @@ Examples
    :alt:
    :align: center
 
-   After applying Background Blur (Smouthness: 85, Progressive Transition: 60, Subject Segmentation: 11)
+   After applying Background Blur (Smouthness: 85, Progressive Transition: 60, Subject Isolation: 11)
 
 Advanced Usage
 ~~~~~~~~~~~~~~
@@ -1131,13 +1131,13 @@ For more control over the effect:
 Troubleshooting
 ~~~~~~~~~~~~~~~
 
-- **Subject not properly detected**: try increasing the **Subject Segmentation** value. Make sure your selection includes all of the subject. For complex subjects, you may need to manually adjust the selection.
+- **Subject not properly detected**: try increasing the **Subject Isolation** value. Make sure your selection includes all of the subject. For complex subjects, you may need to manually adjust the selection.
 
 - **Blur effect too strong/weak**: adjust the **Smoothness** parameter. For subtle effects, use lower values (3-8).
 
 - **Unnatural transition**: increase the **Progressive Transition** value for smoother effect. Try adjusting your selection to better isolate the subject.
 
-- **Performance issues**: reduce the **Subject Segmentation** value for faster processing. Note also that the tool consumes a lot of memory to work with large images.
+- **Performance issues**: reduce the **Subject Isolation** value for faster processing. Note also that the tool consumes a lot of memory to work with large images.
 
 See Also
 ~~~~~~~~
