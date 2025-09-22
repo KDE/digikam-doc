@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-18 01:56+0000\n"
-"PO-Revision-Date: 2025-09-19 15:45+0200\n"
+"POT-Creation-Date: 2025-09-21 01:58+0000\n"
+"PO-Revision-Date: 2025-09-20 11:50+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -3164,11 +3164,17 @@ msgstr ""
 "segmentatie van het onderwerp (1-20)."
 
 #: ../../image_editor/enhancement_tools.rst:1031
+#, fuzzy
+#| msgid ""
+#| "**Subject Mask**: shows a real-time preview of the segmentation mask "
+#| "using a green overlay. It helps you verify that the subject is properly "
+#| "selected. This preview is zoomable using the mouse wheel or the buttons "
+#| "on the toolbar from the top-left corner."
 msgid ""
 "**Subject Mask**: shows a real-time preview of the segmentation mask using a "
 "green overlay. It helps you verify that the subject is properly selected. "
 "This preview is zoomable using the mouse wheel or the buttons on the toolbar "
-"from the top-left corner."
+"from the top-left corner, and allow to re-adjust the zone as desired."
 msgstr ""
 "**Onderwerpmasker**: toont een real-time voorbeeld van het segmentatiemasker "
 "met gebruik van een groene overlay. Het helpt u te verifiëren dat het "
@@ -3227,13 +3233,20 @@ msgstr ""
 
 #: ../../image_editor/enhancement_tools.rst:1044
 msgid ""
+"**Adjust the Subject Area**: use the mouse over the **Subject Mask** preview "
+"widget to zoom / pan the canvas and adjust the desired zone surrounding the "
+"subject."
+msgstr ""
+
+#: ../../image_editor/enhancement_tools.rst:1046
+msgid ""
 "**Preview the Result**: the green overlay shows which areas will remain "
 "sharp. Adjust your selection or parameters as needed."
 msgstr ""
 "**De resultaten bekijken**: de groene overlay toont welke gebieden scherp "
 "zullen blijven. Pas uw selectie of parameters aan zoals gewenst."
 
-#: ../../image_editor/enhancement_tools.rst:1046
+#: ../../image_editor/enhancement_tools.rst:1048
 msgid ""
 "**Apply the Effect**: click **OK** to apply the effect to your image. Click "
 "**Cancel** to discard your changes."
@@ -3241,23 +3254,29 @@ msgstr ""
 "**Pas het effect toe**: klik op **OK** om het effect op uw afbeelding toe te "
 "passen. Klik op **Annuleren** om uw wijzigingen weg te gooien."
 
-#: ../../image_editor/enhancement_tools.rst:1049
+#: ../../image_editor/enhancement_tools.rst:1054
+#, fuzzy
+#| msgid "From the canvas, select a rectangle area around the subject."
+msgid "The Mask View Allow to Edit the Rectangle Surrounding the Subject."
+msgstr "Uit het werkveld, selecteer een rechthoekig gebied rond het onderwerp."
+
+#: ../../image_editor/enhancement_tools.rst:1057
 msgid "Parameters"
 msgstr "Parameters"
 
-#: ../../image_editor/enhancement_tools.rst:1055
+#: ../../image_editor/enhancement_tools.rst:1063
 msgid "Parameter"
 msgstr "Parameter"
 
-#: ../../image_editor/enhancement_tools.rst:1056
+#: ../../image_editor/enhancement_tools.rst:1064
 msgid "Description"
 msgstr "Beschrijving"
 
-#: ../../image_editor/enhancement_tools.rst:1057
+#: ../../image_editor/enhancement_tools.rst:1065
 msgid "Smoothness"
 msgstr "Gladheid"
 
-#: ../../image_editor/enhancement_tools.rst:1058
+#: ../../image_editor/enhancement_tools.rst:1066
 msgid ""
 "Controls the strength of the background blur. Higher values create more "
 "pronounced blur effects."
@@ -3265,11 +3284,11 @@ msgstr ""
 "Bestuurt de sterkte van de achtergrondvervaging. Hogere waarden maken meer "
 "uitgesproken vervagingseffecten."
 
-#: ../../image_editor/enhancement_tools.rst:1059
+#: ../../image_editor/enhancement_tools.rst:1067
 msgid "Progressive Transition"
 msgstr "Progressieve overgang"
 
-#: ../../image_editor/enhancement_tools.rst:1060
+#: ../../image_editor/enhancement_tools.rst:1068
 msgid ""
 "Controls how gradually the blur transitions from the subject to the "
 "background. Higher values create a more natural, gradual transition."
@@ -3278,11 +3297,11 @@ msgstr ""
 "achtergrond verloopt. Hogere waarden maken een meer natuurlijke, "
 "geleidelijke overgang."
 
-#: ../../image_editor/enhancement_tools.rst:1061
+#: ../../image_editor/enhancement_tools.rst:1069
 msgid "Subject Segmentation"
 msgstr "Onderwerp segmentatie"
 
-#: ../../image_editor/enhancement_tools.rst:1062
+#: ../../image_editor/enhancement_tools.rst:1070
 msgid ""
 "Controls the accuracy of the subject segmentation algorithm. Higher values "
 "provide better results for complex subjects but require more processing time."
@@ -3291,184 +3310,246 @@ msgstr ""
 "Hogere waarden leveren betere resultaten voor complexe onderwerpen maar "
 "vereisen meer verwerkingstijd."
 
-#: ../../image_editor/enhancement_tools.rst:1065
+#: ../../image_editor/enhancement_tools.rst:1073
 msgid "Tips for Best Results"
-msgstr ""
+msgstr "Tips voor de beste resultaten"
 
-#: ../../image_editor/enhancement_tools.rst:1067
+#: ../../image_editor/enhancement_tools.rst:1075
 msgid ""
 "**Subject Selection**: include a small margin around your subject in the "
 "selection. For complex subjects (like hair), use higher Iterations values "
 "(15-20). For simple subjects with clear edges, lower Iterations values "
 "(5-10) are sufficient."
 msgstr ""
+"**Selectie van onderwerp**: neem een kleine marge mee rond uw onderwerp in "
+"de selectie. Voor complexe onderwerpen (zoals haar), gebruik hogere "
+"iteratiewaarden (15-20). Voor eenvoudige onderwerpen met heldere randen, "
+"verlaag de iteratiewaarden (5-10) is voldoende."
 
-#: ../../image_editor/enhancement_tools.rst:1069
+#: ../../image_editor/enhancement_tools.rst:1077
 msgid ""
 "**Blur Settings**: start with a moderate **Smoothness** (around 10) and "
 "adjust as needed. Use higher **Progressive Transition** values (50-80) for "
 "more natural-looking results. For portraits, try to keep some sharpness in "
 "the edges of the subject."
 msgstr ""
+"**Vervagingsinstellingen**: begin met een gematigde **Gladheid** (rond 10) "
+"en pas aan naar behoefte. Gebruik hogere waarden voor **Progressieve "
+"overgang** (50-80) voor meer natuurlijk uitziende resultaten. voor "
+"portretten, probeer enige scherpte in de randen van het onderwerp te "
+"behouden."
 
-#: ../../image_editor/enhancement_tools.rst:1071
+#: ../../image_editor/enhancement_tools.rst:1079
 msgid ""
 "**Image Types**: works best with images that have clear separation between "
 "subject and background. For busy backgrounds, use higher **Smoothness** "
 "values to create more separation. For portraits, position the selection to "
 "include all of the person's hair."
 msgstr ""
+"**Typen afbeeldingen**: werkt het best met afbeeldingen die een heldere "
+"scheiding hebben tussen onderwerp en achtergrond. Voor drukke achtergronden, "
+"gebruik hogere waarden voor **Gladheid** om meer scheiding te maken. Voor "
+"portretten, positioneer de selectie om alle haar van de persoon mee te nemen."
 
-#: ../../image_editor/enhancement_tools.rst:1073
+#: ../../image_editor/enhancement_tools.rst:1081
 msgid ""
 "**Performance**: higher iteration values for the **Subject Segmentation** "
 "require more processing time. For large images, you may need to be patient "
 "while the tool processes."
 msgstr ""
+"**Prestatie**: hogere iteratiewaarden voor de **Segmentatie van het "
+"onderwerp** vereist meer verwerkingstijd. Voor grotere afbeeldingen moet u "
+"geduldig zijn terwijl het hulpmiddel verwerkt."
 
-#: ../../image_editor/enhancement_tools.rst:1076
+#: ../../image_editor/enhancement_tools.rst:1084
 msgid "Technical Details"
 msgstr "Technische details"
 
-#: ../../image_editor/enhancement_tools.rst:1078
+#: ../../image_editor/enhancement_tools.rst:1086
 msgid "The Background Blur tool uses the following processing pipeline:"
 msgstr ""
+"Het hulpmiddel voor achtergrondvervaging gebruikt de volgende pijplijn voor "
+"verwerking"
 
-#: ../../image_editor/enhancement_tools.rst:1080
+#: ../../image_editor/enhancement_tools.rst:1088
 msgid ""
 "**Subject Isolation**: uses OpenCV's GrabCut algorithm to separate the "
 "subject from the background. The number of iterations can be adjusted for "
 "better accuracy with complex subjects using the **Subject Segmentation** "
 "parameter."
 msgstr ""
+"**Isolatie van het onderwerp**: gebruikt OpenCV's GrabCut algoritme om het "
+"onderwerp te scheiden van de achtergrond. Het aantal iteraties kan aangepast "
+"worden voor betere nauwkeurigheid met complexe onderwerpen met gebruik van "
+"de parameter **Segmentatie van onderwerp**."
 
-#: ../../image_editor/enhancement_tools.rst:1082
+#: ../../image_editor/enhancement_tools.rst:1090
 msgid ""
 "**Mask Refinement**: to smooth the segmentation mask, you can optionally "
 "dilates the mask to include more of the subject."
 msgstr ""
+"**Verfijning van masker**: om het segmentatiemasker glad te strijken kunt u "
+"optioneel het masker dilateren om meer van het onderwerp mee te nemen."
 
-#: ../../image_editor/enhancement_tools.rst:1084
+#: ../../image_editor/enhancement_tools.rst:1092
 msgid ""
 "**Background Blurring**: applies Gaussian blur to the background while "
 "preserving the subject. Uses a distance transform to create smooth "
 "transitions between blurred and sharp areas. The blur effect is controlled "
 "by the **Smoothness** parameter."
 msgstr ""
+"**Achtergrondvervaging**: pas Gaussiaanse vervaging toe op de achtergrond "
+"met behoud van het onderwerp. Gebruikt een afstandstransformatie om gladde "
+"overgangen tussen vervaagde en scherpe gebieden te maken. Het "
+"vervagingseffect wordt bestuurd door de parameter **Gladheid**."
 
-#: ../../image_editor/enhancement_tools.rst:1086
+#: ../../image_editor/enhancement_tools.rst:1094
 msgid ""
 "**Progressive Blur**: creates a gradual transition from sharp to blurred "
 "areas. The transition effect is controlled by the **Progressive Transition** "
 "parameter."
 msgstr ""
+"**Progressieve vervaging**: maakt een geleidelijke overgang van scherp naar "
+"vervaagde gebieden. Het overgangseffect wordt bestuurd door de parameter "
+"**Progressieve overgang**."
 
-#: ../../image_editor/enhancement_tools.rst:1089
+#: ../../image_editor/enhancement_tools.rst:1097
 msgid "Limitations"
 msgstr "Beperkingen"
 
-#: ../../image_editor/enhancement_tools.rst:1091
+#: ../../image_editor/enhancement_tools.rst:1099
 msgid ""
 "The tool works best when there's a clear contrast between the subject and "
 "background."
 msgstr ""
+"Het hulpmiddel werkt het beste wanneer er een helder contrast is tussen het "
+"onderwerp en de achtergrond."
 
-#: ../../image_editor/enhancement_tools.rst:1093
+#: ../../image_editor/enhancement_tools.rst:1101
 msgid ""
 "Complex backgrounds with similar colors to the subject may require manual "
 "adjustments."
 msgstr ""
+"Complexe achtergronden met vergelijkbare kleuren tot het onderwerp kunnen "
+"handmatige aanpassingen vereisen."
 
-#: ../../image_editor/enhancement_tools.rst:1095
+#: ../../image_editor/enhancement_tools.rst:1103
 msgid ""
 "Very fine details (like individual hair strands) may not be perfectly "
 "preserved."
 msgstr ""
+"Erg fijne details (zoals individuele haarstrengen) kunnen mogelijk niet "
+"perfect worden behouden."
 
-#: ../../image_editor/enhancement_tools.rst:1097
+#: ../../image_editor/enhancement_tools.rst:1105
 msgid "The preview shows an approximation of the final result."
-msgstr ""
+msgstr "Het voorbeeld toont een benadering van het uiteindelijke resultaat."
 
-#: ../../image_editor/enhancement_tools.rst:1100
+#: ../../image_editor/enhancement_tools.rst:1108
 msgid "Examples"
 msgstr "Voorbeelden"
 
-#: ../../image_editor/enhancement_tools.rst:1106
+#: ../../image_editor/enhancement_tools.rst:1114
 msgid "Original image with Subject Selection over the Canvas"
-msgstr ""
+msgstr "Originele afbeelding met selectie van onderwerp op het werkveld"
 
-#: ../../image_editor/enhancement_tools.rst:1112
+#: ../../image_editor/enhancement_tools.rst:1120
 msgid ""
 "After applying Background Blur (Smouthness: 85, Progressive Transition: 60, "
 "Subject Segmentation: 11)"
 msgstr ""
+"Na toepassen van achtergrondvervaging (Gladheid: 85, Progressieve overgang: "
+"60, segmentatie van onderwerp : 11)"
 
-#: ../../image_editor/enhancement_tools.rst:1115
+#: ../../image_editor/enhancement_tools.rst:1123
 msgid "Advanced Usage"
 msgstr "Gevorderd gebruik"
 
-#: ../../image_editor/enhancement_tools.rst:1117
+#: ../../image_editor/enhancement_tools.rst:1125
 msgid "For more control over the effect:"
-msgstr ""
+msgstr "Voor meer controle over het effect:"
 
-#: ../../image_editor/enhancement_tools.rst:1119
+#: ../../image_editor/enhancement_tools.rst:1127
 msgid ""
 "**Multiple Applications**: you can apply the tool multiple times with "
 "different settings. Use lower **Smoothness** values for subtle effects, "
 "higher values for dramatic effects."
 msgstr ""
+"**Meerdere keren toepassen**: u kunt het hulpmiddel meerdere keren met "
+"verschillende instellingen toepassen. Gebruik lagere waarden voor "
+"**Gladheid** voor subtiele effecten, hogere waarden voor dramatische "
+"effecten."
 
-#: ../../image_editor/enhancement_tools.rst:1121
+#: ../../image_editor/enhancement_tools.rst:1129
 msgid ""
 "**Combining with Other Tools**: use with the :ref:`Local Contrast "
 "<enhance_localcontrast>` tool to enhance the subject after blurring the "
 "background. Combine with the :ref:`Vignetting Correction "
 "<enhance_vignetting>` tool to further emphasize the subject."
 msgstr ""
+"**Combineren met andere hulpmiddelen**: gebruiken met het hulpmiddel :ref:"
+"`Lokaal contrast <enhance_localcontrast>` om het onderwerp na vervaging van "
+"de achtergrond te verbeteren. Combineren met het hulpmiddel :ref:"
+"`Vignetteringscorrectie <enhance_vignetting>` om het onderwerp verder te "
+"accentueren."
 
-#: ../../image_editor/enhancement_tools.rst:1124
+#: ../../image_editor/enhancement_tools.rst:1132
 msgid "Troubleshooting"
 msgstr "Probleemoplossing"
 
-#: ../../image_editor/enhancement_tools.rst:1126
+#: ../../image_editor/enhancement_tools.rst:1134
 msgid ""
 "**Subject not properly detected**: try increasing the **Subject "
 "Segmentation** value. Make sure your selection includes all of the subject. "
 "For complex subjects, you may need to manually adjust the selection."
 msgstr ""
+"**Onderwerp niet juist gedetecteerd**: probeer de waarde van **Segmentatie "
+"van het onderwerp** te verhogen. Ga na dat uw selectie alles van het "
+"onderwerp omvat. Voor complexe onderwerpen kan het nodig zijn de selectie "
+"handmatig aan te passen."
 
-#: ../../image_editor/enhancement_tools.rst:1128
+#: ../../image_editor/enhancement_tools.rst:1136
 msgid ""
 "**Blur effect too strong/weak**: adjust the **Smoothness** parameter. For "
 "subtle effects, use lower values (3-8)."
 msgstr ""
+"**Vervagingseffect te sterk/zwak**: pas de parameter **Gladheid** aan. Voor "
+"subtiele effecten, gebruik lagere waarden (3-8)."
 
-#: ../../image_editor/enhancement_tools.rst:1130
+#: ../../image_editor/enhancement_tools.rst:1138
 msgid ""
 "**Unnatural transition**: increase the **Progressive Transition** value for "
 "smoother effect. Try adjusting your selection to better isolate the subject."
 msgstr ""
+"**Onnatuurlijke overgang**: verhoog de waarde van de **Progressieve "
+"overgang** voor een gladder effect. Probeer uw selectie aan te passen om het "
+"onderwerp beter te isoleren."
 
-#: ../../image_editor/enhancement_tools.rst:1132
+#: ../../image_editor/enhancement_tools.rst:1140
 msgid ""
 "**Performance issues**: reduce the **Subject Segmentation** value for faster "
 "processing. Note also that the tool consumes a lot of memory to work with "
 "large images."
 msgstr ""
+"**Prestatieproblemen**: reduceer de waarde van **Segmentatie van het "
+"onderwerp** voor snellere verwerking. Merk ook op dat het hulpmiddel heel "
+"wat geheugen gebruikt om te werken met grote afbeeldingen."
 
-#: ../../image_editor/enhancement_tools.rst:1135
+#: ../../image_editor/enhancement_tools.rst:1143
 msgid "See Also"
 msgstr "Zie ook"
 
-#: ../../image_editor/enhancement_tools.rst:1137
+#: ../../image_editor/enhancement_tools.rst:1145
 msgid ":ref:`Local Contrast <enhance_localcontrast>`"
-msgstr ""
+msgstr ":ref:`Lokaal contrast <enhance_localcontrast>`"
 
-#: ../../image_editor/enhancement_tools.rst:1138
+#: ../../image_editor/enhancement_tools.rst:1146
 msgid ":ref:`Sharpen (sharpen, unsharp mask, refocus) <enhance_sharpen>`"
 msgstr ""
+":ref:`Verscherpen (verscherpen, onscherpte masker, opnieuw focussen) "
+"<enhance_sharpen>`"
 
-#: ../../image_editor/enhancement_tools.rst:1139
+#: ../../image_editor/enhancement_tools.rst:1147
 msgid ":ref:`Vignetting Correction <enhance_vignetting>`"
 msgstr ":ref:`Correctie van vignettering <enhance_vignetting>`"
 
