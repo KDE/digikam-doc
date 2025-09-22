@@ -1107,17 +1107,19 @@ Limitations
 Examples
 ~~~~~~~~
 
-.. figure:: images/editor_backgroundblur_before.webp
-   :alt:
-   :align: center
+.. figure:: videos/editor_backgroundblur_sample1.webp
+    :width: 500px
+    :alt:
+    :align: center
 
-   Original image with Subject Selection over the Canvas
+    Screencast of the Tool to Increase the Depth-of-Field from an HEIF photo taken with an iphone 15 pro.
 
-.. figure:: images/editor_backgroundblur_after.webp
-   :alt:
-   :align: center
+.. figure:: videos/editor_backgroundblur_sample2.webp
+    :width: 500px
+    :alt:
+    :align: center
 
-   After applying Background Blur (Smoothness: 85, Progressive Transition: 60, Subject Isolation: 11)
+    Screencast of the Tool processing a 16 bits color depth DNG image.
 
 Advanced Usage
 ~~~~~~~~~~~~~~
