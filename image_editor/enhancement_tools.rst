@@ -1108,14 +1108,12 @@ Examples
 ~~~~~~~~
 
 .. figure:: videos/editor_backgroundblur_sample1.webp
-    :width: 500px
     :alt:
     :align: center
 
     Screencast of the Tool to Increase the Depth-of-Field from an HEIF photo taken with an iphone 15 pro.
 
 .. figure:: videos/editor_backgroundblur_sample2.webp
-    :width: 500px
     :alt:
     :align: center
 
