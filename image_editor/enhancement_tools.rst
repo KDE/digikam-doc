@@ -252,7 +252,6 @@ Select an area to see bad pixels in the preview and the filtered result using on
 
     - **Cubic**: the pixels which have a distance of 3 or less from the pixel block are used to calculate a bi-cubic surface (2-dim), or a group of cubic curves (1-dim), which is then used to assign interpolated colors to the pixels in the block.
 
-
 .. _enhance_localcontrast:
 
 Local Contrast
@@ -270,10 +269,47 @@ The **Local Contrast** tool uses a Low Dynamic Range `Tonemapping <https://en.wi
 
     The Image Editor Local Contrast Tool
 
-Open the photo you want in the Image editor and choose :menuselection:`Enhance --> Local Contrast`. The tool lets you apply up to four tonemapping operations called stages. Each **Stage** offers two parameters for you to tweak: **Power** and **Blur**. The former allows you to specify the desaturation level, while the latter lets you adjust the affected areas on the photo. To preview the result, hit the **Try** button. Once you are satisfied with the result, press **OK** to apply the process to the photo.
+Using the Local Contrast Tool
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Open the photo you want in the Image editor and choose :menuselection:`Enhance --> Local Contrast`.
+
+2. The tool lets you apply up to four tonemapping operations called stages. Each **Stage** offers two parameters for you to tweak: **Power** and **Blur**.
+
+   - **Power**: This parameter allows you to specify the desaturation level. Higher values will result in more desaturation.
+
+   - **Blur**: This parameter lets you adjust the affected areas on the photo. Higher values will affect larger areas.
+
+3. To preview the result, hit the **Try** button. Once you are satisfied with the result, press **OK** to apply the process to the photo.
+
+Tips for Best Results
+~~~~~~~~~~~~~~~~~~~~
+
+- **Start with Low Values**: Begin with low values for both Power and Blur, then gradually increase them to see the effect.
+
+- **Use Multiple Stages**: Experiment with multiple stages to achieve more complex effects.
+
+- **Avoid Overprocessing**: Be careful not to overprocess your images, as this can lead to unnatural looking photos.
+
+Parameters
+~~~~~~~~~~
+
+- **Function**: Specifies the type of function used for tonemapping. Options include **Power** function and **Linear** function.
+
+- **High Saturation**: Controls the saturation of the image. Higher values result in more saturated colors.
+
+- **Low Saturation**: Controls the saturation of the image in areas where the brightness is increased. Lower values result in less saturation in these areas.
+
+- **Stretch Contrast**: If enabled, the filter will stretch the contrast of the image to improve the dynamic range.
+
+Examples
+~~~~~~~~
+
+- **Landscape Photos**: For landscape photos, try using a low Power value and a moderate Blur value to enhance the details in the sky and foreground.
+
+- **Portrait Photos**: For portraits, use a higher Power value to bring out the details in the face while keeping the background soft.
 
 While the Local Contrast tool may sound like an easy way to fix photos, you should use it with care: sometimes it can do more damage than good, producing unnatural looking photos.
-
 
 .. _enhance_nr:
 
