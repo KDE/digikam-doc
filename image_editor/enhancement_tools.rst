@@ -317,7 +317,7 @@ While the Local Contrast tool may sound like an easy way to fix photos, you shou
 See Also
 ~~~~~~~~
 
-- :ref:`White Balance <colors_wb>`
+- :ref:`White Balance <color_wb>`
 - :ref:`Sharpen (sharpen, unsharp mask, refocus) <enhance_sharpen>`
 
 .. _enhance_nr:
