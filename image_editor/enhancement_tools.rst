@@ -310,7 +310,19 @@ Examples
 
 - **Landscape Photos**: For landscape photos, try using a low Power value and a moderate Blur value to enhance the details in the sky and foreground.
 
+.. figure:: videos/editor_localcontrast_landscape.webp
+    :alt:
+    :align: center
+
+    Screencast of the Tool to expand the dynamic of a landscape photo taken with low a luminosity.
+
 - **Portrait Photos**: For portraits, use a higher Power value to bring out the details in the face while keeping the background soft.
+
+.. figure:: videos/editor_localcontrast_portrait.webp
+    :alt:
+    :align: center
+
+    Screencast of the Tool to Increase details of a Marmot head taken at the entrance to a cave.
 
 While the Local Contrast tool may sound like an easy way to fix photos, you should use it with care: sometimes it can do more damage than good, producing unnatural looking photos.
 
