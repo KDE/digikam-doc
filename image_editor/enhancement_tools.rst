@@ -257,6 +257,9 @@ Select an area to see bad pixels in the preview and the filtered result using on
 Local Contrast
 --------------
 
+Overview
+~~~~~~~~
+
 The digiKam **Local Contrast** tool renders pseudo-HDR images.
 
 There are multiple ways to render HDR images to improve photos containing under or overexposed areas. The usual approach is to take multiple shots with different exposures. digiKam's :ref:`Blend Stacked Images <expo_blending>` tool can then be used to combined the images into an HDR image. This works nicely but suffers from some limitation. For example, the approach only works with static subjects. But what if you want an HDR effect from a single image, including images taken of dynamic subjects?
@@ -310,6 +313,12 @@ Examples
 - **Portrait Photos**: For portraits, use a higher Power value to bring out the details in the face while keeping the background soft.
 
 While the Local Contrast tool may sound like an easy way to fix photos, you should use it with care: sometimes it can do more damage than good, producing unnatural looking photos.
+
+See Also
+~~~~~~~~
+
+- :ref:`White Balance <colors_wb>`
+- :ref:`Sharpen (sharpen, unsharp mask, refocus) <enhance_sharpen>`
 
 .. _enhance_nr:
 
