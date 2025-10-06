@@ -8,7 +8,7 @@
 
    :license: see Credits and License page for details (https://docs.digikam.org/en/credits_license.html)
 
-.. _remote_export:
+.. _file_transfer:
 
 :ref:`Export To Remote Computer <export_tools>`
 ===============================================
