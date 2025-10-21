@@ -55,6 +55,7 @@ echo "CodeSpell ignore words  : $CODESPELL_IGNORE_WORDS"
 # Generate TXT report
 
 codespell \
+         --count \
          -q 0 \
          -C 1 \
          -S "$CODESPELL_IGNORE_PATTERN" \
