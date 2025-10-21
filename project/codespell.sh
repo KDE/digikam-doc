@@ -1,0 +1,181 @@
+#!/bin/bash
+
+# SPDX-FileCopyrightText: 2013-2025 by Gilles Caulier, <caulier dot gilles at gmail dot com>
+#
+# Run CodeSpell static analyzer on whole digiKam source code.
+# https://github.com/codespell-project/codespell
+#
+# To install last version: pipx install codespell
+#
+# To ignore false positive in source code uses inline comment:
+# https://github.com/codespell-project/codespell?tab=readme-ov-file#inline-ignore
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+
+# No halt and catch errors in this script, codespell do not like it
+
+. ./common.sh
+
+# Analyzer configuration.
+. .codespell
+
+StartScript
+checksCPUCores
+
+if ! which codespell ; then
+
+    echo "CodeSpell Static analyzer is not available."
+    echo "Please install CodeSpell from https://github.com/codespell-project/codespell"
+    echo "Aborted..."
+    exit -1
+
+else
+
+    echo "Check CodeSpell static analyzer passed..."
+
+fi
+
+ORIG_WD="`pwd`"
+REPORT_DIR="report.codespell"
+
+# Get active git branches to create report description string
+
+TITLE="digiKam-doc-$(parseGitBranch)$(parseGitHash)"
+echo "CodeSpell Static Analyzer task name: $TITLE"
+
+rm -fr $ORIG_WD/$REPORT_DIR
+mkdir -p "$ORIG_WD/$REPORT_DIR"
+
+# Print the skipped directories taken from the config file.
+
+echo "CodeSpell ignore pattern: $CODESPELL_IGNORE_PATTERN"
+echo "CodeSpell ignore words  : $CODESPELL_IGNORE_WORDS"
+
+# Generate TXT report
+
+codespell \
+         -C 1 \
+         -S "$CODESPELL_IGNORE_PATTERN" \
+         -L $CODESPELL_IGNORE_WORDS \
+         ../ \
+         1> ./codespell-trace.txt
+
+# NOTE: codespell return value is not documented and not suitable.
+
+if [[ -f ./codespell-trace.txt ]] ; then
+
+    ISSUES=$(grep -c '^> ' ./codespell-trace.txt)
+    mv ./codespell-trace.txt $REPORT_DIR
+
+    # Create an HTML report
+
+    TRACE_FILE="$REPORT_DIR/codespell-trace.txt"
+    HTML_FILE="index.html"
+
+    # HTML header
+
+    cat > "$HTML_FILE" << 'EOF'
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CodeSpell Report</title>
+            <style>
+                body { font-family: Arial, sans-serif; margin: 20px; }
+                h1 { color: #333; }
+                table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+                th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                tr:nth-child(even) { background-color: #f9f9f9; }
+                .error { color: red; font-weight: bold; }
+                .file { color: blue; }
+                .line { color: green; }
+            </style>
+        </head>
+        <body>
+            <h1>CodeSpell Report for __TITLE__</h1>
+            <p>Total Errors: __ERRORS__</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>File</th>
+                        <th>Line</th>
+                        <th>Error</th>
+                        <th>Suggestion</th>
+                    </tr>
+                </thead>
+                <tbody>
+EOF
+
+# Read trace file and generate the spreadsheet HTML
+
+total_errors=0
+
+while IFS= read -r line ; do
+
+    # Ignore lines without "==>"
+
+    if [[ "$line" == *"==>"* ]] ; then
+
+        total_errors=$((total_errors+1))
+
+        # Uses awk to extract all info
+
+        file=$(echo "$line" | awk -F':' '{print $1}')
+        line_num=$(echo "$line" | awk -F':' '{print $2}' | awk '{print $1}')
+        error=$(echo "$line" | awk -F'==' '{print $1}' | awk '{print $NF}')
+        suggestion=$(echo "$line" | awk -F'==' '{print $2}' | awk '{print $2}')
+
+        # Cleanup file path to remove ../../
+
+        clean_file=$(echo "$file" | sed 's|^\.\./||')
+
+        # ESC special char for the HTML code
+
+        file_escaped=$(echo "$clean_file" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'\''/\&#39;/g;')
+        error_escaped=$(echo "$error" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'\''/\&#39;/g;')
+        suggestion_escaped=$(echo "$suggestion" | sed 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'\''/\&#39;/g;')
+
+        # Generate the URL for the Git repository
+
+        git_url="https://invent.kde.org/documentation/digikam-doc/-/blob/master/$clean_file?plain=1#L$line_num"
+
+        # Append a line to the spreadsheet
+
+        cat >> "$HTML_FILE" << EOF
+            <tr>
+                <td class="file">$file_escaped</td>
+                <td class="line"><a href="$git_url" target="_blank">$line_num</a></td>
+                <td class="error">$error_escaped</td>
+                <td>$suggestion_escaped</td>
+            </tr>
+EOF
+
+    fi
+
+done < "$TRACE_FILE"
+
+    date=$(date +"%Y-%m-%d")
+
+    # HTML footer
+
+    cat >> "$HTML_FILE" << 'EOF'
+        </tbody>
+        </table>
+            <p>Report generated by <a href="https://github.com/codespell-project/codespell">CodeSpell static analyzer</a> at __DATE__</p>
+        </body>
+    </html>
+EOF
+
+    sed -i "s|__TITLE__|$TITLE|g" $HTML_FILE
+    sed -i "s|__ERRORS__|$total_errors|g" $HTML_FILE
+    sed -i "s|__DATE__|$date|g" $HTML_FILE
+    mv ./$HTML_FILE $REPORT_DIR
+
+fi
+
+cd $ORIG_WD
+
+TerminateScript

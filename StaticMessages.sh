@@ -45,7 +45,7 @@ function import_po_dirs # First parameter will be a path that will be a director
     # https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language
     # -> Languages supported by sphinx, but not supported by KDEs l10n: cak – Kaqchikel, hi_IN – Hindi (India),
     #    sr@latin – Serbian (Latin), sr_RS – Serbian (Cyrillic), ur – Urdu
-    for lang in ar bg bn ca cs cy da de el eo es et eu fa fi fr he hi hr hu id it ja ko lt lv mk nb_NO ne nl pl pt_BR pt_PT ro ru si sk sl sq sr sv ta te tr uk_UA vi zh_CN zh_TW
+    for lang in ar bg bn ca cs cy da de el eo es et eu fa fi fr he hi hr hu id it ja ko lt lv mk nb_NO ne nl pl pt_BR pt_PT ro ru si sk sl sq sr sv ta te tr uk_UA vi zh_CN zh_TW       # codespell:ignore
     do
         if [ -d "$podir/$lang" ]; then
             echo "> processing language $lang"
