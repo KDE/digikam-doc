@@ -67,6 +67,13 @@ To delete an Album, click with the right mouse button over the Album in the Albu
 
 Albums deleted from digiKam are moved into the internal Trash Can. There is an option to change this behavior, so that delete will remove the Album and all of the photographs in it. This behavior can be changed by first selecting :menuselection:`Settings --> Configure digiKam...` , then selecting the **Miscellaneous** page. At the top of this page are the settings that control what happens when a photograph is deleted.
 
+Repair hidden items
+-------------------
+
+This option available by a click with the right mouse button over the Album in the Albums tree and select **Repair hidden items** from the context menu, dissolves groups if group members have been copied or moved across different albums in the meantime. Otherwise, it would be almost impossible to find the group leader to display the hidden item. It also repair broken item versioning that occurred due to code errors using prior digiKam versions.
+
+For more information about the items grouping feature, see :ref:`this section of this documentation <grouping_photograph>`.
+
 .. _adding_photograph:
 
 Adding a Photograph to an Album
