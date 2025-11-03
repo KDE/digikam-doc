@@ -21,7 +21,9 @@ This tool allows you to copy files from your collections to another place on you
 
     The Export to Local Computer Dialog
 
-The **Target location** text field sets the target path where the file will be copied. The **Browse** button will show a file selection dialog to navigate your computer's folder hierarchy and select the right directory.
+A list of files from the collections to be exported is display on the left. By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items to the list.
+
+On the right , the **Target location** text field sets the target path where the file will be copied. The **Browse** button will show a file selection dialog to navigate your computer's folder hierarchy and select the right directory.
 
 The **Target file behavior** options allow you to choose the action to perform with the selected files:
 
@@ -31,8 +33,6 @@ The **Target file behavior** options allow you to choose the action to perform w
     - **Include the sidecars of the items** will copy any existing sidecar files.
     - **Overwrite existing items in the target** will overwrite target files if they are already present.
     - **Use the album path of the items in the target** will rename target files using the original album path as a template name.
-
-A list of files from the collections to be exported is display below. By default, the tool proposes to export the currently selected items from the icon-view. The **+** Photos button can be used to append more items to the list.
 
 The **Adjust image properties** check-box enables a set of options to convert files to another **Image format** (JPEG, or PNG). The photos will be resized before copying to the target. The **Image quality** and **Image length** settings will be used to adjust the maximum height and the compression. The width calculation will be done so as to maintain the aspect ratio.
 
