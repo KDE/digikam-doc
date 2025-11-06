@@ -23,7 +23,7 @@ This tool allows you to upload files from your collections to a remote computer 
 
     The Export to Remote Computer Dialog
 
-Protocols such as **fish** (ssh), **ftp**, **smb**, etc, can be used to connect to the **Target Location** url. For example:
+In this dialog, you can use protocols such as **fish://** (ssh), **ftp://**, **sftp://**, **smb://**, **network://**, **webdav://**etc, to connect to the remote computer. For example,
 
     - **fish://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using SSH protocol (Secure SHell).
     - **ftp://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using FTP protocol (File Transfer Protocol).
