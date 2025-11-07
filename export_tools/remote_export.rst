@@ -116,21 +116,12 @@ KDE's KIO-Slaves allow you to access local and remote resources seamlessly from 
 How to use this tool
 --------------------
 
-In this dialog, to be connected to the remote device, you can use protocols such as:
-
-    - **fish://**: (ssh).
-    - **ftp://**: .
-    - **sftp://**: 
-    - **smb://**: 
-    - **network://**: 
-    - **webdav://**: 
-
-     For example,
+In this dialog, to be connected to the remote device, you can use a protocol in the **Target Location** url field such as:
 
     - **fish://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using SSH protocol (Secure SHell).
     - **ftp://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using FTP protocol (File Transfer Protocol).
 
-Instead of using the **Target Location** url field, you can use the native desktop url selector by pressing the **Select Export Location** button. A dialog will appear where you can see and select remote devices in the network section of the dialog:
+An alternative will be to use the native desktop url selector by pressing the **Select Export Location** button. A dialog will appear where you can see and select remote devices in the network section of the dialog:
 
 .. figure:: images/export_remote_url_selector.webp
     :alt:

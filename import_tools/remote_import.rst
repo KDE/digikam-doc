@@ -40,12 +40,12 @@ To choose files to import, press **Select Source Location** on the left side of 
 
     The URLs Selector Dialog Under Linux Choosing Files from a NAS Sharing Contents through Samba File System.
 
-In this dialog, you can use protocols such as **fish://** (ssh), **ftp://**, **sftp://**, **smb://**, **network://**, **webdav://**etc, to connect to the remote computer. For example,
+In this dialog, to be connected to the remote device, you can use a protocol in the **Source Location** url field such as:
 
     - **fish://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using SSH protocol (Secure SHell).
     - **ftp://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using FTP protocol (File Transfer Protocol).
 
-Instead of using the **Source Location** url field, you can use the native desktop url selector by pressing the **Select Source Location** button. A dialog will appear where you can see and select remote devices in the network section of the dialog:
+An alternative will be to use the native desktop url selector by pressing the **Select Import Location** button. A dialog will appear where you can see and select remote devices in the network section of the dialog:
 
 .. note::
 
