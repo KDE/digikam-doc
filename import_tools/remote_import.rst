@@ -13,6 +13,9 @@
 :ref:`Import from Remote Computer <import_tools>`
 =================================================
 
+Introduction
+------------
+
 This tool downloads files into your collections from a remote networked computer. It is available from the :menuselection:`Import --> Import from remote storage` :kbd:`Alt+Shift+K` menu entry or the corresponding icon from the **Tools** tab in the Right Sidebar.
 
 .. figure:: images/import_remote_dialog.webp
@@ -20,6 +23,14 @@ This tool downloads files into your collections from a remote networked computer
     :align: center
 
     The Import from Remote Computer Dialog
+
+KIO-Slaves Protocols
+--------------------
+
+The tool uses the KDE KIO-slaves in the background to communicate with the remote source. See :ref:`this section <kio_protocols>` of this documentation for the list of usable protocols.
+
+How to use this tool
+--------------------
 
 To choose files to import, press **Select Source Location** on the left side of the dialog. A native desktop URLs selector will appear allowing you to see remotely connected devices listed in the network section:
 

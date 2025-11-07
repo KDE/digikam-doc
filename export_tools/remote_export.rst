@@ -18,7 +18,7 @@
 Introduction
 ------------
 
-This tool allows you to upload files from your collections to a remote computer using a network. It is available from the :menuselection:`Export --> Export to remote storage` :kbd:`Ctrl+Alt+Shift+K` menu entry or the corresponding icon in the **Tools** tab in the Right Sidebar. The tool uses the KDE KIO-slaves in the background.
+This tool allows you to upload files from your collections to a remote computer using a network. It is available from the :menuselection:`Export --> Export to remote storage` :kbd:`Ctrl+Alt+Shift+K` menu entry or the corresponding icon in the **Tools** tab in the Right Sidebar. The tool uses the KDE KIO-slaves in the background to communicate with the remote target.
 
 .. figure:: images/export_remote_dialog.webp
     :alt:
