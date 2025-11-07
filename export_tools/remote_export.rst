@@ -15,7 +15,10 @@
 
 .. contents::
 
-This tool allows you to upload files from your collections to a remote computer using a network. It is available from the :menuselection:`Export --> Export to remote storage` :kbd:`Ctrl+Alt+Shift+K` menu entry or the corresponding icon in the **Tools** tab in the Right Sidebar.
+Introduction
+------------
+
+This tool allows you to upload files from your collections to a remote computer using a network. It is available from the :menuselection:`Export --> Export to remote storage` :kbd:`Ctrl+Alt+Shift+K` menu entry or the corresponding icon in the **Tools** tab in the Right Sidebar. The tool uses the KDE KIO-slaves in the background.
 
 .. figure:: images/export_remote_dialog.webp
     :alt:
@@ -23,7 +26,106 @@ This tool allows you to upload files from your collections to a remote computer 
 
     The Export to Remote Computer Dialog
 
-In this dialog, you can use protocols such as **fish://** (ssh), **ftp://**, **sftp://**, **smb://**, **network://**, **webdav://**etc, to connect to the remote computer. For example,
+.. _kio_protocols:
+
+KIO-Slaves Protocols
+--------------------
+
+KDE's KIO-Slaves allow you to access local and remote resources seamlessly from applications like digiKam. Below is a list of the most commonly used KIO-Slaves protocols for file export and remote access:
+
+.. list-table::
+   :widths: 20 50 30
+   :header-rows: 1
+
+   * - Protocol
+     - Description
+     - Example
+   * - ``file://``
+     - Access local files and directories.
+     - ``file:///home/user/folder/``
+   * - ``ftp://``
+     - Access files on an FTP server (unencrypted).
+     - ``ftp://user:password@server.com/folder/``
+   * - ``sftp://``
+     - Securely access files via SFTP (SSH).
+     - ``sftp://user@server.com/path/``
+   * - ``fish://``
+     - Access files over SSH (alternative to SFTP).
+     - ``fish://user@server.com/path/``
+   * - ``smb://``
+     - Access Windows/Samba network shares.
+     - ``smb://server/share/``
+   * - ``nfs://``
+     - Access files on an NFS share.
+     - ``nfs://server/path/``
+   * - ``http://``
+     - Access web resources (read-only).
+     - ``http://example.com/file.txt``
+   * - ``https://``
+     - Securely access web resources.
+     - ``https://example.com/file.txt``
+   * - ``webdav://``
+     - Access files on a WebDAV server.
+     - ``webdav://server.com/path/``
+   * - ``webdavs://``
+     - Securely access files on a WebDAV server (HTTPS).
+     - ``webdavs://server.com/path/``
+   * - ``remote://``
+     - Manage saved network connections (SSH, FTP, etc.).
+     - ``remote:/`` (then select a saved connection)
+   * - ``man://``
+     - Access system manual pages.
+     - ``man:/ls``
+   * - ``info://``
+     - Access GNU info documentation.
+     - ``info:/bash``
+   * - ``tar://``
+     - Browse the contents of a tar archive.
+     - ``tar:///path/to/file.tar``
+   * - ``zip://``
+     - Browse the contents of a zip archive.
+     - ``zip:///path/to/file.zip``
+   * - ``audiocd://``
+     - Access audio tracks from a CD.
+     - ``audiocd:/?track=1``
+   * - ``system://``
+     - Access system information.
+     - ``system:/``
+   * - ``trash://``
+     - Access the trash bin.
+     - ``trash:/``
+   * - ``network://``
+     - Browse network resources (Samba, FTP, etc.).
+     - ``network:/``
+   * - ``fonts://``
+     - Access installed fonts.
+     - ``fonts:/``
+   * - ``applications://``
+     - Access installed applications.
+     - ``applications:/``
+   * - ``settings://``
+     - Access system settings.
+     - ``settings:/``
+
+.. warning::
+   Protocols like ``ftp://`` are **not secure**. Prefer ``sftp://`` or ``fish://`` for sensitive transfers.
+
+.. tip::
+   To see the full list of available KIO-Slaves on your system, open **KInfoCenter** (run ``kinfocenter``) and check the **Protocols** tab.
+
+How to use this tool
+--------------------
+
+In this dialog, to be connected to the remote device, you can use protocols such as:
+
+    - **fish://**: (ssh).
+    - **ftp://**: .
+    - **sftp://**: 
+    - **smb://**: 
+    - **network://**: 
+    - **webdav://**: 
+
+     For example,
 
     - **fish://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using SSH protocol (Secure SHell).
     - **ftp://user_name@remote_computer**: connect to the *remote_computer* with *user_name* using FTP protocol (File Transfer Protocol).
