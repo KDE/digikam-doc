@@ -30,7 +30,7 @@ The **Export to Local Computer** dialog is divided into two main sections:
 Target Location
 ---------------
 
-- Use the **Target Location** text field to specify the destination folder for your files.
+- Use the **Target location** text field to specify the destination folder for your files.
 - Click the **Browse** button to open a file selection dialog and navigate to your desired directory.
 
 Target File Behavior
@@ -38,22 +38,22 @@ Target File Behavior
 
 Choose how files are handled at the target location:
 
-- **Copy Files:** Creates duplicates of the original files.
-- **Create Symlinks:** Adds absolute symbolic links to the original files, avoiding data duplication.
-- **Create Relative Symlinks:** Adds relative symbolic links to the original files, avoiding data duplication.
-- **Include the Sidecars of the Items:** Copies any associated sidecar files (e.g., XMP, PP3) along with the main files.
-- **Overwrite existing Items in the Target:** Replaces files at the target location if they already exist.
-- **Use the Album Path of the Items in the Target:** Renames exported files using the original album path as part of the filename.
+- **Copy files:** Creates duplicates of the original files.
+- **Create symlinks:** Adds absolute symbolic links to the original files, avoiding data duplication.
+- **Create relative symlinks:** Adds relative symbolic links to the original files, avoiding data duplication.
+- **Include the sidecars of the items:** Copies any associated sidecar files (e.g., XMP, PP3) along with the main files.
+- **Overwrite existing items in the target:** Replaces files at the target location if they already exist.
+- **Use the album path of the items in the target:** Renames exported files using the original album path as part of the filename.
 
 Adjust Image Properties
 -----------------------
 
 Enable this option to convert files to another format (JPEG or PNG) and resize them before exporting:
 
-- **Image Format:** Select the desired output format.
-- **Image Quality:** Adjust the compression level for JPEG files.
-- **Image Length:** Set the maximum height for the exported images. The width is automatically calculated to maintain the aspect ratio. *Leave blank to preserve the original dimensions.*
-- **Write Sidecar Metadata to the Items:** Embeds metadata from sidecar files (e.g., XMP) into the exported image.
+- **Image format:** Select the desired output format.
+- **Image quality:** Adjust the compression level for JPEG files.
+- **Image length:** Set the maximum height for the exported images. The width is automatically calculated to maintain the aspect ratio. *Leave blank to preserve the original dimensions.*
+- **Write sidecar metadata to the items:** Embeds metadata from sidecar files (e.g., XMP) into the exported image.
 
 Remove all Metadata
 -------------------
@@ -63,9 +63,9 @@ Check this option to strip all Exif, IPTC, and XMP metadata from the exported fi
 Platform-Specific Notes
 -----------------------
 
-- **Directory Creation:** digiKam does not create target directories automatically. Ensure the target path exists before starting the export.
-- **Symbolic Links:** On Windows, creating symlinks may require administrator privileges or an NTFS-formatted drive. If symlinks fail, use "Copy Files" instead.
-- **Path Format:** On Windows, use forward slashes or double backslashes for paths (e.g., ``C:\\NewFolder`` or ``C:/NewFolder``).
+- **Directory creation:** digiKam does not create target directories automatically. Ensure the target path exists before starting the export.
+- **Symbolic links:** On Windows, creating symlinks may require administrator privileges or an NTFS-formatted drive. If symlinks fail, use **Copy files** instead.
+- **Path format:** On Windows, use forward slashes or double backslashes for paths (e.g., ``C:\\NewFolder`` or ``C:/NewFolder``).
 
 Error Handling
 --------------
