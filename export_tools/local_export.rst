@@ -36,27 +36,37 @@ Target Location
 - Use the **Target location** text field to specify the destination folder for your files.
 - Click the **Browse** button to open a file selection dialog and navigate to your desired directory.
 
+.. figure:: images/export_local_path_selector.webp
+    :alt:
+    :align: center
+
+    The Export to Local Computer Path Selector Dialog Under Linux.
+
 Target File Behavior
 --------------------
 
 Choose how files are handled at the target location:
 
-- **Copy files:** Creates duplicates of the original files.
-- **Create symlinks:** Adds absolute symbolic links to the original files, avoiding data duplication.
-- **Create relative symlinks:** Adds relative symbolic links to the original files, avoiding data duplication.
-- **Include the sidecars of the items:** Copies any associated sidecar files (e.g., XMP) along with the main files.
-- **Overwrite existing items in the target:** Replaces files at the target location if they already exist.
-- **Use the album path of the items in the target:** Renames exported files using the original album path as part of the filename.
+- **Copy files**: Creates duplicates of the original files.
+- **Create symlinks**: Adds absolute symbolic links to the original files, avoiding data duplication.
+- **Create relative symlinks**: Adds relative symbolic links to the original files, avoiding data duplication.
+- **Include the sidecars of the items**: Copies any associated sidecar files (e.g., XMP) along with the main files.
+- **Overwrite existing items in the target**: Replaces files at the target location if they already exist.
+- **Use the album path of the items in the target**: Renames exported files using the original album path as part of the filename.
 
 Adjust Image Properties
 -----------------------
 
 Enable this option to convert files to another format (JPEG or PNG) and resize them before exporting:
 
-- **Image format:** Select the desired output format.
-- **Image quality:** Adjust the compression level for JPEG files.
-- **Image length:** Set the maximum height for the exported images. The width is automatically calculated to maintain the aspect ratio. *Leave blank to preserve the original dimensions.*
+- **Image format**: Select the desired output format.
+- **Image quality**: Adjust the compression level for JPEG files.
+- **Image length**: Set the maximum height for the exported images. The width is automatically calculated to maintain the aspect ratio. *Leave blank to preserve the original dimensions.*
 - **Write sidecar metadata to the items:** Embeds metadata from sidecar files (e.g., XMP) into the exported image.
+
+.. note::
+
+    The tool doesn't upscale images, it only reduces their size.
 
 Remove all Metadata
 -------------------
