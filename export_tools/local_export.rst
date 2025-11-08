@@ -11,6 +11,9 @@
 :ref:`Export To Local Computer <export_tools>`
 ==============================================
 
+Introduction
+------------
+
 This tool allows you to copy or link files from your digiKam collections to another location on your computer (typically outside your collections). You can also modify file properties during the export process. Access this tool via the **Export → Export to local storage** menu (:kbd:`Ctrl+Alt+Shift+L`) or the corresponding icon in the **Tools** tab of the Right Sidebar.
 
 .. figure:: images/export_local_dialog.webp
