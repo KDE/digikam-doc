@@ -41,7 +41,7 @@ Choose how files are handled at the target location:
 - **Copy files:** Creates duplicates of the original files.
 - **Create symlinks:** Adds absolute symbolic links to the original files, avoiding data duplication.
 - **Create relative symlinks:** Adds relative symbolic links to the original files, avoiding data duplication.
-- **Include the sidecars of the items:** Copies any associated sidecar files (e.g., XMP, PP3) along with the main files.
+- **Include the sidecars of the items:** Copies any associated sidecar files (e.g., XMP) along with the main files.
 - **Overwrite existing items in the target:** Replaces files at the target location if they already exist.
 - **Use the album path of the items in the target:** Renames exported files using the original album path as part of the filename.
 
