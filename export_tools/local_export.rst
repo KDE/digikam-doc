@@ -17,7 +17,7 @@ Introduction
 This tool allows you to copy or link files from your digiKam collections to another location on your computer (typically outside your collections). You can also modify file properties during the export process. Access this tool via the **Export → Export to local storage** menu (:kbd:`Ctrl+Alt+Shift+L`) or the corresponding icon in the **Tools** tab of the Right Sidebar.
 
 .. figure:: images/export_local_dialog.webp
-    :alt: Export to Local Computer dialog in digiKam
+    :alt: Export to Local Storage dialog in digiKam
     :align: center
 
     The Export to Local Storage dialog.
@@ -27,20 +27,22 @@ Export Dialog Overview
 
 The **Export to Local Storage** dialog is divided into two main sections:
 
-- **Left Panel:** Displays a list of files selected for export. By default, the tool includes the currently selected items from the icon-view. Use the **+** button to add more items to the list.
-- **Right Panel:** Configure the export settings, including the target location and file behavior.
+- **Left Panel**: Displays a list of files selected for export. By default, the tool includes the currently selected items from the icon-view. Use the **+** button to add more items to the list.
+
+- **Right Panel**: Configure the export settings, including the target location and file behavior.
 
 Target Location
 ---------------
 
 - Use the **Target location** text field to specify the destination folder for your files.
+
 - Click the **Browse** button to open a file selection dialog and navigate to your desired directory.
 
 .. figure:: images/export_local_path_selector.webp
-    :alt:
+    :alt: Export to Local Storage Path Selector Dialog
     :align: center
 
-    The Export to Local Storage Path Selector Dialog Under Linux.
+    The Export to Local Storage Path Selector Dialog under Linux.
 
 Target File Behavior
 --------------------
@@ -48,10 +50,15 @@ Target File Behavior
 Choose how files are handled at the target location:
 
 - **Copy files**: Creates duplicates of the original files.
+
 - **Create symlinks**: Adds absolute symbolic links to the original files, avoiding data duplication.
+
 - **Create relative symlinks**: Adds relative symbolic links to the original files, avoiding data duplication.
+
 - **Include the sidecars of the items**: Copies any associated sidecar files (e.g., XMP) along with the main files.
+
 - **Overwrite existing items in the target**: Replaces files at the target location if they already exist.
+
 - **Use the album path of the items in the target**: Renames exported files using the original album path as part of the filename.
 
 Adjust Image Properties
@@ -60,13 +67,16 @@ Adjust Image Properties
 Enable this option to convert files to another format (JPEG or PNG) and resize them before exporting:
 
 - **Image format**: Select the desired output format.
+
 - **Image quality**: Adjust the compression level for JPEG files.
+
 - **Image length**: Set the maximum height for the exported images. The width is automatically calculated to maintain the aspect ratio. *Leave blank to preserve the original dimensions.*
-- **Write sidecar metadata to the items:** Embeds metadata from sidecar files (e.g., XMP) into the exported image.
+
+- **Write sidecar metadata to the items**: Embeds metadata from sidecar files (e.g., XMP) into the exported image.
 
 .. note::
 
-    The tool doesn't upscale images, it only reduces their size.
+    The tool does not upscale images; it only reduces their size.
 
 Remove all Metadata
 -------------------
@@ -76,12 +86,21 @@ Check this option to strip all Exif, IPTC, and XMP metadata from the exported fi
 Platform-Specific Notes
 -----------------------
 
-- **Directory creation:** digiKam does not create target directories automatically. Ensure the target path exists before starting the export.
-- **Symbolic links:** On Windows, creating symlinks may require administrator privileges or an NTFS-formatted drive. If symlinks fail, use **Copy files** instead.
+- **Directory creation**: digiKam does not create target directories automatically and will prompt the user if necessary. If you want to export content without interacting with the computer during the process (for example, when exporting a large collection of files), ensure the target path exists before starting the export. You can do this using the path selector dialog.
+
+.. figure:: images/export_local_prompt_dialog.webp
+    :alt: Export to Local Storage Path Prompt Dialog
+    :align: center
+
+    The Export to Local Storage Path Prompt Dialog under Linux.
+
+- **Symbolic links**: On Windows, creating symlinks may require administrator privileges or an NTFS-formatted drive. If symlinks fail, use **Copy files** instead.
+
 - **Path format:** On Windows, use forward slashes or double backslashes for paths (e.g., ``C:\\NewFolder`` or ``C:/NewFolder``).
 
 Error Handling
 --------------
 
-- If the target directory does not exist, digiKam will display an error. Either create the directory manually or select an existing folder using the **Browse** button.
+- If the target directory does not exist, digiKam will display a dialog asking whether to create it or abort the process. Using the **Browse** button, you can create the directory manually while selecting the target path or select an existing folder.
+
 - If the export fails, check the target path and permissions, then retry.
