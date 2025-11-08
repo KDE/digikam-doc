@@ -1,5 +1,5 @@
 .. meta::
-   :description: digiKam Export to Local Computer tool: copy or link files, adjust properties, and manage metadata.
+   :description: digiKam Export to Local Storage tool: copy or link files, adjust properties, and manage metadata.
    :keywords: digiKam, documentation, user manual, photo management, open source, free, export, local computer, export settings, file management, symbolic links, metadata
 
 .. metadata-placeholder
@@ -8,7 +8,7 @@
 
 .. _local_export:
 
-:ref:`Export To Local Computer <export_tools>`
+:ref:`Export To Local Storage <export_tools>`
 ==============================================
 
 Introduction
@@ -20,12 +20,12 @@ This tool allows you to copy or link files from your digiKam collections to anot
     :alt: Export to Local Computer dialog in digiKam
     :align: center
 
-    The Export to Local Computer dialog.
+    The Export to Local Storage dialog.
 
 Export Dialog Overview
 ----------------------
 
-The **Export to Local Computer** dialog is divided into two main sections:
+The **Export to Local Storage** dialog is divided into two main sections:
 
 - **Left Panel:** Displays a list of files selected for export. By default, the tool includes the currently selected items from the icon-view. Use the **+** button to add more items to the list.
 - **Right Panel:** Configure the export settings, including the target location and file behavior.
@@ -40,7 +40,7 @@ Target Location
     :alt:
     :align: center
 
-    The Export to Local Computer Path Selector Dialog Under Linux.
+    The Export to Local Storage Path Selector Dialog Under Linux.
 
 Target File Behavior
 --------------------
