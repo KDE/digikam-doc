@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Digikam Manual 8.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-07 01:52+0000\n"
-"PO-Revision-Date: 2025-11-05 07:47-0300\n"
+"POT-Creation-Date: 2025-11-08 01:55+0000\n"
+"PO-Revision-Date: 2025-11-07 08:36-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -33,7 +33,11 @@ msgstr ""
 msgid ":ref:`Import from Remote Computer <import_tools>`"
 msgstr ":ref:`Importar de um computador remoto <import_tools>`"
 
-#: ../../import_tools/remote_import.rst:16
+#: ../../import_tools/remote_import.rst:17
+msgid "Introduction"
+msgstr ""
+
+#: ../../import_tools/remote_import.rst:19
 msgid ""
 "This tool downloads files into your collections from a remote networked "
 "computer. It is available from the :menuselection:`Import --> Import from "
@@ -45,11 +49,26 @@ msgstr ""
 "`Importar --> Importar de armazenamento remoto` :kbd:`Alt+Shift+K` ou no "
 "ícone correspondente na aba **Ferramentas** na barra lateral direita."
 
-#: ../../import_tools/remote_import.rst:22
+#: ../../import_tools/remote_import.rst:25
 msgid "The Import from Remote Computer Dialog"
 msgstr "A janela de importação de computador remoto"
 
-#: ../../import_tools/remote_import.rst:24
+#: ../../import_tools/remote_import.rst:28
+msgid "KIO-Slaves Protocols"
+msgstr ""
+
+#: ../../import_tools/remote_import.rst:30
+msgid ""
+"The tool uses the KDE KIO-slaves in the background to communicate with the "
+"remote source. See :ref:`this section <kio_protocols>` of this documentation "
+"for the list of usable protocols."
+msgstr ""
+
+#: ../../import_tools/remote_import.rst:33
+msgid "How to use this tool"
+msgstr ""
+
+#: ../../import_tools/remote_import.rst:35
 msgid ""
 "To choose files to import, press **Select Source Location** on the left side "
 "of the dialog. A native desktop URLs selector will appear allowing you to "
@@ -60,7 +79,7 @@ msgstr ""
 "ambiente de trabalho aparecerá, permitindo que você veja os dispositivos "
 "conectados remotamente listados na seção de rede:"
 
-#: ../../import_tools/remote_import.rst:30
+#: ../../import_tools/remote_import.rst:41
 msgid ""
 "The URLs Selector Dialog Under Linux Choosing Files from a NAS Sharing "
 "Contents through Samba File System."
@@ -68,20 +87,13 @@ msgstr ""
 "Janela do seletor de URLs no Linux selecionando arquivos de um NAS "
 "compartilhando conteúdo por meio do sistema de arquivos Samba."
 
-#: ../../import_tools/remote_import.rst:32
-#, fuzzy
-#| msgid ""
-#| "In this dialog, you can use protocols such as **fish** (ssh), **ftp**, "
-#| "**smb**, etc, to connect to the remote computer. For example,"
+#: ../../import_tools/remote_import.rst:43
 msgid ""
-"In this dialog, you can use protocols such as **fish://** (ssh), **ftp://**, "
-"**sftp://**, **smb://**, **network://**, **webdav://**etc, to connect to the "
-"remote computer. For example,"
+"In this dialog, to be connected to the remote device, you can use a protocol "
+"in the **Source Location** url field such as:"
 msgstr ""
-"Nesta janela, você pode usar protocolos como **fish** (ssh), **ftp**, "
-"**smb**, etc., para se conectar ao computador remoto. Por exemplo,"
 
-#: ../../import_tools/remote_import.rst:34
+#: ../../import_tools/remote_import.rst:45
 msgid ""
 "**fish://user_name@remote_computer**: connect to the *remote_computer* with "
 "*user_name* using SSH protocol (Secure SHell)."
@@ -89,7 +101,7 @@ msgstr ""
 "**fish://nome_de_usuário@computador_remoto**: conecta ao *computador_remoto* "
 "com *nome_de_usuário* usando o protocolo SSH (Secure SHell)."
 
-#: ../../import_tools/remote_import.rst:35
+#: ../../import_tools/remote_import.rst:46
 msgid ""
 "**ftp://user_name@remote_computer**: connect to the *remote_computer* with "
 "*user_name* using FTP protocol (File Transfer Protocol)."
@@ -98,15 +110,24 @@ msgstr ""
 "com *nome_de_usuário* usando o protocolo FTP (Protocolo de Transferência de "
 "Arquivos)."
 
-#: ../../import_tools/remote_import.rst:37
+#: ../../import_tools/remote_import.rst:48
+#, fuzzy
+#| msgid ""
+#| "Instead of using the **Source Location** url field, you can use the "
+#| "native desktop url selector by pressing the **Select Source Location** "
+#| "button. A dialog will appear where you can see and select remote devices "
+#| "in the network section of the dialog:"
 msgid ""
-"Instead of using the **Source Location** url field, you can use the native "
-"desktop url selector by pressing the **Select Source Location** button. A "
-"dialog will appear where you can see and select remote devices in the "
-"network section of the dialog:"
+"An alternative will be to use the native desktop url selector by pressing "
+"the **Select Import Location** button. A dialog will appear where you can "
+"see and select remote devices in the network section of the dialog:"
 msgstr ""
+"Em vez de usar o campo de URL **Local de origem**, você pode usar o seletor "
+"de URL nativo do seu ambiente de trabalho pressionando o botão **Selecionar "
+"local de origem**. Uma janela será exibida, onde você poderá ver e "
+"selecionar dispositivos remotos na seção de rede da janela:"
 
-#: ../../import_tools/remote_import.rst:41
+#: ../../import_tools/remote_import.rst:52
 msgid ""
 "The native URLs selector dialog is only available if you turn on the right "
 "option from the `Settings --> Configure digiKam... --> Miscellaneous page --"
@@ -118,7 +139,7 @@ msgstr ""
 "Diversos --> aba Aparência`. Consulte :ref:`esta seção "
 "<appearance_settings>` do manual para obter mais detalhes."
 
-#: ../../import_tools/remote_import.rst:43
+#: ../../import_tools/remote_import.rst:54
 msgid ""
 "After selecting the files to import and closing the native desktop URLs "
 "selector, the selected files will appear in the list below the **Select "
@@ -128,7 +149,7 @@ msgstr ""
 "nativo da área de trabalho, os arquivos selecionados aparecerão na lista "
 "abaixo do botão **Selecionar origem da importação**."
 
-#: ../../import_tools/remote_import.rst:45
+#: ../../import_tools/remote_import.rst:56
 msgid ""
 "On the right, the main dialog displays the hierarchy of **Albums** in your "
 "collection. Specify the destination location where the files should be "
@@ -140,7 +161,7 @@ msgstr ""
 "ser importados ou pressione o botão **Novo álbum** para criar um novo álbum "
 "para os arquivos baixados."
 
-#: ../../import_tools/remote_import.rst:47
+#: ../../import_tools/remote_import.rst:58
 msgid ""
 "After selecting the target album to download the files, press the **Start "
 "Import** button to process files. You can abort the operation by pressing "
@@ -149,3 +170,15 @@ msgstr ""
 "Após selecionar o álbum de destino para baixar os arquivos, pressione o "
 "botão **Iniciar importação** para processar os arquivos. Você pode abortar a "
 "operação pressionando o botão **Fechar**."
+
+#~| msgid ""
+#~| "In this dialog, you can use protocols such as **fish** (ssh), **ftp**, "
+#~| "**smb**, etc, to connect to the remote computer. For example,"
+#~ msgid ""
+#~ "In this dialog, you can use protocols such as **fish://** (ssh), **ftp://"
+#~ "**, **sftp://**, **smb://**, **network://**, **webdav://**etc, to connect "
+#~ "to the remote computer. For example,"
+#~ msgstr ""
+#~ "Nesta janela, você pode usar protocolos como **fish://** (ssh), **ftp://"
+#~ "**, **sftp://**, **smb://**, **network://**, **webdav://** etc., para se "
+#~ "conectar ao computador remoto. Por exemplo,"
