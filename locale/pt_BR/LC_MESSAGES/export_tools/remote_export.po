@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Digikam Manual 8.7.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-08 01:55+0000\n"
-"PO-Revision-Date: 2025-11-07 08:36-0300\n"
+"PO-Revision-Date: 2025-11-08 07:23-0300\n"
 "Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
 "Language: pt_BR\n"
@@ -39,15 +39,9 @@ msgstr "Conteúdo"
 
 #: ../../export_tools/remote_export.rst:19
 msgid "Introduction"
-msgstr ""
+msgstr "Introdução"
 
 #: ../../export_tools/remote_export.rst:21
-#, fuzzy
-#| msgid ""
-#| "This tool allows you to upload files from your collections to a remote "
-#| "computer using a network. It is available from the :menuselection:`Export "
-#| "--> Export to remote storage` :kbd:`Ctrl+Alt+Shift+K` menu entry or the "
-#| "corresponding icon in the **Tools** tab in the Right Sidebar."
 msgid ""
 "This tool allows you to upload files from your collections to a remote "
 "computer using a network. It is available from the :menuselection:`Export --"
@@ -59,7 +53,8 @@ msgstr ""
 "computador remoto usando uma rede. Ela está disponível na entrada de menu :"
 "menuselection:`Exportar --> Exportar para armazenamento remoto` :kbd:`Ctrl"
 "+Alt+Shift+K` ou no ícone correspondente na aba **Ferramentas** na barra "
-"lateral direita."
+"lateral direita. A ferramenta usa os servidores escravos KIO do KDE em "
+"segundo plano para se comunicar com o destino remoto."
 
 #: ../../export_tools/remote_export.rst:27
 msgid "The Export to Remote Computer Dialog"
@@ -67,7 +62,7 @@ msgstr "A janela de exportação para computador remoto"
 
 #: ../../export_tools/remote_export.rst:32
 msgid "KIO-Slaves Protocols"
-msgstr ""
+msgstr "Protocolos KIO escravos"
 
 #: ../../export_tools/remote_export.rst:34
 msgid ""
@@ -75,304 +70,314 @@ msgid ""
 "from applications like digiKam. Below is a list of the most commonly used "
 "KIO-Slaves protocols for file export and remote access:"
 msgstr ""
+"Os KIO escravos do KDE permitem que você acesse recursos locais e remotos de "
+"forma integrada a partir de aplicativos como o digiKam. Abaixo está uma "
+"lista dos protocolos KIO escravos mais comumente usados ​​para exportação de "
+"arquivos e acesso remoto:"
 
 #: ../../export_tools/remote_export.rst:40
 msgid "Protocol"
-msgstr ""
+msgstr "Protocolo"
 
 #: ../../export_tools/remote_export.rst:41
 msgid "Description"
-msgstr ""
+msgstr "Descrição"
 
 #: ../../export_tools/remote_export.rst:42
 msgid "Example"
-msgstr ""
+msgstr "Exemplo"
 
 #: ../../export_tools/remote_export.rst:43
 msgid "``file://``"
-msgstr ""
+msgstr "``file://``"
 
 #: ../../export_tools/remote_export.rst:44
 msgid "Access local files and directories."
-msgstr ""
+msgstr "Acessa arquivos e pastas locais."
 
 #: ../../export_tools/remote_export.rst:45
 msgid "``file:///home/user/folder/``"
-msgstr ""
+msgstr "``file:///home/usuario/pasta/``"
 
 #: ../../export_tools/remote_export.rst:46
 msgid "``ftp://``"
-msgstr ""
+msgstr "``ftp://``"
 
 #: ../../export_tools/remote_export.rst:47
 msgid "Access files on an FTP server (unencrypted)."
-msgstr ""
+msgstr "Acessa arquivos em um servidor FTP (não criptografado)."
 
 #: ../../export_tools/remote_export.rst:48
 msgid "``ftp://user:password@server.com/folder/``"
-msgstr ""
+msgstr "``ftp://usuario:senha@servidor.com/pasta/``"
 
 #: ../../export_tools/remote_export.rst:49
 msgid "``sftp://``"
-msgstr ""
+msgstr "``sftp://``"
 
 #: ../../export_tools/remote_export.rst:50
 msgid "Securely access files via SFTP (SSH)."
-msgstr ""
+msgstr "Acessa de maneira segura arquivos via SFTP (SSH)."
 
 #: ../../export_tools/remote_export.rst:51
 msgid "``sftp://user@server.com/path/``"
-msgstr ""
+msgstr "``sftp://usuario@servidor.com/caminho/``"
 
 #: ../../export_tools/remote_export.rst:52
 msgid "``fish://``"
-msgstr ""
+msgstr "``fish://``"
 
 #: ../../export_tools/remote_export.rst:53
 msgid "Access files over SSH (alternative to SFTP)."
-msgstr ""
+msgstr "Acessa arquivos por SSH (alternativa ao SFTP)."
 
 #: ../../export_tools/remote_export.rst:54
 msgid "``fish://user@server.com/path/``"
-msgstr ""
+msgstr "``fish://usuario@servidor.com/caminho/``"
 
 #: ../../export_tools/remote_export.rst:55
 msgid "``smb://``"
-msgstr ""
+msgstr "``smb://``"
 
 #: ../../export_tools/remote_export.rst:56
 msgid "Access Windows/Samba network shares."
-msgstr ""
+msgstr "Acessa compartilhamentos de rede do Windows/Samba."
 
 #: ../../export_tools/remote_export.rst:57
 msgid "``smb://server/share/``"
-msgstr ""
+msgstr "``smb://servidor/compartilhamento/``"
 
 #: ../../export_tools/remote_export.rst:58
 msgid "``nfs://``"
-msgstr ""
+msgstr "``nfs://``"
 
 #: ../../export_tools/remote_export.rst:59
 msgid "Access files on an NFS share."
-msgstr ""
+msgstr "Acessar arquivos em um compartilhamento NFS."
 
 #: ../../export_tools/remote_export.rst:60
 msgid "``nfs://server/path/``"
-msgstr ""
+msgstr "``nfs://servidor/caminho/``"
 
 #: ../../export_tools/remote_export.rst:61
 msgid "``http://``"
-msgstr ""
+msgstr "``http://``"
 
 #: ../../export_tools/remote_export.rst:62
 msgid "Access web resources (read-only)."
-msgstr ""
+msgstr "Acessa recursos web (somente leitura)."
 
 #: ../../export_tools/remote_export.rst:63
 msgid "``http://example.com/file.txt``"
-msgstr ""
+msgstr "``http://exemplo.com/arquivo.txt``"
 
 #: ../../export_tools/remote_export.rst:64
 msgid "``https://``"
-msgstr ""
+msgstr "``https://``"
 
 #: ../../export_tools/remote_export.rst:65
 msgid "Securely access web resources."
-msgstr ""
+msgstr "Acessa de maneira segura recursos web."
 
 #: ../../export_tools/remote_export.rst:66
 msgid "``https://example.com/file.txt``"
-msgstr ""
+msgstr "``https://exemplo.com/arquivo.txt``"
 
 #: ../../export_tools/remote_export.rst:67
 msgid "``webdav://``"
-msgstr ""
+msgstr "``webdav://``"
 
 #: ../../export_tools/remote_export.rst:68
 msgid "Access files on a WebDAV server."
-msgstr ""
+msgstr "Acessa arquivos em um servidor WebDAV."
 
 #: ../../export_tools/remote_export.rst:69
 msgid "``webdav://server.com/path/``"
-msgstr ""
+msgstr "``webdav://servidor.com/caminho/``"
 
 #: ../../export_tools/remote_export.rst:70
 msgid "``webdavs://``"
-msgstr ""
+msgstr "``webdavs://``"
 
 #: ../../export_tools/remote_export.rst:71
 msgid "Securely access files on a WebDAV server (HTTPS)."
-msgstr ""
+msgstr "Acessa de maneira segura arquivos em um servidor WebDAV (HTTPS)."
 
 #: ../../export_tools/remote_export.rst:72
 msgid "``webdavs://server.com/path/``"
-msgstr ""
+msgstr "``webdavs://servidor.com/caminho/``"
 
 #: ../../export_tools/remote_export.rst:73
 msgid "``remote://``"
-msgstr ""
+msgstr "``remote://``"
 
 #: ../../export_tools/remote_export.rst:74
 msgid "Manage saved network connections (SSH, FTP, etc.)."
-msgstr ""
+msgstr "Gerencia conexões de rede salvas (SSH, FTP, etc.)."
 
 #: ../../export_tools/remote_export.rst:75
 msgid "``remote:/`` (then select a saved connection)"
-msgstr ""
+msgstr "``remote:/`` (e então selecione uma conexão salva)"
 
 #: ../../export_tools/remote_export.rst:76
 msgid "``man://``"
-msgstr ""
+msgstr "``man://``"
 
 #: ../../export_tools/remote_export.rst:77
 msgid "Access system manual pages."
-msgstr ""
+msgstr "Acesse as páginas de manuais do sistema."
 
 #: ../../export_tools/remote_export.rst:78
 msgid "``man:/ls``"
-msgstr ""
+msgstr "``man:/ls``"
 
 #: ../../export_tools/remote_export.rst:79
 msgid "``info://``"
-msgstr ""
+msgstr "``info://``"
 
 #: ../../export_tools/remote_export.rst:80
 msgid "Access GNU info documentation."
-msgstr ""
+msgstr "Acessa a documentação de informações da GNU."
 
 #: ../../export_tools/remote_export.rst:81
 msgid "``info:/bash``"
-msgstr ""
+msgstr "``info:/bash``"
 
 #: ../../export_tools/remote_export.rst:82
 msgid "``tar://``"
-msgstr ""
+msgstr "``tar://``"
 
 #: ../../export_tools/remote_export.rst:83
 msgid "Browse the contents of a tar archive."
-msgstr ""
+msgstr "Navega pelo conteúdo de um arquivo tar."
 
 #: ../../export_tools/remote_export.rst:84
 msgid "``tar:///path/to/file.tar``"
-msgstr ""
+msgstr "``tar:///caminho/para/arquivo.tar``"
 
 #: ../../export_tools/remote_export.rst:85
 msgid "``zip://``"
-msgstr ""
+msgstr "``zip://``"
 
 #: ../../export_tools/remote_export.rst:86
 msgid "Browse the contents of a zip archive."
-msgstr ""
+msgstr "Navega pelo conteúdo de um arquivo zip."
 
 #: ../../export_tools/remote_export.rst:87
 msgid "``zip:///path/to/file.zip``"
-msgstr ""
+msgstr "``zip:///caminho/para/arquivo.zip``"
 
 #: ../../export_tools/remote_export.rst:88
 msgid "``audiocd://``"
-msgstr ""
+msgstr "``audiocd://``"
 
 #: ../../export_tools/remote_export.rst:89
 msgid "Access audio tracks from a CD."
-msgstr ""
+msgstr "Acessa faixas de áudio de um CD."
 
 #: ../../export_tools/remote_export.rst:90
 msgid "``audiocd:/?track=1``"
-msgstr ""
+msgstr "``audiocd:/?track=1``"
 
 #: ../../export_tools/remote_export.rst:91
 msgid "``system://``"
-msgstr ""
+msgstr "``system://``"
 
 #: ../../export_tools/remote_export.rst:92
 msgid "Access system information."
-msgstr ""
+msgstr "Acessa informações do sistema."
 
 #: ../../export_tools/remote_export.rst:93
 msgid "``system:/``"
-msgstr ""
+msgstr "``system:/``"
 
 #: ../../export_tools/remote_export.rst:94
 msgid "``trash://``"
-msgstr ""
+msgstr "``trash://``"
 
 #: ../../export_tools/remote_export.rst:95
 msgid "Access the trash bin."
-msgstr ""
+msgstr "Acessa a lixeira do sistema."
 
 #: ../../export_tools/remote_export.rst:96
 msgid "``trash:/``"
-msgstr ""
+msgstr "``trash:/``"
 
 #: ../../export_tools/remote_export.rst:97
 msgid "``network://``"
-msgstr ""
+msgstr "``network://``"
 
 #: ../../export_tools/remote_export.rst:98
 msgid "Browse network resources (Samba, FTP, etc.)."
-msgstr ""
+msgstr "Navega pelos recursos de rede (Samba, FTP, etc.)."
 
 #: ../../export_tools/remote_export.rst:99
 msgid "``network:/``"
-msgstr ""
+msgstr "``network:/``"
 
 #: ../../export_tools/remote_export.rst:100
 msgid "``fonts://``"
-msgstr ""
+msgstr "``fonts://``"
 
 #: ../../export_tools/remote_export.rst:101
 msgid "Access installed fonts."
-msgstr ""
+msgstr "Acessa as fontes instaladas."
 
 #: ../../export_tools/remote_export.rst:102
 msgid "``fonts:/``"
-msgstr ""
+msgstr "``fonts:/``"
 
 #: ../../export_tools/remote_export.rst:103
 msgid "``applications://``"
-msgstr ""
+msgstr "``applications://``"
 
 #: ../../export_tools/remote_export.rst:104
 msgid "Access installed applications."
-msgstr ""
+msgstr "Acessa os aplicativos instalados."
 
 #: ../../export_tools/remote_export.rst:105
 msgid "``applications:/``"
-msgstr ""
+msgstr "``applications:/``"
 
 #: ../../export_tools/remote_export.rst:106
 msgid "``settings://``"
-msgstr ""
+msgstr "``settings://``"
 
 #: ../../export_tools/remote_export.rst:107
 msgid "Access system settings."
-msgstr ""
+msgstr "Acessa as configurações do sistema."
 
 #: ../../export_tools/remote_export.rst:108
 msgid "``settings:/``"
-msgstr ""
+msgstr "``settings:/``"
 
 #: ../../export_tools/remote_export.rst:111
 msgid ""
 "Protocols like ``ftp://`` are **not secure**. Prefer ``sftp://`` or ``fish://"
 "`` for sensitive transfers."
 msgstr ""
+"Protocolos como ``ftp://`` **não são seguros**. Prefira ``sftp://`` ou "
+"``fish://`` para transferências sensíveis."
 
 #: ../../export_tools/remote_export.rst:114
 msgid ""
 "To see the full list of available KIO-Slaves on your system, open "
 "**KInfoCenter** (run ``kinfocenter``) and check the **Protocols** tab."
 msgstr ""
+"Para ver a lista completa de KIO escravos disponíveis no seu sistema, abra o "
+"**KInfoCenter** (execute ``kinfocenter``) e verifique a aba **Protocolos**."
 
 #: ../../export_tools/remote_export.rst:117
 msgid "How to use this tool"
-msgstr ""
+msgstr "Como usar esta ferramenta"
 
 #: ../../export_tools/remote_export.rst:119
 msgid ""
 "In this dialog, to be connected to the remote device, you can use a protocol "
 "in the **Target Location** url field such as:"
 msgstr ""
+"Nesta janela, para se conectar ao dispositivo remoto, você pode usar um "
+"protocolo no campo de URL **Local de destino**, como:"
 
 #: ../../export_tools/remote_export.rst:121
 msgid ""
@@ -392,21 +397,15 @@ msgstr ""
 "Arquivos)."
 
 #: ../../export_tools/remote_export.rst:124
-#, fuzzy
-#| msgid ""
-#| "Instead of using the **Target Location** url field, you can use the "
-#| "native desktop url selector by pressing the **Select Export Location** "
-#| "button. A dialog will appear where you can see and select remote devices "
-#| "in the network section of the dialog:"
 msgid ""
 "An alternative will be to use the native desktop url selector by pressing "
 "the **Select Export Location** button. A dialog will appear where you can "
 "see and select remote devices in the network section of the dialog:"
 msgstr ""
-"Em vez de usar o campo de URL **Localização de destino**, você pode usar o "
-"seletor de URL nativo da área de trabalho pressionando o botão **Selecionar "
-"local para exportação**. Uma janela será exibida, onde você poderá ver e "
-"selecionar dispositivos remotos na seção de rede da janela:"
+"Uma alternativa será usar o seletor de URL nativo da área de trabalho "
+"pressionando o botão **Selecionar local de exportação**. Uma janela será "
+"exibida, onde você poderá ver e selecionar dispositivos remotos na seção de "
+"rede da janela:"
 
 #: ../../export_tools/remote_export.rst:130
 msgid "The Export to Remote Computer Url Selector Dialog Under Linux."
