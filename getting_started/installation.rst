@@ -57,7 +57,10 @@ Minimum System Requirements
 digiKam on Linux
 ----------------
 
-**digiKam** can be installed on non-KDE Desktops without any issues. The application is offered in the form of 2 binaries:
+The AppImage Bundle
+~~~~~~~~~~~~~~~~~~~
+
+**digiKam** can be installed on non-KDE Desktops without any issues. The application is offered in the form of 2 binaries as AppImage:
 
     - Qt6 as main version based on last Qt framework. The minimum Ubuntu 22.04 has no such minimal requirements.
     - Qt5 as prior version based on older Qt framework. The minimum Ubuntu 20.04 has no such minimal requirements.
@@ -72,7 +75,6 @@ Turn on the **executable** property of the AppImage file and run it. That's all.
 
     Screencast of AppImage Startup
 
-.. _windows_requirements:
 
 .. tip::
 
@@ -85,6 +87,21 @@ Turn on the **executable** property of the AppImage file and run it. That's all.
 .. note::
 
     The AppImage bundle provides more startup options which can be listed with the **help** argument from the command line.
+
+The Sandboxed Packages
+~~~~~~~~~~~~~~~~~~~~~~
+
+You can install digiKam as a Linux sandboxed package. See the list of the bundles referenced in `this web page <https://www.digikam.org/download/binary/#linux-sandbox>`_.
+
+.. important::
+
+    These sandboxed bundles need rights to access to the system resources, as the camera, the disk, and the network. Without to configure the sandboxing permissions, the application will be unusable.
+
+.. note::
+
+    digiKam project do not manage these kind of packaging. If you have problems, please report to the right issues tracking system.
+
+.. _windows_requirements:
 
 digiKam on Windows
 -------------------
