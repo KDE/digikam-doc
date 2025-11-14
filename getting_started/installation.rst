@@ -91,7 +91,7 @@ Turn on the **executable** property of the AppImage file and run it. That's all.
 The Sandboxed Packages
 ~~~~~~~~~~~~~~~~~~~~~~
 
-You can install digiKam as a Linux sandboxed package. See the list of the bundles referenced in `this web page <https://www.digikam.org/download/binary/#linux-sandbox>`_.
+You can install digiKam as a Linux sandboxed package as **Snap** or **Flatpak**. See the list of the bundles referenced in `this web page <https://www.digikam.org/download/binary/#linux-sandbox>`_.
 
 .. important::
 
