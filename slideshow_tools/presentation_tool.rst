@@ -25,7 +25,9 @@ With this tool you can create a perfect slide show with just three mouse clicks.
 
 The **Use OpenGL Transitions** checkbox enables very smooth image transitions using the OpenGL display mode. Be sure you have OpenGL enabled on your graphics card, since otherwise the slideshow will be very slow.
 
-The **Print Filename** checkbox enables displaying the image filename in the lower left corner.
+The **Print filename** checkbox enables displaying the item filename in the lower left corner. The **Print captions** do the description string of the item. **Progress Indicator** display the pending item to slide with the tool.
+
+The **Use background color for images** button allow to customize the color used as background while displaying ìtems. This can be useful for the images using transparency.
 
 The **Loop** checkbox will enable running the whole show in an endless loop (until manually stopped with :kbd:`Esc`).
 
