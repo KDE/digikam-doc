@@ -99,7 +99,7 @@ You can install digiKam as a Linux sandboxed package as **Snap** or **Flatpak**.
 
 .. note::
 
-    digiKam project do not manage these kind of packaging. If you have problems, please report to the right issues tracking system.
+    digiKam project does not manage these kinds of packaging. If you have problems, please report them to the right issue tracking system.
 
 .. _windows_requirements:
 
