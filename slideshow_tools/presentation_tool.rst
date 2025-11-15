@@ -27,7 +27,7 @@ The **Use OpenGL Transitions** checkbox enables very smooth image transitions us
 
 The **Print filename** checkbox enables displaying the item filename in the lower left corner. The **Print captions** do the description string of the item. **Progress Indicator** display the pending item to slide with the tool.
 
-The **Use background color for images** button allow to customize the color used as background while displaying ìtems. This can be useful for the images using transparency.
+The **Use background color for images** button allows to customize the color used as background while displaying ìtems. This can be useful for the images using transparency.
 
 The **Loop** checkbox will enable running the whole show in an endless loop (until manually stopped with :kbd:`Esc`).
 
