@@ -96,7 +96,7 @@ This first example shown below does nothing special. It prints on the console th
     echo "RATING: $RATING"
     echo "TAGSPATH: $TAGSPATH"
 
-    cp "$INPUT" "$OUTPUT"
+    cp $INPUT $OUTPUT
     exit $?
 
 If you have started digiKam from a terminal and enabled the debug traces on :ref:`Setting/Miscellaneous/System dialog page <system_settings>`, you will see something like this:
