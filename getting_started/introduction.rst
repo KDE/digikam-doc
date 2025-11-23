@@ -43,7 +43,36 @@ See the `digiKam Users Mailing List joining instructions <https://mail.kde.org/m
 
 You can also visit the `digiKam Home Page <https://www.digikam.org/>`_ for news of new releases and other digiKam related information.
 
+.. _privacy_policy:
+
 Privacy Policy
 --------------
 
-There is no telemetry in digiKam. Nothing is shared or sent on the Internet about the usage of the application or to allow the program to work. All your data is still on your computer.
+We Respect your Works
+~~~~~~~~~~~~~~~~~~~~~
+
+**digiKam respects your privacy and is fully committed to protecting your personal data:**
+
+- **No Telemetry:** The application does **not** include any tracking, analytics, or telemetry features.
+- **No Data Sharing:** We **do not** collect, store, or transmit any of your personal data over the Internet.
+- **Local Data Storage:** All your photos, metadata, and settings remain **exclusively on your device**.
+
+Plugins and External Services
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Some optional plugins or modules (e.g., for exporting to remote web services) may require an Internet connection to function. If you choose to use these features, we recommend reviewing the privacy policies of the third-party services involved, as digiKam has no control over their data practices.
+
+Application Compliance
+~~~~~~~~~~~~~~~~~~~~~~
+
+digiKam is designed to be **`GDPR-compliant<https://en.wikipedia.org/wiki/General_Data_Protection_Regulation>`_**. As an open-source project, we prioritize transparency, user control, and the protection of personal data.
+
+Your Rights
+~~~~~~~~~~~
+
+You retain **full ownership and control** of your data at all times.
+
+.. figure:: images/privacy_policy.webp
+    :width:
+    :alt:
+    :align: left
