@@ -60,12 +60,12 @@ We Respect your Works
 Plugins and External Services
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Some optional plugins or modules (e.g., for exporting to remote web services) may require an Internet connection to function. If you choose to use these features, we recommend reviewing the privacy policies of the third-party services involved, as digiKam has no control over their data practices.
+Some optional plugins or modules (e.g., for exporting to remote Web-Services) may require an Internet connection to function. If you choose to use these features, we recommend reviewing the privacy policies of the third-party services involved, as digiKam has no control over their data practices. See the relevant `Privacy Policy for these Web-Services <https://www.digikam.org/support/privacy_policy/>`_.
 
 Application Compliance
 ~~~~~~~~~~~~~~~~~~~~~~
 
-digiKam is designed to be **`GDPR-compliant<https://en.wikipedia.org/wiki/General_Data_Protection_Regulation>`_**. As an open-source project, we prioritize transparency, user control, and the protection of personal data.
+digiKam is designed to be `GDPR-compliant <https://en.wikipedia.org/wiki/General_Data_Protection_Regulation>`_. As an open-source project, we prioritize transparency, user control, and the protection of personal data.
 
 Your Rights
 ~~~~~~~~~~~
@@ -73,6 +73,5 @@ Your Rights
 You retain **full ownership and control** of your data at all times.
 
 .. figure:: images/privacy_policy.webp
-    :width:
     :alt:
     :align: left
